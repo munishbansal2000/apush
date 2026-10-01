@@ -1,0 +1,74 @@
+{
+ "id": "dbq-test1",
+ "type": "dbq",
+ "prompt": "Evaluate the extent to which the United States foreign policy changed between 1914 and 1917.",
+ "period": "U7",
+ "themes": [
+  "WOR",
+  "NAT"
+ ],
+ "skill": "Argumentation",
+ "reasoning": "Continuity & Change",
+ "difficulty": "hard",
+ "inspired_by": "Practice Test 1, DBQ (1914-1917 foreign policy)",
+ "format": "remapped",
+ "documents": [
+  {
+   "n": 1,
+   "kind": "text",
+   "date": "August 19, 1914",
+   "text": "The effect of the war upon the United States will depend upon what American citizens say and do. Every man who really loves America will act and speak in the true spirit of neutrality, which is the spirit of impartiality and fairness and friendliness to all concerned.\n\nThe people of the United States are drawn from many nations, and chiefly from the nations now at war. It is natural and inevitable that there should be the utmost variety of sympathy and desire among them with regard to the issues and circumstances of the conflict.\n\nSuch divisions amongst us would be fatal to our peace of mind and might seriously stand in the way of the proper performance of our duty as the one great nation at peace, the one people holding itself ready to play a part of impartial mediation and speak the counsels of peace and accommodation, not as a partisan, but as a friend.",
+   "sourcing_note": "POV: Woodrow Wilson, sitting president at the war's outbreak. Purpose: rally domestic unity behind neutrality and position the United States as an impartial mediator. Audience: Congress and the American public, especially immigrant groups. Argument relevance: establishes the official neutrality baseline against which later change can be measured.",
+   "source_type": "pd-quote"
+  },
+  {
+   "n": 2,
+   "kind": "text",
+   "date": "November 19, 1914",
+   "text": "Dear Mr. President:\n[I] ask your permission to enter into some detail with regard to the neutrality question. But let me assure you beforehand that I interpret your inquiry as referring exclusively to the views which are expressed to me by American citizens who sympathize with the German cause or who are disturbed by the vehement hostility to Germany on the part of the American press. My remarks refer in no way to the views of official Germany....\n\nFirst, all cables sent by and received by wire pass uncensored, while all wireless news is censored. This reacts against Germany, because England sends all her news by cable, whereas Germany alone uses the wireless....\n\nSecond, the policy of the administration with regard to the holding up, detaining and searching of Germans and Austrians from neutral and American vessels is a reversal of the American policy established in 1812. It has excited no end of bitterness.\n\nThird, the United States permitted the violation by England of the Hague Convention and international law in connection with conditional and unconditional contraband.... By permitting this new interpretation the United States practically supports the starving out policy of the Allies [and seriously handicapping] Germany and Austria in their fight for existence....\n\nMany of the complaints refer more to the unfriendly spirit than to the actual violation of the law. Here above all belongs the unlimited sale of ammunition to the belligerents....",
+   "sourcing_note": "Source: Hugo Munsterberg, Harvard University professor, letter to Woodrow Wilson. POV: German-American intellectual sympathetic to Germany. Purpose: complain that American neutrality in practice favors Britain. Audience: President Wilson. Argument relevance: shows neutrality was contested at home and functioned as pro-Allied in effect, evidence of change beneath the official stance.",
+   "source_type": "pd-quote"
+  },
+  {
+   "n": 3,
+   "kind": "text",
+   "date": "1935 (describing 1914-1917)",
+   "text": "Paraphrased from Robert Lansing, War Memoirs (1935). Lansing recalled that Britain enforced its blockade of American ships bound for mainland Europe despite repeated U.S. protests. Neutral vessels were seized and sent to British ports for cargo inspection without examination at sea, and even ships eventually released were detained so long that port expenses and the lost use of the vessel consumed the owners’ profits.",
+   "sourcing_note": "Source: Robert Lansing, War Memoirs (1935); the author was acting secretary of state during the period described. POV: retrospective insider account. Purpose: memoir justifying the American position. Audience: general readers. Argument relevance: documents how the British blockade disrupted American trade, creating pressure that tilted the United States toward the Allies.",
+   "source_type": "paraphrase"
+  },
+  {
+   "n": 4,
+   "kind": "text",
+   "date": "January 20, 1915",
+   "text": "Dear Mr. Stone:\nI have received your letter...referring to frequent complaints or charges made...that this Government has shown partiality to Great Britain, France, and Russia against Germany and Austria during the present war.... I will take them up...\n\n(1) Freedom of communication by submarine cables versus censored communication by wireless.\nThe reason that wireless messages and cable messages require different treatment by a neutral government is as follows: Communications by wireless can not be interrupted by a belligerent. With a submarine cable it is otherwise.... A more important reason, however, at least from the point of view of a neutral government is that messages sent out from a wireless station in neutral territory may be received by belligerent warships on the high seas....\n\n(4) Submission without protest to British violations of the rules regarding absolute and conditional contraband as laid down in the Hague conventions, the Declaration of London, and international law.\nThere is no Hague convention which deals with absolute or conditional contraband, and, as the Declaration of London is not in force, the rules of international law only apply.... The United States has made earnest representations to Great Britain in regard to the seizure and detention by the British authorities of all American ships....\n\n(9) The United States has not interfered with the sale to Great Britain and her allies of arms, ammunition, horses, uniforms, and other munitions of war, although such sales prolong the conflict.\nThere is no power in the Executive to prevent the sale of ammunition to the belligerents. The duty of a neutral to restrict trade in munitions of war has never been imposed by international law....\n\n(20) General unfriendly attitude of Government toward Germany and Austria. If any American citizens, partisans of Germany and Austria-Hungary, feel that this administration is acting in a way injurious to the cause of those countries, this feeling results from the fact that on the high seas the German and Austro-Hungarian naval power is thus far inferior to the British. It is the business of a belligerent operating on the high seas, not the duty of a neutral, to prevent contraband from reaching an enemy....\n\nI am [etc.]\nW.J. Bryan",
+   "sourcing_note": "Source: Secretary of State William Jennings Bryan, letter to the Chairman of the Senate Committee on Foreign Relations. POV: administration official defending policy. Purpose: rebut charges of pro-British partiality point by point. Audience: Senate committee. Argument relevance: shows the administration's legalistic defense of neutrality even as trade overwhelmingly favored the Allies - continuity of rhetoric amid changing practice.",
+   "source_type": "pd-quote"
+  },
+  {
+   "n": 5,
+   "kind": "text",
+   "date": "May 1, 1915",
+   "text": "NOTICE!\nTRAVELLERS intending to embark on the Atlantic voyage are reminded that a state of war exists between Germany and her allies; that the zone of her waters includes the waters adjacent to the British Isles; that, in accordance with formal notice given by the Imperial German Government, vessels flying the flag of Great Britain, or of any of her allies, are liable to destruction in those waters and that travellers sailing in the war zone on ships of Great Britain or her allies do so at their own risk.\nIMPERIAL GERMAN EMBASSY",
+   "sourcing_note": "Source: New York Times notice placed by the German Embassy. POV: German government. Purpose: warn Americans off British ships, establishing legal cover days before the Lusitania sinking. Audience: American travelers. Argument relevance: shows German escalation that pushed the United States from mediation toward confrontation.",
+   "source_type": "pd-quote"
+  },
+  {
+   "n": 6,
+   "kind": "text",
+   "date": "1915",
+   "text": "Q: Did the Lusitania have on board on said trip 5400 cases of ammunition? If so, to whom were they consigned?\nA: The Lusitania had on board, on said trip, 5468 cases of ammunition. The Remington Arms-Union Metallic Cartridge Co. shipped 4200 cases of metallic cartridges, consigned to the Remington Arms Co., London, of which the ultimate consignee was the British Government. G. W. Sheldon & Co. shipped three lots of fuses of 6 cases each, and 1250 cases of shrapnel, consigned to the Deputy Director of Ammunition Stores, Woolwich, England.",
+   "sourcing_note": "Source: Report from the American Customs Inspector in New York (1915). POV: American official record. Purpose: factual inventory of the Lusitania's cargo. Audience: government. Argument relevance: proves American munitions shipments to Britain, undermining claims of impartial neutrality and showing how economic ties pulled the United States toward the Allies.",
+   "source_type": "pd-quote"
+  },
+  {
+   "n": 7,
+   "kind": "text",
+   "date": "March 24, 1916",
+   "text": "...I have deemed it my duty, therefore, to say to the Imperial German Government, that if it is still its purpose to prosecute relentless and indiscriminate warfare against vessels of commerce by the use of submarines, notwithstanding the now demonstrated impossibility of conducting that warfare in accordance with what the Government of the United States must consider the sacred and indisputable rules of international law and the universally recognized dictates of humanity, the Government of the United States is at last forced to the conclusion that there is but one course it can pursue; and that unless the Imperial German Government should now immediately declare and effect an abandonment of its present methods of warfare against passenger and freight carrying vessels, this Government can have no choice but to sever diplomatic relations with the Government of the German Empire altogether.\n\nThis decision I have arrived at with the keenest regret; the possibility of the action contemplated I am sure all thoughtful Americans will look forward to with unaffected reluctance. But we cannot forget that we are in some sort and by the force of circumstances the responsible spokesmen of the rights of humanity, and that we cannot remain silent while those rights seem in process of being swept utterly away in the maelstrom of this terrible war.",
+   "sourcing_note": "Source: Woodrow Wilson, speech to Congress (during the Sussex crisis). POV: president. Purpose: deliver an ultimatum to Germany and assert American neutral rights. Audience: Congress. Argument relevance: marks the shift from impartial mediation to coercive threats - the endpoint of the change from 1914 neutrality.",
+   "source_type": "pd-quote"
+  }
+ ],
+ "source_type": "pd-quote"
+}

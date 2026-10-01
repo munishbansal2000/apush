@@ -1,0 +1,83 @@
+{
+ "file": "leq-test2.json",
+ "inspired_by": "Practice Test 2, LEQ trio",
+ "format": "remapped",
+ "items": [
+  {
+   "id": "leq-test2-main",
+   "type": "leq",
+   "prompt": "Assess how far the temperance and Prohibition movements transformed American society between 1890 and 1935.",
+   "original_prompt": "Evaluate the extent to which the Temperance and Prohibition movements transformed American society from 1890 to 1935.",
+   "role": "main",
+   "period": "U6/U7",
+   "themes": [
+    "SOC"
+   ],
+   "skill": "Argumentation",
+   "reasoning": "Continuity & Change",
+   "difficulty": "medium",
+   "exemplar": {
+    "thesis": "Temperance and Prohibition briefly transformed American law and daily life - achieving a constitutional ban on alcohol - but the experiment's failures, from organized crime to mass noncompliance, showed the limits of legislating morality, ending in repeal.",
+    "evidence": [
+     "The WCTU and Anti-Saloon League built a mass moral-reform movement that won the 18th Amendment (1919)",
+     "Prohibition fueled speakeasies, bootlegging, and organized crime (e.g., Capone's Chicago empire), undermining respect for law",
+     "The 21st Amendment (1933) repealed Prohibition, marking the only constitutional amendment ever reversed"
+    ]
+   },
+   "inspired_by": "Practice Test 2, LEQ Q3",
+   "format": "remapped",
+   "source_type": "original"
+  },
+  {
+   "id": "leq-test2-spare-a",
+   "type": "leq",
+   "prompt": "Assess how far the Massachusetts Bay Colony differed from the Virginia colony between 1607 and 1754.",
+   "original_prompt": "Evaluate the extent to which the Massachusetts Bay Colony differed from the Virginia colony from 1607 to 1754.",
+   "role": "spare",
+   "period": "U1/U2",
+   "themes": [
+    "SOC",
+    "MIG"
+   ],
+   "skill": "Argumentation",
+   "reasoning": "Comparison",
+   "difficulty": "medium",
+   "exemplar": {
+    "thesis": "Massachusetts Bay and Virginia differed fundamentally in purpose and social order - a Puritan religious refuge built on towns and families versus a profit-driven plantation colony built on bound labor - though both shared an English identity and displaced Native peoples.",
+    "evidence": [
+     "Massachusetts Bay: Puritan mission ('city upon a hill'), town meetings, family farms; Virginia: joint-stock venture, House of Burgesses, tobacco plantations",
+     "Labor systems diverged: New England relied on family and town labor while Virginia moved from indentured servitude to enslaved labor",
+     "Similarity: both maintained English legal traditions and a strong English identity, and both expanded at Native Americans' expense"
+    ]
+   },
+   "inspired_by": "Practice Test 2, LEQ Q2",
+   "format": "remapped",
+   "source_type": "original"
+  },
+  {
+   "id": "leq-test2-spare-b",
+   "type": "leq",
+   "prompt": "Assess how far women's roles in American public life changed between 1920 and 1960.",
+   "original_prompt": "Evaluate the extent to which the roles of women changed in American public life from 1920 to 1960.",
+   "role": "spare",
+   "period": "U7/U8",
+   "themes": [
+    "SOC"
+   ],
+   "skill": "Argumentation",
+   "reasoning": "Continuity & Change",
+   "difficulty": "medium",
+   "exemplar": {
+    "thesis": "Women's public roles expanded dramatically after 1920 through suffrage, wartime work, and new social freedoms, yet the postwar domestic ideal and continued exclusion from political power show how much continuity persisted.",
+    "evidence": [
+     "The 19th Amendment (1920) enfranchised women; flappers and new employment challenged Victorian norms",
+     "World War II drew millions of women into factories and services ('Rosie the Riveter')",
+     "Continuity: the 1950s suburban domestic ideal, few women in Congress, and persistent wage gaps limited change"
+    ]
+   },
+   "inspired_by": "Practice Test 2, LEQ Q4",
+   "format": "remapped",
+   "source_type": "original"
+  }
+ ]
+}

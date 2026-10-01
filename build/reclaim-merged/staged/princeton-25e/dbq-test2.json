@@ -1,0 +1,74 @@
+{
+ "id": "dbq-test2",
+ "type": "dbq",
+ "prompt": "Evaluate the extent to which the American state can be described as imperialist from 1890 to 1945.",
+ "period": "U6/U7",
+ "themes": [
+  "WOR",
+  "GEO"
+ ],
+ "skill": "Argumentation",
+ "reasoning": "Continuity & Change",
+ "difficulty": "hard",
+ "inspired_by": "Practice Test 2, DBQ (imperialism 1890-1945)",
+ "format": "remapped",
+ "documents": [
+  {
+   "n": 1,
+   "kind": "text",
+   "date": "December 21, 1898",
+   "text": "In 1862, when the United States was involved in the War of the Rebellion, the Europeans took advantage of the situation to invade Mexico, and to establish there a 'stable government.' They undertook to protect that people against themselves, and to erect for them a species of protectorate, such as we now propose for the Philippines. As soon as our war was over, we insisted upon the withdrawal of Europe from Mexico. What followed is matter of recent history. It is unnecessary to recall it. We did not reduce Mexico into a condition of 'tutelage,' or establish over it a 'protectorate' of our own. We, on the contrary, insisted that it should stand on its own legs; and, by so doing, learn to stand firmly on them, just as a child learns to walk, by being compelled to try to walk, not by being kept everlastingly in 'leading strings.' This was the American, as contradistinguished from the European policy; and Mexico to-day walks firmly.\n\nFinally take the case of Venezuela in 1895. I believe I am not mistaken when I say that, during the twenty-five preceding years, Venezuela had undergone almost as many revolutions. It certainly had not enjoyed a stable government. Through disputes over questions of boundary, Great Britain proposed to confer that indisputable blessing upon a considerable region. We interfered under a most questionable extension of the Monroe Doctrine, and asserted the principle of 'Hands-off.' Having done this - having in so far perpetuated what we now call the scandal of anarchy - we did not establish 'tutelage,' or a protectorate, ourselves. We wisely left Venezuela to work out its destiny in its own way, and in the fullness of time. That policy was far-seeing, beneficent, and strictly American in 1895. Why, then, make almost indecent haste to abandon it in 1898?\n\nInstead, therefore, of finding our precedents in the experience of England, or that of any other European power, I would suggest that the true course for this country now to pursue is exactly the course we have heretofore pursued under similar conditions. Let us be true to our own traditions, and follow our own precedents. Having relieved the Spanish islands from the dominion of Spain, we should declare concerning them a policy of 'Hands-off,' both on our own part and on the part of other powers.",
+   "sourcing_note": "Source: Charles Francis Adams, Jr., historian and great-grandson of John Adams, letter to Hon. Carl Schurz. POV: elite anti-imperialist. Purpose: persuade against Philippine annexation by appealing to American precedent. Audience: fellow anti-imperialist. Argument relevance: articulates the anti-imperialist case from American tradition - evidence against the imperialist label.",
+   "source_type": "pd-quote"
+  },
+  {
+   "n": 2,
+   "kind": "text",
+   "date": "1917",
+   "text": "In the United States, the imperialist war waged against Spain in 1898 stirred up the opposition of the 'anti-imperialists,' the last of the Mohicans of bourgeois democracy. They declared this war to be 'criminal'; denounced the annexation of foreign territories as being a violation of the constitution, and they denounced the 'jingo treachery' by means of which Aguinaldo, leader of the rebel native Filipinos, was deceived (first the Americans promised him the independence of his country; then they landed troops and annexed it). They quoted the words of Lincoln: 'It is self-government when the white man governs himself; but when he governs himself and also governs others, it is no longer self-government, it is despotism.'\n\nBut all this criticism shrank from recognizing the indissoluble bond between imperialism and the trusts, and, therefore, between imperialism and the very foundations of capitalism....",
+   "sourcing_note": "Source: Vladimir Lenin, Imperialism: The Last Stage of Capitalism. POV: Marxist revolutionary. Purpose: theoretical critique linking imperialism to capitalism. Audience: socialists. Argument relevance: external ideological critique framing American expansion as capitalist imperialism - supports the imperialist label from a hostile witness.",
+   "source_type": "pd-quote"
+  },
+  {
+   "n": 3,
+   "kind": "text",
+   "date": "1848",
+   "text": "Article IV\nImmediately after the exchange of ratifications of the present treaty all castles, forts, territories, places, and possessions, which have been taken or occupied by the forces of the United States during the present war, within the limits of the Mexican Republic, as about to be established by the following article, shall be definitely restored to the said Republic....\n\nArticle XII\nIn consideration of the extension acquired by the boundaries of the United States, as defined in the fifth article of the present treaty, the Government of the United States engages to pay to that of the Mexican Republic the sum of fifteen millions of dollars....",
+   "sourcing_note": "Source: Treaty of Guadalupe Hidalgo. POV: formal treaty text. Purpose: legal settlement of the Mexican-American War. Audience: both governments. Argument relevance: shows earlier expansion by conquest, with payment as cover - precedent for debating whether 1890s expansion continued an imperial pattern.",
+   "source_type": "pd-quote"
+  },
+  {
+   "n": 4,
+   "kind": "image",
+   "date": "1914",
+   "text": "Described from a political cartoon by John T. McCutcheon in the Chicago Tribune (1914), titled 'What the United States Has Fought For.' The top panel shows burdened figures labeled Philippines (under 'Spanish Oppression'), Hawaii (under 'Industrial Slavery'), Porto Rico and Cuba (under a 'Spanish Yoke'), and the Isthmus of Panama, captioned 'Before the United States intervened in behalf of these oppressed people.' The bottom panel shows the same figures standing upright in suits, holding papers labeled 'Filipino Assembly,' 'Education,' 'Self Govt,' and 'Panama Canal Zone,' depicting them as uplifted by American intervention.",
+   "sourcing_note": "POV: pro-intervention American press. Purpose: celebrate American intervention as liberation and uplift. Audience: newspaper readers. Argument relevance: pro-imperialist visual argument - intervention framed as benevolence, evidence that Americans justified empire as a civilizing mission.",
+   "source_type": "original"
+  },
+  {
+   "n": 5,
+   "kind": "text",
+   "date": "1900",
+   "text": "The Philippine Islands are west of the United States, and near the southern coast of Asia.... The Island of Luzon, on which the capital city, Manila, is located, is about the size of New York State....\n\nThe published statements of W.B. Wilcox, Paymaster, U.S. Navy, and Ensign L.R. Sargent, U.S. Navy, who, in 1898, made a visit to the most distant districts of the Island of Luzon, are highly commendable to the character and ability of the natives whom they met and associated with.\n\nThey were cordial and honorable in their treatment of our men at that time, and these people were found to be comfortably situated, and enjoying life since the departure of the Spaniards. They are an intelligent and a polite people; ambitious to improve their condition every way. They are patriotic and high-minded, as described by these officers, and while they may have since entertained a mistaken idea regarding our intentions towards them, and given us battle, they are capable of being won over to a brotherly regard for our people.\n\nWith proper care and direction, these people will become happy, and a strength to our nation. There should be no desire to, in the least, encroach upon their property....",
+   "sourcing_note": "Source: Industrial Liberty by Charles E. Buell, Secretary, U.S. Special Commission to Porto Rico. POV: American colonial administrator. Purpose: promote benevolent assimilation of the Philippines. Audience: American public. Argument relevance: paternalistic justification of empire - 'proper care and direction' of Filipinos reveals the imperial mindset behind annexation.",
+   "source_type": "pd-quote"
+  },
+  {
+   "n": 6,
+   "kind": "data",
+   "date": "1940",
+   "text": "Described from Table 1, 'Population of the United States and Its Territories and Possessions: 1940, 1930, and 1920,' U.S. Census Bureau (1940). Key figures for 1940: the Philippines, 16,356,000; Puerto Rico, 1,869,255; Hawaii, 423,330; Alaska, 72,524; Panama Canal Zone, 51,827; Guam, 22,290; Virgin Islands, 24,889; American Samoa, 12,908. Territories and possessions exclusive of the Philippines totaled 2,477,023 people in 1940, up from 1,680,202 in 1920.",
+   "sourcing_note": "POV: federal statistical agency. Purpose: enumerate the population including territories. Audience: policymakers and the public. Argument relevance: quantifies the American empire - over 18 million colonial subjects in 1940, hard evidence that the United States remained an imperial power through the prompt's endpoint.",
+   "source_type": "fact"
+  },
+  {
+   "n": 7,
+   "kind": "image",
+   "date": "1899",
+   "text": "Described from a political cartoon by Victor Gilliam in Judge magazine (1899), titled 'A Thing Well Begun Is Half Done.' President McKinley, sleeves rolled up, digs with a shovel at Central America beside a sign reading 'Proposed Nicaragua Canal,' while Uncle Sam carries rifles past the Capitol. American flags fly over the Philippines, Hawaii, Cuba, and Porto Rico. The caption reads: 'Uncle Sam - \"Finish the canal, McKinley, and make our national expansion complete in your first administration.\"'",
+   "sourcing_note": "POV: pro-expansion popular magazine. Purpose: urge McKinley to complete the canal and national expansion. Audience: magazine readers. Argument relevance: shows popular imperialist enthusiasm - expansion celebrated as a national project, evidence for the imperialist description.",
+   "source_type": "original"
+  }
+ ],
+ "source_type": "pd-quote"
+}

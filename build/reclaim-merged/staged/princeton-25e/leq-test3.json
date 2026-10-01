@@ -1,0 +1,85 @@
+{
+ "file": "leq-test3.json",
+ "inspired_by": "Practice Test 3, LEQ trio",
+ "format": "remapped",
+ "items": [
+  {
+   "id": "leq-test3-main",
+   "type": "leq",
+   "prompt": "Assess how far industrialization affected rural and urban workers between 1865 and 1900.",
+   "original_prompt": "Evaluate the extent to which industrialization affected rural and urban workers from 1865 to 1900. [book prints 'unaffected' - treated as a typo for 'affected']",
+   "role": "main",
+   "period": "U6",
+   "themes": [
+    "WOR",
+    "SOC"
+   ],
+   "skill": "Argumentation",
+   "reasoning": "Comparison",
+   "difficulty": "medium",
+   "exemplar": {
+    "thesis": "Industrialization transformed both urban and rural workers, but in different ways: city workers faced factory discipline and dangerous conditions alongside higher wages and new labor organizations, while rural workers faced mechanization and falling prices that drove the Populist revolt.",
+    "evidence": [
+     "Urban: factory work brought long hours and hazards (e.g., Triangle Shirtwaist fire, 1911, rooted in this era's conditions) but also wages that drew immigrants; workers organized the Knights of Labor and the AFL",
+     "Rural: mechanization and railroad freight rates squeezed farmers as crop prices fell, fueling the Grange and the People's (Populist) Party",
+     "Comparison: both groups confronted concentrated corporate power, but urban workers sought workplace protections while farmers sought economic regulation"
+    ]
+   },
+   "inspired_by": "Practice Test 3, LEQ Q3",
+   "format": "remapped",
+   "source_type": "original"
+  },
+  {
+   "id": "leq-test3-spare-a",
+   "type": "leq",
+   "prompt": "Assess how far the First Great Awakening transformed American national identity between 1700 and 1765.",
+   "original_prompt": "Evaluate the extent to which the First Great Awakening transformed American national identity from 1700 to 1765.",
+   "role": "spare",
+   "period": "U2",
+   "themes": [
+    "SOC",
+    "NAT"
+   ],
+   "skill": "Argumentation",
+   "reasoning": "Continuity & Change",
+   "difficulty": "medium",
+   "exemplar": {
+    "thesis": "The First Great Awakening fostered a shared intercolonial religious experience and challenged established authority, planting seeds of a common American identity - though its effects were uneven and did not yet produce political unity.",
+    "evidence": [
+     "Itinerant preachers like George Whitefield and Gilbert Tennent drew massive intercolonial crowds and challenged Anglican and Congregational establishments",
+     "The revivals encouraged individual religious judgment, weakening deference to traditional authority",
+     "Limits: the Awakening divided churches (Old Lights vs. New Lights) and remained a religious, not political, movement"
+    ]
+   },
+   "inspired_by": "Practice Test 3, LEQ Q2",
+   "format": "remapped",
+   "source_type": "original"
+  },
+  {
+   "id": "leq-test3-spare-b",
+   "type": "leq",
+   "prompt": "Assess how far social and economic issues shaped United States foreign policy between 1919 and 1933.",
+   "original_prompt": "Evaluate the extent to which social and economic issues affected U.S. foreign policy from 1919 to 1933.",
+   "role": "spare",
+   "period": "U7",
+   "themes": [
+    "WOR",
+    "WXT"
+   ],
+   "skill": "Argumentation",
+   "reasoning": "Causation",
+   "difficulty": "medium",
+   "exemplar": {
+    "thesis": "Domestic social and economic pressures powerfully shaped interwar foreign policy: war debts and reparations entangled diplomacy, nativism drove immigration restriction, and the Depression deepened isolationism.",
+    "evidence": [
+     "War debts and German reparations dominated 1920s diplomacy (Dawes Plan, 1924) as Americans demanded repayment",
+     "Nativism produced the Emergency Quota Act (1921) and the National Origins Act (1924), closing the era of open immigration",
+     "The Great Depression reinforced isolationism - tariff walls (Hawley-Smoot, 1930) and the Neutrality Acts reflected a turn inward"
+    ]
+   },
+   "inspired_by": "Practice Test 3, LEQ Q4",
+   "format": "remapped",
+   "source_type": "original"
+  }
+ ]
+}

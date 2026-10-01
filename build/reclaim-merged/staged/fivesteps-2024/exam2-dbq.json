@@ -1,0 +1,78 @@
+{
+ "items": [
+  {
+   "id": "5s24-exam2-dbq",
+   "type": "dbq",
+   "format": "remapped",
+   "prompt": "To what extent did the Supreme Court advance or inhibit Progressive regulation of corporations in the period 1885–1920?",
+   "documents": [
+    {
+     "n": 1,
+     "kind": "text",
+     "date": "1895 (decision on the Pullman Strike)",
+     "text": "\"That the original design [of the Sherman Antitrust Act] to suppress trusts and monopolies … is clear; but it is equally clear that further and more comprehensive purpose came to be entertained. … Combinations are condemned, not only when they take the form of trusts, but in whatever form found, if they be in restraint of trade.\" —In re Debs (abridged)",
+     "sourcing_note": "POV/purpose: The Court upholds jailing Eugene Debs for the Pullman boycott; its purpose is to affirm federal power against labor, reading the Sherman Act broadly. Argument relevance: Use to show the Court's asymmetry: the Sherman Act was wielded against unions before it was used against trusts—inhibiting reform's allies while corporations went largely untouched.",
+     "source_type": "pd-quote"
+    },
+    {
+     "n": 2,
+     "kind": "text",
+     "date": "1895",
+     "text": "\"Congress did not attempt … to make criminal the acts of persons in the acquisition and control of property … The contracts and acts of the defendants related exclusively to the acquisition of the Philadelphia refineries and the business of sugar refining in Pennsylvania, and bore no direct relation to commerce between states or with foreign countries.\" —U.S. v. E. C. Knight Co. (abridged)",
+     "sourcing_note": "POV/purpose: The Court voids the breakup of the Sugar Trust; its purpose is to confine the commerce power by separating 'manufacture' from 'commerce.' Argument relevance: Use as the leading case for 'inhibited': the Court gutted the Sherman Act against the era's great trusts, defining monopoly out of federal reach.",
+     "source_type": "pd-quote"
+    },
+    {
+     "n": 3,
+     "kind": "text",
+     "date": "1898",
+     "text": "\"By the 14th Amendment … no state shall deprive any person of property without the due process of law … That corporations are persons within this amendment is now settled. [The Court] adjudged that the enforcement of the schedules of rates established by the [Nebraska law reducing railroad rates] … would deprive the railroad companies of the compensation they were legally entitled to receive.\" —Smyth v. Ames (abridged)",
+     "sourcing_note": "POV/purpose: The Court strikes down state railroad rate regulation; its purpose is to extend Fourteenth Amendment 'personhood' protections to corporations against state regulation. Argument relevance: Use to argue the Court shielded corporations from state-level Progressive regulation, forcing reformers toward the harder federal route.",
+     "source_type": "pd-quote"
+    },
+    {
+     "n": 4,
+     "kind": "text",
+     "date": "1905",
+     "text": "\"The act [state law limiting maximum hours of bakers] is not … a health law, but is an illegal interference with the rights of individuals, both employers and employees, to make contracts regarding labor upon such terms as they may think best.\" —Lochner v. New York (abridged)",
+     "sourcing_note": "POV/purpose: The Court voids a state maximum-hours law; its purpose is to entrench 'liberty of contract' as a constitutional barrier to labor regulation. Argument relevance: Use as the signature 'inhibited' case: Lochner-era doctrine blocked Progressive labor laws for a generation.",
+     "source_type": "pd-quote"
+    },
+    {
+     "n": 5,
+     "kind": "text",
+     "date": "1908",
+     "text": "\"The two sexes differ in structure of body, … in the amount of physical strength in the capacity for long-continued labor … This difference justifies a difference in legislation. … without questioning in any respect the decision in Lochner v. New York, we are of the opinion that [the Oregon law limiting women's working hours] … is [not] in conflict with the Federal Constitution…\" —Muller v. Oregon (abridged)",
+     "sourcing_note": "POV/purpose: The Court upholds Oregon's women's-hours law on paternalist grounds; its purpose is to carve a narrow exception to Lochner without disturbing it. Argument relevance: Use to argue the Court 'advanced' regulation only selectively—protective legislation survived when framed around women's difference, not workers' rights generally.",
+     "source_type": "pd-quote"
+    },
+    {
+     "n": 6,
+     "kind": "text",
+     "date": "1911",
+     "text": "\"The public policy has been to prohibit … contracts or acts entered into with the intent to wrong the public and which unreasonably restrict competitive conditions … The combination of the defendants in this case is an unreasonable and undue restraint of trade in petroleum … moving in interstate commerce, and falls within the prohibitions of the [Sherman Antitrust Act].\" —Standard Oil Co. v. United States (abridged)",
+     "sourcing_note": "POV/purpose: The Court orders Standard Oil dissolved; its purpose is to show the Sherman Act could reach the great trusts—but only 'unreasonable' restraints. Argument relevance: Use to argue the Court 'advanced' regulation after 1900—yet the 'rule of reason' it invented also narrowed the Act, a double-edged precedent.",
+     "source_type": "pd-quote"
+    },
+    {
+     "n": 7,
+     "kind": "text",
+     "date": "1917",
+     "text": "\"Viewed as an act establishing an eight-hour day as the standard of service by employees, the statute is clearly within the power of Congress under the commerce clause. Viewed as an act fixing wages, the statute merely illustrates the character of regulation essential, and hence permissible, for the protection of the public right.\" —Wilson v. New (abridged)",
+     "sourcing_note": "POV/purpose: The Court upholds the Adamson Act's eight-hour railroad day; its purpose is to affirm broad federal regulatory power over interstate carriers. Argument relevance: Use as the culminating 'advanced' case: by 1917 the Court sustained federal labor regulation under the commerce clause, marking how far doctrine had moved since E. C. Knight.",
+     "source_type": "pd-quote"
+    }
+   ],
+   "difficulty": "hard",
+   "period": "U7",
+   "themes": [
+    "PCE",
+    "WXT"
+   ],
+   "skill": "Argumentation",
+   "reasoning": "Causation",
+   "inspired_by": "5steps-2024/exam2.xhtml",
+   "source_type": "pd-quote"
+  }
+ ]
+}

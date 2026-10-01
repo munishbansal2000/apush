@@ -1,0 +1,74 @@
+{
+ "id": "dbq-drill",
+ "type": "dbq",
+ "prompt": "Evaluate the extent to which fears of communism affected American society from 1940 to 1959.",
+ "period": "U8",
+ "themes": [
+  "WOR",
+  "SOC"
+ ],
+ "skill": "Argumentation",
+ "reasoning": "Causation",
+ "difficulty": "hard",
+ "inspired_by": "Chapter 5 DBQ Drill (communism fears 1940-1959)",
+ "format": "remapped",
+ "documents": [
+  {
+   "n": 1,
+   "kind": "text",
+   "date": "November 14, 1944",
+   "text": "Paraphrased from a decoded telegram from a KGB agent in New York to Moscow, intercepted by U.S. intelligence. The agent reports that LIBERAL (identified in the notes as Julius Rosenberg) has successfully recruited Kh'YuS (probably Joel Barr or Alfred Sarant), that the two will be given a camera to photograph their own materials, and that OSA (Ruth Greenglass) has agreed to help draw in ShMEL' (David Greenglass) with a view to ENORMOUS (the atomic energy project).",
+   "sourcing_note": "POV: Soviet intelligence operative. Purpose: operational report to headquarters. Audience: Moscow (Lt. Gen. P. M. Fitin). Argument relevance: evidence that Soviet espionage in the United States was real - grounding some anti-communist fears in fact.",
+   "source_type": "paraphrase"
+  },
+  {
+   "n": 2,
+   "kind": "text",
+   "date": "January 1949",
+   "text": "Paraphrased from Representative John F. Kennedy, speech to Congress. Kennedy declares that the United States has suffered a disaster in China, blames the administration for failing to prevent the communist victory there, and demands stronger American action against communism in Asia.",
+   "sourcing_note": "POV: ambitious Cold Warrior congressman. Purpose: attack the Truman administration and demand a harder anti-communist line. Audience: House and the public. Argument relevance: shows anti-communism as a domestic political weapon - 'losing China' became a partisan charge.",
+   "source_type": "paraphrase"
+  },
+  {
+   "n": 3,
+   "kind": "text",
+   "date": "July 1951",
+   "text": "Paraphrased from President Harry Truman, speech. Truman recounts that Americans had become so frightened of being called communists that some were afraid to sign their names to quotations from the Declaration of Independence, and warns that the nation must not let fear destroy the very freedoms it claims to defend.",
+   "sourcing_note": "POV: sitting president. Purpose: decry the excesses of the anti-communist scare while defending his own anti-communism. Audience: the public. Argument relevance: illustrates the climate of fear at its height - and Truman's dual role as both Cold Warrior and critic of the witch hunt.",
+   "source_type": "paraphrase"
+  },
+  {
+   "n": 4,
+   "kind": "image",
+   "date": "1955",
+   "text": "Paraphrased from an advertisement in Civil Defense magazine. A company markets metal identification tags for schoolchildren to wear during atomic-bomb evacuation drills, promising parents that their children can be identified after an attack.",
+   "sourcing_note": "POV: commercial advertiser. Purpose: sell a product. Audience: schools and parents. Argument relevance: shows fear of the H-bomb commercialized and embedded in children's daily lives - the scare reached into the classroom.",
+   "source_type": "paraphrase"
+  },
+  {
+   "n": 5,
+   "kind": "image",
+   "date": "1919",
+   "text": "Described from a cartoon in the Literary Digest (1919). A sinister immigrant anarchist, carrying a knife and a bomb, sneaks up behind the Statue of Liberty.",
+   "sourcing_note": "POV: nativist press. Purpose: stoke fear of immigrant radicals. Audience: magazine readers. Argument relevance: First Red Scare imagery that the Second Red Scare echoed - linking foreignness, radicalism, and disloyalty across four decades.",
+   "source_type": "original"
+  },
+  {
+   "n": 6,
+   "kind": "text",
+   "date": "February 1950",
+   "text": "Paraphrased from Senator Joseph McCarthy, speech at Wheeling, West Virginia. McCarthy claims to hold a list of 205 communists working in the State Department, accusing the government of harboring traitors shaping American foreign policy.",
+   "sourcing_note": "POV: demagogic senator. Purpose: gain national attention and political power. Audience: a Republican women's club, via the press. Argument relevance: the epitome of reckless accusation driving the scare - the charge that launched McCarthyism.",
+   "source_type": "paraphrase"
+  },
+  {
+   "n": 7,
+   "kind": "text",
+   "date": "1954",
+   "text": "Paraphrased from Edward R. Murrow, television broadcast. Murrow warns that McCarthy confuses dissent with disloyalty, that accusation is not proof, and that the senator's methods threaten the freedoms Americans claim to defend against communism.",
+   "sourcing_note": "POV: respected broadcast journalist. Purpose: check McCarthy's power. Audience: television viewers. Argument relevance: turning point - establishment media pushback that helped end McCarthy's influence, showing the scare's limits.",
+   "source_type": "paraphrase"
+  }
+ ],
+ "source_type": "paraphrase"
+}

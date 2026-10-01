@@ -1,0 +1,74 @@
+{
+ "id": "dbq-test3",
+ "type": "dbq",
+ "prompt": "Evaluate the extent to which slavery challenged American national unity in the period from 1844 to 1861.",
+ "period": "U5",
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "skill": "Argumentation",
+ "reasoning": "Causation",
+ "difficulty": "hard",
+ "inspired_by": "Practice Test 3, DBQ (slavery 1844-1861)",
+ "format": "remapped",
+ "documents": [
+  {
+   "n": 1,
+   "kind": "text",
+   "date": "July 1845",
+   "text": "Why, were other reasoning wanting, in favor of now elevating this question of the reception of Texas into the Union, out of the lower region of our past party dissension, up to its proper level of a high and broad nationality, it surely is to be found, found abundantly, in the manner in which other nations have undertaken to intrude themselves into it, between us and the proper parties to the case, in a spirit of hostile interference against us, for the avowed object of thwarting our policy and hampering our power, limiting our greatness and checking the fulfillment of our manifest destiny to overspread the continent allotted by Providence for the free development of our yearly multiplying millions.",
+   "sourcing_note": "Source: 'Annexation,' by John L. O'Sullivan, United States Magazine and Democratic Review. POV: Democratic editor and expansionist. Purpose: promote Texas annexation under the banner of manifest destiny. Audience: magazine readers. Argument relevance: shows expansionism entangled with slavery from the start - annexing slaveholding Texas forced the slavery-extension question into national politics.",
+   "source_type": "pd-quote"
+  },
+  {
+   "n": 2,
+   "kind": "text",
+   "date": "May 11, 1846",
+   "text": "As war exists, and notwithstanding all our efforts to avoid it, exists by the act of Mexico herself, we are called upon by every consideration of duty and patriotism to vindicate with decision the honor, rights and dignity of this country.",
+   "sourcing_note": "Source: President James K. Polk's War Message to Congress. POV: expansionist president. Purpose: justify war with Mexico. Audience: Congress. Argument relevance: the war for territory produced the lands over which the slavery-extension fight would split the nation.",
+   "source_type": "pd-quote"
+  },
+  {
+   "n": 3,
+   "kind": "text",
+   "date": "February 8, 1847",
+   "text": "But, sir, the issue now presented is not whether slavery shall exist unmolested where it now is, but whether it shall be carried to new and distant regions, now free, where the footprint of a slave cannot be found. This, sir, is the issue. Upon it I take my stand, and from it I cannot be frightened or driven by idle charges of abolitionism.\n\nI ask not that slavery be abolished, I demand that this government preserve the integrity of free territory against the aggressions of slavery - against its wrongful usurpations.\n\nSir, I was in favor of the annexation of Texas.... Yes, sir, here was an empire larger than France given up to slavery. Shall further concessions be made by the North? Shall we give up free territory, the inheritance of free labor? Must we yield this also?\n\n...Now, sir, we are told that California is ours, that New Mexico is ours - won by the valor of our arms. They are free. Shall they remain free? Shall these fair provinces be the inheritance and homes of the white labor of freemen or the black labor of slaves? This, sir, is the issue.",
+   "sourcing_note": "Source: Representative David Wilmot, from the Congressional Globe. POV: Northern Democrat. Purpose: bar slavery from territories won in the Mexican War. Audience: House of Representatives. Argument relevance: shows slavery extension splitting even the Democratic Party along sectional lines - direct evidence of slavery challenging national unity.",
+   "source_type": "pd-quote"
+  },
+  {
+   "n": 4,
+   "kind": "image",
+   "date": "1854",
+   "text": "Described from a map of the Kansas-Nebraska Act, 1854. The map distinguishes free states and territories (light), slave states (dark), territories open to slavery by popular sovereignty under the Compromise of 1850 (Utah and New Mexico Territories), and territories open to slavery by popular sovereignty under the Kansas-Nebraska Act of 1854 (Kansas and Nebraska Territories). The Mason-Dixon line is marked; an 'Indian Reserve' sits west of Missouri and Arkansas.",
+   "sourcing_note": "POV: textbook cartographer. Purpose: illustrate the reach of popular sovereignty. Audience: students. Argument relevance: visualizes how the Kansas-Nebraska Act repealed the Missouri Compromise line, nationalizing the slavery conflict - the map itself shows a nation geographically divided by the issue.",
+   "source_type": "original"
+  },
+  {
+   "n": 5,
+   "kind": "text",
+   "date": "1857",
+   "text": "The right of property in a slave is distinctly and expressly affirmed in the Constitution.... No word can be found in the Constitution which gives Congress a greater power over the slave property or which entitles property of that kind to less protection than property of any other description.",
+   "sourcing_note": "Source: Chief Justice Roger Taney, Supreme Court opinion in Dred Scott v. Sandford. POV: pro-southern Chief Justice. Purpose: settle the slavery question judicially by nationalizing slave property rights. Audience: the nation. Argument relevance: instead of settling the issue, the decision outraged the North and deepened sectional disunity.",
+   "source_type": "pd-quote"
+  },
+  {
+   "n": 6,
+   "kind": "image",
+   "date": "1850 and 1860",
+   "text": "Described from paired maps of railroad routes in America, 1850 and 1860. In 1850, rail lines cluster in the Northeast with short spurs in the South. By 1860, a dense railroad network covers the Northeast and Old Northwest, linking the Atlantic to Chicago and the upper Mississippi, while the South has far fewer and shorter lines.",
+   "sourcing_note": "POV: economic geography. Purpose: show infrastructure growth. Audience: students. Argument relevance: the North's dense rail integration versus southern stagnation shows the material base of sectional divergence - economic development itself followed sectional lines.",
+   "source_type": "original"
+  },
+  {
+   "n": 7,
+   "kind": "image",
+   "date": "1860",
+   "text": "Described from the 1860 political cartoon 'Progressive Democracy - Prospect of a Smash Up' (National Portrait Gallery, Smithsonian Institution). A locomotive labeled 'Equal Rights' carrying Lincoln and Hamlin bears down on a wagon labeled 'Democratic Platform,' pulled in opposite directions by mules carrying the rival Democratic nominations of Douglas and Johnson versus Breckinridge and Lane. Speech bubbles warn of the coming collision.",
+   "sourcing_note": "POV: Republican-leaning press. Purpose: satirize the Democrats' sectional split in the 1860 election. Audience: voters. Argument relevance: visual proof that slavery shattered the national party system on the eve of secession - the Democracy literally pulling apart.",
+   "source_type": "original"
+  }
+ ],
+ "source_type": "pd-quote"
+}

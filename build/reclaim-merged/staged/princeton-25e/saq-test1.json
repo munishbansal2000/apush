@@ -1,0 +1,95 @@
+{
+ "file": "saq-test1.json",
+ "set": "test1",
+ "inspired_by": "Practice Test 1, Section I Part B (SAQ)",
+ "format": "remapped",
+ "items": [
+  {
+   "id": "saq-test1-q1",
+   "type": "saq",
+   "q": 1,
+   "source_type": "paraphrase",
+   "stimulus": {
+    "attribution": "Paraphrased from Philip P. Wiener, ed., Dictionary of the History of Ideas: Studies of Selected Pivotal Ideas (1973).",
+    "text": "Constitutionalism describes a complex idea, rooted in historical experience, that subjects the officials who exercise governmental powers to the limitations of a higher law. It proclaims the desirability of the rule of law as opposed to rule by the arbitrary judgment or mere fiat of public officials. The central element of constitutionalism is that government officials are not free to do anything they please in any manner they choose; they are bound to observe both the limitations on power and the procedures set out in the supreme, constitutional law of the community. The touchstone of constitutionalism is limited government under a higher law."
+   },
+   "parts": [
+    "A. Briefly explain one claim the author makes about the nature of constitutionalism.",
+    "B. Briefly explain one piece of evidence from the period 1787 to 1800 that supports the author's view that government power should be limited by a higher law.",
+    "C. Briefly explain one development from the period 1787 to 1800 that challenged the ideal of limited government described by the author."
+   ],
+   "exemplar": [
+    "The author claims that constitutionalism means government officials are bound by a higher law and may not exercise power arbitrarily; the test of constitutionalism is limited government under that higher law.",
+    "The Bill of Rights (1789-1791) supports the claim because it placed explicit written limits on federal power in order to protect individual liberties.",
+    "The Sedition Act of 1798 challenged the ideal because it criminalized criticism of the federal government, punishing the political speech the First Amendment was meant to protect."
+   ],
+   "period": "U3",
+   "themes": [
+    "PCE",
+    "NAT"
+   ],
+   "skill": "Claims & Evidence in Sources",
+   "reasoning": "Causation",
+   "difficulty": "medium",
+   "inspired_by": "Practice Test 1, SAQ Q1 (Wiener secondary source)"
+  },
+  {
+   "id": "saq-test1-q2",
+   "type": "saq",
+   "q": 2,
+   "source_type": "pd-quote",
+   "stimulus": {
+    "attribution": "John Adams, letter to John Taylor, 1814.",
+    "text": "I do not say that democracy has been more pernicious on the whole, and in the long run, than monarchy or aristocracy. Democracy has never been and never can be so durable as aristocracy or monarchy; but while it lasts, it is more bloody than either.... Remember, democracy never lasts long. It soon wastes, exhausts, and murders itself. There never was a democracy yet that did not commit suicide. It is in vain to say that democracy is less vain, less proud, less selfish, less ambitious, or less avaricious than aristocracy or monarchy. It is not true, in fact, and nowhere appears in history. Those passions are the same in all men, under all forms of simple government, and when unchecked, produce the same effects of fraud, violence, and cruelty."
+   },
+   "parts": [
+    "A. Briefly explain John Adams's view of democracy as expressed in the excerpt.",
+    "B. Briefly explain one development in the United States between 1800 and 1848 that reflects the concern Adams expresses.",
+    "C. Briefly explain one development in the United States between 1800 and 1848 that challenges Adams's view that democracy destroys itself."
+   ],
+   "exemplar": [
+    "Adams argues that democracy is inherently unstable and self-destructive: it 'wastes, exhausts, and murders itself' because unchecked human passions for vanity, pride, and ambition produce fraud and violence in popular government.",
+    "The bitter partisan conflict of the 1820s, including the 'corrupt bargain' controversy of 1824-1828 and the rise of scurrilous party newspapers, reflects his concern that democratic politics descends into factional strife.",
+    "The peaceful transfer of power in the election of 1800 and the expansion of suffrage to nearly all white men by the 1830s without the republic collapsing challenge his claim that democracy inevitably commits suicide."
+   ],
+   "period": "U4",
+   "themes": [
+    "PCE"
+   ],
+   "skill": "Sourcing & Situation",
+   "reasoning": "Continuity & Change",
+   "difficulty": "medium",
+   "inspired_by": "Practice Test 1, SAQ Q1 (Adams primary source)"
+  },
+  {
+   "id": "saq-test1-q3",
+   "type": "saq",
+   "q": 3,
+   "stimulus": {
+    "attribution": "Described from an engraving published in 1634 depicting European ships arriving on a North American shore.",
+    "text": "The engraving shows European sailing ships anchored offshore while, in the foreground, Europeans in hats and doublets trade face-to-face with Native Americans on the beach and in canoes, exchanging goods hand to hand. A small European-style structure stands on the shore, and additional ships wait in the harbor."
+   },
+   "parts": [
+    "A. Briefly explain what the engraving suggests about the nature of early contact between Europeans and Native Americans.",
+    "B. Briefly explain how one detail of the image supports your answer to part A.",
+    "C. Briefly explain one longer-term effect of the type of contact shown on Native American societies in the period 1600 to 1750."
+   ],
+   "exemplar": [
+    "The engraving suggests that early contact was cooperative and commercial, presenting Europeans and Native Americans as willing trading partners.",
+    "The hand-to-hand exchange of goods on the beach supports this, showing voluntary trade rather than conquest or coercion.",
+    "Participation in the fur trade drew Native societies into European market economies and rivalries, intensifying inter-tribal warfare over hunting grounds and access to European goods."
+   ],
+   "period": "U2",
+   "themes": [
+    "MIG",
+    "WXT"
+   ],
+   "skill": "Sourcing & Situation",
+   "reasoning": "Causation",
+   "difficulty": "medium",
+   "inspired_by": "Practice Test 1, SAQ Q2 (1634 engraving)",
+   "source_kind": "non-text",
+   "source_type": "original"
+  }
+ ]
+}

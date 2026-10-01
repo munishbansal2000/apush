@@ -1,0 +1,84 @@
+{
+ "file": "leq-test1.json",
+ "inspired_by": "Practice Test 1, LEQ trio",
+ "format": "remapped",
+ "items": [
+  {
+   "id": "leq-test1-main",
+   "type": "leq",
+   "prompt": "Assess how far social movements reshaped American society between 1945 and 1980.",
+   "original_prompt": "Evaluate the extent to which social movements changed American society from 1945 to 1980.",
+   "role": "main",
+   "period": "U8",
+   "themes": [
+    "SOC",
+    "PCE"
+   ],
+   "skill": "Argumentation",
+   "reasoning": "Continuity & Change",
+   "difficulty": "medium",
+   "exemplar": {
+    "thesis": "Social movements fundamentally reshaped postwar American society: the civil rights movement dismantled legal segregation, the women's movement expanded economic and political equality, and the counterculture challenged traditional norms - though each faced backlash that limited change.",
+    "evidence": [
+     "Civil Rights Act of 1964 and Voting Rights Act of 1965 ended Jim Crow and enfranchised Black southerners",
+     "Title IX (1972) and Roe v. Wade (1973) advanced women's equality in education and reproductive rights",
+     "Conservative backlash - Nixon's 'silent majority,' the Reagan coalition of 1980 - showed the limits and reversals of movement gains"
+    ]
+   },
+   "inspired_by": "Practice Test 1, LEQ Q4",
+   "format": "remapped",
+   "source_type": "original"
+  },
+  {
+   "id": "leq-test1-spare-a",
+   "type": "leq",
+   "prompt": "Assess how far the relationship between the American colonists and Great Britain changed from 1750 to 1783.",
+   "original_prompt": "Evaluate the extent to which the American colonists' relationship to Great Britain changed between 1750 and 1783.",
+   "role": "spare",
+   "period": "U3",
+   "themes": [
+    "NAT",
+    "WOR"
+   ],
+   "skill": "Argumentation",
+   "reasoning": "Continuity & Change",
+   "difficulty": "medium",
+   "exemplar": {
+    "thesis": "The colonists' relationship with Britain changed profoundly from loyal subjects under salutary neglect to independent citizens of a new republic, as imperial reforms after 1763 provoked resistance that escalated from protest to revolution - though a substantial Loyalist minority never accepted the break.",
+    "evidence": [
+     "Stamp Act (1765) and Intolerable Acts (1774) ended salutary neglect and unified colonial resistance",
+     "Shift from the Olive Branch Petition (1775) seeking reconciliation to the Declaration of Independence (1776)",
+     "Continuity: roughly one-fifth of colonists remained Loyalists, and many Patriots still admired British constitutional ideals"
+    ]
+   },
+   "inspired_by": "Practice Test 1, LEQ Q2",
+   "format": "remapped",
+   "source_type": "original"
+  },
+  {
+   "id": "leq-test1-spare-b",
+   "type": "leq",
+   "prompt": "Assess how far the United States government gave way to political corruption between 1865 and 1900.",
+   "original_prompt": "Evaluate the extent to which the United States government succumbed to political corruption from 1865 to 1900.",
+   "role": "spare",
+   "period": "U6",
+   "themes": [
+    "PCE"
+   ],
+   "skill": "Argumentation",
+   "reasoning": "Causation",
+   "difficulty": "medium",
+   "exemplar": {
+    "thesis": "The postwar federal government was deeply compromised by corruption: rapid economic expansion, weak regulation, and machine politics produced systemic graft, though reform movements began to check it by century's end.",
+    "evidence": [
+     "Grant-era scandals - the Credit Mobilier scheme and the Whiskey Ring - implicated congressmen and cabinet officials",
+     "Urban machines such as Tweed's Tammany Hall traded contracts and jobs for votes and kickbacks",
+     "Reform responses: the Pendleton Civil Service Act (1883) and the Interstate Commerce Act (1887) began curbing the spoils system and railroad abuses"
+    ]
+   },
+   "inspired_by": "Practice Test 1, LEQ Q3",
+   "format": "remapped",
+   "source_type": "original"
+  }
+ ]
+}
