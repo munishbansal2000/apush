@@ -306,6 +306,60 @@ def doc_zoom(img_path, dur, highlight_box=None, caption="", zoom=0.35):
     return clip
 
 
+def dur(path, pad=1.2):
+    """MP3 duration in seconds, plus breathing room for the scene."""
+    import subprocess
+    r = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration",
+                        "-of", "csv=p=0", path], capture_output=True, text=True)
+    return float(r.stdout.strip()) + pad
+
+
+def bullet_slide(title, bullets, dur, footer=""):
+    """Vertically-centered title + bullets slide as a video clip."""
+    img = Image.new("RGB", (W, H), (20, 22, 29))
+    d = ImageDraw.Draw(img)
+    tf = font(FB, 60)
+    bf = font(FR, 50)
+    title_lines = wrap_px(d, title, tf, W - 160)
+    body_lines = []
+    for b in bullets:
+        body_lines += wrap_px(d, "\u2022  " + b, bf, W - 180)
+        body_lines.append("")
+    t_asc, t_desc = tf.getmetrics()
+    b_asc, b_desc = bf.getmetrics()
+    t_lh, b_lh = t_asc + t_desc + 14, b_asc + b_desc + 22
+    content_h = len(title_lines) * t_lh + 60 + len(body_lines) * b_lh
+    y = max(240, (H - content_h) // 2 - 60)
+    for line in title_lines:
+        d.text((80, y), line, font=tf, fill=(233, 196, 106))
+        y += t_lh
+    y += 60
+    for line in body_lines:
+        if line:
+            d.text((90, y), line, font=bf, fill=(232, 232, 232))
+        y += b_lh
+    if footer:
+        d.text((90, H - 140), footer, font=font(FR, 34), fill=(120, 126, 140))
+    return slide_scene(img, dur)
+
+
+def title_card(text, dur, sub=None):
+    """Text-only title card on dark background."""
+    img = Image.new("RGB", (W, H), (16, 18, 24))
+    d = ImageDraw.Draw(img)
+    tf = font(FB, 72)
+    lines = wrap_px(d, text, tf, W - 160)
+    asc, desc = tf.getmetrics()
+    lh = asc + desc + 16
+    y = (H - len(lines) * lh) // 2 - 40
+    for line in lines:
+        d.text((80, y), line, font=tf, fill=(240, 242, 246))
+        y += lh
+    if sub:
+        d.text((80, y + 40), sub, font=font(FR, 40), fill=(140, 146, 160))
+    return slide_scene(img, dur)
+
+
 def assemble(scenes, audios, out, fps=30):
     """Concat scenes with 0.35s crossfades; each scene gets its narration audio."""
     assert len(scenes) == len(audios)
