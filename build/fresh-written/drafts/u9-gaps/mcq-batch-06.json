@@ -1,394 +1,394 @@
 {
-  "items": [
-    {
-      "id": "original-u9-immig-23",
-      "type": "mcq",
-      "stem": "The chart shows legal immigration climbing in every decade after the 1960s. The 1965 law behind this growth reversed the restrictive approach of the 1920s quota system. Which earlier episode most closely resembles that kind of policy reversal?",
-      "stimulus": {
-        "kind": "chart",
-        "chart_spec": {
-          "type": "bar",
-          "title": "Legal U.S. Immigration by Decade, 1960s–2000s",
-          "x_label": "Decade",
-          "y_label": "Millions of legal immigrants",
-          "labels": [
-            "1960s",
-            "1970s",
-            "1980s",
-            "1990s",
-            "2000s"
-          ],
-          "values": [
-            3.3,
-            4.5,
-            6.0,
-            9.8,
-            10.4
-          ],
-          "source_note": "Approximate figures; the post-1965 growth in immigration underlying the demographic change described in u9.md §The story ('especially around immigration')."
-        }
-      },
-      "options": [
-        "(A) The Chinese Exclusion Act of 1882, which added a new race-based restriction on immigration.",
-        "(B) The 1943 repeal of the Chinese Exclusion Act, removing a race-based bar during the U.S. wartime alliance with China.",
-        "(C) The quota law of 1924, which created the national-origins system the 1965 act later ended.",
-        "(D) The McCarran-Walter Act of 1952, which preserved the national-origins quota system intact for another decade."
-      ],
-      "key": "B",
-      "explanation": "Both 1943 and 1965 were reversals: Congress dismantled an existing race-based barrier rather than building a new one. The 1943 repeal ended sixty years of Chinese exclusion; the 1965 act ended the broader national-origins hierarchy — the policy pivot behind the growth the chart shows.",
-      "option_explanations": {
-        "A": "Incorrect. The 1882 act created a restriction; the question asks for an episode that removed one, as the 1965 act did.",
-        "B": "Correct. It is the closest parallel: a repeal that struck down a discriminatory bar, foreshadowing the larger repeal of 1965.",
-        "C": "Incorrect. The 1924 law built the quota system; it is the policy the 1965 act reversed, not a parallel reversal.",
-        "D": "Incorrect. The 1952 act preserved the quota system, continuing restriction rather than reversing it."
-      },
-      "period": "U9",
-      "skill": "Contextualization",
-      "reasoning": "Comparison",
-      "themes": [
-        "MIG",
-        "PCE"
-      ],
-      "difficulty": "medium",
-      "fact_source": "u9.md §The story — post-1965 demographic change as reversal of the restrictive era",
-      "stream": "drill"
-    },
-    {
-      "id": "original-u9-immig-24",
-      "type": "mcq",
-      "stem": "As immigration made Latinos one of the fastest-growing groups in the United States, which political development followed?",
-      "options": [
-        "(A) Both major parties agreed to ignore Latino voters entirely and never courted them.",
-        "(B) Latino voters acted as a single bloc with no internal political differences of any kind, voting identically.",
-        "(C) Immigration disappeared as an issue in American politics after 2000.",
-        "(D) Both parties increasingly competed for Latino voters, making immigration a central electoral battleground nationwide."
-      ],
-      "key": "D",
-      "explanation": "Demographic change reshaped the electorate, and parties responded strategically. As the Latino vote grew in states such as California, Texas, and Florida, both Democrats and Republicans courted it — which is why immigration enforcement, legalization, and border policy became fiercely contested campaign issues rather than settled ones.",
-      "option_explanations": {
-        "A": "Incorrect. Parties courted Latino voters actively; ignoring a fast-growing electorate would have been political malpractice.",
-        "B": "Incorrect. Latino voters differ by national origin, generation, and region — Cuban Americans, Mexican Americans, and Puerto Ricans have distinct political profiles.",
-        "C": "Incorrect. Immigration became more contested, not less, exactly as the review says demographic change 'reshaped politics, especially around immigration.'",
-        "D": "Correct. It describes the actual dynamic: demographic growth made the group electorally pivotal, and competition over its votes pushed immigration to the center of campaigns."
-      },
-      "period": "U9",
-      "skill": "Making Connections",
-      "reasoning": "Causation",
-      "themes": [
-        "MIG",
-        "PCE",
-        "NAT"
-      ],
-      "difficulty": "medium",
-      "fact_source": "u9.md §The story — 'demographic change — the coming \"majority-minority\" nation — reshaped politics, especially around immigration'",
-      "stream": "drill"
-    },
-    {
-      "id": "original-u9-coldwar-01",
-      "type": "mcq",
-      "stem": "In a 1983 speech, President Reagan called the Soviet Union an 'evil empire.' (The phrase is historical; context summarized for this item.) Reagan's language signaled which shift from the détente era of Nixon and Kissinger?",
-      "stimulus": {
-        "kind": "text",
-        "text": "In a 1983 speech, President Reagan called the Soviet Union an 'evil empire.' (The phrase is historical; context summarized for this item.)"
-      },
-      "options": [
-        "(A) A return to moral confrontation with the USSR after an era of negotiated coexistence.",
-        "(B) A decision to recognize the Soviet Union as a legitimate and equal partner in world affairs.",
-        "(C) An end to all American military spending and a turn to pure diplomacy.",
-        "(D) A pivot to ignoring the Soviet Union entirely in foreign policy."
-      ],
-      "key": "A",
-      "explanation": "Détente had treated the USSR as a rival to be managed through treaties and trade. Reagan's 'evil empire' framing rejected that moral neutrality, casting the Cold War as a struggle between good and evil — rhetoric that thrilled conservatives and alarmed diplomats who feared it would wreck arms control.",
-      "option_explanations": {
-        "A": "Correct. It captures the rhetorical break: from Kissinger's amoral great-power bargaining back to the moralized anti-communism of the early Cold War.",
-        "B": "Incorrect. 'Evil empire' denied the Soviets legitimacy; it was the opposite of recognizing them as an equal partner.",
-        "C": "Incorrect. Reagan paired harsh rhetoric with a massive military buildup, not with disarmament.",
-        "D": "Incorrect. Reagan confronted the Soviet Union more directly than his predecessors; he did not ignore it."
-      },
-      "period": "U9",
-      "skill": "Sourcing & Situation",
-      "reasoning": "Causation",
-      "themes": [
-        "WOR",
-        "PCE"
-      ],
-      "difficulty": "medium",
-      "fact_source": "u9.md §The story — Reagan 'called the Soviet Union an \"evil empire,\" funded anti-communist insurgents, and announced the Strategic Defense Initiative (1983)'",
-      "stream": "drill"
-    },
-    {
-      "id": "original-u9-coldwar-02",
-      "type": "mcq",
-      "stem": "The chart shows U.S. military spending rising steeply after 1980. Reagan's Strategic Defense Initiative (1983) — a proposed missile-defense shield — fit into which broader strategy?",
-      "stimulus": {
-        "kind": "chart",
-        "chart_spec": {
-          "type": "line",
-          "title": "U.S. Military Spending, 1980–1990 (nominal)",
-          "x_label": "Year",
-          "y_label": "Billions of dollars",
-          "labels": [
-            "1980",
-            "1982",
-            "1985",
-            "1988",
-            "1990"
-          ],
-          "values": [
-            134,
-            185,
-            253,
-            290,
-            299
-          ],
-          "source_note": "Approximate figures; the Reagan-era military buildup described in u9.md §The story ('spending massively on the military abroad')."
-        }
-      },
-      "options": [
-        "(A) Unilateral American disarmament and the dismantling of the nuclear arsenal.",
-        "(B) Withdrawal from all overseas alliances and military commitments.",
-        "(C) Pressuring the USSR through an arms buildup its struggling economy could not match.",
-        "(D) A plan for the direct invasion of the Soviet Union by American ground forces across Europe."
-      ],
-      "key": "C",
-      "explanation": "SDI was never built, but as part of the buildup the chart shows — spending roughly doubling from 1980 to 1985 — it confronted Moscow with a race it could not afford: matching American high-technology weapons would have broken an already stagnating Soviet economy. The review notes SDI both 'pressured the Soviets and spurred arms-control talks.'",
-      "option_explanations": {
-        "A": "Incorrect. The chart shows spending rising sharply, the opposite of disarmament.",
-        "B": "Incorrect. Reagan strengthened alliances such as NATO; the buildup was conducted with allies, not apart from them.",
-        "C": "Correct. It places SDI inside the larger pressure strategy the chart documents: an arms race designed to exploit Soviet economic weakness.",
-        "D": "Incorrect. No invasion was planned or proposed; the strategy was pressure and negotiation, not conquest."
-      },
-      "period": "U9",
-      "skill": "Developments & Processes",
-      "reasoning": "Causation",
-      "themes": [
-        "WOR",
-        "PCE"
-      ],
-      "difficulty": "medium",
-      "fact_source": "u9.md §Key terms — Strategic Defense Initiative (1983): 'pressured the Soviets and spurred arms-control talks'; §The story — 'spending massively on the military abroad'",
-      "stream": "drill"
-    },
-    {
-      "id": "original-u9-coldwar-03",
-      "type": "mcq",
-      "stem": "The chart shows the federal deficit climbing from $74 billion in 1980 to $221 billion in 1986. A historian argues that Reagan's military buildup was a major cause of these deficits. Which statement best supports that argument?",
-      "stimulus": {
-        "kind": "chart",
-        "chart_spec": {
-          "type": "line",
-          "title": "Federal Budget Deficit (+) / Surplus (−), 1980–2000",
-          "x_label": "Year",
-          "y_label": "Billions of dollars (negative = surplus)",
-          "labels": [
-            "1980",
-            "1983",
-            "1986",
-            "1989",
-            "1992",
-            "1998",
-            "2000"
-          ],
-          "values": [
-            74,
-            208,
-            221,
-            153,
-            290,
-            -69,
-            -236
-          ],
-          "source_note": "Approximate figures; Reagan-era deficits per u9.md §The story ('Growth did return, but so did huge deficits')."
-        }
-      },
-      "options": [
-        "(A) The deficit fell during the buildup years, which contradicts the claim.",
-        "(B) Defense spending was actually cut sharply in the 1980s as Reagan prioritized domestic programs, so the buildup cannot explain the deficit.",
-        "(C) The chart shows budget surpluses throughout the military buildup.",
-        "(D) The review pairs the 1981 tax cuts with 'spending massively on the military,' and the deficit tripled during the buildup years the chart shows."
-      ],
-      "key": "D",
-      "explanation": "The deficit's timing matches the policy mix: taxes cut in 1981 while defense spending surged, and the gap between revenue and spending — the deficit — roughly tripled by 1986. The buildup did not single-handedly cause the deficits (the tax cuts mattered too), but the review presents the two together as the era's fiscal signature.",
-      "option_explanations": {
-        "A": "Incorrect. The chart shows the deficit rising, not falling, from $74 billion to $221 billion across the buildup years.",
-        "B": "Incorrect. Defense spending rose enormously in the 1980s; it was domestic programs, not the military, that faced the budget knife.",
-        "C": "Incorrect. The chart shows large deficits — positive values — through the entire 1980s; surpluses do not appear until 1998.",
-        "D": "Correct. It combines the review's description of the policy mix with the chart's timing and scale, which is how historians attribute the deficits."
-      },
-      "period": "U9",
-      "skill": "Claims & Evidence in Sources",
-      "reasoning": "Causation",
-      "themes": [
-        "PCE",
-        "WOR"
-      ],
-      "difficulty": "hard",
-      "fact_source": "u9.md §The story — Reagan 'promised to shrink government at home — cutting taxes (1981)... while spending massively on the military abroad'; 'Growth did return, but so did huge deficits'",
-      "stream": "drill"
-    },
-    {
-      "id": "original-u9-coldwar-04",
-      "type": "mcq",
-      "stem": "When Mikhail Gorbachev came to power in the Soviet Union, he pursued glasnost (openness) and perestroika (restructuring). What problems was he trying to fix?",
-      "options": [
-        "(A) Excessive Soviet military victories that had overstretched the treasury.",
-        "(B) The stagnation of the Soviet command economy and the rigidity of one-party rule.",
-        "(C) A dangerous shortage of Soviet nuclear weapons relative to the American arsenal.",
-        "(D) An excess of political freedom enjoyed by ordinary Soviet citizens."
-      ],
-      "key": "B",
-      "explanation": "By the 1980s the Soviet economy had barely grown for a decade: central planning could not innovate, farms and factories were inefficient, and the party bureaucracy smothered initiative. Gorbachev's reforms were an insider's attempt to save the system by loosening it — an attempt that instead helped bring it down.",
-      "option_explanations": {
-        "A": "Incorrect. The Soviets were not winning victories; their costly stalemate in Afghanistan was one symptom of the overreach Gorbachev inherited.",
-        "B": "Correct. Economic stagnation and political rigidity were exactly the twin crises glasnost and perestroika were designed to address.",
-        "C": "Incorrect. The USSR possessed a vast nuclear arsenal; weapons quantity was not the problem — economic decay was.",
-        "D": "Incorrect. Soviet citizens had very little political freedom; expanding it was the point of glasnost, not a problem Gorbachev faced."
-      },
-      "period": "U9",
-      "skill": "Developments & Processes",
-      "reasoning": "Causation",
-      "themes": [
-        "WOR"
-      ],
-      "difficulty": "medium",
-      "fact_source": "u9.md §The story — 'when Mikhail Gorbachev came to power seeking reform, [Reagan] negotiated seriously'; §What the exam tests here — 'internal Soviet decay and Gorbachev's reforms'",
-      "stream": "drill"
-    },
-    {
-      "id": "original-u9-coldwar-05",
-      "type": "mcq",
-      "stem": "The INF Treaty of 1987, signed by Reagan and Gorbachev, was historic for which reason?",
-      "options": [
-        "(A) It eliminated a whole class of nuclear weapons — the first arms-control treaty ever to do so.",
-        "(B) It abolished all nuclear weapons worldwide in a single comprehensive disarmament agreement.",
-        "(C) It admitted the Soviet Union as a full member of NATO.",
-        "(D) It was signed before Reagan had ever criticized the Soviet Union publicly."
-      ],
-      "key": "A",
-      "explanation": "Earlier arms agreements had capped how many weapons each side could hold; the INF Treaty went further, destroying every U.S. and Soviet missile with a range of 500 to 5,500 kilometers. It showed that Reagan's confrontation and his diplomacy were two phases of one strategy: pressure first, then a deal with a reforming Soviet leader.",
-      "option_explanations": {
-        "A": "Correct. The treaty's distinction was elimination rather than limitation — an entire category of weapons destroyed and verified by on-site inspection.",
-        "B": "Incorrect. Both superpowers kept thousands of strategic nuclear weapons; only intermediate-range missiles were eliminated.",
-        "C": "Incorrect. The Soviet Union never joined NATO; the alliance remained a Western institution throughout the Cold War.",
-        "D": "Incorrect. Reagan signed the treaty in 1987, four years after the 1983 'evil empire' speech — the criticism came first, the diplomacy second."
-      },
-      "period": "U9",
-      "skill": "Contextualization",
-      "reasoning": "Causation",
-      "themes": [
-        "WOR"
-      ],
-      "difficulty": "medium",
-      "fact_source": "u9.md §The story — 'when Mikhail Gorbachev came to power seeking reform, [Reagan] negotiated seriously, signing the INF Treaty in 1987'",
-      "stream": "drill"
-    },
-    {
-      "id": "original-u9-coldwar-06",
-      "type": "mcq",
-      "stem": "Which sequence correctly orders the Cold War's endgame in Europe?",
-      "options": [
-        "(A) The Soviet Union dissolves first, then the Berlin Wall falls, then Germany reunifies last.",
-        "(B) Germany reunifies, then the Soviet Union dissolves, then the Berlin Wall falls.",
-        "(C) The Berlin Wall falls (1989), Germany reunifies (1990), the USSR dissolves (1991).",
-        "(D) The Soviet Union dissolves, then Germany reunifies, then the Berlin Wall falls."
-      ],
-      "key": "C",
-      "explanation": "The collapse unfolded from the outside in: Eastern European satellites broke free first (symbolized by the Wall's fall in November 1989), a reunified Germany followed in 1990, and the Soviet Union itself — its republics declaring independence one by one — dissolved last, in December 1991.",
-      "option_explanations": {
-        "A": "Incorrect. The Wall fell in 1989, two years before the USSR dissolved in 1991; this reverses the order.",
-        "B": "Incorrect. The Wall's fall (1989) preceded German reunification (1990), and the Soviet dissolution (1991) came last.",
-        "C": "Correct. It gives the accurate chronology the review lays out: Wall in November 1989, reunification, then dissolution in December 1991.",
-        "D": "Incorrect. This scrambles the order entirely; the Wall's fall was the first of the three events, not the last."
-      },
-      "period": "U9",
-      "skill": "Developments & Processes",
-      "reasoning": "Causation",
-      "themes": [
-        "WOR"
-      ],
-      "difficulty": "medium",
-      "fact_source": "u9.md §The story — 'the Berlin Wall fell in November 1989, Germany reunified, and the Soviet Union dissolved in December 1991'; §Key terms — End of the Cold War",
-      "stream": "drill"
-    },
-    {
-      "id": "original-u9-coldwar-07",
-      "type": "mcq",
-      "stem": "The chart shows U.S. military spending rising sharply in the 1980s. A historian cites this buildup as one cause of the Soviet collapse. Following the review's guidance on explaining why the Cold War ended, what must the historian also acknowledge?",
-      "stimulus": {
-        "kind": "chart",
-        "chart_spec": {
-          "type": "line",
-          "title": "U.S. Military Spending, 1980–1990 (nominal)",
-          "x_label": "Year",
-          "y_label": "Billions of dollars",
-          "labels": [
-            "1980",
-            "1982",
-            "1985",
-            "1988",
-            "1990"
-          ],
-          "values": [
-            134,
-            185,
-            253,
-            290,
-            299
-          ],
-          "source_note": "Approximate figures; the Reagan-era military buildup described in u9.md §The story ('spending massively on the military abroad')."
-        }
-      },
-      "options": [
-        "(A) That the buildup alone explains the entire collapse and that Soviet internal conditions were completely irrelevant to what happened.",
-        "(B) That the chart proves Gorbachev was secretly working for the United States.",
-        "(C) That American military spending had no effect whatsoever on Soviet decision-making.",
-        "(D) That internal Soviet decay was equally essential — the review rewards multi-causal explanations, not single-hero stories."
-      ],
-      "key": "D",
-      "explanation": "The review explicitly warns against single-cause accounts: 'the exam rewards multi-causal answers — internal Soviet decay and Gorbachev's reforms alongside American pressure (the military buildup, SDI) — not single-hero stories.' The buildup mattered, but it pressed on a system already rotting from within.",
-      "option_explanations": {
-        "A": "Incorrect. This is the single-hero story the review warns against; it ignores the internal decay that made the USSR vulnerable to pressure in the first place.",
-        "B": "Incorrect. There is no evidence for this claim, and the chart shows American spending, not Gorbachev's loyalties.",
-        "C": "Incorrect. This overcorrects in the other direction; most historians grant the buildup real (if secondary) weight in straining Soviet resources.",
-        "D": "Correct. It states the review's required multi-causal position: American pressure operating on — and interacting with — deep internal Soviet weaknesses."
-      },
-      "period": "U9",
-      "skill": "Argumentation",
-      "reasoning": "Causation",
-      "themes": [
-        "WOR"
-      ],
-      "difficulty": "hard",
-      "fact_source": "u9.md §What the exam tests here — 'Explain why the Cold War ended: the exam rewards multi-causal answers — internal Soviet decay and Gorbachev's reforms alongside American pressure (the military buildup, SDI) — not single-hero stories'",
-      "stream": "drill"
-    },
-    {
-      "id": "original-u9-coldwar-08",
-      "type": "mcq",
-      "stem": "After the Cold War, President George H. W. Bush spoke of a 'new world order.' The 1991 Gulf War seemed to exemplify it for which reason?",
-      "options": [
-        "(A) The United States fought entirely alone, consulting no other nation or international body.",
-        "(B) A broad U.S.-led, UN-authorized coalition expelled Iraq from Kuwait in weeks.",
-        "(C) The war lasted many years and ended in a negotiated stalemate.",
-        "(D) The Soviet Union opposed the operation and used its veto to block it."
-      ],
-      "key": "B",
-      "explanation": "With the Soviet Union no longer blocking UN action, the Security Council authorized force against Iraq's invasion of Kuwait, and dozens of nations contributed troops or money. The swift victory looked like proof that great-power cooperation — impossible during the Cold War — could now keep the peace: Bush's 'new world order' in action.",
-      "option_explanations": {
-        "A": "Incorrect. The coalition included dozens of countries; acting with broad international backing was the operation's defining feature.",
-        "B": "Correct. It identifies why contemporaries saw the war as a model: UN authorization plus a genuine coalition producing a quick, decisive result.",
-        "C": "Incorrect. The ground war lasted about 100 hours; the operation was famous for its speed, not for stalemate.",
-        "D": "Incorrect. The Soviet Union, in its final year, did not veto the UN resolutions; its acquiescence was itself a sign of the new era."
-      },
-      "period": "U9",
-      "skill": "Contextualization",
-      "reasoning": "Continuity & Change",
-      "themes": [
-        "WOR"
-      ],
-      "difficulty": "medium",
-      "fact_source": "u9.md §The story — 'the Gulf War (1991) expelled Iraq from Kuwait in weeks'; America 'stood alone as the unchallenged superpower'",
-      "stream": "drill"
+ "items": [
+  {
+   "id": "original-u9-immig-23",
+   "type": "mcq",
+   "stem": "The chart shows legal immigration climbing in every decade after the 1960s. The 1965 law behind this growth reversed the restrictive approach of the 1920s quota system. Which earlier episode most closely resembles that kind of policy reversal?",
+   "stimulus": {
+    "kind": "chart",
+    "chart_spec": {
+     "type": "bar",
+     "title": "Legal U.S. Immigration by Decade, 1960s–2000s",
+     "x_label": "Decade",
+     "y_label": "Millions of legal immigrants",
+     "labels": [
+      "1960s",
+      "1970s",
+      "1980s",
+      "1990s",
+      "2000s"
+     ],
+     "values": [
+      3.3,
+      4.5,
+      6.0,
+      9.8,
+      10.4
+     ],
+     "source_note": "Approximate figures; the post-1965 growth in immigration underlying the demographic change described in u9.md §The story ('especially around immigration')."
     }
-  ]
+   },
+   "options": [
+    "(A) The Chinese Exclusion Act of 1882, which added a new race-based restriction on immigration.",
+    "(B) The 1943 repeal of the Chinese Exclusion Act, removing a race-based bar during the U.S. wartime alliance with China.",
+    "(C) The quota law of 1924, which created the national-origins system the 1965 act later ended.",
+    "(D) The McCarran-Walter Act of 1952, which preserved the national-origins quota system intact for another decade."
+   ],
+   "key": "B",
+   "explanation": "Both 1943 and 1965 were reversals: Congress dismantled an existing race-based barrier rather than building a new one. The 1943 repeal ended sixty years of Chinese exclusion; the 1965 act ended the broader national-origins hierarchy — the policy pivot behind the growth the chart shows.",
+   "option_explanations": {
+    "A": "Incorrect. The 1882 act created a restriction; the question asks for an episode that removed one, as the 1965 act did.",
+    "B": "Correct. It is the closest parallel: a repeal that struck down a discriminatory bar, foreshadowing the larger repeal of 1965.",
+    "C": "Incorrect. The 1924 law built the quota system; it is the policy the 1965 act reversed, not a parallel reversal.",
+    "D": "Incorrect. The 1952 act preserved the quota system, continuing restriction rather than reversing it."
+   },
+   "period": "U9",
+   "skill": "Contextualization",
+   "reasoning": "Comparison",
+   "themes": [
+    "MIG",
+    "PCE"
+   ],
+   "difficulty": "medium",
+   "fact_source": "u9.md §The story — post-1965 demographic change as reversal of the restrictive era",
+   "stream": "drill"
+  },
+  {
+   "id": "original-u9-immig-24",
+   "type": "mcq",
+   "stem": "As immigration made Latinos one of the fastest-growing groups in the United States, which political development followed?",
+   "options": [
+    "(A) Both major parties agreed to ignore Latino voters entirely and never courted them.",
+    "(B) Latino voters acted as a single bloc with no internal political differences of any kind, voting identically.",
+    "(C) Immigration disappeared as an issue in American politics after 2000.",
+    "(D) Both parties increasingly competed for Latino voters, making immigration a central electoral battleground nationwide."
+   ],
+   "key": "D",
+   "explanation": "Demographic change reshaped the electorate, and parties responded strategically. As the Latino vote grew in states such as California, Texas, and Florida, both Democrats and Republicans courted it — which is why immigration enforcement, legalization, and border policy became fiercely contested campaign issues rather than settled ones.",
+   "option_explanations": {
+    "A": "Incorrect. Parties courted Latino voters actively; ignoring a fast-growing electorate would have been political malpractice.",
+    "B": "Incorrect. Latino voters differ by national origin, generation, and region — Cuban Americans, Mexican Americans, and Puerto Ricans have distinct political profiles.",
+    "C": "Incorrect. Immigration became more contested, not less, exactly as the review says demographic change 'reshaped politics, especially around immigration.'",
+    "D": "Correct. It describes the actual dynamic: demographic growth made the group electorally pivotal, and competition over its votes pushed immigration to the center of campaigns."
+   },
+   "period": "U9",
+   "skill": "Making Connections",
+   "reasoning": "Causation",
+   "themes": [
+    "MIG",
+    "PCE",
+    "NAT"
+   ],
+   "difficulty": "medium",
+   "fact_source": "u9.md §The story — 'demographic change — the coming \"majority-minority\" nation — reshaped politics, especially around immigration'",
+   "stream": "drill"
+  },
+  {
+   "id": "original-u9-coldwar-01",
+   "type": "mcq",
+   "stem": "In a 1983 speech, President Reagan called the Soviet Union an 'evil empire.' (The phrase is historical; context summarized for this item.) Reagan's language signaled which shift from the détente era of Nixon and Kissinger?",
+   "stimulus": {
+    "kind": "text",
+    "text": "In a 1983 speech, President Reagan called the Soviet Union an 'evil empire.' (The phrase is historical; context summarized for this item.)"
+   },
+   "options": [
+    "(A) A return to moral confrontation with the USSR after an era of negotiated coexistence.",
+    "(B) A decision to recognize the Soviet Union as a legitimate and equal partner in world affairs.",
+    "(C) An end to all American military spending and a turn to pure diplomacy.",
+    "(D) A pivot to ignoring the Soviet Union entirely in foreign policy."
+   ],
+   "key": "A",
+   "explanation": "Détente had treated the USSR as a rival to be managed through treaties and trade. Reagan's 'evil empire' framing rejected that moral neutrality, casting the Cold War as a struggle between good and evil — rhetoric that thrilled conservatives and alarmed diplomats who feared it would wreck arms control.",
+   "option_explanations": {
+    "A": "Correct. It captures the rhetorical break: from Kissinger's amoral great-power bargaining back to the moralized anti-communism of the early Cold War.",
+    "B": "Incorrect. 'Evil empire' denied the Soviets legitimacy; it was the opposite of recognizing them as an equal partner.",
+    "C": "Incorrect. Reagan paired harsh rhetoric with a massive military buildup, not with disarmament.",
+    "D": "Incorrect. Reagan confronted the Soviet Union more directly than his predecessors; he did not ignore it."
+   },
+   "period": "U9",
+   "skill": "Sourcing & Situation",
+   "reasoning": "Causation",
+   "themes": [
+    "WOR",
+    "PCE"
+   ],
+   "difficulty": "medium",
+   "fact_source": "u9.md §The story — Reagan 'called the Soviet Union an \"evil empire,\" funded anti-communist insurgents, and announced the Strategic Defense Initiative (1983)'",
+   "stream": "drill"
+  },
+  {
+   "id": "original-u9-coldwar-02",
+   "type": "mcq",
+   "stem": "The chart shows U.S. military spending rising steeply after 1980. Reagan's Strategic Defense Initiative (1983) — a proposed missile-defense shield — fit into which broader strategy?",
+   "stimulus": {
+    "kind": "chart",
+    "chart_spec": {
+     "type": "line",
+     "title": "U.S. Military Spending, 1980–1990 (nominal)",
+     "x_label": "Year",
+     "y_label": "Billions of dollars",
+     "labels": [
+      "1980",
+      "1982",
+      "1985",
+      "1988",
+      "1990"
+     ],
+     "values": [
+      134,
+      185,
+      253,
+      290,
+      299
+     ],
+     "source_note": "Approximate figures; the Reagan-era military buildup described in u9.md §The story ('spending massively on the military abroad')."
+    }
+   },
+   "options": [
+    "(A) Unilateral American disarmament and the dismantling of the nuclear arsenal.",
+    "(B) Withdrawal from all overseas alliances and military commitments.",
+    "(C) Pressuring the USSR through an arms buildup its struggling economy could not match.",
+    "(D) A plan for the direct invasion of the Soviet Union by American ground forces across Europe."
+   ],
+   "key": "C",
+   "explanation": "SDI was never built, but as part of the buildup the chart shows — spending roughly doubling from 1980 to 1985 — it confronted Moscow with a race it could not afford: matching American high-technology weapons would have broken an already stagnating Soviet economy. The review notes SDI both 'pressured the Soviets and spurred arms-control talks.'",
+   "option_explanations": {
+    "A": "Incorrect. The chart shows spending rising sharply, the opposite of disarmament.",
+    "B": "Incorrect. Reagan strengthened alliances such as NATO; the buildup was conducted with allies, not apart from them.",
+    "C": "Correct. It places SDI inside the larger pressure strategy the chart documents: an arms race designed to exploit Soviet economic weakness.",
+    "D": "Incorrect. No invasion was planned or proposed; the strategy was pressure and negotiation, not conquest."
+   },
+   "period": "U9",
+   "skill": "Developments & Processes",
+   "reasoning": "Causation",
+   "themes": [
+    "WOR",
+    "PCE"
+   ],
+   "difficulty": "medium",
+   "fact_source": "u9.md §Key terms — Strategic Defense Initiative (1983): 'pressured the Soviets and spurred arms-control talks'; §The story — 'spending massively on the military abroad'",
+   "stream": "drill"
+  },
+  {
+   "id": "original-u9-coldwar-03",
+   "type": "mcq",
+   "stem": "The chart shows the federal deficit climbing from $74 billion in 1980 to $221 billion in 1986. A historian argues that Reagan's military buildup was a major cause of these deficits. Which statement best supports that argument?",
+   "stimulus": {
+    "kind": "chart",
+    "chart_spec": {
+     "type": "line",
+     "title": "Federal Budget Deficit (+) / Surplus (−), 1980–2000",
+     "x_label": "Year",
+     "y_label": "Billions of dollars (negative = surplus)",
+     "labels": [
+      "1980",
+      "1983",
+      "1986",
+      "1989",
+      "1992",
+      "1998",
+      "2000"
+     ],
+     "values": [
+      74,
+      208,
+      221,
+      153,
+      290,
+      -69,
+      -236
+     ],
+     "source_note": "Approximate figures; Reagan-era deficits per u9.md §The story ('Growth did return, but so did huge deficits')."
+    }
+   },
+   "options": [
+    "(A) The deficit fell during the buildup years, which contradicts the claim.",
+    "(B) Defense spending was actually cut sharply in the 1980s as Reagan prioritized domestic programs, so the buildup cannot explain the deficit.",
+    "(C) The chart shows budget surpluses throughout the military buildup.",
+    "(D) The review pairs the 1981 tax cuts with 'spending massively on the military,' and the deficit tripled during the buildup years the chart shows."
+   ],
+   "key": "D",
+   "explanation": "The deficit's timing matches the policy mix: taxes cut in 1981 while defense spending surged, and the gap between revenue and spending — the deficit — roughly tripled by 1986. The buildup was one of two drivers. The tax cuts were the other. The review presents the pair together as the era's fiscal signature.",
+   "option_explanations": {
+    "A": "Incorrect. The chart shows the deficit rising, not falling, from $74 billion to $221 billion across the buildup years.",
+    "B": "Incorrect. Defense spending rose enormously in the 1980s; it was domestic programs, not the military, that faced the budget knife.",
+    "C": "Incorrect. The chart shows large deficits — positive values — through the entire 1980s; surpluses do not appear until 1998.",
+    "D": "Correct. It combines the review's description of the policy mix with the chart's timing and scale, which is how historians attribute the deficits."
+   },
+   "period": "U9",
+   "skill": "Claims & Evidence in Sources",
+   "reasoning": "Causation",
+   "themes": [
+    "PCE",
+    "WOR"
+   ],
+   "difficulty": "hard",
+   "fact_source": "u9.md §The story — Reagan 'promised to shrink government at home — cutting taxes (1981)... while spending massively on the military abroad'; 'Growth did return, but so did huge deficits'",
+   "stream": "drill"
+  },
+  {
+   "id": "original-u9-coldwar-04",
+   "type": "mcq",
+   "stem": "When Mikhail Gorbachev came to power in the Soviet Union, he pursued glasnost (openness) and perestroika (restructuring). What problems was he trying to fix?",
+   "options": [
+    "(A) Excessive Soviet military victories that had overstretched the treasury.",
+    "(B) The stagnation of the Soviet command economy and the rigidity of one-party rule.",
+    "(C) A dangerous shortage of Soviet nuclear weapons relative to the American arsenal.",
+    "(D) An excess of political freedom enjoyed by ordinary Soviet citizens."
+   ],
+   "key": "B",
+   "explanation": "By the 1980s the Soviet economy had barely grown for a decade: central planning could not innovate, farms and factories were inefficient, and the party bureaucracy smothered initiative. Gorbachev's reforms were an insider's attempt to save the system by loosening it — an attempt that instead helped bring it down.",
+   "option_explanations": {
+    "A": "Incorrect. The Soviets were not winning victories; their costly stalemate in Afghanistan was one symptom of the overreach Gorbachev inherited.",
+    "B": "Correct. Economic stagnation and political rigidity were exactly the twin crises glasnost and perestroika were designed to address.",
+    "C": "Incorrect. The USSR possessed a vast nuclear arsenal; weapons quantity was not the problem — economic decay was.",
+    "D": "Incorrect. Soviet citizens had very little political freedom; expanding it was the point of glasnost, not a problem Gorbachev faced."
+   },
+   "period": "U9",
+   "skill": "Developments & Processes",
+   "reasoning": "Causation",
+   "themes": [
+    "WOR"
+   ],
+   "difficulty": "medium",
+   "fact_source": "u9.md §The story — 'when Mikhail Gorbachev came to power seeking reform, [Reagan] negotiated seriously'; §What the exam tests here — 'internal Soviet decay and Gorbachev's reforms'",
+   "stream": "drill"
+  },
+  {
+   "id": "original-u9-coldwar-05",
+   "type": "mcq",
+   "stem": "The INF Treaty of 1987, signed by Reagan and Gorbachev, was historic for which reason?",
+   "options": [
+    "(A) It eliminated a whole class of nuclear weapons — the first arms-control treaty ever to do so.",
+    "(B) It abolished all nuclear weapons worldwide in a single comprehensive disarmament agreement.",
+    "(C) It admitted the Soviet Union as a full member of NATO.",
+    "(D) It was signed before Reagan had ever criticized the Soviet Union publicly."
+   ],
+   "key": "A",
+   "explanation": "Earlier arms agreements had capped how many weapons each side could hold; the INF Treaty went further, destroying every U.S. and Soviet missile with a range of 500 to 5,500 kilometers. It showed that Reagan's confrontation and his diplomacy were two phases of one strategy: pressure first, then a deal with a reforming Soviet leader.",
+   "option_explanations": {
+    "A": "Correct. The treaty's distinction was elimination rather than limitation — an entire category of weapons destroyed and verified by on-site inspection.",
+    "B": "Incorrect. Both superpowers kept thousands of strategic nuclear weapons; only intermediate-range missiles were eliminated.",
+    "C": "Incorrect. The Soviet Union never joined NATO; the alliance remained a Western institution throughout the Cold War.",
+    "D": "Incorrect. Reagan signed the treaty in 1987, four years after the 1983 'evil empire' speech — the criticism came first, the diplomacy second."
+   },
+   "period": "U9",
+   "skill": "Contextualization",
+   "reasoning": "Causation",
+   "themes": [
+    "WOR"
+   ],
+   "difficulty": "medium",
+   "fact_source": "u9.md §The story — 'when Mikhail Gorbachev came to power seeking reform, [Reagan] negotiated seriously, signing the INF Treaty in 1987'",
+   "stream": "drill"
+  },
+  {
+   "id": "original-u9-coldwar-06",
+   "type": "mcq",
+   "stem": "Which sequence correctly orders the Cold War's endgame in Europe?",
+   "options": [
+    "(A) The Soviet Union dissolves first, then the Berlin Wall falls, then Germany reunifies last.",
+    "(B) Germany reunifies, then the Soviet Union dissolves, then the Berlin Wall falls.",
+    "(C) The Berlin Wall falls (1989), Germany reunifies (1990), the USSR dissolves (1991).",
+    "(D) The Soviet Union dissolves, then Germany reunifies, then the Berlin Wall falls."
+   ],
+   "key": "C",
+   "explanation": "The collapse unfolded from the outside in: Eastern European satellites broke free first (symbolized by the Wall's fall in November 1989), a reunified Germany followed in 1990, and the Soviet Union itself — its republics declaring independence one by one — dissolved last, in December 1991.",
+   "option_explanations": {
+    "A": "Incorrect. The Wall fell in 1989, two years before the USSR dissolved in 1991; this reverses the order.",
+    "B": "Incorrect. The Wall's fall (1989) preceded German reunification (1990), and the Soviet dissolution (1991) came last.",
+    "C": "Correct. It gives the accurate chronology the review lays out: Wall in November 1989, reunification, then dissolution in December 1991.",
+    "D": "Incorrect. This scrambles the order entirely; the Wall's fall was the first of the three events, not the last."
+   },
+   "period": "U9",
+   "skill": "Developments & Processes",
+   "reasoning": "Causation",
+   "themes": [
+    "WOR"
+   ],
+   "difficulty": "medium",
+   "fact_source": "u9.md §The story — 'the Berlin Wall fell in November 1989, Germany reunified, and the Soviet Union dissolved in December 1991'; §Key terms — End of the Cold War",
+   "stream": "drill"
+  },
+  {
+   "id": "original-u9-coldwar-07",
+   "type": "mcq",
+   "stem": "The chart shows U.S. military spending rising sharply in the 1980s. A historian cites this buildup as one cause of the Soviet collapse. Following the review's guidance on explaining why the Cold War ended, what must the historian also acknowledge?",
+   "stimulus": {
+    "kind": "chart",
+    "chart_spec": {
+     "type": "line",
+     "title": "U.S. Military Spending, 1980–1990 (nominal)",
+     "x_label": "Year",
+     "y_label": "Billions of dollars",
+     "labels": [
+      "1980",
+      "1982",
+      "1985",
+      "1988",
+      "1990"
+     ],
+     "values": [
+      134,
+      185,
+      253,
+      290,
+      299
+     ],
+     "source_note": "Approximate figures; the Reagan-era military buildup described in u9.md §The story ('spending massively on the military abroad')."
+    }
+   },
+   "options": [
+    "(A) That the buildup alone explains the entire collapse and that Soviet internal conditions were completely irrelevant to what happened.",
+    "(B) That the chart proves Gorbachev was secretly working for the United States.",
+    "(C) That American military spending had no effect whatsoever on Soviet decision-making.",
+    "(D) That internal Soviet decay was equally essential — the review rewards multi-causal explanations, not single-hero stories."
+   ],
+   "key": "D",
+   "explanation": "The review explicitly warns against single-cause accounts: 'the exam rewards multi-causal answers — internal Soviet decay and Gorbachev's reforms alongside American pressure (the military buildup, SDI) — not single-hero stories.' The buildup mattered, but it pressed on a system already rotting from within.",
+   "option_explanations": {
+    "A": "Incorrect. This is the single-hero story the review warns against; it ignores the internal decay that made the USSR vulnerable to pressure in the first place.",
+    "B": "Incorrect. There is no evidence for this claim, and the chart shows American spending, not Gorbachev's loyalties.",
+    "C": "Incorrect. This overcorrects in the other direction; most historians grant the buildup real (if secondary) weight in straining Soviet resources.",
+    "D": "Correct. It states the review's required multi-causal position: American pressure operating on — and interacting with — deep internal Soviet weaknesses."
+   },
+   "period": "U9",
+   "skill": "Argumentation",
+   "reasoning": "Causation",
+   "themes": [
+    "WOR"
+   ],
+   "difficulty": "hard",
+   "fact_source": "u9.md §What the exam tests here — 'Explain why the Cold War ended: the exam rewards multi-causal answers — internal Soviet decay and Gorbachev's reforms alongside American pressure (the military buildup, SDI) — not single-hero stories'",
+   "stream": "drill"
+  },
+  {
+   "id": "original-u9-coldwar-08",
+   "type": "mcq",
+   "stem": "After the Cold War, President George H. W. Bush spoke of a 'new world order.' The 1991 Gulf War seemed to exemplify it for which reason?",
+   "options": [
+    "(A) The United States fought entirely alone, consulting no other nation or international body.",
+    "(B) A broad U.S.-led, UN-authorized coalition expelled Iraq from Kuwait in weeks.",
+    "(C) The war lasted many years and ended in a negotiated stalemate.",
+    "(D) The Soviet Union opposed the operation and used its veto to block it."
+   ],
+   "key": "B",
+   "explanation": "With the Soviet Union no longer blocking UN action, the Security Council authorized force against Iraq's invasion of Kuwait, and dozens of nations contributed troops or money. The swift victory looked like proof that great-power cooperation — impossible during the Cold War — could now keep the peace: Bush's 'new world order' in action.",
+   "option_explanations": {
+    "A": "Incorrect. The coalition included dozens of countries; acting with broad international backing was the operation's defining feature.",
+    "B": "Correct. It identifies why contemporaries saw the war as a model: UN authorization plus a genuine coalition producing a quick, decisive result.",
+    "C": "Incorrect. The ground war lasted about 100 hours; the operation was famous for its speed, not for stalemate.",
+    "D": "Incorrect. The Soviet Union, in its final year, did not veto the UN resolutions; its acquiescence was itself a sign of the new era."
+   },
+   "period": "U9",
+   "skill": "Contextualization",
+   "reasoning": "Continuity & Change",
+   "themes": [
+    "WOR"
+   ],
+   "difficulty": "medium",
+   "fact_source": "u9.md §The story — 'the Gulf War (1991) expelled Iraq from Kuwait in weeks'; America 'stood alone as the unchallenged superpower'",
+   "stream": "drill"
+  }
+ ]
 }

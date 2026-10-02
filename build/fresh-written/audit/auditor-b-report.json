@@ -1,0 +1,65 @@
+{
+ "agreement": 140,
+ "total": 140,
+ "mismatches": [],
+ "uncertain": [
+  {
+   "id": "original-u9-immig-07",
+   "derived": "D",
+   "note": "Key D correct, but the underlying wage-effects literature is contested (Card vs. Borjas); D is the standard textbook summary. Not a key dispute, but the draft key rests on a scholarly consensus that is less settled than the item implies."
+  },
+  {
+   "id": "original-u9-immig-23",
+   "derived": "B",
+   "note": "B is the only policy-reversal option, but the 1943 repeal of Chinese Exclusion was a limited wartime gesture, a partial analog to 1965 at best. Key stands."
+  },
+  {
+   "id": "original-u9-c21-28",
+   "derived": "A",
+   "note": "Matching 'domestic side of that failure' to unresolved election arguments is somewhat interpretive, but A is clearly intended and best-supported; B/C/D contradict the review's account."
+  },
+  {
+   "id": "original-u9-reagan-20",
+   "derived": "A",
+   "note": "Derived by elimination (B/C/D factually absurd) plus the standard growth-lifted-revenues account. Key certain enough, flagged for transparency."
+  },
+  {
+   "id": "original-u9-deindust-v2-05",
+   "derived": "B",
+   "note": "Answer depends on the review's specific political claim; B by elimination (A/C/D historically false) and the standard account that union decline hollowed the Democratic base."
+  }
+ ],
+ "style_flags": [
+  {
+   "id": "original-u9-coldwar-03",
+   "field": "explanation",
+   "issue": "\"not X but Y\" construction: \"The buildup did not single-handedly cause the deficits (the tax cuts mattered too), but the review presents the two together as the era's fiscal signature.\" Plain-language, not sales jargon, but it is the banned construction. Suggest reword: state the two points as separate sentences."
+  }
+ ],
+ "chart_flags": [
+  {
+   "id": "original-u9-coldwar-16",
+   "issue": "Stem misdescribes the chart: it says 1990's $299B is 'barely below its 1988 peak of $290 billion' - but $299 is ABOVE $290, so 1990 is the actual peak. The intended key (B) is unaffected, but the stem number-text is factually wrong and should be fixed."
+  },
+  {
+   "id": "original-u9-deindust-v2-04",
+   "issue": "Combined bar chart's x-axis labels ('Manufacturing share of jobs, 1970' etc.) are cramped and overlap at the bottom. Values (25/10/33/10) remain readable. Minor rendering issue only; data matches the question's claims."
+  },
+  {
+   "id": "original-u9-deindust-v2-08",
+   "issue": "Same combined chart as v2-04 with the same cramped overlapping x-axis labels. Minor rendering issue only; data matches."
+  },
+  {
+   "id": "original-u9-deindust-v2-03",
+   "issue": "Informational only: two-point data (1970=25, 2010=10) rendered as a straight-line chart. Not misleading - the item's own key answer explicitly acknowledges the chart shows only two points."
+  },
+  {
+   "id": "original-u9-deindust-v2-07",
+   "issue": "Informational only: same two-point straight-line rendering. The item's correct answer explicitly relies on the two-point limitation, so no mislead."
+  },
+  {
+   "id": "original-u9-deindust-v2-11",
+   "issue": "Informational only: same two-point straight-line rendering. Question text correctly describes the chart's content."
+  }
+ ]
+}

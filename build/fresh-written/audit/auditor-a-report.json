@@ -1,0 +1,19 @@
+{
+ "agreement": 109,
+ "total": 110,
+ "mismatches": [
+  {
+   "id": "original-ctx-u9-13",
+   "draft_key": "A",
+   "derived_key": "D",
+   "reasoning": "DRAFT KEY IS WRONG. The item asks which broader development explains why DEMOCRATIC President Clinton signed 1996 welfare reform (time-limited, work-conditioned aid) after declaring 'the era of big government is over.' The answer is triangulation (D): New Right success pulled a Democratic president toward smaller government. Option A ('The Democratic Party's adoption of socialist economic planning and centralized state control') describes the opposite of what happened \u2014 the law SHRANK federal welfare, and the stimulus itself says so. The draft's own stimulus text ('replacing open-ended federal aid with time-limited, work-conditioned assistance') contradicts its own key. The draft explanation supports D, not A, or the drafter mislabeled the key."
+  }
+ ],
+ "uncertain": [],
+ "style_flags": [],
+ "notes": {
+  "chart_items": "No chart PNGs existed for original-u1-native-03 or original-u1-trade-08; derived keys from the full chart_spec (labels + values) embedded in each stimulus, which contains the complete bar-chart data.",
+  "image_items": "Image-stimulus items derived from image_caption + stem + historical knowledge (image cannot be viewed); captions were sufficient in every case.",
+  "style_sweep_scope": "Swept explanation + option_explanations in all 110 draft items. Zero hits for trap/trick/distractor. \"not X but Y\" scan found one hit inside a verbatim Las Casas primary-source quote (draft item original-u1-encomienda-06 stimulus text) - source text, not explanation voice; not flagged."
+ }
+}
