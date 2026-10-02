@@ -9,3 +9,10 @@ All public domain (verified via Wikimedia Commons API, LicenseShortName = Public
 | cuban_missiles.jpg | https://commons.wikimedia.org/wiki/File:Cuban_missiles.jpg | U.S. government work |
 | quarantine.jpg | https://commons.wikimedia.org/wiki/File:P-3A_VP-44_over_USS_Barry_(DD-933)_and_Metallurg_Anosov_during_Cuban_Missile_Crisis_1962.jpg | U.S. Navy photo, 1962 |
 | cuba_cia_map.png | https://commons.wikimedia.org/wiki/File:Cuba-CIA_WFB_Map.png | CIA World Factbook, U.S. government work |
+
+## havana_street.jpg
+- Source: Wikimedia Commons, "Havana - A street in Vedado.jpg"
+- Detroit Photographic Co., 1904 (hand-colored photochrom)
+- License: Public domain
+- URL: https://commons.wikimedia.org/wiki/File:Havana_-_A_street_in_Vedado.jpg
+- Used for: hook + landing establishing shots (vintage Havana)
