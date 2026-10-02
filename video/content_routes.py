@@ -25,6 +25,27 @@ STAGED = os.path.join(REPO, "build", "reclaim-merged", "staged")
 
 _bank = None
 _tests = None
+_answer_keys = None
+
+
+def _load_answer_keys():
+    """Parse build/tests/ANSWER_KEYS.md -> {(test_n, item_id): key}."""
+    global _answer_keys
+    if _answer_keys is not None:
+        return _answer_keys
+    keys = {}
+    p = os.path.join(REPO, "build", "tests", "ANSWER_KEYS.md")
+    cur = None
+    for line in open(p):
+        m = re.match(r"##\s+test-(\d+)", line)
+        if m:
+            cur = int(m.group(1))
+            continue
+        m = re.match(r"\d+\.\s+([A-D])\s+[—–-]\s+(\S+)", line.strip())
+        if m and cur:
+            keys[(cur, m.group(2))] = m.group(1)
+    _answer_keys = keys
+    return keys
 
 
 def _load_bank():
@@ -79,16 +100,27 @@ def esc(s):
 
 
 def stim_html(stim, limit=1200):
-    """Render a stimulus that may be None, a string, or a {kind,text/image_url} dict."""
+    """Render a stimulus: None, a string, or a dict.
+
+    Dict forms: {kind: text, text: ...}, {kind: image, image_url: ...},
+    or a combined {kind: image, image_url: ..., text_stimulus: ...}.
+    """
     if not stim:
         return ""
     if isinstance(stim, dict):
-        if stim.get("kind") == "image" and stim.get("image_url"):
-            return (f'<div class="stim"><img src="{esc(stim["image_url"])}" '
-                    f'style="max-width:100%;border-radius:6px">'
-                    f'<div class="meta">{esc(stim.get("caption", ""))}</div></div>')
-        text = stim.get("text") or ""
-        return f'<div class="stim">{esc(text[:limit])}</div>' if text else ""
+        parts = []
+        text = stim.get("text") or stim.get("text_stimulus") or stim.get("passage") or ""
+        if text:
+            parts.append(f'<div class="stim">{esc(text[:limit])}</div>')
+        if stim.get("image_url"):
+            cap = stim.get("image_caption") or stim.get("caption") or ""
+            parts.append(
+                f'<div class="stim"><img src="{esc(stim["image_url"])}" '
+                f'style="max-width:100%;border-radius:6px">'
+                + (f'<div class="meta">{esc(cap)}</div>' if cap else "") + "</div>")
+        if parts:
+            return "\n".join(parts)
+        return ""
     return f'<div class="stim">{esc(str(stim)[:limit])}</div>'
 
 
@@ -310,9 +342,12 @@ def test_view(n):
     t = next((x for x in tests if x["_n"] == n), None)
     if not t:
         return page("Not found", "<p>No such test.</p>")
+    keys = _load_answer_keys()
     h = [f'<div class="card"><h2>Section 1A — Multiple choice</h2>',
          f'<div class="expl">{esc(t["section_1a"].get("directions", "")[:600])}</div>']
     for i, q in enumerate(t["section_1a"].get("items", []), 1):
+        q = dict(q)
+        q["key"] = q.get("key") or keys.get((n, q.get("id")))
         h.append(f'<h3>Q{i}</h3>' + render_mcq(q))
     h.append('</div><div class="card"><h2>Section 1B — Short answer</h2>')
     h.append(f'<div class="expl">{esc(t["section_1b"].get("directions", "")[:600])}</div>')
