@@ -145,6 +145,44 @@ def slide_scene(pil_img, dur):
     return ImageClip(np.asarray(pil_img.convert("RGB"))).with_duration(dur)
 
 
+def ease_out_back(t):
+    """Overshoot easing: slams past 1.0 then settles. t in 0..1."""
+    c1, c3 = 1.70158, 2.70158
+    t = min(1, max(0, t))
+    return 1 + c3 * (t - 1) ** 3 + c1 * (t - 1) ** 2
+
+
+def ease_out_cubic(t):
+    t = min(1, max(0, t))
+    return 1 - (1 - t) ** 3
+
+
+def punch_in(clip, amount=0.07, dur=0.5):
+    """Quick zoom punch at scene start: 1+amount -> 1.0 with ease-out.
+
+    The modern 'punch cut' feel. Replaces soft fade-ins.
+    """
+    from moviepy import VideoClip
+    base_dur = clip.duration
+
+    def make_frame(t):
+        k = 1 - ease_out_cubic(t / dur)
+        z = 1 + amount * k
+        fr = clip.get_frame(t)
+        h, w = fr.shape[:2]
+        nw, nh = int(w * z), int(h * z)
+        big = np.asarray(Image.fromarray(fr).resize((nw, nh), Image.LANCZOS))
+        x0, y0 = (nw - w) // 2, (nh - h) // 2
+        return big[y0:y0 + h, x0:x0 + w]
+
+    def frame(t):
+        if t < dur:
+            return make_frame(t)
+        return clip.get_frame(t)
+
+    return VideoClip(frame, duration=base_dur)
+
+
 def _bg_base(bg_img, darken=110):
     """Cover-crop an image to W×H and darken it for text overlay."""
     img = Image.open(bg_img).convert("RGB")
@@ -168,18 +206,17 @@ def kinetic_text(phrase, dur, sub=None, color=(233, 196, 106, 255), bg_img=None,
     tw, th = timg.size
 
     def frame(t):
-        # scale pop: overshoot then settle
-        s = min(1, t / 0.45)
-        pop = 1 + 0.25 * max(0, 1 - s * 2.2) * (1 - s)
-        sc = int(tw * pop), int(th * pop)
-        fg = np.asarray(timg.resize(sc, Image.LANCZOS))
+        # spring pop: overshoot then settle
+        s = ease_out_back(t / 0.5)
+        tw2, th2 = int(tw * s), int(th * s)
+        fg = np.asarray(timg.resize((tw2, th2), Image.LANCZOS))
         canvas = bg.copy()
-        x, y = (W - sc[0]) // 2, (H - sc[1]) // 2 - 40
+        x, y = (W - tw2) // 2, (H - th2) // 2 - 40
         # alpha blend
         a = (fg[:, :, 3:4].astype(np.float32) / 255.0)
-        a = a * min(1, t / 0.3)
-        canvas[y:y + sc[1], x:x + sc[0]] = (
-            fg[:, :, :3] * a + canvas[y:y + sc[1], x:x + sc[0]] * (1 - a)).astype(np.uint8)
+        a = a * min(1, t / 0.25)
+        canvas[y:y + th2, x:x + tw2] = (
+            fg[:, :, :3] * a + canvas[y:y + th2, x:x + tw2] * (1 - a)).astype(np.uint8)
         return canvas
 
     clip = VideoClip(frame, duration=dur)
@@ -341,35 +378,65 @@ def dur(path, pad=1.2):
     return float(r.stdout.strip()) + pad
 
 
-def bullet_slide(title, bullets, dur, footer="", bg_img=None, darken=130):
-    """Title + bullets over an image (darkened) or flat background."""
-    img = Image.fromarray(
-        _bg_base(bg_img, darken) if bg_img
-        else np.zeros((H, W, 3), dtype=np.uint8) + 20)
-    d = ImageDraw.Draw(img)
-    tf = font(FB, 60)
-    bf = font(FR, 50)
-    title_lines = wrap_px(d, title, tf, W - 160)
-    body_lines = []
-    for b in bullets:
-        body_lines += wrap_px(d, "\u2022  " + b, bf, W - 180)
-        body_lines.append("")
+def bullet_slide(title, bullets, dur, footer="", bg_img=None, darken=130,
+                 stagger=0.45):
+    """Title + bullets over an image (darkened) or flat background.
+
+    Lines slam in one-by-one with spring overshoot, staggered by `stagger`
+    seconds — the modern staggered-entrance feel.
+    """
+    from moviepy import VideoClip
+    base = (_bg_base(bg_img, darken) if bg_img
+            else np.zeros((H, W, 3), dtype=np.uint8) + 20)
+    meas = ImageDraw.Draw(Image.new("RGB", (W, H)))
+    tf, bf = font(FB, 60), font(FR, 50)
+    title_lines = wrap_px(meas, title, tf, W - 160)
+    items = []  # (tile_rgba, cx, cy)
     t_asc, t_desc = tf.getmetrics()
     b_asc, b_desc = bf.getmetrics()
     t_lh, b_lh = t_asc + t_desc + 14, b_asc + b_desc + 22
-    content_h = len(title_lines) * t_lh + 60 + len(body_lines) * b_lh
+    # layout: measure first
+    body = []
+    for b in bullets:
+        body += wrap_px(meas, "\u2022  " + b, bf, W - 180)
+        body.append("")
+    content_h = len(title_lines) * t_lh + 60 + len(body) * b_lh
     y = max(240, (H - content_h) // 2 - 60)
     for line in title_lines:
-        d.text((80, y), line, font=tf, fill=(233, 196, 106))
+        tile = text_rgba(line, tf, fill=(233, 196, 106, 255), max_w=W - 160)
+        items.append((tile, 80 + tile.width // 2, y + t_lh // 2, 0.0, True))
         y += t_lh
     y += 60
-    for line in body_lines:
+    idx = 0
+    for line in body:
         if line:
-            d.text((90, y), line, font=bf, fill=(232, 232, 232))
+            idx += 1
+            tile = text_rgba(line, bf, fill=(232, 232, 232, 255), max_w=W - 180)
+            items.append((tile, 90 + tile.width // 2, y + b_lh // 2,
+                          0.15 + idx * stagger, False))
         y += b_lh
+    footer_tile = None
     if footer:
-        d.text((90, H - 140), footer, font=font(FR, 34), fill=(120, 126, 140))
-    return slide_scene(img, dur)
+        footer_tile = text_rgba(footer, font(FR, 34), fill=(120, 126, 140, 255))
+
+    def frame(t):
+        canvas = Image.fromarray(base.copy()).convert("RGBA")
+        for tile, cx, cy, at, is_title in items:
+            if t < at:
+                continue
+            s = ease_out_back((t - at) / 0.45)
+            a = min(1, (t - at) / 0.25)
+            tw, th = max(1, int(tile.width * s)), max(1, int(tile.height * s))
+            fg = tile.resize((tw, th), Image.LANCZOS)
+            if a < 1:
+                alpha = fg.split()[3].point(lambda v: int(v * a))
+                fg.putalpha(alpha)
+            canvas.alpha_composite(fg, (int(cx - tw / 2), int(cy - th / 2)))
+        if footer_tile:
+            canvas.alpha_composite(footer_tile, (90, H - 140))
+        return np.asarray(canvas.convert("RGB"))
+
+    return VideoClip(frame, duration=dur)
 
 
 def title_card(text, dur, sub=None, bg_img=None, darken=120):
@@ -428,11 +495,105 @@ def typewriter_scene(text, dur, bg_img=None, darken=120, sub=None):
     return clip
 
 
+def zoom_to(img_path, dur, cx=0.5, cy=0.5, end_zoom=2.2, zoom_dur=1.4,
+            caption="", highlight_box=None):
+    """Fast directed zoom into a point of interest.
+
+    The modern emphasis move: punch from wide to tight on (cx, cy) with
+    ease-out, then hold. cx/cy in 0..1 of the frame.
+    """
+    from moviepy import VideoClip
+    img = Image.open(img_path).convert("RGB")
+    scale = max(W / img.width, H / img.height) * end_zoom
+    img = img.resize((int(img.width * scale) + 2, int(img.height * scale) + 2),
+                     Image.LANCZOS)
+    big = np.asarray(img).astype(np.float32)
+    bw, bh = big.shape[1], big.shape[0]
+
+    def window(z, px, py):
+        cw, ch = W / z, H / z
+        x = min(max(px * bw - cw / 2, 0), bw - cw)
+        y = min(max(py * bh - ch / 2, 0), bh - ch)
+        return int(x), int(y), int(cw), int(ch)
+
+    hb = None
+    if highlight_box:
+        x0, y0, x1, y1 = highlight_box
+        hb = (int(x0 * W), int(y0 * H), int(x1 * W), int(y1 * H))
+
+    def frame(t):
+        k = ease_out_cubic(t / zoom_dur)
+        z = 1 + (end_zoom - 1) * k
+        px = 0.5 + (cx - 0.5) * k
+        py = 0.5 + (cy - 0.5) * k
+        x, y, cw, ch = window(z, px, py)
+        crop = big[y:y + ch, x:x + cw]
+        out = Image.fromarray(crop.astype(np.uint8)).resize((W, H), Image.LANCZOS)
+        if hb and t > zoom_dur * 0.7:
+            a = min(1, (t - zoom_dur * 0.7) / 0.5)
+            d = ImageDraw.Draw(out, "RGBA")
+            d.rectangle(hb, outline=(233, 196, 106, int(255 * a)), width=10)
+        return np.asarray(out)
+
+    clip = VideoClip(frame, duration=dur)
+    if caption:
+        clip = overlay_text(clip, caption, FR, 40, dur)
+    return clip
+
+
+def callout_scene(img_path, dur, points, caption=""):
+    """Image with expanding gold callout rings landing on points of interest.
+
+    points: list of (cx, cy, label) in 0..1 coords. Rings ripple out in sequence.
+    """
+    from moviepy import VideoClip
+    import math
+    img = Image.open(img_path).convert("RGB")
+    scale = max(W / img.width, H / img.height)
+    img = img.resize((int(img.width * scale) + 2, int(img.height * scale) + 2),
+                     Image.LANCZOS)
+    arr = np.asarray(img).astype(np.float32)
+    x0 = (arr.shape[1] - W) // 2
+    y0 = (arr.shape[0] - H) // 2
+    base = arr[y0:y0 + H, x0:x0 + W].astype(np.uint8)
+    lf = font(FB, 40)
+    n = len(points)
+
+    def frame(t):
+        canvas = Image.fromarray(base.copy())
+        d = ImageDraw.Draw(canvas, "RGBA")
+        for i, (cx, cy, label) in enumerate(points):
+            at = (i + 1) / (n + 1) * dur * 0.7
+            if t < at:
+                continue
+            x, y = int(cx * W), int(cy * H)
+            # expanding rings
+            for r_i in range(3):
+                rt = (t - at) * 1.2 - r_i * 0.5
+                if rt < 0:
+                    continue
+                r = int(20 + rt * 90)
+                a = max(0, int(220 * (1 - rt / 1.6)))
+                if a > 0 and r < 500:
+                    d.ellipse([x - r, y - r, x + r, y + r],
+                              outline=(233, 196, 106, a), width=6)
+            d.ellipse([x - 14, y - 14, x + 14, y + 14], fill=(233, 196, 106, 255))
+            if label:
+                d.text((x, y - 60), label, font=lf, fill=(255, 255, 255, 255),
+                       anchor="ma")
+        return np.asarray(canvas.convert("RGB"))
+
+    clip = VideoClip(frame, duration=dur)
+    if caption:
+        clip = overlay_text(clip, caption, FR, 40, dur)
+    return clip
+
+
 def assemble(scenes, audios, out, fps=30):
     """Concat scenes with 0.35s crossfades; each scene gets its narration audio."""
     assert len(scenes) == len(audios)
     final = concatenate_videoclips(scenes, method="compose",
-                                  padding=-0.35)  # crossfade overlap
+                                  padding=-0.2)  # snappy crossfade
     # per-scene audio placed at scene start times (accounting for overlaps)
     from moviepy import CompositeAudioClip
     t, tracks = 0.0, []

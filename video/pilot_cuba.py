@@ -107,10 +107,12 @@ def main():
     # 2. context — the map
     scenes.append(motion.cuba_map_scene(motion.dur(audios[1]),
                                         caption="Ninety miles off Florida"))
-    # 3. beat 1a — the U-2 photos
-    scenes.append(motion.doc_zoom(f"{AS}/missile_site.gif", motion.dur(audios[2]),
-                                  highlight_box=(0.25, 0.25, 0.75, 0.65),
-                                  caption="U-2 photograph, October 14, 1962"))
+    # 3. beat 1a — punch into the U-2 photo, right onto the missile convoy
+    scenes.append(motion.zoom_to(
+        f"{AS}/missile_site.gif", motion.dur(audios[2]),
+        cx=0.55, cy=0.45, end_zoom=2.4,
+        caption="U-2 photograph, October 14, 1962",
+        highlight_box=(0.3, 0.3, 0.7, 0.6)))
     # 4. beat 1b — Kennedy's words type themselves out
     scenes.append(motion.typewriter_scene(
         "\u201cIt shall be the policy of this nation to regard any nuclear "
@@ -126,11 +128,12 @@ def main():
          "Quarantine: stop Soviet ships, leave room to negotiate"],
         motion.dur(audios[4]),
         bg_img=f"{AS}/cuban_missiles.jpg"))
-    # 6. beat 3a — the address
-    scenes.append(motion.caption_scene(f"{AS}/kennedy_address.jpg",
-                                        "Kennedy addresses the nation, October 22, 1962",
-                                        motion.dur(audios[5]),
-                                        zoom=0.25, pan_x=0.5, pan_y=0.3))
+    # 6. beat 3a — the address (punch in)
+    scenes.append(motion.punch_in(motion.caption_scene(
+        f"{AS}/kennedy_address.jpg",
+        "Kennedy addresses the nation, October 22, 1962",
+        motion.dur(audios[5]),
+        zoom=0.25, pan_x=0.5, pan_y=0.3)))
     # 7. beat 3b — the timeline, over the quarantine fleet
     scenes.append(motion.timeline_scene(
         [("Oct 14", "U-2 finds missiles"),
