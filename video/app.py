@@ -163,6 +163,55 @@ def serve_output(fname):
     return send_from_directory(OUTPUT_DIR, fname, as_attachment=False)
 
 
+# ---- content browser ----
+import content_routes as CR
+
+
+@app.route("/browse")
+def browse_hub():
+    return CR.hub()
+
+
+@app.route("/browse/questions")
+def browse_questions():
+    return CR.questions(request.args)
+
+
+@app.route("/browse/question/<qid>")
+def browse_question(qid):
+    return CR.question(qid)
+
+
+@app.route("/browse/tests")
+def browse_tests():
+    return CR.tests_list()
+
+
+@app.route("/browse/test/<int:n>")
+def browse_test(n):
+    return CR.test_view(n)
+
+
+@app.route("/browse/periods")
+def browse_periods():
+    return CR.periods_list()
+
+
+@app.route("/browse/period/<u>")
+def browse_period(u):
+    return CR.period_view(u)
+
+
+@app.route("/browse/essays")
+def browse_essays():
+    return CR.essays_list()
+
+
+@app.route("/browse/essay/<slug>")
+def browse_essay(slug):
+    return CR.essay_view(slug)
+
+
 INDEX_HTML = """<!doctype html>
 <html><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -187,6 +236,7 @@ video{width:100%;border-radius:8px;margin-top:8px}
 a{color:#e9c46a}
 </style></head><body>
 <h1>APUSH Video Renderer</h1>
+<div style="margin-bottom:16px"><a href="/browse" style="font-size:16px">📖 Browse the full content →</a></div>
 <div id="list"></div>
 <script>
 async function refresh(){
