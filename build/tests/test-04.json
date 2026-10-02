@@ -1,10 +1,12 @@
 {
  "id": "test-04",
  "section_1a": {
-  "directions": "Section I, Part A \u2014 Multiple Choice: 55 questions, 55 minutes. Each question is followed by four answer choices. Select the choice that best answers the question or completes the statement. This part counts for 40 percent of the exam score. Work briskly; all questions count equally.",
+  "directions": "Section I, Part A — Multiple Choice: 55 questions, 55 minutes. Each question is followed by four answer choices. Select the choice that best answers the question or completes the statement. This part counts for 40 percent of the exam score. Work briskly; all questions count equally.",
   "items": [
    {
     "id": "pr25e-ch06-q05",
+    "skill_code": "1.B",
+    "topic_code": "1.3",
     "n": 1,
     "stem": "Which of the following best facilitated British colonization of North America?",
     "stimulus": null,
@@ -28,15 +30,19 @@
    },
    {
     "id": "5s24-exam1-mcq-45",
+    "skill_code": "3.A",
+    "topic_code": "1.6",
     "n": 2,
     "stem": "Bradford's account of Squanto illustrates The 1914 painting above depicts the harvest feast symbolizing Native aid to the Pilgrims described in Bradford's account.",
     "stimulus": {
      "kind": "image",
-     "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Thanksgiving-Brownscombe.jpg",
+     "image_url": "assets/images/u1/5s24-exam1-mcq-45.jpg",
+     "image_source_url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Thanksgiving-Brownscombe.jpg",
+     "image_local_verified": "2026-10-02",
      "image_caption": "Jennie Augusta Brownscombe, 'The First Thanksgiving at Plymouth,' 1914.",
      "source_page": "https://commons.wikimedia.org/wiki/File:Thanksgiving-Brownscombe.jpg",
      "pd_rationale": "Jennie Augusta Brownscombe, 1914; pre-1930 publication",
-     "text_stimulus": "Questions 45\u201348 refer to the following excerpt.\n\n\"Squanto... was a special instrument sent of God for their good beyond their expectation. He directed them how to set their corn, where to take fish, and to procure other commodities, and was also their pilot to bring them to unknown places for their profit, and never left them till he died.\"\n\u2014William Bradford, Of Plymouth Plantation (abridged)"
+     "text_stimulus": "Questions 45–48 refer to the following excerpt.\n\n\"Squanto... was a special instrument sent of God for their good beyond their expectation. He directed them how to set their corn, where to take fish, and to procure other commodities, and was also their pilot to bring them to unknown places for their profit, and never left them till he died.\"\n—William Bradford, Of Plymouth Plantation (abridged)"
     },
     "options": [
      "A. The complete absence of Native-colonist contact",
@@ -59,11 +65,13 @@
    },
    {
     "id": "5s24-ch06-mcq-07",
+    "skill_code": "1.B",
+    "topic_code": "1.4",
     "n": 3,
     "stem": "Which of the following best explains how Cortes's few hundred men were able to carry out the actions described in the passage?",
     "stimulus": {
      "kind": "text",
-     "text": "The following questions refer to the excerpt below.\n\n\"In these chapels are the images or idols... the principal ones, in which the people have greatest faith and confidence, I precipitated from their pedestals, and cast them down the steps of the temple, purifying the chapels in which they had stood, as they were all polluted with human blood, shed in the sacrifices. In the places of these I put images of our Lady and the Saints... I answered, through the interpreters, that they were deceived in expecting any favors from idols, the work of their own hands... and that they must learn there was but one God, the universal Lord of all, who had created the heavens and earth, and all things else, and had made them and us.\"\n\u2014Hernando Cort\u00e9s, Second Letter to Charles V, October 30, 1520 (abridged)"
+     "text": "The following questions refer to the excerpt below.\n\n\"In these chapels are the images or idols... the principal ones, in which the people have greatest faith and confidence, I precipitated from their pedestals, and cast them down the steps of the temple, purifying the chapels in which they had stood, as they were all polluted with human blood, shed in the sacrifices. In the places of these I put images of our Lady and the Saints... I answered, through the interpreters, that they were deceived in expecting any favors from idols, the work of their own hands... and that they must learn there was but one God, the universal Lord of all, who had created the heavens and earth, and all things else, and had made them and us.\"\n—Hernando Cortés, Second Letter to Charles V, October 30, 1520 (abridged)"
     },
     "options": [
      "A. A Spanish field army that greatly outnumbered the Aztec forces",
@@ -85,11 +93,15 @@
    },
    {
     "id": "5s24-ch08-mcq-01",
+    "skill_code": "1.A",
+    "topic_code": "2.3",
     "n": 4,
     "stem": "The creation of the Dominion of New England The 1684 portrait above shows James II, the king who created the Dominion of New England.",
     "stimulus": {
      "kind": "image",
-     "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/King_James_II_by_Sir_Godfrey_Kneller%2C_Bt.jpg",
+     "image_url": "assets/images/u2/5s24-ch08-mcq-01.jpg",
+     "image_source_url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/King_James_II_by_Sir_Godfrey_Kneller%2C_Bt.jpg",
+     "image_local_verified": "2026-10-02",
      "image_caption": "James II of England, by Sir Godfrey Kneller, 1684.",
      "source_page": "https://commons.wikimedia.org/wiki/File:King_James_II_by_Sir_Godfrey_Kneller,_Bt.jpg",
      "pd_rationale": "Sir Godfrey Kneller, 1684; pre-1930"
@@ -114,11 +126,13 @@
    },
    {
     "id": "pr25e-drill-mcq-q02",
+    "skill_code": "1.B",
+    "topic_code": "2.7",
     "n": 5,
-    "stem": "Whitefield\u2019s revival meetings contributed most directly to which of the following trends?",
+    "stem": "Whitefield’s revival meetings contributed most directly to which of the following trends?",
     "stimulus": {
      "kind": "text",
-     "text": "\u201cAs for the lawfulness of keeping slaves, I have no doubt, since I hear of some that were bought with Abraham\u2019s money, and some that were born in his house.\u2014And I cannot help thinking, that some of those servants mentioned by the Apostles in their epistles, were or had been slaves. It is plain, that the Gibeonites were doomed to perpetual slavery, and though liberty is a sweet thing to such as are born free, yet to those who never knew the sweets of it, slavery perhaps may not be so irksome.\u201d Source: George Whitefield, 1751"
+     "text": "“As for the lawfulness of keeping slaves, I have no doubt, since I hear of some that were bought with Abraham’s money, and some that were born in his house.—And I cannot help thinking, that some of those servants mentioned by the Apostles in their epistles, were or had been slaves. It is plain, that the Gibeonites were doomed to perpetual slavery, and though liberty is a sweet thing to such as are born free, yet to those who never knew the sweets of it, slavery perhaps may not be so irksome.” Source: George Whitefield, 1751"
     },
     "options": [
      "Republican Motherhood",
@@ -139,11 +153,15 @@
    },
    {
     "id": "5s24-exam2-mcq-07",
+    "skill_code": "1.A",
+    "topic_code": "2.2",
     "n": 6,
     "stem": "The column erected by the French commander in the image most directly signified which of the following?",
     "stimulus": {
      "kind": "image",
-     "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/99/The_Natives_of_Florida_worship_the_column_erected_by_the_commander_on_his_first_voyage_LCCN2001696149.jpg",
+     "image_url": "assets/images/u2/5s24-exam2-mcq-06.jpg",
+     "image_source_url": "https://upload.wikimedia.org/wikipedia/commons/9/99/The_Natives_of_Florida_worship_the_column_erected_by_the_commander_on_his_first_voyage_LCCN2001696149.jpg",
+     "image_local_verified": "2026-10-02",
      "image_caption": "Theodor de Bry, 'The Natives of Florida Worship the Column Erected by the Commander on His First Voyage,' Grand Voyages, 1591 (Library of Congress).",
      "source_page": "https://commons.wikimedia.org/wiki/File:The_Natives_of_Florida_worship_the_column_erected_by_the_commander_on_his_first_voyage_LCCN2001696149.jpg",
      "pd_rationale": "Theodor de Bry after Jacques Le Moyne, 1591; Library of Congress, pre-1930",
@@ -181,14 +199,16 @@
    },
    {
     "id": "pr25e-ch06-q06",
+    "skill_code": "1.A",
+    "topic_code": "2.5",
     "n": 7,
     "stem": "All of the following are examples of conflicts between colonists and Native American tribes EXCEPT",
     "stimulus": null,
     "options": [
-     "Bacon\u2019s Rebellion",
+     "Bacon’s Rebellion",
      "the Pequot War",
      "the Stono Uprising",
-     "King Philip\u2019s War"
+     "King Philip’s War"
     ],
     "period": "U2",
     "skill": "Developments & Processes",
@@ -203,15 +223,17 @@
    },
    {
     "id": "pr25e-test1-q13",
+    "skill_code": "1.A",
+    "topic_code": "3.5",
     "n": 8,
     "stem": "The law referenced above was meant to accomplish all of the following EXCEPT",
     "stimulus": {
      "kind": "text",
-     "text": "\u201cAnd it hath accordingly happened that an open resistance to the execution of the laws hath actually taken place in the town of Boston, and the neighbourhood thereof, within the said province: And whereas it is, under these circumstances, become absolutely necessary\u2026that the said method of annually electing the counsellors or assistants of the said province should no longer be suffered to continue but that the appointment of the said counsellors or assistants should henceforth be put upon the like footing as is established in such other of his Majesty\u2019s colonies or plantations in America, the governors whereof are appointed by his Majesty\u2019s commission, under the great seal of Great Britain\u2026so much of the charter, granted by their majesties King William and Queen Mary to the inhabitants of the said province of the Massachusetts Bay, in New England, and all and every clause\u2026be revoked\u2026and that the offices of all counsellors and assistants, elected and appointed in pursuance thereof, shall from thenceforth cease and determine: And that, the council, or court of assistants of the said province for the time being, shall be composed of such of the inhabitants or proprietors of lands within the same as shall be thereunto nominated and appointed by his Majesty\u2026\u201d Source: The Coercive Acts, 1774"
+     "text": "“And it hath accordingly happened that an open resistance to the execution of the laws hath actually taken place in the town of Boston, and the neighbourhood thereof, within the said province: And whereas it is, under these circumstances, become absolutely necessary…that the said method of annually electing the counsellors or assistants of the said province should no longer be suffered to continue but that the appointment of the said counsellors or assistants should henceforth be put upon the like footing as is established in such other of his Majesty’s colonies or plantations in America, the governors whereof are appointed by his Majesty’s commission, under the great seal of Great Britain…so much of the charter, granted by their majesties King William and Queen Mary to the inhabitants of the said province of the Massachusetts Bay, in New England, and all and every clause…be revoked…and that the offices of all counsellors and assistants, elected and appointed in pursuance thereof, shall from thenceforth cease and determine: And that, the council, or court of assistants of the said province for the time being, shall be composed of such of the inhabitants or proprietors of lands within the same as shall be thereunto nominated and appointed by his Majesty…” Source: The Coercive Acts, 1774"
     },
     "options": [
      "provide Britain with the ability to select governing officials in the Massachusetts Bay Colony",
-     "require the quartering of Britain\u2019s officials and military in the homes of Massachusetts Bay residents",
+     "require the quartering of Britain’s officials and military in the homes of Massachusetts Bay residents",
      "revoke the rule of governance outlined in the Massachusetts Bay Charter",
      "punish the Massachusetts Bay Colony for the events of the Boston Tea Party"
     ],
@@ -229,11 +251,15 @@
    },
    {
     "id": "pr25e-test2-q14",
+    "skill_code": "1.A",
+    "topic_code": "3.5",
     "n": 9,
     "stem": "The meeting pictured in the painting above included articulations of all of the following EXCEPT",
     "stimulus": {
      "kind": "image",
-     "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Declaration_of_Independence_%281819%29%2C_by_John_Trumbull.jpg",
+     "image_url": "assets/images/u3/pr25e-test2-q14.jpg",
+     "image_source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Declaration_of_Independence_%281819%29%2C_by_John_Trumbull.jpg",
+     "image_local_verified": "2026-10-02",
      "image_caption": "John Trumbull, 'Declaration of Independence,' 1819.",
      "source_page": "https://commons.wikimedia.org/wiki/File:Declaration_of_Independence_(1819),_by_John_Trumbull.jpg",
      "pd_rationale": "John Trumbull, 1819; pre-1930",
@@ -258,11 +284,13 @@
    },
    {
     "id": "5s24-ch03-mcq-13",
+    "skill_code": "3.A",
+    "topic_code": "3.11",
     "n": 10,
     "stem": "Franklin's argument rests on the assumption that",
     "stimulus": {
      "kind": "text",
-     "text": "Questions 13\u201316 refer to the following quotation.\n\n\"I am for doing good to the poor, but ... I think the best way of doing good to the poor, is not making them easy in poverty, but leading or driving them out of it.\"\n\u2014Benjamin Franklin, 1766 (abridged)"
+     "text": "Questions 13–16 refer to the following quotation.\n\n\"I am for doing good to the poor, but ... I think the best way of doing good to the poor, is not making them easy in poverty, but leading or driving them out of it.\"\n—Benjamin Franklin, 1766 (abridged)"
     },
     "options": [
      "A. Idleness, not circumstance, is the main cause of poverty",
@@ -285,11 +313,15 @@
    },
    {
     "id": "pr25e-test2-q15",
+    "skill_code": "1.A",
+    "topic_code": "3.11",
     "n": 11,
     "stem": "The painting above highlights which of the following developments from 1800 to 1848?",
     "stimulus": {
      "kind": "image",
-     "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Declaration_of_Independence_%281819%29%2C_by_John_Trumbull.jpg",
+     "image_url": "assets/images/u3/pr25e-test2-q14.jpg",
+     "image_source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Declaration_of_Independence_%281819%29%2C_by_John_Trumbull.jpg",
+     "image_local_verified": "2026-10-02",
      "image_caption": "John Trumbull, 'Declaration of Independence,' 1819.",
      "source_page": "https://commons.wikimedia.org/wiki/File:Declaration_of_Independence_(1819),_by_John_Trumbull.jpg",
      "pd_rationale": "John Trumbull, 1819; pre-1930",
@@ -314,11 +346,13 @@
    },
    {
     "id": "5s24-exam1-mcq-13",
+    "skill_code": "1.A",
+    "topic_code": "3.2",
     "n": 12,
     "stem": "Logan's speech best illustrates which of the following?",
     "stimulus": {
      "kind": "text",
-     "text": "Questions 13\u201316 refer to the following excerpt.\n\n\"I appeal to any white man to say if ever he entered Logan's cabin hungry and he gave him not meat... During the course of the last long and bloody war Logan remained idle in his cabin, an advocate for peace... I had even thought to have lived with you but for the injuries of one man. Colonel Cresap, the last spring, in cold blood and unprovoked, murdered all the relations of Logan... There runs not a drop of my blood in the veins of any living creature. This called on me for revenge. I have sought it. I have killed many... But do not harbor a thought that mine is the joy of fear. Logan never felt fear.\"\n\u2014Logan (Tah-gah-jute), speech recorded 1774 (abridged)"
+     "text": "Questions 13–16 refer to the following excerpt.\n\n\"I appeal to any white man to say if ever he entered Logan's cabin hungry and he gave him not meat... During the course of the last long and bloody war Logan remained idle in his cabin, an advocate for peace... I had even thought to have lived with you but for the injuries of one man. Colonel Cresap, the last spring, in cold blood and unprovoked, murdered all the relations of Logan... There runs not a drop of my blood in the veins of any living creature. This called on me for revenge. I have sought it. I have killed many... But do not harbor a thought that mine is the joy of fear. Logan never felt fear.\"\n—Logan (Tah-gah-jute), speech recorded 1774 (abridged)"
     },
     "options": [
      "A. Native leaders uniformly rejected all diplomacy and negotiation with colonists",
@@ -340,11 +374,15 @@
    },
    {
     "id": "pr25e-test2-q12",
+    "skill_code": "1.A",
+    "topic_code": "3.5",
     "n": 13,
-    "stem": "Which of the following most accurately describes the general colonial public\u2019s response to the attitudes described in the excerpt above?",
+    "stem": "Which of the following most accurately describes the general colonial public’s response to the attitudes described in the excerpt above?",
     "stimulus": {
      "kind": "image",
-     "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Benjamin_Franklin_-_Join_or_Die.jpg",
+     "image_url": "assets/images/u3/pr25e-test2-q11.jpg",
+     "image_source_url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Benjamin_Franklin_-_Join_or_Die.jpg",
+     "image_local_verified": "2026-10-02",
      "image_caption": "Benjamin Franklin, 'Join, or Die,' Pennsylvania Gazette, May 9, 1754.",
      "source_page": "https://commons.wikimedia.org/wiki/File:Benjamin_Franklin_-_Join_or_Die.jpg",
      "pd_rationale": "Benjamin Franklin, 1754; pre-1930",
@@ -369,6 +407,8 @@
    },
    {
     "id": "pr25e-ch07-q08",
+    "skill_code": "1.A",
+    "topic_code": "3.10",
     "n": 14,
     "stem": "George Washington established the principle of executive privilege in a dispute with Congress over the",
     "stimulus": null,
@@ -391,11 +431,13 @@
    },
    {
     "id": "pr25e-test1-q12",
+    "skill_code": "1.A",
+    "topic_code": "3.5",
     "n": 15,
     "stem": "Which of the following groups would have been most supportive of the excerpt above?",
     "stimulus": {
      "kind": "text",
-     "text": "\u201cAnd it hath accordingly happened that an open resistance to the execution of the laws hath actually taken place in the town of Boston, and the neighbourhood thereof, within the said province: And whereas it is, under these circumstances, become absolutely necessary\u2026that the said method of annually electing the counsellors or assistants of the said province should no longer be suffered to continue but that the appointment of the said counsellors or assistants should henceforth be put upon the like footing as is established in such other of his Majesty\u2019s colonies or plantations in America, the governors whereof are appointed by his Majesty\u2019s commission, under the great seal of Great Britain\u2026so much of the charter, granted by their majesties King William and Queen Mary to the inhabitants of the said province of the Massachusetts Bay, in New England, and all and every clause\u2026be revoked\u2026and that the offices of all counsellors and assistants, elected and appointed in pursuance thereof, shall from thenceforth cease and determine: And that, the council, or court of assistants of the said province for the time being, shall be composed of such of the inhabitants or proprietors of lands within the same as shall be thereunto nominated and appointed by his Majesty\u2026\u201d Source: The Coercive Acts, 1774"
+     "text": "“And it hath accordingly happened that an open resistance to the execution of the laws hath actually taken place in the town of Boston, and the neighbourhood thereof, within the said province: And whereas it is, under these circumstances, become absolutely necessary…that the said method of annually electing the counsellors or assistants of the said province should no longer be suffered to continue but that the appointment of the said counsellors or assistants should henceforth be put upon the like footing as is established in such other of his Majesty’s colonies or plantations in America, the governors whereof are appointed by his Majesty’s commission, under the great seal of Great Britain…so much of the charter, granted by their majesties King William and Queen Mary to the inhabitants of the said province of the Massachusetts Bay, in New England, and all and every clause…be revoked…and that the offices of all counsellors and assistants, elected and appointed in pursuance thereof, shall from thenceforth cease and determine: And that, the council, or court of assistants of the said province for the time being, shall be composed of such of the inhabitants or proprietors of lands within the same as shall be thereunto nominated and appointed by his Majesty…” Source: The Coercive Acts, 1774"
     },
     "options": [
      "A participant in the Boston Tea Party",
@@ -417,6 +459,8 @@
    },
    {
     "id": "5s24-ch12-mcq-02",
+    "skill_code": "1.A",
+    "topic_code": "4.2",
     "n": 16,
     "stem": "As a result of Jefferson's election in 1800,",
     "stimulus": null,
@@ -440,11 +484,15 @@
    },
    {
     "id": "barrons-2027-ch06-05",
+    "skill_code": "5.B",
+    "topic_code": "4.8",
     "n": 17,
     "stem": "In the decade after this image was published, the Cherokee experienced which of the following?",
     "stimulus": {
      "kind": "image",
-     "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Se-Quo-Yah_-_R.T._%3B_drawn%2C_printed_%26_coloured_at_I.T._Bowen%27s_Lithographic_Establishment%2C_No._94_Walnut_St._LCCN93504544.jpg",
+     "image_url": "assets/images/u4/barrons-2027-ch06-04.jpg",
+     "image_source_url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Se-Quo-Yah_-_R.T._%3B_drawn%2C_printed_%26_coloured_at_I.T._Bowen%27s_Lithographic_Establishment%2C_No._94_Walnut_St._LCCN93504544.jpg",
+     "image_local_verified": "2026-10-02",
      "image_caption": "",
      "source_page": "https://commons.wikimedia.org/wiki/File:Se-Quo-Yah_-_R.T._%3B_drawn%2C_printed_%26_coloured_at_I.T._Bowen%27s_Lithographic_Establishment%2C_No._94_Walnut_St._LCCN93504544.jpg",
      "pd_rationale": "Published 1838 (I. T. Bowen, Philadelphia; McKenney-Hall series). Pre-1930 publication; Public Domain tag confirmed on Commons file page (observed 2026-10-01)."
@@ -469,11 +517,13 @@
    },
    {
     "id": "5s24-exam2-mcq-51",
+    "skill_code": "3.D",
+    "topic_code": "4.4",
     "n": 18,
     "stem": "Jefferson's Louisiana Purchase contradicted his strict constructionism because",
     "stimulus": {
      "kind": "text",
-     "text": "Questions 49\u201352 refer to the following quotation.\n\n\"The man who mounted the steps of the Capitol, March 4, 1801 \u2026 Jefferson was very tall, six feet two-and-a-half inches in height; sandy-complexioned; shy in manner, seeming cold; awkward in attitude \u2026 this loose, shackling person \u2026 belonged to the controlling influences of American history.\" \u2014Henry Adams, History of the United States During the Administration of Thomas Jefferson, 1889 (abridged)"
+     "text": "Questions 49–52 refer to the following quotation.\n\n\"The man who mounted the steps of the Capitol, March 4, 1801 … Jefferson was very tall, six feet two-and-a-half inches in height; sandy-complexioned; shy in manner, seeming cold; awkward in attitude … this loose, shackling person … belonged to the controlling influences of American history.\" —Henry Adams, History of the United States During the Administration of Thomas Jefferson, 1889 (abridged)"
     },
     "options": [
      "A. France refused to sell Louisiana",
@@ -495,11 +545,15 @@
    },
    {
     "id": "pr25e-test1-q21",
+    "skill_code": "1.A",
+    "topic_code": "4.4",
     "n": 19,
     "stem": "By what means did the United States take possession of the Oregon Territory?",
     "stimulus": {
      "kind": "image",
-     "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Map_Of_The_United_States_Including_Oregon%2C_Texas_And_The_Californias_..._showing_the_Boundary_claimed_by_the_United_States_%28IA_dr_map-of-the-united-states-including-oregon-texas-and-the-californias-sh-4452000%29.jpg",
+     "image_url": "assets/images/u4/pr25e-test1-q21.jpg",
+     "image_source_url": "https://upload.wikimedia.org/wikipedia/commons/5/59/Map_Of_The_United_States_Including_Oregon%2C_Texas_And_The_Californias_..._showing_the_Boundary_claimed_by_the_United_States_%28IA_dr_map-of-the-united-states-including-oregon-texas-and-the-californias-sh-4452000%29.jpg",
+     "image_local_verified": "2026-10-02",
      "image_caption": "",
      "source_page": "https://commons.wikimedia.org/wiki/File:Map_Of_The_United_States_Including_Oregon%2C_Texas_And_The_Californias_..._showing_the_Boundary_claimed_by_the_United_States_%28IA_dr_map-of-the-united-states-including-oregon-texas-and-the-californias-sh-4452000%29.jpg",
      "pd_rationale": "Published 1846 by John Haven. Pre-1930 publication; Public Domain tag confirmed (observed 2026-10-01)."
@@ -525,13 +579,15 @@
    },
    {
     "id": "pr25e-ch09-q07",
+    "skill_code": "1.A",
+    "topic_code": "4.6",
     "n": 20,
     "stem": "The Know-Nothing Party focused its efforts almost exclusively on the issue of",
     "stimulus": null,
     "options": [
      "the right to bear arms",
      "the prohibition of alcohol",
-     "women\u2019s rights",
+     "women’s rights",
      "immigration"
     ],
     "period": "U4",
@@ -548,15 +604,19 @@
    },
    {
     "id": "5s24-ch03-mcq-37",
+    "skill_code": "2.C",
+    "topic_code": "4.3",
     "n": 21,
     "stem": "Seguin's role as a Tejano officer honoring the Alamo dead most directly complicates which simplistic narrative?",
     "stimulus": {
      "kind": "image",
-     "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Fall-of-the-alamo-gentilz_1844.jpg",
+     "image_url": "assets/images/u4/5s24-ch03-mcq-39.jpg",
+     "image_source_url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Fall-of-the-alamo-gentilz_1844.jpg",
+     "image_local_verified": "2026-10-02",
      "image_caption": "",
      "source_page": "https://commons.wikimedia.org/wiki/File:Fall-of-the-alamo-gentilz_1844.jpg",
      "pd_rationale": "Painted 1844 by Theodore Gentilz. Pre-1930 publication; Public Domain tag confirmed (observed 2026-10-01).",
-     "text_stimulus": "Questions 37\u201340 refer to the following quotation.\n\n\"Companions in arms! These remains which we have the honor of carrying on our shoulders are those of the valiant heroes who died in the Alamo. Yes, my friends, they preferred death to bondage...\"\n\u2014Colonel Juan N. Seguin, oration, 1837 (abridged)"
+     "text_stimulus": "Questions 37–40 refer to the following quotation.\n\n\"Companions in arms! These remains which we have the honor of carrying on our shoulders are those of the valiant heroes who died in the Alamo. Yes, my friends, they preferred death to bondage...\"\n—Colonel Juan N. Seguin, oration, 1837 (abridged)"
     },
     "options": [
      "A. That the Alamo's defenders all survived",
@@ -565,7 +625,7 @@
      "D. That Mexico supported Texan independence"
     ],
     "period": "U4",
-    "skill": "Claims & Evidence in Sources",
+    "skill": "Sourcing & Situation",
     "reasoning": "Comparison",
     "themes": [
      "PCE"
@@ -578,6 +638,8 @@
    },
    {
     "id": "5s24-ch12-mcq-01",
+    "skill_code": "1.A",
+    "topic_code": "4.2",
     "n": 22,
     "stem": "The Marbury v. Madison decision",
     "stimulus": null,
@@ -601,14 +663,16 @@
    },
    {
     "id": "barrons-2027-ch07-01",
+    "skill_code": "2.B",
+    "topic_code": "5.2",
     "n": 23,
     "stem": "Fillmore's letter combined with Perry's 'powerful squadron' best illustrates which of the following?",
     "stimulus": {
      "kind": "text",
-     "text": "\"The United States of America reach from ocean to ocean, and our Territory of Oregon and State of California lie directly opposite to the dominions of your imperial majesty. Our steamships can go from California to Japan in eighteen days.... I am desirous that our two countries should trade with each other, for the benefit both of Japan and the United States.... These are the only objects for which I have sent Commodore Perry, with a powerful squadron, to pay a visit to your imperial majesty's renowned city of Yedo: friendship, commerce, a supply of coal and provisions, and protection for our shipwrecked people.\" \u2014 President Millard Fillmore, letter to the Emperor of Japan, delivered by Commodore Matthew Perry, 1853"
+     "text": "\"The United States of America reach from ocean to ocean, and our Territory of Oregon and State of California lie directly opposite to the dominions of your imperial majesty. Our steamships can go from California to Japan in eighteen days.... I am desirous that our two countries should trade with each other, for the benefit both of Japan and the United States.... These are the only objects for which I have sent Commodore Perry, with a powerful squadron, to pay a visit to your imperial majesty's renowned city of Yedo: friendship, commerce, a supply of coal and provisions, and protection for our shipwrecked people.\" — President Millard Fillmore, letter to the Emperor of Japan, delivered by Commodore Matthew Perry, 1853"
     },
     "options": [
-     "(A) American diplomacy backed by the implicit threat of force \u2014 gunboat diplomacy.",
+     "(A) American diplomacy backed by the implicit threat of force — gunboat diplomacy.",
      "(B) Japan's eager initiative in seeking American trade goods.",
      "(C) A purely peaceful program of cultural exchange with Japan.",
      "(D) Congressional opposition to any American expansion in the Pacific."
@@ -627,11 +691,15 @@
    },
    {
     "id": "pr25e-ch09-q02",
+    "skill_code": "1.A",
+    "topic_code": "5.6",
     "n": 24,
-    "stem": "\u201cBleeding Kansas\u201d was a direct result of the doctrine of",
+    "stem": "“Bleeding Kansas” was a direct result of the doctrine of",
     "stimulus": {
      "kind": "image",
-     "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Reynolds%27s_Political_Map_of_the_United_States_1856.jpg",
+     "image_url": "assets/images/u5/pr25e-ch09-q02.jpg",
+     "image_source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Reynolds%27s_Political_Map_of_the_United_States_1856.jpg",
+     "image_local_verified": "2026-10-02",
      "image_caption": "",
      "source_page": "https://commons.wikimedia.org/wiki/File:Reynolds%27s_Political_Map_of_the_United_States_1856.jpg",
      "pd_rationale": "Published c.1856 (Wm. C. Reynolds, New York). Pre-1930 publication; Public Domain tag confirmed (observed 2026-10-01)."
@@ -655,11 +723,13 @@
    },
    {
     "id": "5s24-exam2-mcq-39",
+    "skill_code": "1.B",
+    "topic_code": "5.7",
     "n": 25,
     "stem": "Lincoln's distinction between containing slavery and abolishing it reflected",
     "stimulus": {
      "kind": "text",
-     "text": "Questions 37\u201340 refer to the following quotation.\n\n\"Wrong as we think slavery is, we can yet afford to leave it alone where it is \u2026 but can we, while our votes will prevent it, allow it to spread into the National Territories, and to overrun us here in these Free States? \u2026 LET US HAVE FAITH THAT RIGHT MAKES MIGHT, AND IN THAT FAITH, LET US, TO THE END, DARE TO DO OUR DUTY AS WE UNDERSTAND IT.\" \u2014Abraham Lincoln, Cooper Union Address, February 27, 1860 (abridged)"
+     "text": "Questions 37–40 refer to the following quotation.\n\n\"Wrong as we think slavery is, we can yet afford to leave it alone where it is … but can we, while our votes will prevent it, allow it to spread into the National Territories, and to overrun us here in these Free States? … LET US HAVE FAITH THAT RIGHT MAKES MIGHT, AND IN THAT FAITH, LET US, TO THE END, DARE TO DO OUR DUTY AS WE UNDERSTAND IT.\" —Abraham Lincoln, Cooper Union Address, February 27, 1860 (abridged)"
     },
     "options": [
      "A. Support for slavery's expansion",
@@ -680,11 +750,15 @@
    },
    {
     "id": "5s24-ch16-mcq-05",
+    "skill_code": "1.A",
+    "topic_code": "5.10",
     "n": 26,
     "stem": "The Fifteenth Amendment",
     "stimulus": {
      "kind": "image",
-     "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/The_Fifteenth_Amendment._Celebrated_May_19th%2C_1870_-_from_an_original_design_by_James_C._Beard._LCCN2003690776.jpg",
+     "image_url": "assets/images/u5/5s24-ch16-mcq-05.jpg",
+     "image_source_url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/The_Fifteenth_Amendment._Celebrated_May_19th%2C_1870_-_from_an_original_design_by_James_C._Beard._LCCN2003690776.jpg",
+     "image_local_verified": "2026-10-02",
      "image_caption": "",
      "source_page": "https://commons.wikimedia.org/wiki/File:The_Fifteenth_Amendment._Celebrated_May_19th%2C_1870_-_from_an_original_design_by_James_C._Beard._LCCN2003690776.jpg",
      "pd_rationale": "Published 1870 (lithograph after James C. Beard; Library of Congress). Pre-1930 publication; PD tag confirmed (observed 2026-10-01)."
@@ -710,6 +784,8 @@
    },
    {
     "id": "barrons-2027-ch07-10",
+    "skill_code": "5.B",
+    "topic_code": "5.10",
     "n": 27,
     "stem": "An important consequence of the Black Codes was which of the following?",
     "stimulus": null,
@@ -733,15 +809,19 @@
    },
    {
     "id": "5s24-ch14-mcq-08",
+    "skill_code": "5.A",
+    "topic_code": "5.6",
     "n": 28,
     "stem": "Stowe's method of awakening sympathy through stories of suffering was most similar to that of",
     "stimulus": {
      "kind": "image",
-     "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Harriet_Beecher_Stowe%2C_Uncle_Tom%27s_Cabin%2C_vol._1%2C_1852%2C_title_page.jpg",
+     "image_url": "assets/images/u5/5s24-ch14-mcq-07.jpg",
+     "image_source_url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Harriet_Beecher_Stowe%2C_Uncle_Tom%27s_Cabin%2C_vol._1%2C_1852%2C_title_page.jpg",
+     "image_local_verified": "2026-10-02",
      "image_caption": "",
      "source_page": "https://commons.wikimedia.org/wiki/File:Harriet_Beecher_Stowe%2C_Uncle_Tom%27s_Cabin%2C_vol._1%2C_1852%2C_title_page.jpg",
      "pd_rationale": "Published 1852 (first-edition title page). Pre-1930 publication; Public Domain tag confirmed (observed 2026-10-01).",
-     "text_stimulus": "The following questions refer to the excerpt below.\n\n\"The object of these sketches is to awaken sympathy and feeling for the African race, as they exist among us; to show their wrongs and sorrows, under a system so necessarily cruel and unjust as to defeat and do away the good effects of all that can be attempted for them.\"\n\u2014Harriet Beecher Stowe, preface to Uncle Tom's Cabin, 1852 (abridged)"
+     "text_stimulus": "The following questions refer to the excerpt below.\n\n\"The object of these sketches is to awaken sympathy and feeling for the African race, as they exist among us; to show their wrongs and sorrows, under a system so necessarily cruel and unjust as to defeat and do away the good effects of all that can be attempted for them.\"\n—Harriet Beecher Stowe, preface to Uncle Tom's Cabin, 1852 (abridged)"
     },
     "options": [
      "A. Phrenology textbooks classifying human skulls",
@@ -763,11 +843,13 @@
    },
    {
     "id": "5s24-ch03-mcq-53",
+    "skill_code": "2.A",
+    "topic_code": "5.9",
     "n": 29,
-    "stem": "The Act's funding mechanism \u2014 federal land grants to build state colleges \u2014 reflected which constitutional vision?",
+    "stem": "The Act's funding mechanism — federal land grants to build state colleges — reflected which constitutional vision?",
     "stimulus": {
      "kind": "text",
-     "text": "Questions 53\u201355 refer to the following quotation.\n\n\"Be it enacted ... That there be granted to the several States, for the purposes hereinafter mentioned, an amount of public land, to be apportioned to each State a quantity equal to thirty thousand acres for each senator and representative...\"\n\u2014Morrill Land-Grant Act, 1862 (abridged)"
+     "text": "Questions 53–55 refer to the following quotation.\n\n\"Be it enacted ... That there be granted to the several States, for the purposes hereinafter mentioned, an amount of public land, to be apportioned to each State a quantity equal to thirty thousand acres for each senator and representative...\"\n—Morrill Land-Grant Act, 1862 (abridged)"
     },
     "options": [
      "A. Strict states' rights",
@@ -789,17 +871,19 @@
    },
    {
     "id": "pr25e-test1-q24",
+    "skill_code": "1.A",
+    "topic_code": "5.7",
     "n": 30,
-    "stem": "In what way did the actions of Abraham Lincoln in 1860 contradict Douglass\u2019s sentiments in the excerpt above?",
+    "stem": "In what way did the actions of Abraham Lincoln in 1860 contradict Douglass’s sentiments in the excerpt above?",
     "stimulus": {
      "kind": "text",
-     "text": "\u201cIn one view the slaveholders have a decided advantage over all opposition. It is well to notice this advantage\u2014the advantage of complete organization. They are organized; and yet were not at the pains of creating their organizations. The State governments, where the system of slavery exists, are complete slavery organizations. The church organizations in those States are equally at the service of slavery; while the Federal Government, with its army and navy, from the chief magistracy in Washington, to the Supreme Court, and thence to the chief marshalship at New York, is pledged to support, defend, and propagate the crying curse of human bondage. The pen, the purse, and the sword, are united against the simple truth, preached by humble men in obscure places.\u201d Source: Frederick Douglass, \u201cThe Dred Scott Decision\u201d (speech), 1857 (public domain)."
+     "text": "“In one view the slaveholders have a decided advantage over all opposition. It is well to notice this advantage—the advantage of complete organization. They are organized; and yet were not at the pains of creating their organizations. The State governments, where the system of slavery exists, are complete slavery organizations. The church organizations in those States are equally at the service of slavery; while the Federal Government, with its army and navy, from the chief magistracy in Washington, to the Supreme Court, and thence to the chief marshalship at New York, is pledged to support, defend, and propagate the crying curse of human bondage. The pen, the purse, and the sword, are united against the simple truth, preached by humble men in obscure places.” Source: Frederick Douglass, “The Dred Scott Decision” (speech), 1857 (public domain)."
     },
     "options": [
      "Lincoln promoted the freedom of settlers within territories to determine the slave status of their new state.",
      "Lincoln passed the Homestead Act to give free land to all western settlers.",
      "Lincoln favored the exclusion of slavery from any of the new territories.",
-     "Lincoln enacted the policy of giving newly freed enslaved people \u201cforty acres and a mule.\u201d"
+     "Lincoln enacted the policy of giving newly freed enslaved people “forty acres and a mule.”"
     ],
     "period": "U5",
     "skill": "Developments & Processes",
@@ -815,6 +899,8 @@
    },
    {
     "id": "barrons-2027-pt2-55",
+    "skill_code": "1.B",
+    "topic_code": "6.11",
     "n": 31,
     "stem": "The trend in the table helped prompt which development of the era?",
     "stimulus": null,
@@ -838,15 +924,19 @@
    },
    {
     "id": "5s24-exam1-mcq-49",
+    "skill_code": "2.A",
+    "topic_code": "6.3",
     "n": 32,
     "stem": "The poster's imagery was designed primarily to",
     "stimulus": {
      "kind": "image",
-     "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Buffalo_Bill%27s_wild_west_and_congress_of_rough_riders_of_the_world_LCCN94513621.jpg",
+     "image_url": "assets/images/u6/5s24-exam1-mcq-51.jpg",
+     "image_source_url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Buffalo_Bill%27s_wild_west_and_congress_of_rough_riders_of_the_world_LCCN94513621.jpg",
+     "image_local_verified": "2026-10-02",
      "image_caption": "",
      "source_page": "https://commons.wikimedia.org/wiki/Buffalo_Bill%27s_wild_west_and_congress_of_rough_riders_of_the_world_LCCN94513621.jpg",
      "pd_rationale": "1899 poster (pre-1930); Public domain tag on Commons; LOC print.",
-     "text_stimulus": "Questions 49\u201352 refer to the following poster.\n\n[An 1890s Buffalo Bill's Wild West show poster depicts cowboys, Native American performers, and sharpshooters on horseback circling a stagecoach, beneath the banner 'Buffalo Bill's Wild West \u2014 Congress of Rough Riders of the World.']"
+     "text_stimulus": "Questions 49–52 refer to the following poster.\n\n[An 1890s Buffalo Bill's Wild West show poster depicts cowboys, Native American performers, and sharpshooters on horseback circling a stagecoach, beneath the banner 'Buffalo Bill's Wild West — Congress of Rough Riders of the World.']"
     },
     "options": [
      "A. Document actual frontier life with strict accuracy",
@@ -855,7 +945,7 @@
      "D. Promote investment in railroad bonds"
     ],
     "period": "U6",
-    "skill": "Developments & Processes",
+    "skill": "Sourcing & Situation",
     "reasoning": "Comparison",
     "themes": [
      "ARC",
@@ -868,11 +958,13 @@
    },
    {
     "id": "barrons-2027-ch08-01",
+    "skill_code": "1.B",
+    "topic_code": "6.3",
     "n": 33,
     "stem": "The 'surplus' land provision of the Dawes Act best illustrates which of the following?",
     "stimulus": {
      "kind": "text",
-     "text": "\"...the President of the United States [is] hereby... authorized, whenever in his opinion any reservation or any part thereof of such Indians is advantageous for agricultural and grazing purposes, to cause said reservation... to be surveyed... and to allot the lands in said reservation in severalty [separate plots of land, individually owned] to any Indian located thereon...\" \u2014 Dawes Severalty Act (excerpt), 1887"
+     "text": "\"...the President of the United States [is] hereby... authorized, whenever in his opinion any reservation or any part thereof of such Indians is advantageous for agricultural and grazing purposes, to cause said reservation... to be surveyed... and to allot the lands in said reservation in severalty [separate plots of land, individually owned] to any Indian located thereon...\" — Dawes Severalty Act (excerpt), 1887"
     },
     "options": [
      "(A) The law's primary purpose was to restore to tribes lands that had been seized through earlier fraudulent treaties.",
@@ -895,15 +987,19 @@
    },
    {
     "id": "5s24-ch19-mcq-06",
+    "skill_code": "2.A",
+    "topic_code": "6.13",
     "n": 34,
     "stem": "Twain describes himself as formerly 'a red-hot imperialist.' What changed his view?",
     "stimulus": {
      "kind": "image",
-     "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/School_Begins_%28Puck_Magazine_1-25-1899%29.jpg",
+     "image_url": "assets/images/u6/5s24-ch19-mcq-07.jpg",
+     "image_source_url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/School_Begins_%28Puck_Magazine_1-25-1899%29.jpg",
+     "image_local_verified": "2026-10-02",
      "image_caption": "",
      "source_page": "https://commons.wikimedia.org/wiki/School_Begins_(Puck_Magazine_1-25-1899).jpg",
      "pd_rationale": "Puck, 1899-01-25 (pre-1930); Public domain tag on Commons.",
-     "text_stimulus": "The following questions refer to the excerpt below.\n\n\"I left these shores a red-hot imperialist. I wanted the American eagle to go screaming into the Pacific... But I have thought some more, since then, and I have seen that we do not intend to free, but to subjugate the people of the Philippines.\"\n\u2014Mark Twain, 1900 (abridged)"
+     "text_stimulus": "The following questions refer to the excerpt below.\n\n\"I left these shores a red-hot imperialist. I wanted the American eagle to go screaming into the Pacific... But I have thought some more, since then, and I have seen that we do not intend to free, but to subjugate the people of the Philippines.\"\n—Mark Twain, 1900 (abridged)"
     },
     "options": [
      "A. Reading the Treaty of Paris convinced him the U.S. meant to subjugate, not free, the Filipinos",
@@ -924,11 +1020,13 @@
    },
    {
     "id": "pr25e-test2-q35",
+    "skill_code": "1.A",
+    "topic_code": "6.8",
     "n": 35,
     "stem": "Consistent with the image above, Irish immigrants to the United States during the 19th century largely sought out settlement within",
     "stimulus": {
      "kind": "text",
-     "text": "Density of Distribution of the Natives of Ireland: 1890, Government release of 11th Census Results, 1898. [Described: a pair of statistical maps (U.S. Census Office, 1898, public domain) showing where Irish-born residents lived in 1890. The darkest shading \u2014 the heaviest concentrations of Irish natives relative to population \u2014 falls over the industrial Northeast and the Great Lakes port cities, with far lighter shading across the rural South and the far West.]"
+     "text": "Density of Distribution of the Natives of Ireland: 1890, Government release of 11th Census Results, 1898. [Described: a pair of statistical maps (U.S. Census Office, 1898, public domain) showing where Irish-born residents lived in 1890. The darkest shading — the heaviest concentrations of Irish natives relative to population — falls over the industrial Northeast and the Great Lakes port cities, with far lighter shading across the rural South and the far West.]"
     },
     "options": [
      "industrialized towns and cities",
@@ -950,15 +1048,19 @@
    },
    {
     "id": "5s24-ch17-mcq-06",
+    "skill_code": "2.B",
+    "topic_code": "6.2",
     "n": 36,
     "stem": "The federal government subsidized the transcontinental railroad with lavish land grants because",
     "stimulus": {
      "kind": "image",
-     "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Golden_Spike_ceremony%2C_Promontory%2C_Utah%2C_May_10%2C_1869.jpg",
+     "image_url": "assets/images/u6/5s24-ch17-mcq-07.jpg",
+     "image_source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Golden_Spike_ceremony%2C_Promontory%2C_Utah%2C_May_10%2C_1869.jpg",
+     "image_local_verified": "2026-10-02",
      "image_caption": "",
      "source_page": "https://commons.wikimedia.org/wiki/Golden_Spike_ceremony%2C_Promontory%2C_Utah%2C_May_10%2C_1869.jpg",
      "pd_rationale": "Photograph by A. J. Russell, 1869 (pre-1930); Public domain tag on Commons.",
-     "text_stimulus": "Questions 6\u20138 refer to the illustration described below.\n\nThe famous 1869 photograph of the Golden Spike ceremony at Promontory Summit, Utah: two locomotives face each other, their cowcatchers nearly touching, while railroad workers, officials, and a military band crowd around the tracks where the final spike joins the Union Pacific and Central Pacific lines."
+     "text_stimulus": "Questions 6–8 refer to the illustration described below.\n\nThe famous 1869 photograph of the Golden Spike ceremony at Promontory Summit, Utah: two locomotives face each other, their cowcatchers nearly touching, while railroad workers, officials, and a military band crowd around the tracks where the final spike joins the Union Pacific and Central Pacific lines."
     },
     "options": [
      "A. It wanted to promote western settlement",
@@ -980,8 +1082,10 @@
    },
    {
     "id": "pr25e-ch10-q08",
+    "skill_code": "1.A",
+    "topic_code": "6.3",
     "n": 37,
-    "stem": "The \u201cGhost Dance\u201d movement among Western Native Americans stressed all of the following EXCEPT",
+    "stem": "The “Ghost Dance” movement among Western Native Americans stressed all of the following EXCEPT",
     "stimulus": null,
     "options": [
      "the belief that the world would soon come to an end",
@@ -1003,11 +1107,13 @@
    },
    {
     "id": "5s24-exam1-mcq-44",
+    "skill_code": "1.A",
+    "topic_code": "7.10",
     "n": 38,
     "stem": "Long's assassination in 1935",
     "stimulus": {
      "kind": "text",
-     "text": "Questions 41\u201344 refer to the following excerpt.\n\nSenator Huey Long charged that a tiny elite hoarded the nation's wealth while millions suffered in the Depression. He proposed capping personal fortunes, guaranteeing every family a homestead and a minimum annual income, shortening the workweek, and providing free college and old-age pensions \u2014 all funded by steep taxes on the rich.\n\u2014After Huey P. Long, 'Share Our Wealth' radio address, February 1934 (paraphrased)"
+     "text": "Questions 41–44 refer to the following excerpt.\n\nSenator Huey Long charged that a tiny elite hoarded the nation's wealth while millions suffered in the Depression. He proposed capping personal fortunes, guaranteeing every family a homestead and a minimum annual income, shortening the workweek, and providing free college and old-age pensions — all funded by steep taxes on the rich.\n—After Huey P. Long, 'Share Our Wealth' radio address, February 1934 (paraphrased)"
     },
     "options": [
      "A. Removed the leading left-populist challenger to the New Deal",
@@ -1029,11 +1135,15 @@
    },
    {
     "id": "5s24-ch24-mcq-02",
+    "skill_code": "3.A",
+    "topic_code": "7.12",
     "n": 39,
     "stem": "Which was NOT a reason for wartime hatred of the Japanese?",
     "stimulus": {
      "kind": "image",
-     "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Hayward%2C_California._With_baggage_piled_on_sidewalk%2C_evacuees_of_Japanese_ancestry_await_evacuation_._._._-_NARA_-_537523.jpg",
+     "image_url": "assets/images/u7/5s24-ch24-mcq-01.jpg",
+     "image_source_url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Hayward%2C_California._With_baggage_piled_on_sidewalk%2C_evacuees_of_Japanese_ancestry_await_evacuation_._._._-_NARA_-_537523.jpg",
+     "image_local_verified": "2026-10-02",
      "image_caption": "",
      "source_page": "https://commons.wikimedia.org/wiki/Hayward%2C_California._With_baggage_piled_on_sidewalk%2C_evacuees_of_Japanese_ancestry_await_evacuation_._._._-_NARA_-_537523.jpg",
      "pd_rationale": "U.S. War Relocation Authority photograph by Dorothea Lange, 1942-05-08 (U.S. federal work); Public domain tag on Commons; NARA record 537523."
@@ -1058,11 +1168,13 @@
    },
    {
     "id": "barrons-2027-pt1-36",
+    "skill_code": "3.C",
+    "topic_code": "7.8",
     "n": 40,
     "stem": "Garvey's message differed from that of contemporaries like W. E. B. Du Bois chiefly in its emphasis on which of the following?",
     "stimulus": {
      "kind": "text",
-     "text": "Marcus Garvey argued around 1924 that Black people, like all races, had souls, passions, and hopes, and that just as Canadians claimed Canada for the Canadians and Americans America for the Americans, it was reasonable for Black people worldwide to claim Africa for the Africans. \u2014 paraphrased from Marcus Garvey, speech, c. 1924"
+     "text": "Marcus Garvey argued around 1924 that Black people, like all races, had souls, passions, and hopes, and that just as Canadians claimed Canada for the Canadians and Americans America for the Americans, it was reasonable for Black people worldwide to claim Africa for the Africans. — paraphrased from Marcus Garvey, speech, c. 1924"
     },
     "options": [
      "(A) A rejection of all political activity by Black Americans.",
@@ -1085,15 +1197,19 @@
    },
    {
     "id": "5s24-exam2-mcq-12",
+    "skill_code": "3.B",
+    "topic_code": "7.4",
     "n": 41,
     "stem": "The passage's detailed account of one woman's budget exemplifies which journalistic technique?",
     "stimulus": {
      "kind": "image",
-     "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Bandits%27_Roost%2C_59_1-2_Mulberry_Street_by_Jacob_August_Riis%2C_1888.jpg",
+     "image_url": "assets/images/u7/5s24-exam2-mcq-12.jpg",
+     "image_source_url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Bandits%27_Roost%2C_59_1-2_Mulberry_Street_by_Jacob_August_Riis%2C_1888.jpg",
+     "image_local_verified": "2026-10-02",
      "image_caption": "",
      "source_page": "https://commons.wikimedia.org/wiki/Bandits%27_Roost%2C_59_1-2_Mulberry_Street_by_Jacob_August_Riis%2C_1888.jpg",
      "pd_rationale": "Photograph by Jacob Riis, 1888 (pre-1930); Public domain tag on Commons.",
-     "text_stimulus": "Questions 9\u201312 refer to the following quotation.\n\n\"Here is the case of a woman employed in the manufacturing department of a Broadway house. \u2026 She averages three dollars a week. \u2026 lunch she cannot afford. One meal a day is her allowance. \u2026 Almost any door might seem to offer a welcome escape from such slavery as this.\" \u2014Jacob Riis, How the Other Half Lives, 1890 (abridged)"
+     "text_stimulus": "Questions 9–12 refer to the following quotation.\n\n\"Here is the case of a woman employed in the manufacturing department of a Broadway house. … She averages three dollars a week. … lunch she cannot afford. One meal a day is her allowance. … Almost any door might seem to offer a welcome escape from such slavery as this.\" —Jacob Riis, How the Other Half Lives, 1890 (abridged)"
     },
     "options": [
      "A. Publishing government statistics",
@@ -1115,11 +1231,13 @@
    },
    {
     "id": "pr25e-test2-q47",
+    "skill_code": "2.A",
+    "topic_code": "7.4",
     "n": 42,
-    "stem": "The audience for Roosevelt\u2019s speech likely would have been most supportive of which of the following policies of the Roosevelt administration?",
+    "stem": "The audience for Roosevelt’s speech likely would have been most supportive of which of the following policies of the Roosevelt administration?",
     "stimulus": {
      "kind": "text",
-     "text": "\u201cIt is not enough to be well-meaning and kindly, but weak; neither is it enough to be strong, unless morality and decency go hand in hand with strength. We must possess the qualities which make us do our duty in our homes and among our neighbors, and in addition we must possess the qualities which are indispensable to the make-up of every great and masterful nation\u2014the qualities of courage and hardihood, of individual initiative and yet of power to combine for a common end, and above all, the resolute determination to permit no man and no set of men to sunder us one from the other by lines of caste or creed or section. We must act upon the motto of all for each and each for all. There must be ever present in our minds the fundamental truth that in a republic such as ours the only safety is to stand neither for nor against any man because he is rich or because he is poor, because he is engaged in one occupation or another, because he works with his brains or because he works with his hands. We must treat each man on his worth and merits as a man. We must see that each is given a square deal, because he is entitled to no more and should receive no less.\u201d Source: Theodore Roosevelt, a speech to farmers in New York, 1903"
+     "text": "“It is not enough to be well-meaning and kindly, but weak; neither is it enough to be strong, unless morality and decency go hand in hand with strength. We must possess the qualities which make us do our duty in our homes and among our neighbors, and in addition we must possess the qualities which are indispensable to the make-up of every great and masterful nation—the qualities of courage and hardihood, of individual initiative and yet of power to combine for a common end, and above all, the resolute determination to permit no man and no set of men to sunder us one from the other by lines of caste or creed or section. We must act upon the motto of all for each and each for all. There must be ever present in our minds the fundamental truth that in a republic such as ours the only safety is to stand neither for nor against any man because he is rich or because he is poor, because he is engaged in one occupation or another, because he works with his brains or because he works with his hands. We must treat each man on his worth and merits as a man. We must see that each is given a square deal, because he is entitled to no more and should receive no less.” Source: Theodore Roosevelt, a speech to farmers in New York, 1903"
     },
     "options": [
      "The creation of the National Parks system",
@@ -1141,11 +1259,13 @@
    },
    {
     "id": "5s24-ch24-mcq-08",
+    "skill_code": "2.C",
+    "topic_code": "7.13",
     "n": 43,
     "stem": "Notably absent from Truman's announcement is",
     "stimulus": {
      "kind": "text",
-     "text": "The following questions refer to the excerpt below.\n\nPresident Truman's August 1945 announcement told the nation that an American plane had dropped a single bomb on Hiroshima with explosive force equal to more than 20,000 tons of TNT \u2014 a weapon, he said, that would shorten the agony of war.\n\u2014After President Harry Truman's press release, August 6, 1945"
+     "text": "The following questions refer to the excerpt below.\n\nPresident Truman's August 1945 announcement told the nation that an American plane had dropped a single bomb on Hiroshima with explosive force equal to more than 20,000 tons of TNT — a weapon, he said, that would shorten the agony of war.\n—After President Harry Truman's press release, August 6, 1945"
     },
     "options": [
      "A. Any mention of Pearl Harbor",
@@ -1168,11 +1288,13 @@
    },
    {
     "id": "pr25e-test1-q43",
+    "skill_code": "3.D",
+    "topic_code": "7.9",
     "n": 44,
     "stem": "A historian could use this political cartoon to prove which of the following claims?",
     "stimulus": {
      "kind": "text",
-     "text": "[Described image \u2014 1933 political cartoon titled \u2018Strike-Breaking\u2019 (original artwork not reproduced). Two burly thugs, one labeled \u2018STRIKE-BREAKING\u2019 and the other \u2018UNION-BUSTING,\u2019 beat a helpless worker with clubs. In the foreground, a small figure labeled \u2018FACT-FINDING\u2019 \u2014 a government investigator \u2014 crawls on all fours holding a magnifying glass, deliberately looking away from the violence. The cartoon charges that employers violently repressed unions while the federal government offered only a willfully blind, ineffectual \u2018fact-finding\u2019 response.]"
+     "text": "[Described image — 1933 political cartoon titled ‘Strike-Breaking’ (original artwork not reproduced). Two burly thugs, one labeled ‘STRIKE-BREAKING’ and the other ‘UNION-BUSTING,’ beat a helpless worker with clubs. In the foreground, a small figure labeled ‘FACT-FINDING’ — a government investigator — crawls on all fours holding a magnifying glass, deliberately looking away from the violence. The cartoon charges that employers violently repressed unions while the federal government offered only a willfully blind, ineffectual ‘fact-finding’ response.]"
     },
     "options": [
      "Supporters of organized labor were critical of government policies around unions.",
@@ -1194,6 +1316,8 @@
    },
    {
     "id": "5s24-ch24-mcq-04",
+    "skill_code": "1.B",
+    "topic_code": "7.11",
     "n": 45,
     "stem": "America did little to check Hitler in the 1930s because",
     "stimulus": null,
@@ -1217,11 +1341,13 @@
    },
    {
     "id": "5s24-ch03-mcq-43",
+    "skill_code": "5.A",
+    "topic_code": "8.12",
     "n": 46,
     "stem": "The Yippies' use of media spectacle most directly anticipated",
     "stimulus": {
      "kind": "text",
-     "text": "Questions 41\u201344 refer to the following excerpt (paraphrased).\n\nAbbie Hoffman recalled storming the Pentagon in 1967 \u2014 leaping fences with fellow protesters in a theatrical, chaotic demonstration meant to dramatize opposition to the Vietnam War.\n\u2014After Abbie Hoffman, on the 1967 Pentagon march"
+     "text": "Questions 41–44 refer to the following excerpt (paraphrased).\n\nAbbie Hoffman recalled storming the Pentagon in 1967 — leaping fences with fellow protesters in a theatrical, chaotic demonstration meant to dramatize opposition to the Vietnam War.\n—After Abbie Hoffman, on the 1967 Pentagon march"
     },
     "options": [
      "A. The decline of television news",
@@ -1242,11 +1368,15 @@
    },
    {
     "id": "5s24-ch25-mcq-01",
+    "skill_code": "1.A",
+    "topic_code": "8.3",
     "n": 47,
     "stem": "The Army-McCarthy hearings proved",
     "stimulus": {
      "kind": "image",
-     "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Welch-McCarthy-Hearings.jpg",
+     "image_url": "assets/images/u8/5s24-ch25-mcq-01.jpg",
+     "image_source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Welch-McCarthy-Hearings.jpg",
+     "image_local_verified": "2026-10-02",
      "image_caption": "",
      "source_page": "https://commons.wikimedia.org/wiki/File%3AWelch-McCarthy-Hearings.jpg",
      "pd_rationale": "Wikimedia Commons file page carries {{PD-USGov-Congress}}: work of the U.S. Congress. Public domain."
@@ -1272,6 +1402,8 @@
    },
    {
     "id": "5s24-ch26-mcq-02",
+    "skill_code": "1.A",
+    "topic_code": "8.4",
     "n": 48,
     "stem": "Eisenhower's presidency most resembled that of",
     "stimulus": null,
@@ -1294,17 +1426,21 @@
    },
    {
     "id": "pr25e-ch12-q01",
+    "skill_code": "1.A",
+    "topic_code": "8.6",
     "n": 49,
-    "stem": "All of the following threatened Harry Truman\u2019s chances for re-election in 1948 EXCEPT",
+    "stem": "All of the following threatened Harry Truman’s chances for re-election in 1948 EXCEPT",
     "stimulus": {
      "kind": "image",
-     "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Harry_S._Truman_Presidential_Portrait_%283x4_cropped%29.jpg",
+     "image_url": "assets/images/u8/pr25e-ch12-q01.jpg",
+     "image_source_url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Harry_S._Truman_Presidential_Portrait_%283x4_cropped%29.jpg",
+     "image_local_verified": "2026-10-02",
      "image_caption": "",
      "source_page": "https://commons.wikimedia.org/wiki/File%3AHarry%20S.%20Truman%20Presidential%20Portrait%20%283x4%20cropped%29.jpg",
      "pd_rationale": "Wikimedia Commons file page carries {{PD-US-not-renewed}}: U.S. work whose copyright was not renewed. Public domain."
     },
     "options": [
-     "Truman\u2019s positions on civil rights",
+     "Truman’s positions on civil rights",
      "rampant inflation",
      "the Dixiecrat candidacy of Strom Thurmond",
      "public dissatisfaction with the Korean War"
@@ -1322,11 +1458,13 @@
    },
    {
     "id": "5s24-ch25-mcq-06",
+    "skill_code": "3.A",
+    "topic_code": "8.3",
     "n": 50,
     "stem": "According to her testimony, Bentley's Soviet contacts had obtained",
     "stimulus": {
      "kind": "text",
-     "text": "The following questions refer to the excerpt below.\n\nQuestioner: Can you describe the military information you obtained through the Silvermaster group? Bentley: I passed along classified material on aircraft production and other defense matters, gathered from government employees sympathetic to the Soviet cause.\n\u2014After Elizabeth Bentley's testimony before the House Committee on Un-American Activities, 1948"
+     "text": "The following questions refer to the excerpt below.\n\nQuestioner: Can you describe the military information you obtained through the Silvermaster group? Bentley: I passed along classified material on aircraft production and other defense matters, gathered from government employees sympathetic to the Soviet cause.\n—After Elizabeth Bentley's testimony before the House Committee on Un-American Activities, 1948"
     },
     "options": [
      "A. Detailed inside information on U.S. aircraft production and military plans, including D-Day",
@@ -1349,11 +1487,15 @@
    },
    {
     "id": "barrons-2027-pt1-16",
+    "skill_code": "5.A",
+    "topic_code": "8.2",
     "n": 51,
     "stem": "The passage provides the classic rationale for which U.S. Cold War strategy?",
     "stimulus": {
      "kind": "image",
-     "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Truman_Doctrine%2C_03-12-1947%2C_Page_1_%285476286491%29.jpg",
+     "image_url": "assets/images/u8/barrons-2027-pt1-16.jpg",
+     "image_source_url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Truman_Doctrine%2C_03-12-1947%2C_Page_1_%285476286491%29.jpg",
+     "image_local_verified": "2026-10-02",
      "image_caption": "",
      "source_page": "https://commons.wikimedia.org/wiki/File%3ATruman%20Doctrine%2C%2003-12-1947%2C%20Page%201%20%285476286491%29.jpg",
      "pd_rationale": "Wikimedia Commons file page carries {{PD-USGov}}: work of the U.S. federal government. Public domain."
@@ -1377,6 +1519,8 @@
    },
    {
     "id": "5s24-ch26-mcq-04",
+    "skill_code": "1.A",
+    "topic_code": "8.5",
     "n": 52,
     "stem": "Television's most important early-1950s impact was that",
     "stimulus": null,
@@ -1399,6 +1543,8 @@
    },
    {
     "id": "5s24-ch30-mcq-08",
+    "skill_code": "1.A",
+    "topic_code": "9.6",
     "n": 53,
     "stem": "Congress's legislative response to 9/11 was",
     "stimulus": null,
@@ -1421,11 +1567,15 @@
    },
    {
     "id": "pr25e-ch13-q09",
+    "skill_code": "1.A",
+    "topic_code": "9.6",
     "n": 54,
     "stem": "Which of the following actions by the Clinton administration was most harmonious with Liberal Democrat values?",
     "stimulus": {
      "kind": "image",
-     "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Official_Portrait_of_President_William_Jefferson_Clinton_-_DPLA_-_4697184146b3b6e2d6791b8f3c297476.jpg",
+     "image_url": "assets/images/u9/pr25e-ch13-q09.jpg",
+     "image_source_url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Official_Portrait_of_President_William_Jefferson_Clinton_-_DPLA_-_4697184146b3b6e2d6791b8f3c297476.jpg",
+     "image_local_verified": "2026-10-02",
      "image_caption": "",
      "source_page": "https://commons.wikimedia.org/wiki/File%3AOfficial%20Portrait%20of%20President%20William%20Jefferson%20Clinton%20-%20DPLA%20-%204697184146b3b6e2d6791b8f3c297476.jpg",
      "pd_rationale": "Wikimedia Commons file page carries {{PD-USGov}}: work of the U.S. federal government. Public domain."
@@ -1450,6 +1600,8 @@
    },
    {
     "id": "5s24-ch31-mcq-03",
+    "skill_code": "1.A",
+    "topic_code": "9.6",
     "n": 55,
     "stem": "President Biden gave military and diplomatic support to",
     "stimulus": null,
@@ -1474,7 +1626,7 @@
   ]
  },
  "section_1b": {
-  "directions": "Section I, Part B \u2014 Short Answer: 3 questions, 40 minutes. Answer all three questions. Each question has three parts (A, B, C); write your answers in complete sentences. Question 1 is based on a secondary source, Question 2 on a primary source, and Question 3 on a non-text source (map, chart, image, or diagram). This part counts for 20 percent of the exam score.",
+  "directions": "Section I, Part B — Short Answer: 3 questions, 40 minutes. Answer all three questions. Each question has three parts (A, B, C); write your answers in complete sentences. Question 1 is based on a secondary source, Question 2 on a primary source, and Question 3 on a non-text source (map, chart, image, or diagram). This part counts for 20 percent of the exam score.",
   "questions": [
    {
     "id": "saq-set-10-q1",
@@ -1490,7 +1642,7 @@
     ],
     "exemplar": [
      "Victory in the French and Indian War removed France as a serious military threat in North America, so the colonists no longer needed British troops for their security and resented paying for them.",
-     "The war left Britain with a massive debt, and Parliament tried to make the colonies pay through measures like the Stamp Act and Townshend duties \u2014 Parliament's first direct taxes on the colonists.",
+     "The war left Britain with a massive debt, and Parliament tried to make the colonies pay through measures like the Stamp Act and Townshend duties — Parliament's first direct taxes on the colonists.",
      "Colonists expressed opposition through boycotts of British goods, the Stamp Act Congress, committees of correspondence, and ultimately the First Continental Congress, which organized colonial resistance."
     ],
     "skill": "Claims & Evidence in Sources",
@@ -1501,7 +1653,7 @@
     "q": 2,
     "source_kind": "primary text",
     "period": "U7",
-    "stimulus_text": "\"For the purposes hereinbefore set forth the Secretary shall cause to be made, by inspectors appointed for that purpose, an examination and inspection of all cattle, sheep, swine, and goats before they shall be allowed to enter into any slaughtering, packing, or canning establishment...\"\n\u2014Federal Meat Inspection Act, 1906 (abridged)",
+    "stimulus_text": "\"For the purposes hereinbefore set forth the Secretary shall cause to be made, by inspectors appointed for that purpose, an examination and inspection of all cattle, sheep, swine, and goats before they shall be allowed to enter into any slaughtering, packing, or canning establishment...\"\n—Federal Meat Inspection Act, 1906 (abridged)",
     "attribution": null,
     "parts": [
      "A. Briefly explain ONE example of Progressive action to reform the American economy.",
@@ -1531,7 +1683,7 @@
     "exemplar": [
      "The diagram shows a three-legged circuit: New England ships carried rum to Africa, traded it for enslaved people, and returned with sugar and molasses from the West Indies. The pattern reveals how deeply the northern colonial economy depended on slavery even where plantations were rare.",
      "One way the imperial system affected the colonies was through the Navigation Acts of 1660 and 1663, which forced colonists to ship tobacco, rice, and sugar to England and to route European goods through English ports, enriching English merchants at colonial expense.",
-     "Colonists resisted tighter control by smuggling and by defying royal authority \u2014 Massachusetts's defiance of the Navigation Acts helped provoke the Dominion of New England, and colonial assemblies used their 'power of the purse' to frustrate royal governors."
+     "Colonists resisted tighter control by smuggling and by defying royal authority — Massachusetts's defiance of the Navigation Acts helped provoke the Dominion of New England, and colonial assemblies used their 'power of the purse' to frustrate royal governors."
     ],
     "skill": "Developments & Processes",
     "reasoning": "Causation",
@@ -1545,7 +1697,7 @@
   ]
  },
  "section_2a": {
-  "directions": "Section II, Part A \u2014 Document-Based Question: 1 question, 60 minutes (including a 15-minute reading period). The question is based on 7 documents. In your response you must develop a historically defensible thesis, describe a broader historical context, use at least 4 documents to support your argument, use at least one additional piece of specific historical evidence beyond the documents, and for at least 2 documents explain how the document's point of view, purpose, historical situation, and/or audience is relevant to your argument. This part counts for 25 percent of the exam score.",
+  "directions": "Section II, Part A — Document-Based Question: 1 question, 60 minutes (including a 15-minute reading period). The question is based on 7 documents. In your response you must develop a historically defensible thesis, describe a broader historical context, use at least 4 documents to support your argument, use at least one additional piece of specific historical evidence beyond the documents, and for at least 2 documents explain how the document's point of view, purpose, historical situation, and/or audience is relevant to your argument. This part counts for 25 percent of the exam score.",
   "dbq": {
    "id": "dbq-drill",
    "prompt": "Evaluate the extent to which fears of communism affected American society from 1940 to 1959.",
@@ -1583,7 +1735,9 @@
      "sourcing_note": "POV: federal civil-defense agency. Purpose: prepare schoolchildren for atomic attack. Audience: schoolchildren and teachers. Argument relevance: shows the state embedding H-bomb fear in children's daily routines - the scare reached the classroom.",
      "source_type": "paraphrase",
      "caption": "Still from the Federal Civil Defense Administration's 1951 instructional film Duck and Cover, teaching schoolchildren the 'duck and cover' atomic-bomb drill",
-     "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/58/D_and_c.jpg",
+     "image_url": "assets/images/unperioded/test-04-doc4.jpg",
+     "image_source_url": "https://upload.wikimedia.org/wikipedia/commons/5/58/D_and_c.jpg",
+     "image_local_verified": "2026-10-02",
      "pd_rationale": "1951; U.S. federal work: still from the Federal Civil Defense Administration film 'Duck and Cover'; license PD-USGov on Commons (verified in file-page wikitext)",
      "source_page": "https://commons.wikimedia.org/wiki/File:D_and_c.jpg"
     },
@@ -1595,7 +1749,9 @@
      "sourcing_note": "POV: mainstream press cartoonist. Purpose: cheer the Palmer Raids roundup of suspected radicals. Audience: newspaper readers. Argument relevance: First Red Scare imagery the Second Red Scare echoed - federal power sweeping up 'dangerous' foreigners.",
      "source_type": "original",
      "caption": "'The Red Round-Up': Clifford K. Berryman cartoon, Washington Evening Star, November 8, 1919 - Uncle Sam holds a net full of arrested radicals: 'Now to put 'em where they cant do anymore harm'",
-     "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Evening_Star_Cartoon_by_Clifford_K._Berryman_Nov_8_1919.jpg",
+     "image_url": "assets/images/unperioded/test-04-doc5.jpg",
+     "image_source_url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Evening_Star_Cartoon_by_Clifford_K._Berryman_Nov_8_1919.jpg",
+     "image_local_verified": "2026-10-02",
      "pd_rationale": "Published 1919-11-08 in the Washington Evening Star (source: Chronicling America, Library of Congress); license PD-US on Commons (pre-1930 U.S. publication; verified in file-page wikitext)",
      "source_page": "https://commons.wikimedia.org/wiki/File:Evening_Star_Cartoon_by_Clifford_K._Berryman_Nov_8_1919.jpg"
     },
@@ -1619,7 +1775,7 @@
   }
  },
  "section_2b": {
-  "directions": "Section II, Part B \u2014 Long Essay: 1 question, 40 minutes. Develop a historically defensible thesis, describe a broader historical context, and support your argument with specific and relevant examples. This part counts for 15 percent of the exam score. Total exam time: 3 hours 15 minutes.",
+  "directions": "Section II, Part B — Long Essay: 1 question, 40 minutes. Develop a historically defensible thesis, describe a broader historical context, and support your argument with specific and relevant examples. This part counts for 15 percent of the exam score. Total exam time: 3 hours 15 minutes.",
   "leq": {
    "id": "5s24-exam1-leq-03",
    "prompt": "Evaluate the extent to which late nineteenth century urbanization affected politics, immigration, and popular culture.",

@@ -453,6 +453,10 @@ def classify_json(path):
     p = os.path.relpath(path, REPO)
     if p in ("build/cb-codes.json", "build/coverage-matrix.json"):
         return "VALIDATOR"
+    if p == "build/image-download-report.json":
+        return "GENERATED"
+    if p.startswith("build/tagging/") or p.startswith("build/tagging-audit/"):
+        return "TAGGING-AUDIT"
     if any(seg in p for seg in ("/_raw/", "/drafts/", "/audit/",
                                 "/audit_stripped/", "/charts/")):
         return "RAW-STAGING"

@@ -85,8 +85,8 @@
  "skill_x_period": {
   "U1": {
    "Argumentation": 1,
-   "Claims & Evidence in Sources": 17,
-   "Contextualization": 19,
+   "Claims & Evidence in Sources": 18,
+   "Contextualization": 18,
    "Developments & Processes": 25,
    "Making Connections": 8,
    "Sourcing & Situation": 9
@@ -101,19 +101,19 @@
   },
   "U3": {
    "Argumentation": 0,
-   "Claims & Evidence in Sources": 11,
+   "Claims & Evidence in Sources": 12,
    "Contextualization": 7,
-   "Developments & Processes": 71,
+   "Developments & Processes": 72,
    "Making Connections": 14,
-   "Sourcing & Situation": 18
+   "Sourcing & Situation": 16
   },
   "U4": {
    "Argumentation": 2,
    "Claims & Evidence in Sources": 22,
    "Contextualization": 7,
-   "Developments & Processes": 77,
+   "Developments & Processes": 76,
    "Making Connections": 17,
-   "Sourcing & Situation": 19
+   "Sourcing & Situation": 20
   },
   "U5": {
    "Argumentation": 0,
@@ -125,39 +125,77 @@
   },
   "U6": {
    "Argumentation": 2,
-   "Claims & Evidence in Sources": 27,
+   "Claims & Evidence in Sources": 28,
    "Contextualization": 8,
    "Developments & Processes": 85,
    "Making Connections": 17,
-   "Sourcing & Situation": 22
+   "Sourcing & Situation": 21
   },
   "U7": {
    "Argumentation": 0,
-   "Claims & Evidence in Sources": 31,
+   "Claims & Evidence in Sources": 32,
    "Contextualization": 12,
    "Developments & Processes": 85,
    "Making Connections": 22,
-   "Sourcing & Situation": 20
+   "Sourcing & Situation": 19
   },
   "U8": {
    "Argumentation": 1,
-   "Claims & Evidence in Sources": 23,
+   "Claims & Evidence in Sources": 27,
    "Contextualization": 15,
-   "Developments & Processes": 82,
+   "Developments & Processes": 81,
    "Making Connections": 21,
-   "Sourcing & Situation": 18
+   "Sourcing & Situation": 15
   },
   "U9": {
    "Argumentation": 14,
    "Claims & Evidence in Sources": 23,
    "Contextualization": 42,
    "Developments & Processes": 73,
-   "Making Connections": 43,
-   "Sourcing & Situation": 14
+   "Making Connections": 44,
+   "Sourcing & Situation": 13
   }
  },
  "themes_per_period": {
-  "U6": [
+  "U5": [
+   "ARC",
+   "GEO",
+   "MIG",
+   "NAT",
+   "PCE",
+   "SOC",
+   "WOR",
+   "WXT"
+  ],
+  "U9": [
+   "GEO",
+   "MIG",
+   "NAT",
+   "PCE",
+   "SOC",
+   "WOR",
+   "WXT"
+  ],
+  "U7": [
+   "ARC",
+   "MIG",
+   "NAT",
+   "PCE",
+   "SOC",
+   "WOR",
+   "WXT"
+  ],
+  "U2": [
+   "ARC",
+   "GEO",
+   "MIG",
+   "NAT",
+   "PCE",
+   "SOC",
+   "WOR",
+   "WXT"
+  ],
+  "U1": [
    "ARC",
    "GEO",
    "MIG",
@@ -177,7 +215,7 @@
    "WOR",
    "WXT"
   ],
-  "U5": [
+  "U8": [
    "ARC",
    "GEO",
    "MIG",
@@ -197,47 +235,9 @@
    "WOR",
    "WXT"
   ],
-  "U2": [
+  "U6": [
    "ARC",
    "GEO",
-   "MIG",
-   "NAT",
-   "PCE",
-   "SOC",
-   "WOR",
-   "WXT"
-  ],
-  "U8": [
-   "ARC",
-   "GEO",
-   "MIG",
-   "NAT",
-   "PCE",
-   "SOC",
-   "WOR",
-   "WXT"
-  ],
-  "U9": [
-   "GEO",
-   "MIG",
-   "NAT",
-   "PCE",
-   "SOC",
-   "WOR",
-   "WXT"
-  ],
-  "U1": [
-   "ARC",
-   "GEO",
-   "MIG",
-   "NAT",
-   "PCE",
-   "SOC",
-   "WOR",
-   "WXT"
-  ],
-  "U7": [
-   "ARC",
    "MIG",
    "NAT",
    "PCE",
