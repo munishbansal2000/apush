@@ -65,10 +65,26 @@ VIDEOS = {
     ]),
 }
 
+def _load_manifests():
+    """Workers drop video/manifests/<name>.json; each is merged into VIDEOS.
+    This keeps parallel builders from ever editing this file."""
+    import glob as _glob
+    found = {}
+    for path in sorted(_glob.glob(os.path.join(HERE, "manifests", "*.json"))):
+        with open(path) as f:
+            m = json.load(f)
+        plan = [(s, ({"mp3": p["mp3"], "share": p["share"]} if isinstance(p, dict) else p))
+                for s, p in m["plan"]]
+        found[m["name"]] = (m["module"], m["stage_dir"], plan)
+        DEFAULT_OUT[m["name"]] = m["out"]
+    return found
+
+
 DEFAULT_OUT = {"video1": "dbq-graded-4of7.mp4", "video2": "dbq-7of7.mp4",
                "video3": "dbq-graded-2025.mp4",
                "video4": "leq-graded-2025.mp4",
                "video5": "saq-graded-2025.mp4"}
+VIDEOS.update(_load_manifests())
 
 
 def run(cmd):
