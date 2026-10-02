@@ -145,10 +145,24 @@ def slide_scene(pil_img, dur):
     return ImageClip(np.asarray(pil_img.convert("RGB"))).with_duration(dur)
 
 
-def kinetic_text(phrase, dur, sub=None, color=(233, 196, 106, 255)):
-    """Big phrase slamming in with a scale pop, over dark background."""
+def _bg_base(bg_img, darken=110):
+    """Cover-crop an image to W×H and darken it for text overlay."""
+    img = Image.open(bg_img).convert("RGB")
+    scale = max(W / img.width, H / img.height)
+    img = img.resize((int(img.width * scale) + 2, int(img.height * scale) + 2),
+                     Image.LANCZOS)
+    arr = np.asarray(img).astype(np.float32)
+    x0 = (arr.shape[1] - W) // 2
+    y0 = (arr.shape[0] - H) // 2
+    crop = arr[y0:y0 + H, x0:x0 + W]
+    return np.clip(crop - darken, 0, 255).astype(np.uint8)
+
+
+def kinetic_text(phrase, dur, sub=None, color=(233, 196, 106, 255), bg_img=None,
+                 darken=110):
+    """Big phrase slamming in with a scale pop, over an image or dark background."""
     from moviepy import VideoClip
-    bg = np.zeros((H, W, 3), dtype=np.uint8) + 18
+    bg = _bg_base(bg_img, darken) if bg_img else np.zeros((H, W, 3), dtype=np.uint8) + 18
     fnt = font(FB, 120)
     timg = text_rgba(phrase, fnt, fill=color, max_w=980)
     tw, th = timg.size
@@ -174,19 +188,22 @@ def kinetic_text(phrase, dur, sub=None, color=(233, 196, 106, 255)):
     return clip
 
 
-def timeline_scene(events, dur, title=""):
+def timeline_scene(events, dur, title="", bg_img=None, darken=150):
     """Horizontal timeline; event dots + labels pop in sequence.
 
     events: list of (label, caption). Dots appear evenly across dur.
     """
     from moviepy import VideoClip
-    img = Image.new("RGB", (W, H), (20, 22, 29))
-    d = ImageDraw.Draw(img)
+    bg0 = (_bg_base(bg_img, darken) if bg_img
+           else np.zeros((H, W, 3), dtype=np.uint8) + 20)
+    # bake title + rail into the base once
+    base_img = Image.fromarray(bg0)
+    d = ImageDraw.Draw(base_img)
     if title:
         d.text((80, 120), title, font=font(FB, 56), fill=(233, 196, 106))
     y0 = H // 2
     d.line([(100, y0), (W - 100, y0)], fill=(90, 95, 110), width=8)
-    base = np.asarray(img)
+    base = np.asarray(base_img)
     n = len(events)
     lf = font(FB, 40)
     cf = font(FR, 34)
@@ -231,36 +248,46 @@ def timeline_scene(events, dur, title=""):
 
 
 def cuba_map_scene(dur, caption=""):
-    """Original stylized map: Florida, Cuba, and the 90-mile gap. Route draws itself."""
+    """Real CIA World Factbook map of Cuba (public domain) with an animated
+    '90 miles to Florida' overlay across the Straits of Florida and a pulsing
+    marker over the western missile sites."""
     from moviepy import VideoClip
-    img = Image.new("RGB", (W, H), (16, 28, 44))
-    d = ImageDraw.Draw(img)
-    # stylized Florida peninsula (upper area)
-    d.polygon([(600, 620), (700, 640), (680, 1050), (590, 1030)], fill=(60, 90, 70))
-    d.text((470, 540), "FLORIDA", font=font(FB, 40), fill=(200, 210, 220))
-    # stylized Cuba (lower area)
-    cuba = [(150, 1300), (900, 1270), (930, 1380), (170, 1420)]
-    d.polygon(cuba, fill=(140, 60, 50))
-    d.text((400, 1470), "CUBA", font=font(FB, 48), fill=(255, 255, 255))
-    base = np.asarray(img)
+    import math
+    bg = Image.new("RGB", (W, H), (16, 28, 44))
+    cmap = Image.open(os.path.join(HERE, "assets/cuba/cuba_cia_map.png")).convert("RGB")
+    mw = 980
+    mh = int(cmap.height * (mw / cmap.width))
+    cmap = cmap.resize((mw, mh), Image.LANCZOS)
+    map_y = 620  # top edge of map band
     mf = font(FB, 44)
+    lf = font(FB, 36)
 
+    # straits line coords relative to map (top of map = Straits of Florida)
     def frame(t):
-        canvas = Image.fromarray(base.copy())
-        d2 = ImageDraw.Draw(canvas)
-        # draw the gap line growing
-        p = min(1, t / (dur * 0.6))
-        x1, y1, x2, y2 = 635, 1030, 615, 1270
-        xe, ye = x1 + (x2 - x1) * p, y1 + (y2 - y1) * p
-        d2.line([(x1, y1), (xe, ye)], fill=(233, 196, 106), width=10)
+        canvas = bg.copy()
+        canvas.paste(cmap, ((W - mw) // 2, map_y))
+        d = ImageDraw.Draw(canvas)
+        d.text((80, map_y - 220), "Cuba, October 1962", font=font(FB, 56),
+               fill=(240, 242, 246))
+        # animated dashed line across the straits (top ~12% of map)
+        p = min(1, t / (dur * 0.5))
+        x0, x1 = (W - mw) // 2 + 60, (W + mw) // 2 - 60
+        y = map_y + int(mh * 0.10)
+        xe = x0 + (x1 - x0) * p
+        # dashed
+        x = x0
+        while x < xe:
+            d.line([(x, y), (min(x + 24, xe), y)], fill=(233, 196, 106), width=8)
+            x += 40
         if p >= 1:
-            d2.text((680, 1120), "90 MILES", font=mf, fill=(233, 196, 106))
-            # pulsing missile dot on Cuba
-            import math
-            r = 26 + int(8 * math.sin(t * 6))
-            d2.ellipse([540 - r, 1340 - r, 540 + r, 1340 + r], fill=(255, 80, 60))
-            d2.text((400, 1560), "Soviet missiles here,", font=font(FR, 36), fill=(255, 255, 255))
-            d2.text((400, 1608), "1962", font=font(FR, 36), fill=(255, 255, 255))
+            d.text(((W) // 2, y - 90), "90 MILES TO FLORIDA", font=mf,
+                   fill=(233, 196, 106), anchor="ma")
+            # pulsing dot over western Cuba (~35% across, ~30% down)
+            r = 22 + int(7 * math.sin(t * 6))
+            cx, cy = (W - mw) // 2 + int(mw * 0.35), map_y + int(mh * 0.30)
+            d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=(255, 80, 60))
+            d.text(((W) // 2, map_y + mh + 60), "Soviet missile sites",
+                   font=lf, fill=(255, 255, 255), anchor="ma")
         return np.asarray(canvas)
 
     clip = VideoClip(frame, duration=dur)
@@ -314,9 +341,11 @@ def dur(path, pad=1.2):
     return float(r.stdout.strip()) + pad
 
 
-def bullet_slide(title, bullets, dur, footer=""):
-    """Vertically-centered title + bullets slide as a video clip."""
-    img = Image.new("RGB", (W, H), (20, 22, 29))
+def bullet_slide(title, bullets, dur, footer="", bg_img=None, darken=130):
+    """Title + bullets over an image (darkened) or flat background."""
+    img = Image.fromarray(
+        _bg_base(bg_img, darken) if bg_img
+        else np.zeros((H, W, 3), dtype=np.uint8) + 20)
     d = ImageDraw.Draw(img)
     tf = font(FB, 60)
     bf = font(FR, 50)
@@ -343,9 +372,11 @@ def bullet_slide(title, bullets, dur, footer=""):
     return slide_scene(img, dur)
 
 
-def title_card(text, dur, sub=None):
-    """Text-only title card on dark background."""
-    img = Image.new("RGB", (W, H), (16, 18, 24))
+def title_card(text, dur, sub=None, bg_img=None, darken=120):
+    """Text card over an image (darkened) or flat background."""
+    img = Image.fromarray(
+        _bg_base(bg_img, darken) if bg_img
+        else np.zeros((H, W, 3), dtype=np.uint8) + 16)
     d = ImageDraw.Draw(img)
     tf = font(FB, 72)
     lines = wrap_px(d, text, tf, W - 160)
@@ -358,6 +389,43 @@ def title_card(text, dur, sub=None):
     if sub:
         d.text((80, y + 40), sub, font=font(FR, 40), fill=(140, 146, 160))
     return slide_scene(img, dur)
+
+
+def typewriter_scene(text, dur, bg_img=None, darken=120, sub=None):
+    """Text types itself out character by character over an image.
+
+    Made for primary-source quotes: let the historical voice appear live.
+    """
+    from moviepy import VideoClip
+    bg0 = (_bg_base(bg_img, darken) if bg_img
+           else np.zeros((H, W, 3), dtype=np.uint8) + 18)
+    fnt = font(FR, 52)
+    # wrap first so chars map to laid-out lines
+    meas = ImageDraw.Draw(Image.new("RGB", (W, H)))
+    lines = wrap_px(meas, text, fnt, W - 160)
+    asc, desc = fnt.getmetrics()
+    lh = asc + desc + 18
+    y_start = (H - len(lines) * lh) // 2 - 60
+    flat = "".join(l + "\n" for l in lines)
+    total = len(flat)
+
+    def frame(t):
+        canvas = Image.fromarray(bg0.copy())
+        d = ImageDraw.Draw(canvas)
+        n = min(total, int(total * (t / (dur * 0.85))))
+        shown = flat[:n]
+        # blinking cursor
+        cur = "\u258c" if (t * 2) % 1 < 0.6 else ""
+        y = y_start
+        for line in (shown + cur).split("\n"):
+            d.text((80, y), line, font=fnt, fill=(240, 242, 246))
+            y += lh
+        return np.asarray(canvas)
+
+    clip = VideoClip(frame, duration=dur)
+    if sub:
+        clip = overlay_text(clip, sub, FR, 36, dur, y_pos=H - 320)
+    return clip
 
 
 def assemble(scenes, audios, out, fps=30):

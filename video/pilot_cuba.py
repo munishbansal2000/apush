@@ -28,14 +28,17 @@ SCRIPT = [
      "turned to the Soviet leader, Nikita Khrushchev. And Khrushchev had a plan: put Soviet "
      "nuclear missiles in Cuba, secretly, and change the balance of power overnight."),
 
-    ("beat1",
+    ("beat1a",
      "First, the discovery. On October 14, an American U-2 spy plane photographed Cuba "
      "from seventy thousand feet. Analysts saw it immediately: launch pads, missile trailers, "
      "Soviet medium-range missiles that could reach Washington in minutes. Kennedy was shown "
-     "the photos on October 16. A week later he told the nation, quote: It shall be the policy "
-     "of this nation to regard any nuclear missile launched from Cuba as an attack by the "
-     "Soviet Union on the United States. End quote. The point is this: the missiles were real, "
-     "they were nearly operational, and the public knew nothing. Kennedy had days to decide."),
+     "the photos on October 16."),
+
+    ("beat1b",
+     "A week later he told the nation, quote: It shall be the policy of this nation to regard "
+     "any nuclear missile launched from Cuba as an attack by the Soviet Union on the United "
+     "States. End quote. The point is this: the missiles were real, they were nearly operational, "
+     "and the public knew nothing. Kennedy had days to decide."),
 
     ("beat2",
      "Second, the choice. Kennedy's generals wanted an airstrike: bomb the sites before the "
@@ -95,23 +98,40 @@ def tts_all():
 
 def main():
     audios = tts_all()
+    assert len(audios) == 9, f"expected 9 narration clips, got {len(audios)}"
     scenes = []
+    # 1. hook — kinetic title over the quarantine fleet
     scenes.append(motion.kinetic_text("13 DAYS", motion.dur(audios[0]),
-                                     sub="October 1962"))
+                                     sub="October 1962",
+                                     bg_img=f"{AS}/quarantine.jpg"))
+    # 2. context — the map
     scenes.append(motion.cuba_map_scene(motion.dur(audios[1]),
                                         caption="Ninety miles off Florida"))
+    # 3. beat 1a — the U-2 photos
     scenes.append(motion.doc_zoom(f"{AS}/missile_site.gif", motion.dur(audios[2]),
                                   highlight_box=(0.25, 0.25, 0.75, 0.65),
                                   caption="U-2 photograph, October 14, 1962"))
+    # 4. beat 1b — Kennedy's words type themselves out
+    scenes.append(motion.typewriter_scene(
+        "\u201cIt shall be the policy of this nation to regard any nuclear "
+        "missile launched from Cuba as an attack by the Soviet Union on "
+        "the United States.\u201d",
+        motion.dur(audios[3]),
+        bg_img=f"{AS}/kennedy_address.jpg",
+        sub="Kennedy, address to the nation, October 22, 1962"))
+    # 5. beat 2 — the choice, over the missile photos
     scenes.append(motion.bullet_slide(
         "Kennedy's Choice",
         ["Airstrike: bomb the sites, risk the survivors firing back",
          "Quarantine: stop Soviet ships, leave room to negotiate"],
-        motion.dur(audios[3])))
+        motion.dur(audios[4]),
+        bg_img=f"{AS}/cuban_missiles.jpg"))
+    # 6. beat 3a — the address
     scenes.append(motion.caption_scene(f"{AS}/kennedy_address.jpg",
                                         "Kennedy addresses the nation, October 22, 1962",
-                                        motion.dur(audios[4]),
+                                        motion.dur(audios[5]),
                                         zoom=0.25, pan_x=0.5, pan_y=0.3))
+    # 7. beat 3b — the timeline, over the quarantine fleet
     scenes.append(motion.timeline_scene(
         [("Oct 14", "U-2 finds missiles"),
          ("Oct 16", "Kennedy briefed"),
@@ -119,15 +139,20 @@ def main():
          ("Oct 24", "Soviet ships turn back"),
          ("Oct 27", "U-2 shot down"),
          ("Oct 28", "Deal: missiles out")],
-        motion.dur(audios[5]), title="The 13 Days"))
+        motion.dur(audios[6]), title="The 13 Days",
+        bg_img=f"{AS}/quarantine.jpg", darken=165))
+    # 8. significance — the debate, over the missile site
     scenes.append(motion.bullet_slide(
         "What historians still argue about",
         ["Masterstroke of crisis management?",
          "Or survival on luck: one officer's refusal?"],
-        motion.dur(audios[6])))
+        motion.dur(audios[7]),
+        bg_img=f"{AS}/missile_site.gif"))
+    # 9. close — over the missiles
     scenes.append(motion.title_card("Containment, pushed to its limit.",
-                                    motion.dur(audios[7]),
-                                    sub="APUSH \u00b7 Period 8 \u00b7 Cold War"))
+                                    motion.dur(audios[8]),
+                                    sub="APUSH \u00b7 Period 8 \u00b7 Cold War",
+                                    bg_img=f"{AS}/cuban_missiles.jpg"))
     motion.assemble(scenes, audios,
                     "/home/hatch/workspace/your_files/cuba-showcase.mp4")
     print("done")
