@@ -4,7 +4,7 @@
 **Test:** test-02
 **Prompt:** "Between 1865 and 1869, President Andrew Johnson clashed with congressional Republicans over Reconstruction in the South. Evaluate the relative importance of the causes of this conflict."
 
-**Rubric reminders:** thesis must *rank* causes (relative importance), not just list them; sourcing on at least 2 docs; evidence from at least 3 docs (argument on at least 4); at least one specific beyond-docs fact (vetoes, 14th Amendment, Tenure of Office Act/impeachment all qualify).
+**Rubric reminders:** thesis must *rank* causes (relative importance), not just list them; sourcing on at least 2 docs; evidence from at least 3 docs (argument on at least 6); at least one specific beyond-docs fact (vetoes, 14th Amendment, Tenure of Office Act/impeachment all qualify).
 
 ## 1. Sourcing opportunities per document
 

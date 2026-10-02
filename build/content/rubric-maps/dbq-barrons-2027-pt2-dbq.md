@@ -4,7 +4,7 @@
 **Test:** test-07
 **Prompt:** "Americans debated and addressed immigration policy in the period 1754–1800 and again in the period 1875–1925. Evaluate the extent to which the ways they debated and addressed immigration changed between the two periods."
 
-**Rubric reminders:** thesis must judge the *extent of change* between the two periods (change-and-continuity reasoning); sourcing on at least 2 docs; evidence from at least 3 docs (argument on at least 4) with docs from *both* periods; at least one specific beyond-docs fact (Alien and Sedition Acts, Chinese Exclusion, or the 1920s quota laws all qualify).
+**Rubric reminders:** thesis must judge the *extent of change* between the two periods (change-and-continuity reasoning); sourcing on at least 2 docs; evidence from at least 3 docs (argument on at least 6) with docs from *both* periods; at least one specific beyond-docs fact (Alien and Sedition Acts, Chinese Exclusion, or the 1920s quota laws all qualify).
 
 ## 1. Sourcing opportunities per document
 

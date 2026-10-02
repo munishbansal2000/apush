@@ -4,7 +4,7 @@
 **Test:** test-06
 **Prompt:** "Analyze the effects of American foreign policy in Latin America during the period 1899–1917."
 
-**Rubric reminders:** thesis must make a claim about the *effects* (on Latin America, on the U.S., or both — pick a line of reasoning); sourcing on at least 2 docs; evidence from at least 3 docs (argument on at least 4); at least one specific beyond-docs fact. Note: Doc 4 is an original illustration in period style, produced for this item — cite it as an illustration of the argument, not as a period artifact.
+**Rubric reminders:** thesis must make a claim about the *effects* (on Latin America, on the U.S., or both — pick a line of reasoning); sourcing on at least 2 docs; evidence from at least 3 docs (argument on at least 6); at least one specific beyond-docs fact. Note: Doc 4 is an original illustration in period style, produced for this item — cite it as an illustration of the argument, not as a period artifact.
 
 ## 1. Sourcing opportunities per document
 

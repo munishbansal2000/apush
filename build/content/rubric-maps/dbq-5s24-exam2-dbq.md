@@ -4,7 +4,7 @@
 **Test:** test-10
 **Prompt:** "To what extent did the Supreme Court advance or inhibit Progressive regulation of corporations in the period 1885–1920?"
 
-**Rubric reminders:** thesis must weigh *advance vs. inhibit* (a one-sided answer is fine if defended, but the docs support both); sourcing on at least 2 docs; evidence from at least 3 docs (argument on at least 4); at least one specific beyond-docs fact. The docs run chronologically — a student can trace the doctrine's movement from 1895 to 1917.
+**Rubric reminders:** thesis must weigh *advance vs. inhibit* (a one-sided answer is fine if defended, but the docs support both); sourcing on at least 2 docs; evidence from at least 3 docs (argument on at least 6); at least one specific beyond-docs fact. The docs run chronologically — a student can trace the doctrine's movement from 1895 to 1917.
 
 ## 1. Sourcing opportunities per document
 

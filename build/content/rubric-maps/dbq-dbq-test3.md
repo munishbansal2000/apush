@@ -4,7 +4,7 @@
 **Test:** test-05
 **Prompt:** "Evaluate the extent to which slavery challenged American national unity in the period from 1844 to 1861."
 
-**Rubric reminders:** thesis must judge the *extent* of the challenge; sourcing on at least 2 docs; evidence from at least 3 docs (argument on at least 4); at least one specific beyond-docs fact. Note: Docs 4, 6, 7 are image descriptions — cite what they show accurately.
+**Rubric reminders:** thesis must judge the *extent* of the challenge; sourcing on at least 2 docs; evidence from at least 3 docs (argument on at least 6); at least one specific beyond-docs fact. Note: Docs 4, 6, 7 are image descriptions — cite what they show accurately.
 
 ## 1. Sourcing opportunities per document
 

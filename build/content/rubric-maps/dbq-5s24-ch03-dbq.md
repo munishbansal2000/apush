@@ -4,7 +4,7 @@
 **Test:** test-01
 **Prompt:** "To what extent did the Federalist administrations of George Washington and John Adams promote national unity and advance the authority of the federal government in the period 1789–1801?"
 
-**Rubric reminders:** thesis must take a position on the *extent* (unity and authority can pull in opposite directions); sourcing needed on at least 2 docs; evidence from at least 3 docs (argument supported by at least 4); at least one specific beyond-docs fact.
+**Rubric reminders:** thesis must take a position on the *extent* (unity and authority can pull in opposite directions); sourcing needed on at least 2 docs; evidence from at least 3 docs (argument supported by at least 6); at least one specific beyond-docs fact.
 
 ## 1. Sourcing opportunities per document
 

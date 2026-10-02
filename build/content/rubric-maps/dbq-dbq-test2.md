@@ -4,7 +4,7 @@
 **Test:** test-09
 **Prompt:** "Evaluate the extent to which the American state can be described as imperialist from 1890 to 1945."
 
-**Rubric reminders:** thesis must take a position on the *label* "imperialist" — full, partial, or qualified — and defend it across the period; sourcing on at least 2 docs; evidence from at least 3 docs (argument on at least 4); at least one specific beyond-docs fact. Doc 3 (1848) predates the prompt — usable for continuity/contrast, not as evidence of 1890–1945 policy.
+**Rubric reminders:** thesis must take a position on the *label* "imperialist" — full, partial, or qualified — and defend it across the period; sourcing on at least 2 docs; evidence from at least 3 docs (argument on at least 6); at least one specific beyond-docs fact. Doc 3 (1848) predates the prompt — usable for continuity/contrast, not as evidence of 1890–1945 policy.
 
 ## 1. Sourcing opportunities per document
 

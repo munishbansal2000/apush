@@ -4,7 +4,7 @@
 **Test:** test-03
 **Prompt:** "Evaluate the extent to which American participation in World War I fostered political, economic, and social change in the United States in the period from 1915 to 1935."
 
-**Rubric reminders:** thesis must judge the *extent* of change across political, economic, and social dimensions; sourcing on at least 2 docs; evidence from at least 3 docs (argument on at least 4); at least one specific beyond-docs fact. Note: Docs 2 and 6 are descriptive entries (the book reprinted titles/cartoons without excerpts) — cite them as described, accurately.
+**Rubric reminders:** thesis must judge the *extent* of change across political, economic, and social dimensions; sourcing on at least 2 docs; evidence from at least 3 docs (argument on at least 6); at least one specific beyond-docs fact. Note: Docs 2 and 6 are descriptive entries (the book reprinted titles/cartoons without excerpts) — cite them as described, accurately.
 
 ## 1. Sourcing opportunities per document
 

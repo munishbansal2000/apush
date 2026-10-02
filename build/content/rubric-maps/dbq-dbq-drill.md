@@ -4,7 +4,7 @@
 **Test:** test-04
 **Prompt:** "Evaluate the extent to which fears of communism affected American society from 1940 to 1959."
 
-**Rubric reminders:** thesis must judge the *extent* of the effect on *society* (not just government); sourcing on at least 2 docs; evidence from at least 3 docs (argument on at least 4); at least one specific beyond-docs fact. Note: several docs are paraphrases — cite the described argument accurately, and treat Doc 5 (1919) as context for the prompt's period, not evidence within it.
+**Rubric reminders:** thesis must judge the *extent* of the effect on *society* (not just government); sourcing on at least 2 docs; evidence from at least 3 docs (argument on at least 6); at least one specific beyond-docs fact. Note: several docs are paraphrases — cite the described argument accurately, and treat Doc 5 (1919) as context for the prompt's period, not evidence within it.
 
 ## 1. Sourcing opportunities per document
 

@@ -37,7 +37,7 @@ TIMELINES = {
         "tick": 20,
         "events": [
             (1491.0, "c. 1491", "Native societies flourish",
-             "Cahokia, the Mexica, and the Inca at their height"),
+             "Mexica and Inca empires at their height; Cahokia peaked c. 1100"),
             (1492.0, "1492", "Columbus reaches the Caribbean",
              "First voyage, funded by Ferdinand and Isabella"),
             (1494.0, "1494", "Treaty of Tordesillas",

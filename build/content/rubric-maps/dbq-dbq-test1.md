@@ -4,7 +4,7 @@
 **Test:** test-08
 **Prompt:** "Evaluate the extent to which the United States foreign policy changed between 1914 and 1917."
 
-**Rubric reminders:** thesis must judge the *extent* of change (continuity-and-change reasoning); sourcing on at least 2 docs; evidence from at least 3 docs (argument on at least 4); at least one specific beyond-docs fact. The docs run in chronological order — a student can trace the arc from Doc 1's neutrality to Doc 7's ultimatum.
+**Rubric reminders:** thesis must judge the *extent* of change (continuity-and-change reasoning); sourcing on at least 2 docs; evidence from at least 3 docs (argument on at least 6); at least one specific beyond-docs fact. The docs run in chronological order — a student can trace the arc from Doc 1's neutrality to Doc 7's ultimatum.
 
 ## 1. Sourcing opportunities per document
 
