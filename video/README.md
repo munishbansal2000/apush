@@ -34,9 +34,13 @@ re-run. Keep the plain-teacher-voice rules: no hype, no "not X but Y"
 constructions, adjectives stay factual. One MP3 per visual stage — never
 one long recording split across stages.
 
-## Adding a video
+## Adding a video (no shared-file edits)
 
 1. Write the narration as one `.txt` per stage in `scripts/videoN/`.
-2. Add stage functions to a new `render_vN.py` (reuse the engine in `render_markup.py`).
-3. Add the `(module, stage_dir, plan)` entry to `VIDEOS` in `build_video.py`.
-4. Commit the narration MP3s.
+2. Add stage functions in a new `render_vN.py` (reuse the engine in `render_markup.py`).
+3. Drop a manifest in `manifests/videoN.json`:
+   `{"name":"videoN","module":"render_vN","stage_dir":"markupN","out":"slug.mp4",
+     "plan":[["stage1","a.mp3"],["stage2","b.mp3"],["stage3",{"mp3":"c.mp3","share":2}]]}`
+   (`share` splits one MP3's duration across stages; otherwise one MP3 per stage.)
+4. Commit the narration MP3s in `audio/videoN/`.
+5. `build_video.py` picks the manifest up automatically — never edit `build_video.py` for a new video.
