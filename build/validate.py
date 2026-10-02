@@ -36,7 +36,8 @@ Gates:
                (report-only; the repo's stated bar is 0% strictly-longest)
   ORPHAN-JSON  every build/content JSON is classified: MCQ-BANK-STAGED /
                FRQ-BANK-STAGED / MCQ-BANK-FRESH / SAQ-BANK / TEST /
-               TEST-SUPPORT / RAW-STAGING / REFERENCE / REVIEW / VALIDATOR;
+               TEST-SUPPORT / RAW-STAGING / REFERENCE / REVIEW / VALIDATOR /
+               SUPPLEMENTAL (drill-excluded surplus, still in repo);
                anything else fails
   TEST-BANK-SEPARATION  two-stream design: ZERO overlap between test MCQ ids
                and bank ids (the opposite of ap_world's test-bank-link).
@@ -457,6 +458,8 @@ def classify_json(path):
         return "GENERATED"
     if p.startswith("build/tagging/") or p.startswith("build/tagging-audit/"):
         return "TAGGING-AUDIT"
+    if p.startswith("build/supplemental/"):
+        return "SUPPLEMENTAL"
     if any(seg in p for seg in ("/_raw/", "/drafts/", "/audit/",
                                 "/audit_stripped/", "/charts/")):
         return "RAW-STAGING"
@@ -478,6 +481,7 @@ def classify_json(path):
               "build/fresh-written/misc-gaps.json",
               "build/fresh-written/u1-gaps.json",
               "build/fresh-written/u3-gaps.json",
+              "build/fresh-written/u4-gaps.json",
               "build/fresh-written/u5-gaps.json",
               "build/fresh-written/u6-gaps.json",
               "build/fresh-written/u9-gaps.json"}

@@ -2,25 +2,25 @@
  "periods": {
   "U1": {
    "n": 52,
-   "share_pct": 6.6,
+   "share_pct": 8.0,
    "band": [
     4,
     6
    ],
-   "in_band": true
+   "in_band": false
   },
   "U2": {
    "n": 69,
-   "share_pct": 8.8,
+   "share_pct": 10.6,
    "band": [
     6,
     8
    ],
-   "in_band": true
+   "in_band": false
   },
   "U3": {
    "n": 71,
-   "share_pct": 9.0,
+   "share_pct": 10.9,
    "band": [
     10,
     17
@@ -29,7 +29,7 @@
   },
   "U4": {
    "n": 74,
-   "share_pct": 9.4,
+   "share_pct": 11.3,
    "band": [
     10,
     17
@@ -38,7 +38,7 @@
   },
   "U5": {
    "n": 71,
-   "share_pct": 9.0,
+   "share_pct": 10.9,
    "band": [
     10,
     17
@@ -47,7 +47,7 @@
   },
   "U6": {
    "n": 91,
-   "share_pct": 11.6,
+   "share_pct": 14.0,
    "band": [
     10,
     17
@@ -56,7 +56,7 @@
   },
   "U7": {
    "n": 90,
-   "share_pct": 11.4,
+   "share_pct": 13.8,
    "band": [
     10,
     17
@@ -65,7 +65,7 @@
   },
   "U8": {
    "n": 93,
-   "share_pct": 11.8,
+   "share_pct": 14.3,
    "band": [
     10,
     17
@@ -73,13 +73,13 @@
    "in_band": true
   },
   "U9": {
-   "n": 176,
-   "share_pct": 22.4,
+   "n": 41,
+   "share_pct": 6.3,
    "band": [
     4,
     6
    ],
-   "in_band": false
+   "in_band": true
   }
  },
  "skill_x_period": {
@@ -148,15 +148,25 @@
    "Sourcing & Situation": 7
   },
   "U9": {
-   "Argumentation": 14,
-   "Claims & Evidence in Sources": 21,
-   "Contextualization": 38,
-   "Developments & Processes": 54,
-   "Making Connections": 37,
-   "Sourcing & Situation": 12
+   "Argumentation": 1,
+   "Claims & Evidence in Sources": 3,
+   "Contextualization": 10,
+   "Developments & Processes": 12,
+   "Making Connections": 11,
+   "Sourcing & Situation": 4
   }
  },
  "themes_per_period": {
+  "U4": [
+   "ARC",
+   "GEO",
+   "MIG",
+   "NAT",
+   "PCE",
+   "SOC",
+   "WOR",
+   "WXT"
+  ],
   "U9": [
    "GEO",
    "MIG",
@@ -166,7 +176,47 @@
    "WOR",
    "WXT"
   ],
+  "U5": [
+   "ARC",
+   "GEO",
+   "MIG",
+   "NAT",
+   "PCE",
+   "SOC",
+   "WOR",
+   "WXT"
+  ],
+  "U6": [
+   "ARC",
+   "GEO",
+   "MIG",
+   "NAT",
+   "PCE",
+   "SOC",
+   "WOR",
+   "WXT"
+  ],
   "U3": [
+   "ARC",
+   "GEO",
+   "MIG",
+   "NAT",
+   "PCE",
+   "SOC",
+   "WOR",
+   "WXT"
+  ],
+  "U8": [
+   "ARC",
+   "GEO",
+   "MIG",
+   "NAT",
+   "PCE",
+   "SOC",
+   "WOR",
+   "WXT"
+  ],
+  "U2": [
    "ARC",
    "GEO",
    "MIG",
@@ -188,56 +238,6 @@
   ],
   "U7": [
    "ARC",
-   "MIG",
-   "NAT",
-   "PCE",
-   "SOC",
-   "WOR",
-   "WXT"
-  ],
-  "U2": [
-   "ARC",
-   "GEO",
-   "MIG",
-   "NAT",
-   "PCE",
-   "SOC",
-   "WOR",
-   "WXT"
-  ],
-  "U4": [
-   "ARC",
-   "GEO",
-   "MIG",
-   "NAT",
-   "PCE",
-   "SOC",
-   "WOR",
-   "WXT"
-  ],
-  "U6": [
-   "ARC",
-   "GEO",
-   "MIG",
-   "NAT",
-   "PCE",
-   "SOC",
-   "WOR",
-   "WXT"
-  ],
-  "U5": [
-   "ARC",
-   "GEO",
-   "MIG",
-   "NAT",
-   "PCE",
-   "SOC",
-   "WOR",
-   "WXT"
-  ],
-  "U8": [
-   "ARC",
-   "GEO",
    "MIG",
    "NAT",
    "PCE",
