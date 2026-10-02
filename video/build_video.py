@@ -43,9 +43,20 @@ VIDEOS = {
         ("w5", "v2_w5.mp3"), ("w6", "v2_w6.mp3"),
         ("w7a", "v2_w7a.mp3"), ("w7b", "v2_w7b.mp3"),
     ]),
+    "video3": ("render_v3", "markup3", [
+        ("d0", "d0.mp3"), ("d1", "d1.mp3"), ("d2", "d2.mp3"),
+        ("d3", "d3.mp3"), ("d4", "d4.mp3"), ("d5", "d5.mp3"),
+        ("d6", "d6.mp3"), ("d7", "d7.mp3"), ("d8", "d8.mp3"),
+    ]),
+    "video5": ("render_v5", "markup5", [
+        ("v5a", "v5a.mp3"), ("v5b", "v5b.mp3"), ("v5c", "v5c.mp3"),
+        ("v5d", "v5d.mp3"), ("v5e", "v5e.mp3"), ("v5f", "v5f.mp3"),
+    ]),
 }
 
-DEFAULT_OUT = {"video1": "dbq-graded-4of7.mp4", "video2": "dbq-7of7.mp4"}
+DEFAULT_OUT = {"video1": "dbq-graded-4of7.mp4", "video2": "dbq-7of7.mp4",
+               "video3": "dbq-graded-2025.mp4",
+               "video5": "saq-graded-2025.mp4"}
 
 
 def run(cmd):
