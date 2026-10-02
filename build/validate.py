@@ -477,6 +477,8 @@ def classify_json(path):
     fw_mcq = {"build/fresh-written/contextualization.json",
               "build/fresh-written/misc-gaps.json",
               "build/fresh-written/u1-gaps.json",
+              "build/fresh-written/u3-gaps.json",
+              "build/fresh-written/u5-gaps.json",
               "build/fresh-written/u6-gaps.json",
               "build/fresh-written/u9-gaps.json"}
     if p in fw_mcq:
