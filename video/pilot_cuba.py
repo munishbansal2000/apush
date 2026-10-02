@@ -34,11 +34,11 @@ SCRIPT = [
      "Soviet medium-range missiles that could reach Washington in minutes. Kennedy was shown "
      "the photos on October 16."),
 
-    ("beat1b",
-     "A week later he told the nation, quote: It shall be the policy of this nation to regard "
-     "any nuclear missile launched from Cuba as an attack by the Soviet Union on the United "
-     "States. End quote. The point is this: the missiles were real, they were nearly operational, "
-     "and the public knew nothing. Kennedy had days to decide."),
+    ("beat1b",  # multi-voice: see BEAT1B_PARTS (narrator -> Kennedy -> narrator)
+     "A week later he told the nation. Kennedy, in his own voice: It shall be the policy "
+     "of this nation to regard any nuclear missile launched from Cuba as an attack by the "
+     "Soviet Union on the United States. The point is this: the missiles were real, they were "
+     "nearly operational, and the public knew nothing. Kennedy had days to decide."),
 
     ("beat2",
      "Second, the choice. Kennedy's generals wanted an airstrike: bomb the sites before the "
@@ -78,6 +78,24 @@ SCRIPT = [
 AUDIO = "audio/cuba"
 TTS_BIN = "/opt/hatch/bin/tts"
 VOICE = "avocado_v2:MAI_01"
+VOICE_QUOTE = "avocado_v2:MAI_03"  # distinct voice for primary-source quotes
+
+# beat1b is multi-voice: narrator -> Kennedy (quote) -> narrator
+BEAT1B_PARTS = [
+    ("narrator", "A week later he told the nation:"),
+    ("kennedy", "It shall be the policy of this nation to regard any nuclear "
+                "missile launched from Cuba as an attack by the Soviet Union "
+                "on the United States."),
+    ("narrator", "The point is this: the missiles were real, they were nearly "
+                 "operational, and the public knew nothing. Kennedy had days to decide."),
+]
+
+
+def synth(text, out, voice=VOICE):
+    subprocess.run(
+        [TTS_BIN, "speak", "--voice", voice, "--speed", "92",
+         "--output", out, "--text", text],
+        check=True)
 
 
 def tts_all():
@@ -86,12 +104,24 @@ def tts_all():
     paths = []
     for key, text in SCRIPT:
         p = f"{AUDIO}/{key}.mp3"
-        if not os.path.exists(p):
+        if key == "beat1b":
+            # multi-voice assembly
+            if not os.path.exists(p):
+                print("tts: beat1b (multi-voice)", flush=True)
+                parts = []
+                for i, (who, pt) in enumerate(BEAT1B_PARTS):
+                    pp = f"{AUDIO}/beat1b_p{i}.mp3"
+                    synth(pt, pp, VOICE_QUOTE if who == "kennedy" else VOICE)
+                    parts.append(pp)
+                with open(f"{AUDIO}/beat1b_list.txt", "w") as f:
+                    f.write("".join(f"file '{pp}'\n" for pp in parts))
+                subprocess.run(
+                    ["ffmpeg", "-y", "-v", "error", "-f", "concat", "-safe", "0",
+                     "-i", f"{AUDIO}/beat1b_list.txt", "-c", "copy", p],
+                    check=True)
+        elif not os.path.exists(p):
             print("tts:", key, flush=True)
-            subprocess.run(
-                [TTS_BIN, "speak", "--voice", VOICE, "--speed", "92",
-                 "--output", p, "--text", text],
-                check=True)
+            synth(text, p)
         paths.append(p)
     return paths
 

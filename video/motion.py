@@ -597,6 +597,7 @@ def annotate(base_clip, notes):
       'label' — floating label at (x, y) in 0..1. kwargs: text, x, y
       'point' — big centered 'so what' statement. kwargs: text
       'arrow' — label with leader line to (x, y). kwargs: text, x, y, lx, ly
+      'pop'   — playful word slam for fun beats. kwargs: text
     Each note springs in, holds, fades out. Stack multiple per scene for pace.
     """
     from moviepy import VideoClip
@@ -636,6 +637,12 @@ def annotate(base_clip, notes):
             tile = text_rgba(kw["text"], font(FB, 38),
                              fill=(233, 196, 106, 255), max_w=520)
             return ("arrow", tile, kw)
+        if kind == "pop":
+            tile = text_rgba(kw["text"], font(FB, 110),
+                             fill=(233, 196, 106, 255), max_w=940)
+            # slight tilt for playfulness
+            tile = tile.rotate(-4, expand=True, resample=Image.BICUBIC)
+            return ("pop", tile)
         raise ValueError(f"unknown annotation kind: {kind}")
 
     baked = [(at, d, kind, render_note(kind, kw)) for at, d, kind, kw in notes]
@@ -666,6 +673,15 @@ def annotate(base_clip, notes):
                     fg.putalpha(fg.split()[3].point(lambda v: int(v * a)))
                 canvas.alpha_composite(fg, (lx - tw2 // 2, ly - tile.height - 20))
             else:
+                if kind == "pop":
+                    _, tile = payload
+                    s = ease_out_back(lt / 0.30)
+                    tw2, th2 = max(1, int(tile.width * s)), max(1, int(tile.height * s))
+                    fg = tile.resize((tw2, th2), Image.LANCZOS)
+                    if a < 1:
+                        fg.putalpha(fg.split()[3].point(lambda v: int(v * a)))
+                    canvas.alpha_composite(fg, ((W - tw2) // 2, (H - th2) // 2 - 120))
+                    continue
                 tile, bx, by = payload
                 tw2, th2 = max(1, int(tile.width * s)), max(1, int(tile.height * s))
                 fg = tile.resize((tw2, th2), Image.LANCZOS)
@@ -677,6 +693,55 @@ def annotate(base_clip, notes):
         return np.asarray(canvas.convert("RGB"))
 
     return VideoClip(frame, duration=dur)
+
+
+def ease_in_out_cubic(t):
+    t = min(1, max(0, t))
+    if t < 0.5:
+        return 4 * t ** 3
+    return 1 - (-2 * t + 2) ** 3 / 2
+
+
+def camera_path(img_path, dur, waypoints, caption=""):
+    """Waypoint camera through an image: zoom in, out, and pan between points.
+
+    waypoints: list of (cx, cy, zoom) in 0..1 coords. Time split evenly
+    across segments, eased in-out for smooth starts/stops. zoom < current
+    zooms OUT — so [(0.5,0.5,1.0), (0.6,0.4,2.5), (0.5,0.5,1.0)] punches
+    in on a detail, then pulls back wide.
+    """
+    from moviepy import VideoClip
+    img = Image.open(img_path).convert("RGB")
+    max_z = max(w[2] for w in waypoints)
+    scale = max(W / img.width, H / img.height) * max_z
+    img = img.resize((int(img.width * scale) + 2, int(img.height * scale) + 2),
+                     Image.LANCZOS)
+    big = np.asarray(img).astype(np.float32)
+    bw, bh = big.shape[1], big.shape[0]
+    n_seg = len(waypoints) - 1
+
+    def window(z, px, py):
+        cw, ch = W / z, H / z
+        x = min(max(px * bw - cw / 2, 0), bw - cw)
+        y = min(max(py * bh - ch / 2, 0), bh - ch)
+        return int(x), int(y), int(cw), int(ch)
+
+    def frame(t):
+        seg = min(n_seg - 1, int(t / dur * n_seg))
+        lt = (t / dur * n_seg) - seg
+        k = ease_in_out_cubic(lt)
+        (cx0, cy0, z0), (cx1, cy1, z1) = waypoints[seg], waypoints[seg + 1]
+        cx, cy, z = (cx0 + (cx1 - cx0) * k, cy0 + (cy1 - cy0) * k,
+                     z0 + (z1 - z0) * k)
+        x, y, cw, ch = window(z, cx, cy)
+        crop = big[y:y + ch, x:x + cw]
+        return np.asarray(
+            Image.fromarray(crop.astype(np.uint8)).resize((W, H), Image.LANCZOS))
+
+    clip = VideoClip(frame, duration=dur)
+    if caption:
+        clip = overlay_text(clip, caption, FR, 40, dur)
+    return clip
 
 
 def assemble(scenes, audios, out, fps=30):
