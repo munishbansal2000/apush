@@ -34,6 +34,20 @@ re-run. Keep the plain-teacher-voice rules: no hype, no "not X but Y"
 constructions, adjectives stay factual. One MP3 per visual stage — never
 one long recording split across stages.
 
+## Rendering app (for humans)
+
+`app.py` is a tiny local web app: pick a video, hit Render, watch progress,
+preview and download the MP4. Needs `pip install flask` (plus pillow and
+ffmpeg above).
+
+```
+python app.py
+# open http://localhost:5000
+```
+
+Rendered files go to `video/output/` (gitignored). Videos with missing
+narration MP3s show an audio warning and can't render until the audio lands.
+
 ## Adding a video (no shared-file edits)
 
 1. Write the narration as one `.txt` per stage in `scripts/videoN/`.
