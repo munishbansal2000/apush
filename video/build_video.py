@@ -52,10 +52,22 @@ VIDEOS = {
         ("v5a", "v5a.mp3"), ("v5b", "v5b.mp3"), ("v5c", "v5c.mp3"),
         ("v5d", "v5d.mp3"), ("v5e", "v5e.mp3"), ("v5f", "v5f.mp3"),
     ]),
+    "video4": ("render_v4", "markup4", [
+        ("v4_00a", "v4_00a.mp3"), ("v4_00b", "v4_00b.mp3"),
+        ("v4_01a", "v4_01a.mp3"), ("v4_01b", "v4_01b.mp3"),
+        ("v4_02a", "v4_02a.mp3"), ("v4_02b", "v4_02b.mp3"),
+        ("v4_03a", "v4_03a.mp3"), ("v4_03b", "v4_03b.mp3"),
+        ("v4_03c", "v4_03c.mp3"), ("v4_03d", "v4_03d.mp3"),
+        ("v4_04a", "v4_04a.mp3"), ("v4_04b", "v4_04b.mp3"),
+        ("v4_04c", "v4_04c.mp3"), ("v4_04d", "v4_04d.mp3"),
+        ("v4_05a", "v4_05a.mp3"), ("v4_05b", "v4_05b.mp3"),
+        ("v4_05c", "v4_05c.mp3"),
+    ]),
 }
 
 DEFAULT_OUT = {"video1": "dbq-graded-4of7.mp4", "video2": "dbq-7of7.mp4",
                "video3": "dbq-graded-2025.mp4",
+               "video4": "leq-graded-2025.mp4",
                "video5": "saq-graded-2025.mp4"}
 
 
