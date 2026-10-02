@@ -1,0 +1,21 @@
+# LEQ Exemplar — 5s24-exam2-leq-02 (test-06) — target score 4/6
+
+**Prompt:** Evaluate the extent to which differing ideas about the nature of government shaped the emergence of political parties in the 1780s and 1790s.
+**Period:** U3 · **Themes:** PCE, NAT · **Reasoning:** Causation
+**Score earned: 4/6** — Thesis 1 · Contextualization 1 · Evidence 1 · Analysis & Reasoning 1
+
+---
+
+## Essay
+
+After the American Revolution, the new nation had to decide what kind of government it would have. The Articles of Confederation had proven too weak to govern the country, so the Constitution was written in 1787 and ratified in 1788. But the debate over ratification showed that Americans did not agree about how strong the federal government should be, and that disagreement continued into the 1790s. Differing ideas about the nature of government played a major role in shaping the first political parties. Hamilton and the Federalists believed in a strong national government that would guide the economy, while Jefferson and the Democratic-Republicans believed the federal government should be limited and that power should stay with the states and the people. These competing ideas caused Americans to divide into two parties. [Thesis +1: historically defensible claim that answers the prompt and establishes a line of reasoning.] [Contextualization +1: connects the prompt to the broader context — the failed Articles, the Constitution, and the ongoing ratification-era disagreement about federal power.]
+
+One important example was Hamilton's financial program. As Secretary of the Treasury, Hamilton proposed the assumption of state debts, a national bank, and tariffs to support manufacturing. Jefferson opposed the bank because he believed in strict construction of the Constitution. Congress chartered the Bank of the United States in 1791. Another example was foreign policy. The Federalists supported Britain and the Jay Treaty of 1794, while the Democratic-Republicans supported France. The Alien and Sedition Acts of 1798 were passed by the Federalists, and Jefferson and Madison wrote the Virginia and Kentucky Resolutions in response. The election of 1800 resulted in Jefferson becoming president. [Evidence +1 (identification): names 2+ specific examples — the Bank debate, the Jay Treaty split, the Alien and Sedition Acts, the Virginia and Kentucky Resolutions.] [Evidence +0 (support): the examples are listed but never developed or tied back to the argument. The paragraph narrates what happened without explaining *how* these events show ideas about government producing parties — the Bank paragraph never connects strict construction to party-building, and the foreign-policy sentences never explain why the treaty split followed from the two visions of government.] [Analysis & Reasoning +1 (causation frame): the essay does use causation to structure its argument — "these competing ideas caused Americans to divide," and events are presented as consequences of the disagreement.]
+
+In conclusion, differing ideas about the nature of government shaped the emergence of political parties to a great extent. The Federalists and Democratic-Republicans disagreed about the power of the federal government, and this disagreement led to the formation of the first party system in the 1780s and 1790s. [Complexity 0: the essay never qualifies its claim, notes no contradiction, and weighs no competing cause — the conclusion simply restates the thesis. One sentence acknowledging that foreign crises accelerated the split, or that either party ever bent its own principles, would have opened the door to the point.]
+
+---
+
+## Why this is a 4, not a 6
+
+The bones are right: defensible thesis, real context, specific examples, causation language. It loses two points on craft, not knowledge. First, the evidence point for *support*: naming the Bank is not the same as *using* the Bank — each example needs one sentence tying it to the argument ("this shows ideas about government, not personalities, dividing the parties"). Second, complexity: the essay treats its own thesis as the whole story. Students at this level usually know the material; what they need is the habit of asking, after every paragraph, "so what does this prove about my claim?"
