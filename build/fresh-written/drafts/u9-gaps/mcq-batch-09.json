@@ -1,0 +1,388 @@
+{
+  "items": [
+    {
+      "id": "original-u9-c21-01",
+      "type": "mcq",
+      "stem": "On September 11, 2001, al-Qaeda terrorists killed nearly 3,000 people in attacks on New York and Washington, D.C. The attacks' most immediate historical significance was which of the following?",
+      "options": [
+        "(A) They launched the open-ended War on Terror that reshaped American foreign and domestic policy for decades.",
+        "(B) They ended all international terrorism permanently and completely, everywhere in the world, forever.",
+        "(C) They caused the United States to withdraw from world affairs.",
+        "(D) They had no significant effect on American government or society."
+      ],
+      "key": "A",
+      "explanation": "9/11 reordered everything, as the review puts it: Afghanistan, the Patriot Act, the Department of Homeland Security, and then Iraq. Like Pearl Harbor, the attacks converted a distant threat into the organizing principle of American statecraft — but unlike 1941, the enemy was a stateless network, making the war open-ended by design.",
+      "option_explanations": {
+        "A": "Correct. It names the actual consequence the review traces: a new war, new domestic security institutions, and a transformed foreign policy.",
+        "B": "Incorrect. Terrorism continued after 9/11, including attacks in Europe, the Middle East, and the United States itself.",
+        "C": "Incorrect. The attacks produced deeper American entanglement abroad — two major wars — not withdrawal.",
+        "D": "Incorrect. The review describes 9/11 as reordering everything; few events of the era had larger effects."
+      },
+      "period": "U9",
+      "skill": "Contextualization",
+      "reasoning": "Causation",
+      "themes": [
+        "WOR",
+        "PCE"
+      ],
+      "difficulty": "medium",
+      "fact_source": "u9.md §The story — 'September 11, 2001, reordered everything. The attacks killed nearly 3,000 people and launched the War on Terror'; §Key terms — September 11 attacks (2001)",
+      "stream": "drill"
+    },
+    {
+      "id": "original-u9-c21-02",
+      "type": "mcq",
+      "stem": "Which statement best captures the debate over the Patriot Act of 2001?",
+      "options": [
+        "(A) Every American agreed the act was unconstitutional, so Congress repealed it within a single year of passage.",
+        "(B) Supporters called the new powers necessary to stop another 9/11; critics warned they dangerously eroded civil liberties.",
+        "(C) The act abolished all federal surveillance programs entirely.",
+        "(D) The act applied only to foreign countries and had no domestic provisions."
+      ],
+      "key": "B",
+      "explanation": "The Patriot Act debate replayed a permanent American argument: in crisis, the government claims extraordinary powers as necessary; civil libertarians warn that emergency powers become permanent. The review frames this as the latest round of a pattern running through the Espionage Act, internment, and McCarthyism.",
+      "option_explanations": {
+        "A": "Incorrect. The act was controversial but remained law for years, reauthorized and debated rather than swiftly repealed by consensus.",
+        "B": "Correct. It states both sides' actual positions and places the dispute in the long security-versus-liberty pattern the review asks students to trace.",
+        "C": "Incorrect. The act expanded surveillance — wiretaps, records searches, detention powers — rather than abolishing it.",
+        "D": "Incorrect. The act's most controversial provisions governed surveillance inside the United States."
+      },
+      "period": "U9",
+      "skill": "Claims & Evidence in Sources",
+      "reasoning": "Causation",
+      "themes": [
+        "PCE",
+        "NAT"
+      ],
+      "difficulty": "medium",
+      "fact_source": "u9.md §Key terms — Patriot Act (2001): 'the law expanding federal surveillance and detention powers after 9/11'; §What the exam tests here — compare with earlier wartime expansions of federal power",
+      "stream": "drill"
+    },
+    {
+      "id": "original-u9-c21-03",
+      "type": "mcq",
+      "stem": "The chart shows U.S. military spending rising from $294 billion in 2000 to $721 billion in 2010. Which sequence of events drove this increase?",
+      "stimulus": {
+        "kind": "chart",
+        "chart_spec": {
+          "type": "line",
+          "title": "U.S. Military Spending, 1980–2010 (nominal)",
+          "x_label": "Year",
+          "y_label": "Billions of dollars",
+          "labels": [
+            "1980",
+            "1990",
+            "2000",
+            "2005",
+            "2010"
+          ],
+          "values": [
+            134,
+            299,
+            294,
+            495,
+            721
+          ],
+          "source_note": "Approximate figures; the Reagan buildup and the War on Terror's 'long, costly occupation' described in u9.md §The story."
+        }
+      },
+      "options": [
+        "(A) The invasion of Iraq in 2001, followed by the invasion of Afghanistan in 2003, reversing the actual historical order.",
+        "(B) A decade with no American wars or military deployments at all.",
+        "(C) Afghanistan in 2001, then Iraq in 2003 — the War on Terror's two major ground wars.",
+        "(D) The Cold War arms race, which continued unchanged after 1991."
+      ],
+      "key": "C",
+      "explanation": "The chart's post-2000 surge — spending more than doubling by 2010 — tracks the two wars: Afghanistan, invaded weeks after 9/11 to destroy al-Qaeda's haven, and Iraq, invaded in 2003. The 'long, costly occupation' of Iraq especially drove the sustained high spending.",
+      "option_explanations": {
+        "A": "Incorrect. This reverses the order: Afghanistan came first (2001), Iraq second (2003).",
+        "B": "Incorrect. The chart's steep rise reflects exactly the opposite: two simultaneous major wars.",
+        "C": "Correct. It gives the accurate sequence and connects it to the spending surge the chart documents.",
+        "D": "Incorrect. The Cold War ended in 1991; the post-2000 increase came from the War on Terror, not from a continuing Soviet arms race."
+      },
+      "period": "U9",
+      "skill": "Developments & Processes",
+      "reasoning": "Causation",
+      "themes": [
+        "WOR",
+        "PCE"
+      ],
+      "difficulty": "medium",
+      "fact_source": "u9.md §The story — 'The attacks killed nearly 3,000 people and launched the War on Terror: Afghanistan (2001)... and in 2003 the invasion of Iraq'; §Key terms — War on Terror",
+      "stream": "drill"
+    },
+    {
+      "id": "original-u9-c21-04",
+      "type": "mcq",
+      "stem": "The 2003 invasion of Iraq was justified by claims about weapons of mass destruction that proved false. What was the chief political consequence of that failure?",
+      "options": [
+        "(A) The American public rallied permanently behind preventive war as a lasting national doctrine for decades.",
+        "(B) Iraq's occupation ended within weeks with no American casualties.",
+        "(C) The United Nations praised the invasion as a model intervention.",
+        "(D) It discredited the neoconservative vision and split the country over the long, costly occupation."
+      ],
+      "key": "D",
+      "explanation": "The missing WMDs destroyed the war's stated rationale, and the grinding occupation that followed — years of insurgency, thousands of American dead, and enormous expense — turned the public against the intervention. The review's verdict is direct: the occupation 'split the country and discredited the neoconservative vision.'",
+      "option_explanations": {
+        "A": "Incorrect. Support for preventive war collapsed as the occupation dragged on; the doctrine lost credibility rather than gaining permanent backing.",
+        "B": "Incorrect. The occupation lasted years, cost trillions, and killed thousands of Americans and far more Iraqis.",
+        "C": "Incorrect. The invasion lacked UN authorization and was widely condemned internationally.",
+        "D": "Correct. It restates the review's own conclusion: false premises plus a costly occupation equaled a discredited doctrine and a divided nation."
+      },
+      "period": "U9",
+      "skill": "Argumentation",
+      "reasoning": "Causation",
+      "themes": [
+        "WOR",
+        "PCE"
+      ],
+      "difficulty": "hard",
+      "fact_source": "u9.md §The story — 'the invasion of Iraq on claims about weapons of mass destruction that proved false. Iraq's long, costly occupation split the country and discredited the neoconservative vision'",
+      "stream": "drill"
+    },
+    {
+      "id": "original-u9-c21-05",
+      "type": "mcq",
+      "stem": "The Bush administration's doctrine of preemption held which of the following?",
+      "options": [
+        "(A) That the United States should never use military force under any circumstances.",
+        "(B) That the U.S. could strike threats before they materialized — a break from deterrence and containment.",
+        "(C) That only the United Nations could authorize any use of force.",
+        "(D) That American foreign policy should return to nineteenth-century isolationism and avoid all foreign alliances."
+      ],
+      "key": "B",
+      "explanation": "Deterrence threatened retaliation after an attack; containment ringed adversaries to prevent expansion. Preemption claimed the right to hit first against gathering dangers — the doctrine behind the Iraq invasion, and a sharp departure from the Cold War's more reactive strategies.",
+      "option_explanations": {
+        "A": "Incorrect. Preemption was a doctrine for using force earlier and more readily, not for renouncing it.",
+        "B": "Correct. It states the doctrine's content and its novelty: striking before threats mature, rather than deterring or containing them.",
+        "C": "Incorrect. The Bush administration asserted an American right to act without UN authorization, as it did in Iraq.",
+        "D": "Incorrect. Preemption meant more intervention, not less; isolationism was its opposite."
+      },
+      "period": "U9",
+      "skill": "Contextualization",
+      "reasoning": "Causation",
+      "themes": [
+        "WOR"
+      ],
+      "difficulty": "medium",
+      "fact_source": "u9.md §The story — 'the invasion of Iraq on claims about weapons of mass destruction'; the War on Terror as preventive action",
+      "stream": "drill"
+    },
+    {
+      "id": "original-u9-c21-06",
+      "type": "mcq",
+      "stem": "The review asks students to compare 9/11's aftermath with earlier wartime expansions of federal power. Which comparison is most valid?",
+      "options": [
+        "(A) The Patriot Act was the first expansion of federal power in American history.",
+        "(B) Earlier wartime expansions of federal power never affected civil liberties in any way whatsoever, unlike the Patriot Act at all.",
+        "(C) Like the Espionage Act, wartime internment, and McCarthyism, the Patriot Act expanded federal power at liberty's expense in crisis.",
+        "(D) The Patriot Act reduced federal power to its smallest size since 1900."
+      ],
+      "key": "C",
+      "explanation": "The pattern is one of American history's most tested: war and fear expand the state's reach — jailing dissenters in 1917–18, interning Japanese Americans in 1942, hunting alleged communists in the 1950s — and each expansion is later judged, narrowed, or apologized for. The Patriot Act belongs in that sequence, which is why the review keeps assigning the comparison.",
+      "option_explanations": {
+        "A": "Incorrect. Federal power expanded in many earlier crises; the Patriot Act was a new chapter, not the first.",
+        "B": "Incorrect. Earlier expansions damaged civil liberties severely — internment is the starkest example — so the contrast fails.",
+        "C": "Correct. It names three genuine precedents and the shared structure: crisis, expansion, and eventual reckoning.",
+        "D": "Incorrect. The act expanded surveillance and detention powers; it did not shrink the federal government."
+      },
+      "period": "U9",
+      "skill": "Making Connections",
+      "reasoning": "Comparison",
+      "themes": [
+        "PCE",
+        "NAT"
+      ],
+      "difficulty": "hard",
+      "fact_source": "u9.md §What the exam tests here — 'Compare 9/11's aftermath with earlier wartime expansions of federal power'; §Key terms — Patriot Act (2001)",
+      "stream": "drill"
+    },
+    {
+      "id": "original-u9-c21-07",
+      "type": "mcq",
+      "stem": "The Department of Homeland Security, created after the September 11 attacks, represented which of the following?",
+      "options": [
+        "(A) The abolition of all existing federal security agencies.",
+        "(B) A purely symbolic gesture with no real agencies or employees.",
+        "(C) A temporary office that closed within a single year of its creation, leaving no lasting trace behind it.",
+        "(D) The largest federal reorganization in decades, consolidating many agencies around domestic security after 9/11."
+      ],
+      "key": "D",
+      "explanation": "Homeland Security merged 22 agencies — the Coast Guard, the Border Patrol, customs, immigration enforcement, FEMA, the Secret Service, and others — into a single department. It was the biggest federal reorganization since the Defense Department's creation, and it made domestic security a permanent cabinet-level mission.",
+      "option_explanations": {
+        "A": "Incorrect. The agencies were consolidated, not abolished; they continued operating inside the new department.",
+        "B": "Incorrect. The department employed well over 100,000 people; it was among the largest federal agencies, not a symbol.",
+        "C": "Incorrect. The department was permanent and still operates decades later.",
+        "D": "Correct. It describes the reorganization's scale and logic: merging disparate agencies into one domestic-security structure."
+      },
+      "period": "U9",
+      "skill": "Developments & Processes",
+      "reasoning": "Causation",
+      "themes": [
+        "PCE"
+      ],
+      "difficulty": "medium",
+      "fact_source": "u9.md §The story — 'the Patriot Act's expansion of surveillance, a new Department of Homeland Security'",
+      "stream": "drill"
+    },
+    {
+      "id": "original-u9-c21-08",
+      "type": "mcq",
+      "stem": "The chart shows U.S. home prices nearly doubling between 2000 and 2006, then collapsing. Which combination of causes best explains the financial crisis that followed the pattern shown?",
+      "stimulus": {
+        "kind": "chart",
+        "chart_spec": {
+          "type": "line",
+          "title": "U.S. Home Price Index, 2000–2012 (2000 = 100)",
+          "x_label": "Year",
+          "y_label": "Index (2000 = 100)",
+          "labels": [
+            "2000",
+            "2003",
+            "2006",
+            "2009",
+            "2012"
+          ],
+          "values": [
+            100,
+            130,
+            184,
+            134,
+            140
+          ],
+          "source_note": "Approximate figures; the housing bubble and its collapse described in u9.md §The story ('the housing bubble's collapse in 2008 produced the worst financial crisis since the Depression')."
+        }
+      },
+      "options": [
+        "(A) A housing bubble: risky mortgages, deregulation-enabled leverage, and financial engineering spreading the risk.",
+        "(B) A sudden and completely motiveless decision by every American to stop buying houses at exactly the same moment.",
+        "(C) The federal government banning all mortgage lending in 2007.",
+        "(D) A foreign invasion that destroyed the American banking system."
+      ],
+      "key": "A",
+      "explanation": "The chart's 2000–2006 climb was the bubble: easy credit and speculative buying drove prices up 84 percent. When prices fell, the damage spread because deregulation had let banks lever up enormously and financial engineering had stuffed mortgage risk into securities held worldwide — the review's three causes: 'the housing bubble, deregulation, and financial engineering.'",
+      "option_explanations": {
+        "A": "Correct. It names the review's three causes and connects each to the chart: the bubble (the climb), the leverage (deregulation), and the contagion (engineered securities).",
+        "B": "Incorrect. The collapse had specific, well-documented causes in credit markets; it was not a motiveless collective whim.",
+        "C": "Incorrect. No such ban occurred; the crisis came from too much risky lending, not from lending being outlawed.",
+        "D": "Incorrect. The crisis was financial and domestic in origin; no invasion occurred."
+      },
+      "period": "U9",
+      "skill": "Developments & Processes",
+      "reasoning": "Causation",
+      "themes": [
+        "WXT",
+        "PCE"
+      ],
+      "difficulty": "hard",
+      "fact_source": "u9.md §The story — 'the housing bubble's collapse in 2008 produced the worst financial crisis since the Depression'; causes: 'the housing bubble, deregulation, and financial engineering'; §Key terms — Great Recession (2007–2009)",
+      "stream": "drill"
+    },
+    {
+      "id": "original-u9-c21-09",
+      "type": "mcq",
+      "stem": "The chart shows home prices falling from 184 in 2006 to 134 in 2009, wiping out trillions in housing wealth and crippling the mortgage-backed securities built on those homes. The government's bank bailouts (TARP) that followed 'saved the system and fed a populist fury on both left and right.' Why did the bailouts anger the public?",
+      "stimulus": {
+        "kind": "chart",
+        "chart_spec": {
+          "type": "line",
+          "title": "U.S. Home Price Index, 2000–2012 (2000 = 100)",
+          "x_label": "Year",
+          "y_label": "Index (2000 = 100)",
+          "labels": [
+            "2000",
+            "2003",
+            "2006",
+            "2009",
+            "2012"
+          ],
+          "values": [
+            100,
+            130,
+            184,
+            134,
+            140
+          ],
+          "source_note": "Approximate figures; the housing collapse behind the 2008 crisis in u9.md §The story."
+        }
+      },
+      "options": [
+        "(A) The bailouts gave no money to anyone at all, and the entire financial system collapsed completely and irreversibly.",
+        "(B) The public was angry because the bailouts were too small for anyone to notice.",
+        "(C) Taxpayers rescued reckless firms; foreclosed homeowners got far less. Failure looked rewarded.",
+        "(D) The bailouts were popular with everyone and no one objected to them."
+      ],
+      "key": "C",
+      "explanation": "The chart shows whose wealth vanished: homeowners'. Yet rescue money flowed to the banks. That asymmetry — Wall Street saved, Main Street foreclosed — is what made TARP politically toxic, fueling the Tea Party on the right and Occupy on the left, two populist revolts with opposite ideologies and a shared enemy.",
+      "option_explanations": {
+        "A": "Incorrect. The bailouts did stabilize the financial system — the review says they 'saved the system' — which is precisely why their unpopularity needs the explanation in the key.",
+        "B": "Incorrect. TARP committed hundreds of billions of dollars; its scale, not its smallness, was the issue.",
+        "C": "Correct. It identifies the fairness grievance: socialized losses for the reckless, limited relief for their victims.",
+        "D": "Incorrect. The review states the bailouts 'fed a populist fury on both left and right' — they were intensely unpopular."
+      },
+      "period": "U9",
+      "skill": "Making Connections",
+      "reasoning": "Causation",
+      "themes": [
+        "PCE",
+        "WXT"
+      ],
+      "difficulty": "medium",
+      "fact_source": "u9.md §The story — 'the government's bank bailouts (TARP) saved the system and fed a populist fury on both left and right'",
+      "stream": "drill"
+    },
+    {
+      "id": "original-u9-c21-10",
+      "type": "mcq",
+      "stem": "The chart shows U.S. home prices collapsing after 2006 — the trigger of the Great Recession. Comparing the Great Recession (2007–2009) with the Great Depression (1929–), which statement is most accurate?",
+      "stimulus": {
+        "kind": "chart",
+        "chart_spec": {
+          "type": "line",
+          "title": "U.S. Home Price Index, 2000–2012 (2000 = 100)",
+          "x_label": "Year",
+          "y_label": "Index (2000 = 100)",
+          "labels": [
+            "2000",
+            "2003",
+            "2006",
+            "2009",
+            "2012"
+          ],
+          "values": [
+            100,
+            130,
+            184,
+            134,
+            140
+          ],
+          "source_note": "Approximate figures; the housing bubble's collapse described in u9.md §The story ('the worst financial crisis since the Depression')."
+        }
+      },
+      "options": [
+        "(A) The two crises had nothing in common and cannot be compared.",
+        "(B) The Great Recession was far worse than the Great Depression by every measure.",
+        "(C) The federal government responded to both crises with exactly the same policies, on exactly the same timetable, with identical results.",
+        "(D) Both started with financial collapse, but 2008's intervention was massive and fast; the early 1930s saw limited, late action."
+      ],
+      "key": "D",
+      "explanation": "The review invites exactly this comparison: the 2008 collapse was 'the worst financial crisis since the Depression,' and policymakers in 2008 acted as students of the 1930s — injecting capital, guaranteeing money markets, and cutting interest rates to zero rather than repeating the passivity that deepened the Depression. The crisis was contained faster, though the recovery was still slow and painful.",
+      "option_explanations": {
+        "A": "Incorrect. The review itself frames 2008 as 'the worst financial crisis since the Depression,' inviting the comparison; the shared mechanism is financial collapse.",
+        "B": "Incorrect. The Depression was far worse: a quarter of the workforce unemployed and a decade-long slump, versus a severe but shorter 2008 recession.",
+        "C": "Incorrect. The responses differed sharply: massive immediate intervention in 2008 versus the limited, late federal action of 1930–32.",
+        "D": "Correct. It states both the shared trigger (financial collapse, with the chart showing 2008's housing trigger) and the key difference (rapid large-scale intervention informed by the 1930s)."
+      },
+      "period": "U9",
+      "skill": "Making Connections",
+      "reasoning": "Comparison",
+      "themes": [
+        "PCE",
+        "WXT"
+      ],
+      "difficulty": "hard",
+      "fact_source": "u9.md §The story — 'the worst financial crisis since the Depression'; 'the government's bank bailouts (TARP) saved the system'; §What the exam tests here — 'compare both the causes and the federal response with the Great Depression'",
+      "stream": "drill"
+    }
+  ]
+}

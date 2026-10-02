@@ -1,0 +1,314 @@
+{
+ "items": [
+  {
+   "id": "original-u9-immig-01",
+   "type": "mcq",
+   "stem": "The chart shows the foreign-born share of the U.S. population from 1970 to 2020. Which statement best describes the trend?",
+   "stimulus": {
+    "kind": "chart",
+    "chart_spec": {
+     "type": "line",
+     "title": "Foreign-Born Share of U.S. Population, 1970\u20132020",
+     "x_label": "Year",
+     "y_label": "Percent foreign-born",
+     "labels": [
+      "1970",
+      "1980",
+      "1990",
+      "2000",
+      "2010",
+      "2020"
+     ],
+     "values": [
+      4.7,
+      6.2,
+      7.9,
+      11.1,
+      12.9,
+      13.7
+     ],
+     "source_note": "Approximate census-based figures; the demographic change 'especially around immigration' described in u9.md \u00a7The story."
+    }
+   },
+   "options": [
+    "(A) The foreign-born share of the U.S. population nearly tripled between 1970 and 2020, rising from 4.7 to 13.7 percent.",
+    "(B) The foreign-born share fell steadily after 1970.",
+    "(C) The foreign-born share stayed flat at about 5 percent across the entire period from 1970 to 2020.",
+    "(D) Immigration had no measurable effect on the composition of the U.S. population."
+   ],
+   "period": "U9",
+   "skill": "Claims & Evidence in Sources",
+   "reasoning": "Continuity & Change",
+   "themes": [
+    "MIG",
+    "NAT"
+   ],
+   "difficulty": "medium",
+   "fact_source": "u9.md \u00a7The story \u2014 'demographic change \u2014 the coming \"majority-minority\" nation \u2014 reshaped politics, especially around immigration'",
+   "stream": "drill"
+  },
+  {
+   "id": "original-u9-immig-02",
+   "type": "mcq",
+   "stem": "The chart shows legal U.S. immigration rising in every decade after the 1960s. The 1965 immigration law that replaced the 1920s quota system produced this decades-long 'long tail' mainly through which mechanism?",
+   "stimulus": {
+    "kind": "chart",
+    "chart_spec": {
+     "type": "bar",
+     "title": "Legal U.S. Immigration by Decade, 1960s\u20132000s",
+     "x_label": "Decade",
+     "y_label": "Millions of legal immigrants",
+     "labels": [
+      "1960s",
+      "1970s",
+      "1980s",
+      "1990s",
+      "2000s"
+     ],
+     "values": [
+      3.3,
+      4.5,
+      6.0,
+      9.8,
+      10.4
+     ],
+     "source_note": "Approximate figures; the post-1965 growth in immigration underlying the demographic change described in u9.md \u00a7The story ('especially around immigration')."
+    }
+   },
+   "options": [
+    "(A) The law abolished all numerical limits on immigration permanently.",
+    "(B) Family-reunification preferences created chain migration, compounding immigrant numbers over decades.",
+    "(C) The law required every native-born American family to sponsor exactly one immigrant.",
+    "(D) The growth came entirely from a special provision admitting only European refugees and absolutely no one else."
+   ],
+   "period": "U9",
+   "skill": "Developments & Processes",
+   "reasoning": "Causation",
+   "themes": [
+    "MIG",
+    "NAT",
+    "PCE"
+   ],
+   "difficulty": "medium",
+   "fact_source": "u9.md \u00a7The story \u2014 'demographic change \u2014 the coming \"majority-minority\" nation \u2014 reshaped politics, especially around immigration' (1965 law's long-tail consequence)",
+   "stream": "drill"
+  },
+  {
+   "id": "original-u9-c21-21",
+   "type": "mcq",
+   "stem": "The chart shows the federal budget moving from a $290 billion deficit in 1992 to a $236 billion surplus in 2000. Bill Clinton, a Democrat, declared 'the era of big government is over' and signed welfare reform in 1996. What does his triangulation show about the era's political climate?",
+   "stimulus": {
+    "kind": "chart",
+    "chart_spec": {
+     "type": "line",
+     "title": "Federal Budget Deficit (+) / Surplus (\u2212), 1980\u20132000",
+     "x_label": "Year",
+     "y_label": "Billions of dollars (negative = surplus)",
+     "labels": [
+      "1980",
+      "1983",
+      "1986",
+      "1989",
+      "1992",
+      "1998",
+      "2000"
+     ],
+     "values": [
+      74,
+      208,
+      221,
+      153,
+      290,
+      -69,
+      -236
+     ],
+     "source_note": "Approximate figures; Clinton-era surpluses per u9.md \u00a7The story (Clinton 'presided over budget surpluses')."
+    }
+   },
+   "options": [
+    "(A) That Democrats had become the party of far larger government than at any point before in American history.",
+    "(B) That Reagan's presidency had no lasting political effects.",
+    "(C) Limited-government ideas so dominated the era that even a Democratic president governed on their premises in the 1990s.",
+    "(D) That welfare reform was opposed by every Republican in Congress."
+   ],
+   "period": "U9",
+   "skill": "Contextualization",
+   "reasoning": "Causation",
+   "themes": [
+    "PCE"
+   ],
+   "difficulty": "medium",
+   "fact_source": "u9.md \u00a7The story \u2014 Clinton 'triangulated: a Democrat who declared \"the era of big government is over,\" signed welfare reform (1996), and presided over budget surpluses'",
+   "stream": "drill"
+  },
+  {
+   "id": "original-u9-c21-22",
+   "type": "mcq",
+   "stem": "The chart shows home prices collapsing after 2006. The bank bailouts (TARP) that followed 'fed a populist fury on both left and right.' What did the left-wing fury (Occupy Wall Street) and the right-wing fury (the Tea Party) share?",
+   "stimulus": {
+    "kind": "chart",
+    "chart_spec": {
+     "type": "line",
+     "title": "U.S. Home Price Index, 2000\u20132012 (2000 = 100)",
+     "x_label": "Year",
+     "y_label": "Index (2000 = 100)",
+     "labels": [
+      "2000",
+      "2003",
+      "2006",
+      "2009",
+      "2012"
+     ],
+     "values": [
+      100,
+      130,
+      184,
+      134,
+      140
+     ],
+     "source_note": "Approximate figures; the housing collapse behind the bailouts and populist backlash in u9.md \u00a7The story."
+    }
+   },
+   "options": [
+    "(A) Both movements demanded even larger bank bailouts.",
+    "(B) Both movements were primarily about foreign policy.",
+    "(C) Both movements agreed completely on identical tax policies, spending plans, and legislative priorities for the nation.",
+    "(D) A conviction that elites \u2014 bankers and Washington \u2014 had rigged the system against ordinary people."
+   ],
+   "period": "U9",
+   "skill": "Making Connections",
+   "reasoning": "Comparison",
+   "themes": [
+    "PCE",
+    "WXT"
+   ],
+   "difficulty": "hard",
+   "fact_source": "u9.md \u00a7The story \u2014 TARP 'saved the system and fed a populist fury on both left and right'; 'movements from Occupy to Black Lives Matter to #MeToo'",
+   "stream": "drill"
+  },
+  {
+   "id": "original-u9-c21-23",
+   "type": "mcq",
+   "stem": "The COVID-19 pandemic killed over a million Americans. According to the review, it unfolded against which backdrop?",
+   "options": [
+    "(A) Institutional distrust and social-media fragmentation that complicated the public-health response.",
+    "(B) Complete public trust in every institution.",
+    "(C) A period with absolutely no other crises, political divisions, or public disagreements of any kind whatsoever.",
+    "(D) The end of all political disagreement in the United States."
+   ],
+   "period": "U9",
+   "skill": "Developments & Processes",
+   "reasoning": "Causation",
+   "themes": [
+    "PCE",
+    "NAT",
+    "SOC"
+   ],
+   "difficulty": "medium",
+   "fact_source": "u9.md \u00a7The story \u2014 'punctured by real crises: the COVID-19 pandemic, which killed over a million Americans'; 'institutional distrust, social-media-fueled fragmentation'",
+   "stream": "drill"
+  },
+  {
+   "id": "original-u9-c21-24",
+   "type": "mcq",
+   "stem": "The review presents the January 6, 2021, attack on the Capitol as which of the following?",
+   "options": [
+    "(A) An event with no connection whatsoever to any broader political trends or developments of the era.",
+    "(B) The violent peak of 'unresolved arguments about elections' amid deep and widespread institutional distrust.",
+    "(C) A peaceful celebration of the transfer of power.",
+    "(D) An event the review never mentions."
+   ],
+   "period": "U9",
+   "skill": "Contextualization",
+   "reasoning": "Causation",
+   "themes": [
+    "PCE"
+   ],
+   "difficulty": "medium",
+   "fact_source": "u9.md \u00a7The story \u2014 'the January 6, 2021, attack on the Capitol'; 'unresolved arguments about elections themselves'",
+   "stream": "drill"
+  },
+  {
+   "id": "original-u9-c21-25",
+   "type": "mcq",
+   "stem": "The review presents Obergefell v. Hodges (2015), which established a constitutional right to same-sex marriage nationwide, as part of which longer story?",
+   "options": [
+    "(A) The end of all civil rights activism in America, permanently and completely, with no further movements ever.",
+    "(B) Civil rights as an unfinished continuity: from the 1960s movements through marriage equality and beyond into the 21st century.",
+    "(C) A break with no connection to any earlier movement.",
+    "(D) A return to nineteenth-century social norms."
+   ],
+   "period": "U9",
+   "skill": "Developments & Processes",
+   "reasoning": "Continuity & Change",
+   "themes": [
+    "NAT",
+    "SOC"
+   ],
+   "difficulty": "medium",
+   "fact_source": "u9.md \u00a7Key terms \u2014 Obergefell v. Hodges (2015); \u00a7What the exam tests here \u2014 'Treat civil rights as an unfinished continuity: trace the line from the 1960s movements through Obergefell and beyond'",
+   "stream": "drill"
+  },
+  {
+   "id": "original-u9-c21-26",
+   "type": "mcq",
+   "stem": "The review notes that movements from Occupy to Black Lives Matter to #MeToo showed 'a new generation organizing outside the old party structures.' What do these movements share with the Tea Party despite their very different ideologies?",
+   "options": [
+    "(A) Each and every one of these movements was organized and directed from the top down by the Democratic Party establishment.",
+    "(B) All were organized and directed by the Republican Party establishment.",
+    "(C) All pursued identical policy goals and legislative agendas.",
+    "(D) All channeled distrust of institutions and organized substantially outside traditional party machinery."
+   ],
+   "period": "U9",
+   "skill": "Making Connections",
+   "reasoning": "Comparison",
+   "themes": [
+    "PCE",
+    "SOC"
+   ],
+   "difficulty": "hard",
+   "fact_source": "u9.md \u00a7The story \u2014 'movements from Occupy to Black Lives Matter to #MeToo showed a new generation organizing outside the old party structures'; the Tea Party revolt",
+   "stream": "drill"
+  },
+  {
+   "id": "original-u9-c21-27",
+   "type": "mcq",
+   "stem": "The review names 'social-media-fueled fragmentation' as a backdrop of recent politics. How does it fuel polarization?",
+   "options": [
+    "(A) By forcing every American to read the same newspapers.",
+    "(B) By ending all political disagreement.",
+    "(C) Algorithmic feeds and self-selected networks expose people to like-minded views, hardening divisions.",
+    "(D) By transforming all news coverage into something completely nonpartisan, objective, and entirely free of bias."
+   ],
+   "period": "U9",
+   "skill": "Developments & Processes",
+   "reasoning": "Causation",
+   "themes": [
+    "PCE"
+   ],
+   "difficulty": "medium",
+   "fact_source": "u9.md \u00a7The story \u2014 'social-media-fueled fragmentation'; \u00a7What the exam tests here \u2014 polarization's 'structural causes... from media fragmentation to partisan sorting'",
+   "stream": "drill"
+  },
+  {
+   "id": "original-u9-c21-28",
+   "type": "mcq",
+   "stem": "The review's through-line for the whole period is 'the end of the Cold War consensus about America's role in the world \u2014 and the failure, so far, to build a new one.' Which recent development best illustrates the domestic side of that failure?",
+   "options": [
+    "(A) The persistence of 'unresolved arguments about elections themselves' across three presidencies.",
+    "(B) The complete resolution of all foreign-policy debates.",
+    "(C) The disappearance of political polarization.",
+    "(D) Unanimous national agreement on America's proper role in the world, with no dissent from any quarter at all."
+   ],
+   "period": "U9",
+   "skill": "Argumentation",
+   "reasoning": "Continuity & Change",
+   "themes": [
+    "PCE"
+   ],
+   "difficulty": "hard",
+   "fact_source": "u9.md \u00a7The story \u2014 'The through-line of the whole period is the end of the Cold War consensus about America's role in the world \u2014 and the failure, so far, to build a new one'; 'unresolved arguments about elections themselves'",
+   "stream": "drill"
+  }
+ ]
+}

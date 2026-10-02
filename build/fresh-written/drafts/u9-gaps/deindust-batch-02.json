@@ -1,0 +1,330 @@
+{
+ "items": [
+  {
+   "difficulty": "hard",
+   "explanation": "The y-axis measures manufacturing's share of employment, not output. And the review explicitly says output stayed high thanks to productivity gains — the employment share and output moved differently.",
+   "fact_source": "u9.md §Added 2026-10-01 deindustrialization — manufacturing output stayed high thanks to productivity gains, even as its share of employment fell from roughly a quarter of jobs around 1970 toward about a tenth by 2010 (approximate)",
+   "id": "original-u9-deindust-v2-11",
+   "key": "D",
+   "option_explanations": {
+    "A": "Wrong. The chart's y-axis is labeled as a share of employment, not output.",
+    "B": "Wrong. The chart says nothing about output doubling; it shows the employment share falling.",
+    "C": "Wrong. The chart's labels and title are about manufacturing employment, not union membership.",
+    "D": "Correct. The chart tracks the employment share; the review says output stayed high because of productivity gains."
+   },
+   "options": [
+    "(A) No correction is needed: the chart directly measures manufacturing output, so the student's conclusion stands.",
+    "(B) The chart shows manufacturing output actually doubled between 1970 and 2010, so the conclusion is reversed.",
+    "(C) The chart shows union membership trends over time, not anything about manufacturing at all.",
+    "(D) The chart tracks manufacturing's share of employment, not output; the review says output stayed high."
+   ],
+   "period": "U9",
+   "reasoning": "Continuity & Change",
+   "skill": "Claims & Evidence in Sources",
+   "stem": "A student reads the chart and concludes that American manufacturing output fell by more than half between 1970 and 2010. Which correction is required?",
+   "stimulus": {
+    "chart_spec": {
+     "labels": [
+      "1970",
+      "2010"
+     ],
+     "source_note": "figures from u9.md §Added 2026-10-01 deindustrialization (approximate where marked)",
+     "title": "Manufacturing Share of U.S. Employment, 1970 to 2010",
+     "type": "line",
+     "values": [
+      25,
+      10
+     ],
+     "x_label": "Year",
+     "y_label": "Percent of U.S. jobs in manufacturing"
+    },
+    "kind": "chart"
+   },
+   "stream": "drill",
+   "themes": [
+    "WXT"
+   ],
+   "type": "mcq"
+  },
+  {
+   "difficulty": "hard",
+   "explanation": "Both series trend downward over decades — manufacturing's share of jobs and the share of workers in unions. Together they illustrate the review's larger point: the postwar industrial order of stable factory employment and strong unions eroded.",
+   "fact_source": "u9.md §Added 2026-10-01 deindustrialization — the 1970s 'broke the postwar industrial bargain'; manufacturing's share of employment and union membership both declined steeply in the decades that followed (approximate figures)",
+   "id": "original-u9-deindust-v2-12",
+   "key": "C",
+   "option_explanations": {
+    "A": "Wrong. The chart does not show how much the two groups overlap; that would require different data.",
+    "B": "Wrong. The chart shows two trends moving together, but moving together does not prove one caused the other.",
+    "C": "Correct. Both declines describe the same broad erosion of the postwar industrial bargain.",
+    "D": "Wrong. The chart shows manufacturing and union shares, not the service sector."
+   },
+   "options": [
+    "(A) Manufacturing workers were nearly all union members, so the two plotted trends are really just one trend.",
+    "(B) Union decline directly caused the fall in manufacturing's share of jobs shown in the chart.",
+    "(C) Both trends show the same broad change: the postwar order of stable factory jobs and strong unions eroded.",
+    "(D) The chart shows the service sector's share of total employment in both of the periods plotted here."
+   ],
+   "period": "U9",
+   "reasoning": "Comparison",
+   "skill": "Claims & Evidence in Sources",
+   "stem": "Comparing the two trends in the chart, which conclusion is best supported?",
+   "stimulus": {
+    "chart_spec": {
+     "labels": [
+      "Manufacturing share of jobs, 1970",
+      "Manufacturing share of jobs, 2010",
+      "Union share of workers, 1950s",
+      "Union share of workers, 2010s"
+     ],
+     "source_note": "figures from u9.md §Added 2026-10-01 deindustrialization (approximate where marked)",
+     "title": "Employment and Union Shares Across the Deindustrialization Era",
+     "type": "bar",
+     "values": [
+      25,
+      10,
+      33,
+      10
+     ],
+     "x_label": "Measure",
+     "y_label": "Percent"
+    },
+    "kind": "chart"
+   },
+   "stream": "drill",
+   "themes": [
+    "WXT",
+    "PCE"
+   ],
+   "type": "mcq"
+  },
+  {
+   "difficulty": "medium",
+   "explanation": "Keynesian policy tools rested on the idea that inflation and unemployment moved in opposite directions, so policymakers could accept a little more of one to get less of the other. Stagflation — both rising together — broke that trade-off, which is why the review says it destroyed the Keynesian playbook.",
+   "fact_source": "u9.md §Added 2026-10-01 deindustrialization — stagflation, inflation and unemployment rising together, 'destroyed the Keynesian playbook'",
+   "id": "original-u9-deindust-v2-13",
+   "key": "A",
+   "option_explanations": {
+    "A": "Correct. With inflation and unemployment rising together, the trade-off that Keynesian tools relied on no longer worked.",
+    "B": "Wrong. The 1970s had high inflation, not zero inflation.",
+    "C": "Wrong. Stagflation hit in the 1970s, before Reagan's 1981 tax cuts, and the review does not blame the tax cuts for it.",
+    "D": "Wrong. The review says stagflation destroyed the Keynesian playbook — the opposite of vindicating it."
+   },
+   "options": [
+    "(A) Keynesian tools assumed inflation and unemployment traded off; stagflation had both rising together.",
+    "(B) Keynesian economics required zero inflation at all times, a condition the 1970s economy delivered.",
+    "(C) Stagflation was caused by Reagan's 1981 tax cuts, which took effect before Keynesianism was ever tried.",
+    "(D) Keynesian economists welcomed stagflation as clear proof that their economic theories worked well."
+   ],
+   "period": "U9",
+   "reasoning": "Causation",
+   "skill": "Developments & Processes",
+   "stem": "The review says the stagflation of the 1970s “destroyed the Keynesian playbook.” Why did stagflation pose such a problem for Keynesian economics?",
+   "stream": "drill",
+   "themes": [
+    "WXT"
+   ],
+   "type": "mcq"
+  },
+  {
+   "difficulty": "hard",
+   "explanation": "The review draws a direct line: the 1970s broke the postwar industrial bargain, and the resulting resentment powered Reagan's 1980 victory and later populist revolts.",
+   "fact_source": "u9.md §Added 2026-10-01 deindustrialization — the 1970s 'broke the postwar industrial bargain'; deindustrialization 'fed the resentment that powered Reagan's 1980 victory and later populist revolts'",
+   "id": "original-u9-deindust-v2-14",
+   "key": "B",
+   "option_explanations": {
+    "A": "Wrong. The review says voters repudiated the party in power — Reagan's 1980 election was a rejection, not a reward.",
+    "B": "Correct. The review traces the resentment behind Reagan's 1980 victory and later populist revolts to deindustrialization.",
+    "C": "Wrong. The review says stagflation destroyed the Keynesian playbook; it did not strengthen faith in it.",
+    "D": "Wrong. The breakdown is presented as a failure of government economic management, not a success."
+   },
+   "options": [
+    "(A) It convinced voters to reward the party in power for its handling of the crisis.",
+    "(B) It fed the resentment that powered Reagan's 1980 victory and later populist revolts.",
+    "(C) It strengthened public faith in the Keynesian playbook as the right economic framework.",
+    "(D) It persuaded Americans that government management of the economy had succeeded."
+   ],
+   "period": "U9",
+   "reasoning": "Causation",
+   "skill": "Contextualization",
+   "stem": "How did the economic breakdown of the 1970s set up the politics that followed, according to the review?",
+   "stream": "drill",
+   "themes": [
+    "WXT",
+    "PCE"
+   ],
+   "type": "mcq"
+  },
+  {
+   "difficulty": "medium",
+   "explanation": "The review defines the Rust Belt as the Northeast and Midwest, the region where factories closed in large numbers.",
+   "fact_source": "u9.md §Added 2026-10-01 deindustrialization — factories closed across the Northeast and Midwest, the Rust Belt",
+   "id": "original-u9-deindust-v2-15",
+   "key": "D",
+   "option_explanations": {
+    "A": "Wrong. The review does not describe the Pacific Coast this way.",
+    "B": "Wrong. The review places the Rust Belt in the Northeast and Midwest, not the Deep South.",
+    "C": "Wrong. Mining in the Mountain West is not the review's Rust Belt story.",
+    "D": "Correct. The review identifies the Northeast and Midwest — the Rust Belt — as the factory-closure region."
+   },
+   "options": [
+    "(A) The Pacific Coast states, where technology firms replaced older factories.",
+    "(B) The Deep South, where textile mills had always dominated the economy.",
+    "(C) The Mountain West, where the decline of mining drove the regional story.",
+    "(D) The Northeast and Midwest, where factories closed in large numbers."
+   ],
+   "period": "U9",
+   "reasoning": "Comparison",
+   "skill": "Developments & Processes",
+   "stem": "The review uses the term “Rust Belt” for the region hit hardest by factory closures. Which description matches the review?",
+   "stream": "drill",
+   "themes": [
+    "WXT",
+    "GEO"
+   ],
+   "type": "mcq"
+  },
+  {
+   "difficulty": "medium",
+   "explanation": "The review gives three draws: defense industries, lower taxes, and air-conditioned suburbs — and says they attracted both people and plants.",
+   "fact_source": "u9.md §Added 2026-10-01 deindustrialization — the Sun Belt's 'defense industries, lower taxes, and air-conditioned suburbs attracted both people and plants'",
+   "id": "original-u9-deindust-v2-16",
+   "key": "C",
+   "option_explanations": {
+    "A": "Wrong. The Sun Belt's appeal in the review is lower taxes and costs, not a strong union movement or high wages.",
+    "B": "Wrong. The review describes firms choosing to move; it mentions no federal law requiring it.",
+    "C": "Correct. These are the three attractions the review names.",
+    "D": "Wrong. The review credits air-conditioned suburbs — the Sun Belt's warm climate made livable — not cold weather or expensive housing."
+   },
+   "options": [
+    "(A) Its long-established union movement and high wages drew workers to the region.",
+    "(B) Federal law required all new factories to be built in that region alone.",
+    "(C) Its defense industries, lower taxes, and air-conditioned suburbs drew both.",
+    "(D) Its cold climate and expensive housing appealed strongly to manufacturers."
+   ],
+   "period": "U9",
+   "reasoning": "Causation",
+   "skill": "Developments & Processes",
+   "stem": "According to the review, why did the Sun Belt attract both people and plants as the Rust Belt declined?",
+   "stream": "drill",
+   "themes": [
+    "WXT",
+    "GEO"
+   ],
+   "type": "mcq"
+  },
+  {
+   "difficulty": "hard",
+   "explanation": "As factories closed in the Northeast and Midwest and people and plants moved to the Sun Belt, economic and political weight moved with them — which is why the review says the Sun Belt became America's political center of gravity.",
+   "fact_source": "u9.md §Added 2026-10-01 deindustrialization — factories closed across the Northeast and Midwest while growth shifted to the Sun Belt; the Sun Belt, not the old industrial core, 'became America's political center of gravity'",
+   "id": "original-u9-deindust-v2-17",
+   "key": "B",
+   "option_explanations": {
+    "A": "Wrong. The federal capital did not move.",
+    "B": "Correct. The geographic shift of jobs and population carried political weight south and west.",
+    "C": "Wrong. The review says nothing about uniform bloc voting or other regions not voting.",
+    "D": "Wrong. The review says the Sun Belt grew while the Rust Belt hollowed out — the reverse."
+   },
+   "options": [
+    "(A) The federal capital moved to the Sun Belt, taking national political power with it.",
+    "(B) Jobs and population shifted south and west as factory closures hollowed out the Northeast and Midwest.",
+    "(C) The Sun Belt voted as a single unified bloc in every election while the other regions stopped voting entirely.",
+    "(D) The Rust Belt's population grew faster than the Sun Belt's after 1980, shifting power back."
+   ],
+   "period": "U9",
+   "reasoning": "Causation",
+   "skill": "Making Connections",
+   "stem": "The review says the Sun Belt — not the old industrial core — became “America's political center of gravity.” Which chain of developments best explains that shift?",
+   "stream": "drill",
+   "themes": [
+    "WXT",
+    "GEO",
+    "PCE"
+   ],
+   "type": "mcq"
+  },
+  {
+   "difficulty": "medium",
+   "explanation": "The review names Japan and West Germany as the intensified foreign competition, and steel, autos, and electronics as the industries where American producers were undercut.",
+   "fact_source": "u9.md §Added 2026-10-01 deindustrialization — 'intensified foreign competition (Japan, West Germany) undercut American producers in steel, autos, and electronics'",
+   "id": "original-u9-deindust-v2-18",
+   "key": "A",
+   "option_explanations": {
+    "A": "Correct. These are the competitors and industries the review names.",
+    "B": "Wrong. The review names Japan and West Germany, not Britain and France, and different industries.",
+    "C": "Wrong. The review does not name Canada and Mexico as the competitors here.",
+    "D": "Wrong. The Soviet Union was not a consumer-electronics competitor; the review names Japan and West Germany."
+   },
+   "options": [
+    "(A) Japan and West Germany, in steel, autos, and electronics.",
+    "(B) Britain and France, in textiles and shipbuilding.",
+    "(C) Canada and Mexico, in lumber and mining.",
+    "(D) The Soviet Union, in consumer electronics."
+   ],
+   "period": "U9",
+   "reasoning": "Causation",
+   "skill": "Developments & Processes",
+   "stem": "Which foreign competition does the review name as undercutting American producers during the deindustrialization era?",
+   "stream": "drill",
+   "themes": [
+    "WXT"
+   ],
+   "type": "mcq"
+  },
+  {
+   "difficulty": "medium",
+   "explanation": "The review lists three together — container shipping, offshoring, and trade deals like NAFTA — as the globalization forces that let firms move production abroad.",
+   "fact_source": "u9.md §Added 2026-10-01 deindustrialization — 'Globalization — container shipping, offshoring, and trade deals like NAFTA — let firms move production abroad'",
+   "id": "original-u9-deindust-v2-19",
+   "key": "C",
+   "option_explanations": {
+    "A": "Wrong. High tariffs and closed borders are the opposite of the globalization the review describes.",
+    "B": "Wrong. Container shipping expanded trade; it did not break up, and trade deals multiplied.",
+    "C": "Correct. These are the three mechanisms the review names.",
+    "D": "Wrong. The review describes firms moving production abroad, not federal rules keeping them in the Rust Belt."
+   },
+   "options": [
+    "(A) High tariffs, closed borders, and bans on foreign investment.",
+    "(B) The breakup of container shipping and the end of trade deals.",
+    "(C) Container shipping, offshoring, and trade deals like NAFTA.",
+    "(D) Federal rules requiring factories to stay in the Rust Belt."
+   ],
+   "period": "U9",
+   "reasoning": "Causation",
+   "skill": "Developments & Processes",
+   "stem": "According to the review, which combination of developments let American firms move production abroad?",
+   "stream": "drill",
+   "themes": [
+    "WXT"
+   ],
+   "type": "mcq"
+  },
+  {
+   "difficulty": "medium",
+   "explanation": "The review presents NAFTA as one of the trade deals through which globalization let firms move production abroad — a continuation of the offshoring pattern that was replacing factory jobs with service work.",
+   "fact_source": "u9.md §Added 2026-10-01 deindustrialization — 'trade deals like NAFTA' let firms move production abroad, 'replacing factory jobs with service work'",
+   "id": "original-u9-deindust-v2-20",
+   "key": "A",
+   "option_explanations": {
+    "A": "Correct. NAFTA fits the review's longer story of production moving abroad and factory jobs giving way to service work.",
+    "B": "Wrong. The review does not claim NAFTA reversed deindustrialization or restored Rust Belt factory jobs.",
+    "C": "Wrong. The review says nothing about NAFTA ending trade with Asia.",
+    "D": "Wrong. The review treats NAFTA as one trade deal among several in an ongoing globalization story, not as the first connection between the U.S. and world markets."
+   },
+   "options": [
+    "(A) It continued an existing pattern: firms moving production abroad while factory jobs gave way to services.",
+    "(B) It reversed deindustrialization by bringing large numbers of factory jobs back to the Rust Belt states.",
+    "(C) It ended all American trade with Asia and redirected commerce toward Europe instead.",
+    "(D) It was the first event that ever connected the U.S. economy to the markets of the rest of the world."
+   ],
+   "period": "U9",
+   "reasoning": "Continuity & Change",
+   "skill": "Contextualization",
+   "stem": "The review lists NAFTA (1994) among the forces of globalization. How does NAFTA fit the longer deindustrialization story the review tells?",
+   "stream": "drill",
+   "themes": [
+    "WXT"
+   ],
+   "type": "mcq"
+  }
+ ]
+}

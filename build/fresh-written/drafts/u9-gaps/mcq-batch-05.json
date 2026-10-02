@@ -1,0 +1,398 @@
+{
+  "items": [
+    {
+      "id": "original-u9-immig-13",
+      "type": "mcq",
+      "stem": "Supporters of the 1965 immigration act insisted it would not dramatically increase immigration or alter the country's ethnic makeup. The chart's steady climb in the decades afterward shows they were wrong mainly because of which mechanism?",
+      "stimulus": {
+        "kind": "chart",
+        "chart_spec": {
+          "type": "bar",
+          "title": "Legal U.S. Immigration by Decade, 1960s–2000s",
+          "x_label": "Decade",
+          "y_label": "Millions of legal immigrants",
+          "labels": [
+            "1960s",
+            "1970s",
+            "1980s",
+            "1990s",
+            "2000s"
+          ],
+          "values": [
+            3.3,
+            4.5,
+            6.0,
+            9.8,
+            10.4
+          ],
+          "source_note": "Approximate figures; the post-1965 growth in immigration underlying the demographic change described in u9.md §The story ('especially around immigration')."
+        }
+      },
+      "options": [
+        "(A) The law's family-reunification preferences created chain migration: each admitted immigrant could sponsor relatives.",
+        "(B) The law secretly abolished all numerical limits on immigration in 1965, though this was hidden from the public and never restored.",
+        "(C) The law required every native-born American family to sponsor exactly one immigrant.",
+        "(D) The chart's growth came entirely from a 1965 provision admitting only European refugees."
+      ],
+      "key": "A",
+      "explanation": "The 1965 act gave top priority to relatives of citizens and residents. Each new immigrant could then petition for spouses, children, siblings, and parents, who could in turn sponsor their own relatives — a multiplier the law's sponsors underestimated, producing the compounding growth the chart shows.",
+      "option_explanations": {
+        "A": "Correct. Chain migration through family preferences is the standard explanation for why the law's effects grew far beyond what its sponsors predicted.",
+        "B": "Incorrect. The law kept numerical caps; the growth came through the family-preference mechanism operating within and around those caps, not through abolished limits.",
+        "C": "Incorrect. No such requirement existed; sponsorship was a right of immigrants, not an obligation of native-born families.",
+        "D": "Incorrect. The post-1965 flow came increasingly from Latin America and Asia, not from a Europe-only refugee provision."
+      },
+      "period": "U9",
+      "skill": "Contextualization",
+      "reasoning": "Causation",
+      "themes": [
+        "MIG",
+        "PCE"
+      ],
+      "difficulty": "medium",
+      "fact_source": "u9.md §The story — post-1965 'demographic change' as the long-tail consequence (1965 act not named in review)",
+      "stream": "drill"
+    },
+    {
+      "id": "original-u9-immig-14",
+      "type": "mcq",
+      "stem": "The Bracero program (1942–1964) admitted Mexican workers temporarily for farm labor, while the post-1965 immigration system admitted newcomers as permanent residents through family ties. The key difference in their long-term effects on American communities was which of the following?",
+      "options": [
+        "(A) Bracero workers settled permanently in large numbers while post-1965 immigrants all returned home.",
+        "(B) Bracero workers returned to Mexico when contracts ended; post-1965 immigrants settled permanently and raised families.",
+        "(C) The two programs admitted workers from completely different countries on opposite sides of the world.",
+        "(D) Bracero workers became citizens automatically upon arrival, while post-1965 immigrants could never naturalize under any circumstances."
+      ],
+      "key": "B",
+      "explanation": "Temporariness versus permanence is the crucial distinction. Guest-worker programs are designed to supply labor without settlement; family-based permanent immigration is designed to build a resident population. That is why post-1965 immigration reshaped neighborhoods, schools, and electorates in ways the Bracero program did not.",
+      "option_explanations": {
+        "A": "Incorrect. This reverses the two programs: Braceros were temporary by design, while post-1965 immigrants came as permanent residents.",
+        "B": "Correct. It states the structural difference and its consequence: settlement, family formation, and community transformation follow from permanent admission.",
+        "C": "Incorrect. Both streams drew heavily on Mexico; the difference was legal status and permanence, not national origin.",
+        "D": "Incorrect. Braceros did not receive automatic citizenship, and post-1965 permanent residents could naturalize after the required years of residence."
+      },
+      "period": "U9",
+      "skill": "Making Connections",
+      "reasoning": "Comparison",
+      "themes": [
+        "MIG",
+        "PCE"
+      ],
+      "difficulty": "hard",
+      "fact_source": "u9.md §The story — post-1965 'demographic change — the coming \"majority-minority\" nation'",
+      "stream": "drill"
+    },
+    {
+      "id": "original-u9-immig-15",
+      "type": "mcq",
+      "stem": "Which combination of push and pull factors best explains the large Latin American immigration to the United States in the 1980s through 2000s?",
+      "options": [
+        "(A) U.S. recruiters forced Latin Americans to migrate at gunpoint under threat of violence.",
+        "(B) Latin American governments paid their citizens large sums to leave permanently and never return home.",
+        "(C) U.S. jobs and family ties pulled migrants north; poverty and instability pushed them to leave.",
+        "(D) Latin American immigration was caused entirely by American tourism advertising campaigns."
+      ],
+      "key": "C",
+      "explanation": "Migration follows the push-pull logic: American employers in agriculture, construction, and services offered wages far above what migrants could earn at home (pull), family networks lowered the cost and risk of the journey (pull), and economic hardship and conflict at home made leaving attractive (push).",
+      "option_explanations": {
+        "A": "Incorrect. Migration was voluntary and migrant-driven; no forced recruitment at gunpoint occurred.",
+        "B": "Incorrect. Governments did not pay citizens to emigrate; migrants left despite their governments, not because of them.",
+        "C": "Correct. It correctly pairs the American-side pulls (jobs, family networks, legal channels) with the home-country pushes (poverty, instability) that migration scholars identify.",
+        "D": "Incorrect. Tourism advertising did not drive migration; labor markets and family ties did."
+      },
+      "period": "U9",
+      "skill": "Developments & Processes",
+      "reasoning": "Causation",
+      "themes": [
+        "MIG",
+        "WXT"
+      ],
+      "difficulty": "medium",
+      "fact_source": "u9.md §The story — demographic change 'especially around immigration'",
+      "stream": "drill"
+    },
+    {
+      "id": "original-u9-immig-16",
+      "type": "mcq",
+      "stem": "The chart shows the foreign-born share of the U.S. population at 4.7 percent in 1970, its lowest plotted value. What does that low point reflect?",
+      "stimulus": {
+        "kind": "chart",
+        "chart_spec": {
+          "type": "line",
+          "title": "Foreign-Born Share of U.S. Population, 1970–2020",
+          "x_label": "Year",
+          "y_label": "Percent foreign-born",
+          "labels": [
+            "1970",
+            "1980",
+            "1990",
+            "2000",
+            "2010",
+            "2020"
+          ],
+          "values": [
+            4.7,
+            6.2,
+            7.9,
+            11.1,
+            12.9,
+            13.7
+          ],
+          "source_note": "Approximate census-based figures; the demographic change 'especially around immigration' described in u9.md §The story."
+        }
+      },
+      "options": [
+        "(A) A complete halt of all immigration between 1924 and 1970, with zero admissions.",
+        "(B) A massive 1969 deportation campaign that removed most immigrants from the country in a single year.",
+        "(C) A sudden decision by immigrants to stop having children in the year 1970.",
+        "(D) Decades of quota restrictions minimized immigration, so the foreign-born share shrank."
+      ],
+      "key": "D",
+      "explanation": "The 4.7 percent low was the legacy of restriction. Four decades of quotas kept new arrivals to a trickle while the native-born population grew, so immigrants became a steadily smaller slice of the country — the demographic baseline against which the post-1965 surge looks so dramatic.",
+      "option_explanations": {
+        "A": "Incorrect. Immigration never halted completely; the quotas restricted it severely but did not end it.",
+        "B": "Incorrect. No such mass deportation occurred in 1969; the low share was the product of decades of restriction, not a single event.",
+        "C": "Incorrect. Immigrant fertility did not suddenly collapse in 1970; the share reflects the stock of foreign-born residents, shaped by forty years of low inflows.",
+        "D": "Correct. It explains the mechanism: restricted inflows plus native population growth equals a shrinking foreign-born share, the starting point for the post-1965 reversal."
+      },
+      "period": "U9",
+      "skill": "Claims & Evidence in Sources",
+      "reasoning": "Continuity & Change",
+      "themes": [
+        "MIG",
+        "PCE"
+      ],
+      "difficulty": "medium",
+      "fact_source": "u9.md §The story — post-1965 demographic change, measured against the restricted-immigration baseline",
+      "stream": "drill"
+    },
+    {
+      "id": "original-u9-immig-17",
+      "type": "mcq",
+      "stem": "'As a produce grower in California's Central Valley, I can tell you: without immigrant labor, the harvest rots in the field. Americans will not do this work at the wages we can pay and stay in business.' — original composition in the style of 2006 congressional testimony. A historian evaluating this testimony should consider which of the following about the speaker's perspective?",
+      "stimulus": {
+        "kind": "text",
+        "text": "As a produce grower in California's Central Valley, I can tell you: without immigrant labor, the harvest rots in the field. Americans will not do this work at the wages we can pay and stay in business. — Original composition in the style of 2006 congressional testimony."
+      },
+      "options": [
+        "(A) The speaker is an employer with an economic interest in immigrant labor, which shapes but does not disqualify the testimony.",
+        "(B) The speaker's economic interest means the testimony is completely worthless and must be ignored entirely by historians as evidence.",
+        "(C) The speaker is a neutral observer with no stake whatsoever in immigration policy outcomes.",
+        "(D) Congressional testimony is never a valid primary source for historians under any circumstances."
+      ],
+      "key": "A",
+      "explanation": "Sourcing means asking who speaks and why. A grower benefits directly from immigrant labor, so the testimony reflects an employer's interest — but interested sources are still evidence; the historian weighs the claim against other evidence (wage data, worker accounts, enforcement records) rather than discarding it.",
+      "option_explanations": {
+        "A": "Correct. It applies the sourcing skill properly: identify the interest, account for it, and keep the source in the evidentiary mix.",
+        "B": "Incorrect. An interested source is not a useless source; historians routinely use testimony from stakeholders, reading it with its motives in mind.",
+        "C": "Incorrect. The speaker plainly has a stake — the viability of the harvest workforce — and is not neutral.",
+        "D": "Incorrect. Congressional testimony is a standard primary source; its value depends on critical evaluation, not on blanket dismissal."
+      },
+      "period": "U9",
+      "skill": "Sourcing & Situation",
+      "reasoning": "Causation",
+      "themes": [
+        "MIG",
+        "WXT"
+      ],
+      "difficulty": "hard",
+      "fact_source": "u9.md §The story — immigration as reshaping politics; service/agricultural labor demand of the era",
+      "stream": "drill"
+    },
+    {
+      "id": "original-u9-immig-18",
+      "type": "mcq",
+      "stem": "The review says Donald Trump's 2016 election 'channeled the backlash... against immigration.' This backlash most directly continued which earlier pattern in American history?",
+      "options": [
+        "(A) The nineteenth-century movement to abolish all tariffs on imported goods.",
+        "(B) The recurring nativist politics that follows every large immigration wave.",
+        "(C) The long tradition of presidents supporting completely open borders without restriction.",
+        "(D) The twentieth-century consensus that immigration should never be debated publicly."
+      ],
+      "key": "B",
+      "explanation": "Each major immigration wave — Irish and Germans in the 1840s–50s, southern and eastern Europeans around 1900, and Latin Americans and Asians after 1965 — produced a nativist reaction warning of cultural and economic threat. The 2016 backlash fits that recurring sequence, not a new invention.",
+      "option_explanations": {
+        "A": "Incorrect. Tariff abolition was a trade-policy cause, unrelated to the politics of immigration backlash.",
+        "B": "Correct. It places 2016 in the long nativist sequence — Know-Nothings, 1920s restrictionists, and their modern successors — which is the continuity the review's framing implies.",
+        "C": "Incorrect. No such presidential tradition existed; presidents from both parties have restricted, regulated, and debated immigration throughout American history.",
+        "D": "Incorrect. Immigration has been one of the most debated topics in American politics for 150 years; no consensus against debating it ever existed."
+      },
+      "period": "U9",
+      "skill": "Making Connections",
+      "reasoning": "Comparison",
+      "themes": [
+        "MIG",
+        "PCE",
+        "NAT"
+      ],
+      "difficulty": "medium",
+      "fact_source": "u9.md §The story — Trump's 2016 election 'channeled the backlash: against globalization, against immigration, against the political establishment itself'",
+      "stream": "drill"
+    },
+    {
+      "id": "original-u9-immig-19",
+      "type": "mcq",
+      "stem": "A student claims, 'America has always had open immigration.' Which evidence best evaluates that claim?",
+      "options": [
+        "(A) The claim is true: the United States never restricted immigration in any era of its history.",
+        "(B) The claim is true for the twentieth century, when Congress never passed any immigration laws at all, leaving entry completely unregulated.",
+        "(C) False: the U.S. excluded Chinese immigrants in 1882 and set 1920s quotas; openness has varied greatly.",
+        "(D) The claim is false because the United States never admitted any immigrants at all in its history."
+      ],
+      "key": "C",
+      "explanation": "American immigration policy has swung between openness and restriction. The 'nation of immigrants' story coexists with the Chinese Exclusion Act, the quota system, and modern enforcement debates — so 'always open' fails against the record, even though the country has absorbed more immigrants than any other.",
+      "option_explanations": {
+        "A": "Incorrect. Multiple major restrictions — 1882, the 1920s quotas — directly contradict the claim.",
+        "B": "Incorrect. The twentieth century saw the most elaborate immigration regulation in American history, from the quotas to the 1965 act to later reforms.",
+        "C": "Correct. It evaluates the sweeping claim with specific counterevidence from three different eras, showing variation rather than constant openness.",
+        "D": "Incorrect. This overcorrects: the United States has admitted tens of millions of immigrants; the accurate position is variation, not zero admission."
+      },
+      "period": "U9",
+      "skill": "Argumentation",
+      "reasoning": "Continuity & Change",
+      "themes": [
+        "MIG",
+        "NAT"
+      ],
+      "difficulty": "hard",
+      "fact_source": "u9.md §The story — post-1965 demographic change, following the restrictive-quota baseline",
+      "stream": "drill"
+    },
+    {
+      "id": "original-u9-immig-20",
+      "type": "mcq",
+      "stem": "The chart shows the foreign-born share of the U.S. population rising from 4.7 percent in 1970 to 13.7 percent in 2020. As this transformation unfolded, which political debate intensified?",
+      "stimulus": {
+        "kind": "chart",
+        "chart_spec": {
+          "type": "line",
+          "title": "Foreign-Born Share of U.S. Population, 1970–2020",
+          "x_label": "Year",
+          "y_label": "Percent foreign-born",
+          "labels": [
+            "1970",
+            "1980",
+            "1990",
+            "2000",
+            "2010",
+            "2020"
+          ],
+          "values": [
+            4.7,
+            6.2,
+            7.9,
+            11.1,
+            12.9,
+            13.7
+          ],
+          "source_note": "Approximate census-based figures; the demographic change 'especially around immigration' described in u9.md §The story."
+        }
+      },
+      "options": [
+        "(A) Debates over whether the United States should maintain a navy.",
+        "(B) Debates over the proper length of presidential terms in office.",
+        "(C) Debates over whether individual states could print their own currency, a settled nineteenth-century issue.",
+        "(D) Debates over border enforcement, legalization, and the terms of membership in American society."
+      ],
+      "key": "D",
+      "explanation": "The review states directly that demographic change 'reshaped politics, especially around immigration.' As the foreign-born share nearly tripled, fights over how to police the border, what to do about unauthorized residents, and what assimilation should require became central to national politics.",
+      "option_explanations": {
+        "A": "Incorrect. Naval policy had no connection to the demographic transformation the chart shows.",
+        "B": "Incorrect. Presidential term lengths were settled by the Twenty-Second Amendment and were unaffected by immigration trends.",
+        "C": "Incorrect. State currency was settled in the nineteenth century and is unrelated to immigration.",
+        "D": "Correct. It names the actual policy fights the review ties to demographic change: enforcement, legalization, and the meaning of membership."
+      },
+      "period": "U9",
+      "skill": "Developments & Processes",
+      "reasoning": "Causation",
+      "themes": [
+        "MIG",
+        "PCE"
+      ],
+      "difficulty": "medium",
+      "fact_source": "u9.md §The story — 'demographic change — the coming \"majority-minority\" nation — reshaped politics, especially around immigration'",
+      "stream": "drill"
+    },
+    {
+      "id": "original-u9-immig-21",
+      "type": "mcq",
+      "stem": "The chart counts legal immigrants admitted by decade. Which question can this chart NOT answer?",
+      "stimulus": {
+        "kind": "chart",
+        "chart_spec": {
+          "type": "bar",
+          "title": "Legal U.S. Immigration by Decade, 1960s–2000s",
+          "x_label": "Decade",
+          "y_label": "Millions of legal immigrants",
+          "labels": [
+            "1960s",
+            "1970s",
+            "1980s",
+            "1990s",
+            "2000s"
+          ],
+          "values": [
+            3.3,
+            4.5,
+            6.0,
+            9.8,
+            10.4
+          ],
+          "source_note": "Approximate figures; legal admissions only, per u9.md §The story's demographic-change discussion."
+        }
+      },
+      "options": [
+        "(A) In which decade were the most legal immigrants admitted?",
+        "(B) How many unauthorized immigrants entered in each decade?",
+        "(C) Whether legal immigration grew or shrank between the 1980s and the 1990s.",
+        "(D) How the 2000s compared with the 1960s in legal admissions."
+      ],
+      "key": "B",
+      "explanation": "The chart's title and axis define its scope: legal admissions only. Unauthorized immigration — a large and politically central flow in these decades — is not counted in these figures, so the chart is silent on it. Knowing a source's boundaries is as important as reading its values.",
+      "option_explanations": {
+        "A": "Incorrect. The chart answers this directly: the 2000s bar (10.4 million) is the tallest.",
+        "B": "Correct. Unauthorized entrants are by definition absent from legal-admissions statistics, so the chart cannot address this question at all.",
+        "C": "Incorrect. The chart shows growth from 6.0 to 9.8 million between those decades, answering the question directly.",
+        "D": "Incorrect. Both decades are plotted (3.3 versus 10.4 million), so the comparison is straightforward."
+      },
+      "period": "U9",
+      "skill": "Claims & Evidence in Sources",
+      "reasoning": "Continuity & Change",
+      "themes": [
+        "MIG"
+      ],
+      "difficulty": "hard",
+      "fact_source": "u9.md §The story — demographic change 'especially around immigration'",
+      "stream": "drill"
+    },
+    {
+      "id": "original-u9-immig-22",
+      "type": "mcq",
+      "stem": "Post-1965 immigration resembled the Ellis Island era of 1890–1920 in which of the following ways?",
+      "options": [
+        "(A) Both eras admitted immigrants only from English-speaking countries around the world, excluding all others.",
+        "(B) Both eras were periods when the federal government banned all immigration completely.",
+        "(C) Both were driven by U.S. labor demand and sustained by chain migration through family networks.",
+        "(D) Both eras saw immigrants settle exclusively in rural farming regions far from cities."
+      ],
+      "key": "C",
+      "explanation": "The engines were the same across the century: employers needed workers, earlier arrivals sent for relatives, and family networks lowered the risks of migration. The 1965 act's family preferences formalized a chain-migration dynamic that had operated informally through Ellis Island decades earlier.",
+      "option_explanations": {
+        "A": "Incorrect. Neither era was limited to English-speaking countries; both drew heavily on non-English-speaking regions.",
+        "B": "Incorrect. Both were high-immigration eras, the opposite of a ban — the bans belong to the 1920s–1965 interval between them.",
+        "C": "Correct. It identifies the genuine continuity: labor demand as the pull and family networks as the transmission mechanism, in both eras.",
+        "D": "Incorrect. Immigrants in both eras concentrated in cities and industrial regions far more than in rural farming areas."
+      },
+      "period": "U9",
+      "skill": "Contextualization",
+      "reasoning": "Comparison",
+      "themes": [
+        "MIG",
+        "WXT"
+      ],
+      "difficulty": "medium",
+      "fact_source": "u9.md §The story — post-1965 demographic change, echoing earlier immigration waves",
+      "stream": "drill"
+    }
+  ]
+}

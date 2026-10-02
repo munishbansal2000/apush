@@ -1,0 +1,267 @@
+{"items": [
+  {
+    "id": "original-u9-deindust-11",
+    "type": "mcq",
+    "stem": "In 1993, supporters of NAFTA argued that free trade with Mexico would expand American exports and lower consumer prices; opponents, including labor unions, warned that factories would move south to exploit cheap labor. (Original summary composed for this item.) The debate described above shows which pattern in American trade politics?",
+    "stimulus": {"kind": "text", "text": "In 1993, supporters of NAFTA argued that free trade with Mexico would expand American exports and lower consumer prices; opponents, including labor unions, warned that factories would move south to exploit cheap labor. (Original summary composed for this item.)"},
+    "options": [
+      "(A) Both major parties and all interest groups agreed completely on trade policy in the 1990s.",
+      "(B) A split between those who expected to gain from open markets, such as exporters and consumers, and those who feared losses, such as industrial workers and unions.",
+      "(C) Only Republicans opposed free trade in the 1990s, while Democrats supported it unanimously.",
+      "(D) The entire debate was about farm subsidies, with manufacturing never mentioned."
+    ],
+    "key": "B",
+    "explanation": "Trade debates divide along expected winners and losers. Export-oriented businesses and shoppers expecting lower prices backed NAFTA, while unions representing factory workers feared \u2014 correctly, in many cases \u2014 that employers would relocate production to Mexico's lower-wage plants.",
+    "option_explanations": {
+      "A": "Incorrect. NAFTA was fiercely contested, dividing both parties internally and pitting business groups against labor unions.",
+      "B": "Correct. This captures the enduring structure of trade politics: support concentrates among expected beneficiaries of open markets, and opposition among those exposed to foreign competition.",
+      "C": "Incorrect. Both parties split on NAFTA; prominent Democrats backed it while some Republicans opposed it, so the divide was not a simple party-line one.",
+      "D": "Incorrect. Manufacturing jobs were at the center of the debate, as the summary itself shows with its mention of factories moving south."
+    },
+    "period": "U9",
+    "skill": "Claims & Evidence in Sources",
+    "reasoning": "Causation",
+    "themes": ["WXT", "PCE", "WOR"],
+    "difficulty": "medium",
+    "fact_source": "u9.md \u00a7The story \u2014 NAFTA (1994) embodied a new faith in globalization; \u00a7What the exam tests here \u2014 globalization's backlash",
+    "stream": "drill"
+  },
+  {
+    "id": "original-u9-deindust-12",
+    "type": "mcq",
+    "stem": "The term 'Rust Belt' came into widespread use in the 1980s. It refers to which of the following?",
+    "stimulus": {"kind": "chart", "chart_spec": {"type": "line", "title": "Union Membership as Share of U.S. Workers, 1980\u20132020", "x_label": "Year", "y_label": "Percent of workers", "labels": ["1980", "1985", "1990", "1995", "2000", "2020"], "values": [20.1, 18.0, 16.1, 14.9, 13.5, 10.8], "source_note": "Approximate figures; the decline in unionized industrial employment is part of the Rust Belt story in u9.md \u00a7The story and \u00a7What the exam tests here."}},
+    "options": [
+      "(A) The southern states where cotton farming declined after the boll weevil infestation.",
+      "(B) The Pacific coast cities that lost fishing fleets to foreign competition.",
+      "(C) The older industrial region of the Northeast and Midwest where closed factories left rusting plants, shrinking cities, and displaced workers.",
+      "(D) The mining towns of the Mountain West that were abandoned during the Gold Rush."
+    ],
+    "key": "C",
+    "explanation": "'Rust Belt' describes the arc of factory cities \u2014 from Pennsylvania and Ohio through Michigan and Illinois \u2014 where steel mills, auto plants, and related factories closed or shrank. The chart's falling union share reflects the same industrial decline, since those regions had been the heart of unionized manufacturing.",
+    "option_explanations": {
+      "A": "Incorrect. Cotton-belt decline belongs to an earlier agricultural story, not to the 1980s industrial term 'Rust Belt.'",
+      "B": "Incorrect. Pacific fishing losses were a regional issue, not what the nationally used term 'Rust Belt' described.",
+      "C": "Correct. The name evokes literally rusting industrial plants, and the region's unionized factory workforce shrank alongside the plants, as the chart's decline from 20.1 to 13.5 percent by 2000 shows.",
+      "D": "Incorrect. Gold Rush ghost towns date to the nineteenth century and are not the subject of a term coined for 1980s industrial decline."
+    },
+    "period": "U9",
+    "skill": "Contextualization",
+    "reasoning": "Continuity & Change",
+    "themes": ["GEO", "WXT"],
+    "difficulty": "medium",
+    "fact_source": "u9.md \u00a7What the exam tests here \u2014 globalization's winners and losers; \u00a7Key terms \u2014 PATCO strike, 'landmark defeat for organized labor'",
+    "stream": "drill"
+  },
+  {
+    "id": "original-u9-deindust-13",
+    "type": "mcq",
+    "stem": "Historians note that U.S. manufacturing output kept growing in the late twentieth century even as manufacturing employment fell. Which conclusion follows from these two facts together?",
+    "options": [
+      "(A) American factories stopped producing goods entirely and the output figures are fabricated.",
+      "(B) Output statistics from this era are meaningless and should be ignored by historians.",
+      "(C) Employment fell only because of NAFTA, which took effect in 1994.",
+      "(D) Automation raised output per worker, so fewer workers could produce more goods than before."
+    ],
+    "key": "D",
+    "explanation": "If output rises while employment falls, each remaining worker must be producing more \u2014 the definition of rising productivity. Computer-controlled machinery, robotics, and leaner production methods let American plants make more with smaller workforces, so deindustrialization was about jobs, not about the end of American manufacturing itself.",
+    "option_explanations": {
+      "A": "Incorrect. The premise states that output kept growing, which contradicts the claim that factories stopped producing.",
+      "B": "Incorrect. The statistics are consistent and meaningful; dismissing data is not a historical conclusion.",
+      "C": "Incorrect. The employment decline began in the early 1980s, more than a decade before NAFTA, and NAFTA alone cannot explain the productivity arithmetic.",
+      "D": "Correct. Rising output with falling employment is exactly what productivity growth through automation produces, and it explains why factory towns could suffer even while American manufacturing output grew."
+    },
+    "period": "U9",
+    "skill": "Developments & Processes",
+    "reasoning": "Causation",
+    "themes": ["WXT", "PCE"],
+    "difficulty": "hard",
+    "fact_source": "u9.md \u00a7The story \u2014 tech boom and globalization-era restructuring; \u00a7What the exam tests here \u2014 globalization's winners and losers",
+    "stream": "drill"
+  },
+  {
+    "id": "original-u9-deindust-14",
+    "type": "mcq",
+    "stem": "Under Reagan, deregulation accelerated across airlines, banking, energy, and communications. A supporter of deregulation in this era would most likely argue that it would do which of the following?",
+    "options": [
+      "(A) Lower prices and increase competition by removing government-set rates and barriers to entry.",
+      "(B) Guarantee every worker a lifetime union job regardless of business conditions.",
+      "(C) Raise consumer prices in order to protect small businesses from competition.",
+      "(D) Transfer ownership of the affected industries to the federal government."
+    ],
+    "key": "A",
+    "explanation": "Deregulation's advocates argued that government rate-setting and entry restrictions protected incumbents and inflated prices. Removing those rules, they claimed, would let new competitors enter \u2014 as happened with discount airlines \u2014 forcing prices down and improving service.",
+    "option_explanations": {
+      "A": "Correct. This was the core pro-deregulation argument: competition, not regulators, would discipline prices, a claim borne out in industries like airlines and long-distance calling.",
+      "B": "Incorrect. Deregulation aimed to expose firms to market competition, which tended to weaken rather than guarantee union job security.",
+      "C": "Incorrect. Supporters promised lower prices through competition; protecting businesses by raising prices was the opposite of their case.",
+      "D": "Incorrect. Nationalization is government takeover of industry \u2014 the reverse of deregulation, which reduced government's role."
+    },
+    "period": "U9",
+    "skill": "Making Connections",
+    "reasoning": "Causation",
+    "themes": ["PCE", "WXT"],
+    "difficulty": "medium",
+    "fact_source": "u9.md \u00a7Key terms \u2014 Deregulation: 'the rollback of federal rules on business, accelerating under Reagan across airlines, banking, energy, and communications'",
+    "stream": "drill"
+  },
+  {
+    "id": "original-u9-deindust-15",
+    "type": "mcq",
+    "stem": "The chart shows U.S. manufacturing employment rising from 16.7 million in 1983 to 17.9 million in 1989, then falling again afterward. Which statement best interprets this pattern?",
+    "stimulus": {"kind": "chart", "chart_spec": {"type": "line", "title": "U.S. Manufacturing Employment, 1979\u20132000", "x_label": "Year", "y_label": "Millions of workers", "labels": ["1979", "1983", "1989", "1993", "2000"], "values": [19.4, 16.7, 17.9, 16.7, 17.3], "source_note": "Approximate figures consistent with the manufacturing job losses of the globalization era described in u9.md \u00a7The story and \u00a7What the exam tests here."}},
+    "options": [
+      "(A) Deindustrialization ended permanently in 1983 and never resumed.",
+      "(B) Employment rebounded during the 1980s expansion but stayed well below the 1979 peak, consistent with an ongoing long-term decline.",
+      "(C) The recovery proves that trade policy had no effect on manufacturing jobs at any point.",
+      "(D) Manufacturing employment in 1989 exceeded the 1979 peak of 19.4 million."
+    ],
+    "key": "B",
+    "explanation": "The 1983\u201389 rebound was a cyclical recovery within a structural decline: the economy grew strongly in the mid-1980s, so factories hired, but employment never approached the 19.4 million of 1979, and it fell again in the early 1990s. Short-term recoveries can occur inside long-term downward trends.",
+    "option_explanations": {
+      "A": "Incorrect. Employment fell again after 1989, reaching 16.7 million in 1993, so the decline clearly resumed.",
+      "B": "Correct. It accounts for both the mid-1980s uptick and the failure to regain the 1979 peak, reading the recovery as cyclical movement inside a structural decline.",
+      "C": "Incorrect. A partial employment rebound does not isolate trade policy's effects; the chart alone cannot prove anything about trade policy's role.",
+      "D": "Incorrect. The chart plots 17.9 million for 1989, which is below \u2014 not above \u2014 the 19.4 million peak of 1979."
+    },
+    "period": "U9",
+    "skill": "Claims & Evidence in Sources",
+    "reasoning": "Continuity & Change",
+    "themes": ["WXT"],
+    "difficulty": "medium",
+    "fact_source": "u9.md \u00a7The story \u2014 Reagan-era growth alongside restructuring; \u00a7What the exam tests here \u2014 globalization's winners and losers",
+    "stream": "drill"
+  },
+  {
+    "id": "original-u9-deindust-16",
+    "type": "mcq",
+    "stem": "As population and jobs shifted toward the Sun Belt in the late twentieth century, which political consequence followed?",
+    "options": [
+      "(A) The Northeast permanently gained electoral votes because the census stopped counting Sun Belt residents.",
+      "(B) Southern and western states lost all of their influence in Congress.",
+      "(C) Sun Belt states gained House seats and electoral votes through reapportionment, shifting political weight south and west.",
+      "(D) Congress abolished the census, freezing the House at its 1960 apportionment."
+    ],
+    "key": "C",
+    "explanation": "House seats and electoral votes are reapportioned after each census according to population. As Americans moved to the Sun Belt, states such as Texas, Florida, and California gained representation while Rust Belt states such as New York, Pennsylvania, and Ohio lost seats, moving political power toward the growing regions.",
+    "option_explanations": {
+      "A": "Incorrect. The census counts all residents, and the Northeast lost seats as its share of the national population shrank.",
+      "B": "Incorrect. The South and West gained influence through reapportionment; they did not lose it.",
+      "C": "Correct. Reapportionment mechanically transfers representation to faster-growing states, which is why Sun Belt growth translated directly into political weight.",
+      "D": "Incorrect. The census continued every ten years, and reapportionment proceeded normally after each one."
+    },
+    "period": "U9",
+    "skill": "Making Connections",
+    "reasoning": "Comparison",
+    "themes": ["PCE", "GEO", "MIG"],
+    "difficulty": "hard",
+    "fact_source": "u9.md \u00a7The story \u2014 regional and demographic shifts of the era; \u00a7What the exam tests here \u2014 polarization and its structural causes",
+    "stream": "drill"
+  },
+  {
+    "id": "original-u9-deindust-17",
+    "type": "mcq",
+    "stem": "After NAFTA took effect, factory zones called maquiladoras expanded rapidly along the U.S.\u2013Mexico border. Their growth best illustrates which of the following?",
+    "options": [
+      "(A) Mexico's refusal to trade with the United States after 1994.",
+      "(B) The decline of all cross-border commerce in North America.",
+      "(C) A mass permanent migration of American tourists to Mexican resort towns.",
+      "(D) How lower tariffs let firms combine U.S. management and consumer markets with Mexican labor in a single cross-border production system."
+    ],
+    "key": "D",
+    "explanation": "Maquiladoras were assembly plants just south of the border where firms used lower-wage Mexican labor to build goods \u2014 often from U.S.-made components \u2014 for sale back in the American market. They were the physical embodiment of the integrated North American supply chains NAFTA was designed to create.",
+    "option_explanations": {
+      "A": "Incorrect. Maquiladoras existed precisely because Mexico traded intensively with the United States; the plants assembled goods for the U.S. market.",
+      "B": "Incorrect. Cross-border commerce grew enormously after NAFTA; the maquiladoras were evidence of its expansion, not its decline.",
+      "C": "Incorrect. Maquiladoras were industrial workplaces, not tourist destinations, and their workforce was Mexican, not American tourists.",
+      "D": "Correct. The plants show how tariff cuts reorganized production geographically, splitting design, management, and consumption from assembly across the border."
+    },
+    "period": "U9",
+    "skill": "Developments & Processes",
+    "reasoning": "Causation",
+    "themes": ["GEO", "WXT", "WOR"],
+    "difficulty": "medium",
+    "fact_source": "u9.md \u00a7Key terms \u2014 NAFTA (1994): 'the free-trade agreement linking the U.S., Canada, and Mexico'; \u00a7The story \u2014 globalization era",
+    "stream": "drill"
+  },
+  {
+    "id": "original-u9-deindust-18",
+    "type": "mcq",
+    "stem": "Supply-side theory predicted that the 1981 tax cuts would unleash enough growth to pay for themselves. The chart shows the federal deficit reaching $221 billion in 1986. What does that figure suggest about the prediction?",
+    "stimulus": {"kind": "chart", "chart_spec": {"type": "line", "title": "Federal Budget Deficit (+) / Surplus (\u2212), 1980\u20132000", "x_label": "Year", "y_label": "Billions of dollars (negative = surplus)", "labels": ["1980", "1983", "1986", "1989", "1992", "1998", "2000"], "values": [74, 208, 221, 153, 290, -69, -236], "source_note": "Approximate figures; Reagan-era deficits per u9.md \u00a7The story ('Growth did return, but so did huge deficits')."}},
+    "options": [
+      "(A) The prediction failed in the short run: five years after the cuts, the deficit was roughly three times its 1980 level.",
+      "(B) The prediction was confirmed, because any economic growth at all counts as the cuts paying for themselves.",
+      "(C) The chart shows the tax cuts caused the deficit to disappear by 1986.",
+      "(D) Deficit figures are irrelevant to evaluating supply-side theory."
+    ],
+    "key": "A",
+    "explanation": "The theory's testable claim was that growth would generate enough new revenue to offset the cuts. Instead, the deficit roughly tripled between 1980 ($74 billion) and 1986 ($221 billion). Growth did return, but revenues did not keep pace with the combination of lower rates and higher defense spending.",
+    "option_explanations": {
+      "A": "Correct. The chart's own numbers \u2014 $74 billion in 1980 versus $221 billion in 1986 \u2014 show the deficit growing enormously after the cuts, contradicting the pay-for-themselves prediction.",
+      "B": "Incorrect. The theory required growth large enough to replace the lost revenue; merely having some growth while deficits tripled does not meet that test.",
+      "C": "Incorrect. The chart shows a $221 billion deficit in 1986, not a disappearance of the deficit.",
+      "D": "Incorrect. The deficit is the direct measure of whether the cuts paid for themselves; it is the most relevant evidence available."
+    },
+    "period": "U9",
+    "skill": "Claims & Evidence in Sources",
+    "reasoning": "Causation",
+    "themes": ["PCE", "WXT"],
+    "difficulty": "hard",
+    "fact_source": "u9.md \u00a7The story \u2014 'Growth did return, but so did huge deficits'; \u00a7Key terms \u2014 Reaganomics / supply-side economics",
+    "stream": "drill"
+  },
+  {
+    "id": "original-u9-deindust-19",
+    "type": "mcq",
+    "stem": "According to the chart of union membership as a share of U.S. workers, in which period did membership fall by the largest number of percentage points?",
+    "stimulus": {"kind": "chart", "chart_spec": {"type": "line", "title": "Union Membership as Share of U.S. Workers, 1980\u20132020", "x_label": "Year", "y_label": "Percent of workers", "labels": ["1980", "1985", "1990", "1995", "2000", "2020"], "values": [20.1, 18.0, 16.1, 14.9, 13.5, 10.8], "source_note": "Approximate figures; the steady decline follows the PATCO turning point described in u9.md \u00a7Key terms (PATCO strike, 1981)."}},
+    "options": [
+      "(A) 1990\u20132000, when membership fell from 16.1 to 13.5 percent.",
+      "(B) 2000\u20132020, when membership fell from 13.5 to 10.8 percent.",
+      "(C) 1980\u20131990, when membership fell from 20.1 to 16.1 percent.",
+      "(D) The chart shows no clear difference among the periods."
+    ],
+    "key": "C",
+    "explanation": "The drops are 4.0 points in the 1980s (20.1 to 16.1), 2.6 points in the 1990s (16.1 to 13.5), and 2.7 points from 2000 to 2020 (13.5 to 10.8). The steepest fall came in the 1980s, the decade of the PATCO firings and the sharpest factory-closure wave.",
+    "option_explanations": {
+      "A": "Incorrect. The 1990s drop was 2.6 percentage points (16.1 minus 13.5), smaller than the 1980s drop.",
+      "B": "Incorrect. The 2000\u20132020 drop was 2.7 percentage points (13.5 minus 10.8), smaller than the 1980s drop.",
+      "C": "Correct. Subtracting gives 20.1 minus 16.1, a 4.0-point fall \u2014 the largest of the three periods.",
+      "D": "Incorrect. The chart's values allow direct subtraction, and the differences among periods are clear."
+    },
+    "period": "U9",
+    "skill": "Claims & Evidence in Sources",
+    "reasoning": "Continuity & Change",
+    "themes": ["WXT", "PCE"],
+    "difficulty": "medium",
+    "fact_source": "u9.md \u00a7Key terms \u2014 PATCO strike (1981), 'a landmark defeat for organized labor'",
+    "stream": "drill"
+  },
+  {
+    "id": "original-u9-deindust-20",
+    "type": "mcq",
+    "stem": "Which statement best captures historians' consensus on who gained and who lost from post-1990 globalization within the United States?",
+    "options": [
+      "(A) Every American gained equally, and no workers were harmed by expanded trade.",
+      "(B) Only wealthy Americans lost, because imports destroyed the country's luxury industries.",
+      "(C) Globalization had no measurable effects on the domestic American economy at all.",
+      "(D) Consumers and highly skilled workers generally gained through lower prices and new markets, while less-skilled industrial workers faced wage pressure and job losses."
+    ],
+    "key": "D",
+    "explanation": "Globalization's domestic effects were split. Shoppers benefited from cheaper imported goods and investors and professionals from access to world markets, but factory workers competing with low-wage labor abroad saw plants close and wages stagnate \u2014 the divide that later fueled the political backlash against trade deals.",
+    "option_explanations": {
+      "A": "Incorrect. The gains were real but uneven; millions of manufacturing workers lost jobs or accepted lower pay, so 'everyone gained equally' misdescribes the record.",
+      "B": "Incorrect. Wealthy Americans and investors were generally among globalization's beneficiaries, not its victims.",
+      "C": "Incorrect. Trade's domestic effects were large and well documented, from the Rust Belt's factory losses to the export boom in agriculture, technology, and services.",
+      "D": "Correct. It states the standard finding: diffuse benefits for consumers and the highly skilled, concentrated costs for less-skilled industrial workers \u2014 the 'who gained, who lost' pattern the review asks students to know."
+    },
+    "period": "U9",
+    "skill": "Argumentation",
+    "reasoning": "Continuity & Change",
+    "themes": ["WXT", "PCE", "SOC"],
+    "difficulty": "hard",
+    "fact_source": "u9.md \u00a7What the exam tests here \u2014 'know who gained, who lost, and where the political backlash came from'",
+    "stream": "drill"
+  }
+]}

@@ -1,0 +1,390 @@
+{
+  "items": [
+    {
+      "id": "original-u9-c21-11",
+      "type": "mcq",
+      "stem": "Barack Obama's election in 2008 was historic as the first Black presidency, and some commentators called it a 'post-racial' milestone. What does the review's later account suggest about that reading?",
+      "options": [
+        "(A) The reading was fully confirmed: racial conflict disappeared from American politics entirely after 2008, never to return.",
+        "(B) The reading was premature: racial conflict continued through Black Lives Matter and demographic-change politics.",
+        "(C) The reading was irrelevant because Obama's race was never mentioned during the campaign.",
+        "(D) The reading was proven by the immediate repeal of all civil rights laws."
+      ],
+      "key": "B",
+      "explanation": "The review presents Obama's election as genuinely historic but not transformative of racial politics: it then describes Black Lives Matter organizing, backlash politics around immigration and demographic change, and deepening polarization. Symbolism and structural conflict coexisted.",
+      "option_explanations": {
+        "A": "Incorrect. The review documents major racial-justice movements and conflicts after 2008, contradicting any claim that racial conflict ended.",
+        "B": "Correct. It follows the review's narrative arc: a milestone election followed by, not replacing, ongoing struggles over race and identity.",
+        "C": "Incorrect. Obama's race was widely discussed throughout the campaign and presidency; it was not ignored.",
+        "D": "Incorrect. No civil rights laws were repealed; the claim is factually false."
+      },
+      "period": "U9",
+      "skill": "Contextualization",
+      "reasoning": "Causation",
+      "themes": [
+        "NAT",
+        "PCE",
+        "SOC"
+      ],
+      "difficulty": "medium",
+      "fact_source": "u9.md §The story — Obama's 2008 election 'was read by some as a post-racial milestone'; later 'movements from Occupy to Black Lives Matter to #MeToo'",
+      "stream": "drill"
+    },
+    {
+      "id": "original-u9-c21-12",
+      "type": "mcq",
+      "stem": "The Affordable Care Act (2010) extended health coverage to millions of Americans. Why did it become, in the review's words, 'the decade's defining political war'?",
+      "options": [
+        "(A) It was the first law Congress ever passed, so no one understood it.",
+        "(B) It abolished all private health insurance immediately upon passage, ending the entire American health insurance industry overnight.",
+        "(C) The largest welfare-state expansion since the Great Society — opponents saw federal overreach, fueling the Tea Party.",
+        "(D) It was ignored by both political parties and never implemented."
+      ],
+      "key": "C",
+      "explanation": "The ACA's scale is what made it explosive: the biggest federal health intervention since Medicare and Medicaid. Supporters saw millions gaining coverage; opponents saw Washington seizing one-sixth of the economy. That collision — not the law's details — made it the decade's central political fight.",
+      "option_explanations": {
+        "A": "Incorrect. Congress had passed thousands of laws; the ACA's controversy came from its substance, not its novelty as legislation.",
+        "B": "Incorrect. The ACA built on the existing private-insurance system through exchanges and mandates; it did not abolish private insurance.",
+        "C": "Correct. It identifies the stakes both sides perceived — a Great Society-scale expansion — which explains the intensity and duration of the conflict.",
+        "D": "Incorrect. The ACA was fiercely contested precisely because it was implemented and affected millions."
+      },
+      "period": "U9",
+      "skill": "Developments & Processes",
+      "reasoning": "Causation",
+      "themes": [
+        "PCE"
+      ],
+      "difficulty": "medium",
+      "fact_source": "u9.md §The story — ACA (2010) 'extended health coverage to millions and became the decade's defining political war, fueling the Tea Party revolt'; §Key terms — Affordable Care Act (2010)",
+      "stream": "drill"
+    },
+    {
+      "id": "original-u9-c21-13",
+      "type": "mcq",
+      "stem": "The chart shows home prices collapsing after 2006, the trigger for the bank bailouts and recession that followed. The Tea Party movement that arose around 2009–2010 was primarily a reaction against which of the following?",
+      "stimulus": {
+        "kind": "chart",
+        "chart_spec": {
+          "type": "line",
+          "title": "U.S. Home Price Index, 2000–2012 (2000 = 100)",
+          "x_label": "Year",
+          "y_label": "Index (2000 = 100)",
+          "labels": [
+            "2000",
+            "2003",
+            "2006",
+            "2009",
+            "2012"
+          ],
+          "values": [
+            100,
+            130,
+            184,
+            134,
+            140
+          ],
+          "source_note": "Approximate figures; the housing collapse behind the bailouts and recession in u9.md §The story."
+        }
+      },
+      "options": [
+        "(A) The movement supported the bailouts and demanded even larger ones.",
+        "(B) The movement was primarily about foreign policy and military strategy abroad, not about domestic spending at all.",
+        "(C) The movement demanded the nationalization of all American banks.",
+        "(D) The bailouts, stimulus, and ACA — seen as government overreach and reckless spending after the crisis."
+      ],
+      "key": "D",
+      "explanation": "The Tea Party read the crisis the chart documents as proof of government's failure — then watched Washington respond with trillion-dollar interventions. To its supporters, TARP, the stimulus, and the ACA were a single story: elites spending taxpayer money to fix problems government had helped create.",
+      "option_explanations": {
+        "A": "Incorrect. The Tea Party fiercely opposed the bailouts; supporting larger ones was the opposite of its position.",
+        "B": "Incorrect. The movement focused overwhelmingly on domestic spending, debt, and the size of government, not on foreign policy.",
+        "C": "Incorrect. Nationalizing banks was a left-wing demand; the Tea Party wanted less government involvement, not more.",
+        "D": "Correct. It names the three interventions the movement organized against, tying them to the crisis visible in the chart."
+      },
+      "period": "U9",
+      "skill": "Making Connections",
+      "reasoning": "Causation",
+      "themes": [
+        "PCE",
+        "WXT"
+      ],
+      "difficulty": "medium",
+      "fact_source": "u9.md §The story — ACA 'became the decade's defining political war, fueling the Tea Party revolt'; TARP 'fed a populist fury on both left and right'",
+      "stream": "drill"
+    },
+    {
+      "id": "original-u9-c21-14",
+      "type": "mcq",
+      "stem": "The review lists the 2000 election, impeachment politics, and the Tea Party as markers of polarization, and names 'media fragmentation' and 'partisan sorting' among its structural causes. What does 'partisan sorting' mean in this context?",
+      "options": [
+        "(A) Americans clustered into like-minded communities and media, so parties grew uniform internally and distant from each other.",
+        "(B) The government assigned every citizen to a political party by lottery.",
+        "(C) Both parties merged into a single centrist party with no differences.",
+        "(D) Voters stopped sorting geographically and began living in politically mixed neighborhoods across the entire country, reversing the trend."
+      ],
+      "key": "A",
+      "explanation": "Sorting means the parties became purer: conservative Democrats and liberal Republicans — common through the 1970s — mostly vanished as voters, activists, and donors aligned party with ideology, region, and lifestyle. With fewer cross-pressured members, compromise lost its constituency and conflict became the parties' normal state.",
+      "option_explanations": {
+        "A": "Correct. It defines the term accurately: ideological and geographic self-segregation producing homogeneous, mutually distant parties.",
+        "B": "Incorrect. Party affiliation remained voluntary; sorting describes voluntary clustering, not government assignment.",
+        "C": "Incorrect. The parties grew more distinct, not merged; sorting is the opposite of convergence.",
+        "D": "Incorrect. Geographic evidence shows the reverse: politically like-minded people increasingly lived near one another."
+      },
+      "period": "U9",
+      "skill": "Developments & Processes",
+      "reasoning": "Causation",
+      "themes": [
+        "PCE"
+      ],
+      "difficulty": "medium",
+      "fact_source": "u9.md §What the exam tests here — 'Explain polarization (Politics and Power): know the markers — the 2000 election, impeachment politics, the Tea Party — and the structural causes the exam looks for, from media fragmentation to partisan sorting'",
+      "stream": "drill"
+    },
+    {
+      "id": "original-u9-c21-15",
+      "type": "mcq",
+      "stem": "Bush v. Gore (2000), in which the Supreme Court halted the Florida recount, is significant in the story of polarization for which reason?",
+      "options": [
+        "(A) It was the first time the Supreme Court ever decided a case.",
+        "(B) Both candidates agreed the decision was unimportant and the American public ignored it completely, paying it no attention.",
+        "(C) The 5–4 decision effectively gave Bush the presidency, leaving the country 'evenly and bitterly divided.'",
+        "(D) It caused the immediate abolition of the Electoral College."
+      ],
+      "key": "C",
+      "explanation": "Half the country believed the presidency had been awarded rather than won. Bush took office without a popular-vote majority and under a cloud of illegitimacy among Democrats — a wound that never healed during his presidency and that inaugurated the era's politics of disputed legitimacy.",
+      "option_explanations": {
+        "A": "Incorrect. The Court had decided thousands of cases over two centuries; the case's significance was political, not institutional novelty.",
+        "B": "Incorrect. The decision was intensely contested and closely watched; it was among the most controversial rulings in the Court's history.",
+        "C": "Correct. It states the decision's effect and quotes the review's description of the divided country it left behind.",
+        "D": "Incorrect. The Electoral College was not abolished; it remains the mechanism for choosing presidents."
+      },
+      "period": "U9",
+      "skill": "Developments & Processes",
+      "reasoning": "Causation",
+      "themes": [
+        "PCE"
+      ],
+      "difficulty": "medium",
+      "fact_source": "u9.md §The story — 'The 2000 election, decided by the Supreme Court in Bush v. Gore, left the country evenly and bitterly divided'; §Key terms — Bush v. Gore (2000)",
+      "stream": "drill"
+    },
+    {
+      "id": "original-u9-c21-16",
+      "type": "mcq",
+      "stem": "Bill Clinton was impeached by the House in 1998 over the Lewinsky scandal and acquitted by the Senate. How does this episode fit the review's account of polarization?",
+      "options": [
+        "(A) It showed that impeachment had become a routine, nonpartisan legal procedure.",
+        "(B) It proved that the Senate always convicts impeached presidents.",
+        "(C) It demonstrated broad bipartisan agreement that the president should remain in office without any serious challenge from either party.",
+        "(D) Impeachment became a partisan weapon: party-line votes, with the public seeing politics rather than neutral justice."
+      ],
+      "key": "D",
+      "explanation": "The review lists 'impeachment politics' among polarization's markers. Clinton's impeachment — pursued by a Republican House over the objections of most Democrats, ending in a Senate acquittal — taught both parties that impeachment could be deployed as a partisan instrument, a lesson reprised in later decades.",
+      "option_explanations": {
+        "A": "Incorrect. The proceedings were intensely partisan, not nonpartisan; party-line voting defined both the House and Senate phases.",
+        "B": "Incorrect. The Senate acquitted Clinton, as it has acquitted every impeached president in American history.",
+        "C": "Incorrect. The House majority voted to impeach; there was no bipartisan consensus for keeping him without a fight.",
+        "D": "Correct. It captures the polarization dynamic: a constitutional tool used along party lines, deepening the era's partisan warfare."
+      },
+      "period": "U9",
+      "skill": "Making Connections",
+      "reasoning": "Comparison",
+      "themes": [
+        "PCE"
+      ],
+      "difficulty": "hard",
+      "fact_source": "u9.md §The story — Clinton 'was impeached in 1998 over the Lewinsky scandal and acquitted by the Senate'; §What the exam tests here — polarization markers: 'impeachment politics'",
+      "stream": "drill"
+    },
+    {
+      "id": "original-u9-c21-17",
+      "type": "mcq",
+      "stem": "The chart shows the federal deficit peaking at $290 billion in 1992, then swinging to surplus by 1998. The Contract with America (1994) — the platform behind the Republican takeover of Congress — was significant for which reason?",
+      "stimulus": {
+        "kind": "chart",
+        "chart_spec": {
+          "type": "line",
+          "title": "Federal Budget Deficit (+) / Surplus (−), 1980–2000",
+          "x_label": "Year",
+          "y_label": "Billions of dollars (negative = surplus)",
+          "labels": [
+            "1980",
+            "1983",
+            "1986",
+            "1989",
+            "1992",
+            "1998",
+            "2000"
+          ],
+          "values": [
+            74,
+            208,
+            221,
+            153,
+            290,
+            -69,
+            -236
+          ],
+          "source_note": "Approximate figures; the deficit politics behind the 1994 election and the later surpluses per u9.md §The story."
+        }
+      },
+      "options": [
+        "(A) It nationalized the elections around small-government promises, winning Congress for the GOP after 40 years.",
+        "(B) It was a Democratic platform that expanded the welfare state.",
+        "(C) It had no effect whatsoever on the 1994 midterm elections, which the Democrats won easily in a historic nationwide landslide.",
+        "(D) It proposed abolishing Congress entirely."
+      ],
+      "key": "A",
+      "explanation": "The 1994 campaign unfolded against the chart's $290 billion deficit backdrop — a symbol, for conservatives, of government's failure. The Contract gave Republican House candidates a unified national platform of tax cuts, welfare reform, and balanced-budget promises, producing the first GOP House majority since 1954.",
+      "option_explanations": {
+        "A": "Correct. It connects the platform's content to its result and to the fiscal anxieties visible in the chart's 1992 deficit peak.",
+        "B": "Incorrect. The Contract was a Republican document promising smaller government, not a Democratic welfare expansion.",
+        "C": "Incorrect. Republicans won both houses of Congress in 1994 in a historic landslide; Democrats lost badly.",
+        "D": "Incorrect. The Contract sought to reform Congress's operations, not to abolish the institution."
+      },
+      "period": "U9",
+      "skill": "Contextualization",
+      "reasoning": "Causation",
+      "themes": [
+        "PCE"
+      ],
+      "difficulty": "medium",
+      "fact_source": "u9.md §Key terms — Contract with America (1994): 'the GOP platform behind the Republican takeover of Congress, promising smaller government and conservative reform'",
+      "stream": "drill"
+    },
+    {
+      "id": "original-u9-c21-18",
+      "type": "mcq",
+      "stem": "The welfare reform law of 1996 replaced open-ended federal welfare with time-limited, work-conditioned aid. Its passage is best understood as which of the following?",
+      "options": [
+        "(A) A purely Republican achievement passed over a Democratic president’s veto by Congress.",
+        "(B) A Democratic president adopting conservative premises: Clinton's 'triangulation' strategy in the 1990s.",
+        "(C) An expansion of federal welfare spending to record levels.",
+        "(D) A law with no connection to the broader political debates of the 1990s."
+      ],
+      "key": "B",
+      "explanation": "Welfare reform showed how far the conservative tide had run: a Democratic president signed a law ending welfare as an entitlement, imposing work requirements and time limits. Clinton's triangulation — positioning between congressional Republicans and liberal Democrats — made a traditionally conservative reform into bipartisan law.",
+      "option_explanations": {
+        "A": "Incorrect. Clinton signed the law; it was a bipartisan achievement, not a veto override.",
+        "B": "Correct. It places the law in the review's triangulation narrative: the conservative era's premises adopted by a Democratic president.",
+        "C": "Incorrect. The law restricted and devolved welfare spending; it did not expand it.",
+        "D": "Incorrect. The law was central to 1990s debates about government's proper size and role."
+      },
+      "period": "U9",
+      "skill": "Developments & Processes",
+      "reasoning": "Causation",
+      "themes": [
+        "PCE"
+      ],
+      "difficulty": "medium",
+      "fact_source": "u9.md §The story — Clinton 'triangulated: a Democrat who declared \"the era of big government is over,\" signed welfare reform (1996)'; §Key terms — Welfare reform (1996)",
+      "stream": "drill"
+    },
+    {
+      "id": "original-u9-c21-19",
+      "type": "mcq",
+      "stem": "The chart shows U.S. military spending rising from $294 billion in 2000 to $721 billion in 2010 as the War on Terror expanded. Drone warfare became central to that war under President Obama. Which statement best evaluates what drones changed and what they continued?",
+      "stimulus": {
+        "kind": "chart",
+        "chart_spec": {
+          "type": "line",
+          "title": "U.S. Military Spending, 1980–2010 (nominal)",
+          "x_label": "Year",
+          "y_label": "Billions of dollars",
+          "labels": [
+            "1980",
+            "1990",
+            "2000",
+            "2005",
+            "2010"
+          ],
+          "values": [
+            134,
+            299,
+            294,
+            495,
+            721
+          ],
+          "source_note": "Approximate figures; the War on Terror's 'long, costly occupation' described in u9.md §The story."
+        }
+      },
+      "options": [
+        "(A) Drones ended all American military involvement abroad.",
+        "(B) Drones were used only for delivering mail to troops in the field.",
+        "(C) Drones made war more expensive for the United States than any previous weapon in all of American history.",
+        "(D) Drones kept the reliance on air power to limit American casualties, but made remote targeted killing routine and contested."
+      ],
+      "key": "D",
+      "explanation": "The chart's spending surge funded a war fought increasingly from the air and by remote control. Drones extended a long American tradition — substituting technology for infantry — while creating genuinely new questions: killings ordered far from any battlefield, civilian casualties from misidentification, and a presidency claiming authority to target individuals, including citizens, without trial.",
+      "option_explanations": {
+        "A": "Incorrect. Drone strikes were a form of continued involvement, not an end to it; the wars in Afghanistan and elsewhere persisted.",
+        "B": "Incorrect. Drones were armed weapons platforms used for surveillance and strikes, not mail carriers.",
+        "C": "Incorrect. Drones were far cheaper than the manned aircraft and ground deployments they partly replaced; cost was among their attractions.",
+        "D": "Correct. It distinguishes the continuity (technology substituting for troops, within the spending surge the chart shows) from the change (remote targeted killing as routine practice)."
+      },
+      "period": "U9",
+      "skill": "Argumentation",
+      "reasoning": "Continuity & Change",
+      "themes": [
+        "WOR",
+        "PCE"
+      ],
+      "difficulty": "hard",
+      "fact_source": "u9.md §Key terms — War on Terror: 'Afghanistan, Iraq, drone warfare, and a global counterterrorism apparatus'",
+      "stream": "drill"
+    },
+    {
+      "id": "original-u9-c21-20",
+      "type": "mcq",
+      "stem": "The chart shows U.S. manufacturing employment never regaining its 1979 peak across two decades — the domestic face of globalization. The review says Donald Trump's 2016 election 'channeled the backlash: against globalization, against immigration, against the political establishment itself.' Which groups' grievances did this coalition most directly express?",
+      "stimulus": {
+        "kind": "chart",
+        "chart_spec": {
+          "type": "line",
+          "title": "U.S. Manufacturing Employment, 1979–2000",
+          "x_label": "Year",
+          "y_label": "Millions of workers",
+          "labels": [
+            "1979",
+            "1983",
+            "1989",
+            "1993",
+            "2000"
+          ],
+          "values": [
+            19.4,
+            16.7,
+            17.9,
+            16.7,
+            17.3
+          ],
+          "source_note": "Approximate figures consistent with the manufacturing job losses of the globalization era described in u9.md §The story and §What the exam tests here."
+        }
+      },
+      "options": [
+        "(A) Only wealthy investors who had profited from globalization.",
+        "(B) Only recent immigrants seeking faster citizenship.",
+        "(C) Workers hurt by globalization, voters alarmed by demographic change, citizens distrustful of both parties.",
+        "(D) Only residents of the Sun Belt who had benefited handsomely from economic growth and rising prosperity throughout the region."
+      ],
+      "key": "C",
+      "explanation": "The review names three backlashes, and the chart grounds the first: two decades of manufacturing employment below its 1979 peak meant real communities felt the costs of globalization. Combined with the anxieties of demographic change and contempt for the establishment that had presided over both, the result was the coalition that carried 2016.",
+      "option_explanations": {
+        "A": "Incorrect. Wealthy investors were generally globalization's beneficiaries, not the backlash's foot soldiers.",
+        "B": "Incorrect. The backlash was directed against immigration, not composed of immigrants seeking citizenship.",
+        "C": "Correct. It assembles the review's three backlashes — globalization (grounded in the chart's manufacturing-employment decline), immigration, and the establishment — into the coalition described.",
+        "D": "Incorrect. Sun Belt beneficiaries of growth were not the backlash's core; the grievances centered on those the economy had left behind."
+      },
+      "period": "U9",
+      "skill": "Contextualization",
+      "reasoning": "Causation",
+      "themes": [
+        "PCE",
+        "WXT",
+        "MIG"
+      ],
+      "difficulty": "medium",
+      "fact_source": "u9.md §The story — Trump's 2016 election 'channeled the backlash: against globalization, against immigration, against the political establishment itself'; §What the exam tests here — globalization's winners and losers",
+      "stream": "drill"
+    }
+  ]
+}

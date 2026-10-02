@@ -1,0 +1,477 @@
+{
+ "items": [
+  {
+   "difficulty": "medium",
+   "explanation": "The chart shows 25 percent in 1970 and 10 percent in 2010. A fall from 25 to 10 is a decline of 15 percentage points, which is 60 percent of the starting level — more than half.",
+   "fact_source": "u9.md §Added 2026-10-01 deindustrialization — manufacturing's share of employment fell from roughly a quarter of jobs around 1970 toward about a tenth by 2010 (approximate)",
+   "id": "original-u9-deindust-v2-01",
+   "key": "B",
+   "option_explanations": {
+    "A": "Wrong. The chart shows 25 percent in 1970 and 10 percent in 2010 — a large drop, not stability.",
+    "B": "Correct. Falling from 25 percent to 10 percent is a decline of more than half of the 1970 level.",
+    "C": "Wrong. The chart measures manufacturing's share of employment, not output. The review says output stayed high thanks to productivity gains.",
+    "D": "Wrong. The chart shows a trend over time; it does not by itself identify causes. The review names several causes, including foreign competition, productivity gains, and offshoring."
+   },
+   "options": [
+    "(A) Manufacturing's share of jobs stayed about the same across the four decades.",
+    "(B) Manufacturing's share of jobs fell by more than half between 1970 and 2010.",
+    "(C) Manufacturing output fell by more than half between 1970 and 2010.",
+    "(D) The chart proves that trade deals caused manufacturing's decline."
+   ],
+   "period": "U9",
+   "reasoning": "Continuity & Change",
+   "skill": "Developments & Processes",
+   "stem": "The chart compares manufacturing's share of American jobs in 1970 and 2010. Which claim about the change is best supported by the data?",
+   "stimulus": {
+    "chart_spec": {
+     "labels": [
+      "1970",
+      "2010"
+     ],
+     "source_note": "figures from u9.md §Added 2026-10-01 deindustrialization (approximate where marked)",
+     "title": "Manufacturing Share of U.S. Employment, 1970 vs. 2010",
+     "type": "bar",
+     "values": [
+      25,
+      10
+     ],
+     "x_label": "Year",
+     "y_label": "Percent of U.S. jobs in manufacturing"
+    },
+    "kind": "chart"
+   },
+   "stream": "drill",
+   "themes": [
+    "WXT"
+   ],
+   "type": "mcq"
+  },
+  {
+   "difficulty": "medium",
+   "explanation": "The chart shows about 33 percent in the 1950s and about 10 percent in the 2010s. A fall from 33 to 10 is a decline of about 23 percentage points — roughly two-thirds of the starting level.",
+   "fact_source": "u9.md §Added 2026-10-01 deindustrialization — union membership covered roughly a third of workers in the 1950s and slid toward about a tenth by the 2010s (approximate)",
+   "id": "original-u9-deindust-v2-02",
+   "key": "D",
+   "option_explanations": {
+    "A": "Wrong. The chart shows a decline from about 33 percent to about 10 percent, not growth.",
+    "B": "Wrong. About 10 percent of workers were still union members in the 2010s — a steep decline, but not disappearance.",
+    "C": "Wrong. With only two points plotted, the chart cannot show when the decline began or how fast it moved at any point.",
+    "D": "Correct. Falling from about a third to about a tenth is a decline of roughly two-thirds."
+   },
+   "options": [
+    "(A) Union membership grew steadily from the 1950s to the 2010s, expanding labor's share of the workforce.",
+    "(B) Unions disappeared entirely from the American workplace by the 2010s, leaving no organized labor behind.",
+    "(C) The chart pinpoints the exact year when union decline began and shows the pace of decline each decade.",
+    "(D) Union membership fell by roughly two-thirds between the 1950s and the 2010s, a steep long-term decline."
+   ],
+   "period": "U9",
+   "reasoning": "Continuity & Change",
+   "skill": "Developments & Processes",
+   "stem": "The chart compares union membership as a share of American workers in the 1950s and the 2010s. Which claim is best supported by the data?",
+   "stimulus": {
+    "chart_spec": {
+     "labels": [
+      "1950s",
+      "2010s"
+     ],
+     "source_note": "figures from u9.md §Added 2026-10-01 deindustrialization (approximate where marked)",
+     "title": "Union Membership as a Share of U.S. Workers, 1950s vs. 2010s",
+     "type": "bar",
+     "values": [
+      33,
+      10
+     ],
+     "x_label": "Period",
+     "y_label": "Percent of workers in unions"
+    },
+    "kind": "chart"
+   },
+   "stream": "drill",
+   "themes": [
+    "WXT",
+    "PCE"
+   ],
+   "type": "mcq"
+  },
+  {
+   "difficulty": "hard",
+   "explanation": "The chart documents how manufacturing's share of employment changed; it does not test explanations. Offshoring is one cause the review names, but establishing that it caused the decline requires evidence connecting the two, not a trend line alone.",
+   "fact_source": "u9.md §Added 2026-10-01 deindustrialization — manufacturing's share of employment fell from roughly a quarter of jobs around 1970 toward about a tenth by 2010 (approximate); the review names foreign competition, productivity gains, and offshoring as causes",
+   "id": "original-u9-deindust-v2-03",
+   "key": "C",
+   "option_explanations": {
+    "A": "Wrong. Covering the right years does not turn a trend into proof of a cause.",
+    "B": "Wrong. The review names several causes — foreign competition, productivity gains, offshoring — not offshoring alone.",
+    "C": "Correct. The chart shows the trend; the causes have to be established with other evidence.",
+    "D": "Wrong. The chart shows the share falling from 25 percent to 10 percent."
+   },
+   "options": [
+    "(A) The claim is correct because the chart covers the years when offshoring began and the decline is visible there.",
+    "(B) The claim is correct because offshoring is the only cause the review names for the manufacturing decline.",
+    "(C) The claim overreaches: the chart documents a trend, but explaining it requires evidence beyond this chart.",
+    "(D) The claim is wrong because the chart shows manufacturing's employment share actually growing after 1970."
+   ],
+   "period": "U9",
+   "reasoning": "Continuity & Change",
+   "skill": "Sourcing & Situation",
+   "stem": "A historian writes: “This chart proves that offshoring caused the decline in manufacturing's share of employment.” Which evaluation of that claim is most accurate?",
+   "stimulus": {
+    "chart_spec": {
+     "labels": [
+      "1970",
+      "2010"
+     ],
+     "source_note": "figures from u9.md §Added 2026-10-01 deindustrialization (approximate where marked)",
+     "title": "Manufacturing Share of U.S. Employment, 1970 to 2010",
+     "type": "line",
+     "values": [
+      25,
+      10
+     ],
+     "x_label": "Year",
+     "y_label": "Percent of U.S. jobs in manufacturing"
+    },
+    "kind": "chart"
+   },
+   "stream": "drill",
+   "themes": [
+    "WXT"
+   ],
+   "type": "mcq"
+  },
+  {
+   "difficulty": "hard",
+   "explanation": "Union membership fell from about 33 to about 10 — a drop of about 23 points, which is roughly 70 percent of its starting level. Manufacturing's share fell from about 25 to about 10 — a drop of 15 points, which is 60 percent of its starting level. So union membership declined by the larger relative percentage.",
+   "fact_source": "u9.md §Added 2026-10-01 deindustrialization — manufacturing's share of employment fell from roughly a quarter of jobs around 1970 toward about a tenth by 2010, and union membership slid from roughly a third of workers in the 1950s toward about a tenth by the 2010s (approximate)",
+   "id": "original-u9-deindust-v2-04",
+   "key": "A",
+   "option_explanations": {
+    "A": "Correct. 23 out of 33 is roughly 70 percent; 15 out of 25 is 60 percent.",
+    "B": "Wrong. The math is off: 25 to 10 is a 60 percent decline, not 70 percent.",
+    "C": "Wrong. Ending at the same number does not mean the same relative decline, because the starting levels differ.",
+    "D": "Wrong. Comparing raw point drops ignores the different starting levels; the question asks about the change relative to each starting level."
+   },
+   "options": [
+    "(A) Union membership: it fell from about 33 percent to about 10 percent, roughly a 70 percent drop.",
+    "(B) Manufacturing's share: it fell from about 25 percent to about 10 percent, roughly a 70 percent drop.",
+    "(C) Both declined by the same percentage because both ended at 10 percent.",
+    "(D) Manufacturing's share, because a 25-point drop is larger than a 23-point drop."
+   ],
+   "period": "U9",
+   "reasoning": "Comparison",
+   "skill": "Claims & Evidence in Sources",
+   "stem": "The chart shows manufacturing's share of jobs (1970, 2010) and union membership's share of workers (1950s, 2010s). Relative to its own starting level, which measure declined by the larger percentage?",
+   "stimulus": {
+    "chart_spec": {
+     "labels": [
+      "Manufacturing share of jobs, 1970",
+      "Manufacturing share of jobs, 2010",
+      "Union share of workers, 1950s",
+      "Union share of workers, 2010s"
+     ],
+     "source_note": "figures from u9.md §Added 2026-10-01 deindustrialization (approximate where marked)",
+     "title": "Employment and Union Shares Across the Deindustrialization Era",
+     "type": "bar",
+     "values": [
+      25,
+      10,
+      33,
+      10
+     ],
+     "x_label": "Measure",
+     "y_label": "Percent"
+    },
+    "kind": "chart"
+   },
+   "stream": "drill",
+   "themes": [
+    "WXT"
+   ],
+   "type": "mcq"
+  },
+  {
+   "difficulty": "hard",
+   "explanation": "The chart shows union coverage shrinking from about a third of workers to about a tenth. The review ties that shrinkage to politics: deindustrialization hollowed out the Democratic Party's union base.",
+   "fact_source": "u9.md §Added 2026-10-01 deindustrialization — union membership slid from roughly a third of workers in the 1950s toward about a tenth by the 2010s (approximate), and deindustrialization 'hollowed out the Democratic Party's union base'",
+   "id": "original-u9-deindust-v2-05",
+   "key": "B",
+   "option_explanations": {
+    "A": "Wrong. The review does not describe a growing Republican union bloc.",
+    "B": "Correct. The review names the hollowing out of the Democratic Party's union base as a political consequence of deindustrialization.",
+    "C": "Wrong. The review says the PATCO firing signaled the new administration would not protect unions — the opposite of new protections.",
+    "D": "Wrong. The review says deindustrialization fueled political resentment, not that economic issues vanished."
+   },
+   "options": [
+    "(A) The growth of a large union voting bloc inside the Republican Party.",
+    "(B) The hollowing out of the Democratic Party's union base.",
+    "(C) The passage of new federal laws protecting striking workers.",
+    "(D) The disappearance of economic issues from American politics."
+   ],
+   "period": "U9",
+   "reasoning": "Causation",
+   "skill": "Contextualization",
+   "stem": "The chart shows the scale of the long decline in union membership. According to the review, which political development was tied to this trend?",
+   "stimulus": {
+    "chart_spec": {
+     "labels": [
+      "1950s",
+      "2010s"
+     ],
+     "source_note": "figures from u9.md §Added 2026-10-01 deindustrialization (approximate where marked)",
+     "title": "Union Membership as a Share of U.S. Workers, 1950s vs. 2010s",
+     "type": "bar",
+     "values": [
+      33,
+      10
+     ],
+     "x_label": "Period",
+     "y_label": "Percent of workers in unions"
+    },
+    "kind": "chart"
+   },
+   "stream": "drill",
+   "themes": [
+    "WXT",
+    "PCE"
+   ],
+   "type": "mcq"
+  },
+  {
+   "difficulty": "medium",
+   "explanation": "The chart shows the national trend, and the review locates its costs: factories closed across the Northeast and Midwest — the Rust Belt — while growth shifted to the Sun Belt.",
+   "fact_source": "u9.md §Added 2026-10-01 deindustrialization — factories closed across the Northeast and Midwest (the Rust Belt) while manufacturing's share of employment fell nationally from roughly a quarter of jobs around 1970 toward about a tenth by 2010 (approximate)",
+   "id": "original-u9-deindust-v2-06",
+   "key": "D",
+   "option_explanations": {
+    "A": "Wrong. The review says the Sun Belt gained people and plants; it was the region of growth, not concentrated loss.",
+    "B": "Wrong. The review stresses that the costs were concentrated, not evenly spread.",
+    "C": "Wrong. The review does not name the rural West or farming; it names the Northeast and Midwest.",
+    "D": "Correct. The review places the factory closures in the Northeast and Midwest, the Rust Belt."
+   },
+   "options": [
+    "(A) In the Sun Belt, where defense industries attracted new plants and population kept growing.",
+    "(B) Across all regions equally, since the decline was spread evenly throughout the country.",
+    "(C) In the rural West, where farming replaced factory work as the region's economic base.",
+    "(D) In the Northeast and Midwest, where factories closed across the Rust Belt."
+   ],
+   "period": "U9",
+   "reasoning": "Causation",
+   "skill": "Making Connections",
+   "stem": "The chart shows the national decline in manufacturing's share of employment. According to the review, where were the human costs of this decline concentrated?",
+   "stimulus": {
+    "chart_spec": {
+     "labels": [
+      "1970",
+      "2010"
+     ],
+     "source_note": "figures from u9.md §Added 2026-10-01 deindustrialization (approximate where marked)",
+     "title": "Manufacturing Share of U.S. Employment, 1970 vs. 2010",
+     "type": "bar",
+     "values": [
+      25,
+      10
+     ],
+     "x_label": "Year",
+     "y_label": "Percent of U.S. jobs in manufacturing"
+    },
+    "kind": "chart"
+   },
+   "stream": "drill",
+   "themes": [
+    "WXT",
+    "GEO"
+   ],
+   "type": "mcq"
+  },
+  {
+   "difficulty": "hard",
+   "explanation": "The chart plots only two points — the 1950s and the 2010s. A two-point chart can show the overall direction of a long decline, but it cannot isolate the effect of any single event in between, including the 1981 PATCO firing.",
+   "fact_source": "u9.md §Added 2026-10-01 deindustrialization — union membership slid from roughly a third of workers in the 1950s toward about a tenth by the 2010s (approximate); the PATCO firing (1981) signaled the new administration wouldn't protect unions",
+   "id": "original-u9-deindust-v2-07",
+   "key": "A",
+   "option_explanations": {
+    "A": "Correct. Two data points cannot separate one event's effect from everything else that happened across six decades.",
+    "B": "Wrong. An event falling between two plotted points does not prove it caused the change between them.",
+    "C": "Wrong. The chart shows membership lower in the 2010s (about 10 percent) than in the 1950s (about 33 percent).",
+    "D": "Wrong. The chart shows about 10 percent of workers unionized in the 2010s and says nothing about the years just before 1981."
+   },
+   "options": [
+    "(A) The chart cannot support that claim: it shows only two points, so it cannot isolate one event's effect.",
+    "(B) The chart proves the claim, because 1981 falls between the 1950s and the 2010s, inside the period shown.",
+    "(C) The chart disproves the claim, because union membership rose after 1981 instead of continuing to fall.",
+    "(D) The chart proves unions were already gone before 1981, so PATCO could not have mattered at all."
+   ],
+   "period": "U9",
+   "reasoning": "Continuity & Change",
+   "skill": "Sourcing & Situation",
+   "stem": "A student points to the chart and says the 1981 PATCO firing caused the entire decline in union membership. Based on the chart alone, which response is warranted?",
+   "stimulus": {
+    "chart_spec": {
+     "labels": [
+      "1950s",
+      "2010s"
+     ],
+     "source_note": "figures from u9.md §Added 2026-10-01 deindustrialization (approximate where marked)",
+     "title": "Union Membership as a Share of U.S. Workers, 1950s to 2010s",
+     "type": "line",
+     "values": [
+      33,
+      10
+     ],
+     "x_label": "Period",
+     "y_label": "Percent of workers in unions"
+    },
+    "kind": "chart"
+   },
+   "stream": "drill",
+   "themes": [
+    "WXT",
+    "PCE"
+   ],
+   "type": "mcq"
+  },
+  {
+   "difficulty": "hard",
+   "explanation": "The chart plots two distinct measures — manufacturing's share of jobs and the share of workers in unions. They moved in the same direction, but they are not the same trend, and the chart does not show that one caused the other.",
+   "fact_source": "u9.md §Added 2026-10-01 deindustrialization — manufacturing's share of employment fell from roughly a quarter of jobs around 1970 toward about a tenth by 2010, and union membership slid from roughly a third of workers in the 1950s toward about a tenth by the 2010s (approximate)",
+   "id": "original-u9-deindust-v2-08",
+   "key": "B",
+   "option_explanations": {
+    "A": "Wrong. The same endpoint does not make them identical trends; they measure different things from different starting points.",
+    "B": "Correct. Manufacturing's job share and workers' union membership are separate series that should not be equated.",
+    "C": "Wrong. The review names several causes for deindustrialization, and the chart alone cannot establish a single shared cause.",
+    "D": "Wrong. The chart shows no causal connection between unions and deindustrialization."
+   },
+   "options": [
+    "(A) The argument is correct: both series ended at 10 percent, so they must describe identical trends.",
+    "(B) The argument conflates two distinct measures: manufacturing's job share and workers' union membership.",
+    "(C) The argument is correct because both declines clearly had the same single underlying economic cause.",
+    "(D) The argument understates the case: the chart shows that the decline of unions directly caused deindustrialization."
+   ],
+   "period": "U9",
+   "reasoning": "Comparison",
+   "skill": "Claims & Evidence in Sources",
+   "stem": "A student argues that the chart shows manufacturing jobs and union membership “declined in exactly the same way.” Which correction to that argument is warranted?",
+   "stimulus": {
+    "chart_spec": {
+     "labels": [
+      "Manufacturing share of jobs, 1970",
+      "Manufacturing share of jobs, 2010",
+      "Union share of workers, 1950s",
+      "Union share of workers, 2010s"
+     ],
+     "source_note": "figures from u9.md §Added 2026-10-01 deindustrialization (approximate where marked)",
+     "title": "Employment and Union Shares Across the Deindustrialization Era",
+     "type": "bar",
+     "values": [
+      25,
+      10,
+      33,
+      10
+     ],
+     "x_label": "Measure",
+     "y_label": "Percent"
+    },
+    "kind": "chart"
+   },
+   "stream": "drill",
+   "themes": [
+    "WXT"
+   ],
+   "type": "mcq"
+  },
+  {
+   "difficulty": "medium",
+   "explanation": "The review says manufacturing output stayed high thanks to productivity gains: factories produced more with fewer workers, so employment's share could fall while output held up.",
+   "fact_source": "u9.md §Added 2026-10-01 deindustrialization — manufacturing output stayed high thanks to productivity gains, even as its share of employment fell",
+   "id": "original-u9-deindust-v2-09",
+   "key": "C",
+   "option_explanations": {
+    "A": "Wrong. The review credits productivity gains — the opposite of banning automation.",
+    "B": "Wrong. The review says foreign competition intensified; American firms did not stop competing.",
+    "C": "Correct. Productivity gains explain how output stayed high while fewer workers were needed.",
+    "D": "Wrong. This contradicts both the chart, which shows the share falling, and the review, which says output stayed high."
+   },
+   "options": [
+    "(A) The government banned factory automation after 1970, freezing productivity in place.",
+    "(B) American firms stopped competing with foreign producers and withdrew from world markets.",
+    "(C) Productivity gains let factories produce more with fewer workers.",
+    "(D) Manufacturing employment actually rose while output fell across the same years."
+   ],
+   "period": "U9",
+   "reasoning": "Continuity & Change",
+   "skill": "Developments & Processes",
+   "stem": "The chart shows manufacturing's share of employment falling steeply, yet the review notes that American manufacturing output stayed high. Which explanation does the review give for that combination?",
+   "stimulus": {
+    "chart_spec": {
+     "labels": [
+      "1970",
+      "2010"
+     ],
+     "source_note": "figures from u9.md §Added 2026-10-01 deindustrialization (approximate where marked)",
+     "title": "Manufacturing Share of U.S. Employment, 1970 vs. 2010",
+     "type": "bar",
+     "values": [
+      25,
+      10
+     ],
+     "x_label": "Year",
+     "y_label": "Percent of U.S. jobs in manufacturing"
+    },
+    "kind": "chart"
+   },
+   "stream": "drill",
+   "themes": [
+    "WXT"
+   ],
+   "type": "mcq"
+  },
+  {
+   "difficulty": "medium",
+   "explanation": "The review says the factory jobs lost to globalization were replaced by service work in retail, finance, and health care — work that meant lower wages, fewer benefits, and less security.",
+   "fact_source": "u9.md §Added 2026-10-01 deindustrialization — union membership slid toward about a tenth of workers by the 2010s (approximate), while globalization replaced factory jobs with service work in retail, finance, and health care: lower wages, fewer benefits, less security",
+   "id": "original-u9-deindust-v2-10",
+   "key": "A",
+   "option_explanations": {
+    "A": "Correct. The review describes the replacement service jobs as lower-paid, with fewer benefits and less security.",
+    "B": "Wrong. The review says the opposite: the replacement jobs offered less, not more.",
+    "C": "Wrong. The review contrasts the two: service work brought lower wages, fewer benefits, and less security.",
+    "D": "Wrong. The review names retail, finance, and health care — private-sector service work, not government jobs."
+   },
+   "options": [
+    "(A) They offered lower wages, fewer benefits, and less security than the factory jobs they replaced.",
+    "(B) They offered higher wages and stronger union protection than the factory work they replaced did.",
+    "(C) They were broadly equivalent to factory jobs in pay, benefits, and overall job security.",
+    "(D) They were all government jobs with guaranteed pensions and lifetime employment security."
+   ],
+   "period": "U9",
+   "reasoning": "Causation",
+   "skill": "Making Connections",
+   "stem": "The chart shows union coverage shrinking. The review says globalization replaced factory jobs with service work in retail, finance, and health care. Taken together, what does the review say about the quality of the replacement jobs?",
+   "stimulus": {
+    "chart_spec": {
+     "labels": [
+      "1950s",
+      "2010s"
+     ],
+     "source_note": "figures from u9.md §Added 2026-10-01 deindustrialization (approximate where marked)",
+     "title": "Union Membership as a Share of U.S. Workers, 1950s vs. 2010s",
+     "type": "bar",
+     "values": [
+      33,
+      10
+     ],
+     "x_label": "Period",
+     "y_label": "Percent of workers in unions"
+    },
+    "kind": "chart"
+   },
+   "stream": "drill",
+   "themes": [
+    "WXT",
+    "WOR"
+   ],
+   "type": "mcq"
+  }
+ ]
+}

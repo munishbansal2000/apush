@@ -1,0 +1,394 @@
+{
+  "items": [
+    {
+      "id": "original-u9-immig-01",
+      "type": "mcq",
+      "stem": "The chart shows the foreign-born share of the U.S. population from 1970 to 2020. Which statement best describes the trend?",
+      "stimulus": {
+        "kind": "chart",
+        "chart_spec": {
+          "type": "line",
+          "title": "Foreign-Born Share of U.S. Population, 1970–2020",
+          "x_label": "Year",
+          "y_label": "Percent foreign-born",
+          "labels": [
+            "1970",
+            "1980",
+            "1990",
+            "2000",
+            "2010",
+            "2020"
+          ],
+          "values": [
+            4.7,
+            6.2,
+            7.9,
+            11.1,
+            12.9,
+            13.7
+          ],
+          "source_note": "Approximate census-based figures; the demographic change 'especially around immigration' described in u9.md §The story."
+        }
+      },
+      "options": [
+        "(A) The foreign-born share of the U.S. population nearly tripled between 1970 and 2020, rising from 4.7 to 13.7 percent.",
+        "(B) The foreign-born share fell steadily after 1970.",
+        "(C) The foreign-born share stayed flat at about 5 percent across the entire period from 1970 to 2020.",
+        "(D) Immigration had no measurable effect on the composition of the U.S. population."
+      ],
+      "key": "A",
+      "explanation": "The line rises in every decade shown, from 4.7 percent in 1970 to 13.7 percent in 2020 — roughly a threefold increase. This is the demographic transformation the review describes: immigration reshaping the nation's makeup and, with it, its politics.",
+      "option_explanations": {
+        "A": "Correct. It reports the chart's start and end values accurately (4.7 to 13.7 percent is just under triple) and describes the unbroken upward trend.",
+        "B": "Incorrect. The line rises continuously; no decade on the chart shows a decline.",
+        "C": "Incorrect. The share was near 5 percent only in 1970; by 2020 it had climbed to 13.7 percent.",
+        "D": "Incorrect. A near-tripling of the foreign-born share is a large compositional change by any measure."
+      },
+      "period": "U9",
+      "skill": "Claims & Evidence in Sources",
+      "reasoning": "Continuity & Change",
+      "themes": [
+        "MIG",
+        "NAT"
+      ],
+      "difficulty": "medium",
+      "fact_source": "u9.md §The story — 'demographic change — the coming \"majority-minority\" nation — reshaped politics, especially around immigration'",
+      "stream": "drill"
+    },
+    {
+      "id": "original-u9-immig-02",
+      "type": "mcq",
+      "stem": "The chart shows legal U.S. immigration rising in every decade after the 1960s. The 1965 immigration law that replaced the 1920s quota system produced this decades-long 'long tail' mainly through which mechanism?",
+      "stimulus": {
+        "kind": "chart",
+        "chart_spec": {
+          "type": "bar",
+          "title": "Legal U.S. Immigration by Decade, 1960s–2000s",
+          "x_label": "Decade",
+          "y_label": "Millions of legal immigrants",
+          "labels": [
+            "1960s",
+            "1970s",
+            "1980s",
+            "1990s",
+            "2000s"
+          ],
+          "values": [
+            3.3,
+            4.5,
+            6.0,
+            9.8,
+            10.4
+          ],
+          "source_note": "Approximate figures; the post-1965 growth in immigration underlying the demographic change described in u9.md §The story ('especially around immigration')."
+        }
+      },
+      "options": [
+        "(A) The law abolished all numerical limits on immigration permanently.",
+        "(B) Family-reunification preferences created chain migration, compounding immigrant numbers over decades.",
+        "(C) The law required every native-born American family to sponsor exactly one immigrant.",
+        "(D) The growth came entirely from a special provision admitting only European refugees and absolutely no one else."
+      ],
+      "key": "B",
+      "explanation": "The 1965 law gave top priority to relatives of citizens and residents. Each new immigrant could then petition for family members, who could in turn sponsor their own relatives — a multiplier effect that compounded across the decades the chart shows, producing the demographic reshaping the review describes.",
+      "option_explanations": {
+        "A": "Incorrect. The law kept numerical caps; the growth came through the family-preference mechanism operating within the system, not through abolished limits.",
+        "B": "Correct. Chain migration through family preferences is the standard explanation for why the law's effects grew far beyond what its sponsors predicted.",
+        "C": "Incorrect. No such requirement existed; sponsorship was a right of immigrants, not an obligation of native-born families.",
+        "D": "Incorrect. The post-1965 flow came increasingly from Latin America and Asia, not from a Europe-only refugee provision."
+      },
+      "period": "U9",
+      "skill": "Developments & Processes",
+      "reasoning": "Causation",
+      "themes": [
+        "MIG",
+        "NAT",
+        "PCE"
+      ],
+      "difficulty": "medium",
+      "fact_source": "u9.md §The story — 'demographic change — the coming \"majority-minority\" nation — reshaped politics, especially around immigration' (1965 law's long-tail consequence)",
+      "stream": "drill"
+    },
+    {
+      "id": "original-u9-c21-21",
+      "type": "mcq",
+      "stem": "The chart shows the federal budget moving from a $290 billion deficit in 1992 to a $236 billion surplus in 2000. Bill Clinton, a Democrat, declared 'the era of big government is over' and signed welfare reform in 1996. What does his triangulation show about the era's political climate?",
+      "stimulus": {
+        "kind": "chart",
+        "chart_spec": {
+          "type": "line",
+          "title": "Federal Budget Deficit (+) / Surplus (−), 1980–2000",
+          "x_label": "Year",
+          "y_label": "Billions of dollars (negative = surplus)",
+          "labels": [
+            "1980",
+            "1983",
+            "1986",
+            "1989",
+            "1992",
+            "1998",
+            "2000"
+          ],
+          "values": [
+            74,
+            208,
+            221,
+            153,
+            290,
+            -69,
+            -236
+          ],
+          "source_note": "Approximate figures; Clinton-era surpluses per u9.md §The story (Clinton 'presided over budget surpluses')."
+        }
+      },
+      "options": [
+        "(A) That Democrats had become the party of far larger government than at any point before in American history.",
+        "(B) That Reagan's presidency had no lasting political effects.",
+        "(C) Limited-government ideas so dominated the era that even a Democratic president governed on their premises in the 1990s.",
+        "(D) That welfare reform was opposed by every Republican in Congress."
+      ],
+      "key": "C",
+      "explanation": "Triangulation was surrender as strategy: with the chart's deficit-to-surplus turnaround vindicating fiscal restraint, Clinton positioned himself between congressional Republicans and liberal Democrats, signing welfare reform and claiming the balanced budget. When the opposition party governs on your premises, your revolution has won.",
+      "option_explanations": {
+        "A": "Incorrect. Clinton shrank the federal workforce and declared big government's era over — the opposite of expanding it.",
+        "B": "Incorrect. Clinton's triangulation is itself evidence of Reagan's lasting effect: the terms of debate had moved onto conservative ground.",
+        "C": "Correct. It reads the political meaning accurately: a Democratic president adopting the small-government, balanced-budget premises of the Reagan era.",
+        "D": "Incorrect. Republicans strongly supported welfare reform; it was a shared bipartisan achievement, not a party-line fight."
+      },
+      "period": "U9",
+      "skill": "Contextualization",
+      "reasoning": "Causation",
+      "themes": [
+        "PCE"
+      ],
+      "difficulty": "medium",
+      "fact_source": "u9.md §The story — Clinton 'triangulated: a Democrat who declared \"the era of big government is over,\" signed welfare reform (1996), and presided over budget surpluses'",
+      "stream": "drill"
+    },
+    {
+      "id": "original-u9-c21-22",
+      "type": "mcq",
+      "stem": "The chart shows home prices collapsing after 2006. The bank bailouts (TARP) that followed 'fed a populist fury on both left and right.' What did the left-wing fury (Occupy Wall Street) and the right-wing fury (the Tea Party) share?",
+      "stimulus": {
+        "kind": "chart",
+        "chart_spec": {
+          "type": "line",
+          "title": "U.S. Home Price Index, 2000–2012 (2000 = 100)",
+          "x_label": "Year",
+          "y_label": "Index (2000 = 100)",
+          "labels": [
+            "2000",
+            "2003",
+            "2006",
+            "2009",
+            "2012"
+          ],
+          "values": [
+            100,
+            130,
+            184,
+            134,
+            140
+          ],
+          "source_note": "Approximate figures; the housing collapse behind the bailouts and populist backlash in u9.md §The story."
+        }
+      },
+      "options": [
+        "(A) Both movements demanded even larger bank bailouts.",
+        "(B) Both movements were primarily about foreign policy.",
+        "(C) Both movements agreed completely on identical tax policies, spending plans, and legislative priorities for the nation.",
+        "(D) A conviction that elites — bankers and Washington — had rigged the system against ordinary people."
+      ],
+      "key": "D",
+      "explanation": "Occupy blamed Wall Street greed enabled by Washington; the Tea Party blamed Washington profligacy that rewarded Wall Street. Different villains, same story: the crisis the chart documents convinced both sides that the game was fixed, producing the review's 'populist fury on both left and right.'",
+      "option_explanations": {
+        "A": "Incorrect. Both movements opposed the bailouts; demanding larger ones was the opposite of their position.",
+        "B": "Incorrect. Both focused on the domestic economy — banks, bailouts, debt, inequality — not on foreign policy.",
+        "C": "Incorrect. The two movements held opposing views on taxes and government's economic role; taxes were not their common ground.",
+        "D": "Correct. It identifies the shared populist core beneath the ideological differences: elite betrayal as the explanation for the crisis."
+      },
+      "period": "U9",
+      "skill": "Making Connections",
+      "reasoning": "Comparison",
+      "themes": [
+        "PCE",
+        "WXT"
+      ],
+      "difficulty": "hard",
+      "fact_source": "u9.md §The story — TARP 'saved the system and fed a populist fury on both left and right'; 'movements from Occupy to Black Lives Matter to #MeToo'",
+      "stream": "drill"
+    },
+    {
+      "id": "original-u9-c21-23",
+      "type": "mcq",
+      "stem": "The COVID-19 pandemic killed over a million Americans. According to the review, it unfolded against which backdrop?",
+      "options": [
+        "(A) Institutional distrust and social-media fragmentation that complicated the public-health response.",
+        "(B) Complete public trust in every institution.",
+        "(C) A period with absolutely no other crises, political divisions, or public disagreements of any kind whatsoever.",
+        "(D) The end of all political disagreement in the United States."
+      ],
+      "key": "A",
+      "explanation": "The review places the pandemic inside the era's defining conditions: 'institutional distrust, social-media-fueled fragmentation, and unresolved arguments about elections themselves.' A public-health crisis requiring collective action arrived when collective trust was at a low ebb — which is why masks, vaccines, and mandates became political battlegrounds.",
+      "option_explanations": {
+        "A": "Correct. It quotes the review's own framing of the period's backdrop and connects it to the pandemic's politicization.",
+        "B": "Incorrect. The review stresses distrust, not trust, as the period's condition.",
+        "C": "Incorrect. The pandemic coincided with the Capitol attack, ongoing polarization, and economic turmoil.",
+        "D": "Incorrect. Political disagreement intensified during the pandemic; it did not end."
+      },
+      "period": "U9",
+      "skill": "Developments & Processes",
+      "reasoning": "Causation",
+      "themes": [
+        "PCE",
+        "NAT",
+        "SOC"
+      ],
+      "difficulty": "medium",
+      "fact_source": "u9.md §The story — 'punctured by real crises: the COVID-19 pandemic, which killed over a million Americans'; 'institutional distrust, social-media-fueled fragmentation'",
+      "stream": "drill"
+    },
+    {
+      "id": "original-u9-c21-24",
+      "type": "mcq",
+      "stem": "The review presents the January 6, 2021, attack on the Capitol as which of the following?",
+      "options": [
+        "(A) An event with no connection whatsoever to any broader political trends or developments of the era.",
+        "(B) The violent peak of 'unresolved arguments about elections' amid deep and widespread institutional distrust.",
+        "(C) A peaceful celebration of the transfer of power.",
+        "(D) An event the review never mentions."
+      ],
+      "key": "B",
+      "explanation": "The review lists January 6 alongside the pandemic as the crises puncturing recent presidencies, and frames it within 'unresolved arguments about elections themselves' — the endpoint of the polarization story that runs from Bush v. Gore through the Trump, Biden, and Trump years.",
+      "option_explanations": {
+        "A": "Incorrect. The review explicitly connects the attack to institutional distrust and disputed elections, the period's central themes.",
+        "B": "Correct. It restates the review's framing: the attack as the violent expression of the era's unresolved election conflicts.",
+        "C": "Incorrect. The attack disrupted the electoral count and involved violence; it was not a peaceful celebration.",
+        "D": "Incorrect. The review mentions the attack directly as one of the period's defining crises."
+      },
+      "period": "U9",
+      "skill": "Contextualization",
+      "reasoning": "Causation",
+      "themes": [
+        "PCE"
+      ],
+      "difficulty": "medium",
+      "fact_source": "u9.md §The story — 'the January 6, 2021, attack on the Capitol'; 'unresolved arguments about elections themselves'",
+      "stream": "drill"
+    },
+    {
+      "id": "original-u9-c21-25",
+      "type": "mcq",
+      "stem": "The review presents Obergefell v. Hodges (2015), which established a constitutional right to same-sex marriage nationwide, as part of which longer story?",
+      "options": [
+        "(A) The end of all civil rights activism in America, permanently and completely, with no further movements ever.",
+        "(B) Civil rights as an unfinished continuity: from the 1960s movements through marriage equality and beyond into the 21st century.",
+        "(C) A break with no connection to any earlier movement.",
+        "(D) A return to nineteenth-century social norms."
+      ],
+      "key": "B",
+      "explanation": "The review's exam guidance is explicit: 'trace the line from the 1960s movements through Obergefell and beyond; the exam presents rights expansion as a long, ongoing story, not a closed chapter.' Obergefell used the Fourteenth Amendment logic of earlier civil rights victories and, like them, opened new contests rather than ending the story.",
+      "option_explanations": {
+        "A": "Incorrect. Activism continued after 2015 on many fronts; the decision was a milestone, not a finale.",
+        "B": "Correct. It applies the review's continuity framework: rights expansion as an ongoing story from the 1960s through Obergefell.",
+        "C": "Incorrect. Marriage-equality advocates deliberately built on the legal and moral arguments of the 1960s civil rights movement.",
+        "D": "Incorrect. Obergefell extended marriage rights in a modern egalitarian direction, the opposite of nineteenth-century norms."
+      },
+      "period": "U9",
+      "skill": "Developments & Processes",
+      "reasoning": "Continuity & Change",
+      "themes": [
+        "NAT",
+        "SOC"
+      ],
+      "difficulty": "medium",
+      "fact_source": "u9.md §Key terms — Obergefell v. Hodges (2015); §What the exam tests here — 'Treat civil rights as an unfinished continuity: trace the line from the 1960s movements through Obergefell and beyond'",
+      "stream": "drill"
+    },
+    {
+      "id": "original-u9-c21-26",
+      "type": "mcq",
+      "stem": "The review notes that movements from Occupy to Black Lives Matter to #MeToo showed 'a new generation organizing outside the old party structures.' What do these movements share with the Tea Party despite their very different ideologies?",
+      "options": [
+        "(A) Each and every one of these movements was organized and directed from the top down by the Democratic Party establishment.",
+        "(B) All were organized and directed by the Republican Party establishment.",
+        "(C) All pursued identical policy goals and legislative agendas.",
+        "(D) All channeled distrust of institutions and organized substantially outside traditional party machinery."
+      ],
+      "key": "D",
+      "explanation": "The common thread is institutional, not ideological. Occupy, Black Lives Matter, #MeToo, and the Tea Party all treated the existing parties, media, and power centers as compromised — and all used decentralized, often social-media-driven organizing rather than working through party hierarchies. Distrust of the establishment became the era's universal solvent.",
+      "option_explanations": {
+        "A": "Incorrect. These movements defined themselves against party establishments, including the Democratic one; Occupy and BLM often criticized Democrats.",
+        "B": "Incorrect. The Tea Party challenged the Republican establishment as well as Democrats; none of these movements were party-run.",
+        "C": "Incorrect. Their policy goals ranged from left-wing economic justice to right-wing spending cuts — nearly opposite agendas.",
+        "D": "Correct. It identifies the structural similarity the review points to: outsider organizing driven by institutional distrust, across ideological lines."
+      },
+      "period": "U9",
+      "skill": "Making Connections",
+      "reasoning": "Comparison",
+      "themes": [
+        "PCE",
+        "SOC"
+      ],
+      "difficulty": "hard",
+      "fact_source": "u9.md §The story — 'movements from Occupy to Black Lives Matter to #MeToo showed a new generation organizing outside the old party structures'; the Tea Party revolt",
+      "stream": "drill"
+    },
+    {
+      "id": "original-u9-c21-27",
+      "type": "mcq",
+      "stem": "The review names 'social-media-fueled fragmentation' as a backdrop of recent politics. How does it fuel polarization?",
+      "options": [
+        "(A) By forcing every American to read the same newspapers.",
+        "(B) By ending all political disagreement.",
+        "(C) Algorithmic feeds and self-selected networks expose people to like-minded views, hardening divisions.",
+        "(D) By transforming all news coverage into something completely nonpartisan, objective, and entirely free of bias."
+      ],
+      "key": "C",
+      "explanation": "Fragmentation means the end of the shared media environment: instead of three networks everyone watched, Americans sort into feeds that confirm their views and outrage them at the other side. The review lists this alongside partisan sorting as a structural cause — a product of the information system's design rather than individual closed-mindedness.",
+      "option_explanations": {
+        "A": "Incorrect. Fragmentation is the opposite of a shared press; it describes the breakup of common media, not its consolidation.",
+        "B": "Incorrect. Fragmentation intensifies disagreement by insulating groups from opposing views.",
+        "C": "Correct. It describes the mechanism the review's 'structural causes' framing points to: self-reinforcing information environments.",
+        "D": "Incorrect. Fragmented media is widely partisan and emotionally charged, not nonpartisan."
+      },
+      "period": "U9",
+      "skill": "Developments & Processes",
+      "reasoning": "Causation",
+      "themes": [
+        "PCE"
+      ],
+      "difficulty": "medium",
+      "fact_source": "u9.md §The story — 'social-media-fueled fragmentation'; §What the exam tests here — polarization's 'structural causes... from media fragmentation to partisan sorting'",
+      "stream": "drill"
+    },
+    {
+      "id": "original-u9-c21-28",
+      "type": "mcq",
+      "stem": "The review's through-line for the whole period is 'the end of the Cold War consensus about America's role in the world — and the failure, so far, to build a new one.' Which recent development best illustrates the domestic side of that failure?",
+      "options": [
+        "(A) The persistence of 'unresolved arguments about elections themselves' across three presidencies.",
+        "(B) The complete resolution of all foreign-policy debates.",
+        "(C) The disappearance of political polarization.",
+        "(D) Unanimous national agreement on America's proper role in the world, with no dissent from any quarter at all."
+      ],
+      "key": "A",
+      "explanation": "The through-line has a domestic twin: just as no new foreign-policy consensus replaced Cold War containment, no shared democratic baseline survived polarization. When the legitimacy of elections themselves is contested across three presidencies — the review's closing note — the country has failed to build the domestic consensus a stable order requires.",
+      "option_explanations": {
+        "A": "Correct. It applies the review's through-line domestically: the missing consensus is visible in the unresolved, recurring fights over elections.",
+        "B": "Incorrect. Foreign-policy debates remain sharp, from intervention to trade to alliances; nothing was resolved.",
+        "C": "Incorrect. Polarization deepened across this period; it did not disappear.",
+        "D": "Incorrect. Agreement on America's world role is precisely what the review says has not been built."
+      },
+      "period": "U9",
+      "skill": "Argumentation",
+      "reasoning": "Continuity & Change",
+      "themes": [
+        "PCE"
+      ],
+      "difficulty": "hard",
+      "fact_source": "u9.md §The story — 'The through-line of the whole period is the end of the Cold War consensus about America's role in the world — and the failure, so far, to build a new one'; 'unresolved arguments about elections themselves'",
+      "stream": "drill"
+    }
+  ]
+}

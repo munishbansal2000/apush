@@ -1,0 +1,338 @@
+{
+  "items": [
+    {
+      "id": "original-u1-native-01",
+      "type": "mcq",
+      "stem": "The engraving below was published in 1591, based on drawings of Indigenous people in North America. It shows men and women planting seeds of beans and maize in cleared fields. Which conclusion about Native American societies before sustained European contact is best supported by this image?",
+      "stimulus": {
+        "kind": "image",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Florida%20Indians%20planting%20seeds%20of%20beans%20or%20maize%20LCCN2001695741.jpg?width=1200",
+        "image_caption": "Engraving by Theodor de Bry (1591), after drawings by Jacques Le Moyne de Morgues, showing Florida Indians planting seeds of beans and maize.",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Florida_Indians_planting_seeds_of_beans_or_maize_LCCN2001695741.jpg",
+        "pd_rationale": "1591 engraving; pre-1930, public domain (Library of Congress)"
+      },
+      "options": [
+        "(A) All Native Americans in every region depended entirely on hunting and gathering for food.",
+        "(B) Farming was an established, organized part of Native life in the region shown.",
+        "(C) Europeans introduced maize and bean farming to North America in the 1500s.",
+        "(D) Native peoples in the region planted crops only after Spanish missions arrived."
+      ],
+      "key": "B",
+      "explanation": "The engraving shows Indigenous people planting beans and maize in prepared fields, which is direct visual evidence that agriculture was already an organized practice in eastern North America before sustained European contact. The image was based on drawings made in the 1500s, depicting practices that predated colonization.",
+      "option_explanations": {
+        "A": "Wrong — the image shows people planting crops, so it contradicts the idea that everyone relied only on hunting.",
+        "B": "Right — the image documents organized planting of maize and beans, evidence of established Native agriculture.",
+        "C": "Wrong — maize and beans were Native American crops; Europeans encountered them here, they did not introduce them.",
+        "D": "Wrong — the 1591 engraving depicts practices from before Spanish missions reached this region."
+      },
+      "period": "U1",
+      "skill": "Claims & Evidence in Sources",
+      "reasoning": "Comparison",
+      "themes": [
+        "NAT",
+        "GEO"
+      ],
+      "difficulty": "medium",
+      "fact_source": "u1.md §Key terms — Three Sisters agriculture: the interplanting of maize, beans, and squash that sustained dense Native populations in eastern North America",
+      "stream": "drill"
+    },
+    {
+      "id": "original-u1-native-02",
+      "type": "mcq",
+      "stem": "The 'three sisters' system — interplanting maize, beans, and squash in the same field — sustained dense Native populations in eastern North America. Which statement best explains why this system could support large, settled communities?",
+      "options": [
+        "(A) It required iron plows and teams of draft animals to work the soil effectively.",
+        "(B) It succeeded only in desert regions where very little rainfall occurred.",
+        "(C) It was designed from the start to grow large surplus crops for export to European markets overseas.",
+        "(D) It produced three food crops from the same cleared field, increasing each planting's yield."
+      ],
+      "key": "D",
+      "explanation": "Growing three complementary food crops together on the same land multiplied what each cleared field could produce. That larger, reliable food supply is what allowed communities to grow dense and stay settled in one place.",
+      "option_explanations": {
+        "A": "Wrong — iron plows and draft animals came with Europeans; this was a pre-contact Native system.",
+        "B": "Wrong — the three sisters system supported populations in eastern North America, not the desert Southwest.",
+        "C": "Wrong — the system predated European contact, so it could not have been designed for European markets.",
+        "D": "Right — three crops from one field meant more food per planting, supporting denser settlement."
+      },
+      "period": "U1",
+      "skill": "Developments & Processes",
+      "reasoning": "Causation",
+      "themes": [
+        "GEO",
+        "NAT"
+      ],
+      "difficulty": "medium",
+      "fact_source": "u1.md §Key terms — Three Sisters agriculture: the interplanting of maize, beans, and squash that sustained dense Native populations in eastern North America",
+      "stream": "drill"
+    },
+    {
+      "id": "original-u1-native-03",
+      "type": "mcq",
+      "stem": "The chart compares the approximate populations of two cities built before Europeans arrived in the Americas. Which claim is best supported by this comparison?",
+      "stimulus": {
+        "kind": "chart",
+        "caption": "Approximate populations of two pre-contact American cities at their height.",
+        "chart_spec": {
+          "type": "bar",
+          "title": "City size before European contact",
+          "labels": [
+            "Tenochtitlan (Mexica)",
+            "Cahokia (Mississippian)"
+          ],
+          "values": [
+            200000,
+            20000
+          ],
+          "source_note": "Approximate figures from u1.md §The story: Tenochtitlan a 'lake city of hundreds of thousands'; Cahokia held 'tens of thousands of residents at its height around 1100'"
+        }
+      },
+      "options": [
+        "(A) Only the societies of Mesoamerica were capable of building large and complex cities anywhere in the Americas.",
+        "(B) Cahokia and Tenochtitlan shared the same form of government and social structure.",
+        "(C) Maize-based farming could support very large cities in different regions of the Americas.",
+        "(D) European cities were always smaller than Native American cities in this period."
+      ],
+      "key": "C",
+      "explanation": "Both cities were large — one in the hundreds of thousands, the other in the tens of thousands — and both were supported by intensive maize agriculture, one in central Mexico and one in the North American Midwest. The comparison shows that farming could sustain major urban populations in widely separated regions.",
+      "option_explanations": {
+        "A": "Wrong — Cahokia's tens of thousands show large cities also developed north of Mexico.",
+        "B": "Wrong — similar size does not mean the same government; the chart gives no information about political systems.",
+        "C": "Right — the two cities, in different regions, both show maize agriculture supporting very large populations.",
+        "D": "Wrong — the chart compares two American cities with each other; it says nothing about European cities."
+      },
+      "period": "U1",
+      "skill": "Claims & Evidence in Sources",
+      "reasoning": "Comparison",
+      "themes": [
+        "GEO",
+        "NAT"
+      ],
+      "difficulty": "hard",
+      "fact_source": "u1.md §The story — the Mexica built Tenochtitlan, 'a lake city of hundreds of thousands'; Cahokia 'held tens of thousands of residents at its height around 1100'",
+      "stream": "drill"
+    },
+    {
+      "id": "original-u1-native-04",
+      "type": "mcq",
+      "stem": "This 1771 map (shown in facsimile) marks Cahokia on the Mississippi River, near present-day St. Louis. Mississippian chiefdoms like Cahokia built their towns in the river valleys of the Southeast and Midwest. Which factor best explains this location pattern?",
+      "stimulus": {
+        "kind": "image",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Illinois%2C%20historical%20and%20statistical%20-%20comprising%20the%20essential%20facts%20of%20its%20planting%20and%20growth%20as%20a%20province%2C%20county%2C%20territory%2C%20and%20state%20(1889)%20(14592501177).jpg?width=1200",
+        "image_caption": "Facsimile of 'A Plan of the several Villages in the Illinois Country, with Part of the River Mississippi,' by Thomas Hutchins (1771), showing Cahokia on the Mississippi River.",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Illinois,_historical_and_statistical_-_comprising_the_essential_facts_of_its_planting_and_growth_as_a_province,_county,_territory,_and_state_(1889)_(14592501177).jpg",
+        "pd_rationale": "Facsimile of a 1771 map, published in an 1889 book; pre-1930 work"
+      },
+      "options": [
+        "(A) River valleys provided fertile floodplain soils for the maize surpluses chiefdoms depended on.",
+        "(B) The Mexica Empire, centered far to the south in central Mexico, had already claimed all of the upland areas.",
+        "(C) Spanish officials ordered Native towns to be built along rivers for easier control.",
+        "(D) Rivers were the only source of drinking water available anywhere in North America."
+      ],
+      "key": "A",
+      "explanation": "Mississippian societies were maize-farming chiefdoms, and river floodplains offered the rich, renewable soils that made large maize harvests possible. Those surpluses fed dense populations and supported the chiefs, priests, and builders of places like Cahokia.",
+      "option_explanations": {
+        "A": "Right — fertile river-valley soils grew the maize surpluses that sustained chiefdom populations.",
+        "B": "Wrong — the Mexica Empire was in central Mexico, far from the Mississippi Valley.",
+        "C": "Wrong — these towns and their locations predate Spanish colonization of the region.",
+        "D": "Wrong — fresh water existed in many places; the key advantage of river valleys was fertile farmland."
+      },
+      "period": "U1",
+      "skill": "Developments & Processes",
+      "reasoning": "Causation",
+      "themes": [
+        "GEO"
+      ],
+      "difficulty": "medium",
+      "fact_source": "u1.md §The story — 'Mississippian chiefdoms farmed the river valleys of the Southeast and Midwest — Cahokia, near present-day St. Louis, held tens of thousands of residents at its height around 1100'",
+      "stream": "drill"
+    },
+    {
+      "id": "original-u1-native-05",
+      "type": "mcq",
+      "stem": "Pueblo peoples farmed in the arid Southwest, Iroquois villagers lived in the woodlands of the Northeast, and the peoples of the Pacific Northwest built their lives around fishing. Taken together, what do these examples best illustrate?",
+      "options": [
+        "(A) Native societies in every environment adopted identical farming methods and crops.",
+        "(B) Native societies shaped their economies and ways of life around their environments.",
+        "(C) Only maize-farming societies were able to establish permanent settlements anywhere.",
+        "(D) Geographic differences kept all Native societies completely isolated from one another."
+      ],
+      "key": "B",
+      "explanation": "Each group made a living in a way that fit its environment — dry farming in the Southwest, woodland village farming in the Northeast, fishing on the Northwest coast. The pattern is adaptation: different environments produced different ways of life.",
+      "option_explanations": {
+        "A": "Wrong — the examples show different adaptations, not identical methods.",
+        "B": "Right — farming, village life, and fishing each fit a particular environment.",
+        "C": "Wrong — Pacific Northwest fishing peoples maintained settled communities without maize agriculture.",
+        "D": "Wrong — the review describes different adaptations, not total isolation."
+      },
+      "period": "U1",
+      "skill": "Making Connections",
+      "reasoning": "Comparison",
+      "themes": [
+        "GEO",
+        "NAT"
+      ],
+      "difficulty": "medium",
+      "fact_source": "u1.md §The story — 'Pueblo farmers in the Southwest, Iroquois villagers in the Northeast, fishing peoples of the Pacific Northwest — had each adapted their way of life to a particular environment'",
+      "stream": "drill"
+    },
+    {
+      "id": "original-u1-native-06",
+      "type": "mcq",
+      "stem": "Historians observe that where maize farming supported dense populations, complex hierarchies developed, while societies without intensive farming stayed smaller and more mobile. Which explanation best accounts for this pattern?",
+      "options": [
+        "(A) Farming societies possessed superior weapons that forced neighboring peoples to obey them.",
+        "(B) Mobile societies held votes and decided to reject all forms of leadership.",
+        "(C) Maize could only be planted by societies that already had kings and priests.",
+        "(D) Farming produced food surpluses that fed non-farming specialists like chiefs and priests."
+      ],
+      "key": "D",
+      "explanation": "A surplus is the key: when farmers grow more food than their own families need, the extra can support full-time leaders, religious specialists, and craftspeople. That division of labor is what makes complex hierarchies possible.",
+      "option_explanations": {
+        "A": "Wrong — the pattern is about food production, not weapons.",
+        "B": "Wrong — the review describes smaller, mobile life, not a political decision against leadership.",
+        "C": "Wrong — this reverses the causation; farming came first and made hierarchy possible.",
+        "D": "Right — surpluses freed some people from farming, allowing specialized roles and hierarchy."
+      },
+      "period": "U1",
+      "skill": "Developments & Processes",
+      "reasoning": "Causation",
+      "themes": [
+        "NAT",
+        "SOC"
+      ],
+      "difficulty": "medium",
+      "fact_source": "u1.md §The story — 'The single biggest divide among them was agriculture: where maize farming supported dense populations, complex hierarchies followed; where it did not, life stayed smaller and more mobile'",
+      "stream": "drill"
+    },
+    {
+      "id": "original-u1-native-07",
+      "type": "mcq",
+      "stem": "A student claims that Native American societies were simple and unchanging before Europeans arrived. Which piece of evidence best challenges this claim?",
+      "options": [
+        "(A) All Native societies across the entire Americas spoke a single common language.",
+        "(B) No agriculture existed anywhere in the Americas before the year 1492.",
+        "(C) Cahokia's earthen mounds rivaled the largest constructions in Europe.",
+        "(D) The Inca Empire had no roads or storehouses."
+      ],
+      "key": "C",
+      "explanation": "If a North American society could organize the labor to raise earthworks on the scale of anything in Europe, it was neither simple nor static. Cahokia's mounds are direct evidence of large-scale organization and ambition before contact.",
+      "option_explanations": {
+        "A": "Wrong — the Americas held hundreds of distinct societies and languages, not one.",
+        "B": "Wrong — maize farming was widespread and supported dense populations.",
+        "C": "Right — monumental construction on a European scale contradicts 'simple and unchanging.'",
+        "D": "Wrong — the Inca did build extensive roads and storehouses."
+      },
+      "period": "U1",
+      "skill": "Claims & Evidence in Sources",
+      "reasoning": "Continuity & Change",
+      "themes": [
+        "ARC",
+        "NAT"
+      ],
+      "difficulty": "hard",
+      "fact_source": "u1.md §The story — Cahokia had 'earthen mounds that rivaled anything in Europe'; u1.md §What the exam tests here — 'Compare Native societies by environment and adaptation... the exam rewards linking social complexity to food production, not listing tribes'",
+      "stream": "drill"
+    },
+    {
+      "id": "original-u1-native-08",
+      "type": "mcq",
+      "stem": "The Iroquois lived in settled villages in the Northeast woodlands. Which development best explains how permanent village life was possible there?",
+      "options": [
+        "(A) Three sisters agriculture, which sustained dense populations in eastern North America.",
+        "(B) The use of horses to plow large fields and transport heavy harvests.",
+        "(C) Year-round hunting of migratory bison herds across the Great Plains.",
+        "(D) Tribute payments collected regularly from neighboring empires, as practiced by the Mexica."
+      ],
+      "key": "A",
+      "explanation": "Permanent villages need a reliable local food supply. In the eastern woodlands, the three sisters system provided it — three crops grown together that fed dense, settled populations year after year.",
+      "option_explanations": {
+        "A": "Right — three sisters farming sustained the dense populations of eastern North America.",
+        "B": "Wrong — horses arrived with Europeans; Iroquois villages predate them.",
+        "C": "Wrong — bison hunting was a Plains pattern, not the basis of Northeast woodland villages.",
+        "D": "Wrong — tribute empires describe the Mexica, not Iroquois villagers."
+      },
+      "period": "U1",
+      "skill": "Developments & Processes",
+      "reasoning": "Causation",
+      "themes": [
+        "GEO",
+        "NAT"
+      ],
+      "difficulty": "medium",
+      "fact_source": "u1.md §The story — 'Iroquois villagers in the Northeast'; u1.md §Key terms — Three Sisters agriculture 'sustained dense Native populations in eastern North America'",
+      "stream": "drill"
+    },
+    {
+      "id": "original-u1-native-09",
+      "type": "mcq",
+      "stem": "This 1880 photograph shows Taos Pueblo in New Mexico: multi-story adobe dwellings clustered together in an arid landscape. What does this image best illustrate about Pueblo adaptation to the Southwest?",
+      "stimulus": {
+        "kind": "image",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Taos%20Pueblo%2C%20New%20Mexico%20LCCN2015651512.jpg?width=1200",
+        "image_caption": "Photograph of Taos Pueblo, New Mexico, 1880: multi-story adobe dwellings in an arid landscape.",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Taos_Pueblo,_New_Mexico_LCCN2015651512.jpg",
+        "pd_rationale": "1880 albumen photograph; pre-1930, public domain (Library of Congress)"
+      },
+      "options": [
+        "(A) Pueblo peoples depended on river floodplains exactly like the Mississippians did.",
+        "(B) Pueblo peoples built a settled farming society suited to a dry environment.",
+        "(C) The Spanish introduced adobe architecture to the Southwest during the 1800s.",
+        "(D) Pueblo communities were temporary camps that relocated with each season."
+      ],
+      "key": "B",
+      "explanation": "The tightly clustered adobe buildings, made from local earth and suited to a dry climate, show a farming people who adapted their housing and village life to the arid Southwest — a very different answer to farming than the river-valley towns of the Mississippians.",
+      "option_explanations": {
+        "A": "Wrong — the arid Southwest lacked the great floodplains of the Southeast and Midwest; the adaptation was different.",
+        "B": "Right — adobe construction and compact villages fit an arid farming environment.",
+        "C": "Wrong — pueblo adobe architecture is a Native tradition far older than the 1800s.",
+        "D": "Wrong — the substantial multi-story buildings show permanent settlement, not seasonal camps."
+      },
+      "period": "U1",
+      "skill": "Making Connections",
+      "reasoning": "Comparison",
+      "themes": [
+        "GEO",
+        "NAT"
+      ],
+      "difficulty": "medium",
+      "fact_source": "u1.md §The story — 'Pueblo farmers in the Southwest... had each adapted their way of life to a particular environment'",
+      "stream": "drill"
+    },
+    {
+      "id": "original-u1-native-10",
+      "type": "mcq",
+      "stem": "The 1591 engraving below shows Florida Indians hunting deer while disguised under deerskins. An earlier engraving from the same series showed the same people planting beans and maize. What do the two images together best demonstrate?",
+      "stimulus": {
+        "kind": "image",
+        "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Florida%20Indians%2C%20disguised%20under%20deerskins%2C%20hunting%20deer%20LCCN2001695742.jpg?width=1200",
+        "image_caption": "Engraving by Theodor de Bry (1591), after Jacques Le Moyne de Morgues, showing Florida Indians hunting deer disguised under deerskins.",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Florida_Indians,_disguised_under_deerskins,_hunting_deer_LCCN2001695742.jpg",
+        "pd_rationale": "1591 engraving; pre-1930, public domain (Library of Congress)"
+      },
+      "options": [
+        "(A) Hunting was far more important than farming to every Native society throughout the Americas.",
+        "(B) Native peoples combined farming with hunting rather than relying on one food source.",
+        "(C) Native peoples gave up farming entirely once they learned to hunt deer.",
+        "(D) Only societies without any agriculture ever hunted animals for food."
+      ],
+      "key": "B",
+      "explanation": "The same community is shown both planting crops and hunting deer, which means their economy mixed the two. Farming provided staple crops while hunting added meat and other resources — a diversified way of making a living.",
+      "option_explanations": {
+        "A": "Wrong — the images show both activities, and 'every Native society' overgeneralizes from one region.",
+        "B": "Right — the pair shows one people both farming and hunting.",
+        "C": "Wrong — the images show both practices existing side by side, not one replacing the other.",
+        "D": "Wrong — this very example shows a farming people hunting too."
+      },
+      "period": "U1",
+      "skill": "Claims & Evidence in Sources",
+      "reasoning": "Comparison",
+      "themes": [
+        "NAT",
+        "GEO"
+      ],
+      "difficulty": "hard",
+      "fact_source": "u1.md §The story — Native societies 'had each adapted their way of life to a particular environment'; u1.md §What the exam tests here — compare adaptations rather than listing tribes",
+      "stream": "drill"
+    }
+  ]
+}

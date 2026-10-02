@@ -1,0 +1,67 @@
+{
+ "items": [
+  {
+   "difficulty": "hard",
+   "explanation": "Single-invention explanations overreach: the bulb was useless without generators, wiring, and stations like Pearl Street, and urbanization was already underway before 1879. The bulb was widely adopted. Edison's Menlo Park was team-based, and the infrastructure need is visible in the Pearl Street photographs. Electricity eventually displaced gas lighting.",
+   "fact_source": "u6.md §The story — Edison's light bulb (1879); scope-of-inference reasoning — flagged for audit",
+   "id": "original-u6-tech-21",
+   "key": "B",
+   "option_explanations": {
+    "A": "The bulb was adopted in cities across the country.",
+    "B": "Correct. The claim overreaches: the bulb needed a whole system, and cities predated it.",
+    "C": "Menlo Park was team-based, and the bulb plainly required infrastructure.",
+    "D": "Electricity eventually won out over gas lighting."
+   },
+   "options": [
+    "(A) the light bulb was never actually adopted in any American city at all, remaining a mere laboratory curiosity for decades",
+    "(B) the bulb required an entire system — generators, wires, stations — and cities were already growing before it arrived",
+    "(C) Edison worked entirely alone in his laboratory, so no larger supporting system was ever needed",
+    "(D) gas lighting remained cheaper than electricity forever and never lost its lead in any city"
+   ],
+   "period": "U6",
+   "reasoning": "Causation",
+   "skill": "Claims & Evidence in Sources",
+   "stem": "A student claims: 'Edison's light bulb single-handedly created the modern American city.' The best historical criticism of this claim is that...",
+   "stream": "drill",
+   "themes": [
+    "WXT"
+   ],
+   "type": "mcq"
+  },
+  {
+   "difficulty": "medium",
+   "explanation": "The portrait is John D. Rockefeller. Standard Oil grew by buying rival refineries — horizontal integration, combining competitors at the same stage. Vertical integration (owning every stage from wells to sales) was Carnegie's steel strategy, not Rockefeller's. No government made Standard Oil a sole legal supplier. Rockefeller opposed unions; he did not organize them.",
+   "fact_source": "u6.md §Key terms — Vertical / horizontal integration — buying out rivals (Rockefeller) + §The story — Standard Oil, 1870 + PD portrait, 1880 (stimulus)",
+   "id": "original-u6-tech-22",
+   "key": "C",
+   "option_explanations": {
+    "A": "Owning every stage from wells to retail is vertical integration — Carnegie's steel method, not Rockefeller's.",
+    "B": "No government granted Standard Oil a legal monopoly.",
+    "C": "Correct. Standard Oil dominated by buying out competing refineries: horizontal integration.",
+    "D": "Rockefeller fought unions; he did not build them."
+   },
+   "options": [
+    "(A) owning every stage from oil wells to retail sales — vertical integration",
+    "(B) winning government contracts as the sole legal supplier",
+    "(C) buying out competing refineries — horizontal integration",
+    "(D) organizing oil workers into a single national union"
+   ],
+   "period": "U6",
+   "reasoning": "Causation",
+   "skill": "Developments & Processes",
+   "stem": "The businessman in this 1880 portrait built his fortune in the oil business. The company he founded, Standard Oil (1870), came to dominate oil refining chiefly through which strategy?",
+   "stimulus": {
+    "image_caption": "John D. Rockefeller, photographed in 1880.",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/66/John_D_Rockefeller_by_Sarony%2C_1880.jpg",
+    "kind": "image",
+    "pd_rationale": "Photograph, 1880; pre-1930",
+    "source_page": "https://commons.wikimedia.org/wiki/File:John_D_Rockefeller_by_Sarony,_1880.jpg"
+   },
+   "stream": "drill",
+   "themes": [
+    "WXT"
+   ],
+   "type": "mcq"
+  }
+ ]
+}

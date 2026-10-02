@@ -1,0 +1,404 @@
+{
+ "items": [
+  {
+   "id": "original-u9-immig-03",
+   "type": "mcq",
+   "stem": "The chart shows the regional origins of U.S. immigrants in 1960 and 2010. Compared with 1960, immigration to the United States in recent decades differed most clearly in which way?",
+   "stimulus": {
+    "kind": "chart",
+    "chart_spec": {
+     "type": "bar",
+     "title": "Region of Origin of U.S. Immigrants, 1960 vs. 2010",
+     "x_label": "Region",
+     "y_label": "Percent of immigrants",
+     "labels": [
+      "Europe",
+      "Latin America",
+      "Asia"
+     ],
+     "values": [
+      [
+       75,
+       9,
+       5
+      ],
+      [
+       12,
+       53,
+       28
+      ]
+     ],
+     "source_note": "Approximate figures (1960 vs. 2010 shares); the regional shift underlying the post-1965 demographic change described in u9.md §The story ('especially around immigration').",
+     "series_labels": [
+      "1960",
+      "2010"
+     ]
+    }
+   },
+   "options": [
+    "(A) Recent immigrants came almost entirely from Europe, just as in 1960, with no real change in their origins.",
+    "(B) Immigration stopped completely after 1965 and never resumed at any level.",
+    "(C) Recent immigrants came mainly from Canada, which the chart shows as the largest source.",
+    "(D) The regions of origin shifted from Europe toward Latin America and Asia."
+   ],
+   "key": "D",
+   "explanation": "In 1960 about three-quarters of immigrants came from Europe; by 2010 Europe supplied only about one-eighth, while Latin America and Asia together supplied the large majority. Ending the national-origins quotas redirected the flow of newcomers, which is why the review ties modern demographic change so closely to immigration.",
+   "option_explanations": {
+    "A": "Incorrect. The chart shows Europe's share collapsing from 75 to 12 percent — the opposite of this claim.",
+    "B": "Incorrect. Immigration grew substantially after 1965, as the decade and population-share charts in this bank show.",
+    "C": "Incorrect. Canada is not broken out on the chart, and Latin America (53 percent) is by far the largest regional source shown for 2010.",
+    "D": "Correct. It accurately reports the chart's reversal: Europe dominant in 1960, Latin America and Asia dominant by 2010."
+   },
+   "period": "U9",
+   "skill": "Developments & Processes",
+   "reasoning": "Continuity & Change",
+   "themes": [
+    "MIG",
+    "NAT"
+   ],
+   "difficulty": "medium",
+   "fact_source": "u9.md §The story — 'demographic change — the coming \"majority-minority\" nation — reshaped politics, especially around immigration'",
+   "stream": "drill"
+  },
+  {
+   "id": "original-u9-immig-04",
+   "type": "mcq",
+   "stem": "Nativist opposition to immigration flared in the 1990s and 2000s. In what way did it most resemble the nativism of the 1840s–1850s (the Know-Nothings) and the 1920s (the quota laws)?",
+   "options": [
+    "(A) All three movements argued that newcomers threatened American jobs, culture, or political stability.",
+    "(B) All three movements demanded completely open borders and the abolition of every immigration law on the books.",
+    "(C) All three movements were organized and led by recent immigrants themselves, acting against native-born Americans.",
+    "(D) All three movements succeeded in ending immigration to the United States permanently and completely."
+   ],
+   "key": "A",
+   "explanation": "Nativism's core claims repeat: immigrants are said to undercut wages, refuse to assimilate, and import dangerous loyalties. The Know-Nothings aimed these charges at Irish and German Catholics, the 1920s restrictionists at southern and eastern Europeans, and modern nativists at Latin American and Asian newcomers — different targets, same structure of argument.",
+   "option_explanations": {
+    "A": "Correct. The jobs-culture-stability triad appears in nativist rhetoric in every era, which is why historians treat modern backlash as continuous with earlier episodes.",
+    "B": "Incorrect. Nativist movements sought restriction, not open borders; open-borders advocacy came from their opponents.",
+    "C": "Incorrect. Nativist movements were led by native-born Americans defining themselves against newcomers, not by immigrants.",
+    "D": "Incorrect. Immigration continued after each episode — the 1920s quotas were eventually repealed, and post-1965 immigration reached record levels."
+   },
+   "period": "U9",
+   "skill": "Making Connections",
+   "reasoning": "Comparison",
+   "themes": [
+    "MIG",
+    "NAT",
+    "PCE"
+   ],
+   "difficulty": "hard",
+   "fact_source": "u9.md §The story — Trump's 2016 election 'channeled the backlash: against globalization, against immigration'; demographic change 'reshaped politics, especially around immigration'",
+   "stream": "drill"
+  },
+  {
+   "id": "original-u9-immig-05",
+   "type": "mcq",
+   "stem": "The review says the coming 'majority-minority' nation 'reshaped politics, especially around immigration.' What does 'majority-minority' mean in this context?",
+   "options": [
+    "(A) That immigrants made up a majority of American voters by the year 2000, outvoting native-born citizens.",
+    "(B) That no single racial or ethnic group would make up a majority of the U.S. population.",
+    "(C) That racial minorities held a majority of seats in Congress after 2010.",
+    "(D) That immigration to the United States had stopped entirely by the 1990s."
+   ],
+   "key": "B",
+   "explanation": "'Majority-minority' describes a population in which every group is a numerical minority — no one group exceeds half. Driven largely by post-1965 immigration and higher birth rates among Latino and Asian Americans, the United States was projected to reach that point in the mid-twenty-first century, a prospect that intensified political conflict over immigration.",
+   "option_explanations": {
+    "A": "Incorrect. Immigrants were a large and growing share of the population but not a majority of voters in 2000.",
+    "B": "Correct. This is the demographic meaning of the term: the end of any single group's outright majority.",
+    "C": "Incorrect. Congress remained majority white throughout this period; the term describes the population, not the legislature.",
+    "D": "Incorrect. The term describes the result of continued immigration and differential birth rates, not the end of immigration."
+   },
+   "period": "U9",
+   "skill": "Contextualization",
+   "reasoning": "Causation",
+   "themes": [
+    "MIG",
+    "NAT",
+    "PCE"
+   ],
+   "difficulty": "medium",
+   "fact_source": "u9.md §The story — 'demographic change — the coming \"majority-minority\" nation — reshaped politics, especially around immigration'",
+   "stream": "drill"
+  },
+  {
+   "id": "original-u9-immig-06",
+   "type": "mcq",
+   "stem": "According to the chart of the foreign-born share of the U.S. population, the share first rose above 10 percent during which decade?",
+   "stimulus": {
+    "kind": "chart",
+    "chart_spec": {
+     "type": "line",
+     "title": "Foreign-Born Share of U.S. Population, 1970–2020",
+     "x_label": "Year",
+     "y_label": "Percent foreign-born",
+     "labels": [
+      "1970",
+      "1980",
+      "1990",
+      "2000",
+      "2010",
+      "2020"
+     ],
+     "values": [
+      4.7,
+      6.2,
+      7.9,
+      11.1,
+      12.9,
+      13.7
+     ],
+     "source_note": "Approximate census-based figures; the demographic change 'especially around immigration' described in u9.md §The story."
+    }
+   },
+   "options": [
+    "(A) The 1970s, when the share rose from 4.7 to 6.2 percent.",
+    "(B) The 1980s, when the share rose from 6.2 to 7.9 percent.",
+    "(C) The 1990s, when the share crossed the 10 percent line.",
+    "(D) The 2010s, when the share rose from 12.9 to 13.7 percent."
+   ],
+   "key": "C",
+   "explanation": "The chart plots 7.9 percent in 1990 and 11.1 percent in 2000, so the 10 percent threshold was crossed during the 1990s — the decade when post-1965 immigration reached its highest levels to that point.",
+   "option_explanations": {
+    "A": "Incorrect. The 1970s ended at 6.2 percent, well below the 10 percent threshold.",
+    "B": "Incorrect. The 1980s ended at 7.9 percent, still below 10 percent.",
+    "C": "Correct. The 1990 value (7.9) is below 10 and the 2000 value (11.1) is above it, so the crossing happened in between.",
+    "D": "Incorrect. By the 2010s the share was already above 10 percent; the threshold had been crossed two decades earlier."
+   },
+   "period": "U9",
+   "skill": "Claims & Evidence in Sources",
+   "reasoning": "Continuity & Change",
+   "themes": [
+    "MIG"
+   ],
+   "difficulty": "medium",
+   "fact_source": "u9.md §The story — 'demographic change — the coming \"majority-minority\" nation — reshaped politics, especially around immigration'",
+   "stream": "drill"
+  },
+  {
+   "id": "original-u9-immig-07",
+   "type": "mcq",
+   "stem": "Economists have long debated immigration's effect on American wages. Which statement best reflects the mainstream finding?",
+   "options": [
+    "(A) Immigration had no effect on any American worker's wages under any circumstances.",
+    "(B) Immigration lowered the wages of all workers equally, from farmhands to highly paid professionals and corporate executives.",
+    "(C) Immigration was the single primary cause of the Great Recession of 2007–2009, outweighing the housing bubble entirely.",
+    "(D) Immigration modestly lowered wages for less-skilled native workers in direct competition with newcomers."
+   ],
+   "key": "D",
+   "explanation": "Labor-market studies generally find small negative wage effects concentrated among native workers without high-school diplomas — the group most substitutable for immigrant labor — while the broader economy gains from the larger workforce, lower prices, and the taxes and spending immigrants contribute.",
+   "option_explanations": {
+    "A": "Incorrect. 'No effect under any circumstances' is too absolute; careful studies do find modest effects on directly competing workers.",
+    "B": "Incorrect. Professionals and skilled workers generally gained or were unaffected, since immigrant labor complemented rather than replaced their work.",
+    "C": "Incorrect. The Great Recession was caused by the housing bubble, deregulation, and financial engineering — the review's own list — not by immigration.",
+    "D": "Correct. It states the consensus precisely: concentrated modest costs for competing less-skilled workers, diffuse benefits for employers, consumers, and the economy as a whole."
+   },
+   "period": "U9",
+   "skill": "Argumentation",
+   "reasoning": "Causation",
+   "themes": [
+    "MIG",
+    "WXT"
+   ],
+   "difficulty": "hard",
+   "fact_source": "u9.md §The story — demographic change 'reshaped politics, especially around immigration'; §What the exam tests here — globalization's winners and losers",
+   "stream": "drill"
+  },
+  {
+   "id": "original-u9-immig-08",
+   "type": "mcq",
+   "stem": "The chart shows legal U.S. immigration climbing from 3.3 million in the 1960s to 10.4 million in the 2000s. As these newcomers entered the American workforce, where did many find jobs, and why?",
+   "stimulus": {
+    "kind": "chart",
+    "chart_spec": {
+     "type": "bar",
+     "title": "Legal U.S. Immigration by Decade, 1960s–2000s",
+     "x_label": "Decade",
+     "y_label": "Millions of legal immigrants",
+     "labels": [
+      "1960s",
+      "1970s",
+      "1980s",
+      "1990s",
+      "2000s"
+     ],
+     "values": [
+      3.3,
+      4.5,
+      6.0,
+      9.8,
+      10.4
+     ],
+     "source_note": "Approximate figures; the post-1965 growth in immigration underlying the demographic change described in u9.md §The story ('especially around immigration')."
+    }
+   },
+   "options": [
+    "(A) Immigrants filled lower-wage jobs in restaurants, hotels, construction, and care work that employers struggled to fill.",
+    "(B) Federal law barred immigrants from holding any service-sector job, reserving all such work by statute for native-born citizens.",
+    "(C) The service economy shrank as immigration grew, because newcomers refused all service work.",
+    "(D) Immigrants worked only in factories and never took service jobs of any kind."
+   ],
+   "key": "A",
+   "explanation": "Many immigrants found work in lower-wage jobs — in restaurants, hotels, construction, and care work — that employers struggled to fill with native workers. The chart's rising immigrant numbers and this labor-market demand reinforced each other: jobs pulled migrants, and migrants supplied the labor.",
+   "option_explanations": {
+    "A": "Correct. It connects the chart's rising immigrant numbers to employers' demand for labor in lower-wage industries, the standard account of how immigration and labor markets interacted.",
+    "B": "Incorrect. No such legal bar existed; immigrants worked across the service economy in large numbers.",
+    "C": "Incorrect. The service economy grew enormously during exactly the decades when immigration was rising fastest.",
+    "D": "Incorrect. Immigrants worked in both sectors, and service industries absorbed a large share of immigrant labor."
+   },
+   "period": "U9",
+   "skill": "Making Connections",
+   "reasoning": "Causation",
+   "themes": [
+    "MIG",
+    "WXT"
+   ],
+   "difficulty": "medium",
+   "fact_source": "u9.md §The story — demographic change 'especially around immigration'; post-1965 immigration growth",
+   "stream": "drill"
+  },
+  {
+   "id": "original-u9-immig-09",
+   "type": "mcq",
+   "stem": "Passage 1 (original composition in the style of an 1850s nativist pamphlet): 'These newcomers cling to their foreign tongue and their foreign church; they will cheapen the labor of honest workingmen and corrupt our ballot boxes.' Passage 2 (original composition in the style of 1990s commentary): 'They refuse to learn English, they drive down wages for our workers, and they strain our schools and hospitals.' A historian comparing these two passages would most reasonably conclude which of the following?",
+   "stimulus": {
+    "kind": "text",
+    "text": "Passage 1 (original composition in the style of an 1850s nativist pamphlet): 'These newcomers cling to their foreign tongue and their foreign church; they will cheapen the labor of honest workingmen and corrupt our ballot boxes.' Passage 2 (original composition in the style of 1990s commentary): 'They refuse to learn English, they drive down wages for our workers, and they strain our schools and hospitals.'"
+   },
+   "options": [
+    "(A) Nativist arguments disappeared entirely between the 1850s and the 1990s, vanishing so completely that no trace remained in public debate.",
+    "(B) Nativist rhetoric recycled similar claims about cultural and economic threat across 150 years, even as the targeted groups changed.",
+    "(C) The 1990s passage proves that the 1850s claims about newcomers were accurate.",
+    "(D) Both passages were written by the same author in the same year."
+   ],
+   "key": "B",
+   "explanation": "The two passages, 140 years apart, make the same three charges — linguistic and cultural refusal to assimilate, wage undercutting, and burdening public institutions — aimed at different groups (Irish and Germans then; Latin Americans and Asians later). The continuity is in the rhetoric's structure, not in its targets.",
+   "option_explanations": {
+    "A": "Incorrect. The 1990s passage shows the arguments alive and well, not disappeared.",
+    "B": "Correct. It identifies what actually persisted: the template of complaint (language, wages, public burden), reused against each new wave of newcomers.",
+    "C": "Incorrect. A later passage repeating a claim does not verify the earlier one; historians test such claims against evidence, not against repetition.",
+    "D": "Incorrect. The passages are labeled as separate original compositions in different historical styles, 140 years apart."
+   },
+   "period": "U9",
+   "skill": "Sourcing & Situation",
+   "reasoning": "Comparison",
+   "themes": [
+    "MIG",
+    "NAT"
+   ],
+   "difficulty": "hard",
+   "fact_source": "u9.md §The story — nativist backlash 'against immigration' as continuity in modern politics",
+   "stream": "drill"
+  },
+  {
+   "id": "original-u9-immig-10",
+   "type": "mcq",
+   "stem": "Debates over whether immigrants should assimilate into a single American culture or maintain distinct cultural identities continued from the early 1900s into the 1990s and 2000s. This persistence best shows which of the following?",
+   "options": [
+    "(A) That the federal government settled the assimilation question permanently in 1965, ending all debate on the subject.",
+    "(B) That immigrants in the 1990s were the first group in American history ever to resist assimilation.",
+    "(C) A continuity: each generation of newcomers revived the same argument about what American identity requires.",
+    "(D) That cultural debates about immigration ended once the quota laws were repealed in 1965."
+   ],
+   "key": "C",
+   "explanation": "The 'melting pot' versus cultural-pluralism argument predates the 1965 act by decades — it was fought over German, Irish, Italian, and Jewish immigrants long before it was fought over Latino and Asian newcomers. Each wave's arrival reactivated the same underlying question about whether American identity demands cultural uniformity.",
+   "option_explanations": {
+    "A": "Incorrect. The 1965 act changed immigration law, not the cultural debate, which continued unabated afterward.",
+    "B": "Incorrect. Earlier groups — Germans with their schools and newspapers, for example — also maintained distinct identities amid identical complaints.",
+    "C": "Correct. It names the pattern accurately: a recurring argument triggered anew by each wave, making it a continuity across the century.",
+    "D": "Incorrect. The debate intensified, if anything, after the quotas' repeal brought larger and more diverse immigration."
+   },
+   "period": "U9",
+   "skill": "Developments & Processes",
+   "reasoning": "Continuity & Change",
+   "themes": [
+    "MIG",
+    "NAT",
+    "SOC"
+   ],
+   "difficulty": "medium",
+   "fact_source": "u9.md §The story — demographic change 'reshaped politics, especially around immigration'",
+   "stream": "drill"
+  },
+  {
+   "id": "original-u9-immig-11",
+   "type": "mcq",
+   "stem": "According to the chart of legal U.S. immigration by decade, which decade saw the largest increase in immigration compared with the decade immediately before it?",
+   "stimulus": {
+    "kind": "chart",
+    "chart_spec": {
+     "type": "bar",
+     "title": "Legal U.S. Immigration by Decade, 1960s–2000s",
+     "x_label": "Decade",
+     "y_label": "Millions of legal immigrants",
+     "labels": [
+      "1960s",
+      "1970s",
+      "1980s",
+      "1990s",
+      "2000s"
+     ],
+     "values": [
+      3.3,
+      4.5,
+      6.0,
+      9.8,
+      10.4
+     ],
+     "source_note": "Approximate figures; the post-1965 growth in immigration underlying the demographic change described in u9.md §The story ('especially around immigration')."
+    }
+   },
+   "options": [
+    "(A) The 1990s, with a gain of 3.8 million over the 1980s.",
+    "(B) The 1970s, when immigration rose by 1.2 million over the 1960s.",
+    "(C) The 2000s, when immigration rose by 0.6 million over the 1990s.",
+    "(D) The 1960s, which had the largest total of any decade shown."
+   ],
+   "key": "A",
+   "explanation": "Subtracting each decade from the one before gives gains of 1.2 (1970s), 1.5 (1980s), 3.8 (1990s), and 0.6 million (2000s). The 1990s jump — nearly 4 million more than the 1980s — was by far the largest, reflecting the compounding family-reunification system at full force.",
+   "option_explanations": {
+    "A": "Correct. The arithmetic is direct: 9.8 minus 6.0 equals 3.8 million, larger than any other decade-to-decade gain on the chart.",
+    "B": "Incorrect. The 1970s gain was 1.2 million (4.5 minus 3.3), well below the 1990s gain.",
+    "C": "Incorrect. The 2000s gain was only 0.6 million (10.4 minus 9.8), the smallest increase shown.",
+    "D": "Incorrect. The 1960s bar (3.3 million) is the shortest on the chart, and the question asks about increases, not totals."
+   },
+   "period": "U9",
+   "skill": "Claims & Evidence in Sources",
+   "reasoning": "Causation",
+   "themes": [
+    "MIG"
+   ],
+   "difficulty": "hard",
+   "fact_source": "u9.md §The story — 'demographic change — the coming \"majority-minority\" nation — reshaped politics, especially around immigration'",
+   "stream": "drill"
+  },
+  {
+   "id": "original-u9-immig-12",
+   "type": "mcq",
+   "stem": "The Immigration and Nationality Act of 1965 reversed the approach of the 1920s quota laws. The difference between the two policies was which of the following?",
+   "options": [
+    "(A) The 1920s laws encouraged and expanded immigration, while the 1965 law restricted it severely and cut numbers.",
+    "(B) The 1920s laws favored northern and western Europeans by national origin; the 1965 law ended national-origin preferences.",
+    "(C) Both laws did exactly the same thing, used identical mechanisms, and produced identical demographic results.",
+    "(D) The 1920s laws applied only to Asian immigrants, while the 1965 law applied only to European immigrants, leaving others unaffected."
+   ],
+   "key": "B",
+   "explanation": "The 1921 and 1924 quota acts allocated visas by national origin, deliberately preserving the country's existing ethnic makeup by favoring Britain, Germany, and Scandinavia. The 1965 act abolished that hierarchy, replacing it with preferences for family reunification and skills — the legal pivot that made the modern, diverse immigration flow possible.",
+   "option_explanations": {
+    "A": "Incorrect. The 1920s laws sharply restricted immigration; the 1965 law opened it up — the reverse of this claim.",
+    "B": "Correct. It states the central policy reversal accurately: from a system designed to freeze the ethnic status quo to one blind to national origin.",
+    "C": "Incorrect. The two laws were opposites in design and produced opposite demographic outcomes.",
+    "D": "Incorrect. The 1920s quotas covered all nationalities outside the Western Hemisphere with a discriminatory formula; the 1965 law applied universally."
+   },
+   "period": "U9",
+   "skill": "Contextualization",
+   "reasoning": "Comparison",
+   "themes": [
+    "MIG",
+    "PCE"
+   ],
+   "difficulty": "medium",
+   "fact_source": "u9.md §The story — post-1965 'demographic change' as the long-tail consequence (1965 act not named in review)",
+   "stream": "drill"
+  }
+ ]
+}

@@ -1,0 +1,324 @@
+{
+ "items": [
+  {
+   "id": "original-u9-reagan-01",
+   "type": "mcq",
+   "stem": "The review calls Ronald Reagan's 1980 election 'a repudiation.' What was being repudiated?",
+   "options": [
+    "(A) The entire conservative movement, which the voters decisively rejected in favor of a renewed liberalism.",
+    "(B) The New Deal/Great Society premise: Washington should actively manage the economy and expand social programs.",
+    "(C) The federal government itself, which Reagan then abolished.",
+    "(D) American democracy, which voters abandoned in 1980."
+   ],
+   "period": "U9",
+   "skill": "Contextualization",
+   "reasoning": "Causation",
+   "themes": [
+    "PCE"
+   ],
+   "difficulty": "medium",
+   "fact_source": "u9.md \u00a7The story \u2014 'Ronald Reagan's election in 1980 was a repudiation'; \u00a7What the exam tests here \u2014 'Compare Reagan's conservatism with the liberalism it displaced'",
+   "stream": "drill"
+  },
+  {
+   "id": "original-u9-reagan-02",
+   "type": "mcq",
+   "stem": "The review says 'Reaganomics rested on supply-side theory.' What did the theory claim?",
+   "options": [
+    "(A) That government spending is the one and only possible source of economic growth in any economy.",
+    "(B) That raising tax rates always increases government revenue.",
+    "(C) That lower taxes would unleash enough private-sector growth to fully pay for the cuts themselves.",
+    "(D) That the economy works best when money is abolished entirely."
+   ],
+   "period": "U9",
+   "skill": "Developments & Processes",
+   "reasoning": "Causation",
+   "themes": [
+    "PCE",
+    "WXT"
+   ],
+   "difficulty": "medium",
+   "fact_source": "u9.md \u00a7The story \u2014 '\"Reaganomics\" rested on supply-side theory: lower taxes would unleash growth that paid for itself'; \u00a7Key terms \u2014 Reaganomics / supply-side economics",
+   "stream": "drill"
+  },
+  {
+   "id": "original-u9-reagan-03",
+   "type": "mcq",
+   "stem": "The chart shows the federal deficit at $221 billion in 1986, five years after the 1981 tax cuts. What does this figure show about supply-side theory's central prediction?",
+   "stimulus": {
+    "kind": "chart",
+    "chart_spec": {
+     "type": "line",
+     "title": "Federal Budget Deficit (+) / Surplus (\u2212), 1980\u20132000",
+     "x_label": "Year",
+     "y_label": "Billions of dollars (negative = surplus)",
+     "labels": [
+      "1980",
+      "1983",
+      "1986",
+      "1989",
+      "1992",
+      "1998",
+      "2000"
+     ],
+     "values": [
+      74,
+      208,
+      221,
+      153,
+      290,
+      -69,
+      -236
+     ],
+     "source_note": "Approximate figures; Reagan-era deficits per u9.md \u00a7The story ('Growth did return, but so did huge deficits')."
+    }
+   },
+   "options": [
+    "(A) The prediction was confirmed: the deficit vanished by 1986.",
+    "(B) The chart is completely irrelevant to evaluating the economic theory and proves absolutely nothing either way.",
+    "(C) The deficit fell after the cuts, proving they paid for themselves.",
+    "(D) The prediction failed: far from paying for themselves, the cuts were followed by tripled deficits."
+   ],
+   "period": "U9",
+   "skill": "Claims & Evidence in Sources",
+   "reasoning": "Causation",
+   "themes": [
+    "PCE",
+    "WXT"
+   ],
+   "difficulty": "hard",
+   "fact_source": "u9.md \u00a7The story \u2014 'Growth did return, but so did huge deficits'; \u00a7Key terms \u2014 Reaganomics / supply-side economics",
+   "stream": "drill"
+  },
+  {
+   "id": "original-u9-reagan-04",
+   "type": "mcq",
+   "stem": "The chart shows union membership at 20.1 percent of American workers in 1980, on the eve of the PATCO strike. Reagan's firing of the striking air-traffic controllers in 1981 signaled which of the following?",
+   "stimulus": {
+    "kind": "chart",
+    "chart_spec": {
+     "type": "line",
+     "title": "Union Membership as Share of U.S. Workers, 1980\u20132020",
+     "x_label": "Year",
+     "y_label": "Percent of workers",
+     "labels": [
+      "1980",
+      "1985",
+      "1990",
+      "1995",
+      "2000",
+      "2020"
+     ],
+     "values": [
+      20.1,
+      18.0,
+      16.1,
+      14.9,
+      13.5,
+      10.8
+     ],
+     "source_note": "Approximate figures; the decline following the PATCO turning point described in u9.md \u00a7Key terms (PATCO strike, 1981, 'a landmark defeat for organized labor')."
+    }
+   },
+   "options": [
+    "(A) That organized labor's power was over \u2014 the government would confront strikes, a stance employers copied.",
+    "(B) Strong and enthusiastic presidential support for expanding union power and membership across the entire country.",
+    "(C) That all strikes were now legal without any restrictions.",
+    "(D) The immediate end of the federal government."
+   ],
+   "period": "U9",
+   "skill": "Making Connections",
+   "reasoning": "Causation",
+   "themes": [
+    "PCE",
+    "WXT"
+   ],
+   "difficulty": "medium",
+   "fact_source": "u9.md \u00a7The story \u2014 breaking the PATCO strike 'to signal that organized labor's power was over'; \u00a7Key terms \u2014 PATCO strike (1981)",
+   "stream": "drill"
+  },
+  {
+   "id": "original-u9-reagan-05",
+   "type": "mcq",
+   "stem": "'Government is not the solution to our problem; government is the problem.' \u2014 Ronald Reagan, First Inaugural Address, 1981 (short famous phrase quoted). What did this line signal about Reagan's view of federal power?",
+   "stimulus": {
+    "kind": "text",
+    "text": "Government is not the solution to our problem; government is the problem. \u2014 Ronald Reagan, First Inaugural Address, 1981 (short famous phrase quoted)."
+   },
+   "options": [
+    "(A) That he planned a dramatic expansion of federal programs.",
+    "(B) A reversal: liberals cast Washington as the solver of problems; Reagan cast it as the obstacle.",
+    "(C) That he intended to abolish the presidency itself.",
+    "(D) That he fully and completely agreed with the liberal view of government's proper role in the economy."
+   ],
+   "period": "U9",
+   "skill": "Sourcing & Situation",
+   "reasoning": "Causation",
+   "themes": [
+    "PCE"
+   ],
+   "difficulty": "hard",
+   "fact_source": "u9.md \u00a7The story \u2014 Reagan 'promised to shrink government at home'; \u00a7What the exam tests here \u2014 contrast Reagan's conservatism with the liberalism it displaced",
+   "stream": "drill"
+  },
+  {
+   "id": "original-u9-reagan-06",
+   "type": "mcq",
+   "stem": "The review asks students to contrast Reagan's conservatism with the liberalism it displaced. Which of the following states the contrast accurately?",
+   "options": [
+    "(A) Both sides agreed completely about the proper role of the federal government.",
+    "(B) Liberals wanted a much smaller federal government while conservatives wanted a much larger and more powerful one.",
+    "(C) Liberals: federal power delivers security and justice. Conservatives: it threatens freedom and growth.",
+    "(D) Neither side held any coherent view of what the federal government should do."
+   ],
+   "period": "U9",
+   "skill": "Developments & Processes",
+   "reasoning": "Comparison",
+   "themes": [
+    "PCE"
+   ],
+   "difficulty": "medium",
+   "fact_source": "u9.md \u00a7What the exam tests here \u2014 'Compare Reagan's conservatism with the liberalism it displaced: the New Right reversed the New Deal/Great Society answer to what government is for \u2014 be ready to contrast the two visions of federal power point by point'",
+   "stream": "drill"
+  },
+  {
+   "id": "original-u9-reagan-07",
+   "type": "mcq",
+   "stem": "Deregulation 'accelerated under Reagan across airlines, banking, energy, and communications.' Supporters of deregulation argued that it would do which of the following?",
+   "options": [
+    "(A) Raise consumer prices deliberately in order to protect established companies from competition.",
+    "(B) Transfer ownership of the affected industries to the federal government.",
+    "(C) Guarantee every worker a lifetime job regardless of business conditions.",
+    "(D) Lower prices and more competition by removing rate-setting and entry barriers."
+   ],
+   "period": "U9",
+   "skill": "Contextualization",
+   "reasoning": "Causation",
+   "themes": [
+    "PCE",
+    "WXT"
+   ],
+   "difficulty": "medium",
+   "fact_source": "u9.md \u00a7Key terms \u2014 Deregulation: 'the rollback of federal rules on business, accelerating under Reagan across airlines, banking, energy, and communications'",
+   "stream": "drill"
+  },
+  {
+   "id": "original-u9-reagan-08",
+   "type": "mcq",
+   "stem": "The review's verdict on Reaganomics \u2014 'Growth did return, but so did huge deficits and stark inequality' \u2014 supports which overall evaluation?",
+   "options": [
+    "(A) A mixed verdict: renewed growth but a failed fiscal promise and wider inequality.",
+    "(B) An unqualified triumph with absolutely no significant downsides of any kind whatsoever.",
+    "(C) An unqualified failure that produced no economic growth at all.",
+    "(D) Proof that economic policy no longer affects the economy."
+   ],
+   "period": "U9",
+   "skill": "Argumentation",
+   "reasoning": "Causation",
+   "themes": [
+    "PCE",
+    "WXT"
+   ],
+   "difficulty": "hard",
+   "fact_source": "u9.md \u00a7The story \u2014 '\"Reaganomics\" rested on supply-side theory: lower taxes would unleash growth that paid for itself. Growth did return, but so did huge deficits and stark inequality'",
+   "stream": "drill"
+  },
+  {
+   "id": "original-u9-reagan-09",
+   "type": "mcq",
+   "stem": "The chart shows federal deficits in every year from 1980 to 1992, peaking at $290 billion. Which claim about the Reagan-Bush era is best supported?",
+   "stimulus": {
+    "kind": "chart",
+    "chart_spec": {
+     "type": "line",
+     "title": "Federal Budget Deficit (+) / Surplus (\u2212), 1980\u20132000",
+     "x_label": "Year",
+     "y_label": "Billions of dollars (negative = surplus)",
+     "labels": [
+      "1980",
+      "1983",
+      "1986",
+      "1989",
+      "1992",
+      "1998",
+      "2000"
+     ],
+     "values": [
+      74,
+      208,
+      221,
+      153,
+      290,
+      -69,
+      -236
+     ],
+     "source_note": "Approximate figures; Reagan-era deficits per u9.md \u00a7The story ('Growth did return, but so did huge deficits')."
+    }
+   },
+   "options": [
+    "(A) The federal budget was completely balanced in every single year of the 1980s, with zero deficits at all.",
+    "(B) Tax cuts plus the military buildup produced sustained large deficits in the Reagan-Bush years.",
+    "(C) Defense spending was eliminated entirely during the 1980s.",
+    "(D) The chart shows budget surpluses throughout the 1980s."
+   ],
+   "period": "U9",
+   "skill": "Claims & Evidence in Sources",
+   "reasoning": "Continuity & Change",
+   "themes": [
+    "PCE"
+   ],
+   "difficulty": "medium",
+   "fact_source": "u9.md \u00a7The story \u2014 Reagan 'cutting taxes (1981)... while spending massively on the military abroad'; 'Growth did return, but so did huge deficits'",
+   "stream": "drill"
+  },
+  {
+   "id": "original-u9-reagan-10",
+   "type": "mcq",
+   "stem": "The chart shows the deficit at $221 billion in 1986 despite Reagan's domestic spending cuts. Why didn't those cuts prevent the deficits?",
+   "stimulus": {
+    "kind": "chart",
+    "chart_spec": {
+     "type": "line",
+     "title": "Federal Budget Deficit (+) / Surplus (\u2212), 1980\u20132000",
+     "x_label": "Year",
+     "y_label": "Billions of dollars (negative = surplus)",
+     "labels": [
+      "1980",
+      "1983",
+      "1986",
+      "1989",
+      "1992",
+      "1998",
+      "2000"
+     ],
+     "values": [
+      74,
+      208,
+      221,
+      153,
+      290,
+      -69,
+      -236
+     ],
+     "source_note": "Approximate figures; Reagan-era deficits per u9.md \u00a7The story ('Growth did return, but so did huge deficits')."
+    }
+   },
+   "options": [
+    "(A) Reagan never cut any spending whatsoever.",
+    "(B) The domestic spending cuts were so enormous that they alone single-handedly caused the entire deficit.",
+    "(C) Congress doubled all federal spending in response to the cuts.",
+    "(D) Domestic cuts, soaring defense, falling revenues: the savings could not cover the combined gap."
+   ],
+   "period": "U9",
+   "skill": "Making Connections",
+   "reasoning": "Causation",
+   "themes": [
+    "PCE",
+    "WXT"
+   ],
+   "difficulty": "medium",
+   "fact_source": "u9.md \u00a7The story \u2014 Reagan 'promised to shrink government at home \u2014 cutting taxes (1981), slashing regulation... while spending massively on the military abroad'; 'so did huge deficits'",
+   "stream": "drill"
+  }
+ ]
+}

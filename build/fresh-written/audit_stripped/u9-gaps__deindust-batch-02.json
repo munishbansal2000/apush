@@ -1,0 +1,250 @@
+{
+ "items": [
+  {
+   "difficulty": "hard",
+   "fact_source": "u9.md \u00a7Added 2026-10-01 deindustrialization \u2014 manufacturing output stayed high thanks to productivity gains, even as its share of employment fell from roughly a quarter of jobs around 1970 toward about a tenth by 2010 (approximate)",
+   "id": "original-u9-deindust-v2-11",
+   "options": [
+    "(A) No correction is needed: the chart directly measures manufacturing output, so the student's conclusion stands.",
+    "(B) The chart shows manufacturing output actually doubled between 1970 and 2010, so the conclusion is reversed.",
+    "(C) The chart shows union membership trends over time, not anything about manufacturing at all.",
+    "(D) The chart tracks manufacturing's share of employment, not output; the review says output stayed high."
+   ],
+   "period": "U9",
+   "reasoning": "Continuity & Change",
+   "skill": "Claims & Evidence in Sources",
+   "stem": "A student reads the chart and concludes that American manufacturing output fell by more than half between 1970 and 2010. Which correction is required?",
+   "stimulus": {
+    "chart_spec": {
+     "labels": [
+      "1970",
+      "2010"
+     ],
+     "source_note": "figures from u9.md \u00a7Added 2026-10-01 deindustrialization (approximate where marked)",
+     "title": "Manufacturing Share of U.S. Employment, 1970 to 2010",
+     "type": "line",
+     "values": [
+      25,
+      10
+     ],
+     "x_label": "Year",
+     "y_label": "Percent of U.S. jobs in manufacturing"
+    },
+    "kind": "chart"
+   },
+   "stream": "drill",
+   "themes": [
+    "WXT"
+   ],
+   "type": "mcq"
+  },
+  {
+   "difficulty": "hard",
+   "fact_source": "u9.md \u00a7Added 2026-10-01 deindustrialization \u2014 the 1970s 'broke the postwar industrial bargain'; manufacturing's share of employment and union membership both declined steeply in the decades that followed (approximate figures)",
+   "id": "original-u9-deindust-v2-12",
+   "options": [
+    "(A) Manufacturing workers were nearly all union members, so the two plotted trends are really just one trend.",
+    "(B) Union decline directly caused the fall in manufacturing's share of jobs shown in the chart.",
+    "(C) Both trends show the same broad change: the postwar order of stable factory jobs and strong unions eroded.",
+    "(D) The chart shows the service sector's share of total employment in both of the periods plotted here."
+   ],
+   "period": "U9",
+   "reasoning": "Comparison",
+   "skill": "Claims & Evidence in Sources",
+   "stem": "Comparing the two trends in the chart, which conclusion is best supported?",
+   "stimulus": {
+    "chart_spec": {
+     "labels": [
+      "Manufacturing share of jobs, 1970",
+      "Manufacturing share of jobs, 2010",
+      "Union share of workers, 1950s",
+      "Union share of workers, 2010s"
+     ],
+     "source_note": "figures from u9.md \u00a7Added 2026-10-01 deindustrialization (approximate where marked)",
+     "title": "Employment and Union Shares Across the Deindustrialization Era",
+     "type": "bar",
+     "values": [
+      25,
+      10,
+      33,
+      10
+     ],
+     "x_label": "Measure",
+     "y_label": "Percent"
+    },
+    "kind": "chart"
+   },
+   "stream": "drill",
+   "themes": [
+    "WXT",
+    "PCE"
+   ],
+   "type": "mcq"
+  },
+  {
+   "difficulty": "medium",
+   "fact_source": "u9.md \u00a7Added 2026-10-01 deindustrialization \u2014 stagflation, inflation and unemployment rising together, 'destroyed the Keynesian playbook'",
+   "id": "original-u9-deindust-v2-13",
+   "options": [
+    "(A) Keynesian tools assumed inflation and unemployment traded off; stagflation had both rising together.",
+    "(B) Keynesian economics required zero inflation at all times, a condition the 1970s economy delivered.",
+    "(C) Stagflation was caused by Reagan's 1981 tax cuts, which took effect before Keynesianism was ever tried.",
+    "(D) Keynesian economists welcomed stagflation as clear proof that their economic theories worked well."
+   ],
+   "period": "U9",
+   "reasoning": "Causation",
+   "skill": "Developments & Processes",
+   "stem": "The review says the stagflation of the 1970s \u201cdestroyed the Keynesian playbook.\u201d Why did stagflation pose such a problem for Keynesian economics?",
+   "stream": "drill",
+   "themes": [
+    "WXT"
+   ],
+   "type": "mcq"
+  },
+  {
+   "difficulty": "hard",
+   "fact_source": "u9.md \u00a7Added 2026-10-01 deindustrialization \u2014 the 1970s 'broke the postwar industrial bargain'; deindustrialization 'fed the resentment that powered Reagan's 1980 victory and later populist revolts'",
+   "id": "original-u9-deindust-v2-14",
+   "options": [
+    "(A) It convinced voters to reward the party in power for its handling of the crisis.",
+    "(B) It fed the resentment that powered Reagan's 1980 victory and later populist revolts.",
+    "(C) It strengthened public faith in the Keynesian playbook as the right economic framework.",
+    "(D) It persuaded Americans that government management of the economy had succeeded."
+   ],
+   "period": "U9",
+   "reasoning": "Causation",
+   "skill": "Contextualization",
+   "stem": "How did the economic breakdown of the 1970s set up the politics that followed, according to the review?",
+   "stream": "drill",
+   "themes": [
+    "WXT",
+    "PCE"
+   ],
+   "type": "mcq"
+  },
+  {
+   "difficulty": "medium",
+   "fact_source": "u9.md \u00a7Added 2026-10-01 deindustrialization \u2014 factories closed across the Northeast and Midwest, the Rust Belt",
+   "id": "original-u9-deindust-v2-15",
+   "options": [
+    "(A) The Pacific Coast states, where technology firms replaced older factories.",
+    "(B) The Deep South, where textile mills had always dominated the economy.",
+    "(C) The Mountain West, where the decline of mining drove the regional story.",
+    "(D) The Northeast and Midwest, where factories closed in large numbers."
+   ],
+   "period": "U9",
+   "reasoning": "Comparison",
+   "skill": "Developments & Processes",
+   "stem": "The review uses the term \u201cRust Belt\u201d for the region hit hardest by factory closures. Which description matches the review?",
+   "stream": "drill",
+   "themes": [
+    "WXT",
+    "GEO"
+   ],
+   "type": "mcq"
+  },
+  {
+   "difficulty": "medium",
+   "fact_source": "u9.md \u00a7Added 2026-10-01 deindustrialization \u2014 the Sun Belt's 'defense industries, lower taxes, and air-conditioned suburbs attracted both people and plants'",
+   "id": "original-u9-deindust-v2-16",
+   "options": [
+    "(A) Its long-established union movement and high wages drew workers to the region.",
+    "(B) Federal law required all new factories to be built in that region alone.",
+    "(C) Its defense industries, lower taxes, and air-conditioned suburbs drew both.",
+    "(D) Its cold climate and expensive housing appealed strongly to manufacturers."
+   ],
+   "period": "U9",
+   "reasoning": "Causation",
+   "skill": "Developments & Processes",
+   "stem": "According to the review, why did the Sun Belt attract both people and plants as the Rust Belt declined?",
+   "stream": "drill",
+   "themes": [
+    "WXT",
+    "GEO"
+   ],
+   "type": "mcq"
+  },
+  {
+   "difficulty": "hard",
+   "fact_source": "u9.md \u00a7Added 2026-10-01 deindustrialization \u2014 factories closed across the Northeast and Midwest while growth shifted to the Sun Belt; the Sun Belt, not the old industrial core, 'became America's political center of gravity'",
+   "id": "original-u9-deindust-v2-17",
+   "options": [
+    "(A) The federal capital moved to the Sun Belt, taking national political power with it.",
+    "(B) Jobs and population shifted south and west as factory closures hollowed out the Northeast and Midwest.",
+    "(C) The Sun Belt voted as a single unified bloc in every election while the other regions stopped voting entirely.",
+    "(D) The Rust Belt's population grew faster than the Sun Belt's after 1980, shifting power back."
+   ],
+   "period": "U9",
+   "reasoning": "Causation",
+   "skill": "Making Connections",
+   "stem": "The review says the Sun Belt \u2014 not the old industrial core \u2014 became \u201cAmerica's political center of gravity.\u201d Which chain of developments best explains that shift?",
+   "stream": "drill",
+   "themes": [
+    "WXT",
+    "GEO",
+    "PCE"
+   ],
+   "type": "mcq"
+  },
+  {
+   "difficulty": "medium",
+   "fact_source": "u9.md \u00a7Added 2026-10-01 deindustrialization \u2014 'intensified foreign competition (Japan, West Germany) undercut American producers in steel, autos, and electronics'",
+   "id": "original-u9-deindust-v2-18",
+   "options": [
+    "(A) Japan and West Germany, in steel, autos, and electronics.",
+    "(B) Britain and France, in textiles and shipbuilding.",
+    "(C) Canada and Mexico, in lumber and mining.",
+    "(D) The Soviet Union, in consumer electronics."
+   ],
+   "period": "U9",
+   "reasoning": "Causation",
+   "skill": "Developments & Processes",
+   "stem": "Which foreign competition does the review name as undercutting American producers during the deindustrialization era?",
+   "stream": "drill",
+   "themes": [
+    "WXT"
+   ],
+   "type": "mcq"
+  },
+  {
+   "difficulty": "medium",
+   "fact_source": "u9.md \u00a7Added 2026-10-01 deindustrialization \u2014 'Globalization \u2014 container shipping, offshoring, and trade deals like NAFTA \u2014 let firms move production abroad'",
+   "id": "original-u9-deindust-v2-19",
+   "options": [
+    "(A) High tariffs, closed borders, and bans on foreign investment.",
+    "(B) The breakup of container shipping and the end of trade deals.",
+    "(C) Container shipping, offshoring, and trade deals like NAFTA.",
+    "(D) Federal rules requiring factories to stay in the Rust Belt."
+   ],
+   "period": "U9",
+   "reasoning": "Causation",
+   "skill": "Developments & Processes",
+   "stem": "According to the review, which combination of developments let American firms move production abroad?",
+   "stream": "drill",
+   "themes": [
+    "WXT"
+   ],
+   "type": "mcq"
+  },
+  {
+   "difficulty": "medium",
+   "fact_source": "u9.md \u00a7Added 2026-10-01 deindustrialization \u2014 'trade deals like NAFTA' let firms move production abroad, 'replacing factory jobs with service work'",
+   "id": "original-u9-deindust-v2-20",
+   "options": [
+    "(A) It continued an existing pattern: firms moving production abroad while factory jobs gave way to services.",
+    "(B) It reversed deindustrialization by bringing large numbers of factory jobs back to the Rust Belt states.",
+    "(C) It ended all American trade with Asia and redirected commerce toward Europe instead.",
+    "(D) It was the first event that ever connected the U.S. economy to the markets of the rest of the world."
+   ],
+   "period": "U9",
+   "reasoning": "Continuity & Change",
+   "skill": "Contextualization",
+   "stem": "The review lists NAFTA (1994) among the forces of globalization. How does NAFTA fit the longer deindustrialization story the review tells?",
+   "stream": "drill",
+   "themes": [
+    "WXT"
+   ],
+   "type": "mcq"
+  }
+ ]
+}
