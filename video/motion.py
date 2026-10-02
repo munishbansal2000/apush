@@ -207,8 +207,8 @@ def kinetic_text(phrase, dur, sub=None, color=(233, 196, 106, 255), bg_img=None,
 
     def frame(t):
         # spring pop: overshoot then settle
-        s = ease_out_back(t / 0.5)
-        tw2, th2 = int(tw * s), int(th * s)
+        s = max(0.01, ease_out_back(t / 0.5))
+        tw2, th2 = max(1, int(tw * s)), max(1, int(th * s))
         fg = np.asarray(timg.resize((tw2, th2), Image.LANCZOS))
         canvas = bg.copy()
         x, y = (W - tw2) // 2, (H - th2) // 2 - 40
@@ -587,6 +587,96 @@ def callout_scene(img_path, dur, points, caption=""):
     if caption:
         clip = overlay_text(clip, caption, FR, 40, dur)
     return clip
+
+
+def annotate(base_clip, notes):
+    """Overlay annotation track on a base clip — the 'fast and point-driven' layer.
+
+    notes: list of (at, dur, kind, kwargs). kinds:
+      'term'  — lower-third key term + gloss. kwargs: term, gloss
+      'label' — floating label at (x, y) in 0..1. kwargs: text, x, y
+      'point' — big centered 'so what' statement. kwargs: text
+      'arrow' — label with leader line to (x, y). kwargs: text, x, y, lx, ly
+    Each note springs in, holds, fades out. Stack multiple per scene for pace.
+    """
+    from moviepy import VideoClip
+    dur = base_clip.duration
+
+    def render_note(kind, kw):
+        if kind == "term":
+            tile = text_rgba(kw["term"], font(FB, 46),
+                             fill=(233, 196, 106, 255), max_w=900)
+            sub = text_rgba(kw.get("gloss", ""), font(FR, 36),
+                            fill=(232, 232, 232, 255), max_w=900)
+            w = max(tile.width, sub.width) + 60
+            h = tile.height + sub.height + 50
+            img = Image.new("RGBA", (w, h), (10, 12, 18, 235))
+            img.alpha_composite(tile, (30, 18))
+            img.alpha_composite(sub, (30, 18 + tile.height + 8))
+            d = ImageDraw.Draw(img)
+            d.rectangle([0, 0, 10, h], fill=(233, 196, 106, 255))
+            return img, 80, H - h - 260
+        if kind == "label":
+            tile = text_rgba(kw["text"], font(FB, 40),
+                             fill=(255, 255, 255, 255), max_w=600)
+            w, h = tile.width + 44, tile.height + 28
+            img = Image.new("RGBA", (w, h), (10, 12, 18, 220))
+            img.alpha_composite(tile, (22, 14))
+            return img, int(kw.get("x", 0.5) * W - w / 2), int(kw.get("y", 0.5) * H)
+        if kind == "point":
+            tile = text_rgba(kw["text"], font(FB, 54),
+                             fill=(255, 255, 255, 255), max_w=920)
+            w, h = tile.width + 70, tile.height + 56
+            img = Image.new("RGBA", (w, h), (10, 12, 18, 230))
+            img.alpha_composite(tile, (35, 28))
+            d = ImageDraw.Draw(img)
+            d.rectangle([0, 0, w - 1, h - 1], outline=(233, 196, 106, 255), width=5)
+            return img, (W - w) // 2, (H - h) // 2 - 100
+        if kind == "arrow":
+            tile = text_rgba(kw["text"], font(FB, 38),
+                             fill=(233, 196, 106, 255), max_w=520)
+            return ("arrow", tile, kw)
+        raise ValueError(f"unknown annotation kind: {kind}")
+
+    baked = [(at, d, kind, render_note(kind, kw)) for at, d, kind, kw in notes]
+
+    def frame(t):
+        canvas = Image.fromarray(base_clip.get_frame(t)).convert("RGBA")
+        for at, nd, kind, payload in baked:
+            if t < at or t > at + nd:
+                continue
+            lt = t - at
+            # spring in 0.35s, fade out last 0.25s
+            s = ease_out_back(lt / 0.35)
+            a = 1.0
+            if lt > nd - 0.25:
+                a = max(0, (nd - lt) / 0.25)
+            if kind == "arrow":
+                _, tile, kw = payload
+                x, y = int(kw["x"] * W), int(kw["y"] * H)
+                lx, ly = int(kw.get("lx", 0.5) * W), int(kw.get("ly", 0.35) * H)
+                d = ImageDraw.Draw(canvas)
+                al = int(255 * a)
+                d.line([(lx, ly), (x, y)], fill=(233, 196, 106, al), width=6)
+                d.ellipse([x - 12, y - 12, x + 12, y + 12],
+                          fill=(233, 196, 106, al))
+                tw2 = max(1, int(tile.width * s))
+                fg = tile.resize((tw2, tile.height), Image.LANCZOS)
+                if a < 1:
+                    fg.putalpha(fg.split()[3].point(lambda v: int(v * a)))
+                canvas.alpha_composite(fg, (lx - tw2 // 2, ly - tile.height - 20))
+            else:
+                tile, bx, by = payload
+                tw2, th2 = max(1, int(tile.width * s)), max(1, int(tile.height * s))
+                fg = tile.resize((tw2, th2), Image.LANCZOS)
+                if a < 1:
+                    fg.putalpha(fg.split()[3].point(lambda v: int(v * a)))
+                canvas.alpha_composite(
+                    fg, (int(bx + (tile.width - tw2) / 2),
+                         int(by + (tile.height - th2) / 2)))
+        return np.asarray(canvas.convert("RGB"))
+
+    return VideoClip(frame, duration=dur)
 
 
 def assemble(scenes, audios, out, fps=30):
