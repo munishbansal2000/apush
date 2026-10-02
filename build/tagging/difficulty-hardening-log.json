@@ -1,0 +1,85 @@
+{
+ "date": "2026-10-02",
+ "method": "one-at-a-time hardening with user review; blind re-rating batch at the end decides final labels",
+ "items": [
+  {
+   "id": "original-u9-c21-04",
+   "change": "replaced 3 filler distractors with misconception traps (A=monocausation, B=overgeneralization, C=chronology-as-causation); key unchanged (D); explanations rewritten",
+   "proposed_difficulty": "hard",
+   "status": "blind re-rating complete: medium (blind 2/3; misconception traps present but raters judged single discrimination)"
+  },
+  {
+   "id": "original-u9-coldwar-01",
+   "change": "reframed stem to test sourcing (was identify-the-shift); replaced filler distractors with sourcing-misconception traps (A=overgeneralization about sources, B=rhetoric-as-policy literalism, D=continuity error erasing detente); key changed A->C; explanations rewritten",
+   "proposed_difficulty": "hard",
+   "status": "blind re-rating complete: hard (blind 3/3, crit 1)"
+  },
+  {
+   "id": "5s24-ch30-mcq-05",
+   "change": "reframed to complexity/argument evaluation (was telegraphed 'spread democracy'->Wilson); misconception traps: overgeneralization-identical, false Wilson-never-intervened, false Bush-never-invoked-democracy; key changed A->D",
+   "proposed_difficulty": "hard",
+   "status": "blind re-rating complete: medium (blind 2/3; stem telegraph 'best qualifies' repaired -> 'best evaluates')"
+  },
+  {
+   "id": "5s24-exam2-mcq-55",
+   "change": "kept stem/key D; replaced filler with traps: overgeneralization-abolish-powers, false-premise presentism, inversion; key unchanged",
+   "proposed_difficulty": "hard",
+   "status": "blind re-rating complete: easy (blind 2/4 after tiebreak; key is catchphrase-identifiable maxim)"
+  },
+  {
+   "id": "5s24-exam2-mcq-21",
+   "change": "reframed Ferraro self-description to sourcing (campaign framing vs neutral fact); traps: rhetoric-as-policy, sources-always-lie overgeneralization, audience misconception; key changed A->B",
+   "proposed_difficulty": "hard",
+   "status": "blind re-rating complete: hard (blind 3/3, crit 1)"
+  },
+  {
+   "id": "5s24-ch29-mcq-06",
+   "change": "reframed Greenspan 1996 remarks to sourcing (dilemma vs decided policy); traps: rhetoric-as-policy, central-bankers-never-mean-it, misreading-inflation; key changed A->C",
+   "proposed_difficulty": "hard",
+   "status": "blind re-rating complete: hard (blind 3/3, crit 1)"
+  },
+  {
+   "id": "5s24-ch30-mcq-06",
+   "change": "reframed Giuliani remarks to purpose/audience; traps: chronology+authority (Iraq legal brief), overgeneralization-no-diplomacy, audience-historians; key changed A->C",
+   "proposed_difficulty": "hard",
+   "status": "blind re-rating complete: hard (blind 2/3, crit 1)"
+  },
+  {
+   "id": "original-ctx-u9-05",
+   "change": "complexity-qualified hold on Patriot Act pattern argument; traps: pattern-requires-identical-mechanism, always-destroys-democracy overgeneralization, peacetime false premise; key unchanged A",
+   "proposed_difficulty": "hard",
+   "status": "blind re-rating complete: hard (blind 2/3, crit 2/4)"
+  },
+  {
+   "id": "original-ctx-u9-08",
+   "change": "complexity-qualified reasonable on ACA claim; traps: fully-repealed-2017 misconception, single-payer confusion, Medicaid-covered-all misconception; key unchanged D",
+   "proposed_difficulty": "hard",
+   "status": "blind re-rating complete: hard (blind 2/3, crit 4)"
+  },
+  {
+   "id": "original-u9-coldwar-13",
+   "change": "kept key C + import/export-reversal trap A; new traps: monocausation single-handedly-caused-breakup, reversed-benefit cheaper-oil-helped; stem neutralized to 'what effect'",
+   "proposed_difficulty": "hard",
+   "status": "blind re-rating complete: medium (blind 3/3)"
+  },
+  {
+   "id": "original-u9-immig-01",
+   "change": "reframed chart-reading to evidence-beyond-documents (criterion 3): what evidence tests the post-1970 transformation claim; key = 1890-1910 foreign-born data (14.8% peak); traps: chart-sufficient, opinion-polls, total-population; key changed A->B; fact_source extended with census citation",
+   "proposed_difficulty": "hard",
+   "status": "blind re-rating complete: hard (blind 2/3, crit 3)"
+  }
+ ],
+ "blind_rerate": {
+  "raters": 3,
+  "tiebreaks": 1,
+  "key_audit": "11/11 blind-derived keys match, 0 ambiguity",
+  "method": "3 independent raters, all 41 U9 items, tags hidden; majority wins; 1 three-way tie broken by 4th blind read"
+ },
+ "labels_applied": true,
+ "final_u9_mix": {
+  "n": 41,
+  "easy": 12,
+  "medium": 22,
+  "hard": 7
+ }
+}
