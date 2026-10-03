@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "lesson_id": "poc-meta-columbian-exchange",
+  "title": "The Columbian Exchange — Video POC",
+  "description": "Two-scene proof of concept using Edge TTS, native titles, and a ten-second Meta-generated image animation.",
+  "output": "../../build/lesson-videos/poc-meta-columbian-exchange.mp4",
+  "video": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "transition_seconds": 0.2
+  },
+  "tts": {
+    "engine": "edge",
+    "edge_voice": "en-US-GuyNeural",
+    "edge_rate": "+2%",
+    "edge_pitch": "+0Hz"
+  },
+  "generation": {
+    "provider": "none"
+  },
+  "clip_generation": {
+    "provider": "meta-ui",
+    "cookie": "C:/Users/munis/projects/sat_question_runner/new_eng_qs/config/meta_cookies/ramsham21.json",
+    "lib_dir": "C:/Users/munis/projects/sat_question_runner/new_eng_qs/lib",
+    "browser": "chrome",
+    "timeout_seconds": 1200,
+    "keep_open_on_failure": true
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "narration": {
+        "text": "In 1492, sustained contact connected ecosystems that had developed separately for thousands of years. The consequences transformed societies on both sides of the Atlantic."
+      },
+      "visual": {
+        "base_image": "../../assets/images/u1/original-u1-columbus-voyages-01.jpg"
+      },
+      "animation": {
+        "type": "title",
+        "title": "The Columbian Exchange",
+        "subtitle": "Movement across the Atlantic after 1492"
+      },
+      "topics": ["1.2"]
+    },
+    {
+      "id": "atlantic-crossing",
+      "narration": {
+        "text": "Ships carried crops, animals, pathogens, and people across the Atlantic, creating exchanges whose benefits and human costs were profoundly unequal."
+      },
+      "visual": {
+        "base_image": "../../assets/images/u1/u1-caravel-fleet-huys.jpg",
+        "clip": "../../video/ai_clips/poc-meta-caravel-crossing.mp4"
+      },
+      "animation": {
+        "type": "ai_clip",
+        "prompt": "The fleet advances slowly and steadily across the ocean from right to left; the ships rise and settle naturally on broad rolling swells; the large sails billow under steady wind; long pennants stream and flutter; layered clouds drift behind the masts. Keep the camera steady. Preserve every vessel, person, sail, mast, and engraved historical detail without adding or removing anything.",
+        "duration": 10,
+        "seed": 1492
+      },
+      "topics": ["1.2"]
+    }
+  ]
+}

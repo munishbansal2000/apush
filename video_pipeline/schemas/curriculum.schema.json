@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.apush/curriculum-video-manifest-v1.schema.json",
+  "title": "APUSH unit/chapter/lesson video curriculum manifest v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "course", "defaults", "units"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "course": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "title"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "title": {"type": "string", "minLength": 1},
+        "description": {"type": "string", "minLength": 1},
+        "academic_year": {"type": "string", "minLength": 1},
+        "audience": {"type": "string", "minLength": 1}
+      }
+    },
+    "defaults": {
+      "type": "object", "additionalProperties": false, "required": ["tts"],
+      "properties": {
+        "video": {"$ref": "#/$defs/video"},
+        "tts": {"$ref": "#/$defs/tts"},
+        "generation": {"$ref": "#/$defs/generation"},
+        "clip_generation": {"$ref": "#/$defs/clipGeneration"},
+        "presentation": {"$ref": "#/$defs/presentation"}
+      }
+    },
+    "units": {
+      "type": "array", "minItems": 1,
+      "items": {"$ref": "#/$defs/unit"}
+    }
+  },
+  "$defs": {
+    "strings": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+    "video": {
+      "type": "object", "additionalProperties": false,
+      "properties": {"width": {"const": 1080}, "height": {"const": 1920}, "fps": {"type": "integer", "minimum": 24, "maximum": 60}, "transition_seconds": {"const": 0.2}}
+    },
+    "tts": {
+      "type": "object", "additionalProperties": false,
+      "properties": {
+        "engine": {"enum": ["fish", "edge"]}, "server_url": {"type": "string"},
+        "reference_audio": {"type": "string"}, "reference_text": {"type": "string"},
+        "timeout_seconds": {"type": "integer", "minimum": 1}, "settings": {"type": "object"},
+        "edge_voice": {"type": "string"}, "edge_rate": {"type": "string"}, "edge_pitch": {"type": "string"}
+      }
+    },
+    "generation": {
+      "type": "object", "additionalProperties": false,
+      "properties": {"provider": {"enum": ["none", "ollama", "meta-api"]}, "model": {"type": "string"}, "endpoint": {"type": "string"}, "api_key_env": {"type": "string"}, "timeout_seconds": {"type": "integer", "minimum": 1}}
+    },
+    "clipGeneration": {
+      "type": "object", "additionalProperties": false,
+      "properties": {"provider": {"enum": ["none", "ltx", "meta-ui"]}, "cookie": {"type": "string"}, "browser": {"enum": ["chrome", "edge"]}, "lib_dir": {"type": "string"}, "timeout_seconds": {"type": "integer", "minimum": 30, "maximum": 3600}, "keep_open_on_failure": {"type": "boolean"}, "meta_refusal_retries": {"type": "integer", "minimum": 0, "maximum": 3}}
+    },
+    "presentation": {
+      "type": "object", "additionalProperties": false,
+      "properties": {"audience": {"type": "string"}, "tone": {"type": "string"}, "visual_style": {"type": "string"}, "captions": {"type": "boolean"}, "music": {"type": "string"}, "branding": {"type": "string"}}
+    },
+    "unit": {
+      "type": "object", "additionalProperties": false,
+      "required": ["unit_id", "title", "period", "chapters"],
+      "properties": {
+        "unit_id": {"type": "string", "minLength": 1}, "title": {"type": "string", "minLength": 1},
+        "period": {"type": "string", "minLength": 1}, "date_range": {"type": "string", "minLength": 1},
+        "description": {"type": "string", "minLength": 1}, "learning_objectives": {"$ref": "#/$defs/strings"},
+        "themes": {"$ref": "#/$defs/strings"},
+        "chapters": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/chapter"}}
+      }
+    },
+    "chapter": {
+      "type": "object", "additionalProperties": false,
+      "required": ["chapter_id", "title", "lessons"],
+      "properties": {
+        "chapter_id": {"type": "string", "minLength": 1}, "title": {"type": "string", "minLength": 1},
+        "description": {"type": "string", "minLength": 1}, "essential_questions": {"$ref": "#/$defs/strings"},
+        "learning_objectives": {"$ref": "#/$defs/strings"},
+        "lessons": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/lesson"}}
+      }
+    },
+    "lesson": {
+      "type": "object", "additionalProperties": false,
+      "required": ["lesson_id", "title", "output", "scenes"],
+      "properties": {
+        "lesson_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9_-]{1,63}$"}, "title": {"type": "string", "minLength": 1},
+        "description": {"type": "string"}, "essential_question": {"type": "string", "minLength": 1},
+        "learning_objectives": {"$ref": "#/$defs/strings"},
+        "key_terms": {"type": "array", "minItems": 1, "items": {"type": "object", "additionalProperties": false, "required": ["term", "definition"], "properties": {"term": {"type": "string"}, "definition": {"type": "string"}}}},
+        "ap_alignment": {"type": "object", "additionalProperties": false, "properties": {"period": {"type": "string"}, "topics": {"$ref": "#/$defs/strings"}, "themes": {"$ref": "#/$defs/strings"}, "skills": {"$ref": "#/$defs/strings"}}},
+        "presentation": {"$ref": "#/$defs/presentation"}, "output": {"type": "string", "pattern": "\\.[mM][pP]4$"},
+        "video": {"$ref": "#/$defs/video"}, "tts": {"$ref": "#/$defs/tts"}, "generation": {"$ref": "#/$defs/generation"},
+        "clip_generation": {"$ref": "#/$defs/clipGeneration"},
+        "scenes": {"type": "array", "minItems": 1, "items": {"$ref": "lesson.schema.json#/$defs/scene"}}
+      }
+    }
+  }
+}

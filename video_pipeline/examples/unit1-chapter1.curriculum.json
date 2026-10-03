@@ -1,0 +1,375 @@
+{
+  "schema_version": 1,
+  "course": {
+    "id": "apush",
+    "title": "AP United States History",
+    "description": "A vertical-video APUSH course organized as units, chapters, lessons, and instructional scenes.",
+    "academic_year": "2026-2027",
+    "audience": "APUSH students preparing for class assessments and the AP exam"
+  },
+  "defaults": {
+    "video": {
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "transition_seconds": 0.2
+    },
+    "tts": {
+      "engine": "edge",
+      "edge_voice": "en-US-GuyNeural",
+      "edge_rate": "+2%",
+      "edge_pitch": "+0Hz"
+    },
+    "generation": {
+      "provider": "none"
+    },
+    "clip_generation": {
+      "provider": "meta-ui",
+      "cookie": "C:/Users/munis/projects/sat_question_runner/new_eng_qs/config/meta_cookies/ramsham21.json",
+      "lib_dir": "C:/Users/munis/projects/sat_question_runner/new_eng_qs/lib",
+      "browser": "chrome",
+      "timeout_seconds": 1200,
+      "meta_refusal_retries": 2,
+      "keep_open_on_failure": true
+    },
+    "presentation": {
+      "audience": "APUSH students",
+      "tone": "clear, analytical, and historically precise",
+      "visual_style": "museum-documentary visuals with readable AP exam vocabulary",
+      "captions": true,
+      "music": "subtle instrumental bed below narration",
+      "branding": "APUSH Unit 1"
+    }
+  },
+  "units": [
+    {
+      "unit_id": "unit-1",
+      "title": "Period 1: Worlds Before and After Contact",
+      "period": "Period 1",
+      "date_range": "1491-1607",
+      "description": "Indigenous societies before European arrival, Atlantic exploration, the Columbian Exchange, and the first Spanish systems of conquest and labor.",
+      "learning_objectives": [
+        "Explain how geography shaped diverse Indigenous societies before European contact.",
+        "Explain the causes and effects of European exploration in the Americas.",
+        "Evaluate how the Columbian Exchange transformed societies on both sides of the Atlantic."
+      ],
+      "themes": ["American and National Identity", "Work, Exchange, and Technology", "Geography and the Environment", "Migration and Settlement"],
+      "chapters": [
+        {
+          "chapter_id": "u1-ch1",
+          "title": "Native Societies and Atlantic Contact",
+          "description": "A two-lesson chapter moving from Indigenous regional diversity to sustained Atlantic contact and exchange.",
+          "essential_questions": [
+            "How did environment shape societies in North America before 1492?",
+            "Why did Atlantic contact produce unequal demographic, economic, and political consequences?"
+          ],
+          "learning_objectives": [
+            "Compare Indigenous societies in at least two North American regions.",
+            "Trace the motives and routes behind European exploration.",
+            "Use historical evidence to explain the effects of biological and commercial exchange."
+          ],
+          "lessons": [
+            {
+              "lesson_id": "u1-ch1-l1-native-societies",
+              "title": "North America Before European Contact",
+              "description": "Regional diversity, environmental adaptation, exchange networks, and political organization before sustained European contact.",
+              "essential_question": "How did geography and exchange shape diverse Indigenous societies before 1492?",
+              "learning_objectives": [
+                "Identify how climate and available resources influenced settlement and subsistence.",
+                "Compare the social organization of societies in different regions.",
+                "Explain why North America in 1491 cannot be described as a single culture."
+              ],
+              "key_terms": [
+                {"term": "maize agriculture", "definition": "Cultivation of corn that supported population growth and settled communities."},
+                {"term": "Cahokia", "definition": "A major Mississippian urban and ceremonial center near the Mississippi River."},
+                {"term": "regional diversity", "definition": "Variation among societies produced by geography, resources, migration, and cultural choices."}
+              ],
+              "ap_alignment": {
+                "topics": ["1.1 Indigenous Societies Before European Contact"],
+                "skills": ["Contextualization", "Comparison", "Causation"]
+              },
+              "output": "../../build/lesson-videos/u1-ch1-l1-native-societies.mp4",
+              "scenes": [
+                {
+                  "id": "many-americas",
+                  "purpose": "hook",
+                  "narration": {
+                    "text": "North America in 1491 was not one society waiting to be discovered. Millions of people lived in distinct communities, spoke many languages, and built economies adapted to local environments. The useful starting point is diversity, not a single stereotype."
+                  },
+                  "visual": {
+                    "base_image": "../../assets/images/u1/original-u1-native-01.jpg",
+                    "clip": "../../video/ai_clips/u1-1491-maize-living.mp4"
+                  },
+                  "animation": {
+                    "type": "ai_clip",
+                    "prompt": "Create a cinematic living engraving from this historical agricultural scene. Preserve every person, tool, planting row, and engraved line exactly. Animate thin clouds drifting, leaves and grasses moving in a light breeze, fine dust crossing the tilled rows, and soft shifting sunlight. Use a slow documentary camera push. Do not animate faces or bodies, add objects, or modernize the scene.",
+                    "duration": 8,
+                    "seed": 1491,
+                    "provider": "meta-ui",
+                    "fallback_provider": "ltx"
+                  },
+                  "beats": [
+                    {"type": "label", "cue": "North America in 1491", "duration": 3.2, "text": "1491: MANY SOCIETIES, MANY ENVIRONMENTS", "x": 0.5, "y": 0.18},
+                    {"type": "host", "cue": "Millions of people", "duration": 3.2, "text": "Historian's rule: start with diversity", "x": 0.5, "y": 0.78},
+                    {"type": "question", "cue": "The useful starting point", "duration": 3.8, "text": "How did environment shape choices?", "x": 0.5, "y": 0.82},
+                    {"type": "progress", "at": 0.0, "duration": 16.0, "y": 0.94}
+                  ],
+                  "audio": {"effects": [{"cue": "North America in 1491", "kind": "impact", "volume": 0.25}, {"cue": "The useful starting point", "kind": "chime", "volume": 0.18}]},
+                  "transition": {"type": "dip_to_black", "duration": 0.25},
+                  "min_duration": 10,
+                  "topics": ["1.1"],
+                  "on_screen_text": ["1491", "Regional diversity", "Environmental adaptation"],
+                  "source": {
+                    "title": "Historical depiction of Indigenous life",
+                    "license": "Public domain",
+                    "notes": "Use as historical evidence with attention to the creator's perspective."
+                  },
+                  "production_notes": "Open with the year 1491, then reveal the essential question beneath the title."
+                },
+                {
+                  "id": "cahokia-network",
+                  "purpose": "evidence",
+                  "narration": {
+                    "text": "Near the Mississippi River, Cahokia became a large urban center supported by maize agriculture. Its monumental earthworks and far-reaching trade connections demonstrate organized labor, political authority, and exchange networks that linked communities across long distances."
+                  },
+                  "visual": {
+                    "base_image": "../../assets/images/u1/anim-cahokia-mound-1907.jpg",
+                    "clip": "../../video/ai_clips/u1-cahokia-mound-living.mp4"
+                  },
+                  "animation": {
+                    "type": "ai_clip",
+                    "prompt": "Animate this archival view of the Cahokia mound as a restrained museum documentary shot. Preserve the mound, trees, fields, and photographic composition. Move layered clouds across the sky, ripple grasses in the foreground, shift long sunlight and tree shadows slowly, and add a gentle forward camera drift. Do not add buildings, people, text, or modern objects.",
+                    "duration": 8,
+                    "seed": 1051,
+                    "provider": "meta-ui",
+                    "fallback_provider": "ltx",
+                    "caption": "Cahokia: agriculture, urbanism, and exchange"
+                  },
+                  "beats": [
+                    {"type": "label", "cue": "supported by maize agriculture", "duration": 3.0, "text": "Maize surplus", "x": 0.28, "y": 0.32, "color": [233, 196, 106]},
+                    {"type": "arrow", "cue": "far-reaching trade connections", "duration": 4.0, "text": "trade", "x": 0.22, "y": 0.72, "x2": 0.7, "y2": 0.58, "color": [87, 192, 224]},
+                    {"type": "stamp", "cue": "organized labor", "duration": 3.5, "text": "EVIDENCE: organized labor", "x": 0.5, "y": 0.82}
+                  ],
+                  "audio": {"effects": [{"cue": "maize agriculture", "kind": "chime", "volume": 0.14}, {"cue": "organized labor", "kind": "impact", "volume": 0.18}]},
+                  "transition": {"type": "slide", "duration": 0.3, "direction": "left"},
+                  "min_duration": 11,
+                  "topics": ["1.1"],
+                  "on_screen_text": ["Maize surplus", "Monumental earthworks", "Trade networks"],
+                  "source": {
+                    "title": "Cahokia mound illustration",
+                    "date": "1907",
+                    "license": "Public domain",
+                    "notes": "Later reconstruction; distinguish interpretation from a contemporary image."
+                  },
+                  "production_notes": "Camera begins wide, pushes toward the mound, and ends on evidence of the surrounding settlement."
+                },
+                {
+                  "id": "regional-comparison",
+                  "purpose": "comparison",
+                  "narration": {
+                    "text": "Different environments encouraged different strategies. Agricultural communities in the Southwest managed scarce water and built permanent settlements. On the Great Plains, many communities combined farming, hunting, and trade; later access to horses would change Plains life further. Environment influenced societies without mechanically determining them."
+                  },
+                  "visual": {
+                    "base_image": "../../assets/images/u1/original-u1-native-09.jpg",
+                    "secondary_image": "../../assets/images/u1/u1-catlin-buffalo-hunt.jpg"
+                  },
+                  "animation": {
+                    "type": "versus",
+                    "title": "Compare Regional Adaptations",
+                    "name_left": "Southwest",
+                    "name_right": "Great Plains"
+                  },
+                  "beats": [
+                    {"type": "question", "cue": "On the Great Plains", "duration": 3.5, "text": "Similarity? Difference?", "x": 0.5, "y": 0.55},
+                    {"type": "stamp", "cue": "Environment influenced societies", "duration": 3.8, "text": "GEOGRAPHY INFLUENCES—NOT DETERMINES", "x": 0.5, "y": 0.52}
+                  ],
+                  "audio": {"effects": [{"cue": "On the Great Plains", "kind": "tick", "volume": 0.18}]},
+                  "transition": {"type": "slide", "duration": 0.25, "direction": "right"},
+                  "min_duration": 13,
+                  "topics": ["1.1"],
+                  "on_screen_text": ["Water management", "Permanent settlements", "Mixed subsistence", "Trade"],
+                  "source": {
+                    "title": "Historical images used for regional comparison",
+                    "license": "Public domain",
+                    "notes": "Images may postdate 1491; use them to visualize environments, not as exact snapshots of the period."
+                  },
+                  "production_notes": "Keep the split screen visible long enough for students to record one similarity and one difference."
+                },
+                {
+                  "id": "native-recap",
+                  "purpose": "recap",
+                  "narration": {
+                    "text": "For an APUSH argument, connect environment to evidence. Geography shaped available resources; communities made choices about agriculture, settlement, and exchange; those choices produced regional diversity. Avoid treating Indigenous peoples as a single group or as passive actors."
+                  },
+                  "visual": {"base_image": "../../assets/images/u1/original-u1-native-04.jpg"},
+                  "animation": {
+                    "type": "bullets",
+                    "title": "Build the Historical Argument",
+                    "bullets": ["Environment shaped opportunities", "Communities adapted in distinct ways", "Exchange connected regions", "Indigenous peoples were active historical actors"],
+                    "footer": "AP Skill: Comparison + Causation",
+                    "stagger": 0.8
+                  },
+                  "beats": [
+                    {"type": "pause", "cue": "those choices produced regional diversity", "duration": 3.0, "text": "PAUSE: State one comparison claim", "x": 0.5, "y": 0.84},
+                    {"type": "host", "cue": "Avoid treating Indigenous peoples", "duration": 2.5, "text": "Use evidence, not stereotypes", "x": 0.5, "y": 0.16}
+                  ],
+                  "audio": {"effects": [{"cue": "connect environment to evidence", "kind": "whoosh", "volume": 0.13}, {"cue": "those choices produced regional diversity", "kind": "chime", "volume": 0.16}]},
+                  "transition": {"type": "crossfade", "duration": 0.2},
+                  "min_duration": 11,
+                  "topics": ["1.1"],
+                  "on_screen_text": ["Claim", "Evidence", "Reasoning"],
+                  "source": {"title": "Historical depiction of Indigenous communities", "license": "Public domain"},
+                  "production_notes": "Reveal one bullet per narration clause and hold the final AP skill footer."
+                }
+              ]
+            },
+            {
+              "lesson_id": "u1-ch1-l2-atlantic-contact",
+              "title": "Atlantic Contact and the Columbian Exchange",
+              "description": "European motives, transatlantic voyages, and the unequal consequences of biological and commercial exchange.",
+              "essential_question": "Why did Atlantic contact transform Europe, Africa, and the Americas so unevenly?",
+              "learning_objectives": [
+                "Explain the economic and political motives for European exploration.",
+                "Trace major categories of exchange across the Atlantic.",
+                "Evaluate why disease and coerced labor had especially destructive effects in the Americas."
+              ],
+              "key_terms": [
+                {"term": "Columbian Exchange", "definition": "The transfer of plants, animals, diseases, people, and ideas between the Eastern and Western Hemispheres after 1492."},
+                {"term": "encomienda", "definition": "A Spanish labor system granting colonists claims to Indigenous labor and tribute."},
+                {"term": "Atlantic World", "definition": "The interconnected system linking Europe, Africa, and the Americas through migration, trade, conquest, and slavery."}
+              ],
+              "ap_alignment": {
+                "topics": ["1.2 European Exploration in the Americas", "1.3 The Columbian Exchange"],
+                "skills": ["Causation", "Continuity and Change", "Analyzing Evidence"]
+              },
+              "output": "../../build/lesson-videos/u1-ch1-l2-atlantic-contact.mp4",
+              "scenes": [
+                {
+                  "id": "atlantic-map-hook",
+                  "purpose": "context",
+                  "narration": {
+                    "text": "By the late fifteenth century, European rulers sought new trade routes, wealth, and religious influence. Improvements in navigation and ship design made longer Atlantic voyages possible, while rivalry among states encouraged rulers to finance risky expeditions."
+                  },
+                  "visual": {"base_image": "../../assets/images/u1/original-u1-columbus-voyages-01.jpg"},
+                  "animation": {
+                    "type": "map",
+                    "title": "Atlantic Voyages After 1492",
+                    "moves": [
+                      {"path": [[0.82, 0.4], [0.67, 0.43], [0.52, 0.5], [0.35, 0.54]], "cue": "new trade routes", "kind": "dots", "color": [237, 190, 74], "label": "Westward crossing", "label_pos": [0.53, 0.45]},
+                      {"path": [[0.35, 0.58], [0.5, 0.64], [0.69, 0.62], [0.82, 0.5]], "cue": "longer Atlantic voyages", "kind": "arrow", "color": [87, 192, 224], "label": "Return route", "label_pos": [0.62, 0.68]}
+                    ]
+                  },
+                  "beats": [
+                    {"type": "host", "cue": "rivalry among states", "duration": 3.5, "text": "Follow the route; then ask who financed it", "x": 0.5, "y": 0.84}
+                  ],
+                  "audio": {"effects": [{"cue": "late fifteenth century", "kind": "page_turn", "volume": 0.16}, {"cue": "new trade routes", "kind": "tick", "volume": 0.12}, {"cue": "longer Atlantic voyages", "kind": "tick", "volume": 0.12}]},
+                  "transition": {"type": "dip_to_black", "duration": 0.25},
+                  "min_duration": 12,
+                  "topics": ["1.2"],
+                  "on_screen_text": ["Trade", "Empire", "Religion", "Navigation"],
+                  "source": {"title": "Map of Columbus's voyages", "license": "Public domain or educational fair use", "notes": "Verify exact repository provenance before publication."},
+                  "production_notes": "Animate the outbound path first and the return route second; routes are illustrative overlays."
+                },
+                {
+                  "id": "caravel-crossing",
+                  "purpose": "concept",
+                  "narration": {
+                    "text": "Ocean-going ships did more than move explorers. They connected ecosystems that had developed separately for thousands of years. Plants, animals, pathogens, people, and ideas now traveled repeatedly in both directions across the Atlantic."
+                  },
+                  "visual": {
+                    "base_image": "../../assets/images/u1/u1-caravel-fleet-huys.jpg",
+                    "clip": "../../video/ai_clips/poc-meta-caravel-crossing.mp4"
+                  },
+                  "animation": {
+                    "type": "ai_clip",
+                    "prompt": "Animate the historical sailing fleet advancing steadily from right to left across the Atlantic. Ships rise and settle naturally on broad rolling swells, large sails billow under steady wind, pennants flutter, and layered clouds drift behind the masts. Keep the camera steady and preserve every vessel, person, sail, mast, and engraved historical detail. Do not add modern objects, text, or extra ships.",
+                    "duration": 10,
+                    "seed": 1492,
+                    "provider": "meta-ui",
+                    "fallback_provider": "ltx",
+                    "caption": "Sustained contact connected previously separate ecosystems"
+                  },
+                  "beats": [
+                    {"type": "icon", "cue": "Plants", "duration": 2.4, "text": "PLANTS", "x": 0.2, "y": 0.2, "color": [116, 190, 104]},
+                    {"type": "icon", "cue": "animals", "duration": 2.4, "text": "ANIMALS", "x": 0.8, "y": 0.28, "color": [233, 196, 106]},
+                    {"type": "stamp", "cue": "pathogens", "duration": 2.8, "text": "DISEASE", "x": 0.5, "y": 0.8, "color": [224, 82, 82]}
+                  ],
+                  "audio": {"effects": [{"cue": "Ocean-going ships", "kind": "whoosh", "volume": 0.12}, {"cue": "pathogens", "kind": "impact", "volume": 0.15}]},
+                  "transition": {"type": "crossfade", "duration": 0.3},
+                  "min_duration": 10,
+                  "topics": ["1.2", "1.3"],
+                  "on_screen_text": ["Plants", "Animals", "Disease", "People", "Ideas"],
+                  "source": {"title": "Historical engraving of a caravel fleet", "creator": "Frans Huys", "license": "Public domain"},
+                  "production_notes": "Meta or LTX creates the ten-second clip from the still; if unavailable, generate it before render rather than substituting water-only motion."
+                },
+                {
+                  "id": "exchange-effects",
+                  "purpose": "evidence",
+                  "narration": {
+                    "text": "The exchange created growth and catastrophe at the same time. American crops such as maize and potatoes supported population growth elsewhere. Horses and other livestock changed labor and transportation in the Americas. But Afro-Eurasian diseases caused devastating Indigenous mortality, weakening communities as Europeans expanded conquest and coerced labor."
+                  },
+                  "visual": {
+                    "base_image": "../../assets/images/u1/gap-g-v01-1-columbian-sugar-engraving.jpg",
+                    "clip": "../../video/ai_clips/u1-sugar-system-living.mp4"
+                  },
+                  "animation": {
+                    "type": "ai_clip",
+                    "prompt": "Bring this historical sugar-production engraving to life as a restrained documentary shot. Preserve the workers, machinery, architecture, and engraved composition. Animate only visible environmental and mechanical details: cane leaves moving in warm wind, mill components turning slowly where shown, light smoke or steam drifting, dust in sunbeams, and a subtle camera track. Do not alter people, add objects, or romanticize coerced labor.",
+                    "duration": 9,
+                    "seed": 1510,
+                    "provider": "meta-ui",
+                    "fallback_provider": "ltx"
+                  },
+                  "beats": [
+                    {"type": "label", "cue": "growth and catastrophe", "duration": 3.0, "text": "GROWTH + CATASTROPHE", "x": 0.5, "y": 0.16},
+                    {"type": "label", "cue": "American crops", "duration": 3.0, "text": "CROPS → POPULATION GROWTH", "x": 0.5, "y": 0.78},
+                    {"type": "label", "cue": "Horses and other livestock", "duration": 3.0, "text": "ANIMALS → LABOR + TRANSPORT", "x": 0.5, "y": 0.78},
+                    {"type": "stamp", "cue": "Afro-Eurasian diseases", "duration": 3.5, "text": "EPIDEMIC DISEASE", "x": 0.5, "y": 0.78, "color": [224, 82, 82]},
+                    {"type": "question", "cue": "coerced labor", "duration": 3.2, "text": "Who gained power—and who paid the cost?", "x": 0.5, "y": 0.18}
+                  ],
+                  "audio": {"effects": [{"cue": "American crops", "kind": "chime", "volume": 0.12}, {"cue": "Afro-Eurasian diseases", "kind": "impact", "volume": 0.13}, {"cue": "coerced labor", "kind": "page_turn", "volume": 0.13}]},
+                  "transition": {"type": "slide", "duration": 0.3, "direction": "bottom"},
+                  "min_duration": 15,
+                  "topics": ["1.3"],
+                  "on_screen_text": ["Population change", "Ecological change", "Coerced labor", "Atlantic commerce"],
+                  "source": {"title": "Engraving associated with Atlantic sugar production", "license": "Public domain", "notes": "Use to discuss labor and commodity exchange while identifying the image's limitations."},
+                  "production_notes": "Use icons beside the timeline labels only if their meaning is historically unambiguous."
+                },
+                {
+                  "id": "contact-argument",
+                  "purpose": "close",
+                  "narration": {
+                    "text": "The strongest explanation joins cause and consequence. Competition, commerce, and Christianity encouraged exploration; navigation made repeated crossings feasible; biological exchange and coercive institutions then redistributed power and wealth unevenly. Contact created a connected Atlantic world, but not an equal one."
+                  },
+                  "visual": {"base_image": "../../assets/images/u1/original-u1-encomienda-07.jpg"},
+                  "animation": {
+                    "type": "diagram",
+                    "title": "Build a Causal Chain",
+                    "nodes": [
+                      {"id": "motives", "label": "Commerce + competition + Christianity", "x": 0.5, "y": 0.26, "cue": "Competition, commerce, and Christianity", "color": [233, 196, 106]},
+                      {"id": "means", "label": "Ships + navigation + state support", "x": 0.5, "y": 0.46, "cue": "navigation made repeated crossings feasible", "color": [87, 192, 224]},
+                      {"id": "effects", "label": "Exchange + epidemics + conquest", "x": 0.5, "y": 0.66, "cue": "biological exchange and coercive institutions", "color": [224, 82, 82]},
+                      {"id": "judgment", "label": "Connected—but profoundly unequal", "x": 0.5, "y": 0.85, "cue": "Contact created a connected Atlantic world", "color": [178, 126, 224]}
+                    ],
+                    "edges": [
+                      {"from": "motives", "to": "means", "label": "financed", "cue": "navigation made repeated crossings feasible"},
+                      {"from": "means", "to": "effects", "label": "enabled", "cue": "biological exchange and coercive institutions"},
+                      {"from": "effects", "to": "judgment", "label": "therefore", "cue": "Contact created a connected Atlantic world"}
+                    ]
+                  },
+                  "audio": {"effects": [{"cue": "Competition, commerce, and Christianity", "kind": "whoosh", "volume": 0.12}, {"cue": "biological exchange and coercive institutions", "kind": "impact", "volume": 0.14}, {"cue": "Contact created a connected Atlantic world", "kind": "chime", "volume": 0.16}]},
+                  "transition": {"type": "crossfade", "duration": 0.25},
+                  "min_duration": 13,
+                  "topics": ["1.2", "1.3"],
+                  "on_screen_text": ["Cause", "Evidence", "Consequence", "Complexity"],
+                  "source": {"title": "Historical depiction of the encomienda system", "license": "Public domain or educational fair use", "notes": "Verify exact repository provenance before publication."},
+                  "production_notes": "End on the judgment statement, then hold two seconds for note-taking."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

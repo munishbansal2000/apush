@@ -561,7 +561,7 @@ def bullet_slide(title, bullets, dur, footer="", bg_img=None, darken=70,
     y = max(px(240), (H - content_h) // 2 - px(60))
     for line in title_lines:
         tile = text_rgba(line, tf, fill=(233, 196, 106, 255), max_w=BASE_W - 160)
-        items.append((tile, px(80) + tile.width // 2, y + t_lh // 2, 0.0, True))
+        items.append((tile, px(80) + tile.width // 2, y + t_lh // 2, 0.0, True, line))
         y += t_lh
     y += px(60)
     idx = 0
@@ -570,24 +570,30 @@ def bullet_slide(title, bullets, dur, footer="", bg_img=None, darken=70,
             idx += 1
             tile = text_rgba(line, bf, fill=(232, 232, 232, 255), max_w=BASE_W - 180)
             items.append((tile, px(90) + tile.width // 2, y + b_lh // 2,
-                          0.15 + idx * stagger, False))
+                          0.15 + idx * stagger, False, line))
         y += b_lh
     footer_tile = None
     if footer:
         footer_tile = text_rgba(footer, font(FR, 34), fill=(120, 126, 140, 255))
     _note_prim("bullet_slide")
-    for tile, cx, cy, at, is_title in items:
-        _note_box("bullet-title" if is_title else "bullet", "",
+    for tile, cx, cy, at, is_title, raw_text in items:
+        _note_box("bullet-title" if is_title else "bullet", raw_text,
                   (cx - tile.width / 2, cy - tile.height / 2,
                    cx + tile.width / 2, cy + tile.height / 2), at, dur)
     if footer_tile:
-        _note_box("bullet-footer", "",
+        _note_box("bullet-footer", footer,
                   (px(90), H - px(140), px(90) + footer_tile.width,
                    H - px(140) + footer_tile.height), 0, dur)
 
     def frame(t):
         canvas = Image.fromarray(base.copy()).convert("RGBA")
-        for tile, cx, cy, at, is_title in items:
+        if bg_img:
+            panel = Image.new("RGBA", (W - px(64), H - px(180)), (8, 10, 16, 148))
+            pd = ImageDraw.Draw(panel, "RGBA")
+            pd.rounded_rectangle([0, 0, panel.width - 1, panel.height - 1],
+                                 radius=px(32), outline=(255, 255, 255, 40), width=px(3))
+            canvas.alpha_composite(panel, (px(32), px(90)))
+        for tile, cx, cy, at, is_title, raw_text in items:
             if t < at:
                 continue
             s = ease_out_back((t - at) / 0.45)
@@ -1015,11 +1021,28 @@ def ai_clip_scene(clip_path, dur):
     return out.without_audio()
 
 
-def assemble(scenes, audios, out, fps=30):
-    """Concat scenes with 0.35s crossfades; each scene gets its narration audio."""
+def assemble(scenes, audios, out, fps=30, transition=0.2, transitions=None):
+    """Concat scenes with matched visual/audio overlap timing."""
     assert len(scenes) == len(audios)
-    final = concatenate_videoclips(scenes, method="compose",
-                                  padding=-0.2)  # snappy crossfade
+    transitions = transitions or [{"type": "crossfade", "duration": transition}
+                                  for _ in scenes]
+    from moviepy.video.fx import CrossFadeIn, FadeIn, SlideIn
+    treated = []
+    for index, (scene, spec) in enumerate(zip(scenes, transitions)):
+        if index == 0 or spec.get("type", "crossfade") == "hard_cut":
+            treated.append(scene)
+            continue
+        duration = float(spec.get("duration", transition))
+        kind = spec.get("type", "crossfade")
+        if kind == "crossfade":
+            scene = scene.with_effects([CrossFadeIn(duration)])
+        elif kind == "slide":
+            scene = scene.with_effects([SlideIn(duration, spec.get("direction", "left"))])
+        elif kind == "dip_to_black":
+            scene = scene.with_effects([FadeIn(duration)])
+        treated.append(scene)
+    final = concatenate_videoclips(treated, method="compose",
+                                  padding=-transition)  # snappy crossfade
     # per-scene audio placed at scene start times (accounting for overlaps)
     from moviepy import CompositeAudioClip
     t, tracks = 0.0, []
@@ -1027,11 +1050,19 @@ def assemble(scenes, audios, out, fps=30):
         a = AudioFileClip(au).with_start(t)
         # pad/trim scene audio to scene visual duration
         tracks.append(a)
-        t += sc.duration - 0.35
+        t += sc.duration - transition
     audio = CompositeAudioClip(tracks).with_duration(final.duration)
-    final = final.with_audio(audio)
-    final.write_videofile(out, fps=fps, codec="libx264", audio_codec="aac",
-                          preset="medium", threads=4, logger=None)
+    muxed = final.with_audio(audio)
+    try:
+        muxed.write_videofile(out, fps=fps, codec="libx264", audio_codec="aac",
+                              preset="medium", threads=1, logger=None,
+                              ffmpeg_params=["-pix_fmt", "yuv420p"])
+    finally:
+        muxed.close()
+        audio.close()
+        for track in tracks:
+            track.close()
+        final.close()
     return out
 
 
@@ -1058,6 +1089,268 @@ def _place(canvas, tile, cx, cy):
     region = tile.crop((sx0, sy0, sx0 + (dx1 - dx0), sy0 + (dy1 - dy0)))
     canvas.alpha_composite(region, (dx0, dy0))
     return canvas
+
+
+def parallax_scene(bg_img, layers, dur, caption="", background_drift=0.03,
+                   background_zoom=0.05):
+    """Layered 2.5D scene for cutouts, artifacts, portraits, and diagrams.
+
+    Transparent PNGs produce the strongest effect, but ordinary images are
+    supported as floating archival cards. Depth controls relative motion.
+    """
+    from moviepy import VideoClip
+    _note_prim("parallax_scene")
+    background = _cover_arr(bg_img, darken=18)
+    prepared = []
+    for index, spec in enumerate(layers):
+        tile = Image.open(spec["image"]).convert("RGBA")
+        target_w = max(1, int(W * spec.get("scale", 0.35)))
+        target_h = max(1, int(tile.height * target_w / tile.width))
+        tile = tile.resize((target_w, target_h), Image.LANCZOS)
+        prepared.append((tile, spec))
+
+    def frame(t):
+        p = min(1.0, max(0.0, t / max(dur, 0.01)))
+        z = 1 + background_zoom * p
+        nw, nh = max(W, int(W * z)), max(H, int(H * z))
+        bg = Image.fromarray(background).resize((nw, nh), Image.LANCZOS)
+        travel = int((nw - W) * background_drift / max(background_zoom, 0.001))
+        x0 = min(max(0, (nw - W) // 2 + int((p - 0.5) * travel)), nw - W)
+        y0 = (nh - H) // 2
+        canvas = bg.crop((x0, y0, x0 + W, y0 + H)).convert("RGBA")
+        for tile, spec in prepared:
+            depth = float(spec.get("depth", 1.0))
+            x = float(spec.get("x", 0.5)) * W
+            y = float(spec.get("y", 0.5)) * H
+            x += float(spec.get("drift_x", 0)) * W * p * depth
+            y += float(spec.get("drift_y", 0)) * H * p * depth
+            entrance = spec.get("entrance", "pop")
+            ep = ease_out_back(min(1.0, t / 0.65))
+            shown = tile
+            if entrance == "pop":
+                shown = _rz(tile, ep)
+            elif entrance == "slide_left":
+                x -= (1 - min(1, ep)) * W
+            elif entrance == "slide_right":
+                x += (1 - min(1, ep)) * W
+            elif entrance == "rise":
+                y += (1 - min(1, ep)) * H * 0.35
+            _place(canvas, shown, x, y)
+        return np.asarray(canvas.convert("RGB"))
+
+    clip = VideoClip(frame, duration=dur)
+    if caption:
+        sc = ImageClip(np.asarray(scrim())).with_duration(dur).with_position(
+            (0, H - px(700))).with_opacity(0.9)
+        clip = CompositeVideoClip([clip, sc], size=(W, H)).with_duration(dur)
+        clip = overlay_text(clip, caption, FR, 40, dur)
+    return clip
+
+
+def source_analysis_scene(img_path, dur, highlights, title=""):
+    """Turn a source into an evidence investigation with timed annotations."""
+    from moviepy import VideoClip
+    _note_prim("source_analysis_scene")
+    base = _cover_arr(img_path, darken=8)
+    if title:
+        chip = text_rgba(title, font(FB, 42), fill=GOLD + (255,), max_w=760)
+        _note_box("source-title", title,
+                  ((W-chip.width)//2, px(95)-chip.height//2,
+                   (W+chip.width)//2, px(95)+chip.height//2), 0, dur)
+    for item in highlights:
+        x0, y0, x1, y1 = item["box"]
+        _note_box("source-highlight", item["label"],
+                  (x0 * W, y0 * H, x1 * W, y1 * H), item["at"],
+                  min(dur, item["at"] + item.get("duration", 4)))
+
+    def frame(t):
+        canvas = Image.fromarray(base.copy()).convert("RGBA")
+        d = ImageDraw.Draw(canvas, "RGBA")
+        if title:
+            chip = text_rgba(title, font(FB, 42), fill=GOLD + (255,), max_w=760)
+            bg = Image.new("RGBA", (chip.width + px(32), chip.height + px(24)),
+                           (10, 12, 18, 220))
+            bg.alpha_composite(chip, (px(16), px(12)))
+            _place(canvas, bg, W // 2, px(95))
+        for item in highlights:
+            at = float(item["at"])
+            end = at + float(item.get("duration", dur - at))
+            if not at <= t <= end:
+                continue
+            color = tuple(item.get("color", GOLD))
+            x0, y0, x1, y1 = item["box"]
+            box = [int(x0 * W), int(y0 * H), int(x1 * W), int(y1 * H)]
+            p = ease_out_cubic(min(1, (t - at) / 0.35))
+            # Focus with an outline, never an opaque color slab that hides the
+            # evidence students are supposed to inspect.
+            d.rounded_rectangle(box, radius=px(10),
+                                outline=color + (int(255 * p),), width=px(7))
+            label = text_rgba(item["label"], font(FB, 34), max_w=720)
+            panel = Image.new("RGBA", (label.width + px(30), label.height + px(22)),
+                              (10, 12, 18, 232))
+            panel.alpha_composite(label, (px(15), px(11)))
+            py = box[1] - panel.height // 2 - px(20)
+            if py < px(150):
+                py = box[3] + panel.height // 2 + px(20)
+            _place(canvas, _rz(panel, max(0.01, p)), (box[0] + box[2]) // 2, py)
+        return np.asarray(canvas.convert("RGB"))
+
+    return VideoClip(frame, duration=dur)
+
+
+def diagram_scene(bg_img, dur, nodes, edges, title=""):
+    """Animated causal/network diagram with declarative nodes and edges."""
+    from moviepy import VideoClip
+    _note_prim("diagram_scene")
+    base = (_cover_arr(bg_img, darken=72) if bg_img
+            else np.zeros((H, W, 3), dtype=np.uint8) + 18)
+    by_id = {node["id"]: node for node in nodes}
+    if title:
+        heading = text_rgba(title, font(FB, 54), fill=GOLD + (255,), max_w=850)
+        _note_box("diagram-title", title,
+                  ((W-heading.width)//2, px(130)-heading.height//2,
+                   (W+heading.width)//2, px(130)+heading.height//2), 0, dur)
+    for node in nodes:
+        label = text_rgba(node["label"], font(FB, 36), max_w=330)
+        pad = px(24)
+        cx, cy = node["x"]*W, node["y"]*H
+        _note_box("diagram-node", node["label"],
+                  (cx-label.width/2-pad, cy-label.height/2-pad,
+                   cx+label.width/2+pad, cy+label.height/2+pad),
+                  node.get("at", 0), dur)
+    for edge in edges:
+        if edge.get("label"):
+            source, target = by_id[edge["from"]], by_id[edge["to"]]
+            label = text_rgba(edge["label"], font(FR, 28), max_w=300)
+            cx = (source["x"]+target["x"])*W/2
+            cy = (source["y"]+target["y"])*H/2-px(28)
+            _note_box("diagram-edge", edge["label"],
+                      (cx-label.width/2, cy-label.height/2,
+                       cx+label.width/2, cy+label.height/2),
+                      edge.get("at", 0)+0.35, dur)
+
+    def frame(t):
+        canvas = Image.fromarray(base.copy()).convert("RGBA")
+        d = ImageDraw.Draw(canvas, "RGBA")
+        if title:
+            heading = text_rgba(title, font(FB, 54), fill=GOLD + (255,), max_w=850)
+            _place(canvas, heading, W // 2, px(130))
+        for edge in edges:
+            at = float(edge.get("at", 0))
+            if t < at:
+                continue
+            source, target = by_id[edge["from"]], by_id[edge["to"]]
+            x1, y1 = source["x"] * W, source["y"] * H
+            x2, y2 = target["x"] * W, target["y"] * H
+            p = ease_out_cubic(min(1, (t - at) / 0.55))
+            ex, ey = x1 + (x2 - x1) * p, y1 + (y2 - y1) * p
+            color = tuple(edge.get("color", (87, 192, 224)))
+            d.line([(x1, y1), (ex, ey)], fill=color + (220,), width=px(8))
+            if p >= .9:
+                ang = np.arctan2(y2-y1, x2-x1)
+                s = px(24)
+                d.polygon([(x2,y2), (x2-s*np.cos(ang-.55), y2-s*np.sin(ang-.55)),
+                           (x2-s*np.cos(ang+.55), y2-s*np.sin(ang+.55))],
+                          fill=color + (255,))
+            if edge.get("label") and p >= .65:
+                label = text_rgba(edge["label"], font(FR, 28), max_w=300)
+                _place(canvas, label, (x1+x2)/2, (y1+y2)/2 - px(28))
+        for node in nodes:
+            at = float(node.get("at", 0))
+            if t < at:
+                continue
+            p = ease_out_back(min(1, (t-at)/0.45))
+            color = tuple(node.get("color", GOLD))
+            label = text_rgba(node["label"], font(FB, 36), max_w=330)
+            pad = px(24)
+            card = Image.new("RGBA", (label.width+pad*2, label.height+pad*2),
+                             (10,12,18,238))
+            card.alpha_composite(label, (pad,pad))
+            cd = ImageDraw.Draw(card, "RGBA")
+            cd.rounded_rectangle([0,0,card.width-1,card.height-1], radius=px(20),
+                                 outline=color + (255,), width=px(5))
+            _place(canvas, _rz(card, max(.01,p)), node["x"]*W, node["y"]*H)
+        return np.asarray(canvas.convert("RGB"))
+
+    return VideoClip(frame, duration=dur)
+
+
+def beat_overlay(base_clip, beats, dur):
+    """Timed editorial beats shared by AP prompts, guides, metaphors and labels."""
+    from moviepy import VideoClip
+    _note_prim("beat_overlay")
+    for beat in beats:
+        kind = beat["type"]
+        if kind in {"arrow", "progress"}:
+            continue
+        at = float(beat["at"])
+        end = min(dur, at + float(beat.get("duration", dur-at)))
+        size = 38 if kind in {"label", "icon"} else 44
+        text = beat.get("text", "")
+        tile = text_rgba(text, font(FB if kind != "question" else FR, size),
+                         max_w=780)
+        pad = px(22)
+        badge_space = px(105) if kind == "host" else 0
+        pw, ph = tile.width + pad*2 + badge_space, tile.height + pad*2
+        cx, cy = beat.get("x", .5)*W, beat.get("y", .82)*H
+        _note_box(f"beat-{kind}", text,
+                  (cx-pw/2, cy-ph/2, cx+pw/2, cy+ph/2), at, end)
+
+    def frame(t):
+        canvas = Image.fromarray(base_clip.get_frame(t)).convert("RGBA")
+        d = ImageDraw.Draw(canvas, "RGBA")
+        for beat in beats:
+            at = float(beat["at"])
+            end = at + float(beat.get("duration", dur - at))
+            if not at <= t <= end:
+                continue
+            kind = beat["type"]
+            color = tuple(beat.get("color", GOLD))
+            x, y = beat.get("x", 0.5) * W, beat.get("y", 0.82) * H
+            p = ease_out_back(min(1, (t - at) / 0.35))
+            text = beat.get("text", "")
+            if kind == "arrow":
+                x2, y2 = beat.get("x2", 0.75) * W, beat.get("y2", 0.5) * H
+                d.line([(x, y), (x2, y2)], fill=color + (240,), width=px(8))
+                ang = np.arctan2(y2 - y, x2 - x)
+                size = px(26)
+                pts = [(x2, y2), (x2 - size * np.cos(ang - .55), y2 - size * np.sin(ang - .55)),
+                       (x2 - size * np.cos(ang + .55), y2 - size * np.sin(ang + .55))]
+                d.polygon(pts, fill=color + (255,))
+                continue
+            if kind == "progress":
+                w = int(W * 0.76)
+                d.rounded_rectangle([W//2-w//2, y-px(8), W//2+w//2, y+px(8)],
+                                    radius=px(8), fill=(255,255,255,70))
+                fill = int(w * min(1, max(0, (t-at)/(end-at or 1))))
+                d.rounded_rectangle([W//2-w//2, y-px(8), W//2-w//2+fill, y+px(8)],
+                                    radius=px(8), fill=color + (255,))
+                continue
+            size = 38 if kind in {"label", "icon"} else 44
+            fill = color + (255,) if kind in {"stamp", "icon"} else (255,255,255,255)
+            tile = text_rgba(text, font(FB if kind != "question" else FR, size),
+                             fill=fill, max_w=780)
+            pad = px(22)
+            panel_color = ((110, 28, 28, 225) if kind == "stamp" else
+                           (18, 45, 70, 238) if kind in {"question", "pause"} else
+                           (10, 12, 18, 220))
+            badge_space = px(105) if kind == "host" else 0
+            panel = Image.new("RGBA", (tile.width + pad*2 + badge_space, tile.height + pad*2), panel_color)
+            panel.alpha_composite(tile, (pad + badge_space, pad))
+            border = ImageDraw.Draw(panel, "RGBA")
+            border.rounded_rectangle([0,0,panel.width-1,panel.height-1], radius=px(18),
+                                     outline=color + (220,), width=px(4))
+            if kind == "host":
+                badge = min(px(42), panel.height // 2 - px(8))
+                cx = px(12) + badge
+                border.ellipse([cx-badge, panel.height//2-badge, cx+badge,
+                                panel.height//2+badge], fill=color + (255,))
+                border.text((cx, panel.height//2), "H", font=font(FB, 34),
+                            fill=(10, 12, 18, 255), anchor="mm")
+            _place(canvas, _rz(panel, max(0.01, p)), x, y)
+        return np.asarray(canvas.convert("RGB"))
+
+    return VideoClip(frame, duration=dur)
 
 # Built 2026-10-02: the user's verdict was "all I see is image + text" --
 # camera moves over stills are not enough. These primitives put THINGS THAT
@@ -1144,7 +1437,7 @@ def map_scene(map_img, dur, moves, title="", caption=""):
             at = m.get("at", 0)
             if t < at - 0.3:
                 continue
-            color = m.get("color", GOLD)
+            color = tuple(m.get("color", GOLD))
             kind = m.get("kind", "arrow")
             # origin pulse just before the move starts
             if t < at:

@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "lesson_id": "u1-columbian-exchange",
+  "title": "The Columbian Exchange",
+  "description": "A short APUSH concept lesson.",
+  "output": "../../build/lesson-videos/u1-columbian-exchange.mp4",
+  "video": {"width": 1080, "height": 1920, "fps": 30, "transition_seconds": 0.2},
+  "tts": {
+    "server_url": "http://127.0.0.1:8123",
+    "reference_audio": "../../video/ref/narrator_us.wav",
+    "reference_text": "../../video/ref/narrator_us.txt",
+    "timeout_seconds": 600
+  },
+  "generation": {
+    "provider": "ollama",
+    "model": "qwen3:30b",
+    "endpoint": "http://127.0.0.1:11434",
+    "timeout_seconds": 180
+  },
+  "clip_generation": {"provider": "none"},
+  "scenes": [
+    {
+      "id": "hook",
+      "narration": {"text": "After 1492, plants, animals, people, and diseases moved across the Atlantic at an unprecedented scale."},
+      "visual": {"base_image": "../../assets/images/u1/original-u1-columbus-voyages-01.jpg"},
+      "animation": {"type": "title", "title": "Two Worlds Connected", "subtitle": "The Columbian Exchange"},
+      "topics": ["1.2"]
+    },
+    {
+      "id": "atlantic-system",
+      "narration": {"text": "Use the map to track exchange in both directions, while remembering that the consequences were profoundly unequal."},
+      "visual": {"base_image": "../../assets/images/u1/original-u1-columbus-voyages-01.jpg"},
+      "animation": {"type": "auto", "prompt": "Plan a restrained map-focused move. Do not add facts or labels absent from the narration."},
+      "topics": ["1.2"]
+    }
+  ]
+}
