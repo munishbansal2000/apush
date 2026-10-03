@@ -982,6 +982,10 @@ def png_is_blank(png_path):
 
 def find_built_mp4(unit, out_name, declared_path=None):
     cands = []
+    # build_lesson.py sets this to the exact MP4 it just built (honors --out).
+    env_mp4 = os.environ.get("BUILD_LESSON_MP4")
+    if env_mp4:
+        cands.append(env_mp4)
     if declared_path:
         cands.append(declared_path if os.path.isabs(declared_path)
                      else os.path.join(REPO, declared_path))

@@ -12,7 +12,24 @@ SEQUENCE-DRIVEN sample. 11 stages, ~5m30s narration. Manifest:
   voice (never a real person's): `ref/narrator_energetic.wav` / `.txt`,
   `ref/columbus.wav` / `.txt`, `ref/hakluyt.wav` / `.txt`
 
-## Commands, in order (run from the repo root)
+## Commands — one script (canonical)
+
+Run from the repo root. `build_lesson.py` does all four steps (TTS →
+AI clips → video → validator), fail-fast with plain-language errors.
+Voice refs are auto-discovered from `ref/` (`narrator_energetic` + every
+extra voice in `narration.json`):
+
+```
+git pull
+python video/build_lesson.py vid-u1-03 --preview
+```
+
+Drop `--preview` for the full-res final after motion approval. If a step
+fails, resume without re-running finished steps, e.g.
+`python video/build_lesson.py vid-u1-03 --skip-tts` (full resume patterns:
+`python video/build_lesson.py --help`).
+
+## Manual escape hatch (same four steps, by hand)
 
 1. Pull:
 ```

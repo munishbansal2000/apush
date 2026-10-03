@@ -313,6 +313,38 @@ validator gates.
    - These all count as intentional motion for the CAMERA-DIRECTION gate.
      for sample lessons (legacy path kept for older units without BUILDERS).
 
+### One-script lesson build (canonical)
+
+`python video/build_lesson.py <lesson-id>` runs the whole pipeline end to
+end, fail-fast with plain-language errors:
+
+1. **TTS** — `render_narration.py` (fish-speech). Voice refs auto-discovered:
+   `ref/narrator_energetic.wav`+`.txt` for the narrator,
+   `ref/<voice>.wav`+`.txt` for every extra voice in `narration.json`
+   (`--ref-dir` / `--voice NAME=audio:text` override). Missing refs fail fast
+   naming the exact files. Skip with `--skip-tts`.
+2. **AI clips** — every `ai_clips` stage in the manifest runs through
+   `animate_still.py` (LTX-Video, 5090). Existing clips are skipped unless
+   `--regen-clips`; skip all with `--skip-ai-clips`.
+3. **Video** — `build_video.py` (`--preview` passes through).
+4. **Validate** — `validate_video.py`; non-zero exit fails LOUDLY. Never skipped.
+
+Common invocations (from the repo root):
+```
+python video/build_lesson.py vid-u1-01                 # full run (5090)
+python video/build_lesson.py vid-u1-01 --preview        # fast 720p motion pass
+python video/build_lesson.py vid-u1-01 --skip-tts       # TTS already done
+python video/build_lesson.py vid-u1-01 --only video     # re-run one step
+python video/build_lesson.py vid-u1-01 --only validate  # re-check after fixes
+```
+Steps are resumable: a failed step never forces re-running finished ones
+(full resume patterns in `build_lesson.py --help`).
+
+**Manual escape hatch** (the pre-build_lesson runbook, kept for debugging):
+`render_narration.py` → `animate_still.py` (per ai_clip stage) →
+`build_video.py <id> [--preview] [--out]` → `validate_video.py <manifest>`.
+Same order, same flags, no orchestration.
+
 ### Preview workflow (motion approval before full-res)
 
 - **Preview first:** `python3 video/build_video.py <name> --preview --out <file>` renders at **720x1280** (`motion.set_scale(2/3)`). ~2.25x fewer pixels → ~2x faster. Use previews for all motion/direction approval.
