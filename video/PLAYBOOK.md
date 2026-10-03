@@ -231,6 +231,66 @@ Do NOT reference these in build scripts, content JSON, or manifests until implem
 5. **Crossfades:** 0.35s between scenes (`assemble`); audio is placed per-scene-start so narration never bleeds into the wrong visual.
 6. **Breathing room:** the 1.2s `dur()` pad is for motion to settle (pop, ring ripple) after narration ends. Don't pad tighter than 0.8s.
 
+### Visual direction (learned 2026-10-02 — frame review of vid-u1-01)
+
+Three defect classes found in the first proof render; the rules below are now
+law, enforced in code (`motion.py`), in the build (`build_video.py`), and by
+validator gates.
+
+1. **No text collisions.** At t=8s the hook rendered "what if" on top of
+   "TWO WORLDS. ONE OCEAN." — a `pop` note centered on a centered kinetic
+   phrase. Rules:
+   - Every text element's settled bounding box is recorded at build time
+     (`motion.PlanRecorder`); the **TEXT-COLLISION** validator gate fails any
+     pair of boxes that co-occur (>0.25s, ignoring transient entrances) and
+     overlap (>4% of the smaller box).
+   - `annotate` `pop` and `point` notes accept a `y` kwarg (0..1 of frame) for
+     explicit vertical parking. Centered cards are never stacked on centered
+     text — park verdict cards low (`y: 0.68`–`0.78`), clear of both the text
+     block and the sub line.
+   - `kinetic_text` places its sub from the *measured phrase height*
+     (`y_pos=(H+th)//2+20`), never a fixed offset — fixed offsets collide with
+     multi-line phrases.
+2. **Backgrounds stay visible (no fake black screens).** `typewriter_scene`
+   and `timeline_scene` were crushing bg images with `darken=120–150` until
+   frames read as black screens with text — a no-blank-screen violation in
+   spirit. Rules:
+   - `motion._bg_base` clamps `darken` to **80** (`DARKEN_MAX`). Never rely on
+     heavier full-frame darkening for legibility.
+   - Prefer a **scrim band** behind text (`motion.scrim_band`, multiplicative,
+     keeps texture) over full-frame darkening: bottom band for captions
+     (`caption_scene`, `doc_zoom`, `callout_scene` captions), region bands
+     behind `typewriter_scene` quote blocks and `timeline_scene` rails.
+   - The **BG-VISIBILITY** check (inside NO-BLANK-FRAMES) fails any sampled
+     rendered frame with >40% near-black pixels (luminance <28; calibrated:
+     healthy frames 2–4%, crushed frames 44–69%).
+3. **Every stage moves the camera on purpose.** The first cut leaned on
+   `kb_scene` slow drift + annotate cards — a slideshow. Rules:
+   - **≥1 intentional camera/directed-motion move per stage. Drift-only stages
+     are banned.** Intentional = `punch_in` (opens, never fades),
+     `zoom_to` (emphasis on the named figure/object), `camera_path`
+     (waypoint tours across details the narration names),
+     `doc_zoom` (documents), `callout_scene` (ring sequence on points of
+     interest), `timeline_scene` (sequential reveals), `typewriter_scene`
+     (live-typing quotes), `kinetic_text` (slams), `bullet_slide`
+     (staggered entrances). Enforced by the **CAMERA-DIRECTION** gate.
+   - Direction grammar: open with `punch_in`; tour engravings/photos with
+     `camera_path` across exactly the details being discussed; punch
+     `zoom_to` onto the figure or object the sentence names; land verdicts
+     with `kinetic_text` + `point` cards.
+   - Stages render as **real animated segments** (`BUILDERS[name](dur)` →
+     `moviepy` clip → MP4 via `build_video.py`'s animated path), sized to the
+     measured narration duration. The old static-PNG-per-stage loop is retired
+     for sample lessons (legacy path kept for older units without BUILDERS).
+
+### Preview workflow (motion approval before full-res)
+
+- **Preview first:** `python3 video/build_video.py <name> --preview --out <file>` renders at **720x1280** (`motion.set_scale(2/3)`). ~2.25x fewer pixels → ~2x faster. Use previews for all motion/direction approval.
+- **Full-res only after approval:** default (no flag) renders 1080x1920. Never spend a full-res render on unapproved motion.
+- **How it stays faithful:** `motion.py` parameterizes resolution — `set_scale()` sets `W`/`H`, `font()` scales type sizes, `text_rgba()`/`wrap_px()` scale wrap widths internally, and every absolute-pixel layout constant goes through `px()` (design pixels × SCALE). Preview composition is proportionally identical to final: same wraps, same relative positions, same collision behavior.
+- **Rule:** `set_scale()` must be called before any builder runs (build_video.py does this right after arg parsing); stage modules must read `motion.W`/`H`/`px()` live, never cache them at import.
+- Validator plan-time gates (TEXT-COLLISION, CAMERA-DIRECTION) run at full-res layout by default; the rendered-frame gates (NO-BLANK-FRAMES, BG-VISIBILITY) run against whichever MP4 exists.
+
 ### Asset rules
 - All images local in the repo (`video/assets/<topic>/`) — **local-only rule**: every image downloaded into the repo, references rewritten to local paths, original URLs kept as provenance. No hotlinked URLs anywhere in content JSON or builders.
 - Pre-1930 primary sources are public domain — quotable verbatim; ideal for quote scenes. Post-1929 sources get paraphrase/original treatment.

@@ -62,6 +62,7 @@ histogram covers >95%% of pixels -- i.e. near-uniform black OR white.
 
 import ast
 import hashlib
+import importlib
 import html
 import json
 import os
@@ -139,7 +140,7 @@ EASINGS = ["ease_out_back", "ease_out_cubic", "ease_in_out_cubic"]
 # Cuba-specific, NOT canonical: warn when referenced outside Cuba content.
 CUBA_ONLY = {"cuba_map_scene"}
 # Audio-duration utility, not an animation directive: exempt from the vocab.
-UTIL_EXEMPT = {"dur"}
+UTIL_EXEMPT = {"dur", "scrim", "scrim_band", "px", "set_scale"}
 # annotate() note kinds: (start, dur, kind, params).
 ANNOTATE_KINDS = {"term", "label", "point", "arrow", "pop"}
 # Primitives that render a near-black flat background when bg_img is omitted:
@@ -157,6 +158,10 @@ SHINGLE_N = 8               # NO-COPY: consecutive-word verbatim window
 DUR_TOLERANCE_S = 1.0       # AUDIO-MATCH: declared-vs-measured tolerance
 BLANK_BAND = 10             # NO-BLANK-FRAMES: luminance band width (points)
 BLANK_COVERAGE = 0.95       # ... fraction of pixels inside one band = blank
+BG_DARK_LUM = 28            # BG-VISIBILITY: below this luminance = near-black
+BG_DARK_MAX_FRAC = 0.40     # ... fail when more than this fraction is near-black
+# Calibrated 2026-10-02 on vid-u1-01: healthy frames 0.02-0.04, crushed
+# (darken=120-150) frames 0.44-0.69.
 FRAMES_PER_SCENE = 3        # ... samples per scene (20/50/80 pct of span)
 SEGMENT_WARN_CHARS = 1000   # TTS-GATES: per-segment length warn/fail bars
 SEGMENT_FAIL_CHARS = 2000
@@ -1012,8 +1017,15 @@ def gate_blank_frames_rendered(mp4, scenes, unit):
                 bad += 1
                 fail(gate, f"{unit}: near-blank frame at t={t:.1f}s "
                            f"(scene '{stage}')")
+            dark_frac = sum(1 for b in data if b < BG_DARK_LUM) / len(data)
+            if dark_frac > BG_DARK_MAX_FRAC:
+                bad += 1
+                fail(gate, f"{unit}: crushed background at t={t:.1f}s "
+                           f"(scene '{stage}'): {dark_frac:.0%} near-black "
+                           f"pixels -- bg image not visible "
+                           f"(darken too high; use a scrim band)")
         cum += dur
-    info(f"[BLANK] {checked} frames sampled, {bad} blank")
+    info(f"[BLANK] {checked} frames sampled, {bad} blank/crushed")
 
 
 def gate_blank_frames_markup_pngs(manifest):
@@ -1062,6 +1074,120 @@ def count_scene_appends(build_py):
                 and node.func.value.id == "scenes":
             n += 1
     return n
+
+
+
+# ================================================== text collision (plan-time)
+def _stage_builders(manifest):
+    """Import the stage module; return (builders dict, unit) or (None, reason)."""
+    mod_name = manifest.get("module", "")
+    if HERE not in sys.path:
+        sys.path.insert(0, HERE)
+    try:
+        mod = importlib.import_module(mod_name)
+    except Exception as e:
+        return None, f"cannot import stage module '{mod_name}': {e}"
+    builders = getattr(mod, "BUILDERS", None)
+    if not builders:
+        return None, f"module '{mod_name}' exposes no BUILDERS; plan-time checks skipped"
+    return builders, None
+
+
+def _boxes_overlap(b1, b2, min_frac=0.04):
+    x0 = max(b1[0], b2[0]); y0 = max(b1[1], b2[1])
+    x1 = min(b1[2], b2[2]); y1 = min(b1[3], b2[3])
+    if x1 <= x0 or y1 <= y0:
+        return False
+    inter = (x1 - x0) * (y1 - y0)
+    a1 = max(1, (b1[2] - b1[0]) * (b1[3] - b1[1]))
+    a2 = max(1, (b2[2] - b2[0]) * (b2[3] - b2[1]))
+    return inter > min_frac * min(a1, a2)
+
+
+def gate_text_collision(manifest, scenes):
+    """TEXT-COLLISION: no two simultaneously-visible text boxes may overlap.
+
+    Runs each stage's BUILDERS[name](dur) under motion.PlanRecorder, which
+    records settled text bounding boxes + active intervals. A pair fails when
+    their time intervals co-occur (>0.25s, ignoring transient entrances) AND
+    their boxes overlap meaningfully (>4% of the smaller box).
+    """
+    gate = "TEXT-COLLISION"
+    name = manifest["name"]
+    builders, reason = _stage_builders(manifest)
+    if builders is None:
+        warn(gate, f"{name}: {reason}")
+        return
+    import motion
+    checked, bad = 0, 0
+    for stage, dur in scenes:
+        if dur <= 0:
+            continue
+        build = builders.get(stage)
+        if build is None:
+            warn(gate, f"{name}: stage '{stage}' has no BUILDERS entry")
+            continue
+        with motion.PlanRecorder() as rec:
+            try:
+                build(dur)
+            except Exception as e:
+                warn(gate, f"{name}: stage '{stage}' builder raised ({e}); skipped")
+                continue
+        boxes = rec.boxes
+        for i in range(len(boxes)):
+            for j in range(i + 1, len(boxes)):
+                a, c = boxes[i], boxes[j]
+                co = min(a["t1"], c["t1"]) - max(a["t0"], c["t0"])
+                if co <= 0.25:
+                    continue
+                checked += 1
+                if _boxes_overlap(a["box"], c["box"]):
+                    bad += 1
+                    fail(gate,
+                         f"{name}: stage '{stage}': '{a['text']}' ({a['kind']}) "
+                         f"overlaps '{c['text']}' ({c['kind']}) for {co:.1f}s")
+    info(f"[{gate}] {name}: {checked} box-pairs checked, {bad} colliding")
+
+
+INTENTIONAL_MOTION = {
+    # ≥1 of these per stage; kb_scene/caption_scene drift alone is banned.
+    "punch_in", "zoom_to", "camera_path", "doc_zoom", "callout_scene",
+    "timeline_scene", "typewriter_scene", "kinetic_text", "bullet_slide",
+}
+
+
+def gate_camera_direction(manifest, scenes):
+    """CAMERA-DIRECTION: every stage needs an intentional camera/directed move.
+
+    Drift-only stages (kb_scene slow drift + annotate cards) read as a
+    slideshow. Each stage must use at least one directed-motion primitive:
+    punch_in, zoom_to, camera_path, doc_zoom, callout rings, timeline
+    reveals, live typewriter text, kinetic slams, or staggered bullets.
+    """
+    gate = "CAMERA-DIRECTION"
+    name = manifest["name"]
+    builders, reason = _stage_builders(manifest)
+    if builders is None:
+        warn(gate, f"{name}: {reason}")
+        return
+    import motion
+    for stage, dur in scenes:
+        if dur <= 0:
+            continue
+        build = builders.get(stage)
+        if build is None:
+            continue  # already warned under TEXT-COLLISION
+        with motion.PlanRecorder() as rec:
+            try:
+                build(dur)
+            except Exception:
+                continue  # already warned under TEXT-COLLISION
+        used = set(rec.prims)
+        if not (used & INTENTIONAL_MOTION):
+            fail(gate,
+                 f"{name}: stage '{stage}' is drift-only "
+                 f"(primitives: {sorted(used)}); needs an intentional "
+                 f"camera/directed-motion move")
 
 
 # ==================================================================== subject match
@@ -1144,6 +1270,8 @@ def run_manifest(mpath):
             scenes.append((stage, d / share if share > 1 else d))
     mp4 = find_built_mp4(manifest["out"])
     gate_blank_frames_rendered(mp4, scenes, name)
+    gate_text_collision(manifest, scenes)
+    gate_camera_direction(manifest, scenes)
     gate_subject_match([], name)   # static-markup units carry no beat images
     gate_no_copy(script_candidates(name))
 

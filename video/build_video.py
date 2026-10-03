@@ -99,11 +99,105 @@ def mp3_duration(path):
     return float(r.stdout.strip())
 
 
+def write_clip_frames(clip, path, fps=30):
+    """Render a moviepy VideoClip to MP4 by piping raw frames to ffmpeg.
+
+    (No imageio dependency; uses the ffmpeg already required on PATH.)
+    Frame size comes from the clip (motion.W/H), so --preview just works.
+    """
+    import numpy as np
+    sys.path.insert(0, HERE)
+    import motion as _motion
+    w, h = clip.size if hasattr(clip, "size") else (_motion.W, _motion.H)
+    cmd = ["ffmpeg", "-y", "-v", "error", "-f", "rawvideo", "-pix_fmt", "rgb24",
+           "-s", f"{w}x{h}", "-r", str(fps), "-i", "-",
+           "-c:v", "libx264", "-preset", "veryfast", "-crf", "22",
+           "-pix_fmt", "yuv420p", path]
+    n = max(1, int(round(clip.duration * fps)))
+    proc = subprocess.Popen(cmd, stdin=subprocess.PIPE)
+    try:
+        for i, frame in enumerate(clip.iter_frames(fps=fps, dtype="uint8")):
+            if i >= n:
+                break
+            proc.stdin.write(np.ascontiguousarray(frame).tobytes())
+        proc.stdin.close()
+        proc.wait(timeout=180)
+    except Exception:
+        # never hang on a sick ffmpeg: kill it instead of waiting forever
+        # (a frame-compute crash used to leave a zombie ffmpeg + hung wait)
+        proc.kill()
+        proc.wait()
+        raise
+    if proc.returncode != 0:
+        raise RuntimeError(f"ffmpeg segment encode failed for {path}")
+
+
+def measure_plan(plan, audio_dir):
+    """[(stage, seconds)] from the narration MP3s; plus ordered audio files."""
+    stage_durs, audio_files, seen = [], [], []
+    for stage_name, spec in plan:
+        if isinstance(spec, dict):
+            mp3 = os.path.join(audio_dir, spec["mp3"])
+            dur = mp3_duration(mp3) / spec["share"]
+        else:
+            mp3 = os.path.join(audio_dir, spec)
+            dur = mp3_duration(mp3)
+        if mp3 not in seen:
+            seen.append(mp3)
+            audio_files.append(mp3)
+        stage_durs.append((stage_name, dur))
+    return stage_durs, audio_files
+
+
+def mux_segments(segs, audio_files, out):
+    """Concat MP4 segments, mux the concatenated narration, write out."""
+    tmp = os.path.dirname(segs[0])
+    with open(os.path.join(tmp, "segs.txt"), "w") as f:
+        for s in segs:
+            f.write(f"file '{s}'\n")
+    silent = os.path.join(tmp, "silent.mp4")
+    run(["ffmpeg", "-y", "-v", "error", "-f", "concat", "-safe", "0",
+         "-i", os.path.join(tmp, "segs.txt"), "-c", "copy", silent])
+    n = len(audio_files)
+    fc = "".join(f"[{i}:a]" for i in range(n)) + f"concat=n={n}:v=0:a=1[out]"
+    cmd = ["ffmpeg", "-y", "-v", "error"]
+    for a in audio_files:
+        cmd += ["-i", a]
+    narration = os.path.join(tmp, "narration.m4a")
+    run(cmd + ["-filter_complex", fc, "-map", "[out]", "-c:a", "aac",
+               "-b:a", "160k", narration])
+    run(["ffmpeg", "-y", "-v", "error", "-i", silent, "-i", narration,
+         "-c", "copy", "-shortest", out])
+
+
+def build_animated(mod, stage_durs, audio_files, out, fps=30):
+    """Render each stage's BUILDERS[name](dur) clip to an MP4 segment."""
+    tmp = tempfile.mkdtemp(prefix="apushvid_")
+    segs = []
+    for stage_name, dur in stage_durs:
+        builder = mod.BUILDERS[stage_name]
+        clip = builder(dur)
+        seg = os.path.join(tmp, f"{stage_name}.mp4")
+        write_clip_frames(clip, seg, fps=fps)
+        segs.append(seg)
+        print(f"      segment {stage_name}: {dur:.1f}s")
+    mux_segments(segs, audio_files, out)
+    shutil.rmtree(tmp, ignore_errors=True)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("video", choices=VIDEOS)
     ap.add_argument("--out", default=None)
+    ap.add_argument("--preview", action="store_true",
+                    help="preview render at 720x1280 (fast motion-approval "
+                         "pass); default is full-res 1080x1920")
     args = ap.parse_args()
+    if args.preview:
+        sys.path.insert(0, HERE)
+        import motion
+        motion.set_scale(2 / 3)  # 720x1280; layout math scales proportionally
+        print("preview mode: rendering at 720x1280")
 
     for tool in ("ffmpeg", "ffprobe"):
         if not shutil.which(tool):
@@ -115,67 +209,46 @@ def main():
 
     sys.path.insert(0, HERE)
     mod = importlib.import_module(mod_name)
+    # Modules exposing BUILDERS take the animated path: real motion segments
+    # rendered from BUILDERS[name](dur). Others keep the legacy PNG loop.
+    animated = hasattr(mod, "BUILDERS")
 
-    # 1. render stages
-    print(f"[1/4] rendering {len(mod.STAGES)} stages...")
+    # 1. markup PNGs (the static record; cheap, always generated)
+    print(f"[1/4] rendering {len(mod.STAGES)} markup stages...")
     os.makedirs(os.path.join(HERE, stage_dir), exist_ok=True)
     for name in sorted(mod.STAGES):
         mod.STAGES[name]().save(os.path.join(HERE, stage_dir, f"{name}.png"))
 
     # 2. measure narration -> per-stage durations
     print("[2/4] measuring narration...")
-    stage_durs, audio_files = [], []
-    seen_audio = []
-    for stage_name, spec in plan:
-        if isinstance(spec, dict):
-            mp3 = os.path.join(audio_dir, spec["mp3"])
-            dur = mp3_duration(mp3) / spec["share"]
-        else:
-            mp3 = os.path.join(audio_dir, spec)
-            dur = mp3_duration(mp3)
-        if mp3 not in seen_audio:
-            seen_audio.append(mp3)
-            audio_files.append(mp3)
-        stage_durs.append((stage_name, dur))
+    stage_durs, audio_files = measure_plan(plan, audio_dir)
     total = sum(d for _, d in stage_durs)
     print(f"      total {total:.1f}s across {len(stage_durs)} stages")
 
-    # 3. per-stage segments (exact durations) -> concat
-    print("[3/4] encoding segments...")
-    tmp = tempfile.mkdtemp(prefix="apushvid_")
-    segs = []
-    for stage_name, dur in stage_durs:
-        seg = os.path.join(tmp, f"{stage_name}.mp4")
-        run(["ffmpeg", "-y", "-v", "error", "-loop", "1",
-             "-i", os.path.join(HERE, stage_dir, f"{stage_name}.png"),
-             "-vf", "fps=30,format=yuv420p", "-t", f"{dur:.3f}",
-             "-c:v", "libx264", "-preset", "veryfast", "-crf", "22", seg])
-        segs.append(seg)
-    with open(os.path.join(tmp, "segs.txt"), "w") as f:
-        for s in segs:
-            f.write(f"file '{s}'\n")
-    silent = os.path.join(tmp, "silent.mp4")
-    run(["ffmpeg", "-y", "-v", "error", "-f", "concat", "-safe", "0",
-         "-i", os.path.join(tmp, "segs.txt"), "-c", "copy", silent])
+    if animated:
+        # 3+4. animated segments, then concat + mux inside build_animated
+        print("[3/4] rendering animated segments...")
+        build_animated(mod, stage_durs, audio_files, out)
+        print("[4/4] mixing narration and muxing... done inside build_animated")
+    else:
+        # 3. per-stage segments (exact durations) -> concat
+        print("[3/4] encoding segments...")
+        tmp = tempfile.mkdtemp(prefix="apushvid_")
+        segs = []
+        for stage_name, dur in stage_durs:
+            seg = os.path.join(tmp, f"{stage_name}.mp4")
+            run(["ffmpeg", "-y", "-v", "error", "-loop", "1",
+                 "-i", os.path.join(HERE, stage_dir, f"{stage_name}.png"),
+                 "-vf", "fps=30,format=yuv420p", "-t", f"{dur:.3f}",
+                 "-c:v", "libx264", "-preset", "veryfast", "-crf", "22", seg])
+            segs.append(seg)
+        mux_segments(segs, audio_files, out)
+        shutil.rmtree(tmp, ignore_errors=True)
 
-    # 4. join narration, mux
-    print("[4/4] mixing narration and muxing...")
-    n = len(audio_files)
-    fc = "".join(f"[{i}:a]" for i in range(n)) + f"concat=n={n}:v=0:a=1[out]"
-    cmd = ["ffmpeg", "-y", "-v", "error"]
-    for a in audio_files:
-        cmd += ["-i", a]
-    narration = os.path.join(tmp, "narration.m4a")
-    run(cmd + ["-filter_complex", fc, "-map", "[out]", "-c:a", "aac", "-b:a", "160k", narration])
-    run(["ffmpeg", "-y", "-v", "error", "-i", silent, "-i", narration,
-         "-c", "copy", "-shortest", out])
-
-    shutil.rmtree(tmp, ignore_errors=True)
     r = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration,size",
                         "-of", "json", out], capture_output=True, text=True)
     info = json.loads(r.stdout)["format"]
     print(f"done: {out}  ({float(info['duration']):.1f}s, {int(info['size'])/1e6:.1f} MB)")
-
 
 if __name__ == "__main__":
     main()
