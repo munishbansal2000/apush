@@ -14,7 +14,6 @@ An LLM can execute it end-to-end with nothing else.
 - Prompts MUST describe ambient motion only: clouds, water, smoke, fire, flags, fabric, foliage, dust, shimmer, heat haze.
   Never: people moving, content added/removed/changed, camera moves (no zoom/pan/dolly/orbit).
 - Every prompt below was verified with `animate_still.check_prompt_safety` — all accepted.
-- Always `--dry-run` first (validates prompt safety without the GPU), then render for real.
 
 ## Shot 1 — hook (manifest stage: `hook`)
 
