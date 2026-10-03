@@ -306,6 +306,86 @@
 
 ---
 
+## Chapter 3.1 — The Break with Britain
+
+### vid-u3-01 — "The Colonies on the Brink"
+Narrative question: How did the most loyal British subjects in the world become revolutionaries in twenty years?
+
+**Shot 1 — Beat: 1754, prosperous and proudly British (HOOK).** Catalog reuse: `assets/images/u3/philadelphia-east-prospect-1755.jpg` (`aiclip-ch32-philadelphia-prospect-1755` — same base as vid-u3-08's convention beat, new prompt/seed for a new clip; Scull & Heap's East Prospect of Philadelphia, 1755 — tall ships on the Delaware, city skyline). Caveat: the sheet is a composite — prospect band on top, city-plan inset and State House elevation below with title text; the prompt animates only the top prospect band's elements.
+- Prompt (40w): "Gentle ripples cross the broad Delaware River; the tall ships' sails stir faintly in the river breeze; a flag flutters at a masthead among the anchored merchant ships; leaves tremble on the riverside plants; water shimmers against the wooden wharves."
+- Duration 5s · Seed 100
+- `python video/animate_still.py --image assets/images/u3/philadelphia-east-prospect-1755.jpg --prompt "Gentle ripples cross the broad Delaware River; the tall ships' sails stir faintly in the river breeze; a flag flutters at a masthead among the anchored merchant ships; leaves tremble on the riverside plants; water shimmers against the wooden wharves." --out video/ai_clips/vid-u3-01-philadelphia-prospect.mp4 --duration 5 --seed 100`
+
+**Shot 2 — Beat: the French empire pressing from the north.** New PD: `assets/images/u3/louisbourg-siege-1758.jpg` — "View of Louisburg… besieged in 1758," drawn on the spot by Capt. Ince, engraved by P. Canot (John Carter Brown Library upload — the NAM upload of the same engraving was CC BY-SA 4.0 and was rejected).
+- Prompt (45w): "Heavy clouds churn and roll across the vast sky; waves break white against the rocky shore; the anchored warships' flags stir in the sea wind; cannon smoke drifts from the island battery; ripples cross the harbor water; spray shimmers where the surf strikes the cliffs."
+- Duration 5s · Seed 101
+- `python video/animate_still.py --image assets/images/u3/louisbourg-siege-1758.jpg --prompt "Heavy clouds churn and roll across the vast sky; waves break white against the rocky shore; the anchored warships' flags stir in the sea wind; cannon smoke drifts from the island battery; ripples cross the harbor water; spray shimmers where the surf strikes the cliffs." --out video/ai_clips/vid-u3-01-louisbourg.mp4 --duration 5 --seed 101`
+
+### vid-u3-02 — "The War That Made America Rebel"
+Narrative question: How did winning a war together drive Britain and its colonies apart?
+
+**Shot 1 — Beat: the Seven Years' War colonists bled in (HOOK).** New PD: `assets/images/u3/death-of-general-wolfe-1770.jpg` — Benjamin West's "The Death of General Wolfe," 1770 (artist d. 1820) — storm clouds, the Union Jack aloft, distant musket smoke.
+- Prompt (42w): "Heavy storm clouds churn and roll across the dark sky; the tall Union Jack ripples and strains in the wind; thin musket smoke drifts across the distant treeline; dust motes hang in the heavy air; the flag's fabric flutters at its staff."
+- Duration 5s · Seed 102
+- `python video/animate_still.py --image assets/images/u3/death-of-general-wolfe-1770.jpg --prompt "Heavy storm clouds churn and roll across the dark sky; the tall Union Jack ripples and strains in the wind; thin musket smoke drifts across the distant treeline; dust motes hang in the heavy air; the flag's fabric flutters at its staff." --out video/ai_clips/vid-u3-02-wolfe.mp4 --duration 5 --seed 102`
+
+**Shot 2 — Beat: Britain's new attitude — standing armies in peacetime.** New PD: `assets/images/u3/boston-troops-landing-1768.jpg` — "The town of Boston in New England and British ships of war landing their troops! 1768," after Paul Revere (LOC) — warships and sails filling Boston harbor.
+- Prompt (36w): "Gentle ripples cross the harbor water; the tall ships' sails stir faintly in the sea breeze; flags flutter at the mastheads of the anchored warships; water laps at the wooden wharves; the longboats' wakes shimmer faintly."
+- Duration 5s · Seed 103
+- `python video/animate_still.py --image assets/images/u3/boston-troops-landing-1768.jpg --prompt "Gentle ripples cross the harbor water; the tall ships' sails stir faintly in the sea breeze; flags flutter at the mastheads of the anchored warships; water laps at the wooden wharves; the longboats' wakes shimmer faintly." --out video/ai_clips/vid-u3-02-boston-1768.mp4 --duration 5 --seed 103`
+
+---
+
+### vid-u3-03 — "No Taxation Without Representation"
+Narrative question: Why did a tax on paper provoke a revolution?
+
+**Shot 1 — Beat: Townshend duties → the Boston Massacre.** Catalog: `assets/images/u3/pr25e-ch07-q03.jpg` — Revere's "Bloody Massacre" engraving, 1770 — chimney smoke, crescent moon, huge musket-smoke cloud.
+- Prompt (47w): "Thin smoke curls upward from the brick chimneys against the moonlit sky; the great cloud of musket smoke hangs and drifts slowly across the street; the crescent moon glows faintly through the haze; dust motes stir in the lamplit air; the smoke thins at its ragged edges."
+- Duration 5s · Seed 104
+- `python video/animate_still.py --image assets/images/u3/pr25e-ch07-q03.jpg --prompt "Thin smoke curls upward from the brick chimneys against the moonlit sky; the great cloud of musket smoke hangs and drifts slowly across the street; the crescent moon glows faintly through the haze; dust motes stir in the lamplit air; the smoke thins at its ragged edges." --out video/ai_clips/vid-u3-03-massacre.mp4 --duration 5 --seed 104`
+
+**Shot 2 — Beat: present-tense immersion — Boston, December 1773 (HOOK).** New PD: `assets/images/u3/boston-tea-party-currier.jpg` — Currier's "Destruction of Tea at Boston Harbor," after W. D. Cooper, 1846 — tea chests floating in the harbor, masts, flag, cloudy sky.
+- Prompt (43w): "Thin clouds drift across the pale evening sky; gentle waves ripple around the floating tea chests in the harbor; the flag at the ship's stern flutters in the sea breeze; water shimmers against the wooden wharf; the tall masts' rigging sways almost imperceptibly."
+- Duration 5s · Seed 105
+- `python video/animate_still.py --image assets/images/u3/boston-tea-party-currier.jpg --prompt "Thin clouds drift across the pale evening sky; gentle waves ripple around the floating tea chests in the harbor; the flag at the ship's stern flutters in the sea breeze; water shimmers against the wooden wharf; the tall masts' rigging sways almost imperceptibly." --out video/ai_clips/vid-u3-03-tea-party.mp4 --duration 5 --seed 105`
+
+### vid-u3-04 — "The Ideas Behind the Guns"
+Narrative question: Would the Revolution have happened without Enlightenment philosophy?
+
+**Shot 1 — Beat: the Declaration preamble as primary-source cold open (HOOK).** Catalog: `assets/images/u3/pr25e-test2-q14.jpg` — Trumbull's "Declaration of Independence," 1819 — chamber interior, red drapes, captured British flags on the wall.
+- Prompt (46w): "Dust motes drift through the still chamber air; the heavy red drapes at the tall windows stir almost imperceptibly; the captured flags draped on the wall tremble faintly in a draft; light shimmers softly across the polished floor; the fabric's folds sway in slow, shallow waves."
+- Duration 5s · Seed 106
+- `python video/animate_still.py --image assets/images/u3/pr25e-test2-q14.jpg --prompt "Dust motes drift through the still chamber air; the heavy red drapes at the tall windows stir almost imperceptibly; the captured flags draped on the wall tremble faintly in a draft; light shimmers softly across the polished floor; the fabric's folds sway in slow, shallow waves." --out video/ai_clips/vid-u3-04-declaration.mp4 --duration 5 --seed 106`
+
+*(Only 1 shot — Common Sense / Locke / Montesquieu beats have only static title pages and portraits in PD; see GAP LOG.)*
+
+### vid-u3-05 — "How the Underdog Won"
+Narrative question: How does a ragtag army beat the world's greatest empire?
+
+**Shot 1 — Beat: the war begins, April 1775 (HOOK).** Catalog: `assets/images/u3/5s24-ch03-mcq-48.jpg` — Doolittle's "Battle of Lexington," 1775 — rolling musket-smoke cloud over the green, rooftops.
+- Prompt (46w): "The great rolling cloud of musket smoke billows and drifts across the village green; its ragged edges fray slowly into the still air; pale dust hangs over the trampled grass; a thin haze settles across the rooftops; the smoke thins as it spreads into the distance."
+- Duration 5s · Seed 107
+- `python video/animate_still.py --image assets/images/u3/5s24-ch03-mcq-48.jpg --prompt "The great rolling cloud of musket smoke billows and drifts across the village green; its ragged edges fray slowly into the still air; pale dust hangs over the trampled grass; a thin haze settles across the rooftops; the smoke thins as it spreads into the distance." --out video/ai_clips/vid-u3-05-lexington.mp4 --duration 5 --seed 107`
+
+**Shot 2 — Beat: Yorktown, 1781 — the decisive siege.** New PD: `assets/images/u3/surrender-cornwallis-yorktown.jpg` — Trumbull's "Surrender of Lord Cornwallis at Yorktown," 1820 (artist d. 1843) — churning clouds, billowing white surrender flag, American flag, dust.
+- Prompt (40w): "Heavy clouds drift and churn across the vast sky; the white surrender flag billows in the wind on its staff; the American flag ripples beside it; pale dust drifts across the trampled parade ground; light shimmers off the distant bayonets."
+- Duration 5s · Seed 108
+- `python video/animate_still.py --image assets/images/u3/surrender-cornwallis-yorktown.jpg --prompt "Heavy clouds drift and churn across the vast sky; the white surrender flag billows in the wind on its staff; the American flag ripples beside it; pale dust drifts across the trampled parade ground; light shimmers off the distant bayonets." --out video/ai_clips/vid-u3-05-yorktown.mp4 --duration 5 --seed 108`
+
+*(French-navy / Chesapeake beat → GAP: the Graves "Virginia Capes 1781" diagram is a schematic with ship icons and maneuver tracks — rejected, not a clip base.)*
+
+### vid-u3-06 — "Who Got Freedom?"
+Narrative question: The Revolution promised liberty — who actually received it?
+
+**Shot 1 — Beat: while liberty was declared, the plantation South deepened slavery (HOOK-adjacent).** New PD: `assets/images/u3/old-plantation-banjo-1780s.jpg` — "Slave dance to banjo" / "The Old Plantation" watercolor, c. 1780s, South Carolina — pale cloudy sky, distant fields, tree, slave quarters on the horizon. The figures stay frozen; only sky/grass/leaves/dust move.
+- Prompt (45w): "Pale clouds drift slowly across the hazy sky; the grass of the distant field ripples in a light breeze; leaves stir faintly on the tree at the yard's edge; dust motes hang in the warm afternoon air; a soft shimmer rises off the sunlit rooftops."
+- Duration 5s · Seed 109
+- `python video/animate_still.py --image assets/images/u3/old-plantation-banjo-1780s.jpg --prompt "Pale clouds drift slowly across the hazy sky; the grass of the distant field ripples in a light breeze; leaves stir faintly on the tree at the yard's edge; dust motes hang in the warm afternoon air; a soft shimmer rises off the sunlit rooftops." --out video/ai_clips/vid-u3-06-plantation.mp4 --duration 5 --seed 109`
+
+*(Abigail Adams opener and northern-emancipation beats → GAP: letter manuscripts and portraits are static; no PD ambient-capable image found.)*
+
+---
+
 ## Chapter 3.2 — Inventing the Republic
 
 ### vid-u3-07 — "The Government That Couldn't"
@@ -337,6 +417,54 @@
 - Prompt (54w): "Slow clouds drift across the pale sky above the tobacco fields; the broad leaves of the tobacco plants stir faintly in a warm breeze; fine dust hangs in the still air around the packing hogsheads; heat shimmer rises off the sun-baked ground while the distant tree line trembles almost imperceptibly at the field's edge."
 - Duration 5s · Seed 127
 - `python video/animate_still.py --image assets/images/u3/tobacco-plantation-virginia-1759.jpg --prompt "Slow clouds drift across the pale sky above the tobacco fields; the broad leaves of the tobacco plants stir faintly in a warm breeze; fine dust hangs in the still air around the packing hogsheads; heat shimmer rises off the sun-baked ground while the distant tree line trembles almost imperceptibly at the field's edge." --out video/ai_clips/vid-u3-09-slavery-bargains.mp4 --duration 5 --seed 127`
+
+## Chapter 3.3 — The Republic's First Decade
+
+### vid-u3-10 — "Hamilton vs. Jefferson"
+Narrative question: The founders agreed on independence — so why did they immediately start fighting each other?
+
+**Shot 1 — Beat: Hamilton's financial plan, the spark of the first party fight (HOOK).** New PD: `assets/images/u3/bank-of-the-united-states-birch-1799.jpg` — W. Birch & Son's 1799 engraving of the First Bank of the United States on Third Street, Philadelphia (NYPL scan) — colonnaded facade, chimneys, street scene.
+- Prompt (48w): "Thin clouds drift slowly across the pale engraved sky above the Bank of the United States; a faint wisp of smoke rises from the tall brick chimneys behind the colonnade; dust motes drift through the still Third Street air; a light heat shimmer rises off the sunlit rooftops."
+- Duration 5s · Seed 130
+- `python video/animate_still.py --image assets/images/u3/bank-of-the-united-states-birch-1799.jpg --prompt "Thin clouds drift slowly across the pale engraved sky above the Bank of the United States; a faint wisp of smoke rises from the tall brick chimneys behind the colonnade; dust motes drift through the still Third Street air; a light heat shimmer rises off the sunlit rooftops." --out video/ai_clips/vid-u3-10-bank-plan.mp4 --duration 5 --seed 130`
+
+**Shot 2 — Beat: the Whiskey Rebellion (1794) tests federal power.** New PD: `assets/images/u3/whiskey-insurrection-devens.jpg` — Devens' "Famous Whiskey Insurrection in Pennsylvania," 19th-c. newspaper engraving — street mob with "NO TAX" / "DOWN WITH THE TAX" banners and a tarred-feathered effigy. Deliberately distinct from video1's Kemmelmeyer Washington-review clip (adjacent videos shouldn't share the identical hero visual).
+- Prompt (42w): "The white NO TAX banners held aloft over the packed street sway almost imperceptibly in a light breeze; the banner fabric ripples faintly; dust motes drift through the still gray air; a thin haze of dust hangs along the dark storefront facades."
+- Duration 5s · Seed 131
+- `python video/animate_still.py --image assets/images/u3/whiskey-insurrection-devens.jpg --prompt "The white NO TAX banners held aloft over the packed street sway almost imperceptibly in a light breeze; the banner fabric ripples faintly; dust motes drift through the still gray air; a thin haze of dust hangs along the dark storefront facades." --out video/ai_clips/vid-u3-10-whiskey-tax.mp4 --duration 5 --seed 131`
+
+**Shot 3 — Beat: first free-speech crisis — Alien & Sedition Acts (1798), answered by the Virginia/Kentucky Resolutions.** Catalog: `assets/images/u3/original-misc-xyz-01.jpg` — "Property Protected — à la Françoise," American cartoon, 1798 (LOC) — the XYZ-affair-era / Quasi-War French-hostility context that triggered the Acts.
+- Prompt (42w): "Pale clouds drift slowly across the washed-out engraved sky above the hilltop; dust motes drift through the still air; a faint haze hangs over the distant domed monument on the hill; the small flag above it trembles almost imperceptibly in the breeze."
+- Duration 5s · Seed 132
+- `python video/animate_still.py --image assets/images/u3/original-misc-xyz-01.jpg --prompt "Pale clouds drift slowly across the washed-out engraved sky above the hilltop; dust motes drift through the still air; a faint haze hangs over the distant domed monument on the hill; the small flag above it trembles almost imperceptibly in the breeze." --out video/ai_clips/vid-u3-10-sedition-crisis.mp4 --duration 5 --seed 132`
+
+### vid-u3-11 — "Becoming American"
+Narrative question: What made people on the frontier feel "American" instead of Virginian or Pennsylvanian?
+
+**Shot 1 — Beat: migration over the Appalachians, the shared movement west (HOOK).** New PD: `assets/images/u3/boone-cumberland-gap-bingham-1851.jpg` — George Caleb Bingham, "Daniel Boone Escorting Settlers through the Cumberland Gap," 1851–52 (artist d. 1879; later depiction of the 1770s event) — settlers emerging from a dark mountain pass, dramatic churning sky, pine forest.
+- Prompt (40w): "Heavy clouds churn and roll slowly over the dark mountain gap; pale mist drifts through the rocky pass between the ridges; the tall pine branches stir in a rising breeze; leaves and fine dust swirl along the shadowed forest floor."
+- Duration 5s · Seed 133
+- `python video/animate_still.py --image assets/images/u3/boone-cumberland-gap-bingham-1851.jpg --prompt "Heavy clouds churn and roll slowly over the dark mountain gap; pale mist drifts through the rocky pass between the ridges; the tall pine branches stir in a rising breeze; leaves and fine dust swirl along the shadowed forest floor." --out video/ai_clips/vid-u3-11-boone-gap.mp4 --duration 5 --seed 133`
+
+**Shot 2 — Beat: American art and architecture — the new federal city takes shape.** New PD: `assets/images/u3/capitol-in-1800-glenn-brown.jpg` — "The Capitol in 1800," from advanced proof of plate 38, Glenn Brown's History of the United States Capitol (LOC) — unfinished columned Capitol line drawing. Caveat: sparse line drawing with thin ambient elements — the weakest of this chapter's set for visible motion.
+- Prompt (40w): "Thin sketched clouds drift slowly across the pale sky above the Capitol's columned facade; dust motes drift through the still morning air; a faint heat shimmer rises off the barren lawn; a thin haze hangs over the distant construction debris."
+- Duration 5s · Seed 134
+- `python video/animate_still.py --image assets/images/u3/capitol-in-1800-glenn-brown.jpg --prompt "Thin sketched clouds drift slowly across the pale sky above the Capitol's columned facade; dust motes drift through the still morning air; a faint heat shimmer rises off the barren lawn; a thin haze hangs over the distant construction debris." --out video/ai_clips/vid-u3-11-capitol-1800.mp4 --duration 5 --seed 134`
+
+### vid-u3-12 — "Revolution: What Actually Changed?"
+Narrative question: After all the blood and philosophy, what was genuinely different in 1800 — and what wasn't?
+
+**Shot 1 — Beat: what *wasn't* different — slavery intact on a South Carolina plantation (HOOK).** New PD: `assets/images/u3/old-plantation-john-rose-1790.jpg` — "The Old Plantation" (slave dance to banjo), attributed to John Rose, c.1785–1790 — enslaved community between plantation cabins with the big house, slave row, tree line, river with a tiny sailboat. Era-exact for the lesson. The figures stay frozen; the prompt animates only the environment.
+- Prompt (39w): "Pale clouds drift slowly across the washed sky above the plantation rooftops; a light breeze stirs the distant tree line; the small river glints and ripples past the far cabins; grass shimmers across the open fields between the buildings."
+- Duration 5s · Seed 135
+- `python video/animate_still.py --image assets/images/u3/old-plantation-john-rose-1790.jpg --prompt "Pale clouds drift slowly across the washed sky above the plantation rooftops; a light breeze stirs the distant tree line; the small river glints and ripples past the far cabins; grass shimmers across the open fields between the buildings." --out video/ai_clips/vid-u3-12-plantation-continuity.mp4 --duration 5 --seed 135`
+
+**Shot 2 — Beat: what *did* change — republican government and republican civic life.** New PD: `assets/images/u3/state-house-garden-birch-1799.jpg` — "State-House Garden, Philadelphia," W. Birch & Son, 1799 (LOC) — weeping willows and a great tree framing the State House garden gate, citizens strolling, lawn, pale sky.
+- Prompt (37w): "The weeping willow branches sway gently in a light breeze along the garden wall; leaves tremble across the great tree's broad canopy; grass ripples across the shaded lawn; pale clouds drift slowly over the State House rooftops."
+- Duration 5s · Seed 136
+- `python video/animate_still.py --image assets/images/u3/state-house-garden-birch-1799.jpg --prompt "The weeping willow branches sway gently in a light breeze along the garden wall; leaves tremble across the great tree's broad canopy; grass ripples across the shaded lawn; pale clouds drift slowly over the State House rooftops." --out video/ai_clips/vid-u3-12-state-house-change.mp4 --duration 5 --seed 136`
+
+---
 
 ## Chapter 4.1 — The Young Republic
 
@@ -424,12 +552,6 @@
 
 ---
 
-## PENDING — Chapters 3.1 and 3.3
-
-Sections for Chapter 3.1 (vid-u3-01…vid-u3-06) and Chapter 3.3 (vid-u3-10…vid-u3-12) land here when their planning passes complete. Seeds reserved: 100–119 (ch3.1), 130–139 (ch3.3).
-
----
-
 ## GAP LOG (all chapters)
 
 Beats with no sourceable PD image — left unshot rather than filled decoratively:
@@ -447,17 +569,32 @@ Beats with no sourceable PD image — left unshot rather than filled decorativel
 - vid-u4-02 election of 1800 / shrinking-government beats: no ambient-suitable PD images.
 - vid-u4-03 Marbury / judicial-review beat + Missouri Compromise backdrop: no ambient-suitable PD images.
 - vid-u4-04 impressment beat: no PD depiction exists; the Chase of the Constitution shot is a flagged thematic stand-in (optional).
+- vid-u3-01 Albany Plan beat: Franklin's "Join or Die" (1754) is a flat woodcut of a segmented snake on blank paper — zero ambient elements; no PD alternative.
+- vid-u3-02 Proclamation of 1763 beat: the proclamation is a document; maps are static — no ambient-capable PD image.
+- vid-u3-03 Stamp Act & First Continental Congress beats: only static cartoons, documents, broadsides.
+- vid-u3-04 Common Sense / Locke / Montesquieu second shot: only static title pages and portraits in PD (video ships with 1 shot).
+- vid-u3-05 French navy (Chesapeake) beat: Graves' "Virginia Capes 1781" is a schematic battle diagram — ship icons, maneuver tracks, dense text — rejected as a clip base, not cataloged.
+- vid-u3-06 Abigail Adams "remember the ladies" opener: letter manuscript and portraits are static (video ships with 1 shot).
+- vid-u3-06 northern gradual emancipation beat: documents, medallions, portraits only.
+- vid-u3-10 Jay's Treaty beat: portraits and document images only — no ambient-capable PD image.
+- vid-u3-10 first party fight over the French Revolution: no ambient-capable PD image found.
+- vid-u3-10 Whiskey Rebellion: Kemmelmeyer's WhiskeyRebellion.jpg REJECTED as a new image — it is the same painting already cataloged as `aiclip-video1-whiskey-kemmelmeyer` (video1's hero visual); adjacent videos must not share identical hero visuals. The Devens engraving was used instead.
+- vid-u3-11 Northwest Ordinance beat: catalog map `barrons-2027-pt1-04` is a static map with zero ambient elements.
+- vid-u3-11 Webster's dictionary / print culture / schools / republican motherhood beats: only title pages, portraits, interior scenes — no ambient-motion elements (video ships with 2 shots).
+- vid-u3-12 Native dispossession accelerating: no PD depiction with ambient-motion elements found.
+- vid-u3-12 women excluded: no PD depiction with ambient-motion elements found.
 - Rejected near-misses (never substituted): de Bry Florida column (wrong colony), Pyle "Burning of Jamestown" for Native-agency beats (wrong event — it depicts Bacon's Rebellion), catalog West Indies sugar plantation for mainland-slavery beats (wrong geography), "Westward the course of empire" 1868 print (anachronistic for 1800–1812), Birch First Bank engraving (wrong bank — McCulloch concerned the Second Bank), Brookes slave-ship stowage plan (flat diagram), Gilpin Taos mission (dubious PD + 521px), "No restrictions" Flickr Taos photo (not "Public domain").
 
 ## Verification summary (honest partition)
 
 **Verified in code / by hand on this machine:**
-- All 47 prompts ran through `animate_still.check_prompt_safety`: 47/47 pass, zero failures at plan time (several drafts were rewritten by the planning agents for banned words — "dance", "figure", "figures", "marching", "runs", "troop" — and re-run clean).
-- All prompts 35–60 words (verified by count).
-- All 21 new images: downloaded from upload.wikimedia.org / thumb.wikimedia.org, valid JPEG/WebP-decoded, PIL-verified, dimensions recorded.
-- PD licenses: 19 new images verified "Public domain" via the Commons API (LicenseShortName). 2 images carry "CC0" (Huys caravel fleet c.1565; 1899 Virginia landing illustration) — CC0 is a public-domain dedication, and both works are independently PD (artist d.1562 / published 1899 pre-1930); kept with the flag in their catalog license_note.
-- New images visually read: the planning agents read every base image they used (catalog + new) with the read tool and confirmed prompt elements are actually visible; the coordinator spot-verified the mechanism (PIL dimensions + file validity) for all 21.
-- Seeds: unique per clip within chapters (40–149 ranges, no collisions in the planned set).
+- All 64 prompts ran through `animate_still.check_prompt_safety`: 64/64 pass, zero failures at plan time (several drafts were rewritten by the planning agents for banned words — "dance", "figure", "figures", "marching", "runs", "troop" — and re-run clean). The coordinator re-ran all 64 from the final file text before shipping.
+- All prompts 35–60 words (verified by count; observed range 36–48).
+- All 33 new images: downloaded from upload.wikimedia.org / thumb.wikimedia.org, PIL-valid, dimensions recorded.
+- PD licenses: 31 new images verified "Public domain" via the Commons API (LicenseShortName). 2 images carry "CC0" (Huys caravel fleet c.1565; 1899 Virginia landing illustration) — CC0 is a public-domain dedication, and both works are independently PD (artist d.1562 / published 1899 pre-1930); kept with the flag in their catalog license_note. One non-PD upload rejected (Louisbourg NAM = CC BY-SA 4.0; the JCB upload of the same engraving is PD and was used). Kemmelmeyer's WhiskeyRebellion.jpg rejected as a new image — it duplicates video1's cataloged hero visual.
+- New images visually read: the planning agents read every base image they used (catalog + new) with the read tool and confirmed prompt elements are actually visible; the coordinator PIL-verified file validity + dimensions for all 33.
+- Seeds: unique across the whole plan (40–149 ranges used; verified no duplicates).
+- No duplicate catalog ids; every new `local_path` verified on disk. One genuine duplicate caught and deduped: ch3.1's vid-u3-01 hook reuses the existing `aiclip-ch32-philadelphia-prospect-1755` catalog image (bit-identical file) with a fresh prompt and seed — not a second entry.
 
 **Never ran:**
 - Actual clip generation — no GPU on this machine. The 5090 runs `animate_still.py` (always `--dry-run` first per the runbook). Expected ~1–4 min per 5s clip.
@@ -465,6 +602,10 @@ Beats with no sourceable PD image — left unshot rather than filled decorativel
 - Manifest `ai_clips` wiring — happens later, after video1's pattern is proven.
 
 **Known caveats carried into production:**
-- Lower-res base images: Timbuktu lithograph 974×771 (max available); Thulstrup 753×1125; Clermont 1171×867; Philadelphia 1755 prospect 1266×685; tobacco plantation 1759 739×493 (both used at original size, no upscaling).
+- Lower-res base images: Timbuktu lithograph 974×771 (max available); Thulstrup 753×1125; Clermont 1171×867; Philadelphia 1755 prospect 1266×685; tobacco plantation 1759 739×493 (both used at original size, no upscaling). Also sub-1920: Death of Wolfe 957×660; Old Plantation banjo watercolor 982×651; Whiskey Insurrection Devens 1391×591; Capitol in 1800 1536×1137; State-House Garden 1536×1272.
 - Border artifacts: Taos Pueblo (cabinet-card mount), Cahokia 1907 (film-frame scan border), Second Bank 1831 (large white print margin) — crop before animating.
 - Content caveats: tobacco-sheds-1670 may depict a non-Chesapeake plantation (do not claim Virginia); 1852 Eastham camp-meeting print is a Second-Great-Awakening-era stand-in for the First; vid-u4-04 shot 1 is a flagged thematic stand-in (optional).
+- Cross-video reuse: the Scull & Heap Philadelphia 1755 prospect is the base for two different clips (vid-u3-01 hook, seed 100; vid-u3-08 convention beat) — different prompts/seeds, same file; fine but don't render them identically.
+- Later depictions: Bingham's Cumberland Gap (1851–52) of a 1770s event; Devens' Whiskey Insurrection engraving (19th c.) of 1794; Currier's Tea Party (1846) of 1773 — iconic and genuine to their beats but not contemporary.
+- Composite sheet: the Philadelphia 1755 prospect carries map insets and title text below the prospect band — the prompt animates only the top band's elements.
+- Weakest substrate: Capitol in 1800 is a sparse line drawing with thin ambient elements; it passed all gates but may show little visible motion.
