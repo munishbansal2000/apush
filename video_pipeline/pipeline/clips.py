@@ -83,6 +83,18 @@ def _generate_meta(image: Path, prompt: str, output: Path, seconds: float,
     _run(command, "Meta UI image-to-video generation")
 
 
+def _check_prompt_safety(prompt: str, scene_id: str, repo_root: Path) -> None:
+    """Enforce the ambient-motion-only contract before any provider call."""
+    sys.path.insert(0, str(repo_root / "video"))
+    try:
+        from animate_still import check_prompt_safety
+    except ImportError as exc:
+        raise PipelineError(f"cannot load prompt safety filter: {exc}") from exc
+    ok, detail = check_prompt_safety(prompt)
+    if not ok:
+        raise PipelineError(f"ai_clip prompt rejected for scene {scene_id}: {detail}")
+
+
 def generate_clips(manifest: dict, manifest_path: Path, repo_root: Path,
                    provider_override: str, ltx_python: str,
                    force: bool = False, dry_run: bool = False) -> list[Path]:
@@ -121,6 +133,7 @@ def generate_clips(manifest: dict, manifest_path: Path, repo_root: Path,
             raise PipelineError(
                 f"ai_clip {scene['id']} is missing and neither the scene nor "
                 "clip_generation config selects a provider")
+        _check_prompt_safety(animation["prompt"], scene["id"], repo_root)
         print(f"[clips] {scene['id']}: {scene_provider}, {seconds:g}s")
         if dry_run:
             continue

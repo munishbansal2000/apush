@@ -69,17 +69,59 @@ BANNED_RES = [re.compile(p, re.IGNORECASE) for p in BANNED_PATTERNS]
 CAMERA_WORDS = re.compile(
     r"\b(zoom|pan|dolly|orbit|tilt|tracking shot|crane)\b", re.IGNORECASE)
 
+# Phrases that explicitly forbid camera motion or content change. Stripped
+# before the banned-pattern scan so negative instructions ("do not add",
+# "without removing", "keep the camera steady") never trip the filter.
+NEGATION_RES = [re.compile(p, re.IGNORECASE) for p in [
+    r"\bkeep the camera (steady|still|static|fixed)\b",
+    r"\b(static|fixed|locked) camera\b",
+    r"\bdo not\b[^,.;]*",
+    r"\bdon't\b[^,.;]*",
+    r"\bdoes not\b[^,.;]*",
+    r"\bdoesn't\b[^,.;]*",
+    r"\bnever\b[^,.;]*",
+    r"\bwithout\b[^,.;]*",
+    r"\bavoid\b[^,.;]*",
+]]
+
+# Camera-move instructions: rejected outright (the factory does its own
+# camera work; AI clips are static-camera by contract).
+CAMERA_MOVE_RES = [re.compile(p, re.IGNORECASE) for p in [
+    # any remaining mention of "camera" after static-camera phrases and
+    # negations are stripped is a move instruction ("the camera pans", ...)
+    r"\bcamera\b",
+    r"\b(push|pull)\s+(in|out)\b",
+    r"\b(zoom|zooms|zooming|pan|pans|panning|dolly|dollies|orbit|orbits|tilting?|tracking)\b",
+    r"\btracking shot\b",
+    r"\bcrane shot\b",
+]]
+
 
 def check_prompt_safety(prompt):
     """Return (ok, detail). ok=False means the prompt must not be used.
 
-    Importable by video/validate_video.py's AI-CLIP gate: the same function
-    enforces the rule at generation time and at validation time.
+    Importable by video/validate_video.py's AI-CLIP gate and by
+    video_pipeline/pipeline/clips.py: the same function enforces the rule
+    at generation time and at validation time.
+
+    Negation-aware: "do not add", "without removing", "keep the camera
+    steady" are stripped before the banned-pattern scan, so prohibitions
+    never trip the filter. Camera-move instructions are rejected outright.
     """
     if not prompt or not prompt.strip():
         return False, "prompt is empty"
+    scrubbed = prompt
+    for rx in NEGATION_RES:
+        scrubbed = rx.sub(" ", scrubbed)
+    for rx in CAMERA_MOVE_RES:
+        m = rx.search(scrubbed)
+        if m:
+            return (False,
+                    f"banned camera-move phrase {m.group(0)!r}: AI clips are "
+                    f"static-camera by contract; the factory does its own "
+                    f"camera work")
     for rx in BANNED_RES:
-        m = rx.search(prompt)
+        m = rx.search(scrubbed)
         if m:
             return (False,
                     f"banned content phrase {m.group(0)!r}: prompts may only "
@@ -93,8 +135,8 @@ def check_prompt_safety(prompt):
                 "smoke, clouds, flags, fire, mist, etc. "
                 f"(known words: {sorted(AMBIENT_KEYWORDS)})")
     detail = "ambient-motion prompt accepted"
-    if CAMERA_WORDS.search(prompt):
-        detail += ("; note: camera-move words detected -- the factory does "
+    if CAMERA_WORDS.search(scrubbed):
+        detail += ("; note: camera-adjacent word detected -- the factory does "
                    "its own camera work, so keep AI clips static-camera")
     return True, detail
 
