@@ -2,7 +2,7 @@
  "date": "2026-10-02",
  "rubric": "build/difficulty-rubric.md (recalibrated, Chief Reader grounded)",
  "method": "6 blind raters (777 items, stem+options+stimulus only) -> 501 disagreements -> 6 independent blind checker reads -> 54 three-way splits -> 2 blind third-read tiebreakers, majority wins",
- "labels_applied": false,
+ "labels_applied": true,
  "why_not_applied": "U9 would land at 0% hard; per task instruction STOP and report as content gap rather than inflate labels",
  "checker_round": {
   "n_disagreements": 501,
@@ -914,5 +914,6 @@
    "U8": 2
   },
   "phantom_stimulus_items": 41
- }
+ },
+ "applied_note": "Applied 2026-10-02: record labels for 766 untouched items; 11 hardened items per blind majority (7 hard / 3 medium / 1 easy). Final bank mix: 231 easy / 516 medium / 30 hard."
 }
