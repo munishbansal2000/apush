@@ -1,8 +1,8 @@
 # APUSH Video Series — PLAYBOOK
 
-**Version:** 1.1 (2026-10-02, Workstream A follow-up: complete animation vocabulary, no-empty-screen standing rule, `map_scene` build item)
-**Status:** Canonical where grounded in shipped code; fields not backed by a renderer are marked **PROPOSED**.
-**Grounding:** `video/render_narration_fish.py`, `video/pilot_cuba.py`, `video/build_video.py`, `video/motion.py`, `video/cuba_narration.json`, `video/manifests/*.json` (48 manifests), `build/engagement-playbook.md`, `tools/podcast-pipeline/tools/render_audio.py` (pause convention).
+**Version:** 1.2 (2026-10-02, FUN-CATALOG integration: engagement layer §6, specified-but-unbuilt primitive inventory, TTS direction tags)
+**Status:** Canonical where grounded in shipped code; fields not backed by a renderer are marked **PROPOSED**; FUN-CATALOG-specified primitives are marked **SPECIFIED-BUT-UNBUILT** (never presented as existing).
+**Grounding:** `video/render_narration_fish.py`, `video/pilot_cuba.py`, `video/build_video.py`, `video/motion.py`, `video/cuba_narration.json`, `video/manifests/*.json` (48 manifests), `build/engagement-playbook.md`, `tools/podcast-pipeline/tools/render_audio.py` (pause convention), `video/FUN-CATALOG.md` (26 ranked engagement techniques).
 
 **Format:** 1080×1920 vertical. Every video is built in four stages:
 1. Author narration JSON → 2. Render TTS to `video/audio/<video>/` MP3s → 3. Render visual scenes sized to measured MP3 durations → 4. Assemble with `build_video.py`.
@@ -37,6 +37,23 @@ Pause tags from the podcast pipeline apply here, since both use the same fish-sp
 | `[long pause]` | 1500 ms | Beat before the significance landing, after the hook |
 
 Grounded in `tools/podcast-pipeline/tools/render_audio.py` `_PAUSE_MS = {"short pause": 450, "pause": 750, "long pause": 1500}`. Compatibility note: `render_narration_fish.py` passes `text` straight to fish, which does not interpret pause tags — so tags must be **split out before TTS**: render each text chunk separately, then assemble silence of the tagged length between chunks, exactly like the existing multi-part key stitching (`beat1b`: narrator → kennedy → narrator). This is a PROPOSED extension to `render_narration_fish.py` until someone implements the split-and-stitch step; the tag names and ms values are canonical.
+
+### TTS direction tags (PROPOSED — FUN-CATALOG #20)
+
+Script-level performance direction, parsed *before* TTS (pending a parser + segment-handling step in `render_narration_fish.py`; the fish rendering itself is unchanged). Strategic silence is the most underused tool in TTS video — a 0.8s pause before the answer lands harder than any graphic.
+
+| Tag | Effect |
+|---|---|
+| `[pause:N]` | Silence of N seconds (e.g. `[pause:0.8]`; `[pause:3]` for the viewer-question card, FUN-CATALOG #8) |
+| `[beat]` | 0.4s micro-pause (comic timing, pre-quote beats) |
+| `[slow]` / `[fast]` | Rate shift for a clause (`[fast]` + `atempo=1.25` renders rapid-fire lists, FUN-CATALOG #24) |
+| `[emphasis]` | Render the clause as its own segment so it can be slightly louder/slower in the mix |
+| `[TIP]...[/TIP]` | Exam-tip aside (FUN-CATALOG #4) → gold `pop` slam + `tip_sting` SFX cue |
+| `[MEMORIZE]` | "Remember this" memory-cue card cue (FUN-CATALOG #5) |
+
+**Reconciliation:** the `[short pause]`/`[pause]`/`[long pause]` names above stay valid — the parser treats them as `[pause:0.45]`/`[pause:0.75]`/`[pause:1.5]` aliases. The `[pause:N]` form is the forward convention for new scripts. Until the parser ships, write pauses as sentence breaks (PRODUCTION-GUIDE Part 3).
+
+**Voice-field generalization (FUN-CATALOG #3/#25):** the `voice` field may hold any registered voice — `narrator`, figure-named quote voices (`"kennedy"`, `"columbus"` — the name is the casting record), or roles like `"skeptic"` for debate segments. Each voice gets its own reference audio + exact transcript. The two-behavior routing in `render_narration_fish.py` today is the mechanism; the generalization is the voice-registry convention on top of it. New voices register with the renderer (cf. `validate_video.py` `ALLOWED_VOICES`).
 
 ### Word budgets (measured from Cuba v4, 398 words total)
 
@@ -113,7 +130,7 @@ Each annotation is `(at, dur, kind, kwargs)`; `at` and `dur` in seconds.
 
 ### Non-canonical fields
 
-The following are NOT in `motion.py` or any builder and are **PROPOSED only**: `duration_pad` (builder parameter, not in motion), `footer` on bullet slides is in motion (canonical), any `music`/`sfx` field, any per-scene `emphasis` styling, and any `callback_ref` field (callbacks are written into narration text, not metadata).
+The following are NOT in `motion.py` or any builder and are **PROPOSED only**: `duration_pad` (builder parameter, not in motion), `footer` on bullet slides is in motion (canonical), any `music`/`sfx` field, any per-scene `emphasis` styling, and any `callback_ref` field (callbacks are written into narration text, not metadata). Engagement-layer pipeline cues (FUN-CATALOG §6) are also PROPOSED until their pipeline steps ship: manifest `sfx` timestamp cues (#18/#19), `gag: <gag_id>` asset cues (#9), `callbacks: [{to_video, beat_ref, line}]` (#26). Do not author them into manifests until the consuming step exists.
 
 ---
 
@@ -186,9 +203,24 @@ Every file in `video/manifests/*.json` — all 48 reconciled into this one schem
 - `assemble(scenes, audios, out, fps=30)` — concatenates with 0.35s crossfades (`padding=-0.2`); per-scene narration auto-placed at overlap-adjusted scene starts (audio never bleeds into the wrong visual); MP4 with AAC. `assert len(scenes) == len(audios)`. Visual timing ALWAYS follows measured audio.
 - `build_video.py` (grading-video path): renders each stage's PNG from `STAGES`, measures each MP3 with ffprobe, sizes each stage to the measured duration (or duration/share), encodes per-stage segments, concats, muxes the full narration track. `--out` overrides the manifest `out`.
 
-**REQUIRED BUILD ITEM — general `map_scene` (PROPOSED — not in `motion.py` yet):**
-- `cuba_map_scene(dur, caption="")` is Cuba-specific (hard-coded CIA 1962 map, "90 miles to Florida" overlay, pulsing missile-site marker). It is **not canonical** — do not treat it as the vocabulary's map primitive. Reimplement the Cuba beat on `map_scene` once built.
-- Required spec: `map_scene(map_img, dur, points=None, routes=None, caption="")` — `map_img`: local repo path (required), the base map image; `points`: list of `(cx, cy, label)` in 0..1, gold ripple callouts landing in sequence (callout_scene-style); `routes`: list of polylines `[(x0,y0),(x1,y1),...]` in 0..1, drawn animatedly across the duration — territory-expansion arrows, migration routes, battle-movement lines; `caption`: overlay caption. Use for expansion / migration / battle maps. Required before any map-driven video beyond the Cuba pilot.
+**SPECIFIED-BUT-UNBUILT primitives (FUN-CATALOG specs — not in `motion.py` yet):**
+Do NOT reference these in build scripts, content JSON, or manifests until implemented. `validate_video.py`'s `CANONICAL_PRIMS` deliberately excludes them — that exclusion is intentional, not an oversight.
+
+- `map_scene(map_img, dur, moves)` — MODERATE (~100 lines). **Canonical spec is FUN-CATALOG #17's — it wins over the playbook v1.1 sketch** (`map_scene(map_img, dur, points=None, routes=None, caption="")` from 5978e39, now retired). `map_img`: local repo path (required), the base map image; `moves`: list of `(path_points, at, color, kind)` — `path_points`: polyline in 0..1 coords; `at`: seconds when the move starts; `color`: gold `(233,196,106)` default; `kind` ∈ {`arrow`, `dots`, `fill`}: `arrow` = progressive path draw (troop movements, voyages, migration routes), `dots` = marching-dot markers with pulse, `fill` = territory shading animating in (Louisiana Purchase, Mexican Cession). New frame function drawing progressive paths + pulsing markers; composes the `cuba_map_scene` technique. Why the catalog won: per-move start timing (`at`), per-move color, and the `fill` kind (territory shading — also required by PRODUCTION-GUIDE's engine backlog) were missing from the v1.1 sketch; the `caption` param moves to the annotate layer (`label`) instead of living on the primitive. `cuba_map_scene(dur, caption="")` stays Cuba-specific and **not canonical** — reimplement the Cuba beat on `map_scene` once built. Required before any map-driven video beyond the Cuba pilot.
+- `myth_stamp(base_clip, at, dur, myth_text, correction)` — TRIVIAL (~40 lines). Composes `annotate` kind `'pop'` (rotated red tile) + `overlay_text` for the correction + manifest `sfx: "stamp_thud"` cue. FUN-CATALOG #10. Max 2 per video — scarcity preserves punch.
+- `chapter_bar(base_clip, segments)` — TRIVIAL (~45 lines). `segments` = list of `(label, start, end)`; persistent thin gold progress bar with the current chapter highlighted; composes per-chapter `overlay_text`-style baked frames. Chapter cards themselves are the existing `title_card`. FUN-CATALOG #12.
+- `counter_scene(target, dur, label, bg_img, prefix="", suffix="")` — TRIVIAL (~40 lines). New frame function: interpolated number with easing, big tabular numerals in gold, centered; composes `_bg_base` + `text_rgba`. `bg_img` REQUIRED (no-empty-screen). **Replaces the bible's unbuilt `counter_scene` placeholder with a real spec.** FUN-CATALOG #13.
+- `vs_scene(img_left, img_right, dur, name_left, name_right)` — TRIVIAL (~45 lines). Frame splits; two portraits slide in from opposite sides; names slam under each; `annotate` kind `'pop'` for the center "VS" badge. Composes `kb_scene` halves. FUN-CATALOG #15.
+- `wipe_scene(img_a, img_b, dur, label_a, label_b)` — MODERATE (~70 lines). New frame function: two `kb_scene`-style bases composited with a moving vertical mask + gold edge line + labels. The clearest visual form of causation and change-over-time. FUN-CATALOG #14.
+- `skit_scene(script_beats, dur)` — MODERATE (~90 lines + one-time original character art). Flat-color background; speech-bubble tiles drawn per beat with `text_rgba`; simple original PIL character shapes (circles/rects — original, never clip art); multi-voice TTS segments timed to beats. Visuals deliberately simple — the *voices* carry it. FUN-CATALOG #16.
+
+**SPECIFIED-BUT-UNBUILT pipeline steps (outside `motion.py`):**
+- TTS direction-tag parser (FUN-CATALOG #20) — parse `[pause:N]`, `[beat]`, `[slow]`/`[fast]`, `[emphasis]`, `[TIP]`, `[MEMORIZE]`; split text into segments; render silence MP3s (`anullsrc`); `atempo` for rate tags; concatenate per the existing stitch logic in `render_narration_fish.py`. MODERATE. Unlocks #24.
+- Audio mix step (FUN-CATALOG #18/#19) — new `mix_audio.py` or `build_video.py` extension: ffmpeg `sidechaincompress` on a PD music bed ducked -14dB under narration + volume automation at chapter marks from the manifest; SFX stinger library (~15 original/PD/CC0 or numpy-synthesized effects) cued from manifest `sfx` timestamps, mixed low under narration. Music source: PD recordings (Musopen) or original loops — never commercial. MODERATE (cue plumbing trivial-moderate + one-time library curation).
+- Multi-voice narration generalization (FUN-CATALOG #3) — mechanism EXISTS in `render_narration_fish.py` (`voice` field per segment, reference audio per voice, stitching); the build item is the voice-registry convention + additional reference audios. TRIVIAL.
+- Gag-asset plumbing (FUN-CATALOG #9) — `video/assets/gags/<gag_id>.png` shared asset dir; manifest `gag: <gag_id>` cue; validator warns if a referenced gag asset is missing (validator change ships WITH the mechanism, not before). TRIVIAL.
+- Series-arc callbacks (FUN-CATALOG #26) — manifest metadata `callbacks: [{to_video, beat_ref, line}]`; validator checks `to_video` ids exist in COURSE-PLAN.md. No rendering code. TRIVIAL.
+- `GAGS.md` registry (FUN-CATALOG #21) — gag id, line template, asset, videos-used-in; script convention only, no code beyond #9's asset mechanism. TRIVIAL.
 
 ### Timing rules
 
@@ -260,7 +292,73 @@ Every file in `video/manifests/*.json` — all 48 reconciled into this one schem
 
 ---
 
-## 6. Build Checklist (per video)
+## 6. Engagement Layer (FUN-CATALOG integration)
+
+**Source:** `video/FUN-CATALOG.md` (2026-10-02) — 26 ranked, fully scriptable engagement techniques, the playbook team's build feed. Goal: beat Heimler's History on engagement. **Ranking basis:** expected engagement payoff per implementation cost. Entries #1–13 are the "do these first" tier. **Scriptability rule:** every ranked entry names its exact scripting mechanism — an existing `motion.py` primitive (name + params), a concrete new primitive (signature + composition + effort, in the SPECIFIED-BUT-UNBUILT inventory in §4), or a pipeline step. Zero copying: techniques and mechanics only, never anyone's lines/jokes/content.
+
+### Corpus measurements (205 APUSH Review transcripts, `~/workspace/apush-qc/fun-research/`)
+
+- **Pace: median 222 wpm** (short videos 197, long videos 230). Fast is the baseline. Implication for us: our TTS reference voice must be *energetic, not lecture-paced*, and direction should push perceived pace up via `[fast]` tags and punch-heavy delivery. The §1 word budget (900–1,200 words ≈ 150 wpm for 6–8 min) stays as written — it buys denser visual pacing per word — but the *delivery energy* must match a 222-wpm feel, not a lecture hall. This is a calibration item for the narrator reference-audio choice, not a script-length change.
+- **Point density: 1.31 explicit point-markers/min** ("first/second", "the key idea", "most important", "bottom line") — roughly one signposted point every 45 seconds. This is the "point-driven" cadence that is the user's stated bar. Technique #1 visualizes it: **≥1 point-slam annotate per 45 seconds of runtime**. (The 12s rule keeps motion alive; #1 makes every 45s window *land a point* — both rules run at once.)
+- **Catchphrase rituals:** 84 videos in one series open with the identical cold-open line; "get them brain cows milked" appears in ~80 videos; "catch you on the flip flop" as sign-off. Ritual > novelty for series identity → techniques #2 and #6. Our equivalents must be original wording, same mechanics.
+- **Memory cues:** "remember" = 249 hits, the corpus's #1 rhetorical device → technique #5 (memory-cue cards, 1–2 per video, never more — scarcity = weight).
+- **Questions: only 0.08/min** — a genuine gap in the niche → technique #8 (on-screen viewer questions, 1–2 per video).
+- **Exam-tip asides: 0.22/min** ("if you're writing…", "on the test…") — present but sparse, room to make them a branded signature → technique #4.
+- **Humor style:** vivid, slightly absurd similes, one image per punchline. Humor lives in the *writing*, not in gags with setups — fully scriptable, lexical, never cruel, never at historical suffering → techniques #9/#21 (gag registry + running jokes).
+- **Second-person: 1.21% of all words** — direct address is constant. Matches our ~15/1k-words rule.
+
+### The 26 ranked techniques (scripting mechanisms)
+
+"EXISTS" = a `motion.py` primitive verified in source (§4). "NEW" = SPECIFIED-BUT-UNBUILT (§4 inventory — exact signature there; do not reference until built). "PIPELINE" = a step in `render_narration_fish.py` / audio assembly. "SCRIPT" = a writing/template convention, no code.
+
+| # | Technique | Mechanism | Effort |
+|---|---|---|---|
+| 1 | Point-slam annotate layer (every 40–50s) | EXISTS: `annotate` kinds `term`/`label`/`point` — manifest notes `(at_seconds, dur, kind, kwargs)` per scene; ≥1 per 45s, ≤8-word slams | trivial |
+| 2 | Branded cold-open ritual (identical open, every video) | EXISTS: `title_scene` with fixed series title card + fixed opening line in script template; manifest scene 0 = series-open template | trivial |
+| 3 | Historical figures speak in their own voice | PIPELINE: narration JSON `voice` field per segment — mechanism EXISTS in `render_narration_fish.py`; build item = voice-registry convention + reference audios | trivial |
+| 4 | Exam-tip aside sting (2–3/video) | EXISTS: `annotate` kind `pop` + pipeline SFX cue `sfx: "tip_sting"`; script convention `[TIP]...[/TIP]` — tag parsing PROPOSED until #20 ships (interim: author as `pop` notes) | trivial (visual); tag parsing pending |
+| 5 | "Remember this" memory-cue cards (1–2/video) | EXISTS: `kinetic_text(phrase, dur, sub=..., bg_img=<topic image>)` — bg_img mandatory; script tag `[MEMORIZE]` | trivial |
+| 6 | Sign-off catchphrase ritual | EXISTS: script template (fixed closing line) + `overlay_text`/`kinetic_text` slam over end card; manifest final-scene template | trivial |
+| 7 | Kinetic word slams for key terms | EXISTS: `kinetic_text(phrase, dur, bg_img=<topic image>, color=gold)` | trivial |
+| 8 | On-screen viewer questions (1–2/video) | EXISTS: `title_card(text, dur, sub="pause and think", bg_img=...)` + silence segment (`[pause:3]` — parsing PROPOSED) + answer via `annotate` `point` or `bullet_slide` | trivial (visual); pause parsing pending |
+| 9 | Callback gag registry (cross-video running jokes) | EXISTS: `annotate` kind `pop` + shared asset dir `video/assets/gags/<gag_id>.png` + manifest `gag: <gag_id>`; validator warn ships WITH the mechanism | trivial |
+| 10 | "Common mistake" MYTH stamp (≤2/video) | NEW: `myth_stamp(base_clip, at, dur, myth_text, correction)` | trivial — SPECIFIED-BUT-UNBUILT |
+| 11 | Punch-in on every scene start | EXISTS: `punch_in(clip, amount=0.07, dur=0.5)` — apply in manifest assembler to every scene by default (opt-out flag, not opt-in) | trivial (one-line assembly default) |
+| 12 | Progress bar + chapter cards | NEW: `chapter_bar(base_clip, segments)` — `segments` = `(label, start, end)` list; chapter cards = existing `title_card` | trivial — SPECIFIED-BUT-UNBUILT |
+| 13 | Animated counters / tickers | NEW: `counter_scene(target, dur, label, bg_img, prefix="", suffix="")` | trivial — SPECIFIED-BUT-UNBUILT |
+| 14 | Before/after wipe reveal | NEW: `wipe_scene(img_a, img_b, dur, label_a, label_b)` — moving vertical mask + gold edge line | moderate — SPECIFIED-BUT-UNBUILT |
+| 15 | Versus face-off cards | NEW: `vs_scene(img_left, img_right, dur, name_left, name_right)` — composes `kb_scene` halves + `annotate` `pop` VS badge | trivial — SPECIFIED-BUT-UNBUILT |
+| 16 | Thought-bubble cutaway skit (1/video max) | NEW: `skit_scene(script_beats, dur)` — flat bg + speech-bubble tiles + original PIL character shapes + multi-voice TTS beats (mechanism #3) | moderate — SPECIFIED-BUT-UNBUILT |
+| 17 | Map-march animation | NEW: `map_scene(map_img, dur, moves)` — canonical spec in §4; generalizes `cuba_map_scene` | moderate — SPECIFIED-BUT-UNBUILT |
+| 18 | Music bed with ducking | PIPELINE: new audio mix step — `sidechaincompress` duck -14dB under narration, volume automation at chapter marks from manifest; PD music only (Musopen / original loops) | moderate — SPECIFIED-BUT-UNBUILT |
+| 19 | SFX stinger library (~15 effects) | PIPELINE: manifest `sfx` timestamp cues mixed in the same audio step as #18; PD/CC0 or numpy-synthesized | trivial-moderate — SPECIFIED-BUT-UNBUILT |
+| 20 | TTS direction tags | PIPELINE: parser in narration renderer — `[pause:N]`, `[beat]`, `[slow]`/`[fast]`, `[emphasis]`; silence via `anullsrc`, rate via `atempo`; **unlocks #24** | moderate — SPECIFIED-BUT-UNBUILT |
+| 21 | Running jokes seeded in narration | SCRIPT: `GAGS.md` registry (gag id, line template, asset, videos used in); rides on #9's asset mechanism | trivial |
+| 22 | Cliffhanger endings | SCRIPT: fixed closer block teasing next video's question + `title_scene(next_title, ...)` or `camera_path` teaser; course-plan order must be fixed so "next video" is deterministic | trivial |
+| 23 | Honest "one weird trick" framing | SCRIPT: one rubric-grounded move per technique video, honestly packaged; visual = `kinetic_text` slam + #4 exam-tip sting | trivial |
+| 24 | Speed-ramped rapid-fire lists | PIPELINE + visual: `[fast]` tag (#20) renders clause at `atempo=1.25`; `bullet_slide` small `stagger` (0.25) or sequential `annotate` `pop` timed to faster audio | moderate (rides on #20) |
+| 25 | Two-voice debate segments (1/video max) | PIPELINE + visual: `voice` field (#3) with two non-narrator references; visual = `vs_scene` (#15) + alternating `annotate` `label` bubbles | trivial once #3 + #15 exist |
+| 26 | Series-arc callbacks in the manifest | MANIFEST metadata: `callbacks: [{to_video, beat_ref, line}]`; validator checks `to_video` ids in COURSE-PLAN.md; no rendering code | trivial |
+
+### Build order (from the catalog)
+
+1. **Week 1 — all trivial, existing primitives (9 items):** #1 annotate density rule, #2 cold-open template, #5 memorize cards, #6 sign-off ritual, #7 word slams, #8 pause-questions, #11 punch-in default, #4 exam-tip stings, #21 gag registry. **Caveat (integration note):** #4 and #8's *visual* sides exist; their `[TIP]` / `[pause:N]` tag parsing is PROPOSED until the #20 direction-tag parser ships — author them as `pop` annotations + sentence-break pauses in the interim, and the cues will light up when the parser lands.
+2. **Next — trivial new primitives:** #10 myth stamp, #12 progress bar, #13 counters, #15 versus cards, #9 gag-asset plumbing.
+3. **Then — moderate:** #20 TTS direction tags (**unlocks #24**), #18 music ducking + #19 SFX library (one audio pipeline step), #14 wipe reveals, #17 map-march.
+4. **Last — moderate, highest craft cost:** #16 thought-bubble skits (one-time character art), #25 two-voice debates (needs extra reference audios).
+5. **Anytime — script/template only:** #22 cliffhanger endings, #23 honest-trick framing, #26 manifest callbacks (metadata only until validator support ships).
+
+### Integration notes (catalog-vs-playbook conflicts resolved)
+
+- **Word pace vs. word budget (open calibration, not a conflict to force):** corpus median 222 wpm vs. our 900–1,200-word / ~150 wpm budget. The catalog's own recommendation targets the *reference voice energy*, not the script length — so the budget stands, and the narrator casting (§1d in PRODUCTION-GUIDE) must pick an energetic reference. Revisit only if watch-time data says otherwise.
+- **12s rule vs. 45s point-slam rule:** both run. The 12s rule (≥1 annotation/beat per 12s) keeps motion alive; #1 (≥1 *point* slam per 45s) guarantees every window lands a signposted takeaway. A scene can satisfy the 12s rule with labels/pops while its one point-slam carries the beat's so-what.
+- **`counter_scene` naming collision:** the series bible proposed a `counter_scene` that was never built (PRODUCTION-GUIDE flagged it as nonexistent). The catalog now ships a real spec with the same name (`counter_scene(target, dur, label, bg_img, prefix="", suffix="")`) — this spec is canonical; the bible's placeholder is retired.
+- **Pause-tag naming:** catalog `#20` uses `[pause:N]`; the playbook's canonical podcast-derived names `[short pause]`/`[pause]`/`[long pause]` stay valid as `[pause:0.45]`/`[pause:0.75]`/`[pause:1.5]` aliases (§1). `[pause:N]` is the forward convention.
+- **What the validator deliberately excludes:** all NEW primitives and PROPOSED pipeline cues stay out of `validate_video.py`'s `CANONICAL_PRIMS` until implemented — flagging them as unknown would be correct behavior for unbuilt work.
+
+---
+
+## 7. Build Checklist (per video)
 
 1. Author narration JSON (`video/<name>_narration.json`): `key`/`voice`/`text` segments, ≤3 beats, word budgets above, ≥1 callback, significance hammer on every beat.
 2. Render TTS with `render_narration_fish.py` (5090, fish-speech + torch) → `video/audio/<name>/<key>.mp3` (128k). Multi-voice keys stitched via ffmpeg concat. Pause tags split out, silence stitched in (PROPOSED — until implemented, write pauses as sentence breaks).

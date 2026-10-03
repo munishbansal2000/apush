@@ -2,7 +2,7 @@
 
 **Series:** APUSH Explained — motion-graphic explainer videos for the Fall 2026 CED (May 2027 exam). 9:16 vertical, 1080×1920, 30fps.
 **Status:** Template + 3 worked exemplar production rows (not scripts — narration scripts are a later build step).
-**Companion docs (read first):** `video/PLAYBOOK.md` (Workstream A — canonical where grounded in shipped code: TTS/narration JSON, content-JSON schema, manifest schema, timing rules, 6–8 min / 900–1,200-word format), `build/engagement-playbook.md` (the 205-transcript mechanics study + 5 differentiation openings), `video/motion.py` (the ONLY animation primitives — never invent others), `video/cuba_narration.json` (the Cuba v4 multi-voice exemplar), `video/render_narration_fish.py` (fish-speech TTS).
+**Companion docs (read first):** `video/PLAYBOOK.md` (Workstream A — canonical where grounded in shipped code: TTS/narration JSON, content-JSON schema, manifest schema, timing rules, 6–8 min / 900–1,200-word format; §6 = the 26 ranked engagement techniques from FUN-CATALOG), `video/FUN-CATALOG.md` (the ranked engagement-technique catalog — scripting mechanisms, corpus measurements, build order), `build/engagement-playbook.md` (the 205-transcript mechanics study + 5 differentiation openings), `video/motion.py` (the ONLY animation primitives — never invent others), `video/cuba_narration.json` (the Cuba v4 multi-voice exemplar), `video/render_narration_fish.py` (fish-speech TTS).
 **Video IDs below are PROVISIONAL** — taken from `build/video-series-bible.md` episodes 1–3. Workstream C's COURSE-PLAN.md is not in the repo yet; if it renumbers episodes, remap the IDs there, not here. The topics (U1 1.1–1.3) are the sensible defaults either way.
 
 ## Standing production rules (user's, non-negotiable)
@@ -49,7 +49,7 @@ jq '.entries[] | select(.subject | test("(?i)middle passage|slave ship|brookes")
 
 ## 1b. Rendering plan: pedagogical mapping (complete, inventoried from `video/motion.py`)
 
-Use ONLY these primitives. Do not invent scene types. The bible's `counter_scene`/`chart_scene`/`split_scene` were never built — they don't exist in `motion.py`.
+Use ONLY these primitives. Do not invent scene types. New primitives specified in FUN-CATALOG (see the SPECIFIED-BUT-UNBUILT inventory in PLAYBOOK §4 — `myth_stamp`, `chapter_bar`, `counter_scene`, `vs_scene`, `wipe_scene`, `skit_scene`, `map_scene`) are NOT available until built; don't reference them in production rows. The bible's old `counter_scene` placeholder is retired — replaced by the catalog's real spec; `chart_scene`/`split_scene` remain unspecified and unbuilt.
 
 | Intent | Primitive | Key params | Notes |
 |---|---|---|---|
@@ -57,7 +57,7 @@ Use ONLY these primitives. Do not invent scene types. The bible's `counter_scene
 | Sequences / causation chains | `timeline_scene` | `events=[(label, caption)]`, `title`, `bg_img` REQUIRED | Dots + labels pop in left→right in sync, alternating above/below the rail. Use for "road to X", life-cycle, cause chains. |
 | Documents / photos — the sourcing move | `doc_zoom` | `img_path`, `highlight_box=(x0,y0,x1,y1)` in 0..1, `caption` | Slow push-in; the gold `highlight_box` fades in at 35% of duration, landing on the key passage AS the narration quotes it. This is document-teardown / SAQ-sourcing practice smuggled into content. |
 | Image analysis — "look at this detail" | `callout_scene` | `img_path`, `points=[(cx,cy,label)]` in 0..1, `caption` | Expanding gold ripple rings land on points in sequence, with labels. For paintings, cartoons, multi-panel images (casta sets). |
-| Geography / expansion / migration | ⚠️ GAP — no general map primitive | — | `cuba_map_scene` is a Cuba-1962 one-off, NOT reusable. Until the engine ships a general `map_scene` (animated route-draw + territory shading over an arbitrary PD map image), the recipe is: `camera_path` over a PD map image with waypoints tracing the route (e.g. Columbus's four voyages), or `callout_scene` with labeled points on the map. Log the missing primitive as engine backlog; don't fake it with a bespoke hard-coded scene. |
+| Geography / expansion / migration | ⚠️ GAP — no general map primitive | — | `cuba_map_scene` is a Cuba-1962 one-off, NOT reusable. The canonical spec is `map_scene(map_img, dur, moves)` (FUN-CATALOG #17, PLAYBOOK §4 — wins over the playbook v1.1 sketch: per-move `at` timing, per-move color, `kind` ∈ {`arrow`, `dots`, `fill`} for routes AND territory shading). Until the engine ships it, the recipe is: `camera_path` over a PD map image with waypoints tracing the route (e.g. Columbus's four voyages), or `callout_scene` with labeled points on the map. Log the missing primitive as engine backlog; don't fake it with a bespoke hard-coded scene. |
 | Definitions / key terms | `annotate` kind `'term'` | `term`, `gloss` | Lower-third key-term card + gloss, gold bar. The memory-device move: name the term, then repeat it 5–8× in the narration. |
 | Verdicts / "so what" | `kinetic_text` (big) or `annotate` kind `'point'` (card) | `phrase` + `sub`; `bg_img` REQUIRED for kinetic | Spring-overshoot slam (`ease_out_back`). Use for the significance hammer: fact → "the point is" → consequence, one slamming line. |
 | Fun beats | `annotate` kind `'pop'` | `text` | Giant tilted word-slam. Lexical humor only — 8–10 signature intensifiers used consistently, never jokes with setups, never memes. |
@@ -128,6 +128,37 @@ Use ONLY these primitives. Do not invent scene types. The bible's `counter_scene
 
 **What makes it fun to listen to:** the voice CHANGE when a historical figure speaks (the ear perks up); enumeration momentum ("first… second…" pulls you forward); contrast bursts (past-tense story, then a 20-second present-tense immersion, then back); the significance slam landing like a verdict; callbacks that reward watching in order. It should feel like one continuous story across 36 episodes, not 36 lectures.
 
+**Technique selection (per-video direction — fill this in at the production-row step, not the script step).** Technique choice is a visual/structural decision. For each video, the director marks which FUN-CATALOG techniques the video uses. `#1–13` are the "do these first" tier — every video should carry most of them; `#14–26` are picked where the content earns them. Statuses: `uses` (in the rendering plan), `planned` (needs an unbuilt primitive/pipeline step — flag it), `should` (fits this video, not yet in the plan), `—` (doesn't fit). Copy this table into each production row and fill the middle column.
+
+| # | Technique | This video | Note |
+|---|---|---|---|
+| 1 | Point-slam annotate layer (every 40–50s) | | ≥1 ≤8-word slam per 45s |
+| 2 | Branded cold-open ritual | | identical open, every video |
+| 3 | Historical figures in their own voice | | `voice` per segment, figure-named |
+| 4 | Exam-tip aside sting (2–3/video) | | `[TIP]` tag; `pop` + sting |
+| 5 | "Remember this" memory-cue cards (1–2/video) | | `[MEMORIZE]` tag |
+| 6 | Sign-off catchphrase ritual | | identical close, every video |
+| 7 | Kinetic word slams for key terms | | `kinetic_text` + bg_img |
+| 8 | On-screen viewer questions (1–2/video) | | `title_card` + `[pause:3]` |
+| 9 | Callback gag registry | | `gags/<gag_id>.png` |
+| 10 | MYTH stamp (≤2/video) | | UNBUILT primitive |
+| 11 | Punch-in on every scene start | | assembler default |
+| 12 | Progress bar + chapter cards | | UNBUILT primitive |
+| 13 | Animated counters / tickers | | UNBUILT primitive |
+| 14 | Before/after wipe reveal | | UNBUILT primitive |
+| 15 | Versus face-off cards | | UNBUILT primitive |
+| 16 | Thought-bubble cutaway skit | | UNBUILT primitive |
+| 17 | Map-march animation | | UNBUILT primitive |
+| 18 | Music bed with ducking | | UNBUILT pipeline step |
+| 19 | SFX stinger library | | UNBUILT pipeline step |
+| 20 | TTS direction tags | | UNBUILT pipeline step |
+| 21 | Running jokes (GAGS.md) | | script convention |
+| 22 | Cliffhanger endings | | script template |
+| 23 | Honest "one weird trick" framing | | technique videos only |
+| 24 | Speed-ramped rapid-fire lists | | rides on #20 |
+| 25 | Two-voice debate segments | | needs #3 + #15 |
+| 26 | Series-arc callbacks in manifest | | metadata only |
+
 # Part 2 — Exemplar production rows (NOT scripts)
 
 Each row is the complete production recipe for one video: assets, gaps, scene-by-scene rendering plan, quotes, TTS casting, energy direction. The narration script is written FROM the row in a later build step.
@@ -180,6 +211,36 @@ Each row is the complete production recipe for one video: assets, gaps, scene-by
 **Beats:** present-tense immersion burst for the 1492 landing ("It's October 12th. You're on the deck…"); uncertainty beat on 1491 population estimates ("historians still argue about the numbers — and the argument matters"); the significance hammer on every beat; key-term repetition ("Columbian Exchange" 5–8×).
 **Callbacks:** none available (episode 1) — hook uses topic-announcement + intensifier. V02 will bridge back here.
 **Close:** ritual — final sentence → dual CTA (V02 + drill set) → sign-off.
+
+### Technique selection (FUN-CATALOG)
+
+| # | Technique | Status | Note |
+|---|---|---|---|
+| 1 | Point-slam annotate layer | uses | 12s-rule annotations throughout; ensure ≥1 point-slam per 45s |
+| 2 | Branded cold-open ritual | uses | start-ritual after hook — the identical line gets fixed at series level |
+| 3 | Multi-voice quotes | uses | `columbus`, `diaz`, `cortes` |
+| 4 | Exam-tip sting | should | add 2–3 `[TIP]` asides at script step (authored as `pop` notes until the tag parser ships) |
+| 5 | Memory-cue cards | uses | ~1 "remember this" flag |
+| 6 | Sign-off ritual | uses | ritual close formula |
+| 7 | Kinetic word slams | uses | hook, beat3b "90% GONE IN A CENTURY", significance |
+| 8 | Viewer questions | should | not in plan — add 1 pause-question at script step |
+| 9 | Callback gag registry | planned | series-level; pays off after 3+ videos |
+| 10 | MYTH stamp | — | no strong misconception beat in this video |
+| 11 | Punch-in | uses | hook, beat3b |
+| 12 | Progress bar | planned | UNBUILT — use `title_card` chapter cards meanwhile |
+| 13 | Counters | should | beat3b's "90% in a century" is a counter candidate once built |
+| 14 | Wipe reveal | — | (optional: pre/post-contact Americas at significance) |
+| 15 | Versus cards | — | no two-sided debate |
+| 16 | Skit | — | no dialogue scene planned |
+| 17 | Map-march | planned | UNBUILT — beat2a's `camera_path` route-trace is the interim substitute |
+| 18/19 | Music bed / SFX | planned | UNBUILT pipeline steps |
+| 20 | Direction tags | should | script step; parser pending |
+| 21 | Running jokes (GAGS.md) | planned | registry to be seeded |
+| 22 | Cliffhanger ending | uses (partial) | close names next video — tighten to the cliffhanger template |
+| 23 | Honest trick framing | — | content video, not technique video |
+| 24 | Rapid-fire lists | should | beat3's exchange-goods list is a `[fast]` candidate (rides on #20) |
+| 25 | Two-voice debate | — | — |
+| 26 | Series callbacks | — | episode 1 — nothing to call back to |
 
 ### Gaps (BLOCKERs)
 
@@ -234,6 +295,36 @@ Each row is the complete production recipe for one video: assets, gaps, scene-by
 **Beats:** uncertainty beat on the death-toll debate ("historians still argue about the numbers — here's what the argument is really about", feeds DBQ complexity); the `crown` voice reading the Requerimiento is the chill moment — let it land, then the narrator's significance hammer; key-term repetition ("encomienda", "casta" 5–8× each).
 **Callbacks:** V01 (Columbian Exchange → the labor demand that built the encomienda).
 **Close:** ritual — final sentence → dual CTA (V03 + drill set) → sign-off.
+
+### Technique selection (FUN-CATALOG)
+
+| # | Technique | Status | Note |
+|---|---|---|---|
+| 1 | Point-slam annotate layer | uses | 12s-rule annotations throughout; ensure ≥1 point-slam per 45s |
+| 2 | Branded cold-open ritual | uses | |
+| 3 | Multi-voice quotes | uses | `crown`, `lascasas` |
+| 4 | Exam-tip sting | should | add 2–3 `[TIP]` asides at script step |
+| 5 | Memory-cue cards | uses | |
+| 6 | Sign-off ritual | uses | |
+| 7 | Kinetic word slams | uses | hook "THE SPANISH MACHINE", significance |
+| 8 | Viewer questions | should | add 1 pause-question at script step |
+| 9 | Callback gag registry | planned | series-level |
+| 10 | MYTH stamp | should | UNBUILT — "encomienda = labor, not land" is a natural MYTH beat |
+| 11 | Punch-in | uses | hook |
+| 12 | Progress bar | planned | UNBUILT — `title_card` chapter cards meanwhile |
+| 13 | Counters | should | Potosí silver-output numbers in beat2a once built |
+| 14 | Wipe reveal | — | — |
+| 15 | Versus cards | — | (optional: crown-vs-colonist framing — not planned) |
+| 16 | Skit | — | — |
+| 17 | Map-march | — | no map beat in this video |
+| 18/19 | Music bed / SFX | planned | UNBUILT pipeline steps |
+| 20 | Direction tags | should | script step; parser pending |
+| 21 | Running jokes (GAGS.md) | planned | registry to be seeded |
+| 22 | Cliffhanger ending | uses (partial) | tighten to the cliffhanger template |
+| 23 | Honest trick framing | — | — |
+| 24 | Rapid-fire lists | should | the machine's three arms enumeration (rides on #20) |
+| 25 | Two-voice debate | should | Requerimiento (`crown`) vs Las Casas (`lascasas`) — needs #15 + extra reference audio |
+| 26 | Series callbacks | uses | V01 callback in context frame |
 
 ### Gaps
 
@@ -290,6 +381,36 @@ Each row is the complete production recipe for one video: assets, gaps, scene-by
 **Callbacks:** V02 (the machine → its motives); V01 (the exchange → what the motives produced).
 **Close:** ritual — final sentence → dual CTA (V04 + drill set) → sign-off.
 
+### Technique selection (FUN-CATALOG)
+
+| # | Technique | Status | Note |
+|---|---|---|---|
+| 1 | Point-slam annotate layer | uses | 12s-rule annotations throughout; ensure ≥1 point-slam per 45s |
+| 2 | Branded cold-open ritual | uses | |
+| 3 | Multi-voice quotes | uses | `columbus`, `hakluyt` |
+| 4 | Exam-tip sting | should | add 2–3 `[TIP]` asides at script step |
+| 5 | Memory-cue cards | uses | |
+| 6 | Sign-off ritual | uses | |
+| 7 | Kinetic word slams | uses | hook, beat3a "GLORY", significance "GOD. GOLD. GLORY." |
+| 8 | Viewer questions | should | add 1 pause-question at script step |
+| 9 | Callback gag registry | planned | series-level |
+| 10 | MYTH stamp | — | — |
+| 11 | Punch-in | uses | hook |
+| 12 | Progress bar | planned | UNBUILT — `title_card` chapter cards meanwhile |
+| 13 | Counters | — | — |
+| 14 | Wipe reveal | — | — |
+| 15 | Versus cards | should | UNBUILT — God-vs-gold as a face-off card is the natural pick |
+| 16 | Skit | — | — |
+| 17 | Map-march | — | (beat3b blocked on the charter image gap) |
+| 18/19 | Music bed / SFX | planned | UNBUILT pipeline steps |
+| 20 | Direction tags | should | script step; parser pending |
+| 21 | Running jokes (GAGS.md) | planned | registry to be seeded |
+| 22 | Cliffhanger ending | uses (partial) | tighten to the cliffhanger template |
+| 23 | Honest trick framing | — | — |
+| 24 | Rapid-fire lists | should | "God. Gold. Glory." is a `[fast]` rapid-fire candidate (rides on #20) |
+| 25 | Two-voice debate | — | — |
+| 26 | Series callbacks | uses | V02 + V01 callbacks |
+
 ### Gaps (BLOCKERs)
 
 | Gap | Beat | Subject needed | Candidate source | License | Status |
@@ -313,10 +434,15 @@ Each row is the complete production recipe for one video: assets, gaps, scene-by
 
 ## Engine backlog (for whoever owns `video/motion.py` next)
 
-1. **General `map_scene` primitive** — the pedagogical mapping has a real hole: `cuba_map_scene` is a Cuba-1962 one-off. Needed: a primitive that takes an arbitrary PD map image + route waypoints and draws the route animated (expansion, migration, marches, voyages), plus territory-shading for acquisitions (Louisiana Purchase, Mexican Cession). Until it ships, the recipe is `camera_path` over the map image (waypoints trace the route) or `callout_scene` points on the map.
-2. **Bible-proposed but unbuilt:** `counter_scene`, `chart_scene`, `split_scene` do not exist in `motion.py`. Don't reference them in production rows.
-3. **Pause-tag stitching** in `render_narration_fish.py` is PROPOSED (PLAYBOOK §1) — until implemented, write pauses as sentence breaks.
-4. **Emphasis markup** for TTS does not exist — no bold/italics convention; don't invent one in narration JSON.
+Full primitive specs live in the SPECIFIED-BUT-UNBUILT inventory (PLAYBOOK §4) — build from there, not from this list.
+
+1. **General `map_scene` primitive** (FUN-CATALOG #17) — the pedagogical mapping's real hole: `cuba_map_scene` is a Cuba-1962 one-off. Canonical spec: `map_scene(map_img, dur, moves)`, `moves` = `(path_points, at, color, kind ∈ {arrow, dots, fill})` — animated route-draw AND territory shading (Louisiana Purchase, Mexican Cession) over an arbitrary PD map image. Until it ships: `camera_path` over the map image (waypoints trace the route) or `callout_scene` points on the map.
+2. **Specified-but-unbuilt primitives** (FUN-CATALOG specs, PLAYBOOK §4): `myth_stamp` (#10), `chapter_bar` (#12), `counter_scene` (#13 — replaces the bible's unbuilt placeholder with a real spec), `vs_scene` (#15), `wipe_scene` (#14), `skit_scene` (#16). `chart_scene` / `split_scene` remain unspecified — don't reference them in production rows.
+3. **TTS direction-tag parser** (FUN-CATALOG #20, PLAYBOOK §1 PROPOSED) — parse `[pause:N]`, `[beat]`, `[slow]`/`[fast]`, `[emphasis]`, `[TIP]`, `[MEMORIZE]`; split segments; silence via `anullsrc`; `atempo` for rate. Unlocks #24. Until implemented: pauses as sentence breaks, tips as `pop` annotations.
+4. **Audio mix step** (FUN-CATALOG #18/#19) — music bed with sidechain ducking + SFX stinger library; manifest `sfx` timestamp cues. PD/CC0 or numpy-synthesized audio only.
+5. **Gag plumbing + registry** (FUN-CATALOG #9/#21) — `video/assets/gags/<gag_id>.png` dir + manifest `gag: <gag_id>` cue; validator warn ships with the mechanism. `GAGS.md` registry: gag id, line template, asset, videos-used-in.
+6. **Series-arc callbacks** (FUN-CATALOG #26) — manifest `callbacks: [{to_video, beat_ref, line}]`; validator checks `to_video` ids in COURSE-PLAN.md.
+7. **Emphasis markup** for TTS does not exist — no bold/italics convention; don't invent one in narration JSON (use `[emphasis]` once the parser ships).
 
 ## Per-video build checklist (the template, compressed)
 
