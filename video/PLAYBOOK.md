@@ -1,6 +1,6 @@
 # APUSH Video Series — PLAYBOOK
 
-**Version:** 1.0 (2026-10-02, Workstream A)
+**Version:** 1.1 (2026-10-02, Workstream A follow-up: complete animation vocabulary, no-empty-screen standing rule, `map_scene` build item)
 **Status:** Canonical where grounded in shipped code; fields not backed by a renderer are marked **PROPOSED**.
 **Grounding:** `video/render_narration_fish.py`, `video/pilot_cuba.py`, `video/build_video.py`, `video/motion.py`, `video/cuba_narration.json`, `video/manifests/*.json` (48 manifests), `build/engagement-playbook.md`, `tools/podcast-pipeline/tools/render_audio.py` (pause convention).
 
@@ -83,12 +83,12 @@ The content JSON is the per-video authoring file: one entry per scene, mapping a
 
 | `type` | `motion.py` function | Canonical params |
 |---|---|---|
-| `kinetic_text` | `kinetic_text(phrase, dur, sub, color, bg_img, darken)` | `phrase`, `sub`, `bg_img` |
-| `timeline` | `timeline_scene(events, dur, title, bg_img, darken)` | `events` = list of `[label, caption]`, `title`, `bg_img` |
+| `kinetic_text` | `kinetic_text(phrase, dur, sub, color, bg_img, darken)` | `phrase`, `sub`, `bg_img` **(REQUIRED)** |
+| `timeline` | `timeline_scene(events, dur, title, bg_img, darken)` | `events` = list of `[label, caption]`, `title`, `bg_img` **(REQUIRED)** |
 | `doc_zoom` | `doc_zoom(img_path, dur, highlight_box, caption, zoom)` | `img_path`, `highlight_box` `[x0,y0,x1,y1]` 0..1, `caption` |
-| `bullet_slide` | `bullet_slide(title, bullets, dur, footer, bg_img, darken, stagger)` | `title`, `bullets` list, `footer` |
-| `title_card` | `title_card(text, dur, sub, bg_img, darken)` | `text`, `sub` |
-| `typewriter` | `typewriter_scene(text, dur, bg_img, darken, sub)` | `text` (the quote), `sub` (attribution) |
+| `bullet_slide` | `bullet_slide(title, bullets, dur, footer, bg_img, darken, stagger)` | `title`, `bullets` list, `footer`, `bg_img` **(REQUIRED)** |
+| `title_card` | `title_card(text, dur, sub, bg_img, darken)` | `text`, `sub`, `bg_img` **(REQUIRED)** |
+| `typewriter` | `typewriter_scene(text, dur, bg_img, darken, sub)` | `text` (the quote), `sub` (attribution), `bg_img` **(REQUIRED)** |
 | `zoom_to` | `zoom_to(img_path, dur, cx, cy, end_zoom, zoom_dur, caption, highlight_box)` | `img_path`, `cx`, `cy` (0..1 focus point), `end_zoom`, `caption` |
 | `callout` | `callout_scene(img_path, dur, points, caption)` | `points` = list of `[cx, cy, label]` 0..1 |
 | `camera_path` | `camera_path(img_path, dur, waypoints, caption)` | `waypoints` = list of `[cx, cy, zoom]` 0..1 |
@@ -97,15 +97,17 @@ The content JSON is the per-video authoring file: one entry per scene, mapping a
 | `title` | `title_scene(img_path, title, sub, dur)` | `img_path`, `title`, `sub` |
 | `slide` | `slide_scene(pil_img, dur)` | `image` (pre-rendered markup PNG, 1080×1920) |
 
+**Background rule (standing):** `bg_img` is REQUIRED (never optional) on every scene type that takes it. `motion.py` renders a flat near-black frame when `bg_img` is omitted (`kinetic_text`, `timeline`, `bullet_slide`, `title_card`, `typewriter_scene` — verified in source) — that fallback is banned by the no-empty-screen series constant (§5). Every content-JSON scene must name a local `video/assets/...` image as its background source. Scene types that take `img_path` already require it positionally.
+
 ### Annotation kinds (canonical — `motion.annotate`)
 
 Each annotation is `(at, dur, kind, kwargs)`; `at` and `dur` in seconds.
 
 | Kind | kwargs | Visual |
 |---|---|---|
-| `term` | `term`, `gloss` | Lower-third key-term card with gloss |
+| `term` | `term`, `gloss` | Lower-third key-term card with gloss, gold side bar |
 | `label` | `text`, `x`, `y` (0..1) | Floating label at a position |
-| `point` | `text` | Big centered "so what" statement |
+| `point` | `text` | Big centered "so what" statement, gold-bordered card |
 | `arrow` | `text`, `x`, `y`, `lx`, `ly` | Gold label with leader line to a point of interest |
 | `pop` | `text` | Playful tilted word slam for fun beats |
 
@@ -143,6 +145,8 @@ Every file in `video/manifests/*.json` — all 48 reconciled into this one schem
 3. Audio filenames in manifests are opaque (`a.mp3`…`h.mp3`) while the Cuba pilot uses descriptive names (`hook.mp3`, `beat1b.mp3`). Convention for new videos: **descriptive, key-matched names** (`hook.mp3`, `context.mp3`, `beat1a.mp3`) — matches the narration `key` and the content-scene `key`, making the whole chain greppable. The `a.mp3` style is legacy.
 4. Plan lengths vary 5–10 stages per manifest (grading videos), which is why there is no fixed stage count in the schema.
 
+**Background-source rule (standing, new videos):** every scene in a content-JSON-driven video must specify its background image source — the `motion.py` near-black flat fallbacks are banned (see the no-empty-screen series constant, §5). Manifest authors: `bg_img` is required, never optional.
+
 ---
 
 ## 4. Rendering Spec
@@ -150,37 +154,41 @@ Every file in `video/manifests/*.json` — all 48 reconciled into this one schem
 ### Canvas
 1080×1920 vertical. 30 fps. x264 (`libx264`, crf 22, preset veryfast in `build_video.py`; medium in `motion.assemble`). Text in bundled DejaVu Sans / Bold (`video/fonts/`). House palette: gold `(233, 196, 106)`, white `(240, 242, 246)`, dim gray `(160, 166, 180)` on near-black `(10–20)`.
 
-### Scene primitives (canonical — all in `motion.py`)
+### Canonical animation vocabulary (all in `motion.py` — verified against the source)
 
-**Base layers:**
-- `kb_scene(img_path, dur, zoom=0.14, pan_x=0.5, pan_y=0.5)` — Ken Burns full-bleed pan/zoom. `pan_x/pan_y` in [0,1] = drift target. Default zoom 0.14.
-- `slide_scene(pil_img, dur)` — static presentation slide (pre-rendered markup PNGs from `render_v*.py`). Resized to 1080×1920 if needed.
-- `overlay_text(base, text, fnt_path, size, dur, y_pos=None, slide=140, fill=...)` — slide-up + fade text over any base clip. Default slides up 140px over 0.6s.
+**CAMERA:**
+- `kb_scene(img_path, dur, zoom=0.14, pan_x=0.5, pan_y=0.5)` — slow Ken Burns drift, default full-bleed. `pan_x/pan_y` in [0,1] = drift target.
+- `zoom_to(img_path, dur, cx=0.5, cy=0.5, end_zoom=2.2, zoom_dur=1.4, caption="", highlight_box=None)` — fast directed punch-zoom with ease-out then hold; optional gold highlight box; **the emphasis move**. Use for "look here" beats (U-2 photo).
+- `camera_path(img_path, dur, waypoints, caption="")` — waypoint camera, eased in-out; `waypoints` = `[(cx, cy, zoom)]`; zoom<1 zooms OUT. Time split evenly across segments. Use for "pull back to reveal" moves.
+- `doc_zoom(img_path, dur, highlight_box=None, caption="", zoom=0.35)` — slow push-in on documents/photos; highlight box (0..1 coords) fades in on the key passage at 35% of duration; **the sourcing move**. Use for document teardowns.
+- `punch_in(clip, amount=0.07, dur=0.5)` — quick 1.07→1.0 zoom punch at scene start with ease-out; replaces soft fade-ins. The modern punch-cut feel.
 
-**Text-forward scenes:**
-- `kinetic_text(phrase, dur, sub=None, color=gold, bg_img=None, darken=110)` — big phrase slamming in with spring pop (`ease_out_back`), over image or dark. Use for hooks and thesis statements.
-- `title_card(text, dur, sub=None, bg_img=None, darken=120)` — static centered card.
-- `typewriter_scene(text, dur, bg_img=None, darken=120, sub=None)` — text types itself live; **the quote scene**. Use for every historical-voice quote segment.
-- `bullet_slide(title, bullets, dur, footer="", bg_img=None, darken=130, stagger=0.45)` — bullets slam in staggered with spring overshoot. `stagger` = seconds between bullets.
-- `caption_scene(img_path, caption, dur, **kb_kw)` — Ken Burns + gradient scrim + caption bar sliding up from bottom.
+**TEXT:**
+- `typewriter_scene(text, dur, bg_img, darken=120, sub=None)` — char-by-char typing + blinking cursor; **the primary-source quote scene**. Use for every historical-voice quote segment. Text completes at 85% of `dur` — size generously; the historical voice MP3 sets the floor.
+- `kinetic_text(phrase, dur, sub=None, color=gold, bg_img, darken=110)` — spring-overshoot slam (`ease_out_back`); for hooks, thesis statements, verdicts, key terms.
+- `overlay_text(base, text, fnt_path, size, dur, y_pos=None, slide=140, fill=...)` — slide-up + fade caption over any base clip (slides up 140px over 0.6s).
+- `title_card(text, dur, sub=None, bg_img, darken=120)` — static centered card.
 - `title_scene(img_path, title, sub, dur)` — title card over a darkened image, title in gold fade-in.
+- `bullet_slide(title, bullets, dur, footer="", bg_img, darken=130, stagger=0.45)` — staggered bullets slamming in with spring overshoot; `stagger` = seconds between bullets.
 
-**Image-forward scenes:**
-- `doc_zoom(img_path, dur, highlight_box=None, caption="", zoom=0.35)` — slow push-in on a document/photo; `highlight_box` (0..1 coords) draws a gold box fading in at 35% of duration. Use for document teardowns.
-- `zoom_to(img_path, dur, cx=0.5, cy=0.5, end_zoom=2.2, zoom_dur=1.4, caption="", highlight_box=None)` — fast directed zoom onto a point of interest with ease-out, then hold. Use for "look here" beats (U-2 photo).
-- `callout_scene(img_path, dur, points, caption="")` — expanding gold ripple rings landing on `points` (`(cx, cy, label)` 0..1), in sequence. Use for maps with multiple points.
-- `camera_path(img_path, dur, waypoints, caption="")` — waypoint camera: `waypoints` = `[(cx, cy, zoom)]`; zoom < current zooms out; time split evenly across segments, eased in-out. Use for "pull back to reveal" moves.
-- `cuba_map_scene(dur, caption="")` — **one-off, not canonical**: hard-coded Cuba 1962 map. The pattern to replicate is a purpose-built animated map scene per topic, not reuse of this function.
+**INFORMATIONAL:**
+- `timeline_scene(events, dur, title="", bg_img, darken=150)` — dots + labels pop in sequence along a rail, alternating above/below; `events` = list of `(label, caption)`; dots appear evenly across 85% of `dur`. For sequences and causation.
+- `callout_scene(img_path, dur, points, caption="")` — gold rings ripple onto points in sequence with labels; `points` = `(cx, cy, label)` in 0..1. For image analysis.
+- `caption_scene(img_path, caption, dur, **kb_kw)` — Ken Burns + gradient scrim + caption bar sliding up from bottom.
 
-**Overlay layer (the 12-second rule lives here):**
-- `annotate(base_clip, notes)` — notes = `[(at, dur, kind, kwargs)]`; kinds `term`/`label`/`point`/`arrow`/`pop` (see §2). Each note springs in over 0.35s, holds, fades out over the last 0.25s. Stack multiple per scene for pace.
-- `punch_in(clip, amount=0.07, dur=0.5)` — quick zoom punch at scene start (1+amount → 1.0, ease-out). The modern punch-cut feel; replaces soft fade-ins.
+**ANNOTATION LAYER (the 12-second rule lives here):**
+- `annotate(base_clip, notes)` — notes = `[(at, dur, kind, kwargs)]`; kinds `term`/`label`/`point`/`arrow`/`pop` (see §2). Each note springs in via `ease_out_back` over 0.35s, holds, fades out over the last 0.25s. Stack multiple per scene for pace.
+- `slide_scene(pil_img, dur)` — static presentation slide (pre-rendered markup PNGs from `render_v*.py`); the grading-video path primitive. Resized to 1080×1920 if needed.
 
-**Easing functions:** `ease_out_back` (overshoot/slam), `ease_out_cubic` (zoom settle), `ease_in_out_cubic` (camera moves).
+**EASINGS:** `ease_out_back` (signature — the slam/overshoot), `ease_out_cubic` (zoom settle), `ease_in_out_cubic` (camera moves).
 
-**Assembly:**
-- `assemble(scenes, audios, out, fps=30)` — concatenates with 0.35s crossfades (`padding=-0.2`), places each scene's narration audio at its (overlap-adjusted) start time, writes MP4 with AAC. `assert len(scenes) == len(audios)`.
+**ASSEMBLY:**
+- `assemble(scenes, audios, out, fps=30)` — concatenates with 0.35s crossfades (`padding=-0.2`); per-scene narration auto-placed at overlap-adjusted scene starts (audio never bleeds into the wrong visual); MP4 with AAC. `assert len(scenes) == len(audios)`. Visual timing ALWAYS follows measured audio.
 - `build_video.py` (grading-video path): renders each stage's PNG from `STAGES`, measures each MP3 with ffprobe, sizes each stage to the measured duration (or duration/share), encodes per-stage segments, concats, muxes the full narration track. `--out` overrides the manifest `out`.
+
+**REQUIRED BUILD ITEM — general `map_scene` (PROPOSED — not in `motion.py` yet):**
+- `cuba_map_scene(dur, caption="")` is Cuba-specific (hard-coded CIA 1962 map, "90 miles to Florida" overlay, pulsing missile-site marker). It is **not canonical** — do not treat it as the vocabulary's map primitive. Reimplement the Cuba beat on `map_scene` once built.
+- Required spec: `map_scene(map_img, dur, points=None, routes=None, caption="")` — `map_img`: local repo path (required), the base map image; `points`: list of `(cx, cy, label)` in 0..1, gold ripple callouts landing in sequence (callout_scene-style); `routes`: list of polylines `[(x0,y0),(x1,y1),...]` in 0..1, drawn animatedly across the duration — territory-expansion arrows, migration routes, battle-movement lines; `caption`: overlay caption. Use for expansion / migration / battle maps. Required before any map-driven video beyond the Cuba pilot.
 
 ### Timing rules
 
@@ -239,6 +247,7 @@ Every file in `video/manifests/*.json` — all 48 reconciled into this one schem
 - **Every fact gets its "so what"** — fact → "the point is" → consequence. Never leave a fact without its consequence attached.
 - **Deliberate key-term repetition** — the central concept's name 5–8× per video, varied sentence positions.
 - **Implicit exam pressure, not explicit** — one "need to know" per beat; technique lives in the grading-walkthrough series. Never explain the test.
+- **NO BLACK/WHITE EMPTY SCREEN EVER** — every scene must specify its background image source. `bg_img` is REQUIRED (never optional) in the content JSON; the `motion.py` near-black flat fallbacks (`kinetic_text`, `title_card`, `typewriter_scene`, `timeline_scene`, `bullet_slide` without `bg_img`) are banned in production. All background images are local repo paths (`video/assets/...`) per the asset rules.
 
 ### Anti-patterns
 - Don't open with a question.
