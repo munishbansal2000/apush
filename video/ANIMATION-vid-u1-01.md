@@ -4,20 +4,17 @@
 *Narrative question: What did the Americas, Europe, and Africa each look like right before contact — and why did the encounter happen when it did?*
 
 This file is the complete, self-contained build spec for this video's AI ambient-motion clips.
-An LLM (or a human on the 5090) can execute it end-to-end with nothing else.
+An LLM can execute it end-to-end with nothing else.
 
 ## How the clips work
 
-- Tool: `video/animate_still.py` — LTX-Video 13B distilled, local on the 5090. No API keys.
+- Tool: `video/animate_still.py` — LTX-Video 13B distilled, local diffusion model. No API keys.
 - Each clip: a public-domain still + an ambient-motion-only text prompt → silent 5s MP4 (24fps).
 - Clips are SILENT by design. Narration comes from the stage MP3; there is no sound to design here.
 - Prompts MUST describe ambient motion only: clouds, water, smoke, fire, flags, fabric, foliage, dust, shimmer, heat haze.
   Never: people moving, content added/removed/changed, camera moves (no zoom/pan/dolly/orbit).
 - Every prompt below was verified with `animate_still.check_prompt_safety` — all accepted.
-- Always `--dry-run` first (validates prompt safety without the GPU), then run for real.
-- Expected render: ~1–4 min per 5s clip on the 5090 (calibrate on first run).
-- After generating: commit the MP4 under `video/ai_clips/` and record it in the video manifest's
-  `ai_clips` section as `{"<stage>": {"image": "<local_path>", "prompt": "<prompt>", "seed": <n>, "clip": "video/ai_clips/<file>.mp4"}}`.
+- Always `--dry-run` first (validates prompt safety without the GPU), then render for real.
 
 ## Shot 1 — hook (manifest stage: `hook`)
 
@@ -30,8 +27,6 @@ An LLM (or a human on the 5090) can execute it end-to-end with nothing else.
 - **Prompt (51 words):** "Thin clouds drift across the pale sky above the anchored caravels; ocean waves ripple and shimmer around the ships' hulls; the tall cross-topped banner flutters gently in the breeze; dense tree foliage stirs in the wind; a thin column of smoke rises and drifts from the distant campfire on the shore."
 - **Layering:** sky (clouds drift) → water (waves ripple/shimmer at hulls) → midground (banner flutters) → shore (foliage stirs, campfire smoke rises and drifts).
 - **Duration:** 5s · **Seed:** 40 · **Output:** `video/ai_clips/vid-u1-01-hook-discovery-america.mp4`
-- **5090 command:**
-  `python video/animate_still.py --image assets/images/u1/5s24-ch06-mcq-01.jpg --prompt "Thin clouds drift across the pale sky above the anchored caravels; ocean waves ripple and shimmer around the ships' hulls; the tall cross-topped banner flutters gently in the breeze; dense tree foliage stirs in the wind; a thin column of smoke rises and drifts from the distant campfire on the shore." --out video/ai_clips/vid-u1-01-hook-discovery-america.mp4 --duration 5 --seed 40 --dry-run`
 
 ## Shot 2 — beat2a (manifest stage: `beat2a`)
 
@@ -44,8 +39,6 @@ An LLM (or a human on the 5090) can execute it end-to-end with nothing else.
 - **Prompt (38 words):** "Light clouds drift slowly across the engraved sky; ocean waves ripple and shimmer around the anchored caravels; the full square sails billow gently; small pennants flutter on the masts; the distant shoreline trees stir in a faint breeze."
 - **Layering:** sky (clouds drift) → water (waves ripple/shimmer) → ships (sails billow, pennants flutter) → shore (trees stir).
 - **Duration:** 5s · **Seed:** 41 · **Output:** `video/ai_clips/vid-u1-01-beat2a-columbus-landing.mp4`
-- **5090 command:**
-  `python video/animate_still.py --image assets/images/u1/5s24-ch06-mcq-04.jpg --prompt "Light clouds drift slowly across the engraved sky; ocean waves ripple and shimmer around the anchored caravels; the full square sails billow gently; small pennants flutter on the masts; the distant shoreline trees stir in a faint breeze." --out video/ai_clips/vid-u1-01-beat2a-columbus-landing.mp4 --duration 5 --seed 41 --dry-run`
 
 ## Shot 3 — beat1d (manifest stage: `beat1d`)
 
@@ -55,17 +48,14 @@ An LLM (or a human on the 5090) can execute it end-to-end with nothing else.
 - **Source page:** https://commons.wikimedia.org/wiki/File:Caillie_1830_Timbuktu_view.jpg
 - **Direct download:** https://upload.wikimedia.org/wikipedia/commons/1/18/Caillie_1830_Timbuktu_view.jpg
 - **License:** Public domain — verified via Commons API (artist René Caillié 1799–1838, published 1830, pre-1930).
-- **Caveat:** 974×771 is the maximum available resolution — workable (the LTX working frame is 704×1248) but softer than the other two; flagged, not hidden.
+- **Caveat:** 974×771 is the maximum available resolution — workable but softer than the other two; flagged, not hidden.
 - **Prompt (45 words):** "A pale heat haze shimmers over the flat-roofed mud city; thin dust drifts through the empty sky above the hills; the sparse trees at the city's edge stir faintly in a dry breeze; soft shadows move across the rooftops as the haze thickens and thins."
 - **Layering:** atmosphere (heat haze shimmers over rooftops) → sky (dust drifts above hills) → edge (trees stir) → rooftops (shadows move as haze thickens/thins).
 - **Duration:** 5s · **Seed:** 42 · **Output:** `video/ai_clips/vid-u1-01-beat1d-timbuktu.mp4`
-- **5090 command:**
-  `python video/animate_still.py --image assets/images/u1/anim-timbuktu-caillie-1830.jpg --prompt "A pale heat haze shimmers over the flat-roofed mud city; thin dust drifts through the empty sky above the hills; the sparse trees at the city's edge stir faintly in a dry breeze; soft shadows move across the rooftops as the haze thickens and thins." --out video/ai_clips/vid-u1-01-beat1d-timbuktu.mp4 --duration 5 --seed 42 --dry-run`
 
-## After the 5090 run
+## After rendering
 
-1. Drop `--dry-run` and render all three for real.
-2. Commit the three MP4s under `video/ai_clips/`.
-3. Record in `video/manifests/vid-u1-01.json` under `ai_clips`:
+1. Commit the three MP4s under `video/ai_clips/`.
+2. Record in `video/manifests/vid-u1-01.json` under `ai_clips`:
    `{"hook": {"image": "assets/images/u1/5s24-ch06-mcq-01.jpg", "prompt": "<shot 1 prompt>", "seed": 40, "clip": "video/ai_clips/vid-u1-01-hook-discovery-america.mp4"}, "beat2a": {...}, "beat1d": {...}}`
-4. In the stage builder, play each clip with `motion.ai_clip_scene("video/ai_clips/<file>.mp4", dur)` — it cover-crops to the 1080×1920 canvas, loops if short, trims if long, and counts as intentional motion for the camera-direction gate.
+3. In the stage builder, play each clip with `motion.ai_clip_scene("video/ai_clips/<file>.mp4", dur)` — it cover-crops to the 1080×1920 canvas, loops if short, trims if long, and counts as intentional motion for the camera-direction gate.
