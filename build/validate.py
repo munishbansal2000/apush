@@ -484,7 +484,15 @@ def classify_json(path):
               "build/fresh-written/u4-gaps.json",
               "build/fresh-written/u5-gaps.json",
               "build/fresh-written/u6-gaps.json",
-              "build/fresh-written/u9-gaps.json"}
+              "build/fresh-written/u9-gaps.json",
+              "build/fresh-written/hard-u1.json",
+              "build/fresh-written/hard-u2.json",
+              "build/fresh-written/hard-u3.json",
+              "build/fresh-written/hard-u4.json",
+              "build/fresh-written/hard-u5.json",
+              "build/fresh-written/hard-u6.json",
+              "build/fresh-written/hard-u7.json",
+              "build/fresh-written/hard-u8.json"}
     if p in fw_mcq:
         return "MCQ-BANK-FRESH"
     if p == "build/fresh-written/saq.json":
