@@ -246,8 +246,8 @@ Each row is the complete production recipe for one video: assets, gaps, scene-by
 
 | Gap | Beat | Subject needed | Candidate source | License | Status |
 |---|---|---|---|---|---|
-| G-V01-1 | beat3 | European livestock/crops arriving in the Americas (period engraving: horses, wheat, sugar) | Wikimedia Commons (search: 16th-c. engraving livestock New World) | pre-1930 publication | OPEN — BLOCKER for the goods-arrival half |
-| G-V01-2 | context | Beringia / peopling-of-the-Americas migration map | Wikimedia Commons (PD migration map) | pre-1930 or CC0 | OPEN — BLOCKER for the origins line |
+| G-V01-1 | beat3 | European livestock/crops arriving in the Americas (period engraving: horses, wheat, sugar) | Wikimedia Commons (search: 16th-c. engraving livestock New World) | CC0 1.0 (Met Open Access) | FILLED 2026-10-03 — `assets/images/u1/gap-g-v01-1-columbian-sugar-engraving.jpg`: c.1600 Stradanus/Collaert engraving of sugar-cane cutting, crushing, boiling, sugar-loaf forming (Nova Reperta plate 13). Caveat: depicts sugar production, not ship-unloading — sugar was one of the three named subjects; no genuine livestock-unloading engraving found. |
+| G-V01-2 | context | Beringia / peopling-of-the-Americas migration map | Wikimedia Commons (PD migration map) | pre-1930 or CC0 | OPEN — BLOCKER for the origins line. ~20 searches 2026-10-03 found no true subject match: every map showing the actual migration ROUTE is modern CC-BY-SA (not PD-safe); PD options show geography with no route (near-miss, refused). Next: commission a CC0 redraw (Siberia→Beringia→Americas arrows on a coastline base). |
 
 ## V02 — "The Spanish Machine" (PROVISIONAL id)
 
@@ -330,7 +330,7 @@ Each row is the complete production recipe for one video: assets, gaps, scene-by
 
 | Gap | Beat | Subject needed | Candidate source | License | Status |
 |---|---|---|---|---|---|
-| G-V02-1 | beat1 | Encomienda/mita labor scene (draft laborers at Potosí or a hacienda) | Wikimedia Commons (search: mita labor / Potosí miners engraving) | pre-1930 publication | OPEN — enhancement, not a runtime blocker (beat1's document zoom is subject-matched as built: the beat is about the legal fiction) |
+| G-V02-1 | beat1 | Encomienda/mita labor scene (draft laborers at Potosí or a hacienda) | Wikimedia Commons (search: mita labor / Potosí miners engraving) | PD (1590) | FILLED 2026-10-03 — `assets/images/u1/gap-g-v02-1-potosi-mitayos-debry.jpg`: de Bry 1590 engraving of Indigenous mit'a laborers with ore baskets inside the Potosí silver mine. 900px (Commons full res) — fine for kb/callout, slightly soft. |
 
 ## V03 — "Why Europe Came" (PROVISIONAL id)
 
@@ -348,7 +348,7 @@ Each row is the complete production recipe for one video: assets, gaps, scene-by
 | beat2 (God) | `u1/original-u1-spanish-mission-01.jpg` (supporting reuse — first-used V02) | Mission photo — the evangelization arm, subject-matched |
 | beat2 quote | `u1/5s24-ch06-mcq-06.jpg` (typewriter bg; supporting reuse — first-used V02) | Lienzo de Tlaxcala — Christianity's introduction, behind Hakluyt's "glory of the Gospell" |
 | beat3a (glory) | `u1/5s24-ch06-mcq-01.jpg` (supporting reuse — first-used V01) | Stradanus engraving — the triumphal framing = glory, subject-matched |
-| beat3b (joint-stock) | ⚠️ PENDING — see G-V03-1 | Cannot be built until sourced. No near-miss substitution. |
+| beat3b (joint-stock) | `u1/gap-g-v03-1-virginia-charter-1606.jpg` | First Charter of Virginia, April 10/20, 1606 — the legal instrument itself, subject-matched (G-V03-1 FILLED 2026-10-03; was BLOCKER). Render: `doc_zoom` with gold highlight box landing on the title block as the narration names it. |
 | significance | `u1/original-ctx-u1-03.jpg` (supporting reuse — first-used V01) | Waldseemüller 1507 — first "America"; three motives, one remade world |
 | close | `u1/saq-set-19-q3.jpg` (title_card bg, reuse) | Landing of Columbus — the gamble, for the close |
 
@@ -363,7 +363,7 @@ Each row is the complete production recipe for one video: assets, gaps, scene-by
 | beat2a | 2:40–3:40 | `kb_scene(mission photo, pan toward the church)` | `term`: "evangelization"; `label`: the mission |
 | beat2b | 3:40–4:10 | `typewriter_scene(Hakluyt "glory of the Gospell", sub="Hakluyt, Discourse of Western Planting, 1584", bg_img=Lienzo de Tlaxcala)` — voice: `hakluyt` | — (typing is the beat) |
 | beat3a | 4:10–4:50 | `kinetic_text("GLORY", sub="…", bg_img=Stradanus)` | `pop`: "glory"; `point`: rivalry with Spain/Portugal |
-| beat3b | 4:50–5:30 | PENDING G-V03-1 | — |
+| beat3b | 4:50–5:30 | `doc_zoom(gap-g-v03-1-virginia-charter-1606.jpg, highlight_box on the "First Charter of Virginia / April 10/20, 1606" title block)` — voice: `narrator` | `term`: "joint-stock company"; `label`: "April 10, 1606" |
 | significance | 5:30–6:30 | `kinetic_text("GOD. GOLD. GLORY. ONE OCEAN.", bg_img=Waldseemüller, darken=150)` | `point` ×2 (motives → colonization models; sets up V04's Jamestown vs. Plymouth) |
 | close | 6:30–end | `title_card("Next: The Exchange That Changed Everything", sub=drill CTA, bg_img=Landing of Columbus)` | — (ritual close) |
 
@@ -401,7 +401,7 @@ Each row is the complete production recipe for one video: assets, gaps, scene-by
 | 14 | Wipe reveal | — | — |
 | 15 | Versus cards | should | UNBUILT — God-vs-gold as a face-off card is the natural pick |
 | 16 | Skit | — | — |
-| 17 | Map-march | — | (beat3b blocked on the charter image gap) |
+| 17 | Map-march | — | (charter gap G-V03-1 filled 2026-10-03; beat3b unblocked) |
 | 18/19 | Music bed / SFX | planned | UNBUILT pipeline steps |
 | 20 | Direction tags | should | script step; parser pending |
 | 21 | Running jokes (GAGS.md) | planned | registry to be seeded |
@@ -415,7 +415,7 @@ Each row is the complete production recipe for one video: assets, gaps, scene-by
 
 | Gap | Beat | Subject needed | Candidate source | License | Status |
 |---|---|---|---|---|---|
-| G-V03-1 | beat3b | Joint-stock company charter document (Virginia Company charter of 1606 — the legal instrument) | Wikimedia Commons: File:Virginia Company charter (1606) or LoC scan | pre-1930 document | OPEN — BLOCKER. beat3b has no scene until this is sourced and localized. Interim: do NOT ship beat3b on a mismatched image. |
+| G-V03-1 | beat3b | Joint-stock company charter document (Virginia Company charter of 1606 — the legal instrument) | Wikimedia Commons: File:Virginia Company charter (1606) or LoC scan | PD (1899 ed., pre-1930) | FILLED 2026-10-03 — `assets/images/u1/gap-g-v03-1-virginia-charter-1606.jpg`: the charter's text ("First Charter of Virginia / April 10/20, 1606", "I. JAMES, by the Grace of God…") from MacDonald (ed.), Select Charters (Macmillan, 1899), p.1, extracted at 300 DPI. Ideal for `doc_zoom` with the highlight box on the title block. beat3b is now buildable. |
 
 ---
 
@@ -425,12 +425,12 @@ Each row is the complete production recipe for one video: assets, gaps, scene-by
 
 | Gap | Video.beat | Subject needed | Severity | Status |
 |---|---|---|---|---|
-| G-V01-1 | V01.beat3 | European livestock/crops arriving in the Americas (period engraving) | BLOCKER | OPEN |
-| G-V01-2 | V01.context | Beringia / peopling-of-the-Americas migration map (PD) | BLOCKER | OPEN |
-| G-V02-1 | V02.beat1 | Encomienda/mita labor scene (draft laborers) | Enhancement (beat1's document zoom is subject-matched as built) | OPEN |
-| G-V03-1 | V03.beat3b | Joint-stock charter document (Virginia Company 1606) | BLOCKER — beat3b unbuildable until sourced | OPEN |
+| G-V01-1 | V01.beat3 | European livestock/crops arriving in the Americas (period engraving) | BLOCKER | FILLED — `assets/images/u1/gap-g-v01-1-columbian-sugar-engraving.jpg` (sugar production, c.1600 Stradanus; see caveat in V01 gap table) |
+| G-V01-2 | V01.context | Beringia / peopling-of-the-Americas migration map (PD) | BLOCKER | OPEN — no PD route map exists; commission a CC0 redraw |
+| G-V02-1 | V02.beat1 | Encomienda/mita labor scene (draft laborers) | Enhancement (beat1's document zoom is subject-matched as built) | FILLED — `assets/images/u1/gap-g-v02-1-potosi-mitayos-debry.jpg` (de Bry 1590, Potosí mit'a laborers) |
+| G-V03-1 | V03.beat3b | Joint-stock charter document (Virginia Company 1606) | BLOCKER — beat3b unbuildable until sourced | FILLED — `assets/images/u1/gap-g-v03-1-virginia-charter-1606.jpg` (charter text, MacDonald 1899 ed., 300 DPI; doc_zoom-ready) |
 
-**Total: 4 gaps (3 BLOCKERs, 1 enhancement).** Sourcing lane: Wikimedia Commons / Library of Congress → verify PD (pre-1930 publication or explicit CC0/PD tag) → download to `assets/images/u1/` → extend `build/image-download-report.json` → re-run `build/build_image_catalog.py` → update the gap row. Never substitute a near-miss.
+**Total: 4 gaps — 3 FILLED 2026-10-03, 1 OPEN (G-V01-2 Beringia map: no PD route map exists; commission a CC0 redraw).** Sourcing lane: Wikimedia Commons / Library of Congress → verify PD (pre-1930 publication or explicit CC0/PD tag) → download to `assets/images/u1/` → extend `build/image-download-report.json` → re-run `build/build_image_catalog.py` → update the gap row. Never substitute a near-miss.
 
 ## Engine backlog (for whoever owns `video/motion.py` next)
 

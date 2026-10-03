@@ -97,6 +97,9 @@ def subject_from_url(source_url):
         # thumb.wikimedia.org:  /wikipedia/commons/thumb/<h>/<h>/<file>/<size>px-<file>
         tail = path.rsplit("/", 1)[-1]
         tail = re.sub(r"^\d+px-", "", tail)  # thumb size prefix
+        for prefix in ("File:", "Special:FilePath/"):
+            if tail.startswith(prefix):
+                tail = tail[len(prefix):]
         name = unquote(tail)
     else:
         if "/wiki/" in source_url:
@@ -149,10 +152,14 @@ def main():
         seen_paths.add(local_path)
         subject = subject_from_url(source_url)
         rat = rationale.get(item_id)
+        snote = v.get("subject_note")
         opaque = re.fullmatch(r"[a-z0-9]{3,14}", subject.lower()) is not None
         if rat:
             # combine: commons filename subject + repo's PD rationale detail
             subject = f"{subject} — {rat}" if not opaque else rat
+        if snote:
+            # precise subject detail recorded at sourcing time (gap images)
+            subject = f"{subject} — {snote}"
         catalog.append({
             "id": item_id,
             "local_path": local_path,
@@ -163,7 +170,7 @@ def main():
                 "source_url": source_url,
                 "direct": v.get("direct", ""),
                 "date": report.get("date", ""),
-                "license_note": rat or "PD: pre-1930 / CC0 (verified at download)",
+                "license_note": v.get("license_note") or rat or "PD: pre-1930 / CC0 (verified at download)",
             },
             "on_disk": exists,
         })
