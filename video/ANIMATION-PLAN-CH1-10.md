@@ -45,26 +45,42 @@
 ### vid-u1-02 — "Three Ways to Live in America"
 *Narrative question: Why were some Native societies huge and hierarchical while others stayed small and mobile?*
 
+**Convention (2026-10-03):** diffusion renders max 6s (`animate_still.py` cap), so each AI clip renders 6s and the stage runs 10s — `ai_clip_scene` crossfade-loops (0.5s dissolve at the seam) to fill the stage. 5 AI clips x 10s = 50s of 420s (11.9%). Prompt intensity at current standard; upgrade pending the L1/L2/L3 verdict.
+
 **Shot 1 — hook (intended beat: hook)** — catalog reuse
 - Beat: "Maize is the organizing fact" — planting = density = complexity.
 - Base image: `assets/images/u1/original-u1-native-01.jpg` (de Bry after Le Moyne, Florida Indians planting, 1591)
 - Prompt (37w): "Thin horizontal clouds drift slowly across the engraved sky; fine dust drifts across the tilled planting rows; the engraved cloud bands ripple faintly as a light breeze passes; a soft haze shimmers over the distant field edge."
-- Duration 5s · Seed 43
-- `python video/animate_still.py --image assets/images/u1/original-u1-native-01.jpg --prompt "Thin horizontal clouds drift slowly across the engraved sky; fine dust drifts across the tilled planting rows; the engraved cloud bands ripple faintly as a light breeze passes; a soft haze shimmers over the distant field edge." --out video/ai_clips/vid-u1-02-hook-maize-planting.mp4 --duration 5 --seed 43`
+- Render 6s · Stage 10s · Seed 43
+- `python video/animate_still.py --image assets/images/u1/original-u1-native-01.jpg --prompt "Thin horizontal clouds drift slowly across the engraved sky; fine dust drifts across the tilled planting rows; the engraved cloud bands ripple faintly as a light breeze passes; a soft haze shimmers over the distant field edge." --out video/ai_clips/vid-u1-02-hook-maize-planting.mp4 --duration 6 --seed 43`
 
 **Shot 2 — Mississippian chiefdoms** — NEW image
 - Beat: "Where maize grew, cities rose" — Cahokia's monumental earthworks.
 - Base image: `assets/images/u1/anim-cahokia-mound-1907.jpg` (LOC photo, 16 Oct 1907; PD via Commons API; film-frame scan border — crop at assembly)
 - Prompt (41w): "Faint clouds drift across the pale sky above the great earthen mound; a breeze stirs the trees crowning the terraces; the long rows of the cultivated field shimmer and ripple faintly; thin dust drifts over the bare ground between the rows."
-- Duration 5s · Seed 44
-- `python video/animate_still.py --image assets/images/u1/anim-cahokia-mound-1907.jpg --prompt "Faint clouds drift across the pale sky above the great earthen mound; a breeze stirs the trees crowning the terraces; the long rows of the cultivated field shimmer and ripple faintly; thin dust drifts over the bare ground between the rows." --out video/ai_clips/vid-u1-02-cahokia-mound.mp4 --duration 5 --seed 44`
+- Render 6s · Stage 10s · Seed 44
+- `python video/animate_still.py --image assets/images/u1/anim-cahokia-mound-1907.jpg --prompt "Faint clouds drift across the pale sky above the great earthen mound; a breeze stirs the trees crowning the terraces; the long rows of the cultivated field shimmer and ripple faintly; thin dust drifts over the bare ground between the rows." --out video/ai_clips/vid-u1-02-cahokia-mound.mp4 --duration 6 --seed 44`
 
 **Shot 3 — Southwest culture area** — catalog reuse
 - Beat: The Southwest Pueblos — maize farming where the land allowed.
 - Base image: `assets/images/u1/original-u1-native-09.jpg` (Taos Pueblo, photo 1880; cabinet-card mount border — crop at assembly)
 - Prompt (43w): "Thin clouds drift across the pale sky above the adobe terraces; a dry breeze stirs dust across the plaza; the forested mountainside behind the pueblo shimmers faintly in the heat; soft shadows move over the clay walls as the haze thickens and thins."
-- Duration 5s · Seed 45
-- `python video/animate_still.py --image assets/images/u1/original-u1-native-09.jpg --prompt "Thin clouds drift across the pale sky above the adobe terraces; a dry breeze stirs dust across the plaza; the forested mountainside behind the pueblo shimmers faintly in the heat; soft shadows move over the clay walls as the haze thickens and thins." --out video/ai_clips/vid-u1-02-taos-pueblo.mp4 --duration 5 --seed 45`
+- Render 6s · Stage 10s · Seed 45
+- `python video/animate_still.py --image assets/images/u1/original-u1-native-09.jpg --prompt "Thin clouds drift across the pale sky above the adobe terraces; a dry breeze stirs dust across the plaza; the forested mountainside behind the pueblo shimmers faintly in the heat; soft shadows move over the clay walls as the haze thickens and thins." --out video/ai_clips/vid-u1-02-taos-pueblo.mp4 --duration 6 --seed 45`
+
+**Shot 4 — Plains way of life (Way 2 opener)** — NEW image (2026-10-03)
+- Beat: "No maize, no cities — the bison was the economy." Opens the Way 2 section.
+- Base image: `assets/images/u1/u1-catlin-buffalo-hunt.jpg` (George Catlin, hand-colored lithograph; PD-old; big sky + grassland carry the motion, riders mid-ground stay frozen per the filter)
+- Prompt (41w): "Thin clouds drift across the vast prairie sky; the tall grasses ripple and bend in waves across the plain; fine dust drifts over the hunting ground; heat haze shimmers faintly around the distant butte; slow cloud shadows glide over the grassland."
+- Render 6s · Stage 10s · Seed 46
+- `python video/animate_still.py --image assets/images/u1/u1-catlin-buffalo-hunt.jpg --prompt "Thin clouds drift across the vast prairie sky; the tall grasses ripple and bend in waves across the plain; fine dust drifts over the hunting ground; heat haze shimmers faintly around the distant butte; slow cloud shadows glide over the grassland." --out video/ai_clips/vid-u1-02-plains-hunt.mp4 --duration 6 --seed 46`
+
+**Shot 5 — outro (the world about to change)** — catalog reuse
+- Beat: "These three worlds were about to collide." Ships on the horizon under the outro recap.
+- Base image: `assets/images/u1/u1-caravel-fleet-huys.jpg` (Frans Huys after Bruegel, 1560s; CC0; all ships and sea, no people)
+- Prompt (39w): "Dark clouds gather over the fleet at sea; heavy swells roll beneath the galleys' hulls; the great sails strain full and taut; spray bursts white along the waterline; the distant shoreline haze darkens as the ships hold their course."
+- Render 6s · Stage 10s · Seed 47
+- `python video/animate_still.py --image assets/images/u1/u1-caravel-fleet-huys.jpg --prompt "Dark clouds gather over the fleet at sea; heavy swells roll beneath the galleys' hulls; the great sails strain full and taut; spray bursts white along the waterline; the distant shoreline haze darkens as the ships hold their course." --out video/ai_clips/vid-u1-02-outro-fleet.mp4 --duration 6 --seed 47`
 
 ## Chapter 1.2 — Europe Reaches America
 

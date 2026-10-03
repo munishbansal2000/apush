@@ -982,7 +982,9 @@ def ai_clip_scene(clip_path, dur):
 
     clip_path: video/ai_clips/<name>.mp4, committed. The clip is cover-cropped
     to the current canvas (respects set_scale preview mode), looped if shorter
-    than dur, trimmed if longer. Silent: narration comes from the stage MP3.
+    than dur, trimmed if longer. Loops use a 0.5s crossfade at the seam so a
+    6s render can fill a 10s stage without a visible snap. Silent: narration
+    comes from the stage MP3.
 
     The clip itself is generated on the 5090 with video/animate_still.py
     (LTX-Video, ambient-motion-only prompts); the manifest's ai_clips section
@@ -1004,8 +1006,9 @@ def ai_clip_scene(clip_path, dur):
     x1, y1 = (nw - W) // 2, (nh - H) // 2
     fitted = big.cropped(x1=x1, y1=y1, x2=x1 + W, y2=y1 + H)
     if fitted.duration < dur:
-        n = int(dur // fitted.duration) + 1
-        seq = concatenate_videoclips([fitted.copy() for _ in range(n)])
+        n = int(dur // fitted.duration) + 2
+        seq = concatenate_videoclips([fitted.copy() for _ in range(n)],
+                                     method="compose", padding=-0.5)
         out = seq.subclipped(0, dur)
     else:
         out = fitted.subclipped(0, dur)
