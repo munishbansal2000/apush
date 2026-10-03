@@ -977,6 +977,41 @@ def camera_path(img_path, dur, waypoints, caption=""):
     return clip
 
 
+def ai_clip_scene(clip_path, dur):
+    """Play a pre-generated AI ambient clip ("living engraving") as a stage.
+
+    clip_path: video/ai_clips/<name>.mp4, committed. The clip is cover-cropped
+    to the current canvas (respects set_scale preview mode), looped if shorter
+    than dur, trimmed if longer. Silent: narration comes from the stage MP3.
+
+    The clip itself is generated on the 5090 with video/animate_still.py
+    (LTX-Video, ambient-motion-only prompts); the manifest's ai_clips section
+    records image/prompt/seed for reproducibility, enforced by the AI-CLIP
+    validator gate.
+    """
+    from moviepy import VideoFileClip, concatenate_videoclips
+    _note_prim("ai_clip_scene")
+    if not os.path.isabs(clip_path):
+        # repo-relative (CWD = repo root at build time); fall back to repo root
+        if not os.path.isfile(clip_path):
+            clip_path = os.path.join(os.path.dirname(HERE), clip_path)
+    base = VideoFileClip(clip_path)
+    # cover-crop to canvas
+    cw, ch = base.size
+    scale = max(W / cw, H / ch)
+    nw, nh = int(cw * scale + 0.5), int(ch * scale + 0.5)
+    big = base.resized((nw, nh))
+    x1, y1 = (nw - W) // 2, (nh - H) // 2
+    fitted = big.cropped(x1=x1, y1=y1, x2=x1 + W, y2=y1 + H)
+    if fitted.duration < dur:
+        n = int(dur // fitted.duration) + 1
+        seq = concatenate_videoclips([fitted.copy() for _ in range(n)])
+        out = seq.subclipped(0, dur)
+    else:
+        out = fitted.subclipped(0, dur)
+    return out.without_audio()
+
+
 def assemble(scenes, audios, out, fps=30):
     """Concat scenes with 0.35s crossfades; each scene gets its narration audio."""
     assert len(scenes) == len(audios)
@@ -995,3 +1030,599 @@ def assemble(scenes, audios, out, fps=30):
     final.write_videofile(out, fps=fps, codec="libx264", audio_codec="aac",
                           preset="medium", threads=4, logger=None)
     return out
+
+
+# ------------------------------------------------- animated-graphics layer
+def _rz(tile, s):
+    """Resize an RGBA tile by spring scale s, guarding against 0px dims."""
+    s = max(0.01, s)
+    return tile.resize((max(1, int(tile.width * s)),
+                        max(1, int(tile.height * s))), Image.LANCZOS)
+
+
+def _place(canvas, tile, cx, cy):
+    """Center-blit an RGBA PIL tile onto an RGBA PIL canvas, clipping at
+    frame edges. PIL-canvas counterpart to the numpy-based blit helper
+    above -- use inside the animated-graphics primitives.
+    """
+    tw, th = tile.size
+    x0, y0 = int(cx - tw / 2), int(cy - th / 2)
+    sx0, sy0 = max(0, -x0), max(0, -y0)
+    dx0, dy0 = max(0, x0), max(0, y0)
+    dx1, dy1 = min(canvas.width, x0 + tw), min(canvas.height, y0 + th)
+    if dx1 <= dx0 or dy1 <= dy0:
+        return canvas
+    region = tile.crop((sx0, sy0, sx0 + (dx1 - dx0), sy0 + (dy1 - dy0)))
+    canvas.alpha_composite(region, (dx0, dy0))
+    return canvas
+
+# Built 2026-10-02: the user's verdict was "all I see is image + text" --
+# camera moves over stills are not enough. These primitives put THINGS THAT
+# MOVE on screen: drawing routes, ticking numbers, slamming cards, cutaway
+# skits. All scriptable (PIL frame functions), all PD-safe (original art or
+# local PD images), all scale-aware (px()/W/H -- never hardcode 1080x1920).
+
+GOLD = (233, 196, 106)
+STAMP_RED = (224, 82, 82)
+
+
+def _cover_arr(img_path, darken=0):
+    """Cover-fit an image to WxH as uint8 RGB, optional darken (0..255)."""
+    img = Image.open(img_path).convert("RGB")
+    scale = max(W / img.width, H / img.height)
+    img = img.resize((int(img.width * scale) + 2, int(img.height * scale) + 2),
+                     Image.LANCZOS)
+    arr = np.asarray(img).astype(np.float32)
+    x0 = (arr.shape[1] - W) // 2
+    y0 = (arr.shape[0] - H) // 2
+    crop = arr[y0:y0 + H, x0:x0 + W]
+    if darken:
+        crop = np.clip(crop - darken, 0, 255)
+    return crop.astype(np.uint8)
+
+
+def _poly_points(path):
+    """Precompute cumulative lengths for a 0..1 polyline path."""
+    pts = [(x * W, y * H) for x, y in path]
+    cum = [0.0]
+    for i in range(1, len(pts)):
+        dx, dy = pts[i][0] - pts[i - 1][0], pts[i][1] - pts[i - 1][1]
+        cum.append(cum[-1] + (dx * dx + dy * dy) ** 0.5)
+    return pts, cum
+
+
+def _point_at(pts, cum, s):
+    """Point + direction at arclength fraction s in 0..1."""
+    total = cum[-1] or 1.0
+    target = max(0.0, min(1.0, s)) * total
+    i = 1
+    while i < len(cum) - 1 and cum[i] < target:
+        i += 1
+    seg = (cum[i] - cum[i - 1]) or 1.0
+    k = (target - cum[i - 1]) / seg
+    x = pts[i - 1][0] + (pts[i][0] - pts[i - 1][0]) * k
+    y = pts[i - 1][1] + (pts[i][1] - pts[i - 1][1]) * k
+    dx, dy = pts[i][0] - pts[i - 1][0], pts[i][1] - pts[i - 1][1]
+    n = (dx * dx + dy * dy) ** 0.5 or 1.0
+    return (x, y), (dx / n, dy / n)
+
+
+def map_scene(map_img, dur, moves, title="", caption=""):
+    """Animated map: routes draw themselves, markers march and pulse.
+
+    map_img: local PD map. moves: list of dicts:
+      {"path": [(x,y)...] 0..1 coords, "at": seconds,
+       "color": (r,g,b), "kind": "arrow"|"dots"|"fill",
+       "label": str, "label_pos": (x,y) 0..1}
+    kind "arrow": route draws itself with an arrowhead tip.
+    kind "dots":  marching dots advance along the path.
+    kind "fill":  territory pulses lit at the path's first point.
+    The OverSimplified troop-movement transfer. bg stays readable.
+    """
+    from moviepy import VideoClip
+    _note_prim("map_scene")
+    base = _cover_arr(map_img, darken=30)
+    prepped = []
+    for m in moves:
+        pts, cum = _poly_points(m["path"])
+        prepped.append((m, pts, cum))
+        if m.get("label"):
+            lx, ly = m.get("label_pos", m["path"][-1])
+            _note_box("map_label", m["label"],
+                      (lx * W - px(150), ly * H - px(40),
+                       lx * W + px(150), ly * H + px(40)),
+                      m.get("at", 0) + 1.2, dur)
+    DRAW = 1.6
+
+    def frame(t):
+        canvas = Image.fromarray(base.copy()).convert("RGBA")
+        d = ImageDraw.Draw(canvas, "RGBA")
+        for m, pts, cum in prepped:
+            at = m.get("at", 0)
+            if t < at - 0.3:
+                continue
+            color = m.get("color", GOLD)
+            kind = m.get("kind", "arrow")
+            # origin pulse just before the move starts
+            if t < at:
+                k = 1 - (at - t) / 0.3
+                r = px(14) + int(px(26) * k)
+                a = int(200 * (1 - k * 0.5))
+                x0, y0 = pts[0]
+                d.ellipse([x0 - r, y0 - r, x0 + r, y0 + r],
+                          outline=color + (a,), width=px(5))
+                continue
+            p = min(1.0, (t - at) / DRAW)
+            if kind == "fill":
+                x0, y0 = pts[0]
+                r = int(px(130) * ease_out_cubic(p))
+                a = int(80 * p)
+                d.ellipse([x0 - r, y0 - r, x0 + r, y0 + r],
+                          fill=color + (a,))
+                rr = px(20) + int(px(8) * np.sin(t * 5))
+                d.ellipse([x0 - rr, y0 - rr, x0 + rr, y0 + rr],
+                          outline=color + (230,), width=px(5))
+            else:
+                # drawn portion of the route
+                n_seg = 24
+                drawn = [ _point_at(pts, cum, p * i / n_seg)[0]
+                          for i in range(n_seg + 1)]
+                if len(drawn) > 1:
+                    d.line(drawn, fill=color + (235,), width=px(7))
+                tip, direction = _point_at(pts, cum, p)
+                if kind == "arrow" and p > 0.02:
+                    dx, dy = direction
+                    s = px(26)
+                    tip_pt = (tip[0] + dx * s, tip[1] + dy * s)
+                    l_pt = (tip[0] - dy * s * 0.7, tip[1] + dx * s * 0.7)
+                    r_pt = (tip[0] + dy * s * 0.7, tip[1] - dx * s * 0.7)
+                    d.polygon([tip_pt, l_pt, r_pt], fill=color + (255,))
+                elif kind == "dots":
+                    for j in range(7):
+                        sj = p - j * 0.055 - ((t * 0.35) % 0.055)
+                        if sj <= 0:
+                            continue
+                        (qx, qy), _ = _point_at(pts, cum, min(1.0, sj))
+                        rr = px(11) if j else px(15)
+                        d.ellipse([qx - rr, qy - rr, qx + rr, qy + rr],
+                                  fill=color + (255,))
+                    if p >= 1:
+                        (ex, ey), _ = _point_at(pts, cum, 1.0)
+                        rr = px(18) + int(px(7) * np.sin(t * 6))
+                        d.ellipse([ex - rr, ey - rr, ex + rr, ey + rr],
+                                  outline=color + (230,), width=px(5))
+            # label pops once the move completes
+            if m.get("label") and t >= at + 1.2:
+                lt = t - (at + 1.2)
+                s = max(0.01, ease_out_back(min(1.0, lt / 0.4)))
+                lf = font(FB, 38)
+                tile = text_rgba(m["label"], lf, fill=(255, 255, 255, 255),
+                                 max_w=520)
+                fg = _rz(tile, s)
+                tw2, th2 = fg.size
+                lx, ly = m.get("label_pos", m["path"][-1])
+                bx = int(lx * W - tw2 / 2)
+                by = int(ly * H - th2 - px(30))
+                pad = px(18)
+                bg = Image.new("RGBA", (tw2 + pad * 2, th2 + pad * 2),
+                               (10, 12, 18, 225))
+                bg.alpha_composite(fg, (pad, pad))
+                _place(canvas, bg, lx * W, by + (th2 + pad * 2) / 2)
+        return np.asarray(canvas.convert("RGB"))
+
+    clip = VideoClip(frame, duration=dur)
+    if title:
+        clip = overlay_text(clip, title, FB, 64, dur, y_pos=px(120))
+    if caption:
+        clip = overlay_text(clip, caption, FR, 40, dur)
+    return clip
+
+
+def counter_scene(target, dur, label, bg_img, prefix="", suffix="", start=0,
+                  decimals=0, at=0):
+    """Big animated number ticking up (or down) over a background image.
+
+    target: final number. label: gold caption above the number ("enslaved
+    people freed"). prefix/suffix for "$"/"%"/" million". Eases out into
+    the target. Quantities made visceral -- OverSimplified's favorite move.
+    """
+    from moviepy import VideoClip
+    _note_prim("counter_scene")
+    base = _cover_arr(bg_img, darken=55)
+    y_num = H // 2 - px(60)
+    _note_box("counter", f"{label}: {target}",
+              (px(60), y_num - px(220), W - px(60), y_num + px(220)), at, dur)
+
+    def frame(t):
+        canvas = Image.fromarray(base.copy())
+        canvas = Image.fromarray(
+            scrim_band(np.asarray(canvas), y_num - px(260), y_num + px(260),
+                       strength=0.45))
+        d = ImageDraw.Draw(canvas)
+        lf = font(FB, 44)
+        d.text((W // 2, y_num - px(200)), label, font=lf,
+               fill=GOLD + (255,), anchor="ma")
+        p = min(1.0, max(0.0, (t - at) / max(0.01, dur - at)))
+        v = start + (target - start) * ease_out_cubic(p)
+        txt = f"{prefix}{v:,.{decimals}f}{suffix}"
+        nf = font(FB, 150)
+        # shrink-to-fit for very large numbers
+        tw = d.textlength(txt, font=nf)
+        while tw > W - px(120) and nf.size > px(40):
+            nf = font(FB, int(nf.size / SCALE * 0.92))
+            tw = d.textlength(txt, font=nf)
+        d.text((W // 2, y_num), txt, font=nf, fill=(255, 255, 255, 255),
+               anchor="ma")
+        # milestone ticks: small gold ticks under the number as it climbs
+        if p > 0.02:
+            for i in range(1, 10):
+                if p >= i / 10:
+                    x = px(140) + (W - px(280)) * i / 10
+                    d.line([(x, y_num + px(150)), (x, y_num + px(170))],
+                           fill=GOLD + (255,), width=px(5))
+        return np.asarray(canvas)
+
+    return VideoClip(frame, duration=dur)
+
+
+def vs_scene(img_left, img_right, dur, name_left, name_right, title=""):
+    """Versus face-off: two portraits slam in from opposite sides, VS badge
+    pops center with a clash pulse. For debates, elections, court cases --
+    the comparison format the exam grades."""
+    from moviepy import VideoClip
+    _note_prim("vs_scene")
+    la = _cover_arr(img_left)
+    ra = _cover_arr(img_right)
+    half = W // 2
+    # pre-crop each half (cover within its half)
+    left = np.asarray(Image.fromarray(la).crop(
+        ((W - half * 2) // 2, 0, (W - half * 2) // 2 + half * 2, H)
+        ).resize((half, H), Image.LANCZOS))
+    right = np.asarray(Image.fromarray(ra).crop(
+        ((W - half * 2) // 2, 0, (W - half * 2) // 2 + half * 2, H)
+        ).resize((half, H), Image.LANCZOS))
+    _note_box("vs_name", name_left, (px(40), H - px(420), half - px(40),
+                                    H - px(260)), 0.5, dur)
+    _note_box("vs_name", name_right, (half + px(40), H - px(420), W - px(40),
+                                      H - px(260)), 0.5, dur)
+
+    def frame(t):
+        canvas = Image.new("RGBA", (W, H), (12, 14, 20, 255))
+        k = ease_out_cubic(min(1.0, t / 0.7))
+        lx = int(-half + half * k)
+        rx = int(W - half * k)
+        canvas.paste(Image.fromarray(left), (lx, 0))
+        canvas.paste(Image.fromarray(right), (rx, 0))
+        d = ImageDraw.Draw(canvas, "RGBA")
+        d.line([(half, 0), (half, H)], fill=GOLD + (255,), width=px(6))
+        # names slam in
+        if t >= 0.5:
+            s = max(0.01, ease_out_back(min(1.0, (t - 0.5) / 0.4)))
+            for name, cx in ((name_left, half // 2), (name_right, half + half // 2)):
+                tile = text_rgba(name, font(FB, 44),
+                                 fill=(255, 255, 255, 255), max_w=half - px(80))
+                fg = _rz(tile, s)
+                tw2, th2 = fg.size
+                pad = px(16)
+                bg = Image.new("RGBA", (tw2 + pad * 2, th2 + pad * 2),
+                               (10, 12, 18, 230))
+                bg.alpha_composite(fg, (pad, pad))
+                _place(canvas, bg, cx, H - px(330))
+        if title:
+            arr = np.asarray(canvas)
+            canvas = Image.fromarray(
+                scrim_band(arr, 0, px(300), strength=0.55))
+        # VS badge pops center, then clash pulses
+        if t >= 0.9:
+            s = max(0.01, ease_out_back(min(1.0, (t - 0.9) / 0.35)))
+            rr = int(px(95) * s)
+            d.ellipse([half - rr, H // 2 - rr, half + rr, H // 2 + rr],
+                      fill=(16, 18, 26, 255), outline=GOLD + (255,),
+                      width=px(8))
+            vt = text_rgba("VS", font(FB, 84), fill=GOLD + (255,))
+            vfg = _rz(vt, s)
+            _place(canvas, vfg, half, H // 2)
+            for pt in (1.15, 1.7):
+                if t >= pt:
+                    rk = (t - pt) / 0.6
+                    if rk < 1:
+                        r2 = int(px(100) + rk * px(160))
+                        a2 = int(220 * (1 - rk))
+                        d.ellipse([half - r2, H // 2 - r2, half + r2, H // 2 + r2],
+                                  outline=GOLD + (a2,), width=px(6))
+        return np.asarray(canvas.convert("RGB"))
+
+    clip = VideoClip(frame, duration=dur)
+    if title:
+        clip = overlay_text(clip, title, FB, 60, dur, y_pos=px(110))
+    return clip
+
+
+def wipe_scene(img_a, img_b, dur, label_a="", label_b="", direction="left"):
+    """Before/after wipe: image B sweeps across A with a gold edge line.
+
+    direction "left": B enters from the left (edge travels left->right).
+    The clearest visual form of change-over-time -- a micro-payoff."""
+    from moviepy import VideoClip
+    _note_prim("wipe_scene")
+    a = _cover_arr(img_a)
+    b = _cover_arr(img_b)
+
+    def frame(t):
+        k = ease_in_out_cubic(min(1.0, max(0.0, t / dur)))
+        edge = int(W * k) if direction == "left" else int(W * (1 - k))
+        canvas = Image.fromarray(a.copy()).convert("RGBA")
+        if direction == "left":
+            if edge > 0:
+                canvas.paste(Image.fromarray(b).crop((0, 0, edge, H)), (0, 0))
+        else:
+            if edge < W:
+                canvas.paste(Image.fromarray(b).crop((edge, 0, W, H)), (edge, 0))
+        d = ImageDraw.Draw(canvas, "RGBA")
+        d.line([(edge, 0), (edge, H)], fill=GOLD + (255,), width=px(7))
+        # edge glow dot traveling with the wipe
+        d.ellipse([edge - px(16), H // 2 - px(16), edge + px(16), H // 2 + px(16)],
+                  fill=GOLD + (255,))
+        for txt, cx in ((label_a, px(200)), (label_b, W - px(200))):
+            if txt:
+                tile = text_rgba(txt, font(FB, 40),
+                                 fill=(255, 255, 255, 255), max_w=px(360))
+                pad = px(14)
+                bg = Image.new("RGBA",
+                               (tile.width + pad * 2, tile.height + pad * 2),
+                               (10, 12, 18, 220))
+                bg.alpha_composite(tile, (pad, pad))
+                _place(canvas, bg, cx, px(120))
+        return np.asarray(canvas.convert("RGB"))
+
+    return VideoClip(frame, duration=dur)
+
+
+def myth_stamp(base_clip, at, dur, myth_text, correction):
+    """Misconception-buster over a base clip: claim card appears, giant red
+    MYTH stamp slams diagonally with screen shake, correction slides up.
+
+    at: seconds into the base clip when the beat starts. dur: beat length.
+    Keep to <=2 per video -- scarcity preserves punch."""
+    from moviepy import VideoClip
+    _note_prim("myth_stamp")
+    base_dur = base_clip.duration
+    _note_box("myth_stamp", "MYTH",
+              (W // 2 - px(330), H // 2 - px(160), W // 2 + px(330),
+               H // 2 + px(160)), at + 0.9, at + dur)
+    _note_box("myth_correction", correction,
+              (px(60), H - px(560), W - px(60), H - px(360)), at + 1.7,
+               at + dur)
+
+    def frame(t):
+        canvas = Image.fromarray(base_clip.get_frame(t)).convert("RGBA")
+        lt = t - at
+        if lt < 0 or lt > dur:
+            return np.asarray(canvas.convert("RGB"))
+        d = ImageDraw.Draw(canvas, "RGBA")
+        # claim card
+        if lt >= 0:
+            tile = text_rgba(myth_text, font(FB, 46),
+                             fill=(255, 255, 255, 255), max_w=W - px(220))
+            pad = px(26)
+            card = Image.new("RGBA",
+                             (tile.width + pad * 2, tile.height + pad * 2),
+                             (16, 18, 26, 235))
+            card.alpha_composite(tile, (pad, pad))
+            _place(canvas, card, W // 2, H // 2 - px(320))
+            eb = text_rgba("COMMON MISTAKE", font(FB, 34),
+                           fill=(200, 205, 215, 255))
+            epad = px(14)
+            echip = Image.new("RGBA",
+                              (eb.width + epad * 2, eb.height + epad * 2),
+                              (10, 12, 18, 235))
+            echip.alpha_composite(eb, (epad, epad))
+            _place(canvas, echip, W // 2,
+                   H // 2 - px(320) - card.height // 2 - px(44))
+        # stamp slam + screen shake
+        shake_x, shake_y = 0, 0
+        if lt >= 0.9:
+            st = lt - 0.9
+            s = max(0.01, ease_out_back(min(1.0, st / 0.3)))
+            if st < 0.5:
+                decay = 1 - st / 0.5
+                shake_x = int(px(16) * decay * np.sin(st * 95))
+                shake_y = int(px(12) * decay * np.sin(st * 77 + 1))
+            stamp = text_rgba("MYTH", font(FB, 190),
+                              fill=STAMP_RED + (255,), max_w=px(700))
+            stamp = stamp.rotate(-12, expand=True, resample=Image.BICUBIC)
+            sfg = np.asarray(_rz(stamp, s))
+            sw, sh = sfg.shape[1], sfg.shape[0]
+            # red border box around the stamp
+            pad = px(24)
+            box = Image.new("RGBA", (sw + pad * 2, sh + pad * 2), (0, 0, 0, 0))
+            bd = ImageDraw.Draw(box)
+            bd.rectangle([0, 0, sw + pad * 2 - 1, sh + pad * 2 - 1],
+                         outline=STAMP_RED + (255,), width=px(10))
+            box.alpha_composite(Image.fromarray(sfg), (pad, pad))
+            _place(canvas, box, W // 2 + shake_x, H // 2 + shake_y)
+        # correction slides up
+        if lt >= 1.7:
+            ct = lt - 1.7
+            tile = text_rgba(correction, font(FR, 42),
+                             fill=(255, 255, 255, 255), max_w=W - px(200))
+            pad = px(22)
+            card = Image.new("RGBA",
+                             (tile.width + pad * 2, tile.height + pad * 2),
+                             (10, 12, 18, 235))
+            card.alpha_composite(tile, (pad, pad))
+            cd = ImageDraw.Draw(card)
+            cd.rectangle([0, 0, px(10), card.height], fill=GOLD + (255,))
+            y_final = H - px(300)
+            y = y_final + px(140) * max(0, 1 - ct / 0.5)
+            _place(canvas, card, W // 2, y)
+        return np.asarray(canvas.convert("RGB"))
+
+    return VideoClip(frame, duration=base_dur)
+
+
+def skit_scene(script_beats, dur, title="THOUGHT BUBBLE"):
+    """Cutaway skit: original flat-art characters act out a 2-3 beat dialogue.
+
+    script_beats: list of {"speaker": "A"|"B", "name": str, "text": str,
+      "color": (r,g,b)}. Beats split dur evenly (or carry "at"/"dur").
+    The CrashCourse Thought Bubble transfer: a voice + style change is a hard
+    attention reset. Max 1 per video. Charm over fidelity -- the VOICES carry
+    it, so keep the art simple and original (never clip art)."""
+    from moviepy import VideoClip
+    _note_prim("skit_scene")
+    # beat timing
+    beats = []
+    n = len(script_beats)
+    for i, b in enumerate(script_beats):
+        at = b.get("at", dur * i / n)
+        bd = b.get("dur", dur / n)
+        beats.append((b, at, min(dur, at + bd)))
+        _note_box("skit_line", b["text"],
+                  (px(80), px(300), W - px(80), H - px(500)), at,
+                  min(dur, at + bd))
+
+    def draw_figure(d, cx, base_y, color, speaking, t, flip=False):
+        """Original flat character: circle head, capsule body, dot eyes."""
+        bounce = int(px(10) * abs(np.sin(t * 6))) if speaking else 0
+        by = base_y - bounce
+        hr = px(70)
+        # body: rounded capsule
+        bw, bh = px(150), px(300)
+        d.rounded_rectangle([cx - bw / 2, by - bh, cx + bw / 2, by],
+                            radius=bw // 2, fill=color + (255,))
+        # head
+        hy = by - bh - hr - px(18)
+        d.ellipse([cx - hr, hy - hr, cx + hr, hy + hr],
+                  fill=(244, 214, 178, 255))
+        # hair cap
+        d.arc([cx - hr, hy - hr, cx + hr, hy + hr], 180, 360,
+              fill=color + (255,), width=px(22))
+        # eyes (look toward the other speaker)
+        ex = px(16) * (-1 if flip else 1)
+        for sx in (-1, 1):
+            d.ellipse([cx + sx * px(26) + ex - px(9), hy - px(9),
+                       cx + sx * px(26) + ex + px(9), hy + px(9)],
+                      fill=(20, 20, 25, 255))
+        # mouth: open when speaking
+        if speaking:
+            mw = px(22) + int(px(8) * abs(np.sin(t * 9)))
+            d.ellipse([cx + ex - mw, hy + px(34) - px(12),
+                       cx + ex + mw, hy + px(34) + px(12)],
+                      fill=(120, 40, 40, 255))
+        else:
+            d.arc([cx + ex - px(22), hy + px(18), cx + ex + px(22), hy + px(52)],
+                  20, 160, fill=(20, 20, 25, 255), width=px(7))
+        # arms: simple capsules angled out
+        for sx in (-1, 1):
+            d.line([(cx + sx * bw * 0.45, by - bh * 0.7),
+                    (cx + sx * bw * 0.85, by - bh * 0.35)],
+                   fill=color + (255,), width=px(34))
+
+    def frame(t):
+        # warm slate stage -- flat color, never black/white
+        top = np.array([52, 58, 82], dtype=np.float32)
+        bot = np.array([34, 38, 56], dtype=np.float32)
+        grad = np.linspace(0, 1, H)[:, None, None]
+        col = (top[None, None, :] * (1 - grad) + bot[None, None, :] * grad)
+        arr = np.repeat(col, W, axis=1)
+        canvas = Image.fromarray(arr.astype(np.uint8)).convert("RGBA")
+        d = ImageDraw.Draw(canvas, "RGBA")
+        # floor line + inset frame = the cutaway visual language
+        m = px(36)
+        d.rounded_rectangle([m, m, W - m, H - m], radius=px(40),
+                            outline=(233, 196, 106, 160), width=px(5))
+        d.line([(m + px(20), H - px(420)), (W - m - px(20), H - px(420))],
+               fill=(255, 255, 255, 40), width=px(4))
+        # title chip
+        tt = text_rgba("✦ " + title + " ✦", font(FB, 40),
+                       fill=GOLD + (255,))
+        _place(canvas, tt, W // 2, px(110))
+        # active beat
+        active = beats[0][0]
+        for b, at, bd in beats:
+            if at <= t < bd:
+                active = b
+                break
+        else:
+            if t >= beats[-1][2]:
+                active = beats[-1][0]
+        for b, at, bd in beats:
+            sp = b["speaker"]
+            cx = W // 2 - px(260) if sp == "A" else W // 2 + px(260)
+            draw_figure(d, cx, H - px(420), b.get("color", (90, 140, 200)),
+                        speaking=(b is active and at <= t < bd), t=t,
+                        flip=(sp == "B"))
+            # name tag
+            nt = text_rgba(b.get("name", sp), font(FB, 34),
+                           fill=(255, 255, 255, 255))
+            _place(canvas, nt, cx, H - px(360))
+        # speech bubble for the active beat
+        b, at, bd = next((bb for bb in beats if bb[1] <= t < bb[2]), beats[-1])
+        lt = t - at
+        s = max(0.01, ease_out_back(min(1.0, lt / 0.35)))
+        tile = text_rgba(b["text"], font(FR, 44), fill=(18, 20, 28, 255),
+                         max_w=W - px(320))
+        fg = _rz(tile, s)
+        bw2, bh2 = fg.size
+        pad = px(30)
+        bub = Image.new("RGBA", (bw2 + pad * 2, bh2 + pad * 2), (0, 0, 0, 0))
+        db = ImageDraw.Draw(bub)
+        db.rounded_rectangle([0, 0, bw2 + pad * 2 - 1, bh2 + pad * 2 - 1],
+                             radius=px(36), fill=(242, 240, 234, 255))
+        bub.alpha_composite(fg, (pad, pad))
+        # tail toward the speaker
+        sp = b["speaker"]
+        tx = W // 2 - px(260) if sp == "A" else W // 2 + px(260)
+        db.polygon([(tx - W // 2 + bub.width // 2 - px(24), bub.height - 4),
+                    (tx - W // 2 + bub.width // 2 + px(24), bub.height - 4),
+                    (tx - W // 2 + bub.width // 2, bub.height + px(44))],
+                   fill=(242, 240, 234, 255))
+        _place(canvas, bub, W // 2, px(560))
+        return np.asarray(canvas.convert("RGB"))
+
+    return VideoClip(frame, duration=dur)
+
+
+def chapter_bar(base_clip, segments):
+    """Persistent Kurzgesagt-style progress spine over a base clip.
+
+    segments: list of (label, start, end) in seconds. Draws a slim bottom
+    bar: gold fill to current t, chapter ticks, and a "2 of 5 · Causes"
+    chip. Makes 8 minutes feel mapped."""
+    from moviepy import VideoClip
+    _note_prim("chapter_bar")
+    total = base_clip.duration
+    n = len(segments)
+
+    def frame(t):
+        canvas = Image.fromarray(base_clip.get_frame(t)).convert("RGBA")
+        d = ImageDraw.Draw(canvas, "RGBA")
+        y = H - px(64)
+        x0, x1 = px(60), W - px(60)
+        d.rounded_rectangle([x0, y - px(8), x1, y + px(8)], radius=px(8),
+                            fill=(255, 255, 255, 70))
+        fx = x0 + (x1 - x0) * min(1.0, t / total)
+        if fx > x0:
+            d.rounded_rectangle([x0, y - px(8), fx, y + px(8)], radius=px(8),
+                                fill=GOLD + (255,))
+        for label, s, e in segments:
+            tx = x0 + (x1 - x0) * (s / total)
+            d.line([(tx, y - px(14)), (tx, y + px(14))],
+                   fill=(255, 255, 255, 200), width=px(4))
+        cur = next((i for i, (lb, s, e) in enumerate(segments) if s <= t < e),
+                   n - 1)
+        label = segments[cur][0]
+        chip = text_rgba(f"{cur + 1} of {n} · {label}", font(FB, 34),
+                         fill=GOLD + (255,), max_w=W - px(200))
+        pad = px(16)
+        bg = Image.new("RGBA", (chip.width + pad * 2, chip.height + pad * 2),
+                       (10, 12, 18, 225))
+        bg.alpha_composite(chip, (pad, pad))
+        bgd = ImageDraw.Draw(bg)
+        bgd.rounded_rectangle([0, 0, bg.width - 1, bg.height - 1],
+                              radius=px(18), outline=GOLD + (200,), width=px(3))
+        _place(canvas, bg, W // 2, y - px(64))
+        return np.asarray(canvas.convert("RGB"))
+
+    return VideoClip(frame, duration=total)

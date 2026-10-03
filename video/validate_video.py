@@ -110,6 +110,8 @@ SCHEMA = {
             "topics": "list[str]; CB topic codes, checked against build/cb-codes.json",
             "title": "str; working title",
             "description": "str",
+            "ai_clips": "dict stage -> {image, prompt, seed, clip}; AI-generated "
+                        "ambient clips (video/animate_still.py). Enforced by AI-CLIP.",
         },
     },
     "narration_json": {
@@ -135,6 +137,11 @@ CANONICAL_PRIMS = [
     "typewriter_scene", "kinetic_text", "overlay_text", "title_card",
     "title_scene", "bullet_slide", "timeline_scene", "callout_scene",
     "caption_scene", "annotate", "assemble",
+    # animated-graphics layer (built 2026-10-02)
+    "map_scene", "counter_scene", "vs_scene", "wipe_scene", "myth_stamp",
+    "skit_scene", "chapter_bar",
+    # AI ambient clips ("living engravings", built 2026-10-02)
+    "ai_clip_scene",
 ]
 EASINGS = ["ease_out_back", "ease_out_cubic", "ease_in_out_cubic"]
 # Cuba-specific, NOT canonical: warn when referenced outside Cuba content.
@@ -146,7 +153,7 @@ ANNOTATE_KINDS = {"term", "label", "point", "arrow", "pop"}
 # Primitives that render a near-black flat background when bg_img is omitted:
 # bg_img is REQUIRED (never optional) on these -- NO-BLANK-FRAMES (a).
 BG_IMG_REQUIRED = {"kinetic_text", "title_card", "typewriter_scene",
-                   "timeline_scene", "bullet_slide"}
+                   "timeline_scene", "bullet_slide", "counter_scene"}
 
 ALLOWED_VOICES = {"narrator", "kennedy"}   # register new voices here
 ALLOWED_PAUSE_MARKUP = frozenset()          # no pause tokens registered yet:
@@ -1156,6 +1163,12 @@ INTENTIONAL_MOTION = {
     # ≥1 of these per stage; kb_scene/caption_scene drift alone is banned.
     "punch_in", "zoom_to", "camera_path", "doc_zoom", "callout_scene",
     "timeline_scene", "typewriter_scene", "kinetic_text", "bullet_slide",
+    # animated-graphics layer (built 2026-10-02); chapter_bar is a persistent
+    # overlay, not a stage move, so it is deliberately excluded.
+    "map_scene", "counter_scene", "vs_scene", "wipe_scene", "myth_stamp",
+    "skit_scene",
+    # AI ambient clip: motion by construction, always intentional.
+    "ai_clip_scene",
 }
 
 
@@ -1250,6 +1263,86 @@ def script_candidates(name):
     return cands
 
 
+
+
+# ==================================================================== ai clips
+def _git_tracked(path):
+    """True iff path is tracked in git (committed, not just on disk)."""
+    try:
+        rel = os.path.relpath(os.path.abspath(path), REPO)
+        r = subprocess.run(["git", "-C", REPO, "ls-files", "--error-unmatch",
+                            rel], capture_output=True)
+        return r.returncode == 0
+    except Exception:
+        return False
+
+
+def gate_ai_clips(manifest, name):
+    """AI-CLIP: ai_clip stages need a committed clip + prompt on record.
+
+    Manifests may carry an optional "ai_clips" section:
+        "ai_clips": {"<stage>": {"image": "assets/images/...",
+                                 "prompt": "<ambient-motion only>",
+                                 "seed": 42,
+                                 "clip": "video/ai_clips/<name>.mp4"}}
+    The clip is generated on the 5090 with video/animate_still.py
+    (LTX-Video, no API keys). Stage BUILDERS play it via
+    motion.ai_clip_scene(clip_path, dur). This gate enforces:
+      - every field present, seed an int, clip ends .mp4
+      - source image exists locally (no remote refs)
+      - clip file exists AND is committed to git (reproducible builds)
+      - prompt passes the same ambient-only filter as generation time
+        (imported from animate_still: one function, two enforcement points)
+    """
+    gate = "AI-CLIP"
+    entries = manifest.get("ai_clips")
+    if not entries:
+        return
+    if not isinstance(entries, dict):
+        fail(gate, f"{name}: ai_clips must be a dict of stage -> spec")
+        return
+    if HERE not in sys.path:
+        sys.path.insert(0, HERE)
+    try:
+        from animate_still import check_prompt_safety
+    except Exception as e:
+        fail(gate, f"{name}: cannot import prompt filter: {e}")
+        return
+    plan_stages = {s for s, _a in manifest.get("plan", [])
+                   if isinstance(s, str)}
+    for stage, spec in entries.items():
+        where = f"{name}: ai_clips[{stage}]"
+        if not isinstance(spec, dict):
+            fail(gate, f"{where}: spec must be an object")
+            continue
+        for field in ("image", "prompt", "seed", "clip"):
+            if field not in spec:
+                fail(gate, f"{where}: missing field '{field}'")
+        if "seed" in spec and not isinstance(spec["seed"], int):
+            fail(gate, f"{where}: seed must be an int")
+        img = spec.get("image")
+        if isinstance(img, str):
+            if resolve_image(img) is None:
+                fail(gate, f"{where}: source image not found: {img}")
+        clip = spec.get("clip")
+        if isinstance(clip, str):
+            if not clip.endswith(".mp4"):
+                fail(gate, f"{where}: clip must end with .mp4")
+            cp = resolve_image(clip)
+            if cp is None:
+                fail(gate, f"{where}: clip file not found: {clip}")
+            elif not _git_tracked(cp):
+                fail(gate, f"{where}: clip exists but is NOT committed "
+                            f"to git: {clip} (commit it: reproducibility)")
+        pr = spec.get("prompt")
+        if isinstance(pr, str):
+            ok, detail = check_prompt_safety(pr)
+            if not ok:
+                fail(gate, f"{where}: prompt rejected: {detail}")
+        if stage not in plan_stages:
+            warn(gate, f"{where}: stage not in plan (clip unused?)")
+
+
 def run_manifest(mpath):
     unit = os.path.splitext(os.path.basename(mpath))[0]
     print(f"== manifest: {unit} ==")
@@ -1263,6 +1356,7 @@ def run_manifest(mpath):
     gate_images_manifest(manifest)
     gate_quotes_manifest(manifest)
     gate_animation_refs(mod_py if os.path.isfile(mod_py) else None, name)
+    gate_ai_clips(manifest, name)
     gate_blank_frames_markup_pngs(manifest)
     # rendered-frame gate: scene durations from re-measured audio
     adir = os.path.join(HERE, "audio", name)

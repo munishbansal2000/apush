@@ -193,6 +193,20 @@ Every file in `video/manifests/*.json` — all 48 reconciled into this one schem
 - `callout_scene(img_path, dur, points, caption="")` — gold rings ripple onto points in sequence with labels; `points` = `(cx, cy, label)` in 0..1. For image analysis.
 - `caption_scene(img_path, caption, dur, **kb_kw)` — Ken Burns + gradient scrim + caption bar sliding up from bottom.
 
+**ANIMATED GRAPHICS (built 2026-10-02 — the answer to "all I see is image + text"):**
+
+Things that MOVE on screen. All scriptable PIL frame functions, all PD-safe
+(original art or local PD images), all scale-aware (`px()`/`W`/`H`). Demos:
+`video/render_anim_demos.py` → `~/workspace/your_files/anim-demos/*.mp4`.
+
+- `map_scene(map_img, dur, moves, title="", caption="")` — routes draw themselves on any PD map. `moves` = list of `{"path": [(x,y)...]` 0..1, `"at"`: seconds, `"color"`, `"kind"`: `"arrow"` (route draws + arrowhead tip) / `"dots"` (marching dots) / `"fill"` (territory pulses lit), `"label"`, `"label_pos"}`. Origin pulse before each move; labels pop on completion. **WHEN:** wars, expansion, migration, voyages, trade flows — the #1 APUSH content type. The OverSimplified transfer.
+- `counter_scene(target, dur, label, bg_img, prefix="", suffix="", start=0, decimals=0, at=0)` — big number ticking up/down with ease-out into the target, gold caption above, milestone ticks below. `bg_img` REQUIRED. **WHEN:** any statistic the narration quantifies — casualties, votes, dollars, years. A moving number is 10x more arresting than a stated one.
+- `vs_scene(img_left, img_right, dur, name_left, name_right, title="")` — frame splits; portraits slam in from opposite sides; names slam under each; "VS" badge pops center with clash pulses. **WHEN:** debates, elections, court cases, rival figures — primes the viewer for comparison (a graded reasoning skill).
+- `wipe_scene(img_a, img_b, dur, label_a="", label_b="", direction="left")` — B sweeps across A with a gold edge line + glow dot; label chips ("1803"/"1848"). **WHEN:** before/after reveals — the clearest visual form of change-over-time, a micro-payoff every time.
+- `myth_stamp(base_clip, at, dur, myth_text, correction)` — claim card appears; giant red "MYTH" stamp slams diagonally with screen shake; correction slides up with gold bar. Max 2 per video — scarcity preserves punch. **WHEN:** misconception-confrontation beats (the highest-retention teaching move in the bank's own design).
+- `skit_scene(script_beats, dur, title="THOUGHT BUBBLE")` — cutaway with original flat-art characters (circle heads, capsule bodies — charm over fidelity) acting out 2–3 dialogue beats in speech bubbles, with a second TTS voice. `beats` = `[{"speaker": "A"/"B", "name", "text", "color"}]`. Max 1 per video. **WHEN:** the "human moment" — dramatize causation through dialogue; a voice + style change is a hard attention reset. The CrashCourse transfer.
+- `chapter_bar(base_clip, segments)` — persistent slim gold progress bar + chapter ticks + "2 of 5 · Causes" chip. `segments` = `[(label, start, end)]` seconds. **WHEN:** every video's structural spine — viewers tolerate 8 minutes when they can see the map. The Kurzgesagt transfer.
+
 **ANNOTATION LAYER (the 12-second rule lives here):**
 - `annotate(base_clip, notes)` — notes = `[(at, dur, kind, kwargs)]`; kinds `term`/`label`/`point`/`arrow`/`pop` (see §2). Each note springs in via `ease_out_back` over 0.35s, holds, fades out over the last 0.25s. Stack multiple per scene for pace.
 - `slide_scene(pil_img, dur)` — static presentation slide (pre-rendered markup PNGs from `render_v*.py`); the grading-video path primitive. Resized to 1080×1920 if needed.
@@ -203,16 +217,16 @@ Every file in `video/manifests/*.json` — all 48 reconciled into this one schem
 - `assemble(scenes, audios, out, fps=30)` — concatenates with 0.35s crossfades (`padding=-0.2`); per-scene narration auto-placed at overlap-adjusted scene starts (audio never bleeds into the wrong visual); MP4 with AAC. `assert len(scenes) == len(audios)`. Visual timing ALWAYS follows measured audio.
 - `build_video.py` (grading-video path): renders each stage's PNG from `STAGES`, measures each MP3 with ffprobe, sizes each stage to the measured duration (or duration/share), encodes per-stage segments, concats, muxes the full narration track. `--out` overrides the manifest `out`.
 
-**SPECIFIED-BUT-UNBUILT primitives (FUN-CATALOG specs — not in `motion.py` yet):**
-Do NOT reference these in build scripts, content JSON, or manifests until implemented. `validate_video.py`'s `CANONICAL_PRIMS` deliberately excludes them — that exclusion is intentional, not an oversight.
+**SPECIFIED-BUT-UNBUILT primitives:** none — all 7 FUN-CATALOG motion primitives
+(`map_scene`, `myth_stamp`, `chapter_bar`, `counter_scene`, `vs_scene`,
+`wipe_scene`, `skit_scene`) were built 2026-10-02 and are canonical above.
+Do NOT reference anything not in the vocabulary.
 
-- `map_scene(map_img, dur, moves)` — MODERATE (~100 lines). **Canonical spec is FUN-CATALOG #17's — it wins over the playbook v1.1 sketch** (`map_scene(map_img, dur, points=None, routes=None, caption="")` from 5978e39, now retired). `map_img`: local repo path (required), the base map image; `moves`: list of `(path_points, at, color, kind)` — `path_points`: polyline in 0..1 coords; `at`: seconds when the move starts; `color`: gold `(233,196,106)` default; `kind` ∈ {`arrow`, `dots`, `fill`}: `arrow` = progressive path draw (troop movements, voyages, migration routes), `dots` = marching-dot markers with pulse, `fill` = territory shading animating in (Louisiana Purchase, Mexican Cession). New frame function drawing progressive paths + pulsing markers; composes the `cuba_map_scene` technique. Why the catalog won: per-move start timing (`at`), per-move color, and the `fill` kind (territory shading — also required by PRODUCTION-GUIDE's engine backlog) were missing from the v1.1 sketch; the `caption` param moves to the annotate layer (`label`) instead of living on the primitive. `cuba_map_scene(dur, caption="")` stays Cuba-specific and **not canonical** — reimplement the Cuba beat on `map_scene` once built. Required before any map-driven video beyond the Cuba pilot.
-- `myth_stamp(base_clip, at, dur, myth_text, correction)` — TRIVIAL (~40 lines). Composes `annotate` kind `'pop'` (rotated red tile) + `overlay_text` for the correction + manifest `sfx: "stamp_thud"` cue. FUN-CATALOG #10. Max 2 per video — scarcity preserves punch.
-- `chapter_bar(base_clip, segments)` — TRIVIAL (~45 lines). `segments` = list of `(label, start, end)`; persistent thin gold progress bar with the current chapter highlighted; composes per-chapter `overlay_text`-style baked frames. Chapter cards themselves are the existing `title_card`. FUN-CATALOG #12.
-- `counter_scene(target, dur, label, bg_img, prefix="", suffix="")` — TRIVIAL (~40 lines). New frame function: interpolated number with easing, big tabular numerals in gold, centered; composes `_bg_base` + `text_rgba`. `bg_img` REQUIRED (no-empty-screen). **Replaces the bible's unbuilt `counter_scene` placeholder with a real spec.** FUN-CATALOG #13.
-- `vs_scene(img_left, img_right, dur, name_left, name_right)` — TRIVIAL (~45 lines). Frame splits; two portraits slide in from opposite sides; names slam under each; `annotate` kind `'pop'` for the center "VS" badge. Composes `kb_scene` halves. FUN-CATALOG #15.
-- `wipe_scene(img_a, img_b, dur, label_a, label_b)` — MODERATE (~70 lines). New frame function: two `kb_scene`-style bases composited with a moving vertical mask + gold edge line + labels. The clearest visual form of causation and change-over-time. FUN-CATALOG #14.
-- `skit_scene(script_beats, dur)` — MODERATE (~90 lines + one-time original character art). Flat-color background; speech-bubble tiles drawn per beat with `text_rgba`; simple original PIL character shapes (circles/rects — original, never clip art); multi-voice TTS segments timed to beats. Visuals deliberately simple — the *voices* carry it. FUN-CATALOG #16.
+**AI AMBIENT CLIPS ("living engravings" — built 2026-10-02):**
+- `ai_clip_scene(clip_path, dur)` — plays a pre-generated AI ambient clip as a stage: cover-cropped to the canvas (preview-scale aware), looped if shorter than `dur`, trimmed if longer, silent (narration comes from the stage MP3). Counts as intentional motion for the CAMERA-DIRECTION gate.
+- Clips are generated on the 5090 with `video/animate_still.py` (LTX-Video 13B distilled via diffusers, no API keys): PD still + ambient-motion-only prompt → 3–6s MP4. The prompt filter (`animate_still.check_prompt_safety`) rejects anything that adds/removes/changes scene content or people — historically safe by construction.
+- Manifest records each clip in the optional `ai_clips` section: `{"<stage>": {"image": "assets/images/...", "prompt": "...", "seed": 42, "clip": "video/ai_clips/<name>.mp4"}}`. Clips live committed under `video/ai_clips/`. The AI-CLIP validator gate requires: all four fields, seed int, source image local, clip file exists AND committed to git, prompt passes the ambient-only filter, stage present in plan.
+- **WHEN:** 2–3 per video max — hooks and high-impact moments (ship on water, campfire smoke, flag waving, clouds over a battlefield, river current). Spice, not backbone: the code pipeline stays the automated core.
 
 **SPECIFIED-BUT-UNBUILT pipeline steps (outside `motion.py`):**
 - TTS direction-tag parser (FUN-CATALOG #20) — parse `[pause:N]`, `[beat]`, `[slow]`/`[fast]`, `[emphasis]`, `[TIP]`, `[MEMORIZE]`; split text into segments; render silence MP3s (`anullsrc`); `atempo` for rate tags; concatenate per the existing stitch logic in `render_narration_fish.py`. MODERATE. Unlocks #24.
@@ -273,7 +287,10 @@ validator gates.
      `doc_zoom` (documents), `callout_scene` (ring sequence on points of
      interest), `timeline_scene` (sequential reveals), `typewriter_scene`
      (live-typing quotes), `kinetic_text` (slams), `bullet_slide`
-     (staggered entrances). Enforced by the **CAMERA-DIRECTION** gate.
+     (staggered entrances), plus the animated-graphics layer: `map_scene`
+     (drawing routes), `counter_scene` (ticking numbers), `vs_scene`
+     (face-off), `wipe_scene` (before/after reveals), `myth_stamp`,
+     `skit_scene`. Enforced by the **CAMERA-DIRECTION** gate.
    - Direction grammar: open with `punch_in`; tour engravings/photos with
      `camera_path` across exactly the details being discussed; punch
      `zoom_to` onto the figure or object the sentence names; land verdicts
@@ -281,6 +298,19 @@ validator gates.
    - Stages render as **real animated segments** (`BUILDERS[name](dur)` →
      `moviepy` clip → MP4 via `build_video.py`'s animated path), sized to the
      measured narration duration. The old static-PNG-per-stage loop is retired
+4. **Animated graphics, not just camera moves (learned 2026-10-02 — "all I see
+   is image + text").** Camera motion over stills is necessary but not
+   sufficient. Every video should place 2–4 animated-graphics beats:
+   - `map_scene` for ANY movement on a map (voyages, troop advances, territorial
+     change, migration) — never a static map with narration over it.
+   - `counter_scene` whenever the narration states a quantity worth feeling
+     (casualties, votes, dollars, population) — at least 1 per video that
+     contains a big number.
+   - `vs_scene` for debates/elections/rivalries; `wipe_scene` for
+     before/after change-over-time; `myth_stamp` for misconception beats
+     (max 2/video); `skit_scene` for the one human-moment cutaway per video;
+     `chapter_bar` as the persistent spine on every video.
+   - These all count as intentional motion for the CAMERA-DIRECTION gate.
      for sample lessons (legacy path kept for older units without BUILDERS).
 
 ### Preview workflow (motion approval before full-res)
@@ -427,3 +457,52 @@ validator gates.
 5. Write manifest `video/manifests/<name>.json` (§3 schema, canonical).
 6. `python build_video.py <name>` → verify MP4.
 7. Commit everything on `main`. Audio MP3s are committed (rebuilds need no TTS step).
+
+---
+
+## 8. AI Stills Animation ("Living Engravings") — 5090 Runbook
+
+Local image-to-video on the RTX 5090. No API keys, no cloud. A PD still +
+an ambient-motion-only prompt → a 3–6s MP4 where only ambient elements move
+(water, smoke, clouds, flags). The prompt filter is the historical-safety
+guarantee: it rejects anything that adds, removes, or changes scene content.
+
+**Winner (researched 2026-10-02): LTX-Video 13B distilled**
+(`Lightricks/LTX-Video-0.9.8-13B-distilled`) via diffusers
+`LTXImageToVideoPipeline` (auto-fallback to `LTXConditionPipeline`). Why:
+fastest quality-per-VRAM of the local options — 8 distilled steps, ~20GB
+peak, fits 32GB comfortably; CogVideoX-5B-I2V is slower and locked to
+720×480; Wan 2.1 I2V 14B is higher quality but needs 35GB+ and minutes per
+clip; SVD is dated. Distilled few-step models are ideal for subtle ambient
+motion (no complex choreography needed).
+
+**Install (5090; torch already set up for fish-speech):**
+```
+pip install -U "diffusers[torch]" transformers accelerate huggingface_hub imageio imageio-ffmpeg
+huggingface-cli download Lightricks/LTX-Video-0.9.8-13B-distilled   # ~40GB disk
+```
+Fallback (smaller, guaranteed diffusers format): `Lightricks/LTX-Video` (2B, ~10GB VRAM).
+
+**Generate:**
+```
+python video/animate_still.py --image assets/images/u3/ship.jpg \
+    --prompt "Gentle waves ripple across the harbor water; thin clouds drift slowly overhead." \
+    --out video/ai_clips/ship-harbor.mp4 --duration 5 --seed 42
+```
+Always `--dry-run` first (validates prompt safety + model availability, no GPU).
+`--list-examples` prints the 5 copy-paste prompts. Full runbook: `python video/animate_still.py --help`.
+
+**VRAM:** CPU offload is the default (safe on 32GB, ~20GB peak); `--no-offload`
+is faster but borderline. **Time per clip:** estimate 1–4 min at 704×1248 /
+24fps / 8 steps — calibrate on first run and update this line.
+
+**Pipeline integration:**
+1. Commit the clip: `video/ai_clips/<name>.mp4` (committed = reproducible).
+2. Manifest `ai_clips` section: stage → `{image, prompt, seed, clip}`.
+3. Stage BUILDERS: `motion.ai_clip_scene("video/ai_clips/<name>.mp4", dur)`.
+4. `build_video.py` needs no changes — BUILDERS consume it transparently.
+5. Validator AI-CLIP gate: clip committed + prompt on record + ambient-only.
+
+**Copy-paste prompts:** `python video/animate_still.py --list-examples`
+(ship on water · campfire smoke · flag waving · clouds over battlefield ·
+river current). Max 2–3 AI clips per video — hooks and high-impact moments.
