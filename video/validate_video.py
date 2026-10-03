@@ -973,13 +973,16 @@ def png_is_blank(png_path):
         return None
 
 
-def find_built_mp4(out_name, declared_path=None):
+def find_built_mp4(unit, out_name, declared_path=None):
     cands = []
     if declared_path:
         cands.append(declared_path if os.path.isabs(declared_path)
                      else os.path.join(REPO, declared_path))
     cands += [os.path.join(HERE, "output", out_name),
               os.path.join(YOUR_FILES, out_name)]
+    # preview-workflow fallback: the motion-approval proof render
+    # (<unit>-visual-proof.mp4) counts as the built MP4 when no final exists.
+    cands.append(os.path.join(YOUR_FILES, f"{unit}-visual-proof.mp4"))
     for c in cands:
         if os.path.isfile(c):
             return c
@@ -1268,7 +1271,7 @@ def run_manifest(mpath):
         d = ffprobe_dur(os.path.join(adir, mp3))
         if d:
             scenes.append((stage, d / share if share > 1 else d))
-    mp4 = find_built_mp4(manifest["out"])
+    mp4 = find_built_mp4(name, manifest["out"])
     gate_blank_frames_rendered(mp4, scenes, name)
     gate_text_collision(manifest, scenes)
     gate_camera_direction(manifest, scenes)
@@ -1315,7 +1318,7 @@ def run_narration_unit(npath):
              f"audio-backed scenes; sampling uses audio-backed list")
     declared = assemble_out_path(pilot) if pilot else None
     out_name = os.path.basename(declared) if declared else f"{unit}.mp4"
-    mp4 = find_built_mp4(out_name, declared)
+    mp4 = find_built_mp4(unit, out_name, declared)
     gate_blank_frames_rendered(mp4, scenes, unit)
     # subject-match beats: scene image (per scenes.append order) + beat topics
     beats = []
