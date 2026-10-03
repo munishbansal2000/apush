@@ -1,9 +1,13 @@
 # APUSH Video Series Bible
 
-**Series:** APUSH Explained — motion-graphic explainer videos for the Fall 2026 CED (May 2027 exam).
-**Format:** ~5 minutes per episode. Hook → story → exam takeaway. 9:16 vertical.
-**Companion series (done):** 53 grading walkthroughs (videos 1–53) — exam technique.
-**This series:** content explainers — the "why it matters" behind the facts.
+**Series:** APUSH Explained — motion-graphic explainer videos for the Fall 2026 CED (May 2027 exam, fully digital Bluebook).
+**Format law:** 6–8 minutes per episode (~900–1,200 words of narration). 9:16 vertical (1080×1920 delivery).
+**Companion series:** 53 grading walkthroughs (videos 1–53) — exam technique. This series is content explainers: the "why it matters" behind the facts.
+
+This is a bible: principles and format law. The operative documents it points at:
+- `video/COURSE-PLAN.md` — the 92-video plan (units → chapters → videos, every CED topic code covered).
+- `video/PLAYBOOK.md` — the full production playbook: schemas, animation vocabulary, visual-direction rules, TTS format, e2e workflow.
+- `video/validate_video.py` — the 12 hard gates. Nothing ships unless ALL GATES GREEN.
 
 ## The ecosystem (every episode ships with)
 
@@ -19,91 +23,71 @@ Each episode is one node in a content cluster:
 
 The video ends with the exam takeaway and points to the drill set. The drill site points back to the video for the story. Neither strands the student.
 
-## Animation vocabulary (expanded engine)
+## Series format (binding on every video)
 
-Built on `video/motion.py`. Existing: Ken Burns scenes, sliding captions, animated titles, presentation slides.
+- **Skeleton:** hook → context frame → 3 beats (enumerated: first/second/third) → significance landing ("the point is…") → close (final content sentence → dual CTA: next video + drill set → signature sign-off). Never open with a question; declarations with energy.
+- **Rituals:** branded cold-open (identical every video — rituals are retention devices); branded sign-off ("Drill it, own it — I'll see you in the next one."). Never improvised.
+- **Callbacks:** ≥1 callback to an earlier video per episode. "Remember this" flags reserved for genuine exam-movers.
+- **Primary sources:** primary-source cold opens wherever a pre-1930 public-domain quote exists (typewriter scene — the historical voice appears live).
+- **Exam-aside rule:** implicit pressure only ("you need to know"); one explicit rubric mechanic per video max. Exam technique lives in the 53 grading walkthroughs, not here.
+- **Differentiation:** "what historians still argue about" beats (feeds the DBQ complexity point — 0.15/1, the worst 2025 Chief Reader component); 30-second counterfactual cold opens; direct primary-source voices in their own TTS voice; present-tense immersion sequences; animated maps/timelines as the primary visual language.
+- **Language:** plain teacher voice, no sales-jargon ("trap/trick/distractor" never appear). Working titles and angles are ORIGINAL — never the transcript corpus's titles or angles.
 
-New primitives to build:
+## The 92-video structure (by reference)
 
-1. **timeline_scene** — horizontal timeline; events pop in left-to-right in sync with narration. (Period overviews, "road to the Civil War", Cold War.)
-2. **map_scene** — PD map image with an animated route drawing itself (Lewis & Clark, transcontinental railroad, Trail of Tears) or territory shading spreading (Louisiana Purchase, Mexican Cession).
-3. **kinetic_text** — single big phrases slamming in with scale + fade for emphasis beats ("NO TAXATION WITHOUT REPRESENTATION").
-4. **split_scene** — before/after wipe (1860 vs 1869 travel times; North vs South economies).
-5. **chart_scene** — animated bars growing from our own data (immigration waves, industrial output, election maps).
-6. **doc_zoom** — slow zoom into a PD primary source with a moving highlight box landing on the key phrase as the narration quotes it.
-7. **counter_scene** — animated number ticking up (20,000 workers; 4 million freedpeople; 12,000 miles of track).
+Authoritative plan: `video/COURSE-PLAN.md`. 9 units → 30 chapters → 92 videos, sized to exam weights:
 
-Rule: every episode uses at least 3 motion primitives. No episode is slides-only.
+| Period | Years | Exam weight | Videos |
+|---|---|---|---|
+| Unit 1 | 1491–1607 | 4–6% | 5 |
+| Unit 2 | 1607–1754 | 6–8% | 7 |
+| Unit 3 | 1754–1800 | 10–17% | 12 |
+| Unit 4 | 1800–1848 | 10–17% | 12 |
+| Unit 5 | 1844–1877 | 10–17% | 12 |
+| Unit 6 | 1865–1898 | 10–17% | 12 |
+| Unit 7 | 1890–1945 | 10–17% | 14 |
+| Unit 8 | 1945–1980 | 10–17% | 13 |
+| Unit 9 | 1980–present | 4–6% | 5 |
+| **Total** | | | **92 (~10.7 hours)** |
 
-## Episode plan — 36 episodes, 4 per period
+Coverage law: every one of the 105 CED topic codes (+ RP1–RP3) appears in ≥1 video, machine-verified. The plan targets gaps the transcript corpus misses (e.g. the Valladolid debate: zero hits in 205 videos).
 
-Each episode lists: title, CED key concepts, linked lesson, drill tags, linked FRQ.
+## Animation vocabulary (the built engine)
 
-### Period 1 (1491–1607) — lesson: u1.md
-1. **Three Worlds Collide** — Native societies, European contact, Columbian Exchange. Drill: U1/MIG/GEO. FRQ: SAQ set (new, fresh wave).
-2. **The Spanish Machine** — encomienda, casta, silver. Drill: U1/WXT. FRQ: —.
-3. **Why Europe Came** — motives: God, gold, glory; joint-stock companies. Drill: U1/WOR.
-4. **The Exchange That Changed Everything** — Columbian Exchange deep dive. Drill: U1/GEO. FRQ: LEQ (new).
+Built on `video/motion.py` (+ `video/anim.py` for the animated-graphics layer). Full spec in `video/PLAYBOOK.md`; the canonical set:
 
-### Period 2 (1607–1754) — lesson: u2.md
-5. **Jamestown vs. Plymouth** — two colonization models. Drill: U2/MIG. FRQ: SAQ set.
-6. **The Triangle** — transatlantic trade, Middle Passage, mercantilism. Drill: U2/WXT/GEO.
-7. **Awakenings** — First Great Awakening, Enlightenment ideas. Drill: U2/ARC/SOC.
-8. **Thirteen Different Colonies** — regional differences (New England/Middle/Southern). Drill: U2.
+- **Camera moves:** `punch_in` (opens — never fades), `zoom_to` (emphasis on the named figure/object), `camera_path` (waypoint tours across details the narration names), `doc_zoom` (documents, highlight box lands as the narration quotes it).
+- **Text:** `typewriter_scene` (quotes appear live), `kinetic_text` (thesis slams), `overlay_text`, `title_card`, `bullet_slide`.
+- **Informational:** `timeline_scene` (sequential reveals), `callout_scene` (gold rings on points of interest), `caption_scene`.
+- **Annotation layer** (`annotate`, the visual heartbeat ~every 12s): `term` (key term + gloss), `label`, `point` ("so what" verdicts), `arrow`, `pop` (playful slams).
+- **Animated graphics** (beyond image+text): `map_scene` (routes draw themselves), `counter_scene` (ticking numbers), `vs_scene` (face-offs), `wipe_scene` (before/after), `myth_stamp` (misconception busts), `skit_scene` (multi-voice cutaways), `chapter_bar` (progress spine).
+- **AI clips** (`ai_clip_scene`): 2–3 "living engraving" moments per video max — local LTX-Video ambient motion (water, smoke, clouds only; never content changes), generated on the 5090 via `video/animate_still.py`.
 
-### Period 3 (1754–1800) — lesson: u3.md
-9. **The Road to Revolution** — Seven Years' War → Stamp Act → Independence. Drill: U3/PCE. FRQ: DBQ (2023 DBQ1).
-10. **An Experiment Called America** — Articles → Constitution → Bill of Rights. Drill: U3/PCE/NAT.
-11. **The First Party Fight** — Federalists vs. Democratic-Republicans. Drill: U3/PCE.
-12. **1798: The Republic Tested** — Alien & Sedition, Virginia/Kentucky Resolutions. Drill: U3.
+## Visual-direction law (from the 2026-10-02 overhaul)
 
-### Period 4 (1800–1848) — lesson: u4.md
-13. **The Market Revolution** — transportation, communication, who won/lost. Drill: U4/WXT. FRQ: SAQ set.
-14. **Jackson's America** — democracy expanded, and for whom it wasn't. Drill: U4/PCE/SOC.
-15. **Reformers and Utopians** — Second Great Awakening → abolition, women's rights, Seneca Falls. Drill: U4/ARC.
-16. **The Culture of the Early Republic** — American art, literature, nationalism (War of 1812 legacy). Drill: U4/ARC.
+1. **No blank screen, ever.** Every scene carries a background image — including text scenes. `bg_img` is REQUIRED on all text primitives.
+2. **Backgrounds stay visible.** `darken` is capped at 80; scrim bands behind text instead of full-frame crush. The validator fails rendered frames with >40% near-black pixels.
+3. **Every stage moves the camera on purpose.** ≥1 intentional camera/directed-motion move per stage — drift-only stages are banned (CAMERA-DIRECTION gate).
+4. **Animated graphics, not just camera moves.** 2–4 animated-graphics beats per video; never a static map with narration over it.
+5. **No text collisions.** pop/point notes carry explicit `y` parking; kinetic subs offset from measured phrase height (TEXT-COLLISION gate).
+6. **Direction grammar:** open with `punch_in`; tour images with `camera_path` across exactly the details being discussed; punch `zoom_to` onto the figure the sentence names; land verdicts with `kinetic_text` + `point` cards.
 
-### Period 5 (1844–1877) — lesson: u5.md
-17. **Manifest Destiny** — ideology, Texas, Mexican-American War, the Wilmot Proviso fuse. Drill: U5/MIG/GEO.
-18. **The House Divides** — Compromise of 1850 → Kansas-Nebraska → Dred Scott → election of 1860. Drill: U5/PCE. FRQ: DBQ (new).
-19. **The Civil War in 5 Minutes** — why the North won (the exam version). Drill: U5/WOR.
-20. **Reconstruction: Promise and Betrayal** — 13/14/15, Freedmen's Bureau, Compromise of 1877. Drill: U5/SOC. FRQ: LEQ.
+## Production pipeline (one script)
 
-### Period 6 (1865–1898) — lesson: u6.md
-21. **The Railroad That Built America** — PILOT DONE. Drill: U6/WXT. FRQ: SAQ set.
-22. **The Gilded Age Machine** — industrial capitalism, Carnegie/Rockefeller, Bessemer steel. Drill: U6/WXT/ARC.
-23. **Workers Fight Back** — unions, strikes (Homestead, Pullman), Knights vs. AFL. Drill: U6/SOC.
-24. **The New South (That Wasn't)** — sharecropping, Jim Crow, disenfranchisement. Drill: U6/SOC/PCE.
+`python video/build_lesson.py <lesson-id> [--preview]` — TTS → AI clips → video build → validator, fail-fast. Voice refs auto-discovered (`ref/<voice>.wav` + `.txt`); missing refs fail naming the exact files to record. Resume with `--skip-tts` / `--skip-ai-clips` / `--only <step>`.
 
-### Period 7 (1890–1945) — lesson: u7.md
-25. **Becoming a World Power** — imperialism debate, Spanish-American War, Panama Canal. Drill: U7/WOR.
-26. **The Progressive Fix** — muckrakers, trust-busting, the amendments (16–19). Drill: U7/PCE/SOC.
-27. **Boom, Bust, New Deal** — 1920s → Great Depression → First/Second New Deal. Drill: U7/WXT. FRQ: DBQ (2024 DBQ).
-28. **The Good War** — WWII home front, mobilization, atomic bomb debate. Drill: U7/WOR.
+**Preview workflow:** `--preview` renders 720×1280 for motion approval (~2–3× faster). Full 1080×1920 only after the motion is approved. The validator's rendered-frame gates sample the exact MP4 just built.
 
-### Period 8 (1945–1980) — lesson: u8.md
-29. **The Cold War Playbook** — containment, Truman Doctrine → Vietnam. Drill: U8/WOR. FRQ: LEQ.
-30. **The Affluent Society** — suburbs, consumerism, the other America. Drill: U8/SOC/WXT.
-31. **The Sixties** — Civil Rights movement, Great Society, youth culture, 1968. Drill: U8/SOC/PCE. FRQ: SAQ set.
-32. **The Seventies Unravel** — Nixon shock, Watergate, energy crisis, malaise. Drill: U8/PCE/WXT.
+**Ship law:** `video/validate_video.py` — 12 gates (MANIFEST-SCHEMA, AUDIO-MATCH, TTS-GATES, IMAGE-LOCAL, IMAGE-SUBJECT-MATCH, QUOTE-VERIFY, NO-COPY, ANIMATION-REFS, CAMERA-DIRECTION, TEXT-COLLISION, NO-BLANK-FRAMES, AI-CLIP). Exit 0 on ALL GATES GREEN or the lesson does not ship. After the real fish-speech TTS render on the 5090, re-running the validator is mandatory (scene timing follows measured audio).
 
-### Period 9 (1980–Present) — lesson: u9.md
-33. **The Reagan Revolution** — conservatism, Reaganomics, Moral Majority. Drill: U9/PCE.
-34. **The Wall Comes Down** — end of Cold War, 1989–1991. Drill: U9/WOR.
-35. **The Globalized 90s** — deindustrialization, NAFTA, immigration, culture wars. Drill: U9/WXT/MIG/SOC.
-36. **The 21st Century** — 9/11, Iraq/Afghanistan, Patriot Act, 2008 crash. Drill: U9/PCE/WOR. FRQ: SAQ set.
+## Media law
 
-## Production pipeline (per episode)
-
-1. **Script** — narration (~650 words for 5 min), written to the engagement spec: cold-open hook, 3–4 story beats, exam takeaway closer. Plain teacher voice.
-2. **Asset hunt** — 4–6 PD images per episode (Wikimedia/LOC, license verified, PROVENANCE.md per episode).
-3. **Scene plan** — which animation primitive per beat (≥3 motion primitives, no slides-only episodes).
-4. **TTS** — per-scene narration MP3s (existing pipeline).
-5. **Render** — motion.py assembly on the 5090.
-6. **QC** — contact-sheet frame check + watch-through for drift.
+- **Local only.** Every image lives in `assets/images/`; no remote URLs in any manifest (IMAGE-LOCAL gate).
+- **Public domain only, with provenance.** Pre-1930 publication, US federal work, or explicit PD/CC0. Cataloged in `assets/images/CATALOG.json` with subject/period/topic tags + provenance.
+- **Subject-matched, never decorative.** The image on screen depicts what the narration is saying at that moment. Where no catalog image matches, log a sourcing BLOCKER — no near-miss substitution, ever.
+- **Quotes:** verbatim only from pre-1930 PD or US federal sources (QUOTE-VERIFY gate); post-1929 gets paraphrase/original treatment.
+- **Zero-copy:** no 8+ word verbatim overlap with the transcript corpus or the books (NO-COPY gate, 1.39M shingles).
 
 ## Sequencing
 
-Pilots first: episode 21 (done), then one U9 episode (33 or 34 — biggest content gap, most CED leverage). Then Periods 1–3 (foundation, exam weight 4–8% each but students know them least). Then fill by period.
-
-The grading walkthroughs (53 done) publish alongside as the technique companion — "we graded this DBQ" videos link to the explainer for the underlying content.
+Pilots first: Cuba showcase v4 (done — the visual bar), then the three render-ready samples (vid-u1-01/03/04), then Periods 1–3 (foundation; students know them least), then fill by exam weight. The grading walkthroughs publish alongside as the technique companion.
