@@ -1,12 +1,12 @@
-# Render-ready lesson templates
+# Render-ready lesson manifests
 
-Three complete Unit 1 lessons, exported as single runnable manifests. Each one
+Complete Unit 1 lessons, exported as single runnable manifests. Each one
 passed every hard gate (cue integrity, direction tags, TTS text, text quantity,
 license/catalog, prompt↔image coherence, animation variety, text-layout
 collision check) before export.
 
 - `u1-ch1-l1-native-societies.json` — Native Societies (4 scenes)
-- `u1-ch2-l4-conquest.json` — Conquest (4 scenes)
+- `u1-ch2-l4-500-men.json` — How 500 Men Toppled an Empire (10 scenes)
 - `u1-ch3-l8-valladolid-debate.json` — Valladolid Debate, two-person cast (4 scenes)
 
 ## How these differ from the curricula
@@ -29,16 +29,16 @@ pip install edge-tts moviepy
 # ffmpeg/ffprobe must be on PATH (already set up)
 ```
 
-### 1. Generate the AI clips (5 total)
+### 1. Generate the AI clips
 
 ```powershell
 cd C:\Users\munis\projects\apush
 python video/animate_still.py --image "assets/images/u1/original-u1-native-01.jpg" --prompt "A living historical engraving of an agricultural field. Thin clouds drift across the sky; leaves and grasses stir in a light breeze; fine dust drifts over the tilled rows of maize and beans; patches of sunlight shift softly across the ground. Keep the camera static." --out "video/ai_clips/u1-1491-maize-living.mp4" --duration 8 --seed 1491
 python video/animate_still.py --image "assets/images/u1/anim-cahokia-mound-1907.jpg" --prompt "An archival photograph of the Cahokia mound at rest. Thin layered clouds move slowly across the sky; foreground grasses ripple in a light breeze; long sunlight and tree shadows shift gently over the mound and fields. The photographic composition stays fixed. Do not add buildings or people or text or modern objects." --out "video/ai_clips/u1-cahokia-mound-living.mp4" --duration 8 --seed 1051
-python video/animate_still.py --image "assets/images/u1/u1-debry-cusco-fall.jpg" --prompt "A de Bry engraving of the Inca capital Cusco. Clouds drift slowly over the mountain ridges; wind stirs the trees along the rocky slopes; thin haze moves through the distant valley; dust drifts softly over the empty rooftops. Keep the camera static. Do not add people or text or modern objects." --out "video/ai_clips/u1-ch2-l4-conquest-hook.mp4" --duration 8 --seed 1533
-python video/animate_still.py --image "assets/images/u1/5s24-ch06-mcq-01.jpg" --prompt "A Stradanus engraving of Vespucci's America. Ocean waves roll onto the shore; the great banner ripples in the sea wind; leaves stir in the tropical trees; clouds drift over the distant ships. Keep the camera static. Do not add people or text or modern objects." --out "video/ai_clips/u1-ch2-l4-conquest-outro.mp4" --duration 9 --seed 1519
 python video/animate_still.py --image "assets/images/u1/original-u1-lascasas-portrait-01.jpg" --prompt "A historical engraved portrait of Bartolome de las Casas resting in a quiet chamber. A candle flame flicker softly nearby; its light shimmer shifts gently across the dark background; fine dust drifts through the air; a faint mist hangs near the frame. The portrait itself remains unchanged and the composition holds steady. Do not add people or text or modern objects." --out "video/ai_clips/u1-ch3-l8-valladolid-debate-l8-verdict-human-rights.mp4" --duration 8 --seed 1551
 ```
+
+The ch2-l4 lesson's cavalry-charge clip (`video/ai_clips/cavalry-charge.mp4`, 8s, engraving style) is generated separately via Meta UI/LTX on the 5090 — see the clip prompt in the manifest's `s2a` scene — then dropped at that path. Fallbacks if generation fails: an AI still of the charge with slow push-in, then a de Bry archival cavalry plate via the stills search.
 
 ### 2. Render a lesson (preview first, then full)
 
