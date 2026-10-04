@@ -30,6 +30,33 @@
   "captions": false,
   "branding": "APUSH Unit 1"
  },
+ "music": {
+  "background": "video_pipeline/music/papulina-lost-signal-coffee-371869.mp3",
+  "background_volume": 0.1,
+  "ducking": {
+   "enabled": true,
+   "threshold": 0.025,
+   "ratio": 10,
+   "attack_ms": 18,
+   "release_ms": 420
+  },
+  "fade_in_sec": 1.2,
+  "fade_out_sec": 2.0,
+  "intro": "video_pipeline/music/alex_kizenkov-stomps-and-claps-percussion-and-rhythm-141190.mp3",
+  "intro_volume": 0.2,
+  "intro_duration_sec": 2.4,
+  "outro": "video_pipeline/music/absounds-inspiring-acoustic-folk-music-255650.mp3",
+  "outro_volume": 0.18,
+  "outro_duration_sec": 4.0,
+  "chapter_change": "video_pipeline/music/alex_kizenkov-stomps-and-claps-percussion-and-rhythm-141190.mp3",
+  "chapter_change_volume": 0.16,
+  "chapter_change_duration_sec": 1.1,
+  "chapter_change_scene_ids": [
+   "pueblo-southwest",
+   "regional-comparison",
+   "native-recap"
+  ]
+ },
  "lesson_id": "u1-ch1-l1-native-societies",
  "title": "North America Before European Contact",
  "description": "Regional diversity, environmental adaptation, exchange networks, and political organization before sustained European contact.",
@@ -76,7 +103,7 @@
    "id": "many-americas",
    "purpose": "hook",
    "narration": {
-    "text": "North America in 1491 was not one society waiting to be discovered. Their ancestors crossed from Asia over the Bering land bridge thousands of years earlier, then spread across the continent. [beat] Millions of people lived in distinct communities, spoke many languages, and built economies adapted to local environments. The useful starting point is [emphasis]diversity[/emphasis], not a single stereotype."
+    "text": "North America in 1491 was not one society waiting to be discovered. Their ancestors crossed from Asia over the Bering land bridge thousands of years earlier, then spread across the continent. [pause:1] Millions of people lived in distinct communities, spoke many languages, and built economies adapted to local environments. The useful starting point is [emphasis]diversity[/emphasis], not a single stereotype."
    },
    "visual": {
     "base_image": "../../assets/images/u1/original-u1-native-01.jpg",
@@ -161,7 +188,7 @@
    "purpose": "context",
    "narration": {
     "voice": "host",
-    "text": "[beat]By the end of this lesson, you will be able to do three things. [emphasis]One:[/emphasis] identify how climate and resources shaped where people settled and how they lived. [emphasis]Two:[/emphasis] compare how societies organized themselves in different regions. [emphasis]Three:[/emphasis] explain why North America in 1491 was not one single culture."
+    "text": "[beat]By the end of this lesson, three things. [emphasis]One:[/emphasis] identify how climate and resources shaped where people settled, what they ate, and how they lived. [emphasis]Two:[/emphasis] compare how societies organized themselves in different regions. [emphasis]Three:[/emphasis] explain why North America in 1491 was not one single culture."
    },
    "visual": {},
    "animation": {
@@ -177,7 +204,7 @@
    "id": "cahokia-network",
    "purpose": "evidence",
    "narration": {
-    "text": "Near the Mississippi River, [awed] Cahokia became a large urban center supported by maize agriculture. Its monumental earthworks and far-reaching trade connections demonstrate [emphasis]organized labor[/emphasis], political authority, and exchange networks that linked communities across long distances."
+    "text": "Near the Mississippi River, Cahokia became a large urban center supported by maize agriculture. Its monumental earthworks and far-reaching trade connections demonstrate [emphasis]organized labor[/emphasis], political authority, and exchange networks that linked communities across long distances."
    },
    "visual": {
     "base_image": "../../assets/images/u1/anim-cahokia-mound-1907.jpg",
@@ -273,7 +300,7 @@
    "id": "pueblo-southwest",
    "purpose": "evidence",
    "narration": {
-    "text": "Travel southwest, and the problem flips. Around present-day New Mexico and Arizona, rain is scarce and rivers run only part of the year. [beat] The Pueblo peoples answered with engineering. They built irrigation canals that carried river water to fields of maize, beans, and squash, the same three crops Cahokia grew, coaxed from a desert. And they built upward: multistory villages of adobe, like Taos Pueblo, where hundreds of people lived in connected rooms around a central plaza. Village life ran on cooperation: maintaining canals took organized labor, and clan networks shared both the work and the harvests. Underground kivas anchored ceremonial life, and the central plaza hosted the dances and markets that bound each town together. [emphasis]Dry country did not mean scattered country.[/emphasis] Careful water management made permanent towns possible where rainfall alone never could have."
+    "text": "Travel southwest, and the problem flips. Around present-day New Mexico and Arizona, rain is scarce and rivers run only part of the year. [pause:1] The Pueblo peoples answered with engineering. They built irrigation canals that carried river water to fields of maize, beans, and squash. The same three crops Cahokia grew, coaxed from a desert. And they built upward: multistory villages of adobe, like Taos Pueblo, where hundreds of people lived in connected rooms around a central plaza. Village life ran on cooperation: maintaining the canals took organized labor. Clan networks shared both the work and the harvests. Underground kivas anchored ceremonial life, and the central plaza hosted the dances and markets that bound each town together. [emphasis]Dry country did not mean scattered country.[/emphasis] Careful water management made permanent towns possible where rainfall alone never could have."
    },
    "visual": {
     "base_image": "../../assets/images/u1/original-u1-native-09.jpg"
@@ -315,7 +342,7 @@
    "id": "iroquois-confederacy",
    "purpose": "concept",
    "narration": {
-    "text": "Now head northeast, to the woodlands of present-day New York. Here the Haudenosaunee, called the Iroquois by the French, built something rare in world history: a lasting alliance. [beat] Five nations, Mohawk, Oneida, Onondaga, Cayuga, and Seneca, bound themselves under the Great Law of Peace. Decisions required consensus, not majority rule. Fifty sachems, chosen by clan mothers, met in council and talked until they agreed. [emphasis]There was no king and no emperor. There was agreement.[/emphasis] Villages of longhouses, each housing several related families, farmed maize, beans, and squash in forest clearings while men hunted and fished. When Europeans arrived, this confederacy would bargain with Dutch, French, and English as a power in its own right."
+    "text": "Now head northeast, to the woodlands of present-day New York. Here the Haudenosaunee, called the Iroquois by the French, built something rare in world history: a lasting alliance. [pause:1] Five nations, Mohawk, Oneida, Onondaga, Cayuga, and Seneca, bound themselves under the Great Law of Peace. Decisions required consensus, not majority rule. Fifty sachems, chosen by clan mothers, met in council and talked until they agreed. [emphasis]There was no king and no emperor. There was agreement.[/emphasis] Villages of longhouses, each housing several related families, farmed maize, beans, and squash in forest clearings while men hunted and fished. When Europeans arrived, this confederacy would bargain with Dutch, French, and English as a power in its own right."
    },
    "visual": {},
    "animation": {
@@ -386,7 +413,7 @@
      "duration": 3.2,
      "text": "SAME CONTINENT, DIFFERENT STRATEGIES",
      "x": 0.5,
-     "y": 0.18
+     "y": 0.3
     },
     {
      "type": "question",
@@ -394,7 +421,7 @@
      "duration": 3.6,
      "text": "What happens when the horse arrives?",
      "x": 0.5,
-     "y": 0.82
+     "y": 0.68
     }
    ],
    "audio": {
@@ -437,7 +464,7 @@
    "id": "native-recap",
    "purpose": "recap",
    "narration": {
-    "text": "For an A-P-U-S-H argument, connect environment to evidence. [fast]Geography shaped available resources; communities made choices about agriculture, settlement, and exchange;[/fast] those choices produced regional diversity. [slow]Avoid treating Indigenous peoples as a single group or as passive actors.[/slow]"
+    "text": "For an A-P-U-S-H argument, connect environment to evidence. [fast]Geography shaped available resources; communities made choices about agriculture, settlement, and exchange;[/fast] those choices produced regional diversity. [pause:1] [slow]Avoid treating Indigenous peoples as a single group or as passive actors.[/slow]"
    },
    "visual": {
     "base_image": "../../assets/images/u1/original-u1-native-04.jpg"
@@ -477,7 +504,7 @@
      "duration": 3.2,
      "text": "ENVIRONMENT SHAPES, PEOPLE CHOOSE",
      "x": 0.5,
-     "y": 0.18
+     "y": 0.08
     },
     {
      "type": "stamp",

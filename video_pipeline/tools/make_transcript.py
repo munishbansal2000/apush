@@ -16,7 +16,7 @@ import json
 import re
 from pathlib import Path
 
-TAG_RE = re.compile(r"\[(?:beat|pause(?::\d+)?|emphasis|slow|fast|solemn|fierce(?::[\d.]+)?|wry|awed|whisper|urgent|es)\]")
+TAG_RE = re.compile(r"\[(?:beat|pause(?::[\d.]+)?|emphasis|slow|fast|solemn|fierce(?::[\d.]+)?|wry|awed|whisper|urgent|es)\]")
 DATE_RE = re.compile(r"\[date:(\d+)\]")
 VOICE_RE = re.compile(r"\[VOICE:([^\]]+)\]")
 
@@ -30,7 +30,7 @@ def clean_narration(text: str) -> tuple[str, list[tuple[str, str]]]:
         chunk = text[pos:m.start()]
         chunk = DATE_RE.sub(r"\1", chunk)
         chunk = TAG_RE.sub("", chunk).strip()
-        chunk = re.sub(r"\[/emphasis\]", "", chunk)
+        chunk = re.sub(r"\[/[A-Za-z]+\]", "", chunk)
         if chunk:
             segments.append((current_voice, chunk))
         current_voice = m.group(1).upper()
@@ -38,7 +38,7 @@ def clean_narration(text: str) -> tuple[str, list[tuple[str, str]]]:
     chunk = text[pos:]
     chunk = DATE_RE.sub(r"\1", chunk)
     chunk = TAG_RE.sub("", chunk).strip()
-    chunk = re.sub(r"\[/emphasis\]", "", chunk)
+    chunk = re.sub(r"\[/[A-Za-z]+\]", "", chunk)
     if chunk:
         segments.append((current_voice, chunk))
     plain = " ".join(seg for _, seg in segments)

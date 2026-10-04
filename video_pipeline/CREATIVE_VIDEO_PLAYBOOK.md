@@ -4,6 +4,10 @@ This is the production contract for agents writing lesson videos. The target is
 not "more animation." The target is a clear historical argument that changes
 visually and emotionally at the same moments the narration changes.
 
+Voice performance is scored under the companion
+[`AUDIO_PERFORMANCE_PLAYBOOK.md`](AUDIO_PERFORMANCE_PLAYBOOK.md) — narration
+must perform with eyes closed, or the lesson is unfinished.
+
 ## The non-negotiable idea
 
 Every scene must have one job and one visual verb.
@@ -150,6 +154,29 @@ Reject any script below 85, or any script that fails historical accuracy.
 | Screen-text discipline | 5 | Brief, timed, readable, collision-free |
 | Audio direction | 5 | Music, silence, foley, and effects support the argument |
 | AP transfer | 5 | The ending gives a causal/comparison/continuity pattern students can reuse |
+
+## Enforcement: independent blind review
+
+The rubric is scored by an independent reviewer, never by the writing agent.
+A writer grading its own lesson is not a gate; it is a wish.
+
+- **Clean context.** The reviewer receives the manifest, narration, brief, and
+  this playbook — never the writer's notes, drafts, or self-assessment. It
+  scores the artifacts alone, from zero prior context.
+- **Self-audit is pre-flight only.** The writer's self-score catches obvious
+  failures before review. It does not count toward the 85 floor.
+- **Verdicts.** PASS (ships) / FIX (targeted repairs the reviewer names
+  explicitly; re-verified before shipping) / REWRITE (scores below 70, or any
+  fail-closed breach: invented people, artifacts, quotations, dates, or causal
+  claims; dishonest archival labeling).
+- **Historical correctness is fail-closed.** One invented claim fails the
+  lesson regardless of total score. No rubric points can buy back accuracy.
+- **Exam alignment.** The reviewer verifies every date, name, and causal claim
+  against the cited sources, and confirms the College Board key terms for the
+  topic appear and are used correctly.
+- **No review shopping.** A FIX verdict returns to the same reviewer. The
+  writer may not re-prompt, re-frame, or seek a friendlier score. The lesson
+  ships only on reviewer PASS.
 
 ## Gold-standard example: Valladolid
 

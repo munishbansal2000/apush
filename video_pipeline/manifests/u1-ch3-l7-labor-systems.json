@@ -48,11 +48,39 @@
     "Describe the casta hierarchy and how it ordered colonial society by ancestry."
   ],
   "lesson_id": "u1-ch3-l7-labor-systems",
+  "music": {
+    "background": "video_pipeline/music/papulina-lost-signal-coffee-371869.mp3",
+    "background_volume": 0.1,
+    "ducking": {
+      "enabled": true,
+      "threshold": 0.025,
+      "ratio": 10,
+      "attack_ms": 18,
+      "release_ms": 420
+    },
+    "fade_in_sec": 1.2,
+    "fade_out_sec": 2.0,
+    "intro": "video_pipeline/music/alex_kizenkov-stomps-and-claps-percussion-and-rhythm-141190.mp3",
+    "intro_volume": 0.2,
+    "intro_duration_sec": 2.4,
+    "outro": "video_pipeline/music/absounds-inspiring-acoustic-folk-music-255650.mp3",
+    "outro_volume": 0.18,
+    "outro_duration_sec": 4.0,
+    "chapter_change": "video_pipeline/music/alex_kizenkov-stomps-and-claps-percussion-and-rhythm-141190.mp3",
+    "chapter_change_volume": 0.16,
+    "chapter_change_duration_sec": 1.1,
+    "chapter_change_scene_ids": [
+      "s2c",
+      "s4a",
+      "s5"
+    ]
+  },
   "output": "../../build/lesson-videos/u1-ch3-l7-labor-systems.mp4",
   "presentation": {
     "audience": "APUSH students",
     "branding": "APUSH Unit 1",
     "captions": false,
+    "music": "continuous background score with ducking, intro/outro, and chapter stingers",
     "tone": "a teacher talking to a smart 16-year-old; plain, spoken, concrete",
     "visual_style": "engraving-documentary; stamps, serif/sans type grammar"
   },
@@ -226,6 +254,11 @@
       ],
       "id": "s2b",
       "min_duration": 10,
+      "audio": {
+        "foley": "paper_rustle",
+        "foley_gain": 0.15,
+        "foley_fade_sec": 0.5
+      },
       "narration": {
         "text": "[VOICE:grant][solemn]To our loyal settler, we grant the labor of the Indians of this district. In return, he shall protect them, and instruct them in our holy faith.",
         "voice": "grant"
@@ -234,7 +267,7 @@
         "A ROYAL GRANT, TERMS PARAPHRASED",
         "PROTECTION + FAITH"
       ],
-      "production_notes": "The grant voice: older, formal, flat, bureaucratic — the law speaking. Locked frame; the stillness sells the law's formality. Half-beat pause before the grant voice. Reverb marks the 1500s as then.",
+      "production_notes": "The grant voice: older, formal, flat, bureaucratic — the law speaking. Locked frame; the stillness sells the law's formality. Half-beat pause before the grant voice. Reverb marks the 1500s as then. Paper-rustle foley under the grant reading.",
       "purpose": "evidence",
       "source": {
         "license": "AI-generated",
@@ -271,7 +304,10 @@
             "kind": "impact",
             "volume": 0.15
           }
-        ]
+        ],
+        "foley": "quill_scratch",
+        "foley_gain": 0.12,
+        "foley_fade_sec": 1.0
       },
       "beats": [
         {
@@ -333,7 +369,7 @@
         "DE BRY AFTER BENZONI, 1595, WELLCOME",
         "✓ 1. THE GRANT AND THE PRACTICE"
       ],
-      "production_notes": "Reversal pivot lands here: 'The practice was different.' Setup in s2b (the grant voice). The annotated freeze-frame triggers on 'They worked whole villages to death' — ink circles (as if Las Casas circled them with a quill), labels in small sans, no modern arrows. The host reads the image like a document. Coordinates must be tuned against the actual plate at animatic stage.",
+      "production_notes": "Reversal pivot lands here: 'The practice was different.' Setup in s2b (the grant voice). The annotated freeze-frame triggers on 'They worked whole villages to death' — ink circles (as if Las Casas circled them with a quill), labels in small sans, no modern arrows. Quill-scratch foley under the annotation. The host reads the image like a document. Coordinates must be tuned against the actual plate at animatic stage.",
       "purpose": "evidence",
       "source": {
         "license": "CC BY 4.0 (Wellcome Collection)",
@@ -376,7 +412,7 @@
       "id": "s3a",
       "min_duration": 16,
       "narration": {
-        "text": "[solemn]And then the workers started dying. Smallpox, influenza, measles. Diseases no one on these continents had ever met. Between 1500 and 1650, somewhere between half and nine in ten Native people in the Americas died. On Hispaniola, overwork finished what disease started. [beat] Las Casas walked through the ruins and wrote what he saw.",
+        "text": "[solemn]And then the workers started dying. Smallpox, influenza, measles. Diseases no one on these continents had ever met. Between 1500 and 1650, somewhere between half and nine in ten Native people in the Americas died. On Hispaniola, overwork finished what disease started. [beat] Las Casas walked through emptied villages and wrote what he saw.",
         "voice": "host"
       },
       "on_screen_text": [
@@ -679,7 +715,7 @@
           "y": 0.5
         },
         {
-          "cue": "Look at this painting.",
+          "cue": "a Mexican artist painted",
           "duration": 6,
           "text": "CABRERA, CASTA PAINTING, C. 1763",
           "type": "label",
@@ -692,13 +728,13 @@
       ],
       "device": "show_ask",
       "device_params": {
-        "question": "What is it telling you?",
+        "question": "What is the painting telling you?",
         "hold_sec": 2.0
       },
       "id": "s5",
       "min_duration": 24,
       "narration": {
-        "text": "On top of the labor system, Spain built a social order to match. [beat] Look at this painting. A Mexican artist, in [date:1763], painted the colony the way it saw itself. What is it telling you? [pause:2] It is a ladder. At the top, [es]peninsulares[/es], born in Spain, and [es]criollos[/es], Spaniards born in the Americas. One or two in a hundred people. Below them, [es]mestizos[/es], then [es]mulatos[/es]. At the bottom, Indians and Africans. [beat] The Spanish called it the [es]sistema de castas[/es]. It was rooted in an old Spanish obsession, [es]limpieza de sangre[/es], purity of blood. Your ancestors decided your place. And your place decided your work. [beat] In theory rigid. In practice, people moved, mixed, and bought their way up.",
+        "text": "On top of the labor system, Spain built a social order to match. [beat] In [date:1763], a Mexican artist painted one colonial family and labeled each figure by ancestry: Spaniard, [es]mulata[/es], their daughter. What is the painting telling you? [pause:2] It is a ladder. At the top, [es]peninsulares[/es], born in Spain, and [es]criollos[/es], Spaniards born in the Americas. One or two in a hundred people. Below them, [es]mestizos[/es], then [es]mulatos[/es]. At the bottom, Indians and Africans. [beat] The Spanish called it the [es]sistema de castas[/es]. It was rooted in an old Spanish obsession, [es]limpieza de sangre[/es], purity of blood. Your ancestors decided your place. And your place decided your work. [beat] In theory rigid. In practice, people moved, mixed, and bought their way up.",
         "voice": "host"
       },
       "on_screen_text": [

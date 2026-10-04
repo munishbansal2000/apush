@@ -48,6 +48,33 @@
     "visual_style": "engraving-documentary; stamps, serif/sans type grammar"
   },
   "transition_scheme": "hard_cut",
+  "music": {
+    "background": "video_pipeline/music/papulina-lost-signal-coffee-371869.mp3",
+    "background_volume": 0.1,
+    "ducking": {
+      "enabled": true,
+      "threshold": 0.025,
+      "ratio": 10,
+      "attack_ms": 18,
+      "release_ms": 420
+    },
+    "fade_in_sec": 1.2,
+    "fade_out_sec": 2.0,
+    "intro": "video_pipeline/music/alex_kizenkov-stomps-and-claps-percussion-and-rhythm-141190.mp3",
+    "intro_volume": 0.2,
+    "intro_duration_sec": 2.4,
+    "outro": "video_pipeline/music/absounds-inspiring-acoustic-folk-music-255650.mp3",
+    "outro_volume": 0.18,
+    "outro_duration_sec": 4.0,
+    "chapter_change": "video_pipeline/music/alex_kizenkov-stomps-and-claps-percussion-and-rhythm-141190.mp3",
+    "chapter_change_volume": 0.16,
+    "chapter_change_duration_sec": 1.1,
+    "chapter_change_scene_ids": [
+      "s2a",
+      "s3a",
+      "s4a"
+    ]
+  },
   "tts": {
     "engine": "edge",
     "edge_voice": "en-US-GuyNeural",
@@ -95,7 +122,7 @@
     {
       "id": "s1",
       "narration": {
-        "text": "[solemn]In August 1680, in the deserts of New Mexico, the Spanish Empire lost a war to people it had already beaten. The Pueblo peoples rose up, killed hundreds of colonists, burned the churches, and drove the Spanish out completely. [beat] It is the only Native revolt in North American history that threw the colonizers out entirely. And the Pueblos held their country for twelve years.",
+        "text": "[solemn]In August 1680, in the deserts of New Mexico, the Spanish Empire lost a war. Lost it to people it had already beaten. The Pueblo peoples rose up, killed hundreds of colonists, burned the churches, and drove the Spanish out completely. [pause:1.5] It is the only Native revolt in North American history that threw the colonizers out entirely. And for twelve years, the Pueblos held their country.",
         "voice": "host"
       },
       "visual": {
@@ -125,7 +152,7 @@
           "cue": "In August 1680",
           "text": "AUGUST 1680, NEW MEXICO",
           "x": 0.5,
-          "y": 0.12,
+          "y": 0.26,
           "duration": 5
         },
         {
@@ -194,7 +221,7 @@
         "search": {
           "provider": "wikimedia",
           "page_title": "File:Curtis Acoma from the South 1904.jpg",
-          "min_width": 1000
+          "min_width": 500
         }
       },
       "animation": {
@@ -247,7 +274,7 @@
     {
       "id": "s2b",
       "narration": {
-        "text": "[VOICE:onate][solemn]The survivors will stand trial. Every man over twenty-five will lose one foot. The rest will serve the Spanish as slaves.",
+        "text": "[VOICE:onate][solemn]The survivors will stand trial. Every man over twenty-five will lose one foot. The rest will serve the Spanish as slaves. [pause:1.5]",
         "voice": "onate"
       },
       "visual": {
@@ -255,7 +282,7 @@
         "search": {
           "provider": "wikimedia",
           "page_title": "File:Curtis Acoma from the South 1904.jpg",
-          "min_width": 1000
+          "min_width": 500
         }
       },
       "animation": {
@@ -289,6 +316,15 @@
       "covers_los": [
         1
       ],
+      "audio": {
+        "effects": [
+          {
+            "cue": "will lose one foot",
+            "kind": "impact",
+            "volume": 0.3
+          }
+        ]
+      },
       "on_screen_text": [
         "JUAN DE OÑATE, GOVERNOR OF NEW MEXICO",
         "OÑATE'S SENTENCE"
@@ -402,7 +438,7 @@
     {
       "id": "s3a",
       "narration": {
-        "text": "[es]Popé[/es] fled north to Taos Pueblo, beyond the Spanish reach. And there he did what no one had done before: he united the villages. [beat] Look at this cord. Knots tied along its length. What is it for? [pause:2] It is a calendar, and a battle plan. Runners carried cords like this from village to village. Each morning the leaders untied one knot. When the last knot came undone, every village would rise on the same day.",
+        "text": "[es]Popé[/es] fled north to Taos Pueblo, beyond the Spanish reach. And there he did what no one had done before: he united the villages. [beat] A cord with knots tied along its length. What was it for? [pause:2] It is a calendar, and a battle plan. Runners carried knotted cords from village to village, and each morning the leaders untied one knot. When the last knot came undone, every village would rise on the same day.",
         "voice": "host"
       },
       "visual": {
@@ -439,7 +475,7 @@
       ],
       "device": "show_ask",
       "device_params": {
-        "question": "What is it for?",
+        "question": "What was it for?",
         "hold_sec": 2.0
       },
       "covers_los": [
@@ -509,7 +545,7 @@
     {
       "id": "s4a",
       "narration": {
-        "text": "[fierce]On August 10, [date:1680], the knots ran out. Across New Mexico, Pueblo warriors attacked at once. They killed more than three hundred Spaniards, including twenty-one of the thirty-three Franciscan priests. They burned the churches and besieged Santa Fe. [beat] The survivors fled south to El Paso. New Mexico belonged to the Pueblos again.",
+        "text": "[fierce]On August 10, [date:1680], the knots ran out. Across New Mexico, Pueblo warriors attacked at once. They killed more than three hundred Spaniards, including twenty-one of the thirty-three Franciscan priests. They burned the churches and besieged Santa Fe. The survivors fled south to El Paso. [pause:1.5] New Mexico was Pueblo country again.",
         "voice": "host"
       },
       "visual": {
@@ -517,7 +553,7 @@
         "still": {
           "orientation": "landscape",
           "provider": "hatch-media",
-          "prompt": "An adobe church burning in a desert town at dawn: a column of smoke, Pueblo warriors in the plaza, Spanish settlers fleeing, the cost of the uprising visible. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
+          "prompt": "A desert adobe town at dawn seen from a low hill: a column of smoke rising from the mission church, an empty plaza with scattered belongings, small distant figures of Pueblo villagers watching from the mesa edge, the quiet aftermath of an uprising, no combat, no injuries, no blood. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
         }
       },
       "animation": {
@@ -532,7 +568,7 @@
         "duration": 0.2
       },
       "min_duration": 22,
-      "production_notes": "The one burst of velocity in the lesson, earned by contrast. Drums urgent, then cut on 'belonged to the Pueblos again.'",
+      "production_notes": "The one burst of velocity in the lesson, earned by contrast. The plate shows the aftermath from a distance (smoke column, empty plaza); the ken-burns push, urgent drums, and the two escalating labels carry the attack's velocity. Cut on 'New Mexico was Pueblo country again.'",
       "beats": [
         {
           "type": "label",
@@ -554,12 +590,21 @@
       "covers_los": [
         3
       ],
+      "audio": {
+        "effects": [
+          {
+            "cue": "attacked at once",
+            "kind": "impact",
+            "volume": 0.3
+          }
+        ]
+      },
       "on_screen_text": [
         "300+ SPANIARDS KILLED",
         "21 OF 33 PRIESTS"
       ],
       "source": {
-        "title": "Santa Fe under attack (AI plate)",
+        "title": "Santa Fe, aftermath of the attack (AI plate)",
         "license": "AI-generated",
         "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt."
       },
@@ -570,7 +615,7 @@
     {
       "id": "s4b",
       "narration": {
-        "text": "[solemn]For twelve years, the Pueblos governed themselves. They tore down the missions and danced the old dances in the open. [beat] When the Spanish returned in [date:1692], they came back changed. They appointed a defender for Pueblo rights, granted Pueblo families land, and stopped trying to crush the old religion. [beat] The revolt had worked. It proved that Indigenous people could defeat a European empire, and it forced that empire to rule differently.",
+        "text": "[solemn]For twelve years, the Pueblos governed themselves. They tore down the missions and danced the old dances in the open. [beat] When the Spanish returned in [date:1692], they came back changed. They appointed a defender for Pueblo rights, granted Pueblo families land, and stopped trying to crush the old religion. [beat] The revolt had worked. It proved that Indigenous people could defeat a European empire, and it forced that empire to rule differently. [pause:1.5] Pressure, plus a network, plus timing: that is how a scattered resistance becomes a coordinated one.",
         "voice": "host"
       },
       "visual": {
@@ -578,7 +623,7 @@
         "search": {
           "provider": "wikimedia",
           "page_title": "File:Feast day at San Estevan del Rey Mission, Acoma Pueblo, New Mexico LCCN97518884.jpg",
-          "min_width": 1000
+          "min_width": 900
         }
       },
       "animation": {
@@ -593,7 +638,7 @@
         "duration": 0.2
       },
       "min_duration": 24,
-      "production_notes": "Very slow pull-back; the lesson exhales. Stamp 3 of 3: the stamped verdict. Silence under the stamp, single low thud.",
+      "production_notes": "Very slow pull-back; the lesson exhales. Stamp 3 of 3: the stamped verdict lands on 'The revolt had worked' with the single low thud, then the reusable pattern (pressure + network + timing) is spoken over the hold as the outro begins.",
       "beats": [
         {
           "type": "label",
@@ -632,6 +677,15 @@
       "covers_los": [
         3
       ],
+      "audio": {
+        "effects": [
+          {
+            "cue": "The revolt had worked",
+            "kind": "impact",
+            "volume": 0.35
+          }
+        ]
+      },
       "on_screen_text": [
         "12 YEARS OF FREEDOM",
         "1692, THE RETURN",
