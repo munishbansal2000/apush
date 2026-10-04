@@ -9,7 +9,20 @@
 | **Marcus** | Deep (male) | The expert. Authoritative, punchy, drops the facts. Carries interviews and story mode. |
 | **Jay** | Teen boy, casual | The student. Asks the "dumb" questions, gets things wrong, makes it relatable. |
 
-**Debate convention:** Maya moderates; Marcus argues one side; the opposition is a *guest voice* cast per era (British Loyalist, Anti-Federalist, Southern planter…). The 3 core personas never change — only the guest rotates.
+**Debate convention:** Maya moderates; Marcus argues one side; the opposition is a *guest voice* cast per era. Guests appear **only** in debates, **only** where the perspective genuinely needs its own voice — never as recurring characters, never for color. Cast for gravitas, not accent: the voice must carry dignity, or it undermines the history.
+
+## Guest voice cast (8 debate slots across the course)
+
+| Era | Debate | Guest voice |
+|---|---|---|
+| P3 Declaring Independence | Paine's radicalism vs loyalist caution | **Loyalist** (British formal male — already cast: `4ded85577e3243dcae310903d0ae75cc`) |
+| P4 Manifest Destiny & Texas | Expansion: destiny or land grab? | **Mexican voice** — the view from Mexico City |
+| P4 Mexican-American War | Was it just? | **Mexican voice** — same casting as above |
+| P6 Immigration & Nativism | Open doors vs restriction | **German immigrant voice** — the people the nativists targeted |
+| P6 Imperialism | Annex the Philippines? | **Filipino voice** — Aguinaldo's side of the argument |
+| P7 WWI: Neutrality to War | Intervention vs isolation | **French voice** — the ally making the case |
+| P8 Cold War Origins | Who started it? | **Soviet voice** — the other superpower's account |
+| P8 Vietnam | Hawks vs doves | **Vietnamese voice** — the perspective the American debate erased |
 
 ## The 4 Formats
 
@@ -78,8 +91,8 @@
 | Second Great Awakening & Reform | Interview | Why reform exploded — social causes explainer |
 | Abolitionism | Debate | Garrison's immediatism vs gradualism — moral argument |
 | Seneca Falls & Women's Rights | Interview | The movement's origins — narrative explainer |
-| Manifest Destiny & Texas | Debate | Expansion: destiny or land grab? |
-| Mexican-American War | Debate | "Was it just?" — Lincoln's spot resolutions vs Polk |
+| Manifest Destiny & Texas | Debate | Expansion: destiny or land grab? — guest: Mexican voice |
+| Mexican-American War | Debate | "Was it just?" — Lincoln's spot resolutions vs Polk — guest: Mexican voice |
 | Unit Review | Study Buddies | Elections, crises, movements |
 
 ---
@@ -107,10 +120,10 @@
 |---|---|---|
 | Industrialization & Big Business | Debate | Captains of industry or robber barons? |
 | Labor vs Capital (Homestead, Pullman) | Story Mode | Strikes as drama — Pinkertons, federal troops |
-| Immigration & Nativism | Debate | Open doors vs restriction — echoes today |
+| Immigration & Nativism | Debate | Open doors vs restriction — echoes today — guest: German immigrant voice |
 | Populism | Interview | "Who were the Populists and what did they want" |
 | The West & the Frontier Thesis | Interview | Turner's thesis — evaluative explainer |
-| Imperialism & Spanish-American War | Debate | Anti-imperialists vs expansionists — guest: imperialist |
+| Imperialism & Spanish-American War | Debate | Anti-imperialists vs expansionists — guest: Filipino voice |
 | Unit Review | Study Buddies | Court cases, strikes, amendments |
 
 ## Period 7 — Progressivism to WWII (1890–1945)
@@ -118,7 +131,7 @@
 | Lesson | Format | Why |
 |---|---|---|
 | Progressivism | Study Buddies | Amendments 16–19, muckrakers, reforms — list-heavy |
-| WWI: Neutrality to War | Debate | Interventionists vs isolationists |
+| WWI: Neutrality to War | Debate | Interventionists vs isolationists — guest: French voice |
 | Versailles & the League Fight | Debate | Wilson vs Lodge — guest: Lodge |
 | The 1920s | Interview | Culture + economy — "roar" explainer |
 | Great Depression: Causes | Interview | The causal chain — flagship-style explainer |
@@ -134,14 +147,14 @@
 
 | Lesson | Format | Why |
 |---|---|---|
-| Cold War Origins | Debate | Who started it? — the historiography question |
+| Cold War Origins | Debate | Who started it? — the historiography question — guest: Soviet voice |
 | Containment Doctrines | Study Buddies | Truman Doctrine, Marshall Plan, NATO — doctrine list |
 | Korean War | Story Mode | Forgotten war as drama — Inchon, Chosin |
 | McCarthyism | Debate | Security vs civil liberties — again, evergreen |
 | Civil Rights Movement | Story Mode | Montgomery to Selma — movement as epic |
 | Cuban Missile Crisis | Story Mode | 13 days — the ultimate thriller |
 | The Great Society | Debate | Did it work? — domestic debate |
-| Vietnam | Debate | Hawks vs doves — the defining argument |
+| Vietnam | Debate | Hawks vs doves — guest: Vietnamese voice |
 | Nixon & Watergate | Story Mode | Political thriller — tapes, hearings, resignation |
 | The 1970s Malaise | Interview | Stagflation, energy crisis — "what went wrong" |
 | Unit Review | Study Buddies | Crises, doctrines, movements timeline |
@@ -165,6 +178,7 @@
 - **Default rule:** causal/explanatory → Interview. Genuine two-sided controversy → Debate. Fact-dense/list → Study Buddies. Dramatic event → Story Mode.
 - **Balance target:** roughly 40% Interview / 25% Debate / 20% Study Buddies / 15% Story — the flagship stays dominant, the others keep it fresh.
 - **Debate guests** rotate per era but the Loyalist voice (British formal male) is already cast and reusable for all Period 3 debates.
+- **Guest-voice rule:** foreign/national voices appear only in the 8 listed debate slots, only where the perspective needs its own voice. Never recurring characters, never for color, never caricature. For immigrant stories and other sensitive material, Marcus narrates in Story Mode instead.
 - **Jay's role** is fixed: he never lectures, he learns. If a lesson has nothing to quiz, it isn't Study Buddies.
 - Every script is authored (not generated), rendered per-turn in Fish with emotion tags, mixed with the standard music bed (intro sting, ducked loop, chapter stingers, outro).
 - Estimated output: ~100 lessons × ~4.5 min ≈ 7.5 hours of audio.
