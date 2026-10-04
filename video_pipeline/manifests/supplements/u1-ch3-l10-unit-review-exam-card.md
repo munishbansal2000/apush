@@ -11,7 +11,7 @@ as a static image (NLE).*
   continuity. (LO2)
 - **S-A-Q** — Q1 secondary, Q2 primary, Q3 no stimulus; parts score alone.
   (LO3)
-- **ESSAYS** — Contextualize first; DBQ: source 4 docs by POV or purpose.
+- **ESSAYS** — Contextualize first; DBQ: 4+ docs, 6 full; source by POV, purpose.
   (LO3)
 
 *Footer: AP PERIOD 1 · 1491-1607*

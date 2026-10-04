@@ -238,12 +238,20 @@
           "duration": 5,
           "x": 0.5,
           "y": 0.82
+        },
+        {
+          "type": "label",
+          "text": "MAIZE WOODCUT, 1542",
+          "cue": "wrote home about them",
+          "duration": 4,
+          "x": 0.5,
+          "y": 0.9
         }
       ],
       "covers_los": [
         1
       ],
-      "production_notes": "Archival: intended plate is the Fuchs 1542 maize woodcut, the first printed European image of an American plant (De historia stirpium, Basel). Fallback: AI plate of maize and potato plants in de Bry manner. Source caption dates it honestly on screen.",
+      "production_notes": "Archival: intended plate is the Fuchs 1542 maize woodcut, one of the earliest printed European images of an American plant (De historia stirpium, Basel). Fallback if the Wikimedia search fails: AI plate per script prompt 2 (\"maize stalks with large ears and potato plants with exposed roots, botanical composition\") in the de Bry engraving manner, no text. Source caption dates it honestly on screen.",
       "source": {
         "title": "Maize woodcut, De historia stirpium (AI search fallback: American crops plate)",
         "license": "Public domain",
@@ -251,7 +259,8 @@
       },
       "on_screen_text": [
         "EASTWARD: CROPS",
-        "MAIZE, POTATO, TOMATO, CACAO, TOBACCO"
+        "MAIZE, POTATO, TOMATO, CACAO, TOBACCO",
+        "MAIZE WOODCUT, 1542"
       ]
     },
     {
@@ -284,7 +293,7 @@
       "beats": [
         {
           "type": "label",
-          "text": "SPANISH CHRONICLER, 1500s",
+          "text": "SPANISH CHRONICLER, 1500s (DRAMATIZED)",
           "cue": "grain called maize",
           "duration": 10,
           "x": 0.5,
@@ -301,7 +310,7 @@
         "notes": "Same search output as s2a; the stills stage skips it because the file already exists."
       },
       "on_screen_text": [
-        "SPANISH CHRONICLER, 1500s"
+        "SPANISH CHRONICLER, 1500s (DRAMATIZED)"
       ]
     },
     {

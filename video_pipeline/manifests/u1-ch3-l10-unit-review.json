@@ -39,7 +39,10 @@
     "topics": [
       "1.1",
       "1.2",
-      "1.3"
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6"
     ]
   },
   "output": "../../build/lesson-videos/u1-ch3-l10-unit-review.mp4",
@@ -88,7 +91,7 @@
       "id": "s1",
       "narration": {
         "voice": "host",
-        "text": "[beat]Here is the AP exam's format: short-answer, question three. No passage, no documents. Just you and what you know. [pause:2] Using Unit 1: (a) Identify one similarity between Spanish and French interactions with Native peoples. (b) Identify one difference between Spanish and English colonization before 1607. (c) Explain one reason for that difference. [pause:2] If your mind went blank, that is the point. By the end, you will answer it cold."
+        "text": "[beat]Here is the exam's format: short-answer, question three. No passage, no documents, just you and what you know. [pause:2] Using Unit 1: (a) Identify one similarity between Spanish and French interactions with Native peoples. (b) Identify one difference between Spanish and English colonization before 1607. (c) Explain one reason for that difference. [pause:2] If your mind went blank, that is the point. By the end, you will answer it cold."
       },
       "visual": {
         "base_image": "assets/images/u1-ch3-l10/exam-desk.webp",
@@ -124,17 +127,20 @@
         }
       ],
       "purpose": "hook",
-      "device": "hook",
+      "device": "show_ask",
       "device_params": {
-        "hook_type": "mystery",
-        "payoff_by_sec": 15.0
+        "question": "Using Unit 1: (a) Identify one similarity between Spanish and French interactions with Native peoples. (b) Identify one difference between Spanish and English colonization before 1607. (c) Explain one reason for that difference.",
+        "hold_sec": 2.0
       },
       "production_notes": "Device 1: show-and-ask. The SAQ is shown and read aloud; two full 2s pauses (production note names both). Score drops out at the first pause. The question is answered in s6.",
       "min_duration": 22,
       "topics": [
         "1.1",
         "1.2",
-        "1.3"
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6"
       ],
       "source": {
         "license": "AI-generated",
@@ -148,16 +154,7 @@
       "on_screen_text": [
         "SAQ, Q3 STYLE",
         "NO STIMULUS"
-      ],
-      "audio": {
-        "effects": [
-          {
-            "cue": "If your mind went blank",
-            "kind": "impact",
-            "volume": 0.12
-          }
-        ]
-      }
+      ]
     },
     {
       "id": "s1b-objectives",
@@ -175,7 +172,10 @@
       "topics": [
         "1.1",
         "1.2",
-        "1.3"
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6"
       ],
       "transition": {
         "type": "hard_cut",
@@ -187,7 +187,7 @@
       "id": "s2",
       "narration": {
         "voice": "host",
-        "text": "[beat]Unit 1 has a one-sentence thesis. Geography wrote the first draft of American history, and contact rewrote it. [beat] Every lesson is evidence for that claim. Lesson 1: geography shaped Native societies, from Cahokia to the Iroquois. Lesson 4: alliances plus disease, not guns, decided the conquest. Lesson 7: labor reorganized, from encomienda to casta. Lesson 8: Europe asked whether conquest could be just. [beat] The rest pin to the same board: crops and diseases exchanged, the silver mountain, the revolt that drove Spain out."
+        "text": "[beat]Unit 1 has a one-sentence thesis. Geography wrote the first draft of American history, and contact rewrote it. [beat] Every lesson supports that claim. Lesson 1: geography shaped Native societies, from Cahokia to the Iroquois. Lesson 4: alliances plus disease, not guns, decided the conquest. Lesson 7: labor reorganized, from encomienda to casta. Lesson 8: Europe asked whether conquest could be just. [beat] The rest pin to the same board: crops and diseases exchanged, the silver mountain, the revolt that drove Spain out."
       },
       "visual": {
         "base_image": "assets/images/u1-ch3-l10/evidence-board.webp",
@@ -230,7 +230,10 @@
       "topics": [
         "1.1",
         "1.2",
-        "1.3"
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6"
       ],
       "source": {
         "license": "AI-generated",
@@ -250,7 +253,7 @@
       "id": "s3",
       "narration": {
         "voice": "host",
-        "text": "[beat]But contact did not just conquer. It mixed. Three peoples met, and something new came out. The Spanish and French intermarried with Native peoples far more than the English. Missions became contact zones, where converts blended saints with spirits. That blending has a name the exam loves: syncretism. [beat] They misunderstood each other. Europeans owned land as property. Many Native societies held it in common. [beat] That collision is C-E-D topic 1.6, the unit thesis in miniature."
+        "text": "[beat]But contact did not just conquer. It mixed. Three peoples met, and something new came out. The Spanish and French intermarried with Native peoples far more than the English. Missions became contact zones where converts blended saints with spirits. That blending has a name the exam loves: syncretism. [beat] They misunderstood each other. Europeans owned land as property. Many Native societies held it in common. [beat] That collision is C-E-D topic 1.6, the unit thesis in miniature."
       },
       "visual": {
         "base_image": "assets/images/u1-ch3-l10/mission-contact.webp",
@@ -294,7 +297,10 @@
       "topics": [
         "1.1",
         "1.2",
-        "1.3"
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6"
       ],
       "source": {
         "license": "AI-generated",
@@ -323,7 +329,7 @@
       "id": "s4a",
       "narration": {
         "voice": "host",
-        "text": "[beat]Now the tools. The exam tests three reasoning processes, and Unit 1 is built for all three. First lens: comparison. Spain: missions and Native labor. France: furs and intermarriage. England: late and fenced off. [beat] Second lens: causation. Ask why, not just what. Why did five hundred men topple an empire? Not the guns alone. Stack them: Native alliances, then smallpox. [beat] Comparison finds the pattern. Causation finds the engine."
+        "text": "[beat]Now the tools. The exam tests three reasoning processes, and Unit 1 fits all three. First lens: comparison. Spain: missions and Native labor. France: furs and intermarriage. England: late and fenced off. [beat] Second lens: causation. Ask why, not just what. Why did five hundred men topple an empire? Not the guns alone. Stack them: Native alliances, then smallpox. [beat] Comparison finds the pattern. Causation finds the engine."
       },
       "visual": {
         "base_image": "assets/images/u1-ch3-l10/three-lenses.webp",
@@ -386,7 +392,10 @@
       "topics": [
         "1.1",
         "1.2",
-        "1.3"
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6"
       ],
       "source": {
         "license": "AI-generated",
@@ -406,7 +415,7 @@
       "id": "s4b",
       "narration": {
         "voice": "host",
-        "text": "[beat]Third lens: continuity and change. Ask what contact altered and what survived it. Labor changed completely, from encomienda to African slavery. But forced labor continued, as did European rivalry. [beat] Then watch 1588. England's defeat of the Spanish Armada broke Spain's lock on the ocean. Before it, Spain's navy could crush any rival colony. After it, France and England could, and did. [beat] One sea battle, and Period 2 becomes possible. That is continuity and change in a single date."
+        "text": "[beat]Third lens: continuity and change. Ask what contact altered and what survived it. Labor changed completely, from encomienda to African slavery. But forced labor continued, as did European rivalry. [beat] Then watch 1588. England's defeat of the Spanish Armada broke Spain's lock on the ocean. Before it, Spain's navy could crush any rival colony. After it, France and England could and did. [beat] One sea battle, and Period 2 becomes possible. That is continuity and change in a single date."
       },
       "visual": {
         "base_image": "assets/images/u1-ch3-l10/armada-battle.webp",
@@ -441,7 +450,10 @@
       "topics": [
         "1.1",
         "1.2",
-        "1.3"
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6"
       ],
       "source": {
         "license": "AI-generated",
@@ -469,7 +481,7 @@
       "id": "s5",
       "narration": {
         "voice": "host",
-        "text": "[beat]The format, checked against the current prep book. Three short-answer questions. One and two are required; you choose three or four. Question one: secondary sources to pick apart. Question two: a primary source testing comparison or causation. [beat] Question three is the Unit 1 question: no stimulus, Periods 1 through 5, straight from memory. Parts score alone, so a blank (a) never kills (b) or (c). Answer all three, labeled. [beat] On essays, two habits earn the most-lost points. Contextualization: set the broader scene before your argument, on the D-B-Q and the L-E-Q. On the D-B-Q, source four documents. Explain point of view or purpose. Never just quote."
+        "text": "[beat]The format, checked against the current prep book. Three questions. One and two are required; you choose three or four. Question one: secondary sources to pick apart. Question two: a primary source testing comparison or causation. [beat] Question three is the Unit 1 question: no stimulus, Periods 1 through 5, straight from memory. Parts score alone, so a blank (a) never kills (b) or (c). Answer all three. [beat] On essays, two habits earn the most-lost points. Contextualization: set the broader scene before your argument, on the D-B-Q and the L-E-Q. On the D-B-Q, use at least four documents. Six earns the full evidence credit. Explain point of view or purpose; never just quote."
       },
       "visual": {
         "base_image": "assets/images/u1-ch3-l10/rubric-desk.webp",
@@ -513,7 +525,10 @@
       "topics": [
         "1.1",
         "1.2",
-        "1.3"
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6"
       ],
       "source": {
         "license": "AI-generated",
@@ -542,7 +557,7 @@
       "id": "s6",
       "narration": {
         "voice": "host",
-        "text": "[beat]Back to the opening question. (a) The Spanish and French intermarried and traded with Native peoples, unlike the English. (b) Spain built missions and a forced-labor empire in the 1500s. England's colonies came after 1607 and excluded Native peoples. (c) Spain's navy kept rivals out until England destroyed the Armada in 1588. [beat] Three parts, three points. That is the whole game."
+        "text": "[beat]Back to the question. (a) The Spanish and French intermarried and traded with Native peoples, unlike the English. (b) Spain built missions and a forced-labor empire in the 1500s. England's colonies came after 1607 and excluded Native peoples. (c) Spain's navy kept rivals out until England defeated the Armada in 1588. [beat] Three parts, three points. That is the whole game."
       },
       "visual": {
         "base_image": "assets/images/u1-ch3-l10/exam-desk.webp",
@@ -579,7 +594,10 @@
       "topics": [
         "1.1",
         "1.2",
-        "1.3"
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6"
       ],
       "source": {
         "license": "AI-generated",
@@ -625,7 +643,7 @@
           "THESIS: geography drafted it, contact rewrote it; every lesson is evidence",
           "LENSES: compare the colonizers, stack the causes, track change and continuity",
           "S-A-Q: Q1 secondary, Q2 primary, Q3 no stimulus; parts score alone",
-          "ESSAYS: contextualize first; DBQ: source 4 docs by POV or purpose"
+          "ESSAYS: contextualize first; DBQ: 4+ docs, 6 full; source by POV, purpose"
         ],
         "footer": "AP PERIOD 1 · 1491-1607"
       },
@@ -640,7 +658,10 @@
       "topics": [
         "1.1",
         "1.2",
-        "1.3"
+        "1.3",
+        "1.4",
+        "1.5",
+        "1.6"
       ],
       "source": {
         "license": "AI-generated",

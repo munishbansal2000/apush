@@ -6,7 +6,7 @@
   "chapter_id": "ch1",
   "title": "Atlantic Contact and the Columbian Exchange",
   "description": "European motives, transatlantic voyages, and the unequal consequences of biological and commercial exchange.",
-  "essential_question": "Why did Atlantic contact transform Europe, Africa, and the Americas so unevenly?",
+  "essential_question": "Why did Atlantic contact transform Europe and the Americas so unevenly?",
   "learning_objectives": [
     "Explain the economic and political motives for European exploration.",
     "Trace major categories of exchange across the Atlantic.",
@@ -271,7 +271,7 @@
       ],
       "narration": {
         "voice": "host",
-        "text": "In [date:1492], Columbus talked Spain's monarchs, Isabella and Ferdinand, into funding his westward bet. He argued the earth was smaller than the maps said. [beat] His three ships, the [es]Niña[/es], the [es]Pinta[/es], and the [es]Santa María[/es], made landfall after six weeks at sea. He called the island San Salvador and named the [es]Taíno[/es] people he met Indians, sure he had reached the Indies. The name stuck. Three more voyages followed, in [date:1493], [date:1498], and [date:1502], each one tightening Spain's grip. [beat] He kept a journal. On the very first day, he wrote this."
+        "text": "In [date:1492], Columbus talked Spain's monarchs, Isabella and Ferdinand, into funding his westward bet. He argued the earth was smaller than the maps said. [beat] His three ships, the [es]Niña[/es], the [es]Pinta[/es], and the [es]Santa María[/es], made landfall after five weeks at sea. He called the island San Salvador and named the [es]Taíno[/es] people he met Indians, sure he had reached the Indies. The name stuck. Three more voyages followed, in [date:1493], [date:1498], and [date:1502], each one tightening Spain's grip. [beat] He kept a journal. On the very first day, he wrote this."
       },
       "visual": {
         "base_image": "assets/images/u1-ch1-l2/four-voyages-map.webp",
@@ -292,13 +292,13 @@
           "type": "label",
           "cue": "San Salvador",
           "duration": 4,
-          "text": "SAN SALVADOR, 1492",
+          "text": "SAN SALVADOR · 1492",
           "x": 0.5,
           "y": 0.12
         }
       ],
       "on_screen_text": [
-        "SAN SALVADOR, 1492"
+        "SAN SALVADOR · 1492"
       ],
       "device": "date_ticker",
       "device_params": {
@@ -355,13 +355,13 @@
           "type": "label",
           "cue": "They are gentle",
           "duration": 10,
-          "text": "CHRISTOPHER COLUMBUS, JOURNAL 1492",
+          "text": "CHRISTOPHER COLUMBUS · JOURNAL, OCTOBER 1492",
           "x": 0.5,
           "y": 0.82
         }
       ],
       "on_screen_text": [
-        "CHRISTOPHER COLUMBUS, JOURNAL 1492"
+        "CHRISTOPHER COLUMBUS · JOURNAL, OCTOBER 1492"
       ],
       "min_duration": 12,
       "topics": [
@@ -510,10 +510,11 @@
         }
       },
       "animation": {
-        "type": "ken_burns",
-        "pan_x": 0.5,
-        "pan_y": 0.45,
-        "zoom": 0.06
+        "type": "camera_path",
+        "waypoints": [
+          [0.5, 0.45, 1.05],
+          [0.5, 0.45, 0.97]
+        ]
       },
       "beats": [
         {
@@ -595,7 +596,7 @@
         "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt.",
         "title": "Exam card paper (AI plate)"
       },
-      "production_notes": "No narration; the [pause:10] holds the card in silence. The exam card maps 1:1 to the three LOs: the landing."
+      "production_notes": "No narration; the [pause:10] holds the card in silence. The exam card lands the three LOs plus the stamped verdict."
     }
   ]
 }
