@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "library": {
+    "include": [
+      "build/reclaim-merged/staged/**/*.json",
+      "build/fresh-written/*.json",
+      "build/tests/test-*.json",
+      "build/reconceived/**/test.json"
+    ],
+    "exclude": [
+      "**/_raw/**"
+    ],
+    "answer_keys": [
+      "build/tests/ANSWER_KEYS.md"
+    ]
+  },
+  "standards": "build/cb-codes.json",
+  "output": "build/content-qa",
+  "review": {
+    "enabled": true,
+    "provider": "ollama",
+    "model": "qwen2.5:14b",
+    "vision_model": "qwen2.5vl:7b",
+    "endpoint": "http://127.0.0.1:11434",
+    "timeout_seconds": 180,
+    "grounding_globs": [
+      "build/content/period-reviews/u*.md"
+    ],
+    "grounding_max_chars": 8000,
+    "passes": [
+      "blind_key",
+      "distractors",
+      "accuracy_alignment",
+      "image_relevance",
+      "writing_rubric"
+    ]
+  },
+  "render": {
+    "enabled": true,
+    "max_items_per_page": 2500
+  },
+  "policies": {
+    "fail_on": [
+      "blocker"
+    ],
+    "require_local_images": true,
+    "image_min_width": 500,
+    "image_min_height": 300,
+    "longest_answer_ratio": 1.55,
+    "minimum_distractor_words": 3
+  }
+}

@@ -1277,6 +1277,56 @@ def diagram_scene(bg_img, dur, nodes, edges, title=""):
     return VideoClip(frame, duration=dur)
 
 
+def device_overlay(base_clip, device, params, dur):
+    """Render a validated named storytelling device as a timed overlay.
+
+    Devices deliberately compile to the shared annotation primitive, so their
+    text participates in PlanRecorder collision checks just like ordinary
+    beats and captions.
+    """
+    notes = []
+    if device == "hook":
+        labels = {"contradiction": "THE CONTRADICTION",
+                  "mystery": "THE MYSTERY", "stakes": "THE STAKES"}
+        notes.append((0.15, min(2.2, float(params["payoff_by_sec"])), "pop",
+                      {"text": labels[params["hook_type"]], "y": 0.23}))
+    elif device == "redact_reveal":
+        starts = params.get("reveal_at", [dur * (i + 1) / (len(params["lines"]) + 1)
+                                          for i in range(len(params["lines"]))])
+        for index, (line, at) in enumerate(zip(params["lines"], starts)):
+            if float(at) > 0.1:
+                notes.append((0, float(at), "label", {
+                    "text": "[ REDACTED ]", "x": 0.5,
+                    "y": 0.28 + index * 0.13}))
+            notes.append((float(at), max(0.3, dur - float(at)), "label", {
+                "text": line, "x": 0.5, "y": 0.28 + index * 0.13}))
+    elif device == "reversal" and params.get("pivot"):
+        notes.append((0.12, min(2.0, dur), "pop",
+                      {"text": "THE REVERSAL", "y": 0.23}))
+    elif device == "annotate":
+        for index, item in enumerate(params["annotations"]):
+            at = float(item.get("at", index * dur / max(1, len(params["annotations"]))))
+            x = float(item.get("x", 0.34 + 0.32 * (index % 2)))
+            y = float(item.get("y", 0.42 + 0.16 * (index % 2)))
+            notes.append((at, min(2.8, max(0.3, dur - at)), "arrow", {
+                "text": item["label"], "x": x, "y": y,
+                "lx": float(item.get("label_x", 0.28 if index % 2 == 0 else 0.72)),
+                "ly": float(item.get("label_y", 0.25 + index * 0.11)),
+            }))
+    elif device == "show_ask":
+        hold = min(float(params.get("hold_sec", 2)), dur)
+        notes.append((dur - hold, hold, "point",
+                      {"text": params["question"], "y": 0.43}))
+    elif device == "date_ticker":
+        dates = params["dates"]
+        step = dur / len(dates)
+        x = 0.78 if params.get("position", "top_right") == "top_right" else 0.22
+        for index, label in enumerate(dates):
+            notes.append((index * step, min(dur - index * step, step + 0.08),
+                          "label", {"text": label, "x": x, "y": 0.09}))
+    return annotate(base_clip, notes) if notes else base_clip
+
+
 def beat_overlay(base_clip, beats, dur):
     """Timed editorial beats shared by AP prompts, guides, metaphors and labels."""
     from moviepy import VideoClip

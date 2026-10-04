@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.apush/schemas/qa-manifest.schema.json",
+  "title": "APUSH content QA manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "library", "standards", "output"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "library": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["include"],
+      "properties": {
+        "include": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+        "exclude": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "answer_keys": {"type": "array", "items": {"type": "string", "minLength": 1}}
+      }
+    },
+    "standards": {"type": "string", "minLength": 1},
+    "output": {"type": "string", "minLength": 1},
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {"type": "boolean"},
+        "provider": {"enum": ["ollama", "openai-compatible"]},
+        "model": {"type": "string"},
+        "vision_model": {"type": "string"},
+        "endpoint": {"type": "string"},
+        "api_key_env": {"type": "string"},
+        "timeout_seconds": {"type": "number", "minimum": 1},
+        "grounding_globs": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "grounding_max_chars": {"type": "integer", "minimum": 500, "maximum": 30000},
+        "passes": {"type": "array", "uniqueItems": true, "items": {"enum": ["blind_key", "distractors", "accuracy_alignment", "image_relevance", "writing_rubric"]}}
+      }
+    },
+    "render": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {"enabled": {"type": "boolean"}, "max_items_per_page": {"type": "integer", "minimum": 1}}
+    },
+    "policies": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "fail_on": {"type": "array", "items": {"enum": ["blocker", "major", "minor", "info"]}},
+        "require_local_images": {"type": "boolean"},
+        "image_min_width": {"type": "integer", "minimum": 1},
+        "image_min_height": {"type": "integer", "minimum": 1},
+        "longest_answer_ratio": {"type": "number", "minimum": 1},
+        "minimum_distractor_words": {"type": "integer", "minimum": 1}
+      }
+    }
+  }
+}
