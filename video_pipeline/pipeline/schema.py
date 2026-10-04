@@ -690,7 +690,7 @@ def validate_manifest(data: Any, path: Path, repo_root: Path,
                 _timing(effect, effect_where)
                 if not effect.get("kind") and not effect.get("file"):
                     raise PipelineError(f"{effect_where} requires kind or file")
-                if effect.get("kind") not in {None, "impact", "whoosh", "tick", "chime", "page_turn"}:
+                if effect.get("kind") not in {None, "impact", "whoosh", "tick", "chime", "page_turn", "typewriter"}:
                     raise PipelineError(f"{effect_where}.kind is not supported")
                 if "file" in effect:
                     _text(effect["file"], f"{effect_where}.file")
