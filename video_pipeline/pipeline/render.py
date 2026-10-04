@@ -78,15 +78,84 @@ def build_clip(motion, scene: dict, duration: float, manifest_path: Path, repo_r
 
 
 def _mixed_audio(scene: dict, narration: Path, duration: float,
-                 manifest_path: Path, repo_root: Path, output: Path) -> Path:
-    """Mix narration, optional ambience, and built-in/file effects with ffmpeg."""
-    spec = scene.get("audio")
-    if not spec:
+                 manifest_path: Path, repo_root: Path, output: Path,
+                 music: dict | None = None, music_offset: float = 0,
+                 is_first: bool = False, is_last: bool = False,
+                 chapter_change: bool = False) -> Path:
+    """Mix narration, music, ambience, foley, and effects with ffmpeg."""
+    spec = scene.get("audio") or {}
+    music = music or {}
+    if not spec and not music:
         return narration
     command = ["ffmpeg", "-y", "-v", "error", "-i", str(narration)]
-    filters = ["[0:a]volume=1[narration]"]
+    has_bed = bool(music.get("background"))
+    duck = music.get("ducking", {}) or {}
+    duck_enabled = has_bed and duck.get("enabled", True)
+    filters = (["[0:a]volume=1,asplit=2[narration][duckkey]"]
+               if duck_enabled else ["[0:a]volume=1[narration]"])
     inputs = ["[narration]"]
     input_index = 1
+
+    if has_bed:
+        bed_path = resolve_local(music["background"], manifest_path.parent, repo_root)
+        command += ["-stream_loop", "-1", "-ss", f"{music_offset:.3f}",
+                    "-i", str(bed_path)]
+        volume = float(music.get("background_volume", 0.12))
+        chain = (f"[{input_index}:a]atrim=0:{duration:.3f},asetpts=N/SR/TB,"
+                 f"volume={volume}")
+        if is_first and float(music.get("fade_in_sec", 1.0)) > 0:
+            fade = min(float(music.get("fade_in_sec", 1.0)), duration / 2)
+            chain += f",afade=t=in:st=0:d={fade:.3f}"
+        if is_last and float(music.get("fade_out_sec", 1.5)) > 0:
+            fade = min(float(music.get("fade_out_sec", 1.5)), duration / 2)
+            chain += f",afade=t=out:st={duration-fade:.3f}:d={fade:.3f}"
+        if duck_enabled:
+            filters.append(chain + "[musicraw]")
+            filters.append(
+                "[musicraw][duckkey]sidechaincompress="
+                f"threshold={float(duck.get('threshold', 0.03))}:"
+                f"ratio={float(duck.get('ratio', 8))}:"
+                f"attack={float(duck.get('attack_ms', 20))}:"
+                f"release={float(duck.get('release_ms', 350))}[musicbed]")
+        else:
+            filters.append(chain + "[musicbed]")
+        inputs.append("[musicbed]")
+        input_index += 1
+
+    def add_cue(field: str, label: str, volume_field: str,
+                duration_field: str, start: float = 0) -> None:
+        nonlocal input_index
+        if not music.get(field):
+            return
+        cue_path = resolve_local(music[field], manifest_path.parent, repo_root)
+        default_duration = {"intro_duration_sec": 3.0,
+                            "outro_duration_sec": 4.0,
+                            "chapter_change_duration_sec": 1.5}[duration_field]
+        cue_duration = min(duration - start,
+                           float(music.get(duration_field, default_duration)))
+        if cue_duration <= 0:
+            return
+        command.extend(["-i", str(cue_path)])
+        volume = float(music.get(volume_field, 0.3))
+        fade = min(0.35, cue_duration / 3)
+        chain = (f"[{input_index}:a]atrim=0:{cue_duration:.3f},asetpts=N/SR/TB,"
+                 f"volume={volume},afade=t=out:st={cue_duration-fade:.3f}:d={fade:.3f}")
+        if start > 0:
+            delay = int(start * 1000)
+            chain += f",adelay={delay}|{delay}"
+        filters.append(chain + f"[{label}]")
+        inputs.append(f"[{label}]")
+        input_index += 1
+
+    if is_first:
+        add_cue("intro", "musicintro", "intro_volume", "intro_duration_sec")
+    if chapter_change:
+        add_cue("chapter_change", "chaptercue", "chapter_change_volume",
+                "chapter_change_duration_sec")
+    if is_last:
+        outro_duration = min(duration, float(music.get("outro_duration_sec", 4.0)))
+        add_cue("outro", "musicoutro", "outro_volume", "outro_duration_sec",
+                max(0, duration - outro_duration))
     ambience = spec.get("ambience")
     if ambience:
         ambience_path = resolve_local(ambience, manifest_path.parent, repo_root)
@@ -175,6 +244,9 @@ def render_video(manifest: dict, manifest_path: Path, repo_root: Path, audio_dir
         # intermediates are cheap to decode and give the final compositor a
         # stable, bounded memory footprint.
         from moviepy import VideoFileClip
+        music = manifest.get("music", {}) or {}
+        chapter_scenes = set(music.get("chapter_change_scene_ids", []))
+        music_offset = 0.0
         for index, scene in enumerate(manifest["scenes"]):
             audio = audio_dir / f"{scene['id']}.wav"
             if not audio.is_file():
@@ -194,9 +266,14 @@ def render_video(manifest: dict, manifest_path: Path, repo_root: Path, audio_dir
             gc.collect()
             scenes.append(VideoFileClip(str(scene_path), audio=False))
             mixed = _mixed_audio(timed_scene, audio, duration, manifest_path, repo_root,
-                                 audio_dir.parent / "mixed-audio" / f"{scene['id']}.wav")
+                                 audio_dir.parent / "mixed-audio" / f"{scene['id']}.wav",
+                                 music=music, music_offset=music_offset,
+                                 is_first=index == 0,
+                                 is_last=index == len(manifest["scenes"]) - 1,
+                                 chapter_change=scene["id"] in chapter_scenes)
             audios.append(str(mixed))
             transitions.append(scene.get("transition", {"type": "crossfade", "duration": 0.2}))
+            music_offset += max(0, duration - float(video.get("transition_seconds", 0.2)))
             print(f"[rendered] staged {scene['id']} ({duration:.2f}s)", flush=True)
 
         motion.assemble(scenes, audios, str(output),

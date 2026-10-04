@@ -57,7 +57,36 @@
     "tone": "a teacher talking to a smart 16-year-old; plain, spoken, concrete",
     "visual_style": "engraving-documentary; stamps, serif/sans type grammar",
     "captions": false,
+    "music": "continuous background score with ducking, intro/outro, and chapter stingers",
     "branding": "APUSH Unit 1"
+  },
+  "music": {
+    "background": "video_pipeline/music/papulina-lost-signal-coffee-371869.mp3",
+    "background_volume": 0.1,
+    "ducking": {
+      "enabled": true,
+      "threshold": 0.025,
+      "ratio": 10,
+      "attack_ms": 18,
+      "release_ms": 420
+    },
+    "fade_in_sec": 1.2,
+    "fade_out_sec": 2.0,
+    "intro": "video_pipeline/music/alex_kizenkov-stomps-and-claps-percussion-and-rhythm-141190.mp3",
+    "intro_volume": 0.2,
+    "intro_duration_sec": 2.4,
+    "outro": "video_pipeline/music/absounds-inspiring-acoustic-folk-music-255650.mp3",
+    "outro_volume": 0.18,
+    "outro_duration_sec": 4.0,
+    "chapter_change": "video_pipeline/music/alex_kizenkov-stomps-and-claps-percussion-and-rhythm-141190.mp3",
+    "chapter_change_volume": 0.16,
+    "chapter_change_duration_sec": 1.1,
+    "chapter_change_scene_ids": [
+      "s2a-study",
+      "s3a-split",
+      "s4a-pages",
+      "s5a-portrait"
+    ]
   },
   "scenes": [
     {

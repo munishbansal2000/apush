@@ -12,7 +12,7 @@ ANIMATION_TYPES = {
     "wipe", "ai_clip", "parallax", "source_analysis", "diagram",
 }
 
-ROOT_KEYS = {"schema_version", "course_id", "unit_id", "chapter_id", "lesson_id", "title", "description", "essential_question", "learning_objectives", "key_terms", "ap_alignment", "presentation", "output", "tts", "generation", "clip_generation", "still_generation", "video", "scenes", "transition_scheme"}
+ROOT_KEYS = {"schema_version", "course_id", "unit_id", "chapter_id", "lesson_id", "title", "description", "essential_question", "learning_objectives", "key_terms", "ap_alignment", "presentation", "music", "output", "tts", "generation", "clip_generation", "still_generation", "video", "scenes", "transition_scheme"}
 VIDEO_KEYS = {"width", "height", "fps", "transition_seconds"}
 TTS_KEYS = {"engine", "server_url", "reference_audio", "reference_text", "timeout_seconds", "settings", "edge_voice", "edge_rate", "edge_pitch", "voices"}
 GEN_KEYS = {"provider", "model", "endpoint", "api_key_env", "timeout_seconds"}
@@ -25,6 +25,7 @@ NARRATION_KEYS = {"text", "voice", "reference_audio", "reference_text", "setting
 VISUAL_KEYS = {"base_image", "secondary_image", "clip", "layers", "still", "search"}
 ALIGNMENT_KEYS = {"period", "topics", "themes", "skills"}
 PRESENTATION_KEYS = {"audience", "tone", "visual_style", "captions", "music", "branding"}
+MUSIC_KEYS = {"background", "background_volume", "ducking", "fade_in_sec", "fade_out_sec", "intro", "intro_volume", "intro_duration_sec", "outro", "outro_volume", "outro_duration_sec", "chapter_change", "chapter_change_volume", "chapter_change_duration_sec", "chapter_change_scene_ids"}
 SOURCE_KEYS = {"title", "creator", "date", "license", "url", "notes"}
 COMMON_ANIMATION_KEYS = {"type", "prompt", "caption", "title", "subtitle"}
 ANIMATION_KEYS = {
@@ -367,6 +368,36 @@ def validate_manifest(data: Any, path: Path, repo_root: Path,
                 _text(presentation[field], f"manifest.presentation.{field}")
         if "captions" in presentation and not isinstance(presentation["captions"], bool):
             raise PipelineError("manifest.presentation.captions must be true or false")
+    music = _obj(root.get("music", {}), "manifest.music")
+    _keys(music, MUSIC_KEYS, "manifest.music")
+    for field in ("background", "intro", "outro", "chapter_change"):
+        if field in music:
+            _text(music[field], f"manifest.music.{field}")
+    for field, default, low, high in (
+            ("background_volume", 0.12, 0, 1),
+            ("fade_in_sec", 1.0, 0, 10), ("fade_out_sec", 1.5, 0, 10),
+            ("intro_volume", 0.3, 0, 1), ("intro_duration_sec", 3.0, 0.1, 30),
+            ("outro_volume", 0.3, 0, 1), ("outro_duration_sec", 4.0, 0.1, 30),
+            ("chapter_change_volume", 0.25, 0, 1),
+            ("chapter_change_duration_sec", 1.5, 0.1, 10)):
+        if field in music:
+            _number(music.get(field, default), f"manifest.music.{field}", low, high)
+    if "ducking" in music:
+        duck = _obj(music["ducking"], "manifest.music.ducking")
+        _keys(duck, {"enabled", "threshold", "ratio", "attack_ms", "release_ms"},
+              "manifest.music.ducking")
+        if "enabled" in duck and not isinstance(duck["enabled"], bool):
+            raise PipelineError("manifest.music.ducking.enabled must be true or false")
+        for field, default, low, high in (
+                ("threshold", 0.03, 0.001, 1), ("ratio", 8, 1, 20),
+                ("attack_ms", 20, 0.01, 2000), ("release_ms", 350, 1, 9000)):
+            if field in duck:
+                _number(duck.get(field, default), f"manifest.music.ducking.{field}", low, high)
+    if "chapter_change_scene_ids" in music:
+        _text_list(music["chapter_change_scene_ids"],
+                   "manifest.music.chapter_change_scene_ids")
+        if "chapter_change" not in music:
+            raise PipelineError("manifest.music.chapter_change_scene_ids requires chapter_change")
     _text(root["output"], "manifest.output")
     if not root["output"].lower().endswith(".mp4"):
         raise PipelineError("manifest.output must end in .mp4")
@@ -693,4 +724,17 @@ def validate_manifest(data: Any, path: Path, repo_root: Path,
             _required(source, {"title", "license"}, f"{where}.source")
             for field, value in source.items():
                 _text(value, f"{where}.source.{field}")
+    if music:
+        unknown_scenes = sorted(set(music.get("chapter_change_scene_ids", [])) - ids)
+        if unknown_scenes:
+            raise PipelineError("manifest.music.chapter_change_scene_ids has unknown scene(s): "
+                                + ", ".join(unknown_scenes))
+        if require_files:
+            for field in ("background", "intro", "outro", "chapter_change"):
+                if field in music:
+                    resolved = resolve_local(music[field], path.parent, repo_root)
+                    if not resolved.is_file():
+                        raise PipelineError(
+                            f"manifest.music.{field}: referenced file does not exist: "
+                            f"{music[field]} (resolved {resolved})")
     return root

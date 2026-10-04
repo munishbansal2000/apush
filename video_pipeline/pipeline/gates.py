@@ -276,7 +276,7 @@ def prompt_subject_coherence(manifest: dict, manifest_path: Path,
 def spec_parity(manifest: dict) -> None:
     """Curriculum-level presentation claims must be wired in the manifests.
     captions:true fails because no caption renderer exists; a music claim
-    fails unless every scene defines audio.ambience."""
+    requires either the lesson-level music mixer or per-scene ambience."""
     lid = _lid(manifest)
     presentation = manifest.get("presentation", {}) or {}
     if presentation.get("captions"):
@@ -285,14 +285,16 @@ def spec_parity(manifest: dict) -> None:
             f"renderer exists in the pipeline; remove the claim or implement "
             f"caption support")
     if presentation.get("music"):
-        missing = [str(scene.get("id", "<unknown scene>"))
-                   for scene in _scenes(manifest)
-                   if not ((scene.get("audio", {}) or {}).get("ambience"))]
+        has_lesson_bed = bool((manifest.get("music", {}) or {}).get("background"))
+        missing = ([] if has_lesson_bed else
+                   [str(scene.get("id", "<unknown scene>"))
+                    for scene in _scenes(manifest)
+                    if not ((scene.get("audio", {}) or {}).get("ambience"))])
         if missing:
             raise PipelineError(
                 f"{lid}: defaults.presentation.music is set but these scenes "
-                f"define no audio.ambience: {', '.join(missing)}; wire a music "
-                f"bed or remove the claim")
+                f"define no audio.ambience: {', '.join(missing)}; configure "
+                f"manifest.music.background or remove the claim")
 
 
 # ---------------------------------------------------------------------------

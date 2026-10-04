@@ -218,6 +218,11 @@ class SpecParityTests(unittest.TestCase):
         sc = scene(audio={"ambience": "music/bed.mp3"})
         spec_parity(lesson([sc], presentation={"music": "bed"}))  # no raise
 
+    def test_music_claim_passes_with_lesson_bed(self):
+        value = lesson([scene()], presentation={"music": "bed"})
+        value["music"] = {"background": "music/bed.mp3"}
+        spec_parity(value)  # no raise
+
     def test_no_claims_pass(self):
         spec_parity(lesson([scene()]))  # no raise
 

@@ -195,6 +195,48 @@ class ManifestTests(unittest.TestCase):
             self.assertIn("tremolo", filters)
             self.assertIn("afade=t=in", filters)
 
+    def test_music_bed_ducks_and_adds_editorial_cues(self):
+        scene = {"id": "chapter-two", "audio": {}}
+        music = {
+            "background": "bed.mp3", "background_volume": 0.1,
+            "ducking": {"enabled": True, "threshold": 0.025, "ratio": 10,
+                        "attack_ms": 18, "release_ms": 420},
+            "intro": "intro.mp3", "intro_duration_sec": 2,
+            "outro": "outro.mp3", "outro_duration_sec": 3,
+            "chapter_change": "chapter.mp3", "chapter_change_duration_sec": 1,
+        }
+        with tempfile.TemporaryDirectory() as value:
+            root = Path(value)
+            with mock.patch("pipeline.render.subprocess.run") as run:
+                _mixed_audio(scene, root / "n.wav", 8.0, root / "lesson.json",
+                             root, root / "mixed.wav", music=music,
+                             music_offset=12.5, is_first=True, is_last=True,
+                             chapter_change=True)
+            command = run.call_args.args[0]
+            filters = command[command.index("-filter_complex") + 1]
+            self.assertIn("sidechaincompress", filters)
+            self.assertIn("[musicintro]", filters)
+            self.assertIn("[musicoutro]", filters)
+            self.assertIn("[chaptercue]", filters)
+            self.assertIn("12.500", command)
+
+    def test_music_config_validates_files_and_chapter_ids(self):
+        with tempfile.TemporaryDirectory() as value:
+            root = Path(value)
+            data = self.fixture(root)
+            for filename in ("bed.mp3", "sting.mp3"):
+                (root / filename).write_bytes(b"audio fixture")
+            data["music"] = {
+                "background": "bed.mp3",
+                "ducking": {"enabled": True, "ratio": 8},
+                "chapter_change": "sting.mp3",
+                "chapter_change_scene_ids": ["intro"],
+            }
+            validate_manifest(data, root / "lesson.json", ROOT)
+            data["music"]["chapter_change_scene_ids"] = ["missing"]
+            with self.assertRaisesRegex(PipelineError, "unknown scene"):
+                validate_manifest(data, root / "lesson.json", ROOT)
+
     def test_text_collision_fails_before_render(self):
         with tempfile.TemporaryDirectory() as value:
             root = Path(value)
