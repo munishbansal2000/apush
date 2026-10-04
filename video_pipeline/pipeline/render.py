@@ -203,7 +203,13 @@ def _mixed_audio(scene: dict, narration: Path, duration: float,
         "tick": "sine=frequency=1100:duration=0.07:sample_rate=48000",
         "chime": "sine=frequency=660:duration=0.42:sample_rate=48000",
         "whoosh": "anoisesrc=color=pink:duration=0.38:amplitude=0.18:sample_rate=48000",
-        "page_turn": "anoisesrc=color=white:duration=0.20:amplitude=0.10:sample_rate=48000"
+        "page_turn": "anoisesrc=color=white:duration=0.20:amplitude=0.10:sample_rate=48000",
+        # Typewriter key strike: sharp noise attack + decaying 2.6kHz metallic
+        # ping. Use for stamped/typed labels (e.g. DAY ONE / DAY THREE / DAY FIVE).
+        "typewriter": ("anoisesrc=color=white:duration=0.11:amplitude=0.5:sample_rate=48000[n];"
+                       "aevalsrc=0.55*sin(2*PI*2600*t)*exp(-50*t):s=48000:d=0.11[p];"
+                       "[n][p]amix=inputs=2:duration=shortest:normalize=0,"
+                       "highpass=f=900,lowpass=f=10000")
     }
     for effect_index, effect in enumerate(spec.get("effects", [])):
         if effect.get("file"):

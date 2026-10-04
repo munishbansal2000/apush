@@ -1448,7 +1448,7 @@ def beat_overlay(base_clip, beats, dur):
 # (device_params.reveal_at, annotation "at"); untimed fallbacks spread
 # evenly so layout validation never depends on TTS output.
 
-_HOOK_BADGE = {"contradiction": "VS", "mystery": "?", "stakes": "!"}
+_HOOK_BADGE = {"contradiction": "VS", "mystery": "?", "stakes": "!", "question": "?"}
 
 
 def device_overlay(base_clip, device, params, dur):

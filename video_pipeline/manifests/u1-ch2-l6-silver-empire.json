@@ -1,0 +1,787 @@
+{
+  "ap_alignment": {
+    "period": "Period 1",
+    "skills": [
+      "Causation",
+      "Comparison",
+      "Analyzing Evidence"
+    ],
+    "themes": [
+      "Work, Exchange, and Technology"
+    ],
+    "topics": [
+      "1.4",
+      "1.3"
+    ]
+  },
+  "chapter_id": "ch2",
+  "clip_generation": {
+    "provider": "none"
+  },
+  "course_id": "apush",
+  "description": "Potosí's silver mines, the mita labor draft, and the price revolution — how one Andean mountain wired the first global economy.",
+  "essential_question": "How did one mountain of silver wire the first global economy?",
+  "generation": {
+    "provider": "none"
+  },
+  "key_terms": [
+    {
+      "definition": "The Andean silver-mining center whose output bankrolled Spain's empire after 1545.",
+      "term": "Potosí"
+    },
+    {
+      "definition": "The Spanish colonial labor draft, adapted from the Inca mit'a, requiring Indigenous communities to send workers to the mines.",
+      "term": "mita"
+    },
+    {
+      "definition": "The century-long rise of European prices, roughly tripling by 1600, driven by the flood of American silver.",
+      "term": "price revolution"
+    }
+  ],
+  "learning_objectives": [
+    "Describe how the mita draft supplied labor for Potosí's silver mines.",
+    "Explain the price revolution as an effect of American silver in Europe.",
+    "Trace silver's two streams — Potosí's east to Europe, Mexican silver west aboard the Manila galleons — and explain how they wired the first global economy."
+  ],
+  "lesson_id": "u1-ch2-l6-silver-empire",
+  "output": "../../build/lesson-videos/u1-ch2-l6-silver-empire.mp4",
+  "presentation": {
+    "audience": "APUSH students",
+    "branding": "APUSH Unit 1",
+    "captions": false,
+    "tone": "a teacher talking to a smart 16-year-old; plain, spoken, concrete",
+    "visual_style": "engraving-documentary; stamps, serif/sans type grammar"
+  },
+  "scenes": [
+    {
+      "animation": {
+        "pan_x": 0.5,
+        "pan_y": 0.5,
+        "type": "ken_burns",
+        "zoom": 0.08
+      },
+      "audio": {},
+      "beats": [
+        {
+          "cue": "they struck silver there",
+          "duration": 5,
+          "text": "CERRO RICO, 1545",
+          "type": "label",
+          "x": 0.12,
+          "y": 0.12
+        },
+        {
+          "cue": "two hundred thousand people",
+          "duration": 5,
+          "text": "200,000 PEOPLE",
+          "type": "label",
+          "x": 0.5,
+          "y": 0.78
+        },
+        {
+          "cue": "the mountain that eats men",
+          "duration": 5,
+          "text": "THE MOUNTAIN THAT EATS MEN",
+          "type": "label",
+          "x": 0.5,
+          "y": 0.85
+        }
+      ],
+      "device": "hook",
+      "device_params": {
+        "hook_type": "question",
+        "payoff_by_sec": 180.0
+      },
+      "id": "s1",
+      "min_duration": 20,
+      "narration": {
+        "text": "[beat]High in the Andes sits a mountain the Spanish called Cerro Rico, the Rich Hill. In [date:1545] they struck silver there, and the city below it would swell to two hundred thousand people, as large as London. [beat] The workers called it something else: the mountain that eats men. How did one mountain rewire the world's economy, and what did it cost?",
+        "voice": "host"
+      },
+      "on_screen_text": [
+        "CERRO RICO, 1545",
+        "200,000 PEOPLE",
+        "THE MOUNTAIN THAT EATS MEN"
+      ],
+      "production_notes": "Question hook: the mountain is established, then the lesson's framing question is asked outright (how did one mountain rewire the world's economy?). It is answered in s4. Low wind drone; silence under 'the mountain that eats men.' Fallback: if the mountain composition fails, a high-altitude mining settlement with tiny figures.",
+      "purpose": "hook",
+      "source": {
+        "license": "AI-generated",
+        "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt.",
+        "title": "Cerro Rico, the Rich Hill (AI plate)"
+      },
+      "topics": [
+        "1.4"
+      ],
+      "transition": {
+        "duration": 0.2,
+        "type": "hard_cut"
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch2-l6/cerro-rico-mountain.webp",
+        "still": {
+          "orientation": "landscape",
+          "prompt": "A great conical silver mountain looming over a tiny mining settlement in the high Andes, minute figures climbing its slopes, dramatic clouded sky, vast scale. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions.",
+          "provider": "hatch-media"
+        }
+      }
+    },
+    {
+      "animation": {
+        "title": "BY THE END OF THIS LESSON",
+        "type": "objectives"
+      },
+      "id": "s1b-objectives",
+      "min_duration": 12,
+      "narration": {
+        "text": "[beat]By the end: [emphasis]One:[/emphasis] how the mita draft fed workers to Potosí's mines. [emphasis]Two:[/emphasis] how American silver caused the price revolution. [emphasis]Three:[/emphasis] silver's two streams: Potosí's east to Europe, Mexico's west to Manila.",
+        "voice": "host"
+      },
+      "purpose": "context",
+      "topics": [
+        "1.4"
+      ],
+      "transition": {
+        "duration": 0.2,
+        "type": "hard_cut"
+      },
+      "visual": {}
+    },
+    {
+      "animation": {
+        "cx": 0.5,
+        "cy": 0.55,
+        "end_zoom": 1.06,
+        "type": "zoom",
+        "zoom_duration": 12
+      },
+      "audio": {},
+      "beats": [
+        {
+          "cue": "in [date:1545]",
+          "duration": 5,
+          "text": "1545: THE STRIKE",
+          "type": "label",
+          "x": 0.12,
+          "y": 0.12
+        }
+      ],
+      "covers_los": [
+        1
+      ],
+      "id": "s2a",
+      "min_duration": 14,
+      "narration": {
+        "text": "The story goes that in [date:1545], an Andean herder named Diego Huallpa chased lost llamas. He built a fire, and the ground beneath it melted into shining liquid. Silver. [beat] Within years, Potosí was producing most of the world's silver. But Spain had a problem. The mountain was rich, and there was almost no one to dig it.",
+        "voice": "host"
+      },
+      "on_screen_text": [
+        "1545: THE STRIKE"
+      ],
+      "production_notes": "Intimate after the vast mountain. The Huallpa story is told as legend ('the story goes'), honestly framed. Fallback: a close detail of firelight on silver-bearing rock.",
+      "purpose": "concept",
+      "source": {
+        "license": "AI-generated",
+        "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt.",
+        "title": "The 1545 strike, Huallpa's fire (AI plate)"
+      },
+      "topics": [
+        "1.4"
+      ],
+      "transition": {
+        "duration": 0.2,
+        "type": "hard_cut"
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch2-l6/silver-strike.webp",
+        "still": {
+          "orientation": "landscape",
+          "prompt": "Night on a dark Andean mountainside: a small campfire, a herder's silhouette beside two llamas, the firelight revealing gleaming silver veins in the rock. Intimate, quiet. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions.",
+          "provider": "hatch-media"
+        }
+      }
+    },
+    {
+      "animation": {
+        "type": "auto"
+      },
+      "audio": {},
+      "beats": [
+        {
+          "cue": "In [date:1573]",
+          "duration": 5,
+          "text": "MITA, 1573",
+          "type": "label",
+          "x": 0.5,
+          "y": 0.12
+        }
+      ],
+      "covers_los": [
+        1
+      ],
+      "id": "s2b",
+      "min_duration": 12,
+      "narration": {
+        "text": "Spain's answer was the mita. The Inca had used a labor draft called the mit'a for roads and terraces, taking turns. In [date:1573], the viceroy Francisco de Toledo repurposed it for the mines. [beat] Here is the order. Then listen to a man who lived under it.",
+        "voice": "host"
+      },
+      "on_screen_text": [
+        "MITA, 1573"
+      ],
+      "production_notes": "The law looks legitimate here, warm and orderly, so the mitayo's testimony cuts deeper. The host introduces both voices in this scene (decree, then mitayo). Fallback: a close detail of the wax seal and quill.",
+      "purpose": "evidence",
+      "source": {
+        "license": "AI-generated",
+        "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt. Same plate reused by s2c.",
+        "title": "The viceroy's decree desk (AI plate)"
+      },
+      "topics": [
+        "1.4"
+      ],
+      "transition": {
+        "duration": 0.2,
+        "type": "hard_cut"
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch2-l6/mita-decree.webp",
+        "still": {
+          "orientation": "landscape",
+          "prompt": "A Spanish colonial viceroy's writing desk: a sealed decree with red wax, a quill in an inkwell, candlelight, dark wood, a crucifix on the wall. Order and authority. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions.",
+          "provider": "hatch-media"
+        }
+      }
+    },
+    {
+      "animation": {
+        "type": "auto"
+      },
+      "audio": {},
+      "beats": [
+        {
+          "cue": "Each village shall send",
+          "duration": 8,
+          "text": "TOLEDO'S MITA",
+          "type": "label",
+          "x": 0.5,
+          "y": 0.82
+        },
+        {
+          "cue": "Each village shall send",
+          "duration": 8,
+          "text": "FRANCISCO DE TOLEDO · VICEROY",
+          "type": "label",
+          "x": 0.5,
+          "y": 0.12
+        }
+      ],
+      "covers_los": [
+        1
+      ],
+      "id": "s2c",
+      "min_duration": 10,
+      "narration": {
+        "text": "[VOICE:decree][solemn]Each village shall send one man in seven to labor in the mines of Potosí for one year. They shall receive a wage. They shall return to their homes when the term is done.",
+        "voice": "decree"
+      },
+      "on_screen_text": [
+        "TOLEDO'S MITA",
+        "FRANCISCO DE TOLEDO · VICEROY"
+      ],
+      "production_notes": "The decree voice: older, formal, flat, bureaucratic. The law speaking. Locked frame; reverb marks the 1500s as then. The terms are paraphrased from Toledo's mita, not verbatim.",
+      "purpose": "evidence",
+      "source": {
+        "license": "AI-generated",
+        "notes": "Same still spec and output path as s2b; the stills stage skips it because the file already exists.",
+        "title": "The viceroy's decree desk (AI plate, reused from s2b)"
+      },
+      "topics": [
+        "1.4"
+      ],
+      "transition": {
+        "duration": 0.2,
+        "type": "hard_cut"
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch2-l6/mita-decree.webp",
+        "still": {
+          "orientation": "landscape",
+          "prompt": "A Spanish colonial viceroy's writing desk: a sealed decree with red wax, a quill in an inkwell, candlelight, dark wood, a crucifix on the wall. Order and authority. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions.",
+          "provider": "hatch-media"
+        }
+      }
+    },
+    {
+      "animation": {
+        "pan_x": 0.45,
+        "pan_y": 0.5,
+        "type": "ken_burns",
+        "zoom": 0.06
+      },
+      "audio": {},
+      "beats": [
+        {
+          "cue": "They took us from our villages",
+          "duration": 8,
+          "text": "MITAYO, DRAFT LABORER",
+          "type": "label",
+          "x": 0.5,
+          "y": 0.82
+        }
+      ],
+      "covers_los": [
+        1
+      ],
+      "device": "annotate",
+      "device_params": {
+        "annotations": [
+          {
+            "cue": "We climbed down on rope ladders",
+            "label": "ladder climbers",
+            "type": "circle",
+            "x": 0.35,
+            "y": 0.55
+          },
+          {
+            "cue": "We crushed ore with our hands",
+            "label": "ore carriers",
+            "type": "circle",
+            "x": 0.62,
+            "y": 0.45
+          },
+          {
+            "cue": "breathed the mercury smoke",
+            "label": "overseer",
+            "type": "circle",
+            "x": 0.72,
+            "y": 0.35
+          }
+        ],
+        "mode": "telestrator"
+      },
+      "id": "s2d",
+      "min_duration": 14,
+      "narration": {
+        "text": "[VOICE:mitayo][solemn]They took us from our villages to the cold mountain. We climbed down on rope ladders, candles tied to our thumbs. We crushed ore with our hands and breathed the mercury smoke. [beat] The wage could not buy back our health. Many never came home.",
+        "voice": "mitayo"
+      },
+      "on_screen_text": [
+        "MITAYO, DRAFT LABORER"
+      ],
+      "production_notes": "Device: annotated freeze-frame. The frame freezes on 'We climbed down on rope ladders' and ink circles draw on as if the mitayo circled them himself; labels in small sans, no modern arrows. The voice reads the image like a document. Coordinates must be tuned against the actual plate at animatic stage. The mitayo voice is dramatized from Guamán Poma de Ayala's account of mine labor (Nueva corónica, c. 1615), not a verbatim quote; the exam card carries the disclaimer. Score drops out; the labor plays dry. WAIVER 2026-10-04: 2nd archival plate waived — no verifiable PD Guaman Poma mine-labor drawing on Wikimedia Commons (only hit is an unrelated drunkenness scene); wiring it would be dishonest. Ships with 1 archival plate (de Bry mine, s2d).",
+      "purpose": "evidence",
+      "source": {
+        "creator": "Theodor de Bry",
+        "date": "1590",
+        "license": "Public domain",
+        "notes": "Wikimedia Commons; pinned by exact page_title. A Protestant engraver's view of Spanish mines: read as argument as well as evidence.",
+        "title": "Indigenous workers in a mine in Potosí"
+      },
+      "topics": [
+        "1.4"
+      ],
+      "transition": {
+        "duration": 0.2,
+        "type": "hard_cut"
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch2-l6/debry-potosi-mine.webp",
+        "search": {
+          "min_width": 800,
+          "page_title": "File:Indigenous workers in a mine in Potosí, New Spain.jpg",
+          "provider": "wikimedia"
+        }
+      }
+    },
+    {
+      "animation": {
+        "cx": 0.5,
+        "cy": 0.55,
+        "end_zoom": 1.06,
+        "type": "zoom",
+        "zoom_duration": 12
+      },
+      "audio": {},
+      "beats": [
+        {
+          "cue": "mixed crushed ore with mercury",
+          "duration": 6,
+          "text": "MERCURY AMALGAMATION",
+          "type": "label",
+          "x": 0.5,
+          "y": 0.12
+        }
+      ],
+      "covers_los": [
+        1
+      ],
+      "id": "s3a",
+      "min_duration": 14,
+      "narration": {
+        "text": "[beat]The silver came out through poison. Miners mixed crushed ore with mercury on open patios and trod it barefoot. The mercury grabbed the silver; heat burned it away as vapor. [solemn]It worked on low-grade ore the old smelters could not touch, which is why Potosí kept producing for two centuries. It also poisoned everyone who touched it.",
+        "voice": "host"
+      },
+      "on_screen_text": [
+        "MERCURY AMALGAMATION"
+      ],
+      "production_notes": "Harsh daylight. The poisoning lands flat, without melodrama. Fallback: a close detail of hands mixing amalgam in a stone basin.",
+      "purpose": "concept",
+      "source": {
+        "license": "AI-generated",
+        "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt.",
+        "title": "The mercury patios (AI plate)"
+      },
+      "topics": [
+        "1.4"
+      ],
+      "transition": {
+        "duration": 0.2,
+        "type": "hard_cut"
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch2-l6/mercury-patio.webp",
+        "still": {
+          "orientation": "landscape",
+          "prompt": "Laborers treading silver-mercury amalgam barefoot on open stone patios, low furnaces with vapor rising behind, an overseer watching, harsh daylight. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions.",
+          "provider": "hatch-media"
+        }
+      }
+    },
+    {
+      "animation": {
+        "cx": 0.5,
+        "cy": 0.5,
+        "end_zoom": 1.04,
+        "type": "zoom",
+        "zoom_duration": 14
+      },
+      "audio": {},
+      "beats": [
+        {
+          "cue": "Historians call it the price revolution",
+          "duration": 6,
+          "text": "PRICE REVOLUTION",
+          "type": "label",
+          "x": 0.5,
+          "y": 0.78
+        },
+        {
+          "cue": "three to four times higher",
+          "duration": 5,
+          "text": "3-4X BY 1600",
+          "type": "label",
+          "x": 0.5,
+          "y": 0.15
+        }
+      ],
+      "covers_los": [
+        2
+      ],
+      "id": "s3b",
+      "min_duration": 14,
+      "narration": {
+        "text": "All that silver crossed the Atlantic to Spain. More money chasing the same goods meant prices climbed across Europe. By 1600, prices were three to four times higher than in 1500. [beat] Historians call it the price revolution, the first great inflation of the modern world.",
+        "voice": "host"
+      },
+      "on_screen_text": [
+        "PRICE REVOLUTION",
+        "3-4X BY 1600"
+      ],
+      "production_notes": "Slow pull-back as the scale widens from Spain to Europe. The 'more money chasing the same goods' line is the mechanism; say it plainly. Fallback: a tight detail of stacked silver bars and a merchant's scale.",
+      "purpose": "concept",
+      "source": {
+        "license": "AI-generated",
+        "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt.",
+        "title": "Silver floods Europe (AI plate)"
+      },
+      "topics": [
+        "1.3"
+      ],
+      "transition": {
+        "duration": 0.2,
+        "type": "hard_cut"
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch2-l6/silver-flood.webp",
+        "still": {
+          "orientation": "landscape",
+          "prompt": "Silver coins and bars spilling across a European merchant's counting table, hands sorting coins, ledgers open, wealth abstracted into metal. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions.",
+          "provider": "hatch-media"
+        }
+      }
+    },
+    {
+      "animation": {
+        "type": "auto"
+      },
+      "audio": {
+        "effects": [
+          {
+            "cue": "gone bankrupt four times",
+            "kind": "impact",
+            "volume": 0.3
+          }
+        ]
+      },
+      "beats": [
+        {
+          "cue": "gone bankrupt four times",
+          "duration": 5,
+          "text": "BANKRUPT × 4",
+          "type": "stamp",
+          "x": 0.5,
+          "y": 0.5
+        }
+      ],
+      "covers_los": [
+        2
+      ],
+      "id": "s3c",
+      "min_duration": 12,
+      "narration": {
+        "text": "Spain became the richest country in Europe. So Spain won? [beat] Not so fast. Spain spent the silver on wars and imports instead of industry. By the end of the 1500s, the richest empire on earth had gone bankrupt four times. [wry]The silver enriched Spain's rivals more than Spain itself.",
+        "voice": "host"
+      },
+      "on_screen_text": [
+        "BANKRUPT × 4"
+      ],
+      "production_notes": "Device: reversal pivot. 'Spain became the richest country in Europe' is the steelman, built up so 'Not so fast' lands. Locked frame; stillness is the verdict. Single low thud under the stamp; silence after. Stamp 1 of 2. Fallback: an empty strongbox with its lid thrown back.",
+      "purpose": "concept",
+      "source": {
+        "license": "AI-generated",
+        "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt.",
+        "title": "The empty treasury (AI plate)"
+      },
+      "topics": [
+        "1.3"
+      ],
+      "transition": {
+        "duration": 0.2,
+        "type": "hard_cut"
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch2-l6/empty-treasury.webp",
+        "still": {
+          "orientation": "landscape",
+          "prompt": "A Spanish treasury room with open empty chests, a single candle burning low, bare stone walls. The wealth is gone. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions.",
+          "provider": "hatch-media"
+        }
+      }
+    },
+    {
+      "animation": {
+        "moves": [
+          {
+            "color": [
+              178,
+              34,
+              34
+            ],
+            "cue": "crossed the Atlantic to Spain",
+            "kind": "arrow",
+            "label": "POTOSÍ TO SPAIN",
+            "label_pos": [
+              0.38,
+              0.42
+            ],
+            "path": [
+              [
+                0.28,
+                0.68
+              ],
+              [
+                0.48,
+                0.3
+              ]
+            ]
+          },
+          {
+            "color": [
+              178,
+              34,
+              34
+            ],
+            "cue": "carried it across the Pacific",
+            "kind": "arrow",
+            "label": "ACAPULCO TO MANILA",
+            "label_pos": [
+              0.5,
+              0.55
+            ],
+            "path": [
+              [
+                0.18,
+                0.42
+              ],
+              [
+                0.82,
+                0.45
+              ]
+            ]
+          },
+          {
+            "color": [
+              178,
+              34,
+              34
+            ],
+            "cue": "ended up in Asia",
+            "kind": "arrow",
+            "label": "TO CHINA",
+            "label_pos": [
+              0.84,
+              0.35
+            ],
+            "path": [
+              [
+                0.82,
+                0.45
+              ],
+              [
+                0.76,
+                0.36
+              ]
+            ]
+          }
+        ],
+        "type": "map"
+      },
+      "audio": {},
+      "beats": [
+        {
+          "cue": "the Manila galleons carried it",
+          "duration": 6,
+          "text": "MANILA GALLEONS, 1565-1815",
+          "type": "label",
+          "x": 0.5,
+          "y": 0.12
+        },
+        {
+          "cue": "wired to the whole world",
+          "duration": 6,
+          "text": "ONE MOUNTAIN, ONE WORLD",
+          "type": "stamp",
+          "x": 0.5,
+          "y": 0.5
+        }
+      ],
+      "covers_los": [
+        3
+      ],
+      "id": "s4",
+      "min_duration": 18,
+      "narration": {
+        "text": "[beat]Follow the silver, in two streams. Potosí's silver crossed the Atlantic to Spain. And from [date:1565], Mexican silver sailed west: the Manila galleons carried it across the Pacific, from Acapulco to Manila, trading it for silk and porcelain. [awed]China hungered for silver for its tax system; as much as a third of all American silver ended up in Asia. One mountain, wired to the whole world.",
+        "voice": "host"
+      },
+      "on_screen_text": [
+        "MANILA GALLEONS, 1565-1815",
+        "ONE MOUNTAIN, ONE WORLD"
+      ],
+      "production_notes": "Device: map tracing. Three arrows draw in sequence as the narration travels; each cue lands its line. Potosí's arrow runs east to Spain; the galleon arrow runs west from Acapulco to Manila: two streams, matching the narration. The hook's question (mine to world) is answered visually here. Coordinates must be tuned against the actual plate at animatic stage. Stamp 2 of 2: the stamped verdict. Gentle score swell under the final line, then fade. Fallback: if the map composition crowds, a simpler outline map of the Atlantic and Pacific with the three route arrows.",
+      "purpose": "concept",
+      "source": {
+        "license": "AI-generated",
+        "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt. Routes drawn by the map animation.",
+        "title": "World map, silver routes (AI plate)"
+      },
+      "topics": [
+        "1.3"
+      ],
+      "transition": {
+        "duration": 0.2,
+        "type": "hard_cut"
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch2-l6/world-map-blank.webp",
+        "still": {
+          "orientation": "landscape",
+          "prompt": "A blank engraved base map of the world centered on the Atlantic and Pacific, the Americas on the left and Asia on the right, three empty decorative cartouches, sea monsters and ships in the ocean margins, no routes drawn. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions.",
+          "provider": "hatch-media"
+        }
+      }
+    },
+    {
+      "animation": {
+        "bullets": [
+          "MITA: Inca draft repurposed 1573; 1 in 7 men to the mines",
+          "MERCURY: amalgamation refined low-grade ore; poisoned workers",
+          "PRICE REVOLUTION: silver floods Europe; prices 3-4x by 1600",
+          "MANILA GALLEONS: Mexican silver west to Manila; Potosí silver east to Europe"
+        ],
+        "footer": "Mitayo voice dramatized from Guamán Poma (c. 1615). AP TOPICS 1.4, 1.3",
+        "stagger": 0.45,
+        "title": "POTOSÍ: THE SILVER MOUNTAIN",
+        "type": "bullets"
+      },
+      "audio": {},
+      "covers_los": [
+        1,
+        2,
+        3
+      ],
+      "id": "s5",
+      "min_duration": 10,
+      "narration": {
+        "text": "[pause:10]",
+        "voice": "host"
+      },
+      "production_notes": "No narration; the [pause:10] holds the card in silence. The exam card maps 1:1 back to the three LOs: the landing.",
+      "purpose": "close",
+      "source": {
+        "license": "AI-generated",
+        "notes": "Pipeline-generated via hatch-media. Card holds 10s in silence; designed to be paused and screenshotted.",
+        "title": "Exam card paper (AI plate)"
+      },
+      "topics": [
+        "1.4",
+        "1.3"
+      ],
+      "transition": {
+        "duration": 0.2,
+        "type": "hard_cut"
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch2-l6/exam-card-paper.webp",
+        "still": {
+          "orientation": "landscape",
+          "prompt": "A plain aged paper texture, warm cream tone, subtle grain, completely empty, no text, no imagery. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions.",
+          "provider": "hatch-media"
+        }
+      }
+    }
+  ],
+  "still_generation": {
+    "image_output_format": "webp",
+    "orientation": "landscape",
+    "provider": "hatch-media",
+    "search_provider": "wikimedia",
+    "timeout_seconds": 600
+  },
+  "title": "Potosí: The Silver Mountain",
+  "transition_scheme": "hard_cut",
+  "tts": {
+    "edge_pitch": "+0Hz",
+    "edge_rate": "+2%",
+    "edge_voice": "en-US-GuyNeural",
+    "engine": "edge",
+    "voices": {
+      "decree": {
+        "edge_pitch": "-10Hz",
+        "edge_rate": "+0%",
+        "edge_voice": "en-US-DavisNeural"
+      },
+      "host": {
+        "edge_pitch": "+0Hz",
+        "edge_rate": "+2%",
+        "edge_voice": "en-US-GuyNeural"
+      },
+      "mitayo": {
+        "edge_pitch": "+0Hz",
+        "edge_rate": "-5%",
+        "edge_voice": "en-US-TonyNeural"
+      }
+    }
+  },
+  "unit_id": "u1",
+  "schema_version": 1
+}

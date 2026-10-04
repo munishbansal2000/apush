@@ -205,9 +205,17 @@ def license_gate(manifest: dict, manifest_path: Path, repo_root: Path) -> None:
 
     Scenes carrying a still/search spec are skipped: their images are produced
     by the stills stage (which catalogs them), so the gate verifies them on
-    the next run instead of failing before they exist."""
+    the next run instead of failing before they exist. A base_image that
+    reuses another scene's still/search output (same resolved path) is
+    covered by that scene's spec and skipped the same way."""
     lid = _lid(manifest)
     entries = _catalog_entries(str(repo_root))
+    produced = set()
+    for scene in _scenes(manifest):
+        visual = scene.get("visual", {}) or {}
+        if (visual.get("still") or visual.get("search")) and visual.get("base_image"):
+            produced.add(_repo_rel(repo_root, resolve_local(
+                visual["base_image"], manifest_path.parent, repo_root)))
     for scene in _scenes(manifest):
         sid = scene.get("id", "<unknown scene>")
         visual = scene.get("visual", {}) or {}
@@ -218,6 +226,8 @@ def license_gate(manifest: dict, manifest_path: Path, repo_root: Path) -> None:
             continue
         resolved = resolve_local(base, manifest_path.parent, repo_root)
         key = _repo_rel(repo_root, resolved)
+        if key in produced:
+            continue
         entry = entries.get(key)
         if entry is None:
             raise PipelineError(

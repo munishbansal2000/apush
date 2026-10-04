@@ -1,0 +1,602 @@
+{
+  "schema_version": 1,
+  "lesson_id": "u1-ch1-l2-atlantic-contact",
+  "course_id": "apush",
+  "unit_id": "u1",
+  "chapter_id": "ch1",
+  "title": "Atlantic Contact and the Columbian Exchange",
+  "description": "European motives, transatlantic voyages, and the unequal consequences of biological and commercial exchange.",
+  "essential_question": "Why did Atlantic contact transform Europe and the Americas so unevenly?",
+  "learning_objectives": [
+    "Explain the economic and political motives for European exploration.",
+    "Trace major categories of exchange across the Atlantic.",
+    "Evaluate why disease and coerced labor had especially destructive effects in the Americas."
+  ],
+  "key_terms": [
+    {
+      "term": "Columbian Exchange",
+      "definition": "The transfer of plants, animals, diseases, people, and ideas between the Eastern and Western Hemispheres after 1492."
+    },
+    {
+      "term": "encomienda",
+      "definition": "A Spanish labor system granting colonists claims to Indigenous labor and tribute."
+    },
+    {
+      "term": "Atlantic World",
+      "definition": "The interconnected system linking Europe, Africa, and the Americas through migration, trade, conquest, and slavery."
+    }
+  ],
+  "ap_alignment": {
+    "period": "Period 1",
+    "topics": [
+      "1.3",
+      "1.4"
+    ],
+    "skills": [
+      "Causation",
+      "Continuity and Change",
+      "Analyzing Evidence"
+    ],
+    "themes": [
+      "Work, Exchange, and Technology"
+    ]
+  },
+  "presentation": {
+    "audience": "APUSH students",
+    "branding": "APUSH Unit 1",
+    "tone": "a teacher talking to a smart 16-year-old; plain, spoken, concrete",
+    "visual_style": "engraving-documentary; stamps, serif/sans type grammar",
+    "captions": false
+  },
+  "tts": {
+    "engine": "edge",
+    "edge_voice": "en-US-GuyNeural",
+    "edge_rate": "+2%",
+    "edge_pitch": "+0Hz",
+    "voices": {
+      "host": {
+        "edge_voice": "en-US-GuyNeural",
+        "edge_rate": "+2%",
+        "edge_pitch": "+0Hz"
+      },
+      "columbus": {
+        "edge_voice": "en-US-DavisNeural",
+        "edge_rate": "+0%",
+        "edge_pitch": "-10Hz"
+      }
+    }
+  },
+  "generation": {
+    "provider": "none"
+  },
+  "clip_generation": {
+    "provider": "none"
+  },
+  "still_generation": {
+    "provider": "hatch-media",
+    "search_provider": "wikimedia",
+    "orientation": "landscape",
+    "image_output_format": "webp",
+    "timeout_seconds": 600
+  },
+  "video": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "transition_seconds": 0.2
+  },
+  "transition_scheme": "hard_cut",
+  "output": "../../build/lesson-videos/u1-ch1-l2-atlantic-contact.mp4",
+  "scenes": [
+    {
+      "id": "s1",
+      "purpose": "hook",
+      "narration": {
+        "voice": "host",
+        "text": "[beat]The most important voyage in American history was a failure. In [date:1492], an Italian sailor named Christopher Columbus set out to find Asia. He never got there. He ran into a whole new world instead, and died believing he had reached the Indies. [beat] But his failure set off the largest exchange of people, plants, animals, and diseases the world had ever seen. And it was never equal."
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch1-l2/caravels-atlantic.webp",
+        "still": {
+          "provider": "hatch-media",
+          "orientation": "landscape",
+          "prompt": "Three small caravels on a vast open Atlantic, tiny against rolling waves, seabirds above, a distant unknown shoreline on the horizon. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
+        }
+      },
+      "animation": {
+        "type": "ken_burns",
+        "pan_x": 0.5,
+        "pan_y": 0.5,
+        "zoom": 0.08
+      },
+      "beats": [
+        {
+          "type": "label",
+          "cue": "[date:1492]",
+          "duration": 3,
+          "text": "1492",
+          "x": 0.12,
+          "y": 0.12
+        },
+        {
+          "type": "stamp",
+          "cue": "was a failure",
+          "duration": 5,
+          "text": "A FAILED VOYAGE",
+          "x": 0.5,
+          "y": 0.5
+        }
+      ],
+      "on_screen_text": [
+        "1492",
+        "A FAILED VOYAGE"
+      ],
+      "device": "hook",
+      "device_params": {
+        "hook_type": "contradiction",
+        "payoff_by_sec": 8.0
+      },
+      "min_duration": 18,
+      "topics": [
+        "1.3"
+      ],
+      "transition": {
+        "type": "hard_cut",
+        "duration": 0.2
+      },
+      "source": {
+        "license": "AI-generated",
+        "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt.",
+        "title": "Caravels on the Atlantic (AI plate)"
+      },
+      "production_notes": "Contradiction hook: the celebrated voyage was a failure. Stamp 1 of 3 (A FAILED VOYAGE) is the framing. Fallback: a single ship on rolling waves."
+    },
+    {
+      "id": "s1b-objectives",
+      "purpose": "context",
+      "narration": {
+        "voice": "host",
+        "text": "[beat]By the end: [emphasis]One:[/emphasis] the economic and political motives that sent Europeans west. [emphasis]Two:[/emphasis] the major categories of the Columbian Exchange, in both directions. [emphasis]Three:[/emphasis] why disease and forced labor hit the Americas hardest."
+      },
+      "visual": {},
+      "animation": {
+        "type": "objectives",
+        "title": "BY THE END OF THIS LESSON"
+      },
+      "min_duration": 12,
+      "topics": [
+        "1.3",
+        "1.4"
+      ],
+      "transition": {
+        "type": "hard_cut",
+        "duration": 0.2
+      },
+      "production_notes": "The promise: all three LOs read aloud as they stagger in."
+    },
+    {
+      "id": "s2",
+      "purpose": "concept",
+      "covers_los": [
+        1
+      ],
+      "narration": {
+        "voice": "host",
+        "text": "So why did anyone pay for the gamble? [beat] First, money. Europe craved Asia's spices and silks, but Italian city-states controlled the Mediterranean trade, and every middleman took a cut. A direct sea route would cut them out. [beat] Second, rivalry. Spain and Portugal were competing Catholic kingdoms, and new lands meant new power. In [date:1494], the Treaty of Tordesillas drew a line through the ocean and split the world between them. [beat] Third, faith. The Spanish crown wanted to spread Christianity, and its captains wanted glory. Wealth, rivalry, God. That was the fuel."
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch1-l2/lisbon-harbor.webp",
+        "still": {
+          "provider": "hatch-media",
+          "orientation": "landscape",
+          "prompt": "Lisbon harbor at dawn: caravels loading cargo and casting off, merchants and barrels on the quay, a fortress on the hill behind. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
+        }
+      },
+      "animation": {
+        "type": "zoom",
+        "cx": 0.5,
+        "cy": 0.5,
+        "end_zoom": 1.04,
+        "zoom_duration": 12
+      },
+      "beats": [
+        {
+          "type": "label",
+          "cue": "First, money",
+          "duration": 4,
+          "text": "WEALTH",
+          "x": 0.5,
+          "y": 0.82
+        },
+        {
+          "type": "label",
+          "cue": "Second, rivalry",
+          "duration": 4,
+          "text": "RIVALRY",
+          "x": 0.5,
+          "y": 0.82
+        },
+        {
+          "type": "label",
+          "cue": "Third, faith",
+          "duration": 4,
+          "text": "FAITH",
+          "x": 0.5,
+          "y": 0.82
+        },
+        {
+          "type": "label",
+          "cue": "Treaty of Tordesillas",
+          "duration": 4,
+          "text": "TORDESILLAS · 1494",
+          "x": 0.5,
+          "y": 0.12
+        }
+      ],
+      "on_screen_text": [
+        "WEALTH",
+        "RIVALRY",
+        "FAITH",
+        "TORDESILLAS · 1494"
+      ],
+      "min_duration": 20,
+      "topics": [
+        "1.3"
+      ],
+      "transition": {
+        "type": "hard_cut",
+        "duration": 0.2
+      },
+      "source": {
+        "license": "AI-generated",
+        "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt.",
+        "title": "Lisbon harbor, caravels departing (AI plate)"
+      },
+      "production_notes": "The three motives punch in as labels. Broad treatment only; l3 does the deep dive (caravel, Reconquista, Portuguese engine). Fallback: a harbor with tall ships.",
+      "audio": {
+        "effects": [
+          {
+            "cue": "Tordesillas",
+            "kind": "impact",
+            "volume": 0.15
+          }
+        ]
+      }
+    },
+    {
+      "id": "s3a",
+      "purpose": "evidence",
+      "covers_los": [
+        1
+      ],
+      "narration": {
+        "voice": "host",
+        "text": "In [date:1492], Columbus talked Spain's monarchs, Isabella and Ferdinand, into funding his westward bet. He argued the earth was smaller than the maps said. [beat] His three ships, the [es]Niña[/es], the [es]Pinta[/es], and the [es]Santa María[/es], made landfall after five weeks at sea. He called the island San Salvador and named the [es]Taíno[/es] people he met Indians, sure he had reached the Indies. The name stuck. Three more voyages followed, in [date:1493], [date:1498], and [date:1502], each one tightening Spain's grip. [beat] He kept a journal. On the very first day, he wrote this."
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch1-l2/four-voyages-map.webp",
+        "search": {
+          "provider": "wikimedia",
+          "page_title": "File:The Four Voyages of Columbus, 1492–1503.jpg",
+          "min_width": 1000
+        }
+      },
+      "animation": {
+        "type": "ken_burns",
+        "pan_x": 0.5,
+        "pan_y": 0.5,
+        "zoom": 0.06
+      },
+      "beats": [
+        {
+          "type": "label",
+          "cue": "San Salvador",
+          "duration": 4,
+          "text": "SAN SALVADOR · 1492",
+          "x": 0.5,
+          "y": 0.12
+        }
+      ],
+      "on_screen_text": [
+        "SAN SALVADOR · 1492"
+      ],
+      "device": "date_ticker",
+      "device_params": {
+        "position": "top_right",
+        "dates": [
+          "1492",
+          "1493",
+          "1498",
+          "1502"
+        ]
+      },
+      "min_duration": 20,
+      "topics": [
+        "1.3"
+      ],
+      "transition": {
+        "type": "hard_cut",
+        "duration": 0.2
+      },
+      "source": {
+        "license": "Public domain",
+        "notes": "Wikimedia Commons; 1906 map of the four voyages. Caption dates it honestly: illustrating, not witnessing.",
+        "title": "The four voyages of Columbus, 1492-1503 (map, 1906)"
+      },
+      "production_notes": "Device 2: date ticker advances 1492, 1493, 1498, 1502 as the narration names each voyage. Names the Taíno as first contact (coverage audit item 8)."
+    },
+    {
+      "id": "s3b",
+      "purpose": "evidence",
+      "covers_los": [
+        1
+      ],
+      "narration": {
+        "voice": "columbus",
+        "text": "[VOICE:columbus][solemn]They are gentle and know nothing of evil. They would make good servants, and I believe they could easily be made Christians, for they seem to have no religion of their own."
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch1-l2/captains-journal.webp",
+        "still": {
+          "provider": "hatch-media",
+          "orientation": "landscape",
+          "prompt": "A ship captain's cabin: an open journal on a wooden table, a quill in an inkwell, candlelight, a small barred window showing the sea. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
+        }
+      },
+      "animation": {
+        "type": "zoom",
+        "cx": 0.5,
+        "cy": 0.5,
+        "end_zoom": 1.05,
+        "zoom_duration": 8
+      },
+      "beats": [
+        {
+          "type": "label",
+          "cue": "They are gentle",
+          "duration": 10,
+          "text": "CHRISTOPHER COLUMBUS · JOURNAL, OCTOBER 1492",
+          "x": 0.5,
+          "y": 0.82
+        }
+      ],
+      "on_screen_text": [
+        "CHRISTOPHER COLUMBUS · JOURNAL, OCTOBER 1492"
+      ],
+      "min_duration": 12,
+      "topics": [
+        "1.3"
+      ],
+      "transition": {
+        "type": "hard_cut",
+        "duration": 0.2
+      },
+      "source": {
+        "license": "AI-generated",
+        "notes": "Pipeline-generated via hatch-media; the reading is adapted from the October 12, 1492 journal entry, not verbatim.",
+        "title": "Captain's cabin journal (AI plate)"
+      },
+      "production_notes": "Nameplate opens the voice (rule 2: host named him in s3a). Serif overlay = what they said. Dry voice, slight cabin reverb marks then. Fallback: a quill on parchment."
+    },
+    {
+      "id": "s4",
+      "purpose": "concept",
+      "covers_los": [
+        2
+      ],
+      "narration": {
+        "voice": "host",
+        "text": "Servants and converts, in the same breath. That tells you what Spain wanted. [beat] And the ships carried more than sailors. West across the Atlantic went sugar, wheat, and bananas, plus horses, cattle, goats, and chickens. The horse alone transformed Native cultures. [beat] East came corn, potatoes, sweet potatoes, tomatoes, cacao, and tobacco. New foods that helped feed a growing Europe. [beat] And crossing both ways, unseen: diseases, people, ideas. That is the Columbian Exchange."
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch1-l2/dockside-exchange.webp",
+        "still": {
+          "provider": "hatch-media",
+          "orientation": "landscape",
+          "prompt": "A busy dockside: crates of maize ears and potatoes stacked beside horses, cattle, and chickens being loaded, tall ships behind. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
+        }
+      },
+      "animation": {
+        "type": "auto"
+      },
+      "beats": [
+        {
+          "type": "label",
+          "cue": "West across the Atlantic",
+          "duration": 4,
+          "text": "WEST: SUGAR, WHEAT, HORSES",
+          "x": 0.5,
+          "y": 0.82
+        },
+        {
+          "type": "label",
+          "cue": "East came corn",
+          "duration": 4,
+          "text": "EAST: CORN, POTATOES, CACAO",
+          "x": 0.5,
+          "y": 0.82
+        }
+      ],
+      "on_screen_text": [
+        "WEST: SUGAR, WHEAT, HORSES",
+        "EAST: CORN, POTATOES, CACAO"
+      ],
+      "min_duration": 20,
+      "topics": [
+        "1.3",
+        "1.4"
+      ],
+      "transition": {
+        "type": "hard_cut",
+        "duration": 0.2
+      },
+      "source": {
+        "license": "AI-generated",
+        "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt.",
+        "title": "Dockside exchange (AI plate)"
+      },
+      "production_notes": "The broad chapter-1 exchange; l5 does the deep dive. The reversal's setup: the gains, before s6 takes them away. Fallback: crates and barrels on a dock."
+    },
+    {
+      "id": "s5",
+      "purpose": "evidence",
+      "covers_los": [
+        3
+      ],
+      "narration": {
+        "voice": "host",
+        "text": "This is how Europe pictured the landing. [beat] Here is what the landing brought. Smallpox, influenza, measles. Diseases no one in the Americas had ever met. Between [date:1500] and [date:1650], somewhere between half and nine in ten Native people died. On Hispaniola, by one Spanish count, over a million [es]Taíno[/es] fell to a few hundred. [beat] The survivors faced the [es]encomienda[/es]: colonists granted the labor of Native communities, justified as protection and Christian teaching. In practice, mines and fields worked to death. [beat] Disease did what no army could."
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch1-l2/debry-landing.webp",
+        "search": {
+          "provider": "wikimedia",
+          "page_title": "File:Columbus landing on Hispaniola, Dec. 6, 1492; greeted by Arawak Indians.jpg",
+          "min_width": 1000
+        }
+      },
+      "animation": {
+        "type": "ken_burns",
+        "pan_x": 0.5,
+        "pan_y": 0.5,
+        "zoom": 0.04
+      },
+      "beats": [
+        {
+          "type": "stamp",
+          "cue": "Disease did what no army could",
+          "duration": 5,
+          "text": "DISEASE, NOT WAR",
+          "x": 0.5,
+          "y": 0.5
+        }
+      ],
+      "on_screen_text": [
+        "DISEASE, NOT WAR"
+      ],
+      "min_duration": 20,
+      "topics": [
+        "1.4"
+      ],
+      "transition": {
+        "type": "hard_cut",
+        "duration": 0.2
+      },
+      "source": {
+        "license": "Public domain",
+        "notes": "Wikimedia Commons; Theodor de Bry, c. 1594. Caption dates it honestly: an illustration, not a witness.",
+        "title": "Columbus landing on Hispaniola, de Bry, c. 1594"
+      },
+      "production_notes": "The triumphal image plays against the narration; the host complicates what the engraving celebrates. Stamp 2 of 3 (DISEASE, NOT WAR): the exam trap, straight from Barron's. Score drops out at Smallpox; the dying plays dry."
+    },
+    {
+      "id": "s6",
+      "purpose": "concept",
+      "covers_los": [
+        1,
+        2,
+        3
+      ],
+      "narration": {
+        "voice": "host",
+        "text": "[beat]So Europe won the exchange. Not so fast. [beat] The silver and gold flooding into Spain set off runaway inflation. Taxes rose more than fivefold to pay for the empire's wars. Spain borrowed itself into debt. Ordinary Spaniards ended poorer, and did not recover for centuries. [beat] The exchange built an Atlantic World. But the gains flowed up, and the costs flowed down. Connected, not equal."
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch1-l2/treasure-galleons.webp",
+        "still": {
+          "provider": "hatch-media",
+          "orientation": "landscape",
+          "prompt": "Spanish treasure galleons riding low in the water, heavy with silver chests visible on deck, an escort of smaller ships. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
+        }
+      },
+      "animation": {
+        "type": "camera_path",
+        "waypoints": [
+          [0.5, 0.45, 1.05],
+          [0.5, 0.45, 0.97]
+        ]
+      },
+      "beats": [
+        {
+          "type": "stamp",
+          "cue": "Connected, not equal",
+          "duration": 6,
+          "text": "CONNECTED, NOT EQUAL",
+          "x": 0.5,
+          "y": 0.5
+        }
+      ],
+      "on_screen_text": [
+        "CONNECTED, NOT EQUAL"
+      ],
+      "device": "reversal",
+      "device_params": {
+        "pivot": true,
+        "setup_scene": "s4"
+      },
+      "min_duration": 16,
+      "topics": [
+        "1.3",
+        "1.4"
+      ],
+      "transition": {
+        "type": "hard_cut",
+        "duration": 0.2
+      },
+      "source": {
+        "license": "AI-generated",
+        "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt.",
+        "title": "Treasure galleons (AI plate)"
+      },
+      "production_notes": "Device 3: reversal pivot. The steelman (s4's gains) earns the pivot. Stamped verdict (CONNECTED, NOT EQUAL) answers the essential question. Single low thud under the stamp. Fallback: silver coins and ingots."
+    },
+    {
+      "id": "s7",
+      "purpose": "close",
+      "covers_los": [
+        1,
+        2,
+        3
+      ],
+      "narration": {
+        "voice": "host",
+        "text": "[pause:10]"
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch1-l2/exam-card-paper.webp",
+        "still": {
+          "provider": "hatch-media",
+          "orientation": "landscape",
+          "prompt": "A plain aged paper texture, warm cream tone, subtle grain, completely empty, no text, no imagery. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
+        }
+      },
+      "animation": {
+        "type": "bullets",
+        "title": "ATLANTIC CONTACT",
+        "bullets": [
+          "MOTIVES: wealth, rivalry, faith; Tordesillas 1494 splits the world",
+          "EXCHANGE: crops, animals, diseases, people, ideas crossed both directions",
+          "COST: 50–90% died of disease; survivors faced the encomienda",
+          "VERDICT: an Atlantic World, connected but never equal"
+        ],
+        "footer": "Columbus journal adapted from Oct 12, 1492 entry. AP TOPICS 1.3, 1.4",
+        "stagger": 0.45
+      },
+      "min_duration": 10,
+      "topics": [
+        "1.3",
+        "1.4"
+      ],
+      "transition": {
+        "type": "hard_cut",
+        "duration": 0.2
+      },
+      "source": {
+        "license": "AI-generated",
+        "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt.",
+        "title": "Exam card paper (AI plate)"
+      },
+      "production_notes": "No narration; the [pause:10] holds the card in silence. The exam card lands the three LOs plus the stamped verdict."
+    }
+  ]
+}

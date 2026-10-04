@@ -12,7 +12,7 @@ import wave
 from pathlib import Path
 
 from .common import PipelineError, atomic_json, canonical_hash, resolve_local
-from .direction import edge_segments, voice_segments
+from .direction import edge_segments, edge_timeline, voice_segments
 from .gates import iter_cues
 from .timing import _boundary_offset
 
@@ -246,7 +246,7 @@ def render_scene(manifest: dict, scene: dict, manifest_path: Path, repo_root: Pa
     fingerprint = canonical_hash({
         # render_version invalidates audio cached before the Edge target
         # switched from single-shot SSML to plain-text segments.
-        "render_version": 2,
+        "render_version": 3,
         "engine": engine, "text": narration["text"], "voice": voice_name,
         "ref_audio": str(ref_audio or ""), "ref_text": ref_text,
         "reference_id": (narration.get("reference_id")
@@ -264,8 +264,9 @@ def render_scene(manifest: dict, scene: dict, manifest_path: Path, repo_root: Pa
     if engine == "edge":
         import subprocess
         where = f"scene {scene['id']} narration"
-        segments = [(v or voice_name, t)
-                    for v, t in edge_segments(narration["text"], where)]
+        # [pause:N] becomes real inserted silence (Edge honors "..." with only
+        # a short beat, so authored dramatic pauses never landed).
+        timeline = edge_timeline(narration["text"], where)
 
         def _seg_edge(seg_voice):
             scfg = voices.get(seg_voice, {}) if seg_voice else {}
@@ -276,22 +277,35 @@ def render_scene(manifest: dict, scene: dict, manifest_path: Path, repo_root: Pa
         out.parent.mkdir(parents=True, exist_ok=True)
         temp = out.with_name(f".{out.stem}.tmp.wav")
         word_boundaries: list[dict] = []
-        if len(segments) == 1:
-            seg_voice, seg_text = segments[0]
-            voice, rate, pitch = _seg_edge(seg_voice)
-            _, word_boundaries = render_edge(seg_text, temp, voice, rate, pitch)
-        else:
-            parts = []
-            offset = 0.0
-            for index, (seg_voice, seg_text) in enumerate(segments):
-                voice, rate, pitch = _seg_edge(seg_voice)
-                part = out.with_name(f".{out.stem}.seg{index}.tmp.wav")
-                _, boundaries = render_edge(seg_text, part, voice, rate, pitch)
+        parts = []
+        offset = 0.0
+        for index, item in enumerate(timeline):
+            if item[0] == "silence":
+                seconds = float(item[1])
+                part = out.with_name(f".{out.stem}.sil{index}.tmp.wav")
+                result = subprocess.run(
+                    ["ffmpeg", "-y", "-v", "error", "-f", "lavfi", "-i",
+                     f"anullsrc=r=24000:cl=mono:d={seconds}",
+                     "-t", f"{seconds}", str(part)],
+                    capture_output=True, text=True)
+                if result.returncode != 0:
+                    raise PipelineError(
+                        f"ffmpeg could not synthesize silence: {result.stderr.strip()[-500:]}")
                 parts.append(part)
-                word_boundaries.extend(_shift_boundaries(boundaries, offset))
-                offset += wav_duration(part)
-                print(f"[tts] {scene['id']}: segment {index + 1}/{len(segments)} "
-                      f"({seg_voice or 'default voice'})")
+                offset += seconds
+                continue
+            _, seg_voice, seg_text = item
+            voice, rate, pitch = _seg_edge(seg_voice or voice_name)
+            part = out.with_name(f".{out.stem}.seg{index}.tmp.wav")
+            _, boundaries = render_edge(seg_text, part, voice, rate, pitch)
+            parts.append(part)
+            word_boundaries.extend(_shift_boundaries(boundaries, offset))
+            offset += wav_duration(part)
+            print(f"[tts] {scene['id']}: part {index + 1}/{len(timeline)} "
+                  f"({seg_voice or voice_name or 'default voice'})")
+        if len(parts) == 1:
+            parts[0].replace(temp)
+        else:
             inputs = []
             for part in parts:
                 inputs += ["-i", str(part)]

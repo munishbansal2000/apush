@@ -18,7 +18,7 @@ The excerpt best supports which conclusion about Spanish colonial labor?
 
 (A) The encomienda system protected Indigenous workers from overwork
 (B) Mining labor and disease destroyed the Indigenous workforce on Hispaniola
-(C) The repartimiento system improved working conditions after 1549
+(C) The repartimiento system improved working conditions after 1542
 (D) The casta hierarchy determined who was assigned to the mines
 
 **Answer: (B).** Las Casas describes a workforce dying in the mines and

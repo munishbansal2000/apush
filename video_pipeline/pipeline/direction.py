@@ -269,6 +269,46 @@ def voice_segments(text: str, where: str,
     return segments
 
 
+def edge_timeline(text: str, where: str) -> list[tuple]:
+    """Split narration into ('speech', voice, plain_text) / ('silence', seconds).
+
+    [pause:N] becomes real inserted silence instead of "..." -- Edge honors
+    "..." with only a short beat, so authored dramatic pauses never landed.
+    All other tags compile exactly as strip_for_edge (beat -> ",", [date:]
+    spoken out, pair/rate/emphasis/emotion tags dropped with inner text
+    kept). Pair tags may span a pause; they are dropped at the item level
+    so the split never breaks well-formedness.
+    """
+    out: list[tuple] = []
+    for voice, chunk in _voice_spans(text, where):
+        buf: list[str] = []
+
+        def flush() -> None:
+            piece = "".join(buf).strip()
+            if piece:
+                out.append(("speech", voice, piece))
+            buf.clear()
+
+        for item in parse(chunk, where):
+            if item[0] == "text":
+                buf.append(item[1])
+                continue
+            _, name, arg, _closing = item
+            if name == "pause":
+                flush()
+                out.append(("silence", float(arg)))
+            elif name == "beat":
+                buf.append(",")
+            elif name == "date":
+                buf.append(spoken_year(int(arg)))
+            # slow/fast/emphasis/refrain/es/VOICE/emotions have no plain-text
+            # equivalent and are dropped; VOICE was handled by the split.
+        flush()
+    if not any(kind == "speech" for kind, *_ in out):
+        raise PipelineError(f"{where}: narration is empty")
+    return out
+
+
 def edge_segments(text: str, where: str) -> list[tuple[str | None, str]]:
     """Split narration on [VOICE:name] into (voice_name_or_None, plain_text).
 

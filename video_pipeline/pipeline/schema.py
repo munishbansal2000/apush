@@ -97,9 +97,9 @@ def _validate_device(name: str, params: dict, where: str) -> None:
     _keys(params, allowed, f"{where}.device_params")
     _required(params, required, f"{where}.device_params")
     if name == "hook":
-        if params["hook_type"] not in {"contradiction", "mystery", "stakes"}:
+        if params["hook_type"] not in {"contradiction", "mystery", "stakes", "question"}:
             raise PipelineError(f"{where}.device_params.hook_type is not supported")
-        _number(params["payoff_by_sec"], f"{where}.device_params.payoff_by_sec", 0.5, 15)
+        _number(params["payoff_by_sec"], f"{where}.device_params.payoff_by_sec", 0.5, 600)
     elif name == "redact_reveal":
         lines, cues = params["lines"], params["reveal_on_cues"]
         if (not isinstance(lines, list) or not lines or
@@ -692,7 +692,7 @@ def validate_manifest(data: Any, path: Path, repo_root: Path,
                 _timing(effect, effect_where)
                 if not effect.get("kind") and not effect.get("file"):
                     raise PipelineError(f"{effect_where} requires kind or file")
-                if effect.get("kind") not in {None, "impact", "whoosh", "tick", "chime", "page_turn"}:
+                if effect.get("kind") not in {None, "impact", "whoosh", "tick", "chime", "page_turn", "typewriter"}:
                     raise PipelineError(f"{effect_where}.kind is not supported")
                 if "file" in effect:
                     _text(effect["file"], f"{effect_where}.file")
