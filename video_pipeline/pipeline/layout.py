@@ -75,7 +75,8 @@ def validate_text_layout(manifest: dict, manifest_path: Path,
             for index, left in enumerate(boxes):
                 for right in boxes[index+1:]:
                     if (left["kind"] == right["kind"] and
-                            left["kind"] in {"bullet", "bullet-title", "title-card"}):
+                            left["kind"] in {"bullet", "bullet-title", "title-card",
+                                             "objectives-lo", "objectives-title"}):
                         continue
                     overlap_time = min(left["t1"], right["t1"]) - max(left["t0"], right["t0"])
                     if overlap_time <= 0.1:

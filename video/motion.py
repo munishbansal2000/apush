@@ -640,7 +640,7 @@ def objectives_slide(title, los, dur, footer="", bg_img=None, darken=70,
     y = max(px(240), (H - content_h) // 2 - px(60))
     for line in title_lines:
         tile = text_rgba(line, tf, fill=(233, 196, 106, 255), max_w=BASE_W - 160)
-        items.append((tile, px(80) + tile.width // 2, y + t_lh // 2, 0.0, True))
+        items.append((tile, px(80) + tile.width // 2, y + t_lh // 2, 0.0, True, line))
         y += t_lh
     y += px(60)
     idx = 0
@@ -658,14 +658,14 @@ def objectives_slide(title, los, dur, footer="", bg_img=None, darken=70,
                 x = num_tile.width + px(20)
             row.alpha_composite(line_tile, (x, (row.height - line_tile.height) // 2))
             items.append((row, px(90) + w // 2, y + b_lh // 2,
-                          0.15 + idx * stagger, False))
+                          0.15 + idx * stagger, False, f"{num.strip()} {line}".strip()))
         y += b_lh
     footer_tile = None
     if footer:
         footer_tile = text_rgba(footer, font(FR, 34), fill=(120, 126, 140, 255))
     _note_prim("objectives_slide")
-    for tile, cx, cy, at, is_title in items:
-        _note_box("objectives-title" if is_title else "objectives-lo", "",
+    for tile, cx, cy, at, is_title, raw_text in items:
+        _note_box("objectives-title" if is_title else "objectives-lo", raw_text,
                   (cx - tile.width / 2, cy - tile.height / 2,
                    cx + tile.width / 2, cy + tile.height / 2), at, dur)
     if footer_tile:
@@ -681,7 +681,7 @@ def objectives_slide(title, los, dur, footer="", bg_img=None, darken=70,
             pd.rounded_rectangle([0, 0, panel.width - 1, panel.height - 1],
                                  radius=px(32), outline=(255, 255, 255, 40), width=px(3))
             canvas.alpha_composite(panel, (px(32), px(90)))
-        for tile, cx, cy, at, is_title in items:
+        for tile, cx, cy, at, is_title, raw_text in items:
             if t < at:
                 continue
             s = ease_out_back((t - at) / 0.45)
