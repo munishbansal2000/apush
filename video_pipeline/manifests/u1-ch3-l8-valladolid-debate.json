@@ -336,12 +336,18 @@
   },
   {
    "animation": {
-    "type": "source_analysis",
-    "title": "TEST THE CLAIM AGAINST THE SYSTEM",
-    "highlights": [
-     {"box": [0.05, 0.34, 0.52, 0.88], "label": "COERCED LABOR", "cue": "coerced labor"},
-     {"box": [0.48, 0.2, 0.95, 0.8], "label": "SILVER EXTRACTION", "cue": "silver extraction"}
-    ]
+    "type": "ai_clip",
+    "creativity": {
+     "pattern": "archival_evidence_scan",
+     "source_description": "A historical engraving of Indigenous workers laboring inside the Potosi silver mines",
+     "focuses": [
+      {"subject": "workers carrying ore and laboring at the mine floor", "location": "the lower half"},
+      {"subject": "workers climbing the long mine ladders", "location": "the center and upper right"}
+     ],
+     "ambient_motion": "A narrow warm examination light travels between the workers and ladders while faint dust drifts through the mine"
+    },
+    "duration": 10,
+    "seed": 1590
    },
    "beats": [
     {
@@ -359,6 +365,22 @@
      "type": "label",
      "x": 0.5,
      "y": 0.93
+    },
+    {
+     "cue": "coerced labor",
+     "duration": 2.5,
+     "text": "COERCED LABOR",
+     "type": "label",
+     "x": 0.5,
+     "y": 0.18
+    },
+    {
+     "cue": "silver extraction",
+     "duration": 2.5,
+     "text": "SILVER EXTRACTION",
+     "type": "label",
+     "x": 0.5,
+     "y": 0.78
     }
    ],
    "id": "s3b-mines",
@@ -370,7 +392,7 @@
     "RATIONAL POLITICAL COMMUNITIES",
     "POTOSÍ • LATER ILLUSTRATION"
    ],
-   "production_notes": "Treat the engraving as a source to inspect, not wallpaper. Labels identify the system while narration explicitly limits the image's evidentiary role.",
+   "production_notes": "LTX performs the semantic evidence scan from named subjects; deterministic labels follow narration cues. Raw coordinate boxes are prohibited.",
    "purpose": "evidence",
    "source": {
     "license": "Public domain",
@@ -386,6 +408,7 @@
    },
    "visual": {
     "base_image": "assets/images/u1-ch3-l8/mines-1590.webp",
+    "clip": "../../video/ai_clips/u1-ch3-l8-mines-evidence-scan.mp4",
     "search": {
      "query": "Potosí mine",
      "provider": "wikimedia",

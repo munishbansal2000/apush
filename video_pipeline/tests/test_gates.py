@@ -125,6 +125,14 @@ class CueIntegrityTests(unittest.TestCase):
 
 
 class AnimationConsistencyTests(unittest.TestCase):
+    def test_raw_semantic_bounding_boxes_are_prohibited(self):
+        sc = scene(animation={"type": "source_analysis", "highlights": [{
+            "box": [0.1, 0.2, 0.8, 0.9], "label": "Guessed subject",
+            "cue": "plain narration",
+        }]})
+        with self.assertRaisesRegex(PipelineError, "bounding boxes are prohibited"):
+            animation_consistency(lesson([sc]))
+
     def test_timeline_cannot_repeat_labels_as_beats(self):
         sc = scene(
             narration="Day one begins. Day three follows.",

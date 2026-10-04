@@ -217,7 +217,7 @@
           "type": "object",
           "required": ["type"],
           "properties": {
-            "type": {"enum": ["auto", "title", "ken_burns", "zoom", "camera_path", "callout", "timeline", "bullets", "typewriter", "map", "counter", "versus", "wipe", "ai_clip", "parallax", "source_analysis", "diagram"]}
+            "type": {"enum": ["auto", "title", "ken_burns", "zoom", "camera_path", "callout", "timeline", "bullets", "typewriter", "map", "counter", "versus", "wipe", "ai_clip", "parallax", "diagram"]}
           }
         },
         "beats": {

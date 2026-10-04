@@ -15,6 +15,7 @@ from pipeline.common import PipelineError
 from pipeline.clips import _select_providers
 from pipeline.creativity import build_ai_prompt
 from pipeline.layout import validate_text_layout
+from pipeline.ltx_desktop import _desktop_pipeline
 from pipeline.schema import validate_manifest
 from pipeline.timing import resolve_scene_timing
 from pipeline.render import _mixed_audio
@@ -22,6 +23,22 @@ from pipeline.tts import render_fish_cloud
 
 
 class ManifestTests(unittest.TestCase):
+    def test_ltx_desktop_model_alias_uses_api_pipeline_name(self):
+        self.assertEqual(_desktop_pipeline("fast-2.5"), "fast")
+        with self.assertRaisesRegex(PipelineError, "supports only the fast"):
+            _desktop_pipeline("pro-2.5")
+
+    def test_ltx_desktop_rejects_unsupported_pro_pipeline(self):
+        with tempfile.TemporaryDirectory() as value:
+            root = Path(value)
+            data = self.fixture(root)
+            data["clip_generation"] = {
+                "provider": "ltx", "ltx_backend": "desktop",
+                "ltx_model": "pro-2.5",
+            }
+            with self.assertRaisesRegex(PipelineError, "supports only fast"):
+                validate_manifest(data, root / "lesson.json", ROOT)
+
     def fixture(self, root: Path):
         (root / "image.jpg").write_bytes(b"checked for existence only")
         (root / "voice.txt").write_text("Reference voice transcript.", encoding="utf-8")

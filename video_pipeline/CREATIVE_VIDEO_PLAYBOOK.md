@@ -62,7 +62,7 @@ Choose the primitive from the learner's mental action:
 
 | Learner action | Preferred treatment |
 |---|---|
-| Inspect evidence | `source_analysis`, `zoom`, `callout`, `annotate` device |
+| Inspect evidence | `archival_evidence_scan`, `semantic_spotlight`, `zoom` |
 | Compare claims | `versus`, `wipe`, matched split composition |
 | Trace causation | `diagram`, `map`, `timeline` |
 | Feel scale | `counter`, restrained generated clip |

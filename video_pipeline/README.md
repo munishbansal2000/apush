@@ -142,7 +142,9 @@ chapter sample:
 
 - `parallax` composites depth-ranked PNG cutouts or archival cards over a
   moving background. Each layer has position, scale, depth, drift, and entrance.
-- `source_analysis` schedules normalized evidence boxes and annotation cards
+- Raw `source_analysis` bounding boxes are rejected by the production gates.
+  Use an `ai_clip.creativity` pattern such as `archival_evidence_scan`; the
+  vision model locates subjects while the deterministic renderer owns text.
   over a primary source.
 - `diagram` animates validated nodes and causal/network edges; it is useful for
   systems, comparisons, and visual metaphors.

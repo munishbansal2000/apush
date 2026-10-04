@@ -201,6 +201,12 @@ def animation_consistency(manifest: dict) -> None:
     for scene in _scenes(manifest):
         sid = scene.get("id", "<unknown scene>")
         animation = scene.get("animation", {}) or {}
+        if animation.get("type") == "source_analysis":
+            raise PipelineError(
+                f"{lid}/{sid}: raw semantic bounding boxes are prohibited; "
+                "use ai_clip.creativity pattern archival_evidence_scan or "
+                "semantic_spotlight so the vision model locates subjects and "
+                "the deterministic renderer owns only text")
         if animation.get("type") == "timeline":
             labels = set()
             cue_positions = []

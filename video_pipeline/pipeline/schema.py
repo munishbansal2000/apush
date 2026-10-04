@@ -517,6 +517,10 @@ def validate_manifest(data: Any, path: Path, repo_root: Path,
         raise PipelineError("manifest.clip_generation.ltx_resolution must be 540p, 720p, or 1080p")
     if clip_generation.get("ltx_model", "fast") not in {"fast", "pro", "fast-2.5", "pro-2.5"}:
         raise PipelineError("manifest.clip_generation.ltx_model is not supported")
+    if (clip_generation.get("ltx_backend", "auto") == "desktop"
+            and clip_generation.get("ltx_model", "fast") in {"pro", "pro-2.5"}):
+        raise PipelineError(
+            "manifest.clip_generation LTX Desktop supports only fast or fast-2.5")
     if clip_generation.get("ltx_camera_motion", "static") not in {
             "none", "dolly_in", "dolly_out", "dolly_left", "dolly_right",
             "jib_up", "jib_down", "static", "focus_shift"}:
