@@ -8,6 +8,7 @@ import sys
 from pathlib import Path
 
 from .common import PipelineError, resolve_local
+from . import ltx_desktop
 
 
 def _run(command: list[str], label: str) -> None:
@@ -39,7 +40,19 @@ def _extend_clip(source: Path, output: Path, seconds: float) -> None:
 
 
 def _generate_ltx(image: Path, prompt: str, output: Path, seconds: float,
-                  seed: int, repo_root: Path, python: str) -> None:
+                  seed: int, repo_root: Path, python: str,
+                  config: dict) -> None:
+    # Prefer the complete LTX Desktop installation when present. It ships the
+    # current LTX-2.5 model/runtime and avoids downloading a second legacy model.
+    if config.get("ltx_backend", "auto") != "legacy" and ltx_desktop.is_available(config):
+        temp = output.with_name(f".{output.stem}.ltx-desktop-source.mp4")
+        try:
+            ltx_desktop.generate(image, prompt, temp, seconds, seed, config)
+            _extend_clip(temp, output, seconds)
+        finally:
+            if temp.exists():
+                temp.unlink()
+        return
     # The checked-in LTX safety contract allows 3-6 generated seconds. For a
     # 10-second POC asset we generate six seconds, then extend deterministically;
     # the video renderer can also trim it to the narration length.
@@ -141,7 +154,7 @@ def generate_clips(manifest: dict, manifest_path: Path, repo_root: Path,
         def generate(selected: str) -> None:
             if selected == "ltx":
                 _generate_ltx(image, animation["prompt"], output, seconds,
-                              seed, repo_root, ltx_python)
+                              seed, repo_root, ltx_python, config)
             elif selected == "meta-ui":
                 _generate_meta(image, animation["prompt"], output, seconds,
                                config, repo_root)

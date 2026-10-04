@@ -15,7 +15,13 @@
  },
  "chapter_id": "ch3",
  "clip_generation": {
-  "provider": "none"
+  "provider": "meta-ui",
+  "cookie": "C:/Users/munis/projects/sat_question_runner/new_eng_qs/config/meta_cookies/ramsham21.json",
+  "lib_dir": "C:/Users/munis/projects/sat_question_runner/new_eng_qs/lib",
+  "browser": "chrome",
+  "timeout_seconds": 1200,
+  "meta_refusal_retries": 2,
+  "keep_open_on_failure": true
  },
  "course_id": "apush",
  "description": "Spain puts its own conquests on trial: Sepúlveda's natural-slavery argument against Las Casas's eyewitness testimony. No verdict — but the question survived.",
@@ -229,10 +235,12 @@
   },
   {
    "animation": {
-    "type": "wipe",
-    "label_a": "THEORY: SPAIN",
-    "label_b": "CONSEQUENCE: POTOSÍ",
-    "direction": "left"
+    "type": "ai_clip",
+    "prompt": "A living split engraving contrasting a Renaissance Spanish study with the Potosi mine. In the study, candlelight and window light shift gently across books and papers. In the mine, dust drifts and torchlight flickers. Keep the camera static. Do not morph or add or remove or change any content.",
+    "duration": 10,
+    "seed": 1550,
+    "provider": "meta-ui",
+    "fallback_provider": "ltx"
    },
    "beats": [
     {
@@ -253,7 +261,7 @@
    "on_screen_text": [
     "THEORY", "CONSEQUENCE", "WHO BENEFITS?"
    ],
-   "production_notes": "The wipe physically moves from European theory to colonial consequence. No generated composite and no decorative zoom.",
+   "production_notes": "Meta animates a pipeline-built split plate: intellectual theory above, colonial consequence below. Motion stays ambient and historically restrained.",
    "purpose": "concept",
    "source": {
     "license": "Public domain composite",
@@ -267,8 +275,13 @@
     "type": "hard_cut"
    },
    "visual": {
-    "base_image": "assets/images/u1-ch3-l8/sepulveda-study.webp",
-    "secondary_image": "assets/images/u1-ch3-l8/mines-1590.webp"
+    "base_image": "assets/images/u1-ch3-l8/split-study-mines.webp",
+    "clip": "../../video/ai_clips/u1-ch3-l8-theory-consequence.mp4",
+    "still": {
+     "prompt": "SPLIT top=assets/images/u1-ch3-l8/sepulveda-study.webp bottom=assets/images/u1-ch3-l8/mines-1590.webp",
+     "provider": "command",
+     "license_note": "Composite of public-domain images (pipeline search + local composite)"
+    }
    },
    "covers_los": [
     1
@@ -276,10 +289,12 @@
   },
   {
    "animation": {
-    "type": "wipe",
-    "label_a": "ARGUMENT FROM BOOKS",
-    "label_b": "ARGUMENT FROM EXPERIENCE",
-    "direction": "right"
+    "type": "ai_clip",
+    "prompt": "A living split historical engraving contrasting a European scholar's study with the portrait of Bartolome de Las Casas. A candle flame flickers over the study, loose pages stir slightly, and light shimmers softly over the portrait and paper texture. Keep the camera static. Do not morph or add or remove or change any content.",
+    "duration": 10,
+    "seed": 1551,
+    "provider": "meta-ui",
+    "fallback_provider": "ltx"
    },
    "beats": [
     {"cue": "did not debate face to face", "duration": 4, "text": "SEPARATE PRESENTATIONS", "type": "stamp", "x": 0.5, "y": 0.12}
@@ -295,7 +310,7 @@
     "voice": "host"
    },
    "on_screen_text": ["BOOKS", "EXPERIENCE", "SEPARATE PRESENTATIONS"],
-   "production_notes": "A rightward wipe replaces the scholar's study with Las Casas. This corrects the popular misconception that the men argued face to face.",
+   "production_notes": "Meta animates a pipeline-built split plate while the separate-presentations stamp corrects the face-to-face misconception.",
    "purpose": "concept",
    "source": {
     "license": "Public domain composite",
@@ -309,8 +324,13 @@
     "type": "hard_cut"
    },
    "visual": {
-    "base_image": "assets/images/u1-ch3-l8/sepulveda-study.webp",
-    "secondary_image": "assets/images/u1-ch3-l8/lascasas-portrait-1791.webp"
+    "base_image": "assets/images/u1-ch3-l8/split-study-lascasas.webp",
+    "clip": "../../video/ai_clips/u1-ch3-l8-books-experience.mp4",
+    "still": {
+     "prompt": "SPLIT top=assets/images/u1-ch3-l8/sepulveda-study.webp bottom=assets/images/u1-ch3-l8/lascasas-portrait-1791.webp",
+     "provider": "command",
+     "license_note": "Composite of public-domain images (pipeline search + local composite)"
+    }
    },
    "covers_los": [
     2
@@ -706,13 +726,20 @@
     "voice": "host"
    },
    "visual": {
-    "base_image": "assets/images/u1-ch3-l8/lascasas-portrait-1791.webp"
+    "base_image": "assets/images/u1-ch3-l8/lascasas-portrait-1791.webp",
+    "clip": "../../video/ai_clips/u1-ch3-l8-witness-irony.mp4"
    },
    "animation": {
-    "type": "typewriter",
-    "text": "WITNESS ≠ INNOCENCE",
-    "subtitle": "Earlier advice • Later repudiation"
+    "type": "ai_clip",
+    "prompt": "A living historical portrait engraving of Bartolome de Las Casas over written testimony. Candlelight flickers gently, dust drifts, and paper edges stir almost imperceptibly. Keep the camera static. Do not morph or add or remove or change any content.",
+    "duration": 10,
+    "seed": 1552,
+    "provider": "meta-ui",
+    "fallback_provider": "ltx"
    },
+   "beats": [
+    {"type": "stamp", "cue": "Moral witness", "text": "WITNESS ≠ INNOCENCE", "x": 0.5, "y": 0.72, "duration": 5}
+   ],
    "covers_los": [
     2
    ],
@@ -728,9 +755,12 @@
   },
   {
    "animation": {
-    "type": "camera_path",
-    "waypoints": [[0.5, 0.48, 1.5], [0.38, 0.42, 1.85], [0.62, 0.42, 1.85], [0.5, 0.5, 1.0]],
-    "caption": "Power • Justification • Evidence • Consequence"
+    "type": "ai_clip",
+    "prompt": "A living historical engraving of a sixteenth-century European council chamber in session. Paper edges stir subtly, candles flicker, and faint dust drifts through shafts of light. Keep the camera static. Do not morph or add or remove or change any content.",
+    "duration": 10,
+    "seed": 1553,
+    "provider": "meta-ui",
+    "fallback_provider": "ltx"
    },
    "device": "date_ticker",
    "device_params": {
@@ -772,6 +802,7 @@
    },
    "visual": {
     "base_image": "assets/images/u1-ch3-l8/council-hall.webp",
+    "clip": "../../video/ai_clips/u1-ch3-l8-council-legacy.mp4",
     "search": {
      "query": "Council of Trent engraving",
      "provider": "wikimedia",

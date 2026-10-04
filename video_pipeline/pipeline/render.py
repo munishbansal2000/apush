@@ -257,6 +257,15 @@ def render_video(manifest: dict, manifest_path: Path, repo_root: Path, audio_dir
         output.parent.mkdir(parents=True, exist_ok=True)
         scene_dir = audio_dir.parent / "rendered-scenes"
         scene_dir.mkdir(parents=True, exist_ok=True)
+        expected_scene_files = {
+            f"{index:03d}-{scene['id']}.mp4"
+            for index, scene in enumerate(manifest["scenes"])
+        }
+        for stale in scene_dir.glob("*.mp4"):
+            if stale.name not in expected_scene_files:
+                stale.unlink()
+                print(f"[rendered] removed stale scene intermediate {stale.name}",
+                      flush=True)
         video = manifest.get("video", {})
         fps = int(video.get("fps", 30))
 

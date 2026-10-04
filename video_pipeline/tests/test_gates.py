@@ -23,6 +23,7 @@ from pipeline.gates import (
     text_quantity,
     tts_text,
     variety,
+    visual_asset_reuse,
 )
 from pipeline.timing import _boundary_offset
 
@@ -266,6 +267,24 @@ class VarietyTests(unittest.TestCase):
                   for i, t in enumerate(["ken_burns", "bullets", "timeline"])]
         with self.assertRaisesRegex(PipelineError, "consecutive scenes"):
             variety(lesson(scenes))
+
+
+class VisualAssetReuseTests(unittest.TestCase):
+    def test_two_uses_allow_a_deliberate_callback(self):
+        scenes = [
+            scene(sid="a", visual={"base_image": "shared.webp"}),
+            scene(sid="b", visual={"secondary_image": "shared.webp"}),
+        ]
+        visual_asset_reuse(lesson(scenes))
+
+    def test_third_use_fails(self):
+        scenes = [
+            scene(sid="a", visual={"base_image": "shared.webp"}),
+            scene(sid="b", visual={"secondary_image": "shared.webp"}),
+            scene(sid="c", visual={"base_image": "shared.webp"}),
+        ]
+        with self.assertRaisesRegex(PipelineError, "more than two scene slots"):
+            visual_asset_reuse(lesson(scenes))
 
 
 class LoTraceabilityTests(unittest.TestCase):

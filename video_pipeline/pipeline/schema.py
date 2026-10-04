@@ -17,7 +17,14 @@ ROOT_KEYS = {"schema_version", "course_id", "unit_id", "chapter_id", "lesson_id"
 VIDEO_KEYS = {"width", "height", "fps", "transition_seconds"}
 TTS_KEYS = {"engine", "server_url", "reference_audio", "reference_text", "reference_id", "timeout_seconds", "settings", "edge_voice", "edge_rate", "edge_pitch", "voices"}
 GEN_KEYS = {"provider", "model", "endpoint", "api_key_env", "timeout_seconds"}
-CLIP_GEN_KEYS = {"provider", "cookie", "browser", "lib_dir", "timeout_seconds", "keep_open_on_failure", "meta_refusal_retries"}
+CLIP_GEN_KEYS = {
+    "provider", "cookie", "browser", "lib_dir", "timeout_seconds",
+    "keep_open_on_failure", "meta_refusal_retries", "ltx_backend",
+    "ltx_desktop_app_data", "ltx_desktop_resources", "ltx_desktop_port",
+    "ltx_startup_timeout_seconds", "ltx_generation_timeout_seconds",
+    "ltx_resolution", "ltx_model", "ltx_camera_motion",
+    "ltx_negative_prompt", "ltx_fps",
+}
 STILL_GEN_KEYS = {"provider", "fallback_provider", "search_provider", "media_bin", "image_search_bin", "command", "timeout_seconds", "orientation", "image_output_format"}
 STILL_KEYS = {"prompt", "provider", "fallback_provider", "seed", "edit_of", "edit_prompt", "orientation", "license_note"}
 SEARCH_KEYS = {"query", "page_title", "provider", "pick", "min_width", "license", "sha256"}
@@ -475,7 +482,8 @@ def validate_manifest(data: Any, path: Path, repo_root: Path,
         raise PipelineError("manifest.clip_generation.provider must be none, ltx, or meta-ui")
     if clip_generation.get("browser", "chrome") not in {"chrome", "edge"}:
         raise PipelineError("manifest.clip_generation.browser must be chrome or edge")
-    for field in ("cookie", "lib_dir"):
+    for field in ("cookie", "lib_dir", "ltx_desktop_app_data",
+                  "ltx_desktop_resources", "ltx_negative_prompt"):
         if field in clip_generation:
             _text(clip_generation[field], f"manifest.clip_generation.{field}")
     if "timeout_seconds" in clip_generation:
@@ -486,6 +494,25 @@ def validate_manifest(data: Any, path: Path, repo_root: Path,
         retries = clip_generation["meta_refusal_retries"]
         if isinstance(retries, bool) or not isinstance(retries, int) or not 0 <= retries <= 3:
             raise PipelineError("manifest.clip_generation.meta_refusal_retries must be an integer from 0 to 3")
+    if clip_generation.get("ltx_backend", "auto") not in {"auto", "desktop", "legacy"}:
+        raise PipelineError("manifest.clip_generation.ltx_backend must be auto, desktop, or legacy")
+    if clip_generation.get("ltx_resolution", "540p") not in {"540p", "720p", "1080p"}:
+        raise PipelineError("manifest.clip_generation.ltx_resolution must be 540p, 720p, or 1080p")
+    if clip_generation.get("ltx_model", "fast") not in {"fast", "pro", "fast-2.5", "pro-2.5"}:
+        raise PipelineError("manifest.clip_generation.ltx_model is not supported")
+    if clip_generation.get("ltx_camera_motion", "static") not in {
+            "none", "dolly_in", "dolly_out", "dolly_left", "dolly_right",
+            "jib_up", "jib_down", "static", "focus_shift"}:
+        raise PipelineError("manifest.clip_generation.ltx_camera_motion is not supported")
+    for field, low, high in (
+            ("ltx_desktop_port", 1024, 65535),
+            ("ltx_startup_timeout_seconds", 10, 600),
+            ("ltx_generation_timeout_seconds", 30, 7200),
+            ("ltx_fps", 24, 50)):
+        if field in clip_generation:
+            _number(clip_generation[field], f"manifest.clip_generation.{field}", low, high)
+    if "ltx_fps" in clip_generation and clip_generation["ltx_fps"] not in {24, 25, 48, 50}:
+        raise PipelineError("manifest.clip_generation.ltx_fps must be 24, 25, 48, or 50")
 
     still_generation = _obj(root.get("still_generation", {"provider": "none"}), "manifest.still_generation")
     _keys(still_generation, STILL_GEN_KEYS, "manifest.still_generation")

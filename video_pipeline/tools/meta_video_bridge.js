@@ -82,20 +82,37 @@ async function main() {
     const refusal = /(?:wasn['’]t|was not|unable|couldn['’]t|could not)\s+(?:able\s+)?to generate (?:that|the) exact animation/i;
     const refusalRetries = Math.max(0, Math.min(3,
       Number(options['refusal-retries'] === undefined ? 1 : options['refusal-retries'])));
+    const quotaExhausted = /(?:video[- ]generation quota (?:was|is) exhausted|video generation quota limit|video (?:generation )?credits? (?:are|were|is) exhausted|credits? (?:often )?replenish)/i;
     for (let attempt = 1; attempt <= refusalRetries; attempt += 1) {
       const alreadyHasMedia = (result.downloadedFiles || []).some(file =>
         /\.(mp4|webm|mov)$/i.test(file) && fs.existsSync(file));
       const visibleVideos = await page.locator('video').count().catch(() => 0);
       if (alreadyHasMedia || visibleVideos > 0) break;
       const pageText = await page.locator('body').innerText().catch(() => '');
-      if (!refusal.test(`${result.text || ''}\n${pageText}`)) break;
-      const retryPrompt = [
-        'Do your best.',
-        `Create the closest safe ${duration}-second animation you can from the attached historical image and my previous request.`,
-        'Keep the original composition and period details. Prefer subtle camera movement and natural environmental motion.',
-        'Return a downloadable video without explaining limitations.',
-      ].join(' ');
-      process.stdout.write(`Meta declined the exact animation; retrying (${attempt}/${refusalRetries}) with a do-your-best request.\n`);
+      const responseText = `${result.text || ''}\n${pageText}`;
+      const hitQuota = quotaExhausted.test(responseText);
+      if (!hitQuota && !refusal.test(responseText)) break;
+      if (hitQuota) {
+        const waitMs = 60000;
+        process.stdout.write(`Meta video quota exhausted; waiting ${waitMs / 1000}s before retry ${attempt}/${refusalRetries}.\n`);
+        await new Promise(resolve => setTimeout(resolve, waitMs));
+      }
+      const retryPrompt = hitQuota
+        ? [
+            'Try the video generation again now.',
+            `Animate the attached historical image as one ${duration}-second video using my previous request.`,
+            'Keep the original composition and period details with subtle natural environmental motion.',
+            'Return a downloadable video without explaining limitations.',
+          ].join(' ')
+        : [
+            'Do your best.',
+            `Create the closest safe ${duration}-second animation you can from the attached historical image and my previous request.`,
+            'Keep the original composition and period details. Prefer subtle camera movement and natural environmental motion.',
+            'Return a downloadable video without explaining limitations.',
+          ].join(' ');
+      if (!hitQuota) {
+        process.stdout.write(`Meta declined the exact animation; retrying (${attempt}/${refusalRetries}) with a do-your-best request.\n`);
+      }
       result = await adapter.send(page, retryPrompt, downloads,
         `apush_video_retry_${attempt}`, {
           timeoutMs: Number(options['timeout-ms'] || 1200000),

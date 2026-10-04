@@ -1,7 +1,7 @@
 {
   "version": 1,
   "generated": "2026-10-02",
-  "count": 289,
+  "count": 290,
   "entries": [
     {
       "id": "pr25e-test2-q10",
@@ -5010,22 +5010,6 @@
       "on_disk": true
     },
     {
-      "id": "u1-ch3-l8-s2b-split",
-      "local_path": "assets/images/u1-ch3-l8/split-study-mines.webp",
-      "subject": "Pre-composed split: study top, mines engraving bottom",
-      "period": "",
-      "topic_tags": [],
-      "provenance": {
-        "source_url": "",
-        "direct": "",
-        "date": "2026-10-04",
-        "license_note": "Composite of AI-generated and public-domain images",
-        "generator": "command",
-        "prompt": "SPLIT top=assets/images/u1-ch3-l8/sepulveda-study.webp bottom=assets/images/u1-ch3-l8/mines-1590.webp"
-      },
-      "on_disk": true
-    },
-    {
       "id": "u1-ch3-l8-s2a-study",
       "local_path": "assets/images/u1-ch3-l8/sepulveda-study.webp",
       "subject": "St. Jerome in His Study, Albrecht Dürer, 1514",
@@ -5148,6 +5132,42 @@
         "license_note": "CC0 via Wikimedia Commons",
         "generator": "wikimedia",
         "prompt": "Council of Trent engraving"
+      },
+      "on_disk": true
+    },
+    {
+      "id": "u1-ch3-l8-s2b-split",
+      "local_path": "assets/images/u1-ch3-l8/split-study-mines.webp",
+      "subject": "Dürer study engraving compared with a Potosí mine engraving",
+      "period": "",
+      "topic_tags": [],
+      "provenance": {
+        "source_url": "",
+        "direct": "",
+        "page_title": "",
+        "source_sha256": "",
+        "date": "2026-10-04",
+        "license_note": "Composite of public-domain images (pipeline search + local composite)",
+        "generator": "command",
+        "prompt": "SPLIT top=assets/images/u1-ch3-l8/sepulveda-study.webp bottom=assets/images/u1-ch3-l8/mines-1590.webp"
+      },
+      "on_disk": true
+    },
+    {
+      "id": "u1-ch3-l8-s3a-split",
+      "local_path": "assets/images/u1-ch3-l8/split-study-lascasas.webp",
+      "subject": "European study engraving compared with Las Casas portrait",
+      "period": "",
+      "topic_tags": [],
+      "provenance": {
+        "source_url": "",
+        "direct": "",
+        "page_title": "",
+        "source_sha256": "",
+        "date": "2026-10-04",
+        "license_note": "Composite of public-domain images (pipeline search + local composite)",
+        "generator": "command",
+        "prompt": "SPLIT top=assets/images/u1-ch3-l8/sepulveda-study.webp bottom=assets/images/u1-ch3-l8/lascasas-portrait-1791.webp"
       },
       "on_disk": true
     }

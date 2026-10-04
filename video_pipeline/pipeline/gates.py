@@ -267,16 +267,49 @@ def prompt_subject_coherence(manifest: dict, manifest_path: Path,
         key = _repo_rel(repo_root, resolved)
         entry = entries.get(key)
         if entry is None:
-            raise PipelineError(
-                f"{lid}/{sid}: base_image {base!r} has no CATALOG.json entry; "
-                f"cannot check prompt/subject coherence")
-        subject = str(entry.get("subject", ""))
+            still = visual.get("still") or {}
+            search = visual.get("search") or {}
+            subject = str(still.get("prompt") or search.get("query") or "")
+            if not subject:
+                raise PipelineError(
+                    f"{lid}/{sid}: base_image {base!r} has no CATALOG.json "
+                    f"entry and no still/search subject; cannot check "
+                    f"prompt/subject coherence")
+        else:
+            subject = str(entry.get("subject", ""))
         shared = _content_tokens(prompt) & _content_tokens(subject)
         if len(shared) < 2:
             raise PipelineError(
                 f"{lid}/{sid}: ai_clip prompt shares only {len(shared)} content "
                 f"token(s) {sorted(shared)} with the base image subject "
                 f"{subject!r}; rewrite the prompt to describe the actual image")
+
+
+def visual_asset_reuse(manifest: dict) -> None:
+    """Reject accidental slide-deck repetition across three or more scenes.
+
+    Two appearances are allowed for deliberate callbacks or comparisons. A
+    third appearance makes the lesson feel visually stuck and must use a new
+    plate, composite, generated clip, or code-native visual instead.
+    """
+    lid = _lid(manifest)
+    uses: dict[str, list[str]] = {}
+    for scene in _scenes(manifest):
+        visual = scene.get("visual", {}) or {}
+        for field in ("base_image", "secondary_image"):
+            asset = visual.get(field)
+            if asset:
+                uses.setdefault(str(asset).replace("\\", "/"), []).append(
+                    f"{scene.get('id', '<unknown>')}.{field}")
+    repeated = {asset: locations for asset, locations in uses.items()
+                if len(locations) > 2}
+    if repeated:
+        detail = "; ".join(
+            f"{asset}: {', '.join(locations)}"
+            for asset, locations in sorted(repeated.items()))
+        raise PipelineError(
+            f"{lid}: visual assets appear in more than two scene slots: "
+            f"{detail}; create a distinct plate or generated clip")
 
 
 # ---------------------------------------------------------------------------
@@ -538,6 +571,7 @@ def run_all_gates(manifest: dict, manifest_path: Path, repo_root: Path) -> None:
     text_quantity(manifest)
     license_gate(manifest, manifest_path, repo_root)
     prompt_subject_coherence(manifest, manifest_path, repo_root)
+    visual_asset_reuse(manifest)
     spec_parity(manifest)
     variety(manifest)
     lo_traceability(manifest)
