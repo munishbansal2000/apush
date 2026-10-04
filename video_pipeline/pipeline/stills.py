@@ -29,7 +29,9 @@ import sys
 import shutil
 import subprocess
 import tempfile
+import time
 import urllib.parse
+import urllib.error
 import urllib.request
 from pathlib import Path
 
@@ -240,12 +242,29 @@ def _select_wikimedia(pages: list[dict], pick: int, min_width: int) -> dict:
 
 def _download(url: str, output: Path, scene_id: str,
               expected_sha256: str | None = None) -> str:
+    """Download with retry on 429 (Wikimedia throttles rapid successive
+    downloads), verify an optional source checksum, and transcode the bytes
+    to the requested output format. Honors Retry-After; backs off otherwise.
+    """
     request = urllib.request.Request(url, headers={"User-Agent": _WIKIMEDIA_UA})
-    try:
-        with urllib.request.urlopen(request, timeout=120) as response:
-            data = response.read()
-    except OSError as exc:
-        raise PipelineError(f"still {scene_id}: download failed: {exc}") from exc
+    data = None
+    for attempt in range(4):
+        try:
+            with urllib.request.urlopen(request, timeout=120) as response:
+                data = response.read()
+            break
+        except urllib.error.HTTPError as exc:
+            if exc.code == 429 and attempt < 3:
+                retry_after = exc.headers.get("Retry-After", "")
+                wait = int(retry_after) if retry_after.isdigit() else 5 * (3 ** attempt)
+                print(f"[stills] {scene_id}: 429 rate-limited; "
+                      f"retrying in {wait}s (attempt {attempt + 2}/4)", flush=True)
+                time.sleep(wait)
+                continue
+            raise PipelineError(f"still {scene_id}: download failed: {exc}") from exc
+        except OSError as exc:
+            raise PipelineError(f"still {scene_id}: download failed: {exc}") from exc
+    assert data is not None
     if len(data) < 1024:
         raise PipelineError(f"still {scene_id}: downloaded file suspiciously small")
     source_hash = hashlib.sha256(data).hexdigest()
@@ -267,6 +286,7 @@ def _download(url: str, output: Path, scene_id: str,
                 raise PipelineError(f"still {scene_id}: unsupported output image type {suffix}")
     except (OSError, ValueError) as exc:
         raise PipelineError(f"still {scene_id}: downloaded content is not a valid image: {exc}") from exc
+    time.sleep(2)  # polite gap: Wikimedia asks for serial, non-aggressive requests
     return source_hash
 
 
