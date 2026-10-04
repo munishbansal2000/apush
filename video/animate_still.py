@@ -66,6 +66,11 @@ BANNED_PATTERNS = [
     r"\bdanc(e|es|ed|ing)\b", r"\bfight(s|ing)?\b",
 ]
 BANNED_RES = [re.compile(p, re.IGNORECASE) for p in BANNED_PATTERNS]
+SUBJECT_REFERENCE_PATTERNS = {
+    r"\bpersons?\b", r"\bpeople\b", r"\b(man|men|woman|women)\b",
+    r"\b(child|children)\b", r"\bsoldiers?\b", r"\btroops?\b",
+    r"\bcrowds?\b", r"\barm(y|ies)\b", r"\bfigures?\b",
+}
 CAMERA_WORDS = re.compile(
     r"\b(zoom|pan|dolly|orbit|tilt|tracking shot|crane)\b", re.IGNORECASE)
 
@@ -97,7 +102,7 @@ CAMERA_MOVE_RES = [re.compile(p, re.IGNORECASE) for p in [
 ]]
 
 
-def check_prompt_safety(prompt):
+def check_prompt_safety(prompt, allow_subject_references=False):
     """Return (ok, detail). ok=False means the prompt must not be used.
 
     Importable by video/validate_video.py's AI-CLIP gate and by
@@ -121,6 +126,11 @@ def check_prompt_safety(prompt):
                     f"static-camera by contract; the factory does its own "
                     f"camera work")
     for rx in BANNED_RES:
+        # Subject-aware creativity patterns may name people already present in
+        # the source so Meta/LTX can direct light toward them. Person-motion
+        # verbs and every content-changing verb remain forbidden.
+        if allow_subject_references and rx.pattern in SUBJECT_REFERENCE_PATTERNS:
+            continue
         m = rx.search(scrubbed)
         if m:
             return (False,

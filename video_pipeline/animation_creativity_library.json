@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "patterns": {
+    "semantic_spotlight": {
+      "description": "Meta/LTX interprets named subjects and moves restrained light between them; deterministic code owns all text.",
+      "provider": "meta-ui",
+      "fallback_provider": "ltx",
+      "minimum_focuses": 2,
+      "maximum_focuses": 4,
+      "prompt_template": "{source_description}. Keep the camera static. {treatment} {focus_sequence}. {ambient_motion}. Preserve the exact historical composition. Do not add or remove people or animals or objects or text.",
+      "text_policy": "renderer_only"
+    },
+    "archival_evidence_scan": {
+      "description": "A light-based visual investigation moves through named evidence regions without procedural circles.",
+      "provider": "meta-ui",
+      "fallback_provider": "ltx",
+      "minimum_focuses": 1,
+      "maximum_focuses": 4,
+      "prompt_template": "{source_description}. Keep the camera static. A narrow museum examination light moves in sequence across {focus_sequence}. {ambient_motion}. Preserve every mark and figure in the source. Do not add or remove content or text.",
+      "text_policy": "renderer_only"
+    },
+    "living_archive": {
+      "description": "Ambient historical motion without semantic overlays or changed source content.",
+      "provider": "meta-ui",
+      "fallback_provider": "ltx",
+      "minimum_focuses": 0,
+      "maximum_focuses": 0,
+      "prompt_template": "{source_description}. Keep the camera static. {ambient_motion}. Preserve the exact historical composition. Do not add or remove people or animals or objects or text.",
+      "text_policy": "renderer_only"
+    }
+  }
+}

@@ -5,6 +5,7 @@ from pathlib import Path
 from typing import Any
 
 from .common import PipelineError, resolve_local
+from .creativity import validate_creativity
 
 ANIMATION_TYPES = {
     "auto", "title", "ken_burns", "zoom", "camera_path", "callout",
@@ -51,7 +52,7 @@ ANIMATION_KEYS = {
     "counter": COMMON_ANIMATION_KEYS | {"target", "label", "prefix", "suffix", "start", "decimals", "at"},
     "versus": COMMON_ANIMATION_KEYS | {"name_left", "name_right"},
     "wipe": COMMON_ANIMATION_KEYS | {"label_a", "label_b", "direction"},
-    "ai_clip": COMMON_ANIMATION_KEYS | {"seed", "duration", "provider", "fallback_provider"},
+    "ai_clip": COMMON_ANIMATION_KEYS | {"seed", "duration", "provider", "fallback_provider", "creativity"},
     "parallax": COMMON_ANIMATION_KEYS | {"background_drift", "background_zoom"},
     "source_analysis": COMMON_ANIMATION_KEYS | {"highlights"},
     "diagram": COMMON_ANIMATION_KEYS | {"nodes", "edges"},
@@ -94,7 +95,7 @@ def _validate_device(name: str, params: dict, where: str) -> None:
         "hook": ({"hook_type", "payoff_by_sec"}, {"hook_type", "payoff_by_sec"}),
         "redact_reveal": ({"lines", "reveal_on_cues"}, {"lines", "reveal_on_cues"}),
         "reversal": ({"pivot", "setup_scene"}, {"pivot"}),
-        "annotate": ({"mode", "annotations"}, {"annotations"}),
+        "annotate": ({"mode", "annotations", "freeze_frame"}, {"annotations"}),
         "show_ask": ({"question", "hold_sec"}, {"question"}),
         "date_ticker": ({"position", "dates"}, {"dates"}),
     }
@@ -123,6 +124,8 @@ def _validate_device(name: str, params: dict, where: str) -> None:
     elif name == "annotate":
         if params.get("mode", "telestrator") != "telestrator":
             raise PipelineError(f"{where}.device_params.mode must be telestrator")
+        if "freeze_frame" in params and not isinstance(params["freeze_frame"], bool):
+            raise PipelineError(f"{where}.device_params.freeze_frame must be true or false")
         notes = params["annotations"]
         if not isinstance(notes, list) or not notes:
             raise PipelineError(f"{where}.device_params.annotations must be non-empty")
@@ -130,7 +133,7 @@ def _validate_device(name: str, params: dict, where: str) -> None:
             nw = f"{where}.device_params.annotations[{index}]"
             note = _obj(note_value, nw)
             _keys(note, {"type", "label", "cue", "x", "y", "label_x", "label_y"}, nw)
-            _required(note, {"type", "label", "cue"}, nw)
+            _required(note, {"type", "label", "cue", "x", "y"}, nw)
             if note["type"] not in {"circle", "arrow"}:
                 raise PipelineError(f"{nw}.type must be circle or arrow")
             _text(note["label"], f"{nw}.label")
@@ -222,12 +225,21 @@ def validate_animation(animation: Any, where: str, generated: bool = False) -> N
     if kind == "timeline":
         events = spec.get("events")
         if not isinstance(events, list) or not 2 <= len(events) <= 6:
-            raise PipelineError(f"{where}.events must contain 2-6 [label,caption] entries")
+            raise PipelineError(f"{where}.events must contain 2-6 events")
         for index, event in enumerate(events):
-            if not isinstance(event, list) or len(event) != 2:
-                raise PipelineError(f"{where}.events[{index}] must be [label,caption]")
-            _text(event[0], f"{where}.events[{index}][0]")
-            _text(event[1], f"{where}.events[{index}][1]")
+            ew = f"{where}.events[{index}]"
+            if isinstance(event, list):
+                if len(event) != 2:
+                    raise PipelineError(f"{ew} must be [label,caption]")
+                _text(event[0], f"{ew}[0]")
+                _text(event[1], f"{ew}[1]")
+                continue
+            event = _obj(event, ew)
+            _keys(event, {"label", "caption", "at", "cue", "offset"}, ew)
+            _required(event, {"label", "caption"}, ew)
+            _text(event["label"], f"{ew}.label")
+            _text(event["caption"], f"{ew}.caption")
+            _timing(event, ew)
     if kind == "bullets":
         bullets = spec.get("bullets")
         if not isinstance(bullets, list) or not 1 <= len(bullets) <= 6 or not all(isinstance(x, str) and x.strip() for x in bullets):
@@ -275,7 +287,12 @@ def validate_animation(animation: Any, where: str, generated: bool = False) -> N
     if kind == "ai_clip" and "seed" in spec and (isinstance(spec["seed"], bool) or not isinstance(spec["seed"], int)):
         raise PipelineError(f"{where}.seed must be an integer")
     if kind == "ai_clip":
-        _required(spec, {"prompt"}, where)
+        if "prompt" not in spec and "creativity" not in spec:
+            raise PipelineError(f"{where} requires prompt or creativity")
+        if "prompt" in spec and "creativity" in spec:
+            raise PipelineError(f"{where} cannot contain both prompt and creativity")
+        if "creativity" in spec:
+            validate_creativity(spec["creativity"], f"{where}.creativity")
         _number(spec.get("duration", 10), f"{where}.duration", 3, 10)
         for field in ("provider", "fallback_provider"):
             if field in spec and spec[field] not in {"ltx", "meta-ui"}:

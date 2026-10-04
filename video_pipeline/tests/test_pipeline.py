@@ -12,6 +12,8 @@ ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "video_pipeline"))
 
 from pipeline.common import PipelineError
+from pipeline.clips import _select_providers
+from pipeline.creativity import build_ai_prompt
 from pipeline.layout import validate_text_layout
 from pipeline.schema import validate_manifest
 from pipeline.timing import resolve_scene_timing
@@ -71,6 +73,84 @@ class ManifestTests(unittest.TestCase):
                 "type": "camera_path", "waypoints": [[0.5, 0.5, 1.0]]
             }
             with self.assertRaisesRegex(PipelineError, "at least two"):
+                validate_manifest(data, root / "lesson.json", ROOT)
+
+    def test_cue_timed_timeline_contract(self):
+        with tempfile.TemporaryDirectory() as value:
+            root = Path(value)
+            data = self.fixture(root)
+            data["scenes"][0]["animation"] = {
+                "type": "timeline", "events": [
+                    {"label": "FIRST", "caption": "Opening", "cue": "This is"},
+                    {"label": "SECOND", "caption": "Conclusion",
+                     "cue": "valid narration"},
+                ]}
+            validate_manifest(data, root / "lesson.json", ROOT)
+
+    def test_semantic_spotlight_creativity_contract(self):
+        animation = {
+            "type": "ai_clip", "duration": 10,
+            "creativity": {
+                "pattern": "semantic_spotlight",
+                "source_description": "A historical engraving of a council",
+                "focuses": [
+                    {"subject": "the speaker", "location": "the left"},
+                    {"subject": "the panel", "location": "the right"},
+                ]
+            }
+        }
+        prompt = build_ai_prompt(animation)
+        self.assertIn("the speaker", prompt)
+        self.assertIn("the panel", prompt)
+        self.assertIn("Do not add or remove", prompt)
+
+    def test_manifest_provider_overrides_creativity_default(self):
+        animation = {
+            "type": "ai_clip",
+            "creativity": {
+                "pattern": "semantic_spotlight",
+                "source_description": "A historical engraving",
+                "focuses": [
+                    {"subject": "the speaker", "location": "the left"},
+                    {"subject": "the panel", "location": "the right"},
+                ],
+            },
+        }
+        selected, fallback = _select_providers(animation, "ltx", "manifest")
+        self.assertEqual(selected, "ltx")
+        self.assertIsNone(fallback)
+
+    def test_cli_provider_has_highest_precedence(self):
+        animation = {"type": "ai_clip", "prompt": "Ambient dust only."}
+        selected, _ = _select_providers(animation, "meta-ui", "ltx")
+        self.assertEqual(selected, "ltx")
+
+    def test_unknown_creativity_pattern_fails(self):
+        with tempfile.TemporaryDirectory() as value:
+            root = Path(value)
+            data = self.fixture(root)
+            data["scenes"][0]["visual"]["clip"] = "future.mp4"
+            data["scenes"][0]["animation"] = {
+                "type": "ai_clip", "duration": 10,
+                "creativity": {
+                    "pattern": "random_magic",
+                    "source_description": "A historical engraving",
+                    "focuses": []
+                }
+            }
+            with self.assertRaisesRegex(PipelineError, "pattern must be one of"):
+                validate_manifest(data, root / "lesson.json", ROOT,
+                                  allow_missing_clips=True)
+
+    def test_annotation_requires_explicit_target(self):
+        with tempfile.TemporaryDirectory() as value:
+            root = Path(value)
+            data = self.fixture(root)
+            data["scenes"][0].update({
+                "device": "annotate", "device_params": {"annotations": [{
+                    "type": "circle", "label": "Evidence", "cue": "valid narration"
+                }]}})
+            with self.assertRaisesRegex(PipelineError, "missing required.*x, y"):
                 validate_manifest(data, root / "lesson.json", ROOT)
 
     def test_visual_path_type_fails_cleanly(self):

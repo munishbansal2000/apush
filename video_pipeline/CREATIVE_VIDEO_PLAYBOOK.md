@@ -106,6 +106,30 @@ Audio is structural:
 
 ## Generated-video prompt formula
 
+Prefer a reusable entry from
+[`animation_creativity_library.json`](animation_creativity_library.json) over
+hand-writing a provider prompt. A subject-aware scene declares intent, not
+screen coordinates:
+
+```json
+"creativity": {
+  "pattern": "semantic_spotlight",
+  "source_description": "A historical engraving of a colonial council",
+  "focuses": [
+    {"subject": "the speaker", "location": "the left"},
+    {"subject": "the listening panel", "location": "the right"}
+  ]
+}
+```
+
+The pattern selects Meta UI with LTX fallback, constructs a preservation-safe
+prompt, and reserves all text for the deterministic renderer. Use
+`semantic_spotlight` or `archival_evidence_scan` when understanding the image
+matters. Use `living_archive` for atmospheric motion. Do not approximate a
+semantic subject with manually guessed circles.
+
+### Custom prompts
+
 Write prompts in this order:
 
 1. Name what must remain fixed from the source image.
@@ -189,7 +213,7 @@ Its spine is worth imitating:
 | Spain puts conquest on trial | Contradiction hook | Empire becomes defendant, creating immediate stakes |
 | Sepulveda builds the abstract case | Redact/reveal | Claims appear exactly as he voices them |
 | Abstraction meets the mine | Split/reversal | The visual argument changes before the rebuttal begins |
-| Las Casas answers as eyewitness | Telestrator | The viewer inspects what testimony points toward |
+| Las Casas answers as eyewitness | Semantic spotlight | LTX guides attention through the evidence without guessed circles |
 | Five days of testimony | Page sequence + foley | Duration becomes physical and memorable |
 | Viewer becomes the council | Show/ask | Retrieval and judgment replace passive watching |
 | The question survives | Date ticker + musical outro | The close transfers the issue without claiming a false verdict |
