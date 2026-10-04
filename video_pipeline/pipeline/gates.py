@@ -371,6 +371,119 @@ def lo_traceability(manifest: dict) -> None:
 
 
 # ---------------------------------------------------------------------------
+# gate 9: lesson shape (Hook -> Thread -> Landing)
+# ---------------------------------------------------------------------------
+
+def lesson_shape(manifest: dict) -> None:
+    """The lesson's dramatic shape is fail-closed: the first scene must be a
+    hook (purpose 'hook' or the hook device), exactly one objectives slide
+    must follow the hook, and the last scene must land the lesson (purpose
+    'close' or 'recap'). The lo_traceability gate covers the thread; this
+    gate covers the shape around it."""
+    lid = _lid(manifest)
+    scenes = _scenes(manifest)
+    if not scenes:
+        raise PipelineError(f"{lid}: lesson has no scenes")
+    first = scenes[0]
+    if first.get("purpose") != "hook" and first.get("device") != "hook":
+        raise PipelineError(
+            f"{lid}/{first.get('id', '?')}: first scene must be the hook "
+            f"(purpose 'hook' or device 'hook')")
+    objectives = [s for s in scenes
+                  if (s.get("animation", {}) or {}).get("type") == "objectives"]
+    if not objectives:
+        raise PipelineError(
+            f"{lid}: no objectives slide (animation type 'objectives'); every "
+            f"lesson promises its learning objectives up front")
+    if len(objectives) > 1:
+        raise PipelineError(
+            f"{lid}: {len(objectives)} objectives slides; exactly one, right "
+            f"after the hook")
+    hook_idx = 0
+    obj_idx = scenes.index(objectives[0])
+    if obj_idx != hook_idx + 1:
+        raise PipelineError(
+            f"{lid}/{objectives[0].get('id', '?')}: objectives slide must come "
+            f"immediately after the hook (position {hook_idx + 2})")
+    last = scenes[-1]
+    if last.get("purpose") not in {"close", "recap"}:
+        raise PipelineError(
+            f"{lid}/{last.get('id', '?')}: last scene must land the lesson "
+            f"(purpose 'close' or 'recap')")
+
+
+# ---------------------------------------------------------------------------
+# gate 10: beat timing fits the scene
+# ---------------------------------------------------------------------------
+
+def _estimated_duration(scene: dict) -> float:
+    words = len(str(scene.get("narration", {}).get("text", "")).split())
+    return max(float(scene.get("min_duration", 0)), words / 2.35 + 1.0, 3.0)
+
+
+def beat_timing(manifest: dict) -> None:
+    """No beat may outlive its scene: beat duration must fit within the
+    scene's estimated spoken duration. A label timed longer than its scene
+    is cut off mid-read."""
+    lid = _lid(manifest)
+    for scene in _scenes(manifest):
+        sid = scene.get("id", "<unknown scene>")
+        duration = _estimated_duration(scene)
+        for index, beat in enumerate(scene.get("beats", []) or []):
+            if not isinstance(beat, dict):
+                continue
+            beat_dur = float(beat.get("duration", 0) or 0)
+            if beat_dur > duration:
+                raise PipelineError(
+                    f"{lid}/{sid}: beats[{index}] duration {beat_dur}s exceeds "
+                    f"scene duration ~{duration:.1f}s; shorten the beat or the "
+                    f"scene will cut it off")
+
+
+# ---------------------------------------------------------------------------
+# gate 11: narration length (series runtime standard)
+# ---------------------------------------------------------------------------
+
+def narration_length(manifest: dict) -> None:
+    """Spoken narration must be 400-600 words (series bible: ~3:00-3:35 at
+    ~450-500 words). Too short starves the objectives; too long breaks the
+    runtime contract."""
+    lid = _lid(manifest)
+    words = sum(len(str(s.get("narration", {}).get("text", "")).split())
+                for s in _scenes(manifest))
+    if words < 400:
+        raise PipelineError(
+            f"{lid}: narration is {words} words (<400); the lesson cannot "
+            f"cover its objectives in this space — expand the scenes")
+    if words > 600:
+        raise PipelineError(
+            f"{lid}: narration is {words} words (>600); cut to hold the "
+            f"~3:30 runtime")
+
+
+# ---------------------------------------------------------------------------
+# gate 12: supplements shipped with the lesson
+# ---------------------------------------------------------------------------
+
+def supplements_present(manifest: dict, manifest_path: Path,
+                        repo_root: Path) -> None:
+    """Every lesson ships its study supplements: speaker-labeled transcript
+    (txt + srt), retrieval check, and exam card. They live in
+    manifests/supplements/<lesson-id>-*."""
+    lid = _lid(manifest)
+    supp_dir = manifest_path.parent / "supplements"
+    required = [f"{lid}-transcript.txt", f"{lid}-transcript.srt",
+                f"{lid}-retrieval-check.md", f"{lid}-exam-card.md"]
+    missing = [name for name in required if not (supp_dir / name).is_file()]
+    if missing:
+        raise PipelineError(
+            f"{lid}: missing shipped supplements in {supp_dir}: "
+            f"{', '.join(missing)}; generate transcripts via "
+            f"tools/make_transcript.py and author the retrieval check + "
+            f"exam card")
+
+
+# ---------------------------------------------------------------------------
 # direction tags
 # ---------------------------------------------------------------------------
 
@@ -418,3 +531,7 @@ def run_all_gates(manifest: dict, manifest_path: Path, repo_root: Path) -> None:
     spec_parity(manifest)
     variety(manifest)
     lo_traceability(manifest)
+    lesson_shape(manifest)
+    beat_timing(manifest)
+    narration_length(manifest)
+    supplements_present(manifest, manifest_path, repo_root)

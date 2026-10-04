@@ -9,13 +9,17 @@ sys.path.insert(0, str(ROOT / "video_pipeline"))
 from pipeline.common import PipelineError
 from pipeline import gates
 from pipeline.gates import (
+    beat_timing,
     cue_integrity,
     iter_cues,
+    lesson_shape,
     license_gate,
     lo_traceability,
+    narration_length,
     prompt_subject_coherence,
     run_all_gates,
     spec_parity,
+    supplements_present,
     text_quantity,
     tts_text,
     variety,
@@ -45,7 +49,7 @@ FIXED_L10_PROMPT = NEW_L10_PROMPT.replace(
 
 def scene(sid="s1", narration="A plain narration with [beat] simple words.",
           animation=None, beats=(), audio=None, visual=None, transition=None,
-          covers_los=None):
+          covers_los=None, purpose=None):
     out = {
         "id": sid,
         "narration": {"text": narration},
@@ -59,6 +63,8 @@ def scene(sid="s1", narration="A plain narration with [beat] simple words.",
         out["transition"] = transition
     if covers_los is not None:
         out["covers_los"] = covers_los
+    if purpose is not None:
+        out["purpose"] = purpose
     return out
 
 
@@ -282,29 +288,126 @@ class LoTraceabilityTests(unittest.TestCase):
                                 scene(sid="b", covers_los=[2])]))  # no raise
 
 
+class LessonShapeTests(unittest.TestCase):
+    def _shaped(self):
+        return lesson([
+            scene(sid="a", purpose="hook"),
+            scene(sid="b", animation={"type": "objectives"}),
+            scene(sid="c", purpose="close"),
+        ])
+
+    def test_good_shape_passes(self):
+        lesson_shape(self._shaped())  # no raise
+
+    def test_first_scene_must_be_hook(self):
+        m = self._shaped()
+        del m["scenes"][0]["purpose"]
+        with self.assertRaisesRegex(PipelineError, "first scene must be the hook"):
+            lesson_shape(m)
+
+    def test_objectives_slide_required(self):
+        m = self._shaped()
+        m["scenes"][1]["animation"] = {"type": "ken_burns"}
+        with self.assertRaisesRegex(PipelineError, "no objectives slide"):
+            lesson_shape(m)
+
+    def test_objectives_must_follow_hook(self):
+        m = self._shaped()
+        m["scenes"].insert(1, scene(sid="x", purpose="context"))
+        with self.assertRaisesRegex(PipelineError, "immediately after the hook"):
+            lesson_shape(m)
+
+    def test_last_scene_must_land(self):
+        m = self._shaped()
+        m["scenes"][-1]["purpose"] = "evidence"
+        with self.assertRaisesRegex(PipelineError, "must land the lesson"):
+            lesson_shape(m)
+
+
+class BeatTimingTests(unittest.TestCase):
+    def test_beat_longer_than_scene_fails(self):
+        sc = scene(narration="[beat] Short words here.",
+                   beats=[{"type": "label", "cue": "Short",
+                            "text": "TOO LONG", "duration": 30}])
+        with self.assertRaisesRegex(PipelineError, "exceeds.*scene duration"):
+            beat_timing(lesson([sc]))
+
+    def test_fitting_beat_passes(self):
+        sc = scene(narration="[beat] Short words here.",
+                   beats=[{"type": "label", "cue": "Short",
+                            "text": "OK", "duration": 2}])
+        beat_timing(lesson([sc]))  # no raise
+
+
+class NarrationLengthTests(unittest.TestCase):
+    def test_too_short_fails(self):
+        with self.assertRaisesRegex(PipelineError, r"\(<400\)"):
+            narration_length(lesson([scene()]))
+
+    def test_in_range_passes(self):
+        long_text = "[beat] " + "word " * 450
+        narration_length(lesson([scene(narration=long_text)]))  # no raise
+
+
+class SupplementsPresentTests(unittest.TestCase):
+    def test_missing_supplements_fail(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as tmp:
+            mp = Path(tmp) / "lesson.json"
+            with self.assertRaisesRegex(PipelineError, "missing shipped supplements"):
+                supplements_present(lesson([]), mp, REPO)
+
+    def test_present_supplements_pass(self):
+        import tempfile
+        manifest = lesson([])
+        with tempfile.TemporaryDirectory() as tmp:
+            mp = Path(tmp) / "lesson.json"
+            supp = Path(tmp) / "supplements"
+            supp.mkdir()
+            for name in (f"{manifest['lesson_id']}-transcript.txt",
+                         f"{manifest['lesson_id']}-transcript.srt",
+                         f"{manifest['lesson_id']}-retrieval-check.md",
+                         f"{manifest['lesson_id']}-exam-card.md"):
+                (supp / name).write_text("ok")
+            supplements_present(manifest, mp, REPO)  # no raise
+
+
 class RunAllGatesTests(unittest.TestCase):
     def manifest_path(self):
         return CURRICULA_DIR / "test-curriculum.json"
 
+    def _long_narration(self, seed):
+        # 150 words, TTS-safe, with a direction tag.
+        return "[beat] " + " ".join(f"word{seed}{i}" for i in range(150)) + "."
+
     def test_fully_compliant_lesson_passes(self):
+        import tempfile
         scenes = [
-            scene(sid="a", narration="First scene with [beat] simple words.",
-                  animation={"type": "ken_burns"},
-                  visual={"base_image":
-                          "../../assets/images/u1/saq-set-19-q3.jpg"},
-                  beats=[{"type": "label", "cue": "simple words", "text": "OK"}],
+            scene(sid="a", narration=self._long_narration("a"),
+                  animation={"type": "title", "title": "Opening"},
+                  beats=[{"type": "label", "cue": "worda0", "text": "OK",
+                           "duration": 4}],
                   transition={"type": "dip_to_black"},
-                  covers_los=[1]),
-            scene(sid="b", narration="Second scene with [beat] simple words.",
+                  covers_los=[1], purpose="hook"),
+            scene(sid="b", narration=self._long_narration("b"),
+                  animation={"type": "objectives"},
+                  transition={"type": "crossfade"}),
+            scene(sid="c", narration=self._long_narration("c"),
                   animation={"type": "bullets", "bullets": ["one", "two"]},
-                  transition={"type": "crossfade"},
-                  covers_los=[2]),
-            scene(sid="c", narration="Third scene with [beat] simple words.",
-                  animation={"type": "timeline", "events": []},
                   transition={"type": "slide"},
-                  covers_los=[1, 2]),
+                  covers_los=[2], purpose="close"),
         ]
-        run_all_gates(lesson(scenes), self.manifest_path(), REPO)  # no raise
+        manifest = lesson(scenes)
+        with tempfile.TemporaryDirectory() as tmp:
+            mp = Path(tmp) / "lesson.json"
+            supp = Path(tmp) / "supplements"
+            supp.mkdir()
+            for name in (f"{manifest['lesson_id']}-transcript.txt",
+                         f"{manifest['lesson_id']}-transcript.srt",
+                         f"{manifest['lesson_id']}-retrieval-check.md",
+                         f"{manifest['lesson_id']}-exam-card.md"):
+                (supp / name).write_text("ok")
+            run_all_gates(manifest, mp, REPO)  # no raise
 
     def test_first_violation_reported(self):
         sc = scene(narration="Bad \u2014 narration.")

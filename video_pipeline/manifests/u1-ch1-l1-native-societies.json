@@ -270,6 +270,84 @@
    ]
   },
   {
+   "id": "pueblo-southwest",
+   "purpose": "evidence",
+   "narration": {
+    "text": "Travel southwest, and the problem flips. Around present-day New Mexico and Arizona, rain is scarce and rivers run only part of the year. [beat] The Pueblo peoples answered with engineering. They built irrigation canals that carried river water to fields of maize, beans, and squash, the same three crops Cahokia grew, coaxed from a desert. And they built upward: multistory villages of adobe, like Taos Pueblo, where hundreds of people lived in connected rooms around a central plaza. Village life ran on cooperation: maintaining canals took organized labor, and clan networks shared both the work and the harvests. Underground kivas anchored ceremonial life, and the central plaza hosted the dances and markets that bound each town together. [emphasis]Dry country did not mean scattered country.[/emphasis] Careful water management made permanent towns possible where rainfall alone never could have."
+   },
+   "visual": {
+    "base_image": "../../assets/images/u1/original-u1-native-09.jpg"
+   },
+   "animation": {
+    "type": "ken_burns",
+    "zoom": 0.12,
+    "pan_x": 0.5,
+    "pan_y": 0.55
+   },
+   "beats": [
+    {
+     "type": "label",
+     "cue": "irrigation canals",
+     "text": "IRRIGATION IN THE DESERT",
+     "x": 0.5,
+     "y": 0.78,
+     "duration": 4.0
+    },
+    {
+     "type": "label",
+     "cue": "multistory villages",
+     "text": "ADOBE TOWNS, CENTRAL PLAZAS",
+     "x": 0.5,
+     "y": 0.18,
+     "duration": 4.0
+    }
+   ],
+   "covers_los": [
+    1,
+    2
+   ],
+   "transition": {
+    "type": "dip_to_black",
+    "duration": 0.25
+   }
+  },
+  {
+   "id": "iroquois-confederacy",
+   "purpose": "concept",
+   "narration": {
+    "text": "Now head northeast, to the woodlands of present-day New York. Here the Haudenosaunee, called the Iroquois by the French, built something rare in world history: a lasting alliance. [beat] Five nations, Mohawk, Oneida, Onondaga, Cayuga, and Seneca, bound themselves under the Great Law of Peace. Decisions required consensus, not majority rule. Fifty sachems, chosen by clan mothers, met in council and talked until they agreed. [emphasis]There was no king and no emperor. There was agreement.[/emphasis] Villages of longhouses, each housing several related families, farmed maize, beans, and squash in forest clearings while men hunted and fished. When Europeans arrived, this confederacy would bargain with Dutch, French, and English as a power in its own right."
+   },
+   "visual": {},
+   "animation": {
+    "type": "bullets",
+    "title": "THE IROQUOIS CONFEDERACY",
+    "bullets": [
+     "Five nations under the Great Law of Peace",
+     "Consensus rule: fifty sachems, chosen by clan mothers",
+     "Longhouse villages farm maize, beans, and squash",
+     "A diplomatic power Europeans had to bargain with"
+    ],
+    "stagger": 0.45
+   },
+   "beats": [
+    {
+     "type": "label",
+     "cue": "required consensus",
+     "text": "CONSENSUS, NOT MAJORITY RULE",
+     "x": 0.5,
+     "y": 0.88,
+     "duration": 4.0
+    }
+   ],
+   "covers_los": [
+    2
+   ],
+   "transition": {
+    "type": "crossfade",
+    "duration": 0.25
+   }
+  },
+  {
    "id": "regional-comparison",
    "purpose": "comparison",
    "narration": {

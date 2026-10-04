@@ -3,7 +3,8 @@
 Complete Unit 1 lessons, exported as single runnable manifests. Each one
 passed every hard gate (cue integrity, direction tags, TTS text, text quantity,
 license/catalog, prompt↔image coherence, animation variety, learning-objective
-traceability, text-layout collision check) before export.
+traceability, lesson shape, beat timing, narration length, supplements shipped,
+text-layout collision check) before export.
 
 - `u1-ch1-l1-native-societies.json` — Native Societies (5 scenes)
 - `u1-ch2-l4-500-men.json` — How 500 Men Toppled an Empire (11 scenes)
