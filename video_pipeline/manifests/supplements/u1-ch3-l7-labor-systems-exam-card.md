@@ -10,7 +10,7 @@ as a static image (NLE).*
   "protection." In practice: mines, fields, tribute.
 - **II. THE COLLAPSE** — Disease and overwork destroy the workforce; by one
   Spanish count only a few hundred Taíno are left on Hispaniola within
-  decades. The Crown replaces encomienda with repartimiento (1549) — a
+  decades. The Crown replaces encomienda with repartimiento (1542) — a
   draft, still forced.
 - **III. THE REPLACEMENT** — Planters turn to enslaved African labor: for
   life, hereditary, and legally property — a different kind of bondage than

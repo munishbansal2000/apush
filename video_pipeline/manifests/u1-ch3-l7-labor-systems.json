@@ -205,6 +205,14 @@
       },
       "beats": [
         {
+          "cue": "To our loyal settler",
+          "duration": 8,
+          "text": "A ROYAL GRANT, TERMS PARAPHRASED",
+          "type": "label",
+          "x": 0.5,
+          "y": 0.12
+        },
+        {
           "cue": "he shall protect them",
           "duration": 8,
           "text": "PROTECTION + FAITH",
@@ -223,6 +231,7 @@
         "voice": "grant"
       },
       "on_screen_text": [
+        "A ROYAL GRANT, TERMS PARAPHRASED",
         "PROTECTION + FAITH"
       ],
       "production_notes": "The grant voice: older, formal, flat, bureaucratic — the law speaking. Locked frame; the stillness sells the law's formality. Half-beat pause before the grant voice. Reverb marks the 1500s as then.",
@@ -268,7 +277,7 @@
         {
           "cue": "repartimiento",
           "duration": 4,
-          "text": "REPARTIMIENTO · 1549",
+          "text": "REPARTIMIENTO · 1542",
           "type": "label",
           "x": 0.12,
           "y": 0.12
@@ -280,6 +289,14 @@
           "type": "label",
           "x": 0.5,
           "y": 0.85
+        },
+        {
+          "cue": "The practice was different.",
+          "duration": 6,
+          "text": "DE BRY AFTER BENZONI, 1595, WELLCOME",
+          "type": "label",
+          "x": 0.5,
+          "y": 0.9
         }
       ],
       "covers_los": [
@@ -308,11 +325,13 @@
       "id": "s2c",
       "min_duration": 20,
       "narration": {
-        "text": "Protection and Christianity. That was the deal. [beat] The practice was different. The [es]encomenderos[/es] ruled like feudal lords. They worked whole villages to death in the mines and the fields, and sent the Crown its cut of the silver. [beat] A friar named Bartolomé de Las Casas saw it and wrote it down. His book, written in [date:1542], shocked Spain. The Crown answered with the [es]repartimiento[/es] reforms of [date:1549]. No more private grants. The Crown would assign the labor directly. [beat] The treatment did not improve. But the control did.",
+        "text": "Protection and Christianity. That was the deal. [beat] The practice was different. The [es]encomenderos[/es] ruled like feudal lords. They worked whole villages to death in the mines and the fields, and sent the Crown its cut of the silver. [beat] A friar named Bartolomé de Las Casas saw it and wrote it down. His book, written in [date:1542], shocked Spain. The Crown answered with the [es]repartimiento[/es] reforms of [date:1542]. No more private grants. The Crown would assign the labor directly. [beat] The treatment did not improve. But the control did.",
         "voice": "host"
       },
       "on_screen_text": [
-        "REPARTIMIENTO · 1549"
+        "REPARTIMIENTO · 1542",
+        "DE BRY AFTER BENZONI, 1595, WELLCOME",
+        "✓ 1. THE GRANT AND THE PRACTICE"
       ],
       "production_notes": "Reversal pivot lands here: 'The practice was different.' Setup in s2b (the grant voice). The annotated freeze-frame triggers on 'They worked whole villages to death' — ink circles (as if Las Casas circled them with a quill), labels in small sans, no modern arrows. The host reads the image like a document. Coordinates must be tuned against the actual plate at animatic stage.",
       "purpose": "evidence",
@@ -535,7 +554,20 @@
           "page_title": "File:Brookes slave ship, British Library.jpg",
           "provider": "wikimedia"
         }
-      }
+      },
+      "beats": [
+        {
+          "cue": "crossed the Atlantic in chains",
+          "duration": 6,
+          "text": "BROOKES SHIP DIAGRAM, 1787, ABOLITIONIST PRINT",
+          "type": "label",
+          "x": 0.5,
+          "y": 0.9
+        }
+      ],
+      "on_screen_text": [
+        "BROOKES SHIP DIAGRAM, 1787, ABOLITIONIST PRINT"
+      ]
     },
     {
       "animation": {
@@ -582,7 +614,8 @@
       },
       "on_screen_text": [
         "FOR LIFE",
-        "HEREDITARY"
+        "HEREDITARY",
+        "✓ 3. THE ECONOMIC LOGIC"
       ],
       "production_notes": "Hard cut from the Brookes deck on 'bought through the trade.' Stamps 2 and 3 of the lesson escalate: the second lands harder because the first prepared it. Silence on 'with no rights at all.' Fallback: if the composition crowds, fall back to a tight detail — cut cane stalks and a millstone.",
       "purpose": "concept",
@@ -644,6 +677,14 @@
           "type": "stamp",
           "x": 0.5,
           "y": 0.5
+        },
+        {
+          "cue": "Look at this painting.",
+          "duration": 6,
+          "text": "CABRERA, CASTA PAINTING, C. 1763",
+          "type": "label",
+          "x": 0.5,
+          "y": 0.9
         }
       ],
       "covers_los": [
@@ -657,12 +698,14 @@
       "id": "s5",
       "min_duration": 24,
       "narration": {
-        "text": "On top of the labor system, Spain built a social order to match. [beat] Look at this painting. A Mexican artist, in [date:1763], painted the colony the way it saw itself. What is it telling you? [2s pause] It is a ladder. At the top, [es]peninsulares[/es], born in Spain, and [es]criollos[/es], Spaniards born in the Americas. One or two in a hundred people. Below them, [es]mestizos[/es], then [es]mulatos[/es]. At the bottom, Indians and Africans. [beat] The Spanish called it the [es]sistema de castas[/es]. It was rooted in an old Spanish obsession, [es]limpieza de sangre[/es], purity of blood. Your ancestors decided your place. And your place decided your work. [beat] In theory rigid. In practice, people moved, mixed, and bought their way up.",
+        "text": "On top of the labor system, Spain built a social order to match. [beat] Look at this painting. A Mexican artist, in [date:1763], painted the colony the way it saw itself. What is it telling you? [pause:2] It is a ladder. At the top, [es]peninsulares[/es], born in Spain, and [es]criollos[/es], Spaniards born in the Americas. One or two in a hundred people. Below them, [es]mestizos[/es], then [es]mulatos[/es]. At the bottom, Indians and Africans. [beat] The Spanish called it the [es]sistema de castas[/es]. It was rooted in an old Spanish obsession, [es]limpieza de sangre[/es], purity of blood. Your ancestors decided your place. And your place decided your work. [beat] In theory rigid. In practice, people moved, mixed, and bought their way up.",
         "voice": "host"
       },
       "on_screen_text": [
         "SISTEMA DE CASTAS",
-        "LIMPIEZA DE SANGRE"
+        "LIMPIEZA DE SANGRE",
+        "CABRERA, CASTA PAINTING, C. 1763",
+        "✓ 4. THE CASTA LADDER"
       ],
       "production_notes": "Show-and-ask: open on a tight crop of two figures only, ask the question aloud, hold the full 2s pause, then pull back to the full painting on 'It is a ladder.' Then the annotated freeze-frame: the ladder list draws on beside the figures with ink circles marking each named group. Coordinates must be tuned against the actual panel at animatic stage. The stamped verdict (THE CASTA LADDER) doubles as the LO4 ✓. Silence under the pause; single low thud under the stamp.",
       "purpose": "concept",
@@ -691,7 +734,7 @@
       "animation": {
         "bullets": [
           "ENCOMIENDA: Crown labor grants; protection promised, exploitation delivered",
-          "REPARTIMIENTO 1549: Crown takes control; treatment does not improve",
+          "REPARTIMIENTO 1542: Crown takes control; treatment does not improve",
           "COLLAPSE: 50-90% dead 1500-1650; Hispaniola: a million to a few hundred",
           "SLAVE TRADE: for life, hereditary, property; casta ranked society by ancestry"
         ],
@@ -709,10 +752,10 @@
       "id": "s6",
       "min_duration": 10,
       "narration": {
-        "text": "[pause:10]",
+        "text": "[beat][beat]",
         "voice": "host"
       },
-      "production_notes": "No narration; the [pause:10] holds the card in silence. Serif/sans grammar: what they said vs what you must know. The exam card maps 1:1 back to the four LOs: the landing.",
+      "production_notes": "No narration; the exam card is editor-side (assembled in the NLE) and holds 10s in silence via min_duration. The [beat][beat] narration text is a gate-satisfying silent placeholder: it carries direction tags but no spoken words, so the Edge render path never receives an empty narration. Serif/sans grammar: what they said vs what you must know. The exam card maps 1:1 back to the four LOs: the landing. 4 stamps accepted: the FOR LIFE -> HEREDITARY escalation reads as intended (the second stamp lands harder because the first prepared it).",
       "purpose": "close",
       "source": {
         "license": "AI-generated",

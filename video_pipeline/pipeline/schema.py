@@ -97,9 +97,9 @@ def _validate_device(name: str, params: dict, where: str) -> None:
     _keys(params, allowed, f"{where}.device_params")
     _required(params, required, f"{where}.device_params")
     if name == "hook":
-        if params["hook_type"] not in {"contradiction", "mystery", "stakes"}:
+        if params["hook_type"] not in {"contradiction", "mystery", "stakes", "question"}:
             raise PipelineError(f"{where}.device_params.hook_type is not supported")
-        _number(params["payoff_by_sec"], f"{where}.device_params.payoff_by_sec", 0.5, 15)
+        _number(params["payoff_by_sec"], f"{where}.device_params.payoff_by_sec", 0.5, 600)
     elif name == "redact_reveal":
         lines, cues = params["lines"], params["reveal_on_cues"]
         if (not isinstance(lines, list) or not lines or

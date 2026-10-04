@@ -41,7 +41,7 @@
   "learning_objectives": [
     "Describe how the mita draft supplied labor for Potosí's silver mines.",
     "Explain the price revolution as an effect of American silver in Europe.",
-    "Trace silver's path from Potosí to the Manila galleons and the global economy."
+    "Trace silver's two streams — Potosí's east to Europe, Mexican silver west aboard the Manila galleons — and explain how they wired the first global economy."
   ],
   "lesson_id": "u1-ch2-l6-silver-empire",
   "output": "../../build/lesson-videos/u1-ch2-l6-silver-empire.mp4",
@@ -89,13 +89,13 @@
       ],
       "device": "hook",
       "device_params": {
-        "hook_type": "mystery",
-        "payoff_by_sec": 15.0
+        "hook_type": "question",
+        "payoff_by_sec": 180.0
       },
       "id": "s1",
       "min_duration": 20,
       "narration": {
-        "text": "[beat]High in the Andes sits a mountain the Spanish called Cerro Rico, the Rich Hill. In [date:1545] they struck silver there, and the city below it swelled to two hundred thousand people, as large as London. [beat] The workers called it something else: the mountain that eats men. [awed]This is the story of how one mountain wired the first global economy. How did one mountain rewire the world's economy, and what did it cost?",
+        "text": "[beat]High in the Andes sits a mountain the Spanish called Cerro Rico, the Rich Hill. In [date:1545] they struck silver there, and the city below it would swell to two hundred thousand people, as large as London. [beat] The workers called it something else: the mountain that eats men. How did one mountain rewire the world's economy, and what did it cost?",
         "voice": "host"
       },
       "on_screen_text": [
@@ -134,7 +134,7 @@
       "id": "s1b-objectives",
       "min_duration": 12,
       "narration": {
-        "text": "[beat]By the end: [emphasis]One:[/emphasis] how the mita draft fed workers to Potosí's mines. [emphasis]Two:[/emphasis] how American silver caused Europe's price revolution. [emphasis]Three:[/emphasis] silver's path from Potosí to the Manila galleons and the first global economy.",
+        "text": "[beat]By the end: [emphasis]One:[/emphasis] how the mita draft fed workers to Potosí's mines. [emphasis]Two:[/emphasis] how American silver caused the price revolution. [emphasis]Three:[/emphasis] silver's two streams: Potosí's east to Europe, Mexico's west to Manila.",
         "voice": "host"
       },
       "purpose": "context",
@@ -172,7 +172,7 @@
       "id": "s2a",
       "min_duration": 14,
       "narration": {
-        "text": "The story goes that in [date:1545], an Andean herder named Diego Huallpa was chasing lost llamas on Cerro Rico. He built a fire against the cold, and the ground beneath it melted into shining liquid. Silver. [beat] Within years, Potosí was producing most of the world's silver. But Spain had a problem. The mountain was rich, and there was almost no one to dig it.",
+        "text": "The story goes that in [date:1545], an Andean herder named Diego Huallpa chased lost llamas. He built a fire, and the ground beneath it melted into shining liquid. Silver. [beat] Within years, Potosí was producing most of the world's silver. But Spain had a problem. The mountain was rich, and there was almost no one to dig it.",
         "voice": "host"
       },
       "on_screen_text": [
@@ -222,7 +222,7 @@
       "id": "s2b",
       "min_duration": 12,
       "narration": {
-        "text": "Spain's answer was the mita. The Inca had used a labor draft called the mit'a for roads and terraces, taking turns from each village. In [date:1573], the viceroy Francisco de Toledo repurposed it for the mines. [beat] Here is the order, read as it was written. Then listen to a man who lived under it.",
+        "text": "Spain's answer was the mita. The Inca had used a labor draft called the mit'a for roads and terraces, taking turns. In [date:1573], the viceroy Francisco de Toledo repurposed it for the mines. [beat] Here is the order. Then listen to a man who lived under it.",
         "voice": "host"
       },
       "on_screen_text": [
@@ -264,6 +264,14 @@
           "type": "label",
           "x": 0.5,
           "y": 0.82
+        },
+        {
+          "cue": "Each village shall send",
+          "duration": 8,
+          "text": "FRANCISCO DE TOLEDO · VICEROY",
+          "type": "label",
+          "x": 0.5,
+          "y": 0.12
         }
       ],
       "covers_los": [
@@ -276,7 +284,8 @@
         "voice": "decree"
       },
       "on_screen_text": [
-        "TOLEDO'S MITA"
+        "TOLEDO'S MITA",
+        "FRANCISCO DE TOLEDO · VICEROY"
       ],
       "production_notes": "The decree voice: older, formal, flat, bureaucratic. The law speaking. Locked frame; reverb marks the 1500s as then. The terms are paraphrased from Toledo's mita, not verbatim.",
       "purpose": "evidence",
@@ -358,7 +367,7 @@
       "on_screen_text": [
         "MITAYO, DRAFT LABORER"
       ],
-      "production_notes": "Device: annotated freeze-frame. The frame freezes on 'We climbed down on rope ladders' and ink circles draw on as if the mitayo circled them himself; labels in small sans, no modern arrows. The voice reads the image like a document. Coordinates must be tuned against the actual plate at animatic stage. The mitayo voice is dramatized from Guamán Poma de Ayala's account of mine labor (Nueva corónica, c. 1615), not a verbatim quote; the exam card carries the disclaimer. Score drops out; the labor plays dry.",
+      "production_notes": "Device: annotated freeze-frame. The frame freezes on 'We climbed down on rope ladders' and ink circles draw on as if the mitayo circled them himself; labels in small sans, no modern arrows. The voice reads the image like a document. Coordinates must be tuned against the actual plate at animatic stage. The mitayo voice is dramatized from Guamán Poma de Ayala's account of mine labor (Nueva corónica, c. 1615), not a verbatim quote; the exam card carries the disclaimer. Score drops out; the labor plays dry. WAIVER 2026-10-04: 2nd archival plate waived — no verifiable PD Guaman Poma mine-labor drawing on Wikimedia Commons (only hit is an unrelated drunkenness scene); wiring it would be dishonest. Ships with 1 archival plate (de Bry mine, s2d).",
       "purpose": "evidence",
       "source": {
         "creator": "Theodor de Bry",
@@ -408,7 +417,7 @@
       "id": "s3a",
       "min_duration": 14,
       "narration": {
-        "text": "[beat]The silver came out through poison. Miners mixed crushed ore with mercury on open patios, treading it barefoot. The mercury grabbed the silver, and heat burned the mercury away as vapor. [solemn]It worked on low-grade ore the old smelters could not touch, which is why Potosí kept producing for two centuries. It also poisoned everyone who touched it.",
+        "text": "[beat]The silver came out through poison. Miners mixed crushed ore with mercury on open patios and trod it barefoot. The mercury grabbed the silver; heat burned it away as vapor. [solemn]It worked on low-grade ore the old smelters could not touch, which is why Potosí kept producing for two centuries. It also poisoned everyone who touched it.",
         "voice": "host"
       },
       "on_screen_text": [
@@ -470,7 +479,7 @@
       "id": "s3b",
       "min_duration": 14,
       "narration": {
-        "text": "All that silver crossed the Atlantic to Spain, and then it kept going. More money chasing the same goods meant prices climbed across Europe for a hundred years. By 1600, prices were three to four times higher than in 1500. [beat] Historians call it the price revolution, and it was the first great inflation of the modern world.",
+        "text": "All that silver crossed the Atlantic to Spain. More money chasing the same goods meant prices climbed across Europe. By 1600, prices were three to four times higher than in 1500. [beat] Historians call it the price revolution, the first great inflation of the modern world.",
         "voice": "host"
       },
       "on_screen_text": [
@@ -529,7 +538,7 @@
       "id": "s3c",
       "min_duration": 12,
       "narration": {
-        "text": "Spain became the richest country in Europe. So Spain won? [beat] Not so fast. Spain spent the silver on wars and imported goods instead of building industry. By the end of the 1500s, the richest empire on earth had gone bankrupt four times. [wry]The silver enriched Spain's rivals more than Spain itself.",
+        "text": "Spain became the richest country in Europe. So Spain won? [beat] Not so fast. Spain spent the silver on wars and imports instead of industry. By the end of the 1500s, the richest empire on earth had gone bankrupt four times. [wry]The silver enriched Spain's rivals more than Spain itself.",
         "voice": "host"
       },
       "on_screen_text": [
@@ -591,7 +600,7 @@
               34,
               34
             ],
-            "cue": "carried it west across the Pacific",
+            "cue": "carried it across the Pacific",
             "kind": "arrow",
             "label": "ACAPULCO TO MANILA",
             "label_pos": [
@@ -661,7 +670,7 @@
       "id": "s4",
       "min_duration": 18,
       "narration": {
-        "text": "[beat]Follow the silver, in two streams. Potosí's silver sailed east: it crossed the Atlantic to Spain. And from [date:1565], Mexican silver sailed west: the Manila galleons carried it west across the Pacific, from Acapulco to Manila, trading it for Chinese silk and porcelain. [awed]China hungered for silver to run its tax system, and as much as a third of all American silver ended up in Asia. One mountain in the Andes, wired to the whole world.",
+        "text": "[beat]Follow the silver, in two streams. Potosí's silver crossed the Atlantic to Spain. And from [date:1565], Mexican silver sailed west: the Manila galleons carried it across the Pacific, from Acapulco to Manila, trading it for silk and porcelain. [awed]China hungered for silver for its tax system; as much as a third of all American silver ended up in Asia. One mountain, wired to the whole world.",
         "voice": "host"
       },
       "on_screen_text": [
