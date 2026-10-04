@@ -95,11 +95,11 @@
  "scenes": [
   {
    "animation": {
-    "type": "source_analysis",
-    "title": "EXHIBIT A: WHAT DOES THIS IMAGE ACCUSE?",
-    "highlights": [
-     {"box": [0.08, 0.42, 0.48, 0.88], "label": "BOUND CAPTIVES", "cue": "Bound captives"},
-     {"box": [0.48, 0.18, 0.94, 0.82], "label": "SPANISH FORCE", "cue": "Spanish violence"}
+    "type": "camera_path",
+    "waypoints": [
+     [0.5, 0.5, 1.02],
+     [0.42, 0.58, 1.16],
+     [0.58, 0.55, 1.12]
     ]
    },
    "audio": {
@@ -129,17 +129,17 @@
    "id": "s1-case-file",
    "min_duration": 15,
    "narration": {
-    "text": "[solemn]Look closely: Bound captives and Spanish violence. This later engraving is not eyewitness evidence. It is an accusation aimed at an empire. [beat]Now imagine it entered as evidence and the empire itself became the defendant. Valladolid, [date:1550]. Before either side speaks, decide: just war or imperial crime?",
+    "text": "[solemn]Look closely: mounted Spanish pursuers, hunting dogs, and Indigenous people fleeing through the trees. This later engraving is not eyewitness evidence. It is an accusation aimed at an empire. [beat]Now imagine it entered as evidence and the empire itself became the defendant. Valladolid, [date:1550]. Before either side speaks, decide: just war or imperial crime?",
     "voice": "host"
    },
    "on_screen_text": [
     "JUST, OR A CRIME?"
    ],
-   "production_notes": "Cold open on evidence, not a title. Annotation boxes land on the named details. The case question arrives only after the image has been inspected.",
+   "production_notes": "Cold open on the unobstructed evidence, not a title. A restrained camera move follows the chase without claiming object tracking. The case question arrives only after the image has been inspected.",
    "purpose": "hook",
    "source": {
     "license": "Public domain",
-    "title": "Spaniards hunting Indigenous captives, 1858, after de Bry",
+    "title": "Spaniards Hunting Indians, 1858, after de Bry",
     "notes": "Later public-domain illustration used as an accusation, explicitly not presented as eyewitness evidence."
    },
    "topics": [
