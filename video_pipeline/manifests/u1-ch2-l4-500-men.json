@@ -176,6 +176,23 @@
    "production_notes": "Show-and-ask opening: the vast city sits under the spoken question with a full beat of silence."
   },
   {
+   "id": "s1b-objectives",
+   "purpose": "context",
+   "narration": {
+    "voice": "host",
+    "text": "[beat]By the end of this lesson, you will be able to do three things. [emphasis]One:[/emphasis] explain why Spanish weapons alone cannot explain the fall of [es]Tenochtitlan[/es]. [emphasis]Two:[/emphasis] describe how smallpox and the [es]Tlaxcalan[/es] alliance decided the conquest. [emphasis]Three:[/emphasis] compare the falls of the [es]Mexica[/es] and Inca empires as one repeating pattern."
+   },
+   "visual": {},
+   "animation": {
+    "type": "objectives",
+    "title": "BY THE END OF THIS LESSON"
+   },
+   "transition": {
+    "type": "hard_cut",
+    "duration": 0.2
+   }
+  },
+  {
    "id": "s2a",
    "purpose": "concept",
    "narration": {
@@ -221,7 +238,10 @@
     "license": "AI-generated",
     "notes": "Clip generated on the 5090 via Meta UI/LTX; drop at video/ai_clips/cavalry-charge.mp4. The hatch-media still is the coherence anchor for the ai_clip gate. Fallbacks: AI still of the charge with slow push-in, then a de Bry archival cavalry plate via stills search."
    },
-   "production_notes": "The lesson's one burst of velocity; the 8s clip loops under the host setup. The steelman earns its energy here, deliberately, before the film takes it away."
+   "production_notes": "The lesson's one burst of velocity; the 8s clip loops under the host setup. The steelman earns its energy here, deliberately, before the film takes it away.",
+   "covers_los": [
+    1
+   ]
   },
   {
    "id": "s2b",
@@ -258,6 +278,14 @@
      "x": 0.5,
      "y": 0.5,
      "duration": 4
+    },
+    {
+     "type": "label",
+     "cue": "Not so fast",
+     "text": "✓ 1. WEAPONS WEREN'T ENOUGH",
+     "x": 0.5,
+     "y": 0.85,
+     "duration": 4
     }
    ],
    "device": "reversal",
@@ -286,7 +314,10 @@
     "license": "Public domain",
     "notes": "Wikimedia Commons; fetched by the pipeline search spec. The frozen engraving after the moving clip is the film taking the steelman's energy away."
    },
-   "production_notes": "Reversal pivot on s2b; setup_scene s2a built the expectation. The impact effect is a placeholder for a distant gunshot SFX (low, 0.15). Cortés's [fierce] needs an Edge voice supporting the angry style; the TTS fallback de-styles gracefully if rejected."
+   "production_notes": "Reversal pivot on s2b; setup_scene s2a built the expectation. The impact effect is a placeholder for a distant gunshot SFX (low, 0.15). Cortés's [fierce] needs an Edge voice supporting the angry style; the TTS fallback de-styles gracefully if rejected.",
+   "covers_los": [
+    1
+   ]
   },
   {
    "id": "s3a",
@@ -344,7 +375,10 @@
     "license": "AI-generated",
     "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt."
    },
-   "production_notes": "Locked frame: stillness as the statement. Score drops out entirely; the dismantling plays dry."
+   "production_notes": "Locked frame: stillness as the statement. Score drops out entirely; the dismantling plays dry.",
+   "covers_los": [
+    2
+   ]
   },
   {
    "id": "s3b",
@@ -399,7 +433,10 @@
     "license": "AI-generated",
     "notes": "Same still spec and output path as s3a; the stills stage skips it because the file already exists, and the license gate skips scenes carrying a still spec. The reuse is deliberate: one plate, two voices."
    },
-   "production_notes": "One weary voice, sourced on screen. Hold on death through the passage; let it breathe."
+   "production_notes": "One weary voice, sourced on screen. Hold on death through the passage; let it breathe.",
+   "covers_los": [
+    2
+   ]
   },
   {
    "id": "s3c",
@@ -443,6 +480,14 @@
      "x": 0.5,
      "y": 0.92,
      "duration": 8
+    },
+    {
+     "type": "label",
+     "cue": "took most of the casualties",
+     "text": "✓ 2. DISEASE AND ALLIES",
+     "x": 0.5,
+     "y": 0.08,
+     "duration": 4
     }
    ],
    "device": "annotate",
@@ -479,7 +524,10 @@
     "license": "Public domain",
     "notes": "Wikimedia Commons; fetched by the pipeline search spec (PD-only filter). The ideal Mesolore digital facsimile is CC BY 4.0 and incompatible with the pipeline's public-domain-only filter; if the filter widens, prefer it and attribute Mesolore."
    },
-   "production_notes": "The allies telling their side. Telestrator callouts draw on the freeze; coordinates are normalized 0-1 and must be tuned against the actual picked panel at animatic stage."
+   "production_notes": "The allies telling their side. Telestrator callouts draw on the freeze; coordinates are normalized 0-1 and must be tuned against the actual picked panel at animatic stage.",
+   "covers_los": [
+    2
+   ]
   },
   {
    "id": "s4a",
@@ -537,7 +585,10 @@
     "license": "AI-generated",
     "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt. Composition rhymes with s2a's charge, smaller and more desperate."
    },
-   "production_notes": "Slow push-in on the litter, landing tight on 'seized the emperor Atahualpa.'"
+   "production_notes": "Slow push-in on the litter, landing tight on 'seized the emperor Atahualpa.'",
+   "covers_los": [
+    3
+   ]
   },
   {
    "id": "s4b",
@@ -573,6 +624,14 @@
      "x": 0.5,
      "y": 0.5,
      "duration": 4
+    },
+    {
+     "type": "label",
+     "cue": "irreplaceable head",
+     "text": "✓ 3. THE PATTERN REPEATS",
+     "x": 0.5,
+     "y": 0.85,
+     "duration": 4
     }
    ],
    "min_duration": 10,
@@ -587,7 +646,10 @@
     "license": "Public domain",
     "notes": "Wikimedia Commons, LoC LCCN98519205; pinned by exact page_title."
    },
-   "production_notes": "Locked frame on the engraving. Lock off for the closing line; hold. Let it sit."
+   "production_notes": "Locked frame on the engraving. Lock off for the closing line; hold. Let it sit.",
+   "covers_los": [
+    3
+   ]
   },
   {
    "id": "s5",
@@ -716,7 +778,12 @@
     "license": "AI-generated",
     "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt. Move coordinates are approximate against the generated plate; tune at animatic."
    },
-   "production_notes": "The map animates the argument: two empires, one playbook. Routes draw in sequence as the steps are named. Stamp 3 of 3 (THE PLAYBOOK) is the stamped verdict; single low thud under it."
+   "production_notes": "The map animates the argument: two empires, one playbook. Routes draw in sequence as the steps are named. Stamp 3 of 3 (THE PLAYBOOK) is the stamped verdict; single low thud under it.",
+   "covers_los": [
+    1,
+    2,
+    3
+   ]
   },
   {
    "id": "s6",
@@ -758,7 +825,12 @@
     "license": "AI-generated",
     "notes": "Pipeline-generated via hatch-media. Card holds 10s in silence; designed to be paused and screenshotted, not absorbed in real time."
    },
-   "production_notes": "No narration; the [pause:10] holds the card in silence. Serif/sans grammar: what they said vs what you must know."
+   "production_notes": "No narration; the [pause:10] holds the card in silence. Serif/sans grammar: what they said vs what you must know.",
+   "covers_los": [
+    1,
+    2,
+    3
+   ]
   }
  ]
 }

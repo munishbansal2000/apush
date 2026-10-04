@@ -32,6 +32,7 @@ class CurriculumTests(unittest.TestCase):
                         "lesson_id": "u1-ch1-l1",
                         "title": "Lesson 1",
                         "output": "lesson.mp4",
+                        "learning_objectives": ["First objective.", "Second objective."],
                         "scenes": [
                             {
                                 "id": "hook",
@@ -50,6 +51,7 @@ class CurriculumTests(unittest.TestCase):
                                 "visual": {},
                                 "animation": {"type": "bullets",
                                               "bullets": ["first point", "second point"]},
+                                "covers_los": [1],
                                 "transition": {"type": "crossfade", "duration": 0.25}
                             },
                             {
@@ -58,6 +60,7 @@ class CurriculumTests(unittest.TestCase):
                                 "narration": {"text": "A third narration with plain words. [beat]"},
                                 "visual": {},
                                 "animation": {"type": "typewriter", "text": "Closing words."},
+                                "covers_los": [2],
                                 "transition": {"type": "slide", "duration": 0.25}
                             }
                         ]

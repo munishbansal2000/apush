@@ -41,6 +41,13 @@ def build_clip(motion, scene: dict, duration: float, manifest_path: Path, repo_r
         clip = motion.timeline_scene(animation["events"], duration, animation.get("title", ""), path("base_image"))
     elif kind == "bullets":
         clip = motion.bullet_slide(animation.get("title", ""), animation["bullets"], duration, animation.get("footer", ""), path("base_image"), stagger=animation.get("stagger", 0.45))
+    elif kind == "objectives":
+        # los falls back to the manifest's learning_objectives so the slide
+        # always shows the lesson's declared objectives unless overridden.
+        los = animation.get("los")
+        if los is None:
+            los = read_json(manifest_path).get("learning_objectives", [])
+        clip = motion.objectives_slide(animation.get("title", "BY THE END OF THIS LESSON"), los, duration, animation.get("footer", ""), path("base_image"), stagger=animation.get("stagger", 0.45))
     elif kind == "typewriter":
         clip = motion.typewriter_scene(animation.get("text", scene["narration"]["text"]), duration, path("base_image"), sub=animation.get("subtitle"))
     elif kind == "map":

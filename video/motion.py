@@ -613,6 +613,92 @@ def bullet_slide(title, bullets, dur, footer="", bg_img=None, darken=70,
     return VideoClip(frame, duration=dur)
 
 
+def objectives_slide(title, los, dur, footer="", bg_img=None, darken=70,
+                     stagger=0.45):
+    """Learning-objectives slide: numbered LOs slam in one-by-one with spring
+    overshoot over a darkened image or flat background. The Thread opener:
+    what the lesson promises, so the closing can land it.
+    """
+    from moviepy import VideoClip
+    base = (_bg_base(bg_img, darken) if bg_img
+            else np.zeros((H, W, 3), dtype=np.uint8) + 20)
+    meas = ImageDraw.Draw(Image.new("RGB", (W, H)))
+    tf, bf, nf = font(FB, 60), font(FR, 50), font(FB, 54)
+    title_lines = wrap_px(meas, title, tf, BASE_W - 160)
+    items = []  # (tile_rgba, cx, cy, at, is_title)
+    t_asc, t_desc = tf.getmetrics()
+    b_asc, b_desc = bf.getmetrics()
+    t_lh, b_lh = t_asc + t_desc + px(14), b_asc + b_desc + px(22)
+    # layout: measure first; each LO gets "N." in gold + wrapped text
+    body = []
+    for i, lo in enumerate(los, 1):
+        num_w = meas.textlength(f"{i}. ", nf)
+        for j, line in enumerate(wrap_px(meas, lo, bf, BASE_W - 180 - num_w - px(20))):
+            body.append((f"{i}. " if j == 0 else "   ", line))
+        body.append(("", ""))
+    content_h = len(title_lines) * t_lh + px(60) + len(body) * b_lh
+    y = max(px(240), (H - content_h) // 2 - px(60))
+    for line in title_lines:
+        tile = text_rgba(line, tf, fill=(233, 196, 106, 255), max_w=BASE_W - 160)
+        items.append((tile, px(80) + tile.width // 2, y + t_lh // 2, 0.0, True))
+        y += t_lh
+    y += px(60)
+    idx = 0
+    for num, line in body:
+        if line:
+            idx += 1
+            num_tile = text_rgba(num, nf, fill=(233, 196, 106, 255)) if num.strip() else None
+            line_tile = text_rgba(line, bf, fill=(232, 232, 232, 255), max_w=BASE_W - 180)
+            w = (num_tile.width if num_tile else 0) + px(20) + line_tile.width
+            row = Image.new("RGBA", (w, max(num_tile.height if num_tile else 0,
+                                           line_tile.height)), (0, 0, 0, 0))
+            x = 0
+            if num_tile:
+                row.alpha_composite(num_tile, (0, (row.height - num_tile.height) // 2))
+                x = num_tile.width + px(20)
+            row.alpha_composite(line_tile, (x, (row.height - line_tile.height) // 2))
+            items.append((row, px(90) + w // 2, y + b_lh // 2,
+                          0.15 + idx * stagger, False))
+        y += b_lh
+    footer_tile = None
+    if footer:
+        footer_tile = text_rgba(footer, font(FR, 34), fill=(120, 126, 140, 255))
+    _note_prim("objectives_slide")
+    for tile, cx, cy, at, is_title in items:
+        _note_box("objectives-title" if is_title else "objectives-lo", "",
+                  (cx - tile.width / 2, cy - tile.height / 2,
+                   cx + tile.width / 2, cy + tile.height / 2), at, dur)
+    if footer_tile:
+        _note_box("objectives-footer", footer,
+                  (px(90), H - px(140), px(90) + footer_tile.width,
+                   H - px(140) + footer_tile.height), 0, dur)
+
+    def frame(t):
+        canvas = Image.fromarray(base.copy()).convert("RGBA")
+        if bg_img:
+            panel = Image.new("RGBA", (W - px(64), H - px(180)), (8, 10, 16, 148))
+            pd = ImageDraw.Draw(panel, "RGBA")
+            pd.rounded_rectangle([0, 0, panel.width - 1, panel.height - 1],
+                                 radius=px(32), outline=(255, 255, 255, 40), width=px(3))
+            canvas.alpha_composite(panel, (px(32), px(90)))
+        for tile, cx, cy, at, is_title in items:
+            if t < at:
+                continue
+            s = ease_out_back((t - at) / 0.45)
+            a = min(1, (t - at) / 0.25)
+            tw, th = max(1, int(tile.width * s)), max(1, int(tile.height * s))
+            fg = tile.resize((tw, th), Image.LANCZOS)
+            if a < 1:
+                alpha = fg.split()[3].point(lambda v: int(v * a))
+                fg.putalpha(alpha)
+            canvas.alpha_composite(fg, (int(cx - tw / 2), int(cy - th / 2)))
+        if footer_tile:
+            canvas.alpha_composite(footer_tile, (px(90), H - px(140)))
+        return np.asarray(canvas.convert("RGB"))
+
+    return VideoClip(frame, duration=dur)
+
+
 def title_card(text, dur, sub=None, bg_img=None, darken=70):
     """Text card over an image (darkened) or flat background."""
     img = Image.fromarray(

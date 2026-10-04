@@ -153,6 +153,23 @@
    }
   },
   {
+   "id": "s1b-objectives",
+   "purpose": "context",
+   "narration": {
+    "voice": "host",
+    "text": "[beat]By the end of this lesson, you will be able to do three things. [emphasis]One:[/emphasis] summarize Sepúlveda's argument, that some peoples are slaves by nature. [emphasis]Two:[/emphasis] explain Las Casas's defense of Indigenous peoples, and his own tragic irony. [emphasis]Three:[/emphasis] evaluate why the debate changed little on the ground, yet mattered for the history of rights."
+   },
+   "visual": {},
+   "animation": {
+    "type": "objectives",
+    "title": "BY THE END OF THIS LESSON"
+   },
+   "transition": {
+    "type": "hard_cut",
+    "duration": 0.2
+   }
+  },
+  {
    "animation": {
     "pan_x": 0.5,
     "pan_y": 0.5,
@@ -246,7 +263,10 @@
      "pick": 0,
      "min_width": 800
     }
-   }
+   },
+   "covers_los": [
+    1
+   ]
   },
   {
    "animation": {
@@ -264,6 +284,14 @@
      "type": "label",
      "x": 0.5,
      "y": 0.25
+    },
+    {
+     "type": "label",
+     "cue": "We bring them law",
+     "text": "✓ 1. SEPÚLVEDA'S CASE",
+     "x": 0.5,
+     "y": 0.85,
+     "duration": 4
     }
    ],
    "id": "s2b-split",
@@ -294,7 +322,10 @@
      "provider": "command",
      "license_note": "Composite of public-domain images (pipeline search + local composite)"
     }
-   }
+   },
+   "covers_los": [
+    1
+   ]
   },
   {
    "animation": {
@@ -355,7 +386,10 @@
      "provider": "command",
      "license_note": "Composite of public-domain images (pipeline search + local composite)"
     }
-   }
+   },
+   "covers_los": [
+    2
+   ]
   },
   {
    "animation": {
@@ -413,7 +447,10 @@
      "pick": 1,
      "min_width": 800
     }
-   }
+   },
+   "covers_los": [
+    2
+   ]
   },
   {
    "animation": {
@@ -431,6 +468,14 @@
      "type": "label",
      "x": 0.5,
      "y": 0.93
+    },
+    {
+     "type": "label",
+     "cue": "Spanish cruelty",
+     "text": "✓ 2. LAS CASAS'S DEFENSE",
+     "x": 0.5,
+     "y": 0.85,
+     "duration": 4
     }
    ],
    "device": "annotate",
@@ -479,7 +524,10 @@
      "pick": 0,
      "min_width": 800
     }
-   }
+   },
+   "covers_los": [
+    2
+   ]
   },
   {
    "animation": {
@@ -570,7 +618,10 @@
      "pick": 2,
      "min_width": 800
     }
-   }
+   },
+   "covers_los": [
+    2
+   ]
   },
   {
    "animation": {
@@ -612,7 +663,10 @@
      "pick": 0,
      "min_width": 800
     }
-   }
+   },
+   "covers_los": [
+    3
+   ]
   },
   {
    "animation": {
@@ -670,7 +724,10 @@
      "pick": 3,
      "min_width": 800
     }
-   }
+   },
+   "covers_los": [
+    3
+   ]
   },
   {
    "animation": {
@@ -724,7 +781,11 @@
      "pick": 0,
      "min_width": 800
     }
-   }
+   },
+   "covers_los": [
+    2,
+    3
+   ]
   },
   {
    "animation": {
@@ -780,7 +841,20 @@
      "pick": 2,
      "min_width": 800
     }
-   }
+   },
+   "covers_los": [
+    3
+   ],
+   "beats": [
+    {
+     "type": "label",
+     "cue": "that room",
+     "text": "✓ 3. WHY IT MATTERED",
+     "x": 0.5,
+     "y": 0.85,
+     "duration": 4
+    }
+   ]
   }
  ],
  "schema_version": 1,

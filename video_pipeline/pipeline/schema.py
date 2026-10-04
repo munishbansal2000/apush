@@ -10,6 +10,7 @@ ANIMATION_TYPES = {
     "auto", "title", "ken_burns", "zoom", "camera_path", "callout",
     "timeline", "bullets", "typewriter", "map", "counter", "versus",
     "wipe", "ai_clip", "parallax", "source_analysis", "diagram",
+    "objectives",
 }
 
 ROOT_KEYS = {"schema_version", "course_id", "unit_id", "chapter_id", "lesson_id", "title", "description", "essential_question", "learning_objectives", "key_terms", "ap_alignment", "presentation", "music", "output", "tts", "generation", "clip_generation", "still_generation", "video", "scenes", "transition_scheme"}
@@ -20,7 +21,7 @@ CLIP_GEN_KEYS = {"provider", "cookie", "browser", "lib_dir", "timeout_seconds", 
 STILL_GEN_KEYS = {"provider", "fallback_provider", "search_provider", "media_bin", "image_search_bin", "command", "timeout_seconds", "orientation", "image_output_format"}
 STILL_KEYS = {"prompt", "provider", "fallback_provider", "seed", "edit_of", "edit_prompt", "orientation", "license_note"}
 SEARCH_KEYS = {"query", "page_title", "provider", "pick", "min_width", "license", "sha256"}
-SCENE_KEYS = {"id", "purpose", "narration", "visual", "animation", "beats", "audio", "transition", "min_duration", "topics", "on_screen_text", "source", "production_notes", "device", "device_params"}
+SCENE_KEYS = {"id", "purpose", "narration", "visual", "animation", "beats", "audio", "transition", "min_duration", "topics", "on_screen_text", "source", "production_notes", "device", "device_params", "covers_los"}
 NARRATION_KEYS = {"text", "voice", "reference_audio", "reference_text", "settings"}
 VISUAL_KEYS = {"base_image", "secondary_image", "clip", "layers", "still", "search"}
 ALIGNMENT_KEYS = {"period", "topics", "themes", "skills"}
@@ -37,6 +38,7 @@ ANIMATION_KEYS = {
     "callout": COMMON_ANIMATION_KEYS | {"points"},
     "timeline": COMMON_ANIMATION_KEYS | {"events"},
     "bullets": COMMON_ANIMATION_KEYS | {"bullets", "footer", "stagger"},
+    "objectives": COMMON_ANIMATION_KEYS | {"los", "footer", "stagger"},
     "typewriter": COMMON_ANIMATION_KEYS | {"text"},
     "map": COMMON_ANIMATION_KEYS | {"moves"},
     "counter": COMMON_ANIMATION_KEYS | {"target", "label", "prefix", "suffix", "start", "decimals", "at"},
@@ -223,6 +225,13 @@ def validate_animation(animation: Any, where: str, generated: bool = False) -> N
         bullets = spec.get("bullets")
         if not isinstance(bullets, list) or not 1 <= len(bullets) <= 6 or not all(isinstance(x, str) and x.strip() for x in bullets):
             raise PipelineError(f"{where}.bullets must contain 1-6 non-empty strings")
+    if kind == "objectives":
+        # los is optional: when absent the renderer falls back to the
+        # manifest's learning_objectives. When present it must be 1-6 strings.
+        if "los" in spec:
+            los = spec["los"]
+            if not isinstance(los, list) or not 1 <= len(los) <= 6 or not all(isinstance(x, str) and x.strip() for x in los):
+                raise PipelineError(f"{where}.los must contain 1-6 non-empty strings")
     if kind == "counter":
         _required(spec, {"target", "label"}, where)
         _number(spec["target"], f"{where}.target")
@@ -531,6 +540,14 @@ def validate_manifest(data: Any, path: Path, repo_root: Path,
                 raise PipelineError(f"{where}.device_params requires device")
         if "device" in scene:
             _validate_device(scene["device"], scene.get("device_params", {}), where)
+        # covers_los: 1-based indices into the manifest's learning_objectives.
+        # Range-checked here; the lo_traceability gate enforces full coverage.
+        if "covers_los" in scene:
+            los = scene["covers_los"]
+            if not isinstance(los, list) or not los or not all(isinstance(x, int) and not isinstance(x, bool) and x >= 1 for x in los):
+                raise PipelineError(f"{where}.covers_los must be a non-empty array of 1-based LO indices")
+            if len(set(los)) != len(los):
+                raise PipelineError(f"{where}.covers_los contains duplicate LO indices")
         narration = _obj(scene["narration"], f"{where}.narration")
         _keys(narration, NARRATION_KEYS, f"{where}.narration")
         _required(narration, {"text"}, f"{where}.narration")
@@ -611,7 +628,7 @@ def validate_manifest(data: Any, path: Path, repo_root: Path,
                 raise PipelineError(f"{layer_where}.entrance is not supported")
         validate_animation(scene["animation"], f"{where}.animation")
         kind = scene["animation"]["type"]
-        if kind not in {"title", "bullets", "typewriter"} and "base_image" not in visual:
+        if kind not in {"title", "bullets", "typewriter", "objectives"} and "base_image" not in visual:
             raise PipelineError(f"{where}.visual.base_image is required for {kind}")
         if kind in {"versus", "wipe"} and "secondary_image" not in visual:
             raise PipelineError(f"{where}.visual.secondary_image is required for {kind}")

@@ -12,7 +12,7 @@ from .common import PipelineError
 from .schema import validate_animation
 
 SYSTEM = """You are an APUSH educational video motion director. Return JSON only.
-Choose one supported animation type and parameters that clarify the supplied narration using the supplied base image. Do not invent historical facts or add people, quotations, or symbols. Supported types: ken_burns, zoom, camera_path, callout, timeline, bullets, typewriter, map, counter, source_analysis, diagram. Use normalized coordinates from 0 to 1. source_analysis requires highlights containing box, label, and at. diagram requires 2-8 labeled nodes with ids/x/y/at and edges whose from/to values reference those ids. Keep on-screen copy brief, analytical, historically neutral, and readable in a vertical frame."""
+Choose one supported animation type and parameters that clarify the supplied narration using the supplied base image. Do not invent historical facts or add people, quotations, or symbols. Supported types: ken_burns, zoom, camera_path, callout, timeline, bullets, objectives, typewriter, map, counter, source_analysis, diagram. Use normalized coordinates from 0 to 1. source_analysis requires highlights containing box, label, and at. diagram requires 2-8 labeled nodes with ids/x/y/at and edges whose from/to values reference those ids. Keep on-screen copy brief, analytical, historically neutral, and readable in a vertical frame."""
 
 
 def _extract_json(text: str) -> dict:

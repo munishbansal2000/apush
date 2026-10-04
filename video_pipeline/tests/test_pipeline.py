@@ -30,6 +30,7 @@ class ManifestTests(unittest.TestCase):
             "lesson_id": "test-lesson",
             "title": "Test",
             "output": "out.mp4",
+            "learning_objectives": ["First objective."],
             "tts": {
                 "server_url": "http://127.0.0.1:8123",
                 "reference_audio": "voice.wav",
@@ -39,7 +40,8 @@ class ManifestTests(unittest.TestCase):
                 "id": "intro",
                 "narration": {"text": "This is valid narration."},
                 "visual": {"base_image": "image.jpg"},
-                "animation": {"type": "zoom", "cx": 0.5, "cy": 0.5}
+                "animation": {"type": "zoom", "cx": 0.5, "cy": 0.5},
+                "covers_los": [1],
             }]
         }
 

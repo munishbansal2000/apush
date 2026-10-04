@@ -2,12 +2,29 @@
 
 Complete Unit 1 lessons, exported as single runnable manifests. Each one
 passed every hard gate (cue integrity, direction tags, TTS text, text quantity,
-license/catalog, prompt↔image coherence, animation variety, text-layout
-collision check) before export.
+license/catalog, prompt↔image coherence, animation variety, learning-objective
+traceability, text-layout collision check) before export.
 
-- `u1-ch1-l1-native-societies.json` — Native Societies (4 scenes)
-- `u1-ch2-l4-500-men.json` — How 500 Men Toppled an Empire (10 scenes)
-- `u1-ch3-l8-valladolid-debate.json` — Valladolid Debate, two-person cast (4 scenes)
+- `u1-ch1-l1-native-societies.json` — Native Societies (5 scenes)
+- `u1-ch2-l4-500-men.json` — How 500 Men Toppled an Empire (11 scenes)
+- `u1-ch3-l8-valladolid-debate.json` — Valladolid Debate, two-person cast (12 scenes)
+
+## Lesson shape: Hook → Thread → Landing
+
+Every lesson follows the same arc, enforced by the `lo_traceability` hard gate:
+
+1. **Hook** — s1 opens with the `hook` device: a question, paradox, or cold-open
+   the lesson will answer.
+2. **Objectives slide** — the `objectives` animation presents the lesson's 2–4
+   learning objectives as a moving slide ("BY THE END OF THIS LESSON") with
+   staggered numbered entrance. This is the promise.
+3. **Thread** — every scene that teaches an objective declares `covers_los`
+   (1-based LO indices); a ✓ beat stamps each objective as it lands.
+4. **Landing** — the closing / exam card maps 1:1 back to the objectives.
+
+The gate fails closed: `learning_objectives` must be non-empty, every
+`covers_los` entry must be a valid LO index, and every LO must be covered by
+at least one scene.
 
 ## How these differ from the curricula
 

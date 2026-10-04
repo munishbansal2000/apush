@@ -181,6 +181,12 @@ def text_quantity(manifest: dict) -> None:
                 raise PipelineError(
                     f"{lid}/{sid}: bullet[{index}] has {_word_count(bullet)} words "
                     f"(>12); shorten it: {str(bullet)[:80]!r}")
+        objectives_los = (scene.get("animation", {}) or {}).get("los", []) or []
+        for index, lo in enumerate(objectives_los):
+            if _word_count(lo) > 12:
+                raise PipelineError(
+                    f"{lid}/{sid}: objectives los[{index}] has {_word_count(lo)} words "
+                    f"(>12); shorten it: {str(lo)[:80]!r}")
 
 
 # ---------------------------------------------------------------------------
@@ -333,6 +339,38 @@ def variety(manifest: dict) -> None:
 
 
 # ---------------------------------------------------------------------------
+# gate 8: learning-objective traceability
+# ---------------------------------------------------------------------------
+
+def lo_traceability(manifest: dict) -> None:
+    """Learning objectives must be traceable through the lesson: the manifest
+    declares learning_objectives, every scene that teaches one declares
+    covers_los (1-based LO indices), and every LO is covered by at least one
+    scene. An objective nobody teaches is a broken promise."""
+    lid = _lid(manifest)
+    los = manifest.get("learning_objectives", []) or []
+    if not isinstance(los, list) or not los:
+        raise PipelineError(
+            f"{lid}: manifest.learning_objectives is missing or empty; every "
+            f"lesson must declare 2-4 learning objectives")
+    n = len(los)
+    covered: set[int] = set()
+    for scene in _scenes(manifest):
+        sid = scene.get("id", "<unknown scene>")
+        for lo in scene.get("covers_los", []) or []:
+            if not isinstance(lo, int) or isinstance(lo, bool) or not 1 <= lo <= n:
+                raise PipelineError(
+                    f"{lid}/{sid}: covers_los entry {lo!r} is not a valid "
+                    f"1-based LO index (lesson has {n} objectives)")
+            covered.add(lo)
+    missing = [i for i in range(1, n + 1) if i not in covered]
+    if missing:
+        raise PipelineError(
+            f"{lid}: learning objectives {missing} are covered by no scene; "
+            f"add covers_los to the scenes that teach them")
+
+
+# ---------------------------------------------------------------------------
 # direction tags
 # ---------------------------------------------------------------------------
 
@@ -379,3 +417,4 @@ def run_all_gates(manifest: dict, manifest_path: Path, repo_root: Path) -> None:
     prompt_subject_coherence(manifest, manifest_path, repo_root)
     spec_parity(manifest)
     variety(manifest)
+    lo_traceability(manifest)

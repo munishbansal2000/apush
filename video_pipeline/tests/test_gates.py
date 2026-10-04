@@ -12,6 +12,7 @@ from pipeline.gates import (
     cue_integrity,
     iter_cues,
     license_gate,
+    lo_traceability,
     prompt_subject_coherence,
     run_all_gates,
     spec_parity,
@@ -43,7 +44,8 @@ FIXED_L10_PROMPT = NEW_L10_PROMPT.replace(
 
 
 def scene(sid="s1", narration="A plain narration with [beat] simple words.",
-          animation=None, beats=(), audio=None, visual=None, transition=None):
+          animation=None, beats=(), audio=None, visual=None, transition=None,
+          covers_los=None):
     out = {
         "id": sid,
         "narration": {"text": narration},
@@ -55,11 +57,14 @@ def scene(sid="s1", narration="A plain narration with [beat] simple words.",
         out["audio"] = audio
     if transition is not None:
         out["transition"] = transition
+    if covers_los is not None:
+        out["covers_los"] = covers_los
     return out
 
 
 def lesson(scenes, lesson_id="test-lesson", presentation=None):
     manifest = {"lesson_id": lesson_id, "title": "Test lesson",
+                "learning_objectives": ["First objective.", "Second objective."],
                 "scenes": list(scenes)}
     if presentation is not None:
         manifest["presentation"] = presentation
@@ -257,6 +262,26 @@ class VarietyTests(unittest.TestCase):
             variety(lesson(scenes))
 
 
+class LoTraceabilityTests(unittest.TestCase):
+    def test_missing_objectives_fails(self):
+        manifest = lesson([scene(covers_los=[1])])
+        del manifest["learning_objectives"]
+        with self.assertRaisesRegex(PipelineError, "learning_objectives.*missing or empty"):
+            lo_traceability(manifest)
+
+    def test_uncovered_objective_fails(self):
+        with self.assertRaisesRegex(PipelineError, "covered by no scene"):
+            lo_traceability(lesson([scene(covers_los=[1])]))
+
+    def test_invalid_lo_index_fails(self):
+        with self.assertRaisesRegex(PipelineError, "not a valid.*LO index"):
+            lo_traceability(lesson([scene(covers_los=[1, 3])]))
+
+    def test_fully_covered_passes(self):
+        lo_traceability(lesson([scene(sid="a", covers_los=[1]),
+                                scene(sid="b", covers_los=[2])]))  # no raise
+
+
 class RunAllGatesTests(unittest.TestCase):
     def manifest_path(self):
         return CURRICULA_DIR / "test-curriculum.json"
@@ -268,13 +293,16 @@ class RunAllGatesTests(unittest.TestCase):
                   visual={"base_image":
                           "../../assets/images/u1/saq-set-19-q3.jpg"},
                   beats=[{"type": "label", "cue": "simple words", "text": "OK"}],
-                  transition={"type": "dip_to_black"}),
+                  transition={"type": "dip_to_black"},
+                  covers_los=[1]),
             scene(sid="b", narration="Second scene with [beat] simple words.",
                   animation={"type": "bullets", "bullets": ["one", "two"]},
-                  transition={"type": "crossfade"}),
+                  transition={"type": "crossfade"},
+                  covers_los=[2]),
             scene(sid="c", narration="Third scene with [beat] simple words.",
                   animation={"type": "timeline", "events": []},
-                  transition={"type": "slide"}),
+                  transition={"type": "slide"},
+                  covers_los=[1, 2]),
         ]
         run_all_gates(lesson(scenes), self.manifest_path(), REPO)  # no raise
 
