@@ -13,7 +13,7 @@ as a static image (NLE).*
 
 ## At stake
 
-**AP Topics 1.3, 1.4** — why contact transformed three continents so
+**AP Topics 1.3, 1.4** — why contact transformed Europe and the Americas so
 unevenly: who paid, who profited.
 
 ## Outcome

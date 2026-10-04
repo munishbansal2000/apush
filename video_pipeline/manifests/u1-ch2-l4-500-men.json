@@ -67,6 +67,32 @@
   "transition_seconds": 0.2
  },
  "transition_scheme": "hard_cut",
+ "music": {
+  "background": "video_pipeline/music/papulina-lost-signal-coffee-371869.mp3",
+  "background_volume": 0.1,
+  "ducking": {
+   "enabled": true,
+   "threshold": 0.025,
+   "ratio": 10,
+   "attack_ms": 18,
+   "release_ms": 420
+  },
+  "fade_in_sec": 1.2,
+  "fade_out_sec": 2.0,
+  "intro": "video_pipeline/music/alex_kizenkov-stomps-and-claps-percussion-and-rhythm-141190.mp3",
+  "intro_volume": 0.2,
+  "intro_duration_sec": 2.4,
+  "outro": "video_pipeline/music/absounds-inspiring-acoustic-folk-music-255650.mp3",
+  "outro_volume": 0.18,
+  "outro_duration_sec": 4.0,
+  "chapter_change": "video_pipeline/music/alex_kizenkov-stomps-and-claps-percussion-and-rhythm-141190.mp3",
+  "chapter_change_volume": 0.16,
+  "chapter_change_duration_sec": 1.1,
+  "chapter_change_scene_ids": [
+   "s2a",
+   "s4a"
+  ]
+ },
  "tts": {
   "engine": "edge",
   "edge_voice": "en-US-GuyNeural",
@@ -108,7 +134,7 @@
    "id": "s1",
    "purpose": "hook",
    "narration": {
-    "text": "[solemn]In [date:1519], [es]Hernán Cortés[/es], a conquistador, a Spanish conqueror, landed on the coast of Mexico with five hundred soldiers. Sixteen horses. Fourteen cannons. The [es]Mexica[/es] Empire ruled millions of people from [es]Tenochtitlan[/es], a city larger than London. [beat] Two years later, the empire was gone. Five hundred men did that. How?",
+    "text": "In [date:1519], [es]Hernán Cortés[/es], a conquistador, a Spanish conqueror, landed on the coast of Mexico with five hundred soldiers. Sixteen horses. Fourteen cannons. The [es]Mexica[/es] Empire ruled millions of people from [es]Tenochtitlan[/es], a city larger than London. [beat] Two years later, the empire was gone. Five hundred men did that. How?",
     "voice": "host"
    },
    "visual": {
@@ -180,7 +206,7 @@
    "purpose": "context",
    "narration": {
     "voice": "host",
-    "text": "[beat]By the end of this lesson, you will be able to do three things. [emphasis]One:[/emphasis] explain why Spanish weapons alone cannot explain the fall of [es]Tenochtitlan[/es]. [emphasis]Two:[/emphasis] describe how smallpox and the [es]Tlaxcalan[/es] alliance decided the conquest. [emphasis]Three:[/emphasis] compare the falls of the [es]Mexica[/es] and Inca empires as one repeating pattern."
+    "text": "[beat]Three goals for this lesson. [emphasis]One:[/emphasis] explain why Spanish weapons alone cannot explain the fall of [es]Tenochtitlan[/es]. [emphasis]Two:[/emphasis] describe how smallpox and the [es]Tlaxcalan[/es] alliance decided the conquest. [emphasis]Three:[/emphasis] compare the falls of the [es]Mexica[/es] and Inca empires, eleven years apart, as one repeating pattern."
    },
    "visual": {},
    "animation": {
@@ -205,12 +231,13 @@
      "provider": "hatch-media",
      "prompt": "Armored horsemen with lances charging through warriors with spears and shields, dust and motion, a single frozen frame of a cavalry charge. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions.",
      "orientation": "landscape"
-    },
-    "clip": "video/ai_clips/cavalry-charge.mp4"
+    }
    },
    "animation": {
-    "type": "ai_clip",
-    "prompt": "Armored horsemen with lances charging through warriors with spears and shields, dust rising, an arquebusier firing a matchlock gun in the foreground, dynamic diagonal composition, 8 seconds, seamless loop. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
+    "type": "ken_burns",
+    "zoom": 0.06,
+    "pan_x": 0.5,
+    "pan_y": 0.5
    },
    "transition": {
     "type": "hard_cut",
@@ -234,11 +261,11 @@
     "OTUMBA · 1520"
    ],
    "source": {
-    "title": "Cavalry charge (AI video clip; AI still as base frame)",
+    "title": "Cavalry charge (AI still; video clip pending)",
     "license": "AI-generated",
-    "notes": "Clip generated on the 5090 via Meta UI/LTX; drop at video/ai_clips/cavalry-charge.mp4. The hatch-media still is the coherence anchor for the ai_clip gate. Fallbacks: AI still of the charge with slow push-in, then a de Bry archival cavalry plate via stills search."
+    "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt. The hatch-media still is the coherence anchor. The ai_clip generation spec is preserved in production_notes for the 5090 run; target path video/ai_clips/cavalry-charge.mp4."
    },
-   "production_notes": "The lesson's one burst of velocity; the 8s clip loops under the host setup. The steelman earns its energy here, deliberately, before the film takes it away.",
+   "production_notes": "The lesson's one burst of velocity; the steelman earns its energy here, deliberately, before the film takes it away in s2b. CLIP PENDING: generate on the 5090 via Meta UI/LTX at video/ai_clips/cavalry-charge.mp4 with prompt: armored horsemen with lances charging through warriors with spears and shields, dust rising, an arquebusier firing a matchlock gun in the foreground, dynamic diagonal composition, 8 seconds, seamless loop, in the style of a 16th-century copper engraving in the manner of Theodor de Bry (fine cross-hatching, allegorical composition, monochrome ink on aged paper; stylized, never photorealistic; no text). Until the clip lands, the still plays with a slow push-in.",
    "covers_los": [
     1
    ]
@@ -247,7 +274,7 @@
    "id": "s2b",
    "purpose": "evidence",
    "narration": {
-    "text": "[VOICE:cortes][fierce]They had never seen a horse. Never heard a gun. We were few, but we were thunder. [VOICE:host]So guns win? [beat] Not so fast. [es]Cortés[/es] had fourteen cannons. Fourteen. They took a minute to reload. And the [es]Mexica[/es] adapted. They stopped meeting the cavalry in open fields and fought where horses couldn't go. The weapons helped. But fourteen cannons don't topple an empire.",
+    "text": "[VOICE:cortes]They had never seen a horse. Never heard a gun. We were few, but we were thunder. [VOICE:host]So guns win? [beat] Not so fast. [es]Cortés[/es] had fourteen cannons. Fourteen. They took a minute to reload. And the [es]Mexica[/es] adapted. They stopped meeting the cavalry in open fields and fought where horses couldn't go. The weapons helped. But fourteen cannons don't topple an empire.",
     "voice": "host"
    },
    "visual": {
@@ -312,9 +339,9 @@
    "source": {
     "title": "De Bry cavalry engraving (archival, pipeline-fetched)",
     "license": "Public domain",
-    "notes": "Wikimedia Commons; fetched by the pipeline search spec. The frozen engraving after the moving clip is the film taking the steelman's energy away."
+    "notes": "Wikimedia Commons; fetched by the pipeline search spec. Role: illustration, a 1590s imagining of a cavalry charge, not eyewitness evidence of Otumba (1520). The frozen engraving after the moving charge is the film taking the steelman's energy away."
    },
-   "production_notes": "Reversal pivot on s2b; setup_scene s2a built the expectation. The impact effect is a placeholder for a distant gunshot SFX (low, 0.15). Cortés's [fierce] needs an Edge voice supporting the angry style; the TTS fallback de-styles gracefully if rejected.",
+   "production_notes": "Reversal pivot on s2b; setup_scene s2a built the expectation. The impact effect is a placeholder for a distant gunshot SFX (low, 0.15). Cortés's voice is dramatized from his letters home (see exam card footer); on Edge the anger lives in the DavisNeural voice shift and the words, not an emotion tag.",
    "covers_los": [
     1
    ]
@@ -323,7 +350,7 @@
    "id": "s3a",
    "purpose": "evidence",
    "narration": {
-    "text": "[solemn]Here's what the cannons can't explain. In the fall of [date:1520], smallpox tore through [es]Tenochtitlan[/es]. It killed the emperor [es]Cuitláhuac[/es] after eighty days on the throne. It killed warriors, priests, leaders, everyone who could organize a defense. [beat] A Franciscan friar named [es]Sahagún[/es] spent decades interviewing [es]Mexica[/es] survivors. He asked the survivors what the sickness was like. One of them told him.",
+    "text": "[pause:1]Here's what the cannons can't explain. In the fall of [date:1520], smallpox tore through [es]Tenochtitlan[/es]. It killed the emperor [es]Cuitláhuac[/es] after eighty days on the throne, and the warriors, priests, and leaders who could organize a defense. [beat] A Franciscan friar named [es]Sahagún[/es] spent decades interviewing [es]Mexica[/es] survivors, and one account survives, a close paraphrase in a Mexica voice.",
     "voice": "host"
    },
    "visual": {
@@ -375,7 +402,7 @@
     "license": "AI-generated",
     "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt."
    },
-   "production_notes": "Locked frame: stillness as the statement. Score drops out entirely; the dismantling plays dry.",
+   "production_notes": "Locked frame: stillness as the statement. The bed ducks low under the testimony; the dismantling plays almost dry.",
    "covers_los": [
     2
    ]
@@ -384,7 +411,7 @@
    "id": "s3b",
    "purpose": "evidence",
    "narration": {
-    "text": "[VOICE:witness][solemn]The sores covered us, head to foot. We could not walk, could not move. We lay starving in our houses. There was no one left to care for us, no one left to bury the dead, no one left to fight.",
+    "text": "[VOICE:witness][pause:1]The sores covered us, head to foot. We could not walk, could not move. We lay starving in our houses. There was no one left to care for us, no one left to bury the dead, no one left to fight.",
     "voice": "witness"
    },
    "visual": {
@@ -522,7 +549,7 @@
    "source": {
     "title": "Lienzo de Tlaxcala (Tlaxcalan pictorial account, c. 1550s)",
     "license": "Public domain",
-    "notes": "Wikimedia Commons; fetched by the pipeline search spec (PD-only filter). The ideal Mesolore digital facsimile is CC BY 4.0 and incompatible with the pipeline's public-domain-only filter; if the filter widens, prefer it and attribute Mesolore."
+    "notes": "Wikimedia Commons; fetched by the pipeline search spec (PD-only filter). Role: evidence, the Tlaxcalans' own mid-16th-century pictorial history of the conquest, an Indigenous primary source. The ideal Mesolore digital facsimile is CC BY 4.0 and incompatible with the pipeline's public-domain-only filter; if the filter widens, prefer it and attribute Mesolore."
    },
    "production_notes": "The allies telling their side. Telestrator callouts draw on the freeze; coordinates are normalized 0-1 and must be tuned against the actual picked panel at animatic stage.",
    "covers_los": [
@@ -533,7 +560,7 @@
    "id": "s4a",
    "purpose": "comparison",
    "narration": {
-    "text": "In Peru, eleven years later, [es]Francisco Pizarro[/es] ran the same play on an empire already broken. Smallpox had killed the Inca emperor [es]Huayna Capac[/es] around [date:1527], years before [es]Pizarro[/es] arrived. The disease outran him. [es]Huayna Capac[/es]'s sons, [es]Huáscar[/es] and [es]Atahualpa[/es], then fought a brutal war of succession, brother against brother. [es]Atahualpa[/es] won, but the empire was bleeding when [es]Pizarro[/es] walked in. [beat] At [es]Cajamarca[/es], in [date:1532], [es]Pizarro[/es]'s hundred and sixty-eight men seized the emperor [es]Atahualpa[/es] in the town square.",
+    "text": "In Peru, eleven years later, [es]Francisco Pizarro[/es] landed with even fewer men. [pause:1] Your prediction: what wins in Peru? Spanish guns, or the same quiet killers? [beat] The disease outran him. Smallpox had killed the Inca emperor [es]Huayna Capac[/es] around [date:1527], years before [es]Pizarro[/es] arrived. [es]Huayna Capac[/es]'s sons, [es]Huáscar[/es] and [es]Atahualpa[/es], then fought a brutal war of succession. [es]Atahualpa[/es] won, but the empire was bleeding when [es]Pizarro[/es] walked in. [beat] At [es]Cajamarca[/es], in [date:1532], [es]Pizarro[/es]'s hundred and sixty-eight men seized the emperor [es]Atahualpa[/es] in the town square.",
     "voice": "host"
    },
    "visual": {
@@ -644,7 +671,7 @@
    "source": {
     "title": "Seizure of Atahualpa at Cajamarca, engraving after J.M. Moreau le Jeune (c. 1760-1810)",
     "license": "Public domain",
-    "notes": "Wikimedia Commons, LoC LCCN98519205; pinned by exact page_title."
+    "notes": "Wikimedia Commons, LoC LCCN98519205; pinned by exact page_title. Role: later interpretation, an 18th-century engraving imagining Cajamarca (1532), not eyewitness evidence."
    },
    "production_notes": "Locked frame on the engraving. Lock off for the closing line; hold. Let it sit.",
    "covers_los": [
@@ -655,7 +682,7 @@
    "id": "s5",
    "purpose": "recap",
    "narration": {
-    "text": "So here's the playbook. Turn the empire's enemies into your army. Cut off the head. Let disease do the rest. [beat] Guns helped, but they were the smallest part of the answer. [2s pause] So who conquered Mexico? [es]Cortés[/es] gave the orders. [2s pause] Everyone else did the conquering.",
+    "text": "So here's the playbook. Turn the empire's enemies into your army. Cut off the head. Let disease do the rest. [beat] Guns helped, but they were the smallest part of the answer. [pause:2] So who conquered Mexico? [es]Cortés[/es] gave the orders. [pause:2] Everyone else did the conquering.",
     "voice": "host"
    },
    "visual": {

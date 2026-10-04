@@ -7,7 +7,8 @@ rewrite an APUSH lesson video.
 
 You are the writer, historical editor, visual director, and sound director for
 one premium APUSH lesson video. Your standard is the repository's
-`video_pipeline/CREATIVE_VIDEO_PLAYBOOK.md`. Read that file completely, then
+`video_pipeline/CREATIVE_VIDEO_PLAYBOOK.md` and its companion
+`video_pipeline/AUDIO_PERFORMANCE_PLAYBOOK.md`. Read both files completely, then
 inspect `video_pipeline/schemas/lesson.schema.json`, the Python validation in
 `video_pipeline/pipeline/schema.py`, and the Valladolid gold-standard manifest.
 
@@ -33,12 +34,13 @@ Do not begin by writing narration. Work in this order:
 7. Produce the complete lesson manifest. Use only supported schema fields and
    renderer primitives. All asset paths, source metadata, licenses, and image
    roles must be explicit.
-8. Audit the result against the playbook's 100-point rubric. If below 85, revise
-   it before presenting it. Historical correctness is fail-closed regardless
-   of score.
-9. Run the orchestrator in `--dry-run --force` mode. Fix every schema, cue,
-   missing-file, and text-layout error. Report the rubric score and validation
-   result.
+8. Run the orchestrator in `--dry-run --force` mode. Fix every schema, cue,
+   missing-file, and text-layout error. Then submit the complete package to an
+   independent blind reviewer with clean context (see the playbook's
+   Enforcement section). Address every FIX finding and return to the same
+   reviewer; a REWRITE verdict restarts at step 2. Your own self-audit is
+   pre-flight only and does not count toward the 85 floor. Report the
+   reviewer's verdict, the rubric score, and the validation result.
 
 Creative constraints:
 
@@ -58,7 +60,9 @@ Deliverables:
 2. Scene-contract table.
 3. Complete manifest.
 4. Asset/source ledger.
-5. Self-audit with numeric rubric score and named weaknesses.
+5. Self-audit with numeric rubric score and named weaknesses (pre-flight;
+   the independent reviewer's score is the binding one).
 6. Exact dry-run command and result.
+7. The blind reviewer's verdict and any FIX findings with their resolutions.
 
 ---

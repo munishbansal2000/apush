@@ -6,7 +6,7 @@ from pathlib import Path
 import numpy as np
 from PIL import Image
 
-from .common import PipelineError
+from .common import PipelineError, resolve_local
 from .timing import resolve_scene_timing
 
 
@@ -43,6 +43,24 @@ def validate_text_layout(manifest: dict, manifest_path: Path,
             duration = ((durations or {}).get(scene["id"], _duration(scene)))
             scene = resolve_scene_timing(
                 scene, duration, (alignments or {}).get(scene["id"]))
+            # A dry-run (or a fresh checkout) plans stills without generating
+            # them; the file gate already exempts base images with a
+            # still/search spec. Skip layout for scenes whose images do not
+            # exist yet instead of crashing the validator.
+            visual = scene.get("visual", {})
+            missing = [
+                key for key in ("base_image", "secondary_image")
+                if key in visual
+                and not resolve_local(
+                    visual[key], manifest_path.parent, repo_root).is_file()
+            ]
+            if missing and scene["animation"]["type"] != "ai_clip":
+                scene_reports.append({
+                    "scene_id": scene["id"], "estimated_duration": duration,
+                    "text_elements": [], "collisions": [],
+                    "skipped": "image not generated yet: " + ", ".join(missing),
+                })
+                continue
             clip = None
             with motion.PlanRecorder() as recorder:
                 if scene["animation"]["type"] == "ai_clip":

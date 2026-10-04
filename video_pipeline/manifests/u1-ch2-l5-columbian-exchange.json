@@ -1,795 +1,795 @@
 {
-  "schema_version": 1,
-  "lesson_id": "u1-ch2-l5-columbian-exchange",
-  "course_id": "apush",
-  "unit_id": "u1",
-  "chapter_id": "ch2",
-  "title": "The Exchange, Both Ways",
-  "description": "Contact connected ecosystems separated for thousands of years: crops, animals, and diseases flowed in both directions, with growth on one side and catastrophe on the other.",
-  "essential_question": "Why did the same exchange produce growth and catastrophe at once?",
-  "learning_objectives": [
-    "List the major crops, animals, and diseases that crossed the Atlantic in each direction.",
-    "Explain how American crops supported population growth in Afro-Eurasia.",
-    "Use causation and comparison to weigh the exchange's unequal effects."
-  ],
-  "key_terms": [
-    {
-      "term": "Columbian Exchange",
-      "definition": "The transfer of plants, animals, diseases, people, and ideas between the Eastern and Western Hemispheres after 1492."
-    },
-    {
-      "term": "population boom",
-      "definition": "Rapid population growth in Afro-Eurasia supported in part by calorie-rich American crops."
-    },
-    {
-      "term": "epidemic disease",
-      "definition": "Outbreaks of Afro-Eurasian diseases that caused catastrophic Indigenous mortality in the Americas."
-    }
-  ],
-  "ap_alignment": {
-    "topics": [
-      "1.4"
-    ],
-    "skills": [
-      "Causation",
-      "Comparison",
-      "Continuity and Change"
-    ],
-    "period": "Period 1",
-    "themes": [
-      "Work, Exchange, and Technology",
-      "Geography and the Environment"
-    ]
+ "schema_version": 1,
+ "lesson_id": "u1-ch2-l5-columbian-exchange",
+ "course_id": "apush",
+ "unit_id": "u1",
+ "chapter_id": "ch2",
+ "title": "The Exchange, Both Ways",
+ "description": "Contact connected ecosystems separated for thousands of years: crops, animals, and diseases flowed in both directions, with growth on one side and catastrophe on the other.",
+ "essential_question": "Why did the same exchange produce growth and catastrophe at once?",
+ "learning_objectives": [
+  "List the major crops, animals, and diseases that crossed the Atlantic in each direction.",
+  "Explain how American crops supported population growth in Afro-Eurasia.",
+  "Use causation and comparison to weigh the exchange's unequal effects."
+ ],
+ "key_terms": [
+  {
+   "term": "Columbian Exchange",
+   "definition": "The transfer of plants, animals, diseases, people, and ideas between the Eastern and Western Hemispheres after 1492."
   },
-  "tts": {
-    "engine": "edge",
+  {
+   "term": "population boom",
+   "definition": "Rapid population growth in Afro-Eurasia supported in part by calorie-rich American crops."
+  },
+  {
+   "term": "epidemic disease",
+   "definition": "Outbreaks of Afro-Eurasian diseases that caused catastrophic Indigenous mortality in the Americas."
+  }
+ ],
+ "ap_alignment": {
+  "topics": [
+   "1.4"
+  ],
+  "skills": [
+   "Causation",
+   "Comparison",
+   "Continuity and Change"
+  ],
+  "period": "Period 1",
+  "themes": [
+   "Work, Exchange, and Technology",
+   "Geography and the Environment"
+  ]
+ },
+ "tts": {
+  "engine": "edge",
+  "edge_voice": "en-US-GuyNeural",
+  "edge_rate": "+2%",
+  "edge_pitch": "+0Hz",
+  "voices": {
+   "host": {
     "edge_voice": "en-US-GuyNeural",
     "edge_rate": "+2%",
-    "edge_pitch": "+0Hz",
-    "voices": {
-      "host": {
-        "edge_voice": "en-US-GuyNeural",
-        "edge_rate": "+2%",
-        "edge_pitch": "+0Hz"
-      },
-      "chronicler": {
-        "edge_voice": "en-US-DavisNeural",
-        "edge_rate": "+0%",
-        "edge_pitch": "-10Hz"
-      }
+    "edge_pitch": "+0Hz"
+   },
+   "chronicler": {
+    "edge_voice": "en-US-DavisNeural",
+    "edge_rate": "+0%",
+    "edge_pitch": "-10Hz"
+   }
+  }
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "transition_seconds": 0.2
+ },
+ "presentation": {
+  "audience": "APUSH students",
+  "branding": "APUSH Unit 1",
+  "tone": "a teacher talking to a smart 16-year-old; plain, spoken, concrete",
+  "visual_style": "engraving-documentary; stamps, serif/sans type grammar",
+  "captions": false
+ },
+ "transition_scheme": "hard_cut",
+ "generation": {
+  "provider": "none"
+ },
+ "clip_generation": {
+  "provider": "none"
+ },
+ "still_generation": {
+  "provider": "hatch-media",
+  "search_provider": "wikimedia",
+  "image_output_format": "webp",
+  "orientation": "landscape",
+  "timeout_seconds": 600
+ },
+ "output": "../../build/lesson-videos/u1-ch2-l5-columbian-exchange.mp4",
+ "scenes": [
+  {
+   "id": "s1",
+   "purpose": "hook",
+   "animation": {
+    "type": "ken_burns",
+    "zoom": 0.08,
+    "pan_x": 0.5,
+    "pan_y": 0.5
+   },
+   "narration": {
+    "voice": "host",
+    "text": "The potato is from Peru. Corn is from Mexico. The horse came from Spain, the pig from Europe, and smallpox came from ten thousand years of crowded cities. [beat] For most of human history, none of them had ever met. Then, in [date:1492], the ocean between them closed. What crossed it fed millions on one side of the Atlantic, and killed millions on the other. The same ships. Both ways. [pause:1] Historians call it the Columbian Exchange."
+   },
+   "visual": {
+    "base_image": "assets/images/u1-ch2-l5/harbor-exchange.webp",
+    "still": {
+     "orientation": "landscape",
+     "provider": "hatch-media",
+     "prompt": "Spanish galleons anchored off a Caribbean shore, longboats ferrying wooden crates of strange plants and caged animals between ship and beach, palm trees, distant hills. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
     }
-  },
-  "video": {
-    "width": 1080,
-    "height": 1920,
-    "fps": 30,
-    "transition_seconds": 0.2
-  },
-  "presentation": {
-    "audience": "APUSH students",
-    "branding": "APUSH Unit 1",
-    "tone": "a teacher talking to a smart 16-year-old; plain, spoken, concrete",
-    "visual_style": "engraving-documentary; stamps, serif/sans type grammar",
-    "captions": false
-  },
-  "transition_scheme": "hard_cut",
-  "generation": {
-    "provider": "none"
-  },
-  "clip_generation": {
-    "provider": "none"
-  },
-  "still_generation": {
-    "provider": "hatch-media",
-    "search_provider": "wikimedia",
-    "image_output_format": "webp",
-    "orientation": "landscape",
-    "timeout_seconds": 600
-  },
-  "output": "../../build/lesson-videos/u1-ch2-l5-columbian-exchange.mp4",
-  "scenes": [
+   },
+   "transition": {
+    "type": "hard_cut",
+    "duration": 0.2
+   },
+   "min_duration": 20,
+   "topics": [
+    "1.4"
+   ],
+   "beats": [
     {
-      "id": "s1",
-      "purpose": "hook",
-      "animation": {
-        "type": "ken_burns",
-        "zoom": 0.08,
-        "pan_x": 0.5,
-        "pan_y": 0.5
-      },
-      "narration": {
-        "voice": "host",
-        "text": "[solemn]The potato is from Peru. Corn is from Mexico. The horse came from Spain, the pig from Europe, and smallpox came from ten thousand years of crowded cities. [beat] For most of human history, none of them had ever met. Then, in [date:1492], the ocean between them closed. What crossed it fed millions on one side of the Atlantic, and killed millions on the other. The same ships. Both ways. [beat] Historians call it the Columbian Exchange."
-      },
-      "visual": {
-        "base_image": "assets/images/u1-ch2-l5/harbor-exchange.webp",
-        "still": {
-          "orientation": "landscape",
-          "provider": "hatch-media",
-          "prompt": "Spanish galleons anchored off a Caribbean shore, longboats ferrying wooden crates of strange plants and caged animals between ship and beach, palm trees, distant hills. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
-        }
-      },
-      "transition": {
-        "type": "hard_cut",
-        "duration": 0.2
-      },
-      "min_duration": 20,
-      "topics": [
-        "1.4"
-      ],
-      "beats": [
-        {
-          "type": "label",
-          "text": "1492",
-          "cue": "in [date:1492]",
-          "duration": 4,
-          "x": 0.12,
-          "y": 0.12
-        },
-        {
-          "type": "stamp",
-          "text": "TWO WORLDS, ONE OCEAN",
-          "cue": "The same ships.",
-          "duration": 5,
-          "x": 0.5,
-          "y": 0.5
-        },
-        {
-          "type": "label",
-          "text": "FED MILLIONS, KILLED MILLIONS",
-          "cue": "fed millions on one side",
-          "duration": 4,
-          "x": 0.5,
-          "y": 0.82
-        }
-      ],
-      "device": "hook",
-      "device_params": {
-        "hook_type": "contradiction",
-        "payoff_by_sec": 8.0
-      },
-      "production_notes": "Contradiction hook: foods that fed millions and germs that killed millions, same ships. Stamp 1 of 3 (TWO WORLDS, ONE OCEAN) is the lesson's framing. RUNTIME EXCEPTION granted 2026-10-04: 579w (~4:00) exceeds the 450-500 series-bible target but passes the 400-600 hard gate; blind reviewers judged the length earned by content. Not trimmed.",
-      "source": {
-        "title": "Harbor exchange (AI plate)",
-        "license": "AI-generated",
-        "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt."
-      },
-      "on_screen_text": [
-        "1492",
-        "TWO WORLDS, ONE OCEAN",
-        "FED MILLIONS, KILLED MILLIONS"
-      ],
-      "audio": {
-        "effects": [
-          {
-            "cue": "The same ships.",
-            "kind": "impact",
-            "volume": 0.15
-          }
-        ]
-      }
+     "type": "label",
+     "text": "1492",
+     "cue": "in [date:1492]",
+     "duration": 4,
+     "x": 0.12,
+     "y": 0.12
     },
     {
-      "id": "s1b-objectives",
-      "purpose": "context",
-      "animation": {
-        "type": "objectives",
-        "title": "BY THE END OF THIS LESSON"
-      },
-      "narration": {
-        "voice": "host",
-        "text": "[beat]By the end: [emphasis]One:[/emphasis] the crops, animals, and diseases that crossed in each direction. [emphasis]Two:[/emphasis] how American crops fed a growing Afro-Eurasia. [emphasis]Three:[/emphasis] weighing the exchange's unequal effects, the way the exam asks you to."
-      },
-      "visual": {},
-      "transition": {
-        "type": "hard_cut",
-        "duration": 0.2
-      },
-      "min_duration": 8,
-      "topics": [
-        "1.4"
-      ],
-      "production_notes": "The promise. Full LO wording on screen; the host reads the compressed version."
+     "type": "stamp",
+     "text": "TWO WORLDS, ONE OCEAN",
+     "cue": "The same ships.",
+     "duration": 5,
+     "x": 0.5,
+     "y": 0.5
     },
     {
-      "id": "s2a",
-      "purpose": "concept",
-      "animation": {
-        "type": "zoom",
-        "cx": 0.5,
-        "cy": 0.5,
-        "end_zoom": 1.06,
-        "zoom_duration": 12
-      },
-      "narration": {
-        "voice": "host",
-        "text": "Start with what sailed east, toward Europe. Maize, corn, the grain that had fed Mexico for thousands of years. The potato, dug from the Andes. Tomatoes, sweet potatoes, cacao, and tobacco. [beat] None of it existed in Europe. No Italian had ever tasted a tomato. No Irishman had ever seen a potato. Within a century, maize and tomatoes spread across southern Europe. The potato took longer. [beat] A Spanish observer, seeing these strange harvests for the first time, wrote home about them."
-      },
-      "visual": {
-        "base_image": "assets/images/u1-ch2-l5/fuchs-maize-1542.webp",
-        "search": {
-          "provider": "wikimedia",
-          "query": "Fuchs 1542 maize Turcicum frumentum woodcut",
-          "min_width": 1000,
-          "license": "public-domain"
-        }
-      },
-      "transition": {
-        "type": "hard_cut",
-        "duration": 0.2
-      },
-      "min_duration": 14,
-      "topics": [
-        "1.4"
-      ],
-      "beats": [
-        {
-          "type": "label",
-          "text": "EASTWARD: CROPS",
-          "cue": "sailed east",
-          "duration": 4,
-          "x": 0.5,
-          "y": 0.12
-        },
-        {
-          "type": "label",
-          "text": "MAIZE, POTATO, TOMATO, CACAO, TOBACCO",
-          "cue": "Tomatoes, sweet potatoes, cacao,",
-          "duration": 5,
-          "x": 0.5,
-          "y": 0.82
-        },
-        {
-          "type": "label",
-          "text": "MAIZE WOODCUT, 1542",
-          "cue": "wrote home about them",
-          "duration": 4,
-          "x": 0.5,
-          "y": 0.9
-        }
-      ],
-      "covers_los": [
-        1
-      ],
-      "production_notes": "Archival: intended plate is the Fuchs 1542 maize woodcut, one of the earliest printed European images of an American plant (De historia stirpium, Basel). Fallback if the Wikimedia search fails: AI plate per script prompt 2 (\"maize stalks with large ears and potato plants with exposed roots, botanical composition\") in the de Bry engraving manner, no text. Source caption dates it honestly on screen.",
-      "source": {
-        "title": "Maize woodcut, De historia stirpium (AI search fallback: American crops plate)",
-        "license": "Public domain",
-        "notes": "Wikimedia Commons search; intended: Leonhart Fuchs, 1542. Caption dates it honestly as 1542."
-      },
-      "on_screen_text": [
-        "EASTWARD: CROPS",
-        "MAIZE, POTATO, TOMATO, CACAO, TOBACCO",
-        "MAIZE WOODCUT, 1542"
-      ]
-    },
-    {
-      "id": "s2b",
-      "purpose": "evidence",
-      "animation": {
-        "type": "auto"
-      },
-      "narration": {
-        "voice": "chronicler",
-        "text": "[VOICE:chronicler][solemn]They have a grain called maize, tall as a man, with ears like golden clubs. And a root they roast in the ashes, plain as dirt and twice as common."
-      },
-      "visual": {
-        "base_image": "assets/images/u1-ch2-l5/fuchs-maize-1542.webp",
-        "search": {
-          "provider": "wikimedia",
-          "query": "Fuchs 1542 maize Turcicum frumentum woodcut",
-          "min_width": 1000,
-          "license": "public-domain"
-        }
-      },
-      "transition": {
-        "type": "hard_cut",
-        "duration": 0.2
-      },
-      "min_duration": 10,
-      "topics": [
-        "1.4"
-      ],
-      "beats": [
-        {
-          "type": "label",
-          "text": "SPANISH CHRONICLER, 1500s (DRAMATIZED)",
-          "cue": "grain called maize",
-          "duration": 10,
-          "x": 0.5,
-          "y": 0.85
-        }
-      ],
-      "covers_los": [
-        1
-      ],
-      "production_notes": "One voice, sourced on screen. Locked frame; the letter is read dry with slight room. The voice is dramatized (a plausible letter home), not a verbatim quote; the exam card carries the disclaimer. Reuses s2a's plate: one plate, two voices.",
-      "source": {
-        "title": "Fuchs maize (reused from s2a)",
-        "license": "Public domain",
-        "notes": "Same search output as s2a; the stills stage skips it because the file already exists."
-      },
-      "on_screen_text": [
-        "SPANISH CHRONICLER, 1500s (DRAMATIZED)"
-      ]
-    },
-    {
-      "id": "s2c",
-      "purpose": "evidence",
-      "animation": {
-        "type": "ken_burns",
-        "zoom": 0.06,
-        "pan_x": 0.45,
-        "pan_y": 0.55
-      },
-      "narration": {
-        "voice": "host",
-        "text": "Westward sailed a different cargo. Wheat, sugarcane, bananas. And animals Europe took for granted: horses, pigs, cattle, goats, chickens. [beat] The Americas had never seen any of them. Within decades, pigs were running wild in the forests, cattle were spreading across the grasslands, and the horse reached the Plains, where it turned hunters into the continent's great mounted powers."
-      },
-      "visual": {
-        "base_image": "assets/images/u1-ch2-l5/livestock-landing.webp",
-        "still": {
-          "orientation": "landscape",
-          "provider": "hatch-media",
-          "prompt": "Horses, pigs, and cattle being led down a wooden ship's ramp onto an American beach, crates of wheat sheaves and banana plants stacked nearby. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
-        }
-      },
-      "transition": {
-        "type": "hard_cut",
-        "duration": 0.2
-      },
-      "min_duration": 14,
-      "topics": [
-        "1.4"
-      ],
-      "beats": [
-        {
-          "type": "label",
-          "text": "WESTWARD: ANIMALS",
-          "cue": "Westward sailed",
-          "duration": 4,
-          "x": 0.5,
-          "y": 0.12
-        },
-        {
-          "type": "label",
-          "text": "HORSE, PIG, CATTLE",
-          "cue": "horses, pigs, cattle,",
-          "duration": 4,
-          "x": 0.5,
-          "y": 0.82
-        },
-        {
-          "type": "label",
-          "text": "THE HORSE REMAKES THE PLAINS",
-          "cue": "reached the Plains",
-          "duration": 5,
-          "x": 0.5,
-          "y": 0.18
-        }
-      ],
-      "covers_los": [
-        1
-      ],
-      "production_notes": "Fallback: the animals alone in engraving style, no ship. Hooves SFX under the livestock list (editor-side).",
-      "source": {
-        "title": "Livestock landing (AI plate)",
-        "license": "AI-generated",
-        "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt."
-      },
-      "on_screen_text": [
-        "WESTWARD: ANIMALS",
-        "HORSE, PIG, CATTLE",
-        "THE HORSE REMAKES THE PLAINS"
-      ]
-    },
-    {
-      "id": "s2d",
-      "purpose": "evidence",
-      "animation": {
-        "type": "zoom",
-        "cx": 0.5,
-        "cy": 0.5,
-        "end_zoom": 1.04,
-        "zoom_duration": 14
-      },
-      "narration": {
-        "voice": "host",
-        "text": "[solemn]And then the deadliest cargo. Smallpox, measles, influenza. Epidemic diseases born in the crowded cities and livestock pens of Afro-Eurasia, carried across the ocean in European bodies. [beat] Native peoples had no resistance. Whole villages died in weeks. Remember this: the main cause of the die-off was disease, not warfare. [beat] Even sickness traveled east. Sailors may even have carried syphilis back to Europe. The exchange went both ways, down to the germs."
-      },
-      "visual": {
-        "base_image": "assets/images/u1-ch2-l5/sickness-village.webp",
-        "still": {
-          "orientation": "landscape",
-          "provider": "hatch-media",
-          "prompt": "A Caribbean village struck by illness, figures resting in thatched huts, a galleon anchored offshore, solemn stillness, nothing graphic. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
-        }
-      },
-      "transition": {
-        "type": "hard_cut",
-        "duration": 0.2
-      },
-      "min_duration": 16,
-      "topics": [
-        "1.4"
-      ],
-      "beats": [
-        {
-          "type": "stamp",
-          "text": "THE DEADLIEST CARGO",
-          "cue": "deadliest cargo.",
-          "duration": 5,
-          "x": 0.5,
-          "y": 0.5
-        },
-        {
-          "type": "label",
-          "text": "DISEASE, NOT WARFARE",
-          "cue": "disease, not warfare.",
-          "duration": 4,
-          "x": 0.5,
-          "y": 0.82
-        },
-        {
-          "type": "label",
-          "text": "1. BOTH DIRECTIONS",
-          "cue": "both ways,",
-          "duration": 4,
-          "x": 0.5,
-          "y": 0.9
-        }
-      ],
-      "covers_los": [
-        1
-      ],
-      "production_notes": "Stamp 2 of 3 (THE DEADLIEST CARGO). Score drops out entirely at scene start; the dying plays dry. Fallback: the same village empty, no figures. The syphilis line follows Barron's Premium 2027; no stronger claim is made.",
-      "source": {
-        "title": "The sickness (AI plate)",
-        "license": "AI-generated",
-        "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt."
-      },
-      "on_screen_text": [
-        "THE DEADLIEST CARGO",
-        "DISEASE, NOT WARFARE",
-        "1. BOTH DIRECTIONS"
-      ],
-      "audio": {
-        "effects": [
-          {
-            "cue": "deadliest cargo.",
-            "kind": "impact",
-            "volume": 0.15
-          }
-        ]
-      }
-    },
-    {
-      "id": "s3a",
-      "purpose": "concept",
-      "animation": {
-        "type": "auto"
-      },
-      "narration": {
-        "voice": "host",
-        "text": "Now the question that matters. [beat] Look at this potato. Plain, ugly, dug from the dirt. Why did this root help feed a continent? [2s pause] Because it cheated. A field of potatoes could feed three times as many people as a field of wheat. And potatoes grew where wheat could not: ground too wet, too dry, too poor. [beat] Europe's peasants had always lived one bad harvest from hunger. The potato gave them a backup."
-      },
-      "visual": {
-        "base_image": "assets/images/u1-ch2-l5/potato-harvest.webp",
-        "still": {
-          "orientation": "landscape",
-          "provider": "hatch-media",
-          "prompt": "Peasants digging potatoes with simple tools, woven baskets overflowing with potatoes, field rows receding. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
-        }
-      },
-      "transition": {
-        "type": "hard_cut",
-        "duration": 0.2
-      },
-      "min_duration": 16,
-      "topics": [
-        "1.4"
-      ],
-      "beats": [
-        {
-          "type": "label",
-          "text": "WHY DID THIS ROOT FEED A CONTINENT?",
-          "cue": "Why did this root help feed a continent?",
-          "duration": 6,
-          "x": 0.5,
-          "y": 0.3
-        },
-        {
-          "type": "label",
-          "text": "3X THE CALORIES OF WHEAT",
-          "cue": "three times as many",
-          "duration": 4,
-          "x": 0.5,
-          "y": 0.82
-        },
-        {
-          "type": "label",
-          "text": "WHERE WHEAT FAILED",
-          "cue": "where wheat could not:",
-          "duration": 4,
-          "x": 0.5,
-          "y": 0.12
-        }
-      ],
-      "covers_los": [
-        2
-      ],
-      "device": "show_ask",
-      "device_params": {
-        "question": "Why did this root help feed a continent?",
-        "hold_sec": 2.0
-      },
-      "production_notes": "Show-and-ask: the potato sits under the spoken question with a full 2s silence before the answer. Silence under the question and hold; score returns on 'Because it cheated.' Fallback: close detail of potato plants and exposed tubers.",
-      "source": {
-        "title": "Potato harvest (AI plate)",
-        "license": "AI-generated",
-        "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt."
-      },
-      "on_screen_text": [
-        "WHY DID THIS ROOT FEED A CONTINENT?",
-        "3X THE CALORIES OF WHEAT",
-        "WHERE WHEAT FAILED"
-      ]
-    },
-    {
-      "id": "s3b",
-      "purpose": "evidence",
-      "animation": {
-        "type": "ken_burns",
-        "zoom": 0.07,
-        "pan_x": 0.5,
-        "pan_y": 0.4
-      },
-      "narration": {
-        "voice": "host",
-        "text": "Maize did the same work across southern Europe and Africa. Together, American crops saved millions in Afro-Eurasia from starvation, and the world's population rose after 1500. That population boom runs on American calories. [beat] More food, more people. That is the whole mechanism, and the exam will ask you for it."
-      },
-      "visual": {
-        "base_image": "assets/images/u1-ch2-l5/fed-village.webp",
-        "still": {
-          "orientation": "landscape",
-          "provider": "hatch-media",
-          "prompt": "A European village with potato fields in the foreground, a full granary and market stalls behind. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
-        }
-      },
-      "transition": {
-        "type": "hard_cut",
-        "duration": 0.2
-      },
-      "min_duration": 12,
-      "topics": [
-        "1.4"
-      ],
-      "beats": [
-        {
-          "type": "label",
-          "text": "2. CROPS FED A CONTINENT",
-          "cue": "saved millions",
-          "duration": 4,
-          "x": 0.5,
-          "y": 0.85
-        },
-        {
-          "type": "label",
-          "text": "POPULATION RISES AFTER 1500",
-          "cue": "population rose after 1500.",
-          "duration": 4,
-          "x": 0.5,
-          "y": 0.12
-        }
-      ],
-      "covers_los": [
-        2
-      ],
-      "production_notes": "Fallback: reuse the potato-harvest plate. The population claim follows the Crosby/OER tradition (3x wheat calories; millions saved from starvation); no unverified figures.",
-      "source": {
-        "title": "Fed village (AI plate)",
-        "license": "AI-generated",
-        "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt."
-      },
-      "on_screen_text": [
-        "2. CROPS FED A CONTINENT",
-        "POPULATION RISES AFTER 1500"
-      ]
-    },
-    {
-      "id": "s4a",
-      "purpose": "comparison",
-      "animation": {
-        "type": "zoom",
-        "cx": 0.5,
-        "cy": 0.5,
-        "end_zoom": 1.05,
-        "zoom_duration": 12
-      },
-      "narration": {
-        "voice": "host",
-        "text": "So weigh it. The same ships carried both. Afro-Eurasia got the calories: potatoes, maize, foods that fed millions. The Americas got the germs: smallpox, measles, death on a scale warfare never reached. [beat] Look at this engraving. A sugar mill in the Americas, printed in Europe around 1600. Sugar: grown by African labor, on American land, for European profit. Three continents in one picture."
-      },
-      "visual": {
-        "base_image": "assets/images/u1-ch2-l5/stradanus-sugar.webp",
-        "search": {
-          "provider": "wikimedia",
-          "query": "Stradanus Galle Saccharum sugar refinery Nova Reperta engraving",
-          "min_width": 1000,
-          "license": "public-domain"
-        }
-      },
-      "transition": {
-        "type": "hard_cut",
-        "duration": 0.2
-      },
-      "min_duration": 14,
-      "topics": [
-        "1.4"
-      ],
-      "beats": [
-        {
-          "type": "label",
-          "text": "SUGAR MILL, C. 1600",
-          "cue": "around 1600.",
-          "duration": 4,
-          "x": 0.12,
-          "y": 0.12
-        }
-      ],
-      "covers_los": [
-        3
-      ],
-      "device": "annotate",
-      "device_params": {
-        "mode": "telestrator",
-        "annotations": [
-          {
-            "type": "circle",
-            "label": "African labor",
-            "cue": "African labor,",
-            "x": 0.35,
-            "y": 0.6
-          },
-          {
-            "type": "circle",
-            "label": "American land",
-            "cue": "American land,",
-            "x": 0.65,
-            "y": 0.45
-          },
-          {
-            "type": "circle",
-            "label": "European profit",
-            "cue": "European profit.",
-            "x": 0.5,
-            "y": 0.75
-          }
-        ]
-      },
-      "production_notes": "Annotated freeze-frame: the host reads the engraving like a document. Ink circles draw as each element is named; labels in small sans, no modern arrows. Intended plate: Nova Reperta plate 13 (Saccharum), designed by Jan van der Straet, engraved by Philips Galle, c. 1591-1600. Source caption dates it honestly. Coordinates must be tuned against the actual plate at animatic stage.",
-      "source": {
-        "title": "Sugar refinery, Nova Reperta (search; AI fallback: sugar mill plate)",
-        "license": "Public domain",
-        "notes": "Wikimedia Commons search; intended: Stradanus/Galle, c. 1600. Caption dates it honestly."
-      },
-      "on_screen_text": [
-        "SUGAR MILL, C. 1600"
-      ]
-    },
-    {
-      "id": "s4b",
-      "purpose": "recap",
-      "animation": {
-        "type": "auto"
-      },
-      "narration": {
-        "voice": "host",
-        "text": "[beat]Why unequal? The two sides brought different things to the contact. Afro-Eurasia brought diseases born of crowded cities and livestock. The Americas brought crops that fed millions. [beat] Same ships, same ocean. Growth on one side, catastrophe on the other. That asymmetry is the whole lesson."
-      },
-      "visual": {
-        "base_image": "assets/images/u1-ch2-l5/harbor-exchange.webp",
-        "still": {
-          "orientation": "landscape",
-          "provider": "hatch-media",
-          "prompt": "Spanish galleons anchored off a Caribbean shore, longboats ferrying wooden crates of strange plants and caged animals between ship and beach, palm trees, distant hills. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
-        }
-      },
-      "transition": {
-        "type": "hard_cut",
-        "duration": 0.2
-      },
-      "min_duration": 12,
-      "topics": [
-        "1.4"
-      ],
-      "beats": [
-        {
-          "type": "stamp",
-          "text": "GROWTH AND CATASTROPHE",
-          "cue": "Growth on one side,",
-          "duration": 5,
-          "x": 0.5,
-          "y": 0.5
-        },
-        {
-          "type": "label",
-          "text": "3. SAME SHIPS, UNEQUAL RESULTS",
-          "cue": "That asymmetry",
-          "duration": 4,
-          "x": 0.5,
-          "y": 0.85
-        }
-      ],
-      "covers_los": [
-        3
-      ],
-      "production_notes": "Stamp 3 of 3 (GROWTH AND CATASTROPHE): the stamped verdict. The lesson ends where it began: the harbor plate returns, both directions. Single low thud under the stamp, then silence to the exam card. Reuses s1's plate: the stills stage skips it.",
-      "source": {
-        "title": "Harbor exchange (AI plate, reused from s1)",
-        "license": "AI-generated",
-        "notes": "Same still spec and output path as s1; the stills stage skips it because the file already exists."
-      },
-      "on_screen_text": [
-        "GROWTH AND CATASTROPHE",
-        "3. SAME SHIPS, UNEQUAL RESULTS"
-      ],
-      "audio": {
-        "effects": [
-          {
-            "cue": "Growth on one side,",
-            "kind": "impact",
-            "volume": 0.2
-          }
-        ]
-      }
-    },
-    {
-      "id": "s5",
-      "purpose": "close",
-      "animation": {
-        "type": "bullets",
-        "title": "THE EXCHANGE, BOTH WAYS",
-        "stagger": 0.45,
-        "bullets": [
-          "EASTWARD: maize, potato, tomato, tobacco, cacao; syphilis too",
-          "WESTWARD: wheat, sugarcane; horse, pig, cattle; smallpox, measles",
-          "MECHANISM: potato = 3x wheat calories; grew where wheat failed",
-          "VERDICT: same ships, unequal results; growth vs catastrophe"
-        ],
-        "footer": "Chronicler voice dramatized; sugar engraving Stradanus/Galle c. 1600. AP TOPIC 1.4"
-      },
-      "narration": {
-        "voice": "host",
-        "text": "[pause:10]"
-      },
-      "visual": {
-        "base_image": "assets/images/u1-ch2-l5/exam-card-paper.webp",
-        "still": {
-          "orientation": "landscape",
-          "provider": "hatch-media",
-          "prompt": "A plain aged paper texture, warm cream tone, subtle grain, completely empty, no text, no imagery. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
-        }
-      },
-      "transition": {
-        "type": "hard_cut",
-        "duration": 0.2
-      },
-      "min_duration": 10,
-      "topics": [
-        "1.4"
-      ],
-      "covers_los": [
-        1,
-        2,
-        3
-      ],
-      "production_notes": "No narration; the [pause:10] holds the card in silence. Serif/sans grammar: what they said vs what you must know. The exam card maps 1:1 back to the three LOs: the landing.",
-      "source": {
-        "title": "Exam card paper (AI plate)",
-        "license": "AI-generated",
-        "notes": "Pipeline-generated via hatch-media. Card holds 10s in silence; designed to be paused and screenshotted."
-      }
+     "type": "label",
+     "text": "FED MILLIONS, KILLED MILLIONS",
+     "cue": "fed millions on one side",
+     "duration": 4,
+     "x": 0.5,
+     "y": 0.82
     }
-  ]
+   ],
+   "device": "hook",
+   "device_params": {
+    "hook_type": "contradiction",
+    "payoff_by_sec": 8.0
+   },
+   "production_notes": "Contradiction hook: foods that fed millions and germs that killed millions, same ships. Stamp 1 of 3 (TWO WORLDS, ONE OCEAN) is the lesson's framing. RUNTIME EXCEPTION granted 2026-10-04: 579w (~4:00) exceeds the 450-500 series-bible target but passes the 400-600 hard gate; blind reviewers judged the length earned by content. Not trimmed.",
+   "source": {
+    "title": "Harbor exchange (AI plate)",
+    "license": "AI-generated",
+    "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt."
+   },
+   "on_screen_text": [
+    "1492",
+    "TWO WORLDS, ONE OCEAN",
+    "FED MILLIONS, KILLED MILLIONS"
+   ],
+   "audio": {
+    "effects": [
+     {
+      "cue": "The same ships.",
+      "kind": "impact",
+      "volume": 0.15
+     }
+    ]
+   }
+  },
+  {
+   "id": "s1b-objectives",
+   "purpose": "context",
+   "animation": {
+    "type": "objectives",
+    "title": "BY THE END OF THIS LESSON"
+   },
+   "narration": {
+    "voice": "host",
+    "text": "[beat]By the end: [emphasis]One:[/emphasis] the crops, animals, and diseases that crossed in each direction. [emphasis]Two:[/emphasis] how American crops fed a growing Afro-Eurasia. [emphasis]Three:[/emphasis] weighing the exchange's unequal effects, the way the exam asks you to."
+   },
+   "visual": {},
+   "transition": {
+    "type": "hard_cut",
+    "duration": 0.2
+   },
+   "min_duration": 8,
+   "topics": [
+    "1.4"
+   ],
+   "production_notes": "The promise. Full LO wording on screen; the host reads the compressed version."
+  },
+  {
+   "id": "s2a",
+   "purpose": "concept",
+   "animation": {
+    "type": "zoom",
+    "cx": 0.5,
+    "cy": 0.5,
+    "end_zoom": 1.06,
+    "zoom_duration": 12
+   },
+   "narration": {
+    "voice": "host",
+    "text": "Start with what sailed east, toward Europe. Maize, corn, the grain that had fed Mexico for thousands of years. The potato, dug from the Andes. Tomatoes, sweet potatoes, cacao, and tobacco: none of it existed in Europe. No Italian had ever tasted a tomato. No Irishman had ever seen a potato. Within a century, maize and tomatoes spread across southern Europe. The potato took longer. [beat] A Spanish observer, seeing these strange harvests for the first time, wrote home about them."
+   },
+   "visual": {
+    "base_image": "assets/images/u1-ch2-l5/fuchs-maize-1542.webp",
+    "search": {
+     "provider": "wikimedia",
+     "query": "Fuchs 1542 maize Turcicum frumentum woodcut",
+     "min_width": 1000,
+     "license": "public-domain"
+    }
+   },
+   "transition": {
+    "type": "hard_cut",
+    "duration": 0.2
+   },
+   "min_duration": 14,
+   "topics": [
+    "1.4"
+   ],
+   "beats": [
+    {
+     "type": "label",
+     "text": "EASTWARD: CROPS",
+     "cue": "sailed east",
+     "duration": 4,
+     "x": 0.5,
+     "y": 0.12
+    },
+    {
+     "type": "label",
+     "text": "MAIZE, POTATO, TOMATO, CACAO, TOBACCO",
+     "cue": "Tomatoes, sweet potatoes, cacao,",
+     "duration": 5,
+     "x": 0.5,
+     "y": 0.82
+    },
+    {
+     "type": "label",
+     "text": "MAIZE WOODCUT, 1542",
+     "cue": "wrote home about them",
+     "duration": 4,
+     "x": 0.5,
+     "y": 0.9
+    }
+   ],
+   "covers_los": [
+    1
+   ],
+   "production_notes": "Archival: intended plate is the Fuchs 1542 maize woodcut, one of the earliest printed European images of an American plant (De historia stirpium, Basel). Fallback if the Wikimedia search fails: AI plate per script prompt 2 (\"maize stalks with large ears and potato plants with exposed roots, botanical composition\") in the de Bry engraving manner, no text. Source caption dates it honestly on screen.",
+   "source": {
+    "title": "Maize woodcut, De historia stirpium (AI search fallback: American crops plate)",
+    "license": "Public domain",
+    "notes": "Wikimedia Commons search; intended: Leonhart Fuchs, 1542. Caption dates it honestly as 1542."
+   },
+   "on_screen_text": [
+    "EASTWARD: CROPS",
+    "MAIZE, POTATO, TOMATO, CACAO, TOBACCO",
+    "MAIZE WOODCUT, 1542"
+   ]
+  },
+  {
+   "id": "s2b",
+   "purpose": "evidence",
+   "animation": {
+    "type": "auto"
+   },
+   "narration": {
+    "voice": "chronicler",
+    "text": "[VOICE:chronicler]They have a grain called maize, tall as a man, with ears like golden clubs. And a root they roast in the ashes, plain as dirt and twice as common."
+   },
+   "visual": {
+    "base_image": "assets/images/u1-ch2-l5/fuchs-maize-1542.webp",
+    "search": {
+     "provider": "wikimedia",
+     "query": "Fuchs 1542 maize Turcicum frumentum woodcut",
+     "min_width": 1000,
+     "license": "public-domain"
+    }
+   },
+   "transition": {
+    "type": "hard_cut",
+    "duration": 0.2
+   },
+   "min_duration": 10,
+   "topics": [
+    "1.4"
+   ],
+   "beats": [
+    {
+     "type": "label",
+     "text": "SPANISH CHRONICLER, 1500s (DRAMATIZED)",
+     "cue": "grain called maize",
+     "duration": 10,
+     "x": 0.5,
+     "y": 0.85
+    }
+   ],
+   "covers_los": [
+    1
+   ],
+   "production_notes": "One voice, sourced on screen. Locked frame; the letter is read dry with slight room. The voice is dramatized (a plausible letter home), not a verbatim quote; the exam card carries the disclaimer. Reuses s2a's plate: one plate, two voices.",
+   "source": {
+    "title": "Fuchs maize (reused from s2a)",
+    "license": "Public domain",
+    "notes": "Same search output as s2a; the stills stage skips it because the file already exists."
+   },
+   "on_screen_text": [
+    "SPANISH CHRONICLER, 1500s (DRAMATIZED)"
+   ]
+  },
+  {
+   "id": "s2c",
+   "purpose": "evidence",
+   "animation": {
+    "type": "ken_burns",
+    "zoom": 0.06,
+    "pan_x": 0.45,
+    "pan_y": 0.55
+   },
+   "narration": {
+    "voice": "host",
+    "text": "Westward sailed a different cargo. Wheat, sugarcane, bananas. And animals Europe took for granted: horses, pigs, cattle, goats, chickens. [beat] The Americas had never seen any of them. Within decades, pigs were running wild in the forests, cattle were spreading across the grasslands, and the horse reached the Plains, where it turned hunters into the continent's great mounted powers."
+   },
+   "visual": {
+    "base_image": "assets/images/u1-ch2-l5/livestock-landing.webp",
+    "still": {
+     "orientation": "landscape",
+     "provider": "hatch-media",
+     "prompt": "Horses, pigs, and cattle being led down a wooden ship's ramp onto an American beach, crates of wheat sheaves and banana plants stacked nearby. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
+    }
+   },
+   "transition": {
+    "type": "hard_cut",
+    "duration": 0.2
+   },
+   "min_duration": 14,
+   "topics": [
+    "1.4"
+   ],
+   "beats": [
+    {
+     "type": "label",
+     "text": "WESTWARD: ANIMALS",
+     "cue": "Westward sailed",
+     "duration": 4,
+     "x": 0.5,
+     "y": 0.12
+    },
+    {
+     "type": "label",
+     "text": "HORSE, PIG, CATTLE",
+     "cue": "horses, pigs, cattle,",
+     "duration": 4,
+     "x": 0.5,
+     "y": 0.82
+    },
+    {
+     "type": "label",
+     "text": "THE HORSE REMAKES THE PLAINS",
+     "cue": "reached the Plains",
+     "duration": 5,
+     "x": 0.5,
+     "y": 0.18
+    }
+   ],
+   "covers_los": [
+    1
+   ],
+   "production_notes": "Fallback: the animals alone in engraving style, no ship. Hooves SFX under the livestock list (editor-side).",
+   "source": {
+    "title": "Livestock landing (AI plate)",
+    "license": "AI-generated",
+    "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt."
+   },
+   "on_screen_text": [
+    "WESTWARD: ANIMALS",
+    "HORSE, PIG, CATTLE",
+    "THE HORSE REMAKES THE PLAINS"
+   ]
+  },
+  {
+   "id": "s2d",
+   "purpose": "evidence",
+   "animation": {
+    "type": "zoom",
+    "cx": 0.5,
+    "cy": 0.5,
+    "end_zoom": 1.04,
+    "zoom_duration": 14
+   },
+   "narration": {
+    "voice": "host",
+    "text": "And then the deadliest cargo. Smallpox, measles, influenza. Epidemic diseases born in the crowded cities and livestock pens of Afro-Eurasia, carried across the ocean in European bodies. [beat] Native peoples had no resistance. Whole villages died in weeks. Remember this: the main cause of the die-off was disease, not warfare. [beat] Even sickness traveled east. Sailors may even have carried syphilis back to Europe. The exchange went both ways, down to the germs."
+   },
+   "visual": {
+    "base_image": "assets/images/u1-ch2-l5/sickness-village.webp",
+    "still": {
+     "orientation": "landscape",
+     "provider": "hatch-media",
+     "prompt": "A Caribbean village struck by illness, figures resting in thatched huts, a galleon anchored offshore, solemn stillness, nothing graphic. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
+    }
+   },
+   "transition": {
+    "type": "hard_cut",
+    "duration": 0.2
+   },
+   "min_duration": 16,
+   "topics": [
+    "1.4"
+   ],
+   "beats": [
+    {
+     "type": "stamp",
+     "text": "THE DEADLIEST CARGO",
+     "cue": "deadliest cargo.",
+     "duration": 5,
+     "x": 0.5,
+     "y": 0.5
+    },
+    {
+     "type": "label",
+     "text": "DISEASE, NOT WARFARE",
+     "cue": "disease, not warfare.",
+     "duration": 4,
+     "x": 0.5,
+     "y": 0.82
+    },
+    {
+     "type": "label",
+     "text": "1. BOTH DIRECTIONS",
+     "cue": "both ways,",
+     "duration": 4,
+     "x": 0.5,
+     "y": 0.9
+    }
+   ],
+   "covers_los": [
+    1
+   ],
+   "production_notes": "Stamp 2 of 3 (THE DEADLIEST CARGO). Score drops out entirely at scene start; the dying plays dry. Fallback: the same village empty, no figures. The syphilis line follows Barron's Premium 2027; no stronger claim is made.",
+   "source": {
+    "title": "The sickness (AI plate)",
+    "license": "AI-generated",
+    "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt."
+   },
+   "on_screen_text": [
+    "THE DEADLIEST CARGO",
+    "DISEASE, NOT WARFARE",
+    "1. BOTH DIRECTIONS"
+   ],
+   "audio": {
+    "effects": [
+     {
+      "cue": "deadliest cargo.",
+      "kind": "impact",
+      "volume": 0.15
+     }
+    ]
+   }
+  },
+  {
+   "id": "s3a",
+   "purpose": "concept",
+   "animation": {
+    "type": "auto"
+   },
+   "narration": {
+    "voice": "host",
+    "text": "Now the question that matters. [beat] The potato. Plain, ugly, dug from the dirt. Why did this root help feed a continent? [pause:2] Because it cheated. A field of potatoes could feed three times as many people as a field of wheat. And potatoes grew where wheat could not: ground too wet, too dry, too poor. [beat] Europe's peasants had always lived one bad harvest from hunger. The potato gave them a backup."
+   },
+   "visual": {
+    "base_image": "assets/images/u1-ch2-l5/potato-harvest.webp",
+    "still": {
+     "orientation": "landscape",
+     "provider": "hatch-media",
+     "prompt": "Peasants digging potatoes with simple tools, woven baskets overflowing with potatoes, field rows receding. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
+    }
+   },
+   "transition": {
+    "type": "hard_cut",
+    "duration": 0.2
+   },
+   "min_duration": 16,
+   "topics": [
+    "1.4"
+   ],
+   "beats": [
+    {
+     "type": "label",
+     "text": "WHY DID THIS ROOT FEED A CONTINENT?",
+     "cue": "Why did this root help feed a continent?",
+     "duration": 6,
+     "x": 0.5,
+     "y": 0.3
+    },
+    {
+     "type": "label",
+     "text": "3X THE CALORIES OF WHEAT",
+     "cue": "three times as many",
+     "duration": 4,
+     "x": 0.5,
+     "y": 0.82
+    },
+    {
+     "type": "label",
+     "text": "WHERE WHEAT FAILED",
+     "cue": "where wheat could not:",
+     "duration": 4,
+     "x": 0.5,
+     "y": 0.12
+    }
+   ],
+   "covers_los": [
+    2
+   ],
+   "device": "show_ask",
+   "device_params": {
+    "question": "Why did this root help feed a continent?",
+    "hold_sec": 2.0
+   },
+   "production_notes": "Show-and-ask: the potato sits under the spoken question with a full 2s silence before the answer. Silence under the question and hold; score returns on 'Because it cheated.' Fallback: close detail of potato plants and exposed tubers.",
+   "source": {
+    "title": "Potato harvest (AI plate)",
+    "license": "AI-generated",
+    "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt."
+   },
+   "on_screen_text": [
+    "WHY DID THIS ROOT FEED A CONTINENT?",
+    "3X THE CALORIES OF WHEAT",
+    "WHERE WHEAT FAILED"
+   ]
+  },
+  {
+   "id": "s3b",
+   "purpose": "evidence",
+   "animation": {
+    "type": "ken_burns",
+    "zoom": 0.07,
+    "pan_x": 0.5,
+    "pan_y": 0.4
+   },
+   "narration": {
+    "voice": "host",
+    "text": "Maize did the same work across southern Europe and Africa. Together, American crops saved millions in Afro-Eurasia from starvation, and the world's population rose after 1500. That population boom runs on American calories. [beat] More food, more people. That is the whole mechanism, and the exam will ask you for it."
+   },
+   "visual": {
+    "base_image": "assets/images/u1-ch2-l5/fed-village.webp",
+    "still": {
+     "orientation": "landscape",
+     "provider": "hatch-media",
+     "prompt": "A European village with potato fields in the foreground, a full granary and market stalls behind. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
+    }
+   },
+   "transition": {
+    "type": "hard_cut",
+    "duration": 0.2
+   },
+   "min_duration": 12,
+   "topics": [
+    "1.4"
+   ],
+   "beats": [
+    {
+     "type": "label",
+     "text": "2. CROPS FED A CONTINENT",
+     "cue": "saved millions",
+     "duration": 4,
+     "x": 0.5,
+     "y": 0.85
+    },
+    {
+     "type": "label",
+     "text": "POPULATION RISES AFTER 1500",
+     "cue": "population rose after 1500.",
+     "duration": 4,
+     "x": 0.5,
+     "y": 0.12
+    }
+   ],
+   "covers_los": [
+    2
+   ],
+   "production_notes": "Fallback: reuse the potato-harvest plate. The population claim follows the Crosby/OER tradition (3x wheat calories; millions saved from starvation); no unverified figures.",
+   "source": {
+    "title": "Fed village (AI plate)",
+    "license": "AI-generated",
+    "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt."
+   },
+   "on_screen_text": [
+    "2. CROPS FED A CONTINENT",
+    "POPULATION RISES AFTER 1500"
+   ]
+  },
+  {
+   "id": "s4a",
+   "purpose": "comparison",
+   "animation": {
+    "type": "zoom",
+    "cx": 0.5,
+    "cy": 0.5,
+    "end_zoom": 1.05,
+    "zoom_duration": 12
+   },
+   "narration": {
+    "voice": "host",
+    "text": "So weigh it. The same ships carried both. Afro-Eurasia got the calories: potatoes, maize, foods that fed millions. The Americas got the germs: smallpox, measles, death on a scale warfare never reached. [beat] A European engraving, printed around 1600, shows the sugar trade as Europe imagined it: read it like a document. Sugar: grown by African labor, on American land, for European profit. Three continents in one picture."
+   },
+   "visual": {
+    "base_image": "assets/images/u1-ch2-l5/stradanus-sugar.webp",
+    "search": {
+     "provider": "wikimedia",
+     "query": "Stradanus Galle Saccharum sugar refinery Nova Reperta engraving",
+     "min_width": 1000,
+     "license": "public-domain"
+    }
+   },
+   "transition": {
+    "type": "hard_cut",
+    "duration": 0.2
+   },
+   "min_duration": 14,
+   "topics": [
+    "1.4"
+   ],
+   "beats": [
+    {
+     "type": "label",
+     "text": "EUROPE'S IMAGINING, C. 1600",
+     "cue": "printed around 1600",
+     "duration": 4,
+     "x": 0.12,
+     "y": 0.12
+    }
+   ],
+   "covers_los": [
+    3
+   ],
+   "device": "annotate",
+   "device_params": {
+    "mode": "telestrator",
+    "annotations": [
+     {
+      "type": "circle",
+      "label": "African labor",
+      "cue": "African labor,",
+      "x": 0.35,
+      "y": 0.6
+     },
+     {
+      "type": "circle",
+      "label": "American land",
+      "cue": "American land,",
+      "x": 0.65,
+      "y": 0.45
+     },
+     {
+      "type": "circle",
+      "label": "European profit",
+      "cue": "European profit.",
+      "x": 0.5,
+      "y": 0.75
+     }
+    ]
+   },
+   "production_notes": "Annotated freeze-frame: the host reads the engraving like a document. Plate verified 2026-10-04 against the Plantin-Moretus impression (Wikimedia Commons): a Flemish allegorical workshop scene with European-dressed workers, boiling vats, sugar cones, and a cane field in the background -- a European imagining, NOT a mill in the Americas. The narration frames it honestly as such; the three ink circles mark the lesson's interpretive reading (workers->labor, cane field->land, sugar cones->profit), not depicted identities. Ink circles draw as each element is named; labels in small sans, no modern arrows. Intended plate: Nova Reperta plate 13 (Saccharum), designed by Jan van der Straet, engraved by Philips Galle, c. 1591-1600. Source caption dates it honestly. Coordinates must be tuned against the actual plate at animatic stage.",
+   "source": {
+    "title": "Sugar refinery, Nova Reperta (search; AI fallback: sugar mill plate)",
+    "license": "Public domain",
+    "notes": "Wikimedia Commons search; intended: Stradanus/Galle, c. 1600. Caption dates it honestly."
+   },
+   "on_screen_text": [
+    "SUGAR MILL, C. 1600"
+   ]
+  },
+  {
+   "id": "s4b",
+   "purpose": "recap",
+   "animation": {
+    "type": "auto"
+   },
+   "narration": {
+    "voice": "host",
+    "text": "[beat]Why unequal? The two sides brought different things to the contact. Afro-Eurasia brought diseases born of crowded cities and livestock. The Americas brought crops that fed millions. [beat] Same ships, same ocean. Growth on one side, catastrophe on the other. That asymmetry is the whole lesson."
+   },
+   "visual": {
+    "base_image": "assets/images/u1-ch2-l5/harbor-exchange.webp",
+    "still": {
+     "orientation": "landscape",
+     "provider": "hatch-media",
+     "prompt": "Spanish galleons anchored off a Caribbean shore, longboats ferrying wooden crates of strange plants and caged animals between ship and beach, palm trees, distant hills. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
+    }
+   },
+   "transition": {
+    "type": "hard_cut",
+    "duration": 0.2
+   },
+   "min_duration": 12,
+   "topics": [
+    "1.4"
+   ],
+   "beats": [
+    {
+     "type": "stamp",
+     "text": "GROWTH AND CATASTROPHE",
+     "cue": "Growth on one side,",
+     "duration": 5,
+     "x": 0.5,
+     "y": 0.5
+    },
+    {
+     "type": "label",
+     "text": "3. SAME SHIPS, UNEQUAL RESULTS",
+     "cue": "That asymmetry",
+     "duration": 4,
+     "x": 0.5,
+     "y": 0.85
+    }
+   ],
+   "covers_los": [
+    3
+   ],
+   "production_notes": "Stamp 3 of 3 (GROWTH AND CATASTROPHE): the stamped verdict. The lesson ends where it began: the harbor plate returns, both directions. Single low thud under the stamp, then silence to the exam card. Reuses s1's plate: the stills stage skips it.",
+   "source": {
+    "title": "Harbor exchange (AI plate, reused from s1)",
+    "license": "AI-generated",
+    "notes": "Same still spec and output path as s1; the stills stage skips it because the file already exists."
+   },
+   "on_screen_text": [
+    "GROWTH AND CATASTROPHE",
+    "3. SAME SHIPS, UNEQUAL RESULTS"
+   ],
+   "audio": {
+    "effects": [
+     {
+      "cue": "Growth on one side,",
+      "kind": "impact",
+      "volume": 0.2
+     }
+    ]
+   }
+  },
+  {
+   "id": "s5",
+   "purpose": "close",
+   "animation": {
+    "type": "bullets",
+    "title": "THE EXCHANGE, BOTH WAYS",
+    "stagger": 0.45,
+    "bullets": [
+     "EASTWARD: maize, potato, tomato, tobacco, cacao; syphilis too",
+     "WESTWARD: wheat, sugarcane; horse, pig, cattle; smallpox, measles",
+     "MECHANISM: potato = 3x wheat calories; grew where wheat failed",
+     "VERDICT: same ships, unequal results; growth vs catastrophe"
+    ],
+    "footer": "Chronicler voice dramatized; sugar engraving Stradanus/Galle c. 1600. AP TOPIC 1.4"
+   },
+   "narration": {
+    "voice": "host",
+    "text": "[pause:10]"
+   },
+   "visual": {
+    "base_image": "assets/images/u1-ch2-l5/exam-card-paper.webp",
+    "still": {
+     "orientation": "landscape",
+     "provider": "hatch-media",
+     "prompt": "A plain aged paper texture, warm cream tone, subtle grain, completely empty, no text, no imagery. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
+    }
+   },
+   "transition": {
+    "type": "hard_cut",
+    "duration": 0.2
+   },
+   "min_duration": 10,
+   "topics": [
+    "1.4"
+   ],
+   "covers_los": [
+    1,
+    2,
+    3
+   ],
+   "production_notes": "No narration; the [pause:10] holds the card in silence. Serif/sans grammar: what they said vs what you must know. The exam card maps 1:1 back to the three LOs: the landing.",
+   "source": {
+    "title": "Exam card paper (AI plate)",
+    "license": "AI-generated",
+    "notes": "Pipeline-generated via hatch-media. Card holds 10s in silence; designed to be paused and screenshotted."
+   }
+  }
+ ]
 }

@@ -23,6 +23,8 @@ as a static image (NLE).*
 entirely, and what it proved: Indigenous people could defeat a European
 empire, and the empire had to rule differently afterward.
 
+Reusable pattern: pressure + network + timing → coordinated resistance.
+
 ## Outcome
 
 Spain returns in 1692 changed: a defender for Pueblo rights, land grants for

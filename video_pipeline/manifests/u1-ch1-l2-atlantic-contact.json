@@ -5,8 +5,8 @@
   "unit_id": "u1",
   "chapter_id": "ch1",
   "title": "Atlantic Contact and the Columbian Exchange",
-  "description": "European motives, transatlantic voyages, and the unequal consequences of biological and commercial exchange.",
-  "essential_question": "Why did Atlantic contact transform Europe and the Americas so unevenly?",
+  "description": "European motives, transatlantic voyages, and the unequal consequences of biological and commercial exchange. The answer: the exchange's gains flowed up to Europe while its costs flowed down onto the Americas. Connected, never equal.",
+  "essential_question": "How did a failed voyage connect the world, and why did the Americas pay for it?",
   "learning_objectives": [
     "Explain the economic and political motives for European exploration.",
     "Trace major categories of exchange across the Atlantic.",
@@ -93,7 +93,7 @@
       "purpose": "hook",
       "narration": {
         "voice": "host",
-        "text": "[beat]The most important voyage in American history was a failure. In [date:1492], an Italian sailor named Christopher Columbus set out to find Asia. He never got there. He ran into a whole new world instead, and died believing he had reached the Indies. [beat] But his failure set off the largest exchange of people, plants, animals, and diseases the world had ever seen. And it was never equal."
+        "text": "[beat]The most important voyage in American history was a failure. In [date:1492], an Italian sailor named Christopher Columbus set out to find Asia. He never got there. He ran into a whole new world instead, and died believing he had reached the Indies. [beat] But his failure set off the largest exchange of people, plants, animals, and diseases the world had ever seen. And it was never equal. [pause:2]"
       },
       "visual": {
         "base_image": "assets/images/u1-ch1-l2/caravels-atlantic.webp",
@@ -333,7 +333,7 @@
       ],
       "narration": {
         "voice": "columbus",
-        "text": "[VOICE:columbus][solemn]They are gentle and know nothing of evil. They would make good servants, and I believe they could easily be made Christians, for they seem to have no religion of their own."
+        "text": "[VOICE:columbus]They are gentle and know nothing of evil. They would make good servants, and I believe they could easily be made Christians, for they seem to have no religion of their own."
       },
       "visual": {
         "base_image": "assets/images/u1-ch1-l2/captains-journal.webp",
@@ -435,7 +435,7 @@
         "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt.",
         "title": "Dockside exchange (AI plate)"
       },
-      "production_notes": "The broad chapter-1 exchange; l5 does the deep dive. The reversal's setup: the gains, before s6 takes them away. Fallback: crates and barrels on a dock."
+      "production_notes": "The broad chapter-1 exchange; l5 does the deep dive. The reversal's setup: the gains, before s6 takes them away. WEST/EAST labels land on the spoken direction words (the compare lives in the labels). Fallback: crates and barrels on a dock."
     },
     {
       "id": "s5",
@@ -445,7 +445,7 @@
       ],
       "narration": {
         "voice": "host",
-        "text": "This is how Europe pictured the landing. [beat] Here is what the landing brought. Smallpox, influenza, measles. Diseases no one in the Americas had ever met. Between [date:1500] and [date:1650], somewhere between half and nine in ten Native people died. On Hispaniola, by one Spanish count, over a million [es]Taíno[/es] fell to a few hundred. [beat] The survivors faced the [es]encomienda[/es]: colonists granted the labor of Native communities, justified as protection and Christian teaching. In practice, mines and fields worked to death. [beat] Disease did what no army could."
+        "text": "Europe pictured the landing as a triumph. [beat] The reality: smallpox, influenza, measles. Diseases no one in the Americas had ever met. Between [date:1500] and [date:1650], somewhere between half and nine in ten Native people died. On Hispaniola, by one Spanish count, over a million [es]Taíno[/es] fell to a few hundred. [beat] The survivors faced the [es]encomienda[/es]: colonists granted the labor of Native communities, justified as protection and Christian teaching. In practice, mines and fields worked to death. [beat] So which killed more: the Spanish armies, or the diseases? [pause:2] Disease did what no army could."
       },
       "visual": {
         "base_image": "assets/images/u1-ch1-l2/debry-landing.webp",
@@ -512,8 +512,16 @@
       "animation": {
         "type": "camera_path",
         "waypoints": [
-          [0.5, 0.45, 1.05],
-          [0.5, 0.45, 0.97]
+          [
+            0.5,
+            0.45,
+            1.05
+          ],
+          [
+            0.5,
+            0.45,
+            0.97
+          ]
         ]
       },
       "beats": [
