@@ -3,7 +3,6 @@ from __future__ import annotations
 import base64
 import asyncio
 import json
-import re
 import sys
 import time
 import urllib.error
@@ -12,7 +11,7 @@ import wave
 from pathlib import Path
 
 from .common import PipelineError, atomic_json, canonical_hash, resolve_local
-from .direction import to_ssml, voice_segments
+from .direction import edge_segments, voice_segments
 from .gates import iter_cues
 from .timing import _boundary_offset
 
@@ -36,18 +35,13 @@ def wav_duration(path: Path) -> float:
         raise PipelineError(f"invalid WAV file {path}: {exc}") from exc
 
 
-def _strip_express_as(ssml: str) -> str:
-    """Remove <mstts:express-as> styling, keeping the inner text.
-
-    Edge silently returns no audio when a voice does not support the
-    requested speaking style; the plain SSML usually still synthesizes.
-    """
-    without_open = re.sub(r"<mstts:express-as[^>]*>", "", ssml)
-    return without_open.replace("</mstts:express-as>", "")
-
-
 def render_edge(text: str, out: Path, voice: str, rate: str,
                 pitch: str) -> tuple[float, list[dict]]:
+    """Synthesize one plain-text segment with Edge.
+
+    Returns (duration_seconds, word_boundaries). Retries once after a
+    short wait; transient service hiccups are common.
+    """
     try:
         import edge_tts
     except ImportError as exc:
@@ -56,11 +50,12 @@ def render_edge(text: str, out: Path, voice: str, rate: str,
     temp_mp3 = out.with_name(f".{out.stem}.edge.tmp.mp3")
     temp_wav = out.with_name(f".{out.stem}.edge.tmp.wav")
 
-    async def synthesize(ssml_text: str):
+    async def synthesize():
         boundaries = []
         with temp_mp3.open("wb") as handle:
             async for chunk in edge_tts.Communicate(
-                    ssml_text, voice, rate=rate, pitch=pitch).stream():
+                    text, voice, rate=rate, pitch=pitch,
+                    boundary="WordBoundary").stream():
                 if chunk["type"] == "audio":
                     handle.write(chunk["data"])
                 elif chunk["type"] == "WordBoundary":
@@ -72,25 +67,11 @@ def render_edge(text: str, out: Path, voice: str, rate: str,
         return boundaries
     try:
         try:
-            boundaries = asyncio.run(synthesize(text))
-        except Exception as first_exc:
+            boundaries = asyncio.run(synthesize())
+        except Exception:
             # Transient service hiccups are common; retry once as-is.
             time.sleep(5)
-            try:
-                boundaries = asyncio.run(synthesize(text))
-            except Exception:
-                # The service may reject the emotion styling (e.g. the voice
-                # does not support the requested mstts style) while accepting
-                # the plain SSML. Drop the styling and retry rather than fail
-                # the whole render; warn loudly so the author can revisit the
-                # voice/style pairing.
-                plain = _strip_express_as(text)
-                if plain == text:
-                    raise
-                print(f"[tts] {out.stem}: Edge rejected the styled SSML "
-                      f"({type(first_exc).__name__}); retrying without "
-                      f"<mstts:express-as> emotion styling", flush=True)
-                boundaries = asyncio.run(synthesize(plain))
+            boundaries = asyncio.run(synthesize())
         import subprocess
         result = subprocess.run([
             "ffmpeg", "-y", "-v", "error", "-i", str(temp_mp3),
@@ -108,6 +89,16 @@ def render_edge(text: str, out: Path, voice: str, rate: str,
         for temporary in (temp_mp3, temp_wav):
             if temporary.exists():
                 temporary.unlink()
+
+
+def _shift_boundaries(boundaries: list[dict], delta: float) -> list[dict]:
+    """Shift word-boundary offsets by the duration of preceding audio.
+
+    Each Edge segment is synthesized independently (offsets restart at
+    zero), so later segments shift by the stitched duration before them.
+    """
+    return [{**row, "offset": float(row.get("offset", 0)) + delta}
+            for row in boundaries]
 
 
 def render_fish_cloud(text: str, model: str, reference_id: str | None,
@@ -236,6 +227,9 @@ def render_scene(manifest: dict, scene: dict, manifest_path: Path, repo_root: Pa
     edge_rate = vcfg.get("edge_rate", base.get("edge_rate", "+0%"))
     edge_pitch = vcfg.get("edge_pitch", base.get("edge_pitch", "+0Hz"))
     fingerprint = canonical_hash({
+        # render_version invalidates audio cached before the Edge target
+        # switched from single-shot SSML to plain-text segments.
+        "render_version": 2,
         "engine": engine, "text": narration["text"], "voice": voice_name,
         "ref_audio": str(ref_audio or ""), "ref_text": ref_text,
         "settings": settings, "edge_voice": edge_voice,
@@ -248,10 +242,50 @@ def render_scene(manifest: dict, scene: dict, manifest_path: Path, repo_root: Pa
         if meta.get("fingerprint") == fingerprint:
             return meta
     if engine == "edge":
-        ssml = to_ssml(narration["text"], f"scene {scene['id']} narration",
-                       edge_voice, voices)
-        duration, word_boundaries = render_edge(
-            ssml, out, edge_voice, edge_rate, edge_pitch)
+        import subprocess
+        where = f"scene {scene['id']} narration"
+        segments = [(v or voice_name, t)
+                    for v, t in edge_segments(narration["text"], where)]
+
+        def _seg_edge(seg_voice):
+            scfg = voices.get(seg_voice, {}) if seg_voice else {}
+            return (scfg.get("edge_voice", base.get("edge_voice", "en-US-GuyNeural")),
+                    scfg.get("edge_rate", base.get("edge_rate", "+0%")),
+                    scfg.get("edge_pitch", base.get("edge_pitch", "+0Hz")))
+
+        out.parent.mkdir(parents=True, exist_ok=True)
+        temp = out.with_name(f".{out.stem}.tmp.wav")
+        word_boundaries: list[dict] = []
+        if len(segments) == 1:
+            seg_voice, seg_text = segments[0]
+            voice, rate, pitch = _seg_edge(seg_voice)
+            _, word_boundaries = render_edge(seg_text, temp, voice, rate, pitch)
+        else:
+            parts = []
+            offset = 0.0
+            for index, (seg_voice, seg_text) in enumerate(segments):
+                voice, rate, pitch = _seg_edge(seg_voice)
+                part = out.with_name(f".{out.stem}.seg{index}.tmp.wav")
+                _, boundaries = render_edge(seg_text, part, voice, rate, pitch)
+                parts.append(part)
+                word_boundaries.extend(_shift_boundaries(boundaries, offset))
+                offset += wav_duration(part)
+                print(f"[tts] {scene['id']}: segment {index + 1}/{len(segments)} "
+                      f"({seg_voice or 'default voice'})")
+            inputs = []
+            for part in parts:
+                inputs += ["-i", str(part)]
+            filt = "".join(f"[{i}:a]" for i in range(len(parts)))
+            filt += f"concat=n={len(parts)}:v=0:a=1"
+            result = subprocess.run(
+                ["ffmpeg", "-y", "-v", "error", *inputs, "-filter_complex", filt, str(temp)],
+                capture_output=True, text=True)
+            for part in parts:
+                part.unlink(missing_ok=True)
+            if result.returncode != 0:
+                raise PipelineError(f"ffmpeg could not stitch edge segments: {result.stderr.strip()[-500:]}")
+        temp.replace(out)
+        duration = wav_duration(out)
         if duration < float(scene.get("min_duration", 0.5)):
             raise PipelineError(f"TTS for scene {scene['id']} is only {duration:.2f}s")
         if word_boundaries:

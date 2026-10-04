@@ -1,12 +1,12 @@
-"""Tests for direction tags: parsing, SSML compilation, Fish stripping, gate."""
+"""Tests for direction tags: parsing, Edge/Fish stripping, gate."""
 import unittest
 
 from pipeline.common import PipelineError
-from pipeline.direction import parse, to_ssml, strip_for_fish, voice_segments, tag_names
+from pipeline.direction import (
+    parse, strip_for_edge, edge_segments, spoken_year,
+    strip_for_fish, voice_segments, tag_names,
+)
 from pipeline.gates import direction_gate
-
-VOICES = {"host": {"edge_voice": "en-US-GuyNeural"},
-          "guest": {"edge_voice": "en-US-DavisNeural"}}
 
 
 class ParseTests(unittest.TestCase):
@@ -81,62 +81,64 @@ class ParseTests(unittest.TestCase):
                 parse(f"{bad} Arise! [beat]", "w")
 
 
-class SsmlTests(unittest.TestCase):
-    def test_beat_and_pause(self):
-        ssml = to_ssml("One [beat] two [pause:2] three", "w", "en-US-GuyNeural", VOICES)
-        self.assertIn('<break time="500ms"/>', ssml)
-        self.assertIn('<break time="2000ms"/>', ssml)
-        self.assertTrue(ssml.startswith("<speak"))
-        self.assertIn('xmlns:mstts=', ssml)
+class EdgeTests(unittest.TestCase):
+    def test_strip_converts_pauses(self):
+        out = strip_for_edge("One [beat] two [pause:1] three [pause:3] four", "w")
+        self.assertEqual(out, "One , two . three ... four")
 
-    def test_emphasis_pair(self):
-        ssml = to_ssml("a [emphasis]big[/emphasis] b", "w", "en-US-GuyNeural", VOICES)
-        self.assertIn('<emphasis level="strong">big</emphasis>', ssml)
+    def test_strip_drops_coloring_keeps_text(self):
+        out = strip_for_edge(
+            "[fierce] Arise [emphasis]now[/emphasis] [es]amigos[/es] [slow]go[/slow]", "w")
+        self.assertEqual(out, " Arise now amigos go")
 
-    def test_slow_fast(self):
-        ssml = to_ssml("[slow]a[/slow] [fast]b[/fast]", "w", "en-US-GuyNeural", VOICES)
-        self.assertIn('<prosody rate="slow">a</prosody>', ssml)
-        self.assertIn('<prosody rate="fast">b</prosody>', ssml)
+    def test_strip_spells_out_years(self):
+        out = strip_for_edge("In [date:1492] Columbus sailed [beat] home", "w")
+        self.assertEqual(out, "In fourteen ninety-two Columbus sailed , home")
 
-    def test_emotion_maps_to_express_as(self):
-        ssml = to_ssml("[fierce] Arise!", "w", "en-US-GuyNeural", VOICES)
-        self.assertIn('<mstts:express-as style="angry">', ssml)
+    def test_spoken_year(self):
+        cases = {
+            100: "one hundred",
+            911: "nine hundred eleven",
+            1492: "fourteen ninety-two",
+            1500: "fifteen hundred",
+            1905: "nineteen oh five",
+            2000: "two thousand",
+            2005: "two thousand five",
+            2019: "twenty nineteen",
+            2020: "twenty twenty",
+            2100: "twenty-one hundred",
+        }
+        for year, words in cases.items():
+            self.assertEqual(spoken_year(year), words, msg=str(year))
 
-    def test_emotion_intensity_maps_to_styledegree(self):
-        ssml = to_ssml("[fierce:1.5] Arise!", "w", "en-US-GuyNeural", VOICES)
-        self.assertIn('<mstts:express-as style="angry" styledegree="1.5">', ssml)
+    def test_output_has_no_markup(self):
+        # Regression: edge-tts speaks its input literally, so no tag or
+        # XML fragment may survive into the Edge text.
+        text = ("Spain [beat] put [emphasis]all[/emphasis] on trial [pause:2] "
+                "in [date:1550] [fierce:1.5] Arise [es]amigos[/es]!")
+        out = strip_for_edge(text, "w")
+        self.assertNotIn("[", out)
+        self.assertNotIn("]", out)
+        self.assertNotIn("<", out)
 
-    def test_emotion_without_intensity_has_no_styledegree(self):
-        ssml = to_ssml("[fierce] Arise!", "w", "en-US-GuyNeural", VOICES)
-        self.assertNotIn("styledegree", ssml)
+    def test_segments_split_voices(self):
+        segs = edge_segments("[VOICE:guest] Hi. [VOICE:host] Yo [beat] there.", "w")
+        self.assertEqual([voice for voice, _ in segs], ["guest", "host"])
+        self.assertIn("Hi", segs[0][1])
+        self.assertIn("Yo , there", segs[1][1])
 
-    def test_es_maps_to_lang(self):
-        ssml = to_ssml("He reached [es]Tenochtitlan[/es] in 1519.", "w",
-                       "en-US-GuyNeural", VOICES)
-        self.assertIn('<lang xml:lang="es-ES">Tenochtitlan</lang>', ssml)
+    def test_no_voice_single_segment(self):
+        self.assertEqual(edge_segments("Just [beat] words.", "w"),
+                         [(None, "Just , words.")])
 
-    def test_es_nests_inside_emphasis(self):
-        ssml = to_ssml("[emphasis]seize [es]Atahualpa[/es][/emphasis]", "w",
-                       "en-US-GuyNeural", VOICES)
-        self.assertIn('<emphasis level="strong">seize '
-                      '<lang xml:lang="es-ES">Atahualpa</lang></emphasis>', ssml)
+    def test_empty_chunks_dropped(self):
+        segs = edge_segments("[VOICE:guest] [beat] Hi.", "w")
+        self.assertEqual(len(segs), 1)
+        self.assertEqual(segs[0][0], "guest")
 
-    def test_date_maps_to_say_as(self):
-        ssml = to_ssml("In [date:1492] Columbus sailed.", "w",
-                       "en-US-GuyNeural", VOICES)
-        self.assertIn('<say-as interpret-as="date">1492</say-as>', ssml)
-
-    def test_voice_switch(self):
-        ssml = to_ssml("[VOICE:guest] Hello.", "w", "en-US-GuyNeural", VOICES)
-        self.assertIn('<voice name="en-US-DavisNeural">', ssml)
-
-    def test_voice_unknown_fails(self):
+    def test_empty_narration_fails(self):
         with self.assertRaises(PipelineError):
-            to_ssml("[VOICE:stranger] hi", "w", "en-US-GuyNeural", VOICES)
-
-    def test_escapes_xml(self):
-        ssml = to_ssml("fish & chips", "w", "en-US-GuyNeural", VOICES)
-        self.assertIn("fish &amp; chips", ssml)
+            edge_segments("[VOICE:guest]", "w")
 
 
 class FishTests(unittest.TestCase):

@@ -120,7 +120,7 @@
         "payoff_by_sec": 6
       },
       "id": "s1-case-file",
-      "min_duration": 18,
+      "min_duration": 15,
       "narration": {
         "text": "[solemn]In [date:1550], the most powerful empire on earth did something no Christian empire had ever done. [beat] Spain put its own conquests on trial. In Valladolid, a council of theologians and lawyers met to answer a single question: was the conquest of the Americas just, or was it a crime?",
         "voice": "host"
@@ -526,7 +526,7 @@
           "text": "DAY THREE",
           "type": "label",
           "x": 0.5,
-          "y": 0.15
+          "y": 0.3
         },
         {
           "cue": "Day five",
@@ -534,11 +534,11 @@
           "text": "DAY FIVE",
           "type": "label",
           "x": 0.5,
-          "y": 0.15
+          "y": 0.45
         }
       ],
       "id": "s4a-pages",
-      "min_duration": 6,
+      "min_duration": 3,
       "narration": {
         "text": "Day one. Day three. Day five. [beat] He finally stopped.",
         "voice": "host"
@@ -584,7 +584,7 @@
         "hold_sec": 2
       },
       "id": "s4b-countdown",
-      "min_duration": 8,
+      "min_duration": 6,
       "narration": {
         "text": "Now, you're the council. The logician with Aristotle, or the eyewitness with fifty years? [pause:2]",
         "voice": "host"
@@ -746,7 +746,7 @@
         ]
       },
       "id": "s5b-montage",
-      "min_duration": 6,
+      "min_duration": 3,
       "narration": {
         "text": "Every time we ask it about a war today, we're still sitting in [emphasis]that room[/emphasis].",
         "voice": "host"
@@ -800,12 +800,12 @@
       "lascasas": {
         "edge_pitch": "+0Hz",
         "edge_rate": "+0%",
-        "edge_voice": "en-US-TonyNeural"
+        "edge_voice": "en-US-RogerNeural"
       },
       "sepulveda": {
         "edge_pitch": "+0Hz",
         "edge_rate": "+0%",
-        "edge_voice": "en-US-DavisNeural"
+        "edge_voice": "en-US-ChristopherNeural"
       }
     }
   },

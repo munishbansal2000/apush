@@ -18,8 +18,11 @@ Narration text may carry bracket commands (the system from video/UNIT-1-PLAN.md)
     [VOICE:name]           speaker switch mid-scene; name must be in tts.voices
 
 Compilation targets:
-  - Edge: full SSML (breaks, prosody, emphasis, mstts expressive styles,
-    <lang>, <say-as>, styledegree, <voice>).
+  - Edge: plain text. edge-tts has no SSML passthrough (it XML-escapes
+    its input, so markup would be read aloud as literal words), so the
+    Edge target compiles tags to punctuation pauses and spoken-out
+    years, and [VOICE:name] splits the narration into per-voice
+    segments, the same shape as the Fish targets.
   - Fish: the cloud API takes plain text, so performance tags are converted
     to punctuation pauses ([beat] -> ",", [pause:N] -> "." / "...") and
     stripped otherwise; [es]/[date:] keep their text; [VOICE:name] splits
@@ -125,98 +128,67 @@ def tag_names(text: str) -> set[str]:
     return names
 
 
-def _escape(text: str) -> str:
-    return (text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;"))
+_ONES = ["zero", "one", "two", "three", "four", "five", "six",
+         "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen",
+         "fourteen", "fifteen", "sixteen", "seventeen", "eighteen",
+         "nineteen"]
+_TENS = ["", "", "twenty", "thirty", "forty", "fifty", "sixty",
+         "seventy", "eighty", "ninety"]
 
 
-def to_ssml(text: str, where: str, base_voice: str, voices: dict) -> str:
-    """Compile narration with direction tags to an SSML document for Edge.
+def _under_hundred(n: int) -> str:
+    if n < 20:
+        return _ONES[n]
+    tens, ones = divmod(n, 10)
+    return _TENS[tens] if ones == 0 else f"{_TENS[tens]}-{_ONES[ones]}"
 
-    A stack machine keeps the XML well-formed: pair tags close in LIFO
-    order (inner emotion colors close first), emotion colors auto-close at
-    voice switches and at the end of the document.
+
+def spoken_year(year: int) -> str:
+    """Spell out a [date:] year the way a narrator reads it.
+
+    parse() guarantees 100 <= year <= 2100: 1492 -> "fourteen
+    ninety-two", 1500 -> "fifteen hundred", 1905 -> "nineteen oh
+    five", 2005 -> "two thousand five", 2019 -> "twenty nineteen".
     """
-    parts: list[str] = []
-    stack: list[tuple[str, str]] = []  # (tag, element), innermost last
+    if year < 1000:
+        hundreds, rest = divmod(year, 100)
+        if rest == 0:
+            return f"{_ONES[hundreds]} hundred"
+        return f"{_ONES[hundreds]} hundred {_under_hundred(rest)}"
+    high, low = divmod(year, 100)
+    if 2000 <= year < 2010:
+        return "two thousand" if low == 0 else f"two thousand {_under_hundred(low)}"
+    base = _under_hundred(high)
+    if low == 0:
+        return f"{base} hundred"
+    if low < 10:
+        return f"{base} oh {_ONES[low]}"
+    return f"{base} {_under_hundred(low)}"
 
-    def close_element(tag: str, element: str) -> None:
-        parts.append("</mstts:express-as>" if element == "express-as"
-                     else f"</{element}>")
 
+def strip_for_edge(text: str, where: str) -> str:
+    """Convert direction tags to plain text Edge speaks naturally.
+
+    edge-tts XML-escapes its input, so SSML markup would be read aloud
+    as literal words; the Edge target is therefore plain text. Pauses
+    become punctuation Edge honors, [date:] years are spelled out, and
+    [es]/rate/emphasis/emotion coloring is dropped (inner text kept).
+    """
+    out: list[str] = []
     for item in parse(text, where):
         if item[0] == "text":
-            parts.append(_escape(item[1]))
+            out.append(item[1])
             continue
-        _, name, arg, closing = item
+        _, name, arg, _closing = item
         if name == "beat":
-            parts.append('<break time="500ms"/>')
+            out.append(",")
         elif name == "pause":
-            parts.append(f'<break time="{float(arg) * 1000:.0f}ms"/>')
-        elif name in _PAIR_TAGS:
-            if closing:
-                # parse() guarantees LIFO nesting; close inner emotions first
-                while stack and stack[-1][0] == "emotion":
-                    _, element = stack.pop()
-                    close_element("emotion", element)
-                if name in ("slow", "fast"):
-                    stack.pop()
-                    parts.append("</prosody>")
-                elif name == "emphasis":
-                    stack.pop()
-                    parts.append("</emphasis>")
-                elif name == "es":
-                    stack.pop()
-                    parts.append("</lang>")
-                else:  # refrain opened prosody + emphasis
-                    stack.pop()
-                    stack.pop()
-                    parts.append("</emphasis></prosody>")
-            elif name == "slow":
-                parts.append('<prosody rate="slow">')
-                stack.append((name, "prosody"))
-            elif name == "fast":
-                parts.append('<prosody rate="fast">')
-                stack.append((name, "prosody"))
-            elif name == "emphasis":
-                parts.append('<emphasis level="strong">')
-                stack.append((name, "emphasis"))
-            elif name == "es":
-                parts.append('<lang xml:lang="es-ES">')
-                stack.append((name, "lang"))
-            else:  # refrain
-                parts.append('<prosody rate="slow"><emphasis level="moderate">')
-                stack.append((name, "prosody"))
-                stack.append((name, "emphasis"))
-        elif name in _EMOTION_STYLE:
-            if closing:
-                continue  # emotions are point tags; no closing form
-            style = _EMOTION_STYLE[name]
-            if arg is not None:
-                parts.append(
-                    f'<mstts:express-as style="{style}" '
-                    f'styledegree="{float(arg):g}">')
-            else:
-                parts.append(f'<mstts:express-as style="{style}">')
-            stack.append(("emotion", "express-as"))
+            out.append("..." if float(arg) >= 2 else ".")
         elif name == "date":
-            parts.append(f'<say-as interpret-as="date">{_escape(arg)}</say-as>')
-        elif name == "VOICE":
-            edge_voice = voices.get(arg, {}).get("edge_voice")
-            if not edge_voice:
-                raise PipelineError(f"{where}: [VOICE:{arg}] has no edge_voice in tts.voices")
-            while stack:  # new speaker starts clean
-                _, element = stack.pop()
-                close_element("", element)
-            parts.append(f'</voice><voice name="{edge_voice}">')
-    while stack:
-        _, element = stack.pop()
-        close_element("", element)
-    body = "".join(parts)
-    return (
-        '<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" '
-        'xmlns:mstts="https://www.w3.org/2001/mstts" xml:lang="en-US">'
-        f'<voice name="{base_voice}">{body}</voice></speak>'
-    )
+            out.append(spoken_year(int(arg)))
+        # slow/fast/emphasis/refrain/es/VOICE/emotions have no plain-text
+        # equivalent; VOICE is handled by segment splitting.
+    return "".join(out)
 
 
 # Fish's native (parenthesis) emotion markers, from the FishAudio S1/S2 docs.
@@ -263,12 +235,11 @@ def strip_for_fish(text: str, where: str, fish_emotion_markers: bool = False) ->
     return "".join(out)
 
 
-def voice_segments(text: str, where: str,
-                   fish_emotion_markers: bool = False) -> list[tuple[str | None, str]]:
-    """Split narration on [VOICE:name] into (voice_name_or_None, plain_text).
+def _voice_spans(text: str, where: str) -> list[tuple[str | None, str]]:
+    """Split narration on [VOICE:name] into (voice_name_or_None, raw_chunk).
 
-    Each chunk keeps its raw tags through the split so strip_for_fish can
-    convert them; empty chunks are dropped.
+    Each chunk keeps its raw tags through the split so the caller's
+    strip function can convert them.
     """
     parse(text, where)  # full validation first; pairs may not span a switch
     spans: list[tuple[str | None, str]] = []
@@ -280,8 +251,33 @@ def voice_segments(text: str, where: str,
             current = match.group(3)
             last = match.end()
     spans.append((current, text[last:]))
+    return spans
+
+
+def voice_segments(text: str, where: str,
+                   fish_emotion_markers: bool = False) -> list[tuple[str | None, str]]:
+    """Split narration on [VOICE:name] into (voice_name_or_None, plain_text).
+
+    Each chunk keeps its raw tags through the split so strip_for_fish can
+    convert them; empty chunks are dropped.
+    """
     segments = [(voice, strip_for_fish(chunk, where, fish_emotion_markers))
-                for voice, chunk in spans]
+                for voice, chunk in _voice_spans(text, where)]
+    segments = [(voice, chunk) for voice, chunk in segments if chunk.strip()]
+    if not segments:
+        raise PipelineError(f"{where}: narration is empty")
+    return segments
+
+
+def edge_segments(text: str, where: str) -> list[tuple[str | None, str]]:
+    """Split narration on [VOICE:name] into (voice_name_or_None, plain_text).
+
+    Mirrors voice_segments for the Edge target: each chunk keeps its raw
+    tags through the split so strip_for_edge can convert them; empty
+    chunks are dropped.
+    """
+    segments = [(voice, strip_for_edge(chunk, where))
+                for voice, chunk in _voice_spans(text, where)]
     segments = [(voice, chunk) for voice, chunk in segments if chunk.strip()]
     if not segments:
         raise PipelineError(f"{where}: narration is empty")
