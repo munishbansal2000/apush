@@ -1,3 +1,4 @@
+import json
 import sys
 import tempfile
 import unittest
@@ -254,6 +255,27 @@ class ManifestTests(unittest.TestCase):
             }]
             with self.assertRaisesRegex(PipelineError, "text layout validation failed"):
                 validate_text_layout(data, root / "lesson.json", ROOT)
+
+    def test_objectives_slide_passes_layout(self):
+        # Regression: objectives rows are a designed fixed-pitch stack
+        # like bullets; adjacent rows must not trip the collision gate.
+        with tempfile.TemporaryDirectory() as value:
+            root = Path(value)
+            data = self.fixture(root)
+            data["learning_objectives"] = [
+                "Summarize Sepulveda's natural-slavery argument.",
+                "Explain Las Casas's defense and its tragic irony.",
+                "Evaluate why the debate mattered for rights.",
+            ]
+            data["tts"] = {"engine": "edge"}
+            data["scenes"][0]["visual"] = {}
+            data["scenes"][0]["animation"] = {
+                "type": "objectives", "title": "BY THE END OF THIS LESSON"
+            }
+            (root / "lesson.json").write_text(json.dumps(data), encoding="utf-8")
+            report = validate_text_layout(data, root / "lesson.json", ROOT)
+            self.assertEqual(report["failure_count"], 0)
+            self.assertGreaterEqual(report["text_element_count"], 4)
 
 
 if __name__ == "__main__":
