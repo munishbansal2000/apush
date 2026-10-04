@@ -170,6 +170,8 @@ def kb_scene(img_path, dur, zoom=0.14, pan_x=0.5, pan_y=0.5):
 
 def overlay_text(base, text, fnt_path, size, dur, y_pos=None, slide=None, fill=(255, 255, 255, 255)):
     """Slide-up + fade text overlay over a base clip."""
+    if not text or not text.strip():
+        return base  # no caption -> no overlay (an empty overlay is a crash, not a look)
     fnt = font(fnt_path, size)
     timg = text_rgba(text, fnt, fill=fill)
     tw, th = timg.size

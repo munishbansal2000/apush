@@ -5,6 +5,7 @@ from pathlib import Path
 from typing import Any
 
 from .common import PipelineError
+from .gates import run_all_gates
 from .schema import validate_manifest
 
 ROOT_KEYS = {"schema_version", "course", "defaults", "units"}
@@ -126,5 +127,6 @@ def expand_curriculum(data: Any, path: Path, repo_root: Path,
                 validate_manifest(
                     merged, path, repo_root, require_files=True,
                     allow_missing_clips=allow_missing_clips)
+                run_all_gates(merged, path, repo_root)
                 expanded.append(merged)
     return expanded

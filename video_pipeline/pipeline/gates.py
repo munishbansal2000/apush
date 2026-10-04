@@ -1,0 +1,357 @@
+"""Hard quality gates for lesson manifests.
+
+Each gate is fail-closed: violations raise PipelineError naming the
+lesson, scene, and field. The gates run at the `validated` stage
+(via run_all_gates, hooked into curriculum.expand_curriculum) so bad
+content can never reach planning, TTS, or rendering.
+
+The TTS-stage cue-resolution check lives in tts.render_scene (Edge path
+only); it reuses iter_cues from this module.
+"""
+from __future__ import annotations
+
+import re
+from functools import lru_cache
+from pathlib import Path
+from typing import Any, Iterator
+
+from .common import PipelineError, read_json, resolve_local
+from .direction import parse as parse_direction
+
+
+# ---------------------------------------------------------------------------
+# shared helpers
+# ---------------------------------------------------------------------------
+
+_CUE_FIELDS = ("highlights", "nodes", "edges", "moves")
+
+
+def iter_cues(scene: dict) -> Iterator[tuple[str, str]]:
+    """Yield (where, cue) for every cue-bearing item in a scene."""
+    for index, beat in enumerate(scene.get("beats", []) or []):
+        if isinstance(beat, dict) and "cue" in beat:
+            yield f"beats[{index}].cue", beat["cue"]
+    for index, effect in enumerate(scene.get("audio", {}).get("effects", []) or []):
+        if isinstance(effect, dict) and "cue" in effect:
+            yield f"audio.effects[{index}].cue", effect["cue"]
+    animation = scene.get("animation", {}) or {}
+    for field in _CUE_FIELDS:
+        for index, item in enumerate(animation.get(field, []) or []):
+            if isinstance(item, dict) and "cue" in item:
+                yield f"animation.{field}[{index}].cue", item["cue"]
+
+
+def _scenes(manifest: dict) -> list[dict]:
+    scenes = manifest.get("scenes", [])
+    if not isinstance(scenes, list):
+        raise PipelineError("lesson manifest scenes must be an array")
+    return scenes
+
+
+def _lid(manifest: dict) -> str:
+    return str(manifest.get("lesson_id", "<unknown lesson>"))
+
+
+def _content_tokens(text: str) -> set[str]:
+    return {
+        token
+        for token in re.findall(r"[a-z0-9]+", text.lower())
+        if token not in _STOPWORDS and len(token) >= 3
+    }
+
+
+_STOPWORDS = {
+    "a", "an", "the", "of", "on", "in", "at", "to", "and", "or", "for",
+    "with", "from", "by", "as", "is", "are", "was", "were", "be", "been",
+    "this", "that", "these", "those", "it", "its",
+}
+
+
+@lru_cache(maxsize=8)
+def _catalog_entries(repo_root: str) -> dict[str, dict]:
+    """Map CATALOG.json local_path -> entry (cached per repo root)."""
+    path = Path(repo_root) / "assets" / "images" / "CATALOG.json"
+    data = read_json(path)
+    entries = data.get("entries", [])
+    if not isinstance(entries, list):
+        raise PipelineError(f"CATALOG.json entries is not an array: {path}")
+    return {str(entry.get("local_path")): entry for entry in entries
+            if isinstance(entry, dict)}
+
+
+def _repo_rel(repo_root: Path, resolved: Path) -> str:
+    root = repo_root.resolve()
+    try:
+        return resolved.resolve().relative_to(root).as_posix()
+    except ValueError:
+        raise PipelineError(f"path {resolved} resolves outside the repo root {root}")
+
+
+# ---------------------------------------------------------------------------
+# gate 1: cue integrity
+# ---------------------------------------------------------------------------
+
+def cue_integrity(manifest: dict) -> None:
+    """Every cue must be a casefold substring of its scene's narration."""
+    lid = _lid(manifest)
+    for scene in _scenes(manifest):
+        sid = scene.get("id", "<unknown scene>")
+        narration = scene.get("narration", {}).get("text", "")
+        if not isinstance(narration, str) or not narration:
+            continue
+        folded = narration.casefold()
+        for where, cue in iter_cues(scene):
+            if not isinstance(cue, str) or cue.strip().casefold() not in folded:
+                raise PipelineError(
+                    f"{lid}/{sid}: {where} {cue!r} is not a substring of the narration text; "
+                    f"cues must be copied verbatim from the narration")
+
+
+# ---------------------------------------------------------------------------
+# gate 2: TTS-safe text
+# ---------------------------------------------------------------------------
+
+_FORBIDDEN_TTS_CHARS = {
+    "\u2014": "em dash (use a period or comma)",
+    "\u2013": "en dash (use a hyphen or comma)",
+    "\u201c": "left double quote (use straight quotes)",
+    "\u201d": "right double quote (use straight quotes)",
+    "\u2018": "left single quote (use a straight apostrophe)",
+    "\u2019": "right single quote (use a straight apostrophe)",
+    "\u2026": "ellipsis (write the pause out)",
+}
+
+_CAPS_RE = re.compile(r"\b[A-Z]{2,}s?\b")
+_CAPS_ALLOWLIST = {"AP", "US"}
+
+
+def tts_text(manifest: dict) -> None:
+    """Narration must be TTS-safe: ASCII punctuation only, and ALL-CAPS
+    tokens must be hyphen-spaced (A-P-U-S-H) or explicitly allowlisted."""
+    lid = _lid(manifest)
+    for scene in _scenes(manifest):
+        sid = scene.get("id", "<unknown scene>")
+        text = scene.get("narration", {}).get("text", "")
+        if not isinstance(text, str):
+            continue
+        for char, hint in _FORBIDDEN_TTS_CHARS.items():
+            if char in text:
+                raise PipelineError(
+                    f"{lid}/{sid}: narration contains {hint}; "
+                    f"TTS engines render it unpredictably")
+        for match in _CAPS_RE.finditer(text):
+            token = match.group(0)
+            if token not in _CAPS_ALLOWLIST and "-" not in token:
+                raise PipelineError(
+                    f"{lid}/{sid}: ALL-CAPS token {token!r} will be misread by TTS "
+                    f"(e.g. 'SAQs' reads as 'sacks'); hyphen-space it "
+                    f"(e.g. 'S-A-Qs') or add it to the allowlist")
+
+
+# ---------------------------------------------------------------------------
+# gate 3: on-screen text quantity
+# ---------------------------------------------------------------------------
+
+def _word_count(text: Any) -> int:
+    return len(str(text).split())
+
+
+def text_quantity(manifest: dict) -> None:
+    """On-screen text stays glanceable: beat text <= 8 words, bullets
+    <= 12 words each and <= 4 bullets per scene."""
+    lid = _lid(manifest)
+    for scene in _scenes(manifest):
+        sid = scene.get("id", "<unknown scene>")
+        for index, beat in enumerate(scene.get("beats", []) or []):
+            text = beat.get("text", "") if isinstance(beat, dict) else ""
+            if _word_count(text) > 8:
+                raise PipelineError(
+                    f"{lid}/{sid}: beats[{index}] text has {_word_count(text)} words "
+                    f"(>{8}); keep overlay text glanceable: {text!r}")
+        bullets = (scene.get("animation", {}) or {}).get("bullets", []) or []
+        if len(bullets) > 4:
+            raise PipelineError(
+                f"{lid}/{sid}: {len(bullets)} bullets (>4); split the scene or cut")
+        for index, bullet in enumerate(bullets):
+            if _word_count(bullet) > 12:
+                raise PipelineError(
+                    f"{lid}/{sid}: bullet[{index}] has {_word_count(bullet)} words "
+                    f"(>12); shorten it: {str(bullet)[:80]!r}")
+
+
+# ---------------------------------------------------------------------------
+# gate 4: image license
+# ---------------------------------------------------------------------------
+
+# Matches the catalog's own PD conventions: the builder's default note is
+# "PD: pre-1930 / CC0 (verified at download)", and sourced notes use
+# "pre-1930 publication" for pre-1930 works.
+_LICENSE_RE = re.compile(r"public domain|CC0|pre-1930", re.IGNORECASE)
+
+
+def license_gate(manifest: dict, manifest_path: Path, repo_root: Path) -> None:
+    """Every base_image must resolve to a CATALOG.json entry that is on disk
+    and licensed public domain / CC0."""
+    lid = _lid(manifest)
+    entries = _catalog_entries(str(repo_root))
+    for scene in _scenes(manifest):
+        sid = scene.get("id", "<unknown scene>")
+        base = (scene.get("visual", {}) or {}).get("base_image")
+        if not base:
+            continue
+        resolved = resolve_local(base, manifest_path.parent, repo_root)
+        key = _repo_rel(repo_root, resolved)
+        entry = entries.get(key)
+        if entry is None:
+            raise PipelineError(
+                f"{lid}/{sid}: base_image {base!r} (resolves to {key}) has no "
+                f"CATALOG.json entry; catalog every image before use")
+        if not entry.get("on_disk"):
+            raise PipelineError(
+                f"{lid}/{sid}: base_image {base!r} is flagged not-on-disk in CATALOG.json")
+        note = (entry.get("provenance") or {}).get("license_note", "")
+        if not _LICENSE_RE.search(str(note)):
+            raise PipelineError(
+                f"{lid}/{sid}: base_image {base!r} license {note!r} is not "
+                f"public domain / CC0")
+
+
+# ---------------------------------------------------------------------------
+# gate 5: AI-prompt / base-image coherence
+# ---------------------------------------------------------------------------
+
+def prompt_subject_coherence(manifest: dict, manifest_path: Path,
+                             repo_root: Path) -> None:
+    """An ai_clip prompt must describe its actual base image: it must share
+    >= 2 content tokens with the image's catalog subject. Catches prompts
+    written for a different image (e.g. 'archival document' over a painting)."""
+    lid = _lid(manifest)
+    entries = _catalog_entries(str(repo_root))
+    for scene in _scenes(manifest):
+        sid = scene.get("id", "<unknown scene>")
+        animation = scene.get("animation", {}) or {}
+        if animation.get("type") != "ai_clip":
+            continue
+        prompt = animation.get("prompt", "")
+        base = (scene.get("visual", {}) or {}).get("base_image")
+        if not base:
+            raise PipelineError(f"{lid}/{sid}: ai_clip scene has no base_image")
+        resolved = resolve_local(base, manifest_path.parent, repo_root)
+        key = _repo_rel(repo_root, resolved)
+        entry = entries.get(key)
+        if entry is None:
+            raise PipelineError(
+                f"{lid}/{sid}: base_image {base!r} has no CATALOG.json entry; "
+                f"cannot check prompt/subject coherence")
+        subject = str(entry.get("subject", ""))
+        shared = _content_tokens(prompt) & _content_tokens(subject)
+        if len(shared) < 2:
+            raise PipelineError(
+                f"{lid}/{sid}: ai_clip prompt shares only {len(shared)} content "
+                f"token(s) {sorted(shared)} with the base image subject "
+                f"{subject!r}; rewrite the prompt to describe the actual image")
+
+
+# ---------------------------------------------------------------------------
+# gate 6: spec parity
+# ---------------------------------------------------------------------------
+
+def spec_parity(manifest: dict) -> None:
+    """Curriculum-level presentation claims must be wired in the manifests.
+    captions:true fails because no caption renderer exists; a music claim
+    fails unless every scene defines audio.ambience."""
+    lid = _lid(manifest)
+    presentation = manifest.get("presentation", {}) or {}
+    if presentation.get("captions"):
+        raise PipelineError(
+            f"{lid}: defaults.presentation.captions is set but no caption "
+            f"renderer exists in the pipeline; remove the claim or implement "
+            f"caption support")
+    if presentation.get("music"):
+        missing = [str(scene.get("id", "<unknown scene>"))
+                   for scene in _scenes(manifest)
+                   if not ((scene.get("audio", {}) or {}).get("ambience"))]
+        if missing:
+            raise PipelineError(
+                f"{lid}: defaults.presentation.music is set but these scenes "
+                f"define no audio.ambience: {', '.join(missing)}; wire a music "
+                f"bed or remove the claim")
+
+
+# ---------------------------------------------------------------------------
+# gate 7: variety
+# ---------------------------------------------------------------------------
+
+def variety(manifest: dict) -> None:
+    """A lesson must use >= 3 distinct animation types, and no 3 consecutive
+    scenes may share a transition type (avoids monotonous dip-to-black runs)."""
+    lid = _lid(manifest)
+    scenes = _scenes(manifest)
+    types = {str((scene.get("animation", {}) or {}).get("type"))
+             for scene in scenes}
+    types.discard("None")
+    if len(types) < 3:
+        raise PipelineError(
+            f"{lid}: only {len(types)} distinct animation type(s) {sorted(types)}; "
+            f"a lesson needs at least 3 for visual variety")
+    run_type: str | None = None
+    run_length = 0
+    for scene in scenes:
+        current = str((scene.get("transition", {}) or {}).get("type", "none"))
+        if current == run_type:
+            run_length += 1
+        else:
+            run_type, run_length = current, 1
+        if run_length >= 3:
+            raise PipelineError(
+                f"{lid}: {run_length} consecutive scenes use transition "
+                f"{current!r}; vary transitions")
+
+
+# ---------------------------------------------------------------------------
+# direction tags
+# ---------------------------------------------------------------------------
+
+def direction_gate(manifest: dict) -> None:
+    """Every narration must carry performance direction, and every tag must be valid.
+
+    Fails on: unknown tags, unclosed/mis-nested pairs, bad [pause:N] values,
+    [VOICE:name] names missing from tts.voices, and narrations with zero
+    direction tags (a flat read is a defect, not a default).
+    """
+    lid = manifest.get("lesson_id", "?")
+    voices = (manifest.get("tts") or {}).get("voices") or {}
+    for scene in manifest.get("scenes", []):
+        where = f"{lid}/{scene.get('id', '?')} narration"
+        text = scene.get("narration", {}).get("text", "")
+        try:
+            items = parse_direction(text, where)
+        except PipelineError:
+            raise
+        tags = {item[1] for item in items if item[0] == "tag"}
+        if not tags:
+            raise PipelineError(
+                f"{where}: narration has no direction tags; add at least one "
+                f"([beat], [emphasis], [pause:N], [slow]/[fast], an emotion tag)")
+        for item in items:
+            if item[0] == "tag" and item[1] == "VOICE" and item[3] is False:
+                if item[2] not in voices:
+                    raise PipelineError(
+                        f"{where}: [VOICE:{item[2]}] not in tts.voices "
+                        f"(available: {sorted(voices)})")
+
+
+# ---------------------------------------------------------------------------
+# runner
+# ---------------------------------------------------------------------------
+
+def run_all_gates(manifest: dict, manifest_path: Path, repo_root: Path) -> None:
+    """Run every hard gate against one expanded lesson manifest."""
+    cue_integrity(manifest)
+    direction_gate(manifest)
+    tts_text(manifest)
+    text_quantity(manifest)
+    license_gate(manifest, manifest_path, repo_root)
+    prompt_subject_coherence(manifest, manifest_path, repo_root)
+    spec_parity(manifest)
+    variety(manifest)

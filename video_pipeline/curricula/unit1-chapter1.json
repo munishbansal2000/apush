@@ -63,10 +63,11 @@
         {
           "chapter_id": "u1-ch1",
           "title": "Native Societies and Atlantic Contact",
-          "description": "A two-lesson chapter moving from Indigenous regional diversity to sustained Atlantic contact and exchange.",
+          "description": "A three-lesson chapter moving from Indigenous regional diversity to the causes of European exploration and sustained Atlantic contact and exchange.",
           "essential_questions": [
             "How did environment shape societies in North America before 1492?",
-            "Why did Atlantic contact produce unequal demographic, economic, and political consequences?"
+            "Why did Atlantic contact produce unequal demographic, economic, and political consequences?",
+            "What combination of motives, ideas, and technology launched European exploration?"
           ],
           "learning_objectives": [
             "Compare Indigenous societies in at least two North American regions.",
@@ -319,6 +320,22 @@
                       "text": "GEOGRAPHY INFLUENCES—NOT DETERMINES",
                       "x": 0.5,
                       "y": 0.52
+                    },
+                    {
+                      "type": "label",
+                      "cue": "Different environments",
+                      "duration": 3.2,
+                      "text": "SAME CONTINENT, DIFFERENT STRATEGIES",
+                      "x": 0.5,
+                      "y": 0.18
+                    },
+                    {
+                      "type": "question",
+                      "cue": "change Plains life",
+                      "duration": 3.6,
+                      "text": "What happens when the horse arrives?",
+                      "x": 0.5,
+                      "y": 0.82
                     }
                   ],
                   "audio": {
@@ -389,6 +406,22 @@
                       "text": "Use evidence, not stereotypes",
                       "x": 0.5,
                       "y": 0.16
+                    },
+                    {
+                      "type": "label",
+                      "cue": "communities made choices",
+                      "duration": 3.2,
+                      "text": "ENVIRONMENT SHAPES, PEOPLE CHOOSE",
+                      "x": 0.5,
+                      "y": 0.18
+                    },
+                    {
+                      "type": "host",
+                      "cue": "as passive actors",
+                      "duration": 3.6,
+                      "text": "Active societies, not passive victims",
+                      "x": 0.5,
+                      "y": 0.78
                     }
                   ],
                   "audio": {
@@ -550,6 +583,22 @@
                       "text": "Follow the route; then ask who financed it",
                       "x": 0.5,
                       "y": 0.84
+                    },
+                    {
+                      "type": "label",
+                      "cue": "By the late fifteenth century",
+                      "duration": 3.2,
+                      "text": "EUROPE LOOKS WEST",
+                      "x": 0.5,
+                      "y": 0.18
+                    },
+                    {
+                      "type": "question",
+                      "cue": "risky expeditions",
+                      "duration": 3.6,
+                      "text": "Who pays for a gamble?",
+                      "x": 0.5,
+                      "y": 0.82
                     }
                   ],
                   "audio": {
@@ -917,7 +966,565 @@
                     "license": "Public domain or educational fair use",
                     "notes": "Verify exact repository provenance before publication."
                   },
-                  "production_notes": "End on the judgment statement, then hold two seconds for note-taking."
+                  "production_notes": "End on the judgment statement, then hold two seconds for note-taking.",
+                  "beats": [
+                    {
+                      "type": "label",
+                      "cue": "The strongest explanation",
+                      "duration": 3.4,
+                      "text": "CAUSE + CONSEQUENCE",
+                      "x": 0.5,
+                      "y": 0.18
+                    },
+                    {
+                      "type": "host",
+                      "cue": "Competition, commerce, and Christianity",
+                      "duration": 3.6,
+                      "text": "Three C's pushed exploration",
+                      "x": 0.5,
+                      "y": 0.78
+                    },
+                    {
+                      "type": "question",
+                      "cue": "not an equal one",
+                      "duration": 3.8,
+                      "text": "Connected, but not equal",
+                      "x": 0.5,
+                      "y": 0.82
+                    },
+                    {
+                      "type": "progress",
+                      "at": 0.0,
+                      "duration": 16.0,
+                      "y": 0.94
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "lesson_id": "u1-ch1-l3-why-europe-sailed",
+              "title": "Why Europe Sailed West",
+              "description": "Economic motives, crusading ideology, maritime technology, Columbus's miscalculation, and the papal division of the world — the causes of European exploration.",
+              "essential_question": "Why did European rulers spend money on voyages into an unknown ocean?",
+              "learning_objectives": [
+                "Explain the economic pressures that pushed Iberian rulers to seek a western route to Asia.",
+                "Describe how the Reconquista and new maritime technology made sustained Atlantic voyages possible.",
+                "Rank the motives of gold, God, and glory and justify the hierarchy with evidence."
+              ],
+              "key_terms": [
+                {
+                  "term": "Reconquista",
+                  "definition": "The centuries-long Christian reconquest of Iberia from Muslim rule, completed with the fall of Granada in 1492."
+                },
+                {
+                  "term": "caravel",
+                  "definition": "A small, fast Portuguese sailing ship with lateen sails capable of sailing against the wind on long Atlantic voyages."
+                },
+                {
+                  "term": "Treaty of Tordesillas",
+                  "definition": "The 1494 papal agreement dividing newly discovered lands between Spain, west of the line, and Portugal, east of it."
+                }
+              ],
+              "ap_alignment": {
+                "topics": [
+                  "1.2 European Exploration in the Americas"
+                ],
+                "skills": [
+                  "Causation",
+                  "Contextualization"
+                ]
+              },
+              "output": "../../build/lesson-videos/u1-ch1-l3-why-europe-sailed.mp4",
+              "scenes": [
+                {
+                  "id": "spice-shortcut",
+                  "purpose": "hook",
+                  "narration": {
+                    "text": "By the 1400s, Europe craved [emphasis]pepper, cinnamon, and silk[/emphasis]. And every bale crossed lands controlled by Ottoman and Italian middlemen who took a cut at each stop. Prices kept climbing before the goods reached Lisbon. [beat] A sea route straight to the spice islands would skip every taxman. And make its finder the richest merchant in Europe."
+                  },
+                  "visual": {
+                    "base_image": "../../assets/images/u1/original-u1-columbus-voyages-01.jpg"
+                  },
+                  "animation": {
+                    "type": "map",
+                    "title": "The Spice Route Squeeze",
+                    "moves": [
+                      {
+                        "path": [
+                          [
+                            0.85,
+                            0.45
+                          ],
+                          [
+                            0.7,
+                            0.42
+                          ],
+                          [
+                            0.55,
+                            0.38
+                          ]
+                        ],
+                        "cue": "Ottoman and Italian",
+                        "kind": "dots",
+                        "color": [
+                          224,
+                          82,
+                          82
+                        ],
+                        "label": "Old route: taxed at every border",
+                        "label_pos": [
+                          0.72,
+                          0.32
+                        ]
+                      },
+                      {
+                        "path": [
+                          [
+                            0.15,
+                            0.55
+                          ],
+                          [
+                            0.3,
+                            0.58
+                          ],
+                          [
+                            0.45,
+                            0.55
+                          ]
+                        ],
+                        "cue": "A sea route straight",
+                        "kind": "arrow",
+                        "color": [
+                          87,
+                          192,
+                          224
+                        ],
+                        "label": "Western shortcut — unknown waters",
+                        "label_pos": [
+                          0.28,
+                          0.68
+                        ]
+                      }
+                    ]
+                  },
+                  "beats": [
+                    {
+                      "type": "label",
+                      "cue": "Europe craved",
+                      "duration": 3.0,
+                      "text": "THE PRIZE: ASIAN SPICES",
+                      "x": 0.5,
+                      "y": 0.16
+                    },
+                    {
+                      "type": "host",
+                      "cue": "Ottoman and Italian",
+                      "duration": 3.5,
+                      "text": "Middlemen took a cut at every border",
+                      "x": 0.5,
+                      "y": 0.84
+                    },
+                    {
+                      "type": "question",
+                      "cue": "richest merchant in Europe",
+                      "duration": 3.5,
+                      "text": "What made a shortcut worth the gamble?",
+                      "x": 0.5,
+                      "y": 0.84
+                    },
+                    {
+                      "type": "progress",
+                      "at": 0.0,
+                      "duration": 16.0,
+                      "y": 0.94
+                    }
+                  ],
+                  "audio": {
+                    "effects": [
+                      {
+                        "cue": "every bale crossed",
+                        "kind": "page_turn",
+                        "volume": 0.16
+                      },
+                      {
+                        "cue": "richest merchant",
+                        "kind": "chime",
+                        "volume": 0.15
+                      }
+                    ]
+                  },
+                  "transition": {
+                    "type": "dip_to_black",
+                    "duration": 0.25
+                  },
+                  "min_duration": 10,
+                  "topics": [
+                    "1.2"
+                  ],
+                  "on_screen_text": [
+                    "Spice prices",
+                    "Middlemen at every border",
+                    "The shortcut prize"
+                  ],
+                  "source": {
+                    "title": "Map of Columbus's voyages",
+                    "license": "Public domain or educational fair use",
+                    "notes": "Verify exact repository provenance before publication."
+                  },
+                  "production_notes": "Draw the old overland route first with marching dots, then the westward gamble as a dashed arrow — hold both labels while the narrator reaches the prize."
+                },
+                {
+                  "id": "reconquista-tech",
+                  "purpose": "concept",
+                  "narration": {
+                    "text": "[fierce] Spain entered 1492 as a crusader state. After seven centuries of the Reconquista, Christian kingdoms retaking Iberia from Muslim rule, Granada fell, leaving an army with no enemy left to fight. [beat] The means came from Portugal: [emphasis]the caravel[/emphasis], a ship with lateen sails that could tack against winds, and [emphasis]the astrolabe[/emphasis], which fixed latitude from the stars. Technology made the gamble possible."
+                  },
+                  "visual": {
+                    "base_image": "../../assets/images/u1/u1-caravel-fleet-huys.jpg",
+                    "clip": "../../video/ai_clips/u1-ch1-l3-why-europe-sailed-reconquista-tech.mp4"
+                  },
+                  "animation": {
+                    "type": "ai_clip",
+                    "prompt": "A historical engraving of a sailing fleet on open water. Broad rolling waves lift and settle the hulls; large sails billow under steady wind; pennants and flags stream from the masts; layered clouds drift slowly behind the rigging. The composition stays fixed. Do not add buildings or people or text or modern objects.",
+                    "duration": 8,
+                    "seed": 1492,
+                    "provider": "meta-ui",
+                    "fallback_provider": "ltx",
+                    "caption": "Technology turned ambition into voyages"
+                  },
+                  "beats": [
+                    {
+                      "type": "label",
+                      "cue": "as a crusader state",
+                      "duration": 3.0,
+                      "text": "1492: A CRUSADER STATE",
+                      "x": 0.5,
+                      "y": 0.16,
+                      "color": [
+                        233,
+                        196,
+                        106
+                      ]
+                    },
+                    {
+                      "type": "host",
+                      "cue": "the caravel",
+                      "duration": 3.5,
+                      "text": "The caravel: fast, ocean-going, wind-beating",
+                      "x": 0.5,
+                      "y": 0.84
+                    },
+                    {
+                      "type": "icon",
+                      "cue": "the astrolabe",
+                      "duration": 2.8,
+                      "text": "ASTROLABE: LATITUDE FROM THE STARS",
+                      "x": 0.5,
+                      "y": 0.2,
+                      "color": [
+                        87,
+                        192,
+                        224
+                      ]
+                    },
+                    {
+                      "type": "question",
+                      "cue": "the gamble possible",
+                      "duration": 3.2,
+                      "text": "Why did technology matter more than courage?",
+                      "x": 0.5,
+                      "y": 0.84
+                    }
+                  ],
+                  "audio": {
+                    "effects": [
+                      {
+                        "cue": "crusader state",
+                        "kind": "impact",
+                        "volume": 0.16
+                      },
+                      {
+                        "cue": "the astrolabe",
+                        "kind": "chime",
+                        "volume": 0.14
+                      }
+                    ]
+                  },
+                  "transition": {
+                    "type": "crossfade",
+                    "duration": 0.25
+                  },
+                  "min_duration": 10,
+                  "topics": [
+                    "1.2"
+                  ],
+                  "on_screen_text": [
+                    "Reconquista ends",
+                    "Caravel",
+                    "Lateen sails",
+                    "Astrolabe"
+                  ],
+                  "source": {
+                    "title": "Historical engraving of a caravel fleet",
+                    "creator": "Frans Huys",
+                    "license": "Public domain"
+                  },
+                  "production_notes": "Let the fleet clip run under the technology half; the Reconquista half carries the title beat."
+                },
+                {
+                  "id": "columbus-gamble",
+                  "purpose": "evidence",
+                  "narration": {
+                    "text": "Columbus was wrong. [beat] His math shrank the Earth's size to make Asia look reachable, and most experts correctly rejected it. But Ferdinand and Isabella had just united Spain, were flush with victory, and the price was tiny: [emphasis]three ships, one cast of the dice[/emphasis]. [pause:1] In 1494 a pope's treaty drew a line through the Atlantic. East of it Portugal's, west of it Spain's."
+                  },
+                  "visual": {
+                    "base_image": "../../assets/images/u1/original-ctx-u1-03.jpg"
+                  },
+                  "animation": {
+                    "type": "timeline",
+                    "title": "From Victory to a Divided World",
+                    "events": [
+                      [
+                        "1492 — Granada falls",
+                        "The Reconquista ends; Spain has an idle army"
+                      ],
+                      [
+                        "1492 — Columbus sails",
+                        "Wrong math, three small ships, one gamble"
+                      ],
+                      [
+                        "1494 — Tordesillas",
+                        "A pope's treaty: Portugal east, Spain west"
+                      ]
+                    ]
+                  },
+                  "beats": [
+                    {
+                      "type": "label",
+                      "cue": "His math shrank",
+                      "duration": 3.0,
+                      "text": "COLUMBUS'S MATH WAS WRONG",
+                      "x": 0.5,
+                      "y": 0.16,
+                      "color": [
+                        224,
+                        82,
+                        82
+                      ]
+                    },
+                    {
+                      "type": "host",
+                      "cue": "three ships",
+                      "duration": 3.5,
+                      "text": "Three ships: a cheap lottery ticket",
+                      "x": 0.5,
+                      "y": 0.84
+                    },
+                    {
+                      "type": "question",
+                      "cue": "cast of the dice",
+                      "duration": 3.2,
+                      "text": "Why fund a plan the experts rejected?",
+                      "x": 0.5,
+                      "y": 0.84
+                    },
+                    {
+                      "type": "progress",
+                      "at": 0.0,
+                      "duration": 16.0,
+                      "y": 0.94
+                    }
+                  ],
+                  "audio": {
+                    "effects": [
+                      {
+                        "cue": "most experts correctly rejected",
+                        "kind": "impact",
+                        "volume": 0.15
+                      },
+                      {
+                        "cue": "In 1494",
+                        "kind": "page_turn",
+                        "volume": 0.14
+                      }
+                    ]
+                  },
+                  "transition": {
+                    "type": "dip_to_black",
+                    "duration": 0.25
+                  },
+                  "min_duration": 10,
+                  "topics": [
+                    "1.2"
+                  ],
+                  "on_screen_text": [
+                    "Wrong math",
+                    "Cheap lottery ticket",
+                    "Tordesillas 1494"
+                  ],
+                  "source": {
+                    "title": "Waldseemuller world map",
+                    "date": "1507",
+                    "license": "Public domain",
+                    "notes": "Shows the early divided world; label the 1494 line as a later overlay."
+                  },
+                  "production_notes": "Reveal the three timeline events in order; the third event draws the division line as an overlay across the map."
+                },
+                {
+                  "id": "gold-god-glory",
+                  "purpose": "close",
+                  "narration": {
+                    "text": "Why did they sail? The answer comes in a triad: [fast]gold, God, and glory[/fast]. Gold meant spice profits and mines. It paid for everything. God meant converting souls and striking at Islam's flank. Glory meant crowns and a name on the map. [refrain]Be honest about the hierarchy: gold first.[/refrain] [beat] When they made landfall, they found a world on no map. Conquest comes next."
+                  },
+                  "visual": {
+                    "base_image": "../../assets/images/u1/u1-caravel-fleet-huys.jpg"
+                  },
+                  "animation": {
+                    "type": "diagram",
+                    "title": "The Honest Hierarchy",
+                    "nodes": [
+                      {
+                        "id": "gold",
+                        "label": "GOLD — spice profits and mines",
+                        "x": 0.5,
+                        "y": 0.24,
+                        "cue": "Gold meant spice profits",
+                        "color": [
+                          233,
+                          196,
+                          106
+                        ]
+                      },
+                      {
+                        "id": "god",
+                        "label": "GOD — converts and crusade",
+                        "x": 0.5,
+                        "y": 0.44,
+                        "cue": "God meant converting souls",
+                        "color": [
+                          87,
+                          192,
+                          224
+                        ]
+                      },
+                      {
+                        "id": "glory",
+                        "label": "GLORY — crowns and fame",
+                        "x": 0.5,
+                        "y": 0.64,
+                        "cue": "Glory meant crowns",
+                        "color": [
+                          178,
+                          126,
+                          224
+                        ]
+                      },
+                      {
+                        "id": "judgment",
+                        "label": "GOLD FIRST — the honest hierarchy",
+                        "x": 0.5,
+                        "y": 0.85,
+                        "cue": "Be honest about the hierarchy",
+                        "color": [
+                          224,
+                          82,
+                          82
+                        ]
+                      }
+                    ],
+                    "edges": [
+                      {
+                        "from": "gold",
+                        "to": "judgment",
+                        "label": "paid for everything",
+                        "cue": "It paid for everything"
+                      },
+                      {
+                        "from": "god",
+                        "to": "judgment",
+                        "label": "justified",
+                        "cue": "God meant converting souls"
+                      },
+                      {
+                        "from": "glory",
+                        "to": "judgment",
+                        "label": "followed",
+                        "cue": "Glory meant crowns"
+                      }
+                    ]
+                  },
+                  "beats": [
+                    {
+                      "type": "label",
+                      "cue": "gold, God, and glory",
+                      "duration": 3.0,
+                      "text": "THE TRIAD",
+                      "x": 0.5,
+                      "y": 0.16
+                    },
+                    {
+                      "type": "icon",
+                      "cue": "gold first",
+                      "duration": 2.8,
+                      "text": "GOLD FIRST",
+                      "x": 0.5,
+                      "y": 0.82,
+                      "color": [
+                        233,
+                        196,
+                        106
+                      ]
+                    },
+                    {
+                      "type": "question",
+                      "cue": "Conquest comes next",
+                      "duration": 3.2,
+                      "text": "What did they find across the ocean?",
+                      "x": 0.5,
+                      "y": 0.84
+                    },
+                    {
+                      "type": "progress",
+                      "at": 0.0,
+                      "duration": 16.0,
+                      "y": 0.94
+                    }
+                  ],
+                  "audio": {
+                    "effects": [
+                      {
+                        "cue": "The answer comes in a triad",
+                        "kind": "whoosh",
+                        "volume": 0.13
+                      },
+                      {
+                        "cue": "gold first",
+                        "kind": "impact",
+                        "volume": 0.16
+                      }
+                    ]
+                  },
+                  "transition": {
+                    "type": "slide",
+                    "duration": 0.25
+                  },
+                  "min_duration": 10,
+                  "topics": [
+                    "1.2"
+                  ],
+                  "on_screen_text": [
+                    "Gold",
+                    "God",
+                    "Glory",
+                    "Hierarchy: gold first"
+                  ],
+                  "source": {
+                    "title": "Historical engraving of a caravel fleet",
+                    "creator": "Frans Huys",
+                    "license": "Public domain"
+                  },
+                  "production_notes": "Reveal the three motives fast and clipped, then half-speed the landing on the hierarchy; end on the forward lean to conquest."
                 }
               ]
             }

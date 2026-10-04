@@ -17,7 +17,7 @@ class CurriculumTests(unittest.TestCase):
             "course": {"id": "apush", "title": "APUSH"},
             "defaults": {
                 "tts": {"engine": "edge", "edge_voice": "en-US-GuyNeural"},
-                "presentation": {"audience": "AP students", "captions": True}
+                "presentation": {"audience": "AP students"}
             },
             "units": [{
                 "unit_id": "unit-1",
@@ -32,13 +32,35 @@ class CurriculumTests(unittest.TestCase):
                         "lesson_id": "u1-ch1-l1",
                         "title": "Lesson 1",
                         "output": "lesson.mp4",
-                        "scenes": [{
-                            "id": "hook",
-                            "purpose": "hook",
-                            "narration": {"text": "This narration is long enough."},
-                            "visual": {},
-                            "animation": {"type": "title", "title": "A title"}
-                        }]
+                        "scenes": [
+                            {
+                                "id": "hook",
+                                "purpose": "hook",
+                                "narration": {"text": "This narration is [beat] long enough."},
+                                "visual": {},
+                                "animation": {"type": "title", "title": "A title"},
+                                "beats": [{"type": "label", "cue": "long enough",
+                                           "text": "OK"}],
+                                "transition": {"type": "dip_to_black", "duration": 0.25}
+                            },
+                            {
+                                "id": "evidence",
+                                "purpose": "evidence",
+                                "narration": {"text": "A second narration with [emphasis]plain words[/emphasis]."},
+                                "visual": {},
+                                "animation": {"type": "bullets",
+                                              "bullets": ["first point", "second point"]},
+                                "transition": {"type": "crossfade", "duration": 0.25}
+                            },
+                            {
+                                "id": "close",
+                                "purpose": "close",
+                                "narration": {"text": "A third narration with plain words. [beat]"},
+                                "visual": {},
+                                "animation": {"type": "typewriter", "text": "Closing words."},
+                                "transition": {"type": "slide", "duration": 0.25}
+                            }
+                        ]
                     }]
                 }]
             }]

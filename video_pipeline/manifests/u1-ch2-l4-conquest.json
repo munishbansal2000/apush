@@ -1,0 +1,422 @@
+{
+  "video": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "transition_seconds": 0.2
+  },
+  "tts": {
+    "engine": "edge",
+    "edge_voice": "en-US-GuyNeural",
+    "edge_rate": "+2%",
+    "edge_pitch": "+0Hz"
+  },
+  "generation": {
+    "provider": "none"
+  },
+  "clip_generation": {
+    "provider": "meta-ui",
+    "cookie": "C:/Users/munis/projects/sat_question_runner/new_eng_qs/config/meta_cookies/ramsham21.json",
+    "lib_dir": "C:/Users/munis/projects/sat_question_runner/new_eng_qs/lib",
+    "browser": "chrome",
+    "timeout_seconds": 1200,
+    "meta_refusal_retries": 2,
+    "keep_open_on_failure": true
+  },
+  "presentation": {
+    "audience": "APUSH students",
+    "tone": "clear, analytical, and historically precise",
+    "visual_style": "museum-documentary visuals with readable AP exam vocabulary",
+    "captions": false,
+    "branding": "APUSH Unit 1"
+  },
+  "lesson_id": "u1-ch2-l4-conquest",
+  "title": "How 600 Men Toppled an Empire",
+  "description": "The paradox of Spanish conquest: how disease, Native alliances, and technology — not guns alone — toppled the Mexica and Inca empires.",
+  "essential_question": "How did a few hundred Spaniards topple empires of millions?",
+  "learning_objectives": [
+    "Explain why guns alone cannot account for Spanish victories.",
+    "Identify the roles of smallpox, the Tlaxcalans, and steel and horses in the conquests.",
+    "Compare the falls of Tenochtitlan (1521) and the Inca state (1532-33) as one pattern."
+  ],
+  "key_terms": [
+    {
+      "term": "conquistador",
+      "definition": "Spanish conquerors who toppled the Mexica and Inca empires in the 1500s."
+    },
+    {
+      "term": "smallpox",
+      "definition": "An Afro-Eurasian disease that devastated Indigenous populations lacking immunity."
+    },
+    {
+      "term": "Tlaxcalans",
+      "definition": "Enemies of the Mexica who allied with Cortés, supplying tens of thousands of warriors."
+    }
+  ],
+  "ap_alignment": {
+    "topics": [
+      "1.2 European Exploration in the Americas"
+    ],
+    "skills": [
+      "Causation",
+      "Contextualization",
+      "Analyzing Evidence"
+    ],
+    "period": "Period 1",
+    "themes": [
+      "American and National Identity",
+      "Work, Exchange, and Technology",
+      "Geography and the Environment",
+      "Migration and Settlement"
+    ]
+  },
+  "output": "../../build/lesson-videos/u1-ch2-l4-conquest.mp4",
+  "scenes": [
+    {
+      "id": "conquest-paradox",
+      "purpose": "hook",
+      "narration": {
+        "text": "Cusco was the capital of an empire that ruled millions, stretching from the Andes to the sea. [beat] In 1533 [emphasis]a few hundred Spaniards[/emphasis] seized it. Just as [es]Cortés[/es] had toppled the [es]Mexica[/es] empire a decade earlier. Guns alone cannot explain this. [urgent] So how did a few hundred men conquer worlds of millions?"
+      },
+      "visual": {
+        "base_image": "../../assets/images/u1/u1-debry-cusco-fall.jpg",
+        "clip": "../../video/ai_clips/u1-ch2-l4-conquest-hook.mp4"
+      },
+      "animation": {
+        "type": "ai_clip",
+        "prompt": "A de Bry engraving of the Inca capital Cusco. Clouds drift slowly over the mountain ridges; wind stirs the trees along the rocky slopes; thin haze moves through the distant valley; dust drifts softly over the empty rooftops. Keep the camera static. Do not add people or text or modern objects.",
+        "duration": 8,
+        "seed": 1533,
+        "provider": "meta-ui",
+        "fallback_provider": "ltx",
+        "caption": "Cusco: an empire of millions, taken by a few hundred"
+      },
+      "beats": [
+        {
+          "type": "label",
+          "cue": "Cusco was the capital",
+          "duration": 3.2,
+          "text": "CUSCO: CAPITAL OF MILLIONS",
+          "x": 0.5,
+          "y": 0.16
+        },
+        {
+          "type": "host",
+          "cue": "a few hundred Spaniards",
+          "duration": 3.2,
+          "text": "A few hundred — against millions",
+          "x": 0.5,
+          "y": 0.8
+        },
+        {
+          "type": "question",
+          "cue": "how did a few",
+          "duration": 3.6,
+          "text": "How did a few hundred conquer millions?",
+          "x": 0.5,
+          "y": 0.84
+        },
+        {
+          "type": "progress",
+          "at": 0.0,
+          "duration": 16.0,
+          "y": 0.94
+        }
+      ],
+      "audio": {
+        "effects": [
+          {
+            "cue": "Guns alone cannot",
+            "kind": "impact",
+            "volume": 0.2
+          }
+        ]
+      },
+      "transition": {
+        "type": "dip_to_black",
+        "duration": 0.25
+      },
+      "min_duration": 10,
+      "topics": [
+        "1.2"
+      ],
+      "on_screen_text": [
+        "Cusco",
+        "An empire of millions",
+        "1533",
+        "How?"
+      ],
+      "source": {
+        "title": "Cusco, capital of the Inca Empire",
+        "creator": "Theodor de Bry",
+        "license": "Public domain",
+        "notes": "European engraving; treat the city plan and figures as the engraver's reconstruction, not a photograph."
+      },
+      "production_notes": "Open on the scale of the city, then slam the paradox question over it."
+    },
+    {
+      "id": "conquest-mechanism",
+      "purpose": "evidence",
+      "narration": {
+        "text": "Smallpox traveled ahead of the armies and [emphasis]killed far more people[/emphasis] than any battle. The [es]Tlaxcalans[/es], enemies of the [es]Mexica[/es], sent tens of thousands of warriors to fight beside [es]Cortés[/es]. Horses and steel gave the Spanish an edge in close combat. [beat] Victory was a system: [fast]disease, alliances, and technology working together[/fast]."
+      },
+      "visual": {
+        "base_image": "../../assets/images/u1/5s24-ch06-mcq-04.jpg"
+      },
+      "animation": {
+        "type": "bullets",
+        "bullets": [
+          "Disease first: smallpox killed more than any battle",
+          "Alliances: the Tlaxcalans sent tens of thousands of warriors",
+          "Edges, not miracles: steel swords and horses in close combat",
+          "Victory was a system — disease, alliances, technology"
+        ],
+        "footer": "AP Skill: Causation — weigh multiple causes",
+        "stagger": 0.8,
+        "caption": "Mechanism, Not Myth"
+      },
+      "beats": [
+        {
+          "type": "label",
+          "cue": "killed far more people",
+          "duration": 3.0,
+          "text": "DISEASE KILLED MORE THAN BATTLES",
+          "x": 0.5,
+          "y": 0.18
+        },
+        {
+          "type": "label",
+          "cue": "tens of thousands of warriors",
+          "duration": 3.2,
+          "text": "NATIVE ALLIANCES: TENS OF THOUSANDS",
+          "x": 0.5,
+          "y": 0.8
+        },
+        {
+          "type": "label",
+          "cue": "Horses and steel gave",
+          "duration": 3.0,
+          "text": "STEEL + HORSES: AN EDGE",
+          "x": 0.5,
+          "y": 0.8
+        },
+        {
+          "type": "progress",
+          "at": 0.0,
+          "duration": 16.0,
+          "y": 0.94
+        }
+      ],
+      "audio": {
+        "effects": [
+          {
+            "cue": "Victory was a system",
+            "kind": "impact",
+            "volume": 0.16
+          }
+        ]
+      },
+      "transition": {
+        "type": "crossfade",
+        "duration": 0.25
+      },
+      "min_duration": 10,
+      "topics": [
+        "1.2"
+      ],
+      "on_screen_text": [
+        "Smallpox",
+        "Tlaxcalan allies",
+        "Steel + horses",
+        "A system, not a miracle"
+      ],
+      "source": {
+        "title": "De Bry engraving of the Spanish landing",
+        "creator": "Theodor de Bry",
+        "license": "Public domain",
+        "notes": "Verify exact plate provenance before publication; use as period European perspective."
+      },
+      "production_notes": "Reveal one bullet per narration clause; hold the AP skill footer at the end."
+    },
+    {
+      "id": "conquest-pattern",
+      "purpose": "concept",
+      "narration": {
+        "text": "[es]Cortés[/es] reached [es]Tenochtitlan[/es] in 1519 and found an empire strained by tribute and rivalries he learned to exploit. [beat] After smallpox ravaged the city, his coalition took it in 1521. A decade later [es]Pizarro[/es] copied the formula in Peru: [emphasis]seize the emperor [es]Atahualpa[/es] in 1532[/emphasis], and the Inca state fractured. Two empires, one pattern."
+      },
+      "visual": {
+        "base_image": "../../assets/images/u1/original-ctx-u1-03.jpg"
+      },
+      "animation": {
+        "type": "timeline",
+        "events": [
+          [
+            "1519",
+            "Cortés lands in Mexico; learns Mexica rivalries"
+          ],
+          [
+            "1520",
+            "Smallpox ravages Tenochtitlan during the siege"
+          ],
+          [
+            "1521",
+            "Tenochtitlan falls to Cortés's coalition"
+          ],
+          [
+            "1532",
+            "Pizarro seizes Atahualpa; the Inca state fractures"
+          ]
+        ]
+      },
+      "beats": [
+        {
+          "type": "label",
+          "cue": "Tenochtitlan",
+          "duration": 3.0,
+          "text": "1519: CORTÉS REACHES TENOCHTITLAN",
+          "x": 0.5,
+          "y": 0.16
+        },
+        {
+          "type": "label",
+          "cue": "took it in 1521",
+          "duration": 3.0,
+          "text": "1521: TENOCHTITLAN FALLS",
+          "x": 0.5,
+          "y": 0.8
+        },
+        {
+          "type": "label",
+          "cue": "Atahualpa",
+          "duration": 3.2,
+          "text": "1532: ATAHUALPA SEIZED",
+          "x": 0.5,
+          "y": 0.8
+        },
+        {
+          "type": "progress",
+          "at": 0.0,
+          "duration": 16.0,
+          "y": 0.94
+        }
+      ],
+      "audio": {
+        "effects": [
+          {
+            "cue": "Pizarro",
+            "kind": "whoosh",
+            "volume": 0.12
+          }
+        ]
+      },
+      "transition": {
+        "type": "dip_to_black",
+        "duration": 0.25
+      },
+      "min_duration": 10,
+      "topics": [
+        "1.2"
+      ],
+      "on_screen_text": [
+        "1519",
+        "1520-21",
+        "1532",
+        "One pattern"
+      ],
+      "source": {
+        "title": "Waldseemüller world map",
+        "creator": "Martin Waldseemüller",
+        "date": "1507",
+        "license": "Public domain",
+        "notes": "The first map to name America; used here as the mapped world Europeans were conquering."
+      },
+      "production_notes": "Advance the timeline in lockstep with the narration; end by holding all four events."
+    },
+    {
+      "id": "conquest-precondition",
+      "purpose": "close",
+      "narration": {
+        "text": "[slow]Conquest was not the end of the story. It was the foundation of everything that followed.[/slow] Spanish rule replaced tribute empires with colonial labor systems. The mines, the sugar plantations, and the flow of goods across the Atlantic all rested on what the [es]conquistadors[/es] had seized. [emphasis]To understand the exchange, start with the conquest.[/emphasis]"
+      },
+      "visual": {
+        "base_image": "../../assets/images/u1/5s24-ch06-mcq-01.jpg",
+        "clip": "../../video/ai_clips/u1-ch2-l4-conquest-outro.mp4"
+      },
+      "animation": {
+        "type": "ai_clip",
+        "prompt": "A Stradanus engraving of Vespucci's America. Ocean waves roll onto the shore; the great banner ripples in the sea wind; leaves stir in the tropical trees; clouds drift over the distant ships. Keep the camera static. Do not add people or text or modern objects.",
+        "duration": 9,
+        "seed": 1519,
+        "provider": "meta-ui",
+        "fallback_provider": "ltx",
+        "caption": "Conquest set the stage for everything after"
+      },
+      "beats": [
+        {
+          "type": "host",
+          "cue": "foundation of everything",
+          "duration": 3.2,
+          "text": "Conquest made everything after possible",
+          "x": 0.5,
+          "y": 0.84
+        },
+        {
+          "type": "label",
+          "cue": "colonial labor systems",
+          "duration": 3.0,
+          "text": "LABOR SYSTEMS",
+          "x": 0.5,
+          "y": 0.16
+        },
+        {
+          "type": "label",
+          "cue": "flow of goods",
+          "duration": 3.0,
+          "text": "SILVER + SUGAR + TRADE",
+          "x": 0.5,
+          "y": 0.8
+        },
+        {
+          "type": "progress",
+          "at": 0.0,
+          "duration": 16.0,
+          "y": 0.94
+        }
+      ],
+      "audio": {
+        "effects": [
+          {
+            "cue": "start with the conquest",
+            "kind": "chime",
+            "volume": 0.16
+          }
+        ]
+      },
+      "transition": {
+        "type": "slide",
+        "duration": 0.25
+      },
+      "min_duration": 10,
+      "topics": [
+        "1.2"
+      ],
+      "on_screen_text": [
+        "Conquest",
+        "Labor systems",
+        "Silver + sugar",
+        "The precondition"
+      ],
+      "source": {
+        "title": "America (allegory of the discovery)",
+        "creator": "Jan van der Straet (Stradanus)",
+        "license": "Public domain",
+        "notes": "European allegory — use to show how Europe imagined the New World, not how it was."
+      },
+      "production_notes": "End on the forward lean into the exchange and silver lessons; hold two seconds for note-taking."
+    }
+  ],
+  "schema_version": 1,
+  "course_id": "apush",
+  "unit_id": "unit-1",
+  "chapter_id": "u1-ch2"
+}

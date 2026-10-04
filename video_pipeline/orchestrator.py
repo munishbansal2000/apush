@@ -139,6 +139,7 @@ def process(path: Path, args, source_override: dict | None = None) -> None:
                 resolved, path, REPO_ROOT, require_files=True,
                 allow_missing_clips=clip_provider != "none")
             atomic_json(plan_path, resolved)
+            atomic_json(work / "resolved_manifest.input_hash", canonical_hash(manifest))
         layout_path = work / "layout_report.json"
         layout_report = validate_text_layout(resolved, path, REPO_ROOT)
         atomic_json(layout_path, layout_report)
@@ -147,6 +148,14 @@ def process(path: Path, args, source_override: dict | None = None) -> None:
         if args.only == "planned":
             return
     elif plan_path.exists():
+        # Never silently build on a resolved manifest written for an older input:
+        # fail closed and tell the user to re-run the planned stage.
+        hash_path = work / "resolved_manifest.input_hash"
+        if (not hash_path.exists()
+                or read_json(hash_path) != canonical_hash(manifest)):
+            raise PipelineError(
+                f"{lesson_id}: input manifest changed since resolved_manifest.json "
+                f"was written; re-run the planned stage before {args.only or args.from_stage or 'this stage'}")
         resolved = read_json(plan_path)
     elif any(scene["animation"]["type"] == "auto" for scene in resolved["scenes"]):
         raise PipelineError("resolved manifest is missing; run the planned stage first")
@@ -184,9 +193,14 @@ def process(path: Path, args, source_override: dict | None = None) -> None:
                       for scene in resolved["scenes"])):
             print("[tts] checkpoint current -- skipped")
         else:
-            if resolved["tts"].get("engine", "fish") == "fish":
+            engine = resolved["tts"].get("engine", "fish")
+            if engine == "fish":
                 server = health(resolved["tts"]["server_url"])
                 print(f"[tts] server ready: {server.get('model', 'Fish')} on {server.get('device', 'unknown')}")
+            elif engine == "fish_cloud":
+                model = (resolved["tts"].get("settings", {}) or {}).get(
+                    "fish_cloud_model", "s2.1-pro-free")
+                print(f"[tts] Fish Audio cloud model: {model}")
             else:
                 print(f"[tts] Edge voice: {resolved['tts'].get('edge_voice')}")
             artifacts = []

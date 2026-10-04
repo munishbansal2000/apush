@@ -1,0 +1,426 @@
+{
+  "video": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "transition_seconds": 0.2
+  },
+  "tts": {
+    "engine": "edge",
+    "edge_voice": "en-US-GuyNeural",
+    "edge_rate": "+2%",
+    "edge_pitch": "+0Hz"
+  },
+  "generation": {
+    "provider": "none"
+  },
+  "clip_generation": {
+    "provider": "meta-ui",
+    "cookie": "C:/Users/munis/projects/sat_question_runner/new_eng_qs/config/meta_cookies/ramsham21.json",
+    "lib_dir": "C:/Users/munis/projects/sat_question_runner/new_eng_qs/lib",
+    "browser": "chrome",
+    "timeout_seconds": 1200,
+    "meta_refusal_retries": 2,
+    "keep_open_on_failure": true
+  },
+  "presentation": {
+    "audience": "APUSH students",
+    "tone": "clear, analytical, and historically precise",
+    "visual_style": "museum-documentary visuals with readable AP exam vocabulary",
+    "captions": false,
+    "branding": "APUSH Unit 1"
+  },
+  "lesson_id": "u1-ch1-l1-native-societies",
+  "title": "North America Before European Contact",
+  "description": "Regional diversity, environmental adaptation, exchange networks, and political organization before sustained European contact.",
+  "essential_question": "How did geography and exchange shape diverse Indigenous societies before 1492?",
+  "learning_objectives": [
+    "Identify how climate and available resources influenced settlement and subsistence.",
+    "Compare the social organization of societies in different regions.",
+    "Explain why North America in 1491 cannot be described as a single culture."
+  ],
+  "key_terms": [
+    {
+      "term": "maize agriculture",
+      "definition": "Cultivation of corn that supported population growth and settled communities."
+    },
+    {
+      "term": "Cahokia",
+      "definition": "A major Mississippian urban and ceremonial center near the Mississippi River."
+    },
+    {
+      "term": "regional diversity",
+      "definition": "Variation among societies produced by geography, resources, migration, and cultural choices."
+    }
+  ],
+  "ap_alignment": {
+    "topics": [
+      "1.1 Indigenous Societies Before European Contact"
+    ],
+    "skills": [
+      "Contextualization",
+      "Comparison",
+      "Causation"
+    ],
+    "period": "Period 1",
+    "themes": [
+      "American and National Identity",
+      "Work, Exchange, and Technology",
+      "Geography and the Environment",
+      "Migration and Settlement"
+    ]
+  },
+  "output": "../../build/lesson-videos/u1-ch1-l1-native-societies.mp4",
+  "scenes": [
+    {
+      "id": "many-americas",
+      "purpose": "hook",
+      "narration": {
+        "text": "North America in 1491 was not one society waiting to be discovered. [beat] Millions of people lived in distinct communities, spoke many languages, and built economies adapted to local environments. The useful starting point is [emphasis]diversity[/emphasis], not a single stereotype."
+      },
+      "visual": {
+        "base_image": "../../assets/images/u1/original-u1-native-01.jpg",
+        "clip": "../../video/ai_clips/u1-1491-maize-living.mp4"
+      },
+      "animation": {
+        "type": "ai_clip",
+        "prompt": "A living historical engraving of an agricultural field. Thin clouds drift across the sky; leaves and grasses stir in a light breeze; fine dust drifts over the tilled rows of maize and beans; patches of sunlight shift softly across the ground. Keep the camera static.",
+        "duration": 8,
+        "seed": 1491,
+        "provider": "meta-ui",
+        "fallback_provider": "ltx"
+      },
+      "beats": [
+        {
+          "type": "label",
+          "cue": "North America in 1491",
+          "duration": 3.2,
+          "text": "1491: MANY SOCIETIES, MANY ENVIRONMENTS",
+          "x": 0.5,
+          "y": 0.18
+        },
+        {
+          "type": "host",
+          "cue": "Millions of people",
+          "duration": 3.2,
+          "text": "Historian's rule: start with diversity",
+          "x": 0.5,
+          "y": 0.78
+        },
+        {
+          "type": "question",
+          "cue": "The useful starting point",
+          "duration": 3.8,
+          "text": "How did environment shape choices?",
+          "x": 0.5,
+          "y": 0.82
+        },
+        {
+          "type": "progress",
+          "at": 0.0,
+          "duration": 16.0,
+          "y": 0.94
+        }
+      ],
+      "audio": {
+        "effects": [
+          {
+            "cue": "North America in 1491",
+            "kind": "impact",
+            "volume": 0.25
+          },
+          {
+            "cue": "The useful starting point",
+            "kind": "chime",
+            "volume": 0.18
+          }
+        ]
+      },
+      "transition": {
+        "type": "dip_to_black",
+        "duration": 0.25
+      },
+      "min_duration": 10,
+      "topics": [
+        "1.1"
+      ],
+      "on_screen_text": [
+        "1491",
+        "Regional diversity",
+        "Environmental adaptation"
+      ],
+      "source": {
+        "title": "Historical depiction of Indigenous life",
+        "license": "Public domain",
+        "notes": "Use as historical evidence with attention to the creator's perspective."
+      },
+      "production_notes": "Open with the year 1491, then reveal the essential question beneath the title."
+    },
+    {
+      "id": "cahokia-network",
+      "purpose": "evidence",
+      "narration": {
+        "text": "Near the Mississippi River, [awed] Cahokia became a large urban center supported by maize agriculture. Its monumental earthworks and far-reaching trade connections demonstrate [emphasis]organized labor[/emphasis], political authority, and exchange networks that linked communities across long distances."
+      },
+      "visual": {
+        "base_image": "../../assets/images/u1/anim-cahokia-mound-1907.jpg",
+        "clip": "../../video/ai_clips/u1-cahokia-mound-living.mp4"
+      },
+      "animation": {
+        "type": "ai_clip",
+        "prompt": "An archival photograph of the Cahokia mound at rest. Thin layered clouds move slowly across the sky; foreground grasses ripple in a light breeze; long sunlight and tree shadows shift gently over the mound and fields. The photographic composition stays fixed. Do not add buildings or people or text or modern objects.",
+        "duration": 8,
+        "seed": 1051,
+        "provider": "meta-ui",
+        "fallback_provider": "ltx",
+        "caption": "Cahokia: agriculture, urbanism, and exchange"
+      },
+      "beats": [
+        {
+          "type": "label",
+          "cue": "supported by maize agriculture",
+          "duration": 3.0,
+          "text": "Maize surplus",
+          "x": 0.28,
+          "y": 0.32,
+          "color": [
+            233,
+            196,
+            106
+          ]
+        },
+        {
+          "type": "arrow",
+          "cue": "far-reaching trade connections",
+          "duration": 4.0,
+          "text": "trade",
+          "x": 0.22,
+          "y": 0.72,
+          "x2": 0.7,
+          "y2": 0.58,
+          "color": [
+            87,
+            192,
+            224
+          ]
+        },
+        {
+          "type": "stamp",
+          "cue": "organized labor",
+          "duration": 3.5,
+          "text": "EVIDENCE: organized labor",
+          "x": 0.5,
+          "y": 0.82
+        }
+      ],
+      "audio": {
+        "effects": [
+          {
+            "cue": "maize agriculture",
+            "kind": "chime",
+            "volume": 0.14
+          },
+          {
+            "cue": "organized labor",
+            "kind": "impact",
+            "volume": 0.18
+          }
+        ]
+      },
+      "transition": {
+        "type": "slide",
+        "duration": 0.3,
+        "direction": "left"
+      },
+      "min_duration": 11,
+      "topics": [
+        "1.1"
+      ],
+      "on_screen_text": [
+        "Maize surplus",
+        "Monumental earthworks",
+        "Trade networks"
+      ],
+      "source": {
+        "title": "Cahokia mound illustration",
+        "date": "1907",
+        "license": "Public domain",
+        "notes": "Later reconstruction; distinguish interpretation from a contemporary image."
+      },
+      "production_notes": "Camera begins wide, pushes toward the mound, and ends on evidence of the surrounding settlement."
+    },
+    {
+      "id": "regional-comparison",
+      "purpose": "comparison",
+      "narration": {
+        "text": "Different environments encouraged different strategies. [beat] Agricultural communities in the Southwest managed scarce water and built permanent settlements. On the Great Plains, many communities combined farming, hunting, and trade; later access to horses would change Plains life further. Environment influenced societies [emphasis]without mechanically determining them[/emphasis]."
+      },
+      "visual": {
+        "base_image": "../../assets/images/u1/original-u1-native-09.jpg",
+        "secondary_image": "../../assets/images/u1/u1-catlin-buffalo-hunt.jpg"
+      },
+      "animation": {
+        "type": "versus",
+        "title": "Compare Regional Adaptations",
+        "name_left": "Southwest",
+        "name_right": "Great Plains"
+      },
+      "beats": [
+        {
+          "type": "question",
+          "cue": "On the Great Plains",
+          "duration": 3.5,
+          "text": "Similarity? Difference?",
+          "x": 0.5,
+          "y": 0.55
+        },
+        {
+          "type": "stamp",
+          "cue": "Environment influenced societies",
+          "duration": 3.8,
+          "text": "GEOGRAPHY INFLUENCES—NOT DETERMINES",
+          "x": 0.5,
+          "y": 0.52
+        },
+        {
+          "type": "label",
+          "cue": "Different environments",
+          "duration": 3.2,
+          "text": "SAME CONTINENT, DIFFERENT STRATEGIES",
+          "x": 0.5,
+          "y": 0.18
+        },
+        {
+          "type": "question",
+          "cue": "change Plains life",
+          "duration": 3.6,
+          "text": "What happens when the horse arrives?",
+          "x": 0.5,
+          "y": 0.82
+        }
+      ],
+      "audio": {
+        "effects": [
+          {
+            "cue": "On the Great Plains",
+            "kind": "tick",
+            "volume": 0.18
+          }
+        ]
+      },
+      "transition": {
+        "type": "slide",
+        "duration": 0.25,
+        "direction": "right"
+      },
+      "min_duration": 13,
+      "topics": [
+        "1.1"
+      ],
+      "on_screen_text": [
+        "Water management",
+        "Permanent settlements",
+        "Mixed subsistence",
+        "Trade"
+      ],
+      "source": {
+        "title": "Historical images used for regional comparison",
+        "license": "Public domain",
+        "notes": "Images may postdate 1491; use them to visualize environments, not as exact snapshots of the period."
+      },
+      "production_notes": "Keep the split screen visible long enough for students to record one similarity and one difference."
+    },
+    {
+      "id": "native-recap",
+      "purpose": "recap",
+      "narration": {
+        "text": "For an A-P-U-S-H argument, connect environment to evidence. [fast]Geography shaped available resources; communities made choices about agriculture, settlement, and exchange;[/fast] those choices produced regional diversity. [slow]Avoid treating Indigenous peoples as a single group or as passive actors.[/slow]"
+      },
+      "visual": {
+        "base_image": "../../assets/images/u1/original-u1-native-04.jpg"
+      },
+      "animation": {
+        "type": "bullets",
+        "title": "Build the Historical Argument",
+        "bullets": [
+          "Environment shaped opportunities",
+          "Communities adapted in distinct ways",
+          "Exchange connected regions",
+          "Indigenous peoples were active historical actors"
+        ],
+        "footer": "AP Skill: Comparison + Causation",
+        "stagger": 0.8
+      },
+      "beats": [
+        {
+          "type": "pause",
+          "cue": "those choices produced regional diversity",
+          "duration": 3.0,
+          "text": "PAUSE: State one comparison claim",
+          "x": 0.5,
+          "y": 0.84
+        },
+        {
+          "type": "host",
+          "cue": "Avoid treating Indigenous peoples",
+          "duration": 2.5,
+          "text": "Use evidence, not stereotypes",
+          "x": 0.5,
+          "y": 0.16
+        },
+        {
+          "type": "label",
+          "cue": "communities made choices",
+          "duration": 3.2,
+          "text": "ENVIRONMENT SHAPES, PEOPLE CHOOSE",
+          "x": 0.5,
+          "y": 0.18
+        },
+        {
+          "type": "host",
+          "cue": "as passive actors",
+          "duration": 3.6,
+          "text": "Active societies, not passive victims",
+          "x": 0.5,
+          "y": 0.78
+        }
+      ],
+      "audio": {
+        "effects": [
+          {
+            "cue": "connect environment to evidence",
+            "kind": "whoosh",
+            "volume": 0.13
+          },
+          {
+            "cue": "those choices produced regional diversity",
+            "kind": "chime",
+            "volume": 0.16
+          }
+        ]
+      },
+      "transition": {
+        "type": "crossfade",
+        "duration": 0.2
+      },
+      "min_duration": 11,
+      "topics": [
+        "1.1"
+      ],
+      "on_screen_text": [
+        "Claim",
+        "Evidence",
+        "Reasoning"
+      ],
+      "source": {
+        "title": "Historical depiction of Indigenous communities",
+        "license": "Public domain"
+      },
+      "production_notes": "Reveal one bullet per narration clause and hold the final AP skill footer."
+    }
+  ],
+  "schema_version": 1,
+  "course_id": "apush",
+  "unit_id": "unit-1",
+  "chapter_id": "u1-ch1"
+}

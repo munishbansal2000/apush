@@ -14,7 +14,7 @@ ANIMATION_TYPES = {
 
 ROOT_KEYS = {"schema_version", "course_id", "unit_id", "chapter_id", "lesson_id", "title", "description", "essential_question", "learning_objectives", "key_terms", "ap_alignment", "presentation", "output", "tts", "generation", "clip_generation", "video", "scenes"}
 VIDEO_KEYS = {"width", "height", "fps", "transition_seconds"}
-TTS_KEYS = {"engine", "server_url", "reference_audio", "reference_text", "timeout_seconds", "settings", "edge_voice", "edge_rate", "edge_pitch"}
+TTS_KEYS = {"engine", "server_url", "reference_audio", "reference_text", "timeout_seconds", "settings", "edge_voice", "edge_rate", "edge_pitch", "voices"}
 GEN_KEYS = {"provider", "model", "endpoint", "api_key_env", "timeout_seconds"}
 CLIP_GEN_KEYS = {"provider", "cookie", "browser", "lib_dir", "timeout_seconds", "keep_open_on_failure", "meta_refusal_retries"}
 SCENE_KEYS = {"id", "purpose", "narration", "visual", "animation", "beats", "audio", "transition", "min_duration", "topics", "on_screen_text", "source", "production_notes"}
@@ -317,8 +317,8 @@ def validate_manifest(data: Any, path: Path, repo_root: Path,
     tts = _obj(root["tts"], "manifest.tts")
     _keys(tts, TTS_KEYS, "manifest.tts")
     engine = tts.get("engine", "fish")
-    if engine not in {"fish", "edge"}:
-        raise PipelineError("manifest.tts.engine must be fish or edge")
+    if engine not in {"fish", "edge", "fish_cloud"}:
+        raise PipelineError("manifest.tts.engine must be fish, edge, or fish_cloud")
     if engine == "fish":
         _required(tts, {"server_url", "reference_audio", "reference_text"}, "manifest.tts")
         _text(tts["server_url"], "manifest.tts.server_url")
@@ -334,6 +334,20 @@ def validate_manifest(data: Any, path: Path, repo_root: Path,
         _number(tts["timeout_seconds"], "manifest.tts.timeout_seconds", 1, 3600)
     if "settings" in tts and not isinstance(tts["settings"], dict):
         raise PipelineError("manifest.tts.settings must be an object")
+    if "voices" in tts:
+        voices = tts["voices"]
+        if not isinstance(voices, dict) or not voices:
+            raise PipelineError("manifest.tts.voices must be a non-empty object")
+        allowed = {"edge_voice", "edge_rate", "edge_pitch", "reference_audio", "reference_text", "settings"}
+        for name, cfg in voices.items():
+            where = f"manifest.tts.voices.{name}"
+            if not isinstance(cfg, dict):
+                raise PipelineError(f"{where} must be an object")
+            for key in cfg:
+                if key not in allowed:
+                    raise PipelineError(f"{where}.{key} is not a valid voice field")
+            if "settings" in cfg and not isinstance(cfg["settings"], dict):
+                raise PipelineError(f"{where}.settings must be an object")
 
     generation = _obj(root.get("generation", {"provider": "none"}), "manifest.generation")
     _keys(generation, GEN_KEYS, "manifest.generation")
