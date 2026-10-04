@@ -1,0 +1,764 @@
+{
+ "schema_version": 1,
+ "lesson_id": "u1-ch2-l4-500-men",
+ "title": "How 500 Men Toppled an Empire",
+ "course_id": "apush",
+ "unit_id": "u1",
+ "chapter_id": "ch2",
+ "description": "Five hundred Spaniards did not conquer millions of people with guns. Disease, Native allies, and empires already cracking did the real work — in Mexico and in Peru.",
+ "essential_question": "Why did guns alone not account for the Spanish victories?",
+ "learning_objectives": [
+  "Explain why Spanish weapons alone cannot account for the fall of Tenochtitlan.",
+  "Describe how smallpox and the Tlaxcalan alliance decided the conquest of Mexico.",
+  "Compare the falls of the Mexica and Inca empires as one repeating pattern."
+ ],
+ "key_terms": [
+  {
+   "term": "conquistador",
+   "definition": "A Spanish conqueror in the Americas, e.g. Cortés in Mexico and Pizarro in Peru."
+  },
+  {
+   "term": "Tenochtitlan (1521)",
+   "definition": "The Mexica capital, taken by Cortés and his Tlaxcalan allies in 1521."
+  },
+  {
+   "term": "Tlaxcala",
+   "definition": "The Mexica's rival whose tens of thousands of warriors formed Cortés's real army."
+  },
+  {
+   "term": "Florentine Codex",
+   "definition": "Sahagún's multivolume history compiled with Nahua collaborators; Book 12 records the 1520 smallpox epidemic."
+  },
+  {
+   "term": "Cajamarca (1532)",
+   "definition": "Where Pizarro's 168 men seized the Inca emperor Atahualpa, then ransomed and executed him."
+  },
+  {
+   "term": "Inca civil war",
+   "definition": "The war between Huáscar and Atahualpa after Huayna Capac's death that left the Inca Empire fractured."
+  }
+ ],
+ "ap_alignment": {
+  "period": "Period 1",
+  "topics": [
+   "1.4 Spanish colonization"
+  ],
+  "skills": [
+   "Sourcing and Situation",
+   "Analyzing Evidence",
+   "Argumentation"
+  ],
+  "themes": [
+   "America in the World"
+  ]
+ },
+ "presentation": {
+  "audience": "APUSH students",
+  "tone": "a teacher talking to a smart 16-year-old; plain, spoken, concrete",
+  "visual_style": "engraving-documentary; stamps, serif/sans type grammar",
+  "captions": false,
+  "branding": "APUSH Unit 1"
+ },
+ "output": "../../build/lesson-videos/u1-ch2-l4-500-men.mp4",
+ "video": {
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "transition_seconds": 0.2
+ },
+ "transition_scheme": "hard_cut",
+ "tts": {
+  "engine": "edge",
+  "edge_voice": "en-US-GuyNeural",
+  "edge_rate": "+2%",
+  "edge_pitch": "+0Hz",
+  "voices": {
+   "host": {
+    "edge_voice": "en-US-GuyNeural",
+    "edge_rate": "+2%",
+    "edge_pitch": "+0Hz"
+   },
+   "cortes": {
+    "edge_voice": "en-US-DavisNeural",
+    "edge_rate": "+0%",
+    "edge_pitch": "-10Hz"
+   },
+   "witness": {
+    "edge_voice": "en-US-TonyNeural",
+    "edge_rate": "-5%",
+    "edge_pitch": "+0Hz"
+   }
+  }
+ },
+ "generation": {
+  "provider": "none"
+ },
+ "clip_generation": {
+  "provider": "none"
+ },
+ "still_generation": {
+  "provider": "hatch-media",
+  "search_provider": "wikimedia",
+  "orientation": "landscape",
+  "image_output_format": "webp",
+  "timeout_seconds": 600
+ },
+ "scenes": [
+  {
+   "id": "s1",
+   "purpose": "hook",
+   "narration": {
+    "text": "[solemn]In [date:1519], [es]Hernán Cortés[/es], a conquistador, a Spanish conqueror, landed on the coast of Mexico with five hundred soldiers. Sixteen horses. Fourteen cannons. The [es]Mexica[/es] Empire ruled millions of people from [es]Tenochtitlan[/es], a city larger than London. [beat] Two years later, the empire was gone. Five hundred men did that. How?",
+    "voice": "host"
+   },
+   "visual": {
+    "base_image": "assets/images/u1-ch2-l4/tenochtitlan-causeway.webp",
+    "still": {
+     "provider": "hatch-media",
+     "prompt": "A vast island city on a lake seen from a long causeway, stepped temples and pyramids rising above flat rooftops, canoes on the water, a few small figures of armored men on the causeway. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions.",
+     "orientation": "landscape"
+    }
+   },
+   "animation": {
+    "type": "ken_burns",
+    "zoom": 0.08,
+    "pan_x": 0.5,
+    "pan_y": 0.4
+   },
+   "transition": {
+    "type": "hard_cut",
+    "duration": 0.2
+   },
+   "beats": [
+    {
+     "type": "label",
+     "cue": "1519",
+     "text": "1519",
+     "x": 0.12,
+     "y": 0.12,
+     "duration": 18
+    },
+    {
+     "type": "label",
+     "cue": "Five hundred men did that",
+     "text": "500 vs. MILLIONS",
+     "x": 0.5,
+     "y": 0.78,
+     "duration": 4
+    },
+    {
+     "type": "label",
+     "cue": "Hernán Cortés",
+     "text": "CORTÉS · 500 MEN · 16 HORSES",
+     "x": 0.5,
+     "y": 0.9,
+     "duration": 5
+    }
+   ],
+   "device": "show_ask",
+   "device_params": {
+    "question": "Five hundred men did that. How?",
+    "hold_sec": 2.0
+   },
+   "min_duration": 18,
+   "topics": [
+    "1.4"
+   ],
+   "on_screen_text": [
+    "1519",
+    "500 vs. MILLIONS"
+   ],
+   "source": {
+    "title": "Tenochtitlan from the causeway (AI plate)",
+    "license": "AI-generated",
+    "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt."
+   },
+   "production_notes": "Show-and-ask opening: the vast city sits under the spoken question with a full beat of silence."
+  },
+  {
+   "id": "s2a",
+   "purpose": "concept",
+   "narration": {
+    "text": "The obvious answer is the weapons. Steel swords, steel armor, horses, guns. And in open battle, it was real. [beat] At [es]Otumba[/es], a few dozen Spanish horsemen charged again and again, aiming straight for the [es]Mexica[/es] commanders, and broke an entire army.",
+    "voice": "host"
+   },
+   "visual": {
+    "base_image": "assets/images/u1-ch2-l4/cavalry-charge.webp",
+    "still": {
+     "provider": "hatch-media",
+     "prompt": "Armored horsemen with lances charging through warriors with spears and shields, dust and motion, a single frozen frame of a cavalry charge. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions.",
+     "orientation": "landscape"
+    },
+    "clip": "video/ai_clips/cavalry-charge.mp4"
+   },
+   "animation": {
+    "type": "ai_clip",
+    "prompt": "Armored horsemen with lances charging through warriors with spears and shields, dust rising, an arquebusier firing a matchlock gun in the foreground, dynamic diagonal composition, 8 seconds, seamless loop. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
+   },
+   "transition": {
+    "type": "hard_cut",
+    "duration": 0.2
+   },
+   "beats": [
+    {
+     "type": "label",
+     "cue": "Otumba",
+     "text": "OTUMBA · 1520",
+     "x": 0.12,
+     "y": 0.12,
+     "duration": 4
+    }
+   ],
+   "min_duration": 20,
+   "topics": [
+    "1.4"
+   ],
+   "on_screen_text": [
+    "OTUMBA · 1520"
+   ],
+   "source": {
+    "title": "Cavalry charge (AI video clip; AI still as base frame)",
+    "license": "AI-generated",
+    "notes": "Clip generated on the 5090 via Meta UI/LTX; drop at video/ai_clips/cavalry-charge.mp4. The hatch-media still is the coherence anchor for the ai_clip gate. Fallbacks: AI still of the charge with slow push-in, then a de Bry archival cavalry plate via stills search."
+   },
+   "production_notes": "The lesson's one burst of velocity; the 8s clip loops under the host setup. The steelman earns its energy here, deliberately, before the film takes it away."
+  },
+  {
+   "id": "s2b",
+   "purpose": "evidence",
+   "narration": {
+    "text": "[VOICE:cortes][fierce]They had never seen a horse. Never heard a gun. We were few, but we were thunder. [VOICE:host]So guns win? [beat] Not so fast. [es]Cortés[/es] had fourteen cannons. Fourteen. They took a minute to reload. And the [es]Mexica[/es] adapted. They stopped meeting the cavalry in open fields and fought where horses couldn't go. The weapons helped. But fourteen cannons don't topple an empire.",
+    "voice": "host"
+   },
+   "visual": {
+    "base_image": "assets/images/u1-ch2-l4/cavalry-engraving.webp",
+    "search": {
+     "provider": "wikimedia",
+     "query": "Theodor de Bry cavalry battle engraving horsemen",
+     "pick": 0,
+     "min_width": 1000
+    }
+   },
+   "animation": {
+    "type": "zoom",
+    "cx": 0.5,
+    "cy": 0.5,
+    "end_zoom": 1.08,
+    "zoom_duration": 8
+   },
+   "transition": {
+    "type": "hard_cut",
+    "duration": 0.2
+   },
+   "beats": [
+    {
+     "type": "label",
+     "cue": "fourteen cannons",
+     "text": "FOURTEEN CANNONS",
+     "x": 0.5,
+     "y": 0.5,
+     "duration": 4
+    }
+   ],
+   "device": "reversal",
+   "device_params": {
+    "pivot": true,
+    "setup_scene": "s2a"
+   },
+   "audio": {
+    "effects": [
+     {
+      "cue": "Never heard a gun",
+      "kind": "impact",
+      "volume": 0.15
+     }
+    ]
+   },
+   "min_duration": 14,
+   "topics": [
+    "1.4"
+   ],
+   "on_screen_text": [
+    "FOURTEEN CANNONS"
+   ],
+   "source": {
+    "title": "De Bry cavalry engraving (archival, pipeline-fetched)",
+    "license": "Public domain",
+    "notes": "Wikimedia Commons; fetched by the pipeline search spec. The frozen engraving after the moving clip is the film taking the steelman's energy away."
+   },
+   "production_notes": "Reversal pivot on s2b; setup_scene s2a built the expectation. The impact effect is a placeholder for a distant gunshot SFX (low, 0.15). Cortés's [fierce] needs an Edge voice supporting the angry style; the TTS fallback de-styles gracefully if rejected."
+  },
+  {
+   "id": "s3a",
+   "purpose": "evidence",
+   "narration": {
+    "text": "[solemn]Here's what the cannons can't explain. In the fall of [date:1520], smallpox tore through [es]Tenochtitlan[/es]. It killed the emperor [es]Cuitláhuac[/es] after eighty days on the throne. It killed warriors, priests, leaders, everyone who could organize a defense. [beat] A Franciscan friar named [es]Sahagún[/es] spent decades interviewing [es]Mexica[/es] survivors. He asked the survivors what the sickness was like. One of them told him.",
+    "voice": "host"
+   },
+   "visual": {
+    "base_image": "assets/images/u1-ch2-l4/plague-city.webp",
+    "still": {
+     "provider": "hatch-media",
+     "prompt": "An empty city street with covered bodies, a collapsed priest on temple steps, vultures circling, no soldiers anywhere, stillness and desolation. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions.",
+     "orientation": "landscape"
+    }
+   },
+   "animation": {
+    "type": "zoom",
+    "cx": 0.5,
+    "cy": 0.55,
+    "end_zoom": 1.04,
+    "zoom_duration": 20
+   },
+   "transition": {
+    "type": "hard_cut",
+    "duration": 0.2
+   },
+   "beats": [
+    {
+     "type": "label",
+     "cue": "smallpox tore through",
+     "text": "SMALLPOX · FALL 1520",
+     "x": 0.5,
+     "y": 0.12,
+     "duration": 20
+    },
+    {
+     "type": "label",
+     "cue": "eighty days on the throne",
+     "text": "CUITLÁHUAC · 80 DAYS",
+     "x": 0.5,
+     "y": 0.82,
+     "duration": 3
+    }
+   ],
+   "min_duration": 24,
+   "topics": [
+    "1.4"
+   ],
+   "on_screen_text": [
+    "SMALLPOX · FALL 1520"
+   ],
+   "source": {
+    "title": "Plague-stricken Tenochtitlan (AI plate)",
+    "license": "AI-generated",
+    "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt."
+   },
+   "production_notes": "Locked frame: stillness as the statement. Score drops out entirely; the dismantling plays dry."
+  },
+  {
+   "id": "s3b",
+   "purpose": "evidence",
+   "narration": {
+    "text": "[VOICE:witness][solemn]The sores covered us, head to foot. We could not walk, could not move. We lay starving in our houses. There was no one left to care for us, no one left to bury the dead, no one left to fight.",
+    "voice": "witness"
+   },
+   "visual": {
+    "base_image": "assets/images/u1-ch2-l4/plague-city.webp",
+    "still": {
+     "provider": "hatch-media",
+     "prompt": "An empty city street with covered bodies, a collapsed priest on temple steps, vultures circling, no soldiers anywhere, stillness and desolation. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions.",
+     "orientation": "landscape"
+    }
+   },
+   "animation": {
+    "type": "zoom",
+    "cx": 0.5,
+    "cy": 0.55,
+    "end_zoom": 1.04,
+    "zoom_duration": 12
+   },
+   "transition": {
+    "type": "hard_cut",
+    "duration": 0.2
+   },
+   "beats": [
+    {
+     "type": "label",
+     "cue": "The sores covered us",
+     "text": "A MEXICA SURVIVOR · VIA SAHAGÚN",
+     "x": 0.5,
+     "y": 0.82,
+     "duration": 12
+    },
+    {
+     "type": "label",
+     "cue": "could not walk",
+     "text": "FLORENTINE CODEX · BOOK 12",
+     "x": 0.5,
+     "y": 0.9,
+     "duration": 10
+    }
+   ],
+   "min_duration": 12,
+   "topics": [
+    "1.4"
+   ],
+   "source": {
+    "title": "Plague-stricken Tenochtitlan (AI plate, reused from s3a)",
+    "license": "AI-generated",
+    "notes": "Same still spec and output path as s3a; the stills stage skips it because the file already exists, and the license gate skips scenes carrying a still spec. The reuse is deliberate: one plate, two voices."
+   },
+   "production_notes": "One weary voice, sourced on screen. Hold on death through the passage; let it breathe."
+  },
+  {
+   "id": "s3c",
+   "purpose": "evidence",
+   "narration": {
+    "text": "[beat] [es]Cortés[/es] already knew the trick. Before the plague, before the siege, he'd walked into [es]Tenochtitlan[/es] and seized [es]Moctezuma[/es] himself, holding the emperor hostage for months. And he didn't come back alone. The [es]Tlaxcalans[/es], the [es]Mexica[/es]'s oldest enemies, gave him tens of thousands of warriors. Why fight for the strangers? The [es]Mexica[/es] had spent generations raiding [es]Tlaxcala[/es] for tribute and captives for sacrifice, the Flower Wars. The [es]Tlaxcalans[/es] didn't join [es]Cortés[/es]. They used him. At the final siege, the Spanish gave the orders. The [es]Tlaxcalans[/es] did the fighting and took most of the casualties.",
+    "voice": "host"
+   },
+   "visual": {
+    "base_image": "assets/images/u1-ch2-l4/lienzo-tlaxcala.webp",
+    "search": {
+     "provider": "wikimedia",
+     "query": "Lienzo de Tlaxcala",
+     "pick": 0,
+     "min_width": 900
+    }
+   },
+   "animation": {
+    "type": "ken_burns",
+    "zoom": 0.06,
+    "pan_x": 0.35,
+    "pan_y": 0.5
+   },
+   "transition": {
+    "type": "hard_cut",
+    "duration": 0.2
+   },
+   "beats": [
+    {
+     "type": "label",
+     "cue": "Tlaxcalans",
+     "text": "THE TLAXCALANS",
+     "x": 0.5,
+     "y": 0.12,
+     "duration": 5
+    },
+    {
+     "type": "label",
+     "cue": "did the fighting",
+     "text": "LIENZO DE TLAXCALA · C. 1550S",
+     "x": 0.5,
+     "y": 0.92,
+     "duration": 8
+    }
+   ],
+   "device": "annotate",
+   "device_params": {
+    "mode": "telestrator",
+    "annotations": [
+     {
+      "type": "circle",
+      "label": "Tlaxcalan banners",
+      "cue": "Tlaxcalans",
+      "x": 0.3,
+      "y": 0.45
+     },
+     {
+      "type": "arrow",
+      "label": "Spanish detachment",
+      "cue": "Spanish",
+      "x": 0.62,
+      "y": 0.5,
+      "label_x": 0.78,
+      "label_y": 0.3
+     }
+    ]
+   },
+   "min_duration": 18,
+   "topics": [
+    "1.4"
+   ],
+   "on_screen_text": [
+    "THE TLAXCALANS"
+   ],
+   "source": {
+    "title": "Lienzo de Tlaxcala (Tlaxcalan pictorial account, c. 1550s)",
+    "license": "Public domain",
+    "notes": "Wikimedia Commons; fetched by the pipeline search spec (PD-only filter). The ideal Mesolore digital facsimile is CC BY 4.0 and incompatible with the pipeline's public-domain-only filter; if the filter widens, prefer it and attribute Mesolore."
+   },
+   "production_notes": "The allies telling their side. Telestrator callouts draw on the freeze; coordinates are normalized 0-1 and must be tuned against the actual picked panel at animatic stage."
+  },
+  {
+   "id": "s4a",
+   "purpose": "comparison",
+   "narration": {
+    "text": "In Peru, eleven years later, [es]Francisco Pizarro[/es] ran the same play on an empire already broken. Smallpox had killed the Inca emperor [es]Huayna Capac[/es] around [date:1527], years before [es]Pizarro[/es] arrived. The disease outran him. [es]Huayna Capac[/es]'s sons, [es]Huáscar[/es] and [es]Atahualpa[/es], then fought a brutal war of succession, brother against brother. [es]Atahualpa[/es] won, but the empire was bleeding when [es]Pizarro[/es] walked in. [beat] At [es]Cajamarca[/es], in [date:1532], [es]Pizarro[/es]'s hundred and sixty-eight men seized the emperor [es]Atahualpa[/es] in the town square.",
+    "voice": "host"
+   },
+   "visual": {
+    "base_image": "assets/images/u1-ch2-l4/cajamarca-seizure.webp",
+    "still": {
+     "provider": "hatch-media",
+     "prompt": "Spanish soldiers closing in around an emperor's litter in a great town square, chaos and terror, Andes mountains behind, a small desperate action in a vast space. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions.",
+     "orientation": "landscape"
+    }
+   },
+   "animation": {
+    "type": "ken_burns",
+    "zoom": 0.1,
+    "pan_x": 0.5,
+    "pan_y": 0.55
+   },
+   "transition": {
+    "type": "hard_cut",
+    "duration": 0.2
+   },
+   "beats": [
+    {
+     "type": "label",
+     "cue": "Cajamarca",
+     "text": "CAJAMARCA · 1532",
+     "x": 0.12,
+     "y": 0.12,
+     "duration": 20
+    },
+    {
+     "type": "label",
+     "cue": "hundred and sixty-eight men",
+     "text": "168 MEN",
+     "x": 0.5,
+     "y": 0.78,
+     "duration": 4
+    }
+   ],
+   "min_duration": 20,
+   "topics": [
+    "1.4"
+   ],
+   "on_screen_text": [
+    "CAJAMARCA · 1532",
+    "168 MEN"
+   ],
+   "source": {
+    "title": "Seizure of Atahualpa at Cajamarca (AI plate)",
+    "license": "AI-generated",
+    "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt. Composition rhymes with s2a's charge, smaller and more desperate."
+   },
+   "production_notes": "Slow push-in on the litter, landing tight on 'seized the emperor Atahualpa.'"
+  },
+  {
+   "id": "s4b",
+   "purpose": "evidence",
+   "narration": {
+    "text": "[beat] They ransomed him for a room full of gold, then executed him anyway. An empire built on one irreplaceable head can't organize a defense without it.",
+    "voice": "host"
+   },
+   "visual": {
+    "base_image": "assets/images/u1-ch2-l4/atahualpa-engraving.webp",
+    "search": {
+     "provider": "wikimedia",
+     "page_title": "File:The seizure of Atahualpa at Cajamarca - J.M. Moreau junior, inv. ; P. Duflos Junior, sculp. LCCN98519205.jpg",
+     "min_width": 1000
+    }
+   },
+   "animation": {
+    "type": "zoom",
+    "cx": 0.5,
+    "cy": 0.5,
+    "end_zoom": 1.05,
+    "zoom_duration": 10
+   },
+   "transition": {
+    "type": "hard_cut",
+    "duration": 0.2
+   },
+   "beats": [
+    {
+     "type": "label",
+     "cue": "room full of gold",
+     "text": "A ROOM FULL OF GOLD",
+     "x": 0.5,
+     "y": 0.5,
+     "duration": 4
+    }
+   ],
+   "min_duration": 10,
+   "topics": [
+    "1.4"
+   ],
+   "on_screen_text": [
+    "A ROOM FULL OF GOLD"
+   ],
+   "source": {
+    "title": "Seizure of Atahualpa at Cajamarca, engraving after J.M. Moreau le Jeune (c. 1760-1810)",
+    "license": "Public domain",
+    "notes": "Wikimedia Commons, LoC LCCN98519205; pinned by exact page_title."
+   },
+   "production_notes": "Locked frame on the engraving. Lock off for the closing line; hold. Let it sit."
+  },
+  {
+   "id": "s5",
+   "purpose": "recap",
+   "narration": {
+    "text": "So here's the playbook. Turn the empire's enemies into your army. Cut off the head. Let disease do the rest. [beat] Guns helped, but they were the smallest part of the answer. [2s pause] So who conquered Mexico? [es]Cortés[/es] gave the orders. [2s pause] Everyone else did the conquering.",
+    "voice": "host"
+   },
+   "visual": {
+    "base_image": "assets/images/u1-ch2-l4/two-conquests-map.webp",
+    "still": {
+     "provider": "hatch-media",
+     "prompt": "A blank engraved base map of the Americas, Mexico labeled in the upper region and Peru labeled along the western coast below it, three empty decorative cartouches, sea monsters and ships in the ocean margins, no routes drawn. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions.",
+     "orientation": "landscape"
+    }
+   },
+   "animation": {
+    "type": "map",
+    "moves": [
+     {
+      "path": [
+       [
+        0.16,
+        0.4
+       ],
+       [
+        0.24,
+        0.34
+       ]
+      ],
+      "kind": "arrow",
+      "color": [
+       178,
+       34,
+       34
+      ],
+      "label": "MEXICO 1519-1521",
+      "label_pos": [
+       0.26,
+       0.26
+      ],
+      "cue": "Turn the empire's enemies"
+     },
+     {
+      "path": [
+       [
+        0.3,
+        0.58
+       ],
+       [
+        0.34,
+        0.66
+       ]
+      ],
+      "kind": "arrow",
+      "color": [
+       178,
+       34,
+       34
+      ],
+      "label": "PERU 1532-1533",
+      "label_pos": [
+       0.38,
+       0.74
+      ],
+      "cue": "Cut off the head"
+     }
+    ]
+   },
+   "transition": {
+    "type": "hard_cut",
+    "duration": 0.2
+   },
+   "beats": [
+    {
+     "type": "label",
+     "cue": "Turn the empire's enemies",
+     "text": "I. TURN THE EMPIRE'S ENEMIES INTO YOUR ARMY",
+     "x": 0.12,
+     "y": 0.3,
+     "duration": 6
+    },
+    {
+     "type": "label",
+     "cue": "Cut off the head",
+     "text": "II. CUT OFF THE HEAD",
+     "x": 0.12,
+     "y": 0.42,
+     "duration": 6
+    },
+    {
+     "type": "label",
+     "cue": "Let disease do the rest",
+     "text": "III. LET DISEASE DO THE REST",
+     "x": 0.12,
+     "y": 0.54,
+     "duration": 6
+    },
+    {
+     "type": "label",
+     "cue": "gave the orders",
+     "text": "THE PLAYBOOK",
+     "x": 0.5,
+     "y": 0.5,
+     "duration": 6
+    }
+   ],
+   "audio": {
+    "effects": [
+     {
+      "cue": "gave the orders",
+      "kind": "impact",
+      "volume": 0.3
+     }
+    ]
+   },
+   "min_duration": 18,
+   "topics": [
+    "1.4"
+   ],
+   "on_screen_text": [
+    "THE PLAYBOOK"
+   ],
+   "source": {
+    "title": "Two-conquests map plate (AI plate)",
+    "license": "AI-generated",
+    "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt. Move coordinates are approximate against the generated plate; tune at animatic."
+   },
+   "production_notes": "The map animates the argument: two empires, one playbook. Routes draw in sequence as the steps are named. Stamp 3 of 3 (THE PLAYBOOK) is the stamped verdict; single low thud under it."
+  },
+  {
+   "id": "s6",
+   "purpose": "close",
+   "narration": {
+    "text": "[pause:10]",
+    "voice": "host"
+   },
+   "visual": {
+    "base_image": "assets/images/u1-ch2-l4/exam-card-paper.webp",
+    "still": {
+     "provider": "hatch-media",
+     "prompt": "A plain aged paper texture, warm cream tone, subtle grain, completely empty, no text, no imagery. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions.",
+     "orientation": "landscape"
+    }
+   },
+   "animation": {
+    "type": "bullets",
+    "title": "HOW 500 MEN TOPPLED AN EMPIRE",
+    "bullets": [
+     "CORTÉS: ~500 men and Tlaxcalan allies take Tenochtitlan, 1521",
+     "PIZARRO: 168 men seize Atahualpa at Cajamarca, 1532",
+     "THEY WON WITH: smallpox, Native allies, steel and horses",
+     "THE PATTERN: turn rivals into allies, cut off the head"
+    ],
+    "footer": "Cortés dramatized from his letters; witness adapted from Florentine Codex XII.",
+    "stagger": 0.45
+   },
+   "transition": {
+    "type": "hard_cut",
+    "duration": 0.2
+   },
+   "min_duration": 10,
+   "topics": [
+    "1.4"
+   ],
+   "source": {
+    "title": "Exam card paper (AI plate)",
+    "license": "AI-generated",
+    "notes": "Pipeline-generated via hatch-media. Card holds 10s in silence; designed to be paused and screenshotted, not absorbed in real time."
+   },
+   "production_notes": "No narration; the [pause:10] holds the card in silence. Serif/sans grammar: what they said vs what you must know."
+  }
+ ]
+}
