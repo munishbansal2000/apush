@@ -1,0 +1,692 @@
+{
+ "schema_version": 1,
+ "course_id": "apush",
+ "unit_id": "u3",
+ "chapter_id": "ch1",
+ "lesson_id": "u3-l3-taxation-without-representation",
+ "title": "No Taxation Without Representation (and a Whole Lot of Tea)",
+ "description": "From war debt to the Boston Tea Party: how Parliament's taxes, the fight over virtual vs. actual representation, and a spiral of resistance and coercion pushed thirteen colonies toward revolution.",
+ "essential_question": "Can Parliament tax people who never voted for it?",
+ "learning_objectives": [
+  "Explain the difference between virtual and actual representation in the colonial debate over taxation.",
+  "Trace the escalation from the Sugar Act (1764) through the Stamp Act, Townshend Acts, and Tea Act to colonial resistance.",
+  "Analyze how British coercion after the Boston Tea Party unified rather than isolated the colonies."
+ ],
+ "key_terms": [
+  {
+   "term": "salutary neglect",
+   "definition": "Britain's long-standing policy of lax enforcement of colonial trade laws, ended after 1763."
+  },
+  {
+   "term": "virtual representation",
+   "definition": "The British claim that Parliament spoke for the whole empire, including colonists who could not vote."
+  },
+  {
+   "term": "actual representation",
+   "definition": "The colonial demand that only their own elected assemblies could tax them."
+  },
+  {
+   "term": "Stamp Act (1765)",
+   "definition": "Parliamentary direct tax on printed materials; repealed 1766 after colonial boycotts and the Stamp Act Congress."
+  },
+  {
+   "term": "Declaratory Act (1766)",
+   "definition": "Asserted Parliament's authority over the colonies 'in all cases whatsoever,' passed alongside repeal."
+  },
+  {
+   "term": "Boston Tea Party (1773)",
+   "definition": "Destruction of 342 chests of East India Company tea in Boston Harbor on December 16, 1773."
+  },
+  {
+   "term": "Intolerable (Coercive) Acts (1774)",
+   "definition": "Punitive measures including the Boston Port Act; meant to isolate Massachusetts but unified the colonies."
+  }
+ ],
+ "ap_alignment": {
+  "period": "Period 3",
+  "topics": [
+   "3.3"
+  ],
+  "skills": [
+   "Causation",
+   "Comparison",
+   "Contextualization"
+  ],
+  "themes": [
+   "Politics and Power"
+  ]
+ },
+ "presentation": {
+  "audience": "APUSH students",
+  "tone": "a teacher talking to a smart 16-year-old; plain, spoken, concrete",
+  "visual_style": "archival-first; deterministic graphics for maps, timelines, and comparisons",
+  "captions": false,
+  "music": "low ducked bed; stingers at argument turns",
+  "branding": "APUSH Unit 3"
+ },
+ "transition_scheme": "hard_cut",
+ "music": {
+  "background": "video_pipeline/music/papulina-lost-signal-coffee-371869.mp3",
+  "background_volume": 0.1,
+  "ducking": {
+   "enabled": true,
+   "threshold": 0.025,
+   "ratio": 10,
+   "attack_ms": 18,
+   "release_ms": 420
+  },
+  "fade_in_sec": 1.2,
+  "fade_out_sec": 2.0,
+  "intro": "video_pipeline/music/alex_kizenkov-stomps-and-claps-percussion-and-rhythm-141190.mp3",
+  "intro_volume": 0.2,
+  "intro_duration_sec": 2.4,
+  "outro": "video_pipeline/music/absounds-inspiring-acoustic-folk-music-255650.mp3",
+  "outro_volume": 0.18,
+  "outro_duration_sec": 4.0,
+  "chapter_change": "video_pipeline/music/alex_kizenkov-stomps-and-claps-percussion-and-rhythm-141190.mp3",
+  "chapter_change_volume": 0.16,
+  "chapter_change_duration_sec": 1.1,
+  "chapter_change_scene_ids": [
+   "s3",
+   "s6"
+  ]
+ },
+ "tts": {
+  "engine": "edge",
+  "edge_voice": "en-US-GuyNeural",
+  "edge_rate": "+2%",
+  "edge_pitch": "+0Hz",
+  "voices": {
+   "host": {
+    "edge_voice": "en-US-GuyNeural",
+    "edge_rate": "+2%",
+    "edge_pitch": "+0Hz"
+   }
+  }
+ },
+ "generation": {
+  "provider": "none"
+ },
+ "still_generation": {
+  "provider": "hatch-media",
+  "search_provider": "wikimedia",
+  "orientation": "landscape",
+  "image_output_format": "webp",
+  "timeout_seconds": 600
+ },
+ "clip_generation": {
+  "provider": "none"
+ },
+ "video": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "transition_seconds": 0.2
+ },
+ "output": "../../build/lesson-videos/u3-l3-taxation-without-representation.mp4",
+ "scenes": [
+  {
+   "id": "s1",
+   "purpose": "hook",
+   "narration": {
+    "text": "In 1763, Britain won the biggest war of the century, and went broke doing it. The national debt had doubled. The empire was larger than ever, and the treasury was empty. [pause:1] So Parliament looked across the Atlantic, at thirteen colonies that had paid little toward their own defense. The colonists would help pay. What could go wrong?",
+    "voice": "host"
+   },
+   "visual": {
+    "base_image": "assets/images/u3/benjamin-west-death-of-wolfe.jpg",
+    "search": {
+     "page_title": "File:Benjamin West - The Death of General Wolfe - WGA25558.jpg",
+     "provider": "wikimedia",
+     "min_width": 800,
+     "license": "public-domain"
+    }
+   },
+   "animation": {
+    "type": "ken_burns",
+    "zoom": 0.1,
+    "pan_x": 0.5,
+    "pan_y": 0.45
+   },
+   "beats": [
+    {
+     "type": "label",
+     "cue": "won the biggest war",
+     "text": "1763: VICTORY",
+     "x": 0.5,
+     "y": 0.16,
+     "duration": 4
+    },
+    {
+     "type": "label",
+     "cue": "debt had doubled",
+     "text": "DEBT: DOUBLED",
+     "x": 0.5,
+     "y": 0.84,
+     "duration": 4
+    }
+   ],
+   "device": "hook",
+   "device_params": {
+    "hook_type": "contradiction",
+    "payoff_by_sec": 8.0
+   },
+   "on_screen_text": [
+    "1763: VICTORY",
+    "DEBT: DOUBLED"
+   ],
+   "source": {
+    "title": "The Death of General Wolfe, Benjamin West, 1770",
+    "creator": "Benjamin West",
+    "date": "1770",
+    "license": "Public domain",
+    "url": "https://commons.wikimedia.org/wiki/File:Benjamin_West_-The_Death_of_General_Wolfe-_WGA25558.jpg",
+    "notes": "Later interpretation, not eyewitness: romanticized scene painted 1770, eleven years after Wolfe's death at Quebec (1759). Used as a symbol of the costly victory, captioned honestly."
+   },
+   "production_notes": "Contradiction hook: the empire wins the war and bankrupts itself in the same stroke. Stamp 1 of 3.",
+   "topics": [
+    "3.3"
+   ],
+   "min_duration": 22,
+   "transition": {
+    "type": "hard_cut",
+    "duration": 0.2
+   },
+   "covers_los": [
+    2
+   ]
+  },
+  {
+   "id": "s1b-objectives",
+   "purpose": "context",
+   "covers_los": [
+    1,
+    2,
+    3
+   ],
+   "narration": {
+    "voice": "host",
+    "text": "[beat]By the end of this lesson, three things. [emphasis]One:[/emphasis] virtual versus actual representation, and why it mattered. [emphasis]Two:[/emphasis] the escalation from the Sugar Act to the Tea Act. [emphasis]Three:[/emphasis] how British coercion after the Tea Party unified the colonies."
+   },
+   "visual": {},
+   "animation": {
+    "type": "objectives",
+    "title": "BY THE END OF THIS LESSON"
+   },
+   "transition": {
+    "type": "hard_cut",
+    "duration": 0.2
+   }
+  },
+  {
+   "id": "s2",
+   "purpose": "context",
+   "narration": {
+    "text": "For decades, Britain had practiced what historians call salutary neglect, salutary meaning healthy. London passed trade laws and looked the other way, while the colonies ran their own affairs and taxed themselves through their own assemblies. They got used to it. [pause:1] Then 1763 changed everything. A royal proclamation drew a line down the Appalachian Mountains: no colonial settlement west of here. The war was over, and the old arrangement was finished.",
+    "voice": "host"
+   },
+   "visual": {
+    "base_image": "assets/images/u3/proclamation-1763-map.jpg",
+    "search": {
+     "query": "Proclamation of 1763 map Appalachian",
+     "provider": "wikimedia",
+     "min_width": 800,
+     "license": "public-domain"
+    }
+   },
+   "animation": {
+    "type": "map",
+    "title": "The Rules Change",
+    "moves": [
+     {
+      "kind": "dots",
+      "cue": "drew a line down the Appalachian Mountains",
+      "path": [
+       [
+        0.34,
+        0.18
+       ],
+       [
+        0.3,
+        0.4
+       ],
+       [
+        0.28,
+        0.6
+       ]
+      ],
+      "color": [
+       178,
+       34,
+       34
+      ],
+      "label": "PROCLAMATION LINE, 1763",
+      "label_pos": [
+       0.52,
+       0.35
+      ]
+     }
+    ]
+   },
+   "beats": [
+    {
+     "type": "label",
+     "cue": "the old arrangement was finished",
+     "text": "SALUTARY NEGLECT ENDS",
+     "x": 0.5,
+     "y": 0.86,
+     "duration": 4
+    }
+   ],
+   "on_screen_text": [
+    "SALUTARY NEGLECT ENDS",
+    "PROCLAMATION LINE, 1763"
+   ],
+   "source": {
+    "title": "Proclamation of 1763 boundary map (search-resolved)",
+    "license": "Public domain",
+    "notes": "Wikimedia Commons search; pick a clean public-domain rendering of the 1763 boundary. Verify line coordinates against the retrieved map at animatic stage."
+   },
+   "production_notes": "Orientation only: the two facts the conflict needs (neglect ends, line drawn). Map line coordinates must be tuned to the retrieved map.",
+   "topics": [
+    "3.3"
+   ],
+   "min_duration": 24,
+   "transition": {
+    "type": "hard_cut",
+    "duration": 0.2
+   },
+   "covers_los": [
+    2
+   ]
+  },
+  {
+   "id": "s3",
+   "purpose": "concept",
+   "narration": {
+    "text": "Here is the constitutional question at the center of everything. The one this whole lesson is named for. Parliament said the colonists were virtually represented. Most people in Britain couldn't vote either, but Parliament spoke for the entire empire, so it could tax the entire empire. [pause:1] The colonists answered: no. Only our own elected assemblies can tax us, because only they answer to us. Actual representation, or nothing. This stopped being about money. It became about who gets to rule.",
+    "voice": "host"
+   },
+   "visual": {
+    "base_image": "assets/images/u3/stamp-act-document.jpg",
+    "secondary_image": "assets/images/u3/bostonians-reading-stamp-act.png",
+    "search": {
+     "query": "Stamp Act 1765 document Parliament",
+     "provider": "wikimedia",
+     "min_width": 800,
+     "license": "public-domain"
+    }
+   },
+   "animation": {
+    "type": "versus",
+    "title": "Who can tax the colonies?",
+    "name_left": "VIRTUAL REPRESENTATION",
+    "name_right": "ACTUAL REPRESENTATION"
+   },
+   "beats": [
+    {
+     "type": "question",
+     "cue": "who gets to rule",
+     "text": "WHO CAN TAX THE COLONIES?",
+     "x": 0.5,
+     "y": 0.68,
+     "duration": 4
+    }
+   ],
+   "on_screen_text": [
+    "VIRTUAL REPRESENTATION",
+    "ACTUAL REPRESENTATION",
+    "WHO CAN TAX THE COLONIES?"
+   ],
+   "source": {
+    "title": "Stamp Act document vs. Bostonians reading the Stamp Act (1765)",
+    "license": "Public domain",
+    "notes": "Both images verified public-domain via review 2026-10-04. The document stands for Parliament's claim; the Bostonians image for the colonial answer. Neither image depicts the representation debate literally; the versus frame is interpretive, labeled as such in narration."
+   },
+   "production_notes": "The title concept, taught explicitly per review gap #2. Parliament's case stated fairly first (best case A), then the colonial answer. versus names are the two doctrines, not people.",
+   "topics": [
+    "3.3"
+   ],
+   "min_duration": 26,
+   "transition": {
+    "type": "hard_cut",
+    "duration": 0.2
+   },
+   "covers_los": [
+    1
+   ]
+  },
+  {
+   "id": "s4",
+   "purpose": "evidence",
+   "narration": {
+    "text": "The test came fast. The Sugar Act of 1764, the first law meant to raise colonial revenue, not just regulate trade. Then the Stamp Act of 1765: a direct tax on nearly every piece of paper. Legal documents. Newspapers. Pamphlets. Even playing cards and dice. [pause:1] The colonies exploded. The Sons of Liberty formed. Nine colonies sent delegates to the Stamp Act Congress. Parliament caved and repealed the Stamp Act in 1766. [pause:1] And on the same day, passed the Declaratory Act, claiming power in all cases whatsoever. They surrendered the tax and kept the principle.",
+    "voice": "host"
+   },
+   "visual": {
+    "base_image": "assets/images/u3/stamp-act-document.jpg",
+    "search": {
+     "page_title": "File:Parliament_Stamp_Act1765.jpg",
+     "provider": "wikimedia",
+     "min_width": 800,
+     "license": "public-domain"
+    }
+   },
+   "animation": {
+    "type": "source_analysis",
+    "title": "The Stamp Act, 1765",
+    "highlights": [
+     {
+      "box": [
+       0.12,
+       0.3,
+       0.88,
+       0.45
+      ],
+      "label": "A DIRECT TAX ON PAPER",
+      "at": 8,
+      "duration": 5
+     },
+     {
+      "box": [
+       0.12,
+       0.52,
+       0.88,
+       0.67
+      ],
+      "label": "DOCUMENTS · NEWSPAPERS · PLAYING CARDS",
+      "at": 14,
+      "duration": 5
+     }
+    ]
+   },
+   "beats": [
+    {
+     "type": "label",
+     "cue": "Sugar Act of 1764",
+     "text": "SUGAR ACT, 1764",
+     "x": 0.5,
+     "y": 0.14,
+     "duration": 3
+    },
+    {
+     "type": "stamp",
+     "cue": "in all cases whatsoever",
+     "text": "'IN ALL CASES WHATSOEVER'",
+     "x": 0.5,
+     "y": 0.5,
+     "duration": 5
+    }
+   ],
+   "audio": {
+    "foley": "paper_rustle",
+    "foley_gain": 0.5
+   },
+   "on_screen_text": [
+    "SUGAR ACT, 1764",
+    "STAMP ACT, 1765",
+    "'IN ALL CASES WHATSOEVER'"
+   ],
+   "source": {
+    "title": "Stamp Act 1765, Parliamentary document",
+    "license": "Public domain",
+    "notes": "Wikimedia Commons, verified via review 2026-10-04. Inspected as evidence: the document itself is the artifact. Highlight boxes are approximate; tune against the retrieved scan at animatic stage."
+   },
+   "production_notes": "Evidence scene: the viewer inspects the artifact. The reversal lands in narration — they win the repeal and lose the principle. Highlight boxes approximate; verify at animatic stage.",
+   "topics": [
+    "3.3"
+   ],
+   "min_duration": 30,
+   "transition": {
+    "type": "hard_cut",
+    "duration": 0.2
+   },
+   "covers_los": [
+    2
+   ]
+  },
+  {
+   "id": "s5",
+   "purpose": "evidence",
+   "narration": {
+    "text": "In 1767 came the Townshend Acts, duties on glass, lead, paint, paper, and tea, plus new customs boards and juryless courts to enforce them. The boycotts returned sharper. The Daughters of Liberty spun homespun cloth so families could refuse British textiles. Parliament repealed most of the duties in 1770. But kept the tax on tea, to prove the point. [pause:1] That same year, in March, British soldiers fired into a Boston crowd. Five colonists died. Paul Revere's engraving turned the clash into propaganda overnight.",
+    "voice": "host"
+   },
+   "visual": {
+    "base_image": "assets/images/u3/revere-boston-massacre.jpg",
+    "search": {
+     "page_title": "File:Paul Revere, after Henry Pelham, The Boston Massacre, 1770, NGA 11550.jpg",
+     "provider": "wikimedia",
+     "min_width": 800,
+     "license": "public-domain"
+    }
+   },
+   "animation": {
+    "type": "zoom",
+    "cx": 0.5,
+    "cy": 0.45,
+    "end_zoom": 1.3,
+    "zoom_duration": 6
+   },
+   "beats": [
+    {
+     "type": "label",
+     "cue": "Townshend Acts",
+     "text": "TOWNSHEND ACTS, 1767",
+     "x": 0.5,
+     "y": 0.14,
+     "duration": 4
+    },
+    {
+     "type": "label",
+     "cue": "Five colonists died",
+     "text": "FIVE DEAD — MARCH 1770",
+     "x": 0.5,
+     "y": 0.86,
+     "duration": 4
+    },
+    {
+     "type": "stamp",
+     "cue": "into propaganda overnight",
+     "text": "PROPAGANDA",
+     "x": 0.5,
+     "y": 0.5,
+     "duration": 3
+    }
+   ],
+   "on_screen_text": [
+    "TOWNSHEND ACTS, 1767",
+    "FIVE DEAD — MARCH 1770",
+    "PROPAGANDA"
+   ],
+   "source": {
+    "title": "The Boston Massacre, Paul Revere after Henry Pelham, 1770",
+    "creator": "Paul Revere (after Henry Pelham)",
+    "date": "1770",
+    "license": "Public domain",
+    "url": "https://commons.wikimedia.org/wiki/File:Paul_Revere,_after_Henry_Pelham,_The_Boston_Massacre,_1770,_NGA_11550.jpg",
+    "notes": "Contemporary 1770 engraving, made weeks after the event as patriot propaganda — captioned honestly as propaganda, not reportage. The narration says so explicitly."
+   },
+   "production_notes": "Escalation: economic pressure (boycotts) then blood. The engraving is treated as what it is — a weapon, not a window.",
+   "topics": [
+    "3.3"
+   ],
+   "min_duration": 28,
+   "transition": {
+    "type": "hard_cut",
+    "duration": 0.2
+   },
+   "covers_los": [
+    2
+   ]
+  },
+  {
+   "id": "s6",
+   "purpose": "application",
+   "narration": {
+    "text": "Now the choice. In 1773, Parliament passed the Tea Act, giving the British East India Company a monopoly on colonial tea sales. Here is the twist: the tea got cheaper. [pause:1.5] Cheaper. And the colonists destroyed it anyway. Buying it meant accepting Parliament's right to tax them. So on the night of December 16, 1773, the Sons of Liberty, some disguised as Mohawks, dumped 342 chests of tea into Boston Harbor. Principle had beaten price.",
+    "voice": "host"
+   },
+   "visual": {
+    "base_image": "assets/images/u3/boston-tea-party-cooper.jpg",
+    "search": {
+     "page_title": "File:1773_BostonTeaParty_Cooper.jpg",
+     "provider": "wikimedia",
+     "min_width": 800,
+     "license": "public-domain"
+    }
+   },
+   "animation": {
+    "type": "ken_burns",
+    "zoom": 0.08,
+    "pan_x": 0.5,
+    "pan_y": 0.55
+   },
+   "beats": [
+    {
+     "type": "label",
+     "cue": "passed the Tea Act",
+     "text": "TEA ACT, 1773",
+     "x": 0.5,
+     "y": 0.14,
+     "duration": 4
+    },
+    {
+     "type": "label",
+     "cue": "342 chests",
+     "text": "342 CHESTS",
+     "x": 0.5,
+     "y": 0.86,
+     "duration": 4
+    },
+    {
+     "type": "label",
+     "cue": "December 16, 1773",
+     "text": "DECEMBER 16, 1773",
+     "x": 0.5,
+     "y": 0.3,
+     "duration": 4
+    }
+   ],
+   "device": "show_ask",
+   "device_params": {
+    "question": "The tea is cheaper. Do you buy it — and accept Parliament's right to tax you?",
+    "hold_sec": 2
+   },
+   "on_screen_text": [
+    "TEA ACT, 1773",
+    "342 CHESTS",
+    "DECEMBER 16, 1773"
+   ],
+   "source": {
+    "title": "Boston Tea Party, 1773 (Cooper engraving)",
+    "license": "Public domain",
+    "notes": "Wikimedia Commons, verified via review 2026-10-04. Period-adjacent engraving; captioned as an engraving of the event, not an eyewitness record."
+   },
+   "production_notes": "The reversal: cheaper tea, destroyed anyway — the moment the 'it's about money' model breaks. show_ask poses the colonists' real dilemma before the narration resolves it.",
+   "topics": [
+    "3.3"
+   ],
+   "min_duration": 26,
+   "transition": {
+    "type": "hard_cut",
+    "duration": 0.2
+   },
+   "covers_los": [
+    2
+   ]
+  },
+  {
+   "id": "s7",
+   "purpose": "close",
+   "narration": {
+    "text": "Parliament answered with the Coercive Acts. The colonists called them the Intolerable Acts. Boston's harbor was closed until the tea was paid for, and Massachusetts lost its self-government. The plan was to isolate the radicals. [pause:1] It did the opposite. Twelve colonies sent delegates to the First Continental Congress. Philadelphia, September 1774. Remember the chain: war debt, then taxes, then resistance, then harsher measures, then wider resistance. That spiral is the road to Lexington and Concord, and the pattern to carry into the Revolution.",
+    "voice": "host"
+   },
+   "visual": {
+    "base_image": "assets/images/u3/first-continental-congress.jpg",
+    "search": {
+     "page_title": "File:Flickr - USCapitol - The First Continental Congress, 1774.jpg",
+     "provider": "wikimedia",
+     "min_width": 800,
+     "license": "public-domain"
+    }
+   },
+   "animation": {
+    "type": "timeline",
+    "title": "The Spiral",
+    "events": [
+     [
+      "1764",
+      "Sugar Act"
+     ],
+     [
+      "1765",
+      "Stamp Act"
+     ],
+     [
+      "1770",
+      "Massacre"
+     ],
+     [
+      "1773",
+      "Tea Party"
+     ],
+     [
+      "1774",
+      "Congress"
+     ]
+    ]
+   },
+   "beats": [
+    {
+     "type": "label",
+     "cue": "First Continental Congress",
+     "text": "FIRST CONTINENTAL CONGRESS",
+     "x": 0.5,
+     "y": 0.14,
+     "duration": 4
+    },
+    {
+     "type": "label",
+     "cue": "September 1774",
+     "text": "SEPT 1774, PHILADELPHIA",
+     "x": 0.5,
+     "y": 0.86,
+     "duration": 4
+    }
+   ],
+   "device": "date_ticker",
+   "device_params": {
+    "position": "top_right",
+    "dates": [
+     "1764",
+     "1765",
+     "1770",
+     "1773",
+     "1774"
+    ]
+   },
+   "on_screen_text": [
+    "FIRST CONTINENTAL CONGRESS",
+    "SEPT 1774, PHILADELPHIA"
+   ],
+   "source": {
+    "title": "The First Continental Congress, 1774 (Allyn Cox mural, U.S. Capitol)",
+    "license": "Public domain",
+    "notes": "Later interpretation: 20th-century mural, U.S. government work. Captioned honestly as a mural, not a contemporary record."
+   },
+   "production_notes": "Memory close: the causal chain becomes the reusable AP pattern (escalation spiral). Outro begins under the final phrase.",
+   "topics": [
+    "3.3"
+   ],
+   "min_duration": 26,
+   "transition": {
+    "type": "hard_cut",
+    "duration": 0.2
+   },
+   "covers_los": [
+    3
+   ]
+  }
+ ]
+}
