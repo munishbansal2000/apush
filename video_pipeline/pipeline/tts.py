@@ -3,7 +3,9 @@ from __future__ import annotations
 import base64
 import asyncio
 import json
+import re
 import sys
+import time
 import urllib.error
 import urllib.request
 import wave
@@ -34,6 +36,16 @@ def wav_duration(path: Path) -> float:
         raise PipelineError(f"invalid WAV file {path}: {exc}") from exc
 
 
+def _strip_express_as(ssml: str) -> str:
+    """Remove <mstts:express-as> styling, keeping the inner text.
+
+    Edge silently returns no audio when a voice does not support the
+    requested speaking style; the plain SSML usually still synthesizes.
+    """
+    without_open = re.sub(r"<mstts:express-as[^>]*>", "", ssml)
+    return without_open.replace("</mstts:express-as>", "")
+
+
 def render_edge(text: str, out: Path, voice: str, rate: str,
                 pitch: str) -> tuple[float, list[dict]]:
     try:
@@ -44,11 +56,11 @@ def render_edge(text: str, out: Path, voice: str, rate: str,
     temp_mp3 = out.with_name(f".{out.stem}.edge.tmp.mp3")
     temp_wav = out.with_name(f".{out.stem}.edge.tmp.wav")
 
-    async def synthesize():
+    async def synthesize(ssml_text: str):
         boundaries = []
         with temp_mp3.open("wb") as handle:
             async for chunk in edge_tts.Communicate(
-                    text, voice, rate=rate, pitch=pitch).stream():
+                    ssml_text, voice, rate=rate, pitch=pitch).stream():
                 if chunk["type"] == "audio":
                     handle.write(chunk["data"])
                 elif chunk["type"] == "WordBoundary":
@@ -59,7 +71,26 @@ def render_edge(text: str, out: Path, voice: str, rate: str,
                     })
         return boundaries
     try:
-        boundaries = asyncio.run(synthesize())
+        try:
+            boundaries = asyncio.run(synthesize(text))
+        except Exception as first_exc:
+            # Transient service hiccups are common; retry once as-is.
+            time.sleep(5)
+            try:
+                boundaries = asyncio.run(synthesize(text))
+            except Exception:
+                # The service may reject the emotion styling (e.g. the voice
+                # does not support the requested mstts style) while accepting
+                # the plain SSML. Drop the styling and retry rather than fail
+                # the whole render; warn loudly so the author can revisit the
+                # voice/style pairing.
+                plain = _strip_express_as(text)
+                if plain == text:
+                    raise
+                print(f"[tts] {out.stem}: Edge rejected the styled SSML "
+                      f"({type(first_exc).__name__}); retrying without "
+                      f"<mstts:express-as> emotion styling", flush=True)
+                boundaries = asyncio.run(synthesize(plain))
         import subprocess
         result = subprocess.run([
             "ffmpeg", "-y", "-v", "error", "-i", str(temp_mp3),

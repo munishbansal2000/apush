@@ -146,7 +146,6 @@
         "base_image": "assets/images/u1-ch3-l8/case-file.webp",
         "search": {
           "query": "Boazio Sir Francis Drakes West Indian Voyage",
-          "page_title": "File:Boazio-Sir Francis Drakes West Indian Voyage.jpg",
           "provider": "wikimedia",
           "pick": 0,
           "min_width": 800
@@ -243,7 +242,6 @@
         "base_image": "assets/images/u1-ch3-l8/sepulveda-study.webp",
         "search": {
           "query": "Saint Jerome in his study Durer",
-          "page_title": "File:'Saint Jerome in his Study', engraving by Albrecht Dürer, Honolulu Museum of Art.jpg",
           "provider": "wikimedia",
           "pick": 0,
           "min_width": 800
@@ -279,7 +277,7 @@
       "production_notes": "ASSET PENDING: split-study-mines.webp (PIL composite of sepulveda-study.webp + mines-1590.webp). His final line plays over the split: abstraction become reality.",
       "purpose": "concept",
       "source": {
-        "license": "Public domain composite",
+        "license": "AI-generated composite",
         "title": "Pre-composed split: study top, mines engraving bottom"
       },
       "topics": [
@@ -340,7 +338,7 @@
       "production_notes": "Opens on the inherited split. Camera drifts down toward the mines: the rebuttal begins visually. Score drops out here in the final edit.",
       "purpose": "concept",
       "source": {
-        "license": "Public domain composite",
+        "license": "AI-generated composite",
         "title": "Pre-composed split: study top, mines engraving bottom"
       },
       "topics": [
@@ -378,7 +376,7 @@
         {
           "cue": "I lived there",
           "duration": 10,
-          "text": "Potosí, Upper Peru. Colonial mine engraving.",
+          "text": "Silver mines, New Spain. Engraving, 1590.",
           "type": "label",
           "x": 0.5,
           "y": 0.93
@@ -391,14 +389,14 @@
       },
       "on_screen_text": [
         "RATIONAL PEOPLE",
-        "Potosí, Upper Peru. Colonial mine engraving."
+        "Silver mines, New Spain. Engraving, 1590."
       ],
-      "production_notes": "Pipeline-sourced public-domain Potosí mine engraving. Slow inspection track. Testimony plays dry, no score, in the final edit.",
+      "production_notes": "ASSET PENDING: mines-1590.webp. Slow inspection track. Testimony plays dry, no score, in the final edit.",
       "purpose": "evidence",
       "source": {
-        "license": "Public domain",
+        "license": "AI-generated",
         "notes": "Illustrates the labor system, not what Las Casas saw in 1550; the Potosí mita postdates the debate.",
-        "title": "Indigenous workers in a mine at Potosí, Upper Peru"
+        "title": "Silver mines, New Spain — engraving, 1590"
       },
       "topics": [
         "1.4"
@@ -411,7 +409,6 @@
         "base_image": "assets/images/u1-ch3-l8/mines-1590.webp",
         "search": {
           "query": "Potosí mine",
-          "page_title": "File:Indigenous workers in a mine in Potosí, New Spain.jpg",
           "provider": "wikimedia",
           "pick": 1,
           "min_width": 800
@@ -458,9 +455,9 @@
         "voice": "lascasas"
       },
       "on_screen_text": [
-        "Engraving, 1858, after de Bry. Illustrative, not eyewitness evidence."
+        "Engraving, c. 1598. Illustrates Las Casas's account."
       ],
-      "production_notes": "Pipeline-sourced public-domain 1858 engraving after de Bry. Hard cut lands exactly on 'What I witnessed.' Push-in lands on the soldiers' faces. Hold the silence after.",
+      "production_notes": "ASSET PENDING: torture-1598.webp (archival PD, to source). Hard cut lands exactly on 'What I witnessed.' Push-in lands on the soldiers' faces. Hold the silence after.",
       "purpose": "evidence",
       "source": {
         "license": "Public domain",
@@ -478,7 +475,6 @@
         "base_image": "assets/images/u1-ch3-l8/torture-1598.webp",
         "search": {
           "query": "Spaniards hunting Indians LCCN91789752",
-          "page_title": "File:Spaniards hunting Indians LCCN91789752.jpg",
           "provider": "wikimedia",
           "pick": 0,
           "min_width": 800
@@ -518,7 +514,7 @@
       "beats": [
         {
           "cue": "Day one",
-          "duration": 0.7,
+          "duration": 2,
           "text": "DAY ONE",
           "type": "label",
           "x": 0.5,
@@ -526,7 +522,7 @@
         },
         {
           "cue": "Day three",
-          "duration": 0.7,
+          "duration": 2,
           "text": "DAY THREE",
           "type": "label",
           "x": 0.5,
@@ -534,7 +530,7 @@
         },
         {
           "cue": "Day five",
-          "duration": 0.9,
+          "duration": 3,
           "text": "DAY FIVE",
           "type": "label",
           "x": 0.5,
@@ -570,7 +566,6 @@
         "base_image": "assets/images/u1-ch3-l8/pages-stack-base.webp",
         "search": {
           "query": "hand writing with quill old engraving",
-          "page_title": "File:Print, St. Luke (S. Lvcas), 1650 (CH 18097483).jpg",
           "provider": "wikimedia",
           "pick": 2,
           "min_width": 800
@@ -613,7 +608,6 @@
         "secondary_image": "assets/images/u1-ch3-l8/lascasas-portrait-1791.webp",
         "search": {
           "query": "Aristotle bust engraving",
-          "page_title": "File:Aristoteles, in profiel naar rechts, RP-P-H-H-1125.jpg",
           "provider": "wikimedia",
           "pick": 0,
           "min_width": 800
@@ -672,7 +666,6 @@
         "base_image": "assets/images/u1-ch3-l8/chamber-empty.webp",
         "search": {
           "query": "Piranesi basilica interior etching",
-          "page_title": "File:Interior view of St. Peter's Basilica in the Vatican, from Vedute di Roma (Roman Views) MET DP828207.jpg",
           "provider": "wikimedia",
           "pick": 3,
           "min_width": 800
@@ -727,7 +720,6 @@
         "base_image": "assets/images/u1-ch3-l8/lascasas-portrait-1791.webp",
         "search": {
           "query": "Bartolome de las Casas",
-          "page_title": "File:Bartolomé de Las Casas.png",
           "provider": "wikimedia",
           "pick": 0,
           "min_width": 800
@@ -756,7 +748,7 @@
       "id": "s5b-montage",
       "min_duration": 6,
       "narration": {
-        "text": "Every time we ask it about a war today, we're still answering [emphasis]that question[/emphasis].",
+        "text": "Every time we ask it about a war today, we're still sitting in [emphasis]that room[/emphasis].",
         "voice": "host"
       },
       "on_screen_text": [
@@ -766,7 +758,7 @@
         "1960s",
         "TODAY"
       ],
-      "production_notes": "Slow push-in on a symbolic European council chamber (Trent, not Valladolid) while the date ticker advances 1550 to TODAY. Final edit ends with a 12-frame fade to black — the only dissolve in the video.",
+      "production_notes": "Slow push-in on the Trent council hall while the date ticker advances 1550 to TODAY under the close. The room IS the argument: every era sits in it. Final edit ends with a 12-frame fade to black — the only dissolve in the video.",
       "purpose": "close",
       "source": {
         "license": "CC0",
@@ -784,7 +776,6 @@
         "base_image": "assets/images/u1-ch3-l8/council-hall.webp",
         "search": {
           "query": "Council of Trent engraving",
-          "page_title": "File:Speculum Romanae Magnificentiae- Council of Trent MET DP870778.jpg",
           "provider": "wikimedia",
           "pick": 2,
           "min_width": 800
@@ -828,16 +819,7 @@
   "still_generation": {
     "provider": "command",
     "search_provider": "wikimedia",
-    "command": [
-      "{python}",
-      "{repo_root}/video_pipeline/tools/compose_split.py",
-      "--prompt",
-      "{prompt}",
-      "--out",
-      "{output}",
-      "--repo-root",
-      "{repo_root}"
-    ],
+    "command": "{python} {repo_root}/video_pipeline/tools/compose_split.py --prompt \"{prompt}\" --out \"{output}\" --repo-root \"{repo_root}\"",
     "timeout_seconds": 300,
     "orientation": "landscape",
     "image_output_format": "webp"
