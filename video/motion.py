@@ -1440,6 +1440,283 @@ def beat_overlay(base_clip, beats, dur):
 
     return VideoClip(frame, duration=dur)
 
+
+# ------------------------------------------------- creative devices
+# Scriptable directorial overlays driven by scene.device/device_params
+# (validated by pipeline/schema._validate_device). Cue-timed devices read
+# the resolved timestamps pipeline/timing.resolve_scene_timing injects
+# (device_params.reveal_at, annotation "at"); untimed fallbacks spread
+# evenly so layout validation never depends on TTS output.
+
+_HOOK_BADGE = {"contradiction": "VS", "mystery": "?", "stakes": "!"}
+
+
+def device_overlay(base_clip, device, params, dur):
+    """Overlay a creative device on a scene clip.
+
+    device is a registry id (hook, redact_reveal, reversal, annotate,
+    show_ask, date_ticker); params is the timed device_params dict.
+    """
+    _note_prim("device_overlay")
+    params = params or {}
+    if device == "hook":
+        return _device_hook(base_clip, params, dur)
+    if device == "redact_reveal":
+        return _device_redact_reveal(base_clip, params, dur)
+    if device == "reversal":
+        return _device_reversal(base_clip, params, dur)
+    if device == "annotate":
+        return _device_annotate(base_clip, params, dur)
+    if device == "show_ask":
+        return _device_show_ask(base_clip, params, dur)
+    if device == "date_ticker":
+        return _device_date_ticker(base_clip, params, dur)
+    raise ValueError(f"unknown creative device {device!r}")
+
+
+def _device_hook(base_clip, params, dur):
+    """Opening hook badge: pops in early, pays off (fades) by payoff_by_sec."""
+    from moviepy import VideoClip
+    letter = _HOOK_BADGE.get(params.get("hook_type", "mystery"), "?")
+    dur = float(dur)
+    start = 0.15
+    end = min(dur, float(params.get("payoff_by_sec", dur)))
+    radius = px(64)
+    cx, cy = W * 0.5, H * 0.14
+    _note_box("device-hook", letter,
+              (cx - radius, cy - radius, cx + radius, cy + radius), start, end)
+
+    def frame(t):
+        canvas = Image.fromarray(base_clip.get_frame(t)).convert("RGBA")
+        if start <= t <= end:
+            p = ease_out_back(min(1, (t - start) / 0.35))
+            fade = min(1, max(0, (end - t) / 0.4))
+            r = max(1, int(radius * max(0.01, p)))
+            badge = Image.new("RGBA", (r * 2 + px(16), r * 2 + px(16)), (0, 0, 0, 0))
+            d = ImageDraw.Draw(badge, "RGBA")
+            d.ellipse([px(8), px(8), px(8) + r * 2, px(8) + r * 2],
+                      fill=(10, 12, 18, int(235 * fade)),
+                      outline=GOLD + (int(255 * fade),), width=max(1, px(6)))
+            d.text((px(8) + r, px(8) + r), letter, font=font(FB, 64),
+                   fill=(255, 255, 255, int(255 * fade)), anchor="mm")
+            _place(canvas, badge, cx, cy)
+        return np.asarray(canvas.convert("RGB"))
+
+    return VideoClip(frame, duration=dur)
+
+
+def _device_redact_reveal(base_clip, params, dur):
+    """Classified-document lines: black redaction bars wipe away on cue."""
+    from moviepy import VideoClip
+    dur = float(dur)
+    lines = params["lines"]
+    reveal_at = list(params.get("reveal_at") or [])
+    if len(reveal_at) != len(lines):
+        reveal_at = [dur * (0.25 + 0.5 * i / max(1, len(lines)))
+                     for i in range(len(lines))]
+    fnt = font(FB, 40)
+    pad = px(26)
+    tiles = [text_rgba(line, fnt, fill=(255, 255, 255, 255), max_w=860)
+             for line in lines]
+    panel_w = max(tile.width for tile in tiles) + pad * 2
+    lh = tiles[0].height + px(18)
+    panel_h = lh * len(lines) + pad * 2 - px(18)
+    cx, cy = W * 0.5, H * 0.32
+    x0, y0 = cx - panel_w / 2, cy - panel_h / 2
+    for index, line in enumerate(lines):
+        top = y0 + pad + index * lh
+        _note_box("device-redact", line,
+                  (x0, top, x0 + panel_w, top + tiles[index].height),
+                  reveal_at[index], dur)
+
+    def frame(t):
+        canvas = Image.fromarray(base_clip.get_frame(t)).convert("RGBA")
+        panel = Image.new("RGBA", (int(panel_w), int(panel_h)), (10, 12, 18, 215))
+        d = ImageDraw.Draw(panel, "RGBA")
+        d.rounded_rectangle([0, 0, panel_w - 1, panel_h - 1], radius=px(16),
+                            outline=GOLD + (220,), width=max(1, px(4)))
+        y = pad
+        for tile, at in zip(tiles, reveal_at):
+            panel.alpha_composite(tile, (pad, y))
+            k = min(1, max(0, (t - at) / 0.45))  # 0 = fully redacted
+            if k < 1:
+                bar_w = int(tile.width * (1 - k)) + px(8)
+                d.rectangle([pad, y, pad + bar_w, y + tile.height],
+                            fill=(0, 0, 0, 255))
+            y += lh
+        _place(canvas, panel, cx, cy)
+        return np.asarray(canvas.convert("RGB"))
+
+    return VideoClip(frame, duration=dur)
+
+
+def _device_reversal(base_clip, params, dur):
+    """Pivot beat: a stamp slams in mid-scene (or a soft rule sweep)."""
+    from moviepy import VideoClip
+    dur = float(dur)
+    at = dur * 0.35
+    if params.get("pivot", True):
+        word = "BUT..."
+        tile = text_rgba(word, font(FB, 72), fill=(255, 255, 255, 255),
+                         max_w=700)
+        pad = px(30)
+        pw, ph = tile.width + pad * 2, tile.height + pad * 2
+        cx, cy = W * 0.5, H * 0.42
+        _note_box("device-reversal", word,
+                  (cx - pw / 2, cy - ph / 2, cx + pw / 2, cy + ph / 2), at, dur)
+
+        def frame(t):
+            canvas = Image.fromarray(base_clip.get_frame(t)).convert("RGBA")
+            if t >= at:
+                p = ease_out_back(min(1, (t - at) / 0.4))
+                stamp = Image.new("RGBA", (pw, ph), STAMP_RED + (235,))
+                stamp.alpha_composite(tile, (pad, pad))
+                stamp = stamp.rotate(8, expand=True, resample=Image.BICUBIC)
+                _place(canvas, _rz(stamp, p), cx, cy)
+            return np.asarray(canvas.convert("RGB"))
+    else:
+        def frame(t):
+            canvas = Image.fromarray(base_clip.get_frame(t)).convert("RGBA")
+            if t >= at:
+                k = ease_out_cubic(min(1, (t - at) / 0.6))
+                d = ImageDraw.Draw(canvas, "RGBA")
+                w = int(W * 0.7 * k)
+                d.line([(W // 2 - w // 2, H * 0.42), (W // 2 + w // 2, H * 0.42)],
+                       fill=GOLD + (255,), width=max(1, px(6)))
+            return np.asarray(canvas.convert("RGB"))
+
+    return VideoClip(frame, duration=dur)
+
+
+def _device_annotate(base_clip, params, dur):
+    """Telestrator: gold circles/arrows draw on at their cues, labels pop."""
+    from moviepy import VideoClip
+    dur = float(dur)
+    notes = params["annotations"]
+    items = []
+    for index, note in enumerate(notes):
+        at = float(note.get("at", dur * (index + 1) / (len(notes) + 1)))
+        fx = float(note.get("x", 0.5))
+        fy = float(note.get("y", min(0.78, 0.30 + 0.16 * index)))
+        label = note["label"]
+        chip = text_rgba(label, font(FB, 34), max_w=520)
+        pad = px(16)
+        pw, ph = chip.width + pad * 2, chip.height + pad * 2
+        lx = min(max(pw / 2, float(note.get("label_x", min(0.94, fx + 0.20))) * W),
+                 W - pw / 2)
+        ly = min(max(ph / 2, float(note.get("label_y", max(0.06, fy - 0.13))) * H),
+                 H - ph / 2)
+        items.append({"kind": note["type"], "x": fx * W, "y": fy * H,
+                      "chip": chip, "pad": pad, "lx": lx, "ly": ly, "at": at})
+        _note_box("device-annotate", label,
+                  (lx - pw / 2, ly - ph / 2, lx + pw / 2, ly + ph / 2), at, dur)
+
+    def frame(t):
+        canvas = Image.fromarray(base_clip.get_frame(t)).convert("RGBA")
+        d = ImageDraw.Draw(canvas, "RGBA")
+        for item in items:
+            if t < item["at"]:
+                continue
+            k = min(1, (t - item["at"]) / 0.6)
+            x, y = item["x"], item["y"]
+            if item["kind"] == "circle":
+                r = px(90)
+                box = [x - r, y - r, x + r, y + r]
+                if k >= 1:
+                    d.ellipse(box, outline=GOLD + (255,), width=max(1, px(7)))
+                else:
+                    d.arc(box, start=-90, end=-90 + 360 * k,
+                          fill=GOLD + (255,), width=max(1, px(7)))
+            else:  # arrow pointing at the feature
+                sx, sy = x - px(160), y + px(90)
+                tip = (sx + (x - sx) * k, sy + (y - sy) * k)
+                d.line([(sx, sy), tip], fill=GOLD + (255,), width=max(1, px(7)))
+                if k > 0.5:
+                    ang = np.arctan2(y - sy, x - sx)
+                    size = px(24)
+                    pts = [tip,
+                           (tip[0] - size * np.cos(ang - .55),
+                            tip[1] - size * np.sin(ang - .55)),
+                           (tip[0] - size * np.cos(ang + .55),
+                            tip[1] - size * np.sin(ang + .55))]
+                    d.polygon(pts, fill=GOLD + (255,))
+            chip, pad = item["chip"], item["pad"]
+            p = ease_out_back(min(1, (t - item["at"]) / 0.35))
+            panel = Image.new("RGBA", (chip.width + pad * 2, chip.height + pad * 2),
+                              (10, 12, 18, 225))
+            panel.alpha_composite(chip, (pad, pad))
+            border = ImageDraw.Draw(panel, "RGBA")
+            border.rounded_rectangle([0, 0, panel.width - 1, panel.height - 1],
+                                     radius=px(14), outline=GOLD + (220,),
+                                     width=max(1, px(4)))
+            _place(canvas, _rz(panel, p), item["lx"], item["ly"])
+        return np.asarray(canvas.convert("RGB"))
+
+    return VideoClip(frame, duration=dur)
+
+
+def _device_show_ask(base_clip, params, dur):
+    """End-card question panel sliding up for the final hold_sec."""
+    from moviepy import VideoClip
+    dur = float(dur)
+    hold = min(float(params.get("hold_sec", 3.0)), dur)
+    at = max(0.0, dur - hold)
+    question = params["question"]
+    tile = text_rgba("?  " + question, font(FR, 40), max_w=860)
+    pad = px(26)
+    pw, ph = tile.width + pad * 2, tile.height + pad * 2
+    cx, cy = W * 0.5, H * 0.68
+    _note_box("device-show_ask", question,
+              (cx - pw / 2, cy - ph / 2, cx + pw / 2, cy + ph / 2), at, dur)
+
+    def frame(t):
+        canvas = Image.fromarray(base_clip.get_frame(t)).convert("RGBA")
+        if t >= at:
+            slide = ease_out_cubic(min(1, (t - at) / 0.5))
+            panel = Image.new("RGBA", (int(pw), int(ph)), (18, 45, 70, 238))
+            panel.alpha_composite(tile, (pad, pad))
+            border = ImageDraw.Draw(panel, "RGBA")
+            border.rounded_rectangle([0, 0, pw - 1, ph - 1], radius=px(16),
+                                     outline=GOLD + (220,), width=max(1, px(4)))
+            _place(canvas, panel, cx, cy + (1 - slide) * ph)
+        return np.asarray(canvas.convert("RGB"))
+
+    return VideoClip(frame, duration=dur)
+
+
+def _device_date_ticker(base_clip, params, dur):
+    """Date stamp cycling through its labels evenly across the scene."""
+    from moviepy import VideoClip
+    dur = float(dur)
+    dates = params["dates"]
+    right = params.get("position", "top_right") != "top_left"
+    fnt = font(FB, 40)
+    tiles = [text_rgba(text, fnt, fill=GOLD + (255,), max_w=420)
+             for text in dates]
+    pad = px(18)
+    pw = max(tile.width for tile in tiles) + pad * 2
+    ph = max(tile.height for tile in tiles) + pad * 2
+    cx = W - pw / 2 - px(48) if right else pw / 2 + px(48)
+    cy = ph / 2 + px(48)
+    _note_box("device-date_ticker", " / ".join(dates),
+              (cx - pw / 2, cy - ph / 2, cx + pw / 2, cy + ph / 2), 0.0, dur)
+
+    def frame(t):
+        canvas = Image.fromarray(base_clip.get_frame(t)).convert("RGBA")
+        seg = dur / len(dates)
+        idx = min(len(dates) - 1, int(t / dur * len(dates)))
+        p = ease_out_back(min(1, (t - idx * seg) / 0.3))
+        panel = Image.new("RGBA", (int(pw), int(ph)), (10, 12, 18, 225))
+        border = ImageDraw.Draw(panel, "RGBA")
+        border.rounded_rectangle([0, 0, pw - 1, ph - 1], radius=px(14),
+                                 outline=GOLD + (220,), width=max(1, px(4)))
+        tile = tiles[idx]
+        panel.alpha_composite(tile, (pad + (pw - pad * 2 - tile.width) // 2, pad))
+        _place(canvas, _rz(panel, p), cx, cy)
+        return np.asarray(canvas.convert("RGB"))
+
+    return VideoClip(frame, duration=dur)
+
 # Built 2026-10-02: the user's verdict was "all I see is image + text" --
 # camera moves over stills are not enough. These primitives put THINGS THAT
 # MOVE on screen: drawing routes, ticking numbers, slamming cards, cutaway
