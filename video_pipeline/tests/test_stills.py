@@ -1,5 +1,6 @@
 """Tests for the stills stage (pipeline.stills): generation, edit variants, search."""
 import json
+import io
 import sys
 import tempfile
 import unittest
@@ -157,6 +158,19 @@ class WikimediaSelectTests(unittest.TestCase):
         chosen = stills._select_wikimedia(self.pages(), pick=0, min_width=800)
         self.assertEqual(chosen["author"], "Someone")
 
+    def test_download_converts_bytes_to_requested_format(self):
+        from PIL import Image
+        source = io.BytesIO()
+        Image.effect_noise((200, 200), 20).convert("RGB").save(source, format="JPEG")
+        with tempfile.TemporaryDirectory() as value:
+            output = Path(value) / "plate.webp"
+            with mock.patch.object(stills.urllib.request, "urlopen",
+                                   return_value=io.BytesIO(source.getvalue())):
+                digest = stills._download("https://example.test/plate.jpg", output, "s1")
+            self.assertEqual(len(digest), 64)
+            with Image.open(output) as rendered:
+                self.assertEqual(rendered.format, "WEBP")
+
 
 class GenerateStillsTests(unittest.TestCase):
     def test_dry_run_plans_without_creating(self):
@@ -194,8 +208,8 @@ class GenerateStillsTests(unittest.TestCase):
             data = manifest(
                 {"still": {"prompt": "an engraving", "provider": "command"}},
                 {"provider": "command",
-                 "command": "python3 -c \"from PIL import Image; "
-                            "Image.effect_noise((800,600), 25).convert('RGB').save('{output}')\""})
+                 "command": ["{python}", "-c", "from PIL import Image; "
+                             "Image.effect_noise((800,600), 25).convert('RGB').save(r'{output}')"]})
             out = stills.generate_stills(data, root / "lesson.json", root)
             target = root / "assets" / "images" / "test-lesson" / "s1.webp"
             self.assertTrue(target.is_file())
@@ -255,7 +269,7 @@ class TestStillsFixes(unittest.TestCase):
             root = Path(tmp) / "repo"
             out = _resolve_output("assets/images/x.webp", root)
             self.assertEqual(out, root / "assets/images/x.webp")
-            abs_p = Path("/tmp/abs.webp")
+            abs_p = (Path(tmp) / "abs.webp").resolve()
             self.assertEqual(_resolve_output(str(abs_p), root), abs_p)
 
     def test_command_license_note_override(self):
@@ -263,7 +277,7 @@ class TestStillsFixes(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             still = {"prompt": 'SPLIT top=a.webp bottom=b.webp',
                      "license_note": "Composite of AI-generated and public-domain images"}
-            config = {"command": "{python} -c \"open('{output}','w').write('x')\"",
+            config = {"command": ["{python}", "-c", "open(r'{output}','w').write('x')"],
                       "timeout_seconds": 30}
             out = Path(tmp) / "repo" / "comp.webp"
             info = _generate_command(still, out, config, "s1", Path(tmp), Path(tmp) / "repo")

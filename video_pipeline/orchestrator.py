@@ -161,7 +161,8 @@ def process(path: Path, args, source_override: dict | None = None) -> None:
             atomic_json(plan_path, resolved)
             atomic_json(work / "resolved_manifest.input_hash", canonical_hash(manifest))
         layout_path = work / "layout_report.json"
-        layout_report = validate_text_layout(resolved, path, REPO_ROOT)
+        layout_report = validate_text_layout(
+            resolved, path, REPO_ROOT, allow_missing_assets=args.dry_run)
         atomic_json(layout_path, layout_report)
         state.record("planned", plan_fp, [str(plan_path), str(layout_path)])
         print(f"[planned] text layout: {layout_report['text_element_count']} elements, no conflicts")

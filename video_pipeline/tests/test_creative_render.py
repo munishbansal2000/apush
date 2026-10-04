@@ -47,6 +47,9 @@ class CreativeRenderTests(unittest.TestCase):
                 "type": "host", "at": 0.1, "duration": 1.5,
                 "text": "Explain the connection", "x": 0.5, "y": 0.88
             }], 2.0))
+            clips.append(motion.device_overlay(
+                motion.slide_scene(Image.new("RGB", (motion.W, motion.H), (30, 35, 42)), 2.0),
+                "date_ticker", {"position": "top_right", "dates": ["1550", "TODAY"]}, 2.0))
             try:
                 for clip in clips:
                     frame = clip.get_frame(1.0)

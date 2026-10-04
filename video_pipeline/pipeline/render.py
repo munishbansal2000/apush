@@ -69,6 +69,9 @@ def build_clip(motion, scene: dict, duration: float, manifest_path: Path, repo_r
                                     animation.get("title", ""))
     else:
         raise PipelineError(f"scene {scene['id']} still has unsupported animation type {kind}")
+    if scene.get("device"):
+        clip = motion.device_overlay(
+            clip, scene["device"], scene.get("device_params", {}), duration)
     if scene.get("beats"):
         clip = motion.beat_overlay(clip, scene["beats"], duration)
     return clip
@@ -91,6 +94,24 @@ def _mixed_audio(scene: dict, narration: Path, duration: float,
         volume = float(spec.get("ambience_volume", 0.12))
         filters.append(f"[{input_index}:a]atrim=0:{duration:.3f},volume={volume}[ambience]")
         inputs.append("[ambience]")
+        input_index += 1
+    foley_sources = {
+        "paper_rustle": "anoisesrc=color=pink:amplitude=0.18:sample_rate=48000",
+        "quill_scratch": "anoisesrc=color=white:amplitude=0.10:sample_rate=48000",
+    }
+    foley = spec.get("foley")
+    if foley:
+        command += ["-f", "lavfi", "-i", foley_sources[foley]]
+        gain = float(spec.get("foley_gain", 0.12))
+        fade = min(float(spec.get("foley_fade_sec", 0.5)), duration / 2)
+        tone = ("highpass=f=250,lowpass=f=3600" if foley == "paper_rustle"
+                else "highpass=f=1700,lowpass=f=6800,tremolo=f=7:d=0.35")
+        fade_out = max(0.0, duration - fade)
+        filters.append(
+            f"[{input_index}:a]atrim=0:{duration:.3f},{tone},volume={gain},"
+            f"afade=t=in:st=0:d={fade:.3f},"
+            f"afade=t=out:st={fade_out:.3f}:d={fade:.3f}[foley]")
+        inputs.append("[foley]")
         input_index += 1
     sound_sources = {
         "impact": "sine=frequency=85:duration=0.24:sample_rate=48000",

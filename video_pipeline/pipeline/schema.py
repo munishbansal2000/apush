@@ -19,7 +19,7 @@ GEN_KEYS = {"provider", "model", "endpoint", "api_key_env", "timeout_seconds"}
 CLIP_GEN_KEYS = {"provider", "cookie", "browser", "lib_dir", "timeout_seconds", "keep_open_on_failure", "meta_refusal_retries"}
 STILL_GEN_KEYS = {"provider", "fallback_provider", "search_provider", "media_bin", "image_search_bin", "command", "timeout_seconds", "orientation", "image_output_format"}
 STILL_KEYS = {"prompt", "provider", "fallback_provider", "seed", "edit_of", "edit_prompt", "orientation", "license_note"}
-SEARCH_KEYS = {"query", "provider", "pick", "min_width", "license"}
+SEARCH_KEYS = {"query", "page_title", "provider", "pick", "min_width", "license", "sha256"}
 SCENE_KEYS = {"id", "purpose", "narration", "visual", "animation", "beats", "audio", "transition", "min_duration", "topics", "on_screen_text", "source", "production_notes", "device", "device_params"}
 NARRATION_KEYS = {"text", "voice", "reference_audio", "reference_text", "settings"}
 VISUAL_KEYS = {"base_image", "secondary_image", "clip", "layers", "still", "search"}
@@ -76,6 +76,69 @@ def _number(value: Any, where: str, low: float | None = None, high: float | None
         raise PipelineError(f"{where} must be a number")
     if low is not None and value < low or high is not None and value > high:
         raise PipelineError(f"{where} must be between {low} and {high}")
+
+
+def _validate_device(name: str, params: dict, where: str) -> None:
+    """Validate the creative-device registry consumed by video/motion.py."""
+    registry = {
+        "hook": ({"hook_type", "payoff_by_sec"}, {"hook_type", "payoff_by_sec"}),
+        "redact_reveal": ({"lines", "reveal_on_cues"}, {"lines", "reveal_on_cues"}),
+        "reversal": ({"pivot", "setup_scene"}, {"pivot"}),
+        "annotate": ({"mode", "annotations"}, {"annotations"}),
+        "show_ask": ({"question", "hold_sec"}, {"question"}),
+        "date_ticker": ({"position", "dates"}, {"dates"}),
+    }
+    if name not in registry:
+        raise PipelineError(f"{where}.device is not a supported creative device")
+    allowed, required = registry[name]
+    _keys(params, allowed, f"{where}.device_params")
+    _required(params, required, f"{where}.device_params")
+    if name == "hook":
+        if params["hook_type"] not in {"contradiction", "mystery", "stakes"}:
+            raise PipelineError(f"{where}.device_params.hook_type is not supported")
+        _number(params["payoff_by_sec"], f"{where}.device_params.payoff_by_sec", 0.5, 15)
+    elif name == "redact_reveal":
+        lines, cues = params["lines"], params["reveal_on_cues"]
+        if (not isinstance(lines, list) or not lines or
+                not all(isinstance(v, str) and v.strip() for v in lines)):
+            raise PipelineError(f"{where}.device_params.lines must be non-empty strings")
+        if (not isinstance(cues, list) or len(cues) != len(lines) or
+                not all(isinstance(v, str) and v.strip() for v in cues)):
+            raise PipelineError(f"{where}.device_params.reveal_on_cues must match lines")
+    elif name == "reversal":
+        if not isinstance(params["pivot"], bool):
+            raise PipelineError(f"{where}.device_params.pivot must be true or false")
+        if "setup_scene" in params:
+            _text(params["setup_scene"], f"{where}.device_params.setup_scene")
+    elif name == "annotate":
+        if params.get("mode", "telestrator") != "telestrator":
+            raise PipelineError(f"{where}.device_params.mode must be telestrator")
+        notes = params["annotations"]
+        if not isinstance(notes, list) or not notes:
+            raise PipelineError(f"{where}.device_params.annotations must be non-empty")
+        for index, note_value in enumerate(notes):
+            nw = f"{where}.device_params.annotations[{index}]"
+            note = _obj(note_value, nw)
+            _keys(note, {"type", "label", "cue", "x", "y", "label_x", "label_y"}, nw)
+            _required(note, {"type", "label", "cue"}, nw)
+            if note["type"] not in {"circle", "arrow"}:
+                raise PipelineError(f"{nw}.type must be circle or arrow")
+            _text(note["label"], f"{nw}.label")
+            _text(note["cue"], f"{nw}.cue")
+            for field in ("x", "y", "label_x", "label_y"):
+                if field in note:
+                    _number(note[field], f"{nw}.{field}", 0, 1)
+    elif name == "show_ask":
+        _text(params["question"], f"{where}.device_params.question")
+        if "hold_sec" in params:
+            _number(params["hold_sec"], f"{where}.device_params.hold_sec", 0.5, 10)
+    elif name == "date_ticker":
+        if params.get("position", "top_right") not in {"top_left", "top_right"}:
+            raise PipelineError(f"{where}.device_params.position must be top_left or top_right")
+        dates = params["dates"]
+        if (not isinstance(dates, list) or len(dates) < 2 or
+                not all(isinstance(v, str) and v.strip() for v in dates)):
+            raise PipelineError(f"{where}.device_params.dates must contain at least two labels")
 
 
 def _text_list(value: Any, where: str, minimum: int = 1) -> None:
@@ -390,9 +453,16 @@ def validate_manifest(data: Any, path: Path, repo_root: Path,
         raise PipelineError("manifest.still_generation.search_provider must be wikimedia or image-search")
     if still_generation.get("fallback_provider", "none") not in {"none", "hatch-media", "command"}:
         raise PipelineError("manifest.still_generation.fallback_provider must be none, hatch-media, or command")
-    for field in ("media_bin", "image_search_bin", "command"):
+    for field in ("media_bin", "image_search_bin"):
         if field in still_generation:
             _text(still_generation[field], f"manifest.still_generation.{field}")
+    if "command" in still_generation:
+        command = still_generation["command"]
+        if isinstance(command, str):
+            _text(command, "manifest.still_generation.command")
+        elif (not isinstance(command, list) or not command or
+              not all(isinstance(item, str) and item for item in command)):
+            raise PipelineError("manifest.still_generation.command must be a string or argv array")
     if "timeout_seconds" in still_generation:
         _number(still_generation["timeout_seconds"], "manifest.still_generation.timeout_seconds", 30, 3600)
     if still_generation.get("orientation", "landscape") not in {"landscape", "square", "vertical"}:
@@ -428,6 +498,8 @@ def validate_manifest(data: Any, path: Path, repo_root: Path,
             _obj(scene["device_params"], f"{where}.device_params")
             if "device" not in scene:
                 raise PipelineError(f"{where}.device_params requires device")
+        if "device" in scene:
+            _validate_device(scene["device"], scene.get("device_params", {}), where)
         narration = _obj(scene["narration"], f"{where}.narration")
         _keys(narration, NARRATION_KEYS, f"{where}.narration")
         _required(narration, {"text"}, f"{where}.narration")
@@ -469,10 +541,20 @@ def validate_manifest(data: Any, path: Path, repo_root: Path,
         if "search" in visual:
             search = _obj(visual["search"], f"{where}.visual.search")
             _keys(search, SEARCH_KEYS, f"{where}.visual.search")
-            _required(search, {"query"}, f"{where}.visual.search")
-            _text(search["query"], f"{where}.visual.search.query", 3)
+            if "query" not in search and "page_title" not in search:
+                raise PipelineError(f"{where}.visual.search requires query or page_title")
+            if "query" in search:
+                _text(search["query"], f"{where}.visual.search.query", 3)
+            if "page_title" in search:
+                _text(search["page_title"], f"{where}.visual.search.page_title", 6)
+                if not search["page_title"].startswith("File:"):
+                    raise PipelineError(f"{where}.visual.search.page_title must start with File:")
+            if "sha256" in search and not re.fullmatch(r"[0-9a-fA-F]{64}", search["sha256"]):
+                raise PipelineError(f"{where}.visual.search.sha256 must be 64 hexadecimal characters")
             if search.get("provider", "wikimedia") not in {"wikimedia", "image-search"}:
                 raise PipelineError(f"{where}.visual.search.provider must be wikimedia or image-search")
+            if search.get("provider", "wikimedia") == "image-search" and "query" not in search:
+                raise PipelineError(f"{where}.visual.search.query is required for image-search")
             if "pick" in search:
                 pick = search["pick"]
                 if isinstance(pick, bool) or not isinstance(pick, int) or pick < 0:
@@ -539,14 +621,17 @@ def validate_manifest(data: Any, path: Path, repo_root: Path,
                 _text(audio["ambience"], f"{where}.audio.ambience")
             if "ambience_volume" in audio:
                 _number(audio["ambience_volume"], f"{where}.audio.ambience_volume", 0, 1)
-            # foley: continuous scene-typed ambience bed (metadata-first;
-            # mixed under narration like the music bed once the audio step lands)
             if "foley" in audio:
-                _text(audio["foley"], f"{where}.audio.foley")
+                if audio["foley"] not in {"paper_rustle", "quill_scratch"}:
+                    raise PipelineError(f"{where}.audio.foley is not supported")
             if "foley_gain" in audio:
                 _number(audio["foley_gain"], f"{where}.audio.foley_gain", 0, 1)
+                if "foley" not in audio:
+                    raise PipelineError(f"{where}.audio.foley_gain requires foley")
             if "foley_fade_sec" in audio:
                 _number(audio["foley_fade_sec"], f"{where}.audio.foley_fade_sec", 0, 10)
+                if "foley" not in audio:
+                    raise PipelineError(f"{where}.audio.foley_fade_sec requires foley")
             effects = audio.get("effects", [])
             if not isinstance(effects, list):
                 raise PipelineError(f"{where}.audio.effects must be an array")

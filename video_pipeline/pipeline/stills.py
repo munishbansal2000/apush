@@ -19,6 +19,8 @@ CATALOG.json entry, so the license gate can verify it on the next run.
 from __future__ import annotations
 
 import datetime
+import hashlib
+import io
 import json
 import os
 import re
@@ -30,6 +32,8 @@ import tempfile
 import urllib.parse
 import urllib.request
 from pathlib import Path
+
+from PIL import Image
 
 from .common import PipelineError, atomic_json, read_json, resolve_local
 
@@ -160,7 +164,13 @@ def _generate_command(still: dict, output: Path, config: dict, scene_id: str,
         "python": sys.executable,
     }
     try:
-        command = shlex.split(template.format(**mapping))
+        if isinstance(template, list):
+            command = [token.format(**mapping) for token in template]
+        else:
+            command = shlex.split(template.format(**mapping), posix=os.name != "nt")
+            if os.name == "nt":
+                command = [token[1:-1] if len(token) >= 2 and token[0] == token[-1] == '"'
+                           else token for token in command]
     except KeyError as exc:
         raise PipelineError(f"command template has unknown variable: {exc}") from exc
     output.parent.mkdir(parents=True, exist_ok=True)
@@ -228,7 +238,8 @@ def _select_wikimedia(pages: list[dict], pick: int, min_width: int) -> dict:
     return candidates[pick]
 
 
-def _download(url: str, output: Path, scene_id: str) -> None:
+def _download(url: str, output: Path, scene_id: str,
+              expected_sha256: str | None = None) -> str:
     request = urllib.request.Request(url, headers={"User-Agent": _WIKIMEDIA_UA})
     try:
         with urllib.request.urlopen(request, timeout=120) as response:
@@ -237,23 +248,47 @@ def _download(url: str, output: Path, scene_id: str) -> None:
         raise PipelineError(f"still {scene_id}: download failed: {exc}") from exc
     if len(data) < 1024:
         raise PipelineError(f"still {scene_id}: downloaded file suspiciously small")
+    source_hash = hashlib.sha256(data).hexdigest()
+    if expected_sha256 and source_hash.casefold() != expected_sha256.casefold():
+        raise PipelineError(
+            f"still {scene_id}: source checksum changed (expected {expected_sha256}, got {source_hash})")
     output.parent.mkdir(parents=True, exist_ok=True)
-    output.write_bytes(data)
+    try:
+        with Image.open(io.BytesIO(data)) as source:
+            image = source.convert("RGB")
+            suffix = output.suffix.lower()
+            if suffix == ".webp":
+                image.save(output, format="WEBP", quality=92, method=6)
+            elif suffix == ".png":
+                image.save(output, format="PNG", optimize=True)
+            elif suffix in {".jpg", ".jpeg"}:
+                image.save(output, format="JPEG", quality=94, optimize=True)
+            else:
+                raise PipelineError(f"still {scene_id}: unsupported output image type {suffix}")
+    except (OSError, ValueError) as exc:
+        raise PipelineError(f"still {scene_id}: downloaded content is not a valid image: {exc}") from exc
+    return source_hash
 
 
 def _search_wikimedia(spec: dict, output: Path, scene_id: str) -> dict:
-    data = _wikimedia_api({
-        "action": "query", "format": "json",
-        "generator": "search", "gsrsearch": spec["query"] + " filetype:bitmap",
-        "gsrnamespace": 6, "gsrlimit": 25,
-        "prop": "imageinfo", "iiprop": "url|size|extmetadata",
-    })
+    params = {"action": "query", "format": "json",
+              "prop": "imageinfo", "iiprop": "url|size|extmetadata"}
+    if spec.get("page_title"):
+        params["titles"] = spec["page_title"]
+    else:
+        params.update({"generator": "search",
+                       "gsrsearch": spec["query"] + " filetype:bitmap",
+                       "gsrnamespace": 6, "gsrlimit": 25})
+    data = _wikimedia_api(params)
     pages = list((data.get("query") or {}).get("pages", {}).values())
-    chosen = _select_wikimedia(pages, int(spec.get("pick", 0)), int(spec.get("min_width", 800)))
+    chosen = _select_wikimedia(
+        pages, 0 if spec.get("page_title") else int(spec.get("pick", 0)),
+        int(spec.get("min_width", 800)))
     print(f"[stills] {scene_id}: wikimedia -> {chosen['title']} ({chosen['width']}px, {chosen['license']})", flush=True)
-    _download(chosen["url"], output, scene_id)
+    source_hash = _download(chosen["url"], output, scene_id, spec.get("sha256"))
     return {
-        "kind": "search", "provider": "wikimedia", "query": spec["query"],
+        "kind": "search", "provider": "wikimedia", "query": spec.get("query", ""),
+        "page_title": chosen["title"], "source_sha256": source_hash,
         "source_url": chosen["description_url"], "page_url": chosen["description_url"],
         "direct_url": chosen["url"], "author": chosen["author"],
         "license": chosen["license"],
@@ -278,11 +313,12 @@ def _search_image_search(spec: dict, output: Path, config: dict, scene_id: str) 
     if not url:
         raise PipelineError("image-search: chosen result has no renderable URL")
     print(f"[stills] {scene_id}: image-search -> {chosen.get('page_url', url)}", flush=True)
-    _download(url, output, scene_id)
+    source_hash = _download(url, output, scene_id, spec.get("sha256"))
     page = chosen.get("page_url", "")
     return {
         "kind": "search", "provider": "image-search", "query": spec["query"],
         "source_url": page, "page_url": page, "direct_url": url,
+        "source_sha256": source_hash,
         "author": "", "license": "UNVERIFIED",
         "license_note": "UNVERIFIED — operator must verify the license before use",
     }
@@ -324,6 +360,8 @@ def _register_catalog(repo_root: Path, lesson_id: str, scene_id: str,
         "provenance": {
             "source_url": info.get("page_url") or info.get("source_url") or "",
             "direct": info.get("direct_url", ""),
+            "page_title": info.get("page_title", ""),
+            "source_sha256": info.get("source_sha256", ""),
             "date": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d"),
             "license_note": license_note,
             "generator": info.get("provider", ""),

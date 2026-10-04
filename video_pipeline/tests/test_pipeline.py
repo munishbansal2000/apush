@@ -3,6 +3,7 @@ import tempfile
 import unittest
 import wave
 from pathlib import Path
+from unittest import mock
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -12,6 +13,7 @@ from pipeline.common import PipelineError
 from pipeline.layout import validate_text_layout
 from pipeline.schema import validate_manifest
 from pipeline.timing import resolve_scene_timing
+from pipeline.render import _mixed_audio
 
 
 class ManifestTests(unittest.TestCase):
@@ -157,6 +159,41 @@ class ManifestTests(unittest.TestCase):
         resolved = resolve_scene_timing(scene, 10.0, boundaries)
         self.assertEqual(resolved["beats"][0]["at"], 2.25)
         self.assertEqual(resolved["beats"][0]["timing_source"], "word_boundary")
+
+    def test_device_cues_resolve_to_audio_timing(self):
+        scene = {
+            "id": "device-test",
+            "narration": {"text": "First claim. The evidence appears here."},
+            "visual": {}, "animation": {"type": "title"},
+            "device": "annotate",
+            "device_params": {"annotations": [{
+                "type": "circle", "label": "evidence", "cue": "The evidence"
+            }]}
+        }
+        resolved = resolve_scene_timing(scene, 10.0)
+        self.assertGreater(resolved["device_params"]["annotations"][0]["at"], 0)
+
+    def test_unknown_device_is_rejected(self):
+        with tempfile.TemporaryDirectory() as value:
+            root = Path(value)
+            data = self.fixture(root)
+            data["scenes"][0]["device"] = "magic_box"
+            with self.assertRaisesRegex(PipelineError, "supported creative device"):
+                validate_manifest(data, root / "lesson.json", ROOT)
+
+    def test_foley_is_mixed_with_fades(self):
+        scene = {"id": "foley", "audio": {
+            "foley": "quill_scratch", "foley_gain": 0.12,
+            "foley_fade_sec": 0.5}}
+        with tempfile.TemporaryDirectory() as value:
+            root = Path(value)
+            narration, output = root / "n.wav", root / "mixed.wav"
+            with mock.patch("pipeline.render.subprocess.run") as run:
+                _mixed_audio(scene, narration, 4.0, root / "lesson.json", root, output)
+            command = run.call_args.args[0]
+            filters = command[command.index("-filter_complex") + 1]
+            self.assertIn("tremolo", filters)
+            self.assertIn("afade=t=in", filters)
 
     def test_text_collision_fails_before_render(self):
         with tempfile.TemporaryDirectory() as value:

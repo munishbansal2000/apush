@@ -61,4 +61,19 @@ def resolve_scene_timing(scene: dict, duration: float,
         _resolve_item(item, narration, duration,
                       f"scene {scene['id']}.audio.effects[{index}]",
                       word_boundaries)
+    device = resolved.get("device")
+    params = resolved.get("device_params", {})
+    if device == "redact_reveal":
+        params["reveal_at"] = []
+        for index, cue in enumerate(params.get("reveal_on_cues", [])):
+            item = {"cue": cue}
+            _resolve_item(item, narration, duration,
+                          f"scene {scene['id']}.device_params.reveal_on_cues[{index}]",
+                          word_boundaries)
+            params["reveal_at"].append(item["at"])
+    elif device == "annotate":
+        for index, item in enumerate(params.get("annotations", [])):
+            _resolve_item(item, narration, duration,
+                          f"scene {scene['id']}.device_params.annotations[{index}]",
+                          word_boundaries)
     return resolved

@@ -1,12 +1,14 @@
 from __future__ import annotations
 
 import gc
+import copy
+import tempfile
 from pathlib import Path
 
 import numpy as np
 from PIL import Image
 
-from .common import PipelineError
+from .common import PipelineError, resolve_local
 from .timing import resolve_scene_timing
 
 
@@ -29,7 +31,8 @@ def _intersection(a: dict, b: dict) -> tuple[float, float]:
 def validate_text_layout(manifest: dict, manifest_path: Path,
                          repo_root: Path,
                          durations: dict[str, float] | None = None,
-                         alignments: dict[str, list[dict]] | None = None) -> dict:
+                         alignments: dict[str, list[dict]] | None = None,
+                         allow_missing_assets: bool = False) -> dict:
     """Record every rendered text box and reject temporal/spatial collisions."""
     from .render import _motion, build_clip
 
@@ -38,8 +41,23 @@ def validate_text_layout(manifest: dict, manifest_path: Path,
     width, height = motion.W, motion.H
     scene_reports = []
     failures = []
+    placeholder_dir = tempfile.TemporaryDirectory(prefix="layout-placeholder-") if allow_missing_assets else None
+    placeholder = None
+    if placeholder_dir:
+        placeholder = Path(placeholder_dir.name) / "missing.webp"
+        Image.new("RGB", (540, 960), (34, 39, 48)).save(placeholder, format="WEBP")
     try:
-        for scene in manifest["scenes"]:
+        for original_scene in manifest["scenes"]:
+            scene = copy.deepcopy(original_scene)
+            if placeholder:
+                visual = scene.get("visual", {})
+                for field in ("base_image", "secondary_image"):
+                    if field in visual and not resolve_local(
+                            visual[field], manifest_path.parent, repo_root).is_file():
+                        visual[field] = str(placeholder)
+                for layer in visual.get("layers", []):
+                    if not resolve_local(layer["image"], manifest_path.parent, repo_root).is_file():
+                        layer["image"] = str(placeholder)
             duration = ((durations or {}).get(scene["id"], _duration(scene)))
             scene = resolve_scene_timing(
                 scene, duration, (alignments or {}).get(scene["id"]))
@@ -97,6 +115,8 @@ def validate_text_layout(manifest: dict, manifest_path: Path,
             gc.collect()
     finally:
         motion.set_scale(1.0)
+        if placeholder_dir:
+            placeholder_dir.cleanup()
 
     report = {
         "canvas": {"width": width, "height": height},

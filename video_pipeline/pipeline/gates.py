@@ -40,6 +40,12 @@ def iter_cues(scene: dict) -> Iterator[tuple[str, str]]:
         for index, item in enumerate(animation.get(field, []) or []):
             if isinstance(item, dict) and "cue" in item:
                 yield f"animation.{field}[{index}].cue", item["cue"]
+    params = scene.get("device_params", {}) or {}
+    for index, cue in enumerate(params.get("reveal_on_cues", []) or []):
+        yield f"device_params.reveal_on_cues[{index}]", cue
+    for index, item in enumerate(params.get("annotations", []) or []):
+        if isinstance(item, dict) and "cue" in item:
+            yield f"device_params.annotations[{index}].cue", item["cue"]
 
 
 def _scenes(manifest: dict) -> list[dict]:
