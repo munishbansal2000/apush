@@ -1,0 +1,779 @@
+{
+  "ap_alignment": {
+    "period": "Period 1",
+    "skills": [
+      "Causation",
+      "Continuity and Change",
+      "Analyzing Evidence"
+    ],
+    "themes": [
+      "Work, Exchange, and Technology"
+    ],
+    "topics": [
+      "1.5"
+    ]
+  },
+  "chapter_id": "ch3",
+  "clip_generation": {
+    "provider": "none"
+  },
+  "course_id": "apush",
+  "description": "Spain conquered with soldiers but ruled with workers: the encomienda grant, demographic collapse, the turn to enslaved African labor, and the casta order built on top.",
+  "essential_question": "Who did the work of empire, and why did the answer change?",
+  "generation": {
+    "provider": "none"
+  },
+  "key_terms": [
+    {
+      "definition": "A Spanish labor grant giving a colonist the right to demand labor and tribute from Indigenous communities, justified as protection and Christian instruction.",
+      "term": "encomienda"
+    },
+    {
+      "definition": "The rapid, massive decline of Indigenous populations after contact, driven chiefly by Afro-Eurasian diseases to which they had no immunity.",
+      "term": "demographic collapse"
+    },
+    {
+      "definition": "The forced transport of enslaved Africans to the Americas to supply the colonial labor that Indigenous workers could no longer provide.",
+      "term": "transatlantic slave trade"
+    },
+    {
+      "definition": "The colonial hierarchy ranking people by ancestry, from peninsulares and criollos at the top to Indians and Africans at the bottom.",
+      "term": "casta"
+    }
+  ],
+  "learning_objectives": [
+    "Describe how the encomienda system granted and justified claims to Indigenous labor.",
+    "Explain how disease and overwork produced a labor shortage in the Spanish colonies.",
+    "Trace the economic logic that connected the dying Indigenous workforce to the transatlantic slave trade.",
+    "Describe the casta hierarchy and how it ordered colonial society by ancestry."
+  ],
+  "lesson_id": "u1-ch3-l7-labor-systems",
+  "output": "../../build/lesson-videos/u1-ch3-l7-labor-systems.mp4",
+  "presentation": {
+    "audience": "APUSH students",
+    "branding": "APUSH Unit 1",
+    "captions": false,
+    "tone": "a teacher talking to a smart 16-year-old; plain, spoken, concrete",
+    "visual_style": "engraving-documentary; stamps, serif/sans type grammar"
+  },
+  "scenes": [
+    {
+      "animation": {
+        "pan_x": 0.5,
+        "pan_y": 0.5,
+        "type": "ken_burns",
+        "zoom": 0.08
+      },
+      "beats": [
+        {
+          "cue": "When Columbus reached",
+          "duration": 18,
+          "text": "HISPANIOLA · 1492",
+          "type": "label",
+          "x": 0.12,
+          "y": 0.12
+        },
+        {
+          "cue": "few hundred were left",
+          "duration": 4,
+          "text": "1,000,000 → A FEW HUNDRED",
+          "type": "label",
+          "x": 0.5,
+          "y": 0.78
+        },
+        {
+          "cue": "who would do the work?",
+          "duration": 5,
+          "text": "WHO DOES THE WORK?",
+          "type": "stamp",
+          "x": 0.5,
+          "y": 0.5
+        }
+      ],
+      "device": "hook",
+      "device_params": {
+        "hook_type": "stakes",
+        "payoff_by_sec": 8.0
+      },
+      "id": "s1",
+      "min_duration": 18,
+      "narration": {
+        "text": "[solemn]When Columbus reached the island of Hispaniola, more than a million Taíno people farmed, fished, and raised families there. Within decades, by one Spanish count, only a few hundred were left. [beat] Conquest is a story about soldiers. But empire is a story about workers. Silver had to be mined. Sugar had to be cut. And the Spanish Empire ran on one question: who would do the work?",
+        "voice": "host"
+      },
+      "on_screen_text": [
+        "HISPANIOLA · 1492",
+        "1,000,000 → A FEW HUNDRED",
+        "WHO DOES THE WORK?"
+      ],
+      "production_notes": "Stat hook: the numbers land flat over a cello drone before any explanation. Stamp 1 of 3 (WHO DOES THE WORK?) is the lesson's framing question.",
+      "purpose": "hook",
+      "source": {
+        "license": "AI-generated",
+        "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt.",
+        "title": "Taíno village on Hispaniola, before (AI plate)"
+      },
+      "topics": [
+        "1.5"
+      ],
+      "transition": {
+        "duration": 0.2,
+        "type": "hard_cut"
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch3-l7/taino-village-before.webp",
+        "still": {
+          "orientation": "landscape",
+          "prompt": "A peaceful Taíno village on a Caribbean shore at morning: thatched bohíos around a central plaza, cassava fields, fishing canoes drawn up on the beach, people working and talking, palm trees. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions.",
+          "provider": "hatch-media"
+        }
+      }
+    },
+    {
+      "animation": {
+        "title": "BY THE END OF THIS LESSON",
+        "type": "objectives"
+      },
+      "id": "s1b-objectives",
+      "narration": {
+        "text": "[beat]By the end of this lesson, you will be able to do four things. [emphasis]One:[/emphasis] describe how the encomienda granted and justified claims to Native labor. [emphasis]Two:[/emphasis] explain how disease and overwork produced a labor shortage. [emphasis]Three:[/emphasis] trace the economic logic that led from dying Native workers to the slave trade. [emphasis]Four:[/emphasis] describe the casta hierarchy that ranked colonial society by ancestry.",
+        "voice": "host"
+      },
+      "purpose": "context",
+      "transition": {
+        "duration": 0.2,
+        "type": "hard_cut"
+      },
+      "visual": {}
+    },
+    {
+      "animation": {
+        "cx": 0.5,
+        "cy": 0.5,
+        "end_zoom": 1.03,
+        "type": "zoom",
+        "zoom_duration": 8
+      },
+      "beats": [
+        {
+          "cue": "first answer was the",
+          "duration": 5,
+          "text": "ENCOMIENDA",
+          "type": "label",
+          "x": 0.5,
+          "y": 0.12
+        }
+      ],
+      "covers_los": [
+        1
+      ],
+      "id": "s2a",
+      "min_duration": 8,
+      "narration": {
+        "text": "Spain's first answer was the [es]encomienda[/es]. Here is how it was supposed to work.",
+        "voice": "host"
+      },
+      "on_screen_text": [
+        "ENCOMIENDA"
+      ],
+      "production_notes": "The fiction looks legitimate here — warm, orderly — so the pivot in s2c cuts deeper. Serif ENCOMIENDA: what they said.",
+      "purpose": "concept",
+      "source": {
+        "license": "AI-generated",
+        "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt. Same plate reused by s2b; the stills stage skips it because the file already exists.",
+        "title": "The grant desk (AI plate)"
+      },
+      "topics": [
+        "1.5"
+      ],
+      "transition": {
+        "duration": 0.2,
+        "type": "hard_cut"
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch3-l7/grant-desk.webp",
+        "still": {
+          "orientation": "landscape",
+          "prompt": "A Spanish colonial official's writing desk: a sealed parchment grant, a quill in an inkwell, wax seal, a crucifix on the wall behind, dark wood, candlelight. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions.",
+          "provider": "hatch-media"
+        }
+      }
+    },
+    {
+      "animation": {
+        "type": "auto"
+      },
+      "beats": [
+        {
+          "cue": "he shall protect them",
+          "duration": 8,
+          "text": "PROTECTION + FAITH",
+          "type": "label",
+          "x": 0.5,
+          "y": 0.82
+        }
+      ],
+      "covers_los": [
+        1
+      ],
+      "id": "s2b",
+      "min_duration": 10,
+      "narration": {
+        "text": "[VOICE:grant][solemn]To our loyal settler, we grant the labor of the Indians of this district. In return, he shall protect them, and instruct them in our holy faith.",
+        "voice": "grant"
+      },
+      "on_screen_text": [
+        "PROTECTION + FAITH"
+      ],
+      "production_notes": "The grant voice: older, formal, flat, bureaucratic — the law speaking. Locked frame; the stillness sells the law's formality. Half-beat pause before the grant voice. Reverb marks the 1500s as then.",
+      "purpose": "evidence",
+      "source": {
+        "license": "AI-generated",
+        "notes": "Same still spec and output path as s2a; the stills stage skips it because the file already exists. The reuse is deliberate: one plate, two voices.",
+        "title": "The grant desk (AI plate, reused from s2a)"
+      },
+      "topics": [
+        "1.5"
+      ],
+      "transition": {
+        "duration": 0.2,
+        "type": "hard_cut"
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch3-l7/grant-desk.webp",
+        "still": {
+          "orientation": "landscape",
+          "prompt": "A Spanish colonial official's writing desk: a sealed parchment grant, a quill in an inkwell, wax seal, a crucifix on the wall behind, dark wood, candlelight. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions.",
+          "provider": "hatch-media"
+        }
+      }
+    },
+    {
+      "animation": {
+        "pan_x": 0.45,
+        "pan_y": 0.55,
+        "type": "ken_burns",
+        "zoom": 0.06
+      },
+      "audio": {
+        "effects": [
+          {
+            "cue": "whole villages to death",
+            "kind": "impact",
+            "volume": 0.15
+          }
+        ]
+      },
+      "beats": [
+        {
+          "cue": "repartimiento",
+          "duration": 4,
+          "text": "REPARTIMIENTO · 1549",
+          "type": "label",
+          "x": 0.12,
+          "y": 0.12
+        },
+        {
+          "cue": "The treatment did not improve",
+          "duration": 4,
+          "text": "✓ 1. THE GRANT AND THE PRACTICE",
+          "type": "label",
+          "x": 0.5,
+          "y": 0.85
+        }
+      ],
+      "covers_los": [
+        1
+      ],
+      "device": "annotate",
+      "device_params": {
+        "mode": "telestrator",
+        "annotations": [
+          {
+            "type": "circle",
+            "label": "pit laborers",
+            "cue": "whole villages to death",
+            "x": 0.35,
+            "y": 0.6
+          },
+          {
+            "type": "circle",
+            "label": "overseer",
+            "cue": "encomenderos",
+            "x": 0.68,
+            "y": 0.42
+          }
+        ]
+      },
+      "id": "s2c",
+      "min_duration": 20,
+      "narration": {
+        "text": "Protection and Christianity. That was the deal. [beat] The practice was different. The [es]encomenderos[/es] ruled like feudal lords. They worked whole villages to death in the mines and the fields, and sent the Crown its cut of the silver. [beat] A friar named Bartolomé de Las Casas saw it and wrote it down. His book, written in [date:1542], shocked Spain. The Crown answered with the [es]repartimiento[/es] reforms of [date:1549]. No more private grants. The Crown would assign the labor directly. [beat] The treatment did not improve. But the control did.",
+        "voice": "host"
+      },
+      "on_screen_text": [
+        "REPARTIMIENTO · 1549"
+      ],
+      "production_notes": "Reversal pivot lands here: 'The practice was different.' Setup in s2b (the grant voice). The annotated freeze-frame triggers on 'They worked whole villages to death' — ink circles (as if Las Casas circled them with a quill), labels in small sans, no modern arrows. The host reads the image like a document. Coordinates must be tuned against the actual plate at animatic stage.",
+      "purpose": "evidence",
+      "source": {
+        "license": "CC BY 4.0 (Wellcome Collection)",
+        "notes": "Wikimedia Commons; pinned by exact page_title. 'Negroes mining for metal in island of Hispaniola.' Attribute Wellcome on screen.",
+        "title": "Theodor de Bry after Benzoni, mining on Hispaniola, 1595"
+      },
+      "topics": [
+        "1.5"
+      ],
+      "transition": {
+        "duration": 0.2,
+        "type": "hard_cut"
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch3-l7/debry-hispaniola-mining.webp",
+        "search": {
+          "min_width": 1000,
+          "page_title": "File:Johann Theodor de Bry, Americae pars quinta... Wellcome L0006007.jpg",
+          "provider": "wikimedia"
+        }
+      }
+    },
+    {
+      "animation": {
+        "type": "auto"
+      },
+      "beats": [
+        {
+          "cue": "between half and nine in ten",
+          "duration": 4,
+          "text": "50–90%",
+          "type": "label",
+          "x": 0.5,
+          "y": 0.12
+        }
+      ],
+      "covers_los": [
+        2
+      ],
+      "id": "s3a",
+      "min_duration": 16,
+      "narration": {
+        "text": "[solemn]And then the workers started dying. Smallpox, influenza, measles. Diseases no one on these continents had ever met. Between 1500 and 1650, somewhere between half and nine in ten Native people in the Americas died. On Hispaniola, overwork finished what disease started. [beat] Las Casas walked through the ruins and wrote what he saw.",
+        "voice": "host"
+      },
+      "on_screen_text": [
+        "50–90%"
+      ],
+      "production_notes": "Locked frame, no motion. Stillness is the statement. Score drops out entirely at scene start; the dying plays dry. Fallback: if the edit match to s1's plate fails, generate a generic abandoned Caribbean village in the same de Bry style.",
+      "purpose": "evidence",
+      "source": {
+        "license": "AI-generated",
+        "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt. Same plate reused by s3b and s3c; the stills stage skips it because the file already exists.",
+        "title": "Emptied village, the after (AI plate)"
+      },
+      "topics": [
+        "1.5"
+      ],
+      "transition": {
+        "duration": 0.2,
+        "type": "hard_cut"
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch3-l7/village-emptied.webp",
+        "still": {
+          "orientation": "landscape",
+          "prompt": "The same Caribbean village, now silent and empty: abandoned thatched huts, an overgrown untended field, no people, midday harsh light, stillness. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions.",
+          "provider": "hatch-media",
+          "edit_of": "assets/images/u1-ch3-l7/taino-village-before.webp",
+          "edit_prompt": "The same village abandoned: remove all people, let the cassava fields overgrow, canoes empty on the shore, harsh midday light, stillness and desolation. Keep the composition, thatched bohíos, plaza layout, and shoreline identical so the before/after match. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
+        }
+      }
+    },
+    {
+      "animation": {
+        "type": "auto"
+      },
+      "beats": [
+        {
+          "cue": "I saw them perish",
+          "duration": 12,
+          "text": "BARTOLOMÉ DE LAS CASAS · DOMINICAN FRIAR",
+          "type": "label",
+          "x": 0.5,
+          "y": 0.82
+        },
+        {
+          "cue": "no one left to work it",
+          "duration": 10,
+          "text": "A SHORT ACCOUNT · 1542",
+          "type": "label",
+          "x": 0.5,
+          "y": 0.9
+        }
+      ],
+      "covers_los": [
+        2
+      ],
+      "id": "s3b",
+      "min_duration": 12,
+      "narration": {
+        "text": "[VOICE:lascasas][solemn]I saw them perish in the mines, in the fields, on the roads. Husbands died, wives died, children died. The land emptied, and there was no one left to work it.",
+        "voice": "lascasas"
+      },
+      "on_screen_text": [
+        "BARTOLOMÉ DE LAS CASAS · DOMINICAN FRIAR"
+      ],
+      "production_notes": "One weary voice, sourced on screen. Half-beat pause before the Las Casas voice. The speech is dramatized from the tone of A Short Account, not a verbatim quote; the exam card carries the disclaimer.",
+      "purpose": "evidence",
+      "source": {
+        "license": "AI-generated",
+        "notes": "Same still spec and output path as s3a; the stills stage skips it because the file already exists. The reuse is deliberate: one plate, two voices.",
+        "title": "Emptied village (AI plate, reused from s3a)"
+      },
+      "topics": [
+        "1.5"
+      ],
+      "transition": {
+        "duration": 0.2,
+        "type": "hard_cut"
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch3-l7/village-emptied.webp",
+        "still": {
+          "orientation": "landscape",
+          "prompt": "The same Caribbean village, now silent and empty: abandoned thatched huts, an overgrown untended field, no people, midday harsh light, stillness. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions.",
+          "provider": "hatch-media",
+          "edit_of": "assets/images/u1-ch3-l7/taino-village-before.webp",
+          "edit_prompt": "The same village abandoned: remove all people, let the cassava fields overgrow, canoes empty on the shore, harsh midday light, stillness and desolation. Keep the composition, thatched bohíos, plaza layout, and shoreline identical so the before/after match. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
+        }
+      }
+    },
+    {
+      "animation": {
+        "type": "auto"
+      },
+      "beats": [
+        {
+          "cue": "Spain needed a new answer",
+          "duration": 4,
+          "text": "✓ 2. THE WORKFORCE DIED",
+          "type": "label",
+          "x": 0.5,
+          "y": 0.85
+        }
+      ],
+      "covers_los": [
+        2
+      ],
+      "id": "s3c",
+      "min_duration": 8,
+      "narration": {
+        "text": "[beat]An empire built on forced labor, with no one left to force. Spain needed a new answer.",
+        "voice": "host"
+      },
+      "on_screen_text": [
+        "✓ 2. THE WORKFORCE DIED"
+      ],
+      "production_notes": "The handoff line: LO2 lands with the ✓ beat, then s4a answers it.",
+      "purpose": "evidence",
+      "source": {
+        "license": "AI-generated",
+        "notes": "Same still spec and output path as s3a; the stills stage skips it because the file already exists.",
+        "title": "Emptied village (AI plate, reused from s3a)"
+      },
+      "topics": [
+        "1.5"
+      ],
+      "transition": {
+        "duration": 0.2,
+        "type": "hard_cut"
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch3-l7/village-emptied.webp",
+        "still": {
+          "orientation": "landscape",
+          "prompt": "The same Caribbean village, now silent and empty: abandoned thatched huts, an overgrown untended field, no people, midday harsh light, stillness. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions.",
+          "provider": "hatch-media",
+          "edit_of": "assets/images/u1-ch3-l7/taino-village-before.webp",
+          "edit_prompt": "The same village abandoned: remove all people, let the cassava fields overgrow, canoes empty on the shore, harsh midday light, stillness and desolation. Keep the composition, thatched bohíos, plaza layout, and shoreline identical so the before/after match. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
+        }
+      }
+    },
+    {
+      "animation": {
+        "pan_x": 0.5,
+        "pan_y": 0.5,
+        "type": "ken_burns",
+        "zoom": 0.06
+      },
+      "covers_los": [
+        3
+      ],
+      "id": "s4a",
+      "min_duration": 8,
+      "narration": {
+        "text": "[beat]The new answer crossed the Atlantic in chains.",
+        "voice": "host"
+      },
+      "production_notes": "Geometry match cut from s2c's mine pit: dark rectangle packed with bodies to dark rectangle packed with bodies. The shapes rhyme — one labor system replaced by another — inside the hard-cut grammar. Slow track along the packed decks, constant velocity, like counting bodies.",
+      "purpose": "evidence",
+      "source": {
+        "license": "Public domain",
+        "notes": "Wikimedia Commons (British Library); pinned by exact page_title. Caption dates it honestly as 1787: an abolitionist print of the trade's machinery, not a 16th-century artifact.",
+        "title": "Brookes slave ship diagram, 1787"
+      },
+      "topics": [
+        "1.5"
+      ],
+      "transition": {
+        "duration": 0.2,
+        "type": "hard_cut"
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch3-l7/brookes-slave-ship.webp",
+        "search": {
+          "min_width": 1000,
+          "page_title": "File:Brookes slave ship, British Library.jpg",
+          "provider": "wikimedia"
+        }
+      }
+    },
+    {
+      "animation": {
+        "cx": 0.55,
+        "cy": 0.5,
+        "end_zoom": 1.06,
+        "type": "zoom",
+        "zoom_duration": 20
+      },
+      "beats": [
+        {
+          "cue": "Now it was for life",
+          "duration": 5,
+          "text": "FOR LIFE",
+          "type": "stamp",
+          "x": 0.5,
+          "y": 0.5
+        },
+        {
+          "cue": "the children of slaves were slaves",
+          "duration": 5,
+          "text": "HEREDITARY",
+          "type": "stamp",
+          "x": 0.5,
+          "y": 0.5
+        },
+        {
+          "cue": "engine of the new labor system",
+          "duration": 4,
+          "text": "✓ 3. THE ECONOMIC LOGIC",
+          "type": "label",
+          "x": 0.5,
+          "y": 0.85
+        }
+      ],
+      "covers_los": [
+        3
+      ],
+      "id": "s4b",
+      "min_duration": 20,
+      "narration": {
+        "text": "Spain turned to enslaved African labor, bought through the trade the Portuguese had already built to feed Europe's sugar islands. They carried greater resistance to Old World diseases, and the Spanish saw them as replaceable through the trade, torn from their homelands and easier to control. [beat] And here the story takes a darker turn. Slavery was ancient. But starting in the 1500s, it changed. Now it was for life. Now the children of slaves were slaves. Now a human being was property, with no rights at all. [beat] That idea, that a person could be owned the way you own a tool, became the engine of the new labor system. And it would outlive the Spanish Empire by centuries.",
+        "voice": "host"
+      },
+      "on_screen_text": [
+        "FOR LIFE",
+        "HEREDITARY"
+      ],
+      "production_notes": "Hard cut from the Brookes deck on 'bought through the trade.' Stamps 2 and 3 of the lesson escalate: the second lands harder because the first prepared it. Silence on 'with no rights at all.' Fallback: if the composition crowds, fall back to a tight detail — cut cane stalks and a millstone.",
+      "purpose": "concept",
+      "source": {
+        "license": "AI-generated",
+        "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt. Fallback if the composition crowds: a tight detail of cut cane stalks and a millstone.",
+        "title": "Sugar plantation (AI plate)"
+      },
+      "topics": [
+        "1.5"
+      ],
+      "transition": {
+        "duration": 0.2,
+        "type": "hard_cut"
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch3-l7/sugar-plantation.webp",
+        "still": {
+          "orientation": "landscape",
+          "prompt": "Enslaved laborers cutting sugar cane in a Caribbean field, a windmill-driven sugar mill behind, overseer on horseback at the field edge, harsh light. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions.",
+          "provider": "hatch-media"
+        }
+      }
+    },
+    {
+      "animation": {
+        "type": "auto"
+      },
+      "audio": {
+        "effects": [
+          {
+            "cue": "And your place decided your work",
+            "kind": "impact",
+            "volume": 0.3
+          }
+        ]
+      },
+      "beats": [
+        {
+          "cue": "The Spanish called it",
+          "duration": 5,
+          "text": "SISTEMA DE CASTAS",
+          "type": "label",
+          "x": 0.5,
+          "y": 0.12
+        },
+        {
+          "cue": "purity of blood",
+          "duration": 4,
+          "text": "LIMPIEZA DE SANGRE",
+          "type": "label",
+          "x": 0.5,
+          "y": 0.82
+        },
+        {
+          "cue": "And your place decided your work",
+          "duration": 6,
+          "text": "✓ 4. THE CASTA LADDER",
+          "type": "stamp",
+          "x": 0.5,
+          "y": 0.5
+        }
+      ],
+      "covers_los": [
+        4
+      ],
+      "device": "show_ask",
+      "device_params": {
+        "question": "What is it telling you?",
+        "hold_sec": 2.0
+      },
+      "id": "s5",
+      "min_duration": 24,
+      "narration": {
+        "text": "On top of the labor system, Spain built a social order to match. [beat] Look at this painting. A Mexican artist, in [date:1763], painted the colony the way it saw itself. What is it telling you? [2s pause] It is a ladder. At the top, [es]peninsulares[/es], born in Spain, and [es]criollos[/es], Spaniards born in the Americas. One or two in a hundred people. Below them, [es]mestizos[/es], then [es]mulatos[/es]. At the bottom, Indians and Africans. [beat] The Spanish called it the [es]sistema de castas[/es]. It was rooted in an old Spanish obsession, [es]limpieza de sangre[/es], purity of blood. Your ancestors decided your place. And your place decided your work. [beat] In theory rigid. In practice, people moved, mixed, and bought their way up.",
+        "voice": "host"
+      },
+      "on_screen_text": [
+        "SISTEMA DE CASTAS",
+        "LIMPIEZA DE SANGRE"
+      ],
+      "production_notes": "Show-and-ask: open on a tight crop of two figures only, ask the question aloud, hold the full 2s pause, then pull back to the full painting on 'It is a ladder.' Then the annotated freeze-frame: the ladder list draws on beside the figures with ink circles marking each named group. Coordinates must be tuned against the actual panel at animatic stage. The stamped verdict (THE CASTA LADDER) doubles as the LO4 ✓. Silence under the pause; single low thud under the stamp.",
+      "purpose": "concept",
+      "source": {
+        "license": "Public domain",
+        "notes": "Wikimedia Commons; pinned by exact page_title. Single readable panel, not the 16-panel series. Caption dates it honestly as c. 1763: an 18th-century image of the system, not a 16th-century artifact.",
+        "title": "Miguel Cabrera, casta painting (De Español y Mulata, Morisca), c. 1763"
+      },
+      "topics": [
+        "1.5"
+      ],
+      "transition": {
+        "duration": 0.2,
+        "type": "hard_cut"
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch3-l7/cabrera-casta-painting.webp",
+        "search": {
+          "min_width": 1000,
+          "page_title": "File:Cabrera Pintura de Castas.jpg",
+          "provider": "wikimedia"
+        }
+      }
+    },
+    {
+      "animation": {
+        "bullets": [
+          "ENCOMIENDA: Crown labor grants; protection promised, exploitation delivered",
+          "REPARTIMIENTO 1549: Crown takes control; treatment does not improve",
+          "COLLAPSE: 50-90% dead 1500-1650; Hispaniola: a million to a few hundred",
+          "SLAVE TRADE: for life, hereditary, property; casta ranked society by ancestry"
+        ],
+        "footer": "Las Casas dramatized from A Short Account (written 1542); grant voice paraphrases encomienda terms. AP TOPIC 1.5",
+        "stagger": 0.45,
+        "title": "FROM ENCOMIENDA TO SLAVERY",
+        "type": "bullets"
+      },
+      "covers_los": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "id": "s6",
+      "min_duration": 10,
+      "narration": {
+        "text": "[pause:10]",
+        "voice": "host"
+      },
+      "production_notes": "No narration; the [pause:10] holds the card in silence. Serif/sans grammar: what they said vs what you must know. The exam card maps 1:1 back to the four LOs: the landing.",
+      "purpose": "close",
+      "source": {
+        "license": "AI-generated",
+        "notes": "Pipeline-generated via hatch-media. Card holds 10s in silence; designed to be paused and screenshotted, not absorbed in real time. The script's final fade-out is an editor-side NLE choice.",
+        "title": "Exam card paper (AI plate)"
+      },
+      "topics": [
+        "1.5"
+      ],
+      "transition": {
+        "duration": 0.2,
+        "type": "hard_cut"
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch3-l7/exam-card-paper.webp",
+        "still": {
+          "orientation": "landscape",
+          "prompt": "A plain aged paper texture, warm cream tone, subtle grain, completely empty, no text, no imagery. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions.",
+          "provider": "hatch-media"
+        }
+      }
+    }
+  ],
+  "schema_version": 1,
+  "still_generation": {
+    "image_output_format": "webp",
+    "orientation": "landscape",
+    "provider": "hatch-media",
+    "search_provider": "wikimedia",
+    "timeout_seconds": 600
+  },
+  "title": "From Encomienda to Slavery",
+  "transition_scheme": "hard_cut",
+  "tts": {
+    "edge_pitch": "+0Hz",
+    "edge_rate": "+2%",
+    "edge_voice": "en-US-GuyNeural",
+    "engine": "edge",
+    "voices": {
+      "grant": {
+        "edge_pitch": "-10Hz",
+        "edge_rate": "+0%",
+        "edge_voice": "en-US-DavisNeural"
+      },
+      "host": {
+        "edge_pitch": "+0Hz",
+        "edge_rate": "+2%",
+        "edge_voice": "en-US-GuyNeural"
+      },
+      "lascasas": {
+        "edge_pitch": "+0Hz",
+        "edge_rate": "-5%",
+        "edge_voice": "en-US-TonyNeural"
+      }
+    }
+  },
+  "unit_id": "u1",
+  "video": {
+    "fps": 30,
+    "height": 1920,
+    "transition_seconds": 0.2,
+    "width": 1080
+  }
+}

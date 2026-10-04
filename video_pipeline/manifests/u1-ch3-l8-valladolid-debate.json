@@ -464,7 +464,7 @@
     {
      "cue": "What I witnessed",
      "duration": 7,
-     "text": "After de Bry, 1858. Illustrates Las Casas's account.",
+     "text": "De Bry, c. 1598. Illustrates Las Casas's account.",
      "type": "label",
      "x": 0.5,
      "y": 0.93
@@ -786,6 +786,41 @@
     2,
     3
    ]
+  },
+  {
+   "id": "s5a2-irony",
+   "purpose": "concept",
+   "narration": {
+    "voice": "host",
+    "text": "[solemn]Here is the hardest part of his story. Years before Valladolid, Las Casas himself had proposed bringing enslaved Africans to the Indies, hoping to spare Indigenous workers. [beat] He spent the rest of his life regretting it. In his own history of the Indies, he wrote that he regretted the advice bitterly, and blamed himself for not seeing what it would become. [pause:1] The man who defended one people had helped condemn another. That is why his defense matters: it was not written by a saint. [emphasis]It was written by a man who knew exactly what guilt felt like.[/emphasis]"
+   },
+   "visual": {
+    "base_image": "assets/images/u1-ch3-l8/lascasas-portrait-1791.webp"
+   },
+   "animation": {
+    "type": "zoom",
+    "cx": 0.5,
+    "cy": 0.4,
+    "end_zoom": 1.6,
+    "zoom_duration": 8
+   },
+   "beats": [
+    {
+     "type": "label",
+     "cue": "helped condemn another",
+     "text": "THE TRAGIC IRONY",
+     "x": 0.5,
+     "y": 0.85,
+     "duration": 5
+    }
+   ],
+   "covers_los": [
+    2
+   ],
+   "transition": {
+    "type": "hard_cut",
+    "duration": 0.2
+   }
   },
   {
    "animation": {
