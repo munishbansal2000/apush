@@ -10,7 +10,7 @@ from .schema import validate_manifest
 
 ROOT_KEYS = {"schema_version", "course", "defaults", "units"}
 COURSE_KEYS = {"id", "title", "description", "academic_year", "audience"}
-DEFAULT_KEYS = {"video", "tts", "generation", "clip_generation", "presentation"}
+DEFAULT_KEYS = {"video", "tts", "generation", "clip_generation", "presentation", "music"}
 UNIT_KEYS = {"unit_id", "title", "period", "date_range", "description", "learning_objectives", "themes", "chapters"}
 CHAPTER_KEYS = {"chapter_id", "title", "description", "essential_questions", "learning_objectives", "lessons"}
 

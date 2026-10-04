@@ -82,6 +82,11 @@ python video_pipeline\orchestrator.py --manifest lesson.json --from-stage render
 # Regenerate one stage explicitly
 python video_pipeline\orchestrator.py --manifest lesson.json --only tts --force
 
+# Remote Fish Audio: set FISH_API_KEY, then use tts.engine=fish_cloud.
+# Optional tts.reference_id and per-voice reference_id values select cloned voices.
+$env:FISH_API_KEY = '<your Fish Audio API key>'
+python video_pipeline\orchestrator.py --manifest lesson.json --only tts --force
+
 # Faster 720x1280 motion-approval render
 python video_pipeline\orchestrator.py --manifest lesson.json --preview
 
@@ -108,9 +113,10 @@ python video_pipeline\orchestrator.py --manifest lesson.json --status
    Meta UI image-upload/download bridge. LTX safely generates up to six seconds
    and extends the artifact to the requested 3-10 seconds; Meta requests the
    full duration directly and fails closed unless it downloads real media.
-4. `tts`: production scenes use the resident Fish `/synthesize` endpoint;
-   manifests with `tts.engine=edge` and `--poc` runs use Edge TTS. Both are
-   cached by narration, voice/reference, and settings hash.
+4. `tts`: production scenes can use the resident Fish `/synthesize` endpoint
+   (`fish`) or Fish Audio's remote API (`fish_cloud`, authenticated through
+   `FISH_API_KEY`). Manifests with `tts.engine=edge` and `--poc` runs use Edge
+   TTS. All modes are cached by narration, voice/reference, and settings hash.
 5. `rendered`: the declarative animation registry calls the existing APUSH
    motion primitives, stages and closes one scene at a time to keep memory
    bounded, then assembles the narration-aligned scene files.
@@ -150,6 +156,10 @@ chapter sample:
   dip from black.
 - Scene `audio` mixes optional looping ambience plus file-based or built-in
   `impact`, `whoosh`, `tick`, `chime`, and `page_turn` cues under narration.
+- Lesson-level `music` provides one continuous background score with automatic
+  narration ducking, first-scene intro, last-scene outro, and chapter-change
+  stingers selected by scene ID. The background resumes from the lesson's
+  cumulative time instead of restarting at every scene.
 - `ai_clip` can select `provider` and `fallback_provider` per scene. This lets a
   lesson use Meta for cinematic hero shots and LTX for controlled local loops,
   while maps, evidence, text, and AP reasoning remain deterministic.
@@ -218,6 +228,40 @@ The machine-readable shapes are in `schemas/lesson.schema.json` and
 `examples/unit1-chapter1.curriculum.json`. The Python validator is authoritative
 because it additionally enforces inheritance, cross-field rules, unique IDs,
 file existence, path resolution, and animation-specific parameter bounds.
+
+The agent-facing creative standard is in `CREATIVE_VIDEO_PLAYBOOK.md`, with a
+story-first worked brief in `examples/creative-brief.example.json` and a
+production-ready example in `manifests/u1-ch3-l8-valladolid-debate.json`.
+
+Lesson music is configured once at the manifest root:
+
+```json
+{
+  "music": {
+    "background": "video_pipeline/music/background.mp3",
+    "background_volume": 0.1,
+    "ducking": {
+      "enabled": true,
+      "threshold": 0.025,
+      "ratio": 10,
+      "attack_ms": 18,
+      "release_ms": 420
+    },
+    "fade_in_sec": 1.2,
+    "fade_out_sec": 2.0,
+    "intro": "video_pipeline/music/intro.mp3",
+    "intro_volume": 0.2,
+    "intro_duration_sec": 2.4,
+    "outro": "video_pipeline/music/outro.mp3",
+    "outro_volume": 0.18,
+    "outro_duration_sec": 4.0,
+    "chapter_change": "video_pipeline/music/chapter-stinger.mp3",
+    "chapter_change_volume": 0.16,
+    "chapter_change_duration_sec": 1.1,
+    "chapter_change_scene_ids": ["argument-begins", "reversal"]
+  }
+}
+```
 
 ## Dependencies
 

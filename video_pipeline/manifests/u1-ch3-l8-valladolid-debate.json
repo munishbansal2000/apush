@@ -91,14 +91,17 @@
  "scenes": [
   {
    "animation": {
-    "type": "title",
-    "title": "VALLADOLID · 1550",
-    "subtitle": "THE CROWN v. THE CONQUEST"
+    "type": "source_analysis",
+    "title": "EXHIBIT A: WHAT DOES THIS IMAGE ACCUSE?",
+    "highlights": [
+     {"box": [0.08, 0.42, 0.48, 0.88], "label": "BOUND CAPTIVES", "cue": "Bound captives"},
+     {"box": [0.48, 0.18, 0.94, 0.82], "label": "SPANISH FORCE", "cue": "Spanish violence"}
+    ]
    },
    "audio": {
     "effects": [
      {
-      "cue": "put its own conquests on trial",
+      "cue": "the empire itself",
       "kind": "impact",
       "volume": 0.3
      }
@@ -106,7 +109,7 @@
    },
    "beats": [
     {
-     "cue": "was the conquest of the Americas just",
+     "cue": "just war or imperial crime",
      "duration": 5,
      "text": "JUST, OR A CRIME?",
      "type": "label",
@@ -122,18 +125,18 @@
    "id": "s1-case-file",
    "min_duration": 15,
    "narration": {
-    "text": "[solemn]In [date:1550], the most powerful empire on earth did something no Christian empire had ever done. [beat] Spain put its own conquests on trial. In Valladolid, a council of theologians and lawyers met to answer a single question: was the conquest of the Americas just, or was it a crime?",
+    "text": "[solemn]Look closely: Bound captives and Spanish violence. This later engraving is not eyewitness evidence. It is an accusation aimed at an empire. [beat]Now imagine it entered as evidence and the empire itself became the defendant. Valladolid, [date:1550]. Before either side speaks, decide: just war or imperial crime?",
     "voice": "host"
    },
    "on_screen_text": [
     "JUST, OR A CRIME?"
    ],
-   "production_notes": "Stamp 1 of 3. Title treatment over the dossier; the question slams in on cue. Final edit: true stamp slam, serif type, cello drone under.",
+   "production_notes": "Cold open on evidence, not a title. Annotation boxes land on the named details. The case question arrives only after the image has been inspected.",
    "purpose": "hook",
    "source": {
     "license": "Public domain",
-    "title": "Boazio's map of Drake's West Indian voyage, 1589",
-    "notes": "Hand-colored engraving via Wikimedia Commons; fetched by the pipeline search spec (no hand-built image)."
+    "title": "Spaniards hunting Indigenous captives, 1858, after de Bry",
+    "notes": "Later public-domain illustration used as an accusation, explicitly not presented as eyewitness evidence."
    },
    "topics": [
     "1.4"
@@ -143,13 +146,7 @@
     "type": "hard_cut"
    },
    "visual": {
-    "base_image": "assets/images/u1-ch3-l8/case-file.webp",
-    "search": {
-     "query": "Boazio Sir Francis Drakes West Indian Voyage",
-     "provider": "wikimedia",
-     "pick": 0,
-     "min_width": 800
-    }
+    "base_image": "assets/images/u1-ch3-l8/torture-1598.webp"
    }
   },
   {
@@ -157,12 +154,15 @@
    "purpose": "context",
    "narration": {
     "voice": "host",
-    "text": "[beat]By the end of this lesson, you will be able to do three things. [emphasis]One:[/emphasis] summarize Sepúlveda's argument, that some peoples are slaves by nature. [emphasis]Two:[/emphasis] explain Las Casas's defense of Indigenous peoples, and his own tragic irony. [emphasis]Three:[/emphasis] evaluate why the debate changed little on the ground, yet mattered for the history of rights."
+    "text": "[fast]Your verdict needs three tests. [emphasis]First:[/emphasis] reconstruct Sepúlveda's argument. [emphasis]Second:[/emphasis] test Las Casas as witness and participant. [emphasis]Third:[/emphasis] compare the chamber's argument with colonial consequences.[/fast] [beat]Argument. Witness. Consequence."
    },
    "visual": {},
    "animation": {
     "type": "objectives",
-    "title": "BY THE END OF THIS LESSON"
+    "title": "THE JURY'S THREE TESTS",
+    "los": ["Reconstruct Sepúlveda's argument", "Test Las Casas as a witness", "Judge the debate by its consequences"],
+    "footer": "ARGUMENT • WITNESS • CONSEQUENCE",
+    "stagger": 0.65
    },
    "transition": {
     "type": "hard_cut",
@@ -171,77 +171,36 @@
   },
   {
    "animation": {
-    "pan_x": 0.5,
-    "pan_y": 0.5,
-    "type": "ken_burns",
-    "zoom": 0.02
+    "type": "diagram",
+    "title": "SEPÚLVEDA'S ARGUMENT",
+    "nodes": [
+     {"id": "authority", "label": "Aristotle", "x": 0.5, "y": 0.2, "cue": "Aristotle"},
+     {"id": "rank", "label": "Natural slaves", "x": 0.5, "y": 0.4, "cue": "natural slaves"},
+     {"id": "war", "label": "Just war", "x": 0.5, "y": 0.61, "cue": "wrongdoing"},
+     {"id": "rule", "label": "Spanish rule", "x": 0.5, "y": 0.82, "cue": "Christian teaching"}
+    ],
+    "edges": [
+     {"from": "authority", "to": "rank", "cue": "natural slaves"},
+     {"from": "rank", "to": "war", "cue": "wrongdoing"},
+     {"from": "war", "to": "rule", "cue": "Christian teaching"}
+    ]
    },
    "audio": {
     "effects": [
      {
-      "cue": "Aristotle settled this",
+      "cue": "His case was a chain",
       "kind": "impact",
       "volume": 0.25
      }
     ]
    },
-   "beats": [
-    {
-     "cue": "For the conquest",
-     "duration": 5,
-     "text": "SEPÚLVEDA · SCHOLAR · NEVER SAW THE INDIES",
-     "type": "label",
-     "x": 0.5,
-     "y": 0.08
-    },
-    {
-     "cue": "Aristotle settled this",
-     "duration": 5,
-     "text": "ARISTOTLE · c. 350 BC",
-     "type": "label",
-     "x": 0.5,
-     "y": 0.5
-    },
-    {
-     "cue": "slaves by nature",
-     "duration": 8,
-     "text": "SEPÚLVEDA · I. SLAVES BY NATURE",
-     "type": "label",
-     "x": 0.5,
-     "y": 0.72
-    },
-    {
-     "cue": "A war that ends such practices",
-     "duration": 6,
-     "text": "SEPÚLVEDA · II. A JUST WAR AGAINST IDOLATRY",
-     "type": "label",
-     "x": 0.5,
-     "y": 0.78
-    }
-   ],
-   "device": "redact_reveal",
-   "device_params": {
-    "lines": [
-     "I. SLAVES BY NATURE",
-     "II. A JUST WAR AGAINST IDOLATRY"
-    ],
-    "reveal_on_cues": [
-     "slaves by nature",
-     "A war that ends such practices"
-    ]
-   },
    "id": "s2a-study",
    "narration": {
-    "text": "For the conquest: Juan Ginés de Sepúlveda. Scholar. Logician. He had never set foot in the Americas. Never seen a single person he was about to describe. [VOICE:sepulveda][fierce] Aristotle settled this two thousand years ago. Some peoples are slaves by nature: born to be ruled, unfit to govern themselves. Their idolatry, their human sacrifices: these offend nature itself. A war that ends such practices is not cruelty.",
+    "text": "[solemn]For conquest: Juan Ginés de Sepúlveda, a scholar who never crossed the Atlantic. His case was a chain. [VOICE:sepulveda][fierce]Aristotle taught that some peoples are natural slaves. Human sacrifice proves grave wrongdoing. Wrongdoing can justify war. War opens the way for Spanish government and Christian teaching. [VOICE:host][beat]Follow the logic. The next exhibit tests every link.",
     "voice": "host"
    },
-   "on_screen_text": [
-    "SEPÚLVEDA · SCHOLAR · NEVER SAW THE INDIES",
-    "ARISTOTLE · c. 350 BC",
-    "I. SLAVES BY NATURE",
-    "II. A JUST WAR AGAINST IDOLATRY"
-   ],
-   "production_notes": "Near-static hold, airless. Stamp 2 of 3 (Aristotle). Premise III lands in s2b over the split. Final edit: premise text-morph dissolve into mine texture.",
+   "on_screen_text": ["Aristotle", "Natural slaves", "Just war", "Spanish rule"],
+   "production_notes": "Build the argument as a causal chain. The learner must see how one premise authorizes the next before the evidence tests it.",
    "purpose": "concept",
    "source": {
     "license": "CC0",
@@ -270,43 +229,35 @@
   },
   {
    "animation": {
-    "type": "zoom",
-    "cx": 0.5,
-    "cy": 0.5,
-    "end_zoom": 1.15,
-    "zoom_duration": 10
+    "type": "wipe",
+    "label_a": "THEORY: SPAIN",
+    "label_b": "CONSEQUENCE: POTOSÍ",
+    "direction": "left"
    },
    "beats": [
     {
-     "cue": "It is mercy",
-     "duration": 6,
-     "text": "SEPÚLVEDA · III. MERCY, NOT CRUELTY",
-     "type": "label",
+     "cue": "Now cross-examine it",
+     "duration": 4,
+     "text": "CROSS-EXAMINE THE CLAIM",
+     "type": "question",
      "x": 0.5,
      "y": 0.25
     },
-    {
-     "type": "label",
-     "cue": "We bring them law",
-     "text": "✓ 1. SEPÚLVEDA'S CASE",
-     "x": 0.5,
-     "y": 0.85,
-     "duration": 4
-    }
+    {"type": "stamp", "cue": "extracted silver", "text": "WHO BENEFITS?", "x": 0.5, "y": 0.85, "duration": 3}
    ],
    "id": "s2b-split",
    "narration": {
-    "text": "[VOICE:sepulveda] It is mercy. We bring them the faith. We bring them law.",
-    "voice": "sepulveda"
+    "text": "[VOICE:host][fierce]Now cross-examine it. Move from the study to the mine. If conquest was mercy, why did its institutions produce coerced labor, extracted silver, and shattered communities? [beat]A logical chain is not proof. Its consequences are evidence.",
+    "voice": "host"
    },
    "on_screen_text": [
-    "III. MERCY, NOT CRUELTY"
+    "THEORY", "CONSEQUENCE", "WHO BENEFITS?"
    ],
-   "production_notes": "ASSET PENDING: split-study-mines.webp (PIL composite of sepulveda-study.webp + mines-1590.webp). His final line plays over the split: abstraction become reality.",
+   "production_notes": "The wipe physically moves from European theory to colonial consequence. No generated composite and no decorative zoom.",
    "purpose": "concept",
    "source": {
-    "license": "AI-generated composite",
-    "title": "Pre-composed split: study top, mines engraving bottom"
+    "license": "Public domain composite",
+    "title": "Dürer study engraving compared with a Potosí mine engraving"
    },
    "topics": [
     "1.4"
@@ -316,12 +267,8 @@
     "type": "hard_cut"
    },
    "visual": {
-    "base_image": "assets/images/u1-ch3-l8/split-study-mines.webp",
-    "still": {
-     "prompt": "SPLIT top=assets/images/u1-ch3-l8/sepulveda-study.webp bottom=assets/images/u1-ch3-l8/mines-1590.webp",
-     "provider": "command",
-     "license_note": "Composite of public-domain images (pipeline search + local composite)"
-    }
+    "base_image": "assets/images/u1-ch3-l8/sepulveda-study.webp",
+    "secondary_image": "assets/images/u1-ch3-l8/mines-1590.webp"
    },
    "covers_los": [
     1
@@ -329,28 +276,13 @@
   },
   {
    "animation": {
-    "pan_x": 0.5,
-    "pan_y": 0.65,
-    "type": "ken_burns",
-    "zoom": 0.06
+    "type": "wipe",
+    "label_a": "ARGUMENT FROM BOOKS",
+    "label_b": "ARGUMENT FROM EXPERIENCE",
+    "direction": "right"
    },
    "beats": [
-    {
-     "cue": "Against him",
-     "duration": 5,
-     "text": "LAS CASAS, FRIAR, 50 YEARS IN THE INDIES",
-     "type": "label",
-     "x": 0.5,
-     "y": 0.08
-    },
-    {
-     "cue": "Fifty years in the Indies",
-     "duration": 5,
-     "text": "FIFTY YEARS",
-     "type": "label",
-     "x": 0.5,
-     "y": 0.8
-    }
+    {"cue": "did not debate face to face", "duration": 4, "text": "SEPARATE PRESENTATIONS", "type": "stamp", "x": 0.5, "y": 0.12}
    ],
    "device": "reversal",
    "device_params": {
@@ -359,18 +291,15 @@
    },
    "id": "s3a-split",
    "narration": {
-    "text": "Against him: Bartolomé de las Casas. A Dominican friar. [beat] Fifty years in the Indies. When the council gave him the floor, he held it for five days.",
+    "text": "[solemn]Now the direction reverses. Bartolomé de las Casas had spent decades in Spanish America. The men did not debate face to face; each presented separately. [beat]Sepúlveda offered authority and logic. Las Casas answered with experience, Indigenous rationality, and violence committed under Spanish rule.",
     "voice": "host"
    },
-   "on_screen_text": [
-    "LAS CASAS, FRIAR, 50 YEARS IN THE INDIES",
-    "FIFTY YEARS"
-   ],
-   "production_notes": "Opens on the inherited split. Camera drifts down toward the mines: the rebuttal begins visually. Score drops out here in the final edit.",
+   "on_screen_text": ["BOOKS", "EXPERIENCE", "SEPARATE PRESENTATIONS"],
+   "production_notes": "A rightward wipe replaces the scholar's study with Las Casas. This corrects the popular misconception that the men argued face to face.",
    "purpose": "concept",
    "source": {
-    "license": "AI-generated composite",
-    "title": "Pre-composed split: study top, mines engraving bottom"
+    "license": "Public domain composite",
+    "title": "European study engraving compared with Las Casas portrait"
    },
    "topics": [
     "1.4"
@@ -380,12 +309,8 @@
     "type": "hard_cut"
    },
    "visual": {
-    "base_image": "assets/images/u1-ch3-l8/split-study-mines.webp",
-    "still": {
-     "prompt": "SPLIT top=assets/images/u1-ch3-l8/sepulveda-study.webp bottom=assets/images/u1-ch3-l8/mines-1590.webp",
-     "provider": "command",
-     "license_note": "Composite of public-domain images (pipeline search + local composite)"
-    }
+    "base_image": "assets/images/u1-ch3-l8/sepulveda-study.webp",
+    "secondary_image": "assets/images/u1-ch3-l8/lascasas-portrait-1791.webp"
    },
    "covers_los": [
     2
@@ -393,24 +318,26 @@
   },
   {
    "animation": {
-    "pan_x": 0.35,
-    "pan_y": 0.5,
-    "type": "ken_burns",
-    "zoom": 0.08
+    "type": "source_analysis",
+    "title": "TEST THE CLAIM AGAINST THE SYSTEM",
+    "highlights": [
+     {"box": [0.05, 0.34, 0.52, 0.88], "label": "COERCED LABOR", "cue": "coerced labor"},
+     {"box": [0.48, 0.2, 0.95, 0.8], "label": "SILVER EXTRACTION", "cue": "silver extraction"}
+    ]
    },
    "beats": [
     {
-     "cue": "They are rational people",
-     "duration": 6,
-     "text": "LAS CASAS · RATIONAL PEOPLE",
+     "cue": "political communities",
+     "duration": 4,
+     "text": "RATIONAL POLITICAL COMMUNITIES",
      "type": "label",
      "x": 0.5,
      "y": 0.78
     },
     {
-     "cue": "I lived there",
-     "duration": 10,
-     "text": "Silver mines, New Spain. Engraving, 1590.",
+     "cue": "not eyewitness evidence",
+     "duration": 5,
+     "text": "LATER ILLUSTRATION • NOT EYEWITNESS",
      "type": "label",
      "x": 0.5,
      "y": 0.93
@@ -418,19 +345,19 @@
    ],
    "id": "s3b-mines",
    "narration": {
-    "text": "[VOICE:lascasas] My opponent brought Aristotle. I brought fifty years. He has read about the Indies. I lived there. They are not natural slaves. They are rational people, capable of the faith, capable of governing themselves.",
+    "text": "[VOICE:lascasas][fierce]They are not tools for another people's profit. They reason, govern, worship, and form political communities. [VOICE:host][solemn]Inspect the system. This later Potosí engraving is not eyewitness evidence from Valladolid, but it sharpens Las Casas's question: can coerced labor and silver extraction be renamed civilization?",
     "voice": "lascasas"
    },
    "on_screen_text": [
-    "RATIONAL PEOPLE",
-    "Silver mines, New Spain. Engraving, 1590."
+    "RATIONAL POLITICAL COMMUNITIES",
+    "POTOSÍ • LATER ILLUSTRATION"
    ],
-   "production_notes": "ASSET PENDING: mines-1590.webp. Slow inspection track. Testimony plays dry, no score, in the final edit.",
+   "production_notes": "Treat the engraving as a source to inspect, not wallpaper. Labels identify the system while narration explicitly limits the image's evidentiary role.",
    "purpose": "evidence",
    "source": {
-    "license": "AI-generated",
+    "license": "Public domain",
     "notes": "Illustrates the labor system, not what Las Casas saw in 1550; the Potosí mita postdates the debate.",
-    "title": "Silver mines, New Spain — engraving, 1590"
+    "title": "Indigenous workers in a mine at Potosí, Upper Peru"
    },
    "topics": [
     "1.4"
@@ -454,28 +381,17 @@
   },
   {
    "animation": {
-    "cx": 0.5,
-    "cy": 0.4,
-    "end_zoom": 1.8,
-    "type": "zoom",
-    "zoom_duration": 4
+    "type": "camera_path",
+    "waypoints": [[0.5, 0.5, 1.05], [0.7, 0.42, 1.35], [0.25, 0.68, 1.45], [0.5, 0.5, 1.08]]
    },
    "beats": [
     {
      "cue": "What I witnessed",
      "duration": 6,
-     "text": "De Bry, c. 1598. Illustrates Las Casas's account.",
+     "text": "1858, AFTER DE BRY • ILLUSTRATION",
      "type": "label",
      "x": 0.5,
      "y": 0.93
-    },
-    {
-     "type": "label",
-     "cue": "Spanish cruelty",
-     "text": "✓ 2. LAS CASAS'S DEFENSE",
-     "x": 0.5,
-     "y": 0.85,
-     "duration": 4
     }
    ],
    "device": "annotate",
@@ -483,26 +399,34 @@
     "mode": "telestrator",
     "annotations": [
      {
-      "type": "circle",
-      "label": "soldiers' faces",
-      "cue": "What I witnessed"
+     "type": "circle",
+     "label": "soldiers' faces",
+      "cue": "What I witnessed",
+      "x": 0.72,
+      "y": 0.42,
+      "label_x": 0.72,
+      "label_y": 0.22
      },
      {
-      "type": "circle",
-      "label": "bound captives",
-      "cue": "Spanish cruelty"
+     "type": "circle",
+     "label": "bound captives",
+      "cue": "Spanish cruelty",
+      "x": 0.28,
+      "y": 0.68,
+      "label_x": 0.28,
+      "label_y": 0.82
      }
     ]
    },
    "id": "s3c-torture",
    "narration": {
-    "text": "[VOICE:lascasas][fierce:1.5] What I witnessed was not native barbarism. It was Spanish cruelty.",
+    "text": "[VOICE:lascasas][fierce:1.5]What I witnessed was not proof of natural slavery. It was Spanish cruelty. [VOICE:host][solemn]The image came later, so it cannot verify each event. But it visualizes the accusation at the center of his case: Spain called violence moral instruction, while its victims experienced domination.",
     "voice": "lascasas"
    },
    "on_screen_text": [
-    "Engraving, c. 1598. Illustrates Las Casas's account."
+    "1858, AFTER DE BRY • LATER ILLUSTRATION"
    ],
-   "production_notes": "ASSET PENDING: torture-1598.webp (archival PD, to source). Hard cut lands exactly on 'What I witnessed.' Push-in lands on the soldiers' faces. Hold the silence after.",
+   "production_notes": "The camera follows the argument from agents of force to bound captives, then pulls back so the source caveat remains visible.",
    "purpose": "evidence",
    "source": {
     "license": "Public domain",
@@ -531,11 +455,13 @@
   },
   {
    "animation": {
-    "type": "zoom",
-    "cx": 0.5,
-    "cy": 0.6,
-    "end_zoom": 1.4,
-    "zoom_duration": 7
+    "type": "timeline",
+    "title": "A FIVE-DAY CASE",
+    "events": [
+     ["DAY ONE", "Indigenous rationality"],
+     ["DAY THREE", "Conquest and coercion"],
+     ["DAY FIVE", "Conversion without war"]
+    ]
    },
    "audio": {
     "effects": [
@@ -562,7 +488,7 @@
    "beats": [
     {
      "cue": "Day one",
-     "duration": 2,
+     "duration": 0.7,
      "text": "DAY ONE",
      "type": "label",
      "x": 0.5,
@@ -570,7 +496,7 @@
     },
     {
      "cue": "Day three",
-     "duration": 2,
+     "duration": 0.7,
      "text": "DAY THREE",
      "type": "label",
      "x": 0.5,
@@ -578,7 +504,7 @@
     },
     {
      "cue": "Day five",
-     "duration": 3,
+     "duration": 0.9,
      "text": "DAY FIVE",
      "type": "label",
      "x": 0.5,
@@ -586,9 +512,9 @@
     }
    ],
    "id": "s4a-pages",
-   "min_duration": 3,
+   "min_duration": 6,
    "narration": {
-    "text": "Day one. Day three. Day five. [beat] He finally stopped.",
+    "text": "[fast]Day one: Indigenous peoples reason and govern. Day three: calling coercion protection cannot make conquest just. Day five: Christianity must be offered without war.[/fast] [beat]Las Casas was not answering one insult. He attacked the chain that turned difference into domination.",
     "voice": "host"
    },
    "on_screen_text": [
@@ -596,7 +522,7 @@
     "DAY THREE",
     "DAY FIVE"
    ],
-   "production_notes": "Paper-rustle foley bed under the staccato; page-turn stings on each day. Final edit: hard cut to the tall pages-stack plate on 'Day three' (asset pending: pages-stack-tall.webp).",
+   "production_notes": "The timeline replaces a decorative page zoom. Each page-turn advances a distinct part of the rebuttal and makes the five-day scale legible.",
    "purpose": "evidence",
    "source": {
     "license": "Public domain",
@@ -631,16 +557,16 @@
    },
    "device": "show_ask",
    "device_params": {
-    "question": "The logician with Aristotle, or the eyewitness with fifty years?",
+    "question": "Can a coherent argument survive evidence of its consequences?",
     "hold_sec": 2
    },
    "id": "s4b-countdown",
    "min_duration": 6,
    "narration": {
-    "text": "Now, you're the council. The logician with Aristotle, or the eyewitness with fifty years? [pause:2]",
+    "text": "[solemn]You are on the panel. Sepúlveda's argument depends on judging another people inferior. Las Casas brings experience and evidence, but he is not morally innocent. [beat]Can conquest survive the consequences produced in its name? [pause:2]Choose before history answers.",
     "voice": "host"
    },
-   "production_notes": "Versus face-off: Aristotle bust vs Las Casas portrait slide in from opposite sides. 2s of scripted silence with the choice on screen. No vote mechanic in the video (classroom-safe); YouTube distribution adds a description-box CTA: vote Sepulveda or Las Casas in the comments.",
+   "production_notes": "Evidence cards face off rather than hero portraits. Hold two seconds with no camera movement and sharply ducked music so the learner must decide.",
    "purpose": "application",
    "source": {
     "license": "Public domain",
@@ -678,7 +604,7 @@
    "audio": {
     "effects": [
      {
-      "cue": "No verdict",
+      "cue": "no official verdict",
       "kind": "impact",
       "volume": 0.4
      }
@@ -686,7 +612,7 @@
    },
    "beats": [
     {
-     "cue": "No verdict",
+     "cue": "no official verdict",
      "duration": 7,
      "text": "NO VERDICT",
      "type": "label",
@@ -696,13 +622,13 @@
    ],
    "id": "s4b-empty",
    "narration": {
-    "text": "The real judges never decided. [emphasis]No verdict.[/emphasis] Both men claimed victory. And the conquest went on.",
+    "text": "[solemn]History refuses the clean ending. The panel announced [emphasis]no official verdict[/emphasis]. The dispute remained unresolved, and scholars still debate its policy effects. [pause:1]But outside the chamber, Spanish domination and coerced labor continued. The empty room is not neutrality. Compare the arguments with the outcome.",
     "voice": "host"
    },
    "on_screen_text": [
     "NO VERDICT"
    ],
-   "production_notes": "Stamp 3 of 3: the decision never earned one. Single low thud under the stamp, then nothing.",
+   "production_notes": "Pull away from the empty chamber. A single low thud marks the missing verdict; the score then drops out before the ground-truth sentence.",
    "purpose": "comparison",
    "source": {
     "license": "Public domain",
@@ -731,40 +657,32 @@
   },
   {
    "animation": {
-    "pan_x": 0.55,
-    "pan_y": 0.6,
-    "type": "ken_burns",
-    "zoom": 0.12
-   },
-   "beats": [
-    {
-     "cue": "the idea survived",
-     "duration": 6,
-     "text": "THE IDEA SURVIVED",
-     "type": "label",
-     "x": 0.5,
-     "y": 0.8
-    }
-   ],
-   "audio": {
-    "foley": "quill_scratch",
-    "foley_gain": 0.12,
-    "foley_fade_sec": 1.0
+    "type": "diagram",
+    "title": "JUDGE THE DEBATE BY ITS CONSEQUENCES",
+    "nodes": [
+     {"id": "debate", "label": "Moral argument", "x": 0.5, "y": 0.24, "cue": "moral argument"},
+     {"id": "verdict", "label": "No official verdict", "x": 0.5, "y": 0.5, "cue": "no official verdict"},
+     {"id": "ground", "label": "Coercion continues", "x": 0.5, "y": 0.76, "cue": "coercive institutions"}
+    ],
+    "edges": [
+     {"from": "debate", "to": "verdict", "cue": "no official verdict"},
+     {"from": "verdict", "to": "ground", "cue": "coercive institutions"}
+    ]
    },
    "id": "s5a-portrait",
    "narration": {
-    "text": "[solemn]So the debate changed nothing. And everything. Before Valladolid, no empire had formally asked whether winning a war could still make it wrong. Las Casas wrote the question down. The same man who once proposed African slavery to spare the Indians, then spent his life regretting it. The empire is gone. But the idea survived: conquest itself could be judged by [slow]universal moral law[/slow], the language of natural rights and human dignity. [pause:2]",
+    "text": "[solemn]Put the chamber beside the colony. Valladolid made conquest answer a sustained moral argument. It produced no official verdict, and it did not dismantle the coercive institutions of empire. [beat]That distinction matters for the exam: an argument can expose a contradiction without immediately changing power. Intellectual significance does not equal immediate social change.",
     "voice": "host"
    },
    "on_screen_text": [
-    "THE IDEA SURVIVED"
+    "ARGUMENT ≠ IMMEDIATE CHANGE"
    ],
-   "production_notes": "ASSET PENDING: lascasas-portrait-1791.webp (archival PD, to source). Slow push-in ending on the quill. Quill-scratch foley under the push-in. Cello drone returns in the final edit.",
+   "production_notes": "Return to the mine under a causal diagram. The image supplies ground truth while the diagram distinguishes intellectual significance from immediate change.",
    "purpose": "recap",
    "source": {
     "license": "Public domain",
-    "notes": "Archival portrait; quill, cross, papers.",
-    "title": "Las Casas portrait engraving, 1791"
+    "notes": "Later illustration of colonial mining used to represent continuing coercive institutions.",
+    "title": "Indigenous workers in a mine at Potosí, Upper Peru"
    },
    "topics": [
     "1.4"
@@ -774,16 +692,9 @@
     "type": "hard_cut"
    },
    "visual": {
-    "base_image": "assets/images/u1-ch3-l8/lascasas-portrait-1791.webp",
-    "search": {
-     "query": "Bartolome de las Casas",
-     "provider": "wikimedia",
-     "pick": 0,
-     "min_width": 800
-    }
+    "base_image": "assets/images/u1-ch3-l8/mines-1590.webp"
    },
    "covers_los": [
-    2,
     3
    ]
   },
@@ -791,32 +702,25 @@
    "id": "s5a2-irony",
    "purpose": "concept",
    "narration": {
-    "voice": "host",
-    "text": "[solemn]Here is the hardest part of his story. Years before Valladolid, Las Casas himself had proposed bringing enslaved Africans to the Indies, hoping to spare Indigenous workers. [beat] He spent the rest of his life regretting it. In his own history of the Indies, he wrote that he regretted the advice bitterly, and blamed himself for not seeing what it would become. [pause:1] The man who defended one people had helped condemn another. That is why his defense matters: it was not written by a saint. [emphasis]It was written by a man who knew exactly what guilt felt like.[/emphasis]"
+    "text": "[solemn]Now test the witness. Earlier, Las Casas supported importing enslaved Africans while trying to relieve Indigenous suffering. He later repudiated that position and recognized the same right to freedom. [beat]This does not erase his Indigenous defense, and that defense does not erase his earlier harm. Moral witness is not moral innocence.",
+    "voice": "host"
    },
    "visual": {
     "base_image": "assets/images/u1-ch3-l8/lascasas-portrait-1791.webp"
    },
    "animation": {
-    "type": "zoom",
-    "cx": 0.5,
-    "cy": 0.4,
-    "end_zoom": 1.6,
-    "zoom_duration": 8
+    "type": "typewriter",
+    "text": "WITNESS ≠ INNOCENCE",
+    "subtitle": "Earlier advice • Later repudiation"
    },
-   "beats": [
-    {
-     "type": "label",
-     "cue": "helped condemn another",
-     "text": "THE TRAGIC IRONY",
-     "x": 0.5,
-     "y": 0.85,
-     "duration": 5
-    }
-   ],
    "covers_los": [
     2
    ],
+   "source": {
+    "license": "Public domain",
+    "title": "Bartolomé de Las Casas portrait engraving, 1791",
+    "notes": "The narration distinguishes his earlier proposal from his later repudiation and defense of African freedom."
+   },
    "transition": {
     "type": "hard_cut",
     "duration": 0.2
@@ -824,11 +728,9 @@
   },
   {
    "animation": {
-    "type": "zoom",
-    "cx": 0.5,
-    "cy": 0.45,
-    "end_zoom": 1.35,
-    "zoom_duration": 6
+    "type": "camera_path",
+    "waypoints": [[0.5, 0.48, 1.5], [0.38, 0.42, 1.85], [0.62, 0.42, 1.85], [0.5, 0.5, 1.0]],
+    "caption": "Power • Justification • Evidence • Consequence"
    },
    "device": "date_ticker",
    "device_params": {
@@ -842,9 +744,9 @@
     ]
    },
    "id": "s5b-montage",
-   "min_duration": 3,
+   "min_duration": 8,
    "narration": {
-    "text": "Every time we ask it about a war today, we're still sitting in [emphasis]that room[/emphasis].",
+    "text": "[refrain]Remember the pattern: power makes a claim, evidence tests it, and consequences expose what it hides.[/refrain] Valladolid did not invent human rights or end conquest. [beat]Its narrower significance: within an empire, conquest had to answer a moral challenge. On the exam, separate an argument's importance from its immediate effects.",
     "voice": "host"
    },
    "on_screen_text": [
@@ -854,12 +756,12 @@
     "1960s",
     "TODAY"
    ],
-   "production_notes": "Slow push-in on the Trent council hall while the date ticker advances 1550 to TODAY under the close. The room IS the argument: every era sits in it. Final edit ends with a 12-frame fade to black — the only dissolve in the video.",
+   "production_notes": "The Trent hall is explicitly symbolic, not Valladolid. The camera visits opposing sides and then pulls back while the reusable AP pattern lands under the outro.",
    "purpose": "close",
    "source": {
     "license": "CC0",
     "title": "The Council of Trent in session, engraving (MET)",
-    "notes": "Via Wikimedia Commons; fetched by the pipeline search spec (no hand-built image)."
+    "notes": "Symbolic European council chamber, not a depiction of the Valladolid proceedings."
    },
    "topics": [
     "1.4"
@@ -879,16 +781,6 @@
    },
    "covers_los": [
     3
-   ],
-   "beats": [
-    {
-     "type": "label",
-     "cue": "that room",
-     "text": "✓ 3. WHY IT MATTERED",
-     "x": 0.5,
-     "y": 0.85,
-     "duration": 4
-    }
    ]
   }
  ],
@@ -899,7 +791,14 @@
   "edge_pitch": "+0Hz",
   "edge_rate": "+2%",
   "edge_voice": "en-US-GuyNeural",
-  "engine": "edge",
+  "engine": "fish_cloud",
+  "reference_id": "08bd13e4c6864e77925dd78cbc45d8f3",
+  "settings": {
+   "fish_cloud_latency": "normal",
+   "fish_cloud_model": "s2.1-pro-free",
+   "fish_emotion_markers": true
+  },
+  "timeout_seconds": 600,
   "voices": {
    "host": {
     "edge_pitch": "+0Hz",

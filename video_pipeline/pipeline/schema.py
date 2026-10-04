@@ -15,14 +15,14 @@ ANIMATION_TYPES = {
 
 ROOT_KEYS = {"schema_version", "course_id", "unit_id", "chapter_id", "lesson_id", "title", "description", "essential_question", "learning_objectives", "key_terms", "ap_alignment", "presentation", "music", "output", "tts", "generation", "clip_generation", "still_generation", "video", "scenes", "transition_scheme"}
 VIDEO_KEYS = {"width", "height", "fps", "transition_seconds"}
-TTS_KEYS = {"engine", "server_url", "reference_audio", "reference_text", "timeout_seconds", "settings", "edge_voice", "edge_rate", "edge_pitch", "voices"}
+TTS_KEYS = {"engine", "server_url", "reference_audio", "reference_text", "reference_id", "timeout_seconds", "settings", "edge_voice", "edge_rate", "edge_pitch", "voices"}
 GEN_KEYS = {"provider", "model", "endpoint", "api_key_env", "timeout_seconds"}
 CLIP_GEN_KEYS = {"provider", "cookie", "browser", "lib_dir", "timeout_seconds", "keep_open_on_failure", "meta_refusal_retries"}
 STILL_GEN_KEYS = {"provider", "fallback_provider", "search_provider", "media_bin", "image_search_bin", "command", "timeout_seconds", "orientation", "image_output_format"}
 STILL_KEYS = {"prompt", "provider", "fallback_provider", "seed", "edit_of", "edit_prompt", "orientation", "license_note"}
 SEARCH_KEYS = {"query", "page_title", "provider", "pick", "min_width", "license", "sha256"}
 SCENE_KEYS = {"id", "purpose", "narration", "visual", "animation", "beats", "audio", "transition", "min_duration", "topics", "on_screen_text", "source", "production_notes", "device", "device_params", "covers_los"}
-NARRATION_KEYS = {"text", "voice", "reference_audio", "reference_text", "settings"}
+NARRATION_KEYS = {"text", "voice", "reference_audio", "reference_text", "reference_id", "settings"}
 VISUAL_KEYS = {"base_image", "secondary_image", "clip", "layers", "still", "search"}
 ALIGNMENT_KEYS = {"period", "topics", "themes", "skills"}
 PRESENTATION_KEYS = {"audience", "tone", "visual_style", "captions", "music", "branding"}
@@ -432,10 +432,12 @@ def validate_manifest(data: Any, path: Path, repo_root: Path,
         _text(tts["reference_text"], "manifest.tts.reference_text")
         if not re.fullmatch(r"https?://(?:localhost|127\.0\.0\.1)(?::\d+)?", tts["server_url"].rstrip("/")):
             raise PipelineError("manifest.tts.server_url must be a loopback HTTP URL")
-    else:
+    elif engine == "edge":
         _text(tts.get("edge_voice", "en-US-GuyNeural"), "manifest.tts.edge_voice")
         for field, default in (("edge_rate", "+0%"), ("edge_pitch", "+0Hz")):
             _text(tts.get(field, default), f"manifest.tts.{field}")
+    elif "reference_id" in tts:
+        _text(tts["reference_id"], "manifest.tts.reference_id")
     if "timeout_seconds" in tts:
         _number(tts["timeout_seconds"], "manifest.tts.timeout_seconds", 1, 3600)
     if "settings" in tts and not isinstance(tts["settings"], dict):
@@ -444,7 +446,7 @@ def validate_manifest(data: Any, path: Path, repo_root: Path,
         voices = tts["voices"]
         if not isinstance(voices, dict) or not voices:
             raise PipelineError("manifest.tts.voices must be a non-empty object")
-        allowed = {"edge_voice", "edge_rate", "edge_pitch", "reference_audio", "reference_text", "settings"}
+        allowed = {"edge_voice", "edge_rate", "edge_pitch", "reference_audio", "reference_text", "reference_id", "settings"}
         for name, cfg in voices.items():
             where = f"manifest.tts.voices.{name}"
             if not isinstance(cfg, dict):

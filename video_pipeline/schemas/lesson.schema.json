@@ -41,15 +41,33 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "engine": {"enum": ["fish", "edge"]},
+        "engine": {"enum": ["fish", "edge", "fish_cloud"]},
         "server_url": {"type": "string", "pattern": "^https?://(localhost|127\\.0\\.0\\.1)(:[0-9]+)?/?$"},
         "reference_audio": {"type": "string", "minLength": 1},
         "reference_text": {"type": "string", "minLength": 1},
+        "reference_id": {"type": "string", "minLength": 1},
         "timeout_seconds": {"type": "integer", "minimum": 1},
         "settings": {"type": "object"},
         "edge_voice": {"type": "string"},
         "edge_rate": {"type": "string"},
-        "edge_pitch": {"type": "string"}
+        "edge_pitch": {"type": "string"},
+        "voices": {
+          "type": "object",
+          "minProperties": 1,
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "edge_voice": {"type": "string"},
+              "edge_rate": {"type": "string"},
+              "edge_pitch": {"type": "string"},
+              "reference_audio": {"type": "string"},
+              "reference_text": {"type": "string"},
+              "reference_id": {"type": "string", "minLength": 1},
+              "settings": {"type": "object"}
+            }
+          }
+        }
       }
     },
     "generation": {
@@ -167,6 +185,7 @@
             "voice": {"type": "string"},
             "reference_audio": {"type": "string"},
             "reference_text": {"type": "string"},
+            "reference_id": {"type": "string", "minLength": 1},
             "settings": {"type": "object"}
           }
         },

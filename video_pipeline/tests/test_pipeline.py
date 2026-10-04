@@ -1,4 +1,5 @@
 import json
+import os
 import sys
 import tempfile
 import unittest
@@ -15,6 +16,7 @@ from pipeline.layout import validate_text_layout
 from pipeline.schema import validate_manifest
 from pipeline.timing import resolve_scene_timing
 from pipeline.render import _mixed_audio
+from pipeline.tts import render_fish_cloud
 
 
 class ManifestTests(unittest.TestCase):
@@ -86,6 +88,27 @@ class ManifestTests(unittest.TestCase):
             data["tts"] = {"engine": "edge", "edge_voice": "en-US-GuyNeural"}
             result = validate_manifest(data, root / "lesson.json", ROOT)
             self.assertEqual(result["tts"]["engine"], "edge")
+
+    def test_fish_cloud_manifest_accepts_reference_ids(self):
+        with tempfile.TemporaryDirectory() as value:
+            root = Path(value)
+            data = self.fixture(root)
+            data["tts"] = {
+                "engine": "fish_cloud",
+                "reference_id": "narrator-model",
+                "voices": {"host": {"reference_id": "host-model"}},
+                "settings": {"fish_cloud_model": "s2.1-pro-free"},
+            }
+            data["scenes"][0]["narration"].update({
+                "voice": "host", "reference_id": "scene-model"})
+            result = validate_manifest(data, root / "lesson.json", ROOT)
+            self.assertEqual(result["tts"]["engine"], "fish_cloud")
+
+    def test_fish_cloud_reports_missing_api_key_before_network(self):
+        with mock.patch.dict(os.environ, {}, clear=True):
+            with self.assertRaisesRegex(PipelineError, "FISH_API_KEY"):
+                render_fish_cloud("Hello", "s2.1-pro-free", None,
+                                  "normal", 10)
 
     def test_missing_generated_clip_can_be_deferred(self):
         with tempfile.TemporaryDirectory() as value:
