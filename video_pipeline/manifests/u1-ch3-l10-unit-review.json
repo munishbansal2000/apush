@@ -1,0 +1,656 @@
+{
+  "lesson_id": "u1-ch3-l10-unit-review",
+  "schema_version": 1,
+  "course_id": "apush",
+  "unit_id": "u1",
+  "chapter_id": "ch3",
+  "title": "Unit 1 Review: Think Like the Exam",
+  "description": "An exam-technique review of Unit 1: the unit thesis, the three reasoning processes, the SAQ format, and DBQ/LEQ habits that earn the points students most often lose.",
+  "essential_question": "How do you turn Unit 1 knowledge into exam points?",
+  "learning_objectives": [
+    "State the Unit 1 thesis and attach each major topic to it as evidence.",
+    "Apply the three reasoning processes, comparison, causation, and continuity and change, to Unit 1 material.",
+    "Describe how to answer each SAQ type and which DBQ/LEQ habits earn the most-lost points."
+  ],
+  "key_terms": [
+    {
+      "term": "SAQ",
+      "definition": "Short-Answer Question: three required questions (Q1 secondary source, Q2 primary source, choice of Q3/Q4 with no stimulus), each scored 0-3 with A/B/C parts independent."
+    },
+    {
+      "term": "DBQ",
+      "definition": "Document-Based Question: a 7-point essay built from seven documents plus thesis, contextualization, evidence, and sourcing analysis."
+    },
+    {
+      "term": "contextualization",
+      "definition": "Placing an argument in its broader historical setting; one of the most-lost points on the DBQ and LEQ rubrics."
+    }
+  ],
+  "ap_alignment": {
+    "period": "Period 1",
+    "skills": [
+      "Comparison",
+      "Causation",
+      "Continuity and Change"
+    ],
+    "themes": [
+      "America in the World"
+    ],
+    "topics": [
+      "1.1",
+      "1.2",
+      "1.3"
+    ]
+  },
+  "output": "../../build/lesson-videos/u1-ch3-l10-unit-review.mp4",
+  "video": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "transition_seconds": 0.2
+  },
+  "transition_scheme": "hard_cut",
+  "presentation": {
+    "audience": "APUSH students",
+    "branding": "APUSH Unit 1",
+    "captions": false,
+    "tone": "a teacher talking to a smart 16-year-old; plain, spoken, concrete",
+    "visual_style": "engraving-documentary; stamps, serif/sans type grammar"
+  },
+  "tts": {
+    "engine": "edge",
+    "edge_voice": "en-US-GuyNeural",
+    "edge_rate": "+2%",
+    "edge_pitch": "+0Hz",
+    "voices": {
+      "host": {
+        "edge_voice": "en-US-GuyNeural",
+        "edge_rate": "+2%",
+        "edge_pitch": "+0Hz"
+      }
+    }
+  },
+  "generation": {
+    "provider": "none"
+  },
+  "still_generation": {
+    "provider": "hatch-media",
+    "search_provider": "wikimedia",
+    "image_output_format": "webp",
+    "orientation": "landscape",
+    "timeout_seconds": 600
+  },
+  "clip_generation": {
+    "provider": "none"
+  },
+  "scenes": [
+    {
+      "id": "s1",
+      "narration": {
+        "voice": "host",
+        "text": "[beat]Here is the AP exam's format: short-answer, question three. No passage, no documents. Just you and what you know. [pause:2] Using Unit 1: (a) Identify one similarity between Spanish and French interactions with Native peoples. (b) Identify one difference between Spanish and English colonization before 1607. (c) Explain one reason for that difference. [pause:2] If your mind went blank, that is the point. By the end, you will answer it cold."
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch3-l10/exam-desk.webp",
+        "still": {
+          "provider": "hatch-media",
+          "orientation": "landscape",
+          "prompt": "A bare scholar's exam desk seen from above: a single blank sheet of paper, a quill in an inkwell, a lit candle, deep shadows. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
+        }
+      },
+      "animation": {
+        "type": "zoom",
+        "cx": 0.5,
+        "cy": 0.5,
+        "end_zoom": 1.06,
+        "zoom_duration": 20
+      },
+      "beats": [
+        {
+          "type": "label",
+          "cue": "question three",
+          "duration": 5,
+          "text": "SAQ, Q3 STYLE",
+          "x": 0.5,
+          "y": 0.12
+        },
+        {
+          "type": "label",
+          "cue": "No passage",
+          "duration": 4,
+          "text": "NO STIMULUS",
+          "x": 0.5,
+          "y": 0.82
+        }
+      ],
+      "purpose": "hook",
+      "device": "hook",
+      "device_params": {
+        "hook_type": "mystery",
+        "payoff_by_sec": 15.0
+      },
+      "production_notes": "Device 1: show-and-ask. The SAQ is shown and read aloud; two full 2s pauses (production note names both). Score drops out at the first pause. The question is answered in s6.",
+      "min_duration": 22,
+      "topics": [
+        "1.1",
+        "1.2",
+        "1.3"
+      ],
+      "source": {
+        "license": "AI-generated",
+        "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt.",
+        "title": "Exam desk (AI plate)"
+      },
+      "transition": {
+        "type": "hard_cut",
+        "duration": 0.2
+      },
+      "on_screen_text": [
+        "SAQ, Q3 STYLE",
+        "NO STIMULUS"
+      ],
+      "audio": {
+        "effects": [
+          {
+            "cue": "If your mind went blank",
+            "kind": "impact",
+            "volume": 0.12
+          }
+        ]
+      }
+    },
+    {
+      "id": "s1b-objectives",
+      "narration": {
+        "voice": "host",
+        "text": "[beat]By the end: [emphasis]One:[/emphasis] the Unit 1 thesis, with every major topic pinned to it as evidence. [emphasis]Two:[/emphasis] the three reasoning processes, applied to Unit 1 material. [emphasis]Three:[/emphasis] the S-A-Q format, and the D-B-Q and L-E-Q habits that earn the points students lose most often."
+      },
+      "animation": {
+        "type": "objectives",
+        "title": "BY THE END OF THIS LESSON"
+      },
+      "purpose": "context",
+      "production_notes": "Moving objectives slide: the promise. Three LOs stagger in.",
+      "min_duration": 14,
+      "topics": [
+        "1.1",
+        "1.2",
+        "1.3"
+      ],
+      "transition": {
+        "type": "hard_cut",
+        "duration": 0.2
+      },
+      "visual": {}
+    },
+    {
+      "id": "s2",
+      "narration": {
+        "voice": "host",
+        "text": "[beat]Unit 1 has a one-sentence thesis. Geography wrote the first draft of American history, and contact rewrote it. [beat] Every lesson is evidence for that claim. Lesson 1: geography shaped Native societies, from Cahokia to the Iroquois. Lesson 4: alliances plus disease, not guns, decided the conquest. Lesson 7: labor reorganized, from encomienda to casta. Lesson 8: Europe asked whether conquest could be just. [beat] The rest pin to the same board: crops and diseases exchanged, the silver mountain, the revolt that drove Spain out."
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch3-l10/evidence-board.webp",
+        "still": {
+          "provider": "hatch-media",
+          "orientation": "landscape",
+          "prompt": "A scholar's evidence board: pinned documents and small engraved views connected by drawn ink lines, a blank banner across the top. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
+        }
+      },
+      "animation": {
+        "type": "ken_burns",
+        "zoom": 0.06,
+        "pan_x": 0.5,
+        "pan_y": 0.5
+      },
+      "beats": [
+        {
+          "type": "label",
+          "cue": "first draft",
+          "duration": 4,
+          "text": "GEOGRAPHY'S FIRST DRAFT",
+          "x": 0.5,
+          "y": 0.15
+        },
+        {
+          "type": "label",
+          "cue": "contact rewrote it",
+          "duration": 4,
+          "text": "CONTACT REWROTE IT",
+          "x": 0.5,
+          "y": 0.8
+        }
+      ],
+      "covers_los": [
+        1
+      ],
+      "purpose": "concept",
+      "production_notes": "Device 2: evidence-board collage. Narration pins l1, l4, l7, l8 by name, then l2/l3/l5/l6/l9 as a group. Slow drift across the board as pins land.",
+      "min_duration": 24,
+      "topics": [
+        "1.1",
+        "1.2",
+        "1.3"
+      ],
+      "source": {
+        "license": "AI-generated",
+        "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt.",
+        "title": "Evidence board (AI plate)"
+      },
+      "transition": {
+        "type": "hard_cut",
+        "duration": 0.2
+      },
+      "on_screen_text": [
+        "GEOGRAPHY'S FIRST DRAFT",
+        "CONTACT REWROTE IT"
+      ]
+    },
+    {
+      "id": "s3",
+      "narration": {
+        "voice": "host",
+        "text": "[beat]But contact did not just conquer. It mixed. Three peoples met, and something new came out. The Spanish and French intermarried with Native peoples far more than the English. Missions became contact zones, where converts blended saints with spirits. That blending has a name the exam loves: syncretism. [beat] They misunderstood each other. Europeans owned land as property. Many Native societies held it in common. [beat] That collision is C-E-D topic 1.6, the unit thesis in miniature."
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch3-l10/mission-contact.webp",
+        "still": {
+          "provider": "hatch-media",
+          "orientation": "landscape",
+          "prompt": "A Spanish mission courtyard: a friar holding a cross, Native converts kneeling, an African laborer carrying water, an adobe church behind. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
+        }
+      },
+      "animation": {
+        "type": "zoom",
+        "cx": 0.5,
+        "cy": 0.55,
+        "end_zoom": 1.05,
+        "zoom_duration": 18
+      },
+      "beats": [
+        {
+          "type": "label",
+          "cue": "syncretism",
+          "duration": 4,
+          "text": "SYNCRETISM",
+          "x": 0.5,
+          "y": 0.85
+        },
+        {
+          "type": "label",
+          "cue": "topic 1.6",
+          "duration": 4,
+          "text": "CED 1.6",
+          "x": 0.12,
+          "y": 0.12
+        }
+      ],
+      "covers_los": [
+        1
+      ],
+      "purpose": "concept",
+      "production_notes": "CED 1.6 cultural interactions: intermarriage patterns, syncretism, missions as contact zones, land-concept misunderstanding.",
+      "min_duration": 22,
+      "topics": [
+        "1.1",
+        "1.2",
+        "1.3"
+      ],
+      "source": {
+        "license": "AI-generated",
+        "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt.",
+        "title": "Mission contact zone (AI plate)"
+      },
+      "transition": {
+        "type": "hard_cut",
+        "duration": 0.2
+      },
+      "on_screen_text": [
+        "SYNCRETISM",
+        "CED 1.6"
+      ],
+      "audio": {
+        "effects": [
+          {
+            "cue": "has a name the exam loves",
+            "kind": "impact",
+            "volume": 0.15
+          }
+        ]
+      }
+    },
+    {
+      "id": "s4a",
+      "narration": {
+        "voice": "host",
+        "text": "[beat]Now the tools. The exam tests three reasoning processes, and Unit 1 is built for all three. First lens: comparison. Spain: missions and Native labor. France: furs and intermarriage. England: late and fenced off. [beat] Second lens: causation. Ask why, not just what. Why did five hundred men topple an empire? Not the guns alone. Stack them: Native alliances, then smallpox. [beat] Comparison finds the pattern. Causation finds the engine."
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch3-l10/three-lenses.webp",
+        "still": {
+          "provider": "hatch-media",
+          "orientation": "landscape",
+          "prompt": "A scholar's tool card on a desk: three large blank panels side by side, a magnifying glass on the first panel, a quill beside. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
+        }
+      },
+      "animation": {
+        "type": "ken_burns",
+        "zoom": 0.05,
+        "pan_x": 0.5,
+        "pan_y": 0.5
+      },
+      "beats": [
+        {
+          "type": "label",
+          "cue": "First lens",
+          "duration": 5,
+          "text": "COMPARISON",
+          "x": 0.3,
+          "y": 0.82
+        },
+        {
+          "type": "label",
+          "cue": "Second lens",
+          "duration": 5,
+          "text": "CAUSATION",
+          "x": 0.7,
+          "y": 0.82
+        }
+      ],
+      "covers_los": [
+        2
+      ],
+      "purpose": "concept",
+      "device": "annotate",
+      "device_params": {
+        "mode": "telestrator",
+        "annotations": [
+          {
+            "type": "circle",
+            "label": "comparison",
+            "cue": "First lens",
+            "x": 0.3,
+            "y": 0.5
+          },
+          {
+            "type": "circle",
+            "label": "causation",
+            "cue": "Second lens",
+            "x": 0.7,
+            "y": 0.5
+          }
+        ]
+      },
+      "production_notes": "Device 3: annotated freeze-frame. The tool card freezes on 'First lens'; COMPARISON and CAUSATION draw on as the host reads the card like a document.",
+      "min_duration": 24,
+      "topics": [
+        "1.1",
+        "1.2",
+        "1.3"
+      ],
+      "source": {
+        "license": "AI-generated",
+        "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt.",
+        "title": "Three-lenses tool card (AI plate)"
+      },
+      "transition": {
+        "type": "hard_cut",
+        "duration": 0.2
+      },
+      "on_screen_text": [
+        "COMPARISON",
+        "CAUSATION"
+      ]
+    },
+    {
+      "id": "s4b",
+      "narration": {
+        "voice": "host",
+        "text": "[beat]Third lens: continuity and change. Ask what contact altered and what survived it. Labor changed completely, from encomienda to African slavery. But forced labor continued, as did European rivalry. [beat] Then watch 1588. England's defeat of the Spanish Armada broke Spain's lock on the ocean. Before it, Spain's navy could crush any rival colony. After it, France and England could, and did. [beat] One sea battle, and Period 2 becomes possible. That is continuity and change in a single date."
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch3-l10/armada-battle.webp",
+        "still": {
+          "provider": "hatch-media",
+          "orientation": "landscape",
+          "prompt": "A sea battle in 1588: nimble English warships scattering tall Spanish galleons under dark storm clouds, waves and smoke. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
+        }
+      },
+      "animation": {
+        "type": "ken_burns",
+        "zoom": 0.08,
+        "pan_x": 0.45,
+        "pan_y": 0.5
+      },
+      "beats": [
+        {
+          "type": "stamp",
+          "cue": "watch 1588",
+          "duration": 5,
+          "text": "1588, THE HINGE",
+          "x": 0.5,
+          "y": 0.5
+        }
+      ],
+      "covers_los": [
+        2
+      ],
+      "purpose": "concept",
+      "production_notes": "Stamp 1 of 3. The Armada is the continuity-and-change anchor and the bridge to Period 2 (Jamestown 1607).",
+      "min_duration": 20,
+      "topics": [
+        "1.1",
+        "1.2",
+        "1.3"
+      ],
+      "source": {
+        "license": "AI-generated",
+        "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt.",
+        "title": "Armada 1588 (AI plate)"
+      },
+      "transition": {
+        "type": "hard_cut",
+        "duration": 0.2
+      },
+      "on_screen_text": [
+        "1588, THE HINGE"
+      ],
+      "audio": {
+        "effects": [
+          {
+            "cue": "watch 1588",
+            "kind": "impact",
+            "volume": 0.2
+          }
+        ]
+      }
+    },
+    {
+      "id": "s5",
+      "narration": {
+        "voice": "host",
+        "text": "[beat]The format, checked against the current prep book. Three short-answer questions. One and two are required; you choose three or four. Question one: secondary sources to pick apart. Question two: a primary source testing comparison or causation. [beat] Question three is the Unit 1 question: no stimulus, Periods 1 through 5, straight from memory. Parts score alone, so a blank (a) never kills (b) or (c). Answer all three, labeled. [beat] On essays, two habits earn the most-lost points. Contextualization: set the broader scene before your argument, on the D-B-Q and the L-E-Q. On the D-B-Q, source four documents. Explain point of view or purpose. Never just quote."
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch3-l10/rubric-desk.webp",
+        "still": {
+          "provider": "hatch-media",
+          "orientation": "landscape",
+          "prompt": "An exam booklet and a rubric sheet side by side on a wooden desk, a quill laid across them, candlelight. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
+        }
+      },
+      "animation": {
+        "type": "zoom",
+        "cx": 0.5,
+        "cy": 0.5,
+        "end_zoom": 1.05,
+        "zoom_duration": 22
+      },
+      "beats": [
+        {
+          "type": "label",
+          "cue": "Question three",
+          "duration": 5,
+          "text": "Q3, PERIODS 1 TO 5",
+          "x": 0.5,
+          "y": 0.12
+        },
+        {
+          "type": "stamp",
+          "cue": "contextualization",
+          "duration": 5,
+          "text": "CONTEXTUALIZATION",
+          "x": 0.5,
+          "y": 0.5
+        }
+      ],
+      "covers_los": [
+        3
+      ],
+      "purpose": "concept",
+      "production_notes": "Stamp 2 of 3. Format facts verified vs Barron's Premium 2027 this session: Q1 secondary P3-8, Q2 primary comparison/causation P3-8, Q3 P1-5 / Q4 P6-9 no stimulus; 0-1 per part, max 3; DBQ 7 pts, LEQ 6 pts.",
+      "min_duration": 28,
+      "topics": [
+        "1.1",
+        "1.2",
+        "1.3"
+      ],
+      "source": {
+        "license": "AI-generated",
+        "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt.",
+        "title": "Rubric desk (AI plate)"
+      },
+      "transition": {
+        "type": "hard_cut",
+        "duration": 0.2
+      },
+      "on_screen_text": [
+        "Q3, PERIODS 1 TO 5",
+        "CONTEXTUALIZATION"
+      ],
+      "audio": {
+        "effects": [
+          {
+            "cue": "contextualization",
+            "kind": "impact",
+            "volume": 0.2
+          }
+        ]
+      }
+    },
+    {
+      "id": "s6",
+      "narration": {
+        "voice": "host",
+        "text": "[beat]Back to the opening question. (a) The Spanish and French intermarried and traded with Native peoples, unlike the English. (b) Spain built missions and a forced-labor empire in the 1500s. England's colonies came after 1607 and excluded Native peoples. (c) Spain's navy kept rivals out until England destroyed the Armada in 1588. [beat] Three parts, three points. That is the whole game."
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch3-l10/exam-desk.webp",
+        "still": {
+          "provider": "hatch-media",
+          "orientation": "landscape",
+          "prompt": "A bare scholar's exam desk seen from above: a single blank sheet of paper, a quill in an inkwell, a lit candle, deep shadows. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
+        }
+      },
+      "animation": {
+        "type": "ken_burns",
+        "zoom": 0.04,
+        "pan_x": 0.5,
+        "pan_y": 0.5
+      },
+      "beats": [
+        {
+          "type": "stamp",
+          "cue": "Three parts",
+          "duration": 6,
+          "text": "THREE PARTS, THREE POINTS",
+          "x": 0.5,
+          "y": 0.5
+        }
+      ],
+      "covers_los": [
+        1,
+        2,
+        3
+      ],
+      "purpose": "recap",
+      "production_notes": "The landing: the hook SAQ answered cold, using all three LOs. Stamp 3 of 3, the stamped verdict. Visual rhyme with s1: same desk, gentle drift; editor may pull back as the visual rhyme with s1.",
+      "min_duration": 16,
+      "topics": [
+        "1.1",
+        "1.2",
+        "1.3"
+      ],
+      "source": {
+        "license": "AI-generated",
+        "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt.",
+        "title": "Exam desk (AI plate, reused from s1)"
+      },
+      "transition": {
+        "type": "hard_cut",
+        "duration": 0.2
+      },
+      "on_screen_text": [
+        "THREE PARTS, THREE POINTS"
+      ],
+      "audio": {
+        "effects": [
+          {
+            "cue": "Three parts",
+            "kind": "impact",
+            "volume": 0.2
+          }
+        ]
+      }
+    },
+    {
+      "id": "s7",
+      "narration": {
+        "voice": "host",
+        "text": "[pause:10]"
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch3-l10/exam-card-paper.webp",
+        "still": {
+          "provider": "hatch-media",
+          "orientation": "landscape",
+          "prompt": "A plain aged paper texture, warm cream tone, subtle grain, completely empty, no text, no imagery. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
+        }
+      },
+      "animation": {
+        "type": "bullets",
+        "title": "UNIT 1 REVIEW: THINK LIKE THE EXAM",
+        "stagger": 0.45,
+        "bullets": [
+          "THESIS: geography drafted it, contact rewrote it; every lesson is evidence",
+          "LENSES: compare the colonizers, stack the causes, track change and continuity",
+          "S-A-Q: Q1 secondary, Q2 primary, Q3 no stimulus; parts score alone",
+          "ESSAYS: contextualize first; DBQ: source 4 docs by POV or purpose"
+        ],
+        "footer": "AP PERIOD 1 · 1491-1607"
+      },
+      "covers_los": [
+        1,
+        2,
+        3
+      ],
+      "purpose": "close",
+      "production_notes": "Exam card: 10s silent hold. Maps 1:1 to the three LOs: the landing. Serif/sans grammar: what they said vs what you must know.",
+      "min_duration": 10,
+      "topics": [
+        "1.1",
+        "1.2",
+        "1.3"
+      ],
+      "source": {
+        "license": "AI-generated",
+        "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt.",
+        "title": "Exam card paper (AI plate)"
+      },
+      "transition": {
+        "type": "hard_cut",
+        "duration": 0.2
+      }
+    }
+  ]
+}

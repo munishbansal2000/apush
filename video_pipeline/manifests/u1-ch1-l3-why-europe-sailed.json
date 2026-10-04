@@ -1,0 +1,828 @@
+{
+  "schema_version": 1,
+  "course_id": "apush",
+  "unit_id": "u1",
+  "chapter_id": "ch1",
+  "lesson_id": "u1-ch1-l3-why-europe-sailed",
+  "title": "Why Europe Sailed West",
+  "description": "Economic motives, crusading ideology, maritime technology, Columbus's miscalculation, and the 1494 treaty division of the world between Spain and Portugal: the causes of European exploration.",
+  "essential_question": "Why did European rulers spend money on voyages into an unknown ocean?",
+  "learning_objectives": [
+    "Explain the economic pressures that pushed Iberian rulers to seek a western route to Asia.",
+    "Describe how the Reconquista and new maritime technology made sustained Atlantic voyages possible.",
+    "Rank the motives of gold, God, and glory and justify the hierarchy with evidence."
+  ],
+  "key_terms": [
+    {
+      "term": "Reconquista",
+      "definition": "The centuries-long Christian reconquest of Iberia from Muslim rule, completed with the fall of Granada in 1492."
+    },
+    {
+      "term": "caravel",
+      "definition": "A small, fast Portuguese sailing ship with lateen sails capable of sailing against the wind on long Atlantic voyages."
+    },
+    {
+      "term": "Treaty of Tordesillas",
+      "definition": "The 1494 treaty between Spain and Portugal dividing newly discovered lands: west of the line to Spain, east of the line to Portugal."
+    }
+  ],
+  "ap_alignment": {
+    "topics": [
+      "1.2 European Exploration in the Americas"
+    ],
+    "skills": [
+      "Causation",
+      "Contextualization"
+    ]
+  },
+  "output": "../../build/lesson-videos/u1-ch1-l3-why-europe-sailed.mp4",
+  "transition_scheme": "hard_cut",
+  "presentation": {
+    "audience": "APUSH students",
+    "branding": "APUSH Unit 1",
+    "captions": false,
+    "tone": "a teacher talking to a smart 16-year-old; plain, spoken, concrete",
+    "visual_style": "engraving-documentary; stamps, serif/sans type grammar"
+  },
+  "tts": {
+    "engine": "edge",
+    "edge_voice": "en-US-GuyNeural",
+    "edge_rate": "+2%",
+    "edge_pitch": "+0Hz",
+    "voices": {
+      "host": {
+        "edge_voice": "en-US-GuyNeural",
+        "edge_rate": "+2%",
+        "edge_pitch": "+0Hz"
+      },
+      "navigator": {
+        "edge_voice": "en-US-TonyNeural",
+        "edge_rate": "-5%",
+        "edge_pitch": "+0Hz"
+      },
+      "herald": {
+        "edge_voice": "en-US-DavisNeural",
+        "edge_rate": "+0%",
+        "edge_pitch": "-10Hz"
+      }
+    }
+  },
+  "generation": {
+    "provider": "none"
+  },
+  "clip_generation": {
+    "provider": "none"
+  },
+  "still_generation": {
+    "image_output_format": "webp",
+    "orientation": "landscape",
+    "provider": "hatch-media",
+    "search_provider": "wikimedia",
+    "timeout_seconds": 600
+  },
+  "video": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "transition_seconds": 0.2
+  },
+  "scenes": [
+    {
+      "id": "s1",
+      "purpose": "hook",
+      "narration": {
+        "text": "[beat]Columbus was wrong about almost everything. His math shrank the Earth to make Asia look like a short sail west. The experts checked his numbers and said no. [beat] Spain paid for the voyage anyway. Three small ships, into an ocean no European had crossed. Why would a king and queen fund a plan the experts rejected?",
+        "voice": "host"
+      },
+      "animation": {
+        "type": "ken_burns",
+        "zoom": 0.08,
+        "pan_x": 0.5,
+        "pan_y": 0.5
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch1-l3/royal-charter-court.webp",
+        "still": {
+          "orientation": "landscape",
+          "provider": "hatch-media",
+          "prompt": "A Spanish throne room, 1492: the Catholic Monarchs on a dais extending a sealed charter toward a kneeling navigator holding rolled charts, courtiers watching. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
+        }
+      },
+      "transition": {
+        "type": "hard_cut",
+        "duration": 0.2
+      },
+      "min_duration": 20,
+      "beats": [
+        {
+          "type": "label",
+          "cue": "said no",
+          "duration": 4,
+          "text": "THE EXPERTS SAID NO",
+          "x": 0.5,
+          "y": 0.14
+        },
+        {
+          "type": "question",
+          "cue": "Why would a king",
+          "duration": 5,
+          "text": "WHY FUND A REJECTED PLAN?",
+          "x": 0.5,
+          "y": 0.5
+        }
+      ],
+      "device": "hook",
+      "device_params": {
+        "hook_type": "contradiction",
+        "payoff_by_sec": 14.0
+      },
+      "production_notes": "Contradiction hook: wrong about everything vs Spain paid anyway. Slow push-in lands on the charter as the question is asked. Fallback: tight detail of a wax seal pressed onto a parchment charter.",
+      "on_screen_text": [
+        "THE EXPERTS SAID NO",
+        "WHY FUND A REJECTED PLAN?"
+      ],
+      "source": {
+        "title": "Royal charter court, 1492 (AI plate)",
+        "license": "AI-generated",
+        "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt."
+      },
+      "topics": [
+        "1.2"
+      ],
+      "audio": {
+        "effects": [
+          {
+            "cue": "Why would a king",
+            "kind": "impact",
+            "volume": 0.15
+          }
+        ]
+      }
+    },
+    {
+      "id": "s1b-objectives",
+      "purpose": "context",
+      "narration": {
+        "text": "[beat]By the end: [emphasis]One:[/emphasis] the economic pressures that pushed Iberian rulers toward a western route to Asia. [emphasis]Two:[/emphasis] how the Reconquista and new ships made sustained Atlantic voyages possible. [emphasis]Three:[/emphasis] a ranking of gold, God, and glory, defended with evidence.",
+        "voice": "host"
+      },
+      "animation": {
+        "type": "objectives",
+        "title": "BY THE END OF THIS LESSON"
+      },
+      "visual": {},
+      "transition": {
+        "type": "hard_cut",
+        "duration": 0.2
+      },
+      "min_duration": 14
+    },
+    {
+      "id": "s2a",
+      "purpose": "concept",
+      "narration": {
+        "text": "[solemn]Start with hunger. Not for food. For pepper. After the Crusades, Europe craved Asian spices, silk, and perfumes. But every bale traveled overland through Islamic powers and Italian city-states, and each middleman took a cut. By the time the goods reached Lisbon, prices had multiplied. [beat] A sea route straight to Asia would skip every taxman. Whoever found it would command the richest trade on Earth.",
+        "voice": "host"
+      },
+      "animation": {
+        "type": "map",
+        "title": "The Spice Squeeze",
+        "moves": [
+          {
+            "kind": "dots",
+            "cue": "Islamic powers and Italian city-states",
+            "path": [
+              [
+                0.82,
+                0.45
+              ],
+              [
+                0.68,
+                0.42
+              ],
+              [
+                0.55,
+                0.38
+              ]
+            ],
+            "color": [
+              224,
+              82,
+              82
+            ],
+            "label": "Old route: taxed at every border",
+            "label_pos": [
+              0.72,
+              0.3
+            ]
+          },
+          {
+            "kind": "arrow",
+            "cue": "A sea route straight to Asia",
+            "path": [
+              [
+                0.18,
+                0.55
+              ],
+              [
+                0.32,
+                0.6
+              ],
+              [
+                0.46,
+                0.56
+              ]
+            ],
+            "color": [
+              87,
+              192,
+              224
+            ],
+            "label": "Western shortcut: unknown waters",
+            "label_pos": [
+              0.3,
+              0.7
+            ]
+          }
+        ]
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch1-l3/old-world-map.webp",
+        "still": {
+          "orientation": "landscape",
+          "provider": "hatch-media",
+          "prompt": "An engraved old-world map showing Europe, Africa, and Asia with sea monsters in the ocean margins, no routes drawn, decorative empty cartouches. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
+        }
+      },
+      "transition": {
+        "type": "hard_cut",
+        "duration": 0.2
+      },
+      "min_duration": 24,
+      "beats": [
+        {
+          "type": "label",
+          "cue": "For pepper",
+          "duration": 4,
+          "text": "THE PRIZE: ASIAN SPICES",
+          "x": 0.5,
+          "y": 0.14
+        },
+        {
+          "type": "label",
+          "cue": "each middleman",
+          "duration": 4,
+          "text": "TAXED AT EVERY BORDER",
+          "x": 0.5,
+          "y": 0.84
+        }
+      ],
+      "covers_los": [
+        1
+      ],
+      "production_notes": "Map animation: red dots march the overland route on 'Islamic powers and Italian city-states'; blue arrow sweeps west on 'A sea route straight to Asia'. Fallback: a simpler coastline map of Europe and Africa only.",
+      "on_screen_text": [
+        "THE PRIZE: ASIAN SPICES",
+        "TAXED AT EVERY BORDER"
+      ],
+      "source": {
+        "title": "Old-world map base (AI plate)",
+        "license": "AI-generated",
+        "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt. Routes drawn by the map animation."
+      },
+      "topics": [
+        "1.2"
+      ],
+      "audio": {
+        "effects": [
+          {
+            "cue": "Islamic powers",
+            "kind": "page_turn",
+            "volume": 0.14
+          },
+          {
+            "cue": "A sea route straight",
+            "kind": "chime",
+            "volume": 0.15
+          }
+        ]
+      }
+    },
+    {
+      "id": "s2b",
+      "purpose": "concept",
+      "narration": {
+        "text": "[beat]Portugal moved first. In the mid-1400s, Prince Henry the Navigator sponsored voyage after voyage down the coast of Africa. The tool was the caravel, a small Portuguese ship with lateen sails that could tack against the wind, guided by the astrolabe and compass. [beat] In 1488, Bartolomeu Dias rounded the Cape of Good Hope. A decade later, Vasco da Gama reached India. Portugal built its sea route one careful voyage at a time.",
+        "voice": "host"
+      },
+      "animation": {
+        "type": "zoom",
+        "cx": 0.5,
+        "cy": 0.5,
+        "end_zoom": 1.06,
+        "zoom_duration": 20
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch1-l3/caravel.webp",
+        "still": {
+          "orientation": "landscape",
+          "provider": "hatch-media",
+          "prompt": "A Portuguese caravel under full lateen sail on the open Atlantic off the West African coast, coastline low on the horizon, seabirds. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
+        }
+      },
+      "transition": {
+        "type": "hard_cut",
+        "duration": 0.2
+      },
+      "min_duration": 28,
+      "beats": [
+        {
+          "type": "label",
+          "cue": "The tool was",
+          "duration": 4,
+          "text": "THE CARAVEL",
+          "x": 0.5,
+          "y": 0.84
+        },
+        {
+          "type": "label",
+          "cue": "astrolabe and compass",
+          "duration": 4,
+          "text": "ASTROLABE + COMPASS",
+          "x": 0.5,
+          "y": 0.14
+        }
+      ],
+      "covers_los": [
+        2
+      ],
+      "device": "date_ticker",
+      "device_params": {
+        "dates": [
+          "MID-1400s",
+          "1488 · THE CAPE ROUNDED",
+          "1498 · INDIA REACHED"
+        ]
+      },
+      "production_notes": "Date ticker: on-screen year advances MID-1400s, then 1488, then 1498 as the narration hits each date. The host's closing line hands off to the navigator's log in s2c. Fallback: tight detail of lateen sails and rigging.",
+      "on_screen_text": [
+        "THE CARAVEL",
+        "ASTROLABE + COMPASS"
+      ],
+      "source": {
+        "title": "Portuguese caravel (AI plate)",
+        "license": "AI-generated",
+        "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt. Reused by s2c."
+      },
+      "topics": [
+        "1.2"
+      ],
+      "audio": {
+        "effects": [
+          {
+            "cue": "In 1488",
+            "kind": "tick",
+            "volume": 0.14
+          },
+          {
+            "cue": "Vasco da Gama",
+            "kind": "tick",
+            "volume": 0.14
+          }
+        ]
+      }
+    },
+    {
+      "id": "s2c",
+      "purpose": "evidence",
+      "narration": {
+        "text": "[VOICE:navigator][solemn]The cape lies behind us. The sea road east lies open. What waits beyond, no European knows.",
+        "voice": "host"
+      },
+      "animation": {
+        "type": "auto"
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch1-l3/caravel.webp",
+        "still": {
+          "orientation": "landscape",
+          "provider": "hatch-media",
+          "prompt": "A Portuguese caravel under full lateen sail on the open Atlantic off the West African coast, coastline low on the horizon, seabirds. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
+        }
+      },
+      "transition": {
+        "type": "hard_cut",
+        "duration": 0.2
+      },
+      "min_duration": 10,
+      "beats": [
+        {
+          "type": "label",
+          "cue": "The cape lies behind us",
+          "duration": 8,
+          "text": "A PORTUGUESE CAPTAIN · 1488",
+          "x": 0.5,
+          "y": 0.84
+        }
+      ],
+      "covers_los": [
+        2
+      ],
+      "production_notes": "One voice, sourced on screen. Locked frame; the log plays dry with light reverb (then). The speech is dramatized; no surviving log is quoted. Exam card carries the disclaimer.",
+      "on_screen_text": [
+        "A PORTUGUESE CAPTAIN · 1488"
+      ],
+      "source": {
+        "title": "Portuguese caravel (AI plate, reused from s2b)",
+        "license": "AI-generated",
+        "notes": "Same still spec and output path as s2b; the stills stage skips it because the file already exists."
+      },
+      "topics": [
+        "1.2"
+      ]
+    },
+    {
+      "id": "s2d",
+      "purpose": "concept",
+      "narration": {
+        "text": "[fierce:1.2]Spain came late, because Spain was busy. For nearly eight centuries, Christian kingdoms fought the Reconquista, retaking Iberia from Muslim rule. In 1492, Granada fell. The war was over. Spain stood united under Ferdinand and Isabella, holding a crusading army with nowhere left to march. [beat] That crusading spirit did not retire. It turned outward: strike at Islam's flank, carry the faith across the ocean, win glory doing it.",
+        "voice": "host"
+      },
+      "animation": {
+        "type": "ken_burns",
+        "zoom": 0.06,
+        "pan_x": 0.45,
+        "pan_y": 0.5
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch1-l3/granada-1492.webp",
+        "still": {
+          "orientation": "landscape",
+          "provider": "hatch-media",
+          "prompt": "Crusader banners and Christian knights before the walls of the Alhambra at Granada, 1492, standards raised in triumph, no battle shown. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
+        }
+      },
+      "transition": {
+        "type": "hard_cut",
+        "duration": 0.2
+      },
+      "min_duration": 24,
+      "beats": [
+        {
+          "type": "label",
+          "cue": "Granada fell",
+          "duration": 4,
+          "text": "1492 · GRANADA FALLS",
+          "x": 0.5,
+          "y": 0.14
+        },
+        {
+          "type": "label",
+          "cue": "nowhere left to march",
+          "duration": 5,
+          "text": "A CRUSADING ARMY, NO ENEMY LEFT",
+          "x": 0.5,
+          "y": 0.84
+        }
+      ],
+      "covers_los": [
+        2
+      ],
+      "production_notes": "Lateral track across the banners. Impact SFX on 'Granada fell'. Fallback: a single crusader banner against a fortress wall.",
+      "on_screen_text": [
+        "1492 · GRANADA FALLS",
+        "A CRUSADING ARMY, NO ENEMY LEFT"
+      ],
+      "source": {
+        "title": "Granada, 1492 (AI plate)",
+        "license": "AI-generated",
+        "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt."
+      },
+      "topics": [
+        "1.2"
+      ],
+      "audio": {
+        "effects": [
+          {
+            "cue": "Granada fell",
+            "kind": "impact",
+            "volume": 0.16
+          }
+        ]
+      }
+    },
+    {
+      "id": "s3a",
+      "purpose": "evidence",
+      "narration": {
+        "text": "[beat]Enter Columbus: a Genoese sailor with a wrong map and a gift for persuasion. He argued the Earth was smaller than the experts said, which put Asia within reach. He asked Portugal first. Portugal, confident in its African route, turned him down. [beat] Then he asked Spain. Ferdinand and Isabella had just united the country and were flush with victory. The price was tiny: three small ships. On October 12, 1492, he sighted land and called its people Indians. He believed he had reached Asia.",
+        "voice": "host"
+      },
+      "animation": {
+        "type": "ken_burns",
+        "zoom": 0.06,
+        "pan_x": 0.5,
+        "pan_y": 0.45
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch1-l3/three-ships.webp",
+        "still": {
+          "orientation": "landscape",
+          "provider": "hatch-media",
+          "prompt": "Three small 15th-century ships seen from astern on a vast empty Atlantic, tiny against the ocean, morning light. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
+        }
+      },
+      "transition": {
+        "type": "hard_cut",
+        "duration": 0.2
+      },
+      "min_duration": 30,
+      "beats": [
+        {
+          "type": "stamp",
+          "cue": "the experts said",
+          "duration": 4,
+          "text": "THE EXPERTS SAID NO",
+          "x": 0.5,
+          "y": 0.5
+        },
+        {
+          "type": "label",
+          "cue": "On October 12",
+          "duration": 4,
+          "text": "OCTOBER 12, 1492 · SAN SALVADOR",
+          "x": 0.5,
+          "y": 0.14
+        }
+      ],
+      "covers_los": [
+        1,
+        2
+      ],
+      "production_notes": "Slow zoom-out: the ocean dwarfs the ships. Stamp 1 of 3. Silence on 'He believed he had reached Asia.' Fallback: a single ship's stern and wake.",
+      "on_screen_text": [
+        "THE EXPERTS SAID NO",
+        "OCTOBER 12, 1492 · SAN SALVADOR"
+      ],
+      "source": {
+        "title": "Three ships on the Atlantic (AI plate)",
+        "license": "AI-generated",
+        "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt."
+      },
+      "topics": [
+        "1.2"
+      ],
+      "audio": {
+        "effects": [
+          {
+            "cue": "Enter Columbus",
+            "kind": "whoosh",
+            "volume": 0.13
+          }
+        ]
+      }
+    },
+    {
+      "id": "s3b",
+      "purpose": "evidence",
+      "narration": {
+        "text": "[beat]Portugal protested. Spain had sailed into waters Portugal claimed. So in 1494, Spain and Portugal drew a line through the Atlantic to settle it. The treaty read, in effect:",
+        "voice": "host"
+      },
+      "animation": {
+        "type": "ken_burns",
+        "zoom": 0.06,
+        "pan_x": 0.4,
+        "pan_y": 0.5
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch1-l3/cantino-planisphere.webp",
+        "search": {
+          "provider": "wikimedia",
+          "page_title": "File:Cantino planisphere (1502).jpg",
+          "min_width": 1000
+        }
+      },
+      "transition": {
+        "type": "hard_cut",
+        "duration": 0.2
+      },
+      "min_duration": 12,
+      "beats": [
+        {
+          "type": "label",
+          "cue": "Portugal drew a line",
+          "duration": 4,
+          "text": "1494 · SPAIN AND PORTUGAL DRAW A LINE",
+          "x": 0.5,
+          "y": 0.14
+        }
+      ],
+      "covers_los": [
+        2
+      ],
+      "production_notes": "Drift toward the blue vertical line at the map's left. Caption dates the map honestly as 1502: a Portuguese map showing the 1494 line, not the treaty being signed.",
+      "on_screen_text": [
+        "1494 · SPAIN AND PORTUGAL DRAW A LINE"
+      ],
+      "source": {
+        "title": "Cantino planisphere, 1502",
+        "license": "Public domain",
+        "notes": "Wikimedia Commons; anonymous Portuguese cartographer. Pinned by exact page_title. The blue vertical line marks the Tordesillas division."
+      },
+      "topics": [
+        "1.2"
+      ],
+      "audio": {
+        "effects": [
+          {
+            "cue": "Portugal drew a line",
+            "kind": "page_turn",
+            "volume": 0.14
+          }
+        ]
+      }
+    },
+    {
+      "id": "s3c",
+      "purpose": "evidence",
+      "narration": {
+        "text": "[VOICE:herald][solemn]All lands east of this line: Portugal. All lands west: Spain. What each finds there, each may claim.",
+        "voice": "host"
+      },
+      "animation": {
+        "type": "zoom",
+        "cx": 0.35,
+        "cy": 0.5,
+        "end_zoom": 1.08,
+        "zoom_duration": 8
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch1-l3/cantino-planisphere.webp",
+        "search": {
+          "provider": "wikimedia",
+          "page_title": "File:Cantino planisphere (1502).jpg",
+          "min_width": 1000
+        }
+      },
+      "transition": {
+        "type": "hard_cut",
+        "duration": 0.2
+      },
+      "min_duration": 10,
+      "beats": [
+        {
+          "type": "stamp",
+          "cue": "All lands west",
+          "duration": 5,
+          "text": "EAST: PORTUGAL, WEST: SPAIN",
+          "x": 0.5,
+          "y": 0.5
+        },
+        {
+          "type": "label",
+          "cue": "All lands east",
+          "duration": 6,
+          "text": "TREATY OF TORDESILLAS · 1494",
+          "x": 0.5,
+          "y": 0.84
+        }
+      ],
+      "covers_los": [
+        2
+      ],
+      "production_notes": "Slow push toward the blue line as the herald reads. Stamp 2 of 3. The reading is dramatized from the treaty's terms. Single thud under the stamp.",
+      "on_screen_text": [
+        "EAST: PORTUGAL, WEST: SPAIN",
+        "TREATY OF TORDESILLAS · 1494"
+      ],
+      "source": {
+        "title": "Cantino planisphere, 1502 (reused from s3b)",
+        "license": "Public domain",
+        "notes": "Same search spec and output path as s3b; the stills stage skips it because the file already exists."
+      },
+      "topics": [
+        "1.2"
+      ]
+    },
+    {
+      "id": "s4",
+      "purpose": "concept",
+      "narration": {
+        "text": "So why did they sail? The textbooks answer: gold, God, and glory. [beat] Look at the three. Which one actually paid for the ships? [2s pause] Gold. Follow the money. Portugal spent fifty years mapping Africa for trade, not converts. Columbus pitched the treasures of the East. Spain and Portugal divided the planet by treaty to lock up their claims. [beat] God mattered. The crusading zeal was real, and missionaries sailed with every flag. Glory mattered. Crowns competed, and explorers won titles. But neither launched one ship without the promise of profit. [emphasis]Gold first.[/emphasis] God and glory rode along.",
+        "voice": "host"
+      },
+      "animation": {
+        "type": "auto"
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch1-l3/counting-house.webp",
+        "still": {
+          "orientation": "landscape",
+          "provider": "hatch-media",
+          "prompt": "A counting-house table with three groups of objects: gold coins and ingots, a crucifix, a royal crown, arranged left to right, candlelight. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
+        }
+      },
+      "transition": {
+        "type": "hard_cut",
+        "duration": 0.2
+      },
+      "min_duration": 32,
+      "beats": [
+        {
+          "type": "label",
+          "cue": "gold, God, and glory",
+          "duration": 4,
+          "text": "GOLD, GOD, GLORY",
+          "x": 0.5,
+          "y": 0.14
+        },
+        {
+          "type": "stamp",
+          "cue": "Gold first",
+          "duration": 5,
+          "text": "GOLD FIRST",
+          "x": 0.5,
+          "y": 0.5
+        }
+      ],
+      "covers_los": [
+        3
+      ],
+      "device": "show_ask",
+      "device_params": {
+        "question": "Which one actually paid for the ships?",
+        "hold_sec": 2.0
+      },
+      "production_notes": "Show-and-ask: open on the full table, ask the question aloud, hold the full 2s pause in silence, then the answer. Stamp 3 of 3, the verdict. Single low thud under the stamp. Fallback: gold coins spilling from a chest, tight detail.",
+      "on_screen_text": [
+        "GOLD, GOD, GLORY",
+        "GOLD FIRST"
+      ],
+      "source": {
+        "title": "Counting house: gold, cross, crown (AI plate)",
+        "license": "AI-generated",
+        "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt."
+      },
+      "topics": [
+        "1.2"
+      ],
+      "audio": {
+        "effects": [
+          {
+            "cue": "Gold first",
+            "kind": "impact",
+            "volume": 0.16
+          }
+        ]
+      }
+    },
+    {
+      "id": "s5",
+      "purpose": "close",
+      "narration": {
+        "text": "[pause:10]",
+        "voice": "host"
+      },
+      "animation": {
+        "type": "bullets",
+        "title": "WHY EUROPE SAILED WEST",
+        "bullets": [
+          "GOLD: spice profits drove it; Portugal mapped Africa, Spain bet west",
+          "MEANS: caravel + astrolabe; Reconquista freed a crusading Spain",
+          "DIVISION: Tordesillas 1494, east Portugal, west Spain",
+          "VERDICT: gold first; God and glory rode along"
+        ],
+        "stagger": 0.45,
+        "footer": "Navigator log and herald reading dramatized. AP TOPIC 1.2"
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch1-l3/exam-card-paper.webp",
+        "still": {
+          "orientation": "landscape",
+          "provider": "hatch-media",
+          "prompt": "A plain aged paper texture, warm cream tone, subtle grain, completely empty, no text, no imagery. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
+        }
+      },
+      "transition": {
+        "type": "hard_cut",
+        "duration": 0.2
+      },
+      "min_duration": 10,
+      "covers_los": [
+        1,
+        2,
+        3
+      ],
+      "production_notes": "No narration; the [pause:10] holds the card in silence. Serif/sans grammar: what they said vs what you must know. The exam card maps 1:1 back to the three LOs: the landing.",
+      "source": {
+        "title": "Exam card paper (AI plate)",
+        "license": "AI-generated",
+        "notes": "Pipeline-generated via hatch-media. Card holds 10s in silence; designed to be paused and screenshotted, not absorbed in real time. The script's final fade-out is an editor-side NLE choice."
+      },
+      "topics": [
+        "1.2"
+      ]
+    }
+  ]
+}

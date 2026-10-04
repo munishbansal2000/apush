@@ -1,0 +1,697 @@
+{
+  "lesson_id": "u1-ch3-l9-pueblo-revolt",
+  "schema_version": 1,
+  "course_id": "apush",
+  "unit_id": "u1",
+  "chapter_id": "ch3",
+  "title": "1680: The Revolt That Worked",
+  "description": "The Pueblo Revolt of 1680: the Acoma backstory, the causes, Popé's village-by-village organization, twelve years of freedom, and what it proved about Indigenous agency and the limits of empire.",
+  "essential_question": "Why did the Pueblo Revolt succeed where other resistance failed?",
+  "learning_objectives": [
+    "Identify the causes of the Pueblo Revolt: mission labor, drought, and religious repression.",
+    "Describe how Popé organized the revolt across Pueblo villages.",
+    "Explain what the revolt's success shows about Indigenous agency and the limits of empire."
+  ],
+  "key_terms": [
+    {
+      "term": "Pueblo Revolt",
+      "definition": "The 1680 Pueblo uprising led by Popé that expelled the Spanish from New Mexico for twelve years."
+    },
+    {
+      "term": "Popé",
+      "definition": "A Pueblo religious leader who organized the 1680 revolt village by village."
+    },
+    {
+      "term": "mission system",
+      "definition": "The Spanish colonial institution that combined religious conversion with coerced Indigenous labor."
+    }
+  ],
+  "ap_alignment": {
+    "period": "Period 2",
+    "topics": [
+      "2.5"
+    ],
+    "skills": [
+      "Causation",
+      "Continuity and Change",
+      "Contextualization"
+    ],
+    "themes": [
+      "Culture and Society"
+    ]
+  },
+  "presentation": {
+    "audience": "APUSH students",
+    "branding": "APUSH Unit 1",
+    "captions": false,
+    "tone": "a teacher talking to a smart 16-year-old; plain, spoken, concrete",
+    "visual_style": "engraving-documentary; stamps, serif/sans type grammar"
+  },
+  "transition_scheme": "hard_cut",
+  "tts": {
+    "engine": "edge",
+    "edge_voice": "en-US-GuyNeural",
+    "edge_rate": "+2%",
+    "edge_pitch": "+0Hz",
+    "voices": {
+      "host": {
+        "edge_voice": "en-US-GuyNeural",
+        "edge_rate": "+2%",
+        "edge_pitch": "+0Hz"
+      },
+      "onate": {
+        "edge_voice": "en-US-DavisNeural",
+        "edge_rate": "+0%",
+        "edge_pitch": "-10Hz"
+      },
+      "pope": {
+        "edge_voice": "en-US-TonyNeural",
+        "edge_rate": "-5%",
+        "edge_pitch": "+0Hz"
+      }
+    }
+  },
+  "generation": {
+    "provider": "none"
+  },
+  "still_generation": {
+    "provider": "hatch-media",
+    "search_provider": "wikimedia",
+    "orientation": "landscape",
+    "image_output_format": "webp",
+    "timeout_seconds": 600
+  },
+  "clip_generation": {
+    "provider": "none"
+  },
+  "video": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "transition_seconds": 0.2
+  },
+  "output": "../../build/lesson-videos/u1-ch3-l9-pueblo-revolt.mp4",
+  "scenes": [
+    {
+      "id": "s1",
+      "narration": {
+        "text": "[solemn]In August 1680, in the deserts of New Mexico, the Spanish Empire lost a war to people it had already beaten. The Pueblo peoples rose up, killed hundreds of colonists, burned the churches, and drove the Spanish out completely. [beat] It is the only Native revolt in North American history that threw the colonizers out entirely. And the Pueblos held their country for twelve years.",
+        "voice": "host"
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch3-l9/pueblo-mesa-dawn.webp",
+        "still": {
+          "orientation": "landscape",
+          "provider": "hatch-media",
+          "prompt": "A Pueblo village on a flat-topped desert mesa at dawn: terraced adobe houses, ladders between levels, a few figures, vast desert below, morning light. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
+        }
+      },
+      "animation": {
+        "type": "ken_burns",
+        "zoom": 0.08,
+        "pan_x": 0.5,
+        "pan_y": 0.5
+      },
+      "purpose": "hook",
+      "transition": {
+        "type": "hard_cut",
+        "duration": 0.2
+      },
+      "min_duration": 20,
+      "production_notes": "Paradox hook: the empire lost to people it had already beaten, stated flat before any explanation. Stamp 1 of 3.",
+      "beats": [
+        {
+          "type": "label",
+          "cue": "In August 1680",
+          "text": "AUGUST 1680, NEW MEXICO",
+          "x": 0.5,
+          "y": 0.12,
+          "duration": 5
+        },
+        {
+          "type": "stamp",
+          "cue": "threw the colonizers out entirely",
+          "text": "THE ONLY ONE THAT WORKED",
+          "x": 0.5,
+          "y": 0.5,
+          "duration": 4
+        },
+        {
+          "type": "label",
+          "cue": "twelve years",
+          "text": "12 YEARS",
+          "x": 0.5,
+          "y": 0.82,
+          "duration": 3
+        }
+      ],
+      "device": "hook",
+      "device_params": {
+        "hook_type": "contradiction",
+        "payoff_by_sec": 8.0
+      },
+      "on_screen_text": [
+        "AUGUST 1680, NEW MEXICO",
+        "THE ONLY ONE THAT WORKED",
+        "12 YEARS"
+      ],
+      "source": {
+        "title": "Mesa-top pueblo at dawn (AI plate)",
+        "license": "AI-generated",
+        "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt."
+      },
+      "topics": [
+        "2.5"
+      ]
+    },
+    {
+      "id": "s1b-objectives",
+      "narration": {
+        "text": "[beat]By the end of this lesson: [emphasis]One:[/emphasis] the causes, mission labor, drought, and religious repression. [emphasis]Two:[/emphasis] how Popé organized the revolt village by village. [emphasis]Three:[/emphasis] what the revolt's success proves about Indigenous agency and the limits of empire.",
+        "voice": "host"
+      },
+      "visual": {},
+      "animation": {
+        "type": "objectives",
+        "title": "BY THE END OF THIS LESSON"
+      },
+      "purpose": "context",
+      "transition": {
+        "type": "hard_cut",
+        "duration": 0.2
+      },
+      "min_duration": 14,
+      "production_notes": "Moving objectives slide: the 3 LOs stagger in as the host reads them. The promise the exam card will land."
+    },
+    {
+      "id": "s2a",
+      "narration": {
+        "text": "[solemn]To understand 1680, start eighty years earlier. In [date:1598], the conquistador Juan de Oñate occupied the mesa fortress of Acoma Pueblo. When the Acoma refused to hand over winter supplies, they killed fifteen Spaniards, including Oñate's nephew. [beat] Oñate answered with cannons. More than eight hundred Acoma died. The man who ordered it was Oñate himself, governor of New Mexico.",
+        "voice": "host"
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch3-l9/curtis-acoma-1904.webp",
+        "search": {
+          "provider": "wikimedia",
+          "page_title": "File:Curtis Acoma from the South 1904.jpg",
+          "min_width": 1000
+        }
+      },
+      "animation": {
+        "type": "ken_burns",
+        "zoom": 0.06,
+        "pan_x": 0.45,
+        "pan_y": 0.55
+      },
+      "purpose": "evidence",
+      "transition": {
+        "type": "hard_cut",
+        "duration": 0.2
+      },
+      "min_duration": 22,
+      "production_notes": "Date ticker anchors 1598–99, the first date of the arc. The host names Oñate and his title here, before his voice appears in s2b.",
+      "beats": [
+        {
+          "type": "label",
+          "cue": "Acoma Pueblo",
+          "text": "ACOMA, 1598–99",
+          "x": 0.5,
+          "y": 0.12,
+          "duration": 6
+        },
+        {
+          "type": "label",
+          "cue": "eight hundred Acoma died",
+          "text": "800+ DEAD",
+          "x": 0.5,
+          "y": 0.78,
+          "duration": 4
+        }
+      ],
+      "covers_los": [
+        1
+      ],
+      "on_screen_text": [
+        "ACOMA, 1598–99",
+        "800+ DEAD"
+      ],
+      "source": {
+        "title": "Acoma Pueblo from the south, 1904",
+        "license": "Public domain",
+        "notes": "Wikimedia Commons; Edward S. Curtis, 1904 (pre-1930). Caption dates it honestly as 1904: the mesa fortress, not the 1598 battle."
+      },
+      "topics": [
+        "2.5"
+      ]
+    },
+    {
+      "id": "s2b",
+      "narration": {
+        "text": "[VOICE:onate][solemn]The survivors will stand trial. Every man over twenty-five will lose one foot. The rest will serve the Spanish as slaves.",
+        "voice": "onate"
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch3-l9/curtis-acoma-1904.webp",
+        "search": {
+          "provider": "wikimedia",
+          "page_title": "File:Curtis Acoma from the South 1904.jpg",
+          "min_width": 1000
+        }
+      },
+      "animation": {
+        "type": "auto"
+      },
+      "purpose": "evidence",
+      "transition": {
+        "type": "hard_cut",
+        "duration": 0.2
+      },
+      "min_duration": 14,
+      "production_notes": "Locked frame; the stillness sells the sentence's coldness. Same plate as s2a (stills stage skips it). Stamp 2 of 3, attributed per rule 8.",
+      "beats": [
+        {
+          "type": "label",
+          "cue": "stand trial",
+          "text": "JUAN DE OÑATE, GOVERNOR OF NEW MEXICO",
+          "x": 0.5,
+          "y": 0.82,
+          "duration": 8
+        },
+        {
+          "type": "stamp",
+          "cue": "will lose one foot",
+          "text": "OÑATE'S SENTENCE",
+          "x": 0.5,
+          "y": 0.5,
+          "duration": 4
+        }
+      ],
+      "covers_los": [
+        1
+      ],
+      "on_screen_text": [
+        "JUAN DE OÑATE, GOVERNOR OF NEW MEXICO",
+        "OÑATE'S SENTENCE"
+      ],
+      "source": {
+        "title": "Acoma Pueblo from the south, 1904 (reused from s2a)",
+        "license": "Public domain",
+        "notes": "Same still spec and output path as s2a; the stills stage skips it because the file already exists."
+      },
+      "topics": [
+        "2.5"
+      ]
+    },
+    {
+      "id": "s2c",
+      "narration": {
+        "text": "The terror worked, for a while. For eighty years the Pueblos lived under Spanish rule, and the pressure built. [beat] The missions demanded labor in the fields while priests punished Pueblo ceremonies as witchcraft. Drought starved the villages in the 1670s. Then in [date:1675], the governor arrested forty-seven Pueblo religious leaders. Three were hanged. The rest were whipped. [beat] Among the survivors was a man named [es]Popé[/es].",
+        "voice": "host"
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch3-l9/mission-labor.webp",
+        "still": {
+          "orientation": "landscape",
+          "provider": "hatch-media",
+          "prompt": "A Franciscan adobe mission church in the New Mexico desert: Pueblo workers laboring in fields before it, a friar watching from the church door, morning light, ordinary oppression. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
+        }
+      },
+      "animation": {
+        "type": "ken_burns",
+        "zoom": 0.06,
+        "pan_x": 0.5,
+        "pan_y": 0.5
+      },
+      "purpose": "evidence",
+      "transition": {
+        "type": "hard_cut",
+        "duration": 0.2
+      },
+      "min_duration": 24,
+      "production_notes": "Annotated freeze-frame: on 'punished Pueblo ceremonies as witchcraft,' ink circles mark the church, the workers, the priest. The host reads the mission like a document. Coordinates must be tuned against the actual plate at animatic stage. Popé is named here, before his voice in s3b.",
+      "beats": [
+        {
+          "type": "label",
+          "cue": "demanded labor in the fields",
+          "text": "MISSION LABOR",
+          "x": 0.5,
+          "y": 0.82,
+          "duration": 4
+        },
+        {
+          "type": "label",
+          "cue": "arrested forty-seven",
+          "text": "1675, 47 ARRESTED",
+          "x": 0.5,
+          "y": 0.12,
+          "duration": 5
+        },
+        {
+          "type": "label",
+          "cue": "Popé",
+          "text": "POPÉ",
+          "x": 0.5,
+          "y": 0.7,
+          "duration": 3
+        }
+      ],
+      "device": "annotate",
+      "device_params": {
+        "mode": "telestrator",
+        "annotations": [
+          {
+            "type": "circle",
+            "label": "church",
+            "cue": "punished Pueblo ceremonies",
+            "x": 0.5,
+            "y": 0.35
+          },
+          {
+            "type": "circle",
+            "label": "workers",
+            "cue": "demanded labor in the fields",
+            "x": 0.3,
+            "y": 0.65
+          },
+          {
+            "type": "circle",
+            "label": "priest",
+            "cue": "priests punished",
+            "x": 0.7,
+            "y": 0.45
+          }
+        ]
+      },
+      "covers_los": [
+        1
+      ],
+      "on_screen_text": [
+        "MISSION LABOR",
+        "1675, 47 ARRESTED",
+        "POPÉ"
+      ],
+      "source": {
+        "title": "The mission (AI plate)",
+        "license": "AI-generated",
+        "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt."
+      },
+      "topics": [
+        "2.5"
+      ]
+    },
+    {
+      "id": "s3a",
+      "narration": {
+        "text": "[es]Popé[/es] fled north to Taos Pueblo, beyond the Spanish reach. And there he did what no one had done before: he united the villages. [beat] Look at this cord. Knots tied along its length. What is it for? [2s pause] It is a calendar, and a battle plan. Runners carried cords like this from village to village. Each morning the leaders untied one knot. When the last knot came undone, every village would rise on the same day.",
+        "voice": "host"
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch3-l9/knotted-cord.webp",
+        "still": {
+          "orientation": "landscape",
+          "provider": "hatch-media",
+          "prompt": "Close-up of hands holding a cord with knots tied along its length, desert light, shallow depth of field, the knots sharp and countable. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
+        }
+      },
+      "animation": {
+        "type": "zoom",
+        "cx": 0.5,
+        "cy": 0.5,
+        "end_zoom": 1.06,
+        "zoom_duration": 14
+      },
+      "purpose": "evidence",
+      "transition": {
+        "type": "hard_cut",
+        "duration": 0.2
+      },
+      "min_duration": 22,
+      "production_notes": "Show-and-ask: the cord is shown, the question asked aloud, the full 2s pause held, then the answer. The viewer forms a hypothesis before the film supplies one.",
+      "beats": [
+        {
+          "type": "label",
+          "cue": "untied one knot",
+          "text": "ONE KNOT, ONE DAY",
+          "x": 0.5,
+          "y": 0.82,
+          "duration": 4
+        }
+      ],
+      "device": "show_ask",
+      "device_params": {
+        "question": "What is it for?",
+        "hold_sec": 2.0
+      },
+      "covers_los": [
+        2
+      ],
+      "on_screen_text": [
+        "ONE KNOT, ONE DAY"
+      ],
+      "source": {
+        "title": "The knotted cord (AI plate)",
+        "license": "AI-generated",
+        "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt."
+      },
+      "topics": [
+        "2.5"
+      ]
+    },
+    {
+      "id": "s3b",
+      "narration": {
+        "text": "[VOICE:pope][fierce]Drive out the Spanish. Burn their churches. Never speak the names of their gods again. Return to the old ways, and the old gods will return to us.",
+        "voice": "pope"
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch3-l9/taos-dusk.webp",
+        "still": {
+          "orientation": "landscape",
+          "provider": "hatch-media",
+          "prompt": "A Pueblo village at dusk, the northernmost settlement: adobe terraces, kiva ladders silhouetted, last light, refuge and plotting. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
+        }
+      },
+      "animation": {
+        "type": "auto"
+      },
+      "purpose": "evidence",
+      "transition": {
+        "type": "hard_cut",
+        "duration": 0.2
+      },
+      "min_duration": 14,
+      "production_notes": "Locked frame. The voice carries it. Half-beat pause before the Popé voice.",
+      "beats": [
+        {
+          "type": "label",
+          "cue": "Drive out the Spanish",
+          "text": "POPÉ, TEWA RELIGIOUS LEADER",
+          "x": 0.5,
+          "y": 0.82,
+          "duration": 8
+        }
+      ],
+      "covers_los": [
+        2
+      ],
+      "on_screen_text": [
+        "POPÉ, TEWA RELIGIOUS LEADER"
+      ],
+      "source": {
+        "title": "Taos at dusk (AI plate)",
+        "license": "AI-generated",
+        "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt."
+      },
+      "topics": [
+        "2.5"
+      ]
+    },
+    {
+      "id": "s4a",
+      "narration": {
+        "text": "[fierce]On August 10, [date:1680], the knots ran out. Across New Mexico, Pueblo warriors attacked at once. They killed more than three hundred Spaniards, including twenty-one of the thirty-three Franciscan priests. They burned the churches and besieged Santa Fe. [beat] The survivors fled south to El Paso. New Mexico belonged to the Pueblos again.",
+        "voice": "host"
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch3-l9/santafe-1680.webp",
+        "still": {
+          "orientation": "landscape",
+          "provider": "hatch-media",
+          "prompt": "An adobe church burning in a desert town at dawn: a column of smoke, Pueblo warriors in the plaza, Spanish settlers fleeing, the cost of the uprising visible. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
+        }
+      },
+      "animation": {
+        "type": "ken_burns",
+        "zoom": 0.08,
+        "pan_x": 0.5,
+        "pan_y": 0.45
+      },
+      "purpose": "evidence",
+      "transition": {
+        "type": "hard_cut",
+        "duration": 0.2
+      },
+      "min_duration": 22,
+      "production_notes": "The one burst of velocity in the lesson, earned by contrast. Drums urgent, then cut on 'belonged to the Pueblos again.'",
+      "beats": [
+        {
+          "type": "label",
+          "cue": "three hundred Spaniards",
+          "text": "300+ SPANIARDS KILLED",
+          "x": 0.5,
+          "y": 0.12,
+          "duration": 4
+        },
+        {
+          "type": "label",
+          "cue": "twenty-one of the thirty-three",
+          "text": "21 OF 33 PRIESTS",
+          "x": 0.5,
+          "y": 0.22,
+          "duration": 4
+        }
+      ],
+      "covers_los": [
+        3
+      ],
+      "on_screen_text": [
+        "300+ SPANIARDS KILLED",
+        "21 OF 33 PRIESTS"
+      ],
+      "source": {
+        "title": "Santa Fe under attack (AI plate)",
+        "license": "AI-generated",
+        "notes": "Pipeline-generated via hatch-media; prompt recorded in visual.still.prompt."
+      },
+      "topics": [
+        "2.5"
+      ]
+    },
+    {
+      "id": "s4b",
+      "narration": {
+        "text": "[solemn]For twelve years, the Pueblos governed themselves. They tore down the missions and danced the old dances in the open. [beat] When the Spanish returned in [date:1692], they came back changed. They appointed a defender for Pueblo rights, granted Pueblo families land, and stopped trying to crush the old religion. [beat] The revolt had worked. It proved that Indigenous people could defeat a European empire, and it forced that empire to rule differently.",
+        "voice": "host"
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch3-l9/san-estevan-mission.webp",
+        "search": {
+          "provider": "wikimedia",
+          "page_title": "File:Feast day at San Estevan del Rey Mission, Acoma Pueblo, New Mexico LCCN97518884.jpg",
+          "min_width": 1000
+        }
+      },
+      "animation": {
+        "type": "ken_burns",
+        "zoom": 0.04,
+        "pan_x": 0.5,
+        "pan_y": 0.5
+      },
+      "purpose": "evidence",
+      "transition": {
+        "type": "hard_cut",
+        "duration": 0.2
+      },
+      "min_duration": 24,
+      "production_notes": "Very slow pull-back; the lesson exhales. Stamp 3 of 3: the stamped verdict. Silence under the stamp, single low thud.",
+      "beats": [
+        {
+          "type": "label",
+          "cue": "For twelve years",
+          "text": "12 YEARS OF FREEDOM",
+          "x": 0.5,
+          "y": 0.78,
+          "duration": 4
+        },
+        {
+          "type": "label",
+          "cue": "1692",
+          "text": "1692, THE RETURN",
+          "x": 0.5,
+          "y": 0.12,
+          "duration": 5
+        },
+        {
+          "type": "stamp",
+          "cue": "The revolt had worked",
+          "text": "THE REVOLT THAT WORKED",
+          "x": 0.5,
+          "y": 0.5,
+          "duration": 4
+        }
+      ],
+      "device": "date_ticker",
+      "device_params": {
+        "dates": [
+          "1598–99",
+          "1675",
+          "1680",
+          "1692"
+        ]
+      },
+      "covers_los": [
+        3
+      ],
+      "on_screen_text": [
+        "12 YEARS OF FREEDOM",
+        "1692, THE RETURN",
+        "THE REVOLT THAT WORKED"
+      ],
+      "source": {
+        "title": "San Estevan del Rey Mission, Acoma, early 1900s",
+        "license": "Public domain",
+        "notes": "Wikimedia Commons; Library of Congress. Caption dates it honestly: a mission church standing in Pueblo country, the accommodation made stone."
+      },
+      "topics": [
+        "2.5"
+      ]
+    },
+    {
+      "id": "s5",
+      "narration": {
+        "text": "[pause:10]",
+        "voice": "host"
+      },
+      "visual": {
+        "base_image": "assets/images/u1-ch3-l9/exam-card-paper.webp",
+        "still": {
+          "orientation": "landscape",
+          "provider": "hatch-media",
+          "prompt": "A plain aged paper texture, warm cream tone, subtle grain, completely empty, no text, no imagery. in the style of a 16th-century copper engraving in the manner of Theodor de Bry: fine cross-hatching, allegorical composition, monochrome ink on aged paper. Stylized, never photorealistic. Leave all text areas blank: no words, no letters, no captions."
+        }
+      },
+      "animation": {
+        "type": "bullets",
+        "title": "1680: THE REVOLT THAT WORKED",
+        "bullets": [
+          "ACOMA 1598–99: Oñate's terror, 800+ killed, survivors maimed and enslaved",
+          "CAUSES: mission labor, 1670s drought, religious repression, 47 arrested 1675",
+          "POPÉ'S PLAN: knotted cords village to village, August 10, 1680",
+          "RESULT: 300+ Spaniards dead, 12 years free, 1692 return and accommodation"
+        ],
+        "footer": "Oñate's sentence and Popé's speech dramatized from Spanish records and Pueblo accounts. AP TOPIC 2.5",
+        "stagger": 0.45
+      },
+      "purpose": "close",
+      "transition": {
+        "type": "hard_cut",
+        "duration": 0.2
+      },
+      "min_duration": 10,
+      "production_notes": "No narration; the [pause:10] holds the card in silence. The exam card maps 1:1 back to the three LOs: the landing.",
+      "covers_los": [
+        1,
+        2,
+        3
+      ],
+      "source": {
+        "title": "Exam card paper (AI plate)",
+        "license": "AI-generated",
+        "notes": "Pipeline-generated via hatch-media. Card holds 10s in silence; designed to be paused and screenshotted."
+      },
+      "topics": [
+        "2.5"
+      ]
+    }
+  ]
+}
