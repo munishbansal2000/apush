@@ -70,8 +70,17 @@ def build_clip(motion, scene: dict, duration: float, manifest_path: Path, repo_r
     else:
         raise PipelineError(f"scene {scene['id']} still has unsupported animation type {kind}")
     if scene.get("device"):
-        clip = motion.device_overlay(
-            clip, scene["device"], scene.get("device_params", {}), duration)
+        if hasattr(motion, "device_overlay"):
+            clip = motion.device_overlay(
+                clip, scene["device"], scene.get("device_params", {}), duration)
+        else:
+            # The device registry (schema) and cue timing are in place, but
+            # the motion renderer does not implement device_overlay yet.
+            # Degrade loudly instead of crashing: the scene renders without
+            # its creative-device treatment until the implementation lands.
+            print(f"[render] scene {scene['id']}: device "
+                  f"'{scene['device']}' declared but motion.device_overlay "
+                  f"is not implemented; rendering without it", flush=True)
     if scene.get("beats"):
         clip = motion.beat_overlay(clip, scene["beats"], duration)
     return clip
