@@ -20,7 +20,7 @@ CLIP_GEN_KEYS = {"provider", "cookie", "browser", "lib_dir", "timeout_seconds", 
 STILL_GEN_KEYS = {"provider", "fallback_provider", "search_provider", "media_bin", "image_search_bin", "command", "timeout_seconds", "orientation", "image_output_format"}
 STILL_KEYS = {"prompt", "provider", "fallback_provider", "seed", "edit_of", "edit_prompt", "orientation", "license_note"}
 SEARCH_KEYS = {"query", "provider", "pick", "min_width", "license"}
-SCENE_KEYS = {"id", "purpose", "narration", "visual", "animation", "beats", "audio", "transition", "min_duration", "topics", "on_screen_text", "source", "production_notes"}
+SCENE_KEYS = {"id", "purpose", "narration", "visual", "animation", "beats", "audio", "transition", "min_duration", "topics", "on_screen_text", "source", "production_notes", "device", "device_params"}
 NARRATION_KEYS = {"text", "voice", "reference_audio", "reference_text", "settings"}
 VISUAL_KEYS = {"base_image", "secondary_image", "clip", "layers", "still", "search"}
 ALIGNMENT_KEYS = {"period", "topics", "themes", "skills"}
@@ -417,6 +417,17 @@ def validate_manifest(data: Any, path: Path, repo_root: Path,
         if scene["id"] in ids:
             raise PipelineError(f"duplicate scene id: {scene['id']}")
         ids.add(scene["id"])
+        # device: optional creative-device declaration (metadata-first; the
+        # renderer and device gates read it once the device registry lands).
+        # Format-checked here; registry membership is validated later.
+        if "device" in scene:
+            _text(scene["device"], f"{where}.device")
+            if not re.fullmatch(r"[a-z0-9][a-z0-9_-]{0,47}", scene["device"]):
+                raise PipelineError(f"{where}.device must be a lowercase registry id")
+        if "device_params" in scene:
+            _obj(scene["device_params"], f"{where}.device_params")
+            if "device" not in scene:
+                raise PipelineError(f"{where}.device_params requires device")
         narration = _obj(scene["narration"], f"{where}.narration")
         _keys(narration, NARRATION_KEYS, f"{where}.narration")
         _required(narration, {"text"}, f"{where}.narration")
@@ -523,11 +534,19 @@ def validate_manifest(data: Any, path: Path, repo_root: Path,
                     _text(beat["style"], f"{beat_where}.style")
         if "audio" in scene:
             audio = _obj(scene["audio"], f"{where}.audio")
-            _keys(audio, {"ambience", "ambience_volume", "effects"}, f"{where}.audio")
+            _keys(audio, {"ambience", "ambience_volume", "effects", "foley", "foley_gain", "foley_fade_sec"}, f"{where}.audio")
             if "ambience" in audio:
                 _text(audio["ambience"], f"{where}.audio.ambience")
             if "ambience_volume" in audio:
                 _number(audio["ambience_volume"], f"{where}.audio.ambience_volume", 0, 1)
+            # foley: continuous scene-typed ambience bed (metadata-first;
+            # mixed under narration like the music bed once the audio step lands)
+            if "foley" in audio:
+                _text(audio["foley"], f"{where}.audio.foley")
+            if "foley_gain" in audio:
+                _number(audio["foley_gain"], f"{where}.audio.foley_gain", 0, 1)
+            if "foley_fade_sec" in audio:
+                _number(audio["foley_fade_sec"], f"{where}.audio.foley_fade_sec", 0, 10)
             effects = audio.get("effects", [])
             if not isinstance(effects, list):
                 raise PipelineError(f"{where}.audio.effects must be an array")
