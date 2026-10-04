@@ -17,6 +17,7 @@ from typing import Any, Iterator
 
 from .common import PipelineError, read_json, resolve_local
 from .direction import parse as parse_direction
+from .direction import _TAG_RE as _DIRECTION_TAG_RE
 
 
 # ---------------------------------------------------------------------------
@@ -134,6 +135,9 @@ def tts_text(manifest: dict) -> None:
         text = scene.get("narration", {}).get("text", "")
         if not isinstance(text, str):
             continue
+        # Check the spoken text: strip direction tags ([VOICE:], [pause:N],
+        # [emphasis], ...) first, since they never reach the TTS engine.
+        text = _DIRECTION_TAG_RE.sub("", text)
         for char, hint in _FORBIDDEN_TTS_CHARS.items():
             if char in text:
                 raise PipelineError(
@@ -186,17 +190,24 @@ def text_quantity(manifest: dict) -> None:
 # Matches the catalog's own PD conventions: the builder's default note is
 # "PD: pre-1930 / CC0 (verified at download)", and sourced notes use
 # "pre-1930 publication" for pre-1930 works.
-_LICENSE_RE = re.compile(r"public domain|CC0|pre-1930", re.IGNORECASE)
+_LICENSE_RE = re.compile(r"public domain|CC0|pre-1930|AI-generated", re.IGNORECASE)
 
 
 def license_gate(manifest: dict, manifest_path: Path, repo_root: Path) -> None:
     """Every base_image must resolve to a CATALOG.json entry that is on disk
-    and licensed public domain / CC0."""
+    and licensed public domain / CC0, or be an AI-generated original.
+
+    Scenes carrying a still/search spec are skipped: their images are produced
+    by the stills stage (which catalogs them), so the gate verifies them on
+    the next run instead of failing before they exist."""
     lid = _lid(manifest)
     entries = _catalog_entries(str(repo_root))
     for scene in _scenes(manifest):
         sid = scene.get("id", "<unknown scene>")
-        base = (scene.get("visual", {}) or {}).get("base_image")
+        visual = scene.get("visual", {}) or {}
+        if visual.get("still") or visual.get("search"):
+            continue
+        base = visual.get("base_image")
         if not base:
             continue
         resolved = resolve_local(base, manifest_path.parent, repo_root)
@@ -294,6 +305,17 @@ def variety(manifest: dict) -> None:
         raise PipelineError(
             f"{lid}: only {len(types)} distinct animation type(s) {sorted(types)}; "
             f"a lesson needs at least 3 for visual variety")
+    declared = manifest.get("transition_scheme")
+    if declared is not None:
+        # A lesson may declare a uniform transition scheme (e.g. "hard_cut")
+        # as a deliberate directorial choice; the declaration must be true.
+        bad = [str(s.get("id")) for s in scenes
+               if str((s.get("transition", {}) or {}).get("type", "none")) != declared]
+        if bad:
+            raise PipelineError(
+                f"{lid}: transition_scheme={declared!r} declared but scenes "
+                f"{bad} use a different transition")
+        return
     run_type: str | None = None
     run_length = 0
     for scene in scenes:

@@ -6,7 +6,7 @@ from typing import Any
 
 from .common import atomic_json, canonical_hash, read_json
 
-STAGES = ("validated", "planned", "clips", "tts", "rendered", "complete")
+STAGES = ("validated", "stills", "planned", "clips", "tts", "rendered", "complete")
 
 
 class Checkpoint:

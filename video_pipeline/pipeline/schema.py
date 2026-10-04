@@ -12,14 +12,17 @@ ANIMATION_TYPES = {
     "wipe", "ai_clip", "parallax", "source_analysis", "diagram",
 }
 
-ROOT_KEYS = {"schema_version", "course_id", "unit_id", "chapter_id", "lesson_id", "title", "description", "essential_question", "learning_objectives", "key_terms", "ap_alignment", "presentation", "output", "tts", "generation", "clip_generation", "video", "scenes"}
+ROOT_KEYS = {"schema_version", "course_id", "unit_id", "chapter_id", "lesson_id", "title", "description", "essential_question", "learning_objectives", "key_terms", "ap_alignment", "presentation", "output", "tts", "generation", "clip_generation", "still_generation", "video", "scenes", "transition_scheme"}
 VIDEO_KEYS = {"width", "height", "fps", "transition_seconds"}
 TTS_KEYS = {"engine", "server_url", "reference_audio", "reference_text", "timeout_seconds", "settings", "edge_voice", "edge_rate", "edge_pitch", "voices"}
 GEN_KEYS = {"provider", "model", "endpoint", "api_key_env", "timeout_seconds"}
 CLIP_GEN_KEYS = {"provider", "cookie", "browser", "lib_dir", "timeout_seconds", "keep_open_on_failure", "meta_refusal_retries"}
+STILL_GEN_KEYS = {"provider", "fallback_provider", "search_provider", "media_bin", "image_search_bin", "command", "timeout_seconds", "orientation", "image_output_format"}
+STILL_KEYS = {"prompt", "provider", "fallback_provider", "seed", "edit_of", "edit_prompt", "orientation", "license_note"}
+SEARCH_KEYS = {"query", "provider", "pick", "min_width", "license"}
 SCENE_KEYS = {"id", "purpose", "narration", "visual", "animation", "beats", "audio", "transition", "min_duration", "topics", "on_screen_text", "source", "production_notes"}
 NARRATION_KEYS = {"text", "voice", "reference_audio", "reference_text", "settings"}
-VISUAL_KEYS = {"base_image", "secondary_image", "clip", "layers"}
+VISUAL_KEYS = {"base_image", "secondary_image", "clip", "layers", "still", "search"}
 ALIGNMENT_KEYS = {"period", "topics", "themes", "skills"}
 PRESENTATION_KEYS = {"audience", "tone", "visual_style", "captions", "music", "branding"}
 SOURCE_KEYS = {"title", "creator", "date", "license", "url", "notes"}
@@ -379,6 +382,24 @@ def validate_manifest(data: Any, path: Path, repo_root: Path,
         if isinstance(retries, bool) or not isinstance(retries, int) or not 0 <= retries <= 3:
             raise PipelineError("manifest.clip_generation.meta_refusal_retries must be an integer from 0 to 3")
 
+    still_generation = _obj(root.get("still_generation", {"provider": "none"}), "manifest.still_generation")
+    _keys(still_generation, STILL_GEN_KEYS, "manifest.still_generation")
+    if still_generation.get("provider", "none") not in {"none", "hatch-media", "command"}:
+        raise PipelineError("manifest.still_generation.provider must be none, hatch-media, or command")
+    if still_generation.get("search_provider", "wikimedia") not in {"wikimedia", "image-search"}:
+        raise PipelineError("manifest.still_generation.search_provider must be wikimedia or image-search")
+    if still_generation.get("fallback_provider", "none") not in {"none", "hatch-media", "command"}:
+        raise PipelineError("manifest.still_generation.fallback_provider must be none, hatch-media, or command")
+    for field in ("media_bin", "image_search_bin", "command"):
+        if field in still_generation:
+            _text(still_generation[field], f"manifest.still_generation.{field}")
+    if "timeout_seconds" in still_generation:
+        _number(still_generation["timeout_seconds"], "manifest.still_generation.timeout_seconds", 30, 3600)
+    if still_generation.get("orientation", "landscape") not in {"landscape", "square", "vertical"}:
+        raise PipelineError("manifest.still_generation.orientation must be landscape, square, or vertical")
+    if still_generation.get("image_output_format", "webp") not in {"webp", "png", "jpg", "jpeg"}:
+        raise PipelineError("manifest.still_generation.image_output_format must be webp, png, jpg, or jpeg")
+
     scenes = root["scenes"]
     if not isinstance(scenes, list) or not scenes:
         raise PipelineError("manifest.scenes must be a non-empty array")
@@ -410,6 +431,45 @@ def validate_manifest(data: Any, path: Path, repo_root: Path,
         for field in ("base_image", "secondary_image", "clip"):
             if field in visual:
                 _text(visual[field], f"{where}.visual.{field}")
+        if "still" in visual and "search" in visual:
+            raise PipelineError(f"{where}.visual: still and search are mutually exclusive")
+        if "still" in visual:
+            still = _obj(visual["still"], f"{where}.visual.still")
+            _keys(still, STILL_KEYS, f"{where}.visual.still")
+            edit_of, edit_prompt = still.get("edit_of"), still.get("edit_prompt")
+            if bool(edit_of) != bool(edit_prompt):
+                raise PipelineError(
+                    f"{where}.visual.still: edit_of and edit_prompt must be used together (edit variant)")
+            if not still.get("prompt") and not edit_of:
+                raise PipelineError(f"{where}.visual.still: prompt is required (or edit_of + edit_prompt)")
+            for field in ("prompt", "edit_of", "edit_prompt"):
+                if field in still:
+                    _text(still[field], f"{where}.visual.still.{field}")
+            if still.get("provider", "hatch-media") not in {"hatch-media", "command"}:
+                raise PipelineError(f"{where}.visual.still.provider must be hatch-media or command")
+            if still.get("fallback_provider", "none") not in {"none", "hatch-media", "command"}:
+                raise PipelineError(f"{where}.visual.still.fallback_provider must be none, hatch-media, or command")
+            if "seed" in still:
+                seed = still["seed"]
+                if isinstance(seed, bool) or not isinstance(seed, int) or seed < 0:
+                    raise PipelineError(f"{where}.visual.still.seed must be a non-negative integer")
+            if still.get("orientation", "landscape") not in {"landscape", "square", "vertical"}:
+                raise PipelineError(f"{where}.visual.still.orientation must be landscape, square, or vertical")
+        if "search" in visual:
+            search = _obj(visual["search"], f"{where}.visual.search")
+            _keys(search, SEARCH_KEYS, f"{where}.visual.search")
+            _required(search, {"query"}, f"{where}.visual.search")
+            _text(search["query"], f"{where}.visual.search.query", 3)
+            if search.get("provider", "wikimedia") not in {"wikimedia", "image-search"}:
+                raise PipelineError(f"{where}.visual.search.provider must be wikimedia or image-search")
+            if "pick" in search:
+                pick = search["pick"]
+                if isinstance(pick, bool) or not isinstance(pick, int) or pick < 0:
+                    raise PipelineError(f"{where}.visual.search.pick must be a non-negative integer")
+            if "min_width" in search:
+                _number(search["min_width"], f"{where}.visual.search.min_width", 100, 8000)
+            if search.get("license", "public-domain") != "public-domain":
+                raise PipelineError(f"{where}.visual.search.license must be public-domain")
         layers = visual.get("layers", [])
         if not isinstance(layers, list):
             raise PipelineError(f"{where}.visual.layers must be an array")
@@ -497,7 +557,12 @@ def validate_manifest(data: Any, path: Path, repo_root: Path,
         if require_files:
             refs = ([tts["reference_audio"], tts["reference_text"]]
                     if engine == "fish" else [])
-            refs += [visual[key] for key in ("base_image", "secondary_image") if key in visual]
+            # A base_image declared with a still/search spec is produced by the
+            # stills stage, which runs right after validation -- exempt it here.
+            visual_keys = ["secondary_image"]
+            if "base_image" in visual and not (visual.get("still") or visual.get("search")):
+                visual_keys.insert(0, "base_image")
+            refs += [visual[key] for key in visual_keys if key in visual]
             if "clip" in visual and not (kind == "ai_clip" and allow_missing_clips):
                 refs.append(visual["clip"])
             refs += [layer["image"] for layer in layers]

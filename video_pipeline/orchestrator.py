@@ -20,6 +20,7 @@ from pipeline.layout import validate_text_layout
 from pipeline.render import render_video
 from pipeline.schema import validate_manifest
 from pipeline.state import Checkpoint, STAGES
+from pipeline.stills import generate_stills
 from pipeline.tts import health, render_scene
 from pipeline.validate import validate_output
 
@@ -122,6 +123,25 @@ def process(path: Path, args, source_override: dict | None = None) -> None:
     resolved = copy.deepcopy(manifest)
     plan_path = work / "resolved_manifest.json"
     plan_fp = canonical_hash({"manifest": manifest, "generation": manifest.get("generation", {})})
+
+    stills_fp = canonical_hash({
+        "scenes": [{"visual": scene["visual"]} for scene in resolved["scenes"]],
+        "provider": args.still_gen,
+        "search_provider": args.still_search,
+        "config": resolved.get("still_generation", {}),
+    })
+    if "stills" in selected:
+        if not args.force and state.current("stills", stills_fp):
+            print("[stills] checkpoint current -- skipped")
+        else:
+            produced = generate_stills(
+                resolved, path, REPO_ROOT, args.still_gen, args.still_search,
+                force=args.force, dry_run=args.dry_run)
+            if not args.dry_run:
+                state.record("stills", stills_fp, [str(item) for item in produced])
+        if args.only == "stills":
+            return
+
     if "planned" in selected:
         if not args.force and state.current("planned", plan_fp) and plan_path.exists():
             resolved = read_json(plan_path)
@@ -261,6 +281,10 @@ def parser() -> argparse.ArgumentParser:
     ap.add_argument("--edge-pitch", default="+0Hz")
     ap.add_argument("--video-gen", choices=("manifest", "none", "ltx", "meta-ui"),
                     default="manifest", help="override the ai_clip generation backend")
+    ap.add_argument("--still-gen", choices=("manifest", "none", "hatch-media", "command"),
+                    default="manifest", help="override the still-image generation backend")
+    ap.add_argument("--still-search", choices=("manifest", "wikimedia", "image-search"),
+                    default="manifest", help="override the archival image search backend")
     ap.add_argument("--ltx-python", default=sys.executable,
                     help="Python executable with torch/diffusers for local LTX")
     return ap

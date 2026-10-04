@@ -549,7 +549,7 @@
             {
               "lesson_id": "u1-ch3-l8-valladolid-debate",
               "title": "Who Had the Right?",
-              "description": "The 1550 Valladolid debate: Sepúlveda's case for conquest, Las Casas's defense of Indigenous peoples, and the birth of the language of human rights.",
+              "description": "The 1550 Valladolid debate, rebuilt image-first: a de Bry atrocity engraving forces the trial, Sepúlveda steelmans his case over the Potosí mines, Las Casas answers from his writing desk, and the verdict is a language, not a victory.",
               "essential_question": "Could the conquest of the Americas be morally justified?",
               "learning_objectives": [
                 "Summarize Sepúlveda's argument from natural slavery and its Aristotelian roots.",
@@ -586,11 +586,11 @@
                   "id": "l8-heroes-or-criminals",
                   "purpose": "hook",
                   "narration": {
-                    "text": "[solemn]Were the [es]conquistadors[/es] heroes or criminals? In 1550, Spain did something no empire had ever done: it put itself on trial. [beat] Before the emperor's council at [es]Valladolid[/es], two theologians debated whether Spain's wars in the Americas were just. The question on the table was not just about the past. It was about [emphasis]who had the right to rule[/emphasis].",
+                    "text": "[solemn]Look at this engraving. [beat] Made to illustrate Bartolomé de Las Casas's account of the conquest, it shows Spanish cruelty in the Indies. Villages burned. Captives in chains. [beat] Images like this crossed the Atlantic and landed on the conscience of an empire. In [date:1550], Spain did what no empire had ever done. [emphasis]It put itself on trial.[/emphasis]",
                     "voice": "host"
                   },
                   "visual": {
-                    "base_image": "../../assets/images/u1/original-u1-lascasas-portrait-01.jpg"
+                    "base_image": "../../assets/images/u1/barrons-2027-ch03-03.jpg"
                   },
                   "animation": {
                     "type": "ken_burns",
@@ -599,27 +599,19 @@
                   "beats": [
                     {
                       "type": "label",
-                      "cue": "In 1550",
+                      "cue": "1550",
                       "duration": 3.0,
                       "text": "1550: VALLADOLID",
                       "x": 0.5,
-                      "y": 0.18
+                      "y": 0.16
                     },
                     {
                       "type": "question",
-                      "cue": "heroes or criminals",
+                      "cue": "put itself on trial",
                       "duration": 3.4,
-                      "text": "Heroes or criminals?",
+                      "text": "Who had the right to rule?",
                       "x": 0.5,
-                      "y": 0.8
-                    },
-                    {
-                      "type": "host",
-                      "cue": "who had the",
-                      "duration": 3.2,
-                      "text": "Who had the right?",
-                      "x": 0.5,
-                      "y": 0.86
+                      "y": 0.82
                     },
                     {
                       "type": "progress",
@@ -631,14 +623,9 @@
                   "audio": {
                     "effects": [
                       {
-                        "cue": "In 1550",
+                        "cue": "put itself on trial",
                         "kind": "impact",
-                        "volume": 0.2
-                      },
-                      {
-                        "cue": "heroes or criminals",
-                        "kind": "chime",
-                        "volume": 0.15
+                        "volume": 0.16
                       }
                     ]
                   },
@@ -653,34 +640,34 @@
                   "on_screen_text": [
                     "1550",
                     "Valladolid",
-                    "The trial"
+                    "de Bry engraving"
                   ],
                   "source": {
-                    "title": "Portrait of Bartolomé de Las Casas",
+                    "title": "Theodor de Bry engraving, 1598",
                     "license": "Public domain",
-                    "notes": "Later portrait tradition; use to represent the debate, not as a photographic likeness."
+                    "notes": "Illustrating Las Casas's Destruction of the Indies; the images that forced the debate."
                   },
-                  "production_notes": "Cold open on the paradox; keep the portrait dim until the trial line lands."
+                  "production_notes": "Host opens ON the image: 'Look at this engraving' must land as the camera pushes in."
                 },
                 {
                   "id": "l8-sepulveda-case",
                   "purpose": "concept",
                   "narration": {
-                    "text": "[fierce]Aristotle teaches that some peoples are slaves by nature, and that nature intends them to be ruled. War against such peoples is just when it brings them to Christianity and to civil order. [beat] Their rites are abominable. Their minds are unfit for self-rule. Conquest, therefore, [emphasis]needs no apology[/emphasis]. It is mercy in the shape of force.",
+                    "text": "[fierce]I never crossed the Atlantic, and I did not need to. [beat] Aristotle settled this two thousand years ago: [emphasis]some peoples are slaves by nature.[/emphasis] [beat] War against such peoples is just. It brings them Christianity, law, and order. [beat] Look at the mines. [slow]This is not cruelty. This is nature, doing its work.[/slow]",
                     "voice": "sepulveda"
                   },
                   "visual": {
-                    "base_image": "../../assets/images/u1/original-u1-encomienda-07.jpg"
+                    "base_image": "../../assets/images/u1/gap-g-v02-1-potosi-mitayos-debry.jpg"
                   },
                   "animation": {
                     "type": "bullets",
                     "title": "Sepúlveda's Case",
                     "bullets": [
-                      "Some peoples are slaves by nature (Aristotle)",
-                      "War is just when it brings Christianity and civil order",
-                      "Conquest needs no apology"
+                      "Natural slaves (Aristotle)",
+                      "Just war brings Christianity and order",
+                      "No apology owed"
                     ],
-                    "footer": "Sepulveda: cold, precise, logical",
+                    "footer": "Steelmanned: his strongest form",
                     "stagger": 0.8
                   },
                   "beats": [
@@ -702,7 +689,7 @@
                     },
                     {
                       "type": "question",
-                      "cue": "mercy in the shape of force",
+                      "cue": "nature, doing its work",
                       "duration": 3.4,
                       "text": "Mercy, or excuse?",
                       "x": 0.5,
@@ -723,7 +710,7 @@
                         "volume": 0.14
                       },
                       {
-                        "cue": "needs no apology",
+                        "cue": "nature, doing its work",
                         "kind": "impact",
                         "volume": 0.16
                       }
@@ -743,53 +730,58 @@
                     "Just war"
                   ],
                   "source": {
-                    "title": "Historical depiction of the encomienda system",
+                    "title": "Theodor de Bry, Indigenous mine labor at Potosí, 1590",
                     "license": "Public domain",
-                    "notes": "The system under debate; present Sepúlveda's position fairly before the rebuttal."
+                    "notes": "The human cost Sepúlveda's argument justified; his case at full strength before the rebuttal."
                   },
-                  "production_notes": "First-person debate voice. Sepulveda is cold and precise; let the logic sound airtight, then let Las Casas break it."
+                  "production_notes": "Sepúlveda cold and precise. 'Look at the mines' lands on the engraving; let the horror sit."
                 },
                 {
                   "id": "l8-lascasas-answers",
                   "purpose": "evidence",
                   "narration": {
-                    "text": "[fierce]You call them natural slaves. I have lived among these peoples, and I tell you they are rational, capable of faith, and masters of their own lands by natural law. [beat] Your Aristotle never crossed the ocean. [pause:1] And I confess my own shame before you. I once urged African slaves to spare the Indians, a counsel I have [emphasis]spent my life denouncing[/emphasis].",
+                    "text": "[fierce:1.5]I was there. [beat] Fifty years in the Indies. I saw what Aristotle never saw. [beat] Look at my desk. [emphasis]This quill[/emphasis] has written more truth than Sepúlveda's whole library. These are not natural slaves. They are [emphasis]rational souls[/emphasis], capable of faith and self-rule. [beat] His so-called just war is theft with a Latin blessing.",
                     "voice": "lascasas"
                   },
                   "visual": {
-                    "base_image": "../../assets/images/u1/original-u1-lascasas-portrait-01.jpg",
-                    "secondary_image": "../../assets/images/u1/original-u1-encomienda-07.jpg"
+                    "base_image": "../../assets/images/u1/original-u1-lascasas-portrait-01.jpg"
                   },
                   "animation": {
-                    "type": "versus",
-                    "title": "The Debate: Sepúlveda vs. Las Casas",
-                    "name_left": "Sepúlveda",
-                    "name_right": "Las Casas"
+                    "type": "callout",
+                    "points": [
+                      [
+                        0.25,
+                        0.55,
+                        "The quill"
+                      ],
+                      [
+                        0.52,
+                        0.42,
+                        "Dominican friar"
+                      ],
+                      [
+                        0.3,
+                        0.64,
+                        "Eyewitness"
+                      ]
+                    ]
                   },
                   "beats": [
                     {
                       "type": "label",
-                      "cue": "rational, capable of faith",
+                      "cue": "I was there",
                       "duration": 3.0,
-                      "text": "RATIONAL SOULS",
+                      "text": "EYEWITNESS",
                       "x": 0.5,
-                      "y": 0.2
+                      "y": 0.16
                     },
                     {
                       "type": "label",
-                      "cue": "masters of their own lands",
+                      "cue": "rational souls",
                       "duration": 3.0,
-                      "text": "THEIR LANDS BY RIGHT",
+                      "text": "RATIONAL SOULS",
                       "x": 0.5,
-                      "y": 0.68
-                    },
-                    {
-                      "type": "host",
-                      "cue": "spent my life denouncing",
-                      "duration": 3.2,
-                      "text": "A lifetime of regret",
-                      "x": 0.5,
-                      "y": 0.68
+                      "y": 0.78
                     },
                     {
                       "type": "progress",
@@ -801,19 +793,14 @@
                   "audio": {
                     "effects": [
                       {
-                        "cue": "natural slaves",
+                        "cue": "theft with a Latin blessing",
                         "kind": "impact",
-                        "volume": 0.16
-                      },
-                      {
-                        "cue": "spent my life denouncing",
-                        "kind": "chime",
-                        "volume": 0.14
+                        "volume": 0.18
                       }
                     ]
                   },
                   "transition": {
-                    "type": "dip_to_black",
+                    "type": "hard_cut",
                     "duration": 0.25
                   },
                   "min_duration": 10,
@@ -821,23 +808,21 @@
                     "1.3"
                   ],
                   "on_screen_text": [
-                    "Rational",
-                    "Capable of faith",
-                    "Entitled to land",
-                    "The irony"
+                    "Eyewitness testimony",
+                    "Rational souls"
                   ],
                   "source": {
-                    "title": "Portrait of Bartolomé de Las Casas; encomienda depiction",
+                    "title": "Bartolomé de Las Casas at his writing desk, engraving, 1791",
                     "license": "Public domain",
-                    "notes": "Pair the portrait with the system both sides were arguing about."
+                    "notes": "Callouts mark what the narration names: quill, cross, papers."
                   },
-                  "production_notes": "First-person debate voice. Las Casas is fierce but wounded; the confession must land quietly, not theatrically."
+                  "production_notes": "Las Casas answers point by point. Hard cut in; the callouts are already up when he says 'Look at my desk.'"
                 },
                 {
                   "id": "l8-verdict-human-rights",
                   "purpose": "close",
                   "narration": {
-                    "text": "The debate changed almost nothing on the ground. The [es]encomienda[/es] and the slave trade continued. [beat] But [es]Valladolid[/es] invented something new: the idea that conquest itself could be judged by [emphasis]universal moral law[/emphasis]. That language, of natural rights and human dignity, would [slow]outlive the empire it failed to restrain[/slow].",
+                    "text": "[solemn]Valladolid changed almost nothing on the ground. The mines ground on. The encomienda ground on. [beat] But it invented something new: the idea that conquest itself could be judged. Judged by [emphasis]universal moral law.[/emphasis] [beat] That language, of [slow]natural rights and human dignity[/slow], would outlive the empire it failed to restrain.",
                     "voice": "host"
                   },
                   "visual": {
@@ -848,10 +833,7 @@
                     "type": "ai_clip",
                     "prompt": "A historical engraved portrait of Bartolome de las Casas resting in a quiet chamber. A candle flame flicker softly nearby; its light shimmer shifts gently across the dark background; fine dust drifts through the air; a faint mist hangs near the frame. The portrait itself remains unchanged and the composition holds steady. Do not add people or text or modern objects.",
                     "duration": 8,
-                    "seed": 1551,
-                    "provider": "meta-ui",
-                    "fallback_provider": "ltx",
-                    "caption": "Valladolid: little changed on the ground, but the language of rights was born"
+                    "seed": 1551
                   },
                   "beats": [
                     {
@@ -863,18 +845,10 @@
                       "y": 0.16
                     },
                     {
-                      "type": "label",
-                      "cue": "universal moral law",
-                      "duration": 3.2,
-                      "text": "A NEW IDEA",
-                      "x": 0.5,
-                      "y": 0.16
-                    },
-                    {
                       "type": "stamp",
-                      "cue": "natural rights and",
+                      "cue": "natural rights",
                       "duration": 3.2,
-                      "text": "LANGUAGE OF HUMAN RIGHTS",
+                      "text": "NATURAL RIGHTS",
                       "x": 0.5,
                       "y": 0.78,
                       "color": [
@@ -884,25 +858,26 @@
                       ]
                     },
                     {
-                      "type": "host",
-                      "cue": "failed to restrain",
-                      "duration": 3.2,
-                      "text": "Ideas outlive empires",
+                      "type": "label",
+                      "cue": "outlive the empire",
+                      "duration": 3.0,
+                      "text": "OUTLIVE THE EMPIRE",
                       "x": 0.5,
                       "y": 0.86
+                    },
+                    {
+                      "type": "progress",
+                      "at": 0.0,
+                      "duration": 16.0,
+                      "y": 0.94
                     }
                   ],
                   "audio": {
                     "effects": [
                       {
-                        "cue": "changed almost nothing",
-                        "kind": "impact",
-                        "volume": 0.14
-                      },
-                      {
-                        "cue": "natural rights and",
+                        "cue": "universal moral law",
                         "kind": "chime",
-                        "volume": 0.16
+                        "volume": 0.14
                       }
                     ]
                   },
@@ -915,16 +890,15 @@
                     "1.3"
                   ],
                   "on_screen_text": [
-                    "Changed little",
-                    "Judged conquest",
-                    "Human rights"
+                    "Universal moral law",
+                    "Natural rights"
                   ],
                   "source": {
-                    "title": "Portrait of Bartolomé de Las Casas",
+                    "title": "Bartolomé de Las Casas at his writing desk, engraving, 1791",
                     "license": "Public domain",
-                    "notes": "Frame the verdict as irony: the debate's legacy outgrew its failure."
+                    "notes": "The verdict: a language, not a victory."
                   },
-                  "production_notes": "Quiet landing; let the rights line breathe before the transition."
+                  "production_notes": "The stamp lands on 'natural rights'; let the final line breathe."
                 }
               ]
             },
