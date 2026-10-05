@@ -13,7 +13,7 @@ from PIL import Image, ImageDraw, ImageFilter
 
 from .timeline import Scene
 from . import easing
-from .easing import ease_out, ease_in_out, smooth
+from .easing import ease_out, ease_out_back, ease_in_out, smooth
 from . import canvas as C
 from .canvas import get_font, to_pil, to_np, paste_rgba
 from .kenburns import KenBurns, kb_frame, full_view, clamp_view
@@ -1916,4 +1916,348 @@ class RouteSlide(MapZoomSlide):
         hr = lw * 1.15
         d.ellipse([hx - hr, hy - hr, hx + hr, hy + hr],
                   outline=(255, 255, 255, 235), width=3)
+        return to_np(pil)
+
+
+def _title_block(frame, title, t, y_frac=0.10, size_frac=0.075, accent=ACCENT):
+    """Centered title with an accent underline that draws itself in."""
+    w, h = frame.shape[1], frame.shape[0]
+    pil = to_pil(frame)
+    e = a01(t, 0.0, 0.6)
+    y_top, y_bot = h * y_frac, h * (y_frac + 0.16)
+    pil = C.draw_para(pil, (w * 0.09, y_top, w * 0.91, y_bot),
+                      title, size=int(h * size_frac), fill=INK, bold=True,
+                      align="center", alpha=int(255 * e))
+    uw = int(w * 0.10 * a01(t, 0.2, 0.5))
+    if uw:
+        d = ImageDraw.Draw(pil, "RGBA")
+        d.line([(w / 2 - uw / 2, y_bot + 6), (w / 2 + uw / 2, y_bot + 6)],
+               fill=accent + (int(255 * e),), width=max(2, int(h * 0.008)))
+    return to_np(pil)
+
+
+def _bezier(p0, p1, p2, n=40):
+    pts = []
+    for i in range(n + 1):
+        k = i / n
+        x = (1 - k) ** 2 * p0[0] + 2 * (1 - k) * k * p1[0] + k ** 2 * p2[0]
+        y = (1 - k) ** 2 * p0[1] + 2 * (1 - k) * k * p1[1] + k ** 2 * p2[1]
+        pts.append((x, y))
+    return pts
+
+
+@slide("causal-chain")
+class CausalChainSlide(Slide):
+    """Cause-and-effect chain: node cards pop in left to right while hand-drawn
+    arrows draw themselves between them.
+
+    nodes: [(label, sub), ...] — up to 5 reads well.
+    """
+
+    def __init__(self, nodes, title="", duration=None, accent=ACCENT,
+                 bg=None, cfg=None, stagger=0.9, arrow_dur=0.7):
+        duration = duration or (1.2 + stagger * len(nodes))
+        super().__init__(duration, bg, cfg)
+        self.nodes = [(n[0], n[1] if len(n) > 1 else "") for n in nodes]
+        self.title = title
+        self.accent = accent
+        self.stagger = stagger
+        self.arrow_dur = arrow_dur
+
+    def frame(self, t):
+        frame = self.bg_frame(t)
+        w, h = self.cfg.w, self.cfg.h
+        n = len(self.nodes)
+        if self.title:
+            frame = _title_block(frame, self.title, t, y_frac=0.10)
+        # card geometry
+        gap = w * 0.035
+        cw = min(w * 0.26, (w * 0.92 - gap * (n - 1)) / n)
+        ch = h * 0.34
+        total_w = cw * n + gap * (n - 1)
+        x0 = (w - total_w) / 2
+        y0 = h * 0.37
+        pil = to_pil(frame)
+        d = ImageDraw.Draw(pil, "RGBA")
+        centers = []
+        for i, (label, sub) in enumerate(self.nodes):
+            e = a01(t, 0.4 + i * self.stagger, 0.6)
+            if e <= 0:
+                centers.append(None)
+                continue
+            pop = ease_out_back(min(1.0, e * 1.15))
+            bw, bh = cw * pop, ch * pop
+            x, y = x0 + i * (cw + gap), y0
+            cx, cy = x + cw / 2, y + ch / 2
+            centers.append((cx, cy))
+            bx, by = cx - bw / 2, cy - bh / 2
+            d.rounded_rectangle([bx, by, bx + bw, by + bh], radius=18,
+                                fill=(16, 20, 32, int(235 * e)),
+                                outline=self.accent + (int(255 * e),), width=3)
+            # node number chip
+            chip_r = h * 0.028 * pop
+            d.ellipse([cx - chip_r, by - chip_r, cx + chip_r, by + chip_r],
+                      fill=self.accent + (int(255 * e),))
+            font_n = get_font(int(h * 0.034), bold=True)
+            d.text((cx, by), str(i + 1), font=font_n, anchor="mm",
+                   fill=(10, 10, 12, int(255 * e)))
+            pil = C.draw_para(pil, (bx + 14, by + ch * 0.16, bx + bw - 14, by + bh),
+                              label, size=int(h * 0.042), fill=INK, bold=True,
+                              align="center", alpha=int(255 * e))
+            if sub:
+                pil = C.draw_para(pil, (bx + 14, by + ch * 0.48, bx + bw - 14, by + bh - 10),
+                                  sub, size=int(h * 0.030), fill=MUTED,
+                                  align="center", alpha=int(255 * e))
+            d = ImageDraw.Draw(pil, "RGBA")
+        # arrows between consecutive visible cards
+        for i in range(n - 1):
+            if centers[i] is None or centers[i + 1] is None:
+                continue
+            ae = a01(t, 0.4 + i * self.stagger + 0.55, self.arrow_dur)
+            if ae <= 0:
+                continue
+            x1 = x0 + i * (cw + gap) + cw + 6
+            x2 = x0 + (i + 1) * (cw + gap) - 6
+            ym = y0 + ch / 2
+            ctrl = ((x1 + x2) / 2, ym - h * 0.055)
+            pts = _bezier((x1, ym), ctrl, (x2, ym))
+            shown = pts[:max(2, int(len(pts) * ae))]
+            d.line(shown, fill=self.accent + (int(255 * min(1, ae * 1.2)),),
+                   width=max(2, int(h * 0.008)), joint="curve")
+            if ae > 0.85:
+                # arrowhead
+                ex, ey = pts[-1]
+                ang = math.atan2(ey - pts[-3][1], ex - pts[-3][0])
+                s = h * 0.022
+                for da in (2.6, -2.6):
+                    d.line([(ex, ey),
+                            (ex - s * math.cos(ang + da), ey - s * math.sin(ang + da))],
+                           fill=self.accent + (255,), width=max(2, int(h * 0.008)))
+        return to_np(pil)
+
+
+@slide("territory")
+class TerritorySlide(Slide):
+    """One map, borders filling in over time: territories appear in sequence
+    with date stamps — territorial expansion as animation.
+
+    territories: [{"at": (cx, cy), "rx": 0.09, "ry": 0.07, "label": "Louisiana",
+                   "date": "1803", "color": (90, 140, 255)}, ...]
+    at/rx/ry are fractions of the frame.
+    """
+
+    def __init__(self, map_image, territories, title="", duration=None,
+                 bg=None, cfg=None, stagger=1.6, drift=False):
+        # drift defaults to False: territories are pinned to frame fractions,
+        # so a moving bg would silently misalign them.
+        self.map_image = _as_image(map_image)
+        self.territories = list(territories)
+        self.title = title
+        self.stagger = stagger
+        self.drift = drift
+        duration = duration or (2.0 + stagger * len(territories))
+        if bg is None:
+            views = [full_view(), (0.5, 0.5, 0.9)] if drift else None
+            bg = {"type": "image", "array": self.map_image, "dim": 0.45,
+                  "drift": views}
+        super().__init__(duration, bg, cfg)
+
+    def frame(self, t):
+        frame = self.bg_frame(t)
+        w, h = self.cfg.w, self.cfg.h
+        if self.title:
+            frame = _title_block(frame, self.title, t, y_frac=0.07)
+        pil = to_pil(frame)
+        d = ImageDraw.Draw(pil, "RGBA")
+        for i, terr in enumerate(self.territories):
+            e = a01(t, 0.6 + i * self.stagger, 0.9)
+            if e <= 0:
+                continue
+            cx, cy = terr["at"][0] * w, terr["at"][1] * h
+            rx, ry = terr.get("rx", 0.08) * w, terr.get("ry", 0.06) * h
+            color = terr.get("color", (90, 140, 255))
+            grow = ease_out(min(1.0, e * 1.2))
+            # soft fill
+            for k in range(3):
+                rr = (rx * (0.55 + 0.15 * k) * grow, ry * (0.55 + 0.15 * k) * grow)
+                d.ellipse([cx - rr[0], cy - rr[1], cx + rr[0], cy + rr[1]],
+                          fill=color + (int(46 * e),))
+            # edge
+            pulse = 1 + 0.05 * math.sin(2 * math.pi * t * 2 + i)
+            d.ellipse([cx - rx * grow * pulse, cy - ry * grow * pulse,
+                       cx + rx * grow * pulse, cy + ry * grow * pulse],
+                      outline=color + (int(255 * e),), width=3)
+            label, date = terr.get("label", ""), terr.get("date", "")
+            if e > 0.5 and label:
+                le = a01(t, 0.6 + i * self.stagger + 0.45, 0.5)
+                lw_, lh_ = C.text_block_size(label, int(h * 0.036), w * 0.3, bold=True)
+                dw_, dh_ = C.text_block_size(date, int(h * 0.030), w * 0.3) if date else (0, 0)
+                bw, bh = max(lw_, dw_) + 30, lh_ + dh_ + 22
+                lat = terr.get("label_at")
+                if lat is not None:
+                    lx, ly = lat[0] * w, lat[1] * h
+                else:
+                    ly = cy - ry * grow - h * 0.055
+                    if ly - bh / 2 < h * 0.27:
+                        # title zone — flip the label below the territory
+                        ly = cy + ry * grow + h * 0.055
+                    lx = cx
+                bx = min(max(lx - bw / 2, 8), w - bw - 8)
+                by = ly - bh / 2
+                if lat is not None:
+                    # leader from pill to territory center
+                    d.line([(bx + bw / 2, by + bh), (cx, cy)],
+                           fill=(255, 255, 255, int(150 * le)), width=2)
+                d.rounded_rectangle([bx, by, bx + bw, by + bh],
+                                    radius=10, fill=(12, 14, 22, int(225 * le)))
+                d.text((bx + bw / 2, by + lh_ / 2 - 2), label,
+                       font=get_font(int(h * 0.036), bold=True), anchor="mm",
+                       fill=(255, 255, 255, int(255 * le)))
+                if date:
+                    d.text((bx + bw / 2, by + lh_ + dh_ / 2 + 2), date,
+                           font=get_font(int(h * 0.030), bold=True), anchor="mm",
+                           fill=color + (int(255 * le),))
+        return to_np(pil)
+
+
+@slide("recall")
+class RecallSlide(Slide):
+    """Self-test beat: a question up top, answers rendered blurred that sharpen
+    into focus one by one — turns passive watching into recall practice."""
+
+    def __init__(self, question, answers, duration=None, bg=None, cfg=None,
+                 stagger=1.4, blur_px=14):
+        self.question = question
+        self.answers = list(answers)
+        self.stagger = stagger
+        self.blur_px = blur_px
+        duration = duration or (2.2 + stagger * len(answers))
+        super().__init__(duration, bg, cfg)
+
+    def frame(self, t):
+        frame = self.bg_frame(t)
+        w, h = self.cfg.w, self.cfg.h
+        frame = _title_block(frame, self.question, t, y_frac=0.12,
+                             size_frac=0.052)
+        pil = to_pil(frame)
+        for i, ans in enumerate(self.answers):
+            t0 = 0.8 + i * self.stagger
+            appear = a01(t, t0, 0.4)
+            if appear <= 0:
+                continue
+            e = a01(t, t0 + 0.35, 0.9)  # sharpen progress
+            y = h * (0.34 + i * 0.15)
+            # answer card
+            cw, chh = w * 0.62, h * 0.105
+            x = (w - cw) / 2
+            d = ImageDraw.Draw(pil, "RGBA")
+            d.rounded_rectangle([x, y, x + cw, y + chh], radius=14,
+                                fill=(16, 20, 32, int(230 * appear)),
+                                outline=(120, 140, 180, int(120 * appear)), width=2)
+            # text on its own layer so we can blur it
+            layer = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+            dl = ImageDraw.Draw(layer)
+            dl.text((w / 2, y + chh / 2), ans,
+                    font=get_font(int(h * 0.040), bold=True), anchor="mm",
+                    fill=(235, 238, 245, int(255 * appear)))
+            # number chip (stays sharp)
+            d.ellipse([x - h * 0.032, y + chh / 2 - h * 0.032,
+                       x - h * 0.032 + h * 0.064, y + chh / 2 + h * 0.032],
+                      fill=ACCENT + (int(255 * appear),))
+            d.text((x, y + chh / 2), str(i + 1),
+                   font=get_font(int(h * 0.034), bold=True), anchor="mm",
+                   fill=(10, 10, 12, int(255 * appear)))
+            r = self.blur_px * (1 - e)
+            if r > 0.5:
+                layer = layer.filter(ImageFilter.GaussianBlur(r))
+            pil = Image.alpha_composite(pil.convert("RGBA"), layer).convert("RGB")
+        # "pause and think" hint early on
+        he = min(a01(t, 0.3, 0.4), 1 - a01(t, 1.6, 0.5))
+        if he > 0:
+            d = ImageDraw.Draw(pil, "RGBA")
+            d.text((w / 2, h * 0.90), "pause — try to recall before it sharpens",
+                   font=get_font(int(h * 0.028)), anchor="mm",
+                   fill=(150, 160, 180, int(200 * he)))
+        return to_np(pil)
+
+
+@slide("spectrum")
+class SpectrumSlide(Slide):
+    """Position-on-a-spectrum visualizer: an axis with end labels, markers that
+    drop in, and markers that can *move* along the axis mid-slide.
+
+    markers: [{"at": 0.15, "label": "Hamilton", "color": (90,140,255),
+               "move_to": 0.5, "move_start": 4.0}, ...]
+    """
+
+    def __init__(self, axis, markers, title="", duration=None, bg=None,
+                 cfg=None, stagger=1.0):
+        self.axis = tuple(axis)
+        self.markers = list(markers)
+        self.title = title
+        self.stagger = stagger
+        moves = [m.get("move_start", 0) for m in markers if "move_to" in m]
+        duration = duration or (2.5 + stagger * len(markers)
+                                + (1.5 if moves else 0))
+        super().__init__(duration, bg, cfg)
+
+    def _marker_x(self, m, i, t, x0, x1):
+        base = m["at"]
+        if "move_to" in m:
+            k = a01(t, m.get("move_start", 0.8 + i * self.stagger + 0.8), 1.4)
+            k = smooth(k)
+            base = base + (m["move_to"] - base) * k
+        return x0 + base * (x1 - x0)
+
+    def frame(self, t):
+        frame = self.bg_frame(t)
+        w, h = self.cfg.w, self.cfg.h
+        if self.title:
+            frame = _title_block(frame, self.title, t, y_frac=0.10)
+        pil = to_pil(frame)
+        d = ImageDraw.Draw(pil, "RGBA")
+        x0, x1 = w * 0.12, w * 0.88
+        ay = h * 0.52
+        # axis
+        ae = a01(t, 0.3, 0.6)
+        if ae > 0:
+            d.line([(x0, ay), (x0 + (x1 - x0) * ae, ay)],
+                   fill=(140, 150, 170, int(255 * ae)), width=4)
+            for k in range(11):
+                tx = x0 + (x1 - x0) * k / 10 * ae
+                d.line([(tx, ay - 8), (tx, ay + 8)],
+                       fill=(140, 150, 170, int(200 * ae)), width=2)
+            fs = int(h * 0.036)
+            d.text((x0, ay + h * 0.045), self.axis[0], font=get_font(fs, bold=True),
+                   anchor="mt", fill=(200, 205, 215, int(255 * ae)))
+            d.text((x1, ay + h * 0.045), self.axis[1], font=get_font(fs, bold=True),
+                   anchor="mt", fill=(200, 205, 215, int(255 * ae)))
+        # markers
+        for i, m in enumerate(self.markers):
+            e = a01(t, 0.8 + i * self.stagger, 0.5)
+            if e <= 0:
+                continue
+            color = m.get("color", ACCENT)
+            mx = self._marker_x(m, i, t, x0, x1)
+            drop = (1 - ease_out(min(1.0, e * 1.2))) * -h * 0.10
+            my = ay + drop
+            r = h * 0.026
+            # stem
+            d.line([(mx, ay), (mx, my - h * 0.055)], fill=color + (int(255 * e),),
+                   width=3)
+            # knob
+            d.ellipse([mx - r, my - h * 0.055 - r, mx + r, my - h * 0.055 + r],
+                      fill=color + (int(255 * e),),
+                      outline=(255, 255, 255, int(255 * e)), width=2)
+            label = m.get("label", "")
+            if label:
+                d.text((mx, my - h * 0.055 - r - h * 0.018), label,
+                       font=get_font(int(h * 0.034), bold=True), anchor="mb",
+                       fill=(235, 238, 245, int(255 * e)))
+            sub = m.get("sub", "")
+            if sub and "move_to" in m and a01(t, m.get("move_start", 0), 0.3) > 0:
+                se = a01(t, m.get("move_start", 0) + 0.2, 0.5)
+                d.text((mx, ay + h * 0.10), sub,
+                       font=get_font(int(h * 0.028)), anchor="mt",
+                       fill=color + (int(255 * se),))
         return to_np(pil)

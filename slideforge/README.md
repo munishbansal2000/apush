@@ -71,8 +71,20 @@ Runnable examples: `python -m slideforge.demo_duo` → `demo_duo.mp4`
 | `CalloutSlide(image, callouts)` | Full view → zoom into labeled regions with pulsing rings → pull back |
 | `MapZoomSlide(map, markers)` | Vintage-map tour: dive to labeled locations with pulsing pins |
 | `RouteSlide(map, waypoints)` | Animated travel route: arcing dashed line draws as camera hops stops; or `RouteSlide.from_route("columbus_1492")` |
+| `CausalChainSlide(nodes, title)` | Cause → effect: node cards pop in left-to-right while hand-drawn arrows draw themselves between them |
+| `TerritorySlide(map, territories)` | One map, borders filling in over time: territories appear in sequence with date labels (US expansion 1783→1848); `label_at` pins labels with leader lines |
+| `RecallSlide(question, answers)` | Self-test beat: answers render blurred and sharpen into focus one by one |
+| `SpectrumSlide(axis, markers)` | Position-on-a-spectrum: markers drop onto an axis and can *move* along it mid-slide (Jefferson drifts after the Louisiana Purchase) |
 
 Overlays (`slideforge.overlays`): `LowerThird(name, role)`, `Caption(text)`,
+`TimelineRibbon(era, events, span)` — persistent bottom era ribbon with event
+ticks and a playhead advancing across the video,
+`RedPen(annotations)` — a teacher's red pen: hand-drawn circles, underlines,
+check marks and margin notes that draw themselves,
+`Magnifier(path, radius, zoom)` — a magnifying glass traveling over the frame,
+showing a zoomed crop of what's beneath the lens,
+`MapNote(camera, notes)` — pins labeled at map *content* coordinates that ride
+the camera through pans and zooms,
 `KeywordPop(word, position=...)` — a giant outlined keyword that punches in
 beside the action (the "MAIZE" beat),
 `Sticker(image, at=..., label=...)` — cutout photo with a rough white

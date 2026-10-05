@@ -57,8 +57,13 @@ from .slides import (
     HighlightSlide,
     CollageSlide,
     TitleCardSlide,
+    CausalChainSlide,
+    TerritorySlide,
+    RecallSlide,
+    SpectrumSlide,
 )
 from .overlays import (LowerThird, Caption, KeywordPop, Sticker, RegionGlow,
+                       TimelineRibbon, RedPen, Magnifier, MapNote,
                        card_image, with_overlays)
 from . import apush
 from . import backgrounds

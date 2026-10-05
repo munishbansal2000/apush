@@ -8,8 +8,8 @@ from PIL import Image, ImageDraw
 
 from .timeline import Scene
 from . import canvas as C
-from .canvas import to_pil, to_np, paste_rgba
-from .easing import ease_out, ease_out_back
+from .canvas import to_pil, to_np, paste_rgba, get_font
+from .easing import ease_out, ease_out_back, smooth
 from .slides import (a01, ACCENT, INK, MUTED, _outlined_line, _as_image,
                        card_image)
 
@@ -250,3 +250,278 @@ def with_overlays(scene, overlays):
             return frame
 
     return _OverlayScene()
+
+
+class TimelineRibbon(Overlay):
+    """Persistent era ribbon along the bottom: era label, event ticks, and a
+    playhead that advances across this slide's `span` of the whole video.
+
+    events: [(frac, "label"), ...] with frac in 0..1 across the whole video.
+    span: (a, b) — the fraction of the video this slide covers.
+    """
+
+    def __init__(self, era, events=(), span=(0.0, 1.0), start=0.0,
+                 duration=None, accent=ACCENT):
+        super().__init__(start, duration)
+        self.era = era
+        self.events = list(events)
+        self.span = tuple(span)
+        self.accent = accent
+
+    def apply(self, frame, t):
+        h, w = frame.shape[:2]
+        dur = self.duration or 1.0
+        local = (t - self.start) / max(dur, 1e-6)
+        if local < 0 or local > 1:
+            return frame
+        e_in = a01(t, self.start, 0.5)
+        if e_in <= 0:
+            return frame
+        prog = self.span[0] + (self.span[1] - self.span[0]) * local
+        bh = int(h * 0.115)
+        y0 = h - bh
+        frame = C.pill(frame, (0, y0, w, h), radius=0,
+                       fill=(8, 10, 16), alpha=int(232 * e_in))
+        pil = to_pil(frame)
+        d = ImageDraw.Draw(pil, "RGBA")
+        d.line([(0, y0), (w, y0)], fill=self.accent + (int(255 * e_in),), width=3)
+        # era label
+        fs = int(h * 0.034)
+        d.text((w * 0.025, y0 + bh * 0.22), self.era,
+               font=get_font(fs, bold=True), anchor="lm",
+               fill=(235, 238, 245, int(255 * e_in)))
+        # track
+        tx0, tx1 = w * 0.32, w * 0.96
+        ty = y0 + bh * 0.62
+        d.line([(tx0, ty), (tx1, ty)], fill=(90, 100, 120, int(255 * e_in)), width=3)
+        for frac, label in self.events:
+            tx = tx0 + frac * (tx1 - tx0)
+            passed = frac <= prog + 1e-9
+            col = self.accent if passed else (110, 120, 140)
+            d.line([(tx, ty - 9), (tx, ty + 9)], fill=col + (int(255 * e_in),),
+                   width=3)
+            d.text((tx, ty - 14), label, font=get_font(int(h * 0.024)),
+                   anchor="mb", fill=col + (int(230 * e_in),))
+        # playhead
+        px = tx0 + prog * (tx1 - tx0)
+        d.line([(px, ty - 16), (px, ty + 16)],
+               fill=(255, 255, 255, int(255 * e_in)), width=3)
+        pr = 7
+        d.ellipse([px - pr, ty - pr, px + pr, ty + pr],
+                  fill=self.accent + (int(255 * e_in),),
+                  outline=(255, 255, 255, int(255 * e_in)), width=2)
+        return to_np(pil)
+
+
+def _wobbly(pts, seed, amp):
+    rng = random.Random(seed)
+    return [(x + rng.uniform(-amp, amp), y + rng.uniform(-amp, amp))
+            for x, y in pts]
+
+
+class RedPen(Overlay):
+    """A teacher's red pen: circles, underlines, check marks and margin notes
+    that draw themselves over the slide, with a hand-drawn wobble.
+
+    annotations: [{"kind": "circle", "at": (x, y), "r": 0.08, "start": 1.0},
+                  {"kind": "underline", "from": (x1, y1), "to": (x2, y2),
+                   "start": 2.0},
+                  {"kind": "check", "at": (x, y), "size": 0.05, "start": 3.0},
+                  {"kind": "note", "at": (x, y), "text": "KEY IDEA",
+                   "start": 2.5}, ...]
+    coordinates are fractions of the frame.
+    """
+
+    def __init__(self, annotations, start=0.0, duration=None,
+                 color=(232, 48, 48)):
+        super().__init__(start, duration)
+        self.annotations = list(annotations)
+        self.color = color
+
+    def _draw_ann(self, d, w, h, ann, idx, t):
+        e = a01(t, ann.get("start", 0.0), ann.get("dur", 0.8))
+        if e <= 0:
+            return
+        col = self.color + (int(255 * min(1.0, e * 1.3)),)
+        lw = max(2, int(h * 0.009))
+        kind = ann["kind"]
+        if kind == "circle":
+            cx, cy = ann["at"][0] * w, ann["at"][1] * h
+            r = ann.get("r", 0.08) * min(w, h)
+            pts = [(cx + r * math.cos(a), cy + r * 0.72 * math.sin(a))
+                   for a in [i / 44 * 2 * math.pi for i in range(45)]]
+            pts = _wobbly(pts, idx * 7 + 1, r * 0.05)
+            d.line(pts[:max(2, int(len(pts) * e))], fill=col, width=lw,
+                   joint="curve")
+        elif kind == "underline":
+            x1, y1 = ann["from"][0] * w, ann["from"][1] * h
+            x2, y2 = ann["to"][0] * w, ann["to"][1] * h
+            n = 24
+            pts = [(x1 + (x2 - x1) * i / n,
+                    y1 + (y2 - y1) * i / n + math.sin(i * 1.7) * h * 0.004)
+                   for i in range(n + 1)]
+            pts = _wobbly(pts, idx * 7 + 2, h * 0.004)
+            d.line(pts[:max(2, int(len(pts) * e))], fill=col, width=lw,
+                   joint="curve")
+        elif kind == "check":
+            cx, cy = ann["at"][0] * w, ann["at"][1] * h
+            s = ann.get("size", 0.05) * min(w, h)
+            pts = _wobbly([(cx - s, cy), (cx - s * 0.25, cy + s * 0.8),
+                           (cx + s, cy - s * 0.7)], idx * 7 + 3, s * 0.06)
+            shown = pts[:max(2, int(len(pts) * e + 0.5))]
+            d.line(shown, fill=col, width=lw + 1, joint="curve")
+        elif kind == "note":
+            x, y = ann["at"][0] * w, ann["at"][1] * h
+            rise = (1 - e) * 14
+            d.text((x, y + rise), ann.get("text", ""),
+                   font=get_font(int(h * 0.036), bold=True), anchor="lm",
+                   fill=col)
+
+    def apply(self, frame, t):
+        h, w = frame.shape[:2]
+        if t < self.start:
+            return frame
+        pil = to_pil(frame)
+        d = ImageDraw.Draw(pil, "RGBA")
+        for i, ann in enumerate(self.annotations):
+            self._draw_ann(d, w, h, ann, i, t)
+        return to_np(pil)
+
+
+class Magnifier(Overlay):
+    """A magnifying glass that travels over the frame, showing a zoomed crop
+    of whatever is beneath the lens.
+
+    path: [(t, x, y), ...] keyframes in scene-local seconds + fractional coords.
+    """
+
+    def __init__(self, path, radius=0.15, zoom=2.2, start=0.0, duration=None):
+        super().__init__(start, duration)
+        self.path = sorted(path)
+        self.radius = radius
+        self.zoom = zoom
+
+    def _center_at(self, t):
+        pts = self.path
+        if t <= pts[0][0]:
+            return pts[0][1], pts[0][2]
+        for (t0, x0, y0), (t1, x1, y1) in zip(pts, pts[1:]):
+            if t <= t1:
+                k = smooth((t - t0) / max(t1 - t0, 1e-6))
+                return x0 + (x1 - x0) * k, y0 + (y1 - y0) * k
+        return pts[-1][1], pts[-1][2]
+
+    def apply(self, frame, t):
+        h, w = frame.shape[:2]
+        if t < self.start:
+            return frame
+        e = a01(t, self.start, 0.5)
+        if e <= 0:
+            return frame
+        lx, ly = self._center_at(t)
+        lx, ly = lx * w, ly * h
+        r = self.radius * min(w, h) * (0.6 + 0.4 * e)
+        src_r = r / self.zoom
+        x0 = int(min(max(lx - src_r, 0), w - 2 * src_r))
+        y0 = int(min(max(ly - src_r, 0), h - 2 * src_r))
+        crop = frame[y0:y0 + int(2 * src_r), x0:x0 + int(2 * src_r)]
+        if crop.size == 0:
+            return frame
+        lens = np.array(Image.fromarray(crop).resize((int(2 * r), int(2 * r)),
+                                                     Image.BILINEAR))
+        mask = Image.new("L", (int(2 * r), int(2 * r)), 0)
+        ImageDraw.Draw(mask).ellipse([0, 0, int(2 * r), int(2 * r)], fill=255)
+        pil = to_pil(frame)
+        pil.paste(Image.fromarray(lens), (int(lx - r), int(ly - r)), mask)
+        d = ImageDraw.Draw(pil, "RGBA")
+        # glass rim + highlight
+        d.ellipse([lx - r, ly - r, lx + r, ly + r],
+                  outline=(30, 32, 40, int(255 * e)), width=max(3, int(r * 0.07)))
+        d.arc([lx - r * 0.82, ly - r * 0.82, lx + r * 0.82, ly + r * 0.82],
+              start=200, end=300, fill=(255, 255, 255, int(160 * e)),
+              width=max(2, int(r * 0.04)))
+        # handle
+        hx, hy = lx + r * 0.72, ly + r * 0.72
+        d.line([(hx, hy), (hx + r * 0.55, hy + r * 0.55)],
+               fill=(30, 32, 40, int(255 * e)), width=max(4, int(r * 0.09)))
+        return to_np(pil)
+
+
+class MapNote(Overlay):
+    """Annotations pinned to *content* coordinates of a moving camera: the pin
+    rides the pan/zoom instead of sitting fixed on screen.
+
+    camera: a KenBurns instance (uses .view_at/.image) or a
+            callable t -> (cx, cy, fw); then image_shape=(ih, iw) is required.
+    notes: [{"at": (cx, cy), "label": "...", "sub": "...", "start": 1.0}, ...]
+    """
+
+    def __init__(self, camera, notes, image_shape=None, start=0.0,
+                 duration=None, accent=ACCENT):
+        super().__init__(start, duration)
+        self.camera = camera
+        self.notes = list(notes)
+        self.image_shape = image_shape
+        self.accent = accent
+
+    def _view(self, t):
+        if hasattr(self.camera, "view_at"):
+            return self.camera.view_at(t)
+        return self.camera(t)
+
+    def _to_screen(self, px, py, view, w, h):
+        from .kenburns import clamp_view
+        cx, cy, fw = view
+        if self.image_shape is not None:
+            ih, iw = self.image_shape
+        else:
+            ih, iw = self.camera.image.shape[:2]
+        cx, cy, fw = clamp_view(iw, ih, w, h, cx, cy, fw)
+        fh = fw * (iw / ih) / (w / h)
+        sx = (px - (cx - fw / 2)) / fw * w
+        sy = (py - (cy - fh / 2)) / fh * h
+        return sx, sy
+
+    def apply(self, frame, t):
+        h, w = frame.shape[:2]
+        if t < self.start:
+            return frame
+        view = self._view(t)
+        pil = to_pil(frame)
+        d = ImageDraw.Draw(pil, "RGBA")
+        for i, note in enumerate(self.notes):
+            e = a01(t, note.get("start", 0.0), 0.5)
+            if e <= 0:
+                continue
+            sx, sy = self._to_screen(note["at"][0], note["at"][1], view, w, h)
+            if not (-40 <= sx <= w + 40 and -40 <= sy <= h + 40):
+                continue
+            pop = ease_out_back(min(1.0, e * 1.2))
+            # pulsing dot
+            pulse = 1 + 0.25 * math.sin(2 * math.pi * t * 2.2 + i)
+            pr = h * 0.014 * pulse * pop
+            d.ellipse([sx - pr * 2.2, sy - pr * 2.2, sx + pr * 2.2, sy + pr * 2.2],
+                      fill=self.accent + (70,))
+            d.ellipse([sx - pr, sy - pr, sx + pr, sy + pr],
+                      fill=self.accent + (int(255 * e),),
+                      outline=(255, 255, 255, int(255 * e)), width=2)
+            # label pill above with leader
+            label = note.get("label", "")
+            if label:
+                fs = int(h * 0.030)
+                tw_, th_ = C.text_block_size(label, fs, w * 0.4, bold=True)
+                bw, bh = tw_ + 26, th_ + 16
+                bx, by = sx - bw / 2, sy - h * 0.075 - bh
+                bx = min(max(bx, 6), w - bw - 6)
+                d.line([(sx, sy - pr), (bx + bw / 2, by + bh)],
+                       fill=(255, 255, 255, int(200 * e)), width=2)
+                d.rounded_rectangle([bx, by, bx + bw, by + bh], radius=9,
+                                    fill=(10, 12, 20, int(225 * e)))
+                d.text((bx + bw / 2, by + bh / 2), label, font=get_font(fs, bold=True),
+                       anchor="mm", fill=(255, 255, 255, int(255 * e)))
+                sub = note.get("sub", "")
+                if sub:
+                    d.text((bx + bw / 2, by + bh + h * 0.018), sub,
+                           font=get_font(int(h * 0.024)), anchor="mt",
+                           fill=(200, 205, 215, int(230 * e)))
+        return to_np(pil)
