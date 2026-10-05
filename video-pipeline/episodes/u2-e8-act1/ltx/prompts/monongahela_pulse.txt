@@ -1,12 +1,12 @@
 # LTX-04 — Monongahela pulse (bonus for scene-08)
 # Scene: scene-08 (17.6s -> 528 frames @30fps)
-# Target: slideforge/assets/ltx/act1_monongahela_pulse.mp4
+# Target: episodes/u2-e8-act1/assets/ltx/act1_monongahela_pulse.mp4
 # Generate at 30fps if the LTX build allows; conform forces CFR 30 anyway.
-# Input still: slideforge/assets/maps/america_gutierrez_1562.jpg
+# Input still: episodes/u2-e8-act1/assets/ltx/inputs/act1_monongahela_pulse.png
 # Source generation length: 6.0s
 
 PROMPT:
-Vintage map locked-off on river region. A soft sepia ink pulse rings once at center, then fades. Very subtle paper breathing. No people, no battle, no text. Minimal, mournful.
+The provided vintage map still already shows a soft pulse ring on the Monongahela River. Locked-off frame: keep the ring's faint breathing shimmer, very subtle paper drift, mist barely moving at the edges. Map ink stays sharp and readable. No people, no battle, no text. Minimal, mournful.
 
 NEGATIVE:
 people, blood, battle, text generation, modern effects

@@ -1,12 +1,12 @@
 # LTX-01 — Ohio Valley push-in
 # Scene: scene-02 (13.2s -> 396 frames @30fps)
-# Target: slideforge/assets/ltx/act1_ohio_zoom.mp4
+# Target: episodes/u2-e8-act1/assets/ltx/act1_ohio_zoom.mp4
 # Generate at 30fps if the LTX build allows; conform forces CFR 30 anyway.
-# Input still: slideforge/assets/maps/america_gutierrez_1562.jpg
+# Input still: episodes/u2-e8-act1/assets/ltx/inputs/act1_ohio_valley_pin.png
 # Source generation length: 6.0s
 
 PROMPT:
-Slow cinematic push-in on a vintage 1562 map of North America. Start wide on the eastern seaboard, end framed on the Ohio Valley region. Paper texture and ink lines stay stable and legible. No new text, no labels, no people, no colorization. Subtle parchment grain drift only. Camera: smooth dolly-in, no pan, no rotation.
+Slow cinematic push-in on the provided vintage map still, already pinned on the Ohio Valley. Start at the still's framing, push gently closer to the glowing pin over 6 seconds. Paper texture, ink lines, and the pin stay stable and legible. No new text, no labels, no people, no colorization. Subtle parchment grain drift only. Camera: smooth dolly-in, no pan, no rotation.
 
 NEGATIVE:
 text generation, new labels, people, soldiers, modern map, color wash, warping, flicker

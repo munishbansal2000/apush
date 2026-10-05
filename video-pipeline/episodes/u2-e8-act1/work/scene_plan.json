@@ -1,17 +1,25 @@
 {
  "version": 1,
  "episode": "u2-e8-act1",
- "notes": "Act 1 locked director's cut, adapted to the resilient pipeline. LTX scenes use vidslide with conformed clips (conform_clip.py makes any clip exactly the scene's frame count; the doc's 'never vidslide' note predates that tool). Durations are director estimates; refit_durations.py --timings rewrites them from measured TTS (offset 1.8 / gap 0.6 / tail 4.5). All transitions are cuts.",
+ "notes": "Act 1 locked director's cut, adapted to the resilient pipeline. LTX scenes use vidslide with conformed clips (conform_clip.py makes any clip exactly the scene's frame count; the doc's 'never vidslide' note predates that tool). Durations are director estimates; refit_durations.py --timings rewrites them from measured TTS (offset 1.8 / gap 0.6 / tail 4.5). All transitions are cuts. Scene-01 uses the uploaded title-card art as a static imageslide: its 3 keywordpops were dropped (the boxes already label the terms; full-screen pops covered the title) and the caption was dropped (it covered the boxes). Drift disabled so the card is never cropped.",
  "scenes": [
   {
    "id": "scene-01",
-   "slide": "titleslide",
+   "slide": "imageslide",
    "params": {
-    "title": "The 22-Year-Old Who Started a World War",
-    "subtitle": "APUSH Unit 2 Ep. 8 \u2014 3 boxes you must explain: Jumonville Glen, Pitt's Gamble, 1763 Bill",
-    "bg": {
-     "type": "textured"
-    }
+    "image": "images/act1_title_card.png",
+    "drift": [
+     [
+      0.5,
+      0.5,
+      1.0
+     ],
+     [
+      0.5,
+      0.5,
+      1.0
+     ]
+    ]
    },
    "duration_sec": 22.8,
    "transition": "cut",
@@ -20,32 +28,7 @@
     0,
     0
    ],
-   "overlays": [
-    {
-     "type": "keywordpop",
-     "word": "Jumonville Glen",
-     "start": 13.5,
-     "duration": 1.5
-    },
-    {
-     "type": "keywordpop",
-     "word": "Pitt's gamble",
-     "start": 15.2,
-     "duration": 1.5
-    },
-    {
-     "type": "keywordpop",
-     "word": "1763 bill",
-     "start": 16.9,
-     "duration": 1.5
-    },
-    {
-     "type": "caption",
-     "text": "By minute 9, you will explain all three cold.",
-     "start": 19.5,
-     "duration": 3.0
-    }
-   ]
+   "overlays": []
   },
   {
    "id": "scene-02",

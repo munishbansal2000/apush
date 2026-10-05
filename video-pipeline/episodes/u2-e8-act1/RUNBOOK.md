@@ -39,10 +39,10 @@ python refit_durations.py episodes\u2-e8-act1\work\scene_plan.json episodes\u2-e
 ::    1920x1080, 30fps if available.
 
 :: 6. Conform each clip to EXACTLY its scene's refit frame count:
-python conform_clip.py ltx\raw\ohio_zoom.mp4        <frames> ..\slideforge\assets\ltx\act1_ohio_zoom.mp4
-python conform_clip.py ltx\raw\jumonville_rain.mp4  <frames> ..\slideforge\assets\ltx\act1_jumonville_rain.mp4
-python conform_clip.py ltx\raw\braddock_route.mp4  <frames> ..\slideforge\assets\ltx\act1_braddock_route.mp4
-python conform_clip.py ltx\raw\monongahela_pulse.mp4 <frames> ..\slideforge\assets\ltx\act1_monongahela_pulse.mp4
+python conform_clip.py episodes\u2-e8-act1\ltx\raw\ohio_zoom.mp4        <frames> episodes\u2-e8-act1\assets\ltx\act1_ohio_zoom.mp4
+python conform_clip.py episodes\u2-e8-act1\ltx\raw\jumonville_rain.mp4  <frames> episodes\u2-e8-act1\assets\ltx\act1_jumonville_rain.mp4
+python conform_clip.py episodes\u2-e8-act1\ltx\raw\braddock_route.mp4  <frames> episodes\u2-e8-act1\assets\ltx\act1_braddock_route.mp4
+python conform_clip.py episodes\u2-e8-act1\ltx\raw\monongahela_pulse.mp4 <frames> episodes\u2-e8-act1\assets\ltx\act1_monongahela_pulse.mp4
 :: frames = scene duration_sec * 30 from the refit plan.
 :: (ltx/manifest.json has the estimate-based commands; recompute after step 4.)
 
@@ -73,6 +73,9 @@ python pipeline.py --episode u2-e8-act1
 - [x] LTX prompts packaged with conform targets (`ltx/manifest.json`)
 - [x] `gen` provenance param accepted by the compiler (matches existing
       u2-e8 plan); `highlights` list converted to `==markers==`
+- [x] scene-01 uses the uploaded title-card art as a static imageslide
+      (drift off, overlays dropped — the card is a finished composition;
+      pops covered the title, the caption covered the boxes)
 - [ ] TTS + timings + refit (needs Fish + the go)
 - [ ] LTX generation (5090) + conform (needs the clips)
 - [ ] render + assemble + verify (needs everything above)

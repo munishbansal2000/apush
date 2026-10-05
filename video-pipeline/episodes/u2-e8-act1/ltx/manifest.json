@@ -4,41 +4,43 @@
    "id": "LTX-01",
    "scene": "scene-02",
    "prompt_file": "ltx/prompts/ohio_zoom.txt",
-   "raw": "ltx/raw/ohio_zoom.mp4",
-   "conformed": "slideforge/assets/ltx/act1_ohio_zoom.mp4",
+   "raw": "episodes/u2-e8-act1/ltx/raw/ohio_zoom.mp4",
+   "conformed": "episodes/u2-e8-act1/assets/ltx/act1_ohio_zoom.mp4",
    "target_frames_est": 396,
-   "conform_cmd": "python3 conform_clip.py ltx/raw/ohio_zoom.mp4 396 ../../slideforge/assets/ltx/act1_ohio_zoom.mp4",
-   "note": "target_frames_est uses director estimate durations; recompute from the refit plan before conforming (frames = duration_sec * 30)."
+   "conform_cmd": "python3 conform_clip.py episodes/u2-e8-act1/ltx/raw/ohio_zoom.mp4 396 episodes/u2-e8-act1/assets/ltx/act1_ohio_zoom.mp4",
+   "note": "target_frames_est uses director estimate durations; recompute from the refit plan before conforming (frames = duration_sec * 30).",
+   "input": "episodes/u2-e8-act1/assets/ltx/inputs/act1_ohio_valley_pin.png"
   },
   {
    "id": "LTX-02",
    "scene": "scene-03",
    "prompt_file": "ltx/prompts/jumonville_rain.txt",
-   "raw": "ltx/raw/jumonville_rain.mp4",
-   "conformed": "slideforge/assets/ltx/act1_jumonville_rain.mp4",
+   "raw": "episodes/u2-e8-act1/ltx/raw/jumonville_rain.mp4",
+   "conformed": "episodes/u2-e8-act1/assets/ltx/act1_jumonville_rain.mp4",
    "target_frames_est": 528,
-   "conform_cmd": "python3 conform_clip.py ltx/raw/jumonville_rain.mp4 528 ../../slideforge/assets/ltx/act1_jumonville_rain.mp4",
+   "conform_cmd": "python3 conform_clip.py episodes/u2-e8-act1/ltx/raw/jumonville_rain.mp4 528 episodes/u2-e8-act1/assets/ltx/act1_jumonville_rain.mp4",
    "note": "target_frames_est uses director estimate durations; recompute from the refit plan before conforming (frames = duration_sec * 30)."
   },
   {
    "id": "LTX-03",
    "scene": "scene-06",
    "prompt_file": "ltx/prompts/braddock_route.txt",
-   "raw": "ltx/raw/braddock_route.mp4",
-   "conformed": "slideforge/assets/ltx/act1_braddock_route.mp4",
+   "raw": "episodes/u2-e8-act1/ltx/raw/braddock_route.mp4",
+   "conformed": "episodes/u2-e8-act1/assets/ltx/act1_braddock_route.mp4",
    "target_frames_est": 468,
-   "conform_cmd": "python3 conform_clip.py ltx/raw/braddock_route.mp4 468 ../../slideforge/assets/ltx/act1_braddock_route.mp4",
+   "conform_cmd": "python3 conform_clip.py episodes/u2-e8-act1/ltx/raw/braddock_route.mp4 468 episodes/u2-e8-act1/assets/ltx/act1_braddock_route.mp4",
    "note": "target_frames_est uses director estimate durations; recompute from the refit plan before conforming (frames = duration_sec * 30)."
   },
   {
    "id": "LTX-04",
    "scene": "scene-08",
    "prompt_file": "ltx/prompts/monongahela_pulse.txt",
-   "raw": "ltx/raw/monongahela_pulse.mp4",
-   "conformed": "slideforge/assets/ltx/act1_monongahela_pulse.mp4",
+   "raw": "episodes/u2-e8-act1/ltx/raw/monongahela_pulse.mp4",
+   "conformed": "episodes/u2-e8-act1/assets/ltx/act1_monongahela_pulse.mp4",
    "target_frames_est": 528,
-   "conform_cmd": "python3 conform_clip.py ltx/raw/monongahela_pulse.mp4 528 ../../slideforge/assets/ltx/act1_monongahela_pulse.mp4",
-   "note": "target_frames_est uses director estimate durations; recompute from the refit plan before conforming (frames = duration_sec * 30)."
+   "conform_cmd": "python3 conform_clip.py episodes/u2-e8-act1/ltx/raw/monongahela_pulse.mp4 528 episodes/u2-e8-act1/assets/ltx/act1_monongahela_pulse.mp4",
+   "note": "target_frames_est uses director estimate durations; recompute from the refit plan before conforming (frames = duration_sec * 30).",
+   "input": "episodes/u2-e8-act1/assets/ltx/inputs/act1_monongahela_pulse.png"
   }
  ],
  "notes": [

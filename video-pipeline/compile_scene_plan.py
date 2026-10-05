@@ -442,6 +442,9 @@ def _build_scene(spec, assets_dir, scene_id):
     # map_image + waypoints.
     route_name = params.pop("route", None)
     # 'gen' is clip provenance (which prompt/file generated it), not a
+    # constructor arg. Keep it out of the slide kwargs.
+    params.pop("gen", None)
+    # 'gen' is clip provenance (which prompt/file generated it), not a
     # constructor arg. The existing u2-e8 plan carries it; keep it out of
     # the slide kwargs.
     params.pop("gen", None)
