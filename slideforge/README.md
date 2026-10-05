@@ -85,6 +85,39 @@ check marks and margin notes that draw themselves,
 showing a zoomed crop of what's beneath the lens,
 `MapNote(camera, notes)` — pins labeled at map *content* coordinates that ride
 the camera through pans and zooms,
+
+`HighlightSlide.line_boxes()` exposes each laid-out line's fractional geometry,
+so `Magnifier` paths track real text. `BulletSlide.word_boxes()` maps each word
+to its settled fractional boxes, so `RedPen` targets words by content.
+
+## Pacing
+
+Every animation's speed is an input, not a constant. The units are seconds
+(bigger = slower), and durations auto-scale when you change them:
+
+- Staggered reveals: `stagger=` on BulletSlide, StepsSlide, DisplayPointsSlide,
+  DuoSlide, HighlightSlide, CompareSlide, CausalChainSlide (plus
+  `arrow_dur=`), TerritorySlide, RecallSlide, SpectrumSlide
+- Transitions: `trans_dur=` on `movie.add(..., transition="crossfade")`
+- RedPen: per-annotation `start=` + `dur=` (draw speed)
+- Magnifier: keyframe times in `path=`, or `Magnifier.trace_line(box, t0, t1)`
+  for a close reading at your chosen pace
+- KenBurns / Callout / MapZoom / Route: `stops=` + `hold=`
+- One-shot slides (Title, Quote, Stat): `duration=` is the pace
+
+There is deliberately no global speed multiplier — pacing is per-beat,
+because a title card and a close reading want different tempos.
+
+Movie-level overlays: `movie.overlay(ov)` applies an overlay *after* transition
+blending, so persistent chrome like `TimelineRibbon` never ghosts during
+crossfades. The overlay's `apply_movie(frame, t, total)` gets global time.
+
+Text layout (`slideforge.layout`): when a slide draws multiple text elements,
+their bounds are tracked, collisions detected, and resolved automatically —
+lower-priority boxes nudge out of the way, shrink if they allow it, and
+anything still colliding becomes a `validate()` warning. `TerritorySlide`
+runs its label pills through this, so a pill can never silently land on the
+title again.
 `KeywordPop(word, position=...)` — a giant outlined keyword that punches in
 beside the action (the "MAIZE" beat),
 `Sticker(image, at=..., label=...)` — cutout photo with a rough white

@@ -37,6 +37,7 @@ class Movie:
         self.transitions = []  # one (fn, dur) per boundary; first scene has none
         self.progress_bar = progress_bar
         self.bar_color = bar_color
+        self.movie_overlays = []  # applied after transition blending
 
     def add(self, scene, transition="crossfade", trans_dur=0.6):
         if scene.cfg is None:
@@ -53,6 +54,13 @@ class Movie:
                 except KeyError:
                     raise ValueError(f"unknown transition: {transition!r}")
             self.transitions.append((fn, float(trans_dur)))
+        return self
+
+    def overlay(self, overlay):
+        """Movie-level overlay: applied after transition blending, so it
+        never ghosts during crossfades. Ideal for persistent chrome like
+        TimelineRibbon."""
+        self.movie_overlays.append(overlay)
         return self
 
     # -- timeline math ----------------------------------------------------
@@ -101,6 +109,8 @@ class Movie:
             bw = int(w * (t / total))
             frame = frame.copy()
             frame[h - bh:, :bw] = self.bar_color
+        for ov in self.movie_overlays:
+            frame = ov.apply_movie(frame, t, total)
         return frame
 
     # -- rendering --------------------------------------------------------

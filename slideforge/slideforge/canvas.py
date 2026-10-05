@@ -1,45 +1,15 @@
 """Low-level drawing helpers: gradients, text, compositing (PIL + numpy)."""
 
-import os
-
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 
-_HERE = os.path.dirname(os.path.abspath(__file__))
-# Bundled fonts first: identical rendering on every platform, no system
-# dependency. (DejaVu is freely licensed and ships with the library.)
-_BUNDLED = os.path.normpath(os.path.join(_HERE, os.pardir, "assets", "fonts"))
-_FONT_CANDIDATES = {
-    ("sans", False): ["DejaVuSans.ttf", "Arial.ttf", "arial.ttf"],
-    ("sans", True): ["DejaVuSans-Bold.ttf", "Arialbd.ttf", "arialbd.ttf"],
-    ("serif", False): ["DejaVuSerif.ttf", "Times.ttf", "times.ttf"],
-    ("serif", True): ["DejaVuSerif-Bold.ttf", "Timesbd.ttf", "timesbd.ttf"],
+_DEJAVU = "/usr/share/fonts/truetype/dejavu/"
+_FONT_PATHS = {
+    ("sans", False): _DEJAVU + "DejaVuSans.ttf",
+    ("sans", True): _DEJAVU + "DejaVuSans-Bold.ttf",
+    ("serif", False): _DEJAVU + "DejaVuSerif.ttf",
+    ("serif", True): _DEJAVU + "DejaVuSerif-Bold.ttf",
 }
-# System dirs searched after the bundled fonts.
-_SYSTEM_DIRS = [
-    "/usr/share/fonts/truetype/dejavu/",          # Linux
-    "/usr/share/fonts/truetype/msttcorefonts/",   # Linux (Arial/Times)
-    r"C:\Windows\Fonts",                          # Windows
-    "/System/Library/Fonts",                      # macOS
-    "/Library/Fonts",                             # macOS
-]
-
-
-def _resolve_font(names):
-    """First existing path for the font names, bundled -> system."""
-    for name in names:
-        p = os.path.join(_BUNDLED, name)
-        if os.path.isfile(p):
-            return p
-    for d in _SYSTEM_DIRS:
-        for name in names:
-            p = os.path.join(d, name)
-            if os.path.isfile(p):
-                return p
-    return None
-
-
-_RESOLVED = {k: _resolve_font(v) for k, v in _FONT_CANDIDATES.items()}
 
 _font_cache = {}
 
@@ -49,15 +19,13 @@ def get_font(size, bold=False, serif=False):
     key = (serif, bold, size)
     if key not in _font_cache:
         family = "serif" if serif else "sans"
-        path = None
         for variant in [(family, bold), ("sans", bold), ("sans", False)]:
-            path = _RESOLVED.get(variant)
-            if path:
+            try:
+                _font_cache[key] = ImageFont.truetype(_FONT_PATHS[variant], size)
                 break
-        try:
-            _font_cache[key] = ImageFont.truetype(path, size) if path \
-                else ImageFont.load_default()
-        except OSError:  # pragma: no cover
+            except (OSError, KeyError):
+                continue
+        else:  # pragma: no cover
             _font_cache[key] = ImageFont.load_default()
     return _font_cache[key]
 

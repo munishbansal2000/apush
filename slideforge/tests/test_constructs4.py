@@ -153,3 +153,127 @@ class TestRound4Overlays(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestMovieOverlays(unittest.TestCase):
+    def test_movie_overlay_no_ghost_during_crossfade(self):
+        # the movie-level ribbon must render exactly once even mid-transition
+        from slideforge.slides import TitleSlide
+        m = Movie(Config(w=W, h=H, fps=10))
+        m.add(TitleSlide("A", duration=2.0, bg={"type": "solid",
+                                              "color": (20, 20, 30)}, cfg=cfg()),
+              transition="cut")
+        m.add(TitleSlide("B", duration=2.0, bg={"type": "solid",
+                                              "color": (20, 20, 30)}, cfg=cfg()),
+              transition="crossfade", trans_dur=1.0)
+        m.overlay(TimelineRibbon("ERA", events=[(0.5, "mid")], span=(0, 1)))
+        # mid-crossfade: t=2.0 is the boundary (1.0s overlap)
+        f = m.frame_at(2.0)
+        self.assertEqual(f.shape, (H, W, 3))
+        # count bright playhead dots on the track row: exactly one
+        ty = int(H * 0.956)
+        row = f[ty, int(W * 0.32):int(W * 0.96)]
+        bright = (row[:, 0].astype(int) > 200)
+        # label runs of bright pixels; the playhead is the widest run
+        runs, cur = [], 0
+        for v in bright:
+            if v:
+                cur += 1
+            elif cur:
+                runs.append(cur)
+                cur = 0
+        if cur:
+            runs.append(cur)
+        wide = [r for r in runs if r >= 8]
+        self.assertEqual(len(wide), 1, f"playhead ghosted: runs={runs}")
+
+
+class TestLineBoxes(unittest.TestCase):
+    def test_highlight_line_boxes(self):
+        from slideforge import Config
+        from slideforge.slides import HighlightSlide
+        # geometry needs a realistic frame; the 640x360 test config wraps
+        # the same paragraph onto more lines that overflow the frame
+        s = HighlightSlide(
+            "Bartolomé de las Casas watched the encomienda system devour "
+            "entire villages. ==He wrote that the Spanish 'laid waste' to "
+            "the islands==, and his account shocked readers back in Spain.",
+            cfg=Config(w=1280, h=720))
+        boxes = s.line_boxes()
+        self.assertGreater(len(boxes), 1)
+        for b in boxes:
+            for k in ("x0", "x1", "y0", "y1", "yc"):
+                self.assertIn(k, b)
+                self.assertGreaterEqual(b[k], 0.0)
+                self.assertLessEqual(b[k], 1.0)
+            self.assertLess(b["x0"], b["x1"])
+            self.assertLess(b["y0"], b["yc"])
+            self.assertLess(b["yc"], b["y1"])
+        # lines stack downward without overlap
+        for a, b in zip(boxes, boxes[1:]):
+            self.assertLessEqual(a["y1"], b["y0"] + 0.02)
+
+
+class TestWordBoxes(unittest.TestCase):
+    def test_bullet_word_boxes(self):
+        from slideforge import Config
+        from slideforge.slides import BulletSlide
+        s = BulletSlide("Title", ["alpha **beta** gamma",
+                                  "delta epsilon"], cfg=Config(w=1280, h=720))
+        wb = s.word_boxes()
+        for w in ("alpha", "beta", "gamma", "delta", "epsilon"):
+            self.assertIn(w, wb, f"missing word {w!r}")
+            x0, y0, x1, y1 = wb[w][0]
+            self.assertLess(x0, x1)
+            self.assertLess(y0, y1)
+            for v in (x0, y0, x1, y1):
+                self.assertGreaterEqual(v, 0.0)
+                self.assertLessEqual(v, 1.0)
+        # reading order: alpha before beta before gamma on line 1...
+        self.assertLess(wb["alpha"][0][0], wb["beta"][0][0])
+        self.assertLess(wb["beta"][0][0], wb["gamma"][0][0])
+        # ...and line 2 below line 1
+        self.assertLess(wb["gamma"][0][1], wb["delta"][0][1])
+
+
+class TestMagnifierTrace(unittest.TestCase):
+    def test_trace_line(self):
+        from slideforge.overlays import Magnifier
+        box = {"x0": 0.07, "x1": 0.90, "yc": 0.50,
+               "y0": 0.45, "y1": 0.55}
+        m = Magnifier.trace_line(box, 2.5, 9.0, radius=0.14, zoom=2.4)
+        self.assertEqual(len(m.path), 2)
+        (t0, x0, y0), (t1, x1, y1) = m.path
+        self.assertEqual((t0, t1), (2.5, 9.0))
+        # inside the line with margin, centered vertically on it
+        self.assertGreater(x0, box["x0"])
+        self.assertLess(x1, box["x1"])
+        self.assertAlmostEqual(y0, 0.50)
+        self.assertAlmostEqual(y1, 0.50)
+        self.assertLess(x0, x1)
+        self.assertEqual(m.radius, 0.14)
+        self.assertEqual(m.zoom, 2.4)
+        # mid-trace position interpolates along the line
+        mx, my = m._center_at(5.75)
+        self.assertAlmostEqual(my, 0.50)
+        self.assertGreater(mx, x0)
+        self.assertLess(mx, x1)
+
+
+class TestPacing(unittest.TestCase):
+    def test_bullet_stagger_param(self):
+        from slideforge import Config
+        from slideforge.slides import BulletSlide
+        cfg = Config(w=1280, h=720)
+        s = BulletSlide("T", ["a", "b", "c"], cfg=cfg, stagger=2.0)
+        self.assertEqual(s.stagger, 2.0)
+        # default duration scales with stagger
+        self.assertAlmostEqual(s.duration, 2.4 + 2.0 * 3)
+
+    def test_steps_stagger_param(self):
+        from slideforge import Config
+        from slideforge.slides import StepsSlide
+        cfg = Config(w=1280, h=720)
+        s = StepsSlide("T", ["a", "b"], cfg=cfg, stagger=1.0)
+        self.assertEqual(s.stagger, 1.0)
+        self.assertAlmostEqual(s.duration, 2.6 + 1.0 * 2)
