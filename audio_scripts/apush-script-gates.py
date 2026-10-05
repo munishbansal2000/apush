@@ -15,7 +15,7 @@ import sys
 
 WPM_CAP = 180
 
-BANNED_STARTERS = re.compile(r"^(That's|Here's|Here is)\b")
+BANNED_STARTERS = re.compile(r"^(\"[^\"]*\"\s*)?(That's|Here's|Here is)\b")
 # G1 is a density gate: 1-2 in an episode is human; 3+ is the tic.
 BANNED_STARTER_LIMIT = 3
 CURRICULUM_JARGON = re.compile(
