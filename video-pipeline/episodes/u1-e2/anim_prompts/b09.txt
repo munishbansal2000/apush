@@ -1,0 +1,15 @@
+# LTX clip prompt — u1-e2 / beat b09
+# Render on Windows RTX 5090, then drop the finished clip at:
+#   clips/b09.mp4
+# The pipeline uses it automatically when duration matches (19.3s +/- 1s).
+# No text in the clip — narration carries all words. No competing captions.
+
+Duration: 19.3s
+Resolution: 1920x1080, 30fps
+Style: cinematic documentary, natural light, photorealistic, subtle camera drift
+
+Shot:
+Extreme close-up of a brass astrolabe rotating slowly, engraved rings catching warm light, shallow depth of field. Museum artifact, no people.
+
+Negative: text, captions, subtitles, watermark, logo, people speaking to camera,
+cartoon, painting, oversaturated colors

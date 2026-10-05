@@ -1,0 +1,116 @@
+#!/usr/bin/env python3
+"""APUSH video pipeline — one command from beat sheet + audio to final video.
+
+Usage:
+  python3 pipeline.py --episode u1-e1 [--only timing,beats,anim,render,assemble,verify]
+                      [--force] [--skip-audio-build]
+
+Stages:
+  audio    ensure the mixed dialogue MP3 exists (runs cfg "audio_build" if set)
+  timing   turn timings + per-turn speech onsets from the real MP3s
+  beats    validate beat sheet, resolve boundaries to absolute seconds
+  anim     emit LTX clip prompts for Windows rendering (+ clip pickup happens in render)
+  render   one cached segment per beat (Ken Burns / vid / word-aligned chain)
+  assemble concat segments + mux dialogue audio
+  verify   fail-closed checks: duration, streams, audio level, no black frames
+
+Everything is deterministic: same inputs -> same output. Delete a segment
+file to force its re-render; --force re-renders everything.
+"""
+import argparse
+import json
+import os
+import subprocess
+import sys
+
+ROOT = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, ROOT)
+
+from stages import timing, beats, wordalign, anim, render, assemble, verify  # noqa: E402
+
+STAGES = ["audio", "timing", "beats", "wordalign", "anim", "render", "assemble", "verify"]
+
+
+def run_audio(ep_dir, cfg, skip_build=False):
+    tts_dir = os.path.normpath(os.path.join(ep_dir, cfg["tts_dir"]))
+    audio = os.path.join(tts_dir, cfg["audio"])
+    if os.path.exists(audio):
+        print(f"audio: {audio} present", flush=True)
+        return audio
+    cmd = cfg.get("audio_build")
+    if not cmd or skip_build:
+        raise RuntimeError(f"mixed audio missing: {audio} (no audio_build configured)")
+    print(f"audio: building via: {cmd}", flush=True)
+    r = subprocess.run(cmd, shell=True, cwd=tts_dir,
+                       capture_output=True, text=True, timeout=7200)
+    if r.returncode != 0:
+        raise RuntimeError(f"audio build failed: {r.stderr[-800:]}")
+    if not os.path.exists(audio):
+        raise RuntimeError(f"audio build finished but {audio} still missing")
+    return audio
+
+
+def main():
+    ap = argparse.ArgumentParser(description="APUSH video pipeline")
+    ap.add_argument("--episode", required=True, help="e.g. u1-e1")
+    ap.add_argument("--only", default="",
+                    help="comma-separated subset of stages to run")
+    ap.add_argument("--force", action="store_true",
+                    help="re-render all segments")
+    ap.add_argument("--skip-audio-build", action="store_true")
+    args = ap.parse_args()
+
+    ep_dir = os.path.join(ROOT, "episodes", args.episode)
+    cfg_path = os.path.join(ep_dir, "beats.json")
+    if not os.path.exists(cfg_path):
+        raise RuntimeError(f"no beat sheet: {cfg_path}")
+    with open(cfg_path, encoding="utf-8") as f:
+        cfg = json.load(f)
+    cfg["episode"] = args.episode
+    os.makedirs(os.path.join(ep_dir, "work"), exist_ok=True)
+
+    want = STAGES
+    if args.only:
+        want = [s.strip() for s in args.only.split(",") if s.strip()]
+        for s in want:
+            if s not in STAGES:
+                raise RuntimeError(f"unknown stage: {s}")
+
+    seg_paths = None
+    final = None
+    for stage in STAGES:
+        if stage not in want:
+            continue
+        print(f"=== stage: {stage} ===", flush=True)
+        if stage == "audio":
+            run_audio(ep_dir, cfg, args.skip_audio_build)
+        elif stage == "timing":
+            timing.run(ep_dir, cfg)
+        elif stage == "beats":
+            beats.run(ep_dir, cfg)
+        elif stage == "wordalign":
+            wordalign.run(ep_dir, cfg)
+        elif stage == "anim":
+            anim.run(ep_dir, cfg)
+        elif stage == "render":
+            seg_paths = render.run(ep_dir, cfg, force=args.force)
+        elif stage == "assemble":
+            if seg_paths is None:
+                # re-collect cached segments from resolved beats
+                with open(os.path.join(ep_dir, "work", "beats_resolved.json"),
+                          encoding="utf-8") as f:
+                    bs = json.load(f)["beats"]
+                seg_paths = [os.path.join(ep_dir, "work", "segs", b["id"] + ".mp4")
+                             for b in bs]
+            final = assemble.run(ep_dir, cfg, seg_paths)
+        elif stage == "verify":
+            if final is None:
+                final = os.path.join(ep_dir, f"{args.episode}-final.mp4")
+            verify.run(ep_dir, cfg, final)
+
+    if final:
+        print(f"PIPELINE DONE: {final}", flush=True)
+
+
+if __name__ == "__main__":
+    main()

@@ -210,6 +210,10 @@ def main():
     ap.add_argument("--rebuild", action="store_true", help="Re-synthesize all turns")
     ap.add_argument("--list-turns", action="store_true",
                     help="Print parsed segments and exit (no API calls)")
+    ap.add_argument("--turns-dir", default=None,
+                    help="Also write every segment as tNN.mp3 (t00, t01, ...) "
+                         "into this dir for the video pipeline's timing stage. "
+                         "Segment indices match --list-turns order.")
     args = ap.parse_args()
 
     script = Path(args.script)
@@ -263,6 +267,21 @@ def main():
     concat_mp3(parts, out)
     size_mb = out.stat().st_size / 1e6
     print(f"\nwrote {out} ({size_mb:.1f} MB, {len(parts)} segments)")
+
+    if args.turns_dir:
+        tdir = Path(args.turns_dir)
+        tdir.mkdir(parents=True, exist_ok=True)
+        for i, p in enumerate(parts):
+            dest = tdir / f"t{i:02d}.mp3"
+            if dest.exists():
+                dest.unlink()
+            # hard-link when possible (same filesystem), else copy
+            try:
+                os.link(p, dest)
+            except OSError:
+                import shutil
+                shutil.copy(p, dest)
+        print(f"wrote {len(parts)} turn files to {tdir} (t00..t{len(parts)-1:02d}.mp3)")
 
 
 if __name__ == "__main__":

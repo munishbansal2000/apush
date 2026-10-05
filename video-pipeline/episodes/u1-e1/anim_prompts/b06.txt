@@ -1,0 +1,15 @@
+# LTX clip prompt — u1-e1 / beat b06
+# Render on Windows RTX 5090, then drop the finished clip at:
+#   clips/b06.mp4
+# The pipeline uses it automatically when duration matches (14.9s +/- 1s).
+# No text in the clip — narration carries all words. No competing captions.
+
+Duration: 14.9s
+Resolution: 1920x1080, 30fps
+Style: cinematic documentary, natural light, photorealistic, subtle camera drift
+
+Shot:
+Slow aerial drift over an adobe pueblo village at golden hour, thin chimney smoke rising, desert mountains behind. No people in focus.
+
+Negative: text, captions, subtitles, watermark, logo, people speaking to camera,
+cartoon, painting, oversaturated colors
