@@ -67,7 +67,10 @@ def build(tts_dir, offset=1.8, gap=0.6, tail=4.5):
         total_dur += d
         t = end + gap
     total = offset + total_dur + gap * len(files) + tail
-    return {"gap": gap, "offset": offset, "turns": turns,
+    # The mix recipe (offset/gap/tail) must round-trip through this
+    # file: refit + the compiler validator read it back to rebuild the
+    # same model. A missing tail silently drops 4.5s of outro (seen live).
+    return {"gap": gap, "offset": offset, "tail": tail, "turns": turns,
             "dialogue_end": round(t - gap, 3),
             "computed_total": round(total, 3)}
 

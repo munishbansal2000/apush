@@ -76,6 +76,14 @@ def main():
                     choices=sorted(RENDERERS),
                     help="slideforge (default): LLM director + pure-Python "
                          "render; legacy: chrome-based beat segments")
+    ap.add_argument("--width", type=int, default=None,
+                    help="override cfg width (fast low-res tests)")
+    ap.add_argument("--height", type=int, default=None,
+                    help="override cfg height (fast low-res tests)")
+    ap.add_argument("--fps", type=int, default=None,
+                    help="override cfg fps")
+    ap.add_argument("--assets-dir", default=None,
+                    help="override assets dir (e.g. test placeholders)")
     ap.add_argument("--director-provider", default="agent",
                     choices=["mock", "agent", "openai"],
                     help="slideforge renderer only: who writes the scene plan")
@@ -92,6 +100,10 @@ def main():
     with open(cfg_path, encoding="utf-8") as f:
         cfg = json.load(f)
     cfg["episode"] = args.episode
+    for key in ("width", "height", "fps", "assets_dir"):
+        val = getattr(args, key)
+        if val is not None:
+            cfg[key] = val
     os.makedirs(os.path.join(ep_dir, "work"), exist_ok=True)
 
     renderer_stages = RENDERERS[args.renderer]

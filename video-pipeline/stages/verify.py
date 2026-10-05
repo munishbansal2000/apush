@@ -4,11 +4,11 @@ Fail-closed checks on the finished video. Any failure raises — the pipeline
 never silently ships a bad render.
 
 Checks:
-- duration matches cfg total within 0.6s
-- exactly one video stream (1920x1080) and one audio stream
+- duration matches cfg total within 0.6s (skipped when cfg has no total)
+- exactly one video stream (cfg width/height, default 1920x1080)
+  and one audio stream
 - audio is not silent (mean volume over a mid-file sample > -45 dB)
 - no black segments >= 0.5s (blackdetect)
-- every beat segment exists and is valid
 
 Writes: <episode>/work/verify.json
 """
@@ -32,8 +32,11 @@ def run(ep_dir, cfg, final_path):
     a = [s for s in streams if s["codec_type"] == "audio"]
     if len(v) != 1 or len(a) != 1:
         raise RuntimeError(f"expected 1v+1a streams, got {len(v)}v+{len(a)}a")
-    if v[0].get("width") != 1920 or v[0].get("height") != 1080:
-        raise RuntimeError(f"bad video dims: {v[0].get('width')}x{v[0].get('height')}")
+    exp_w, exp_h = int(cfg.get("width", 1920)), int(cfg.get("height", 1080))
+    if v[0].get("width") != exp_w or v[0].get("height") != exp_h:
+        raise RuntimeError(
+            f"bad video dims: {v[0].get('width')}x{v[0].get('height')} "
+            f"(expected {exp_w}x{exp_h} from cfg)")
 
     # audio not silent: sample 10s from the middle
     r = subprocess.run(

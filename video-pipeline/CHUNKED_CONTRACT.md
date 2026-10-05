@@ -62,6 +62,10 @@ side of merged-list items 7 (concat assemble) and 8 (verify gates).
 Re-running `render_scenes_chunked` skips scenes whose mp4 exists with
 the right frame count and rewrites the manifest. A failed scene
 re-renders alone (its chunk is the unit of retry, not the episode).
+Parallel-safe: `--jobs N` renders pending scenes in N worker processes;
+the manifest and chunk bytes are identical to a serial run. `--codec
+h264_nvenc` selects NVEnc encoding (needs an NVENC ffmpeg + NVIDIA GPU);
+`--preset veryfast` trades file size for encode speed on drafts.
 Stale plan content is NOT detected here — `stages/slideforge_render.py`
 keys its cache on the plan SHA; if you replace that stage, keep the
 SHA-keyed cache or accept re-renders.

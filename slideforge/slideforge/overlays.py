@@ -296,6 +296,24 @@ def with_overlays(scene, overlays):
     return _OverlayScene()
 
 
+def _cull_ribbon_labels(fracs, widths, pad):
+    """Indices whose labels fit without colliding (greedy left-to-right).
+
+    fracs: tick positions (any order); widths: label pixel widths;
+    pad: minimum gap between adjacent label boxes. Ticks always draw;
+    only crowded TEXT is culled, so dense ribbons stay legible instead
+    of overprinting ("1492ct 14921494", seen live).
+    """
+    show = set()
+    last_right = float("-inf")
+    for i in sorted(range(len(fracs)), key=lambda j: fracs[j]):
+        left = fracs[i] - widths[i] / 2
+        if left >= last_right + pad:
+            show.add(i)
+            last_right = fracs[i] + widths[i] / 2
+    return show
+
+
 class TimelineRibbon(Overlay):
     """Persistent era ribbon along the bottom: era label, event ticks, and a
     playhead that advances across this slide's `span` of the whole video.
@@ -342,14 +360,19 @@ class TimelineRibbon(Overlay):
         tx0, tx1 = w * 0.32, w * 0.96
         ty = y0 + bh * 0.62
         d.line([(tx0, ty), (tx1, ty)], fill=(90, 100, 120, int(255 * e_in)), width=3)
-        for frac, label in self.events:
+        lab_font = get_font(int(h * 0.024))
+        fracs = [tx0 + frac * (tx1 - tx0) for frac, _ in self.events]
+        widths = [lab_font.getlength(label) for _, label in self.events]
+        show = _cull_ribbon_labels(fracs, widths, int(w * 0.004))
+        for idx, (frac, label) in enumerate(self.events):
             tx = tx0 + frac * (tx1 - tx0)
             passed = frac <= prog + 1e-9
             col = self.accent if passed else (110, 120, 140)
             d.line([(tx, ty - 9), (tx, ty + 9)], fill=col + (int(255 * e_in),),
                    width=3)
-            d.text((tx, ty - 14), label, font=get_font(int(h * 0.024)),
-                   anchor="mb", fill=col + (int(230 * e_in),))
+            if idx in show:
+                d.text((tx, ty - 14), label, font=lab_font,
+                       anchor="mb", fill=col + (int(230 * e_in),))
         # playhead
         px = tx0 + prog * (tx1 - tx0)
         d.line([(px, ty - 16), (px, ty + 16)],

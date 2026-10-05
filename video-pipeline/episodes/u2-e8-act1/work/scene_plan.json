@@ -21,7 +21,7 @@
      ]
     ]
    },
-   "duration_sec": 22.8,
+   "duration_sec": 29.664,
    "transition": "cut",
    "trans_dur": 0,
    "turns": [
@@ -37,7 +37,7 @@
     "src": "ltx/act1_ohio_zoom.mp4",
     "gen": "episodes/u2-e8-act1/ltx/prompts/ohio_zoom.txt \u2014 6s push-in; conform loops to scene frames"
    },
-   "duration_sec": 13.2,
+   "duration_sec": 14.616,
    "transition": "cut",
    "trans_dur": 0,
    "turns": [
@@ -73,7 +73,7 @@
     "src": "ltx/act1_jumonville_rain.mp4",
     "gen": "episodes/u2-e8-act1/ltx/prompts/jumonville_rain.txt \u2014 5s seamless rain drift; conform loops to scene frames"
    },
-   "duration_sec": 17.6,
+   "duration_sec": 19.56,
    "transition": "cut",
    "trans_dur": 0,
    "turns": [
@@ -109,9 +109,14 @@
     "text": "The French called Jumonville an ==assassination== \u2014 and Washington signed a surrender at ==Fort Necessity== calling it ==l'assassinat==, saying he hadn't understood the translation.",
     "bg": {
      "type": "textured"
-    }
+    },
+    "ink": [
+     236,
+     230,
+     218
+    ]
    },
-   "duration_sec": 16.4,
+   "duration_sec": 18.552,
    "transition": "cut",
    "trans_dur": 0,
    "turns": [
@@ -143,7 +148,7 @@
      "type": "textured"
     }
    },
-   "duration_sec": 4.8,
+   "duration_sec": 5.664,
    "transition": "cut",
    "trans_dur": 0,
    "turns": [
@@ -159,7 +164,7 @@
     "src": "ltx/act1_braddock_route.mp4",
     "gen": "episodes/u2-e8-act1/ltx/prompts/braddock_route.txt \u2014 8s route draw; generate at 16s if LTX allows, else conform loops"
    },
-   "duration_sec": 15.6,
+   "duration_sec": 16.368,
    "transition": "cut",
    "trans_dur": 0,
    "turns": [
@@ -198,7 +203,7 @@
      "type": "textured"
     }
    },
-   "duration_sec": 15.2,
+   "duration_sec": 13.8,
    "transition": "cut",
    "trans_dur": 0,
    "turns": [
@@ -214,7 +219,7 @@
     "src": "ltx/act1_monongahela_pulse.mp4",
     "gen": "episodes/u2-e8-act1/ltx/prompts/monongahela_pulse.txt \u2014 6s pulse; conform loops to scene frames"
    },
-   "duration_sec": 17.6,
+   "duration_sec": 22.668,
    "transition": "cut",
    "trans_dur": 0,
    "turns": [

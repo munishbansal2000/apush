@@ -856,12 +856,14 @@ class DisplayHeadline(Slide):
         return frame
 
 
-def _paper_line_img(tokens, size, hl_fill=(229, 45, 39)):
-    """Black paper-style text line -> (text_img, swash_img).
+def _paper_line_img(tokens, size, hl_fill=(229, 45, 39),
+                    ink=(24, 22, 20)):
+    """Paper-style text line -> (text_img, swash_img).
 
-    **bold** uses the bold face. ==highlight== spans are black on a red
+    **bold** uses the bold face. ==highlight== spans sit on a red
     marker swash; swashes live on their own layer so a slide can wipe
-    them in separately.
+    them in separately. ink is the (r, g, b) text color: paper-black
+    by default, pass a light ink for dark backgrounds.
     """
     f_reg = get_font(size, bold=False)
     f_bld = get_font(size, bold=True)
@@ -885,7 +887,7 @@ def _paper_line_img(tokens, size, hl_fill=(229, 45, 39)):
             runs.append(tuple(cur))
             cur = None
         d.text((x, y0), w + " ", font=f_bld if b else f_reg,
-               fill=(24, 22, 20, 255))
+               fill=tuple(ink) + (255,))
         x += tw
     if cur is not None:
         runs.append((cur[0], x))
@@ -915,7 +917,8 @@ def _paper_line_img(tokens, size, hl_fill=(229, 45, 39)):
     return text_img, swash_img
 
 
-def _paper_block(text, size, max_w, hl_fill=(229, 45, 39)):
+def _paper_block(text, size, max_w, hl_fill=(229, 45, 39),
+                 ink=(24, 22, 20)):
     """Wrapped paper text -> list of (text_img, swash_img) per line."""
     tokens = _rich_tokens(text)
     f_bld = get_font(size, bold=True)
@@ -931,7 +934,8 @@ def _paper_block(text, size, max_w, hl_fill=(229, 45, 39)):
         cw += tw
     if cur:
         lines.append(cur)
-    return [_paper_line_img(ln, size, hl_fill) for ln in lines or [[]]]
+    return [_paper_line_img(ln, size, hl_fill, ink)
+            for ln in lines or [[]]]
 
 
 _PAPER_BG = {"type": "gradient", "top": (247, 243, 233), "bottom": (230, 223, 205)}
@@ -1081,13 +1085,23 @@ class HighlightSlide(Slide):
 
     text: paragraph with **bold** / ==highlight== markers; lines stagger
     in and each marker swash wipes on after its line lands.
+    ink: (r, g, b) text color, paper-black by default; pass a light
+    ink (e.g. [236, 230, 218]) when the bg is dark.
     card: optional {"image": path, "caption": "..."} — a tilted photo card
     pinned top-right with a caption bar, like the review-video cutaway.
     """
 
     def __init__(self, text, card=None, duration=None, bg=None, stagger=0.8,
-                 cfg=None):
+                 cfg=None, ink=None):
         bg = _PAPER_BG if bg is None else bg
+        if ink is None:
+            ink = (24, 22, 20)
+        ink = tuple(ink)
+        if len(ink) != 3 or not all(
+                isinstance(c, int) and 0 <= c <= 255 for c in ink):
+            raise ValueError(
+                f"ink must be (r, g, b) ints 0-255, got {ink!r}")
+        self.ink = ink
         self.text = text
         self.card = card
         self.stagger = stagger
@@ -1101,7 +1115,8 @@ class HighlightSlide(Slide):
         if self._lines is None:
             h, w = self.cfg.h, self.cfg.w
             max_w = w * (0.56 if self.card else 0.86)
-            self._lines = _paper_block(self.text, int(h * 0.058), max_w)
+            self._lines = _paper_block(self.text, int(h * 0.058), max_w,
+                                       ink=self.ink)
             # record each line's fractional geometry so overlays (e.g.
             # Magnifier) can target text instead of guessing coordinates
             self._line_boxes = []
@@ -1163,7 +1178,7 @@ class HighlightSlide(Slide):
             self._register_text(
                 f"line:{i}",
                 (lb["x0"] * w, lb["y0"] * h, lb["x1"] * w, lb["y1"] * h),
-                (35, 32, 28), int(h * 0.058))
+                self.ink, int(h * 0.058))
         x0, y = w * 0.07, h * (0.30 if self.card else 0.24)
         for i, (timg, simg) in enumerate(self._lines):
             e = a01(t, 0.4 + i * self.stagger, 0.5)

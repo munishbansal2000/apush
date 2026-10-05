@@ -443,9 +443,6 @@ def _build_scene(spec, assets_dir, scene_id):
     # map_image + waypoints.
     route_name = params.pop("route", None)
     # 'gen' is clip provenance (which prompt/file generated it), not a
-    # constructor arg. Keep it out of the slide kwargs.
-    params.pop("gen", None)
-    # 'gen' is clip provenance (which prompt/file generated it), not a
     # constructor arg. The existing u2-e8 plan carries it; keep it out of
     # the slide kwargs.
     params.pop("gen", None)
@@ -537,8 +534,85 @@ def _frame_boundaries(durations, fps):
     return bounds
 
 
+CODECS = ("libx264", "h264_nvenc")
+
+# x264 preset names accepted for --preset; ffmpeg maps the unknown-to-
+# NVENC ones so --preset veryfast --codec h264_nvenc just works.
+_NVENC_PRESET_MAP = {
+    "ultrafast": "fast", "superfast": "fast", "veryfast": "fast",
+    "faster": "fast", "fast": "fast", "medium": "medium",
+    "slow": "slow", "slower": "slow", "veryslow": "slow",
+}
+
+_ENCODERS_CACHE = None
+
+
+def _check_codec(codec):
+    """Fail fast on unknown or missing encoders, before any rendering."""
+    if codec not in CODECS:
+        raise ValueError(
+            f"unknown codec {codec!r} "
+            f"(expected one of: {', '.join(CODECS)})")
+    if codec == "libx264":
+        return
+    global _ENCODERS_CACHE
+    if _ENCODERS_CACHE is None:
+        try:
+            r = subprocess.run(["ffmpeg", "-hide_banner", "-encoders"],
+                               capture_output=True, text=True, timeout=30)
+            _ENCODERS_CACHE = r.stdout if r.returncode == 0 else ""
+        except (OSError, subprocess.SubprocessError):
+            _ENCODERS_CACHE = ""
+    names = {ln.split()[1] for ln in _ENCODERS_CACHE.splitlines()
+             if ln.startswith(" ") and len(ln.split()) > 1}
+    if codec not in names:
+        raise RuntimeError(
+            f"codec {codec!r} is not in this ffmpeg build "
+            f"(`ffmpeg -encoders`); use libx264 or install an "
+            f"NVENC-enabled ffmpeg")
+
+
+def _ensure_worker_path():
+    """Make this module importable in spawned workers (Windows/macOS).
+
+    Spawned children re-import compile_scene_plan by module name; the
+    pipeline and slideforge dirs must resolve there via PYTHONPATH.
+    """
+    cur = os.environ.get("PYTHONPATH", "")
+    have = cur.split(os.pathsep) if cur else []
+    for p in (_HERE, _SLIDEFORGE):
+        if p not in have:
+            cur = p + os.pathsep + cur if cur else p
+    os.environ["PYTHONPATH"] = cur
+
+
+def _render_chunk_job(job):
+    """Render one scene chunk in a worker process. Returns manifest entry.
+
+    `job` is plain picklable data. Each worker rebuilds the Movie from
+    the plan (validating turns, transitions, and the compensation
+    invariant) and renders only its own frame range, so parallel
+    output is identical to the serial render.
+    """
+    movie, _plan, _orig, scenes = _build_movie(
+        _load_plan(job["plan_path"]), job["assets_dir"],
+        job["width"], job["height"], job["fps"])
+    try:
+        _render_frame_range(
+            movie, job["f0"], job["n"],
+            os.path.join(job["out_dir"], job["file"]),
+            job["width"], job["height"], job["fps"],
+            codec=job["codec"], preset=job["preset"], quiet=job["quiet"])
+    finally:
+        for scene, _, _ in scenes:
+            _cleanup_scene(scene)
+    return {"index": job["index"], "id": job["id"], "file": job["file"],
+            "start_frame": job["f0"], "frames": job["n"]}
+
+
 def render_scenes_chunked(plan_path, assets_dir, out_dir, width=1280,
-                          height=720, fps=30, timings=None, quiet=False):
+                          height=720, fps=30, timings=None, quiet=False,
+                          jobs=1, codec="libx264", preset="medium"):
     """Render each scene to its own mp4 with frame-exact boundaries.
 
     Every scene gets exactly the frames its audio owns; transitions blend
@@ -546,11 +620,21 @@ def render_scenes_chunked(plan_path, assets_dir, out_dir, width=1280,
     incoming chunk, exactly as Movie.frame_at renders them). A failed
     scene can be re-rendered alone; concat is a stream copy.
 
-    Writes out_dir/scene-XX-<id>.mp4 plus manifest.json:
-    {fps, total_frames, scenes: [{id, file, start_frame, frames}]}.
+    Writes out_dir/NN-<slug>.mp4 plus manifest.json:
+    {fps, width, height, total_frames, episode,
+     scenes: [{id, file, start_frame, frames}]}.
+
+    jobs > 1 renders pending scenes in worker processes (each rebuilds
+    the Movie and renders its own frames; output is identical to the
+    serial render). codec h264_nvenc needs an NVENC-enabled ffmpeg and
+    an NVIDIA GPU. preset veryfast trades file size for encode speed.
 
     Returns the manifest path.
     """
+    _check_codec(codec)
+    if (not isinstance(jobs, int) or isinstance(jobs, bool)
+            or jobs < 1):
+        raise PlanError(f"jobs must be a positive int, got {jobs!r}")
     assets_dir = os.path.abspath(assets_dir)
     if not os.path.isdir(assets_dir):
         raise PlanError(f"assets dir not found: {assets_dir!r}")
@@ -562,9 +646,8 @@ def render_scenes_chunked(plan_path, assets_dir, out_dir, width=1280,
         print("warning: no --timings given; rendering from plan durations "
               "(estimates leak sync — pass work/timings.json)",
               file=sys.stderr)
-    movie, plan, orig_durations, _ = _build_movie(
-        plan, assets_dir, width, height, fps)
-
+    _validate_turns(plan)
+    orig_durations = [float(s["duration_sec"]) for s in plan["scenes"]]
     bounds = _frame_boundaries(orig_durations, fps)
     total_frames = bounds[-1]
     os.makedirs(out_dir, exist_ok=True)
@@ -572,29 +655,78 @@ def render_scenes_chunked(plan_path, assets_dir, out_dir, width=1280,
     manifest = {"fps": int(fps), "width": w, "height": h,
                 "total_frames": total_frames,
                 "episode": plan["episode"], "scenes": []}
-    for i, spec in enumerate(plan["scenes"]):
-        sid = spec.get("id") or f"scene-{i:02d}"
-        f0, f1 = bounds[i], bounds[i + 1]
-        n = f1 - f0
-        if n <= 0:
-            raise PlanError(
-                f"scene '{sid}': frame-exact boundary collapse "
-                f"({f0}..{f1}); duration too short for {fps}fps")
-        fname = f"{i:02d}-{_slug(sid)}.mp4"
-        out = os.path.join(out_dir, fname)
-        if _chunk_is_fresh(out, n):
-            if not quiet:
-                print(f"  chunk {i + 1}/{len(plan['scenes'])} {sid}: "
-                      f"{n} frames fresh -> {fname} (skipped)",
-                      flush=True)
-        else:
-            _render_frame_range(movie, f0, n, out, w, h, int(fps),
-                                quiet=quiet)
-            if not quiet:
-                print(f"  chunk {i + 1}/{len(plan['scenes'])} {sid}: "
-                      f"{n} frames -> {fname}", flush=True)
-        manifest["scenes"].append(
-            {"id": sid, "file": fname, "start_frame": f0, "frames": n})
+    if jobs == 1:
+        movie, plan, orig_durations, _ = _build_movie(
+            plan, assets_dir, width, height, fps)
+        for i, spec in enumerate(plan["scenes"]):
+            sid = spec.get("id") or f"scene-{i:02d}"
+            f0, f1 = bounds[i], bounds[i + 1]
+            n = f1 - f0
+            if n <= 0:
+                raise PlanError(
+                    f"scene '{sid}': frame-exact boundary collapse "
+                    f"({f0}..{f1}); duration too short for {fps}fps")
+            fname = f"{i:02d}-{_slug(sid)}.mp4"
+            out = os.path.join(out_dir, fname)
+            if _chunk_is_fresh(out, n):
+                if not quiet:
+                    print(f"  chunk {i + 1}/{len(plan['scenes'])} {sid}: "
+                          f"{n} frames fresh -> {fname} (skipped)",
+                          flush=True)
+            else:
+                _render_frame_range(movie, f0, n, out, w, h, int(fps),
+                                    codec=codec, preset=preset,
+                                    quiet=quiet)
+                if not quiet:
+                    print(f"  chunk {i + 1}/{len(plan['scenes'])} {sid}: "
+                          f"{n} frames -> {fname}", flush=True)
+            manifest["scenes"].append(
+                {"id": sid, "file": fname,
+                 "start_frame": f0, "frames": n})
+    else:
+        from concurrent.futures import ProcessPoolExecutor
+        scenes = plan["scenes"]
+        entries = {}
+        pending = []
+        for i, spec in enumerate(scenes):
+            sid = spec.get("id") or f"scene-{i:02d}"
+            f0, f1 = bounds[i], bounds[i + 1]
+            n = f1 - f0
+            if n <= 0:
+                raise PlanError(
+                    f"scene '{sid}': frame-exact boundary collapse "
+                    f"({f0}..{f1}); duration too short for {fps}fps")
+            fname = f"{i:02d}-{_slug(sid)}.mp4"
+            out = os.path.join(out_dir, fname)
+            if _chunk_is_fresh(out, n):
+                if not quiet:
+                    print(f"  chunk {i + 1}/{len(scenes)} {sid}: "
+                          f"{n} frames fresh -> {fname} (skipped)",
+                          flush=True)
+                entries[i] = {"id": sid, "file": fname,
+                              "start_frame": f0, "frames": n}
+            else:
+                pending.append({"plan_path": os.path.abspath(plan_path),
+                                "assets_dir": assets_dir,
+                                "width": w, "height": h,
+                                "fps": int(fps),
+                                "index": i, "id": sid, "file": fname,
+                                "out_dir": os.path.abspath(out_dir),
+                                "f0": f0, "n": n, "codec": codec,
+                                "preset": preset, "quiet": quiet})
+        if pending:
+            _ensure_worker_path()
+            workers = min(jobs, len(pending))
+            with ProcessPoolExecutor(max_workers=workers) as ex:
+                for res in ex.map(_render_chunk_job, pending):
+                    idx = res.pop("index")
+                    entries[idx] = res
+                    if not quiet:
+                        print(f"  chunk {idx + 1}/{len(scenes)} "
+                              f"{res['id']}: {res['frames']} frames -> "
+                              f"{res['file']}", flush=True)
+        for i in sorted(entries):
+            manifest["scenes"].append(entries[i])
     man_path = os.path.join(out_dir, "manifest.json")
     with open(man_path, "w", encoding="utf-8") as f:
         json.dump(manifest, f, indent=1)
@@ -606,15 +738,23 @@ def _slug(sid):
 
 
 def _render_frame_range(movie, start_frame, n_frames, out_path, w, h, fps,
-                        quiet=False):
-    """Render movie frames [start_frame, start_frame+n_frames) to mp4."""
+                        quiet=False, codec="libx264", preset="medium"):
+    """Render movie frames [start_frame, start_frame+n_frames) to mp4.
+
+    codec is libx264 or h264_nvenc (preflighted by _check_codec);
+    preset veryfast trades file size for encode speed on drafts.
+    """
     import numpy as np  # noqa: E402  (deferred: only needed at render time)
     os.makedirs(os.path.dirname(os.path.abspath(out_path)), exist_ok=True)
+    if codec == "libx264":
+        quality = ["-crf", "18", "-preset", preset]
+    else:
+        quality = ["-cq", "18", "-preset",
+                   _NVENC_PRESET_MAP.get(preset, preset)]
     cmd = ["ffmpeg", "-y",
            "-f", "rawvideo", "-pix_fmt", "rgb24",
            "-s", f"{w}x{h}", "-r", str(fps), "-i", "-",
-           "-an", "-c:v", "libx264", "-pix_fmt", "yuv420p",
-           "-crf", "18", "-preset", "medium",
+           "-an", "-c:v", codec, "-pix_fmt", "yuv420p"] + quality + [
            "-movflags", "+faststart", out_path]
     proc = None
     try:
@@ -696,13 +836,14 @@ def _run_lint(plan):
 
 def compile_scene_plan(plan_path, assets_dir, out_mp4,
                        width=1280, height=720, fps=30, quiet=False,
-                       timings=None):
+                       timings=None, preset="medium"):
     """Compile a scene plan JSON into an mp4. Returns a summary dict.
 
     Raises PlanError on any structural problem, before rendering.
     When `timings` (path to work/timings.json) is given, every scene's
     duration_sec must match its measured turn audio within 0.02s —
-    estimates are refused.
+    estimates are refused. preset is the x264 preset (veryfast for
+    quick drafts); --jobs/--codec speedups live on the chunked path.
     """
     assets_dir = os.path.abspath(assets_dir)
     if not os.path.isdir(assets_dir):
@@ -722,7 +863,7 @@ def compile_scene_plan(plan_path, assets_dir, out_mp4,
     out_dir = os.path.dirname(os.path.abspath(out_mp4))
     os.makedirs(out_dir, exist_ok=True)
     try:
-        movie.render(out_mp4, quiet=quiet)
+        movie.render(out_mp4, quiet=quiet, preset=preset)
     finally:
         for scene, _, _ in scenes:
             _cleanup_scene(scene)
@@ -771,19 +912,34 @@ def main(argv=None):
                     help="render per-scene mp4s + manifest.json into OUT "
                          "(frame-exact; a failed scene re-renders alone) "
                          "instead of one mp4")
+    ap.add_argument("--jobs", type=int, default=1,
+                    help="chunked only: parallel scene workers "
+                         "(default 1 = serial; output is identical)")
+    ap.add_argument("--codec", default="libx264",
+                    help="chunked only: ffmpeg video encoder: libx264 "
+                         "(default) or h264_nvenc (needs NVENC ffmpeg "
+                         "and an NVIDIA GPU)")
+    ap.add_argument("--preset", default="medium",
+                    help="encoder preset: medium (default) or veryfast "
+                         "for quick drafts")
     args = ap.parse_args(argv)
     try:
         if args.chunked:
             man = render_scenes_chunked(
                 args.plan, args.assets, args.out,
                 width=args.width, height=args.height, fps=args.fps,
-                timings=args.timings, quiet=args.quiet)
+                timings=args.timings, quiet=args.quiet,
+                jobs=args.jobs, codec=args.codec, preset=args.preset)
             print(f"chunked render -> {man}")
         else:
+            if args.jobs != 1 or args.codec != "libx264":
+                print("note: --jobs/--codec apply to --chunked only; "
+                      "single-file render uses libx264", file=sys.stderr)
             summary = compile_scene_plan(
                 args.plan, args.assets, args.out,
                 width=args.width, height=args.height, fps=args.fps,
-                quiet=args.quiet, timings=args.timings)
+                quiet=args.quiet, timings=args.timings,
+                preset=args.preset)
             print(f"compiled {summary['scenes']} scenes -> {summary['output']} "
                   f"({summary['duration_sec']:.1f}s, {summary['frames']}f)")
     except PlanError as e:

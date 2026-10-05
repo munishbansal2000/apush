@@ -238,6 +238,83 @@ def test_chunk_is_fresh(tmp_path):
     assert csp._chunk_is_fresh(p, 61) is False  # wrong frame count
 
 
+# --- parallel chunked render: jobs determinism --------------------------------
+
+
+def _tiny_jobs_plan(tmp_path):
+    scenes = [
+        {"id": "a", "slide": "titleslide", "params": {"title": "A"},
+         "duration_sec": 1.0, "transition": "cut", "trans_dur": 0,
+         "turns": [0, 0]},
+        {"id": "b", "slide": "titleslide", "params": {"title": "B"},
+         "duration_sec": 1.5, "transition": "crossfade",
+         "trans_dur": 0.5, "turns": [1, 1]},
+        {"id": "c", "slide": "titleslide", "params": {"title": "C"},
+         "duration_sec": 2.0, "transition": "cut", "trans_dur": 0,
+         "turns": [2, 2]},
+    ]
+    p = tmp_path / "plan.json"
+    p.write_text(json.dumps({"version": 1, "episode": "t",
+                             "scenes": scenes}))
+    assets = tmp_path / "assets"
+    assets.mkdir()
+    return str(p), str(assets)
+
+
+def test_chunked_jobs_match_serial(tmp_path):
+    plan, assets = _tiny_jobs_plan(tmp_path)
+    kw = dict(width=160, height=90, fps=10, quiet=True)
+    m1 = csp.render_scenes_chunked(plan, assets, str(tmp_path / "s1"),
+                                   **kw)
+    m2 = csp.render_scenes_chunked(plan, assets, str(tmp_path / "s3"),
+                                   jobs=3, **kw)
+    j1 = json.load(open(m1))
+    j2 = json.load(open(m2))
+    assert j1 == j2
+    assert j1["total_frames"] == 45
+    for s in j1["scenes"]:
+        b1 = open(os.path.join(str(tmp_path / "s1"), s["file"]),
+                  "rb").read()
+        b2 = open(os.path.join(str(tmp_path / "s3"), s["file"]),
+                  "rb").read()
+        # x264 frame-threading is deterministic: same frames in,
+        # same bytes out, regardless of worker count.
+        assert b1 == b2
+
+
+def test_chunked_jobs_and_codec_validated_fast(tmp_path):
+    plan, assets = _tiny_jobs_plan(tmp_path)
+    with pytest.raises(PlanError, match="jobs"):
+        csp.render_scenes_chunked(plan, assets, str(tmp_path / "x"),
+                                  quiet=True, jobs=0)
+    with pytest.raises(ValueError, match="unknown codec"):
+        csp.render_scenes_chunked(plan, assets, str(tmp_path / "x"),
+                                  quiet=True, codec="bogus")
+
+
+def test_chunked_nvenc_or_preflight(tmp_path):
+    plan, assets = _tiny_jobs_plan(tmp_path)
+    kw = dict(width=160, height=90, fps=10, quiet=True)
+    try:
+        csp._check_codec("h264_nvenc")
+    except RuntimeError:
+        # No NVENC ffmpeg here: the preflight must fail loud and
+        # fast, before any frame renders.
+        with pytest.raises(RuntimeError, match="ffmpeg"):
+            csp.render_scenes_chunked(plan, assets, str(tmp_path / "x"),
+                                      codec="h264_nvenc", **kw)
+        return
+    man = csp.render_scenes_chunked(plan, assets, str(tmp_path / "nv"),
+                                    codec="h264_nvenc", preset="veryfast",
+                                    **kw)
+    j = json.load(open(man))
+    assert j["total_frames"] == 45
+    for s in j["scenes"]:
+        got = csp._probe_frame_count(
+            os.path.join(str(tmp_path / "nv"), s["file"]))
+        assert got == s["frames"]
+
+
 # --- item 6: _probe_frame_count sanity ----------------------------------------
 
 def test_probe_frame_count(tmp_path):

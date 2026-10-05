@@ -157,3 +157,42 @@ class TestTimelineRibbonHeight(unittest.TestCase):
             TimelineRibbon("era", height_frac=0)
         with self.assertRaises(ValueError):
             TimelineRibbon("era", height_frac=0.9)
+
+
+class TestRibbonLabelCulling(unittest.TestCase):
+    def test_dense_labels_culled_middle_first(self):
+        from slideforge.overlays import _cull_ribbon_labels
+        # the middle tick crowds the first: it goes, the outer two stay
+        show = _cull_ribbon_labels([100.0, 101.0, 200.0],
+                                   [40.0, 40.0, 40.0], 2)
+        self.assertEqual(show, {0, 2})
+
+    def test_wall_of_labels_keeps_leftmost_only(self):
+        from slideforge.overlays import _cull_ribbon_labels
+        show = _cull_ribbon_labels([100.0, 101.0, 102.0],
+                                   [40.0, 40.0, 40.0], 2)
+        self.assertEqual(show, {0})
+
+    def test_sparse_labels_all_kept(self):
+        from slideforge.overlays import _cull_ribbon_labels
+        show = _cull_ribbon_labels([0.0, 100.0, 200.0],
+                                   [40.0, 40.0, 40.0], 2)
+        self.assertEqual(show, {0, 1, 2})
+
+    def test_culling_order_independent(self):
+        from slideforge.overlays import _cull_ribbon_labels
+        # events listed out of order cull identically (greedy by x)
+        show = _cull_ribbon_labels([102.0, 100.0, 200.0],
+                                   [40.0, 40.0, 40.0], 2)
+        self.assertEqual(show, {1, 2})
+
+    def test_ribbon_still_renders_with_culling(self):
+        base = np.zeros((360, 640, 3), dtype=np.uint8)
+        rib = TimelineRibbon(
+            "THE COLLISION", duration=10.0, height_frac=0.07,
+            events=[(0.0, "1453"), (0.42, "1492"), (0.44, "Oct 1492"),
+                    (0.47, "1494"), (0.8, "1521"), (1.0, "1542")])
+        out = rib.apply(base.copy(), 5.0)
+        # ticks still draw in the culled zone (only text is culled)
+        band = out[360 - int(360 * 0.07):]
+        self.assertTrue((band != 0).any())

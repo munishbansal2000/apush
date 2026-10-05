@@ -189,6 +189,34 @@ class TestMovieOverlays(unittest.TestCase):
 
 
 class TestLineBoxes(unittest.TestCase):
+    def test_highlight_ink_light_and_default(self):
+        import numpy as np
+        from slideforge import Config
+        from slideforge.slides import HighlightSlide
+
+        def glyph_lum(slide, pct):
+            fr = np.asarray(slide.frame(5.9))
+            b = slide.line_boxes()[0]
+            x0, x1 = int(b["x0"] * 640), int(b["x1"] * 640)
+            y0, y1 = int(b["y0"] * 360), int(b["y1"] * 360)
+            return np.percentile(fr[y0:y1, x0:x1].mean(axis=2), pct)
+
+        text = "The French called Jumonville an ==assassination==."
+        # default ink is paper-black: dark glyphs on the light bg
+        paper = HighlightSlide(text, duration=6.0,
+                               cfg=Config(w=640, h=360))
+        self.assertLess(glyph_lum(paper, 1), 100)
+        # light ink reads on a dark textured bg (seen live: near-black
+        # default ink on near-black bg was unreadable)
+        dark = HighlightSlide(text, ink=[236, 230, 218],
+                              bg={"type": "textured"}, duration=6.0,
+                              cfg=Config(w=640, h=360))
+        # glyphs cover <5% of the padded line box: p99 lands on them
+        self.assertGreater(glyph_lum(dark, 99), 150)
+        with self.assertRaises(ValueError):
+            HighlightSlide(text, ink=[9, 9],
+                           cfg=Config(w=640, h=360))
+
     def test_highlight_line_boxes(self):
         from slideforge import Config
         from slideforge.slides import HighlightSlide

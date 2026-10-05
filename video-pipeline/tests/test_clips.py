@@ -261,7 +261,11 @@ def test_pipeline_wires_clips_stage():
     assert pipeline.STAGES.index("clips") == \
         pipeline.STAGES.index("anim") + 1
     assert "clips" in pipeline.RENDERERS["legacy"]
-    assert "clips" not in pipeline.RENDERERS["slideforge"]
+    # slideforge path generates anim_prompt clips after the plan exists
+    # (direct) and before the render consumes them (slideforge_render)
+    sf = pipeline.RENDERERS["slideforge"]
+    assert sf.index("direct") < sf.index("clips") < sf.index(
+        "slideforge_render")
 
 def test_changed_prompt_regenerates_clip(tmp_path):
     # stale fingerprint: the clip file exists, but the MANIFEST records an
