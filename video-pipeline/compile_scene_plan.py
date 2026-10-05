@@ -13,9 +13,12 @@ Public entry point:
     compile_scene_plan(plan_path, assets_dir, out_mp4,
                        width=1280, height=720, fps=30) -> dict summary
 """
+import copy
+import hashlib
 import inspect
 import json
 import os
+import subprocess
 import sys
 
 _HERE = os.path.dirname(os.path.abspath(__file__))
@@ -113,6 +116,99 @@ def _load_plan(plan_path):
     scenes = plan.get("scenes")
     if not isinstance(scenes, list) or not scenes:
         raise PlanError("scene plan must contain a non-empty 'scenes' list")
+    return plan
+
+
+def _validate_turns(plan):
+    """Every scene's turns [a, b] must partition 0..N-1 contiguously.
+
+    The turn partition is the contract between the audio timeline (straight
+    concat of turn files) and the video timeline. A gap or overlap here is
+    silent A/V desync, so it fails fast.
+    """
+    covered = set()
+    for i, spec in enumerate(plan["scenes"]):
+        sid = spec.get("id") if isinstance(spec, dict) else f"scene-{i:02d}"
+        turns = spec.get("turns") if isinstance(spec, dict) else None
+        if (not isinstance(turns, (list, tuple)) or len(turns) != 2
+                or not all(isinstance(x, int) for x in turns)):
+            raise PlanError(
+                f"scene '{sid}': 'turns' must be [start, end] ints, "
+                f"got {turns!r}")
+        a, b = turns
+        if a > b or a < 0:
+            raise PlanError(f"scene '{sid}': bad turns range [{a}, {b}]")
+        rng = set(range(a, b + 1))
+        if rng & covered:
+            raise PlanError(
+                f"scene '{sid}': turns [{a}, {b}] overlap another scene")
+        covered |= rng
+    n = max(s["turns"][1] for s in plan["scenes"]) + 1
+    if covered != set(range(n)):
+        missing = sorted(set(range(n)) - covered)
+        raise PlanError(f"turns not covered by any scene: {missing}")
+
+
+def _validate_against_timings(plan, timings_path, tol=0.02):
+    """Refuse to render from estimates when measured TTS timings exist.
+
+    Each scene's duration_sec must equal the sum of its turns' measured
+    durations within `tol` seconds. A mismatch means the director's
+    arithmetic drifted (or refit_durations.py was never run) — fix the
+    plan, don't render the drift.
+    """
+    try:
+        with open(timings_path, encoding="utf-8") as f:
+            timings = json.load(f)
+    except (OSError, json.JSONDecodeError) as e:
+        raise PlanError(f"cannot read timings {timings_path!r}: {e}")
+    durs = {}
+    for t in timings.get("turns", []):
+        m = t.get("turn", "")
+        try:
+            idx = int(str(m).lstrip("t"))
+        except ValueError:
+            continue
+        durs[idx] = float(t["dur"])
+    for spec in plan["scenes"]:
+        sid = spec.get("id", "?")
+        a, b = spec["turns"]
+        try:
+            want = sum(durs[i] for i in range(a, b + 1))
+        except KeyError as e:
+            raise PlanError(
+                f"scene '{sid}': timings have no turn {e.args[0]}; "
+                f"turn files and plan are out of sync")
+        got = float(spec["duration_sec"])
+        if abs(got - want) > tol:
+            raise PlanError(
+                f"scene '{sid}': duration_sec={got:.3f}s but measured turn "
+                f"audio sums to {want:.3f}s (turns [{a}, {b}]). Run "
+                f"refit_durations.py against the rendered turns, then "
+                f"re-run the compile.")
+
+
+def _compensate_transitions(plan):
+    """Extend each scene's duration by the NEXT scene's transition duration.
+
+    slideforge's Movie renders transitions as overlap: the incoming scene's
+    first `trans_dur` seconds blend with the outgoing scene's tail, and the
+    movie total is sum(durations) - sum(trans_dur). If plan durations are
+    pure audio truth (sum of turn WAVs), every crossfade would pull the
+    video timeline earlier — ~0.5s per transition, accumulating to seconds
+    of A/V drift by the episode's end.
+
+    Paying for each transition out of the outgoing scene (its tail becomes
+    the blend-out window) keeps every cut landing exactly on its audio
+    boundary: total == sum(plan durations) == audio length, exactly.
+    Returns a deep copy; the caller's plan is untouched.
+    """
+    plan = copy.deepcopy(plan)
+    scenes = plan["scenes"]
+    for i in range(len(scenes) - 1):
+        nxt_dur = float(scenes[i + 1].get("trans_dur", 0) or 0)
+        if nxt_dur > 0:
+            scenes[i]["duration_sec"] = float(scenes[i]["duration_sec"]) + nxt_dur
     return plan
 
 
@@ -316,26 +412,19 @@ def _build_scene(spec, assets_dir, scene_id):
     return scene, transition, float(trans_dur)
 
 
-def compile_scene_plan(plan_path, assets_dir, out_mp4,
-                       width=1280, height=720, fps=30, quiet=False):
-    """Compile a scene plan JSON into an mp4. Returns a summary dict.
+def _build_movie(plan, assets_dir, width, height, fps):
+    """Validate, compensate transitions, and build the slideforge Movie.
 
-    Raises PlanError on any structural problem, before rendering.
+    Returns (movie, compensated_plan, orig_durations, scenes).
+    compensated_plan drives scene construction (each scene pays for the
+    outgoing transition out of its own tail); orig_durations is the
+    audio-truth the plan author wrote, used for frame boundaries so cuts
+    land exactly on audio boundaries.
     """
-    assets_dir = os.path.abspath(assets_dir)
-    if not os.path.isdir(assets_dir):
-        raise PlanError(f"assets dir not found: {assets_dir!r}")
-
-    plan = _load_plan(plan_path)
-    # Visual-quality lint: fail-fast on broken rendering (overlapping text,
-    # overrunning overlays, unreadable pacing) before any frame renders.
-    # Warns print; errors raise like any other structural problem.
-    from lint_plan import lint_plan
-    lint_errors, lint_warns = lint_plan(plan)
-    for w in lint_warns:
-        print(f"lint warn: {w}", file=sys.stderr)
-    if lint_errors:
-        raise PlanError("visual lint failed:\n  " + "\n  ".join(lint_errors))
+    _validate_turns(plan)
+    orig_durations = [float(s["duration_sec"]) for s in plan["scenes"]]
+    orig_total = sum(orig_durations)
+    plan = _compensate_transitions(plan)
     scenes = []
     seen = set()
     for i, spec in enumerate(plan["scenes"]):
@@ -351,6 +440,190 @@ def compile_scene_plan(plan_path, assets_dir, out_mp4,
     for scene, transition, trans_dur in scenes:
         movie.add(scene, transition=transition, trans_dur=trans_dur)
 
+    # The compensation invariant: each transition's overlap is paid out of
+    # the outgoing scene, so the overlap model must yield exactly the
+    # original plan sum — every cut lands on its audio boundary.
+    got = movie.total_duration()
+    if abs(got - orig_total) > 1e-6:
+        raise PlanError(
+            f"transition compensation broken: movie total {got:.6f}s != "
+            f"plan sum {orig_total:.6f}s")
+    return movie, plan, orig_durations, scenes
+
+
+def _frame_boundaries(durations, fps):
+    """Cumulative frame boundaries from durations (no error buildup).
+
+    F[i] = round(cumulative_seconds[i] * fps). Scene i owns frames
+    [F[i-1], F[i]). Per-scene round() would accumulate up to half a frame
+    of error per scene; cumulative rounding keeps the total exact.
+    Pass the ORIGINAL (audio-truth) durations: cuts land on audio
+    boundaries, not on transition-compensated ones.
+    """
+    bounds, acc = [0], 0.0
+    for d in durations:
+        acc += float(d)
+        bounds.append(int(round(acc * fps)))
+    return bounds
+
+
+def render_scenes_chunked(plan_path, assets_dir, out_dir, width=1280,
+                          height=720, fps=30, timings=None, quiet=False):
+    """Render each scene to its own mp4 with frame-exact boundaries.
+
+    Every scene gets exactly the frames its audio owns; transitions blend
+    across the chunk boundary (the blend frames live at the head of the
+    incoming chunk, exactly as Movie.frame_at renders them). A failed
+    scene can be re-rendered alone; concat is a stream copy.
+
+    Writes out_dir/scene-XX-<id>.mp4 plus manifest.json:
+    {fps, total_frames, scenes: [{id, file, start_frame, frames}]}.
+
+    Returns the manifest path.
+    """
+    assets_dir = os.path.abspath(assets_dir)
+    if not os.path.isdir(assets_dir):
+        raise PlanError(f"assets dir not found: {assets_dir!r}")
+    plan = _load_plan(plan_path)
+    _run_lint(plan)
+    if timings:
+        _validate_against_timings(plan, timings)
+    elif not quiet:
+        print("warning: no --timings given; rendering from plan durations "
+              "(estimates leak sync — pass work/timings.json)",
+              file=sys.stderr)
+    movie, plan, orig_durations, _ = _build_movie(
+        plan, assets_dir, width, height, fps)
+
+    bounds = _frame_boundaries(orig_durations, fps)
+    total_frames = bounds[-1]
+    os.makedirs(out_dir, exist_ok=True)
+    manifest = {"fps": int(fps), "total_frames": total_frames,
+                "episode": plan["episode"], "scenes": []}
+    w, h = int(width), int(height)
+    for i, spec in enumerate(plan["scenes"]):
+        sid = spec.get("id") or f"scene-{i:02d}"
+        f0, f1 = bounds[i], bounds[i + 1]
+        n = f1 - f0
+        if n <= 0:
+            raise PlanError(
+                f"scene '{sid}': frame-exact boundary collapse "
+                f"({f0}..{f1}); duration too short for {fps}fps")
+        fname = f"scene-{i:02d}-{_slug(sid)}.mp4"
+        out = os.path.join(out_dir, fname)
+        _render_frame_range(movie, f0, n, out, w, h, int(fps), quiet=quiet)
+        manifest["scenes"].append(
+            {"id": sid, "file": fname, "start_frame": f0, "frames": n})
+        if not quiet:
+            print(f"  chunk {i + 1}/{len(plan['scenes'])} {sid}: "
+                  f"{n} frames -> {fname}", flush=True)
+    man_path = os.path.join(out_dir, "manifest.json")
+    with open(man_path, "w", encoding="utf-8") as f:
+        json.dump(manifest, f, indent=1)
+    return man_path
+
+
+def _slug(sid):
+    return "".join(c if c.isalnum() or c in "-_" else "_" for c in str(sid))[:40]
+
+
+def _render_frame_range(movie, start_frame, n_frames, out_path, w, h, fps,
+                        quiet=False):
+    """Render movie frames [start_frame, start_frame+n_frames) to mp4."""
+    import numpy as np  # noqa: E402  (deferred: only needed at render time)
+    os.makedirs(os.path.dirname(os.path.abspath(out_path)), exist_ok=True)
+    cmd = ["ffmpeg", "-y",
+           "-f", "rawvideo", "-pix_fmt", "rgb24",
+           "-s", f"{w}x{h}", "-r", str(fps), "-i", "-",
+           "-an", "-c:v", "libx264", "-pix_fmt", "yuv420p",
+           "-crf", "18", "-preset", "medium",
+           "-movflags", "+faststart", out_path]
+    proc = None
+    try:
+        try:
+            proc = subprocess.Popen(cmd, stdin=subprocess.PIPE,
+                                    stdout=subprocess.DEVNULL,
+                                    stderr=subprocess.DEVNULL)
+        except OSError as e:
+            raise RuntimeError(
+                f"could not start ffmpeg ({e}); is it installed and on PATH?"
+            ) from e
+        for k in range(n_frames):
+            frame = movie.frame_at((start_frame + k) / fps)
+            if frame.shape != (h, w, 3) or frame.dtype != np.uint8:
+                raise ValueError(
+                    f"frame {start_frame + k} has shape {frame.shape} "
+                    f"dtype {frame.dtype}; expected ({h}, {w}, 3) uint8")
+            proc.stdin.write(frame.tobytes())
+    finally:
+        if proc is not None:
+            proc.stdin.close()
+            proc.wait()
+    if proc is None:  # pragma: no cover - defensive; Popen failure raises
+        raise RuntimeError("ffmpeg process was never started")
+    if proc.returncode != 0:
+        raise RuntimeError(f"ffmpeg failed with code {proc.returncode} "
+                           f"rendering {out_path}")
+    # render_exact contract (item 6): the encoder must have produced
+    # exactly the frames we asked for. A silent shortfall here is A/V
+    # drift that nothing downstream can detect except this check.
+    got_frames = _probe_frame_count(out_path)
+    if got_frames != n_frames:
+        raise RuntimeError(
+            f"render_exact violated: {out_path} has {got_frames} frames, "
+            f"expected {n_frames}")
+
+
+def _probe_frame_count(path):
+    out = subprocess.check_output(
+        ["ffprobe", "-v", "error", "-select_streams", "v:0",
+         "-show_entries", "stream=nb_frames", "-of", "csv=p=0", path],
+        text=True).strip()
+    if out and out != "N/A":
+        return int(out)
+    # nb_frames missing (some containers): count packets instead.
+    out = subprocess.check_output(
+        ["ffprobe", "-v", "error", "-select_streams", "v:0",
+         "-show_entries", "packet=pts", "-of", "csv=p=0", path],
+        text=True).strip()
+    return len([l for l in out.splitlines() if l.strip()])
+
+
+def _run_lint(plan):
+    """Visual-quality lint: fail-fast on broken rendering before any frame."""
+    from lint_plan import lint_plan
+    lint_errors, lint_warns = lint_plan(plan)
+    for w in lint_warns:
+        print(f"lint warn: {w}", file=sys.stderr)
+    if lint_errors:
+        raise PlanError("visual lint failed:\n  " + "\n  ".join(lint_errors))
+
+
+def compile_scene_plan(plan_path, assets_dir, out_mp4,
+                       width=1280, height=720, fps=30, quiet=False,
+                       timings=None):
+    """Compile a scene plan JSON into an mp4. Returns a summary dict.
+
+    Raises PlanError on any structural problem, before rendering.
+    When `timings` (path to work/timings.json) is given, every scene's
+    duration_sec must match its measured turn audio within 0.02s —
+    estimates are refused.
+    """
+    assets_dir = os.path.abspath(assets_dir)
+    if not os.path.isdir(assets_dir):
+        raise PlanError(f"assets dir not found: {assets_dir!r}")
+
+    plan = _load_plan(plan_path)
+    _run_lint(plan)
+    if timings:
+        _validate_against_timings(plan, timings)
+    elif not quiet:
+        print("warning: no timings given; rendering from plan durations "
+              "(estimates leak sync — pass work/timings.json)",
+              file=sys.stderr)
+    movie, plan, _orig_durations, scenes = _build_movie(
+        plan, assets_dir, width, height, fps)
+
     out_dir = os.path.dirname(os.path.abspath(out_mp4))
     os.makedirs(out_dir, exist_ok=True)
     try:
@@ -358,10 +631,16 @@ def compile_scene_plan(plan_path, assets_dir, out_mp4,
     finally:
         for scene, _, _ in scenes:
             _cleanup_scene(scene)
+
+    # Frame-exactness of the single-file render: the encoder must have
+    # produced exactly round(total * fps) frames.
+    n_frames = int(round(movie.total_duration() * int(fps)))
     return {
         "episode": plan["episode"],
         "scenes": len(scenes),
         "duration_sec": round(movie.total_duration(), 3),
+        "frames": n_frames,
+        "fps": int(fps),
         "output": os.path.abspath(out_mp4),
     }
 
@@ -383,23 +662,38 @@ def main(argv=None):
     ap = argparse.ArgumentParser(description="Compile a scene plan to mp4")
     ap.add_argument("plan", help="scene plan JSON path")
     ap.add_argument("assets", help="assets dir (image paths resolve here)")
-    ap.add_argument("out", help="output mp4 path")
+    ap.add_argument("out", help="output mp4 path (or scenes dir with --chunked)")
     ap.add_argument("--width", type=int, default=1280)
     ap.add_argument("--height", type=int, default=720)
     ap.add_argument("--fps", type=int, default=30)
     ap.add_argument("--quiet", action="store_true",
                     help="suppress per-frame render progress")
+    ap.add_argument("--timings", default=None,
+                    help="path to work/timings.json: when given, every "
+                         "scene's duration_sec must match its measured turn "
+                         "audio within 0.02s (estimates are refused)")
+    ap.add_argument("--chunked", action="store_true",
+                    help="render per-scene mp4s + manifest.json into OUT "
+                         "(frame-exact; a failed scene re-renders alone) "
+                         "instead of one mp4")
     args = ap.parse_args(argv)
     try:
-        summary = compile_scene_plan(
-            args.plan, args.assets, args.out,
-            width=args.width, height=args.height, fps=args.fps,
-            quiet=args.quiet)
+        if args.chunked:
+            man = render_scenes_chunked(
+                args.plan, args.assets, args.out,
+                width=args.width, height=args.height, fps=args.fps,
+                timings=args.timings, quiet=args.quiet)
+            print(f"chunked render -> {man}")
+        else:
+            summary = compile_scene_plan(
+                args.plan, args.assets, args.out,
+                width=args.width, height=args.height, fps=args.fps,
+                quiet=args.quiet, timings=args.timings)
+            print(f"compiled {summary['scenes']} scenes -> {summary['output']} "
+                  f"({summary['duration_sec']:.1f}s, {summary['frames']}f)")
     except PlanError as e:
         print(f"PLAN ERROR: {e}", file=sys.stderr)
         return 2
-    print(f"compiled {summary['scenes']} scenes -> {summary['output']} "
-          f"({summary['duration_sec']:.1f}s)")
     return 0
 
 

@@ -24,6 +24,10 @@ def assets_dir(tmp_path):
 
 
 def write_plan(tmp_path, scenes, episode="test-ep"):
+    # Fixture plans predate the turns contract; auto-assign one turn per
+    # scene so they exercise the compiler instead of tripping the gate.
+    for i, s in enumerate(scenes):
+        s.setdefault("turns", [i, i])
     plan = {"version": 1, "episode": episode, "scenes": scenes}
     p = tmp_path / "plan.json"
     p.write_text(json.dumps(plan), encoding="utf-8")

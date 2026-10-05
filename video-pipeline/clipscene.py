@@ -61,7 +61,8 @@ class ClipScene(Scene):
                 f"clip {src!r} is {clip_dur:.2f}s but the scene wants "
                 f"{float(duration):.2f}s "
                 f"(tolerance {DURATION_TOLERANCE_SEC}s); "
-                f"fix the plan or re-render the clip")
+                f"conform the clip first: "
+                f"python conform_clip.py {src!r} <frames> <out.mp4>")
         self._mm = None
         self._n_frames = 0
         self._tmp = None

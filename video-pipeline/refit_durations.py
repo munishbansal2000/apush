@@ -83,10 +83,22 @@ def main(argv):
     for s in scenes:
         a, b = s["turns"]
         new_dur = round(sum(durs[i] for i in range(a, b + 1)), 3)
-        total_old += s["duration_sec"]
+        old_dur = s["duration_sec"]
+        total_old += old_dur
         total_new += new_dur
         print(f"{s['id']:10s} turns [{a:2d},{b:2d}] "
-              f"{s['duration_sec']:6.1f}s -> {new_dur:6.1f}s")
+              f"{old_dur:6.1f}s -> {new_dur:6.1f}s")
+        # Overlays are timed in scene-local seconds. When the scene's
+        # duration changes under them (estimate -> measured), their start
+        # times would drift off the words they annotate. Re-time them
+        # proportionally: a pop at 40% of the old scene stays at 40%.
+        if old_dur > 0 and new_dur != old_dur:
+            ratio = new_dur / old_dur
+            for ov in s.get("overlays") or []:
+                if isinstance(ov, dict) and "start" in ov:
+                    ov["start"] = round(float(ov["start"]) * ratio, 2)
+                    if "duration" in ov and ov["duration"] is not None:
+                        ov["duration"] = round(float(ov["duration"]) * ratio, 2)
         s["duration_sec"] = new_dur
 
     plan.setdefault("notes", "")

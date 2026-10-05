@@ -71,6 +71,11 @@ VISUAL GRAMMAR — follow it exactly:
   audio duration of the turns it covers (the compiler muxes the real audio
   over the rendered video, so drift breaks sync). Default transition "cut"
   (trans_dur 0) unless a crossfade is motivated.
+- Every scene MUST carry "turns": [first_turn_index, last_turn_index]
+  (0-based, inclusive). The scenes' turns ranges must partition ALL script
+  turns contiguously: scene 0 starts at turn 0, each scene starts where the
+  previous ended, no gaps, no overlaps. The compiler rejects plans that
+  break this contract.
 - params.image / map_image / left.image / right.image / card.image /
   cards[].image / bg.path / sticker image: repo-relative paths resolved
   against the episode assets dir. Use ONLY paths present in the manifest.
@@ -137,6 +142,7 @@ def _provider_mock(episode, turns, manifest, **kwargs):
             "duration_sec": float(dur),
             "transition": "cut",
             "trans_dur": 0,
+            "turns": [i, i],
             "overlays": [],
         })
     return {"version": 1, "episode": episode, "scenes": scenes}
