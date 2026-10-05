@@ -1,0 +1,305 @@
+{
+ "episode": "u1-e5",
+ "notes": "Director's cut for U1-E5 'Silver Empire' (script v3, Maya+Marcus). 13 scenes. Each scene carries a 'turns' [start, end] partition of the 47 TTS segments (t00..t46, including the two 5s self-test silences) — run refit_durations.py against the rendered turns dir to replace the estimated duration_sec values with measured sums (the mix is a straight concat, so this is exact). Visual grammar: KeywordPops on Huallpa, pieces of eight, mita, Guamán Poma, Manila galleons; CausalChainSlide for the silver→money→prices exam move; StatSlide for the 4 Philip II bankruptcies; ImageSlides on the 1553 Cieza de León Potosí woodcut, the 1590 de Bry mine engraving, the 1598 de Bry cruelty engraving, and the c.1565 Huys caravel fleet. No blank backgrounds. Eyes-closed-safe.",
+ "scenes": [
+  {
+   "duration_sec": 30,
+   "id": "scene-01",
+   "params": {
+    "bg": {
+     "path": "images/barrons-2027-ch03-01.jpg"
+    },
+    "subtitle": "Episode 5 — the interview. Maya asks, Marcus answers.",
+    "title": "Silver Empire"
+   },
+   "slide": "titleslide",
+   "trans_dur": 0,
+   "transition": "cut",
+   "turns": [
+    0,
+    0
+   ]
+  },
+  {
+   "duration_sec": 18,
+   "id": "scene-02",
+   "params": {
+    "bg": {
+     "type": "textured"
+    },
+    "headline": "The silver machine",
+    "sub": "1545, Potosí — a strike isn't an economy."
+   },
+   "slide": "displayheadline",
+   "trans_dur": 0.5,
+   "transition": "crossfade",
+   "turns": [
+    1,
+    2
+   ]
+  },
+  {
+   "duration_sec": 43,
+   "id": "scene-03",
+   "params": {
+    "caption": "1545 — a gust of wind, a handful of rich silver ore",
+    "image": "images/barrons-2027-ch03-01.jpg",
+    "title": "Huallpa and the wind"
+   },
+   "slide": "imageslide",
+   "trans_dur": 0.5,
+   "transition": "crossfade",
+   "turns": [
+    3,
+    6
+   ],
+   "overlays": [
+    {
+     "type": "keywordpop",
+     "word": "Diego Huallpa",
+     "start": 2.0,
+     "duration": 2.2,
+     "position": "left"
+    }
+   ]
+  },
+  {
+   "duration_sec": 47,
+   "id": "scene-04",
+   "params": {
+    "caption": "Potosí stamped its own coins — pieces of eight",
+    "image": "images/gap-g-v02-1-potosi-mitayos-debry.jpg",
+    "title": "Silver in one door, money out the other"
+   },
+   "slide": "imageslide",
+   "trans_dur": 0.5,
+   "transition": "crossfade",
+   "turns": [
+    7,
+    12
+   ],
+   "overlays": [
+    {
+     "type": "keywordpop",
+     "word": "pieces of eight",
+     "start": 5.0,
+     "duration": 2.5,
+     "position": "right"
+    }
+   ]
+  },
+  {
+   "duration_sec": 43,
+   "id": "scene-05",
+   "params": {
+    "bg": {
+     "type": "textured"
+    },
+    "points": [
+     "**Mita** — the forced rotation, episode three's draft",
+     "**Paid hands** — alongside the draft",
+     "**An Indigenous voice** — Guamán Poma's chronicle, ~1615"
+    ]
+   },
+   "slide": "displaypointsslide",
+   "trans_dur": 0.5,
+   "transition": "crossfade",
+   "turns": [
+    13,
+    15
+   ],
+   "overlays": [
+    {
+     "type": "keywordpop",
+     "word": "mita",
+     "start": 2.0,
+     "duration": 2.2,
+     "position": "left"
+    },
+    {
+     "type": "keywordpop",
+     "word": "Guamán Poma",
+     "start": 12.0,
+     "duration": 2.2,
+     "position": "right"
+    }
+   ]
+  },
+  {
+   "duration_sec": 14,
+   "id": "scene-06",
+   "params": {
+    "caption": "Twelve hundred pages, hundreds of drawings — unread for centuries",
+    "image": "images/barrons-2027-ch03-03.jpg",
+    "title": "The letter the king never read"
+   },
+   "slide": "imageslide",
+   "trans_dur": 0.5,
+   "transition": "crossfade",
+   "turns": [
+    16,
+    17
+   ]
+  },
+  {
+   "duration_sec": 33,
+   "id": "scene-07",
+   "params": {
+    "bg": {
+     "type": "textured"
+    },
+    "headline": "Bodin and the birth of inflation theory",
+    "sub": "The price revolution — did anyone know what caused it?"
+   },
+   "slide": "displayheadline",
+   "trans_dur": 0.5,
+   "transition": "crossfade",
+   "turns": [
+    18,
+    19
+   ]
+  },
+  {
+   "duration_sec": 18,
+   "id": "scene-08",
+   "params": {
+    "bg": {
+     "type": "textured"
+    },
+    "nodes": [
+     [
+      "American silver",
+      "floods in"
+     ],
+     [
+      "Money supply",
+      "jumps"
+     ],
+     [
+      "Prices",
+      "climb for a century"
+     ]
+    ],
+    "title": "THE EXAM MOVE"
+   },
+   "slide": "causalchain",
+   "trans_dur": 0.5,
+   "transition": "crossfade",
+   "turns": [
+    20,
+    21
+   ]
+  },
+  {
+   "duration_sec": 46,
+   "id": "scene-09",
+   "params": {
+    "bg": {
+     "dim": 0.72,
+     "path": "images/u1-debry-cusco-fall.jpg"
+    },
+    "label": "bankruptcies under Philip II — the crown spent on wars faster than the mines could produce",
+    "suffix": "",
+    "value": 4
+   },
+   "slide": "statslide",
+   "trans_dur": 0.5,
+   "transition": "crossfade",
+   "turns": [
+    22,
+    25
+   ]
+  },
+  {
+   "duration_sec": 82,
+   "id": "scene-10",
+   "params": {
+    "caption": "Acapulco to Manila — four to six months each way",
+    "image": "images/u1-caravel-fleet-huys.jpg",
+    "title": "The silver that sailed west"
+   },
+   "slide": "imageslide",
+   "trans_dur": 0.5,
+   "transition": "crossfade",
+   "turns": [
+    26,
+    31
+   ],
+   "overlays": [
+    {
+     "type": "keywordpop",
+     "word": "Manila galleons",
+     "start": 2.0,
+     "duration": 2.2,
+     "position": "left"
+    },
+    {
+     "type": "caption",
+     "text": "Silver west, silk and porcelain east — China's hunger kept the ships sailing",
+     "start": 20.0,
+     "duration": 8.0
+    }
+   ]
+  },
+  {
+   "duration_sec": 58,
+   "id": "scene-11",
+   "params": {
+    "banner": "RECAP",
+    "bg": {
+     "type": "textured"
+    },
+    "steps": [
+     "**One: the silver machine** — Huallpa and the wind, the Potosí mint, pieces of eight, Guamán Poma's chronicle.",
+     "**Two: Bodin** — Malestroit blamed bad coins, Bodin blamed American silver. The birth of the quantity theory.",
+     "**Three: the Manila galleons** — silver west from Acapulco, silk back east, merchants kept the profit."
+    ],
+    "title": "Three boxes — check them off"
+   },
+   "slide": "stepsslide",
+   "trans_dur": 0.6,
+   "transition": "crossfade",
+   "turns": [
+    32,
+    37
+   ]
+  },
+  {
+   "duration_sec": 49,
+   "id": "scene-12",
+   "params": {
+    "bg": {
+     "type": "textured"
+    },
+    "headline": "Two questions, AP-shaped",
+    "sub": "Say your answer before Maya gives it"
+   },
+   "slide": "displayheadline",
+   "trans_dur": 0,
+   "transition": "cut",
+   "turns": [
+    38,
+    43
+   ]
+  },
+  {
+   "duration_sec": 15,
+   "id": "scene-13",
+   "params": {
+    "bg": {
+     "type": "textured"
+    },
+    "byline": "Episode 5 · Next: the labor systems — who dug it all out",
+    "quote": "Silver made the world one economy."
+   },
+   "slide": "quoteslide",
+   "trans_dur": 0.8,
+   "transition": "dip",
+   "turns": [
+    44,
+    46
+   ]
+  }
+ ],
+ "version": 1
+}

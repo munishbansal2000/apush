@@ -54,28 +54,23 @@ def main():
     # 3. territory expansion on one map
     terr = TerritorySlide(
         MAP1863,
-        [# coordinates read off the gridded 1863 map (map_grid tool), not guessed
-         {"at": (0.78, 0.44), "rx": 0.15, "ry": 0.26,
+        [{"at": (0.78, 0.45), "rx": 0.10, "ry": 0.16,
           "label": "Treaty of Paris", "date": "1783",
-          "color": (90, 140, 255), "label_at": (0.90, 0.22)},
-         {"at": (0.42, 0.49), "rx": 0.13, "ry": 0.24, "label": "Louisiana",
-          "date": "1803", "color": (255, 170, 60),
-          # deliberately naive: the layout engine nudges this off the title
-          "label_at": (0.30, 0.13)},
-         {"at": (0.82, 0.80), "rx": 0.045, "ry": 0.08, "label": "Florida",
-          "date": "1819", "color": (120, 220, 130), "label_at": (0.82, 0.66)},
-         {"at": (0.42, 0.77), "rx": 0.11, "ry": 0.11, "label": "Texas",
-          "date": "1845", "color": (220, 120, 220), "label_at": (0.62, 0.85)},
-         {"at": (0.16, 0.60), "rx": 0.11, "ry": 0.16,
+          "color": (90, 140, 255), "label_at": (0.78, 0.27)},
+         {"at": (0.40, 0.38), "rx": 0.10, "ry": 0.15, "label": "Louisiana",
+          "date": "1803", "color": (255, 170, 60), "label_at": (0.18, 0.31)},
+         {"at": (0.82, 0.76), "rx": 0.045, "ry": 0.06, "label": "Florida",
+          "date": "1819", "color": (120, 220, 130)},
+         {"at": (0.48, 0.70), "rx": 0.08, "ry": 0.08, "label": "Texas",
+          "date": "1845", "color": (220, 120, 220), "label_at": (0.63, 0.80)},
+         {"at": (0.22, 0.50), "rx": 0.10, "ry": 0.18,
           "label": "Mexican Cession", "date": "1848",
-          "color": (255, 110, 110), "label_at": (0.13, 0.84)}],
+          "color": (255, 110, 110)}],
         title="The United States grows", stagger=1.3, cfg=cfg)
     check(terr, "territory")
     beats.append((terr, [], "crossfade"))
 
-    # 4. red pen over bullets — annotations target measured word boxes,
-    # so they track the text instead of guessed coordinates; starts are
-    # timed after each bullet settles (bullet i lands at 0.9+i*1.25+0.5)
+    # 4. red pen over bullets
     bullets = BulletSlide(
         "The encomienda system",
         ["Spanish crown grants **labor** of natives to colonists",
@@ -83,21 +78,12 @@ def main():
          "In practice: **forced labor**, disease, collapse"],
         bg=apush_bg("colonial"), cfg=cfg)
     check(bullets, "bullets")
-    wb = bullets.word_boxes()
-    labor = wb["labor"][0]
-    prot = wb["protection"][0]
-    instr = wb["instruction"][0]
     pen = RedPen([
-        {"kind": "underline",
-         "from": (labor[0], labor[3] + 0.008),
-         "to": (labor[2], labor[3] + 0.008), "start": 1.5},
-        {"kind": "circle",
-         "at": ((prot[0] + prot[2]) / 2, (prot[1] + prot[3]) / 2),
-         "rx": (prot[2] - prot[0]) / 2 + 0.022,
-         "ry": (prot[3] - prot[1]) / 2 + 0.028, "start": 2.8},
-        {"kind": "note", "at": (0.70, 0.72), "text": "KEY IDEA", "start": 3.6},
-        {"kind": "check", "at": (instr[2] + 0.035, (instr[1] + instr[3]) / 2),
-         "size": 0.035, "start": 4.4},
+        {"kind": "underline", "from": (0.355, 0.435), "to": (0.465, 0.435),
+         "start": 1.0},
+        {"kind": "circle", "at": (0.37, 0.53), "r": 0.155, "start": 2.2},
+        {"kind": "note", "at": (0.70, 0.72), "text": "KEY IDEA", "start": 3.2},
+        {"kind": "check", "at": (0.80, 0.53), "size": 0.035, "start": 4.0},
     ])
     beats.append((bullets, [pen], "crossfade"))
 
@@ -122,18 +108,15 @@ def main():
     check(spec, "spectrum")
     beats.append((spec, [], "crossfade"))
 
-    # 7. magnifier over a primary source — the lens path is built from the
-    # slide's real line geometry, so it tracks text instead of guessing.
-    # It performs a SLOW close reading of the highlighted quote (not a tour
-    # of the whole paragraph): ~160px/s lets you read along with the lens.
+    # 7. magnifier over a primary source
     doc = HighlightSlide(
         "Bartolomé de las Casas watched the encomienda system devour entire "
         "villages. ==He wrote that the Spanish 'laid waste' to the islands==, "
         "and his account shocked readers back in Spain.",
-        duration=10.5, cfg=cfg)
+        cfg=cfg)
     check(doc, "doc")
-    lb = doc.line_boxes()
-    mag = Magnifier.trace_line(lb[2], 2.5, 9.0, radius=0.14, zoom=2.4)
+    mag = Magnifier([(0.0, 0.30, 0.32), (2.5, 0.55, 0.48), (5.0, 0.68, 0.44)],
+                    radius=0.14, zoom=2.4)
     beats.append((doc, [mag], "crossfade"))
 
     # 8. map notes riding the camera
@@ -148,17 +131,21 @@ def main():
     ])
     beats.append((kb2, [notes], "crossfade"))
 
-    # The ribbon is movie-level chrome: it renders after transition blending,
-    # so it never ghosts during crossfades and the playhead stays continuous.
+    # The ribbon persists across the whole video: each beat declares the span
+    # it covers, so the playhead creeps instead of sprinting.
+    total = sum(s.duration for s, _, _ in beats)
+    ribbon_events = [(0.04, "1492"), (0.30, "1783"), (0.55, "1803"),
+                     (0.85, "1848")]
     m = Movie(cfg)
-    m.overlay(TimelineRibbon("THE AMERICAN STORY · 1491–1848",
-                             events=[(0.04, "1492"), (0.30, "1783"),
-                                     (0.55, "1803"), (0.85, "1848")],
-                             span=(0.0, 1.0)))
+    cum = 0.0
     for i, (slide, overlays, trans) in enumerate(beats):
+        span = (cum / total, (cum + slide.duration) / total)
+        cum += slide.duration
+        ribbon = TimelineRibbon("THE AMERICAN STORY · 1491–1848",
+                                events=ribbon_events, span=span)
         kwargs = {} if trans == "cut" else {"transition": trans,
                                             "trans_dur": 0.5}
-        m.add(with_overlays(slide, overlays), **kwargs)
+        m.add(with_overlays(slide, overlays + [ribbon]), **kwargs)
 
     out = "demo_constructs4.mp4"
     m.render(out)

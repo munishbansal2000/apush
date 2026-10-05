@@ -1,0 +1,370 @@
+{
+ "episode": "u1-e9",
+ "version": 1,
+ "notes": "Director's cut for U1-E9 'Cram Session' (script v3, Maya+Marcus). 15 scenes. Each scene carries a 'turns' [start, end] partition of the 55 TTS turn files (t00..t54, including the two 5-second silence segments at t44 and t47) — run refit_durations.py against the rendered turns dir to replace the estimated duration_sec values with measured sums (the mix is a straight concat, so this is exact). Visual grammar: KeywordPops and captions restate spoken terms only; textured or dimmed-photo backgrounds, never blank; one scene per question or question-pair; stepsslide recap; quoteslide close. Eyes-closed-safe: narration never references the visuals.",
+ "scenes": [
+  {
+   "id": "scene-01",
+   "slide": "titleslide",
+   "turns": [
+    0,
+    0
+   ],
+   "duration_sec": 24,
+   "transition": "cut",
+   "trans_dur": 0,
+   "params": {
+    "bg": {
+     "path": "images/original-ctx-u1-03.jpg"
+    },
+    "title": "Cram Session",
+    "subtitle": "Three questions · the whole unit — Episode 9"
+   }
+  },
+  {
+   "id": "scene-02",
+   "slide": "displayheadline",
+   "turns": [
+    1,
+    1
+   ],
+   "duration_sec": 17,
+   "transition": "crossfade",
+   "trans_dur": 0.5,
+   "params": {
+    "bg": {
+     "type": "textured"
+    },
+    "headline": "Question one: what changed",
+    "sub": "Columbus, the Exchange, and the silver engine"
+   }
+  },
+  {
+   "id": "scene-03",
+   "slide": "compareslide",
+   "turns": [
+    2,
+    3
+   ],
+   "duration_sec": 33,
+   "transition": "crossfade",
+   "trans_dur": 0.6,
+   "params": {
+    "bg": {
+     "type": "textured"
+    },
+    "title": "The Columbian Exchange",
+    "left": {
+     "head": "EAST → EUROPE",
+     "sections": [
+      {
+       "sub": "Crops",
+       "points": [
+        "Potatoes",
+        "Maize",
+        "Tomatoes"
+       ]
+      }
+     ]
+    },
+    "right": {
+     "head": "WEST → AMERICAS",
+     "sections": [
+      {
+       "sub": "Crops & animals",
+       "points": [
+        "Wheat, sugarcane",
+        "Horses, cattle"
+       ]
+      }
+     ]
+    }
+   },
+   "overlays": [
+    {
+     "type": "keywordpop",
+     "word": "Columbian Exchange",
+     "position": "right",
+     "start": 2.0,
+     "duration": 3.0
+    },
+    {
+     "type": "caption",
+     "text": "The horse remakes the Plains",
+     "start": 20.0,
+     "duration": 7.0
+    }
+   ]
+  },
+  {
+   "id": "scene-04",
+   "slide": "statslide",
+   "turns": [
+    4,
+    6
+   ],
+   "duration_sec": 35,
+   "transition": "crossfade",
+   "trans_dur": 0.5,
+   "params": {
+    "bg": {
+     "type": "textured"
+    },
+    "value": 85,
+    "suffix": "%",
+    "label": "dead where it hit hardest — the Americas had no immunity"
+   },
+   "overlays": [
+    {
+     "type": "caption",
+     "text": "The change nobody chose",
+     "start": 2.0,
+     "duration": 8.0
+    },
+    {
+     "type": "keywordpop",
+     "word": "Smallpox · measles · influenza",
+     "position": "left",
+     "start": 14.0,
+     "duration": 4.0
+    }
+   ]
+  },
+  {
+   "id": "scene-05",
+   "slide": "imageslide",
+   "turns": [
+    7,
+    10
+   ],
+   "duration_sec": 49,
+   "transition": "crossfade",
+   "trans_dur": 0.5,
+   "params": {
+    "image": "images/gap-g-v02-1-potosi-mitayos-debry.jpg",
+    "title": "1545: Potosí",
+    "caption": "The royal fifth — 20% off the top; “pieces of eight” finally explained"
+   },
+   "overlays": [
+    {
+     "type": "caption",
+     "text": "A mountain of silver, 13,000 feet up",
+     "start": 2.0,
+     "duration": 8.0
+    }
+   ]
+  },
+  {
+   "id": "scene-06",
+   "slide": "displaypointsslide",
+   "turns": [
+    11,
+    14
+   ],
+   "duration_sec": 41,
+   "transition": "crossfade",
+   "trans_dur": 0.5,
+   "params": {
+    "bg": {
+     "dim": 0.72,
+     "path": "images/u1-caravel-fleet-huys.jpg"
+    },
+    "points": [
+     "**Manila galleons** — Acapulco to Manila, silver west, silk east",
+     "**England** — failed colonies, stolen ships: Drake, Armada 1588, Roanoke",
+     "**Jamestown, 1607** — nearly starved; saved by Rolfe’s tobacco"
+    ]
+   }
+  },
+  {
+   "id": "scene-07",
+   "slide": "imageslide",
+   "turns": [
+    15,
+    18
+   ],
+   "duration_sec": 50,
+   "transition": "crossfade",
+   "trans_dur": 0.5,
+   "params": {
+    "image": "images/gap-g-v01-1-columbian-sugar-engraving.jpg",
+    "title": "New paperwork, same hunger",
+    "caption": "1542: the New Laws — colonists nearly go to war; the inheritance ban is scrapped"
+   }
+  },
+  {
+   "id": "scene-08",
+   "slide": "stepsslide",
+   "turns": [
+    19,
+    22
+   ],
+   "duration_sec": 56,
+   "transition": "crossfade",
+   "trans_dur": 0.6,
+   "params": {
+    "banner": "REVIEW",
+    "bg": {
+     "type": "textured"
+    },
+    "title": "Four systems, one hunger",
+    "steps": [
+     "**Encomienda** — a colonist gets a town’s labor",
+     "**Repartimiento** — the draft: a rotating share, crown-assigned",
+     "**African slavery** — the Middle Passage; about one in seven never cross",
+     "**Hacienda** — big estates; debt chains the “free” workers",
+     "**Virginia** — headright land, indentured servants, an elected assembly"
+    ]
+   }
+  },
+  {
+   "id": "scene-09",
+   "slide": "imageslide",
+   "turns": [
+    23,
+    26
+   ],
+   "duration_sec": 57,
+   "transition": "crossfade",
+   "trans_dur": 0.5,
+   "params": {
+    "image": "images/original-u1-lascasas-portrait-01.jpg",
+    "title": "First, the pen",
+    "caption": "Las Casas: the Short Account, 1542 — cruelty, town by town"
+   },
+   "overlays": [
+    {
+     "type": "caption",
+     "text": "His pages become English propaganda",
+     "start": 30.0,
+     "duration": 7.0
+    }
+   ]
+  },
+  {
+   "id": "scene-10",
+   "slide": "displaypointsslide",
+   "turns": [
+    27,
+    30
+   ],
+   "duration_sec": 25,
+   "transition": "crossfade",
+   "trans_dur": 0.5,
+   "params": {
+    "bg": {
+     "type": "textured"
+    },
+    "points": [
+     "**Las Casas** — Native peoples are rational souls",
+     "**Sepúlveda** — Aristotle’s natural slaves; just war",
+     "**No verdict** — the question lived on, asked by an empire about its own conquest"
+    ]
+   }
+  },
+  {
+   "id": "scene-11",
+   "slide": "imageslide",
+   "turns": [
+    31,
+    34
+   ],
+   "duration_sec": 43,
+   "transition": "crossfade",
+   "trans_dur": 0.5,
+   "params": {
+    "image": "images/original-u1-native-09.jpg",
+    "title": "1680: the answer with teeth",
+    "caption": "Popé’s knotted cords — one knot per day; twelve years of Pueblo New Mexico"
+   },
+   "overlays": [
+    {
+     "type": "caption",
+     "text": "August 10, 1680",
+     "start": 18.0,
+     "duration": 5.0
+    }
+   ]
+  },
+  {
+   "id": "scene-12",
+   "slide": "stepsslide",
+   "turns": [
+    35,
+    42
+   ],
+   "duration_sec": 58,
+   "transition": "crossfade",
+   "trans_dur": 0.6,
+   "params": {
+    "banner": "RECAP",
+    "bg": {
+     "type": "textured"
+    },
+    "title": "Three questions — landed",
+    "steps": [
+     "**What changed** — crops both ways, disease one way, silver wires one economy",
+     "**What stayed the same** — encomienda → repartimiento → slavery → hacienda",
+     "**Who pushed back** — Las Casas’s pen, Popé’s cords, 1680"
+    ]
+   }
+  },
+  {
+   "id": "scene-13",
+   "slide": "displayheadline",
+   "turns": [
+    43,
+    48
+   ],
+   "duration_sec": 65,
+   "transition": "cut",
+   "trans_dur": 0,
+   "params": {
+    "bg": {
+     "type": "textured"
+    },
+    "headline": "Two questions, AP-shaped",
+    "sub": "Say your answer before Maya gives it — five seconds of silence each"
+   }
+  },
+  {
+   "id": "scene-14",
+   "slide": "displaypointsslide",
+   "turns": [
+    49,
+    51
+   ],
+   "duration_sec": 35,
+   "transition": "crossfade",
+   "trans_dur": 0.5,
+   "params": {
+    "bg": {
+     "type": "textured"
+    },
+    "points": [
+     "**DBQ 1** — how far the Columbian Exchange transformed the Americas",
+     "**DBQ 2** — disease, alliances, and technology in the conquest",
+     "**The counter graders want** — the labor machine ran straight through"
+    ]
+   }
+  },
+  {
+   "id": "scene-15",
+   "slide": "quoteslide",
+   "turns": [
+    52,
+    54
+   ],
+   "duration_sec": 18,
+   "transition": "dip",
+   "trans_dur": 0.8,
+   "params": {
+    "bg": {
+     "type": "textured"
+    },
+    "quote": "One ocean made one world — On conquest’s terms.",
+    "byline": "Episode 9 · Next: the English arrive — Pilgrims, Puritans, and a city upon a hill"
+   }
+  }
+ ]
+}

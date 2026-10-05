@@ -63,10 +63,6 @@ class Slide(Scene):
         # the image IS the contextual background, so no warning is due.
         self._bg_explicit = bg is not None or self._image_driven
         self.bg = bg or {"type": "textured"}
-        # text elements registered during frame(): {"key", "box", "color",
-        # "size_px"} — fuels validate_visual(). Slides call
-        # self._register_text(...) as they draw.
-        self._text_elements = []
 
     def bg_frame(self, t):
         spec = self.bg
@@ -91,34 +87,6 @@ class Slide(Scene):
             issues.append(
                 "no contextual background: pass bg=apush_bg(era), a map, "
                 "or a photo — slides never render on blank backgrounds")
-        return issues
-
-    def _register_text(self, key, box, color=(235, 238, 245), size_px=None):
-        """Record a text element's bounds while drawing. box is
-        (x0, y0, x1, y1) pixels; color is the RGB text color. Re-registering
-        the same key replaces the old entry (frame() runs many times)."""
-        self._text_elements = [e for e in self._text_elements
-                               if e["key"] != key]
-        self._text_elements.append({"key": key, "box": tuple(box),
-                                    "color": tuple(color),
-                                    "size_px": size_px})
-
-    def validate_visual(self, t=None):
-        """Render at a settled time and run pixel-level checks (contrast,
-        bounds, min size, collisions) on the registered text elements.
-        Returns [issues]; [] means clean."""
-        from . import checks
-        w, h = self.cfg.w, self.cfg.h
-        if t is None:
-            t = max(0.0, self.duration - 0.5)
-        self._text_elements = []
-        frame = self.frame(t)
-        elements = self._text_elements
-        issues = []
-        issues.extend(checks.check_bounds(elements, w, h))
-        issues.extend(checks.check_min_size(elements, h))
-        issues.extend(checks.check_contrast(frame, elements))
-        issues.extend(checks.check_collisions(elements))
         return issues
 
 
@@ -193,51 +161,14 @@ class BulletSlide(Slide):
     classic review-video "Institutions" breakdown.
     """
 
-    def __init__(self, title, bullets, duration=None, accent=ACCENT, bg=None,
-                 cfg=None, stagger=1.25):
+    def __init__(self, title, bullets, duration=None, accent=ACCENT, bg=None, cfg=None):
         norm = [self._norm(b) for b in bullets]
         nlines = sum(1 + len(ch) for _, ch in norm)
-        duration = duration or (2.4 + stagger * nlines)
+        duration = duration or (2.4 + 1.35 * nlines)
         super().__init__(duration, bg, cfg)
         self.title = title
         self.bullets = norm
         self.accent = accent
-        self.stagger = stagger
-        self._word_boxes = None
-
-    def word_boxes(self):
-        """{word.lower(): [(x0,y0,x1,y1), ...]} in frame fractions, at the
-        settled (fully revealed) layout. Lets overlays like RedPen target
-        a word by content instead of guessing coordinates."""
-        if self._word_boxes is None:
-            self._word_boxes = {}
-            w, h = self.cfg.w, self.cfg.h
-            dummy = Image.new("RGBA", (w, h))
-            y = h * 0.36
-            for b, children in self.bullets:
-                y = self._collect_words(dummy, w * 0.09, y, b,
-                                        int(h * 0.052), "disc")
-                for ch in children:
-                    y = self._collect_words(dummy, w * 0.09 + 52, y, ch,
-                                            int(h * 0.042), "dash")
-                y += h * 0.02
-        return self._word_boxes
-
-    def _collect_words(self, dummy, x, y, text, size, dot):
-        """Run one bullet's layout, recording word boxes. Returns next y."""
-        w, h = self.cfg.w, self.cfg.h
-        # at e=1 the slide-in offset (1-e)*70 is zero, so tx = x + 44
-        tx = x + 44
-        box = (tx, y, w * 0.91, y + h * 0.2)
-        collect = []
-        _rich_para_dark(dummy, box, text, size=size, collect=collect)
-        for word, x0, y0, x1, y1 in collect:
-            key = word.strip().lower()
-            if key:
-                self._word_boxes.setdefault(key, []).append(
-                    (x0 / w, y0 / h, x1 / w, y1 / h))
-        _, bh = _rich_block_size(text, size, w * 0.91 - tx)
-        return y + bh + h * 0.03
 
     @staticmethod
     def _norm(b):
@@ -266,39 +197,32 @@ class BulletSlide(Slide):
         frame = self.bg_frame(t)
         pil = to_pil(frame)
 
-        tsize = int(h * 0.075)
-        _tw, _th = C.text_block_size(self.title, tsize, w * 0.82, bold=True)
-        self._register_text("title", (w * 0.09, h * 0.08,
-                                      w * 0.09 + _tw, h * 0.08 + _th),
-                            INK, tsize)
-        # title + underline via the shared helper (single source of truth —
-        # the underline anchors to measured text, never the layout box)
-        frame = _title_block(frame, self.title, t, y_frac=0.08,
-                             size_frac=0.075, accent=self.accent, align="left")
-        pil = to_pil(frame)
+        e = a01(t, 0.0, 0.6)
+        pil = C.draw_para(pil, (w * 0.09, h * 0.08, w * 0.91, h * 0.26),
+                          self.title, size=int(h * 0.075), fill=INK, bold=True,
+                          alpha=int(255 * e))
+        # underline accent
+        uw = int(w * 0.12 * a01(t, 0.2, 0.5))
+        if uw:
+            d = ImageDraw.Draw(pil, "RGBA")
+            d.rounded_rectangle([w * 0.09, h * 0.26, w * 0.09 + uw, h * 0.26 + 6],
+                               radius=3, fill=self.accent + (255,))
 
         y = h * 0.36
         d = ImageDraw.Draw(pil, "RGBA")
         for i, (b, children) in enumerate(self.bullets):
-            e = a01(t, 0.9 + i * self.stagger, 0.5)
+            e = a01(t, 0.9 + i * 1.25, 0.5)
             if e <= 0:
                 continue
             pil, bh = self._draw_bullet(pil, d, w * 0.09, y, b,
                                         int(h * 0.052), e, "disc")
-            # settled x (slide-in offset is zero at e=1, which is when we validate)
-            self._register_text(f"bullet:{i}", (w * 0.09 + 44, y,
-                                                w * 0.91, y + bh),
-                                INK, int(h * 0.052))
             y += bh + h * 0.03
             for j, ch in enumerate(children):
-                ce = a01(t, 0.9 + i * self.stagger + 0.35 + j * 0.4, 0.45)
+                ce = a01(t, 0.9 + i * 1.25 + 0.35 + j * 0.4, 0.45)
                 if ce <= 0:
                     continue
                 pil, cbh = self._draw_bullet(pil, d, w * 0.09 + 52, y, ch,
                                              int(h * 0.042), ce, "dash")
-                self._register_text(f"bullet:{i}.{j}", (w * 0.09 + 52 + 44, y,
-                                                        w * 0.91, y + cbh),
-                                    INK, int(h * 0.042))
                 y += cbh + h * 0.03
             y += h * 0.02
         return to_np(pil)
@@ -313,17 +237,15 @@ class StepsSlide(Slide):
     """
 
     def __init__(self, title, steps, duration=None, accent=ACCENT, bg=None,
-                 cfg=None, banner=None, banner_fill=(211, 47, 47),
-                 stagger=1.6):
+                 cfg=None, banner=None, banner_fill=(211, 47, 47)):
         norm = [(s, "") if isinstance(s, str) else tuple(s) for s in steps]
-        duration = duration or (2.6 + stagger * len(norm))
+        duration = duration or (2.6 + 1.6 * len(norm))
         super().__init__(duration, bg, cfg)
         self.title = title
         self.steps = norm
         self.accent = accent
         self.banner = banner
         self.banner_fill = banner_fill
-        self.stagger = stagger
 
     @staticmethod
     def _banner_chip(text, size, fill):
@@ -372,7 +294,7 @@ class StepsSlide(Slide):
         y = max(y_top + h * 0.06, h * 0.34) if not self.banner else y_top + h * 0.04
         num_size = int(h * 0.085)
         for i, (head, body) in enumerate(self.steps):
-            e = a01(t, 0.9 + i * self.stagger, 0.55)
+            e = a01(t, 0.9 + i * 1.5, 0.55)
             if e <= 0:
                 continue
             alpha = int(255 * e)
@@ -853,13 +775,11 @@ def _rich_block_size(text, size, max_w, line_spacing=1.35):
 
 
 def _rich_para_dark(pil, box, text, size, fill=(235, 238, 245),
-                    line_spacing=1.35, alpha=255, collect=None):
+                    line_spacing=1.35, alpha=255):
     """Wrapped paragraph on dark bg with **bold** spans (bold lead-ins).
 
     Plain text renders exactly like the old draw_para path (regular face);
     **marked** words use the bold face. ==highlight== is treated as bold.
-
-    collect: optional list; appends (word, x0, y0, x1, y1) pixel boxes.
     """
     tokens = _rich_tokens(text)
     f_reg = get_font(size, bold=False)
@@ -885,8 +805,6 @@ def _rich_para_dark(pil, box, text, size, fill=(235, 238, 245),
     for line in lines:
         x = x0
         for (w, b, _), tw in line:
-            if collect is not None:
-                collect.append((w, x, y, x + tw, y + lh))
             d.text((x, y), w + " ", font=f_bld if b else f_reg,
                    fill=tuple(fill) + (alpha,))
             x += tw
@@ -994,25 +912,8 @@ class HighlightSlide(Slide):
             h, w = self.cfg.h, self.cfg.w
             max_w = w * (0.56 if self.card else 0.86)
             self._lines = _paper_block(self.text, int(h * 0.058), max_w)
-            # record each line's fractional geometry so overlays (e.g.
-            # Magnifier) can target text instead of guessing coordinates
-            self._line_boxes = []
-            x0, y = w * 0.07, h * (0.30 if self.card else 0.24)
-            for timg, _simg in self._lines:
-                tw, th = timg.size
-                self._line_boxes.append({
-                    "x0": x0 / w, "x1": (x0 + tw) / w,
-                    "y0": y / h, "y1": (y + th) / h,
-                    "yc": (y + th / 2) / h,
-                })
-                y += th + h * 0.018
         if self.card and self._card_img is None:
             self._card_img = self._build_card()
-
-    def line_boxes(self):
-        """Fractional boxes of each laid-out text line: [{x0, x1, y0, y1, yc}]."""
-        self._build()
-        return list(self._line_boxes)
 
     def _build_card(self):
         w, h = self.cfg.w, self.cfg.h
@@ -1051,11 +952,6 @@ class HighlightSlide(Slide):
         w, h = self.cfg.w, self.cfg.h
         self._build()
         frame = self.bg_frame(t)
-        for i, lb in enumerate(self._line_boxes):
-            self._register_text(
-                f"line:{i}",
-                (lb["x0"] * w, lb["y0"] * h, lb["x1"] * w, lb["y1"] * h),
-                (35, 32, 28), int(h * 0.058))
         x0, y = w * 0.07, h * (0.30 if self.card else 0.24)
         for i, (timg, simg) in enumerate(self._lines):
             e = a01(t, 0.4 + i * self.stagger, 0.5)
@@ -2023,42 +1919,25 @@ class RouteSlide(MapZoomSlide):
         return to_np(pil)
 
 
-def _title_block(frame, title, t, y_frac=0.10, size_frac=0.075, accent=ACCENT,
-                 align="center"):
-    """Title with an accent underline that draws itself in.
-
-    Single source of truth for title+underline: the underline anchors to the
-    *measured* text bottom, never to the layout box — so it can't drift into
-    dead space when the title is shorter than its box. align="center" or
-    "left".
-    """
+def _title_block(frame, title, t, y_frac=0.10, size_frac=0.075, accent=ACCENT):
+    """Centered title with an accent underline that draws itself in."""
     w, h = frame.shape[1], frame.shape[0]
     pil = to_pil(frame)
     e = a01(t, 0.0, 0.6)
     size = int(h * size_frac)
     y_top = h * y_frac
     # measure the real wrapped height so the underline sits below the text
-    # even when the title wraps to two lines; subtract ~half a cap-height
-    # because the measured block includes trailing descent + line spacing
-    # that would otherwise leave the underline floating in dead space
+    # even when the title wraps to two lines
     _, text_h = C.text_block_size(title, size, w * 0.82, bold=True)
-    y_line = y_top + text_h - int(size * 0.5) + 4
+    y_line = y_top + text_h + 10
     pil = C.draw_para(pil, (w * 0.09, y_top, w * 0.91, y_top + h * 0.30),
                       title, size=size, fill=INK, bold=True,
-                      align=align, alpha=int(255 * e))
-    if align == "center":
-        uw = int(w * 0.10 * a01(t, 0.2, 0.5))
-    else:
-        uw = int(w * 0.12 * a01(t, 0.2, 0.5))
+                      align="center", alpha=int(255 * e))
+    uw = int(w * 0.10 * a01(t, 0.2, 0.5))
     if uw:
         d = ImageDraw.Draw(pil, "RGBA")
-        if align == "center":
-            d.line([(w / 2 - uw / 2, y_line), (w / 2 + uw / 2, y_line)],
-                   fill=accent + (int(255 * e),),
-                   width=max(2, int(h * 0.008)))
-        else:
-            d.rounded_rectangle([w * 0.09, y_line, w * 0.09 + uw, y_line + 6],
-                                radius=3, fill=accent + (255,))
+        d.line([(w / 2 - uw / 2, y_line), (w / 2 + uw / 2, y_line)],
+               fill=accent + (int(255 * e),), width=max(2, int(h * 0.008)))
     return to_np(pil)
 
 
@@ -2177,109 +2056,42 @@ class TerritorySlide(Slide):
         # drift defaults to False: territories are pinned to frame fractions,
         # so a moving bg would silently misalign them.
         self.map_image = _as_image(map_image)
-        # deep-ish copy: the layout resolver rewrites label_at in place
-        self.territories = [dict(t) for t in territories]
+        self.territories = list(territories)
         self.title = title
         self.stagger = stagger
         self.drift = drift
-        self._layout_warnings = []
         duration = duration or (2.0 + stagger * len(territories))
         if bg is None:
             views = [full_view(), (0.5, 0.5, 0.9)] if drift else None
             bg = {"type": "image", "array": self.map_image, "dim": 0.45,
                   "drift": views}
         super().__init__(duration, bg, cfg)
-        self._resolve_labels()
-
-    def _pill_size(self, label, date):
-        """Pixel (bw, bh, lh, dh) of a label pill at the standard sizes."""
-        h = self.cfg.h
-        w = self.cfg.w
-        lw_, lh_ = C.text_block_size(label, int(h * 0.036), w * 0.3, bold=True)
-        dw_, dh_ = C.text_block_size(date, int(h * 0.030), w * 0.3) if date else (0, 0)
-        return max(lw_, dw_) + 30, lh_ + dh_ + 22, lh_, dh_
-
-    def _resolve_labels(self):
-        """Run label pills through the layout engine: pills nudge away from
-        the title (and each other) instead of overlapping it. Warnings land
-        in validate()."""
-        from .layout import Layout
-        w, h = self.cfg.w, self.cfg.h
-        lo = Layout(w, h)
-        if self.title:
-            # _title_block draws centered at y_frac=0.07
-            size = int(h * 0.075)
-            tw_, th_ = C.text_block_size(self.title, size, w * 0.82, bold=True)
-            tx0 = (w - tw_) / 2
-            lo.add_fixed("title", (tx0, h * 0.07, tx0 + tw_, h * 0.07 + th_),
-                         priority=100)
-        for i, terr in enumerate(self.territories):
-            lat = terr.get("label_at")
-            if lat is None:
-                continue
-            bw, bh, _lh, _dh = self._pill_size(terr.get("label", ""),
-                                             terr.get("date", ""))
-            lx, ly = lat[0] * w, lat[1] * h
-            lo.add(f"pill:{terr.get('label', i)}",
-                   box=(lx - bw / 2, ly - bh / 2, lx + bw / 2, ly + bh / 2),
-                   priority=10)
-        resolved, warnings = lo.resolve()
-        self._layout_warnings = warnings
-        for i, terr in enumerate(self.territories):
-            key = f"pill:{terr.get('label', i)}"
-            if key in resolved:
-                x0, y0, x1, y1 = resolved[key]
-                terr["label_at"] = ((x0 + x1) / 2 / w, (y0 + y1) / 2 / h)
-
-    def validate(self):
-        issues = super().validate()
-        issues.extend(self._layout_warnings)
-        return issues
 
     def frame(self, t):
         frame = self.bg_frame(t)
         w, h = self.cfg.w, self.cfg.h
         if self.title:
             frame = _title_block(frame, self.title, t, y_frac=0.07)
-            _tw, _th = C.text_block_size(self.title, int(h * 0.075),
-                                         w * 0.82, bold=True)
-            self._register_text("title", ((w - _tw) / 2, h * 0.07,
-                                          (w + _tw) / 2, h * 0.07 + _th),
-                                INK, int(h * 0.075))
         pil = to_pil(frame)
         d = ImageDraw.Draw(pil, "RGBA")
-        # the newest territory that has started appearing stays vivid;
-        # older ones fade to ghost outlines so the map never becomes a
-        # Venn diagram of overlapping fills
-        active = -1
-        for i in range(len(self.territories)):
-            if a01(t, 0.6 + i * self.stagger, 0.9) > 0:
-                active = i
         for i, terr in enumerate(self.territories):
             e = a01(t, 0.6 + i * self.stagger, 0.9)
             if e <= 0:
                 continue
-            dim = i < active
             cx, cy = terr["at"][0] * w, terr["at"][1] * h
             rx, ry = terr.get("rx", 0.08) * w, terr.get("ry", 0.06) * h
             color = terr.get("color", (90, 140, 255))
             grow = ease_out(min(1.0, e * 1.2))
-            if dim:
-                # ghost: thin outline only, no fill, no pulse
-                d.ellipse([cx - rx * grow, cy - ry * grow,
-                           cx + rx * grow, cy + ry * grow],
-                          outline=color + (int(110 * e),), width=2)
-            else:
-                # soft fill
-                for k in range(3):
-                    rr = (rx * (0.55 + 0.15 * k) * grow, ry * (0.55 + 0.15 * k) * grow)
-                    d.ellipse([cx - rr[0], cy - rr[1], cx + rr[0], cy + rr[1]],
-                              fill=color + (int(46 * e),))
-                # edge
-                pulse = 1 + 0.05 * math.sin(2 * math.pi * t * 2 + i)
-                d.ellipse([cx - rx * grow * pulse, cy - ry * grow * pulse,
-                           cx + rx * grow * pulse, cy + ry * grow * pulse],
-                          outline=color + (int(255 * e),), width=3)
+            # soft fill
+            for k in range(3):
+                rr = (rx * (0.55 + 0.15 * k) * grow, ry * (0.55 + 0.15 * k) * grow)
+                d.ellipse([cx - rr[0], cy - rr[1], cx + rr[0], cy + rr[1]],
+                          fill=color + (int(46 * e),))
+            # edge
+            pulse = 1 + 0.05 * math.sin(2 * math.pi * t * 2 + i)
+            d.ellipse([cx - rx * grow * pulse, cy - ry * grow * pulse,
+                       cx + rx * grow * pulse, cy + ry * grow * pulse],
+                      outline=color + (int(255 * e),), width=3)
             label, date = terr.get("label", ""), terr.get("date", "")
             if e > 0.5 and label:
                 le = a01(t, 0.6 + i * self.stagger + 0.45, 0.5)
@@ -2287,7 +2099,9 @@ class TerritorySlide(Slide):
                 # floats unreadably on the map mid-fade
                 pill_e = min(1.0, le * 1.6)
                 text_e = max(0.0, (le - 0.25) / 0.75)
-                bw, bh, lh_, dh_ = self._pill_size(label, date)
+                lw_, lh_ = C.text_block_size(label, int(h * 0.036), w * 0.3, bold=True)
+                dw_, dh_ = C.text_block_size(date, int(h * 0.030), w * 0.3) if date else (0, 0)
+                bw, bh = max(lw_, dw_) + 30, lh_ + dh_ + 22
                 lat = terr.get("label_at")
                 if lat is not None:
                     lx, ly = lat[0] * w, lat[1] * h
@@ -2305,8 +2119,6 @@ class TerritorySlide(Slide):
                            fill=(255, 255, 255, int(150 * pill_e)), width=2)
                 d.rounded_rectangle([bx, by, bx + bw, by + bh],
                                     radius=10, fill=(12, 14, 22, int(225 * pill_e)))
-                self._register_text(f"pill:{label}", (bx, by, bx + bw, by + bh),
-                                    (255, 255, 255), int(h * 0.036))
                 d.text((bx + bw / 2, by + lh_ / 2 - 2), label,
                        font=get_font(int(h * 0.036), bold=True), anchor="mm",
                        fill=(255, 255, 255, int(255 * text_e)))
