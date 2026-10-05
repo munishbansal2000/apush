@@ -69,8 +69,13 @@ class Layout:
         self._items = {}   # key -> dict
         self._order = []   # insertion order
 
+    def _claim(self, key):
+        if key in self._items:
+            raise ValueError(f"duplicate layout key {key!r}")
+
     def add_fixed(self, key, box, priority=100):
         """An obstacle: never moves, everything else avoids it."""
+        self._claim(key)
         self._items[key] = {"box": tuple(box), "priority": priority,
                             "movable": False, "measure": None}
         self._order.append(key)
@@ -85,6 +90,7 @@ class Layout:
             raise ValueError(f"layout {key!r}: need box= or measure=")
         if measure is not None and font_size is None:
             raise ValueError(f"layout {key!r}: measure= needs font_size=")
+        self._claim(key)
         self._items[key] = {
             "box": tuple(box) if box is not None else measure(font_size),
             "priority": priority, "movable": movable,

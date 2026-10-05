@@ -39,6 +39,12 @@ class TestKeywordPop(unittest.TestCase):
         pop._build(360)
         self.assertGreater(pop._img.width, 200)
 
+    def test_visible_through_out_phase(self):
+        # mid-fade-out the word must still be on screen, not vanished early
+        base, wrapped, _ = self._wrapped()
+        self.assertFalse(np.array_equal(wrapped.frame(2.775),
+                                        base.frame(2.775)))
+
 
 if __name__ == "__main__":
     unittest.main()

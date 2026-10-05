@@ -6,7 +6,6 @@ Renders a 3-second sample to /tmp/plugin_slide_example.mp4.
 A plugin slide is any Scene subclass registered with the @slide decorator:
 it needs a duration and a frame(t) method returning an RGB numpy array.
 """
-import math
 import sys
 from pathlib import Path
 
@@ -39,13 +38,14 @@ class RippleSlide(Slide):
         cx, cy = w / 2, h / 2
         # expanding rings, one per second
         for i in range(3):
+            if t < i * 1.0:
+                continue
             k = ((t - i * 1.0) / 1.5) % 1.0
             r = 60 + k * 320
             alpha = int(160 * (1 - k))
             d.ellipse([cx - r, cy - r, cx + r, cy + r],
                       outline=(255, 176, 66, alpha), width=6)
         font = get_font(int(h * 0.11), bold=True)
-        pulse = 1 + 0.04 * math.sin(2 * math.pi * t)
         d.text((cx, cy), self.text, font=font, fill=(255, 255, 255, 255),
                anchor="mm", stroke_width=3, stroke_fill=(10, 10, 12, 255))
         return to_np(pil)

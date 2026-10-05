@@ -55,6 +55,28 @@ class TestMakeRouteCheck(unittest.TestCase):
             self.assertFalse(os.path.exists(out),
                              "render must not run when --check fails")
 
+    def test_name_traversal_rejected(self):
+        from slideforge.tools import make_route
+        from slideforge import routes as routes_mod
+
+        routes_dir = os.path.dirname(routes_mod.__file__)
+        escape = os.path.join(os.path.dirname(routes_dir), "evil.json")
+        self.addCleanup(lambda: os.path.exists(escape)
+                        and os.unlink(escape))
+        with tempfile.TemporaryDirectory() as d:
+            places_path = os.path.join(d, "places.json")
+            with open(places_path, "w") as f:
+                json.dump({"title": "T", "places": []}, f)
+            for bad in ("../../evil", "..\\..\\evil", "..", ""):
+                rc = make_route.main([
+                    "--map", os.path.join(d, "map.png"),
+                    "--places", places_path,
+                    "--name", bad,
+                    "--out", os.path.join(d, "out.mp4"),
+                ])
+                self.assertEqual(rc, 1, bad)
+                self.assertFalse(os.path.exists(escape), bad)
+
 
 if __name__ == "__main__":
     unittest.main()

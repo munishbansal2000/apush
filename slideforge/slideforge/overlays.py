@@ -2,6 +2,7 @@
 
 import math
 import random
+import zlib
 
 import numpy as np
 from PIL import Image, ImageDraw
@@ -19,8 +20,26 @@ class Overlay:
         self.start = start
         self.duration = duration  # None = until scene end
 
+    def _dur(self):
+        # with_overlays resolves None to the scene remainder; applied
+        # directly there is no scene end, so never fade out.
+        return self.duration if self.duration is not None else float("inf")
+
     def apply(self, frame, t):
         raise NotImplementedError
+
+    def apply_movie(self, frame, t, total):
+        """Movie-level application: runs after transition blending, so the
+        overlay never ghosts during crossfades. Default treats the whole
+        movie as the scene. Never mutates the overlay: duration is restored
+        afterwards so the instance stays reusable at scene level."""
+        prev = self.duration
+        if prev is None:
+            self.duration = total - self.start
+        try:
+            return self.apply(frame, t)
+        finally:
+            self.duration = prev
 
 
 class LowerThird(Overlay):
@@ -34,7 +53,7 @@ class LowerThird(Overlay):
 
     def apply(self, frame, t):
         h, w = frame.shape[:2]
-        dur = self.duration
+        dur = self._dur()
         local = t - self.start
         if local < 0 or local > dur:
             return frame
@@ -72,7 +91,7 @@ class Caption(Overlay):
 
     def apply(self, frame, t):
         h, w = frame.shape[:2]
-        dur = self.duration
+        dur = self._dur()
         local = t - self.start
         if local < 0 or local > dur:
             return frame
@@ -115,13 +134,13 @@ class KeywordPop(Overlay):
 
     def apply(self, frame, t):
         h, w = frame.shape[:2]
-        dur = self.duration
+        dur = self._dur()
         local = t - self.start
         if local < 0 or local > dur:
             return frame
         self._build(h)
         e_in = a01(local, 0, 0.45, ease=ease_out_back)
-        e_out = 1 - a01(local, dur - 0.45, 0.45, ease=ease_out_back)
+        e_out = 1 - a01(local, dur - 0.45, 0.45)
         e = min(e_in, e_out)
         if e <= 0:
             return frame
@@ -163,7 +182,11 @@ class Sticker(Overlay):
     def _build(self, w):
         if self._img is not None:
             return
-        seed = abs(hash(self.image)) % 9999 if isinstance(self.image, str) else 7
+        # crc32, not hash(): identical output on every interpreter run.
+        if isinstance(self.image, str):
+            seed = zlib.crc32(self.image.encode("utf-8")) % 9999
+        else:
+            seed = 7
         border = "sticker" if self.shape == "rect" else (255, 255, 255)
         self._img = card_image(self.image, int(w * self.size),
                                shape=self.shape, border=border,
@@ -171,7 +194,7 @@ class Sticker(Overlay):
 
     def apply(self, frame, t):
         h, w = frame.shape[:2]
-        dur = self.duration
+        dur = self._dur()
         local = t - self.start
         if local < 0 or local > dur:
             return frame
@@ -206,7 +229,7 @@ class RegionGlow(Overlay):
 
     def apply(self, frame, t):
         h, w = frame.shape[:2]
-        dur = self.duration
+        dur = self._dur()
         local = t - self.start
         if local < 0 or local > dur:
             return frame
@@ -240,6 +263,12 @@ def with_overlays(scene, overlays):
             for ov in self._overlays:
                 if ov.duration is None:
                     ov.duration = scene.duration - ov.start
+
+        def validate(self):
+            inner = self._scene
+            if hasattr(inner, "validate"):
+                return inner.validate()
+            return []
 
         def frame(self, t):
             if self._scene.cfg is None:
@@ -347,10 +376,26 @@ class RedPen(Overlay):
         kind = ann["kind"]
         if kind == "circle":
             cx, cy = ann["at"][0] * w, ann["at"][1] * h
-            r = ann.get("r", 0.08) * min(w, h)
-            pts = [(cx + r * math.cos(a), cy + r * 0.72 * math.sin(a))
-                   for a in [i / 44 * 2 * math.pi for i in range(45)]]
-            pts = _wobbly(pts, idx * 7 + 1, r * 0.05)
+            if "rx" in ann or "ry" in ann:
+                rx = ann.get("rx", ann.get("r", 0.08)) * w
+                ry = ann.get("ry", ann.get("r", 0.08)) * h
+            else:
+                rx = ann.get("r", 0.08) * min(w, h)
+                ry = rx * 0.72
+            # smooth hand-drawn wobble: a couple of low-frequency radial
+            # waves, so it reads as a teacher's circle, not a scribble.
+            # (per-point jitter looked like noise.)
+            rng = random.Random(idx * 7 + 1)
+            waves = [(rng.uniform(0.015, 0.035), rng.uniform(0, 6.283),
+                      rng.randint(2, 3)) for _ in range(2)]
+            n = 64
+            pts = []
+            for i in range(n + 1):
+                a = i / n * 2 * math.pi
+                wob = 1.0 + sum(amp * math.sin(fr * a + ph)
+                                for amp, ph, fr in waves)
+                pts.append((cx + rx * wob * math.cos(a),
+                            cy + ry * wob * math.sin(a)))
             d.line(pts[:max(2, int(len(pts) * e))], fill=col, width=lw,
                    joint="curve")
         elif kind == "underline":
@@ -401,6 +446,21 @@ class Magnifier(Overlay):
         self.radius = radius
         self.zoom = zoom
 
+    @classmethod
+    def trace_line(cls, line_box, t_start, t_end, radius=0.14, zoom=2.4,
+                   margin=0.08):
+        """Build a magnifier that slowly traces one text line — the
+        close-reading pattern. line_box is a HighlightSlide.line_boxes()
+        entry (or any {"x0","x1","yc"} fractional box). Pace is set by
+        t_start/t_end: ~6-8s across a full line reads comfortably; the
+        author controls it, the library just makes the pattern reusable."""
+        span = line_box["x1"] - line_box["x0"]
+        x0 = line_box["x0"] + span * margin
+        x1 = line_box["x1"] - span * margin
+        return cls([(t_start, x0, line_box["yc"]),
+                    (t_end, x1, line_box["yc"])],
+                   radius=radius, zoom=zoom)
+
     def _center_at(self, t):
         pts = self.path
         if t <= pts[0][0]:
@@ -422,8 +482,12 @@ class Magnifier(Overlay):
         lx, ly = lx * w, ly * h
         r = self.radius * min(w, h) * (0.6 + 0.4 * e)
         src_r = min(r / self.zoom, w / 2, h / 2)
-        x0 = int(min(max(lx - src_r, 0), w - 2 * src_r))
-        y0 = int(min(max(ly - src_r, 0), h - 2 * src_r))
+        # clamp the lens center so the source crop stays fully in-frame:
+        # without this, near an edge the crop clamps but the lens doesn't,
+        # misregistering the magnification (shows the wrong content)
+        lx = min(max(lx, src_r), w - src_r)
+        ly = min(max(ly, src_r), h - src_r)
+        x0, y0 = int(lx - src_r), int(ly - src_r)
         crop = frame[y0:y0 + int(2 * src_r), x0:x0 + int(2 * src_r)]
         if crop.size == 0:
             return frame
@@ -521,7 +585,15 @@ class MapNote(Overlay):
                        anchor="mm", fill=(255, 255, 255, int(255 * e)))
                 sub = note.get("sub", "")
                 if sub:
-                    d.text((bx + bw / 2, by + bh + h * 0.018), sub,
-                           font=get_font(int(h * 0.024)), anchor="mt",
-                           fill=(200, 205, 215, int(230 * e)))
+                    sfs = int(h * 0.024)
+                    stw_, sth_ = C.text_block_size(sub, sfs, w * 0.4)
+                    sbw, sbh = stw_ + 20, sth_ + 10
+                    sbx = min(max(bx + bw / 2 - sbw / 2, 6), w - sbw - 6)
+                    sby = by + bh + h * 0.010
+                    d.rounded_rectangle([sbx, sby, sbx + sbw, sby + sbh],
+                                        radius=7,
+                                        fill=(10, 12, 20, int(200 * e)))
+                    d.text((sbx + sbw / 2, sby + sbh / 2), sub,
+                           font=get_font(sfs), anchor="mm",
+                           fill=(235, 238, 245, int(255 * e)))
         return to_np(pil)

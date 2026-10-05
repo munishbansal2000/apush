@@ -13,8 +13,8 @@ Renderers:
       The scene plan is a reviewable JSON artifact (work/scene_plan.json);
       rendering is deterministic.
   legacy: the original chrome-headless-shell beat-segment pipeline
-      (audio -> timing -> beats -> wordalign -> anim -> render -> assemble
-      -> verify).
+      (audio -> timing -> beats -> wordalign -> anim -> clips -> render
+      -> assemble -> verify).
 
 Everything is deterministic: same inputs -> same output. Delete a segment
 file to force its re-render; --force re-renders everything.
@@ -28,10 +28,12 @@ import sys
 ROOT = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, ROOT)
 
-from stages import timing, beats, wordalign, anim, render, assemble, verify  # noqa: E402
+from stages import timing, beats, wordalign, anim, clips, render, assemble, \
+    verify  # noqa: E402
 from stages import direct as direct_stage, slideforge_render  # noqa: E402
 
-STAGES = ["audio", "timing", "beats", "wordalign", "anim", "render", "assemble", "verify"]
+STAGES = ["audio", "timing", "beats", "wordalign", "anim", "clips", "render",
+          "assemble", "verify"]
 
 # Renderer backends. "slideforge" is the default: pure-Python animation
 # (no chrome-headless-shell), LLM director -> deterministic compile.
@@ -114,6 +116,8 @@ def main():
             wordalign.run(ep_dir, cfg)
         elif stage == "anim":
             anim.run(ep_dir, cfg)
+        elif stage == "clips":
+            clips.run(ep_dir, cfg, force=args.force)
         elif stage == "render":
             seg_paths = render.run(ep_dir, cfg, force=args.force)
         elif stage == "direct":

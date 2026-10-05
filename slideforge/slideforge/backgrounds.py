@@ -76,12 +76,23 @@ def _textured(slide, w, h, t, spec):
 def _image(slide, w, h, t, spec):
     c = _cache(slide)
     if "cover" not in c:
-        arr = _as_array(spec.get("array", spec.get("path")))
+        src = spec.get("array")
+        if src is None:
+            src = spec.get("path")
+        if src is None:
+            raise ValueError("image bg needs 'array' or 'path'")
+        arr = _as_array(src)
         c["cover"] = C.dim(C.cover(arr, w, h), spec.get("dim", 0.55))
     drift = spec.get("drift")
     if drift:
+        try:
+            a, b = drift
+            a = (float(a[0]), float(a[1]), float(a[2]))
+            b = (float(b[0]), float(b[1]), float(b[2]))
+        except (TypeError, ValueError, IndexError, KeyError):
+            raise ValueError(
+                "image bg 'drift' must be [(cx, cy, fw), (cx, cy, fw)]")
         k = smooth(t / slide.duration)
-        a, b = drift[0], drift[1]
         view = (a[0] + (b[0] - a[0]) * k,
                 a[1] + (b[1] - a[1]) * k,
                 a[2] + (b[2] - a[2]) * k)

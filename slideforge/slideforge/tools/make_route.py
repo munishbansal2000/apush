@@ -64,6 +64,12 @@ def main(argv=None):
     ap.add_argument("--check", action="store_true",
                     help="validate route JSON before rendering; abort on issues")
     args = ap.parse_args(argv)
+    if (not args.name or not args.name.strip()
+            or args.name.strip() in (".", "..")
+            or "/" in args.name or "\\" in args.name):
+        print(f"bad --name {args.name!r}: must be a plain route name, "
+              f"not a path")
+        return 1
 
     sys.path.insert(0, str(_ROOT))
     build = _ROOT / "build" / args.name
@@ -128,7 +134,10 @@ def main(argv=None):
              "map": map_rel,
              "waypoints": [{"at": w["at"], "label": w["label"],
                             "sub": w.get("sub", "")} for w in waypoints]}
-    route_path = _HERE / "routes" / f"{args.name}.json"
+    route_path = (_HERE / "routes" / f"{args.name}.json").resolve()
+    if route_path.parent != (_HERE / "routes").resolve():
+        print(f"bad --name {args.name!r}: must stay inside routes/")
+        return 1
     route_path.write_text(json.dumps(route, indent=1))
     print(f"[3/4] wrote {route_path}")
 

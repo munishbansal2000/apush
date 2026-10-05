@@ -41,6 +41,10 @@ def _cmd_fetch(args):
         for t in assets.search(args.search, limit=args.limit):
             print(t)
         return 0
+    if not args.title or not args.out:
+        print("slideforge fetch: need --search QUERY or --title TITLE --out PATH",
+              file=sys.stderr)
+        return 2
     out, lic = assets.download(args.title, args.out)
     print(f"wrote {out} [{lic}]")
     return 0

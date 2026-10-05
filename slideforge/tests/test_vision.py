@@ -1,4 +1,6 @@
+import os
 import unittest
+from unittest import mock
 
 from slideforge import vision
 
@@ -31,11 +33,13 @@ class TestVision(unittest.TestCase):
             vision.vision_registry.get("agent")("/tmp/x.png", self.PLACES)
 
     def test_autodetect_falls_back_to_agent(self):
-        # no ollama here, no API keys -> agent
-        import os
-        os.environ.pop("OPENAI_API_KEY", None)
-        os.environ.pop("ANTHROPIC_API_KEY", None)
-        self.assertEqual(vision.autodetect(), "agent")
+        # no ollama here, no API keys -> agent (mocked: must not depend on
+        # whatever happens to listen on localhost, nor leak env changes)
+        with mock.patch("slideforge.vision._ollama_up", return_value=False), \
+                mock.patch.dict(os.environ, {}, clear=False):
+            os.environ.pop("OPENAI_API_KEY", None)
+            os.environ.pop("ANTHROPIC_API_KEY", None)
+            self.assertEqual(vision.autodetect(), "agent")
 
 
 if __name__ == "__main__":

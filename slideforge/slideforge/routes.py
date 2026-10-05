@@ -22,11 +22,16 @@ _HERE = Path(__file__).resolve().parent
 _ASSETS = _HERE.parent  # assets/ lives next to the package, not inside it
 
 
-def _resolve_map(map_path):
+def resolve_map(map_path):
+    """Resolve a route map path (repo-relative or absolute) to an absolute path."""
     mp = Path(map_path)
     if not mp.is_absolute():
         mp = _ASSETS / map_path
     return str(mp)
+
+
+def _resolve_map(map_path):
+    return resolve_map(map_path)
 
 
 def load_route(name_or_path):

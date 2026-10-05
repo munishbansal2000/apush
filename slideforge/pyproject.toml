@@ -29,4 +29,4 @@ include = ["slideforge*"]
 
 # Ship the bundled DejaVu fonts with the package (used by canvas.get_font).
 [tool.setuptools.package-data]
-slideforge = ["../assets/fonts/*.ttf"]
+slideforge = ["fonts/*.ttf"]

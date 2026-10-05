@@ -6,6 +6,12 @@ Ken Burns drift, so text slides get motion too.
 
 Registered as the ``apush`` background plugin: ``{"type": "apush",
 "era": "twenties", "dim": 0.5}``.
+
+The era files (``media-generation-*.webp``) are local artifacts ignored by
+git (see ``slideforge/.gitignore``) — a fresh clone does not have them.
+Generate one with ``slideforge gen "<prompt>" --out <era_path(era)>``;
+until then, rendering an apush bg raises FileNotFoundError naming the
+missing file.
 """
 
 from pathlib import Path
@@ -27,10 +33,21 @@ ERAS = {
 }
 
 
+def era_available(era):
+    """True when the era's local background file exists on disk."""
+    return era in ERAS and (_ASSETS / ERAS[era]).exists()
+
+
 def era_path(era):
     if era not in ERAS:
         raise ValueError(f"unknown era {era!r}; choose from {sorted(ERAS)}")
-    return str(_ASSETS / ERAS[era])
+    p = _ASSETS / ERAS[era]
+    if not p.exists():
+        raise FileNotFoundError(
+            f"apush era background missing: {p} — era art files "
+            f"(media-generation-*.webp) are local git-ignored artifacts. "
+            f"Generate one with: slideforge gen \"<prompt>\" --out {p}")
+    return str(p)
 
 
 def apush_bg(era, dim=0.55, drift=True, push=0.14):

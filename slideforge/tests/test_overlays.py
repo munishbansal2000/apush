@@ -1,9 +1,16 @@
+import os
+import subprocess
+import sys
 import unittest
+from unittest import mock
 
 import numpy as np
 
-from slideforge import Config, TitleSlide
-from slideforge.overlays import LowerThird, Caption, with_overlays
+from slideforge import Config, TitleSlide, validate
+from slideforge.overlays import LowerThird, Caption, Sticker, RegionGlow, \
+    MapNote, with_overlays
+from slideforge.slides import MapZoomSlide
+from slideforge.timeline import Movie
 
 
 def cfg():
@@ -44,6 +51,79 @@ class TestOverlays(unittest.TestCase):
         frame = np.zeros((360, 640, 3), dtype=np.uint8)
         lt = LowerThird("Name", start=0.5, duration=3.5)
         np.testing.assert_array_equal(lt.apply(frame, 0.1), frame)
+
+    def test_direct_apply_without_duration(self):
+        # duration=None means "until scene end" inside with_overlays; applied
+        # directly there is no end, so overlays stay visible, never crash.
+        img = np.full((200, 200, 3), 150, dtype=np.uint8)
+        for ov in (Caption("hello"), Sticker(img), RegionGlow()):
+            frame = np.zeros((360, 640, 3), dtype=np.uint8)
+            before = frame.copy()
+            out = ov.apply(frame, 5.0)
+            self.assertEqual(out.shape, (360, 640, 3), type(ov).__name__)
+            self.assertFalse(np.array_equal(out, before), type(ov).__name__)
+
+    def test_mapnote_sub_pill_stays_in_frame(self):
+        import PIL.ImageDraw
+        cfg0 = cfg()
+        img = np.full((360, 640, 3), 140, dtype=np.uint8)
+        cam = MapZoomSlide(img, [{"at": (0.08, 0.5), "zoom": 1.0,
+                                  "label": "A", "sub": "s"}], cfg=cfg0)
+        note = MapNote(cam, [{"at": (0.08, 0.5), "label": "A",
+                              "sub": "X" * 60}])
+        real_draw = PIL.ImageDraw.Draw
+        boxes = []
+
+        class RecDraw:
+            def __init__(self, *a, **k):
+                self._d = real_draw(*a, **k)
+
+            def rounded_rectangle(self, xy, *a, **k):
+                boxes.append([float(v) for v in xy])
+                return self._d.rounded_rectangle(xy, *a, **k)
+
+            def __getattr__(self, name):
+                return getattr(self._d, name)
+
+        with mock.patch.object(PIL.ImageDraw, "Draw", RecDraw):
+            note.apply(img.copy(), 2.0)
+        sub_box = boxes[-1]  # sub pill is drawn after the label pill
+        self.assertGreaterEqual(sub_box[0], 0)
+        self.assertLessEqual(sub_box[2], 640)
+
+    def test_apply_movie_does_not_mutate_overlay(self):
+        frame = np.zeros((180, 320, 3), dtype=np.uint8)
+        cap = Caption("hello", start=1.0)
+        out = cap.apply_movie(frame, 5.0, 20.0)
+        self.assertIsNone(cap.duration)
+        self.assertFalse(np.array_equal(out, frame))
+
+    def test_wrapped_scene_forwards_validate(self):
+        base = TitleSlide("Hi", duration=4.0, cfg=cfg())  # no bg -> warns
+        m = Movie(cfg())
+        m.add(with_overlays(base, [Caption("x")]), transition="cut")
+        bad = validate.movie(m)
+        self.assertEqual(len(bad), 1)
+        self.assertTrue(any("no contextual background" in i
+                            for i in bad[0][1]), bad)
+
+    def test_sticker_deterministic_across_processes(self):
+        repo = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        img = os.path.join(repo, "assets", "stickers", "maize_cob.jpg")
+        code = ("import sys, hashlib; sys.path.insert(0, %r); "
+                "import numpy as np; "
+                "from slideforge.overlays import Sticker; "
+                "st = Sticker(%r); st._build(640); "
+                "print(hashlib.sha256(np.asarray(st._img).tobytes()).hexdigest())"
+                % (repo, img))
+        digests = set()
+        for seed in ("1", "2"):
+            env = dict(os.environ, PYTHONHASHSEED=seed)
+            out = subprocess.run([sys.executable, "-c", code], capture_output=True,
+                                 text=True, env=env, timeout=120)
+            self.assertEqual(out.returncode, 0, out.stderr)
+            digests.add(out.stdout.strip())
+        self.assertEqual(len(digests), 1)  # same bytes under both seeds
 
 
 if __name__ == "__main__":

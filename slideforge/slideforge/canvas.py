@@ -8,7 +8,11 @@ from PIL import Image, ImageDraw, ImageFont
 _HERE = os.path.dirname(os.path.abspath(__file__))
 # Bundled fonts first: identical rendering on every platform, no system
 # dependency. (DejaVu is freely licensed and ships with the library.)
-_BUNDLED = os.path.normpath(os.path.join(_HERE, os.pardir, "assets", "fonts"))
+# They live inside the package so installs include them; the legacy
+# ../assets/fonts location is still honored as a fallback.
+_BUNDLED = os.path.join(_HERE, "fonts")
+_LEGACY_FONTS = os.path.normpath(
+    os.path.join(_HERE, os.pardir, "assets", "fonts"))
 _FONT_CANDIDATES = {
     ("sans", False): ["DejaVuSans.ttf", "Arial.ttf", "arial.ttf"],
     ("sans", True): ["DejaVuSans-Bold.ttf", "Arialbd.ttf", "arialbd.ttf"],
@@ -26,11 +30,12 @@ _SYSTEM_DIRS = [
 
 
 def _resolve_font(names):
-    """First existing path for the font names, bundled -> system."""
-    for name in names:
-        p = os.path.join(_BUNDLED, name)
-        if os.path.isfile(p):
-            return p
+    """First existing path for the font names, bundled -> legacy -> system."""
+    for directory in (_BUNDLED, _LEGACY_FONTS):
+        for name in names:
+            p = os.path.join(directory, name)
+            if os.path.isfile(p):
+                return p
     for d in _SYSTEM_DIRS:
         for name in names:
             p = os.path.join(d, name)

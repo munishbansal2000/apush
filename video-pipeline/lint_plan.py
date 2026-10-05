@@ -6,7 +6,8 @@ would otherwise render into a broken video:
 
   errors (raise PlanError, block the compile)
     - two overlays colliding in space AND time within one scene
-    - an overlay running past its scene's end
+    - an overlay running past its scene's end, starting before it,
+      or never visible at all (starts at/past the scene end)
     - a scene shorter than SCENE_MIN_SEC (a flash, not a scene)
     - a transition as long as the scene it eats
   warns (printed, do not block)
@@ -50,7 +51,9 @@ TRANSITION_EAT_WARN = 0.25  # warn when a transition exceeds this share
 # -------------------------------------------------------------------------
 
 # Approximate screen regions as (x0, y0, x1, y1) fractions of frame size,
-# measured from slideforge/overlays.py.
+# measured from slideforge/overlays.py. Boxes are worst-case: the caption
+# is assumed full-width, so a caption and a lowerthird overlapping in
+# time always collide — stagger them even when a short caption would fit.
 def _overlay_region(spec):
     otype = str(spec.get("type", "")).lower()
     if otype == "caption":
@@ -76,8 +79,20 @@ def _regions_overlap(a, b):
 
 
 def _is_path_string(s):
-    return "/" in s or s.lower().endswith(
-        (".jpg", ".jpeg", ".png", ".webp", ".mp4", ".mov"))
+    """Heuristic: is this string a file path rather than on-screen text?
+
+    Any string with whitespace is prose (paths in plans never have spaces
+    that matter here); otherwise it is a path only with a media extension
+    or clear path shape, so "and/or" still counts as words.
+    """
+    t = s.strip()
+    if t.lower().endswith(
+            (".jpg", ".jpeg", ".png", ".webp", ".mp4", ".mov")):
+        return True
+    if not t or any(c.isspace() for c in t):
+        return False
+    return (t.count("/") >= 2 or t.startswith(("./", "/", "~", ".."))
+            or "\\" in t or (len(t) > 2 and t[0].isalpha() and t[1] == ":"))
 
 
 def _count_words(obj):
@@ -114,8 +129,11 @@ def lint_plan(plan):
         # pacing: can a viewer read everything on screen in time?
         words = _count_words(spec.get("params", {}))
         for ov in spec.get("overlays", []) or []:
+            # caption=text, keywordpop=word, sticker/regionglow=label,
+            # lowerthird=name+role
             words += _count_words({k: v for k, v in ov.items()
-                                   if k in ("text", "word", "label")})
+                                   if k in ("text", "word", "label",
+                                            "name", "role")})
         need = words / READ_WPM * 60
         if words >= 8 and need > dur:
             warns.append(
@@ -129,13 +147,22 @@ def lint_plan(plan):
             start = float(ov.get("start", 0))
             odur = ov.get("duration")
             odur = float(odur) if odur is not None else dur - start
-            if start < 0 or start + odur > dur + 1e-9:
+            if start < 0:
+                errors.append(
+                    f"scene '{sid}': overlay #{idx} ({otype}) "
+                    f"starts at {start:.1f}s (before the scene starts)")
+            elif odur <= 0 or start >= dur:
+                errors.append(
+                    f"scene '{sid}': overlay #{idx} ({otype}) "
+                    f"[{start:.1f},{start + odur:.1f}]s is never visible "
+                    f"in the {dur:.1f}s scene")
+            elif start + odur > dur + 1e-9:
                 errors.append(
                     f"scene '{sid}': overlay #{idx} ({otype}) "
                     f"[{start:.1f},{start + odur:.1f}]s runs past the "
                     f"{dur:.1f}s scene")
             floor = OVERLAY_MIN.get(otype)
-            if floor and odur < floor:
+            if floor and 0 < odur < floor:
                 warns.append(
                     f"scene '{sid}': overlay #{idx} ({otype}) shows "
                     f"{odur:.1f}s (under the {floor}s don't-flash floor)")
@@ -168,8 +195,18 @@ def lint_plan(plan):
 
 
 def main(argv):
-    with open(argv[0], encoding="utf-8") as f:
-        plan = json.load(f)
+    if not argv:
+        print("usage: python3 lint_plan.py <plan.json>", file=sys.stderr)
+        return 2
+    try:
+        with open(argv[0], encoding="utf-8") as f:
+            plan = json.load(f)
+    except OSError as e:
+        print(f"ERROR: cannot read {argv[0]!r}: {e}", file=sys.stderr)
+        return 2
+    except json.JSONDecodeError as e:
+        print(f"ERROR: invalid JSON in {argv[0]!r}: {e}", file=sys.stderr)
+        return 2
     errors, warns = lint_plan(plan)
     for w in warns:
         print(f"WARN: {w}")

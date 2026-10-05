@@ -48,6 +48,19 @@ class TestTransitions(unittest.TestCase):
         self.assertEqual(set(T.TRANSITIONS),
                          set(transition_registry.names()))
 
+    def test_backwards_compat_map_is_live(self):
+        from slideforge.plugins import transition
+
+        @transition("test-tmp-live")
+        def _tmp(a, b, k):
+            return b
+
+        try:
+            self.assertIn("test-tmp-live", T.TRANSITIONS)
+            self.assertIs(T.TRANSITIONS["test-tmp-live"], _tmp)
+        finally:
+            del transition_registry._d["test-tmp-live"]
+
 
 if __name__ == "__main__":
     unittest.main()

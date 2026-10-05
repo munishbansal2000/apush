@@ -59,6 +59,14 @@ class TestResolve(unittest.TestCase):
         self.assertEqual(resolved["a"], (100, 100, 200, 160))
         self.assertEqual(detect_collisions(resolved), [])
 
+    def test_duplicate_keys_rejected(self):
+        lo = Layout(1280, 720)
+        lo.add("pill", box=(100, 100, 200, 160))
+        with self.assertRaises(ValueError):
+            lo.add("pill", box=(150, 120, 250, 180))
+        with self.assertRaises(ValueError):
+            lo.add_fixed("pill", (0, 0, 10, 10))
+
     def test_unresolvable_warns(self):
         # a pill nearly as big as the frame cannot dodge the title
         lo = Layout(200, 200)
@@ -129,6 +137,35 @@ class TestTerritoryLayout(unittest.TestCase):
         issues = s.validate()
         self.assertTrue(any("collides" in i for i in issues),
                         f"expected a collision warning, got {issues}")
+
+    def test_construction_without_cfg_defers_layout(self):
+        from slideforge import Config
+        from slideforge.slides import TerritorySlide
+        terrs = [{"at": (0.5, 0.5), "rx": 0.1, "ry": 0.1,
+                  "label": "Louisiana", "date": "1803",
+                  "color": (255, 170, 60), "label_at": (0.5, 0.12)}]
+        s = TerritorySlide(self._map(), terrs)  # no cfg: must not crash
+        self.assertFalse(s._labels_resolved)
+        self.assertEqual(s.validate(), [])
+        s.cfg = Config(w=1280, h=720)
+        f = s.frame(1.0)
+        self.assertEqual(f.shape, (720, 1280, 3))
+        self.assertTrue(s._labels_resolved)
+
+    def test_duplicate_labels_resolve_independently(self):
+        from slideforge import Config
+        from slideforge.slides import TerritorySlide
+        cfg = Config(w=1280, h=720)
+        terrs = [{"at": (0.3, 0.5), "rx": 0.1, "ry": 0.1, "label": "X",
+                  "date": "1803", "color": (255, 170, 60),
+                  "label_at": (0.5, 0.5)},
+                 {"at": (0.7, 0.5), "rx": 0.1, "ry": 0.1, "label": "X",
+                  "date": "1845", "color": (120, 220, 130),
+                  "label_at": (0.5, 0.5)}]
+        s = TerritorySlide(self._map(), terrs, title="T", cfg=cfg)
+        s.frame(1.0)  # must not raise on duplicate layout keys
+        self.assertNotEqual(s.territories[0]["label_at"],
+                            s.territories[1]["label_at"])
 
 
 if __name__ == "__main__":

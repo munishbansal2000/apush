@@ -9,6 +9,8 @@ Register a new one::
         ...
 """
 
+from collections.abc import Mapping
+
 import numpy as np
 from PIL import Image
 
@@ -63,6 +65,20 @@ def zoom_fade(a, b, k):
     return crossfade(az, b, k)
 
 
-# Backwards-compatible name -> fn mapping.
-TRANSITIONS = {name: transition_registry.get(name)
-               for name in transition_registry.names()}
+# Backwards-compatible name -> fn mapping. A live read-only view of the
+# registry (not a snapshot), so plugins registered later show up too.
+class _LiveTransitionMap(Mapping):
+    def __getitem__(self, name):
+        return transition_registry.get(name)
+
+    def __iter__(self):
+        return iter(transition_registry.names())
+
+    def __len__(self):
+        return len(transition_registry.names())
+
+    def __repr__(self):
+        return repr(dict(self))
+
+
+TRANSITIONS = _LiveTransitionMap()
