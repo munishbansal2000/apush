@@ -36,7 +36,7 @@ scene plan schema (version 1): {"version": 1, "episode": "...",
 "params": {...}, "duration_sec": 8.2, "transition": "cut", "trans_dur": 0,
 "overlays": [...]}]}.
 
-The 25 slide types you may use: TitleSlide, BulletSlide, StepsSlide,
+The 27 slide types you may use: TitleSlide, BulletSlide, StepsSlide,
 DisplayPointsSlide, DisplayHeadline, CompareSlide, HighlightSlide,
 CollageSlide, TitleCardSlide, DuoSlide, ImageSlide, SplitSlide, QuoteSlide,
 StatSlide, KenBurnsSlide, CalloutSlide, MapZoomSlide, RouteSlide,
@@ -63,8 +63,9 @@ VISUAL GRAMMAR — follow it exactly:
 - StaggerSlide when the narration NAMES 2-4 items in sequence (e.g. "Three
   boxes: maize, Iroquois, wilderness" or "Southwest, Plains, Northeast").
   Each panel enters FROM the direction of its position as its name is SPOKEN.
-  Set each panel's "at" to the word-time when the name is spoken (measure via
-  Vosk word_timing, or estimate from turn position — never guess blindly).
+  Set each panel's "at" to the EXACT word-time from the WORD TIMES line
+  for that turn (e.g. if WORD TIMES shows "maize@3.7s", use "at": 3.7).
+  NEVER estimate — the measured times are in the prompt.
   Panels: {"image": manifest path, "label": "...", "at": seconds, "from":
   "left"|"right"|"top"|"bottom"}. Use "face_top": true for portrait images.
 - TacticalSlide for battles/ambushes with two forces: {"blue_label": "...",
@@ -139,6 +140,13 @@ def build_prompt(episode, turns, manifest):
         turn_lines.append(
             f"[{i:02d}] {t.get('speaker', '?')} "
             f"({t.get('duration_sec', 0):.1f}s): {t.get('text', '')}")
+        # Include measured word times so within-slide timings are exact
+        wt = t.get("word_times", [])
+        if wt:
+            # Compact: only words likely to trigger visuals (nouns/proper nouns
+            # are not POS-tagged; include all words — the LLM filters)
+            wt_str = " ".join(f"{w['word']}@{w['start']:.1f}s" for w in wt)
+            turn_lines.append(f"  WORD TIMES: {wt_str}")
     man_lines = []
     for m in manifest:
         man_lines.append(

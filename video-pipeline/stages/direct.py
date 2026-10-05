@@ -41,6 +41,13 @@ def _load_turns(ep_dir):
             for i, t in enumerate(json.load(f)):
                 texts[f"t{i:02d}"] = t
 
+    # Load measured word times (from wordtiming stage) if present
+    wt_path = os.path.join(work, "word_times.json")
+    word_times = {}
+    if os.path.exists(wt_path):
+        with open(wt_path, encoding="utf-8") as f:
+            word_times = json.load(f)
+
     turns = []
     for t in timings["turns"]:
         tid = t["turn"]
@@ -49,6 +56,7 @@ def _load_turns(ep_dir):
             "speaker": src.get("speaker", tid),
             "text": src.get("text", f"[{tid} narration]"),
             "duration_sec": t["dur"],
+            "word_times": word_times.get(tid, []),
         })
     return turns
 

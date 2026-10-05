@@ -32,7 +32,7 @@ from stages import timing, beats, wordalign, anim, clips, render, assemble, \
     verify  # noqa: E402
 from stages import direct as direct_stage, slideforge_render  # noqa: E402
 
-STAGES = ["audio", "timing", "beats", "wordalign", "anim", "clips", "render",
+STAGES = ["audio", "timing", "wordtiming", "beats", "wordalign", "anim", "clips", "render",
           "assemble", "verify"]
 
 # Renderer backends. "slideforge" is the default: pure-Python animation
@@ -40,7 +40,7 @@ STAGES = ["audio", "timing", "beats", "wordalign", "anim", "clips", "render",
 # "legacy" keeps the original chrome-based beat-segment pipeline.
 RENDERERS = {
     "legacy": STAGES,
-    "slideforge": ["audio", "timing", "direct", "slideforge_render",
+    "slideforge": ["audio", "timing", "wordtiming", "direct", "slideforge_render",
                    "assemble", "verify"],
 }
 
@@ -114,6 +114,9 @@ def main():
             run_audio(ep_dir, cfg, args.skip_audio_build)
         elif stage == "timing":
             timing.run(ep_dir, cfg)
+        elif stage == "wordtiming":
+            from stages import wordtiming
+            wordtiming.run(ep_dir, cfg)
         elif stage == "beats":
             beats.run(ep_dir, cfg)
         elif stage == "wordalign":
