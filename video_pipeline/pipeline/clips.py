@@ -8,8 +8,6 @@ import sys
 from pathlib import Path
 
 from .common import PipelineError, resolve_local
-from . import ltx_desktop
-from .creativity import build_ai_prompt, provider_defaults
 
 
 def _run(command: list[str], label: str) -> None:
@@ -41,19 +39,7 @@ def _extend_clip(source: Path, output: Path, seconds: float) -> None:
 
 
 def _generate_ltx(image: Path, prompt: str, output: Path, seconds: float,
-                  seed: int, repo_root: Path, python: str,
-                  config: dict) -> None:
-    # Prefer the complete LTX Desktop installation when present. It ships the
-    # current LTX-2.5 model/runtime and avoids downloading a second legacy model.
-    if config.get("ltx_backend", "auto") != "legacy" and ltx_desktop.is_available(config):
-        temp = output.with_name(f".{output.stem}.ltx-desktop-source.mp4")
-        try:
-            ltx_desktop.generate(image, prompt, temp, seconds, seed, config)
-            _extend_clip(temp, output, seconds)
-        finally:
-            if temp.exists():
-                temp.unlink()
-        return
+                  seed: int, repo_root: Path, python: str) -> None:
     # The checked-in LTX safety contract allows 3-6 generated seconds. For a
     # 10-second POC asset we generate six seconds, then extend deterministically;
     # the video renderer can also trim it to the narration length.
@@ -97,34 +83,16 @@ def _generate_meta(image: Path, prompt: str, output: Path, seconds: float,
     _run(command, "Meta UI image-to-video generation")
 
 
-def _check_prompt_safety(prompt: str, scene_id: str, repo_root: Path,
-                         allow_subject_references: bool = False) -> None:
+def _check_prompt_safety(prompt: str, scene_id: str, repo_root: Path) -> None:
     """Enforce the ambient-motion-only contract before any provider call."""
     sys.path.insert(0, str(repo_root / "video"))
     try:
         from animate_still import check_prompt_safety
     except ImportError as exc:
         raise PipelineError(f"cannot load prompt safety filter: {exc}") from exc
-    ok, detail = check_prompt_safety(
-        prompt, allow_subject_references=allow_subject_references)
+    ok, detail = check_prompt_safety(prompt)
     if not ok:
         raise PipelineError(f"ai_clip prompt rejected for scene {scene_id}: {detail}")
-
-
-def _select_providers(animation: dict, configured: str,
-                      override: str) -> tuple[str, str | None]:
-    """Resolve provider precedence: CLI, scene, manifest, pattern default."""
-    pattern_provider, pattern_fallback = provider_defaults(animation)
-    if override != "manifest":
-        selected = override
-    else:
-        selected = animation.get("provider")
-        if not selected:
-            selected = configured if configured != "none" else pattern_provider
-    fallback = animation.get("fallback_provider", pattern_fallback)
-    if fallback == selected:
-        fallback = None
-    return selected or "none", fallback
 
 
 def generate_clips(manifest: dict, manifest_path: Path, repo_root: Path,
@@ -148,9 +116,9 @@ def generate_clips(manifest: dict, manifest_path: Path, repo_root: Path,
                               repo_root) for scene in jobs]
     for scene in jobs:
         animation = scene["animation"]
-        prompt = build_ai_prompt(animation)
-        scene_provider, fallback = _select_providers(
-            animation, provider, provider_override)
+        scene_provider = (provider if provider_override != "manifest"
+                          else animation.get("provider", provider))
+        fallback = animation.get("fallback_provider")
         image = resolve_local(scene["visual"]["base_image"],
                               manifest_path.parent, repo_root)
         output = resolve_local(scene["visual"]["clip"],
@@ -165,21 +133,17 @@ def generate_clips(manifest: dict, manifest_path: Path, repo_root: Path,
             raise PipelineError(
                 f"ai_clip {scene['id']} is missing and neither the scene nor "
                 "clip_generation config selects a provider")
-        pattern = (animation.get("creativity") or {}).get("pattern")
-        _check_prompt_safety(
-            prompt, scene["id"], repo_root,
-            allow_subject_references=pattern in {
-                "semantic_spotlight", "archival_evidence_scan"})
+        _check_prompt_safety(animation["prompt"], scene["id"], repo_root)
         print(f"[clips] {scene['id']}: {scene_provider}, {seconds:g}s")
         if dry_run:
             continue
         output.parent.mkdir(parents=True, exist_ok=True)
         def generate(selected: str) -> None:
             if selected == "ltx":
-                _generate_ltx(image, prompt, output, seconds,
-                              seed, repo_root, ltx_python, config)
+                _generate_ltx(image, animation["prompt"], output, seconds,
+                              seed, repo_root, ltx_python)
             elif selected == "meta-ui":
-                _generate_meta(image, prompt, output, seconds,
+                _generate_meta(image, animation["prompt"], output, seconds,
                                config, repo_root)
             else:
                 raise PipelineError(f"unsupported video generator: {selected}")

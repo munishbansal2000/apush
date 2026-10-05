@@ -356,9 +356,7 @@ def kinetic_text(phrase, dur, sub=None, color=(233, 196, 106, 255), bg_img=None,
 def timeline_scene(events, dur, title="", bg_img=None, darken=70):
     """Horizontal timeline; event dots + labels pop in sequence.
 
-    Events may be legacy ``(label, caption)`` pairs or dictionaries with
-    ``label``, ``caption`` and a cue-resolved ``at`` timestamp. Cue timing is
-    preferred: the visual claim then appears when the narration says it.
+    events: list of (label, caption). Dots appear evenly across dur.
     """
     from moviepy import VideoClip
     y0 = H // 2
@@ -375,22 +373,14 @@ def timeline_scene(events, dur, title="", bg_img=None, darken=70):
     d.line([(px(100), y0), (W - px(100), y0)], fill=(90, 95, 110), width=px(8))
     base = np.asarray(base_img)
     n = len(events)
-    normalized = []
-    for i, event in enumerate(events):
-        if isinstance(event, dict):
-            label, cap = event["label"], event["caption"]
-            at = float(event.get("at", (i + 1) / (n + 1) * dur * 0.85))
-        else:
-            label, cap = event
-            at = (i + 1) / (n + 1) * dur * 0.85
-        normalized.append((label, cap, at))
     lf = font(FB, 40)
     cf = font(FR, 34)
     _note_prim("timeline_scene")
     if title:
         _note_box("timeline-title", title,
                   (px(80), px(120), px(80) + lf.getlength(title), px(120) + px(72)), 0, dur)
-    for i, (label, cap, at) in enumerate(normalized):
+    for i, (label, cap) in enumerate(events):
+        at = (i + 1) / (n + 1) * dur * 0.85
         x = px(100) + (W - px(200)) * (i + 1) / (n + 1)
         lab_lines = wrap_px(d, label, lf, 200)
         cap_lines = wrap_px(d, cap, cf, 200)
@@ -411,7 +401,8 @@ def timeline_scene(events, dur, title="", bg_img=None, darken=70):
     def frame(t):
         canvas = Image.fromarray(base.copy())
         d2 = ImageDraw.Draw(canvas)
-        for i, (label, cap, at) in enumerate(normalized):
+        for i, (label, cap) in enumerate(events):
+            at = (i + 1) / (n + 1) * dur * 0.85
             if t < at:
                 continue
             x = px(100) + (W - px(200)) * (i + 1) / (n + 1)
@@ -1602,9 +1593,6 @@ def _device_annotate(base_clip, params, dur):
     from moviepy import VideoClip
     dur = float(dur)
     notes = params["annotations"]
-    # Screen-space markers cannot honestly follow a moving crop without
-    # object tracking. Freeze on the first annotation by default.
-    freeze_frame = bool(params.get("freeze_frame", True))
     items = []
     for index, note in enumerate(notes):
         at = float(note.get("at", dur * (index + 1) / (len(notes) + 1)))
@@ -1624,11 +1612,7 @@ def _device_annotate(base_clip, params, dur):
                   (lx - pw / 2, ly - ph / 2, lx + pw / 2, ly + ph / 2), at, dur)
 
     def frame(t):
-        # Spatial annotations cannot remain attached to a moving crop without
-        # object tracking. A declared freeze makes the coordinate contract
-        # honest: all annotation points refer to one stable proof frame.
-        source_t = min(item["at"] for item in items) if freeze_frame else t
-        canvas = Image.fromarray(base_clip.get_frame(source_t)).convert("RGBA")
+        canvas = Image.fromarray(base_clip.get_frame(t)).convert("RGBA")
         d = ImageDraw.Draw(canvas, "RGBA")
         for item in items:
             if t < item["at"]:

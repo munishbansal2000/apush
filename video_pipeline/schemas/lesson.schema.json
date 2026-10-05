@@ -41,33 +41,15 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "engine": {"enum": ["fish", "edge", "fish_cloud"]},
+        "engine": {"enum": ["fish", "edge"]},
         "server_url": {"type": "string", "pattern": "^https?://(localhost|127\\.0\\.0\\.1)(:[0-9]+)?/?$"},
         "reference_audio": {"type": "string", "minLength": 1},
         "reference_text": {"type": "string", "minLength": 1},
-        "reference_id": {"type": "string", "minLength": 1},
         "timeout_seconds": {"type": "integer", "minimum": 1},
         "settings": {"type": "object"},
         "edge_voice": {"type": "string"},
         "edge_rate": {"type": "string"},
-        "edge_pitch": {"type": "string"},
-        "voices": {
-          "type": "object",
-          "minProperties": 1,
-          "additionalProperties": {
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-              "edge_voice": {"type": "string"},
-              "edge_rate": {"type": "string"},
-              "edge_pitch": {"type": "string"},
-              "reference_audio": {"type": "string"},
-              "reference_text": {"type": "string"},
-              "reference_id": {"type": "string", "minLength": 1},
-              "settings": {"type": "object"}
-            }
-          }
-        }
+        "edge_pitch": {"type": "string"}
       }
     },
     "generation": {
@@ -185,7 +167,6 @@
             "voice": {"type": "string"},
             "reference_audio": {"type": "string"},
             "reference_text": {"type": "string"},
-            "reference_id": {"type": "string", "minLength": 1},
             "settings": {"type": "object"}
           }
         },
@@ -217,7 +198,7 @@
           "type": "object",
           "required": ["type"],
           "properties": {
-            "type": {"enum": ["auto", "title", "ken_burns", "zoom", "camera_path", "callout", "timeline", "bullets", "typewriter", "map", "counter", "versus", "wipe", "ai_clip", "parallax", "diagram"]}
+            "type": {"enum": ["auto", "title", "ken_burns", "zoom", "camera_path", "callout", "timeline", "bullets", "typewriter", "map", "counter", "versus", "wipe", "ai_clip", "parallax", "source_analysis", "diagram"]}
           }
         },
         "beats": {

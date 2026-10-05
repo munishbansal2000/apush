@@ -156,24 +156,13 @@ def _local_duration(seconds: float) -> int:
     return 10
 
 
-def _desktop_pipeline(model: str) -> str:
-    """Translate public model aliases to LTX Desktop API pipeline names."""
-    if model in {"fast", "fast-2.5"}:
-        return "fast"
-    if model in {"pro", "pro-2.5"}:
-        raise PipelineError(
-            "LTX Desktop local generation supports only the fast pipeline; "
-            "set clip_generation.ltx_model to fast or fast-2.5")
-    return model
-
-
 def generate(image: Path, prompt: str, output: Path, seconds: float,
              seed: int, config: dict) -> None:
     url = _start_server(config)
     payload = {
         "prompt": prompt,
         "resolution": config.get("ltx_resolution", "540p"),
-        "model": _desktop_pipeline(config.get("ltx_model", "fast")),
+        "model": config.get("ltx_model", "fast"),
         "cameraMotion": config.get("ltx_camera_motion", "static"),
         "negativePrompt": config.get(
             "ltx_negative_prompt",

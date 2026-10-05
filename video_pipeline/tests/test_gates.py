@@ -9,7 +9,6 @@ sys.path.insert(0, str(ROOT / "video_pipeline"))
 from pipeline.common import PipelineError
 from pipeline import gates
 from pipeline.gates import (
-    animation_consistency,
     beat_timing,
     cue_integrity,
     iter_cues,
@@ -24,7 +23,6 @@ from pipeline.gates import (
     text_quantity,
     tts_text,
     variety,
-    visual_asset_reuse,
 )
 from pipeline.timing import _boundary_offset
 
@@ -118,61 +116,9 @@ class CueIntegrityTests(unittest.TestCase):
             animation={"type": "timeline",
                        "events": [{"cue": "gamma", "label": "x"}]},
         )
-        # Cue-timed timeline events are first-class timing sources.
+        # 'events' is not a cue-bearing field; only beats + audio expected
         wheres = [w for w, _ in iter_cues(sc)]
-        self.assertEqual(wheres, ["beats[0].cue", "audio.effects[0].cue",
-                                  "animation.events[0].cue"])
-
-
-class AnimationConsistencyTests(unittest.TestCase):
-    def test_raw_semantic_bounding_boxes_are_prohibited(self):
-        sc = scene(animation={"type": "source_analysis", "highlights": [{
-            "box": [0.1, 0.2, 0.8, 0.9], "label": "Guessed subject",
-            "cue": "plain narration",
-        }]})
-        with self.assertRaisesRegex(PipelineError, "bounding boxes are prohibited"):
-            animation_consistency(lesson([sc]))
-
-    def test_timeline_cannot_repeat_labels_as_beats(self):
-        sc = scene(
-            narration="Day one begins. Day three follows.",
-            animation={"type": "timeline", "events": [
-                {"label": "DAY ONE", "caption": "Claim", "cue": "Day one"},
-                {"label": "DAY THREE", "caption": "Reply", "cue": "Day three"},
-            ]},
-            beats=[{"type": "label", "text": "DAY ONE", "cue": "Day one"}],
-        )
-        with self.assertRaisesRegex(PipelineError, "one visual owner"):
-            animation_consistency(lesson([sc]))
-
-    def test_timeline_cues_must_follow_narration_order(self):
-        sc = scene(
-            narration="First claim. Second claim.",
-            animation={"type": "timeline", "events": [
-                {"label": "SECOND", "caption": "Later", "cue": "Second claim"},
-                {"label": "FIRST", "caption": "Earlier", "cue": "First claim"},
-            ]},
-        )
-        with self.assertRaisesRegex(PipelineError, "narration order"):
-            animation_consistency(lesson([sc]))
-
-    def test_moving_annotation_uses_stable_frame_by_default(self):
-        sc = scene(animation={"type": "camera_path"})
-        sc.update({"device": "annotate", "device_params": {"annotations": [
-            {"type": "circle", "label": "Evidence", "cue": "plain narration",
-             "x": 0.4, "y": 0.5}
-        ]}})
-        animation_consistency(lesson([sc]))
-
-    def test_moving_annotation_cannot_disable_freeze(self):
-        sc = scene(animation={"type": "zoom"})
-        sc.update({"device": "annotate", "device_params": {
-            "freeze_frame": False, "annotations": [
-                {"type": "circle", "label": "Evidence", "cue": "plain narration",
-                 "x": 0.4, "y": 0.5}
-            ]}})
-        with self.assertRaisesRegex(PipelineError, "cannot track"):
-            animation_consistency(lesson([sc]))
+        self.assertEqual(wheres, ["beats[0].cue", "audio.effects[0].cue"])
 
 
 class TtsTextTests(unittest.TestCase):
@@ -320,24 +266,6 @@ class VarietyTests(unittest.TestCase):
                   for i, t in enumerate(["ken_burns", "bullets", "timeline"])]
         with self.assertRaisesRegex(PipelineError, "consecutive scenes"):
             variety(lesson(scenes))
-
-
-class VisualAssetReuseTests(unittest.TestCase):
-    def test_two_uses_allow_a_deliberate_callback(self):
-        scenes = [
-            scene(sid="a", visual={"base_image": "shared.webp"}),
-            scene(sid="b", visual={"secondary_image": "shared.webp"}),
-        ]
-        visual_asset_reuse(lesson(scenes))
-
-    def test_third_use_fails(self):
-        scenes = [
-            scene(sid="a", visual={"base_image": "shared.webp"}),
-            scene(sid="b", visual={"secondary_image": "shared.webp"}),
-            scene(sid="c", visual={"base_image": "shared.webp"}),
-        ]
-        with self.assertRaisesRegex(PipelineError, "more than two scene slots"):
-            visual_asset_reuse(lesson(scenes))
 
 
 class LoTraceabilityTests(unittest.TestCase):

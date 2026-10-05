@@ -3,7 +3,6 @@ from __future__ import annotations
 import base64
 import asyncio
 import json
-import os
 import sys
 import time
 import urllib.error
@@ -106,9 +105,11 @@ def render_fish_cloud(text: str, model: str, reference_id: str | None,
                       latency: str, timeout: int) -> bytes:
     """Synthesize one segment with the Fish Audio cloud API.
 
-    Auth uses the managed credential surrogate when available, otherwise the
-    official FISH_API_KEY environment variable. Returns MP3 bytes.
+    Auth comes from the user-connected custom.fish-audio credential via the
+    surrogate helper; the raw key is never read here. Returns MP3 bytes.
     """
+    sys.path.insert(0, "/opt/hatch/skills/skill-creator/bin")
+    from dynamic_credentials import add_surrogate_to_request, read_response_body
     payload: dict = {"text": text, "format": "mp3", "latency": latency}
     if reference_id:
         payload["reference_id"] = reference_id
@@ -117,29 +118,11 @@ def render_fish_cloud(text: str, model: str, reference_id: str | None,
         data=json.dumps(payload).encode("utf-8"),
         headers={"Content-Type": "application/json", "model": model},
         method="POST")
-    read_body = lambda response: response.read()
-    try:
-        helper_dir = Path("/opt/hatch/skills/skill-creator/bin")
-        if helper_dir.is_dir():
-            sys.path.insert(0, str(helper_dir))
-            from dynamic_credentials import (  # type: ignore[import-not-found]
-                add_surrogate_to_request, read_response_body)
-            add_surrogate_to_request(request, "custom.fish-audio",
-                                     allowed_hosts=("api.fish.audio",))
-            read_body = read_response_body
-        else:
-            raise ImportError
-    except ImportError:
-        api_key = os.environ.get("FISH_API_KEY")
-        if not api_key:
-            raise PipelineError(
-                "Fish cloud TTS requires FISH_API_KEY. Create a key at "
-                "https://fish.audio/app/api-keys and set it in the environment "
-                "that launches the pipeline.")
-        request.add_header("Authorization", f"Bearer {api_key}")
+    add_surrogate_to_request(request, "custom.fish-audio",
+                             allowed_hosts=("api.fish.audio",))
     try:
         with urllib.request.urlopen(request, timeout=timeout) as response:
-            return read_body(response)
+            return read_response_body(response)
     except urllib.error.HTTPError as exc:
         detail = exc.read()[:500]
         raise PipelineError(
@@ -249,9 +232,6 @@ def render_scene(manifest: dict, scene: dict, manifest_path: Path, repo_root: Pa
         "render_version": 3,
         "engine": engine, "text": narration["text"], "voice": voice_name,
         "ref_audio": str(ref_audio or ""), "ref_text": ref_text,
-        "reference_id": (narration.get("reference_id")
-                         or vcfg.get("reference_id")
-                         or base.get("reference_id")),
         "settings": settings, "edge_voice": edge_voice,
         "edge_rate": edge_rate, "edge_pitch": edge_pitch,
         "voices": base.get("voices") or {}

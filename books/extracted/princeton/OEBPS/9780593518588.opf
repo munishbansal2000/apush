@@ -1,0 +1,277 @@
+<package xmlns="http://www.idpf.org/2007/opf" prefix="tdm: http://www.w3.org/ns/tdmrep# schema: http://schema.org/ rendition: http://www.idpf.org/vocab/rendition/# ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0/" unique-identifier="EbookISBN" version="3.0" xml:lang="en-US">
+	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+		<dc:title id="maintitle">Princeton Review AP U.S. History Premium Prep, 2</dc:title>
+		<meta property="title-type" refines="#maintitle">main</meta>
+		<meta property="display-seq" refines="#maintitle">1</meta>
+		<dc:title id="subtitle">6 Practice Tests + Digital Practice Online + Content Review</dc:title>
+		<meta property="title-type" refines="#subtitle">subtitle</meta>
+		<meta property="display-seq" refines="#subtitle">2</meta>
+		<dc:language>en-US</dc:language>
+		<dc:identifier id="EbookISBN">9780593518588</dc:identifier>
+		<dc:source id="SourceISBN">9780593518571</dc:source>
+		<meta content="Princeton Review" name="imprint"/>
+		<dc:creator id="creator1">The Princeton Review</dc:creator>
+		<meta property="display-seq" refines="#creator1">1</meta>
+		<meta property="role" refines="#creator1" scheme="marc:relators">aut</meta>
+		<meta property="file-as" refines="#creator1">The Princeton Review</meta>
+		<dc:publisher>Random House Children's Books</dc:publisher>
+		<meta property="dcterms:modified">2025-10-17T06:47:18Z</meta>
+		<dc:date>2025-11-11</dc:date>
+		<meta content="2025-09-19T00:00:00Z" name="created"/>
+		<meta content="Aptara v7.3" name="generator"/>
+		<dc:rights>Copyright © 2025 by TPR Education IP Holdings, LLC</dc:rights>
+		<meta content="cover-image" name="cover"/>
+		<meta property="ibooks:specified-fonts">true</meta>
+		<meta content="2.9.0" name="EPUB_Scrub_version"/>
+		<meta content="2025-10-17T06:47:19Z" name="EPUB_Scrub_date"/>
+		<meta property="tdm:reservation">1</meta>
+		<meta property="schema:accessMode">textual</meta>
+		<meta property="schema:accessMode">visual</meta>
+		<meta property="schema:accessModeSufficient">textual,visual</meta>
+		<meta property="schema:accessibilityFeature">displayTransformability</meta>
+		<meta property="schema:accessibilityFeature">tableOfContents</meta>
+		<meta property="schema:accessibilityFeature">readingOrder</meta>
+		<meta property="schema:accessibilityFeature">ARIA</meta>
+		<meta property="schema:accessibilityFeature">pageBreakMarkers</meta>
+		<meta property="schema:accessibilityFeature">pageNavigation</meta>
+		<meta property="pageBreakSource">urn:isbn:9780593518571</meta>
+		<meta property="schema:accessibilityFeature">structuralNavigation</meta>
+		<meta content="True" name="landmark-navigation"/>
+		<meta content="False" name="color-contrast-exception"/>
+		<meta content="False" name="semantic-color-exception"/>
+		<meta property="schema:accessibilityHazard">none</meta>
+		<meta property="schema:accessibilitySummary">This ebook features mark-up that supports accessibility and enables compatibility with assistive technology. It has been designed to allow display properties to be modified by the reader. The file includes a table of contents, a defined reading order, and ARIA roles to identify key sections and improve the reading experience. A page list and page break locations help readers coordinate with the print edition. Headings allow readers to navigate the ebook quickly by level. Colors meet WCAG 2.1 Level AA contrast standards. There are no hazards.</meta>
+		<meta content="10/17/2025, 6:47:48 AM" name="Ace_date"/>
+		<meta content="1.3.6" name="Ace_version"/>
+		<meta content="Pass" name="Ace_result"/>
+	<description xmlns="http://purl.org/dc/elements/1.1/">&lt;b&gt;PREMIUM PRACTICE FOR A PERFECT 5&amp;mdash;WITH THE BESTSELLING AP U.S. HISTORY BOOK ON THE MARKET! Ace the newly-digital AP U.S. History Exam&amp;nbsp;with this&amp;nbsp;comprehensive study guide. Includes 6 practice exams with answer explanations, timed online practice, and thorough content review.&lt;/b&gt;&lt;br&gt;&lt;i&gt;The Princeton Review Expertise&lt;/i&gt;&lt;br&gt;&lt;li&gt;Study with prep and practice written entirely by AP educators&lt;/li&gt;&lt;li&gt;Learn test-taking strategies for multiple-choice and free-response questions, backed by 40+ years of test prep success&amp;nbsp;&lt;/li&gt;&lt;li&gt;Focused, supportive lessons designed and perfected by experts&lt;/li&gt;&lt;br&gt;&lt;i&gt;Everything You Need for a High Score&lt;/i&gt;&lt;br&gt;&lt;li&gt;A step-by-step guide on how to better your score with this book&lt;/li&gt;&lt;li&gt;Comprehensive review of all topics on the new digital exam&lt;/li&gt;&lt;li&gt;Detailed coverage of the short-answer and source-based multiple-choice questions&lt;/li&gt;&amp;bull; In-depth guidance on the document-based and long essay questions&lt;br&gt;&lt;li&gt;Customize a study plan...</description>
+</metadata>
+	<manifest>
+		<item href="9780593518588_nav.xhtml" id="nav" media-type="application/xhtml+xml" properties="nav"/>
+		<item href="9780593518588_ncx.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
+		<item href="xhtml/001_cvi_Cover.xhtml" id="cvi" media-type="application/xhtml+xml"/>
+		<item href="xhtml/002_tit_Title_Page.xhtml" id="tit" media-type="application/xhtml+xml"/>
+		<item href="xhtml/003_crt_Copyright.xhtml" id="crt" media-type="application/xhtml+xml"/>
+		<item href="xhtml/004_toc_Contents.xhtml" id="toc" media-type="application/xhtml+xml"/>
+		<item href="xhtml/005_ack_Acknowledgments.xhtml" id="ack" media-type="application/xhtml+xml"/>
+		<item href="xhtml/006_fm_1_Get_More_Free_Conten.xhtml" id="fm_1" media-type="application/xhtml+xml"/>
+		<item href="xhtml/007_fm_2_Course_Options.xhtml" id="fm_2" media-type="application/xhtml+xml"/>
+		<item href="xhtml/008_p001_Part_I_Using_This_Bo.xhtml" id="p001" media-type="application/xhtml+xml"/>
+		<item href="xhtml/009_p001_sup.xhtml" id="p001_sup" media-type="application/xhtml+xml"/>
+		<item href="xhtml/010_p002_Part_II_Practice_Tes.xhtml" id="p002" media-type="application/xhtml+xml"/>
+		<item href="xhtml/011_sec_1_Practice_Test_1.xhtml" id="sec_1" media-type="application/xhtml+xml"/>
+		<item href="xhtml/012_sec_2_Practice_Test_1_Diag.xhtml" id="sec_2" media-type="application/xhtml+xml"/>
+		<item href="xhtml/013_p003_Part_III_About_the_A.xhtml" id="p003" media-type="application/xhtml+xml"/>
+		<item href="xhtml/014_p003_sup.xhtml" id="p003_sup" media-type="application/xhtml+xml"/>
+		<item href="xhtml/015_p004_Part_IV_Test-Taking.xhtml" id="p004" media-type="application/xhtml+xml"/>
+		<item href="xhtml/016_p004_sup.xhtml" id="p004_sup" media-type="application/xhtml+xml"/>
+		<item href="xhtml/017_c001_1_How_to_Approach_Mu.xhtml" id="c001" media-type="application/xhtml+xml"/>
+		<item href="xhtml/018_c001_sup.xhtml" id="c001_sup" media-type="application/xhtml+xml"/>
+		<item href="xhtml/019_c001_Summary.xhtml" id="c001a" media-type="application/xhtml+xml"/>
+		<item href="xhtml/020_c002_2_How_to_Approach_Sh.xhtml" id="c002" media-type="application/xhtml+xml"/>
+		<item href="xhtml/021_c002_sup.xhtml" id="c002_sup" media-type="application/xhtml+xml"/>
+		<item href="xhtml/022_c002_Summary.xhtml" id="c002a" media-type="application/xhtml+xml"/>
+		<item href="xhtml/023_c003_3_How_to_Approach_th.xhtml" id="c003" media-type="application/xhtml+xml"/>
+		<item href="xhtml/024_c003_sup.xhtml" id="c003_sup" media-type="application/xhtml+xml"/>
+		<item href="xhtml/025_c003_Summary.xhtml" id="c003a" media-type="application/xhtml+xml"/>
+		<item href="xhtml/026_c004_4_Using_Time_Effecti.xhtml" id="c004" media-type="application/xhtml+xml"/>
+		<item href="xhtml/027_c004_sup.xhtml" id="c004_sup" media-type="application/xhtml+xml"/>
+		<item href="xhtml/028_c005_5_Pacing_Drills.xhtml" id="c005" media-type="application/xhtml+xml"/>
+		<item href="xhtml/029_c005_sup.xhtml" id="c005_sup" media-type="application/xhtml+xml"/>
+		<item href="xhtml/030_p005_Part_V_Content_Revie.xhtml" id="p005" media-type="application/xhtml+xml"/>
+		<item href="xhtml/031_p005_sup.xhtml" id="p005_sup" media-type="application/xhtml+xml"/>
+		<item href="xhtml/032_c006_6_Units_1_and_2_Earl.xhtml" id="c006" media-type="application/xhtml+xml"/>
+		<item href="xhtml/033_c006_sup.xhtml" id="c006_sup" media-type="application/xhtml+xml"/>
+		<item href="xhtml/034_c006_Chapter_6_Review_Que.xhtml" id="c006a" media-type="application/xhtml+xml"/>
+		<item href="xhtml/035_c006_Chapter_6_Summary.xhtml" id="c006b" media-type="application/xhtml+xml"/>
+		<item href="xhtml/036_c007_7_Unit_3_Conflict_an.xhtml" id="c007" media-type="application/xhtml+xml"/>
+		<item href="xhtml/037_c007_sup.xhtml" id="c007_sup" media-type="application/xhtml+xml"/>
+		<item href="xhtml/038_c007_Chapter_7_Review_Que.xhtml" id="c007a" media-type="application/xhtml+xml"/>
+		<item href="xhtml/039_c007_Chapter_7_Summary.xhtml" id="c007b" media-type="application/xhtml+xml"/>
+		<item href="xhtml/040_c008_8_Unit_4_Beginnings.xhtml" id="c008" media-type="application/xhtml+xml"/>
+		<item href="xhtml/041_c008_sup.xhtml" id="c008_sup" media-type="application/xhtml+xml"/>
+		<item href="xhtml/042_c008_Chapter_8_Review_Que.xhtml" id="c008a" media-type="application/xhtml+xml"/>
+		<item href="xhtml/043_c008_Chapter_8_Summary.xhtml" id="c008b" media-type="application/xhtml+xml"/>
+		<item href="xhtml/044_c009_9_Unit_5_Toward_the.xhtml" id="c009" media-type="application/xhtml+xml"/>
+		<item href="xhtml/045_c009_sup.xhtml" id="c009_sup" media-type="application/xhtml+xml"/>
+		<item href="xhtml/046_c009_Chapter_9_Review_Que.xhtml" id="c009a" media-type="application/xhtml+xml"/>
+		<item href="xhtml/047_c009_Chapter_9_Summary.xhtml" id="c009b" media-type="application/xhtml+xml"/>
+		<item href="xhtml/048_c010_10_Unit_6_The_Indust.xhtml" id="c010" media-type="application/xhtml+xml"/>
+		<item href="xhtml/049_c010_sup.xhtml" id="c010_sup" media-type="application/xhtml+xml"/>
+		<item href="xhtml/050_c010_Chapter_10_Review_Qu.xhtml" id="c010a" media-type="application/xhtml+xml"/>
+		<item href="xhtml/051_c010_Chapter_10_Summary.xhtml" id="c010b" media-type="application/xhtml+xml"/>
+		<item href="xhtml/052_c011_11_Unit_7_The_Early.xhtml" id="c011" media-type="application/xhtml+xml"/>
+		<item href="xhtml/053_c011_sup.xhtml" id="c011_sup" media-type="application/xhtml+xml"/>
+		<item href="xhtml/054_c011_Chapter_11_Review_Qu.xhtml" id="c011a" media-type="application/xhtml+xml"/>
+		<item href="xhtml/055_c011_Chapter_11_Summary.xhtml" id="c011b" media-type="application/xhtml+xml"/>
+		<item href="xhtml/056_c012_12_Unit_8_The_Postwa.xhtml" id="c012" media-type="application/xhtml+xml"/>
+		<item href="xhtml/057_c012_sup.xhtml" id="c012_sup" media-type="application/xhtml+xml"/>
+		<item href="xhtml/058_c012_Chapter_12_Review_Qu.xhtml" id="c012a" media-type="application/xhtml+xml"/>
+		<item href="xhtml/059_c012_Chapter_12_Summary.xhtml" id="c012b" media-type="application/xhtml+xml"/>
+		<item href="xhtml/060_c013_13_Unit_9_Entering_i.xhtml" id="c013" media-type="application/xhtml+xml"/>
+		<item href="xhtml/061_c013_sup.xhtml" id="c013_sup" media-type="application/xhtml+xml"/>
+		<item href="xhtml/062_c013_Chapter_13_Review_Qu.xhtml" id="c013a" media-type="application/xhtml+xml"/>
+		<item href="xhtml/063_c013_Chapter_13_Summary.xhtml" id="c013b" media-type="application/xhtml+xml"/>
+		<item href="xhtml/064_c014_14_Chapter_Review_Qu.xhtml" id="c014" media-type="application/xhtml+xml"/>
+		<item href="xhtml/065_c014_sup.xhtml" id="c014_sup" media-type="application/xhtml+xml"/>
+		<item href="xhtml/066_c015_15_Key_Terms_and_Con.xhtml" id="c015" media-type="application/xhtml+xml"/>
+		<item href="xhtml/067_c015_sup.xhtml" id="c015_sup" media-type="application/xhtml+xml"/>
+		<item href="xhtml/068_p006_Part_VI_Additional_P.xhtml" id="p006" media-type="application/xhtml+xml"/>
+		<item href="xhtml/069_sec_3_Practice_Test_2.xhtml" id="sec_3" media-type="application/xhtml+xml"/>
+		<item href="xhtml/070_sec_4_Practice_Test_2_Answ.xhtml" id="sec_4" media-type="application/xhtml+xml"/>
+		<item href="xhtml/071_sec_5_Practice_Test_3.xhtml" id="sec_5" media-type="application/xhtml+xml"/>
+		<item href="xhtml/072_sec_6_Practice_Test_3_Answ.xhtml" id="sec_6" media-type="application/xhtml+xml"/>
+		<item href="xhtml/073_tst_Online_Practice_Test.xhtml" id="tst" media-type="application/xhtml+xml"/>
+		<item href="css/prh_standard.css" id="css" media-type="text/css"/>
+		<item href="css/9780593518588_style.css" id="css1" media-type="text/css"/>
+		<item href="images/9780593518588_cover.jpg" id="cover-image" media-type="image/jpeg" properties="cover-image"/>
+		<item href="images/9780593518588_title_page.jpg" id="title_page" media-type="image/jpeg"/>
+		<item href="images/003_crt_art_1.jpg" id="f003_crt_art_1" media-type="image/jpeg"/>
+		<item href="images/006_fm_1_art_1.jpg" id="f006_fm_1_art_1" media-type="image/jpeg"/>
+		<item href="images/006_fm_1_art_10.jpg" id="f006_fm_1_art_10" media-type="image/jpeg"/>
+		<item href="images/006_fm_1_art_11.jpg" id="f006_fm_1_art_11" media-type="image/jpeg"/>
+		<item href="images/006_fm_1_art_12.jpg" id="f006_fm_1_art_12" media-type="image/jpeg"/>
+		<item href="images/006_fm_1_art_13.jpg" id="f006_fm_1_art_13" media-type="image/jpeg"/>
+		<item href="images/006_fm_1_art_2.jpg" id="f006_fm_1_art_2" media-type="image/jpeg"/>
+		<item href="images/006_fm_1_art_3.jpg" id="f006_fm_1_art_3" media-type="image/jpeg"/>
+		<item href="images/006_fm_1_art_4.jpg" id="f006_fm_1_art_4" media-type="image/jpeg"/>
+		<item href="images/006_fm_1_art_5.jpg" id="f006_fm_1_art_5" media-type="image/jpeg"/>
+		<item href="images/006_fm_1_art_6.jpg" id="f006_fm_1_art_6" media-type="image/jpeg"/>
+		<item href="images/006_fm_1_art_7.jpg" id="f006_fm_1_art_7" media-type="image/jpeg"/>
+		<item href="images/006_fm_1_art_8.jpg" id="f006_fm_1_art_8" media-type="image/jpeg"/>
+		<item href="images/006_fm_1_art_9.jpg" id="f006_fm_1_art_9" media-type="image/jpeg"/>
+		<item href="images/007_fm_2_art_1.jpg" id="f007_fm_2_art_1" media-type="image/jpeg"/>
+		<item href="images/007_fm_2_art_2.jpg" id="f007_fm_2_art_2" media-type="image/jpeg"/>
+		<item href="images/011_sec_1_art_1.jpg" id="f011_sec_1_art_1" media-type="image/jpeg"/>
+		<item href="images/011_sec_1_art_2.jpg" id="f011_sec_1_art_2" media-type="image/jpeg"/>
+		<item href="images/011_sec_1_art_3.jpg" id="f011_sec_1_art_3" media-type="image/jpeg"/>
+		<item href="images/012_sec_2_art_1.jpg" id="f012_sec_2_art_1" media-type="image/jpeg"/>
+		<item href="images/012_sec_2_art_2.jpg" id="f012_sec_2_art_2" media-type="image/jpeg"/>
+		<item href="images/012_sec_2_art_3.jpg" id="f012_sec_2_art_3" media-type="image/jpeg"/>
+		<item href="images/012_sec_2_art_4.jpg" id="f012_sec_2_art_4" media-type="image/jpeg"/>
+		<item href="images/012_sec_2_art_5.jpg" id="f012_sec_2_art_5" media-type="image/jpeg"/>
+		<item href="images/012_sec_2_art_6.jpg" id="f012_sec_2_art_6" media-type="image/jpeg"/>
+		<item href="images/012_sec_2_art_7.jpg" id="f012_sec_2_art_7" media-type="image/jpeg"/>
+		<item href="images/012_sec_2_art_8.jpg" id="f012_sec_2_art_8" media-type="image/jpeg"/>
+		<item href="images/014_p003_sup_art_1.jpg" id="f014_p003_sup_art_1" media-type="image/jpeg"/>
+		<item href="images/018_c001_sup_art_1.jpg" id="f018_c001_sup_art_1" media-type="image/jpeg"/>
+		<item href="images/018_c001_sup_art_2.jpg" id="f018_c001_sup_art_2" media-type="image/jpeg"/>
+		<item href="images/018_c001_sup_art_3.jpg" id="f018_c001_sup_art_3" media-type="image/jpeg"/>
+		<item href="images/021_c002_sup_art_1.jpg" id="f021_c002_sup_art_1" media-type="image/jpeg"/>
+		<item href="images/029_c005_sup_art_1.jpg" id="f029_c005_sup_art_1" media-type="image/jpeg"/>
+		<item href="images/029_c005_sup_art_2.jpg" id="f029_c005_sup_art_2" media-type="image/jpeg"/>
+		<item href="images/029_c005_sup_art_3.jpg" id="f029_c005_sup_art_3" media-type="image/jpeg"/>
+		<item href="images/033_c006_sup_art_1.jpg" id="f033_c006_sup_art_1" media-type="image/jpeg"/>
+		<item href="images/041_c008_sup_art_1.jpg" id="f041_c008_sup_art_1" media-type="image/jpeg"/>
+		<item href="images/041_c008_sup_art_2.jpg" id="f041_c008_sup_art_2" media-type="image/jpeg"/>
+		<item href="images/045_c009_sup_art_1.jpg" id="f045_c009_sup_art_1" media-type="image/jpeg"/>
+		<item href="images/057_c012_sup_art_1.jpg" id="f057_c012_sup_art_1" media-type="image/jpeg"/>
+		<item href="images/069_sec_3_art_1.jpg" id="f069_sec_3_art_1" media-type="image/jpeg"/>
+		<item href="images/069_sec_3_art_2.jpg" id="f069_sec_3_art_2" media-type="image/jpeg"/>
+		<item href="images/069_sec_3_art_3.jpg" id="f069_sec_3_art_3" media-type="image/jpeg"/>
+		<item href="images/069_sec_3_art_4.jpg" id="f069_sec_3_art_4" media-type="image/jpeg"/>
+		<item href="images/069_sec_3_art_5.jpg" id="f069_sec_3_art_5" media-type="image/jpeg"/>
+		<item href="images/069_sec_3_art_6.jpg" id="f069_sec_3_art_6" media-type="image/jpeg"/>
+		<item href="images/069_sec_3_art_7.jpg" id="f069_sec_3_art_7" media-type="image/jpeg"/>
+		<item href="images/069_sec_3_art_8.jpg" id="f069_sec_3_art_8" media-type="image/jpeg"/>
+		<item href="images/071_sec_5_art_1.jpg" id="f071_sec_5_art_1" media-type="image/jpeg"/>
+		<item href="images/071_sec_5_art_2.jpg" id="f071_sec_5_art_2" media-type="image/jpeg"/>
+		<item href="images/071_sec_5_art_3.jpg" id="f071_sec_5_art_3" media-type="image/jpeg"/>
+		<item href="images/071_sec_5_art_4.jpg" id="f071_sec_5_art_4" media-type="image/jpeg"/>
+		<item href="images/071_sec_5_art_5.jpg" id="f071_sec_5_art_5" media-type="image/jpeg"/>
+		<item href="images/071_sec_5_art_6.jpg" id="f071_sec_5_art_6" media-type="image/jpeg"/>
+		<item href="images/071_sec_5_art_7.jpg" id="f071_sec_5_art_7" media-type="image/jpeg"/>
+		<item href="images/071_sec_5_art_8.jpg" id="f071_sec_5_art_8" media-type="image/jpeg"/>
+		<item href="fonts/FreeSerif.otf" id="free-serif-1" media-type="font/otf"/>
+		<item href="fonts/FreeSerifBold.otf" id="free-serif-2" media-type="font/otf"/>
+		<item href="fonts/FreeSerifBoldItalic.otf" id="free-serif-3" media-type="font/otf"/>
+		<item href="fonts/FreeSerifItalic.otf" id="free-serif-4" media-type="font/otf"/>
+		<item href="fonts/Shift-BoldItalic.otf" id="Shift-BoldItalic.otf" media-type="font/otf"/>
+		<item href="fonts/Shift-Bold.otf" id="Shift-Bold.otf" media-type="font/otf"/>
+		<item href="images/next-reads_logo.jpg" id="next-reads_logo.jpg" media-type="image/jpeg"/>
+		<item href="xhtml/074_next-reads.xhtml" id="next-reads.xhtml" media-type="application/xhtml+xml"/>
+	</manifest>
+	<spine toc="ncx">
+		<itemref idref="cvi"/>
+		<itemref idref="tit"/>
+		<itemref idref="crt"/>
+		<itemref idref="toc"/>
+		<itemref idref="ack"/>
+		<itemref idref="fm_1"/>
+		<itemref idref="fm_2"/>
+		<itemref idref="p001"/>
+		<itemref idref="p001_sup"/>
+		<itemref idref="p002"/>
+		<itemref idref="sec_1"/>
+		<itemref idref="sec_2"/>
+		<itemref idref="p003"/>
+		<itemref idref="p003_sup"/>
+		<itemref idref="p004"/>
+		<itemref idref="p004_sup"/>
+		<itemref idref="c001"/>
+		<itemref idref="c001_sup"/>
+		<itemref idref="c001a"/>
+		<itemref idref="c002"/>
+		<itemref idref="c002_sup"/>
+		<itemref idref="c002a"/>
+		<itemref idref="c003"/>
+		<itemref idref="c003_sup"/>
+		<itemref idref="c003a"/>
+		<itemref idref="c004"/>
+		<itemref idref="c004_sup"/>
+		<itemref idref="c005"/>
+		<itemref idref="c005_sup"/>
+		<itemref idref="p005"/>
+		<itemref idref="p005_sup"/>
+		<itemref idref="c006"/>
+		<itemref idref="c006_sup"/>
+		<itemref idref="c006a"/>
+		<itemref idref="c006b"/>
+		<itemref idref="c007"/>
+		<itemref idref="c007_sup"/>
+		<itemref idref="c007a"/>
+		<itemref idref="c007b"/>
+		<itemref idref="c008"/>
+		<itemref idref="c008_sup"/>
+		<itemref idref="c008a"/>
+		<itemref idref="c008b"/>
+		<itemref idref="c009"/>
+		<itemref idref="c009_sup"/>
+		<itemref idref="c009a"/>
+		<itemref idref="c009b"/>
+		<itemref idref="c010"/>
+		<itemref idref="c010_sup"/>
+		<itemref idref="c010a"/>
+		<itemref idref="c010b"/>
+		<itemref idref="c011"/>
+		<itemref idref="c011_sup"/>
+		<itemref idref="c011a"/>
+		<itemref idref="c011b"/>
+		<itemref idref="c012"/>
+		<itemref idref="c012_sup"/>
+		<itemref idref="c012a"/>
+		<itemref idref="c012b"/>
+		<itemref idref="c013"/>
+		<itemref idref="c013_sup"/>
+		<itemref idref="c013a"/>
+		<itemref idref="c013b"/>
+		<itemref idref="c014"/>
+		<itemref idref="c014_sup"/>
+		<itemref idref="c015"/>
+		<itemref idref="c015_sup"/>
+		<itemref idref="p006"/>
+		<itemref idref="sec_3"/>
+		<itemref idref="sec_4"/>
+		<itemref idref="sec_5"/>
+		<itemref idref="sec_6"/>
+		<itemref idref="tst"/>
+		<itemref idref="next-reads.xhtml"/>
+	</spine>
+	<guide>
+		<reference href="xhtml/001_cvi_Cover.xhtml" title="Cover" type="cover"/>
+		<reference href="xhtml/004_toc_Contents.xhtml" title="Table of Contents" type="toc"/>
+		<reference href="xhtml/005_ack_Acknowledgments.xhtml" title="Text" type="text"/>
+		<reference href="xhtml/005_ack_Acknowledgments.xhtml" title="Start" type="start"/>
+		<reference href="xhtml/003_crt_Copyright.xhtml" title="Copyright" type="copyright-page"/>
+	</guide>
+</package>

@@ -443,15 +443,7 @@ def generate_stills(manifest: dict, manifest_path: Path, repo_root: Path,
         visual = scene["visual"]
         output = _resolve_output(visual["base_image"], repo_root)
         if output.is_file() and not force:
-            provenance_path = output.with_suffix(output.suffix + ".provenance.json")
-            if provenance_path.is_file():
-                info = read_json(provenance_path)
-                subject = ((scene.get("source") or {}).get("title", "")
-                           or info.get("query") or info.get("prompt") or "")
-                _register_catalog(repo_root, lesson_id, scene_id, output, info, subject)
-                print(f"[stills] {scene_id}: exists -- provenance recataloged")
-            else:
-                print(f"[stills] {scene_id}: exists -- skipped")
+            print(f"[stills] {scene_id}: exists -- skipped")
             outputs.append(output)
             continue
         if dry_run:

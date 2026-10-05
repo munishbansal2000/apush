@@ -5,7 +5,6 @@ from pathlib import Path
 from typing import Any
 
 from .common import PipelineError, resolve_local
-from .creativity import validate_creativity
 
 ANIMATION_TYPES = {
     "auto", "title", "ken_burns", "zoom", "camera_path", "callout",
@@ -16,21 +15,14 @@ ANIMATION_TYPES = {
 
 ROOT_KEYS = {"schema_version", "course_id", "unit_id", "chapter_id", "lesson_id", "title", "description", "essential_question", "learning_objectives", "key_terms", "ap_alignment", "presentation", "music", "output", "tts", "generation", "clip_generation", "still_generation", "video", "scenes", "transition_scheme"}
 VIDEO_KEYS = {"width", "height", "fps", "transition_seconds"}
-TTS_KEYS = {"engine", "server_url", "reference_audio", "reference_text", "reference_id", "timeout_seconds", "settings", "edge_voice", "edge_rate", "edge_pitch", "voices"}
+TTS_KEYS = {"engine", "server_url", "reference_audio", "reference_text", "timeout_seconds", "settings", "edge_voice", "edge_rate", "edge_pitch", "voices"}
 GEN_KEYS = {"provider", "model", "endpoint", "api_key_env", "timeout_seconds"}
-CLIP_GEN_KEYS = {
-    "provider", "cookie", "browser", "lib_dir", "timeout_seconds",
-    "keep_open_on_failure", "meta_refusal_retries", "ltx_backend",
-    "ltx_desktop_app_data", "ltx_desktop_resources", "ltx_desktop_port",
-    "ltx_startup_timeout_seconds", "ltx_generation_timeout_seconds",
-    "ltx_resolution", "ltx_model", "ltx_camera_motion",
-    "ltx_negative_prompt", "ltx_fps",
-}
+CLIP_GEN_KEYS = {"provider", "cookie", "browser", "lib_dir", "timeout_seconds", "keep_open_on_failure", "meta_refusal_retries"}
 STILL_GEN_KEYS = {"provider", "fallback_provider", "search_provider", "media_bin", "image_search_bin", "command", "timeout_seconds", "orientation", "image_output_format"}
 STILL_KEYS = {"prompt", "provider", "fallback_provider", "seed", "edit_of", "edit_prompt", "orientation", "license_note"}
 SEARCH_KEYS = {"query", "page_title", "provider", "pick", "min_width", "license", "sha256"}
 SCENE_KEYS = {"id", "purpose", "narration", "visual", "animation", "beats", "audio", "transition", "min_duration", "topics", "on_screen_text", "source", "production_notes", "device", "device_params", "covers_los"}
-NARRATION_KEYS = {"text", "voice", "reference_audio", "reference_text", "reference_id", "settings"}
+NARRATION_KEYS = {"text", "voice", "reference_audio", "reference_text", "settings"}
 VISUAL_KEYS = {"base_image", "secondary_image", "clip", "layers", "still", "search"}
 ALIGNMENT_KEYS = {"period", "topics", "themes", "skills"}
 PRESENTATION_KEYS = {"audience", "tone", "visual_style", "captions", "music", "branding"}
@@ -52,7 +44,7 @@ ANIMATION_KEYS = {
     "counter": COMMON_ANIMATION_KEYS | {"target", "label", "prefix", "suffix", "start", "decimals", "at"},
     "versus": COMMON_ANIMATION_KEYS | {"name_left", "name_right"},
     "wipe": COMMON_ANIMATION_KEYS | {"label_a", "label_b", "direction"},
-    "ai_clip": COMMON_ANIMATION_KEYS | {"seed", "duration", "provider", "fallback_provider", "creativity"},
+    "ai_clip": COMMON_ANIMATION_KEYS | {"seed", "duration", "provider", "fallback_provider"},
     "parallax": COMMON_ANIMATION_KEYS | {"background_drift", "background_zoom"},
     "source_analysis": COMMON_ANIMATION_KEYS | {"highlights"},
     "diagram": COMMON_ANIMATION_KEYS | {"nodes", "edges"},
@@ -95,7 +87,7 @@ def _validate_device(name: str, params: dict, where: str) -> None:
         "hook": ({"hook_type", "payoff_by_sec"}, {"hook_type", "payoff_by_sec"}),
         "redact_reveal": ({"lines", "reveal_on_cues"}, {"lines", "reveal_on_cues"}),
         "reversal": ({"pivot", "setup_scene"}, {"pivot"}),
-        "annotate": ({"mode", "annotations", "freeze_frame"}, {"annotations"}),
+        "annotate": ({"mode", "annotations"}, {"annotations"}),
         "show_ask": ({"question", "hold_sec"}, {"question"}),
         "date_ticker": ({"position", "dates"}, {"dates"}),
     }
@@ -124,8 +116,6 @@ def _validate_device(name: str, params: dict, where: str) -> None:
     elif name == "annotate":
         if params.get("mode", "telestrator") != "telestrator":
             raise PipelineError(f"{where}.device_params.mode must be telestrator")
-        if "freeze_frame" in params and not isinstance(params["freeze_frame"], bool):
-            raise PipelineError(f"{where}.device_params.freeze_frame must be true or false")
         notes = params["annotations"]
         if not isinstance(notes, list) or not notes:
             raise PipelineError(f"{where}.device_params.annotations must be non-empty")
@@ -133,7 +123,7 @@ def _validate_device(name: str, params: dict, where: str) -> None:
             nw = f"{where}.device_params.annotations[{index}]"
             note = _obj(note_value, nw)
             _keys(note, {"type", "label", "cue", "x", "y", "label_x", "label_y"}, nw)
-            _required(note, {"type", "label", "cue", "x", "y"}, nw)
+            _required(note, {"type", "label", "cue"}, nw)
             if note["type"] not in {"circle", "arrow"}:
                 raise PipelineError(f"{nw}.type must be circle or arrow")
             _text(note["label"], f"{nw}.label")
@@ -225,21 +215,12 @@ def validate_animation(animation: Any, where: str, generated: bool = False) -> N
     if kind == "timeline":
         events = spec.get("events")
         if not isinstance(events, list) or not 2 <= len(events) <= 6:
-            raise PipelineError(f"{where}.events must contain 2-6 events")
+            raise PipelineError(f"{where}.events must contain 2-6 [label,caption] entries")
         for index, event in enumerate(events):
-            ew = f"{where}.events[{index}]"
-            if isinstance(event, list):
-                if len(event) != 2:
-                    raise PipelineError(f"{ew} must be [label,caption]")
-                _text(event[0], f"{ew}[0]")
-                _text(event[1], f"{ew}[1]")
-                continue
-            event = _obj(event, ew)
-            _keys(event, {"label", "caption", "at", "cue", "offset"}, ew)
-            _required(event, {"label", "caption"}, ew)
-            _text(event["label"], f"{ew}.label")
-            _text(event["caption"], f"{ew}.caption")
-            _timing(event, ew)
+            if not isinstance(event, list) or len(event) != 2:
+                raise PipelineError(f"{where}.events[{index}] must be [label,caption]")
+            _text(event[0], f"{where}.events[{index}][0]")
+            _text(event[1], f"{where}.events[{index}][1]")
     if kind == "bullets":
         bullets = spec.get("bullets")
         if not isinstance(bullets, list) or not 1 <= len(bullets) <= 6 or not all(isinstance(x, str) and x.strip() for x in bullets):
@@ -287,12 +268,7 @@ def validate_animation(animation: Any, where: str, generated: bool = False) -> N
     if kind == "ai_clip" and "seed" in spec and (isinstance(spec["seed"], bool) or not isinstance(spec["seed"], int)):
         raise PipelineError(f"{where}.seed must be an integer")
     if kind == "ai_clip":
-        if "prompt" not in spec and "creativity" not in spec:
-            raise PipelineError(f"{where} requires prompt or creativity")
-        if "prompt" in spec and "creativity" in spec:
-            raise PipelineError(f"{where} cannot contain both prompt and creativity")
-        if "creativity" in spec:
-            validate_creativity(spec["creativity"], f"{where}.creativity")
+        _required(spec, {"prompt"}, where)
         _number(spec.get("duration", 10), f"{where}.duration", 3, 10)
         for field in ("provider", "fallback_provider"):
             if field in spec and spec[field] not in {"ltx", "meta-ui"}:
@@ -456,12 +432,10 @@ def validate_manifest(data: Any, path: Path, repo_root: Path,
         _text(tts["reference_text"], "manifest.tts.reference_text")
         if not re.fullmatch(r"https?://(?:localhost|127\.0\.0\.1)(?::\d+)?", tts["server_url"].rstrip("/")):
             raise PipelineError("manifest.tts.server_url must be a loopback HTTP URL")
-    elif engine == "edge":
+    else:
         _text(tts.get("edge_voice", "en-US-GuyNeural"), "manifest.tts.edge_voice")
         for field, default in (("edge_rate", "+0%"), ("edge_pitch", "+0Hz")):
             _text(tts.get(field, default), f"manifest.tts.{field}")
-    elif "reference_id" in tts:
-        _text(tts["reference_id"], "manifest.tts.reference_id")
     if "timeout_seconds" in tts:
         _number(tts["timeout_seconds"], "manifest.tts.timeout_seconds", 1, 3600)
     if "settings" in tts and not isinstance(tts["settings"], dict):
@@ -470,7 +444,7 @@ def validate_manifest(data: Any, path: Path, repo_root: Path,
         voices = tts["voices"]
         if not isinstance(voices, dict) or not voices:
             raise PipelineError("manifest.tts.voices must be a non-empty object")
-        allowed = {"edge_voice", "edge_rate", "edge_pitch", "reference_audio", "reference_text", "reference_id", "settings"}
+        allowed = {"edge_voice", "edge_rate", "edge_pitch", "reference_audio", "reference_text", "settings"}
         for name, cfg in voices.items():
             where = f"manifest.tts.voices.{name}"
             if not isinstance(cfg, dict):
@@ -499,8 +473,7 @@ def validate_manifest(data: Any, path: Path, repo_root: Path,
         raise PipelineError("manifest.clip_generation.provider must be none, ltx, or meta-ui")
     if clip_generation.get("browser", "chrome") not in {"chrome", "edge"}:
         raise PipelineError("manifest.clip_generation.browser must be chrome or edge")
-    for field in ("cookie", "lib_dir", "ltx_desktop_app_data",
-                  "ltx_desktop_resources", "ltx_negative_prompt"):
+    for field in ("cookie", "lib_dir"):
         if field in clip_generation:
             _text(clip_generation[field], f"manifest.clip_generation.{field}")
     if "timeout_seconds" in clip_generation:
@@ -511,29 +484,6 @@ def validate_manifest(data: Any, path: Path, repo_root: Path,
         retries = clip_generation["meta_refusal_retries"]
         if isinstance(retries, bool) or not isinstance(retries, int) or not 0 <= retries <= 3:
             raise PipelineError("manifest.clip_generation.meta_refusal_retries must be an integer from 0 to 3")
-    if clip_generation.get("ltx_backend", "auto") not in {"auto", "desktop", "legacy"}:
-        raise PipelineError("manifest.clip_generation.ltx_backend must be auto, desktop, or legacy")
-    if clip_generation.get("ltx_resolution", "540p") not in {"540p", "720p", "1080p"}:
-        raise PipelineError("manifest.clip_generation.ltx_resolution must be 540p, 720p, or 1080p")
-    if clip_generation.get("ltx_model", "fast") not in {"fast", "pro", "fast-2.5", "pro-2.5"}:
-        raise PipelineError("manifest.clip_generation.ltx_model is not supported")
-    if (clip_generation.get("ltx_backend", "auto") == "desktop"
-            and clip_generation.get("ltx_model", "fast") in {"pro", "pro-2.5"}):
-        raise PipelineError(
-            "manifest.clip_generation LTX Desktop supports only fast or fast-2.5")
-    if clip_generation.get("ltx_camera_motion", "static") not in {
-            "none", "dolly_in", "dolly_out", "dolly_left", "dolly_right",
-            "jib_up", "jib_down", "static", "focus_shift"}:
-        raise PipelineError("manifest.clip_generation.ltx_camera_motion is not supported")
-    for field, low, high in (
-            ("ltx_desktop_port", 1024, 65535),
-            ("ltx_startup_timeout_seconds", 10, 600),
-            ("ltx_generation_timeout_seconds", 30, 7200),
-            ("ltx_fps", 24, 50)):
-        if field in clip_generation:
-            _number(clip_generation[field], f"manifest.clip_generation.{field}", low, high)
-    if "ltx_fps" in clip_generation and clip_generation["ltx_fps"] not in {24, 25, 48, 50}:
-        raise PipelineError("manifest.clip_generation.ltx_fps must be 24, 25, 48, or 50")
 
     still_generation = _obj(root.get("still_generation", {"provider": "none"}), "manifest.still_generation")
     _keys(still_generation, STILL_GEN_KEYS, "manifest.still_generation")

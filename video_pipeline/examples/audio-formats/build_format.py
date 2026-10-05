@@ -14,9 +14,14 @@ OFF = 1.8
 
 W = f"/home/hatch/workspace/your_files/tts-scripts/fishperf/{outname}"
 MUS = "/home/hatch/workspace/apush/video_pipeline/music"
-STING = f"{MUS}/alex_kizenkov-stomps-and-claps-percussion-and-rhythm-141190.mp3"
-BED = f"{MUS}/papulina-lost-signal-coffee-371869.mp3"
-OUTRO_SRC = f"{MUS}/absounds-inspiring-acoustic-folk-music-255650.mp3"
+PACK = f"{MUS}/pack-v1"
+# Pack-v1 music (replaces the old placeholder MP3s 2026-10-04):
+# P1 = 2.4s intro sting, P2 = 1.1s chapter sting, P5 = 2.5s outro sting,
+# P6 = warm-neutral trial bed (keep <=1 bed or none per ear test).
+STING = f"{PACK}/podcast_P1_intro_sting_v1.wav"
+CH_STING = f"{PACK}/podcast_P2_chapter_sting_v1.wav"
+BED = f"{PACK}/podcast_P6_bed_warm_neutral_loop_v1.mp3"
+OUTRO_SRC = f"{PACK}/podcast_P5_outro_sting_v1.wav"
 SR = 44100
 os.makedirs(W, exist_ok=True)
 
@@ -94,14 +99,14 @@ def at_offset(el, at):
     buf[o:o+n] = el[:n]; return buf
 
 dialogue = at_offset(place(f"{W}/raw.mp3", f"{W}/n1.wav"), OFF)
-mix = dialogue + at_offset(place(STING, f"{W}/n2.wav", ",atrim=0:2.4,volume=0.2,afade=t=in:st=0:d=0.3"), 0)
-if st1: mix += at_offset(place(STING, f"{W}/n3.wav", ",atrim=0:1.1,volume=0.16"), st1)
-if st2: mix += at_offset(place(STING, f"{W}/n4.wav", ",atrim=0:1.1,volume=0.16"), st2)
+mix = dialogue + at_offset(place(STING, f"{W}/n2.wav", ",atrim=0:2.4,volume=0.18,afade=t=in:st=0:d=0.3,afade=t=out:st=1.0:d=0.8"), 0)
+if st1: mix += at_offset(place(CH_STING, f"{W}/n3.wav", ",atrim=0:1.1,volume=0.16"), st1)
+if st2: mix += at_offset(place(CH_STING, f"{W}/n4.wav", ",atrim=0:1.1,volume=0.16"), st2)
 mix += at_offset(place(OUTRO_SRC, f"{W}/n5.wav",
-    ",atrim=0:4,volume=0.18,afade=t=in:st=0:d=0.8,afade=t=out:st=3:d=1"), nend-1.0)
+    ",atrim=0:2.5,volume=0.16,afade=t=in:st=0:d=0.5,afade=t=out:st=1.5:d=1"), nend-1.0)
 
 sh(["ffmpeg","-v","error","-y","-stream_loop","3","-i",BED,
-    "-filter_complex",f"[0:a]aformat=sample_rates=44100:channel_layouts=stereo,atrim=0:{total:.1f},volume=0.14[b]",
+    "-filter_complex",f"[0:a]aformat=sample_rates=44100:channel_layouts=stereo,atrim=0:{total:.1f},volume=0.10[b]",
     "-map","[b]",f"{W}/n6.wav"])
 bed = np.zeros((N,2)); braw = load_wav(f"{W}/n6.wav"); bed[:min(len(braw),N)] = braw[:min(len(braw),N)]
 

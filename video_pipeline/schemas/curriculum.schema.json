@@ -25,8 +25,7 @@
         "tts": {"$ref": "#/$defs/tts"},
         "generation": {"$ref": "#/$defs/generation"},
         "clip_generation": {"$ref": "#/$defs/clipGeneration"},
-        "presentation": {"$ref": "#/$defs/presentation"},
-        "music": {"$ref": "lesson.schema.json#/$defs/music"}
+        "presentation": {"$ref": "#/$defs/presentation"}
       }
     },
     "units": {
@@ -43,12 +42,10 @@
     "tts": {
       "type": "object", "additionalProperties": false,
       "properties": {
-        "engine": {"enum": ["fish", "edge", "fish_cloud"]}, "server_url": {"type": "string"},
+        "engine": {"enum": ["fish", "edge"]}, "server_url": {"type": "string"},
         "reference_audio": {"type": "string"}, "reference_text": {"type": "string"},
-        "reference_id": {"type": "string"},
         "timeout_seconds": {"type": "integer", "minimum": 1}, "settings": {"type": "object"},
-        "edge_voice": {"type": "string"}, "edge_rate": {"type": "string"}, "edge_pitch": {"type": "string"},
-        "voices": {"type": "object", "minProperties": 1}
+        "edge_voice": {"type": "string"}, "edge_rate": {"type": "string"}, "edge_pitch": {"type": "string"}
       }
     },
     "generation": {
@@ -93,7 +90,7 @@
         "learning_objectives": {"$ref": "#/$defs/strings"},
         "key_terms": {"type": "array", "minItems": 1, "items": {"type": "object", "additionalProperties": false, "required": ["term", "definition"], "properties": {"term": {"type": "string"}, "definition": {"type": "string"}}}},
         "ap_alignment": {"type": "object", "additionalProperties": false, "properties": {"period": {"type": "string"}, "topics": {"$ref": "#/$defs/strings"}, "themes": {"$ref": "#/$defs/strings"}, "skills": {"$ref": "#/$defs/strings"}}},
-        "presentation": {"$ref": "#/$defs/presentation"}, "music": {"$ref": "lesson.schema.json#/$defs/music"}, "output": {"type": "string", "pattern": "\\.[mM][pP]4$"},
+        "presentation": {"$ref": "#/$defs/presentation"}, "output": {"type": "string", "pattern": "\\.[mM][pP]4$"},
         "video": {"$ref": "#/$defs/video"}, "tts": {"$ref": "#/$defs/tts"}, "generation": {"$ref": "#/$defs/generation"},
         "clip_generation": {"$ref": "#/$defs/clipGeneration"},
         "scenes": {"type": "array", "minItems": 1, "items": {"$ref": "lesson.schema.json#/$defs/scene"}}

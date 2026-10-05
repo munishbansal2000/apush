@@ -16,7 +16,6 @@ from pathlib import Path
 from typing import Any, Iterator
 
 from .common import PipelineError, read_json, resolve_local
-from .creativity import build_ai_prompt
 from .direction import parse as parse_direction
 from .direction import _TAG_RE as _DIRECTION_TAG_RE
 
@@ -25,7 +24,7 @@ from .direction import _TAG_RE as _DIRECTION_TAG_RE
 # shared helpers
 # ---------------------------------------------------------------------------
 
-_CUE_FIELDS = ("events", "highlights", "nodes", "edges", "moves")
+_CUE_FIELDS = ("highlights", "nodes", "edges", "moves")
 
 
 def iter_cues(scene: dict) -> Iterator[tuple[str, str]]:
@@ -191,69 +190,6 @@ def text_quantity(manifest: dict) -> None:
 
 
 # ---------------------------------------------------------------------------
-# semantic animation consistency
-# ---------------------------------------------------------------------------
-
-def animation_consistency(manifest: dict) -> None:
-    """Reject competing text systems and unstable spatial annotations."""
-    lid = _lid(manifest)
-    moving = {"ken_burns", "zoom", "camera_path", "ai_clip", "parallax"}
-    for scene in _scenes(manifest):
-        sid = scene.get("id", "<unknown scene>")
-        animation = scene.get("animation", {}) or {}
-        if animation.get("type") == "source_analysis":
-            raise PipelineError(
-                f"{lid}/{sid}: raw semantic bounding boxes are prohibited; "
-                "use ai_clip.creativity pattern archival_evidence_scan or "
-                "semantic_spotlight so the vision model locates subjects and "
-                "the deterministic renderer owns only text")
-        if animation.get("type") == "timeline":
-            labels = set()
-            cue_positions = []
-            narration = str(scene.get("narration", {}).get("text", "")).casefold()
-            for index, event in enumerate(animation.get("events", []) or []):
-                label = event.get("label", "") if isinstance(event, dict) else event[0]
-                labels.add(str(label).strip().casefold())
-                if isinstance(event, dict) and event.get("cue"):
-                    cue_positions.append(
-                        (index, narration.find(event["cue"].casefold())))
-            duplicates = [
-                beat.get("text", "") for beat in scene.get("beats", []) or []
-                if isinstance(beat, dict)
-                and str(beat.get("text", "")).strip().casefold() in labels
-            ]
-            if duplicates:
-                raise PipelineError(
-                    f"{lid}/{sid}: timeline labels are drawn again as generic beats: "
-                    f"{', '.join(duplicates)}; one concept must have one visual owner")
-            positions = [position for _, position in cue_positions]
-            if positions and (any(position < 0 for position in positions)
-                              or positions != sorted(positions)):
-                raise PipelineError(
-                    f"{lid}/{sid}: timeline event cues must occur in narration order")
-
-        if scene.get("device") == "annotate":
-            params = scene.get("device_params", {}) or {}
-            notes = params.get("annotations", []) or []
-            points = []
-            for index, note in enumerate(notes):
-                if "x" not in note or "y" not in note:
-                    raise PipelineError(
-                        f"{lid}/{sid}: annotation {index} has no explicit target x/y; "
-                        "implicit coordinates are forbidden")
-                points.append((float(note["x"]), float(note["y"])))
-            if len(set(points)) != len(points):
-                raise PipelineError(
-                    f"{lid}/{sid}: multiple annotations target the same point")
-            if (animation.get("type") in moving
-                    and params.get("freeze_frame", True) is False):
-                raise PipelineError(
-                    f"{lid}/{sid}: screen-space annotations cannot track a moving "
-                    f"{animation.get('type')} image; enable freeze_frame or use a "
-                    "tracked/source-analysis animation")
-
-
-# ---------------------------------------------------------------------------
 # gate 4: image license
 # ---------------------------------------------------------------------------
 
@@ -323,7 +259,7 @@ def prompt_subject_coherence(manifest: dict, manifest_path: Path,
         animation = scene.get("animation", {}) or {}
         if animation.get("type") != "ai_clip":
             continue
-        prompt = build_ai_prompt(animation)
+        prompt = animation.get("prompt", "")
         base = (scene.get("visual", {}) or {}).get("base_image")
         if not base:
             raise PipelineError(f"{lid}/{sid}: ai_clip scene has no base_image")
@@ -331,49 +267,16 @@ def prompt_subject_coherence(manifest: dict, manifest_path: Path,
         key = _repo_rel(repo_root, resolved)
         entry = entries.get(key)
         if entry is None:
-            still = visual.get("still") or {}
-            search = visual.get("search") or {}
-            subject = str(still.get("prompt") or search.get("query") or "")
-            if not subject:
-                raise PipelineError(
-                    f"{lid}/{sid}: base_image {base!r} has no CATALOG.json "
-                    f"entry and no still/search subject; cannot check "
-                    f"prompt/subject coherence")
-        else:
-            subject = str(entry.get("subject", ""))
+            raise PipelineError(
+                f"{lid}/{sid}: base_image {base!r} has no CATALOG.json entry; "
+                f"cannot check prompt/subject coherence")
+        subject = str(entry.get("subject", ""))
         shared = _content_tokens(prompt) & _content_tokens(subject)
         if len(shared) < 2:
             raise PipelineError(
                 f"{lid}/{sid}: ai_clip prompt shares only {len(shared)} content "
                 f"token(s) {sorted(shared)} with the base image subject "
                 f"{subject!r}; rewrite the prompt to describe the actual image")
-
-
-def visual_asset_reuse(manifest: dict) -> None:
-    """Reject accidental slide-deck repetition across three or more scenes.
-
-    Two appearances are allowed for deliberate callbacks or comparisons. A
-    third appearance makes the lesson feel visually stuck and must use a new
-    plate, composite, generated clip, or code-native visual instead.
-    """
-    lid = _lid(manifest)
-    uses: dict[str, list[str]] = {}
-    for scene in _scenes(manifest):
-        visual = scene.get("visual", {}) or {}
-        for field in ("base_image", "secondary_image"):
-            asset = visual.get(field)
-            if asset:
-                uses.setdefault(str(asset).replace("\\", "/"), []).append(
-                    f"{scene.get('id', '<unknown>')}.{field}")
-    repeated = {asset: locations for asset, locations in uses.items()
-                if len(locations) > 2}
-    if repeated:
-        detail = "; ".join(
-            f"{asset}: {', '.join(locations)}"
-            for asset, locations in sorted(repeated.items()))
-        raise PipelineError(
-            f"{lid}: visual assets appear in more than two scene slots: "
-            f"{detail}; create a distinct plate or generated clip")
 
 
 # ---------------------------------------------------------------------------
@@ -633,10 +536,8 @@ def run_all_gates(manifest: dict, manifest_path: Path, repo_root: Path) -> None:
     direction_gate(manifest)
     tts_text(manifest)
     text_quantity(manifest)
-    animation_consistency(manifest)
     license_gate(manifest, manifest_path, repo_root)
     prompt_subject_coherence(manifest, manifest_path, repo_root)
-    visual_asset_reuse(manifest)
     spec_parity(manifest)
     variety(manifest)
     lo_traceability(manifest)

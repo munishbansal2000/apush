@@ -991,29 +991,43 @@
                     "text": "The silver came at [emphasis]a human price[/emphasis]. Spain revived the Inca labor draft as the mita: Indigenous communities had to send a share of their men to the mines each year. [slow]Mitayos climbed down ladders into freezing tunnels, crushed ore by hand, and breathed mercury fumes.[/slow] [solemn]Many never came home. And the dying workforce pushed Spain toward enslaved African labor."
                   },
                   "visual": {
-                    "base_image": "../../assets/images/u1/gap-g-v02-1-potosi-mitayos-debry.jpg",
-                    "clip": "../../video/ai_clips/u1-ch2-silver-mita-evidence-scan.mp4"
+                    "base_image": "../../assets/images/u1/gap-g-v02-1-potosi-mitayos-debry.jpg"
                   },
                   "animation": {
-                    "type": "ai_clip",
-                    "provider": "ltx",
-                    "duration": 10,
-                    "seed": 1545,
-                    "creativity": {
-                      "pattern": "archival_evidence_scan",
-                      "source_description": "Theodor de Bry's historical engraving of Indigenous workers in the Potosi silver mines",
-                      "focuses": [
-                        {
-                          "subject": "workers laboring with ore at the mine floor",
-                          "location": "the lower half"
-                        },
-                        {
-                          "subject": "workers climbing the long ladders",
-                          "location": "the center and upper right"
-                        }
-                      ],
-                      "ambient_motion": "A narrow warm examination light moves from the mine floor to the ladders while faint dust drifts through the tunnel"
-                    }
+                    "type": "source_analysis",
+                    "highlights": [
+                      {
+                        "box": [
+                          0.35,
+                          0.05,
+                          0.6,
+                          0.45
+                        ],
+                        "label": "Mitayos climb the ladders carrying ore",
+                        "cue": "climbed down ladders"
+                      },
+                      {
+                        "box": [
+                          0.55,
+                          0.35,
+                          0.95,
+                          0.75
+                        ],
+                        "label": "Overseers with tools drive the work",
+                        "cue": "crushed ore by hand"
+                      },
+                      {
+                        "box": [
+                          0.05,
+                          0.6,
+                          0.4,
+                          0.95
+                        ],
+                        "label": "Freezing tunnels and mercury fumes",
+                        "cue": "breathed mercury fumes"
+                      }
+                    ],
+                    "caption": "Read the image like a historian"
                   },
                   "beats": [
                     {
@@ -1076,7 +1090,7 @@
                     "license": "Public domain",
                     "notes": "De Bry was a Dutch Protestant depicting Spanish cruelty — read the image as both evidence of labor and anti-Spanish argument."
                   },
-                  "production_notes": "LTX performs a semantic evidence scan from named subjects; no guessed coordinate boxes. The sourcing note is the AP skill payoff."
+                  "production_notes": "Zoom into each highlight as its cue lands; the sourcing note is the AP skill payoff."
                 },
                 {
                   "id": "silver-price-revolution",

@@ -1,0 +1,1045 @@
+@page
+{
+	margin: 1.5em;
+}
+body
+{
+	margin: 0em 0.5em 0em 0.5em;
+}
+img
+{
+	max-width: 100%;
+	max-height: 100%;
+}
+a
+{
+	text-decoration: none;
+}
+small
+{
+        font-size: 0.9em;
+}
+.ans-d
+{
+	font-size: 100%;
+        font-weight: bold;
+	margin-top: 0.8em;
+	margin-bottom: 0.4em;
+	text-align: left;
+}
+.anse
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+	margin-left: 1.8em;
+	text-indent: -1.3em;
+}
+.anse1
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+	margin-left: 1.8em;
+	text-indent: -1.8em;
+}
+.ansen
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+	margin-left: 1.8em;
+	text-indent: 0em;
+}
+.answ
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+	margin-left: 2em;
+	text-indent: -1.2em;
+}
+.answ1
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+	margin-left: 2em;
+	text-indent: -1.6em;
+}
+.answ2
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+	margin-left: 2em;
+	text-indent: -2em;
+}
+.answer
+{
+	margin-top: 0.5em;
+	margin-bottom: 0.1em;
+	margin-left: 1.5em;
+	text-indent: -1.1em;
+}
+.answer1
+{
+	margin-top: 0.5em;
+	margin-bottom: 0.1em;
+	margin-left: 1.5em;
+	text-indent: -1.5em;
+}
+.bullet
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+	margin-left: 1.1em;
+	text-indent: -1.1em;
+	text-align: left;
+}
+.bulletb
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.5em;
+	margin-left: 1.1em;
+	text-indent: -1.1em;
+	text-align: left;
+}
+.bullett
+{
+	margin-top: 0.5em;
+	margin-bottom: 0.1em;
+	margin-left: 1.1em;
+	text-indent: -1.1em;
+	text-align: left;
+}
+.caption
+{
+	font-size: 90%;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+	text-indent: 0.01em;
+}
+.caption1
+{
+	font-size: 90%;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	text-indent: 0.01em;
+}
+.caption2
+{
+	font-size: 90%;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+	text-indent: 0.01em;
+}
+.center
+{
+	margin-top: 1em;
+	margin-bottom: 1em;
+	text-align: center;
+}
+.copyright
+{
+	margin-top: 1em;
+	margin-bottom: 0.1em;
+	text-indent: 0.01em;
+}
+.copyright1
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+	text-indent: 0.01em;
+}
+.copyrighti
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+	text-indent: 1.5em;
+}
+.cover-image
+{
+	margin-top: 0em;
+	margin-bottom: 0em;
+	text-align: center;
+}
+.d-att
+{
+	margin-top: 0.1em;
+	margin-bottom: 1em;
+	margin-left: 4.2em;
+	margin-right: 0em;
+	text-indent: -1.1em;
+        text-align: left;
+}
+.d-bq
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+	margin-left: 1.2em;
+	margin-right: 1.2em;
+	text-indent: 0em;
+}
+.d-bq1
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.5em;
+	margin-left: 1.2em;
+	margin-right: 1em;
+	text-indent: 0em;
+}
+.d-bqi
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+	margin-left: 1.2em;
+	margin-right: 1em;
+	text-indent: 1.2em;
+}
+.d-h2
+{
+	font-size: 150%;
+	margin-top: 1em;
+	margin-bottom: 3.5em;
+	margin-right: 1.5em;
+	text-align: right;
+}
+.d-h3
+{
+	font-size: 140%;
+	margin-top: 1.5em;
+	margin-bottom: 0.3em;
+	text-indent: 0.01em;
+}
+.day
+{
+	color: #ffffff;
+	background-color: #808285;
+        padding: 0.3em 1em 0.3em 1em;
+}
+.docque
+{
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: 1.4em;
+	text-indent: -1em;
+	text-align: left;
+}
+.font
+{
+	background-color: #020202;
+        color: #ffffff;
+	padding: 0.3em;
+	font-weight: normal;
+}
+.fonta
+{
+	padding: 0.3em;
+	font-size: 220%;
+	background-color: #A7A9AC;
+        color: #ffffff;
+}
+.fontb
+{
+	padding: .2em;
+	background-color: #020202;
+	color: #FFFFFF;
+}
+.fontp
+{
+	text-decoration: underline;
+	padding: 0.3em;
+	font-size: 270%;
+        color: #ffffff;
+	background-color: #A7A9AC;
+}
+.fontpm
+{
+	text-decoration: underline;
+	padding: 0.3em;
+	font-size: 270%;
+        color: #ffffff;
+	background-color: #808285;
+}
+.gloss
+{
+	margin-top: 0.2em;
+	margin-bottom: 0.1em;
+	margin-left: 1.2em;
+	text-indent: -1.2em;
+}
+.go
+{
+	margin-top: 2em;
+	margin-bottom: 3em;
+	text-align: center;
+}
+.h2
+{
+	background-color: #E7E7E8;
+	padding: .3em;
+	font-size: 180%;
+	margin-top: 1em;
+	margin-bottom: 1.5em;
+	text-align: right;
+}
+.h2cn
+{
+	color: #ffffff;
+	font-size: 140%;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+	text-align: right;
+}
+.h2ct
+{
+	font-size: 180%;
+	font-weight: normal;
+	margin-top: 2em;
+	margin-bottom: 2.0em;
+	text-align: right;
+}
+.h2f
+{
+	background-color: #E7E7E8;
+	padding: .3em;
+	font-size: 180%;
+	margin-top: 1em;
+	margin-bottom: 1.5em;
+	text-align: right;
+}
+.h2p
+{
+	color: #ffffff;
+	font-size: 180%;
+	margin-top: 2em;
+	margin-bottom: 1.5em;
+	text-align: right;
+}
+.h2pc
+{
+	color: #ffffff;
+	font-size: 180%;
+	margin-top: 2em;
+	margin-bottom: 1.5em;
+	text-align: center;
+}
+.h2pt
+{
+	font-size: 180%;
+	font-weight: normal;
+	margin-top: 2em;
+	margin-bottom: 1.5em;
+	text-align: right;
+}
+.h2ptc
+{
+	font-size: 200%;
+	margin-top: 1em;
+	margin-bottom: 1.5em;
+	color: #ffffff;
+	text-align: center;
+}
+.h3
+{
+	font-size: 140%;
+	margin-top: 1.5em;
+	margin-bottom: 0.3em;
+	text-indent: 0.01em;
+}
+.h3r
+{
+	font-size: 120%;
+	margin-top: 1.5em;
+	margin-bottom: 0.2em;
+	padding-bottom: 0.1em;
+	border-bottom: solid 0.1em;
+	text-align: left;
+}
+.h4
+{
+	font-size: 120%;
+	margin-top: 1em;
+	margin-bottom: 0.2em;
+	text-indent: 0.01em;
+}
+.h4a
+{
+	font-size: 120%;
+	margin-top: 0.1em;
+	margin-bottom: 0.3em;
+	text-indent: 0.01em;
+}
+.h4c
+{
+	font-size: 120%;
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+	text-indent: 0.01em;
+        text-align: center;
+}
+.h4ca
+{
+	font-size: 120%;
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+	margin-left: 1em;
+	text-indent: 0.01em;
+        text-align: left;
+}
+.h4r
+{
+	font-size: 115%;
+	margin-top: 0.5em;
+	margin-bottom: 0.2em;
+	text-indent: 0.01em;
+}
+.h5
+{
+	font-size: 110%;
+	margin-top: 1em;
+	margin-bottom: 0.2em;
+	text-indent: 0.01em;
+}
+.hangc
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.5em;
+	margin-left: 7.5em;
+	text-indent: -6.1em;
+	text-align: left;
+}
+.hangc1
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.5em;
+	margin-left: 1.5em;
+	text-indent: 0em;
+	text-align: right;
+}
+.hr
+{
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+	border-bottom: solid 0.1em;
+	text-indent: 0.01em;
+}
+.image
+{
+	margin-top: 1em;
+	margin-bottom: 1em;
+	text-align: center;
+}
+.imagec
+{
+	margin-top: -0.5em;
+	margin-bottom: 1em;
+	text-align: center;
+}
+.imagef
+{
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+	text-align: center;
+}
+.imagek
+{
+	margin-top: 1em;
+	margin-bottom: 1em;
+	text-indent: 0.01em;
+}
+.imagel
+{
+	margin-top: 1em;
+	margin-bottom: 1em;
+	text-indent: 0.01em;
+}
+.indent
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+	text-indent: 1.5em;
+}
+.indent-d
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.5em;
+	margin-left: 1.2em;
+	text-indent: 0em;
+}
+.indentb
+{
+	margin-top: 0.1em;
+	margin-bottom: 1em;
+	text-indent: 1.5em;
+}
+.indentt
+{
+	margin-top: 1em;
+	margin-bottom: 0.1em;
+	text-indent: 1.5em;
+}
+.inline
+{
+	vertical-align: middle;
+}
+.noind
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+	margin-left: 3.5em;
+	text-indent: -3.5em;
+}
+.noind1
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+	margin-left: 4.7em;
+	text-indent: -4.7em;
+}
+.noind2
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+	margin-left: 5.1em;
+	text-indent: -5.1em;
+}
+.noindb
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.7em;
+	margin-left: 2.5em;
+	text-indent: -2.5em;
+}
+.noindent
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+	text-indent: 0.01em;
+}
+.noindent-d
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.5em;
+	text-indent: 0.01em;
+}
+.noindenta
+{
+	margin-top: 0.7em;
+	margin-bottom: 0.5em;
+	text-indent: 0.01em;
+}
+.noindentb
+{
+	margin-top: 0.1em;
+	margin-bottom: 1em;
+	text-indent: 0.01em;
+}
+.noindentb1
+{
+	margin-top: 0.1em;
+	margin-bottom: 2em;
+	text-indent: 0.01em;
+}
+.noindentbl
+{
+        font-weight: bold;
+	margin-top: 1em;
+	margin-bottom: 0.3em;
+	text-indent: 0.01em;
+}
+.noindentd
+{
+        font-weight: bold;
+	margin-top: 0.6em;
+	margin-bottom: 0.1em;
+	margin-left: 5em;
+	margin-right: 1em;
+	text-indent: 0.01em;
+}
+.noindentdi
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+	margin-left: 5em;
+	margin-right: 1em;
+	text-indent: 0.01em;
+}
+.noindentdi1
+{
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: 6.5em;
+	margin-right: 1em;
+	text-indent: 0.01em;
+}
+.noindentk
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+	text-indent: 0.01em;
+}
+.noindentst
+{
+	margin-top: 0.3em;
+	margin-bottom: 0.1em;
+	margin-left: 1.3em;
+	text-indent: -1.3em;
+	text-align: left;
+}
+.noindentstb
+{
+	margin-top: 0.1em;
+	margin-bottom: 1em;
+	margin-left: 1.3em;
+	text-indent: -1.3em;
+	text-align: left;
+}
+.noindentsum
+{
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+	text-indent: 0.01em;
+}
+.noindentt
+{
+	margin-top: 1em;
+	margin-bottom: 0.1em;
+	text-indent: 0.01em;
+}
+.noindenttb
+{
+	margin-top: 1.5em;
+	margin-bottom: 1em;
+	text-indent: 0.01em;
+}
+.noindn
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+	margin-left: 3.7em;
+	text-indent: -1.2em;
+}
+.noindt
+{
+	margin-top: 0.7em;
+	margin-bottom: 0.1em;
+	margin-left: 2.5em;
+	text-indent: -2.5em;
+}
+.number
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+	margin-left: 1.3em;
+	text-indent: -1.3em;
+	text-align: left;
+}
+.numberb
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.7em;
+	margin-left: 1.3em;
+	text-indent: -1.3em;
+	text-align: left;
+}
+.numberin
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+	margin-left: 1.3em;
+	text-indent: 1.2em;
+	text-align: left;
+}
+.numberina
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+	margin-left: 2.5em;
+	text-align: left;
+}
+.numbert
+{
+	margin-top: 0.7em;
+	margin-bottom: 0.1em;
+	margin-left: 1.3em;
+	text-indent: -1.3em;
+	text-align: left;
+}
+.que
+{
+	margin-top: 0.5em;
+	margin-bottom: 0.1em;
+	margin-left: 1.8em;
+	text-indent: -1.3em;
+	text-align: left;
+}
+.que1
+{
+	margin-top: 0.5em;
+	margin-bottom: 0.1em;
+	margin-left: 1.8em;
+	text-indent: -1.8em;
+	text-align: left;
+}
+.quen
+{
+	margin-top: 0.5em;
+	margin-bottom: 0.1em;
+	margin-left: 1.8em;
+	text-indent: 0em;
+	text-align: left;
+}
+.quena
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+	margin-left: 1.8em;
+	text-indent: 0em;
+	text-align: left;
+}
+.questions
+{
+	margin-top: 1.5em;
+	margin-bottom: 0.8em;
+	text-indent: 0.01em;
+}
+.quet
+{
+	margin-top: 1em;
+	margin-bottom: 0.1em;
+	margin-left: 1.8em;
+	text-indent: -1.3em;
+	text-align: left;
+}
+.quote
+{
+        font-size: 0.9em;
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+	margin-left: 1.4em;
+	margin-right: 1.4em;
+	text-indent: 0em;
+	text-align: left;
+}
+.quotei
+{
+        font-size: 0.9em;
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+	margin-left: 1.4em;
+	margin-right: 1.4em;
+	text-indent: 1.2em;
+	text-align: left;
+}
+.quoter
+{
+        font-size: 0.9em;
+	margin-top: 0.1em;
+	margin-bottom: 1em;
+	margin-left: 1.4em;
+	margin-right: 1.4em;
+	text-indent: 0em;
+	text-align: right;
+}
+.ref
+{
+	margin-top: 0.2em;
+	margin-bottom: 0.1em;
+	margin-left: 1.2em;
+	text-indent: -1.2em;
+}
+.right
+{
+	margin-top: 0.1em;
+	margin-bottom: 1.5em;
+	margin-left: 0em;
+	text-indent: 0em;
+	text-align: right;
+}
+.s-h3c1
+{
+	font-size: 120%;
+	margin-top: 1.5em;
+	margin-bottom: 0.3em;
+	border-top: solid 0.1em;
+	border-bottom: solid 0.1em;
+	text-align: center;
+}
+.sidebar
+{
+	margin-top: 1em;
+	margin-bottom: 0em;
+	border: solid black 0.01em;
+	padding: 0.6em;
+}
+.sideg1
+{
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+	background-color: #E6E7E8;
+	padding: 0.5em;
+}
+.sideg1m
+{
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+	background-color: #808285;
+	padding: 0.5em;
+}
+.sideg2
+{
+	background-color: #DDDDDD;
+	margin-top: 3em;
+	padding: 1em;
+}
+.toc-chap
+{
+	margin-top: 0.6em;
+	margin-bottom: 0.1em;
+	margin-left: 5.3em;
+	text-indent: -1.2em;
+	text-align: left;
+}
+.toc-chapaa
+{
+	margin-top: 0.6em;
+	margin-bottom: 0.1em;
+	margin-left: 3.8em;
+	text-align: left;
+}
+.toc-chap1
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+	margin-left: 5.3em;
+	text-indent: 0.01em;
+	text-align: left;
+}
+.toc-chapa
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+	margin-left: 3.8em;
+	text-align: left;
+}
+.toc-fm
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+	margin-left: 3.9em;
+	text-indent: 0.01em;
+	text-align: left;
+}
+.toc-step
+{
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+	margin-left: 4em;
+	text-indent: -4em;
+	text-align: left;
+}
+.ualpha
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+	margin-left: 3.2em;
+	text-indent: -1.3em;
+	text-align: left;
+}
+.ualpha-b
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+	margin-left: 4.2em;
+	text-indent: -1.1em;
+	text-align: left;
+}
+.ualphan
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+	margin-left: 3.2em;
+	text-indent: 0em;
+	text-align: left;
+}
+.ualphan1
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+	margin-left: 3.2em;
+	text-indent: 1.2em;
+	text-align: left;
+}
+figure img
+{
+    height: 99vh;
+}
+figure
+{
+    padding: 0;
+    margin: 0;
+}
+
+.sh2
+{
+	font-size: 250%;
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+	text-align: center;
+	color: #EE1C25;
+}
+.scenter
+{
+	margin-top: 1em;
+	margin-bottom: 1em;
+	text-align: center;
+}
+.scentert
+{
+	margin-top: 1em;
+	margin-bottom: 0em;
+	text-align: center;
+}
+.scenterb
+{
+	margin-top: 0em;
+	margin-bottom: 1em;
+	text-align: center;
+}
+.ch-au
+{
+	font-weight: bold;
+	font-size: 1.3em;
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+	text-align: center;
+	color: #EE1C25;
+}
+.ch-au1
+{
+	margin-top: 0.5em;
+	margin-bottom: 1.5em;
+	text-align: center;
+}
+.snoind
+{
+	margin-top: 2em;
+	margin-bottom: 0.5em;
+	text-align: center;
+}
+.sh3
+{
+	font-weight: normal;
+	font-size: 180%;
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+	text-align: left;
+	color: #EE1C25;
+}
+.sh4
+{
+	font-size: 130%;
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+	text-align: left;
+	color: #EE1C25;
+}
+.sh4a
+{
+	font-size: 120%;
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+	text-align: left;
+}
+.snoindent
+{
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	text-indent: 0.01em;
+}
+.s-para
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+	text-indent: 0.01em;
+}
+.arrow
+{
+	margin-top: 1em;
+	margin-bottom: 1.2em;
+	margin-left: 1.4em;
+	text-indent: -1.4em;
+        text-align: left;
+}
+.sh3-1
+{
+	font-size: 1.3em;
+	margin-top: 1em;
+	margin-bottom: 0em;
+	text-align: left;
+}
+.sf1
+{
+	padding: 0.2em;
+	background-color: #0071BB;
+	color: #FFFFFF;
+}
+.shr-1
+{
+	margin-top: 0em;
+	margin-bottom: 0.4em;
+	border-bottom: solid #0071BB 0.2em;
+}
+.sh3-2
+{
+	font-weight: normal;
+	font-size: 180%;
+	margin-top: 0.3em;
+	margin-bottom: 0.7em;
+	text-align: left;
+	color: #EE1C25;
+}
+.sblue
+{
+	font-weight: bold;
+	color: #0055B4
+}
+.ssidebar
+{
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding: 0.5em;
+	border: solid #FAA74A 0.3em;
+}
+.noindna
+{
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+	margin-left: 6.4em;
+	text-indent: -1.2em;
+}
+.quote-h
+{
+        font-size: 0.9em;
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+	margin-left: 2em;
+	margin-right: 1.4em;
+	text-indent: -1em;
+	text-align: left;
+}
+.noindentsum-a
+{
+	margin-top: 0.5em;
+	margin-bottom: 0em;
+	text-indent: 0.01em;
+}
+.d-att-a
+{
+	margin-top: 0.1em;
+	margin-bottom: 1em;
+	margin-left: 3.5em;
+	margin-right: 0em;
+	text-indent: -1.1em;
+        text-align: left;
+}
+.pagebreak
+{
+	page-break-before: always;
+}

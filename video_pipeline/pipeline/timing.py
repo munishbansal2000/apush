@@ -52,10 +52,8 @@ def resolve_scene_timing(scene: dict, duration: float,
         _resolve_item(item, narration, duration,
                       f"scene {scene['id']}.beats[{index}]", word_boundaries)
     animation = resolved["animation"]
-    for field in ("events", "highlights", "nodes", "edges", "moves"):
+    for field in ("highlights", "nodes", "edges", "moves"):
         for index, item in enumerate(animation.get(field, [])):
-            if not isinstance(item, dict):
-                continue
             _resolve_item(item, narration, duration,
                           f"scene {scene['id']}.animation.{field}[{index}]",
                           word_boundaries)

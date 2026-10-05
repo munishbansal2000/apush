@@ -364,7 +364,6 @@
    },
    "visual": {
     "base_image": "assets/images/u3/stamp-act-document.jpg",
-    "clip": "../../video/ai_clips/u3-l3-stamp-act-document.mp4",
     "search": {
      "page_title": "File:Parliament_Stamp_Act1765.jpg",
      "provider": "wikimedia",
@@ -373,16 +372,32 @@
     }
    },
    "animation": {
-    "type": "ai_clip",
-    "provider": "ltx",
-    "duration": 10,
-    "seed": 1765,
-    "creativity": {
-     "pattern": "living_archive",
-     "source_description": "The original printed Stamp Act parliamentary document from 1765",
-     "focuses": [],
-     "ambient_motion": "A restrained museum light passes across the unchanged paper while minute dust motes drift above it"
-    }
+    "type": "source_analysis",
+    "title": "The Stamp Act, 1765",
+    "highlights": [
+     {
+      "box": [
+       0.12,
+       0.3,
+       0.88,
+       0.45
+      ],
+      "label": "A DIRECT TAX ON PAPER",
+      "at": 8,
+      "duration": 5
+     },
+     {
+      "box": [
+       0.12,
+       0.52,
+       0.88,
+       0.67
+      ],
+      "label": "DOCUMENTS · NEWSPAPERS · PLAYING CARDS",
+      "at": 14,
+      "duration": 5
+     }
+    ]
    },
    "beats": [
     {
@@ -392,22 +407,6 @@
      "x": 0.5,
      "y": 0.14,
      "duration": 3
-    },
-    {
-     "type": "label",
-     "cue": "direct tax",
-     "text": "A DIRECT TAX ON PAPER",
-     "x": 0.5,
-     "y": 0.2,
-     "duration": 4
-    },
-    {
-     "type": "label",
-     "cue": "Legal documents",
-     "text": "DOCUMENTS · NEWSPAPERS · PLAYING CARDS",
-     "x": 0.5,
-     "y": 0.78,
-     "duration": 4
     },
     {
      "type": "stamp",
@@ -425,16 +424,14 @@
    "on_screen_text": [
     "SUGAR ACT, 1764",
     "STAMP ACT, 1765",
-    "A DIRECT TAX ON PAPER",
-    "DOCUMENTS · NEWSPAPERS · PLAYING CARDS",
     "'IN ALL CASES WHATSOEVER'"
    ],
    "source": {
     "title": "Stamp Act 1765, Parliamentary document",
     "license": "Public domain",
-    "notes": "Wikimedia Commons, verified via review 2026-10-04. The document itself is the artifact; LTX may animate only light and dust, never its printed content."
+    "notes": "Wikimedia Commons, verified via review 2026-10-04. Inspected as evidence: the document itself is the artifact. Highlight boxes are approximate; tune against the retrieved scan at animatic stage."
    },
-   "production_notes": "Evidence scene: LTX keeps the artifact intact while deterministic cue-timed labels explain the tax. The reversal lands in narration — they win the repeal and lose the principle.",
+   "production_notes": "Evidence scene: the viewer inspects the artifact. The reversal lands in narration — they win the repeal and lose the principle. Highlight boxes approximate; verify at animatic stage.",
    "topics": [
     "3.3"
    ],
