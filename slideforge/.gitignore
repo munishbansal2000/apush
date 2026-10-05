@@ -1,0 +1,10 @@
+# slideforge local-work ignores (applies under slideforge/ in the apush repo)
+__pycache__/
+*.pyc
+*.pyo
+*.mp4
+build/
+dist/
+*.egg-info/
+media-generation-*
+.DS_Store
