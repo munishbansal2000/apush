@@ -2,17 +2,19 @@
 """APUSH video pipeline — one command from beat sheet + audio to final video.
 
 Usage:
-  python3 pipeline.py --episode u1-e1 [--only timing,beats,anim,render,assemble,verify]
+  python3 pipeline.py --episode u1-e1 [--only timing,direct,slideforge_render,assemble,verify]
                       [--force] [--skip-audio-build]
+                      [--renderer slideforge|legacy]
+                      [--director-provider mock|agent|openai]
 
-Stages:
-  audio    ensure the mixed dialogue MP3 exists (runs cfg "audio_build" if set)
-  timing   turn timings + per-turn speech onsets from the real MP3s
-  beats    validate beat sheet, resolve boundaries to absolute seconds
-  anim     emit LTX clip prompts for Windows rendering (+ clip pickup happens in render)
-  render   one cached segment per beat (Ken Burns / vid / word-aligned chain)
-  assemble concat segments + mux dialogue audio
-  verify   fail-closed checks: duration, streams, audio level, no black frames
+Renderers:
+  slideforge (default): audio -> timing -> direct (LLM scene plan) ->
+      slideforge_render (pure-Python, no browser) -> assemble -> verify.
+      The scene plan is a reviewable JSON artifact (work/scene_plan.json);
+      rendering is deterministic.
+  legacy: the original chrome-headless-shell beat-segment pipeline
+      (audio -> timing -> beats -> wordalign -> anim -> render -> assemble
+      -> verify).
 
 Everything is deterministic: same inputs -> same output. Delete a segment
 file to force its re-render; --force re-renders everything.
@@ -27,8 +29,18 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, ROOT)
 
 from stages import timing, beats, wordalign, anim, render, assemble, verify  # noqa: E402
+from stages import direct as direct_stage, slideforge_render  # noqa: E402
 
 STAGES = ["audio", "timing", "beats", "wordalign", "anim", "render", "assemble", "verify"]
+
+# Renderer backends. "slideforge" is the default: pure-Python animation
+# (no chrome-headless-shell), LLM director -> deterministic compile.
+# "legacy" keeps the original chrome-based beat-segment pipeline.
+RENDERERS = {
+    "legacy": STAGES,
+    "slideforge": ["audio", "timing", "direct", "slideforge_render",
+                   "assemble", "verify"],
+}
 
 
 def run_audio(ep_dir, cfg, skip_build=False):
@@ -58,6 +70,13 @@ def main():
     ap.add_argument("--force", action="store_true",
                     help="re-render all segments")
     ap.add_argument("--skip-audio-build", action="store_true")
+    ap.add_argument("--renderer", default="slideforge",
+                    choices=sorted(RENDERERS),
+                    help="slideforge (default): LLM director + pure-Python "
+                         "render; legacy: chrome-based beat segments")
+    ap.add_argument("--director-provider", default="agent",
+                    choices=["mock", "agent", "openai"],
+                    help="slideforge renderer only: who writes the scene plan")
     args = ap.parse_args()
 
     ep_dir = os.path.join(ROOT, "episodes", args.episode)
@@ -69,16 +88,19 @@ def main():
     cfg["episode"] = args.episode
     os.makedirs(os.path.join(ep_dir, "work"), exist_ok=True)
 
-    want = STAGES
+    renderer_stages = RENDERERS[args.renderer]
+    want = renderer_stages
     if args.only:
         want = [s.strip() for s in args.only.split(",") if s.strip()]
         for s in want:
-            if s not in STAGES:
-                raise RuntimeError(f"unknown stage: {s}")
+            if s not in renderer_stages:
+                raise RuntimeError(
+                    f"unknown stage for renderer {args.renderer!r}: {s}")
 
     seg_paths = None
+    video_path = None
     final = None
-    for stage in STAGES:
+    for stage in renderer_stages:
         if stage not in want:
             continue
         print(f"=== stage: {stage} ===", flush=True)
@@ -94,15 +116,25 @@ def main():
             anim.run(ep_dir, cfg)
         elif stage == "render":
             seg_paths = render.run(ep_dir, cfg, force=args.force)
+        elif stage == "direct":
+            direct_stage.run(ep_dir, cfg, provider=args.director_provider)
+        elif stage == "slideforge_render":
+            video_path = slideforge_render.run(ep_dir, cfg, force=args.force)
         elif stage == "assemble":
-            if seg_paths is None:
-                # re-collect cached segments from resolved beats
-                with open(os.path.join(ep_dir, "work", "beats_resolved.json"),
-                          encoding="utf-8") as f:
-                    bs = json.load(f)["beats"]
-                seg_paths = [os.path.join(ep_dir, "work", "segs", b["id"] + ".mp4")
-                             for b in bs]
-            final = assemble.run(ep_dir, cfg, seg_paths)
+            if args.renderer == "slideforge":
+                if video_path is None:
+                    video_path = os.path.join(ep_dir, "work",
+                                              "slideforge.mp4")
+                final = assemble.run_single(ep_dir, cfg, video_path)
+            else:
+                if seg_paths is None:
+                    # re-collect cached segments from resolved beats
+                    with open(os.path.join(ep_dir, "work", "beats_resolved.json"),
+                              encoding="utf-8") as f:
+                        bs = json.load(f)["beats"]
+                    seg_paths = [os.path.join(ep_dir, "work", "segs", b["id"] + ".mp4")
+                                 for b in bs]
+                final = assemble.run(ep_dir, cfg, seg_paths)
         elif stage == "verify":
             if final is None:
                 final = os.path.join(ep_dir, f"{args.episode}-final.mp4")

@@ -1,0 +1,12 @@
+[
+  "tests/test_assets_resolve.py::test_absolute_path_rejected",
+  "tests/test_assets_resolve.py::test_escaping_path_rejected",
+  "tests/test_assets_resolve.py::test_relative_resolves_against_assets_dir",
+  "tests/test_assets_resolve.py::test_subdir_relative_resolves",
+  "tests/test_compiler_rejects_bad_plans.py::test_missing_image_file",
+  "tests/test_compiler_rejects_bad_plans.py::test_unknown_slide_type",
+  "tests/test_compiler_rejects_bad_plans.py::test_zero_duration",
+  "tests/test_director_mock_e2e.py::test_director_mock_e2e",
+  "tests/test_render_mini_plan.py::test_render_mini_plan",
+  "tests/test_route_slide_e2e.py::test_route_slide_e2e"
+]
