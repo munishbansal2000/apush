@@ -1,0 +1,12 @@
+{
+ "tts_dir": "tts",
+ "audio": "u1e3-mix.mp3",
+ "audio_build": "python ../../edge_tts_turns.py script_turns.json tts && python ../../mix_turns.py tts tts/u1e3-mix.mp3",
+ "offset": 1.8,
+ "gap": 0.6,
+ "tail": 4.5,
+ "width": 1920,
+ "height": 1080,
+ "fps": 30,
+ "notes": "u1-e3 marquee (53 slots: 51 dialogue + 2 five-second self-test pauses). Acts: silver t00-11, legend t12-18, drake/roanoke t19-31, armada t32-37, closer t38-50."
+}

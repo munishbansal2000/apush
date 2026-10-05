@@ -97,8 +97,9 @@ def run(ep_dir, cfg, provider="agent", plan_file=None):
         if source != "missing":
             with open(plan_path, encoding="utf-8") as f:
                 plan = json.load(f)
-            if plan.get("version") != 1:
-                raise RuntimeError(f"{plan_path} is not a v1 scene plan")
+            if plan.get("version") not in (1, 2):
+                raise RuntimeError(
+                    f"{plan_path} is not a v1/v2 scene plan")
             _validate_plan_durations(plan, turns, recipe)
             print(f"direct: using {source} plan ({len(plan['scenes'])} "
                   f"scenes): {plan_path}", flush=True)
@@ -151,6 +152,16 @@ def _validate_plan_durations(plan, turns, recipe):
     within 1 frame. Same model as compile_scene_plan.py's measured-timing
     gate — the two validators must never disagree.
     """
+    if plan.get("version") == 2:
+        # v2 scenes carry absolute times from measured word times;
+        # there are no turn ranges, so validate contiguity instead.
+        # Same rule as the compiler gate - the two must never disagree.
+        from compile_scene_plan import _validate_timeline, PlanError
+        try:
+            _validate_timeline(plan)
+        except PlanError as e:
+            raise RuntimeError(f"direct: scene plan REJECTED - {e}")
+        return
     FPS = 30
     gap, offset, tail = recipe["gap"], recipe["offset"], recipe["tail"]
     scenes = plan.get("scenes", [])

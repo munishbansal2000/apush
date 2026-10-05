@@ -112,6 +112,29 @@ def lint_plan(plan):
     errors, warns = [], []
     scenes = plan.get("scenes", [])
 
+    if plan.get("version") == 2:
+        # v2 partitions absolute time: scene 0 at 0.0, each scene
+        # starts where the previous ended. Gaps/overlaps >= 1 frame
+        # are A/V desync (the compiler rejects them too).
+        frame = 1.0 / 30
+        expected = 0.0
+        for i, spec in enumerate(scenes):
+            sid = spec.get("id", f"scene-{i:02d}")
+            start = spec.get("start_sec")
+            if (not isinstance(start, (int, float))
+                    or isinstance(start, bool) or start < 0):
+                errors.append(
+                    f"scene '{sid}': v2 needs 'start_sec' >= 0")
+                start = expected
+            drift = start - expected
+            if abs(drift) >= frame:
+                kind = "gap" if drift > 0 else "overlap"
+                errors.append(
+                    f"scene '{sid}': timeline {kind} "
+                    f"{abs(drift):.3f}s (starts at {start:.3f}s, "
+                    f"previous ended at {expected:.3f}s)")
+            expected = start + float(spec.get("duration_sec", 0))
+
     def scene_dur(i):
         return float(scenes[i].get("duration_sec", 0))
 

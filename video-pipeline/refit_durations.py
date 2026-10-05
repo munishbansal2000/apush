@@ -80,6 +80,9 @@ def main(argv):
               flush=True)
 
     plan = json.load(open(plan_path, encoding="utf-8"))
+    if plan.get("version") == 2:
+        sys.exit("v2 plans carry absolute start_sec from measured word "
+                 "times; refit_durations.py only refits v1 turn ranges")
     scenes = plan["scenes"]
 
     # turn count comes from the plan's coverage; files are matched by index

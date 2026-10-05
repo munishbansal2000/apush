@@ -1,0 +1,28 @@
+{
+ "version": 1,
+ "clips": {
+  "darksea": {
+   "file": "clips/darksea-c94482b6b9a7.mp4",
+   "fingerprint": "c94482b6b9a7",
+   "anim_prompt": "Vast open Atlantic Ocean at dawn, seen from just above the water. Low drifting mist, slow heavy swell, cold blue-grey palette with a pale glow on the horizon. No ships, no people, no land, no text, no modern objects. Camera: very slow push-in. Mood: beautiful and ominous \u2014 the edge of the known world.",
+   "base_image": null,
+   "base_sha1": null,
+   "params": {
+    "model": "fast",
+    "resolution": "1080p",
+    "duration": 5,
+    "fps": 24,
+    "seed": 42,
+    "cameraMotion": "none",
+    "negative": "text, watermark, letters, numbers, people, faces, modern ships, modern buildings, warping, morphing"
+   },
+   "seconds": 194.8,
+   "backend": "ltx-desktop-local",
+   "conformed": {
+    "from_fp": "c94482b6b9a7",
+    "frames": 1127,
+    "file": "darksea.mp4"
+   }
+  }
+ }
+}

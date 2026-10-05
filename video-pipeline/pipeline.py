@@ -130,16 +130,17 @@ def main():
             from stages import wordtiming
             wordtiming.run(ep_dir, cfg)
         elif stage == "clips":
-            from stages import clips as clips_stage
-            clips_stage.run_from_scene_plan(ep_dir, cfg)
+            if args.renderer == "legacy":
+                clips.run(ep_dir, cfg, force=args.force)
+            else:
+                from stages import clips as clips_stage
+                clips_stage.run_from_scene_plan(ep_dir, cfg)
         elif stage == "beats":
             beats.run(ep_dir, cfg)
         elif stage == "wordalign":
             wordalign.run(ep_dir, cfg)
         elif stage == "anim":
             anim.run(ep_dir, cfg)
-        elif stage == "clips":
-            clips.run(ep_dir, cfg, force=args.force)
         elif stage == "render":
             seg_paths = render.run(ep_dir, cfg, force=args.force)
         elif stage == "direct":

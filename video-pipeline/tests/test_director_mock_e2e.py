@@ -50,7 +50,8 @@ def _validate_against_schema(plan):
     with open(os.path.join(os.path.dirname(__file__), os.pardir,
                            "scene_plan_schema.json"), encoding="utf-8") as f:
         schema = json.load(f)
-    assert plan["version"] == schema["properties"]["version"]["const"] == 1
+    assert plan["version"] == 1
+    assert schema["properties"]["version"]["enum"] == [1, 2]
     assert plan["episode"]
     slide_enum = set(schema["properties"]["scenes"]["items"]
                      ["properties"]["slide"]["enum"])

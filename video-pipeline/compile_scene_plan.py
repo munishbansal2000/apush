@@ -35,7 +35,7 @@ from slideforge import overlays as _overlays  # noqa: E402
 from slideforge import routes as _routes  # noqa: E402
 from clipscene import ClipScene  # noqa: E402
 
-SCHEMA_VERSION = 1
+SUPPORTED_VERSIONS = (1, 2)
 IMAGE_EXTS = (".jpg", ".jpeg", ".png", ".webp", ".bmp", ".gif")
 
 
@@ -120,10 +120,10 @@ def _load_plan(plan_path):
         raise PlanError(f"cannot read scene plan {plan_path!r}: {e}")
     if not isinstance(plan, dict):
         raise PlanError(f"scene plan {plan_path!r} must be a JSON object")
-    if plan.get("version") != SCHEMA_VERSION:
+    if plan.get("version") not in SUPPORTED_VERSIONS:
         raise PlanError(
             f"unsupported scene plan version {plan.get('version')!r} "
-            f"(compiler supports v{SCHEMA_VERSION})")
+            f"(compiler supports v{SUPPORTED_VERSIONS})")
     if not plan.get("episode"):
         raise PlanError("scene plan is missing 'episode'")
     scenes = plan.get("scenes")
@@ -162,6 +162,42 @@ def _validate_turns(plan):
         raise PlanError(f"turns not covered by any scene: {missing}")
 
 
+def _validate_timeline(plan, fps=30):
+    """v2: scenes must partition the absolute timeline contiguously.
+
+    Scene 0 starts at 0.0; each scene starts where the previous one
+    ended. A gap or overlap >= 1 frame is silent A/V desync, so it
+    fails fast (sub-frame float dust is tolerated). Sub-turn splits
+    at topic boundaries are the point of v2 (see
+    docs/director-prompt-v6.txt).
+    """
+    frame = 1.0 / fps
+    expected = 0.0
+    for i, spec in enumerate(plan["scenes"]):
+        sid = spec.get("id") if isinstance(spec, dict) else f"scene-{i:02d}"
+        start = spec.get("start_sec") if isinstance(spec, dict) else None
+        if (not isinstance(start, (int, float))
+                or isinstance(start, bool) or start < 0):
+            raise PlanError(
+                f"scene '{sid}': v2 needs 'start_sec' >= 0, got {start!r}")
+        drift = start - expected
+        if abs(drift) >= frame:
+            kind = "gap" if drift > 0 else "overlap"
+            raise PlanError(
+                f"scene '{sid}': timeline {kind} {abs(drift):.3f}s "
+                f"(starts at {start:.3f}s, previous ended at "
+                f"{expected:.3f}s)")
+        expected = start + float(spec["duration_sec"])
+
+
+def _validate_layout(plan):
+    """Version-aware layout gate: v1 partitions turns, v2 partitions time."""
+    if plan.get("version") == 2:
+        _validate_timeline(plan)
+    else:
+        _validate_turns(plan)
+
+
 def _validate_against_timings(plan, timings_path, tol=0.02):
     """Refuse to render from estimates when measured TTS timings exist.
 
@@ -193,6 +229,17 @@ def _validate_against_timings(plan, timings_path, tol=0.02):
     gap = float(timings.get("gap", 0))
     offset = float(timings.get("offset", 0))
     tail = float(timings.get("tail", 0))
+    if plan.get("version") == 2:
+        # v2 scenes carry absolute times from measured word times -
+        # no turn ranges to cross-check per scene. The timeline must
+        # still cover the whole mix.
+        want = float(timings.get("computed_total", 0))
+        got = sum(float(s["duration_sec"]) for s in plan["scenes"])
+        if abs(got - want) > tol:
+            raise PlanError(
+                f"v2 plan total {got:.3f}s != measured mix total "
+                f"{want:.3f}s; the timeline does not cover the audio")
+        return
     last = len(plan["scenes"]) - 1
     for i, spec in enumerate(plan["scenes"]):
         sid = spec.get("id", "?")
@@ -491,7 +538,7 @@ def _build_movie(plan, assets_dir, width, height, fps):
     audio-truth the plan author wrote, used for frame boundaries so cuts
     land exactly on audio boundaries.
     """
-    _validate_turns(plan)
+    _validate_layout(plan)
     orig_durations = [float(s["duration_sec"]) for s in plan["scenes"]]
     orig_total = sum(orig_durations)
     plan = _compensate_transitions(plan)
@@ -651,7 +698,7 @@ def render_scenes_chunked(plan_path, assets_dir, out_dir, width=1280,
         print("warning: no --timings given; rendering from plan durations "
               "(estimates leak sync — pass work/timings.json)",
               file=sys.stderr)
-    _validate_turns(plan)
+    _validate_layout(plan)
     orig_durations = [float(s["duration_sec"]) for s in plan["scenes"]]
     bounds = _frame_boundaries(orig_durations, fps)
     total_frames = bounds[-1]

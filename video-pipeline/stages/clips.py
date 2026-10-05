@@ -376,15 +376,26 @@ def run(ep_dir, cfg, force=False):
     return os.path.join(ep_dir, "clips")
 
 
-def run_from_scene_plan(ep_dir, cfg):
+def run_from_scene_plan(ep_dir, cfg, _post=None):
     """Generate clips for scene-plan scenes carrying anim_prompt.
 
-    Reads <episode>/work/scene_plan.json, renders each scene's anim_prompt
-    via the configured provider, writes to <episode>/clips/<scene_id>.mp4.
-    Scenes without anim_prompt are skipped. VidSlide in the scene plan
-    references clips/<scene_id>.mp4.
+    Reads <episode>/work/scene_plan.json (falling back to the reviewed
+    episode-root plan). For each vidslide scene with anim_prompt:
+
+    1. ltx_clips renders (or reuses) a fingerprinted raw master
+       clips/<id>-<fp>.mp4 via the local LTX Desktop backend;
+    2. conform_clip shapes the master to the scene's exact frame count
+       -> clips/<id>.mp4, the plan-facing name the vidslide src points at.
+
+    Scenes without anim_prompt are skipped. Fingerprinting makes this
+    incremental: unchanged jobs are never re-rendered, changed jobs get
+    new masters while old ones stay on disk for other tries.
+
+    Provider: beats.json clip_generation.provider must be "ltx-desktop"
+    (the local 5090 backend). "none" (default) skips generation: scenes
+    whose clips/<id>.mp4 already exists still compile; missing ones fail
+    at compile with "clip not found" -- there is no silent fallback.
     """
-    import glob
     work = os.path.join(ep_dir, "work")
     plan_path = os.path.join(work, "scene_plan.json")
     if not os.path.exists(plan_path):
@@ -400,26 +411,46 @@ def run_from_scene_plan(ep_dir, cfg):
     provider = clip_cfg.get("provider", "none")
     if provider == "none":
         print("clips: provider=none, skipping generation "
-              "(VidSlide falls back to Ken Burns)", flush=True)
+              "(existing clips/<id>.mp4 files are used as-is; "
+              "missing ones fail at compile)", flush=True)
         return
+    if provider != "ltx-desktop":
+        raise RuntimeError(
+            f"[clips] scene-plan clips support provider 'ltx-desktop' "
+            f"only (local LTX backend); got {provider!r}")
 
-    clips_dir = os.path.join(ep_dir, "clips")
-    os.makedirs(clips_dir, exist_ok=True)
-    for s in plan.get("scenes", []):
-        prompt = s.get("anim_prompt")
-        if not prompt:
-            continue
-        out = os.path.join(clips_dir, f"{s['id']}.mp4")
-        dur = s.get("duration_sec", 10)
-        # Cap at 15s per LTX rule
-        dur = min(dur, 15)
-        if os.path.exists(out):
-            print(f"clips: {s['id']} exists, skipping", flush=True)
-            continue
-        print(f"clips: rendering {s['id']} ({dur}s) via {provider}",
+    sys.path.insert(0, os.path.dirname(_HERE))
+    import ltx_clips
+    import conform_clip
+
+    jobs = [s for s in plan.get("scenes", [])
+            if s.get("slide") == "vidslide" and s.get("anim_prompt")]
+    if not jobs:
+        print("clips: no vidslide+anim_prompt scenes, skipping",
               flush=True)
-        # Delegate to the provider (ltx/meta-ui/ltx-desktop)
-        # Uses the same provider routing as run()
-        _render_clip(provider, prompt, out, dur, clip_cfg,
-                     seed=s.get("seed", 42))
+        return
+    post = _post or ltx_clips._post
+    masters = ltx_clips.render_ep_dir(ep_dir, _post=post)
+    clips_dir = os.path.join(ep_dir, "clips")
+    for s in jobs:
+        sid = s["id"]
+        frames = int(round(float(s["duration_sec"]) * 30))
+        out = os.path.join(clips_dir, f"{sid}.mp4")
+        master = masters[sid]
+        base_rel = s.get("base_image")
+        params = dict(ltx_clips.DEFAULTS)
+        params.update(s.get("ltx") or {})
+        fp = ltx_clips.fingerprint(
+            s["anim_prompt"],
+            ltx_clips.sha1_file(os.path.join(ep_dir, base_rel))
+            if base_rel else None, params)
+        if masters.get(sid) is None:
+            raise RuntimeError(f"[clips] no master rendered for {sid}")
+        if ltx_clips.conformed_fresh(clips_dir, sid, fp, frames):
+            print(f"clips: {sid} conformed clip up to date, skipping",
+                  flush=True)
+            continue
+        print(f"clips: conforming {sid} master -> {frames}f", flush=True)
+        conform_clip.conform(master, frames, out)
+        ltx_clips.note_conformed(clips_dir, sid, fp, frames, out)
     print(f"clips: done -> {clips_dir}", flush=True)

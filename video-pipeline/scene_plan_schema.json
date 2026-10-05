@@ -227,7 +227,7 @@
       "type": "string"
      },
      "turns": {
-      "description": "0-based inclusive [first, last] script-turn indices this scene covers. Scenes must partition all turns contiguously (no gaps, no overlaps); the compiler enforces it.",
+      "description": "v1: 0-based inclusive [first, last] script-turn indices this scene covers. Scenes must partition all turns contiguously (no gaps, no overlaps); the compiler enforces it.",
       "items": {
        "minimum": 0,
        "type": "integer"
@@ -236,16 +236,28 @@
       "minItems": 2,
       "type": "array"
      },
+     "start_sec": {
+      "description": "v2: absolute seconds from episode start where this scene begins. Scenes must partition the timeline contiguously from 0.0 (no gaps/overlaps >= 1 frame); the compiler enforces it. Allows sub-turn splits at topic boundaries (see docs/director-prompt-v6.txt).",
+      "minimum": 0,
+      "type": "number"
+     },
      "anim_prompt": {
       "type": "string",
       "description": "LTX text-to-video prompt for atmospheric background clip. Only for scenes where no historic image fits and motion would help. Max 15s. Never for factual content (maps, portraits, documents)."
+     },
+     "base_image": {
+      "type": "string",
+      "description": "vidslide only: repo-relative still to ground LTX image-to-video (the layout master; LTX adds motion, not structure). Omit for pure text-to-video atmosphere."
+     },
+     "ltx": {
+      "type": "object",
+      "description": "vidslide only: LTX overrides {model, resolution, duration, fps, seed, cameraMotion, negative}. Defaults: fast/1080p/5s/24fps/seed 42. Part of the clip fingerprint (ltx_clips.py)."
      }
     },
     "required": [
      "id",
      "slide",
-     "duration_sec",
-     "turns"
+     "duration_sec"
     ],
     "type": "object"
    },
@@ -253,8 +265,27 @@
    "type": "array"
   },
   "version": {
-   "const": 1,
+   "enum": [1, 2],
    "type": "integer"
+  }
+ },
+ "if": {
+  "properties": {
+   "version": {"const": 2}
+  }
+ },
+ "then": {
+  "properties": {
+   "scenes": {
+    "items": {"required": ["id", "slide", "duration_sec", "start_sec"]}
+   }
+  }
+ },
+ "else": {
+  "properties": {
+   "scenes": {
+    "items": {"required": ["id", "slide", "duration_sec", "turns"]}
+   }
   }
  },
  "required": [
