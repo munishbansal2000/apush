@@ -1,1 +1,382 @@
-{"episode":"u1-e1","notes":"Director's cut for U1-E1 'Native Societies' (script v12, Maya+Marcus). 17 scenes. Each scene carries a 'turns' [start, end] partition of the 50 TTS segments (t00..t49, including the two 3s self-test silences) — run refit_durations.py against the rendered turns dir to replace the estimated duration_sec values with measured sums (the mix is a straight concat, so this is exact). Visual grammar: KeywordPops on the three region names; CausalChainSlide for the environment→food→movement chain (the old pipeline's exam-move chain beat); CompareSlide for Iroquois vs Pueblo; StatSlide for the 20,000; QuoteSlide for the Cronon verdict and the closing tagline. No blank backgrounds. Eyes-closed-safe.","scenes":[{"duration_sec":25,"id":"scene-01","params":{"bg":{"path":"images/mississippi-river.jpg"},"subtitle":"Episode 1 — the interview. Maya asks, Marcus answers.","title":"Native Societies"},"slide":"titleslide","trans_dur":0,"transition":"cut","turns":[0,0]},{"duration_sec":21,"id":"scene-02","params":{"bg":{"type":"textured"},"headline":"Two societies, side by side","sub":"What's different — and why. That's the exam question."},"slide":"displayheadline","trans_dur":0.5,"transition":"crossfade","turns":[1,2]},{"duration_sec":47,"id":"scene-03","overlays":[{"duration":2.2,"position":"left","start":4.0,"type":"keywordpop","word":"Southwest"},{"duration":2.2,"position":"right","start":16.0,"type":"keywordpop","word":"Plains"},{"duration":2.2,"position":"left","start":30.0,"type":"keywordpop","word":"Northeast"}],"params":{"bg":{"type":"textured"},"points":["**Southwest** — adobe villages, irrigation","**Plains** — bison, tipis, movement","**Northeast** — longhouses, rivers, corn"]},"slide":"displaypointsslide","trans_dur":0.5,"transition":"crossfade","turns":[3,4]},{"duration_sec":8,"id":"scene-04","params":{"caption":"The mistake the test wants you to make","image":"images/bison-herd.jpg","title":"Never one Native culture"},"slide":"imageslide","trans_dur":0.5,"transition":"crossfade","turns":[5,5]},{"duration_sec":21,"id":"scene-05","params":{"bg":{"type":"textured"},"nodes":[["Environment","writes the rules"],["Food","stay or move"],["Movement","how you live"]],"title":"THE EXAM MOVE"},"slide":"causalchain","trans_dur":0.5,"transition":"crossfade","turns":[6,7]},{"duration_sec":35,"id":"scene-06","params":{"caption":"Turquoise, copper, shell — hundreds of miles","image":"images/wampum-belt.jpg","title":"Connected by trade"},"slide":"imageslide","trans_dur":0.5,"transition":"crossfade","turns":[8,10]},{"duration_sec":21,"id":"scene-07","params":{"bg":{"dim":0.72,"path":"images/cahokia-monks-mound.jpg"},"label":"people in Cahokia around 1100 — right across the river from St. Louis","suffix":"","value":20000},"slide":"statslide","trans_dur":0.5,"transition":"crossfade","turns":[11,13]},{"duration_sec":32,"id":"scene-08","params":{"caption":"A hundred feet tall, basketful by basketful — it rivaled medieval London","image":"images/cahokia-monks-mound.jpg","title":"Monk's Mound"},"slide":"imageslide","trans_dur":0.5,"transition":"crossfade","turns":[14,16]},{"duration_sec":16,"id":"scene-09","params":{"bg":{"dim":0.72,"path":"images/corn-field.jpg"},"points":["**Teosinte** — a wild grass","**Thousands of years** — bred, not found","**No maize, no Cahokia**"]},"slide":"displaypointsslide","trans_dur":0.5,"transition":"crossfade","turns":[17,18]},{"duration_sec":38,"id":"scene-10","params":{"caption":"The mounds are still there — archaeology fills in the rest","image":"images/media-generation-mound-section-0-212e75b6-5f12-49c1-8a43-747285d295eb.webp","title":"How do we know?"},"slide":"imageslide","trans_dur":0.5,"transition":"crossfade","turns":[19,22]},{"duration_sec":60,"id":"scene-11","params":{"bg":{"type":"textured"},"left":{"head":"IROQUOIS","sections":[{"points":["Five nations, Great Law of Peace","Consensus council, matrilineal clans"],"sub":"Government"}]},"right":{"head":"PUEBLO","sections":[{"points":["Independent adobe towns","Trade, ceremony, the kiva"],"sub":"Government"}]},"title":"Two governments"},"slide":"compareslide","trans_dur":0.6,"transition":"crossfade","turns":[23,26]},{"duration_sec":20,"id":"scene-12","params":{"caption":"Some historians say the confederacy shaped federalism — others say overstated","image":"images/longhouse.jpg","title":"Did it shape America?"},"slide":"imageslide","trans_dur":0.5,"transition":"crossfade","turns":[27,28]},{"duration_sec":57,"id":"scene-13","params":{"bg":{"type":"textured"},"byline":"William Cronon · Changes in the Land","quote":"What Europeans called wilderness was a landscape people had been working for centuries."},"slide":"quoteslide","trans_dur":0.6,"transition":"crossfade","turns":[29,30]},{"duration_sec":20,"id":"scene-14","overlays":[{"duration":8.0,"start":6.0,"text":"If it shows up as an essay, you know which side the evidence is on","type":"caption"}],"params":{"caption":"Pristine wilderness — or a land people engineered?","image":"images/prairie-burn.jpg","title":"The debate to remember"},"slide":"imageslide","trans_dur":0.5,"transition":"crossfade","turns":[31,32]},{"duration_sec":35,"id":"scene-15","params":{"banner":"RECAP","bg":{"type":"textured"},"steps":["**Environment wrote the rules** — Southwest farms, Plains hunts, Northeast does both.","**Iroquois vs Pueblo** — confederacy against independent towns.","**Pristine wilderness?** — False. They cleared it and planted it."],"title":"Three boxes — check them off"},"slide":"stepsslide","trans_dur":0.6,"transition":"crossfade","turns":[33,41]},{"duration_sec":30,"id":"scene-16","params":{"bg":{"type":"textured"},"headline":"Two questions, AP-shaped","sub":"Say your answer before Maya gives it"},"slide":"displayheadline","trans_dur":0,"transition":"cut","turns":[42,47]},{"duration_sec":10,"id":"scene-17","params":{"bg":{"type":"textured"},"byline":"Episode 1 · Next: why Europe finally sailed west","quote":"For gold, for God, and for... Glory."},"slide":"quoteslide","trans_dur":0.8,"transition":"dip","turns":[48,49]}],"version":1}
+{
+ "episode": "u1-e1",
+ "notes": "Director's cut for U1-E1 'Native Societies' (script v13, Maya+Marcus). 17 scenes. Each scene carries a 'turns' [start, end] partition of the 58 TTS segments (t00..t57, including the two 3s self-test silences) — run refit_durations.py against the rendered turns dir to replace the estimated duration_sec values with measured sums (the mix is a straight concat, so this is exact). Visual grammar: KeywordPops on the three region names; CausalChainSlide for the environment→food→movement chain (the old pipeline's exam-move chain beat); CompareSlide for Iroquois vs Pueblo; StatSlide for the 20,000; QuoteSlide for the Cronon verdict and the closing tagline. No blank backgrounds. Eyes-closed-safe.",
+ "scenes": [
+  {
+   "duration_sec": 19,
+   "id": "scene-01",
+   "params": {
+    "bg": {
+     "path": "images/mississippi-river.jpg"
+    },
+    "subtitle": "Episode 1 — the interview. Maya asks, Marcus answers.",
+    "title": "Native Societies"
+   },
+   "slide": "titleslide",
+   "trans_dur": 0,
+   "transition": "cut",
+   "turns": [
+    0,
+    0
+   ]
+  },
+  {
+   "duration_sec": 20,
+   "id": "scene-02",
+   "params": {
+    "bg": {
+     "type": "textured"
+    },
+    "headline": "Two societies, side by side",
+    "sub": "What's different — and why."
+   },
+   "slide": "displayheadline",
+   "trans_dur": 0.5,
+   "transition": "crossfade",
+   "turns": [
+    1,
+    2
+   ]
+  },
+  {
+   "duration_sec": 52,
+   "id": "scene-03",
+   "overlays": [
+    {
+     "duration": 2.2,
+     "position": "left",
+     "start": 3.8,
+     "type": "keywordpop",
+     "word": "Southwest"
+    },
+    {
+     "duration": 2.2,
+     "position": "right",
+     "start": 24.2,
+     "type": "keywordpop",
+     "word": "Plains"
+    },
+    {
+     "duration": 2.2,
+     "position": "left",
+     "start": 40.2,
+     "type": "keywordpop",
+     "word": "Northeast"
+    }
+   ],
+   "params": {
+    "bg": {
+     "type": "textured"
+    },
+    "points": [
+     "**Southwest** — adobe villages, irrigation",
+     "**Plains** — bison, tipis, movement",
+     "**Northeast** — longhouses, rivers, corn"
+    ]
+   },
+   "slide": "displaypointsslide",
+   "trans_dur": 0.5,
+   "transition": "crossfade",
+   "turns": [
+    3,
+    8
+   ]
+  },
+  {
+   "duration_sec": 7,
+   "id": "scene-04",
+   "params": {
+    "caption": "The mistake the test wants you to make",
+    "image": "images/bison-herd.jpg",
+    "title": "Never one Native culture"
+   },
+   "slide": "imageslide",
+   "trans_dur": 0.5,
+   "transition": "crossfade",
+   "turns": [
+    9,
+    9
+   ]
+  },
+  {
+   "duration_sec": 20,
+   "id": "scene-05",
+   "params": {
+    "bg": {
+     "type": "textured"
+    },
+    "nodes": [
+     [
+      "Environment",
+      "writes the rules"
+     ],
+     [
+      "Food",
+      "stay or move"
+     ],
+     [
+      "Movement",
+      "how you live"
+     ]
+    ],
+    "title": "THE EXAM MOVE"
+   },
+   "slide": "causalchain",
+   "trans_dur": 0.5,
+   "transition": "crossfade",
+   "turns": [
+    10,
+    11
+   ]
+  },
+  {
+   "duration_sec": 30,
+   "id": "scene-06",
+   "params": {
+    "caption": "Turquoise, copper, shell — hundreds of miles",
+    "image": "images/wampum-belt.jpg",
+    "title": "Connected by trade"
+   },
+   "slide": "imageslide",
+   "trans_dur": 0.5,
+   "transition": "crossfade",
+   "turns": [
+    12,
+    14
+   ]
+  },
+  {
+   "duration_sec": 20,
+   "id": "scene-07",
+   "params": {
+    "bg": {
+     "dim": 0.72,
+     "path": "images/cahokia-monks-mound.jpg"
+    },
+    "label": "people in Cahokia around 1100 — right across the river from St. Louis",
+    "suffix": "",
+    "value": 20000
+   },
+   "slide": "statslide",
+   "trans_dur": 0.5,
+   "transition": "crossfade",
+   "turns": [
+    15,
+    17
+   ]
+  },
+  {
+   "duration_sec": 32,
+   "id": "scene-08",
+   "params": {
+    "caption": "A hundred feet tall, basketful by basketful — it rivaled medieval London",
+    "image": "images/cahokia-monks-mound.jpg",
+    "title": "Monk's Mound"
+   },
+   "slide": "imageslide",
+   "trans_dur": 0.5,
+   "transition": "crossfade",
+   "turns": [
+    18,
+    20
+   ]
+  },
+  {
+   "duration_sec": 16,
+   "id": "scene-09",
+   "params": {
+    "bg": {
+     "dim": 0.72,
+     "path": "images/corn-field.jpg"
+    },
+    "points": [
+     "**Teosinte** — a wild grass",
+     "**Thousands of years** — bred, not found",
+     "**No maize, no Cahokia**"
+    ]
+   },
+   "slide": "displaypointsslide",
+   "trans_dur": 0.5,
+   "transition": "crossfade",
+   "turns": [
+    21,
+    22
+   ]
+  },
+  {
+   "duration_sec": 38,
+   "id": "scene-10",
+   "params": {
+    "caption": "The mounds are still there — archaeology fills in the rest",
+    "image": "images/media-generation-mound-section-0-212e75b6-5f12-49c1-8a43-747285d295eb.webp",
+    "title": "How do we know?"
+   },
+   "slide": "imageslide",
+   "trans_dur": 0.5,
+   "transition": "crossfade",
+   "turns": [
+    23,
+    26
+   ]
+  },
+  {
+   "duration_sec": 63,
+   "id": "scene-11",
+   "params": {
+    "bg": {
+     "type": "textured"
+    },
+    "left": {
+     "head": "IROQUOIS",
+     "sections": [
+      {
+       "points": [
+        "Five nations, Great Law of Peace",
+        "Consensus council, matrilineal clans"
+       ],
+       "sub": "Government"
+      }
+     ]
+    },
+    "right": {
+     "head": "PUEBLO",
+     "sections": [
+      {
+       "points": [
+        "Independent adobe towns",
+        "Trade, ceremony, the kiva"
+       ],
+       "sub": "Government"
+      }
+     ]
+    },
+    "title": "Two governments"
+   },
+   "slide": "compareslide",
+   "trans_dur": 0.6,
+   "transition": "crossfade",
+   "turns": [
+    27,
+    30
+   ]
+  },
+  {
+   "duration_sec": 19,
+   "id": "scene-12",
+   "params": {
+    "caption": "Some historians say the confederacy shaped federalism — others say overstated",
+    "image": "images/longhouse.jpg",
+    "title": "Did it shape America?"
+   },
+   "slide": "imageslide",
+   "trans_dur": 0.5,
+   "transition": "crossfade",
+   "turns": [
+    31,
+    32
+   ]
+  },
+  {
+   "duration_sec": 65,
+   "id": "scene-13",
+   "params": {
+    "bg": {
+     "type": "textured"
+    },
+    "byline": "William Cronon · Changes in the Land",
+    "quote": "What Europeans called wilderness was a landscape people had been working for centuries."
+   },
+   "slide": "quoteslide",
+   "trans_dur": 0.6,
+   "transition": "crossfade",
+   "turns": [
+    33,
+    38
+   ]
+  },
+  {
+   "duration_sec": 16,
+   "id": "scene-14",
+   "overlays": [
+    {
+     "duration": 8.0,
+     "start": 6.0,
+     "text": "The evidence is on one side.",
+     "type": "caption"
+    }
+   ],
+   "params": {
+    "caption": "Pristine wilderness — or a land people engineered?",
+    "image": "images/prairie-burn.jpg",
+    "title": "The debate to remember"
+   },
+   "slide": "imageslide",
+   "trans_dur": 0.5,
+   "transition": "crossfade",
+   "turns": [
+    39,
+    40
+   ]
+  },
+  {
+   "duration_sec": 35,
+   "id": "scene-15",
+   "params": {
+    "banner": "RECAP",
+    "bg": {
+     "type": "textured"
+    },
+    "steps": [
+     "**Environment wrote the rules** — Southwest farms, Plains hunts, Northeast does both.",
+     "**Iroquois vs Pueblo** — confederacy against independent towns.",
+     "**Pristine wilderness?** — False. They cleared it and planted it."
+    ],
+    "title": "Three boxes — check them off"
+   },
+   "slide": "stepsslide",
+   "trans_dur": 0.6,
+   "transition": "crossfade",
+   "turns": [
+    41,
+    49
+   ]
+  },
+  {
+   "duration_sec": 24,
+   "id": "scene-16",
+   "params": {
+    "bg": {
+     "type": "textured"
+    },
+    "headline": "Two questions, AP-shaped",
+    "sub": "Say your answer before Maya gives it"
+   },
+   "slide": "displayheadline",
+   "trans_dur": 0,
+   "transition": "cut",
+   "turns": [
+    50,
+    55
+   ]
+  },
+  {
+   "duration_sec": 10,
+   "id": "scene-17",
+   "params": {
+    "bg": {
+     "type": "textured"
+    },
+    "byline": "Episode 1 · Next: why Europe finally sailed west",
+    "quote": "For gold, for God, and for— mostly gold."
+   },
+   "slide": "quoteslide",
+   "trans_dur": 0.8,
+   "transition": "dip",
+   "turns": [
+    56,
+    57
+   ]
+  }
+ ],
+ "version": 1
+}

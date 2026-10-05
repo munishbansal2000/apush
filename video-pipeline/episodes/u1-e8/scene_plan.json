@@ -1,1 +1,370 @@
-{"episode":"u1-e8","notes":"Director's cut for U1-E8 'Pueblo Revolt' (script v3, Maya+Marcus). 15 scenes. Each scene carries a 'turns' [start, end] partition of the 58 TTS turn files (t00..t57) — run refit_durations.py against the rendered turns dir to replace the estimated duration_sec values with measured sums (the mix is a straight concat, so this is exact). Duration estimates: round(words/2.6 + 3 per silence segment + 1.5). Visual grammar: KeywordPops on spoken key terms; StatSlide for the ~400 Spaniards killed; HighlightSlide for Popé's purge and the chastened-empire paradox; StepsSlide recap; displayheadline Q&A; QuoteSlide close. No blank backgrounds. Eyes-closed-safe.","scenes":[{"duration_sec":32,"id":"scene-01","params":{"bg":{"path":"images/original-u1-spanish-mission-01.jpg"},"subtitle":"They rose — Episode 8","title":"The Pueblo Revolt"},"slide":"titleslide","trans_dur":0,"transition":"cut","turns":[0,0]},{"duration_sec":39,"id":"scene-02","overlays":[{"duration":2.2,"position":"left","start":2.0,"type":"keywordpop","word":"kivas"}],"params":{"bg":{"dim":0.72,"path":"images/original-u1-spanish-mission-01.jpg"},"points":["**Franciscans** — convert or burn: kivas banned, masks burned","**Forced labor** — work for colonists, farmland squeezed","**Drought + Apache raids** — the empire can't protect"]},"slide":"displaypointsslide","trans_dur":0.5,"transition":"crossfade","turns":[1,4]},{"duration_sec":41,"id":"scene-03","overlays":[{"duration":6.0,"start":24.0,"text":"The soldiers were away fighting Apaches — the governor couldn't afford a war at home","type":"caption"}],"params":{"caption":"47 medicine men arrested for 'sorcery' — three hanged; the pueblos march on Santa Fe and Treviño folds","image":"images/original-ctx-u1-05.jpg","title":"1675: the crackdown"},"slide":"imageslide","trans_dur":0.5,"transition":"crossfade","turns":[5,9]},{"duration_sec":38,"id":"scene-04","overlays":[{"duration":3.0,"position":"right","start":20.0,"type":"keywordpop","word":"one knot per day"}],"params":{"bg":{"type":"textured"},"points":["**Taos** — Popé plans from the far north","**Six languages** — pueblos that never acted together","**Knot calendar** — one knot per day, untie each morning"]},"slide":"displaypointsslide","trans_dur":0.5,"transition":"crossfade","turns":[10,13]},{"duration_sec":35,"id":"scene-05","overlays":[{"duration":3.0,"position":"left","start":10.0,"type":"keywordpop","word":"August 10, 1680"}],"params":{"bg":{"type":"textured"},"points":["**The crew** — two runners caught on the road","**The date moves up** — August 10, 1680","**400 miles** — Taos to the Hopi villages, and it worked"]},"slide":"displaypointsslide","trans_dur":0.5,"transition":"crossfade","turns":[14,16]},{"duration_sec":38,"id":"scene-06","overlays":[{"duration":8.0,"start":16.0,"text":"They besieged Santa Fe, cut off its water — Governor Otermín journaled the whole disaster","type":"caption"}],"params":{"bg":{"type":"textured"},"label":"Spaniards killed in the rising — including 21 of New Mexico's 33 Franciscan priests","value":400},"slide":"statslide","trans_dur":0.6,"transition":"crossfade","turns":[17,19]},{"duration_sec":8,"id":"scene-07","params":{"bg":{"type":"textured"},"headline":"Box one: the knotted cords — checked","sub":"The calendar that synced an uprising"},"slide":"displayheadline","trans_dur":0.5,"transition":"crossfade","turns":[20,21]},{"duration_sec":45,"id":"scene-08","overlays":[{"duration":2.2,"position":"left","start":4.0,"type":"keywordpop","word":"Tewa"},{"duration":6.0,"start":30.0,"text":"We're hearing this through Spanish pens","type":"caption"}],"params":{"bg":{"dim":0.72,"path":"images/original-u1-native-09.jpg"},"points":["**Not a chief** — pueblos had no single ruler, each town ran itself","**A religious leader** — a medicine man, authority from a vision","**The vision** — three spirits, glowing eyes, purge the Spanish"]},"slide":"displaypointsslide","trans_dur":0.5,"transition":"crossfade","turns":[22,25]},{"duration_sec":30,"id":"scene-09","params":{"bg":{"type":"textured"},"text":"Churches, crosses, anything Spanish: destroyed. Converts scrubbed off baptism with yucca branches; Spanish names and crops ripped out. \"The God of the Christians is dead,\" he said. \"He was made of rotten wood.\""},"slide":"highlightslide","trans_dur":0.5,"transition":"crossfade","turns":[26,28]},{"duration_sec":31,"id":"scene-10","params":{"bg":{"type":"textured"},"headline":"The liberator becomes the guy nobody wants in charge","sub":"Next up: 1692"},"slide":"displayheadline","trans_dur":0.5,"transition":"crossfade","turns":[29,31]},{"duration_sec":35,"id":"scene-11","overlays":[{"duration":2.2,"position":"left","start":8.0,"type":"keywordpop","word":"1692"},{"duration":2.2,"position":"right","start":20.0,"type":"keywordpop","word":"1693"}],"params":{"bg":{"dim":0.72,"path":"images/original-u1-spanish-mission-01.jpg"},"points":["**1692** — Vargas walks in, negotiates, bloodless","**1693** — back with hundreds, retakes Santa Fe by force","**~70 executed** — it wasn't clean"]},"slide":"displaypointsslide","trans_dur":0.5,"transition":"crossfade","turns":[32,35]},{"duration_sec":51,"id":"scene-12","params":{"bg":{"type":"textured"},"text":"The flag went back up. The old Spain didn't. Land grants for the pueblos, a defender to argue Native cases in Spanish courts, and the old ceremonies survived underground — still practiced today. They won by losing."},"slide":"highlightslide","trans_dur":0.5,"transition":"crossfade","turns":[36,39]},{"duration_sec":57,"id":"scene-13","params":{"banner":"RECAP","bg":{"type":"textured"},"steps":["**The knotted cords** — one knot per day; runners synced dozens of pueblos across hundreds of miles for August 10, 1680.","**Popé** — Tewa religious leader from Ohkay Owingeh; the vision of three spirits; won the revolt, lost the pueblos.","**1692** — negotiated return, the fighty one in 1693; the chastened empire let the old ways survive."],"title":"Three boxes — check them off"},"slide":"stepsslide","trans_dur":0.6,"transition":"crossfade","turns":[40,48]},{"duration_sec":54,"id":"scene-14","params":{"bg":{"type":"textured"},"headline":"Two questions, AP-shaped","sub":"Say your answer before Maya gives it — then check your three boxes"},"slide":"displayheadline","trans_dur":0,"transition":"cut","turns":[49,54]},{"duration_sec":13,"id":"scene-15","params":{"bg":{"type":"textured"},"byline":"Episode 8 · Next: the Unit 1 cram session, the whole unit in one episode","quote":"They won by losing."},"slide":"quoteslide","trans_dur":0.8,"transition":"dip","turns":[55,57]}],"version":1}
+{
+ "episode": "u1-e8",
+ "notes": "Director's cut for U1-E8 'Pueblo Revolt' (script v4, Maya+Marcus). 15 scenes. Each scene carries a 'turns' [start, end] partition of the 58 TTS turn files (t00..t57) — run refit_durations.py against the rendered turns dir to replace the estimated duration_sec values with measured sums (the mix is a straight concat, so this is exact). Duration estimates: round(words/2.6 + 3 per silence segment + 1.5). Visual grammar: KeywordPops on spoken key terms; StatSlide for the ~400 Spaniards killed; HighlightSlide for Popé's purge and the chastened-empire paradox; StepsSlide recap; displayheadline Q&A; QuoteSlide close. No blank backgrounds. Eyes-closed-safe.",
+ "scenes": [
+  {
+   "duration_sec": 32,
+   "id": "scene-01",
+   "params": {
+    "bg": {
+     "path": "images/original-u1-spanish-mission-01.jpg"
+    },
+    "subtitle": "They rose — Episode 8",
+    "title": "The Pueblo Revolt"
+   },
+   "slide": "titleslide",
+   "trans_dur": 0,
+   "transition": "cut",
+   "turns": [
+    0,
+    0
+   ]
+  },
+  {
+   "duration_sec": 39,
+   "id": "scene-02",
+   "overlays": [
+    {
+     "duration": 2.2,
+     "position": "left",
+     "start": 2.0,
+     "type": "keywordpop",
+     "word": "kivas"
+    }
+   ],
+   "params": {
+    "bg": {
+     "dim": 0.72,
+     "path": "images/original-u1-spanish-mission-01.jpg"
+    },
+    "points": [
+     "**Franciscans** — convert or burn: kivas banned, masks burned",
+     "**Forced labor** — work for colonists, farmland squeezed",
+     "**Drought + Apache raids** — the empire can't protect"
+    ]
+   },
+   "slide": "displaypointsslide",
+   "trans_dur": 0.5,
+   "transition": "crossfade",
+   "turns": [
+    1,
+    4
+   ]
+  },
+  {
+   "duration_sec": 41,
+   "id": "scene-03",
+   "overlays": [
+    {
+     "duration": 6.0,
+     "start": 24.0,
+     "text": "The soldiers were away fighting Apaches — the governor couldn't afford a war at home",
+     "type": "caption"
+    }
+   ],
+   "params": {
+    "caption": "47 medicine men arrested for 'sorcery' — three hanged; the pueblos march on Santa Fe and Treviño folds",
+    "image": "images/original-ctx-u1-05.jpg",
+    "title": "1675: the crackdown"
+   },
+   "slide": "imageslide",
+   "trans_dur": 0.5,
+   "transition": "crossfade",
+   "turns": [
+    5,
+    9
+   ]
+  },
+  {
+   "duration_sec": 38,
+   "id": "scene-04",
+   "overlays": [
+    {
+     "duration": 3.0,
+     "position": "right",
+     "start": 20.0,
+     "type": "keywordpop",
+     "word": "one knot per day"
+    }
+   ],
+   "params": {
+    "bg": {
+     "type": "textured"
+    },
+    "points": [
+     "**Taos** — Popé plans from the far north",
+     "**Six languages** — pueblos that never acted together",
+     "**Knot calendar** — one knot per day, untie each morning"
+    ]
+   },
+   "slide": "displaypointsslide",
+   "trans_dur": 0.5,
+   "transition": "crossfade",
+   "turns": [
+    10,
+    13
+   ]
+  },
+  {
+   "duration_sec": 35,
+   "id": "scene-05",
+   "overlays": [
+    {
+     "duration": 3.0,
+     "position": "left",
+     "start": 10.0,
+     "type": "keywordpop",
+     "word": "August 10, 1680"
+    }
+   ],
+   "params": {
+    "bg": {
+     "type": "textured"
+    },
+    "points": [
+     "**The crew** — two runners caught on the road",
+     "**The date moves up** — August 10, 1680",
+     "**400 miles** — Taos to the Hopi villages, and it worked"
+    ]
+   },
+   "slide": "displaypointsslide",
+   "trans_dur": 0.5,
+   "transition": "crossfade",
+   "turns": [
+    14,
+    16
+   ]
+  },
+  {
+   "duration_sec": 38,
+   "id": "scene-06",
+   "overlays": [
+    {
+     "duration": 8.0,
+     "start": 16.0,
+     "text": "They besieged Santa Fe, cut off its water — Governor Otermín journaled the whole disaster",
+     "type": "caption"
+    }
+   ],
+   "params": {
+    "bg": {
+     "type": "textured"
+    },
+    "label": "Spaniards killed in the rising — including 21 of New Mexico's 33 Franciscan priests",
+    "value": 400
+   },
+   "slide": "statslide",
+   "trans_dur": 0.6,
+   "transition": "crossfade",
+   "turns": [
+    17,
+    19
+   ]
+  },
+  {
+   "duration_sec": 8,
+   "id": "scene-07",
+   "params": {
+    "bg": {
+     "type": "textured"
+    },
+    "headline": "Box one: the knotted cords — checked",
+    "sub": "The calendar that synced an uprising"
+   },
+   "slide": "displayheadline",
+   "trans_dur": 0.5,
+   "transition": "crossfade",
+   "turns": [
+    20,
+    21
+   ]
+  },
+  {
+   "duration_sec": 45,
+   "id": "scene-08",
+   "overlays": [
+    {
+     "duration": 2.2,
+     "position": "left",
+     "start": 4.0,
+     "type": "keywordpop",
+     "word": "Tewa"
+    },
+    {
+     "duration": 6.0,
+     "start": 30.0,
+     "text": "We're hearing this through Spanish pens",
+     "type": "caption"
+    }
+   ],
+   "params": {
+    "bg": {
+     "dim": 0.72,
+     "path": "images/original-u1-native-09.jpg"
+    },
+    "points": [
+     "**Not a chief** — pueblos had no single ruler, each town ran itself",
+     "**A religious leader** — a medicine man, authority from a vision",
+     "**The vision** — three spirits, glowing eyes, purge the Spanish"
+    ]
+   },
+   "slide": "displaypointsslide",
+   "trans_dur": 0.5,
+   "transition": "crossfade",
+   "turns": [
+    22,
+    25
+   ]
+  },
+  {
+   "duration_sec": 30,
+   "id": "scene-09",
+   "params": {
+    "bg": {
+     "type": "textured"
+    },
+    "text": "Churches, crosses, anything Spanish: destroyed. Converts scrubbed off baptism with yucca branches; Spanish names and crops ripped out. \"The God of the Christians is dead,\" he said. \"He was made of rotten wood.\""
+   },
+   "slide": "highlightslide",
+   "trans_dur": 0.5,
+   "transition": "crossfade",
+   "turns": [
+    26,
+    28
+   ]
+  },
+  {
+   "duration_sec": 31,
+   "id": "scene-10",
+   "params": {
+    "bg": {
+     "type": "textured"
+    },
+    "headline": "The liberator becomes the guy nobody wants in charge",
+    "sub": "Next up: 1692"
+   },
+   "slide": "displayheadline",
+   "trans_dur": 0.5,
+   "transition": "crossfade",
+   "turns": [
+    29,
+    31
+   ]
+  },
+  {
+   "duration_sec": 35,
+   "id": "scene-11",
+   "overlays": [
+    {
+     "duration": 2.2,
+     "position": "left",
+     "start": 8.0,
+     "type": "keywordpop",
+     "word": "1692"
+    },
+    {
+     "duration": 2.2,
+     "position": "right",
+     "start": 20.0,
+     "type": "keywordpop",
+     "word": "1693"
+    }
+   ],
+   "params": {
+    "bg": {
+     "dim": 0.72,
+     "path": "images/original-u1-spanish-mission-01.jpg"
+    },
+    "points": [
+     "**1692** — Vargas walks in, negotiates, bloodless",
+     "**1693** — back with hundreds, retakes Santa Fe by force",
+     "**~70 executed** — it wasn't clean"
+    ]
+   },
+   "slide": "displaypointsslide",
+   "trans_dur": 0.5,
+   "transition": "crossfade",
+   "turns": [
+    32,
+    35
+   ]
+  },
+  {
+   "duration_sec": 51,
+   "id": "scene-12",
+   "params": {
+    "bg": {
+     "type": "textured"
+    },
+    "text": "The flag went back up. The old Spain didn't. Land grants for the pueblos, a defender to argue Native cases in Spanish courts, and the old ceremonies survived underground — still practiced today. They won by losing."
+   },
+   "slide": "highlightslide",
+   "trans_dur": 0.5,
+   "transition": "crossfade",
+   "turns": [
+    36,
+    39
+   ]
+  },
+  {
+   "duration_sec": 57,
+   "id": "scene-13",
+   "params": {
+    "banner": "RECAP",
+    "bg": {
+     "type": "textured"
+    },
+    "steps": [
+     "**The knotted cords** — one knot per day; runners synced dozens of pueblos across hundreds of miles for August 10, 1680.",
+     "**Popé** — Tewa religious leader from Ohkay Owingeh; the vision of three spirits; won the revolt, lost the pueblos.",
+     "**1692** — negotiated return, the fighty one in 1693; the chastened empire let the old ways survive."
+    ],
+    "title": "Three boxes — check them off"
+   },
+   "slide": "stepsslide",
+   "trans_dur": 0.6,
+   "transition": "crossfade",
+   "turns": [
+    40,
+    48
+   ]
+  },
+  {
+   "duration_sec": 54,
+   "id": "scene-14",
+   "params": {
+    "bg": {
+     "type": "textured"
+    },
+    "headline": "Two questions, AP-shaped",
+    "sub": "Say your answer before Maya gives it — then check your three boxes"
+   },
+   "slide": "displayheadline",
+   "trans_dur": 0,
+   "transition": "cut",
+   "turns": [
+    49,
+    54
+   ]
+  },
+  {
+   "duration_sec": 13,
+   "id": "scene-15",
+   "params": {
+    "bg": {
+     "type": "textured"
+    },
+    "byline": "Episode 8 · Next: the Unit 1 cram session, the whole unit in one episode",
+    "quote": "They won by losing."
+   },
+   "slide": "quoteslide",
+   "trans_dur": 0.8,
+   "transition": "dip",
+   "turns": [
+    55,
+    57
+   ]
+  }
+ ],
+ "version": 1
+}
