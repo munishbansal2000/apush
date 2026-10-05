@@ -391,21 +391,14 @@ class RevealSlide(Slide):
                      banner_y + banner_h + 4], fill=(0, 0, 0, 60))
         d.rectangle([banner_x0, banner_y, banner_x1, banner_y + banner_h],
                     fill=self.banner_fill + (255,))
-        # title text centered in banner (white Heimler type)
+        # title text centered in banner
         tsize = int(h * 0.07)
         font = get_font(tsize, bold=True)
         bbox = d.textbbox((0, 0), self.title, font=font)
         tw = bbox[2] - bbox[0]
-        while tw > (banner_x1 - banner_x0) * 0.94 and tsize > 12:
-            tsize -= 2
-            font = get_font(tsize, bold=True)
-            bbox = d.textbbox((0, 0), self.title, font=font)
-            tw = bbox[2] - bbox[0]
         tx = (banner_x0 + banner_x1 - tw) // 2
         ty = banner_y + (banner_h - (bbox[3] - bbox[1])) // 2 - bbox[1]
-        d.text((tx, ty), self.title, font=font, fill=(255, 255, 255, 255))
-        self._register_text("title", (tx, ty, tx + tw, ty + bbox[3]),
-                            (255, 255, 255), tsize)
+        d.text((tx, ty), self.title, font=font, fill=(0, 0, 0, 255))
 
         # Numbered points with typewriter effect
         y = banner_y + banner_h + int(h * 0.08)
@@ -430,37 +423,20 @@ class RevealSlide(Slide):
             num_w = num_bbox[2] - num_bbox[0]
             text_x = w * 0.12 + num_w + 20
 
-            # Typed text, wrapped: reveal runs across stable full-text
-            # lines (no reflow jitter), cursor on the last partial line.
-            max_w = w * 0.90 - text_x
-            full_lines = C.wrap_text(d, text, text_font, max_w)
-            asc, desc = text_font.getmetrics()
-            lh = asc + desc
-            left = n_chars
-            cy = y
-            cursor_done = True
-            for ln in full_lines:
-                frag = ln[:max(0, left)]
-                if frag:
-                    d.text((text_x, cy), frag, font=text_font,
-                           fill=(30, 30, 30, 255))
-                left -= len(ln) + 1  # +1: the wrapped space
-                if left < 0 and cursor_done:
-                    cursor_done = False
-                    if 0 < n_chars < len(text) and int(t * 2) % 2 == 0:
-                        cx = text_x + d.textlength(frag, font=text_font)
-                        d.rectangle([cx, cy + 8, cx + 4, cy + num_size],
-                                    fill=(30, 30, 30, 255))
-                cy += lh + int(h * 0.008)
-                if left < 0:
-                    break
-            self._register_text("point:%d" % i,
-                                (text_x, y, w * 0.90, cy),
-                                (30, 30, 30), num_size)
-            self._register_text("num:%d" % i,
-                                (w * 0.12, y, text_x - 20, y + lh),
-                                (150, 40, 40), num_size)
-            y = cy + int(h * 0.02)
+            # Typed text (with cursor if still typing)
+            visible = text[:n_chars]
+            d.text((text_x, y), visible, font=text_font, fill=(30, 30, 30, 255))
+            if 0 < n_chars < len(text):
+                # blinking cursor
+                if int(t * 2) % 2 == 0:
+                    cursor_x = text_x + d.textlength(visible, font=text_font)
+                    d.rectangle([cursor_x, y + 8, cursor_x + 4, y + num_size],
+                                fill=(30, 30, 30, 255))
+
+            # Measure height for next point
+            text_bbox = d.textbbox((0, 0), text, font=text_font)
+            line_h = text_bbox[3] - text_bbox[1] + int(h * 0.03)
+            y += line_h
 
             # Sub-bullet (appears after parent is fully typed)
             sub = p.get("sub", "")
@@ -475,26 +451,11 @@ class RevealSlide(Slide):
                     bullet_x = w * 0.16
                     d.ellipse([bullet_x, y + 18, bullet_x + 12, y + 30],
                               fill=(30, 30, 30, 255))
-                    sub_lines = C.wrap_text(d, sub, sub_font,
-                                            w * 0.90 - bullet_x - 24)
-                    asc2, desc2 = sub_font.getmetrics()
-                    lh2 = asc2 + desc2
-                    sleft = sub_chars
-                    sy = y
-                    for sln in sub_lines:
-                        frag = sln[:max(0, sleft)]
-                        if frag:
-                            d.text((bullet_x + 24, sy), frag,
-                                   font=sub_font,
-                                   fill=(20, 20, 20, 255))
-                        sleft -= len(sln) + 1
-                        sy += lh2 + int(h * 0.008)
-                        if sleft < 0:
-                            break
-                    self._register_text("sub:%d" % i,
-                                        (bullet_x + 24, y, w * 0.90, sy),
-                                        (20, 20, 20), sub_size)
-                    y = sy + int(h * 0.02)
+                    sub_visible = sub[:sub_chars]
+                    d.text((bullet_x + 24, y), sub_visible, font=sub_font,
+                           fill=(20, 20, 20, 255))
+                    sub_bbox = d.textbbox((0, 0), sub, font=sub_font)
+                    y += (sub_bbox[3] - sub_bbox[1]) + int(h * 0.04)
 
             y += int(h * 0.02)
 
@@ -847,8 +808,15 @@ class DuoSlide(Slide):
                                              int(pw), int(ph * 1.8))
                 lines = []
                 if panel.get("label"):
-                    lines.append(_outlined_line(panel["label"],
-                                                int(h * 0.082)))
+                    # Shrink font until label fits panel width (with 8% padding)
+                    size = int(h * 0.082)
+                    max_w = int(pw * 0.92)
+                    while size > 12:
+                        line = _outlined_line(panel["label"], size)
+                        if line.size[0] <= max_w:
+                            break
+                        size = int(size * 0.9)
+                    lines.append(_outlined_line(panel["label"], size))
                 self._built[side] = lines
             else:
                 self._built[side] = [_outlined_line(p, int(h * 0.078))
@@ -878,24 +846,13 @@ class DuoSlide(Slide):
             if raw <= 0:
                 continue
             lw, lh = line.size  # settled (unscaled) art
-            sw, sh = lw, lh
-            if sw > pw * 0.94:
-                sc = pw * 0.94 / sw
-                sw, sh = sw * sc, sh * sc
-            lx = x0 + (pw - sw) / 2
-            ly = y0 + ph - sh - self.cfg.h * 0.035
+            lx = x0 + (pw - lw) / 2
+            ly = y0 + ph - lh - self.cfg.h * 0.035
             self._register_text(f"{side}:label:{i}",
-                                (lx, ly, lx + sw, ly + sh),
+                                (lx, ly, lx + lw, ly + lh),
                                 (255, 255, 255), int(self.cfg.h * 0.082))
             nl = _punch_in(line, raw)
             nlh, nlw = nl.shape[0], nl.shape[1]
-            # shrink-to-fit if the label is wider than the panel
-            if nlw > pw * 0.94:
-                sc = pw * 0.94 / nlw
-                li = to_pil(nl).resize((int(nlw * sc), int(nlh * sc)),
-                                       Image.BILINEAR)
-                nl = np.array(li)
-                nlh, nlw = nl.shape[0], nl.shape[1]
             lx = x0 + (pw - nlw) / 2
             ly = y0 + ph - nlh - self.cfg.h * 0.035
             pil = to_pil(paste_rgba(to_np(pil), nl, (lx, ly)))
@@ -1038,14 +995,12 @@ class DisplayHeadline(Slide):
         return frame
 
 
-def _paper_line_img(tokens, size, hl_fill=(229, 45, 39),
-                    ink=(24, 22, 20)):
-    """Paper-style text line -> (text_img, swash_img).
+def _paper_line_img(tokens, size, hl_fill=(229, 45, 39)):
+    """Black paper-style text line -> (text_img, swash_img).
 
-    **bold** uses the bold face. ==highlight== spans sit on a red
+    **bold** uses the bold face. ==highlight== spans are black on a red
     marker swash; swashes live on their own layer so a slide can wipe
-    them in separately. ink is the (r, g, b) text color: paper-black
-    by default, pass a light ink for dark backgrounds.
+    them in separately.
     """
     f_reg = get_font(size, bold=False)
     f_bld = get_font(size, bold=True)
@@ -1069,7 +1024,7 @@ def _paper_line_img(tokens, size, hl_fill=(229, 45, 39),
             runs.append(tuple(cur))
             cur = None
         d.text((x, y0), w + " ", font=f_bld if b else f_reg,
-               fill=tuple(ink) + (255,))
+               fill=(24, 22, 20, 255))
         x += tw
     if cur is not None:
         runs.append((cur[0], x))
@@ -1099,8 +1054,7 @@ def _paper_line_img(tokens, size, hl_fill=(229, 45, 39),
     return text_img, swash_img
 
 
-def _paper_block(text, size, max_w, hl_fill=(229, 45, 39),
-                 ink=(24, 22, 20)):
+def _paper_block(text, size, max_w, hl_fill=(229, 45, 39)):
     """Wrapped paper text -> list of (text_img, swash_img) per line."""
     tokens = _rich_tokens(text)
     f_bld = get_font(size, bold=True)
@@ -1116,8 +1070,7 @@ def _paper_block(text, size, max_w, hl_fill=(229, 45, 39),
         cw += tw
     if cur:
         lines.append(cur)
-    return [_paper_line_img(ln, size, hl_fill, ink)
-            for ln in lines or [[]]]
+    return [_paper_line_img(ln, size, hl_fill) for ln in lines or [[]]]
 
 
 _PAPER_BG = {"type": "gradient", "top": (247, 243, 233), "bottom": (230, 223, 205)}
@@ -1267,23 +1220,13 @@ class HighlightSlide(Slide):
 
     text: paragraph with **bold** / ==highlight== markers; lines stagger
     in and each marker swash wipes on after its line lands.
-    ink: (r, g, b) text color, paper-black by default; pass a light
-    ink (e.g. [236, 230, 218]) when the bg is dark.
     card: optional {"image": path, "caption": "..."} — a tilted photo card
     pinned top-right with a caption bar, like the review-video cutaway.
     """
 
     def __init__(self, text, card=None, duration=None, bg=None, stagger=0.8,
-                 cfg=None, ink=None):
+                 cfg=None):
         bg = _PAPER_BG if bg is None else bg
-        if ink is None:
-            ink = (24, 22, 20)
-        ink = tuple(ink)
-        if len(ink) != 3 or not all(
-                isinstance(c, int) and 0 <= c <= 255 for c in ink):
-            raise ValueError(
-                f"ink must be (r, g, b) ints 0-255, got {ink!r}")
-        self.ink = ink
         self.text = text
         self.card = card
         self.stagger = stagger
@@ -1297,8 +1240,7 @@ class HighlightSlide(Slide):
         if self._lines is None:
             h, w = self.cfg.h, self.cfg.w
             max_w = w * (0.56 if self.card else 0.86)
-            self._lines = _paper_block(self.text, int(h * 0.058), max_w,
-                                       ink=self.ink)
+            self._lines = _paper_block(self.text, int(h * 0.058), max_w)
             # record each line's fractional geometry so overlays (e.g.
             # Magnifier) can target text instead of guessing coordinates
             self._line_boxes = []
@@ -1360,7 +1302,7 @@ class HighlightSlide(Slide):
             self._register_text(
                 f"line:{i}",
                 (lb["x0"] * w, lb["y0"] * h, lb["x1"] * w, lb["y1"] * h),
-                self.ink, int(h * 0.058))
+                (35, 32, 28), int(h * 0.058))
         x0, y = w * 0.07, h * (0.30 if self.card else 0.24)
         for i, (timg, simg) in enumerate(self._lines):
             e = a01(t, 0.4 + i * self.stagger, 0.5)
