@@ -36,10 +36,12 @@ scene plan schema (version 1): {"version": 1, "episode": "...",
 "params": {...}, "duration_sec": 8.2, "transition": "cut", "trans_dur": 0,
 "overlays": [...]}]}.
 
-The 18 slide types you may use: TitleSlide, BulletSlide, StepsSlide,
+The 25 slide types you may use: TitleSlide, BulletSlide, StepsSlide,
 DisplayPointsSlide, DisplayHeadline, CompareSlide, HighlightSlide,
 CollageSlide, TitleCardSlide, DuoSlide, ImageSlide, SplitSlide, QuoteSlide,
-StatSlide, KenBurnsSlide, CalloutSlide, MapZoomSlide, RouteSlide.
+StatSlide, KenBurnsSlide, CalloutSlide, MapZoomSlide, RouteSlide,
+TerritorySlide, RecallSlide, SpectrumSlide, SketchSlide, CausalChainSlide,
+VidSlide, EraCardSlide.
 Overlays: keywordpop (giant outlined term), caption, lowerthird
 (name+role), sticker (cutout photo), regionglow (pulsing map tint).
 
@@ -60,10 +62,21 @@ VISUAL GRAMMAR — follow it exactly:
   staggered, paced to the narration, never all at once.
 - DisplayPointsSlide / DisplayHeadline for section headers and big numbered
   points. TitleSlide opens the episode; TitleCardSlide works as a
-  chapter card ("Greetings from ...").
-- KenBurnsSlide / ImageSlide / SplitSlide for single-image beats.
-- NEVER a blank background: every text slide gets the textured default or,
-  better, a contextual image from the manifest (era art, map, photo).
+  chapter card ("Greetings from ..."). EraCardSlide is the designed title
+  card: kicker pill ("APUSH - UNIT 2 - EP. 8"), giant title, subtitle, up
+  to three gold boxes with icons, footer tag — pass "unit" (1-9) and it
+  picks the period background automatically. Use it for episode opens and
+  major section cards.
+- TerritorySlide for territorial control/claims maps; RecallSlide for
+  self-test beats; SpectrumSlide for spectrums and spectrums-of-opinion;
+  SketchSlide for hand-drawn-style diagrams; CausalChainSlide for
+  cause->effect chains; VidSlide only for pre-rendered 5090 clips.
+- NEVER a blank background: every text slide gets the textured default,
+  a contextual image from the manifest (era art, map, photo), or an era
+  background: "bg": {"type": "era", "unit": N} tints any slide to the
+  unit's period (1=parchment contact era ... 6=steel Gilded Age ...
+  8=cold-slate Cold War, 9=dark contemporary). Prefer era art or photos
+  where the manifest has them; era bg beats the generic default.
 - Eyes-closed-safe: the audio must stand alone. Visuals ADD (a term pops as
   it is spoken, a face appears as the person is discussed) — they never
   carry meaning the narration does not also state.

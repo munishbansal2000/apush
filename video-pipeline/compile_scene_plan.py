@@ -66,6 +66,7 @@ SLIDE_TYPES = {
     "territoryslide": _slides.TerritorySlide,
     "recallslide": _slides.RecallSlide,
     "spectrumslide": _slides.SpectrumSlide,
+    "eracardslide": _slides.EraCardSlide,
     "sketchslide": _sketch.SketchSlide,
     # Not in the original 18, but present in the library: the old pipeline's
     # word-chain beats (causalchain) and pre-rendered clip beats (vidslide,

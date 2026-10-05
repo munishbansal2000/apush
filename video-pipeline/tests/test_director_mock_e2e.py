@@ -36,6 +36,7 @@ SCHEMA_SLIDES = {
     "RouteSlide", "CausalChainSlide", "VidSlide",
     "TerritorySlide", "RecallSlide", "SpectrumSlide",
     "SketchSlide",
+    "EraCardSlide",
 }
 SCHEMA_OVERLAYS = {"keywordpop", "caption", "lowerthird", "sticker",
                    "regionglow", "timelineribbon"}

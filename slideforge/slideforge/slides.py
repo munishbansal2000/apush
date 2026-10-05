@@ -2811,3 +2811,182 @@ class SpectrumSlide(Slide):
                        font=get_font(int(h * 0.028)), anchor="mt",
                        fill=color + (int(255 * se),))
         return to_np(pil)
+
+
+def _era_icon(kind, size, color):
+    """Small gold geometric icon for era-card boxes. Abstract by design:
+    crossed lines, star, scroll, flag, coin — no clip-art pretensions."""
+    img = Image.new("RGBA", (size, size), (0, 0, 0, 0))
+    d = ImageDraw.Draw(img)
+    c, s = size / 2, size
+    w = max(2, size // 12)
+    if kind == "swords":
+        d.line([(s * 0.25, s * 0.75), (s * 0.75, s * 0.25)], fill=color, width=w)
+        d.line([(s * 0.75, s * 0.75), (s * 0.25, s * 0.25)], fill=color, width=w)
+        d.line([(s * 0.20, s * 0.80), (s * 0.32, s * 0.68)], fill=color, width=w + 2)
+        d.line([(s * 0.80, s * 0.80), (s * 0.68, s * 0.68)], fill=color, width=w + 2)
+    elif kind == "star":
+        import math
+        pts = []
+        for i in range(10):
+            r = s * 0.38 if i % 2 == 0 else s * 0.16
+            a = -math.pi / 2 + i * math.pi / 5
+            pts.append((c + r * math.cos(a), c + r * math.sin(a)))
+        d.polygon(pts, fill=color)
+    elif kind == "scroll":
+        d.rounded_rectangle([s * 0.2, s * 0.25, s * 0.8, s * 0.75],
+                            radius=s * 0.08, outline=color, width=w)
+        for y in (0.38, 0.5, 0.62):
+            d.line([(s * 0.3, s * y), (s * 0.7, s * y)], fill=color, width=max(1, w - 1))
+    elif kind == "flag":
+        d.line([(s * 0.3, s * 0.15), (s * 0.3, s * 0.85)], fill=color, width=w)
+        d.polygon([(s * 0.3, s * 0.15), (s * 0.75, s * 0.28), (s * 0.3, s * 0.42)],
+                  fill=color)
+    elif kind == "coin":
+        d.ellipse([s * 0.2, s * 0.2, s * 0.8, s * 0.8], outline=color, width=w)
+        d.ellipse([s * 0.32, s * 0.32, s * 0.68, s * 0.68], outline=color,
+                  width=max(1, w - 1))
+    else:  # "diamond" fallback
+        d.polygon([(c, s * 0.15), (s * 0.85, c), (c, s * 0.85), (s * 0.15, c)],
+                  outline=color, width=w)
+    return img
+
+
+class EraCardSlide(Slide):
+    """Design title card contextualized by APUSH unit.
+
+    The "22-Year-Old" card, parameterized: kicker pill (APUSH - UNIT N -
+    EP. M), giant display title, subtitle, up to three gold-bordered boxes
+    with small icons, footer tag — over the unit's era background
+    (parchment for the colonial units, steel for the Gilded Age, cold
+    slate for the Cold War...). One slide per unit, reusable everywhere.
+
+    boxes: [{"label": "Jumonville Glen", "icon": "swords"}, ...]
+    icons: swords | star | scroll | flag | coin | diamond | None
+    """
+
+    def __init__(self, title, kicker="", subtitle="", boxes=(), footer="",
+                 unit=1, duration=6.0, cfg=None):
+        from .backgrounds import ERA_PALETTES
+        era = ERA_PALETTES.get(int(unit), ERA_PALETTES[1])
+        super().__init__(duration, {"type": "era", "unit": int(unit)}, cfg)
+        self.title = title
+        self.kicker = kicker
+        self.subtitle = subtitle
+        self.boxes = list(boxes)[:3]
+        self.footer = footer
+        self.accent = tuple(era["accent"])
+        self._built = None
+
+    def _build(self):
+        if self._built is not None:
+            return
+        w, h = self.cfg.w, self.cfg.h
+        acc = self.accent
+        # kicker pill (top-left)
+        kick = None
+        if self.kicker:
+            kf = get_font(int(h * 0.034), bold=True)
+            meas = ImageDraw.Draw(Image.new("RGBA", (8, 8)))
+            tw = meas.textlength(self.kicker, font=kf)
+            pad_x, pad_y = int(w * 0.022), int(h * 0.014)
+            pw, ph = tw + pad_x * 2, int(h * 0.034 * 1.9) + pad_y
+            kick = Image.new("RGBA", (int(pw) + 8, int(ph) + 8), (0, 0, 0, 0))
+            kd = ImageDraw.Draw(kick)
+            kd.rounded_rectangle([4, 4, pw, ph], radius=int(ph / 2),
+                                 fill=(10, 14, 26, 235), outline=acc, width=2)
+            kd.text((4 + pad_x, (4 + ph) / 2), self.kicker, font=kf,
+                    anchor="lm", fill=acc)
+        # title / subtitle blocks
+        title_img = _outlined_block(self.title, int(h * 0.105), w * 0.9)
+        sub_img = None
+        if self.subtitle:
+            sub_img = _outlined_block(self.subtitle, int(h * 0.038), w * 0.86)
+        self._built = {"kick": kick, "title": title_img, "sub": sub_img}
+        # settled geometry for validate_visual
+        y = h * 0.16
+        if kick is not None:
+            self._register_text("kicker", (w * 0.062, y,
+                                           w * 0.062 + kick.width, y + kick.height),
+                                acc, int(h * 0.034))
+            y += kick.height + h * 0.05
+        tw, th = title_img.size
+        self._register_text("title", ((w - tw) / 2, y, (w + tw) / 2, y + th),
+                            (255, 255, 255), int(h * 0.105))
+        y += th + h * 0.028
+        if sub_img is not None:
+            sw, sh = sub_img.size
+            self._register_text("subtitle", ((w - sw) / 2, y, (w + sw) / 2, y + sh),
+                                (170, 180, 200), int(h * 0.038))
+
+    def frame(self, t):
+        w, h = self.cfg.w, self.cfg.h
+        self._build()
+        b = self._built
+        frame = C.vignette(self.bg_frame(t), 0.35)
+        pil = Image.fromarray(frame).convert("RGBA")
+        d = ImageDraw.Draw(pil, "RGBA")
+        acc = self.accent
+        # kicker
+        if b["kick"] is not None:
+            e = a01(t, 0.15, 0.4, ease=easing.ease_out)
+            if e > 0:
+                k = b["kick"].copy()
+                k.putalpha(k.getchannel("A").point(lambda v: int(v * e)))
+                pil.alpha_composite(k, (int(w * 0.062), int(h * 0.16)))
+        # title + subtitle punch in
+        y = h * 0.16 + (b["kick"].height + h * 0.05 if b["kick"] is not None else 0)
+        for i, key in enumerate(("title", "sub")):
+            img = b[key]
+            if img is None:
+                continue
+            raw = a01(t, 0.35 + i * 0.55, 0.55, ease=easing.ease_out_back)
+            if raw <= 0:
+                continue
+            iw, ih = img.size
+            if iw > w * 0.92:
+                s = w * 0.92 / iw
+                img = img.resize((int(iw * s), int(ih * s)), Image.LANCZOS)
+                iw, ih = img.size
+            nl = _punch_in(img, raw)
+            pil.alpha_composite(Image.fromarray(nl), (int((w - iw) / 2), int(y)))
+            y += ih + h * 0.028
+        # boxes row
+        n = len(self.boxes)
+        if n:
+            bw, bh = w * 0.27, h * 0.185
+            gap = w * 0.025
+            x0 = (w - (bw * n + gap * (n - 1))) / 2
+            by = h * 0.735
+            for i, box in enumerate(self.boxes):
+                raw = a01(t, 1.3 + i * 0.35, 0.45, ease=easing.ease_out_back)
+                if raw <= 0:
+                    continue
+                e = min(1.0, raw)
+                bx = x0 + i * (bw + gap)
+                overlay = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+                od = ImageDraw.Draw(overlay)
+                od.rounded_rectangle([bx, by, bx + bw, by + bh], radius=int(h * 0.02),
+                                     fill=(8, 10, 20, int(225 * e)),
+                                     outline=acc + (int(255 * e),), width=2)
+                label = box.get("label", "")
+                icon = _era_icon(box.get("icon"), int(h * 0.075), acc + (int(255 * e),))
+                overlay.alpha_composite(icon,
+                                        (int(bx + bw / 2 - icon.width / 2), int(by + h * 0.028)))
+                lf = get_font(int(h * 0.042), bold=True)
+                od.text((bx + bw / 2, by + bh - h * 0.038), label, font=lf,
+                        anchor="mb", fill=(245, 245, 245, int(255 * e)))
+                pil.alpha_composite(overlay)
+                self._register_text(
+                    f"box:{i}", (bx, by, bx + bw, by + bh),
+                    (245, 245, 245), int(h * 0.042))
+        # footer tag
+        if self.footer:
+            e = a01(t, 1.8, 0.5)
+            if e > 0:
+                ff = get_font(int(h * 0.028))
+                d.text((w - w * 0.062, h * 0.955), self.footer, font=ff,
+                       anchor="rs", fill=(150, 155, 170, int(255 * e)))
+                self._register_text("footer", (w * 0.7, h * 0.93, w * 0.94, h * 0.98),
+                                    (150, 155, 170), int(h * 0.028))
+        return to_np(pil)
