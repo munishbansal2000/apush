@@ -1675,6 +1675,293 @@ class ImageSlide(Slide):
         return to_np(pil)
 
 
+@slide('stagger')
+class StaggerSlide(Slide):
+    """Panels slide in at timed cues — generic staggered entrance.
+
+    Each panel has its own image, label, entrance time, and direction.
+    Use for "three boxes" reveals, timeline entrances, or any sequence
+    where visuals must land on spoken words.
+
+    panels: list of dicts, each with:
+        image: path or numpy array (required)
+        label: text below the panel (optional)
+        at: entrance time in seconds, relative to slide start (required)
+        from: "left" | "right" | "top" | "bottom" (default "bottom")
+        face_top: if True, crop portrait images from the top to keep faces
+                  visible (default False)
+    title: optional header text
+    entrance_dur: seconds for each slide-in animation (default 0.6)
+    bg: background spec (default textured dark)
+
+    Panels are laid out horizontally, equally spaced. Each slides in from
+    its direction with smooth easing and a fade. Labels fade in as the
+    panel settles. Deterministic: frame(t) depends only on t.
+    """
+
+    DIRECTIONS = {
+        "left": (-1, 0),
+        "right": (1, 0),
+        "top": (0, -1),
+        "bottom": (0, 1),
+    }
+
+    def __init__(self, panels, title="", entrance_dur=0.6,
+                 duration=5.0, bg=None, cfg=None):
+        super().__init__(duration, bg, cfg)
+        if not panels:
+            raise ValueError("StaggerSlide requires at least one panel")
+        self.panels = panels
+        self.title = title
+        self.entrance_dur = entrance_dur
+        self._prepared = None
+
+    def _prepare(self):
+        if self._prepared is not None:
+            return
+        w, h = self.cfg.w, self.cfg.h
+        n = len(self.panels)
+        pw = w // n
+        # panel image area: leave room for title (top) and labels (bottom)
+        title_h = int(h * 0.12) if self.title else int(h * 0.04)
+        label_h = int(h * 0.10)
+        ph = h - title_h - label_h - int(h * 0.04)
+        py = title_h + int(h * 0.02)
+
+        prepared = []
+        for p in self.panels:
+            img = _as_image(p["image"])
+            # cover-crop to (pw, ph)
+            ih, iw = img.shape[:2]
+            tr = pw / ph
+            if iw / ih > tr:
+                nw = int(ih * tr)
+                x0 = (iw - nw) // 2
+                # face_top: for portraits, keep the top (face) — crop sides only
+                img = img[:, x0:x0 + nw]
+            else:
+                nh = int(iw / tr)
+                if p.get("face_top"):
+                    img = img[:nh, :]
+                else:
+                    y0 = (ih - nh) // 2
+                    img = img[y0:y0 + nh, :]
+            # resize to panel size
+            pil = to_pil(img).resize((pw, ph), Image.BILINEAR)
+            prepared.append({
+                "img": np.array(pil),
+                "label": p.get("label", ""),
+                "at": p["at"],
+                "dir": self.DIRECTIONS.get(p.get("from", "bottom"), (0, 1)),
+                "pw": pw, "ph": ph, "py": py,
+            })
+        self._prepared = prepared
+        self._title_h = title_h
+        self._label_h = label_h
+
+    def frame(self, t):
+        w, h = self.cfg.w, self.cfg.h
+        self._prepare()
+        frame = self.bg_frame(t)
+        frame = C.vignette(frame, 0.3)
+        pil = to_pil(frame)
+
+        # title
+        if self.title:
+            e = a01(t, 0.0, 0.5)
+            if e > 0:
+                pil = C.draw_para(pil, (w * 0.06, h * 0.02, w * 0.94, h * 0.11),
+                                  self.title, size=int(h * 0.06),
+                                  fill=(255, 255, 255), bold=True,
+                                  stroke=2, alpha=int(255 * e))
+
+        n = len(self._prepared)
+        for i, p in enumerate(self._prepared):
+            # entrance progress: 0 (waiting) -> 1 (settled)
+            k = a01(t, p["at"], self.entrance_dur, ease=smooth)
+            if k <= 0:
+                continue
+            dx, dy = p["dir"]
+            # slide from off-screen
+            ox = int(dx * (1 - k) * w * 0.6)
+            oy = int(dy * (1 - k) * h * 0.8)
+            x0 = i * p["pw"] + ox
+            y0 = p["py"] + oy
+
+            # fade in during entrance
+            img = p["img"]
+            if k < 1.0:
+                # blend with background for fade effect
+                bg_patch = np.full_like(img, 18)  # dark bg
+                img = (img.astype(float) * k +
+                       bg_patch.astype(float) * (1 - k)).astype(np.uint8)
+
+            # paste panel (clipped to canvas)
+            ph, pw = img.shape[:2]
+            # source and dest rects, clipped
+            sx0, sy0 = max(0, -x0), max(0, -y0)
+            dx0, dy0 = max(0, x0), max(0, y0)
+            sx1, sy1 = min(pw, w - dx0 + sx0), min(ph, h - dy0 + sy0)
+            if sx1 > sx0 and sy1 > sy0:
+                frame[dy0:dy0 + (sy1 - sy0),
+                      dx0:dx0 + (sx1 - sx0)] = img[sy0:sy1, sx0:sx1]
+
+            # label fades in as panel settles
+            if p["label"] and k > 0.4:
+                le = a01(t, p["at"] + self.entrance_dur * 0.4,
+                         self.entrance_dur * 0.6)
+                if le > 0:
+                    pil = to_pil(frame)
+                    lx = i * p["pw"] + p["pw"] // 2
+                    # label position follows panel (but stays on screen)
+                    ly = p["py"] + p["ph"] + int(self._label_h * 0.45)
+                    pil = C.draw_para(
+                        pil, (lx - p["pw"] // 2, ly - 20,
+                              lx + p["pw"] // 2, ly + 20),
+                        p["label"], size=int(h * 0.035),
+                        fill=(255, 255, 255), stroke=2,
+                        alpha=int(255 * le))
+                    frame = to_np(pil)
+
+            # divider between panels (once settled)
+            if i > 0 and k >= 1.0:
+                div_x = i * p["pw"]
+                frame[p["py"]:p["py"] + p["ph"], div_x - 1:div_x + 1] = 70
+
+        return frame
+
+
+@slide('tactical')
+class TacticalSlide(Slide):
+    """Animated tactical diagram: two forces, one closing in on the other.
+
+    Generic control for battle/siege/ambush visualizations. Blue force
+    starts in position; red force dots appear progressively, surrounding
+    them — timed to narration.
+
+    blue_label: e.g. "Jumonville's 35 — in the ravine"
+    red_label: e.g. "Washington's 150 — surrounding"
+    title: header text
+    red_start: when red dots begin appearing (seconds)
+    red_end: when red dots finish appearing (seconds)
+    n_blue, n_red: dot counts (visual, not literal troop counts)
+    bg: background spec (default dark forest green)
+
+    Deterministic: dot positions seeded, frame(t) depends only on t.
+    """
+
+    def __init__(self, title="", blue_label="", red_label="",
+                 red_start=1.0, red_end=4.0, n_blue=12, n_red=28,
+                 duration=10.0, bg=None, cfg=None):
+        bg = bg or {"type": "solid", "color": (22, 26, 22)}
+        super().__init__(duration, bg, cfg)
+        self.title = title
+        self.blue_label = blue_label
+        self.red_label = red_label
+        self.red_start = red_start
+        self.red_end = red_end
+        self.n_blue = n_blue
+        self.n_red = n_red
+        self._dots = None
+
+    def _build_dots(self):
+        if self._dots is not None:
+            return
+        import random
+        rng = random.Random(42)  # seeded, deterministic
+        w, h = self.cfg.w, self.cfg.h
+        cx, cy = w * 0.42, h * 0.42  # ravine center
+        # blue dots clustered in ravine (ellipse)
+        blue = []
+        for _ in range(self.n_blue):
+            x = cx + rng.uniform(-70, 70)
+            y = cy + rng.uniform(-50, 90)
+            blue.append((x, y))
+        # red dots on surrounding ellipse, shuffled for progressive reveal
+        red = []
+        for i in range(self.n_red):
+            angle = (i / self.n_red) * 6.2832
+            x = cx + 210 * np.cos(angle) + rng.uniform(-18, 18)
+            y = cy + 150 * np.sin(angle) + rng.uniform(-18, 18)
+            red.append((x, y))
+        rng.shuffle(red)  # reveal in random order, not around the circle
+        self._dots = (blue, red)
+        self._cx, self._cy = cx, cy
+
+    def frame(self, t):
+        w, h = self.cfg.w, self.cfg.h
+        self._build_dots()
+        blue, red = self._dots
+        frame = self.bg_frame(t)
+
+        # ravine: diagonal dark band
+        pil = to_pil(frame)
+        d = ImageDraw.Draw(pil)
+        # ravine polygon
+        rx = [w*0.30, w*0.54, w*0.38, w*0.14]
+        ry = [0, 0, h, h]
+        d.polygon(list(zip(rx, ry)), fill=(14, 18, 14),
+                  outline=(55, 65, 55), width=3)
+        frame = to_np(pil)
+
+        # blue dots (French) — always visible, gentle pulse
+        pulse = 1.0 + 0.08 * np.sin(t * 3.0)
+        pil = to_pil(frame)
+        dd = ImageDraw.Draw(pil)
+        for x, y in blue:
+            r = int(8 * pulse)
+            dd.ellipse([x-r, y-r, x+r, y+r],
+                       fill=(70, 130, 200), outline=(200, 220, 255), width=2)
+        frame = to_np(pil)
+
+        # red dots (Washington) — progressive reveal
+        for i, (x, y) in enumerate(red):
+            # stagger appearance across [red_start, red_end]
+            at = self.red_start + (i / max(1, len(red)-1)) * (self.red_end - self.red_start)
+            k = a01(t, at, 0.4)  # 0.4s fade-in per dot
+            if k <= 0:
+                continue
+            r = 6
+            pil = to_pil(frame)
+            dd = ImageDraw.Draw(pil)
+            # fade via alpha blend
+            dot = Image.new("RGB", (r*2+4, r*2+4), (22, 26, 22))
+            ddot = ImageDraw.Draw(dot)
+            ddot.ellipse([2, 2, 2+r*2, 2+r*2],
+                         fill=(200, 70, 70), outline=(255, 200, 200), width=2)
+            # paste with mask for smooth edge
+            px, py = int(x - r - 2), int(y - r - 2)
+            if 0 <= px < w and 0 <= py < h:
+                frame[py:py+dot.height, px:px+dot.width] = (
+                    frame[py:py+dot.height, px:px+dot.width].astype(float) * (1-k) +
+                    np.array(dot).astype(float) * k
+                ).astype(np.uint8)
+
+        # labels and title
+        pil = to_pil(frame)
+        if self.title:
+            e = a01(t, 0.0, 0.5)
+            pil = C.draw_para(pil, (w*0.06, h*0.03, w*0.94, h*0.12),
+                              self.title, size=int(h*0.055),
+                              fill=(240, 240, 220), bold=True,
+                              stroke=2, alpha=int(255*e))
+        if self.blue_label:
+            e = a01(t, 0.3, 0.6)
+            pil = C.draw_para(pil, (w*0.25, h*0.16, w*0.60, h*0.22),
+                              self.blue_label, size=int(h*0.032),
+                              fill=(150, 200, 255), stroke=2,
+                              alpha=int(255*e))
+        if self.red_label:
+            e = a01(t, self.red_start, 0.8)
+            pil = C.draw_para(pil, (w*0.22, h*0.68, w*0.62, h*0.74),
+                              self.red_label, size=int(h*0.032),
+                              fill=(255, 180, 180), stroke=2,
+                              alpha=int(255*e))
+        frame = to_np(pil)
+        frame = C.vignette(frame, 0.25)
+        return frame
+
+
 @slide('split')
 class SplitSlide(Slide):
     """Image on one half, text panel on the other."""
