@@ -33,7 +33,7 @@ SCHEMA_SLIDES = {
     "DisplayHeadline", "CompareSlide", "HighlightSlide", "CollageSlide",
     "TitleCardSlide", "DuoSlide", "ImageSlide", "SplitSlide", "QuoteSlide",
     "StatSlide", "KenBurnsSlide", "CalloutSlide", "MapZoomSlide",
-    "RouteSlide",
+    "RouteSlide", "CausalChainSlide", "VidSlide",
 }
 SCHEMA_OVERLAYS = {"keywordpop", "caption", "lowerthird", "sticker",
                    "regionglow"}

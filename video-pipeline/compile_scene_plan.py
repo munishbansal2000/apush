@@ -22,11 +22,14 @@ _HERE = os.path.dirname(os.path.abspath(__file__))
 _SLIDEFORGE = os.path.normpath(os.path.join(_HERE, os.pardir, "slideforge"))
 if _SLIDEFORGE not in sys.path:
     sys.path.insert(0, _SLIDEFORGE)
+if _HERE not in sys.path:
+    sys.path.insert(0, _HERE)
 
 from slideforge.timeline import Config, Movie  # noqa: E402
 from slideforge import slides as _slides  # noqa: E402
 from slideforge import overlays as _overlays  # noqa: E402
 from slideforge import routes as _routes  # noqa: E402
+from clipscene import ClipScene  # noqa: E402
 
 SCHEMA_VERSION = 1
 IMAGE_EXTS = (".jpg", ".jpeg", ".png", ".webp", ".bmp", ".gif")
@@ -56,6 +59,11 @@ SLIDE_TYPES = {
     "calloutslide": _slides.CalloutSlide,
     "mapzoomslide": _slides.MapZoomSlide,
     "routeslide": _slides.RouteSlide,
+    # Not in the original 18, but present in the library: the old pipeline's
+    # word-chain beats (causalchain) and pre-rendered clip beats (vidslide,
+    # pipeline-local so slideforge/ stays pristine).
+    "causalchain": _slides.CausalChainSlide,
+    "vidslide": ClipScene,
 }
 
 TRANSITIONS = {"crossfade", "wipe", "slide", "dip", "zoom", "cut"}
@@ -81,6 +89,8 @@ IMAGE_PARAM_PATHS = {
     "duoslide": ["left.image", "right.image"],
     "highlightslide": ["card.image"],
     "collageslide": ["cards.*.image"],
+    # vidslide's clip file resolves like an image (repo-relative, no escapes).
+    "vidslide": ["src"],
 }
 # Every slide type may also carry an image-backed bg spec.
 BG_IMAGE_PATH = ["bg.path"]
@@ -106,7 +116,7 @@ def _load_plan(plan_path):
     return plan
 
 
-def _resolve_image(value, assets_dir, scene_id, where):
+def _resolve_image(value, assets_dir, scene_id, where, kind="image"):
     """Resolve one repo-relative image path; reject absolute/missing."""
     if not isinstance(value, str):
         raise PlanError(
@@ -114,18 +124,18 @@ def _resolve_image(value, assets_dir, scene_id, where):
             f"got {type(value).__name__}")
     if os.path.isabs(value) or (len(value) > 1 and value[1] == ":"):
         raise PlanError(
-            f"scene '{scene_id}': absolute image paths are not allowed "
+            f"scene '{scene_id}': absolute {kind} paths are not allowed "
             f"({where}={value!r}); use a path relative to the assets dir")
     # Guard against escaping the assets dir.
     norm = os.path.normpath(value)
     if norm.startswith(".."):
         raise PlanError(
-            f"scene '{scene_id}': image path escapes the assets dir "
+            f"scene '{scene_id}': {kind} path escapes the assets dir "
             f"({where}={value!r})")
     full = os.path.join(assets_dir, norm)
     if not os.path.isfile(full):
         raise PlanError(
-            f"scene '{scene_id}': image not found: {value!r} "
+            f"scene '{scene_id}': {kind} not found: {value!r} "
             f"(looked in {assets_dir!r})")
     return full
 
@@ -268,8 +278,9 @@ def _build_scene(spec, assets_dir, scene_id):
         except (KeyError, IndexError, TypeError):
             continue
         if isinstance(val, str):
+            kind = "clip" if slide_key == "vidslide" else "image"
             _set_dot(params, dot, _resolve_image(
-                val, assets_dir, sid, f"params.{dot}"))
+                val, assets_dir, sid, f"params.{dot}", kind=kind))
 
     # RouteSlide may be built from a bundled route name instead of
     # map_image + waypoints.
@@ -333,13 +344,29 @@ def compile_scene_plan(plan_path, assets_dir, out_mp4,
 
     out_dir = os.path.dirname(os.path.abspath(out_mp4))
     os.makedirs(out_dir, exist_ok=True)
-    movie.render(out_mp4, quiet=quiet)
+    try:
+        movie.render(out_mp4, quiet=quiet)
+    finally:
+        for scene, _, _ in scenes:
+            _cleanup_scene(scene)
     return {
         "episode": plan["episode"],
         "scenes": len(scenes),
         "duration_sec": round(movie.total_duration(), 3),
         "output": os.path.abspath(out_mp4),
     }
+
+
+def _cleanup_scene(scene):
+    """Release per-scene temp resources (clip decodes), unwrapping overlays."""
+    seen = set()
+    cur = scene
+    while cur is not None and id(cur) not in seen:
+        seen.add(id(cur))
+        cleanup = getattr(cur, "cleanup", None)
+        if callable(cleanup):
+            cleanup()
+        cur = getattr(cur, "_scene", None)
 
 
 def main(argv=None):
