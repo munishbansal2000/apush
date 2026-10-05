@@ -306,7 +306,7 @@ def _build_scene(spec, assets_dir, scene_id):
 
 
 def compile_scene_plan(plan_path, assets_dir, out_mp4,
-                       width=1280, height=720, fps=30):
+                       width=1280, height=720, fps=30, quiet=False):
     """Compile a scene plan JSON into an mp4. Returns a summary dict.
 
     Raises PlanError on any structural problem, before rendering.
@@ -333,7 +333,7 @@ def compile_scene_plan(plan_path, assets_dir, out_mp4,
 
     out_dir = os.path.dirname(os.path.abspath(out_mp4))
     os.makedirs(out_dir, exist_ok=True)
-    movie.render(out_mp4, quiet=True)
+    movie.render(out_mp4, quiet=quiet)
     return {
         "episode": plan["episode"],
         "scenes": len(scenes),
@@ -351,11 +351,14 @@ def main(argv=None):
     ap.add_argument("--width", type=int, default=1280)
     ap.add_argument("--height", type=int, default=720)
     ap.add_argument("--fps", type=int, default=30)
+    ap.add_argument("--quiet", action="store_true",
+                    help="suppress per-frame render progress")
     args = ap.parse_args(argv)
     try:
         summary = compile_scene_plan(
             args.plan, args.assets, args.out,
-            width=args.width, height=args.height, fps=args.fps)
+            width=args.width, height=args.height, fps=args.fps,
+            quiet=args.quiet)
     except PlanError as e:
         print(f"PLAN ERROR: {e}", file=sys.stderr)
         return 2
