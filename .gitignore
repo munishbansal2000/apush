@@ -27,7 +27,15 @@ video/audio/
 video-pipeline/out/
 video-pipeline/episodes/*/audio/
 # Per-episode work dirs: rendered mp4s + fingerprint cache sidecars are
-# regenerable and often large. Reviewed scene plans and measured
-# timings.json stay tracked.
+# regenerable and often large. Reviewed scene plans stay tracked;
+# measured timings.json is a run output (re-measure with the timing
+# stage any time; test-voice numbers must never stand in for final).
 video-pipeline/episodes/*/work/*.mp4
 video-pipeline/episodes/*/work/*.fingerprint.json
+# Test-loop scratch: regenerable per-turn TTS + mixes, placeholder
+# clips, and run outputs (timings, verify, director prompt).
+video-pipeline/episodes/*/test_assets/
+video-pipeline/episodes/*/tts/
+video-pipeline/episodes/*/work/timings.json
+video-pipeline/episodes/*/work/verify.json
+video-pipeline/episodes/*/work/director_prompt.txt
