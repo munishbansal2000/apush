@@ -1,0 +1,22 @@
+# U2-E8 Act 1 — TTS script (turns 0-9, from v3 FINAL)
+# Render: python3 ../../tools/render/render_episode.py --script act1-script.md --turns-dir tts/
+
+Maya: Last time: colonial self-government. Assemblies holding the power of the purse, Zenger's trial, colonists starting to feel very English. This time: one 22-year-old with a musket, in the rain, starts a world war. Three boxes: Jumonville Glen, Pitt's gamble, the 1763 bill. Circle the ones you couldn't explain right now. Eight minutes, and you'll land all three.
+
+Marcus: May 1754, the Ohio Valley. A 22-year-old Virginia militia officer named George Washington is marching a small force into the Ohio country, claimed by Virginia's governor and already being fortified by the French.
+
+Maya: Twenty-two. I couldn't parallel park at twenty-two.
+
+Marcus: May 28th, before dawn, in the rain: Washington's men surround a French camp at Jumonville Glen and open fire. The Sieur de Jumonville is killed, and some accounts say he carried a diplomatic message, not attack orders.
+
+Maya: So who actually fired first?
+
+Marcus: Nobody's fully sure. The French called it an assassination, and when Washington surrendered Fort Necessity five weeks later, the terms he signed used the French word for it, l'assassinat. He said he hadn't understood the translation.
+
+Maya: He signed a confession he couldn't read. That one had to sting.
+
+Marcus: It gets rougher. London and Paris are already circling each other, and this skirmish lights the fuse. A year later, Britain sends a real army: General Edward Braddock, redcoats in European formation marching through Pennsylvania woods toward Fort Duquesne.
+
+Maya: This is why my paintball career lasted one afternoon: I led a tactical advance across an open field, and one kid behind a tree took out all four of us cousins. I still hear about it at Thanksgiving.
+
+Marcus: Braddock's men learned it worse. July 1755, near the Monongahela: French and Native fighters fire from the tree line, the column collapses, Braddock is mortally wounded. Washington rides out alive, writing home of "four bullets through my coat, and two horses shot under me."

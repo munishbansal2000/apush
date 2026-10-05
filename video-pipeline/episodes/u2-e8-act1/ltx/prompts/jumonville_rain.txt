@@ -1,0 +1,12 @@
+# LTX-02 — Jumonville rain drift
+# Scene: scene-03 (17.6s -> 528 frames @30fps)
+# Target: slideforge/assets/ltx/act1_jumonville_rain.mp4
+# Generate at 30fps if the LTX build allows; conform forces CFR 30 anyway.
+# Input still: slideforge/assets/maps/america_gutierrez_1562.jpg
+# Source generation length: 5.0s
+
+PROMPT:
+Same vintage map, locked-off frame. Add subtle atmospheric rain drift and light mist moving left to right over the map surface. Map ink stays sharp and readable underneath. No characters, no battle scene. Mood: pre-dawn, damp, quiet. Motion is ambient only.
+
+NEGATIVE:
+people, muskets, blood, battle reenactment, heavy rain obscuring map, text generation

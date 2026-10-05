@@ -1,0 +1,50 @@
+{
+ "clips": [
+  {
+   "id": "LTX-01",
+   "scene": "scene-02",
+   "prompt_file": "ltx/prompts/ohio_zoom.txt",
+   "raw": "ltx/raw/ohio_zoom.mp4",
+   "conformed": "slideforge/assets/ltx/act1_ohio_zoom.mp4",
+   "target_frames_est": 396,
+   "conform_cmd": "python3 conform_clip.py ltx/raw/ohio_zoom.mp4 396 ../../slideforge/assets/ltx/act1_ohio_zoom.mp4",
+   "note": "target_frames_est uses director estimate durations; recompute from the refit plan before conforming (frames = duration_sec * 30)."
+  },
+  {
+   "id": "LTX-02",
+   "scene": "scene-03",
+   "prompt_file": "ltx/prompts/jumonville_rain.txt",
+   "raw": "ltx/raw/jumonville_rain.mp4",
+   "conformed": "slideforge/assets/ltx/act1_jumonville_rain.mp4",
+   "target_frames_est": 528,
+   "conform_cmd": "python3 conform_clip.py ltx/raw/jumonville_rain.mp4 528 ../../slideforge/assets/ltx/act1_jumonville_rain.mp4",
+   "note": "target_frames_est uses director estimate durations; recompute from the refit plan before conforming (frames = duration_sec * 30)."
+  },
+  {
+   "id": "LTX-03",
+   "scene": "scene-06",
+   "prompt_file": "ltx/prompts/braddock_route.txt",
+   "raw": "ltx/raw/braddock_route.mp4",
+   "conformed": "slideforge/assets/ltx/act1_braddock_route.mp4",
+   "target_frames_est": 468,
+   "conform_cmd": "python3 conform_clip.py ltx/raw/braddock_route.mp4 468 ../../slideforge/assets/ltx/act1_braddock_route.mp4",
+   "note": "target_frames_est uses director estimate durations; recompute from the refit plan before conforming (frames = duration_sec * 30)."
+  },
+  {
+   "id": "LTX-04",
+   "scene": "scene-08",
+   "prompt_file": "ltx/prompts/monongahela_pulse.txt",
+   "raw": "ltx/raw/monongahela_pulse.mp4",
+   "conformed": "slideforge/assets/ltx/act1_monongahela_pulse.mp4",
+   "target_frames_est": 528,
+   "conform_cmd": "python3 conform_clip.py ltx/raw/monongahela_pulse.mp4 528 ../../slideforge/assets/ltx/act1_monongahela_pulse.mp4",
+   "note": "target_frames_est uses director estimate durations; recompute from the refit plan before conforming (frames = duration_sec * 30)."
+  }
+ ],
+ "notes": [
+  "Generate the 4 clips on the 5090 with LTX at 1920x1080, preferably 30fps.",
+  "Conform each raw clip to EXACTLY the scene's final (refit) frame count before compiling.",
+  "LTX-03 (route draw): generate at 16s if LTX allows a longer run, so it plays once; otherwise the conform loop's 6f crossfade hides the redraw seam.",
+  "Eyes-closed-safe: clips enliven the map; no invented facts, no text generation."
+ ]
+}

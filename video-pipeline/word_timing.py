@@ -44,6 +44,26 @@ def find_word(turns, word):
     return None
 
 
+def find_phrase(turns, phrase, turn_lo=0, turn_hi=None):
+    """First (turn_idx, word_idx) where `phrase` starts; None if absent.
+
+    Matches consecutive words, case-insensitive, punctuation-tolerant.
+    Single-word phrases behave like find_word. `turn_lo`/`turn_hi`
+    (inclusive) restrict the search to a scene's turn range.
+    """
+    pwords = [_norm(w) for w in _words(phrase)]
+    if not pwords:
+        return None
+    n = len(pwords)
+    hi = len(turns) - 1 if turn_hi is None else turn_hi
+    for ti in range(turn_lo, hi + 1):
+        words = [_norm(w) for w in _words(turns[ti])]
+        for wi in range(len(words) - n + 1):
+            if words[wi:wi + n] == pwords:
+                return ti, wi
+    return None
+
+
 def word_time(text, word_index, turn_start_sec, turn_duration_sec):
     """Seconds (absolute, episode timeline) when word_index is spoken."""
     words = _words(text)

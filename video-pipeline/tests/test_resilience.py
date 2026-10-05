@@ -244,3 +244,102 @@ def test_probe_frame_count(tmp_path):
     p = str(tmp_path / "s.mp4")
     _make_src(p, 2)
     assert csp._probe_frame_count(p) == 60
+
+
+# --- gap-aware mix model (offset/gap/tail) ------------------------------------
+
+def _timings_file_gap(tmp_path, durs, gap=0.6, offset=1.8, tail=4.5):
+    p = tmp_path / "timings.json"
+    turns, t = [], offset
+    for i, d in enumerate(durs):
+        turns.append({"turn": f"t{i}", "start": round(t, 3),
+                      "dur": d, "end": round(t + d, 3)})
+        t += d + gap
+    p.write_text(json.dumps({"gap": gap, "offset": offset, "tail": tail,
+                             "turns": turns}))
+    return str(p)
+
+
+def test_timings_gap_aware_passes(tmp_path):
+    # model: D0 = 1.8 + (1.2+0.6) + (1.8+0.6); D1 = (2.0+0.6) + 4.5
+    p = _plan([_sc("a", 1.8 + 1.8 + 2.4, 0, 1),
+               _sc("b", 2.6 + 4.5, 2, 2)])
+    t = _timings_file_gap(tmp_path, [1.2, 1.8, 2.0])
+    csp._validate_against_timings(p, t)  # no raise
+
+
+def test_timings_gap_aware_refuses_straight_concat(tmp_path):
+    # straight-concat durations (the old estimate model) must be refused
+    p = _plan([_sc("a", 3.0, 0, 1), _sc("b", 2.0, 2, 2)])
+    t = _timings_file_gap(tmp_path, [1.2, 1.8, 2.0])
+    with pytest.raises(PlanError, match="measured.*mix model"):
+        csp._validate_against_timings(p, t)
+
+
+def test_timings_no_gap_keys_backward_compatible(tmp_path):
+    # timings without gap/offset/tail behave as straight concat (old tests)
+    p = _plan([_sc("a", 3.0, 0, 1)])
+    t = _timings_file(tmp_path, [1.2, 1.8])
+    csp._validate_against_timings(p, t)  # no raise
+
+
+def _make_turn_mp3(path, seconds=1.0):
+    subprocess.run(
+        ["ffmpeg", "-y", "-v", "error", "-f", "lavfi",
+         "-i", f"sine=frequency=440:duration={seconds}",
+         "-c:a", "libmp3lame", path], check=True)
+
+
+def test_refit_gap_aware(tmp_path):
+    import importlib.util
+    spec = importlib.util.spec_from_file_location(
+        "refit", os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                              os.pardir, "refit_durations.py"))
+    refit = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(refit)
+
+    turns_dir = tmp_path / "turns"
+    turns_dir.mkdir()
+    _make_turn_mp3(str(turns_dir / "t00.mp3"), 1.0)
+    _make_turn_mp3(str(turns_dir / "t01.mp3"), 1.0)
+    tj = _timings_file_gap(tmp_path, [1.0, 1.0])
+
+    plan_path = str(tmp_path / "plan.json")
+    plan = {"version": 1, "episode": "t",
+            "scenes": [
+                {"id": "s0", "slide": "TitleSlide", "duration_sec": 2.0,
+                 "transition": "cut", "trans_dur": 0, "turns": [0, 0],
+                 "params": {},
+                 "overlays": [{"type": "keywordpop", "word": "x",
+                               "start": 0.5, "duration": 1.0}]},
+                {"id": "s1", "slide": "TitleSlide", "duration_sec": 1.0,
+                 "transition": "cut", "trans_dur": 0, "turns": [1, 1],
+                 "params": {}, "overlays": []},
+            ]}
+    with open(plan_path, "w") as f:
+        json.dump(plan, f)
+
+    refit.main([plan_path, str(turns_dir), "--timings", tj])
+    out = json.load(open(plan_path))
+    s0, s1 = out["scenes"]
+    # D0 = 1.8 + (1.0+0.6); D1 = (1.0+0.6) + 4.5
+    assert abs(s0["duration_sec"] - 3.4) < 0.05
+    assert abs(s1["duration_sec"] - 6.1) < 0.05
+    # first-scene overlay shifted by +offset
+    assert abs(s0["overlays"][0]["start"] - 2.3) < 0.01
+    # total == mix total: 1.8 + 2.0 + 1.2 + 4.5 = 9.5
+    assert abs(s0["duration_sec"] + s1["duration_sec"] - 9.5) < 0.1
+    # idempotent: second run changes nothing
+    before = json.load(open(plan_path))
+    refit.main([plan_path, str(turns_dir), "--timings", tj])
+    after = json.load(open(plan_path))
+    assert before == after
+
+
+def test_find_phrase_scoped():
+    turns = ["Three boxes: Jumonville Glen, Pitt's gamble.",
+             "Washington's men surround a French camp at Jumonville Glen."]
+    assert word_timing.find_phrase(turns, "Jumonville Glen") == (0, 2)
+    assert word_timing.find_phrase(turns, "Jumonville Glen", 1, 1) == (1, 7)
+    assert word_timing.find_phrase(turns, "Pitt's gamble", 1, 1) is None
+    assert word_timing.find_phrase(turns, "pitt's GAMBLE", 0, 0) == (0, 4)

@@ -1,0 +1,257 @@
+{
+ "version": 1,
+ "episode": "u2-e8-act1",
+ "notes": "Act 1 locked director's cut, adapted to the resilient pipeline. LTX scenes use vidslide with conformed clips (conform_clip.py makes any clip exactly the scene's frame count; the doc's 'never vidslide' note predates that tool). Durations are director estimates; refit_durations.py --timings rewrites them from measured TTS (offset 1.8 / gap 0.6 / tail 4.5). All transitions are cuts.",
+ "scenes": [
+  {
+   "id": "scene-01",
+   "slide": "titleslide",
+   "params": {
+    "title": "The 22-Year-Old Who Started a World War",
+    "subtitle": "APUSH Unit 2 Ep. 8 \u2014 3 boxes you must explain: Jumonville Glen, Pitt's Gamble, 1763 Bill",
+    "bg": {
+     "type": "textured"
+    }
+   },
+   "duration_sec": 22.8,
+   "transition": "cut",
+   "trans_dur": 0,
+   "turns": [
+    0,
+    0
+   ],
+   "overlays": [
+    {
+     "type": "keywordpop",
+     "word": "Jumonville Glen",
+     "start": 13.5,
+     "duration": 1.5
+    },
+    {
+     "type": "keywordpop",
+     "word": "Pitt's gamble",
+     "start": 15.2,
+     "duration": 1.5
+    },
+    {
+     "type": "keywordpop",
+     "word": "1763 bill",
+     "start": 16.9,
+     "duration": 1.5
+    },
+    {
+     "type": "caption",
+     "text": "By minute 9, you will explain all three cold.",
+     "start": 19.5,
+     "duration": 3.0
+    }
+   ]
+  },
+  {
+   "id": "scene-02",
+   "slide": "vidslide",
+   "params": {
+    "src": "ltx/act1_ohio_zoom.mp4",
+    "gen": "episodes/u2-e8-act1/ltx/prompts/ohio_zoom.txt \u2014 6s push-in; conform loops to scene frames"
+   },
+   "duration_sec": 13.2,
+   "transition": "cut",
+   "trans_dur": 0,
+   "turns": [
+    1,
+    1
+   ],
+   "overlays": [
+    {
+     "type": "keywordpop",
+     "word": "Ohio Valley",
+     "start": 1.0,
+     "duration": 2.0
+    },
+    {
+     "type": "lowerthird",
+     "name": "George Washington",
+     "role": "22-year-old Virginia militia officer",
+     "start": 3.5,
+     "duration": 4.0
+    },
+    {
+     "type": "caption",
+     "text": "APUSH cause: VA claims Ohio Country, France fortifies it",
+     "start": 9.0,
+     "duration": 3.5
+    }
+   ]
+  },
+  {
+   "id": "scene-03",
+   "slide": "vidslide",
+   "params": {
+    "src": "ltx/act1_jumonville_rain.mp4",
+    "gen": "episodes/u2-e8-act1/ltx/prompts/jumonville_rain.txt \u2014 5s seamless rain drift; conform loops to scene frames"
+   },
+   "duration_sec": 17.6,
+   "transition": "cut",
+   "trans_dur": 0,
+   "turns": [
+    2,
+    3
+   ],
+   "overlays": [
+    {
+     "type": "keywordpop",
+     "word": "Jumonville Glen",
+     "start": 8.2,
+     "duration": 2.0
+    },
+    {
+     "type": "lowerthird",
+     "name": "Sieur de Jumonville",
+     "role": "French officer",
+     "start": 10.5,
+     "duration": 3.5
+    },
+    {
+     "type": "caption",
+     "text": "Diplomat or attacker? France called it assassination.",
+     "start": 14.2,
+     "duration": 3.0
+    }
+   ]
+  },
+  {
+   "id": "scene-04",
+   "slide": "highlightslide",
+   "params": {
+    "text": "The French called Jumonville an ==assassination== \u2014 and Washington signed a surrender at ==Fort Necessity== calling it ==l'assassinat==, saying he hadn't understood the translation.",
+    "bg": {
+     "type": "textured"
+    }
+   },
+   "duration_sec": 16.4,
+   "transition": "cut",
+   "trans_dur": 0,
+   "turns": [
+    4,
+    5
+   ],
+   "overlays": [
+    {
+     "type": "keywordpop",
+     "word": "Fort Necessity",
+     "start": 7.4,
+     "duration": 2.0
+    },
+    {
+     "type": "keywordpop",
+     "word": "l'assassinat",
+     "start": 13.0,
+     "duration": 2.0
+    }
+   ]
+  },
+  {
+   "id": "scene-05",
+   "slide": "displayheadline",
+   "params": {
+    "headline": "He signed a confession he couldn't read.",
+    "sub": "That one had to sting.",
+    "bg": {
+     "type": "textured"
+    }
+   },
+   "duration_sec": 4.8,
+   "transition": "cut",
+   "trans_dur": 0,
+   "turns": [
+    6,
+    6
+   ],
+   "overlays": []
+  },
+  {
+   "id": "scene-06",
+   "slide": "vidslide",
+   "params": {
+    "src": "ltx/act1_braddock_route.mp4",
+    "gen": "episodes/u2-e8-act1/ltx/prompts/braddock_route.txt \u2014 8s route draw; generate at 16s if LTX allows, else conform loops"
+   },
+   "duration_sec": 15.6,
+   "transition": "cut",
+   "trans_dur": 0,
+   "turns": [
+    7,
+    7
+   ],
+   "overlays": [
+    {
+     "type": "caption",
+     "text": "European tactics vs. American woods \u2014 classic APUSH contrast.",
+     "start": 5.0,
+     "duration": 3.0
+    },
+    {
+     "type": "lowerthird",
+     "name": "General Edward Braddock",
+     "role": "British general",
+     "start": 10.5,
+     "duration": 4.0
+    },
+    {
+     "type": "keywordpop",
+     "word": "Fort Duquesne",
+     "start": 14.6,
+     "duration": 1.0
+    }
+   ]
+  },
+  {
+   "id": "scene-07",
+   "slide": "displayheadline",
+   "params": {
+    "headline": "My paintball career lasted one afternoon",
+    "sub": "Maya's tactical advance \u2014 a Thanksgiving legend",
+    "bg": {
+     "type": "textured"
+    }
+   },
+   "duration_sec": 15.2,
+   "transition": "cut",
+   "trans_dur": 0,
+   "turns": [
+    8,
+    8
+   ],
+   "overlays": []
+  },
+  {
+   "id": "scene-08",
+   "slide": "vidslide",
+   "params": {
+    "src": "ltx/act1_monongahela_pulse.mp4",
+    "gen": "episodes/u2-e8-act1/ltx/prompts/monongahela_pulse.txt \u2014 6s pulse; conform loops to scene frames"
+   },
+   "duration_sec": 17.6,
+   "transition": "cut",
+   "trans_dur": 0,
+   "turns": [
+    9,
+    9
+   ],
+   "overlays": [
+    {
+     "type": "keywordpop",
+     "word": "Monongahela",
+     "start": 3.4,
+     "duration": 2.0
+    },
+    {
+     "type": "caption",
+     "text": "\"four bullets through my coat, and two horses shot under me\" \u2014 Washington",
+     "start": 11.0,
+     "duration": 4.5
+    }
+   ]
+  }
+ ]
+}

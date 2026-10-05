@@ -1,0 +1,12 @@
+# LTX-03 — Braddock route draw
+# Scene: scene-06 (15.6s -> 468 frames @30fps)
+# Target: slideforge/assets/ltx/act1_braddock_route.mp4
+# Generate at 30fps if the LTX build allows; conform forces CFR 30 anyway.
+# Input still: slideforge/assets/maps/america_gutierrez_1562.jpg
+# Source generation length: 8.0s
+
+PROMPT:
+Vintage North America map, locked-off. Animate a thin dashed ink line drawing itself from the Pennsylvania woods region toward Fort Duquesne, then a soft circular pulse at the endpoint. Line looks hand-drawn, sepia ink, minimal. Map does not move. No modern UI, no arrows, no text popups.
+
+NEGATIVE:
+modern graphics, glowing neon, people, troops, text generation, map warping
