@@ -83,7 +83,17 @@ VISUAL GRAMMAR — follow it exactly:
 - TerritorySlide for territorial control/claims maps; RecallSlide for
   self-test beats; SpectrumSlide for spectrums and spectrums-of-opinion;
   SketchSlide for hand-drawn-style diagrams; CausalChainSlide for
-  cause->effect chains; VidSlide only for pre-rendered 5090 clips.
+  cause->effect chains.
+- VidSlide + anim_prompt for ATMOSPHERIC VIDEO: when no historic image fits
+  the beat but motion would help (e.g. mist over a river at dawn, desert wind,
+  rain on leaves, empty forest). Write a detailed "anim_prompt" (text-to-video
+  prompt, ≤15s): describe the shot, camera movement, palette, lighting, and
+  what to EXCLUDE (no people, no text, no modern objects, no faces).
+  The clips stage renders it via LTX; VidSlide plays it with your overlays.
+  NEVER use anim_prompt for factual content — maps, portraits, documents,
+  diagrams, and anything the viewer might take as evidence stay as historic
+  images or slideforge-rendered graphics. If a good historic image exists in
+  the manifest, use ImageSlide with that image instead of generating video.
 - NEVER a blank background: every text slide gets the textured default,
   a contextual image from the manifest (era art, map, photo), or an era
   background: "bg": {"type": "era", "unit": N} tints any slide to the

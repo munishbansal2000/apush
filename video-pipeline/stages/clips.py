@@ -374,3 +374,52 @@ def run(ep_dir, cfg, force=False):
     print(f"clips: {len(records)} anim beats, {ready} clips ready "
           f"(manifest: {manifest_path})", flush=True)
     return os.path.join(ep_dir, "clips")
+
+
+def run_from_scene_plan(ep_dir, cfg):
+    """Generate clips for scene-plan scenes carrying anim_prompt.
+
+    Reads <episode>/work/scene_plan.json, renders each scene's anim_prompt
+    via the configured provider, writes to <episode>/clips/<scene_id>.mp4.
+    Scenes without anim_prompt are skipped. VidSlide in the scene plan
+    references clips/<scene_id>.mp4.
+    """
+    import glob
+    work = os.path.join(ep_dir, "work")
+    plan_path = os.path.join(work, "scene_plan.json")
+    if not os.path.exists(plan_path):
+        # fall back to episode-root plan
+        plan_path = os.path.join(ep_dir, "scene_plan.json")
+    if not os.path.exists(plan_path):
+        print("clips: no scene plan, skipping", flush=True)
+        return
+    with open(plan_path, encoding="utf-8") as f:
+        plan = json.load(f)
+
+    clip_cfg = cfg.get("clip_generation", {})
+    provider = clip_cfg.get("provider", "none")
+    if provider == "none":
+        print("clips: provider=none, skipping generation "
+              "(VidSlide falls back to Ken Burns)", flush=True)
+        return
+
+    clips_dir = os.path.join(ep_dir, "clips")
+    os.makedirs(clips_dir, exist_ok=True)
+    for s in plan.get("scenes", []):
+        prompt = s.get("anim_prompt")
+        if not prompt:
+            continue
+        out = os.path.join(clips_dir, f"{s['id']}.mp4")
+        dur = s.get("duration_sec", 10)
+        # Cap at 15s per LTX rule
+        dur = min(dur, 15)
+        if os.path.exists(out):
+            print(f"clips: {s['id']} exists, skipping", flush=True)
+            continue
+        print(f"clips: rendering {s['id']} ({dur}s) via {provider}",
+              flush=True)
+        # Delegate to the provider (ltx/meta-ui/ltx-desktop)
+        # Uses the same provider routing as run()
+        _render_clip(provider, prompt, out, dur, clip_cfg,
+                     seed=s.get("seed", 42))
+    print(f"clips: done -> {clips_dir}", flush=True)

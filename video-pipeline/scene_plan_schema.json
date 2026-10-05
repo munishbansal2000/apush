@@ -234,6 +234,10 @@
       "maxItems": 2,
       "minItems": 2,
       "type": "array"
+     },
+     "anim_prompt": {
+      "type": "string",
+      "description": "LTX text-to-video prompt for atmospheric background clip. Only for scenes where no historic image fits and motion would help. Max 15s. Never for factual content (maps, portraits, documents)."
      }
     },
     "required": [

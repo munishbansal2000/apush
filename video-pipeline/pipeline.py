@@ -40,7 +40,7 @@ STAGES = ["audio", "timing", "wordtiming", "beats", "wordalign", "anim", "clips"
 # "legacy" keeps the original chrome-based beat-segment pipeline.
 RENDERERS = {
     "legacy": STAGES,
-    "slideforge": ["audio", "timing", "wordtiming", "direct", "slideforge_render",
+    "slideforge": ["audio", "timing", "wordtiming", "direct", "clips", "slideforge_render",
                    "assemble", "verify"],
 }
 
@@ -117,6 +117,9 @@ def main():
         elif stage == "wordtiming":
             from stages import wordtiming
             wordtiming.run(ep_dir, cfg)
+        elif stage == "clips":
+            from stages import clips as clips_stage
+            clips_stage.run_from_scene_plan(ep_dir, cfg)
         elif stage == "beats":
             beats.run(ep_dir, cfg)
         elif stage == "wordalign":
