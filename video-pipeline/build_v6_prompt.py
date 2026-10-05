@@ -4,12 +4,12 @@
 The director (LLM) does the semantic work — finding topic shifts. This tool
 does the mechanical work: it gathers script turns, measured turn durations,
 measured word times, and the asset manifest into the canonical prompt
-(docs/director-prompt-v6.txt), so prompts are never hand-assembled (and
+(docs/director-prompt-v10.txt), so prompts are never hand-assembled (and
 word times never hand-copied, estimated, or left stale).
 
 Usage:
     python build_v6_prompt.py <episode> [--turns A-B] [--out path]
-        [--prompt docs/director-prompt-v6.txt] [--topics topics.txt]
+        [--prompt docs/director-prompt-v10.txt] [--topics topics.txt]
 
 --turns slices one act (default: all turns). --topics appends an explicit
 topic map (same "Turn N has TWO topics..." prose as the canonical example)

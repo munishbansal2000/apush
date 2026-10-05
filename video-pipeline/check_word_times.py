@@ -14,7 +14,9 @@ verifies every timed claim in its plan against MEASURED word times:
 
 Vosk mishears some words ("maize"->"mais", "planes" for "plains").
 Record those in a JSON aliases file {"maize": "mais"} — explicit and
-reviewable, not fuzzy matching.
+reviewable, not fuzzy matching. When Vosk hears one word two ways in
+different turns ("potosi" as "potus" and "pota"), list every heard form:
+{"potosi": ["potus", "pota"]}.
 
 Usage:
     python check_word_times.py <plan.json> <timings.json>
@@ -32,14 +34,41 @@ POP_WINDOW = 1.0  # keywordpop must follow its term within ~1s
 
 
 def _norm(text):
+    # Internal apostrophes are preserved: Vosk keeps possessives and
+    # contractions intact ("england's", "couldn't"), so anchors must
+    # match them exactly as shown in WORD TIMES.
     text = text.lower()
-    text = re.sub(r"[^a-z0-9 ]", " ", text)
+    text = re.sub(r"[^a-z0-9' ]", " ", text)
     return re.sub(r"\s+", " ", text).strip()
 
 
 def _load(path):
     with open(path, encoding="utf-8") as f:
         return json.load(f)
+
+
+def _norm_aliases(aliases):
+    """Normalize an aliases map. Values may be one heard form (str) or
+    several (list) when Vosk hears the same word inconsistently."""
+    out = {}
+    for k, v in (aliases or {}).items():
+        if k.startswith("_"):
+            continue
+        vs = v if isinstance(v, list) else [v]
+        normed = [_norm(x) for x in vs]
+        out[_norm(k)] = normed if isinstance(v, list) else normed[0]
+    return out
+
+
+def _expand_heard(words, aliases):
+    """Candidate heard sequences for intended words (cartesian over
+    multi-hearing aliases)."""
+    import itertools
+    options = []
+    for w in words:
+        v = aliases.get(w, w)
+        options.append(v if isinstance(v, list) else [v])
+    return list(itertools.product(*options))
 
 
 def _word_index(timings, word_times):
@@ -64,8 +93,7 @@ def _scene_starts(plan):
 
 
 def check(plan, timings, word_times, aliases=None):
-    aliases = {_norm(k): _norm(v) for k, v in (aliases or {}).items()
-                 if not k.startswith("_")}
+    aliases = _norm_aliases(aliases)
     errors = []
     idx = _word_index(timings, word_times)
     starts = _scene_starts(plan)
@@ -96,20 +124,21 @@ def check(plan, timings, word_times, aliases=None):
             if word == "note":
                 continue
             want = base + float(claimed)
-            heard = aliases.get(_norm(word), _norm(word))
-            cands = [w for w in idx if w[0] == heard
+            hv = aliases.get(_norm(word), _norm(word))
+            variants = hv if isinstance(hv, list) else [hv]
+            cands = [w for w in idx if w[0] in variants
                      and abs(w[1] - want) <= 0.15]
             if not cands:
-                near = [w for w in idx if w[0] == heard]
+                near = [w for w in idx if w[0] in variants]
                 detail = ""
                 if near:
                     best = min(near, key=lambda w: abs(w[1] - want))
-                    detail = (f"; nearest '{heard}'@{best[1]:.2f}s "
+                    detail = (f"; nearest '{best[0]}'@{best[1]:.2f}s "
                               f"({best[2]})")
                 errors.append(
                     f"scene '{sid}': word_times['{word}']={claimed}s "
                     f"(abs {want:.2f}s) matches no measured "
-                    f"'{heard}'{detail}")
+                    f"{'/'.join(variants)}{detail}")
 
         # 3. stagger cues equal word_times values.
         if slide == "staggerslide":
@@ -134,14 +163,15 @@ def check(plan, timings, word_times, aliases=None):
             words = phrase.split()
             # aliases map intended->heard ("maize"->"mais"): translate
             # the phrase side, compare against the raw heard stream.
-            heard = [aliases.get(w, w) for w in words]
+            # Multi-hearing aliases expand to candidate sequences.
             best = None
-            for i in range(len(idx)):
-                seq = [w[0] for w in idx[i:i + len(words)]]
-                if seq == heard:
-                    dt = cue - idx[i][1]
-                    if best is None or abs(dt) < abs(best):
-                        best = dt
+            for heard in _expand_heard(words, aliases):
+                for i in range(len(idx)):
+                    seq = tuple(w[0] for w in idx[i:i + len(words)])
+                    if seq == heard:
+                        dt = cue - idx[i][1]
+                        if best is None or abs(dt) < abs(best):
+                            best = dt
             if best is None:
                 errors.append(
                     f"scene '{sid}': keywordpop '{ov.get('word')}' "

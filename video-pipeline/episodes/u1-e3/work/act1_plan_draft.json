@@ -1,0 +1,954 @@
+{
+ "episode": "u1-e3",
+ "version": 2,
+ "notes": "ACT 1 (silver, turns 0-11 + t12 first word) DIRECTOR DRAFT, anchored (no hand-written seconds; resolve via resolve_cues.py). Rev2 density pass per v10: 14 headlines -> 8 (Zacatecas + mission frontier become Seutter-map callouts; royal fifth + price century become StatSlide count-ups; mercantilism becomes a typing Reveal; missions/control merge into one 11.7s map hold with 4 timed cues). Remaining headlines all carry pops/captions except two intentional staccato beats (killed, mercury echo). Boundary rule: every scene starts on its topic's first spoken word. Maya quips/echoes staged as QuoteSlides (recurring device). Ladder uses the v6 Reveal->Image->Reveal pattern. JOINT RULE: each act ends on the next act's first word, so every scene start in the assembled plan is a measured word (check_word_times stays green). Accepted lint warns: staccato shorts + resume pacing (points 1-3 already read).",
+ "scenes": [
+  {
+   "id": "e3a1-01",
+   "slide": "EraCardSlide",
+   "turns": [
+    0,
+    0
+   ],
+   "params": {
+    "footer": "Spain grabs an empire",
+    "kicker": "UNIT 1 - EPISODE 3",
+    "subtitle": "Europe crashes into the Americas",
+    "title": "Last time: the collision",
+    "unit": 1
+   }
+  },
+  {
+   "id": "e3a1-02",
+   "slide": "StaggerSlide",
+   "turns": [
+    0,
+    1
+   ],
+   "start_anchor": {
+    "turn": 0,
+    "word": "this"
+   },
+   "params": {
+    "entrance_dur": 0.6,
+    "panels": [
+     {
+      "anchor": {
+       "word": "potosi"
+      },
+      "from": "left",
+      "image": "images/potosi-woodcut.jpg",
+      "label": "Potosi - the silver"
+     },
+     {
+      "anchor": {
+       "word": "black"
+      },
+      "from": "bottom",
+      "image": "images/debry-dogs-1598.jpg",
+      "label": "The Black Legend"
+     },
+     {
+      "anchor": {
+       "word": "challenge"
+      },
+      "face_top": true,
+      "from": "right",
+      "image": "images/drake-portrait-1583.jpg",
+      "label": "England's challenge"
+     }
+    ],
+    "title": "Three boxes"
+   },
+   "overlays": [
+    {
+     "anchor": {
+      "word": "circle"
+     },
+     "text": "Circle the ones you couldn't explain",
+     "type": "caption",
+     "until": {
+      "word": "eight"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e3a1-03",
+   "slide": "DisplayHeadline",
+   "turns": [
+    1,
+    1
+   ],
+   "start_anchor": {
+    "turn": 1,
+    "word": "start"
+   },
+   "params": {
+    "bg": {
+     "type": "textured"
+    },
+    "headline": "Start with the money",
+    "sub": "Everything else follows it"
+   }
+  },
+  {
+   "id": "e3a1-04",
+   "slide": "ImageSlide",
+   "turns": [
+    1,
+    1
+   ],
+   "start_anchor": {
+    "nth": 1,
+    "turn": 1,
+    "word": "fifteen"
+   },
+   "params": {
+    "caption": "Silver found in a mountain - now Bolivia",
+    "image": "images/potosi-woodcut.jpg",
+    "title": "Potosi, 1545"
+   },
+   "overlays": [
+    {
+     "anchor": {
+      "word": "silver"
+     },
+     "type": "keywordpop",
+     "word": "SILVER"
+    }
+   ]
+  },
+  {
+   "id": "e3a1-05",
+   "slide": "CalloutSlide",
+   "turns": [
+    1,
+    1
+   ],
+   "start_anchor": {
+    "turn": 1,
+    "word": "year"
+   },
+   "params": {
+    "image": "images/seutter-north-america-1740.png",
+    "callouts": [
+     {
+      "at": [
+       0.28,
+       0.7
+      ],
+      "zoom": 3.2,
+      "label": "Zacatecas",
+      "sub": "A year later — another huge strike"
+     }
+    ],
+    "intro_hold": 0.6,
+    "move_dur": 0.7,
+    "zoom_hold": 1.6
+   },
+   "overlays": [
+    {
+     "anchor": {
+      "word": "Zacatecas"
+     },
+     "type": "keywordpop",
+     "word": "ZACATECAS"
+    }
+   ]
+  },
+  {
+   "id": "e3a1-06",
+   "slide": "KenBurnsSlide",
+   "turns": [
+    1,
+    2
+   ],
+   "start_anchor": {
+    "turn": 1,
+    "word": "potosi",
+    "nth": 2
+   },
+   "params": {
+    "caption": "",
+    "hold": 4.4,
+    "image": "images/potosi-woodcut.jpg",
+    "stops": [
+     [
+      0.5,
+      0.5,
+      1.0
+     ],
+     [
+      0.5,
+      0.62,
+      0.55
+     ]
+    ],
+    "title": "The silver mountain"
+   },
+   "overlays": [
+    {
+     "start": 0,
+     "text": "A city up there with London and Paris",
+     "type": "caption",
+     "until": {
+      "word": "rest"
+     }
+    },
+    {
+     "anchor": {
+      "word": "rest"
+     },
+     "text": "Most of the world's silver - Spanish America",
+     "type": "caption"
+    },
+    {
+     "anchor": {
+      "word": "London"
+     },
+     "type": "keywordpop",
+     "word": "LONDON"
+    },
+    {
+     "anchor": {
+      "word": "Paris"
+     },
+     "type": "keywordpop",
+     "word": "PARIS"
+    },
+    {
+     "anchor": {
+      "word": "silver"
+     },
+     "type": "keywordpop",
+     "word": "SILVER"
+    }
+   ]
+  },
+  {
+   "id": "e3a1-07",
+   "slide": "ImageSlide",
+   "turns": [
+    2,
+    2
+   ],
+   "start_anchor": {
+    "turn": 2,
+    "word": "wait"
+   },
+   "params": {
+    "caption": "Like pirate treasure?",
+    "image": "images/piece-of-eight.jpg",
+    "title": "Pieces of eight?"
+   },
+   "overlays": [
+    {
+     "anchor": {
+      "word": "pieces of eight"
+     },
+     "type": "keywordpop",
+     "word": "PIECES OF EIGHT"
+    },
+    {
+     "anchor": {
+      "word": "pirate treasure"
+     },
+     "type": "keywordpop",
+     "word": "PIRATE TREASURE"
+    }
+   ]
+  },
+  {
+   "id": "e3a1-08",
+   "slide": "ImageSlide",
+   "turns": [
+    3,
+    3
+   ],
+   "start_anchor": {
+    "turn": 3,
+    "word": "those"
+   },
+   "params": {
+    "caption": "Spanish silver dollars, minted from this metal",
+    "image": "images/piece-of-eight.jpg",
+    "title": "Those exact coins"
+   }
+  },
+  {
+   "id": "e3a1-09",
+   "slide": "StatSlide",
+   "turns": [
+    3,
+    3
+   ],
+   "start_anchor": {
+    "turn": 3,
+    "word": "royal"
+   },
+   "params": {
+    "value": 20,
+    "suffix": "%",
+    "label": "The royal fifth"
+   },
+   "overlays": [
+    {
+     "anchor": {
+      "word": "royal fifth"
+     },
+     "type": "keywordpop",
+     "word": "ROYAL FIFTH"
+    },
+    {
+     "anchor": {
+      "word": "twenty percent"
+     },
+     "type": "keywordpop",
+     "word": "TWENTY PERCENT"
+    }
+   ]
+  },
+  {
+   "id": "e3a1-10",
+   "slide": "DisplayHeadline",
+   "turns": [
+    3,
+    4
+   ],
+   "start_anchor": {
+    "turn": 3,
+    "word": "rest"
+   },
+   "params": {
+    "bg": {
+     "type": "textured"
+    },
+    "headline": "Silver flooded the world economy",
+    "sub": ""
+   },
+   "overlays": [
+    {
+     "anchor": {
+      "word": "silk"
+     },
+     "text": "Bolivian silver bought Asian silk and spices",
+     "type": "caption"
+    },
+    {
+     "anchor": {
+      "word": "silk"
+     },
+     "type": "keywordpop",
+     "word": "SILK"
+    }
+   ],
+   "variance": {
+    "rule": "VISUAL_DENSITY",
+    "reason": "No honest asset for silver->silk/spices world flow (needs a world-trade arrow graphic; sourcing?). Headline + caption + SILK pop carry the beat."
+   }
+  },
+  {
+   "id": "e3a1-11",
+   "slide": "QuoteSlide",
+   "turns": [
+    4,
+    4
+   ],
+   "start_anchor": {
+    "turn": 4,
+    "word": "so"
+   },
+   "params": {
+    "byline": "Maya",
+    "quote": "So the whole economy runs on shiny rocks?"
+   }
+  },
+  {
+   "id": "e3a1-12",
+   "slide": "RevealSlide",
+   "turns": [
+    5,
+    5
+   ],
+   "start_anchor": {
+    "nth": 1,
+    "turn": 5,
+    "word": "the"
+   },
+   "params": {
+    "title": "Mercantilism",
+    "points": [
+     {
+      "text": "Wealth is the gold and silver a nation stockpiles",
+      "anchor": {
+       "word": "a",
+       "nth": 2
+      }
+     }
+    ]
+   },
+   "overlays": [
+    {
+     "anchor": {
+      "word": "mercantilism"
+     },
+     "type": "keywordpop",
+     "word": "MERCANTILISM",
+     "until": {
+      "word": "a",
+      "nth": 2
+     }
+    }
+   ]
+  },
+  {
+   "id": "e3a1-13",
+   "slide": "StatSlide",
+   "turns": [
+    5,
+    5
+   ],
+   "start_anchor": {
+    "nth": 2,
+    "turn": 5,
+    "word": "and"
+   },
+   "params": {
+    "value": 100,
+    "label": "Years of silver pushing prices up"
+   }
+  },
+  {
+   "id": "e3a1-14",
+   "slide": "DisplayHeadline",
+   "turns": [
+    5,
+    6
+   ],
+   "start_anchor": {
+    "turn": 5,
+    "word": "historians"
+   },
+   "params": {
+    "bg": {
+     "type": "textured"
+    },
+    "headline": "The price revolution",
+    "sub": ""
+   },
+   "overlays": [
+    {
+     "anchor": {
+      "word": "price revolution"
+     },
+     "type": "keywordpop",
+     "word": "PRICE REVOLUTION"
+    }
+   ]
+  },
+  {
+   "id": "e3a1-15",
+   "slide": "QuoteSlide",
+   "turns": [
+    6,
+    6
+   ],
+   "start_anchor": {
+    "turn": 6,
+    "word": "okay"
+   },
+   "params": {
+    "byline": "Maya",
+    "quote": "Okay, that's disgustingly rich. Who's digging it out?"
+   }
+  },
+  {
+   "id": "e3a1-16",
+   "slide": "DisplayHeadline",
+   "turns": [
+    7,
+    7
+   ],
+   "start_anchor": {
+    "turn": 7,
+    "word": "mostly"
+   },
+   "params": {
+    "bg": {
+     "type": "textured"
+    },
+    "headline": "Forced Native labor",
+    "sub": ""
+   },
+   "overlays": [
+    {
+     "anchor": {
+      "word": "Native labor"
+     },
+     "type": "keywordpop",
+     "word": "NATIVE LABOR"
+    },
+    {
+     "anchor": {
+      "word": "least"
+     },
+     "text": "At least at first",
+     "type": "caption"
+    }
+   ],
+   "variance": {
+    "rule": "VISUAL_DENSITY",
+    "reason": "Bridge beat into the mita image (next scene); NATIVE LABOR pop + caption carry it."
+   }
+  },
+  {
+   "id": "e3a1-17",
+   "slide": "ImageSlide",
+   "turns": [
+    7,
+    7
+   ],
+   "start_anchor": {
+    "turn": 7,
+    "word": "mita"
+   },
+   "params": {
+    "caption": "",
+    "image": "images/potosi-mita.jpg",
+    "title": "The mita"
+   },
+   "overlays": [
+    {
+     "anchor": {
+      "word": "mita"
+     },
+     "type": "keywordpop",
+     "word": "MITA"
+    },
+    {
+     "anchor": {
+      "word": "spanish"
+     },
+     "text": "The Spanish took it over",
+     "type": "caption",
+     "until": {
+      "word": "fifteen"
+     }
+    },
+    {
+     "anchor": {
+      "word": "fifteen"
+     },
+     "text": "Reorganized in the 1570s",
+     "type": "caption"
+    },
+    {
+     "anchor": {
+      "word": "one year in seven"
+     },
+     "type": "keywordpop",
+     "word": "ONE YEAR IN SEVEN"
+    }
+   ]
+  },
+  {
+   "id": "e3a1-18",
+   "slide": "KenBurnsSlide",
+   "turns": [
+    7,
+    7
+   ],
+   "start_anchor": {
+    "turn": 7,
+    "word": "down"
+   },
+   "params": {
+    "caption": "",
+    "hold": 3.8,
+    "image": "images/potosi-mita.jpg",
+    "stops": [
+     [
+      0.5,
+      0.5,
+      0.7
+     ],
+     [
+      0.42,
+      0.45,
+      0.45
+     ]
+    ],
+    "title": "Down in the mines"
+   },
+   "overlays": [
+    {
+     "anchor": {
+      "word": "crushed"
+     },
+     "text": "Crushed ore, mixed with mercury",
+     "type": "caption",
+     "until": {
+      "word": "breathing"
+     }
+    },
+    {
+     "anchor": {
+      "word": "breathing"
+     },
+     "text": "Breathing the fumes the whole time",
+     "type": "caption"
+    },
+    {
+     "anchor": {
+      "word": "mercury"
+     },
+     "type": "keywordpop",
+     "word": "MERCURY"
+    }
+   ]
+  },
+  {
+   "id": "e3a1-19",
+   "slide": "DisplayHeadline",
+   "turns": [
+    7,
+    7
+   ],
+   "start_anchor": {
+    "turn": 7,
+    "word": "killed"
+   },
+   "params": {
+    "bg": {
+     "type": "textured"
+    },
+    "headline": "It killed huge numbers of workers",
+    "sub": ""
+   },
+   "variance": {
+    "rule": "VISUAL_DENSITY",
+    "reason": "Intentional staccato gut-punch; bare text is the device."
+   }
+  },
+  {
+   "id": "e3a1-20",
+   "slide": "DisplayHeadline",
+   "turns": [
+    7,
+    8
+   ],
+   "start_anchor": {
+    "turn": 7,
+    "word": "later"
+   },
+   "params": {
+    "bg": {
+     "type": "textured"
+    },
+    "headline": "Paid hands joined later",
+    "sub": ""
+   },
+   "overlays": [
+    {
+     "anchor": {
+      "word": "but"
+     },
+     "text": "But the draft never went away",
+     "type": "caption"
+    }
+   ],
+   "variance": {
+    "rule": "VISUAL_DENSITY",
+    "reason": "No paired visual for paid-hands-vs-draft; caption carries the turn."
+   }
+  },
+  {
+   "id": "e3a1-21",
+   "slide": "QuoteSlide",
+   "turns": [
+    8,
+    8
+   ],
+   "start_anchor": {
+    "turn": 8,
+    "word": "one"
+   },
+   "params": {
+    "quote": "One year in seven.",
+    "byline": "Maya"
+   }
+  },
+  {
+   "id": "e3a1-22",
+   "slide": "DisplayHeadline",
+   "turns": [
+    9,
+    9
+   ],
+   "start_anchor": {
+    "turn": 9,
+    "word": "the"
+   },
+   "params": {
+    "bg": {
+     "type": "textured"
+    },
+    "headline": "In the dark, breathing mercury.",
+    "sub": ""
+   },
+   "variance": {
+    "rule": "VISUAL_DENSITY",
+    "reason": "Marcus echo of Maya's quote; short text beat (mita image already used twice)."
+   }
+  },
+  {
+   "id": "e3a1-23",
+   "slide": "QuoteSlide",
+   "turns": [
+    10,
+    10
+   ],
+   "start_anchor": {
+    "turn": 10,
+    "word": "and"
+   },
+   "params": {
+    "byline": "Maya",
+    "quote": "And the crown's just... fine with that?"
+   }
+  },
+  {
+   "id": "e3a1-24",
+   "slide": "DisplayHeadline",
+   "turns": [
+    11,
+    11
+   ],
+   "start_anchor": {
+    "nth": 1,
+    "turn": 11,
+    "word": "the"
+   },
+   "params": {
+    "bg": {
+     "type": "textured"
+    },
+    "headline": "The crown needed the money",
+    "sub": ""
+   },
+   "overlays": [
+    {
+     "anchor": {
+      "word": "money"
+     },
+     "type": "keywordpop",
+     "word": "MONEY"
+    },
+    {
+     "anchor": {
+      "word": "that"
+     },
+     "text": "That was the whole debate",
+     "type": "caption",
+     "until": {
+      "word": "silver"
+     }
+    },
+    {
+     "anchor": {
+      "word": "silver"
+     },
+     "text": "Silver wasn't the only machine",
+     "type": "caption"
+    }
+   ]
+  },
+  {
+   "id": "e3a1-25",
+   "slide": "CalloutSlide",
+   "turns": [
+    11,
+    11
+   ],
+   "start_anchor": {
+    "turn": 11,
+    "word": "franciscans"
+   },
+   "params": {
+    "image": "images/seutter-north-america-1740.png",
+    "callouts": [
+     {
+      "at": [
+       0.22,
+       0.56
+      ],
+      "zoom": 3.0,
+      "label": "Missions across the frontier",
+      "sub": ""
+     }
+    ],
+    "intro_hold": 1.0,
+    "move_dur": 1.0,
+    "zoom_hold": 8.0
+   },
+   "overlays": [
+    {
+     "type": "keywordpop",
+     "word": "FRANCISCANS",
+     "anchor": {
+      "word": "Franciscans"
+     }
+    },
+    {
+     "type": "caption",
+     "text": "They said conversion - and they meant it",
+     "anchor": {
+      "word": "said"
+     },
+     "until": {
+      "word": "but"
+     }
+    },
+    {
+     "type": "keywordpop",
+     "word": "NATIVE LABOR",
+     "anchor": {
+      "word": "Native labor"
+     }
+    },
+    {
+     "type": "caption",
+     "text": "Missions also controlled Native labor",
+     "anchor": {
+      "word": "controlled"
+     }
+    }
+   ]
+  },
+  {
+   "id": "e3a1-26",
+   "slide": "RevealSlide",
+   "turns": [
+    11,
+    11
+   ],
+   "start_anchor": {
+    "turn": 11,
+    "word": "then"
+   },
+   "params": {
+    "points": [
+     {
+      "anchor": {
+       "word": "peninsulares"
+      },
+      "text": "Peninsulares - born in Spain, at the top"
+     },
+     {
+      "anchor": {
+       "word": "criollos"
+      },
+      "text": "Criollos - born in the Americas, a step down"
+     }
+    ],
+    "title": "The social ladder"
+   }
+  },
+  {
+   "id": "e3a1-27",
+   "slide": "ImageSlide",
+   "turns": [
+    11,
+    11
+   ],
+   "start_anchor": {
+    "turn": 11,
+    "word": "below"
+   },
+   "params": {
+    "caption": "",
+    "image": "images/casta-painting.jpg",
+    "title": "Below them"
+   },
+   "overlays": [
+    {
+     "anchor": {
+      "word": "mestizos"
+     },
+     "type": "keywordpop",
+     "word": "MESTIZOS"
+    },
+    {
+     "anchor": {
+      "word": "Indigenous peoples"
+     },
+     "type": "keywordpop",
+     "word": "INDIGENOUS PEOPLES",
+     "until": {
+      "word": "castas"
+     }
+    },
+    {
+     "anchor": {
+      "word": "enslaved africans"
+     },
+     "type": "keywordpop",
+     "word": "ENSLAVED AFRICANS"
+    },
+    {
+     "anchor": {
+      "word": "castas"
+     },
+     "type": "keywordpop",
+     "word": "CASTAS"
+    }
+   ]
+  },
+  {
+   "id": "e3a1-28",
+   "slide": "RevealSlide",
+   "turns": [
+    11,
+    12
+   ],
+   "start_anchor": {
+    "turn": 11,
+    "word": "custom"
+   },
+   "end_anchor": {
+    "turn": 12,
+    "word": "that"
+   },
+   "params": {
+    "points": [
+     {
+      "at": -1,
+      "text": "Peninsulares - born in Spain, at the top"
+     },
+     {
+      "at": -1,
+      "text": "Criollos - born in the Americas, a step down"
+     },
+     {
+      "at": -1,
+      "text": "Below: mestizos, Indigenous, Africans, castas"
+     },
+     {
+      "anchor": {
+       "word": "custom"
+      },
+      "text": "Part custom, part law"
+     },
+     {
+      "anchor": {
+       "word": "decided"
+      },
+      "text": "Office and tribute"
+     }
+    ],
+    "title": "The social ladder"
+   }
+  }
+ ]
+}

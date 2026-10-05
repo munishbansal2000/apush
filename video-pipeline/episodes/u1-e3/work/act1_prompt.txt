@@ -1,0 +1,97 @@
+You are the visual director for an APUSH study-video series. You turn a
+locked two-host dialogue script (Maya + Marcus) into a shot-by-shot SCENE
+PLAN for slideforge, a Python animation library that renders every frame.
+
+You do NOT render anything. You output ONLY a JSON object matching the
+scene plan schema (version 2): {"version": 2, "episode": "...",
+"scenes": [{"id": "scene-00", "slide": "TitleSlide",
+"params": {...}, "start_sec": 0.0, "duration_sec": 8.2,
+"transition": "cut", "trans_dur": 0, "overlays": [...]}]}.
+
+The 28 slide types you may use: TitleSlide, BulletSlide, StepsSlide,
+DisplayPointsSlide, DisplayHeadline, CompareSlide, HighlightSlide,
+CollageSlide, TitleCardSlide, DuoSlide, ImageSlide, SplitSlide, QuoteSlide,
+StatSlide, KenBurnsSlide, CalloutSlide, MapZoomSlide, RouteSlide,
+TerritorySlide, RecallSlide, SpectrumSlide, SketchSlide, CausalChainSlide,
+VidSlide, EraCardSlide, StaggerSlide, TacticalSlide, RevealSlide.
+Overlays: keywordpop (giant outlined term), caption, lowerthird
+(name+role), sticker (cutout photo), regionglow (pulsing map tint).
+
+VISUAL GRAMMAR — follow it exactly:
+- TOPIC ALIGNMENT (critical): A visual must appear WHEN its topic is
+  spoken, not seconds before or after. If Marcus says "two societies,
+  side by side" at 4.3s into turn 1, the "Two societies" headline
+  appears at 4.3s into turn 1 — not at the turn start. Use WORD TIMES
+  to find the exact moment. Scenes may split turns at topic boundaries.
+- Key-term KeywordPop: when the script introduces a testable term
+  (e.g. "triangular trade", "salutary neglect"), add a keywordpop overlay
+  starting within ~1 second of the spoken term.
+- StaggerSlide when the narration NAMES 2-4 items in sequence (e.g. "Three
+  boxes: maize, Iroquois, wilderness" or "Southwest, Plains, Northeast").
+  Each panel's "at" is when it must be FULLY VISIBLE (the entrance
+  completes at this time, starting 0.6s earlier). Set "at" to the EXACT
+  word-time from WORD TIMES. NEVER estimate.
+  Panels: {"image": manifest path, "label": "...", "at": seconds, "from":
+  "left"|"right"|"top"|"bottom"}. Use "face_top": true for portraits.
+- RevealSlide for Heimler-style enumerated points: title banner + numbered
+  points that TYPE IN. Use when the narrator lists effects, causes, or
+  features. Points: [{"text": "...", "at": seconds when typing starts,
+  "sub": "optional sub-bullet"}]. If at < 0, the point is already fully
+  visible (use when returning to a slide after a cutaway).
+  Pattern: RevealSlide (point 1 types) -> CUT to ImageSlide (historic
+  image while narrator discusses point 1) -> CUT BACK to RevealSlide
+  (point 1 at:-1, point 2 types) -> CUT to ImageSlide -> etc.
+- DisplayHeadline for section headers. The headline must match what's
+  being spoken WHEN it appears (see TOPIC ALIGNMENT).
+- ImageSlide for full-bleed historic images with caption.
+- NEVER a blank background: every text slide gets the textured default,
+  a contextual image, or "bg": {"type": "era", "unit": N}.
+- Eyes-closed-safe: audio must stand alone. Visuals ADD — they never
+  carry meaning the narration does not state.
+- Scene timing: "start_sec" is absolute seconds from episode start.
+  "duration_sec" is the scene length. Scenes must partition the timeline
+  contiguously: scene 0 starts at 0.0, each scene starts where the previous
+  ended, no gaps, no overlaps. The compiler REJECTS gaps/overlaps >= 1 frame.
+  Scenes MAY split turns at topic boundaries (see TOPIC ALIGNMENT).
+- params.image / bg.path: use ONLY paths from the manifest. Absolute
+  paths are rejected.
+
+Output ONLY the JSON object. No prose, no markdown fences.
+
+EPISODE: u1-e3
+
+SCRIPT TURNS (speaker, duration_sec, text):
+[00] Maya (23.904s): Last time: the collision, Europe crashing into the Americas, and Spain grabbing an empire. This time: what Spain built with it, and why England spent decades trying to steal it. Three boxes on your sheet: Potosí, the Black Legend, and England's challenge. Circle the ones you couldn't explain right now. Eight minutes, and you'll check all three off.
+  WORD TIMES: last@0.18s time@0.57s the@1.14s collision@1.32s europe@1.95s crashing@2.31s into@2.79s the@2.97s americas@3.12s and@3.99s spain@4.17s grabbing@4.59s an@4.98s empire@5.08s this@6.54s time@6.87s what@7.35s spain@7.65s built@8.01s with@8.22s it@8.4s and@8.7s why@8.85s england@9.03s spent@9.42s decades@9.72s trying@10.2s to@10.5s steal@10.59s it@10.92s three@12.09s boxes@12.36s on@12.84s your@12.96s sheet@13.08s potus@13.65s see@14.02s the@14.43s black@14.55s legend@14.85s and@15.42s england's@15.6s challenge@16.02s circle@17.52s the@18.0s ones@18.12s you@18.39s couldn't@18.51s explain@18.81s right@19.29s now@19.53s eight@20.79s minutes@21.0s and@21.57s you'll@21.75s check@21.9s all@22.23s three@22.41s off@22.68s
+[01] Marcus (23.352s): Start with the money, because everything else follows it. In 1545, silver is found at Potosí, a mountain in what's now Bolivia. A year later, another huge strike at Zacatecas, in Mexico. Potosí grew into one of the biggest cities on earth, up there with London and Paris, and for the rest of the 1500s, most of the world's silver came out of Spanish America.
+  WORD TIMES: start@0.18s with@0.57s the@0.75s money@0.84s because@1.29s everything@1.65s else@2.1s follows@2.34s it@2.7s in@3.84s fifteen@3.99s forty@4.41s five@4.71s silver@5.16s is@5.64s founded@5.79s pota@6.15s see@6.47s a@6.99s mountain@7.08s in@7.44s what's@7.59s now@7.83s bolivia@8.01s a@9.51s year@9.6s later@9.81s another@10.26s huge@10.65s strike@10.95s at@11.34s soccer@11.43s take@11.73s takers@11.9s in@12.27s mexico@12.42s potus@13.89s he@14.31s grew@14.4s into@14.64s one@14.82s of@15.0s the@15.09s biggest@15.18s cities@15.54s on@15.87s earth@16.02s up@16.41s there@16.59s with@16.74s london@16.92s and@17.28s paris@17.37s and@18.03s for@18.21s the@18.33s rest@18.42s of@18.69s the@18.78s fifteen@18.87s hundreds@19.29s most@19.89s of@20.19s the@20.25s world@20.37s silver@20.67s came@21.06s out@21.3s of@21.45s spanish@21.51s america@21.99s
+[02] Maya (4.464s): Wait, pieces of eight? Like pirate treasure?
+  WORD TIMES: wait@0.18s pieces@0.69s of@1.11s eight@1.2s like@2.4s pirate@2.76s treasure@3.18s
+[03] Marcus (19.176s): Those exact coins. Spanish silver dollars, minted from this metal. And the crown took a cut of everything: the royal fifth, twenty percent off the top. The rest flooded the world economy. Silver dug out of a Bolivian mountain ended up paying for silk and spices from Asia.
+  WORD TIMES: those@0.18s exact@0.48s coins@0.93s spanish@2.37s silver@2.91s dollars@3.21s minted@3.84s from@4.26s this@4.44s metal@4.65s and@5.94s the@6.15s crown@6.21s took@6.54s a@6.75s cut@6.78s of@7.02s everything@7.14s the@7.74s royal@7.86s fifth@8.19s twenty@8.73s percent@9.06s off@9.48s the@9.66s top@9.78s the@11.04s rest@11.16s flooded@11.52s the@11.91s world@12.03s economy@12.39s silver@13.92s dug@14.37s out@14.64s of@14.82s a@14.94s bolivian@14.97s mountain@15.51s ended@15.87s up@16.2s paying@16.32s for@16.65s silk@16.8s and@17.16s spices@17.25s from@17.73s asia@17.94s
+[04] Maya (3.48s): So the whole economy runs on shiny rocks?
+  WORD TIMES: so@0.15s the@0.42s whole@0.54s economy@0.81s runs@1.32s on@1.65s shiny@1.8s rocks@2.13s
+[05] Marcus (15.384s): The idea even has a name: mercantilism. A nation's wealth is the gold and silver it stockpiles. And all that silver pouring in pushed prices up across Europe for a century. Historians call it the price revolution.
+  WORD TIMES: the@0.15s idea@0.33s even@0.81s has@1.08s a@1.32s name@1.38s mercantilism@1.86s a@3.72s nation's@3.84s wealth@4.29s as@4.59s the@4.76s gold@4.86s and@5.25s silver@5.34s it@5.76s stockpiles@5.89s and@7.53s all@7.71s that@7.86s silver@8.04s pouring@8.43s and@8.82s pushed@8.94s prices@9.24s up@9.69s across@9.84s europe@10.2s for@10.53s a@10.71s century@10.77s historians@12.27s call@13.02s it@13.29s the@13.41s price@13.5s revolution@13.86s
+[06] Maya (5.016s): Okay, that's disgustingly rich. Who's digging it out?
+  WORD TIMES: okay@0.18s that's@0.81s disgustingly@1.08s rich@1.77s who's@3.15s digging@3.39s it@3.72s out@3.81s
+[07] Marcus (31.056s): Mostly forced Native labor, at least at first. At Potosí it was called the mita. The Spanish took the Inca labor draft and reorganized it in the 1570s: villages sent a rotating share of men, about one year in seven. Down in the mines they crushed ore and mixed it with mercury to pull the silver out, a trick the Spanish also brought in the 1570s, breathing the fumes the whole time. It killed huge numbers of workers. Later, paid hands joined them, but the draft never went away.
+  WORD TIMES: mostly@0.18s force@0.6s native@0.94s labor@1.29s at@1.8s least@1.98s at@2.28s first@2.37s and@3.75s potus@3.93s see@4.33s it@4.62s was@4.74s called@4.92s the@5.22s meta@5.28s the@6.63s spanish@6.75s took@7.14s the@7.35s inca@7.47s labor@7.71s draft@8.04s and@8.43s reorganized@8.55s it@9.24s in@9.36s the@9.45s fifteen@9.54s seventies@9.94s villages@10.68s sent@11.19s a@11.4s rotating@11.46s share@11.97s of@12.21s men@12.33s about@12.72s one@13.02s year@13.26s and@13.44s seven@13.59s down@14.88s in@15.12s the@15.21s minds@15.27s they@15.57s crushed@15.72s or@16.11s in@16.29s mixed@16.41s in@16.71s with@16.83s mercury@16.98s to@17.49s pull@17.61s the@17.82s silver@17.94s out@18.33s a@18.81s trick@18.9s the@19.17s spanish@19.26s also@19.68s brought@19.95s in@20.22s the@20.31s fifteen@20.37s seventies@20.79s breathing@21.54s the@21.9s fumes@21.99s the@22.35s whole@22.47s time@22.68s it@23.94s killed@24.09s huge@24.39s numbers@24.75s of@25.17s workers@25.29s later@26.76s paid@27.27s hands@27.57s joined@27.87s them@28.17s but@28.59s the@28.77s draft@28.86s never@29.28s went@29.58s away@29.79s
+[08] Maya (2.208s): One year in seven.
+  WORD TIMES: one@0.18s year@0.48s and@0.75s seven@0.87s
+[09] Marcus (2.88s): In the dark, breathing mercury.
+  WORD TIMES: in@0.18s the@0.36s dark@0.45s breathing@1.02s mercury@1.47s
+[10] Maya (3.0s): And the crown's just... fine with that?
+  WORD TIMES: and@0.18s the@0.36s crown's@0.45s just@0.84s do@1.14s fine@1.32s with@1.62s that@1.77s
+[11] Marcus (45.504s): The crown needed the money. That was the whole debate. And silver wasn't the only machine. The Franciscans built missions across the frontier. They said conversion, and they meant it. But the missions also controlled Native labor and anchored Spanish towns wherever they went. Then there's the social ladder. Peninsulares, literally 'from the peninsula,' Spaniards born in Spain, at the top. Criollos, Spaniards born in the Americas, a step down. Below them: mestizos of mixed Spanish and Native ancestry, Indigenous peoples, enslaved Africans, and the mixed castas. Part custom, part law. It decided who could hold office and who paid tribute.
+  WORD TIMES: the@0.15s crown@0.3s needed@0.69s the@1.02s money@1.11s that@2.46s was@2.76s the@2.94s whole@3.09s debate@3.36s and@4.83s silver@5.01s wasn't@5.4s the@5.82s only@5.94s machine@6.27s the@7.68s franciscans@7.8s built@8.55s missions@8.82s across@9.27s the@9.63s frontier@9.75s they@11.34s said@11.49s conversion@11.76s and@12.51s they@12.72s meant@12.84s it@13.08s but@14.16s the@14.34s missions@14.43s also@14.85s controlled@15.15s native@15.63s labor@15.96s and@16.32s anchored@16.44s spanish@16.83s towns@17.25s wherever@17.61s they@18.03s went@18.15s then@19.47s there's@19.74s the@19.98s social@20.1s ladder@20.58s peninsular@21.96s literally@22.83s from@23.4s the@23.64s peninsula@23.73s spaniards@24.48s born@25.08s in@25.35s spain@25.47s at@26.04s the@26.22s top@26.31s creole@27.6s los@27.96s spaniards@28.29s born@28.86s in@29.16s the@29.28s americas@29.4s a@30.12s step@30.21s down@30.51s below@31.8s them@32.1s diesels@32.7s of@33.08s mixed@33.21s spanish@33.51s and@33.93s native@34.05s ancestry@34.38s indigenous@35.04s peoples@35.64s enslaved@36.21s africans@36.69s and@37.41s the@37.56s mixed@37.62s casters@37.89s park@39.39s custom@39.69s part@40.29s law@40.59s it@41.88s decided@42.06s who@42.57s could@42.72s hold@42.9s office@43.17s and@43.59s who@43.74s paid@43.89s tribute@44.16s
+
+ASSET MANIFEST:
+images/caravel-fleet.jpg [photo]: Fleet of Galleys Escorted by a Caravel — Frans Huys (after Pieter Bruegel the Elder), from 'The Sailing Vessels' series, c.1565; Metropolitan Museum of Art, MM15834. A square-rigged caravel with billowing sails and streaming pennants at sea, escorted by lateen-rigged galleys. — CC0 dedication (public-domain dedication); artist Frans Huys d. 1562, PD-old.
+images/casta-painting.jpg [photo]: De español e india, mestiza — Casta painting labeled 'De español e india, mestiza' (From a Spaniard and an Indigenous woman, a mestiza child), 18th century. — Casta painting labeled 'De español e india, mestiza' (From a Spaniard and an Indigenous woman, a mestiza child), 18th century. [PD: pre-1930], via Wikimedia Commons
+images/lascasas-cruelty.jpg [photo]: 1665 German edition of Las Casas 01 — Engraving from a 1665 German edition of Bartolome de las Casas's writings, depicting Spanish cruelty toward Native peoples in the Americas. — Engraving from a 1665 German edition of Bartolome de las Casas's writings, depicting Spanish cruelty toward Native peoples in the Americas. [PD: pre-1930], via Wikimedia Commons
+images/lascasas-portrait.jpg [photo]: Bartolome de las Casas at his writing desk — engraving portrait, 1791 (pre-1930 publication); Dominican friar holding a quill, with draped curtain, ink pot, and bookshelf — Public domain (Commons LicenseShortName verified via API; 1791 engraving, pre-1930 publication), via Wikimedia Commons
+images/potosi-mita.jpg [photo]: Indigenous workers in a mine in Potosí, New Spain — Theodor de Bry engraving (1590) of Indigenous mit'a laborers with ore baskets and rock-breaking inside the Potosi silver mine — Public domain (work dated 1590, artist d.1598; verified via Commons API 2026-10-03), via Wikimedia Commons
+images/potosi-woodcut.jpg [photo]: Capitulo-CIX — Woodcut of Potosi from Pedro Cieza de Leon, Cronica del Peru, 1553; pre-1930 — Woodcut of Potosi from Pedro Cieza de Leon, Cronica del Peru, 1553; pre-1930, via Wikimedia Commons
+
+Write the scene plan JSON now. Remember TOPIC ALIGNMENT: visuals appear WHEN their topic is spoken.

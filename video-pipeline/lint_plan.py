@@ -5,6 +5,11 @@ missing image, bad param). This module fail-fasts on *visual* problems that
 would otherwise render into a broken video:
 
   errors (raise PlanError, block the compile)
+    - unresolved word anchors (start_anchor/end_anchor/anchor):
+      run resolve_cues.py first, then lint the resolved plan
+    - v2 VISUAL_DENSITY: bare DisplayHeadline scenes, or more than 3
+      unflagged DisplayHeadlines per plan — enrich the scenes or flag a
+      variance ({"rule", "reason"}); flagged variances surface as warns
     - two overlays colliding in space AND time within one scene
     - an overlay running past its scene's end, starting before it,
       or never visible at all (starts at/past the scene end)
@@ -48,6 +53,85 @@ OVERLAY_MIN = {            # don't-flash floors, seconds -> warn
     "regionglow": 1.5,
 }
 TRANSITION_EAT_WARN = 0.25  # warn when a transition exceeds this share
+# Renderer-true defaults for omitted overlay durations (must match
+# slideforge/overlays.py): collision math on anything else invents
+# spans the viewer never sees.
+RENDERER_DEFAULT_DUR = {"keywordpop": 3.0, "lowerthird": 3.5}
+# v2 visual density (v9/v10): DisplayHeadline is for major section
+# breaks only. Scenes past the cap — or bare headline scenes anywhere —
+# must carry a variance (rule + reason) instead of hallucinating a
+# visual. v1 plans predate the rule and are exempt.
+DENSITY_HEADLINE_MAX = 3
+DENSITY_RULES = ("VISUAL_DENSITY",)
+
+
+def _density_errors(plan):
+    """VISUAL_DENSITY: errors for unflagged violations, VARIANCE lines
+    surfaced as warns for flagged ones (they want human eyes)."""
+    errors, warns = [], []
+    if plan.get("version") != 2:
+        return errors, warns
+    scenes = plan.get("scenes", [])
+    heads = [(i, s) for i, s in enumerate(scenes)
+             if str(s.get("slide", "")).lower() == "displayheadline"]
+    unflagged = [s.get("id", "scene-%02d" % i) for i, s in heads
+                 if "variance" not in s]
+    if len(unflagged) > DENSITY_HEADLINE_MAX:
+        errors.append(
+            f"v2 VISUAL_DENSITY: {len(unflagged)} unflagged "
+            f"DisplayHeadlines ({', '.join(unflagged)}) exceed "
+            f"{DENSITY_HEADLINE_MAX} — enrich the scenes or flag all "
+            "but 3 section breaks with a variance")
+    for i, s in heads:
+        sid = s.get("id", "scene-%02d" % i)
+        var = s.get("variance")
+        if var is not None:
+            if not isinstance(var, dict):
+                errors.append(f"scene '{sid}': variance must be "
+                                '{"rule": ..., "reason": ...}')
+                continue
+            if var.get("rule") not in DENSITY_RULES:
+                errors.append(
+                    f"scene '{sid}': unknown variance rule "
+                    f"{var.get('rule')!r} (known: "
+                    f"{', '.join(DENSITY_RULES)})")
+                continue
+            if not isinstance(var.get("reason"), str) or \
+                    not var["reason"].strip():
+                errors.append(f"scene '{sid}': variance needs a "
+                                "non-empty reason")
+                continue
+            warns.append(f"VARIANCE scene '{sid}' "
+                         f"[{var['rule']}]: {var['reason']}")
+            continue
+        sub = (s.get("params") or {}).get("sub", "")
+        bare = not (isinstance(sub, str) and sub.strip()) and \
+            not (s.get("overlays") or [])
+        if bare:
+            errors.append(
+                f"scene '{sid}': bare DisplayHeadline (no sub, no "
+                "overlays) violates VISUAL_DENSITY — enrich it or "
+                "flag a variance")
+    return errors, warns
+
+
+def _anchor_sites(spec):
+    """Where-clauses for unresolved anchor keys in one scene."""
+    sites = []
+    for key in ("start_anchor", "end_anchor"):
+        if key in spec:
+            sites.append(key)
+    for idx, ov in enumerate(spec.get("overlays") or []):
+        if isinstance(ov, dict) and "anchor" in ov:
+            sites.append("overlays[%d].anchor" % idx)
+    params = spec.get("params") or {}
+    for idx, p in enumerate(params.get("panels") or []):
+        if isinstance(p, dict) and "anchor" in p:
+            sites.append("panels[%d].anchor" % idx)
+    for idx, p in enumerate(params.get("points") or []):
+        if isinstance(p, dict) and "anchor" in p:
+            sites.append("points[%d].anchor" % idx)
+    return sites
 # -------------------------------------------------------------------------
 
 # Approximate screen regions as (x0, y0, x1, y1) fractions of frame size,
@@ -111,6 +195,16 @@ def lint_plan(plan):
     """Return (errors, warns). Errors are PlanError-ready strings."""
     errors, warns = [], []
     scenes = plan.get("scenes", [])
+    for i, spec in enumerate(scenes):
+        sid = spec.get("id", f"scene-{i:02d}")
+        sites = _anchor_sites(spec)
+        if sites:
+            errors.append(
+                f"scene '{sid}': unresolved anchor keys "
+                f"({', '.join(sites)}) \u2014 run resolve_cues.py "
+                f"first, then lint the resolved plan")
+    if errors:
+        return errors, warns
 
     if plan.get("version") == 2:
         # v2 partitions absolute time: scene 0 at 0.0, each scene
@@ -137,6 +231,10 @@ def lint_plan(plan):
 
     def scene_dur(i):
         return float(scenes[i].get("duration_sec", 0))
+
+    density_errors, density_warns = _density_errors(plan)
+    errors.extend(density_errors)
+    warns.extend(density_warns)
 
     for i, spec in enumerate(scenes):
         sid = spec.get("id", f"scene-{i:02d}")
@@ -169,7 +267,11 @@ def lint_plan(plan):
             otype = str(ov.get("type", "")).lower()
             start = float(ov.get("start", 0))
             odur = ov.get("duration")
-            odur = float(odur) if odur is not None else dur - start
+            if odur is None:
+                default = RENDERER_DEFAULT_DUR.get(otype)
+                odur = dur - start if default is None \
+                    else min(default, dur - start)
+            odur = float(odur)
             if start < 0:
                 errors.append(
                     f"scene '{sid}': overlay #{idx} ({otype}) "

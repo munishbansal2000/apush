@@ -20,10 +20,10 @@ def _v2_plan():
         "episode": "v2test",
         "scenes": [
             {"id": "scene-00", "slide": "DisplayHeadline",
-             "params": {"headline": "Three boxes"},
+             "params": {"headline": "Three boxes", "sub": "x"},
              "start_sec": 0.0, "duration_sec": 13.5},
             {"id": "scene-01", "slide": "DisplayHeadline",
-             "params": {"headline": "Cahokia"},
+             "params": {"headline": "Cahokia", "sub": "x"},
              "start_sec": 13.5, "duration_sec": 6.6},
         ],
     }

@@ -13,6 +13,18 @@ Providers (mirrors slideforge's gen.py plugin pattern):
           scene plan JSON back from a file path (--plan-file). For human or
           outer-agent loops.
   openai  Responses API structured output (needs OPENAI_API_KEY).
+  ollama  local Ollama chat API, JSON mode (no key; needs Ollama serving
+          a capable model, e.g. OLLAMA_MODEL=qwen3.8:27b).
+  meta    Meta API Responses API, strict JSON schema (needs
+          MODEL_API_KEY; see sat_question_runner/new_eng_qs/lib/
+          meta_api.js, ported to stdlib — same endpoint, model pin,
+          and strict-schema conversion).
+
+Model providers (openai, ollama) share one contract: the system prompt is
+the canonical docs/director-prompt-v6.txt (word-anchored v2 output, never
+hand-written seconds) and the user block carries turns with measured word
+times plus the asset manifest. The returned plan is an ANCHORED draft -
+stages/direct.py resolves it via resolve_cues.py before validation.
 
 Turns: [{"speaker": "Maya", "text": "...", "duration_sec": 12.3}, ...]
 Manifest: [{"path": "portraits/las_casas.jpg", "kind": "portrait",
@@ -24,6 +36,27 @@ import sys
 
 _HERE = os.path.dirname(os.path.abspath(__file__))
 _SCHEMA_PATH = os.path.join(_HERE, "scene_plan_schema.json")
+_PROMPT_DOC = os.path.join(os.path.dirname(_HERE), "docs",
+                           "director-prompt-v10.txt")
+_PROMPT_CUT = "Output ONLY the JSON object. No prose, no markdown fences."
+
+
+def _director_system():
+    """Canonical director system prompt (single source of truth).
+
+    docs/director-prompt-v10.txt (= v9 rules on the v6 anchor
+    format) mixes the canonical prompt with a worked
+    u1-e1 example; only the head (through the Output-ONLY line) is the
+    reusable system prompt. The example stays in the doc, not in
+    model calls for other episodes.
+    """
+    with open(_PROMPT_DOC, encoding="utf-8") as f:
+        doc = f.read()
+    head, sep, _ = doc.partition(_PROMPT_CUT)
+    if not sep:
+        raise RuntimeError("director prompt doc lost its cut marker: "
+                       f"{_PROMPT_DOC}")
+    return (head + sep).strip() + "\n"
 
 SYSTEM_PROMPT = """\
 You are the visual director for an APUSH study-video series. You turn a
@@ -143,8 +176,8 @@ def _load_schema():
         return json.load(f)
 
 
-def build_prompt(episode, turns, manifest, recipe=None):
-    """Render the full director prompt (system + user) as one string.
+def _user_block(episode, turns, manifest, recipe=None):
+    """User block: turns with measured word times + asset manifest.
 
     recipe: {"gap", "offset", "tail"} from timings.json — when nonzero, the
     prompt states the scene-duration formula so the LLM's arithmetic matches
@@ -179,7 +212,18 @@ def build_prompt(episode, turns, manifest, recipe=None):
         episode=episode,
         turns="\n".join(turn_lines),
         manifest="\n".join(man_lines) or "(no assets)")
-    return SYSTEM_PROMPT + "\n\n" + user
+    return user
+
+
+def build_prompt(episode, turns, manifest, recipe=None, system=None):
+    """Render the full director prompt (system + user) as one string.
+
+    system overrides the default (legacy v1) system prompt — model
+    providers pass _director_system().
+    """
+    sys_prompt = SYSTEM_PROMPT if system is None else system
+    return (sys_prompt + "\n\n" + _user_block(
+        episode, turns, manifest, recipe=recipe))
 
 
 # ---------------------------------------------------------------- providers
@@ -224,6 +268,18 @@ def _provider_agent(episode, turns, manifest, plan_file=None, **kwargs):
     return plan
 
 
+def _check_model_plan(plan, provider):
+    """Fail fast when a model returns a non-plan (wrong shape/version)."""
+    if not isinstance(plan, dict) or plan.get("version") != 2 \
+            or not isinstance(plan.get("scenes"), list) \
+            or not plan["scenes"]:
+        excerpt = json.dumps(plan)[:300]
+        raise RuntimeError(
+            f"{provider} provider: expected a v2 anchored scene plan, got: "
+            f"{excerpt}")
+    return plan
+
+
 def _provider_openai(episode, turns, manifest, model="gpt-5",
                      timeout=300, **kwargs):
     """Responses API with structured output (needs OPENAI_API_KEY)."""
@@ -237,20 +293,10 @@ def _provider_openai(episode, turns, manifest, model="gpt-5",
         "model": model,
         "input": [
             {"role": "system",
-             "content": [{"type": "input_text", "text": SYSTEM_PROMPT}]},
+             "content": [{"type": "input_text", "text": _director_system()}]},
             {"role": "user", "content": [{
                 "type": "input_text",
-                "text": DIRECTOR_USER_TEMPLATE.format(
-                    episode=episode,
-                    turns="\n".join(
-                        f"[{i:02d}] {t.get('speaker', '?')} "
-                        f"({t.get('duration_sec', 0):.1f}s): "
-                        f"{t.get('text', '')}"
-                        for i, t in enumerate(turns)),
-                    manifest="\n".join(
-                        f"{m.get('path')} [{m.get('kind', '?')}]: "
-                        f"{m.get('description', '')}"
-                        for m in manifest) or "(no assets)")}]}],
+                "text": _user_block(episode, turns, manifest)}]}],
         "text": {"format": {
             "type": "json_schema",
             "name": "scene_plan",
@@ -268,14 +314,203 @@ def _provider_openai(episode, turns, manifest, model="gpt-5",
         if item.get("type") == "message":
             for part in item.get("content", []):
                 if part.get("type") == "output_text":
-                    return json.loads(part["text"])
+                    return _check_model_plan(json.loads(part["text"]),
+                                             "openai")
     raise RuntimeError("openai provider: no output_text in response")
+
+
+def _provider_ollama(episode, turns, manifest, model=None, timeout=900,
+                     host=None, temperature=0.2, num_ctx=16384,
+                     **kwargs):
+    """Local Ollama chat API in JSON mode (no key needed).
+
+    model defaults to $OLLAMA_MODEL (else qwen3.8:27b); host defaults to
+    $OLLAMA_URL (else http://localhost:11434, same as ce-forge). Low
+    structure; num_ctx must fit prompt + plan (slice per act).
+    """
+    import urllib.request  # noqa: E402
+
+    model = model or os.environ.get("OLLAMA_MODEL", "qwen3.8:27b")
+    host = (host or os.environ.get("OLLAMA_URL",
+                                   "http://localhost:11434")).rstrip("/")
+    body = json.dumps({
+        "model": model,
+        "stream": False,
+        "format": "json",
+        "messages": [
+            {"role": "system", "content": _director_system()},
+            {"role": "user",
+             "content": _user_block(episode, turns, manifest)},
+        ],
+        "options": {"temperature": temperature, "num_ctx": num_ctx},
+    }).encode("utf-8")
+    req = urllib.request.Request(
+        host + "/api/chat", data=body,
+        headers={"Content-Type": "application/json"})
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+    except OSError as e:
+        raise RuntimeError(
+            f"ollama provider: cannot reach {host} ({e}); is Ollama "
+            f"serving (ollama serve / ollama run {model})?")
+    content = (data.get("message") or {}).get("content", "")
+    if data.get("done") is False:
+        raise RuntimeError(
+            "ollama provider: response truncated (done=false); raise "
+            "num_ctx or slice fewer turns")
+    try:
+        plan = json.loads(content)
+    except ValueError:
+        raise RuntimeError(
+            "ollama provider: non-JSON output: " + content[:300])
+    return _check_model_plan(plan, "ollama")
+
+
+_META_MODEL = "muse-spark-1.3-contributor"
+_META_BASE = "https://api.meta.ai/v1"
+
+
+def _strict_schema_for(schema):
+    """Narrow a JSON Schema to Meta structured-output subset (meta_api.js port).
+
+    Drops transport-incompatible keywords; every object property becomes
+    required (logically-optional ones as anyOf [T, null], stripped from
+    the response by _strip_optional_nulls).
+    """
+    if isinstance(schema, list):
+        return [_strict_schema_for(s) for s in schema]
+    if not isinstance(schema, dict):
+        return schema
+    out = {k: _strict_schema_for(v) for k, v in schema.items()
+           if k != "uniqueItems"}
+    if schema.get("type") == "object" and schema.get("properties"):
+        required = set(schema.get("required") or [])
+        props = {}
+        for key, prop in schema["properties"].items():
+            conv = _strict_schema_for(prop)
+            props[key] = conv if key in required else {
+                "anyOf": [conv, {"type": "null"}]}
+        out["properties"] = props
+        out["required"] = sorted(schema["properties"])
+        out["additionalProperties"] = False
+    return out
+
+
+def _strip_optional_nulls(value, schema):
+    """Drop nulls the strict conversion introduced (meta_api.js port)."""
+    if isinstance(value, list):
+        items = schema.get("items") if isinstance(schema, dict) else None
+        return [_strip_optional_nulls(v, items) for v in value]
+    if not isinstance(value, dict) or not isinstance(schema, dict):
+        return value
+    if schema.get("type") == "object" and schema.get("properties"):
+        required = set(schema.get("required") or [])
+        return {k: _strip_optional_nulls(v, schema["properties"].get(k))
+                for k, v in value.items()
+                if v is not None or k in required}
+    return value
+
+
+def _director_response_schema():
+    """Loose strict-mode schema for director output.
+
+    The full scene_plan_schema.json uses if/then/else (v1/v2 conditional),
+    which strict structured-output validators reject. The v6 system prompt
+    carries the real contract (as with ollama's schemaless JSON mode) and
+    resolve_cues.py + lint + check_word_times validate downstream — the
+    schema here only enforces "a v2 plan-shaped object".
+    """
+    return {"type": "object",
+            "properties": {"version": {"type": "integer"},
+                           "episode": {"type": "string"},
+                           "scenes": {"type": "array"}},
+            "required": ["version", "episode", "scenes"]}
+
+
+def _provider_meta(episode, turns, manifest, model=_META_MODEL,
+                   timeout=900, **kwargs):
+    """Meta API Responses API, strict JSON schema (needs MODEL_API_KEY).
+
+    stdlib port of sat_question_runner/new_eng_qs/lib/meta_api.js:
+    same endpoint ($META_API_BASE_URL), model pin, compatibility note,
+    and response parsing. Single user message (system + user concatenated),
+    matching the lib's proven call shape.
+    """
+    import urllib.request  # noqa: E402
+
+    key = os.environ.get("MODEL_API_KEY")
+    if not key:
+        raise RuntimeError("MODEL_API_KEY is not set")
+    if model != _META_MODEL:
+        raise RuntimeError(f"Meta API model must be {_META_MODEL}")
+    base = os.environ.get("META_API_BASE_URL", _META_BASE).rstrip("/")
+    schema = _director_response_schema()
+    note = ("\n\nSTRUCTURED OUTPUT NOTE: Every schema property is required "
+            "by this API. For logically optional sparse-patch fields, return "
+            "null when absent; null optional fields are removed locally "
+            "before validation.")
+    prompt = _director_system() + "\n" + _user_block(episode, turns, manifest) + note
+    body = json.dumps({
+        "model": model,
+        "input": [{"role": "user",
+                   "content": [{"type": "input_text", "text": prompt}]}],
+        "text": {"format": {
+            "type": "json_schema",
+            "name": "scene_plan",
+            "strict": True,
+            "schema": _strict_schema_for(schema),
+        }},
+    }).encode("utf-8")
+    req = urllib.request.Request(
+        base + "/responses", data=body,
+        headers={"authorization": f"Bearer {key}",
+                 "content-type": "application/json"})
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
+            raw_body = resp.read().decode("utf-8")
+    except OSError as e:
+        raise RuntimeError(f"meta provider: request failed: {e}")
+    try:
+        data = json.loads(raw_body)
+    except ValueError:
+        raise RuntimeError("meta provider: non-JSON response: "
+                           + raw_body[:300])
+    text = ""
+    if isinstance(data.get("output_text"), str) and data["output_text"].strip():
+        text = data["output_text"]
+    else:
+        for item in data.get("output", []):
+            for part in item.get("content", []):
+                for key in ("text", "output_text"):
+                    val = part.get(key)
+                    if isinstance(val, str) and val.strip():
+                        text = val
+                        break
+                if text:
+                    break
+            if text:
+                break
+    if not text.strip():
+        choices = data.get("choices") or []
+        if choices and isinstance((choices[0].get("message") or {}).get(
+                "content"), str):
+            text = choices[0]["message"]["content"]
+    if not text.strip():
+        raise RuntimeError("meta provider: response has no output text")
+    try:
+        plan = _strip_optional_nulls(json.loads(text), schema)
+    except ValueError:
+        raise RuntimeError("meta provider: non-JSON output: " + text[:300])
+    return _check_model_plan(plan, "meta")
 
 
 PROVIDERS = {
     "mock": _provider_mock,
     "agent": _provider_agent,
     "openai": _provider_openai,
+    "ollama": _provider_ollama,
+    "meta": _provider_meta,
 }
 
 

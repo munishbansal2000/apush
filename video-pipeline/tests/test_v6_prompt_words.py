@@ -129,3 +129,49 @@ def test_checker_catches_unspoken_keywordpop(ep_dir):
     words = json.load(open(os.path.join(ep_dir, "work", "word_times.json")))
     errs = cwt.check(plan, timings, words, {})
     assert any("never spoken" in e for e in errs)
+
+
+def test_checker_matches_possessives_verbatim():
+    # Vosk keeps "england's" intact; norm must not strip the apostrophe
+    # (Meta UI anchored it and the old norm rejected a real word).
+    timings = {"turns": [{"turn": "t00", "file": "t00.mp3",
+                          "start": 1.8, "end": 8.0, "dur": 6.2}]}
+    words = {"t00": [{"word": "england's", "start": 1.0, "end": 1.4},
+                     {"word": "challenge", "start": 1.5, "end": 1.9}]}
+    # v1 scene base is 0.0 and the turn starts at 0.0, so the 1.0s
+    # claims below want the words at exactly 1.0s/1.5s absolute.
+    timings["turns"][0]["start"] = 0.0
+    plan = {"version": 1, "episode": "ep",
+            "scenes": [
+                {"id": "s0", "slide": "StaggerSlide",
+                 "params": {"title": "T", "panels": [
+                     {"image": "images/a.jpg", "label": "E", "at": 1.0}]},
+                 "duration_sec": 6.2, "turns": [0, 0],
+                 "word_times": {"england's": 1.0},
+                 "overlays": [
+                     {"type": "keywordpop", "word": "England's challenge",
+                      "start": 1.0, "duration": 1.0}]}]}
+    errs = cwt.check(plan, timings, words, {})
+    assert not errs, errs
+
+
+def test_checker_matches_multi_hearing_alias():
+    # Vosk hears "potosi" as "potus" in t00 but "pota" in t01; the
+    # display term must match whichever form is near the cue.
+    timings = {"turns": [{"turn": "t00", "file": "t00.mp3",
+                          "start": 0.0, "end": 5.0, "dur": 5.0},
+                         {"turn": "t01", "file": "t01.mp3",
+                          "start": 5.6, "end": 10.6, "dur": 5.0}]}
+    words = {"t00": [{"word": "potus", "start": 1.0, "end": 1.2}],
+             "t01": [{"word": "pota", "start": 1.0, "end": 1.2}]}
+    plan = {"version": 1, "episode": "ep",
+            "scenes": [
+                {"id": "s0", "slide": "DisplayHeadline",
+                 "params": {"headline": "H"},
+                 "duration_sec": 10.6, "turns": [0, 1],
+                 "overlays": [
+                     {"type": "keywordpop", "word": "Potosi",
+                      "start": 6.6, "duration": 1.0}]}]}
+    aliases = {"potosi": ["potus", "pota"]}
+    errs = cwt.check(plan, timings, words, aliases)
+    assert not errs, errs

@@ -5,7 +5,7 @@ Usage:
   python3 pipeline.py --episode u1-e1 [--only timing,direct,slideforge_render,assemble,verify]
                       [--force] [--skip-audio-build]
                       [--renderer slideforge|legacy]
-                      [--director-provider mock|agent|openai]
+                      [--director-provider mock|agent|openai|ollama|meta]
 
 Renderers:
   slideforge (default): audio -> timing -> direct (LLM scene plan) ->
@@ -85,7 +85,7 @@ def main():
     ap.add_argument("--assets-dir", default=None,
                     help="override assets dir (e.g. test placeholders)")
     ap.add_argument("--director-provider", default="agent",
-                    choices=["mock", "agent", "openai"],
+                    choices=["mock", "agent", "openai", "ollama", "meta"],
                     help="slideforge renderer only: who writes the scene plan")
     ap.add_argument("--plan-file", default=None,
                     help="explicit scene-plan JSON for the direct stage "

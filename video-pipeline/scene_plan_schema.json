@@ -252,6 +252,15 @@
      "ltx": {
       "type": "object",
       "description": "vidslide only: LTX overrides {model, resolution, duration, fps, seed, cameraMotion, negative}. Defaults: fast/1080p/5s/24fps/seed 42. Part of the clip fingerprint (ltx_clips.py)."
+     },
+     "variance": {
+      "type": "object",
+      "description": "Explicit rule waiver. When the director cannot meet a pipeline rule honestly (VISUAL_DENSITY with no honest asset), it flags a variance with its reason instead of hallucinating a visual. Unflagged violations fail lint; flagged ones go to human review.",
+      "properties": {
+       "rule": {"type": "string", "enum": ["VISUAL_DENSITY"]},
+       "reason": {"type": "string"}
+      },
+      "required": ["rule", "reason"]
      }
     },
     "required": [

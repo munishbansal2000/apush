@@ -113,6 +113,7 @@ def run(ep_dir, cfg, provider="agent", plan_file=None):
     plan = director_mod.direct(
         episode, turns, manifest, provider=provider,
         plan_file=plan_file or None)
+    plan, _ = _resolve_anchors_if_needed(plan, ep_dir)
     # Generated plans always land in the working copy — never overwrite
     # the reviewed episode-root plan via the fallback path.
     # Validate: every scene duration must match its turns' measured durations
@@ -124,6 +125,45 @@ def run(ep_dir, cfg, provider="agent", plan_file=None):
     print(f"direct: {len(plan['scenes'])} scenes -> {plan_path}", flush=True)
     return plan_path
 
+
+
+
+def _resolve_anchors_if_needed(plan, ep_dir):
+    """Resolve word anchors (model drafts) to measured seconds.
+
+    Returns (plan, draft_path): anchored input is resolved via
+    resolve_cues.py, the ANCHORED draft is kept at work/director_draft.json
+    (reviewable intent) and the resolved plan flows on. Plans without
+    anchors pass through untouched (draft_path None).
+    """
+    from lint_plan import _anchor_sites
+    import resolve_cues as resolve_mod
+
+    if not any(_anchor_sites(s) for s in plan.get("scenes", [])):
+        return plan, None
+    work = os.path.join(ep_dir, "work")
+    aliases = None
+    apath = os.path.join(ep_dir, "word_aliases.json")
+    if os.path.exists(apath):
+        with open(apath, encoding="utf-8") as f:
+            aliases = json.load(f)
+    with open(os.path.join(work, "timings.json"), encoding="utf-8") as f:
+        timings = json.load(f)
+    with open(os.path.join(work, "word_times.json"), encoding="utf-8") as f:
+        words = json.load(f)
+    resolved, errors, warns = resolve_mod.resolve(
+        plan, timings, words, aliases)
+    for w in warns:
+        print(f"direct: resolve warn: {w}", flush=True)
+    if errors:
+        raise RuntimeError(
+            "direct: anchored plan REJECTED — resolve errors:\n" +
+            "\n".join(errors))
+    draft_path = os.path.join(work, "director_draft.json")
+    with open(draft_path, "w", encoding="utf-8") as f:
+        json.dump(plan, f, indent=1)
+    print(f"direct: anchored draft kept at {draft_path}", flush=True)
+    return resolved, draft_path
 
 def _load_recipe(ep_dir):
     """gap/offset/tail from work/timings.json (0s when absent).
@@ -156,6 +196,13 @@ def _validate_plan_durations(plan, turns, recipe):
         # v2 scenes carry absolute times from measured word times;
         # there are no turn ranges, so validate contiguity instead.
         # Same rule as the compiler gate - the two must never disagree.
+        from lint_plan import _anchor_sites
+        anchored = [s.get("id", "?") for s in plan.get("scenes", [])
+                    if _anchor_sites(s)]
+        if anchored:
+            raise RuntimeError(
+                "direct: scene plan REJECTED - scenes with unresolved "
+                f"anchors ({', '.join(anchored)}); run resolve_cues.py first")
         from compile_scene_plan import _validate_timeline, PlanError
         try:
             _validate_timeline(plan)

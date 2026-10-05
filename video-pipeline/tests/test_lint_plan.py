@@ -148,3 +148,55 @@ def test_cli_no_args_is_usage_error(capsys):
 def test_cli_missing_file_is_error(capsys):
     assert lint_main(["/tmp/sf-definitely-missing-plan.json"]) == 2
     assert "ERROR" in capsys.readouterr().err
+
+
+def _v2_plan(scenes):
+    return {"version": 2, "episode": "test-density", "scenes": scenes}
+
+
+def _headline(sid, dur=5.0, **kw):
+    spec = {"id": sid, "slide": "DisplayHeadline",
+            "params": {"headline": "H", "sub": "S"},
+            "start_sec": 0.0, "duration_sec": dur,
+            "transition": "cut", "trans_dur": 0}
+    spec.update(kw)
+    return spec
+
+
+def test_density_bare_headline_errors_unless_flagged():
+    bare = _headline("s1", params={"headline": "H", "sub": ""})
+    plan = _v2_plan([bare])
+    errors, _ = lint_plan(plan)
+    assert any("bare DisplayHeadline" in e for e in errors)
+    bare["variance"] = {"rule": "VISUAL_DENSITY",
+                        "reason": "intentional staccato"}
+    errors, warns = lint_plan(plan)
+    assert errors == []
+    assert any("VARIANCE scene 's1'" in w for w in warns)
+
+
+def test_density_count_rule_and_bad_variance():
+    plan = _v2_plan([_headline("s%d" % i, start_sec=float(5 * i))
+                     for i in range(4)])
+    errors, _ = lint_plan(plan)
+    assert any("exceed 3" in e for e in errors)
+    plan["scenes"][3]["variance"] = {"rule": "VISUAL_DENSITY",
+                                     "reason": "abstract beat"}
+    errors, _ = lint_plan(plan)
+    assert errors == []
+    plan["scenes"][3]["variance"] = {"rule": "NOPE", "reason": "x"}
+    errors, _ = lint_plan(plan)
+    assert any("unknown variance rule" in e for e in errors)
+    plan["scenes"][3]["variance"] = {"rule": "VISUAL_DENSITY",
+                                     "reason": "  "}
+    errors, _ = lint_plan(plan)
+    assert any("non-empty reason" in e for e in errors)
+
+
+def test_density_v1_exempt():
+    plan = _plan([_scene(sid="s%d" % i,
+                         slide="DisplayHeadline",
+                         params={"headline": "H", "sub": ""})
+                  for i in range(5)])
+    errors, _ = lint_plan(plan)
+    assert not any("VISUAL_DENSITY" in e for e in errors)
