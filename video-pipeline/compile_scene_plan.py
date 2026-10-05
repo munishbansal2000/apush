@@ -152,10 +152,17 @@ def _validate_turns(plan):
 def _validate_against_timings(plan, timings_path, tol=0.02):
     """Refuse to render from estimates when measured TTS timings exist.
 
-    Each scene's duration_sec must equal the sum of its turns' measured
-    durations within `tol` seconds. A mismatch means the director's
-    arithmetic drifted (or refit_durations.py was never run) — fix the
-    plan, don't render the drift.
+    Each scene's duration_sec must equal its video-model duration within
+    `tol` seconds. The video model follows the build_format.py mix recipe
+    (offset/gap/tail from timings.json):
+
+        D[0]    = offset + sum(dur + gap for turns in scene 0)
+        D[i]    = sum(dur + gap for turns in scene i)
+        D[last] = sum(dur + gap for turns in last scene) + tail
+
+    A mismatch means the director's arithmetic drifted (or
+    refit_durations.py was never run) — fix the plan, don't render the
+    drift.
     """
     try:
         with open(timings_path, encoding="utf-8") as f:
@@ -170,11 +177,18 @@ def _validate_against_timings(plan, timings_path, tol=0.02):
         except ValueError:
             continue
         durs[idx] = float(t["dur"])
-    for spec in plan["scenes"]:
+    gap = float(timings.get("gap", 0))
+    offset = float(timings.get("offset", 0))
+    tail = float(timings.get("tail", 0))
+    last = len(plan["scenes"]) - 1
+    for i, spec in enumerate(plan["scenes"]):
         sid = spec.get("id", "?")
         a, b = spec["turns"]
         try:
-            want = sum(durs[i] for i in range(a, b + 1))
+            want = (sum(durs[j] for j in range(a, b + 1))
+                    + gap * (b - a + 1)
+                    + (offset if i == 0 else 0)
+                    + (tail if i == last else 0))
         except KeyError as e:
             raise PlanError(
                 f"scene '{sid}': timings have no turn {e.args[0]}; "
@@ -182,10 +196,11 @@ def _validate_against_timings(plan, timings_path, tol=0.02):
         got = float(spec["duration_sec"])
         if abs(got - want) > tol:
             raise PlanError(
-                f"scene '{sid}': duration_sec={got:.3f}s but measured turn "
-                f"audio sums to {want:.3f}s (turns [{a}, {b}]). Run "
-                f"refit_durations.py against the rendered turns, then "
-                f"re-run the compile.")
+                f"scene '{sid}': duration_sec={got:.3f}s but the measured "
+                f"mix model wants {want:.3f}s (turns [{a}, {b}], "
+                f"offset={offset} gap={gap} tail={tail}). Run "
+                f"refit_durations.py --timings {timings_path} against the "
+                f"rendered turns, then re-run the compile.")
 
 
 def _compensate_transitions(plan):
@@ -381,6 +396,10 @@ def _build_scene(spec, assets_dir, scene_id):
     # RouteSlide may be built from a bundled route name instead of
     # map_image + waypoints.
     route_name = params.pop("route", None)
+    # 'gen' is clip provenance (which prompt/file generated it), not a
+    # constructor arg. The existing u2-e8 plan carries it; keep it out of
+    # the slide kwargs.
+    params.pop("gen", None)
     if route_name is not None and slide_key != "routeslide":
         raise PlanError(
             f"scene '{sid}': 'route' is only valid for RouteSlide")

@@ -1,0 +1,12 @@
+{
+ "tts_dir": "tts",
+ "audio": "act1-mix.mp3",
+ "audio_build": "python3 ../../tools/render/render_episode.py --script act1-script.md --turns-dir tts/ && python3 ../../video_pipeline/examples/audio-formats/build_format.py tts/act1-turns.txt tts/act1-mix.mp3 0.6 \"Jumonville\" \"Monongahela\"",
+ "offset": 1.8,
+ "gap": 0.6,
+ "tail": 4.5,
+ "width": 1920,
+ "height": 1080,
+ "fps": 30,
+ "notes": "u2-e8 Act 1 (turns 0-9). audio_build renders per-turn TTS then mixes with the house recipe (1.8s sting offset, 0.6s gaps, 4.5s tail). Adjust the build_format.py anchors/voices for the real run."
+}
