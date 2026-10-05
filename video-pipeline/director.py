@@ -133,8 +133,13 @@ def _load_schema():
         return json.load(f)
 
 
-def build_prompt(episode, turns, manifest):
-    """Render the full director prompt (system + user) as one string."""
+def build_prompt(episode, turns, manifest, recipe=None):
+    """Render the full director prompt (system + user) as one string.
+
+    recipe: {"gap", "offset", "tail"} from timings.json — when nonzero, the
+    prompt states the scene-duration formula so the LLM's arithmetic matches
+    the compiler's measured-timing gate.
+    """
     turn_lines = []
     for i, t in enumerate(turns):
         turn_lines.append(
@@ -147,6 +152,14 @@ def build_prompt(episode, turns, manifest):
             # are not POS-tagged; include all words — the LLM filters)
             wt_str = " ".join(f"{w['word']}@{w['start']:.1f}s" for w in wt)
             turn_lines.append(f"  WORD TIMES: {wt_str}")
+    if recipe and any(recipe.get(k, 0) for k in ("gap", "offset", "tail")):
+        turn_lines.append(
+            f"AUDIO RECIPE: {recipe['offset']:.1f}s intro, "
+            f"{recipe['gap']:.1f}s silence after every turn, "
+            f"{recipe['tail']:.1f}s tail. Scene durations MUST follow: "
+            f"first scene = offset + Σ(turn+gap); middle scenes = Σ(turn+gap); "
+            f"last scene = Σ(turn+gap) + tail. The compiler rejects "
+            f"anything else — do not use raw turn sums.")
     man_lines = []
     for m in manifest:
         man_lines.append(

@@ -37,6 +37,8 @@ SCHEMA_SLIDES = {
     "TerritorySlide", "RecallSlide", "SpectrumSlide",
     "SketchSlide",
     "EraCardSlide",
+    "StaggerSlide",
+    "TacticalSlide",
 }
 SCHEMA_OVERLAYS = {"keywordpop", "caption", "lowerthird", "sticker",
                    "regionglow", "timelineribbon"}
