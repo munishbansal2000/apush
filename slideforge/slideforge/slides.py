@@ -1774,6 +1774,7 @@ class StaggerSlide(Slide):
                                   self.title, size=int(h * 0.06),
                                   fill=(255, 255, 255), bold=True,
                                   stroke=2, alpha=int(255 * e))
+                frame = to_np(pil)
 
         n = len(self._prepared)
         for i, p in enumerate(self._prepared):
@@ -3139,7 +3140,6 @@ def _era_icon(kind, size, color):
     return img
 
 
-@slide('era-card')
 class EraCardSlide(Slide):
     """Design title card contextualized by APUSH unit.
 
