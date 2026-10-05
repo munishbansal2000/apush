@@ -36,9 +36,12 @@ def search(query, limit=5, filetype="bitmap"):
     try:
         results = d["query"]["search"]
     except (KeyError, TypeError):
+        detail = d
+        if isinstance(d, dict):
+            err = d.get("error", {})
+            detail = err.get("info", d) if isinstance(err, dict) else err
         raise RuntimeError(
-            f"Commons API error for query {query!r}: "
-            f"{d.get('error', {}).get('info', d)!r}")
+            f"Commons API error for query {query!r}: {detail!r}")
     return [x["title"] for x in results]
 
 

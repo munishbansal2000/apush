@@ -305,12 +305,16 @@ class TimelineRibbon(Overlay):
     """
 
     def __init__(self, era, events=(), span=(0.0, 1.0), start=0.0,
-                 duration=None, accent=ACCENT):
+                 duration=None, accent=ACCENT, height_frac=0.115):
         super().__init__(start, duration)
+        if not 0 < height_frac <= 0.5:
+            raise ValueError(
+                f"height_frac must be in (0, 0.5], got {height_frac!r}")
         self.era = era
         self.events = list(events)
         self.span = tuple(span)
         self.accent = accent
+        self.height_frac = height_frac
 
     def apply(self, frame, t):
         h, w = frame.shape[:2]
@@ -322,7 +326,7 @@ class TimelineRibbon(Overlay):
         if e_in <= 0:
             return frame
         prog = self.span[0] + (self.span[1] - self.span[0]) * local
-        bh = int(h * 0.115)
+        bh = int(h * self.height_frac)
         y0 = h - bh
         frame = C.pill(frame, (0, y0, w, h), radius=0,
                        fill=(8, 10, 16), alpha=int(232 * e_in))
@@ -483,7 +487,7 @@ class Magnifier(Overlay):
         if not path:
             raise ValueError("Magnifier path must not be empty")
         for i, pt in enumerate(path):
-            if len(pt) != 3:
+            if not isinstance(pt, (list, tuple)) or len(pt) != 3:
                 raise ValueError(
                     f"path keyframe {i} must be (t, x, y), got {pt!r}")
         self.path = sorted(path)

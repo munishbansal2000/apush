@@ -1,6 +1,6 @@
 """Regression tests for the 2026-10-05 blind-review bugfix batch.
 
-Fast, pure-logic tests: no rendering, no ffmpeg, no network.
+Fast tests: no video rendering, no ffmpeg, no network.
 """
 import unittest
 import warnings
@@ -42,9 +42,11 @@ class TestTimeline(unittest.TestCase):
         with self.assertRaises(ValueError):
             Scene(-1.0)
 
-    def test_none_duration_allowed_for_overlays(self):
-        s = Scene(None)
-        self.assertIsNone(s.duration)
+    def test_none_duration_rejected(self):
+        # None would only crash later in Movie timeline math; overlays
+        # are not Scenes, so nothing legitimate passes None here.
+        with self.assertRaises(TypeError):
+            Scene(None)
 
     def test_cut_consumes_no_time(self):
         m = Movie(Config(w=64, h=48, fps=10))
@@ -68,8 +70,14 @@ class TestOverlays(unittest.TestCase):
         self.assertIsNone(ov.duration)
 
     def test_timeline_ribbon_none_duration_persists(self):
+        # None duration = persist: the playhead holds at span start,
+        # so frames rendered far apart are identical (and non-blank).
         r = O.TimelineRibbon("era", duration=None)
-        self.assertEqual(r._dur(), float("inf"))
+        base = np.zeros((180, 320, 3), dtype=np.uint8)
+        early = r.apply(base.copy(), 1.0)
+        late = r.apply(base.copy(), 100.0)
+        self.assertFalse((early == base).all())
+        np.testing.assert_array_equal(early, late)
 
     def test_magnifier_empty_path(self):
         with self.assertRaises(ValueError):

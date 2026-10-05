@@ -1362,8 +1362,8 @@ class CompareSlide(Slide):
 
 
 def _banner_img(text, size, fill, fg=(255, 255, 255)):
-    """Banner chip: rounded-rect with bold text. Shared by StepsSlide,
-    CompareSlide, and CollageSlide."""
+    """Banner chip: rounded-rect with bold text. Shared by StepsSlide
+    and CollageSlide."""
     font = get_font(size, bold=True)
     tmp = ImageDraw.Draw(Image.new("RGBA", (8, 8)))
     tw = tmp.textlength(text, font=font)
@@ -1412,7 +1412,7 @@ class CollageSlide(Slide):
         if "image" not in c:
             raise ValueError(f"card {i} is missing required key 'image'")
         at = c.get("at")
-        if at is None or len(at) != 2:
+        if not isinstance(at, (list, tuple)) or len(at) != 2:
             raise ValueError(
                 f"card {i} needs 'at': (x, y) fractions, got {at!r}")
         return c
@@ -1425,7 +1425,7 @@ class CollageSlide(Slide):
         if "text" not in n:
             raise ValueError(f"note {i} is missing required key 'text'")
         at = n.get("at")
-        if at is None or len(at) != 2:
+        if not isinstance(at, (list, tuple)) or len(at) != 2:
             raise ValueError(
                 f"note {i} needs 'at': (x, y) fractions, got {at!r}")
         return n
@@ -1598,7 +1598,7 @@ class TitleCardSlide(Slide):
         total = sum(lh if k == "title" else int(h * 0.075)
                     for k, _, _, _ in parts)
         y = (h - total) / 2
-        for k, text, font, fill in parts:
+        for pi, (k, text, font, fill) in enumerate(parts):
             e = a01(t, 0.3 if k == "kicker" else 0.7, 0.6,
                     ease=easing.ease_out if k == "kicker"
                     else easing.ease_out_back)
@@ -1620,7 +1620,7 @@ class TitleCardSlide(Slide):
                     frame = paste_rgba(frame, np.array(tmp), (px, py))
                     # Settled box (sc=1.0): full-width tmp at (0, y).
                     tw0 = dt.textlength(text, font=font)
-                    self._register_text(f"title:{text[:12]}",
+                    self._register_text(f"title:{pi}:{text[:12]}",
                                         ((w - tw0) / 2, y + 20,
                                          (w + tw0) / 2, y + 20 + lh),
                                         fill, font.size)
@@ -1631,7 +1631,7 @@ class TitleCardSlide(Slide):
                     d.text(((w - tw) / 2, y), text, font=font,
                            fill=fill + (a,))
                     frame = to_np(pil)
-                    self._register_text("kicker", ((w - tw) / 2, y,
+                    self._register_text(f"kicker:{pi}", ((w - tw) / 2, y,
                                                   (w + tw) / 2, y + step),
                                         fill, font.size)
             y += step
@@ -2012,7 +2012,7 @@ class CalloutSlide(Slide):
         bw = max(lw, sw) + 48
         bh = lh + (sh + 10 if sub else 0) + 28
         bx0 = w / 2 - bw / 2
-        self._register_text(f"pill:{label[:16]}",
+        self._register_text(f"pill:{label}:{sub}",
                             (bx0, top_y, bx0 + bw, top_y + bh),
                             (255, 255, 255), ls)
         alpha = int(255 * max(0.0, e))

@@ -21,12 +21,16 @@ class Scene:
     """Anything with a duration that can render frame t (seconds) -> RGB array."""
 
     def __init__(self, duration, cfg=None):
-        # None duration is legal (Overlay: "until scene end"); a negative
-        # duration is never meaningful — reject it at construction instead
-        # of producing a silently broken timeline.
-        if duration is not None and float(duration) < 0:
+        # A scene needs a concrete, non-negative duration: None would
+        # only crash later in Movie timeline math, so reject it here.
+        # (Overlays are not Scenes — their None "until scene end"
+        # duration is resolved by with_overlays/apply_movie, never here.)
+        if duration is None:
+            raise TypeError(
+                f"scene duration must be a number, got {duration!r}")
+        if float(duration) < 0:
             raise ValueError(f"scene duration must be >= 0, got {duration!r}")
-        self.duration = float(duration) if duration is not None else None
+        self.duration = float(duration)
         self.cfg = cfg
 
     def frame(self, t):

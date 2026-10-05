@@ -77,11 +77,14 @@ def test_none_provider_missing_clip_skips_for_kb_fallback(tmp_path):
 
 
 def test_existing_clip_is_reused(tmp_path):
+    # valid clip + (no provenance yet): kept, fingerprint adopted.
     ep, cfg = _ep(tmp_path, [_beat()],
                   cfg_extra={"clip_generation": {"provider": "ltx"}})
     os.makedirs(os.path.join(ep, "clips"), exist_ok=True)
     open(os.path.join(ep, "clips", "b01.mp4"), "wb").write(b"manual")
-    with mock.patch.object(clips, "_run") as run_mock:
+    with mock.patch.object(clips, "_run") as run_mock, \
+            mock.patch.object(clips, "_ffprobe_duration",
+                              return_value=10.0):
         records = clips.generate_clips(_resolved(ep), _images(ep), ep, cfg)
     run_mock.assert_not_called()
     assert records[0]["provider"] == "existing"
@@ -259,3 +262,55 @@ def test_pipeline_wires_clips_stage():
         pipeline.STAGES.index("anim") + 1
     assert "clips" in pipeline.RENDERERS["legacy"]
     assert "clips" not in pipeline.RENDERERS["slideforge"]
+
+def test_changed_prompt_regenerates_clip(tmp_path):
+    # stale fingerprint: the clip file exists, but the MANIFEST records an
+    # older prompt -> the provider must run again instead of reusing it.
+    ep, cfg = _ep(tmp_path, [_beat()],
+                  cfg_extra={"clip_generation": {"provider": "ltx"}})
+    os.makedirs(os.path.join(ep, "clips"), exist_ok=True)
+    open(os.path.join(ep, "clips", "b01.mp4"), "wb").write(b"stale")
+    with open(os.path.join(ep, "clips", "MANIFEST.json"), "w",
+              encoding="utf-8") as f:
+        json.dump([{"beat": "b01", "prompt": "Old prompt.", "seed": 42,
+                    "seconds": 10.0, "image": "ship.jpg", "ready": True,
+                    "provider": "ltx"}], f)
+    cmds = []
+    with mock.patch.object(clips, "_run", side_effect=_fake_run(cmds)), \
+            mock.patch.object(clips, "_ffprobe_duration", return_value=10.0):
+        clips.run(ep, cfg)
+    assert any("animate_still.py" in " ".join(c) for _, c in cmds)
+
+
+def test_unprobeable_clip_is_rebuilt(tmp_path):
+    ep, cfg = _ep(tmp_path, [_beat()],
+                  cfg_extra={"clip_generation": {"provider": "ltx"}})
+    os.makedirs(os.path.join(ep, "clips"), exist_ok=True)
+    open(os.path.join(ep, "clips", "b01.mp4"), "wb").write(b"corrupt")
+    cmds = []
+    with mock.patch.object(clips, "_run", side_effect=_fake_run(cmds)), \
+            mock.patch.object(clips, "_ffprobe_duration",
+                              side_effect=[OSError("nope"), 10.0]):
+        records = clips.generate_clips(_resolved(ep), _images(ep), ep, cfg)
+    assert any("animate_still.py" in " ".join(c) for _, c in cmds)
+    assert records[0]["provider"] == "ltx"
+
+
+def test_matching_manifest_skips_generation(tmp_path):
+    ep, cfg = _ep(tmp_path, [_beat()],
+                  cfg_extra={"clip_generation": {"provider": "ltx"}})
+    os.makedirs(os.path.join(ep, "clips"), exist_ok=True)
+    open(os.path.join(ep, "clips", "b01.mp4"), "wb").write(b"fresh")
+    with open(os.path.join(ep, "clips", "MANIFEST.json"), "w",
+              encoding="utf-8") as f:
+        json.dump([{"beat": "b01", "prompt": PROMPT, "seed": 42,
+                    "seconds": 10.0, "image": "ship.jpg", "ready": True,
+                    "provider": "ltx"}], f)
+    with mock.patch.object(clips, "_run") as run_mock, \
+            mock.patch.object(clips, "_ffprobe_duration", return_value=10.0):
+        out = clips.run(ep, cfg)
+    run_mock.assert_not_called()
+    man = json.load(open(os.path.join(out, "MANIFEST.json"),
+                         encoding="utf-8"))
+    assert man[0]["provider"] == "existing"
+    assert man[0]["ready"] is True

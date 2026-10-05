@@ -15,6 +15,7 @@ side of merged-list items 7 (concat assemble) and 8 (verify gates).
     "fps": 30,
     "width": 1280, "height": 720,
     "total_frames": 14580,
+    "episode": "u1-e2",
     "scenes": [
       {"id": "scene-01", "file": "00-scene-01.mp4",
        "start_frame": 0, "frames": 900},

@@ -227,6 +227,17 @@ def test_conform_equal_passthrough(tmp_path):
     assert _count_frames(out) == 90
 
 
+# --- chunked idempotency: _chunk_is_fresh gate --------------------------------
+
+
+def test_chunk_is_fresh(tmp_path):
+    p = str(tmp_path / "c.mp4")
+    assert csp._chunk_is_fresh(p, 60) is False  # missing file
+    _make_src(p, 2)  # 60 frames
+    assert csp._chunk_is_fresh(p, 60) is True
+    assert csp._chunk_is_fresh(p, 61) is False  # wrong frame count
+
+
 # --- item 6: _probe_frame_count sanity ----------------------------------------
 
 def test_probe_frame_count(tmp_path):

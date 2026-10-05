@@ -30,6 +30,7 @@ if _HERE not in sys.path:
 
 from slideforge.timeline import Config, Movie  # noqa: E402
 from slideforge import slides as _slides  # noqa: E402
+from slideforge import sketch as _sketch  # noqa: E402
 from slideforge import overlays as _overlays  # noqa: E402
 from slideforge import routes as _routes  # noqa: E402
 from clipscene import ClipScene  # noqa: E402
@@ -42,7 +43,7 @@ class PlanError(Exception):
     """A structural problem in the scene plan. Raised before rendering."""
 
 
-# The 18 slideforge slide types addressable from a scene plan.
+# The slideforge slide types addressable from a scene plan.
 SLIDE_TYPES = {
     "titleslide": _slides.TitleSlide,
     "bulletslide": _slides.BulletSlide,
@@ -62,6 +63,10 @@ SLIDE_TYPES = {
     "calloutslide": _slides.CalloutSlide,
     "mapzoomslide": _slides.MapZoomSlide,
     "routeslide": _slides.RouteSlide,
+    "territoryslide": _slides.TerritorySlide,
+    "recallslide": _slides.RecallSlide,
+    "spectrumslide": _slides.SpectrumSlide,
+    "sketchslide": _sketch.SketchSlide,
     # Not in the original 18, but present in the library: the old pipeline's
     # word-chain beats (causalchain) and pre-rendered clip beats (vidslide,
     # pipeline-local so slideforge/ stays pristine).
@@ -77,6 +82,7 @@ OVERLAY_TYPES = {
     "lowerthird": _overlays.LowerThird,
     "sticker": _overlays.Sticker,
     "regionglow": _overlays.RegionGlow,
+    "timelineribbon": _overlays.TimelineRibbon,
 }
 
 # Param paths (dot-separated, per slide type) that hold image paths.
@@ -89,6 +95,7 @@ IMAGE_PARAM_PATHS = {
     "calloutslide": ["image"],
     "mapzoomslide": ["map_image"],
     "routeslide": ["map_image"],
+    "territoryslide": ["map_image"],
     "duoslide": ["left.image", "right.image"],
     "highlightslide": ["card.image"],
     "collageslide": ["cards.*.image"],
@@ -286,6 +293,44 @@ def _get_dot(params, dot):
     return cur
 
 
+def plan_assets(plan_path, assets_dir):
+    """{asset relpath: [size, mtime_ns]} for every file the plan uses.
+
+    Mirrors _build_scene/_build_overlay path resolution (params dots +
+    overlay "image" keys) so render stages can fingerprint their inputs.
+    Raises the same PlanError the compile would raise for a missing
+    asset.
+    """
+    plan = _load_plan(plan_path)
+    assets_dir = os.path.abspath(assets_dir)
+    found = {}
+    for i, spec in enumerate(plan["scenes"]):
+        sid = spec.get("id") or "scene-%d" % i
+        slide_key = str(spec.get("slide") or "").lower()
+        params = spec.get("params") or {}
+        for dot in _match_image_paths(params, slide_key):
+            try:
+                val = _get_dot(params, dot)
+            except (KeyError, IndexError, TypeError):
+                continue
+            if isinstance(val, str):
+                kind = "clip" if slide_key == "vidslide" else "image"
+                full = _resolve_image(val, assets_dir, sid,
+                                      "params.%s" % dot, kind=kind)
+                st = os.stat(full)
+                found[os.path.relpath(full, assets_dir)] = \
+                    [st.st_size, st.st_mtime_ns]
+        for j, overlay in enumerate(spec.get("overlays") or []):
+            if isinstance(overlay, dict) \
+                    and isinstance(overlay.get("image"), str):
+                full = _resolve_image(overlay["image"], assets_dir, sid,
+                                      "overlays[%d].image" % j)
+                st = os.stat(full)
+                found[os.path.relpath(full, assets_dir)] = \
+                    [st.st_size, st.st_mtime_ns]
+    return found
+
+
 def _check_signature(cls, params, scene_id, slide_name, extra_ok=()):
     """Reject constructor kwargs the slide does not accept."""
     try:
@@ -439,6 +484,8 @@ def _build_movie(plan, assets_dir, width, height, fps):
     movie = Movie(cfg)
     for scene, transition, trans_dur in scenes:
         movie.add(scene, transition=transition, trans_dur=trans_dur)
+    for j, ov_spec in enumerate(plan.get("movie_overlays", []) or []):
+        movie.overlay(_build_overlay(ov_spec, assets_dir, "<movie>", j))
 
     # The compensation invariant: each transition's overlap is paid out of
     # the outgoing scene, so the overlap model must yield exactly the
@@ -498,9 +545,10 @@ def render_scenes_chunked(plan_path, assets_dir, out_dir, width=1280,
     bounds = _frame_boundaries(orig_durations, fps)
     total_frames = bounds[-1]
     os.makedirs(out_dir, exist_ok=True)
-    manifest = {"fps": int(fps), "total_frames": total_frames,
-                "episode": plan["episode"], "scenes": []}
     w, h = int(width), int(height)
+    manifest = {"fps": int(fps), "width": w, "height": h,
+                "total_frames": total_frames,
+                "episode": plan["episode"], "scenes": []}
     for i, spec in enumerate(plan["scenes"]):
         sid = spec.get("id") or f"scene-{i:02d}"
         f0, f1 = bounds[i], bounds[i + 1]
@@ -509,14 +557,21 @@ def render_scenes_chunked(plan_path, assets_dir, out_dir, width=1280,
             raise PlanError(
                 f"scene '{sid}': frame-exact boundary collapse "
                 f"({f0}..{f1}); duration too short for {fps}fps")
-        fname = f"scene-{i:02d}-{_slug(sid)}.mp4"
+        fname = f"{i:02d}-{_slug(sid)}.mp4"
         out = os.path.join(out_dir, fname)
-        _render_frame_range(movie, f0, n, out, w, h, int(fps), quiet=quiet)
+        if _chunk_is_fresh(out, n):
+            if not quiet:
+                print(f"  chunk {i + 1}/{len(plan['scenes'])} {sid}: "
+                      f"{n} frames fresh -> {fname} (skipped)",
+                      flush=True)
+        else:
+            _render_frame_range(movie, f0, n, out, w, h, int(fps),
+                                quiet=quiet)
+            if not quiet:
+                print(f"  chunk {i + 1}/{len(plan['scenes'])} {sid}: "
+                      f"{n} frames -> {fname}", flush=True)
         manifest["scenes"].append(
             {"id": sid, "file": fname, "start_frame": f0, "frames": n})
-        if not quiet:
-            print(f"  chunk {i + 1}/{len(plan['scenes'])} {sid}: "
-                  f"{n} frames -> {fname}", flush=True)
     man_path = os.path.join(out_dir, "manifest.json")
     with open(man_path, "w", encoding="utf-8") as f:
         json.dump(manifest, f, indent=1)
@@ -572,6 +627,23 @@ def _render_frame_range(movie, start_frame, n_frames, out_path, w, h, fps,
         raise RuntimeError(
             f"render_exact violated: {out_path} has {got_frames} frames, "
             f"expected {n_frames}")
+
+
+def _chunk_is_fresh(path, n_frames):
+    """True when a chunk mp4 exists with exactly the expected frames.
+
+    The idempotency gate render_scenes_chunked promises: a re-run
+    skips fresh chunks and only (re-)renders stale or missing ones,
+    so a failed scene re-renders alone. Stale PLAN content is not
+    detected here -- the render stage keys its cache on the plan;
+    this gate only checks the chunk file itself.
+    """
+    if not os.path.exists(path):
+        return False
+    try:
+        return _probe_frame_count(path) == n_frames
+    except Exception:
+        return False
 
 
 def _probe_frame_count(path):

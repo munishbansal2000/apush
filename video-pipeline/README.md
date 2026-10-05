@@ -79,3 +79,39 @@ automatically when its duration matches the beat (±1s). No text in clips, ever.
 - ffmpeg/ffprobe, python3, PIL, numpy
 - chrome-headless-shell (for text overlays) — path in `stages/render.py`
 - faster-whisper venv at `~/workspace/.fwvenv` (wordalign stage only)
+
+## Sketch scenes (two-stage: vector draw-on + inked hold)
+
+The director authors whiteboard sketches as plain JSON — no image
+assets, fully compiler-checked:
+
+```json
+{"slide": "sketchslide", "params": {"title": "Pitt's gamble",
+  "elements": [
+   {"type": "icon", "shape": "moneybag", "label": "Britain",
+    "x": 0.2, "y": 0.5},
+   {"type": "arrow", "from": [0.3, 0.5], "to": [0.55, 0.5],
+    "label": "subsidies"},
+   {"type": "icon", "shape": "soldier", "label": "Prussia",
+    "x": 0.65, "y": 0.5}]}}
+```
+
+Shapes: moneybag, soldier, ship, crown, church, coin, house, tree,
+cannon, anchor, scroll, flag, star, sword. Elements also take `label`,
+`size`, and optional `ink: [r, g, b]`.
+
+Stage A renders the deterministic vector master (draw-on, sync-safe).
+Stage B inks the settled frame via LTX, offline, cached by sketch
+hash — reruns reuse `clips/<key>.mp4`:
+
+```
+python -m stages.sketch_ink --plan episodes/<ep>/work/scene_plan.json \
+  --scene <sketch-id> --episode-dir episodes/<ep> \
+  --assets-dir <assets> --seconds 5
+```
+
+The command prints the `vidslide` hold scene to paste after the
+draw-on scene. Without the GPU stack it exits 0 with no clip and the
+vector master stands (still shippable). Ink prompts bake in the
+APUSH-honest rules: preserve labels/arrows/positions exactly, never
+add text or facts.

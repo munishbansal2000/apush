@@ -21,6 +21,13 @@ Providers:
               clip are left for the render stage's Ken Burns fallback.
 
 Writes: <episode>/clips/<bid>.mp4 + clips/MANIFEST.json provenance.
+
+Incremental: an existing clip is reused only when it is still valid
+(ffprobe-readable, not short of its beat) and its MANIFEST fingerprint
+(prompt/seed/seconds/still) matches the current beat. Missing, corrupt,
+short, or stale clips are regenerated. With provider "none" a valid
+existing clip is kept (there is nothing to rebuild it with); an
+unusable one is left for the render stage's Ken Burns fallback.
 """
 import json
 import os
@@ -150,9 +157,62 @@ def _resolve_still(beat, images, ep_dir):
     return None
 
 
+def _clip_valid(output, seconds):
+    """(usable, actual_seconds): probeable and not short of its beat."""
+    try:
+        actual = _ffprobe_duration(output)
+    except (OSError, subprocess.CalledProcessError, ValueError):
+        return False, 0.0
+    return actual >= seconds - SHORT_TOLERANCE_SEC, actual
+
+
+def _still_key(beat, images, ep_dir):
+    """Episode-relative still identity, or None. Same precedence as
+    _resolve_still but without existence checks, so fingerprinting never
+    changes what resolves (or raises) on the regenerate path."""
+    override = beat.get("anim_image")
+    if override:
+        p = override if os.path.isabs(override) \
+            else os.path.join(ep_dir, override)
+        return os.path.relpath(p, ep_dir)
+    if beat.get("kind") == "kb":
+        rel = images.get(beat.get("image"), {}).get("file", "")
+        if not rel:
+            return None
+        p = rel if os.path.isabs(rel) else os.path.join(ep_dir, rel)
+        return os.path.relpath(p, ep_dir)
+    return None
+
+
+def _fingerprint_matches(old, prompt, seed, seconds, still_key):
+    """True when a prior MANIFEST record matches the current inputs.
+
+    A missing record (hand-placed clip, first run) counts as a match:
+    never destroy manual work silently. The new MANIFEST adopts the
+    fingerprint, so the next run compares for real. Records predating
+    the image field compare on prompt/seed/seconds only.
+    """
+    if not old:
+        return True
+    if old.get("prompt") != prompt:
+        return False
+    if old.get("seed") != seed:
+        return False
+    try:
+        if abs(float(old.get("seconds", -1)) - seconds) > 1e-6:
+            return False
+    except (TypeError, ValueError):
+        return False
+    if "image" in old and old.get("image") != still_key:
+        return False
+    return True
+
+
 def generate_clips(beats, images, ep_dir, cfg, provider_override="manifest",
-                   ltx_python=None, force=False, dry_run=False):
+                   ltx_python=None, force=False, dry_run=False,
+                   prior=None):
     """Generate clips for beats carrying anim_prompt. Returns MANIFEST records."""
+    prior = prior or {}
     config = dict(cfg.get("clip_generation", {}))
     provider = (provider_override if provider_override != "manifest"
                 else config.get("provider", "none"))
@@ -175,22 +235,54 @@ def generate_clips(beats, images, ep_dir, cfg, provider_override="manifest",
         record = {"beat": bid, "clip": os.path.join("clips", f"{bid}.mp4"),
                   "seconds": seconds, "seed": seed, "prompt": prompt}
 
-        if output.is_file() and not force:
-            print(f"[clips] {bid}: exists -- skipped", flush=True)
-            record["ready"] = True
-            record["provider"] = "existing"
-            records.append(record)
-            continue
-
         beat_provider = (provider if provider_override != "manifest"
                          else beat.get("provider", provider))
         fallback = beat.get("fallback_provider",
                             config.get("fallback_provider"))
+        have_file = output.is_file() and not force
+        valid, actual = _clip_valid(output, seconds) \
+            if output.is_file() else (False, 0.0)
+        old = prior.get(bid) or {}
+        known = bool(old)
+        fresh = _fingerprint_matches(old, prompt, seed, seconds,
+                                     _still_key(beat, images, ep_dir))
+        if have_file and valid and fresh:
+            if known:
+                print(f"[clips] {bid}: up to date -- skipped", flush=True)
+            else:
+                print(f"[clips] {bid}: no provenance -- keeping existing "
+                      f"clip and adopting its fingerprint", flush=True)
+            record.update({"ready": True, "provider": "existing",
+                           "actual_seconds": round(actual, 2)})
+            if known and "image" in old:
+                record["image"] = old["image"]
+            elif not known:
+                key = _still_key(beat, images, ep_dir)
+                if key is not None:
+                    record["image"] = key
+            records.append(record)
+            continue
+        if have_file and not valid:
+            print(f"[clips] {bid}: existing clip is unusable "
+                  f"(unprobeable or short) -- rebuilding", flush=True)
+        elif have_file and not fresh:
+            if beat_provider == "none":
+                print(f"[clips] {bid}: inputs changed but no provider "
+                      f"configured -- keeping existing clip", flush=True)
+                record.update({"ready": True, "provider": "existing",
+                               "actual_seconds": round(actual, 2),
+                               "stale": True})
+                if "image" in old:
+                    record["image"] = old["image"]
+                records.append(record)
+                continue
+            print(f"[clips] {bid}: inputs changed -- rebuilding",
+                  flush=True)
 
         if beat_provider == "none":
             print(f"[clips] {bid}: no provider and no finished clip -- "
                   f"render stage will use the Ken Burns fallback", flush=True)
-            record.update({"ready": output.is_file(),
+            record.update({"ready": valid,
                            "skipped": "no provider configured",
                            "provider": "none"})
             records.append(record)
@@ -266,8 +358,16 @@ def run(ep_dir, cfg, force=False):
     if os.path.exists(ipath):
         with open(ipath, encoding="utf-8") as f:
             images = json.load(f).get("images", {})
-    records = generate_clips(beats, images, ep_dir, cfg, force=force)
     manifest_path = os.path.join(ep_dir, "clips", "MANIFEST.json")
+    prior = {}
+    if os.path.exists(manifest_path):
+        try:
+            with open(manifest_path, encoding="utf-8") as f:
+                prior = {r["beat"]: r for r in json.load(f)}
+        except (OSError, ValueError, KeyError, TypeError):
+            prior = {}
+    records = generate_clips(beats, images, ep_dir, cfg, force=force,
+                             prior=prior)
     with open(manifest_path, "w", encoding="utf-8") as f:
         json.dump(records, f, indent=1)
     ready = sum(1 for r in records if r.get("ready"))

@@ -16,14 +16,9 @@ class TestMakeRouteCheck(unittest.TestCase):
         from slideforge import routes as routes_mod
 
         route_name = "sf_test_tmp_check"
-        route_file = os.path.join(
-            os.path.dirname(routes_mod.__file__), "routes",
-            route_name + ".json")
         build_dir = os.path.join(
             os.path.dirname(os.path.dirname(routes_mod.__file__)),
             "build", route_name)
-        self.addCleanup(lambda: os.path.exists(route_file)
-                        and os.unlink(route_file))
         self.addCleanup(lambda: shutil.rmtree(build_dir, ignore_errors=True))
 
         with tempfile.TemporaryDirectory() as d:
@@ -49,9 +44,13 @@ class TestMakeRouteCheck(unittest.TestCase):
                 "--name", route_name,
                 "--out", out,
                 "--waypoints", wp_path,
+                "--routes-dir", d,
                 "--check",
             ])
             self.assertEqual(rc, 1)
+            # the rejected route JSON lands in tmp, never the source tree
+            tmp_route = os.path.join(d, "routes", route_name + ".json")
+            self.assertTrue(os.path.exists(tmp_route))
             self.assertFalse(os.path.exists(out),
                              "render must not run when --check fails")
 

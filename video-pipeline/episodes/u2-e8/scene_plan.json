@@ -1,450 +1,642 @@
 {
-  "version": 1,
-  "episode": "u2-e8",
-  "notes": "U2-E8 'The War That Started With One Kid in the Rain' (script v3, Maya+Marcus, 180wpm). 19 scenes over 58 turns. vidslide for LTX plates (musket_rain.mp4 \u2014 generate from ltx_prompt_beat1_musket.txt). Living-map scenes use mapzoomslide with callouts; replace maps/*.png with the 1754/1763 gridded renders. No blank backgrounds.",
-  "scenes": [
-    {
-      "id": "scene-01",
-      "duration_sec": 19.8,
-      "slide": "titleslide",
-      "params": {
-        "title": "The War That Started With One Kid in the Rain",
-        "subtitle": "Episode 8 \u2014 Maya asks, Marcus answers.",
-        "bg": {
-          "type": "textured"
-        }
-      },
-      "turns": [
-        0,
-        0
-      ],
-      "transition": "cut",
-      "trans_dur": 0
-    },
-    {
-      "id": "scene-02",
-      "duration_sec": 19.8,
-      "slide": "vidslide",
-      "params": {
-        "src": "ltx/musket_rain.mp4",
-        "gen": "ltx_prompt_beat1_musket.txt \u2014 5s plate, hold last frame"
-      },
-      "turns": [
-        0,
-        0
-      ],
-      "transition": "cut",
-      "trans_dur": 0
-    },
-    {
-      "id": "scene-03",
-      "duration_sec": 11.8,
-      "slide": "mapzoomslide",
-      "params": {
-        "map_image": "maps/ohio_1754.png",
-        "title": "May 1754 \u2014 the Ohio Valley",
-        "callouts": [
-          {
-            "at": [
-              0.42,
-              0.55
-            ],
-            "label": "Washington marches west"
-          },
-          {
-            "at": [
-              0.48,
-              0.48
-            ],
-            "label": "Fort Duquesne (French)"
-          }
-        ]
-      },
-      "turns": [
-        1,
-        1
-      ],
-      "transition": "crossfade",
-      "trans_dur": 0.5
-    },
-    {
-      "id": "scene-04",
-      "duration_sec": 30.8,
-      "slide": "highlightslide",
-      "params": {
-        "text": "May 28, 1754 \u2014 before dawn, in the rain. ==Washington's men open fire at Jumonville Glen.== The French call it assassination: l'assassinat.",
-        "stagger": 0.7
-      },
-      "turns": [
-        3,
-        6
-      ],
-      "transition": "crossfade",
-      "trans_dur": 0.5
-    },
-    {
-      "id": "scene-05",
-      "duration_sec": 13.8,
-      "slide": "mapzoomslide",
-      "params": {
-        "map_image": "maps/atlantic_1755.png",
-        "title": "The fuse lights",
-        "callouts": [
-          {
-            "at": [
-              0.3,
-              0.4
-            ],
-            "label": "London"
-          },
-          {
-            "at": [
-              0.45,
-              0.42
-            ],
-            "label": "Paris"
-          }
-        ]
-      },
-      "turns": [
-        7,
-        7
-      ],
-      "transition": "crossfade",
-      "trans_dur": 0.5
-    },
-    {
-      "id": "scene-06",
-      "duration_sec": 25.5,
-      "slide": "bulletslide",
-      "params": {
-        "title": "Braddock's disaster",
-        "bullets": [
-          "**July 1755** \u2014 Monongahela: column collapses in the woods",
-          "**Braddock** mortally wounded",
-          "**Washington**: \"four bullets through my coat, two horses shot under me\""
-        ]
-      },
-      "turns": [
-        9,
-        11
-      ],
-      "transition": "crossfade",
-      "trans_dur": 0.5
-    },
-    {
-      "id": "scene-07",
-      "duration_sec": 12.1,
-      "slide": "mapzoomslide",
-      "params": {
-        "map_image": "maps/world_1756.png",
-        "title": "The war goes global",
-        "callouts": [
-          {
-            "at": [
-              0.48,
-              0.3
-            ],
-            "label": "Europe"
-          },
-          {
-            "at": [
-              0.68,
-              0.45
-            ],
-            "label": "India"
-          },
-          {
-            "at": [
-              0.3,
-              0.55
-            ],
-            "label": "Caribbean"
-          },
-          {
-            "at": [
-              0.82,
-              0.5
-            ],
-            "label": "Manila"
-          }
-        ]
-      },
-      "turns": [
-        11,
-        13
-      ],
-      "transition": "crossfade",
-      "trans_dur": 0.5
-    },
-    {
-      "id": "scene-08",
-      "duration_sec": 30.5,
-      "slide": "bulletslide",
-      "params": {
-        "title": "The Albany Plan of Union \u2014 June 1754",
-        "bullets": [
-          "**Seven colonies** send delegates",
-          "**Franklin** proposes one united government",
-          "**Every assembly says no** \u2014 won't pay, won't cede power"
-        ]
-      },
-      "turns": [
-        15,
-        18
-      ],
-      "transition": "crossfade",
-      "trans_dur": 0.5
-    },
-    {
-      "id": "scene-09",
-      "duration_sec": 7.8,
-      "slide": "displayheadline",
-      "params": {
-        "headline": "Box one: checked",
-        "sub": "Disunity + wilderness + one kid = world war."
-      },
-      "turns": [
-        18,
-        18
-      ],
-      "transition": "cut",
-      "trans_dur": 0
-    },
-    {
-      "id": "scene-10",
-      "duration_sec": 28.1,
-      "slide": "causalchain",
-      "params": {
-        "title": "Pitt's gamble \u2014 1757",
-        "nodes": [
-          [
-            "Pay Prussia",
-            "subsidies to Frederick the Great"
-          ],
-          [
-            "Pin France in Europe",
-            "Prussian bayonets, British gold"
-          ],
-          [
-            "Pour into America",
-            "men + ships across the Atlantic"
-          ]
-        ]
-      },
-      "turns": [
-        19,
-        21
-      ],
-      "transition": "crossfade",
-      "trans_dur": 0.5
-    },
-    {
-      "id": "scene-11",
-      "duration_sec": 34.8,
-      "slide": "mapzoomslide",
-      "params": {
-        "map_image": "maps/quebec_1759.png",
-        "title": "September 13, 1759 \u2014 Quebec",
-        "callouts": [
-          {
-            "at": [
-              0.55,
-              0.35
-            ],
-            "label": "Wolfe scales the cliffs"
-          },
-          {
-            "at": [
-              0.58,
-              0.42
-            ],
-            "label": "Plains of Abraham"
-          }
-        ]
-      },
-      "turns": [
-        25,
-        27
-      ],
-      "transition": "crossfade",
-      "trans_dur": 0.5
-    },
-    {
-      "id": "scene-12",
-      "duration_sec": 16.5,
-      "slide": "statslide",
-      "params": {
-        "value": 15,
-        "label": "minutes \u2014 the battle that ended New France",
-        "decimals": 0
-      },
-      "turns": [
-        27,
-        27
-      ],
-      "transition": "crossfade",
-      "trans_dur": 0.5
-    },
-    {
-      "id": "scene-13",
-      "duration_sec": 10.8,
-      "slide": "mapzoomslide",
-      "params": {
-        "map_image": "maps/paris_1763.png",
-        "title": "Treaty of Paris \u2014 February 1763",
-        "callouts": [
-          {
-            "at": [
-              0.4,
-              0.35
-            ],
-            "label": "Canada \u2192 Britain"
-          },
-          {
-            "at": [
-              0.38,
-              0.62
-            ],
-            "label": "Florida \u2192 Britain (from Spain)"
-          }
-        ]
-      },
-      "turns": [
-        29,
-        29
-      ],
-      "transition": "crossfade",
-      "trans_dur": 0.5
-    },
-    {
-      "id": "scene-14",
-      "duration_sec": 16.8,
-      "slide": "statslide",
-      "params": {
-        "value": 130,
-        "label": "million pounds \u2014 the debt that broke the empire",
-        "prefix": "\u00a3",
-        "suffix": "M",
-        "decimals": 0
-      },
-      "turns": [
-        31,
-        32
-      ],
-      "transition": "crossfade",
-      "trans_dur": 0.5
-    },
-    {
-      "id": "scene-15",
-      "duration_sec": 35.1,
-      "slide": "mapzoomslide",
-      "params": {
-        "map_image": "maps/ohio_1763.png",
-        "title": "Pontiac's Rebellion \u2014 spring 1763",
-        "callouts": [
-          {
-            "at": [
-              0.45,
-              0.45
-            ],
-            "label": "Siege of Detroit"
-          },
-          {
-            "at": [
-              0.5,
-              0.55
-            ],
-            "label": "Forts fall across the Ohio country"
-          }
-        ]
-      },
-      "turns": [
-        33,
-        35
-      ],
-      "transition": "crossfade",
-      "trans_dur": 0.5
-    },
-    {
-      "id": "scene-16",
-      "duration_sec": 32.1,
-      "slide": "causalchain",
-      "params": {
-        "title": "Rebellion \u2192 Line",
-        "nodes": [
-          [
-            "Pontiac's Rebellion",
-            "Ohio peoples rise, spring 1763"
-          ],
-          [
-            "London panics",
-            "frontier wars too expensive"
-          ],
-          [
-            "Proclamation Line",
-            "no settlement west of the Appalachians"
-          ]
-        ]
-      },
-      "turns": [
-        35,
-        37
-      ],
-      "transition": "crossfade",
-      "trans_dur": 0.5
-    },
-    {
-      "id": "scene-17",
-      "duration_sec": 29.1,
-      "slide": "bulletslide",
-      "params": {
-        "title": "Recap \u2014 three boxes",
-        "bullets": [
-          "**Box 1**: Jumonville Glen \u2014 ambush starts a world war",
-          "**Box 2**: Pitt's gamble \u2014 Quebec, 15 minutes, New France finished",
-          "**Box 3**: 1763 bill \u2014 Paris treaty, \u00a3130M debt, Pontiac, Proclamation Line"
-        ]
-      },
-      "turns": [
-        44,
-        47
-      ],
-      "transition": "crossfade",
-      "trans_dur": 0.5
-    },
-    {
-      "id": "scene-18",
-      "duration_sec": 50.5,
-      "slide": "bulletslide",
-      "params": {
-        "title": "AP check",
-        "bullets": [
-          "**Q1**: Pitt's gamble \u2014 pay Prussia, pour into America",
-          "**Q2**: Pontiac's Rebellion \u2192 Proclamation Line (cause \u2192 effect)"
-        ]
-      },
-      "turns": [
-        51,
-        55
-      ],
-      "transition": "crossfade",
-      "trans_dur": 0.5
-    },
-    {
-      "id": "scene-19",
-      "duration_sec": 3.8,
-      "slide": "quoteslide",
-      "params": {
-        "quote": "Britain conquered a continent \u2014 and inherited the bill.",
-        "byline": "Episode 8"
-      },
-      "turns": [
-        56,
-        57
-      ],
-      "transition": "cut",
-      "trans_dur": 0
+ "version": 1,
+ "episode": "u2-e8",
+ "notes": "Reconciled from U2-E8-Scene-Plan.md (Act 1 sync lock + beat map) against the v3 script. Durations are the MD 157wpm estimates (no TTS yet \u2014 re-time on real turns, then add outgoing-transition compensation per scene). All cuts so total == sum. Fixes vs MD: highlightslide uses ==inline== marks (no highlights param); map paths are assets_dir-relative (maps/...); MapZoom markers carry read-off coords + per-beat holds; scene-05 is bulletslide (a global beat cannot pin to regional 16th-c maps); scene-04 tours 2 pins (uniform holds cannot hit 3 irregular beats). LTX prompts kept in the MD only: no clips exist and the pipeline has no loop-underlay mechanism.",
+ "movie_overlays": [
+  {
+   "type": "timelineribbon",
+   "height_frac": 0.07,
+   "era": "SEVEN YEARS' WAR \u00b7 1754\u20131763",
+   "events": [
+    [
+     0.084,
+     "1754"
+    ],
+    [
+     0.209,
+     "1755"
+    ],
+    [
+     0.354,
+     "1757"
+    ],
+    [
+     0.441,
+     "1759"
+    ],
+    [
+     0.525,
+     "1763"
+    ]
+   ],
+   "span": [
+    0,
+    1
+   ]
+  }
+ ],
+ "scenes": [
+  {
+   "id": "scene-01",
+   "slide": "titleslide",
+   "params": {
+    "title": "The 22-Year-Old Who Started a World War",
+    "subtitle": "APUSH Unit 2 \u00b7 Episode 8: Jumonville Glen, Pitt's gamble, the 1763 bill",
+    "bg": {
+     "type": "textured"
     }
-  ]
+   },
+   "turns": [
+    0,
+    0
+   ],
+   "duration_sec": 22.8,
+   "transition": "cut",
+   "trans_dur": 0,
+   "overlays": [
+    {
+     "type": "keywordpop",
+     "word": "Jumonville Glen",
+     "start": 13.5,
+     "duration": 1.5
+    },
+    {
+     "type": "keywordpop",
+     "word": "Pitt's gamble",
+     "start": 15.2,
+     "duration": 1.5
+    },
+    {
+     "type": "keywordpop",
+     "word": "1763 bill",
+     "start": 16.9,
+     "duration": 1.5
+    }
+   ]
+  },
+  {
+   "id": "scene-02",
+   "slide": "mapzoomslide",
+   "params": {
+    "map_image": "maps/america_gutierrez_1562.jpg",
+    "markers": [
+     {
+      "at": [
+       0.45,
+       0.235
+      ],
+      "zoom": 2.4,
+      "label": "Ohio Valley"
+     },
+     {
+      "at": [
+       0.44,
+       0.245
+      ],
+      "zoom": 3.6,
+      "label": "Jumonville Glen"
+     }
+    ],
+    "intro_hold": 4.0,
+    "move_dur": 1.5,
+    "zoom_hold": 14.6
+   },
+   "turns": [
+    1,
+    3
+   ],
+   "duration_sec": 30.8,
+   "transition": "cut",
+   "trans_dur": 0,
+   "overlays": [
+    {
+     "type": "keywordpop",
+     "word": "Ohio Valley",
+     "start": 1.0,
+     "duration": 2.0
+    },
+    {
+     "type": "lowerthird",
+     "name": "George Washington",
+     "role": "22-year-old Virginia militia officer",
+     "start": 3.5,
+     "duration": 4.0
+    },
+    {
+     "type": "lowerthird",
+     "name": "Sieur de Jumonville",
+     "role": "French officer",
+     "start": 24.0,
+     "duration": 3.5
+    }
+   ]
+  },
+  {
+   "id": "scene-03",
+   "slide": "highlightslide",
+   "params": {
+    "text": "The French called Jumonville an ==assassination== \u2014 and Washington signed a surrender at ==Fort Necessity== calling it ==l'assassinat==, saying he hadn't understood the translation.",
+    "bg": {
+     "type": "textured"
+    }
+   },
+   "turns": [
+    4,
+    6
+   ],
+   "duration_sec": 21.2,
+   "transition": "cut",
+   "trans_dur": 0,
+   "overlays": [
+    {
+     "type": "keywordpop",
+     "word": "Fort Necessity",
+     "start": 7.5,
+     "duration": 2.0
+    },
+    {
+     "type": "keywordpop",
+     "word": "l'assassinat",
+     "start": 13.0,
+     "duration": 2.0
+    },
+    {
+     "type": "caption",
+     "text": "He signed a confession he couldn't read.",
+     "start": 16.5,
+     "duration": 4.0
+    }
+   ]
+  },
+  {
+   "id": "scene-04",
+   "slide": "mapzoomslide",
+   "params": {
+    "map_image": "maps/america_gutierrez_1562.jpg",
+    "markers": [
+     {
+      "at": [
+       0.455,
+       0.24
+      ],
+      "zoom": 2.6,
+      "label": "Fort Duquesne"
+     },
+     {
+      "at": [
+       0.45,
+       0.245
+      ],
+      "zoom": 3.4,
+      "label": "Monongahela"
+     }
+    ],
+    "intro_hold": 12.0,
+    "move_dur": 2.0,
+    "zoom_hold": 16.0
+   },
+   "turns": [
+    7,
+    9
+   ],
+   "duration_sec": 48.4,
+   "transition": "cut",
+   "trans_dur": 0,
+   "overlays": [
+    {
+     "type": "lowerthird",
+     "name": "General Edward Braddock",
+     "role": "British general",
+     "start": 10.5,
+     "duration": 4.0
+    },
+    {
+     "type": "caption",
+     "text": "\"four bullets through my coat, and two horses shot under me\" \u2014 Washington",
+     "start": 42.0,
+     "duration": 4.5
+    }
+   ]
+  },
+  {
+   "id": "scene-05",
+   "slide": "bulletslide",
+   "params": {
+    "title": "War goes global",
+    "bullets": [
+     "**Europe** \u2014 the old powers bleed",
+     "**India** \u2014 Britain vs France",
+     "**Caribbean** \u2014 sugar islands change hands",
+     "**Manila** \u2014 a Pacific theater"
+    ],
+    "stagger": 3.5,
+    "bg": {
+     "type": "textured"
+    }
+   },
+   "turns": [
+    10,
+    13
+   ],
+   "duration_sec": 20.0,
+   "transition": "cut",
+   "trans_dur": 0,
+   "overlays": [
+    {
+     "type": "caption",
+     "text": "Some historians call it the first world war.",
+     "start": 14.0,
+     "duration": 5.0
+    }
+   ]
+  },
+  {
+   "id": "scene-06",
+   "slide": "displaypointsslide",
+   "params": {
+    "title": "The Albany Plan of Union",
+    "points": [
+     "June 1754 \u2014 seven colonies send delegates",
+     "Franklin: one united colonial government",
+     "London says no",
+     "The colonies said no first"
+    ],
+    "stagger": 8.0,
+    "bg": {
+     "type": "textured"
+    }
+   },
+   "turns": [
+    14,
+    18
+   ],
+   "duration_sec": 41.6,
+   "transition": "cut",
+   "trans_dur": 0,
+   "overlays": [
+    {
+     "type": "keywordpop",
+     "word": "June 1754",
+     "start": 9.0,
+     "duration": 2.5
+    }
+   ]
+  },
+  {
+   "id": "scene-07",
+   "slide": "causalchain",
+   "params": {
+    "title": "Pitt's gamble \u2014 1757",
+    "nodes": [
+     [
+      "Pay Prussia",
+      "subsidies to Frederick the Great"
+     ],
+     [
+      "Pin France in Europe",
+      "Prussian bayonets, British gold"
+     ],
+     [
+      "Pour into America",
+      "money + men across the Atlantic"
+     ],
+     [
+      "Win across the Atlantic",
+      ""
+     ]
+    ],
+    "stagger": 7.0,
+    "arrow_dur": 1.0,
+    "bg": {
+     "type": "textured"
+    }
+   },
+   "turns": [
+    19,
+    21
+   ],
+   "duration_sec": 32.8,
+   "transition": "cut",
+   "trans_dur": 0,
+   "overlays": [
+    {
+     "type": "caption",
+     "text": "\u201cConquer America in Germany\u201d",
+     "start": 13.0,
+     "duration": 5.0
+    }
+   ]
+  },
+  {
+   "id": "scene-08",
+   "slide": "displayheadline",
+   "params": {
+    "headline": "The Last of the Mohicans was THIS war",
+    "sub": "Fort William Henry \u00b7 same woods, same year",
+    "bg": {
+     "type": "textured"
+    }
+   },
+   "turns": [
+    22,
+    24
+   ],
+   "duration_sec": 14.8,
+   "transition": "cut",
+   "trans_dur": 0,
+   "overlays": []
+  },
+  {
+   "id": "scene-09",
+   "slide": "mapzoomslide",
+   "params": {
+    "map_image": "maps/america_gutierrez_1562.jpg",
+    "markers": [
+     {
+      "at": [
+       0.44,
+       0.2
+      ],
+      "zoom": 3.0,
+      "label": "Quebec, 1759"
+     }
+    ],
+    "intro_hold": 6.0,
+    "move_dur": 2.0,
+    "zoom_hold": 30.0
+   },
+   "turns": [
+    25,
+    27
+   ],
+   "duration_sec": 40.8,
+   "transition": "cut",
+   "trans_dur": 0,
+   "overlays": [
+    {
+     "type": "keywordpop",
+     "word": "September 13, 1759",
+     "start": 4.0,
+     "duration": 2.5
+    },
+    {
+     "type": "caption",
+     "text": "Fifteen minutes. Both commanders dying.",
+     "start": 30.0,
+     "duration": 6.0
+    }
+   ]
+  },
+  {
+   "id": "scene-10",
+   "slide": "bulletslide",
+   "params": {
+    "title": "Treaty of Paris \u2014 February 1763",
+    "bullets": [
+     "**France loses:** Canada + everything east of the Mississippi",
+     "**Spain loses:** Florida",
+     "**Britain doubles** its empire in a day",
+     "**The bill doubles too:** ~\u00a3130 million"
+    ],
+    "stagger": 8.0,
+    "bg": {
+     "type": "textured"
+    }
+   },
+   "turns": [
+    28,
+    32
+   ],
+   "duration_sec": 40.0,
+   "transition": "cut",
+   "trans_dur": 0,
+   "overlays": [
+    {
+     "type": "keywordpop",
+     "word": "\u00a3130 million",
+     "start": 24.0,
+     "duration": 2.5
+    }
+   ]
+  },
+  {
+   "id": "scene-11",
+   "slide": "mapzoomslide",
+   "params": {
+    "map_image": "maps/america_gutierrez_1562.jpg",
+    "markers": [
+     {
+      "at": [
+       0.45,
+       0.225
+      ],
+      "zoom": 3.0,
+      "label": "Pontiac's Rebellion"
+     }
+    ],
+    "intro_hold": 6.0,
+    "move_dur": 2.0,
+    "zoom_hold": 31.0
+   },
+   "turns": [
+    33,
+    35
+   ],
+   "duration_sec": 41.2,
+   "transition": "cut",
+   "trans_dur": 0,
+   "overlays": [
+    {
+     "type": "keywordpop",
+     "word": "Spring 1763",
+     "start": 2.0,
+     "duration": 2.5
+    },
+    {
+     "type": "caption",
+     "text": "First Detroit \u2014 then forts across the Lakes",
+     "start": 30.0,
+     "duration": 7.0
+    }
+   ]
+  },
+  {
+   "id": "scene-12",
+   "slide": "mapzoomslide",
+   "params": {
+    "map_image": "maps/america_gutierrez_1562.jpg",
+    "markers": [
+     {
+      "at": [
+       0.41,
+       0.24
+      ],
+      "zoom": 2.8,
+      "label": "Proclamation Line"
+     }
+    ],
+    "intro_hold": 5.0,
+    "move_dur": 2.0,
+    "zoom_hold": 25.0
+   },
+   "turns": [
+    36,
+    39
+   ],
+   "duration_sec": 34.4,
+   "transition": "cut",
+   "trans_dur": 0,
+   "overlays": [
+    {
+     "type": "keywordpop",
+     "word": "October 1763",
+     "start": 7.0,
+     "duration": 2.5
+    },
+    {
+     "type": "caption",
+     "text": "No settlement west of the Appalachians.",
+     "start": 12.0,
+     "duration": 6.0
+    }
+   ]
+  },
+  {
+   "id": "scene-13",
+   "slide": "displayheadline",
+   "params": {
+    "headline": "European war in America \u2014 or American war gone global?",
+    "sub": "Victory and debt: Britain got the continent and the bill",
+    "bg": {
+     "type": "textured"
+    }
+   },
+   "turns": [
+    40,
+    43
+   ],
+   "duration_sec": 31.6,
+   "transition": "cut",
+   "trans_dur": 0,
+   "overlays": []
+  },
+  {
+   "id": "scene-14",
+   "slide": "stepsslide",
+   "params": {
+    "title": "Three boxes, landed (1\u20132)",
+    "steps": [
+     [
+      "Jumonville, 1754",
+      "ambush in the rain starts a world war"
+     ],
+     [
+      "Braddock + Albany fail",
+      "disaster in the woods, colonies won\u2019t unite"
+     ],
+     [
+      "Pitt's gamble",
+      "pay Prussia, pour into America"
+     ],
+     [
+      "Quebec, 1759",
+      "fifteen minutes, New France finished"
+     ]
+    ],
+    "stagger": 6.0,
+    "bg": {
+     "type": "textured"
+    }
+   },
+   "turns": [
+    44,
+    46
+   ],
+   "duration_sec": 28.8,
+   "transition": "cut",
+   "trans_dur": 0,
+   "overlays": []
+  },
+  {
+   "id": "scene-15",
+   "slide": "bulletslide",
+   "params": {
+    "title": "Box three: the 1763 bill",
+    "bullets": [
+     "**Paris:** France loses Canada, Spain loses Florida",
+     "**Debt:** ~\u00a3130 million",
+     "**Pontiac rises,** London draws the Proclamation Line"
+    ],
+    "stagger": 6.0,
+    "bg": {
+     "type": "textured"
+    }
+   },
+   "turns": [
+    47,
+    50
+   ],
+   "duration_sec": 24.4,
+   "transition": "cut",
+   "trans_dur": 0,
+   "overlays": []
+  },
+  {
+   "id": "scene-16",
+   "slide": "displayheadline",
+   "params": {
+    "headline": "\u201cCanada Ours\u201d \u2014 what was the strategy, and whose?",
+    "sub": "Say it before Maya does \u00b7 5-second pause",
+    "bg": {
+     "type": "textured"
+    }
+   },
+   "turns": [
+    51,
+    53
+   ],
+   "duration_sec": 32.2,
+   "transition": "cut",
+   "trans_dur": 0,
+   "overlays": []
+  },
+  {
+   "id": "scene-17",
+   "slide": "displayheadline",
+   "params": {
+    "headline": "Name the rebellion and the line",
+    "sub": "\u2026and the cause and effect between them",
+    "bg": {
+     "type": "textured"
+    }
+   },
+   "turns": [
+    54,
+    56
+   ],
+   "duration_sec": 25.0,
+   "transition": "cut",
+   "trans_dur": 0,
+   "overlays": []
+  },
+  {
+   "id": "scene-18",
+   "slide": "quoteslide",
+   "params": {
+    "quote": "Britain conquered a continent \u2014 and inherited the bill.",
+    "byline": "Episode 8 \u00b7 Next: the cram \u2014 then Grenville does the math",
+    "bg": {
+     "type": "textured"
+    }
+   },
+   "turns": [
+    57,
+    59
+   ],
+   "duration_sec": 16.0,
+   "transition": "cut",
+   "trans_dur": 0,
+   "overlays": []
+  }
+ ]
 }

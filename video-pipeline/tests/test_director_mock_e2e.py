@@ -34,9 +34,11 @@ SCHEMA_SLIDES = {
     "TitleCardSlide", "DuoSlide", "ImageSlide", "SplitSlide", "QuoteSlide",
     "StatSlide", "KenBurnsSlide", "CalloutSlide", "MapZoomSlide",
     "RouteSlide", "CausalChainSlide", "VidSlide",
+    "TerritorySlide", "RecallSlide", "SpectrumSlide",
+    "SketchSlide",
 }
 SCHEMA_OVERLAYS = {"keywordpop", "caption", "lowerthird", "sticker",
-                   "regionglow"}
+                   "regionglow", "timelineribbon"}
 
 
 def _validate_against_schema(plan):

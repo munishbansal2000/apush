@@ -8,7 +8,7 @@ import numpy as np
 
 from slideforge import Config, TitleSlide, validate
 from slideforge.overlays import LowerThird, Caption, Sticker, RegionGlow, \
-    MapNote, with_overlays
+    MapNote, TimelineRibbon, with_overlays
 from slideforge.slides import MapZoomSlide
 from slideforge.timeline import Movie
 
@@ -133,3 +133,27 @@ class TestOverlays(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+class TestTimelineRibbonHeight(unittest.TestCase):
+    def test_slim_ribbon_leaves_caption_band_clear(self):
+        # scene captions sit in the bottom band; a slim movie ribbon
+        # must not paint where they live.
+        base = np.zeros((360, 640, 3), dtype=np.uint8)
+        slim = TimelineRibbon("era", duration=10.0, height_frac=0.07)
+        full = TimelineRibbon("era", duration=10.0)
+        fs = slim.apply(base.copy(), 5.0)
+        ff = full.apply(base.copy(), 5.0)
+        slim_top = 360 - int(360 * 0.07)
+        full_top = 360 - int(360 * 0.115)
+        # (the 2 rows above the band may carry the accent divider
+        # line + era-text tops, which straddle the band edge.)
+        np.testing.assert_array_equal(fs[full_top:slim_top - 2],
+                                      base[full_top:slim_top - 2])
+        self.assertFalse((fs[slim_top:] == base[slim_top:]).all())
+        self.assertFalse((ff[full_top:] == base[full_top:]).all())
+
+    def test_bad_height_frac_rejected(self):
+        with self.assertRaises(ValueError):
+            TimelineRibbon("era", height_frac=0)
+        with self.assertRaises(ValueError):
+            TimelineRibbon("era", height_frac=0.9)
