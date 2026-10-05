@@ -251,6 +251,16 @@ def _build_scene(spec, assets_dir, scene_id):
 
     params = dict(spec.get("params") or {})
 
+    # Normalize bg specs: {"path": ...} without an explicit "type" means an
+    # image background. Without this, slideforge's spec.get("type",
+    # "gradient") default routes the spec to _gradient, which KeyErrors on
+    # the missing "top" at render time (seen live on the u1-e2 plan).
+    bg = params.get("bg")
+    if isinstance(bg, dict) and "path" in bg and "type" not in bg:
+        bg = dict(bg)
+        bg["type"] = "image"
+        params["bg"] = bg
+
     # Resolve image paths before constructing the slide.
     for dot in _match_image_paths(params, slide_key):
         try:
