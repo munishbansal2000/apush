@@ -421,7 +421,7 @@ class Magnifier(Overlay):
         lx, ly = self._center_at(t)
         lx, ly = lx * w, ly * h
         r = self.radius * min(w, h) * (0.6 + 0.4 * e)
-        src_r = r / self.zoom
+        src_r = min(r / self.zoom, w / 2, h / 2)
         x0 = int(min(max(lx - src_r, 0), w - 2 * src_r))
         y0 = int(min(max(ly - src_r, 0), h - 2 * src_r))
         crop = frame[y0:y0 + int(2 * src_r), x0:x0 + int(2 * src_r)]

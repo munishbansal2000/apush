@@ -28,19 +28,17 @@ def check(slide, name):
 
 def main():
     cfg = Config(w=1280, h=720, fps=30)
-    m = Movie(cfg)
+
+    # beat slides (overlays listed per beat; the ribbon is added to every
+    # beat afterwards with its real span of the whole video)
+    beats = []
 
     # 1. timeline ribbon over a map tour
     kb1 = KenBurnsSlide(
         MAP, stops=[(0.5, 0.5, 1.0), (0.42, 0.40, 0.42)], hold=1.6,
         title="The Spanish Atlantic", caption="Spain's first American empire",
         cfg=cfg)
-    ribbon = TimelineRibbon(
-        "PERIOD 1 · 1491–1607",
-        events=[(0.0, "1492"), (0.35, "1519 · Cortés"),
-                (0.70, "1565 · St. Augustine"), (1.0, "1607 · Jamestown")],
-        span=(0.0, 1.0))
-    m.add(with_overlays(kb1, [ribbon]), transition="cut")
+    beats.append((kb1, [], "cut"))
 
     # 2. causal chain
     chain = CausalChainSlide(
@@ -51,26 +49,26 @@ def main():
         title="Why did Europeans cross the Atlantic?",
         bg=apush_bg("colonial"), cfg=cfg)
     check(chain, "chain")
-    m.add(chain, transition="crossfade", trans_dur=0.5)
+    beats.append((chain, [], "crossfade"))
 
     # 3. territory expansion on one map
     terr = TerritorySlide(
         MAP1863,
         [{"at": (0.78, 0.45), "rx": 0.10, "ry": 0.16,
           "label": "Treaty of Paris", "date": "1783",
-          "color": (90, 140, 255), "label_at": (0.78, 0.24)},
-         {"at": (0.44, 0.38), "rx": 0.10, "ry": 0.15, "label": "Louisiana",
-          "date": "1803", "color": (255, 170, 60), "label_at": (0.44, 0.19)},
+          "color": (90, 140, 255), "label_at": (0.78, 0.27)},
+         {"at": (0.40, 0.38), "rx": 0.10, "ry": 0.15, "label": "Louisiana",
+          "date": "1803", "color": (255, 170, 60), "label_at": (0.18, 0.31)},
          {"at": (0.82, 0.76), "rx": 0.045, "ry": 0.06, "label": "Florida",
           "date": "1819", "color": (120, 220, 130)},
          {"at": (0.48, 0.70), "rx": 0.08, "ry": 0.08, "label": "Texas",
-          "date": "1845", "color": (220, 120, 220), "label_at": (0.48, 0.88)},
+          "date": "1845", "color": (220, 120, 220), "label_at": (0.63, 0.80)},
          {"at": (0.22, 0.50), "rx": 0.10, "ry": 0.18,
           "label": "Mexican Cession", "date": "1848",
           "color": (255, 110, 110)}],
         title="The United States grows", stagger=1.3, cfg=cfg)
     check(terr, "territory")
-    m.add(terr, transition="crossfade", trans_dur=0.5)
+    beats.append((terr, [], "crossfade"))
 
     # 4. red pen over bullets
     bullets = BulletSlide(
@@ -81,13 +79,13 @@ def main():
         bg=apush_bg("colonial"), cfg=cfg)
     check(bullets, "bullets")
     pen = RedPen([
-        {"kind": "underline", "from": (0.30, 0.435), "to": (0.52, 0.435),
+        {"kind": "underline", "from": (0.355, 0.435), "to": (0.465, 0.435),
          "start": 1.0},
-        {"kind": "circle", "at": (0.37, 0.53), "r": 0.14, "start": 2.2},
+        {"kind": "circle", "at": (0.37, 0.53), "r": 0.155, "start": 2.2},
         {"kind": "note", "at": (0.70, 0.72), "text": "KEY IDEA", "start": 3.2},
-        {"kind": "check", "at": (0.90, 0.53), "size": 0.035, "start": 4.0},
+        {"kind": "check", "at": (0.80, 0.53), "size": 0.035, "start": 4.0},
     ])
-    m.add(with_overlays(bullets, [pen]), transition="crossfade", trans_dur=0.5)
+    beats.append((bullets, [pen], "crossfade"))
 
     # 5. recall / self-test
     recall = RecallSlide(
@@ -97,7 +95,7 @@ def main():
          "Glory — rivalry with England and France"],
         bg=apush_bg("colonial"), cfg=cfg)
     check(recall, "recall")
-    m.add(recall, transition="crossfade", trans_dur=0.5)
+    beats.append((recall, [], "crossfade"))
 
     # 6. spectrum
     spec = SpectrumSlide(
@@ -108,7 +106,7 @@ def main():
           "sub": "Louisiana Purchase, 1803"}],
         title="Reading the Constitution", bg=apush_bg("revolution"), cfg=cfg)
     check(spec, "spectrum")
-    m.add(spec, transition="crossfade", trans_dur=0.5)
+    beats.append((spec, [], "crossfade"))
 
     # 7. magnifier over a primary source
     doc = HighlightSlide(
@@ -117,9 +115,9 @@ def main():
         "and his account shocked readers back in Spain.",
         cfg=cfg)
     check(doc, "doc")
-    mag = Magnifier([(0.0, 0.35, 0.42), (2.5, 0.55, 0.48), (5.0, 0.68, 0.44)],
+    mag = Magnifier([(0.0, 0.30, 0.32), (2.5, 0.55, 0.48), (5.0, 0.68, 0.44)],
                     radius=0.14, zoom=2.4)
-    m.add(with_overlays(doc, [mag]), transition="crossfade", trans_dur=0.5)
+    beats.append((doc, [mag], "crossfade"))
 
     # 8. map notes riding the camera
     kb2 = KenBurnsSlide(
@@ -131,7 +129,23 @@ def main():
         {"at": (0.43, 0.43), "label": "Hispaniola", "sub": "La Navidad fort",
          "start": 3.4},
     ])
-    m.add(with_overlays(kb2, [notes]), transition="crossfade", trans_dur=0.5)
+    beats.append((kb2, [notes], "crossfade"))
+
+    # The ribbon persists across the whole video: each beat declares the span
+    # it covers, so the playhead creeps instead of sprinting.
+    total = sum(s.duration for s, _, _ in beats)
+    ribbon_events = [(0.04, "1492"), (0.30, "1783"), (0.55, "1803"),
+                     (0.85, "1848")]
+    m = Movie(cfg)
+    cum = 0.0
+    for i, (slide, overlays, trans) in enumerate(beats):
+        span = (cum / total, (cum + slide.duration) / total)
+        cum += slide.duration
+        ribbon = TimelineRibbon("THE AMERICAN STORY · 1491–1848",
+                                events=ribbon_events, span=span)
+        kwargs = {} if trans == "cut" else {"transition": trans,
+                                            "trans_dur": 0.5}
+        m.add(with_overlays(slide, overlays + [ribbon]), **kwargs)
 
     out = "demo_constructs4.mp4"
     m.render(out)

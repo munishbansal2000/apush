@@ -1924,14 +1924,19 @@ def _title_block(frame, title, t, y_frac=0.10, size_frac=0.075, accent=ACCENT):
     w, h = frame.shape[1], frame.shape[0]
     pil = to_pil(frame)
     e = a01(t, 0.0, 0.6)
-    y_top, y_bot = h * y_frac, h * (y_frac + 0.16)
-    pil = C.draw_para(pil, (w * 0.09, y_top, w * 0.91, y_bot),
-                      title, size=int(h * size_frac), fill=INK, bold=True,
+    size = int(h * size_frac)
+    y_top = h * y_frac
+    # measure the real wrapped height so the underline sits below the text
+    # even when the title wraps to two lines
+    _, text_h = C.text_block_size(title, size, w * 0.82, bold=True)
+    y_line = y_top + text_h + 10
+    pil = C.draw_para(pil, (w * 0.09, y_top, w * 0.91, y_top + h * 0.30),
+                      title, size=size, fill=INK, bold=True,
                       align="center", alpha=int(255 * e))
     uw = int(w * 0.10 * a01(t, 0.2, 0.5))
     if uw:
         d = ImageDraw.Draw(pil, "RGBA")
-        d.line([(w / 2 - uw / 2, y_bot + 6), (w / 2 + uw / 2, y_bot + 6)],
+        d.line([(w / 2 - uw / 2, y_line), (w / 2 + uw / 2, y_line)],
                fill=accent + (int(255 * e),), width=max(2, int(h * 0.008)))
     return to_np(pil)
 
@@ -2090,6 +2095,10 @@ class TerritorySlide(Slide):
             label, date = terr.get("label", ""), terr.get("date", "")
             if e > 0.5 and label:
                 le = a01(t, 0.6 + i * self.stagger + 0.45, 0.5)
+                # the dark pill fades in ahead of the text so the label never
+                # floats unreadably on the map mid-fade
+                pill_e = min(1.0, le * 1.6)
+                text_e = max(0.0, (le - 0.25) / 0.75)
                 lw_, lh_ = C.text_block_size(label, int(h * 0.036), w * 0.3, bold=True)
                 dw_, dh_ = C.text_block_size(date, int(h * 0.030), w * 0.3) if date else (0, 0)
                 bw, bh = max(lw_, dw_) + 30, lh_ + dh_ + 22
@@ -2107,16 +2116,16 @@ class TerritorySlide(Slide):
                 if lat is not None:
                     # leader from pill to territory center
                     d.line([(bx + bw / 2, by + bh), (cx, cy)],
-                           fill=(255, 255, 255, int(150 * le)), width=2)
+                           fill=(255, 255, 255, int(150 * pill_e)), width=2)
                 d.rounded_rectangle([bx, by, bx + bw, by + bh],
-                                    radius=10, fill=(12, 14, 22, int(225 * le)))
+                                    radius=10, fill=(12, 14, 22, int(225 * pill_e)))
                 d.text((bx + bw / 2, by + lh_ / 2 - 2), label,
                        font=get_font(int(h * 0.036), bold=True), anchor="mm",
-                       fill=(255, 255, 255, int(255 * le)))
+                       fill=(255, 255, 255, int(255 * text_e)))
                 if date:
                     d.text((bx + bw / 2, by + lh_ + dh_ / 2 + 2), date,
                            font=get_font(int(h * 0.030), bold=True), anchor="mm",
-                           fill=color + (int(255 * le),))
+                           fill=color + (int(255 * text_e),))
         return to_np(pil)
 
 
@@ -2175,7 +2184,7 @@ class RecallSlide(Slide):
         he = min(a01(t, 0.3, 0.4), 1 - a01(t, 1.6, 0.5))
         if he > 0:
             d = ImageDraw.Draw(pil, "RGBA")
-            d.text((w / 2, h * 0.90), "pause — try to recall before it sharpens",
+            d.text((w / 2, h * 0.84), "pause — try to recall before it sharpens",
                    font=get_font(int(h * 0.028)), anchor="mm",
                    fill=(150, 160, 180, int(200 * he)))
         return to_np(pil)
