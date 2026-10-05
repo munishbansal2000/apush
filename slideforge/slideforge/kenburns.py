@@ -11,7 +11,7 @@ any stretching. Views are interpolated with easing for buttery moves.
 import numpy as np
 from PIL import Image
 
-from .timeline import Scene
+from .timeline import Scene, Config
 from .easing import ease_in_out
 
 
@@ -22,6 +22,8 @@ def full_view():
 
 def zoom_on(cx, cy, zoom):
     """A view centered at (cx, cy) zoomed in by `zoom` (e.g. 2.5 = 2.5x)."""
+    if zoom <= 0:
+        raise ValueError(f"zoom must be > 0, got {zoom!r}")
     return (cx, cy, 1.0 / zoom)
 
 
@@ -71,9 +73,14 @@ class KenBurns(Scene):
     """
 
     def __init__(self, image, duration, stops, hold=1.0, ease=ease_in_out, cfg=None):
+        if duration is None or duration <= 0:
+            raise ValueError(f"KenBurns duration must be > 0, got {duration!r}")
+        stops = list(stops)
+        if not stops:
+            raise ValueError("KenBurns stops must not be empty")
         super().__init__(duration, cfg)
         self.image = image  # RGB numpy array
-        self.stops = list(stops)
+        self.stops = stops
         self.hold = hold
         self.ease = ease
         self._segments = self._build_segments(duration)
@@ -110,6 +117,9 @@ class KenBurns(Scene):
         return self.stops[-1]
 
     def frame(self, t):
-        w, h = self.cfg.w, self.cfg.h
+        # Standalone scenes (never added to a Movie) get the default config
+        # instead of crashing on None.
+        cfg = self.cfg or Config()
+        w, h = cfg.w, cfg.h
         cx, cy, fw = self.view_at(t)
         return kb_frame(self.image, w, h, cx, cy, fw)

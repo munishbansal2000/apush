@@ -30,18 +30,26 @@ def resolve_map(map_path):
     return str(mp)
 
 
-def _resolve_map(map_path):
-    return resolve_map(map_path)
-
-
 def load_route(name_or_path):
     """Load a route JSON by name (from slideforge/routes/) or by path."""
     p = Path(name_or_path)
     if not p.is_absolute() and not p.exists():
+        # Name lookup: sanitize like make_route does — no traversal out of
+        # slideforge/routes/, even though this path is read-only.
         stem = p.name if p.suffix == ".json" else p.name + ".json"
-        p = _HERE / "routes" / stem
-    data = json.loads(p.read_text())
-    data["map"] = _resolve_map(data["map"])
+        if stem in (".json", "..json") or "/" in stem or "\\" in stem:
+            raise ValueError(f"invalid route name: {name_or_path!r}")
+        p = (_HERE / "routes" / stem).resolve()
+        if p.parent != (_HERE / "routes").resolve():
+            raise ValueError(f"invalid route name: {name_or_path!r}")
+    try:
+        data = json.loads(p.read_text())
+    except json.JSONDecodeError as e:
+        raise ValueError(f"route file is not valid JSON: {p} ({e})") from e
+    issues = validate_route_data(data)
+    if issues:
+        raise ValueError(f"route file {p} is invalid: {issues[0]}")
+    data["map"] = resolve_map(data["map"])
     if not Path(data["map"]).exists():
         raise FileNotFoundError(f"route map not found: {data['map']}")
     return data

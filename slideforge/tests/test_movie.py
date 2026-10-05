@@ -87,7 +87,11 @@ class TestMovie(unittest.TestCase):
         m.add(Solid((1, 2, 3), cfg=cfg), transition="cut")
         m.add(Solid((4, 5, 6), cfg=cfg), transition="cut")
         np.testing.assert_array_equal(m.frame_at(0.5)[0, 0], [1, 2, 3])
-        np.testing.assert_array_equal(m.frame_at(1.999)[0, 0], [4, 5, 6])
+        # A cut consumes no time: scene 2 starts exactly at 2.0 with no
+        # blend window (previously the 0.6s default leaked in).
+        self.assertAlmostEqual(m.total_duration(), 4.0)
+        np.testing.assert_array_equal(m.frame_at(1.999)[0, 0], [1, 2, 3])
+        np.testing.assert_array_equal(m.frame_at(2.0)[0, 0], [4, 5, 6])
 
     def test_movie_overlay_applies_after_blend(self):
         from slideforge.overlays import Caption
@@ -115,8 +119,12 @@ class TestMovie(unittest.TestCase):
         with tempfile.TemporaryDirectory() as d:
             with mock.patch("subprocess.Popen",
                             side_effect=FileNotFoundError("no ffmpeg")):
-                with self.assertRaises(FileNotFoundError):
+                with self.assertRaises(RuntimeError) as cm:
                     m.render(os.path.join(d, "x.mp4"))
+        # The real error is chained, not masked by AttributeError on
+        # a None proc; the message says what to do about it.
+        self.assertIsInstance(cm.exception.__cause__, FileNotFoundError)
+        self.assertIn("ffmpeg", str(cm.exception))
 
 
 if __name__ == "__main__":

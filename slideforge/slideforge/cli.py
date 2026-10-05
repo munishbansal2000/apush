@@ -1,4 +1,4 @@
-"""slideforge command line: make-route, validate, plugins."""
+"""slideforge command line: make-route, validate, plugins, gen, fetch."""
 
 import argparse
 import sys

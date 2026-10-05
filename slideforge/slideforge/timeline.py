@@ -21,7 +21,12 @@ class Scene:
     """Anything with a duration that can render frame t (seconds) -> RGB array."""
 
     def __init__(self, duration, cfg=None):
-        self.duration = float(duration)
+        # None duration is legal (Overlay: "until scene end"); a negative
+        # duration is never meaningful — reject it at construction instead
+        # of producing a silently broken timeline.
+        if duration is not None and float(duration) < 0:
+            raise ValueError(f"scene duration must be >= 0, got {duration!r}")
+        self.duration = float(duration) if duration is not None else None
         self.cfg = cfg
 
     def frame(self, t):
@@ -42,12 +47,17 @@ class Movie:
     def add(self, scene, transition="crossfade", trans_dur=0.6):
         if scene.cfg is None:
             scene.cfg = self.cfg
+        if trans_dur < 0:
+            raise ValueError(f"trans_dur must be >= 0, got {trans_dur!r}")
         self.scenes.append(scene)
         if len(self.scenes) == 1:
             self.transitions.append((None, 0.0))
         else:
             if transition in (None, "cut"):
                 fn = None
+                # A cut consumes no time: a leftover trans_dur would silently
+                # shorten the timeline with no visual transition.
+                trans_dur = 0.0
             else:
                 try:
                     fn = transition_registry.get(transition)
@@ -138,11 +148,21 @@ class Movie:
 
         proc = None
         try:
-            proc = subprocess.Popen(cmd, stdin=subprocess.PIPE,
-                                    stdout=subprocess.DEVNULL,
-                                    stderr=subprocess.DEVNULL)
+            try:
+                proc = subprocess.Popen(cmd, stdin=subprocess.PIPE,
+                                        stdout=subprocess.DEVNULL,
+                                        stderr=subprocess.DEVNULL)
+            except OSError as e:
+                raise RuntimeError(
+                    f"could not start ffmpeg ({e}); is it installed and on PATH?"
+                ) from e
             for n in range(n_frames):
                 frame = self.frame_at(n / fps)
+                if frame.shape != (h, w, 3) or frame.dtype != np.uint8:
+                    raise ValueError(
+                        f"frame {n} has shape {frame.shape} dtype {frame.dtype}; "
+                        f"expected ({h}, {w}, 3) uint8"
+                    )
                 proc.stdin.write(frame.tobytes())
                 if not quiet and n % 60 == 0:
                     print(f"  frame {n}/{n_frames} ({n / n_frames:.0%})", flush=True)
@@ -150,6 +170,8 @@ class Movie:
             if proc is not None:
                 proc.stdin.close()
                 proc.wait()
+        if proc is None:  # pragma: no cover - defensive; Popen failure raises above
+            raise RuntimeError("ffmpeg process was never started")
         if proc.returncode != 0:
             raise RuntimeError(f"ffmpeg failed with code {proc.returncode}")
         size_mb = os.path.getsize(path) / 1e6

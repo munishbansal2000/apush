@@ -28,6 +28,9 @@ def a01(t, start, dur, ease=ease_out):
     """0..1 appear-progress of an element that starts at `start` seconds."""
     if t < start:
         return 0.0
+    if dur <= 0:
+        # Instant appearance: no ramp to divide by.
+        return 1.0
     return ease(min(1.0, (t - start) / dur))
 
 
@@ -62,7 +65,10 @@ class Slide(Scene):
         # _image_driven slides (KenBurns, Callout, ...) are full-bleed imagery:
         # the image IS the contextual background, so no warning is due.
         self._bg_explicit = bg is not None or self._image_driven
-        self.bg = bg or {"type": "textured"}
+        if bg is not None and not isinstance(bg, dict):
+            raise ValueError(
+                f"bg spec must be a dict, got {type(bg).__name__}")
+        self.bg = bg if bg is not None else {"type": "textured"}
         # text elements registered during frame(): {"key", "box", "color",
         # "size_px"} — fuels validate_visual(). Slides call
         # self._register_text(...) as they draw.
@@ -179,12 +185,19 @@ class TitleSlide(Slide):
                                   radius=4, fill=self.accent + (255,))
 
         pil = _word_stagger(pil, self.title, size=int(h * 0.105), y_center=h * 0.44, t=t)
+        tw, th = C.text_block_size(self.title, int(h * 0.105), w)
+        self._register_text("title", (w / 2 - tw / 2, h * 0.44 - th / 2,
+                                      w / 2 + tw / 2, h * 0.44 + th / 2),
+                            INK, int(h * 0.105))
         if self.subtitle:
             e = a01(t, 0.9, 0.8)
             if e > 0:
                 pil = C.draw_para(pil, (w * 0.15, h * 0.72, w * 0.85, h * 0.9),
                                   self.subtitle, size=int(h * 0.045), fill=MUTED,
                                   align="center", alpha=int(255 * e))
+                self._register_text("subtitle", (w * 0.15, h * 0.72,
+                                                 w * 0.85, h * 0.9),
+                                    MUTED, int(h * 0.045))
         return to_np(pil)
 
 
@@ -198,7 +211,7 @@ class BulletSlide(Slide):
     """
 
     def __init__(self, title, bullets, duration=None, accent=ACCENT, bg=None,
-                 cfg=None, stagger=1.25):
+                 stagger=1.25, cfg=None):
         norm = [self._norm(b) for b in bullets]
         nlines = sum(1 + len(ch) for _, ch in norm)
         duration = duration or (2.4 + stagger * nlines)
@@ -326,8 +339,8 @@ class StepsSlide(Slide):
     """
 
     def __init__(self, title, steps, duration=None, accent=ACCENT, bg=None,
-                 cfg=None, banner=None, banner_fill=(211, 47, 47),
-                 stagger=1.6):
+                 banner=None, banner_fill=(211, 47, 47),
+                 stagger=1.6, cfg=None):
         norm = [self._norm(s) for s in steps]
         duration = duration or (2.6 + stagger * len(norm))
         super().__init__(duration, bg, cfg)
@@ -354,21 +367,6 @@ class StepsSlide(Slide):
         raise ValueError(
             f"steps entries must be 'heading' or (heading, body), got {s!r}")
 
-    @staticmethod
-    def _banner_chip(text, size, fill):
-        font = get_font(size, bold=True)
-        tmp = ImageDraw.Draw(Image.new("RGBA", (8, 8)))
-        tw = tmp.textlength(text, font=font)
-        asc, desc = font.getmetrics()
-        pad_x, pad_y = int(size * 0.7), int(size * 0.35)
-        img = Image.new("RGBA", (int(tw) + pad_x * 2, asc + desc + pad_y * 2),
-                        (0, 0, 0, 0))
-        d = ImageDraw.Draw(img)
-        d.rounded_rectangle([0, 0, img.width - 1, img.height - 1],
-                           radius=int(size * 0.25), fill=fill + (255,))
-        d.text((pad_x, pad_y), text, font=font, fill=(20, 16, 14, 255))
-        return img
-
     def frame(self, t):
         w, h = self.cfg.w, self.cfg.h
         frame = self.bg_frame(t)
@@ -378,8 +376,8 @@ class StepsSlide(Slide):
         if self.banner:
             e = a01(t, 0.0, 0.5, ease=easing.ease_out_back)
             if e > 0:
-                chip = self._banner_chip(self.banner, int(h * 0.062),
-                                         self.banner_fill)
+                chip = _banner_img(self.banner, int(h * 0.062),
+                                   self.banner_fill, fg=(20, 16, 14))
                 cw, chh = chip.size
                 sc = 0.7 + 0.3 * e
                 chip = chip.resize((int(cw * sc), int(chh * sc)),
@@ -396,6 +394,9 @@ class StepsSlide(Slide):
             pil = C.draw_para(pil, (w * 0.09, y_top, w * 0.91, y_top + h * 0.18),
                               self.title, size=int(h * 0.075), fill=INK,
                               bold=True, alpha=int(255 * e))
+            self._register_text("title", (w * 0.09, y_top,
+                                          w * 0.91, y_top + h * 0.18),
+                                INK, int(h * 0.075))
             y_top += h * 0.18
 
         y = max(y_top + h * 0.06, h * 0.34) if not self.banner else y_top + h * 0.04
@@ -418,10 +419,20 @@ class StepsSlide(Slide):
                 pil = C.draw_para(pil, (x + w * 0.11, y + 6 + hh + 8, w * 0.91, y + h * 0.3),
                                   body, size=int(h * 0.04), fill=MUTED, alpha=alpha)
                 _, bh = C.text_block_size(body, int(h * 0.04), w * 0.91 - (x + w * 0.11))
+                sx = w * 0.09  # settled x (slide-in offset is 0 when e=1)
+                self._register_text(
+                    f"step:{i}", (sx + w * 0.11, y + 6,
+                                  w * 0.91, y + 6 + hh + 8 + bh),
+                    INK, int(h * 0.052))
                 y += hh + bh + h * 0.075
             else:
                 _, hh = C.text_block_size(head, int(h * 0.052), w * 0.91 - (x + w * 0.11),
                                           bold=True)
+                sx = w * 0.09
+                self._register_text(
+                    f"step:{i}", (sx + w * 0.11, y + 6,
+                                  w * 0.91, y + 6 + hh),
+                    INK, int(h * 0.052))
                 y += hh + h * 0.075
         return to_np(pil)
 
@@ -432,13 +443,19 @@ class DisplayPointsSlide(Slide):
 
     points: ["1. New Tech", "2. Mass Media"] — big white type with hard
     shadow, punching in one by one like the classic review-video style.
+    title: optional small kicker above the points.
     """
 
-    def __init__(self, points, bg=None, duration=None, stagger=1.7, cfg=None):
+    def __init__(self, points, title="", bg=None, duration=None, stagger=1.7,
+                 cfg=None):
+        if isinstance(points, str):
+            # A bare string is one point, not five one-letter points.
+            points = [points]
         points = list(points)
         duration = duration or (2.2 + stagger * len(points))
         super().__init__(duration, bg, cfg)
         self.points = points
+        self.title = title
         self.stagger = stagger
         self._lines = None  # cached RGBA line images, built on first frame
 
@@ -448,9 +465,24 @@ class DisplayPointsSlide(Slide):
         self._lines = [_outlined_block(text, size, max_w)
                        for text in self.points]
 
+    def validate(self):
+        issues = super().validate()
+        if not self.points:
+            issues.append("no points to display")
+        return issues
+
     def frame(self, t):
         w, h = self.cfg.w, self.cfg.h
         frame = C.vignette(self.bg_frame(t), 0.35)
+        if self.title:
+            frame = C.draw_para(to_pil(frame), (w * 0.08, h * 0.06,
+                                                w * 0.92, h * 0.14),
+                                self.title, int(h * 0.042), MUTED,
+                                bold=True, align="left")
+            frame = to_np(frame)
+            self._register_text("title", (w * 0.08, h * 0.06,
+                                          w * 0.92, h * 0.14),
+                                MUTED, int(h * 0.042))
         if self._lines is None:
             self._build_lines()
         n = len(self._lines)
@@ -460,9 +492,12 @@ class DisplayPointsSlide(Slide):
             raw = a01(t, 0.5 + i * self.stagger, 0.5, ease=easing.ease_out_back)
             if raw <= 0:
                 continue
+            lw, lh = line.size
+            px, py = w * 0.08, y0 + i * slot + (slot - lh) / 2
+            self._register_text(f"point:{i}", (px, py, px + lw, py + lh),
+                                (255, 255, 255), int(h * 0.115))
             alpha = min(1.0, raw)
             scale = 0.82 + 0.18 * raw  # overshoot gives the punch
-            lw, lh = line.size
             nl = line.resize((max(1, int(lw * scale)), max(1, int(lh * scale))),
                              Image.BILINEAR)
             if alpha < 1:
@@ -470,8 +505,8 @@ class DisplayPointsSlide(Slide):
                 a = a.point(lambda v: int(v * alpha))
                 nl = Image.merge("RGBA", (r, g, b, a))
             nlw, nlh = nl.size
-            frame = paste_rgba(frame, np.array(nl),
-                               (w * 0.08, y0 + i * slot + (slot - nlh) / 2))
+            px, py = w * 0.08, y0 + i * slot + (slot - nlh) / 2
+            frame = paste_rgba(frame, np.array(nl), (px, py))
         return frame
 
 
@@ -591,20 +626,34 @@ class DuoSlide(Slide):
 
     def __init__(self, left, right, bg=None, duration=None, stagger=0.8,
                  cfg=None):
-        self.left = left
-        self.right = right
+        self.left = self._checked_panel(left, "left")
+        self.right = self._checked_panel(right, "right")
         self.stagger = stagger
-        n = max(self._items(panel) for panel in (left, right))
+        n = max(self._items(panel) for panel in (self.left, self.right))
         duration = duration or (2.8 + stagger * n + 1.2)
         super().__init__(duration, bg, cfg)
         self._covers = {}   # (side) -> cover image
         self._built = {}    # (side) -> list of RGBA line images
 
     @staticmethod
+    def _checked_panel(panel, side):
+        if not isinstance(panel, dict):
+            raise ValueError(
+                f"{side} panel must be a dict, got {type(panel).__name__}")
+        if "image" in panel and "points" in panel:
+            raise ValueError(
+                f"{side} panel has both 'image' and 'points' — pick one")
+        if "image" not in panel and "points" not in panel:
+            raise ValueError(
+                f"{side} panel needs 'image' or 'points', got {panel!r}")
+        return panel
+
+    @staticmethod
     def _items(panel):
-        if "points" in panel:
-            return len(panel["points"])
-        return 1 if panel.get("label") else 0
+        # Image-first, matching _build: a panel renders at most one way.
+        if "image" in panel:
+            return 1 if panel.get("label") else 0
+        return len(panel["points"])
 
     def _panel_rects(self):
         w, h = self.cfg.w, self.cfg.h
@@ -657,6 +706,12 @@ class DuoSlide(Slide):
                       ease=easing.ease_out_back)
             if raw <= 0:
                 continue
+            lw, lh = line.size  # settled (unscaled) art
+            lx = x0 + (pw - lw) / 2
+            ly = y0 + ph - lh - self.cfg.h * 0.035
+            self._register_text(f"{side}:label:{i}",
+                                (lx, ly, lx + lw, ly + lh),
+                                (255, 255, 255), int(self.cfg.h * 0.082))
             nl = _punch_in(line, raw)
             nlh, nlw = nl.shape[0], nl.shape[1]
             lx = x0 + (pw - nlw) / 2
@@ -674,6 +729,17 @@ class DuoSlide(Slide):
                       ease=easing.ease_out_back)
             if raw <= 0:
                 continue
+            # settled box (unscaled art + shrink-to-fit)
+            lw, lh = line.size
+            sw, sh = lw, lh
+            if sw > pw * 0.94:
+                s = pw * 0.94 / sw
+                sw, sh = sw * s, sh * s
+            lx = x0 + (pw - sw) / 2
+            ly = y0 + i * slot + (slot - sh) / 2
+            self._register_text(f"{side}:point:{i}",
+                                (lx, ly, lx + sw, ly + sh),
+                                (255, 255, 255), int(self.cfg.h * 0.078))
             nl = _punch_in(line, raw)
             nlh, nlw = nl.shape[0], nl.shape[1]
             # shrink-to-fit if a line is wider than the panel
@@ -766,6 +832,17 @@ class DisplayHeadline(Slide):
             raw = a01(t, 0.4 + i * 0.9, 0.5, ease=easing.ease_out_back)
             if raw <= 0:
                 continue
+            # Settled box (unscaled source art + shrink-to-fit): what the
+            # viewer reads once the punch-in lands.
+            lw, lh = line.size
+            sw, sh = lw, lh
+            if sw > w * 0.92:
+                s = w * 0.92 / sw
+                sw, sh = sw * s, sh * s
+            lx = (w - sw) / 2
+            self._register_text(f"line:{i}", (lx, y, lx + sw, y + sh),
+                                (255, 255, 255),
+                                int(h * (0.125 if i == 0 else 0.056)))
             nl = _punch_in(line, raw)
             nlh, nlw = nl.shape[0], nl.shape[1]
             if nlw > w * 0.92:
@@ -1128,7 +1205,7 @@ class HighlightSlide(Slide):
                 issues.append(f"card image not found: {img}")
             if not self.card.get("caption"):
                 issues.append("card has no caption")
-        if not self.text.strip():
+        if not (self.text or "").strip():
             issues.append("text is empty")
         return issues
 
@@ -1221,6 +1298,11 @@ class CompareSlide(Slide):
             if he > 0:
                 head = _punch_in(self._heads[ci], he)
                 frame = paste_rgba(frame, head, (x0, h * 0.22))
+                hw, hh = self._heads[ci].size  # settled (unscaled) art
+                self._register_text(
+                    f"col:{ci}:head",
+                    (x0, h * 0.22, x0 + hw, h * 0.22 + hh),
+                    (255, 255, 255), int(h * 0.072))
             y = h * 0.36
             for sec in col.get("sections", []):
                 se = a01(t, 0.9 + sec_idx * self.stagger, 0.45)
@@ -1235,6 +1317,10 @@ class CompareSlide(Slide):
                     a = int(255 * min(1.0, se))
                     d.text((x0 + (1 - se) * 40, y), sub, font=font,
                            fill=(178, 34, 30, a))
+                    sw = d.textlength(sub, font=font)
+                    self._register_text(
+                        f"col:{ci}:sub:{sec_idx}", (x0, y, x0 + sw, y + int(h * 0.062)),
+                        (178, 34, 30), int(h * 0.046))
                     y += int(h * 0.062)
                 for j, pt in enumerate(sec.get("points", [])):
                     pe = a01(t, 0.9 + (sec_idx - 1) * self.stagger + 0.25 + j * 0.4,
@@ -1248,8 +1334,13 @@ class CompareSlide(Slide):
                         a = timg.split()[3].point(
                             lambda v, pe=pe: int(v * min(1.0, pe)))
                         timg.putalpha(a)
+                        bx = x0 + (1 - pe) * 40
                         frame = paste_rgba(to_np(pil), np.array(timg),
-                                           (x0 + (1 - pe) * 40, y))
+                                           (bx, y))
+                        self._register_text(
+                            f"col:{ci}:pt:{sec_idx}:{j}:{li}",
+                            (x0, y, x0 + tw, y + th),
+                            (24, 22, 20), int(h * 0.040))
                         pil = to_pil(frame)
                         y += th + (h * 0.012 if li == len(blines) - 1
                                    else h * 0.006)
@@ -1265,13 +1356,14 @@ class CompareSlide(Slide):
                 issues.append(f"{side} column has no head")
             if not col.get("sections"):
                 issues.append(f"{side} column has no sections")
-        if not self.title.strip():
+        if not (self.title or "").strip():
             issues.append("title is empty")
         return issues
 
 
 def _banner_img(text, size, fill, fg=(255, 255, 255)):
-    """Red banner chip with bold text (module-level; CompareSlide inlines its own)."""
+    """Banner chip: rounded-rect with bold text. Shared by StepsSlide,
+    CompareSlide, and CollageSlide."""
     font = get_font(size, bold=True)
     tmp = ImageDraw.Draw(Image.new("RGBA", (8, 8)))
     tw = tmp.textlength(text, font=font)
@@ -1302,15 +1394,41 @@ class CollageSlide(Slide):
     def __init__(self, cards=(), banner="", notes=(), duration=None,
                  stagger=0.7, banner_fill=(211, 47, 47), bg=None, cfg=None):
         bg = _PAPER_BG if bg is None else bg
-        self.cards = list(cards)
+        self.cards = [self._checked_card(c, i) for i, c in enumerate(cards)]
         self.banner = banner
-        self.notes = list(notes)
+        self.notes = [self._checked_note(n, i) for i, n in enumerate(notes)]
         self.stagger = stagger
         self.banner_fill = banner_fill
         duration = duration or (2.2 + stagger * (len(self.cards) +
                                                  len(self.notes) + 1) + 1.4)
         super().__init__(duration, bg, cfg)
         self._built = None
+
+    @staticmethod
+    def _checked_card(c, i):
+        if not isinstance(c, dict):
+            raise ValueError(
+                f"card {i} must be a dict, got {type(c).__name__}")
+        if "image" not in c:
+            raise ValueError(f"card {i} is missing required key 'image'")
+        at = c.get("at")
+        if at is None or len(at) != 2:
+            raise ValueError(
+                f"card {i} needs 'at': (x, y) fractions, got {at!r}")
+        return c
+
+    @staticmethod
+    def _checked_note(n, i):
+        if not isinstance(n, dict):
+            raise ValueError(
+                f"note {i} must be a dict, got {type(n).__name__}")
+        if "text" not in n:
+            raise ValueError(f"note {i} is missing required key 'text'")
+        at = n.get("at")
+        if at is None or len(at) != 2:
+            raise ValueError(
+                f"note {i} needs 'at': (x, y) fractions, got {at!r}")
+        return n
 
     def _build(self):
         if self._built is not None:
@@ -1383,8 +1501,12 @@ class CollageSlide(Slide):
                 b = banner.resize((int(bw * sc), int(bh * sc)), Image.BILINEAR)
                 a = b.split()[3].point(lambda v, be=be: int(v * min(1.0, be)))
                 b.putalpha(a)
-                frame = paste_rgba(frame, np.array(b),
-                                   ((w - b.width) / 2, h * 0.44))
+                bx, by = (w - b.width) / 2, h * 0.44
+                frame = paste_rgba(frame, np.array(b), (bx, by))
+                bw0, bh0 = banner.size  # settled (unscaled) art
+                self._register_text("banner", ((w - bw0) / 2, h * 0.44,
+                                              (w + bw0) / 2, h * 0.44 + bh0),
+                                    (255, 255, 255), int(h * 0.052))
         for k, n in enumerate(self.notes):
             ne = a01(t, 0.5 + (len(self.cards) + k) * self.stagger, 0.5)
             if ne <= 0:
@@ -1393,7 +1515,7 @@ class CollageSlide(Slide):
             align = self.notes[k].get("align", "left")
             y = ay * h
             se = a01(t, 0.5 + (len(self.cards) + k) * self.stagger + 0.4, 0.4)
-            for timg, simg in notes[k]:
+            for li, (timg, simg) in enumerate(notes[k]):
                 tw, th = timg.size
                 x = ax * w - (tw / 2 if align == "center" else 0)
                 if se > 0 and simg.getbbox():
@@ -1405,6 +1527,9 @@ class CollageSlide(Slide):
                     lambda v, ne=ne: int(v * min(1.0, ne)))
                 tmp.putalpha(a)
                 frame = paste_rgba(frame, np.array(tmp), (x, y))
+                self._register_text(f"note:{k}:{li}",
+                                    (x, y, x + tw, y + th),
+                                    (24, 22, 20), int(h * 0.030))
                 y += th + h * 0.012
         return frame
 
@@ -1491,8 +1616,14 @@ class TitleCardSlide(Slide):
                     tmp = tmp.resize((nw, nh), Image.BILINEAR)
                     al = tmp.split()[3].point(lambda v, a=a: int(v * a / 255))
                     tmp.putalpha(al)
-                    frame = paste_rgba(frame, np.array(tmp),
-                                       ((w - nw) / 2, y + 20 - 20 * sc))
+                    px, py = (w - nw) / 2, y + 20 - 20 * sc
+                    frame = paste_rgba(frame, np.array(tmp), (px, py))
+                    # Settled box (sc=1.0): full-width tmp at (0, y).
+                    tw0 = dt.textlength(text, font=font)
+                    self._register_text(f"title:{text[:12]}",
+                                        ((w - tw0) / 2, y + 20,
+                                         (w + tw0) / 2, y + 20 + lh),
+                                        fill, font.size)
                 else:
                     pil = to_pil(frame)
                     d = ImageDraw.Draw(pil, "RGBA")
@@ -1500,6 +1631,9 @@ class TitleCardSlide(Slide):
                     d.text(((w - tw) / 2, y), text, font=font,
                            fill=fill + (a,))
                     frame = to_np(pil)
+                    self._register_text("kicker", ((w - tw) / 2, y,
+                                                  (w + tw) / 2, y + step),
+                                        fill, font.size)
             y += step
         return frame
 
@@ -1527,11 +1661,17 @@ class ImageSlide(Slide):
             pil = C.draw_para(pil, (w * 0.06, h * 0.06, w * 0.94, h * 0.2),
                               self.title, size=int(h * 0.07), fill=(255, 255, 255),
                               bold=True, stroke=2, alpha=int(255 * e))
+            self._register_text("title", (w * 0.06, h * 0.06,
+                                          w * 0.94, h * 0.2),
+                                (255, 255, 255), int(h * 0.07))
         if self.caption:
             e = a01(t, 0.5, 0.7)
             pil = C.draw_para(pil, (w * 0.06, h * 0.78, w * 0.94, h * 0.95),
                               self.caption, size=int(h * 0.045), fill=(255, 255, 255),
                               stroke=2, alpha=int(255 * e))
+            self._register_text("caption", (w * 0.06, h * 0.78,
+                                            w * 0.94, h * 0.95),
+                                (255, 255, 255), int(h * 0.045))
         return to_np(pil)
 
 
@@ -1541,6 +1681,8 @@ class SplitSlide(Slide):
 
     def __init__(self, image, heading, body, side="left", duration=5.5,
                  accent=ACCENT, bg=None, cfg=None):
+        if side not in ("left", "right"):
+            raise ValueError(f"side must be 'left'|'right', got {side!r}")
         super().__init__(duration, bg, cfg)
         self.image = _as_image(image)
         self.heading = heading
@@ -1574,6 +1716,9 @@ class SplitSlide(Slide):
         pil = C.draw_para(pil, (px0 + w * 0.05, h * 0.12, px0 + hw - w * 0.05, h * 0.4),
                           self.heading, size=int(h * 0.075), fill=INK, bold=True,
                           alpha=int(255 * e))
+        self._register_text("heading", (px0 + w * 0.05, h * 0.12,
+                                        px0 + hw - w * 0.05, h * 0.4),
+                            INK, int(h * 0.075))
         y = h * 0.42
         for i, para in enumerate(self.body):
             e = a01(t, 0.7 + i * 0.5, 0.6)
@@ -1583,6 +1728,9 @@ class SplitSlide(Slide):
                               para, size=int(h * 0.042), fill=MUTED,
                               alpha=int(255 * e))
             _, ph = C.text_block_size(para, int(h * 0.042), hw - w * 0.1)
+            self._register_text(f"body:{i}", (px0 + w * 0.05, y,
+                                              px0 + hw - w * 0.05, y + ph),
+                                MUTED, int(h * 0.042))
             y += ph + h * 0.04
         return to_np(pil)
 
@@ -1611,12 +1759,19 @@ class QuoteSlide(Slide):
             pil = C.draw_para(pil, (w * 0.14, h * 0.28, w * 0.86, h * 0.72),
                               self.quote, size=int(h * 0.062), fill=INK, serif=True,
                               align="center", valign="center", alpha=alpha)
+            self._register_text("quote", (w * 0.14, h * 0.28,
+                                          w * 0.86, h * 0.72),
+                                INK, int(h * 0.062))
         if self.byline:
             e2 = a01(t, 0.9, 0.7)
             if e2 > 0:
                 pil = C.draw_para(pil, (w * 0.2, h * 0.74, w * 0.8, h * 0.88),
                                   "\u2014 " + self.byline, size=int(h * 0.04),
-                                  fill=MUTED, align="center", alpha=int(255 * e2))
+                                  fill=MUTED, align="center",
+                                  alpha=int(255 * e2))
+                self._register_text("byline", (w * 0.2, h * 0.74,
+                                               w * 0.8, h * 0.88),
+                                    MUTED, int(h * 0.04))
         return to_np(pil)
 
 
@@ -1626,6 +1781,11 @@ class StatSlide(Slide):
 
     def __init__(self, value, label, prefix="", suffix="", decimals=0,
                  duration=4.0, accent=ACCENT, bg=None, cfg=None):
+        if value is None:
+            raise ValueError("StatSlide value must not be None")
+        if not isinstance(decimals, int) or decimals < 0:
+            raise ValueError(
+                f"decimals must be a non-negative int, got {decimals!r}")
         super().__init__(duration, bg, cfg)
         self.value = value
         self.label = label
@@ -1646,6 +1806,8 @@ class StatSlide(Slide):
             pil = C.draw_para(pil, (0, h * 0.28, w, h * 0.58), txt,
                               size=int(h * 0.24), fill=INK, bold=True,
                               align="center", alpha=int(255 * e))
+            self._register_text("value", (0, h * 0.28, w, h * 0.58),
+                                INK, int(h * 0.24))
             uw = int(w * 0.2 * a01(t, 0.4, 0.6))
             if uw:
                 d = ImageDraw.Draw(pil, "RGBA")
@@ -1656,6 +1818,9 @@ class StatSlide(Slide):
             pil = C.draw_para(pil, (w * 0.15, h * 0.68, w * 0.85, h * 0.9),
                               self.label, size=int(h * 0.05), fill=MUTED,
                               align="center", alpha=int(255 * e2))
+            self._register_text("label", (w * 0.15, h * 0.68,
+                                          w * 0.85, h * 0.9),
+                                MUTED, int(h * 0.05))
         return to_np(pil)
 
 
@@ -1691,6 +1856,9 @@ class KenBurnsSlide(Slide):
             pil = C.draw_para(pil, (w * 0.06, h * 0.05, w * 0.94, h * 0.2),
                               self.title, size=int(h * 0.065), fill=(255, 255, 255),
                               bold=True, stroke=2, alpha=int(255 * e))
+            self._register_text("title", (w * 0.06, h * 0.05,
+                                          w * 0.94, h * 0.2),
+                                (255, 255, 255), int(h * 0.065))
         if self.caption:
             frame_np = to_np(pil)
             frame_np = C.bottom_scrim(frame_np)
@@ -1699,6 +1867,9 @@ class KenBurnsSlide(Slide):
             pil = C.draw_para(pil, (w * 0.06, h * 0.8, w * 0.94, h * 0.96),
                               self.caption, size=int(h * 0.045), fill=(255, 255, 255),
                               stroke=2, alpha=int(255 * e))
+            self._register_text("caption", (w * 0.06, h * 0.8,
+                                            w * 0.94, h * 0.96),
+                                (255, 255, 255), int(h * 0.045))
         return to_np(pil)
 
 
@@ -1711,11 +1882,31 @@ class CalloutSlide(Slide):
 
     _image_driven = True
 
+    @staticmethod
+    def _checked_callout(c, i):
+        if not isinstance(c, dict):
+            raise ValueError(
+                f"callout {i} must be a dict, got {type(c).__name__}")
+        if "at" not in c or len(c["at"]) != 2:
+            raise ValueError(
+                f"callout {i} needs 'at': (x, y) fractions, got {c.get('at')!r}")
+        zoom = c.get("zoom", 2.4)
+        if zoom is None or zoom <= 0:
+            raise ValueError(f"callout {i}: zoom must be > 0, got {zoom!r}")
+        return c
+
+    def validate(self):
+        issues = super().validate()
+        if not self.callouts:
+            issues.append("no callouts defined")
+        return issues
+
     def __init__(self, image, callouts, intro_hold=1.0, zoom_hold=1.8,
-                 move_dur=0.9, duration=None, accent=ACCENT, cfg=None,
-                 start_wide=True):
+                 move_dur=0.9, duration=None, accent=ACCENT,
+                 start_wide=True, cfg=None):
         self.image = _as_image(image)
-        self.callouts = list(callouts)
+        self.callouts = [self._checked_callout(c, i)
+                         for i, c in enumerate(callouts)]
         self.accent = accent
         self.move_dur = move_dur
         # build keyframed timeline: [full] -> zoom_i (hold) -> ... -> full
@@ -1747,6 +1938,18 @@ class CalloutSlide(Slide):
                 t += move_dur
         s0, s1, kind, a, b, li = self._segs[-1]
         self._segs[-1] = (s0, duration, kind, a, b, li)
+
+    def validate_visual(self, t=None):
+        if t is None:
+            # Sample mid-first-callout-hold: labels fade at hold edges, so
+            # the default (duration - 0.5, mid-outro) would see none of them.
+            for (t0, t1, kind, va, vb, li) in self._segs:
+                if kind == "hold" and li is not None:
+                    label, sub = self._callout_info[li]
+                    if label or sub:
+                        t = (t0 + t1) / 2
+                        break
+        return super().validate_visual(t)
 
     def _seg_at(self, t):
         t = min(max(t, 0.0), self.duration - 1e-6)
@@ -1809,6 +2012,9 @@ class CalloutSlide(Slide):
         bw = max(lw, sw) + 48
         bh = lh + (sh + 10 if sub else 0) + 28
         bx0 = w / 2 - bw / 2
+        self._register_text(f"pill:{label[:16]}",
+                            (bx0, top_y, bx0 + bw, top_y + bh),
+                            (255, 255, 255), ls)
         alpha = int(255 * max(0.0, e))
         frame_np = C.pill(to_np(pil), (bx0, top_y, bx0 + bw, top_y + bh),
                           radius=14, fill=(12, 14, 22),
@@ -1833,8 +2039,13 @@ class MapZoomSlide(CalloutSlide):
     """
 
     def __init__(self, map_image, markers, intro_hold=1.2, zoom_hold=2.2,
-                 move_dur=1.0, duration=None, accent=(226, 74, 74), cfg=None,
-                 start_wide=True):
+                 move_dur=1.0, duration=None, accent=(226, 74, 74),
+                 start_wide=True, cfg=None):
+        markers = list(markers)
+        for i, m in enumerate(markers):
+            if not isinstance(m, dict) or "at" not in m:
+                raise ValueError(
+                    f"marker {i} needs 'at': (x, y) fractions, got {m!r}")
         callouts = [{"at": m["at"], "zoom": m.get("zoom", 3.2),
                      "label": m.get("label", ""), "sub": m.get("sub", "")}
                     for m in markers]
@@ -2133,10 +2344,26 @@ class CausalChainSlide(Slide):
     """
 
     def __init__(self, nodes, title="", duration=None, accent=ACCENT,
-                 bg=None, cfg=None, stagger=0.9, arrow_dur=0.7):
-        duration = duration or (1.2 + stagger * len(nodes))
+                 bg=None, stagger=0.9, arrow_dur=0.7, cfg=None):
+        nodes = list(nodes)
+        checked = []
+        for i, n in enumerate(nodes):
+            if isinstance(n, str):
+                # A bare string is a label with no sub-caption — not
+                # characters to be unpacked.
+                checked.append((n, ""))
+            elif isinstance(n, (tuple, list)) and n and all(
+                    isinstance(x, str) for x in n[:2]):
+                checked.append((n[0], n[1] if len(n) > 1 else ""))
+            else:
+                raise ValueError(
+                    f"node {i} must be a string or (label, sub) pair, "
+                    f"got {n!r}")
+        if arrow_dur < 0:
+            raise ValueError(f"arrow_dur must be >= 0, got {arrow_dur!r}")
+        duration = duration or (1.2 + stagger * len(checked))
         super().__init__(duration, bg, cfg)
-        self.nodes = [(n[0], n[1] if len(n) > 1 else "") for n in nodes]
+        self.nodes = checked
         self.title = title
         self.accent = accent
         self.stagger = stagger
@@ -2154,6 +2381,11 @@ class CausalChainSlide(Slide):
         n = len(self.nodes)
         if self.title:
             frame = _title_block(frame, self.title, t, y_frac=0.10)
+            _tw, _th = C.text_block_size(self.title, int(h * 0.075),
+                                         w * 0.82, bold=True)
+            self._register_text("title", ((w - _tw) / 2, h * 0.10,
+                                          (w + _tw) / 2, h * 0.10 + _th),
+                                INK, int(h * 0.075))
         if n == 0:
             return frame
         # card geometry
@@ -2194,6 +2426,9 @@ class CausalChainSlide(Slide):
                 pil = C.draw_para(pil, (bx + 14, by + ch * 0.48, bx + bw - 14, by + bh - 10),
                                   sub, size=int(h * 0.030), fill=MUTED,
                                   align="center", alpha=int(255 * e))
+            # Settled card box (pop scale is 1.0 once fully appeared).
+            self._register_text(f"node:{i}", (x, y0, x + cw, y0 + ch),
+                                INK, int(h * 0.042))
             d = ImageDraw.Draw(pil, "RGBA")
         # arrows between consecutive visible cards
         for i in range(n - 1):
@@ -2233,7 +2468,7 @@ class TerritorySlide(Slide):
     """
 
     def __init__(self, map_image, territories, title="", duration=None,
-                 bg=None, cfg=None, stagger=1.6, drift=False):
+                 bg=None, stagger=1.6, drift=False, cfg=None):
         # drift defaults to False: territories are pinned to frame fractions,
         # so a moving bg would silently misalign them.
         self.map_image = _as_image(map_image)
@@ -2391,20 +2626,43 @@ class RecallSlide(Slide):
     """Self-test beat: a question up top, answers rendered blurred that sharpen
     into focus one by one — turns passive watching into recall practice."""
 
-    def __init__(self, question, answers, duration=None, bg=None, cfg=None,
-                 stagger=1.4, blur_px=14):
+    def __init__(self, question, answers, duration=None, bg=None,
+                 stagger=1.4, blur_px=14, cfg=None):
         self.question = question
         self.answers = list(answers)
+        if blur_px < 0:
+            raise ValueError(f"blur_px must be >= 0, got {blur_px!r}")
         self.stagger = stagger
         self.blur_px = blur_px
         duration = duration or (2.2 + stagger * len(answers))
         super().__init__(duration, bg, cfg)
+
+    def validate(self):
+        issues = super().validate()
+        if not self.answers:
+            issues.append("no answers to display")
+        if len(self.answers) > 6:
+            issues.append(f"{len(self.answers)} answers: cards shrink below "
+                          "readable size past 6")
+        return issues
+
+    def _layout(self, h, n):
+        """Fit n answer cards between 0.30h and 0.80h; returns (slot, card_h)."""
+        top, bottom = 0.30, 0.80
+        slot = min(0.15, (bottom - top) / max(1, n))
+        return slot, min(0.105, slot * 0.72)
 
     def frame(self, t):
         frame = self.bg_frame(t)
         w, h = self.cfg.w, self.cfg.h
         frame = _title_block(frame, self.question, t, y_frac=0.12,
                              size_frac=0.052)
+        _tw, _th = C.text_block_size(self.question, int(h * 0.052),
+                                     w * 0.82, bold=True)
+        self._register_text("question", ((w - _tw) / 2, h * 0.12,
+                                          (w + _tw) / 2, h * 0.12 + _th),
+                            INK, int(h * 0.052))
+        slot, card_h = self._layout(h, len(self.answers))
         pil = to_pil(frame)
         for i, ans in enumerate(self.answers):
             t0 = 0.8 + i * self.stagger
@@ -2412,9 +2670,9 @@ class RecallSlide(Slide):
             if appear <= 0:
                 continue
             e = a01(t, t0 + 0.35, 0.9)  # sharpen progress
-            y = h * (0.34 + i * 0.15)
+            y = h * (0.30 + i * slot + (slot - card_h) / 2)
             # answer card
-            cw, chh = w * 0.62, h * 0.105
+            cw, chh = w * 0.62, h * card_h
             x = (w - cw) / 2
             d = ImageDraw.Draw(pil, "RGBA")
             d.rounded_rectangle([x, y, x + cw, y + chh], radius=14,
@@ -2437,6 +2695,8 @@ class RecallSlide(Slide):
             if r > 0.5:
                 layer = layer.filter(ImageFilter.GaussianBlur(r))
             pil = Image.alpha_composite(pil.convert("RGBA"), layer).convert("RGB")
+            self._register_text(f"answer:{i}", (x, y, x + cw, y + chh),
+                                (235, 238, 245), int(h * 0.040))
         # "pause and think" hint early on
         he = min(a01(t, 0.3, 0.4), 1 - a01(t, 1.6, 0.5))
         if he > 0:
@@ -2457,20 +2717,33 @@ class SpectrumSlide(Slide):
     """
 
     def __init__(self, axis, markers, title="", duration=None, bg=None,
-                 cfg=None, stagger=1.0):
-        self.axis = tuple(axis)
-        self.markers = list(markers)
-        self.title = title
+                 stagger=1.0, cfg=None):
+        axis = tuple(axis)
+        if len(axis) != 2:
+            raise ValueError(
+                f"axis must be exactly (left_label, right_label), got {axis!r}")
+        self.axis = axis
         self.stagger = stagger
-        moves = [m.get("move_start", 0) for m in markers if "move_to" in m]
-        duration = duration or (2.5 + stagger * len(markers)
+        # Resolve the move_start default ONCE so the marker motion, the
+        # "moved" sub-caption, and the duration estimate all agree.
+        resolved = []
+        for i, m in enumerate(markers):
+            m = dict(m)
+            m.setdefault("move_start", 0.8 + i * stagger + 0.8)
+            if "at" not in m:
+                raise ValueError(f"marker {i} is missing required key 'at'")
+            resolved.append(m)
+        self.markers = resolved
+        self.title = title
+        moves = [m["move_start"] for m in resolved if "move_to" in m]
+        duration = duration or (2.5 + stagger * len(resolved)
                                 + (1.5 if moves else 0))
         super().__init__(duration, bg, cfg)
 
     def _marker_x(self, m, i, t, x0, x1):
         base = m["at"]
         if "move_to" in m:
-            k = a01(t, m.get("move_start", 0.8 + i * self.stagger + 0.8), 1.4)
+            k = a01(t, m["move_start"], 1.4)
             k = smooth(k)
             base = base + (m["move_to"] - base) * k
         return x0 + base * (x1 - x0)
@@ -2480,6 +2753,11 @@ class SpectrumSlide(Slide):
         w, h = self.cfg.w, self.cfg.h
         if self.title:
             frame = _title_block(frame, self.title, t, y_frac=0.10)
+            _tw, _th = C.text_block_size(self.title, int(h * 0.075),
+                                         w * 0.82, bold=True)
+            self._register_text("title", ((w - _tw) / 2, h * 0.10,
+                                          (w + _tw) / 2, h * 0.10 + _th),
+                                INK, int(h * 0.075))
         pil = to_pil(frame)
         d = ImageDraw.Draw(pil, "RGBA")
         x0, x1 = w * 0.12, w * 0.88
@@ -2520,9 +2798,15 @@ class SpectrumSlide(Slide):
                 d.text((mx, my - h * 0.055 - r - h * 0.018), label,
                        font=get_font(int(h * 0.034), bold=True), anchor="mb",
                        fill=(235, 238, 245, int(255 * e)))
+                lw = d.textlength(label, font=get_font(int(h * 0.034), bold=True))
+                self._register_text(
+                    f"marker:{i}",
+                    (mx - lw / 2, my - h * 0.055 - r - h * 0.018 - int(h * 0.034),
+                     mx + lw / 2, my - h * 0.055 - r - h * 0.018),
+                    (235, 238, 245), int(h * 0.034))
             sub = m.get("sub", "")
-            if sub and "move_to" in m and a01(t, m.get("move_start", 0), 0.3) > 0:
-                se = a01(t, m.get("move_start", 0) + 0.2, 0.5)
+            if sub and "move_to" in m and a01(t, m["move_start"], 0.3) > 0:
+                se = a01(t, m["move_start"] + 0.2, 0.5)
                 d.text((mx, ay + h * 0.10), sub,
                        font=get_font(int(h * 0.028)), anchor="mt",
                        fill=color + (int(255 * se),))

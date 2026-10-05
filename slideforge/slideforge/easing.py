@@ -1,9 +1,15 @@
-"""Easing functions. Each takes k in [0,1] and returns eased k in [0,1]."""
+"""Easing functions. Each takes k in [0,1] and returns eased k.
+
+Most return values in [0,1]; ease_out_back and ease_out_elastic
+intentionally overshoot above 1 (documented on each).
+"""
 
 import math
 
 
 def _clamp(k):
+    if k != k:  # NaN: comparisons are False, so guard explicitly
+        raise ValueError("easing input must not be NaN")
     return 0.0 if k < 0 else (1.0 if k > 1 else k)
 
 

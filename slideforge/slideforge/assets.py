@@ -33,7 +33,13 @@ def search(query, limit=5, filetype="bitmap"):
     srsearch = query if not filetype else f"{query} filetype:{filetype}"
     d = _api({"action": "query", "list": "search", "srsearch": srsearch,
               "srnamespace": 6, "srlimit": limit, "format": "json"})
-    return [x["title"] for x in d["query"]["search"]]
+    try:
+        results = d["query"]["search"]
+    except (KeyError, TypeError):
+        raise RuntimeError(
+            f"Commons API error for query {query!r}: "
+            f"{d.get('error', {}).get('info', d)!r}")
+    return [x["title"] for x in results]
 
 
 def file_info(title):

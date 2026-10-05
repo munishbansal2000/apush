@@ -92,6 +92,9 @@ def _image(slide, w, h, t, spec):
         except (TypeError, ValueError, IndexError, KeyError):
             raise ValueError(
                 "image bg 'drift' must be [(cx, cy, fw), (cx, cy, fw)]")
+        if not slide.duration or slide.duration <= 0:
+            raise ValueError(
+                "image bg 'drift' needs a positive slide duration")
         k = smooth(t / slide.duration)
         view = (a[0] + (b[0] - a[0]) * k,
                 a[1] + (b[1] - a[1]) * k,

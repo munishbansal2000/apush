@@ -63,6 +63,10 @@ def main(argv=None):
     ap.add_argument("--title-dur", type=float, default=3.5)
     ap.add_argument("--check", action="store_true",
                     help="validate route JSON before rendering; abort on issues")
+    ap.add_argument("--routes-dir", default=".",
+                    help="where to write routes/<name>.json (default: current "
+                         "directory; the package dir is not writable on "
+                         "installed copies)")
     args = ap.parse_args(argv)
     if (not args.name or not args.name.strip()
             or args.name.strip() in (".", "..")
@@ -134,10 +138,11 @@ def main(argv=None):
              "map": map_rel,
              "waypoints": [{"at": w["at"], "label": w["label"],
                             "sub": w.get("sub", "")} for w in waypoints]}
-    route_path = (_HERE / "routes" / f"{args.name}.json").resolve()
-    if route_path.parent != (_HERE / "routes").resolve():
+    route_path = (Path(args.routes_dir) / "routes" / f"{args.name}.json").resolve()
+    if route_path.parent != (Path(args.routes_dir) / "routes").resolve():
         print(f"bad --name {args.name!r}: must stay inside routes/")
         return 1
+    route_path.parent.mkdir(parents=True, exist_ok=True)
     route_path.write_text(json.dumps(route, indent=1))
     print(f"[3/4] wrote {route_path}")
 
@@ -155,7 +160,7 @@ def main(argv=None):
     m.add(TitleSlide(route["title"], route.get("subtitle", ""),
                      duration=args.title_dur),
           transition="cut")
-    m.add(RouteSlide.from_route(args.name, zoom=args.zoom),
+    m.add(RouteSlide.from_route(str(route_path), zoom=args.zoom),
           transition="crossfade", trans_dur=0.6)
     m.render(args.out)
     print("done.")

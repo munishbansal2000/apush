@@ -1,5 +1,6 @@
 """Overlay widgets that sit on top of any scene: lower thirds, captions."""
 
+import copy
 import math
 import random
 import zlib
@@ -126,11 +127,15 @@ class KeywordPop(Overlay):
         self.position = position
         self.size = size
         self._img = None
+        self._built_h = None
 
     def _build(self, h):
-        if self._img is None:
+        # Rebuild if the frame size changed: a cached build from a
+        # different render size would silently render wrong-sized art.
+        if self._img is None or self._built_h != h:
             from .slides import _outlined_line
             self._img = _outlined_line(self.word, int(h * self.size))
+            self._built_h = h
 
     def apply(self, frame, t):
         h, w = frame.shape[:2]
@@ -178,9 +183,12 @@ class Sticker(Overlay):
         self.label = label
         self.tilt = tilt
         self._img = None
+        self._built_w = None
 
     def _build(self, w):
-        if self._img is not None:
+        # Rebuild if the frame size changed: a cached build from a
+        # different render size would silently render wrong-sized art.
+        if self._img is not None and self._built_w == w:
             return
         # crc32, not hash(): identical output on every interpreter run.
         if isinstance(self.image, str):
@@ -191,6 +199,7 @@ class Sticker(Overlay):
         self._img = card_image(self.image, int(w * self.size),
                                shape=self.shape, border=border,
                                label=self.label, tilt=self.tilt, seed=seed)
+        self._built_w = w
 
     def apply(self, frame, t):
         h, w = frame.shape[:2]
@@ -259,10 +268,16 @@ def with_overlays(scene, overlays):
         def __init__(self):
             super().__init__(scene.duration, scene.cfg)
             self._scene = scene
-            self._overlays = list(overlays)
-            for ov in self._overlays:
+            # Resolve None durations against this scene WITHOUT mutating the
+            # caller's overlay instances: copy any overlay that needs its
+            # duration filled in, so the same instance stays reusable.
+            resolved = []
+            for ov in overlays:
                 if ov.duration is None:
+                    ov = copy.copy(ov)
                     ov.duration = scene.duration - ov.start
+                resolved.append(ov)
+            self._overlays = resolved
 
         def validate(self):
             inner = self._scene
@@ -299,7 +314,7 @@ class TimelineRibbon(Overlay):
 
     def apply(self, frame, t):
         h, w = frame.shape[:2]
-        dur = self.duration or 1.0
+        dur = self._dur()  # None duration = persist (playhead holds at span start)
         local = (t - self.start) / max(dur, 1e-6)
         if local < 0 or local > 1:
             return frame
@@ -361,11 +376,33 @@ class RedPen(Overlay):
     coordinates are fractions of the frame.
     """
 
+    _REQUIRED = {
+        "circle": ("at",),
+        "underline": ("from", "to"),
+        "check": ("at",),
+        "note": ("at",),
+    }
+
     def __init__(self, annotations, start=0.0, duration=None,
                  color=(232, 48, 48)):
         super().__init__(start, duration)
-        self.annotations = list(annotations)
+        self.annotations = [self._checked(a, i) for i, a in enumerate(annotations)]
         self.color = color
+
+    @classmethod
+    def _checked(cls, ann, i):
+        if not isinstance(ann, dict):
+            raise ValueError(f"annotation {i} must be a dict, got {type(ann).__name__}")
+        kind = ann.get("kind")
+        if kind not in cls._REQUIRED:
+            raise ValueError(
+                f"annotation {i}: unknown kind {kind!r}; "
+                f"expected one of {sorted(cls._REQUIRED)}")
+        missing = [k for k in cls._REQUIRED[kind] if k not in ann]
+        if missing:
+            raise ValueError(
+                f"annotation {i} ({kind}): missing keys {missing}")
+        return ann
 
     def _draw_ann(self, d, w, h, ann, idx, t):
         e = a01(t, ann.get("start", 0.0), ann.get("dur", 0.8))
@@ -442,6 +479,13 @@ class Magnifier(Overlay):
 
     def __init__(self, path, radius=0.15, zoom=2.2, start=0.0, duration=None):
         super().__init__(start, duration)
+        path = list(path)
+        if not path:
+            raise ValueError("Magnifier path must not be empty")
+        for i, pt in enumerate(path):
+            if len(pt) != 3:
+                raise ValueError(
+                    f"path keyframe {i} must be (t, x, y), got {pt!r}")
         self.path = sorted(path)
         self.radius = radius
         self.zoom = zoom

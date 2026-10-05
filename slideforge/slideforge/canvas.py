@@ -1,6 +1,7 @@
 """Low-level drawing helpers: gradients, text, compositing (PIL + numpy)."""
 
 import os
+import warnings
 
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
@@ -59,10 +60,19 @@ def get_font(size, bold=False, serif=False):
             path = _RESOLVED.get(variant)
             if path:
                 break
-        try:
-            _font_cache[key] = ImageFont.truetype(path, size) if path \
-                else ImageFont.load_default()
-        except OSError:  # pragma: no cover
+        if path:
+            try:
+                _font_cache[key] = ImageFont.truetype(path, size)
+            except OSError:  # pragma: no cover
+                path = None
+        if not path:
+            # Loud fallback: PIL's bitmap default is tiny and platform-
+            # dependent, which breaks the identical-rendering guarantee.
+            warnings.warn(
+                f"no truetype font found for (serif={serif}, bold={bold}); "
+                "falling back to PIL's bitmap default — install the bundled "
+                "fonts or a system DejaVu",
+                RuntimeWarning, stacklevel=2)
             _font_cache[key] = ImageFont.load_default()
     return _font_cache[key]
 
@@ -86,26 +96,32 @@ def solid(w, h, color):
 
 def vgradient(w, h, top, bottom):
     t = np.linspace(0, 1, h, dtype=np.float32)[:, None, None]
-    top = np.array(top, dtype=np.float32)
-    bottom = np.array(bottom, dtype=np.float32)
+    top = np.clip(np.array(top, dtype=np.float32), 0, 255)
+    bottom = np.clip(np.array(bottom, dtype=np.float32), 0, 255)
     grad = top * (1 - t) + bottom * t  # (h, 1, 3)
     return np.broadcast_to(grad, (h, w, 3)).astype(np.uint8)
 
 
 def hgradient(w, h, left, right):
     t = np.linspace(0, 1, w, dtype=np.float32)[None, :, None]
-    left = np.array(left, dtype=np.float32)
-    right = np.array(right, dtype=np.float32)
+    left = np.clip(np.array(left, dtype=np.float32), 0, 255)
+    right = np.clip(np.array(right, dtype=np.float32), 0, 255)
     return np.broadcast_to(left * (1 - t) + right * t, (h, w, 3)).astype(np.uint8)
 
 
 def radial_glow(w, h, cx, cy, color, radius):
-    """Soft radial glow on black — screen-blend onto a background."""
+    """Soft radial glow on black — screen-blend onto a background.
+
+    cx, cy: center as fractions of w/h. radius: glow radius as a fraction
+    of max(w, h). radius must be > 0.
+    """
+    if radius <= 0:
+        raise ValueError(f"radius must be > 0, got {radius!r}")
     yy, xx = np.mgrid[0:h, 0:w].astype(np.float32)
     d = np.sqrt((xx - cx * w) ** 2 + (yy - cy * h) ** 2) / (radius * max(w, h))
     fall = np.clip(1 - d, 0, 1) ** 2
     glow = np.zeros((h, w, 3), dtype=np.float32)
-    glow += fall[:, :, None] * np.array(color, dtype=np.float32)
+    glow += fall[:, :, None] * np.clip(np.array(color, dtype=np.float32), 0, 255)
     return glow.astype(np.uint8)
 
 
@@ -118,7 +134,11 @@ def screen_blend(base, glow, strength=1.0):
 
 def cover(img, w, h):
     """Scale image to cover (w,h), then center-crop. No distortion."""
+    if w <= 0 or h <= 0:
+        raise ValueError(f"cover target must be positive, got {(w, h)!r}")
     ih, iw = img.shape[:2]
+    if iw == 0 or ih == 0:
+        raise ValueError("cover input image has zero width or height")
     scale = max(w / iw, h / ih)
     nw, nh = max(1, round(iw * scale)), max(1, round(ih * scale))
     img = to_pil(img).resize((nw, nh), Image.BILINEAR)
@@ -127,7 +147,9 @@ def cover(img, w, h):
 
 
 def dim(img, factor):
-    return (img.astype(np.float32) * factor).astype(np.uint8)
+    if factor < 0:
+        raise ValueError(f"dim factor must be >= 0, got {factor!r}")
+    return np.clip(img.astype(np.float32) * factor, 0, 255).astype(np.uint8)
 
 
 def vignette(img, strength=0.35):
@@ -142,7 +164,11 @@ def vignette(img, strength=0.35):
 def bottom_scrim(img, height_frac=0.45, max_alpha=0.82):
     """Dark gradient rising from the bottom — keeps captions readable."""
     h, w = img.shape[:2]
+    height_frac = min(1.0, max(0.0, height_frac))
+    max_alpha = min(1.0, max(0.0, max_alpha))
     sh = int(h * height_frac)
+    if sh <= 0:
+        return img.copy()
     alpha = np.linspace(0, max_alpha, sh, dtype=np.float32)[:, None]
     alpha = np.broadcast_to(alpha, (sh, w))
     black = np.zeros((sh, w, 3), dtype=np.float32)
@@ -172,6 +198,12 @@ def draw_para(pil_img, box, text, size, fill, bold=False, serif=False,
               align="left", valign="top", line_spacing=1.3,
               stroke=0, stroke_fill=(0, 0, 0), alpha=255):
     """Draw wrapped text inside box=(x0,y0,x1,y1). Returns the image."""
+    if align not in ("left", "center", "right"):
+        raise ValueError(f"align must be 'left'|'center'|'right', got {align!r}")
+    if valign not in ("top", "center", "bottom"):
+        raise ValueError(f"valign must be 'top'|'center'|'bottom', got {valign!r}")
+    if len(tuple(fill)) != 3:
+        raise ValueError(f"fill must be a 3-tuple RGB color, got {fill!r}")
     draw = ImageDraw.Draw(pil_img, "RGBA")
     font = get_font(size, bold=bold, serif=serif)
     x0, y0, x1, y1 = box
@@ -224,6 +256,9 @@ def pill(base, box, radius, fill, alpha=255):
 
 def paste_rgba(base, overlay, pos):
     """Alpha-composite an RGBA overlay array onto an RGB base at (x, y)."""
+    if overlay.ndim != 3 or overlay.shape[2] != 4:
+        raise ValueError(
+            f"overlay must be an RGBA array (h, w, 4), got shape {overlay.shape}")
     x, y = int(pos[0]), int(pos[1])
     h, w = overlay.shape[:2]
     bh, bw = base.shape[:2]

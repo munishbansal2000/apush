@@ -43,8 +43,13 @@ class TestOverlays(unittest.TestCase):
     def test_caption_duration_defaults_to_scene_remainder(self):
         base = TitleSlide("Hi", duration=4.0, cfg=cfg())
         cap = Caption("x")
-        with_overlays(base, [cap])
-        self.assertAlmostEqual(cap.duration, 4.0 - 0.3)
+        wrapped = with_overlays(base, [cap])
+        # The wrapper resolves None against the scene — on its own copy.
+        # The caller's instance is never mutated (stays reusable).
+        self.assertIsNone(cap.duration)
+        resolved = wrapped._overlays[0]
+        self.assertIsNot(resolved, cap)
+        self.assertAlmostEqual(resolved.duration, 4.0 - 0.3)
 
     def test_lower_third_apply_guard(self):
         cfg0 = cfg()

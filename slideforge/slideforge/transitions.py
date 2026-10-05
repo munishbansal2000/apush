@@ -19,11 +19,15 @@ from .plugins import transition, transition_registry
 
 @transition("crossfade")
 def crossfade(a, b, k):
+    k = min(1.0, max(0.0, k))
+    _check_pair(a, b)
     return ((1 - k) * a.astype(np.float32) + k * b.astype(np.float32)).astype(np.uint8)
 
 
 @transition("dip")
 def dip_to_black(a, b, k):
+    k = min(1.0, max(0.0, k))
+    _check_pair(a, b)
     if k < 0.5:
         f = 1 - k * 2
         return (a.astype(np.float32) * f).astype(np.uint8)
@@ -34,6 +38,8 @@ def dip_to_black(a, b, k):
 @transition("wipe")
 def wipe(a, b, k):
     """B wipes in left-to-right over A."""
+    k = min(1.0, max(0.0, k))
+    _check_pair(a, b)
     h, w = a.shape[:2]
     x = int(round(k * w))
     out = a.copy()
@@ -45,6 +51,8 @@ def wipe(a, b, k):
 @transition("slide")
 def slide_over(a, b, k):
     """B slides in from the right, pushing over A."""
+    k = min(1.0, max(0.0, k))
+    _check_pair(a, b)
     h, w = a.shape[:2]
     x = int(round((1 - k) * w))
     out = a.copy()
@@ -56,6 +64,8 @@ def slide_over(a, b, k):
 @transition("zoom")
 def zoom_fade(a, b, k):
     """A gently scales up while crossfading into B — cinematic feel."""
+    k = min(1.0, max(0.0, k))
+    _check_pair(a, b)
     h, w = a.shape[:2]
     z = 1 + 0.07 * k
     nw, nh = int(w * z), int(h * z)
@@ -63,6 +73,12 @@ def zoom_fade(a, b, k):
     x0, y0 = (nw - w) // 2, (nh - h) // 2
     az = big[y0:y0 + h, x0:x0 + w]
     return crossfade(az, b, k)
+
+
+def _check_pair(a, b):
+    if a.shape != b.shape:
+        raise ValueError(
+            f"transition frames must have identical shapes, got {a.shape} vs {b.shape}")
 
 
 # Backwards-compatible name -> fn mapping. A live read-only view of the

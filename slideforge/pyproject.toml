@@ -19,6 +19,7 @@ slideforge = "slideforge.cli:main"
 [project.entry-points."slideforge.transitions"]
 [project.entry-points."slideforge.backgrounds"]
 [project.entry-points."slideforge.visions"]
+[project.entry-points."slideforge.gens"]
 
 [build-system]
 requires = ["setuptools>=61"]
@@ -27,6 +28,7 @@ build-backend = "setuptools.build_meta"
 [tool.setuptools.packages.find]
 include = ["slideforge*"]
 
-# Ship the bundled DejaVu fonts with the package (used by canvas.get_font).
+# Ship the bundled DejaVu fonts with the package (used by canvas.get_font),
+# plus the built-in route JSONs (used by routes.load_route / RouteSlide.from_route).
 [tool.setuptools.package-data]
-slideforge = ["fonts/*.ttf"]
+slideforge = ["fonts/*.ttf", "routes/*.json"]

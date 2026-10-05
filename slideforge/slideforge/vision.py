@@ -129,18 +129,49 @@ def autodetect():
 
 
 def parse_waypoints(raw, places):
-    """Parse reader output into waypoints, merging label/sub from places."""
+    """Parse reader output into waypoints, merging label/sub from places.
+
+    LLM output is untrusted: malformed items raise ValueError with the
+    item index instead of leaking KeyError/IndexError/JSONDecodeError.
+    """
     text = raw.strip()
     if text.startswith("```"):
-        text = text.split("\n", 1)[1].rsplit("```", 1)[0]
-    items = json.loads(text)
+        parts = text.split("\n", 1)
+        if len(parts) < 2:
+            raise ValueError("waypoint output is an empty code fence")
+        text = parts[1].rsplit("```", 1)[0]
+    try:
+        items = json.loads(text)
+    except json.JSONDecodeError as e:
+        raise ValueError(f"waypoint output is not valid JSON: {e}") from e
+    if not isinstance(items, list):
+        raise ValueError(
+            f"waypoint output must be a list, got {type(items).__name__}")
     by_name = {p["name"]: p for p in places}
     out = []
-    for it in items:
-        p = by_name.get(it["name"], {})
-        out.append({"name": it["name"],
-                    "at": [float(it["at"][0]), float(it["at"][1])],
-                    "label": p.get("label", it["name"]),
+    for i, it in enumerate(items):
+        if not isinstance(it, dict):
+            raise ValueError(f"waypoint {i} must be an object, got {it!r}")
+        name = it.get("name")
+        if not name:
+            raise ValueError(f"waypoint {i} is missing 'name'")
+        at = it.get("at")
+        if not isinstance(at, (list, tuple)) or len(at) != 2:
+            raise ValueError(f"waypoint {i} ({name!r}): 'at' must be [x, y]")
+        try:
+            x, y = float(at[0]), float(at[1])
+        except (TypeError, ValueError):
+            raise ValueError(
+                f"waypoint {i} ({name!r}): 'at' coordinates must be numbers, "
+                f"got {at!r}")
+        for v, axis in ((x, "x"), (y, "y")):
+            if not 0.0 <= v <= 1.0:
+                raise ValueError(
+                    f"waypoint {i} ({name!r}): 'at'.{axis}={v} outside 0..1")
+        p = by_name.get(name, {})
+        out.append({"name": name,
+                    "at": [x, y],
+                    "label": p.get("label", name),
                     "sub": p.get("sub", "")})
     return out
 
