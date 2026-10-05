@@ -36,7 +36,10 @@ VISUAL GRAMMAR — follow it exactly:
 - RevealSlide for Heimler-style enumerated points: title banner + numbered
   points that TYPE IN. Use when the narrator lists effects, causes, or
   features. Points: [{"text": "...", "at": seconds when typing starts,
-  "sub": "optional sub-bullet"}]. If at < 0, the point is already fully
+  "sub": "optional sub-bullet"}]. Each point's "at" MUST be the EXACT
+  word-time from WORD TIMES for the phrase's key word — look it up, NEVER
+  estimate, NEVER default to 0.0. A point appears WHEN its phrase is spoken,
+  not at scene start. If at < 0, the point is already fully
   visible (use when returning to a slide after a cutaway).
   Pattern: RevealSlide (point 1 types) -> CUT to ImageSlide (historic
   image while narrator discusses point 1) -> CUT BACK to RevealSlide
@@ -82,7 +85,7 @@ SLIDE PARAM SPECS (use exact shapes):
 - CompareSlide: {"title": "...", "left": {"head": "...", "sections": [{"sub": "...", "points": ["..."]}]}, "right": {...same shape...}}
   Do NOT use {"title": ..., "sub": ...} for columns — they will render empty.
 - RevealSlide: {"title": "...", "points": [{"text": "...", "at": seconds RELATIVE TO SCENE START (0.0 = scene start), "sub": "..."}]}
-  The FIRST point's "at" must equal the scene's start_sec (not 3s later). Points type in sequence; no dead air on empty banner.
+  Each point's "at" is its phrase's WORD TIME minus the scene's start_sec (relative). NEVER 0.0 by default — look up the word time. The title banner shows immediately so there is no dead air.
 - StatSlide: {"value": number, "label": "...", "prefix": "", "suffix": ""}
   value must be a NUMBER (for count-up), not a string range. Put ranges in label.
 - CausalChainSlide: {"title": "...", "nodes": ["label1", "label2", ...]}
