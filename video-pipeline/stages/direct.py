@@ -65,7 +65,16 @@ def _load_manifest(ep_dir, cfg):
     manifest_path = os.path.join(ep_dir, cfg.get("manifest", "manifest.json"))
     if os.path.exists(manifest_path):
         with open(manifest_path, encoding="utf-8") as f:
-            return json.load(f)
+            data = json.load(f)
+        # Asset manifests are {"images": {key: {file, kind, credit}}};
+        # build_prompt wants [{path, kind, description}].
+        if isinstance(data, dict) and isinstance(data.get("images"), dict):
+            return [{"path": v.get("file"), "kind": v.get("kind", "?"),
+                     "description": v.get("credit", "")}
+                    for v in data["images"].values()]
+        if isinstance(data, list):
+            return data
+        return []
     return []
 
 

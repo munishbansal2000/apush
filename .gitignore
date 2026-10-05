@@ -32,6 +32,8 @@ video-pipeline/episodes/*/audio/
 # stage any time; test-voice numbers must never stand in for final).
 video-pipeline/episodes/*/work/*.mp4
 video-pipeline/episodes/*/work/*.fingerprint.json
+# Generated AI clips (regenerable via the clips stage; LTX/5090 outputs).
+video-pipeline/episodes/*/clips/
 # Test-loop scratch: regenerable per-turn TTS + mixes, placeholder
 # clips, and run outputs (timings, verify, director prompt).
 video-pipeline/episodes/*/test_assets/

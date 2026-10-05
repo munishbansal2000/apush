@@ -1,36 +1,36 @@
 {
  "version": 1,
  "episode": "u1-e2",
- "notes": "Flagship rebuild: 29 scenes, audio-matched turn partitions. Each scene duration = turn span + outgoing transition, so rendered total == mixed MP3 exactly and scene boundaries land on turn boundaries. Every overlay family incl. movie-level TimelineRibbon; stagger/trans_dur tuned per beat; vidslide/territory/recall reserved for follow-ups (LTX stack, map-grid readings, recall sharpen timing).",
+ "notes": "U1-E2 v5 rebuild: 14 scenes, audio-matched turn partitions. Each scene duration = gap-aware turn span (offset 1.8 / gap 0.6 / tail 4.5), so rendered total == mixed MP3 exactly and scene boundaries land on turn boundaries. darksea is a VidSlide with an LTX anim_prompt (atmospheric open ocean; no historic image fits the 'sea of darkness' beat).",
  "movie_overlays": [
   {
    "type": "timelineribbon",
    "height_frac": 0.07,
-   "era": "THE COLLISION \u00b7 1453\u20131542",
+   "era": "THE COLLISION · 1453–1972",
    "events": [
     [
-     0.15,
+     0.054,
      "1453"
     ],
     [
-     0.27,
+     0.258,
+     "1488"
+    ],
+    [
+     0.355,
      "1492"
     ],
     [
-     0.336,
-     "Oct 1492"
-    ],
-    [
-     0.399,
+     0.42,
      "1494"
     ],
     [
-     0.62,
-     "1521"
+     0.265,
+     "1498"
     ],
     [
-     0.718,
-     "1542"
+     0.491,
+     "1972"
     ]
    ],
    "span": [
@@ -42,796 +42,389 @@
  "scenes": [
   {
    "id": "open",
-   "slide": "titlecardslide",
+   "title": "Cold open — title card",
+   "slide": "eracardslide",
    "params": {
-    "image": "images/caravel-replicas.jpg",
-    "title": "The Collision",
-    "kicker": "U1 \u00b7 E2 \u2014 MAYA + MARCUS"
+    "title": "Wrong Map, New World",
+    "kicker": "APUSH · UNIT 1 · EP. 2",
+    "subtitle": "A Genoese sailor, bad math, and a continent that wasn't lost",
+    "boxes": [
+     {
+      "label": "Columbian Exchange",
+      "icon": "scroll"
+     },
+     {
+      "label": "Encomienda",
+      "icon": "coin"
+     },
+     {
+      "label": "Tordesillas",
+      "icon": "flag"
+     }
+    ],
+    "footer": "Maya + Marcus · ~8 minutes",
+    "unit": 1
    },
    "turns": [
     0,
     0
    ],
-   "duration_sec": 23.902,
-   "transition": "cut",
-   "trans_dur": 0,
-   "overlays": [
-    {
-     "type": "caption",
-     "text": "Three boxes: Exchange \u00b7 Encomienda \u00b7 Tordesillas",
-     "start": 12.0,
-     "duration": 8.0
-    }
-   ]
-  },
-  {
-   "id": "gold",
-   "slide": "splitslide",
-   "params": {
-    "image": "images/gold-coins.jpg",
-    "heading": "GOLD",
-    "side": "left",
-    "body": [
-     "Europe hungry for Asian spice + silk",
-     "Old land routes run through Ottoman hands"
-    ]
-   },
-   "turns": [
-    1,
-    1
-   ],
-   "duration_sec": 12.826,
+   "duration_sec": 28.152,
    "transition": "crossfade",
-   "trans_dur": 0.5,
-   "overlays": [
-    {
-     "type": "keywordpop",
-     "word": "spices",
-     "position": "left",
-     "start": 2.0,
-     "duration": 2.5
-    }
-   ]
+   "trans_dur": 0.4,
+   "overlays": []
   },
   {
-   "id": "god-glory",
-   "slide": "bulletslide",
+   "id": "motives",
+   "title": "Why sail west — gold, God, glory",
+   "slide": "displayheadline",
    "params": {
-    "title": "God \u2014 and glory",
-    "bullets": [
-     "**God:** the Reconquista mindset",
-     "Holy war was still fresh",
-     "Converting souls: duty + destiny",
-     "**Glory:** pure competition",
-     "Portugal's getting rich",
-     "An arms race with sails"
-    ],
-    "stagger": 3.0,
+    "headline": "Gold, God, and glory",
+    "sub": "Why Europe sailed west",
     "bg": {
-     "path": "images/cathedral.jpg",
+     "path": "images/gold-coins.jpg",
      "dim": 0.72
     }
    },
    "turns": [
-    2,
-    4
+    1,
+    7
    ],
-   "duration_sec": 25.73,
-   "transition": "crossfade",
-   "trans_dur": 0.5,
-   "overlays": [
-    {
-     "type": "keywordpop",
-     "word": "Reconquista",
-     "position": "left",
-     "start": 6.5,
-     "duration": 2.5
-    }
-   ]
-  },
-  {
-   "id": "ottomans",
-   "slide": "displayheadline",
-   "params": {
-    "headline": "After 1453, the Ottomans charge whatever they want",
-    "sub": "Constantinople falls \u00b7 tariffs go up"
-   },
-   "turns": [
-    5,
-    6
-   ],
-   "duration_sec": 8.803,
+   "duration_sec": 59.952,
    "transition": "cut",
    "trans_dur": 0,
-   "overlays": [
-    {
-     "type": "keywordpop",
-     "word": "1453",
-     "position": "right",
-     "start": 1.0,
-     "duration": 2.5
-    }
-   ]
-  },
-  {
-   "id": "henry",
-   "slide": "splitslide",
-   "params": {
-    "image": "images/henry-navigator.jpg",
-    "heading": "Prince Henry the Navigator",
-    "side": "right",
-    "body": [
-     "Bankrolls Portugal, down the African coast",
-     "Never sailed a single voyage"
-    ]
-   },
-   "turns": [
-    7,
-    8
-   ],
-   "duration_sec": 16.979,
-   "transition": "crossfade",
-   "trans_dur": 0.5,
-   "overlays": [
-    {
-     "type": "lowerthird",
-     "name": "Prince Henry",
-     "role": "the Navigator \u2014 ashore",
-     "start": 2.0,
-     "duration": 4.5
-    }
-   ]
-  },
-  {
-   "id": "tools",
-   "slide": "collageslide",
-   "params": {
-    "banner": "NEW TOOLS",
-    "cards": [
-     {
-      "image": "images/caravel-replicas.jpg",
-      "at": [
-       0.2,
-       0.22
-      ]
-     },
-     {
-      "image": "images/astrolabe-detail.jpg",
-      "at": [
-       0.5,
-       0.22
-      ]
-     },
-     {
-      "image": "images/portolan-chart-clean.jpg",
-      "at": [
-       0.8,
-       0.22
-      ]
-     }
-    ],
-    "notes": [
-     {
-      "text": "caravel \u00b7 astrolabe \u00b7 compass",
-      "at": [
-       0.5,
-       0.6
-      ],
-      "align": "center"
-     },
-     {
-      "text": "1488: round Africa",
-      "at": [
-       0.3,
-       0.74
-      ]
-     },
-     {
-      "text": "1498: da Gama reaches India",
-      "at": [
-       0.7,
-       0.74
-      ]
-     }
-    ],
-    "stagger": 0.7
-   },
-   "turns": [
-    9,
-    9
-   ],
-   "duration_sec": 20.584,
-   "transition": "crossfade",
-   "trans_dur": 0.5,
    "overlays": []
   },
   {
-   "id": "two-crowns",
-   "slide": "duoslide",
+   "id": "tools",
+   "title": "The toolkit",
+   "slide": "bulletslide",
    "params": {
-    "left": {
-     "image": "images/portolan-chart.jpg",
-     "label": "Portugal: mapping Africa"
-    },
-    "right": {
-     "image": "images/isabella-ferdinand.jpg",
-     "label": "Spain: Granada falls"
-    },
-    "stagger": 2.0
-   },
-   "turns": [
-    10,
-    11
-   ],
-   "duration_sec": 19.121,
-   "transition": "crossfade",
-   "trans_dur": 0.5,
-   "overlays": [
-    {
-     "type": "keywordpop",
-     "word": "1492",
-     "position": "right",
-     "start": 12.0,
-     "duration": 2.5
-    }
-   ]
-  },
-  {
-   "id": "wrong-map",
-   "slide": "kenburnsslide",
-   "params": {
-    "image": "images/columbus-manuscript.jpg",
-    "stops": [
-     [
-      0.5,
-      0.5,
-      1.0
-     ],
-     [
-      0.5,
-      0.55,
-      0.55
-     ],
-     [
-      0.5,
-      0.5,
-      1.0
-     ]
+    "title": "The toolkit",
+    "bullets": [
+     "Caravel — small, fast, built to maneuver",
+     "Lateen sails — triangular; claw against the wind",
+     "Astrolabe — latitude from the stars",
+     "Magnetic compass — hold a course"
     ],
-    "hold": 4.0,
-    "title": "Columbus was wrong about basically everything",
-    "caption": "Wrong about the SIZE \u2014 not the shape"
+    "bg": {
+     "path": "images/astrolabe.jpg",
+     "dim": 0.74
+    }
    },
    "turns": [
-    12,
-    14
+    8,
+    10
    ],
-   "duration_sec": 17.554,
+   "duration_sec": 36.696,
+   "transition": "cut",
+   "trans_dur": 0,
+   "overlays": []
+  },
+  {
+   "id": "darksea",
+   "title": "The sea of darkness",
+   "slide": "vidslide",
+   "params": {
+    "src": "clips/darksea.mp4"
+   },
+   "turns": [
+    11,
+    13
+   ],
+   "duration_sec": 37.56,
    "transition": "crossfade",
    "trans_dur": 0.5,
    "overlays": [
     {
      "type": "keywordpop",
-     "word": "10,000 miles",
-     "position": "left",
-     "start": 5.0,
-     "duration": 2.5
-    },
-    {
-     "type": "keywordpop",
-     "word": "round, not flat",
-     "position": "right",
-     "start": 12.0,
-     "duration": 2.5
-    }
-   ]
-  },
-  {
-   "id": "landing",
-   "slide": "routeslide",
-   "params": {
-    "route": "columbus_1492"
-   },
-   "turns": [
-    15,
-    16
-   ],
-   "duration_sec": 17.45,
-   "transition": "wipe",
-   "trans_dur": 0.7,
-   "overlays": [
-    {
-     "type": "keywordpop",
-     "word": "October 12, 1492",
-     "position": "left",
-     "start": 7.0,
+     "word": "1488 — Dias rounds Africa",
+     "start": 8.34,
      "duration": 3.0
     },
     {
-     "type": "caption",
-     "text": "Calls them Indians. Dies insisting: Asia.",
-     "start": 11.0,
-     "duration": 5.5
+     "type": "keywordpop",
+     "word": "1498 — da Gama reaches India",
+     "start": 12.04,
+     "duration": 3.0
     }
-   ]
+   ],
+   "anim_prompt": "Vast open Atlantic Ocean at dawn, seen from just above the water. Low drifting mist, slow heavy swell, cold blue-grey palette with a pale glow on the horizon. No ships, no people, no land, no text, no modern objects. Camera: very slow push-in. Mood: beautiful and ominous — the edge of the known world."
   },
   {
-   "id": "pope",
-   "slide": "displayheadline",
+   "id": "columbus",
+   "title": "Columbus's bad math",
+   "slide": "compareslide",
    "params": {
-    "headline": "So the pope steps in",
-    "sub": "Four voyages in \u2014 time to divide the planet"
+    "title": "Columbus's math",
+    "left": {
+     "head": "HIS MATH",
+     "sections": [
+      {
+       "sub": "Asia sits close",
+       "points": [
+        "~3,000 miles west of the Canaries"
+       ]
+      }
+     ]
+    },
+    "right": {
+     "head": "REALITY",
+     "sections": [
+      {
+       "sub": "A whole ocean wider",
+       "points": [
+        "~10,000 miles — a continent in the way"
+       ]
+      }
+     ]
+    },
+    "bg": {
+     "path": "images/caravel-replicas.jpg",
+     "dim": 0.78
+    }
+   },
+   "turns": [
+    14,
+    16
+   ],
+   "duration_sec": 21.288,
+   "transition": "cut",
+   "trans_dur": 0,
+   "overlays": []
+  },
+  {
+   "id": "landing",
+   "title": "October 12, 1492",
+   "slide": "imageslide",
+   "params": {
+    "image": "images/columbus-manuscript.jpg",
+    "caption": "October 12, 1492 — four voyages, never the mainland",
+    "title": ""
    },
    "turns": [
     17,
-    18
+    19
    ],
-   "duration_sec": 12.46,
-   "transition": "dip",
-   "trans_dur": 0.8,
+   "duration_sec": 31.272,
+   "transition": "cut",
+   "trans_dur": 0,
    "overlays": []
   },
   {
    "id": "tordesillas",
-   "slide": "imageslide",
+   "title": "Box one — the pope's line",
+   "slide": "mapzoomslide",
    "params": {
-    "image": "images/tordesillas-map.jpg",
-    "title": "Treaty of Tordesillas \u2014 1494"
+    "map_image": "images/tordesillas-map.jpg",
+    "markers": [
+     {
+      "at": [
+       0.19,
+       0.55
+      ],
+      "zoom": 3.0,
+      "label": "The pope's line — 1494",
+      "sub": "370 leagues west of Cape Verde"
+     }
+    ]
    },
    "turns": [
-    19,
-    21
+    20,
+    25
    ],
-   "duration_sec": 24.712,
-   "transition": "crossfade",
-   "trans_dur": 0.5,
-   "overlays": [
-    {
-     "type": "keywordpop",
-     "word": "370 leagues",
-     "position": "left",
-     "start": 3.0,
-     "duration": 2.5
-    },
-    {
-     "type": "regionglow",
-     "at": [
-      0.5,
-      0.5
-     ],
-     "size": 0.35,
-     "start": 6.0,
-     "duration": 3.0
-    },
-    {
-     "type": "caption",
-     "text": "West to Spain \u00b7 east to Portugal",
-     "start": 7.0,
-     "duration": 5.0
-    },
-    {
-     "type": "caption",
-     "text": "France and England: ignored it completely",
-     "start": 17.0,
-     "duration": 6.5
-    }
-   ]
+   "duration_sec": 39.12,
+   "transition": "cut",
+   "trans_dur": 0,
+   "overlays": []
   },
   {
-   "id": "exchange",
-   "slide": "titleslide",
-   "params": {
-    "title": "The Columbian Exchange",
-    "subtitle": "Plants, animals, people, disease \u2014 both directions"
-   },
-   "turns": [
-    22,
-    23
-   ],
-   "duration_sec": 14.446,
-   "transition": "crossfade",
-   "trans_dur": 0.5,
-   "overlays": [
-    {
-     "type": "lowerthird",
-     "name": "Alfred Crosby",
-     "role": "named it in 1972",
-     "start": 9.0,
-     "duration": 4.5
-    }
-   ]
-  },
-  {
-   "id": "crops",
+   "id": "goods",
+   "title": "Box two — the Exchange",
    "slide": "compareslide",
    "params": {
-    "title": "Groceries across an ocean",
+    "title": "The Columbian Exchange",
     "left": {
-     "head": "EAST \u2192 EUROPE",
+     "head": "SAILED EAST",
      "sections": [
       {
        "sub": "Crops",
        "points": [
-        "Potatoes",
-        "Maize",
-        "Tomatoes"
+        "Maize, potatoes, tomatoes"
+       ]
+      },
+      {
+       "sub": "Effect",
+       "points": [
+        "Help fuel population growth across Europe"
        ]
       }
      ]
     },
     "right": {
-     "head": "WEST \u2192 AMERICAS",
+     "head": "SAILED WEST",
      "sections": [
       {
        "sub": "Crops",
        "points": [
-        "Wheat, sugarcane, rice"
+        "Wheat, sugarcane"
+       ]
+      },
+      {
+       "sub": "Animals",
+       "points": [
+        "Horses, cattle, pigs — the Americas had never seen them"
        ]
       }
      ]
     },
-    "stagger": 2.0
+    "bg": {
+     "path": "images/maize.jpg",
+     "dim": 0.8
+    }
    },
    "turns": [
-    24,
-    26
-   ],
-   "duration_sec": 14.628,
-   "transition": "crossfade",
-   "trans_dur": 0.5,
-   "overlays": []
-  },
-  {
-   "id": "livestock",
-   "slide": "displayheadline",
-   "params": {
-    "headline": "The horse remakes life on the Plains",
-    "sub": "Horses \u00b7 cattle \u00b7 pigs sail west"
-   },
-   "turns": [
-    27,
+    26,
     28
    ],
-   "duration_sec": 13.505,
-   "transition": "crossfade",
-   "trans_dur": 0.5,
-   "overlays": [
-    {
-     "type": "sticker",
-     "image": "images/maize.jpg",
-     "at": [
-      0.87,
-      0.16
-     ],
-     "size": 0.16,
-     "label": "maize \u2014 also American",
-     "start": 6.0,
-     "duration": 6.5
-    }
-   ]
+   "duration_sec": 37.608,
+   "transition": "cut",
+   "trans_dur": 0,
+   "overlays": []
   },
   {
    "id": "disease",
-   "slide": "statslide",
+   "title": "The disease front",
+   "slide": "imageslide",
    "params": {
-    "value": 90,
-    "suffix": "%",
-    "label": "dead in the hardest-hit places \u00b7 smallpox, measles, flu"
+    "image": "images/smallpox-florentine-codex.jpg",
+    "caption": "Smallpox, measles, influenza — 8 or 9 out of 10 in the hardest-hit places",
+    "title": ""
    },
    "turns": [
     29,
-    29
-   ],
-   "duration_sec": 14.419,
-   "transition": "dip",
-   "trans_dur": 0.8,
-   "overlays": []
-  },
-  {
-   "id": "steel",
-   "slide": "bulletslide",
-   "params": {
-    "title": "What toppled an empire?",
-    "bullets": [
-     "**Steel and horses** get the headlines",
-     "**Disease** cleared the ground first",
-     "The test asks cause-and-effect"
-    ],
-    "stagger": 3.5
-   },
-   "turns": [
-    30,
     31
    ],
-   "duration_sec": 13.401,
-   "transition": "crossfade",
-   "trans_dur": 0.5,
-   "overlays": []
-  },
-  {
-   "id": "syphilis",
-   "slide": "displayheadline",
-   "params": {
-    "headline": "Syphilis: the great maybe",
-    "sub": "Anything sail back east? Nobody's fully sure."
-   },
-   "turns": [
-    32,
-    34
-   ],
-   "duration_sec": 7.497,
+   "duration_sec": 19.368,
    "transition": "cut",
    "trans_dur": 0,
    "overlays": []
   },
   {
    "id": "conquest",
+   "title": "How a few hundred toppled empires",
    "slide": "causalchain",
    "params": {
-    "title": "The conquest pattern",
+    "title": "Why a few hundred toppled empires",
     "nodes": [
      [
-      "Few hundred Spaniards",
-      "steel + horses"
+      "Steel weapons & armor",
+      ""
      ],
      [
-      "Smallpox",
-      "clears the ground"
+      "Horses",
+      ""
      ],
      [
-      "Native allies",
-      "tens of thousands"
+      "Disease",
+      "the invisible killer"
      ],
      [
-      "Tenochtitl\u00e1n falls",
-      "1521 \u00b7 Peru a decade later"
+      "Indigenous alliances",
+      "their own reasons to fight"
+     ],
+     [
+      "Empires fall",
+      "no single cause does it alone"
      ]
-    ],
-    "stagger": 6.0,
-    "arrow_dur": 1.0
+    ]
    },
    "turns": [
-    35,
-    38
+    32,
+    34
    ],
-   "duration_sec": 28.395,
-   "transition": "crossfade",
-   "trans_dur": 0.5,
-   "overlays": [
-    {
-     "type": "keywordpop",
-     "word": "1521",
-     "position": "left",
-     "start": 4.0,
-     "duration": 2.5
-    },
-    {
-     "type": "keywordpop",
-     "word": "Native allies",
-     "position": "right",
-     "start": 17.0,
-     "duration": 3.0
-    }
-   ]
+   "duration_sec": 26.04,
+   "transition": "cut",
+   "trans_dur": 0,
+   "overlays": []
   },
   {
    "id": "encomienda",
-   "slide": "stepsslide",
-   "params": {
-    "title": "The encomienda system",
-    "steps": [
-     [
-      "The grant",
-      "Native labor + tribute"
-     ],
-     [
-      "The promise",
-      "protection + conversion"
-     ],
-     [
-      "The practice",
-      "forced labor, brutal and deadly"
-     ],
-     [
-      "The whistle",
-      "Las Casas \u2192 New Laws, 1542"
-     ]
-    ],
-    "stagger": 5.0
-   },
-   "turns": [
-    39,
-    41
-   ],
-   "duration_sec": 30.85,
-   "transition": "crossfade",
-   "trans_dur": 0.5,
-   "overlays": [
-    {
-     "type": "keywordpop",
-     "word": "Las Casas",
-     "position": "right",
-     "start": 24.0,
-     "duration": 3.0
-    }
-   ]
-  },
-  {
-   "id": "on-record",
-   "slide": "highlightslide",
-   "params": {
-    "text": "Las Casas got the argument on the record: ==are Native people subjects to convert, or labor to use?=="
-   },
-   "turns": [
-    42,
-    44
-   ],
-   "duration_sec": 14.785,
-   "transition": "crossfade",
-   "trans_dur": 0.5,
-   "overlays": [
-    {
-     "type": "caption",
-     "text": "New Laws, 1542 \u2014 barely enforced",
-     "start": 7.0,
-     "duration": 6.5
-    }
-   ]
-  },
-  {
-   "id": "recap-tord",
+   "title": "Box three — encomienda",
    "slide": "imageslide",
    "params": {
-    "image": "images/tordesillas-map.jpg",
-    "title": "One: Tordesillas",
-    "caption": "1494 \u00b7 West to Spain, east to Portugal"
+    "image": "images/debry-hispaniola-mines.jpg",
+    "caption": "Encomienda: Native labor granted to colonists — “protection” in air quotes",
+    "title": ""
    },
    "turns": [
-    45,
-    46
+    35,
+    39
    ],
-   "duration_sec": 16.561,
-   "transition": "crossfade",
-   "trans_dur": 0.5,
+   "duration_sec": 34.512,
+   "transition": "cut",
+   "trans_dur": 0,
    "overlays": []
   },
   {
-   "id": "recap-exch",
-   "slide": "displaypointsslide",
+   "id": "recap",
+   "title": "Three boxes, landed",
+   "slide": "bulletslide",
    "params": {
-    "title": "Two: the Exchange",
-    "points": [
-     "Potatoes, maize, tomatoes \u2192 east",
-     "Wheat, sugar, horses \u2192 west",
-     "Smallpox \u2192 west \u00b7 mostly one way"
+    "title": "Three boxes, landed",
+    "bullets": [
+     "Tordesillas (1494) — the pope's line; Brazil speaks Portuguese",
+     "Columbian Exchange (Crosby, 1972) — crops, animals, disease, both ways",
+     "Encomienda — Native labor grants; “protection” in air quotes"
     ],
-    "stagger": 5.0
+    "bg": {
+     "type": "era",
+     "unit": 1
+    }
    },
    "turns": [
-    47,
+    40,
     48
    ],
-   "duration_sec": 20.898,
-   "transition": "crossfade",
-   "trans_dur": 0.5,
+   "duration_sec": 67.896,
+   "transition": "cut",
+   "trans_dur": 0,
    "overlays": []
   },
   {
-   "id": "recap-enc",
+   "id": "quiz",
+   "title": "Self-test",
    "slide": "displayheadline",
    "params": {
-    "headline": "Three: the encomienda",
-    "sub": "Brutal grant \u00b7 Las Casas blew the whistle"
+    "headline": "Two questions, AP-shaped",
+    "sub": "Say your answer out loud before Maya does",
+    "bg": {
+     "type": "era",
+     "unit": 1
+    }
    },
    "turns": [
     49,
-    50
-   ],
-   "duration_sec": 13.087,
-   "transition": "crossfade",
-   "trans_dur": 0.5,
-   "overlays": []
-  },
-  {
-   "id": "quiz1-q",
-   "slide": "displayheadline",
-   "params": {
-    "headline": "Name one thing each way",
-    "sub": "Say it before Maya does"
-   },
-   "turns": [
-    51,
-    52
-   ],
-   "duration_sec": 14.311,
-   "transition": "cut",
-   "trans_dur": 0,
-   "overlays": []
-  },
-  {
-   "id": "quiz1-a",
-   "slide": "displaypointsslide",
-   "params": {
-    "points": [
-     "Europe \u2192 potatoes, maize, tomatoes",
-     "Americas \u2192 horses, wheat, sugarcane"
-    ],
-    "stagger": 2.5
-   },
-   "turns": [
-    53,
     53
    ],
-   "duration_sec": 7.993,
-   "transition": "cut",
-   "trans_dur": 0,
-   "overlays": []
-  },
-  {
-   "id": "quiz2-q",
-   "slide": "displayheadline",
-   "params": {
-    "headline": "The encomienda \u2014 in one sentence?",
-    "sub": "Say it before Maya does"
-   },
-   "turns": [
-    54,
-    55
-   ],
-   "duration_sec": 7.571,
-   "transition": "cut",
-   "trans_dur": 0,
-   "overlays": []
-  },
-  {
-   "id": "quiz2-a",
-   "slide": "bulletslide",
-   "params": {
-    "title": "The encomienda, in one sentence",
-    "bullets": [
-     "Spanish grant of Native labor + tribute",
-     "Supposedly for conversion",
-     "Brutal \u00b7 challenged by Las Casas"
-    ],
-    "stagger": 2.5
-   },
-   "turns": [
-    56,
-    56
-   ],
-   "duration_sec": 11.494,
-   "transition": "cut",
-   "trans_dur": 0,
+   "duration_sec": 59.824,
+   "transition": "crossfade",
+   "trans_dur": 0.4,
    "overlays": []
   },
   {
    "id": "outro",
-   "slide": "titleslide",
-   "params": {
-    "title": "Episode 2 in the books",
-    "subtitle": "Next: Spain plants its flag \u00b7 England watches"
-   },
-   "turns": [
-    57,
-    57
-   ],
-   "duration_sec": 8.803,
-   "transition": "cut",
-   "trans_dur": 0,
-   "overlays": []
-  },
-  {
-   "id": "stinger",
+   "title": "Tagline + next time",
    "slide": "quoteslide",
    "params": {
-    "quote": "Two worlds, one ocean \u2014 no going back.",
-    "byline": "Episode 2 \u00b7 Next: Spain plants its flag"
+    "quote": "They sailed west looking for Asia — and found a world.",
+    "byline": "Maya"
    },
    "turns": [
-    58,
-    59
+    54,
+    56
    ],
-   "duration_sec": 3.317,
+   "duration_sec": 17.676,
    "transition": "cut",
    "trans_dur": 0,
    "overlays": []

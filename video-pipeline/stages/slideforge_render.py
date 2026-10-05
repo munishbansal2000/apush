@@ -29,6 +29,10 @@ def _default_assets(ep_dir):
     local = os.path.join(ep_dir, "assets")
     if os.path.isdir(local):
         return local
+    # U1 episodes keep sourced images in <ep_dir>/images/ and reference
+    # them as "images/..." — resolve against the episode dir itself.
+    if os.path.isdir(os.path.join(ep_dir, "images")):
+        return ep_dir
     shared = os.path.join(_REPO_ROOT, "slideforge", "assets")
     if os.path.isdir(shared):
         return shared

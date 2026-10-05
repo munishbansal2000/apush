@@ -95,7 +95,13 @@ def run(ep_dir, cfg):
         raise RuntimeError(f"no per-turn audio in {tts_dir}")
 
     out = {}
-    from vosk import Model
+    try:
+        from vosk import Model
+    except ImportError:
+        print("wordtiming: vosk not installed — skipping "
+              "(install vosk + model on the render machine for word times)",
+              flush=True)
+        return {}
     model = Model(_model_path())  # load once — not per turn
     failed = 0
     for f in turn_files:
