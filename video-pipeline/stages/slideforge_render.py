@@ -20,6 +20,7 @@ if _ROOT not in sys.path:
     sys.path.insert(0, _ROOT)
 
 from compile_scene_plan import compile_scene_plan, plan_assets  # noqa: E402
+from stages.plan_path import resolve_plan  # noqa: E402
 
 _REPO_ROOT = os.path.normpath(os.path.join(_ROOT, os.pardir))
 
@@ -78,10 +79,13 @@ def _fingerprint_current(out, fingerprint):
 
 def run(ep_dir, cfg, force=False):
     work = os.path.join(ep_dir, "work")
-    plan_path = os.path.join(work, "scene_plan.json")
-    if not os.path.exists(plan_path):
+    plan_path, source = resolve_plan(ep_dir)
+    if source == "missing":
         raise RuntimeError(
-            f"scene plan missing: {plan_path} — run the direct stage first")
+            f"scene plan missing: {plan_path} — put the reviewed plan at "
+            f"{os.path.join(ep_dir, 'scene_plan.json')} or run the direct "
+            "stage first")
+    print(f"slideforge_render: using {source} plan: {plan_path}", flush=True)
     assets_dir = cfg.get("assets_dir") or _default_assets(ep_dir)
     width, height, fps = int(cfg.get("width", 1920)), \
         int(cfg.get("height", 1080)), int(cfg.get("fps", 30))

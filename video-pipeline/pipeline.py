@@ -79,6 +79,10 @@ def main():
     ap.add_argument("--director-provider", default="agent",
                     choices=["mock", "agent", "openai"],
                     help="slideforge renderer only: who writes the scene plan")
+    ap.add_argument("--plan-file", default=None,
+                    help="explicit scene-plan JSON for the direct stage "
+                         "(default: work/scene_plan.json, falling back to "
+                         "the reviewed <episode>/scene_plan.json)")
     args = ap.parse_args()
 
     ep_dir = os.path.join(ROOT, "episodes", args.episode)
@@ -121,7 +125,8 @@ def main():
         elif stage == "render":
             seg_paths = render.run(ep_dir, cfg, force=args.force)
         elif stage == "direct":
-            direct_stage.run(ep_dir, cfg, provider=args.director_provider)
+            direct_stage.run(ep_dir, cfg, provider=args.director_provider,
+                             plan_file=args.plan_file)
         elif stage == "slideforge_render":
             video_path = slideforge_render.run(ep_dir, cfg, force=args.force)
         elif stage == "assemble":

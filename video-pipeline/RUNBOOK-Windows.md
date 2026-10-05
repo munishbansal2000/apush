@@ -39,7 +39,7 @@ That's it. The single command runs every stage:
 |---|---|
 | `audio` | `render_episode.py` synthesizes each turn with Fish Audio (Maya/Marcus voices), turns `[N-second pause]` into real silence, writes `episodes\u1-e2\audio\e2-mixed.mp3` + per-turn `t00..tNN.mp3`. Turns are cached — re-running only re-synthesizes changed lines. |
 | `timing` | Measures the real MP3 durations → `work\timings.json`. Scenes resolve against these, so visuals land on the actual voice. |
-| `direct` | The LLM director step. Default (`agent`): writes `work\director_prompt.txt` and stops — you write the scene plan JSON to `work\scene_plan.json` (schema: `scene_plan_schema.json`; the visual grammar lives in `director.py`), then re-run with `--only direct,slideforge_render,assemble,verify`. `--director-provider mock` makes a stub plan (tests only); `openai` has the model write it (needs `OPENAI_API_KEY`). |
+| `direct` | The LLM director step. Default (`agent`): uses the reviewed scene plan — `work\\scene_plan.json` if present, otherwise the reviewed `episodes\\<ep>\\scene_plan.json` (all U1 plans live there) — and stops only if neither exists. Never improvise your own render script: `work\\draft.mp4`-style outputs bypass timing/refit/verify and desync. `--plan-file <path>` points at an explicit plan. |
 | `slideforge_render` | Deterministic compile of `work\scene_plan.json` → `work\slideforge.mp4`. No network, no model calls — same plan + same assets = same video. |
 | `assemble` | Muxes the dialogue audio over the rendered video. |
 | `verify` | Fail-closed checks: duration matches, 1 video + 1 audio stream, audio not silent, zero black frames. |

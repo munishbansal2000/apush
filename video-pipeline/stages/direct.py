@@ -23,6 +23,7 @@ if _ROOT not in sys.path:
     sys.path.insert(0, _ROOT)
 
 import director as director_mod  # noqa: E402
+from stages.plan_path import resolve_plan  # noqa: E402
 
 
 def _load_turns(ep_dir):
@@ -72,25 +73,28 @@ def run(ep_dir, cfg, provider="agent", plan_file=None):
         f.write(director_mod.build_prompt(episode, turns, manifest))
     print(f"direct: prompt written to {prompt_path}", flush=True)
 
-    plan_path = os.path.join(work, "scene_plan.json")
+    plan_path, source = resolve_plan(ep_dir)
     if provider == "agent" and not plan_file:
-        if os.path.exists(plan_path):
+        if source != "missing":
             with open(plan_path, encoding="utf-8") as f:
                 plan = json.load(f)
             if plan.get("version") != 1:
                 raise RuntimeError(f"{plan_path} is not a v1 scene plan")
-            print(f"direct: using existing plan ({len(plan['scenes'])} "
-                  f"scenes)", flush=True)
+            print(f"direct: using {source} plan ({len(plan['scenes'])} "
+                  f"scenes): {plan_path}", flush=True)
             return plan_path
         raise RuntimeError(
-            "direct: no scene plan yet. Review the director prompt at "
-            f"{prompt_path}, write the plan JSON to {plan_path} "
-            "(schema: scene_plan_schema.json), then re-run with "
-            "--only direct,slideforge_render,assemble,verify")
+            "direct: no scene plan yet. Put the reviewed plan at "
+            f"{os.path.join(ep_dir, 'scene_plan.json')} or write one to "
+            f"{plan_path} (schema: scene_plan_schema.json), then re-run "
+            "with --only direct,slideforge_render,assemble,verify")
 
     plan = director_mod.direct(
         episode, turns, manifest, provider=provider,
         plan_file=plan_file or None)
+    # Generated plans always land in the working copy — never overwrite
+    # the reviewed episode-root plan via the fallback path.
+    plan_path = os.path.join(work, "scene_plan.json")
     with open(plan_path, "w", encoding="utf-8") as f:
         json.dump(plan, f, indent=1)
     print(f"direct: {len(plan['scenes'])} scenes -> {plan_path}", flush=True)
