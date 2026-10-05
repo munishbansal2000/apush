@@ -26,3 +26,8 @@ video/audio/
 *_cache/
 video-pipeline/out/
 video-pipeline/episodes/*/audio/
+# Per-episode work dirs: rendered mp4s + fingerprint cache sidecars are
+# regenerable and often large. Reviewed scene plans and measured
+# timings.json stay tracked.
+video-pipeline/episodes/*/work/*.mp4
+video-pipeline/episodes/*/work/*.fingerprint.json

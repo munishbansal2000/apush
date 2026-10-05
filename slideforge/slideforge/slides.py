@@ -3139,6 +3139,7 @@ def _era_icon(kind, size, color):
     return img
 
 
+@slide('era-card')
 class EraCardSlide(Slide):
     """Design title card contextualized by APUSH unit.
 
