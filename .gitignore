@@ -18,3 +18,11 @@ video/tts/__pycache__/
 __pycache__/
 assets/images/
 video/audio/
+
+# Render outputs + intermediates (regenerable). Source audio under
+# video/ + video_pipeline/ stays tracked.
+*-mixed.mp3
+*-final.mp4
+*_cache/
+video-pipeline/out/
+video-pipeline/episodes/*/audio/
