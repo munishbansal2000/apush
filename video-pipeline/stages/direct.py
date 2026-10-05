@@ -80,6 +80,7 @@ def run(ep_dir, cfg, provider="agent", plan_file=None):
                 plan = json.load(f)
             if plan.get("version") != 1:
                 raise RuntimeError(f"{plan_path} is not a v1 scene plan")
+            _validate_plan_durations(plan, turns)
             print(f"direct: using {source} plan ({len(plan['scenes'])} "
                   f"scenes): {plan_path}", flush=True)
             return plan_path
@@ -94,8 +95,39 @@ def run(ep_dir, cfg, provider="agent", plan_file=None):
         plan_file=plan_file or None)
     # Generated plans always land in the working copy — never overwrite
     # the reviewed episode-root plan via the fallback path.
+    # Validate: every scene duration must match its turns' measured durations
+    # within 1 frame (0.033s). Reject the plan if not — do not render bad sync.
+    _validate_plan_durations(plan, turns)
     plan_path = os.path.join(work, "scene_plan.json")
     with open(plan_path, "w", encoding="utf-8") as f:
         json.dump(plan, f, indent=1)
     print(f"direct: {len(plan['scenes'])} scenes -> {plan_path}", flush=True)
     return plan_path
+
+
+def _validate_plan_durations(plan, turns):
+    """Reject scene plans with estimated durations. Every scene's duration_sec
+    must equal the sum of its turns' duration_sec within 1 frame."""
+    FPS = 30
+    errors = []
+    for s in plan.get("scenes", []):
+        lo, hi = s["turns"][0], s["turns"][1]
+        expected = sum(turns[i]["duration_sec"] for i in range(lo, hi + 1))
+        actual = s["duration_sec"]
+        drift = abs(actual - expected)
+        if drift >= 1 / FPS:
+            errors.append(
+                f"{s['id']}: duration {actual:.3f}s != turns sum "
+                f"{expected:.3f}s (drift {drift:.3f}s >= 1 frame)")
+        # Also validate segments if present
+        if "segments" in s:
+            seg_sum = sum(g["duration_sec"] for g in s["segments"])
+            if abs(seg_sum - actual) >= 1 / FPS:
+                errors.append(
+                    f"{s['id']}: segments sum {seg_sum:.3f}s != "
+                    f"scene duration {actual:.3f}s")
+    if errors:
+        raise RuntimeError(
+            "direct: scene plan REJECTED — duration mismatches:\n" +
+            "\n".join(errors) +
+            "\nCopy durations EXACTLY from the turn list. Do not estimate.")
