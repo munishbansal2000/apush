@@ -327,6 +327,15 @@ def compile_scene_plan(plan_path, assets_dir, out_mp4,
         raise PlanError(f"assets dir not found: {assets_dir!r}")
 
     plan = _load_plan(plan_path)
+    # Visual-quality lint: fail-fast on broken rendering (overlapping text,
+    # overrunning overlays, unreadable pacing) before any frame renders.
+    # Warns print; errors raise like any other structural problem.
+    from lint_plan import lint_plan
+    lint_errors, lint_warns = lint_plan(plan)
+    for w in lint_warns:
+        print(f"lint warn: {w}", file=sys.stderr)
+    if lint_errors:
+        raise PlanError("visual lint failed:\n  " + "\n  ".join(lint_errors))
     scenes = []
     seen = set()
     for i, spec in enumerate(plan["scenes"]):
