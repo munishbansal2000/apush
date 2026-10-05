@@ -23,6 +23,11 @@ Voices: voice model ids live in voices.yaml next to this script. Fill them in
 once from the Fish Audio dashboard (a voice's model id). The script refuses to
 render until both are set.
 
+Models: the Fish model defaults to voices.yaml's `model` (s2.1-pro-free, the
+free tier). Override per-run with --fish-model. Paid models (s2.1-pro) are
+refused unless --allow-paid-fish-model is passed; unknown models are refused
+outright. Same policy as the proven podcast-pipeline renderer.
+
 Turn audio is cached by content hash, so re-running after a script tweak only
 re-synthesizes changed turns. Use --rebuild to force everything.
 
@@ -45,6 +50,13 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 FISH_TTS_URL = "https://api.fish.audio/v1/tts"
 FISH_HOST = ("api.fish.audio",)
+
+# Model policy, mirroring the proven podcast-pipeline renderer
+# (single-audit-made-simple/tools/podcast-pipeline/tools/render_audio.py):
+# free models always OK, paid models need --allow-paid-fish-model, anything
+# else is rejected before a single paid request can go out.
+FREE_FISH_MODELS = {"s2.1-pro-free"}
+PAID_FISH_MODELS = {"s2.1-pro"}
 
 TURN_RE = re.compile(r"^(Maya|Marcus):\s*(.*)$", re.S)
 PAUSE_RE = re.compile(r"\[(\d+)-second pause\]")
@@ -214,6 +226,12 @@ def main():
                     help="Also write every segment as tNN.mp3 (t00, t01, ...) "
                          "into this dir for the video pipeline's timing stage. "
                          "Segment indices match --list-turns order.")
+    ap.add_argument("--fish-model", default=None,
+                    help="Fish Audio model (default: voices.yaml 'model', "
+                         "s2.1-pro-free). Paid models need --allow-paid-fish-model.")
+    ap.add_argument("--allow-paid-fish-model", action="store_true",
+                    help="Explicitly acknowledge charges when using a paid "
+                         "Fish model (s2.1-pro).")
     args = ap.parse_args()
 
     script = Path(args.script)
@@ -228,7 +246,19 @@ def main():
         return
 
     voices = load_voices(Path(args.voices))
-    model = voices.get("model", "s2.1-pro-free")
+    model = args.fish_model or voices.get("model", "s2.1-pro-free")
+    if model in FREE_FISH_MODELS:
+        pass
+    elif model in PAID_FISH_MODELS and args.allow_paid_fish_model:
+        pass
+    else:
+        allowed = ", ".join(sorted(FREE_FISH_MODELS | PAID_FISH_MODELS))
+        if model in PAID_FISH_MODELS:
+            raise SystemExit(
+                f"Model '{model}' is a paid Fish model: re-run with "
+                "--allow-paid-fish-model to acknowledge the charges.")
+        raise SystemExit(
+            f"Unknown Fish model '{model}'. Allowed: {allowed}.")
     synth = make_synthesizer(model)
 
     out = Path(args.out) if args.out else script.with_suffix(".mp3")

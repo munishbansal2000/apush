@@ -2,10 +2,14 @@
 """Render all Unit 1 episode turn audio via Fish Audio (Maya/Marcus voices).
 
 Uses the expanded render_episode.py command set, verified against
-`render_episode.py --help`:
+`render_episode.py --help` and the proven podcast-pipeline renderer
+(single-audit-made-simple/tools/podcast-pipeline/tools/render_audio.py):
   --list-turns   preflight: parse the script, report segment count, no API calls
   --script       approved episode script (required)
   --voices       voice model ids (default: voices.yaml next to render_episode.py)
+  --fish-model   Fish model override (default: voices.yaml model, s2.1-pro-free)
+  --allow-paid-fish-model
+                 required to use a paid model (s2.1-pro); unknown models refused
   --out          mixed episode MP3
   --turns-dir    per-segment tNN.mp3 files for the video pipeline's timing
                  stage + refit_durations.py (existing files are replaced)
