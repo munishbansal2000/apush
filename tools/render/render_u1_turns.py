@@ -30,6 +30,7 @@ import sys
 _HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.normpath(os.path.join(_HERE, os.pardir, os.pardir))
 RENDER = os.path.join(_HERE, "render_episode.py")
+VOICES = os.path.join(_HERE, "voices.yaml")
 TSS = os.path.expanduser("~/workspace/your_files/tts-scripts/fishperf")
 
 # episode -> (script file, turns-dir slug); scripts are the finals.
@@ -95,7 +96,7 @@ def main(argv):
         out = os.path.join(tdir, f"{slug}-mixed.mp3")
         print(f"[{ep}] rendering -> {out}")
         r = subprocess.run(
-            [sys.executable, RENDER, "--script", script,
+            [sys.executable, RENDER, "--script", script, "--voices", VOICES,
              "--out", out, "--turns-dir", tdir] + rebuild)
         if r.returncode != 0:
             raise SystemExit(f"[{ep}] render failed (exit {r.returncode})")
