@@ -35,6 +35,33 @@ def _solid(slide, w, h, t, spec):
     return C.solid(w, h, spec["color"])
 
 
+@background("parchment")
+def _parchment(slide, w, h, t, spec):
+    """Light paper texture for Heimler-style review slides.
+    Warm off-white with subtle grain and vignette — never blank."""
+    c = _cache(slide)
+    if "frame" not in c:
+        # warm paper base
+        base = np.full((h, w, 3), (245, 240, 230), dtype=np.uint8)
+        # subtle grain
+        rng = np.random.default_rng(7)
+        grain = rng.integers(-8, 9, size=(h // 4, w // 4, 1), dtype=np.int16)
+        grain = np.repeat(np.repeat(grain, 4, axis=0), 4, axis=1)[:, :, :]
+        if grain.shape[0] > h:
+            grain = grain[:h]
+        if grain.shape[1] > w:
+            grain = grain[:, :w]
+        # pad if needed
+        gh, gw = grain.shape[:2]
+        if gh < h or gw < w:
+            pad_h, pad_w = h - gh, w - gw
+            grain = np.pad(grain, ((0, pad_h), (0, pad_w), (0, 0)), mode='edge')
+        frame = np.clip(base.astype(np.int16) + grain, 0, 255).astype(np.uint8)
+        frame = C.vignette(frame, 0.25)
+        c["frame"] = frame
+    return c["frame"].copy()
+
+
 @background("gradient")
 def _gradient(slide, w, h, t, spec):
     c = _cache(slide)

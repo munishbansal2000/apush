@@ -330,6 +330,138 @@ class BulletSlide(Slide):
         return to_np(pil)
 
 
+@slide('reveal')
+class RevealSlide(Slide):
+    """Heimler-style reveal slide: title banner + numbered points that
+    TYPE IN one by one, with cut-away/resume support.
+
+    The pattern: show point 1 typing in -> CUT to historic image/animation
+    while narrator discusses it -> CUT BACK to this slide (point 1 still
+    visible) -> type point 2 -> CUT to another image -> etc.
+
+    points: list of dicts, each with:
+        text: the point text (required)
+        at: time in seconds when TYPING STARTS, relative to slide start.
+            If negative, the point is FULLY VISIBLE from frame 0
+            (already revealed in a previous visit). (required)
+        sub: optional sub-bullet text (appears after parent finishes typing)
+        sub_at: optional override for when sub starts (default: after parent)
+    title: banner title text
+    chars_per_sec: typewriter speed (default 28)
+    bg: background spec (default: light parchment Heimler style)
+
+    Deterministic: frame(t) depends only on t and the point timings.
+    To resume: create a new RevealSlide with earlier points' at < 0.
+    """
+
+    def __init__(self, title, points, duration=10.0, chars_per_sec=28,
+                 banner_fill=(211, 47, 47), bg=None, cfg=None):
+        # Default to light parchment Heimler style
+        if bg is None:
+            bg = {"type": "parchment"}
+        super().__init__(duration, bg, cfg)
+        self.title = title
+        self.points = points
+        self.chars_per_sec = chars_per_sec
+        self.banner_fill = banner_fill
+
+    def _visible_chars(self, text, at, t):
+        """How many characters of text are visible at time t."""
+        if at < 0:
+            return len(text)  # already revealed
+        if t < at:
+            return 0
+        elapsed = t - at
+        n = int(elapsed * self.chars_per_sec)
+        return min(n, len(text))
+
+    def frame(self, t):
+        w, h = self.cfg.w, self.cfg.h
+        frame = self.bg_frame(t)
+        pil = to_pil(frame)
+        d = ImageDraw.Draw(pil, "RGBA")
+
+        # Red banner title (Heimler style)
+        banner_h = int(h * 0.14)
+        banner_y = int(h * 0.06)
+        banner_x0 = int(w * 0.08)
+        banner_x1 = int(w * 0.92)
+        # banner with slight shadow
+        d.rectangle([banner_x0 + 4, banner_y + 4, banner_x1 + 4,
+                     banner_y + banner_h + 4], fill=(0, 0, 0, 60))
+        d.rectangle([banner_x0, banner_y, banner_x1, banner_y + banner_h],
+                    fill=self.banner_fill + (255,))
+        # title text centered in banner
+        tsize = int(h * 0.07)
+        font = get_font(tsize, bold=True)
+        bbox = d.textbbox((0, 0), self.title, font=font)
+        tw = bbox[2] - bbox[0]
+        tx = (banner_x0 + banner_x1 - tw) // 2
+        ty = banner_y + (banner_h - (bbox[3] - bbox[1])) // 2 - bbox[1]
+        d.text((tx, ty), self.title, font=font, fill=(0, 0, 0, 255))
+
+        # Numbered points with typewriter effect
+        y = banner_y + banner_h + int(h * 0.08)
+        num_size = int(h * 0.055)
+        sub_size = int(h * 0.045)
+        num_font = get_font(num_size, bold=True)
+        text_font = get_font(num_size, bold=False)
+        sub_font = get_font(sub_size, bold=False)
+
+        for i, p in enumerate(self.points):
+            text = p["text"]
+            at = p["at"]
+            n_chars = self._visible_chars(text, at, t)
+            if n_chars <= 0:
+                continue
+
+            # Number label "1."
+            num_text = f"{i + 1}."
+            d.text((w * 0.12, y), num_text, font=num_font,
+                   fill=(150, 40, 40, 255))
+            num_bbox = d.textbbox((0, 0), num_text, font=num_font)
+            num_w = num_bbox[2] - num_bbox[0]
+            text_x = w * 0.12 + num_w + 20
+
+            # Typed text (with cursor if still typing)
+            visible = text[:n_chars]
+            d.text((text_x, y), visible, font=text_font, fill=(30, 30, 30, 255))
+            if 0 < n_chars < len(text):
+                # blinking cursor
+                if int(t * 2) % 2 == 0:
+                    cursor_x = text_x + d.textlength(visible, font=text_font)
+                    d.rectangle([cursor_x, y + 8, cursor_x + 4, y + num_size],
+                                fill=(30, 30, 30, 255))
+
+            # Measure height for next point
+            text_bbox = d.textbbox((0, 0), text, font=text_font)
+            line_h = text_bbox[3] - text_bbox[1] + int(h * 0.03)
+            y += line_h
+
+            # Sub-bullet (appears after parent is fully typed)
+            sub = p.get("sub", "")
+            if sub:
+                sub_at = p.get("sub_at", None)
+                if sub_at is None:
+                    # default: after parent finishes typing
+                    parent_done = at + len(text) / self.chars_per_sec if at >= 0 else 0
+                    sub_at = parent_done + 0.3
+                sub_chars = self._visible_chars(sub, sub_at, t)
+                if sub_chars > 0:
+                    bullet_x = w * 0.16
+                    d.ellipse([bullet_x, y + 18, bullet_x + 12, y + 30],
+                              fill=(30, 30, 30, 255))
+                    sub_visible = sub[:sub_chars]
+                    d.text((bullet_x + 24, y), sub_visible, font=sub_font,
+                           fill=(20, 20, 20, 255))
+                    sub_bbox = d.textbbox((0, 0), sub, font=sub_font)
+                    y += (sub_bbox[3] - sub_bbox[1]) + int(h * 0.04)
+
+            y += int(h * 0.02)
+
+        return to_np(pil)
+
+
 @slide('steps')
 class StepsSlide(Slide):
     """Numbered points: big accent numerals, staggered reveal.
@@ -856,14 +988,12 @@ class DisplayHeadline(Slide):
         return frame
 
 
-def _paper_line_img(tokens, size, hl_fill=(229, 45, 39),
-                    ink=(24, 22, 20)):
-    """Paper-style text line -> (text_img, swash_img).
+def _paper_line_img(tokens, size, hl_fill=(229, 45, 39)):
+    """Black paper-style text line -> (text_img, swash_img).
 
-    **bold** uses the bold face. ==highlight== spans sit on a red
+    **bold** uses the bold face. ==highlight== spans are black on a red
     marker swash; swashes live on their own layer so a slide can wipe
-    them in separately. ink is the (r, g, b) text color: paper-black
-    by default, pass a light ink for dark backgrounds.
+    them in separately.
     """
     f_reg = get_font(size, bold=False)
     f_bld = get_font(size, bold=True)
@@ -887,7 +1017,7 @@ def _paper_line_img(tokens, size, hl_fill=(229, 45, 39),
             runs.append(tuple(cur))
             cur = None
         d.text((x, y0), w + " ", font=f_bld if b else f_reg,
-               fill=tuple(ink) + (255,))
+               fill=(24, 22, 20, 255))
         x += tw
     if cur is not None:
         runs.append((cur[0], x))
@@ -917,8 +1047,7 @@ def _paper_line_img(tokens, size, hl_fill=(229, 45, 39),
     return text_img, swash_img
 
 
-def _paper_block(text, size, max_w, hl_fill=(229, 45, 39),
-                 ink=(24, 22, 20)):
+def _paper_block(text, size, max_w, hl_fill=(229, 45, 39)):
     """Wrapped paper text -> list of (text_img, swash_img) per line."""
     tokens = _rich_tokens(text)
     f_bld = get_font(size, bold=True)
@@ -934,8 +1063,7 @@ def _paper_block(text, size, max_w, hl_fill=(229, 45, 39),
         cw += tw
     if cur:
         lines.append(cur)
-    return [_paper_line_img(ln, size, hl_fill, ink)
-            for ln in lines or [[]]]
+    return [_paper_line_img(ln, size, hl_fill) for ln in lines or [[]]]
 
 
 _PAPER_BG = {"type": "gradient", "top": (247, 243, 233), "bottom": (230, 223, 205)}
@@ -1085,23 +1213,13 @@ class HighlightSlide(Slide):
 
     text: paragraph with **bold** / ==highlight== markers; lines stagger
     in and each marker swash wipes on after its line lands.
-    ink: (r, g, b) text color, paper-black by default; pass a light
-    ink (e.g. [236, 230, 218]) when the bg is dark.
     card: optional {"image": path, "caption": "..."} — a tilted photo card
     pinned top-right with a caption bar, like the review-video cutaway.
     """
 
     def __init__(self, text, card=None, duration=None, bg=None, stagger=0.8,
-                 cfg=None, ink=None):
+                 cfg=None):
         bg = _PAPER_BG if bg is None else bg
-        if ink is None:
-            ink = (24, 22, 20)
-        ink = tuple(ink)
-        if len(ink) != 3 or not all(
-                isinstance(c, int) and 0 <= c <= 255 for c in ink):
-            raise ValueError(
-                f"ink must be (r, g, b) ints 0-255, got {ink!r}")
-        self.ink = ink
         self.text = text
         self.card = card
         self.stagger = stagger
@@ -1115,8 +1233,7 @@ class HighlightSlide(Slide):
         if self._lines is None:
             h, w = self.cfg.h, self.cfg.w
             max_w = w * (0.56 if self.card else 0.86)
-            self._lines = _paper_block(self.text, int(h * 0.058), max_w,
-                                       ink=self.ink)
+            self._lines = _paper_block(self.text, int(h * 0.058), max_w)
             # record each line's fractional geometry so overlays (e.g.
             # Magnifier) can target text instead of guessing coordinates
             self._line_boxes = []
@@ -1178,7 +1295,7 @@ class HighlightSlide(Slide):
             self._register_text(
                 f"line:{i}",
                 (lb["x0"] * w, lb["y0"] * h, lb["x1"] * w, lb["y1"] * h),
-                self.ink, int(h * 0.058))
+                (35, 32, 28), int(h * 0.058))
         x0, y = w * 0.07, h * (0.30 if self.card else 0.24)
         for i, (timg, simg) in enumerate(self._lines):
             e = a01(t, 0.4 + i * self.stagger, 0.5)
@@ -1701,7 +1818,10 @@ class StaggerSlide(Slide):
     panels: list of dicts, each with:
         image: path or numpy array (required)
         label: text below the panel (optional)
-        at: entrance time in seconds, relative to slide start (required)
+        at: time in seconds, relative to slide start, when the panel must be
+            FULLY VISIBLE (settled). The entrance animation starts
+            entrance_dur seconds earlier, so the visual lands exactly on
+            the spoken word. (required)
         from: "left" | "right" | "top" | "bottom" (default "bottom")
         face_top: if True, crop portrait images from the top to keep faces
                   visible (default False)
@@ -1794,13 +1914,16 @@ class StaggerSlide(Slide):
         n = len(self._prepared)
         for i, p in enumerate(self._prepared):
             # entrance progress: 0 (waiting) -> 1 (settled)
-            k = a01(t, p["at"], self.entrance_dur, ease=smooth)
+            # "at" means FULLY VISIBLE by this time; entrance starts earlier
+            k = a01(t, p["at"] - self.entrance_dur, self.entrance_dur, ease=smooth)
             if k <= 0:
                 continue
             dx, dy = p["dir"]
-            # slide from off-screen
-            ox = int(dx * (1 - k) * w * 0.6)
-            oy = int(dy * (1 - k) * h * 0.8)
+            # slide from just off-screen: offset by panel size (not screen size)
+            # so the panel is visible throughout the entrance, not hidden
+            # for the first half of the animation
+            ox = int(dx * (1 - k) * (p["pw"] + 40))
+            oy = int(dy * (1 - k) * (p["ph"] + 40))
             x0 = i * p["pw"] + ox
             y0 = p["py"] + oy
 
@@ -1822,9 +1945,9 @@ class StaggerSlide(Slide):
                 frame[dy0:dy0 + (sy1 - sy0),
                       dx0:dx0 + (sx1 - sx0)] = img[sy0:sy1, sx0:sx1]
 
-            # label fades in as panel settles
+            # label fades in as panel settles (during entrance, not after)
             if p["label"] and k > 0.4:
-                le = a01(t, p["at"] + self.entrance_dur * 0.4,
+                le = a01(t, p["at"] - self.entrance_dur * 0.6,
                          self.entrance_dur * 0.6)
                 if le > 0:
                     pil = to_pil(frame)
