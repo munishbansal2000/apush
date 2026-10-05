@@ -1,0 +1,33 @@
+# Normalize line endings: LF in repo and worktree on all platforms.
+* text=auto eol=lf
+
+# Explicit text types (ensures correct diff/merge treatment).
+*.py text
+*.json text
+*.md text
+*.txt text
+*.yml text
+*.yaml text
+*.toml text
+*.cfg text
+*.ini text
+*.js text
+*.ts text
+*.html text
+*.css text
+*.xml text
+
+# Binary assets: never touch line endings.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.gif binary
+*.mp3 binary
+*.wav binary
+*.mp4 binary
+*.mov binary
+*.ttf binary
+*.otf binary
+*.pdf binary
+*.zip binary

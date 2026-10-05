@@ -91,3 +91,57 @@ def test_timing_persists_mix_recipe(tmp_path):
     model = mix_turns.mix_model_total(
         [t["dur"] for t in data["turns"]], 1.8, 0.6, 4.5)
     assert abs(data["computed_total"] - model) < 0.01
+
+
+def test_pause_turn_renders_local_silence(tmp_path):
+    turns = [{"speaker": "pause", "duration_sec": 0.5, "text": ""}]
+    tts = str(tmp_path / "tts")
+    ett.synthesize_turns(turns, tts,
+                         synth=_boom)  # must not touch the voice
+    out = os.path.join(tts, "t00.mp3")
+    assert os.path.getsize(out) > 1000
+    probe = subprocess.run(
+        ["ffprobe", "-v", "error", "-show_entries",
+         "format=duration", "-of", "csv=p=0", out],
+        capture_output=True, text=True, check=True)
+    assert abs(float(probe.stdout.strip()) - 0.5) < 0.15
+
+
+def test_pause_without_duration_fails_fast(tmp_path):
+    with pytest.raises(ValueError, match="duration_sec"):
+        ett.synthesize_turns([{"speaker": "pause", "text": ""}],
+                             str(tmp_path / "tts"), synth=_boom)
+
+
+def _boom(text, voice, out, rate):
+    raise AssertionError("pause must not call the voice synth")
+
+
+def test_onset_finds_leading_silence_end(tmp_path):
+    from stages import timing as timing_mod
+    out = str(tmp_path / "lead.mp3")
+    subprocess.run(
+        ["ffmpeg", "-y", "-v", "error", "-f", "lavfi",
+         "-i", "anullsrc=r=44100:cl=stereo:d=0.8", "-f", "lavfi",
+         "-i", "sine=frequency=440:duration=0.8",
+         "-filter_complex", "[0:a][1:a]concat=n=2:v=0:a=1",
+         "-c:a", "libmp3lame", out],
+        check=True)
+    assert abs(timing_mod.speech_onset(out) - 0.8) < 0.25
+
+
+def test_onset_ignores_midfile_pause(tmp_path):
+    # Speech-first file with a mid-file pause: onset is 0, not the
+    # pause end (regression: returned 6.82s inside a 9.10s turn).
+    from stages import timing as timing_mod
+    out = str(tmp_path / "mid.mp3")
+    subprocess.run(
+        ["ffmpeg", "-y", "-v", "error", "-f", "lavfi",
+         "-i", "sine=frequency=440:duration=0.6", "-f", "lavfi",
+         "-i", "anullsrc=r=44100:cl=stereo:d=0.5", "-f", "lavfi",
+         "-i", "sine=frequency=440:duration=0.6",
+         "-filter_complex",
+         "[0:a][1:a][2:a]concat=n=3:v=0:a=1",
+         "-c:a", "libmp3lame", out],
+        check=True)
+    assert timing_mod.speech_onset(out) == 0.0

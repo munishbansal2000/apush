@@ -12,11 +12,14 @@ Usage:
         [--rate +0%] [--force]
 
 script_turns.json: [{"speaker": "Maya", "text": "..."}, ...]
+A {"speaker": "pause", "duration_sec": N} turn renders N seconds
+of local silence (self-test beats never go to the voice).
 Unknown speakers fail fast (no silent default voice).
 """
 import asyncio
 import json
 import os
+import subprocess
 import sys
 
 DEFAULT_VOICES = {
@@ -46,6 +49,15 @@ async def _synth_edge(text, voice, out, rate):
     await edge_tts.Communicate(text, voice, rate=rate).save(out)
 
 
+def _synth_silence(dur, out):
+    """Render dur seconds of stereo silence to out (mp3)."""
+    subprocess.run(
+        ["ffmpeg", "-y", "-v", "error", "-f", "lavfi",
+         "-i", "anullsrc=r=44100:cl=stereo", "-t", str(dur),
+         "-c:a", "libmp3lame", out],
+        check=True)
+
+
 def synthesize_turns(turns, tts_dir, voices=None, rate="+0%", force=False,
                      synth=None):
     """Render every turn to tts_dir/tNN.mp3. Returns [paths].
@@ -60,8 +72,23 @@ def synthesize_turns(turns, tts_dir, voices=None, rate="+0%", force=False,
     paths = []
     for i, turn in enumerate(turns):
         speaker = turn["speaker"]
-        voice = voice_for(speaker, voices)
         out = os.path.join(tts_dir, turn_filename(i))
+        if speaker == "pause":
+            dur = turn.get("duration_sec")
+            if not isinstance(dur, (int, float)) or dur <= 0:
+                raise ValueError(
+                    f"turn {i}: pause needs duration_sec > 0")
+            if (not force and os.path.exists(out)
+                    and os.path.getsize(out) > 1000):
+                print(f"edge_tts: keep t{i:02d} (pause)",
+                      flush=True)
+            else:
+                _synth_silence(dur, out)
+                print(f"edge_tts: t{i:02d} (pause {dur}s)",
+                      flush=True)
+            paths.append(out)
+            continue
+        voice = voice_for(speaker, voices)
         if (not force and os.path.exists(out)
                 and os.path.getsize(out) > 1000):
             print(f"edge_tts: keep t{i:02d} ({speaker})", flush=True)

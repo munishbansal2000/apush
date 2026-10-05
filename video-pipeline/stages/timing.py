@@ -26,9 +26,13 @@ def mp3_duration(path):
 def speech_onset(path, noise_db=-40, min_dur=0.25):
     """Seconds from file start to first non-silent audio.
 
-    Uses silencedetect: the first silence_end after t=0 is the onset. If the
-    file starts with speech (no leading silence), onset is 0. Returns 0.0 on
-    any parse failure (fail-open to old behavior, never blocks the build).
+    Uses silencedetect: the end of the LEADING silence (the
+    silence_end whose silence_start is 0) is the onset. A bare
+    first-silence_end match is wrong for files that begin with
+    speech: it returns a mid-file pause end as the onset (seen
+    live: onset 6.82s in a 9.10s turn). Returns 0.0 when the file
+    starts with speech or on any parse failure (fail-open, never
+    blocks the build).
     """
     try:
         r = subprocess.run(
@@ -37,8 +41,14 @@ def speech_onset(path, noise_db=-40, min_dur=0.25):
              "-f", "null", "-"],
             capture_output=True, text=True, timeout=120)
         out = r.stderr
-        # leading silence looks like: silence_start: 0 ... silence_end: 0.83
-        m = re.search(r"silence_end:\s*([\d.]+)", out)
+        # leading silence: silence_start: 0 ... silence_end: 0.83.
+        # Only the pair anchored at 0 counts; later pairs are
+        # mid-file pauses, not the onset.
+        starts = [m.start() for m in
+                re.finditer(r"silence_start:\s*0(\.0+)?(\s|\|)", out)]
+        if not starts:
+            return 0.0
+        m = re.search(r"silence_end:\s*([\d.]+)", out[starts[0]:])
         if m:
             return round(float(m.group(1)), 3)
         return 0.0

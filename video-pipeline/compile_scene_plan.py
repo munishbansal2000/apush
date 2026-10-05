@@ -67,11 +67,15 @@ SLIDE_TYPES = {
     "recallslide": _slides.RecallSlide,
     "spectrumslide": _slides.SpectrumSlide,
     "eracardslide": _slides.EraCardSlide,
+    "staggerslide": _slides.StaggerSlide,
+    "tacticalslide": _slides.TacticalSlide,
+    "revealslide": _slides.RevealSlide,
     "sketchslide": _sketch.SketchSlide,
     # Not in the original 18, but present in the library: the old pipeline's
     # word-chain beats (causalchain) and pre-rendered clip beats (vidslide,
     # pipeline-local so slideforge/ stays pristine).
     "causalchain": _slides.CausalChainSlide,
+    "causalchainslide": _slides.CausalChainSlide,  # schema-name alias
     "vidslide": ClipScene,
 }
 
@@ -100,6 +104,7 @@ IMAGE_PARAM_PATHS = {
     "duoslide": ["left.image", "right.image"],
     "highlightslide": ["card.image"],
     "collageslide": ["cards.*.image"],
+    "staggerslide": ["panels.*.image"],
     # vidslide's clip file resolves like an image (repo-relative, no escapes).
     "vidslide": ["src"],
 }

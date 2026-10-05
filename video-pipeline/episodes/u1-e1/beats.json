@@ -1,0 +1,12 @@
+{
+ "tts_dir": "tts",
+ "audio": "u1e1-mix.mp3",
+ "audio_build": "python ../../edge_tts_turns.py script_turns.json tts && python ../../mix_turns.py tts tts/u1e1-mix.mp3",
+ "offset": 1.8,
+ "gap": 0.6,
+ "tail": 4.5,
+ "width": 1920,
+ "height": 1080,
+ "fps": 30,
+ "notes": "u1-e1 marquee (58 slots: 56 dialogue + 2 self-test pauses). audio_build voices Edge test dialogue and mixes with the house recipe (1.8s offset, 0.6s gaps, 4.5s tail). Final render swaps Edge for Fish Maya/Marcus."
+}
