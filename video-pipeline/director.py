@@ -41,7 +41,7 @@ DisplayPointsSlide, DisplayHeadline, CompareSlide, HighlightSlide,
 CollageSlide, TitleCardSlide, DuoSlide, ImageSlide, SplitSlide, QuoteSlide,
 StatSlide, KenBurnsSlide, CalloutSlide, MapZoomSlide, RouteSlide,
 TerritorySlide, RecallSlide, SpectrumSlide, SketchSlide, CausalChainSlide,
-VidSlide, EraCardSlide.
+VidSlide, EraCardSlide, StaggerSlide, TacticalSlide.
 Overlays: keywordpop (giant outlined term), caption, lowerthird
 (name+role), sticker (cutout photo), regionglow (pulsing map tint).
 
@@ -60,6 +60,18 @@ VISUAL GRAMMAR — follow it exactly:
   silver flows, "500 settlers to 60").
 - BulletSlide / StepsSlide for spoken enumerations — bullets reveal
   staggered, paced to the narration, never all at once.
+- StaggerSlide when the narration NAMES 2-4 items in sequence (e.g. "Three
+  boxes: maize, Iroquois, wilderness" or "Southwest, Plains, Northeast").
+  Each panel enters FROM the direction of its position as its name is SPOKEN.
+  Set each panel's "at" to the word-time when the name is spoken (measure via
+  Vosk word_timing, or estimate from turn position — never guess blindly).
+  Panels: {"image": manifest path, "label": "...", "at": seconds, "from":
+  "left"|"right"|"top"|"bottom"}. Use "face_top": true for portrait images.
+- TacticalSlide for battles/ambushes with two forces: {"blue_label": "...",
+  "red_label": "...", "red_start": seconds when surrounding begins,
+  "red_end": seconds when surround completes, "title": "..."}. Blue dots hold
+  position (the ambushed force); red dots animate inward over the time window.
+  Deterministic seeded placement — same inputs, same output.
 - DisplayPointsSlide / DisplayHeadline for section headers and big numbered
   points. TitleSlide opens the episode; TitleCardSlide works as a
   chapter card ("Greetings from ..."). EraCardSlide is the designed title
@@ -82,7 +94,11 @@ VISUAL GRAMMAR — follow it exactly:
   carry meaning the narration does not also state.
 - One scene per narration beat; scene duration_sec MUST equal the spoken
   audio duration of the turns it covers (the compiler muxes the real audio
-  over the rendered video, so drift breaks sync). Default transition "cut"
+  over the rendered video, so drift breaks sync). COPY durations EXACTLY from
+  the turn list above — do not round, estimate, or "clean up" the numbers.
+  If turns [3,8] have durations 4.3+13.7+5.2+10.3+3.5+9.8, the scene duration
+  is 46.8, not 47, not 45. The compiler REJECTS any scene whose duration
+  differs from its turns' sum by >= 1 frame (0.033s). Default transition "cut"
   (trans_dur 0) unless a crossfade is motivated.
 - Every scene MUST carry "turns": [first_turn_index, last_turn_index]
   (0-based, inclusive). The scenes' turns ranges must partition ALL script

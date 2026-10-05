@@ -1,261 +1,263 @@
 {
-  "$id": "https://github.com/munishbansal2000/apush/video-pipeline/scene_plan_schema.json",
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "description": "Reviewable LLM-director output. The director PLANS (may call a model); compile_scene_plan.py COMPILES deterministically \u2014 no network, no LLM at render time. Same plan + same assets -> same mp4.",
-  "properties": {
-    "episode": {
-      "description": "e.g. u1-e2",
-      "type": "string"
-    },
-    "movie_overlays": {
-      "default": [],
-      "description": "overlays attached to the whole movie (e.g. a timeline ribbon across all scenes)",
-      "items": {
-        "properties": {
-          "at": {
-            "items": {
-              "type": "number"
-            },
-            "maxItems": 2,
-            "minItems": 2,
-            "type": "array"
-          },
-          "color": {
-            "items": {
-              "type": "integer"
-            },
-            "maxItems": 3,
-            "minItems": 3,
-            "type": "array"
-          },
-          "duration": {
-            "exclusiveMinimum": 0,
-            "type": "number"
-          },
-          "image": {
-            "description": "repo-relative path, resolved like other images",
-            "type": "string"
-          },
-          "label": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          },
-          "position": {
-            "type": "string"
-          },
-          "role": {
-            "type": "string"
-          },
-          "shape": {
-            "type": "string"
-          },
-          "size": {
-            "type": "number"
-          },
-          "start": {
-            "minimum": 0,
-            "type": "number"
-          },
-          "text": {
-            "type": "string"
-          },
-          "type": {
-            "enum": [
-              "keywordpop",
-              "caption",
-              "lowerthird",
-              "sticker",
-              "regionglow",
-              "timelineribbon"
-            ]
-          },
-          "word": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "type"
-        ],
-        "type": "object"
-      },
-      "type": "array"
-    },
-    "notes": {
-      "description": "director's free-text rationale (optional, ignored by the compiler)",
-      "type": "string"
-    },
-    "scenes": {
-      "items": {
-        "properties": {
-          "duration_sec": {
-            "exclusiveMinimum": 0,
-            "type": "number"
-          },
-          "id": {
-            "description": "unique scene id, e.g. scene-03",
-            "type": "string"
-          },
-          "overlays": {
-            "default": [],
-            "items": {
-              "properties": {
-                "at": {
-                  "items": {
-                    "type": "number"
-                  },
-                  "maxItems": 2,
-                  "minItems": 2,
-                  "type": "array"
-                },
-                "color": {
-                  "items": {
-                    "type": "integer"
-                  },
-                  "maxItems": 3,
-                  "minItems": 3,
-                  "type": "array"
-                },
-                "duration": {
-                  "exclusiveMinimum": 0,
-                  "type": "number"
-                },
-                "image": {
-                  "description": "repo-relative path, resolved like other images",
-                  "type": "string"
-                },
-                "label": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "position": {
-                  "type": "string"
-                },
-                "role": {
-                  "type": "string"
-                },
-                "shape": {
-                  "type": "string"
-                },
-                "size": {
-                  "type": "number"
-                },
-                "start": {
-                  "minimum": 0,
-                  "type": "number"
-                },
-                "text": {
-                  "type": "string"
-                },
-                "type": {
-                  "enum": [
-                    "keywordpop",
-                    "caption",
-                    "lowerthird",
-                    "sticker",
-                    "regionglow",
-                    "timelineribbon"
-                  ]
-                },
-                "word": {
-                  "type": "string"
-                }
-              },
-              "required": [
-                "type"
-              ],
-              "type": "object"
-            },
-            "type": "array"
-          },
-          "params": {
-            "description": "constructor kwargs for the slide type. Image-bearing values are repo-relative paths resolved against the assets dir (absolute paths rejected). RouteSlide accepts 'route' (a bundled route name like columbus_1492) instead of map_image+waypoints. VidSlide accepts 'src' (a finished clip under the assets dir, e.g. clips/pueblo-drift.mp4); the clip's duration must match duration_sec within 1s.",
-            "type": "object"
-          },
-          "slide": {
-            "description": "one of the 25 slideforge slide types (case-insensitive)",
-            "enum": [
-              "TitleSlide",
-              "BulletSlide",
-              "StepsSlide",
-              "DisplayPointsSlide",
-              "DisplayHeadline",
-              "CompareSlide",
-              "HighlightSlide",
-              "CollageSlide",
-              "TitleCardSlide",
-              "DuoSlide",
-              "ImageSlide",
-              "SplitSlide",
-              "QuoteSlide",
-              "StatSlide",
-              "KenBurnsSlide",
-              "CalloutSlide",
-              "MapZoomSlide",
-              "RouteSlide",
-              "CausalChainSlide",
-              "VidSlide",
-              "TerritorySlide",
-              "RecallSlide",
-              "SpectrumSlide",
-              "SketchSlide",
-              "EraCardSlide"
-            ],
-            "type": "string"
-          },
-          "trans_dur": {
-            "default": 0,
-            "minimum": 0,
-            "type": "number"
-          },
-          "transition": {
-            "default": "cut",
-            "enum": [
-              "crossfade",
-              "wipe",
-              "slide",
-              "dip",
-              "zoom",
-              "cut"
-            ],
-            "type": "string"
-          },
-          "turns": {
-            "description": "0-based inclusive [first, last] script-turn indices this scene covers. Scenes must partition all turns contiguously (no gaps, no overlaps); the compiler enforces it.",
-            "items": {
-              "minimum": 0,
-              "type": "integer"
-            },
-            "maxItems": 2,
-            "minItems": 2,
-            "type": "array"
-          }
-        },
-        "required": [
-          "id",
-          "slide",
-          "duration_sec",
-          "turns"
-        ],
-        "type": "object"
-      },
-      "minItems": 1,
-      "type": "array"
-    },
-    "version": {
-      "const": 1,
-      "type": "integer"
-    }
+ "$id": "https://github.com/munishbansal2000/apush/video-pipeline/scene_plan_schema.json",
+ "$schema": "http://json-schema.org/draft-07/schema#",
+ "description": "Reviewable LLM-director output. The director PLANS (may call a model); compile_scene_plan.py COMPILES deterministically \u2014 no network, no LLM at render time. Same plan + same assets -> same mp4.",
+ "properties": {
+  "episode": {
+   "description": "e.g. u1-e2",
+   "type": "string"
   },
-  "required": [
-    "version",
-    "episode",
-    "scenes"
-  ],
-  "title": "APUSH slideforge scene plan",
-  "type": "object",
-  "version": 1
+  "movie_overlays": {
+   "default": [],
+   "description": "overlays attached to the whole movie (e.g. a timeline ribbon across all scenes)",
+   "items": {
+    "properties": {
+     "at": {
+      "items": {
+       "type": "number"
+      },
+      "maxItems": 2,
+      "minItems": 2,
+      "type": "array"
+     },
+     "color": {
+      "items": {
+       "type": "integer"
+      },
+      "maxItems": 3,
+      "minItems": 3,
+      "type": "array"
+     },
+     "duration": {
+      "exclusiveMinimum": 0,
+      "type": "number"
+     },
+     "image": {
+      "description": "repo-relative path, resolved like other images",
+      "type": "string"
+     },
+     "label": {
+      "type": "string"
+     },
+     "name": {
+      "type": "string"
+     },
+     "position": {
+      "type": "string"
+     },
+     "role": {
+      "type": "string"
+     },
+     "shape": {
+      "type": "string"
+     },
+     "size": {
+      "type": "number"
+     },
+     "start": {
+      "minimum": 0,
+      "type": "number"
+     },
+     "text": {
+      "type": "string"
+     },
+     "type": {
+      "enum": [
+       "keywordpop",
+       "caption",
+       "lowerthird",
+       "sticker",
+       "regionglow",
+       "timelineribbon"
+      ]
+     },
+     "word": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "type"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "notes": {
+   "description": "director's free-text rationale (optional, ignored by the compiler)",
+   "type": "string"
+  },
+  "scenes": {
+   "items": {
+    "properties": {
+     "duration_sec": {
+      "exclusiveMinimum": 0,
+      "type": "number"
+     },
+     "id": {
+      "description": "unique scene id, e.g. scene-03",
+      "type": "string"
+     },
+     "overlays": {
+      "default": [],
+      "items": {
+       "properties": {
+        "at": {
+         "items": {
+          "type": "number"
+         },
+         "maxItems": 2,
+         "minItems": 2,
+         "type": "array"
+        },
+        "color": {
+         "items": {
+          "type": "integer"
+         },
+         "maxItems": 3,
+         "minItems": 3,
+         "type": "array"
+        },
+        "duration": {
+         "exclusiveMinimum": 0,
+         "type": "number"
+        },
+        "image": {
+         "description": "repo-relative path, resolved like other images",
+         "type": "string"
+        },
+        "label": {
+         "type": "string"
+        },
+        "name": {
+         "type": "string"
+        },
+        "position": {
+         "type": "string"
+        },
+        "role": {
+         "type": "string"
+        },
+        "shape": {
+         "type": "string"
+        },
+        "size": {
+         "type": "number"
+        },
+        "start": {
+         "minimum": 0,
+         "type": "number"
+        },
+        "text": {
+         "type": "string"
+        },
+        "type": {
+         "enum": [
+          "keywordpop",
+          "caption",
+          "lowerthird",
+          "sticker",
+          "regionglow",
+          "timelineribbon"
+         ]
+        },
+        "word": {
+         "type": "string"
+        }
+       },
+       "required": [
+        "type"
+       ],
+       "type": "object"
+      },
+      "type": "array"
+     },
+     "params": {
+      "description": "constructor kwargs for the slide type. Image-bearing values are repo-relative paths resolved against the assets dir (absolute paths rejected). RouteSlide accepts 'route' (a bundled route name like columbus_1492) instead of map_image+waypoints. VidSlide accepts 'src' (a finished clip under the assets dir, e.g. clips/pueblo-drift.mp4); the clip's duration must match duration_sec within 1s.",
+      "type": "object"
+     },
+     "slide": {
+      "description": "one of the 25 slideforge slide types (case-insensitive)",
+      "enum": [
+       "TitleSlide",
+       "BulletSlide",
+       "StepsSlide",
+       "DisplayPointsSlide",
+       "DisplayHeadline",
+       "CompareSlide",
+       "HighlightSlide",
+       "CollageSlide",
+       "TitleCardSlide",
+       "DuoSlide",
+       "ImageSlide",
+       "SplitSlide",
+       "QuoteSlide",
+       "StatSlide",
+       "KenBurnsSlide",
+       "CalloutSlide",
+       "MapZoomSlide",
+       "RouteSlide",
+       "CausalChainSlide",
+       "VidSlide",
+       "TerritorySlide",
+       "RecallSlide",
+       "SpectrumSlide",
+       "SketchSlide",
+       "EraCardSlide",
+       "StaggerSlide",
+       "TacticalSlide"
+      ],
+      "type": "string"
+     },
+     "trans_dur": {
+      "default": 0,
+      "minimum": 0,
+      "type": "number"
+     },
+     "transition": {
+      "default": "cut",
+      "enum": [
+       "crossfade",
+       "wipe",
+       "slide",
+       "dip",
+       "zoom",
+       "cut"
+      ],
+      "type": "string"
+     },
+     "turns": {
+      "description": "0-based inclusive [first, last] script-turn indices this scene covers. Scenes must partition all turns contiguously (no gaps, no overlaps); the compiler enforces it.",
+      "items": {
+       "minimum": 0,
+       "type": "integer"
+      },
+      "maxItems": 2,
+      "minItems": 2,
+      "type": "array"
+     }
+    },
+    "required": [
+     "id",
+     "slide",
+     "duration_sec",
+     "turns"
+    ],
+    "type": "object"
+   },
+   "minItems": 1,
+   "type": "array"
+  },
+  "version": {
+   "const": 1,
+   "type": "integer"
+  }
+ },
+ "required": [
+  "version",
+  "episode",
+  "scenes"
+ ],
+ "title": "APUSH slideforge scene plan",
+ "type": "object",
+ "version": 1
 }
