@@ -1,6 +1,6 @@
 {
  "episode": "u1-e7",
- "notes": "Director's cut for U1-E7 'The Valladolid Debate' (script v3, Maya+Marcus debate format). 14 scenes. Each scene carries a 'turns' [start, end] partition of the 48 TTS segments (t00..t47, including the two 5s self-test silences) — run refit_durations.py against the rendered turns dir to replace the estimated duration_sec values with measured sums (the mix is a straight concat, so this is exact). Visual grammar: KeywordPops on the exam terms; ImageSlides with period engravings for the Short Account, the Black Legend irony, and the Potosí mines; dimmed Taos Pueblo behind Las Casas's 'ordered peoples'; HighlightSlide for the never-printed Democrates; StepsSlide recap; DisplayHeadline Q&A; QuoteSlide closing tagline. Debate-attribution rule: every beat stating a debatable position names its claimant (LAS CASAS / SEPULVEDA) in the text itself. No blank backgrounds. Eyes-closed-safe.",
+ "notes": "Director's cut for U1-E7 'The Valladolid Debate' (script v3, Maya+Marcus debate format). 14 scenes. Each scene carries a 'turns' [start, end] partition of the 48 TTS segments (t00..t47, including the two 5s self-test silences) \u2014 run refit_durations.py against the rendered turns dir to replace the estimated duration_sec values with measured sums (the mix is a straight concat, so this is exact). Visual grammar: KeywordPops on the exam terms; ImageSlides with period engravings for the Short Account, the Black Legend irony, and the Potos\u00ed mines; dimmed Taos Pueblo behind Las Casas's 'ordered peoples'; HighlightSlide for the never-printed Democrates; StepsSlide recap; DisplayHeadline Q&A; QuoteSlide closing tagline. Debate-attribution rule: every beat stating a debatable position names its claimant (LAS CASAS / SEPULVEDA) in the text itself. No blank backgrounds. Eyes-closed-safe.",
  "scenes": [
   {
    "duration_sec": 29,
@@ -9,7 +9,7 @@
     "bg": {
      "path": "images/original-u1-lascasas-portrait-01.jpg"
     },
-    "subtitle": "Episode 7 — the debate format. Maya tracks three boxes.",
+    "subtitle": "Episode 7 \u2014 the debate format. Maya tracks three boxes.",
     "title": "The Valladolid Debate"
    },
    "slide": "titleslide",
@@ -28,7 +28,7 @@
      "type": "textured"
     },
     "headline": "The empire puts itself on trial",
-    "sub": "Valladolid, 1550 — the crown asks: can conquest ever be just?"
+    "sub": "Valladolid, 1550 \u2014 the crown asks: can conquest ever be just?"
    },
    "slide": "displayheadline",
    "trans_dur": 0.5,
@@ -36,6 +36,21 @@
    "turns": [
     1,
     3
+   ],
+   "overlays": [
+    {
+     "type": "sticker",
+     "image": "images/sepulveda.jpg",
+     "at": [
+      0.86,
+      0.82
+     ],
+     "size": 0.18,
+     "shape": "rect",
+     "start": 4.0,
+     "duration": 8.0,
+     "label": "SEP\u00daLVEDA"
+    }
    ]
   },
   {
@@ -48,6 +63,19 @@
      "start": 4.0,
      "type": "keywordpop",
      "word": "rational souls"
+    },
+    {
+     "type": "sticker",
+     "image": "images/aristotle.jpg",
+     "at": [
+      0.86,
+      0.82
+     ],
+     "size": 0.18,
+     "shape": "rect",
+     "start": 4.0,
+     "duration": 8.0,
+     "label": "ARISTOTLE"
     }
    ],
    "params": {
@@ -56,9 +84,9 @@
      "path": "images/original-u1-native-09.jpg"
     },
     "points": [
-     "**BOX ONE · LAS CASAS'S CASE**",
-     "**LAS CASAS** — the Native peoples are rational souls: fully capable of the Christian faith and of governing themselves",
-     "**LAS CASAS** — no natural slaves in his America: ordered peoples, with towns and laws and customs"
+     "**BOX ONE \u00b7 LAS CASAS'S C",
+     "**LAS CASAS** \u2014 the Nativ",
+     "**LAS CASAS** \u2014 no natura"
     ]
    },
    "slide": "displaypointsslide",
@@ -81,7 +109,7 @@
     }
    ],
    "params": {
-    "caption": "Village by village: the mines, the burnings, the forced labor — testimony from a man who'd watched it",
+    "caption": "Village by village: the mines, the burnings, the forced labor \u2014 testimony from a man who'd watched it",
     "image": "images/barrons-2027-ch03-03.jpg",
     "title": "The Short Account, 1542"
    },
@@ -106,7 +134,7 @@
     }
    ],
    "params": {
-    "caption": "Written to move the Spanish king — translated by English and Dutch printers as proof of Spanish cruelty",
+    "caption": "Written to move the Spanish king \u2014 translated by English and Dutch printers as proof of Spanish cruelty",
     "image": "images/original-ctx-u1-05.jpg",
     "title": "The irony"
    },
@@ -125,8 +153,8 @@
     "bg": {
      "type": "textured"
     },
-    "headline": "BOX TWO · SEPULVEDA'S CASE",
-    "sub": "The empire's lawyer — who never crossed the Atlantic"
+    "headline": "BOX TWO \u00b7 SEPULVEDA'S CASE",
+    "sub": "The empire's lawyer \u2014 who never crossed the Atlantic"
    },
    "slide": "displayheadline",
    "trans_dur": 0.5,
@@ -134,6 +162,21 @@
    "turns": [
     13,
     15
+   ],
+   "overlays": [
+    {
+     "type": "sticker",
+     "image": "images/debry-hispaniola-mines.jpg",
+     "at": [
+      0.5,
+      0.88
+     ],
+     "size": 0.18,
+     "shape": "rect",
+     "start": 4.0,
+     "duration": 8.0,
+     "label": "MINES"
+    }
    ]
   },
   {
@@ -143,7 +186,7 @@
     {
      "duration": 8.0,
      "start": 2.0,
-     "text": "Reporting the argument — not endorsing it",
+     "text": "Reporting the argument \u2014 not endorsing it",
      "type": "caption"
     },
     {
@@ -152,6 +195,19 @@
      "start": 34.0,
      "type": "keywordpop",
      "word": "homunculi"
+    },
+    {
+     "type": "sticker",
+     "image": "images/charles-v.jpg",
+     "at": [
+      0.86,
+      0.82
+     ],
+     "size": 0.18,
+     "shape": "rect",
+     "start": 12.0,
+     "duration": 8.0,
+     "label": "CHARLES V"
     }
    ],
    "params": {
@@ -159,9 +215,9 @@
      "type": "textured"
     },
     "points": [
-     "**SEPULVEDA'S CLAIM · SLAVES BY NATURE**",
-     "**SEPULVEDA (via Aristotle)** — some peoples are slaves by nature, born to be ruled",
-     "**SEPULVEDA** — the Native peoples fit the description: 'homunculi,' little men, scarcely a trace of humanity"
+     "**SEPULVEDA'S CLAIM \u00b7 SLA",
+     "**SEPULVEDA (via Aristotl",
+     "**SEPULVEDA** \u2014 the Nativ"
     ]
    },
    "slide": "displaypointsslide",
@@ -179,7 +235,7 @@
     "bg": {
      "type": "textured"
     },
-    "text": "Democrates alter was ==never printed in Spain== during Sepulveda's lifetime — Las Casas helped make sure of that. But the argument ==circulated anyway==: the conquistadors bought it, and out in the colonies it was the excuse everyone already wanted."
+    "text": "Democrates alter was ==never printed in Spain==. But the argument ==circulated anyway==."
    },
    "slide": "highlightslide",
    "trans_dur": 0.5,
@@ -197,10 +253,10 @@
      "type": "textured"
     },
     "points": [
-     "**THE JUST-WAR CLAIM**",
-     "**SEPULVEDA** — idolatry and human sacrifice offended natural law; a war that ended them was mercy, not cruelty",
-     "**SEPULVEDA** — conquest brings the true faith and real law to people who can't govern themselves: order through conquest",
-     "**LAS CASAS'S ANSWER** — the faith had to be offered, never forced; force only made fake Christians"
+     "**THE JUST-WAR CLAIM** \u2014 ",
+     "**SEPULVEDA** \u2014 idolatry ",
+     "**SEPULVEDA** \u2014 conquest ",
+     "**LAS CASAS'S ANSWER** \u2014 "
     ]
    },
    "slide": "displaypointsslide",
@@ -219,7 +275,7 @@
      "type": "textured"
     },
     "headline": "The verdict that wasn't",
-    "sub": "1550 into 1551 — the judges scattered without issuing a ruling"
+    "sub": "1550 into 1551 \u2014 the judges scattered without issuing a ruling"
    },
    "slide": "displayheadline",
    "trans_dur": 0.5,
@@ -227,6 +283,21 @@
    "turns": [
     24,
     26
+   ],
+   "overlays": [
+    {
+     "type": "sticker",
+     "image": "images/leyes-nuevas.jpg",
+     "at": [
+      0.5,
+      0.88
+     ],
+     "size": 0.18,
+     "shape": "rect",
+     "start": 4.0,
+     "duration": 8.0,
+     "label": "1542"
+    }
    ]
   },
   {
@@ -241,7 +312,7 @@
     }
    ],
    "params": {
-    "caption": "The encomienda survived, the mines kept running — but the question survived: the seed of natural-rights language",
+    "caption": "The encomienda survived, the mines kept running \u2014 but the question survived: the seed of natural-rights language",
     "image": "images/gap-g-v02-1-potosi-mitayos-debry.jpg",
     "title": "On the ground, almost nothing changed"
    },
@@ -262,11 +333,11 @@
      "type": "textured"
     },
     "steps": [
-     "**LAS CASAS'S CASE** — rational souls, capable of faith and self-government. The Short Account, written 1542. And the irony: his book became Black Legend fuel.",
-     "**SEPULVEDA'S CASE** — Aristotle's natural slaves (his claim); Democrates alter never printed in Spain; just war: end idolatry, bring order.",
-     "**THE VERDICT THAT WASN'T** — 1550 into 1551, no ruling, both sides claimed victory. On the ground almost nothing changed — but the question survived."
+     "**LAS CASAS'S CASE** \u2014 rationa",
+     "**SEPULVEDA'S CASE** \u2014 Aristot",
+     "**THE VERDICT THAT WASN'T** \u2014 "
     ],
-    "title": "Three boxes — check them off"
+    "title": "Three boxes \u2014 check them off"
    },
    "slide": "stepsslide",
    "trans_dur": 0.6,
@@ -283,8 +354,20 @@
     {
      "duration": 10.0,
      "start": 2.0,
-     "text": "Q1: the 'homunculi' dialogue — whose case, and what's the claim?",
+     "text": "Q1: the 'homunculi' dialogue \u2014 whose case, and what's the claim?",
      "type": "caption"
+    },
+    {
+     "type": "sticker",
+     "image": "images/white-secotan-village-1585.jpg",
+     "at": [
+      0.86,
+      0.82
+     ],
+     "size": 0.18,
+     "shape": "rect",
+     "start": 14.0,
+     "duration": 8.0
     }
    ],
    "params": {
@@ -292,7 +375,7 @@
      "type": "textured"
     },
     "headline": "Two questions, AP-shaped",
-    "sub": "Say your answer before Maya gives it — then check your three boxes"
+    "sub": "Say your answer before Maya gives it \u2014 then check your three boxes"
    },
    "slide": "displayheadline",
    "trans_dur": 0,
@@ -309,7 +392,7 @@
     "bg": {
      "type": "textured"
     },
-    "byline": "Episode 7 · Next: 1680 — the Pueblo Revolt",
+    "byline": "Episode 7 \u00b7 Next: 1680 \u2014 the Pueblo Revolt",
     "quote": "An empire asked whether its conquest could be just. The question outlived the empire."
    },
    "slide": "quoteslide",

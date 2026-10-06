@@ -391,21 +391,14 @@ class RevealSlide(Slide):
                      banner_y + banner_h + 4], fill=(0, 0, 0, 60))
         d.rectangle([banner_x0, banner_y, banner_x1, banner_y + banner_h],
                     fill=self.banner_fill + (255,))
-        # title text centered in banner (white Heimler type)
+        # title text centered in banner
         tsize = int(h * 0.07)
         font = get_font(tsize, bold=True)
         bbox = d.textbbox((0, 0), self.title, font=font)
         tw = bbox[2] - bbox[0]
-        while tw > (banner_x1 - banner_x0) * 0.94 and tsize > 12:
-            tsize -= 2
-            font = get_font(tsize, bold=True)
-            bbox = d.textbbox((0, 0), self.title, font=font)
-            tw = bbox[2] - bbox[0]
         tx = (banner_x0 + banner_x1 - tw) // 2
         ty = banner_y + (banner_h - (bbox[3] - bbox[1])) // 2 - bbox[1]
         d.text((tx, ty), self.title, font=font, fill=(255, 255, 255, 255))
-        self._register_text("title", (tx, ty, tx + tw, ty + bbox[3]),
-                            (255, 255, 255), tsize)
 
         # Numbered points with typewriter effect
         y = banner_y + banner_h + int(h * 0.08)
@@ -422,67 +415,28 @@ class RevealSlide(Slide):
             if n_chars <= 0:
                 continue
 
-            # WORLD-CLASS: Number badge (circle with number) instead of plain "1."
-            # Badge pops in with the point
-            num_text = f"{i + 1}"
-            badge_r = int(num_size * 0.75)
-            badge_cx = int(w * 0.12 + badge_r)
-            _asc, _desc = text_font.getmetrics()
-            _lh = _asc + _desc
-            badge_cy = int(y + _lh // 2)
-            # Badge entrance: scale in
-            badge_k = a01(t, at, 0.3, ease=ease_out_back) if at >= 0 else 1.0
-            if badge_k > 0:
-                br = int(badge_r * (0.5 + 0.5 * min(badge_k, 1.0)))
-                if br > 0:
-                    # Shadow
-                    d.ellipse([badge_cx - br + 2, badge_cy - br + 2,
-                               badge_cx + br + 2, badge_cy + br + 2],
-                              fill=(0, 0, 0, 50))
-                    # Badge circle (red)
-                    d.ellipse([badge_cx - br, badge_cy - br,
-                               badge_cx + br, badge_cy + br],
-                              fill=(150, 40, 40, int(255 * min(badge_k, 1.0))))
-                    # Number in white
-                    if badge_k >= 0.7:
-                        nb = d.textbbox((0, 0), num_text, font=num_font)
-                        nw, nh = nb[2] - nb[0], nb[3] - nb[1]
-                        d.text((badge_cx - nw // 2, badge_cy - nh // 2 - 2),
-                               num_text, font=num_font, fill=(255, 255, 255, 255))
-            num_w = badge_r * 2
+            # Number label "1."
+            num_text = f"{i + 1}."
+            d.text((w * 0.12, y), num_text, font=num_font,
+                   fill=(150, 40, 40, 255))
+            num_bbox = d.textbbox((0, 0), num_text, font=num_font)
+            num_w = num_bbox[2] - num_bbox[0]
             text_x = w * 0.12 + num_w + 20
 
-            # Typed text, wrapped: reveal runs across stable full-text
-            # lines (no reflow jitter), cursor on the last partial line.
-            max_w = w * 0.90 - text_x
-            full_lines = C.wrap_text(d, text, text_font, max_w)
-            asc, desc = text_font.getmetrics()
-            lh = asc + desc
-            left = n_chars
-            cy = y
-            cursor_done = True
-            for ln in full_lines:
-                frag = ln[:max(0, left)]
-                if frag:
-                    d.text((text_x, cy), frag, font=text_font,
-                           fill=(30, 30, 30, 255))
-                left -= len(ln) + 1  # +1: the wrapped space
-                if left < 0 and cursor_done:
-                    cursor_done = False
-                    if 0 < n_chars < len(text) and int(t * 2) % 2 == 0:
-                        cx = text_x + d.textlength(frag, font=text_font)
-                        d.rectangle([cx, cy + 8, cx + 4, cy + num_size],
-                                    fill=(30, 30, 30, 255))
-                cy += lh + int(h * 0.008)
-                if left < 0:
-                    break
-            self._register_text("point:%d" % i,
-                                (text_x, y, w * 0.90, cy),
-                                (30, 30, 30), num_size)
-            self._register_text("num:%d" % i,
-                                (w * 0.12, y, text_x - 20, y + lh),
-                                (150, 40, 40), num_size)
-            y = cy + int(h * 0.02)
+            # Typed text (with cursor if still typing)
+            visible = text[:n_chars]
+            d.text((text_x, y), visible, font=text_font, fill=(30, 30, 30, 255))
+            if 0 < n_chars < len(text):
+                # blinking cursor
+                if int(t * 2) % 2 == 0:
+                    cursor_x = text_x + d.textlength(visible, font=text_font)
+                    d.rectangle([cursor_x, y + 8, cursor_x + 4, y + num_size],
+                                fill=(30, 30, 30, 255))
+
+            # Measure height for next point
+            text_bbox = d.textbbox((0, 0), text, font=text_font)
+            line_h = text_bbox[3] - text_bbox[1] + int(h * 0.03)
+            y += line_h
 
             # Sub-bullet (appears after parent is fully typed)
             sub = p.get("sub", "")
@@ -497,26 +451,11 @@ class RevealSlide(Slide):
                     bullet_x = w * 0.16
                     d.ellipse([bullet_x, y + 18, bullet_x + 12, y + 30],
                               fill=(30, 30, 30, 255))
-                    sub_lines = C.wrap_text(d, sub, sub_font,
-                                            w * 0.90 - bullet_x - 24)
-                    asc2, desc2 = sub_font.getmetrics()
-                    lh2 = asc2 + desc2
-                    sleft = sub_chars
-                    sy = y
-                    for sln in sub_lines:
-                        frag = sln[:max(0, sleft)]
-                        if frag:
-                            d.text((bullet_x + 24, sy), frag,
-                                   font=sub_font,
-                                   fill=(20, 20, 20, 255))
-                        sleft -= len(sln) + 1
-                        sy += lh2 + int(h * 0.008)
-                        if sleft < 0:
-                            break
-                    self._register_text("sub:%d" % i,
-                                        (bullet_x + 24, y, w * 0.90, sy),
-                                        (20, 20, 20), sub_size)
-                    y = sy + int(h * 0.02)
+                    sub_visible = sub[:sub_chars]
+                    d.text((bullet_x + 24, y), sub_visible, font=sub_font,
+                           fill=(20, 20, 20, 255))
+                    sub_bbox = d.textbbox((0, 0), sub, font=sub_font)
+                    y += (sub_bbox[3] - sub_bbox[1]) + int(h * 0.04)
 
             y += int(h * 0.02)
 
@@ -655,21 +594,8 @@ class DisplayPointsSlide(Slide):
     def _build_lines(self):
         size = int(self.cfg.h * 0.115)
         max_w = self.cfg.w * 0.86
-        lines = [_outlined_block(text, size, max_w)
-                 for text in self.points]
-        # Stack by measured height: wrapped blocks can be taller than a
-        # fixed slot, which used to overlap them. Shrink-to-fit keeps the
-        # whole stack inside the frame, below the title kicker when present.
-        self._gap = int(self.cfg.h * 0.06)
-        self._top = self.cfg.h * 0.17 if self.title else self.cfg.h * 0.06
-        total = sum(im.size[1] for im in lines) + self._gap * max(0, len(lines) - 1)
-        avail = self.cfg.h * 0.94 - self._top
-        if total > avail and total > 0:
-            s = avail / total
-            lines = [im.resize((max(1, int(im.size[0] * s)),
-                                max(1, int(im.size[1] * s))),
-                               Image.BILINEAR) for im in lines]
-        self._lines = lines
+        self._lines = [_outlined_block(text, size, max_w)
+                       for text in self.points]
 
     def validate(self):
         issues = super().validate()
@@ -692,18 +618,14 @@ class DisplayPointsSlide(Slide):
         if self._lines is None:
             self._build_lines()
         n = len(self._lines)
-        gap = self._gap
-        heights = [ln.size[1] for ln in self._lines]
-        total = sum(heights) + gap * max(0, n - 1)
-        y = self._top + (h * 0.94 - self._top - total) / 2
+        slot = h * 0.19
+        y0 = (h - slot * n) / 2
         for i, line in enumerate(self._lines):
             raw = a01(t, 0.5 + i * self.stagger, 0.5, ease=easing.ease_out_back)
-            top = y
-            y += heights[i] + gap
             if raw <= 0:
                 continue
             lw, lh = line.size
-            px, py = w * 0.08, top + (heights[i] - lh) / 2
+            px, py = w * 0.08, y0 + i * slot + (slot - lh) / 2
             self._register_text(f"point:{i}", (px, py, px + lw, py + lh),
                                 (255, 255, 255), int(h * 0.115))
             alpha = min(1.0, raw)
@@ -715,7 +637,7 @@ class DisplayPointsSlide(Slide):
                 a = a.point(lambda v: int(v * alpha))
                 nl = Image.merge("RGBA", (r, g, b, a))
             nlw, nlh = nl.size
-            px, py = w * 0.08, top + (heights[i] - nlh) / 2
+            px, py = w * 0.08, y0 + i * slot + (slot - nlh) / 2
             frame = paste_rgba(frame, np.array(nl), (px, py))
         return frame
 
@@ -886,16 +808,8 @@ class DuoSlide(Slide):
                                              int(pw), int(ph * 1.8))
                 lines = []
                 if panel.get("label"):
-                    # Shrink the font until the label fits the panel.
-                    # Crisp at build time (render-time rescaling blurred
-                    # long names); floor of 12px bounds the loop.
-                    size = int(h * 0.082)
-                    max_w = int(pw * 0.92)
-                    line = _outlined_line(panel["label"], size)
-                    while line.size[0] > max_w and size > 12:
-                        size = int(size * 0.9)
-                        line = _outlined_line(panel["label"], size)
-                    lines.append(line)
+                    lines.append(_outlined_line(panel["label"],
+                                                int(h * 0.082)))
                 self._built[side] = lines
             else:
                 self._built[side] = [_outlined_line(p, int(h * 0.078))
@@ -924,7 +838,7 @@ class DuoSlide(Slide):
                       ease=easing.ease_out_back)
             if raw <= 0:
                 continue
-            lw, lh = line.size  # settled art, pre-shrunk at build
+            lw, lh = line.size  # settled (unscaled) art
             lx = x0 + (pw - lw) / 2
             ly = y0 + ph - lh - self.cfg.h * 0.035
             self._register_text(f"{side}:label:{i}",
@@ -1458,6 +1372,17 @@ class CompareSlide(Slide):
                  banner_fill=(211, 47, 47), bg=None, cfg=None):
         bg = _PAPER_BG if bg is None else bg
         self.title = title
+        for name, col in (("left", left), ("right", right)):
+            if not isinstance(col, dict) or "head" not in col:
+                raise ValueError(
+                    f"CompareSlide {name} must be a dict with 'head' and "
+                    f"'sections' (e.g. {{'head': 'X', 'sections': "
+                    f"[{{'points': [...]}}]}}), got {col!r}")
+            for sec in col.get("sections", []):
+                if not isinstance(sec, dict) or "points" not in sec:
+                    raise ValueError(
+                        f"CompareSlide {name} section must be a dict with "
+                        f"'points' (and optional 'sub'), got {sec!r}")
         self.cols = [left, right]
         self.stagger = stagger
         self.banner_fill = banner_fill
@@ -1796,8 +1721,8 @@ class TitleCardSlide(Slide):
         super().__init__(duration, bg, cfg)
         self.title = title
         self.kicker = kicker
-        self.title_fill = title_fill
-        self.kicker_fill = kicker_fill
+        self.title_fill = tuple(title_fill)
+        self.kicker_fill = tuple(kicker_fill)
         self._built = None
 
     def _build(self):
@@ -1966,26 +1891,32 @@ class StaggerSlide(Slide):
 
         prepared = []
         for p in self.panels:
-            img = _as_image(p["image"])
-            # cover-crop to (pw, ph)
-            ih, iw = img.shape[:2]
-            tr = pw / ph
-            if iw / ih > tr:
-                nw = int(ih * tr)
-                x0 = (iw - nw) // 2
-                # face_top: for portraits, keep the top (face) — crop sides only
-                img = img[:, x0:x0 + nw]
-            else:
-                nh = int(iw / tr)
-                if p.get("face_top"):
-                    img = img[:nh, :]
+            if p.get("image"):
+                img = _as_image(p["image"])
+                # cover-crop to (pw, ph)
+                ih, iw = img.shape[:2]
+                tr = pw / ph
+                if iw / ih > tr:
+                    nw = int(ih * tr)
+                    x0 = (iw - nw) // 2
+                    # face_top: for portraits, keep the top (face) — crop sides only
+                    img = img[:, x0:x0 + nw]
                 else:
-                    y0 = (ih - nh) // 2
-                    img = img[y0:y0 + nh, :]
-            # resize to panel size
-            pil = to_pil(img).resize((pw, ph), Image.BILINEAR)
+                    nh = int(iw / tr)
+                    if p.get("face_top"):
+                        img = img[:nh, :]
+                    else:
+                        y0 = (ih - nh) // 2
+                        img = img[y0:y0 + nh, :]
+                # resize to panel size
+                pil = to_pil(img).resize((pw, ph), Image.BILINEAR)
+                img_arr = np.array(pil)
+            else:
+                # Text-only panel: dark placeholder
+                img_arr = np.zeros((ph, pw, 3), dtype=np.uint8)
+                img_arr[:] = (30, 28, 25)
             prepared.append({
-                "img": np.array(pil),
+                "img": img_arr,
                 "label": p.get("label", ""),
                 "at": p["at"],
                 "dir": self.DIRECTIONS.get(p.get("from", "bottom"), (0, 1)),
@@ -2016,45 +1947,25 @@ class StaggerSlide(Slide):
         for i, p in enumerate(self._prepared):
             # entrance progress: 0 (waiting) -> 1 (settled)
             # "at" means FULLY VISIBLE by this time; entrance starts earlier
-            # WORLD-CLASS: use ease_out_back for subtle overshoot (dynamic pop)
-            from .easing import ease_out_back
-            k = a01(t, p["at"] - self.entrance_dur, self.entrance_dur, ease=ease_out_back)
+            k = a01(t, p["at"] - self.entrance_dur, self.entrance_dur, ease=smooth)
             if k <= 0:
                 continue
-            # Clamp overshoot for position calc (k can exceed 1.0 with back easing)
-            kc = min(k, 1.0)
             dx, dy = p["dir"]
             # slide from just off-screen: offset by panel size (not screen size)
             # so the panel is visible throughout the entrance, not hidden
             # for the first half of the animation
-            ox = int(dx * (1 - kc) * (p["pw"] + 40))
-            oy = int(dy * (1 - kc) * (p["ph"] + 40))
+            ox = int(dx * (1 - k) * (p["pw"] + 40))
+            oy = int(dy * (1 - k) * (p["ph"] + 40))
             x0 = i * p["pw"] + ox
             y0 = p["py"] + oy
 
-            # WORLD-CLASS: scale from 0.92 -> 1.0 during entrance (subtle pop)
-            # Scale is applied to the panel image
-            scale = 0.92 + 0.08 * kc
-            img = p["img"]
-            if abs(scale - 1.0) > 0.001:
-                from PIL import Image as PILImage
-                pil_img = to_pil(img)
-                nw, nh = int(pil_img.width * scale), int(pil_img.height * scale)
-                if nw > 0 and nh > 0:
-                    pil_img = pil_img.resize((nw, nh), PILImage.BILINEAR)
-                    # Center the scaled image in the panel slot
-                    canvas = PILImage.new("RGB", (p["pw"], p["ph"]), (18, 18, 18))
-                    cx = (p["pw"] - nw) // 2
-                    cy = (p["ph"] - nh) // 2
-                    canvas.paste(pil_img, (cx, cy))
-                    img = np.array(canvas)
-
             # fade in during entrance
-            if kc < 1.0:
+            img = p["img"]
+            if k < 1.0:
                 # blend with background for fade effect
                 bg_patch = np.full_like(img, 18)  # dark bg
-                img = (img.astype(float) * kc +
-                       bg_patch.astype(float) * (1 - kc)).astype(np.uint8)
+                img = (img.astype(float) * k +
+                       bg_patch.astype(float) * (1 - k)).astype(np.uint8)
 
             # paste panel (clipped to canvas)
             ph, pw = img.shape[:2]
@@ -2067,7 +1978,7 @@ class StaggerSlide(Slide):
                       dx0:dx0 + (sx1 - sx0)] = img[sy0:sy1, sx0:sx1]
 
             # label fades in as panel settles (during entrance, not after)
-            if p["label"] and kc > 0.4:
+            if p["label"] and k > 0.4:
                 le = a01(t, p["at"] - self.entrance_dur * 0.6,
                          self.entrance_dur * 0.6)
                 if le > 0:
@@ -2084,7 +1995,7 @@ class StaggerSlide(Slide):
                     frame = to_np(pil)
 
             # divider between panels (once settled)
-            if i > 0 and kc >= 1.0:
+            if i > 0 and k >= 1.0:
                 div_x = i * p["pw"]
                 frame[p["py"]:p["py"] + p["ph"], div_x - 1:div_x + 1] = 70
 
@@ -3225,12 +3136,36 @@ class RecallSlide(Slide):
             d.rounded_rectangle([x, y, x + cw, y + chh], radius=14,
                                 fill=(16, 20, 32, int(230 * appear)),
                                 outline=(120, 140, 180, int(120 * appear)), width=2)
-            # text on its own layer so we can blur it
+            # text on its own layer so we can blur it (word-wrapped to the card)
+            f_ans = get_font(int(h * 0.040), bold=True)
+            meas = ImageDraw.Draw(Image.new("RGBA", (8, 8)))
+            max_tw = cw - 70
+            _words = ans.split()
+            _lines, _cur = [], ""
+            for _wd in _words:
+                _trial = (_cur + " " + _wd).strip()
+                if meas.textlength(_trial, font=f_ans) <= max_tw or not _cur:
+                    _cur = _trial
+                else:
+                    _lines.append(_cur)
+                    _cur = _wd
+            if _cur:
+                _lines.append(_cur)
+            _lh = int(h * 0.040 * 1.32)
+            # grow the card if wrapping needs more room (keep inside its slot)
+            _need = len(_lines) * _lh + 26
+            _ch = min(max(chh, _need), h * slot - 8)
+            _y = y + (chh - _ch) / 2
+            d.rounded_rectangle([x, _y, x + cw, _y + _ch], radius=14,
+                                fill=(16, 20, 32, int(230 * appear)),
+                                outline=(120, 140, 180, int(120 * appear)), width=2)
             layer = Image.new("RGBA", (w, h), (0, 0, 0, 0))
             dl = ImageDraw.Draw(layer)
-            dl.text((w / 2, y + chh / 2), ans,
-                    font=get_font(int(h * 0.040), bold=True), anchor="mm",
-                    fill=(235, 238, 245, int(255 * appear)))
+            _ty = _y + _ch / 2 - (len(_lines) - 1) * _lh / 2
+            for _ln in _lines:
+                dl.text((w / 2, _ty), _ln, font=f_ans, anchor="mm",
+                        fill=(235, 238, 245, int(255 * appear)))
+                _ty += _lh
             # number chip (stays sharp)
             d.ellipse([x - h * 0.032, y + chh / 2 - h * 0.032,
                        x - h * 0.032 + h * 0.064, y + chh / 2 + h * 0.032],

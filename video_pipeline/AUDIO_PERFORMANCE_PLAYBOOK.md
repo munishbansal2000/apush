@@ -27,12 +27,31 @@ Write for the ear first, then direct the performance like a human speaker.
 - Average 8–16 words per sentence (video playbook §4), but **vary the rhythm
   deliberately**: a short punch after a long build. Unvarying sentence length
   is the single most reliable marker of synthetic narration.
+- Mix very short sentences with medium ones; avoid long subordinate clauses.
+  If a sentence needs two commas to survive, split it.
 - Alternate compression with breath: claim, image, pause, consequence.
 - Prefer concrete nouns and active verbs. Introduce one unfamiliar term at a
   time.
-- In dialogue, allow human mess: backchannels ("mm," "right?"), one
-  self-correction per episode at most, uneven turn lengths. Never more than
-  one piece of mess per turn — real talk is messy, not chaotic.
+- Use contractions and spoken connectors ("so," "now," "here's the thing").
+  Write the way people talk, not the way essays read.
+- Spell out numbers, dates, and abbreviations the way you'd say them
+  ("eighteen sixty-one," not "1861"; "the Civil War," not "C.W.").
+- Ask a rhetorical question before a key point — it primes the ear for
+  what matters.
+- Repeat important ideas in slightly different words. The ear needs the
+  second pass; the eye doesn't.
+- In dialogue, allow human mess: backchannels ("mm," "right?"), a few light
+  fillers or reactions, one self-correction per episode at most, uneven turn
+  lengths. Never more than one piece of mess per turn — real talk is messy,
+  not chaotic. Too many fillers sound fake.
+
+## Punctuation before tags
+
+Commas, em dashes, ellipses, and paragraph breaks shape pacing better than
+explicit break tags — fix the punctuation first. Use `[pause]`-style break
+tags ONLY for deliberate dramatic beats (max 1 per beat; never stack).
+If a passage needs three tags to sound right, the sentences are wrong:
+rewrite the sentences, don't tag-wrestle them.
 
 ## Performance direction by engine
 
@@ -50,7 +69,7 @@ a reason is decoration.
 | `[inhale]` / `[exhale]` | Before long dramatic reads; at heavy beats | Inhale before, exhale after — a real speaker breathes |
 | `[chuckle]` / `[laughing]` | Where a joke landed | Only at genuine humor, never at victims or suffering |
 | `[sigh]` | Genuinely heavy beats (regret, irony, loss) | At most once or twice per episode; more is melodrama |
-| Emotion tags (`[fierce]`, `[quiet]`, `[pompous]`, `[solemn]`, `[dry]`, …) | Character voices and tonal shifts | One tag per turn; the host reacts in their own voice between characters |
+| Emotion tags (`[fierce]`, `[quiet]`, `[pompous]`, `[solemn]`, `[dry]`, …) | Character voices and tonal shifts | Only at real turning points — max ~1 per 3–5 sentences. Default is NO tag: let the model infer prosody from the words. A tag on every sentence makes delivery swing robotically. One tag per turn absolute max; the host reacts in their own voice between characters |
 | Character reads | Quoting historical actors | Shift delivery AND signpost: "this is, essentially, what he argued" |
 
 ### Edge (no SSML passthrough)
@@ -102,6 +121,16 @@ Before a lesson ships, its narration must pass:
    engine it will render on (Fish set vs. Edge set; never mixed).
 4. **Rhythm check** — no three consecutive sentences share a length band;
    at least one real silence per 90 seconds.
+
+## Render chunking (TTS calls)
+
+- Generate in paragraph-sized chunks: roughly 1–3 paragraphs per TTS call.
+  Very long inputs drift; single sentences lose context and sound choppy.
+- Keep generation settings (temperature/top_p) consistent across chunks so
+  the voice doesn't wander mid-episode.
+- Regenerate bad chunks instead of tag-wrestling them. If a chunk sounds
+  wrong twice, the text is wrong — rewrite it.
+- Chunk boundaries should fall on paragraph breaks, never mid-sentence.
 
 ## Enforcement
 

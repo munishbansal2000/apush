@@ -41,3 +41,6 @@ video-pipeline/episodes/*/tts/
 video-pipeline/episodes/*/work/timings.json
 video-pipeline/episodes/*/work/verify.json
 video-pipeline/episodes/*/work/director_prompt.txt
+# Downloaded image binaries are local QA only (images.json URLs are the
+# source of truth). Never commit these.
+video-pipeline/episodes/*/images/

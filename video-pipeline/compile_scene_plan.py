@@ -29,7 +29,12 @@ if _HERE not in sys.path:
     sys.path.insert(0, _HERE)
 
 from slideforge.timeline import Config, Movie  # noqa: E402
-from slideforge import slides as _slides  # noqa: E402
+from slideforge import slides as _slides
+try:
+    from slideforge import u5e1_custom as _u5e1
+    _HAS_U5E1_CUSTOM = True
+except ImportError:
+    _HAS_U5E1_CUSTOM = False  # noqa: E402
 from slideforge import sketch as _sketch  # noqa: E402
 from slideforge import overlays as _overlays  # noqa: E402
 from slideforge import routes as _routes  # noqa: E402
@@ -78,6 +83,11 @@ SLIDE_TYPES = {
     "causalchain": _slides.CausalChainSlide,
     "causalchainslide": _slides.CausalChainSlide,  # schema-name alias
     "vidslide": ClipScene,
+    # U5-E1 flagship custom scenes
+    "provisodetonation": _u5e1.ProvisoDetonationSlide if _HAS_U5E1_CUSTOM else None,
+    "pyramidbuild": _u5e1.PyramidBuildSlide if _HAS_U5E1_CUSTOM else None,
+    "senatescale": _u5e1.SenateScaleSlide if _HAS_U5E1_CUSTOM else None,
+    "tenpercent": _u5e1.TenPercentSlide if _HAS_U5E1_CUSTOM else None,
 }
 
 TRANSITIONS = {"crossfade", "wipe", "slide", "dip", "zoom", "cut"}

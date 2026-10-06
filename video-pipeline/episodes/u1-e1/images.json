@@ -1,49 +1,74 @@
 {
  "images": {
-  "river": {
-   "file": "images/mississippi-river.jpg",
-   "kind": "photo",
-   "credit": "Mississippi River aerial \u2014 Murray Foubister, CC BY-SA 2.0, via Wikimedia Commons"
+  "cahokia": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Cahokia_monks_mound_McAdams_1887.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File%3ACahokia_monks_mound_McAdams_1887.jpg",
+   "file": "images/cahokia-mcadams-1887.jpg",
+   "kind": "engraving",
+   "credit": "Monks Mound, Cahokia (McAdams 1887) \u2014 Public domain, via Wikimedia Commons"
   },
-  "cahokia-photo": {
-   "file": "images/cahokia-monks-mound.jpg",
-   "kind": "photo",
-   "credit": "Monks Mound, Cahokia \u2014 Skubasteve834, CC BY-SA 3.0, via Wikimedia Commons"
+  "bison-hunt": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Buffalo_Hunt_in_Snow_Shoes_by_George_Catlin%2C_undated%2C_oil_on_canvas_-_New_Britain_Museum_of_American_Art_-_DSC09169.JPG",
+   "page": "https://commons.wikimedia.org/wiki/File%3ABuffalo_Hunt_in_Snow_Shoes_by_George_Catlin%2C_undated%2C_oil_on_canvas_-_New_Britain_Museum_of_American_Art_-_DSC09169.JPG",
+   "file": "images/catlin-bison-hunt-snow.jpg",
+   "kind": "painting",
+   "credit": "Catlin, Buffalo Hunt in Snow Shoes \u2014 Public domain, via Wikimedia Commons"
   },
-  "pueblo-photo": {
-   "file": "images/taos-pueblo.jpg",
-   "kind": "photo",
-   "credit": "Taos Pueblo, 19th century \u2014 public domain, via Wikimedia Commons"
+  "prairie-riders": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/George_Catlin_-_Prairie_Meadows_Burning_-_1985.66.374_-_Smithsonian_American_Art_Museum.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File%3AGeorge_Catlin_-_Prairie_Meadows_Burning_-_1985.66.374_-_Smithsonian_American_Art_Museum.jpg",
+   "file": "images/catlin-prairie-fire-riders.jpg",
+   "kind": "painting",
+   "credit": "Catlin, Prairie Fire with Riders \u2014 Public domain, via Wikimedia Commons"
   },
-  "bison-photo": {
-   "file": "images/bison-herd.jpg",
-   "kind": "photo",
-   "credit": "Bison herd, Yellowstone \u2014 Szothner01, CC BY-SA 4.0, via Wikimedia Commons"
+  "prairie-burning": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Prairie_Meadows_Burning_G-001461-20111214.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File%3APrairie_Meadows_Burning_G-001461-20111214.jpg",
+   "file": "images/catlin-prairie-meadows-burning.jpg",
+   "kind": "painting",
+   "credit": "Catlin, Prairie Meadows Burning (1832) \u2014 Public domain, via Wikimedia Commons"
   },
-  "longhouse-photo": {
-   "file": "images/longhouse.jpg",
-   "kind": "photo",
-   "credit": "Longhouse reconstruction \u2014 Pierre5018, CC BY-SA 4.0, via Wikimedia Commons"
+  "maize": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Florida_Indians_planting_seeds_of_beans_or_maize_LCCN2001695741.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File%3AFlorida_Indians_planting_seeds_of_beans_or_maize_LCCN2001695741.jpg",
+   "file": "images/debry-maize-planting.jpg",
+   "kind": "engraving",
+   "credit": "De Bry, Florida Indians planting maize (1591) \u2014 Public domain, via Wikimedia Commons"
   },
-  "corn-photo": {
-   "file": "images/corn-field.jpg",
-   "kind": "photo",
-   "credit": "Cornfield \u2014 inkknife_2000, CC BY-SA 2.0, via Wikimedia Commons"
+  "mitchell": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Mitchell_Map-06full2.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File%3AMitchell_Map-06full2.jpg",
+   "file": "images/mitchell-map-1755.jpg",
+   "kind": "map",
+   "credit": "Mitchell Map of North America (1755) \u2014 Public domain, via Wikimedia Commons"
   },
-  "wampum-photo": {
-   "file": "images/wampum-belt.jpg",
+  "six-nations": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Chiefs_of_the_Six_Nations_at_Brantford%2C_Canada%2C_explaining_their_wampum_belts_to_Horatio_Hale_September_14%2C_1871.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File%3AChiefs_of_the_Six_Nations_at_Brantford%2C_Canada%2C_explaining_their_wampum_belts_to_Horatio_Hale_September_14%2C_1871.jpg",
+   "file": "images/six-nations-chiefs-1871.jpg",
    "kind": "photo",
-   "credit": "17th-c. wampum belt, Peabody Museum \u2014 Daderot, CC0, via Wikimedia Commons"
+   "credit": "Six Nations chiefs with wampum belts (1871) \u2014 Public domain, via Wikimedia Commons"
   },
-  "burn-photo": {
-   "file": "images/prairie-burn.jpg",
+  "secotan": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/North_carolina_algonkin-dorf.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File%3ANorth_carolina_algonkin-dorf.jpg",
+   "file": "images/white-secotan-village-1585.jpg",
+   "kind": "painting",
+   "credit": "John White, Secotan village (1585) \u2014 Public domain, via Wikimedia Commons"
+  },
+  "taos-pueblo": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Taos_Pueblo%2C_New_Mexico_LCCN2015651512.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File%3ATaos_Pueblo%2C_New_Mexico_LCCN2015651512.jpg",
+   "file": "images/taos-pueblo-clean.jpg",
    "kind": "photo",
-   "credit": "Grassland prescribed burn \u2014 USFWS, public domain, via Wikimedia Commons"
+   "credit": "Taos Pueblo (cropped) \u2014 Public domain, via Wikimedia Commons"
   },
-  "mound": {
-   "file": "images/media-generation-mound-section-0-212e75b6-5f12-49c1-8a43-747285d295eb.webp",
-   "kind": "generated",
-   "credit": "AI illustration \u2014 interpretive archaeological cross-section"
+  "wampum": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Wampum_belt%2C_Iroquois_and_Algonkian%2C_commemorating_peace_treaty_in_17th_century_-_Native_American_collection_-_Peabody_Museum%2C_Harvard_University_-_DSC05418.JPG",
+   "page": "https://commons.wikimedia.org/wiki/File%3AWampum_belt%2C_Iroquois_and_Algonkian%2C_commemorating_peace_treaty_in_17th_century_-_Native_American_collection_-_Peabody_Museum%2C_Harvard_University_-_DSC05418.JPG",
+   "file": "images/wampum-belt-clean.jpg",
+   "kind": "photo",
+   "credit": "Wampum belt (cropped) \u2014 Public domain, via Wikimedia Commons"
   }
  }
 }
