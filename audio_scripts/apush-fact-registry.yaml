@@ -1224,3 +1224,62 @@ facts:
     correct: "January 15, 1919: a molasses storage tank burst in Boston's North End, sending ~2.3 million gallons through the streets at ~35 mph; 21 killed. Usable as Maya's student-world 'knows something' beat — not exam content."
     falsehoods: []
     sources: [britannica]
+
+  - id: F-U2-047
+    topic: Whitefield's 1739-40 arrival — open-field crowds
+    correct: "George Whitefield first preached in the colonies in 1739-40, in open fields 'because no church building would hold the throngs he attracted' (Britannica). Born Dec 1714, so 'mid-twenties' is fair. Crowds of thousands confirmed in Tier 1 (5steps: 'attracted crowds of thousands... in the 1740s')."
+    falsehoods:
+      - "Whitefield (preached|spoke) (in|to) (church|churches)( |,)"
+      - "Whitefield('s)? first (visit|trip).*(1741|1742)"
+    sources: [britannica, 5steps]
+
+  - id: F-U2-048
+    topic: Newspaper crowd counts for Whitefield — attribute honestly
+    correct: "Crowd figures like 'twenty-five thousand in a field' must be attributed to newspaper accounts. The attribution is exactly honest: Franklin's Autobiography says 'This reconcil'd me to the newspaper accounts of his having preach'd to twentyfive thousand people in the fields.' Franklin himself attributes the figure to newspapers."
+    falsehoods:
+      - "(twenty|25).{0,20}thousand.{0,20}(without|no).{0,20}(attribution|newspaper)"
+    sources: [franklin_autobiography]
+
+  - id: F-U2-049
+    topic: Franklin's voice-range computation — from the Autobiography
+    correct: "Franklin's voice-range experiment is his own computation, from the Autobiography (public domain): he walked backward down Market Street from a Whitefield sermon, imagined a semicircle of auditors at two square feet each, and 'computed that he might well be heard by more than thirty thousand.' Header disclosure must name it as his computation from the Autobiography."
+    falsehoods:
+      - "Franklin (proved|measured|showed).{0,30}thirty thousand"
+    sources: [franklin_autobiography]
+
+  - id: F-U2-050
+    topic: Edwards's Enfield sermon — date and spider quote verbatim
+    correct: "Jonathan Edwards preached 'Sinners in the Hands of an Angry God' at Enfield, Connecticut, on July 8, 1741 (1741 printed sermon title page, public domain). The spider line is his verbatim wording: 'The God that holds you over the pit of hell, much as one holds a spider, or some loathsome insect, over the fire.' Header disclosure: 'his actual wording, from the 1741 printed sermon.'"
+    falsehoods:
+      - "Sinners in the Hands of an Angry God.{0,40}(1739|1740|1742)"
+      - "holds you over the pit.{0,20}(like|as).{0,20}(a|an) (spider|insect).{0,20}(reworded|paraphrase)"
+    sources: [primary_1741_sermon]
+
+  - id: F-U2-051
+    topic: Edwards 'read nearly flat' — disclosed reported account
+    correct: "The account that Edwards read the sermon 'nearly flat, barely looking up, while the congregation came apart' must be disclosed as reported ('the famous account says'), not stated as established fact. Corroborated by the Historic Northampton Museum: Edwards 'delivered his sermons in a controlled monotone.'"
+    falsehoods:
+      - "Edwards (shouted|roared|thundered).{0,20}Enfield"
+    sources: [historic_northampton]
+
+  - id: F-U2-052
+    topic: Northampton dismissal 1750 — communion cause
+    correct: "In 1750 Edwards's own congregation at Northampton dismissed him after he tightened who could take communion (requiring a profession of faith, reversing Stoddard's open policy). 'Voted him out' is a fair summary (council 10-9 to dissolve, congregation ratified). Verified via Historic Northampton Museum."
+    falsehoods:
+      - "Northampton.{0,20}(fired|dismissed).{0,20}(1749|1751|1752)"
+    sources: [historic_northampton]
+
+  - id: F-U2-053
+    topic: Junto 1727 and Poor Richard's Almanack 1732
+    correct: "Franklin founded the Junto in 1727 — a club of tradesmen ('leathern aprons') debating morals and politics, pooling books into what became the Library Company (1731). Poor Richard's Almanack ran from 1732 for twenty-five years (Autobiography). 'A penny saved is a penny earned' is from the Almanack (princeton ch.6)."
+    falsehoods:
+      - "Junto.{0,20}(1730|1740)"
+      - "Poor Richard.{0,20}(1725|1740)"
+    sources: [franklin_autobiography, princeton]
+
+  - id: F-U2-054
+    topic: "Most famous sermon in American history — attribute the superlative"
+    correct: "The superlative 'the most famous sermon in American history' (for 'Sinners in the Hands of an Angry God') must be attributed — 'what's often called the most famous sermon in American history' — never stated flat. Per F-U2-022 discipline: attributed labels, never flat facts."
+    falsehoods:
+      - "he preached the most famous sermon in American history"
+    sources: [web]
