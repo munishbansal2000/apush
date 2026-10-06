@@ -1,7 +1,7 @@
 {
  "episode": "u1-e9",
  "version": 1,
- "notes": "Director's cut for U1-E9 'Cram Session' (script v3, Maya+Marcus). 15 scenes. Each scene carries a 'turns' [start, end] partition of the 55 TTS turn files (t00..t54, including the two 5-second silence segments at t44 and t47) — run refit_durations.py against the rendered turns dir to replace the estimated duration_sec values with measured sums (the mix is a straight concat, so this is exact). Visual grammar: KeywordPops and captions restate spoken terms only; textured or dimmed-photo backgrounds, never blank; one scene per question or question-pair; stepsslide recap; quoteslide close. Eyes-closed-safe: narration never references the visuals.",
+ "notes": "Director's cut for U1-E9 'Cram Session' (script v3, Maya+Marcus). 15 scenes. Each scene carries a 'turns' [start, end] partition of the 55 TTS turn files (t00..t54, including the two 5-second silence segments at t44 and t47) \u2014 run refit_durations.py against the rendered turns dir to replace the estimated duration_sec values with measured sums (the mix is a straight concat, so this is exact). Visual grammar: KeywordPops and captions restate spoken terms only; textured or dimmed-photo backgrounds, never blank; one scene per question or question-pair; stepsslide recap; quoteslide close. Eyes-closed-safe: narration never references the visuals.",
  "scenes": [
   {
    "id": "scene-01",
@@ -18,7 +18,7 @@
      "path": "images/original-ctx-u1-03.jpg"
     },
     "title": "Cram Session",
-    "subtitle": "Three questions · the whole unit — Episode 9"
+    "subtitle": "Three questions \u00b7 the whole unit \u2014 Episode 9"
    }
   },
   {
@@ -37,7 +37,22 @@
     },
     "headline": "Question one: what changed",
     "sub": "Columbus, the Exchange, and the silver engine"
-   }
+   },
+   "overlays": [
+    {
+     "type": "sticker",
+     "image": "images/debry-hispaniola-mines.jpg",
+     "at": [
+      0.86,
+      0.82
+     ],
+     "size": 0.18,
+     "shape": "rect",
+     "start": 4.0,
+     "duration": 6.0,
+     "label": "MINES"
+    }
+   ]
   },
   {
    "id": "scene-03",
@@ -55,7 +70,7 @@
     },
     "title": "The Columbian Exchange",
     "left": {
-     "head": "EAST → EUROPE",
+     "head": "EAST \u2192 EUROPE",
      "sections": [
       {
        "sub": "Crops",
@@ -68,7 +83,7 @@
      ]
     },
     "right": {
-     "head": "WEST → AMERICAS",
+     "head": "WEST \u2192 AMERICAS",
      "sections": [
       {
        "sub": "Crops & animals",
@@ -112,7 +127,7 @@
     },
     "value": 85,
     "suffix": "%",
-    "label": "dead where it hit hardest — the Americas had no immunity"
+    "label": "dead where it hit hardest \u2014 the Americas had no immunity"
    },
    "overlays": [
     {
@@ -123,7 +138,7 @@
     },
     {
      "type": "keywordpop",
-     "word": "Smallpox · measles · influenza",
+     "word": "Smallpox \u00b7 measles \u00b7 influenza",
      "position": "left",
      "start": 14.0,
      "duration": 4.0
@@ -142,8 +157,8 @@
    "trans_dur": 0.5,
    "params": {
     "image": "images/gap-g-v02-1-potosi-mitayos-debry.jpg",
-    "title": "1545: Potosí",
-    "caption": "The royal fifth — 20% off the top; “pieces of eight” finally explained"
+    "title": "1545: Potos\u00ed",
+    "caption": "The royal fifth \u2014 20% off the top; \u201cpieces of eight\u201d finally explained"
    },
    "overlays": [
     {
@@ -170,9 +185,9 @@
      "path": "images/u1-caravel-fleet-huys.jpg"
     },
     "points": [
-     "**Manila galleons** — Acapulco to Manila, silver west, silk east",
-     "**England** — failed colonies, stolen ships: Drake, Armada 1588, Roanoke",
-     "**Jamestown, 1607** — nearly starved; saved by Rolfe’s tobacco"
+     "**Manila galleons** \u2014 Acapulco to Manila, sil",
+     "**England** \u2014 failed colonies, stolen ships: ",
+     "**Jamestown, 1607** \u2014 nearly starved; saved b"
     ]
    }
   },
@@ -189,7 +204,7 @@
    "params": {
     "image": "images/gap-g-v01-1-columbian-sugar-engraving.jpg",
     "title": "New paperwork, same hunger",
-    "caption": "1542: the New Laws — colonists nearly go to war; the inheritance ban is scrapped"
+    "caption": "1542: the New Laws \u2014 colonists nearly go to war; the inheritance ban is scrapped"
    }
   },
   {
@@ -209,11 +224,9 @@
     },
     "title": "Four systems, one hunger",
     "steps": [
-     "**Encomienda** — a colonist gets a town’s labor",
-     "**Repartimiento** — the draft: a rotating share, crown-assigned",
-     "**African slavery** — the Middle Passage; about one in seven never cross",
-     "**Hacienda** — big estates; debt chains the “free” workers",
-     "**Virginia** — headright land, indentured servants, an elected assembly"
+     "**Encomienda** \u2014 a coloni",
+     "**Repartimiento** \u2014 the d",
+     "**African slavery** \u2014 the"
     ]
    }
   },
@@ -230,7 +243,7 @@
    "params": {
     "image": "images/original-u1-lascasas-portrait-01.jpg",
     "title": "First, the pen",
-    "caption": "Las Casas: the Short Account, 1542 — cruelty, town by town"
+    "caption": "Las Casas: the Short Account, 1542 \u2014 cruelty, town by town"
    },
    "overlays": [
     {
@@ -256,9 +269,9 @@
      "type": "textured"
     },
     "points": [
-     "**Las Casas** — Native peoples are rational souls",
-     "**Sepúlveda** — Aristotle’s natural slaves; just war",
-     "**No verdict** — the question lived on, asked by an empire about its own conquest"
+     "**Las Casas** \u2014 Native peoples are rational souls",
+     "**Sep\u00falveda** \u2014 Aristotle\u2019s natural slaves; j",
+     "**No verdict** \u2014 the question lived on, asked"
     ]
    }
   },
@@ -275,7 +288,7 @@
    "params": {
     "image": "images/original-u1-native-09.jpg",
     "title": "1680: the answer with teeth",
-    "caption": "Popé’s knotted cords — one knot per day; twelve years of Pueblo New Mexico"
+    "caption": "Pop\u00e9\u2019s knotted cords \u2014 one knot per day; twelve years of Pueblo New Mexico"
    },
    "overlays": [
     {
@@ -301,11 +314,11 @@
     "bg": {
      "type": "textured"
     },
-    "title": "Three questions — landed",
+    "title": "Three questions \u2014 landed",
     "steps": [
-     "**What changed** — crops both ways, disease one way, silver wires one economy",
-     "**What stayed the same** — encomienda → repartimiento → slavery → hacienda",
-     "**Who pushed back** — Las Casas’s pen, Popé’s cords, 1680"
+     "**What changed** \u2014 crops both ways,",
+     "**What stayed the same** \u2014 encomien",
+     "**Who pushed back** \u2014 Las Casas\u2019s p"
     ]
    }
   },
@@ -324,8 +337,23 @@
      "type": "textured"
     },
     "headline": "Two questions, AP-shaped",
-    "sub": "Say your answer before Maya gives it — five seconds of silence each"
-   }
+    "sub": "Say your answer before Maya gives it \u2014 five seconds of silence each"
+   },
+   "overlays": [
+    {
+     "type": "sticker",
+     "image": "images/sepulveda.jpg",
+     "at": [
+      0.86,
+      0.82
+     ],
+     "size": 0.18,
+     "shape": "rect",
+     "start": 4.0,
+     "duration": 6.0,
+     "label": "SEP\u00daLVEDA"
+    }
+   ]
   },
   {
    "id": "scene-14",
@@ -342,9 +370,9 @@
      "type": "textured"
     },
     "points": [
-     "**DBQ 1** — how far the Columbian Exchange transformed the Americas",
-     "**DBQ 2** — disease, alliances, and technology in the conquest",
-     "**The counter graders want** — the labor machine ran straight through"
+     "**DBQ 1** \u2014 how far the Columbian Exchange tr",
+     "**DBQ 2** \u2014 disease, alliances, and technolog",
+     "**The counter graders want** \u2014 the labor mach"
     ]
    }
   },
@@ -362,8 +390,8 @@
     "bg": {
      "type": "textured"
     },
-    "quote": "One ocean made one world — On conquest’s terms.",
-    "byline": "Episode 9 · Next: the English arrive — Pilgrims, Puritans, and a city upon a hill"
+    "quote": "One ocean made one world \u2014 On conquest\u2019s terms.",
+    "byline": "Episode 9 \u00b7 Next: the English arrive \u2014 Pilgrims, Puritans, and a city upon a hill"
    }
   }
  ]

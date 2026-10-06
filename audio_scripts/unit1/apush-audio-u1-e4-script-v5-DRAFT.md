@@ -1,13 +1,14 @@
 # U1-E4 — Maya + Marcus (Fish Audio)
 # Episode 4: Planting, Not Raiding — Jamestown and the Start of English America. ~8 min.
 # Read note: Maya tracks three boxes on her episode sheet; the recap checks
-# each one off. [5-second pause] marks are production notes for real silence
+# each one off. [2-second pause] marks are production notes for real silence
 # in the self-test — they never go to the voice. Strip this header, the
 # read note, and all [pause] tags before TTS; convert pause tags to silence.
 # Pronunciation: POW-uh-tan, poh-kuh-HON-tuhs, BUR-juh-sez, oh-pech-an-KAH-noh,
 # DEL-uh-wair
+# 2026-10-06 conformance: 3-question close.
 
-Maya: Last time: Spain's silver empire, and England's long challenge to it. Drake and Roanoke and the Armada. This time: England stops raiding and starts planting. Jamestown, 1607, the colony that almost didn't make it. Three boxes on your sheet: Jamestown, tobacco, and the House of Burgesses. Circle the ones you couldn't explain right now. Eight minutes, and you'll check all three off.
+Maya: Last time: the Exchange — crops, animals, and germs remaking two worlds. This time: England stops raiding and starts planting. Jamestown, 1607, the colony that almost didn't make it. Three boxes on your sheet: Jamestown, tobacco, and the House of Burgesses. Circle the ones you couldn't explain right now. Eight minutes, and you'll check all three off.
 
 Marcus: Start with the money behind it. No king paid for Jamestown. A group of London merchants formed a joint-stock company, the Virginia Company. They pooled their cash and split the profits. If the colony failed, the investors lost. If it struck it rich, they got richer.
 
@@ -29,11 +30,11 @@ Marcus: Effective. Plant, build, or starve. Then in the fall of 1609, Smith's gu
 
 Maya: Sixty? Out of five hundred?
 
-Marcus: They ate dogs, horses, shoe leather. The archaeology says some ate each other. In the spring of 1610 the survivors actually gave up, boarded ships for England, and got intercepted on the way out by a new governor, De La Warr, with supplies and about 150 fresh colonists.
+Marcus: They ate dogs, horses, shoe leather. The archaeology says some ate each other. In June of 1610 the survivors actually gave up, boarded ships for England, and got intercepted on the way out by a new governor, De La Warr, with supplies and about 150 fresh colonists.
 
 Maya: Imagine quitting and your boss shows up in the parking lot.
 
-Marcus: With 150 replacements. That's Jamestown's first decade: almost everyone dies, and the company keeps refilling the fort.
+Marcus: With 150 replacements. Jamestown's first decade: almost everyone dies, and the company keeps refilling the fort.
 
 Maya: Okay, so how does this place not just die forever?
 
@@ -53,15 +54,15 @@ Marcus: Forget the singing tree. The real Pocahontas was captured by the English
 
 Maya: So the whole economy runs on cigarettes.
 
-Marcus: On pipe tobacco, roughly. And tobacco is hungry, for land and for workers. The company answers with the headright system in 1618. Fifty acres to anyone who pays a settler's passage. Bring ten workers, claim five hundred acres.
+Marcus: On pipe tobacco, roughly. And tobacco is hungry, for land and for workers. The company answers with the headright system in 1618. Fifty acres for anyone who paid a settler's passage. Bring ten workers, claim five hundred acres.
 
 Maya: So the rich get richer by importing people.
 
-Marcus: That's the engine. And the people came as indentured servants, signing away four to seven years of labor for the boat ride over. Most of them were young, poor, and English.
+Marcus: That was the engine. And the people came as indentured servants, signing away four to seven years of labor for the boat ride over. Most of them were young, poor, and English.
 
-Maya: Four to seven years. That's a long boat ride to pay off.
+Maya: Four to seven years. A long boat ride to pay off.
 
-Marcus: Later, that labor answer changes. But in the 1610s and 20s, it's servants.
+Marcus: Later, that labor answer changes. But in the 1610s and 1620s, it's servants.
 
 Maya: And who's running this place? The company back in London?
 
@@ -71,7 +72,7 @@ Maya: Wait, the company just... gave up power?
 
 Marcus: It traded a little power for a lot of settlers. An elected assembly made Virginia look stable. Stable colonies attract workers, workers grow tobacco, tobacco pays the investors.
 
-Maya: So for the test, 1619 is the democracy year.
+Maya: So 1619 is the democracy year.
 
 Marcus: Half of it. The same year, a Dutch ship, the White Lion, pulls into Point Comfort and trades about twenty Angolans, seized from a Portuguese slave ship, for food. On paper they were sold as servants. In reality they were forced, and they fit every definition of enslaved.
 
@@ -105,17 +106,23 @@ Maya: Three: the House of Burgesses. 1619, first elected assembly, and the same 
 
 Marcus: Summer 1619, property-holding men vote. Same year, about twenty Angolans sold at Point Comfort. Then 1622, the Powhatan attack kills about a quarter of the colony.
 
-Maya: Two questions, AP-shaped. Say your answer before I give it. One: archaeologists at Jamestown found butchered dog and horse bones, plus human remains with the same cut marks. What does that evidence say about the winter of 1609-10?
+Maya: Three questions, AP-shaped. Say your answer before I give it. One: archaeologists at Jamestown found butchered dog and horse bones, plus human remains with the same cut marks. What does that say about the winter of 1609 and 1610?
 
-[5-second pause]
+[2-second pause]
 
 Maya: The starving time. About 500 settlers went in, around 60 came out. People ate anything, including each other.
 
 Maya: Two: a planter pays the passage for six workers. How much land can he claim, and under what system?
 
-[5-second pause]
+[2-second pause]
 
 Maya: Three hundred acres. The headright system, fifty acres a head.
+
+Maya: Three: 1619. An elected assembly meets in Jamestown, and a Dutch ship lands at Point Comfort. Name both firsts.
+
+[2-second pause]
+
+Maya: The House of Burgesses, and the first enslaved Africans in Virginia.
 
 Maya: Check your three boxes. Episode four in the books. Next time: rewind sixty years, to the silver mountain that bankrolled the Spanish Empire.
 

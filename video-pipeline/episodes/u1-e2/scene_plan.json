@@ -6,7 +6,7 @@
   {
    "type": "timelineribbon",
    "height_frac": 0.07,
-   "era": "THE COLLISION · 1453–1972",
+   "era": "THE COLLISION \u00b7 1453\u20131972",
    "events": [
     [
      0.054,
@@ -42,11 +42,11 @@
  "scenes": [
   {
    "id": "open",
-   "title": "Cold open — title card",
+   "title": "Cold open \u2014 title card",
    "slide": "eracardslide",
    "params": {
     "title": "Wrong Map, New World",
-    "kicker": "APUSH · UNIT 1 · EP. 2",
+    "kicker": "APUSH \u00b7 UNIT 1 \u00b7 EP. 2",
     "subtitle": "A Genoese sailor, bad math, and a continent that wasn't lost",
     "boxes": [
      {
@@ -62,7 +62,7 @@
       "icon": "flag"
      }
     ],
-    "footer": "Maya + Marcus · ~8 minutes",
+    "footer": "Maya + Marcus \u00b7 ~8 minutes",
     "unit": 1
    },
    "turns": [
@@ -76,7 +76,7 @@
   },
   {
    "id": "motives",
-   "title": "Why sail west — gold, God, glory",
+   "title": "Why sail west \u2014 gold, God, glory",
    "slide": "displayheadline",
    "params": {
     "headline": "Gold, God, and glory",
@@ -93,7 +93,34 @@
    "duration_sec": 59.952,
    "transition": "cut",
    "trans_dur": 0,
-   "overlays": []
+   "overlays": [
+    {
+     "type": "sticker",
+     "image": "images/isabella-ferdinand.jpg",
+     "at": [
+      0.16,
+      0.88
+     ],
+     "size": 0.18,
+     "shape": "rect",
+     "start": 4.0,
+     "duration": 10.0,
+     "label": "MONARCHS"
+    },
+    {
+     "type": "sticker",
+     "image": "images/henry-navigator.jpg",
+     "at": [
+      0.86,
+      0.88
+     ],
+     "size": 0.18,
+     "shape": "rect",
+     "start": 16.0,
+     "duration": 10.0,
+     "label": "HENRY"
+    }
+   ]
   },
   {
    "id": "tools",
@@ -102,10 +129,10 @@
    "params": {
     "title": "The toolkit",
     "bullets": [
-     "Caravel — small, fast, built to maneuver",
-     "Lateen sails — triangular; claw against the wind",
-     "Astrolabe — latitude from the stars",
-     "Magnetic compass — hold a course"
+     "Caravel \u2014 small, fast, built to maneuver",
+     "Lateen sails \u2014 triangular; claw against the wind",
+     "Astrolabe \u2014 latitude from the stars",
+     "Magnetic compass \u2014 hold a course"
     ],
     "bg": {
      "path": "images/astrolabe.jpg",
@@ -119,7 +146,21 @@
    "duration_sec": 36.696,
    "transition": "cut",
    "trans_dur": 0,
-   "overlays": []
+   "overlays": [
+    {
+     "type": "sticker",
+     "image": "images/astrolabe.jpg",
+     "at": [
+      0.5,
+      0.88
+     ],
+     "size": 0.18,
+     "shape": "rect",
+     "start": 4.0,
+     "duration": 8.0,
+     "label": "ASTROLABE"
+    }
+   ]
   },
   {
    "id": "darksea",
@@ -138,18 +179,18 @@
    "overlays": [
     {
      "type": "keywordpop",
-     "word": "1488 — Dias rounds Africa",
+     "word": "1488 \u2014 Dias rounds Africa",
      "start": 8.34,
      "duration": 3.0
     },
     {
      "type": "keywordpop",
-     "word": "1498 — da Gama reaches India",
+     "word": "1498 \u2014 da Gama reaches India",
      "start": 12.04,
      "duration": 3.0
     }
    ],
-   "anim_prompt": "Vast open Atlantic Ocean at dawn, seen from just above the water. Low drifting mist, slow heavy swell, cold blue-grey palette with a pale glow on the horizon. No ships, no people, no land, no text, no modern objects. Camera: very slow push-in. Mood: beautiful and ominous — the edge of the known world."
+   "anim_prompt": "Vast open Atlantic Ocean at dawn, seen from just above the water. Low drifting mist, slow heavy swell, cold blue-grey palette with a pale glow on the horizon. No ships, no people, no land, no text, no modern objects. Camera: very slow push-in. Mood: beautiful and ominous \u2014 the edge of the known world."
   },
   {
    "id": "columbus",
@@ -174,7 +215,7 @@
       {
        "sub": "A whole ocean wider",
        "points": [
-        "~10,000 miles — a continent in the way"
+        "~10,000 miles \u2014 a continent in the way"
        ]
       }
      ]
@@ -191,7 +232,21 @@
    "duration_sec": 21.288,
    "transition": "cut",
    "trans_dur": 0,
-   "overlays": []
+   "overlays": [
+    {
+     "type": "sticker",
+     "image": "images/columbus-portrait.jpg",
+     "at": [
+      0.5,
+      0.88
+     ],
+     "size": 0.18,
+     "shape": "rect",
+     "start": 4.0,
+     "duration": 8.0,
+     "label": "COLUMBUS"
+    }
+   ]
   },
   {
    "id": "landing",
@@ -199,7 +254,7 @@
    "slide": "imageslide",
    "params": {
     "image": "images/columbus-manuscript.jpg",
-    "caption": "October 12, 1492 — four voyages, never the mainland",
+    "caption": "October 12, 1492 \u2014 four voyages, never the mainland",
     "title": ""
    },
    "turns": [
@@ -213,7 +268,7 @@
   },
   {
    "id": "tordesillas",
-   "title": "Box one — the pope's line",
+   "title": "Box one \u2014 the pope's line",
    "slide": "mapzoomslide",
    "params": {
     "map_image": "images/tordesillas-map.jpg",
@@ -224,7 +279,7 @@
        0.55
       ],
       "zoom": 3.0,
-      "label": "The pope's line — 1494",
+      "label": "The pope's line \u2014 1494",
       "sub": "370 leagues west of Cape Verde"
      }
     ]
@@ -240,7 +295,7 @@
   },
   {
    "id": "goods",
-   "title": "Box two — the Exchange",
+   "title": "Box two \u2014 the Exchange",
    "slide": "compareslide",
    "params": {
     "title": "The Columbian Exchange",
@@ -273,7 +328,7 @@
       {
        "sub": "Animals",
        "points": [
-        "Horses, cattle, pigs — the Americas had never seen them"
+        "Horses, cattle, pigs \u2014 the Americas had never seen them"
        ]
       }
      ]
@@ -290,7 +345,47 @@
    "duration_sec": 37.608,
    "transition": "cut",
    "trans_dur": 0,
-   "overlays": []
+   "overlays": [
+    {
+     "type": "sticker",
+     "image": "images/maize.jpg",
+     "at": [
+      0.16,
+      0.88
+     ],
+     "size": 0.16,
+     "shape": "rect",
+     "start": 4.0,
+     "duration": 8.0,
+     "label": "MAIZE"
+    },
+    {
+     "type": "sticker",
+     "image": "images/comanche-horses.jpg",
+     "at": [
+      0.5,
+      0.88
+     ],
+     "size": 0.16,
+     "shape": "rect",
+     "start": 12.0,
+     "duration": 8.0,
+     "label": "HORSES"
+    },
+    {
+     "type": "sticker",
+     "image": "images/sugarcane-harvest.jpg",
+     "at": [
+      0.86,
+      0.88
+     ],
+     "size": 0.16,
+     "shape": "rect",
+     "start": 20.0,
+     "duration": 8.0,
+     "label": "SUGAR"
+    }
+   ]
   },
   {
    "id": "disease",
@@ -298,7 +393,7 @@
    "slide": "imageslide",
    "params": {
     "image": "images/smallpox-florentine-codex.jpg",
-    "caption": "Smallpox, measles, influenza — 8 or 9 out of 10 in the hardest-hit places",
+    "caption": "Smallpox, measles, influenza \u2014 8 or 9 out of 10 in the hardest-hit places",
     "title": ""
    },
    "turns": [
@@ -346,15 +441,42 @@
    "duration_sec": 26.04,
    "transition": "cut",
    "trans_dur": 0,
-   "overlays": []
+   "overlays": [
+    {
+     "type": "sticker",
+     "image": "images/debry-hispaniola-mines.jpg",
+     "at": [
+      0.16,
+      0.88
+     ],
+     "size": 0.18,
+     "shape": "rect",
+     "start": 4.0,
+     "duration": 8.0,
+     "label": "MINES"
+    },
+    {
+     "type": "sticker",
+     "image": "images/lienzo-tlaxcala.jpg",
+     "at": [
+      0.86,
+      0.88
+     ],
+     "size": 0.18,
+     "shape": "rect",
+     "start": 14.0,
+     "duration": 8.0,
+     "label": "LIENZO"
+    }
+   ]
   },
   {
    "id": "encomienda",
-   "title": "Box three — encomienda",
+   "title": "Box three \u2014 encomienda",
    "slide": "imageslide",
    "params": {
     "image": "images/debry-hispaniola-mines.jpg",
-    "caption": "Encomienda: Native labor granted to colonists — “protection” in air quotes",
+    "caption": "Encomienda: Native labor granted to colonists \u2014 \u201cprotection\u201d in air quotes",
     "title": ""
    },
    "turns": [
@@ -373,9 +495,9 @@
    "params": {
     "title": "Three boxes, landed",
     "bullets": [
-     "Tordesillas (1494) — the pope's line; Brazil speaks Portuguese",
-     "Columbian Exchange (Crosby, 1972) — crops, animals, disease, both ways",
-     "Encomienda — Native labor grants; “protection” in air quotes"
+     "Tordesillas (1494) \u2014 the pope's line; Brazil speaks Portuguese",
+     "Columbian Exchange (Crosby, 1972) \u2014 crops, animals, disease, both ways",
+     "Encomienda \u2014 Native labor grants; \u201cprotection\u201d in air quotes"
     ],
     "bg": {
      "type": "era",
@@ -417,7 +539,7 @@
    "title": "Tagline + next time",
    "slide": "quoteslide",
    "params": {
-    "quote": "They sailed west looking for Asia — and found a world.",
+    "quote": "They sailed west looking for Asia \u2014 and found a world.",
     "byline": "Maya"
    },
    "turns": [

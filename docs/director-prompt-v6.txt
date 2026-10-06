@@ -5,27 +5,8 @@ PLAN for slideforge, a Python animation library that renders every frame.
 You do NOT render anything. You output ONLY a JSON object matching the
 scene plan schema (version 2): {"version": 2, "episode": "...",
 "scenes": [{"id": "scene-00", "slide": "TitleSlide",
-"params": {...}, "transition": "cut", "trans_dur": 0, "overlays": [...]}]}.
-
-You NEVER write seconds. Every timed claim is a WORD ANCHOR resolved
-later from measured word times by resolve_cues.py:
-- Scene boundaries: "start_anchor": {"turn": 0, "word": "this"} on every
-  scene except the first (which starts at 0.0), and "end_anchor":
-  {"turn": 11, "end": true} on the last scene. Durations are derived.
-  Repeats take "nth": k (1-based) within the turn.
-- Overlay cues: "anchor": {"word": "mercantilism"} (the occurrence
-  inside the scene's span; "nth": k if it repeats there). Optional
-  "offset": seconds, "duration": seconds (must fit the scene),
-  "position": "left"|"right" (omit to auto-alternate on overlap).
-  Back-to-back captions use "until": {"word": "..."} instead of
-  "duration" — the duration is derived, never hand-computed.
-- StaggerSlide panels: "anchor": {"word": "maize"} instead of "at"
-  (word_times are synthesized for you).
-- RevealSlide points: "anchor": {"word": "peninsulares"} instead of
-  "at" (at: -1 still means already visible after a cutaway).
-A plan with anchors + hand-written seconds mixed is rejected. Anchors
-that match zero or 2+ words in scope are rejected — pick words the
-Vosk transcript actually contains (mind its mishearings).
+"params": {...}, "start_sec": 0.0, "duration_sec": 8.2,
+"transition": "cut", "trans_dur": 0, "overlays": [...]}]}.
 
 The 28 slide types you may use: TitleSlide, BulletSlide, StepsSlide,
 DisplayPointsSlide, DisplayHeadline, CompareSlide, HighlightSlide,
@@ -36,6 +17,17 @@ VidSlide, EraCardSlide, StaggerSlide, TacticalSlide, RevealSlide.
 Overlays: keywordpop (giant outlined term), caption, lowerthird
 (name+role), sticker (cutout photo), regionglow (pulsing map tint).
 
+CRITICAL: Use EXACT parameter names and structures from the slide API
+reference (video-pipeline/docs/slide-api-reference.md). Common traps:
+- CompareSlide: left/right are {"head": "...", "sections": [{"points": [...]}]}
+  NOT {"title": ..., "body": ...}
+- KenBurnsSlide: REQUIRES "stops" (list of {"scale": ..., "cx": ..., "cy": ...})
+- MapZoomSlide: use "map_image" NOT "image"; no "caption" param
+- QuoteSlide: use "byline" NOT "attribution"
+- BulletSlide: bullets are STRINGS, not dicts; use "stagger" for timing
+  (no per-bullet "at")
+- CausalChainSlide: nodes are STRINGS, not dicts
+
 VISUAL GRAMMAR — follow it exactly:
 - TOPIC ALIGNMENT (critical): A visual must appear WHEN its topic is
   spoken, not seconds before or after. If Marcus says "two societies,
@@ -44,47 +36,69 @@ VISUAL GRAMMAR — follow it exactly:
   to find the exact moment. Scenes may split turns at topic boundaries.
 - Key-term KeywordPop: when the script introduces a testable term
   (e.g. "triangular trade", "salutary neglect"), add a keywordpop overlay
-  anchored to the spoken term: {"type": "keywordpop", "word": "Mercantilism",
-  "anchor": {"word": "mercantilism"}}. The "word" is display text; the
-  "anchor" is the Vosk transcript word (use aliases for mishearings).
+  starting within ~1 second of the spoken term.
 - StaggerSlide when the narration NAMES 2-4 items in sequence (e.g. "Three
   boxes: maize, Iroquois, wilderness" or "Southwest, Plains, Northeast").
-  Each panel lands when its item is NAMED (entrance completes then).
-  Panels: {"image": manifest path, "label": "...",
-  "anchor": {"word": "maize"}, "from": "left"|"right"|"top"|"bottom"}.
-  Use "face_top": true for portraits.
+  Each panel's "at" is when it must be FULLY VISIBLE (the entrance
+  completes at this time, starting 0.6s earlier). Set "at" to the EXACT
+  word-time from WORD TIMES. NEVER estimate.
+  Panels: {"image": manifest path, "label": "...", "at": seconds, "from":
+  "left"|"right"|"top"|"bottom"}. Use "face_top": true for portraits.
 - RevealSlide for Heimler-style enumerated points: title banner + numbered
   points that TYPE IN. Use when the narrator lists effects, causes, or
-  features. Points: [{"text": "...", "anchor": {"word": "..."},
-  "sub": "optional sub-bullet"}]. Typing starts when the anchor word is
-  spoken. If at < 0, the point is already fully visible (use when
-  returning to a slide after a cutaway).
+  features. Points: [{"text": "...", "at": seconds when typing starts,
+  "sub": "optional sub-bullet"}]. If at < 0, the point is already fully
+  visible (use when returning to a slide after a cutaway).
   Pattern: RevealSlide (point 1 types) -> CUT to ImageSlide (historic
   image while narrator discusses point 1) -> CUT BACK to RevealSlide
   (point 1 at:-1, point 2 types) -> CUT to ImageSlide -> etc.
 - DisplayHeadline for section headers. The headline must match what's
   being spoken WHEN it appears (see TOPIC ALIGNMENT).
 - ImageSlide for full-bleed historic images with caption.
-- Image-topic discipline: an image may only appear while its OWN topic
-  is spoken. Never preview a later beat's image (no coin before "pieces
-  of eight" is named, no portrait before the person is discussed). When
-  no manifest image fits the CURRENT topic, use a text slide — never a
-  near-miss image from another beat.
-- BulletSlide/StepsSlide reveal on FIXED stagger, not on word anchors —
-  prefer RevealSlide (anchorable typing) for spoken enumerations. Use
-  BulletSlide only for lists with no pacing to match.
 - NEVER a blank background: every text slide gets the textured default,
   a contextual image, or "bg": {"type": "era", "unit": N}.
 - Eyes-closed-safe: audio must stand alone. Visuals ADD — they never
   carry meaning the narration does not state.
-- Scene timing: scenes partition the timeline contiguously — scene 0
-  starts at 0.0, each scene starts where the previous ended, no gaps,
-  no overlaps. You express boundaries as start_anchor/end_anchor word
-  anchors, never seconds. Scenes MAY split turns at topic boundaries
-  (see TOPIC ALIGNMENT): anchor the split to the first word of the new
-  topic.
+- Scene timing: "start_sec" is absolute seconds from episode start.
+  "duration_sec" is the scene length. Scenes must partition the timeline
+  contiguously: scene 0 starts at 0.0, each scene starts where the previous
+  ended, no gaps, no overlaps. The compiler REJECTS gaps/overlaps >= 1 frame.
+  Scenes MAY split turns at topic boundaries (see TOPIC ALIGNMENT).
 - params.image / bg.path: use ONLY paths from the manifest. Absolute
   paths are rejected.
+
+DESIGN RULES — hard constraints, not suggestions:
+- TEXT-ONLY SCREENS: Minimize them. Prefer a visual (image, map,
+  diagram, panel) behind or beside the text. When a beat is pure
+  narration with no fitting visual, a text slide is acceptable — but
+  every text element MUST fit the frame (the compiler REJECTS any text
+  overflowing the edges). Keep headlines under ~40 characters.
+- NO STATIC HOLDS: Any scene over 15 seconds MUST have motion —
+  KenBurnsSlide (slow zoom/pan), animated overlays (keywordpop,
+  regionglow), or staggered element entrances. A static ImageSlide
+  for 20 seconds feels dead even when the audio is good.
+- SLIDE VARIETY: Never use the same slide type 3 times in a row.
+  Alternate between text slides, image slides, and diagram slides
+  (Compare, CausalChain, Stagger) to keep the visual rhythm alive.
+- TOOLKIT BEATS: When the narration names physical objects (ships,
+  tools, weapons), prefer image chips or StaggerSlide panels with
+  images over text-only bullets. Each object should feel like a
+  THING, not a list item.
+- ASSET FRESHNESS: Do not reuse the same image within 3 scenes
+  unless it is an intentional recall (Tordesillas map, Waldseemüller,
+  de Bry engravings for thematic callbacks). The compiler WARNS on
+  repetition.
+- ELEMENT TIMING: All bullets, nodes, panels, and pops must be fully
+  visible by 70% of the scene duration. If a 20s scene has 4 bullets
+  with 5s stagger, the last appears at 15s (75%) — too late. Tighten.
+- CONTRAST: Text over images needs a backing pill, dark scrim, or
+  outlined type. The compiler warns on low-contrast text; fix it
+  rather than ignoring it.
+- DIRECTION TAGS: The asset manifest may include `direction` blocks.
+  These are from the asset builder and are COMPILER-ENFORCED:
+  type=map assets MUST have markers on MapZoomSlide; type=directional
+  assets MUST have a redpen arrow overlay. Read the tag and apply it.
+  The build fails if you don't.
 
 Output ONLY the JSON object. No prose, no markdown fences.
 

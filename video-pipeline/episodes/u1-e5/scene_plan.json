@@ -1,6 +1,6 @@
 {
  "episode": "u1-e5",
- "notes": "Director's cut for U1-E5 'Silver Empire' (script v3, Maya+Marcus). 13 scenes. Each scene carries a 'turns' [start, end] partition of the 47 TTS segments (t00..t46, including the two 5s self-test silences) — run refit_durations.py against the rendered turns dir to replace the estimated duration_sec values with measured sums (the mix is a straight concat, so this is exact). Visual grammar: KeywordPops on Huallpa, pieces of eight, mita, Guamán Poma, Manila galleons; CausalChainSlide for the silver→money→prices exam move; StatSlide for the 4 Philip II bankruptcies; ImageSlides on the 1553 Cieza de León Potosí woodcut, the 1590 de Bry mine engraving, the 1598 de Bry cruelty engraving, and the c.1565 Huys caravel fleet. No blank backgrounds. Eyes-closed-safe.",
+ "notes": "Director's cut for U1-E5 'Silver Empire' (script v3, Maya+Marcus). 13 scenes. Each scene carries a 'turns' [start, end] partition of the 47 TTS segments (t00..t46, including the two 5s self-test silences) \u2014 run refit_durations.py against the rendered turns dir to replace the estimated duration_sec values with measured sums (the mix is a straight concat, so this is exact). Visual grammar: KeywordPops on Huallpa, pieces of eight, mita, Guam\u00e1n Poma, Manila galleons; CausalChainSlide for the silver\u2192money\u2192prices exam move; StatSlide for the 4 Philip II bankruptcies; ImageSlides on the 1553 Cieza de Le\u00f3n Potos\u00ed woodcut, the 1590 de Bry mine engraving, the 1598 de Bry cruelty engraving, and the c.1565 Huys caravel fleet. No blank backgrounds. Eyes-closed-safe.",
  "scenes": [
   {
    "duration_sec": 30,
@@ -9,7 +9,7 @@
     "bg": {
      "path": "images/barrons-2027-ch03-01.jpg"
     },
-    "subtitle": "Episode 5 — the interview. Maya asks, Marcus answers.",
+    "subtitle": "Episode 5 \u2014 the interview. Maya asks, Marcus answers.",
     "title": "Silver Empire"
    },
    "slide": "titleslide",
@@ -18,6 +18,21 @@
    "turns": [
     0,
     0
+   ],
+   "overlays": [
+    {
+     "type": "sticker",
+     "image": "images/cerro-rico.jpg",
+     "at": [
+      0.86,
+      0.82
+     ],
+     "size": 0.2,
+     "shape": "rect",
+     "start": 2.0,
+     "duration": 6.0,
+     "label": "POTOS\u00cd"
+    }
    ]
   },
   {
@@ -28,7 +43,7 @@
      "type": "textured"
     },
     "headline": "The silver machine",
-    "sub": "1545, Potosí — a strike isn't an economy."
+    "sub": "1545, Potos\u00ed \u2014 a strike isn't an economy."
    },
    "slide": "displayheadline",
    "trans_dur": 0.5,
@@ -36,13 +51,28 @@
    "turns": [
     1,
     2
+   ],
+   "overlays": [
+    {
+     "type": "sticker",
+     "image": "images/silver-8reales.jpg",
+     "at": [
+      0.86,
+      0.82
+     ],
+     "size": 0.18,
+     "shape": "rect",
+     "start": 4.0,
+     "duration": 8.0,
+     "label": "SILVER"
+    }
    ]
   },
   {
    "duration_sec": 43,
    "id": "scene-03",
    "params": {
-    "caption": "1545 — a gust of wind, a handful of rich silver ore",
+    "caption": "1545 \u2014 a gust of wind, a handful of rich silver ore",
     "image": "images/barrons-2027-ch03-01.jpg",
     "title": "Huallpa and the wind"
    },
@@ -67,7 +97,7 @@
    "duration_sec": 47,
    "id": "scene-04",
    "params": {
-    "caption": "Potosí stamped its own coins — pieces of eight",
+    "caption": "Potos\u00ed stamped its own coins \u2014 pieces of eight",
     "image": "images/gap-g-v02-1-potosi-mitayos-debry.jpg",
     "title": "Silver in one door, money out the other"
    },
@@ -96,9 +126,9 @@
      "type": "textured"
     },
     "points": [
-     "**Mita** — the forced rotation, episode three's draft",
-     "**Paid hands** — alongside the draft",
-     "**An Indigenous voice** — Guamán Poma's chronicle, ~1615"
+     "**Mita** \u2014 forced labor draft",
+     "**Paid hands** \u2014 alongside draft",
+     "**Guam\u00e1n Poma** \u2014 Indigenous chronicle"
     ]
    },
    "slide": "displaypointsslide",
@@ -118,10 +148,35 @@
     },
     {
      "type": "keywordpop",
-     "word": "Guamán Poma",
+     "word": "Guam\u00e1n Poma",
      "start": 12.0,
      "duration": 2.2,
      "position": "right"
+    },
+    {
+     "type": "sticker",
+     "image": "images/piece-of-eight.jpg",
+     "at": [
+      0.86,
+      0.82
+     ],
+     "size": 0.18,
+     "shape": "rect",
+     "start": 4.0,
+     "duration": 8.0
+    },
+    {
+     "type": "sticker",
+     "image": "images/cob-coin.jpg",
+     "at": [
+      0.16,
+      0.82
+     ],
+     "size": 0.18,
+     "shape": "rect",
+     "start": 12.0,
+     "duration": 8.0,
+     "label": "COB"
     }
    ]
   },
@@ -129,7 +184,7 @@
    "duration_sec": 14,
    "id": "scene-06",
    "params": {
-    "caption": "Twelve hundred pages, hundreds of drawings — unread for centuries",
+    "caption": "Twelve hundred pages, hundreds of drawings \u2014 unread for centuries",
     "image": "images/barrons-2027-ch03-03.jpg",
     "title": "The letter the king never read"
    },
@@ -149,7 +204,7 @@
      "type": "textured"
     },
     "headline": "Bodin and the birth of inflation theory",
-    "sub": "The price revolution — did anyone know what caused it?"
+    "sub": "The price revolution \u2014 did anyone know what caused it?"
    },
    "slide": "displayheadline",
    "trans_dur": 0.5,
@@ -157,6 +212,21 @@
    "turns": [
     18,
     19
+   ],
+   "overlays": [
+    {
+     "type": "sticker",
+     "image": "images/galleon.jpg",
+     "at": [
+      0.5,
+      0.88
+     ],
+     "size": 0.18,
+     "shape": "rect",
+     "start": 4.0,
+     "duration": 8.0,
+     "label": "GALLEON"
+    }
    ]
   },
   {
@@ -188,6 +258,21 @@
    "turns": [
     20,
     21
+   ],
+   "overlays": [
+    {
+     "type": "sticker",
+     "image": "images/manila-reception.jpg",
+     "at": [
+      0.86,
+      0.82
+     ],
+     "size": 0.2,
+     "shape": "rect",
+     "start": 4.0,
+     "duration": 8.0,
+     "label": "MANILA"
+    }
    ]
   },
   {
@@ -198,7 +283,7 @@
      "dim": 0.72,
      "path": "images/u1-debry-cusco-fall.jpg"
     },
-    "label": "bankruptcies under Philip II — the crown spent on wars faster than the mines could produce",
+    "label": "bankruptcies under Philip II \u2014 the crown spent on wars faster than the mines could produce",
     "suffix": "",
     "value": 4
    },
@@ -208,13 +293,27 @@
    "turns": [
     22,
     25
+   ],
+   "overlays": [
+    {
+     "type": "sticker",
+     "image": "images/de-bry-harbor.jpg",
+     "at": [
+      0.5,
+      0.88
+     ],
+     "size": 0.18,
+     "shape": "rect",
+     "start": 4.0,
+     "duration": 8.0
+    }
    ]
   },
   {
    "duration_sec": 82,
    "id": "scene-10",
    "params": {
-    "caption": "Acapulco to Manila — four to six months each way",
+    "caption": "Acapulco to Manila \u2014 four to six months each way",
     "image": "images/u1-caravel-fleet-huys.jpg",
     "title": "The silver that sailed west"
    },
@@ -235,7 +334,7 @@
     },
     {
      "type": "caption",
-     "text": "Silver west, silk and porcelain east — China's hunger kept the ships sailing",
+     "text": "Silver west, silk and porcelain east \u2014 China's hunger kept the ships sailing",
      "start": 20.0,
      "duration": 8.0
     }
@@ -250,11 +349,11 @@
      "type": "textured"
     },
     "steps": [
-     "**One: the silver machine** — Huallpa and the wind, the Potosí mint, pieces of eight, Guamán Poma's chronicle.",
-     "**Two: Bodin** — Malestroit blamed bad coins, Bodin blamed American silver. The birth of the quantity theory.",
-     "**Three: the Manila galleons** — silver west from Acapulco, silk back east, merchants kept the profit."
+     "**Silver machine** \u2014 Potos\u00ed.",
+     "**Bodin** \u2014 American silver.",
+     "**Manila galleons** \u2014 west."
     ],
-    "title": "Three boxes — check them off"
+    "title": "Three boxes \u2014 check them off"
    },
    "slide": "stepsslide",
    "trans_dur": 0.6,
@@ -280,6 +379,34 @@
    "turns": [
     38,
     43
+   ],
+   "overlays": [
+    {
+     "type": "sticker",
+     "image": "images/armada-calais-pine-1739.jpg",
+     "at": [
+      0.16,
+      0.82
+     ],
+     "size": 0.18,
+     "shape": "rect",
+     "start": 4.0,
+     "duration": 8.0,
+     "label": "ARMADA"
+    },
+    {
+     "type": "sticker",
+     "image": "images/drake-portrait-1583.jpg",
+     "at": [
+      0.86,
+      0.82
+     ],
+     "size": 0.18,
+     "shape": "rect",
+     "start": 14.0,
+     "duration": 8.0,
+     "label": "DRAKE"
+    }
    ]
   },
   {
@@ -289,7 +416,7 @@
     "bg": {
      "type": "textured"
     },
-    "byline": "Episode 5 · Next: the labor systems — who dug it all out",
+    "byline": "Episode 5 \u00b7 Next: the labor systems \u2014 who dug it all out",
     "quote": "Silver made the world one economy."
    },
    "slide": "quoteslide",

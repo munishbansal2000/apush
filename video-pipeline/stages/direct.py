@@ -69,9 +69,14 @@ def _load_manifest(ep_dir, cfg):
         # Asset manifests are {"images": {key: {file, kind, credit}}};
         # build_prompt wants [{path, kind, description}].
         if isinstance(data, dict) and isinstance(data.get("images"), dict):
-            return [{"path": v.get("file"), "kind": v.get("kind", "?"),
-                     "description": v.get("credit", "")}
-                    for v in data["images"].values()]
+            result = []
+            for v in data["images"].values():
+                if isinstance(v, str):
+                    result.append({"path": v, "kind": "?", "description": ""})
+                else:
+                    result.append({"path": v.get("file"), "kind": v.get("kind", "?"),
+                                   "description": v.get("credit", "")})
+            return result
         if isinstance(data, list):
             return data
         return []

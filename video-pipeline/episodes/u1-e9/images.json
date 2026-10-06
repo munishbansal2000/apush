@@ -1,34 +1,74 @@
 {
  "images": {
-  "caravel": {
-   "credit": "Fleet of Galleys Escorted by a Caravel — Frans Huys (after Pieter Bruegel the Elder), from 'The Sailing Vessels' series, c.1565; Metropolitan Museum of Art, MM15834. A square-rigged caravel with billowing sails and streaming pennants at sea, escorted by lateen-rigged galleys. — CC0 dedication (public-domain dedication); artist Frans Huys d. 1562, PD-old.",
-   "file": "images/u1-caravel-fleet-huys.jpg",
-   "kind": "photo"
-  },
-  "lascasas": {
-   "credit": "Bartolome de las Casas at his writing desk — engraving portrait, 1791 (pre-1930 publication); Dominican friar holding a quill, with draped curtain, ink pot, and bookshelf — Public domain (Commons LicenseShortName verified via API; 1791 engraving, pre-1930 publication), via Wikimedia Commons",
-   "file": "images/original-u1-lascasas-portrait-01.jpg",
-   "kind": "photo"
+  "mines": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Slaves_from_Guinea_digging_for_gold_and_silver_in_mines_in_Hispaniola_-_America_%281595%29%2C_A2_-_BL.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File%3ASlaves_from_Guinea_digging_for_gold_and_silver_in_mines_in_Hispaniola_-_America_%281595%29%2C_A2_-_BL.jpg",
+   "file": "images/debry-hispaniola-mines.jpg",
+   "kind": "engraving",
+   "credit": "De Bry: mines in Hispaniola \u2014 Public domain, via Wikimedia Commons"
   },
   "potosi": {
-   "credit": "Indigenous workers in a mine in Potosí, New Spain — Theodor de Bry engraving (1590) of Indigenous mit'a laborers with ore baskets and rock-breaking inside the Potosi silver mine — Public domain (work dated 1590, artist d.1598; verified via Commons API 2026-10-03), via Wikimedia Commons",
-   "file": "images/gap-g-v02-1-potosi-mitayos-debry.jpg",
-   "kind": "photo"
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Indigenous_workers_in_a_mine_in_Potos%C3%AD%2C_New_Spain.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File%3AIndigenous_workers_in_a_mine_in_Potos%C3%AD%2C_New_Spain.jpg",
+   "file": "images/potosi-mita.jpg",
+   "kind": "engraving",
+   "credit": "Potos\u00ed mine workers \u2014 Public domain, via Wikimedia Commons"
   },
-  "sugar": {
-   "credit": "New Inventions of Modern Times -Nova Reperta-, The Invention of Sugar Refinery, plate 13 MET DP841120 — c.1600 engraving of sugar-cane cutting, crushing, boiling and sugar-loaf forming (European-introduced crop in the colonial Americas); Jan Collaert I after Stradanus, Nova Reperta plate 13 — CC0 1.0 (Metropolitan Museum of Art Open Access upload, verified via Commons API 2026-10-03); work c.1600, via Wikimedia Commons",
-   "file": "images/gap-g-v01-1-columbian-sugar-engraving.jpg",
-   "kind": "photo"
+  "lascasas": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Bartolome_de_las_casas.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File%3ABartolome_de_las_casas.jpg",
+   "file": "images/lascasas-portrait.jpg",
+   "kind": "portrait",
+   "credit": "Bartolom\u00e9 de las Casas \u2014 Public domain, via Wikimedia Commons"
+  },
+  "tobacco": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/A_tobacco_plantation_with_black_workers_and_a_white_overseer_Wellcome_V0019120.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File%3AA_tobacco_plantation_with_black_workers_and_a_white_overseer_Wellcome_V0019120.jpg",
+   "file": "images/tobacco-plantation.jpg",
+   "kind": "painting",
+   "credit": "Tobacco plantation \u2014 Public domain, via Wikimedia Commons"
+  },
+  "silver": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Indigenous_workers_in_a_mine_in_Potos%C3%AD%2C_New_Spain.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File%3AIndigenous_workers_in_a_mine_in_Potos%C3%AD%2C_New_Spain.jpg",
+   "file": "images/potosi-mita.jpg",
+   "kind": "engraving",
+   "credit": "Potos\u00ed mine workers \u2014 Public domain, via Wikimedia Commons"
+  },
+  "cane": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Cane_cutters_in_Jamaica.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File%3ACane_cutters_in_Jamaica.jpg",
+   "file": "images/cane-cutters.jpg",
+   "kind": "photo",
+   "credit": "cane-cutters \u2014 Public domain, via Wikimedia Commons"
+  },
+  "sepulveda": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Juan_Gin%C3%A9s_de_Sep%C3%BAlveda_%28cropped%29.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File%3AJuan_Gin%C3%A9s_de_Sep%C3%BAlveda_%28cropped%29.jpg",
+   "file": "images/sepulveda.jpg",
+   "kind": "portrait",
+   "credit": "Juan Gin\u00e9s de Sep\u00falveda \u2014 Public domain, via Wikimedia Commons"
+  },
+  "pueblo": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Loren_Mozley_Pueblo_Revolt_1680_installed_1936_ABQ_NM.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File%3ALoren_Mozley_Pueblo_Revolt_1680_installed_1936_ABQ_NM.jpg",
+   "file": "images/pueblo-revolt.jpg",
+   "kind": "photo",
+   "credit": "pueblo-revolt \u2014 via Wikimedia Commons"
   },
   "taos": {
-   "credit": "Taos Pueblo, New Mexico LCCN2015651512 — Photograph of Taos Pueblo, New Mexico, 1880: multi-story adobe dwellings in an arid landscape. — Photograph of Taos Pueblo, New Mexico, 1880: multi-story adobe dwellings in an arid landscape. [PD: pre-1930], via Wikimedia Commons",
-   "file": "images/original-u1-native-09.jpg",
-   "kind": "photo"
+   "url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Taos_Pueblo%2C_New_Mexico_LCCN2015651512.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File%3ATaos_Pueblo%2C_New_Mexico_LCCN2015651512.jpg",
+   "file": "images/taos-pueblo-clean.jpg",
+   "kind": "photo",
+   "credit": "Taos Pueblo (cropped) \u2014 Public domain, via Wikimedia Commons"
   },
-  "waldseemuller": {
-   "credit": "Waldseemuller map 2 — Detail of Martin Waldseemuller's 1507 world map, the first to use the name 'America' for the western continents. — Detail of Martin Waldseemuller's 1507 world map, the first to use the name 'America' for the western continents. [PD: pre-1930], via Wikimedia Commons",
-   "file": "images/original-ctx-u1-03.jpg",
-   "kind": "photo"
+  "maize": {
+   "url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Florida_Indians_planting_seeds_of_beans_or_maize_LCCN2001695741.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File%3AFlorida_Indians_planting_seeds_of_beans_or_maize_LCCN2001695741.jpg",
+   "file": "images/debry-maize-planting.jpg",
+   "kind": "engraving",
+   "credit": "De Bry, Florida Indians planting maize (1591) \u2014 Public domain, via Wikimedia Commons"
   }
  }
 }

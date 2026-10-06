@@ -1,6 +1,6 @@
 {
  "episode": "u1-e8",
- "notes": "Director's cut for U1-E8 'Pueblo Revolt' (script v4, Maya+Marcus). 15 scenes. Each scene carries a 'turns' [start, end] partition of the 58 TTS turn files (t00..t57) — run refit_durations.py against the rendered turns dir to replace the estimated duration_sec values with measured sums (the mix is a straight concat, so this is exact). Duration estimates: round(words/2.6 + 3 per silence segment + 1.5). Visual grammar: KeywordPops on spoken key terms; StatSlide for the ~400 Spaniards killed; HighlightSlide for Popé's purge and the chastened-empire paradox; StepsSlide recap; displayheadline Q&A; QuoteSlide close. No blank backgrounds. Eyes-closed-safe.",
+ "notes": "Director's cut for U1-E8 'Pueblo Revolt' (script v4, Maya+Marcus). 15 scenes. Each scene carries a 'turns' [start, end] partition of the 58 TTS turn files (t00..t57) \u2014 run refit_durations.py against the rendered turns dir to replace the estimated duration_sec values with measured sums (the mix is a straight concat, so this is exact). Duration estimates: round(words/2.6 + 3 per silence segment + 1.5). Visual grammar: KeywordPops on spoken key terms; StatSlide for the ~400 Spaniards killed; HighlightSlide for Pop\u00e9's purge and the chastened-empire paradox; StepsSlide recap; displayheadline Q&A; QuoteSlide close. No blank backgrounds. Eyes-closed-safe.",
  "scenes": [
   {
    "duration_sec": 32,
@@ -9,7 +9,7 @@
     "bg": {
      "path": "images/original-u1-spanish-mission-01.jpg"
     },
-    "subtitle": "They rose — Episode 8",
+    "subtitle": "They rose \u2014 Episode 8",
     "title": "The Pueblo Revolt"
    },
    "slide": "titleslide",
@@ -30,6 +30,19 @@
      "start": 2.0,
      "type": "keywordpop",
      "word": "kivas"
+    },
+    {
+     "type": "sticker",
+     "image": "images/pueblo-revolt.jpg",
+     "at": [
+      0.86,
+      0.82
+     ],
+     "size": 0.2,
+     "shape": "rect",
+     "start": 4.0,
+     "duration": 8.0,
+     "label": "1680"
     }
    ],
    "params": {
@@ -38,9 +51,9 @@
      "path": "images/original-u1-spanish-mission-01.jpg"
     },
     "points": [
-     "**Franciscans** — convert or burn: kivas banned, masks burned",
-     "**Forced labor** — work for colonists, farmland squeezed",
-     "**Drought + Apache raids** — the empire can't protect"
+     "**Franciscans** \u2014 convert or burn: kivas banned, masks burned",
+     "**Forced labor** \u2014 work for colonists, farmland squeezed",
+     "**Drought + Apache raids** \u2014 the empire can't protect"
     ]
    },
    "slide": "displaypointsslide",
@@ -58,12 +71,12 @@
     {
      "duration": 6.0,
      "start": 24.0,
-     "text": "The soldiers were away fighting Apaches — the governor couldn't afford a war at home",
+     "text": "The soldiers were away fighting Apaches \u2014 the governor couldn't afford a war at home",
      "type": "caption"
     }
    ],
    "params": {
-    "caption": "47 medicine men arrested for 'sorcery' — three hanged; the pueblos march on Santa Fe and Treviño folds",
+    "caption": "47 medicine men arrested for 'sorcery' \u2014 three hanged; the pueblos march on Santa Fe and Trevi\u00f1o folds",
     "image": "images/original-ctx-u1-05.jpg",
     "title": "1675: the crackdown"
    },
@@ -85,6 +98,19 @@
      "start": 20.0,
      "type": "keywordpop",
      "word": "one knot per day"
+    },
+    {
+     "type": "sticker",
+     "image": "images/pueblo-map.jpg",
+     "at": [
+      0.86,
+      0.82
+     ],
+     "size": 0.2,
+     "shape": "rect",
+     "start": 4.0,
+     "duration": 8.0,
+     "label": "MAP"
     }
    ],
    "params": {
@@ -92,9 +118,9 @@
      "type": "textured"
     },
     "points": [
-     "**Taos** — Popé plans from the far north",
-     "**Six languages** — pueblos that never acted together",
-     "**Knot calendar** — one knot per day, untie each morning"
+     "**Taos** \u2014 Pop\u00e9 plans from the far north",
+     "**Six languages** \u2014 pueblos that never acted together",
+     "**Knot calendar** \u2014 one knot per day, untie each morning"
     ]
    },
    "slide": "displaypointsslide",
@@ -115,6 +141,18 @@
      "start": 10.0,
      "type": "keywordpop",
      "word": "August 10, 1680"
+    },
+    {
+     "type": "sticker",
+     "image": "images/potosi-mita.jpg",
+     "at": [
+      0.5,
+      0.88
+     ],
+     "size": 0.18,
+     "shape": "rect",
+     "start": 4.0,
+     "duration": 8.0
     }
    ],
    "params": {
@@ -122,9 +160,9 @@
      "type": "textured"
     },
     "points": [
-     "**The crew** — two runners caught on the road",
-     "**The date moves up** — August 10, 1680",
-     "**400 miles** — Taos to the Hopi villages, and it worked"
+     "**The crew** \u2014 two runners caught on the road",
+     "**The date moves up** \u2014 August 10, 1680",
+     "**400 miles** \u2014 Taos to the Hopi villages, and it worked"
     ]
    },
    "slide": "displaypointsslide",
@@ -142,7 +180,7 @@
     {
      "duration": 8.0,
      "start": 16.0,
-     "text": "They besieged Santa Fe, cut off its water — Governor Otermín journaled the whole disaster",
+     "text": "They besieged Santa Fe, cut off its water \u2014 Governor Oterm\u00edn journaled the whole disaster",
      "type": "caption"
     }
    ],
@@ -150,7 +188,7 @@
     "bg": {
      "type": "textured"
     },
-    "label": "Spaniards killed in the rising — including 21 of New Mexico's 33 Franciscan priests",
+    "label": "Spaniards killed in the rising \u2014 including 21 of New Mexico's 33 Franciscan priests",
     "value": 400
    },
    "slide": "statslide",
@@ -168,7 +206,7 @@
     "bg": {
      "type": "textured"
     },
-    "headline": "Box one: the knotted cords — checked",
+    "headline": "Box one: the knotted cords \u2014 checked",
     "sub": "The calendar that synced an uprising"
    },
    "slide": "displayheadline",
@@ -177,6 +215,21 @@
    "turns": [
     20,
     21
+   ],
+   "overlays": [
+    {
+     "type": "sticker",
+     "image": "images/comanche-horses.jpg",
+     "at": [
+      0.5,
+      0.88
+     ],
+     "size": 0.18,
+     "shape": "rect",
+     "start": 4.0,
+     "duration": 3.5,
+     "label": "HORSES"
+    }
    ]
   },
   {
@@ -195,6 +248,18 @@
      "start": 30.0,
      "text": "We're hearing this through Spanish pens",
      "type": "caption"
+    },
+    {
+     "type": "sticker",
+     "image": "images/white-secotan-village-1585.jpg",
+     "at": [
+      0.86,
+      0.82
+     ],
+     "size": 0.2,
+     "shape": "rect",
+     "start": 4.0,
+     "duration": 8.0
     }
    ],
    "params": {
@@ -203,9 +268,9 @@
      "path": "images/original-u1-native-09.jpg"
     },
     "points": [
-     "**Not a chief** — pueblos had no single ruler, each town ran itself",
-     "**A religious leader** — a medicine man, authority from a vision",
-     "**The vision** — three spirits, glowing eyes, purge the Spanish"
+     "**Not a chief** \u2014 pueblos had no single ruler, each town ran itself",
+     "**A religious leader** \u2014 a medicine man, authority from a vision",
+     "**The vision** \u2014 three spirits, glowing eyes, purge the Spanish"
     ]
    },
    "slide": "displaypointsslide",
@@ -249,6 +314,21 @@
    "turns": [
     29,
     31
+   ],
+   "overlays": [
+    {
+     "type": "sticker",
+     "image": "images/pottery.jpg",
+     "at": [
+      0.86,
+      0.82
+     ],
+     "size": 0.18,
+     "shape": "rect",
+     "start": 4.0,
+     "duration": 8.0,
+     "label": "POTTERY"
+    }
    ]
   },
   {
@@ -268,6 +348,18 @@
      "start": 20.0,
      "type": "keywordpop",
      "word": "1693"
+    },
+    {
+     "type": "sticker",
+     "image": "images/mitchell-map-1755.jpg",
+     "at": [
+      0.86,
+      0.82
+     ],
+     "size": 0.2,
+     "shape": "rect",
+     "start": 4.0,
+     "duration": 8.0
     }
    ],
    "params": {
@@ -276,9 +368,9 @@
      "path": "images/original-u1-spanish-mission-01.jpg"
     },
     "points": [
-     "**1692** — Vargas walks in, negotiates, bloodless",
-     "**1693** — back with hundreds, retakes Santa Fe by force",
-     "**~70 executed** — it wasn't clean"
+     "**1692** \u2014 Vargas walks in, negotiates, bloodless",
+     "**1693** \u2014 back with hundreds, retakes Santa Fe by force",
+     "**~70 executed** \u2014 it wasn't clean"
     ]
    },
    "slide": "displaypointsslide",
@@ -296,7 +388,7 @@
     "bg": {
      "type": "textured"
     },
-    "text": "The flag went back up. The old Spain didn't. Land grants for the pueblos, a defender to argue Native cases in Spanish courts, and the old ceremonies survived underground — still practiced today. They won by losing."
+    "text": "The flag went back up. The old Spain didn't. Land grants for the pueblos, a defender to argue Native cases in Spanish courts, and the old ceremonies survived underground \u2014 still practiced today. They won by losing."
    },
    "slide": "highlightslide",
    "trans_dur": 0.5,
@@ -315,11 +407,11 @@
      "type": "textured"
     },
     "steps": [
-     "**The knotted cords** — one knot per day; runners synced dozens of pueblos across hundreds of miles for August 10, 1680.",
-     "**Popé** — Tewa religious leader from Ohkay Owingeh; the vision of three spirits; won the revolt, lost the pueblos.",
-     "**1692** — negotiated return, the fighty one in 1693; the chastened empire let the old ways survive."
+     "**The knotted cords** \u2014 one knot pe",
+     "**Pop\u00e9** \u2014 Tewa religious leader fr",
+     "**1692** \u2014 negotiated return, the f"
     ],
-    "title": "Three boxes — check them off"
+    "title": "Three boxes \u2014 check them off"
    },
    "slide": "stepsslide",
    "trans_dur": 0.6,
@@ -337,7 +429,7 @@
      "type": "textured"
     },
     "headline": "Two questions, AP-shaped",
-    "sub": "Say your answer before Maya gives it — then check your three boxes"
+    "sub": "Say your answer before Maya gives it \u2014 then check your three boxes"
    },
    "slide": "displayheadline",
    "trans_dur": 0,
@@ -345,6 +437,20 @@
    "turns": [
     49,
     54
+   ],
+   "overlays": [
+    {
+     "type": "sticker",
+     "image": "images/drake-portrait-1583.jpg",
+     "at": [
+      0.86,
+      0.82
+     ],
+     "size": 0.18,
+     "shape": "rect",
+     "start": 4.0,
+     "duration": 8.0
+    }
    ]
   },
   {
@@ -354,7 +460,7 @@
     "bg": {
      "type": "textured"
     },
-    "byline": "Episode 8 · Next: the Unit 1 cram session, the whole unit in one episode",
+    "byline": "Episode 8 \u00b7 Next: the Unit 1 cram session, the whole unit in one episode",
     "quote": "They won by losing."
    },
    "slide": "quoteslide",

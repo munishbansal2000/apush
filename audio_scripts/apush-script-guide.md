@@ -1,23 +1,35 @@
-# Maya + Marcus Script Guide (APUSH audio)
+# Script Guide (APUSH audio)
 
 How E1 got here: v5 was rejected by a high schooler as "ai slop… can't compete
 with heimler." Eleven versions later, v11 works. Every rule below was paid for
 with a specific mistake from that rewrite. Follow this and the next episode
 starts where v11 ended, not where v5 did.
 
+## Formats
+
+- **Maya + Marcus** (host + expert): the default interview format.
+- **Study Buddies** (Maya + Jay): Jay is the student/learner — he guesses
+  wrong, asks real questions, learns; never a second expert.
+- **Story Mode** (Marcus-led, Maya interjects) and **debates** per the
+  lesson map. Voice rules below are written for Maya + Marcus; adapt the
+  spirit (real person, never a cue machine) to the format's cast.
+
 ## The format
 
-Maya (host, student-surrogate) + Marcus (expert). ~8 minutes, hard cap 180 WPM,
-target 1150–1350 words (under ~1150 reads thin for the slot). Maya tracks
+Maya (host, student-surrogate) + Marcus (expert). Hard cap 180 WPM.
+Floor 1,440 spoken words; no fixed ceiling — length serves the substance
+(see 2026-10-06: episodes run 11–12.5 min when the content earns it).
+The cold-open time promise, the header, and the actual word count at
+≤180 WPM must all agree. Maya tracks
 N boxes on her episode sheet; each box gets checked off **in her voice** as
 the episode earns it. Box picks: named terms a student could plausibly see as
 an MCQ stem or SAQ prompt, spread across the episode's topics. Default 3
-boxes; boxes ≤ topics — fold extra topics under a box, never leave a topic
+boxes (4 when the content needs it); boxes ≤ topics — fold extra topics under a box, never leave a topic
 unboxed. A box owns its sub-topics in the recap: if headright lives under
 the tobacco box, the recap says so. Cold open sells the episode in 30 seconds. Topics play as
 conversation, never lecture. Close = recap (Maya drives, fumbles
-welcome) → self-test (question, `[3-second pause]`, Maya gives the model answer
-after the pause) → one shared tagline, once.
+welcome) → self-test (question, `[5-second pause]` — 8–10s for multi-part
+answers — Maya gives the model answer after the pause) → one shared tagline, once.
 
 ## Voice
 
@@ -45,7 +57,9 @@ after the pause) → one shared tagline, once.
 
 **Marcus**
 - Expert, teacherly, crisp. Explains; doesn't lecture. No monologue runs past
-  ~120 words without Maya breaking in.
+  ~100 words without Maya breaking in — a 100+ word single turn is a lecture
+  wearing a costume; the break must push, not feed ("Give me the extremes,"
+  not "how does that break down?").
 - Reactions vary every time. Never "Great question!" twice.
 - Admits uncertainty ("I don't think that's settled").
 - Never announces lists ("Three examples. One… Two… Three…").
@@ -60,10 +74,10 @@ after the pause) → one shared tagline, once.
    episode-sheet boxes are the student-facing version. Plain-language
    equivalents ("cause and effect," "the chain from X to Y") are fine — the
    ban is on the jargon term, not the idea.
-3. Exam-pitch clichés: "the exam counts/loves…". One exam mention per episode
-   max, varied wording. The budget covers *pitches*, not the ritual
-   self-test framing ("Two questions, AP-shaped") or a genuine student
-   question ("So for the test — 1588, why does it matter?").
+3. Empty exam-pitch clichés: "the exam counts/loves…", "shows up on the test,"
+   "if it shows up as an essay question." The ban is on hollow test-talk,
+   not on substantive exam devices (see Exam devices below) — a tip that
+   teaches real analytical work is content, not pitch.
 4. Balanced triples and parallel closers ("Different X, different Y, different
    Z"). One earned chain per episode max, and it must carry real logic
    (necessity, not decoration).
@@ -99,6 +113,25 @@ after the pause) → one shared tagline, once.
     "now the box that matters most," "that's what makes it tricky," twist
     pivots) is hard gate G10 — any occurrence fails.
 
+## Exam devices (standard since U5-E7 v5, 2026-10-06)
+
+Mid-episode exam framing is IN — the 2026-10-05 "test-talk is cut" rule is
+reversed. What changed: empty mentions ("shows up on the test") are still
+banned, but substantive devices that teach exam thinking are now part of
+every episode:
+- **Prediction beats (1–2):** "Your turn." + real pause (8–10s). Ask a
+  question answerable by reasoning, not trivia recall, at a natural decision
+  point. Never let a speaker say "Pause." aloud.
+- **Exam tips:** varied templates, never the same opener twice; each must
+  address a REAL student error (war-aims shift, Emancipation scope,
+  Gettysburg/Vicksburg confusion). No template monoculture.
+- **Common-mistake lines:** one per box, real errors only ("don't write
+  that…" is fine as one template among several, not the only one).
+- **Self-test:** "Three questions, AP-shaped" ritual framing stays; answers
+  in claim–evidence–reasoning shape; at least one stimulus-style. With 4
+  boxes, a fast clearly-labeled bonus question ("One more, fast.") may
+  cover the fourth — the three-question ritual is never broken silently.
+
 ## Episode structure
 
 1. Cold open (Maya): stakes + boxes, ≤30 sec. Shape: one-line continuity nod
@@ -112,16 +145,18 @@ after the pause) → one shared tagline, once.
    The forward tease belongs to the closer, not the transition — one "next
    time" per episode.
 4. Recap (Maya drives; Marcus corrects; fumbles stay in). Ritual opener:
-   "Three boxes, let's land them." — keep the ritual, vary the tissue
-   around it. Two welcome fumble kinds: the memory-check ("the crown
+   "N boxes, let's land them." ("Three boxes…" / "Four boxes…") — keep the
+   ritual, vary the tissue around it. Keep it tight (two sentences is the
+   target; the self-test repeats the content). Two welcome fumble kinds: the memory-check ("the crown
    took... twenty percent?") and the content-fumble ("Stuff goes both
    ways, except the bad stuff mostly goes one way?"). Marcus corrects
    crisply; never lectures the correction.
-5. Self-test: question → `[5-second pause]` → Maya's model answer. Ritual
-   framing ("Two questions, AP-shaped. Say your answer before I give it.")
-   stays consistent across episodes. Make at least one question
-   stimulus-style (a source description → "what's the point of this
-   source?"), not just recall of what Marcus said 30 seconds earlier.
+5. Self-test: question → `[5-second pause]` (8–10s for multi-part) → Maya's
+   model answer. Ritual framing ("Three questions, AP-shaped. Say your
+   answer before I give it.") stays consistent across episodes; a fast
+   labeled bonus ("One more, fast.") may cover a fourth box. Make at least
+   one question stimulus-style (a source description → "what's the point of
+   this source?"), not just recall of what Marcus said 30 seconds earlier.
    Test the boxes, not the trivia.
 6. Closer: the tagline, shared or varied, in new words every episode.
    Exactly once.
@@ -131,16 +166,16 @@ after the pause) → one shared tagline, once.
 Repetition across episodes is intentional when it's ritual, accidental when
 it's tissue:
 - RITUAL (keep consistent): the cold-open box circle ("Circle the ones you
-  couldn't explain right now"), the recap opener ("Three boxes, let's
-  land them."), the self-test framing. These are the show's grammar —
+  couldn't explain right now"), the recap opener ("N boxes, let's land
+  them."), the self-test framing. These are the show's grammar —
   students should feel the shape repeat.
 - TISSUE (vary every episode): the tagline closer, transition lines,
   topic-level language, Maya's asides. Never let two episodes share a full
   sentence outside the ritual lines. (E1 and E2 both wrote "That's the last
   of it" independently — that sentence now belongs to neither; find a new
   transition each time.)
-- CHECK LAYERS (don't double-count): the recap ("Three boxes, let's land
-  them") is the check layer, plus the closing "Check your three boxes."
+- CHECK LAYERS (don't double-count): the recap ("N boxes, let's land
+  them") is the check layer, plus the closing "Check your boxes."
   Mid-episode check-ins are optional — one "one down" beat max. Never check
   every box mid-episode AND run a full recap.
 - Continuity: the cold open's "Last time:" line is the only required
@@ -171,8 +206,14 @@ it's tissue:
 2. Run `apush-script-gates.py` — fix every FAIL.
 3. Read every WARN; keep or fix with intent.
 4. Human read-aloud (or TTS skim) for rhythm.
-5. User approves the script.
-6. Only then render. **Never render an unapproved script.**
+5. **Blind validation (mandatory, three layers).** No script ships without all three:
+   - **Layer 1 — hard scripted validators.** `apush-script-gates.py`, all 12 gates green. Mechanical, repeatable. G12 checks the script against `apush-fact-registry.yaml` (known falsehoods).
+   - **Layer 2 — clean-context word-by-word read.** A fresh agent that did NOT write or repair the script reads every word of the final draft and validates each rule individually: human ear (no AI slop), no shorthands, voice (Maya as a person), episode structure, format per the lesson map, complete + correct CED coverage. Findings are line-level: quote the line, name the rule, fix or flag. The writer never validates their own work.
+   - **Layer 3 — dedicated fact-check (cross-referenced sources).** A fresh agent whose ONLY job is factual accuracy — not ear, not structure. They extract every checkable claim in the script (dates, numbers, names, causal claims, quotes, superlatives like "first/only/bloodiest") and verify EACH against the source hierarchy: **Tier 1** — the books (`books/extracted/5steps2024/`, `premium2027/`, `princeton/`) and the transcripts (`public_content/`) first; **Tier 2** (only when Tier 1 is insufficient) — exactly two verified sources: **Britannica** (general history) and the **National Park Service** (battles, places, military specifics). Broad internet search is NOT a source. If a claim can't be verified in Tier 1 + Tier 2, it's UNVERIFIABLE — report it, don't hunt further. Line-level report: quote the claim, verdict (confirmed / contested / wrong / unverifiable), tier + sources cited. Any "wrong" or "unverifiable" claim blocks the lock — the script goes back for repair and re-check. Layer 2's "fact accuracy" bullet is ear-adjacent spot-checking; Layer 3 is the real factual gate. (Added 2026-10-06: Layer 1+2 passed U5-E7 v2 with ~12 factual errors. Never again.)
+   - **Layer 3 also judges framing, not just claims.** A claim can be technically true while the framing misleads ("McClellan ran as the peace candidate" — the platform was peace, but he disowned the plank). The fact-checker must: (a) check characterizations and labels, not just dates/numbers; (b) verify that nuance present in the sources survives into the script — if a source hedges and the script flattens, flag it; (c) check quote/event PLACEMENT — a true quote in the wrong narrative position is a factual error; (d) treat "technically true but misleading" as WRONG. Accuracy is the moat: when sources disagree or a framing is debatable, the script hedges or presents the debate — never flattens it. (Added 2026-10-06: the user's reads kept catching framing errors — Sherman "never civilians," McClellan "peace candidate" — that claim-verification had passed. Claim-checking without framing judgment is what failed.)
+   - **Registry discipline.** Every factual correction from any layer goes into `apush-fact-registry.yaml` the same day: the correct statement, a falsehood pattern for G12, and the sources. A correction that isn't in the registry will regress.
+6. User approves the script.
+7. Only then render. **Never render an unapproved script.**
 
 ## Production (TTS)
 
@@ -182,9 +223,10 @@ it's tissue:
 - Pronunciation: put a `# Pronunciation:` line in the header with
   phonetic spellings for every risky name/term (Potosí, de Bry, mita…).
   Test the riskiest three in the voice before full render.
-- Length: time a test render. ~1150–1350 words at ≤180 WPM plus pauses
-  should land ≈8–8.5 min; if it doesn't, the word count is wrong, not
-  the estimate.
+- Length: time a test render. Floor is 1,440 spoken words at ≤180 WPM;
+  runtime varies with substance (11–12.5 min is normal for a full episode).
+  The header, the cold-open time promise, and the actual count must agree —
+  if they don't, the word count is wrong, not the estimate.
 - School-safe vocabulary (hard gate G11): no profanity in dialogue, however
   historical the nickname. Find the polite translation and wink at it
   ("fire-pooper," and yes, that's the polite translation).
@@ -196,6 +238,17 @@ it's tissue:
 - Whether it's actually fun (the high-schooler test: one "ai slop" = fail).
 
 ## Changelog
+
+- 2026-10-06 (guideline cleanup): resolved six conflicts between the guide
+  and current practice — (1) length: 1150–1350 / ~8 min replaced by 1,440
+  floor, no fixed ceiling, header/intro/actual must agree; (2) the
+  2026-10-05 "mid-episode test-talk is cut" rule formally REVERSED — exam
+  devices (prediction beats, exam tips, common-mistake lines) are now
+  standard, empty test-talk still banned; (3) self-test: fast labeled
+  bonus question allowed for 4-box coverage; (4) pauses standardized (5s
+  default, 8–10s multi-part); (5) Marcus turn cap 100 words (was 120);
+  (6) ritual lines parameterized ("N boxes"); formats section added
+  (Maya+Marcus / Study Buddies / Story Mode / debates).
 
 - 2026-10-04 (E1 v1–v11): initial guide + gates. Gold standard: v11
   (1214 words, 152 WPM, all 7 gates pass).
@@ -240,3 +293,30 @@ it's tissue:
   "on this much, historians agree," Enter [Name]), G11 school-safe
   vocabulary; plus W7 Maya declarative presence (<4 warns). E1 v11 → v12
   (retired "That's the last of it"). All three episodes pass all 11.
+- 2026-10-05 (E5–E9 pipeline): coordinator ran E5 Silver Empire, E6 Labor
+  Systems, E7 Valladolid Debate, E8 Pueblo Revolt, E9 Cram Session through
+  the full pipeline (clean draft → gates → web fact-check → 2 blind reviews
+  → fixes). All pass all 11 gates. E4 v4 → v5: one-line "next time" tease
+  fix (E5 is a chronological rewind to the silver mountain, not forward to
+  the Pilgrims). E9 cross-checked all eight episodes: zero contradictions.
+  G1 hardened: starter regex now catches That's/Here's/Here-is after a
+  leading quoted segment (`." That's…`), which had evaded detection in E6.
+- 2026-10-05 (16-year-old ear test, E1+E8): neutral-16yo critique found six
+  issues the gates can't see; fixed in E1 v13 / E8 v4. Durable rules:
+  (1) Cold open lands the story hook inside the first ~45 words — box admin
+  first, then a dare or a striking image, no exam pitch up front.
+  (2) Marcus turns stay in true back-and-forth; a 100+ word single turn is a
+  lecture wearing a costume — split with Maya interjections that push, not
+  feed ("Give me the extremes," not "how does that break down?").
+  (3) Mid-episode test-talk is cut ("shows up on the test," "if it shows up
+  as an essay question"); the box ritual and end self-test carry the exam
+  framing alone. Trust the story to be interesting.
+  (4) Every non-obvious term gets an inline gloss the first time
+  (matrilineal → "clans traced through the mother's line"); never assume a
+  word the class might not have.
+  (5) Maya's prompts must be real questions, wrong guesses, or objections —
+  never feed lines. Her best moments are disagreements ("I don't buy 'won
+  by losing,' though").
+  E1 v13 rebuilt scenes 3/13 turn partitions in the scene plan (50→58 TTS
+  segments) with word-offset keywordpop retiming; E8 v4 is a one-line
+  theocracy gloss, plan turns unchanged.

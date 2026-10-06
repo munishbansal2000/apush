@@ -1,1 +1,493 @@
-{"episode":"u1-e3","notes":"Director's cut for U1-E3 'Empire and Envy' (script v5, Maya+Marcus). 16 scenes. Each scene carries a 'turns' [start, end] partition of the 53 TTS turn files (t00..t52, including the two 5s self-test silences) — run refit_durations.py against the rendered turns dir to replace the estimated duration_sec values with measured sums (the mix is a straight concat, so this is exact). Visual grammar: KeywordPops on the key terms (1545, Potosí, mercantilism, mita, Theodor de Bry, Las Casas, Valladolid, Cacafuego); ImageSlide for the Potosí woodcut, the de Bry mine engraving, the Las Casas cruelty engraving and portrait, and the Huys fleet; DisplayPointsSlide for the empire's machine, the Roanoke facts, and Philip's motives for the Armada; DisplayHeadline for the 'uniquely' beat, the CROATOAN mystery, the Armada aftermath, and the AP-shaped Q&A; StepsSlide for the three-box recap; QuoteSlide for the closing tagline. No blank backgrounds. Eyes-closed-safe.","scenes":[{"duration_sec":24,"id":"scene-01","params":{"bg":{"path":"images/potosi-woodcut.jpg"},"subtitle":"Spain's America and England's Answer — Episode 3","title":"Empire and Envy"},"slide":"titleslide","trans_dur":0,"transition":"cut","turns":[0,0]},{"duration_sec":29,"id":"scene-02","overlays":[{"duration":2.2,"position":"left","start":4.0,"type":"keywordpop","word":"1545"},{"duration":2.2,"position":"right","start":16.0,"type":"keywordpop","word":"Potosí"}],"params":{"caption":"A silver mountain in Bolivia — soon one of the biggest cities on earth","image":"images/potosi-woodcut.jpg","title":"A mountain of silver"},"slide":"imageslide","trans_dur":0.5,"transition":"crossfade","turns":[1,2]},{"duration_sec":37,"id":"scene-03","overlays":[{"duration":2.2,"position":"left","start":10.0,"type":"keywordpop","word":"mercantilism"},{"duration":2.2,"position":"right","start":24.0,"type":"keywordpop","word":"price revolution"}],"params":{"bg":{"type":"textured"},"text":"The crown takes ==twenty percent== off the top of every strike — the royal fifth. ==Mercantilism==: a nation's wealth is the gold and silver it stockpiles. Silver floods in, prices rise for a century — the ==price revolution==."},"slide":"highlightslide","trans_dur":0.5,"transition":"crossfade","turns":[3,5]},{"duration_sec":42,"id":"scene-04","overlays":[{"duration":2.2,"position":"left","start":6.0,"type":"keywordpop","word":"mita"},{"duration":8.0,"start":24.0,"text":"Ore crushed and mixed with mercury to pull the silver out — a trick the Spanish brought in the 1570s","type":"caption"}],"params":{"caption":"One year in seven — in the dark, breathing mercury","image":"images/potosi-mita.jpg","title":"The mita"},"slide":"imageslide","trans_dur":0.5,"transition":"crossfade","turns":[6,9]},{"duration_sec":43,"id":"scene-05","params":{"bg":{"dim":0.72,"path":"images/casta-painting.jpg"},"points":["**Missions** — conversion, and control of Native labor","**Peninsulares** — born in Spain, at the top","**Criollos** — born in the Americas, a step down","**Mestizos and castas** — part custom, part law; it decided who could hold office"]},"slide":"displaypointsslide","trans_dur":0.5,"transition":"crossfade","turns":[10,11]},{"duration_sec":30,"id":"scene-06","overlays":[{"duration":2.2,"position":"right","start":8.0,"type":"keywordpop","word":"Theodor de Bry"},{"duration":8.0,"start":19.0,"text":"English and Dutch pamphlets — nothing sold like horror","type":"caption"}],"params":{"caption":"Spaniards setting dogs on Native villagers — while priests looked on","image":"images/lascasas-cruelty.jpg","title":"Black Legend material"},"slide":"imageslide","trans_dur":0.5,"transition":"crossfade","turns":[12,14]},{"duration_sec":31,"id":"scene-07","overlays":[{"duration":2.2,"position":"left","start":4.0,"type":"keywordpop","word":"Las Casas"},{"duration":2.2,"position":"right","start":14.0,"type":"keywordpop","word":"Valladolid, 1550"}],"params":{"caption":"Las Casas wrote the cruelty down — and a formal debate asked whether conquest could ever be just","image":"images/lascasas-portrait.jpg","title":"Based on real accounts"},"slide":"imageslide","trans_dur":0.5,"transition":"crossfade","turns":[15,16]},{"duration_sec":19,"id":"scene-08","params":{"bg":{"type":"textured"},"headline":"The lie was the word 'uniquely'","sub":"Exaggerated, not invented — and it bought England a moral excuse to go after Spanish ships"},"slide":"displayheadline","trans_dur":0.5,"transition":"crossfade","turns":[17,18]},{"duration_sec":53,"id":"scene-09","overlays":[{"duration":2.2,"position":"right","start":16.0,"type":"keywordpop","word":"Cacafuego"},{"duration":8.0,"start":30.0,"text":"The queen's share alone roughly matched an entire year of crown revenue","type":"caption"}],"params":{"caption":"Drake, 1577–1580: around the world, robbing Spanish ports the whole way","image":"images/caravel-fleet.jpg","title":"A pirate with a license"},"slide":"imageslide","trans_dur":0.6,"transition":"crossfade","turns":[19,23]},{"duration_sec":40,"id":"scene-10","params":{"bg":{"type":"textured"},"points":["**1587** — about 117 colonists land on Roanoke Island","**Virginia Dare** — the first English kid born in the Americas","**1590** — Governor White returns; everyone's gone"]},"slide":"displaypointsslide","trans_dur":0.5,"transition":"crossfade","turns":[24,27]},{"duration_sec":21,"id":"scene-11","params":{"bg":{"type":"textured"},"headline":"CROATOAN","sub":"No bodies, no battle, no distress signal — America's first unsolved mystery"},"slide":"displayheadline","trans_dur":0.5,"transition":"crossfade","turns":[28,31]},{"duration_sec":32,"id":"scene-12","params":{"bg":{"dim":0.72,"path":"images/caravel-fleet.jpg"},"points":["**Cádiz** — Drake raids the fleet, 1587","**The Dutch** — Elizabeth bankrolls the rebels","**Mary, Queen of Scots** — the Catholic heir is executed"]},"slide":"displaypointsslide","trans_dur":0.5,"transition":"crossfade","turns":[32,34]},{"duration_sec":40,"id":"scene-13","params":{"bg":{"type":"textured"},"headline":"Half the fleet never came home","sub":"1588: Protestant England survives — and the myth that Spain can't be beaten cracks"},"slide":"displayheadline","trans_dur":0.5,"transition":"crossfade","turns":[35,37]},{"duration_sec":43,"id":"scene-14","params":{"banner":"RECAP","bg":{"type":"textured"},"steps":["**Potosí, 1545** — a mountain of silver; the crown takes twenty percent, the royal fifth, and Native mita labor pays for it in mercury and lives.","**The Black Legend** — England and the Dutch exaggerate real Spanish cruelty; it buys them a moral excuse.","**England's challenge** — Drake's privateers, the Roanoke mystery, then 1588: half the Armada never comes home."],"title":"Three boxes — check them off"},"slide":"stepsslide","trans_dur":0.6,"transition":"crossfade","turns":[38,43]},{"duration_sec":46,"id":"scene-15","params":{"bg":{"type":"textured"},"headline":"Two questions, AP-shaped","sub":"Say your answer before Maya gives it — then check your three boxes"},"slide":"displayheadline","trans_dur":0,"transition":"cut","turns":[44,49]},{"duration_sec":15,"id":"scene-16","params":{"bg":{"type":"textured"},"byline":"Episode 3 · Next: England stops raiding and starts planting — Jamestown, 1607","quote":"Spain built an empire on silver.\n\nAnd England spent decades trying to take it apart."},"slide":"quoteslide","trans_dur":0.8,"transition":"dip","turns":[50,52]}],"version":1}
+{
+ "episode": "u1-e3",
+ "notes": "Director's cut for U1-E3 'Empire and Envy' (script v5, Maya+Marcus). 16 scenes. Each scene carries a 'turns' [start, end] partition of the 53 TTS turn files (t00..t52, including the two 5s self-test silences) \u2014 run refit_durations.py against the rendered turns dir to replace the estimated duration_sec values with measured sums (the mix is a straight concat, so this is exact). Visual grammar: KeywordPops on the key terms (1545, Potos\u00ed, mercantilism, mita, Theodor de Bry, Las Casas, Valladolid, Cacafuego); ImageSlide for the Potos\u00ed woodcut, the de Bry mine engraving, the Las Casas cruelty engraving and portrait, and the Huys fleet; DisplayPointsSlide for the empire's machine, the Roanoke facts, and Philip's motives for the Armada; DisplayHeadline for the 'uniquely' beat, the CROATOAN mystery, the Armada aftermath, and the AP-shaped Q&A; StepsSlide for the three-box recap; QuoteSlide for the closing tagline. No blank backgrounds. Eyes-closed-safe.",
+ "scenes": [
+  {
+   "duration_sec": 24,
+   "id": "scene-01",
+   "params": {
+    "bg": {
+     "path": "images/potosi-woodcut.jpg"
+    },
+    "subtitle": "Spain's America and England's Answer \u2014 Episode 3",
+    "title": "Empire and Envy"
+   },
+   "slide": "titleslide",
+   "trans_dur": 0,
+   "transition": "cut",
+   "turns": [
+    0,
+    0
+   ],
+   "overlays": [
+    {
+     "type": "sticker",
+     "image": "images/armada-calais-pine-1739.jpg",
+     "at": [
+      0.86,
+      0.82
+     ],
+     "size": 0.2,
+     "shape": "rect",
+     "start": 2.0,
+     "duration": 6.0,
+     "label": "ARMADA"
+    }
+   ]
+  },
+  {
+   "duration_sec": 29,
+   "id": "scene-02",
+   "overlays": [
+    {
+     "duration": 2.2,
+     "position": "left",
+     "start": 4.0,
+     "type": "keywordpop",
+     "word": "1545"
+    },
+    {
+     "duration": 2.2,
+     "position": "right",
+     "start": 16.0,
+     "type": "keywordpop",
+     "word": "Potos\u00ed"
+    }
+   ],
+   "params": {
+    "caption": "A silver mountain in Bolivia \u2014 soon one of the biggest cities on earth",
+    "image": "images/potosi-woodcut.jpg",
+    "title": "A mountain of silver"
+   },
+   "slide": "imageslide",
+   "trans_dur": 0.5,
+   "transition": "crossfade",
+   "turns": [
+    1,
+    2
+   ]
+  },
+  {
+   "duration_sec": 37,
+   "id": "scene-03",
+   "overlays": [
+    {
+     "duration": 2.2,
+     "position": "left",
+     "start": 10.0,
+     "type": "keywordpop",
+     "word": "mercantilism"
+    },
+    {
+     "duration": 2.2,
+     "position": "right",
+     "start": 24.0,
+     "type": "keywordpop",
+     "word": "price revolution"
+    },
+    {
+     "type": "sticker",
+     "image": "images/casta-painting.jpg",
+     "at": [
+      0.86,
+      0.82
+     ],
+     "size": 0.2,
+     "shape": "rect",
+     "start": 4.0,
+     "duration": 8.0,
+     "label": "CASTA"
+    }
+   ],
+   "params": {
+    "bg": {
+     "type": "textured"
+    },
+    "text": "The crown takes ==twenty percent== off the top of every strike \u2014 the royal fifth. ==Mercantilism==: a nation's wealth is the gold and silver it stockpiles. Silver floods in, prices rise for a century \u2014 the ==price revolution==."
+   },
+   "slide": "highlightslide",
+   "trans_dur": 0.5,
+   "transition": "crossfade",
+   "turns": [
+    3,
+    5
+   ]
+  },
+  {
+   "duration_sec": 42,
+   "id": "scene-04",
+   "overlays": [
+    {
+     "duration": 2.2,
+     "position": "left",
+     "start": 6.0,
+     "type": "keywordpop",
+     "word": "mita"
+    },
+    {
+     "duration": 8.0,
+     "start": 24.0,
+     "text": "Ore crushed and mixed with mercury to pull the silver out \u2014 a trick the Spanish brought in the 1570s",
+     "type": "caption"
+    },
+    {
+     "type": "sticker",
+     "image": "images/drake-portrait-1583.jpg",
+     "at": [
+      0.86,
+      0.82
+     ],
+     "size": 0.2,
+     "shape": "rect",
+     "start": 4.0,
+     "duration": 8.0,
+     "label": "DRAKE"
+    }
+   ],
+   "params": {
+    "caption": "One year in seven \u2014 in the dark, breathing mercury",
+    "image": "images/potosi-mita.jpg",
+    "title": "The mita"
+   },
+   "slide": "imageslide",
+   "trans_dur": 0.5,
+   "transition": "crossfade",
+   "turns": [
+    6,
+    9
+   ]
+  },
+  {
+   "duration_sec": 43,
+   "id": "scene-05",
+   "params": {
+    "bg": {
+     "dim": 0.72,
+     "path": "images/casta-painting.jpg"
+    },
+    "points": [
+     "**Missions** \u2014 conversion, and control of Native labor",
+     "**Peninsulares** \u2014 born in Spain, at the top",
+     "**Criollos** \u2014 born in the Americas, a step down",
+     "**Mestizos and castas** \u2014 part custom, part law; it decided who could hold office"
+    ]
+   },
+   "slide": "displaypointsslide",
+   "trans_dur": 0.5,
+   "transition": "crossfade",
+   "turns": [
+    10,
+    11
+   ],
+   "overlays": [
+    {
+     "type": "sticker",
+     "image": "images/piece-of-eight.jpg",
+     "at": [
+      0.86,
+      0.82
+     ],
+     "size": 0.18,
+     "shape": "rect",
+     "start": 4.0,
+     "duration": 8.0
+    }
+   ]
+  },
+  {
+   "duration_sec": 30,
+   "id": "scene-06",
+   "overlays": [
+    {
+     "duration": 2.2,
+     "position": "right",
+     "start": 8.0,
+     "type": "keywordpop",
+     "word": "Theodor de Bry"
+    },
+    {
+     "duration": 8.0,
+     "start": 19.0,
+     "text": "English and Dutch pamphlets \u2014 nothing sold like horror",
+     "type": "caption"
+    }
+   ],
+   "params": {
+    "caption": "Spaniards setting dogs on Native villagers \u2014 while priests looked on",
+    "image": "images/lascasas-cruelty.jpg",
+    "title": "Black Legend material"
+   },
+   "slide": "imageslide",
+   "trans_dur": 0.5,
+   "transition": "crossfade",
+   "turns": [
+    12,
+    14
+   ]
+  },
+  {
+   "duration_sec": 31,
+   "id": "scene-07",
+   "overlays": [
+    {
+     "duration": 2.2,
+     "position": "left",
+     "start": 4.0,
+     "type": "keywordpop",
+     "word": "Las Casas"
+    },
+    {
+     "duration": 2.2,
+     "position": "right",
+     "start": 14.0,
+     "type": "keywordpop",
+     "word": "Valladolid, 1550"
+    }
+   ],
+   "params": {
+    "caption": "Las Casas wrote the cruelty down \u2014 and a formal debate asked whether conquest could ever be just",
+    "image": "images/lascasas-portrait.jpg",
+    "title": "Based on real accounts"
+   },
+   "slide": "imageslide",
+   "trans_dur": 0.5,
+   "transition": "crossfade",
+   "turns": [
+    15,
+    16
+   ]
+  },
+  {
+   "duration_sec": 19,
+   "id": "scene-08",
+   "params": {
+    "bg": {
+     "type": "textured"
+    },
+    "headline": "The lie was the word 'uniquely'",
+    "sub": "Exaggerated, not invented \u2014 and it bought England a moral excuse to go after Spanish ships"
+   },
+   "slide": "displayheadline",
+   "trans_dur": 0.5,
+   "transition": "crossfade",
+   "turns": [
+    17,
+    18
+   ],
+   "overlays": [
+    {
+     "type": "sticker",
+     "image": "images/cortes.jpg",
+     "at": [
+      0.16,
+      0.82
+     ],
+     "size": 0.2,
+     "shape": "rect",
+     "start": 4.0,
+     "duration": 8.0,
+     "label": "CORT\u00c9S"
+    }
+   ]
+  },
+  {
+   "duration_sec": 53,
+   "id": "scene-09",
+   "overlays": [
+    {
+     "duration": 2.2,
+     "position": "right",
+     "start": 16.0,
+     "type": "keywordpop",
+     "word": "Cacafuego"
+    },
+    {
+     "duration": 8.0,
+     "start": 30.0,
+     "text": "The queen's share alone roughly matched an entire year of crown revenue",
+     "type": "caption"
+    }
+   ],
+   "params": {
+    "caption": "Drake, 1577\u20131580: around the world, robbing Spanish ports the whole way",
+    "image": "images/caravel-fleet.jpg",
+    "title": "A pirate with a license"
+   },
+   "slide": "imageslide",
+   "trans_dur": 0.6,
+   "transition": "crossfade",
+   "turns": [
+    19,
+    23
+   ]
+  },
+  {
+   "duration_sec": 40,
+   "id": "scene-10",
+   "params": {
+    "bg": {
+     "type": "textured"
+    },
+    "points": [
+     "**1587** \u2014 about 117 colonists land on Roanoke Island",
+     "**Virginia Dare** \u2014 the first English kid born in the Americas",
+     "**1590** \u2014 Governor White returns; everyone's gone"
+    ]
+   },
+   "slide": "displaypointsslide",
+   "trans_dur": 0.5,
+   "transition": "crossfade",
+   "turns": [
+    24,
+    27
+   ],
+   "overlays": [
+    {
+     "type": "sticker",
+     "image": "images/otumba.jpg",
+     "at": [
+      0.86,
+      0.82
+     ],
+     "size": 0.2,
+     "shape": "rect",
+     "start": 4.0,
+     "duration": 8.0,
+     "label": "OTUMBA"
+    }
+   ]
+  },
+  {
+   "duration_sec": 21,
+   "id": "scene-11",
+   "params": {
+    "bg": {
+     "type": "textured"
+    },
+    "headline": "CROATOAN",
+    "sub": "No bodies, no battle, no distress signal \u2014 America's first unsolved mystery"
+   },
+   "slide": "displayheadline",
+   "trans_dur": 0.5,
+   "transition": "crossfade",
+   "turns": [
+    28,
+    31
+   ]
+  },
+  {
+   "duration_sec": 32,
+   "id": "scene-12",
+   "params": {
+    "bg": {
+     "dim": 0.72,
+     "path": "images/caravel-fleet.jpg"
+    },
+    "points": [
+     "**C\u00e1diz** \u2014 Drake raids the fleet, 1587",
+     "**The Dutch** \u2014 Elizabeth bankrolls the rebels",
+     "**Mary, Queen of Scots** \u2014 the Catholic heir is executed"
+    ]
+   },
+   "slide": "displaypointsslide",
+   "trans_dur": 0.5,
+   "transition": "crossfade",
+   "turns": [
+    32,
+    34
+   ],
+   "overlays": [
+    {
+     "type": "sticker",
+     "image": "images/white-secotan-village-1585.jpg",
+     "at": [
+      0.86,
+      0.82
+     ],
+     "size": 0.2,
+     "shape": "rect",
+     "start": 4.0,
+     "duration": 8.0
+    }
+   ]
+  },
+  {
+   "duration_sec": 40,
+   "id": "scene-13",
+   "params": {
+    "bg": {
+     "type": "textured"
+    },
+    "headline": "Half the fleet never came home",
+    "sub": "1588: Protestant England survives \u2014 and the myth that Spain can't be beaten cracks"
+   },
+   "slide": "displayheadline",
+   "trans_dur": 0.5,
+   "transition": "crossfade",
+   "turns": [
+    35,
+    37
+   ]
+  },
+  {
+   "duration_sec": 43,
+   "id": "scene-14",
+   "params": {
+    "banner": "RECAP",
+    "bg": {
+     "type": "textured"
+    },
+    "steps": [
+     "**Potos\u00ed, 1545** \u2014 silver; crown takes 20%.",
+     "**Black Legend** \u2014 England exaggerates cruelty.",
+     "**1588** \u2014 Armada destroyed."
+    ],
+    "title": "Three boxes \u2014 check them off"
+   },
+   "slide": "stepsslide",
+   "trans_dur": 0.6,
+   "transition": "crossfade",
+   "turns": [
+    38,
+    43
+   ]
+  },
+  {
+   "duration_sec": 46,
+   "id": "scene-15",
+   "params": {
+    "bg": {
+     "type": "textured"
+    },
+    "headline": "Two questions, AP-shaped",
+    "sub": "Say your answer before Maya gives it \u2014 then check your three boxes"
+   },
+   "slide": "displayheadline",
+   "trans_dur": 0,
+   "transition": "cut",
+   "turns": [
+    44,
+    49
+   ]
+  },
+  {
+   "duration_sec": 15,
+   "id": "scene-16",
+   "params": {
+    "bg": {
+     "type": "textured"
+    },
+    "byline": "Episode 3 \u00b7 Next: England stops raiding and starts planting \u2014 Jamestown, 1607",
+    "quote": "Spain built an empire on silver.\n\nAnd England spent decades trying to take it apart."
+   },
+   "slide": "quoteslide",
+   "trans_dur": 0.8,
+   "transition": "dip",
+   "turns": [
+    50,
+    52
+   ]
+  }
+ ],
+ "version": 1
+}

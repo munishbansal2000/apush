@@ -33,7 +33,7 @@ video-pipeline/episodes/*/audio/
 video-pipeline/episodes/*/work/*.mp4
 video-pipeline/episodes/*/work/*.fingerprint.json
 # Generated AI clips (regenerable via the clips stage; LTX/5090 outputs).
-video-pipeline/episodes/*/clips/*.mp4
+video-pipeline/episodes/*/clips/
 # Test-loop scratch: regenerable per-turn TTS + mixes, placeholder
 # clips, and run outputs (timings, verify, director prompt).
 video-pipeline/episodes/*/test_assets/
@@ -42,5 +42,6 @@ video-pipeline/episodes/*/work/timings.json
 video-pipeline/episodes/*/work/proofs/
 video-pipeline/episodes/*/work/verify.json
 video-pipeline/episodes/*/work/director_prompt.txt
-video-pipeline/episodes/*/work/director_prompt_*.txt
-video-pipeline/episodes/*/work/word_times.json
+# Downloaded image binaries are local QA only (images.json URLs are the
+# source of truth). Never commit these.
+video-pipeline/episodes/*/images/

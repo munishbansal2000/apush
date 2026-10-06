@@ -1,0 +1,709 @@
+{
+ "episode": "u1-e2",
+ "note": "DRAFT v6 plan from apush-audio-u1-e2-script-v6-DRAFT.md. Schema v2 (absolute timeline). Durations are WORD-COUNT ESTIMATES at ~158 WPM \u2014 must be refit with refit_durations.py after TTS render. No rendering until Munish approves the v6 script.",
+ "scenes": [
+  {
+   "duration_sec": 25.39,
+   "id": "scene-00",
+   "overlays": [],
+   "params": {
+    "boxes": [
+     {
+      "label": "Columbian Exchange"
+     },
+     {
+      "label": "Encomienda"
+     },
+     {
+      "label": "Tordesillas"
+     }
+    ],
+    "footer": "Episode 2",
+    "kicker": "APUSH Unit 1",
+    "subtitle": "A Genoese sailor gets the math wrong",
+    "title": "Wrong Map, New World",
+    "unit": 1
+   },
+   "slide": "EraCardSlide",
+   "start_sec": 0.0,
+   "trans_dur": 0,
+   "transition": "cut"
+  },
+  {
+   "duration_sec": 15.43,
+   "id": "scene-01",
+   "overlays": [],
+   "params": {
+    "bg": {
+     "path": "images/gold-coins.jpg",
+     "type": "image"
+    },
+    "headline": "Gold",
+    "sub": "Spices, silk, and the Ottoman toll road"
+   },
+   "slide": "DisplayHeadline",
+   "start_sec": 25.39,
+   "trans_dur": 0,
+   "transition": "cut"
+  },
+  {
+   "duration_sec": 18.36,
+   "id": "scene-02",
+   "overlays": [],
+   "params": {
+    "bg": {
+     "path": "images/cathedral.jpg",
+     "type": "image"
+    },
+    "headline": "God",
+    "sub": "The Reconquista ends at Granada, 1492"
+   },
+   "slide": "DisplayHeadline",
+   "start_sec": 40.82,
+   "trans_dur": 0,
+   "transition": "cut"
+  },
+  {
+   "duration_sec": 20.62,
+   "id": "scene-03",
+   "overlays": [],
+   "params": {
+    "bg": {
+     "type": "image",
+     "path": "images/carrack-1565.jpg"
+    },
+    "headline": "Glory",
+    "sub": "Portugal's getting rich. Rivals notice."
+   },
+   "slide": "DisplayHeadline",
+   "start_sec": 59.18,
+   "trans_dur": 0,
+   "transition": "cut"
+  },
+  {
+   "duration_sec": 15.96,
+   "id": "scene-04",
+   "params": {
+    "image": "images/henry-navigator.jpg",
+    "stops": [
+     {
+      "scale": 1.0,
+      "cx": 0.5,
+      "cy": 0.5
+     },
+     {
+      "scale": 1.12,
+      "cx": 0.52,
+      "cy": 0.48
+     }
+    ],
+    "caption": "Henry the Navigator \u2014 the prince who never sailed"
+   },
+   "slide": "KenBurnsSlide",
+   "start_sec": 79.8,
+   "trans_dur": 0,
+   "transition": "cut",
+   "overlays": []
+  },
+  {
+   "duration_sec": 27.48,
+   "id": "scene-05",
+   "overlays": [],
+   "params": {
+    "title": "The toolkit",
+    "panels": [
+     {
+      "image": "images/caravel-replicas.jpg",
+      "label": "Caravel \u2014 small, fast",
+      "at": 4.32,
+      "from": "left"
+     },
+     {
+      "image": "images/carrack-1565.jpg",
+      "label": "Lateen sails \u2014 claw into the wind",
+      "at": 9.27,
+      "from": "right"
+     },
+     {
+      "image": "images/astrolabe-detail.jpg",
+      "label": "Astrolabe \u2014 latitude off the stars",
+      "at": 14.55,
+      "from": "left"
+     },
+     {
+      "label": "Magnetic compass \u2014 heading at sea",
+      "at": 19.11,
+      "from": "right",
+      "image": "images/compass-16th-century.jpg"
+     }
+    ],
+    "bg": {
+     "type": "era",
+     "unit": 1
+    }
+   },
+   "slide": "StaggerSlide",
+   "start_sec": 95.76,
+   "trans_dur": 0,
+   "transition": "cut"
+  },
+  {
+   "duration_sec": 7.92,
+   "id": "scene-06",
+   "overlays": [],
+   "params": {
+    "caption": "The sea of darkness \u2014 past the edge of every map",
+    "image": "images/sea-of-darkness.jpg",
+    "title": ""
+   },
+   "slide": "ImageSlide",
+   "start_sec": 123.24,
+   "trans_dur": 0,
+   "transition": "cut"
+  },
+  {
+   "duration_sec": 12.53,
+   "id": "scene-07",
+   "overlays": [
+    {
+     "type": "keywordpop",
+     "word": "Dias, 1488",
+     "start": 0.5,
+     "duration": 3.0
+    },
+    {
+     "type": "keywordpop",
+     "word": "da Gama, 1498",
+     "start": 4.0,
+     "duration": 3.0
+    }
+   ],
+   "params": {
+    "caption": "Portugal owns the sea road to Asia",
+    "image": "images/portolan-chart.jpg",
+    "stops": [
+     [
+      0.5,
+      0.5,
+      1.0
+     ],
+     [
+      0.35,
+      0.55,
+      1.6
+     ]
+    ]
+   },
+   "slide": "KenBurnsSlide",
+   "start_sec": 131.16,
+   "trans_dur": 0,
+   "transition": "cut"
+  },
+  {
+   "duration_sec": 13.25,
+   "id": "scene-08",
+   "overlays": [],
+   "params": {
+    "caption": "Ni\u00f1a, Pinta, Santa Mar\u00eda",
+    "image": "images/caravel-replicas.jpg",
+    "title": ""
+   },
+   "slide": "ImageSlide",
+   "start_sec": 143.69,
+   "trans_dur": 0,
+   "transition": "cut"
+  },
+  {
+   "duration_sec": 16.08,
+   "id": "scene-09",
+   "overlays": [],
+   "params": {
+    "left": {
+     "head": "HIS MATH",
+     "sections": [
+      {
+       "points": [
+        "Asia ~3,000 miles",
+        "west of the Canaries"
+       ]
+      }
+     ]
+    },
+    "right": {
+     "head": "REALITY",
+     "sections": [
+      {
+       "points": [
+        "~10,000 miles",
+        "a continent in the way"
+       ]
+      }
+     ]
+    },
+    "title": "The bad math"
+   },
+   "slide": "CompareSlide",
+   "start_sec": 156.94,
+   "trans_dur": 0,
+   "transition": "cut"
+  },
+  {
+   "duration_sec": 21.36,
+   "id": "scene-10",
+   "overlays": [
+    {
+     "duration": 3.0,
+     "start": 0.5,
+     "word": "October 12, 1492",
+     "type": "keywordpop"
+    }
+   ],
+   "params": {
+    "caption": "October 12, 1492 \u2014 four voyages, never the Asia he was chasing",
+    "image": "images/columbus-manuscript.jpg",
+    "title": ""
+   },
+   "slide": "ImageSlide",
+   "start_sec": 173.02,
+   "trans_dur": 0,
+   "transition": "cut"
+  },
+  {
+   "duration_sec": 27.34,
+   "id": "scene-11",
+   "overlays": [
+    {
+     "duration": 2.0,
+     "start": 9.299999999999999,
+     "word": "Treaty of Tordesillas",
+     "type": "keywordpop"
+    },
+    {
+     "duration": 2.0,
+     "start": 12.799999999999999,
+     "word": "370 leagues",
+     "type": "keywordpop"
+    }
+   ],
+   "params": {
+    "map_image": "images/tordesillas-map.jpg",
+    "markers": [
+     {
+      "at": [
+       0.23,
+       0.45
+      ],
+      "zoom": 2.8,
+      "label": "Treaty line",
+      "sub": "370 leagues west of Cape Verde"
+     },
+     {
+      "at": [
+       0.12,
+       0.62
+      ],
+      "zoom": 2.2,
+      "label": "Spain",
+      "sub": "everything west of the line"
+     },
+     {
+      "at": [
+       0.42,
+       0.42
+      ],
+      "zoom": 2.2,
+      "label": "Portugal",
+      "sub": "everything east of the line"
+     }
+    ]
+   },
+   "slide": "MapZoomSlide",
+   "start_sec": 194.38,
+   "trans_dur": 0,
+   "transition": "cut"
+  },
+  {
+   "duration_sec": 14.59,
+   "id": "scene-12",
+   "overlays": [],
+   "params": {
+    "caption": "Brazil's bulge sits east of the line \u2014 Portugal's side",
+    "image": "images/tordesillas-map.jpg",
+    "stops": [
+     [
+      0.5,
+      0.5,
+      1.0
+     ],
+     [
+      0.68,
+      0.62,
+      2.0
+     ]
+    ]
+   },
+   "slide": "KenBurnsSlide",
+   "start_sec": 221.72,
+   "trans_dur": 0,
+   "transition": "cut"
+  },
+  {
+   "duration_sec": 15.79,
+   "id": "scene-13",
+   "overlays": [],
+   "params": {
+    "bg": {
+     "path": "images/sugarcane-harvest.jpg",
+     "type": "image"
+    },
+    "headline": "The Columbian Exchange",
+    "sub": "Alfred Crosby named it in 1972"
+   },
+   "slide": "DisplayHeadline",
+   "start_sec": 236.31,
+   "trans_dur": 0,
+   "transition": "cut"
+  },
+  {
+   "duration_sec": 12.55,
+   "id": "scene-14",
+   "overlays": [
+    {
+     "type": "redpen",
+     "annotations": [
+      {
+       "kind": "arrow",
+       "from": [
+        0.15,
+        0.62
+       ],
+       "to": [
+        0.85,
+        0.62
+       ],
+       "start": 1.0
+      },
+      {
+       "kind": "note",
+       "at": [
+        0.5,
+        0.72
+       ],
+       "text": "AMERICAS \u2192 EUROPE",
+       "start": 1.5
+      }
+     ]
+    }
+   ],
+   "params": {
+    "caption": "Eastbound: maize, potatoes, tomatoes",
+    "image": "images/maize.jpg",
+    "title": ""
+   },
+   "slide": "ImageSlide",
+   "start_sec": 252.1,
+   "trans_dur": 0,
+   "transition": "cut"
+  },
+  {
+   "duration_sec": 12.96,
+   "id": "scene-15",
+   "overlays": [
+    {
+     "type": "redpen",
+     "annotations": [
+      {
+       "kind": "arrow",
+       "from": [
+        0.85,
+        0.62
+       ],
+       "to": [
+        0.15,
+        0.62
+       ],
+       "start": 1.0
+      },
+      {
+       "kind": "note",
+       "at": [
+        0.5,
+        0.72
+       ],
+       "text": "EUROPE \u2192 AMERICAS",
+       "start": 1.5
+      }
+     ]
+    }
+   ],
+   "params": {
+    "caption": "Westbound: wheat, sugarcane, horses, cattle, pigs",
+    "image": "images/comanche-horses.jpg",
+    "title": ""
+   },
+   "slide": "ImageSlide",
+   "start_sec": 264.65,
+   "trans_dur": 0,
+   "transition": "cut"
+  },
+  {
+   "duration_sec": 23.09,
+   "id": "scene-16",
+   "overlays": [
+    {
+     "duration": 4.0,
+     "start": 4.1000000000000005,
+     "word": "smallpox",
+     "type": "keywordpop"
+    }
+   ],
+   "params": {
+    "caption": "Smallpox, measles, influenza. Eight or nine out of ten in the hardest-hit places",
+    "image": "images/smallpox-florentine-codex.jpg",
+    "title": "",
+    "stops": [
+     [
+      0.5,
+      0.5,
+      1.0
+     ],
+     [
+      0.5,
+      0.5,
+      1.35
+     ]
+    ]
+   },
+   "slide": "KenBurnsSlide",
+   "start_sec": 277.61,
+   "trans_dur": 0,
+   "transition": "cut"
+  },
+  {
+   "id": "scene-17",
+   "slide": "CausalChainSlide",
+   "params": {
+    "bg": {
+     "path": "images/lienzo-tlaxcala.jpg",
+     "type": "image"
+    },
+    "nodes": [
+     "Steel weapons & armor",
+     "Horses",
+     "Disease",
+     "Indigenous alliances",
+     "Empires fall"
+    ],
+    "title": "How empires fall",
+    "stagger": 2.64
+   },
+   "start_sec": 300.7,
+   "duration_sec": 20.0,
+   "transition": "cut",
+   "trans_dur": 0,
+   "overlays": []
+  },
+  {
+   "id": "scene-18",
+   "slide": "ImageSlide",
+   "params": {
+    "image": "images/cannon.jpg",
+    "caption": "Early guns: slow to reload, miserable in the rain",
+    "title": ""
+   },
+   "start_sec": 320.7,
+   "duration_sec": 8.1,
+   "transition": "cut",
+   "trans_dur": 0,
+   "overlays": []
+  },
+  {
+   "duration_sec": 19.87,
+   "id": "scene-19",
+   "overlays": [
+    {
+     "duration": 4.0,
+     "start": 0.7,
+     "word": "encomienda",
+     "type": "keywordpop"
+    }
+   ],
+   "params": {
+    "image": "images/debry-hispaniola-mines.jpg",
+    "caption": "Encomienda: Native labor granted to colonists",
+    "stops": [
+     {
+      "scale": 1.0,
+      "cx": 0.5,
+      "cy": 0.5
+     },
+     {
+      "scale": 1.1,
+      "cx": 0.48,
+      "cy": 0.52
+     }
+    ]
+   },
+   "slide": "KenBurnsSlide",
+   "start_sec": 328.83,
+   "trans_dur": 0,
+   "transition": "cut"
+  },
+  {
+   "duration_sec": 22.03,
+   "id": "scene-20",
+   "overlays": [
+    {
+     "type": "KeywordPop",
+     "word": "encomienda",
+     "start": 2.0
+    }
+   ],
+   "params": {
+    "image": "images/debry-hispaniola-mines.jpg",
+    "caption": "The reality the paperwork covered"
+   },
+   "slide": "ImageSlide",
+   "start_sec": 348.7,
+   "trans_dur": 0,
+   "transition": "cut"
+  },
+  {
+   "duration_sec": 17.57,
+   "id": "scene-21",
+   "params": {
+    "image": "images/tordesillas-map.jpg",
+    "stops": [
+     {
+      "scale": 1.0,
+      "cx": 0.5,
+      "cy": 0.5
+     },
+     {
+      "scale": 1.15,
+      "cx": 0.5,
+      "cy": 0.5
+     }
+    ],
+    "caption": "Box one: Tordesillas, 1494"
+   },
+   "slide": "KenBurnsSlide",
+   "start_sec": 370.73,
+   "trans_dur": 0,
+   "transition": "cut",
+   "overlays": []
+  },
+  {
+   "duration_sec": 22.87,
+   "id": "scene-22",
+   "params": {
+    "image": "images/smallpox-florentine-codex.jpg",
+    "caption": "Box two: the Columbian Exchange, Crosby 1972"
+   },
+   "slide": "ImageSlide",
+   "start_sec": 388.3,
+   "trans_dur": 0,
+   "transition": "cut",
+   "overlays": [
+    {
+     "type": "KeywordPop",
+     "word": "smallpox",
+     "start": 2.0,
+     "duration": 5.0,
+     "position": "right"
+    },
+    {
+     "type": "KeywordPop",
+     "word": "measles",
+     "start": 8.0,
+     "duration": 5.0,
+     "position": "left"
+    },
+    {
+     "type": "KeywordPop",
+     "word": "90% mortality",
+     "start": 14.0,
+     "duration": 5.0,
+     "position": "right"
+    }
+   ]
+  },
+  {
+   "duration_sec": 17.18,
+   "id": "scene-23",
+   "params": {
+    "image": "images/debry-hispaniola-mines.jpg",
+    "stops": [
+     {
+      "scale": 1.15,
+      "cx": 0.5,
+      "cy": 0.45
+     },
+     {
+      "scale": 1.0,
+      "cx": 0.5,
+      "cy": 0.5
+     }
+    ],
+    "caption": "Box three: encomienda"
+   },
+   "slide": "KenBurnsSlide",
+   "start_sec": 411.17,
+   "trans_dur": 0,
+   "transition": "cut",
+   "overlays": []
+  },
+  {
+   "id": "scene-24",
+   "slide": "DisplayHeadline",
+   "params": {
+    "headline": "Question 1: What's the pattern?",
+    "sub": "Say your answer out loud before Maya does",
+    "bg": {
+     "type": "era",
+     "unit": 1
+    }
+   },
+   "start_sec": 428.35,
+   "duration_sec": 25.8,
+   "transition": "cut",
+   "trans_dur": 0,
+   "overlays": []
+  },
+  {
+   "id": "scene-25",
+   "slide": "DisplayHeadline",
+   "params": {
+    "headline": "Question 2: Name it, and explain Brazil",
+    "sub": "Say your answer out loud before Maya does",
+    "bg": {
+     "type": "image",
+     "path": "images/tordesillas-map.jpg"
+    }
+   },
+   "start_sec": 454.15,
+   "duration_sec": 20.1,
+   "transition": "cut",
+   "trans_dur": 0,
+   "overlays": []
+  },
+  {
+   "duration_sec": 11.5,
+   "id": "scene-26",
+   "overlays": [],
+   "params": {
+    "bg": {
+     "type": "image",
+     "path": "images/waldseemuller-1507.jpg"
+    },
+    "quote": "They sailed west looking for Asia \u2014 and found a world.",
+    "byline": "Maya"
+   },
+   "slide": "QuoteSlide",
+   "start_sec": 474.25,
+   "trans_dur": 0,
+   "transition": "cut"
+  }
+ ],
+ "version": 2
+}

@@ -55,51 +55,25 @@
    "trans_dur": 0,
    "overlays": [
     {
-     "type": "keywordpop",
-     "word": "Jumonville Glen",
-     "start": 13.5,
-     "duration": 1.5
-    },
-    {
-     "type": "keywordpop",
-     "word": "Pitt's gamble",
-     "start": 15.2,
-     "duration": 1.5
-    },
-    {
-     "type": "keywordpop",
-     "word": "1763 bill",
-     "start": 16.9,
-     "duration": 1.5
+     "type": "sticker",
+     "image": "images/mayflower.jpg",
+     "at": [
+      0.86,
+      0.82
+     ],
+     "size": 0.18,
+     "shape": "rect",
+     "start": 4.0,
+     "duration": 6.0,
+     "label": "1620"
     }
    ]
   },
   {
    "id": "scene-02",
-   "slide": "mapzoomslide",
+   "slide": "imageslide",
    "params": {
-    "map_image": "maps/america_gutierrez_1562.jpg",
-    "markers": [
-     {
-      "at": [
-       0.45,
-       0.235
-      ],
-      "zoom": 2.4,
-      "label": "Ohio Valley"
-     },
-     {
-      "at": [
-       0.44,
-       0.245
-      ],
-      "zoom": 3.6,
-      "label": "Jumonville Glen"
-     }
-    ],
-    "intro_hold": 4.0,
-    "move_dur": 1.5,
-    "zoom_hold": 14.6
+    "image": "images/fur-trade.jpg"
    },
    "turns": [
     1,
@@ -109,12 +83,6 @@
    "transition": "cut",
    "trans_dur": 0,
    "overlays": [
-    {
-     "type": "keywordpop",
-     "word": "Ohio Valley",
-     "start": 1.0,
-     "duration": 2.0
-    },
     {
      "type": "lowerthird",
      "name": "George Washington",
@@ -149,18 +117,6 @@
    "trans_dur": 0,
    "overlays": [
     {
-     "type": "keywordpop",
-     "word": "Fort Necessity",
-     "start": 7.5,
-     "duration": 2.0
-    },
-    {
-     "type": "keywordpop",
-     "word": "l'assassinat",
-     "start": 13.0,
-     "duration": 2.0
-    },
-    {
      "type": "caption",
      "text": "He signed a confession he couldn't read.",
      "start": 16.5,
@@ -170,30 +126,9 @@
   },
   {
    "id": "scene-04",
-   "slide": "mapzoomslide",
+   "slide": "imageslide",
    "params": {
-    "map_image": "maps/america_gutierrez_1562.jpg",
-    "markers": [
-     {
-      "at": [
-       0.455,
-       0.24
-      ],
-      "zoom": 2.6,
-      "label": "Fort Duquesne"
-     },
-     {
-      "at": [
-       0.45,
-       0.245
-      ],
-      "zoom": 3.4,
-      "label": "Monongahela"
-     }
-    ],
-    "intro_hold": 12.0,
-    "move_dur": 2.0,
-    "zoom_hold": 16.0
+    "image": "images/fur-trade.jpg"
    },
    "turns": [
     7,
@@ -275,10 +210,16 @@
    "trans_dur": 0,
    "overlays": [
     {
-     "type": "keywordpop",
-     "word": "June 1754",
-     "start": 9.0,
-     "duration": 2.5
+     "type": "sticker",
+     "image": "images/africans-1619.jpg",
+     "at": [
+      0.86,
+      0.82
+     ],
+     "size": 0.18,
+     "shape": "rect",
+     "start": 4.0,
+     "duration": 6.0
     }
    ]
   },
@@ -344,26 +285,26 @@
    "duration_sec": 14.8,
    "transition": "cut",
    "trans_dur": 0,
-   "overlays": []
+   "overlays": [
+    {
+     "type": "sticker",
+     "image": "images/fur-trade.jpg",
+     "at": [
+      0.86,
+      0.82
+     ],
+     "size": 0.18,
+     "shape": "rect",
+     "start": 4.0,
+     "duration": 6.0
+    }
+   ]
   },
   {
    "id": "scene-09",
-   "slide": "mapzoomslide",
+   "slide": "imageslide",
    "params": {
-    "map_image": "maps/america_gutierrez_1562.jpg",
-    "markers": [
-     {
-      "at": [
-       0.44,
-       0.2
-      ],
-      "zoom": 3.0,
-      "label": "Quebec, 1759"
-     }
-    ],
-    "intro_hold": 6.0,
-    "move_dur": 2.0,
-    "zoom_hold": 30.0
+    "image": "images/fur-trade.jpg"
    },
    "turns": [
     25,
@@ -373,12 +314,6 @@
    "transition": "cut",
    "trans_dur": 0,
    "overlays": [
-    {
-     "type": "keywordpop",
-     "word": "September 13, 1759",
-     "start": 4.0,
-     "duration": 2.5
-    },
     {
      "type": "caption",
      "text": "Fifteen minutes. Both commanders dying.",
@@ -412,31 +347,24 @@
    "trans_dur": 0,
    "overlays": [
     {
-     "type": "keywordpop",
-     "word": "\u00a3130 million",
-     "start": 24.0,
-     "duration": 2.5
+     "type": "sticker",
+     "image": "images/potosi-mita.jpg",
+     "at": [
+      0.86,
+      0.82
+     ],
+     "size": 0.18,
+     "shape": "rect",
+     "start": 4.0,
+     "duration": 6.0
     }
    ]
   },
   {
    "id": "scene-11",
-   "slide": "mapzoomslide",
+   "slide": "imageslide",
    "params": {
-    "map_image": "maps/america_gutierrez_1562.jpg",
-    "markers": [
-     {
-      "at": [
-       0.45,
-       0.225
-      ],
-      "zoom": 3.0,
-      "label": "Pontiac's Rebellion"
-     }
-    ],
-    "intro_hold": 6.0,
-    "move_dur": 2.0,
-    "zoom_hold": 31.0
+    "image": "images/fur-trade.jpg"
    },
    "turns": [
     33,
@@ -447,12 +375,6 @@
    "trans_dur": 0,
    "overlays": [
     {
-     "type": "keywordpop",
-     "word": "Spring 1763",
-     "start": 2.0,
-     "duration": 2.5
-    },
-    {
      "type": "caption",
      "text": "First Detroit \u2014 then forts across the Lakes",
      "start": 30.0,
@@ -462,22 +384,9 @@
   },
   {
    "id": "scene-12",
-   "slide": "mapzoomslide",
+   "slide": "imageslide",
    "params": {
-    "map_image": "maps/america_gutierrez_1562.jpg",
-    "markers": [
-     {
-      "at": [
-       0.41,
-       0.24
-      ],
-      "zoom": 2.8,
-      "label": "Proclamation Line"
-     }
-    ],
-    "intro_hold": 5.0,
-    "move_dur": 2.0,
-    "zoom_hold": 25.0
+    "image": "images/fur-trade.jpg"
    },
    "turns": [
     36,
@@ -487,12 +396,6 @@
    "transition": "cut",
    "trans_dur": 0,
    "overlays": [
-    {
-     "type": "keywordpop",
-     "word": "October 1763",
-     "start": 7.0,
-     "duration": 2.5
-    },
     {
      "type": "caption",
      "text": "No settlement west of the Appalachians.",
@@ -518,7 +421,20 @@
    "duration_sec": 31.6,
    "transition": "cut",
    "trans_dur": 0,
-   "overlays": []
+   "overlays": [
+    {
+     "type": "sticker",
+     "image": "images/new-amsterdam.png",
+     "at": [
+      0.86,
+      0.82
+     ],
+     "size": 0.18,
+     "shape": "rect",
+     "start": 4.0,
+     "duration": 6.0
+    }
+   ]
   },
   {
    "id": "scene-14",
@@ -555,7 +471,20 @@
    "duration_sec": 28.8,
    "transition": "cut",
    "trans_dur": 0,
-   "overlays": []
+   "overlays": [
+    {
+     "type": "sticker",
+     "image": "images/comanche-horses.jpg",
+     "at": [
+      0.86,
+      0.82
+     ],
+     "size": 0.18,
+     "shape": "rect",
+     "start": 4.0,
+     "duration": 6.0
+    }
+   ]
   },
   {
    "id": "scene-15",
@@ -579,7 +508,20 @@
    "duration_sec": 24.4,
    "transition": "cut",
    "trans_dur": 0,
-   "overlays": []
+   "overlays": [
+    {
+     "type": "sticker",
+     "image": "images/winthrop.jpg",
+     "at": [
+      0.86,
+      0.82
+     ],
+     "size": 0.18,
+     "shape": "rect",
+     "start": 4.0,
+     "duration": 6.0
+    }
+   ]
   },
   {
    "id": "scene-16",
@@ -598,7 +540,20 @@
    "duration_sec": 32.2,
    "transition": "cut",
    "trans_dur": 0,
-   "overlays": []
+   "overlays": [
+    {
+     "type": "sticker",
+     "image": "images/tobacco-plantation.jpg",
+     "at": [
+      0.86,
+      0.82
+     ],
+     "size": 0.18,
+     "shape": "rect",
+     "start": 4.0,
+     "duration": 6.0
+    }
+   ]
   },
   {
    "id": "scene-17",
@@ -617,7 +572,20 @@
    "duration_sec": 25.0,
    "transition": "cut",
    "trans_dur": 0,
-   "overlays": []
+   "overlays": [
+    {
+     "type": "sticker",
+     "image": "images/indenture.jpg",
+     "at": [
+      0.86,
+      0.82
+     ],
+     "size": 0.18,
+     "shape": "rect",
+     "start": 4.0,
+     "duration": 6.0
+    }
+   ]
   },
   {
    "id": "scene-18",
@@ -636,7 +604,20 @@
    "duration_sec": 16.0,
    "transition": "cut",
    "trans_dur": 0,
-   "overlays": []
+   "overlays": [
+    {
+     "type": "sticker",
+     "image": "images/debry-maize-planting.jpg",
+     "at": [
+      0.86,
+      0.82
+     ],
+     "size": 0.18,
+     "shape": "rect",
+     "start": 4.0,
+     "duration": 6.0
+    }
+   ]
   }
  ]
 }

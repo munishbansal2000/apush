@@ -8,8 +8,10 @@ Exit 0: every hard gate passed (warnings may still need a human eye).
 Exit 1: at least one hard gate failed.
 
 Every gate below was learned across E1 v1-v11. Gates catch the mechanical
-tells; they cannot catch voice, facts, or fun -- see apush-script-guide.md.
+tells; G12 is a regression net over the fact registry (it cannot verify new
+claims -- see apush-script-guide.md for the fact-check layer).
 """
+import os
 import re
 import sys
 
@@ -59,7 +61,57 @@ PROFANITY = re.compile(
     r"\b(fuck(er|ing)?|shit(ter|ty)?|bitch|asshole|dick|pussy|cunt)\b",
     re.IGNORECASE,
 )
-SPEAKER = re.compile(r"^(Maya|Marcus):\s*(.*)$")
+# 2026-10-06: generic speaker pattern — hardcoding guest names kept missing
+# debate voices (Brutus/Henry/Jeffersonian/Haswell, Sepulveda w/o accent, …).
+# Matches any line-leading "Name:" label; NON_SPEAKER blocklist excludes
+# stage directions (SCREEN:) and self-test question numbers (Two:/Three:).
+# G12: known-falsehood regression. Patterns come from apush-fact-registry.yaml
+# (sibling of this script, else ./apush-fact-registry.yaml). Every corrected
+# factual error must add its falsehood pattern there, or it will regress.
+def load_registry():
+    cands = [
+        os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                     "apush-fact-registry.yaml"),
+        os.path.join(os.getcwd(), "apush-fact-registry.yaml"),
+    ]
+    for p in cands:
+        if os.path.exists(p):
+            import yaml
+            with open(p) as f:
+                return yaml.safe_load(f).get("facts", [])
+    return []
+
+
+def registry_hits(spoken, facts):
+    # A "don't write that [falsehood]" pedagogical construction explicitly
+    # labels the falsehood as wrong — it must not trip the gate. Skip any
+    # match whose sentence carries a negation frame.
+    NEG_FRAME = re.compile(
+        r"\b(don't|do not|never)\s+(write|say|claim|argue)\s+that\b",
+        re.IGNORECASE,
+    )
+    out = []
+    for fact in facts:
+        for pat in fact.get("falsehoods", []) or []:
+            try:
+                rx = re.compile(pat, re.IGNORECASE)
+            except re.error:
+                continue
+            for ln, _, b in spoken:
+                for s in sentences(b):
+                    if rx.search(s) and not NEG_FRAME.search(s):
+                        out.append((ln, fact["id"], pat, s[:70]))
+                        break
+                else:
+                    continue
+                break
+    return out
+NON_SPEAKER = frozenset({
+    "SCREEN",
+    "ONE", "TWO", "THREE", "FOUR", "FIVE",
+    "SIX", "SEVEN", "EIGHT", "NINE", "TEN",
+})
+SPEAKER = re.compile(r"^([A-Z][A-Za-z.'-]{0,39}):\s*(.*)$")
 
 
 def parse(path):
@@ -70,13 +122,17 @@ def parse(path):
             notes.append(line)
         else:
             m = SPEAKER.match(line)
-            if m:
+            if m and m.group(1).upper() not in NON_SPEAKER:
                 spoken.append((i, m.group(1), m.group(2).strip()))
     return text, "\n".join(notes), spoken
 
 
 def sentences(body):
-    return [s.strip() for s in re.split(r"(?<=[.?!])\s+", body) if s.strip()]
+    # Protect honorifics from sentence splitting: "Mr. Lincoln" is one
+    # sentence, not a "Mr." button-word (2026-10-06 G6 false positive).
+    body = re.sub(r"\b(Mr|Mrs|Ms|Dr|St)\.\s+", "\\1\0 ", body)
+    return [s.strip().replace("\x00", ".")
+            for s in re.split(r"(?<=[.?!])\s+", body) if s.strip()]
 
 
 def norm(s):
@@ -97,8 +153,11 @@ def main():
     def check(gate_id, ok, detail=""):
         (fails if not ok else []).append((gate_id, detail))
 
-    # G1: banned sentence starters (density gate -- the tic is the habit)
-    hits = [(ln, b[:60]) for ln, _, b in spoken if BANNED_STARTERS.match(b)]
+    # G1: banned sentence starters (density gate -- the tic is the habit).
+    # Checked per sentence, not per turn: mid-turn "That's the X." is the
+    # same tic. 2026-10-06: was turn-start only, missed guest lines.
+    hits = [(ln, s[:60]) for ln, _, b in spoken
+            for s in sentences(b) if BANNED_STARTERS.match(s)]
     check("G1 starter density < 3", len(hits) < BANNED_STARTER_LIMIT,
           "; ".join(f"L{ln}: {b}" for ln, b in hits))
 
@@ -112,8 +171,10 @@ def main():
     check("G3 exam-pitch cliches", not hits,
           "; ".join(f"L{ln}: {b}" for ln, b in hits))
 
-    # G4: pacing cap
-    words = sum(len(b.split()) for _, _, b in spoken)
+    # G4: pacing cap. Pause tags are stripped: production removes them, so
+    # they are not spoken words. 2026-10-06: previously counted as words,
+    # producing false FAILs on scripts with several [N-second pause] tags.
+    words = sum(len(PAUSE_TAG.sub("", b).split()) for _, _, b in spoken)
     wpm = words / minutes
     check("G4 pacing <= 180 WPM", wpm <= WPM_CAP,
           f"{wpm:.0f} WPM ({words} words / {minutes:g} min)")
@@ -174,6 +235,17 @@ def main():
     prof_hits = [(ln, b[:60]) for ln, _, b in spoken if PROFANITY.search(b)]
     check("G11 school-safe vocabulary", not prof_hits,
           "; ".join(f"L{ln}: {b}" for ln, b in prof_hits))
+
+    # G12: known-falsehood regression against the fact registry
+    reg = load_registry()
+    fh_hits = registry_hits(spoken, reg)
+    check("G12 no known falsehoods", not fh_hits,
+          "; ".join(f"L{ln} [{fid}] /{pat}/: {b}"
+                    for ln, fid, pat, b in fh_hits)
+          + ("" if reg else " (registry not found — gate blind)"))
+    if not reg:
+        warns.append(("G12 registry missing",
+                      "apush-fact-registry.yaml not found; falsehood check skipped"))
 
     # W1: uncontracted stiffness
     hits = [(ln, m.group(0)) for ln, _, b in spoken
@@ -237,7 +309,7 @@ def main():
               "G5 no verbatim repeats", "G6 no button-word loops",
               "G7 pause tags in read note", "G8 em-dash density <= 10",
               "G9 antithesis budget < 3", "G10 no retired phrases",
-              "G11 school-safe vocabulary"]
+              "G11 school-safe vocabulary", "G12 no known falsehoods"]
     failed_ids = {f[0].split()[0] for f in fails}
     for g in passed:
         if g.split()[0] not in failed_ids:

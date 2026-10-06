@@ -1,0 +1,241 @@
+# APUSH Fact Registry — verified facts with cross-referenced sources.
+# Every entry: a canonical correct statement, the falsehood patterns G12
+# rejects (regexes, matched case-insensitively against spoken dialogue),
+# and the sources that verify it.
+# ADD EVERY NEW FACTUAL CORRECTION HERE. A correction that isn't in the
+# registry will regress in a future script.
+#
+# Source keys:
+#   Tier 1 (primary): norris, transcripts, 5steps, prem27, princeton
+#   Tier 2 (only when Tier 1 insufficient): britannica, nps
+#   Broad internet search is NOT a source. Unverifiable in Tier 1+2 =
+#   UNVERIFIABLE, reported, never hunted further afield.
+#
+#   norris  — Adam Norris transcripts (~/workspace/apush/public_content/)
+#   5steps  — 5 Steps to a 5, 2024 (books/extracted/5steps2024/)
+#   prem27  — AP US History Premium, 2027 (books/extracted/premium2027/)
+#   princeton — Princeton Review book (books/extracted/princeton/)
+#   britannica — Encyclopaedia Britannica, Tier 2 verified source
+#   nps — National Park Service (nps.gov), Tier 2 verified source
+#   web     — web sources, verified 2026-10-06 (see note for URLs)
+
+facts:
+  - id: F-CIV-001
+    topic: Union material advantage
+    correct: "The North had more than twice the population (~22M vs ~9M) and over 85% of the factories. About 3.5M of the South's 9M were enslaved."
+    falsehoods:
+      - "five times the population"
+      - "5x the population"
+    sources: [prem27, 5steps, web]
+
+  - id: F-CIV-002
+    topic: Why the cotton bet failed
+    correct: "Britain did not intervene for Southern cotton: it had a huge surplus stockpiled in 1861, depended on Northern grain, and could expand supply from Egypt and India. (The Crown took direct rule of India in 1858 after a century of East India Company control — Britain did not 'take India' in 1858.)"
+    falsehoods:
+      - "britain had taken india in 1858"
+      - "britain took india in 1858"
+      - "took india in 1858"
+    sources: [prem27, web]
+
+  - id: F-CIV-003
+    topic: Emancipation Proclamation timing
+    correct: "Antietam (Sept 1862) led to the PRELIMINARY Emancipation Proclamation (Sept 22, 1862); the final proclamation took effect Jan 1, 1863. It freed enslaved people in rebelling states only — not in the border states, not everywhere."
+    falsehoods:
+      - "emancipation proclamation freed all (the )?enslaved"
+      - "freed all the slaves"
+    sources: [norris, prem27, 5steps, web]
+
+  - id: F-CIV-004
+    topic: Confederate invasions of the North
+    correct: "After Gettysburg the South never mounted another MAJOR invasion of the North — but Early's 1864 raid reached the outskirts of Washington (Fort Stevens, July 1864)."
+    falsehoods:
+      - "never invades? the north again"
+      - "never invaded the north again"
+    sources: [prem27, web]
+
+  - id: F-CIV-005
+    topic: Civil War draft — commutation vs substitution
+    correct: "The $300 was the COMMUTATION fee (buying your way out); hiring a SUBSTITUTE was a separate, usually pricier option. Do not conflate them."
+    falsehoods:
+      - "\\$300 substitute fee"
+      - "three-hundred-dollar substitute fee"
+      - "300-dollar substitute fee"
+    sources: [prem27, web]
+
+  - id: F-CIV-006
+    topic: Twenty Negro Law
+    correct: "The Confederate exemption covered one white man per plantation with 20 OR MORE enslaved people — not 'one planter per twenty enslaved people.'"
+    falsehoods:
+      - "one white planter for every twenty"
+      - "one planter for every twenty"
+    sources: [prem27, web]
+
+  - id: F-CIV-007
+    topic: Habeas corpus suspensions
+    correct: "Lincoln's habeas corpus suspensions led to arrests of mostly civilians, many in the border states — the arrest population included deserters, draft resisters, and civilians accused of disloyalty. Do not overclaim precision about who was/wasn't taken."
+    falsehoods: []
+    sources: [prem27, web]
+
+  - id: F-CIV-008
+    topic: First Bull Run
+    correct: "At Bull Run the Union plan was too complex for green troops; McDowell was a West Pointer, not a political appointee. Washington civilians did ride out to watch."
+    falsehoods:
+      - "mcdowell was a political appointee"
+      - "mcdowell, a political appointee"
+    sources: [prem27, web]
+
+  - id: F-CIV-009
+    topic: Vicksburg siege length
+    correct: "The siege of Vicksburg ran about six weeks, May 18 to July 4, 1863 — not two months."
+    falsehoods:
+      - "vicksburg for two months"
+      - "siege of vicksburg.*two months"
+      - "besieged vicksburg for two months"
+    sources: [prem27, 5steps, web]
+
+  - id: F-CIV-010
+    topic: Atlanta fall vs burning
+    correct: "Atlanta fell to Sherman in September 1864 and was burned in November as he left for the March to the Sea. Two events, two months apart."
+    falsehoods: []
+    sources: [prem27, web]
+
+  - id: F-CIV-011
+    topic: Civil War death toll
+    correct: "Hedge the NUMBER, not the comparison: 'one recent estimate puts it near 700,000.' The 698k figure (Barceló et al., PNAS Nov 2024, refining Hacker's method; Hacker 2011: 750,000) is contested — published estimates span 618k–850k."
+    falsehoods:
+      - "about 698,000, by the latest.*definitive"
+      - "exactly 698,000"
+    sources: [web]
+
+  - id: F-CIV-013
+    topic: Sherman's hard/total war — a live historians' debate, not a flat fact
+    correct: "Sherman's weapon was hard war (what AP calls total war): destroying the South's economic base AND its civilians' will to back the war. Crops, rails, workshops. Not massacre, but not gentle either — he ordered Atlanta's civilians out of the city, and 'make Georgia howl' was explicitly about civilian morale. Never present 'never targeted civilians' as a flat right answer; the stimulus-style framing is: evidence for (evacuation, destroyed civilian property) vs evidence complicating it (orders aimed at military-useful property, few civilians killed)."
+    falsehoods:
+      - "total war means everyone suffers"
+      - "property and infrastructure, never civilians"
+      - "never targeted civilians"
+    sources: [prem27, britannica]
+
+  - id: F-CIV-014
+    topic: Antietam casualties
+    correct: "Antietam (Sept 17, 1862): ~23,000 casualties, bloodiest single day in American history. It gave Lincoln the opening for the preliminary Emancipation Proclamation."
+    falsehoods: []
+    sources: [norris, prem27, 5steps, web]
+
+  - id: F-CIV-015
+    topic: Gettysburg and Vicksburg dates
+    correct: "Gettysburg: July 1–3, 1863 (Pickett's Charge ~12,500 men). Vicksburg surrendered July 4, 1863 — the same week. Little Round Top: Chamberlain's bayonet charge, Medal of Honor."
+    falsehoods: []
+    sources: [norris, prem27, 5steps, web]
+
+  - id: F-CIV-016
+    topic: 1864 election
+    correct: "Atlanta's fall (Sept 1864) helped save Lincoln's reelection against McClellan. Nuance: the DEMOCRATIC PLATFORM called the war a failure and demanded negotiations, but McClellan himself publicly disowned that plank and said he'd fight on for Union. Correct framing: 'The Democratic platform called the war a failure. McClellan himself disowned that plank, but a Democratic win would have emboldened the peace movement' → 'might have opened the door to a negotiated peace' (not 'ended the war with the Confederacy intact'). Never call McClellan flatly 'the peace candidate.'"
+    falsehoods:
+      - "ran as the peace candidate"
+      - "mcclellan, the peace candidate"
+    sources: [princeton, britannica]
+
+  - id: F-CIV-017
+    topic: Richmond bread riot
+    correct: "Richmond bread riot: 1863. Name it and date it; don't strand it as an anonymous 'bread riots' aside."
+    falsehoods: []
+    sources: [prem27, web]
+
+  - id: F-CIV-018
+    topic: Appomattox and assassination
+    correct: "Lee surrendered at Appomattox Court House on April 9, 1865, on generous terms. Lincoln was assassinated five days later (April 14/15)."
+    falsehoods: []
+    sources: [norris, prem27, 5steps, web]
+
+  - id: F-CIV-019
+    topic: Cold Harbor casualties — killed vs wounded, and the figure is disputed
+    correct: "Cold Harbor (June 3, 1864): Union casualties were heavy in the first hour — say 'thousands in the first hour,' never a precise figure (the ~7,000 killed-or-wounded figure is contested). Never state casualties as deaths."
+    falsehoods:
+      - "kills something like seven thousand union soldiers"
+      - "seven thousand union soldiers (were )?killed at cold harbor"
+      - "7,000 union soldiers killed at cold harbor"
+    sources: [nps, britannica]
+
+  - id: F-CIV-020
+    topic: Richmond bread riot — Davis detail is contested
+    correct: "Richmond bread riot: April 1863, real and well-documented. But the detail that Jefferson Davis personally faced the crowd is contested across witness accounts — always hedge ('by some accounts') or cut it."
+    falsehoods: []
+    sources: [norris]
+
+  - id: F-CIV-021
+    topic: Atlanta evacuation + "make Georgia howl" (Q3 stimulus evidence)
+    correct: "Sherman ordered Atlanta's civilian population evacuated on taking the city (Special Field Orders No. 67, Sept 14, 1864). 'Make Georgia howl' is from his Oct 9, 1864 telegram to Grant — AFTER Atlanta's September fall, BEFORE the March to the Sea (mid-November). It belongs narratively with the March, not before Atlanta. Both are verified; they are the 'supports' evidence for the Sherman stimulus SAQ."
+    falsehoods: []
+    sources: [nps, britannica]
+
+  - id: F-CIV-022
+    topic: Lincoln's blind memorandum, August 1864
+    correct: "On August 23, 1864, Lincoln wrote a sealed memorandum stating it seemed 'exceedingly probable' he would not be reelected, and had cabinet members sign it sight unseen. Use as the prediction-beat hook for the 1864 election — stronger than 'Lincoln privately expected to lose.' (Primary holder: Library of Congress, which quotes the memo verbatim.)"
+    falsehoods: []
+    sources: [britannica]
+
+  - id: F-CIV-024
+    topic: Black soldiers in the Civil War (next lesson's content — teaser commits to it)
+    correct: "About 180,000 Black soldiers served in the Union army by war's end (Britannica: 'about 180,000 African Americans were in the army'; 'nearly 180,000 Black troops had enlisted'). The 54th Massachusetts (Col. Robert Gould Shaw, Fort Wagner, 1863) is the famous regiment. Teased in U5-E7; belongs to the Emancipation lesson."
+    falsehoods: []
+    sources: [britannica]
+
+  - id: F-CIV-023
+    topic: Grant's reputation — Fort Donelson and Vicksburg, not Shiloh alone
+    correct: "Grant's reputation was set at Fort Donelson ('unconditional surrender,' Feb 1862) and Vicksburg. The reported Lincoln remark 'I can't spare this man, he fights' dates from AFTER SHILOH (April 1862), when critics demanded Grant's removal — place it there, with 'reportedly.'"
+    falsehoods: []
+    sources: [nps]
+
+  - id: F-LP-001
+    topic: Spain's protest of the Louisiana Purchase
+    correct: "Spain's protest of the sale is real, but nuanced: the no-transfer pledge was in a diplomatic note, and France disputed its treaty force. Present the protest as undisputed, the pledge's legal force as contested."
+    falsehoods: []
+    sources: [web, princeton]
+
+  - id: F-LP-002
+    topic: Louisiana transfer dates
+    correct: "Spain transferred Louisiana to France at New Orleans on Nov 30, 1803; the US took possession Dec 20, 1803 — twenty days later. The 'three flags in twenty days' framing is accurate."
+    falsehoods: []
+    sources: [web]
+
+  - id: F-LP-003
+    topic: Adams-Onís Treaty
+    correct: "Adams–Onís (1819) settled the US–Spain border and transferred Florida to the US. It belongs with the purchase's aftermath, not as a purchase term."
+    falsehoods: []
+    sources: [princeton, web]
+
+  - id: F-LP-004
+    topic: Louisiana Purchase boundaries
+    correct: "The purchase's boundaries were unspecified at the time of sale — this is why the boundary dispute (and Adams–Onís) matters."
+    falsehoods: []
+    sources: [prem27, web]
+
+  - id: F-AOC-001
+    topic: Shays' Rebellion causes — debt AND taxes, not one or the other
+    correct: "Shays' Rebellion (1786-87) was driven by crushing private DEBT plus heavy state TAXES, all demanded in hard currency farmers didn't have. Never teach 'debt, not taxes' or 'taxes, not debt' as a trap — both books list both causes."
+    falsehoods:
+      - "it wasn't taxes. it was debt"
+      - "debt, not taxes. the farmers"
+      - "shays.*wasn't about taxes"
+    sources: [5steps, prem27, norris]
+
+  - id: F-AOC-002
+    topic: 1781 impost — Rhode Island's single no
+    correct: "The 1781 five-percent impost was blocked by RHODE ISLAND's single rejection (12 states approved; unanimity required). Do not name Virginia or New York as co-blockers of the 1781 attempt — sources conflict on the later 1783 attempt (Prem27: RI+NY; Norris: RI+Virginia). The undisputed core is Rhode Island alone killing the 1781 impost."
+    falsehoods: []
+    sources: [prem27, norris]
+
+  - id: F-AOC-003
+    topic: Northwest Ordinance core facts
+    correct: "Northwest Ordinance 1787: surveyed townships sold orderly; one section per township reserved for public schools; slavery PROHIBITED north of the Ohio River only (not everywhere); 60,000 population → statehood application; new states admitted EQUAL to the original thirteen. Called the most consequential legislation of the Confederation period."
+    falsehoods:
+      - "ordinance ended slavery"
+      - "northwest ordinance.*abolished slavery"
+    sources: [5steps, prem27, norris]
+
+  - id: F-AOC-004
+    topic: Northwest Indian War sequence
+    correct: "Little Turtle's confederacy destroyed Harmar's army (1790) and St. Clair's army at the Wabash (1791, 600+ killed — worst US Army defeat at Native hands); Wayne won at Fallen Timbers (1794); Treaty of Greenville (1795) ceded most of Ohio. Keep the sequence in chronological order."
+    falsehoods: []
+    sources: [prem27, web]
