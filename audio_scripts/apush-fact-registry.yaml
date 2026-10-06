@@ -1283,3 +1283,51 @@ facts:
     falsehoods:
       - "he preached the most famous sermon in American history"
     sources: [web]
+
+  - id: F-U2-055
+    topic: Zenger trial mechanics — De Lancey, Hamilton, and the law that didn't change
+    correct: "Zenger was arrested November 1734 and tried in August 1735. Cosby's chief justice James De Lancey disbarred Zenger's original lawyers and instructed the jury that publication alone was guilt (truth barred). Andrew Hamilton of Philadelphia defended, arguing truth should be the defense — counter to English law, where a true libel was worse ('the greater the truth, the greater the scandal'). The jury acquitted anyway. The verdict did NOT change libel law in America or Britain. Hamilton's summation wording ('one poor printer... cause of liberty') is his actual 1735 wording, lightly trimmed. Never teach that the trial made truth a legal defense."
+    falsehoods:
+      - "zenger.*(changed|reformed|rewrote) the (libel )?law"
+      - "the trial made truth (a )?legal defense"
+      - "truth became the defense.*1735"
+    sources: [prem27, norris, web]
+
+  - id: F-U2-056
+    topic: Massachusetts salary fights — Shute, Burnet, and the £1,700 grant
+    correct: "Massachusetts in the 1720s resisted pressure to regularize royal governors' salaries (5steps). Governor Samuel Shute demanded a permanent salary; the House refused and voted his pay year by year. Governor William Burnet renewed the demand; in September 1728 the House granted him seventeen hundred pounds 'to enable him to manage the public affairs' while refusing the fixed, stated salary. This is the 'power of the purse' case study — leverage, not sovereignty."
+    falsehoods:
+      - "shute.*(got|won|received).*(permanent|fixed) salary"
+      - "burnet.*(got|won|received).*(permanent|fixed) salary"
+      - "massachusetts.*voted.*permanent salary.*1720s"
+    sources: [5steps, web]
+
+  - id: F-U2-057
+    topic: Knowles impressment riot, Boston, November 17–19, 1747
+    correct: "Three-day riot (Nov 17–19, 1747): Admiral Charles Knowles's press gangs seized about 46 Bostonians — sailors and non-sailors alike — for the Royal Navy; hundreds of Bostonians rampaged. The largest impressment riot in colonial North America. Tier 1–2 silent on it; verified across multiple secondary/scholarly accounts — label honestly as web-verified."
+    falsehoods:
+      - "knowles riot.*1765"
+      - "knowles.*(one day|a single day).*riot"
+    sources: [web]
+
+  - id: F-U2-058
+    topic: Cosby dismissed Judge Lewis Morris after a salary-dispute ruling
+    correct: "The Zenger coverage began when Governor William Cosby dismissed Judge Lewis Morris after Morris ruled against him in a salary dispute (Heimler: Zenger published 'a piece criticizing the dismissal of an American judge by the corrupt British-appointed governor'). The salary-dispute cause links the Zenger box to the power-of-the-purse box. Tier 1 gives the dismissal; the salary cause is web-verified."
+    falsehoods:
+      - "cosby dismissed morris.*(corruption|bribery)"
+    sources: [norris, web]
+
+  - id: F-U2-059
+    topic: Anna Zenger kept the paper printing during the imprisonment
+    correct: "Zenger sat in jail the better part of a year awaiting trial (Nov 1734–Aug 1735); his wife Anna kept the New-York Weekly Journal printing without him. Standard, uncontested detail; web-verified, not in Tier 1."
+    falsehoods:
+      - "zenger's paper.*(stopped|ceased).*while.*jail"
+    sources: [web]
+
+  - id: F-U2-060
+    topic: Colonial legislatures modeled on Parliament — purse = salaries + tax legislation
+    correct: "Princeton (Tier 1): colonial legislatures were bicameral, 'modeled after the British Parliament'; the elected lower house's powers included the 'power of the purse' (control over government salaries and tax legislation); the upper house was appointed and advised the governor. Use for the 'little parliament' framing — the book's words are 'modeled after,' not 'little parliaments.'"
+    falsehoods:
+      - "colonial.*upper house.*elected"
+      - "power of the purse.*controlled trade regulations"
+    sources: [princeton]
