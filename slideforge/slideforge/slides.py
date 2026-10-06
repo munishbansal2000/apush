@@ -422,12 +422,32 @@ class RevealSlide(Slide):
             if n_chars <= 0:
                 continue
 
-            # Number label "1."
-            num_text = f"{i + 1}."
-            d.text((w * 0.12, y), num_text, font=num_font,
-                   fill=(150, 40, 40, 255))
-            num_bbox = d.textbbox((0, 0), num_text, font=num_font)
-            num_w = num_bbox[2] - num_bbox[0]
+            # WORLD-CLASS: Number badge (circle with number) instead of plain "1."
+            # Badge pops in with the point
+            num_text = f"{i + 1}"
+            badge_r = int(num_size * 0.75)
+            badge_cx = int(w * 0.12 + badge_r)
+            badge_cy = int(y + lh // 2)
+            # Badge entrance: scale in
+            badge_k = a01(t, at, 0.3, ease=ease_out_back) if at >= 0 else 1.0
+            if badge_k > 0:
+                br = int(badge_r * (0.5 + 0.5 * min(badge_k, 1.0)))
+                if br > 0:
+                    # Shadow
+                    d.ellipse([badge_cx - br + 2, badge_cy - br + 2,
+                               badge_cx + br + 2, badge_cy + br + 2],
+                              fill=(0, 0, 0, 50))
+                    # Badge circle (red)
+                    d.ellipse([badge_cx - br, badge_cy - br,
+                               badge_cx + br, badge_cy + br],
+                              fill=(150, 40, 40, int(255 * min(badge_k, 1.0))))
+                    # Number in white
+                    if badge_k >= 0.7:
+                        nb = d.textbbox((0, 0), num_text, font=num_font)
+                        nw, nh = nb[2] - nb[0], nb[3] - nb[1]
+                        d.text((badge_cx - nw // 2, badge_cy - nh // 2 - 2),
+                               num_text, font=num_font, fill=(255, 255, 255, 255))
+            num_w = badge_r * 2
             text_x = w * 0.12 + num_w + 20
 
             # Typed text, wrapped: reveal runs across stable full-text
