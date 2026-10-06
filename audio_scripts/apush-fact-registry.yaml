@@ -1466,3 +1466,80 @@ facts:
       - "eight of (the )?twelve.*forts"
       - "colonists.*rebelled.*1763.*pontiac"
     sources: [prem27]
+
+  - id: F-U3-012
+    topic: Stamp Act as the first direct/internal tax
+    correct: "The Stamp Act (1765) was 'the first time that Parliament imposed a direct tax on the colonies' rather than a customs duty (5steps ch. 9) — 'designed solely to raise revenue,' a direct tax not an indirect trade duty (prem27 ch. 5). It taxed printed matter — wills, newspapers, playing cards (5steps), court documents, books, almanacs, deeds (prem27), pamphlets and dice (Britannica, Tier 2) — and was broad-based, hitting lawyers especially (princeton ch. 7). Never teach it as a customs/port duty."
+    falsehoods:
+      - "stamp act.{0,40}(was a |as a )?customs duty"
+      - "stamp act.{0,40}collected at the (docks|port)"
+    sources: [5steps, prem27, princeton, britannica]
+
+  - id: F-U3-013
+    topic: Virginia Resolves (1765) — Henry's draft, trimmed; do not pin a month
+    correct: "Patrick Henry drafted the Virginia Stamp Act Resolves (1765) asserting only Virginia's own assembly could tax Virginians; the legislature removed his most radical propositions before passing (princeton ch. 7); not all resolves passed but all were 'written up and circulated throughout the colonies' (prem27 ch. 5). MONTH: prem27 pins the debate to June 1765; the standard chronology has passage in May 1765 — do not pin a month in dialogue. Never teach the resolves as passed unanimously or unamended."
+    falsehoods:
+      - "virginia resolves.{0,40}(unanimous|unamended|in full|unchanged)"
+      - "virginia resolves.{0,40}(may|june).{0,12}sixty-five"
+    sources: [princeton, prem27]
+
+  - id: F-U3-014
+    topic: Stamp Act Congress (Oct 1765) — 27 delegates, 9 colonies, no independence talk
+    correct: "Stamp Act Congress, October 1765, New York: 27 delegates from nine colonies (Norris transcript; Britannica); Declaration of Rights and Grievances asserted only representatives elected by colonists could enact taxes (prem27); 'No taxation without representation' became the rallying cry. Independence was not on anyone's mind — the goal was the fullness of rights as British subjects (Norris). Never teach the Congress as declaring/voting for independence or as thirteen colonies."
+    falsehoods:
+      - "stamp act congress.{0,60}(independence|thirteen colonies)"
+    sources: [prem27, 5steps, norris-transcript, britannica]
+
+  - id: F-U3-015
+    topic: Sons of Liberty crowd actions — agents forced out, Hutchinson's house, hot tar
+    correct: "Sons of Liberty (Boston, July 1765, Samuel Adams leading role — 5steps; Britannica): stamp agents intimidated into resigning colony after colony; by the effective date 'not one of the Crown's appointed duty collectors was willing to perform his job' (princeton); Boston mob ransacked Lt. Gov. Thomas Hutchinson's home (prem27); tar-and-featherings used often-boiling-hot tar causing deep burns (Norris transcript; Britannica pins tarring/feathering of stamp agents)."
+    falsehoods: []
+    sources: [5steps, princeton, prem27, norris-transcript, britannica]
+
+  - id: F-U3-016
+    topic: Boycott won the repeal, not the mob alone
+    correct: "The nonimportation boycott (merchants' non-importation agreements; Daughters of Liberty spinning bees, homespun, household purchasing power — 5steps/prem27) was the effective weapon: British merchants, hurt by lost trade, lobbied Parliament for repeal (5steps ch. 9); Britannica says Parliament bowed 'chiefly to pressure' from British merchants and manufacturers. Never teach the repeal as won by mob violence alone."
+    falsehoods:
+      - "repeal(?![^.]{0,20}(wasn't|weren't|not)\\b).{0,40}(won by|because of).{0,40}(mob|violence).{0,20}(alone|only)"
+    sources: [5steps, prem27, britannica]
+
+  - id: F-U3-017
+    topic: Virtual vs actual representation — Parliament's theory, and its direction
+    correct: "Virtual representation was PARLIAMENT's theory: members represented the entire British Empire, colonists 'virtually represented' though they never voted (prem27; princeton: 'all British subjects regardless of who elected them'). DIRECTION: virtual representation was the British RESPONSE to the colonial cry (prem27 sequences it as the answer to the protests) — never teach the Stamp Act Congress as 'answering' virtual representation; the line runs Parliament-answers-colonists. The colonial answer was actual representation: only their own elected assemblies could tax them; Otis's precept — no Englishman pays taxes without his consent — from *The Rights of the British Colonies Asserted and Proved* (princeton). Otis did NOT advocate secession/independence; he wanted seats in Parliament or colonial self-taxation, and colonists knew a delegation would be too small — they wanted the right to determine their own taxes (princeton). In 1765 the colonists denied one power, the power to tax, while still calling themselves British subjects (Norris: 'the goal was the fullness of rights as British subjects'). Never attribute virtual representation to the colonists; never teach Otis as pro-independence."
+    falsehoods:
+      - "virtual representation.{0,40}colonist.{0,40}(claim|argument|demand|position)"
+      - "otis(?![^.]{0,20}(wasn't|weren't|not)\\b).{0,60}(independence|secession)"
+      - "congress.{0,40}answering.{0,40}virtual representation"
+    sources: [prem27, princeton, norris-transcript]
+
+  - id: F-U3-018
+    topic: Declaratory Act (1766) — repeal's linked companion, 'in all cases whatsoever'
+    correct: "Parliament repealed the Stamp Act ('early 1766' — 5steps, Britannica; Grenville already replaced by Rockingham, who had opposed the tax — princeton/5steps) and Rockingham LINKED the repeal to the passage of the Declaratory Act asserting the right to legislate for the colonies 'in all cases whatsoever' (princeton ch. 7: 'linked it to the passage'; 5steps calls it a face-saving measure; Britannica: 'Simultaneously... Parliament issued the Declaratory Act'). Tier 1+2 pin 'linked'/'simultaneously,' NOT 'the same day' — never pin 'same day' in dialogue. 'The colonists had won the battle over the stamp tax, but not the war of principles over Parliament's powers' (princeton). Never teach the repeal as settling the constitutional argument. Do not overread 'in all cases whatsoever' as making the next tax automatic — it asserted the right; future taxes still required acts of Parliament."
+    falsehoods:
+      - "repeal.{0,40}settled.{0,40}(argument|dispute|question|issue)"
+      - "same day.{0,40}declaratory"
+      - "very same day.{0,40}repeal"
+    sources: [5steps, princeton, britannica]
+
+  - id: F-U3-019
+    topic: Otis maxim attribution is hedged, not verbatim history
+    correct: "'Taxation without representation is tyranny' is credited to James Otis via John Adams's recollection decades later; no contemporary record pins the exact wording — always hedge ('nobody swears to the exact words') and disclose in the footer. Princeton confirms Otis 'put forward the No taxation without representation argument' in the pamphlet — the idea is his, the wording is not verified. Never teach the maxim as a verified Otis quotation."
+    falsehoods: []
+    sources: [princeton, web]
+
+  - id: F-U3-020
+    topic: Stamp Act effective date and repeal month — do not pin in dialogue
+    correct: "The Stamp Act's effective date (Nov 1, 1765) and the repeal month (March 1766) are historically correct but NOT pinned in Tier 1+2 — they rest on Gilder Lehrman / the Avalon primary text, outside the frozen hierarchy. Dialogue must teach only what the hierarchy pins: 'by the time the tax was supposed to take effect' (princeton's own phrasing) and 'early 1766' (5steps, Britannica). Never pin 'November first' or 'March' flat in dialogue."
+    falsehoods:
+      - "stamp act.{0,30}took effect november"
+      - "repealed in.{0,12}march"
+      - "march of seventeen sixty-six.{0,20}repeal"
+    sources: [princeton, 5steps, britannica]
+
+  - id: F-U3-021
+    topic: 1689 Bill of Rights — not Tier-1-pinned as cited in the Stamp Act debate
+    correct: "The English Bill of Rights 1689 'no taxation without grant of Parliament' framing is NOT pinned in Tier 1+2 as cited by colonial lawyers in the Stamp Act debate — never teach it as the colonists' 1689-based legal reading. Teach only princeton's 'accepted precept that no Englishman could be compelled to pay taxes without his consent,' framed as the principle behind Otis's argument."
+    falsehoods:
+      - "levying taxes without parliament's consent was illegal"
+      - "bill of rights of 1689.{0,40}colonists' lawyers read it straight"
+    sources: [princeton]
