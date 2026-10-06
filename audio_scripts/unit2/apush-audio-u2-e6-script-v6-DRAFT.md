@@ -1,5 +1,5 @@
 # U2-E6 — Maya + Marcus (Fish Audio)
-# Episode 6: The Great Awakening. ~12 min experienced (1,891 words speech + 75s pauses)
+# Episode 6: The Great Awakening. ~12 min experienced (1,883 words speech + 75s pauses)
 # Draft v6 (2026-10-06): full rebuild to the frozen 2026-10-06 standards from the archived v5 draft — four boxes (Whitefield / Edwards / Franklin's Enlightenment / New Lights vs Old Lights + the revolution debate), two prediction beats, per-box exam tips and common-mistake lines with varied templates, CER self-test with one stimulus (Edwards's spider line), pause-honest runtime (speech + every scripted pause second). Replaces v5 (thin, ~8 min, 5s pauses, no box ritual, checkoffs in the wrong voice).
 # Read note: Maya tracks four boxes on her episode sheet; one mid-episode checkoff is her voice (the box-one line — boxes two and three land as unlabeled summary lines), the full recap is the check layer. [10-second pause] marks are production notes for real silence in prediction beats; [15-second pause] and [20-second pause] marks are real silence for the CER self-test questions; [5-second pause] is the fast bonus — they never go to the voice. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence. The em dash in the closing tagline is a held beat: a full breath between Maya's lead and Marcus's landing. Do not rush it. Disclosure: the Edwards line in the self-test is his actual wording, from the 1741 printed sermon. Franklin's voice-range figure is his own computation, from his Autobiography. The ## Sources section is production-only, never spoken.
 # Pronunciation: HWIT-field (Whitefield), ED-wards (Edwards), EN-field (Enfield), HOON-toh (Junto), AWL-muh-nak (Almanack), DEE-iz-um (deism), north-HAMP-tun (Northampton)
@@ -146,19 +146,19 @@ Maya: One. The stimulus is Edwards, 1741, and these are his actual words: "The G
 
 [15-second pause]
 
-Maya: Claim: Jonathan Edwards, at Enfield, Connecticut, in July 1741. Evidence: the spider image, the pit of hell, the famous sermon title. Reasoning: the point is the method, not the theology. Terror as conversion: the Awakening's emotional style doing what the cold, formal churches couldn't.
+Maya: Jonathan Edwards, at Enfield, Connecticut, in July 1741 — the spider image, the pit of hell, the famous sermon title. The point is the method, not the theology: terror as conversion, the Awakening's emotional style doing what the cold, formal churches couldn't.
 
 Maya: Two. Why did the Awakening split churches into New Lights and Old Lights?
 
 [15-second pause]
 
-Maya: Claim: the split was a fight over authority. Evidence: itinerant preachers drew crowds without invitations, and converts claimed their own experience outranked the old ministers. Reasoning: once feeling counts as proof, the old guard's rules stop working, and the church divides.
+Maya: The split was a fight over authority — itinerant preachers drew crowds without invitations, and converts claimed their own experience outranked the old ministers. Once feeling counts as proof, the old guard's rules stop working, and the church divides.
 
 Maya: Three. How far did the Great Awakening go toward causing the American Revolution?
 
 [20-second pause]
 
-Maya: Claim: argue both sides. Evidence for: colonists learned to organize and defy the established church, in a shared experience from New England to Georgia. Evidence against: the fires burned out decades before 1776, and plenty of patriot leaders were never awakened. Reasoning: the graders want the weighing, not the verdict.
+Maya: Argue both sides. For: colonists learned to organize and defy the established church, in a shared experience from New England to Georgia. Against: the fires burned out decades before 1776, and plenty of patriot leaders were never awakened. The graders want the weighing, not the verdict.
 
 Maya: One more, fast. The Awakening and the Enlightenment both challenged authority. Which one worked through the heart, and which through the head?
 

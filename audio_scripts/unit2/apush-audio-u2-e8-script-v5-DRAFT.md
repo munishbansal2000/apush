@@ -1,5 +1,5 @@
 # U2-E8 — Story Mode: Marcus-led, Maya interjects
-# Episode 8: The War That Started With One Shot in the Rain. Twelve minutes experienced (1,944 spoken words + 73s scripted pauses = 12.0 min at 180 WPM).
+# Episode 8: The War That Started With One Shot in the Rain. Twelve minutes experienced (1,936 spoken words + 73s scripted pauses = 12.0 min at 180 WPM).
 # Draft v5 (2026-10-06): full rebuild to the frozen 2026-10-06 standards from the archived v4 draft — Story Mode format (Marcus-led, Maya interjects), cold-open ritual with continuity nod to U2-E7 v5's actual boxes (power of the purse / Zenger trial / Anglicization), two prediction beats, per-box exam tips and common-mistake lines with varied templates, CER self-test with stimulus-style questions, pause-honest runtime (speech + every scripted pause second). Replaces v4 (thin Marcus-solo draft, ~8 min, retired solo format).
 # Read note: Maya tracks four boxes on her episode sheet; the full recap is the check layer, with one mid-episode checkoff in her voice. [10-second pause] and [8-second pause] marks are production notes for real silence in prediction beats; [15-second pause] and [20-second pause] marks are real silence for the CER self-test questions; [5-second pause] is the fast bonus — they never go to the voice. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence. The em dash in the closing tagline is a held beat: a full breath between Marcus's lead and Maya's landing. Do not rush it. Disclosure: the Washington line ("four bullets through my coat, and two horses shot under me") is his actual wording from his July 18, 1755 letter home. The Tanacharison brains detail is reported legend, disclosed in-dialogue; the tomahawk killing is Britannica's account. The ## Sources section is production-only, never spoken.
 # Pronunciation: zhoo-mohn-VEEL (Jumonville), tan-uh-kuh-RIH-sun (Tanacharison), doo-KAYN (Duquesne), muh-nahn-guh-HEE-luh (Monongahela), mohn-KAHM (Montcalm), PAHN-tee-ak (Pontiac), GREN-vil (Grenville), lah-sah-see-NAH (l'assassinat).
@@ -132,19 +132,19 @@ Maya: One. The stimulus is the surrender document Washington signed at Fort Nece
 
 [15-second pause]
 
-Maya: Claim: it proves the incident became France's justification for war, not that Washington was guilty. Evidence: Washington couldn't read French; the paper said "assassination." Reasoning: the document mattered as propaganda: France carried home a confession, real or not, and used it to demand revenge.
+Maya: It proves the incident became France's justification for war, not that Washington was guilty: Washington couldn't read French; the paper said "assassination." The document mattered as propaganda. France carried home a confession, real or not, and used it to demand revenge.
 
 Maya: Two. Braddock's army outnumbered the French and their Native allies at the Monongahela. So why did Britain lose?
 
 [20-second pause]
 
-Maya: Claim: European tactics failed in American woods. Evidence: British regulars held formation and fired volleys while French and Native fighters fired from the tree line; nearly a thousand British killed or wounded. Reasoning: discipline designed for open fields became a target in the forest. The war exposed the limits of an empire's way of fighting.
+Maya: European tactics failed in American woods: British regulars held formation and fired volleys while French and Native fighters fired from the tree line; nearly a thousand British killed or wounded. Discipline designed for open fields became a target in the forest, and the war exposed the limits of an empire's way of fighting.
 
 Maya: Three. The stimulus is a 1763 map: everything east of the Mississippi is British, Louisiana and New Orleans are Spanish, Florida is British. What does the map show about who won what?
 
 [15-second pause]
 
-Maya: Claim: Britain won the continent; France kept the sugar. Evidence: Canada and the east go to Britain, but France keeps Guadeloupe and Martinique, and Spain trades Florida for Louisiana. Reasoning: the map shows France chose sugar profits over land, and Britain chose the land it would now have to pay for.
+Maya: Britain won the continent; France kept the sugar: Canada and the east go to Britain, but France keeps Guadeloupe and Martinique, and Spain trades Florida for Louisiana. The map shows France chose sugar profits over land, and Britain chose the land it would now have to pay for.
 
 Maya: One more, fast. Why did London draw the Proclamation line — revenge, or the treasury?
 

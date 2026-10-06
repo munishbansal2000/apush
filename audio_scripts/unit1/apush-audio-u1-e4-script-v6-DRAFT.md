@@ -1,5 +1,5 @@
 # U1-E4 — Maya + Marcus (Fish Audio)
-# Episode 4: Planting, Not Raiding — Jamestown and the Start of English America. ~12 min experienced (1,943 words speech + 75s pauses)
+# Episode 4: Planting, Not Raiding — Jamestown and the Start of English America. ~12 min experienced (1,941 words speech + 75s pauses)
 # v6 (2026-10-06): full rebuild to the 2026-10-06 standards — four boxes, two prediction beats, exam devices, hedged facts. Replaces v5 (thin 8-minute draft).
 # Read note: Maya tracks four boxes on her episode sheet and checks each one off in her own voice as the episode earns it. [10-second pause] marks are production notes for real silence in prediction beats; [15-second pause] and [20-second pause] marks are real silence for the CER self-test questions; [5-second pause] is the fast bonus question — they never go to the voice. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence. The em dash in the closing tagline is a held beat: leave a full breath between Marcus's "They sailed here hunting gold —" and Maya's landing line. Do not rush it. The ## Sources section at the end is production-only, never spoken.
 # Pronunciation: POW-uh-tan; poh-kuh-HON-tuhs; BUR-juh-sez; oh-pech-an-KAH-noh; DEL-uh-wair; ROLF (rhymes with golf).
@@ -121,19 +121,19 @@ Maya: One. A colonist wrote that in the Jamestown camp there was nothing but …
 
 [15-second pause]
 
-Maya: Claim: the settlers chased gold instead of planting food. Evidence: gentlemen hunting iron pyrite while the food stores ran out. Reasoning: the cause was human, not geographic. Gold-fever beat the swamp.
+Maya: The settlers chased gold instead of planting food — gentlemen hunting iron pyrite while the food stores ran out. The cause was human, not geographic: gold-fever beat the swamp.
 
 Maya: Two. A planter pays the passage for six servants and claims three hundred acres. Name the system, and say who benefits.
 
 [15-second pause]
 
-Maya: Claim: the headright system. Evidence: fifty acres a head, six heads, three hundred acres. Reasoning: the planter who paid benefits. The servants get years of labor, not land.
+Maya: The headright system — fifty acres a head, six heads, three hundred acres. The giveaway is who benefits: the planter who paid. The servants get years of labor, not land.
 
 Maya: Three. 1619: an assembly meets in Jamestown, and the White Lion lands "20 and odd" Africans at Point Comfort. A historian pairs these two events. What's the argument?
 
 [20-second pause]
 
-Maya: Claim: self-government and forced labor arrived together. Evidence: the House of Burgesses and the White Lion, same year. Reasoning: the contradiction at the start of English America. The vote and the slave ship, side by side.
+Maya: Self-government and forced labor arrived together — the House of Burgesses and the White Lion, same year. The contradiction at the start of English America: the vote and the slave ship, side by side.
 
 Maya: One more, fast. Virginia becomes a royal colony in 1624. Whose charter got revoked?
 

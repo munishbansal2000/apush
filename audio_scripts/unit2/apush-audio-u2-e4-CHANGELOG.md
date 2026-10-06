@@ -18,3 +18,10 @@ Still awaiting the user's lock.
 **Layer-2 findings repaired:** G5 verbatim repeat ("Penn himself held enslaved people" ×2 → "the founder himself" in Maya's evidence); check-layer violation (kept single mid-episode beat at L39, dropped checked language at L76/L108); runtime promise (12→13 min, no substance trim); Maya echo → riff ("if you survived the crossing to claim it"); mistake-opener variety; cut feed line; tissue echo vs U2-E3 reworded; fast bonus made AP-shaped; one triple broken.
 **Layer-3 findings repaired:** 1 WRONG (flour-trade absolute), 1 CONTESTED (Franklin date label), 2 flat statements hedged. Zero wrong claims remaining. Candidate registry entries F-U2-025–F-U2-036 added same-day (registry now holds 112+ facts).
 **Re-read findings repaired:** "empty land pays nothing" verbatim tagline ×4 → kept first use, rephrased L109/L127/L139 ("acres without settlers earn nothing"; "the colony needed paying settlers"; "paper promises don't sell themselves"). Note: G5 does not catch short-phrase repeats — gate gap worth knowing.
+
+## CER-label production fix — 2026-10-06
+User order ("Bad tts is not allowed"): removed spoken "Claim:/Evidence:/Reasoning:"
+labels from all 3 self-test model answers — TTS reads everything literally.
+CER logic (claim -> evidence -> reasoning) preserved, carried by natural
+connective tissue (em-dash pivots, "which means," "so," "the giveaway is").
+Substance identical; header word count updated to 1,922; gates 12/12 PASS.

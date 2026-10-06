@@ -1,5 +1,5 @@
 # U1-E3 — Maya + Marcus (Fish Audio)
-# Episode 3: The Exchange. ~11 min experienced (1,770 words speech + 75s pauses)
+# Episode 3: The Exchange. ~11 min experienced (1,766 words speech + 75s pauses)
 # Draft v9 (2026-10-06): full rebuild to the 2026-10-06 standards — four boxes, two prediction beats,
 # exam devices, hedged facts, CED 1.4 complete (two-way inventory, ecological transformation, maize
 # beyond Europe, disease asymmetry with debated framing attributed, labor crisis/Middle Passage).
@@ -154,19 +154,19 @@ Maya: One, and it's a stimulus. A Nahua account from the Florentine Codex descri
 
 [15-second pause]
 
-Maya: Claim: a virgin-soil epidemic. Evidence: Old World germs meeting a population with no immunity, no childhood exposure, no resistance. Reasoning: the dying emptied the towns ahead of the soldiers, and that made conquest possible.
+Maya: A virgin-soil epidemic — Old World germs meeting a population with no immunity, no childhood exposure, no resistance. The dying emptied the towns ahead of the soldiers, and that's what made conquest possible.
 
 Maya: Two. A historian argues the potato did more to change Europe than any treaty of the 1500s. Defend or refute, and use the Exchange to do it.
 
 [20-second pause]
 
-Maya: Defend it. Claim: calories move history. Evidence: the potato fed a European population boom, and maize did the same in Africa and Asia. Reasoning: more mouths meant more workers and soldiers. No treaty reshaped populations like a new food source.
+Maya: Defend it. Calories move history — the potato fed a European population boom, and maize did the same in Africa and Asia. More mouths meant more workers and soldiers, and no treaty reshaped populations like a new food source.
 
 Maya: Three. The dying emptied the Native towns and broke Spain's labor supply. The sugar plantations still needed workers. What did Spain do, and where had Europeans already done it?
 
 [15-second pause]
 
-Maya: Claim: Spain turned to enslaved African labor. Evidence: the Atlantic island plantations, Madeira and São Tomé, were already growing sugar with enslaved African labor. Reasoning: the Americas scaled the machine up. Thousands at first, then millions.
+Maya: Spain turned to enslaved African labor — the Atlantic island plantations, Madeira and São Tomé, were already growing sugar with enslaved African labor. The Americas scaled the machine up: thousands at first, then millions.
 
 Maya: One more, fast. Which direction did the farm animals travel — and why?
 

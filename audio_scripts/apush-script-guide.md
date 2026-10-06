@@ -131,7 +131,9 @@ every episode:
 - **Common-mistake lines:** one per box, real errors only ("don't write
   that…" is fine as one template among several, not the only one).
 - **Self-test:** "Three questions, AP-shaped" ritual framing stays; answers
-  in claim–evidence–reasoning shape; at least one stimulus-style. Pauses:
+  in claim–evidence–reasoning shape — the logic, never spoken labels
+  ("Claim:/Evidence:/Reasoning:" aloud is bad TTS, banned 2026-10-06, no
+  exceptions); at least one stimulus-style. Pauses:
   15–20 seconds for CER questions (they need real thinking time),
   8–10s for prediction beats. With 4
   boxes, a fast clearly-labeled bonus question ("One more, fast.") may
@@ -247,6 +249,12 @@ it's tissue:
 
 ## Changelog
 
+- 2026-10-06 (bad-TTS sweep): user ruled spoken "Claim:/Evidence:/Reasoning:"
+  labels are bad TTS with no exceptions — the locked U3-E8 exemplar was
+  fixed post-lock to comply. New hard gate **G13 no spoken CER labels** in
+  `apush-script-gates.py` (13 gates total) so no future agent can miss it;
+  checklist carries the matching item; full backfill across all current
+  drafts + both locked episodes.
 - 2026-10-06 (standards freeze for the fleet rebuild): (1) "runtime" defined
   as experienced runtime — speech at ≤180 WPM PLUS all scripted pause
   seconds — written into The format and Production sections (a script whose

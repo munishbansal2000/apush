@@ -175,3 +175,10 @@ Header/cold-open promised 12.5 min; 2,246 words alone need 12.48 min at
 Per the frozen standard (runtime = speech + pause silence), lengthened
 the promise: header now "~14 min experienced (104s pauses)", cold open
 says "Fourteen minutes". Gates re-run at --minutes 14: 12/12 PASS.
+
+## CER-label production fix — 2026-10-06
+User order ("Bad tts is not allowed"): removed spoken "Claim:/Evidence:/Reasoning:"
+labels from all 4 self-test model answers — TTS reads everything literally.
+CER logic (claim -> evidence -> reasoning) preserved, carried by natural
+connective tissue (em-dash pivots, "which means," "so," "the giveaway is").
+Substance identical; header word count updated to 2,233; gates 12/12 PASS.

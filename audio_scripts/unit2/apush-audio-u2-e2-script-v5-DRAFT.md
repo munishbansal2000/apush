@@ -1,5 +1,5 @@
 # U2-E2 — Maya + Marcus (Fish Audio)
-# Episode 2: From Servitude to Slavery. ~13 min experienced (1,771 words speech + 80s pauses)
+# Episode 2: From Servitude to Slavery. ~13 min experienced (1,764 words speech + 80s pauses)
 # Draft v5 (2026-10-06): full rebuild to the frozen 2026-10-06 standards from the v4 draft — Maya + Marcus interview,
 # three boxes with Maya's checkoffs, two prediction beats, exam devices (common-mistake lines, varied exam tips,
 # CER self-test with stimulus, fast bonus, LEQ tie-in), hedged facts, Morgan-debate both sides, attributed-quote disclosures.
@@ -132,19 +132,19 @@ Maya: One. Berkeley's own report to London, 1676: he governed "a people where si
 
 [20-second pause]
 
-Maya: Claim: Berkeley feared the united, armed poor. Evidence: six of seven poor and armed, and the rebellion proved it, with servants and freedmen and enslaved Black people fighting together. Reasoning: the fear was class unity, not race. The planters spent the next thirty years engineering it away.
+Maya: Berkeley feared the united, armed poor: six of seven poor and armed, and the rebellion proved it, with servants and freedmen and enslaved Black people fighting together. The giveaway: the fear was class unity, not race. The planters spent the next thirty years engineering it away.
 
 Maya: Two. After 1676, Virginia's planters pivoted from servants to enslaved Africans. Give both reasons.
 
 [15-second pause]
 
-Maya: Claim: politics and price. Evidence: the rebellion showed landowners that landless young white men were dangerous, and the Dutch trade monopoly broke in 1682, so enslaved Africans got cheaper. Reasoning: a workforce for life, divided by race, solved both problems at once.
+Maya: Politics and price: the rebellion showed landowners that landless young white men were dangerous, and the Dutch trade monopoly broke in 1682, so enslaved Africans got cheaper. A workforce for life, divided by race, solved both problems at once.
 
 Maya: Three. The exam hands you a line from the 1705 code: "All Negro, mulatto and Indian slaves within this dominion… shall be held to be real estate." What changed between 1640 and 1705?
 
 [20-second pause]
 
-Maya: Claim: custom hardened into law. Evidence: in 1640, one court gave John Punch a life sentence while his white partners got four more years. By 1705, the assembly wrote it down for everyone: people as property, for life, hereditary. Reasoning: one-off punishments became a system.
+Maya: Custom hardened into law: in 1640, one court gave John Punch a life sentence while his white partners got four more years. By 1705, the assembly wrote it down for everyone: people as property, for life, hereditary. One-off punishments became a system.
 
 Maya: One more, fast. The slave code Virginia copied: which island, which year?
 

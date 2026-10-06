@@ -65,6 +65,10 @@ PROFANITY = re.compile(
 # debate voices (Brutus/Henry/Jeffersonian/Haswell, Sepulveda w/o accent, …).
 # Matches any line-leading "Name:" label; NON_SPEAKER blocklist excludes
 # stage directions (SCREEN:) and self-test question numbers (Two:/Three:).
+# G13: spoken CER labels — "Claim:/Evidence:/Reasoning:" aloud is bad TTS
+# (banned 2026-10-06, user order, no exceptions). The CER logic stays;
+# the labels must be carried by natural connective tissue.
+CER_LABEL = re.compile(r"\b(Claim|Evidence|Reasoning):")
 # G12: known-falsehood regression. Patterns come from apush-fact-registry.yaml
 # (sibling of this script, else ./apush-fact-registry.yaml). Every corrected
 # factual error must add its falsehood pattern there, or it will regress.
@@ -247,6 +251,11 @@ def main():
         warns.append(("G12 registry missing",
                       "apush-fact-registry.yaml not found; falsehood check skipped"))
 
+    # G13: spoken CER labels — bad TTS, banned 2026-10-06, no exceptions
+    cer_hits = [(ln, b[:60]) for ln, _, b in spoken if CER_LABEL.search(b)]
+    check("G13 no spoken CER labels", not cer_hits,
+          "; ".join(f"L{ln}: {b}" for ln, b in cer_hits))
+
     # W1: uncontracted stiffness
     hits = [(ln, m.group(0)) for ln, _, b in spoken
             for m in UNCONTRACTED.finditer(b)]
@@ -309,7 +318,8 @@ def main():
               "G5 no verbatim repeats", "G6 no button-word loops",
               "G7 pause tags in read note", "G8 em-dash density <= 10",
               "G9 antithesis budget < 3", "G10 no retired phrases",
-              "G11 school-safe vocabulary", "G12 no known falsehoods"]
+              "G11 school-safe vocabulary", "G12 no known falsehoods",
+              "G13 no spoken CER labels"]
     failed_ids = {f[0].split()[0] for f in fails}
     for g in passed:
         if g.split()[0] not in failed_ids:

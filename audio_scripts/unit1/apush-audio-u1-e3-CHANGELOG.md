@@ -48,3 +48,10 @@
   demographic collapse) — the demographic entry renumbered F-U1-015;
   changelog references updated.
 - Final: 1,770 spoken words, ~11.1 min experienced (75s pauses), 12/12 gates.
+
+## CER-label production fix — 2026-10-06
+User order ("Bad tts is not allowed"): removed spoken "Claim:/Evidence:/Reasoning:"
+labels from all 3 self-test model answers — TTS reads everything literally.
+CER logic (claim -> evidence -> reasoning) preserved, carried by natural
+connective tissue (em-dash pivots, "which means," "so," "the giveaway is").
+Substance identical; header word count updated to 1,766; gates 12/12 PASS.

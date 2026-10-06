@@ -11,3 +11,10 @@
 - Corrections from validation: debt claim reworded from "roughly doubled" to Tier-1 "enormous debt" language (figure unverifiable in Tier 1+2); Britannica's "only 21" for Washington at Jumonville is a book error — script's 22 is arithmetically correct (registered F-U2-061); France kept Guadeloupe and Martinique in 1763 (registered F-U2-062, honest tier labeling).
 - Validation: Layer-2 ear + user checklist (10 findings, all repaired), Layer-3 fact-check (zero WRONG; debt hierarchy fix applied), repair agent, fresh Layer-2 re-read (3 minor issues, all fixed), gates 12/12 PASS.
 - Final: 1,944 spoken words + 73s scripted pauses = 12.0 min experienced at 180 WPM. Header, cold-open promise ("Twelve minutes"), and actual agree.
+
+## CER-label production fix — 2026-10-06
+User order ("Bad tts is not allowed"): removed spoken "Claim:/Evidence:/Reasoning:"
+labels from all 3 self-test model answers — TTS reads everything literally.
+CER logic (claim -> evidence -> reasoning) preserved, carried by natural
+connective tissue (em-dash pivots, "which means," "so," "the giveaway is").
+Substance identical; header word count updated to 1,936; gates 12/12 PASS.

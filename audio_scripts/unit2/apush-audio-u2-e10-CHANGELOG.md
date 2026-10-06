@@ -66,3 +66,10 @@ dating). Registry now at 181 entries.
 U2-E9 v5's closer teased tax bills, skipping E10. Repointed: "Next time: one
 region, up close — how the Chesapeake turned tobacco into a society."
 E9 gates re-run: 12/12 PASS. Logged in `apush-audio-u2-e9-CHANGELOG.md`.
+
+## CER-label production fix — 2026-10-06
+User order ("Bad tts is not allowed"): removed spoken "Claim:/Evidence:/Reasoning:"
+labels from all 3 self-test model answers — TTS reads everything literally.
+CER logic (claim -> evidence -> reasoning) preserved, carried by natural
+connective tissue (em-dash pivots, "which means," "so," "the giveaway is").
+Substance identical; header word count updated to 1,940; gates 12/12 PASS.

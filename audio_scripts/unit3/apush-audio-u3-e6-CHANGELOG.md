@@ -74,3 +74,10 @@ record). Still awaiting Layer-3 fact-check at time of writing.
   Echo-confusion fixed ("Stealing that phrase" removed — it was Maya's
   phrase first). One "don't write that…" template varied.
 - Gates: 12/12 green at 180 WPM @ 11.5 min.
+
+## CER-label production fix — 2026-10-06
+User order ("Bad tts is not allowed"): removed spoken "Claim:/Evidence:/Reasoning:"
+labels from all 3 self-test model answers — TTS reads everything literally.
+CER logic (claim -> evidence -> reasoning) preserved, carried by natural
+connective tissue (em-dash pivots, "which means," "so," "the giveaway is").
+Substance identical; header word count updated to 2,064; gates 12/12 PASS.

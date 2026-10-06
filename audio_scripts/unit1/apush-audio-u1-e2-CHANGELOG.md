@@ -56,3 +56,10 @@ nobody chose").
 constraints above). Still needed per process: apush-script-gates.py run, Layer 2
 (clean-context read + validator checklist), Layer 3 (fact-check vs Tier 1/Tier 2),
 user lock. NOT rendered; NOT pushed.
+
+## CER-label production fix — 2026-10-06
+User order ("Bad tts is not allowed"): removed spoken "Claim:/Evidence:/Reasoning:"
+labels from all 2 self-test model answers — TTS reads everything literally.
+CER logic (claim -> evidence -> reasoning) preserved, carried by natural
+connective tissue (em-dash pivots, "which means," "so," "the giveaway is").
+Substance identical; header word count updated to 1,834; gates 12/12 PASS.

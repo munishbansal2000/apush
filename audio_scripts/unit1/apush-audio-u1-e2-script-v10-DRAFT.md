@@ -1,5 +1,5 @@
 # U1-E2 — Maya + Marcus (Fish Audio)
-# Episode 2: Why Europe Sailed West. ~11 min experienced (1,835 words speech + 55s pauses)
+# Episode 2: Why Europe Sailed West. ~11 min experienced (1,834 words speech + 55s pauses)
 # v10 (2026-10-06): full rebuild to the 2026-10-06 standards — three boxes, two prediction beats,
 # exam devices (exam traps, common-mistake lines), hedged facts, CED 1.3 complete (motives ranked,
 # Iberia first, toolkit, Tordesillas/Line of Demarcation). Replaces v9 (1,440 words, 8 min, thin).
@@ -139,13 +139,13 @@ Maya: One. A Portuguese captain's log from the 1480s lists new gear aboard: an a
 
 [15-second pause]
 
-Maya: Claim: new instruments made the ocean crossable. Evidence: the astrolabe read latitude from the stars, and portolan charts mapped the coasts sailors trusted. Reasoning: Iberian sailors weren't braver than everyone else. They had the tools to sail beyond sight of land and find their way back, which is what made 1492 possible instead of 1392.
+Maya: New instruments made the ocean crossable — the astrolabe read latitude from the stars, and portolan charts mapped the coasts sailors trusted. Which means Iberian sailors weren't braver than everyone else. They had the tools to sail beyond sight of land and find their way back, and that's what made 1492 possible instead of 1392.
 
 Maya: Two, and this one's a source. A Spanish priest writes in 1493 that the new lands will bring souls to the church and silver to the crown. A classmate says God mattered more than gold. How do you answer?
 
 [15-second pause]
 
-Maya: Claim: both, but ranked. Evidence: the crown spent money for metal: the spice trade, the bullion shortage, the Ottoman squeeze. The Reconquista gave the mission its language, and glory kept the race going. Reasoning: if the test asks for the most significant cause, lead with economics, because the crown spent money for metal first.
+Maya: Both, but ranked — the crown spent money for metal: the spice trade, the bullion shortage, the Ottoman squeeze. The Reconquista gave the mission its language, and glory kept the race going. So if the test asks for the most significant cause, lead with economics, because the crown spent money for metal first.
 
 Maya: One more, fast. What did the Treaty of Tordesillas actually divide, and who ignored it?
 

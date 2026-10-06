@@ -39,3 +39,10 @@ content that exists in no current U1 episode (flagged by the U1-E9 cram
 coordinator). Replaced with the actual previous episode: "Last time:
 Jamestown — tobacco, the headright, and the House of Burgesses."
 Gates re-run: 12/12 PASS.
+
+## CER-label production fix — 2026-10-06
+User order ("Bad tts is not allowed"): removed spoken "Claim:/Evidence:/Reasoning:"
+labels from all 3 self-test model answers — TTS reads everything literally.
+CER logic (claim -> evidence -> reasoning) preserved, carried by natural
+connective tissue (em-dash pivots, "which means," "so," "the giveaway is").
+Substance identical; header word count updated to 1,816; gates 12/12 PASS.

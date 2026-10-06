@@ -19,3 +19,10 @@ Full rebuild to the frozen 2026-10-06 standards from the archived v5 (~8 min, no
 - G1 "That's" starters: repair introduced 2 over budget (4 total); reduced to 2.
 - Double-checking demoted (one mid-episode beat kept); read note corrected.
 - Gate-script bug note: none new (accented-speaker fix from U1-E7 held).
+
+## CER-label production fix — 2026-10-06
+User order ("Bad tts is not allowed"): removed spoken "Claim:/Evidence:/Reasoning:"
+labels from all 3 self-test model answers — TTS reads everything literally.
+CER logic (claim -> evidence -> reasoning) preserved, carried by natural
+connective tissue (em-dash pivots, "which means," "so," "the giveaway is").
+Substance identical; header word count updated to 1,883; gates 12/12 PASS.

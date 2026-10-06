@@ -1,5 +1,5 @@
 # U3-E8 — Debate: Maya moderates, Marcus (Federalist) vs Henry (Fish Audio)
-# Episode 25: Ratification Fight. ~12 min experienced (1,828 words speech + 119s pauses)
+# Episode 25: Ratification Fight. ~12 min experienced (1,822 words speech + 119s pauses)
 # Draft v4 (user-review rebuild). Debate per the master build plan. CED 3.8.
 # Read note: Maya moderates; Marcus argues the Federalist case; Henry speaks as Patrick Henry of Virginia, the leading Anti-Federalist voice, arguing the skeptic's case with dignity — real arguments, never caricature. Henry's debate speeches are dramatized from his real arguments; quoted lines ("smelt a rat," "We, the people") are his actual words. [8-second pause] marks are production notes for real silence in prediction beats; [15-second pause] and [20-second pause] marks are real silence for the CER self-test questions; [5-second pause] is the fast bonus question — they never go to the voice. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence. Tagline dash: held breath, do not rush it.
 # Pronunciation: Publius (PUB-lee-us); Brutus (BROO-tus); Anti-Federalist; ratification; Hancock (HAN-cock).
@@ -86,19 +86,19 @@ Maya: One. Why did Madison argue that a large republic was safer than a small on
 
 [15-second pause]
 
-Maya: Claim: more factions means no single one can dominate. Evidence: Federalist 10, extend the sphere, take in a greater variety of interests. Reasoning: a majority coalition "could seldom take place," which protects minorities from majority tyranny.
+Maya: More factions means no single one can dominate — Federalist 10: extend the sphere, take in a greater variety of interests. A majority coalition "could seldom take place," which protects minorities from majority tyranny.
 
 Maya: Two. A historian quotes Patrick Henry at the Virginia convention: "What right had they to say, 'We, the people?' … Who authorized them to speak the language of, 'We, the people,' instead of, 'We, the states?'" What's the point of this source? What is Henry actually afraid of?
 
 [20-second pause]
 
-Maya: Claim: Henry fears a consolidated national government, not a confederation of states. Evidence: he attacks the opening words, "We, the people" instead of "We, the states." Reasoning: if the states aren't the agents of the compact, sovereignty has moved to one distant national government.
+Maya: Henry fears a consolidated national government, not a confederation of states — he attacks the opening words, "We, the people" instead of "We, the states." If the states aren't the agents of the compact, sovereignty has moved to one distant national government.
 
 Maya: Three. Why did Massachusetts ratify in February 1788?
 
 [15-second pause]
 
-Maya: Claim: the Federalists bought the votes with a promise. Evidence: Hancock's deal, ratify now, recommend amendments after. Reasoning: the nineteen-vote margin shows the promise was the price.
+Maya: The Federalists bought the votes with a promise — Hancock's deal: ratify now, recommend amendments after. The nineteen-vote margin shows the promise was the price.
 
 Maya: One more, fast. How many states did Article VII require, and what rule did that replace?
 

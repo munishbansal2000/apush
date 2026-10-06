@@ -42,3 +42,10 @@ the U1 cram, zero contradictions with rebuilt U1 episodes, teases U2-E2
 unverifiable category (b) kept unhedged as standard detail). Yankee origin:
 script hedges sufficiently ("Theories go both ways, and nobody's fully
 sure").
+
+## CER-label production fix — 2026-10-06
+User order ("Bad tts is not allowed"): removed spoken "Claim:/Evidence:/Reasoning:"
+labels from all 3 self-test model answers — TTS reads everything literally.
+CER logic (claim -> evidence -> reasoning) preserved, carried by natural
+connective tissue (em-dash pivots, "which means," "so," "the giveaway is").
+Substance identical; header word count updated to 1,917; gates 12/12 PASS.

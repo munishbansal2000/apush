@@ -40,3 +40,15 @@ Following the LOCKED U3-E8 exemplar and U2-E10 v2: self-test model answers speak
 - The "roughly ten thousand soldiers" figure rides on footer disclosure (hedged in-dialogue, F-U3-009). If the user's bar hardens on it, the line to change is Maya's prediction-beat-2 setup ("roughly ten thousand soldiers").
 - Sugar Act appears only as a desk-tease ("The taxes get their own episode.") — U3-E2's territory untouched. No U3-E6/U3-E8 content referenced.
 - No audio rendered; nothing pushed; ~/workspace/apush/ untouched (read-only for this rebuild).
+
+## CER-label production fix — 2026-10-06
+User order ("Bad tts is not allowed"): removed spoken "Claim:/Evidence:/Reasoning:"
+labels from all 3 self-test model answers — TTS reads everything literally.
+CER logic (claim -> evidence -> reasoning) preserved, carried by natural
+connective tissue (em-dash pivots, "which means," "so," "the giveaway is").
+Substance identical; header word count updated to 1,879; gates 12/12 PASS.
+
+### prompt-label follow-up — 2026-10-06
+Independent re-read caught two self-test question PROMPTS still speaking the
+banned labels ("Claim, evidence, reasoning: go."). Stripped to "Make your case."
+Gates 12/12 PASS.

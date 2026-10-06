@@ -55,3 +55,10 @@ pre-existing W1 uncontracted "That IS" and W2 triple flags, both unchanged).
 - F-U1-028: falsehood `"different system.{0,20}different century"`; correct statement extended
   with the overlap note. All three patterns verified to fire on the old phrasing and stay
   silent on the repaired lines.
+
+## CER-label production fix — 2026-10-06
+User order ("Bad tts is not allowed"): removed spoken "Claim:/Evidence:/Reasoning:"
+labels from all 3 self-test model answers — TTS reads everything literally.
+CER logic (claim -> evidence -> reasoning) preserved, carried by natural
+connective tissue (em-dash pivots, "which means," "so," "the giveaway is").
+Substance identical; header word count updated to 1,764; gates 12/12 PASS.

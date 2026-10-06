@@ -1,5 +1,5 @@
 # U1-E1 — Maya + Marcus (Fish Audio)
-# Episode 1: Native Societies. ~11 min experienced (1,773 words speech + 75s pauses)
+# Episode 1: Native Societies. ~11 min experienced (1,767 words speech + 75s pauses)
 # v15: full rebuild to the 2026-10-06 standards — four boxes, two prediction beats, exam devices, hedged facts.
 # Read note: Maya tracks four boxes on her episode sheet and checks each one off in her own voice as the episode earns it. [10-second pause] marks are production notes for real silence in prediction beats; [15-second pause] and [20-second pause] marks are real silence for the CER self-test questions; [5-second pause] is the fast bonus question — they never go to the voice. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence.
 # Pronunciation: Cahokia (ka-HOH-kee-uh); teosinte (tay-oh-SIN-tee); maize; Iroquois (EER-uh-kwoy); palisade (pal-ih-SAYD); adobe (uh-DOH-bee); kiva (KEE-vuh); Cronon (CROH-nun); Pueblo (PWEB-loh); Mesoamerica (mez-oh-uh-MER-ih-kuh).
@@ -144,19 +144,19 @@ Maya: One. A question hands you Cahokia, the 1200s, something like 20,000 people
 
 [15-second pause]
 
-Maya: Claim: maize agriculture made the scale possible. Evidence: bred from teosinte over thousands of years, carried north century by century, and the three-sisters harvest fed dense towns. Reasoning: no food surplus, no cities. Population density follows the harvest.
+Maya: Maize agriculture made the scale possible — bred from teosinte over thousands of years, carried north century by century, and the three-sisters harvest fed dense towns. No food surplus, no cities: population density follows the harvest.
 
 Maya: Two, and this one has a source. Picture an Iroquois town: longhouses holding extended families, clans traced through the mother's line, with the clan mothers choosing the council leaders. A historian uses this source to argue one thing about Iroquois power. What is it?
 
 [20-second pause]
 
-Maya: Claim: political power ran through women. Evidence: matrilineal clans, and the clan mothers chose the leaders, and could remove them. Reasoning: office followed the mother's line, not the father's, which is why it startled the Europeans.
+Maya: Political power ran through women — matrilineal clans, and the clan mothers chose the leaders, and could remove them. Office followed the mother's line, not the father's, which is why it startled the Europeans.
 
 Maya: Three. True or false: before Europeans arrived, North America was wilderness nobody had touched. Prove it.
 
 [15-second pause]
 
-Maya: False. Claim: it was a managed landscape. Evidence: controlled burns, cleared fields, fish traps across rivers. Reasoning: Europeans mistook worked land for wild, and in places, disease had emptied the villages before they arrived.
+Maya: False. It was a managed landscape — controlled burns, cleared fields, fish traps across rivers. Europeans mistook worked land for wild, and in places, disease had emptied the villages before they arrived.
 
 Maya: One more, fast. Southwest or Plains: who stayed in one place, and why?
 

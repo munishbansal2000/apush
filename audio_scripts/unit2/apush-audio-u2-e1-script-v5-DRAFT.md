@@ -1,5 +1,5 @@
 # U2-E1 — Study Buddies: Maya + Jay (Fish Audio)
-# Episode 1: Four Ways to Want a Continent. ~12 min experienced (1,919 words speech + 75s pauses)
+# Episode 1: Four Ways to Want a Continent. ~12 min experienced (1,917 words speech + 75s pauses)
 # Draft v5 (2026-10-06): full rebuild to the frozen 2026-10-06 standards from the v4 draft — Study Buddies (Maya + Jay),
 # four boxes with Maya's checkoffs, two prediction beats, exam devices (common-mistake lines, varied exam tips,
 # CER self-test with stimulus, fast bonus, LEQ tie-in), hedged facts, Jesuit Relations + Flushing Remonstrance beats.
@@ -143,19 +143,19 @@ Maya: One. A 1657 petition from English settlers in Flushing, New Netherland, as
 
 [20-second pause]
 
-Maya: Claim: the Dutch ran a company colony, not a godly one. Evidence: English settlers petitioning a Dutch governor for somebody else's worship, in a town already full of other languages and peoples. Reasoning: a company needs customers more than it needs conformity. Diversity served the trade.
+Maya: The Dutch ran a company colony, not a godly one — English settlers petitioning a Dutch governor for somebody else's worship, in a town already full of other languages and peoples. The logic is commercial: a company needs customers more than it needs conformity. Diversity served the trade.
 
 Maya: Two. Why did New France stay thin while the English colonies filled up?
 
 [15-second pause]
 
-Maya: Claim: the French model discouraged settlement. Evidence: Huguenots barred, seigneurs who promised passage they mostly didn't pay, crown control with no assembly, and a fur economy that needed no farmers. Reasoning: nothing in the machine rewarded bringing families.
+Maya: The French model discouraged settlement — Huguenots barred, seigneurs who promised passage they mostly didn't pay, crown control with no assembly, and a fur economy that needed no farmers. Nothing in the machine rewarded bringing families.
 
 Maya: Three. The long essay asks you to compare Spanish and English colonization. The move?
 
 [15-second pause]
 
-Maya: Claim: collide, don't list. Evidence: Spain's encomienda folded Native peoples into its labor machine, and England's headright rewarded importing workers onto Native land. Reasoning: extraction needs labor, settlement needs land. The collision.
+Maya: Collide, don't list — Spain's encomienda folded Native peoples into its labor machine, and England's headright rewarded importing workers onto Native land. Extraction needs labor, settlement needs land: the collision.
 
 Maya: One more, fast. A 1629 company charter offers feudal estates for shipping fifty settlers. Which empire, and what's the system called?
 

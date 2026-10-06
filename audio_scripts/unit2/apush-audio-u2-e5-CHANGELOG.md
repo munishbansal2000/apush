@@ -11,3 +11,10 @@
 - **Registry:** +10 facts F-U2-037–F-U2-046 (Navigation Acts structure, enumerated/manufacturing split, Board of Trade, Molasses Act, Hancock, Walpole disclosure, Burke naming, Smith verbatim, triangle framing, molasses flood). Same-day discipline.
 - Read note corrected post-repair: one mid-episode checkoff + full recap as the check layer (not per-box checkoffs throughout).
 - Nothing pushed, nothing rendered. Awaiting the user's lock.
+
+## CER-label production fix — 2026-10-06
+User order ("Bad tts is not allowed"): removed spoken "Claim:/Evidence:/Reasoning:"
+labels from all 3 self-test model answers — TTS reads everything literally.
+CER logic (claim -> evidence -> reasoning) preserved, carried by natural
+connective tissue (em-dash pivots, "which means," "so," "the giveaway is").
+Substance identical; header word count updated to 1,624; gates 12/12 PASS.

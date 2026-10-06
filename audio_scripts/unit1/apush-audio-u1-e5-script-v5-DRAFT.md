@@ -1,5 +1,5 @@
 # U1-E5 — Maya + Marcus (Fish Audio)
-# Episode 5: Silver Empire. ~11 min experienced (1,819 words speech + 75s pauses)
+# Episode 5: Silver Empire. ~11 min experienced (1,816 words speech + 75s pauses)
 # Draft v5 (2026-10-06): full rebuild to the 2026-10-06 standards — four boxes, two prediction beats,
 # exam devices, hedged facts. Replaces v4 (1,440 words, 8 min, thin by the new standard).
 # Read note: Maya tracks four boxes on her episode sheet. She checks ONE off mid-episode
@@ -141,19 +141,19 @@ Maya: Question one comes with a stimulus. A 1615 drawing shows an Indigenous min
 
 [15-second pause]
 
-Maya: Claim: it's an Indigenous voice testifying from inside the system. Evidence: Guamán Poma, an Andean nobleman, drew the abuses himself, hundreds of drawings, in a letter to the king. Reasoning: the colonized almost never got to testify. Here one did, in the empire's own language, to the king himself.
+Maya: It's an Indigenous voice testifying from inside the system — Guamán Poma, an Andean nobleman, drew the abuses himself, hundreds of drawings, in a letter to the king. The colonized almost never got to testify. Here one did, in the empire's own language, to the king himself.
 
 Maya: Two. A student writes: "European prices rose in the 1500s because rulers watered down their coins." What's the mistake?
 
 [15-second pause]
 
-Maya: Claim: Malestroit's argument, and Bodin refuted it. Evidence: in 1568, Bodin answered that American silver, more money chasing the same goods, was the real cause. Reasoning: debasement couldn't explain the scale of the rise. The silver flood could. That's the quantity theory being born.
+Maya: Malestroit's argument, and Bodin refuted it — in 1568, Bodin answered that American silver, more money chasing the same goods, was the real cause. Debasement couldn't explain the scale of the rise. The silver flood could. That's the quantity theory being born.
 
 Maya: Three. Silver sailed from Acapulco to Manila. Silk and porcelain sailed back. A student concludes that Spain got rich off the Pacific trade. Defend or refute.
 
 [20-second pause]
 
-Maya: Refute it. Claim: the Pacific trade enriched the merchants. Evidence: by most accounts, the men in Manila and Mexico City kept most of the profit. Reasoning: the crown took its cut on the Atlantic side, so the Pacific profits stayed with the traders.
+Maya: Refute it. The Pacific trade enriched the merchants: by most accounts, the men in Manila and Mexico City kept most of the profit. The crown took its cut on the Atlantic side, so the Pacific profits stayed with the traders.
 
 Maya: One more, fast. The mita draft pulled about one in how many adult men?
 

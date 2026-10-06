@@ -1,5 +1,5 @@
 # U2-E5 — Maya + Marcus (Fish Audio)
-# Episode 5: The Empire's Money Theory. ~12 min experienced (1,633 words speech + 75s pauses)
+# Episode 5: The Empire's Money Theory. ~12 min experienced (1,624 words speech + 75s pauses)
 # Draft v5 (2026-10-06): full rebuild to the frozen 2026-10-06 standards from the archived v4 draft — cold-open ritual with continuity nod to U2-E4 v5's boxes (Holy Experiment / Pennsylvania Dutch / limits of tolerance), two prediction beats, per-box exam tips and common-mistake lines with varied templates, CER self-test with a verbatim Adam Smith stimulus, Burke 1775 name-drop, and pause-honest runtime (speech + every scripted pause second). Replaces v4 (thin, ~8 min, 5s pauses, no box ritual).
 # Read note: Maya tracks three boxes on her episode sheet; one mid-episode checkoff is her voice, the full recap is the check layer. [10-second pause] marks are production notes for real silence in prediction beats; [15-second pause] and [20-second pause] marks are real silence for the CER self-test questions; [5-second pause] is the fast bonus — they never go to the voice. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence. The em dash in the closing tagline is a held beat: leave a full breath between Marcus's "London wrote the rules —" and Maya's landing line. Do not rush it. Disclosure: the Adam Smith line in the self-test is his actual wording. Walpole's "sleeping dogs" line comes to us secondhand — the neglect was real, the exact quote is reported, and the dialogue says so honestly. The ## Sources section is production-only, never spoken.
 # Pronunciation: MEHR-kun-tih-lizm (mercantilism), BOOL-yun (bullion), eh-NOO-muh-ray-ted (enumerated), SAL-yoo-teh-ree (salutary), WAHL-pohl (Walpole), moh-LAS-iz (molasses), vice ad-MIR-al-tee (vice-admiralty)
@@ -96,19 +96,19 @@ Maya: One. The stimulus is Adam Smith, 1776, and these are his actual words: "No
 
 [15-second pause]
 
-Maya: Claim: he's attacking mercantilism; the date is the argument. Evidence: "the whole doctrine of the balance of trade" is mercantilism's beating heart. Reasoning: the economic case against the empire arrives in the same year as the political one. The demolition and the Declaration share a birthday.
+Maya: He's attacking mercantilism, and the date is the argument. "The whole doctrine of the balance of trade" is mercantilism's beating heart. The economic case against the empire arrives in the same year as the political one: the demolition and the Declaration share a birthday.
 
 Maya: Two. A Boston customs ledger, 1740: a merchant lands French molasses with the duty unpaid. What does one entry like that tell an AP reader about the Navigation Acts?
 
 [15-second pause]
 
-Maya: Claim: strict on paper, porous on the water. Evidence: the Molasses Act's steep duty sat unpaid, the same way Hancock's charges were dropped. Reasoning: the system's real shape came from enforcement, not statutes. Neglect was the operating system.
+Maya: Strict on paper, porous on the water: the Molasses Act's steep duty sat unpaid, the same way Hancock's charges were dropped. The system's real shape came from enforcement, not statutes. Neglect was the operating system.
 
 Maya: Three. England built an empire on mercantilism, then spent decades barely enforcing it. Paradox, or the whole point?
 
 [20-second pause]
 
-Maya: Claim: the paradox IS the point. Evidence: protected markets and the Navy's guarded lanes made the colonies rich, while unenforced Acts let merchants keep the profits. Reasoning: neglect turned a cage into something like a partnership — which is why the crackdown after 1763 would feel like a betrayal.
+Maya: The paradox IS the point: protected markets and the Navy's guarded lanes made the colonies rich, while unenforced Acts let merchants keep the profits. Neglect turned a cage into something like a partnership, which is why the crackdown after 1763 would feel like a betrayal.
 
 Maya: One more, fast: the name "salutary neglect": who coined it, and when?
 

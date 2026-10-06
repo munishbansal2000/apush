@@ -34,3 +34,10 @@ Mode, ~8 min, no exam devices, retired format).
   header and cold-open promise ("Twelve minutes") agree.
 - Gates: 12/12 PASS at 159 WPM @ 12 min.
 - Awaiting the user's lock. Nothing pushed, nothing rendered.
+
+## CER-label production fix — 2026-10-06
+User order ("Bad tts is not allowed"): removed spoken "Claim:/Evidence:/Reasoning:"
+labels from all 3 self-test model answers — TTS reads everything literally.
+CER logic (claim -> evidence -> reasoning) preserved, carried by natural
+connective tissue (em-dash pivots, "which means," "so," "the giveaway is").
+Substance identical; header word count updated to 1,912; gates 12/12 PASS.

@@ -37,3 +37,10 @@ England's challenge — Drake, Roanoke, the Armada," content in no current U1
 episode. Flagged to the E5 coordinator — the cram correctly drops the beat.
 
 Awaiting the user's lock. No render, no push.
+
+## CER-label production fix — 2026-10-06
+User order ("Bad tts is not allowed"): removed spoken "Claim:/Evidence:/Reasoning:"
+labels from all 3 self-test model answers — TTS reads everything literally.
+CER logic (claim -> evidence -> reasoning) preserved, carried by natural
+connective tissue (em-dash pivots, "which means," "so," "the giveaway is").
+Substance identical; header word count updated to 1,785; gates 12/12 PASS.

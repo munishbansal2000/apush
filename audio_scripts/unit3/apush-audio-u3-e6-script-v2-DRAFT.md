@@ -1,5 +1,5 @@
 # U3-E6 — Study Buddies: Maya + Jay (Fish Audio)
-# Episode 23: Articles of Confederation. ~11.5 min (2,070 words @ 180 WPM max)
+# Episode 23: Articles of Confederation. ~11.5 min (2,064 words @ 180 WPM max)
 # Draft v2 (full rebuild to current production standard). Study Buddies per the master build plan. CED 3.7.
 # Read note: [5-second pause] and [8-second pause] marks are production notes for real silence in prediction beats and the self-test — they never go to the voice. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence.
 # Pronunciation: Shays (SHAYZ); Miami (my-AM-uh); Harmar (HAR-mer); St. Clair (saynt KLAIR); Greenville (GREEN-vil); Annapolis (uh-NAP-uh-lis); Knox (nocks).
@@ -120,19 +120,19 @@ Maya: Three questions, AP-shaped. Say your answer before I give it. One: under t
 
 [5-second pause]
 
-Maya: Claim: the bar was impossibly high. Evidence: all thirteen states had to agree, and Rhode Island alone killed the 1781 import tax. Reasoning: unanimity meant any single state could veto reform, which is why the Articles could never fix themselves.
+Maya: The bar was impossibly high — all thirteen states had to agree, and Rhode Island alone killed the 1781 import tax. Unanimity meant any single state could veto reform, which is why the Articles could never fix themselves.
 
 Maya: Two, stimulus-style. A historian quotes Henry Knox writing to Washington that the rebels "see the weakness of government, and feel their own force." What's the point of this source?
 
 [8-second pause]
 
-Maya: Claim: it shows Shays' Rebellion terrified the elite into action. Evidence: Knox, Washington's own artillery chief, is writing in panic, and private Boston merchants had to fund the militia themselves. Reasoning: the rebellion proved the Confederation couldn't defend itself, which is what pushed leaders toward the Philadelphia Convention.
+Maya: It shows Shays' Rebellion terrified the elite into action — Knox, Washington's own artillery chief, is writing in panic, and private Boston merchants had to fund the militia themselves. The rebellion proved the Confederation couldn't defend itself, which is what pushed leaders toward the Philadelphia Convention.
 
 Maya: Three: name two things the Northwest Ordinance did, and one limit.
 
 [5-second pause]
 
-Maya: Claim: it was the Articles' one triumph, with a hard edge. Evidence: it banned slavery north of the Ohio and set the sixty-thousand-person statehood rule, but the ban stopped at the river. Reasoning: the Ordinance shaped how America grew, while leaving slavery untouched everywhere else.
+Maya: It was the Articles' one triumph, with a hard edge — it banned slavery north of the Ohio and set the sixty-thousand-person statehood rule, but the ban stopped at the river. The Ordinance shaped how America grew, while leaving slavery untouched everywhere else.
 
 Maya: One more, fast. Rescue or counter-revolution: what's Beard's argument?
 

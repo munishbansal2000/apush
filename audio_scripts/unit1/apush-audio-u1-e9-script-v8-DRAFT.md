@@ -1,5 +1,5 @@
 # U1-E9 — Maya + Jay (Fish Audio)
-# Episode 9: Cram Session, Unit 1. ~11.5 min experienced (1,790 words speech + 104s pauses)
+# Episode 9: Cram Session, Unit 1. ~11.5 min experienced (1,785 words speech + 104s pauses)
 # Draft v8 (2026-10-06): full rebuild to the frozen standards. Study Buddies format (Maya + Jay).
 # Replaces v7 (1,440 words, old standard): Q4 is now Jamestown — E4 was rebuilt as Planting, Not Raiding,
 # and the old Cortes beat has no home in the new unit. England's-challenge beat dropped: Drake,
@@ -161,13 +161,13 @@ Maya: Box eight, checked.
 Maya: Three questions, AP-shaped. Say your answer before I give it.
 Maya: One, with a source. A planter writes "20 and odd" Africans … "bought for victuals" at Point Comfort, the same year the Burgesses meet. Why pair them?
 [20-second pause]
-Maya: Claim: self-government and forced labor arrived together. Evidence: the Burgesses and the White Lion, 1619. Reasoning: the same tobacco economy that needed bound labor also produced planters demanding a say.
+Maya: Self-government and forced labor arrived together — the Burgesses and the White Lion, 1619. The same tobacco economy that needed bound labor also produced planters demanding a say.
 Maya: Two. "The Treaty of Tordesillas divided the world between Spain and Portugal." What's the mistake?
 [15-second pause]
-Maya: Claim: it bound two crowns, and no one else. Evidence: France and England never accepted the line. Reasoning: the line only restrained the two crowns that signed it.
+Maya: It bound two crowns, and no one else — France and England never accepted the line, so the line only restrained the two crowns that signed it.
 Maya: Three. Did Native peoples shape this period, or only get shaped by it?
 [20-second pause]
-Maya: Claim: they shaped it. Evidence: maize built Cahokia; the horse rebuilt Plains life; the Pueblos held a province twelve years. Reasoning: pushback is the unit's third shape, and it changed how Spain ruled.
+Maya: They shaped it — maize built Cahokia; the horse rebuilt Plains life; the Pueblos held a province twelve years. Pushback is the unit's third shape, and it changed how Spain ruled.
 Maya: One more, fast. Potosi's draft: mita or repartimiento?
 [5-second pause]
 Maya: Mita. Peru's. Repartimiento is New Spain's.

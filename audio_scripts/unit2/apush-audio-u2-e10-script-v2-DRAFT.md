@@ -1,5 +1,5 @@
 # U2-E10 — Story Mode: Marcus-led, Maya interjects
-# Episode 10: Jamestown & the Chesapeake. Twelve minutes experienced (1,946 spoken words + 73s scripted pauses = 12.0 min at 180 WPM).
+# Episode 10: Jamestown & the Chesapeake. Twelve minutes experienced (1,940 spoken words + 73s scripted pauses = 12.0 min at 180 WPM).
 # Draft v2 (2026-10-06): full rebuild to the frozen 2026-10-06 standards from the archived v1 draft (Marcus-solo, ~8 min, retired solo format) — Story Mode (Marcus-led, Maya interjects), cold-open ritual with continuity nod to U2-E9's cram, four boxes with Maya's checkoffs, two prediction beats, per-box exam tips and common-mistake lines with varied templates, CER self-test with stimulus-style question, pause-honest runtime (speech + every scripted pause second), LEQ regional-comparison tie-in. Replaces v1. Founding narrative (Jamestown, starving time, Smith, Rolfe/tobacco, headright, Burgesses, 1619, 1622) is U1-E4's territory — bridged, not re-taught; indentured servitude, Bacon's, and the slave codes are U2-E2's — referenced only; New England content is U2-E3's — used only as the comparison device.
 # Read note: Maya tracks four boxes on her episode sheet and checks each one off in her own voice as the episode earns it, with one mid-episode checkoff and the full recap as the check layer. [10-second pause] and [8-second pause] marks are production notes for real silence in prediction beats; [15-second pause] and [20-second pause] marks are real silence for the CER self-test questions; [5-second pause] is the fast bonus — they never go to the voice. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence. The em dash in the closing tagline is a held beat: a full breath between Marcus's lead and Maya's landing. Do not rush it. No verbatim historical quotes are used; all dates and figures are hedged per the fact standards. The ## Sources section is production-only, never spoken.
 # Pronunciation: POW-uh-tan (Powhatan); poh-kuh-HON-tuhs (Pocahontas); oh-puh-chan-kuh-NOH (Opechancanough); KAL-vert (Calvert); SES-ul (Cecil).
@@ -118,19 +118,19 @@ Maya: One. For most of the 1600s, the Chesapeake grew by immigration, not by bir
 
 [15-second pause]
 
-Maya: Claim: death outran birth. Evidence: malaria, dysentery, and typhoid cut roughly ten years off a newcomer's life, and the migration was mostly young men, roughly six to one in 1650. Reasoning: high death plus few women means few families, so the population could only grow by fresh boats.
+Maya: Death outran birth — malaria, dysentery, and typhoid cut roughly ten years off a newcomer's life, and the migration was mostly young men, roughly six to one in 1650. High death plus few women means few families, so the population could only grow by fresh boats.
 
 Maya: Two. The stimulus is a passage from Smith's Generall Historie, 1624, describing Pocahontas saving his life. A historian wants to use it as evidence of what happened in 1607. What's the problem?
 
 [20-second pause]
 
-Maya: Claim: it's Smith's own late telling, not a neutral record. Evidence: the rescue appears in none of his earlier accounts, it shows up in 1624, roughly seventeen years later, when he's selling a book. Reasoning: read the author before the story. Historians still split on whether he invented it or misunderstood a ritual.
+Maya: It's Smith's own late telling, not a neutral record — the rescue appears in none of his earlier accounts; it shows up in 1624, roughly seventeen years later, when he's selling a book. Read the author before the story: historians still split on whether he invented it or misunderstood a ritual.
 
 Maya: Three. Contrast the Chesapeake and New England in one move each: why did the Chesapeake scatter along rivers while New England clustered in towns?
 
 [15-second pause]
 
-Maya: Claim: the crop built the map. Evidence: tobacco needed fresh soil and river frontage, and the headright stacked land onto the importers; New England's covenant towns centered on the meetinghouse. Reasoning: the land system made the settlement pattern, dispersed plantations here, clustered towns there.
+Maya: The crop built the map — tobacco needed fresh soil and river frontage, and the headright stacked land onto the importers; New England's covenant towns centered on the meetinghouse. The land system made the settlement pattern: dispersed plantations here, clustered towns there.
 
 Maya: One more, fast. Maryland, 1649: what law, and who was it really for?
 

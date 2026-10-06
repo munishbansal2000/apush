@@ -14,3 +14,10 @@
 - Final: 1,943 spoken words, 75s pauses → 12.04 min experienced;
   header, cold-open promise ("Twelve minutes"), and actual agree.
   Gates 12/12 green at 162 WPM @ 12 min.
+
+## CER-label production fix — 2026-10-06
+User order ("Bad tts is not allowed"): removed spoken "Claim:/Evidence:/Reasoning:"
+labels from all 3 self-test model answers — TTS reads everything literally.
+CER logic (claim -> evidence -> reasoning) preserved, carried by natural
+connective tissue (em-dash pivots, "which means," "so," "the giveaway is").
+Substance identical; header word count updated to 1,941; gates 12/12 PASS.

@@ -269,3 +269,10 @@ Final state: 1,828 spoken words, ~12 min experienced (119s pauses),
 12/12 gates green, registry at 55 facts.
 md5: 48833f0e62bc0f453915fcb47984f90b (identical to v4 draft).
 Awaiting the user's go for TTS render and/or push — neither is authorized.
+
+## CER-label production fix — 2026-10-06
+User order ("Bad tts is not allowed"): removed spoken "Claim:/Evidence:/Reasoning:"
+labels from all 3 self-test model answers — TTS reads everything literally.
+CER logic (claim -> evidence -> reasoning) preserved, carried by natural
+connective tissue (em-dash pivots, "which means," "so," "the giveaway is").
+Substance identical; header word count updated to 1,822; gates 12/12 PASS. Post-lock production fix per user order 2026-10-06 — bad-TTS label removal; lock otherwise unchanged.

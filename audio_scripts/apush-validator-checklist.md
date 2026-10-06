@@ -32,6 +32,11 @@ the user caught 20 issues in a v3 that was 12/12 green with both agent layers pa
 
 ## Stimulus and exam devices
 - [ ] Stimulus quotes are exact. Splices are marked with ellipses.
+- [ ] Self-test model answers never speak "Claim:/Evidence:/Reasoning:"
+      labels aloud — the CER shape must be carried by natural connective
+      tissue, never spoken labels. TTS reads everything literally.
+      (Frozen 2026-10-06: user ruled spoken labels are bad TTS, no exceptions —
+      the locked U3-E8 exemplar was fixed post-lock to comply.)
 - [ ] Bonus questions are AP-shaped (e.g. "How many states did Article VII
       require?"), never trivia (e.g. "which state was ninth?").
 - [ ] Timing traps are explicit, not implicit ("not written in Philadelphia,

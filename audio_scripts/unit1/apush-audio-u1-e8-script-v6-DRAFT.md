@@ -1,5 +1,5 @@
 # U1-E8 — Story Mode: Marcus leads, Maya interjects
-# Episode 8: The Pueblo Revolt. ~12 min experienced (1,911 words speech + 77s pauses)
+# Episode 8: The Pueblo Revolt. ~12 min experienced (1,912 words speech + 77s pauses)
 # Draft v6 (full rebuild to the frozen 2026-10-06 standards; v5 was a Marcus-solo draft with no exam devices). CED 1.6.
 # Read note: Story Mode — Marcus carries the narrative, Maya interjects as a real person: questions, wrong guesses, pushback. [9-second pause] marks are production notes for real silence in prediction beats; [17-second pause] and [20-second pause] marks are real silence for the CER self-test; [5-second pause] is the fast bonus — they never go to the voice. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence. Popé's reported words and the spirit-vision reach us through Spanish records — the script says so in-dialogue. Tagline dash: held breath, do not rush it.
 # Pronunciation: Popé (poh-PAY), Otermín (oh-ter-MEEN), Treviño (treh-VEE-nyo), Vargas (VAR-gahs), kiva (KEE-vah), Tewa (TAY-wah), Ohkay Owingeh (oh-KAY oh-WIN-geh), maguey (mah-GAY), yucca (YOO-kah), Tesuque (teh-SOO-keh), Fragua (FRAH-gwah).
@@ -124,19 +124,19 @@ Maya: One. A lot of textbooks frame the Pueblo Revolt as a religious war, the fr
 
 [17-second pause]
 
-Maya: Claim: labor and land drove it too. Evidence: Pueblo workers built the mission farms, the encomienda pulled Pueblo men into labor for colonists, and the 1670s drought and Apache raids broke the empire's protection bargain. Reasoning: the revolt targeted the whole colonial machine, priests and settlers alike, not just the friars.
+Maya: Labor and land drove it too — Pueblo workers built the mission farms, the encomienda pulled Pueblo men into labor for colonists, and the 1670s drought and Apache raids broke the empire's protection bargain. Which is why the revolt targeted the whole colonial machine, priests and settlers alike, not just the friars.
 
 Maya: Two. A Pueblo man interrogated by the Spanish in 1681 said Popé was told to "make a cord of maguey fiber and tie some knots in it which would signify the number of days that they must wait before the rebellion." What's the point of this source? What does it tell you about the revolt?
 
 [20-second pause]
 
-Maya: Claim: the revolt was centrally planned. Evidence: the cord was a countdown every pueblo could read without a shared language, carried by runners across hundreds of miles. Reasoning: a source the Spanish recorded themselves proves this wasn't spontaneous rage, it was organized, and that's why it succeeded where earlier plots never got off the ground.
+Maya: The revolt was centrally planned — the cord was a countdown every pueblo could read without a shared language, carried by runners across hundreds of miles. And the proof is a source the Spanish recorded themselves: this wasn't spontaneous rage, it was organized, which is why it succeeded where earlier plots never got off the ground.
 
 Maya: Three. A student writes: "The Pueblo Revolt failed because the Spanish returned in 1692." Why would a grader mark that wrong?
 
 [17-second pause]
 
-Maya: Claim: the revolt succeeded in its deeper aim. Evidence: twelve years of self-rule, and when Spain returned it granted Pueblo families land, appointed a public defender, and tolerated the banned ceremonies. Reasoning: "failed" measures the wrong thing. The revolt forced the empire to change how it ruled.
+Maya: The revolt succeeded in its deeper aim — twelve years of self-rule, and when Spain returned it granted Pueblo families land, appointed a public defender, and tolerated the banned ceremonies. So "failed" measures the wrong thing: the revolt forced the empire to change how it ruled.
 
 Maya: One more, fast. How long did the pueblos hold New Mexico?
 

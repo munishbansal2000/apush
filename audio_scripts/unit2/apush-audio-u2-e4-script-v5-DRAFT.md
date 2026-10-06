@@ -1,5 +1,5 @@
 # U2-E4 — Maya + Marcus (Fish Audio)
-# Episode 4: Middle Colonies & Diversity. ~13 min experienced (1,928 words speech + 75s pauses)
+# Episode 4: Middle Colonies & Diversity. ~13 min experienced (1,922 words speech + 75s pauses)
 # Draft v5 (2026-10-06): full rebuild to the frozen 2026-10-06 standards from the v4 draft — three boxes with Maya's varied checkoffs, two prediction beats, exam devices (common-mistake lines, varied exam-tip templates, CER self-test with stimulus, fast bonus, LEQ tie-in), hedged facts per Tier 1–2 verification (prem27/5steps/Princeton + Britannica/NPS). Replaces v4 (thin, ~8 min, 5s pauses, no box ritual).
 # Read note: Maya tracks three boxes on her episode sheet and checks each one off in her own voice as the episode earns it. [10-second pause] marks are production notes for real silence in prediction beats; [20-second pause] and [15-second pause] marks are real silence for the CER self-test questions; [5-second pause] is the fast bonus — they never go to the voice. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence. The em dash in the closing tagline is a held beat: leave a full breath between Marcus's "Pennsylvania proved a colony could hold every faith —" and Maya's landing line. Do not rush it. The ## Sources section is production-only, never spoken.
 # Pronunciation: LEH-nee leh-NAH-pay (Lenni Lenape), shack-uh-MAX-un (Shackamaxon), PAH-luh-tyne (Palatine), doytch (Deutsch), sus-kwuh-HA-nuh (Susquehanna), UL-ster (Ulster), "sour" (Saur)
@@ -118,19 +118,19 @@ Maya: One. A 1751 essay warns: "Why should Pennsylvania, founded by the English,
 
 [20-second pause]
 
-Maya: Claim: by 1751, German immigration had grown so large it alarmed even a Pennsylvanian. Evidence: "so numerous as to Germanize us." Reasoning: the fear of the numbers proves the scale. The Germans weren't a footnote; they were roughly a third of the colony.
+Maya: By 1751, German immigration had grown so large it alarmed even a Pennsylvanian — "so numerous as to Germanize us." The fear of the numbers proves the scale: the Germans weren't a footnote; they were roughly a third of the colony.
 
 Maya: Two. Penn advertised religious liberty across Europe in 1681. Was the liberty the point, or the pitch?
 
 [15-second pause]
 
-Maya: Claim: the pitch paid for the point. Evidence: the pamphlet went out in German, and the land started selling, making Pennsylvania one of the fastest-growing colonies. Reasoning: the colony needed paying settlers. Liberty recruited the buyers the business needed.
+Maya: The pitch paid for the point — the pamphlet went out in German, and the land started selling, making Pennsylvania one of the fastest-growing colonies. The colony needed paying settlers; liberty recruited the buyers the business needed.
 
 Maya: Three. A historian writes that Pennsylvania was pluralist rather than tolerant. Using one limit from this episode, explain what she means.
 
 [15-second pause]
 
-Maya: Claim: many peoples, one hierarchy. Evidence: pick yours. The Walking Purchase cheated the Lenape out of a Rhode Island-sized piece of land. The 1688 anti-slavery protest was filed away. The founder himself held enslaved people. Reasoning: the groups were present. They weren't equal, and that gap is the difference between pluralism and tolerance.
+Maya: Many peoples, one hierarchy: pick yours. The Walking Purchase cheated the Lenape out of a Rhode Island-sized piece of land. The 1688 anti-slavery protest was filed away. The founder himself held enslaved people. The groups were present; they weren't equal, and that gap is the difference between pluralism and tolerance.
 
 Maya: One more, fast: Penn's liberty was also a business plan — in one phrase, why did he need the buyers?
 
