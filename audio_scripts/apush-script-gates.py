@@ -111,7 +111,7 @@ NON_SPEAKER = frozenset({
     "ONE", "TWO", "THREE", "FOUR", "FIVE",
     "SIX", "SEVEN", "EIGHT", "NINE", "TEN",
 })
-SPEAKER = re.compile(r"^([A-Z][A-Za-z.'-]{0,39}):\s*(.*)$")
+SPEAKER = re.compile(r"^([A-ZÀ-Þ][A-Za-zÀ-ÿ.'-]{0,39}):\s*(.*)$")
 
 
 def parse(path):

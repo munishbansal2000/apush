@@ -18,6 +18,10 @@
 #   britannica — Encyclopaedia Britannica, Tier 2 verified source
 #   nps — National Park Service (nps.gov), Tier 2 verified source
 #   web     — web sources, verified 2026-10-06 (see note for URLs)
+#   scholarly — (b) scholarly sources, verified 2026-10-06 — NOT Tier-2
+#               (e.g. Hernandez/SFSU essay citing Wagner & Parish; Lewis Hanke;
+#               Cambridge UL Dominican exhibition). Tier-labeled honestly per
+#               Layer-3: scholarly, not Britannica/NPS.
 
 facts:
   - id: F-CIV-001
@@ -239,3 +243,639 @@ facts:
     correct: "Little Turtle's confederacy destroyed Harmar's army (1790) and St. Clair's army at the Wabash (1791, 600+ killed — worst US Army defeat at Native hands); Wayne won at Fallen Timbers (1794); Treaty of Greenville (1795) ceded most of Ohio. Keep the sequence in chronological order."
     falsehoods: []
     sources: [prem27, web]
+
+  - id: F-RAT-001
+    topic: Federalist Papers authorship — Hamilton wrote most
+    correct: "85 Federalist essays under the Publius pseudonym (Oct 1787–Aug 1788, aimed at NY ratification): HAMILTON wrote 51, MADISON 29, JAY 5. Madison wrote the famous ones — Federalist 10 (factions/extended republic) and 51 (ambition counteracting ambition). Federalist 78 (judiciary) and 84 (against a bill of rights) are Hamilton's. Never teach 'Madison wrote the Federalist Papers' as the bulk author."
+    falsehoods:
+      - "madison wrote (most of|the bulk of|51 of) the federalist"
+      - "madison wrote the federalist papers"
+    sources: [prem27, britannica]
+
+  - id: F-RAT-002
+    topic: Ratification needed 9 of 13, not unanimity
+    correct: "Article VII required NINE of thirteen states to ratify — not unanimity (the Articles' rule the framers deliberately abandoned). New Hampshire was the 9th (June 21, 1788)."
+    falsehoods:
+      - "all thirteen states had to ratify"
+      - "ratification required unanimity"
+    sources: [prem27, web]
+
+  - id: F-RAT-003
+    topic: Ratification vote margins — MA/VA/NY; NH margin disputed
+    correct: "Massachusetts 187–168 (Feb 6, 1788; Hancock's recommend-amendments deal broke the deadlock); Virginia 89–79 (June 25, 1788); New York 30–27 (July 26, 1788). New Hampshire was the 9th state (June 21, 1788) — do NOT pin its margin; sources disagree (57–47 vs 57–46). North Carolina rejected then ratified (1789); Rhode Island last (1790), having rejected the Constitution in town-meeting votes without calling a convention."
+    falsehoods:
+      - "new hampshire 57 to 47"
+    sources: [prem27, web]
+
+  - id: F-RAT-004
+    topic: Bill of Rights came AFTER ratification, as a promise kept
+    correct: "The Bill of Rights was NOT in the original Constitution. The First Congress proposed 12 amendments; the states ratified 10 by 1791. Massachusetts (and others) ratified on the Federalist PROMISE of amendments — the promise was the price of ratification."
+    falsehoods:
+      - "the bill of rights was (part of|in) the original constitution"
+      - "the framers included the bill of rights (in|at) philadelphia"
+    sources: [prem27, norris]
+
+  - id: F-RAT-005
+    topic: Henry 'smelt a rat' — declining the Convention
+    correct: "Patrick Henry was elected a Virginia delegate to the Constitutional Convention but DECLINED to attend; asked why, he said 'I smelt a rat.' He then led the Anti-Federalist opposition at the Virginia ratifying convention (June 1788). His signature arguments: consolidated national government ('We, the people' vs 'We, the states'), no bill of rights, standing armies, elastic 'necessary and proper' and supremacy clauses."
+    falsehoods: []
+    sources: [web]
+
+  - id: F-CIV-025
+    topic: Why the war aim shifted — self-emancipation to Confiscation Acts
+    correct: "The war aim shifted because enslaved people forced it: from the war's first months they escaped plantations and fled to Union lines in large numbers, bringing emancipation to the top of the Union's agenda. Congress answered in steps: the Confiscation Acts (1861, 1862) declared enslaved people put to work for — then owned by supporters of — the Confederacy 'contraband of war' the Union could seize. Lincoln opposed the acts but did not veto them."
+    falsehoods:
+      - "lincoln freed the slaves on his own"
+      - "the war was about slavery from the start"
+    sources: [prem27, princeton]
+
+  - id: F-CIV-026
+    topic: Lincoln's Greeley letter, August 22, 1862
+    correct: "Lincoln's reply to Horace Greeley's 'The Prayer of Twenty Millions' (Aug 19, 1862) is dated August 22, 1862 — weeks before the Preliminary Emancipation Proclamation, with the draft already in his desk drawer. Verbatim: 'My paramount object in this struggle is to save the Union, and is not either to save or to destroy slavery. If I could save the Union without freeing any slave I would do it.' Closes with his personal wish 'that all men everywhere could be free.' Frame as Union-first official duty vs personal wish."
+    falsehoods: []
+    sources: [web]
+
+  - id: F-CIV-027
+    topic: Republican wartime economic program — the free-labor vision
+    correct: "With Southern Democrats gone from Congress, Republicans passed the economic program the South had blocked: Homestead Act (160 acres, farm it 5 years), Morrill Land-Grant Act (land + money for agricultural colleges), Pacific Railway Act (1862, land grants to railroad corporations for a transcontinental line), National Banking Acts (1863–64, uniform national currency). Frame as the 'free-labor' ideology (prem27), not a random list."
+    falsehoods: []
+    sources: [prem27, princeton]
+
+  - id: F-CIV-028
+    topic: Antietam — tactical draw, strategic Union victory
+    correct: "Antietam was TACTICALLY a draw (neither army broke) but STRATEGICALLY a Union victory — it ended British/French recognition talk and gave Lincoln the opening for the preliminary Emancipation Proclamation. Never call it flatly a 'narrow Union victory' without the tactical-draw qualifier."
+    falsehoods:
+      - "narrow union victory at antietam"
+      - "antietam was a (clear|decisive) union victory"
+    sources: [prem27, norris]
+
+  - id: F-CIV-029
+    topic: McClellan's cost — debatable, hedge it
+    correct: "McClellan's timidity cost the Union dearly, but HOW MUCH time it cost is debated among historians — hedge ('exactly how much time, historians still argue'), never state 'stretched the war by years' as settled."
+    falsehoods:
+      - "mcclellan stretched the war by years"
+      - "mcclellan's timidity stretched the war"
+    sources: [prem27]
+
+  - id: F-CIV-030
+    topic: Ironclads — the age of the wooden warship was ending, not ended
+    correct: "Hampton Roads (Virginia vs Monitor, March 1862): the Virginia destroyed two wooden Union warships, then fought the Monitor to a draw. Frame as 'the age of the wooden warship was ending' — never declare 'wooden navies were finished' as a settled verdict."
+    falsehoods:
+      - "wooden navies were finished"
+    sources: [prem27]
+
+  - id: F-RAT-006
+    topic: Hancock's deal — recommendatory amendments, not a formal bill-of-rights promise
+    correct: "Hancock's deal (Massachusetts, Feb 1788): ratify now, RECOMMEND amendments for the First Congress to consider. Frame as 'ratify now, recommend amendments' — never as a formal promise of a bill of rights."
+    falsehoods:
+      - "hancock promised a bill of rights"
+      - "hancock's deal.*bill of rights.*promise"
+    sources: [prem27]
+
+  - id: F-RAT-007
+    topic: Rhode Island — no ratifying convention; town-meeting referendum rejected it
+    correct: "Rhode Island never called a ratifying convention. It put the Constitution to a town-meeting referendum (March 1788), which the Federalists boycotted, and voters rejected it (~2,708–237). Ratified last, May 1790, under pressure."
+    falsehoods:
+      - "rhode island never voted on the constitution"
+      - "rhode island.*convention.*ratified"
+    sources: [prem27]
+
+  - id: F-RAT-008
+    topic: John Jay — rheumatism winter 1787-88, wrote no more Papers (but lived on)
+    correct: "Jay wrote 5 Federalist essays, then fell ill with rheumatism through the winter of 1787-88 and wrote no more. 'Went home sick' is fine color — but never imply he died or vanished; he later became Chief Justice."
+    falsehoods:
+      - "jay died.*federalist"
+    sources: [founders-online]
+
+  - id: F-RAT-009
+    topic: The Constitution protected slavery — three-fifths, fugitive slave, 1808
+    correct: "The Constitution PROTECTED slavery: the three-fifths clause (Art. I s.2, enslaved counted 3/5 for representation), the fugitive slave clause (Art. IV s.2), and the slave-trade clause barring Congress from ending importation before 1808 (Art. I s.9). Any 'the Constitution ended slavery' framing must carry this half."
+    falsehoods:
+      - "the constitution (ended|abolished) slavery"
+      - "the constitution was anti-slavery"
+    sources: [prem27, constitution-text]
+
+  - id: F-RAT-010
+    topic: Grand Federal Procession — Philadelphia, July 4, 1788
+    correct: "Philadelphia's Grand Federal Procession, July 4 1788: ~5,000 marchers, ~17,000 watching; blacksmiths dragged a working forge beating swords into farm tools; a rolling 'Grand Federal Edifice' with 13 columns — 10 finished, 3 bare, for the states still out. Boston/Baltimore/Charleston held smaller versions."
+    falsehoods: []
+    sources: [web]
+
+  - id: F-RAT-011
+    topic: Brutus 1 — consolidation, not a confederation
+    correct: "Brutus No. 1 (Oct 1787, likely Robert Yates): the Constitution creates 'one complete national government,' not a confederation — via the Necessary and Proper + Supremacy clauses, which let Congress expand power at the states' expense. The federal-vs-national distinction is the exam hook (cf. Madison, Federalist 39: 'partly federal, partly national')."
+    falsehoods:
+      - "brutus supported the constitution"
+      - "brutus.*federalist papers"
+    sources: [web]
+
+  - id: F-RAT-012
+    topic: George Mason refused to sign
+    correct: "George Mason of Virginia refused to sign the Constitution in Philadelphia (Sept 1787) — principally over the missing bill of rights. Name him (with Brutus) to show Anti-Federalism wasn't one man's cause."
+    falsehoods:
+      - "george mason signed the constitution"
+    sources: [prem27]
+
+  - id: F-RAT-013
+    topic: Henry's "smelt a rat" — exact wording
+    correct: "Patrick Henry's actual word was 'smelt': 'I smelt a rat' (his reply explaining why he declined the Philadelphia Convention). Any script line quoting him must use 'smelt,' not 'smelled,' or the disclosure claim ('quoted lines are his actual words') fails."
+    falsehoods:
+      - "smelled a rat"
+    sources: [web]
+
+  - id: F-RAT-014
+    topic: Henry's real slavery argument — implied powers, wartime emancipation
+    correct: "In the Virginia ratifying convention, Henry warned that among the 'ten thousand implied powers' Congress might assume, 'they may, if we be engaged in war, liberate every one of your slaves if they please… by men, a majority of whom have not a common interest with you.' For Virginia planters, the fear that federal power might one day END slavery was an argument AGAINST ratification — slavery was a live ratification factor, not a moral aside."
+    falsehoods:
+      - "henry.*shield will the free have"
+      - "slavery was not.*factor.*ratification"
+    sources: [web]
+
+  - id: F-RAT-015
+    topic: Hancock's gout at the Massachusetts convention
+    correct: "John Hancock, presiding over the Massachusetts ratifying convention (Jan–Feb 1788), was carried in on a litter / by servants, wrapped in flannels, his gout flaring — on Jan 30, 1788. His gout recurred at politically opportune times and detractors insinuated it was feigned; his entrance with the ratify-now-amend-later compromise proposal turned the convention."
+    falsehoods:
+      - "hancock.*walked into the convention"
+      - "hancock was healthy.*1788"
+    sources: [web]
+
+  - id: F-RAT-016
+    topic: Brutus answered the Constitution essay by essay; large-republic thesis
+    correct: "Brutus (Oct 1787–Apr 1788, likely Robert Yates) wrote ALONGSIDE the Federalist Papers, not after them — answering the Constitution essay by essay; Hamilton's Federalist 78 was in part a response to Brutus. Brutus 1's actual claim: a republic cannot hold over so large a territory — it must consolidate into one great national government or break apart (he preferred a confederation of small republics)."
+    falsehoods:
+      - "brutus.*took.*papers apart"
+      - "brutus.*after the federalist papers"
+      - "brutus.*rule by force or dissolve"
+    sources: [web]
+
+  - id: F-RAT-017
+    topic: Henry's "We, the people" — exact splice form
+    correct: "Henry's June 4, 1788 Virginia convention attack on the preamble, spliced with ellipsis: 'What right had they to say, We, the people? … Who authorized them to speak the language of, We, the people, instead of, We, the states?' AP stimulus quotes are exact — the splice MUST carry the ellipsis."
+    falsehoods:
+      - "what right had they to say[^…]*who authorized them to speak"
+    sources: [web]
+
+  - id: F-RAT-018
+    topic: The winners' promise to the losers
+    correct: "The Bill of Rights was the WINNERS' promise TO the losers: Federalists promised amendments to win ratification (Massachusetts's ratify-now-amend-later deal), then kept the promise — twelve amendments proposed, ten ratified by 1791. It was not written in Philadelphia; it was added in 1791 as the price of ratification. Never invert the direction ('the winners kept the losers' promise')."
+    falsehoods:
+      - "winners kept the losers' promise"
+      - "bill of rights was written in philadelphia"
+    sources: [prem27, web]
+
+  - id: F-U1-001
+    topic: Cahokia — size, peak, Monk's Mound, decline
+    correct: "Cahokia (Mississippian culture, flourished ~800-1600): roughly 10,000-20,000 people at its peak (peak between 1050-1150 per UNESCO; 'in the 1200s' per 5 Steps) — about the size of many European cities of the time. Monk's Mound ~100 feet tall, the largest prehistoric earthen structure north of Mexico, dug by hand and carried in baskets. Largely abandoned in the 1300s; causes debated (disease, climate change, warfare, environmental stress) — never pinned to a single cause."
+    falsehoods:
+      - "cahokia.*peak.*1100"
+      - "exactly 20,000 people"
+      - "monk's mound.*taller than.*100"
+    sources: [5steps, britannica, web]
+
+  - id: F-U1-002
+    topic: Maize domestication — bred, not found
+    correct: "Maize was bred from teosinte, a wild grass of southern Mexico, over thousands of years (Britannica: more than 6,000 years ago), then spread northward from Mexico. The 'three sisters' were maize, beans, and squash. Say 'bred'/'built' — never 'found' or 'discovered.'"
+    falsehoods:
+      - "\\bfound maize\\b"
+      - "\\bdiscovered maize\\b"
+    sources: [5steps, britannica]
+
+  - id: F-U1-003
+    topic: Iroquois Confederacy — founding five, consensus, matrilineal power
+    correct: "Five founding nations (Mohawk, Oneida, Onondaga, Cayuga, Seneca) bound under the Great Law of Peace (founded perhaps in the 1400s, to end infighting). The Grand Council decided by consensus, not majority vote. Matrilineal clans: the clan mothers chose the council leaders and could remove them. The Tuscarora joined later as a sixth nation (~1720). Iroquois influence on the US Constitution is debated among historians — never teach it as settled."
+    falsehoods:
+      - "six nations founded the"
+      - "iroquois.*majority vote"
+      - "iroquois directly inspired the constitution"
+    sources: [prem27, 5steps, britannica]
+
+  - id: F-U1-004
+    topic: The 'pristine wilderness' myth — managed landscape
+    correct: "Pre-contact North America was a managed landscape, not untouched wilderness: controlled burns (Cronon, Changes in the Land), cleared fields, fish traps. In many areas epidemics emptied villages before Europeans arrived, so explorers mistook worked-then-emptied land for virgin wilderness."
+    falsehoods:
+      - "was an untouched wilderness"
+      - "was a pristine wilderness"
+      - "left no trace"
+    sources: [britannica, web]
+
+  - id: F-U1-005
+    topic: Columbus made four voyages, not three
+    correct: "Columbus made FOUR voyages to the Americas (1492, 1493, 1498, 1502–1504) — three more after the first. Note: prem27 ch. 3 wrongly says 'two more voyages'; cite Britannica for the voyage count."
+    falsehoods:
+      - "two more voyages"
+      - "columbus.*three voyages"
+    sources: [britannica]
+
+  - id: F-U1-006
+    topic: Henry the Navigator never sailed the discovery voyages — but did campaign in Morocco
+    correct: "Henry the Navigator never sailed on the discovery voyages himself — he funded them. He did campaign in Morocco (Ceuta 1415, reinforcements 1418, Tangier 1437). Never claim he 'never left Portugal.'"
+    falsehoods:
+      - "never left portugal"
+    sources: [britannica]
+
+  - id: F-U1-007
+    topic: Tordesillas/papal division bound only Spain and Portugal
+    correct: "No other Atlantic European power ever accepted the papal division (Inter caetera, 1493) or the Treaty of Tordesillas (1494) — the line bound only the two crowns. France, England, and everyone else ignored it."
+    falsehoods:
+      - "tordesillas divided the world for everyone"
+      - "the pope's line bound all of europe"
+    sources: [britannica, prem27]
+
+  - id: F-U1-008
+    topic: Columbus's 1492 landfall — teach San Salvador, not just the Bahamas/Guanahani
+    correct: "Columbus named the Caribbean island of his 1492 first landfall San Salvador (prem27 ch. 3: 'reached a Caribbean island that he named San Salvador'). Teach the name Columbus gave it; 'Guanahani' was the Taino name for the island, not Columbus's — never frame the landfall as only 'the Bahamas' or only 'Guanahani' without the San Salvador name."
+    falsehoods:
+      - "beach at guanahani"
+      - "landed in the bahamas"
+      - "landed on guanahani"
+      - "1492, the bahamas"
+    sources: [prem27]
+
+  - id: F-U1-015
+    topic: Native demographic collapse — the 90% is a range top, not a pin
+    correct: "premium2027 estimates that between 50 and 90 percent of the Native peoples of the Americas died between 1500 and 1650. Use the range, never a pinned 'ninety percent by 1570.' 'Eight or nine out of ten' is allowed only for the hardest-hit towns/places (top of the range, hedged)."
+    falsehoods:
+      - "ninety percent by 1570"
+      - "down roughly ninety percent by 1570"
+      - "population down.{0,40}ninety percent.{0,40}1570"
+    sources: [prem27]
+
+  - id: F-U1-009
+    topic: Syphilis origin — debated, attribute both sides in-dialogue
+    correct: "Whether syphilis crossed east from the Americas (Columbian hypothesis) or was already present in Europe (pre-Columbian hypothesis) is debated; the genetic evidence is contested. premium2027 states the Columbian hypothesis flatly ('Spanish sailors brought syphilis back to Europe'), but the script must attribute both sides in-dialogue — 'Some historians say it crossed from the Americas. Others say it was already in Europe before 1492. Nobody's settled it.' — never teach it as settled."
+    falsehoods: []
+    sources: [prem27, web]
+
+  - id: F-U1-010
+    topic: Maize beyond Europe — Africa and Asia
+    correct: "Maize didn't stop in Europe: the Portuguese introduced it to Africa in the 16th century, where it became Africa's most important staple food crop, and it reached Asia in the 1600s, feeding population growth on both continents. Hedge the China timing: Britannica (Tier 2) dates corn's population-growth impact in China mainly after 1700 — never pin population growth in Ming China to the 1600s."
+    falsehoods:
+      - "maize.{0,30}never left europe"
+      - "ming china.*population (boom|growth).{0,30}1600s"
+    sources: [web, britannica]
+
+  - id: F-U1-011
+    topic: Atlantic-island sugar plantations — the slave-labor precedent
+    correct: "Sugar plantations on the Atlantic islands (Madeira, São Tomé) ran on enslaved African labor in the 1500s — São Tomé is described as the first tropical plantation economy based on sugar monoculture and slave labor, 'a model exported to the New World.' The Americas scaled the machine up (thousands at first, then millions). Never teach that the slave trade started in the Americas, or with cotton."
+    falsehoods:
+      - "the slave trade started with cotton"
+      - "slavery in the americas began with cotton"
+    sources: [web]
+
+  - id: F-U1-012
+    topic: Europeans first took tomatoes for poisonous
+    correct: "Europeans (especially northern Europeans) initially believed tomatoes were poisonous — they belong to the nightshade family — and grew them as ornamentals before trusting the fruit. The ripe fruit is safe. Usable as a student-world 'knows something' beat."
+    falsehoods: []
+    sources: [web]
+
+  - id: F-U1-013
+    topic: Tlaxcalan alliance
+    correct: "The Tlaxcalans joined the Spanish against the Aztecs — a standard, uncontested detail, absent from all Tier 1 books/transcripts (Tier: registry)."
+    falsehoods:
+      - "tlaxcalans (allied|joined) with the aztecs"
+      - "tlaxcalans.*aztecs against the spanish"
+    sources: [registry]
+
+  - id: F-U1-014
+    topic: Virgin-soil framing — a debated metaphor, never settled
+    correct: "The 'virgin soil' metaphor is contested: critics argue it naturalizes the dying, making catastrophic mortality sound like weather or inevitability. Disease led the Native demographic collapse, but warfare, brutal conquest, and harsh working conditions contributed (prem27). Scripts must attribute the pushback in-dialogue ('Some historians push back on it for exactly that reason') — never present virgin-soil as settled or unquestioned."
+    falsehoods:
+      - "virgin soil.*(the whole story|explains everything|alone)"
+      - "disease did it all"
+    sources: [prem27]
+
+  - id: F-U1-016
+    topic: Jamestown founding — Virginia Company, charter, colonist count
+    correct: "Jamestown was a private venture: London investors formed the joint-stock Virginia Company; James I chartered it (April 10, 1606). About 105 colonists sailed on three ships (Susan Constant, Godspeed, Discovery) under Christopher Newport and landed May 13–14, 1607. No king paid for it — the merchants' money, the merchants' risk."
+    falsehoods:
+      - "the king funded jamestown"
+      - "james i funded jamestown"
+      - "king james.*paid for jamestown"
+    sources: [prem27, britannica]
+
+  - id: F-U1-017
+    topic: Starving time — 500 to ~60, winter 1609–1610
+    correct: "The starving time was the winter of 1609–1610: about 500 additional settlers had arrived by 1610 and only about 60 were still alive. Princeton: nearly 90% of the 500 perished, with some resorting to cannibalism."
+    falsehoods: []
+    sources: [prem27, princeton]
+
+  - id: F-U1-018
+    topic: Smith's rule — exact wording
+    correct: "John Smith's 1608 rule, verbatim: 'He that will not work, shall not eat' (original spelling 'He that will not worke shall not eate'). Note: the original continues 'except by sicknesse he be disabled'; the script's shortened quote is the standard textbook shorthand. He became president September 10, 1608; a gunpowder-bag injury sent him back to England in early September 1609."
+    falsehoods:
+      - "he who will not work, shall not eat"
+    sources: [britannica]
+
+  - id: F-U1-019
+    topic: De La Warr's 1610 arrival
+    correct: "Thomas West, Lord De La Warr, appointed governor 1610: sailed March 1610 with three ships, 150 settlers, and supplies; arrived Jamestown June 10, 1610 — in time to intercept the colonists abandoning the colony. Delaware Bay, the Delaware River, and the state of Delaware are named for him."
+    falsehoods:
+      - "de la warr.*arrived.*1611"
+    sources: [britannica]
+
+  - id: F-U1-020
+    topic: Rolfe's tobacco — Caribbean strain, 1612
+    correct: "John Rolfe began growing tobacco around 1612 using a sweeter Caribbean strain — seeds from Trinidad (Nicotiana tabacum), not the harsh native leaf. Dates and shipment figures beyond this (e.g. 1613 samples, 1617/1618 poundage) are outside Tier 1–2 sources and stay hedged out of the script."
+    falsehoods: []
+    sources: [prem27, nps, web]
+
+  - id: F-U1-021
+    topic: Headright system — 1618, 50 acres, to the payer
+    correct: "The Virginia Company introduced the headright in 1618: 50 acres to whoever PAID a settler's passage — the planter, not the servant. Bring ten workers, claim 500 acres."
+    falsehoods:
+      - "headright.*servants?.*(received|got|were given).*land"
+      - "headright gave.*servant.*50 acres"
+    sources: [princeton, prem27]
+
+  - id: F-U1-022
+    topic: White Lion, 1619 — "20 and odd" Africans at Point Comfort
+    correct: "Late August 1619, the English privateer White Lion (sailing under Dutch papers) put in at Point Comfort — not Jamestown — and traded about twenty Africans, seized from the Portuguese slave ship Sao Joao Baptista, for food. Rolfe recorded '20 and odd Negroes ... bought for victuals.' On paper sold as servants; in reality stolen. Slavery became central to the southern economy only later in the century."
+    falsehoods:
+      - "white lion.*(landed|arrived).{0,25}jamestown"
+    sources: [prem27, nps, web]
+
+  - id: F-U1-023
+    topic: House of Burgesses — 1619, first elected assembly
+    correct: "The House of Burgesses was created by the Virginia Company in 1619 — the first democratically elected legislative assembly in what became the United States. Initially all free adult men could vote; the franchise narrowed over time. Never 'everyone voted.'"
+    falsehoods:
+      - "everyone voted.*burgesses"
+      - "all colonists.*vote.*burgesses"
+    sources: [5steps, prem27]
+
+  - id: F-U1-024
+    topic: 1622 attack — Opechancanough, 347 killed, ~quarter of colony
+    correct: "March 22, 1622: Opechancanough — Powhatan's successor (his brother, per Britannica) — led coordinated surprise attacks across the plantations: 347 killed, about a quarter of the colony. Cause: tobacco's land hunger pushing English settlement past Powhatan boundaries. English retaliation included poisoned wine at a 1623 parley (~200 dead)."
+    falsehoods:
+      - "opechancanough.*son of powhatan"
+      - "1622.*half the colony"
+    sources: [prem27, web]
+
+  - id: F-U1-025
+    topic: Virginia becomes a royal colony, 1624
+    correct: "In 1624 James I revoked the Virginia Company's charter and made Virginia a royal colony — alarmed at the violence against American Indians, the high mortality, and the company's mismanagement."
+    falsehoods:
+      - "charter.*revoked.*1619"
+      - "virginia.*royal colony.*1620"
+    sources: [prem27]
+
+  - id: F-U1-026
+    topic: James I's Counterblaste to Tobacco, 1604
+    correct: "James VI and I published A Counterblaste to Tobacco in 1604, denouncing smoking as a 'vile custom' — years before Rolfe's crop took off. The pamphlet lost; the profits won."
+    falsehoods: []
+    sources: [5steps, britannica]
+
+  - id: F-U1-027
+    topic: Pocahontas — capture, marriage, death
+    correct: "The English captured Pocahontas in 1613; she married John Rolfe in April 1614 (buying a few years of peace); she died in England in March 1617, about twenty years old. The Disney version survives almost none of this."
+    falsehoods:
+      - "pocahontas.*died.*virginia"
+    sources: [princeton, 5steps, web]
+
+  - id: F-U1-028
+    topic: Indentured servants — 4 to 7 years, majority of Chesapeake migrants
+    correct: "Indentured servants signed away usually four to seven years of labor for passage to the Chesapeake. The majority of English migrants to the region came this way (Princeton: over 75% of 130,000). Do not confuse with enslaved Africans — most field workers were servants for decades after 1619."
+    falsehoods: []
+    sources: [prem27, princeton]
+
+  - id: F-U1-029
+    topic: Smith's Pocahontas rescue story — unsettled
+    correct: "Smith's rescue story is his own later account ('later claimed,' 5steps). Scholars are split: some think he invented it, others that he misunderstood an adoption ceremony. Never teach it as settled fact — hedge in-dialogue ('Nobody's fully sure')."
+    falsehoods:
+      - "pocahontas saved smith.*(definitely|certainly|without doubt)"
+    sources: [5steps, britannica]
+
+  - id: F-U1-030
+    topic: Potosí — 1545 strike, Huallpa's wind telling, city size
+    correct: "Diego Huallpa, an Indigenous prospector, is traditionally credited with the 1545 silver strike on the Cerro Rico (Potosí, present-day Bolivia). The wind version — a gust knocking him flat while looking for a huaca, ore-rich dirt in his hands — is the telling Huallpa himself gave (recounted to Viceroy Toledo, 1572, on his deathbed, per the Library of Congress/Kris Lane). Other tellings say he was chasing a llama. Attribute both; never teach one as the single true version. By the early 1600s Potosí held something like 160,000 people — roughly London-sized — at about 13,000+ feet."
+    falsehoods:
+      - "huallpa.{0,40}llama.{0,40}(the true|only|real) story"
+      - "potosi.{0,40}exactly 200,000"
+    sources: [web]
+
+  - id: F-U1-031
+    topic: Mita — Toledo's 1570s reorganization, 1-in-7, forced draft not slavery
+    correct: "Viceroy Toledo's 1570s ordinances (1573) reorganized the Inca mit'a into the Spanish colonial draft for the Potosí mines: about one in seven adult men pulled in rotation. It was a FORCED DRAFT, not slavery — workers served their turn and returned home (paid, badly). Mercury amalgamation was introduced to Potosí in the same 1570s rebuild to work poorer ores; mercury poisoning (trembling, loosening teeth) was widespread."
+    falsehoods:
+      - "the mita was slavery"
+      - "mita workers were slaves"
+      - "mita.{0,30}lifelong enslavement"
+    sources: [web]
+
+  - id: F-U1-032
+    topic: Bodin 1568 reply to Malestroit — quantity theory
+    correct: "Jean Bodin's 1568 Réponse answered Malestroit's 1566 treatise (which blamed debased/lower-quality coins for rising prices): Bodin argued the influx of American silver — more money chasing the same goods — was the primary cause. The argument is a milestone in the quantity theory of money. Malestroit is the exam's trap answer."
+    falsehoods:
+      - "malestroit.{0,40}american silver"
+      - "bodin.{0,40}blamed.{0,20}debased coins"
+    sources: [web]
+
+  - id: F-U1-033
+    topic: Philip II's four bankruptcies
+    correct: "Philip II stopped payments on loans with foreign (mostly Genoese) bankers four times: 1557, 1560, 1575, 1596. Frame as serial default on war borrowing, not as 'Spain ran out of silver' — the silver kept coming; the spending outran it."
+    falsehoods:
+      - "philip ii.{0,30}bankrupt.{0,20}twice"
+      - "spain ran out of silver"
+      - "the silver stopped coming"
+    sources: [web]
+
+  - id: F-U1-034
+    topic: Potosí mint + the quinto — not Seville
+    correct: "New World silver was coined at the Potosí mint (Casa de la Moneda), at the foot of the Cerro Rico — NOT shipped raw to Seville for coining. The crown took a royal fifth (the quinto, 20%) of mine output."
+    falsehoods:
+      - "silver was coined at seville"
+      - "the mint at seville.{0,30}potosi silver"
+    sources: [web]
+
+  - id: F-U1-035
+    topic: Manila galleons — tornaviaje, Ming silver demand, merchant profits
+    correct: "From the 1560s the Manila galleons ran Acapulco–Manila (usually 1–2 ships a year, ~250 years): silver sailed WEST, silk and porcelain EAST; the crossing took 4–6 months each way. In 1565 Andrés de Urdaneta solved the return: sail north past Japan, catch the westerlies — the tornaviaje. After the 1580s, Ming tax reforms (Single Whip) letting families pay taxes in silver drove China's silver hunger. By most accounts the merchants in Manila and Mexico City kept most of the profit — not Madrid. Keep the profit share attributed."
+    falsehoods:
+      - "silk sailed west.{0,30}silver sailed east"
+      - "manila galleons.{0,30}silver.{0,20}sailed east"
+    sources: [web]
+
+  - id: F-U1-036
+    topic: Dollar-sign origin — pillars-and-banner is the leading theory, not settled
+    correct: "The LEADING theory traces the dollar sign to the Spanish pieces of eight: the Pillars of Hercules wrapped in a curling banner, the banner's curve becoming '$.' It is not settled — always hedge ('leading theory,' 'nobody's fully sure'), never teach it as certain."
+    falsehoods:
+      - "the dollar sign definitely came from"
+      - "dollar sign.{0,20}pieces of eight.{0,20}(certainly|definitely|without doubt)"
+    sources: [web]
+
+  - id: F-U1-037
+    topic: Guamán Poma's chronicle — ~1615, illustrated letter the king never saw
+    correct: "Felipe Guamán Poma de Ayala, an Andean nobleman, finished his illustrated chronicle (~1,200 pages, hundreds of his own drawings) around 1615, addressed as a letter to the king of Spain (Philip III) documenting colonial abuses, written in Spanish and Quechua. The king never saw it; it sat unread for centuries."
+    falsehoods:
+      - "guaman poma.{0,40}king.{0,20}read it and reformed"
+      - "the king read guaman poma"
+    sources: [web]
+
+  - id: F-U1-038
+    topic: Middle Passage mortality — ~13%, not "one in seven"
+    correct: "Britannica estimates deaths during the Middle Passage at 13 percent — about thirteen out of every hundred, roughly one in eight. Captives were wedged belowdecks, chained to low platforms, unable to stand or turn over; bad weather brought fevers and dysentery with high mortality. The trade sailed anyway — the dying was priced in."
+    falsehoods:
+      - "one in seven died (on the way over|crossing|during the middle passage)"
+      - "roughly one in seven died"
+    sources: [britannica]
+
+  - id: F-U1-039
+    topic: New Laws of 1542 — inheritance ban, Pizarro rebellion, Añaquito 1546, crown backs down
+    correct: "The New Laws (1542) ordered that encomiendas pass to the Crown on the holder's death — no inheritance — and forbade forced personal service. Gonzalo Pizarro led the encomenderos' rebellion; the crown's first viceroy of Peru, Blasco Núñez Vela, was defeated and killed at Añaquito on January 18, 1546. The crown backed down and revoked the inheritance restriction. The New Laws did NOT end the encomienda."
+    falsehoods:
+      - "the new laws ended the encomienda"
+      - "new laws abolished the encomienda"
+      - "nunez vela.{0,30}survived anaquito"
+    sources: [britannica]
+
+  - id: F-U1-040
+    topic: Las Casas — held and returned an encomienda; 1516 African-labor proposal; retraction
+    correct: "Las Casas held an encomienda and returned it (famous sermon, August 15, 1514). In his 1516 Memorial de Remedios he proposed importing enslaved Africans to spare Native laborers; decades later, in his History of the Indies, he retracted it — African slavery was every bit as unjust, and he was not sure his good intentions would excuse him. He did NOT start the African slave trade; enslaved Africans were already being shipped, and his proposal lent it respectability."
+    falsehoods:
+      - "las casas (started|invented|created) the (african )?slave trade"
+      - "las casas.{0,30}invented.{0,30}slavery"
+    sources: [britannica, web]
+
+  - id: F-U1-041
+    topic: Casta paintings — sixteen-scene series; system part custom, part law
+    correct: "Casta painting series (18th-century Mexico) typically ran to sixteen scenes, each naming a mixture of Spanish, Indigenous, and African parentage and ranking it. The casta hierarchy was part custom, part law: labels decided tribute obligations and office eligibility. The ladder: peninsulares (born in Spain), criollos/creoles (born in the Americas of Spanish parents), mestizos, mulatos, then Indigenous peoples and Africans."
+    falsehoods: []
+    sources: [web, prem27]
+
+  - id: F-U1-042
+    topic: Hacienda debt peonage — technically free, bound by debt
+    correct: "By about 1600 the hacienda — a large self-sufficient rural estate — rose as the countryside's labor system. Peons were TECHNICALLY FREE workers, not slaves: paid in kind barely enough to subsist, then given credit for necessities against the promise of future labor. The debt never cleared, so the labor never left — debt peonage, 'resembling the serfdom of medieval Europe' (Britannica). Peons settled on estate lands and farmed small plots."
+    falsehoods:
+      - "peons were slaves"
+      - "peonage was slavery"
+    sources: [britannica]
+
+  - id: F-U1-043
+    topic: Repartimiento 1549/1550 — replaced the encomienda; wages on paper, brutal in practice
+    correct: "The repartimiento reforms (1549; encomienda abandoned by 1550) replaced the encomienda: outright Indian slavery banned, Indian laborers to be paid wages, and — the real change — crown officials assigned a rotating share of Native workers directly instead of encomenderos controlling the labor. Treatment 'did not improve appreciably' (prem27). New Spain's draft; Peru's equivalent was the mita — do not mix them up."
+    falsehoods:
+      - "the repartimiento ended.{0,30}exploitation"
+      - "repartimiento.{0,30}fixed.{0,20}(the system|labor)"
+    sources: [prem27]
+
+  - id: F-U1-044
+    topic: Las Casas 1550 quote — verbatim wording and splice-with-ellipsis form
+    correct: "Las Casas, In Defense of the Indians (1550): 'They are not ignorant, inhuman, or bestial. Rather, long before they had heard the word Spaniard they had properly organized states, wisely ordered by excellent laws, religion, and custom.' When taught spliced, the dropped 'Rather,' must be marked with an ellipsis: '…bestial. … long before they had heard the word Spaniard…'. Never drop 'Rather,' unmarked."
+    falsehoods:
+      - "las casas.{0,60}they are ignorant, inhuman"
+      - "las casas.{0,60}incapable of government"
+    sources: [5steps]
+
+  - id: F-U1-045
+    topic: Valladolid junta — met Aug 1550, reconvened Apr 1551, no verdict, both sides claimed victory
+    correct: "The Valladolid junta first met in August 1550 and reconvened in April 1551. It issued no formal decision; both sides claimed victory. (b) scholarly — NOT Tier-2."
+    falsehoods:
+      - "las casas won the valladolid debate"
+      - "sepúlveda won the valladolid debate"
+      - "the junta ruled (against|in favor of)"
+    sources: [scholarly]
+
+  - id: F-U1-046
+    topic: Sepúlveda — never crossed the Atlantic; Democrates Alter 1544; NOT a Dominican
+    correct: "Juan Ginés de Sepúlveda never crossed the Atlantic; his case came from Aristotle and Oviedo's chronicles. Democrates Alter (Demócrates Segundo) composed 1544. Guardrail: Sepúlveda was NOT a Dominican — Las Casas was the Dominican friar."
+    falsehoods:
+      - "sepúlveda.{0,40}dominican"
+      - "dominican friar sepúlveda"
+      - "sepúlveda (saw|witnessed|visited).{0,20}indies"
+      - "sepúlveda crossed the atlantic"
+    sources: [scholarly]
+
+  - id: F-U1-047
+    topic: Sepúlveda's four just causes
+    correct: "Sepúlveda's four just causes for war: (1) natural slavery — peoples slaves by nature, whom it is just and useful to rule; (2) idolatry and human sacrifice, which offend natural law itself; (3) rescue of the innocents dragged to the altars; (4) evangelization — the faith they cannot receive unless carried to them. (b) scholarly."
+    falsehoods:
+      - "sepúlveda.{0,20}three just causes"
+      - "sepúlveda.{0,20}five just causes"
+    sources: [scholarly]
+
+  - id: F-U1-048
+    topic: Short Account print history — first Dutch 1578, first English London 1583; no exact edition count
+    correct: "First Dutch translation of the Short Account: 1578. First English translation: London, 1583. Do NOT canonize an exact Dutch-edition count — 'twenty-five more editions' is exhibition-grade specificity rejected as registry-grade; hedge as 'dozens of editions'. (b) scholarly."
+    falsehoods:
+      - "first english translation.{0,20}1578"
+      - "first dutch translation.{0,20}1583"
+    sources: [scholarly]
+
+  - id: F-U1-049
+    topic: Short Account written 1542 / published 1552; Las Casas former bishop of Chiapas, returned to Spain 1547
+    correct: "A Short Account of the Destruction of the Indies: written 1542, published 1552 (prem27, Tier 1). Las Casas was the former bishop of Chiapas and returned to Spain in 1547 (Britannica, Tier 2)."
+    falsehoods:
+      - "short account.{0,20}published in 1542"
+      - "short account.{0,20}written in 1552"
+    sources: [prem27, britannica]
+
+  - id: F-U1-050
+    topic: Popé's fall and death — deposed, reelected 1688, died 1692 (NOT ~1688)
+    correct: "After the revolt Popé's authority collapsed within a few years (drought, enemy raids, internal dissension — Britannica). He was REELECTED Pueblo leader in 1688 and died not long after; Britannica gives his death as 1692. He did NOT rule the whole twelve years of Pueblo self-rule."
+    falsehoods:
+      - "popé.{0,30}died.{0,20}1688"
+      - "popé led the pueblos for twelve years"
+      - "popé ruled.{0,20}twelve years"
+    sources: [britannica]
+
+  - id: F-U1-051
+    topic: "Most successful uprising framing (Tier 1 says 'one of the most')"
+    correct: "premium2027 (Tier 1): the Pueblo Revolt was 'one of the most successful native uprisings against European conquerors.' Never teach unhedged 'the single most successful Native uprising in North American history' as a flat fact — use the 'one of' framing and let the twelve-year holding of an entire Spanish province carry the weight."
+    falsehoods:
+      - "single most successful native uprising in north american history"
+      - "the most successful native uprising.{0,30}without.{0,20}(hedge|one of)"
+    sources: [prem27]
+
+  - id: F-U1-052
+    topic: 1680 death toll — ~400 Spaniards including 21 priests; do not pin the 33-total
+    correct: "Britannica (Tier 2): 'On August 21 the Spaniards were forced to flee, leaving 400 dead, including 21 priests.' Use 'close to four hundred Spaniards, twenty-one of them priests.' The '21 of the 33 Franciscans' phrasing pins a 33-total that no Tier 1–2 source supports — drop the denominator."
+    falsehoods:
+      - "21 of the 33"
+      - "twenty-one of the thirty-three"
+    sources: [britannica]
+
+  - id: F-U1-053
+    topic: Knotted-cord network — Naranjo's 1681 declaration; fire from extremities, not fingertips
+    correct: "Pedro Naranjo's declaration (Dec 1681, recorded by Spanish interrogators): Popé was told to 'make a cord of maguey fiber and tie some knots in it which would signify the number of days that they must wait before the rebellion'; the cord passed pueblo to pueblo, one knot untied per day. The three spirit-figures 'emit fire from all the extremities of their bodies' — do not embellish to 'glowing eyes' or 'fingertips.' Always disclose in-dialogue that the plan reaches us through Spanish pens."
+    falsehoods:
+      - "fire shooting from their fingertips"
+      - "glowing eyes"
+    sources: [web]
+
+  - id: F-U1-054
+    topic: 1675 Treviño crackdown — 47 arrested, 4 death sentences, 3 hanged, 1 suicide
+    correct: "In 1675 Governor Juan Francisco Treviño ordered the arrest of 47 Pueblo medicine men for 'sorcery.' Four were sentenced to death by hanging; three were hanged and one committed suicide. The rest were publicly whipped and imprisoned, then released after the pueblos marched on Santa Fe (Spanish soldiers were away fighting Apaches). Popé was among the freed."
+    falsehoods:
+      - "treviño.{0,30}arrested.{0,20}(dozens|scores)"
+      - "all forty-seven were (hanged|executed)"
+    sources: [web]
+
+  - id: F-U1-055
+    topic: 1692 negotiated return vs 1693 force retaking — not a clean bloodless reconquest
+    correct: "1692: Vargas entered Santa Fe and negotiated — clemency, pardons, respect for Pueblo lands (bloodless per Spanish accounts). 1693: he returned with colonists and retook Santa Fe by force; Spanish accounts record dozens of Pueblo men executed. Never teach 1692 as a final clean reconquest, and never swap the years."
+    falsehoods:
+      - "1692.{0,40}bloodless and final"
+      - "the reconquest.{0,20}1693.{0,20}negotiat"
+    sources: [britannica, web]
+
+  - id: F-U1-056
+    topic: Post-revolt reforms — public defender, land grants, tolerated ceremonies
+    correct: "After the revolt Spain ruled differently: a public defender was appointed to protect Pueblo rights in Spanish courts, each Pueblo family was granted land under Spanish law, and Pueblo cultural practices/ceremonies were tolerated (premium2027, Tier 1). Princeton (Tier 1): the Spanish were 'more accommodating... the fear of continued conflicts driving the need for compromise.' Frame as fear, not kindness."
+    falsehoods:
+      - "spain returned kinder"
+      - "the spanish came back.{0,30}(kinder|gentler)"
+    sources: [prem27, princeton]
+
+  - id: F-U1-057
+    topic: Otermín's account — no "journal"
+    correct: "Governor Antonio de Otermín left reports/testimony of the 1680 collapse, not a journal. Refer to 'the governor's own account' or 'the Spanish accounts' — never 'Otermín's journal.'"
+    falsehoods:
+      - "otermín's journal"
+      - "otermin's journal"
+    sources: [registry]
+
+  - id: F-U1-058
+    topic: Henry the Navigator's navigation school — mostly legend; he funded the voyages but never sailed them
+    correct: "Henry the Navigator's 'school of navigation' is mostly legend — he funded the voyages but never sailed them himself; no Tier 1 source attests a formal academy, and Britannica says his reputation as a champion of science is unsupported by evidence."
+    falsehoods:
+      - "henry the navigator('s)?.{0,20}(navigation )?school"
+    sources: [5steps, prem27, britannica]
