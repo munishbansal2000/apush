@@ -633,8 +633,9 @@ facts:
 
   - id: F-U1-028
     topic: Indentured servants — 4 to 7 years, majority of Chesapeake migrants
-    correct: "Indentured servants signed away usually four to seven years of labor for passage to the Chesapeake. The majority of English migrants to the region came this way (Princeton: over 75% of 130,000). Do not confuse with enslaved Africans — most field workers were servants for decades after 1619."
-    falsehoods: []
+    correct: "Indentured servants signed away usually four to seven years of labor for passage to the Chesapeake. The majority of English migrants to the region came this way (Princeton: over 75% of 130,000). Do not confuse with enslaved Africans — most field workers were servants for decades after 1619. The two systems overlapped for decades in 17th-century Virginia (term labor vs. lifetime slavery) — never frame them as different centuries."
+    falsehoods:
+      - "different system.{0,20}different century"
     sources: [prem27, princeton]
 
   - id: F-U1-029
@@ -879,3 +880,347 @@ facts:
     falsehoods:
       - "henry the navigator('s)?.{0,20}(navigation )?school"
     sources: [5steps, prem27, britannica]
+
+  - id: F-U2-001
+    topic: 1629 Charter of Freedoms and Exemptions — patroon grants
+    correct: "1629 Charter of Freedoms and Exemptions: any company member settling 50 persons over age 15 in New Netherland received the patroon title with manorial rights; up to 16 miles of riverfront on one side (8 both sides), Manhattan exempted."
+    falsehoods:
+      - "patroon.*(1614|1609)"
+      - "fifty families.*1629.*patroon"
+    sources: [britannica]
+
+  - id: F-U2-002
+    topic: Huguenots barred from New France
+    correct: "The French king barred Huguenots (French Protestants) from settling in New France."
+    falsehoods:
+      - "huguenots.*(welcomed|settled).*new france"
+    sources: [5steps]
+
+  - id: F-U2-003
+    topic: Beaver pelts worth a fortune; beaver-felt hats status symbols
+    correct: "Beaver pelts were worth a fortune in Europe; beaver-wool felt hats were expensive status symbols."
+    falsehoods:
+      - "beaver.*(cheap|worthless)"
+      - "fur trade.*minor"
+    sources: [britannica]
+
+  - id: F-U2-004
+    topic: Dutch retook New York 1673–74; Westminster 1674; Suriname stayed Dutch
+    correct: "Dutch retook New York 1673–74; Treaty of Westminster (1674) made it permanently English; Suriname stayed Dutch (Dutch since Breda 1667, sugar colony)."
+    falsehoods:
+      - "new york.*permanently english.*1664"
+      - "england kept suriname"
+    sources: [britannica, prem27]
+
+  - id: F-U2-005
+    topic: 1663 New France a royal province — governor, intendant, bishop, Sovereign Council; no elected assembly
+    correct: "1663: Louis XIV made New France a royal province, governed by appointed governor, intendant, bishop, and Sovereign Council — no elected assembly."
+    falsehoods:
+      - "new france.*elected assembly"
+      - "new france.*representative legislature"
+    sources: [britannica]
+
+  - id: F-U2-006
+    topic: Crown licensed the fur trade; evasion common
+    correct: "The French crown licensed the fur trade (license required to trap); many traders evaded it."
+    falsehoods:
+      - "all.*fur traders were licensed"
+      - "the license system.*(worked|was enforced)"
+    sources: [britannica]
+
+  - id: F-U2-007
+    topic: 1649 Iroquois destruction of Huron mission villages
+    correct: "1649: Iroquois war party destroyed Huron mission villages in Ontario, killing ~300; Iroquois armed with Dutch firearms; Jesuits killed."
+    falsehoods:
+      - "huron villages.*(peaceful decline|disease only)"
+    sources: [prem27]
+
+  - id: F-U2-008
+    topic: Bacon's Rebellion — core facts and chronology
+    correct: "1676: Nathaniel Bacon (a lower-level planter, per prem27; recent immigrant from England, arrived wealthy but too late for coastal land, per Princeton) raised 400–500 men, attacked Native settlements including the Pamunkey and Occoneechee (allies of the English, per 5steps/Princeton), and burned Jamestown (September 19, 1676, per NPS). He issued the 'Declaration of the People' on July 30, 1676 (per NPS). He died of dysentery ('Bloodie Flux,' per NPS) on October 26, 1676. Governor William Berkeley hanged 23 of the leaders (per 5steps) and was recalled to England (per 5steps)."
+    falsehoods:
+      - "bacon.*died.{0,30}(battle|hanged|executed)"
+      - "berkeley hanged.{0,20}(a hundred|100)"
+    sources: [5steps, princeton, nps]
+
+  - id: F-U2-009
+    topic: 1662 Virginia law — child's status follows the mother
+    correct: "Virginia, 1662: a law declared the child of an enslaved mother was also enslaved — reversing English common law, under which legal status came from the father. This made slavery hereditary."
+    falsehoods:
+      - "1662.*status followed the father"
+      - "child's status.*followed the father.*virginia"
+    sources: [5steps]
+
+  - id: F-U2-010
+    topic: Servants declined after Bacon; Dutch monopoly ended 1682
+    correct: "Indentured servants declined in the Chesapeake after Bacon's Rebellion — planters found them politically fractious, and northern colonies offered better terms (5steps). The Dutch slave-trade monopoly ended in 1682, lowering prices for enslaved Africans in the English colonies (5steps)."
+    falsehoods:
+      - "the royal african company.{0,30}1682"
+    sources: [5steps]
+
+  - id: F-U2-011
+    topic: Barbados slave code 1661 — the legal template
+    correct: "Barbados, 1661: one of the first comprehensive slave codes in English America — it stripped all rights from enslaved Blacks and granted white planters complete power over them. Caribbean planters adopted it, and the codes were later adopted in the southern mainland colonies."
+    falsehoods:
+      - "virginia.*(invented|wrote the first).*slave code"
+    sources: [norris]
+
+  - id: F-U2-012
+    topic: Virginia slave code 1705 — specifics
+    correct: "Virginia's 1705 code: servants imported who were not Christians in their native country counted as slaves; enslaved people were 'held to be real estate' (the statute's word is real estate, NOT chattels — property, passed to heirs like land); a master who killed an enslaved worker during punishment faced no prosecution ('as if such accident never happened'). Virginia's code became the model other colonies copied. The code consolidated decades of one-off laws (1640, 1662, 1667) — it did not invent slavery."
+    falsehoods:
+      - "1705.*(invented|started|began) slavery"
+      - "the 1705 code.*freed.*baptism"
+      - "chattel is the word"
+      - "the word was chattel"
+    sources: [web]
+
+  - id: F-U2-013
+    topic: Bacon's Rebellion as the servitude-to-slavery turning point; racism/slavery causation debated
+    correct: "Historians view Bacon's Rebellion as a key event in the shift from indentured servitude to slavery as the main labor form in the South: elite planters turned increasingly to enslaved Africans afterward (prem27). Whether racism toward Africans developed as a result of enslavement, or racist notions predated and allowed for enslavement, is a live historians' debate — always present both sides, never teach one direction as settled. Morgan's thesis (American Slavery, American Freedom): planters used racial division to subdue class conflict."
+    falsehoods:
+      - "racism caused slavery.{0,40}(settled|certainly|definitely)"
+      - "slavery caused racism.{0,40}(settled|certainly|definitely)"
+      - "codes first.{0,15}race after"
+    sources: [prem27]
+
+  - id: F-U2-014
+    topic: Carolina founded 1663 by Barbados planters
+    correct: "Carolina was founded in 1663 by wealthy plantation owners who had migrated from Barbados; they built the southern portion's agrarian economy to resemble the island's sugar economy."
+    falsehoods:
+      - "carolina.*founded.*(1670|1680)"
+    sources: [prem27]
+
+  - id: F-U2-015
+    topic: Charles II's remark on Berkeley's hangings — attributed, not transcript-verified
+    correct: "The line attributed to Charles the Second — that Berkeley had hanged more men in that naked country than the king had for the murder of his own father — is REPORTED, not transcript-verified. Any script using it must disclose in-dialogue that it is attributed ('the line attributed to Charles the Second,' 'we don't actually know he said it'). Never present it as his actual words."
+    falsehoods:
+      - "charles (ii|the second) said.{0,30}hanged more men.{0,30}without.{0,20}(hedge|attributed|reported)"
+    sources: [web]
+
+  - id: F-U2-016
+    topic: John Punch, 1640 — differential punishment
+    correct: "1640, Virginia: three servants ran away together — two white, one Black. The two white men received four more years on their terms; John Punch, the Black man, was condemned to slavery for life. Heimler: it 'signaled a significant shift toward race-based slavery in Virginia.'"
+    falsehoods:
+      - "john punch.*(freed|pardoned)"
+      - "punch.*received.*(four|4) more years"
+    sources: [norris]
+
+  - id: F-U2-017
+    topic: Metacom was Massasoit's SON, not grandson (premium2027 ch.4 error)
+    correct: "Metacom (Metacomet), called King Philip by the English, was the SON of Massasoit — the sachem who made peace with Plymouth in 1621. premium2027 ch. 4 calls him 'the grandson of Massasoit'; that is a book error. Britannica: 'Philip (Metacom), sachem (chief) of a Wampanoag band, was a son of Massasoit.'"
+    falsehoods:
+      - "grandson of massasoit"
+      - "metacom.*massasoit's grandson"
+    sources: [britannica]
+
+  - id: F-U2-018
+    topic: King Philip's War per-capita deadliness — hedge the label, never pin the share
+    correct: "Use the sourced framings only: Britannica calls it 'one of the bloodiest conflicts (per capita) in U.S. history'; premium2027 calls it 'the deadliest of the wars of European settlement in North America in regard to the percentage of the populations of each side killed.' Never pin a colonial death share ('eight percent of adult men') and never compare it to a Civil War share ('four or five percent') — neither figure is verifiable in Tier 1–2, and the Civil War comparison misleads against the hedged 618k–850k death-toll range (F-CIV-011)."
+    falsehoods:
+      - "eight percent of.*(adult men|english new england)"
+      - "roughly eight percent.*died"
+      - "civil war.*four or five percent"
+      - "deadliest war in american history[^.]{0,20}$"
+    sources: [britannica, prem27]
+
+  - id: F-U2-019
+    topic: Metacom's head display duration — UNVERIFIABLE in Tier 1–2, cut it
+    correct: "No Tier 1 or Tier 2 source gives how long Metacom's head was displayed at Plymouth ('twenty years' / 'two decades' appears only in history.com-level secondary sources). Scripts must CUT the duration or leave it out — never state it as fact. What IS verifiable: Metacom was killed in August 1676 (Britannica); his head was taken to Plymouth (colonial accounts). NOTE 2026-10-06 (Layer-3 hygiene flag): a Britannica Metacom biography snippet reportedly states 'his head displayed on a pole for 25 years at Plymouth' — needs direct verification before this entry's 'no Tier 1/2 source' premise is relied on further. The CUT prescription stands regardless."
+    falsehoods:
+      - "head.*(displayed|on a pike|on a spike).*(twenty|25|two decades)"
+      - "twenty years.*plymouth.*head"
+    sources: [registry]
+
+  - id: F-U2-020
+    topic: King Philip's War damage — Britannica's count, not "half the towns / a dozen burned"
+    correct: "Britannica (Metacom article): 17 white settlements destroyed and some 50 additional settlements damaged; about 600 English soldiers killed; thousands of Native Americans killed, many sold into slavery and indentured servitude. Do not teach 'more than half of New England's towns came under attack, and a dozen burned' — the town-share is unverifiable and the burn count undersells Britannica's 17."
+    falsehoods:
+      - "more than half.*towns.*(came under attack|attacked)"
+      - "a dozen.*(towns|settlements).*(burned|burnt)"
+      - "twelve towns.*burned"
+    sources: [britannica]
+
+  - id: F-U2-021
+    topic: Hutchinson stillbirth — "that summer" of 1638, not "that June"
+    correct: "Winthrop recorded a stillbirth Hutchinson suffered in the summer of 1638 and framed it as God's judgment on her errors (Cotton preached it as her punishment from God). The month is disputed across secondary accounts (June vs August variants) — always hedge to 'that summer,' never pin 'June.'"
+    falsehoods:
+      - "stillbirth that june"
+      - "that june.*stillbirth"
+    sources: [web]
+
+  - id: F-U2-022
+    topic: Rowlandson "first bestseller" — attributed label, not flat fact
+    correct: "Mary Rowlandson's captivity narrative was published in 1682 and went through over 30 editions (Britannica) — a classic of the genre. 'America's first bestseller' is an ATTRIBUTED label ('some call it'), never a flat fact, and the 'by a woman' framing must ride with the attribution. Verified core: taken at Lancaster February 1676, captive three months, ransomed May 1676."
+    falsehoods:
+      - "america's first bestseller by a woman"
+    sources: [britannica]
+
+  - id: F-U2-023
+    topic: Great Migration gender share — "families," not "nearly half women"
+    correct: "The books' language is 'tended to attract families' (premium2027) / 'entire families tended to immigrate' (Princeton) — a cross-section of England vs the Chesapeake's young men. Never pin 'nearly half the passengers were women'; no Tier 1 source gives a gender share."
+    falsehoods:
+      - "nearly half.*passengers.*women"
+      - "half the passengers were women"
+    sources: [prem27, princeton]
+
+  - id: F-U2-024
+    topic: Hutchinson chronology — civil conviction 1637, church trial 1638
+    correct: "Anne Hutchinson was tried by the General Court chiefly for 'traducing the ministers,' convicted in 1637, and sentenced to banishment (Britannica); held in custody through the winter; tried before the Boston Church and formally excommunicated in March 1638; left for Aquidneck/Portsmouth the same month. Do not compress to 'tried, excommunicated, and banished in 1638' — the civil conviction belongs to 1637."
+    falsehoods:
+      - "hutchinson.*(tried|convicted).*(in|of) 1638"
+    sources: [britannica]
+  - id: F-U2-025
+    topic: Walking Purchase 1737 standard account
+    correct: "Day-and-a-half deed: Thomas and John Penn with James Logan hired the fastest runners; Edward Marshall covered ~65-70 miles; ~1.2 million acres (roughly Rhode Island); deed authenticity disputed. Note Princeton's variant (Penn strolls three days himself; son hires runners) — scripts may use either honestly labeled."
+    falsehoods:
+      - "walking purchase.*three days"
+      - "penn.*leisurely stroll"
+    sources: [tier1, britannica]
+  - id: F-U2-026
+    topic: 1688 Germantown protest of slavery
+    correct: "First protest of its kind in the British North American colonies (NPS): four German Quakers, deferred through Monthly to Quarterly to Yearly (Burlington, NJ), which declined to take a stand."
+    falsehoods:
+      - "yearly meeting.*condemned slavery.*1688"
+      - "quakers.*banned slavery.*1688"
+    sources: [nps]
+  - id: F-U2-027
+    topic: Penn held enslaved people
+    correct: "William Penn held enslaved people; the 'at least a dozen' number is Tier 1-2 unverified — scripts must always hedge (e.g. 'by the usual count')."
+    falsehoods:
+      - "penn.*held no slaves"
+      - "penn.*never.*enslaved"
+    sources: [web]
+  - id: F-U2-028
+    topic: Franklin's Observations on the Increase of Mankind dating
+    correct: "Composed 1751, first printed 1755; premium2027 labels the document (1753). Exact wording includes 'Germanize us instead of our Anglifying them' (premium2027). Rule: call it '1751 essay' — never '1751 pamphlet' or 'in print'."
+    falsehoods:
+      - "franklin.*1751 pamphlet"
+      - "fretted in print"
+    sources: [tier1]
+  - id: F-U2-029
+    topic: Redemptioners vs indentured servants
+    correct: "Redemptioners negotiated servitude on the dock after arrival (worse bargaining position); indentured servants contracted in Europe before sailing (premium2027)."
+    falsehoods:
+      - "redemptioners.*contracted in europe"
+      - "redemptioners.*indentured servants.*same"
+    sources: [tier1]
+  - id: F-U2-030
+    topic: Pennsylvania Dutch = Deutsch
+    correct: "The 'Pennsylvania Dutch' were German (Deutsch), not from Holland — exam common-mistake. Scripts may teach this via a negated exam tip ('Pennsylvania Dutch doesn't mean Holland')."
+    falsehoods:
+      - "pennsylvania dutch (were|are|came|descended) from (holland|the netherlands)"
+    sources: [tier1]
+  - id: F-U2-031
+    topic: Frame of Government 1682
+    correct: "Penn's Frame of Government (1682): elected council and assembly (freeholders); Great Law guaranteed freedom of conscience (Britannica)."
+    falsehoods:
+      - "frame of government.*appointed assembly"
+    sources: [britannica]
+  - id: F-U2-032
+    topic: PA German/Scots-Irish shares hedged
+    correct: "Germans roughly a third and Scots-Irish roughly a fourth of Pennsylvania by the Revolution: hedged shares only — Tier 1-2 silent on exact numbers, must stay hedged."
+    falsehoods:
+      - "germans.*exactly.*third.*pennsylvania"
+    sources: [web]
+  - id: F-U2-033
+    topic: Saur's German-language press 1739
+    correct: "Christopher Saur's German-language newspaper out of Germantown by the late 1730s: Tier 1-2 silent — hedge or verify before flat statement."
+    falsehoods:
+      - "saur.*1739.*certain"
+    sources: [web]
+  - id: F-U2-034
+    topic: Logan's Scots-Irish arrivals
+    correct: "Logan encouraged Scots-Irish settlement (~6,000 arrivals in one year, late 1720s): hedged, Tier 1-2 silent on the number."
+    falsehoods:
+      - "logan.*exactly.*6000"
+    sources: [web]
+  - id: F-U2-035
+    topic: Lenni Lenape name meaning
+    correct: "Britannica gives Lenape as 'real people'; 'original people' is a variant rendering — use only with a 'something like' hedge. No falsehood pattern: the sanctioned form contains the same words."
+    falsehoods: []
+    sources: [britannica]
+  - id: F-U2-036
+    topic: NY slavery central even under the Dutch
+    correct: "Slave labor was used extensively by the Dutch in New Amsterdam; English officials expanded it (premium2027)."
+    falsehoods:
+      - "new amsterdam.*no slavery"
+      - "slavery.*introduced.*english.*1664"
+    sources: [tier1]
+
+  - id: F-U2-037
+    topic: Navigation Acts 1651/1660/1663 — three-act structure
+    correct: "Three key Navigation Acts: 1651 (first, aimed at the Dutch — English trade on English ships); 1660 (restored monarchy — the enumerated list, tobacco-led, shipped to England only, English ships and mostly-English crews); 1663 Staple Act (European goods for the colonies must pass through an English port first)."
+    falsehoods:
+      - "the navigation act.*1651.*enumerated"
+      - "staple act.*1660"
+    sources: [prem27, 5steps]
+
+  - id: F-U2-038
+    topic: Enumerated goods list growth + manufacturing acts
+    correct: "The enumerated list kept growing: tobacco led, rice joined it, naval stores (tar, pitch, turpentine, masts) added in the early 1700s (1704/1705 — range, never a pin). Separate column: colonial manufacturing restricted by the Wool Act 1699, Hat Act 1732, Iron Act 1750. Never confuse enumerated goods (cargo TO England) with manufacturing acts (factories fenced OFF)."
+    falsehoods:
+      - "hat act.*enumerated"
+      - "enumerated.*hat act"
+      - "the 1663 act enumerated"
+    sources: [prem27]
+
+  - id: F-U2-039
+    topic: 1696 enforcement push — Board of Trade + vice-admiralty courts
+    correct: "In 1696 Parliament created the Board of Trade and authorized vice-admiralty courts to back customs enforcement — judges, no juries. The missing jury is the exam point: local juries would not convict smuggling neighbors."
+    falsehoods:
+      - "vice-admiralty courts.*1764"
+      - "board of trade.*1721"
+    sources: [britannica]
+
+  - id: F-U2-040
+    topic: Molasses Act 1733 — steep duty, routinely dodged
+    correct: "The Molasses Act (1733) placed a prohibitive import tax on sugar and molasses from non-British colonies. Boston merchants routinely flouted it — bribes, forged paperwork, midnight landings — importing illegal sugar for Massachusetts rum distilleries. The duty sat on the books; the molasses came in the back door."
+    falsehoods:
+      - "new england paid the molasses duty"
+      - "molasses act.*(ended|killed) new england rum"
+    sources: [prem27]
+
+  - id: F-U2-041
+    topic: Hancock's Liberty 1768 — accused, never convicted
+    correct: "Customs men seized John Hancock's sloop Liberty in 1768 and accused him of smuggling (Madeira wine cargo). Highly publicized trial; the charges were dropped for lack of evidence. ACCUSED, never convicted. Historians still argue the guilt; the 'fortune built on dodging the duties' version is the textbook one — never write 'convicted.'"
+    falsehoods:
+      - "hancock was convicted of smuggling"
+      - "hancock convicted.*liberty"
+    sources: [nps]
+
+  - id: F-U2-042
+    topic: Walpole 'let sleeping dogs lie' — secondhand, not transcript-verified
+    correct: "Robert Walpole's 'let sleeping dogs lie' line on the colonies is REPORTED, not transcript-verified. The neglect itself is real (customs understaffed, governors looking away, 1721-1742). Any script using the line must disclose in-dialogue that it is secondhand ('nobody's fully sure he said those words'). Never present it as his actual words."
+    falsehoods:
+      - "walpole said.{0,30}let sleeping dogs lie.{0,30}(without|never).{0,20}(hedge|secondhand|reported)"
+    sources: [prem27]
+
+  - id: F-U2-043
+    topic: Burke coined 'salutary neglect' 1775; commerce ~12x since 1700
+    correct: "The NAME 'salutary neglect' was coined by Edmund Burke in 1775 (Speech on Conciliation with America), looking back: British commerce with the colonies had expanded ~12-fold since 1700. The policy ran for decades before it had a name."
+    falsehoods:
+      - "walpole coined.{0,20}salutary neglect"
+      - "salutary neglect.*named.*1721"
+    sources: [britannica]
+
+  - id: F-U2-044
+    topic: Smith's balance-of-trade line — verbatim, 1776
+    correct: "Adam Smith's actual words (Wealth of Nations, 1776, Book IV ch. 3): 'Nothing, however, can be more absurd than this whole doctrine of the balance of trade.' Public domain. May be quoted verbatim with disclosure; 1776 is the exam hook (economic case against mercantilism lands the same year as the political case)."
+    falsehoods:
+      - "nothing.{0,30}absurd.{0,30}balance of trade.{0,30}(paraphrase|rewording)"
+    sources: [5steps]
+
+  - id: F-U2-045
+    topic: Triangular trade — pattern, not the average voyage
+    correct: "The triangular trade names a PATTERN, not the average voyage: most voyages were bilateral two-leg deals; plenty of ships ran two legs and never closed the triangle (e.g. New England rum sailed straight to the Caribbean). The chain is real — distilleries needed Caribbean sugar, sugar plantations needed enslaved labor. 'The arrows lied, the chain didn't.'"
+    falsehoods:
+      - "the triangle was (the )?average voyage"
+      - "triangle.*(every|each) ship sailed all three legs"
+    sources: [5steps]
+
+  - id: F-U2-046
+    topic: Great Molasses Flood 1919 — Maya's pop-culture beat
+    correct: "January 15, 1919: a molasses storage tank burst in Boston's North End, sending ~2.3 million gallons through the streets at ~35 mph; 21 killed. Usable as Maya's student-world 'knows something' beat — not exam content."
+    falsehoods: []
+    sources: [britannica]
