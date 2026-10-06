@@ -1,111 +1,102 @@
-# U4-E7 — Maya + Marcus (Fish Audio)
-# Episode 7: An American Voice. ~8 min.
+# U4-E7 — Debate: Maya moderates, Marcus + Editor (Fish Audio)
+# Episode 7: Jacksonian Democracy. ~8 min.
 # Draft v1.
-# Read note: Maya tracks three boxes on her episode sheet: an American voice in print, transcendentalism, and democracy you can see. [5-second pause] marks are production notes for real silence in the self-test — they never go to the voice. The em dash in the closing tagline is a held beat: leave a full breath between Marcus's setup line and Maya's landing line. Do not rush it. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence.
-# Pronunciation: LOYT-zuh (Leutze), thuh-ROH (Thoreau)
+# Read note: Debate format. Maya moderates a hero-or-tyrant debate on Andrew Jackson: Marcus argues the democratic hero, the Editor (a one-off guest voice: a National Republican newspaper editor who covered the 1828 campaign) argues the tyrant. No self-test and no pause tags in this episode. The Editor appears only here, never again. The em dash in the closing tagline is a held beat: leave a full breath between Marcus's setup line and the Editor's landing line. Do not rush it. Strip this header and the read note before TTS.
+# Pronunciation: HIK-uh-ree (Hickory)
 
-Maya: Last time: Jackson expanded federal power — nullification, the Bank, removal. But while Washington fought over tariffs, the rest of the country was asking a softer question: what does America sound like? Look like? Three boxes on your sheet: an American voice in print, transcendentalism, and democracy you can see. Circle the ones you couldn't explain right now. Eight minutes, and you'll check all three off.
+Maya: Last time: the Market Revolution. Canals, mills, and the cotton that tied the South tighter to slavery. This time: the man those new voters elected. Andrew Jackson: hero of New Orleans, champion of the common man, or, as his enemies printed it, King Andrew the First.
 
-Marcus: The spark is the Era of Good Feelings, roughly 1815 to 1825. America comes out of the War of 1812 against Britain, a war that was really a stalemate with both sides agreeing to put everything back where it was, and decides it won anyway. The country gets drunk on nationalism, and suddenly it feels urgent to have a culture that's American, not borrowed.
+Editor: We printed it because it was true.
 
-Maya: So the war nobody won becomes the reason everyone's feeling themselves.
+Maya: Arguing the hero: Marcus. Arguing the tyrant: a National Republican editor who covered the eighteen twenty-eight campaign up close. I'm Maya. I call it at the end.
 
-Marcus: Pretty much. And the fuel underneath was a European import called romanticism. It was a revolt against Enlightenment thinking, which said truth comes through reason and the senses and that's the whole road, and against neoclassical art, all harmony and symmetry. Romanticism said: make them feel it. Emotion, imagination, spontaneity.
+Maya: The question is the oldest one in American politics. Did Jackson expand democracy, or just his own power? Marcus, open for the hero.
 
-Maya: Give me the before and after.
+Marcus: Compare who could vote before Jackson and after. Before: property qualifications kept most men out. After: state after state dropped them, and by the eighteen forties nearly every adult white man could vote.
 
-Marcus: Before: Gilbert Stuart's portrait of Washington. Balanced, dignified, the kind of painting you admire without your pulse moving. After: Emanuel Leutze's Washington Crossing the Delaware, painted in 1851. Ice, drama, a boat that looks ready to tip straight into legend. One you respect. The other grabs you by the collar.
+Marcus: And Jackson didn't just ride that wave. He campaigned like no one before him, rallies, speeches, straight to the people. The first president from the West. The first who acted like the people's representative instead of Congress's servant.
 
-Maya: I saw that painting on a school trip. It's enormous, a whole wall of boat. I understand the collar thing now.
+Editor: And what did the people's representative do with the power? He fired his enemies and hired his friends. He vetoed twelve bills, more than every president before him combined. He ran policy through an unofficial Kitchen Cabinet of cronies while ignoring his real one. My readers had a name for it: King Andrew the First.
 
-Marcus: Romanticism working as designed. And it spilled into the landscape. The Hudson River School quit painting heroes and started painting nature: huge, glowing American wilderness, canvases that asked for awe instead of analysis.
+Maya: Those were strong opens. But Editor, your side's anger started before eighteen twenty-eight. What was the grievance?
 
-Maya: Okay, so art was the warm-up. Box one is the writers?
+Editor: Jackson won the popular vote and the most electoral votes, and the House handed the presidency to John Quincy Adams anyway. Then Adams made Henry Clay, the man who delivered those House votes, his Secretary of State. We called it the corrupt bargain, and we spent four years proving it.
 
-Marcus: Box one is an American voice in print, and the writers are the whole box. James Fenimore Cooper writes The Last of the Mohicans and romanticizes the frontier, all danger and possibility out west, the natural man of the frontier set against the man civilization corrupted. Then Washington Irving: Rip Van Winkle, The Legend of Sleepy Hollow, fantasy built out of American soil.
+Maya: Round one: who was included. Marcus, who exactly was this common man?
 
-Maya: And people in Europe actually read him?
+Marcus: The common white man, and I won't soften that. But within that boundary, the change was real. Western states wrote constitutions assuming every white man voted, because they needed settlers. Eastern states followed. New York dropped its property line in eighteen twenty-one.
 
-Marcus: Devoured him. Irving's books sold widely over there and worked like a translation guide. Europeans finally had a picture of what an American was, and Americans got to see themselves through European eyes.
+Marcus: And when Rhode Island's old charter still blocked the vote in eighteen forty-one, Thomas Dorr led an actual rebellion, set up a rival government, and forced a new constitution. People bled for this franchise.
 
-Maya: Last of the Mohicans: my dad made me watch the movie. Daniel Day-Lewis, very long hair, very intense staring.
+Editor: People bled, and most people still couldn't vote. Women: out. The cult of domesticity said their sphere was the home. Black men: nearly every state blocked them, North and South. Native Americans: being driven off their land by the same president. You call it the common man. I count the uncommon millions.
 
-Marcus: The hair was Cooper's invention first. Now add Noah Webster to this box. His dictionary and his speller didn't just teach spelling, they taught an American spelling. The language itself got a national accent.
+Maya: Hold on, Marcus. The Editor's got a point. If democracy expands for one group by excluding three others, is it expansion?
 
-Maya: So the box is Cooper's frontier, Irving's fantasies, Webster's dictionary. American stories in American English.
+Marcus: It's expansion with a brutal boundary, and the boundary matters. But don't erase what changed. Millions of men who'd never mattered politically suddenly chose the president. Nominating conventions replaced backroom congressional caucuses. Campaigns spoke to farmers, not just planters. The form of democracy got real, even where the substance stayed cruel.
 
-Marcus: Box nailed. Now box two: transcendentalism. Emerson's the founding voice.
+Editor: The form got theatrical. At Jackson's inauguration, thousands of supporters stormed the White House, stood on the furniture in muddy boots. It was not democracy but a mob with a hero.
 
-Maya: Self-Reliance came out in 1841, right?
+Marcus: That's voters who'd never been invited inside, acting like they owned the place. Because for the first time, they did.
 
-Marcus: 1841, yes. The philosophy said the Enlightenment had it backwards. Truth isn't something your senses hand you. It sits beyond the senses, and you reach it through nature, by going inward. Emerson's essays hammered two themes above all: self-reliance and individual freedom.
+Maya: Round two: the presidency itself. Editor, you said twelve vetoes. Make the case.
 
-Maya: And Thoreau's the one who actually did it.
+Editor: I'll take that one. Before Jackson, presidents vetoed only laws they thought unconstitutional. Jackson vetoed whatever he disliked, including the Bank recharter in eighteen thirty-two, and dared Congress to stop him.
 
-Marcus: Thoreau took it literally. Walden is the record of two years he spent in a small cabin in the woods: solitude, silence, stripping civilization away to find out what a person actually needs. He also wrote the essay on civil disobedience, but the cabin is the image that stuck.
+Editor: Then he pulled federal deposits out of the Bank and parked them in friendly state banks, his pet banks. Single-handedly rewriting the nation's money policy. Add the spoils system. Senator Marcy said it out loud in eighteen thirty-two: to the victor belong the spoils. Government jobs as loot.
 
-Maya: Walden — wait, that's Emerson's book, right?
+Maya: So what about the Kitchen Cabinet, real thing or newspaper insult?
 
-Marcus: Thoreau's. Easy mix-up. Emerson preached it in essays; Thoreau moved into the cabin and lived it.
+Editor: It was real enough. Amos Kendall, Francis Preston Blair, a handful of loyalists who met in the White House kitchen and ran policy past the actual cabinet. Jackson trusted the men who'd bled for him over the men the Senate had confirmed.
 
-Maya: Okay. Emerson talks, Thoreau walks. Who's the third name?
+Marcus: And the spoils? Jackson called it rotation in office. His argument: long tenure breeds a permanent, corrupt office-holding class. Fresh men keep government honest. You can call it loot. He called it democracy.
 
-Marcus: Margaret Fuller. She carried the philosophy into Boston's circles of educated women, and in 1845 she published Woman in the Nineteenth Century, a direct attack on the rigid gender roles boxing women in. It became a touchstone for the women's rights movement, which gets its own episode soon.
+Maya: The Bank veto message, though. I want the actual words. Marcus?
 
-Maya: So the box is truth beyond the senses, Emerson's self-reliance, Thoreau's cabin, Fuller's feminism. Checking that one off too.
+Marcus: Many of our rich men have not been content with equal protection and equal benefits, but have besought us to make them richer by act of Congress. Pure Jackson. The Bank, he said, made the rich richer by law. Farmers believed him, and in eighteen thirty-two they reelected him over Henry Clay in a landslide.
 
-Marcus: The third box is democracy you can see, and it comes in two halves. You already met the painters: the Hudson River School, nature as the subject, emotion as the point. Then the buildings. Starting in the 1820s, American architects went all in on Greek Revival. Columns everywhere.
+Editor: The people's veto? He decided alone. Congress passed the recharter. He killed it. One man overruling the legislature and calling it democracy.
 
-Maya: Because columns look important?
+Marcus: Then explain the Maysville Road. In eighteen thirty, Congress funded a road entirely inside Kentucky, Clay's state. Jackson vetoed it. Said internal improvements inside a single state weren't the federal government's business. A tyrant grabbing power doesn't turn down power.
 
-Marcus: Because of what they meant. The Greek Revolution against the Ottoman Empire was happening at the same time, and the style was an homage, two countries bonded by their love of democracy. Banks, courthouses, mansions, all dressed like Athens.
+Editor: A politician settling scores. It was Clay's road. And for the deposits, the Senate censured him, formally condemned him, in eighteen thirty-four. The only president in American history ever censured by the Senate. They expunged it later, but the record stood: his own Senate called it abuse.
 
-Maya: So the look of the country was literally saying we're the democracy people.
+Maya: What about the campaign itself? Eighteen twenty-eight is called the dirtiest race ever.
 
-Marcus: Column by column. And that pairing, Stuart's calm Washington against Leutze's dramatic one, is exactly the kind of image comparison the test likes to run. Neoclassicism versus romanticism, reason versus feeling.
+Editor: I covered it. The coffin handbills: six black coffins across the top, accusing Jackson of executing militiamen. Then the attacks on his marriage, calling Rachel an adulteress. She died that December, weeks after the election. Jackson said at her funeral: "May God Almighty forgive her murderers. I never can." Both sides slung filth, but Jackson's people invented the modern mud machine.
 
-Maya: But underneath the unity talk, the regions were still doing their own thing, right?
+Marcus: And Adams's people fired first. They called Jackson's mother a prostitute and his wife a bigamist. The mud was mutual. What wasn't mutual was the method. Adams waited to be asked, like presidents always had. Jackson went to the people and asked for it himself. The campaign revolution, and every president since has copied Jackson, not Adams.
 
-Marcus: That's the undertow, and you need it. The nationalism was real, but regional identities stayed powerful. Cooper and Irving were New Yorkers writing about triumphant individuals. Meanwhile a Virginian, Edgar Allan Poe, worked the same romantic camp with broken anti-heroes and deep flaws, and found more readers in Europe than at home, where everybody was still drinking the good feelings.
+Maya: One more before closings, because it explains the break with his own vice president. The Petticoat affair?
 
-Maya: One national story on the surface, sections pulling apart underneath.
+Editor: Washington gossip that ate a cabinet. The cabinet wives, led by the vice president's wife, froze out Margaret Eaton, the Secretary of War's new bride, over rumors about her past. Jackson, who'd watched Rachel destroyed by rumors, demanded they accept her. They refused. In eighteen thirty-one the whole cabinet resigned.
 
-Marcus: And that tension only grows from here.
+Marcus: And Calhoun's wife led the freeze-out. Jackson broke with his vice president for good. Personal, petty, and it reshaped national politics. Van Buren, who'd sided with Jackson, became the heir.
 
-Maya: Sheet's full. Time to see what actually stuck.
+Maya: Closing statements. Thirty seconds each. Marcus.
 
-Maya: Three boxes, let's land them. Box one: an American voice in print. Cooper's frontier, the natural man against corrupted civilization. Irving's American fantasies that Europe devoured. Webster's dictionary giving the language a national accent.
+Marcus: Jackson took a republic run by gentlemen and handed the vote to the farmers and mechanics who worked with their hands. He made the president the tribune of the people, not the servant of Congress. Imperfect, exclusionary, and still the biggest democratic expansion America had ever seen.
 
-Maya: Checking that one.
+Editor: He took a republic of laws and made it one man's will. Twelve vetoes, the spoils, the pet banks, the defiance. He expanded the vote for some Americans and used the power it gave him however he pleased. Not democracy. Elected kingship.
 
-Maya: Box two: transcendentalism. Truth beyond the senses, reached through nature and going inward. Emerson's self-reliance and individual freedom, Thoreau's two years in the cabin, Walden, and Fuller... she goes under the print box, right? She wrote a book.
+Maya: Verdict time. Here's what I can't get past. You're both right. The vote expanded further and faster than ever before, and the exclusions were deliberate: women, Black Americans, Native Americans, walled out. The presidency grew stronger, and the strength served Jackson's grudges as often as the people's will.
 
-Marcus: Good instinct, wrong box. Fuller published, yes, but her box is transcendentalism. She carried the philosophy to Boston's women and turned it into a weapon against rigid gender roles.
+Maya: Historians fight this fight too. In nineteen forty-five, Arthur Schlesinger wrote The Age of Jackson and made him the hero of the working man. Modern historians read the same record and start with the exclusions. The evidence didn't change. The questions did.
 
-Maya: Right. Woman in the Nineteenth Century, 1845. Checked.
+Maya: So my verdict, after all that: democratic form, exclusionary substance. Jackson gave the common man the vote and kept the definition of the common man very, very narrow. These fights built the second party system: Jackson's Democrats against the new Whigs, and that rivalry ran American politics for twenty years.
 
-Maya: Box three: democracy you can see. Hudson River School: nature instead of heroes, awe instead of analysis. Greek Revival columns from the 1820s, saluting the Greeks' fight against the Ottomans and the shared love of democracy. And the undertow: Poe's dark romanticism, proof the regions weren't feeling the same feelings.
+Maya: Historians call this the evaluate-the-extent question. How democratic was Jacksonian America? Your answer has to hold both halves at once.
 
-Maya: All three checked.
+Maya: Next time: South Carolina decides it can ignore a federal law, and the story goes that Jackson threatened to hang the first nullifier he could lay hands on. The crisis that previewed the Civil War.
 
-Marcus: One date to pin: the Leutze painting.
+Marcus: Hero or tyrant —
 
-Maya: 1851. Decades after the war it was mythologizing.
+Editor: the republic is still grading him.
 
-Marcus: That's the set.
-
-Maya: Two questions, AP-shaped. Say your answer before I give it. One: a booklet prints Leutze's 1851 Washington Crossing the Delaware and asks what the painting reveals about American identity in this period. What's the move?
-
-[5-second pause]
-
-Maya: Don't describe the boat. The point is romanticism doing nationalism's work: emotion over reason, America casting its own history as heroic drama, decades after a war it barely won. The painting is the Era of Good Feelings on canvas.
-
-Maya: Two: quick fire. Emerson, Thoreau, Fuller: one signature idea each.
-
-[5-second pause]
-
-Maya: Emerson: self-reliance and individual freedom. Thoreau: Walden, two years in a cabin, stripping civilization away. Fuller: Woman in the Nineteenth Century, attacking rigid gender roles, a touchstone for women's rights.
-
-Marcus: A voice in print, a truth beyond the senses —
-
-Maya: and a country finally dressed like itself.
+# Sources
+# - Maximum Insight, "APUSH Full Review Playlist/28 - Expanding Democracy in Under 3 mins (APUSH Unit 4 Topic 7).en.srt" (property qualifications dropped, Dorr Rebellion, white men only, second party system)
+# - Maximum Insight, "APUSH Full Review Playlist/29 - Jackson and Federal Power in Under 3 Mins (APUSH Unit 4 Topic 8).en.srt" (Democrats vs Whigs, Bank veto 1832, pet banks)
+# - Heimler, "APUSH Unit 4/06 - How VOTING RIGHTS Expanded from 1800-1848 [APUSH Review].en.srt" (Panic of 1819, western states, Dorr Rebellion 1841-42, 1824 corrupt bargain, 1828 campaign: rallies, Old Hickory, first westerner president)
+# - Heimler, "APUSH Unit 4/07 - How Andrew Jackson EXPANDED Federal Power [APUSH Review].en.srt" (1828 turning point, executive power expansion, Democrats vs Whigs, Bank veto, pet banks, inauguration mob)
+# - Adam Norris (URP_contnet), "04-APUSH Period 4 Speed Review.en.srt" (1824 corrupt bargain, 1828 Common Man president, Jackson vetoes, "King Andrew"/tyrant accusations)
+# - Princeton Review AP US History Premium Prep 26E, Chapter 6 (Period 4), "16_Chapter06.xhtml" (timeline: 1824 JQ Adams election, 1828 Jackson election; Bank veto context)
+# - Web searches: Jackson 12 vetoes > all predecessors combined (verified); 1828 coffin handbills — John Binns, six coffins/six militiamen, Rachel Jackson died Dec 22 1828 (verified)

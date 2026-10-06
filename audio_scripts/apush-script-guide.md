@@ -62,7 +62,7 @@ after the pause) → one shared tagline, once.
    ban is on the jargon term, not the idea.
 3. Exam-pitch clichés: "the exam counts/loves…". One exam mention per episode
    max, varied wording. The budget covers *pitches*, not the ritual
-   self-test framing ("Two questions, AP-shaped") or a genuine student
+   self-test framing ("Three questions, AP-shaped") or a genuine student
    question ("So for the test — 1588, why does it matter?").
 4. Balanced triples and parallel closers ("Different X, different Y, different
    Z"). One earned chain per episode max, and it must carry real logic
@@ -118,7 +118,7 @@ after the pause) → one shared tagline, once.
    ways, except the bad stuff mostly goes one way?"). Marcus corrects
    crisply; never lectures the correction.
 5. Self-test: question → `[5-second pause]` → Maya's model answer. Ritual
-   framing ("Two questions, AP-shaped. Say your answer before I give it.")
+   framing ("Three questions, AP-shaped. Say your answer before I give it.")
    stays consistent across episodes. Make at least one question
    stimulus-style (a source description → "what's the point of this
    source?"), not just recall of what Marcus said 30 seconds earlier.
@@ -171,8 +171,11 @@ it's tissue:
 2. Run `apush-script-gates.py` — fix every FAIL.
 3. Read every WARN; keep or fix with intent.
 4. Human read-aloud (or TTS skim) for rhythm.
-5. User approves the script.
-6. Only then render. **Never render an unapproved script.**
+5. **Blind validation (mandatory, two layers).** No script ships without both:
+   - **Layer 1 — hard scripted validators.** `apush-script-gates.py`, all 11 gates green. Mechanical, repeatable.
+   - **Layer 2 — clean-context word-by-word read.** A fresh agent that did NOT write or repair the script reads every word of the final draft and validates each rule individually: human ear (no AI slop), no shorthands, voice (Maya as a person), episode structure, format per the lesson map, complete + correct CED coverage, fact accuracy. Findings are line-level: quote the line, name the rule, fix or flag. The writer never validates their own work.
+6. User approves the script.
+7. Only then render. **Never render an unapproved script.**
 
 ## Production (TTS)
 
@@ -240,3 +243,30 @@ it's tissue:
   "on this much, historians agree," Enter [Name]), G11 school-safe
   vocabulary; plus W7 Maya declarative presence (<4 warns). E1 v11 → v12
   (retired "That's the last of it"). All three episodes pass all 11.
+- 2026-10-05 (E5–E9 pipeline): coordinator ran E5 Silver Empire, E6 Labor
+  Systems, E7 Valladolid Debate, E8 Pueblo Revolt, E9 Cram Session through
+  the full pipeline (clean draft → gates → web fact-check → 2 blind reviews
+  → fixes). All pass all 11 gates. E4 v4 → v5: one-line "next time" tease
+  fix (E5 is a chronological rewind to the silver mountain, not forward to
+  the Pilgrims). E9 cross-checked all eight episodes: zero contradictions.
+  G1 hardened: starter regex now catches That's/Here's/Here-is after a
+  leading quoted segment (`." That's…`), which had evaded detection in E6.
+- 2026-10-05 (16-year-old ear test, E1+E8): neutral-16yo critique found six
+  issues the gates can't see; fixed in E1 v13 / E8 v4. Durable rules:
+  (1) Cold open lands the story hook inside the first ~45 words — box admin
+  first, then a dare or a striking image, no exam pitch up front.
+  (2) Marcus turns stay in true back-and-forth; a 100+ word single turn is a
+  lecture wearing a costume — split with Maya interjections that push, not
+  feed ("Give me the extremes," not "how does that break down?").
+  (3) Mid-episode test-talk is cut ("shows up on the test," "if it shows up
+  as an essay question"); the box ritual and end self-test carry the exam
+  framing alone. Trust the story to be interesting.
+  (4) Every non-obvious term gets an inline gloss the first time
+  (matrilineal → "clans traced through the mother's line"); never assume a
+  word the class might not have.
+  (5) Maya's prompts must be real questions, wrong guesses, or objections —
+  never feed lines. Her best moments are disagreements ("I don't buy 'won
+  by losing,' though").
+  E1 v13 rebuilt scenes 3/13 turn partitions in the scene plan (50→58 TTS
+  segments) with word-offset keywordpop retiming; E8 v4 is a one-line
+  theocracy gloss, plan turns unchanged.

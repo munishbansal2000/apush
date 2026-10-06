@@ -1,97 +1,122 @@
-# U3-E6 — Maya + Marcus (Fish Audio)
-# Episode 6: The Government That Couldn't. ~8 min.
-# Draft v1
-# Read note: Maya tracks three boxes on her episode sheet: the Articles' weak structure, the Northwest Ordinance, and Shays's Rebellion. [5-second pause] marks are production notes for real silence in the self-test — they never go to the voice. The em dash in the closing tagline is a held beat: leave a full breath between Marcus's setup line and Maya's landing line. Do not rush it. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence.
-# Pronunciation: SHAYZ (Shays), uh-NAP-uh-lis (Annapolis), nor-THWEST (Northwest), by-KAM-er-uhl (bicameral)
+# U3-E6 — Study Buddies: Maya + Jay (Fish Audio)
+# Episode 23: Articles of Confederation. ~8.2 min.
+# Draft v1 (from scratch). Study Buddies per the master build plan. CED 3.7 (3.12 westward movement folded in).
+# Read note: [2-second pause] marks are production notes for real silence in the 3-question check — they never go to the voice. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence.
+# Pronunciation: Miami (my-AM-uh); Harmar (HAR-mer); St. Clair (saynt KLAIR); Greenville (GREEN-vil).
 
-Maya: Last time: the promises didn't reach everyone, and now the government they designed first. Thirteen states, one Congress with no president, no courts, and no power to tax. Three boxes on your sheet: the Articles' weak structure, the Northwest Ordinance, Shays's Rebellion. Circle the ones you couldn't explain right now. Give me eight minutes and you'll check every one.
+Maya: Pop quiz, Jay. The founders just won a war against a king. So they sit down to build a new government. What is the one thing they're terrified of?
 
-Marcus: Start with the fear. These were people who'd just fought a king. So when the Continental Congress drafted the Articles of Confederation in 1777, they built a central government designed to be weak, on purpose. The states kept the real power.
+Jay: Losing? Like, going broke?
 
-Maya: And it took four years just to get all thirteen states to agree to it?
+Maya: Close. They're terrified of power. One strong government, one man on top. They just fought a king for eight years, so they build a government designed to make sure it can never happen again. Three boxes: the structure, the failures, the one triumph. By the end, you'll explain why it lasted eight years, then collapsed.
 
-Marcus: Four years. The Articles didn't even take effect until 1781, the same year as Yorktown. The war was basically won before the government started.
+Jay: Eight years? For a whole government?
 
-Maya: The states had already written their own constitutions by then, right?
+Maya: Eight years, start to finish. Thesis: the Articles failed at almost everything, except the one thing that mattered most. Box one: the structure. Jay, under the Articles, how many votes did each state get in Congress?
 
-Marcus: Right, right after independence. Virginia's became the loose template: a bill of rights, with a free press, free elections, and speedy trials; power concentrated in the legislature, mostly two-house legislatures, and the vote limited to white men who owned property. Titles of nobility were banned outright. No lords, no dukes, not even on paper.
+Jay: One? One vote per state?
 
-Maya: So what did the Articles' Congress actually get?
+Maya: One vote per state, no matter the size. Virginia, giant, gets one. Delaware, tiny, gets one. Now, what couldn't Congress do? Here's the list you need cold.
 
-Marcus: One house. No president, no federal courts. No power to tax: if Congress needed money, it knocked on thirteen doors and asked nicely. No control over trade between the states. No national currency, no national army. And the voting math: nine of thirteen states to pass a law, and every single state to amend the thing.
+Jay: Tax people?
 
-Maya: Wait, so Congress technically could tax, they just didn't want to look like the king?
+Maya: Couldn't tax. Congress could ask the states for money, and the states could say no, and usually did. What else?
 
-Marcus: No, they couldn't. Zero tax power. That's the whole box: a government that had to pass the hat. In 1782 Congress proposed a five percent tax on imports. Eleven states said yes, Rhode Island and Virginia said no, and that was the end of it. Unanimous or nothing, so Congress stayed broke.
+Jay: Didn't they have, like, no president?
 
-Maya: Eleven out of thirteen and it still dies. Nine of thirteen to pass a law, thirteen of thirteen to amend it. Somebody in that room had to know that math was a trap.
+Maya: No executive. No president, no one person in charge. No national courts either. And to change any of it, to amend the Articles, you needed every single state to agree. All thirteen. Unanimity.
 
-Marcus: It wasn't all failure, though. This same broke Congress got the Treaty of Paris signed, then pulled off the one great achievement of the era: the Northwest Ordinance, 1787.
+Jay: Wait, one state could block everything?
 
-Maya: The what now?
+Maya: One state did block it. Seventeen eighty-two: Congress proposes a five percent import tax to pay the war debts. Rhode Island says no. Virginia says no. Done. Why would they build it this weak? Think about what they'd just lived through.
 
-Marcus: The rulebook for the West. The Treaty of Paris had handed the new nation a huge western territory, and the Ordinance organized it: surveyed townships, land set aside for public schools, and the big one: slavery banned in the territory. Plus a real path for a territory to become a state, with the same rights as the original thirteen, and protections for private property along the way.
+Jay: Because a strong government was the enemy. The whole war was about a government across the ocean bossing them around.
 
-Maya: So the map fills in from here.
+Maya: Exactly. The fear was the design. They didn't fail to build a strong government. They refused to. Box two: the failures, and they came fast. Congress can't tax, so it can't pay soldiers or debts. Britain closes the West Indies to American trade. Barbary pirates seize American ships, and Congress can't afford a navy. And the states are fighting each other.
 
-Marcus: The how, in one law. Orderly, legal, and anti-slavery on that soil: the one thing the Articles got unambiguously right.
+Jay: The states fought each other?
 
-Maya: Okay, but a government that can't tax and can't raise an army: what breaks first?
+Maya: Trade wars. New York taxes New Jersey's goods. States print their own worthless paper money. And out west, Britain never left. They kept their frontier forts, right on American soil, and they're arming Native nations who are resisting American settlers. Congress can't touch any of it. So: what finally broke it? What was the crisis that made everyone say, okay, this has to go?
 
-Marcus: Everything, slowly, then one thing fast. States slapped tariffs on each other's goods and Congress couldn't stop them. Britain cut off trade with the West Indies. Spain closed the Mississippi to American ships. Pirates off North Africa seized merchant vessels, and there was no navy to send. Britain even kept forts on the western frontier, arming Native groups and nudging them toward frontier settlers, in direct violation of the peace treaty, and Congress could do nothing about any of it. American diplomats in Europe were treated as background noise. Why respect a government that can't pay its own bills?
+Jay: Was it a war? Like, a rebellion?
 
-Maya: So Britain's just sitting in forts on American soil, and Congress is writing strongly worded letters.
+Maya: A rebellion. Seventeen eighty-six, Massachusetts. Farmers out west are drowning in debt. The state demands hard currency, courts foreclose on farms that can't pay. A former Continental Army captain named Daniel Shays leads thousands of men. They shut the courts down. They march on the federal arsenal at Springfield.
 
-Marcus: Essentially. No army, no navy, no leverage.
+Jay: Wait, so it was about taxes? The state taxing them too hard?
 
-Maya: That's a lot of nothing.
+Maya: Nope. Trap answer. It wasn't taxes. It was debt. The farmers owed money they couldn't pay, and the state was taking their land. Debt, not taxes. Say it back to me.
 
-Marcus: And then the fast break. Shays's Rebellion, in 1786. Massachusetts farmers, many of them unpaid veterans of the war, were drowning in debt, and courts were foreclosing on their farms. So they shut the courts down, physically blocking the foreclosures. Then they marched on a federal arsenal. The Massachusetts militia put it down, but here's the point. The federal government watched the whole thing from the sidelines. It couldn't pay the veterans, and it couldn't raise an army to face them.
+Jay: Debt, not taxes. The farmers couldn't pay what they owed, so the state took their farms.
 
-Maya: My grandpa's farm nearly went to the bank in the eighties. He still talks about the auction notice like it was a death in the family. Debt with no way out — I get why they picked up muskets.
+Maya: And here's the kicker. Massachusetts asks Congress for help. Congress can't raise an army. No money, no tax power, nothing. So a bunch of rich Boston merchants pass the hat and fund a private army themselves. A private militia, paid for by subscription, crushes the rebellion. Think about that. The government was so weak that private citizens had to hire the army.
 
-Marcus: And the country's leaders got it too. Shays's scared them straight: if the government can't handle a few thousand angry farmers, what happens next time? Unpaid veterans were everywhere, and suddenly everyone was picturing this in every state. A small meeting at Annapolis in 1786 fizzled, but it produced the call for a bigger one: Philadelphia, 1787, to fix the whole thing.
+Jay: Embarrassing. For the government, I mean.
 
-Maya: So Shays's Rebellion didn't change any laws. It changed minds.
+Maya: It terrified the elite. Henry Knox, Washington's old artillery chief, writes to Washington in a panic, and here's a close paraphrase of what he said: the rebels see the weakness of government, and feel their own force. Translation: the poor know the government can't stop them. That letter is when the founders realize the Articles might not survive. Box two, checked. Now box three. The one triumph. The Articles did exactly one thing brilliantly, and it might be the most important law you've never thought about. The Northwest Ordinance. Seventeen eighty-seven.
 
-Marcus: It changed the guest list. Philadelphia was supposed to fix the Articles. It wrote a new Constitution instead.
+Jay: The Northwest. Like, Ohio?
 
-Maya: If Shays's Rebellion never happens, do the Articles survive?
+Maya: The territory north of the Ohio River. The future Ohio, Indiana, Illinois, Michigan, Wisconsin, Minnesota. Congress couldn't tax, but it did control the western land. So it wrote a rulebook. How do you turn wilderness into states? First, divide it into surveyed townships and sell the land, orderly, no chaos. Second, set aside land and money for public schools. Public education, written into the law of the frontier. Third, and it's huge: no slavery north of the Ohio River. Banned. Forever, they thought.
 
-Marcus: Nobody's fully sure. But plenty of historians think some crisis was coming regardless. The money problem alone was fatal.
+Jay: Whoa. In seventeen eighty-seven? Before the Constitution even existed?
 
-Maya: Weak by design. One great law. And a rebellion that broke the spell.
+Maya: Before the Constitution existed. And fourth: when a territory hit sixty thousand people, it could write a constitution and join the Union as a full state, equal to the original thirteen. Not a colony. A state. That rule, orderly settlement to equal statehood, is why America grew the way it did instead of building a colonial empire out west. The government died. The Ordinance lived.
 
-Maya: Three boxes, let's land them. One: the Articles' weak structure. One-house Congress, no executive, no courts, no tax power, no trade rules: nine of thirteen to pass a law, and unanimous to amend. The states wrote their own constitutions first and kept the real power.
+Jay: Okay, but the reality was messier, right? The map versus the actual movement west.
 
-Marcus: Checked.
+Maya: Right, because the Ordinance governed the theory, and the seventeen nineties were the reality. Settlers are pouring into Kentucky, Tennessee, and Ohio, and they are not waiting for surveyors. They're squatting, they're fighting, and the Native nations of the Ohio Valley are not leaving. A Miami chief named Little Turtle builds a confederacy and destroys two American armies, one after another. Two. Congress passes the Indian Trade and Intercourse Act in seventeen ninety, saying only the federal government can buy Native land. Everybody ignores it.
 
-Maya: Two: the Northwest Ordinance of 1787. Townships, public schools, slavery banned in the territory, and a real path from territory to statehood. The one great achievement.
+Jay: So the law says one thing and the frontier does the opposite.
 
-Marcus: Landed.
+Maya: Right. It takes General Anthony Wayne, Mad Anthony Wayne, winning at Fallen Timbers in seventeen ninety-four, and then the Treaty of Greenville in seventeen ninety-five, where the confederacy cedes most of Ohio. So Ohio didn't open by survey. It opened by war, then paperwork. On westward movement in the seventeen nineties, give them both: the Ordinance's orderly promise, and the violent reality.
 
-Maya: Three: Shays's Rebellion. Massachusetts, 1786 into 1787: farmers and unpaid veterans, debt, shut the courts, marched on an arsenal. And the feds sent in the army and crushed it, which is why everyone panicked.
+Jay: The map and the mess.
 
-Marcus: The feds had no army to send. Massachusetts handled it, and that's exactly why everyone panicked.
+Maya: Stealing that phrase. Now, last big question, and it ties it together. If the Articles were this broken, why did they last eight years? Seventeen eighty-one to seventeen eighty-nine. Why didn't they collapse in year two?
 
-Maya: Right. Annapolis fizzled, Philadelphia got the call.
+Jay: Because nobody had a better idea yet? Or it worked just well enough?
 
-Maya: Two questions, AP-shaped. Say your answer before I give it. One: a 1786 Massachusetts broadside shows farmers blocking a courthouse door to stop foreclosures. What's the point of this source?
+Maya: Both, honestly. It worked just well enough to get through the war's aftermath, and replacing it meant admitting the Revolution's first government was a failure, which nobody wanted to say out loud. It took a real scare, Shays and his farmers marching on an arsenal, to make the alternative scarier than the embarrassment. And here's the argument historians still have. Was the Constitutional Convention a rescue, saving the republic from collapse? Or was it a counter-revolution, elites grabbing power back from the states and the people? The historian Charles Beard argued the framers were protecting their money and their class. Others say they were saving the country. You don't have to pick. But you have to know the fight exists.
 
-[5-second pause]
+Jay: So the Articles failed because they were designed by fear, they couldn't tax or enforce anything, Shays proved it, and the one good thing was the Northwest Ordinance.
 
-Maya: It's Shays's Rebellion — debt-crushed farmers and unpaid veterans shutting the courts. But the source's real point is the silence behind it: Congress couldn't pay these men and couldn't raise an army to stop them. The Articles, on full display.
+Maya: Restate it in your own words and it's yours. Say it once more, shorter.
 
-Maya: Two: Congress proposes a five percent tax on imports. Eleven states say yes. Rhode Island and Virginia say no. What happens?
+Jay: Built weak on purpose. Couldn't tax, couldn't govern. Shays' Rebellion showed everyone. The Ordinance was the one win, and it outlived the whole government.
 
-[5-second pause]
+Maya: Lightning recap, then your check. One: fear of centralized power built a government with no tax power, no executive, no courts, and a unanimity trap. Two: it couldn't pay debts, stop trade wars, or raise an army, and Shays' Rebellion proved it when private merchants had to fund the militia. Three: the Northwest Ordinance banned slavery north of the Ohio, funded schools, and set the statehood rule, while the real westward movement ran on war, Fallen Timbers, Greenville. Four: it lasted eight years because it barely worked, until the scare got bigger than the embarrassment.
 
-Maya: Nothing. Amendments needed all thirteen, so one "no" killed it and Congress stayed broke. The whole weak structure in a single vote.
+Jay: All three boxes checked.
 
-Maya: Check your three boxes. Episode six in the books.
+Maya: Three questions. Two seconds each. Then you're done. One: under the Articles, what did it take to amend the document?
 
-Marcus: They'd built a government that couldn't act —
+[2-second pause]
 
-Maya: and a crisis that wouldn't wait.
+Maya: All thirteen states. Unanimity.
 
-Maya: Next time: Philadelphia: the Convention, the Great Compromise, and the Constitution.
+Maya: Two: Shays' Rebellion, taxes or debt?
+
+[2-second pause]
+
+Maya: Debt. Foreclosures. Not taxes.
+
+Maya: Three: name two things the Northwest Ordinance did.
+
+[2-second pause]
+
+Maya: Banned slavery north of the Ohio, set aside land for schools, and made the statehood rule. Any two.
+
+Jay: I got all three.
+
+Maya: That's Episode 6. Next time: fifty-five men, sworn to secrecy, in a Philadelphia heat wave, rewriting the whole government. And the three bargains they struck, including one with slavery.
+
+Jay: Rough one, that.
+
+Maya: Rough is the point. See you there.
+
+## Sources
+- Heimler's History: `APUSH Unit 3/06` transcript text (read at `/tmp/u3src/heimler_06.txt`: state constitutions, Articles structure, Shays' Rebellion trigger, Convention call)
+- Maximum Insight: `APUSH Full Review Playlist/17 - The Articles of Confederation in Under 3 mins (APUSH Topic 3.7).en.srt` (text read at `/tmp/u3src/maxinsight_17.txt`: 1781 ratification, no tax power, Northwest Ordinance 1787 — schools, no slavery, statehood rules)
+- Adam Norris (APUSHReview.com): `URP_contnet/03-APUSH Period 3 Speed Review.en.srt` (Articles weaknesses, Shays' Rebellion framing)
+- 5 Steps to a 5 APUSH 2024 (`books/extracted/5steps2024`, ch. 11): Northwest Ordinance details; Shays' Rebellion (Springfield arsenal, private militia)
+- Web verification: Henry Knox to George Washington, Oct 23, 1786 ("they see the weakness of Government… they feel at once their own poverty compared with the opulent, and their own force" — brief public-domain quote, paraphrased in dialogue); Little Turtle's confederacy destroying Harmar (1790) and St. Clair (1791) armies; Fallen Timbers (Aug 20, 1794); Treaty of Greenville (1795); Indian Trade and Intercourse Act (1790); 5% impost of 1782 blocked by Rhode Island and Virginia

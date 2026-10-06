@@ -1,119 +1,91 @@
-# U4-E3 — Maya + Marcus (Fish Audio)
-# Episode 3: The Market Revolution. ~8 min.
-# Draft v1
-# Read note: Maya tracks three boxes on her episode sheet: transportation rewiring the map, the factory arrives, and who moves where. [5-second pause] marks are production notes for real silence in the self-test — they never go to the voice. The em dash in the closing tagline is a held beat: leave a full breath between Marcus's setup line and Maya's landing line. Do not rush it. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence.
-# Pronunciation: EE-ree (Erie), muh-KOR-mik (McCormick), SLAY-tur (Slater), LAN-kaster (Lancaster)
+# U4-E3 — Marcus solo (Fish Audio)
+# Episode 3: The War Nobody Won. ~8 min.
+# Draft v1.
+# Read note: Story Mode — Marcus narrates alone, no self-test, no pause tags in this episode. The arc runs hook, rising causes, disaster, climax, denouement, then the confusion-correction on the "Second War of Independence" and the one thing to carry forward. Strip this header and the read note before TTS.
+# Pronunciation: teh-KUM-suh (Tecumseh), tenz-kwah-TAH-wah (Tenskwatawa), tip-uh-kuh-NOO (Tippecanoe), GENT (Ghent, rhymes with "sent"), BLAH-denz-burg (Bladensburg)
 
-Maya: Last time: the War of 1812 and the Era of Good Feelings. The war ended. The factories stayed. And suddenly everyone needed to move goods faster than a horse could walk. Three boxes on your sheet: transportation rewiring the map, the factory arrives, who moves where. Circle the ones you couldn't explain right now. Eight minutes, and the map changes.
+Marcus: August eighteen fourteen. The British are marching on Washington, and the President's wife is deciding what to save.
 
-Marcus: Start with roads. The Lancaster Turnpike in Pennsylvania was the first big engineered road in the country. A private company built it and charged tolls. It linked Philadelphia to the farmland sixty miles west and slashed what it cost to move wheat to market. Then the Cumberland Road in 1811, the rare one paid for by the federal government, running from Maryland toward Ohio.
+Marcus: Dolley Madison had stayed too long. The American militia had just collapsed at Bladensburg. The papers called it the Bladensburg Races, because our men ran so fast.
 
-Maya: And then everybody started digging.
+Marcus: Now redcoats were coming down the road, and Dolley ordered the frame of Gilbert Stuart's giant portrait of George Washington broken apart, so the canvas could be cut out and carried off. Her words, from her letter that day: I have ordered the frame to be broken, and the canvass taken out.
 
-Marcus: Canal mania. The Erie Canal, finished in 1825, joined Albany to Buffalo, the Great Lakes to the Hudson River. New York City rode that ditch to the top of American commerce.
+Marcus: Here's the part the story usually skips. Dolley gave the order, but the hands were the steward's and the gardener's. Paul Jennings, fifteen and enslaved by the Madisons, names them in his memoir: John Susé and McGraw took the portrait down.
 
-Maya: I know that song. Low bridge, everybody down. We sang it in music class.
+Marcus: That night the British ate dinner in the White House with the President's silverware, then set the building on fire. The Capitol too. Washington burned, and the republic looked finished.
 
-Marcus: The Erie Canal song. Never saw that coming.
+Marcus: The reason it wasn't is the story of this episode: the War of eighteen twelve. The war America calls its Second War of Independence, even though it barely won a battle it planned. The thesis is simple. This war settled nothing on paper, and changed everything underneath.
 
-Maya: Music class beats history class.
+Marcus: How did we get there? Start with the insult. For years, Britain's Royal Navy had been stopping American merchant ships and dragging sailors off to serve in the British navy. Impressment. Thousands of men. Some were British deserters, sure. Plenty were American citizens. It was kidnapping with a flag on it.
 
-Marcus: Then steamboats let riverboats travel upstream, not just down. The Mississippi was the West's highway, and steam made it two-way: crops floated down to New Orleans, manufactured goods steamed back up. By the 1830s, railroads were beating canals at their own game. And in 1844, Samuel Morse's telegraph let distant markets talk to each other instantly. Prices in New Orleans and New York could move together. Business stopped waiting on the mail.
+Marcus: Then, in eighteen oh seven, a British warship called the Leopard fired on the American frigate Chesapeake right off the Virginia coast, boarded her, and seized sailors at gunpoint. The Chesapeake-Leopard affair. The country exploded.
 
-Maya: So information finally moves faster than a horse.
+Marcus: And the trade war made it worse. Britain's Orders in Council said any neutral ship trading with France needed a British license. Napoleon's Berlin and Milan decrees said any ship obeying Britain was fair game for France. American merchants were squeezed between two empires, and both sides seized their ships.
 
-Marcus: For the first time, a message could cross the country faster than any rider.
+Marcus: Jefferson's answer was what he called peaceable coercion. The Embargo Act of eighteen oh seven banned American ships from trading with any foreign port. The theory? Britain and France needed American goods so badly they'd cave.
 
-Maya: So distance collapses.
+Marcus: The reality: American ports starved while Britain shrugged. Peaceable coercion strangled American merchants instead of the British navy.
 
-Marcus: The map rewired. The North and West stitched themselves together. The South, mostly, got left out of the canal-and-rail web.
+Marcus: Congress tried tweaks. The Non-Intercourse Act reopened trade with everyone except Britain and France, which helped nobody much. Then Macon's Bill Number Two. A clumsy scheme that dared France and Britain to respect our neutrality, and Napoleon exploited it like a card trick, pocketing the American trade cutoff against Britain while ignoring our neutrality himself.
 
-Maya: The South just watched the trains go by?
+Marcus: Nothing worked.
 
-Marcus: Pretty much. Fewer canals, fewer railroads, fewer banks. The market revolution had a geography, and the South landed on the wrong side of it.
+Marcus: Then a new generation arrived in Congress. Young, loud, hungry. The War Hawks. Henry Clay of Kentucky, John C. Calhoun of South Carolina.
 
-Marcus: Making things changed just as fast. Eli Whitney won a government contract for muskets and had an idea: machine every part to spec, so any trigger fits any gun. Interchangeable parts.
+Marcus: They argued Britain was too busy fighting Napoleon to fight America well, and they had their eyes on prizes. Canada, which they swore would fall like a ripe apple. Florida, which belonged to Spain, Britain's ally.
 
-Maya: So every gun was identical?
+Marcus: And there was Tecumseh. The Shawnee leader was building something America had never faced: a confederacy of Native nations across the old Northwest. His brother Tenskwatawa, the Prophet, preached a return to Native ways and resistance to American expansion.
 
-Marcus: Not identical, interchangeable. Any trigger fits any gun. That idea became the American system of manufacturing: the factory, plus small crews of unskilled workers feeding machines. Other manufacturers caught on fast. If it worked for guns, why not chairs, or shirts, or clocks? One trick, every industry.
+Marcus: In eighteen eleven, while Tecumseh was away recruiting in the South, William Henry Harrison marched on the confederacy's headquarters at Prophetstown and smashed it at the Battle of Tippecanoe. Tecumseh fled north, into the arms of the British.
 
-Maya: The gun trick takes over the whole economy.
+Marcus: So by eighteen twelve, Madison had a stack of reasons. Impressment, the trade strangulation, British guns in Native hands. And a Congress full of War Hawks shouting for Canada.
 
-Marcus: And early factories had a leash: they needed running water for power, so they had to sit beside rivers. The steam engine cut it. Burn coal, boil water, and you can build your factory wherever the markets or the raw materials are.
+Marcus: In June eighteen twelve, he asked Congress for war. The House voted seventy-nine to forty-nine, the Senate nineteen to thirteen. The closest war vote in American history, and New England voted no almost to a man.
 
-Maya: The factory shows up, and the workers show up with it.
+Marcus: The war went badly. Immediately. The invasion of Canada collapsed. Three tries, three failures.
 
-Marcus: The factory system itself came from Samuel Slater. He memorized British mill designs and sailed over in 1789. Then he built a textile mill in Rhode Island. Then came whole factory towns. Lowell, Massachusetts wasn't one factory, it was a town built around the mills, the most famous of several that went up across New England in the 1820s, staffed largely by young farm women called the Lowell girls.
+Marcus: At Detroit, General William Hull surrendered his entire army without firing a shot, terrified that Tecumseh's warriors would massacre the fort's families. A whole American army, handed over intact. Hull was court-martialed for cowardice and sentenced to be shot. Madison pardoned him, but his name became the war's shorthand for disgrace.
 
-Maya: I spent one summer folding boxes at my uncle's warehouse. Same motion, eight hours. I feel the division of labor in my shoulders.
+Marcus: On the ocean, the tiny American navy won a few brilliant single-ship duels. The Constitution earned her nickname, Old Ironsides, when British cannonballs bounced off her live-oak hull. On Lake Erie, Oliver Hazard Perry lost his flagship, rowed through gunfire to another ship, and won the battle anyway. His dispatch was nine words: "we have met the enemy and they are ours."
 
-Marcus: The whole factory in one summer.
+Marcus: But Britain's blockade slowly strangled the coast, and New England merchants called it Mr. Madison's War and traded with the enemy.
 
-Maya: And Whitney invented the cotton gin, so the South industrialized too?
+Marcus: Tecumseh didn't live to see any of it turn. In October eighteen thirteen, at the Thames in Canada, he fell fighting beside the British. His confederacy fell with him, and with it the last organized Native hope of stopping American expansion in the old Northwest.
 
-Marcus: The gin, yes. It stripped seeds from cotton fiber fast, and cotton production exploded. But it didn't industrialize the South. It chained the South tighter to cotton, and cotton meant enslaved labor. The courts paved the legal road too: McCulloch v. Maryland protected the national bank in 1819, and Gibbons v. Ogden handed the federal government the interstate commerce power in 1824.
+Marcus: The war was nearly lost in the Treasury, too. Congress had let the First Bank's charter expire in eighteen eleven, so Madison had no national bank to finance the fight, and the money ran so short the soldiers nearly stopped getting paid. The mess was so bad that chartering a Second Bank became one of the first things the country did after the war.
 
-Maya: Box two earns its check.
+Marcus: And then August eighteen fourteen. With Napoleon exiled, Britain sent its real army across the Atlantic. Washington burned. The government fled to the Virginia countryside. It looked like the end of the experiment.
 
-Marcus: So who moves? First, west. Cheap farmland pulled families across the Appalachians, and new tools followed. John Deere's steel plow in 1837 broke the prairie soil, and McCormick's mechanical reaper let one farmer do the harvesting work of five. Better tools meant bigger harvests, which meant buying more land, which meant bigger harvests. Western farming turned commercial: grow to sell, not to eat.
+Marcus: But Baltimore held. In September eighteen fourteen, the British fleet pounded Fort McHenry for twenty-five hours. Rockets, bombs, all night.
 
-Maya: From subsistence to market. They stopped just feeding themselves.
+Marcus: A Washington lawyer named Francis Scott Key watched from a British ship, where he'd gone to negotiate a prisoner's release. At dawn, through the smoke, he saw the enormous American flag still flying over the fort. He scribbled a poem on the back of a letter. You know the song.
 
-Marcus: That was the turn. Before, a farm family made most of what it needed or bartered with neighbors. After, they bought and sold on the market: western food east, southern cotton north, finished goods back again.
+Marcus: Here's the joke history loves: the tune was a British drinking song.
 
-Maya: Then came the immigrant wave.
+Marcus: And then the strangest victory of all. On Christmas Eve, eighteen fourteen, American and British diplomats signed the Treaty of Ghent in Belgium. Read it and weep: it settled nothing. No mention of impressment. No territory changed hands. Just stop fighting and go back to the way things were.
 
-Marcus: Between the 1820s and 1840s, more than two million Europeans arrived. Most were Irish, German, or Scandinavian. Most settled in the big Northeastern cities, which is a big reason those cities ballooned. Market towns like Cincinnati and St. Louis boomed out west.
+Marcus: But news crossed the Atlantic by sail.
 
-Maya: The regions specialize and the cities swell.
+Marcus: So on January eighth, eighteen fifteen, Andrew Jackson's ragtag army, regulars and militiamen and free Black soldiers and Jean Lafitte's pirates, stood behind cotton bales outside New Orleans and shattered a British assault. Some two thousand British casualties. Thirteen Americans dead. The battle that made Jackson a hero was fought after the war was over.
 
-Marcus: North manufactures, South grows cotton, West grows food. Southern cotton rode north to the mills. Northern finished goods rode south and west. Every region fed the others.
+Marcus: Now the confusion to correct. Did Americans earn the name Second War of Independence, or is it myth? On paper, the war settled nothing. Impressment ended only because the Napoleonic Wars ended. The borders didn't move an inch. So what did the war actually prove?
 
-Maya: So the West feeds everyone and the South clothes them?
+Marcus: Three things. First, the Federalists died. At the Hartford Convention in December eighteen fourteen, New England Federalists met behind closed doors to air their grievances. They demanded constitutional amendments. A two-thirds vote of Congress to declare war. An end to the three-fifths clause that inflated Southern power. Strict limits on embargoes.
 
-Marcus: And the North sells them the finished goods. Everybody needs everybody.
+Marcus: Some delegates talked openly of secession. Then the war ended in a glow of patriotism, and the convention looked like treason. The party never recovered. America became a one-party country.
 
-Maya: Interdependent, but not equal.
+Marcus: Second, American manufacturing boomed. Cut off from British goods by the embargo and then the war, Americans built their own factories. The seed of the Market Revolution was planted in wartime necessity.
 
-Marcus: Not equal at all. The North and West got the roads, the banks, the factories. The South got the cotton market.
+Marcus: Third, nationalism surged. The republic had taken the world's superpower's best shot and survived. Two years later, James Monroe rode that glow to the presidency in a landslide. The myth said America won. The truth was better. America endured.
 
-Maya: Interdependent.
+Marcus: So here's the one thing to carry forward. The War of eighteen twelve proved the republic could survive its own incompetence. Bad strategy, lost battles, a burned capital, and the country came out more united, more industrial, and more sure of itself than it went in. Hold onto that paradox. It explains the next ten years.
 
-Marcus: Interdependent.
+Marcus: Next time: the Era of Good Feelings. The victory glow, Henry Clay's plan to build the economy, and a doctrine that told Europe to stay out of the hemisphere, issued by a president who couldn't have enforced it with a rowboat.
 
-Maya: Time to land them. Then the test.
-
-Maya: Three boxes, let's land them. One: transportation rewiring the map. Turnpikes and the Cumberland Road. Steamboats pushing upstream. The Erie Canal in 1825. Railroads. The telegraph in 1844.
-
-Marcus: The first box lands.
-
-Maya: Two: the factory arrives. Whitney's interchangeable parts, Slater's mill, the Lowell girls. Plus the cotton gin, which supercharged cotton instead of industrializing the South.
-
-Marcus: Box two is checked.
-
-Maya: Three: who moves where. West for cheap farmland. The steel plow in 1837. McCormick's reaper. And immigration: two million Europeans between the 1820s and... 1840s?
-
-Marcus: 1820s to 1840s. Mostly Irish, German, and Scandinavian, landing in Northeastern cities.
-
-Maya: And as the regions traded more, they grew more alike?
-
-Marcus: More distinct. The trade is what let each region specialize: Northern industry, Southern cotton, Western food.
-
-Maya: Two questions, AP-shaped. Say your answer before I give it. One: a map shows the Erie Canal linking Albany to Buffalo, dated 1825. The prompt asks: why does this map belong in a discussion of the market revolution?
-
-[5-second pause]
-
-Maya: Because the canal is the argument. Cheap water transport tied Western farms to New York City's markets, the interdependence the whole revolution runs on.
-
-Maya: Two: the cotton gin made processing cotton faster and cheaper. Why did slavery expand instead of fading?
-
-[5-second pause]
-
-Maya: Because the gin made cotton wildly profitable. More profit per bale meant more land planted in cotton, and more enslaved labor to work it.
-
-Maya: Check your three boxes. Episode three in the books. Next time: the common man's president. Jackson, wider voting rights, and the war on the Bank.
-
-Marcus: Faster roads, cheaper goods —
-
-Maya: and a country that started buying everything.
+# Sources
+# - Maximum Insight, "APUSH Full Review Playlist/24 - War of 1812, Missouri Compromise, and Nullification Crisis in Under 3 mins (APUSH Unit 4 Topic 3).en.srt" (causes: impressment, British support of Native tribes; Treaty of Ghent; Hartford Convention; Battle of New Orleans)
+# - Maximum Insight, "APUSH Full Review Playlist/25 - America on the World Stage in Under 3 mins (APUSH Topic 4.4).en.srt" (Barbary Wars; Macon's Bill Number Two)
+# - Heimler, "APUSH Unit 4/03 - AMERICA on the WORLD Stage [APUSH Review].en.srt" (Embargo Act, Non-Intercourse Act, Macon's Bill No. 2, Tecumseh/Tenskwatawa/Tippecanoe, impressment, War Hawks, Treaty of Ghent, Monroe Doctrine bridge)
+# - Adam Norris (URP_contnet), "04-APUSH Period 4 Speed Review.en.srt" (Embargo Act, impressment, War Hawks Clay/Calhoun, Hartford Convention, Battle of Baltimore/Star-Spangled Banner, burning of the White House, Treaty of Ghent 1814, New Orleans after the war)
+# - Princeton Review AP US History Premium Prep 26E, Chapter 6 (Period 4), "16_Chapter06.xhtml" (timeline: 1807 Chesapeake-Leopard, Embargo Act; 1811 Tippecanoe; 1812 war begins; 1814 burning of Washington, Hartford Convention, Treaty of Ghent; 1815 New Orleans)
+# - Web: Mount Vernon / White House Historical Association via search (Dolley Madison portrait rescue, Aug 24 1814; Jennings memoir credits steward John Susé and gardener McGraw); u-s-history.com / Dickinson HIST 282 (Jefferson's "peaceable coercion")

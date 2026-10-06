@@ -1,101 +1,114 @@
 # U3-E2 — Maya + Marcus (Fish Audio)
-# Episode 2: The Tax Bill Comes Due. ~8 min.
-# Draft v1.
-# Read note: Maya tracks three boxes on her episode sheet: the Stamp Act, the Boston Massacre, and the Coercive (Intolerable) Acts. [5-second pause] marks are production notes for real silence in the self-test — they never go to the voice. The em dash in the closing tagline is a held beat: leave a full breath between Marcus's setup line and Maya's landing line. Do not rush it. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence.
-# Pronunciation: GREN-vil (Grenville), BUR-jess-iz (Burgesses), KRIS-pus AT-ucks (Crispus Attucks), in-TOL-ur-uh-bul (Intolerable), SEE-bree (Seabury)
+# Episode 19: Taxation Without Representation. ~8.2 min.
+# Draft v1 (from scratch). FLAGSHIP per the master build plan. CED 3.3.
+# Read note: Maya tracks three boxes on her episode sheet: the Stamp Act, virtual representation, and the Declaratory Act. [2-second pause] marks are production notes for real silence in the 3-question check — they never go to the voice. The em dash in the closing tagline is a held beat: leave a full breath between Marcus's setup line and Maya's landing line. Do not rush it. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence.
+# Pronunciation: GREN-vil (Grenville), oh-TISS (Otis), moh-HAWKS (Mohawks), in-TOL-er-uh-bul (Intolerable)
 
-Maya: Last time: Britain won the war and inherited the debt. This time Parliament sends the bill, and the colonists read it as robbery. Three boxes on your sheet: the Stamp Act, the Boston Massacre, the Coercive Acts. Circle the ones you couldn't explain right now. Eight minutes, and you'll land all three boxes.
+Maya: Last time: seventeen sixty-three. Britain wins the biggest war of the century, and the prime minister opens the books and goes pale. The national debt has doubled. The empire is twice as big. Somebody has to pay. So London sends the bill to thirteen colonies that never got a vote. Three boxes on your sheet: the Stamp Act, virtual representation, and the Declaratory Act. Circle the ones you couldn't explain right now. Eight minutes, and you'll check all three off.
 
-Marcus: The mood shift first. Under salutary neglect the colonies had run their own lives for decades, passing their own laws through their own assemblies. London saw subjects who existed to serve the empire. The colonists saw British citizens with rights. Both sides meant it. That was the problem.
+Marcus: And the bill kept growing, because every time the colonists pushed back, Parliament pushed harder.
 
-Maya: And the war's empty treasury forced the argument.
+Maya: Start with the math. How broke was Britain, actually?
 
-Marcus: George Grenville, the new prime minister, built a three-part squeeze. Enforce the old laws the colonies had ignored for years: the Navigation Acts, trade locked to Britain. Keep wartime rules going in peacetime: the Quartering Act, with soldiers still fed and housed after the fighting stopped. And then the new money: taxes designed to make the colonies pay for the war.
+Marcus: Roughly one hundred forty million pounds in debt, an almost unimaginable number then. And now Britain had Canada to administer, Florida to garrison, and ten thousand soldiers to keep in North America. George Grenville, the prime minister, did the arithmetic. The colonists had paid almost nothing toward the war that had just saved them from the French. Asking them to chip in didn't look crazy from London.
 
-Maya: Starting with the Sugar Act.
+Maya: I'm going to say it: that sounds reasonable. They got the protection, they should help pay. Why were the colonists so mad?
 
-Marcus: 1764. It actually lowered the tax on imported molasses, then cracked down hard on collection, since smugglers had dodged the old rate for years. Same year, the Currency Act: no more colonial paper money, British money only, which squeezed colonial merchants while London's merchants thrived.
+Marcus: Because their answer was never really about the money. But first the taxes, in order. Seventeen sixty-four: the Sugar Act. It actually lowered the duty on foreign molasses, but for the first time it was designed to raise revenue, and London started enforcing it: customs officers, courts, the works. Same year, the Currency Act: no more colonial paper money. And the Quartering Act: colonists had to house and feed British soldiers. During the war, grumbling but understandable. After the war, with no French left to fight, the question wrote itself: why is there still a soldier in my spare room?
 
-Maya: So the Stamp Act was on, like, postage stamps?
+Maya: So the tax went down and people got madder. Which tells you it was never about the money.
 
-Marcus: No postage yet. Paper. 1765, and it taxed the paper itself: newspapers, legal documents, diplomas, playing cards. Every colony, every class, every week. And it was the first direct tax Parliament had ever levied on the colonies, which is why the reaction detonated.
+Marcus: Exactly. Then seventeen sixty-five: the Stamp Act. The one that touched everybody. Every newspaper, every legal document, every diploma, every deck of playing cards, every pair of dice needed stamped paper bought from the crown.
 
-Maya: "No taxation without representation." I know that line from a protest chant. Honestly, from a Hamilton song too.
+Maya: A stamp on a deck of cards. Petty enough to feel personal.
 
-Marcus: The chant came first, by about two and a half centuries. The argument was legal, not musical: the colonists believed representation had to be local: people from the colony, elected by the colony, passing the colony's laws. Grenville answered with virtual representation: Parliament, he said, spoke for every English subject everywhere, colonies included.
+Marcus: It felt personal to them too. This was the first direct tax, with Parliament reaching straight into a colonist's pocket and no assembly in between. Patrick Henry stood up in the Virginia House of Burgesses and got the Virginia Resolves passed, condemning it. Twenty-seven delegates from nine colonies met in New York as the Stamp Act Congress and petitioned for repeal.
 
-Maya: And the colonists said that's the dumbest thing they'd ever heard.
+Maya: And in the streets?
 
-Marcus: Close to verbatim. So they fought back in every register. Merchants and artisans formed the Sons and Daughters of Liberty, writing pamphlets and giving speeches against the taxes. Committees of Correspondence carried the news colony to colony. Some crowds went further: tax collectors beaten, tarred and feathered, and that tar was hot enough to burn.
+Marcus: The Sons of Liberty organized, gave speeches, printed pamphlets. And some of them went further. Tax collectors got beaten, tarred and feathered. That tar was boiling hot, by the way. This wasn't theater. It left scars. In Boston they hung an effigy from an elm and named it the Liberty Tree, and pretty soon every town wanted one of its own.
 
-Maya: And the formal protest?
+Maya: My grandmother drinks coffee. She says her family quit British tea in seventeen seventy-three and never went back. Two hundred fifty years of grudge, one cup at a time.
 
-Marcus: The Stamp Act Congress, 1765: twenty-seven delegates from nine colonies, petitioning Parliament to repeal the act because taxation without representation was tyranny. Even here, independence was on nobody's mind. They wanted the fullness of their rights as British subjects, nothing more.
+Marcus: She'd have fit right in. Because the most effective weapon wasn't the mob, it was the boycott. Merchants refused British goods, and women ran the whole thing — the Daughters of Liberty spun their own cloth instead of buying British textiles. Wearing homespun became the uniform of the protest.
 
-Maya: But the boycotts worked, right? Repealed in 1766?
+Maya: So the boycott worked? Parliament caved?
 
-Marcus: Repealed alongside the Sugar Act, and then Parliament passed the Declaratory Act, announcing it could pass any law it pleased. Translation: we repealed the tax because we chose to, not because you made us.
+Marcus: In seventeen sixty-six, yes. The Stamp Act was repealed. But the same day, Parliament passed the Declaratory Act, claiming the power to legislate for the colonies in all cases whatsoever. The repeal said: you win. The Declaratory Act said: we can do whatever we want.
 
-Maya: So the colonists won?
+Maya: A win with a threat stapled to it. Checking box one: the Stamp Act. First direct tax, touched everyone down to dice, killed by the boycott in seventeen sixty-six.
 
-Marcus: The battle, not the principle. The Declaratory Act announced Parliament could pass any law it pleased: tax, trade, anything. The colonists had won a repeal and lost the argument in the same week.
+Marcus: Now the argument underneath all of it. Grenville's answer to the colonists was virtual representation. Parliament, he said, represents every English subject, whether they sit in London or farm in Virginia. You don't need your own members in Parliament. You're virtually represented.
 
-Maya: That's a landlord energy I recognize.
+Maya: I'm sorry, but that's the most ridiculous thing I've ever heard. I'm supposed to feel represented by people I've never met, three thousand miles away, who don't know I exist?
 
-Marcus: Two years later, the Townshend Acts of 1767 taxed glass, paint, and paper. The boycotts fired back up, and this round the women ran the economy of protest, spinning homespun cloth instead of buying British textiles, wearing the boycott on their bodies.
+Marcus: The colonists said the same thing, minus the apology. Their answer was actual representation: only a body you've elected can tax you. And they had their English history ready. The Bill of Rights of sixteen eighty-nine said no taxation without the consent of Parliament. The colonists read that as no taxation without our parliament, our assemblies.
 
-Maya: Then Boston. 1770.
+Maya: So who said the famous line? Taxation without representation is tyranny. James Otis, right?
 
-Marcus: The Boston Massacre. A crowd of Bostonians, furious about the taxes and the soldiers in their streets, hurled snowballs and rocks at a squad of British troops. A shot went off, probably by accident, and the soldiers opened fire. Five colonists dead, including Crispus Attucks.
+Marcus: John Adams credited it to Otis, from his argument against the writs of assistance back in seventeen sixty-one. Those were open-ended search warrants for smuggling, and Otis argued a man's property can't be taken without his consent, in person or by representation. Adams wrote it down decades later, so historians hedge a little on the exact wording, but the idea was Otis's.
 
-Maya: I took a snowball to the ear in Tahoe once and I'm still angry about it. A musket ball is a different universe.
+Maya: I know Crispus Attucks from a poster in my history classroom. First to die at the Boston Massacre, right?
 
-Marcus: Samuel Adams turned it into one. He and the Sons of Liberty spread their version colony-wide: a massacre, and proof of British tyranny. Parliament caved and repealed the Townshend duties, keeping only the tea tax to prop up the East India Company.
+Marcus: Right. March of seventeen seventy. A crowd of Bostonians, furious about the taxes and the soldiers in their streets, started throwing snowballs and rocks at British troops. Somebody fired, probably by accident, and the soldiers fired back. Five dead, Attucks first, a man of African and Native descent. Samuel Adams turned it into propaganda overnight: the Boston Massacre.
 
-Maya: Wait. The Tea Party. That's the Hamilton song, right? Seabury versus Hamilton, tea in the harbor?
+Maya: Five deaths is awful, but calling it a massacre is doing a lot of work.
 
-Marcus: "Farmer Refuted." Real song, but the history is messier than the music. The Tea Act of 1773 didn't raise the tea tax; it lowered it. What it did was hand the East India Company a monopoly, cutting colonial merchants out of the trade entirely. The colonists read monopoly as control.
+Marcus: It was doing the work of a headline. And it worked. Parliament repealed the Townshend Acts, the seventeen sixty-seven duties on glass, paint, paper, lead, and tea. All except the tea tax. They kept that one to prop up the East India Company, which was drowning in unsold tea.
 
-Maya: And answered with the party.
+Maya: Okay, here's where I get confused. The Tea Act of seventeen seventy-three made tea cheaper. So why dump it in the harbor? If I'm mad about taxes, cheap tea sounds like a win.
 
-Marcus: About fifty colonists, dressed as Native Americans, boarded the ships and dumped roughly fifty tons of tea into Boston Harbor: millions of dollars in today's money, destroyed in one night. London went, in the technical term, huffy.
+Marcus: That's the trap, and it's the whole story in miniature. The Tea Act let the East India Company sell directly to the colonies, cutting out colonial merchants, at a lower price. But every chest still carried the Townshend tea tax. Buy the cheap tea, and you've just agreed Parliament can tax you. So that December, men disguised as Mohawks boarded three ships and dumped three hundred forty-two chests into Boston Harbor.
 
-Maya: Then came the Coercive Acts. As the colonists called them, the Intolerable Acts.
+Maya: Over a principle. They destroyed a fortune, over a million in today's money, because the cheap price was the trap.
 
-Marcus: 1774. Boston Harbor closed until the tea was paid for. A new Quartering Act stuffing more soldiers into colonial homes. Plus the Quebec Act, which looked to the colonists like another wall around their ambitions. The whole package read as the biggest power grab Parliament had ever attempted.
+Marcus: Something like that, give or take. Parliament answered with the Coercive Acts, which the colonists called the Intolerable Acts. Boston's port closed until the tea was paid for. Massachusetts lost its self-government. More soldiers, new quartering rules. And the Quebec Act landed the same year, which the colonists counted as the fifth Intolerable Act, since it gave the Ohio Valley to Quebec.
 
-Maya: And that finally united them.
+Maya: Punish Boston to scare the rest. That move never works. It's always the one that backfires.
 
-Marcus: The First Continental Congress met in Philadelphia in 1774 to answer the Intolerable Acts: one united plan instead of thirteen separate tantrums, built around boycotts and a shared list of rights. Still British rights. Still no independence. Then April 1775: Lexington and Concord, and the shooting starts for real.
+Marcus: It backfired spectacularly. Twelve colonies sent delegates to Philadelphia: the First Continental Congress. And that's where this episode hands off to the next one.
 
-Maya: Three boxes, let's land them. One: the Stamp Act. 1765, the first direct tax, paper for everything, and the virtual representation argument that nobody bought.
+Maya: Three boxes, let's land them. One: the Stamp Act. Seventeen sixty-five, first direct tax, stamped paper on everything down to dice. The boycott and the Stamp Act Congress killed it in seventeen sixty-six.
 
-Marcus: Checked.
+Marcus: Landed.
 
-Maya: Two: the Boston Massacre. 1770: snowballs, one accidental shot, five dead, and Samuel Adams selling it as tyranny.
+Maya: Two: virtual representation. Parliament's claim that it spoke for colonists who'd never voted for it, versus actual representation: only our own assemblies can tax us. Otis's line, with the sixteen eighty-nine Bill of Rights behind it.
 
 Marcus: On the sheet.
 
-Maya: Three: the Coercive Acts. 1774, harbor closed, troops quartered... and that was the whole thing? Just the harbor and the soldiers?
+Maya: Three: the Declaratory Act. Repeal day, seventeen sixty-six. Parliament claims power in all cases... whatsoever, right? I almost said whatever.
 
-Marcus: Plus the Quebec Act riding along. Harbor, troops, and the message: Parliament can do anything.
+Marcus: Whatsoever. Close enough to pass.
 
-Maya: Harbor, troops, Quebec Act, and the message that Parliament could do anything.
+Maya: Whatsoever. The win that wasn't.
 
-Maya: Two questions, AP-shaped. Say your answer before I give it. One: a textbook prints an excerpt from the Virginia Resolves, passed by the House of Burgesses, condemning taxation without representation. The prompt asks: what's the point of including this source?
+Marcus: And that's the set.
 
-[5-second pause]
+Maya: Three questions, fast. One: the Sugar Act actually lowered a tax. Why did it still make colonists furious?
 
-Maya: The point is that the protest was legal and formal, not just street mobs. An elected colonial assembly made the argument in constitutional language — the colonists were claiming their rights as British subjects, and the source proves how deep that claim ran.
+[2-second pause]
 
-Maya: Two: Grenville offered "virtual representation." In one sentence, why did the colonists reject it?
+Maya: Because it was the first tax designed to raise revenue, and London enforced it. The fight was about who could tax, not how much.
 
-[5-second pause]
+Maya: Two: a merchant in London says you're virtually represented in Parliament. Give me the colonist's one-line rebuttal.
 
-Maya: Because their whole argument was that representation had to be local: assemblies of their own people, and a distant Parliament claiming to speak for them was exactly the problem.
+[2-second pause]
 
-Maya: Check your three boxes. Episode two in the books. Next time: the ideas behind the guns. Locke, Paine's Common Sense, and the words that made rebellion sound reasonable.
+Maya: Only a body we've elected can tax us. Virtual representation is no representation.
 
-Marcus: Parliament called it power —
+Maya: Three: the Tea Act cut the price of tea. In one line, why did colonists dump it in the harbor?
 
-Maya: and the colonists called it tyranny.
+[2-second pause]
+
+Maya: Buying it meant accepting Parliament's right to tax them. The cheap price was the trap.
+
+Maya: Check your three boxes. That's Episode 2. Next time: the punishment of Boston backfires. Twelve colonies meet in Philadelphia, and somebody fires a shot at Lexington.
+
+Marcus: The bill came due — and the colonies stopped paying.
+
+## Sources
+- Heimler's History: `APUSH Unit 3/02 - NO Taxation without REPRESENTATION! [APUSH Review].en.srt`
+- Maximum Insight: `APUSH Full Review Playlist/13 - Direct Causes of The American Revolution in Under 3 mins (APUSH Topic 3.3).en.srt`
+- Adam Norris (APUSHReview.com): `URP_contnet/03-APUSH Period 3 Speed Review.en.srt` (tax sequence, Intolerable Acts list, exam-day framing)
+- 5 Steps to a 5 APUSH 2024 (`books/extracted/5steps2024`, ch. 10): Lexington/Concord details; Abigail Adams letter
+- Web verification: James Otis maxim attribution (John Adams's 1818 letter to William Tudor; no contemporary record — wording hedged in dialogue); Dunmore's Proclamation (Nov 7, 1775)

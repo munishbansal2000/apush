@@ -1,91 +1,128 @@
 # U4-E5 — Maya + Marcus (Fish Audio)
-# Episode 5: Expanding Democracy, 1800-1848. ~8 min.
-# Draft v1: built from APUSH Review transcript 06 (voting rights 1800-1848); fact-passed against that transcript, hedges kept where sources don't pin.
-# Read note: Maya tracks three boxes on her episode sheet: who gets to vote now, the second party system, and who's still locked out. [5-second pause] marks are production notes for real silence in the self-test — they never go to the voice. The em dash in the closing tagline is a held beat: leave a full breath between Marcus's setup line and Maya's landing line. Do not rush it. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence.
-# Pronunciation: DOR (Dorr), tip-uh-kuh-NOO (Tippecanoe), HIK-uh-ree (Old Hickory), van byoo-REN (Van Buren)
+# Episode 5: The Missouri Compromise. ~8 min.
+# Draft v1.
+# Read note: Maya tracks three boxes on her episode sheet: the eleven-eleven deadlock, Tallmadge's amendment, and the line and the fire bell. [2-second pause] marks are production notes for real silence in the self-test — they never go to the voice. The em dash in the closing tagline is a held beat: leave a full breath between Marcus's setup line and Maya's landing line. Do not rush it. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence.
+# Pronunciation: tal-MAJ (Tallmadge)
 
-Maya: Last time: the market revolution's shock to society: crowded cities, new immigrants, and new rules for women and workers. This time the shock hits politics. Property requirements fall, the common man floods the ballot box, and the parties get rebuilt from scratch. Three boxes on your sheet: who gets to vote now, the second party system, who's still locked out. Circle the ones you couldn't explain right now. Eight minutes, and you'll check all three off.
+Maya: Last time: the good feelings, the American System, the Doctrine, and the cracks underneath. This time: the crack that nearly split the floor. Eighteen nineteen. A congressman from New York proposes one amendment about slavery in Missouri, the House passes it, and the Senate erupts. Three boxes on your sheet: the eleven-eleven deadlock, Tallmadge's amendment, and the line and the fire bell. Circle the ones you couldn't explain right now. Eight minutes, and they're yours.
 
-Marcus: The expansion starts with a crash. The Panic of 1819: reckless lending by the Second Bank of the United States, foreclosures, western farmers losing their land. And the people hit hardest couldn't vote, so they couldn't punish anyone for it. That stung enough to build a movement, and its demand was simple: drop the property requirements.
+Marcus: Start with the math, because the math is the doom: in eighteen nineteen, the Union had twenty-two states. Eleven free, eleven slave. That meant a twenty-two to twenty-two Senate, and every single new state was a power shift.
 
-Maya: Because owning land had nothing to do with getting hurt by the crash.
+Maya: Because whatever Missouri became, the other side loses a vote.
 
-Marcus: Exactly the argument. And there was a model sitting out west. New frontier states had organized on the assumption that every white man could vote. They needed settlers, and the franchise was the lure. Martin Van Buren picked up that argument in New York and pushed for universal white male suffrage. By the mid-1820s, a majority of eastern states had cut or killed their property requirements.
+Marcus: Exactly. And it wasn't just the Senate. The three-fifths clause counted enslaved people toward representation, so a new slave state meant more Southern seats in the House and more Southern votes for president. Missouri wasn't one state. It was the whole balance of power in a trench coat.
 
-Maya: So within a few years, voting went from a landowners' club to basically any white guy?
+Maya: Okay, that's a visual. Box one: the eleven-eleven deadlock. Senate tied, House tilts South, Missouri the tiebreaker nobody can afford to lose.
 
-Marcus: Basically, yes, with one ugly holdout. Rhode Island was still running on its colonial charter, with no new constitution since the Revolution, and that charter said only men with property could vote. By 1841 the pressure boiled over. A lawyer named Thomas Dorr helped write a rival constitution, got elected governor by its supporters, and set up a competing government.
+Marcus: Checking it. Now the spark. In February eighteen nineteen, James Tallmadge of New York attached an amendment to the Missouri statehood bill. Two conditions. One: no more enslaved people could be brought into Missouri. Two: children born to enslaved people in Missouri after statehood would be freed at age twenty-five.
 
-Maya: An actual rival government? With an army?
+Maya: So not abolition. Gradual emancipation. Missouri comes in, slavery dies out slowly on its own.
 
-Marcus: With enthusiasm, not an army. President John Tyler called it treason and sent federal troops. Dorr's movement fizzled the moment the troops arrived. No battle followed, just fizzle. But the pressure worked anyway. In 1842 Rhode Island ratified a real constitution: no more land requirement, and in a surprise move, Black men could vote too, as long as they held $134 in personal property.
+Marcus: That's the pitch. The House passed it, since the North had the majority. Then it hit the Senate, and the South treated it as an existential threat. Not a policy disagreement. An existential threat.
 
-Maya: Wait, Rhode Island let Black men vote in 1842? That sounds ahead of its time.
+Maya: Why existential? It's one state, and it's gradual.
 
-Marcus: Ahead of the country, and the exception that proves the box we're about to open. Because while white men were gaining the vote, free Black men were losing it in several states. Same era, opposite direction.
+Marcus: Because of the precedent. If Congress can tell Missouri what to do about slavery as the price of admission, Congress can tell every future state. And the South's only protection was the Senate tie. The North already owned the House, because its population was growing faster. The Senate was the South's last wall. Tallmadge was knocking on it.
 
-Maya: So box one is "who gets to vote now," and the answer is: way more white men, state by state, with Rhode Island dragging its feet and then jumping ahead.
+Maya: How ugly did the debate get?
 
-Marcus: You've got the shape of it. And more voters meant campaigns had to change. Which is where your second box starts, with the messiest election of the century.
+Marcus: Open threats of disunion, on the House floor. Thomas Cobb of Georgia warned they'd kindled a fire that all the waters of the ocean couldn't put out. That was eighteen nineteen. People were already talking about breaking the Union forty years before it happened.
 
-Maya: 1824. The corrupt bargain.
+Maya: Wait, back up. How does the three-fifths clause actually give the South more power? The enslaved people can't vote.
 
-Marcus: Four candidates, no majority. Jackson won the most popular votes and the most electoral votes, but not a majority, so the House decided. Henry Clay, Speaker of the House and out of the running, threw his support to John Quincy Adams. Adams won, then named Clay Secretary of State. Jackson's camp called it a corrupt bargain, and Jackson spent four years running against it.
+Marcus: That was the trick. Enslaved people counted at three-fifths of a person for representation, but they voted for no one. So slave states got House seats and electoral votes for people they held in bondage. More human property, more political power. The clause turned slavery into representation.
 
-Maya: So for the test: is the corrupt bargain about actual corruption, or about the rules?
+Maya: I drew the thirty-six thirty line on a map in eighth grade and put Missouri on the wrong side. My teacher circled it in red and wrote "the line IS Missouri's border."
 
-Marcus: About the rules, and the anger they produced. There's no proven backroom deal. It's what Jackson's supporters called a result they saw as stolen. And the anger paid off. In 1828 Jackson campaigned directly to the new voters: rallies, the Old Hickory nickname, the war-hero image, the common man against the elite. He won, becoming the first president from the West, a Tennessee man, not a Virginian or a Massachusetts man.
+Marcus: The red was earned. Box two is Tallmadge's amendment: gradual emancipation, passed the House, died in the Senate, and proved that slavery in the territories was now a national question, not a local one.
 
-Maya: And the parties split for real this time.
+Maya: So Congress is stuck, right? The North won't admit a slave Missouri, the South won't admit a free one. Then Henry Clay rode in with the compromise.
 
-Marcus: The Democratic-Republicans broke into the Democrats under Jackson and the National Republicans under Adams, then Clay, and the National Republicans soon became the Whigs. The divide between them was the government's job in the economy. Democrats wanted a lean federal government that stayed out of people's business. Whigs, following Clay's American System, wanted a national bank and federal money for roads and canals.
+Marcus: Then Henry Clay rode in on his noble steed called compromise. The Missouri Compromise of eighteen twenty had three moving parts. One: Missouri enters as a slave state. Two: Maine, which until then was just northern Massachusetts, gets carved off and enters as a free state. Balance preserved, twelve to twelve.
 
-Maya: "Tippecanoe and Tyler Too." I know that slogan from somewhere. Was it a song first?
+Maya: Maine was Massachusetts? Like the whole state was just... northern Massachusetts?
 
-Marcus: It was literally a campaign song, from 1840 and William Henry Harrison's run. Slogans, parades, rallies, nominating conventions replacing the old congressional caucus, the one people called King Caucus. Turnout soared. The whole circus was built for the new mass electorate.
+Marcus: The District of Maine, yes. Governed from Boston since the sixteen hundreds, and Maine had been voting to break away for years. Massachusetts was happy to let it go if it bought a Senate tie.
 
-Maya: My first time voting, I stood in line at a DMV turned polling place for an hour and mostly felt annoyed. Hard to picture people treating election day like a festival.
+Maya: Part three: the line.
 
-Marcus: They treated it like the biggest day of the year. And that's the second box: the second party system, Democrats versus Whigs, fighting over how much government the economy should get.
+Marcus: Part three: the line. Congress drew a boundary across the rest of the Louisiana Territory at thirty-six degrees, thirty minutes north latitude, which was Missouri's southern border. North of the line: no slavery, ever. South of it: slavery permitted. One line, and the whole West sorted.
 
-Maya: Which leaves the third box. Who's still locked out.
+Maya: So the line solved it. Slavery stays south of thirty-six thirty, everybody shakes hands, done.
 
-Marcus: Women, for one. The thinking went that women depended on men, so they didn't need a separate vote, the cult of domesticity doing political work. Native Americans, shut out entirely. And free Black men: even in the North, where plenty of free Black people lived, most were legally barred from voting, and several states stripped rights they'd previously held. Rhode Island's 1842 constitution is the rare exception, not the pattern.
+Marcus: That's the wrong lesson, and it's the one the country told itself for thirty years. The line only covered the Louisiana Territory. It said nothing about the moral question, and a latitude can't settle a moral question. It just scheduled the next fight.
 
-Maya: So democracy expanded and contracted at the same time. More white men in, everyone else mostly out.
+Maya: And the compromise almost died twice, right? Wasn't there a second crisis?
 
-Marcus: Put that on the box.
+Marcus: There was. Missouri wrote a constitution that banned free Black people from even entering the state. The North said absolutely not, and Missouri's admission stalled for another year. Clay came back in eighteen twenty-one: Missouri got in, on the condition it never enforced that ban.
 
-Maya: Three boxes, let's land them. One: who gets to vote now. The Panic of 1819 exposed that the people getting hurt couldn't vote, so property requirements fell state by state, pushed by the western example and Van Buren in New York. Rhode Island held out on its colonial charter until Dorr's Rebellion in 1841, then ratified a new constitution in, uh, 1841?
+Maya: So the famous compromise was two bargains.
 
-Marcus: 1842. The rebellion was 1841.
+Marcus: Two bargains. The second was about whether free Black Americans counted as citizens at all.
 
-Maya: 1842. Land requirement gone, and Black men included with $134 in property.
+Maya: So why couldn't they just do this again in eighteen fifty? Draw another line, admit two more states?
+
+Marcus: By eighteen fifty the West wasn't empty anymore. Gold in California, settlers in Oregon, land taken from Mexico that the old line never covered. You can't draw a line through a map that's still being drawn. And the moral question had gotten louder, not quieter. The compromise bought thirty years. The price went up every decade.
+
+Maya: Box three, then: the line and the fire bell. And the fire bell is Jefferson.
+
+Marcus: Thomas Jefferson, seventy-six years old, retired at Monticello, watching all of this. He wrote to a congressman named John Holmes, and the letter is famous for one image. This momentous question, he wrote, like a fire bell in the night, awakened and filled me with terror.
+
+Maya: I know the other line from that letter. "We have the wolf by the ear, and we can neither hold him, nor safely let him go." My teacher made us memorize both.
+
+Marcus: The student knows two. Same letter, same terror. Jefferson the enslaver, terrified of slavery. He'd spent his life calling slavery a moral wrong while holding hundreds of people in bondage, and now he was watching the question he'd dodged his whole career come due.
+
+Maya: So is Jefferson the good guy in this episode? He's warning everybody.
+
+Marcus: He's the warning, not the hero. He saw exactly where this was heading and did nothing about it when he had the power to act. The fire bell rang, he wrote a beautiful letter about the sound, and went back to bed.
+
+Maya: Ouch. Fair, but ouch.
+
+Marcus: Now the flaw in the bargain, and why it couldn't last. The compromise worked in eighteen twenty because both sides got something and the West was still mostly empty on American maps.
+
+Maya: And then the maps filled in.
+
+Marcus: They did. Every new territory reopened the question the line was supposed to have closed. A line on a map can divide land. It can't divide a conscience.
+
+Maya: Three boxes. Let's land them all. One: the eleven-eleven deadlock. Twenty-two states, Senate tied, and Missouri as the tiebreaker, with the three-fifths clause sweetening the pot for the South.
 
 Marcus: Checked.
 
-Maya: Two: the second party system. The 1824 corrupt bargain: Jackson won the most votes but the House picked Adams, then Adams named Clay Secretary of State. 1828 was the rematch, with Jackson campaigning straight to the common man and winning as the first president from the West. The Democrats and the Whigs split over the federal government's role in the economy, and campaigns turned into rallies, songs, and conventions instead of King Caucus.
+Maya: Two: Tallmadge's amendment. No new enslaved people in Missouri, kids freed at twenty-five. Passed the House, died in the Senate. It made slavery a national question.
 
 Marcus: On the sheet.
 
-Maya: Three: who's still locked out. Women, Native Americans, and free Black men, who were losing voting rights in several states even as white men gained them. So Rhode Island's 1842 move was the trend, right?
+Maya: Three: the line and the fire bell. Missouri slave, Maine free, the thirty-six thirty line across the Louisiana Territory, and Jefferson's letter: like a fire bell in the night. The line was Missouri's southern border, right?
 
-Marcus: The exception. Most states were going the other way.
+Marcus: Right. Thirty-six degrees, thirty minutes north. The red pen can rest.
 
-Maya: Two questions, AP-shaped. Say your answer before I give it. One: an 1828 campaign poster shows Jackson in uniform under the words OLD HICKORY. The prompt asks: how does this source show the new style of campaigning?
+Maya: Three-question check. Say it out loud before I do. One: why did Missouri's statehood application threaten the eleven-eleven balance?
 
-[5-second pause]
+[2-second pause]
 
-Maya: The poster skips policy and sells a person: the war hero, the tough nickname, the common man's champion. That's campaigning built for a mass electorate: direct appeals, rallies, and image over the old stand-aside-and-wait posture.
+Maya: Twenty-two states, Senate tied. A slave Missouri tips the Senate and, through the three-fifths clause, the House and the presidency too.
 
-Maya: Two: New York drops its property requirement in the 1820s. Rhode Island keeps its colonial charter until 1842. What does that contrast tell you about how the franchise expanded?
+Maya: Two: what did the Tallmadge Amendment propose, and where did it die?
 
-[5-second pause]
+[2-second pause]
 
-Maya: It expanded state by state, not by one national law. Western states led, eastern states followed under pressure like the Panic of 1819 and Dorr's Rebellion, and holdouts like Rhode Island moved last.
+Maya: No new enslaved people in Missouri; children born to enslaved people freed at twenty-five. Passed the House, killed in the Senate.
 
-Maya: Check your three boxes. Next time: Andrew Jackson takes that bigger democracy and stretches presidential power itself: nullification, the Bank, and removal.
+Maya: Three: name the three parts of the Missouri Compromise, and give me Jefferson's image for the crisis.
 
-Marcus: The ballot box got bigger —
+[2-second pause]
 
-Maya: but the door stayed narrow.
+Maya: Missouri enters slave, Maine enters free, and the thirty-six thirty line divides the Louisiana Territory. Jefferson: like a fire bell in the night.
+
+Maya: Check your three boxes. Next time: the Market Revolution. Canals, mills, the telegraph, and the cotton that made the South richer and the knot tighter.
+
+Marcus: Every compromise buys time —
+
+Maya: and the interest keeps compounding.
+
+# Sources
+# - Maximum Insight, "APUSH Full Review Playlist/24 - War of 1812, Missouri Compromise, and Nullification Crisis in Under 3 mins (APUSH Unit 4 Topic 3).en.srt" (11 slave / 11 free states in 1819, Missouri slave + Maine free, line against slavery's spread)
+# - Heimler, "APUSH Unit 4/02 - NATIONAL vs. REGIONAL Politics, 1800-1848 [APUSH Review].en.srt" (Tallmadge Amendment: James Tallmadge, gradual emancipation; Senate balance, three-fifths; Clay's Missouri Compromise: Missouri slave, Maine free, 36°30′ = Missouri's southern border)
+# - Adam Norris (URP_contnet), "04-APUSH Period 4 Speed Review.en.srt" (Missouri Compromise: Missouri slave, Maine free, 36°30′ line)
+# - Princeton Review AP US History Premium Prep 26E, Chapter 6 (Period 4), "16_Chapter06.xhtml" (Missouri Compromise mechanics; Jefferson's "fire bell in the night" / "filled me with terror" letter; Tallmadge Amendment as gradual emancipation)
+# - Web: standard accounts of Jefferson's April 1820 letter to John Holmes ("we have the wolf by the ear") consistent across sources

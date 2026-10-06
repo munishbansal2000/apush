@@ -1,101 +1,46 @@
-# U3-E3 — Maya + Marcus (Fish Audio)
-# Episode 3: The Ideas Behind the Guns. ~8 min.
-# Draft v1.
-# Read note: Maya tracks three boxes on her episode sheet: Enlightenment ideas, Common Sense, and the Declaration of Independence. [5-second pause] marks are production notes for real silence in the self-test — they never go to the voice. The em dash in the closing tagline is a held beat: leave a full breath between Marcus's setup line and Maya's landing line. Do not rush it. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence.
-# Pronunciation: mon-tess-KYOO (Montesquieu), roo-SOH (Rousseau), payn (Paine), fee-luh-ZOF (philosophes), OL-iv branch (Olive Branch)
+# U3-E3 — Marcus solo, Story Mode (Fish Audio)
+# Episode 20: From Protest to Revolution. ~8.2 min.
+# Draft v1 (from scratch). Story Mode per the master build plan. CED 3.3, 3.5.
+# Read note: [2-second pause] marks are production notes for real silence — they never go to the voice. The em dash in the closing carry-forward is a held beat: leave a full breath before the final line. Do not rush it. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence.
+# Pronunciation: GAYJ (Gage), PREH-scut (Prescott), DAWZ (Dawes), EM-er-sun (Emerson), PIT-kairn (Pitcairn), PUR-see (Percy)
 
-Maya: Last time: taxes and troops: the colonies in open protest, and shots fired at Lexington and Concord. This time, the ideas behind the guns: the words that made rebellion sound reasonable. Three boxes on your sheet: Enlightenment ideas, Common Sense, the Declaration of Independence. Circle the ones you couldn't explain right now. Eight minutes, and the boxes land.
+Marcus: April eighteenth, seventeen seventy-five. Night. Boston is an occupied city, British troops in the streets and warships in the harbor. Nobody in that city that night knew they were living through the first page of a revolution. Across the river in Charlestown, a network of riders is waiting on a signal. Two lanterns in the steeple of the Old North Church. One if by land, two if by sea. By dawn, seven hundred British regulars will be marching on the town of Concord to seize a weapons cache. And the countryside will be rising to meet them.
 
-Marcus: The surprise in the timeline first. Even in 1775, after the shooting started, independence was not what most colonists wanted. They wanted to stay British subjects with their rights intact. The ideas had to do the moving first.
+Marcus: To understand that night, rewind one year. Parliament had decided to make an example of Boston. Four laws, each aimed at a different pressure point. The Boston Port Act: the harbor stays closed until the destroyed tea is paid for, a whole city's livelihood held hostage. The Massachusetts Government Act: the council now appointed by the crown, town meetings banned without the governor's permission. Self-government, deleted. The Administration of Justice Act: royal officials accused of crimes get tried in England instead of Massachusetts. And a tougher Quartering Act: soldiers in your house, like it or not. Together the colonists called them the Intolerable Acts. The theory in London was simple. Isolate the radicals. Frighten the rest. Nobody else will dare.
 
-Maya: So the taxes loaded the gun and the philosophy aimed it.
+Marcus: The theory was wrong in every direction. Twelve colonies, every one except Georgia, sent delegates to Philadelphia in September of seventeen seventy-four. Fifty-six men in a stuffy room, and here's what they didn't do: they didn't talk about independence. Nobody was there yet. What they built instead was the Association, a colonies-wide boycott with teeth. No British imports. No exports to Britain. No consumption of British goods. And to enforce it, local committees of inspection in every town, publishing the names of anyone who broke the boycott. Social pressure as a weapon. They petitioned the king, politely, for their rights as Englishmen. Then they went home and drilled. Yeah. Drilled.
 
-Marcus: Something like that. Start with the Enlightenment, a European movement, but Europe mostly kept its kings. America was different: settlers building a society from scratch, without centuries of tradition weighing it down. A living laboratory for new ideas about people and government.
+Marcus: Because back in Massachusetts, the royal government's authority had already collapsed everywhere outside Boston. The assembly kept meeting in defiance of the governor: a shadow government, running most of the colony. The towns followed the Suffolk Resolves, which essentially said Massachusetts wouldn't obey, and started stockpiling arms. Muskets, powder, cannon balls. The big cache was at Concord, sixteen miles inland.
 
-Maya: Give me the greatest hits.
+Marcus: General Thomas Gage, the military governor sitting in Boston, decided to cut the head off. Send seven hundred men under Lieutenant Colonel Francis Smith. March to Concord at night. Seize the arsenal. And while they were at it, arrest Samuel Adams and John Hancock, who were hiding in Lexington. It was supposed to be secret. It leaked, the way everything leaked. Boston was a small town, and half of it was watching the barracks.
 
-Marcus: First, the elevation of the individual: the basic unit of society is the person, not the clan or the crown. Second, natural rights: John Locke argued every person is born with rights from God: life, liberty, property. If rights come from God, they don't come from a king, and a king has no business touching them.
+Marcus: And now the part you've heard wrong. The poem says one man, one horse, shouting through the night. The truth is better. It was a network, dozens of riders in a relay system the towns had been rehearsing for months. The poem gives you one rider. The road that night had three. Paul Revere wasn't a random hero. He was one of the colony's express riders, a courier the patriots had used for years. He crossed the river by boat. William Dawes slipped out over the land route. Past Lexington, a young doctor named Samuel Prescott joined them.
 
-Maya: Explosive is the word.
+Marcus: And the famous line? Nobody shouted "the British are coming." They were all British. What went farm to farm, bell to bell, was "the regulars are coming out." Revere never even made it to Concord. A British patrol captured him on the road, and Dawes lost his horse and had to walk back. Only Prescott got through. Revere's own account of his capture, written down afterward, is terse and practical and completely unromantic. Questioned at gunpoint, he gave his captors wrong directions and talked his way loose. No poetry. Just nerve.
 
-Marcus: Third, the social contract: Locke and Rousseau argued that people form governments to protect those rights, giving up some freedoms in exchange for security. And if the government turns tyrannical, breaks the contract, the people can replace it. Compare that to the divine right of kings: God put the monarch there, so obey. Night and day.
+Marcus: The alarm didn't travel by magic. It traveled the way they'd practiced: riders, church bells, drums, gunshots in the night. They'd rehearsed this. The previous fall, a false rumor that the British had seized the powder stores at Charlestown — the Powder Alarm — had brought thousands of armed men streaming toward Boston in a single day. Gage backed down. The system worked before it was ever truly tested. By two in the morning, towns twenty miles out knew the regulars were marching. Farmers pulled on their clothes, grabbed their muskets, and started walking toward Lexington and Concord in the dark.
 
-Maya: And Montesquieu?
+Marcus: Dawn, April nineteenth. Lexington Green. Seventy-seven minutemen drawn up facing seven hundred regulars. Minutemen: the nickname for militia companies that promised to turn out at a minute's notice. Farmers, mostly, some of them teenagers. Their captain, John Parker, was dying of consumption — his men knew it, the British probably didn't. The officers ordered the militia to disperse. Parker told his men to fall back but not to fire unless fired upon. Then a shot. Nobody knows who fired it. Nobody ever has. More shots followed. Major Pitcairn's marines charged with bayonets. Within minutes, eight colonists were dead on the green, and Parker's company was scattered.
 
-Marcus: The Spirit of the Laws: split government into separate branches so no one hand holds all the power. Then the radical Whigs, British political writers, warned that hereditary power, authority handed down through families, breeds corruption and tyranny. Talent over bloodline, they said. Plenty of other philosophes fed the fire too: Voltaire mocking the old order, Hobbes arguing about what governments are even for. The colonists cherry-picked the parts that pointed toward republican government.
+Marcus: The column marched on to Concord and found the cache mostly emptied. The warning had worked. They destroyed what supplies they could find, and then they tried to march home. At the North Bridge on the edge of town, colonial militia held the far bank. Somebody fired — again, nobody knows who first — and this time the Americans didn't scatter. They stood, fired, and drove the British back into Concord. Three British soldiers died at that bridge. The war had its first British dead.
 
-Maya: I tried reading actual Locke in tenth grade. I tapped out by page four.
+Marcus: Then came the afternoon. Sixteen miles of road back to Boston, lined with stone walls, and behind every wall a farmer with a musket. The column had marched out in formation, the way European armies marched. It came home in a running fight, men dropping all along the road. At Lexington it met Lord Percy's relief force, a thousand fresh troops with cannon, and without Percy the original seven hundred might never have made it home at all.
 
-Marcus: You're not alone. But the colonists also got these ideas through a second channel: the Great Awakening, still echoing. It told ordinary people that their individual religious experience mattered more than the church hierarchy above them. Once you've learned to distrust one authority, the skill transfers.
+Marcus: When the survivors finally staggered into Boston, the count was roughly two hundred seventy British soldiers dead, wounded, or missing, against fewer than a hundred Americans. An army that had marched out to seize a weapons cache had been shot to pieces by farmers. In London, the news landed like a slap. The king's ministers had been assured this was a rabble that would scatter at the sight of redcoats. Instead the rabble had outmarched, outshot, and outlasted the finest infantry in the world.
 
-Maya: So God, reason, and a preacher all pointing the same way.
+[2-second pause]
 
-Marcus: Toward suspicion of unchecked power. The Awakening added a second reason to love liberty: many colonists saw the freedoms they enjoyed as a gift from God. Threaten those freedoms, and the threat wasn't just political. It was personal.
+Marcus: Sixty-odd years later, Ralph Waldo Emerson would call it the shot heard round the world, in a poem written for a monument at Concord in eighteen thirty-seven. Emerson wasn't there. He was born nearly thirty years after the battle. But the line stuck, and it's worth asking what it actually means. The shot that mattered wasn't the one on the green at dawn. It was the news. Riders carried it south faster than any army could march. By the next morning the hills around Boston were filling with armed men, and by summer something like twenty thousand colonists had the city surrounded. A siege. A real army, where a month before there had been a protest movement.
 
-Maya: Okay, events. The First Continental Congress.
+Marcus: In May, the Second Continental Congress met in Philadelphia, and this time it acted like a government. It created the Continental Army and put George Washington in command. In June, at Bunker Hill — actually fought on Breed's Hill, but nobody remembers that — the British stormed the American position three times before taking it, losing more than a thousand men. A British general wrote home that the victory felt like a defeat. The lesson of that whole spring, written in casualties: these farmers would stand and fight.
 
-Marcus: Philadelphia, 1774, called to answer the Intolerable Acts: one united resistance plan, boycotts and a shared list of rights. Still British rights. Still no independence.
+Marcus: People get this backwards. The point of no return wasn't a battle. Nobody on Lexington Green that morning had voted for independence. Most of them still called themselves loyal subjects of the king. The point of no return was a decision, made by ordinary people in about ten minutes on a village green: to shoot at their own army. The war would take eight years. The decision took ten minutes. Everything after — the Congress, the Declaration, the war itself — is about whether that decision can be sustained.
 
-Maya: Until Lexington and Concord.
+Marcus: The one thing to carry forward: revolutions don't start when leaders declare them. They start when regular people decide the old rules no longer apply. Next time: the argument. A pamphlet called Common Sense, a breakup letter to a king — and the Loyalist who says the whole thing is madness.
 
-Marcus: April 1775: eight colonists dead in the fighting around Boston, then Bunker Hill. The Second Continental Congress became a provisional government. Some delegates pushed the Olive Branch Petition, one last appeal to the king to restore their rights and stop the war. Others, like Patrick Henry, said the king's actions had revealed him, and independence was the answer. Independence was still the minority view.
-
-Maya: An olive branch while they're shooting at each other?
-
-Marcus: Both at once. The Congress petitioned the king with one hand and quickly organized an army with the other. War and peace, same room. The king rejected the petition outright, and that rejection, landing just as Paine's pamphlet spread, pushed colonial resentment to its peak.
-
-Maya: So what flipped it? A pamphlet?
-
-Marcus: A pamphlet. Thomas Paine's Common Sense, January 1776. It sold like mad across the colonies. Paine used Enlightenment arguments: natural rights, the social contract, republican government by consent, to show that Britain's behavior was tyranny. Then he added biblical ones: the Old Testament treating monarchy itself as a sin against God.
-
-Maya: He argued to the head and the heart at once.
-
-Marcus: And to the common reader. Paine wrote for farmers and artisans, not philosophers, and by calling it common sense, he made rejecting monarchy feel obvious, the thing any reasonable person would conclude. The ideas the colonists had been absorbing for years finally had a voice they could hear.
-
-Maya: Which brings us to July.
-
-Marcus: July 4, 1776: the Declaration of Independence, penned by Thomas Jefferson with editorial help from John Adams and Benjamin Franklin. And Jefferson didn't invent it from nothing. He drew on dozens of state and local declarations, not least the Virginia Declaration of Rights. The document was a chorus, not a solo.
-
-Maya: Wait, so Jefferson just... remixed other people's writing?
-
-Marcus: Borrowed, shaped, elevated. The Declaration's job was to make the formal legal case for separation, in Enlightenment language. Natural rights, consent of the governed, then the long grievance list: evidence that the contract was broken.
-
-Maya: The grievance list is the long complaint section, right?
-
-Marcus: It's the evidence file. Each grievance shows the king breaking the contract, which is exactly what Locke said justifies replacing a government.
-
-Maya: I know this scene from National Treasure. The heist. Different century, same document.
-
-Marcus: Same document, yes. Minus the heist.
-
-Maya: Three boxes, let's land them. One: Enlightenment ideas. Locke's natural rights, the social contract, Montesquieu's separated powers, plus the Great Awakening teaching people to distrust authority.
-
-Marcus: Checked.
-
-Maya: Two: Common Sense. Paine, January 1776: Enlightenment arguments plus biblical ones, written for ordinary readers.
-
-Marcus: On the sheet.
-
-Maya: Three: the Declaration of Independence. July 4, 1776, Jefferson... hold on, did Jefferson write it alone? I feel like Adams did half.
-
-Marcus: Jefferson drafted it; Adams and Franklin edited. And he leaned on the state declarations, especially Virginia's.
-
-Maya: Jefferson drafted, Adams and Franklin edited, and the state declarations did the heavy lifting underneath.
-
-Maya: Two questions, AP-shaped. Say your answer before I give it. One: a textbook prints the Declaration's second paragraph, starting "We hold these truths to be self-evident." The prompt asks: what's the point of including this passage?
-
-[5-second pause]
-
-Maya: The point is Locke on the page. The passage turns natural rights and consent of the governed into the legal foundation of the whole document. The ideas made rebellion sound reasonable, and the textbook wants you to see the philosophy inside the politics.
-
-Maya: Two: Common Sense sold like mad in 1776. What two kinds of arguments did Paine use, and why did they work on ordinary colonists?
-
-[5-second pause]
-
-Maya: Enlightenment arguments: natural rights, tyranny, republican government, plus biblical ones, like monarchy as a sin. They worked because they hit the head and the heart, and Paine wrote for common readers, so rejecting the king finally started to feel like plain common sense.
-
-Maya: Check your three boxes. Episode three in the books. Next time: the war itself — how the underdog colonies actually won it.
-
-Marcus: Paine gave them the words —
-
-Maya: and Jefferson gave them the page.
+## Sources
+- Heimler's History: `APUSH Unit 3/02 - NO Taxation without REPRESENTATION! [APUSH Review].en.srt` (Coercive Acts, First Continental Congress framing)
+- Maximum Insight: `APUSH Full Review Playlist/13 - Direct Causes of The American Revolution in Under 3 mins (APUSH Topic 3.3).en.srt` (Lexington/Concord, British retreat under fire)
+- Adam Norris (APUSHReview.com): `URP_contnet/03-APUSH Period 3 Speed Review.en.srt` (Intolerable Acts list, Lexington/Concord)
+- 5 Steps to a 5 APUSH 2024 (`books/extracted/5steps2024`, ch. 10): 700 men to Concord; 80 militiamen at Lexington; 8 dead, 10 wounded; Suffolk Resolves; Revere and Dawes riding out; Massachusetts shadow government
+- Web verification: British/American casualty ranges at Lexington-Concord (~273 British, ~93 American — hedged as "roughly two hundred seventy... fewer than a hundred"); Emerson's "Concord Hymn" (1837); Lord Percy's relief column (~1,000 men with artillery)

@@ -1,93 +1,150 @@
 # U4-E4 — Maya + Marcus (Fish Audio)
-# Episode 4: The Market Revolution's Shock to Society. ~8 min.
-# Draft v1: built from APUSH Review transcript 05 (market revolution's effects on culture); fact-passed against that transcript, hedges kept where sources don't pin.
-# Read note: Maya tracks three boxes on her episode sheet: the new immigrants, separate spheres, and the Lowell girls. [5-second pause] marks are production notes for real silence in the self-test — they never go to the voice. The em dash in the closing tagline is a held beat: leave a full breath between Marcus's setup line and Maya's landing line. Do not rush it. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence.
-# Pronunciation: LOW-ull (Lowell), KULT uv doh-mess-TISS-ih-tee (cult of domesticity), NAT-ih-vist (nativist), AIR-ee (Erie)
+# Episode 4: The Era of Good Feelings and the Monroe Doctrine. ~8 min.
+# Draft v1.
+# Read note: Maya tracks three boxes on her episode sheet: the American System, the Monroe Doctrine, and the cracks in the good feelings. [2-second pause] marks are production notes for real silence in the self-test — they never go to the voice. The em dash in the closing tagline is a held beat: leave a full breath between Marcus's setup line and Maya's landing line. Do not rush it. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence.
+# Pronunciation: mon-ROH (Monroe), KAN-ing (Canning), uh-DAMS is just Adams
 
-Maya: Last time: the Market Revolution rewired transportation and industry, with canals, railroads, and factories pushing goods into distant markets. This time the question is what all that rewiring did to the people. Cities swelled and millions crossed an ocean while the rules for women got rewritten. Three boxes on your sheet: the new immigrants, separate spheres, the Lowell girls. Circle the ones you couldn't explain right now. Eight minutes, and you'll check all three off.
+Maya: Last time: a war nobody won, and the nationalism it left behind. This time: the victory glow. In eighteen seventeen, President Monroe toured the country, and a Boston newspaper called it the Era of Good Feelings. Two years later, the economy crashed. Three boxes on your sheet: the American System, the Monroe Doctrine, and the cracks in the good feelings. Circle the ones you couldn't explain right now. Eight minutes, and they're yours.
 
-Marcus: Start where the people went. Cities along trade routes grew fast. New York and Philadelphia in the north, Cincinnati on the Ohio River, Rochester riding the Erie Canal. But keep the scale honest: the country was still mostly rural, and it would stay that way into the 1900s. The rural world just got wired to the cities, with farm goods flowing one way and manufactured goods flowing back.
+Marcus: Start with the mood. The Federalists were dead, the Democratic-Republicans owned everything. Monroe won in eighteen sixteen, then again in eighteen twenty, nearly unopposed. One party, one president, one long exhale.
 
-Maya: So cities were the market revolution's magnets. What pulled people into them?
+Maya: So the good feelings were just... nobody left to argue with?
 
-Marcus: Work, and plenty of it. Between the 1820s and the 1840s, more than two million Europeans arrived, most of them Irish or German. The Irish came first mostly Protestant, then mostly Catholic, and the 1840s potato famine, made worse by British policy, pushed huge numbers across. Germans came after bad harvests and failed revolutions back home: mostly Lutheran, with Catholic and Jewish minorities mixed in.
+Marcus: The cynical read, and it's half right. The feelings were real but narrow. One party meant the arguments moved inside the party, where they festered. First, the program.
 
-Maya: So the famine basically shipped millions of Irish Catholics into the cities all at once?
+Maya: Box one. The American System.
 
-Marcus: Big on scale, off on timing. Irish immigration started decades before the famine, and the early arrivals were mostly Protestant. The famine wave hit in the 1840s. And it wasn't all cities, either. Plenty of Germans headed west to farm.
+Marcus: Henry Clay's plan, laid out by eighteen twenty-four. Three parts, and you need all three. One: a protective tariff, a tax on imported goods high enough that Americans buy American-made instead. Two: the Second Bank of the United States, chartered in eighteen sixteen, to stabilize the currency and handle the government's money.
 
-Maya: Okay, so the cities got the Irish factory workers, the frontier got German farmers, and everybody got more neighbors.
+Maya: And three?
 
-Marcus: And the cities got more diverse: more languages on the street, more Catholic churches in Protestant towns. That diversity fed the factories with cheap labor, and it also fed a backlash. Nativists, people who called themselves native-born and treated immigrants as a threat to American Protestantism, attacked Catholic convents. The sentiment eventually grew its own party, the Know-Nothings.
+Marcus: Three: internal improvements, federally funded roads and canals to stitch the country together.
 
-Maya: The party whose members were told to answer "I know nothing" when anyone asked about it? I actually knew that one.
+Maya: And the symbol is the Erie Canal.
 
-Marcus: The story fits them.
+Marcus: The symbol is the Erie Canal. Construction started in eighteen seventeen, it opened in eighteen twenty-five, three hundred sixty-three miles from Albany to Buffalo, dug mostly by hand. People called it Clinton's Ditch, after DeWitt Clinton, the New York governor who bet his career on it.
 
-Maya: Box one is earning itself. But who actually filled the bottom of this new society?
+Maya: A hundred to ten? That's not a discount, that's a different world.
 
-Marcus: Wage workers, the biggest class by far, and mostly urban: immigrants in the factories, and a lot of young women. The world they left ran on subsistence. You grew your food, you sewed your shirt, you waited six months for a sandwich. The market revolution flipped that. Goods got made for distant buyers, people worked for wages, and wages bought what hands used to make.
+Marcus: Before the canal, shipping freight from Buffalo to New York cost about a hundred dollars a ton. After: about ten.
 
-Maya: My grandma sewed every stitch of her own clothes. She would hear "buy what your hands used to make" and nod like it was a warning.
+Maya: I rode a mule-drawn canal boat on a field trip in fourth grade. I was furious the mule wouldn't let me steer. I have been holding that grudge for a decade.
 
-Marcus: She'd be right to. And above the workers sat a brand-new layer: the middle class. Not rich enough to own the factory, not poor enough to work the floor. Lawyers, teachers, doctors. Work done with the thinky parts, not the grippy ones, managing the people below them. The middle class wrote its own rulebook: educate the kids, join a church, stay sober. And rewrite the family.
+Marcus: The mule remembers nothing. But the canal remade the map. New York City became the country's great port, the Great Lakes states got a water highway to the Atlantic, and every state started digging canals of its own. Most of them went broke doing it.
 
-Maya: Rewrite it how?
+Maya: So box one: Clay's three-part plan. Tariff, Bank, roads and canals.
 
-Marcus: Into two halves. Middle-class men earned enough to support the whole family, so middle-class women were told they didn't have to work. That split hardened into separate spheres: his was outside the home, hers was inside it. Even the house got divided: the study for him and his guests, the kitchen for her.
+Marcus: Checking it. Box two: the culture caught up with the economy.
 
-Maya: Hold on. That's a middle-class rule, not a working-class one. Working-class women were already in the factories.
+Maya: Washington Irving.
 
-Marcus: Exactly. This was never about all women. It was about the women whose families could afford the performance. And the performance got a name: the cult of domesticity. Books and magazines taught middle-class women their job was raising virtuous children, keeping an exacting home, and running the family's shopping in the new consumer economy. It echoed the old republican motherhood idea, only bigger and stricter.
+Marcus: Washington Irving. Rip Van Winkle, The Legend of Sleepy Hollow. Stories set in a recognizably American landscape, with American characters, written by an American who sold books in Europe too. For the first time, American writers were exporting American stories instead of importing British ones.
 
-Maya: So the market gave women factory jobs with one hand and told middle-class women to stay home with the other.
+Maya: First American to live by the pen?
 
-Marcus: Contradiction runs through the whole episode. And if a prompt asks how the market revolution reshaped society, these three boxes are your answer.
+Marcus: The first. Before Irving, writers had day jobs. He proved the pen could pay.
 
-Maya: And the Lowell girls are the factory side of that contradiction.
+Maya: And painters?
 
-Marcus: Lowell, Massachusetts. In the late 1820s, investors built whole factory towns in New England and recruited young farm girls to live in company boardinghouses and work the mills. The deal came with a rulebook: church on Sundays, curfews at night, clocks timing every motion on the floor.
+Marcus: The Hudson River School, a little later — giant, glowing landscapes of American wilderness. The point is the same: stop borrowing Europe's culture, start painting your own. Nationalism wasn't just tariffs and banks. It was stories and pictures.
 
-Maya: That sounds less like a job and more like a boarding school with looms.
+Maya: Box two: cultural nationalism. Irving writes American stories, painters paint American land.
 
-Marcus: At first the girls mostly liked it. Wages of their own, a first trip from home, something like an adventure. Then the 1830s turned. Owners cut wages, boardinghouses overflowed, and the adventure curdled. The girls struck, and they organized: the Lowell Female Labor Reform Association, the first women's labor union in the country. Their loudest demand was a ten-hour day instead of twelve.
+Marcus: On the sheet. Now box three, the big one. The Monroe Doctrine, eighteen twenty-three.
 
-Maya: Did they get it?
+Maya: Okay, I actually know something here. My teacher drilled this: Adams wrote it, Monroe signed it. John Quincy Adams, the Secretary of State, drafted the whole thing.
 
-Marcus: Mixed results at best. They pushed the Massachusetts legislature hard, but women couldn't vote, and the owners held the cards.
+Marcus: The student knows one. Yes. Adams was the architect. Picture it: by eighteen twenty-three, most of Latin America had broken away from Spain. Then word reached Washington that the Holy Alliance, Russia, Prussia, and Austria, the conservative monarchies of Europe, might help Spain win its colonies back. Monroe was alarmed. Adams wrote the response into Monroe's annual message to Congress.
 
-Maya: Three boxes, three stories. The cities, the spheres, the mills. Let's see which ones stuck.
+Maya: Which said what, exactly?
 
-Maya: Three boxes, let's land them. One: the new immigrants. Two million plus Europeans between the 1820s and the 1840s, mostly Irish and Germans. The famine wave hit in the 1840s, and it wasn't the whole story: nativists answered with convent attacks, and the sentiment eventually grew the Know-Nothing party.
+Marcus: Two claims. One: the Western Hemisphere is closed to any future European colonization. Hands off. Two: the United States will stay out of Europe's wars. Europe stays out of the Americas, America stays out of Europe. Two spheres, one line between them.
+
+Maya: Give me his actual words. The line they'd quote.
+
+Marcus: The American continents, by the free and independent condition which they have assumed and maintain, are henceforth not to be considered as subjects for future colonization by any European powers. No new colonies. Ever. The sentence echoed for two centuries.
+
+Maya: So in eighteen twenty-three America became a world power. Big statement, big stick.
+
+Marcus: Big statement, no stick. Now correct the picture. The United States in eighteen twenty-three had a tiny navy and a smaller army. It couldn't have stopped a European landing anywhere. The awkward truth: the Doctrine worked because Britain's Royal Navy enforced it.
+
+Maya: You're kidding.
+
+Marcus: Britain wanted Latin American markets open for its own trade, so British ships kept the other Europeans out, and America took the credit.
+
+Maya: The Doctrine didn't come from nowhere, though. Didn't we just sort out the borders?
+
+Marcus: We did. In eighteen seventeen, the Rush-Bagot agreement with Britain demilitarized the Great Lakes. Both sides were tired of paying for a naval arms race on lakes, so they just... stopped. In eighteen nineteen, Adams negotiated the treaty where Spain handed over Florida. The hemisphere was already becoming American. The Doctrine announced what the treaties had already built.
+
+Maya: Wait, so Britain proposed doing it together and we said no?
+
+Marcus: Britain's foreign secretary, George Canning, proposed a joint Anglo-American declaration. Adams talked Monroe out of it. Adams said America should make the statement alone, as a matter of principle, not ride along as Britain's junior partner. So the Doctrine is unilateral, American, and secretly underwritten by the British fleet.
+
+Maya: That's delicious. The boldest statement in American foreign policy, and the muscle was rented from London.
+
+Marcus: Rented from the country we'd just fought two wars against. Now the cracks. Because the good feelings didn't survive the decade.
+
+Maya: The Panic of eighteen nineteen.
+
+Marcus: Eighteen nineteen. The Second Bank had been reckless, loaning easy money to land speculators in the West. When the Bank suddenly tightened credit, the bubble burst. Land values collapsed, farmers lost their farms to foreclosure, city workers lost their jobs. The first great American depression, and it hit two years after the good feelings got their name.
+
+Maya: And the Bank got the blame.
+
+Marcus: The Bank got the blame, and Andrew Jackson never forgot it. The Panic built the grudge he'd bring to the presidency. The crash turned Western farmers against banks and bankers for a generation. But the other crack was bigger. Missouri.
+
+Maya: One state, and the whole thing wobbles.
+
+Marcus: One state. Missouri applied for statehood as a slave state in eighteen nineteen, and Congress nearly came apart.
+
+Maya: But give me the bridge.
+
+Marcus: The bridge is this: the Era of Good Feelings was the nationalism of a country refusing to look at its own division. The Bank, the tariff, the canals, the Doctrine, they were all answers to the question of how to build one nation. None of them answered the question the nation was actually asking.
+
+Maya: Three boxes, let's land them. One: the American System. Clay's three parts, protective tariff, Second Bank, internal improvements. Symbol: the Erie Canal, Clinton's Ditch, Albany to Buffalo, freight costs cut to a tenth.
 
 Marcus: Checked.
 
-Maya: Two: separate spheres. The market revolution split home from work, men into the outside sphere, middle-class women into the domestic one. The cult of domesticity told them the home was the job: virtuous kids, exacting standards, and the family's shopping. It wasn't telling them to take factory jobs, right?
+Maya: Two: the Monroe Doctrine. Eighteen twenty-three, Adams drafted it, Monroe announced it. Western Hemisphere closed to Europe, America stays out of Europe's wars. And the secret: Britain's navy enforced it, not ours.
 
-Marcus: Right. The home was the whole point.
+Marcus: On the sheet.
 
-Maya: Three: the Lowell girls. Lowell, Massachusetts — wait, was it Lowell or Lawrence?
+Maya: Three: the cracks. The Panic of eighteen nineteen, the Bank's reckless loans, the bubble, the foreclosures. And Missouri, the one state that proved the feelings weren't that good.
 
-Marcus: Lowell. Lawrence came later.
+Marcus: Wait, the three parts of the System. Tariff, Bank, and... roads?
 
-Maya: Lowell. Farm girls in boardinghouses under church rules, curfews, and clocks. Wages and independence at first. Then wage cuts and overcrowded houses, which led to strikes and the first women's labor union pushing for a ten-hour day.
+Maya: Internal improvements. Roads and canals. I said it ninety seconds ago.
 
-Marcus: All three are in.
+Marcus: You did. I'm checking your memory, not mine.
 
-Maya: Two questions, AP-shaped. Say your answer before I give it. One: a Lowell boardinghouse rulebook lists mandatory Sunday church, a nine o'clock curfew, and clocks timing every shift. The prompt asks: what does this source reveal about early factory life for young women?
+Maya: Three-question check. Say it out loud before I do. One: name the three parts of Clay's American System.
 
-[5-second pause]
+[2-second pause]
 
-Maya: It shows the bargain. The mills offered wages and independence wrapped in strict moral control: church, curfews, timed work. When owners cut wages and crowded the houses, that bargain broke, and the girls answered with strikes and the first women's labor union.
+Maya: Protective tariff, Second Bank, and federally funded internal improvements: roads and canals.
 
-Maya: Two: match the pressure to the box. Attacks on Catholic convents. The ten-hour day. The home as a middle-class woman's workplace.
+Maya: Two: the Monroe Doctrine said two things. What were they, and who actually enforced the Doctrine?
 
-[5-second pause]
+[2-second pause]
 
-Maya: Convents go with the new immigrants and the nativist backlash. The ten-hour day goes with the Lowell girls. The home as workplace goes with separate spheres and the cult of domesticity.
+Maya: The Western Hemisphere is closed to European colonization, and the United States stays out of European wars. Drafted by John Quincy Adams, announced by Monroe, enforced in practice by Britain's Royal Navy.
 
-Maya: Check your three boxes. Next time: democracy expands — property requirements fall, the common man votes, and two new parties fight over what the government is for.
+Maya: Three: a Boston newspaper coins the phrase Era of Good Feelings in eighteen seventeen. What two cracks opened underneath it before eighteen twenty was over?
 
-Marcus: The market remade the work —
+[2-second pause]
 
-Maya: and the work remade everyone who touched it.
+Maya: The Panic of eighteen nineteen, and Missouri's statehood fight.
+
+Maya: Check your three boxes. Next time: Missouri. Eleven free states, eleven slave states, one line across the map, and a retired president who heard a fire bell in the night.
+
+Marcus: Good feelings, built on a fault line —
+
+Maya: and the fault line is about to move.
+
+# Sources
+# - Maximum Insight, "APUSH Full Review Playlist/24 - War of 1812, Missouri Compromise, and Nullification Crisis in Under 3 mins (APUSH Unit 4 Topic 3).en.srt" (American System: tariff, national bank, internal improvements; Clay)
+# - Heimler, "APUSH Unit 4/08 - The ERA OF GOOD FEELINGS and American IDENTITY [APUSH Review].en.srt" (Era of Good Feelings 1815-1825, cultural nationalism: Irving, Hudson River School)
+# - Heimler, "APUSH Unit 4/02 - NATIONAL vs. REGIONAL Politics, 1800-1848 [APUSH Review].en.srt" (American System three parts, tariff of 1816, Second Bank, Erie Canal 1825, Panic of 1819 causes)
+# - Heimler, "APUSH Unit 4/03 - AMERICA on the WORLD Stage [APUSH Review].en.srt" (Monroe Doctrine context: Holy Alliance, Adams-Onis, 49th parallel)
+# - Adam Norris (URP_contnet), "04-APUSH Period 4 Speed Review.en.srt" (Era of Good Feelings, Monroe Doctrine 1823, American System, Panic of 1819)
+# - Princeton Review AP US History Premium Prep 26E, Chapter 6 (Period 4), "16_Chapter06.xhtml" (Monroe Doctrine: Holy Alliance of Russia/Prussia/Austria, Russian 51st parallel decree, no US military might to enforce; timeline: 1816 Second Bank, 1817 Erie Canal begins, 1819 Panic, 1825 canal opens)
+# - Web: Jefferson Day dinner search results (wikiquote primary-source page) cross-checked Doctrine-era facts; Canning joint-proposal refusal and Adams authorship are standard accounts consistent across sources

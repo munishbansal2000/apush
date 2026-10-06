@@ -1,107 +1,59 @@
-# U3-E9 — Maya + Marcus (Fish Audio)
-# Episode 9: Who We Became. ~8 min.
-# Draft v1
-# Read note: Maya tracks three boxes on her episode sheet: American identity, westward movement and Native resistance, and Period 3's through-line. [5-second pause] marks are production notes for real silence in the self-test — they never go to the voice. The em dash in the closing tagline is a held beat: leave a full breath between Marcus's setup line and Maya's landing line. Do not rush it. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence.
-# Pronunciation: krehv-KUR (Crèvecoeur), PEEL (Peale), TRUM-bull (Trumbull), GOW-un pam-FLIT (Gowan Pamphlet), GREEN-vill (Greenville), WEB-stur (Webster)
+# U3-E9 — Debate: Maya moderates, Marcus (Hamiltonian) vs Jeffersonian (Fish Audio)
+# Episode 26: Hamilton's Program. ~8.2 min.
+# Draft v1 (from scratch). Debate per the master build plan. CED 3.10.
+# Read note: Maya moderates; Marcus argues Hamilton's case; the Jeffersonian guest argues the agrarian-republican case with dignity — real arguments, never caricature. [pause] marks are production notes for real silence at dramatic beats — they never go to the voice. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence.
 
-Maya: Last time: the republic survived its first decade. Hamilton's money plan, the Whiskey Rebellion, parties nobody wanted, and a peaceful handoff in 1800. Now the question turns inward. Laws can build a government, but what makes a people? Three boxes on your sheet: American identity, westward movement and Native resistance, and Period 3's through-line — the whole unit in one arc. Circle the ones you couldn't explain right now. Eight minutes, and you'll carry the whole unit out the door.
+Maya: The Constitution is ratified, the government is running, and the first cabinet is already at war with itself. The Treasury secretary wants a national bank, funded debts, and taxes on whiskey. The Secretary of State sees the whole British system crawling back from the grave. Tonight: the first great American economic fight, and the one every economic fight since is still having. Arguing for Hamilton: Marcus. Arguing for Jefferson's vision: our Jeffersonian guest.
 
-Marcus: After the Revolution, Americans had to invent themselves. The idea holding the national layer together was liberty — "We the People" and the blessings of liberty, right up front. But most people still felt like Virginians or New Yorkers first. National identity sat on top of regional identity like a thin coat of paint.
+Marcus: Hamilton's program was four moves, and they built modern America. One: the federal government assumes the states' war debts and funds them at full value. Two: a national bank, chartered in seventeen ninety-one, to hold government money and issue sound currency. Three: tariffs to protect young American industries. Four: excise taxes, including on whiskey, to pay for it all. The goal wasn't just solvency. It was credibility. A nation that pays its debts can borrow. A nation that can borrow can build. Hamilton was making America creditworthy, and credit is power.
 
-Maya: Lasagna identity. Layers.
+Jeffersonian: Creditworthy to whom? To speculators, to bankers, to the moneyed men of the cities. Follow the money in Hamilton's plan and it flows uphill. Assumption pays off the speculators who bought up soldiers' debt certificates for pennies. The Bank concentrates financial power in one institution, chartered by Congress, run by private stockholders. Tariffs tax the farmer who buys imported goods to subsidize the manufacturer. This is the British system reborn: debt, banks, stockjobbers, corruption. The Revolution was fought to escape exactly this. The republic should rest on freeholders, independent farmers who answer to no creditor and no boss, not on a financial machine in Philadelphia.
 
-Marcus: Layers. Liberty worked itself out in pieces. The states banned titles of nobility and hereditary aristocracy. No more power by birth certificate. The new ideal was meritocracy: talent over family name, with schools to build the civic virtue it needed.
+Maya: Hold on. How did Hamilton get assumption through Congress at all? The southern states had mostly paid their debts. Why would they vote to assume everyone else's?
 
-Maya: Except the liberty part had massive asterisks.
+Marcus: The dinner-table bargain. Summer of seventeen ninety. Jefferson hosts Hamilton and Madison for dinner, and they cut the deal: the permanent capital goes on the Potomac, between Virginia and Maryland, and in exchange southern votes put assumption through. The seat of government for the financial program. Politics as cuisine.
 
-Marcus: Name them.
+Jeffersonian: A backroom deal, trading the nation's capital for a banker's program. And Jefferson nursed that regret for years. He wrote later that Hamilton had duped him at that table. Even he knew he'd been outplayed.
 
-Maya: Women couldn't vote anywhere. The culture handed them republican motherhood instead: raise virtuous sons for the republic.
+Maya: Two Americas on the table: Hamilton's commercial empire versus Jefferson's republic of farmers. But this fight wasn't just economics. Clash one: the Constitution. Marcus, Hamilton said a national bank was constitutional. Where?
 
-Marcus: And in the South, slavery didn't just survive the Revolution, it dug in. The northern states all moved toward abolition by around 1804. Vermont right away, Pennsylvania gradually — while southern planters, even ones like Jefferson and Madison who called it a necessary evil, kept the system running. That uneven promise is the whole unit's shadow.
+Marcus: The necessary and proper clause. Congress can make all laws necessary and proper for carrying out its listed powers. A bank carries out the powers to tax, borrow, regulate commerce, and fund armies. In his seventeen ninety-one memo to Washington, Hamilton argued that necessary doesn't mean absolutely indispensable. It means useful, appropriate, conducive to the end. If the end is legitimate, the means are constitutional. Loose construction, in one line: read the Constitution's powers broadly enough to let the government actually govern.
 
-Maya: And Black Americans built their own piece of the identity anyway. Gowan Pamphlet preaching in Virginia, mutual aid societies and schools in the North. Nobody waited for permission to belong.
+Jeffersonian: Read Jefferson's memo back, written days earlier. The Tenth Amendment reserves undelegated powers to the states or the people. If necessary means merely convenient, then Congress can do anything it finds useful, and the list of limited powers is a joke. A bank isn't mentioned in the Constitution. Therefore Congress can't charter one. That's strict construction: the government gets what the document says, nothing more. And notice the stakes. This isn't about one bank. It's about whether the Constitution is a leash or a suggestion.
 
-Marcus: Religion got the same treatment: disestablishment. Most states cut the funding cord between church and state, though Massachusetts kept its own complicated mix of required attendance and freedom of worship. And culture started sounding American: Noah Webster's spellers taught a generation to spell their own way —
+Maya: Give me the stakes in one image each. If Hamilton's reading wins, what does the government eventually do?
 
-Maya: Wait, Webster wrote the dictionary, right? So he just renamed English after the war?
+Marcus: Everything the country needed that the text didn't list. Roads and canals. Land-grant colleges. A central bank, twice over. The Louisiana Purchase, which Jefferson himself bought using Hamilton's reading while preaching strict construction. Loose construction is how the Constitution survived contact with a continent.
 
-Marcus: The spellers came first. Classrooms full of kids learning American spellings in the 1780s. The big dictionary didn't land until decades later. His project matched the painters': Charles Willson Peale turning Washington into a republican hero on canvas, Trumbull staging the signing of the Declaration like scripture.
+Jeffersonian: And if strict construction had won, the government would have stayed inside its words. No bank, no implied powers, no mission creep. The Constitution would mean what it says. You call that weakness. I call it honesty.
 
-Maya: It wasn't like that? The signing?
+Maya: The same sentence, two readings, and the winner gets to define federal power for the next two centuries. Washington sided with Hamilton and signed the Bank bill. But the fight didn't end at the signing. Clash two: the Whiskey Rebellion. Seventeen ninety-four. Marcus, what happened?
 
-Marcus: Chaotic, and half the men in the painting weren't in the room together. Romantic history, painted on purpose. Crèvecoeur called the American "a new man" in Letters from an American Farmer, and architects dropped the British Georgian style for the Federal look: domes, columns, symmetry. A whole culture saying: we're not them anymore.
+Marcus: The excise tax on whiskey, passed in seventeen ninety-one, landed hardest on frontier farmers in western Pennsylvania. They didn't drink their grain, they distilled it. Whiskey was currency out there, how you got your corn to market over the mountains. So the tax felt like the East taxing the West's livelihood. Farmers tarred and feathered tax collectors. Then, in seventeen ninety-four, thousands mobilized, and it looked like armed rebellion. Washington's answer: thirteen thousand federalized militiamen marching west, with the president himself riding along. The only sitting president ever to take the field with an army. The rebellion melted. Two men were convicted of treason. Washington pardoned them.
 
-Maya: My grandma still says "pop" and corrects my "soda" every Thanksgiving. Regional identity is alive and well in my kitchen.
+Jeffersonian: Thirteen thousand troops against farmers. Let that number sit. [pause] The government Hamilton built needed an army to collect a tax on whiskey, and it got one. Washington in uniform, marching on his own citizens. The Anti-Federalists warned about exactly this: an energetic government, armed, taxing directly, crushing dissent with soldiers. The rebellion's leaders were right about the economics and right about the Constitution, and they were pardoned because even Washington knew the optics were terrible. And don't forget who cheered the farmers on: the Democratic-Republican societies, ordinary citizens organizing in clubs, passing resolutions of support. The Federalists called them Jacobins, French-style radicals. So criticizing the tax made you suspect, and organizing made you a traitor. See the pattern?
 
-Maya: Quick one I genuinely don't know: when did people start saying "I'm American" instead of "I'm a Virginian"?
+Marcus: I see a government drawing a line. The societies could meet and talk all they wanted. The moment thousands of armed men marched on tax collectors, that was rebellion, and Washington treated it as rebellion. The Articles' government couldn't collect a tax or raise an army, and everyone knew it. The new government had to prove it could govern, or the whole experiment was a rumor. Thirteen thousand troops meant no one would ever again mistake the United States for a debating society. And notice: the rebels were pardoned, the tax stayed, the republic held. Force demonstrated, mercy shown, order kept. Energetic government, doing its job.
 
-Marcus: Nobody's fully sure. The Revolution started the shift, and it took generations to finish. The layered part is the honest answer.
+Maya: Last question before closings, and it's the historians' fight. Was Hamilton's program the blueprint for American capitalism, or a betrayal of the Revolution's promise?
 
-Maya: Okay, so the East was inventing itself. What was happening out west?
+Marcus: The blueprint. Every modern economy runs on Hamilton's inventions: funded public debt, a central bank, protective tariffs, internal taxes. He saw that a republic could be a commercial empire, and he built the machinery for it. The Revolution promised liberty. Hamilton gave it an economy strong enough to afford liberty.
 
-Marcus: Filling up. The Treaty of Paris handed the U.S. everything to the Mississippi, and settlers poured over the Appalachians: Kentucky, Tennessee, hungry for land. The Northwest Ordinance drew the grid for it: surveyed townships, six miles square, sold off in sections, new states eventually.
+Jeffersonian: A betrayal wearing a blueprint's clothes. The Revolution promised that ordinary people would rule themselves. Hamilton built a system where money rules and ordinary people adjust. Capitalism got its blueprint. The republic got its first aristocracy of wealth.
 
-Maya: Orderly on paper. The map had people on it, though.
+Maya: And the whiskey rebels got the precedent: the government can tax you, march on you, and pardon you. In that order. Closing statements. One paragraph each. Jeffersonian, you first.
 
-Marcus: It did. Native alliances in the Ohio country weren't handing anything over. Little Turtle's confederacy smashed two American armies. The defeats were so bad the history books just call one of them St. Clair's defeat.
+Jeffersonian: Hamilton built a machine for making money powerful: funded debts, a national bank, tariffs, excises, and an army to collect them. Every piece enriched the few at the expense of the many, and every piece stretched the Constitution past its words. The farmer, the independent freeholder, the soul of the republic, became a customer of Hamilton's system. The machine won. The republic lost its innocence.
 
-Maya: Two armies? I thought Fallen Timbers was the whole war.
+Marcus: Hamilton built the financial foundation of a continental power. Assumption created national credit. The Bank created sound currency. Tariffs and excises paid the bills. Loose construction let the Constitution grow with the country. The America that emerged, industrial, commercial, powerful, looks like Hamilton's sketch, not Jefferson's farm. Jefferson's farm never fed a continent. Hamilton's system did. The vision won because it worked.
 
-Marcus: Fallen Timbers was the end of it. Washington sent a real force, and in 1794 at Fallen Timbers the U.S. won decisively. The Treaty of Greenville followed in 1795: the alliance ceded most of Ohio, and the annual payments the treaty promised made the tribes dependent on Washington's money: leverage for later removals.
+Maya: Here's my verdict. Every fight about the Federal Reserve, about federal spending, about big government itself, is this fight remixed. Loose construction versus strict, the bank versus the farm, energy versus liberty. Hamilton won the seventeen nineties. Jefferson won the mythology. The Democratic-Republicans won the next election and kept the bank anyway. The names change. The argument doesn't. And the Constitution? It turned out to be elastic enough for both of them, which is either its genius or its original sin, depending on which side of the excise tax you're standing on. Next time: America in an undeclared naval war with France, and the Federalists decide the real enemy is at home. Anyone who criticizes the government.
 
-Maya: So the pattern is: settlers ignore the lines, conflict, the army wins, a treaty takes the land.
+Marcus: The Bill of Rights wasn't seven years old, and the government was already jailing newspaper editors.
 
-Marcus: That's the decade in one sentence. Britain made it worse by holding its western forts and arming Native fighters. Jay's Treaty in 1794 finally got the British out, and Pinckney's Treaty with Spain opened the Mississippi and New Orleans to American boats. With the Europeans sidelined, the resistance lost its suppliers.
-
-Maya: And the cotton gin drops in 1793 and locks slavery into the new lands.
-
-Marcus: Right under this box. The gin made cotton wildly profitable, demand for enslaved labor spiked, and the South's "necessary evil" started hardening into something else. Westward movement and slavery grew up together.
-
-Maya: Now the third box: the whole arc. Let me try it as one story. The French and Indian War leaves Britain broke, so Parliament taxes the colonies, and the colonies answer with ideas: liberty, representation, no taxation without it.
-
-Marcus: The ideas become a war, the war becomes a country, and the country's promises come out uneven. Independence for the planters, slavery still standing, women watching from the doorway.
-
-Maya: The Articles can't hold it together. Shays proves that, so Philadelphia writes the Constitution: the compromises, the ratification fight, the Bill of Rights as the closing deal.
-
-Marcus: Then the republic gets stress-tested: Hamilton's money plan, the Whiskey Rebellion, parties forming over France and the Sedition Acts, and 1800 handing power over without blood.
-
-Maya: And underneath it all, people deciding what "American" even means while settlers push west and Native nations push back: empire to republic. That's the through-line.
-
-Marcus: Empire to republic. That's the unit.
-
-Maya: Whole unit, one landing.
-
-Maya: Three boxes, let's land them. One: American identity. Liberty as the glue, layered over regional identity: meritocracy over aristocracy, churches cut loose from the state, republican motherhood, Webster's spellers, Peale and Trumbull painting the myth, and the asterisks: women out, slavery in, Black Americans building belonging anyway.
-
-Marcus: On the sheet.
-
-Maya: Two: westward movement and Native resistance. Settlers over the mountains, the Northwest Ordinance's townships, Little Turtle's victories, Fallen Timbers 1794, the Treaty of Greenville 1795 opening Ohio, with Britain and Spain arming the resistance until Jay's and Pinckney's treaties cut them out. And the cotton gin locking slavery into the new lands.
-
-Marcus: Checked.
-
-Maya: Three: the through-line. French and Indian War to taxes to ideas to revolution — uneven promises, Articles, Constitution, the republic's first fights. And it ends with... the cotton gin?
-
-Marcus: The gin belongs to the westward box. The through-line ends with a republic still arguing about who counts as "the people."
-
-Maya: Right. Empire to republic, promises still uneven. That's the landing.
-
-Marcus: That's the set.
-
-Maya: Two questions, AP-shaped. Say your answer before I give it. One: an 1800 newspaper editorial reads, "We have thrown off a king, yet the planter's whip still cracks in the fields; we call ourselves one people, yet a Virginian and a Massachusetts man can scarce understand each other." The prompt asks: what's the point of including this source?
-
-[5-second pause]
-
-Maya: The point is the gap between the promise and the reality. The Revolution preached liberty, but slavery survived and even expanded, and national identity was still layered under regional identity. The source argues the Revolution's work was unfinished.
-
-Maya: Two: in one breath, connect the French and Indian War to the Treaty of Greenville. What's the chain?
-
-[5-second pause]
-
-Maya: The war's debt brought British taxes, taxes sparked revolution, revolution won western land, land hunger drove settlers over the Appalachians, Native resistance under Little Turtle beat two armies, and the new federal government answered with Fallen Timbers and the Treaty of Greenville: an empire's war ending in a republic's land grab.
-
-Maya: Check your three boxes. Unit 3 in the books. Next time: Unit 4: Jefferson, the Market Revolution, and a country that starts moving faster than its own arguments.
-
-Marcus: From subjects of an empire —
-
-Maya: to citizens still deciding what that means.
+## Sources
+- Heimler's History: `APUSH Unit 3/08` transcript text (read at `/tmp/u3src/heimler_08.txt`: Washington precedents, Hamilton's financial program, Bank debate, Whiskey Rebellion)
+- Maximum Insight: `APUSH Full Review Playlist/20 - Hamilton's Financial Plan in Under 3 mins (APUSH Topic 3.10).en.srt` (text read at `/tmp/u3src/maxinsight_20.txt`)
+- Adam Norris (APUSHReview.com): `URP_contnet/03-APUSH Period 3 Speed Review.en.srt` (Hamilton's program, loose vs. strict construction, Whiskey Rebellion)
+- 5 Steps to a 5 APUSH 2024 (`books/extracted/5steps2024`, ch. 12): Report on Public Credit (1790), Bank charter (1791, $10M capital, 20-year charter), Hamilton vs. Jefferson Bank memos (Feb 1791), Whiskey Rebellion (1794, 13,000 troops)
+- Web verification: excise tax on whiskey (1791); western Pennsylvania as the rebellion's center; Washington the only sitting president to take the field with troops (rode to Bedford, PA); two treason convictions pardoned; dinner-table Compromise of 1790 (assumption + Potomac capital) — referenced in framing per map's optional note

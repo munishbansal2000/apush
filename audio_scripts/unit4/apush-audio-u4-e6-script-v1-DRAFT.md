@@ -1,87 +1,140 @@
-# U4-E6 — Maya + Marcus (Fish Audio)
-# Episode 6: Andrew Jackson Expands Federal Power. ~8 min.
-# Draft v1: built from APUSH Review transcript 07 (Andrew Jackson and federal power); fact-passed against that transcript, hedges kept where sources don't pin.
-# Read note: Maya tracks three boxes on her episode sheet: nullification, the Bank War, and Indian Removal. [5-second pause] marks are production notes for real silence in the self-test — they never go to the voice. The em dash in the closing tagline is a held beat: leave a full breath between Marcus's setup line and Maya's landing line. Do not rush it. The em dash inside Jackson's quoted toast is verbatim from the historical record — keep it. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence.
-# Pronunciation: kal-HOON (Calhoun), WUUS-ter (Worcester), CHAIR-uh-kee (Cherokee), BID-ull (Biddle), uh-BOM-ih-nay-shunz (Abominations)
+# U4-E6 — Maya + Jay (Fish Audio)
+# Episode 6: The Market Revolution. ~8 min.
+# Draft v1.
+# Read note: Maya and Jay run a study-buddies session: a warm-up question, four deep-dive questions on the Market Revolution, a lightning recap, and a 3-question check. [2-second pause] marks are production notes for real silence in the check — they never go to the voice. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence.
 
-Maya: Last time: democracy expanded — more voters, new parties. This time one president takes that bigger democracy and stretches the office itself. Showdowns with a state, a war on the Bank, and removal. Three boxes on your sheet: nullification, the Bank War, Indian Removal. Circle the ones you couldn't explain right now. Eight minutes, and you'll check all three off.
+Maya: Last time: Missouri. One state, one line across the map, and a fire bell in the night. This time: the economy that redrew the map underneath the politics. The Market Revolution. Four deep dives on your sheet: transportation, communication and manufacturing, the Southern divergence, and the human cost. Warm-ups and deep dives, then the check. Ready, Jay?
 
-Marcus: Start with the man. Jackson believed his election made him the people's representative — a break from the old idea that Congress spoke for the people and the president served Congress. He also practiced rotation in office: replace the officeholders with your own supporters. His critics had a punchier name for it: the spoils system.
+Jay: What did going to market even mean in eighteen hundred? Like, a farmers market?
 
-Maya: So to the victor go the federal jobs.
+Maya: Warm-up, and yes, basically. So in eighteen hundred, most Americans were subsistence farmers. They grew what they ate, made what they wore, and bought the rest from a local store or bartered with neighbors. Going to market meant a wagon ride to town.
 
-Marcus: That was the logic. And the same logic, the president as the people's man, drove the first big fight. The Tariff of 1828 raised duties on imported goods so sharply that Southerners called it the Tariff of Abominations. The South ran on agriculture and bought imported goods. The North's manufacturers liked the protection. Jackson's vice president, John C. Calhoun of South Carolina, pushed the theory that a state could nullify a federal law it deemed unconstitutional.
+Jay: And by eighteen forty?
 
-Maya: Wait. Jackson was the small-government, states' rights guy. Why is his own vice president fighting him?
+Maya: By eighteen forty, going to market meant the whole economy. Farmers grew food to sell hundreds of miles away. Workers earned wages and bought everything they needed. The relationship between producers and consumers, mostly strangers, became the engine of American life. There's the revolution.
 
-Marcus: Because Jackson wasn't defending states' rights here. He was defending the Union. When Congress extended the high rates in the Tariff of 1832, South Carolina issued an ordinance of nullification: no federal tariff collected in the state, and secession if Washington pushed back. Jackson answered with a toast for the ages: "Our Federal Union — it must be preserved." Then he got Congress to pass the Force Bill of 1833, authorizing federal troops to collect the tariff in South Carolina. And he paired the threat with a concession: Henry Clay's compromise tariff of 1833 lowered the rates over time. South Carolina backed down, and on the way out, nullified the Force Bill, just for spite.
+Jay: From self-sufficient to shopping. Got it.
 
-Maya: So nullification failed, but South Carolina got lower tariffs anyway. Who won?
+Jay: Deep dive one. Transportation. How did stuff actually move?
 
-Marcus: The Union won the principle. South Carolina saved face on the rates. Federal power had carried the day. Box one, landed, and it leads straight to box two, because Jackson then picked a fight with an even bigger target: the Second Bank of the United States.
+Maya: On water, when it could. Shipping by water was always cheapest, so the country went canal crazy. The granddaddy was the Erie Canal, finished in eighteen twenty-five, Albany to Buffalo, three hundred sixty-three miles. They called it Clinton's Ditch, after the governor who gambled on it.
 
-Maya: The Bank War. Nicholas Biddle's bank.
+Jay: And the freight costs?
 
-Marcus: Biddle ran it, and Jackson branded it a monster for the elite — an easy sell while memories of the Panic of 1819 were fresh. When Congress sent him a new charter in 1832, Jackson vetoed it. His opponents had hoped the veto would cost him the election. It did the opposite: vetoing the Bank as the common man's defender won him a wave of support. Then Jackson pulled federal deposits out of the Bank and parked them in state banks loyal to him. His critics called those the pet banks.
+Maya: From about a hundred dollars a ton to about ten.
 
-Maya: One man deciding the country's whole money policy. That sounds like what the veto's critics warned about.
+Jay: Fifteen miles on the Erie Canal! I've got a mule and her name is Sal! Huh, music class finally pays off.
 
-Marcus: It was an enormous stretch of presidential power: Jackson single-handedly setting domestic economic policy. He went further with the Specie Circular, requiring gold or silver for public land purchases. Then the crash came anyway: the Panic of 1837, under Martin Van Buren, Jackson's successor.
+Maya: The student knows the folk song. They made us sing it in elementary music class, with hand motions for the mule.
 
-Maya: Didn't Jackson have a parrot that cursed at his funeral? I swear I read that somewhere.
+Jay: Then steamboats made rivers two-way streets.
 
-Marcus: There's a story his parrot had to be removed from the service for swearing. Whether every detail holds up, nobody's fully sure — but it fits the man.
+Maya: Before the steamboat, going upriver meant poling or hauling by rope. Fulton's steamboat changed that in eighteen oh seven, and suddenly the Mississippi carried goods both directions. Then the Baltimore and Ohio started laying track in eighteen twenty-eight, and by the eighteen thirties locomotives were hauling freight faster than any canal boat.
 
-Maya: Box three is the darkest one. Indian Removal.
+Jay: Deep dive two. Communication and manufacturing. The telegraph came first, right? Eighteen twenties?
 
-Marcus: The Indian Removal Act of 1830 let the federal government force eastern tribes to trade their lands for territory west of the Mississippi. The Cherokee of Georgia should have been the hardest case for removal. Under Chief John Ross they had assimilated deliberately: a written constitution modeled on the United States, English in daily use, American-style dress. Then gold was found on their land, and Georgia wanted them gone.
+Maya: Whoa, no. Classic mix-up. The telegraph is eighteen forty-four. Samuel Morse's first message, sent from Washington to Baltimore: what hath God wrought. The canal is eighteen twenty-five, nearly twenty years earlier. Water first, wires later.
 
-Maya: And they fought it in court, right? Worcester v. Georgia?
+Jay: Okay, so what made the factories go?
 
-Marcus: They tried the courts twice. Cherokee Nation v. Georgia came first, then Worcester v. Georgia, where the Supreme Court sided with the Cherokee and upheld their sovereignty. Jackson refused to enforce the ruling. Removal began in 1838: roughly a thousand-mile march west, remembered as the Trail of Tears. Thousands died along the way — historians estimate about four thousand of roughly sixteen thousand Cherokee.
+Maya: Two big ideas. First, interchangeable parts. Eli Whitney got a government contract for muskets and machined every part to identical specs instead of crafting each gun by hand. Trigger breaks? Swap in a new one. The method got a name: the American system of manufacturing.
 
-Maya: We drove through Oklahoma on a road trip once, and I kept seeing signs for the Cherokee Nation. I had no idea what they pointed back to until this unit.
+Jay: And the factory itself came from a spy?
 
-Marcus: They point back to that march. And the Cherokee weren't the only resistance. In 1832, Black Hawk led Sauk and Fox fighters against removal in Illinois, and federal troops crushed them at Bad Axe: a massacre, followed by forced removal of the survivors.
+Maya: Basically. Samuel Slater was a supervisor in a British textile mill who memorized the machinery designs, sailed to America in seventeen eighty-nine, and rebuilt them from memory in Rhode Island. Britain called that emigration illegal. America called it industrial policy.
 
-Maya: So Jackson expanded presidential power while claiming to speak for the common man. The common man just didn't include everyone.
+Jay: Then the steam engine cut the leash.
 
-Marcus: The tension of the whole episode, right there. If the exam asks how Jackson grew the presidency, run these three boxes in order: a state defied, a bank killed, a people removed.
+Maya: Right. The first factories had to sit beside running water for power. The steam engine burned coal to make steam, so factories could go wherever the markets and workers were. And on the farm side, the West got new tools.
 
-Maya: Three boxes, let's land them. One: nullification. The Tariff of 1828, the Tariff of Abominations, plus the 1832 extension pushed South Carolina to nullify federal law, following Calhoun's theory. Jackson answered with the toast, the Force Bill of — 1832?
+Jay: Like what?
 
-Marcus: 1833. Same year as Clay's compromise tariff.
+Maya: The steel plow, John Deere, eighteen thirty-seven, which cut prairie soil that broke wooden plows. And the mechanical reaper, which let one farmer do the harvesting work of five.
 
-Maya: 1833. The Union won the principle, and South Carolina nullified the Force Bill on the way out.
+Jay: I tried to explain interchangeable parts to my little brother with LEGOs. He ate one. The explanation didn't land.
 
-Marcus: Checked.
+Maya: The most famous were the textile mills at Lowell, Massachusetts, built in the early eighteen twenties. They recruited young farm women, the Lowell girls, into company boarding houses under strict rules. Church on Sunday, curfews, clocks regulating the workday.
 
-Maya: Two: the Bank War. Jackson vetoed the Second Bank's charter in 1832, calling it the elite's monster, moved federal money into pet banks, and issued the Specie Circular. The Panic of 1837 still hit under Van Buren.
+Jay: Sounds like a dorm with extra steps.
 
-Marcus: On the sheet.
+Maya: With much worse pay. At first the girls liked the adventure and the wages. Then in the eighteen thirties the owners cut wages and packed the boarding houses, and the girls fought back. Strikes, protests, and the Lowell Female Labor Reform Association, the first women's labor union in the country. Their big demand: a ten-hour workday instead of twelve.
 
-Maya: Three: Indian Removal. The 1830 act, the Cherokee under John Ross who had done everything assimilation asked, Worcester v. Georgia siding with the Cherokee — wait, with Jackson?
+Jay: Deep dive three. The Southern divergence. The cotton gin industrialized the North, right? That's the whole point?
 
-Marcus: With the Cherokee. Jackson just refused to enforce it.
+Maya: Nope, that's the second mix-up, and it's an important one. The cotton gin, Whitney again, seventeen ninety-three, made it fast to separate cotton fiber from seeds. But it didn't industrialize the North. It industrialized Southern slavery.
 
-Maya: With the Cherokee. Then the Trail of Tears starting in 1838: thousands dead on roughly a thousand-mile march. Plus Black Hawk's War and Bad Axe in 1832.
+Jay: Because now cotton was profitable.
 
-Marcus: The full set.
+Maya: Wildly profitable. Cotton production exploded, planters chased fresh soil west into Alabama, Mississippi, and Louisiana, dragging enslaved people with them. Cotton became King Cotton. And since Congress had banned the international slave trade in eighteen oh eight, the expansion ran on a domestic slave trade, tearing families apart to feed the new plantations.
 
-Maya: Two questions, AP-shaped. Say your answer before I give it. One: an 1832 cartoon shows Jackson wearing a crown and trampling a many-headed Bank. The prompt asks: what fear about presidential power does this cartoon express?
+Jay: So the North gets factories, the South gets cotton, and they're tied together.
 
-[5-second pause]
+Maya: Tied and pulling apart. Each region specialized in what it did best. The North manufactured, the South grew cotton, the West grew food, and the canals and railroads moved it all between them.
 
-Maya: The cartoon warns that Jackson's veto and the pet banks concentrated economic power in one man. Critics saw a president acting like a king: deciding the nation's money policy alone, past what Congress or the Bank's charter intended.
+Jay: So everybody needs everybody.
 
-Maya: Two: South Carolina declares the tariffs of 1828 and 1832 null and void inside the state. Name the crisis and Jackson's two-part response.
+Maya: And everybody resents everybody. Northern mills spun Southern cotton. Southern planters bought Northern goods. The regions needed each other more than ever, and they were becoming more different every year. That's the knot.
 
-[5-second pause]
+Jay: How big was the domestic slave trade, actually?
 
-Maya: The nullification crisis. Jackson's response was force plus compromise: the Force Bill of 1833 authorizing troops to collect the tariff, and Clay's compromise tariff lowering the rates so South Carolina could back down.
+Maya: About a million people, forced south and west over a few decades. Historians call it the Second Middle Passage. Families torn apart in Virginia and Maryland, marched in chains to the cotton frontier. The gin didn't just expand slavery. It industrialized the cruelty.
 
-Maya: Check your three boxes. Next time: the Second Great Awakening — revivals sweep the country, and reformers try to fix everything the market revolution broke.
+Jay: Deep dive four. The human cost. Who paid for all this?
 
-Marcus: He claimed the people's voice —
+Maya: Start with the workers. The market revolution created a working class: people who sold their labor for wages and bought everything they needed. Long hours, low wages, dangerous machines. Some people called them wage slaves, which tells you how it felt.
 
-Maya: and stretched the office to match it.
+Jay: And the immigrants?
+
+Maya: Starting in the eighteen twenties, huge numbers of Irish and German immigrants arrived, and the Irish especially filled the factory jobs and railroad gangs in Northern cities. Cheap labor powered the revolution, and nativist backlash followed it. Then there's the middle class, brand new: lawyers, teachers, shopkeepers, people who worked with their heads instead of their hands.
+
+Jay: And the women at home.
+
+Maya: The cult of domesticity. As middle-class men went out to work, the culture declared the home a separate sphere, women's sphere, defined by raising virtuous children and keeping a spotless house. Real, and also a cage. It didn't apply to working-class women, who had to work anyway. But it shaped what respectable womanhood meant for a century.
+
+Jay: And the Panic of eighteen nineteen?
+
+Maya: The callback. The crash that proved booms have teeth. The Bank's reckless loans, the land bubble, the foreclosures. The market revolution made the country richer and more connected, and it made the crashes bigger too.
+
+Jay: Lightning recap. One line each. Transportation: canals, steamboats, railroads. Erie Canal, eighteen twenty-five, Clinton's Ditch, freight costs collapse.
+
+Maya: Communication and manufacturing: telegraph in eighteen forty-four, what hath God wrought. Interchangeable parts, Whitney's muskets, the Lowell mills and the Lowell girls.
+
+Jay: Southern divergence: the cotton gin, seventeen ninety-three. King Cotton, slavery expands west, the domestic slave trade.
+
+Maya: Human cost: wage labor, immigrants, the new middle class, the cult of domesticity. And the Panic of eighteen nineteen, the crash that proved booms have teeth.
+
+Jay: Wait, Lowell, Massachusetts, right? The boarding houses, the curfews, the ten-hour day?
+
+Maya: Lowell, Massachusetts. You've got it.
+
+Maya: Three-question check. Say it out loud before I do. One: name three transportation breakthroughs and what each one changed.
+
+[2-second pause]
+
+Maya: The Erie Canal, eighteen twenty-five, cut freight costs to a tenth and made New York the great port. Steamboats made rivers two-way. Railroads, starting with the Baltimore and Ohio, moved goods faster than canals by the eighteen thirties.
+
+Maya: Two: the telegraph is eighteen forty-four and the canal is eighteen twenty-five. Why does the order matter?
+
+[2-second pause]
+
+Maya: Because the revolution ran on moving goods before it ran on moving information. Water stitched the markets together first; wires sped up what the water had built.
+
+Maya: Three: how did the cotton gin change the South, and why didn't it industrialize the North?
+
+[2-second pause]
+
+Maya: The gin made cotton wildly profitable, so slavery expanded west into Alabama, Mississippi, and Louisiana on a forced domestic slave trade. It didn't industrialize the North; it locked the South into cotton while the North built factories that spun it.
+
+Maya: Check your four deep dives. Next time: the common man's president. Andrew Jackson, hero or tyrant, and the ugliest campaign yet.
+
+Jay: The one with the coffins on the posters?
+
+Maya: The one with the coffins on the posters.
+
+# Sources
+# - Maximum Insight, "APUSH Full Review Playlist/26 - The Market Revolution in Under 3 mins (APUSH Unit 4 Topic 5).en.srt" (inventions: textile machinery, steam engines, interchangeable parts, telegraph; North/South divergence; cotton gin; roads/canals/railroads)
+# - Maximum Insight, "APUSH Full Review Playlist/27 - Market Revolution Society and Culture in Under 3 mins (APUSH Unit 4 Topic 6).en.srt" (immigrants, urbanization, middle class, wage labor, cult of domesticity/separate spheres)
+# - Heimler, "APUSH Unit 4/04 - The Market Revolution in America, Explained [APUSH Review].en.srt" (Whitney interchangeable parts, Slater, steam engine, Deere steel plow, cotton gin, McCormick reaper, telegraph 1844, Lancaster turnpike, Cumberland Road, Erie Canal 1825, railroads, McCulloch/Gibbons as enablers)
+# - Heimler, "APUSH Unit 4/05 - The MARKET REVOLUTION'S Effects on American Culture [APUSH Review].en.srt" (urbanization, Irish/German immigration, working class/"wage slaves", Lowell girls, Lowell Female Labor Reform Association, 10-hour day, middle class, cult of domesticity)
+# - Adam Norris (URP_contnet), "04-APUSH Period 4 Speed Review.en.srt" (market revolution: textile factories, steel plow, mechanical reaper, cotton gin, steam engine/railroads/steamboats, interchangeable parts, telegraph, Lowell mills, wage labor of women/children/immigrants)
+# - Princeton Review AP US History Premium Prep 26E, Chapter 6 (Period 4), "16_Chapter06.xhtml" (timeline: 1817 Erie Canal begins, 1821 Lowell factories open, 1825 canal opens, 1830 B&O Railroad, 1844 Morse telegraph; technology section)

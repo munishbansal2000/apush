@@ -1,139 +1,151 @@
-# U4-E2 — Maya + Marcus (Fish Audio)
-# Episode 2: The War Nobody Won. ~8 min.
-# Draft v1
-# Read note: Maya tracks three boxes on her episode sheet: why the war happened, the American System, and the Monroe Doctrine plus the Missouri Compromise. [5-second pause] marks are production notes for real silence in the self-test — they never go to the voice. The em dash in the closing tagline is a held beat: leave a full breath between Marcus's setup line and Maya's landing line. Do not rush it. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence.
-# Pronunciation: teh-KUM-suh (Tecumseh), GENT (Ghent, rhymes with "sent"), mon-ROH (Monroe), tal-MAJ (Tallmadge)
+# U4-E2 — Maya + Jay (Fish Audio)
+# Episode 2: The Marshall Court. ~8 min.
+# Draft v1.
+# Read note: Maya and Jay run a study-buddies session: a warm-up question, four deep-dive questions on the Marshall Court's big cases, a lightning recap, and a 3-question check. [2-second pause] marks are production notes for real silence in the check — they never go to the voice. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence.
+# Pronunciation: MAR-ber-ee (Marbury), muh-KUL-uk (McCulloch), GIB-unz (Gibbons), OG-den (Ogden), YAZ-oo (Yazoo)
 
-Maya: Last time: Jefferson's presidency, the Louisiana Purchase, the embargo. The embargo failed. Britain kept seizing American sailors. And a new generation in Congress was done being polite. Three boxes on your sheet: why the war happened, the American System, the Monroe Doctrine plus the Missouri Compromise. Circle the ones you couldn't explain right now. Eight minutes, and they're yours.
+Maya: Last time: Jefferson bought Louisiana and stretched the Constitution to do it. This time: the man who spent thirty-four years deciding what the Constitution actually allows. John Marshall, chief justice, and the four cases that turned the Supreme Court from a committee room into the branch nobody voted for but everybody obeys. Four cases on your sheet: Marbury, Fletcher, McCulloch, Gibbons. Circle the ones you couldn't explain right now. Eight minutes, and they're yours.
 
-Marcus: Madison inherits the mess in 1809. Britain's Orders in Council squeezed American trade and France seized our ships. But the insult that stung most was impressment: the Royal Navy stopped American merchant ships and forced the sailors into British service.
+Jay: The Supreme Court. In eighteen hundred. What did they even do all day?
 
-Maya: They just grabbed them off the ships?
+Maya: Warm-up question, and you're already asking it. Honestly? Not much. Six justices, no building of their own. They met in a committee room underneath the Senate. The Court was the weakest branch, by design and by habit. Nobody expected it to matter.
 
-Marcus: Grabbed them by the thousands. Then the embargo collapsed, and a group in Congress called the War Hawks started arguing that Britain was too busy fighting Napoleon to fight America well.
+Jay: So six guys in wigs waiting for the mail.
 
-Maya: The New Englanders wanted no part of it.
+Maya: Basically. Then John Marshall becomes chief justice in eighteen oh one, appointed by Adams in the last weeks of his presidency, and he holds the job for thirty-four years. He outlasts Adams, Jefferson, Madison, Monroe, John Quincy Adams, and half of Jackson. Six presidents.
 
-Marcus: Right. New England Federalists lived on trade with Britain, so the war threatened their livelihood. They opposed it from day one.
+Jay: Was Marshall a Federalist? The party that just lost everything?
 
-Maya: So much for national unity.
+Maya: A Federalist to the bone. Adams named him chief justice in the final weeks, which makes Marshall himself one of Adams's lame-duck appointments. The guy who'd define the Constitution for a generation got the job in a lame-duck panic.
 
-Marcus: The war split the country by region before the first shot. New England merchants versus Southern and Western War Hawks.
+Jay: Okay, that's a run.
 
-Maya: And out west there's Tecumseh.
+Maya: My AP Gov teacher made us memorize his big line junior year, with this little gavel hand-chop on the words province and duty. I remember the hand-chop better than the quote.
 
-Marcus: The Shawnee leader was building a Native alliance against American expansion, and after the fighting in Indiana he threw in with the British. His brother was a prophet who told their followers to give up white ways entirely. It was a cultural revival as much as an army. So the war had a western front from the start.
+Jay: Deep dive one. Marbury versus Madison, eighteen oh three. Who was Marbury and why is he suing the Secretary of State?
 
-Maya: A lot of fuses for one war.
+Maya: The midnight appointments. Adams loses the election, so on his way out the door he stuffs the federal courts with Federalist judges. Commissions signed at midnight, basically. Jefferson takes office, and his Secretary of State, James Madison, just doesn't deliver some of them.
 
-Marcus: All counted. The war ran a little over two years. The British burned Washington, the Capitol and the White House. At Baltimore, Francis Scott Key watched the bombardment of Fort McHenry through the night and wrote the song.
+Jay: He just... doesn't hand them over.
 
-Maya: Wait, that's the song from every baseball game. The anthem.
+Maya: He sits on them. So William Marbury, one of the undelivered judges, sues Madison to force him to deliver the commission. And the case lands in front of John Marshall, who — and I actually know this one — was Adams's Secretary of State. He was the guy who failed to deliver the commissions in the first place.
 
-Marcus: The same one. Though I doubt Key pictured stadiums.
+Jay: Wait. Marshall is judging his own mess?
 
-Maya: I sang it at a school assembly once and my voice cracked on the rockets' red glare. In front of everyone.
+Maya: His own mess. And here's the trap he built. Marshall ruled that Marbury deserved his commission — but that the Supreme Court had no power to force Madison to deliver it. He handed his own Federalist party the loss on the small question.
 
-Marcus: Everybody remembers where they cracked.
+Jay: To win the big one.
 
-Maya: Why is it so hard to sing, though? Is that just me?
+Maya: Exactly. The small loss bought the big power. Because in that same opinion, he announced judicial review. His line: "it is emphatically the province and duty of the judicial department to say what the law is." Plain version: the Court gets the final word on what the Constitution means. Not the president, not Congress, not the states.
 
-Marcus: Not just you. Honestly, nobody's fully sure it was ever meant for crowds. It started as a poem fitted to a tune.
+Jay: So he lost the battle on purpose to win the war.
 
-Maya: Okay, so America won. New Orleans, the anthem, the treaty, victory lap.
+Maya: The most elegant power grab in American history. Before Marbury, the Court was a committee room. After Marbury, it's a co-equal branch.
 
-Marcus: Slow down. The Treaty of Ghent was a stalemate: both sides gave back what they'd taken and went home. And the big American victory at New Orleans was fought after the treaty was signed. News traveled slow.
+Jay: Why didn't Jefferson just ignore the ruling? He ignored the commissions.
 
-Maya: So we didn't win anything.
+Maya: Because Marshall handed him the win. Jefferson kept the commissions, and nobody noticed Marshall had just given the Court the final word on the Constitution.
 
-Marcus: Didn't lose.
+Jay: Deep dive two. Fletcher versus Peck, eighteen ten. This is the land fraud one?
 
-Maya: Didn't lose.
+Maya: The Yazoo land fraud. In seventeen ninety-five, the Georgia legislature sold thirty-five million acres around the Yazoo River, in what's now Mississippi and Alabama, to private speculators for about a penny and a half an acre. And nearly every legislator who voted yes had been bribed.
 
-Marcus: Against the world's strongest navy, in 1812, that felt like winning. But the Federalists didn't survive the feeling. While the war dragged on, New England Federalists met at Hartford to denounce it. Then peace arrived. The stalemate looked like a triumph, and the convention looked like treason.
+Jay: Subtle.
 
-Maya: Would the test ever ask about Hartford by name?
+Maya: The next Georgia legislature was furious, repealed the whole sale, and voided everybody's titles. Problem: one buyer, John Peck, had already sold some of that land to Robert Fletcher, who sued when he learned his title was worthless. Marshall's Court said the original sale was a contract, and the Constitution says no state can impair the obligation of contracts. Georgia's repeal was unconstitutional.
 
-Marcus: It might. But the consequence is the point: the party collapsed, and one party ran the country. With the Federalists gone, the Democratic-Republicans were the only party left standing. That's the Era of Good Feelings.
+Jay: Even though the original sale was corrupt?
 
-Maya: One party, no arguments?
+Maya: Even though. Marshall called the bribery deplorable, then protected the contract anyway.
 
-Marcus: Plenty of arguments, just inside one party. The fights didn't stop. They moved indoors.
+Jay: Cold.
 
-Maya: Good feelings for who?
+Maya: And here's why the case matters: it was the first time the Supreme Court ever struck down a state law. The Contract Clause became a federal shield for property rights, and for business deals for the next hundred years, right through the industrial boom.
 
-Marcus: Fair question. The nationalism was real, but sectional tensions were already simmering underneath. The Missouri fight is about to prove it.
+Jay: So a corrupt deal stands because contracts are sacred. Did that matter to anyone besides the speculators?
 
-Marcus: The war taught a lesson: America needed its own factories, its own bank, its own roads. Henry Clay packaged that lesson as the American System. Three parts. First, federally funded internal improvements, roads and canals paid for with tariff money and land sales. The Cumberland Road. The Erie Canal. Stitching the regions together.
+Maya: It mattered to everyone heading west: your title is safe, no state can rip it up later. That confidence let people buy land sight unseen.
 
-Maya: Roads, tariffs, and a bank?
+Jay: Deep dive three. McCulloch versus Maryland, eighteen nineteen. The Bank one.
 
-Marcus: Close. Second, a protective tariff. The Tariff of 1816 taxed British goods so Americans would buy American-made. Third, a second Bank of the United States, chartered in 1816, to steady the currency and the credit supply.
+Maya: Congress chartered the Second Bank of the United States in eighteen sixteen. Maryland hated the Bank, so Maryland slapped a tax on the Bank's Baltimore branch. The branch cashier, James McCulloch, refused to pay. Marshall answered in two parts, and the two parts built the modern federal government.
 
-Maya: And each region plays its position.
+Jay: Part one?
 
-Marcus: That was the pitch. The North manufactures. The South grows cotton. The West grows food. And the new roads and canals let them trade with each other instead of with Europe.
+Maya: Congress can charter the Bank even though the Constitution never says the word bank. Implied powers, the necessary and proper clause. If the goal is legitimate, Congress gets to choose the means.
 
-Maya: Box two down and officially checked.
+Jay: Sounds like a blank check to me.
 
-Marcus: Then Monroe, elected in 1816, starts acting like the hemisphere is ours. His Secretary of State, John Quincy Adams, fixes the Canadian border at the 49th parallel and buys Florida from Spain in 1819. Right as Latin America is throwing off European empires.
+Maya: Broad, not blank. Part two is the famous line: the power to tax is the power to destroy. If Maryland can tax the Bank, Maryland can kill it, and no state gets to destroy a federal institution.
 
-Maya: So Monroe draws a line around the hemisphere.
+Jay: So let me make sure I've got the pairs right. Marbury created the Bank, and McCulloch said the states can't tax it.
 
-Marcus: In 1823: the Monroe Doctrine. Europe, no new colonies here. America, we stay out of Europe's business. Adams wrote most of it, by the way.
+Maya: Whoa, hold on. Untangle those, because that's the mix-up that costs points. Marbury didn't create anything except judicial review. It's the undelivered commissions case, eighteen oh three. The Bank lives in McCulloch, eighteen nineteen, sixteen years later. Marbury: who gets the final word on the Constitution. McCulloch: how far federal power reaches.
 
-Maya: And Europe just went along with it?
+Jay: Huh. Marbury the referee, McCulloch the muscle.
 
-Marcus: Europe mostly shrugged. America had no navy to enforce a doctrine. It was a statement of intent. The shield came later.
+Maya: That's actually a great way to remember it. Keep that.
 
-Maya: Did Latin America care?
+Jay: Referee, muscle. Got it.
 
-Marcus: They noticed. The doctrine flattered the new republics, even if America couldn't defend them yet.
+Maya: Nailed it.
 
-Maya: Back home, the good feelings had cracks.
+Jay: Deep dive four. Gibbons versus Ogden, eighteen twenty-four. The steamboat one.
 
-Marcus: Missouri wanted in as a slave state, which would tip the Senate toward slavery. The Senate sat at an even split, slave and free. One new state either way would break it. A New York congressman, Tallmadge, tried to force Missouri to ban it. The South erupted.
+Maya: New York handed a man named Ogden a monopoly on the steamboat route between New York and New Jersey. His rival, Gibbons, ran his boats on the same waters anyway, under a federal coastal license. Ogden sued.
 
-Maya: So Clay rides in with another compromise.
+Jay: And?
 
-Marcus: The Missouri Compromise, 1820. Missouri enters as a slave state, Maine as a free state, Senate balance preserved. And a line at thirty-six thirty: slavery below it, not above.
+Maya: Marshall said the Constitution gives Congress the power to regulate interstate commerce, and commerce includes navigation. A state can't hand out a monopoly that blocks it.
 
-Maya: A line on a map holding the country together.
+Jay: So Ogden's monopoly just evaporates.
 
-Marcus: It held for about thirty years.
+Maya: Overnight. Marshall also defined commerce as more than buying and selling. Navigation, traffic, intercourse between the states. Intercourse meaning interaction, by the way. That one old word did a century of work.
 
-Maya: Recap, then the test. I'm ready.
+Maya: Every modern fight about what Washington can regulate, workplace rules, environmental rules, all of it, runs through Gibbons. A ferry fight between two states built the commerce power.
 
-Maya: Three boxes, let's land them. One: why the war happened. Impressment. The failed embargo. The War Hawks. Tecumseh siding with Britain.
+Jay: Okay, lightning recap. One line each. Marbury: the Court takes the last word. Judicial review, eighteen oh three.
 
-Marcus: Box one is on the sheet.
+Maya: Fletcher: corrupt land deal stands anyway. Contract Clause, first state law struck down, eighteen ten.
 
-Maya: Two: the American System. Clay's three parts. Internal improvements. The protective Tariff of 1816. And the second Bank. North makes, South grows cotton, West grows food.
+Jay: McCulloch: implied powers save the Bank, and the power to tax is the power to destroy. eighteen nineteen.
 
-Marcus: Box two lands on the sheet.
+Maya: Gibbons: only Congress regulates interstate commerce. Steamboats count. eighteen twenty-four.
 
-Maya: Three: the Monroe Doctrine plus the Missouri Compromise. The doctrine was 1823, and the line was thirty-six... thirty?
+Maya: Three-question check. Say it out loud before I do. One: which case established judicial review, and what was the trap?
 
-Marcus: Thirty-six thirty. Missouri slave, Maine free, slavery below the line.
+[2-second pause]
 
-Maya: And the doctrine worked because America finally had the muscle to enforce it?
+Maya: Marbury versus Madison. Marshall ruled against his own party on the commissions to claim the bigger power: the Court says what the law is.
 
-Marcus: No muscle yet. No navy to back it, so Europe shrugged. The enforcement came decades later.
+Maya: Two: Maryland taxes the Second Bank. Which case, and what did Marshall decide?
 
-Maya: Two questions, AP-shaped. Say your answer before I give it. One: a newspaper prints a British order seizing an American merchant ship and forcing its crew into the Royal Navy. The prompt asks: which American response does this source best explain?
+[2-second pause]
 
-[5-second pause]
+Maya: McCulloch versus Maryland. The Bank is constitutional under implied powers, and states can't tax federal institutions. The power to tax is the power to destroy.
 
-Maya: The War of 1812. Impressment was the last-straw grievance, the insult that turned a trade dispute into a war.
+Maya: Three: New York grants a steamboat monopoly, and a rival runs boats under a federal license. Who wins?
 
-Maya: Two: the Hartford Convention meets while the war is still going, then peace arrives. Why does the Federalist Party collapse afterward?
+[2-second pause]
 
-[5-second pause]
+Maya: The rival. Gibbons versus Ogden. Interstate commerce belongs to Congress alone.
 
-Maya: Timing. Denouncing a war that suddenly looks like a triumph made the Federalists look unpatriotic. The party never recovered, and one-party rule began.
+Jay: If I only memorize one of these cold, which one?
 
-Maya: Check your three boxes. Episode two in the books. Next time: canals, cotton gins, and the market revolution.
+Maya: Marbury. It's the one that unlocks the other three. But know all four holdings. McCulloch and Gibbons each stretched federal power differently, and Fletcher is the sleeper: the Contract Clause one.
 
-Marcus: A war nobody won —
+Jay: Four cases, one engine. Nationalism in a black robe.
 
-Maya: that made America feel like somebody.
+Maya: Check your four cases. Next time: the war that made the nationalism real. Eighteen twelve: a burning capital, a bombarded fort, and a giant flag that survived the night.
+
+Jay: The one with the song.
+
+Maya: That's the one, the anthem.
+
+# Sources
+# - Maximum Insight, "APUSH Full Review Playlist/23 - The Era of Jefferson in Under 3 mins (APUSH Unit 4 Topic 2).en.srt" (Marbury v. Madison, judicial review)
+# - Heimler, "APUSH Unit 4/01 - The Rise of POLITICAL PARTIES, Explained [APUSH Review].en.srt" (Marbury: midnight appointments, judicial review; McCulloch v. Maryland: implied powers, necessary and proper, federal supremacy)
+# - Heimler, "APUSH Unit 4/04 - The Market Revolution in America, Explained [APUSH Review].en.srt" (McCulloch v. Maryland and Gibbons v. Ogden as market-revolution enablers)
+# - Adam Norris (URP_contnet), "04-APUSH Period 4 Speed Review.en.srt" (Marshall Court: Marbury, McCulloch, Gibbons v. Ogden summaries)
+# - Princeton Review AP US History Premium Prep 26E, Chapter 6 (Period 4), "16_Chapter06.xhtml" (Fletcher v. Peck 1810: Yazoo fraud, Contract Clause; Gibbons v. Ogden 1824: NY/NJ ferry monopoly, interstate commerce; McCulloch 1819)
+# - Web: PBS "The Supreme Court: Fletcher v. Peck (1810)" (thirteen.org) — 35M acres, 1.5 cents/acre, bribed legislators, first state law struck down

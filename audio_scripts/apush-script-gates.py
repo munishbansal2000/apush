@@ -59,7 +59,16 @@ PROFANITY = re.compile(
     r"\b(fuck(er|ing)?|shit(ter|ty)?|bitch|asshole|dick|pussy|cunt)\b",
     re.IGNORECASE,
 )
-SPEAKER = re.compile(r"^(Maya|Marcus):\s*(.*)$")
+# 2026-10-06: generic speaker pattern — hardcoding guest names kept missing
+# debate voices (Brutus/Henry/Jeffersonian/Haswell, Sepulveda w/o accent, …).
+# Matches any line-leading "Name:" label; NON_SPEAKER blocklist excludes
+# stage directions (SCREEN:) and self-test question numbers (Two:/Three:).
+NON_SPEAKER = frozenset({
+    "SCREEN",
+    "ONE", "TWO", "THREE", "FOUR", "FIVE",
+    "SIX", "SEVEN", "EIGHT", "NINE", "TEN",
+})
+SPEAKER = re.compile(r"^([A-Z][A-Za-z.'-]{0,39}):\s*(.*)$")
 
 
 def parse(path):
@@ -70,13 +79,17 @@ def parse(path):
             notes.append(line)
         else:
             m = SPEAKER.match(line)
-            if m:
+            if m and m.group(1).upper() not in NON_SPEAKER:
                 spoken.append((i, m.group(1), m.group(2).strip()))
     return text, "\n".join(notes), spoken
 
 
 def sentences(body):
-    return [s.strip() for s in re.split(r"(?<=[.?!])\s+", body) if s.strip()]
+    # Protect honorifics from sentence splitting: "Mr. Lincoln" is one
+    # sentence, not a "Mr." button-word (2026-10-06 G6 false positive).
+    body = re.sub(r"\b(Mr|Mrs|Ms|Dr|St)\.\s+", "\\1\0 ", body)
+    return [s.strip().replace("\x00", ".")
+            for s in re.split(r"(?<=[.?!])\s+", body) if s.strip()]
 
 
 def norm(s):
@@ -97,8 +110,11 @@ def main():
     def check(gate_id, ok, detail=""):
         (fails if not ok else []).append((gate_id, detail))
 
-    # G1: banned sentence starters (density gate -- the tic is the habit)
-    hits = [(ln, b[:60]) for ln, _, b in spoken if BANNED_STARTERS.match(b)]
+    # G1: banned sentence starters (density gate -- the tic is the habit).
+    # Checked per sentence, not per turn: mid-turn "That's the X." is the
+    # same tic. 2026-10-06: was turn-start only, missed guest lines.
+    hits = [(ln, s[:60]) for ln, _, b in spoken
+            for s in sentences(b) if BANNED_STARTERS.match(s)]
     check("G1 starter density < 3", len(hits) < BANNED_STARTER_LIMIT,
           "; ".join(f"L{ln}: {b}" for ln, b in hits))
 
@@ -112,8 +128,10 @@ def main():
     check("G3 exam-pitch cliches", not hits,
           "; ".join(f"L{ln}: {b}" for ln, b in hits))
 
-    # G4: pacing cap
-    words = sum(len(b.split()) for _, _, b in spoken)
+    # G4: pacing cap. Pause tags are stripped: production removes them, so
+    # they are not spoken words. 2026-10-06: previously counted as words,
+    # producing false FAILs on scripts with several [N-second pause] tags.
+    words = sum(len(PAUSE_TAG.sub("", b).split()) for _, _, b in spoken)
     wpm = words / minutes
     check("G4 pacing <= 180 WPM", wpm <= WPM_CAP,
           f"{wpm:.0f} WPM ({words} words / {minutes:g} min)")
