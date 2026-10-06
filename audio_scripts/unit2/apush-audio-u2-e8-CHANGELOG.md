@@ -1,0 +1,13 @@
+# U2-E8 Changelog — "The War That Started With One Shot in the Rain" (French and Indian War, CED 2.2)
+
+## v4 → v5 — full rebuild to the frozen 2026-10-06 standards (2026-10-06)
+- Format: Story Mode, Marcus-led with Maya interjecting (v4's Marcus-solo retired).
+- 4 boxes: 1) Jumonville Glen (+ Fort Necessity sub-topic), 2) Albany Plan + Braddock's defeat, 3) Pitt's strategy + Quebec 1759 + Treaty of Paris, 4) Pontiac (one paragraph) + Proclamation of 1763 + the double legacy.
+- Full exam-device suite: 2 prediction beats (10s/8s), 4 varied exam-tip templates, one common-mistake line per box, CER self-test (15s/20s/15s, 2 stimulus-style: surrender document + 1763 map) + labeled fast AP-shaped bonus (box 4: Proclamation motive).
+- Maya: mid-episode wrong beats (Jumonville "ambassador"; "'shot heard 'round the world' — that's this, right?" → "Nice instinct, wrong war"), recap fumble (Mississippi vs Appalachians), human moment (search-and-rescue uncle), student-world beat (Emerson/Lexington 1775), knows-something beat ("Only in APUSH.").
+- Continuity: cold open matches U2-E7 v5's real boxes and honors its tease (Washington, 22, Ohio country, 1754); post-1763 policy = future context only; Grenville teased in closer; salutary neglect kept to one named line (U2-E5's box respected).
+- Facts verified Tier 1→Tier 2: Jumonville May 27–28 1754, Fort Necessity July 3 1754 (l'assassinat, Washington's only surrender), Braddock July 9 1755 (1,459 engaged, ~1,000 casualties, died July 13), Albany Plan rejected by colonies and London, Quebec Sept 13 1759, Treaty of Paris Feb 10 1763, Proclamation Oct 7 1763.
+- Disclosure integrity: Washington's "four bullets through my coat, and two horses shot under me" = his actual July 18, 1755 letter wording (header discloses); Tanacharison tomahawk/brains = "legend — reported, never proven" in-dialogue; Pitt's "conquer America in Germany" = attributed/debated in-dialogue.
+- Corrections from validation: debt claim reworded from "roughly doubled" to Tier-1 "enormous debt" language (figure unverifiable in Tier 1+2); Britannica's "only 21" for Washington at Jumonville is a book error — script's 22 is arithmetically correct (registered F-U2-061); France kept Guadeloupe and Martinique in 1763 (registered F-U2-062, honest tier labeling).
+- Validation: Layer-2 ear + user checklist (10 findings, all repaired), Layer-3 fact-check (zero WRONG; debt hierarchy fix applied), repair agent, fresh Layer-2 re-read (3 minor issues, all fixed), gates 12/12 PASS.
+- Final: 1,944 spoken words + 73s scripted pauses = 12.0 min experienced at 180 WPM. Header, cold-open promise ("Twelve minutes"), and actual agree.

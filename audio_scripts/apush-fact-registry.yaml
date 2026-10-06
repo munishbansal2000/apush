@@ -1331,3 +1331,17 @@ facts:
       - "colonial.*upper house.*elected"
       - "power of the purse.*controlled trade regulations"
     sources: [princeton]
+
+  - id: F-U2-061
+    topic: Washington's age at Jumonville Glen — 22, not Britannica's 21
+    correct: "Washington was 22 on May 28, 1754: born February 22, 1732, the arithmetic gives 22. Britannica's Jumonville article says he was 'only 21' — a book error. DEPARTURE FROM TIER 2, sanctioned by the arithmetic and by continuity (U2-E7's forward tease names a twenty-two-year-old Washington). Scripts use 22 and flag the discrepancy in the footer only, never in dialogue."
+    falsehoods:
+      - "washington was (only )?21[^0-9]"
+    sources: [britannica, web]
+
+  - id: F-U2-062
+    topic: Treaty of Paris 1763 — France kept Guadeloupe and Martinique
+    correct: "In the 1763 Treaty of Paris France kept its Caribbean sugar colonies Guadeloupe and Martinique while ceding Canada and everything east of the Mississippi to Britain. BEYOND Tier 1+2 strictly (Tier 1 is silent on the retained islands); sanctioned by CED coverage. Dialogue characterization 'France traded a continent for sugar' is fair. Never write that France 'lost everything in North America.'"
+    falsehoods:
+      - "france lost everything in north america"
+    sources: [web]
