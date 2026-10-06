@@ -61,30 +61,47 @@ def main():
     with open(plan_in) as f:
         plan = json.load(f)
     # Find the act's first turn from the plan's scenes
+    # The FIRST scene determines the act start: if it has no start_anchor, act starts at turn 0
+    # Otherwise, use the earliest turn referenced
+    scenes = plan.get("scenes", [])
     first_turn = None
-    for sc in plan.get("scenes", []):
-        for cue in sc.get("cues", []):
-            t = cue.get("turn")
-            if t is not None and (first_turn is None or t < first_turn):
-                first_turn = t
+    if scenes and "start_anchor" not in scenes[0]:
+        first_turn = 0
+    else:
+        for sc in scenes:
+            sa = sc.get("start_anchor")
+            if sa and "turn" in sa:
+                t = sa["turn"]
+                if first_turn is None or t < first_turn:
+                    first_turn = t
+            for cue in sc.get("cues", []):
+                t = cue.get("turn")
+                if t is not None and (first_turn is None or t < first_turn):
+                    first_turn = t
     if first_turn is None:
-        raise RuntimeError("No turn anchors found in plan")
-    # timings_wrapped format: {"turns": [{"turn": N, "start_sec": X, "duration_sec": Y}, ...]}
+        first_turn = 0
+    # timings_wrapped format: {"turns": [{"turn": "t00", "start": 0.0, "end": 25.3}, ...]}
+    # Map int turn (1) to string ("t01")
+    first_turn_str = f"t{first_turn:02d}"
     turns = tm.get("turns", tm) if isinstance(tm, dict) else tm
     act_start = None
     for t in (turns if isinstance(turns, list) else turns.values()):
         tn = t.get("turn", t.get("id"))
-        if tn == first_turn:
-            act_start = t["start_sec"]
+        if tn == first_turn_str:
+            act_start = t["start"]  # note: "start", not "start_sec"
             break
     if act_start is None:
         raise RuntimeError(f"Turn {first_turn} not in timings_wrapped.json")
     rel_timings = {"turns": []}
     for t in (turns if isinstance(turns, list) else turns.values()):
+        # Keep turn as original string format ("t01") to match word_times keys
+        # resolve_cues.py does str(turn) and looks up word_times.get(tid)
+        turn_id = t.get("turn", t.get("id"))
+        start_rel = t["start"] - act_start
         rel_timings["turns"].append({
-            "turn": t.get("turn", t.get("id")),
-            "start_sec": t["start_sec"] - act_start,
-            "duration_sec": t["duration_sec"],
+            "turn": turn_id,
+            "start": start_rel,
+            "end": start_rel + (t["end"] - t["start"]),
         })
     rel_path = f"{args.act}_timings_relative.json"
     with open(rel_path, "w") as f:
