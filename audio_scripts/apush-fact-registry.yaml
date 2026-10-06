@@ -1362,3 +1362,36 @@ facts:
       - "130 million pounds"
       - "debt.*(roughly|nearly|about).*(doubled|double)"
     sources: [prem27, 5steps]
+
+  - id: F-U2-065
+    topic: Chesapeake demography — hedged textbook figures, never pins
+    correct: "Early Chesapeake: malaria, dysentery, and typhoid cut roughly ten years off a newcomer's life expectancy; men outnumbered women roughly six to one around 1650, narrowing toward three to two by 1700; marriages were often broken by death within seven years; roughly half the children born did not live to twenty; Virginia held nearly 60,000 people by 1700, the most populous English colony. Always hedged (roughly/toward/nearly) — the source is the classic American Pageant (Kennedy) ch. 4 treatment, a standard AP textbook, NOT Tier 1+2. Never pin the ratios or the life-expectancy figure."
+    falsehoods:
+      - "men outnumbered women exactly six to one"
+      - "chesapeake.*(stable|strong|healthy) families.*1600s"
+      - "chesapeake.*grew.*natural increase.*1600s"
+    sources: [web]
+
+  - id: F-U2-066
+    topic: 1644 second attack and 1646 treaty — Powhatan power broken
+    correct: "1644: Opechancanough (Powhatan's brother, now an old man) led a second attack on Virginia; the English crushed it, captured him in 1646, and he was killed while a prisoner. The 1646 treaty drew a boundary, set aside reservation land, and demanded tribute — Powhatan power was broken. Tier 1 confirms the 1644 war and the precipitous decline (prem27) and the Powhatan Wars span 1610-1677 (princeton); the capture/killing/treaty details are standard accounts, hedged in dialogue. Never teach that the Powhatan story ends in 1622."
+    falsehoods:
+      - "powhatan.*(vanished|disappeared|destroyed).*(in )?1622"
+      - "1644.*powhatan.*(victory|drove out the english|succeeded)"
+    sources: [prem27, princeton, web]
+
+  - id: F-U2-067
+    topic: Maryland — Catholic refuge that ran Virginia's tobacco playbook
+    correct: "Maryland: charter 1632 to George Calvert, Lord Baltimore (Charles I); first settlers 1634; first proprietary colony (one owner, not a company). Calvert wanted a Catholic refuge AND tobacco profits — he got the tobacco. Maryland ran Virginia's playbook: tobacco, indentured servants, enslaved Africans (prem27: 'Maryland bore similarities to Virginia'). Protestants outnumbered Catholics almost immediately; the Act of Toleration (1649) protected Christian worship — the Catholics needed the law in their own colony. Never teach that Maryland stayed Catholic."
+    falsehoods:
+      - "maryland.*stayed catholic"
+      - "maryland.*remained.*catholic.*(colony|refuge)"
+    sources: [prem27, 5steps, princeton]
+
+  - id: F-U2-068
+    topic: Smith's Generall Historie (1624) — the rescue first appears ~17 years later
+    correct: "Smith's Pocahontas rescue first appears in his Generall Historie (1624), roughly seventeen years after the events — absent from his earlier accounts. Scholars split: invented outright vs misunderstood adoption ritual; never teach as settled (F-U1-029). The exam device: when the source is Smith writing about Smith, read the author before the story (source criticism, not recall)."
+    falsehoods:
+      - "rescue.*first.*(told|described|published).*(1608|1609|1610)"
+      - "generall historie.*(1608|1610)"
+    sources: [5steps, britannica]
