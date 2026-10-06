@@ -1345,3 +1345,20 @@ facts:
     falsehoods:
       - "france lost everything in north america"
     sources: [web]
+
+  - id: F-U2-063
+    topic: Albany Plan rejected by the colonies first, not vetoed by Parliament
+    correct: "Franklin's Albany Plan of Union (1754) was rejected FIRST by the colonial assemblies — they guarded their own power/sovereignty — and then also rejected by London. Never teach that Parliament vetoed it, and never frame the rejection as mere colonial disorganization."
+    falsehoods:
+      - "parliament vetoed the albany plan"
+      - "albany plan.*vetoed by parliament"
+      - "colonies were (just|merely|simply) disorganized.*albany"
+    sources: [5steps, prem27]
+
+  - id: F-U2-064
+    topic: Post-war British debt — no pinned figure in Tier 1+2
+    correct: "The British debt after the Seven Years' War is described in Tier 1 sources only as 'large'/'enormous' — no pinned figure is verifiable in Tier 1+2. Scripts use the books' language only ('an enormous debt'), never a number."
+    falsehoods:
+      - "130 million pounds"
+      - "debt.*(roughly|nearly|about).*(doubled|double)"
+    sources: [prem27, 5steps]
