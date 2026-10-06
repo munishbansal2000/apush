@@ -152,8 +152,22 @@ class KeywordPop(Overlay):
         from .slides import _punch_in
         img = _punch_in(self._img, max(e, 0.001))
         ih, iw = img.shape[:2]
+        # Auto-fit: if text is wider than 94% of frame, scale it down
+        max_w = w * 0.94
+        if iw > max_w:
+            scale = max_w / iw
+            from PIL import Image
+            import numpy as np
+            pil = Image.fromarray(img)
+            new_w = int(iw * scale)
+            new_h = int(ih * scale)
+            pil = pil.resize((new_w, new_h), Image.BILINEAR)
+            img = np.array(pil)
+            ih, iw = img.shape[:2]
         if self.position == "right":
             x = w * 0.97 - iw
+            # Clamp to left edge (in case of rounding)
+            x = max(w * 0.03, x)
         elif self.position == "left":
             x = w * 0.03
         else:
@@ -406,6 +420,7 @@ class RedPen(Overlay):
     _REQUIRED = {
         "circle": ("at",),
         "underline": ("from", "to"),
+        "arrow": ("from", "to"),
         "check": ("at",),
         "note": ("at",),
     }
@@ -472,6 +487,29 @@ class RedPen(Overlay):
             pts = _wobbly(pts, idx * 7 + 2, h * 0.004)
             d.line(pts[:max(2, int(len(pts) * e))], fill=col, width=lw,
                    joint="curve")
+        elif kind == "arrow":
+            x1, y1 = ann["from"][0] * w, ann["from"][1] * h
+            x2, y2 = ann["to"][0] * w, ann["to"][1] * h
+            n = 24
+            pts = [(x1 + (x2 - x1) * i / n,
+                    y1 + (y2 - y1) * i / n + math.sin(i * 1.7) * h * 0.004)
+                   for i in range(n + 1)]
+            pts = _wobbly(pts, idx * 7 + 2, h * 0.004)
+            shown = pts[:max(2, int(len(pts) * e))]
+            d.line(shown, fill=col, width=lw, joint="curve")
+            # Arrowhead at the end (draw when line is mostly complete)
+            if e > 0.8 and len(shown) >= 2:
+                ex, ey = shown[-1]
+                # Direction from second-to-last to last point
+                px, py = shown[-2]
+                ang = math.atan2(ey - py, ex - px)
+                ah_len = h * 0.035
+                ah_ang = 0.5  # radians from shaft
+                for da in (ah_ang, -ah_ang):
+                    a = ang + math.pi + da
+                    hx = ex + ah_len * math.cos(a)
+                    hy = ey + ah_len * math.sin(a)
+                    d.line([(ex, ey), (hx, hy)], fill=col, width=lw)
         elif kind == "check":
             cx, cy = ann["at"][0] * w, ann["at"][1] * h
             s = ann.get("size", 0.05) * min(w, h)

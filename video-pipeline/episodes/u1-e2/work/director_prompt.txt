@@ -1,0 +1,182 @@
+You are the visual director for an APUSH study-video series. You turn a
+locked two-host dialogue script (Maya + Marcus) into a shot-by-shot SCENE
+PLAN for slideforge, a Python animation library that renders every frame.
+
+You do NOT render anything. You output ONLY a JSON object matching the
+scene plan schema (version 1): {"version": 1, "episode": "...",
+"scenes": [{"id": "scene-00", "slide": "TitleSlide",
+"params": {...}, "duration_sec": 8.2, "transition": "cut", "trans_dur": 0,
+"overlays": [...]}]}.
+
+The 27 slide types you may use: TitleSlide, BulletSlide, StepsSlide,
+DisplayPointsSlide, DisplayHeadline, CompareSlide, HighlightSlide,
+CollageSlide, TitleCardSlide, DuoSlide, ImageSlide, SplitSlide, QuoteSlide,
+StatSlide, KenBurnsSlide, CalloutSlide, MapZoomSlide, RouteSlide,
+TerritorySlide, RecallSlide, SpectrumSlide, SketchSlide, CausalChainSlide,
+VidSlide, EraCardSlide, StaggerSlide, TacticalSlide.
+Overlays: keywordpop (giant outlined term), caption, lowerthird
+(name+role), sticker (cutout photo), regionglow (pulsing map tint).
+
+VISUAL GRAMMAR — follow it exactly:
+- Key-term KeywordPop: when the script introduces a testable term
+  (e.g. "triangular trade", "salutary neglect"), add a keywordpop overlay
+  starting within ~1 second of the spoken term.
+- DuoSlide whenever TWO PEOPLE are compared or discussed together
+  (portraits + name plates), never a single portrait for a comparison.
+- RouteSlide for voyages and journeys (route names available in the
+  manifest; e.g. columbus_1492, cortes_1519). MapZoomSlide for map tours
+  with labeled pins. CalloutSlide to zoom into labeled regions of an image.
+- QuoteSlide for primary-source quotes and for the episode's closing kicker.
+- CompareSlide for explicit X-vs-Y comparisons (empires, regions, systems).
+- StatSlide for numbers that deserve a count-up (population collapses,
+  silver flows, "500 settlers to 60").
+- BulletSlide / StepsSlide for spoken enumerations — bullets reveal
+  staggered, paced to the narration, never all at once.
+- StaggerSlide when the narration NAMES 2-4 items in sequence (e.g. "Three
+  boxes: maize, Iroquois, wilderness" or "Southwest, Plains, Northeast").
+  Each panel enters FROM the direction of its position as its name is SPOKEN.
+  Set each panel's "at" to the EXACT word-time from the WORD TIMES line
+  for that turn (e.g. if WORD TIMES shows "maize@3.7s", use "at": 3.7).
+  NEVER estimate — the measured times are in the prompt.
+  Panels: {"image": manifest path, "label": "...", "at": seconds, "from":
+  "left"|"right"|"top"|"bottom"}. Use "face_top": true for portrait images.
+- TacticalSlide for battles/ambushes with two forces: {"blue_label": "...",
+  "red_label": "...", "red_start": seconds when surrounding begins,
+  "red_end": seconds when surround completes, "title": "..."}. Blue dots hold
+  position (the ambushed force); red dots animate inward over the time window.
+  Deterministic seeded placement — same inputs, same output.
+- DisplayPointsSlide / DisplayHeadline for section headers and big numbered
+  points. TitleSlide opens the episode; TitleCardSlide works as a
+  chapter card ("Greetings from ..."). EraCardSlide is the designed title
+  card: kicker pill ("APUSH - UNIT 2 - EP. 8"), giant title, subtitle, up
+  to three gold boxes with icons, footer tag — pass "unit" (1-9) and it
+  picks the period background automatically. Use it for episode opens and
+  major section cards.
+- TerritorySlide for territorial control/claims maps; RecallSlide for
+  self-test beats; SpectrumSlide for spectrums and spectrums-of-opinion;
+  SketchSlide for hand-drawn-style diagrams; CausalChainSlide for
+  cause->effect chains.
+- VidSlide + anim_prompt for ATMOSPHERIC VIDEO: when no historic image fits
+  the beat but motion would help (e.g. mist over a river at dawn, desert wind,
+  rain on leaves, empty forest). Write a detailed "anim_prompt" (text-to-video
+  prompt, ≤15s): describe the shot, camera movement, palette, lighting, and
+  what to EXCLUDE (no people, no text, no modern objects, no faces).
+  The clips stage renders it via LTX; VidSlide plays it with your overlays.
+  NEVER use anim_prompt for factual content — maps, portraits, documents,
+  diagrams, and anything the viewer might take as evidence stay as historic
+  images or slideforge-rendered graphics. If a good historic image exists in
+  the manifest, use ImageSlide with that image instead of generating video.
+- NEVER a blank background: every text slide gets the textured default,
+  a contextual image from the manifest (era art, map, photo), or an era
+  background: "bg": {"type": "era", "unit": N} tints any slide to the
+  unit's period (1=parchment contact era ... 6=steel Gilded Age ...
+  8=cold-slate Cold War, 9=dark contemporary). Prefer era art or photos
+  where the manifest has them; era bg beats the generic default.
+- Eyes-closed-safe: the audio must stand alone. Visuals ADD (a term pops as
+  it is spoken, a face appears as the person is discussed) — they never
+  carry meaning the narration does not also state.
+- One scene per narration beat; scene duration_sec MUST equal the spoken
+  audio duration of the turns it covers (the compiler muxes the real audio
+  over the rendered video, so drift breaks sync). COPY durations EXACTLY from
+  the turn list above — do not round, estimate, or "clean up" the numbers.
+  If turns [3,8] have durations 4.3+13.7+5.2+10.3+3.5+9.8, the scene duration
+  is 46.8, not 47, not 45. The compiler REJECTS any scene whose duration
+  differs from its turns' sum by >= 1 frame (0.033s). Default transition "cut"
+  (trans_dur 0) unless a crossfade is motivated.
+- Every scene MUST carry "turns": [first_turn_index, last_turn_index]
+  (0-based, inclusive). The scenes' turns ranges must partition ALL script
+  turns contiguously: scene 0 starts at turn 0, each scene starts where the
+  previous ended, no gaps, no overlaps. The compiler rejects plans that
+  break this contract.
+- params.image / map_image / left.image / right.image / card.image /
+  cards[].image / bg.path / sticker image: repo-relative paths resolved
+  against the episode assets dir. Use ONLY paths present in the manifest.
+  Absolute paths are rejected.
+
+Output ONLY the JSON object. No prose, no markdown fences.
+
+EPISODE: u1-e2
+
+SCRIPT TURNS (speaker, duration_sec, text):
+[00] Maya (25.8s): Last time: Cahokia, corn, and millions of people who'd never heard of Europe. This time: a Genoese sailor with bad math sails west looking for Asia. He finds a continent that wasn't lost, and gets its people's name wrong for five centuries. Three boxes: the Columbian Exchange, the encomienda system, the Treaty of Tordesillas. Circle the ones you couldn't explain right now. Eight minutes, and they're yours.
+[01] Marcus (14.1s): Start with the why. Europe's hungry for Asian spices and silk, and the old land routes run straight through Ottoman territory. After 1453, when Constantinople falls, those routes get more expensive and less reliable.
+[02] Maya (5.2s): So the middleman gets greedy, and suddenly sailing into the unknown looks cheap by comparison.
+[03] Marcus (19.4s): That's the gold motive. Then there's God: Spain's just finished the Reconquista, centuries of pushing Muslim rule out of Iberia that ended at Granada in 1492. Converting new souls feels like duty. And glory: Portugal's getting rich off the sea route to Asia, and no rival crown watches that quietly.
+[04] Maya (3.6s): Gold, God, glory. Sounds like a pirate flag.
+[05] Marcus (2.2s): Basically the Spanish business plan.
+[06] Maya (2.7s): So Spain's rich and ready to spend?
+[07] Marcus (8.4s): Opposite. The Reconquista was expensive. Spain's broke and distracted. What they've got is a navy, a grudge, and perfect timing.
+[08] Maya (4.0s): Okay, Portugal first, then. How'd they crack the ocean?
+[09] Marcus (23.3s): A prince who never sailed. Henry the Navigator bankrolls voyage after voyage down the African coast, and his captains get the tools that change everything: the caravel, a small fast ship built to maneuver; lateen sails, triangular ones that let a ship claw against the wind; and the astrolabe, which reads latitude off the stars, plus the magnetic compass for holding a course.
+[10] Maya (7.6s): I capsized a kayak at camp when I was twelve and had to get towed in by a counselor. These guys crossed an ocean on a compass and a prayer.
+[11] Marcus (20.2s): Sailors called the open Atlantic the sea of darkness. Every mile south was past the edge of every map they owned. 1488: Bartolomeu Dias rounds the southern tip of Africa. 1498: Vasco da Gama reaches India. Portugal owns the sea road to Asia, and Spain needs another way in.
+[12] Maya (5.5s): In Civilization, Portugal's whole deal is trade routes. My brother plays them and just buys the map.
+[13] Marcus (10.1s): Never played it. But your brother's strategy is historically accurate. Meanwhile Spain's got a Genoese sailor with a wild pitch: Niña, Pinta, Santa María.
+[14] Maya (5.6s): I know those from a song in second grade. The tune's still in my head; the facts never made it.
+[15] Marcus (11.1s): That'll do. Columbus figures Asia sits a few thousand miles west of the Canaries. The real number's more like ten thousand. He gets the shape of the earth right and the size of the trip wildly wrong.
+[16] Maya (2.8s): So he fails upward into a continent.
+[17] Marcus (16.2s): October 12, 1492, the Bahamas. He calls the people he meets Indians because he's sure he's reached Asia. He dies still insisting it. Four voyages — the Caribbean, the Venezuelan coast, Central America — and never the Asia he was chasing.
+[18] Maya (4.3s): Five centuries of calling people by the wrong name has to be some kind of record.
+[19] Marcus (9.0s): It's up there. Now Spain's holding islands, and Portugal's furious. They'd spent decades mapping that African route. Somebody had to split the difference.
+[20] Maya (1.8s): The pope just drew a line?
+[21] Marcus (16.0s): In 1494 Spain and Portugal sign the Treaty of Tordesillas. There's your first box: an imaginary line, 370 leagues west of the Cape Verde islands — a league's roughly three miles. West of the line: Spain. East: Portugal.
+[22] Maya (2.4s): And France and England just agreed to that?
+[23] Marcus (9.4s): They ignored it completely. But Spain and Portugal mostly honored it, which is why Brazil speaks Portuguese today: the bulge of Brazil sticks out east of the line.
+[24] Maya (4.7s): An imaginary line divvying up the planet, and it actually held? Okay.
+[25] Maya (1.2s): Checking that one.
+[26] Marcus (16.2s): After 1492, the traffic starts: crops, animals, people, and diseases, moving both directions across the Atlantic. In 1972 the historian Alfred Crosby gave it a name: the Columbian Exchange. Box two.
+[27] Maya (3.7s): So that's the trade part: potatoes one way, sugar the other?
+[28] Marcus (15.9s): Bigger than trade, and nobody signed anything. Maize, potatoes, and tomatoes sail east and help fuel population growth across Europe. Wheat and sugarcane sail west. Horses, cattle, and pigs sail west too. The Americas had never seen any of them.
+[29] Maya (2.0s): And what about the diseases?
+[30] Marcus (13.9s): Mostly west, and catastrophic. Smallpox, measles, influenza. In the hardest-hit places, eight or nine out of ten people die. The one that might've gone east is syphilis, and historians still argue about that one.
+[31] Maya (1.7s): Box two, checked.
+[32] Marcus (16.1s): So how do a few hundred Spaniards topple empires? Steel weapons and armor, horses, and above all disease. But no single one of those does it alone. It's the combination, plus alliances with Indigenous peoples who had their own reasons to fight the Aztecs.
+[33] Maya (1.4s): So it wasn't the guns.
+[34] Marcus (6.7s): Guns helped, but early guns were slow to reload and miserable in the rain. The real killers were invisible.
+[35] Maya (2.8s): And then the encomienda. Box three.
+[36] Marcus (9.5s): The crown grants a colonist the labor of a group of Native people. In exchange, the colonist owes them protection and Christianization. That's the deal on paper.
+[37] Maya (2.1s): So it's slavery with paperwork?
+[38] Marcus (13.2s): Close enough that historians argue about where the line is. Legally it wasn't chattel slavery. The crown insisted these were free subjects of the king. In practice, the work quotas were brutal and the protection was mostly theoretical.
+[39] Maya (3.8s): Checking the last one. Protection in very large quotes.
+[40] Maya (3.2s): Okay. That was a lot of ocean.
+[41] Maya (14.8s): Three boxes, let's land them. Box one: the Treaty of Tordesillas. 1494, the pope's line, 370 leagues west of the Cape Verde islands. Spain gets the west, Portugal gets the east. Brazil ends up speaking Portuguese.
+[42] Marcus (0.8s): Clean.
+[43] Maya (19.8s): Box two: the Columbian Exchange. Crosby named it in 1972. Crops and animals and people and disease, moving both ways. Memory-check: in the hardest-hit places, eight or nine out of ten died — and that was mostly… east? No. West. Disease went west.
+[44] Marcus (3.4s): West. Smallpox and measles sailed with the colonists.
+[45] Maya (5.6s): Box three: encomienda — Spain's system for shipping labor across the Atlantic?
+[46] Marcus (9.4s): Other direction. The labor was already there; that's the whole point. The crown granted a colonist Native labor, and the colonist owed protection and conversion back.
+[47] Maya (4.5s): Right. And the protection part deserves the biggest air quotes in history.
+[48] Marcus (1.0s): It does.
+[49] Maya (17.5s): Two questions, AP-shaped. Say your answer out loud before I do. First, stimulus style: a Spanish priest in the 1550s writes that Native villages "stand empty, the fields untilled, for the sickness took the workers." What's the bigger pattern this source points to?
+[50] Maya (5.0s): [5-second pause]
+[51] Maya (20.5s): The Columbian Exchange's disease front — population collapse on a scale that broke Native communities and fed the demand for coerced labor. Second: in 1494, Spain and Portugal sign an agreement splitting new lands along a line 370 leagues west of the Cape Verde islands. Name it, and explain Brazil.
+[52] Maya (5.0s): [5-second pause]
+[53] Maya (8.8s): The Treaty of Tordesillas. Brazil bulges east of the line, so it landed on Portugal's side. That's why it's the one country in South America that speaks Portuguese.
+[54] Maya (4.0s): They sailed west looking for Asia — and found a world.
+[55] Marcus (5.8s): Next time: England crashes the party: Drake, a vanished colony, and an Armada.
+[56] Maya (1.6s): Check your three boxes.
+AUDIO RECIPE: 1.8s intro, 0.6s silence after every turn, 4.5s tail. Scene durations MUST follow: first scene = offset + Σ(turn+gap); middle scenes = Σ(turn+gap); last scene = Σ(turn+gap) + tail. The compiler rejects anything else — do not use raw turn sums.
+
+ASSET MANIFEST (path, kind, description):
+images/astrolabe-detail.jpg [photo]: Islamic brass astrolabe, Pergamon Museum — Joyofmuseums, CC BY-SA 4.0, via Wikimedia Commons
+images/cannon.jpg [photo]: Mons Meg, 15th-century wrought-iron bombard at Edinburgh Castle — Kim Traynor, CC BY-SA 3.0, via Wikimedia Commons
+images/cathedral.jpg [photo]: Interior of Toledo Cathedral, Spain — Adam Jones, Ph.D., CC BY-SA 3.0, via Wikimedia Commons
+images/columbus-portrait.jpg [painting]: Sebastiano del Piombo, 'Portrait of a Man, Said to be Christopher Columbus' (c.1519), Metropolitan Museum of Art — no lifetime portrait of Columbus exists; this is the best-known posthumous depiction — public domain, via Wikimedia Commons
+images/debry-hispaniola-mines.jpg [engraving]: Theodor de Bry (after Girolamo Benzoni), 'Slaves from Guinea digging for gold and silver in mines in Hispaniola' (1595) — British Library, CC0, via Wikimedia Commons
+images/gold-coins.jpg [photo]: Hoard of Spanish-American gold doubloons (8-escudo pieces, dated 1790-1801) — portableantiquities, CC BY 2.0, via Wikimedia Commons
+images/henry-navigator.jpg [painting]: Nuno Gonçalves, 'Panel of the Prince' (St. Vincent Panels, c.1470) — the famous alleged portrait of Prince Henry the Navigator — public domain, via Wikimedia Commons
+images/comanche-horses.jpg [painting]: George Catlin, 'Comanche War Party, Mounted on Wild Horses' (1830s) — Smithsonian American Art Museum, CC0
+images/lienzo-tlaxcala.jpg [manuscript]: Lienzo de Tlaxcala (16th-c. manuscript): Cortés and the Tlaxcalan alliance — public domain, via Wikimedia Commons
+images/maize.jpg [photo]: Maize field — High Contrast, CC BY 3.0 de, via Wikimedia Commons
+images/columbus-manuscript.jpg [manuscript]: Capitulaciones de Santa Fe, 17 April 1492 — the agreement between the Crown and Columbus — Jl FilpoC, CC BY-SA 4.0, via Wikimedia Commons
+images/isabella-ferdinand.jpg [painting]: Wedding portrait of Ferdinand of Aragon and Isabella of Castile — anonymous, public domain, via Wikimedia Commons
+images/portolan-chart.jpg [map]: 15th-c. portolan chart (Roselli) — public domain, via Wikimedia Commons
+images/caravel-replicas.jpg [photo]: Niña/Pinta/Santa María replicas, 1893 — public domain, via Wikimedia Commons
+images/smallpox-florentine-codex.jpg [manuscript]: Florentine Codex, Book 12 (1577): a ticitl (healer) tending smallpox sufferers during the 1520 epidemic — public domain, via Wikimedia Commons
+images/sugarcane-harvest.jpg [engraving]: Engraving of enslaved Africans harvesting sugarcane, Caribbean (sugar refinery in background) — public domain, via Wikimedia Commons
+images/tordesillas-map.jpg [map]: Cantino planisphere (1502) — Portuguese world map showing the Tordesillas demarcation line — anonymous Portuguese cartographer, public domain, via Wikimedia Commons
+images/carrack-1565.jpg [photo]: 
+images/compass-16th-century.jpg [generated]: 
+
+Write the scene plan JSON now. One scene per beat; durations must match the
+spoken durations above so the rendered video syncs with the real audio.

@@ -31,6 +31,7 @@ sys.path.insert(0, ROOT)
 from stages import timing, beats, wordalign, anim, clips, render, assemble, \
     verify  # noqa: E402
 from stages import direct as direct_stage, slideforge_render  # noqa: E402
+from stages import direction as direction_stage  # noqa: E402
 
 STAGES = ["audio", "timing", "wordtiming", "beats", "wordalign", "anim", "clips", "render",
           "assemble", "verify"]
@@ -40,7 +41,7 @@ STAGES = ["audio", "timing", "wordtiming", "beats", "wordalign", "anim", "clips"
 # "legacy" keeps the original chrome-based beat-segment pipeline.
 RENDERERS = {
     "legacy": STAGES,
-    "slideforge": ["audio", "timing", "wordtiming", "direct", "clips", "slideforge_render",
+    "slideforge": ["audio", "timing", "wordtiming", "direct", "direction", "clips", "slideforge_render",
                    "assemble", "verify"],
 }
 
@@ -146,6 +147,8 @@ def main():
         elif stage == "direct":
             direct_stage.run(ep_dir, cfg, provider=args.director_provider,
                              plan_file=args.plan_file)
+        elif stage == "direction":
+            direction_stage.run(ep_dir, cfg)
         elif stage == "slideforge_render":
             video_path = slideforge_render.run(ep_dir, cfg, force=args.force)
         elif stage == "assemble":

@@ -78,6 +78,21 @@ class KenBurns(Scene):
         stops = list(stops)
         if not stops:
             raise ValueError("KenBurns stops must not be empty")
+        # Accept dicts {"scale": s, "cx": x, "cy": y} or tuples (cx, cy, fw).
+        # Dict scale 1.0 = full frame; fw = 1/scale.
+        norm = []
+        for st in stops:
+            if isinstance(st, dict):
+                try:
+                    scale = float(st["scale"]); cx = float(st["cx"]); cy = float(st["cy"])
+                except (KeyError, TypeError, ValueError):
+                    raise ValueError(
+                        f"KenBurns stop dict must have 'scale', 'cx', 'cy' "
+                        f"(got {st!r})")
+                norm.append((cx, cy, 1.0 / scale if scale > 0 else 1.0))
+            else:
+                norm.append(tuple(st))
+        stops = norm
         super().__init__(duration, cfg)
         self.image = image  # RGB numpy array
         self.stops = stops

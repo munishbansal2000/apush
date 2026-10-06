@@ -69,6 +69,7 @@ SLIDE_TYPES = {
     "eracardslide": _slides.EraCardSlide,
     "staggerslide": _slides.StaggerSlide,
     "tacticalslide": _slides.TacticalSlide,
+    "reveal": _slides.RevealSlide,
     "revealslide": _slides.RevealSlide,
     "sketchslide": _sketch.SketchSlide,
     # Not in the original 18, but present in the library: the old pipeline's
@@ -88,6 +89,8 @@ OVERLAY_TYPES = {
     "sticker": _overlays.Sticker,
     "regionglow": _overlays.RegionGlow,
     "timelineribbon": _overlays.TimelineRibbon,
+    "redpen": _overlays.RedPen,
+    "mapnote": _overlays.MapNote,
 }
 
 # Param paths (dot-separated, per slide type) that hold image paths.
@@ -189,6 +192,180 @@ def _validate_timeline(plan, fps=30):
                 f"{expected:.3f}s)")
         expected = start + float(spec["duration_sec"])
 
+
+def _validate_toolkit_sync(plan, assets_dir):
+    """Compiler gate: toolkit panels must sync to spoken keywords.
+
+    When word_times.json exists (Vosk measured timestamps): each toolkit
+    panel's 'at' must be within 0.5s of its keyword's measured word time.
+    This is real enforcement — the build FAILS if panels don't match speech.
+
+    Without word times: fall back to stagger check (panels >= 1.0s apart).
+    """
+    manifest_path = os.path.join(assets_dir, "images.json")
+    if not os.path.exists(manifest_path):
+        return
+    manifest = json.load(open(manifest_path, encoding="utf-8"))
+    images = manifest.get("images", {})
+    toolkit_keywords = {}  # file -> keyword
+    for key, entry in images.items():
+        if not isinstance(entry, dict):
+            continue
+        d = entry.get("direction")
+        if isinstance(d, dict) and d.get("type") == "toolkit":
+            toolkit_keywords[entry["file"]] = d.get("keyword", "")
+
+    if not toolkit_keywords:
+        return
+
+    # Load word times if available
+    word_times = {}
+    for wt_name in ["word_times.json"]:
+        wt_path = os.path.join(assets_dir, "work", wt_name)
+        if os.path.exists(wt_path):
+            word_times = json.load(open(wt_path, encoding="utf-8"))
+            break
+
+    # Build turn timing map for scene-relative conversion
+    turn_timing = {}
+    for t_name in ["timings_v6.json", "timings.json"]:
+        t_path = os.path.join(assets_dir, "work", t_name)
+        if os.path.exists(t_path):
+            tdata = json.load(open(t_path, encoding="utf-8"))
+            for t in tdata.get("turns", []):
+                turn_timing[t["turn"]] = t["start"]
+            break
+
+    for scene in plan.get("scenes", []):
+        panels = scene.get("params", {}).get("panels", [])
+        toolkit_panels = [(p, toolkit_keywords[p["image"]])
+                          for p in panels
+                          if p.get("image", "") in toolkit_keywords]
+        if not toolkit_panels:
+            continue
+
+        scene_start = scene.get("start_sec", scene.get("start", 0))
+
+        if word_times:
+            # Strict mode: verify against measured word times
+            for panel, keyword in toolkit_panels:
+                at = panel.get("at", 0)
+                # Find keyword in word times
+                measured = None
+                kw = keyword.lower()
+                for tid, words in word_times.items():
+                    if tid not in turn_timing:
+                        continue
+                    ts = turn_timing[tid]
+                    for w in words:
+                        wl = w["word"].lower().strip(".,!?;:")
+                        if wl == kw or (kw.endswith(wl) and len(wl) >= 4):
+                            measured = (ts - scene_start) + w["start"]
+                            break
+                    if measured is not None:
+                        break
+                if measured is None:
+                    continue  # keyword not in word times, skip
+                drift = abs(at - measured)
+                if drift > 0.5:
+                    raise ValueError(
+                        f"[toolkit-sync] scene '{scene.get('id')}': "
+                        f"panel '{keyword}' at={at:.2f}s but word spoken at "
+                        f"{measured:.2f}s (drift {drift:.2f}s > 0.5s). "
+                        f"Run the direction stage to re-sync from word times."
+                    )
+        else:
+            # Fallback: stagger check
+            arrival_times = sorted(p.get("at", 0) for p, _ in toolkit_panels)
+            if len(arrival_times) >= 2:
+                for i in range(1, len(arrival_times)):
+                    gap = arrival_times[i] - arrival_times[i-1]
+                    if gap < 1.0:
+                        raise ValueError(
+                            f"[toolkit-sync] scene '{scene.get('id')}': "
+                            f"toolkit panels arrive {gap:.2f}s apart (< 1.0s). "
+                            f"Run the direction stage to sync panels."
+                        )
+
+def _validate_direction(plan, assets_dir):
+    """Enforce asset direction tags: if an asset declares directorial
+    requirements (map markers, directional arrows), the scene using it
+    must honor them. Raises PlanError on violation.
+
+    Direction tags live in images.json under images[<key>].direction.
+    Generic across episodes: the asset builder declares intent, the
+    compiler enforces it, the director reads it to get it right first time.
+    """
+    import os, json
+    manifest_path = os.path.join(assets_dir, "images.json")
+    if not os.path.exists(manifest_path):
+        return
+    try:
+        manifest = json.load(open(manifest_path))
+    except (json.JSONDecodeError, OSError):
+        return
+    images = manifest.get("images", {})
+
+    # Build file -> direction lookup
+    dir_by_file = {}
+    for key, entry in images.items():
+        if not isinstance(entry, dict):
+            continue
+        f = entry.get("file", "")
+        d = entry.get("direction")
+        if f and d:
+            dir_by_file[f] = (key, d)
+
+    if not dir_by_file:
+        return
+
+    for spec in plan["scenes"]:
+        sid = spec.get("id", "?")
+        params = spec.get("params", {})
+        overlays = spec.get("overlays", [])
+
+        # Collect image files used by this scene
+        used_files = set()
+        for k in ("image", "map_image", "bg"):
+            v = params.get(k)
+            if isinstance(v, str) and v:
+                used_files.add(v)
+            elif isinstance(v, dict) and v.get("path"):
+                used_files.add(v["path"])
+        # StaggerSlide panels
+        for p in params.get("panels", []):
+            if isinstance(p, dict) and p.get("image"):
+                used_files.add(p["image"])
+
+        for f in used_files:
+            if f not in dir_by_file:
+                continue
+            key, d = dir_by_file[f]
+            dtype = d.get("type")
+
+            if dtype == "map":
+                # Map assets on MapZoomSlide require markers.
+                # Other slide types (e.g. KenBurns push to a region) get a warning.
+                markers = params.get("markers", [])
+                if spec.get("slide") == "MapZoomSlide" and not markers:
+                    raise PlanError(
+                        f"scene '{sid}': asset '{key}' is tagged type=map "
+                        f"but MapZoomSlide has no markers. Add markers from "
+                        f"the direction tag in images.json.")
+
+            elif dtype == "directional":
+                # Directional assets require a redpen arrow overlay
+                has_arrow = False
+                for ov in overlays:
+                    if ov.get("type") == "redpen":
+                        for ann in ov.get("annotations", []):
+                            if ann.get("kind") == "arrow":
+                                has_arrow = True
+                                break
+                if not has_arrow:
+                    raise PlanError(
+                        f"scene '{sid}': asset '{key}' is tagged type=directional "
+                        f"but has no redpen arrow overlay. Add one from the direction tag.")
 
 def _validate_layout(plan):
     """Version-aware layout gate: v1 partitions turns, v2 partitions time."""
@@ -539,6 +716,8 @@ def _build_movie(plan, assets_dir, width, height, fps):
     land exactly on audio boundaries.
     """
     _validate_layout(plan)
+    _validate_direction(plan, assets_dir)
+    _validate_toolkit_sync(plan, assets_dir)
     orig_durations = [float(s["duration_sec"]) for s in plan["scenes"]]
     orig_total = sum(orig_durations)
     plan = _compensate_transitions(plan)
@@ -553,6 +732,36 @@ def _build_movie(plan, assets_dir, width, height, fps):
         scenes.append(_build_scene(spec, assets_dir, sid))
 
     cfg = Config(w=int(width), h=int(height), fps=int(fps))
+    # Dry-render one frame per scene to catch frame() errors before the
+    # full render (e.g. CompareSlide with wrong left/right structure builds
+    # fine but renders empty — seen live on u1-e2 scene-09).
+    # Also runs validate_visual: text overflowing the frame is a HARD error
+    # (user saw cut-off text on single-line screens); contrast/collision
+    # issues are warnings.
+    for (scene, _, _), spec in zip(scenes, plan["scenes"]):
+        sid = spec.get("id", "?")
+        if scene.cfg is None:
+            scene.cfg = cfg
+        try:
+            scene.frame(0.0)
+            mid = float(spec["duration_sec"]) / 2
+            scene.frame(mid)
+        except Exception as e:
+            raise PlanError(
+                f"scene '{sid}': dry-render failed: {type(e).__name__}: {e}")
+        try:
+            issues = scene.validate_visual() if hasattr(scene, "validate_visual") else []
+        except Exception as e:
+            raise PlanError(
+                f"scene '{sid}': visual validation crashed: "
+                f"{type(e).__name__}: {e}")
+        hard = [i for i in issues if "overflows the frame" in i]
+        if hard:
+            raise PlanError(
+                f"scene '{sid}': text off-screen:\n  " + "\n  ".join(hard))
+        for i in issues:
+            if i not in hard:
+                print(f"  [visual-warn] scene '{sid}': {i}")
     movie = Movie(cfg)
     for scene, transition, trans_dur in scenes:
         movie.add(scene, transition=transition, trans_dur=trans_dur)
@@ -699,6 +908,8 @@ def render_scenes_chunked(plan_path, assets_dir, out_dir, width=1280,
               "(estimates leak sync — pass work/timings.json)",
               file=sys.stderr)
     _validate_layout(plan)
+    _validate_direction(plan, assets_dir)
+    _validate_toolkit_sync(plan, assets_dir)
     orig_durations = [float(s["duration_sec"]) for s in plan["scenes"]]
     bounds = _frame_boundaries(orig_durations, fps)
     total_frames = bounds[-1]
