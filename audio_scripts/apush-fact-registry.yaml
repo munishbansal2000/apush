@@ -1395,3 +1395,74 @@ facts:
       - "rescue.*first.*(told|described|published).*(1608|1609|1610)"
       - "generall historie.*(1608|1610)"
     sources: [5steps, britannica]
+
+  - id: F-U3-002
+    topic: Grenville's case vs colonist counter — the two ledgers
+    correct: "London's case: the colonies benefited most from the war and their tax burden was relatively light compared to taxpayers in England, even on the same goods — so they should help pay the debt (princeton ch. 7). The colonists' counter: they had provided so many soldiers that they had fulfilled their obligation (princeton ch. 7). Never teach the colonist counter as 'they raised their own money and paid their own assembly war taxes' — that goes beyond Tier 1."
+    falsehoods:
+      - "colonists.*(paid|raised).*(own money|war taxes).*(counter|argument|case)"
+    sources: [princeton]
+
+  - id: F-U3-003
+    topic: Neolin's vision (1760-61) — the religious spark behind Pontiac's Rebellion
+    correct: "Neolin: Delaware holy man, 1760-61, apocalyptic vision — curb contact with fur traders, put down guns and alcohol, stop infighting, or disappear; 'set the stage for unified, violent resistance' (prem27 ch. 5). Never teach Neolin as the war chief — Pontiac was the war chief; Neolin was the prophet. The patterns below use lookaheads so G12 does not fire on the script's own correction dialogue ('Neolin was the prophet, Pontiac was the war chief' / 'Pontiac, the Delaware prophet. No, wait: Pontiac the Ottawa chief...')."
+    falsehoods:
+      - "neolin(?!.{0,60}prophet).{0,80}(war chief|led the (attacks|rebellion))"
+      - "pontiac(?!.{0,60}(no, wait|not the prophet|ottawa chief)).{0,80}(prophet|visionary)"
+    sources: [prem27]
+
+  - id: F-U3-004
+    topic: Proclamation of 1763 motives — triage, not revenge
+    correct: "The Proclamation of 1763 was issued 'in response to the outbreak of Pontiac's Rebellion' (prem27 ch. 5); British motives were to avoid provoking additional warfare, avoid the costs of more campaigns, and keep fur-trade profits flowing. It was 'one of the first major disputes between Great Britain and the colonists.' Never teach 'punishment of the colonies' as London's motive."
+    falsehoods:
+      - "proclamation.*1763.*(punish|punishment|revenge).*colon"
+      - "britain.*punished.*colon.*proclamation"
+    sources: [prem27]
+
+  - id: F-U3-005
+    topic: French vs British Native diplomacy — gift-giving as dominance and protection
+    correct: "The French negotiated and sat through ceremonies; gift-giving was diplomacy, and Native nations read it as dominance and protection. After taking the French forts, Amherst saw gift ceremonies as 'demeaning' and cut them off (prem27 ch. 5). Never teach that the British kept French gift diplomacy."
+    falsehoods:
+      - "british.*(continued|kept).*(gift.*(giving|ceremonies)|french.*diplomacy)"
+    sources: [prem27]
+
+  - id: F-U3-006
+    topic: British 'germ warfare' — smallpox-infected blankets against the Ottawa
+    correct: "Princeton (ch. 7) calls it British 'germ warfare': smallpox-infected blankets handed out 'to help defeat the Ottawa.' The Fort Pitt site-name is standard-accounts-only, beyond Tier 1-2 — hedge in dialogue ('by the usual account') or disclose in the footer."
+    falsehoods:
+      - "smallpox.*blankets.*(french|spanish)"
+    sources: [princeton]
+
+  - id: F-U3-007
+    topic: Paxton Boys — the colonists' own atrocity (1763)
+    correct: "Paxton Boys (prem27 ch. 5): 1763 attack on peaceful Conestoga Indians (many Christians), twenty dead; ~250 marched on Philadelphia; their 'Apology' showed bitterness toward frontier Indians and resentment of the Quaker elite's lenient Indian policy. Tier 1 pins only the year 1763 — never teach a month for the attack."
+    falsehoods:
+      - "paxton.*(christmas|december 25)"
+    sources: [prem27]
+
+  - id: F-U3-008
+    topic: Proclamation established the 'Indian Territory' pattern
+    correct: "The Proclamation 'established a pattern of demarcating 'Indian Territory,' a pattern that would be adopted and pursued by the United States' (princeton ch. 7). Safe to teach as the exam's long-view line."
+    falsehoods: []
+    sources: [princeton]
+
+  - id: F-U3-009
+    topic: Postwar British troop figure ~10,000 — hedge and disclose
+    correct: "'Roughly ten thousand' British soldiers in postwar North America is the commonly taught figure, but it is NOT pinned in any Tier 1-2 source used — always hedge ('roughly') and disclose in the Sources footer. Never teach a 'French rematch' purpose — Tier 1-2 do not pin it; teach 'enforce the line and keep a burning frontier quiet.'"
+    falsehoods:
+      - "ten thousand soldiers.*french rematch"
+    sources: [web]
+
+  - id: F-U3-010
+    topic: Washington's western land speculation and resentment of crown limits
+    correct: "Washington was 'always disposed to speculate in western holdings' and 'resented the limitations that the crown in time laid on the westward movement' (Britannica, Washington biography). Safe as the land-speculator beat under the Proclamation box."
+    falsehoods: []
+    sources: [britannica]
+
+  - id: F-U3-011
+    topic: Pontiac's Rebellion toll and end — 400+ soldiers, ~2,000 colonists
+    correct: "Pontiac's Rebellion: Detroit first, then six other forts (prem27 ch. 5) — never teach 'eight of twelve.' 400+ British soldiers and ~2,000 colonists killed or captured; Amherst replaced by Gage Aug 1763; 'finally broken by Gage'; bloodshed into 1764. Never teach that Pontiac's Rebellion was the colonists rebelling."
+    falsehoods:
+      - "eight of (the )?twelve.*forts"
+      - "colonists.*rebelled.*1763.*pontiac"
+    sources: [prem27]
