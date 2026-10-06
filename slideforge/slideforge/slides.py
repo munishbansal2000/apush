@@ -427,7 +427,9 @@ class RevealSlide(Slide):
             num_text = f"{i + 1}"
             badge_r = int(num_size * 0.75)
             badge_cx = int(w * 0.12 + badge_r)
-            badge_cy = int(y + lh // 2)
+            _asc, _desc = text_font.getmetrics()
+            _lh = _asc + _desc
+            badge_cy = int(y + _lh // 2)
             # Badge entrance: scale in
             badge_k = a01(t, at, 0.3, ease=ease_out_back) if at >= 0 else 1.0
             if badge_k > 0:
