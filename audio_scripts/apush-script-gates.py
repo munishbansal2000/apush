@@ -83,6 +83,13 @@ def load_registry():
 
 
 def registry_hits(spoken, facts):
+    # A "don't write that [falsehood]" pedagogical construction explicitly
+    # labels the falsehood as wrong — it must not trip the gate. Skip any
+    # match whose sentence carries a negation frame.
+    NEG_FRAME = re.compile(
+        r"\b(don't|do not|never)\s+(write|say|claim|argue)\s+that\b",
+        re.IGNORECASE,
+    )
     out = []
     for fact in facts:
         for pat in fact.get("falsehoods", []) or []:
@@ -91,9 +98,13 @@ def registry_hits(spoken, facts):
             except re.error:
                 continue
             for ln, _, b in spoken:
-                if rx.search(b):
-                    out.append((ln, fact["id"], pat, b[:70]))
-                    break
+                for s in sentences(b):
+                    if rx.search(s) and not NEG_FRAME.search(s):
+                        out.append((ln, fact["id"], pat, s[:70]))
+                        break
+                else:
+                    continue
+                break
     return out
 NON_SPEAKER = frozenset({
     "SCREEN",

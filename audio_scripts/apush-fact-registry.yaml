@@ -108,11 +108,13 @@ facts:
     sources: [web]
 
   - id: F-CIV-013
-    topic: Sherman's total war — property, not people
-    correct: "Sherman's total war targeted property and infrastructure — food, rails, workshops — not people. AP wants this distinction: 'total war means everyone suffers' is imprecise."
+    topic: Sherman's hard/total war — a live historians' debate, not a flat fact
+    correct: "Sherman's weapon was hard war (what AP calls total war): destroying the South's economic base AND its civilians' will to back the war. Crops, rails, workshops. Not massacre, but not gentle either — he ordered Atlanta's civilians out of the city, and 'make Georgia howl' was explicitly about civilian morale. Never present 'never targeted civilians' as a flat right answer; the stimulus-style framing is: evidence for (evacuation, destroyed civilian property) vs evidence complicating it (orders aimed at military-useful property, few civilians killed)."
     falsehoods:
       - "total war means everyone suffers"
-    sources: [prem27, web]
+      - "property and infrastructure, never civilians"
+      - "never targeted civilians"
+    sources: [prem27, britannica]
 
   - id: F-CIV-014
     topic: Antietam casualties
@@ -128,9 +130,11 @@ facts:
 
   - id: F-CIV-016
     topic: 1864 election
-    correct: "Atlanta's fall (Sept 1864) helped save Lincoln's reelection against McClellan, who ran as the Democratic peace candidate. Prime AP causation."
-    falsehoods: []
-    sources: [prem27, web]
+    correct: "Atlanta's fall (Sept 1864) helped save Lincoln's reelection against McClellan. Nuance: the DEMOCRATIC PLATFORM called the war a failure and demanded negotiations, but McClellan himself publicly disowned that plank and said he'd fight on for Union. Correct framing: 'The Democratic platform called the war a failure. McClellan himself disowned that plank, but a Democratic win would have emboldened the peace movement' → 'might have opened the door to a negotiated peace' (not 'ended the war with the Confederacy intact'). Never call McClellan flatly 'the peace candidate.'"
+    falsehoods:
+      - "ran as the peace candidate"
+      - "mcclellan, the peace candidate"
+    sources: [princeton, britannica]
 
   - id: F-CIV-017
     topic: Richmond bread riot
@@ -143,6 +147,45 @@ facts:
     correct: "Lee surrendered at Appomattox Court House on April 9, 1865, on generous terms. Lincoln was assassinated five days later (April 14/15)."
     falsehoods: []
     sources: [norris, prem27, 5steps, web]
+
+  - id: F-CIV-019
+    topic: Cold Harbor casualties — killed vs wounded, and the figure is disputed
+    correct: "Cold Harbor (June 3, 1864): Union casualties were heavy in the first hour — say 'thousands in the first hour,' never a precise figure (the ~7,000 killed-or-wounded figure is contested). Never state casualties as deaths."
+    falsehoods:
+      - "kills something like seven thousand union soldiers"
+      - "seven thousand union soldiers (were )?killed at cold harbor"
+      - "7,000 union soldiers killed at cold harbor"
+    sources: [nps, britannica]
+
+  - id: F-CIV-020
+    topic: Richmond bread riot — Davis detail is contested
+    correct: "Richmond bread riot: April 1863, real and well-documented. But the detail that Jefferson Davis personally faced the crowd is contested across witness accounts — always hedge ('by some accounts') or cut it."
+    falsehoods: []
+    sources: [norris]
+
+  - id: F-CIV-021
+    topic: Atlanta evacuation + "make Georgia howl" (Q3 stimulus evidence)
+    correct: "Sherman ordered Atlanta's civilian population evacuated on taking the city (Special Field Orders No. 67, Sept 14, 1864). 'Make Georgia howl' is from his Oct 9, 1864 telegram to Grant — AFTER Atlanta's September fall, BEFORE the March to the Sea (mid-November). It belongs narratively with the March, not before Atlanta. Both are verified; they are the 'supports' evidence for the Sherman stimulus SAQ."
+    falsehoods: []
+    sources: [nps, britannica]
+
+  - id: F-CIV-022
+    topic: Lincoln's blind memorandum, August 1864
+    correct: "On August 23, 1864, Lincoln wrote a sealed memorandum stating it seemed 'exceedingly probable' he would not be reelected, and had cabinet members sign it sight unseen. Use as the prediction-beat hook for the 1864 election — stronger than 'Lincoln privately expected to lose.' (Primary holder: Library of Congress, which quotes the memo verbatim.)"
+    falsehoods: []
+    sources: [britannica]
+
+  - id: F-CIV-024
+    topic: Black soldiers in the Civil War (next lesson's content — teaser commits to it)
+    correct: "About 180,000 Black soldiers served in the Union army by war's end (Britannica: 'about 180,000 African Americans were in the army'; 'nearly 180,000 Black troops had enlisted'). The 54th Massachusetts (Col. Robert Gould Shaw, Fort Wagner, 1863) is the famous regiment. Teased in U5-E7; belongs to the Emancipation lesson."
+    falsehoods: []
+    sources: [britannica]
+
+  - id: F-CIV-023
+    topic: Grant's reputation — Fort Donelson and Vicksburg, not Shiloh alone
+    correct: "Grant's reputation was set at Fort Donelson ('unconditional surrender,' Feb 1862) and Vicksburg. The reported Lincoln remark 'I can't spare this man, he fights' dates from AFTER SHILOH (April 1862), when critics demanded Grant's removal — place it there, with 'reportedly.'"
+    falsehoods: []
+    sources: [nps]
 
   - id: F-LP-001
     topic: Spain's protest of the Louisiana Purchase
@@ -165,5 +208,34 @@ facts:
   - id: F-LP-004
     topic: Louisiana Purchase boundaries
     correct: "The purchase's boundaries were unspecified at the time of sale — this is why the boundary dispute (and Adams–Onís) matters."
+    falsehoods: []
+    sources: [prem27, web]
+
+  - id: F-AOC-001
+    topic: Shays' Rebellion causes — debt AND taxes, not one or the other
+    correct: "Shays' Rebellion (1786-87) was driven by crushing private DEBT plus heavy state TAXES, all demanded in hard currency farmers didn't have. Never teach 'debt, not taxes' or 'taxes, not debt' as a trap — both books list both causes."
+    falsehoods:
+      - "it wasn't taxes. it was debt"
+      - "debt, not taxes. the farmers"
+      - "shays.*wasn't about taxes"
+    sources: [5steps, prem27, norris]
+
+  - id: F-AOC-002
+    topic: 1781 impost — Rhode Island's single no
+    correct: "The 1781 five-percent impost was blocked by RHODE ISLAND's single rejection (12 states approved; unanimity required). Do not name Virginia or New York as co-blockers of the 1781 attempt — sources conflict on the later 1783 attempt (Prem27: RI+NY; Norris: RI+Virginia). The undisputed core is Rhode Island alone killing the 1781 impost."
+    falsehoods: []
+    sources: [prem27, norris]
+
+  - id: F-AOC-003
+    topic: Northwest Ordinance core facts
+    correct: "Northwest Ordinance 1787: surveyed townships sold orderly; one section per township reserved for public schools; slavery PROHIBITED north of the Ohio River only (not everywhere); 60,000 population → statehood application; new states admitted EQUAL to the original thirteen. Called the most consequential legislation of the Confederation period."
+    falsehoods:
+      - "ordinance ended slavery"
+      - "northwest ordinance.*abolished slavery"
+    sources: [5steps, prem27, norris]
+
+  - id: F-AOC-004
+    topic: Northwest Indian War sequence
+    correct: "Little Turtle's confederacy destroyed Harmar's army (1790) and St. Clair's army at the Wabash (1791, 600+ killed — worst US Army defeat at Native hands); Wayne won at Fallen Timbers (1794); Treaty of Greenville (1795) ceded most of Ohio. Keep the sequence in chronological order."
     falsehoods: []
     sources: [prem27, web]
