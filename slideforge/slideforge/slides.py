@@ -655,8 +655,21 @@ class DisplayPointsSlide(Slide):
     def _build_lines(self):
         size = int(self.cfg.h * 0.115)
         max_w = self.cfg.w * 0.86
-        self._lines = [_outlined_block(text, size, max_w)
-                       for text in self.points]
+        lines = [_outlined_block(text, size, max_w)
+                 for text in self.points]
+        # Stack by measured height: wrapped blocks can be taller than a
+        # fixed slot, which used to overlap them. Shrink-to-fit keeps the
+        # whole stack inside the frame, below the title kicker when present.
+        self._gap = int(self.cfg.h * 0.06)
+        self._top = self.cfg.h * 0.17 if self.title else self.cfg.h * 0.06
+        total = sum(im.size[1] for im in lines) + self._gap * max(0, len(lines) - 1)
+        avail = self.cfg.h * 0.94 - self._top
+        if total > avail and total > 0:
+            s = avail / total
+            lines = [im.resize((max(1, int(im.size[0] * s)),
+                                max(1, int(im.size[1] * s))),
+                               Image.BILINEAR) for im in lines]
+        self._lines = lines
 
     def validate(self):
         issues = super().validate()
@@ -679,14 +692,18 @@ class DisplayPointsSlide(Slide):
         if self._lines is None:
             self._build_lines()
         n = len(self._lines)
-        slot = h * 0.19
-        y0 = (h - slot * n) / 2
+        gap = self._gap
+        heights = [ln.size[1] for ln in self._lines]
+        total = sum(heights) + gap * max(0, n - 1)
+        y = self._top + (h * 0.94 - self._top - total) / 2
         for i, line in enumerate(self._lines):
             raw = a01(t, 0.5 + i * self.stagger, 0.5, ease=easing.ease_out_back)
+            top = y
+            y += heights[i] + gap
             if raw <= 0:
                 continue
             lw, lh = line.size
-            px, py = w * 0.08, y0 + i * slot + (slot - lh) / 2
+            px, py = w * 0.08, top + (heights[i] - lh) / 2
             self._register_text(f"point:{i}", (px, py, px + lw, py + lh),
                                 (255, 255, 255), int(h * 0.115))
             alpha = min(1.0, raw)
@@ -698,7 +715,7 @@ class DisplayPointsSlide(Slide):
                 a = a.point(lambda v: int(v * alpha))
                 nl = Image.merge("RGBA", (r, g, b, a))
             nlw, nlh = nl.size
-            px, py = w * 0.08, y0 + i * slot + (slot - nlh) / 2
+            px, py = w * 0.08, top + (heights[i] - nlh) / 2
             frame = paste_rgba(frame, np.array(nl), (px, py))
         return frame
 

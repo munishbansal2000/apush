@@ -64,10 +64,10 @@ def main():
     # The FIRST scene determines the act start: if it has no start_anchor, act starts at turn 0
     # Otherwise, use the earliest turn referenced
     scenes = plan.get("scenes", [])
-    first_turn = None
-    if scenes and "start_anchor" not in scenes[0]:
+    first_turn = plan.get("act_start_turn")
+    if first_turn is None and scenes and "start_anchor" not in scenes[0]:
         first_turn = 0
-    else:
+    if first_turn is None:
         for sc in scenes:
             sa = sc.get("start_anchor")
             if sa and "turn" in sa:
