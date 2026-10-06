@@ -8,8 +8,10 @@ Exit 0: every hard gate passed (warnings may still need a human eye).
 Exit 1: at least one hard gate failed.
 
 Every gate below was learned across E1 v1-v11. Gates catch the mechanical
-tells; they cannot catch voice, facts, or fun -- see apush-script-guide.md.
+tells; G12 is a regression net over the fact registry (it cannot verify new
+claims -- see apush-script-guide.md for the fact-check layer).
 """
+import os
 import re
 import sys
 
@@ -63,6 +65,36 @@ PROFANITY = re.compile(
 # debate voices (Brutus/Henry/Jeffersonian/Haswell, Sepulveda w/o accent, …).
 # Matches any line-leading "Name:" label; NON_SPEAKER blocklist excludes
 # stage directions (SCREEN:) and self-test question numbers (Two:/Three:).
+# G12: known-falsehood regression. Patterns come from apush-fact-registry.yaml
+# (sibling of this script, else ./apush-fact-registry.yaml). Every corrected
+# factual error must add its falsehood pattern there, or it will regress.
+def load_registry():
+    cands = [
+        os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                     "apush-fact-registry.yaml"),
+        os.path.join(os.getcwd(), "apush-fact-registry.yaml"),
+    ]
+    for p in cands:
+        if os.path.exists(p):
+            import yaml
+            with open(p) as f:
+                return yaml.safe_load(f).get("facts", [])
+    return []
+
+
+def registry_hits(spoken, facts):
+    out = []
+    for fact in facts:
+        for pat in fact.get("falsehoods", []) or []:
+            try:
+                rx = re.compile(pat, re.IGNORECASE)
+            except re.error:
+                continue
+            for ln, _, b in spoken:
+                if rx.search(b):
+                    out.append((ln, fact["id"], pat, b[:70]))
+                    break
+    return out
 NON_SPEAKER = frozenset({
     "SCREEN",
     "ONE", "TWO", "THREE", "FOUR", "FIVE",
@@ -193,6 +225,17 @@ def main():
     check("G11 school-safe vocabulary", not prof_hits,
           "; ".join(f"L{ln}: {b}" for ln, b in prof_hits))
 
+    # G12: known-falsehood regression against the fact registry
+    reg = load_registry()
+    fh_hits = registry_hits(spoken, reg)
+    check("G12 no known falsehoods", not fh_hits,
+          "; ".join(f"L{ln} [{fid}] /{pat}/: {b}"
+                    for ln, fid, pat, b in fh_hits)
+          + ("" if reg else " (registry not found — gate blind)"))
+    if not reg:
+        warns.append(("G12 registry missing",
+                      "apush-fact-registry.yaml not found; falsehood check skipped"))
+
     # W1: uncontracted stiffness
     hits = [(ln, m.group(0)) for ln, _, b in spoken
             for m in UNCONTRACTED.finditer(b)]
@@ -255,7 +298,7 @@ def main():
               "G5 no verbatim repeats", "G6 no button-word loops",
               "G7 pause tags in read note", "G8 em-dash density <= 10",
               "G9 antithesis budget < 3", "G10 no retired phrases",
-              "G11 school-safe vocabulary"]
+              "G11 school-safe vocabulary", "G12 no known falsehoods"]
     failed_ids = {f[0].split()[0] for f in fails}
     for g in passed:
         if g.split()[0] not in failed_ids:

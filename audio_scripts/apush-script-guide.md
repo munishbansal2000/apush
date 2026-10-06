@@ -171,9 +171,11 @@ it's tissue:
 2. Run `apush-script-gates.py` — fix every FAIL.
 3. Read every WARN; keep or fix with intent.
 4. Human read-aloud (or TTS skim) for rhythm.
-5. **Blind validation (mandatory, two layers).** No script ships without both:
-   - **Layer 1 — hard scripted validators.** `apush-script-gates.py`, all 11 gates green. Mechanical, repeatable.
-   - **Layer 2 — clean-context word-by-word read.** A fresh agent that did NOT write or repair the script reads every word of the final draft and validates each rule individually: human ear (no AI slop), no shorthands, voice (Maya as a person), episode structure, format per the lesson map, complete + correct CED coverage, fact accuracy. Findings are line-level: quote the line, name the rule, fix or flag. The writer never validates their own work.
+5. **Blind validation (mandatory, three layers).** No script ships without all three:
+   - **Layer 1 — hard scripted validators.** `apush-script-gates.py`, all 12 gates green. Mechanical, repeatable. G12 checks the script against `apush-fact-registry.yaml` (known falsehoods).
+   - **Layer 2 — clean-context word-by-word read.** A fresh agent that did NOT write or repair the script reads every word of the final draft and validates each rule individually: human ear (no AI slop), no shorthands, voice (Maya as a person), episode structure, format per the lesson map, complete + correct CED coverage. Findings are line-level: quote the line, name the rule, fix or flag. The writer never validates their own work.
+   - **Layer 3 — dedicated fact-check (cross-referenced sources).** A fresh agent whose ONLY job is factual accuracy — not ear, not structure. They extract every checkable claim in the script (dates, numbers, names, causal claims, quotes, superlatives like "first/only/bloodiest") and verify EACH against at least TWO independent sources from: the Adam Norris transcripts, the other transcript sets, the books (`books/extracted/5steps2024/`, `premium2027/`, `princeton/`), and the web. Line-level report: quote the claim, verdict (confirmed / contested / wrong / unverifiable), sources cited. Any "wrong" or "unverifiable" claim blocks the lock — the script goes back for repair and re-check. Layer 2's "fact accuracy" bullet is ear-adjacent spot-checking; Layer 3 is the real factual gate. (Added 2026-10-06: Layer 1+2 passed U5-E7 v2 with ~12 factual errors. Never again.)
+   - **Registry discipline.** Every factual correction from any layer goes into `apush-fact-registry.yaml` the same day: the correct statement, a falsehood pattern for G12, and the sources. A correction that isn't in the registry will regress.
 6. User approves the script.
 7. Only then render. **Never render an unapproved script.**
 
