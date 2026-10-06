@@ -126,8 +126,12 @@ const SUB_BEATS: SubBeat[] = [
   // t14: flat earth myth
   { turnId: 't14', offset: 0, kind: 'bubble', text: 'Nobody educated thought the earth was flat', position: [0.5, 0.2], width: 480 },
 
-  // t15: wrong about distance
-  { turnId: 't15', offset: 8.0, kind: 'smarttext', text: 'WRONG ABOUT DISTANCE, NOT SHAPE', level: 'subtitle', position: [0.5, 0.3] },
+  // t15: wrong about distance — word-anchored beats
+  { turnId: 't15', offset: 5.67, kind: 'smarttext', text: 'WRONG ABOUT DISTANCE, NOT SHAPE', level: 'subtitle', position: [0.5, 0.25] },
+  { turnId: 't15', offset: 8.04, kind: 'smarttext', text: 'OCTOBER 12, 1492', level: 'title', position: [0.5, 0.15], entrance: 'stamp' },
+  { turnId: 't15', offset: 10.14, kind: 'smarttext', text: 'THE BAHAMAS', level: 'subtitle', position: [0.5, 0.3] },
+  { turnId: 't15', offset: 12.39, kind: 'smarttext', text: 'CALLED THEM "INDIANS"', level: 'subtitle', position: [0.5, 0.3] },
+  { turnId: 't15', offset: 13.41, kind: 'smarttext', text: 'DIED INSISTING: ASIA', level: 'subtitle', position: [0.5, 0.3], color: '#ff6b6b' },
 
   // t16: never saw north america
   { turnId: 't16', offset: 0, kind: 'smarttext', text: 'NEVER SAW NORTH AMERICA', level: 'subtitle', position: [0.5, 0.2] },
@@ -148,8 +152,9 @@ const SUB_BEATS: SubBeat[] = [
   // t20: france/england ignored
   { turnId: 't20', offset: 0, kind: 'bubble', text: 'France and England: ignored it completely', position: [0.5, 0.2], width: 440 },
 
-  // t21: brazil payoff
+  // t21: brazil payoff — word-anchored
   { turnId: 't21', offset: 4.68, kind: 'smarttext', text: 'WHY BRAZIL SPEAKS PORTUGUESE', level: 'subtitle', position: [0.5, 0.2], entrance: 'stamp' },
+  { turnId: 't21', offset: 7.08, kind: 'smarttext', text: 'BULGED EAST OF THE LINE', level: 'subtitle', position: [0.5, 0.35] },
 
   // t23: exchange categories + reveal
   { turnId: 't23', offset: 1.68, kind: 'smarttext', text: 'PLANTS · ANIMALS · PEOPLE · DISEASE', level: 'body', position: [0.5, 0.2] },
@@ -223,8 +228,11 @@ const SUB_BEATS: SubBeat[] = [
   // t42: did it work?
   { turnId: 't42', offset: 0, kind: 'smarttext', text: 'DID IT WORK?', level: 'subtitle', position: [0.5, 0.2], entrance: 'stamp' },
 
-  // t43: colonists revolted
+  // t43: colonists revolted — word-anchored
   { turnId: 't43', offset: 1.77, kind: 'smarttext', text: 'COLONISTS NEARLY REVOLTED', level: 'subtitle', position: [0.5, 0.2], color: '#ff6b6b' },
+  { turnId: 't43', offset: 2.82, kind: 'smarttext', text: 'CROWN WATERED THE LAWS DOWN', level: 'subtitle', position: [0.5, 0.32] },
+  { turnId: 't43', offset: 9.01, kind: 'smarttext', text: 'SUBJECTS TO CONVERT?', level: 'title', position: [0.5, 0.15], entrance: 'stamp' },
+  { turnId: 't43', offset: 10.62, kind: 'smarttext', text: 'OR LABOR TO USE?', level: 'title', position: [0.5, 0.3], entrance: 'stamp', color: '#ff6b6b' },
 
   // t45: recap 1
   { turnId: 't45', offset: 4.8, kind: 'smarttext', text: '① TORDESILLAS: 1494', level: 'title', position: [0.5, 0.2], entrance: 'stamp' },
@@ -710,11 +718,24 @@ export const U1E2Episode: React.FC = () => {
               leader="unit1_las_casas.webp" name="Las Casas" position={[0.28, 0.52]} />
           )}
 
-          {/* Sub-beats */}
+          {/* Sub-beats — smarttext: beats at the same position replace each other */}
           {activeSubBeats.map((beat, idx) => {
             const beatFrame = activeStartFrame + Math.floor(beat.offset * FPS);
             const key = `${beat.turnId}-${beat.offset}-${idx}`;
             if (beat.kind === 'smarttext' && beat.text) {
+              // A beat is superseded if a later beat of the same level at nearly
+              // the same position is also active (prevents text pile-up).
+              // Beats at different positions (e.g. question pairs) coexist.
+              const pos = beat.position || [0.5, 0.2];
+              const level = beat.level || 'title';
+              const isSuperseded = activeSubBeats.some(b => {
+                if (b.kind !== 'smarttext' || (b.level || 'title') !== level) return false;
+                if (b.offset <= beat.offset || turnElapsed < b.offset) return false;
+                const bp = b.position || [0.5, 0.2];
+                const dist = Math.hypot(bp[0] - pos[0], bp[1] - pos[1]);
+                return dist < 0.15; // same zone
+              });
+              if (isSuperseded) return null;
               return <SmartText key={key} text={beat.text} level={beat.level || 'title'}
                 position={beat.position || [0.5, 0.2]} color={beat.color || '#f5e6c8'}
                 entrance={beat.entrance || 'fade'} at={beatFrame} />;

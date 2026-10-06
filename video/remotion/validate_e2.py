@@ -137,7 +137,7 @@ for i, t in enumerate(turns):
 # Check for components that appear in consecutive turns with "always" condition
 comp_turns = {}  # comp_name -> list of turnIds
 for tid, complist in component_visuals.items():
-    for comp, cond in complist:
+    for comp, cond, _ in complist:
         if comp in VISUAL_COMPONENTS and cond == "always":
             comp_turns.setdefault(comp, []).append(tid)
 
