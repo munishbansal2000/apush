@@ -20,7 +20,10 @@ Maya (host, student-surrogate) + Marcus (expert). Hard cap 180 WPM.
 Floor 1,440 spoken words; no fixed ceiling — length serves the substance
 (see 2026-10-06: episodes run 11–12.5 min when the content earns it).
 The cold-open time promise, the header, and the actual word count at
-≤180 WPM must all agree. Maya tracks
+≤180 WPM must all agree — **and "runtime" always means experienced runtime:
+spoken words at ≤180 WPM *plus* every second of scripted pause silence.**
+Pause tags are production reality, not metadata; a 12-minute promise must
+hold with the pauses in. Maya tracks
 N boxes on her episode sheet; each box gets checked off **in her voice** as
 the episode earns it. Box picks: named terms a student could plausibly see as
 an MCQ stem or SAQ prompt, spread across the episode's topics. Default 3
@@ -28,8 +31,8 @@ boxes (4 when the content needs it); boxes ≤ topics — fold extra topics unde
 unboxed. A box owns its sub-topics in the recap: if headright lives under
 the tobacco box, the recap says so. Cold open sells the episode in 30 seconds. Topics play as
 conversation, never lecture. Close = recap (Maya drives, fumbles
-welcome) → self-test (question, `[5-second pause]` — 8–10s for multi-part
-answers — Maya gives the model answer after the pause) → one shared tagline, once.
+welcome) → self-test (question, `[15-second pause]` for CER questions —
+15–20s; 8–10s for prediction beats — Maya gives the model answer after the pause) → one shared tagline, once.
 
 ## Voice
 
@@ -128,7 +131,9 @@ every episode:
 - **Common-mistake lines:** one per box, real errors only ("don't write
   that…" is fine as one template among several, not the only one).
 - **Self-test:** "Three questions, AP-shaped" ritual framing stays; answers
-  in claim–evidence–reasoning shape; at least one stimulus-style. With 4
+  in claim–evidence–reasoning shape; at least one stimulus-style. Pauses:
+  15–20 seconds for CER questions (they need real thinking time),
+  8–10s for prediction beats. With 4
   boxes, a fast clearly-labeled bonus question ("One more, fast.") may
   cover the fourth — the three-question ritual is never broken silently.
 
@@ -208,7 +213,7 @@ it's tissue:
 4. Human read-aloud (or TTS skim) for rhythm.
 5. **Blind validation (mandatory, three layers).** No script ships without all three:
    - **Layer 1 — hard scripted validators.** `apush-script-gates.py`, all 12 gates green. Mechanical, repeatable. G12 checks the script against `apush-fact-registry.yaml` (known falsehoods).
-   - **Layer 2 — clean-context word-by-word read.** A fresh agent that did NOT write or repair the script reads every word of the final draft and validates each rule individually: human ear (no AI slop), no shorthands, voice (Maya as a person), episode structure, format per the lesson map, complete + correct CED coverage. Findings are line-level: quote the line, name the rule, fix or flag. The writer never validates their own work.
+   - **Layer 2 — clean-context word-by-word read.** A fresh agent that did NOT write or repair the script reads every word of the final draft and validates each rule individually: human ear (no AI slop), no shorthands, voice (Maya as a person), episode structure, format per the lesson map, complete + correct CED coverage. Findings are line-level: quote the line, name the rule, fix or flag. The writer never validates their own work. **Layer 2 also runs `apush-validator-checklist.md` — the user's own review patterns, distilled 2026-10-06. Gates passing is necessary but not sufficient; the checklist is the lock bar.**
    - **Layer 3 — dedicated fact-check (cross-referenced sources).** A fresh agent whose ONLY job is factual accuracy — not ear, not structure. They extract every checkable claim in the script (dates, numbers, names, causal claims, quotes, superlatives like "first/only/bloodiest") and verify EACH against the source hierarchy: **Tier 1** — the books (`books/extracted/5steps2024/`, `premium2027/`, `princeton/`) and the transcripts (`public_content/`) first; **Tier 2** (only when Tier 1 is insufficient) — exactly two verified sources: **Britannica** (general history) and the **National Park Service** (battles, places, military specifics). Broad internet search is NOT a source. If a claim can't be verified in Tier 1 + Tier 2, it's UNVERIFIABLE — report it, don't hunt further. Line-level report: quote the claim, verdict (confirmed / contested / wrong / unverifiable), tier + sources cited. Any "wrong" or "unverifiable" claim blocks the lock — the script goes back for repair and re-check. Layer 2's "fact accuracy" bullet is ear-adjacent spot-checking; Layer 3 is the real factual gate. (Added 2026-10-06: Layer 1+2 passed U5-E7 v2 with ~12 factual errors. Never again.)
    - **Layer 3 also judges framing, not just claims.** A claim can be technically true while the framing misleads ("McClellan ran as the peace candidate" — the platform was peace, but he disowned the plank). The fact-checker must: (a) check characterizations and labels, not just dates/numbers; (b) verify that nuance present in the sources survives into the script — if a source hedges and the script flattens, flag it; (c) check quote/event PLACEMENT — a true quote in the wrong narrative position is a factual error; (d) treat "technically true but misleading" as WRONG. Accuracy is the moat: when sources disagree or a framing is debatable, the script hedges or presents the debate — never flattens it. (Added 2026-10-06: the user's reads kept catching framing errors — Sherman "never civilians," McClellan "peace candidate" — that claim-verification had passed. Claim-checking without framing judgment is what failed.)
    - **Registry discipline.** Every factual correction from any layer goes into `apush-fact-registry.yaml` the same day: the correct statement, a falsehood pattern for G12, and the sources. A correction that isn't in the registry will regress.
@@ -227,6 +232,9 @@ it's tissue:
   runtime varies with substance (11–12.5 min is normal for a full episode).
   The header, the cold-open time promise, and the actual count must agree —
   if they don't, the word count is wrong, not the estimate.
+  **Runtime is experienced runtime: speech at ≤180 WPM plus all scripted
+  pause seconds. A script whose words alone fill the promised minutes is
+  overlong — trim the speech or lengthen the promise.**
 - School-safe vocabulary (hard gate G11): no profanity in dialogue, however
   historical the nickname. Find the polite translation and wink at it
   ("fire-pooper," and yes, that's the polite translation).
@@ -238,6 +246,16 @@ it's tissue:
 - Whether it's actually fun (the high-schooler test: one "ai slop" = fail).
 
 ## Changelog
+
+- 2026-10-06 (standards freeze for the fleet rebuild): (1) "runtime" defined
+  as experienced runtime — speech at ≤180 WPM PLUS all scripted pause
+  seconds — written into The format and Production sections (a script whose
+  words alone fill the promised minutes is overlong); (2) self-test pause
+  conflict resolved: 15–20s for CER questions (the old 5s default removed);
+  (3) new `apush-validator-checklist.md` — the user's own U3-E8 review
+  patterns distilled into a lock-bar checklist, wired into Layer 2;
+  (4) validation weighting flipped per the user: agent validations carry
+  the lock, scripted gates are the mechanical baseline.
 
 - 2026-10-06 (guideline cleanup): resolved six conflicts between the guide
   and current practice — (1) length: 1150–1350 / ~8 min replaced by 1,440
