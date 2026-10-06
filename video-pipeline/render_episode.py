@@ -53,10 +53,47 @@ def main():
     print(f"=== {args.episode} {args.act} [{args.mode}] ===", flush=True)
     print(f"  {mode['width']}x{mode['height']} @ {mode['fps']}fps", flush=True)
 
-    # 1. Resolve anchors -> measured seconds
+    # 1. Build act-relative timings (resolve_cues outputs absolute episode
+    #    times; per-act renders start at 0, so rebase to act start).
+    print("  Building act-relative timings...", flush=True)
+    with open("timings_wrapped.json") as f:
+        tm = json.load(f)
+    with open(plan_in) as f:
+        plan = json.load(f)
+    # Find the act's first turn from the plan's scenes
+    first_turn = None
+    for sc in plan.get("scenes", []):
+        for cue in sc.get("cues", []):
+            t = cue.get("turn")
+            if t is not None and (first_turn is None or t < first_turn):
+                first_turn = t
+    if first_turn is None:
+        raise RuntimeError("No turn anchors found in plan")
+    # timings_wrapped format: {"turns": [{"turn": N, "start_sec": X, "duration_sec": Y}, ...]}
+    turns = tm.get("turns", tm) if isinstance(tm, dict) else tm
+    act_start = None
+    for t in (turns if isinstance(turns, list) else turns.values()):
+        tn = t.get("turn", t.get("id"))
+        if tn == first_turn:
+            act_start = t["start_sec"]
+            break
+    if act_start is None:
+        raise RuntimeError(f"Turn {first_turn} not in timings_wrapped.json")
+    rel_timings = {"turns": []}
+    for t in (turns if isinstance(turns, list) else turns.values()):
+        rel_timings["turns"].append({
+            "turn": t.get("turn", t.get("id")),
+            "start_sec": t["start_sec"] - act_start,
+            "duration_sec": t["duration_sec"],
+        })
+    rel_path = f"{args.act}_timings_relative.json"
+    with open(rel_path, "w") as f:
+        json.dump(rel_timings, f, indent=1)
+
+    # 2. Resolve anchors -> measured seconds (act-relative)
     print("  Resolving cues...", flush=True)
     run([sys.executable, f"{_PIPELINE}/resolve_cues.py",
-         plan_in, "timings_wrapped.json", "work/word_times.json",
+         plan_in, rel_path, "work/word_times.json",
          "--aliases", "aliases.json", "-o", resolved])
 
     # 2. Render
