@@ -6,10 +6,17 @@
 # registry will regress in a future script.
 #
 # Source keys:
+#   Tier 1 (primary): norris, transcripts, 5steps, prem27, princeton
+#   Tier 2 (only when Tier 1 insufficient): britannica, nps
+#   Broad internet search is NOT a source. Unverifiable in Tier 1+2 =
+#   UNVERIFIABLE, reported, never hunted further afield.
+#
 #   norris  — Adam Norris transcripts (~/workspace/apush/public_content/)
 #   5steps  — 5 Steps to a 5, 2024 (books/extracted/5steps2024/)
 #   prem27  — AP US History Premium, 2027 (books/extracted/premium2027/)
 #   princeton — Princeton Review book (books/extracted/princeton/)
+#   britannica — Encyclopaedia Britannica, Tier 2 verified source
+#   nps — National Park Service (nps.gov), Tier 2 verified source
 #   web     — web sources, verified 2026-10-06 (see note for URLs)
 
 facts:
