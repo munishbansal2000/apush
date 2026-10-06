@@ -7,9 +7,15 @@ would otherwise render into a broken video:
   errors (raise PlanError, block the compile)
     - unresolved word anchors (start_anchor/end_anchor/anchor):
       run resolve_cues.py first, then lint the resolved plan
-    - v2 VISUAL_DENSITY: bare DisplayHeadline scenes, or more than 3
+    - v2 VISUAL_DENSITY: bare DisplayHeadline scenes (no timed
+      overlays — a static sub line is not enrichment), or more than 3
       unflagged DisplayHeadlines per plan — enrich the scenes or flag a
       variance ({"rule", "reason"}); flagged variances surface as warns
+    - v2 SHOT_VARIATION: adjacent scenes showing the identical image
+      in the identical way (same slide, same move) — vary the shot
+      or merge the scenes. No variance hatch: a KenBurns move over
+      the same image is always available, so repetition is never
+      the only honest option
     - two overlays colliding in space AND time within one scene
     - an overlay running past its scene's end, starting before it,
       or never visible at all (starts at/past the scene end)
@@ -104,15 +110,67 @@ def _density_errors(plan):
             warns.append(f"VARIANCE scene '{sid}' "
                          f"[{var['rule']}]: {var['reason']}")
             continue
-        sub = (s.get("params") or {}).get("sub", "")
-        bare = not (isinstance(sub, str) and sub.strip()) and \
-            not (s.get("overlays") or [])
+        # A static sub line is not enrichment: only timed overlays
+        # (cues that move with the speech) make a headline scene dense.
+        bare = not (s.get("overlays") or [])
         if bare:
             errors.append(
-                f"scene '{sid}': bare DisplayHeadline (no sub, no "
-                "overlays) violates VISUAL_DENSITY — enrich it or "
+                f"scene '{sid}': bare DisplayHeadline (no timed "
+                "overlays) violates VISUAL_DENSITY — add cues or "
                 "flag a variance")
     return errors, warns
+
+
+# v2 shot variation (v10): consecutive scenes may not show the identical
+# image in the identical way. A hold followed by a push (Image -> KenBurns
+# over the same image) is a shot change and passes; only exact repeats fail.
+SHOT_SLIDES = ("imageslide", "kenburnsslide", "calloutslide")
+
+
+def _shot_signature(spec):
+    """(slide, image, move) for image-led slides, else None.
+
+    The move element captures what makes the shot distinct: KenBurns
+    stops, CalloutSlide callouts, nothing for a static ImageSlide."""
+    slide = str(spec.get("slide", "")).lower()
+    if slide not in SHOT_SLIDES:
+        return None
+    params = spec.get("params") or {}
+    image = params.get("image")
+    if not image:
+        return None
+    if slide == "kenburnsslide":
+        move = json.dumps(params.get("stops"), sort_keys=True,
+                          default=str)
+    elif slide == "calloutslide":
+        move = json.dumps(params.get("callouts"), sort_keys=True,
+                          default=str)
+    else:
+        move = ""
+    return (slide, str(image).lower(), move)
+
+
+def _sequence_errors(plan):
+    """SHOT_VARIATION: errors for adjacent identical shots. v2 only."""
+    errors = []
+    if plan.get("version") != 2:
+        return errors
+    scenes = plan.get("scenes", [])
+    prev_sig, prev_sid = None, None
+    for i, spec in enumerate(scenes):
+        sid = spec.get("id", "scene-%02d" % i)
+        sig = _shot_signature(spec)
+        if sig is not None and sig == prev_sig:
+            errors.append(
+                f"scene '{sid}': SHOT_VARIATION — same "
+                f"{spec.get('slide')} of {sig[1]} as previous scene "
+                f"'{prev_sid}'; vary the shot (KenBurns move, "
+                "different callouts) or merge the scenes")
+        if sig is not None:
+            prev_sig, prev_sid = sig, sid
+        else:
+            prev_sig, prev_sid = None, None
+    return errors
 
 
 def _anchor_sites(spec):
@@ -235,6 +293,8 @@ def lint_plan(plan):
     density_errors, density_warns = _density_errors(plan)
     errors.extend(density_errors)
     warns.extend(density_warns)
+
+    errors.extend(_sequence_errors(plan))
 
     for i, spec in enumerate(scenes):
         sid = spec.get("id", f"scene-{i:02d}")

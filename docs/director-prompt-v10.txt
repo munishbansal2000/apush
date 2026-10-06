@@ -112,6 +112,17 @@ A scene with just text on texture is a placeholder, not a final slide.
   Name the missing asset when one would fix it (that reason becomes the sourcing backlog).
   Unflagged violations fail lint; flagged variances go to human review. Never invent content
   to dodge a variance — a flagged honest scene beats an unflagged dishonest one.
+  A static sub line is NOT enrichment: only timed overlays (cues that fire with
+  the speech) make a headline scene dense.
+
+SHOT VARIATION (critical): never show the identical image in the identical way
+in two adjacent scenes — a hold followed by the same hold reads as a frozen
+video. When one image must cover two beats, change the shot: a KenBurns move
+(question = wide hold, answer = slow push), different CalloutSlide callouts,
+or merge into one scene. Adjacent identical shots fail lint with no variance
+hatch — a move over the same image is always available, so repetition is never
+the only honest option. (A hold followed by a push over the same image is a
+shot change and passes.)
 
 MAP PACING: RouteSlides must be slow enough to follow. Requirements:
 - Show ALL waypoints simultaneously (not one at a time)
