@@ -84,8 +84,8 @@ export const EpisodeShell: React.FC<EpisodeShellProps> = ({
   // Auto-derived CED key-term chips (from data/terms.json)
   const chips = useMemo(() => {
     if (!termChips) return [];
-    return deriveTermChips(episode.toLowerCase());
-  }, [episode, termChips]);
+    return deriveTermChips(turns, starts, durations);
+  }, [turns, starts, durations, termChips]);
   const activeChips = chips.filter(c => timeSec >= c.start && timeSec < c.end);
 
   // Validate lengths match

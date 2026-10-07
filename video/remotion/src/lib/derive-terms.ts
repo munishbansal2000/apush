@@ -5,9 +5,11 @@
  * For each term in data/terms.json, finds the FIRST time it's spoken
  * (using word timings, not turn starts) and generates a chip at that
  * exact timestamp. Avoids collisions with chapter banners.
+ *
+ * Browser-safe: terms.json is imported as a module; turns/timing are
+ * passed in (EpisodeShell already has them).
  */
-import { readFileSync, existsSync } from 'fs';
-import { join } from 'path';
+import termsData from '../data/terms.json';
 
 export interface TermChip {
   term: string;
@@ -23,30 +25,21 @@ interface TermDef {
   definition: string;
 }
 
-const ROOT = join(__dirname, '..', '..');
+interface TurnInput {
+  id: string;
+  text?: string;
+}
 
 export function deriveTermChips(
-  epLower: string,
+  turns: TurnInput[],
+  starts: number[],
+  durations: number[],
   options: {
     termChipSec?: number;
     chapterBanners?: { start: number; end: number; label: string }[];
   } = {},
 ): TermChip[] {
-  const termsPath = join(ROOT, 'src', 'data', 'terms.json');
-  if (!existsSync(termsPath)) return [];
-
-  const termsData = JSON.parse(readFileSync(termsPath, 'utf8'));
-  const terms: TermDef[] = termsData.terms ?? [];
-
-  const turnsPath = join(ROOT, 'src', 'data', epLower, 'turns.json');
-  const timingPath = join(ROOT, 'src', 'data', epLower, 'timing_map.json');
-  if (!existsSync(turnsPath) || !existsSync(timingPath)) return [];
-
-  const turnsData = JSON.parse(readFileSync(turnsPath, 'utf8'));
-  const turns = Array.isArray(turnsData) ? turnsData : turnsData.turns;
-  const timing = JSON.parse(readFileSync(timingPath, 'utf8'));
-  // wordTimes reserved for future word-level timing
-
+  const terms: TermDef[] = (termsData as any).terms ?? [];
   const termChipSec = options.termChipSec ?? 4;
   const busy: { start: number; end: number; id: string }[] =
     (options.chapterBanners ?? []).map(c => ({ start: c.start, end: c.end, id: `chapter "${c.label}"` }));
@@ -63,9 +56,8 @@ export function deriveTermChips(
       for (const m of t.match) {
         const idx = text.indexOf(m.toLowerCase());
         if (idx >= 0) {
-          // Use word timing if available, else estimate from character offset
-          const turnStart = timing.starts[ti];
-          const turnDur = timing.durations[ti];
+          const turnStart = starts[ti];
+          const turnDur = durations[ti];
           const charRatio = idx / Math.max(1, text.length);
           const time = turnStart + charRatio * turnDur;
           found = { time, turnId: turn.id };

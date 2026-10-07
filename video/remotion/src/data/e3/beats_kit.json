@@ -1,0 +1,1355 @@
+[
+ {
+  "id": "tour-comanche",
+  "kind": "tour",
+  "turn_id": "t16",
+  "turn_idx": 16,
+  "offset": 0.0,
+  "start": 138.42,
+  "end": 145.6,
+  "props": {
+   "image": "historic/u1e2/comanche-horses.jpg",
+   "caption": "TRADITION WITH A START DATE",
+   "stops": [
+    {
+     "turn_id": "t16",
+     "word": null,
+     "rect": [
+      0,
+      0,
+      1,
+      1
+     ],
+     "callouts": [],
+     "offset": 0.0,
+     "time": 138.42
+    },
+    {
+     "turn_id": "t17",
+     "word": "centuries",
+     "rect": [
+      0.5,
+      0.55,
+      0.95,
+      1.0
+     ],
+     "callouts": [
+      {
+       "point": [
+        0.655,
+        0.775
+       ],
+       "label": "Riding slung along the side"
+      }
+     ],
+     "offset": 0.33,
+     "time": 142.31
+    }
+   ]
+  }
+ },
+ {
+  "id": "figure-crosby",
+  "kind": "figure",
+  "turn_id": "t20",
+  "turn_idx": 20,
+  "offset": 1.81,
+  "start": 172.84,
+  "end": 181.44,
+  "props": {
+   "name": "Alfred W. Crosby",
+   "dates": "1931–2018",
+   "role": "Historian who named the Columbian Exchange (1972)",
+   "likeness": "none"
+  }
+ },
+ {
+  "id": "figure-sahagun",
+  "kind": "figure",
+  "turn_id": "t37",
+  "turn_idx": 37,
+  "offset": 0.0,
+  "start": 320.94,
+  "end": 336.85,
+  "props": {
+   "name": "Bernardino de Sahagún",
+   "dates": "c. 1499–1590",
+   "role": "Franciscan friar; compiled the Codex with Nahua scholars",
+   "likeness": "later likeness"
+  }
+ },
+ {
+  "id": "doc-codex",
+  "kind": "document",
+  "turn_id": "t37",
+  "turn_idx": 37,
+  "offset": 1.67,
+  "start": 322.61,
+  "end": 346.59,
+  "props": {
+   "image": "historic/u1e3/florentine-codex-page.jpg",
+   "title": "Florentine Codex, Book 12",
+   "attribution": "Compiled under Bernardino de Sahagún with Nahua scholars, c. 1545–1577",
+   "excerpt": "The sick lay in their homes, unable to move, unable even to turn over, and there was no one left to care for them.",
+   "quoteStatus": "paraphrase",
+   "highlight": "no one left to care for them",
+   "marks": [
+    {
+     "word": "sick lay",
+     "point": [
+      0.72,
+      0.5
+     ],
+     "label": "The sick, lying on mats"
+    },
+    {
+     "word": "unable to move",
+     "point": [
+      0.3,
+      0.72
+     ],
+     "label": "Smallpox sores"
+    },
+    {
+     "word": "care",
+     "point": [
+      0.33,
+      0.17
+     ],
+     "label": "A healer (ticitl) at work"
+    }
+   ],
+   "marksVerified": true,
+   "hipp": {
+    "type": "Point of View",
+    "text": "The Nahua side of the conquest, recorded decades later under a Spanish friar: not a raw diary."
+   }
+  }
+ },
+ {
+  "id": "route-west",
+  "kind": "route",
+  "turn_id": "t01",
+  "turn_idx": 1,
+  "offset": 0.0,
+  "start": 32.91,
+  "end": 41.16,
+  "props": {
+   "caption": "WESTBOUND: Europe → the Americas",
+   "variant": "overview",
+   "routes": [
+    {
+     "from": "Seville",
+     "to": "Hispaniola",
+     "label": "Wheat · horses · cattle · pigs"
+    },
+    {
+     "from": "Madeira",
+     "to": "Brazil",
+     "label": "Sugarcane"
+    }
+   ]
+  }
+ },
+ {
+  "id": "route-east",
+  "kind": "route",
+  "turn_id": "t05",
+  "turn_idx": 5,
+  "offset": 0.0,
+  "start": 59.1,
+  "end": 77.5,
+  "props": {
+   "caption": "EASTBOUND: the Americas → Europe",
+   "variant": "overview",
+   "routes": [
+    {
+     "from": "Tenochtitlan",
+     "to": "Seville",
+     "label": "Maize · tomatoes · cacao"
+    },
+    {
+     "from": "Andes",
+     "to": "Ireland",
+     "label": "Potatoes"
+    },
+    {
+     "from": "Caribbean",
+     "to": "Lisbon",
+     "label": "Tobacco"
+    }
+   ]
+  }
+ },
+ {
+  "id": "route-maize",
+  "kind": "route",
+  "turn_id": "t19",
+  "turn_idx": 19,
+  "offset": 0.0,
+  "start": 162.42,
+  "end": 171.03,
+  "props": {
+   "caption": "MAIZE: on to Africa and Asia",
+   "variant": "overview",
+   "routes": [
+    {
+     "from": "Lisbon",
+     "to": "West Central Africa",
+     "label": "Africa: a staple"
+    },
+    {
+     "from": "Lisbon",
+     "to": "China",
+     "label": "Asia"
+    }
+   ]
+  }
+ },
+ {
+  "id": "route-disease",
+  "kind": "route",
+  "turn_id": "t29",
+  "turn_idx": 29,
+  "offset": 0.0,
+  "start": 247.92,
+  "end": 263.39,
+  "props": {
+   "caption": "DISEASE: almost entirely westbound",
+   "variant": "dark",
+   "routes": [
+    {
+     "from": "Seville",
+     "to": "Hispaniola",
+     "label": "Smallpox, 1518"
+    },
+    {
+     "from": "Seville",
+     "to": "Tenochtitlan",
+     "label": "Smallpox, 1520"
+    },
+    {
+     "from": "Lisbon",
+     "to": "Brazil",
+     "label": "Measles, influenza"
+    }
+   ]
+  }
+ },
+ {
+  "id": "route-middle-passage",
+  "kind": "route",
+  "turn_id": "t54",
+  "turn_idx": 54,
+  "offset": 0.0,
+  "start": 469.83,
+  "end": 477.91,
+  "props": {
+   "caption": "THE MIDDLE PASSAGE: most to Brazil and the Caribbean",
+   "variant": "dark",
+   "routes": [
+    {
+     "from": "West Central Africa",
+     "to": "Brazil",
+     "label": "Brazil: the largest share"
+    },
+    {
+     "from": "West Africa",
+     "to": "Caribbean",
+     "label": "Caribbean"
+    }
+   ]
+  }
+ },
+ {
+  "id": "ships-move",
+  "kind": "route",
+  "turn_id": "t00",
+  "turn_idx": 0,
+  "offset": 6.84,
+  "start": 6.84,
+  "end": 41.16,
+  "props": {
+   "caption": "CARGO NOBODY BOUGHT A TICKET FOR",
+   "variant": "overview",
+   "routes": [
+    {
+     "from": "Seville",
+     "to": "Hispaniola",
+     "label": "Horses, wheat, germs"
+    },
+    {
+     "from": "Hispaniola",
+     "to": "Lisbon",
+     "label": "Maize, potatoes"
+    }
+   ]
+  }
+ },
+ {
+  "id": "hook-ships",
+  "kind": "text",
+  "turn_id": "t00",
+  "turn_idx": 0,
+  "offset": 6.84,
+  "start": 6.84,
+  "end": 32.91,
+  "props": {
+   "text": "SAME SHIPS.",
+   "level": "hero",
+   "position": [
+    0.38,
+    0.67
+   ],
+   "entrance": "stamp"
+  }
+ },
+ {
+  "id": "boxes-circle",
+  "kind": "text",
+  "turn_id": "t00",
+  "turn_idx": 0,
+  "offset": 25.99,
+  "start": 25.99,
+  "end": 32.91,
+  "props": {
+   "text": "CIRCLE WHAT YOU CAN'T EXPLAIN",
+   "level": "subtitle",
+   "position": [
+    0.38,
+    0.3
+   ]
+  }
+ },
+ {
+  "id": "bubble-horses-new",
+  "kind": "bubble",
+  "turn_id": "t02",
+  "turn_idx": 2,
+  "offset": 0.61,
+  "start": 41.77,
+  "end": 45.02,
+  "props": {
+   "text": "Horses are new here?!",
+   "position": [
+    0.38,
+    0.3
+   ],
+   "width": 420
+  }
+ },
+ {
+  "id": "horses-died-out",
+  "kind": "text",
+  "turn_id": "t03",
+  "turn_idx": 3,
+  "offset": 4.59,
+  "start": 49.61,
+  "end": 55.83,
+  "props": {
+   "text": "DIED OUT IN THE ICE AGE",
+   "level": "subtitle",
+   "position": [
+    0.38,
+    0.22
+   ]
+  }
+ },
+ {
+  "id": "horses-10k",
+  "kind": "text",
+  "turn_id": "t03",
+  "turn_idx": 3,
+  "offset": 0.57,
+  "start": 45.59,
+  "end": 55.83,
+  "props": {
+   "text": "10,000+ YEARS",
+   "level": "title",
+   "position": [
+    0.38,
+    0.4
+   ],
+   "entrance": "stamp",
+   "color": "#ffd166"
+  }
+ },
+ {
+  "id": "horses-imports",
+  "kind": "text",
+  "turn_id": "t03",
+  "turn_idx": 3,
+  "offset": 10.31,
+  "start": 55.33,
+  "end": 59.1,
+  "props": {
+   "text": "EVERY MUSTANG: A EUROPEAN IMPORT",
+   "level": "subtitle",
+   "position": [
+    0.38,
+    0.58
+   ]
+  }
+ },
+ {
+  "id": "bg-potato",
+  "kind": "bg",
+  "turn_id": "t05",
+  "turn_idx": 5,
+  "offset": 0.0,
+  "start": 59.1,
+  "end": 74.88,
+  "props": {
+   "image": "historic/u1e3/potato-plant.jpg"
+  }
+ },
+ {
+  "id": "potato-boom",
+  "kind": "text",
+  "turn_id": "t05",
+  "turn_idx": 5,
+  "offset": 5.99,
+  "start": 65.09,
+  "end": 74.88,
+  "props": {
+   "text": "POPULATION BOOM",
+   "level": "title",
+   "position": [
+    0.38,
+    0.22
+   ],
+   "color": "#90d39a"
+  }
+ },
+ {
+  "id": "potato-ireland",
+  "kind": "text",
+  "turn_id": "t05",
+  "turn_idx": 5,
+  "offset": 10.18,
+  "start": 69.28,
+  "end": 74.88,
+  "props": {
+   "text": "IRELAND: ONE POTATO VARIETY",
+   "level": "subtitle",
+   "position": [
+    0.38,
+    0.38
+   ]
+  }
+ },
+ {
+  "id": "potato-famine",
+  "kind": "text",
+  "turn_id": "t05",
+  "turn_idx": 5,
+  "offset": 15.33,
+  "start": 74.43,
+  "end": 77.5,
+  "props": {
+   "text": "BLIGHT → FAMINE",
+   "level": "title",
+   "position": [
+    0.38,
+    0.54
+   ],
+   "color": "#e07a5f"
+  }
+ },
+ {
+  "id": "potato-hero",
+  "kind": "text",
+  "turn_id": "t06",
+  "turn_idx": 6,
+  "offset": 1.21,
+  "start": 76.09,
+  "end": 80.1,
+  "props": {
+   "text": "HERO",
+   "level": "title",
+   "position": [
+    0.26,
+    0.32
+   ],
+   "color": "#90d39a",
+   "entrance": "stamp"
+  }
+ },
+ {
+  "id": "potato-bomb",
+  "kind": "text",
+  "turn_id": "t06",
+  "turn_idx": 6,
+  "offset": 1.95,
+  "start": 76.83,
+  "end": 80.1,
+  "props": {
+   "text": "TIME BOMB",
+   "level": "title",
+   "position": [
+    0.5,
+    0.32
+   ],
+   "color": "#e07a5f",
+   "entrance": "stamp"
+  }
+ },
+ {
+  "id": "bg-tomato",
+  "kind": "bg",
+  "turn_id": "t07",
+  "turn_idx": 7,
+  "offset": 0.0,
+  "start": 77.5,
+  "end": 80.1,
+  "props": {
+   "image": "historic/u1e3/tomato-plant.jpg"
+  }
+ },
+ {
+  "id": "tomato-rome",
+  "kind": "text",
+  "turn_id": "t09",
+  "turn_idx": 9,
+  "offset": 6.36,
+  "start": 90.96,
+  "end": 93.53,
+  "props": {
+   "text": "NO TOMATOES IN ROME UNTIL AFTER 1492",
+   "level": "subtitle",
+   "position": [
+    0.38,
+    0.24
+   ]
+  }
+ },
+ {
+  "id": "tomato-wary",
+  "kind": "text",
+  "turn_id": "t13",
+  "turn_idx": 13,
+  "offset": 0.2,
+  "start": 109.28,
+  "end": 112.84,
+  "props": {
+   "text": "WARY: A COUSIN OF NIGHTSHADE",
+   "level": "subtitle",
+   "position": [
+    0.38,
+    0.4
+   ]
+  }
+ },
+ {
+  "id": "bubble-sunday",
+  "kind": "bubble",
+  "turn_id": "t10",
+  "turn_idx": 10,
+  "offset": 0.0,
+  "start": 93.53,
+  "end": 98.91,
+  "props": {
+   "text": "My Sunday dinner. Ruined.",
+   "position": [
+    0.38,
+    0.3
+   ],
+   "width": 420
+  }
+ },
+ {
+  "id": "tobacco-east",
+  "kind": "text",
+  "turn_id": "t11",
+  "turn_idx": 11,
+  "offset": 0.92,
+  "start": 99.83,
+  "end": 103.86,
+  "props": {
+   "text": "TOBACCO → EAST",
+   "level": "title",
+   "position": [
+    0.38,
+    0.3
+   ]
+  }
+ },
+ {
+  "id": "americas-gained",
+  "kind": "text",
+  "turn_id": "t15",
+  "turn_idx": 15,
+  "offset": 1.52,
+  "start": 118.6,
+  "end": 125.64,
+  "props": {
+   "text": "AMERICAS GAINED: WHEAT, CATTLE, PIGS",
+   "level": "subtitle",
+   "position": [
+    0.38,
+    0.24
+   ],
+   "color": "#90d39a"
+  }
+ },
+ {
+  "id": "bg-comanche",
+  "kind": "bg",
+  "turn_id": "t15",
+  "turn_idx": 15,
+  "offset": 8.56,
+  "start": 125.64,
+  "end": 138.42,
+  "props": {
+   "image": "historic/u1e2/comanche-horses.jpg"
+  }
+ },
+ {
+  "id": "comanche-name",
+  "kind": "text",
+  "turn_id": "t15",
+  "turn_idx": 15,
+  "offset": 8.56,
+  "start": 125.64,
+  "end": 138.42,
+  "props": {
+   "text": "THE COMANCHE",
+   "level": "title",
+   "position": [
+    0.38,
+    0.22
+   ],
+   "entrance": "stamp"
+  }
+ },
+ {
+  "id": "comanche-rebuilt",
+  "kind": "text",
+  "turn_id": "t15",
+  "turn_idx": 15,
+  "offset": 10.67,
+  "start": 127.75,
+  "end": 138.42,
+  "props": {
+   "text": "REBUILT LIFE AROUND THE HORSE",
+   "level": "subtitle",
+   "position": [
+    0.38,
+    0.36
+   ]
+  }
+ },
+ {
+  "id": "bg-pigs",
+  "kind": "bg",
+  "turn_id": "t18",
+  "turn_idx": 18,
+  "offset": 4.25,
+  "start": 149.85,
+  "end": 162.42,
+  "props": {
+   "image": "historic/u1e3/feral-pigs.jpg"
+  }
+ },
+ {
+  "id": "pigs-feral",
+  "kind": "text",
+  "turn_id": "t18",
+  "turn_idx": 18,
+  "offset": 4.25,
+  "start": 149.85,
+  "end": 162.42,
+  "props": {
+   "text": "FERAL PIGS",
+   "level": "title",
+   "position": [
+    0.38,
+    0.22
+   ],
+   "entrance": "stamp"
+  }
+ },
+ {
+  "id": "pigs-cattle",
+  "kind": "text",
+  "turn_id": "t18",
+  "turn_idx": 18,
+  "offset": 10.84,
+  "start": 156.44,
+  "end": 162.42,
+  "props": {
+   "text": "CATTLE → RANCHING",
+   "level": "subtitle",
+   "position": [
+    0.38,
+    0.36
+   ]
+  }
+ },
+ {
+  "id": "bg-maize",
+  "kind": "bg",
+  "turn_id": "t19",
+  "turn_idx": 19,
+  "offset": 0.0,
+  "start": 162.42,
+  "end": 171.03,
+  "props": {
+   "image": "historic/u1e3/maize-botanical.jpg"
+  }
+ },
+ {
+  "id": "crosby-1972",
+  "kind": "text",
+  "turn_id": "t20",
+  "turn_idx": 20,
+  "offset": 0.14,
+  "start": 171.17,
+  "end": 191.49,
+  "props": {
+   "text": "1972",
+   "level": "hero",
+   "position": [
+    0.38,
+    0.2
+   ],
+   "entrance": "stamp",
+   "color": "#ffd166"
+  }
+ },
+ {
+  "id": "crosby-label",
+  "kind": "text",
+  "turn_id": "t20",
+  "turn_idx": 20,
+  "offset": 10.4,
+  "start": 181.43,
+  "end": 191.49,
+  "props": {
+   "text": "THE COLUMBIAN EXCHANGE",
+   "level": "subtitle",
+   "position": [
+    0.38,
+    0.5
+   ],
+   "entrance": "stamp"
+  }
+ },
+ {
+  "id": "cargo-ticket",
+  "kind": "text",
+  "turn_id": "t22",
+  "turn_idx": 22,
+  "offset": 4.78,
+  "start": 196.27,
+  "end": 198.37,
+  "props": {
+   "text": "THE BIGGEST CARGO HAD NO TICKET",
+   "level": "subtitle",
+   "position": [
+    0.38,
+    0.3
+   ]
+  }
+ },
+ {
+  "id": "ledger-box1",
+  "kind": "ledger",
+  "turn_id": "t23",
+  "turn_idx": 23,
+  "offset": 0.62,
+  "start": 198.99,
+  "end": 220.38,
+  "props": {
+   "west": [
+    "Wheat",
+    "Sugarcane",
+    "Horses",
+    "Cattle",
+    "Pigs"
+   ],
+   "east": [
+    "Maize",
+    "Potatoes",
+    "Tomatoes",
+    "Tobacco"
+   ]
+  }
+ },
+ {
+  "id": "pictogram-dead",
+  "kind": "pictogram",
+  "turn_id": "t29",
+  "turn_idx": 29,
+  "offset": 15.47,
+  "start": 263.39,
+  "end": 268.8,
+  "props": {
+   "total": 10,
+   "lost": [
+    8,
+    9
+   ],
+   "label": "8 OR 9 OF 10 DIED",
+   "caption": "in the hardest-hit towns"
+  }
+ },
+ {
+  "id": "erasure",
+  "kind": "text",
+  "turn_id": "t30",
+  "turn_idx": 30,
+  "offset": 3.27,
+  "start": 268.8,
+  "end": 274.57,
+  "props": {
+   "text": "AN ERASURE.",
+   "level": "title",
+   "position": [
+    0.38,
+    0.62
+   ],
+   "color": "#e8dcc8",
+   "entrance": "fade"
+  }
+ },
+ {
+  "id": "bubble-numbers",
+  "kind": "bubble",
+  "turn_id": "t31",
+  "turn_idx": 31,
+  "offset": 0.0,
+  "start": 271.63,
+  "end": 274.57,
+  "props": {
+   "text": "Just more Spaniards?",
+   "position": [
+    0.38,
+    0.3
+   ],
+   "width": 400
+  }
+ },
+ {
+  "id": "herd-animals",
+  "kind": "text",
+  "turn_id": "t32",
+  "turn_idx": 32,
+  "offset": 7.55,
+  "start": 282.12,
+  "end": 294.69,
+  "props": {
+   "text": "HERD ANIMALS → CROWD DISEASES",
+   "level": "subtitle",
+   "position": [
+    0.38,
+    0.22
+   ]
+  }
+ },
+ {
+  "id": "no-exposure",
+  "kind": "text",
+  "turn_id": "t32",
+  "turn_idx": 32,
+  "offset": 13.02,
+  "start": 287.59,
+  "end": 294.69,
+  "props": {
+   "text": "THE AMERICAS: NO PRIOR EXPOSURE",
+   "level": "subtitle",
+   "position": [
+    0.38,
+    0.36
+   ]
+  }
+ },
+ {
+  "id": "virgin-soil",
+  "kind": "text",
+  "turn_id": "t32",
+  "turn_idx": 32,
+  "offset": 19.37,
+  "start": 293.94,
+  "end": 299.3,
+  "props": {
+   "text": "VIRGIN-SOIL EPIDEMIC",
+   "level": "title",
+   "position": [
+    0.38,
+    0.52
+   ]
+  }
+ },
+ {
+  "id": "bg-tenochtitlan",
+  "kind": "bg",
+  "turn_id": "t33",
+  "turn_idx": 33,
+  "offset": 0.0,
+  "start": 294.69,
+  "end": 309.86,
+  "props": {
+   "image": "historic/u1e3/tenochtitlan.jpg"
+  }
+ },
+ {
+  "id": "bubble-phrase",
+  "kind": "bubble",
+  "turn_id": "t33",
+  "turn_idx": 33,
+  "offset": 1.77,
+  "start": 296.46,
+  "end": 299.3,
+  "props": {
+   "text": "That phrase bugs me.",
+   "position": [
+    0.38,
+    0.3
+   ],
+   "width": 400
+  }
+ },
+ {
+  "id": "had-help",
+  "kind": "text",
+  "turn_id": "t34",
+  "turn_idx": 34,
+  "offset": 4.49,
+  "start": 303.79,
+  "end": 309.86,
+  "props": {
+   "text": "THE DYING HAD HELP",
+   "level": "title",
+   "position": [
+    0.38,
+    0.22
+   ]
+  }
+ },
+ {
+  "id": "help-list",
+  "kind": "text",
+  "turn_id": "t34",
+  "turn_idx": 34,
+  "offset": 5.11,
+  "start": 304.41,
+  "end": 309.86,
+  "props": {
+   "text": "WAR · ENSLAVEMENT · FORCED LABOR · HUNGER",
+   "level": "body",
+   "position": [
+    0.38,
+    0.34
+   ]
+  }
+ },
+ {
+  "id": "disease-led",
+  "kind": "text",
+  "turn_id": "t34",
+  "turn_idx": 34,
+  "offset": 8.07,
+  "start": 307.37,
+  "end": 317.84,
+  "props": {
+   "text": "DISEASE LED. IT DIDN'T WORK ALONE.",
+   "level": "subtitle",
+   "position": [
+    0.38,
+    0.6
+   ]
+  }
+ },
+ {
+  "id": "full-answer",
+  "kind": "text",
+  "turn_id": "t42",
+  "turn_idx": 42,
+  "offset": 5.17,
+  "start": 360.1,
+  "end": 369.59,
+  "props": {
+   "text": "DISEASE → STEEL → HORSES → ALLIES",
+   "level": "subtitle",
+   "position": [
+    0.38,
+    0.44
+   ],
+   "color": "#ffd166"
+  }
+ },
+ {
+  "id": "bg-codex",
+  "kind": "bg",
+  "turn_id": "t37",
+  "turn_idx": 37,
+  "offset": 0.0,
+  "start": 320.94,
+  "end": 346.59,
+  "props": {
+   "image": "historic/u1e3/florentine-codex-page.jpg"
+  }
+ },
+ {
+  "id": "syphilis",
+  "kind": "text",
+  "turn_id": "t39",
+  "turn_idx": 39,
+  "offset": 7.5,
+  "start": 344.35,
+  "end": 347.9,
+  "props": {
+   "text": "SYPHILIS — MAYBE",
+   "level": "title",
+   "position": [
+    0.38,
+    0.24
+   ]
+  }
+ },
+ {
+  "id": "syphilis-debate",
+  "kind": "text",
+  "turn_id": "t39",
+  "turn_idx": 39,
+  "offset": 8.95,
+  "start": 345.8,
+  "end": 347.9,
+  "props": {
+   "text": "ORIGIN STILL DEBATED",
+   "level": "subtitle",
+   "position": [
+    0.38,
+    0.38
+   ]
+  }
+ },
+ {
+  "id": "versus-ledger",
+  "kind": "versus",
+  "turn_id": "t44",
+  "turn_idx": 44,
+  "offset": 0.0,
+  "start": 377.32,
+  "end": 392.91,
+  "props": {
+   "clashTitle": "WHO GAINED? WHO PAID?",
+   "periodLabel": "The Columbian Exchange, 1492–1650",
+   "entityA": {
+    "name": "EUROPE",
+    "subtitle": "Gained",
+    "points": [
+     "Calories: maize, potatoes",
+     "Wealth: silver, sugar, land",
+     "Population growth"
+    ],
+    "color": "#90d39a"
+   },
+   "entityB": {
+    "name": "THE AMERICAS",
+    "subtitle": "Paid, and also gained",
+    "points": [
+     "Roughly 50–90% population loss, 1500–1650",
+     "Gained horses, wheat, cattle",
+     "Labor collapse → coerced labor"
+    ],
+    "color": "#e07a5f"
+   },
+   "verdictSummary": "Evaluate both halves."
+  }
+ },
+ {
+  "id": "encomienda",
+  "kind": "text",
+  "turn_id": "t50",
+  "turn_idx": 50,
+  "offset": 0.0,
+  "start": 429.51,
+  "end": 445.85,
+  "props": {
+   "text": "ENCOMIENDA",
+   "level": "title",
+   "position": [
+    0.38,
+    0.2
+   ]
+  }
+ },
+ {
+  "id": "coerced",
+  "kind": "text",
+  "turn_id": "t50",
+  "turn_idx": 50,
+  "offset": 1.17,
+  "start": 430.68,
+  "end": 445.85,
+  "props": {
+   "text": "NATIVE LABOR COLLAPSES",
+   "level": "subtitle",
+   "position": [
+    0.38,
+    0.34
+   ]
+  }
+ },
+ {
+  "id": "island-model",
+  "kind": "text",
+  "turn_id": "t50",
+  "turn_idx": 50,
+  "offset": 12.64,
+  "start": 442.15,
+  "end": 445.85,
+  "props": {
+   "text": "MADEIRA + SÃO TOMÉ",
+   "level": "subtitle",
+   "position": [
+    0.38,
+    0.48
+   ]
+  }
+ },
+ {
+  "id": "bg-brookes",
+  "kind": "bg",
+  "turn_id": "t55",
+  "turn_idx": 55,
+  "offset": 0.0,
+  "start": 477.91,
+  "end": 590.66,
+  "props": {
+   "image": "historic/u1e3/brookes-slave-ship.jpg"
+  }
+ },
+ {
+  "id": "hispaniola",
+  "kind": "text",
+  "turn_id": "t56",
+  "turn_idx": 56,
+  "offset": 10.78,
+  "start": 492.81,
+  "end": 497.65,
+  "props": {
+   "text": "A CENTURY BEFORE 1619",
+   "level": "title",
+   "position": [
+    0.38,
+    0.28
+   ]
+  }
+ },
+ {
+  "id": "sugar-first",
+  "kind": "text",
+  "turn_id": "t57",
+  "turn_idx": 57,
+  "offset": 7.03,
+  "start": 504.68,
+  "end": 506.18,
+  "props": {
+   "text": "SUGAR FIRST, NOT COTTON",
+   "level": "subtitle",
+   "position": [
+    0.38,
+    0.42
+   ]
+  }
+ },
+ {
+  "id": "not-jamestown",
+  "kind": "text",
+  "turn_id": "t57",
+  "turn_idx": 57,
+  "offset": 1.66,
+  "start": 499.31,
+  "end": 506.18,
+  "props": {
+   "text": "NOT JAMESTOWN, 1619",
+   "level": "subtitle",
+   "position": [
+    0.38,
+    0.56
+   ],
+   "color": "#ffd166"
+  }
+ },
+ {
+  "id": "recap-board",
+  "kind": "board",
+  "turn_id": "t58",
+  "turn_idx": 58,
+  "offset": 0.0,
+  "start": 506.18,
+  "end": 590.66,
+  "props": {
+   "items": [
+    {
+     "box": 1,
+     "turn_id": "t58",
+     "word": "wheat",
+     "text": "Livestock west, crops both ways.",
+     "offset": 5.91
+    },
+    {
+     "box": 2,
+     "turn_id": "t60",
+     "word": "disease front",
+     "text": "Germs sailed west: 8 or 9 of 10 died in the hardest-hit towns. Syphilis east? Debated.",
+     "offset": 1.79
+    },
+    {
+     "box": 3,
+     "turn_id": "t62",
+     "word": "who won",
+     "text": "Both halves: Europe gained calories and wealth; the Americas paid in people and gained the horse.",
+     "offset": 1.93
+    },
+    {
+     "box": 4,
+     "turn_id": "t64",
+     "word": "labor crisis",
+     "text": "The labor crisis: the island model crossed the Atlantic in chains.",
+     "offset": 1.69
+    }
+   ],
+   "footer": {
+    "turn_id": "t63",
+    "word": "germs",
+    "text": "GERMS → SILVER → CHAINS",
+    "offset": 0.0
+   }
+  }
+ },
+ {
+  "id": "q1-card",
+  "kind": "question",
+  "turn_id": "t67",
+  "turn_idx": 67,
+  "offset": 0.0,
+  "start": 595.07,
+  "end": 624.3,
+  "props": {
+   "number": 1,
+   "format": "Stimulus · short answer",
+   "source": {
+    "title": "FLORENTINE CODEX, BOOK 12 (PARAPHRASED)",
+    "text": "Smallpox victims lay in their houses, unable to move, with no one left to care for them."
+   },
+   "stem": "What larger pattern does this account illustrate?"
+  }
+ },
+ {
+  "id": "q2-card",
+  "kind": "question",
+  "turn_id": "t70",
+  "turn_idx": 70,
+  "offset": 0.0,
+  "start": 638.19,
+  "end": 668.57,
+  "props": {
+   "number": 2,
+   "format": "Argument · defend or refute",
+   "stem": "“The potato did more to change Europe than any treaty of the 1500s.” Defend or refute, using the Exchange."
+  }
+ },
+ {
+  "id": "q3-card",
+  "kind": "question",
+  "turn_id": "t73",
+  "turn_idx": 73,
+  "offset": 0.0,
+  "start": 685.08,
+  "end": 712.15,
+  "props": {
+   "number": 3,
+   "format": "Causation",
+   "stem": "Where had Europeans already used enslaved African labor on sugar, and what happened next?"
+  }
+ },
+ {
+  "id": "bonus-card",
+  "kind": "question",
+  "turn_id": "t76",
+  "turn_idx": 76,
+  "offset": 0.0,
+  "start": 727.59,
+  "end": 736.43,
+  "props": {
+   "number": 4,
+   "format": "Bonus · fast",
+   "stem": "Name the one domesticated animal that went east."
+  }
+ },
+ {
+  "id": "quiz-intro",
+  "kind": "text",
+  "turn_id": "t66",
+  "turn_idx": 66,
+  "offset": 1.9,
+  "start": 592.56,
+  "end": 595.07,
+  "props": {
+   "text": "SAY IT OUT LOUD",
+   "level": "title",
+   "position": [
+    0.38,
+    0.3
+   ],
+   "color": "#ffd166"
+  }
+ },
+ {
+  "id": "next-time",
+  "kind": "text",
+  "turn_id": "t79",
+  "turn_idx": 79,
+  "offset": 4.59,
+  "start": 755.83,
+  "end": 760.52,
+  "props": {
+   "text": "NEXT: JAMESTOWN, 1607",
+   "level": "title",
+   "position": [
+    0.38,
+    0.3
+   ]
+  }
+ },
+ {
+  "id": "close-food",
+  "kind": "text",
+  "turn_id": "t80",
+  "turn_idx": 80,
+  "offset": 0.0,
+  "start": 760.52,
+  "end": 763.47,
+  "props": {
+   "text": "THE FOOD WENT BOTH WAYS",
+   "level": "title",
+   "position": [
+    0.38,
+    0.26
+   ]
+  }
+ },
+ {
+  "id": "close-dying",
+  "kind": "text",
+  "turn_id": "t81",
+  "turn_idx": 81,
+  "offset": 0.0,
+  "start": 761.93,
+  "end": 763.47,
+  "props": {
+   "text": "THE DYING ONLY WENT ONE",
+   "level": "title",
+   "position": [
+    0.38,
+    0.5
+   ],
+   "color": "#e07a5f",
+   "entrance": "fade"
+  }
+ }
+]
