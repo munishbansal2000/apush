@@ -6831,3 +6831,127 @@ facts:
   - web
   tier_note: 'Added U7-L9 v2 2026-10-07 (Layer-3 repair). Unverifiable in Tier 1 + Tier 2 (no dedicated
     Britannica article found); dialogue line kept with a Sources-footer disclosure.'
+- id: F-U7-052
+  topic: 'Earth Day April 22 1970 — Nelson, Hayes, 20 million'
+  correct: 'The first Earth Day took place April 22, 1970. U.S. Senator Gaylord Nelson hired Harvard
+    graduate student Denis Hayes to organize an ''environmental teach-in'' infused with student-led
+    anti-war activism energy. About 20 million Americans participated, the largest single-day protest
+    in American history. It helped win support for the Clean Air Act (1970) and Endangered Species
+    Act (1973).'
+  falsehoods:
+  - Earth Day.{0,30}(1969|1968|1971|1972)
+  - founded Earth Day.{0,40}(?!Nelson)
+  sources:
+  - britannica
+  tier_note: 'Added U7-L10 v2 2026-10-07 (Layer-3 pass). Britannica Earth Day article.'
+- id: F-U7-053
+  topic: 'Cuyahoga River fire June 22 1969 — NPS account'
+  correct: 'The Cuyahoga River in Cleveland caught fire June 22, 1969 — the last of at least 13 river
+    fires (1868 onward). Oil floating on the water plus piled-up debris, likely ignited by a flare
+    tossed from a passing train; burned under half an hour with minor damage. The August 1969 Time
+    magazine article made it internationally famous. With a California oil spill that same year it
+    became a rallying cry; helped spur the Water Quality Improvement Act of 1970, the Clean Water
+    Act of 1972, and EPA creation. Fish and wildlife have since returned to the river.'
+  falsehoods:
+  - Cuyahoga.{0,40}(1968|1970|1971|1972)
+  - Cuyahoga.{0,25}fire.{0,25}(massive|huge|destroyed (the )?city|burned for (days|weeks))
+  sources:
+  - nps
+  tier_note: 'Added U7-L10 v2 2026-10-07 (Layer-3 pass). NPS Cuyahoga articles; the 1969 fire was
+    modest — the fame came from Time, not the scale.'
+- id: F-U7-054
+  topic: 'EPA created 1970 by Nixon — Ruckelshaus first administrator'
+  correct: 'President Nixon created the Environmental Protection Agency in 1970 to set and enforce
+    national pollution-control guidelines. William Ruckelshaus was sworn in as the first EPA
+    administrator on December 4, 1970. The EPA initially administered the Clean Air Act (1970), the
+    Federal Environmental Pesticide Control Act (1972), and the Clean Water Act (1972).'
+  falsehoods:
+  - EPA.{0,25}created.{0,25}executive order
+  - (Kennedy|Johnson).{0,30}(created|founded).{0,20}EPA
+  sources:
+  - britannica
+  tier_note: 'Added U7-L10 v2 2026-10-07 (Layer-3 pass). Britannica EPA article. The v2 draft
+    initially said ''executive order'' — fixed to no mechanism claimed; guard the falsehood.'
+- id: F-U7-055
+  topic: 'Rachel Carson died 1964 — industry attacks'
+  correct: 'Rachel Carson died April 14, 1964, before she could see substantive results from Silent
+    Spring (1962). The chemical industry threatened lawsuits and accused her of ''emotionalism''
+    and ''gross distortion'' over her pesticide warnings.'
+  falsehoods:
+  - Carson.{0,25}(lived to see|saw).{0,25}(Earth Day|the EPA|DDT ban)
+  sources:
+  - britannica
+  tier_note: 'Added U7-L10 v2 2026-10-07 (Layer-3 pass). Britannica Rachel Carson biography. The
+    v2 draft first wrote ''hysterical, unqualified, a danger to progress'' — replaced with the
+    Britannica-confirmed wording.'
+- id: F-U7-056
+  topic: 'DDT banned 1972 by EPA — beyond Tier 1/2, disclose'
+  correct: 'The EPA banned DDT in the United States in June 1972 under Administrator William
+    Ruckelshaus, after multi-year federal hearings on the pesticide dangers Carson raised. Thin
+    eggshells breaking in nests drove bird population declines; the ban aided bald eagle and
+    peregrine recovery.'
+  falsehoods:
+  - Carson.{0,20}banned DDT
+  - DDT.{0,25}banned.{0,25}(1960s|1980s|1990s)
+  sources:
+  - web
+  tier_note: 'Added U7-L10 v2 2026-10-07 (Layer-3 pass). Beyond Tier 1 + Tier 2 (no dedicated
+    Britannica article found); confirmed via Scientific American and standard histories; dialogue
+    kept with Sources-footer disclosure.'
+- id: F-U7-057
+  topic: 'NEPA January 1 1970 — environmental impact statements, disclose'
+  correct: 'President Nixon signed the National Environmental Policy Act on January 1, 1970. It
+    requires the federal government to assess a project''s environmental damage — environmental
+    impact statements — before building.'
+  falsehoods:
+  - NEPA.{0,25}(1969|1971|1972)
+  sources:
+  - web
+  tier_note: 'Added U7-L10 v2 2026-10-07 (Layer-3 pass). Not in the retrievable Tier-1 books; no
+    dedicated Britannica article found. Standard history; dialogue kept with Sources-footer
+    disclosure.'
+- id: F-U7-058
+  topic: 'Reagan-era EPA rollback — Gorsuch, disclose'
+  correct: 'Under President Reagan, EPA Administrator Anne Gorsuch (appointed 1981) cut the EPA
+    budget about 22 percent, slashed enforcement, and relaxed regulations; she resigned in 1983
+    after a congressional battle over toxic-waste cleanup documents, and William Ruckelshaus was
+    recalled to lead the agency. The environmental laws survived the rollback attempt.'
+  falsehoods:
+  - Reagan.{0,30}(repealed|abolished).{0,20}(EPA|Clean Air Act|Clean Water Act)
+  sources:
+  - web
+  tier_note: 'Added U7-L10 v2 2026-10-07 (Layer-3 pass). Beyond Tier 1 + Tier 2; confirmed via
+    NPR EPA-history reporting and NYT/WaPo obituary coverage. The v2 draft first wrote ''tried
+    to unwind the whole thing'' — softened to ''tried to roll back the enforcement machine.'''
+- id: F-U7-059
+  topic: 'Lead phase-out from gasoline — Clean Air Act authority, disclose'
+  correct: 'Under Clean Air Act authority the EPA phased lead out of gasoline beginning in the
+    1970s, and brokered automaker installation of catalytic converters — an early EPA success
+    cutting unburned hydrocarbon emissions sharply.'
+  falsehoods:
+  - lead.{0,25}gasoline.{0,25}(1960s|never phased)
+  sources:
+  - web
+  tier_note: 'Added U7-L10 v2 2026-10-07 (Layer-3 pass). Catalytic-converter agreement is
+    Britannica-confirmed; the lead phasedown is standard history beyond Tier 1/2, disclosed.'
+- id: F-U7-060
+  topic: 'The Lorax published 1971'
+  correct: 'Dr. Seuss published The Lorax in 1971, the year after the first Earth Day — a
+    children''s book about the Once-ler chopping down the Truffula trees.'
+  falsehoods:
+  - Lorax.{0,25}(1960s|1980s|1990s)
+  sources:
+  - britannica
+  tier_note: 'Added U7-L10 v2 2026-10-07 (Layer-3 pass). Britannica Kids Dr. Seuss article.'
+- id: F-U7-061
+  topic: 'Muskie clean-air leadership and 1972 frontrunner status — disclose'
+  correct: 'Senator Edmund Muskie was a leading Democratic presidential contender for 1972 and the
+    Senate face of clean-air legislation. Nixon''s team read the environment as a popular cause no
+    opponent could be allowed to own — the script''s motive analysis, hedged in dialogue.'
+  falsehoods:
+  - Muskie.{0,25}(Republican|vice president)
+  sources:
+  - web
+  tier_note: 'Added U7-L10 v2 2026-10-07 (Layer-3 pass). Beyond retrievable Tier-1 books;
+    Britannica''s 1972-election coverage confirms Muskie''s 1972 campaign. Taught as hedged
+    political analysis, not settled fact.'
