@@ -176,7 +176,11 @@ def test_density_bare_headline_errors_unless_flagged():
 
 
 def test_density_count_rule_and_bad_variance():
-    plan = _v2_plan([_headline("s%d" % i, start_sec=float(5 * i))
+    # Cued headlines isolate the count rule from the bare-headline rule.
+    cue = [{"type": "keywordpop", "word": "X", "start": 1.0,
+            "duration": 2.0, "position": "right"}]
+    plan = _v2_plan([_headline("s%d" % i, start_sec=float(5 * i),
+                               overlays=[dict(o) for o in cue])
                      for i in range(4)])
     errors, _ = lint_plan(plan)
     assert any("exceed 3" in e for e in errors)
@@ -191,6 +195,67 @@ def test_density_count_rule_and_bad_variance():
                                      "reason": "  "}
     errors, _ = lint_plan(plan)
     assert any("non-empty reason" in e for e in errors)
+
+
+def _image_scene(sid, slide, image, start=0.0, dur=5.0, **kw):
+    params = {"image": image, "title": "T"}
+    params.update(kw.pop("params", {}))
+    spec = {"id": sid, "slide": slide, "params": params,
+            "start_sec": start, "duration_sec": dur,
+            "transition": "cut", "trans_dur": 0}
+    spec.update(kw)
+    return spec
+
+
+def test_density_sub_line_is_not_enrichment():
+    static = _headline("s1")  # headline + sub, zero timed cues
+    errors, _ = lint_plan(_v2_plan([static]))
+    assert any("bare DisplayHeadline" in e for e in errors)
+
+
+def test_density_headline_with_timed_cue_passes():
+    cued = _headline("s1", overlays=[
+        {"type": "keywordpop", "word": "MONEY",
+         "start": 1.0, "duration": 3.0, "position": "right"}])
+    errors, _ = lint_plan(_v2_plan([cued]))
+    assert errors == []
+
+
+def test_sequence_same_static_image_errors():
+    plan = _v2_plan([
+        _image_scene("s1", "ImageSlide", "images/coin.jpg"),
+        _image_scene("s2", "ImageSlide", "images/coin.jpg",
+                     start=5.0),
+    ])
+    errors, _ = lint_plan(plan)
+    assert any("SHOT" in e and "s2" in e for e in errors)
+
+
+def test_sequence_shot_change_passes():
+    plan = _v2_plan([
+        _image_scene("s1", "ImageSlide", "images/coin.jpg"),
+        _image_scene("s2", "KenBurnsSlide", "images/coin.jpg",
+                     start=5.0,
+                     params={"stops": [[0.5, 0.5, 1.0]]}),
+    ])
+    errors, _ = lint_plan(plan)
+    assert errors == []
+
+
+def test_sequence_same_move_twice_errors():
+    kb = {"stops": [[0.5, 0.5, 1.0], [0.5, 0.6, 0.55]]}
+    plan = _v2_plan([
+        _image_scene("s1", "KenBurnsSlide", "images/m.jpg",
+                     params=dict(kb)),
+        _image_scene("s2", "KenBurnsSlide", "images/m.jpg",
+                     start=5.0, params=dict(kb)),
+    ])
+    errors, _ = lint_plan(plan)
+    assert any("SHOT" in e for e in errors)
+    plan["scenes"][1]["params"]["stops"] = [[0.5, 0.5, 0.7],
+                                            [0.4, 0.4, 0.45]]
+    errors, _ = lint_plan(plan)
+    assert errors == []
 
 
 def test_density_v1_exempt():

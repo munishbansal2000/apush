@@ -50,7 +50,7 @@
      },
      {
       "anchor": {
-       "word": "challenge"
+       "word": "england's"
       },
       "face_top": true,
       "from": "right",
@@ -90,7 +90,16 @@
     },
     "headline": "Start with the money",
     "sub": "Everything else follows it"
-   }
+   },
+   "overlays": [
+    {
+     "anchor": {
+      "word": "money"
+     },
+     "type": "keywordpop",
+     "word": "MONEY"
+    }
+   ]
   },
   {
    "id": "e3a1-04",
@@ -261,7 +270,7 @@
   },
   {
    "id": "e3a1-08",
-   "slide": "ImageSlide",
+   "slide": "KenBurnsSlide",
    "turns": [
     3,
     3
@@ -272,7 +281,20 @@
    },
    "params": {
     "caption": "Spanish silver dollars, minted from this metal",
+    "hold": 3.0,
     "image": "images/piece-of-eight.jpg",
+    "stops": [
+     [
+      0.5,
+      0.5,
+      1.0
+     ],
+     [
+      0.5,
+      0.5,
+      0.7
+     ]
+    ],
     "title": "Those exact coins"
    }
   },

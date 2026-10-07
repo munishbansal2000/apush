@@ -21,9 +21,15 @@ def _v2_plan():
         "scenes": [
             {"id": "scene-00", "slide": "DisplayHeadline",
              "params": {"headline": "Three boxes", "sub": "x"},
+             "overlays": [{"type": "keywordpop", "word": "BOXES",
+                           "start": 1.0, "duration": 2.0,
+                           "position": "right"}],
              "start_sec": 0.0, "duration_sec": 13.5},
             {"id": "scene-01", "slide": "DisplayHeadline",
              "params": {"headline": "Cahokia", "sub": "x"},
+             "overlays": [{"type": "keywordpop", "word": "CAHOKIA",
+                           "start": 1.0, "duration": 2.0,
+                           "position": "left"}],
              "start_sec": 13.5, "duration_sec": 6.6},
         ],
     }
