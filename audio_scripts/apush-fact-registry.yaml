@@ -4795,3 +4795,147 @@ facts:
   sources:
   - Britannica
   tier_note: Verified (new) U5-L8 v3 2026-10-07 — primary-text lines, safe for verbatim quotation.
+- id: F-U5-065
+  topic: Shaw University "first Black college in the South" claim — CUT as unverifiable
+  correct: 'No Tier 1 (5steps2024, premium2027, princeton) or Tier 2 (Britannica, NPS) source
+    verifies Shaw University 1867 as "the first Black college in the South." premium2027
+    verifies only that "Howard University and Morehouse College were established during
+    the Reconstruction period." Use exactly that; never pin "first" or a founding year
+    for Shaw without an independent trusted source.'
+  falsehoods:
+  - Shaw University.{0,40}first Black college
+  - Shaw University.{0,20}1867
+  sources:
+  - premium2027
+  tier_note: Correction U5-L9 v3 2026-10-07 — v1 claim removed, replaced with verified wording.
+- id: F-U5-066
+  topic: Johnson "declared Reconstruction complete" — reframed to Tier-1-verified endpoints
+  correct: 'princeton verifies Johnson "declared Reconstruction over and done with."
+    premium2027 verifies he quickly recognized the new Southern state governments as
+    legitimate after they renounced secession and ratified the Thirteenth Amendment.
+    princeton verifies Congress was in recess and would not reconvene for eight months,
+    leaving the early stages of Reconstruction entirely in Johnson''s hands. Safe form:
+    "by the end of 1865, barely eight months after Appomattox, Johnson treated the
+    Southern governments as legitimate and told Congress the job was basically done."'
+  falsehoods:
+  - Johnson.{0,40}declared Reconstruction.{0,20}complete.{0,20}eight months
+  sources:
+  - princeton
+  - premium2027
+  tier_note: Correction U5-L9 v3 2026-10-07 — v1 timing claim softened to verified endpoints.
+- id: F-U5-067
+  topic: Johnson impeachment — one-vote acquittal, seven Republicans broke ranks
+  correct: 'House impeached Johnson February 1868 over firing Secretary of War Edwin
+    Stanton in violation of the Tenure of Office Act. Senate trial: 35 to 19 for
+    conviction, one vote short of the two-thirds needed (5steps2024: "escaped conviction
+    and removal by a one vote margin"). Seven Republicans broke ranks and voted to
+    acquit (U.S. Senate official history, senate.gov, Impeachment Trial of President
+    Andrew Johnson, 1868 — "seven Republican Recusants").'
+  falsehoods:
+  - Johnson.{0,20}impeach.{0,60}removed from office
+  - Senate convicted Johnson
+  sources:
+  - 5steps
+  - princeton
+  - senate.gov
+  tier_note: Verified (new) U5-L9 v3 2026-10-07 — v1 claim confirmed, kept.
+- id: F-U5-068
+  topic: Ratification conditions — 13th under Johnson, 14th under Congressional Reconstruction
+  correct: 'Johnson''s price of readmission: Southern states had to ratify the Thirteenth
+    Amendment (premium2027: he recognized the new Southern state governments "after
+    they renounced secession and ratified the Thirteenth Amendment banning slavery").
+    Under Congressional Reconstruction the condition became the Fourteenth Amendment:
+    the Reconstruction Acts required each state to ratify the 14th (and write a new
+    constitution guaranteeing Black men the vote) to be officially recognized (5steps2024).'
+  falsehoods:
+  - 13th Amendment.{0,40}not.{0,20}condition
+  - Southern states rejoined.{0,40}14th Amendment.{0,20}(not|never) required
+  sources:
+  - premium2027
+  - 5steps
+  tier_note: Verified (new) U5-L9 v3 2026-10-07 — v1 claim confirmed, attribution sharpened.
+- id: F-U5-069
+  topic: Black officeholders 1870 — use verified figures, not "2,000"
+  correct: 'In the 1870 elections, freedmen helped elect 630 African Americans to Southern
+    state legislatures, 16 to the U.S. House of Representatives, and 1 to the Senate
+    (5steps2024). premium2027: in the 1870s two African Americans were elected to the
+    U.S. Senate — Hiram Revels and Blanche K. Bruce — and more than a dozen to the
+    House. "2,000 Black men elected" is not in Tier 1; do not use it.'
+  falsehoods:
+  - 2,000 Black men elected
+  - 2000 African Americans elected to office
+  sources:
+  - 5steps
+  - premium2027
+  tier_note: Correction U5-L9 v3 2026-10-07 — v1 figure replaced with verified numbers.
+- id: F-U5-070
+  topic: Sherman Special Field Order No. 15 — Johnson rescinded it
+  correct: 'Under General Sherman''s Special Field Order No. 15, land seized from the
+    Confederates was to be redistributed among the new freedmen; President Andrew
+    Johnson rescinded Sherman''s order, and the idea of giving freedmen "40 acres and
+    a mule" never regained much ground (princeton).'
+  falsehoods:
+  - Freedmen''s Bureau gave freedmen land.{0,40}Johnson took it back
+  - Johnson honored Sherman''s land order
+  sources:
+  - princeton
+  tier_note: Verified (new) U5-L9 v3 2026-10-07 — v1 claim confirmed, attributed to Sherman''s order not the Bureau.
+- id: F-U5-071
+  topic: Stevens land-redistribution bill 1867 — died in committee
+  correct: 'Representative Thaddeus Stevens introduced a bill in the spring of 1867 to
+    redistribute land so that each freedman could be granted forty acres. The issue of
+    land reform died in committee in the summer of 1867: it ran against the basic
+    Republican value of protecting private property (premium2027). Stevens had also
+    argued freedmen needed economic independence via confiscating land from wealthy
+    Confederates (5steps2024).'
+  falsehoods:
+  - Stevens.{0,40}forty acres.{0,20}passed
+  - Congress redistributed planter land to freedmen
+  sources:
+  - premium2027
+  - 5steps
+  tier_note: Verified (new) U5-L9 v3 2026-10-07.
+- id: F-U5-072
+  topic: 15th Amendment split the women's movement — both organizations
+  correct: 'Elizabeth Cady Stanton and Susan B. Anthony refused to support the Fifteenth
+    Amendment because it did not extend the vote to women. Lucy Stone and Henry
+    Blackwell, while disappointed, argued it was important to support Reconstruction
+    and the Republican Party and that women''s suffrage could come state by state.
+    Stanton and Anthony formed the National Woman Suffrage Association (NWSA) in 1869;
+    Stone, Blackwell, and others established the American Woman Suffrage Association
+    (AWSA), also in 1869; the two merged in 1890 as NAWSA (premium2027).'
+  falsehoods:
+  - 15th Amendment gave women the vote
+  - Stanton and Anthony.{0,40}(supported|backed).{0,20}15th
+  - women''s movement.{0,20}united.{0,20}15th
+  sources:
+  - premium2027
+  - 5steps
+  tier_note: Correction U5-L9 v3 2026-10-07 — v1 omitted the AWSA/Stone side; now taught both.
+- id: F-U5-073
+  topic: Alexander Stephens — elected to Senate, refused seat (DISCLOSED, non-Tier-1/2)
+  correct: 'Alexander H. Stephens, the Confederacy''s former vice president, was elected
+    to the U.S. Senate by the Georgia legislature in 1866 but was refused his seat by
+    the Senate because of restrictions on former Confederates (public-domain
+    Compilation of the Messages and Papers of the Confederacy, Wikisource; corroborated
+    by secondary sources). Tier 1 (princeton) confirms the broader fact: the new
+    southern delegations "included the vice president of the Confederacy and other
+    Confederate officials," and "Congress voted not to seat the new southern
+    delegations." Keep the example with the Sources-footer disclosure.'
+  falsehoods:
+  - Stephens.{0,40}seated in the Senate
+  - Congress seated former Confederate officials in 1865
+  sources:
+  - princeton
+  - wikisource-public-domain
+  tier_note: Verified (new) U5-L9 v3 2026-10-07 — non-Tier-1/2 detail kept WITH disclosure per policy.
+- id: F-U5-074
+  topic: Alexander H. Stephens Senate election — February 1866, not December 1865
+  correct: 'Alexander H. Stephens was elected to the U.S. Senate by the Georgia legislature in February 1866 (not December 1865) and was refused his seat by the Senate. Wikisource public-domain Compilation of the Messages and Papers of the Confederacy; corroborated by the New Georgia Encyclopedia; princeton confirms Congress voted not to seat the new southern delegations.'
+  falsehoods:
+  - Stephens.{0,40}(December 1865|in December).{0,40}(Senate|Washington)
+  - Confederate vice president waiting for a Senate seat.{0,30}December 1865
+  sources:
+  - wikisource-public-domain
+  - new-georgia-encyclopedia
+  - princeton

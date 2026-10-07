@@ -1,0 +1,44 @@
+# U5-L9 "Reconstruction Plans" — Changelog (v1 → v3)
+
+## Version history
+- **v1** — Full draft (archived at `_archive/apush-audio-u5-l9-script-LOCKED.md`). Lock review flagged it as a rebuild candidate.
+- **v2** — Intermediate revision, folded into the v3 rebuild pass.
+- **v3 (this draft, 2026-10-07)** — Full rebuild to the frozen 2026-10-06 standards: 4 boxes (Lincoln's 10% Plan / Wade-Davis Bill & Johnson's Plan / Black Codes & the Congressional Takeover / Reconstruction Acts & the Amendments), 1,971 spoken words, ~12.0 min experienced runtime (11.0 min speech @ ≤180 WPM + 63s scripted pauses), cold-open promise / header / actual count all agree. Cold open nods to the U5-L8 closer ("paper freedom and real freedom"). Closer teases ONLY U5-L10 ("Reconstruction — success or failure").
+
+## Structural decisions v1 → v3
+1. **Four boxes instead of three**, per the assigned scope — each scope segment earns a box; the verdict question ("which plan won, and what 'winning' cost") closes box 4 instead of floating outside the ritual.
+2. **Self-test brought to standard**: three AP-shaped questions (CER theory question on Lincoln's leniency, a stimulus-style Black Code source question, a CER question on the 15th / women's split) with [15-second pause] each, plus a fast labeled bonus on the impeachment. Maya gives the model answers in natural connective tissue — no spoken "Claim:/Evidence:/Reasoning:" labels (banned 2026-10-06, gate G13).
+3. **Two prediction beats** (8–10s pauses): (a) the South writing rules for four million freed people unwatched → Black Codes; (b) Congress returning to find the Confederate VP waiting for a Senate seat → refuses to seat. Neither speaker says "pause" aloud.
+4. **"Restoration" vs "reconstruction" framed as interpretive contrast**, not attributed as a Johnson quote (Tier 1 doesn't pin the wording to Johnson; the contrast is the standard AP framing of his leniency vs Congress's program).
+5. **Verdict question kept but hedged**: Congressional Reconstruction won, but the win is explicitly enforcement-dependent — paper freedom national, real freedom negotiated county by county. Sets up U5-L10 rather than pre-judging it.
+6. **Maya beats**: mid-episode wrong guess ("Johnson was Lincoln's guy — same plan, same everything?"), recap fumble (the Georgia/Stephens memory-check), pop-culture knowledge (pocket veto via Schoolhouse Rock), one personal moment (Lincoln Memorial gift shop). ≤60% of her lines end in `?` (34.5%).
+7. **Gate posture**: 1 em dash (G8 ≤10), 0 That's/Here's starters, 2 micro-turns (≤8), 0 antitheses, 0 twist pivots, 0 retired stock transitions, 0 "tell me/answer me this", no modern analogies, Marcus max turn 83 words.
+
+## Factual corrections (every one verified before drafting; see registry F-U5-065 → F-U5-073)
+1. **Shaw University, 1867, "first Black college in the South" — CUT.** Not in Tier 1 or Tier 2. premium2027 verifies only that "Howard University and Morehouse College were established during the Reconstruction period" — the v3 draft uses exactly that. (Registry F-U5-065.)
+2. **"Johnson declares Reconstruction complete eight months after the war" — REFRAMED.** princeton verifies Johnson "declared Reconstruction over and done with"; premium2027 verifies he recognized Southern state governments as legitimate after they renounced secession and ratified the 13th; princeton verifies Congress was in recess for eight months, leaving Reconstruction to Johnson. The v3 wording ("by the end of 1865, barely eight months after Appomattox, Johnson is telling Congress the job is basically done") is built only from Tier-1-verified endpoints. (F-U5-066.)
+3. **"Acquitted by one vote / seven Republicans break ranks" — CONFIRMED.** "One vote" verified in 5steps2024 ("escaped conviction and removal by a one vote margin"); "seven Republican recusants" verified via the U.S. Senate official history (senate.gov, Impeachment Trial of President Andrew Johnson, 1868). Both kept. (F-U5-067.)
+4. **"13th Amendment ratification required for Southern states to rejoin" — CONFIRMED with attribution.** It was Johnson's condition: premium2027 verifies he recognized Southern governments "after they renounced secession and ratified the Thirteenth Amendment." The 14th Amendment became the readmission condition under Congressional Reconstruction (5steps2024). The v3 script keeps the distinction explicit. (F-U5-068.)
+5. **"2,000 Black men elected to office" — REPLACED.** Not in Tier 1. v3 uses 5steps2024's verified 1870-election figures: 630 to Southern state legislatures, 16 to the U.S. House, 1 to the Senate; Hiram Revels named per premium2027 (one of two Black 1870s senators alongside Blanche K. Bruce). (F-U5-069.)
+6. **"Sherman's land orders / Johnson rescinds" — CONFIRMED.** princeton verifies Sherman's Special Field Order No. 15 redistributed confiscated land to freedmen and that Johnson rescinded it; the "forty acres and a mule" never regained ground. Kept. (F-U5-070.)
+7. **Stevens land-redistribution bill — ADDED.** premium2027 verifies: introduced spring 1867 (forty acres per freedman), died in committee summer 1867 because it ran against the Republican value of protecting private property. (F-U5-071.)
+8. **Women's-suffrage split — CORRECTED.** v1 said Stanton and Anthony formed the NWSA alone. premium2027 verifies the full split: Stanton + Anthony's National Woman Suffrage Association (1869) vs Lucy Stone + Henry Blackwell's American Woman Suffrage Association (1869), merged 1890 into NAWSA. v3 teaches both sides. (F-U5-072.)
+9. **Alexander Stephens — KEPT WITH DISCLOSURE.** Elected to the U.S. Senate by Georgia's legislature and refused his seat: verified via the public-domain *Compilation of the Messages and Papers of the Confederacy* (Wikisource) and corroborating secondary sources. Tier 1 (princeton) confirms the broader fact that "the new southern senators included the vice president of the Confederacy and other Confederate officials" and that Congress voted not to seat the Southern delegations. Disclosed in the script's Sources footer per policy. (F-U5-073.)
+10. **Pocket-veto mechanism — kept.** princeton explains the mechanism (10-day clock, Congress adjourns, no override). Maya's Schoolhouse Rock beat is the vehicle. (Covered under F-U5-066 family; mechanism itself Tier 1.)
+
+## v1 material deliberately dropped
+- "Johnson ... loves making them grovel" / "Purely personal" — dramatized motive; replaced with Tier-1-grounded motive (hatred of the planter elite + zero sympathy for Black equality).
+- "Hiram Revels ... takes Jefferson Davis's old seat" — the Davis-seat detail is not in Tier 1/2; kept Revels, cut the seat detail.
+- "Stanton and Anthony oppose the 15th because it ignores women; Douglass argues Black male suffrage will speed women's suffrage" — v1's Douglass claim not in Tier 1; replaced with the verified Stone position (state-by-state strategy).
+- "Revels ... stays in office but he's powerless" — interpretive; cut.
+- "The Radicals run Reconstruction without him" retained in Tier-1-grounded form ("Congress runs Reconstruction without him").
+
+## Validation history
+- 2026-10-07: Writer-side Tier 1 fact pass completed BEFORE drafting (all checkable claims verified against 5steps2024 ch16, premium2027 ch7, princeton ch9, Unit 5 transcript 09; Tier 2/disclosure handling per policy). Mechanical self-check: 1,971 spoken words, 12.0 min experienced, all hard-gate budgets observed (see Structural decisions §7).
+- Pending: Layer 1 (gates), Layer 2 (clean-context read + validator checklist), Layer 3 (dedicated fact-check). Handed off; writer stops here per task instructions.
+
+## Layer-2 + Layer-3 repair log (coordinator, 2026-10-07)
+- Layer 1: initial FAIL G7 (writer omitted the read note) — added `# Read note` naming both pause tags; 13/13 after.
+- Layer 2 (fresh ear): NOT LOCK-READY — 3 blockers repaired: (B1) cold open was a mangled unlabeled fragment, rewritten with the "Last time:" callback; (B2) header counts corrected to 1,904 words / ~11.6 min experienced; (B3) bonus retargeted from Box 4 (impeachment) to Box 2 (10% vs Wade-Davis majority). Minors: self-test ritual split into its own turn; feed line "This is where the military districts come in" revoiced as a real question; stale "Blanche" pronunciation entry removed. F3 (check-layer tension) and F4 (earned closing chain) accepted with intent.
+- Layer 3 (different fresh agent): BLOCKED on one item — Stephens placed in Washington December 1865, but Georgia elected him February 1866 (Wikisource + New Georgia Encyclopedia + princeton). Retimestamped to "early in 1866"; permanent pattern F-U5-074 added. All other claims confirmed; no registry contradictions.
+- Fresh Layer-2 re-read: REPAIRS VERIFIED, 8/8 clean in context. One consistency fix applied: bonus said "fifty-one" with no unit vs recap's "half the voters" — now "a bare majority" in both registers.
