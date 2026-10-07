@@ -29,6 +29,7 @@ import { GravityText } from './GravityDrop';
 import { SmartText } from './SmartText';
 import { MapJourney, JourneyItem } from './MapJourney';
 import { ToneProvider } from '../validation/ToneContext';
+import { EpisodeMusic } from './EpisodeMusic';
 import { AutoLayoutProvider } from '../validation/AutoLayout';
 
 import turnsData from '../data/u1e2/turns.json';
@@ -937,6 +938,9 @@ export const U1E2Episode: React.FC = () => {
               <Audio src={staticFile(`audio/${EP}/${turn.id}.mp3`)} />
             </Sequence>
           ))}
+
+          {/* Branded music */}
+          <EpisodeMusic episode="E2" />
 
           {/* Talking head */}
           {showHead && (

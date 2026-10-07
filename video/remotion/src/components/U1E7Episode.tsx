@@ -35,6 +35,7 @@ import { SmartText } from './SmartText';
 import { VersusPolarization } from './VersusPolarization';
 import { PrimarySourceSpotlight } from './PrimarySourceSpotlight';
 import { ToneProvider } from '../validation/ToneContext';
+import { EpisodeMusic } from './EpisodeMusic';
 import { AutoLayoutProvider } from '../validation/AutoLayout';
 
 import turnsData from '../data/e7/turns.json';
@@ -561,6 +562,9 @@ export const U1E7Episode: React.FC = () => {
               <Audio src={staticFile(`audio/${EP}/${turn.id}.mp3`)} />
             </Sequence>
           ))}
+
+          {/* Branded music */}
+          <EpisodeMusic episode="E7" />
 
           {/* Talking head */}
           {showHead && (

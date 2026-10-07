@@ -33,6 +33,7 @@ import { RegionMap } from './RegionMap';
 import { TradeRoutes } from './TradeRoutes';
 import { SmartText } from './SmartText';
 import { ToneProvider } from '../validation/ToneContext';
+import { EpisodeMusic } from './EpisodeMusic';
 import { AutoLayoutProvider } from '../validation/AutoLayout';
 
 import turnsData from '../data/turns.json';
@@ -302,6 +303,9 @@ export const U1E1Episode: React.FC = () => {
               </Sequence>
             );
           })}
+
+          {/* Branded music */}
+          <EpisodeMusic episode="E1" />
 
           {/* Talking head */}
           {showHead && (

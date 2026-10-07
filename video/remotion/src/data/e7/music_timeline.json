@@ -1,0 +1,66 @@
+{
+  "episode": "E7",
+  "total_duration_sec": 864.3714130000002,
+  "events": [
+    {
+      "type": "intro_sting",
+      "asset_id": "intro_sting",
+      "start_sec": 0.0,
+      "duration_sec": 8.0,
+      "duck_dialogue": true,
+      "duck_db": -8.0,
+      "src": "audio/e7/music/intro_sting.wav",
+      "source": "procedural"
+    },
+    {
+      "type": "chapter_sting",
+      "asset_id": "chapter_sting",
+      "start_sec": 171.16666666666666,
+      "duration_sec": 3.0,
+      "act": 2,
+      "src": "audio/e7/music/chapter_sting.wav",
+      "source": "procedural"
+    },
+    {
+      "type": "chapter_sting",
+      "asset_id": "chapter_sting",
+      "start_sec": 347.4,
+      "duration_sec": 3.0,
+      "act": 3,
+      "src": "audio/e7/music/chapter_sting.wav",
+      "source": "procedural"
+    },
+    {
+      "type": "chapter_sting",
+      "asset_id": "chapter_sting",
+      "start_sec": 523.4333333333333,
+      "duration_sec": 3.0,
+      "act": 4,
+      "src": "audio/e7/music/chapter_sting.wav",
+      "source": "procedural"
+    },
+    {
+      "type": "chapter_sting",
+      "asset_id": "chapter_sting",
+      "start_sec": 696.3,
+      "duration_sec": 3.0,
+      "act": 5,
+      "src": "audio/e7/music/chapter_sting.wav",
+      "source": "procedural"
+    },
+    {
+      "type": "outro_sting",
+      "asset_id": "outro_sting",
+      "start_sec": 856.3714130000002,
+      "duration_sec": 8.0,
+      "duck_dialogue": false,
+      "src": "audio/e7/music/outro_sting.wav",
+      "source": "procedural"
+    }
+  ],
+  "mix_rules": {
+    "intro_duck_db": -8.0,
+    "bed_duck_db": -20.0,
+    "sting_gain_db": -6.0
+  }
+}
