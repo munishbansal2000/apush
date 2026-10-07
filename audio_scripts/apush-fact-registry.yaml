@@ -5189,3 +5189,70 @@ facts:
   - prem27
   tier_note: Corrected U5-CRAM v3 2026-10-07 — v2 cram taught "51%"; no registry
     entry existed for the false precision.
+- id: F-U6-001
+  topic: Hull House founding date — 1889, not 1897
+  correct: 'Hull House was founded in 1889 by Jane Addams and Ellen Gates Starr (Britannica,
+    independent confirmation). premium2027 ch9 dates it to 1897 — a book error. Teach 1889.'
+  falsehoods:
+  - hull house.{0,30}1897
+  - founded hull house in 1897
+  sources:
+  - britannica
+  tier_note: 'Verified new U6-L1 v2 2026-10-07 — book error in prem27, confirmed wrong
+    via independent trusted source (Britannica).'
+- id: F-U6-002
+  topic: Roosevelt "nauseated" letter to Sinclair — unverifiable
+  correct: 'No Tier-1/2 source confirms Roosevelt writing Sinclair that The Jungle left
+    him "nauseated." The archived U6-L1 v1 taught it flat; it was cut from v2. Teach
+    the effect (public uproar leading to the 1906 food-safety acts), never the quote.'
+  falsehoods:
+  - nauseated
+  sources:
+  - hierarchy_check
+  tier_note: 'Cut U6-L1 v2 2026-10-07 — unverifiable per the frozen hierarchy.'
+- id: F-U6-003
+  topic: 1912 popular vote — Wilson 41%, not 42%
+  correct: '1912 popular vote: Wilson 41%, Roosevelt 27%, Taft 23%, Debs 6% (premium2027
+    ch9). The archived U6-L1 v1 said "about forty-two" for Wilson — teach 41%.'
+  falsehoods:
+  - wilson.{0,30}forty-two percent
+  - wilson.{0,30}42 ?percent
+  sources:
+  - prem27
+  tier_note: Corrected U6-L1 v2 2026-10-07.
+- id: F-U6-004
+  topic: Roosevelt conservation acreage — Tier-1/2 variance
+  correct: 'premium2027 ch9: Roosevelt put "over 200 million acres under public protection."
+    LOC Headlines & Heroes: 172 million acres (150 national forests, 18 national monuments,
+    5 national parks, 51 refuges). Sources disagree — teach hedged per Tier-1 premium
+    or disclose the variance; never pin a false-precise figure.'
+  falsehoods: []
+  sources:
+  - prem27
+  - loc
+  tier_note: 'Flagged U6-L1 v2 2026-10-07 — Tier-1/2 variance, validators to adjudicate.'
+- id: F-U6-005
+  topic: Roosevelt sausage-throwing anecdote — legend, never flat
+  correct: 'The "Roosevelt threw his breakfast sausages out the window" anecdote is legend —
+    teach only with an explicit legend frame ("the story goes," "the sausages are legend"),
+    never as fact.'
+  falsehoods:
+  - threw his.{0,20}sausages out the window
+  guards:
+  - story goes
+  - legend
+  sources:
+  - hierarchy_check
+  tier_note: 'Guard added U6-L1 v2 2026-10-07 — the v2 script uses the legend frame, which
+    the guards protect from false tripping.'
+- id: F-U6-006
+  topic: Trust-busting legend vs fact — Taft, not Roosevelt, broke up Standard Oil
+  correct: 'Roosevelt''s headline antitrust case was Northern Securities (broken up 1904);
+    Taft filed ninety antitrust suits including the Standard Oil breakup (1911) — premium2027
+    ch9. "Roosevelt broke up Standard Oil" is the legend; teach the correction.'
+  falsehoods:
+  - roosevelt broke up standard oil
+  - roosevelt.{0,30}dissolved standard oil
+  sources:
+  - prem27
+  tier_note: 'Taught as the legend-vs-fact beat in U6-L1 v2 2026-10-07.'

@@ -100,6 +100,20 @@ def registry_hits(spoken, facts):
         re.IGNORECASE,
     )
     out = []
+    # A mid-episode wrong beat: one voice states the falsehood and a
+    # DIFFERENT voice corrects it in the immediately following turn
+    # ("Common mix-up..." / "that's the legend"). The falsehood is being
+    # taught as wrong, not as fact — the same principle as NEG_FRAME, but
+    # distributed across two turns. The correction marker must be a strong
+    # signal ("actually" alone is too common to count). 2026-10-07: added
+    # after U6-L1 v2's Maya/Standard-Oil wrong beat tripped the writer's
+    # own new F-U6-006 pattern; the wrong beat is a house device the gate
+    # must recognize, not punish.
+    CORRECTION_MARK = re.compile(
+        r"\bmix[\s-]?up\b|\bnot quite\b|\blegend\b|\bmyth\b"
+        r"|\bnot exactly\b|\bthat's not\b|\bcommon mistake\b",
+        re.IGNORECASE,
+    )
     for fact in facts:
         guards = [re.compile(g, re.IGNORECASE)
                   for g in fact.get("guards", []) or []]
@@ -108,14 +122,20 @@ def registry_hits(spoken, facts):
                 rx = re.compile(pat, re.IGNORECASE)
             except re.error:
                 continue
-            for ln, _, b in spoken:
+            for i, (ln, spk, b) in enumerate(spoken):
+                matched = None
                 for s in sentences(b):
                     if rx.search(s) and not NEG_FRAME.search(s) \
                             and not any(g.search(s) for g in guards):
-                        out.append((ln, fact["id"], pat, s[:70]))
+                        matched = s
                         break
-                else:
+                if matched is None:
                     continue
+                if i + 1 < len(spoken):
+                    _, spk2, b2 = spoken[i + 1]
+                    if spk2 != spk and CORRECTION_MARK.search(b2):
+                        continue
+                out.append((ln, fact["id"], pat, matched[:70]))
                 break
     return out
 NON_SPEAKER = frozenset({
