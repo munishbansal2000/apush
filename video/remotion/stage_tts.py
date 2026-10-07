@@ -115,8 +115,8 @@ def parse_markdown_script(md_path):
         if not line or line.startswith('#'):
             continue
         
-        # Match "Speaker: text"
-        m = re.match(r'^(Maya|Marcus|PAUSE):\s*(.+)$', line, re.IGNORECASE)
+        # Match "Speaker: text" — any capitalized name, not just Maya/Marcus
+        m = re.match(r'^([A-Z][a-zA-Z]*|PAUSE):\s*(.+)$', line)
         if m:
             speaker = m.group(1).lower()
             text = m.group(2)
