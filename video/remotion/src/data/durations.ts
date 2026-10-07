@@ -16,6 +16,7 @@ import e6Timing from './e6/timing_map.json';
 import e7Timing from './e7/timing_map.json';
 import e8Timing from './e8/timing_map.json';
 import e9Timing from './e9/timing_map.json';
+import u2e1Timing from './u2e1/timing_map.json';
 
 const FPS = 30;
 
@@ -37,4 +38,5 @@ export const EPISODE_FRAMES = {
   E7: totalFrames(e7Timing),
   E8: totalFrames(e8Timing),
   E9: totalFrames(e9Timing),
+  U2E1: totalFrames(u2e1Timing),
 } as const;

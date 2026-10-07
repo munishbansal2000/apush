@@ -19,6 +19,7 @@ Output: src/data/<ep>/music_timeline.json
 
 import argparse
 import json
+import re
 import shutil
 import sys
 from pathlib import Path
@@ -64,7 +65,9 @@ def main():
     args = parser.parse_args()
 
     episode = args.episode.upper()
-    ep_lower = episode.lower()
+    # Parse U2E3 -> u2e3, E3 -> e3
+    m = re.match(r'U(\d+)E(\d+)', episode)
+    ep_lower = f'u{m.group(1)}e{m.group(2)}' if m else episode.lower()
 
     if args.no_music:
         print("Music disabled (--no-music)")

@@ -33,8 +33,28 @@ def get_cache():
     return d
 
 
+_VOSK_MODEL_CACHE = {}
+
+def _resolve_vosk_model(model_path):
+    """Return a loaded vosk Model, with fallback to workspace model dirs."""
+    import os
+    if model_path in _VOSK_MODEL_CACHE:
+        return _VOSK_MODEL_CACHE[model_path]
+    from vosk import Model
+    candidates = [model_path,
+                  os.path.expanduser('~/workspace/vosk-model-small-en-us-0.15'),
+                  os.path.expanduser('~/workspace/video-pipeline/models/vosk-model-small-en-us-0.15')]
+    chosen = next((c for c in candidates if os.path.isdir(c)), None)
+    if not chosen:
+        raise RuntimeError(f"No Vosk model found (tried {candidates})")
+    print(f"  Using Vosk model: {chosen}", flush=True)
+    model = Model(chosen)
+    _VOSK_MODEL_CACHE[model_path] = model
+    return model
+
+
 def run_vosk(mp3_path, model_path='/opt/vosk-model'):
-    """Run Vosk on MP3, return word timings."""
+    """Run Vosk on MP3, return word timings (via the vosk Python API)."""
     # Convert MP3 to WAV 16kHz mono (Vosk requirement)
     wav_path = mp3_path.with_suffix('.wav')
     subprocess.run([
@@ -43,26 +63,30 @@ def run_vosk(mp3_path, model_path='/opt/vosk-model'):
         '-ar', '16000', '-ac', '1',
         str(wav_path)
     ], check=True)
-    
-    # Run Vosk
-    cmd = [
-        'python3', '-m', 'vosk',
-        '--model', model_path,
-        str(wav_path),
-    ]
-    result = subprocess.run(cmd, capture_output=True, text=True)
-    
-    # Parse output (JSON lines)
+
+    import json as _json
+    import wave
+    from vosk import KaldiRecognizer
+
+    model = _resolve_vosk_model(model_path)
+    rec = KaldiRecognizer(model, 16000)
+    rec.SetWords(True)
+
     words = []
-    for line in result.stdout.strip().split('\n'):
-        try:
-            data = json.loads(line)
-            if 'result' in data:
-                words.extend(data['result'])
-        except:
-            pass
-    
-    wav_path.unlink()  # cleanup
+    try:
+        wf = wave.open(str(wav_path), 'rb')
+        while True:
+            data = wf.readframes(4000)
+            if len(data) == 0:
+                break
+            if rec.AcceptWaveform(data):
+                res = _json.loads(rec.Result())
+                words.extend(res.get('result', []))
+        res = _json.loads(rec.FinalResult())
+        words.extend(res.get('result', []))
+        wf.close()
+    finally:
+        wav_path.unlink(missing_ok=True)  # cleanup
     return words
 
 
@@ -89,7 +113,7 @@ def get_speech_onset(mp3_path):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--episode', required=True)
+    parser.add_argument('--episode', required=True, help='Episode ID (e.g. E2 or U2E3)')
     parser.add_argument('--provider', default='meta')
     parser.add_argument('--force', action='store_true')
     args = parser.parse_args()
@@ -97,7 +121,15 @@ def main():
     episode = args.episode.upper()
     provider = args.provider
     
-    tts_dir = Path(f'episodes/{episode.lower()}/tts/{provider}')
+    # Parse U2E3 format -> data_id u2e3 (Unit 2), E3 -> e3 (Unit 1)
+    import re
+    m = re.match(r'U(\d+)E(\d+)', episode)
+    if m:
+        data_id = f'u{m.group(1)}e{m.group(2)}'
+    else:
+        data_id = episode.lower()
+    
+    tts_dir = Path(f'episodes/{data_id}/tts/{provider}')
     if not tts_dir.exists():
         print(f"ERROR: No TTS output at {tts_dir}")
         print(f"Run: python3 stage_tts.py --episode {episode} --provider {provider}")
@@ -110,9 +142,9 @@ def main():
     cache = get_cache()
     combined = ''.join(file_hash(p) for p in mp3s)
     short_hash = hashlib.sha256(combined.encode()).hexdigest()[:12]
-    cache_key = cache / f'{episode}_{provider}_{short_hash}.json'
+    cache_key = cache / f'{data_id}_{provider}_{short_hash}.json'
     
-    out_dir = Path(f'src/data/{episode.lower()}')
+    out_dir = Path(f'src/data/{data_id}')
     out_dir.mkdir(parents=True, exist_ok=True)
     
     timing_path = out_dir / 'timing_map.json'

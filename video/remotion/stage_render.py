@@ -29,7 +29,9 @@ def get_act_boundaries(episode, num_acts=5, fps=30):
     Splits at turn boundaries nearest to even divisions.
     Returns list of (start_frame, end_frame) tuples at the given fps.
     """
-    ep_lower = episode.lower()
+    import re
+    m = re.match(r'U(\d+)E(\d+)', episode.upper())
+    ep_lower = f'u{m.group(1)}e{m.group(2)}' if m else episode.lower()
     timing_path = Path(f'src/data/{ep_lower}/timing_map.json')
     
     if not timing_path.exists():

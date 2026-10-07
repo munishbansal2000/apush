@@ -17,6 +17,7 @@ Output: episodes/<id>/tts/<provider>/turn_*.mp3
 
 import argparse
 import hashlib
+import glob
 import json
 import subprocess
 from pathlib import Path
@@ -26,18 +27,21 @@ PROVIDERS = {
     'meta': {
         'maya': 'avocado_v2:aria',
         'marcus': 'avocado_v2:briggs',
+        'jay': 'avocado_v2:atlas',
         'sepúlveda': 'avocado_v2:atlas',
         'cmd': 'tts',  # /opt/hatch/bin/tts
     },
     'edge': {
         'maya': 'en-US-AriaNeural',
         'marcus': 'en-US-GuyNeural',
+        'jay': 'en-US-DavisNeural',
         'sepúlveda': 'en-US-DavisNeural',
         'cmd': 'edge-tts',
     },
     'fish': {
         'maya': 'fish_maya_id',      # TODO: resolve from config
         'marcus': 'fish_marcus_id',
+        'jay': 'fish_jay_id',
         'cmd': 'fish_tts',            # TODO: implement
     },
 }
@@ -165,7 +169,9 @@ def parse_json_script(json_path):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--episode', required=True, help='Episode ID (e.g. E2)')
+    parser.add_argument('--episode', required=True, help='Episode ID (e.g. E2 or U2E3)')
+    parser.add_argument('--unit', type=int, default=None,
+                       help='Unit number (1-9). Auto-detected from episode ID if not given.')
     parser.add_argument('--provider', choices=['meta', 'edge', 'fish'],
                        default='meta')
     parser.add_argument('--prod', action='store_true',
@@ -177,6 +183,25 @@ def main():
     episode = args.episode.upper()
     provider = args.provider
 
+    # Parse unit from episode ID (U2E3 -> unit 2, episode E3)
+    # or use --unit flag, default to 1
+    import re
+    m = re.match(r'U(\d+)E(\d+)', episode)
+    if m:
+        unit_num = int(m.group(1))
+        ep_num = m.group(2)
+        episode = f'E{ep_num}'  # Normalize to E3 for internal use
+    elif args.unit:
+        unit_num = args.unit
+        ep_num = episode[1:] if episode.startswith('E') else episode
+    else:
+        unit_num = 1
+        ep_num = episode[1:] if episode.startswith('E') else episode
+    
+    unit = f'unit{unit_num}'
+    # Data directory: u2e3 for Unit 2 (avoid collision with Unit 1's e3)
+    data_id = f'u{unit_num}e{ep_num}' if unit_num > 1 else f'e{ep_num}'
+
     if provider == 'fish' and not args.prod:
         print("WARNING: Fish is for prod. Use --prod flag.")
         return 1
@@ -186,14 +211,7 @@ def main():
     turns = None
     
     # Try audio_scripts first (canonical)
-    # Episode format: E3 -> unit1, e3 (need to map)
-    unit_map = {'E1': 'unit1', 'E2': 'unit1', 'E3': 'unit1', 'E4': 'unit1',
-                'E5': 'unit1', 'E6': 'unit1', 'E7': 'unit1', 'E8': 'unit1', 'E9': 'unit1'}
-    unit = unit_map.get(episode, 'unit1')
-    ep_num = episode[1:]  # E3 -> 3
-    
-    import glob
-    md_pattern = f'../audio_scripts/{unit}/apush-audio-u{unit[-1]}-e{ep_num}-script-v*-DRAFT.md'
+    md_pattern = f'../audio_scripts/{unit}/apush-audio-u{unit_num}-e{ep_num}-script-v*-DRAFT.md'
     # Also try repo path via API (for now, use local if exists)
     md_files = sorted(glob.glob(md_pattern))
     # Try absolute repo sync path
@@ -224,8 +242,23 @@ def main():
         turns = parse_json_script(script_path)
 
     # Output dir
-    out_dir = Path(f'episodes/{episode.lower()}/tts/{provider}')
+    out_dir = Path(f'episodes/{data_id}/tts/{provider}')
     out_dir.mkdir(parents=True, exist_ok=True)
+
+    # Write turns.json to src/data for Remotion components
+    data_dir = Path(f'src/data/{data_id}')
+    data_dir.mkdir(parents=True, exist_ok=True)
+    turns_json_path = data_dir / 'turns.json'
+    # Add turn IDs if not present (t00, t01, ...)
+    turns_with_ids = []
+    for i, turn in enumerate(turns):
+        t = dict(turn)
+        if 'id' not in t:
+            t['id'] = f't{i:02d}'
+        turns_with_ids.append(t)
+    import json as json_mod
+    turns_json_path.write_text(json_mod.dumps(turns_with_ids, indent=2))
+    print(f"Turns: {turns_json_path} ({len(turns_with_ids)} turns)")
 
     voices = PROVIDERS[provider]
     render_fn = {
@@ -289,6 +322,17 @@ def main():
         hash_path.write_text(content_hash)
 
     print(f"\n✅ Done: {out_dir}/")
+    
+    # Copy to public/audio/{data_id}/ as tXX.mp3 for Remotion staticFile()
+    import shutil
+    public_dir = Path(f'public/audio/{data_id}')
+    public_dir.mkdir(parents=True, exist_ok=True)
+    for i in range(len(turns)):
+        src = out_dir / f'turn_{i:03d}.mp3'
+        dst = public_dir / f't{i:02d}.mp3'
+        if src.exists():
+            shutil.copy2(src, dst)
+    print(f"Audio: {public_dir}/ ({len(turns)} files)")
     return 0
 
 
