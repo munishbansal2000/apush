@@ -6680,3 +6680,154 @@ facts:
   - 5steps
   - transcripts
   tier_note: 'Added U7-L8 v2 2026-10-07 — writer fact pass.'
+- id: F-U7-041
+  topic: 'Cronkite ''mired in stalemate'' broadcast is real; LBJ ''lost Cronkite'' quote is a media myth'
+  correct: 'Walter Cronkite''s February 27, 1968 CBS special closed with the ''mired in stalemate''
+    verdict (''the most trusted man in America'' per the Australian War Memorial). LBJ''s reported
+    reaction ''If I''ve lost Cronkite, I''ve lost Middle America'' is a documented media myth —
+    Johnson was in Austin, Texas that night, not watching the broadcast. Teach the broadcast and
+    LBJ''s March 31 withdrawal from the race; never put the quote in Johnson''s mouth, not even
+    hedged with ''reportedly.'''
+  falsehoods:
+  - if i've lost cronkite
+  - lost cronkite.*lost middle america
+  guards:
+  - reportedly said
+  - johnson.*said.*cronkite
+  sources:
+  - web
+  tier_note: 'Added U7-L9 v2 2026-10-07 — writer fact pass. Framing correction: the v1 draft''s
+    ''Johnson reportedly says'' was technically hedged but misleading; dropped outright.'
+- id: F-U7-042
+  topic: 'Gulf of Tonkin second attack — teach as almost certainly never happened'
+  correct: 'August 1964: the first Tonkin clash was real but minor; the second attack — the one
+    LBJ took to Congress — almost certainly never happened (Princeton: ''the North Vietnamese
+    attack was never confirmed''; Heimler: ''straight-up fabricated''; premium2027: later reports
+    ''questioned the accuracy of the announcement''). Teach ''almost certainly never happened,''
+    never a flat ''the attack was invented'' without the hedge.'
+  falsehoods:
+  - tonkin.*second attack.*definitely happened
+  - tonkin.*both attacks.*confirmed
+  sources:
+  - princeton
+  - premium2027
+  - apush-transcripts
+  tier_note: 'Added U7-L9 v2 2026-10-07 — writer fact pass.'
+- id: F-U7-043
+  topic: 'Tet casualty asymmetry — the numbers that make the reversal concrete'
+  correct: 'Tet (Jan 30, 1968): premium2027 ch10 — ''over 9,000 U.S., South Vietnamese, and allied
+    troops dead (1,600 Americans)'' vs. ''more than 40,000'' North Vietnamese/Vietcong deaths.
+    Teach the asymmetry to land ''military win, political earthquake'' — never call Tet an American
+    military defeat.'
+  falsehoods:
+  - tet.*(was|were).{0,20}(an? )?(american|u\.?s\.?).{0,15}(military )?defeat
+  - tet offensive.*north vietnamese.*(military )?victory
+  guards:
+  - broke the american army
+  - the battle america lost
+  sources:
+  - premium2027
+  - 5steps
+  tier_note: 'Added U7-L9 v2 2026-10-07 — writer fact pass. Guards the mid-episode wrong beat.'
+- id: F-U7-044
+  topic: 'Diem coup ~3 weeks before JFK assassination; Kennedy admin quiet approval'
+  correct: 'Diem was overthrown and killed November 2, 1963 in a generals'' coup the Kennedy
+    administration gave ''quiet approval'' to (premium2027 ch10); Kennedy was assassinated
+    November 22, 1963 — about three weeks later. Teach ''about three weeks,'' never ''months.''
+    (Princeton: ''Diem and his brother were killed''; 5steps: ''a few weeks before President Kennedy
+    was murdered.'')'
+  falsehoods:
+  - diem.*months before kennedy
+  - kennedy.*knew nothing.*diem coup
+  sources:
+  - premium2027
+  - princeton
+  - 5steps
+  tier_note: 'Added U7-L9 v2 2026-10-07 — writer fact pass.'
+- id: F-U7-045
+  topic: 'Muhammad Ali — refused induction April 28, 1967; stripped of title (Tier 2/web)'
+  correct: 'Muhammad Ali refused induction April 28, 1967 (Houston), was convicted June 20, 1967
+    of draft evasion, fined $10,000, sentenced to five years, and stripped of his heavyweight title;
+    the conviction was overturned in 1971 (HISTORY; ABA Journal). Tier-2/web-confirmed — disclose
+    in Sources footer, never present as Tier-1.'
+  falsehoods:
+  - ali.*drafted.*served.*vietnam
+  sources:
+  - web
+  tier_note: 'Added U7-L9 v2 2026-10-07 — writer fact pass. Disclosed Tier-2 entry.'
+- id: F-U7-046
+  topic: 'Twenty-sixth Amendment — ratified July 1, 1971; voting age 18; Vietnam draft drove it'
+  correct: 'The Twenty-sixth Amendment (proposed March 23, 1971; ratified July 1, 1971) set the
+    voting age at 18; the drive to lower it was ''in large part'' the Vietnam-era draft (standard
+    reference sources). Teach ''old enough to be drafted, old enough to vote'' as the argument that
+    won — disclosed Tier-2/web, never Tier-1.'
+  falsehoods:
+  - 26th amendment.{0,20}1969
+  - voting age.*18.{0,20}1970
+  sources:
+  - web
+  tier_note: 'Added U7-L9 v2 2026-10-07 — writer fact pass. Disclosed Tier-2 entry.'
+- id: F-U7-047
+  topic: 'Premium2027 prints ''Ngo Din Diem'' (dropped h) — book typo; teach ''Ngo Dinh Diem'''
+  correct: 'Premium2027 ch10 twice prints ''Ngo Din Diem'' — a typesetting typo (dropped h). The
+    standard spelling is Ngo Dinh Diem; dialogue uses the standard spelling. Recorded as a book
+    quirk, not a factual-error claim.'
+  falsehoods: []
+  sources:
+  - premium2027
+  tier_note: 'Added U7-L9 v2 2026-10-07 — writer fact pass. Typo-level, disclosed in Sources footer.'
+- id: F-U7-048
+  topic: 'My Lai — hundreds killed; Army cover-up over a year; story broke November 1969'
+  correct: 'My Lai (March 1968 per 5steps): American soldiers killed hundreds of Vietnamese civilians
+    — Princeton: ''347 to 504''; 5steps: ''around 400'' — with no enemy forces present (premium2027:
+    ''killed nearly every inhabitant''); the Army covered it up ''for more than a year'' (premium2027);
+    the story broke November 1969 (Princeton); Lt. William Calley convicted 1971 (premium2027).
+    Teach ''hundreds,'' never a pinned number.'
+  falsehoods:
+  - my lai.{0,25}exactly (347|400|504)
+  - my lai.*no cover(-| )?up
+  sources:
+  - premium2027
+  - 5steps
+  - princeton
+  tier_note: 'Added U7-L9 v2 2026-10-07 — writer fact pass.'
+- id: F-U7-049
+  topic: 'Draft machinery — 1964 Selective Service increase, 1965 calls doubled, 80% working-class'
+  correct: 'Premium2027 ch10: in 1964 ''the Selective Service System began increasing the number of
+    young men drafted''; by 1965 ''the monthly totals of draftees doubled''; ''Eighty percent of the
+    troops in Vietnam were working class and poor,'' with middle-class youths getting college
+    deferments. Princeton: ''more than 30,000'' draft evaders went to Canada. 5steps: the draft
+    ''was ended'' in the early 1970s.'
+  falsehoods:
+  - draft.*fell equally.*all classes
+  - vietnam.*mostly middle-class draftees
+  sources:
+  - premium2027
+  - princeton
+  - 5steps
+  tier_note: 'Added U7-L9 v2 2026-10-07 — writer fact pass.'
+- id: F-U7-050
+  topic: 'Exit pins — Paris Peace Accords January 1973; Saigon fell 1975; Vietnam reunited communist'
+  correct: 'Paris: ''A peace accord was finally signed in January 1973'' (5steps ch27); Kissinger
+    completed the negotiations (Princeton); the US ''pulled out of Vietnam in 1973'' (premium2027).
+    ''In 1975, Saigon fell to the North Vietnamese Army, and Vietnam was united under communist
+    rule'' (Princeton). Teach the two-year gap — the exit failed its goal.'
+  falsehoods:
+  - saigon fell.{0,15}1973
+  - paris.*1975
+  sources:
+  - 5steps
+  - princeton
+  - premium2027
+  tier_note: 'Added U7-L9 v2 2026-10-07 — writer fact pass.'
+- id: F-U7-051
+  topic: 'Draft lottery December 1969 — beyond Tier 1, disclose as such'
+  correct: 'The Selective Service conducted a birthday-draw lottery on December 1, 1969 (366 capsules,
+    low numbers called first) to set draft order. Standard history; NOT in the retrievable Tier-1
+    books. Disclose as beyond-hierarchy, never teach as a Tier-1 claim.'
+  falsehoods:
+  - draft lottery.{0,25}1969.{0,25}(premium|5 ?steps|princeton|tier-?1)
+  sources:
+  - web
+  tier_note: 'Added U7-L9 v2 2026-10-07 (Layer-3 repair). Unverifiable in Tier 1 + Tier 2 (no dedicated
+    Britannica article found); dialogue line kept with a Sources-footer disclosure.'
