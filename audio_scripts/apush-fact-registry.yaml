@@ -8210,3 +8210,129 @@ facts:
   - web
   tier_note: 'Confirmed book error U9-L3 v2 2026-10-07 — primary bulletin text quoted in
     Turner''s 1893 essay as independent confirmation.'
+- id: F-U9-020
+  topic: 'Grange 1867, Granger Laws, Munn v. Illinois 1877, Wabash v. Illinois 1886, ICC 1887'
+  correct: 'The Grange (Patrons of Husbandry) was founded in 1867; farmer co-ops plus Granger-backed
+    state laws capping railroad freight rates (the Granger Laws). Munn v. Illinois (1877) upheld
+    state regulation of businesses ''affected with a public interest''; Wabash v. Illinois (1886)
+    reversed course, holding only Congress could regulate interstate railroads. Congress answered
+    with the Interstate Commerce Act (1887), creating the Interstate Commerce Commission — weak
+    at first, but the federal-oversight principle was planted.'
+  falsehoods:
+  - Grange.*founded.*1876
+  - Wabash.*upheld.*Granger Laws
+  - Interstate Commerce Commission.*1878
+  sources:
+  - 5steps
+  - prem27
+  tier_note: 'Added U9-L4 v2 2026-10-07 (writer fact pass). Grange 1867 per 5steps2024 ch17;
+    Munn/Wabash per premium2027 ch8.'
+- id: F-U9-021
+  topic: 'Farmers'' Alliances — membership scale, Ocala Platform 1890, sub-treasury warehouses'
+  correct: 'By 1889 the Southern Alliance claimed about a million members; the Plains Alliances about
+    two million; the Colored Farmers'' National Alliance about a million. At Ocala, Florida (1890),
+    the Alliances backed a sub-treasury plan: federal warehouses where farmers could store crops
+    and borrow against them at low interest instead of selling at harvest-time lows. Never teach
+    the Alliances as a single merged organization.'
+  falsehoods:
+  - Farmers.*Alliance.*single organization
+  - Alliances merged.*one
+  sources:
+  - 5steps
+  tier_note: 'Added U9-L4 v2 2026-10-07 (writer fact pass). Memberships and Ocala warehouses
+    per 5steps2024 ch17.'
+- id: F-U9-022
+  topic: 'Colored Farmers'' National Alliance — founded 1886, separate; biracial coalition fractured on race'
+  correct: 'The Colored Farmers'' National Alliance was founded in Texas in 1886 and claimed about a
+    million Black members by 1890. It organized SEPARATELY — the white Southern Alliance barred
+    Black members — while making common cause on railroad regulation, currency, and farm credit.
+    The biracial economic coalition broke on race in the 1890s; the old racial appeals proved
+    stronger than the new economic ones. Teach parallel movements with common enemies, never a
+    merged organization.'
+  falsehoods:
+  - Colored Farmers.*merged.*Southern Alliance
+  - Alliances united Black and white farmers.*one organization
+  sources:
+  - 5steps
+  - princeton
+  tier_note: 'Added U9-L4 v2 2026-10-07 (writer fact pass). Founded 1886 per princeton ch10;
+    1M members per 5steps2024 ch17. Fracture mechanism is standard scholarly framing —
+    dialogue hedges it.'
+- id: F-U9-023
+  topic: 'Omaha Platform 1892 — the four exam demands; Weaver vote totals'
+  correct: 'The People''s (Populist) Party launched at Omaha, Nebraska, on July 4, 1892. The Omaha
+    Platform''s four exam demands: (1) free and unlimited coinage of silver at 16:1; (2) a graduated
+    income tax; (3) direct election of U.S. senators; (4) government ownership of railroads,
+    telegraph, and telephone. (The platform also backed the eight-hour day and immigration
+    restriction.) 1892 nominee James Weaver (former Union general) won more than a million popular
+    votes and 22 electoral votes, most from the West. Never inflate the totals.'
+  falsehoods:
+  - Weaver.*2 million.*1892
+  - Populist.*50 electoral votes
+  - Omaha Platform.*1896
+  sources:
+  - 5steps
+  - prem27
+  - princeton
+  tier_note: 'Added U9-L4 v2 2026-10-07 (writer fact pass). Demands per all three Tier-1 books;
+    Weaver totals per 5steps/premium/princeton. Telegraph AND telephone per 5steps2024.'
+- id: F-U9-024
+  topic: '''Free silver'' = free coinage at 16:1, not free money'
+  correct: '''Free'' in ''free and unlimited coinage of silver'' did not mean free of charge — it meant
+    the mint stood free and open: anyone could bring silver bullion and leave with silver dollars
+    coined at sixteen ounces of silver to one ounce of gold (16:1, Britannica-confirmed). The point
+    was inflation to help debtors: more money, higher crop prices, debts shrinking in real terms.'
+  falsehoods:
+  - free silver.*government.*gave.*free silver
+  - free coinage.*free of charge
+  sources:
+  - 5steps
+  - prem27
+  - web
+  tier_note: 'Added U9-L4 v2 2026-10-07 (writer fact pass). 16:1 confirmed via Britannica (Tier 2);
+    mechanism per 5steps2024/premium2027.'
+- id: F-U9-025
+  topic: 'Election of 1896 — Bryan 36, Cross of Gold July 1896 Chicago, fusion, McKinley/Hanna, 271-176'
+  correct: 'William Jennings Bryan, 36, won the 1896 Democratic nomination after the Cross of Gold speech
+    at the Chicago convention (July 1896 — teach the month only; sources differ on July 8 vs 9). The
+    Populists endorsed Bryan (fusion) while nominating their own VP, Tom Watson of Georgia. William
+    McKinley (gold standard, high tariff, ''full dinner pail''), bankrolled by big business through
+    manager Mark Hanna, won 271-176 electoral votes: Bryan took the South and West, McKinley the
+    Northeast and Midwest. Fusion was fatal to the Populists as a party.'
+  falsehoods:
+  - Bryan.*40.*1896
+  - Bryan lost.*farm vote
+  - Populists.*own presidential candidate.*1896
+  sources:
+  - 5steps
+  - prem27
+  - princeton
+  - web
+  tier_note: 'Added U9-L4 v2 2026-10-07 (writer fact pass). Age 36, 271-176, Watson VP per Britannica
+    (Tier 2). Cross of Gold day hedged to July 1896 (Britannica Jul 8 vs brief Jul 9). Hanna
+    millions + employer intimidation per princeton ch10.'
+- id: F-U9-026
+  topic: 'Populist platform planks enacted — 16th Amendment (income tax) and 17th Amendment (direct senators), both 1913'
+  correct: 'The Populist verdict: the party failed, the platform won. The graduated income tax became
+    the Sixteenth Amendment; direct election of senators became the Seventeenth Amendment — both
+    ratified in 1913. The exam''s classic flip trap: income tax = 16th, senators = 17th.'
+  falsehoods:
+  - graduated income tax.*Seventeenth Amendment
+  - direct election.*senators.*Sixteenth Amendment
+  sources:
+  - 5steps
+  - prem27
+  tier_note: 'Added U9-L4 v2 2026-10-07 (writer fact pass). Linkage per premium2027 ch13; both
+    ratified 1913 per premium2027 ch9 timeline.'
+- id: F-U9-027
+  topic: 'Crop-lien system — mechanics; debt peonage, NOT slavery'
+  correct: 'The Southern crop-lien system: farmers borrowed for seed and tools in spring, promising part
+    of the fall crop as collateral; brutal interest rates and landlord-kept books rolled debt forward
+    yearly, keeping Black and white tenants in chronic debt. Teach as debt peonage — sharecroppers
+    could legally leave — never as slavery.'
+  falsehoods:
+  - crop-lien.*slavery
+  - sharecroppers.*could not legally leave
+  sources:
+  - princeton
+  tier_note: 'Added U9-L4 v2 2026-10-07 (writer fact pass). Mechanics per princeton ch10.'
