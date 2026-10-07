@@ -18,6 +18,7 @@ import {
   Sequence,
   staticFile,
   useCurrentFrame,
+  useVideoConfig,
 } from 'remotion';
 import { TalkingHead } from './TalkingHead';
 import { TitleCard } from './TitleCard';
@@ -44,7 +45,6 @@ const turns = turnsData as Turn[];
 const starts = (timingData as { starts: number[] }).starts;
 const durations = (timingData as { durations: number[] }).durations;
 
-const FPS = 30;
 const EP = 'u1e3';
 
 /* ------------------------------------------------------------------ */
@@ -298,7 +298,8 @@ const getBackgroundForTurn = (turnId: string | null, subBeatBg: string | null): 
 /* ------------------------------------------------------------------ */
 export const U1E3Episode: React.FC = () => {
   const frame = useCurrentFrame();
-  const timeSec = frame / FPS;
+  const {fps} = useVideoConfig();
+  const timeSec = frame / fps;
 
   let activeIndex = -1;
   for (let i = 0; i < turns.length; i++) {
@@ -309,7 +310,7 @@ export const U1E3Episode: React.FC = () => {
   }
 
   const activeTurn = activeIndex >= 0 ? turns[activeIndex] : null;
-  const activeStartFrame = activeIndex >= 0 ? Math.floor(starts[activeIndex] * FPS) : 0;
+  const activeStartFrame = activeIndex >= 0 ? Math.floor(starts[activeIndex] * fps) : 0;
   const turnElapsed = activeTurn ? timeSec - starts[activeIndex] : 0;
 
   const activeSubBeats = activeTurn
@@ -352,8 +353,8 @@ export const U1E3Episode: React.FC = () => {
           {/* Audio */}
           {turns.map((turn, i) => (
             <Sequence key={`audio-${turn.id}`}
-              from={Math.floor(starts[i] * FPS)}
-              durationInFrames={Math.max(1, Math.floor(durations[i] * FPS))}>
+              from={Math.floor(starts[i] * fps)}
+              durationInFrames={Math.max(1, Math.floor(durations[i] * fps))}>
               <Audio src={staticFile(`audio/${EP}/${turn.id}.mp3`)} />
             </Sequence>
           ))}
@@ -395,7 +396,7 @@ export const U1E3Episode: React.FC = () => {
 
           {/* Sub-beats */}
           {activeSubBeats.map((beat, idx) => {
-            const beatFrame = activeStartFrame + Math.floor(beat.offset * FPS);
+            const beatFrame = activeStartFrame + Math.floor(beat.offset * fps);
             const key = `${beat.turnId}-${beat.offset}-${idx}`;
 
             if (beat.kind === 'smarttext' && beat.text) {

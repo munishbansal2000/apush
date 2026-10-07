@@ -22,6 +22,7 @@ import { U1E6Episode } from "./components/U1E6Episode";
 import { U1E7Episode } from "./components/U1E7Episode";
 import { U1E8Episode } from "./components/U1E8Episode";
 import { U1E9Episode } from "./components/U1E9Episode";
+import { EPISODE_FRAMES } from "./data/durations";
 // import { U3E6Scene } from "./u3e6/U3E6Scene";
 // import { U3E6_COMPS } from "./u3e6/u3e6_shots";
 // import { U3E6_Act1 } from "./u3e6/U3E6_Act1";
@@ -129,7 +130,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="U1E1Episode"
         component={U1E1Episode}
-        durationInFrames={12480}
+        durationInFrames={EPISODE_FRAMES.E1}
         fps={30}
         width={1280}
         height={720}
@@ -137,7 +138,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="U1E2Episode"
         component={U1E2Episode}
-        durationInFrames={13449}
+        durationInFrames={EPISODE_FRAMES.E2}
         fps={30}
         width={1280}
         height={720}
@@ -145,7 +146,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="U1E3Episode"
         component={U1E3Episode}
-        durationInFrames={22904}
+        durationInFrames={EPISODE_FRAMES.E3}
         fps={30}
         width={1280}
         height={720}
@@ -153,7 +154,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="U1E4Episode"
         component={U1E4Episode}
-        durationInFrames={24013}
+        durationInFrames={EPISODE_FRAMES.E4}
         fps={30}
         width={1280}
         height={720}
@@ -161,7 +162,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="U1E5Episode"
         component={U1E5Episode}
-        durationInFrames={21953}
+        durationInFrames={EPISODE_FRAMES.E5}
         fps={30}
         width={1280}
         height={720}
@@ -169,7 +170,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="U1E6Episode"
         component={U1E6Episode}
-        durationInFrames={24922}
+        durationInFrames={EPISODE_FRAMES.E6}
         fps={30}
         width={1280}
         height={720}
@@ -177,7 +178,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="U1E7Episode"
         component={U1E7Episode}
-        durationInFrames={25931}
+        durationInFrames={EPISODE_FRAMES.E7}
         fps={30}
         width={1280}
         height={720}
@@ -185,7 +186,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="U1E8Episode"
         component={U1E8Episode}
-        durationInFrames={23076}
+        durationInFrames={EPISODE_FRAMES.E8}
         fps={30}
         width={1280}
         height={720}
@@ -193,7 +194,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="U1E9Episode"
         component={U1E9Episode}
-        durationInFrames={29848}
+        durationInFrames={EPISODE_FRAMES.E9}
         fps={30}
         width={1280}
         height={720}

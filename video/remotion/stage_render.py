@@ -17,22 +17,61 @@ Skips render if TSX unchanged (hash-based cache).
 
 import argparse
 import hashlib
+import json
 import os
 import subprocess
 from pathlib import Path
 
 
-# TODO: derive from timing_map.json instead of hardcoding
-ACT_BOUNDARIES = {
-    'E2': [(0, 3930), (3931, 6029), (6030, 8284), (8285, 10544), (10545, 13448)],
-    'E3': [(0, 4603), (4604, 9462), (9463, 13713), (13714, 18284), (18285, 22904)],
-    'E4': [(0, 7344), (7345, 11050), (11051, 17498), (17499, 22907), (22908, 24013)],
-    'E5': [(0, 4951), (4951, 8736), (8736, 12230), (12230, 15980), (15980, 21953)],
-    'E6': [(0, 6968), (6968, 9443), (9443, 13806), (13806, 17592), (17592, 24922)],
-    'E7': [(0, 8671), (8672, 12134), (12135, 15702), (15703, 17991), (17992, 25930)],
-    'E8': [(0, 5483), (5483, 9080), (9080, 11801), (11801, 15186), (15186, 23076)],
-    'E9': [(0, 7321), (7322, 12525), (12526, 18045), (18046, 22946), (22947, 29847)],
-}
+def get_act_boundaries(episode, num_acts=5, fps=30):
+    """
+    Derive act boundaries from timing_map.json.
+    Splits at turn boundaries nearest to even divisions.
+    Returns list of (start_frame, end_frame) tuples at the given fps.
+    """
+    ep_lower = episode.lower()
+    timing_path = Path(f'src/data/{ep_lower}/timing_map.json')
+    
+    if not timing_path.exists():
+        raise FileNotFoundError(f"Timing map not found: {timing_path}")
+    
+    with open(timing_path) as f:
+        timing = json.load(f)
+    
+    starts = timing.get('starts', [])
+    durations = timing.get('durations', [])
+    
+    if not starts or not durations:
+        raise ValueError(f"No timing data in {timing_path}")
+    
+    total_duration = starts[-1] + durations[-1]
+    total_frames = int(total_duration * fps)
+    
+    # Find turn boundaries (start times in seconds)
+    # We want splits at ~20%, 40%, 60%, 80% of total duration
+    boundaries = [0]
+    for i in range(1, num_acts):
+        target_time = (total_duration * i) / num_acts
+        # Find the turn start closest to target_time
+        best_idx = 0
+        best_diff = abs(starts[0] - target_time)
+        for idx, s in enumerate(starts):
+            diff = abs(s - target_time)
+            if diff < best_diff:
+                best_diff = diff
+                best_idx = idx
+        boundaries.append(int(starts[best_idx] * fps))
+    
+    boundaries.append(total_frames)
+    
+    # Convert to (start, end) tuples
+    acts = []
+    for i in range(num_acts):
+        start = boundaries[i]
+        end = boundaries[i + 1] - 1 if i < num_acts - 1 else boundaries[i + 1]
+        acts.append((start, end))
+    
+    return acts
 
 RENDER_SCALES = {
     'test': 0.375,   # 480x270 @ 30fps (fast iteration)
@@ -76,10 +115,12 @@ def main():
     cache_dir = Path(f'.build_cache/{episode}')
     cache_dir.mkdir(parents=True, exist_ok=True)
     
-    acts = [args.act] if args.act else list(range(1, len(ACT_BOUNDARIES[episode]) + 1))
+    # Derive act boundaries from timing data (not hardcoded)
+    act_boundaries = get_act_boundaries(episode, num_acts=5, fps=30)
+    acts = [args.act] if args.act else list(range(1, len(act_boundaries) + 1))
     
     for act_num in acts:
-        start, end = ACT_BOUNDARIES[episode][act_num - 1]
+        start, end = act_boundaries[act_num - 1]
         out_path = cache_dir / f'act{act_num}_{mode}_{tsx_hash}.mp4'
         
         if out_path.exists() and not args.force:

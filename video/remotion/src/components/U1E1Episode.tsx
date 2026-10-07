@@ -21,6 +21,7 @@ import {
   Sequence,
   staticFile,
   useCurrentFrame,
+  useVideoConfig,
 } from 'remotion';
 import { TalkingHead } from './TalkingHead';
 import { TitleCard } from './TitleCard';
@@ -48,7 +49,6 @@ const turns = turnsData as Turn[];
 const starts = (timingData as { starts: number[] }).starts;
 const durations = (timingData as { durations: number[] }).durations;
 
-const FPS = 30;
 
 /**
  * SUB-BEATS: timed visual events within turns.
@@ -232,7 +232,8 @@ const getBackgroundForTurn = (turnId: string | null, subBeatBg: string | null): 
 
 export const U1E1Episode: React.FC = () => {
   const frame = useCurrentFrame();
-  const timeSec = frame / FPS;
+  const {fps} = useVideoConfig();
+  const timeSec = frame / fps;
 
   // Find active turn
   let activeIndex = -1;
@@ -246,7 +247,7 @@ export const U1E1Episode: React.FC = () => {
   }
 
   const activeTurn = activeIndex >= 0 ? turns[activeIndex] : null;
-  const activeStartFrame = activeIndex >= 0 ? Math.floor(starts[activeIndex] * FPS) : 0;
+  const activeStartFrame = activeIndex >= 0 ? Math.floor(starts[activeIndex] * fps) : 0;
   const turnElapsed = activeTurn ? timeSec - starts[activeIndex] : 0;
 
   // Find active sub-beats (those whose offset has passed)
@@ -293,8 +294,8 @@ export const U1E1Episode: React.FC = () => {
 
           {/* Audio per turn — Sequence guarantees proper audio mixing */}
           {turns.map((turn, i) => {
-            const startFrame = Math.floor(starts[i] * FPS);
-            const durationFrames = Math.max(1, Math.floor(durations[i] * FPS));
+            const startFrame = Math.floor(starts[i] * fps);
+            const durationFrames = Math.max(1, Math.floor(durations[i] * fps));
             return (
               <Sequence key={`audio-${turn.id}`} from={startFrame} durationInFrames={durationFrames}>
                 <Audio src={staticFile(`audio/u1e1/${turn.id}.mp3`)} />
@@ -360,7 +361,7 @@ export const U1E1Episode: React.FC = () => {
           {/* RegionMap for Act 2 — word-anchored: southwest@0.66s (t04), plains@0.33s (t06) */}
           {['t02', 't03', 't04', 't05', 't06', 't07', 't08', 't09', 't10'].includes(activeTurn?.id || '') && (
             <RegionMap
-              at={Math.floor(starts[2] * FPS)}
+              at={Math.floor(starts[2] * fps)}
               activeRegions={
                 ['t02', 't03'].includes(activeTurn?.id || '') ? [] :
                 ['t04', 't05'].includes(activeTurn?.id || '') ? ['southwest'] :
@@ -368,9 +369,9 @@ export const U1E1Episode: React.FC = () => {
                 ['southwest', 'plains', 'northeast']
               }
               regionAppearFrames={{
-                southwest: Math.floor(starts[4] * FPS) + Math.floor(0.66 * FPS),
-                plains: Math.floor(starts[6] * FPS) + Math.floor(0.33 * FPS),
-                northeast: Math.floor(starts[8] * FPS),
+                southwest: Math.floor(starts[4] * fps) + Math.floor(0.66 * fps),
+                plains: Math.floor(starts[6] * fps) + Math.floor(0.33 * fps),
+                northeast: Math.floor(starts[8] * fps),
               }}
             />
           )}
@@ -381,8 +382,8 @@ export const U1E1Episode: React.FC = () => {
               at={activeStartFrame}
               active={[]}
               routeTimings={{
-                turquoise: activeStartFrame + Math.floor(3.45 * FPS),
-                copper: activeStartFrame + Math.floor(7.53 * FPS),
+                turquoise: activeStartFrame + Math.floor(3.45 * fps),
+                copper: activeStartFrame + Math.floor(7.53 * fps),
               }}
             />
           )}
@@ -391,14 +392,14 @@ export const U1E1Episode: React.FC = () => {
               at={activeStartFrame}
               active={['turquoise', 'copper']}
               routeTimings={{
-                shell: activeStartFrame + Math.floor(1.62 * FPS),
+                shell: activeStartFrame + Math.floor(1.62 * fps),
               }}
             />
           )}
 
           {/* Sub-beats */}
           {activeSubBeats.map((beat, idx) => {
-            const beatFrame = activeStartFrame + Math.floor(beat.offset * FPS);
+            const beatFrame = activeStartFrame + Math.floor(beat.offset * fps);
             const key = `${beat.turnId}-${beat.offset}-${idx}`;
 
             if (beat.kind === 'smarttext' && beat.text) {

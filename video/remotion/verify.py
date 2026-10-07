@@ -90,12 +90,13 @@ def verify_render(video_path, episode, act_num=None, tolerance_sec=0.6):
         spec = importlib.util.spec_from_file_location(
             "stage_render", "stage_render.py")
         mod = importlib.util.module_from_spec(spec)
-        # Just use timing_map for total, act boundaries are in stage_render
+        # Just use timing_map for total, act boundaries are derived in stage_render
         # For now, check against act frame range
-        from stage_render import ACT_BOUNDARIES
+        from stage_render import get_act_boundaries
         ep = episode.upper()
-        if ep in ACT_BOUNDARIES:
-            start_f, end_f = ACT_BOUNDARIES[ep][act_num - 1]
+        try:
+            boundaries = get_act_boundaries(ep, num_acts=5, fps=30)
+            start_f, end_f = boundaries[act_num - 1]
             expected_dur = (end_f - start_f + 1) / 30.0
             diff = abs(actual_dur - expected_dur)
             if diff > tolerance_sec:
@@ -103,6 +104,8 @@ def verify_render(video_path, episode, act_num=None, tolerance_sec=0.6):
                     f"[verify] duration {actual_dur:.2f}s vs expected "
                     f"{expected_dur:.2f}s (diff {diff:.2f}s > {tolerance_sec}s)")
             print(f"  duration: {actual_dur:.2f}s ✓")
+        except (FileNotFoundError, ValueError):
+            print(f"  duration: {actual_dur:.2f}s (no timing data, skipping)")
     else:
         print(f"  duration: {actual_dur:.2f}s (no expected, skipping)")
 

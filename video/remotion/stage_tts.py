@@ -16,6 +16,7 @@ Output: episodes/<id>/tts/<provider>/turn_*.mp3
 """
 
 import argparse
+import hashlib
 import json
 import subprocess
 from pathlib import Path
@@ -244,10 +245,24 @@ def main():
         pause_after = turn.get('pause_after', 0)
         
         out_path = out_dir / f'turn_{i:03d}.mp3'
+        hash_path = out_dir / f'turn_{i:03d}.hash'
         
-        if out_path.exists() and not args.force:
+        # Content-hash based cache: hash of (text + speaker + voice + provider)
+        # Regenerates if text, voice, or provider changed — no --force needed
+        voice = voices.get(speaker, voices['maya'])
+        content_key = f"{provider}:{voice}:{speaker}:{text}:{pause_after}"
+        content_hash = hashlib.sha256(content_key.encode()).hexdigest()[:16]
+        
+        cached_hash = None
+        if hash_path.exists():
+            cached_hash = hash_path.read_text().strip()
+        
+        if out_path.exists() and cached_hash == content_hash and not args.force:
             print(f"  [{i}] Cached: {out_path.name}")
             continue
+        
+        if out_path.exists() and cached_hash != content_hash:
+            print(f"  [{i}] Content changed, regenerating...")
         
         # Handle pause/silence turns (no TTS, just silence)
         if speaker == 'pause' or not text.strip():
@@ -262,13 +277,16 @@ def main():
             if result.returncode != 0:
                 print(f"  ERROR generating silence for turn {i}")
                 return 1
+            # Write hash for silence turns too
+            hash_path.write_text(content_hash)
             continue
         
-        voice = voices.get(speaker, voices['maya'])
         print(f"  [{i}] {speaker}: {text[:40]}...")
         if not render_fn(text, voice, out_path):
             print(f"  ERROR rendering turn {i}")
             return 1
+        # Write hash after successful render
+        hash_path.write_text(content_hash)
 
     print(f"\n✅ Done: {out_dir}/")
     return 0

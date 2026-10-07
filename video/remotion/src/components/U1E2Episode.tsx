@@ -19,6 +19,7 @@ import {
   Sequence,
   staticFile,
   useCurrentFrame,
+  useVideoConfig,
   interpolate,
 } from 'remotion';
 import { TalkingHead } from './TalkingHead';
@@ -44,7 +45,6 @@ const turns = turnsData as Turn[];
 const starts = (timingData as { starts: number[] }).starts;
 const durations = (timingData as { durations: number[] }).durations;
 
-const FPS = 30;
 const EP = 'u1e2';
 
 /* ------------------------------------------------------------------ */
@@ -298,8 +298,9 @@ const MotiveBlocks: React.FC<{
   position?: [number, number];
 }> = ({ at, appearOffsets, detailOffsets = [], questionIds = [], dimIds = [], position = [0.5, 0.42] }) => {
   const frame = useCurrentFrame();
+  const {fps} = useVideoConfig();
   if (frame < at) return null;
-  const elapsed = (frame - at) / FPS;
+  const elapsed = (frame - at) / fps;
 
   return (
     <div style={{
@@ -430,8 +431,9 @@ const ThreeBoxesE2: React.FC<{
   position?: [number, number];
 }> = ({ at, appearOffsets, checked = [], position = [0.5, 0.5] }) => {
   const frame = useCurrentFrame();
+  const {fps} = useVideoConfig();
   if (frame < at) return null;
-  const elapsed = (frame - at) / FPS;
+  const elapsed = (frame - at) / fps;
 
   return (
     <div style={{
@@ -503,8 +505,9 @@ const ThreeWayCompare: React.FC<{
   position?: [number, number];
 }> = ({ at, items, appearOffsets, position = [0.5, 0.45] }) => {
   const frame = useCurrentFrame();
+  const {fps} = useVideoConfig();
   if (frame < at) return null;
-  const elapsed = (frame - at) / FPS;
+  const elapsed = (frame - at) / fps;
 
   return (
     <div style={{
@@ -605,8 +608,9 @@ const MapRoute: React.FC<{
 }> = ({ at, mapImage, path, drawDuration = 2, markers = [], color = '#ff4444',
         tintSides, papalSeal = false }) => {
   const frame = useCurrentFrame();
+  const {fps} = useVideoConfig();
   if (frame < at) return null;
-  const elapsed = (frame - at) / FPS;
+  const elapsed = (frame - at) / fps;
 
   // Animate stroke-dashoffset for draw effect
   const progress = Math.min(1, elapsed / drawDuration);
@@ -765,8 +769,9 @@ const LeaderSticker: React.FC<{
   size?: number;
 }> = ({ at, leader, name, role, position, size = 320 }) => {
   const frame = useCurrentFrame();
+  const {fps} = useVideoConfig();
   if (frame < at) return null;
-  const elapsed = (frame - at) / FPS;
+  const elapsed = (frame - at) / fps;
   // Pop-in with slight bounce
   const scale = interpolate(
     Math.min(1, elapsed / 0.5),
@@ -869,7 +874,8 @@ const getBackgroundForTurn = (turnId: string | null, subBeatBg: string | null): 
 /* ------------------------------------------------------------------ */
 export const U1E2Episode: React.FC = () => {
   const frame = useCurrentFrame();
-  const timeSec = frame / FPS;
+  const {fps} = useVideoConfig();
+  const timeSec = frame / fps;
 
   let activeIndex = -1;
   for (let i = 0; i < turns.length; i++) {
@@ -880,7 +886,7 @@ export const U1E2Episode: React.FC = () => {
   }
 
   const activeTurn = activeIndex >= 0 ? turns[activeIndex] : null;
-  const activeStartFrame = activeIndex >= 0 ? Math.floor(starts[activeIndex] * FPS) : 0;
+  const activeStartFrame = activeIndex >= 0 ? Math.floor(starts[activeIndex] * fps) : 0;
   const turnElapsed = activeTurn ? timeSec - starts[activeIndex] : 0;
 
   const activeSubBeats = activeTurn
@@ -926,8 +932,8 @@ export const U1E2Episode: React.FC = () => {
           {/* Audio */}
           {turns.map((turn, i) => (
             <Sequence key={`audio-${turn.id}`}
-              from={Math.floor(starts[i] * FPS)}
-              durationInFrames={Math.max(1, Math.floor(durations[i] * FPS))}>
+              from={Math.floor(starts[i] * fps)}
+              durationInFrames={Math.max(1, Math.floor(durations[i] * fps))}>
               <Audio src={staticFile(`audio/${EP}/${turn.id}.mp3`)} />
             </Sequence>
           ))}
@@ -1005,7 +1011,7 @@ export const U1E2Episode: React.FC = () => {
           )}
           {/* t19: Tordesillas line draws on the map when he says "line" @5.31s */}
           {activeTurn?.id === 't19' && turnElapsed >= 5.31 && (
-            <MapRoute at={activeStartFrame + Math.floor(5.31 * FPS)}
+            <MapRoute at={activeStartFrame + Math.floor(5.31 * fps)}
               mapImage="historic/u1e2/tordesillas-map.jpg"
               path="M 620 100 L 620 900"
               drawDuration={2}
@@ -1047,24 +1053,24 @@ export const U1E2Episode: React.FC = () => {
 
           {/* Cartoon leaders — dramatic entrances with contextual roles */}
           {showColumbus && (
-            <LeaderSticker at={Math.floor(starts[12] * FPS)}
+            <LeaderSticker at={Math.floor(starts[12] * fps)}
               leader="unit1_columbus_confident.webp" name="Columbus"
               role="WRONG ABOUT EVERYTHING" position={[0.28, 0.52]} />
           )}
           {showCortes && (
-            <LeaderSticker at={Math.floor(starts[35] * FPS) + Math.floor(3.84 * FPS)}
+            <LeaderSticker at={Math.floor(starts[35] * fps) + Math.floor(3.84 * fps)}
               leader="unit1_cortes.webp" name="Cortés"
               role="TENOCHTITLAN 1521" position={[0.28, 0.52]} />
           )}
           {showLasCasas && (
-            <LeaderSticker at={Math.floor(starts[41] * FPS) + Math.floor(7.92 * FPS)}
+            <LeaderSticker at={Math.floor(starts[41] * fps) + Math.floor(7.92 * fps)}
               leader="unit1_las_casas.webp" name="Las Casas"
               role="SUBJECTS OR LABOR?" position={[0.28, 0.52]} />
           )}
 
           {/* Sub-beats — smarttext: beats at the same position replace each other */}
           {activeSubBeats.map((beat, idx) => {
-            const beatFrame = activeStartFrame + Math.floor(beat.offset * FPS);
+            const beatFrame = activeStartFrame + Math.floor(beat.offset * fps);
             const key = `${beat.turnId}-${beat.offset}-${idx}`;
             if (beat.kind === 'smarttext' && beat.text) {
               // A beat is superseded if a later beat at nearly the same position
