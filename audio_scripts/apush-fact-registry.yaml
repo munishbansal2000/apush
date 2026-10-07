@@ -6598,3 +6598,85 @@ facts:
   tier_note: 'Added U7-L7 v2 2026-10-07 (Layer-3 repair). Allison''s own accounts differ on timing
     (NPR 2012: "estimated after the fact"; Foreign Affairs 2012: "during the standoff... chance
     of escalation to war"); the script teaches only the attributed estimate, not the disputed timing.'
+
+- id: F-U7-035
+  topic: 'Medicare vs Medicaid — 1965: Medicare = 65 and older, Medicaid = low-income (the AP swap trap)'
+  correct: 'Medicare, created 1965, provides health insurance to Americans 65 years of age and
+    older; Medicaid offers medical coverage to Americans who cannot afford their own insurance
+    (5steps ch27; premium2027 ch10/ch11). Teach ''Medicare, over sixty-five; Medicaid, low-income''
+    — never Medicare as the program for the poor. (U7-L8 v2 teaches this as Maya''s mid-episode
+    wrong beat, corrected in flow by Marcus.)'
+  falsehoods:
+  - medicare.{0,25}(was|is|covered|covers|covering).{0,15}(the )?poor
+  guards:
+  - don.?t write
+  - student writes
+  - not quite
+  - swapped
+  sources:
+  - 5steps
+  - premium2027
+  tier_note: 'Added U7-L8 v2 2026-10-07 — writer fact pass. Guards the mid-episode wrong beat (G12 exemption applies: Marcus corrects with "not quite" in the immediately following turn).'
+- id: F-U7-036
+  topic: 'Immigration and Nationality Act of 1965 (Hart-Celler) — quotas abolished, limits NOT abolished'
+  correct: 'The act abolished the national-origins quota system in place since the 1920s but replaced
+    it with overall caps: 170,000 per year from the Eastern Hemisphere and, for the first time,
+    120,000 per year from the Western Hemisphere, with exemptions for family members (''chain
+    immigration'') and workers with needed skills (premium2027 ch10). Teach ''quotas gone, caps
+    in'' — never an open door, never ''all limits removed.'''
+  falsehoods:
+  - immigration.{0,30}act.{0,30}(removed|ended|abolished).{0,15}all limits
+  - 1965.{0,30}immigration.{0,25}no limits
+  - hart-celler.{0,25}open door
+  sources:
+  - premium2027
+  tier_note: 'Added U7-L8 v2 2026-10-07 — writer fact pass. Guards the box-3 exam trap.'
+- id: F-U7-037
+  topic: '1964 election — Johnson won roughly 60% of the popular vote (books split 61/62); never pin one'
+  correct: 'Johnson defeated Goldwater in 1964 in a landslide: 5steps ch27 says ''winning 62 percent
+    of the vote''; premium2027 ch10 says ''61 percent of the popular vote.'' Teach ''roughly sixty
+    percent'' / ''about three in five voters'' — never a single pinned number.'
+  falsehoods:
+  - goldwater.{0,25}won.{0,20}1964
+  sources:
+  - 5steps
+  - premium2027
+  tier_note: 'Added U7-L8 v2 2026-10-07 — writer fact pass.'
+- id: F-U7-038
+  topic: 'MLK 1967 Great Society quote — exact wording per premium2027'
+  correct: 'In 1967 Martin Luther King Jr. said: ''The promises of the Great Society have been shot
+    down on the battlefields of Vietnam'' (premium2027 ch10). Teach the book''s exact wording,
+    attributed to King in 1967 — never reworded, never presented as the script''s own line.'
+  falsehoods: []
+  sources:
+  - premium2027
+  tier_note: 'Added U7-L8 v2 2026-10-07 — writer fact pass. Quote-integrity entry.'
+- id: F-U7-039
+  topic: 'Great Society named at the University of Michigan, Ann Arbor, spring 1964 (Princeton stimulus)'
+  correct: 'Johnson named the vision ''the Great Society'' in a 1964 address at the University of
+    Michigan, Ann Arbor (Princeton practice-test stimulus: ''Lyndon Johnson, Remarks at the University
+    of Michigan, Ann Arbor, 1964''). The book prints the line ''…toward a destiny where the meaning
+    of our lives matches the marvelous products of our labor'' — quote only the exact tail words,
+    from ''where'' onward, spliced with an ellipsis.'
+  falsehoods: []
+  sources:
+  - princeton
+  tier_note: 'Added U7-L8 v2 2026-10-07 — writer fact pass. Quote-integrity entry.'
+- id: F-U7-040
+  topic: 'War on Poverty verdict — poverty cut ~40% but NOT ended (5steps ch27); never pin 19%-to-12%'
+  correct: '5steps ch27: ''the poverty rate in the United States was cut by 40 percent'' but ''the Great
+    Society did not end poverty.'' Heimler: ''about 1/5 of the American population was impoverished''
+    in the early 1960s. Teach ''roughly one in five → cut by about forty percent'' — never a pinned
+    19%-to-12% (not in retrievable Tier 1); never claim the war ''ended poverty.'''
+  falsehoods:
+  - (war on poverty|great society).{0,25}(ended|eliminated|eradicated).{0,10}poverty
+  guards:
+  - didn.?t
+  - did not
+  - never
+  - don.?t write
+  - not quite
+  sources:
+  - 5steps
+  - transcripts
+  tier_note: 'Added U7-L8 v2 2026-10-07 — writer fact pass.'
