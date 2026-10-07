@@ -30,10 +30,14 @@ OUTRO_DURATION = 8.0
 BED_DUCK_DB = -20.0
 
 # Asset filenames expected in --music-dir
+# Maps event asset_id -> list of filenames to try (in order)
 ASSET_FILES = {
-    'intro_sting': ['intro_sting.wav', 'intro_sting.mp3', 'intro.wav'],
-    'chapter_sting': ['chapter_sting.wav', 'chapter_sting.mp3', 'sting.wav'],
-    'outro_sting': ['outro_sting.wav', 'outro_sting.mp3', 'outro.wav'],
+    'intro_sting': ['intro_sting.wav', 'intro_sting.mp3', 'intro.wav',
+                    'theme_main.mp3', 'theme_main.wav'],
+    'chapter_sting': ['chapter_sting.wav', 'chapter_sting.mp3', 'sting.wav',
+                      'narrative_sting.mp3', 'narrative_sting.wav'],
+    'outro_sting': ['outro_sting.wav', 'outro_sting.mp3', 'outro.wav',
+                    'theme_main.mp3', 'theme_main.wav'],
     'bed_loop': ['bed_loop.wav', 'bed_loop.mp3', 'bed.wav'],
 }
 

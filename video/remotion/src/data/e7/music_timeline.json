@@ -10,7 +10,7 @@
       "duck_dialogue": true,
       "duck_db": -8.0,
       "src": "audio/e7/music/intro_sting.wav",
-      "source": "procedural"
+      "source": "music_dir"
     },
     {
       "type": "chapter_sting",
@@ -19,7 +19,7 @@
       "duration_sec": 3.0,
       "act": 2,
       "src": "audio/e7/music/chapter_sting.wav",
-      "source": "procedural"
+      "source": "music_dir"
     },
     {
       "type": "chapter_sting",
@@ -28,7 +28,7 @@
       "duration_sec": 3.0,
       "act": 3,
       "src": "audio/e7/music/chapter_sting.wav",
-      "source": "procedural"
+      "source": "music_dir"
     },
     {
       "type": "chapter_sting",
@@ -37,7 +37,7 @@
       "duration_sec": 3.0,
       "act": 4,
       "src": "audio/e7/music/chapter_sting.wav",
-      "source": "procedural"
+      "source": "music_dir"
     },
     {
       "type": "chapter_sting",
@@ -46,7 +46,7 @@
       "duration_sec": 3.0,
       "act": 5,
       "src": "audio/e7/music/chapter_sting.wav",
-      "source": "procedural"
+      "source": "music_dir"
     },
     {
       "type": "outro_sting",
@@ -55,7 +55,7 @@
       "duration_sec": 8.0,
       "duck_dialogue": false,
       "src": "audio/e7/music/outro_sting.wav",
-      "source": "procedural"
+      "source": "music_dir"
     }
   ],
   "mix_rules": {
