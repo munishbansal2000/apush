@@ -37,51 +37,43 @@ python3 stage_timing.py --episode E2 --provider meta
 
 ---
 
-## Phase 2: Direction
+## Phase 2: Direction (creative)
 
-### 4. Director's scene plan (in writing, per act)
-Write SUB_BEATS directly in the episode TSX. For each beat:
-- `turnId`, `offset` (seconds into turn, resolved from word times)
-- `kind`: component type (smarttext, mapjourney, leader, etc.)
-- Component-specific props (text, level, position, etc.)
-- The measured timestamp is derived, never hand-written.
+### 4. Director's scene plan + image collection (interleaved)
+These happen together, not in sequence. As you read the script:
 
-**Hard rules:**
-- No blank screens. Every frame has texture, image, or era background.
-- No static visual > 8s without a new beat.
-- No repeated screens across turns — each turn gets its own visual moment.
-- Hosts appear on screen. Talking heads are not optional.
-- Serious scenes: realistic visuals. Fun beats: semi-cartoon OK.
-- Static images get procedural motion (sway, breathe, Ken Burns).
-- **No inline components.** All components live in `src/components/`, episodes import them.
+**a) Read and identify needs:**
+For each beat, ask: "What does the viewer SEE?" If the answer needs an image,
+note it. The script dictates the images, not the other way around.
 
-**Component library** (70 components):
-- Text: SmartText, QuoteSlide, HighlightSlide
-- Layout: DuoSlide, SplitSlide, CollageSlide, TitleCard
-- Maps: MapJourney, MapRoute, TerritorySlide, OregonTrailCinematicMap, etc.
-- People: LeaderSticker, TalkingHead, DualTalkingHeads
-- APUSH-specific: PrimarySourceSpotlight (HIPP), HistoricalTimeline, VersusPolarization
-- See `src/components/index.ts` for full list.
-
-### 5. Image Collection (explicit phase)
+**b) Collect images:**
 ```bash
-python3 stage_images.py --episode E2 --scan    # build catalog from TSX
+python3 stage_images.py --episode E2 --scan    # build catalog from identified needs
+# Fill in source_url/license/description in src/data/images.json
 python3 stage_images.py --episode E2           # download missing
 ```
 
+**c) Write scenes USING the images:**
+Now that you have the images, write SUB_BEATS that use them creatively:
+- What does the image SHOW? (not just "here's a picture")
+- How does it MOVE? (Ken Burns, parallax, reveal)
+- What TEXT goes with it? (not on top of faces)
+- What's the EMOTIONAL register? (does this image feel right?)
+
+**d) Iterate:**
+If scene writing reveals you need more images (or different ones):
+→ Go back to (b), collect more, continue writing.
+The creative step drives image needs, not the reverse.
+
 **Persistence rules:**
 - `src/data/images.json` IS committed (catalog: paths, source URLs, licenses, descriptions, used_in)
-- Image FILES are NOT committed (in `public/`, gitignored)
-- Pipeline downloads missing images on demand from source URLs
+- Image FILES are NOT committed (in `public/`, gitignored, downloaded on demand)
 
-**Process:**
-1. Write SUB_BEATS first (creative direction dictates what's needed)
-2. Run `--scan` to build catalog entries from TSX image refs
-3. Fill in `source_url`, `license`, `description` for each (human)
-4. Run without flags to download missing images
-5. **Maps:** Use period-accurate maps where overlays must align perfectly. Not modern state outlines. Source from Library of Congress. Calibrate overlay coordinates to the specific map image.
+**Maps:** Use period-accurate maps where overlays must align perfectly.
+Not modern state outlines. Source from Library of Congress. Calibrate overlay
+coordinates to the specific map image.
 
-### 6. Scene Build (explicit phase)
+### 5. Scene Build (technical implementation)
 Transform SUB_BEATS into the renderable episode TSX.
 
 **This is where creative direction becomes technical implementation:**
