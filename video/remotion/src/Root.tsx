@@ -23,6 +23,12 @@ import { U1E7Episode } from "./components/U1E7Episode";
 import { U1E8Episode } from "./components/U1E8Episode";
 import { U1E9Episode } from "./components/U1E9Episode";
 import { U2E1Episode } from "./components/U2E1Episode";
+import { U2E2Episode } from "./components/U2E2Episode";
+import { U2E4Episode } from "./components/U2E4Episode";
+import { U2E5Episode } from "./components/U2E5Episode";
+import { U2E7Episode } from "./components/U2E7Episode";
+import { U2E8Episode } from "./components/U2E8Episode";
+import { U2E9Episode } from "./components/U2E9Episode";
 import { EPISODE_FRAMES } from "./data/durations";
 // import { U3E6Scene } from "./u3e6/U3E6Scene";
 // import { U3E6_COMPS } from "./u3e6/u3e6_shots";
@@ -204,6 +210,54 @@ export const RemotionRoot: React.FC = () => {
         id="U2E1Episode"
         component={U2E1Episode}
         durationInFrames={EPISODE_FRAMES.U2E1}
+        fps={30}
+        width={1280}
+        height={720}
+      />
+      <Composition
+        id="U2E2Episode"
+        component={U2E2Episode}
+        durationInFrames={EPISODE_FRAMES.U2E2}
+        fps={30}
+        width={1280}
+        height={720}
+      />
+      <Composition
+        id="U2E4Episode"
+        component={U2E4Episode}
+        durationInFrames={EPISODE_FRAMES.U2E4}
+        fps={30}
+        width={1280}
+        height={720}
+      />
+      <Composition
+        id="U2E5Episode"
+        component={U2E5Episode}
+        durationInFrames={EPISODE_FRAMES.U2E5}
+        fps={30}
+        width={1280}
+        height={720}
+      />
+      <Composition
+        id="U2E7Episode"
+        component={U2E7Episode}
+        durationInFrames={EPISODE_FRAMES.U2E7}
+        fps={30}
+        width={1280}
+        height={720}
+      />
+      <Composition
+        id="U2E8Episode"
+        component={U2E8Episode}
+        durationInFrames={EPISODE_FRAMES.U2E8}
+        fps={30}
+        width={1280}
+        height={720}
+      />
+      <Composition
+        id="U2E9Episode"
+        component={U2E9Episode}
+        durationInFrames={EPISODE_FRAMES.U2E9}
         fps={30}
         width={1280}
         height={720}
