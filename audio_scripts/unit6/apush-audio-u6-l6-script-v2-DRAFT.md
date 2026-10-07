@@ -9,29 +9,29 @@
 
 ---
 
-Maya: Last time: October 1929 — the market crashes, but the crash was only the trigger. The loaded gun was built all through the twenties: the farm debt, the flat wages, the speculation. Today: what actually caused the Great Depression. Four boxes: the crash, the weak foundations, the policy mistakes, and Hoover's answer. Circle the ones you couldn't explain right now. Twelve minutes.
+Maya: [professional broadcast tone] Last time: October 1929 — the market crashes, but the crash was only the trigger. The loaded gun was built all through the twenties: the farm debt, the flat wages, the speculation. Today: what actually caused the Great Depression. Four boxes: the crash, the weak foundations, the policy mistakes, and Hoover's answer. Circle the ones you couldn't explain right now. Twelve minutes.
 
-Marcus: Thursday, October 24th, 1929. The ticker can't keep up: sell orders piling in faster than the machines could print them, prices sliding all day. Bankers pool money to calm the panic. It doesn't hold. Then Tuesday the 29th, the floor falls out. Black Thursday, then Black Tuesday: a week-long panic that feeds itself.
+Marcus: [dramatic] Thursday, October 24th, 1929. The ticker can't keep up: sell orders piling in faster than the machines could print them, prices sliding all day. Bankers pool money to calm the panic. It doesn't hold. Then Tuesday the 29th, the floor falls out. Black Thursday, then Black Tuesday: a week-long panic that feeds itself.
 
-Maya: I've seen the photos. Guys in suits on the sidewalk, just staring at nothing.
+Maya: [conversational] I've seen the photos. Guys in suits on the sidewalk, just staring at nothing.
 
-Marcus: Real photos. But one wrong idea: ruined investors jumping out of windows. Mostly legend.
+Marcus: [firm] Real photos. But one wrong idea: ruined investors jumping out of windows. Mostly legend.
 
-Maya: Nobody jumped?
+Maya: [incredulous] Nobody jumped?
 
-Marcus: Almost nobody. A couple of cases against the legend's dozens. What actually died that week was quieter: life savings, between breakfast and dinner.
+Marcus: [serious tone] Almost nobody. A couple of cases against the legend's dozens. What actually died that week was quieter: life savings, between breakfast and dinner.
 
-Maya: So what broke? Why did everybody sell at once?
+Maya: [curious, inquisitive tone] So what broke? Why did everybody sell at once?
 
-Marcus: Margin buying: buying stock with borrowed money. In the twenties, as little as ten percent down bought a share; your broker lent the rest. Prices rise, you look like a genius. Prices dip, your broker wants cash — now. A margin call. No cash? He sells your shares for you.
+Marcus: [measured] Margin buying: buying stock with borrowed money. In the twenties, as little as ten percent down bought a share; your broker lent the rest. Prices rise, you look like a genius. Prices dip, your broker wants cash — now. A margin call. No cash? He sells your shares for you.
 
-Maya: Which pushes prices lower, which sets off more margin calls.
+Maya: [thoughtful tone] Which pushes prices lower, which sets off more margin calls.
 
-Marcus: A spiral, and not just Wall Street men. Ordinary people were in too, teachers and cab drivers, on borrowed money. The shoeshine-boy stock-tip story is probably exaggerated, but everybody was playing.
+Marcus: [conversational] A spiral, and not just Wall Street men. Ordinary people were in too, teachers and cab drivers, on borrowed money. The shoeshine-boy stock-tip story is probably exaggerated, but everybody was playing.
 
-Maya: Hold on. You put down ten percent, the stock drops: you just lose your ten percent and walk away? Like a deposit?
+Maya: [incredulous] Hold on. You put down ten percent, the stock drops: you just lose your ten percent and walk away? Like a deposit?
 
-Marcus: Not quite, and that misunderstanding is the trap. You owe the broker the other ninety. The call comes, you can't pay, he sells you out at the bottom, and a price dip becomes a panic.
+Marcus: [firm] Not quite, and that misunderstanding is the trap. You owe the broker the other ninety. The call comes, you can't pay, he sells you out at the bottom, and a price dip becomes a panic.
 
 Marcus: Now your turn. Your stock just fell past your ten percent. Your broker wants cash you don't have and sells your shares, and thousands of brokers are doing the same thing. Calmer from here, or worse?
 
@@ -39,61 +39,61 @@ Marcus: Now your turn. Your stock just fell past your ten percent. Your broker w
 
 Maya: Worse. The forced selling pushes prices lower, which triggers more calls. The spiral feeds itself.
 
-Marcus: Panic was the mood in the room. What actually did the damage was the financing. If an SAQ asks why the crash was so violent, don't just write "panic." Name the mechanism: margin buying turned a dip into a margin-call spiral. Mechanisms score; vibes don't.
+Marcus: [confident tone] Panic was the mood in the room. What actually did the damage was the financing. If an SAQ asks why the crash was so violent, don't just write "panic." Name the mechanism: margin buying turned a dip into a margin-call spiral. Mechanisms score; vibes don't.
 
-Maya: Common mistake: writing that investors jumped out of windows by the dozen. The photos are real; the jumping is mostly legend.
+Maya: [firm] Common mistake: writing that investors jumped out of windows by the dozen. The photos are real; the jumping is mostly legend.
 
-Marcus: A trigger needs a loaded gun, and ours was loaded all through the twenties. American factories could make more than Americans could buy: cars, radios, everything. Wages didn't keep up with productivity, so people bought on installment plans until they were still paying for stuff they already owned and couldn't afford anything new. Warehouses filled up. Factories started cutting shifts.
+Marcus: [ominous] A trigger needs a loaded gun, and ours was loaded all through the twenties. American factories could make more than Americans could buy: cars, radios, everything. Wages didn't keep up with productivity, so people bought on installment plans until they were still paying for stuff they already owned and couldn't afford anything new. Warehouses filled up. Factories started cutting shifts.
 
-Maya: My mom has a rule — no store cards, ever. "Cash or it waits." Turns out she's running 1929 risk management.
+Maya: [playful] My mom has a rule — no store cards, ever. "Cash or it waits." Turns out she's running 1929 risk management.
 
-Marcus: She's got the right instinct: easy credit kept the twenties roaring and made the fall harder. But that's the cities. The countryside never shared the boom.
+Marcus: [conversational] She's got the right instinct: easy credit kept the twenties roaring and made the fall harder. But that's the cities. The countryside never shared the boom.
 
-Maya: The farms. You said that depression was already running.
+Maya: [conversational] The farms. You said that depression was already running.
 
-Marcus: Since the early twenties: wartime demand vanished, European farms came back, crop prices collapsed. Farmers borrowed to survive, and tiny rural banks lent to them. When the loans went bad, the banks went with them. Sixty-two hundred rural banks closed in the twenties alone, before the crash.
+Marcus: [serious tone] Since the early twenties: wartime demand vanished, European farms came back, crop prices collapsed. Farmers borrowed to survive, and tiny rural banks lent to them. When the loans went bad, the banks went with them. Sixty-two hundred rural banks closed in the twenties alone, before the crash.
 
-Maya: So half the country never got the boom in the first place.
+Maya: [thoughtful tone] So half the country never got the boom in the first place.
 
-Marcus: For most of a decade. The surviving banks were fragile: thousands of small banks, no deposit insurance. When depositors panicked and pulled their money, a bank didn't get rescued. It failed.
+Marcus: [serious tone] For most of a decade. The surviving banks were fragile: thousands of small banks, no deposit insurance. When depositors panicked and pulled their money, a bank didn't get rescued. It failed.
 
-Maya: That's the It's a Wonderful Life scene, right? Everyone lining up at the Bailey Building and Loan?
+Maya: [playful] That's the It's a Wonderful Life scene, right? Everyone lining up at the Bailey Building and Loan?
 
-Marcus: Almost exactly, except there was no George Bailey to talk the crowd down, and no deposit insurance behind the promise. By 1932, five thousand banks had closed, and five million Americans lost their savings.
+Marcus: [serious tone] Almost exactly, except there was no George Bailey to talk the crowd down, and no deposit insurance behind the promise. By 1932, five thousand banks had closed, and five million Americans lost their savings.
 
-Maya: And the wealth gap on top of it.
+Maya: [conversational] And the wealth gap on top of it.
 
-Marcus: In the twenties the top one percent saw income rise about seventy-five percent; the bottom ninety percent got under ten. An economy can't run on the spending of the few.
+Marcus: [speaking slowly] In the twenties the top one percent saw income rise about seventy-five percent; the bottom ninety percent got under ten. An economy can't run on the spending of the few.
 
-Maya: Watch the dates. Asked what the crash caused, "farm distress" is the wrong answer: that was already running. The crash gets the blame for the bank panics; the farm crisis started eight years earlier.
+Maya: [firm] Watch the dates. Asked what the crash caused, "farm distress" is the wrong answer: that was already running. The crash gets the blame for the bank panics; the farm crisis started eight years earlier.
 
-Marcus: Keep that split straight: trigger versus fuel.
+Marcus: [confident tone] Keep that split straight: trigger versus fuel.
 
-Maya: A trap: dating the farm crisis to 1929. Farmers were already in a depression in the early twenties.
+Maya: [firm] A trap: dating the farm crisis to 1929. Farmers were already in a depression in the early twenties.
 
-Maya: Second box checked. Weak foundations: overproduction, the farm depression, fragile banks, the income gap.
+Maya: [confident tone] Second box checked. Weak foundations: overproduction, the farm depression, fragile banks, the income gap.
 
-Maya: We did the Fed in econ this year. Raise rates to cool things down, cut rates to heat things up. So the crash happens, the economy's freezing. What did the Fed do?
+Maya: [curious, inquisitive tone] We did the Fed in econ this year. Raise rates to cool things down, cut rates to heat things up. So the crash happens, the economy's freezing. What did the Fed do?
 
-Marcus: On economists' usual telling, in 1928 and '29, worried about speculation, the Fed raised rates to cool the market. Fine for stocks — but higher rates choked ordinary borrowing too. Then the bigger failure: after the crash, the Fed stood by while the money supply shrank by roughly a third.
+Marcus: [measured] On economists' usual telling, in 1928 and '29, worried about speculation, the Fed raised rates to cool the market. Fine for stocks — but higher rates choked ordinary borrowing too. Then the bigger failure: after the crash, the Fed stood by while the money supply shrank by roughly a third.
 
-Maya: A third of the money just — vanished?
+Maya: [incredulous] A third of the money just — vanished?
 
-Marcus: Banks failed, nobody was lending. The Fed never acted as lender of last resort. The monetarist argument — Milton Friedman's camp — says the Fed turned a recession into a depression by letting money disappear. Others blame the structural weaknesses more. How much of it the Fed owns is debated; the failure itself isn't.
+Marcus: [thoughtful tone] Banks failed, nobody was lending. The Fed never acted as lender of last resort. The monetarist argument — Milton Friedman's camp — says the Fed turned a recession into a depression by letting money disappear. Others blame the structural weaknesses more. How much of it the Fed owns is debated; the failure itself isn't.
 
-Maya: What about Smoot-Hawley? I always heard the tariff caused the Depression.
+Maya: [curious, inquisitive tone] What about Smoot-Hawley? I always heard the tariff caused the Depression.
 
-Marcus: Gasoline, not the spark. In 1930 Congress raised tariffs to near-record highs to protect farmers and factories. Other countries retaliated. World trade collapsed, and American exporters got crushed. It helped make a downturn global, but the fire was already burning.
+Marcus: [firm] Gasoline, not the spark. In 1930 Congress raised tariffs to near-record highs to protect farmers and factories. Other countries retaliated. World trade collapsed, and American exporters got crushed. It helped make a downturn global, but the fire was already burning.
 
-Maya: So: wrong answer for "the cause," right answer for "what made it worse."
+Maya: [confident tone] So: wrong answer for "the cause," right answer for "what made it worse."
 
-Marcus: Hold that distinction: cause versus worsener. And watch the distractor: an MCQ will pair Smoot-Hawley with "a cause," and the right choice will say it worsened or spread the downturn. Hedge it like that.
+Marcus: [confident tone] Hold that distinction: cause versus worsener. And watch the distractor: an MCQ will pair Smoot-Hawley with "a cause," and the right choice will say it worsened or spread the downturn. Hedge it like that.
 
-Maya: Common mistake: writing that Smoot-Hawley caused the Depression. It poured fuel on a fire already burning.
+Maya: [firm] Common mistake: writing that Smoot-Hawley caused the Depression. It poured fuel on a fire already burning.
 
-Marcus: Then the gold standard tied everyone's hands: every major currency was backed by gold, so a central bank couldn't print money or slash rates without losing its gold. When the panic hit, the medicine was illegal.
+Marcus: [measured] Then the gold standard tied everyone's hands: every major currency was backed by gold, so a central bank couldn't print money or slash rates without losing its gold. When the panic hit, the medicine was illegal.
 
-Maya: They couldn't fight the downturn even if they wanted to.
+Maya: [thoughtful tone] They couldn't fight the downturn even if they wanted to.
 
 Marcus: Your turn. You're a European central bank in 1930, gold draining out, and the gold standard says your money stays backed. Print money to help your economy, or raise rates to defend your gold?
 
@@ -101,59 +101,59 @@ Marcus: Your turn. You're a European central bank in 1930, gold draining out, an
 
 Maya: Raise rates. Even though it hurts. The gold comes first.
 
-Marcus: Higher rates deepened the slump everywhere: the gold standard carried the American downturn around the world. Britain broke ranks and left gold in 1931; America held on until 1933.
+Marcus: [serious tone] Higher rates deepened the slump everywhere: the gold standard carried the American downturn around the world. Britain broke ranks and left gold in 1931; America held on until 1933.
 
-Maya: And the war debts? Germany owed everybody, right?
+Maya: [curious, inquisitive tone] And the war debts? Germany owed everybody, right?
 
-Marcus: The loop: Germany owed reparations to Britain and France. Britain and France owed war debts to America. Germany could only pay by exporting, but tariffs blocked that, so American banks lent Germany the money, which traveled the circle back to America.
+Marcus: [measured] The loop: Germany owed reparations to Britain and France. Britain and France owed war debts to America. Germany could only pay by exporting, but tariffs blocked that, so American banks lent Germany the money, which traveled the circle back to America.
 
-Maya: Sounds like the kind of plan that works right up until it doesn't.
+Maya: [dry] Sounds like the kind of plan that works right up until it doesn't.
 
-Marcus: Held together by American credit. When American lending dried up in 1929, the circle snapped, and the downturn went global.
+Marcus: [ominous] Held together by American credit. When American lending dried up in 1929, the circle snapped, and the downturn went global.
 
-Marcus: Now Hoover — and to be fair, he did plenty. He pushed businesses to keep wages up, signed the 1929 Farm Board, and built public works like the dam on the Colorado bearing his name. In 1932 he created the Reconstruction Finance Corporation, lending to banks and railroads.
+Marcus: [thoughtful tone] Now Hoover — and to be fair, he did plenty. He pushed businesses to keep wages up, signed the 1929 Farm Board, and built public works like the dam on the Colorado bearing his name. In 1932 he created the Reconstruction Finance Corporation, lending to banks and railroads.
 
-Maya: So the "Hoover did nothing" line is wrong.
+Maya: [incredulous] So the "Hoover did nothing" line is wrong.
 
-Marcus: Nowhere close. What he wouldn't do was direct federal relief to people. He called it rugged individualism: individual initiative, limited government, warning that federal handouts would rot the American character. Loans for banks; nothing direct for the unemployed.
+Marcus: [serious tone] Nowhere close. What he wouldn't do was direct federal relief to people. He called it rugged individualism: individual initiative, limited government, warning that federal handouts would rot the American character. Loans for banks; nothing direct for the unemployed.
 
-Maya: A brutal line to draw in a breadline.
+Maya: [dry] A brutal line to draw in a breadline.
 
-Marcus: And the country named the shantytowns after him. Hoovervilles: a bitter joke, cardboard and tin.
+Marcus: [darkly amused] And the country named the shantytowns after him. Hoovervilles: a bitter joke, cardboard and tin.
 
-Maya: And don't write that Hoover did nothing. He did plenty for banks, almost nothing directly for people. That was the line he drew.
+Maya: [firm] And don't write that Hoover did nothing. He did plenty for banks, almost nothing directly for people. That was the line he drew.
 
-Marcus: A 1932 cartoon of troops clearing the Bonus Army camp won't ask what happened. It'll ask what it reveals. Answer: Hoover was politically finished. The image did the work.
+Marcus: [dramatic] A 1932 cartoon of troops clearing the Bonus Army camp won't ask what happened. It'll ask what it reveals. Answer: Hoover was politically finished. The image did the work.
 
-Maya: The Bonus Army: those were the veterans, right?
+Maya: [curious, inquisitive tone] The Bonus Army: those were the veterans, right?
 
-Marcus: Summer of 1932: about fifteen thousand World War I veterans marched on Washington for early payment of bonuses due in 1945. They camped along the Anacostia with their families. Congress said no. Most went home; a few thousand stayed.
+Marcus: [serious tone] Summer of 1932: about fifteen thousand World War I veterans marched on Washington for early payment of bonuses due in 1945. They camped along the Anacostia with their families. Congress said no. Most went home; a few thousand stayed.
 
-Maya: And Hoover sent the Army.
+Maya: [serious tone] And Hoover sent the Army.
 
-Marcus: He ordered the camp cleared. The Army chief of staff, Douglas MacArthur, came in with cavalry, bayonets, and tear gas and burned it down, going further than Hoover had ordered. Two veterans had already died in the earlier police clashes, and the books disagree on the toll after that (two to several, depending on the source). The shelters went up in smoke in the newsreels.
+Marcus: [dramatic] He ordered the camp cleared. The Army chief of staff, Douglas MacArthur, came in with cavalry, bayonets, and tear gas and burned it down, going further than Hoover had ordered. Two veterans had already died in the earlier police clashes, and the books disagree on the toll after that (two to several, depending on the source). The shelters went up in smoke in the newsreels.
 
-Maya: Against their own veterans. I don't even have a word for that.
+Maya: [serious tone] Against their own veterans. [sigh] I don't even have a word for that.
 
-Maya: Summer 1932: the camp is still smoldering on the newsreels.
+Maya: [dramatic] Summer 1932: the camp is still smoldering on the newsreels.
 
-Maya: Four boxes, let's land them. The crash: Black Thursday and Black Tuesday, October 1929, margin buying at ten percent down, and the margin-call spiral that turned a dip into a panic. The crash was the trigger; the causes were loaded all through the twenties.
+Maya: [conversational] Four boxes, let's land them. The crash: Black Thursday and Black Tuesday, October 1929, margin buying at ten percent down, and the margin-call spiral that turned a dip into a panic. The crash was the trigger; the causes were loaded all through the twenties.
 
-Marcus: Tight.
+Marcus: [conversational] Tight.
 
-Maya: The weak foundations: overproduction, wages lagging productivity, the farm depression running since the early twenties, fragile banks with no deposit insurance, and the top one percent pulling away.
+Maya: [conversational] The weak foundations: overproduction, wages lagging productivity, the farm depression running since the early twenties, fragile banks with no deposit insurance, and the top one percent pulling away.
 
-Marcus: Keep going.
+Marcus: [playful] Keep going.
 
-Maya: The policy mistakes: on the usual telling, the Fed raised rates in '28 and '29, then let the money supply shrink by... a third? Was that right, a third?
+Maya: [sheepish] The policy mistakes: on the usual telling, the Fed raised rates in '28 and '29, then let the money supply shrink by... a third? Was that right, a third?
 
-Marcus: Roughly a third. The monetarist number.
+Marcus: [conversational] Roughly a third. The monetarist number.
 
-Maya: Roughly a third. Then Smoot-Hawley, which made a downturn global; the gold standard tying everyone's hands; and the war-debt circle snapping when American loans stopped.
+Maya: [conversational] Roughly a third. Then Smoot-Hawley, which made a downturn global; the gold standard tying everyone's hands; and the war-debt circle snapping when American loans stopped.
 
-Maya: And Hoover's answer: rugged individualism, the RFC for banks, no direct relief for people, and the Bonus Army, which finished him politically.
+Maya: [conversational] And Hoover's answer: rugged individualism, the RFC for banks, no direct relief for people, and the Bonus Army, which finished him politically.
 
-Marcus: Trigger, fuel, bad policy, and a president who wouldn't bend.
+Marcus: [confident tone] Trigger, fuel, bad policy, and a president who wouldn't bend.
 
 Maya: Three questions, AP-shaped. Say your answer before I give it. First: a historian writes that the Fed didn't just fail to stop the Depression, it made it worse. What's the strongest evidence for that charge?
 
@@ -177,12 +177,12 @@ Maya: One more, fast. Hoover created the RFC but refused direct federal relief. 
 
 Maya: Rugged individualism: the government would help banks, but never people directly. And the voters decided that was the wrong line.
 
-Maya: Next time: 1932. Hoover's out, Roosevelt's in, and one of the biggest answers the federal government ever gave: the New Deal.
+Maya: [intrigued] Next time: 1932. Hoover's out, Roosevelt's in, and one of the biggest answers the federal government ever gave: the New Deal.
 
 [production note: held breath — do not rush it]
-Marcus: The crash pulled the trigger — but the twenties loaded the gun.
+Marcus: [professional broadcast tone] The crash pulled the trigger — but the twenties loaded the gun.
 
-Maya: Check your boxes.
+Maya: [confident tone] Check your boxes.
 
 ---
 

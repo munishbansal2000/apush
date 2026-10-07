@@ -27,6 +27,10 @@ CURRICULUM_JARGON = re.compile(
 )
 EXAM_CLICHE = re.compile(r"\bexam (counts|loves)\b", re.IGNORECASE)
 PAUSE_TAG = re.compile(r"\[[^\]\n]*pause[^\]\n]*\]", re.IGNORECASE)
+# 2026-10-07: Fish direction tags ([confident tone], [chuckle], …) are render
+# instructions, not spoken words. Strip them from turn bodies at parse time so
+# no gate counts, matches, or sentence-splits on tag text. Pause tags are a
+# subset — G7 still reads them from the raw text, not from parsed bodies.
 # Emphatic negation (were not, was not) and uncontractible forms
 # (it was, that was) are exempt -- only flag likely stiffness.
 UNCONTRACTED = re.compile(
@@ -171,7 +175,9 @@ def parse(path):
         m = SPEAKER.match(line)
         if m and m.group(1).upper() not in NON_SPEAKER:
             last_spk = m.group(1)
-            spoken.append((i, m.group(1), m.group(2).strip()))
+            body = re.sub(r"\[[^\]\n]+\]", "", m.group(2)).strip()
+            body = re.sub(r"\s+", " ", body)
+            spoken.append((i, m.group(1), body))
         elif (line.strip() and last_spk
               and not line.strip().startswith(("[", "**", "---", "- "))):
             # Continuation paragraph of the current speaker's turn.
@@ -179,7 +185,10 @@ def parse(path):
             # they were skipped entirely — silently undercounting words and
             # dodging every gate (incl. G12). Bracketed pause-tag lines,
             # markdown bullets/rules/headers, and the Sources footer stay out.
-            spoken.append((i, last_spk, line.strip()))
+            body = re.sub(r"\[[^\]\n]+\]", "", line.strip())
+            body = re.sub(r"\s+", " ", body).strip()
+            if body:
+                spoken.append((i, last_spk, body))
     return text, "\n".join(notes), spoken
 
 

@@ -7,125 +7,125 @@
 
 ---
 
-Maya: Last time: the soldiers came home, the war's over, and America lets loose — cars, jazz, speakeasies, and trouble underneath. This is the decade that partied like the bill would never come. Four boxes: normalcy and the Red Scare, the consumer boom, the culture wars, and the cracks under the boom. Circle the ones you couldn't explain right now. Twelve minutes.
+Maya: [professional broadcast tone] Last time: the soldiers came home, the war's over, and America lets loose — cars, jazz, speakeasies, and trouble underneath. This is the decade that partied like the bill would never come. Four boxes: normalcy and the Red Scare, the consumer boom, the culture wars, and the cracks under the boom. Circle the ones you couldn't explain right now. Twelve minutes.
 
-Marcus: Start in 1920. The soldiers are home, Wilson's crusade is dead in the Senate, and Warren Harding runs for president promising a "return to normalcy."
+Marcus: [measured] Start in 1920. The soldiers are home, Wilson's crusade is dead in the Senate, and Warren Harding runs for president promising a "return to normalcy."
 
-Maya: Normalcy isn't even a real word, is it?
+Maya: [playful] Normalcy isn't even a real word, is it?
 
-Marcus: Not quite, but it landed: sixty-one percent of the vote, in the first national election where women could cast ballots. His pitch was simple: shrink the government, let business breathe, the experiments are over.
+Marcus: [conversational] Not quite, but it landed: sixty-one percent of the vote, in the first national election where women could cast ballots. His pitch was simple: shrink the government, let business breathe, the experiments are over.
 
-Maya: And the economy cooperated?
+Maya: [curious, inquisitive tone] And the economy cooperated?
 
-Marcus: Harding cut federal spending and taxes, and unemployment fell from twelve percent to about three. The boom had its launchpad. But 1920 had a second face, and it was frightened.
+Marcus: [measured] Harding cut federal spending and taxes, and unemployment fell from twelve percent to about three. The boom had its launchpad. But 1920 had a second face, and it was frightened.
 
-Maya: The Red Scare. 1919, 1920.
+Maya: [serious tone] The Red Scare. 1919, 1920.
 
-Marcus: A strike wave in 1919, a bomb on Wall Street in 1920 that killed thirty-three people, and across the ocean the Bolsheviks building the Comintern to export revolution. Attorney General A. Mitchell Palmer decided the revolution was coming here next.
+Marcus: [serious tone] A strike wave in 1919, a bomb on Wall Street in 1920 that killed thirty-three people, and across the ocean the Bolsheviks building the Comintern to export revolution. Attorney General A. Mitchell Palmer decided the revolution was coming here next.
 
-Maya: And he started raiding people's homes.
+Maya: [incredulous] And he started raiding people's homes.
 
-Marcus: Thousands of immigrants arrested, hundreds deported. Emma Goldman was put on a ship in December 1919. Palmer even predicted a radical uprising for May Day, 1920. May Day came. Nothing happened.
+Marcus: [serious tone] Thousands of immigrants arrested, hundreds deported. Emma Goldman was put on a ship in December 1919. Palmer even predicted a radical uprising for May Day, 1920. May Day came. Nothing happened.
 
-Maya: Oof. So the scare just fizzled?
+Maya: [curious, inquisitive tone] Oof. So the scare just fizzled?
 
-Marcus: His credibility did. The fear didn't. In 1921, two Italian immigrant anarchists, Sacco and Vanzetti, were convicted of robbing a shoe factory and murder on thin evidence before a hostile judge. They were executed in 1927 while protests spread.
+Marcus: [serious tone] His credibility did. The fear didn't. In 1921, two Italian immigrant anarchists, Sacco and Vanzetti, were convicted of robbing a shoe factory and murder on thin evidence before a hostile judge. They were executed in 1927 while protests spread.
 
 Maya: Your turn. Palmer raided homes without warrants and deported hundreds, and most Americans shrugged. What would have to be true for a free country to go along with that? Talk it out.
 [8-second pause]
 Marcus: If you believed the revolution was already here, warrants felt like paperwork. Fear outran the Constitution, and it outlived Palmer himself.
 
-Maya: One trap to dodge here: don't mush this with the Sedition Act. Different years, different targets — wartime speech versus postwar radicals. Palmer's raids ran 1919 to 1920.
+Maya: [firm] One trap to dodge here: don't mush this with the Sedition Act. Different years, different targets — wartime speech versus postwar radicals. Palmer's raids ran 1919 to 1920.
 
-Marcus: Harding died in August 1923, and Calvin Coolidge stepped in, the man who'd broken the 1919 Boston police strike by saying there could be no right to strike against public safety. He scrubbed Harding's scandals, Teapot Dome included, where the interior secretary leased oil lands for kickbacks. In 1924 Coolidge won easily on the decade's simplest summary: the business of the United States is business.
+Marcus: [measured] Harding died in August 1923, and Calvin Coolidge stepped in, the man who'd broken the 1919 Boston police strike by saying there could be no right to strike against public safety. He scrubbed Harding's scandals, Teapot Dome included, where the interior secretary leased oil lands for kickbacks. In 1924 Coolidge won easily on the decade's simplest summary: the business of the United States is business.
 
-Maya: "I do not choose to run."
+Maya: [deadpan] "I do not choose to run."
 
-Marcus: His words, 1928. He bowed out, and the field cleared for Herbert Hoover.
+Marcus: [conversational] His words, 1928. He bowed out, and the field cleared for Herbert Hoover.
 
-Maya: Okay, box two. The fun one. The boom.
+Maya: [speaking with mild excitement] Okay, box two. The fun one. The boom.
 
-Marcus: Start with a car rolling off the line every twenty-four seconds. That was 1925. Ford's moving assembly line, running since 1913, turned car-building into small repeated tasks. His trick wasn't inventing the car. It was making it cheap: by 1924 a Ford cost two to three months' wages.
+Marcus: [energetic] Start with a car rolling off the line every twenty-four seconds. That was 1925. Ford's moving assembly line, running since 1913, turned car-building into small repeated tasks. His trick wasn't inventing the car. It was making it cheap: by 1924 a Ford cost two to three months' wages.
 
-Maya: My uncle restores old Fords in his garage. He says you can still smell the oil on a '27.
+Maya: [warm tone] My uncle restores old Fords in his garage. He says you can still smell the oil on a '27.
 
-Marcus: By the end of the twenties, around twenty-three million cars were on American roads, and the auto industry dragged steel, oil, and glass along with it.
+Marcus: [measured] By the end of the twenties, around twenty-three million cars were on American roads, and the auto industry dragged steel, oil, and glass along with it.
 
-Maya: And radios, refrigerators, washing machines. Everybody buying everything.
+Maya: [conversational] And radios, refrigerators, washing machines. Everybody buying everything.
 
-Marcus: Buying it on credit, mostly: the installment plan stretched payments over three to four years, and by 1928 two-thirds of all cars were bought that way. In 1925 Bruce Barton wrote a bestseller pitching Jesus Christ as a super-salesman.
+Marcus: [measured] Buying it on credit, mostly: the installment plan stretched payments over three to four years, and by 1928 two-thirds of all cars were bought that way. In 1925 Bruce Barton wrote a bestseller pitching Jesus Christ as a super-salesman.
 
-Maya: You're kidding. Jesus, the ad man?
+Maya: [incredulous] You're kidding. Jesus, the ad man? [chuckle]
 
-Marcus: The Man Nobody Knows. Then the market: ordinary people buying stocks on margin, a small percentage down and the rest borrowed. While prices rise, it feels like free money.
+Marcus: [dry] The Man Nobody Knows. Then the market: ordinary people buying stocks on margin, a small percentage down and the rest borrowed. While prices rise, it feels like free money.
 
-Maya: Which works until it doesn't.
+Maya: [ominous] Which works until it doesn't.
 
-Marcus: It never does. Radio went from a novelty to a household fixture, The Jazz Singer brought sound to the movies in 1927, and the decade minted the mass-media celebrity: Ruth's sixty home runs, Lindbergh's solo flight to Paris, both in 1927.
+Marcus: [conversational] It never does. Radio went from a novelty to a household fixture, The Jazz Singer brought sound to the movies in 1927, and the decade minted the mass-media celebrity: Ruth's sixty home runs, Lindbergh's solo flight to Paris, both in 1927.
 
 Maya: Your turn. It's 1927 and you run a factory. Warehouses are filling because Americans can't buy as fast as you build. What do you do? Think like the owner. Talk it out.
 [8-second pause]
 Marcus: You slow the line. That's the call manufacturers started making before the decade even ended. The boom was already eating itself. Hold that thought for box four.
 
-Maya: Two down. The consumer boom. Exam tip: if a prompt asks what changed the 1920s economy, name the mechanisms, the assembly line, installment credit, mass advertising, not just "cars got popular." Common mistake: don't write that everyone got rich. Most wages barely moved, and the spending was borrowed.
+Maya: [confident tone] Two down. The consumer boom. Exam tip: if a prompt asks what changed the 1920s economy, name the mechanisms, the assembly line, installment credit, mass advertising, not just "cars got popular." Common mistake: don't write that everyone got rich. Most wages barely moved, and the spending was borrowed.
 
-Marcus: Box three is where the party met the bouncers. The new culture first: flappers bobbing their hair and smoking in public, jazz everywhere, Hemingway and Fitzgerald writing the Lost Generation's dissatisfaction. And in Harlem —
+Marcus: [dramatic] Box three is where the party met the bouncers. The new culture first: flappers bobbing their hair and smoking in public, jazz everywhere, Hemingway and Fitzgerald writing the Lost Generation's dissatisfaction. And in Harlem —
 
-Maya: The Harlem Renaissance. Langston Hughes, Zora Neale Hurston.
+Maya: [warm tone] The Harlem Renaissance. Langston Hughes, Zora Neale Hurston.
 
-Marcus: Plus McKay, Cullen, Ellington, Armstrong, Bessie Smith. A literary, artistic, and musical movement with one goal: pride in Black culture, a new identity built in the open. While white America drew lines around who counted, Harlem drew a bigger circle.
+Marcus: [speaking with mild excitement] Plus McKay, Cullen, Ellington, Armstrong, Bessie Smith. A literary, artistic, and musical movement with one goal: pride in Black culture, a new identity built in the open. While white America drew lines around who counted, Harlem drew a bigger circle.
 
-Maya: Cigarette companies literally hired women to smoke in the Easter Parade. "Torches of Freedom," 1929. A PR man turned smoking into feminism.
+Maya: [incredulous] Cigarette companies literally hired women to smoke in the Easter Parade. "Torches of Freedom," 1929. A PR man turned smoking into feminism.
 
-Marcus: Edward Bernays. And it worked. Now the bouncers. Prohibition: the 18th Amendment, ratified in 1919, in effect in 1920. No making, selling, or moving liquor. Drinking itself was never banned.
+Marcus: [measured] Edward Bernays. And it worked. Now the bouncers. Prohibition: the 18th Amendment, ratified in 1919, in effect in 1920. No making, selling, or moving liquor. Drinking itself was never banned.
 
-Maya: Wait, really? I thought Prohibition meant no drinking.
+Maya: [sheepish] Wait, really? I thought Prohibition meant no drinking.
 
-Marcus: Common mix-up, and a good one to kill now. The law banned the business of alcohol, not the glass in your hand. Drinking dipped, then climbed back near pre-Prohibition levels by 1925. What grew instead was the black market: bootleggers, speakeasies, Capone's Chicago. In 1933 the 21st Amendment repealed it, the only amendment ever repealed.
+Marcus: [firm] Common mix-up, and a good one to kill now. The law banned the business of alcohol, not the glass in your hand. Drinking dipped, then climbed back near pre-Prohibition levels by 1925. What grew instead was the black market: bootleggers, speakeasies, Capone's Chicago. In 1933 the 21st Amendment repealed it, the only amendment ever repealed.
 
-Maya: Then immigration. The quotas.
+Maya: [serious tone] Then immigration. The quotas.
 
-Marcus: 1921: new arrivals capped at three percent of their nationality's 1910 numbers. 1924: tightened to two percent, with the baseline moved back to 1890. That year is the whole trick: before 1890, most immigrants came from northern and western Europe, so the law froze the country at the old mix. Asian immigration was halted outright.
+Marcus: [measured] 1921: new arrivals capped at three percent of their nationality's 1910 numbers. 1924: tightened to two percent, with the baseline moved back to 1890. That year is the whole trick: before 1890, most immigrants came from northern and western Europe, so the law froze the country at the old mix. Asian immigration was halted outright.
 
-Maya: Exam tip: if a prompt asks why southern and eastern European immigration collapsed, the answer isn't "quotas." It's the 1890 baseline. The census year is the discrimination.
+Maya: [confident tone] Exam tip: if a prompt asks why southern and eastern European immigration collapsed, the answer isn't "quotas." It's the 1890 baseline. The census year is the discrimination.
 
-Marcus: Exactly. The street-level version of the same fear: the second Ku Klux Klan, born in 1915, claiming three million members by 1925, their own count, so read it with salt. Devoted to white supremacy and "100 percent Americanism," aimed at Black Americans, Catholics, Jews, and immigrants. In 1925 they paraded down Pennsylvania Avenue, out in the open.
+Marcus: [serious tone] Exactly. The street-level version of the same fear: the second Ku Klux Klan, born in 1915, claiming three million members by 1925, their own count, so read it with salt. Devoted to white supremacy and "100 percent Americanism," aimed at Black Americans, Catholics, Jews, and immigrants. In 1925 they paraded down Pennsylvania Avenue, out in the open.
 
-Maya: I don't buy the three million. It's their number.
+Maya: [incredulous] I don't buy the three million. It's their number.
 
-Marcus: Good instinct, the book flags it as their estimate. But even half that is a mass movement, not a fringe. Last bouncer: Dayton, Tennessee, 1925. John Scopes, a biology teacher, arrested under the Butler Act, the state's ban on teaching evolution. Darrow defended him, Bryan prosecuted. Guilty, fined a hundred dollars. The conviction got thrown out later on a technicality, and Bryan died days after the trial ended.
+Marcus: [conversational] Good instinct, the book flags it as their estimate. But even half that is a mass movement, not a fringe. Last bouncer: Dayton, Tennessee, 1925. John Scopes, a biology teacher, arrested under the Butler Act, the state's ban on teaching evolution. Darrow defended him, Bryan prosecuted. Guilty, fined a hundred dollars. The conviction got thrown out later on a technicality, and Bryan died days after the trial ended.
 
-Maya: And don't shrink the second Klan to an anti-Black group. Its enemies list was Black Americans, Catholics, Jews, and immigrants — the whole "100 percent Americanism" package.
+Maya: [firm] And don't shrink the second Klan to an anti-Black group. Its enemies list was Black Americans, Catholics, Jews, and immigrants — the whole "100 percent Americanism" package.
 
-Marcus: Box four. The cracks. Start on the farm. During the war, farmers planted more acres to feed the world. Then Europe recovered, and American farmers didn't cut back: mechanization, more acres, falling prices, a debt loop through the whole decade.
+Marcus: [ominous] Box four. The cracks. Start on the farm. During the war, farmers planted more acres to feed the world. Then Europe recovered, and American farmers didn't cut back: mechanization, more acres, falling prices, a debt loop through the whole decade.
 
-Maya: While the cities were buying radios on credit.
+Maya: [dry] While the cities were buying radios on credit.
 
-Marcus: The factories had their own crack: by 1927, warehouses were filling faster than Americans could buy. A weak labor movement meant wages barely moved, employers ran the "American Plan" against unions, courts handed out injunctions, and the Red Scare had smeared union men as radicals.
+Marcus: [measured] The factories had their own crack: by 1927, warehouses were filling faster than Americans could buy. A weak labor movement meant wages barely moved, employers ran the "American Plan" against unions, courts handed out injunctions, and the Red Scare had smeared union men as radicals.
 
-Maya: So the people who were supposed to buy the stuff couldn't afford the stuff.
+Maya: [thoughtful tone] So the people who were supposed to buy the stuff couldn't afford the stuff.
 
-Marcus: There's the loop. The money piled up at the top: the top one percent's income rose nearly three-quarters, the bottom ninety percent's less than ten. Then the speculation, stocks bought on margin, a small slice down and the rest borrowed.
+Marcus: [confident tone] There's the loop. The money piled up at the top: the top one percent's income rose nearly three-quarters, the bottom ninety percent's less than ten. Then the speculation, stocks bought on margin, a small slice down and the rest borrowed.
 
-Maya: Common mistake on this one: keeping the farm crisis and the factory glut in separate boxes. Same loop — producing more than buyers could afford.
+Maya: [firm] Common mistake on this one: keeping the farm crisis and the factory glut in separate boxes. Same loop — producing more than buyers could afford.
 
-Maya: Hoover wins in 1928, right? Landslide?
+Maya: [curious, inquisitive tone] Hoover wins in 1928, right? Landslide?
 
-Marcus: Landslide. Al Smith, Catholic, anti-Prohibition, Tammany Hall, lost badly. Hoover was the boom's own man: wartime food relief, then Commerce Secretary under two presidents. He campaigned on the Republican record and "American individualism." Nobody asked whether the foundations could hold.
+Marcus: [conversational] Landslide. Al Smith, Catholic, anti-Prohibition, Tammany Hall, lost badly. Hoover was the boom's own man: wartime food relief, then Commerce Secretary under two presidents. He campaigned on the Republican record and "American individualism." Nobody asked whether the foundations could hold.
 
-Maya: The party was real. The floorboards were rotten. Four boxes, let's land them. One: normalcy and the Red Scare. Harding wins 1920, sixty-one percent, promising a return to normalcy, women voting nationally for the first time. Then Palmer's raids, 1919 to 1920: thousands arrested, hundreds deported, the scare starting to collapse when his May Day uprising never happened. Sacco and Vanzetti convicted in 1921, executed in 1927.
+Maya: [conversational] The party was real. The floorboards were rotten. Four boxes, let's land them. One: normalcy and the Red Scare. Harding wins 1920, sixty-one percent, promising a return to normalcy, women voting nationally for the first time. Then Palmer's raids, 1919 to 1920: thousands arrested, hundreds deported, the scare starting to collapse when his May Day uprising never happened. Sacco and Vanzetti convicted in 1921, executed in 1927.
 
-Marcus: And Coolidge after Harding died, "the business of the United States is business."
+Marcus: [conversational] And Coolidge after Harding died, "the business of the United States is business."
 
-Maya: Two: the consumer boom. A car every twenty-four seconds, twenty-three million cars by decade's end, two-thirds bought on credit by 1928. Barton, margin buying. That was box two, and the Coolidge line belongs to box one, right?
+Maya: [conversational] Two: the consumer boom. A car every twenty-four seconds, twenty-three million cars by decade's end, two-thirds bought on credit by 1928. Barton, margin buying. That was box two, and the Coolidge line belongs to box one, right?
 
-Marcus: You've got it. Coolidge is box one's politics; the boom's numbers are box two's.
+Marcus: [warm tone] You've got it. Coolidge is box one's politics; the boom's numbers are box two's.
 
-Maya: Three: the culture wars. The Harlem Renaissance, Hughes, Hurston, Ellington, pride in Black culture while the backlash drew its lines. Prohibition: the business of booze banned, not the drink, repealed in '33, the only amendment ever repealed. Immigration: the 1921 and 1924 acts, the 1890 trick, Asia shut out. The second Klan, Pennsylvania Avenue in 1925. Scopes in Dayton, guilty, fined a hundred.
+Maya: [conversational] Three: the culture wars. The Harlem Renaissance, Hughes, Hurston, Ellington, pride in Black culture while the backlash drew its lines. Prohibition: the business of booze banned, not the drink, repealed in '33, the only amendment ever repealed. Immigration: the 1921 and 1924 acts, the 1890 trick, Asia shut out. The second Klan, Pennsylvania Avenue in 1925. Scopes in Dayton, guilty, fined a hundred.
 
-Marcus: And four?
+Marcus: [curious, inquisitive tone] And four?
 
-Maya: Four: the cracks. Farmers in a debt loop, factories outproducing buyers by 1927, wages flat while the top pulled away, stocks bought on margin. Hoover inherits all of it in 1928. Checking that one.
+Maya: [conversational] Four: the cracks. Farmers in a debt loop, factories outproducing buyers by 1927, wages flat while the top pulled away, stocks bought on margin. Hoover inherits all of it in 1928. Checking that one.
 
 Maya: Three questions, AP-shaped. Say your answer before I give it. First: what made the Red Scare possible, why did ordinary Americans go along with the raids?
 [15-second pause]
@@ -142,12 +142,12 @@ Maya: The mechanism. The 1924 act didn't just cut numbers, it moved the baseline
 Maya: One more, fast. Why is "the 1920s were prosperous" a dangerous sentence on the exam?
 Maya: Because farmers and most workers lived a different decade. Name who's left out, or the sentence is a lie.
 
-Maya: Next time: October 1929. The market crashes, but the crash was only the trigger. The loaded gun was built all through the twenties: the farm debt, the flat wages, the speculation. What actually caused the Great Depression.
+Maya: [intrigued] Next time: October 1929. The market crashes, but the crash was only the trigger. The loaded gun was built all through the twenties: the farm debt, the flat wages, the speculation. What actually caused the Great Depression.
 
-Maya: Check your boxes.
+Maya: [confident tone] Check your boxes.
 
 [production note: held breath — do not rush it]
-Marcus: They bought the cars, the radios, the good time — all on credit.
+Marcus: [professional broadcast tone] They bought the cars, the radios, the good time — all on credit.
 
 ---
 

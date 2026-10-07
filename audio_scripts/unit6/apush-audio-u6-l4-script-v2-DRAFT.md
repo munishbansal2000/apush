@@ -8,115 +8,115 @@
 
 ---
 
-Maya: Last time: the home front went all-in — bond drives, rationing, Washington running the economy. Now the guns stop, and the peace is the hard part. Wilson sails to Paris with fourteen points for a perfect peace, and comes home to a Senate that says no. Four boxes: the Fourteen Points, the Treaty of Versailles, the League fight, and the verdict — too harsh, too soft, or both. Circle the ones you couldn't explain right now. Twelve minutes.
+Maya: [professional broadcast tone] Last time: the home front went all-in — bond drives, rationing, Washington running the economy. Now the guns stop, and the peace is the hard part. Wilson sails to Paris with fourteen points for a perfect peace, and comes home to a Senate that says no. Four boxes: the Fourteen Points, the Treaty of Versailles, the League fight, and the verdict — too harsh, too soft, or both. Circle the ones you couldn't explain right now. Twelve minutes.
 
-Marcus: January 1918. The war is still raging, and Wilson goes before Congress with fourteen points, his plan for the peace. No secret treaties. Free seas. Lower trade barriers. Fewer weapons. A fair deal on colonies. Redraw Europe around self-determination. And point fourteen: a general association of nations. The League.
+Marcus: [measured] January 1918. The war is still raging, and Wilson goes before Congress with fourteen points, his plan for the peace. No secret treaties. Free seas. Lower trade barriers. Fewer weapons. A fair deal on colonies. Redraw Europe around self-determination. And point fourteen: a general association of nations. The League.
 
-Maya: So this isn't a treaty, it's a pitch. He's telling the world what America's fighting for, the war aims, like we talked about two episodes back.
+Maya: [thoughtful tone] So this isn't a treaty, it's a pitch. He's telling the world what America's fighting for, the war aims, like we talked about two episodes back.
 
-Marcus: Exactly. And the Allies signed onto the points as their war aims too. So when Wilson sails for Paris a year later, he's carrying a promise everybody in Europe heard him make.
+Marcus: [conversational] Exactly. And the Allies signed onto the points as their war aims too. So when Wilson sails for Paris a year later, he's carrying a promise everybody in Europe heard him make.
 
-Maya: Exam brain. Don't mush the plan and the punishment together. Fourteen Points: January 1918, Wilson's wish list, announced while the fighting is still on. Versailles: June 1919, the actual treaty, mostly written by the French and British. Two different documents, two different years.
+Maya: [firm] Exam brain. Don't mush the plan and the punishment together. Fourteen Points: January 1918, Wilson's wish list, announced while the fighting is still on. Versailles: June 1919, the actual treaty, mostly written by the French and British. Two different documents, two different years.
 
-Marcus: Classic mistake: writing that the Fourteen Points became the treaty. Most of them died in Paris.
+Marcus: [stern] Classic mistake: writing that the Fourteen Points became the treaty. Most of them died in Paris.
 
-Maya: Fourteen Points: checking that one. War aims, not the treaty.
+Maya: [confident tone] Fourteen Points: checking that one. War aims, not the treaty.
 
-Marcus: December 1918. Wilson sails for France. No sitting president had ever crossed the ocean for diplomacy before. He spends seven months in Paris arguing with the three other men who run the conference. The Big Four: Wilson, Clemenceau of France, Lloyd George of Britain, and Orlando of Italy.
+Marcus: [dramatic] December 1918. Wilson sails for France. No sitting president had ever crossed the ocean for diplomacy before. He spends seven months in Paris arguing with the three other men who run the conference. The Big Four: Wilson, Clemenceau of France, Lloyd George of Britain, and Orlando of Italy.
 
-Maya: I've been to Versailles, tenth-grade school trip. The Hall of Mirrors is absurd. Absolute power, in mirrors. And they signed the peace treaty in that room.
+Maya: [playful] I've been to Versailles, tenth-grade school trip. The Hall of Mirrors is absurd. Absolute power, in mirrors. And they signed the peace treaty in that room.
 
-Marcus: They picked it on purpose. Now the collision. Wilson walks in believing the war was fought for his fourteen points. The other three fought it for survival, and they want payment. Clemenceau wants Germany broken so it can never march into France again. Lloyd George's voters want Germany to pay for the war. Orlando wants the territory Italy was promised in secret wartime deals.
+Marcus: [measured] They picked it on purpose. Now the collision. Wilson walks in believing the war was fought for his fourteen points. The other three fought it for survival, and they want payment. Clemenceau wants Germany broken so it can never march into France again. Lloyd George's voters want Germany to pay for the war. Orlando wants the territory Italy was promised in secret wartime deals.
 
-Maya: Secret deals, which point one says shouldn't exist.
+Maya: [dry] Secret deals, which point one says shouldn't exist.
 
-Marcus: The whole conference runs on contradictions like that. Wilson starts trading points away to keep the one thing he won't give up, the League, figuring it can fix everything else later.
+Marcus: [thoughtful tone] The whole conference runs on contradictions like that. Wilson starts trading points away to keep the one thing he won't give up, the League, figuring it can fix everything else later.
 
-Maya: Fourteen points walk into Paris. How many walk out?
+Maya: [playful] Fourteen points walk into Paris. How many walk out?
 
-Marcus: June 28, 1919. The treaty is signed in the Hall of Mirrors. The League's covenant goes in first, literally part one of the treaty. Then the punishment. Article 231, the war guilt clause: Germany accepts responsibility for the war. On that legal hook hangs reparations.
+Marcus: [dramatic] June 28, 1919. The treaty is signed in the Hall of Mirrors. The League's covenant goes in first, literally part one of the treaty. Then the punishment. Article 231, the war guilt clause: Germany accepts responsibility for the war. On that legal hook hangs reparations.
 
-Maya: Set at 132 billion gold marks.
+Maya: [confident tone] Set at 132 billion gold marks.
 
-Marcus: Not quite, and that's the trap. The treaty never names a number. It creates the obligation and leaves the figure blank. A reparations commission fills it in later: 132 billion gold marks, in 1921. Write it as a rule: the treaty creates the obligation, the commission names the number. Any answer choice that puts 132 billion inside the 1919 treaty is wrong.
+Marcus: [firm] Not quite, and that's the trap. The treaty never names a number. It creates the obligation and leaves the figure blank. A reparations commission fills it in later: 132 billion gold marks, in 1921. Write it as a rule: the treaty creates the obligation, the commission names the number. Any answer choice that puts 132 billion inside the 1919 treaty is wrong.
 
-Maya: Going straight into my notes. Treaty sets the guilt in 1919; the commission sets the bill in 1921.
+Maya: [sheepish] Going straight into my notes. Treaty sets the guilt in 1919; the commission sets the bill in 1921.
 
-Marcus: Then the rest of the punishment. German army capped at 100,000. No draft, no air force, navy gutted. The Rhineland demilitarized. Alsace-Lorraine goes back to France. In the east, land goes to the new Poland, splitting Germany in two. The overseas colonies become League mandates. Roughly a tenth of Germany's European territory, gone.
+Marcus: [measured] Then the rest of the punishment. German army capped at 100,000. No draft, no air force, navy gutted. The Rhineland demilitarized. Alsace-Lorraine goes back to France. In the east, land goes to the new Poland, splitting Germany in two. The overseas colonies become League mandates. Roughly a tenth of Germany's European territory, gone.
 
-Maya: And Germany's in the room for this?
+Maya: [incredulous] And Germany's in the room for this?
 
-Marcus: Germany's not in the room. The German delegation is handed the treaty and told to sign or face an invasion. The Germans have a word for it: a Diktat. A dictated peace.
+Marcus: [serious tone] Germany's not in the room. The German delegation is handed the treaty and told to sign or face an invasion. The Germans have a word for it: a Diktat. A dictated peace.
 
-Maya: Common mistake: don't write that Germany negotiated Versailles. Germany got the terms read to it.
+Maya: [firm] Common mistake: don't write that Germany negotiated Versailles. Germany got the terms read to it.
 
 Marcus: Your turn. Germany loses territory, pays for the war, gets its army gutted. Next war: more likely or less likely? Eight seconds, no fence-sitting.
 [8-second pause]
 Maya: More likely. Humiliation plus a wrecked economy is a recruiting poster for extremists.
 
-Marcus: The harsh-peace argument in one line.
+Marcus: [confident tone] The harsh-peace argument in one line.
 
-Maya: Filed for the verdict — we're coming back to it. The treaty gets signed. Then it comes home, and that's where it dies? The Senate? Two-thirds to ratify, right?
+Maya: [conversational] Filed for the verdict — we're coming back to it. The treaty gets signed. Then it comes home, and that's where it dies? The Senate? Two-thirds to ratify, right?
 
-Marcus: Two-thirds. And the 1919 Senate is full of men who hate this treaty for different reasons. The League is the flashpoint, specifically Article 10 of the covenant. Every member promises to respect and preserve the others' territory. Sounds noble, until you ask who does the preserving.
+Marcus: [measured] Two-thirds. And the 1919 Senate is full of men who hate this treaty for different reasons. The League is the flashpoint, specifically Article 10 of the covenant. Every member promises to respect and preserve the others' territory. Sounds noble, until you ask who does the preserving.
 
-Maya: That sounds like NATO's Article 5. An attack on one is an attack on all.
+Maya: [curious, inquisitive tone] That sounds like NATO's Article 5. An attack on one is an attack on all.
 
-Marcus: Same DNA, yes. And that's exactly what scared Henry Cabot Lodge. Massachusetts senator, runs the Foreign Relations Committee. Lodge leads the reservationists. They'd take the League with conditions: protect the Monroe Doctrine. And above all: only Congress can send Americans to fight for the League. He reads Article 10 as a blank check for wars Congress never declared.
+Marcus: [serious tone] Same DNA, yes. And that's exactly what scared Henry Cabot Lodge. Massachusetts senator, runs the Foreign Relations Committee. Lodge leads the reservationists. They'd take the League with conditions: protect the Monroe Doctrine. And above all: only Congress can send Americans to fight for the League. He reads Article 10 as a blank check for wars Congress never declared.
 
-Maya: And the other camp?
+Maya: [curious, inquisitive tone] And the other camp?
 
-Marcus: The irreconcilables. About a dozen senators, led by William Borah of Idaho. No reservations could fix it. They oppose the League in any form. To them it's a surrender of American independence, full stop.
+Marcus: [conversational] The irreconcilables. About a dozen senators, led by William Borah of Idaho. No reservations could fix it. They oppose the League in any form. To them it's a surrender of American independence, full stop.
 
-Maya: Got it. Edits versus dead. Writing that distinction down before I mix them up.
+Maya: [conversational] Got it. Edits versus dead. Writing that distinction down before I mix them up.
 
 Marcus: Your turn. Article 10 says members defend each other's territory. The Constitution says only Congress declares war. You're a senator in 1919. Do you sign? Eight seconds.
 [8-second pause]
 Maya: I don't. Because I'd be promising wars that a future Congress never voted for. My grandkids' wars, decided in Geneva.
 
-Marcus: Lodge's whole case, right there.
+Marcus: [confident tone] Lodge's whole case, right there.
 
-Maya: So Lodge is offering a deal, reservations, conditions, Congress keeps the war power. Why doesn't Wilson take it?
+Maya: [curious, inquisitive tone] So Lodge is offering a deal, reservations, conditions, Congress keeps the war power. Why doesn't Wilson take it?
 
-Marcus: The tragedy of this story is that the deal was real. Lodge said he'd deliver ratification with his reservations on it. Even some European leaders said they'd take the treaty with reservations over no treaty at all. But Wilson treated any reservation as a betrayal of the whole vision. Whether he could have closed it, historians argue about that, and plenty of them say yes.
+Marcus: [thoughtful tone] The tragedy of this story is that the deal was real. Lodge said he'd deliver ratification with his reservations on it. Even some European leaders said they'd take the treaty with reservations over no treaty at all. But Wilson treated any reservation as a betrayal of the whole vision. Whether he could have closed it, historians argue about that, and plenty of them say yes.
 
-Maya: So instead of dealing, he goes to the people.
+Maya: [conversational] So instead of dealing, he goes to the people.
 
-Marcus: September 1919. Thirty-nine speeches in three weeks, cross-country by rail. The strain breaks him. He collapses on September 25, the tour is canceled, and on October 2 a massive stroke leaves him partly paralyzed, partly blind in one eye, his judgment impaired. His wife Edith controls who gets in to see him. He never really functions as president again.
+Marcus: [serious tone] September 1919. Thirty-nine speeches in three weeks, cross-country by rail. The strain breaks him. He collapses on September 25, the tour is canceled, and on October 2 a massive stroke leaves him partly paralyzed, partly blind in one eye, his judgment impaired. His wife Edith controls who gets in to see him. He never really functions as president again.
 
-Maya: And the treaty?
+Maya: [curious, inquisitive tone] And the treaty?
 
-Marcus: Twice it comes up, November 1919, then March 1920, and twice it fails to get two-thirds. The first time it fails with Lodge's reservations and without them, because Wilson told his own Democrats to vote no on the compromised version. America never joins the League. In 1921, under Harding, Congress makes a separate peace with Germany.
+Marcus: [measured] Twice it comes up, November 1919, then March 1920, and twice it fails to get two-thirds. The first time it fails with Lodge's reservations and without them, because Wilson told his own Democrats to vote no on the compromised version. America never joins the League. In 1921, under Harding, Congress makes a separate peace with Germany.
 
-Maya: If a question asks why the treaty failed, "Wilson was stubborn" gets you half credit. The full answer: Lodge's reservationists would ratify with conditions, the irreconcilables would vote no on anything, and Wilson ordered his Democrats to kill the compromise. No middle, no two-thirds.
+Maya: [confident tone] If a question asks why the treaty failed, "Wilson was stubborn" gets you half credit. The full answer: Lodge's reservationists would ratify with conditions, the irreconcilables would vote no on anything, and Wilson ordered his Democrats to kill the compromise. No middle, no two-thirds.
 
-Marcus: And don't write that rejecting the League meant America turned isolationist. The United States stayed in the game through the 1920s. The rejection was about this treaty, not about retreating from the world.
+Marcus: [firm] And don't write that rejecting the League meant America turned isolationist. The United States stayed in the game through the 1920s. The rejection was about this treaty, not about retreating from the world.
 
-Maya: So the verdict. Too harsh, or too soft?
+Maya: [curious, inquisitive tone] So the verdict. Too harsh, or too soft?
 
-Marcus: Too harsh? Look at the bill: war guilt, a blank-check reparations figure, a tenth of its territory, an army cut to almost nothing. The Germans called it a Diktat, and the bitterness it planted helped seed the next war. The harsh-peace case, and it's strong.
+Marcus: [serious tone] Too harsh? Look at the bill: war guilt, a blank-check reparations figure, a tenth of its territory, an army cut to almost nothing. The Germans called it a Diktat, and the bitterness it planted helped seed the next war. The harsh-peace case, and it's strong.
 
-Maya: And the other side says it wasn't harsh enough?
+Maya: [curious, inquisitive tone] And the other side says it wasn't harsh enough?
 
-Marcus: The other side says it was harsh enough to humiliate and too weak to restrain, the worst of both. The League had no army, no real enforcement, and every big decision needed unanimity. Every member holding a veto.
+Marcus: [measured] The other side says it was harsh enough to humiliate and too weak to restrain, the worst of both. The League had no army, no real enforcement, and every big decision needed unanimity. Every member holding a veto.
 
-Maya: Oh, I've lived that. Getting eight friends to agree on one restaurant. Nobody eats.
+Maya: [playful] Oh, I've lived that. Getting eight friends to agree on one restaurant. Nobody eats. [chuckle]
 
-Marcus: Exactly. Japan walks out in 1933 after invading Manchuria. Italy invades Ethiopia in 1935, and the League answers with sanctions that leave out oil and steel, then lifts them within a year. When Germany marches back into the Rhineland in 1936, the League does nothing at all.
+Marcus: [serious tone] Exactly. Japan walks out in 1933 after invading Manchuria. Italy invades Ethiopia in 1935, and the League answers with sanctions that leave out oil and steel, then lifts them within a year. When Germany marches back into the Rhineland in 1936, the League does nothing at all.
 
-Maya: So blaming America's absence is too easy.
+Maya: [thoughtful tone] So blaming America's absence is too easy.
 
-Marcus: Not even close to the whole story. It hurt, but the structure was the deeper problem. The other side of the verdict: the League settled small border disputes nobody remembers, and when it died in 1946 its powers passed straight to the United Nations. The UN's offices, agencies, and machinery grew out of the League's. The institution failed. The idea survived. Call it the first draft of the United Nations.
+Marcus: [thoughtful tone] Not even close to the whole story. It hurt, but the structure was the deeper problem. The other side of the verdict: the League settled small border disputes nobody remembers, and when it died in 1946 its powers passed straight to the United Nations. The UN's offices, agencies, and machinery grew out of the League's. The institution failed. The idea survived. Call it the first draft of the United Nations.
 
-Maya: First draft.
+Maya: [conversational] First draft.
 
-Marcus: First draft.
+Marcus: [conversational] First draft.
 
-Maya: On a harsh-or-soft prompt, don't plant your flag on one side. The credited answer holds both: harsh enough to humiliate Germany, too weak to stop what came next. And don't write that the UN was built from scratch. It inherited the League's machinery.
+Maya: [firm] On a harsh-or-soft prompt, don't plant your flag on one side. The credited answer holds both: harsh enough to humiliate Germany, too weak to stop what came next. And don't write that the UN was built from scratch. It inherited the League's machinery.
 
-Maya: Four boxes, let's land them. One: the Fourteen Points, January 1918, Wilson's war aims. Open diplomacy, free seas, free trade, fewer weapons, self-determination, and point fourteen, the League. Two: Versailles, June 1919, the Big Four carve up the map. Germany gets Article 231 war guilt, reparations with the number filled in later, a gutted army, and no seat at the table. Three: the League fight. Lodge wants reservations, especially on Article 10. The irreconcilables want nothing. Wilson won't deal, takes the train, then the stroke, two failed votes, and America never joins. Four: the verdict, too harsh to forgive, too weak to restrain, but the League's machinery becomes the UN. Wait — Article 231 was the war guilt one, and Article 10 was the League promise one? I always mix those up.
+Maya: [conversational] Four boxes, let's land them. One: the Fourteen Points, January 1918, Wilson's war aims. Open diplomacy, free seas, free trade, fewer weapons, self-determination, and point fourteen, the League. Two: Versailles, June 1919, the Big Four carve up the map. Germany gets Article 231 war guilt, reparations with the number filled in later, a gutted army, and no seat at the table. Three: the League fight. Lodge wants reservations, especially on Article 10. The irreconcilables want nothing. Wilson won't deal, takes the train, then the stroke, two failed votes, and America never joins. Four: the verdict, too harsh to forgive, too weak to restrain, but the League's machinery becomes the UN. Wait — Article 231 was the war guilt one, and Article 10 was the League promise one? I always mix those up.
 
-Marcus: You've got them right. 231 pins the blame on Germany. 10 is the promise to defend other members — the one Lodge couldn't swallow.
+Marcus: [warm tone] You've got them right. 231 pins the blame on Germany. 10 is the promise to defend other members — the one Lodge couldn't swallow.
 
 Maya: Three questions, AP-shaped. Say your answer before I give it. First: Wilson gave up point after point at Paris but wouldn't budge on the League. Why?
 [15-second pause]
@@ -133,11 +133,11 @@ Maya: Lodge's reservationists would ratify with conditions protecting Congress's
 Maya: One more, fast. One structural reason the League couldn't stop aggression in the thirties.
 Maya: No enforcement of its own. No army, and big decisions needed unanimity. Japan walked out, Italy got sanctions without teeth, and that was that.
 
-Maya: Next time: the soldiers come home, the war's over, and America lets loose. Cars, jazz, speakeasies, and trouble underneath. The 1920s.
+Maya: [intrigued] Next time: the soldiers come home, the war's over, and America lets loose. Cars, jazz, speakeasies, and trouble underneath. The 1920s.
 
-Maya: Check your boxes.
+Maya: [confident tone] Check your boxes.
 
-Marcus: He sailed to Paris to end war forever — and came home to a Senate that wouldn't even end the debate.
+Marcus: [professional broadcast tone] He sailed to Paris to end war forever — and came home to a Senate that wouldn't even end the debate.
 
 ---
 

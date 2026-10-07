@@ -24,8 +24,9 @@ The cold-open time promise, the header, and the actual word count at
 spoken words at ≤180 WPM *plus* every second of scripted pause silence.**
 Pause tags are production reality, not metadata; a 12-minute promise must
 hold with the pauses in. Maya tracks
-N boxes on her episode sheet; each box gets checked off **in her voice** as
-the episode earns it. Box picks: named terms a student could plausibly see as
+N boxes on her episode sheet; at most one mid-episode check-in beat (e.g.
+"one down") in her voice as the episode earns it — the recap is the check
+layer (see CHECK LAYERS below). Box picks: named terms a student could plausibly see as
 an MCQ stem or SAQ prompt, spread across the episode's topics. Default 3
 boxes (4 when the content needs it); boxes ≤ topics — fold extra topics under a box, never leave a topic
 unboxed. A box owns its sub-topics in the recap: if headright lives under
@@ -241,6 +242,41 @@ it's tissue:
 - School-safe vocabulary (hard gate G11): no profanity in dialogue, however
   historical the nickname. Find the polite translation and wink at it
   ("fire-pooper," and yes, that's the polite translation).
+
+## Fish direction (2026-10-07 — lessons must be directed, not just written)
+
+The full tag catalog lives in `apush-fish-direction-catalog.md` — 42 tone
+tags, 9 paralanguage tags, emphasis, and pauses. Every lesson is directed
+with it, and directed **consistently**:
+
+- **Placement:** one tone tag at the start of the turn's text
+  (`Marcus: [confident tone] The crash didn't cause…`). Paralanguage goes
+  inline where the moment earns it (`[chuckle]`, `[sigh]`, `[beat]`).
+  Pause tags (`[N-second pause]`) are production silence, unchanged.
+- **Consistency is the rule:** the same dramatic situation gets the same tag
+  in every lesson. Cold opens are `[professional broadcast tone]`. Maya's
+  genuine questions are `[curious, inquisitive tone]`. Takeaway landings are
+  `[confident tone]`. Myth-busts are `[firm]` or `[stern]`. Maya caught wrong
+  is `[sheepish]`. Debate guests argue `[passionate]`/`[intense]`.
+  Numbers the listener must catch are `[speaking slowly]`. A new lesson that
+  directs its cold open `[warm tone]` while ten others use broadcast tone is
+  wrong — match the fleet, not the moment's whim.
+- **Speaker tendencies hold across lessons:** Maya asks, guesses wrong, and
+  feels it (curious, incredulous, sheepish, playful, warm). Marcus explains
+  and lands (confident, measured, thoughtful, firm, serious). Jay learns out
+  loud (casual, curious, sheepish). Guests orate (passionate, intense).
+- **Density:** no single tone on more than ~40% of a lesson's turns.
+  `[professional broadcast tone]` only for cold opens, formal framing, and
+  sign-offs — never the body default. Self-test questions and model answers
+  stay neutral: no direction tags there at all. Paralanguage max 2 per
+  lesson. One `[emphasis]` phrase per turn, max.
+- **The gates ignore direction tags:** they are stripped before word counts
+  and every other check, so directing never changes the runtime math. But
+  direction never changes the words either — a direction pass that edits
+  dialogue is a rewrite, not a pass, and needs the full validation loop.
+- **Consistency audit:** after directing, count tags per lesson and compare
+  across the fleet. Same beats, same tags. Any lesson whose tag distribution
+  doesn't rhyme with the others gets re-directed.
 
 ## What the gates can't catch
 

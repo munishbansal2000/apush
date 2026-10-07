@@ -11,37 +11,37 @@
 
 ---
 
-Maya: Last time: the world's on fire, and America argues about whether to pick up the extinguisher. Here's the argument. It's the fall of 1941: German U-boats are shooting at American ships, the president has told the Navy to shoot back on sight, and Congress still calls this neutrality. Four boxes: isolationism, the Nye Committee and the Neutrality Acts. The slow slide in: cash-and-carry, destroyers for bases, Lend-Lease. The Pacific: the oil embargo and the Hull Note. Pearl Harbor. Circle the ones you couldn't explain right now. About twelve minutes. Let's go.
+Maya: [professional broadcast tone] Last time: the world's on fire, and America argues about whether to pick up the extinguisher. Here's the argument. It's the fall of 1941: German U-boats are shooting at American ships, the president has told the Navy to shoot back on sight, and Congress still calls this neutrality. Four boxes: isolationism, the Nye Committee and the Neutrality Acts. The slow slide in: cash-and-carry, destroyers for bases, Lend-Lease. The Pacific: the oil embargo and the Hull Note. Pearl Harbor. Circle the ones you couldn't explain right now. About twelve minutes. Let's go.
 
-Marcus: The New Deal had spent eight years fighting the Depression and hadn't finished the job — and now the country was arguing about a different fight. The mood had a name: never again. World War I had cost over a hundred thousand American lives, and plenty of people decided the whole thing had been a mistake. The world wasn't made safe for democracy, and the dead hadn't bought anything.
+Marcus: [measured] The New Deal had spent eight years fighting the Depression and hadn't finished the job — and now the country was arguing about a different fight. The mood had a name: never again. World War I had cost over a hundred thousand American lives, and plenty of people decided the whole thing had been a mistake. The world wasn't made safe for democracy, and the dead hadn't bought anything.
 
-Maya: And then someone gave them a villain.
+Maya: [conversational] And then someone gave them a villain.
 
-Marcus: Senator Gerald Nye, North Dakota. From 1934 to 36 he ran a committee digging into whether the arms makers and the bankers, the so-called "merchants of death," had pushed America into the war in 1917 for profit.
+Marcus: [measured] Senator Gerald Nye, North Dakota. From 1934 to 36 he ran a committee digging into whether the arms makers and the bankers, the so-called "merchants of death," had pushed America into the war in 1917 for profit.
 
-Maya: Did they find anything?
+Maya: [curious, inquisitive tone] Did they find anything?
 
-Marcus: The committee never found the proof. But the hearings were a show — months of headlines about wartime profits — and millions walked away convinced. Suspicion did the work evidence couldn't.
+Marcus: [thoughtful tone] The committee never found the proof. But the hearings were a show — months of headlines about wartime profits — and millions walked away convinced. Suspicion did the work evidence couldn't.
 
-Maya: So Congress turned the suspicion into law.
+Maya: [conversational] So Congress turned the suspicion into law.
 
-Marcus: Three Neutrality Acts, 35, 36, 37: no American arms or war supplies to countries at war, no loans to them, and Americans warned off belligerent ships. The idea was to cut every rope that had dragged us into the last war.
+Marcus: [measured] Three Neutrality Acts, 35, 36, 37: no American arms or war supplies to countries at war, no loans to them, and Americans warned off belligerent ships. The idea was to cut every rope that had dragged us into the last war.
 
-Maya: Trap check: the Nye Committee never proved the arms dealers dragged us into World War I. Write that on an essay and you're wrong. It spread the suspicion; the proof never showed up.
+Maya: [firm] Trap check: the Nye Committee never proved the arms dealers dragged us into World War I. Write that on an essay and you're wrong. It spread the suspicion; the proof never showed up.
 
-Marcus: Exactly. Roosevelt watched the same newsreels and drew the opposite conclusion. After Japan widened its war in China in 1937, he went to Chicago and said the world's aggressive nations should be quarantined, cut off by the international community.
+Marcus: [conversational] Exactly. Roosevelt watched the same newsreels and drew the opposite conclusion. After Japan widened its war in China in 1937, he went to Chicago and said the world's aggressive nations should be quarantined, cut off by the international community.
 
-Maya: The Quarantine Speech. And the country didn't buy it.
+Maya: [dry] The Quarantine Speech. And the country didn't buy it.
 
-Marcus: The backlash was loud enough that Roosevelt pulled back fast. Late that year Japanese warplanes sank the American gunboat Panay on China's Yangtze River, and even that got waved away. Isolationist leaders told Roosevelt to accept Japan's apology and move on. He got the message: the country wasn't ready to move.
+Marcus: [serious tone] The backlash was loud enough that Roosevelt pulled back fast. Late that year Japanese warplanes sank the American gunboat Panay on China's Yangtze River, and even that got waved away. Isolationist leaders told Roosevelt to accept Japan's apology and move on. He got the message: the country wasn't ready to move.
 
-Maya: Someone tried to make war basically undeclarable, right?
+Maya: [curious, inquisitive tone] Someone tried to make war basically undeclarable, right?
 
-Marcus: The Ludlow Amendment. Congressman Louis Ludlow proposed amending the Constitution: no declaration of war without a national referendum first, unless America was invaded. In January 1938 it reached a House vote on the discharge petition and failed 209 to 188. That close.
+Marcus: [measured] The Ludlow Amendment. Congressman Louis Ludlow proposed amending the Constitution: no declaration of war without a national referendum first, unless America was invaded. In January 1938 it reached a House vote on the discharge petition and failed 209 to 188. That close.
 
-Maya: Twenty-one votes, and there's the whole mood in one number.
+Maya: [thoughtful tone] Twenty-one votes, and there's the whole mood in one number.
 
-Marcus: The country wanted war made almost impossible.
+Marcus: [serious tone] The country wanted war made almost impossible.
 
 Maya: Your turn. The law says no arms sales to anybody at war. Roosevelt is convinced Britain needs American weapons. Without breaking the law, what door does he find?
 
@@ -49,47 +49,47 @@ Maya: Your turn. The law says no arms sales to anybody at war. Roosevelt is conv
 
 Maya: Cash-and-carry. Sell Britain the guns, but they pay cash and haul them away on British ships. Britain rules the waves, so the deal openly favors them.
 
-Marcus: Poland falls in September 39, and two months later Congress rewrites the Neutrality Act: cash-and-carry, exactly the door you found. Then France collapses in the spring of 1940, in a matter of weeks, and everything accelerates.
+Marcus: [dramatic] Poland falls in September 39, and two months later Congress rewrites the Neutrality Act: cash-and-carry, exactly the door you found. Then France collapses in the spring of 1940, in a matter of weeks, and everything accelerates.
 
-Maya: This is where Lindbergh comes in, right? Charles Lindbergh, the Spirit of St. Louis guy. First solo across the Atlantic, 1927. My grandpa had the poster on his garage wall.
+Maya: [curious, inquisitive tone] This is where Lindbergh comes in, right? Charles Lindbergh, the Spirit of St. Louis guy. First solo across the Atlantic, 1927. My grandpa had the poster on his garage wall.
 
-Marcus: The very same Lindbergh. He became the star speaker for America First, the anti-war movement at around eight hundred thousand members strong. He told crowds that stepping into Europe's war would wreck America.
+Marcus: [conversational] The very same Lindbergh. He became the star speaker for America First, the anti-war movement at around eight hundred thousand members strong. He told crowds that stepping into Europe's war would wreck America.
 
-Maya: And Roosevelt just went around them?
+Maya: [incredulous] And Roosevelt just went around them?
 
-Marcus: September 1940: the destroyers-for-bases deal. Fifty old World War I destroyers to Britain for leases on bases in the Western Hemisphere. No congressional vote: an executive agreement, done over Congress's head.
+Marcus: [measured] September 1940: the destroyers-for-bases deal. Fifty old World War I destroyers to Britain for leases on bases in the Western Hemisphere. No congressional vote: an executive agreement, done over Congress's head.
 
-Maya: He can just do that? Hand over warships?
+Maya: [incredulous] He can just do that? Hand over warships?
 
-Marcus: He said the presidency gave him the authority, and Congress let it stand. December 1940: on the radio, he says America must become the great arsenal of democracy, the factory supplying the countries fighting the dictators.
+Marcus: [conversational] He said the presidency gave him the authority, and Congress let it stand. December 1940: on the radio, he says America must become the great arsenal of democracy, the factory supplying the countries fighting the dictators.
 
-Maya: And Lend-Lease is how he pays for it?
+Maya: [curious, inquisitive tone] And Lend-Lease is how he pays for it?
 
-Marcus: Congress passes it in March 1941: America would lend or lease weapons to Britain, and later the Soviets, with the bill settled after the war. Roosevelt sold it with his own image: if your neighbor's house is on fire, you don't haggle over the garden hose. You lend it.
+Marcus: [conversational] Congress passes it in March 1941: America would lend or lease weapons to Britain, and later the Soviets, with the bill settled after the war. Roosevelt sold it with his own image: if your neighbor's house is on fire, you don't haggle over the garden hose. You lend it.
 
-Maya: The Atlantic Charter, August 41: FDR and Churchill, on ships off Newfoundland, promising no land grabs and self-determination after the war. A promise of war aims, not a treaty, right?
+Maya: [conversational] The Atlantic Charter, August 41: FDR and Churchill, on ships off Newfoundland, promising no land grabs and self-determination after the war. A promise of war aims, not a treaty, right?
 
-Marcus: Right. A statement of principles, not a treaty. But the war was already half-declared in the Atlantic. By fall 1941 the Navy was escorting convoys as far as Iceland. In September a U-boat fired on the destroyer Greer, and Roosevelt answered with a shoot-on-sight order.
+Marcus: [serious tone] Right. A statement of principles, not a treaty. But the war was already half-declared in the Atlantic. By fall 1941 the Navy was escorting convoys as far as Iceland. In September a U-boat fired on the destroyer Greer, and Roosevelt answered with a shoot-on-sight order.
 
-Maya: While we're still officially neutral.
+Maya: [dry] While we're still officially neutral.
 
-Marcus: Neutral on paper only. In October the destroyer Reuben James was torpedoed escorting a convoy: over a hundred sailors dead, the first American warship sunk in the war. Congress hadn't declared anything. The shooting had.
+Marcus: [serious tone] Neutral on paper only. In October the destroyer Reuben James was torpedoed escorting a convoy: over a hundred sailors dead, the first American warship sunk in the war. Congress hadn't declared anything. The shooting had.
 
-Maya: Two boxes down, two to go.
+Maya: [confident tone] Two boxes down, two to go.
 
-Marcus: Now the other ocean. Japan had been expanding for a decade: Manchuria in 1931, a full-scale invasion of China in 1937, and in 1940 the three-way Tripartite Pact with Germany and Italy.
+Marcus: [ominous] Now the other ocean. Japan had been expanding for a decade: Manchuria in 1931, a full-scale invasion of China in 1937, and in 1940 the three-way Tripartite Pact with Germany and Italy.
 
-Maya: And we answered with the embargo. A trade cutoff, right? The government just says nobody sells them this?
+Maya: [curious, inquisitive tone] And we answered with the embargo. A trade cutoff, right? The government just says nobody sells them this?
 
-Marcus: It came in stages. First scrap steel and aviation fuel, then oil in July 1941 after Japan moved into French Indochina, plus a freeze on every Japanese asset in America. About eighty percent of Japan's oil came from America. Without it, the war in China stalls and the navy can't sail.
+Marcus: [measured] It came in stages. First scrap steel and aviation fuel, then oil in July 1941 after Japan moved into French Indochina, plus a freeze on every Japanese asset in America. About eighty percent of Japan's oil came from America. Without it, the war in China stalls and the navy can't sail.
 
-Maya: So Tokyo had two doors: quit China, or take what they needed by force.
+Maya: [thoughtful tone] So Tokyo had two doors: quit China, or take what they needed by force.
 
-Marcus: And quitting meant humiliation the military government couldn't survive. November 26: Secretary of State Cordell Hull hands Japan his note. Get out of China and Indochina, recognize China's National Government, and then we'll talk trade. Japan's prime minister, Tojo, told his cabinet it was an ultimatum, a demand backed by a threat.
+Marcus: [serious tone] And quitting meant humiliation the military government couldn't survive. November 26: Secretary of State Cordell Hull hands Japan his note. Get out of China and Indochina, recognize China's National Government, and then we'll talk trade. Japan's prime minister, Tojo, told his cabinet it was an ultimatum, a demand backed by a threat.
 
-Maya: But was it technically an actual ultimatum?
+Maya: [curious, inquisitive tone] But was it technically an actual ultimatum?
 
-Marcus: The note didn't threaten war in so many words. But to a government that had spent four years conquering China, "give it all back" read like one. Nobody budged.
+Marcus: [thoughtful tone] The note didn't threaten war in so many words. But to a government that had spent four years conquering China, "give it all back" read like one. Nobody budged.
 
 Maya: Your turn. You're Japan. The oil is gone, your reserves are draining, and pulling out of China would break your own government. Strike the American fleet, or back down? What's the move that looks survivable from Tokyo?
 
@@ -97,41 +97,41 @@ Maya: Your turn. You're Japan. The oil is gone, your reserves are draining, and 
 
 Maya: You strike. Not because you think you'll win a long war. Because backing down looks like suicide and striking looks like a gamble with a payoff. So the fleet sails, in secrecy, across the North Pacific.
 
-Marcus: Sunday morning, December 7, 1941. Over 180 Japanese warplanes hit Pearl Harbor. Battleship row, the line of battleships moored along Ford Island, took the worst of it. A bomb straight into the Arizona's forward magazine, and she went down in minutes.
+Marcus: [dramatic] Sunday morning, December 7, 1941. Over 180 Japanese warplanes hit Pearl Harbor. Battleship row, the line of battleships moored along Ford Island, took the worst of it. A bomb straight into the Arizona's forward magazine, and she went down in minutes.
 
-Maya: There's a famous photo of the explosion, the fireball going straight up. That image lives in my head.
+Maya: [serious tone] There's a famous photo of the explosion, the fireball going straight up. That image lives in my head.
 
-Marcus: Minutes into the attack, the Arizona was gone. By the end of the morning, about 2,400 Americans were killed, nearly half of them on the Arizona. But the Japanese missed two things: the carriers were out at sea, and the repair shops and fuel tanks survived. Pearl Harbor stayed a working base.
+Marcus: [serious tone] Minutes into the attack, the Arizona was gone. By the end of the morning, about 2,400 Americans were killed, nearly half of them on the Arizona. But the Japanese missed two things: the carriers were out at sea, and the repair shops and fuel tanks survived. Pearl Harbor stayed a working base.
 
-Maya: So was it really a total surprise? Nobody saw anything coming?
+Maya: [curious, inquisitive tone] So was it really a total surprise? Nobody saw anything coming?
 
-Marcus: American codebreakers were reading some Japanese diplomatic traffic. But the pieces were fragments: nothing pointed at Pearl Harbor, nothing arrived in time. The claims that Roosevelt knew and let it happen don't hold up. Real intercepts, no blueprint.
+Marcus: [measured] American codebreakers were reading some Japanese diplomatic traffic. But the pieces were fragments: nothing pointed at Pearl Harbor, nothing arrived in time. The claims that Roosevelt knew and let it happen don't hold up. Real intercepts, no blueprint.
 
-Maya: So we'll never know if a different warning could have changed that morning?
+Maya: [thoughtful tone] So we'll never know if a different warning could have changed that morning?
 
-Marcus: Nobody's fully sure. Honestly? Neither am I.
+Marcus: [calm] Nobody's fully sure. Honestly? Neither am I.
 
-Maya: The next day he goes to Congress.
+Maya: [conversational] The next day he goes to Congress.
 
-Marcus: December 8. FDR's words for December 7: "a date which will live in infamy." Congress declares war on Japan the same day. December 11: Germany and Italy declare war on the United States.
+Marcus: [dramatic] December 8. FDR's words for December 7: "a date which will live in infamy." Congress declares war on Japan the same day. December 11: Germany and Italy declare war on the United States.
 
-Maya: Wait — they declared on us? Not the other way around?
+Maya: [incredulous] Wait — they declared on us? Not the other way around?
 
-Marcus: They did. Hitler chose it, as a gesture to his Japanese ally. The isolationist project, finished in four days.
+Marcus: [firm] They did. Hitler chose it, as a gesture to his Japanese ally. The isolationist project, finished in four days.
 
-Maya: Four boxes, let's land them. First: isolationism. The Nye Committee fed the "merchants of death" suspicion but never proved it, and Congress passed the Neutrality Acts: no arms, no loans to countries at war. Roosevelt tested the water with the Quarantine Speech in 37 and got burned. The Panay sinking got shrugged off. The Ludlow Amendment almost made war undeclarable — 209 to 188, was that the vote?
+Maya: [conversational] Four boxes, let's land them. First: isolationism. The Nye Committee fed the "merchants of death" suspicion but never proved it, and Congress passed the Neutrality Acts: no arms, no loans to countries at war. Roosevelt tested the water with the Quarantine Speech in 37 and got burned. The Panay sinking got shrugged off. The Ludlow Amendment almost made war undeclarable — 209 to 188, was that the vote?
 
-Marcus: 209 to 188. Twenty-one votes — that's the mood of the whole decade.
+Marcus: [conversational] 209 to 188. Twenty-one votes — that's the mood of the whole decade.
 
-Maya: Second: the slow slide in. Cash-and-carry in 39: pay cash, carry it on your own ships. Fifty destroyers for bases in 1940, no congressional vote. The arsenal of democracy speech, then Lend-Lease, the garden hose. The Atlantic Charter in August. And an undeclared shooting war in the Atlantic: the Greer incident and the shoot-on-sight order, then the Reuben James in October. Checking that one.
+Maya: [conversational] Second: the slow slide in. Cash-and-carry in 39: pay cash, carry it on your own ships. Fifty destroyers for bases in 1940, no congressional vote. The arsenal of democracy speech, then Lend-Lease, the garden hose. The Atlantic Charter in August. And an undeclared shooting war in the Atlantic: the Greer incident and the shoot-on-sight order, then the Reuben James in October. Checking that one.
 
-Marcus: Checked.
+Marcus: [conversational] Checked.
 
-Maya: Third: the Pacific. Japan kept expanding through Manchuria and China, and signed the Tripartite Pact in 1940. We answer with the oil embargo and asset freeze of July 41, and about eighty percent of Japan's oil came from us. The Hull Note in November reads like an ultimatum. That's three.
+Maya: [conversational] Third: the Pacific. Japan kept expanding through Manchuria and China, and signed the Tripartite Pact in 1940. We answer with the oil embargo and asset freeze of July 41, and about eighty percent of Japan's oil came from us. The Hull Note in November reads like an ultimatum. That's three.
 
-Marcus: And Tokyo chose the gamble.
+Marcus: [ominous] And Tokyo chose the gamble.
 
-Maya: Fourth: Pearl Harbor. Sunday morning, December 7th. Over 180 planes, about 2,400 dead, the Arizona lost with nearly half of them. The carriers were out, the fuel survived. December 8th: "a date which will live in infamy," war on Japan. December 11th: Germany and Italy declare on us. And the whole arc runs from never again, to shoot-on-sight, to December 7th.
+Maya: [serious tone] Fourth: Pearl Harbor. Sunday morning, December 7th. Over 180 planes, about 2,400 dead, the Arizona lost with nearly half of them. The carriers were out, the fuel survived. December 8th: "a date which will live in infamy," war on Japan. December 11th: Germany and Italy declare on us. And the whole arc runs from never again, to shoot-on-sight, to December 7th.
 
 Maya: Three questions, AP-shaped. Say your answer before I give mine. One, and this one has a source: it's December 8, 1941. Roosevelt stands before Congress and calls December 7th "a date which will live in infamy." What's the point of that line, what work is it doing?
 
@@ -157,15 +157,15 @@ Maya: One more, fast. December 11, 1941: who declared war on whom?
 
 Maya: Germany and Italy declared war on the United States, not the other way around.
 
-Maya: Check your boxes.
+Maya: [confident tone] Check your boxes.
 
-Maya: Next time: the whole unit in one sitting: the cram session.
+Maya: [intrigued] Next time: the whole unit in one sitting: the cram session.
 
-Marcus: The country didn't want to move.
+Marcus: [professional broadcast tone] The country didn't want to move.
 
-Maya: Then December moved it.
+Maya: [professional broadcast tone] Then December moved it.
 
-Maya: New words: embargo, cash-and-carry, Lend-Lease, the Hull Note, battleship row.
+Maya: [speaking slowly] New words: embargo, cash-and-carry, Lend-Lease, the Hull Note, battleship row.
 
 ---
 

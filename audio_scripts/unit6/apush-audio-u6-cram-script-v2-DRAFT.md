@@ -18,93 +18,93 @@
 # Nye (rhymes with "my"); Versailles (vair-SY).
 # Quotes: FDR's "a date which will live in infamy" is taught as his exact wording for December 7, per the Congressional Record.
 
-Maya: Last time: Reconstruction died, and the South answered with Jim Crow, the New South, and a fight over how to fight back. This time: no new material. Eight lessons, eight questions, 1900 to 1941, in about ten minutes. Reform, war, boom, bust. And a government that grew with every crisis. I'm firing the questions. You answer out loud before Jay does. Circle the ones you couldn't explain right now.
+Maya: [professional broadcast tone] Last time: Reconstruction died, and the South answered with Jim Crow, the New South, and a fight over how to fight back. This time: no new material. Eight lessons, eight questions, 1900 to 1941, in about ten minutes. Reform, war, boom, bust. And a government that grew with every crisis. I'm firing the questions. You answer out loud before Jay does. Circle the ones you couldn't explain right now.
 
-Maya: One. 1906: Upton Sinclair's The Jungle hits the stands, and within months Congress passes the Meat Inspection Act and the Pure Food and Drug Act. A novel moved Congress. How does a book become two laws?
-
-[2-second pause]
-
-Jay: The Progressive machine. Reformers cleaning up the Gilded Age: muckrakers like Tarbell, Jane Addams and Hull House, opened 1897, right? And Roosevelt, the biggest trust-buster of them all. Roosevelt broke up Standard Oil.
-
-Maya: Not quite, twice over. Hull House opened in 1889. The book file that printed 1897 is just wrong. And Roosevelt didn't break up Standard Oil. His headline case was Northern Securities, broken up in 1904. The quiet ninety-suit record, including Standard Oil in 1911, belongs to Taft. Roosevelt made trust-busting famous. Taft did more of it.
-
-Maya: The mechanism, though: a book or a photo series lands, the middle class gets outraged, and Washington has to move. Sinclair, Tarbell, Riis, Steffens. That engine is the whole Progressive Era in miniature. And the trap: "progressivism helped everyone." It didn't. Wilson, the progressive president, segregated the federal offices. Reform for some, control for others.
-
-Maya: Two. May 1915: a German U-boat sinks the Lusitania. 128 Americans dead. The war vote comes in April 1917. So why doesn't "the Lusitania pulled America into the war" earn full credit?
+Maya: [energetic] One. 1906: Upton Sinclair's The Jungle hits the stands, and within months Congress passes the Meat Inspection Act and the Pure Food and Drug Act. A novel moved Congress. How does a book become two laws?
 
 [2-second pause]
 
-Jay: The dates don't line up. It moved opinion. Congress didn't move. Then Germany goes back to unrestricted submarine warfare in early 1917, and hundreds of American ships were sunk in February and March, plus the Zimmermann telegram, the secret deal with Mexico.
+Jay: [casual] The Progressive machine. Reformers cleaning up the Gilded Age: muckrakers like Tarbell, Jane Addams and Hull House, opened 1897, right? And Roosevelt, the biggest trust-buster of them all. Roosevelt broke up Standard Oil.
 
-Maya: Stop at "hundreds" — that's a legend. A handful of American-flagged ships went down in those weeks; the U-boats sank hundreds of ships total, but American losses were single digits. And the order: Germany announced it, Wilson cut relations on February 3rd, then American ships started going down, the telegram went public on March 1st, and Zimmermann himself admitted it was real two days later.
+Maya: [firm] Not quite, twice over. Hull House opened in 1889. The book file that printed 1897 is just wrong. And Roosevelt didn't break up Standard Oil. His headline case was Northern Securities, broken up in 1904. The quiet ninety-suit record, including Standard Oil in 1911, belongs to Taft. Roosevelt made trust-busting famous. Taft did more of it.
 
-Maya: The distinction the exam wants: the sinkings moved Congress. The telegram only made it personal. It turned Germany from Britain's enemy into America's. And the Lusitania? 1915. Opinion, not Congress.
+Maya: [confident tone] The mechanism, though: a book or a photo series lands, the middle class gets outraged, and Washington has to move. Sinclair, Tarbell, Riis, Steffens. That engine is the whole Progressive Era in miniature. And the trap: "progressivism helped everyone." It didn't. Wilson, the progressive president, segregated the federal offices. Reform for some, control for others.
 
-Maya: Three. Two agencies, 1917: Baruch's War Industries Board and Hoover's Food Administration. Students mush them into one big government takeover. What's the real distinction?
-
-[2-second pause]
-
-Jay: One ran the factories, one ran the food. The board ordered production around: priorities, prices, raw materials. Hoover just asked nicely. Meatless Mondays, Wheatless Wednesdays, pledge cards in the window.
-
-Maya: Directed versus persuaded: that's the distinction, and the days are right. The old review swapped them to Wheatless Mondays, and that's wrong; it's Meatless Mondays, Wheatless Wednesdays. Now the year pair students always flip: Espionage Act, 1917. Sedition Act, 1918, the tougher add-on.
-
-Jay: So Sedition 1917, Espionage...
-
-Maya: Flipped. Espionage seventeen, Sedition eighteen. Schenck's leaflets lost in 1919 on "clear and present danger." And Debs? Ten years for a speech, then ran for president from a prison cell in 1920.
-
-Maya: Four. January 1918: Wilson announces the Fourteen Points. June 1919: the Treaty of Versailles. A student writes that the Fourteen Points became the treaty. What's wrong with that?
+Maya: [energetic] Two. May 1915: a German U-boat sinks the Lusitania. 128 Americans dead. The war vote comes in April 1917. So why doesn't "the Lusitania pulled America into the war" earn full credit?
 
 [2-second pause]
 
-Jay: Most of them died in Paris. Wilson sails over in early 1919 with his wish list, and the Big Four hand him the punishment instead: Article 231, the one where America promises to defend everybody. Lodge hated it.
+Jay: [casual] The dates don't line up. It moved opinion. Congress didn't move. Then Germany goes back to unrestricted submarine warfare in early 1917, and hundreds of American ships were sunk in February and March, plus the Zimmermann telegram, the secret deal with Mexico.
 
-Maya: Two to untangle. Wilson sailed in December 1918, before the new year, and most of the Points did die in Paris, you're right there. But you crossed the articles: 231 pins the war guilt on Germany, the past. Article 10 is the League's promise to defend other members — the future, and the one Lodge read as a blank check for wars Congress never declared.
+Maya: [firm] Stop at "hundreds" — that's a legend. A handful of American-flagged ships went down in those weeks; the U-boats sank hundreds of ships total, but American losses were single digits. And the order: Germany announced it, Wilson cut relations on February 3rd, then American ships started going down, the telegram went public on March 1st, and Zimmermann himself admitted it was real two days later.
 
-Maya: The camps: Lodge's reservationists wanted edits, Borah's irreconcilables wanted nothing. Wilson wouldn't deal, the tour broke him, and the treaty died twice in the Senate: November 1919, then March 1920. And the money rule: the treaty creates the obligation; a commission names the number — 132 billion gold marks, in 1921. Never write the number inside the 1919 treaty.
+Maya: [confident tone] The distinction the exam wants: the sinkings moved Congress. The telegram only made it personal. It turned Germany from Britain's enemy into America's. And the Lusitania? 1915. Opinion, not Congress.
 
-Maya: Five. The 1924 immigration act. "Quotas cut immigration" is the weak answer. What's the sharp one?
-
-[2-second pause]
-
-Jay: The census year. Two percent of the 1890 numbers, before the big southern and eastern European wave. And Asian immigration gets shut out entirely.
-
-Maya: Sharp. The census year is the discrimination. Same decade, Dayton, Tennessee, 1925: Scopes teaches evolution, Darrow defends him, Bryan prosecutes. Guilty, fined a hundred dollars. Then what?
-
-Jay: He appeals? Does the time?
-
-Maya: The conviction gets thrown out on a technicality. And Bryan dies days after the trial ends. The exam tests the aftermath, not just the verdict.
-
-Maya: Six. October 1929: Black Thursday, then Black Tuesday. The exam asks what caused the Great Depression. Why is "the stock market crashed" only half credit?
+Maya: [energetic] Three. Two agencies, 1917: Baruch's War Industries Board and Hoover's Food Administration. Students mush them into one big government takeover. What's the real distinction?
 
 [2-second pause]
 
-Jay: The crash was the trigger. The causes were loaded all through the twenties. Black Tuesday wiped out what, twenty million dollars?
+Jay: [casual] One ran the factories, one ran the food. The board ordered production around: priorities, prices, raw materials. Hoover just asked nicely. Meatless Mondays, Wheatless Wednesdays, pledge cards in the window.
 
-Maya: Billion. Fourteen billion, roughly. Twenty million is off by a thousand-fold. And the loaded gun: the farm depression had been running since the early twenties, wages lagging behind what the factories could make, banks with no safety net. The crash gets the blame for the bank panics; the farm crisis started eight years earlier. And Smoot-Hawley? It poured fuel on a fire already burning — a worsener, never the cause.
+Maya: [confident tone] Directed versus persuaded: that's the distinction, and the days are right. The old review swapped them to Wheatless Mondays, and that's wrong; it's Meatless Mondays, Wheatless Wednesdays. Now the year pair students always flip: Espionage Act, 1917. Sedition Act, 1918, the tougher add-on.
 
-Maya: Seven. 1935: unemployment still near twenty percent, the Court kills the NRA in Schechter, and Roosevelt answers with a second wave. A student writes that Social Security was a Hundred Days program and that court-packing happened in 1936. Why are both wrong?
+Jay: [sheepish] So Sedition 1917, Espionage...
 
-[2-second pause]
+Maya: [firm] Flipped. Espionage seventeen, Sedition eighteen. Schenck's leaflets lost in 1919 on "clear and present danger." And Debs? Ten years for a speech, then ran for president from a prison cell in 1920.
 
-Jay: Social Security is Second New Deal, 1935. The Wagner Act too. And court-packing is... 1937? February 1937. And it failed. Congress killed it.
-
-Maya: Both landed. Schechter killed the NRA in 1935; Butler killed the AAA in 1936 — they travel as a pair, never flip them. I say the pair out loud every time or I flip them myself. The SEC is a 1934 creation; a student who files the SEC under the Hundred Days is wrong. And the verdict the exam rewards: the New Deal did not end the Depression. Wartime spending did. What the New Deal did was change Washington's job description permanently. Relief, recovery, reform.
-
-Maya: Eight. 1934 to 1941: from "never again" to December 7th. The Nye Committee feeds the suspicion, Congress passes the Neutrality Acts, and Roosevelt spends six years finding doors. Name the doors, and catch the date the old review got wrong.
+Maya: [energetic] Four. January 1918: Wilson announces the Fourteen Points. June 1919: the Treaty of Versailles. A student writes that the Fourteen Points became the treaty. What's wrong with that?
 
 [2-second pause]
 
-Jay: Cash-and-carry, 1939. Destroyers for bases, 1940. No congressional vote. Lend-Lease, March 1941, Congress passes it. The Atlantic Charter... July 1941?
+Jay: [casual] Most of them died in Paris. Wilson sails over in early 1919 with his wish list, and the Big Four hand him the punishment instead: Article 231, the one where America promises to defend everybody. Lodge hated it.
 
-Maya: August. Common mix-up, and the old review printed July too. August 1941, off Newfoundland: a statement of principles. No treaty, no declaration of war. And the Nye trap: the committee never proved the "merchants of death" dragged us into 1917. The hearings spread the suspicion; the proof never showed up. Then the fall of '41: an undeclared shooting war in the Atlantic, the oil embargo squeezing Japan, with about eighty percent of its oil coming from us, then the Hull Note in November, and December 7th.
+Maya: [firm] Two to untangle. Wilson sailed in December 1918, before the new year, and most of the Points did die in Paris, you're right there. But you crossed the articles: 231 pins the war guilt on Germany, the past. Article 10 is the League's promise to defend other members — the future, and the one Lodge read as a blank check for wars Congress never declared.
 
-Maya: December 8th: "a date which will live in infamy." War on Japan the same day. December 11th: Germany and Italy declare war on us. Not the other way around.
+Maya: [measured] The camps: Lodge's reservationists wanted edits, Borah's irreconcilables wanted nothing. Wilson wouldn't deal, the tour broke him, and the treaty died twice in the Senate: November 1919, then March 1920. And the money rule: the treaty creates the obligation; a commission names the number — 132 billion gold marks, in 1921. Never write the number inside the 1919 treaty.
 
-Maya: Eight questions, one sentence underneath. Check your boxes. Every crisis grew the government, and it never fully shrank back.
+Maya: [energetic] Five. The 1924 immigration act. "Quotas cut immigration" is the weak answer. What's the sharp one?
 
-Jay: Crisis grew the government, and it never fully shrank back.
+[2-second pause]
 
-Maya: Test it. Progressivism: reformers grew Washington to tame the trusts and clean the food supply. 1917: a war drafted bodies, steered factories, policed speech. Washington grew again. The twenties tried to unwind it — Harding won on shrinking the government, and spending and taxes fell. But the unwinding never finished. 1929: the crash broke the economy, and the New Deal grew Washington for good. 1941: a second war made it global. Every crisis ratcheted it higher. It holds, all eight.
+Jay: [confident tone] The census year. Two percent of the 1890 numbers, before the big southern and eastern European wave. And Asian immigration gets shut out entirely.
+
+Maya: [playful] Sharp. The census year is the discrimination. Same decade, Dayton, Tennessee, 1925: Scopes teaches evolution, Darrow defends him, Bryan prosecutes. Guilty, fined a hundred dollars. Then what?
+
+Jay: [sheepish] He appeals? Does the time?
+
+Maya: [conversational] The conviction gets thrown out on a technicality. And Bryan dies days after the trial ends. The exam tests the aftermath, not just the verdict.
+
+Maya: [energetic] Six. October 1929: Black Thursday, then Black Tuesday. The exam asks what caused the Great Depression. Why is "the stock market crashed" only half credit?
+
+[2-second pause]
+
+Jay: [casual] The crash was the trigger. The causes were loaded all through the twenties. Black Tuesday wiped out what, twenty million dollars?
+
+Maya: [firm] Billion. Fourteen billion, roughly. Twenty million is off by a thousand-fold. And the loaded gun: the farm depression had been running since the early twenties, wages lagging behind what the factories could make, banks with no safety net. The crash gets the blame for the bank panics; the farm crisis started eight years earlier. And Smoot-Hawley? It poured fuel on a fire already burning — a worsener, never the cause.
+
+Maya: [energetic] Seven. 1935: unemployment still near twenty percent, the Court kills the NRA in Schechter, and Roosevelt answers with a second wave. A student writes that Social Security was a Hundred Days program and that court-packing happened in 1936. Why are both wrong?
+
+[2-second pause]
+
+Jay: [confident tone] Social Security is Second New Deal, 1935. The Wagner Act too. And court-packing is... 1937? February 1937. And it failed. Congress killed it.
+
+Maya: [warm tone] Both landed. Schechter killed the NRA in 1935; Butler killed the AAA in 1936 — they travel as a pair, never flip them. I say the pair out loud every time or I flip them myself. [chuckle] The SEC is a 1934 creation; a student who files the SEC under the Hundred Days is wrong. And the verdict the exam rewards: the New Deal did not end the Depression. Wartime spending did. What the New Deal did was change Washington's job description permanently. Relief, recovery, reform.
+
+Maya: [energetic] Eight. 1934 to 1941: from "never again" to December 7th. The Nye Committee feeds the suspicion, Congress passes the Neutrality Acts, and Roosevelt spends six years finding doors. Name the doors, and catch the date the old review got wrong.
+
+[2-second pause]
+
+Jay: [casual] Cash-and-carry, 1939. Destroyers for bases, 1940. No congressional vote. Lend-Lease, March 1941, Congress passes it. The Atlantic Charter... July 1941?
+
+Maya: [firm] August. Common mix-up, and the old review printed July too. August 1941, off Newfoundland: a statement of principles. No treaty, no declaration of war. And the Nye trap: the committee never proved the "merchants of death" dragged us into 1917. The hearings spread the suspicion; the proof never showed up. Then the fall of '41: an undeclared shooting war in the Atlantic, the oil embargo squeezing Japan, with about eighty percent of its oil coming from us, then the Hull Note in November, and December 7th.
+
+Maya: [dramatic] December 8th: "a date which will live in infamy." War on Japan the same day. December 11th: Germany and Italy declare war on us. Not the other way around.
+
+Maya: [confident tone] Eight questions, one sentence underneath. Check your boxes. Every crisis grew the government, and it never fully shrank back.
+
+Jay: [conversational] Crisis grew the government, and it never fully shrank back.
+
+Maya: [building] Test it. Progressivism: reformers grew Washington to tame the trusts and clean the food supply. 1917: a war drafted bodies, steered factories, policed speech. Washington grew again. The twenties tried to unwind it — Harding won on shrinking the government, and spending and taxes fell. But the unwinding never finished. 1929: the crash broke the economy, and the New Deal grew Washington for good. 1941: a second war made it global. Every crisis ratcheted it higher. It holds, all eight.
 
 Maya: Three questions, AP-shaped. Say your answer before I give it. First: picture a 1927 newspaper ad: "Drive it home today: thirty-six easy monthly payments!" A student says this proves Americans were getting richer. What's wrong with that read?
 
@@ -124,11 +124,11 @@ Maya: Third: a prediction. Your turn. Picture a 1919 editorial claiming the Leag
 
 Maya: Both sides. America's absence hurt — but the League had no army, and every big decision needed unanimity. Japan walked out; Italy's sanctions had no teeth. The structure was the deeper problem. Never write that the League failed only because America stayed out.
 
-Maya: Eight lessons, one cram, nothing dropped. Say the thesis once more.
+Maya: [confident tone] Eight lessons, one cram, nothing dropped. Say the thesis once more.
 
-Jay: Crisis grew the government. It never fully shrank back.
+Jay: [confident tone] Crisis grew the government. It never fully shrank back.
 
-Maya: Unit 7 is the Cold War. December 7th, and America never comes home again. Carry that sentence into the exam.
+Maya: [intrigued] Unit 7 is the Cold War. December 7th, and America never comes home again. Carry that sentence into the exam.
 
 ## Sources (production footer — strip before TTS)
 # Beat 1 (Progressivism, U6-L1 v2): muckraker mechanism (exposure→outrage→pressure); Hull House 1889 (F-U6-001 —
