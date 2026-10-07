@@ -564,6 +564,211 @@ const ThreeWayCompare: React.FC<{
 };
 
 /* ------------------------------------------------------------------ */
+/* MapJourney: generalized animated movement on maps.                  */
+/* Declare WHAT moves, WHERE, HOW FAST, with WHAT PERSONALITY.         */
+/*                                                                      */
+/* items: [{                                                            */
+/*   id: string,              // unique key                             */
+/*   content: string,         // emoji or image path (staticFile)       */
+/*   isImage?: boolean,      // true if content is an image path       */
+/*   from: [number, number],  // start [x, y] in 0-1000 space           */
+/*   to: [number, number],    // end [x, y] in 0-1000 space             */
+/*   duration: number,        // seconds for the journey                */
+/*   delay?: number,          // seconds before starting                */
+/*   arcHeight?: number,      // arc lift (default 0)                   */
+/*   style?: 'fly' | 'gallop' | 'ooze' | 'spin' | 'float',              */
+/*   size?: number,           // emoji font size (default 56)           */
+/*   trail?: boolean,         // motion trail (default false)           */
+/*   glow?: string,           // glow color (e.g. '#00ff00')            */
+/* }]                                                                   */
+/* ------------------------------------------------------------------ */
+type JourneyItem = {
+  id: string;
+  content: string;
+  isImage?: boolean;
+  from: [number, number];
+  to: [number, number];
+  duration: number;
+  delay?: number;
+  arcHeight?: number;
+  style?: 'fly' | 'gallop' | 'ooze' | 'spin' | 'float';
+  size?: number;
+  trail?: boolean;
+  glow?: string;
+};
+
+const MapJourney: React.FC<{
+  at: number;
+  mapImage: string;
+  items: JourneyItem[];
+  // Optional: route guide lines
+  guides?: { from: [number, number]; to: [number, number]; color: string }[];
+  // Optional labels
+  labels?: { x: number; y: number; text: string; color?: string }[];
+  caption?: string;
+  // Cinematic variant: overview (full map), detail (zoomed), dark (ominous)
+  variant?: 'overview' | 'detail' | 'dark';
+}> = ({ at, mapImage, items, guides = [], labels = [], caption, variant = 'overview' }) => {
+  const frame = useCurrentFrame();
+  if (frame < at) return null;
+  const elapsed = (frame - at) / FPS;
+
+  // Variant styling
+  const isDark = variant === 'dark';
+  const isDetail = variant === 'detail';
+
+  const renderItem = (item: JourneyItem) => {
+    const delay = item.delay || 0;
+    const t = Math.min(1, Math.max(0, (elapsed - delay) / item.duration));
+    if (t <= 0) return null;
+
+    // Easing: ease-in-out
+    const eased = t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+
+    // Position: lerp + arc
+    const x = item.from[0] + (item.to[0] - item.from[0]) * eased;
+    const arc = Math.sin(eased * Math.PI) * (item.arcHeight || 0);
+    const baseY = item.from[1] + (item.to[1] - item.from[1]) * eased;
+
+    // Style-specific motion
+    let y = baseY - arc;
+    let rotation = 0;
+    let scaleY = 1;
+
+    switch (item.style) {
+      case 'gallop':
+        // Bouncy gallop
+        y -= Math.abs(Math.sin(eased * Math.PI * 8)) * 25 * (1 - eased * 0.3);
+        rotation = Math.sin(eased * Math.PI * 8) * 8;
+        break;
+      case 'ooze':
+        // Sickly wobble
+        y += Math.sin(eased * Math.PI * 5) * 15;
+        rotation = Math.sin(eased * Math.PI * 3) * 20;
+        scaleY = 1 + Math.sin(eased * Math.PI * 4) * 0.15;
+        break;
+      case 'spin':
+        // Full spins
+        rotation = eased * 720;
+        break;
+      case 'float':
+        // Gentle bob
+        y -= Math.sin(eased * Math.PI * 3) * 20;
+        rotation = Math.sin(eased * Math.PI * 2) * 10;
+        break;
+      case 'fly':
+      default:
+        // Simple arc with slight tilt
+        rotation = (item.to[0] > item.from[0] ? 1 : -1) * 15 * Math.sin(eased * Math.PI);
+        break;
+    }
+
+    // Pop-in scale
+    const popIn = Math.min(1, t / 0.1);
+    const size = item.size || 56;
+
+    return (
+      <g key={item.id}>
+        {/* Trail */}
+        {item.trail && t < 1 && t > 0.05 && (
+          <circle
+            cx={x - (item.to[0] > item.from[0] ? 25 : -25)}
+            cy={y}
+            r={size * 0.3}
+            fill={item.glow || '#ffffff'}
+            opacity={0.25 * (1 - t)}
+          />
+        )}
+        {item.isImage ? (
+          <image
+            href={staticFile(item.content)}
+            x={x - size/2} y={y - size/2}
+            width={size} height={size}
+            transform={`rotate(${rotation} ${x} ${y}) scale(1 ${scaleY})`}
+            opacity={popIn}
+            style={item.glow ? { filter: `drop-shadow(0 0 10px ${item.glow})` } : {}}
+          />
+        ) : (
+          <text
+            x={x} y={y}
+            textAnchor="middle" dominantBaseline="central"
+            fontSize={size}
+            transform={`rotate(${rotation} ${x} ${y}) scale(${popIn} ${popIn * scaleY})`}
+            opacity={popIn}
+            style={item.glow ? { filter: `drop-shadow(0 0 12px ${item.glow})` } : {}}>
+            {item.content}
+          </text>
+        )}
+      </g>
+    );
+  };
+
+  return (
+    <div style={{
+      position: 'absolute', inset: 0, zIndex: 10,
+      display: 'flex', alignItems: 'center', justifyContent: 'center',
+    }}>
+      <div style={{ position: 'relative', width: '92%', height: '92%' }}>
+        <Img src={staticFile(mapImage)}
+          style={{
+            width: '100%', height: '100%', objectFit: 'cover', borderRadius: 12,
+            // Detail variant: zoom in 1.4x for closer look
+            transform: isDetail ? 'scale(1.35)' : 'scale(1)',
+            transition: 'transform 0.8s ease-out',
+          }} />
+        <div style={{
+          position: 'absolute', inset: 0, borderRadius: 12,
+          background: isDark
+            ? 'rgba(20,0,0,0.65)'  // ominous red-black for disease
+            : 'rgba(0,0,0,0.3)',
+        }} />
+        {/* Dark variant: red vignette pulse */}
+        {isDark && (
+          <div style={{
+            position: 'absolute', inset: 0, borderRadius: 12,
+            boxShadow: `inset 0 0 ${100 + Math.sin(elapsed * 3) * 20}px rgba(180,0,0,0.6)`,
+            pointerEvents: 'none',
+          }} />
+        )}
+        <svg viewBox="0 0 1000 1000" preserveAspectRatio="none"
+          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }}>
+          {/* Guide lines */}
+          {guides.map((g, i) => (
+            <path key={i}
+              d={`M ${g.from[0]} ${g.from[1]} Q 500 ${(g.from[1] + g.to[1]) / 2 - 100} ${g.to[0]} ${g.to[1]}`}
+              fill="none" stroke={g.color} strokeWidth="3"
+              strokeDasharray="12,8" opacity="0.35" />
+          ))}
+          {/* Labels */}
+          {labels.map((l, i) => (
+            <text key={i} x={l.x} y={l.y} textAnchor="middle"
+              fill={l.color || '#ffd700'} fontSize="36" fontWeight="900"
+              fontFamily="Georgia, serif"
+              style={{ textShadow: '2px 2px 8px #000' }}>
+              {l.text}
+            </text>
+          ))}
+          {/* Moving items */}
+          {items.map(renderItem)}
+        </svg>
+        {caption && (
+          <div style={{
+            position: 'absolute', bottom: '4%', left: '50%',
+            transform: 'translateX(-50%)',
+            fontFamily: 'Arial, sans-serif', fontWeight: 700, fontSize: 22,
+            color: '#f5e6c8', textShadow: '2px 2px 6px #000',
+            background: 'rgba(0,0,0,0.6)', padding: '8px 24px', borderRadius: 20,
+            whiteSpace: 'nowrap',
+          }}>
+            {caption}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+
+/* ------------------------------------------------------------------ */
 /* MapRoute: animated SVG route/line over a map image.                  */
 /* For Columbus voyage, Tordesillas line, etc.                         */
 /* ------------------------------------------------------------------ */
@@ -674,160 +879,61 @@ const MapRoute: React.FC<{
 /* Americas ↔ Europe with labeled arrows.                              */
 /* ------------------------------------------------------------------ */
 /* ------------------------------------------------------------------ */
-/* ExchangeArrows: THE GREAT GROCERY RUN — items fly across a real map.*/
-/* Potatoes do flips east, horses gallop west, disease oozes. Funny.   */
+/* ExchangeArrows: THE GREAT GROCERY RUN — built on MapJourney.        */
+/* Declare items, not animation code.                                  */
 /* ------------------------------------------------------------------ */
-const FLYING_ITEMS = [
-  // Eastbound (Americas -> Europe): the groceries
-  { emoji: '🥔', label: 'potato', dir: 'east' as const, delay: 0, yOff: -80, spin: 360, bounce: 0 },
-  { emoji: '🌽', label: 'maize', dir: 'east' as const, delay: 0.7, yOff: -20, spin: 720, bounce: 0 },
-  { emoji: '🍅', label: 'tomato', dir: 'east' as const, delay: 1.4, yOff: 40, spin: 180, bounce: 30 },
-  // Westbound (Europe -> Americas): the livestock + disease
-  { emoji: '🐴', label: 'horse', dir: 'west' as const, delay: 0.4, yOff: -60, spin: 0, bounce: 40 },
-  { emoji: '🌾', label: 'wheat', dir: 'west' as const, delay: 1.1, yOff: 0, spin: 180, bounce: 10 },
-  { emoji: '☠️', label: 'disease', dir: 'west' as const, delay: 1.8, yOff: 60, spin: 0, bounce: 15 },
-];
-
 const ExchangeArrows: React.FC<{
   at: number;
   position?: [number, number];
   highlight?: 'east' | 'west' | 'both';
-}> = ({ at, position = [0.5, 0.4], highlight = 'both' }) => {
-  const frame = useCurrentFrame();
-  if (frame < at) return null;
-  const elapsed = (frame - at) / FPS;
-
-  // Map coordinates (0-1000 space): Americas left, Europe right
-  const AMERICAS_X = 180;
-  const EUROPE_X = 820;
-  const MAP_Y = 500;
-
-  const eastItems = FLYING_ITEMS.filter(i => i.dir === 'east');
-  const westItems = FLYING_ITEMS.filter(i => i.dir === 'west');
+  variant?: 'overview' | 'detail' | 'dark';
+}> = ({ at, highlight = 'both', variant = 'overview' }) => {
   const showEast = highlight !== 'west';
   const showWest = highlight !== 'east';
 
-  const renderItem = (item: typeof FLYING_ITEMS[0], idx: number) => {
-    const start = item.delay;
-    const duration = 2.5;
-    const t = Math.min(1, Math.max(0, (elapsed - start) / duration));
-    if (t <= 0) return null;
+  const items: JourneyItem[] = [
+    ...(showEast ? [
+      { id: 'potato', content: '🥔', from: [150, 450] as [number, number], to: [750, 320] as [number, number],
+        duration: 2.5, delay: 0, arcHeight: 120, style: 'spin' as const, trail: true },
+      { id: 'maize', content: '🌽', from: [150, 510] as [number, number], to: [750, 380] as [number, number],
+        duration: 2.5, delay: 0.7, arcHeight: 100, style: 'spin' as const, trail: true },
+      { id: 'tomato', content: '🍅', from: [150, 570] as [number, number], to: [750, 440] as [number, number],
+        duration: 2.5, delay: 1.4, arcHeight: 80, style: 'fly' as const, trail: true },
+    ] : []),
+    ...(showWest ? [
+      { id: 'horse', content: '🐴', from: [750, 320] as [number, number], to: [150, 450] as [number, number],
+        duration: 2.5, delay: 0.4, arcHeight: 60, style: 'gallop' as const, trail: true },
+      { id: 'wheat', content: '🌾', from: [750, 380] as [number, number], to: [150, 510] as [number, number],
+        duration: 2.5, delay: 1.1, arcHeight: 80, style: 'float' as const, trail: true },
+      { id: 'disease', content: '☠️', from: [750, 440] as [number, number], to: [150, 570] as [number, number],
+        duration: 2.5, delay: 1.8, arcHeight: 40, style: 'ooze' as const, trail: true, glow: '#00ff00' },
+    ] : []),
+  ];
 
-    // Eased progress
-    const eased = t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+  const guides = [
+    ...(showEast ? [{ from: [150, 500] as [number, number], to: [750, 370] as [number, number], color: '#7CFC00' }] : []),
+    ...(showWest ? [{ from: [750, 370] as [number, number], to: [150, 500] as [number, number], color: '#ff6b6b' }] : []),
+  ];
 
-    // X: left->right for east, right->left for west
-    const x = item.dir === 'east'
-      ? AMERICAS_X + (EUROPE_X - AMERICAS_X) * eased
-      : EUROPE_X - (EUROPE_X - AMERICAS_X) * eased;
-
-    // Y: arc (up in middle) + offset + bounce
-    const arcHeight = 120;
-    const arc = Math.sin(eased * Math.PI) * arcHeight;
-    const bounce = item.bounce > 0
-      ? Math.abs(Math.sin(eased * Math.PI * 6)) * item.bounce * (1 - eased * 0.5)
-      : 0;
-    const y = MAP_Y + item.yOff - arc - bounce;
-
-    // Rotation: spin for fun items
-    const rotation = (item.spin * eased) + (item.dir === 'west' && item.emoji === '🐴' ? Math.sin(eased * 20) * 10 : 0);
-
-    // Scale: pop in, then slight squash on landing
-    const popIn = Math.min(1, t / 0.15);
-    const scale = popIn * (t > 0.9 ? 1 - (t - 0.9) * 2 * 0.2 : 1);
-
-    // Trail opacity
-    const trailOp = t < 1 ? 0.3 : 0;
-
-    // Disease gets a sickly glow
-    const isDisease = item.emoji === '☠️';
-
-    return (
-      <g key={`${item.label}-${idx}`}>
-        {/* Motion trail */}
-        {t < 1 && t > 0.1 && (
-          <circle cx={x - (item.dir === 'east' ? 30 : -30)} cy={y}
-            r="18" fill={isDisease ? '#00ff00' : '#ffffff'}
-            opacity={trailOp * (1 - t)} />
-        )}
-        <text x={x} y={y}
-          textAnchor="middle" dominantBaseline="central"
-          fontSize="56"
-          transform={`rotate(${rotation} ${x} ${y}) scale(${scale})`}
-          opacity={Math.min(1, t * 3)}
-          style={isDisease ? { filter: 'drop-shadow(0 0 12px #00ff00)' } : {}}>
-          {item.emoji}
-        </text>
-      </g>
-    );
-  };
+  const caption = highlight === 'east'
+    ? '🥔 → Potatoes, maize, tomatoes sail EAST'
+    : highlight === 'west'
+      ? '🐴 → Horses, wheat (and disease) sail WEST'
+      : 'The Great Grocery Run: food EAST, livestock WEST';
 
   return (
-    <div style={{
-      position: 'absolute', inset: 0, zIndex: 10,
-      display: 'flex', alignItems: 'center', justifyContent: 'center',
-    }}>
-      <div style={{ position: 'relative', width: '92%', height: '92%' }}>
-        {/* Real map background */}
-        <Img src={staticFile('historic/u1e2/portolan-chart.jpg')}
-          style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: 12 }} />
-        {/* Dark overlay for contrast */}
-        <div style={{
-          position: 'absolute', inset: 0, borderRadius: 12,
-          background: 'rgba(0,0,0,0.35)',
-        }} />
-
-        {/* Continent labels */}
-        <div style={{
-          position: 'absolute', left: '8%', top: '8%',
-          fontFamily: 'Georgia, serif', fontWeight: 900, fontSize: 36,
-          color: '#ffd700', textShadow: '2px 2px 8px #000',
-          opacity: showEast || showWest ? 1 : 0.3,
-        }}>
-          AMERICAS
-        </div>
-        <div style={{
-          position: 'absolute', right: '8%', top: '8%',
-          fontFamily: 'Georgia, serif', fontWeight: 900, fontSize: 36,
-          color: '#ffd700', textShadow: '2px 2px 8px #000',
-          opacity: showEast || showWest ? 1 : 0.3,
-        }}>
-          EUROPE
-        </div>
-
-        {/* Flying items on SVG layer */}
-        <svg viewBox="0 0 1000 1000" preserveAspectRatio="none"
-          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }}>
-          {/* Dashed route guides */}
-          {showEast && (
-            <path d={`M ${AMERICAS_X} ${MAP_Y} Q 500 ${MAP_Y - 150} ${EUROPE_X} ${MAP_Y}`}
-              fill="none" stroke="#7CFC00" strokeWidth="3"
-              strokeDasharray="12,8" opacity="0.4" />
-          )}
-          {showWest && (
-            <path d={`M ${EUROPE_X} ${MAP_Y + 40} Q 500 ${MAP_Y + 190} ${AMERICAS_X} ${MAP_Y + 40}`}
-              fill="none" stroke="#ff6b6b" strokeWidth="3"
-              strokeDasharray="12,8" opacity="0.4" />
-          )}
-          {showEast && eastItems.map((item, i) => renderItem(item, i))}
-          {showWest && westItems.map((item, i) => renderItem(item, i + 10))}
-        </svg>
-
-        {/* Caption */}
-        <div style={{
-          position: 'absolute', bottom: '4%', left: '50%',
-          transform: 'translateX(-50%)',
-          fontFamily: 'Arial, sans-serif', fontWeight: 700, fontSize: 22,
-          color: '#f5e6c8', textShadow: '2px 2px 6px #000',
-          background: 'rgba(0,0,0,0.6)', padding: '8px 24px', borderRadius: 20,
-          whiteSpace: 'nowrap',
-        }}>
-          {highlight === 'east' && '🥔 → Potatoes, maize, tomatoes sail EAST'}
-          {highlight === 'west' && '🐴 → Horses, wheat (and disease) sail WEST'}
-          {highlight === 'both' && 'The Great Grocery Run: food EAST, livestock WEST'}
-        </div>
-      </div>
-    </div>
+    <MapJourney
+      at={at}
+      mapImage="historic/u1e2/tordesillas-map.jpg"
+      items={items}
+      guides={guides}
+      labels={[
+        { x: 120, y: 100, text: 'AMERICAS' },
+        { x: 880, y: 100, text: 'EUROPE' },
+      ]}
+      caption={caption}
+      variant={variant}
+    />
   );
 };
 
@@ -1062,24 +1168,24 @@ export const U1E2Episode: React.FC = () => {
               items={COMPARE_ITEMS_T09}
               appearOffsets={[5.37, 9.36, 12.09]} position={[0.5, 0.45]} />
           )}
-          {/* t24: Exchange directions — two-way visual flow */}
+          {/* t24: Exchange overview — establishing shot, both directions */}
           {activeTurn?.id === 't24' && (
-            <ExchangeArrows at={activeStartFrame} position={[0.5, 0.42]} />
+            <ExchangeArrows at={activeStartFrame} variant="overview" />
           )}
-          {/* t25: crops east — highlight eastward flow */}
+          {/* t25: crops east — detail shot, zoomed on eastbound */}
           {activeTurn?.id === 't25' && (
-            <ExchangeArrows at={activeStartFrame} position={[0.5, 0.42]}
-              highlight="east" />
+            <ExchangeArrows at={activeStartFrame}
+              highlight="east" variant="detail" />
           )}
-          {/* t27: livestock west — highlight westward flow */}
+          {/* t27: livestock west — detail shot, zoomed on westbound */}
           {activeTurn?.id === 't27' && (
-            <ExchangeArrows at={activeStartFrame} position={[0.5, 0.42]}
-              highlight="west" />
+            <ExchangeArrows at={activeStartFrame}
+              highlight="west" variant="detail" />
           )}
-          {/* t29: disease west — one-way, dramatic */}
+          {/* t29: disease west — dark ominous shot, tone shift */}
           {activeTurn?.id === 't29' && (
-            <ExchangeArrows at={activeStartFrame} position={[0.5, 0.42]}
-              highlight="west" />
+            <ExchangeArrows at={activeStartFrame}
+              highlight="west" variant="dark" />
           )}
           {/* t19: Tordesillas line draws on the map when he says "line" @5.31s */}
           {activeTurn?.id === 't19' && turnElapsed >= 5.31 && (
