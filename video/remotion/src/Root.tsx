@@ -145,7 +145,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="U1E3Episode"
         component={U1E3Episode}
-        durationInFrames={21495}
+        durationInFrames={22904}
         fps={30}
         width={1280}
         height={720}
@@ -153,7 +153,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="U1E4Episode"
         component={U1E4Episode}
-        durationInFrames={21765}
+        durationInFrames={24013}
         fps={30}
         width={1280}
         height={720}
@@ -161,7 +161,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="U1E5Episode"
         component={U1E5Episode}
-        durationInFrames={19704}
+        durationInFrames={21953}
         fps={30}
         width={1280}
         height={720}
@@ -169,7 +169,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="U1E6Episode"
         component={U1E6Episode}
-        durationInFrames={22494}
+        durationInFrames={24922}
         fps={30}
         width={1280}
         height={720}

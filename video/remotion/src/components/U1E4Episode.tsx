@@ -145,210 +145,210 @@ const SUB_BEATS: SubBeat[] = [
   { turnId: 't14', offset: 8.0, kind: 'smarttext', text: 'WINTER 1609. WHAT HAPPENS NEXT?', level: 'subtitle', position: [0.5, 0.3], entrance: 'fade' },
 
   // t15: "500 → 60" — STARVING TIME (hero, red)
-  { turnId: 't15', offset: 2.0, kind: 'smarttext', text: '500 → 60', level: 'hero', position: [0.5, 0.25], entrance: 'stamp', color: '#ff0000' },
-  { turnId: 't15', offset: 2.0, kind: 'bg-swap', bgImage: 'historic/u1e4/starving-time.jpg' },
-  { turnId: 't15', offset: 5.0, kind: 'smarttext', text: 'THE STARVING TIME', level: 'subtitle', position: [0.5, 0.45], color: '#ff6b6b' },
+  { turnId: 't16', offset: 2.0, kind: 'smarttext', text: '500 → 60', level: 'hero', position: [0.5, 0.25], entrance: 'stamp', color: '#ff0000' },
+  { turnId: 't16', offset: 2.0, kind: 'bg-swap', bgImage: 'historic/u1e4/starving-time.jpg' },
+  { turnId: 't16', offset: 5.0, kind: 'smarttext', text: 'THE STARVING TIME', level: 'subtitle', position: [0.5, 0.45], color: '#ff6b6b' },
 
   // t16: They quit + Delaware arrives (irony)
-  { turnId: 't16', offset: 6.0, kind: 'smarttext', text: 'SPRING 1610: THEY QUIT', level: 'subtitle', position: [0.5, 0.2], color: '#ff6b6b' },
-  { turnId: 't16', offset: 10.0, kind: 'smarttext', text: 'DE LA WARR ARRIVES AS THEY LEAVE', level: 'subtitle', position: [0.5, 0.35], entrance: 'stamp', color: '#ffd700' },
+  { turnId: 't17', offset: 6.0, kind: 'smarttext', text: 'SPRING 1610: THEY QUIT', level: 'subtitle', position: [0.5, 0.2], color: '#ff6b6b' },
+  { turnId: 't17', offset: 10.0, kind: 'smarttext', text: 'DE LA WARR ARRIVES AS THEY LEAVE', level: 'subtitle', position: [0.5, 0.35], entrance: 'stamp', color: '#ffd700' },
 
   // t17: Delaware irony
-  { turnId: 't17', offset: 0.5, kind: 'bubble', text: 'Ran into your replacement on the way out 😅', position: [0.5, 0.3], width: 400 },
+  { turnId: 't18', offset: 0.5, kind: 'bubble', text: 'Ran into your replacement on the way out 😅', position: [0.5, 0.3], width: 400 },
 
   // t18: "The bay, the river, and the state"
-  { turnId: 't18', offset: 0.5, kind: 'smarttext', text: 'DELAWARE: BAY, RIVER, STATE', level: 'subtitle', position: [0.5, 0.3] },
-  { turnId: 't18', offset: 1.0, kind: 'bg-swap', bgImage: 'historic/u1e4/delaware-portrait.jpg' },
+  { turnId: 't19', offset: 0.5, kind: 'smarttext', text: 'DELAWARE: BAY, RIVER, STATE', level: 'subtitle', position: [0.5, 0.3] },
+  { turnId: 't19', offset: 1.0, kind: 'bg-swap', bgImage: 'historic/u1e4/delaware-portrait.jpg' },
 
   // t19: Exam question setup
-  { turnId: 't19', offset: 2.0, kind: 'smarttext', text: 'SWAMP OR PEOPLE?', level: 'title', position: [0.5, 0.25], entrance: 'stamp' },
+  { turnId: 't20', offset: 2.0, kind: 'smarttext', text: 'SWAMP OR PEOPLE?', level: 'title', position: [0.5, 0.25], entrance: 'stamp' },
 
   // t20: THESIS — "The swamp hurt, but the gold-fever killed"
-  { turnId: 't20', offset: 1.0, kind: 'smarttext', text: 'THE SWAMP HURT', level: 'subtitle', position: [0.5, 0.25] },
-  { turnId: 't20', offset: 4.0, kind: 'smarttext', text: 'THE GOLD-FEVER KILLED', level: 'title', position: [0.5, 0.4], entrance: 'stamp', color: '#ff6b6b' },
+  { turnId: 't21', offset: 1.0, kind: 'smarttext', text: 'THE SWAMP HURT', level: 'subtitle', position: [0.5, 0.25] },
+  { turnId: 't21', offset: 4.0, kind: 'smarttext', text: 'THE GOLD-FEVER KILLED', level: 'title', position: [0.5, 0.4], entrance: 'stamp', color: '#ff6b6b' },
 
   // === ACT 2: TOBACCO (t21-t35) ===
 
   // t21: Box 1 mistake
-  { turnId: 't21', offset: 1.0, kind: 'smarttext', text: '📦 BOX 1 MISTAKE', level: 'subtitle', position: [0.5, 0.2] },
-  { turnId: 't21', offset: 3.0, kind: 'smarttext', text: 'NOT THE KING\'S MONEY', level: 'subtitle', position: [0.5, 0.35], color: '#ffd700' },
-  { turnId: 't21', offset: 5.5, kind: 'smarttext', text: '✓ BOX 1 CHECKED', level: 'body', position: [0.5, 0.5], color: '#90ee90' },
+  { turnId: 't22', offset: 1.0, kind: 'smarttext', text: '📦 BOX 1 MISTAKE', level: 'subtitle', position: [0.5, 0.2] },
+  { turnId: 't22', offset: 3.0, kind: 'smarttext', text: 'NOT THE KING\'S MONEY', level: 'subtitle', position: [0.5, 0.35], color: '#ffd700' },
+  { turnId: 't22', offset: 5.5, kind: 'smarttext', text: '✓ BOX 1 CHECKED', level: 'body', position: [0.5, 0.5], color: '#90ee90' },
 
   // t22: "One plant" — Rolfe's tobacco
-  { turnId: 't22', offset: 6.0, kind: 'smarttext', text: 'ONE PLANT', level: 'hero', position: [0.5, 0.2], entrance: 'stamp', color: '#90ee90' },
-  { turnId: 't22', offset: 8.0, kind: 'smarttext', text: 'JOHN ROLFE + TOBACCO, ~1612', level: 'subtitle', position: [0.5, 0.35] },
-  { turnId: 't22', offset: 8.0, kind: 'bg-swap', bgImage: 'historic/u1e4/tobacco-plant.jpg' },
+  { turnId: 't23', offset: 6.0, kind: 'smarttext', text: 'ONE PLANT', level: 'hero', position: [0.5, 0.2], entrance: 'stamp', color: '#90ee90' },
+  { turnId: 't23', offset: 8.0, kind: 'smarttext', text: 'JOHN ROLFE + TOBACCO, ~1612', level: 'subtitle', position: [0.5, 0.35] },
+  { turnId: 't23', offset: 8.0, kind: 'bg-swap', bgImage: 'historic/u1e4/tobacco-plant.jpg' },
 
   // t23: "Rolfe the tobacco guy is Rolfe the husband guy"
-  { turnId: 't23', offset: 0.3, kind: 'bubble', text: 'Same guy?! 💍🌿', position: [0.5, 0.3], width: 280 },
+  { turnId: 't24', offset: 0.3, kind: 'bubble', text: 'Same guy?! 💍🌿', position: [0.5, 0.3], width: 280 },
 
   // t24: Tobacco selling in London
-  { turnId: 't24', offset: 3.0, kind: 'smarttext', text: 'THE WEED THAT SAVED THEM', level: 'subtitle', position: [0.5, 0.3], color: '#90ee90' },
-  { turnId: 't24', offset: 5.0, kind: 'bg-swap', bgImage: 'historic/u1e4/tobacco-curing.jpg' },
+  { turnId: 't25', offset: 3.0, kind: 'smarttext', text: 'THE WEED THAT SAVED THEM', level: 'subtitle', position: [0.5, 0.3], color: '#90ee90' },
+  { turnId: 't25', offset: 5.0, kind: 'bg-swap', bgImage: 'historic/u1e4/tobacco-curing.jpg' },
 
   // t25: King hated smoking?
-  { turnId: 't25', offset: 0.3, kind: 'bubble', text: 'The king hated smoking?', position: [0.5, 0.3], width: 320 },
+  { turnId: 't26', offset: 0.3, kind: 'bubble', text: 'The king hated smoking?', position: [0.5, 0.3], width: 320 },
 
   // t26: Counterblaste
-  { turnId: 't26', offset: 2.0, kind: 'smarttext', text: 'A COUNTERBLASTE TO TOBACCO', level: 'title', position: [0.5, 0.2], entrance: 'stamp' },
-  { turnId: 't26', offset: 4.0, kind: 'smarttext', text: '1604 — JAMES I', level: 'subtitle', position: [0.5, 0.35] },
-  { turnId: 't26', offset: 4.0, kind: 'bg-swap', bgImage: 'historic/u1e4/james-i.jpg' },
-  { turnId: 't26', offset: 6.5, kind: 'smarttext', text: 'NEVER STOOD A CHANCE AGAINST THE MONEY', level: 'body', position: [0.5, 0.55], color: '#ffd700' },
+  { turnId: 't27', offset: 2.0, kind: 'smarttext', text: 'A COUNTERBLASTE TO TOBACCO', level: 'title', position: [0.5, 0.2], entrance: 'stamp' },
+  { turnId: 't27', offset: 4.0, kind: 'smarttext', text: '1604 — JAMES I', level: 'subtitle', position: [0.5, 0.35] },
+  { turnId: 't27', offset: 4.0, kind: 'bg-swap', bgImage: 'historic/u1e4/james-i.jpg' },
+  { turnId: 't27', offset: 6.5, kind: 'smarttext', text: 'NEVER STOOD A CHANCE AGAINST THE MONEY', level: 'body', position: [0.5, 0.55], color: '#ffd700' },
 
   // t27: Disney version?
-  { turnId: 't27', offset: 0.5, kind: 'bubble', text: 'How much Disney survives? 🎬', position: [0.5, 0.3], width: 340 },
+  { turnId: 't28', offset: 0.5, kind: 'bubble', text: 'How much Disney survives? 🎬', position: [0.5, 0.3], width: 340 },
 
   // t28: Pocahontas reality — 1613, 1614, 1617
-  { turnId: 't28', offset: 2.0, kind: 'smarttext', text: '1613: CAPTURED', level: 'body', position: [0.5, 0.2] },
-  { turnId: 't28', offset: 5.0, kind: 'smarttext', text: '1614: MARRIED ROLFE', level: 'body', position: [0.5, 0.32] },
-  { turnId: 't28', offset: 8.0, kind: 'smarttext', text: '1617: DIED IN ENGLAND, ~20', level: 'body', position: [0.5, 0.44], color: '#ff6b6b' },
+  { turnId: 't29', offset: 2.0, kind: 'smarttext', text: '1613: CAPTURED', level: 'body', position: [0.5, 0.2] },
+  { turnId: 't29', offset: 5.0, kind: 'smarttext', text: '1614: MARRIED ROLFE', level: 'body', position: [0.5, 0.32] },
+  { turnId: 't29', offset: 8.0, kind: 'smarttext', text: '1617: DIED IN ENGLAND, ~20', level: 'body', position: [0.5, 0.44], color: '#ff6b6b' },
 
   // t29: Who works the fields?
-  { turnId: 't29', offset: 0.5, kind: 'bubble', text: 'Who plants all this? 🌿', position: [0.5, 0.3], width: 300 },
+  { turnId: 't30', offset: 0.5, kind: 'bubble', text: 'Who plants all this? 🌿', position: [0.5, 0.3], width: 300 },
 
   // t30: Headright explained
-  { turnId: 't30', offset: 4.0, kind: 'smarttext', text: 'HEADRIGHT, 1618', level: 'title', position: [0.5, 0.15], entrance: 'stamp' },
-  { turnId: 't30', offset: 6.0, kind: 'smarttext', text: '50 ACRES PER PASSAGE PAID', level: 'subtitle', position: [0.5, 0.3], color: '#ffd700' },
-  { turnId: 't30', offset: 9.0, kind: 'smarttext', text: '50 ACRES × 6 HEADS = 300 ACRES', level: 'body', position: [0.5, 0.45], color: '#ffd700' },
+  { turnId: 't31', offset: 4.0, kind: 'smarttext', text: 'HEADRIGHT, 1618', level: 'title', position: [0.5, 0.15], entrance: 'stamp' },
+  { turnId: 't31', offset: 6.0, kind: 'smarttext', text: '50 ACRES PER PASSAGE PAID', level: 'subtitle', position: [0.5, 0.3], color: '#ffd700' },
+  { turnId: 't31', offset: 9.0, kind: 'smarttext', text: '50 ACRES × 6 HEADS = 300 ACRES', level: 'body', position: [0.5, 0.45], color: '#ffd700' },
 
   // t31: Workers get acres? (misconception)
-  { turnId: 't31', offset: 0.3, kind: 'bubble', text: 'Workers got the land?', position: [0.5, 0.3], width: 300 },
+  { turnId: 't32', offset: 0.3, kind: 'bubble', text: 'Workers got the land?', position: [0.5, 0.3], width: 300 },
 
   // t32: "The boss, not the boat ride" (who benefits)
-  { turnId: 't32', offset: 1.0, kind: 'smarttext', text: 'THE BOSS, NOT THE BOAT RIDE', level: 'subtitle', position: [0.5, 0.3], color: '#ff6b6b' },
+  { turnId: 't33', offset: 1.0, kind: 'smarttext', text: 'THE BOSS, NOT THE BOAT RIDE', level: 'subtitle', position: [0.5, 0.3], color: '#ff6b6b' },
 
   // t33: Workers signed up?
-  { turnId: 't33', offset: 0.3, kind: 'bubble', text: 'They signed up for this?', position: [0.5, 0.3], width: 320 },
+  { turnId: 't34', offset: 0.3, kind: 'bubble', text: 'They signed up for this?', position: [0.5, 0.3], width: 320 },
 
   // t34: "4-7 YEARS" — indentured servitude
-  { turnId: 't34', offset: 2.0, kind: 'smarttext', text: '4–7 YEARS', level: 'hero', position: [0.5, 0.25], entrance: 'stamp', color: '#ffd700' },
-  { turnId: 't34', offset: 4.0, kind: 'smarttext', text: 'INDENTURED SERVITUDE', level: 'subtitle', position: [0.5, 0.42] },
-  { turnId: 't34', offset: 4.0, kind: 'bg-swap', bgImage: 'historic/u1e4/tobacco-curing.jpg' },
+  { turnId: 't35', offset: 2.0, kind: 'smarttext', text: '4–7 YEARS', level: 'hero', position: [0.5, 0.25], entrance: 'stamp', color: '#ffd700' },
+  { turnId: 't35', offset: 4.0, kind: 'smarttext', text: 'INDENTURED SERVITUDE', level: 'subtitle', position: [0.5, 0.42] },
+  { turnId: 't35', offset: 4.0, kind: 'bg-swap', bgImage: 'historic/u1e4/tobacco-curing.jpg' },
 
   // t35: Prediction — where does fresh land come from?
-  { turnId: 't35', offset: 5.0, kind: 'smarttext', text: 'FRESH FIELDS HAVE TO COME FROM SOMEWHERE...', level: 'subtitle', position: [0.5, 0.3], entrance: 'fade' },
+  { turnId: 't36', offset: 5.0, kind: 'smarttext', text: 'FRESH FIELDS HAVE TO COME FROM SOMEWHERE...', level: 'subtitle', position: [0.5, 0.3], entrance: 'fade' },
 
   // === ACT 3: 1619 — THE CONTRADICTION (t36-t55) ===
 
   // t36: "Powhatan land" (serious)
-  { turnId: 't36', offset: 1.0, kind: 'smarttext', text: 'POWHATAN LAND', level: 'title', position: [0.5, 0.25], entrance: 'stamp', color: '#ff6b6b' },
-  { turnId: 't36', offset: 1.0, kind: 'bg-swap', bgImage: 'historic/u1e4/powhatan-village.jpg' },
+  { turnId: 't38', offset: 1.0, kind: 'smarttext', text: 'POWHATAN LAND', level: 'title', position: [0.5, 0.25], entrance: 'stamp', color: '#ff6b6b' },
+  { turnId: 't38', offset: 1.0, kind: 'bg-swap', bgImage: 'historic/u1e4/powhatan-village.jpg' },
 
   // t37: Exam warning
-  { turnId: 't37', offset: 2.0, kind: 'smarttext', text: 'TOBACCO + LABOR = ONE SYSTEM', level: 'subtitle', position: [0.5, 0.3] },
+  { turnId: 't39', offset: 2.0, kind: 'smarttext', text: 'TOBACCO + LABOR = ONE SYSTEM', level: 'subtitle', position: [0.5, 0.3] },
 
   // t38: Box 2 mistake + checked
-  { turnId: 't38', offset: 1.0, kind: 'smarttext', text: 'HEADRIGHT → THE PLANTER WHO PAID', level: 'subtitle', position: [0.5, 0.3], color: '#ffd700' },
-  { turnId: 't38', offset: 5.0, kind: 'smarttext', text: '✓ BOX 2 CHECKED', level: 'body', position: [0.5, 0.5], color: '#90ee90' },
+  { turnId: 't40', offset: 1.0, kind: 'smarttext', text: 'HEADRIGHT → THE PLANTER WHO PAID', level: 'subtitle', position: [0.5, 0.3], color: '#ffd700' },
+  { turnId: 't40', offset: 5.0, kind: 'smarttext', text: '✓ BOX 2 CHECKED', level: 'body', position: [0.5, 0.5], color: '#90ee90' },
 
   // t39: Who's running this place? + 1619 HERO
-  { turnId: 't39', offset: 4.0, kind: 'bubble', text: 'Who\'s in charge here?', position: [0.5, 0.3], width: 300 },
-  { turnId: 't39', offset: 6.0, kind: 'smarttext', text: '1619', level: 'hero', position: [0.5, 0.2], entrance: 'stamp', color: '#ffd700' },
-  { turnId: 't39', offset: 7.5, kind: 'smarttext', text: 'HOUSE OF BURGESSES', level: 'title', position: [0.5, 0.4], entrance: 'stamp' },
-  { turnId: 't39', offset: 7.5, kind: 'bg-swap', bgImage: 'historic/u1e4/burgesses-assembly.jpg' },
+  { turnId: 't41', offset: 4.0, kind: 'bubble', text: 'Who\'s in charge here?', position: [0.5, 0.3], width: 300 },
+  { turnId: 't41', offset: 6.0, kind: 'smarttext', text: '1619', level: 'hero', position: [0.5, 0.2], entrance: 'stamp', color: '#ffd700' },
+  { turnId: 't41', offset: 7.5, kind: 'smarttext', text: 'HOUSE OF BURGESSES', level: 'title', position: [0.5, 0.4], entrance: 'stamp' },
+  { turnId: 't41', offset: 7.5, kind: 'bg-swap', bgImage: 'historic/u1e4/burgesses-assembly.jpg' },
 
   // t40: "The company just handed over power?" (bridge)
-  { turnId: 't40', offset: 0.3, kind: 'bubble', text: 'They just... gave up power?', position: [0.5, 0.3], width: 320 },
+  { turnId: 't42', offset: 0.3, kind: 'bubble', text: 'They just... gave up power?', position: [0.5, 0.3], width: 320 },
 
   // t41: Traded power for settlers
-  { turnId: 't41', offset: 3.0, kind: 'smarttext', text: 'A LITTLE POWER → A LOT OF SETTLERS', level: 'subtitle', position: [0.5, 0.3] },
+  { turnId: 't43', offset: 3.0, kind: 'smarttext', text: 'A LITTLE POWER → A LOT OF SETTLERS', level: 'subtitle', position: [0.5, 0.3] },
 
   // t42: "Democracy year?"
-  { turnId: 't42', offset: 0.5, kind: 'bubble', text: 'Democracy year? 🗳️', position: [0.5, 0.3], width: 280 },
+  { turnId: 't44', offset: 0.5, kind: 'bubble', text: 'Democracy year? 🗳️', position: [0.5, 0.3], width: 280 },
 
   // t43: "Careful." — franchise narrowed
-  { turnId: 't43', offset: 1.0, kind: 'smarttext', text: 'FREE MEN AT FIRST', level: 'body', position: [0.5, 0.25] },
-  { turnId: 't43', offset: 4.0, kind: 'smarttext', text: 'THEN IT NARROWED', level: 'subtitle', position: [0.5, 0.38], color: '#ff6b6b' },
-  { turnId: 't43', offset: 7.0, kind: 'smarttext', text: 'NEVER: WOMEN, SERVANTS, ENSLAVED', level: 'body', position: [0.5, 0.52] },
+  { turnId: 't45', offset: 1.0, kind: 'smarttext', text: 'FREE MEN AT FIRST', level: 'body', position: [0.5, 0.25] },
+  { turnId: 't45', offset: 4.0, kind: 'smarttext', text: 'THEN IT NARROWED', level: 'subtitle', position: [0.5, 0.38], color: '#ff6b6b' },
+  { turnId: 't45', offset: 7.0, kind: 'smarttext', text: 'NEVER: WOMEN, SERVANTS, ENSLAVED', level: 'body', position: [0.5, 0.52] },
 
   // t44: Box 3 mistake
-  { turnId: 't44', offset: 1.0, kind: 'smarttext', text: 'NOT EVERYONE VOTED', level: 'subtitle', position: [0.5, 0.3], color: '#ff6b6b' },
+  { turnId: 't46', offset: 1.0, kind: 'smarttext', text: 'NOT EVERYONE VOTED', level: 'subtitle', position: [0.5, 0.3], color: '#ff6b6b' },
 
   // t45: Exam point
-  { turnId: 't45', offset: 3.0, kind: 'smarttext', text: 'COLONISTS EXPECTED A SAY', level: 'subtitle', position: [0.5, 0.3] },
+  { turnId: 't47', offset: 3.0, kind: 'smarttext', text: 'COLONISTS EXPECTED A SAY', level: 'subtitle', position: [0.5, 0.3] },
 
   // t46: "Same year... something else?"
-  { turnId: 't46', offset: 1.0, kind: 'bubble', text: 'Same year... something else? 🤔', position: [0.5, 0.3], width: 360 },
+  { turnId: 't48', offset: 1.0, kind: 'bubble', text: 'Same year... something else? 🤔', position: [0.5, 0.3], width: 360 },
 
   // t47: WHITE LION + "20 and odd" (dark)
-  { turnId: 't47', offset: 6.0, kind: 'smarttext', text: 'THE WHITE LION', level: 'title', position: [0.5, 0.2], entrance: 'stamp', color: '#ff6b6b' },
-  { turnId: 't47', offset: 6.0, kind: 'bg-swap', bgImage: 'historic/u1e4/white-lion-ship.jpg' },
-  { turnId: 't47', offset: 12.0, kind: 'smarttext', text: '"20 AND ODD" AFRICANS', level: 'subtitle', position: [0.5, 0.38], color: '#ff6b6b' },
+  { turnId: 't49', offset: 6.0, kind: 'smarttext', text: 'THE WHITE LION', level: 'title', position: [0.5, 0.2], entrance: 'stamp', color: '#ff6b6b' },
+  { turnId: 't49', offset: 6.0, kind: 'bg-swap', bgImage: 'historic/u1e4/white-lion-ship.jpg' },
+  { turnId: 't49', offset: 12.0, kind: 'smarttext', text: '"20 AND ODD" AFRICANS', level: 'subtitle', position: [0.5, 0.38], color: '#ff6b6b' },
 
   // t48: Start of slavery?
-  { turnId: 't48', offset: 0.5, kind: 'bubble', text: 'Start of slavery?', position: [0.5, 0.3], width: 280 },
+  { turnId: 't50', offset: 0.5, kind: 'bubble', text: 'Start of slavery?', position: [0.5, 0.3], width: 280 },
 
   // t49: Status murky (hedged)
-  { turnId: 't49', offset: 6.0, kind: 'smarttext', text: 'STOLEN TWICE OVER', level: 'subtitle', position: [0.5, 0.25], color: '#ff6b6b' },
-  { turnId: 't49', offset: 10.0, kind: 'smarttext', text: 'SYSTEM COMES DECADES LATER', level: 'body', position: [0.5, 0.4] },
+  { turnId: 't51', offset: 6.0, kind: 'smarttext', text: 'STOLEN TWICE OVER', level: 'subtitle', position: [0.5, 0.25], color: '#ff6b6b' },
+  { turnId: 't51', offset: 10.0, kind: 'smarttext', text: 'SYSTEM COMES DECADES LATER', level: 'body', position: [0.5, 0.4] },
 
   // t50: "Same year. An assembly votes, and a slave ship lands." (the line)
-  { turnId: 't50', offset: 0.5, kind: 'smarttext', text: 'SAME YEAR', level: 'title', position: [0.5, 0.25], entrance: 'stamp' },
-  { turnId: 't50', offset: 2.0, kind: 'smarttext', text: 'AN ASSEMBLY VOTES. A SLAVE SHIP LANDS.', level: 'subtitle', position: [0.5, 0.42], color: '#ff6b6b' },
+  { turnId: 't52', offset: 0.5, kind: 'smarttext', text: 'SAME YEAR', level: 'title', position: [0.5, 0.25], entrance: 'stamp' },
+  { turnId: 't52', offset: 2.0, kind: 'smarttext', text: 'AN ASSEMBLY VOTES. A SLAVE SHIP LANDS.', level: 'subtitle', position: [0.5, 0.42], color: '#ff6b6b' },
 
   // t51: THE CONTRADICTION (title, serious)
-  { turnId: 't51', offset: 1.0, kind: 'smarttext', text: 'THE CONTRADICTION', level: 'title', position: [0.5, 0.2], entrance: 'stamp', color: '#ffd700' },
-  { turnId: 't51', offset: 3.0, kind: 'smarttext', text: 'AT THE START OF ENGLISH AMERICA', level: 'subtitle', position: [0.5, 0.35] },
-  { turnId: 't51', offset: 12.0, kind: 'smarttext', text: '1622: OPECHANCANOUGH STRIKES', level: 'subtitle', position: [0.5, 0.55], color: '#ff6b6b' },
+  { turnId: 't53', offset: 1.0, kind: 'smarttext', text: 'THE CONTRADICTION', level: 'title', position: [0.5, 0.2], entrance: 'stamp', color: '#ffd700' },
+  { turnId: 't53', offset: 3.0, kind: 'smarttext', text: 'AT THE START OF ENGLISH AMERICA', level: 'subtitle', position: [0.5, 0.35] },
+  { turnId: 't53', offset: 12.0, kind: 'smarttext', text: '1622: OPECHANCANOUGH STRIKES', level: 'subtitle', position: [0.5, 0.55], color: '#ff6b6b' },
 
   // t52: "A quarter"
-  { turnId: 't52', offset: 0.5, kind: 'smarttext', text: '347 DEAD. A QUARTER OF THE COLONY.', level: 'title', position: [0.5, 0.3], entrance: 'stamp', color: '#ff0000' },
+  { turnId: 't54', offset: 0.5, kind: 'smarttext', text: '347 DEAD. A QUARTER OF THE COLONY.', level: 'title', position: [0.5, 0.3], entrance: 'stamp', color: '#ff0000' },
 
   // t53: Not sudden
-  { turnId: 't53', offset: 1.0, kind: 'smarttext', text: '15 YEARS OF PLANTING PAST EVERY BOUNDARY', level: 'subtitle', position: [0.5, 0.3] },
+  { turnId: 't55', offset: 1.0, kind: 'smarttext', text: '15 YEARS OF PLANTING PAST EVERY BOUNDARY', level: 'subtitle', position: [0.5, 0.3] },
 
   // t54: Retaliation + 1624
-  { turnId: 't54', offset: 8.0, kind: 'smarttext', text: '1624: ROYAL COLONY', level: 'title', position: [0.5, 0.3], entrance: 'stamp' },
-  { turnId: 't54', offset: 12.0, kind: 'smarttext', text: 'CHARTER REVOKED', level: 'subtitle', position: [0.5, 0.45], color: '#ff6b6b' },
+  { turnId: 't56', offset: 8.0, kind: 'smarttext', text: '1624: ROYAL COLONY', level: 'title', position: [0.5, 0.3], entrance: 'stamp' },
+  { turnId: 't56', offset: 12.0, kind: 'smarttext', text: 'CHARTER REVOKED', level: 'subtitle', position: [0.5, 0.45], color: '#ff6b6b' },
 
   // t55: Exam warning (1619 compare)
-  { turnId: 't55', offset: 3.0, kind: 'smarttext', text: '1619: BUILT FOR A COMPARE QUESTION', level: 'subtitle', position: [0.5, 0.3] },
+  { turnId: 't57', offset: 3.0, kind: 'smarttext', text: '1619: BUILT FOR A COMPARE QUESTION', level: 'subtitle', position: [0.5, 0.3] },
 
   // === ACT 4: RECAP + EXAM (t56-t75) ===
 
   // t56: Box 4 mistake
-  { turnId: 't56', offset: 1.0, kind: 'smarttext', text: 'NOT A SLAVE COLONY OVERNIGHT', level: 'subtitle', position: [0.5, 0.3] },
+  { turnId: 't58', offset: 1.0, kind: 'smarttext', text: 'NOT A SLAVE COLONY OVERNIGHT', level: 'subtitle', position: [0.5, 0.3] },
 
   // t57: Four boxes intro
-  { turnId: 't57', offset: 2.0, kind: 'smarttext', text: 'FOUR BOXES', level: 'hero', position: [0.5, 0.2], entrance: 'stamp' },
+  { turnId: 't59', offset: 2.0, kind: 'smarttext', text: 'FOUR BOXES', level: 'hero', position: [0.5, 0.2], entrance: 'stamp' },
 
   // t58: Box 1 checked
-  { turnId: 't58', offset: 2.0, kind: 'smarttext', text: '📦 BOX 1: JAMESTOWN ✓', level: 'title', position: [0.5, 0.25], color: '#90ee90' },
-  { turnId: 't58', offset: 8.0, kind: 'smarttext', text: '1607 · COMPANY MONEY · GOLD-FEVER', level: 'body', position: [0.5, 0.42] },
+  { turnId: 't60', offset: 2.0, kind: 'smarttext', text: '📦 BOX 1: JAMESTOWN ✓', level: 'title', position: [0.5, 0.25], color: '#90ee90' },
+  { turnId: 't60', offset: 8.0, kind: 'smarttext', text: '1607 · COMPANY MONEY · GOLD-FEVER', level: 'body', position: [0.5, 0.42] },
 
   // t59: Box 2 checked
-  { turnId: 't59', offset: 2.0, kind: 'smarttext', text: '📦 BOX 2: TOBACCO ✓', level: 'title', position: [0.5, 0.25], color: '#90ee90' },
-  { turnId: 't59', offset: 6.0, kind: 'smarttext', text: 'ROLFE · HEADRIGHT · 4-7 YEARS', level: 'body', position: [0.5, 0.42] },
+  { turnId: 't61', offset: 2.0, kind: 'smarttext', text: '📦 BOX 2: TOBACCO ✓', level: 'title', position: [0.5, 0.25], color: '#90ee90' },
+  { turnId: 't61', offset: 6.0, kind: 'smarttext', text: 'ROLFE · HEADRIGHT · 4-7 YEARS', level: 'body', position: [0.5, 0.42] },
 
   // t60: Box 3 checked
-  { turnId: 't60', offset: 2.0, kind: 'smarttext', text: '📦 BOX 3: BURGESSES ✓', level: 'title', position: [0.5, 0.25], color: '#90ee90' },
-  { turnId: 't60', offset: 5.0, kind: 'smarttext', text: '1619 · FIRST ELECTED ASSEMBLY', level: 'body', position: [0.5, 0.42] },
+  { turnId: 't62', offset: 2.0, kind: 'smarttext', text: '📦 BOX 3: BURGESSES ✓', level: 'title', position: [0.5, 0.25], color: '#90ee90' },
+  { turnId: 't62', offset: 5.0, kind: 'smarttext', text: '1619 · FIRST ELECTED ASSEMBLY', level: 'body', position: [0.5, 0.42] },
 
   // t61-t63: Box 4
-  { turnId: 't61', offset: 0.5, kind: 'bubble', text: 'Arrivals ≠ system', position: [0.5, 0.3], width: 300 },
-  { turnId: 't62', offset: 3.0, kind: 'smarttext', text: 'ARRIVALS 1619 · SYSTEM DECADES LATER', level: 'subtitle', position: [0.5, 0.3] },
-  { turnId: 't62', offset: 8.0, kind: 'smarttext', text: '1622: OPECHANCANOUGH · 1624: ROYAL COLONY', level: 'body', position: [0.5, 0.45] },
-  { turnId: 't63', offset: 0.5, kind: 'smarttext', text: '📦 BOX 4: 1619 ✓', level: 'title', position: [0.5, 0.3], color: '#90ee90' },
+  { turnId: 't63', offset: 0.5, kind: 'bubble', text: 'Arrivals ≠ system', position: [0.5, 0.3], width: 300 },
+  { turnId: 't64', offset: 3.0, kind: 'smarttext', text: 'ARRIVALS 1619 · SYSTEM DECADES LATER', level: 'subtitle', position: [0.5, 0.3] },
+  { turnId: 't64', offset: 8.0, kind: 'smarttext', text: '1622: OPECHANCANOUGH · 1624: ROYAL COLONY', level: 'body', position: [0.5, 0.45] },
+  { turnId: 't65', offset: 0.5, kind: 'smarttext', text: '📦 BOX 4: 1619 ✓', level: 'title', position: [0.5, 0.3], color: '#90ee90' },
 
   // t64-t70: Exam questions
-  { turnId: 't64', offset: 1.0, kind: 'smarttext', text: '3 QUESTIONS, AP-SHAPED', level: 'subtitle', position: [0.5, 0.25] },
-  { turnId: 't65', offset: 2.0, kind: 'smarttext', text: 'Q1: "DIG GOLD, REFINE GOLD, LOAD GOLD"', level: 'body', position: [0.5, 0.25] },
-  { turnId: 't66', offset: 2.0, kind: 'smarttext', text: 'GOLD-FEVER > SWAMP', level: 'subtitle', position: [0.5, 0.3], color: '#ffd700' },
-  { turnId: 't67', offset: 1.0, kind: 'smarttext', text: 'Q2: 6 SERVANTS → 300 ACRES?', level: 'body', position: [0.5, 0.25] },
-  { turnId: 't68', offset: 2.0, kind: 'smarttext', text: 'HEADRIGHT: PLANTER BENEFITS', level: 'subtitle', position: [0.5, 0.3], color: '#ffd700' },
-  { turnId: 't69', offset: 1.0, kind: 'smarttext', text: 'Q3: 1619 — ASSEMBLY + WHITE LION?', level: 'body', position: [0.5, 0.25] },
-  { turnId: 't70', offset: 2.0, kind: 'smarttext', text: 'THE CONTRADICTION, SIDE BY SIDE', level: 'subtitle', position: [0.5, 0.3], color: '#ffd700' },
+  { turnId: 't66', offset: 1.0, kind: 'smarttext', text: '3 QUESTIONS, AP-SHAPED', level: 'subtitle', position: [0.5, 0.25] },
+  { turnId: 't67', offset: 2.0, kind: 'smarttext', text: 'Q1: "DIG GOLD, REFINE GOLD, LOAD GOLD"', level: 'body', position: [0.5, 0.25] },
+  { turnId: 't69', offset: 2.0, kind: 'smarttext', text: 'GOLD-FEVER > SWAMP', level: 'subtitle', position: [0.5, 0.3], color: '#ffd700' },
+  { turnId: 't70', offset: 1.0, kind: 'smarttext', text: 'Q2: 6 SERVANTS → 300 ACRES?', level: 'body', position: [0.5, 0.25] },
+  { turnId: 't72', offset: 2.0, kind: 'smarttext', text: 'HEADRIGHT: PLANTER BENEFITS', level: 'subtitle', position: [0.5, 0.3], color: '#ffd700' },
+  { turnId: 't73', offset: 1.0, kind: 'smarttext', text: 'Q3: 1619 — ASSEMBLY + WHITE LION?', level: 'body', position: [0.5, 0.25] },
+  { turnId: 't75', offset: 2.0, kind: 'smarttext', text: 'THE CONTRADICTION, SIDE BY SIDE', level: 'subtitle', position: [0.5, 0.3], color: '#ffd700' },
 
   // t71-t72: Bonus question
-  { turnId: 't71', offset: 1.0, kind: 'smarttext', text: 'BONUS: ROYAL COLONY 1624?', level: 'body', position: [0.5, 0.3] },
-  { turnId: 't72', offset: 1.0, kind: 'smarttext', text: 'VIRGINIA COMPANY\'S CHARTER REVOKED', level: 'subtitle', position: [0.5, 0.3], color: '#ff6b6b' },
+  { turnId: 't76', offset: 1.0, kind: 'smarttext', text: 'BONUS: ROYAL COLONY 1624?', level: 'body', position: [0.5, 0.3] },
+  { turnId: 't78', offset: 1.0, kind: 'smarttext', text: 'VIRGINIA COMPANY\'S CHARTER REVOKED', level: 'subtitle', position: [0.5, 0.3], color: '#ff6b6b' },
 
   // t73: Carry forward
-  { turnId: 't73', offset: 4.0, kind: 'smarttext', text: 'A WEED SAVED THEM. THEN IT BROKE THE PEACE.', level: 'subtitle', position: [0.5, 0.3] },
+  { turnId: 't79', offset: 4.0, kind: 'smarttext', text: 'A WEED SAVED THEM. THEN IT BROKE THE PEACE.', level: 'subtitle', position: [0.5, 0.3] },
 
   // t74-t75: CLOSING TAGLINE
-  { turnId: 't74', offset: 0.3, kind: 'smarttext', text: 'THEY SAILED HERE HUNTING GOLD —', level: 'subtitle', position: [0.5, 0.3] },
-  { turnId: 't75', offset: 0.3, kind: 'smarttext', text: 'AND ENDED UP PLANTING THEMSELVES.', level: 'title', position: [0.5, 0.45], entrance: 'stamp', color: '#90ee90' },
+  { turnId: 't80', offset: 0.3, kind: 'smarttext', text: 'THEY SAILED HERE HUNTING GOLD —', level: 'subtitle', position: [0.5, 0.3] },
+  { turnId: 't81', offset: 0.3, kind: 'smarttext', text: 'AND ENDED UP PLANTING THEMSELVES.', level: 'title', position: [0.5, 0.45], entrance: 'stamp', color: '#90ee90' },
 ];
 
 /* ------------------------------------------------------------------ */

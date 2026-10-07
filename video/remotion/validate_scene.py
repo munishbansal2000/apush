@@ -24,7 +24,8 @@ MAP_REGIONS = {
     'portolan-chart.jpg': ['mediterranean', 'europe'],
     'portolan-chart-clean.jpg': ['mediterranean', 'europe'],
     'cantino-planisphere.jpg': ['americas', 'atlantic', 'europe', 'africa', 'asia'],
-    'james-river-map.jpg': ['americas', 'chesapeake', 'virginia'],
+    'pacific-galleon-route.jpg': ['pacific', 'asia', 'americas'],
+    'james-river-map.jpg': ['americas', 'virginia'],
 }
 
 # Direction words and their expected coordinate relationships

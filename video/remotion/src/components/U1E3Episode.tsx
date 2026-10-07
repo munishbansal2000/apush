@@ -159,11 +159,11 @@ const SUB_BEATS: SubBeat[] = [
   // === TONE SHIFT: DISEASE (SERIOUS) ===
 
   // t16: "The side that got the germs empties out"
-  { turnId: 't27', offset: 0, kind: 'bg-swap', bgImage: 'historic/u1e3/disease-dark.jpg' },
-  { turnId: 't27', offset: 0, kind: 'smarttext', text: 'THE GERMS SAILED WEST', level: 'title', position: [0.5, 0.2], entrance: 'stamp', color: '#ff6b6b' },
+  { turnId: 't28', offset: 0, kind: 'bg-swap', bgImage: 'historic/u1e3/disease-dark.jpg' },
+  { turnId: 't28', offset: 0, kind: 'smarttext', text: 'THE GERMS SAILED WEST', level: 'title', position: [0.5, 0.2], entrance: 'stamp', color: '#ff6b6b' },
 
   // t17: Smallpox, measles, influenza — dark MapJourney (one way)
-  { turnId: 't28', offset: 0, kind: 'mapjourney', mapImage: 'historic/u1e3/cantino-planisphere.jpg',
+  { turnId: 't29', offset: 0, kind: 'mapjourney', mapImage: 'historic/u1e3/cantino-planisphere.jpg',
     items: [
       { id: 'smallpox', content: '🦠', from: [750, 300], to: [250, 350], duration: 4, style: 'ooze', size: 64, glow: '#ff0000' },
       { id: 'measles', content: '🦠', from: [750, 400], to: [250, 450], duration: 5, delay: 1, style: 'ooze', size: 56, glow: '#ff0000' },
@@ -171,28 +171,28 @@ const SUB_BEATS: SubBeat[] = [
     caption: 'DISEASE: One way only', variant: 'dark' },
 
   // t18: "Eight or nine out of ten"
-  { turnId: 't29', offset: 0, kind: 'bg-swap', bgImage: 'historic/u1e3/smallpox-victims.jpg' },
-  { turnId: 't29', offset: 0, kind: 'smarttext', text: '8 OR 9 OUT OF 10', level: 'hero', position: [0.5, 0.22], entrance: 'stamp', color: '#ff0000' },
-  { turnId: 't29', offset: 2.5, kind: 'smarttext', text: 'NOT A WAR. AN ERASURE.', level: 'title', position: [0.5, 0.62], color: '#ff6b6b' },
+  { turnId: 't30', offset: 0, kind: 'bg-swap', bgImage: 'historic/u1e3/smallpox-victims.jpg' },
+  { turnId: 't30', offset: 0, kind: 'smarttext', text: '8 OR 9 OUT OF 10', level: 'hero', position: [0.5, 0.22], entrance: 'stamp', color: '#ff0000' },
+  { turnId: 't30', offset: 2.5, kind: 'smarttext', text: 'NOT A WAR. AN ERASURE.', level: 'title', position: [0.5, 0.62], color: '#ff6b6b' },
 
   // t19: "Not a war. An erasure."
 
 
   // t20-t21: Virgin soil explanation — over Tenochtitlan (the emptied city)
-  { turnId: 't32', offset: 0, kind: 'bg-swap', bgImage: 'historic/u1e3/tenochtitlan.jpg' },
-  { turnId: 't32', offset: 0, kind: 'smarttext', text: 'VIRGIN SOIL', level: 'title', position: [0.5, 0.2], entrance: 'stamp' },
-  { turnId: 't32', offset: 0, kind: 'bubble', text: 'That phrase bugs me...', position: [0.5, 0.3], width: 340 },
+  { turnId: 't33', offset: 0, kind: 'bg-swap', bgImage: 'historic/u1e3/tenochtitlan.jpg' },
+  { turnId: 't33', offset: 0, kind: 'smarttext', text: 'VIRGIN SOIL', level: 'title', position: [0.5, 0.2], entrance: 'stamp' },
+  { turnId: 't33', offset: 0, kind: 'bubble', text: 'That phrase bugs me...', position: [0.5, 0.3], width: 340 },
 
   // t22: Pushback — disease had help
-  { turnId: 't33', offset: 0, kind: 'smarttext', text: 'DISEASE LED', level: 'subtitle', position: [0.5, 0.25] },
-  { turnId: 't33', offset: 2.0, kind: 'smarttext', text: 'BUT DIDN\'T WORK ALONE', level: 'subtitle', position: [0.5, 0.4], color: '#ff6b6b' },
+  { turnId: 't34', offset: 0, kind: 'smarttext', text: 'DISEASE LED', level: 'subtitle', position: [0.5, 0.25] },
+  { turnId: 't34', offset: 2.0, kind: 'smarttext', text: 'BUT DIDN\'T WORK ALONE', level: 'subtitle', position: [0.5, 0.4], color: '#ff6b6b' },
 
   // t23: "Disease was the real conquistador"
-  { turnId: 't34', offset: 0, kind: 'smarttext', text: 'DISEASE WAS THE REAL CONQUISTADOR', level: 'title', position: [0.5, 0.25], entrance: 'stamp', color: '#ffd700' },
+  { turnId: 't35', offset: 0, kind: 'smarttext', text: 'DISEASE WAS THE REAL CONQUISTADOR', level: 'title', position: [0.5, 0.25], entrance: 'stamp', color: '#ffd700' },
 
   // t24-t26: Florentine Codex — PrimarySourceSpotlight (HIPP)
-  { turnId: 't36', offset: 0, kind: 'bg-swap', bgImage: 'historic/u1e3/florentine-codex-page.jpg' },
-  { turnId: 't36', offset: 0, kind: 'primarysource',
+  { turnId: 't37', offset: 0, kind: 'bg-swap', bgImage: 'historic/u1e3/florentine-codex-page.jpg' },
+  { turnId: 't37', offset: 0, kind: 'primarysource',
     documentTitle: 'Florentine Codex',
     authorAndDate: 'Nahua accounts, 16th century',
     excerptText: 'The sick lay in their houses and sleeping places, no longer able to move or stir, while the healthy could not bury the dead fast enough.',
@@ -201,49 +201,49 @@ const SUB_BEATS: SubBeat[] = [
     hippExplanation: 'Nahua perspective — the conquered, not the conquerors. This is the view from inside the epidemic.' },
 
   // t27: Syphilis debate
-  { turnId: 't39', offset: 0, kind: 'smarttext', text: 'SYPHILIS?', level: 'title', position: [0.5, 0.2], entrance: 'stamp' },
-  { turnId: 't39', offset: 2.0, kind: 'smarttext', text: 'MAYBE SAILED EAST. DEBATED.', level: 'subtitle', position: [0.5, 0.35] },
+  { turnId: 't40', offset: 0, kind: 'smarttext', text: 'SYPHILIS?', level: 'title', position: [0.5, 0.2], entrance: 'stamp' },
+  { turnId: 't40', offset: 2.0, kind: 'smarttext', text: 'MAYBE SAILED EAST. DEBATED.', level: 'subtitle', position: [0.5, 0.35] },
 
   // Box 2 check
-  { turnId: 't60', offset: 0, kind: 'smarttext', text: '📦 BOX 2: DISEASE', level: 'title', position: [0.5, 0.15], entrance: 'stamp' },
-  { turnId: 't60', offset: 2.0, kind: 'smarttext', text: '✓ CHECKED', level: 'subtitle', position: [0.5, 0.3], color: '#90ee90' },
+  { turnId: 't62', offset: 0, kind: 'smarttext', text: '📦 BOX 2: DISEASE', level: 'title', position: [0.5, 0.15], entrance: 'stamp' },
+  { turnId: 't62', offset: 2.0, kind: 'smarttext', text: '✓ CHECKED', level: 'subtitle', position: [0.5, 0.3], color: '#90ee90' },
 
   // === LABOR CRISIS → MIDDLE PASSAGE ===
 
   // t29: Who won, who paid — VersusPolarization
-  { turnId: 't44', offset: 0, kind: 'versus', text: 'EUROPE vs AMERICAS' },
+  { turnId: 't45', offset: 0, kind: 'versus', text: 'EUROPE vs AMERICAS' },
 
   // t30: Europe vs Americas details
-  { turnId: 't43', offset: 0, kind: 'smarttext', text: 'EUROPE: CALORIES + WEALTH', level: 'subtitle', position: [0.5, 0.25], color: '#90ee90' },
-  { turnId: 't45', offset: 1.5, kind: 'smarttext', text: 'AMERICAS: PAID IN PEOPLE', level: 'subtitle', position: [0.5, 0.4], color: '#ff6b6b' },
+  { turnId: 't44', offset: 0, kind: 'smarttext', text: 'EUROPE: CALORIES + WEALTH', level: 'subtitle', position: [0.5, 0.25], color: '#90ee90' },
+  { turnId: 't46', offset: 1.5, kind: 'smarttext', text: 'AMERICAS: PAID IN PEOPLE', level: 'subtitle', position: [0.5, 0.4], color: '#ff6b6b' },
 
   // t31: "Germs, then silver, then chains"
-  { turnId: 't61', offset: 0, kind: 'smarttext', text: 'GERMS → SILVER → CHAINS', level: 'title', position: [0.5, 0.25], entrance: 'stamp', color: '#ffd700' },
+  { turnId: 't63', offset: 0, kind: 'smarttext', text: 'GERMS → SILVER → CHAINS', level: 'title', position: [0.5, 0.25], entrance: 'stamp', color: '#ffd700' },
 
   // t32: Middle Passage
-  { turnId: 't52', offset: 0, kind: 'mapjourney', mapImage: 'historic/u1e3/cantino-planisphere.jpg',
+  { turnId: 't54', offset: 0, kind: 'mapjourney', mapImage: 'historic/u1e3/cantino-planisphere.jpg',
     items: [
       { id: 'middle-passage', content: '⛓️', from: [650, 550], to: [250, 450], duration: 5, style: 'fly', size: 56, glow: '#ff0000' },
     ],
     caption: 'THE MIDDLE PASSAGE: Africa → Americas', variant: 'dark' },
-  { turnId: 't53', offset: 0, kind: 'bg-swap', bgImage: 'historic/u1e3/brookes-slave-ship.jpg' },
-  { turnId: 't55', offset: 0, kind: 'bg-swap', bgImage: 'historic/u1e3/sugarcane-plantation.jpg' },
-  { turnId: 't55', offset: 0, kind: 'smarttext', text: 'STARTED WITH SUGAR', level: 'subtitle', position: [0.5, 0.2] },
-  { turnId: 't55', offset: 2.0, kind: 'smarttext', text: '1500s', level: 'title', position: [0.5, 0.35], entrance: 'stamp' },
+  { turnId: 't55', offset: 0, kind: 'bg-swap', bgImage: 'historic/u1e3/brookes-slave-ship.jpg' },
+  { turnId: 't57', offset: 0, kind: 'bg-swap', bgImage: 'historic/u1e3/sugarcane-plantation.jpg' },
+  { turnId: 't57', offset: 0, kind: 'smarttext', text: 'STARTED WITH SUGAR', level: 'subtitle', position: [0.5, 0.2] },
+  { turnId: 't57', offset: 2.0, kind: 'smarttext', text: '1500s', level: 'title', position: [0.5, 0.35], entrance: 'stamp' },
 
   // Box 3 & 4
-  { turnId: 't62', offset: 0, kind: 'smarttext', text: '📦 BOX 3: WHO WON/PAID', level: 'title', position: [0.5, 0.15], entrance: 'stamp' },
-  { turnId: 't63', offset: 0, kind: 'smarttext', text: '📦 BOX 4: LABOR CRISIS', level: 'title', position: [0.5, 0.15], entrance: 'stamp' },
-  { turnId: 't63', offset: 2.0, kind: 'smarttext', text: '✓✓ CHECKED', level: 'subtitle', position: [0.5, 0.3], color: '#90ee90' },
+  { turnId: 't64', offset: 0, kind: 'smarttext', text: '📦 BOX 3: WHO WON/PAID', level: 'title', position: [0.5, 0.15], entrance: 'stamp' },
+  { turnId: 't65', offset: 0, kind: 'smarttext', text: '📦 BOX 4: LABOR CRISIS', level: 'title', position: [0.5, 0.15], entrance: 'stamp' },
+  { turnId: 't65', offset: 2.0, kind: 'smarttext', text: '✓✓ CHECKED', level: 'subtitle', position: [0.5, 0.3], color: '#90ee90' },
 
   // === RECAP & EXAM ===
 
   // t36: Four boxes recap
-  { turnId: 't56', offset: 0, kind: 'smarttext', text: 'FOUR BOXES', level: 'hero', position: [0.5, 0.2], entrance: 'stamp' },
+  { turnId: 't58', offset: 0, kind: 'smarttext', text: 'FOUR BOXES', level: 'hero', position: [0.5, 0.2], entrance: 'stamp' },
 
   // Closing line
-  { turnId: 't75', offset: 0, kind: 'smarttext', text: 'THE FOOD WENT BOTH WAYS', level: 'subtitle', position: [0.5, 0.3] },
-  { turnId: 't75', offset: 2.0, kind: 'smarttext', text: 'AND THE DYING ONLY WENT ONE', level: 'title', position: [0.5, 0.45], entrance: 'stamp', color: '#ff6b6b' },
+  { turnId: 't81', offset: 0, kind: 'smarttext', text: 'THE FOOD WENT BOTH WAYS', level: 'subtitle', position: [0.5, 0.3] },
+  { turnId: 't81', offset: 2.0, kind: 'smarttext', text: 'AND THE DYING ONLY WENT ONE', level: 'title', position: [0.5, 0.45], entrance: 'stamp', color: '#ff6b6b' },
 ];
 
 /* ------------------------------------------------------------------ */
