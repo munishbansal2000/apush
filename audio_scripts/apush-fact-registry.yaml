@@ -4939,3 +4939,85 @@ facts:
   - wikisource-public-domain
   - new-georgia-encyclopedia
   - princeton
+- id: F-U5-075
+  topic: 1876 election numbers — Tilden popular vote, 184 vs 165, 20 disputed, 185-184
+  correct: 'Samuel J. Tilden (Democrat) won the popular vote and sat at 184 electoral
+    votes, one short of winning; Rutherford B. Hayes (Republican) had 165. Twenty
+    electoral votes were disputed: Florida, Louisiana, South Carolina, plus one Oregon
+    elector. Congress''s electoral commission awarded every disputed vote to Hayes,
+    who won 185 to 184 (Britannica, "Electoral Commission (1877)", Tier 2).'
+  falsehoods:
+  - Hayes.{0,40}won.{0,20}popular vote.{0,20}1876
+  - Tilden.{0,40}won.{0,20}presidency
+  - 1876.{0,40}landslide
+  sources:
+  - Britannica
+  tier_note: Verified (new) U5-L10 v3 2026-10-07 — Britannica search-result text; Layer 3 should confirm against the live article.
+- id: F-U5-076
+  topic: Colfax Massacre death toll — "over a hundred", not a pinned range
+  correct: 'After the contested 1872 Louisiana governor''s election, Black Republicans
+    occupied the Colfax courthouse; in April 1873 a white mob killed "over a hundred
+    African Americans" before taking the building (premium2027). Use "over a
+    hundred"; do not pin "60 to 150" or any narrower range.'
+  falsehoods:
+  - Colfax.{0,40}(60 to 150|150 Black|dozens)
+  sources:
+  - premium2027
+  tier_note: Verified (new) U5-L10 v3 2026-10-07 — v1 range replaced with book wording.
+- id: F-U5-077
+  topic: U.S. v. Cruikshank (1876) — precise holding, Enforcement Act struck down as applied
+  correct: 'In United States v. Cruikshank (1876), the Supreme Court held that Congress
+    could protect individuals from discrimination by STATES but not by INDIVIDUALS;
+    the federal Enforcement Act of 1870 was unconstitutional as applied to vigilante
+    violence (premium2027). The decision greatly weakened Reconstruction by making
+    federal prosecution of white mobs much harder. Do not teach "the Court made the
+    Klan immune" or "the Court unleashed the violence" — frame as the enforcement
+    tool being removed.'
+  falsehoods:
+  - Cruikshank.{0,40}14th.{0,20}(only|just).{0,20}federal government
+  - Court.{0,20}(gave|granted).{0,20}Klan.{0,20}immunity
+  sources:
+  - premium2027
+  tier_note: Verified (new) U5-L10 v3 2026-10-07 — v1 holding sharpened; framing per checklist.
+- id: F-U5-078
+  topic: Slaughterhouse Cases (1873) — narrowed Privileges or Immunities Clause
+  correct: 'The Slaughterhouse Cases (1873) narrowed the Fourteenth Amendment''s
+    Privileges or Immunities Clause so it protected only national citizenship rights,
+    not the rights freed people needed from their own states — effectively treating
+    civil rights as a state matter, not a federal one (princeton; APUSH 5.11
+    transcript). Do not teach "the 14th applied only to the federal government" flat.'
+  falsehoods:
+  - Slaughterhouse.{0,40}14th.{0,20}only.{0,20}federal government
+  sources:
+  - princeton
+  tier_note: Verified (new) U5-L10 v3 2026-10-07 — v1 phrasing corrected.
+- id: F-U5-079
+  topic: Compromise of 1877 terms — troops out of SC and LA, last states under military Reconstruction
+  correct: 'The Compromise of 1877: Republicans got the presidency (Hayes); Southern
+    Democrats got federal troops pulled out of South Carolina and Louisiana, the last
+    states under military Reconstruction, ending Reconstruction (princeton). By 1876
+    Southern Democrats calling themselves Redeemers had already retaken most of the
+    region''s state legislatures (princeton). Do not teach "Hayes ended Reconstruction
+    single-handedly."'
+  falsehoods:
+  - Hayes.{0,40}(single-handedly|alone|personally).{0,20}ended Reconstruction
+  - Compromise of 1877.{0,40}formal.{0,20}(treaty|agreement|document)
+  sources:
+  - princeton
+  - 5steps
+  tier_note: "Verified (new) U5-L10 v3 2026-10-07 — princeton: 'informal negotiations'; v1 'secret deal' softened."
+- id: F-U5-080
+  topic: Dunning School → Foner (1988) historiography beat — teach attributed, one beat
+  correct: 'Early-1900s standard interpretation (the Dunning School): Reconstruction
+    failed because Black suffrage caused corruption and misgovernment. Revisionists,
+    led by Eric Foner in "Reconstruction: America''s Unfinished Revolution" (1988),
+    argued the tragedy was white violence and Northern abandonment, not Black
+    incapacity. Teach as a named scholarly debate with in-dialogue attribution, one
+    beat only — never as the episode''s core. Tier 2 (Britannica) fetch was blocked
+    during drafting; Layer 3 must confirm.'
+  falsehoods:
+  - Dunning School.{0,40}defended Reconstruction
+  - Foner.{0,40}agreed.{0,20}Dunning
+  sources:
+  - Layer 3 2026-10-07: CONFIRMED with caveat — live Britannica Reconstruction article backs the Dunning→revisionist shift; the 1988 year is unpinnable in Tier 1+2 but corroborated by independent bibliographic records and taught as attributed meta-commentary with in-dialogue attribution + footer disclosure
+  tier_note: 'Taught (new) U5-L10 v3 2026-10-07 — DISCLOSED as pending Tier-2 confirmation; Layer 3 to verify.'

@@ -1,0 +1,39 @@
+# Changelog — APUSH U5-L10 "Reconstruction — Success or Failure," v1 → v3
+
+## What changed from the locked version (v1, archived)
+
+v1 was a bare-bones narration draft (~700 words, no exam devices, no voice discipline, no verified numbers). v3 is a full rebuild to the frozen 2026-10-06 standards:
+
+- **Length:** ~700 spoken words → 1,928 (floor 1,440 met). Runtime now experienced time: 10.7 min speech at ≤180 WPM + 61s of scripted pauses = ~11.7 min; cold-open promise ("About 12 minutes") and header agree.
+- **Format rebuilt as Maya + Marcus interview** with real back-and-forth: Marcus turns all ≤100 words, Maya breaks in with objections/wrong guesses/questions (only 18% of her lines end in "?").
+- **Verdict discipline:** v1 declared "the answer is: both" in the first line. v3 holds the verdict until the final beat — the cold open promises it ("we finally call it"), each side's strongest argument gets full treatment first (no strawmen), and the verdict lands in Box 4.
+- **Continuity:** cold open honors U5-L9 v3's exact closer tease ("Next time: Reconstruction, success or failure. Paper freedom versus real freedom, and we finally call it.") and collects L9's deliberate hedge (paper freedom settled, real freedom still being negotiated). Closer teases only U5-L11 ("Jim Crow & the New South"), checked against the archived U5-L11 locked file. No re-teaching: the Reconstruction Acts and Amendments get one continuity sentence each; the Freedmen's Bureau is a one-line carryover from L9, not re-taught.
+- **Box structure (4):** The Reconstruction Amendments (owns: amendments + Black officeholders + Bureau schools) | Sharecropping | Compromise of 1877 (owns: Slaughterhouse/Cruikshank, Redeemers, Northern fatigue, Panic of 1873) | Success or Failure — the Verdict (Dunning School → Foner one beat, then the final verdict).
+- **Exam devices added:** 2 prediction beats (8s each), one common-mistake line per box, varied exam-tip templates, three-question self-test (15s CER pauses, one stimulus-style on a sharecropping contract) + one labeled fast bonus covering Box 1.
+- **Maya's devices:** one mid-episode wrong beat (the "Bureau gave land, Johnson took it back" garble — corrected via F-U5-070), one recap memory-check fumble (16 = House or Senate?), one knows-something beat (the "forty acres and a mule" Spike Lee logo), one irrelevant human moment (her sophomore-year "evaluate, not list" margin note), checkoffs in her own voice, one "one down" beat.
+
+## Factual corrections (all sourced; every one goes in the fact registry same day)
+
+1. **"2,000 Black men elected to office" — CUT.** v1's figure is not in Tier 1 (registry F-U5-069, from the U5-L9 v3 fact pass). Replaced with verified: 5steps2024's 1870-election figures (630 to Southern state legislatures, 16 to the House, 1 to the Senate, voiced as "roughly 600… 16… one") and premium2027's "more than a dozen to the House" plus the two senators; princeton confirms Revels and Bruce as the first Black senators (Mississippi, 1870 and 1875).
+2. **"Shaw University, Howard University, Fisk. Institutions that still exist" — TRIMMED.** Registry F-U5-065: no Tier 1/2 source verifies Shaw as "the first Black college in the South." v3 uses only premium2027's verified "Howard University and Morehouse College were established during the Reconstruction period." Fisk dropped (no new claim needed).
+3. **"Johnson gave the confiscated land back to white owners" / "Freedmen's Bureau gave freedmen land" — CORRECTED.** Registry F-U5-070: Sherman's Special Field Order No. 15 was a wartime field order, not a Bureau grant; Johnson rescinded it and pardoned the owners. v3 teaches this, and has Maya voice the garbled version so Marcus corrects it in flow.
+4. **Colfax death toll:** v1 said "60 to 150." Tier 1 (premium2027) says "killing over a hundred African Americans" — v3 voices "over a hundred."
+5. **Cruikshank holding sharpened:** v1 said "The 14th Amendment doesn't protect you from private citizens. Only from the government… the Klan is effectively immune." v3 uses premium2027's precise holding: Congress could protect individuals from discrimination by *states*, but not by *individuals*; the Enforcement Act of 1870 was struck down as applied, and federal prosecutions of white mobs got much harder. (No "the Court unleashed massive violence" editorializing — framing judgment per checklist.)
+6. **Slaughterhouse holding sharpened:** v1 said the 14th "applied only to the federal government." v3: the Court narrowed the Privileges or Immunities Clause to national citizenship rights, not the rights freed people needed from their own states (princeton + the 5.11 transcript's "civil rights were a state issue, not a federal one").
+7. **1876 election numbers verified (Tier 2, Britannica "Electoral Commission (1877)"):** Tilden popular-vote majority, 184 vs 165 electoral votes, 20 votes disputed (FL/LA/SC + one Oregon elector), commission awarded all to Hayes, 185–184. v1's "Tilden probably should have won" kept as the verified "won the popular vote"; "secret deal" softened to "a deal cut behind closed doors" (princeton: "informal negotiations").
+8. **Compromise terms:** v1 said "Federal troops leave the South." v3 follows princeton: troops pulled out of South Carolina and Louisiana, the last states under military Reconstruction (5steps: "all federal troops were removed from the South" — both readings converge on the end of enforcement).
+9. **"Within a few years… white South solidly Democratic for the next century" — CUT.** v1's sweep wasn't Tier-1 verified in the sources checked; v3 stays inside what the books verify (Redeemers retaking legislatures by 1876, Northern fatigue, Panic of 1873 drawing attention away).
+10. **Dunning School → Foner:** taught as one attributed beat, not the core. Dunning School's "Black suffrage caused corruption" line and Foner's 1988 flip ("white violence and Northern abandonment") are presented as a named scholarly debate with in-dialogue attribution. Layer 3 fetched the Britannica Reconstruction article live and confirmed the beat; the footer disclosure is updated accordingly.
+
+## Quotes kept / cut
+
+- **No figure's "actual words" are presented in v3** — deliberate. v1 had no quotes either; nothing needed cutting. The only quasi-quotation is "forty acres and a mule" (the phrase freed families used, per premium2027) and Maya's teacher's margin note ("evaluate, not list") — both framed as reported, not transcript-verified. No verbatim-quote integrity risk by design.
+
+## Format choices
+
+- **Four boxes, not three:** the verdict episode needs the historiography + final verdict as its own box; folding it under Box 3 would bury the episode's whole point.
+- **Box 3 named "Compromise of 1877"** (an AP-plausible MCQ/SAQ term) and owns the Court decisions, Redeemers, and Northern fatigue as sub-topics — the recap lands them under that box explicitly.
+- **Prediction beat placement:** Beat 1 sits at the Box 1→2 hinge (land: hand over or hand back?) — a genuine reasoning question at a natural decision point. Beat 2 sits before the verdict (defend one side, one best piece of evidence) — it forces the evaluate skill the episode teaches.
+- **Stimulus-style self-test Q1** uses a sharecropping contract ("what's the point of this source?") rather than recall — tests Box 2's mechanism, not Marcus's words.
+- **No em dashes in dialogue** (0 used; budget is 10) — beats carried by sentence rhythm instead. "That's" starters: 2 (budget max). Micro-turns: 3 (budget 8). One triple-parallel construction removed in editing ("no land, no capital, no way out" → "No land and no capital meant no way out").
+- **Tagline:** shared duet, new words — "The amendments are still standing." / "The work is still unfinished." Lands the both-sided verdict without an aphoristic closer.
