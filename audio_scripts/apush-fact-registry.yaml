@@ -2922,3 +2922,23 @@ facts:
   sources:
   - nps
   tier_note: Tier 2 (NPS Frederick Douglass NHS / Women's Rights NHP pages). Corrected U4-E13 v2 2026-10-07.
+- id: F-U4-076
+  topic: '"54-40 or Fight" was NOT Polk''s slogan'
+  correct: '"54°40'' or Fight" was shouted AT Polk, not BY him: Northern congressmen demanded the US take ALL of Oregon (to 54°40'') to balance slave Texas. Polk refused to fight two land wars at once and settled Oregon at the 49th parallel (1846 Oregon Treaty).'
+  falsehoods:
+  - polk.{0,20}(ran on|campaigned on|slogan).{0,30}54
+  - '"fifty-four forty or fight" was polk''s slogan'
+  - 'polk''s "fifty-four forty or fight"'
+  sources:
+  - princeton
+  tier_note: 'Tier 1 (Princeton 045_c009_sup: "not Polk''s slogan, but one directed at him"). Corrected U4-E14 v2 2026-10-07 (v1 taught it as Polk''s).'
+- id: F-U4-077
+  topic: Velasco treaties did NOT settle the Texas border
+  correct: 'The Rio Grande boundary appears only in the SECRET Treaty of Velasco (May 14, 1836), signed by a captive Santa Anna; Mexico never ratified either treaty. Teach the Rio Grande as TEXAS''S CLAIMED reading of repudiated papers, never as a settled treaty line. Mexico held the Nueces as the recognized boundary.'
+  falsehoods:
+  - the velasco treaties? (set|established|fixed).{0,30}rio grande.{0,30}(border|boundary)
+  - rio grande was the line in the velasco treaties
+  sources:
+  - britannica
+  - web
+  tier_note: 'Tier 2 (Britannica San Jacinto: Velasco signed by Santa Anna while a prisoner, recognized Texas independence); non-ratification per US Congressional Record account — flagged for L3. Corrected U4-E14 v2 2026-10-07 (v1 taught the line as settled treaty text).'
