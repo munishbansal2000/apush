@@ -5284,3 +5284,66 @@ facts:
   - 5steps
   - britannica
   tier_note: 'Flagged U6-L2 v2 2026-10-07 — books misspell; Teach double-n spelling.'
+- id: F-U6-009
+  topic: 'Liberty Loan drives: four wartime drives raised ~$17B, not $20B'
+  correct: 'The four wartime Liberty Loan drives raised about $17 billion (Federal Reserve
+    History: "more than $17 billion"); taxes added $8.8B — roughly two-thirds bonds, one-third
+    taxes (premium2027 ch9). The "more than twenty billion" figure only holds if the post-armistice
+    Victory Loan (~$4.25B) is folded in. Teach ~$17B for the four drives; never "twenty billion."'
+  falsehoods:
+  - four.{0,30}drives?.{0,40}twenty billion
+  - liberty (loan|bond).{0,30}raised.{0,20}twenty billion
+  - twenty billion dollars.{0,30}liberty
+  sources:
+  - fedhistory
+  - prem27
+  tier_note: 'Corrected U6-L3 v2 2026-10-07 — archived v1 taught "more than twenty billion dollars";
+    taught in v2 as the Maya wrong beat with the "Not quite" correction frame.'
+- id: F-U6-010
+  topic: 'Debs 1920 vote count: "roughly 913,000" — never false-precise "914,000"'
+  correct: 'Debs won roughly 913,000 votes in 1920 (sources split: 913,693 per Brandeis/The
+    Conversation, 914,191 per Wikipedia) — about 3.4%, a LOWER share than his 1912 6% but MORE
+    raw votes than he ever received. Teach the percentage-vs-votes distinction; never pin "914,000,
+    to be precise."'
+  falsehoods:
+  - debs.{0,40}914,000.{0,20}precise
+  - 914,000 votes.{0,20}precise
+  sources:
+  - brandeis
+  - history.com
+  tier_note: 'Corrected U6-L3 v2 2026-10-07 — archived v1 said "914,000 votes, to be precise";
+    sources disagree, so v2 hedges and adds the % vs raw-votes teaching point.'
+- id: F-U6-011
+  topic: 'East St. Louis 1917 death toll: official 39 Black + 9 white; hedge, never pin'
+  correct: 'East St. Louis, July 1917: the official count was 39 Black people and 9 white people
+    killed, but some historians estimate 100+ Black deaths (range cited 39-150). Teach the official
+    count with the hedge ("Nobody''s fully sure") — never a single unqualified number.'
+  falsehoods: []
+  sources:
+  - smithsonian
+  - cambridge
+  tier_note: 'Added U6-L3 v2 2026-10-07 — archived v1 said "dozens dead" (acceptable); v2 uses the
+    hedging ladder per the uncertainty.'
+- id: F-U6-012
+  topic: 'Wilson suffrage 1918: teach the real quote, not "a war measure" paraphrase'
+  correct: 'Wilson''s Sept 30, 1918 Senate address: "we have made partners of the women in this
+    war... Shall we admit them only to a partnership of suffering and of sacrifice and toil and
+    not to a partnership of privilege and right?" It FAILED — two votes short of two-thirds. Teach the
+    verbatim quote (public-domain presidential speech) + the failure, not a "war measure" paraphrase.'
+  falsehoods:
+  - wilson.{0,30}calling it a war measure
+  - war measure.{0,20}nineteenth amendment
+  sources:
+  - h-net
+  - history.com
+  tier_note: 'Corrected U6-L3 v2 2026-10-07 — archived v1 paraphrased; v2 quotes verbatim.'
+- id: F-U6-013
+  topic: 'Food Administration days: 5steps2024 ch21 swaps them — follow NPS'
+  correct: 'Hoover''s Food Administration promoted "Meatless Mondays" and "Wheatless Wednesdays" (NPS). 5steps2024 ch21 prints "Wheatless Mondays" and "Meatless Tuesdays" twice (body + review Q9) — the days are swapped. Teach the NPS version.'
+  falsehoods:
+  - wheatless mondays
+  - meatless tuesdays
+  sources:
+  - nps
+  - 5steps
+  tier_note: 'Pinned U6-L3 v2 2026-10-07 — 5steps inconsistency, not asserted as deliberate error.'
