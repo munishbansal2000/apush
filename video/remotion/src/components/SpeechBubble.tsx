@@ -67,6 +67,18 @@ export const SpeechBubble: React.FC<SpeechBubbleProps> = ({
   const frame = useCurrentFrame();
   const { width, height, fps } = useVideoConfig();
 
+  // CONSTRAINT: max bubble width 380px (was 440, ate 40% of frame)
+  // CONSTRAINT: min font size 20px (was shrinking to illegible)
+  const constrainedWidth = Math.min(bubbleWidth, 380);
+  const constrainedFontSize = Math.max(fontSize, 20);
+
+  if (bubbleWidth !== constrainedWidth && typeof console !== 'undefined') {
+    console.warn(
+      `[SpeechBubble] Width ${bubbleWidth}px exceeds max 380px, clamped. ` +
+      `Text: "${text.slice(0, 40)}..."`
+    );
+  }
+
   // Resolve 'random' to a deterministic pick (no flicker between frames)
   const resolvedArt = art === 'random' ? pickArt(text, randomSeed) : art;
 
@@ -83,13 +95,13 @@ export const SpeechBubble: React.FC<SpeechBubbleProps> = ({
   // Register top-left bounds, get auto-adjusted center via priority layout
   const { x: adjX, y: adjY } = useAutoLayout(
     'speech-bubble',
-    rawX - bubbleWidth / 2, rawY - (bubbleWidth * 0.7) / 2,
-    bubbleWidth, bubbleWidth * 0.7,
+    rawX - constrainedWidth / 2, rawY - (constrainedWidth * 0.7) / 2,
+    constrainedWidth, constrainedWidth * 0.7,
     Priority.BUBBLE, 'image', text
   );
   // Convert back to center (adjustment is a pure translation)
-  const x = adjX + bubbleWidth / 2;
-  const y = adjY + (bubbleWidth * 0.7) / 2;
+  const x = adjX + constrainedWidth / 2;
+  const y = adjY + (constrainedWidth * 0.7) / 2;
 
   if (frame < at) return null;
 
@@ -101,7 +113,7 @@ export const SpeechBubble: React.FC<SpeechBubbleProps> = ({
       position: 'absolute',
       left: x,
       top: y,
-      width: bubbleWidth,
+      width: constrainedWidth,
       transform: `translate(-50%, -50%) scale(${popScale}) rotate(${rotation + wobble}deg)`,
       zIndex: 30,
     }}>
@@ -127,7 +139,7 @@ export const SpeechBubble: React.FC<SpeechBubbleProps> = ({
           justifyContent: 'center',
         }}>
           <div style={{
-            fontSize,
+            fontSize: constrainedFontSize,
             fontWeight: 800,
             fontFamily: 'Arial Black, Impact, "Helvetica Neue", sans-serif',
             color: textColor,

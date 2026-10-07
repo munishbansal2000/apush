@@ -56,17 +56,39 @@ const LEVEL_PRIORITY: Record<TextLevel, number> = {
 function autoFontSize(text: string, level: TextLevel): number {
   const base = BASE_SIZES[level];
   const len = text.length;
-  
-  // Scale down for long text
+
+  // Minimum readable sizes (never go below these)
+  const MIN_SIZES: Record<TextLevel, number> = {
+    hero: 64,
+    title: 48,
+    subtitle: 36,
+    body: 28,
+  };
+
+  let size = base;
+
+  // Scale down for long text, but wrap instead of shrinking to death
   if (level === 'hero' || level === 'title') {
-    if (len > 30) return Math.floor(base * 0.75);
-    if (len > 20) return Math.floor(base * 0.85);
+    if (len > 30) size = Math.floor(base * 0.75);
+    else if (len > 20) size = Math.floor(base * 0.85);
   } else if (level === 'subtitle') {
-    if (len > 50) return Math.floor(base * 0.8);
-    if (len > 35) return Math.floor(base * 0.9);
+    if (len > 50) size = Math.floor(base * 0.8);
+    else if (len > 35) size = Math.floor(base * 0.9);
   }
-  
-  return base;
+
+  // Enforce floor
+  const floored = Math.max(size, MIN_SIZES[level]);
+
+  // Warn in dev if we're hitting the floor (text too long for level)
+  if (floored !== size && typeof console !== 'undefined') {
+    console.warn(
+      `[SmartText] Text too long for ${level} (len=${len}), ` +
+      `clamped to min ${MIN_SIZES[level]}px. Consider shorter text or body level. ` +
+      `Text: "${text.slice(0, 50)}..."`
+    );
+  }
+
+  return floored;
 }
 
 /**

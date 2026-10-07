@@ -26,6 +26,7 @@ import { TitleCard } from './TitleCard';
 import { SpeechBubble } from './SpeechBubble';
 import { GravityText } from './GravityDrop';
 import { SmartText } from './SmartText';
+import { MapJourney, JourneyItem } from './MapJourney';
 import { ToneProvider } from '../validation/ToneContext';
 import { AutoLayoutProvider } from '../validation/AutoLayout';
 
@@ -122,11 +123,11 @@ const SUB_BEATS: SubBeat[] = [
   { turnId: 't14', offset: 0, kind: 'bubble', text: 'Nobody educated thought the earth was flat', position: [0.5, 0.2], width: 480 },
 
   // t15: wrong about distance — word-anchored beats
-  { turnId: 't15', offset: 5.67, kind: 'smarttext', text: 'WRONG ABOUT DISTANCE, NOT SHAPE', level: 'subtitle', position: [0.5, 0.25] },
+  { turnId: 't15', offset: 5.67, kind: 'smarttext', text: 'WRONG ABOUT DISTANCE, NOT SHAPE', level: 'subtitle', position: [0.5, 0.62] },
   { turnId: 't15', offset: 8.04, kind: 'smarttext', text: 'OCTOBER 12, 1492', level: 'title', position: [0.5, 0.15], entrance: 'stamp' },
   { turnId: 't15', offset: 10.14, kind: 'smarttext', text: 'THE BAHAMAS', level: 'subtitle', position: [0.5, 0.3] },
-  { turnId: 't15', offset: 12.39, kind: 'smarttext', text: 'CALLED THEM "INDIANS"', level: 'subtitle', position: [0.5, 0.3] },
-  { turnId: 't15', offset: 13.41, kind: 'smarttext', text: 'DIED INSISTING: ASIA', level: 'subtitle', position: [0.5, 0.3], color: '#ff6b6b' },
+  { turnId: 't15', offset: 12.39, kind: 'smarttext', text: 'CALLED THEM "INDIANS"', level: 'subtitle', position: [0.5, 0.42] },
+  { turnId: 't15', offset: 13.41, kind: 'smarttext', text: 'DIED INSISTING: ASIA', level: 'subtitle', position: [0.5, 0.54], color: '#ff6b6b' },
 
   // t16: never saw north america
   { turnId: 't16', offset: 0, kind: 'smarttext', text: 'NEVER SAW NORTH AMERICA', level: 'subtitle', position: [0.5, 0.2] },
@@ -152,7 +153,7 @@ const SUB_BEATS: SubBeat[] = [
   { turnId: 't21', offset: 7.08, kind: 'smarttext', text: 'BULGED EAST OF THE LINE', level: 'subtitle', position: [0.5, 0.35] },
 
   // t23: exchange categories + reveal
-  { turnId: 't23', offset: 1.68, kind: 'smarttext', text: 'PLANTS · ANIMALS · PEOPLE · DISEASE', level: 'body', position: [0.5, 0.2] },
+  { turnId: 't23', offset: 1.68, kind: 'smarttext', text: 'PLANTS · ANIMALS · PEOPLE · DISEASE', level: 'body', position: [0.5, 0.35] },
   { turnId: 't23', offset: 9.81, kind: 'smarttext', text: 'THE COLUMBIAN EXCHANGE', level: 'hero', position: [0.5, 0.15], entrance: 'stamp' },
   { turnId: 't23', offset: 9.81, kind: 'bg-swap', bgImage: 'historic/u1e2/fuchs-maize-1542.jpg' },
 
@@ -219,8 +220,8 @@ const SUB_BEATS: SubBeat[] = [
   // t43: colonists revolted — word-anchored
   { turnId: 't43', offset: 1.77, kind: 'smarttext', text: 'COLONISTS NEARLY REVOLTED', level: 'subtitle', position: [0.5, 0.2], color: '#ff6b6b' },
   { turnId: 't43', offset: 2.82, kind: 'smarttext', text: 'CROWN WATERED THE LAWS DOWN', level: 'subtitle', position: [0.5, 0.32] },
-  { turnId: 't43', offset: 9.01, kind: 'smarttext', text: 'SUBJECTS TO CONVERT?', level: 'title', position: [0.5, 0.15], entrance: 'stamp' },
-  { turnId: 't43', offset: 10.62, kind: 'smarttext', text: 'OR LABOR TO USE?', level: 'title', position: [0.5, 0.3], entrance: 'stamp', color: '#ff6b6b' },
+  { turnId: 't43', offset: 9.01, kind: 'smarttext', text: 'SUBJECTS TO CONVERT?', level: 'title', position: [0.5, 0.45], entrance: 'stamp' },
+  { turnId: 't43', offset: 10.62, kind: 'smarttext', text: 'OR LABOR TO USE?', level: 'title', position: [0.5, 0.6], entrance: 'stamp', color: '#ff6b6b' },
 
   // t45: recap 1
   { turnId: 't45', offset: 4.8, kind: 'smarttext', text: '① TORDESILLAS: 1494', level: 'title', position: [0.5, 0.2], entrance: 'stamp' },
@@ -244,7 +245,7 @@ const SUB_BEATS: SubBeat[] = [
   // t50: encomienda expanded
   { turnId: 't50', offset: 0, kind: 'smarttext', text: 'LABOR + TRIBUTE', level: 'title', position: [0.5, 0.15], entrance: 'stamp' },
   { turnId: 't50', offset: 0, kind: 'bg-swap', bgImage: 'historic/u1e2/debry-hispaniola-mines.jpg' },
-  { turnId: 't50', offset: 4.11, kind: 'smarttext', text: '"FOR CHRISTIANITY"', level: 'subtitle', position: [0.5, 0.3] },
+  { turnId: 't50', offset: 4.11, kind: 'smarttext', text: '"FOR CHRISTIANITY"', level: 'subtitle', position: [0.5, 0.45] },
 
   // t51: quiz intro
   { turnId: 't51', offset: 0, kind: 'gravity', text: 'QUIZ TIME', position: [0.5, 0.2] },
@@ -252,7 +253,7 @@ const SUB_BEATS: SubBeat[] = [
 
   // t52: quiz Q1
   { turnId: 't52', offset: 0, kind: 'smarttext', text: 'EUROPE GOT: 🥔🌽🍅', level: 'subtitle', position: [0.5, 0.25], entrance: 'stamp' },
-  { turnId: 't52', offset: 5.25, kind: 'smarttext', text: 'AMERICAS GOT: 🐴🌾', level: 'subtitle', position: [0.5, 0.35], entrance: 'stamp' },
+  { turnId: 't52', offset: 5.25, kind: 'smarttext', text: 'AMERICAS GOT: 🐴🌾', level: 'subtitle', position: [0.5, 0.5], entrance: 'stamp' },
 
   // t53: quiz Q2
   { turnId: 't53', offset: 0, kind: 'gravity', text: 'Q2: ENCOMIENDA IN ONE SENTENCE?', position: [0.5, 0.2] },
@@ -582,191 +583,6 @@ const ThreeWayCompare: React.FC<{
 /*   glow?: string,           // glow color (e.g. '#00ff00')            */
 /* }]                                                                   */
 /* ------------------------------------------------------------------ */
-type JourneyItem = {
-  id: string;
-  content: string;
-  isImage?: boolean;
-  from: [number, number];
-  to: [number, number];
-  duration: number;
-  delay?: number;
-  arcHeight?: number;
-  style?: 'fly' | 'gallop' | 'ooze' | 'spin' | 'float';
-  size?: number;
-  trail?: boolean;
-  glow?: string;
-};
-
-const MapJourney: React.FC<{
-  at: number;
-  mapImage: string;
-  items: JourneyItem[];
-  // Optional: route guide lines
-  guides?: { from: [number, number]; to: [number, number]; color: string }[];
-  // Optional labels
-  labels?: { x: number; y: number; text: string; color?: string }[];
-  caption?: string;
-  // Cinematic variant: overview (full map), detail (zoomed), dark (ominous)
-  variant?: 'overview' | 'detail' | 'dark';
-}> = ({ at, mapImage, items, guides = [], labels = [], caption, variant = 'overview' }) => {
-  const frame = useCurrentFrame();
-  if (frame < at) return null;
-  const elapsed = (frame - at) / FPS;
-
-  // Variant styling
-  const isDark = variant === 'dark';
-  const isDetail = variant === 'detail';
-
-  const renderItem = (item: JourneyItem) => {
-    const delay = item.delay || 0;
-    const t = Math.min(1, Math.max(0, (elapsed - delay) / item.duration));
-    if (t <= 0) return null;
-
-    // Easing: ease-in-out
-    const eased = t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
-
-    // Position: lerp + arc
-    const x = item.from[0] + (item.to[0] - item.from[0]) * eased;
-    const arc = Math.sin(eased * Math.PI) * (item.arcHeight || 0);
-    const baseY = item.from[1] + (item.to[1] - item.from[1]) * eased;
-
-    // Style-specific motion
-    let y = baseY - arc;
-    let rotation = 0;
-    let scaleY = 1;
-
-    switch (item.style) {
-      case 'gallop':
-        // Bouncy gallop
-        y -= Math.abs(Math.sin(eased * Math.PI * 8)) * 25 * (1 - eased * 0.3);
-        rotation = Math.sin(eased * Math.PI * 8) * 8;
-        break;
-      case 'ooze':
-        // Sickly wobble
-        y += Math.sin(eased * Math.PI * 5) * 15;
-        rotation = Math.sin(eased * Math.PI * 3) * 20;
-        scaleY = 1 + Math.sin(eased * Math.PI * 4) * 0.15;
-        break;
-      case 'spin':
-        // Full spins
-        rotation = eased * 720;
-        break;
-      case 'float':
-        // Gentle bob
-        y -= Math.sin(eased * Math.PI * 3) * 20;
-        rotation = Math.sin(eased * Math.PI * 2) * 10;
-        break;
-      case 'fly':
-      default:
-        // Simple arc with slight tilt
-        rotation = (item.to[0] > item.from[0] ? 1 : -1) * 15 * Math.sin(eased * Math.PI);
-        break;
-    }
-
-    // Pop-in scale
-    const popIn = Math.min(1, t / 0.1);
-    const size = item.size || 56;
-
-    return (
-      <g key={item.id}>
-        {/* Trail */}
-        {item.trail && t < 1 && t > 0.05 && (
-          <circle
-            cx={x - (item.to[0] > item.from[0] ? 25 : -25)}
-            cy={y}
-            r={size * 0.3}
-            fill={item.glow || '#ffffff'}
-            opacity={0.25 * (1 - t)}
-          />
-        )}
-        {item.isImage ? (
-          <image
-            href={staticFile(item.content)}
-            x={x - size/2} y={y - size/2}
-            width={size} height={size}
-            transform={`rotate(${rotation} ${x} ${y}) scale(1 ${scaleY})`}
-            opacity={popIn}
-            style={item.glow ? { filter: `drop-shadow(0 0 10px ${item.glow})` } : {}}
-          />
-        ) : (
-          <text
-            x={x} y={y}
-            textAnchor="middle" dominantBaseline="central"
-            fontSize={size}
-            transform={`rotate(${rotation} ${x} ${y}) scale(${popIn} ${popIn * scaleY})`}
-            opacity={popIn}
-            style={item.glow ? { filter: `drop-shadow(0 0 12px ${item.glow})` } : {}}>
-            {item.content}
-          </text>
-        )}
-      </g>
-    );
-  };
-
-  return (
-    <div style={{
-      position: 'absolute', inset: 0, zIndex: 10,
-      display: 'flex', alignItems: 'center', justifyContent: 'center',
-    }}>
-      <div style={{ position: 'relative', width: '92%', height: '92%' }}>
-        <Img src={staticFile(mapImage)}
-          style={{
-            width: '100%', height: '100%', objectFit: 'cover', borderRadius: 12,
-            // Detail variant: zoom in 1.4x for closer look
-            transform: isDetail ? 'scale(1.35)' : 'scale(1)',
-            transition: 'transform 0.8s ease-out',
-          }} />
-        <div style={{
-          position: 'absolute', inset: 0, borderRadius: 12,
-          background: isDark
-            ? 'rgba(20,0,0,0.65)'  // ominous red-black for disease
-            : 'rgba(0,0,0,0.3)',
-        }} />
-        {/* Dark variant: red vignette pulse */}
-        {isDark && (
-          <div style={{
-            position: 'absolute', inset: 0, borderRadius: 12,
-            boxShadow: `inset 0 0 ${100 + Math.sin(elapsed * 3) * 20}px rgba(180,0,0,0.6)`,
-            pointerEvents: 'none',
-          }} />
-        )}
-        <svg viewBox="0 0 1000 1000" preserveAspectRatio="none"
-          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }}>
-          {/* Guide lines */}
-          {guides.map((g, i) => (
-            <path key={i}
-              d={`M ${g.from[0]} ${g.from[1]} Q 500 ${(g.from[1] + g.to[1]) / 2 - 100} ${g.to[0]} ${g.to[1]}`}
-              fill="none" stroke={g.color} strokeWidth="3"
-              strokeDasharray="12,8" opacity="0.35" />
-          ))}
-          {/* Labels */}
-          {labels.map((l, i) => (
-            <text key={i} x={l.x} y={l.y} textAnchor="middle"
-              fill={l.color || '#ffd700'} fontSize="36" fontWeight="900"
-              fontFamily="Georgia, serif"
-              style={{ textShadow: '2px 2px 8px #000' }}>
-              {l.text}
-            </text>
-          ))}
-          {/* Moving items */}
-          {items.map(renderItem)}
-        </svg>
-        {caption && (
-          <div style={{
-            position: 'absolute', bottom: '4%', left: '50%',
-            transform: 'translateX(-50%)',
-            fontFamily: 'Arial, sans-serif', fontWeight: 700, fontSize: 22,
-            color: '#f5e6c8', textShadow: '2px 2px 6px #000',
-            background: 'rgba(0,0,0,0.6)', padding: '8px 24px', borderRadius: 20,
-            whiteSpace: 'nowrap',
-          }}>
-            {caption}
-          </div>
-        )}
-      </div>
-    </div>
-  );
-};
 
 /* ------------------------------------------------------------------ */
 /* MapRoute: animated SVG route/line over a map image.                  */

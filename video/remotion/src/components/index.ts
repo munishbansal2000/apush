@@ -45,3 +45,27 @@ export { CharacterFace } from './CharacterFace';
 // Heimler-style components
 export { SpeechBubble } from './SpeechBubble';
 export { TitleCard } from './TitleCard';
+
+// Motion Studio components (from apush-motion-studio)
+export { PrimarySourceSpotlight } from './PrimarySourceSpotlight';
+export { KineticCaptions } from './KineticCaptions';
+export { HistoricalTimeline } from './HistoricalTimeline';
+export { VersusPolarization } from './VersusPolarization';
+export { CinematicLowerThird } from './CinematicLowerThird';
+
+// Slideforge Tier 4 (final ports)
+export { QuoteSlide } from './QuoteSlide';
+export { DuoSlide } from './DuoSlide';
+export { SplitSlide } from './SplitSlide';
+export { CollageSlide } from './CollageSlide';
+export { HighlightSlide } from './HighlightSlide';
+
+// Motion Studio maps (pre-built for Unit 2/3 content)
+export { OregonTrailCinematicMap } from './OregonTrailCinematicMap';
+export { JumonvilleGlenTacticalMap } from './JumonvilleGlenTacticalMap';
+export { LouisianaPurchaseMap } from './LouisianaPurchaseMap';
+export { TerritorialExpansionMap } from './TerritorialExpansionMap';
+
+// Standalone MapJourney (extracted from U1E2Episode — no more inline components)
+export { MapJourney } from './MapJourney';
+export type { JourneyItem } from './MapJourney';
