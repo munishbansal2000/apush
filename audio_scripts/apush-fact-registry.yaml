@@ -7785,3 +7785,181 @@ facts:
   - web
   tier_note: 'Added U8-L5 v2 2026-10-07 (writer fact pass). Via economic-history literature (Friedman
     and Schwartz tradition) — beyond Tier-1/2, taught hedged and disclosed in the script footer.'
+- id: F-U8-039
+  topic: 'ACA passage — signed March 2010; zero Republican votes in either chamber'
+  correct: 'The Affordable Care Act passed the Senate 60-39 on December 24, 2009 and the House
+    219-212 on March 21, 2010, with every Republican in both chambers voting no; President Obama
+    signed it March 23, 2010. The biggest health care law since Medicare/Medicaid (1965).'
+  falsehoods:
+  - (ACA|Obamacare|Affordable Care Act).{0,60}bipartisan
+  - (ACA|Obamacare).{0,60}Republicans? (supported|backed|voted for)
+  sources:
+  - britannica
+  - congress.gov
+  tier_note: 'Added U8-L6 v2 2026-10-07 (writer fact pass). Tier 2: Britannica ''Patient Protection
+    and Affordable Care Act'' (Senate 60-39 Dec 24 2009, all Republicans opposed; House 219-212
+    Mar 21 2010, all Republicans opposed; signed Mar 23 2010); Congress.gov H.R.3590 actions
+    confirm the roll calls. The script teaches the zero-Republican-vote fact flat.'
+- id: F-U8-040
+  topic: 'Election of 2016 — Trump lost the popular vote, won the Electoral College 304-227'
+  correct: 'Donald Trump lost the popular vote to Hillary Clinton by more than 2.8 million votes
+    but won the Electoral College 304 to 227, becoming the 45th president. Clinton was the first
+    woman nominated for president by a major party. The split is the mechanism the exam tests.'
+  falsehoods:
+  - Trump.{0,30}won.{0,20}popular vote
+  sources:
+  - britannica
+  tier_note: 'Added U8-L6 v2 2026-10-07 (writer fact pass). Tier 2: Britannica ''United States
+    Presidential Election of 2016.'' The script teaches the popular-vote/Electoral-College split
+    as the mid-episode wrong beat; Marcus corrects with the ''mix-up'' marker so G12 exempts it.'
+- id: F-U8-041
+  topic: 'Trump impeached twice — 2019 (acquitted) and 2021; January 6th Capitol attack'
+  correct: 'The House voted to impeach President Trump in 2019 and the Republican Senate acquitted
+    him. On January 6, 2021, a crowd stormed the Capitol while Congress was counting electoral
+    votes; Congress finished the count that night. The House impeached him a second time.'
+  falsehoods:
+  - Trump.{0,25}impeached.{0,20}once
+  - (first|1st) impeachment.{0,15}(2021|2020)
+  sources:
+  - 5steps
+  - prem27
+  tier_note: 'Added U8-L6 v2 2026-10-07 (writer fact pass). Tier 1: 5steps2024 ch31 (2019 House
+    impeachment, Senate acquittal); premium2027 ch11 timeline (2019 first impeachment, 2021 Capitol
+    attack, 2021 second impeachment). The script teaches January 6th as what-happened, with
+    interpretation explicitly attributed to ongoing historians'' debate.'
+- id: F-U8-042
+  topic: 'Trump judicial appointments — 230+ federal judges, three Supreme Court justices'
+  correct: 'President Trump appointed more than 230 judges to the federal courts, including three
+    Supreme Court justices (Gorsuch, Kavanaugh, Barrett). Senate Republicans confirmed the
+    circuit and district judges by early 2021.'
+  falsehoods:
+  - Trump.{0,30}(appointed|named).{0,25}(two|2) Supreme Court
+  sources:
+  - 5steps
+  tier_note: 'Added U8-L6 v2 2026-10-07 (writer fact pass). Tier 1: 5steps2024 ch31 (''over 230
+    judges to the federal courts, including three Supreme Court justices''). Taught flat.'
+- id: F-U8-043
+  topic: 'Tea Party 2009, 2010 midterms — Republicans retook the House; Obama reelected 2012'
+  correct: 'The Tea Party movement rose in 2009 (smaller government, lower taxes, fury at bailouts
+    and the health care law) and powered major Democratic losses in the 2010 midterms, when
+    Republicans retook the House. Obama won reelection in 2012 over Mitt Romney; Democrats lost
+    further ground in 2014. ACA signed March 2010, not 2009.'
+  falsehoods:
+  - Democrats.{0,25}(kept|held|retained).{0,15}(the )?House.{0,15}2010
+  - ACA.{0,20}(passed|signed).{0,15}2009
+  sources:
+  - 5steps
+  - prem27
+  tier_note: 'Added U8-L6 v2 2026-10-07 (writer fact pass). Tier 1: 5steps2024 ch30 (Tea Party
+    ''rise in antigovernment sentiment'' → major 2010 Democratic losses; 2012 reelection over
+    Romney; 2014 losses tied to ACA implementation problems); premium2027 ch11 timeline (2009 Tea
+    Party birth, 2010 ACA passage). The script teaches the Tea Party''s racial-vs-policy mix as an
+    open historians'' debate, per the book''s hedged framing.'
+- id: F-U8-044
+  topic: 'Election of 2020 — Biden defeated Trump; rocky COVID recovery; Afghanistan and Ukraine'
+  correct: 'Former vice president Joe Biden defeated President Trump in the 2020 election. Biden
+    ''contended with a rocky recovery from COVID-19 at home and crises in Afghanistan and Ukraine
+    abroad'' (2021 chaotic Afghanistan withdrawal; 2022 Russian invasion of Ukraine).'
+  falsehoods:
+  - Trump.{0,25}(won|defeated).{0,15}2020
+  sources:
+  - 5steps
+  - prem27
+  tier_note: 'Added U8-L6 v2 2026-10-07 (writer fact pass). Tier 1: 5steps2024 ch31 (Biden defeated
+    Trump 2020; ''rocky recovery''; Afghanistan/Ukraine crises); premium2027 ch11 timeline (2020
+    Biden election, 2022 Ukraine invasion). The script keeps Biden to the book''s ''rocky''
+    framing — no invented detail.'
+- id: F-U8-045
+  topic: 'Trump policy reversals — JCPOA exit, Paris Agreement withdrawal, USMCA replaced NAFTA 2020'
+  correct: 'Trump reversed Obama-era policies: ended U.S. participation in the JCPOA (Iran nuclear
+    deal), withdrew from the 2015 Paris climate agreement, and replaced NAFTA with the USMCA
+    agreement in 2020.'
+  falsehoods:
+  - USMCA.{0,20}(2017|2018|2019)
+  - (Paris|climate) agreement.{0,25}Trump.{0,20}(kept|reaffirmed|stayed)
+  sources:
+  - 5steps
+  - prem27
+  tier_note: 'Added U8-L6 v2 2026-10-07 (writer fact pass). Tier 1: 5steps2024 ch31 (JCPOA ended,
+    Paris withdrawal, USMCA replaced NAFTA in 2020); premium2027 ch11 timeline (2015 JCPOA).'
+- id: F-U8-046
+  topic: 'Tax Cuts and Jobs Act of 2017 — corporate rate cut to 21 percent'
+  correct: 'The Tax Cuts and Jobs Act of December 2017 reduced the corporate tax rate to 21 percent,
+    lowered individual rates, and cut estate taxes. The ACA repeal attempt died the same year when
+    Senate Republicans split after the House passed a party-line repeal bill.'
+  falsehoods:
+  - corporate.{0,15}(tax|rate).{0,20}(28|35).{0,10}percent
+  sources:
+  - 5steps
+  tier_note: 'Added U8-L6 v2 2026-10-07 (writer fact pass). Tier 1: 5steps2024 ch31. Do not confuse
+    with the 1986 Tax Reform Act (F-U8-012): different law, different rate (28%).'
+- id: F-U8-047
+  topic: 'Dobbs v. Jackson (2022) overturned Roe v. Wade; abortion law returned to the states'
+  correct: 'In 2022 the Supreme Court''s Dobbs v. Jackson Women''s Health Organization decision
+    overturned Roe v. Wade, returning abortion law to the states.'
+  falsehoods:
+  - Dobbs.{0,20}(2020|2021)
+  - Roe.{0,30}(still|remains).{0,15}(law|standing|intact)
+  sources:
+  - prem27
+  tier_note: 'Added U8-L6 v2 2026-10-07 (writer fact pass). Tier 1: premium2027 ch11 timeline
+    (2022 Dobbs overturns Roe). Taught as one line in the Biden box.'
+- id: F-U8-048
+  topic: 'Media fragmentation timeline — Fairness Doctrine ended 1987; Fox News and MSNBC launched 1996'
+  correct: 'The FCC abolished the Fairness Doctrine in 1987 (4-0 vote); the rule had nudged
+    broadcasters to air contrasting viewpoints. MSNBC launched July 15, 1996 and Fox News Channel
+    October 7, 1996 — partisan cable news as a business model dates from there.'
+  falsehoods:
+  - '[Ff]airness [Dd]octrine.{0,25}(still|remains).{0,15}(in force|effect)'
+  - (Fox News|MSNBC).{0,20}launched.{0,10}(2000|2001|2005)
+  sources:
+  - web
+  tier_note: 'Added U8-L6 v2 2026-10-07 (writer fact pass). Via secondary media-history summaries —
+    beyond Tier-1/2, disclosed in the script footer. Taught as the mechanism behind the media
+    box, not as book fact.'
+- id: F-U8-049
+  topic: 'Polarization machinery taught as attributed analysis — sorting causality runs jobs-first'
+  correct: 'The script teaches polarization''s machinery as ANALYSIS attributed in-dialogue, never
+    flat: media fragmentation (incentives reward outrage), geographic sorting (Bill Bishop''s
+    ''big sort'' thesis — people cluster with the like-minded), the primary system (safe districts
+    make the primary the real election), and inequality (F-U8-004, F-U8-030) as fuel. Sorting
+    causality: people move for jobs, weather, schools — the politics comes along. The script''s
+    recap fumble teaches the jobs-first correction; Marcus corrects with the ''mix-up'' marker.'
+  falsehoods:
+  - (move|moved|moving).{0,30}because of politics
+  sources:
+  - prem27
+  - web
+  tier_note: 'Added U8-L6 v2 2026-10-07 (writer fact pass). Tier 1 gives the framing only:
+    premium2027 9.1 (''divisions at home along ideological and cultural lines,'' intensification
+    ''from the Contract with America in the 1990s to the presidency of Donald Trump'') and the
+    internet/social-media campaign facts. The machinery itself is standard political-science
+    analysis, attributed in-dialogue and disclosed in the footer. The falsehood pattern covers the
+    recap''s deliberate fumble; the ''mix-up'' correction in the next turn exempts it per G12.'
+- id: F-U8-050
+  topic: '2018 midterms — Democrats gained 41 House seats and retook the House; Trump reelected 2024'
+  correct: 'In the 2018 midterms Democrats gained 41 House seats and recaptured the House while
+    Republicans held the Senate. In 2024 voters gave Donald Trump a second, non-consecutive term
+    (2017-2021, 2025-present).'
+  falsehoods:
+  - Democrats.{0,20}(won|took).{0,15}Senate.{0,10}2018
+  - Trump.{0,25}lost.{0,15}2024
+  sources:
+  - 5steps
+  - prem27
+  tier_note: 'Added U8-L6 v2 2026-10-07 (writer fact pass). Tier 1: 5steps2024 ch31 (2018, +41 House
+    seats); premium2027 ch11 timeline (2024 reelection) and 9.1 (Trump 2017-2021, 2025-present).
+    Taught as the closing beat of the Trump box.'
+- id: F-U8-051
+  topic: 'Income inequality 1979-2007 — top 1% incomes +~275%, middle 60% +just under 40%'
+  correct: 'premium2027 ch11: ''The incomes for the top-earning one percent of households increased
+    by about 275 percent between 1979 and 2007, while the middle 60 percent of wage-earners
+    saw their incomes rise by just under 40 percent during the same period.'' Teach as ''more
+    than tripled'' / ''under forty percent'' — the book''s own numbers.'
+  falsehoods:
+  - top.{0,15}1 percent.{0,25}doubled
+  - middle.{0,15}60 percent.{0,25}stagnat
+  sources:
+  - prem27
+  tier_note: 'Added U8-L6 v2 2026-10-07 (Layer-3 B17 repair). Replaces the writer''s miscited
+    F-U8-004/F-U8-030 footer reference — those entries do not contain these numbers.'
