@@ -5256,3 +5256,31 @@ facts:
   sources:
   - prem27
   tier_note: 'Taught as the legend-vs-fact beat in U6-L1 v2 2026-10-07.'
+- id: F-U6-007
+  topic: 'Feb-Mar 1917 sinkings: "hundreds of American ships" is wrong'
+  correct: 'premium2027 ch9 says "In February and March of 1917, hundreds of American
+    ships were sunk" — a book error. Hundreds of ships TOTAL were sunk by U-boats
+    across those months, but American-flagged losses were a handful (5steps2024 ch21:
+    "several American ships were sunk"). Teach "several" / "a handful", never "hundreds
+    of American ships."'
+  falsehoods:
+  - hundreds of american ships.{0,40}sunk
+  - hundreds of.{0,10}american.{0,20}ships were sunk
+  sources:
+  - prem27
+  - 5steps
+  tier_note: 'Corrected U6-L2 v2 2026-10-07 — book error in prem27; taught as the Maya/legend
+    wrong beat with the "Not quite" correction frame.'
+- id: F-U6-008
+  topic: 'Zimmermann spelled with double n'
+  correct: 'The German foreign secretary was Arthur Zimmermann (double n). premium2027
+    prints "Zimmerman" throughout; 5steps2024 uses "Zimmermann" except once ("the
+    Zimmerman Note"). Spell it Zimmermann in scripts, TTS pronunciation TSIM-mer-mahn.'
+  falsehoods:
+  - zimmerman note
+  - zimmerman telegram
+  sources:
+  - prem27
+  - 5steps
+  - britannica
+  tier_note: 'Flagged U6-L2 v2 2026-10-07 — books misspell; Teach double-n spelling.'
