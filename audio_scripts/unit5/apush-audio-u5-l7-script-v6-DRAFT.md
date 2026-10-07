@@ -1,7 +1,7 @@
 # APUSH Unit 5, Lesson 7: Civil War Turning Points
 ## Script v6 DRAFT — Story Mode (Marcus-led, Maya interjects)
 
-**Format:** Story Mode (Marcus-led, Maya interjects) | **Target:** 2233 words, ~14 min experienced (104s pauses) @ 180 WPM | **CED:** 5.8/5.9
+**Format:** Story Mode (Marcus-led, Maya interjects) | **Target:** 2246 words, ~14 min experienced (104s pauses) @ 180 WPM | **CED:** 5.8/5.9
 # Read note: [8-second pause] marks are production notes for real silence in prediction beats — they never go to the voice. [15-second pause] marks are longer silence for the CER self-test questions; [10-second pause] for the fast bonus question. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence.
 # Pronunciation: Antietam (an-TEE-tum), Appomattox (ap-uh-MAT-uks), Vicksburg (VIKS-burg), Chamberlain (CHAYM-ber-lin), Tecumseh (tih-KUM-seh), Minié (min-YAY), Spotsylvania (spot-sil-VAYN-yuh), habeas corpus (HAY-bee-us KOR-pus), Greeley (GREE-lee)
 
@@ -139,25 +139,25 @@ Maya: Three questions, AP-shaped. Say your answer before I give it. First: why d
 
 [15-second pause]
 
-Maya: Advantages don't win wars by themselves; they convert through trained armies and willing leadership. The proof: green volunteers routing at Bull Run, McClellan idle outside Richmond. A defensive South with better early generals stalemated a stronger but clumsier North for years.
+Maya: The answer I'd give: advantages don't win wars by themselves. They have to be converted through trained armies and willing leadership. Green volunteers routed at Bull Run; McClellan sat idle outside Richmond. And a defensive South with better early generals stalemated a stronger but clumsier North for years.
 
 Maya: Second: argue Gettysburg and Vicksburg as the turning point, then complicate it.
 
 [15-second pause]
 
-Maya: July 1863 is the turning point: Gettysburg ends Lee's invasions; Vicksburg takes the Mississippi and splits the Confederacy. Together they destroyed the South's offensive capacity and territorial unity. The complication: Antietam, a year earlier, kept Britain out and made emancipation a Union war aim.
+Maya: July 1863 is the turning point: Gettysburg ended Lee's invasions, and Vicksburg took the Mississippi and split the Confederacy. Together they destroyed the South's offensive capacity and its territorial unity. But the complication: Antietam, a year earlier, kept Britain out and made emancipation a Union war aim.
 
 Maya: Third. A Southern newspaper prints Sherman's own line: "War is cruelty, and you cannot refine it." What's the point of this source? Give one piece of evidence that supports the claim Sherman fought the Southern people, not just its army, and one that complicates it.
 
 [15-second pause]
 
-Maya: The evidence cuts both ways. Supporting it: Sherman ordered Atlanta's civilians out and destroyed civilian property; "make Georgia howl" targeted the home front's will. Complicating it: his orders aimed at military-useful property, and few civilians were killed. Hard war broke the South's capacity and will to fight, which is why historians still argue about who it was fought against.
+Maya: The evidence cuts both ways. On one side: Sherman ordered Atlanta's civilians out and destroyed civilian property: "make Georgia howl" was aimed at the home front's will. On the other: his orders targeted military-useful property, and few civilians were killed. Either way, hard war broke the South's capacity and will to fight, which is why historians still argue about who it was fought against.
 
 Maya: One more, fast. Why did the draft stir resentment in both the North and the South?
 
 [10-second pause]
 
-Maya: Both drafts looked rigged for the rich: the Twenty Negro Law excused one white man per large plantation; the Union's three-hundred-dollar commutation fee let the wealthy buy out. When the burden tracks wealth, "a rich man's war and a poor man's fight" stops being a slogan and starts being why men riot.
+Maya: Both drafts looked rigged for the rich. The Twenty Negro Law excused one white man per large plantation; the Union's three-hundred-dollar commutation fee let the wealthy buy out. When the burden tracks wealth, "a rich man's war and a poor man's fight" stops being a slogan. It becomes why men riot.
 
 Maya: One thing to carry forward: this war changed what it was about while it was being fought — and the people it was fought over helped change it.
 
