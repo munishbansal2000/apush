@@ -4642,3 +4642,156 @@ facts:
   sources:
   - premium2027
   tier_note: Framing hardened U5-L6 v5 2026-10-07.
+- id: F-U5-055
+  topic: Greeley letter wording — verbatim via LOC
+  correct: 'Lincoln''s Aug 22, 1862 open letter to Horace Greeley: "My paramount object
+    in this struggle is to save the Union, and is not either to save or to destroy slavery.
+    If I could save the Union without freeing any slave I would do it, and if I could save
+    it by freeing all the slaves I would do it; and if I could save it by freeing some and
+    leaving others alone I would also do that." Verbatim via LOC (Abraham Lincoln Papers,
+    public-domain primary text). princeton carries the same wording as paraphrase. Teach
+    1862 Lincoln as Union-first, NOT as an abolitionist (pairs with F-U5-054).'
+  falsehoods:
+  - lincoln.{0,30}greeley.{0,30}abolitionist
+  - greeley letter.{0,40}free all the slaves.{0,20}(moral|abolition)
+  sources:
+  - loc
+  - princeton
+  tier_note: Verified (new) U5-L8 v3 2026-10-07 — Tier 1 books do not quote the letter; LOC is the independent trusted source.
+- id: F-U5-056
+  topic: Butler contraband 1861 — do NOT name Fort Monroe
+  correct: '1861: three enslaved people walked into a Union camp in Virginia; Gen. Benjamin
+    Butler declared them contraband — property legally seizable in wartime — turning the
+    South''s own chattel logic against it. Tier-1 transcript ("Lincoln''s POLICIES that WON
+    the Civil War") pins only "a Union camp in Virginia." Do NOT name Fort Monroe: no
+    Tier-1/2 source in the hierarchy pins it. "Something like" 400,000 enslaved people
+    escaped to Union lines by war''s end (same transcript; carry the hedge).'
+  falsehoods:
+  - butler.{0,30}fort monroe
+  - contraband.{0,30}fort monroe
+  sources:
+  - transcript
+  tier_note: Fail-closed U5-L8 v3 2026-10-07 — location left at the transcript''s wording.
+- id: F-U5-057
+  topic: Preliminary vs final proclamation — the ultimatum detail
+  correct: 'Preliminary proclamation Sept 22, 1862 (five days after Antietam): an ultimatum —
+    states still in rebellion on Jan 1, 1863 would have enslaved people declared free. Any
+    state that returned before Jan 1 could KEEP slavery (Britannica; princeton: "allowed
+    southern states to rejoin the Union without giving up slavery"). None returned; the final
+    proclamation issued Jan 1, 1863 (premium2027). Never merge the two dates.'
+  falsehoods:
+  - preliminary proclamation.{0,30}january 1
+  - emancipation proclamation.{0,30}september 22.{0,30}(final|took effect)
+  sources:
+  - Britannica
+  - princeton
+  - premium2027
+  tier_note: Verified (new) U5-L8 v3 2026-10-07.
+- id: F-U5-058
+  topic: Proclamation exemption list — what it did NOT free
+  correct: 'Final proclamation named AR, TX, LA, MS, AL, FL, GA, SC, NC, VA "in rebellion";
+    exempted the four border states (KY, MD, MO, DE) outright plus Union-held areas down to
+    named LA parishes and VA counties (proclamation text via Britannica transcription, public
+    domain). Tennessee was NOT named. premium2027: "did not free slaves in the loyal border
+    states or in Union-held areas"; "did not initially free any slaves." Justified as "a fit
+    and necessary war measure" — commander-in-chief war powers, which is WHY loyal-state
+    slavery was untouched (princeton: Lincoln had no power to abolish slavery where the
+    Constitution protected it).'
+  falsehoods:
+  - emancipation proclamation (freed|ended) slavery in the (border states|united states)
+  - proclamation freed all.{0,20}slaves
+  - tennessee was named in the emancipation proclamation
+  sources:
+  - Britannica
+  - premium2027
+  - princeton
+  tier_note: Verified (new) U5-L8 v3 2026-10-07 — exemption list checked against the primary text.
+- id: F-U5-059
+  topic: ~180,000 Black soldiers — Tier 1 insufficient, Tier 2 confirms
+  correct: 'No Tier-1 book or transcript gives the Black-enlistment total; teach "nearly
+    180,000" from Tier 2: Britannica "nearly 180,000 of them enlisting during the remainder
+    of the war"; NPS "over 180,000 African-American troops in the Union Army and Navy";
+    LOC "approximately 180,000 African-American soldiers," about 10% of the Union Army.
+    The proclamation itself authorized it: "such persons of suitable condition, will be
+    received into the armed service of the United States" (public-domain text).'
+  falsehoods:
+  - 200,000 black soldiers
+  - two hundred thousand black (soldiers|troops)
+  sources:
+  - Britannica
+  - nps
+  - loc
+  tier_note: Verified (new) U5-L8 v3 2026-10-07 — Tier 1 was insufficient; Tier 2 used per hierarchy.
+- id: F-U5-060
+  topic: 54th Massachusetts at Fort Wagner — NPS-verified
+  correct: '54th Massachusetts: first African-American regiment organized in the North after
+    the Emancipation Proclamation (NPS); led the July 18, 1863 assault on Fort Wagner outside
+    Charleston; Col. Robert Gould Shaw killed; regiment lost about half its men ("lost
+    two-thirds of their officers and half of their troops" — Congressional Record reproducing
+    NPS). The assault spurred further Black recruitment. Dramatized in the 1989 film Glory
+    (same record). Teach as the famous case, not the whole story.'
+  falsehoods:
+  - 54th massachusetts.{0,30}(won|captured|took) fort wagner
+  - fort wagner.{0,30}july 1864
+  sources:
+  - nps
+  - congress.gov
+  tier_note: Verified (new) U5-L8 v3 2026-10-07 — Fort Wagner was a Confederate-held fort after the assault; the 54th did not take it.
+- id: F-U5-061
+  topic: Equal pay fight — $10/$3 vs $13; June 1864 fix
+  correct: 'Black soldiers: $10/month minus $3 clothing deduction (net $7); white soldiers:
+    $13/month, no deduction (LOC). Congress granted equal pay to the U.S. Colored Troops in
+    June 1864, retroactive (Congressional Record). The fight lasted most of the war — teach it
+    as the limit-marker: emancipation as a war aim did NOT mean equality.'
+  falsehoods:
+  - black soldiers.{0,30}paid the same
+  - equal pay.{0,30}1863
+  sources:
+  - loc
+  - congress.gov
+  tier_note: Verified (new) U5-L8 v3 2026-10-07.
+- id: F-U5-062
+  topic: Europe stayed out — pair cotton AND abolitionism, never single-cause
+  correct: 'Britain/France had abolished slavery and could not openly back a pro-slavery cause
+    (transcript; premium2027). Cotton: Britain had alternative sources — 1861 surplus, Northern
+    grain dependence, Egypt/India expansion (registry F-CIV-002). NEVER teach "Britain took
+    India in 1858." The exam wants both causes paired; single-cause "the Proclamation stopped
+    Britain" overclaims.'
+  falsehoods:
+  - britain took india in 1858
+  - emancipation proclamation (alone|single-handedly|by itself).{0,30}(stopped|prevented).{0,20}britain
+  sources:
+  - transcript
+  - premium2027
+  - 5steps
+  tier_note: Framing hardened U5-L8 v3 2026-10-07 — pairs with F-CIV-002.
+- id: F-U5-063
+  topic: The verdict — freedom followed the armies; 13th Amendment is the legal finish
+  correct: 'Day-one effect: effectively none legally (premium2027 "did not initially free any
+    slaves"; princeton "for all intents and purposes, actually freed no enslaved people").
+    Mechanism: "a declaration of freedom taking effect as the lines advanced" (Britannica);
+    premium2027: as Union troops advanced, the Proclamation was enforced and slavery was
+    brought to an end — last reached Texas, June 19, 1865, Galveston (Juneteenth). Legal
+    finish: 13th Amendment ratified December 1865, which "confirmed the effects of Lincoln''s
+    Emancipation Proclamation and freed all the slaves living in what had been Union
+    territory" (5steps). Split exam answers: immediate vs long-term.'
+  falsehoods:
+  - proclamation had no (real )?effect
+  - emancipation proclamation freed no one.{0,40}therefore.{0,20}(meaningless|irrelevant)
+  sources:
+  - Britannica
+  - premium2027
+  - princeton
+  - 5steps
+  tier_note: Verified (new) U5-L8 v3 2026-10-07.
+- id: F-U5-064
+  topic: Proclamation language — legal instrument, "act of justice" close
+  correct: 'The document reads as dry legal language because that is all it could be: "shall
+    be then, thenceforward, and forever free"; justified as "a fit and necessary war measure";
+    closes "sincerely believed to be an act of justice, warranted by the Constitution, upon
+    military necessity" (proclamation text via Britannica transcription, public domain). All
+    quotable verbatim with spoken disclosure; never paraphrase these lines as if quoted.'
+  falsehoods: []
+  sources:
+  - Britannica
+  tier_note: Verified (new) U5-L8 v3 2026-10-07 — primary-text lines, safe for verbatim quotation.
