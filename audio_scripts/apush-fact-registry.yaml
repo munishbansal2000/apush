@@ -7700,3 +7700,88 @@ facts:
   - web
   tier_note: 'Added U8-L4 v2 2026-10-07 (coordinator verification). The script hedges with ''that
     fall'' — no dialogue change needed.'
+- id: F-U8-033
+  topic: 'Lehman Brothers bankruptcy — September 15, 2008; largest U.S. bankruptcy at the time; government let it fall'
+  correct: 'Lehman Brothers filed for bankruptcy on Monday, September 15, 2008, after a weekend of failed
+    rescue talks; it was the largest bankruptcy in U.S. history at that time and a pivotal event of the
+    financial crisis of 2007-08. Washington let Lehman fall after having backstopped the Bear Stearns
+    sale in March 2008.'
+  falsehoods:
+  - Lehman.{0,25}(rescued|bailed out|saved)
+  - Lehman.{0,25}(filed|collapsed|bankrupt).{0,15}(2009|2007|September 16)
+  sources:
+  - Britannica
+  tier_note: 'Added U8-L5 v2 2026-10-07 (writer fact pass). Via Britannica (Bankruptcy of Lehman
+    Brothers: September 15, 2008; largest bankruptcy in U.S. history at that time).'
+- id: F-U8-034
+  topic: 'TARP 2008 — Bush-signed (October 2008), $700B to bolster financial institutions; not the 2009 stimulus'
+  correct: 'The Troubled Asset Relief Program (TARP) of 2008 was a $700 billion program to bolster banks
+    and other financial institutions, signed by President George W..Bush in October 2008. It is a
+    different law from the 2009 American Recovery and Reinvestment Act (the stimulus), signed by
+    President Obama.'
+  falsehoods:
+  - TARP.{0,30}Obama.{0,15}(signed|passed)
+  - TARP.{0,25}(was|is).{0,20}stimulus
+  - stimulus.{0,25}(was|is).{0,15}Bush
+  sources:
+  - 5steps2024 ch30
+  - premium2027 ch11
+  tier_note: 'Added U8-L5 v2 2026-10-07 (writer fact pass). Tier 1: 5steps2024 ch30 (Bush organized the
+    financial-institution bailout) and premium2027 ch11 (TARP 2008, strengthen the financial sector).
+    The script teaches the Bush/Obama mix-up as the recap fumble; Marcus corrects with the
+    ''mix-up'' marker so G12 exempts it.'
+- id: F-U8-035
+  topic: 'Rating agencies stamped risky mortgage bundles AAA (FCIC: key enablers); the ''agencies believed it'' framing is misleading'
+  correct: 'The Big Three rating agencies (Moody''s, Standard and Poor''s, Fitch) gave top AAA ratings to
+    large volumes of risky mortgage-backed securities; they were paid by the banks issuing the
+    securities. The Financial Crisis Inquiry Commission (January 2011) concluded their failures were
+    ''key enablers of the financial meltdown.'' The agencies did not merely ''believe'' prices would
+    keep rising — the paid-rating conflict of interest is the material fact.'
+  falsehoods:
+  - rating agencies.{0,25}(played no|no).{0,15}role
+  - rating agencies.{0,25}(believed|thought).{0,25}prices.{0,15}(rise|rising)
+  sources:
+  - web
+  tier_note: 'Added U8-L5 v2 2026-10-07 (writer fact pass). Per secondary summaries of the FCIC
+    report (January 2011) — beyond Tier-1/2, disclosed in the script footer. The script teaches
+    the paid-rating mechanism, not the ''believed it'' framing.'
+- id: F-U8-036
+  topic: 'Fed cut the federal funds rate to 0-0.25% on December 16, 2008, then quantitative easing (bond buying)'
+  correct: 'On December 16, 2008, the Federal Reserve cut the federal funds rate to a range of 0 to 0.25
+    percent — effectively zero — and then launched quantitative easing: buying bonds (government bonds
+    and mortgage-backed securities) by the trillions over subsequent years to push down long-term
+    rates.'
+  falsehoods:
+  - Fed.{0,25}(raised|hiked).{0,15}rates.{0,15}2008
+  - Fed.{0,25}(did nothing|stood by).{0,15}(2008|crisis)
+  sources:
+  - web
+  tier_note: 'Added U8-L5 v2 2026-10-07 (writer fact pass). Via contemporary reporting of Federal
+    Reserve statements (NPR, econoday) — beyond Tier-1/2, disclosed in the script footer.'
+- id: F-U8-037
+  topic: 'Home prices fell roughly a third from the 2006 peak to the 2009 trough (S&P/Case-Shiller)'
+  correct: 'The S&P/Case-Shiller home-price composites fell roughly a third from their 2006 peak to the
+    2009 trough (10-city down about 33.5%, 20-city about 32.6%, national about 32%).'
+  falsehoods:
+  - home prices.{0,25}(fell|dropped).{0,20}(a quarter|25 percent)
+  - home prices.{0,25}(fell|dropped).{0,20}(half|50 percent)
+  sources:
+  - web
+  tier_note: 'Added U8-L5 v2 2026-10-07 (writer fact pass). Via industry reporting of the S&P/Case-Shiller
+    index — beyond Tier-1/2, disclosed in the script footer. Supersedes the prior draft''s
+    unpinned ''roughly a quarter.'''
+- id: F-U8-038
+  topic: '1929-31 contrast — the Fed had tightened to fight speculation and Washington chased a balanced budget; 2008 did the opposite'
+  correct: 'In the late 1920s the Federal Reserve tightened policy to fight stock-market speculation
+    (the discount rate reached 6% by October 1929), and in the early 1930s Washington pursued
+    budget-tightening while banks collapsed. In 2008 Washington did the opposite: it spent, the Fed
+    cut rates to near zero, and a New Deal-era safety net (insured deposits, unemployment insurance)
+    cushioned the fall. Taught hedged as the standard comparative claim, with the verdict attributed
+    to most economists.'
+  falsehoods:
+  - (1929|1930s|Depression).{0,25}(same|identical).{0,15}response
+  - government.{0,25}(did the same|responded the same).{0,15}1929
+  sources:
+  - web
+  tier_note: 'Added U8-L5 v2 2026-10-07 (writer fact pass). Via economic-history literature (Friedman
+    and Schwartz tradition) — beyond Tier-1/2, taught hedged and disclosed in the script footer.'
