@@ -2646,3 +2646,175 @@ facts:
   - premium2027
   - britannica
   tier_note: same-day entry from U4-E10 v2 draft, 2026-10-06
+- id: F-U4-043
+  topic: Cane Ridge 1801 — Tier-2-verified; attendance never pinned
+  correct: 'Cane Ridge Church near Paris, KY (Bourbon County) was the centre of the Great Revival (1801–03) and an immense camp meeting; Barton W. Stone was its preacher (Britannica, Stone article). Tier 1 is SILENT on Cane Ridge entirely. Attendance estimates (10k–25k) are Tier-1/2-silent — teach only "thousands" / "immense," never a flat headcount.'
+  falsehoods:
+  - cane ridge.{0,40}(exactly|precisely).{0,20}(20,000|twenty thousand)
+  - cane ridge.{0,40}drew.{0,10}20,000.{0,20}(people|attended)
+  sources:
+  - britannica
+  tier_note: same-day entry from U4-E11 v2 draft, 2026-10-06
+- id: F-U4-044
+  topic: Finney revival quote — Tier-1 Day-55 wording vs reported "not a miracle" line
+  correct: 'Tier-1-verified Finney line (5steps Day55): "It is necessary to raise an excitement among them, till the tide rises so high as to sweep away the opposing obstacles." — Lectures on Revivals of Religion, 1835. The famous "A revival is not a miracle. It is a purely philosophical result of the right use of the constituted means" wording is REPORTED, not Tier-1/2-verified — never present it as a Tier-verified quote.'
+  falsehoods:
+  - revival is not a miracle.{0,80}purely philosophical
+  sources:
+  - 5steps
+  tier_note: same-day entry from U4-E11 v2 draft, 2026-10-06
+- id: F-U4-045
+  topic: Burned-over district — Erie Canal corridor; "nobody left to convert" not Finney's line
+  correct: 'The burned-over district = the growing population centers along the Erie Canal in upstate New York (premium2027), western and central NY (princeton sup). The traditional explanation — revivals burned so hot "it appeared that there was no one left to convert" (Norris 09) — belongs to the preachers generally, NOT to Finney. Never attribute it to Finney; never teach actual fires.'
+  falsehoods:
+  - finney.{0,60}(said|told).{0,40}(nobody|no one) left to convert
+  - burned-over.{0,40}(church|chapel).{0,20}(fire|burned down)
+  sources:
+  - premium2027
+  - norris
+  - princeton
+  tier_note: same-day entry from U4-E11 v2 draft, 2026-10-06
+- id: F-U4-046
+  topic: Peter Cartwright circuit rider — mileage is an estimate
+  correct: 'Methodist circuit rider Peter Cartwright rode a circuit from Tennessee to Illinois for decades on horseback; the ~300,000-mile figure is "by some estimates" (Norris 09). Always carry the hedge — never teach 300,000 as a counted total.'
+  falsehoods:
+  - cartwright.{0,40}rode.{0,20}300,000 miles(?!.*estimat)
+  sources:
+  - norris
+  tier_note: same-day entry from U4-E11 v2 draft, 2026-10-06
+- id: F-U4-047
+  topic: AME Church founded 1816, Philadelphia, Richard Allen (premium2027)
+  correct: 'The African Methodist Episcopal (AME) Church was founded by Richard Allen in Philadelphia in 1816 from several African-American Methodist churches — a bid for autonomy and services tailored to the African-American community, with race-conscious theology (premium2027 ch6, Topic 4.12).'
+  falsehoods: []
+  sources:
+  - premium2027
+  tier_note: same-day entry from U4-E11 v2 draft, 2026-10-06
+- id: F-U4-048
+  topic: Perfectionism — the revival-to-reform bridge (premium2027)
+  correct: 'Perfectionism: "Not only could one become perfect in the eyes of God, but one could also work to perfect society as well" (premium2027 ch6). The Romantic notion of human perfectibility was central to the reform movements; reform institutions reflected it. This is the AP link word between the Second Great Awakening and the reform wave — teach the arrow, not just the list.'
+  falsehoods: []
+  sources:
+  - premium2027
+  tier_note: same-day entry from U4-E11 v2 draft, 2026-10-06
+- id: F-U4-049
+  topic: Temperance numbers — ATS 1826; claimed 1.5M by 1835; Maine dry 1851
+  correct: 'American Temperance Society founded 1826; CLAIMED 1.5 million members by 1835 (the book hedges with "claimed" — carry it); per-person alcohol consumption dropped by about half 1830–1840; Maine went dry 1851, followed by twelve other states (premium2027 ch6).'
+  falsehoods:
+  - temperance society.{0,40}had.{0,20}1.5 million members(?!.*claim)
+  sources:
+  - premium2027
+  tier_note: same-day entry from U4-E11 v2 draft, 2026-10-06
+- id: F-U4-050
+  topic: Horace Mann — MA education secretary; "father of the public school" NOT Tier-1
+  correct: 'Horace Mann was secretary of education in Massachusetts in the 1840s and 1850s (also served in the U.S. House); the public-education campaign saw schooling as essential to democratic participation; Catholic families worried about Protestant indoctrination (premium2027 ch6). "Father of the American public school" is a common honorific but NOT Tier-1 — do not teach it as a verified title.'
+  falsehoods: []
+  sources:
+  - premium2027
+  tier_note: same-day entry from U4-E11 v2 draft, 2026-10-06
+- id: F-U4-051
+  topic: Dorothea Dix — 1830s–40s campaign; asylums; "penitence"; 1843 memorial Tier-silent
+  correct: 'Dorothea Dix became famous in the 1830s and 1840s persuading states to provide better treatment for the mentally ill (5steps); her efforts led to the first generation of psychiatric asylums in the U.S.; new penitentiaries were built to reform/rehabilitate around "penitence" — moral instruction plus time to meditate on transgressions (premium2027 ch6). Her 1843 memorial to the Massachusetts legislature and specific jail-visit details are Tier-1/2-SILENT — teach the campaign, not the memorial.'
+  falsehoods: []
+  sources:
+  - 5steps
+  - premium2027
+  - norris
+  tier_note: same-day entry from U4-E11 v2 draft, 2026-10-06
+- id: F-U4-052
+  topic: Abolition rise — Liberator 1831 immediatism; ACS 1817/Liberia numbers; Douglass on colonization
+  correct: 'Garrison began The Liberator in 1831: immediate AND uncompensated emancipation, freed people entitled to the same rights as whites — a break with gradualism and colonization (premium2027 ch6). American Colonization Society founded 1817; bought Liberian land; ~12,000 African Americans went 1820–Civil War, ~7,000 freed on condition they leave; most showed little interest; Douglass saw colonization as accommodating slavery (premium2027 ch6). The movement was Black-led before Garrison (Norris 10: David Walker''s Appeal).'
+  falsehoods: []
+  sources:
+  - premium2027
+  - norris
+  - 5steps
+  tier_note: same-day entry from U4-E11 v2 draft, 2026-10-06
+- id: F-U4-053
+  topic: Seneca Falls 1848 — full Tier-1 detail incl. London 1840 causal link
+  correct: 'Seneca Falls Convention, 1848, upstate NY, led by Elizabeth Cady Stanton and Lucretia Mott with many abolitionist-movement veterans; first public gathering to raise women''s suffrage; went beyond the vote — property rights, education, wages, child custody, divorce, overall legal status; Declaration of Sentiments modeled on the Declaration of Independence, declaring "all men and women are created equal" (premium2027 ch6). Causal link is Tier-1: barred from the floor of the 1840 World Anti-Slavery Convention in London because of gender, Mott and Stanton "began thinking not only about the abolition of slavery but also about the conditions of women." The vote took ~70 more years (Norris 10) — never teach Seneca Falls as winning suffrage.'
+  falsehoods:
+  - seneca falls.{0,40}(won|granted|achieved).{0,20}(women.{0,10})?(vote|suffrage)
+  sources:
+  - premium2027
+  - norris
+  tier_note: same-day entry from U4-E11 v2 draft, 2026-10-06
+- id: F-U4-054
+  topic: Thoreau — Walden dates + exact book quote; poll-tax jail night Tier-silent
+  correct: 'Thoreau lived at Walden Pond two years, 1845–1847; Walden published 1854; Tier-1 exact quote (premium2027, with the book''s ellipses): "I went to the woods because I wished to live deliberately, to front only the essential facts of life ..." Essay "Resistance to Civil Government" (1849), aka "Civil Disobedience," urging individuals not to acquiesce to unjust government dictates. The 1846 poll-tax night in Concord jail is Tier-1/2-SILENT — teach the essay and its argument, never the jail night as verified.'
+  falsehoods: []
+  sources:
+  - premium2027
+  tier_note: same-day entry from U4-E11 v2 draft, 2026-10-06
+- id: F-U4-055
+  topic: Transcendentalists did NOT gravitate toward reform movements (premium2027)
+  correct: 'Per premium2027 ch6: "Although the transcendentalists were critical of the direction of mainstream society, they did not gravitate toward the reform movements of the day." Never file Emerson/Thoreau under "reformers" — the AP trap is lumping them into the reform wave. Their perfectionism turned inward (self), not outward (society).'
+  falsehoods:
+  - transcendentalists.{0,30}led.{0,20}reform
+  - thoreau.{0,40}abolitionist leader
+  sources:
+  - premium2027
+  tier_note: same-day entry from U4-E11 v2 draft, 2026-10-06
+- id: F-U4-056
+  topic: Mormons — 1830 upstate NY origin; polygamy; Smith killed 1844; Utah 1847
+  correct: 'Church of Jesus Christ of Latter-day Saints founded 1830 by Joseph Smith in upstate New York (his conversion happened in the burned-over district — Norris 10); met with hostility; most controversial practice was polygamy (renounced 1890); journeyed NY→Ohio→Missouri→Illinois; Smith killed by an anti-Mormon mob in Illinois in 1844; Brigham Young led the majority to Utah in 1847 (premium2027 ch6). Started in New York, NOT Utah — Utah is where they ended up.'
+  falsehoods:
+  - mormon.{0,30}(founded|began|started).{0,20}utah
+  - joseph smith.{0,30}founded.{0,30}utah
+  sources:
+  - premium2027
+  - norris
+  tier_note: same-day entry from U4-E11 v2 draft, 2026-10-06
+- id: F-U4-057
+  topic: Oneida 1848 (Noyes) + Brook Farm 1841 (Ripley) — Tier-1 details
+  correct: 'Oneida, 1848, upstate NY: John Humphrey Noyes (converted under Finney''s preaching) founded a commune on building a perfect community now — shared property, "complex marriage"; Noyes dictatorial down to approving conceptions; lasted ~3 decades; dissolved into a joint-stock silverware company (Norris 10). Brook Farm, 1841, outside Boston: transcendentalist George Ripley; residents shared equally in labor and leisure; Hawthorne joined then grew disillusioned; never financially viable, closed after 6 years (premium2027 ch6; Norris 10).'
+  falsehoods: []
+  sources:
+  - norris
+  - premium2027
+  tier_note: same-day entry from U4-E11 v2 draft, 2026-10-06
+- id: F-U4-058
+  topic: Cult of domesticity — private sphere dictate (premium2027)
+  correct: 'The "cult of domesticity" dictated that women confine their activities to the private sphere — powerful among the antebellum middle class (premium2027 ch6). Use as the setup for why Seneca Falls mattered; the Female Moral Reform Society (1834) is Tier-1 but was not taught in U4-E11.'
+  falsehoods: []
+  sources:
+  - premium2027
+  tier_note: same-day entry from U4-E11 v2 draft, 2026-10-06
+- id: F-U4-059
+  topic: Camp-meeting diversity — Tier-1 (Norris 09); Jarena Lee / hush harbors Tier-silent
+  correct: 'Camp-meeting crowds were unusually diverse: whites and Blacks, enslaved and free, women; Black preachers and women preachers held the stage and gathered followings; Baptists and Methodists grew fastest on that mix (Norris 09). Jarena Lee and "hush harbors" are Tier-1/2-SILENT — omitted from U4-E11 rather than taught unverified.'
+  falsehoods: []
+  sources:
+  - norris
+  tier_note: same-day entry from U4-E11 v2 draft, 2026-10-06
+- id: F-U4-060
+  topic: Finney mechanics — "new measures"/"anxious bench" Tier-silent; Rochester Tier-1, undated
+  correct: 'Finney''s "new measures" and "anxious bench" terminology is Tier-1/2-SILENT — U4-E11 teaches his mechanics in Tier-1 language only (plain speech for common people; revivals as human method via the Day-55 quote). What IS Tier-1: Finney focused his revivals on Rochester, New York (and New York City) — Norris 09 gives NO date, so U4-E11 does not pin one.'
+  falsehoods:
+  - finney.{0,30}rochester.{0,20}1830.{0,10}revival.{0,20}tier
+  sources:
+  - norris
+  tier_note: same-day entry from U4-E11 v2 draft, 2026-10-06
+- id: F-U4-061
+  topic: Second Great Awakening dates — c. 1790–1840; peaked 1820s–30s
+  correct: 'The Second Great Awakening lasted roughly 50 years, c. 1790–1840 (Norris 09); it peaked in the 1820s and 1830s with soaring Baptist, Methodist, and Presbyterian membership (princeton sup). Teach as a range, never a single start year.'
+  falsehoods: []
+  sources:
+  - norris
+  - princeton
+  tier_note: same-day entry from U4-E11 v2 draft, 2026-10-06
+- id: F-U4-062
+  topic: Emerson "Self-Reliance" 1841 — book says "On Self-Reliance"
+  correct: 'Emerson''s 1841 essay is "Self-Reliance" (premium2027 ch6 prints it as "On Self-Reliance" — use the correct title). Thrust: trust yourself, don''t bow to the crowd; transcendentalism put more stock in intuition than in empirical observation and was critical of the country''s materialist direction.'
+  falsehoods: []
+  sources:
+  - premium2027
+  tier_note: same-day entry from U4-E11 v2 draft, 2026-10-06
+- id: F-U4-063
+  topic: Horace Mann's secretaryship — book error
+  correct: "Horace Mann was the first secretary of the Massachusetts Board of Education, 1837–1848; he resigned in 1848 to take John Quincy Adams's vacant House seat, then led Antioch College from 1853. He was NOT education secretary in the 1850s. Verified via Britannica, Britannica Kids, and the Clio entry, 2026-10-06."
+  falsehoods:
+  - secretary of education in massachusetts in the 1840s and 1850s
+  - education secretary through the eighteen-forties and fifties
+  sources:
+  - premium2027
+  - Britannica
