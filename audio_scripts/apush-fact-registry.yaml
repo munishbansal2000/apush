@@ -3194,3 +3194,67 @@ facts:
   - 5steps2024
   - britannica
   tier_note: Book error #10, independently confirmed 2026-10-07 per the 2026-10-06 rule — book line verified in 5steps2024 OEBPS/ch14.xhtml; correction confirmed via Britannica Missouri Compromise article. The U5-L2 v4 script does NOT teach this error.
+- id: F-U5-018
+  topic: Bleeding Kansas death toll is disputed in Tier 1 — never pin ~50 flat
+  correct: 'The Kansas death toll is genuinely disputed in Tier 1: the Unit 5 transcript says ~50 dead; Princeton says "more than 200 people died in the conflict." U5-L3 v3 teaches both without pinning. Never teach "~50" as the settled figure.'
+  falsehoods:
+  - (about |around |some )?50 (americans )?dead.{0,40}kansas
+  sources:
+  - transcript
+  - princeton
+  tier_note: Corrected U5-L3 v3 2026-10-07 — v1 pinned ~50.
+- id: F-U5-019
+  topic: Pottawatomie weapons — "swords," not "broadswords"; victims not "unarmed"
+  correct: 'Tier 1 (premium2027) says Brown, his sons, and followers "killed five men with swords." "Broadswords" is unverified in Tier 1+2. "Unarmed" is an inference no source states — Britannica confirms only the nighttime raid. Teach "five men" killed "with swords" / "in the dark."'
+  falsehoods:
+  - broadswords.{0,30}pottawatomie|pottawatomie.{0,30}broadswords
+  - five unarmed men.{0,20}dark
+  sources:
+  - premium2027
+  - britannica
+  tier_note: Corrected U5-L3 v3 2026-10-07 — v1 taught "broadswords"; draft briefly had "unarmed."
+- id: F-U5-020
+  topic: Sumner caning minutiae unverifiable in Tier 1+2 — drop, don't teach
+  correct: 'The bolted desk / Sumner tearing it loose, the cane breaking, Southerners mailing Brooks replacement canes, Brooks''s age (37) and Mexican War service are in NO Tier 1 book or Tier 2 source. U5-L3 v3 drops all five and teaches only the verified reaction split (North martyr / South hero). Never teach these details flat without a source.'
+  falsehoods:
+  - desk (was )?bolted to the floor.{0,40}sumner|sumner.{0,40}bolt(ed)? desk
+  - cane (broke|breaking|snapped).{0,40}brooks|brooks.{0,40}cane (broke|breaking|snapped)
+  - (mailed|sent).{0,20}brooks.{0,20}canes
+  sources:
+  - registry
+  tier_note: Corrected U5-L3 v3 2026-10-07 — v1 taught the desk/cane/mailed-canes/Brooks-bio details; L3 flagged a fourth (senators intervening, allies blocking) separately as F-U5-024.
+- id: F-U5-021
+  topic: Sumner absence duration — hedge as "years," never pin 3 or 4
+  correct: 'premium2027 says Sumner was "incapacitated for four years"; the U.S. Senate Historical Office says he returned only intermittently over about three years and resumed full-time duties in 1859. The conflict is real — teach "out for years," never pin three or four as settled.'
+  falsehoods:
+  - sumner.{0,30}(out|gone|absent).{0,20}(three|four) years
+  sources:
+  - premium2027
+  - senate.gov
+  tier_note: Corrected U5-L3 v3 2026-10-07 — v1 pinned "three years."
+- id: F-U5-022
+  topic: Know-Nothing nickname origin — Princeton's secrecy explanation, not the "I know nothing" reply
+  correct: 'Princeton: the American Party was "often called the Know-Nothings because they met privately and remained secretive about their political agenda." The popular "members answered ''I know nothing''" version is unverified in Tier 1. Teach the secrecy explanation.'
+  falsehoods:
+  - know.nothings.{0,60}i know nothing.{0,40}(said|replied|answered)
+  sources:
+  - princeton
+  tier_note: Corrected U5-L3 v3 2026-10-07 — v1 taught the "I know nothing" reply version.
+- id: F-U5-023
+  topic: Kansas settler shipments — Tier 1 supports only "shipped in supporters"
+  correct: 'Tier 1 (5steps2024) verifies only that "both Abolitionists and proslavery forces shipped in supporters." "New England antislavery societies," "rifles," and "printing presses" appear in no Tier 1 source. Teach the Tier-1 wording: "antislavery groups ship in settlers of their own."'
+  falsehoods:
+  - antislavery societies.{0,40}(rifles|printing presses)
+  - shipped in settlers carrying rifles
+  sources:
+  - 5steps2024
+  tier_note: Corrected U5-L3 v3 2026-10-07 — draft detail failed L3 fail-closed check.
+- id: F-U5-024
+  topic: Senators intervening in the caning — unverifiable in Tier 1+2
+  correct: '"Other senators try to intervene and Brooks''s allies block them" appears in no Tier 1 book, transcript, or Tier 2 source (Britannica/NPS/senate.gov). Dropped from U5-L3 v3. Never teach it flat without a source.'
+  falsehoods:
+  - senators (try|tried) to intervene.{0,40}brooks
+  - brooks.{0,20}allies.{0,20}block
+  sources:
+  - registry
+  tier_note: Corrected U5-L3 v3 2026-10-07 — draft detail failed L3 fail-closed check.
