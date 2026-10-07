@@ -2942,3 +2942,103 @@ facts:
   - britannica
   - web
   tier_note: 'Tier 2 (Britannica San Jacinto: Velasco signed by Santa Anna while a prisoner, recognized Texas independence); non-ratification per US Congressional Record account — flagged for L3. Corrected U4-E14 v2 2026-10-07 (v1 taught the line as settled treaty text).'
+- id: F-U4-078
+  topic: Thornton Affair numbers — teach Polk's message version, disclose the dispute
+  correct: 'Teach the Thornton Affair (April 25, 1846) as Polk''s war message reported it: a party of dragoons of 63 men and officers, "some 16 were killed and wounded," the rest surrounded and compelled to surrender. Modern accounts vary (11–16 killed). Never pin a single exact toll ("11 killed, dozens captured") as settled — disclose the count dispute in-dialogue.'
+  falsehoods:
+  - thornton.{0,40}eleven.{0,20}killed.{0,40}(dozens|the rest).{0,20}captured.{0,40}(no|without).{0,20}(dispute|argue)
+  - exactly eleven americans (were )?killed at thornton
+  sources:
+  - avalon
+  - 5steps
+  tier_note: Avalon (Polk war message May 11, 1846, verbatim); UTA "A Continent Divided" (16 killed or wounded, 52 held). Corrected U4-E15 v2 2026-10-07 (v1 taught "11 killed, dozens captured" flat).
+- id: F-U4-079
+  topic: Polk's war message — verified verbatim wording ("the American soil")
+  correct: 'Polk''s May 11, 1846 war message, verbatim (Avalon): "Mexico has passed the boundary of the United States, has invaded our territory and shed American blood upon the American soil." Note the article: "THE American soil," not "American soil." Quote only with spoken disclosure.'
+  falsehoods:
+  - shed american blood upon american soil.{0,40}his actual words
+  - "invaded our territory and shed american blood upon american soil"
+  sources:
+  - avalon
+  tier_note: Verified verbatim against the Avalon Project text of the May 11, 1846 message. Corrected U4-E15 v2 2026-10-07 (v1 dropped the article).
+- id: F-U4-080
+  topic: Lincoln's Spot Resolutions — date, verbatim wording, never voted on
+  correct: 'Lincoln introduced eight "spot" resolutions on December 22, 1847. Verbatim (House record): "whether the particular spot of soil on which the blood of our citizens was so shed, was, or was not, our own soil, at that time." Congress NEVER voted on them; Illinois papers hung "Spotty Lincoln" on him. Never teach that the resolutions passed or forced Polk to answer.'
+  falsehoods:
+  - spot resolutions (passed|embarrassed polk|forced polk to answer)
+  - lincoln.{0,30}spot resolutions.{0,30}(passed|adopted)
+  sources:
+  - visitthecapitol
+  - princeton
+  tier_note: Wording via US Capitol Visitor Center (House records); "spotty Lincoln" nickname Tier-1 (princeton). Added U4-E15 v2 2026-10-07.
+- id: F-U4-081
+  topic: Ashmun Amendment — Jan 3, 1848, wording, 85 Whigs; do not pin the against-tally
+  correct: 'The Ashmun Amendment (Jan 3, 1848): the war had been "unnecessarily and unconstitutionally begun by the President of the United States." Eighty-five Whigs voted yes, Lincoln among them; it carried by a handful. Do NOT pin the against-tally (commonly cited 85–81 is not Tier-1/2 verified).'
+  falsehoods:
+  - ashmun amendment.{0,30}passed.{0,20}85 to 81
+  - ashmun.{0,30}eighty-five to eighty-one
+  sources:
+  - web
+  tier_note: Wording + 85 Whigs incl. Lincoln via standard accounts; against-tally unverified in Tier 1/2 — taught as "a handful." Added U4-E15 v2 2026-10-07.
+- id: F-U4-082
+  topic: Wilmot Proviso House passages — 5steps vs premium2027 conflict; do not pin
+  correct: '5steps says the Wilmot Proviso "passed by the House four times"; premium2027 says it passed three times (1846, 1847, 1848). Both agree it never cleared the Senate. Teach only "passed the House again and again; the Senate never did" — never pin three or four as settled.'
+  falsehoods:
+  - wilmot proviso.{0,30}passed the house (three|four) times
+  sources:
+  - 5steps
+  - premium2027
+  tier_note: Direct Tier-1 conflict found during U4-E15 v2 drafting 2026-10-07; taught hedged.
+- id: F-U4-083
+  topic: Gold at Sutter's Mill — Jan 24, 1848, nine days before the treaty signing
+  correct: 'James W. Marshall found gold at Sutter''s Mill on January 24, 1848 (Britannica) — nine days before the Treaty of Guadalupe Hidalgo was signed (Feb 2, 1848). Polk wanted California for the harbor before anyone knew about the gold; gold is not why the US wanted California.'
+  falsehoods:
+  - gold.{0,40}a week before the (united states|us) formally acquired
+  - (polk|the us).{0,40}wanted california.{0,30}gold
+  sources:
+  - britannica
+  - premium2027
+  tier_note: Tier 2 (Britannica John Sutter article). premium2027's "a week before the US formally acquired" is loose — v2 teaches the nine-days-before-signing timing. Added U4-E15 v2 2026-10-07.
+- id: F-U4-084
+  topic: Grant's "wicked war" quote — verified verbatim from the 1885 memoirs
+  correct: 'Grant''s Personal Memoirs (1885), verbatim: "I do not think there was ever a more wicked war than that waged by the United States on Mexico." He added that he thought so at the time but "had not moral courage enough to resign." Never teach the paraphrase "one of the most unjust wars ever waged" as his actual words.'
+  falsehoods:
+  - grant.{0,40}"one of the most unjust wars ever waged"
+  - grant called it one of the most unjust wars.{0,40}his (actual )?words
+  sources:
+  - web
+  tier_note: Verbatim across multiple transcriptions of the 1885 memoirs (public domain). Corrected U4-E15 v2 2026-10-07 (v1 taught the paraphrase as his words).
+- id: F-U4-085
+  topic: Mexican War death tolls — do not pin US or Mexican totals
+  correct: 'Do NOT pin war-dead totals ("13,283 Americans," "25,000 Mexicans") — those figures are Wikipedia-only, not Tier-1/2. Teach qualitatively: disease killed far more men than battle did, on both sides. Hedge every casualty number or leave it out.'
+  falsehoods:
+  - (thirteen thousand|13,?283) americans? died
+  - 25,?000 mexicans? (died|soldiers died)
+  sources:
+  - registry
+  tier_note: Scope requirement for U4-E15 ("hedge all casualty numbers"). Corrected U4-E15 v2 2026-10-07 (v1 pinned "thirteen thousand Americans died, most of disease").
+- id: F-U4-086
+  topic: Trist negotiated after Polk recalled him — beyond Tier-1/2, hedge it
+  correct: 'Nicholas Trist negotiated the Treaty of Guadalupe Hidalgo after Polk had recalled him and ordered him home; Polk accepted the treaty because he wanted out of the war. Standard textbook account but NOT in the frozen Tier-1 set — teach hedged, never flat.'
+  falsehoods:
+  - trist negotiated the treaty on polk's orders
+  - polk.{0,30}envoy.{0,30}negotiated.{0,30}(as instructed|under orders)
+  sources:
+  - web
+  tier_note: Beyond Tier 1/2 — taught hedged in U4-E15 v2 2026-10-07, flagged for Layer 3.
+- id: F-U4-087
+  topic: Thoreau's night in jail — Tier-1/2-silent; teach only hedged
+  correct: 'Tier-1 (premium2027 ch6) covers only Thoreau''s 1849 "Civil Disobedience" essay ("Resistance to Civil Government"), urging individuals not to acquiesce to unjust government dictates. The night-in-jail-over-the-poll-tax story is Tier-1/2-SILENT — teach only as "the famous story says," never as verified fact.'
+  falsehoods:
+  - thoreau spent a night in jail.{0,60}(fact|in 1846|certainly)
+  sources:
+  - premium2027
+  tier_note: Taught hedged in U4-E15 v2 2026-10-07, flagged for Layer 3.
+- id: F-U4-088
+  topic: Guadalupe Hidalgo's promises to Mexicans in the ceded lands — hedged, not fulfilled-flat
+  correct: 'The treaty promised Mexicans in the ceded lands property rights and a path to US citizenship; in practice the promises mostly dissolved in courts and land commissions over decades. Teach as "mostly dissolved" — never as fulfilled, and never with pinned Article VIII/IX detail (beyond Tier-1/2).'
+  falsehoods:
+  - the treaty (kept|fulfilled|guaranteed).{0,30}mexican.{0,20}(land|property).{0,30}rights
+  sources:
+  - web
+  tier_note: Hedged in U4-E15 v2 2026-10-07, flagged for Layer 3.
