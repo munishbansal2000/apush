@@ -41,7 +41,11 @@ MONTHS = re.compile(
 )
 # G9: "Not X, just Y" punchline antitheses
 ANTI = [
-    re.compile(r",\s*not \w+(?=[.!?,;])"),
+    # ", not <up to 4 words>." — the X, not Y punchline family ("Gasoline,
+    # not the spark." / "the trigger, not the cause."). 2026-10-07 (U6-L6):
+    # the old single-word pattern missed two-word closers like ", not the
+    # spark." — six instances sailed through the gate. Budget: <3 per episode.
+    re.compile(r",\s*not\s+\w+(\s+\w+){0,3}(?=[.!?;])"),
     re.compile(r"didn['\u2019]t \w+, (they|it|he|she|we) \w+"),
     re.compile(r"\bnot \w+( \w+)?, just\b"),
 ]
@@ -92,12 +96,16 @@ def registry_hits(spoken, facts):
     # match whose sentence carries a negation frame. 2026-10-06: extended to
     # the "common mistake" / "students write" frames — e.g. Students write
     # "Jackson banned paper money." He didn't. — which quote the error only
-    # to refute it.
+    # to refute it. 2026-10-07 (U6-L6): "students? write" only matched bare
+    # "write" — extended to writes/wrote/written; added the "is wrong" /
+    # "that's wrong" debunking frame ("the 'Hoover did nothing' line is
+    # wrong") — same pedagogical family as "classic mistake".
     NEG_FRAME = re.compile(
         r"\b(don't|do not|never)\s+(write|say|claim|argue)\s+that\b"
         r"|\bcommon mistake\b"
         r"|\bclassic mistake\b"
-        r"|\bstudents?\s+write\b",
+        r"|\bstudents?\s+(writ\w*|wrote)\b"
+        r"|\b(is|that's|that is)\s+wrong\b",
         re.IGNORECASE,
     )
     out = []

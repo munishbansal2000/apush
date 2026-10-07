@@ -5507,3 +5507,255 @@ facts:
   - 5steps
   - prem27
   tier_note: 'Pinned U6-L5 v2 2026-10-07.'
+
+- id: F-U6-030
+  topic: 'Black Thursday (Oct 24) came before Black Tuesday (Oct 29), 1929'
+  correct: 'Black Thursday, October 24, 1929, then Black Tuesday, October 29 — the crash
+    panicked over a week, not a single day (5steps2024 ch23; premium2027 ch9 timeline;
+    Britannica: Black Thursday marked the beginning of the crash). Students reverse
+    the two; teach Thursday-first.'
+  falsehoods:
+  - black tuesday.{0,30}october 24
+  - black thursday.{0,30}october 29
+  sources:
+  - 5steps
+  - prem27
+  - britannica
+  tier_note: 'Pinned U6-L6 v2 2026-10-07 — student reversal error.'
+
+- id: F-U6-031
+  topic: 'Window-jumping after the 1929 crash is mostly legend'
+  correct: '5steps2024 ch23: the urban legend said ruined investors leapt from windows;
+    ''in fact, only two people killed themselves this way.'' Teach the myth-bust:
+    the photos are real, the mass jumping is legend.'
+  falsehoods:
+  - dozens.{0,30}jumped.{0,30}windows
+  - investors.{0,30}leapt.{0,30}windows
+  sources:
+  - 5steps
+  tier_note: 'Taught as the legend-vs-fact beat in U6-L6 v2 2026-10-07.'
+
+- id: F-U6-032
+  topic: 'Smoot-Hawley did not cause the Depression — gasoline, not the spark'
+  correct: 'Hawley-Smoot Tariff (1930) raised tariffs to near-record levels; retaliation
+    followed and world trade collapsed — it deepened/spread an already-burning downturn
+    (5steps2024 ch23: ''probably deepened the depression''; premium2027 ch9). Never teach
+    it as the cause; the exam tests cause-versus-worsener.'
+  falsehoods:
+  - smoot.?hawley.{0,40}caused the (great )?depression
+  - hawley.?smoot.{0,40}cause.{0,20}depression
+  sources:
+  - 5steps
+  - prem27
+  tier_note: 'Pinned U6-L6 v2 2026-10-07 — the classic student overclaim.'
+
+- id: F-U6-033
+  topic: 'Smoot-Hawley tariff level — never ''highest in U.S. history'''
+  correct: 'premium2027 ch9: Hawley-Smoot reached the ''second-highest rate in United
+    States history''; princeton ch11 overclaims ''the highest protective tariff in
+    U.S. history'' (book-error candidate, unconfirmed). Teach ''near-record highs''
+    (5steps2024 ch23: ''near record levels''), never the superlative.'
+  falsehoods:
+  - smoot.?hawley.{0,30}highest tariff in (u\.?s\.?|american) history
+  sources:
+  - prem27
+  - 5steps
+  tier_note: 'Flagged U6-L6 v2 2026-10-07 — Tier-1 conflict; princeton candidate unconfirmed.'
+
+- id: F-U6-034
+  topic: 'Farm depression predates the 1929 crash — early 1920s, not 1929'
+  correct: 'The agricultural depression ran through the 1920s: wartime demand vanished,
+    European farms recovered, crop prices collapsed — a cycle of debt, overproduction,
+    and falling prices (premium2027 ch9; 5steps2024 ch23). 6,200 rural banks closed in
+    the 1920s before the crash (5steps). Never date the farm crisis to 1929.'
+  falsehoods:
+  - farm (crisis|depression).{0,30}(began|started).{0,20}1929
+  - 1929.{0,30}farm (crisis|depression) began
+  sources:
+  - 5steps
+  - prem27
+  tier_note: 'Pinned U6-L6 v2 2026-10-07 — timing-trap error.'
+
+- id: F-U6-035
+  topic: '"Hoover did nothing" is false — his line was direct federal relief'
+  correct: 'Hoover acted: voluntarism/charity coordination, Agricultural Marketing Act
+    (June 1929, Farm Board), public works (Colorado River dam), RFC (1932, loans to
+    banks/railroads/businesses), 1932 federal loans to states (5steps2024 ch23;
+    premium2027 ch9: rugged individualism, loans to railroads/banks/insurers, no direct
+    relief to individuals). What he refused was DIRECT federal relief to people — that
+    is the line to teach, not ''did nothing.'''
+  falsehoods:
+  - hoover did nothing
+  - hoover.{0,30}took no action
+  sources:
+  - 5steps
+  - prem27
+  tier_note: 'Pinned U6-L6 v2 2026-10-07 — the classic student overclaim.'
+
+- id: F-U6-036
+  topic: 'Fed 1928-29 tightening + ~1/3 money-supply contraction — beyond Tier 1-2, disclosed'
+  correct: 'Neither Tier-1 book covers the Fed''s 1928–29 anti-speculation rate hikes or
+    the money-supply channel in its Depression-causes discussion. U6-L6 v2 teaches both
+    as the standard attributed interpretation: the monetarist argument (Milton
+    Friedman''s camp) that the Fed turned a recession into a depression by letting the
+    money supply shrink by roughly a third while failing as lender of last resort;
+    proportions debated, failure not. Tier-2 corroboration: Britannica ''Banking panic''
+    (panics → ''significant contraction of the money supply''). Disclosed in the
+    episode Sources footer.'
+  falsehoods: []
+  sources:
+  - britannica
+  tier_note: 'Disclosed U6-L6 v2 2026-10-07 — taught attributed, never flat.'
+
+- id: F-U6-037
+  topic: 'Margin buying was regulated after the crash, not ''made illegal'''
+  correct: 'princeton ch11 says margin buying ''was made illegal soon after the crash''
+    — an oversimplification (book-error candidate, unconfirmed); margin buying was
+    restricted/regulated, not outlawed. U6-L6 v2 does not teach the claim.'
+  falsehoods:
+  - margin buying was made illegal
+  sources:
+  - princeton
+  tier_note: 'Flagged U6-L6 v2 2026-10-07 — princeton simplification; candidate unconfirmed.'
+
+- id: F-U6-038
+  topic: 'Do not teach 5steps ''0.02 of the population / 40% of savings'' pin'
+  correct: '5steps2024 ch23: ''By 1929, 0.02 of the American population possessed more
+    than 40 percent of the nation''s savings'' — ambiguous pin (book-error candidate,
+    unconfirmed). Teach premium2027 ch9''s income pair instead: top 1% income +~75%
+    vs bottom 90% <+10% in the 1920s.'
+  falsehoods:
+  - 0\.02.{0,30}40 percent.{0,20}savings
+  sources:
+  - 5steps
+  - prem27
+  tier_note: 'Flagged U6-L6 v2 2026-10-07 — candidate unconfirmed; income pair used instead.'
+
+- id: F-U6-039
+  topic: 'Gold standard transmitted the downturn; Britain left Sept 1931'
+  correct: 'Britannica (Tier 2): the gold standard ''played a key role in transmitting
+    the American downturn to other countries'' — foreign central banks had to raise
+    rates to defend gold, deepening slumps; Britain abandoned gold in September 1931.
+    U6-L6 v2 teaches ''America held on until 1933'' as the standard account, disclosed
+    beyond Tier 1-2 in the Sources footer.'
+  falsehoods: []
+  sources:
+  - britannica
+  tier_note: 'Pinned U6-L6 v2 2026-10-07.'
+
+- id: F-U6-040
+  topic: 'War-debt/reparations circle held together by American loans (Dawes 1924, Young 1929)'
+  correct: 'Germany owed reparations to Britain/France; Britain/France owed war debts
+    to America; American loans to Germany kept the circle turning (Britannica Tier 2:
+    Dawes Plan 1924, on U.S./British initiative, arranged German reparations payments;
+    Young Plan 1929 second renegotiation). 5steps2024 ch23: ''American loans dried up
+    in the wake of the market collapse'' → European downturn. Teach the loop with the
+    1929 loan-stop as the snap.'
+  falsehoods: []
+  sources:
+  - britannica
+  - 5steps
+  tier_note: 'Pinned U6-L6 v2 2026-10-07.'
+- id: F-U6-041
+  topic: 'Black Tuesday losses: 5steps2024 ch23 says $20 million — actually ~$14 billion'
+  correct: 'Black Tuesday (Oct 29, 1929) wiped out roughly $14 billion in stock value (billions, not millions). 5steps2024 ch23 prints "costing investors more than $20 million" — wrong by ~3 orders of magnitude. HISTORY: "Billions of dollars were lost, wiping out thousands of investors." Never teach the $20 million figure.'
+  falsehoods:
+  - black tuesday.{0,40}20 million
+  - costing investors.{0,20}20 million
+  sources:
+  - 5steps
+  - history.com
+  tier_note: 'Confirmed U6-L6 v2 2026-10-07 — 5steps error, independently confirmed via HISTORY.'
+- id: F-U6-042
+  topic: 'Margin buying was NOT made illegal after the crash — it was regulated'
+  correct: 'Buying on margin was regulated, not outlawed: the Securities Exchange Act of 1934 gave the Federal Reserve authority to set margin requirements (Regulation T, effective Oct 1, 1934). Margin buying remains legal today under Fed rules. princeton ch11 says it "was made illegal soon after the crash" — wrong.'
+  falsehoods:
+  - margin buying.{0,30}made illegal
+  - margin.{0,20}outlawed after the crash
+  sources:
+  - princeton
+  - federalreserve.gov
+  tier_note: 'Confirmed U6-L6 v2 2026-10-07 — princeton error, independently confirmed via the Federal Reserve (Regulation T background).'
+- id: F-U6-043
+  topic: 'FERA was FDRs May-1933 agency, not Hoovers — Hoover used RFC loans'
+  correct: 'The Federal Emergency Relief Administration (FERA) was created by Roosevelt in May 1933 (Federal Emergency Relief Act, grants to states). Hoover never created FERA; his 1932 relief vehicle was the Emergency Relief and Construction Act, which channeled LOANS to states through the RFC. princeton ch11 says "Hoover had Congress create the Federal Emergency Relief Administration" — wrong.'
+  falsehoods:
+  - hoover.{0,40}federal emergency relief administration
+  sources:
+  - princeton
+  - wikipedia
+  tier_note: 'Confirmed U6-L6 v2 2026-10-07 — princeton error, independently confirmed (FERA established May 12, 1933 under FDR).'
+- id: F-U6-044
+  topic: 'Smoot-Hawley was the SECOND-highest tariff, not the highest'
+  correct: 'The conventional ranking puts Smoot-Hawley (1930) as the second-highest tariff in US history, exceeded only by the Tariff of 1828 ("Tariff of Abominations"). premium2027 ch9 says "second-highest rate in United States history" — correct. princeton ch11 says "the highest protective tariff in U.S. history" — wrong. Teach without the superlative or use second-highest.'
+  falsehoods:
+  - smoot.?hawley.{0,30}highest.{0,20}tariff.{0,10}history
+  - hawley.?smoot.{0,30}highest.{0,20}tariff.{0,10}history
+  sources:
+  - princeton
+  - premium2027
+  - billofrightsinstitute.org
+  tier_note: 'Confirmed U6-L6 v2 2026-10-07 — princeton error vs premium2027; conventional ranking confirmed via multiple independent sources.'
+
+- id: F-U6-045
+  topic: 'Bonus Army deaths: two in the pre-clearing police clashes; attack toll disputed'
+  correct: '5steps2024 ch23: two veterans died in POLICE CLASHES BEFORE the clearing (''After
+    clashes with police that left two veterans dead, Hoover ordered… MacArthur to use
+    federal troops to clear…''). On deaths in the Army attack/evacuation itself the Tier-1
+    books disagree — princeton ch11: ''Two people died during the attack''; premium2027 ch9:
+    ''several veterans'' died in the evacuation. Teach: place the two deaths in the earlier
+    police clashes; hedge the attack toll as ''two to several''.'
+  falsehoods: []
+  sources:
+  - 5steps
+  - princeton
+  - premium2027
+  tier_note: 'Confirmed U6-L6 v2 2026-10-07 — fact-checker repair.'
+
+- id: F-U6-046
+  topic: 'MacArthur went BEYOND Hoover''s orders clearing the Bonus Army'
+  correct: 'Hoover ordered the camp cleared, but MacArthur went further than his orders.
+    5steps2024 ch23: ''The zealous MacArthur exceeded his instructions and stormed the
+    veterans'''' encampment''; premium2027 ch9: ''the most aggressive acts against the
+    protestors were carried out by General Douglas MacArthur, against the orders of
+    President Hoover.'' Teach with the qualifier: the operation was ordered by Hoover,
+    the excess force was MacArthur''s doing.'
+  falsehoods: []
+  sources:
+  - 5steps
+  - premium2027
+  tier_note: 'Confirmed U6-L6 v2 2026-10-07 — fact-checker repair.'
+
+- id: F-U6-047
+  topic: 'Fed 1928–29 rate hikes to curb speculation: standard attributed interpretation'
+  correct: 'The Fed''s 1928–29 rate hikes aimed at curbing speculation are beyond Tier 1–2 —
+    taught as the standard attributed interpretation (neither Tier-1 book covers the Fed''s
+    1928–29 tightening in its Depression-causes discussion). Teach with in-dialogue
+    attribution (''on the standard account'' / ''economists'''' usual story''), matching
+    the Sources footer disclosure.'
+  falsehoods: []
+  sources: []
+  tier_note: 'Pinned U6-L6 v2 2026-10-07.'
+
+- id: F-U6-048
+  topic: 'rugged individualism (label) vs voluntarism (content) — don''t merge'
+  correct: 'premium2027 ch9''s label ''rugged individualism'' = individual initiative / limited
+    government; 5steps2024 ch23''s ''neighbors helping neighbors'' is the VOLUNTARISM content.
+    Don''t merge one book''s name with the other''s content: teach rugged individualism as
+    individual initiative + limited government + the warning that federal handouts would rot
+    the American character.'
+  falsehoods: []
+  sources:
+  - premium2027
+  - 5steps
+  tier_note: 'Confirmed U6-L6 v2 2026-10-07 — fact-checker repair.'
+
+- id: F-U6-049
+  topic: 'Unverifiable ''millions'' volume claims — teach without the numbers'
+  correct: '''millions of shares changing hands'' (Black Thursday ticker) and ''millions of
+    ordinary people were in on borrowed money'' have no Tier-1/2 support — unverifiable.
+    Teach the image without pinning numbers: sell orders outrunning the ticker; ordinary
+    people (teachers, cab drivers) in on borrowed money.'
+  falsehoods: []
+  sources: []
+  tier_note: 'Pinned U6-L6 v2 2026-10-07.'
