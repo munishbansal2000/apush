@@ -3342,3 +3342,85 @@ facts:
   sources:
   - NPS
   tier_note: Corrected U5-L4 v5 2026-10-07 — v1 taught "around 1799" flat.
+- id: F-U5-034
+  topic: House Divided speech — June 16, 1858, Springfield, Senate-nomination acceptance
+  correct: 'Tier 2 (NPS Lincoln Home NHS): "On June 16, the State Republican Convention nominated Lincoln for the seat. In his acceptance speech at the State Capitol, Lincoln set the tone of the campaign when he said, ''A house divided against itself cannot stand!''" Quotes "a house divided against itself cannot stand" / "this government cannot endure permanently half slave and half free" confirmed by Britannica (debates article) as the acceptance speech. Teach the exact date flat.'
+  falsehoods: []
+  sources:
+  - NPS
+  - Britannica
+  tier_note: Verified (not corrected) U5-L5 v3 2026-10-07 — v1's "June 1858, Springfield" was correct; registry records the exact date (June 16), dialogue teaches "June 1858" flat.
+- id: F-U5-035
+  topic: Debate format breakdown 60/90/30 — NOT Tier-1/2-verified
+  correct: 'Tier 2 (Britannica) says only that each debate was "three hours long." The one-hour opening / 90-minute reply / 30-minute rebuttal breakdown is NOT in Tier 1 or Tier 2. Teach only "three hours each"; never pin the breakdown flat without a Tier-1/2 source.'
+  falsehoods:
+  - speak for an hour.{0,50}90 minutes.{0,50}30.{0,20}rebut
+  - one hour.{0,30}hour and a half.{0,30}rebuttal
+  sources:
+  - Britannica
+  tier_note: Corrected U5-L5 v3 2026-10-07 — v1 taught the 60/90/30 breakdown flat.
+- id: F-U5-036
+  topic: '"Unfriendly legislation" — traditional label, not Douglas''s verified verbatim'
+  correct: 'Tier 2 (Britannica) describes the Freeport mechanism — settlers circumventing Dred Scott by not establishing the local police regulations (slave code) protecting a master''s property — WITHOUT using the phrase "unfriendly legislation." The phrase is the traditional label historians gave the trick; its verbatim use by Douglas is NOT Tier-1/2-verified. Teach it explicitly as the label, never as his quoted words.'
+  falsehoods:
+  - douglas.{0,40}(said|called|replied).{0,30}unfriendly legislation
+  - what he calls.{0,20}unfriendly legislation
+  sources:
+  - Britannica
+  tier_note: Corrected U5-L5 v3 2026-10-07 — v1 wrote "what he calls ''unfriendly legislation''" as his phrase.
+- id: F-U5-037
+  topic: Freeport question — teach as paraphrase, disclose it
+  correct: 'Tier 2 (Britannica) confirms only the substance: at Freeport, Lincoln challenged Douglas to reconcile popular sovereignty with the Dred Scott decision. The exact interrogatory wording is NOT Tier-1/2-verified. Teach the question as paraphrase with an in-dialogue disclosure ("in so many words"); never present a paraphrase as the verbatim question.'
+  falsehoods: []
+  sources:
+  - Britannica
+  tier_note: Framing verified, wording disclosed as paraphrase in U5-L5 v3 2026-10-07.
+- id: F-U5-038
+  topic: Advisors told Lincoln not to ask the Freeport question — CUT, unverified
+  correct: 'The anecdote that Lincoln''s friends/advisors warned him not to ask the Freeport question (and that he answered he was after "larger game") is NOT in Tier 1 or Tier 2. Never teach it flat; v3 cuts it from dialogue entirely rather than hedging it.'
+  falsehoods:
+  - advisors.{0,30}told him not to ask
+  - larger game.{0,30}freeport
+  sources:
+  - none
+  tier_note: Corrected U5-L5 v3 2026-10-07 — v1 taught the anecdote flat ("Lincoln''s advisors told him not to ask it... he was after bigger game").
+- id: F-U5-039
+  topic: Debate crowd numbers — hedge at "thousands," never pin
+  correct: 'No Tier-1/2 source pins debate crowd sizes. "Some crowds hit 15,000" and per-site attendance figures are NOT Tier-1/2-verified. Teach only "thousands" / "crowds in the thousands."'
+  falsehoods:
+  - (crowds|attendance).{0,20}15,000
+  - 15,000.{0,20}(people|crowd)
+  sources:
+  - none
+  tier_note: Corrected U5-L5 v3 2026-10-07 — v1 taught "Some crowds hit 15,000" flat.
+- id: F-U5-040
+  topic: Lincoln's 1858 racial views — containment, not equality; both-sided
+  correct: 'Lincoln''s 1858 position was containment of slavery''s spread, NOT racial equality and NOT abolition where slavery existed. Tier 1 (premium2027 Ch.13, Foner): Lincoln "never became a principled egalitarian in the manner of abolitionists such as Frederick Douglass." Tier 2 (Britannica): Douglas "repeatedly tried to brand Lincoln as a dangerous radical who advocated racial equality"; Lincoln "would not make [abolition] a mainstay of his policy until several years into the war." Teach both sides; never flatten to hero/villain and never teach 1858 Lincoln as an abolitionist.'
+  falsehoods:
+  - lincoln.{0,30}(was|became).{0,20}abolitionist.{0,20}(in )?1858
+  sources:
+  - premium2027
+  - Britannica
+  tier_note: Framing hardened in U5-L5 v3 2026-10-07 — v1''s "moral clarity" framing was soft; v3 anchors the both-sided version in Tier 1/2.
+- id: F-U5-041
+  topic: Legislature elected senators — 54 to 46 for Douglas; 17th Amendment 1913
+  correct: 'Tier 2 (Britannica): "the state legislature (which then elected U.S. senators) voted 54 to 46 in his favour" — Douglas retained the seat. Teach the mechanism (voters picked legislators; legislators picked the senator) and the 54–46 vote. Direct election of senators came with the 17th Amendment (1913, per parent-task framing; dialogue names the amendment).'
+  falsehoods: []
+  sources:
+  - Britannica
+  tier_note: Verified (not corrected) U5-L5 v3 2026-10-07 — v1 had the mechanism right; v3 adds the Tier-2 54–46 vote.
+- id: F-U5-042
+  topic: Cooper Union — Feb 27, 1860; nominated within three months
+  correct: 'Tier 2 (NPS Lincoln Home NHS): Lincoln''s speech "to the Young Men''s Central Republican Union of New York City at Cooper Union on February 27, 1860, brought him to the attention of influential Republicans in the Northeast," and "within three months Lincoln had been nominated as the Republican candidate for President in the 1860 election." Closing line "Let us have faith that right makes might, and in that faith, let us, to the end, dare to do our duty as we understand it" — Lincoln''s own words (public domain), quoted on the NPS page.'
+  falsehoods: []
+  sources:
+  - NPS
+  tier_note: Verified (not corrected) U5-L5 v3 2026-10-07 — v1''s "February 1860" was correct; v3 pins the exact date and the NPS causal chain.
+- id: F-U5-043
+  topic: Lincoln challenged Douglas (on managers' advice); seven sites/dates
+  correct: 'Tier 2 (NPS): "On the advice of his managers, Lincoln challenged Douglas to a series of 7 debates during the fall of 1858." Tier 2 (Britannica): seven joint encounters — Ottawa (Aug 21), Freeport (Aug 27), Jonesboro (Sept 15), Charleston (Sept 18), Galesburg (Oct 7), Quincy (Oct 13), Alton (Oct 15) — each three hours long, "largely concerning the issue of slavery extension into the territories." NPS: "Douglas lost the debates but won the election."'
+  falsehoods: []
+  sources:
+  - NPS
+  - Britannica
+  tier_note: Verified (not corrected) U5-L5 v3 2026-10-07 — v1 lacked the challenge direction and exact sites/dates.
