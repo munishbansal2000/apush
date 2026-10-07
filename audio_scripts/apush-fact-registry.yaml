@@ -215,6 +215,48 @@ facts:
     falsehoods: []
     sources: [prem27, web]
 
+  - id: F-LP-005
+    topic: Jefferson's Breckinridge letter quote (Aug 12, 1803)
+    correct: "Jefferson's private letter to John C. Breckinridge (Aug 12, 1803): 'The constitution has made no provision for our holding foreign territory, still less for incorporating foreign nations into our union' — he admitted the purchase went 'beyond the Constitution' and leaned on the treaty power. Wording confirmed across transcriptions citing the LOC Jefferson Papers; disclose as reported wording."
+    falsehoods: []
+    sources: [web]
+
+  - id: F-LP-006
+    topic: Senate ratification of the Louisiana Purchase
+    correct: "The Senate ratified the Louisiana Purchase treaty Oct 20, 1803, 24–7; the House appropriated the funds. Teach the vote with the date — '20 days later' is for the flags, not the Senate."
+    falsehoods: []
+    sources: [web]
+
+  - id: F-LP-007
+    topic: Louisiana Purchase price composition and financing
+    correct: "The $15M was $11.25M in U.S. bonds (6% interest) plus $3.75M in French debts owed to Americans assumed by the U.S.; the bonds were underwritten by Baring (London) and Hope (Amsterdam). The U.S. borrowed to pay — 'Jefferson bought it with cash on hand' is wrong."
+    falsehoods:
+      - "bought louisiana with cash"
+      - "fifteen million.{0,30}(in|with) cash"
+    sources: [web]
+
+  - id: F-LP-008
+    topic: '"doubled the country in a day/overnight" overclaim'
+    correct: "The purchase doubled the U.S. with the April 30, 1803 treaty signature (ratified Oct 20, 1803; possession Dec 20, 1803). 'Doubled overnight/in a day' flattens ratification and transfer — teach 'one signature, and the country had doubled' or pin the treaty date."
+    falsehoods:
+      - "doubled the country in a day"
+      - "america doubles overnight"
+    sources: [prem27, web]
+
+  - id: F-LP-009
+    topic: Haiti's role — disease vs. fighting framing
+    correct: "The Haitian Revolution forced France out: Louverture's army AND yellow fever (which killed Leclerc, Nov 1802, and tens of thousands of French troops). Teach both causes — crediting only the disease shortchanges the Haitians; crediting only the fighting ignores the epidemic."
+    falsehoods:
+      - "france sent its best and lost"
+    sources: [prem27, web]
+
+  - id: F-LP-010
+    topic: Attribution discipline — Talleyrand's offer and Monroe's $10M mandate are NOT princeton ch8
+    correct: "Talleyrand's offer of ALL Louisiana and Monroe's authorization to offer up to $10M (for New Orleans and West Florida) belong to the standard account per senate.gov's Louisiana Purchase feature + standard textbook accounts. princeton ch8 pins only the earlier $2M mandate and never mentions Talleyrand — never attribute these two claims to princeton ch8. (Caught 2026-10-06: the v4 Sources footer misattributed both to princeton ch8.)"
+    falsehoods:
+      - "talleyrand.{0,40}princeton"
+    sources: [web]
+
   - id: F-AOC-001
     topic: Shays' Rebellion causes — debt AND taxes, not one or the other
     correct: "Shays' Rebellion (1786-87) was driven by crushing private DEBT plus heavy state TAXES, all demanded in hard currency farmers didn't have. Never teach 'debt, not taxes' or 'taxes, not debt' as a trap — both books list both causes."
