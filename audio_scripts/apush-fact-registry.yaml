@@ -7963,3 +7963,137 @@ facts:
   - prem27
   tier_note: 'Added U8-L6 v2 2026-10-07 (Layer-3 B17 repair). Replaces the writer''s miscited
     F-U8-004/F-U8-030 footer reference — those entries do not contain these numbers.'
+- id: F-U9-001
+  topic: 'Standard Oil trust formed 1882; Rockefeller horizontal consolidation'
+  correct: 'John D. Rockefeller organized the Standard Oil trust in 1882 — the most famous
+    trust of the Gilded Age (premium2027 ch8 timeline). Horizontal integration means merging
+    rival companies in the same industry toward monopoly; by the 1890s Rockefeller refined
+    about 90 percent of US oil (5steps2024 ch18). He later reached vertically too, buying
+    oil fields and moving into marketing.'
+  falsehoods:
+  - Carnegie (founded|organized|created) the Standard Oil trust
+  - Standard Oil trust.*1890
+  sources:
+  - prem27
+  - 5steps
+  tier_note: 'Added U9-L1 v2 2026-10-07 (writer fact pass).'
+- id: F-U9-002
+  topic: 'Carnegie immigration age — 5steps2024 ch18 book error'
+  correct: 'Andrew Carnegie immigrated to the US in 1848 and began work at age 12 as a bobbin
+    boy (Britannica, independently confirmed 2026-10-07). 5steps2024 ch18 says he arrived
+    ''as a penniless eight-year old'' — wrong. Never teach the age; say ''poor Scottish kid.'''
+  falsehoods:
+  - Carnegie.*eight-year-old
+  - Carnegie.*eight year old
+  sources:
+  - web
+  tier_note: 'Confirmed book error U9-L1 v2 2026-10-07 — Britannica independent confirmation.'
+- id: F-U9-003
+  topic: 'Bessemer process — Englishman Henry Bessemer, patented 1856'
+  correct: 'The Bessemer process (blowing air through molten iron) made steel cheap for the
+    first time; patented by the Englishman Henry Bessemer in 1856 (premium2027 ch8). The
+    open-hearth process replaced it by the late 1860s.'
+  falsehoods:
+  - Bessemer process.*(American|Edison)
+  - Bessemer.*invented.*steel
+  sources:
+  - prem27
+  tier_note: 'Added U9-L1 v2 2026-10-07 (writer fact pass).'
+- id: F-U9-004
+  topic: 'First commercial oil well — Drake, Titusville PA, 1859'
+  correct: 'Edwin Drake drilled the first commercial oil well in Titusville, Pennsylvania,
+    in 1859 (premium2027 ch8). Nineteenth-century oil went first to lamps, then chiefly
+    to lubricating machinery.'
+  falsehoods:
+  - first oil well.*(Texas|1869)
+  sources:
+  - prem27
+  tier_note: 'Added U9-L1 v2 2026-10-07 (writer fact pass).'
+- id: F-U9-005
+  topic: 'Sherman Antitrust Act 1890 — weak at first; courts gutted it'
+  correct: 'The Sherman Antitrust Act (1890) outlawed trusts but changed little at first:
+    in US v. E. C. Knight (1895) the Supreme Court ruled manufacturing was not interstate
+    commerce, and Standard Oil dodged the Act by reorganizing as a New Jersey holding
+    company (premium2027 ch8; 5steps2024 ch18). ''The Sherman Act broke up Standard Oil''
+    is the common student error; the actual breakup came under Taft in 1911 (F-U6-006).'
+  falsehoods:
+  - Sherman Act.*broke up Standard Oil
+  sources:
+  - prem27
+  - 5steps
+  tier_note: 'Common-mistake line taught U9-L1 v2 2026-10-07.'
+- id: F-U9-006
+  topic: 'Gospel of Wealth — Carnegie''s, not Rockefeller''s'
+  correct: 'The ''Gospel of Wealth'' was Andrew Carnegie''s argument that wealthy
+    industrialists were the ''guardians'' of the nation''s wealth and owed the community
+    their fortunes back — libraries, universities, foundations (5steps2024 ch18). Both
+    Carnegie and Rockefeller founded major foundations.'
+  falsehoods:
+  - Rockefeller's Gospel of Wealth
+  sources:
+  - 5steps
+  tier_note: 'Added U9-L1 v2 2026-10-07 (writer fact pass).'
+- id: F-U9-007
+  topic: 'Edison — light bulb and power plants, not electricity itself'
+  correct: 'Edison set up his Menlo Park workshop in 1876 and developed the light bulb in
+    1879 (princeton; premium2027 ch8 timeline). ''Edison invented electricity'' is the
+    student error — he commercialized electric light and power.'
+  falsehoods:
+  - Edison invented electricity
+  sources:
+  - princeton
+  - prem27
+  tier_note: 'Common-mistake line taught U9-L1 v2 2026-10-07.'
+- id: F-U9-008
+  topic: 'New Jersey holding-company law — 5steps2024 ch18 internal date conflict'
+  correct: '5steps2024 ch18 dates the New Jersey holding-company law as both 1888 and 1889
+    in different passages — an internal inconsistency, not a teachable date. Teach the
+    mechanism (a company owning controlling stock in other companies), never the year.'
+  sources:
+  - 5steps
+  tier_note: 'Flagged U9-L1 v2 2026-10-07; year omitted from the lesson.'
+- id: F-U9-009
+  topic: 'Twain popularized ''Gilded Age'' — thin gold over baser metal'
+  correct: 'Mark Twain popularized ''Gilded Age'' for 1875-1900: gilded = a thin layer of
+    gold over baser metal — surface prosperity hiding inequality and corruption
+    (5steps2024 ch18).'
+  falsehoods:
+  - Gilded Age.*Golden Age
+  sources:
+  - 5steps
+  tier_note: 'Added U9-L1 v2 2026-10-07 (writer fact pass).'
+- id: F-U9-010
+  topic: 'Vertical vs horizontal integration — definitions'
+  correct: 'Vertical integration: one company controlling every stage from raw material to
+    finished product (Carnegie: coal and iron-ore mines, ships, railroads, mills).
+    Horizontal integration: buying up rival companies in the same industry
+    (Rockefeller/Standard Oil). premium2027 ch8; 5steps2024 ch18 keywords.'
+  falsehoods:
+  - vertical integration.*Rockefeller
+  - horizontal integration.*Carnegie
+  sources:
+  - prem27
+  - 5steps
+  tier_note: 'Added U9-L1 v2 2026-10-07 (writer fact pass).'
+- id: F-U9-011
+  topic: 'Interstate Commerce Act 1887 — ineffective at first'
+  correct: 'The Interstate Commerce Act (1887) targeted railroad rates, but the Interstate
+    Commerce Commission was staffed by men friendly to business and proved ineffective
+    for years (5steps2024 ch18).'
+  falsehoods:
+  - Interstate Commerce Act.*1890
+  sources:
+  - 5steps
+  tier_note: 'Added U9-L1 v2 2026-10-07 (writer fact pass).'
+- id: F-U9-012
+  topic: 'Carnegie essay "Wealth" date — premium2027 ch8 book error'
+  correct: 'Carnegie''s essay "Wealth" (later "The Gospel of Wealth") was published
+    in the June 1889 North American Review (Columbia University Carnegie collection,
+    independently confirmed 2026-10-07). premium2027 ch8 dates it "(1899)" — wrong.
+    Never teach the year; say the essay only.'
+  falsehoods:
+  - Wealth.*1899
+  - Gospel of Wealth.*1899
+  sources:
+  - web
+  tier_note: Confirmed book error U9-L1 v2 2026-10-07 — Columbia University independent confirmation.

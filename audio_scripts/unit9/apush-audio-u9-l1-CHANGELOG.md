@@ -1,0 +1,37 @@
+# U9-L1 "Industrialization & Big Business" — CHANGELOG (v2 DRAFT, 2026-10-07)
+
+## Build decisions
+- **Format:** Debate-by-interview (Maya + Marcus, no guest voice). The curriculum layout lists this row as "Debate," but the guest-voice table has no cast voice for U9-L1 and the guest rule says voices appear only in the listed slots. The brief allowed a hard-argued both-sides interview: Maya prosecutes the robber-baron case, Marcus defends the captains case, both argued honestly, ending in a shared "Both." duet (the one allowed shared-phrase beat).
+- **Four boxes:** (1) the engine — why industry exploded (railroads → Bessemer steel → feedback loop; oil/Drake 1859; electricity/Edison; anthracite coal; laissez-faire + land grants + workers); (2) the corporate machines — vertical/horizontal integration, trusts, holding companies, with the Sherman Act / E.C. Knight / Interstate Commerce Act response; (3) Carnegie and Rockefeller's methods (vertical + cost obsession vs horizontal consolidation + trust, with Rockefeller's later vertical reach as the nuance); (4) the verdict debate landing the exam's synthesis line.
+- **Causal, not a list:** Box 1 is built as a feedback loop (railroads → demand for rails → cheap Bessemer steel → more railroads) with a prediction beat on which-caused-which, rather than an invention list.
+- **Scope discipline:** Homestead (1892) appears only as a one-line prosecution reference and the L2 tease; no strike details taught. No immigration, no Populism. Closer teases only U9-L2.
+- **Cold-open bridge:** "Last time: the South was rebuilding after the war — and building Jim Crow" (one-line U5 callback) → "while the South built Jim Crow, the North built something else entirely."
+- **Maya's human beats:** wrong beat (mashing Carnegie/Rockefeller, corrected by Marcus with "Not quite"); recap fumble (memory-check on the Gospel of Wealth); grandma's Carnegie library + first library card (personal image coloring her debate sympathy); knows-something beat (Carnegie Hall = his money).
+- **Exam devices:** 2 prediction beats (steel-vs-railroads causality; the 1890 holding-company dodge); exam tip with a real point-loser (one-label LEQ essays vs synthesis); common-mistake lines on the government-built-railroads myth, Edison/electricity, the Sherman Act, and the Carnegie/Rockefeller name swap. Self-test: 3 AP-shaped questions (CER + stimulus-style 1892 cartoon + CER) + one fast labeled bonus.
+- **Direction:** every body turn carries one tone tag; no tone on >40% (max tag 19%, [conversational]); [professional broadcast tone] only on cold open + closing sign-off; self-test strictly neutral; paralanguage 2 ([chuckle], [beat]).
+
+## Fact-pass notes (Tier 1/2, before writing)
+- Sources: 5steps2024 ch18, premium2027 ch8 (+ timeline), princeton "The Age of Invention and Economic Growth," public_contnent transcript (Gilded Age industrialization).
+- Every date/number in dialogue is Tier-1: Bessemer 1856 (Englishman), Drake 1859 Titusville, Edison Menlo Park 1876 / bulb 1879, Standard Oil trust 1882, Interstate Commerce Act 1887, Sherman 1890, E.C. Knight 1895, Homestead 1892 (named only), "early 1890s passed Britain," water power → steam (1860), ~90% of US oil (kept as "something like ninety percent").
+- Deliberately omitted from dialogue: the NJ holding-company year (see below), Carnegie's immigration age (see below), the 1911 Standard Oil breakup (out of scope; registry F-U6-006 already covers Taft-vs-Roosevelt).
+
+## Suspected/confirmed book errors (exact citations)
+1. **CONFIRMED — 5steps2024/OEBPS/ch18.xhtml** (narrative section, ~char 9726): "arriving in the United States as a penniless eight-year old." Britannica (checked 2026-10-07): Carnegie born Nov 25, 1835, Dunfermline; immigrated 1848; began work at age 12 as a bobbin boy. The book's "eight-year old" is wrong. Dialogue teaches no age ("poor Scottish kid"). Registry F-U9-002.
+2. **INTERNAL CONFLICT — 5steps2024/OEBPS/ch18.xhtml:** the New Jersey holding-company law is dated **1888** in the review-answers section ("Big business found a way around this. In 1888, the New Jersey legislature passed a law legalizing holding companies") and **1889** in the narrative ("In 1889, New Jersey became the first state to allow businesses incorporated there to own the stock of other corporations"). Same chapter, two years, no explanation. Lesson teaches the mechanism and omits the year. Registry F-U9-008.
+
+## Registry
+- Appended F-U9-001 → F-U9-011 (11 facts: trust 1882, Carnegie-age correction, Bessemer, Drake, Sherman-weakness, Gospel of Wealth, Edison, NJ-year conflict, Gilded Age gloss, vertical/horizontal definitions, ICA 1887). Manual edit in native style; `yaml.safe_load` parses clean (639 facts total).
+- New falsehood patterns were checked against this script — no self-firing (G12 PASS after the append; pedagogical myth-bust lines are protected by the gate's common-mistake / wrong-beat exemptions).
+- Post-validation addition: **F-U9-012** — premium2027 ch8 dates Carnegie's essay "Wealth" to (1899); Columbia University Carnegie collection confirms June 1889 North American Review. Confirmed book error 2026-10-07. Registry now 640 facts, parses clean.
+
+## Validation + repair history (coordinator pipeline, 2026-10-07)
+- **Layer 1 (coordinator):** 13/13 PASS on the writer's handoff; re-run after repairs: still 13/13 PASS.
+- **Layer 2 (fresh ear read):** NOT LOCK-READY → 1 blocker + 9 minors. Blocker: stage direction "(held breath: do not rush it)" inside the spoken sign-off line (TTS would read it aloud) — removed from dialogue, preserved as a `# Production note:` under the read note. Minors: mirror pair broken (L88 → "The libraries were paid for with the same money that squeezed the workers"); both prediction beats stripped of `[thoughtful tone]` (fleet rule: predictions neutral) and the second opener varied ("Put yourself in his chair..."); `[sheepish]` moved to Maya's genuine wrong-beat (L56), recap-fumble turn retagged `[conversational]`; box-check roll call de-robotized; Homestead parenthetical deleted (named once + closer tease only); myth-bust retagged `[playful]`→`[firm]`; model-answer announced list rewritten as connective tissue; cartoon descriptors unified ("half saint, half sinner" in both spots).
+- **Layer 3 (fresh fact check):** BLOCKED → 1 wrong claim: "federal troops" as the answer to Homestead steelworkers' demands — Homestead was the Pennsylvania state militia; federal troops were 1877/Pullman. Fixed to "the state militia." Everything else verified at Tier 1/2 or properly disclosed. Also surfaced the premium2027 "Wealth" (1899) error above.
+- **Repair verification (third fresh agent):** all repairs verified clean in context, no new violations; gates re-run 13/13 after every edit.
+- Layer-2 strengths noted: honest two-sided debate, human Maya (real questions, pushback, two wrong beats), clean exchange logic, anchored numbers, sound exam tip.
+
+## Gates (final run, --minutes 12)
+- 13/13 PASS. 1,822 words, 152 WPM, 2 em-dashes, 1 antithesis, 0 retired phrases.
+- Warnings kept with intent: W1 "do not" (canonical tagline production-note form, per guide); W2 L20 triple (the one earned chain — two revolutions contrasted, real logic); W2 L82 (content list, not style); L70 cleared on re-run.
+- Runtime: 1,822 words at ≤180 WPM (10.1 min) + 72 s scripted pauses = ~11.3 min experienced; cold-open promise "About twelve minutes" holds.
