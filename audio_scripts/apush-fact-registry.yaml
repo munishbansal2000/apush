@@ -7502,3 +7502,185 @@ facts:
     standard history corroborated in research (State Dept Office of the Historian frames
     Reykjavik-era diplomacy as following the Geneva first meeting). Disclosed as beyond-Tier-1
     in the script footer.'
+- id: F-U8-021
+  topic: 'NAFTA chronology — Bush-negotiated, Clinton signed into law Dec 1993, in effect Jan 1, 1994'
+  correct: 'NAFTA was signed by President George H. W. Bush on December 17, 1992, but implemented
+    through legislation: H.R. 3450 (103rd Congress) passed the House 234-200 on Nov 17, 1993 and the
+    Senate 61-38 on Nov 20, 1993, and was signed into law by President Clinton on December 8, 1993
+    (P.L. 103-182). NAFTA took effect January 1, 1994, removing tariffs and other trade barriers
+    between the US, Mexico, and Canada. Unions opposed it, fearful of losing jobs; corporate interests
+    supported it. Clinton backed it because he supported lowering tariffs to ride the growing
+    globalization of the American economy. 5steps2024 ch29 says ''Clinton persuaded the Senate to ratify''
+    NAFTA — wrong on the mechanism: it was an implementing act passed by both chambers, not a
+    Senate-ratified treaty.'
+  falsehoods:
+  - NAFTA.{0,25}(negotiated|invented|dreamed).{0,20}Clinton
+  - NAFTA.{0,20}(took effect|came into force|in effect).{0,15}(1993|1995|1996)
+  - Senate.{0,15}ratified.{0,15}NAFTA
+  sources:
+  - 5steps2024
+  - princeton
+  - web
+  tier_note: 'Added U8-L3 v2 2026-10-07 (writer fact pass). Chronology per CRS (Congress.gov:
+    H.R. 3450, P.L. 103-182; Bush signed Dec 17, 1992; in effect Jan 1, 1994); union/corporate
+    reactions and the globalization rationale per 5steps2024 ch29 and Princeton ch13 supp. The
+    ''Senate ratify'' line is a suspected book error (5steps2024 ch29 L37) — script teaches
+    ''pushed through Congress'' instead.'
+- id: F-U8-022
+  topic: 'Perot ''giant sucking sound'' — 1992 debates; 19M votes / 19%, best third-party since TR 1912'
+  correct: 'In the 1992 presidential debates, independent candidate Ross Perot warned NAFTA would
+    produce a ''giant sucking sound'' of American factory jobs draining into Mexico, where wages were
+    far lower. Perot won 19 million votes — 19 percent of the popular vote — the best tally for a
+    third-party candidate since Theodore Roosevelt''s Bull Moose run in 1912.'
+  falsehoods:
+  - giant sucking sound.{0,20}(1993|1994|1996|2000)
+  - Perot.{0,20}won.{0,15}(a state|any states|electoral votes)
+  - Perot.{0,20}giant sucking sound.{0,20}(Clinton|Bush)
+  sources:
+  - 5steps2024
+  - web
+  tier_note: 'Added U8-L3 v2 2026-10-07 (writer fact pass). Quote confirmed via Britannica Money
+    (''Back in 1992, U.S. presidential candidate Ross Perot warned there''d be a giant sucking sound
+    of U.S. jobs heading to Mexico due to the then-new NAFTA''); vote figures per 5steps2024 ch29.'
+- id: F-U8-023
+  topic: 'WTO founded 1995 as GATT''s successor — global trade rules plus dispute settlement'
+  correct: 'The World Trade Organization opened in 1995 as the successor to GATT, the looser postwar
+    tariff-lowering framework in place since the late 1940s. The WTO sets worldwide rules for trade
+    between nations and runs a formal system for settling trade disputes.'
+  falsehoods:
+  - WTO.{0,20}(founded|created|established).{0,15}(1993|1994|1999|2000)
+  - GATT.{0,20}(replaced|was).{0,15}NAFTA
+  - WTO.{0,20}set up.{0,15}Seattle
+  sources:
+  - princeton
+  - web
+  tier_note: 'Added U8-L3 v2 2026-10-07 (writer fact pass). Not carried by the Tier-1 books;
+    broad-reference consensus disclosed in the script footer. GATT-as-tariff-framework per
+    Princeton ch13 supp (GATT 1947, ''sought to reduce trade barriers such as tariffs'').'
+- id: F-U8-024
+  topic: 'Seattle WTO protests Nov 28–Dec 3, 1999 — AFL-CIO coalition; birth of the anti-globalization movement'
+  correct: 'The WTO ministerial in Seattle, held November 28 through December 3, 1999, was disrupted
+    by mass protests: a coalition of the AFL-CIO and other labor unions, environmentalists, students,
+    farmers, and others — more than 40,000 protesters (some estimates up to 60,000) — who argued WTO
+    rules put corporate interests ahead of workers and the environment. Britannica describes the
+    protests as ''often viewed as the inauguration of the antiglobalization movement.'''
+  falsehoods:
+  - Seattle.{0,20}(WTO|trade).{0,20}(protests|riots).{0,20}(1998|2000|2001)
+  - WTO.{0,20}protests.{0,20}(supported|cheered).{0,15}WTO
+  - Seattle.{0,20}protests.{0,20}(shut down|ended).{0,15}NAFTA
+  sources:
+  - web
+  tier_note: 'Added U8-L3 v2 2026-10-07 (writer fact pass). Via Britannica (Seattle WTO protests
+    of 1999). Script hedges the ''birth of the anti-globalization movement'' as ''some historians
+    call'' it.'
+- id: F-U8-025
+  topic: 'China PNTR 2000 — H.R. 4444 → P.L. 106-286; ''trade will open China up'' vs critics; teach both sides'
+  correct: 'Congress voted in 2000 to grant China permanent normal trade relations (PNTR): the House
+    passed H.R. 4444 on May 24, 2000 (237-197), the Senate on September 19, 2000 (83-15), and President
+    Clinton signed it October 10, 2000 (P.L. 106-286), replacing the old annual review with a permanent
+    open door. Supporters argued trade would open China up — the Clinton administration said it would
+    ''open new doors of trade for America and new hope for change in China.'' Critics said American
+    workers would eat the cheap-import costs and labor and human-rights standards got traded away.
+    China joined the WTO in 2001. Whether trade changed China is still debated — teach both sides.'
+  falsehoods:
+  - PNTR.{0,20}China.{0,20}(1998|1999|2001)
+  - trade.{0,20}opened.{0,20}China.{0,20}(settled|proven|definitely)
+  - PNTR.{0,20}(passed|signed).{0,20}1990s
+  sources:
+  - web
+  tier_note: 'Added U8-L3 v2 2026-10-07 (writer fact pass). Via Congress.gov (H.R. 4444 actions)
+    and the State Dept May 24, 2000 fact sheet. Script presents the debate with Marcus explicitly
+    saying ''I don''t think that''s settled.'''
+- id: F-U8-026
+  topic: '1991–2001 expansion — 120 months, March 1991 to March 2001; longest AT THE TIME (NBER)'
+  correct: 'The expansion from March 1991 to March 2001 lasted 120 months — the longest expansion in
+    American history AT THE TIME. The NBER later recorded the June 2009–February 2020 expansion (128
+    months) as the new record, so ''longest expansion on record'' for the nineties is now wrong.'
+  falsehoods:
+  - (1991|nineties|90s).{0,20}expansion.{0,25}longest.{0,20}(on record|ever)
+  sources:
+  - web
+  tier_note: 'Added U8-L3 v2 2026-10-07 (writer fact pass). Per NBER Business Cycle Dating
+    Committee (June 8, 2020): the 1991–2001 expansion was ''the previous record'' at 120 months
+    before the 2009–2020 expansion. Framing guard — the script teaches ''longest at the time.'''
+- id: F-U8-027
+  topic: 'Surpluses FY1998–FY2001 + sub-4% unemployment (2000, lowest since 1969); surpluses SHRANK the debt, never erased it'
+  correct: 'The federal budget ran surpluses four straight fiscal years, 1998–2001 (about +$69B, +$126B,
+    +$236B, +$128B). Unemployment dipped below 4% in 2000 — the 3.8% lows were the lowest since 1969.
+    The surpluses shrank the national debt; they never erased it. Causes taught honestly: the peace
+    dividend (defense spending fell after the Cold War), Clinton''s 1993 tax increase on higher earners,
+    the boom''s own revenues, and the 1997 budget deal with a Republican Congress — with both parties
+    fighting over the credit.'
+  falsehoods:
+  - surplus.{0,25}(erased|eliminated|wiped out|ended).{0,15}(national debt|the debt)
+  - surpluses.{0,20}(1996|1997)
+  - unemployment.{0,25}(never|didn''t).{0,15}(below|under).{0,10}4
+  guards:
+  - so the surplus wiped out the national debt\?  # U8-L3 v2: Maya's mid-episode wrong beat (question form), corrected by Marcus next turn
+  sources:
+  - 5steps2024
+  - web
+  tier_note: 'Added U8-L3 v2 2026-10-07 (writer fact pass). Surplus figures via CBO/OMB historical
+    tables; unemployment via BLS (3.8% lows of 2000, ''lowest since 1969''); causes per 5steps2024
+    ch29 (peace dividend, 1993 taxes, 1997 Balanced Budget Act).'
+- id: F-U8-028
+  topic: 'NASDAQ peak March 10, 2000 at 5,048.62; crash — but the internet kept growing'
+  correct: 'The tech-heavy NASDAQ Composite peaked on March 10, 2000 at 5,048.62, then crashed — losing
+    roughly three-quarters of its value by 2002. Alan Greenspan''s 1996 ''irrational exuberance'' warning
+    described the dot-com bubble; the crash that ended it came in 2000–2001. The crash killed the bubble,
+    not the internet: web use kept growing.'
+  falsehoods:
+  - dot-com.{0,25}(ended|killed|destroyed).{0,15}internet
+  - NASDAQ.{0,20}(peaked|peak|topped).{0,15}(1999|2001|2002)
+  - dot-com.{0,20}(boom|bubble).{0,20}(1990|1995).{0,10}peak
+  sources:
+  - 5steps2024
+  - princeton
+  - web
+  tier_note: 'Added U8-L3 v2 2026-10-07 (writer fact pass). Crash timing and the ''internet kept
+    growing'' point per 5steps2024 ch29 and Princeton ch13 supp; the March 10, 2000 / 5,048.62
+    peak and ~78% fall via market data, disclosed beyond Tier-1 in the script footer.'
+- id: F-U8-029
+  topic: 'Amazon founded July 1994, eBay September 1995, Google September 1998'
+  correct: 'Amazon was founded by Jeff Bezos in July 1994 as an online bookstore; eBay was founded as
+    AuctionWeb in September 1995; Google was founded in September 1998 by Sergey Brin and Larry Page.'
+  falsehoods:
+  - Amazon.{0,20}(founded|started).{0,15}(1995|1996|1997)
+  - eBay.{0,20}(founded|started).{0,15}(1994|1996|1998)
+  - Google.{0,20}(founded|started).{0,15}(1996|1997|1999|2000)
+  sources:
+  - web
+  tier_note: 'Added U8-L3 v2 2026-10-07 (writer fact pass). Google 1998 per Britannica Money;
+    Amazon/eBay dates per company histories — all beyond Tier-1, disclosed in the script footer.'
+- id: F-U8-030
+  topic: 'Union density ~22% (1980) → ~13% (2000); real wages barely moved through the boom (hedged)'
+  correct: 'Union membership fell from about one worker in five in 1980 (22.2%) to about one in eight
+    by 2000 (~13.5%). Average wages barely moved for most workers through the nineties boom — a
+    standard economic-history claim not pinned by the Tier-1 books, so taught hedged (''barely
+    moved'') and disclosed.'
+  falsehoods:
+  - union.{0,25}(grew|rose|increased).{0,15}1990s
+  - wages.{0,25}(soared|rose sharply|surged).{0,15}1990s
+  guards:
+  - \bunion\b
+  - \bwages\b
+  sources:
+  - web
+  tier_note: 'Added U8-L3 v2 2026-10-07 (writer fact pass). Union figures via CRS R47596
+    (Congress.gov, BLS-based series). The wage claim is beyond Tier-1/2 — taught with the
+    hedge ladder (''barely moved'') and disclosed in the script footer.'
+- id: F-U8-031
+  topic: 'Fukuyama ''The End of History and the Last Man'' (1992) — ideological settlement, not the end of events'
+  correct: 'Francis Fukuyama published The End of History and the Last Man in 1992 (the thesis first
+    appeared as a 1989 magazine article). His argument: with communism gone, the big ideological
+    argument was settled — liberal democracy and market economies had won, with no rival system left
+    standing. He did NOT claim wars or events would stop; critics called even the ideological claim
+    premature.'
+  falsehoods:
+  - Fukuyama.{0,20}(said|claimed|predicted|argued).{0,25}(no more wars|wars would end|events would stop|history would stop)
+  - End of History.{0,20}(1990|1991|1993|1994)
+  sources:
+  - web
+  tier_note: 'Added U8-L3 v2 2026-10-07 (writer fact pass). Via Britannica (The End of History and
+    the Last Man, 1992; thesis introduced 1989). The script has Maya ask ''So he said history was
+    over? No more wars?'' and Marcus corrects firmly — the correction is taught in-dialogue.'
