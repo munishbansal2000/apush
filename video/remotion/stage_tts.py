@@ -25,11 +25,13 @@ PROVIDERS = {
     'meta': {
         'maya': 'avocado_v2:aria',
         'marcus': 'avocado_v2:briggs',
+        'sepúlveda': 'avocado_v2:atlas',
         'cmd': 'tts',  # /opt/hatch/bin/tts
     },
     'edge': {
         'maya': 'en-US-AriaNeural',
         'marcus': 'en-US-GuyNeural',
+        'sepúlveda': 'en-US-DavisNeural',
         'cmd': 'edge-tts',
     },
     'fish': {
@@ -115,8 +117,15 @@ def parse_markdown_script(md_path):
         if not line or line.startswith('#'):
             continue
         
-        # Match "Speaker: text" — any capitalized name, not just Maya/Marcus
-        m = re.match(r'^([A-Z][a-zA-Z]*|PAUSE):\s*(.+)$', line)
+        # Standalone pause line: "[8-second pause]" → silence turn
+        pause_only = re.match(r'^\[(\d+)-second pause\]$', line)
+        if pause_only:
+            turns.append({'speaker': 'pause', 'text': '',
+                          'pause_after': int(pause_only.group(1))})
+            continue
+
+        # Match "Speaker: text" — any name incl. Unicode (e.g. Sepúlveda), not just ASCII
+        m = re.match(r'^([\w]+|PAUSE):\s*(.+)$', line, re.UNICODE)
         if m:
             speaker = m.group(1).lower()
             text = m.group(2)
@@ -247,8 +256,7 @@ def main():
             # Generate silence with ffmpeg
             result = subprocess.run([
                 'ffmpeg', '-y', '-v', 'error',
-                '-f', 'lavfi', '-i', f'anullsrc=r=44100:cl={silence_secs}',
-                '-t', str(silence_secs),
+                '-f', 'lavfi', '-i', f'anullsrc=r=44100:cl=stereo:d={silence_secs}',
                 str(out_path)
             ], capture_output=True)
             if result.returncode != 0:
