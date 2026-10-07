@@ -35,7 +35,6 @@ import { MapJourney, JourneyItem } from './MapJourney';
 import { PrimarySourceSpotlight } from './PrimarySourceSpotlight';
 import { VersusPolarization } from './VersusPolarization';
 import { ToneProvider } from '../validation/ToneContext';
-import { EpisodeMusic } from './EpisodeMusic';
 import { AutoLayoutProvider } from '../validation/AutoLayout';
 
 import turnsData from '../data/e5/turns.json';
@@ -547,9 +546,6 @@ export const U1E5Episode: React.FC = () => {
               <Audio src={staticFile(`audio/${EP}/${turn.id}.mp3`)} />
             </Sequence>
           ))}
-
-          {/* Branded music */}
-          <EpisodeMusic episode="E5" />
 
           {/* Talking head */}
           {showHead && (

@@ -228,6 +228,71 @@ def check_map_regions(content):
     return errors
 
 
+def check_music_alignment(content, episode='E2'):
+    """Check that scenes are music-aware.
+    
+    Music events (from music_timeline.json):
+    - intro_sting (0-8s): should have title card / opening visual
+    - chapter_sting at act boundaries: should have visual transition
+    - outro_sting (last 8s): should have closing visual
+    
+    This is a WARNING-level check — it flags scenes that ignore music timing.
+    """
+    import json
+    from pathlib import Path
+    
+    warnings = []
+    
+    # Load music timeline
+    ep_lower = episode.lower()
+    # E2 uses u1e2 path
+    if ep_lower == 'e2':
+        timeline_path = Path('src/data/u1e2/music_timeline.json')
+    else:
+        timeline_path = Path(f'src/data/{ep_lower}/music_timeline.json')
+    
+    if not timeline_path.exists():
+        warnings.append(
+            f"MUSIC: No music_timeline.json for {episode} — "
+            f"run stage_music.py first"
+        )
+        return warnings
+    
+    with open(timeline_path) as f:
+        timeline = json.load(f)
+    
+    if timeline.get('disabled'):
+        return warnings
+    
+    events = timeline.get('events', [])
+    
+    # Check 1: Title card during intro (first 8 seconds)
+    # Look for TitleCard component in the content
+    has_title_card = 'TitleCard' in content
+    
+    intro_events = [e for e in events if e['type'] == 'intro_sting']
+    if intro_events and not has_title_card:
+        warnings.append(
+            f"MUSIC: Intro sting at 0-8s but no TitleCard found — "
+            f"opening visual should align with intro music"
+        )
+    
+    # Check 2: Visual transitions at chapter stings (act boundaries)
+    # This is informational — the act structure already implies transitions
+    chapter_events = [e for e in events if e['type'] == 'chapter_sting']
+    if chapter_events:
+        # Check that SUB_BEATS or scene structure acknowledges act boundaries
+        # For now, just verify the episode has act-based structure
+        has_acts = 'act' in content.lower() or 'Act' in content
+        if not has_acts:
+            warnings.append(
+                f"MUSIC: {len(chapter_events)} chapter stings at act boundaries "
+                f"but no act structure found in component"
+            )
+    
+    return warnings
+
+
 def main():
     import argparse
     parser = argparse.ArgumentParser()
@@ -249,6 +314,7 @@ def main():
         ("Text collisions", check_text_collisions),
         ("Orphan leaders", check_orphan_leaders),
         ("Map regions", check_map_regions),
+        ("Music alignment", lambda c: check_music_alignment(c, args.episode)),
     ]
 
     for name, check_fn in checks:

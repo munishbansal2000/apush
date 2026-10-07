@@ -34,7 +34,6 @@ import { GravityText } from './GravityDrop';
 import { SmartText } from './SmartText';
 import { PrimarySourceSpotlight } from './PrimarySourceSpotlight';
 import { ToneProvider } from '../validation/ToneContext';
-import { EpisodeMusic } from './EpisodeMusic';
 import { AutoLayoutProvider } from '../validation/AutoLayout';
 
 import turnsData from '../data/e8/turns.json';
@@ -518,9 +517,6 @@ export const U1E8Episode: React.FC = () => {
               <Audio src={staticFile(`audio/${EP}/${turn.id}.mp3`)} />
             </Sequence>
           ))}
-
-          {/* Branded music */}
-          <EpisodeMusic episode="E8" />
 
           {/* Talking head */}
           {showHead && (
