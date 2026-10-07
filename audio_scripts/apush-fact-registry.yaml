@@ -3052,3 +3052,145 @@ facts:
   - premium2027
   - princeton
   tier_note: Corrected U4-CRAM v2 2026-10-07 — error inherited from U4-E13 v2 (lines 7, 31 teach "three extra words"); flagged to parent for E13 fix decision.
+- id: F-U5-001
+  topic: California gold-rush population — "more than 300,000," not 100,000
+  correct: 'premium2027 ch7: the population of California grew to MORE THAN 300,000 in the wake of the gold discovery. The locked v1 script said "100,000 settlers" — wrong by a factor of three.'
+  falsehoods:
+  - california.{0,40}100,000 settlers
+  - 100,000 settlers.{0,40}california
+  sources:
+  - premium2027
+  tier_note: Corrected U5-L2 v4 2026-10-07 — v1 error; flagged to parent.
+- id: F-U5-002
+  topic: Tubman's 19 trips — CONFIRMED in Tier 1
+  correct: 'Tier 1 transcript (APUSH Unit 5 Review, "Debates About SLAVERY and IMMIGRATION"): Tubman escaped slavery in 1849, made 19 trips back south after the passage of the Fugitive Slave Act, and liberated around 70 people. The v1 "19 trips" was CORRECT — the suspicion against it was unfounded.'
+  falsehoods: []
+  sources:
+  - transcript
+  tier_note: Verified (not corrected) U5-L2 v4 2026-10-07.
+- id: F-U5-003
+  topic: Senate numbers — 15-15 to 16-15, not 16-16 and not "permanent"
+  correct: 'Before California: 15 free states, 15 slave states. California''s admission (free state, 1850) made it 16 free to 15 slave — the first free-state edge in the Senate. Never teach "16-16" or "tipped the balance permanently": the edge was real but "permanently" overclaims (the South''s decline continued through Minnesota and Oregon later in the decade, per 5steps).'
+  falsehoods:
+  - sixteen to sixteen
+  - 16.{0,10}to.{0,10}16
+  - tipped the senate balance permanently
+  sources:
+  - britannica
+  tier_note: Corrected U5-L2 v4 2026-10-07 — v1 said "tips the Senate balance permanently"; framed as "first free-state edge" instead.
+- id: F-U5-004
+  topic: Fugitive Slave Act commissioner fees — $10/$5 CONFIRMED in Tier 1
+  correct: 'Tier 1 transcript ("Attempts to SOLVE the SLAVERY Debate"): federal commissioners got $10 for ruling the accused a runaway slave, $5 for ruling them free; the accused got no jury trial and were forbidden from testifying in their own defense. The v1 numbers were CORRECT.'
+  falsehoods: []
+  sources:
+  - transcript
+  tier_note: Verified (not corrected) U5-L2 v4 2026-10-07.
+- id: F-U5-005
+  topic: 'Two nasty hairs in the mayo — CONFIRMED in Tier 1'
+  correct: 'The framing comes from a Tier 1 transcript ("Attempts to SOLVE the SLAVERY Debate"): hair #1 = popular sovereignty for NM/UT (upset supporters of slavery — the Missouri line''s near-promise broken); hair #2 = the Fugitive Slave Act (no jury, no testimony, $10/$5 fees, forced Northern participation). Usable in scripts with attribution to the review lectures.'
+  falsehoods: []
+  sources:
+  - transcript
+  tier_note: Verified (not corrected) U5-L2 v4 2026-10-07.
+- id: F-U5-006
+  topic: D.C. — slave TRADE banned, not slavery
+  correct: 'The Compromise banned the buying and selling of enslaved people in Washington, D.C. — slavery itself stayed legal in the District. All three Tier 1 books pin this. The exam''s favorite distinction; "slavery was banned in D.C." is the standard student error.'
+  falsehoods:
+  - slavery was (banned|abolished|ended) in.{0,30}(d.?c.?|washington|the capital|the district)
+  sources:
+  - premium2027
+  - 5steps
+  - princeton
+- id: F-U5-007
+  topic: Texas — $10 million federal payment for boundary claims
+  correct: 'The Compromise settled the Texas–New Mexico boundary dispute with a federal payment of $10,000,000 to Texas, against debts contracted by the Republic of Texas. (1911 Encyclopaedia Britannica, public domain, Tier 2 — not pinned in any Tier 1 book.)'
+  falsehoods: []
+  sources:
+  - britannica
+  tier_note: Taught in U5-L2 v4 2026-10-07 as Tier 2.
+- id: F-U5-008
+  topic: Taylor died July 9, 1850; Fillmore signed the bills in September 1850
+  correct: '5steps ch3: Taylor "died suddenly on July 9, 1850"; Fillmore was "a strong supporter of Clay''s program." The compromise passed "in a series of five bills" in September 1850; premium2027: Fillmore signed them into law. Never teach Taylor as a compromise supporter — his opposition helped kill the omnibus (premium2027, 5steps).'
+  falsehoods:
+  - taylor supported the compromise
+  - taylor signed the compromise
+  sources:
+  - 5steps
+  - premium2027
+- id: F-U5-009
+  topic: Credit correction — Douglas did the parliamentary work, not Clay
+  correct: 'Clay''s name is on the compromise, but his omnibus bill FAILED. Stephen Douglas (Democrat, Illinois) broke the package into separate bills and organized different majorities for each (premium2027, princeton). "Clay proposed it, Douglas passed it" is the exam-safe framing.'
+  falsehoods:
+  - clay shepherded the compromise through congress
+  - clay('s|\s)omnibus.*passed
+  sources:
+  - premium2027
+  - princeton
+- id: F-U5-010
+  topic: Uncle Tom's Cabin — "almost 275,000 copies within a year," not "second only to the Bible"
+  correct: '5steps ch14: Uncle Tom''s Cabin (1852) sold "almost 275,000 copies within a year." The "best-selling book of the century, second only to the Bible" line (v1 script) is NOT in Tier 1 or Tier 2 sources — cut it; use the 275,000 figure.'
+  falsehoods:
+  - second only to the bible
+  - best-selling book of the century
+  sources:
+  - 5steps
+  tier_note: Corrected U5-L2 v4 2026-10-07 — v1 error; flagged to parent.
+- id: F-U5-011
+  topic: Ableman v. Booth (1859) — Wisconsin's court overruled
+  correct: 'premium2027 ch7: the Wisconsin Supreme Court declared the Fugitive Slave Act unconstitutional (Sherman Booth case); the U.S. Supreme Court reversed in Ableman v. Booth (1859), asserting the supremacy of federal statutes and court decisions over state courts. Never invert the direction — the state court struck first, SCOTUS reversed.'
+  falsehoods:
+  - wisconsin.*upheld the fugitive slave act
+  - able?man v\.? booth.*wisconsin (won|prevailed|succeeded)
+  sources:
+  - premium2027
+- id: F-U5-012
+  topic: Webster's Seventh of March speech — reported wording, and its cost
+  correct: 'Princeton characterizes Webster''s March 7, 1850 speech as: "not as a Massachusetts man, nor as a northern man, but as an American…." — REPORTED wording with an ellipsis, not a transcript-verified quote; disclose as such. Cost: Webster became "the special target for hostile criticism" (1911 Britannica) and risked offending his abolitionist voter base (Princeton). Never teach "his presidential hopes ended" flat — unverified in Tier 1/2.'
+  falsehoods:
+  - webster.{0,40}presidential hopes ended
+  sources:
+  - princeton
+  - britannica
+  tier_note: Taught hedged in U5-L2 v4 2026-10-07; flagged for Layer 3.
+- id: F-U5-013
+  topic: 'Bought four years — hedged framing, not a sourced verdict'
+  correct: 'The five bills passed September 1850; the Kansas-Nebraska Act (May 1854) undid the settlement — about 3 years 8 months. "About four years" / "four borrowed years" is the script''s arithmetic-based framing, not a historian''s verdict (1911 Britannica actually says the compromise "postponed secession and Civil War for a decade"). Always hedge; never teach "bought exactly four years."'
+  falsehoods:
+  - bought exactly four years
+  sources:
+  - registry
+  tier_note: Framed hedged in U5-L2 v4 2026-10-07; flagged for Layer 3.
+- id: F-U5-014
+  topic: Christiana, Pennsylvania (September 1851) — Tier-1/2-silent; disclosed gap
+  correct: 'The Christiana incident (Maryland slaveholder Edward Gorsuch arrives with a federal warrant; armed Black men hold William Parker''s house; Gorsuch killed; treason charges dropped/acquitted) is corroborated across multiple secondary sources but CONFIRMED IN NEITHER Tier 1 nor Tier 2 (Britannica/NPS). Teach only with Sources-footer disclosure; Layer 3 rules on it.'
+  falsehoods: []
+  sources:
+  - registry
+  tier_note: Taught with disclosure in U5-L2 v4 2026-10-07; flagged for Layer 3.
+- id: F-U5-015
+  topic: Clay "carried into the Senate" — unverified; soften to "aging"
+  correct: 'Tier 1 confirms only "the aging Henry Clay" (premium2027). The v1 detail that Clay was physically carried into the Senate is NOT in any Tier 1 source — softened in U5-L2 v4 to "aging." Never teach the carried-in image flat without a source.'
+  falsehoods:
+  - clay.{0,30}carried into the senate
+  sources:
+  - registry
+  tier_note: Corrected U5-L2 v4 2026-10-07 — v1 error; flagged to parent.
+- id: F-U5-016
+  topic: The Missouri Compromise line never covered the Mexican Cession
+  correct: 'The 36°30'' line applied to the Louisiana Purchase territory only — not to the Mexican Cession (premium2027/princeton context; princeton: proslavery forces wanted the line EXTENDED to the Pacific for the Cession). Any "the Missouri line was supposed to ban slavery in New Mexico" claim inverts the history.'
+  falsehoods:
+  - missouri.{0,30}line.{0,30}(banned|barred|prohibited).{0,30}new mexico
+  sources:
+  - princeton
+  - premium2027
+- id: F-U5-017
+  topic: 5steps2024 ch14 summary misstates the Missouri Compromise line — BOOK ERROR #10
+  correct: 'The Missouri Compromise (1820) banned slavery in the Louisiana Purchase north of 36°30′ (except Missouri). It did NOT draw a line "westward to the Pacific Ocean," and it did NOT guarantee that territories south of the line would enter as slave states — slavery was permitted, not mandated, south of the line. Britannica confirms: "banned slavery in the rest of the Louisiana Purchase north of latitude 36°30′."'
+  falsehoods:
+  - line was drawn westward to the pacific
+  - missouri compromise.{0,60}pacific ocean
+  - all territories south of the line would.{0,40}slave states
+  sources:
+  - 5steps2024
+  - britannica
+  tier_note: Book error #10, independently confirmed 2026-10-07 per the 2026-10-06 rule — book line verified in 5steps2024 OEBPS/ch14.xhtml; correction confirmed via Britannica Missouri Compromise article. The U5-L2 v4 script does NOT teach this error.
