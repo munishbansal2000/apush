@@ -1695,3 +1695,53 @@ facts:
       - "65.{0,20}representatives.{0,20}three million"
     sources: [primary]
     tier_note: "beyond Tier 1-2 — verified against the Constitution text itself"
+
+  - id: F-U3-043
+    topic: Whiskey Rebellion — ~500 men on the tax inspector's house, not 50
+    correct: "In July 1794 about 500 armed men attacked and burned the home of the regional tax inspector (after a smaller group was fended off the previous day); the crowd later swelled to ~7,000 marching on Pittsburgh. Never teach 'fifty men' — that figure is a premium2027 ch5 book error faithfully repeated by earlier drafts."
+    falsehoods:
+      - "fifty men marched (on|to) the .*tax collector"
+      - "50 men.*tax collector.*whiskey"
+    sources: [britannica, prem27]
+    tier_note: "Tier 2 Britannica corrects the Tier-1 book error"
+
+  - id: F-U3-044
+    topic: Washington and the Whiskey Rebellion army — rode to Bedford, then returned
+    correct: "Washington accompanied the Whiskey Rebellion militia only to Carlisle/Bedford/Fort Cumberland for reviews, then put Virginia Governor Henry Lee and Hamilton in charge and headed back to Philadelphia. He did NOT march the army into western Pennsylvania. 'Washington marched them west himself' is defensible (he rode west with them to Bedford); 'marched into western Pennsylvania' overstates."
+    falsehoods:
+      - "washington marched.*into western pennsylvania"
+    sources: [nps, prem27]
+    tier_note: "Tier 2 NPS Whiskey Rebellion Q7"
+
+  - id: F-U3-045
+    topic: Speculator advance knowledge of Hamilton's funding plan — genuinely debated
+    correct: "Whether speculators (including members of Congress) traded on advance knowledge of Hamilton's funding plan is a genuine historiographical debate — Madison and contemporaries alleged it; no leak was ever proven. Never teach flat 'no' or flat 'yes'; hedge or attribute in-dialogue."
+    falsehoods: []
+    sources: [web]
+    tier_note: "beyond Tier 1-2 — standard historiographical record; disclosed in script"
+
+  - id: F-U3-046
+    topic: Madison's discrimination proposal — unverifiable in Tier 1+2, do not teach mechanics
+    correct: "Madison's Feb 1790 discrimination proposal on the debt certificates (pay originals vs current holders) is unverifiable in Tier 1+2 — the books and transcripts don't cover it, and common summaries mismatch the standard account. Teach only Tier-1-verifiable: 'Madison led the fight against assumption in the House — and lost the vote.'"
+    falsehoods:
+      - "madison.*pay the original.*full value.*current holders.*purchase price"
+    sources: [prem27]
+    tier_note: "cut from U3-E9 in Layer-3 repair"
+
+  - id: F-U3-047
+    topic: Tier-1 book errors — 5steps ch11 timeline (manufactures 1790; convention 'ratifies')
+    correct: "5steps ch11 timeline errors: (1) '1790: Hamilton issues plans proposing to protect infant U.S. industries' — the Report on Manufactures was submitted December 5, 1791 (premium2027's timeline correctly says 1791); (2) '1787: Constitutional Convention ratifies U.S. Constitution' — wrong verb; the Convention framed/proposed it, the states ratified in 1788. Also ch11 line 43: delegates from 'all 13 states' gathered at Philadelphia — Rhode Island sent none."
+    falsehoods:
+      - "report on manufactures.{0,20}1790"
+      - "convention.*ratif(y|ied).*1787"
+    sources: [5steps, prem27]
+    tier_note: "book-error log; premium2027 cross-check confirms 1791"
+
+  - id: F-U3-048
+    topic: Tier-1 book errors — premium2027 ch5 ('Fifty men'; 'Mississippi' 1787; 'Manufacturers')
+    correct: "premium2027 ch5 errors: (1) 'Fifty men marched to the home of the local tax collector' — ~500 per Britannica (see F-U3-043); (2) 'Mississippi' listed among states in the 1787 Three-Fifths debate (slaves >50%) — Mississippi statehood 1817; (3) timeline line 145: 'Report on Manufacturers' — misspelling; correct title 'Report on Manufactures.'"
+    falsehoods:
+      - "report on manufacturers"
+      - "mississippi.*1787.*(three-?fifths|slave)"
+    sources: [prem27, britannica]
+    tier_note: "book-error log; Tier-2 cross-check"
