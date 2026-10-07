@@ -2509,3 +2509,140 @@ facts:
   - premium2027
   - princeton
   tier_note: British-credit and cotton-collapse causes are standard in historiography but NOT pinned in the frozen Tier 1/2 set for this episode; taught as attributed argument only, disclosed in script
+- id: F-U4-028
+  topic: Jackson "enforce it" line is reported/apocryphal — disclosure required
+  correct: 'The "John Marshall has made his decision; now let him enforce it" line is REPORTED, not transcript-verified (premium2027: "purportedly said"). Teach only with in-dialogue disclosure ("supposedly," "the line may be legend, the defiance was real"). The defiance itself — Jackson refused to enforce Worcester v. Georgia — is Tier-1 (premium2027: decision "largely ignored" by Jackson''s government; 5steps: Jackson refused to implement the ruling).'
+  falsehoods:
+  - john marshall has made his decision.{0,80}enforce it
+  guards:
+  - supposedly|reportedly|legend|may be legend|purportedly
+  sources:
+  - 5steps
+  - premium2027
+  tier_note: same-day entry from U4-E10 v2 draft, 2026-10-06
+- id: F-U4-029
+  topic: Cherokee removal carried out under Van Buren, not Jackson
+  correct: 'The Cherokee removal of 1838 was carried out under Martin Van Buren''s administration — Jackson was out of office. Teach as Van Buren enforcing Jackson''s treaty on Jackson''s deadline. Never picture Jackson marching the Cherokee out in 1838.'
+  falsehoods:
+  - jackson.{0,40}(marched|led).{0,40}cherokee.{0,20}(west|out)
+  - jackson.{0,30}1838.{0,30}cherokee.{0,20}(removal|march)
+  guards:
+  - i thought|wasn''t|was not|didn''t|did not|out of office
+  sources:
+  - 5steps
+  - premium2027
+  tier_note: same-day entry from U4-E10 v2 draft, 2026-10-06
+- id: F-U4-030
+  topic: Cherokee death toll — attributed estimate, never pinned
+  correct: 'Cherokee death toll: teach as "roughly four thousand, about one in four" — the commonly cited figure, always hedged as an estimate, never a pinned exact count. (premium2027: "approximately one-quarter" of 18,000; 5steps: "about a third"; Britannica: "perhaps 4,000 of the estimated 15,000"; NPS: "more than a thousand" on the trail plus "perhaps several thousand" from its consequences.)'
+  falsehoods:
+  - exactly (four thousand|4,?000)
+  - 4,?000 cherokee died
+  sources:
+  - 5steps
+  - premium2027
+  - britannica
+  - nps
+  tier_note: same-day entry from U4-E10 v2 draft, 2026-10-06
+- id: F-U4-031
+  topic: Treaty of New Echota — rump faction, Ross petition, one-vote ratification
+  correct: 'Treaty of New Echota (Dec 29, 1835): signed by ~20 Cherokee of the Treaty Party (NPS: 22 Cherokee leaders + 9 US officials) — no elected tribal officials were party to the negotiations or signing (NPS). Ross''s protest petition carried ~16,000 signatures, nearly the whole Nation. Senate ratified May 1836 by one vote (31-15, one vote over two-thirds). The treaty gave the Cherokee two years to leave.'
+  falsehoods:
+  - ross signed the treaty of new echota
+  sources:
+  - nps
+  - britannica
+  - ohist
+  tier_note: same-day entry from U4-E10 v2 draft, 2026-10-06; 31-15 margin via Chronicles of Oklahoma (OHS), beyond frozen Tier 2, disclosed in script Sources
+- id: F-U4-032
+  topic: Worcester v. Georgia (1832) — holding verbatim + non-enforcement
+  correct: 'Worcester v. Georgia (1832): Marshall held the Cherokee are "a distinct community, occupying its own territory" and "the laws of Georgia can have no force" (premium2027 verbatim). The decision was "largely ignored" by Jackson''s government (premium2027); Jackson refused to enforce it. A court victory with no enforcement mechanism — a court has no army.'
+  falsehoods:
+  - worcester.{0,40}(freed|saved|protected) the cherokee
+  sources:
+  - 5steps
+  - premium2027
+  tier_note: same-day entry from U4-E10 v2 draft, 2026-10-06
+- id: F-U4-033
+  topic: Cherokee Nation v. Georgia (1831) — "domestic dependent nations"
+  correct: 'Cherokee Nation v. Georgia (1831): Marshall called the Cherokee "domestic dependent nations" — not a foreign country, not fully subject to the states either; a legal limbo, not a victory on the merits.'
+  falsehoods:
+  - cherokee nation v\. georgia.{0,40}(victory|won the case)
+  sources:
+  - 5steps
+  tier_note: same-day entry from U4-E10 v2 draft, 2026-10-06
+- id: F-U4-034
+  topic: Sequoyah syllabary 1821 (86 symbols); 1827 constitution; 1828 Cherokee Phoenix
+  correct: 'Sequoyah completed the Cherokee syllabary in 1821 — 86 symbols, one per syllable (Britannica). Cherokee constitution adopted 1827 (LOC). Cherokee Phoenix first edition Feb 21, 1828, edited by Elias Boudinot, printed in English and Cherokee (NPS).'
+  falsehoods:
+  - syllabary.{0,20}85 characters
+  - cherokee phoenix.{0,30}first.{0,20}1830
+  sources:
+  - britannica
+  - nps
+  - loc
+  tier_note: same-day entry from U4-E10 v2 draft, 2026-10-06
+- id: F-U4-035
+  topic: John Burnett 1890 account is contested — in-dialogue disclosure required
+  correct: 'John Burnett''s 1890 account (80th-birthday recollection, incl. the stockades quote) is CONTESTED: muster rolls show his company was discharged in 1837, a year before the roundups. Use only with the contested status IN the dialogue — never as certain eyewitness fact, never buried in a footnote.'
+  falsehoods: []
+  sources:
+  - web
+  tier_note: same-day entry from U4-E10 v2 draft, 2026-10-06
+- id: F-U4-036
+  topic: Quatie Ross blanket story is family tradition — disclose in dialogue
+  correct: 'Quatie Ross died on the Trail of Tears; the blanket story (she gave her only blanket to a sick child) is Cherokee family tradition, not transcript-verified. Teach with honest in-dialogue disclosure ("the story the Cherokee have told for six generations"), never flat.'
+  falsehoods: []
+  sources:
+  - web
+  tier_note: same-day entry from U4-E10 v2 draft, 2026-10-06
+- id: F-U4-037
+  topic: Georgia lotteries + stripped Cherokee rights (NPS)
+  correct: 'Georgia held lotteries giving Cherokee land and gold rights to whites; the Cherokee were barred from conducting business, contracting, testifying in court against whites, and mining gold (NPS).'
+  falsehoods: []
+  sources:
+  - nps
+  tier_note: same-day entry from U4-E10 v2 draft, 2026-10-06
+- id: F-U4-038
+  topic: Ross-led detachments Aug–Dec 1838; trail completed March 1839 (NPS)
+  correct: 'After the June 1838 water detachments went badly, Scott ordered Ross in charge of all future detachment movements; Ross orchestrated fourteen Cherokee-led detachments between August and December 1838 (NPS). The trail was completed by the end of March 1839; 17 detachments total across nine states (NPS). There was never one single trail.'
+  falsehoods: []
+  sources:
+  - nps
+  tier_note: same-day entry from U4-E10 v2 draft, 2026-10-06
+- id: F-U4-039
+  topic: 1839 killings of Treaty Party signers — corroborated beyond Tier 2
+  correct: 'Summer 1839: Treaty Party signers Major Ridge, his son John Ridge, and Elias Boudinot were killed; under Cherokee law selling the Nation''s land was a capital offense. Corroborated by Chronicles of Oklahoma (OHS) and History.com — beyond the frozen Tier 2, disclosed in the script Sources footer, not taught as Tier-pinned.'
+  falsehoods: []
+  sources:
+  - web
+  tier_note: same-day entry from U4-E10 v2 draft, 2026-10-06
+- id: F-U4-040
+  topic: 1829 Dahlonega gold rush on Cherokee land (Britannica)
+  correct: 'Gold rush on Cherokee land in Georgia began 1829 (Dahlonega) — America''s first gold rush; at peak the Georgia mines produced ~300 oz/day (Britannica).'
+  falsehoods:
+  - gold.{0,20}cherokee.{0,20}1835.{0,20}rush
+  sources:
+  - britannica
+  tier_note: same-day entry from U4-E10 v2 draft, 2026-10-06
+- id: F-U4-041
+  topic: Other removed nations — distinct fates (Britannica)
+  correct: 'Other removals, each distinct: Choctaw first (1830, died of exposure and hunger on the road); Chickasaw finalized 1832, journey 1837, largely self-financed with fewer deaths; Creek forced out 1836, many died; Seminole — the 1832 agreement was protested, Second Seminole War 1835–42, most captured and removed but a substantial number were never caught (Britannica). Never compress into one careless sentence.'
+  falsehoods:
+  - all.{0,25}seminole.{0,25}(removed|surrendered)
+  sources:
+  - britannica
+  tier_note: same-day entry from U4-E10 v2 draft, 2026-10-06
+- id: F-U4-042
+  topic: Indian Removal Act authorized negotiation — did not order the march
+  correct: 'The Indian Removal Act (1830) authorized the president to NEGOTIATE land exchanges; it did not order forced marches. The Cherokee removal came eight years later under the disputed Treaty of New Echota. Never teach "the Act ordered the Trail of Tears" — it is the standard student blur.'
+  falsehoods:
+  - removal act.{0,40}ordered.{0,30}trail of tears
+  - indian removal act.{0,30}forced.{0,30}cherokee.{0,20}march
+  guards:
+  - didn''t|did not
+  sources:
+  - 5steps
+  - premium2027
+  - britannica
+  tier_note: same-day entry from U4-E10 v2 draft, 2026-10-06
