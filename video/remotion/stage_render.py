@@ -25,11 +25,19 @@ from pathlib import Path
 # TODO: derive from timing_map.json instead of hardcoding
 ACT_BOUNDARIES = {
     'E2': [(0, 3930), (3931, 6029), (6030, 8284), (8285, 10544), (10545, 13448)],
+    'E3': [(0, 4320), (4321, 8880), (8881, 12870), (12871, 17160), (17161, 21495)],
 }
 
 RENDER_SCALES = {
-    'test': 0.375,  # 480x270
-    'prod': 1.0,    # 1280x720
+    'test': 0.375,   # 480x270 @ 30fps (fast iteration)
+    'review': 0.375, # 480x270 @ 10fps (true review mode, ~9x faster)
+    'prod': 1.0,     # 1280x720 @ 30fps (final quality)
+}
+
+RENDER_FPS = {
+    'test': 30,
+    'review': 10,
+    'prod': 30,
 }
 
 
@@ -44,13 +52,14 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--episode', required=True)
     parser.add_argument('--act', type=int, help='Act number, omit for all')
-    parser.add_argument('--mode', choices=['test', 'prod'], default='test')
+    parser.add_argument('--mode', choices=['test', 'review', 'prod'], default='test')
     parser.add_argument('--force', action='store_true')
     args = parser.parse_args()
 
     episode = args.episode.upper()
     mode = args.mode
     scale = RENDER_SCALES[mode]
+    fps = RENDER_FPS[mode]
     
     tsx_path = Path(f'src/components/U1{episode}Episode.tsx')
     if not tsx_path.exists():
@@ -71,7 +80,12 @@ def main():
             print(f"Act {act_num}: cached ({out_path.name})")
             continue
         
-        print(f"Act {act_num}: rendering frames {start}-{end} @ scale {scale}...")
+        # Convert frame range for non-30fps modes
+        if fps != 30:
+            start = int(start * fps / 30)
+            end = int(end * fps / 30)
+        
+        print(f"Act {act_num}: rendering frames {start}-{end} @ {fps}fps scale {scale}...")
         
         cmd = [
             'npx', 'remotion', 'render',
@@ -79,6 +93,7 @@ def main():
             str(out_path),
             f'--frames={start}-{end}',
             f'--scale={scale}',
+            f'--fps={fps}',
         ]
         
         env = {**os.environ, 'TMPDIR': str(Path.home() / 'workspace' / 'render_tmp')}

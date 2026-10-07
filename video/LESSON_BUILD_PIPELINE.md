@@ -145,14 +145,24 @@ Binary pass/fail. Do NOT proceed to creative QA with failures.
 
 ## Phase 4: Render & QA (per act)
 
-### 8. Render act (test mode)
+### 8. Render act
 ```bash
-python3 stage_render.py --episode E2 --act 2 --mode test
+python3 stage_render.py --episode E2 --act 2 --mode review  # 480x270 @ 10fps
+python3 stage_render.py --episode E2 --act 2 --mode test    # 480x270 @ 30fps
+python3 stage_render.py --episode E2 --mode prod            # 1280x720 @ 30fps
 ```
-- Test: 480×270 (scale 0.375), fast iteration
-- Prod: 1280×720 (scale 1.0), final quality
+- **review:** 480×270 @ 10fps, ~9x faster. Use for iteration and keyframe QA.
+- **test:** 480×270 @ 30fps, fast iteration with full motion.
+- **prod:** 1280×720 @ 30fps, final quality.
 - Cached by TSX hash (skips unchanged acts)
 - Use `--act N` for single act, omit for all
+
+### 8a. Verify render (gate)
+```bash
+python3 verify.py --video .build_cache/E3/act1_review_<hash>.mp4 --episode E3 --act 1
+```
+Checks: duration ±0.6s, 1 video + 1 audio stream, audio not silent, no black ≥0.5s.
+**Any failure blocks keyframe extraction.** Fix before proceeding.
 
 ### 9. Inspect keyframes
 - Keyframes auto-extracted at every beat (+0.7s for entrance)
