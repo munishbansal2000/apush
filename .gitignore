@@ -45,3 +45,27 @@ video-pipeline/episodes/*/work/director_prompt.txt
 # Downloaded image binaries are local QA only (images.json URLs are the
 # source of truth). Never commit these.
 video-pipeline/episodes/*/images/
+
+# Windows work: node_modules, build outputs, lockfiles
+**/node_modules/
+video/remotion/out/
+video/remotion/package-lock.json
+remotion/
+
+# Timing artifacts (never push - re-measure from TTS)
+**/word_times.json
+**/timings.json
+
+# Work directories (regenerable intermediates)
+video-pipeline/episodes/*/work/
+video-pipeline/models/
+
+# LTX job files and scene JSON (regenerable)
+video-pipeline/episodes/*/ltx_jobs*.json
+video-pipeline/episodes/*/trade_scenes.json
+video-pipeline/episodes/*/tordesillas_scene*.json
+video-pipeline/episodes/*/ltx_wiring.md
+
+# Media (never push per standing rules)
+*.mp3
+*.mp4
