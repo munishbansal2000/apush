@@ -19,8 +19,35 @@ import argparse
 import hashlib
 import glob
 import json
+import re
 import subprocess
 from pathlib import Path
+
+
+def load_pronunciations():
+    """Load pronunciations.json for TTS text substitution."""
+    pron_path = Path(__file__).parent / 'src' / 'data' / 'pronunciations.json'
+    if not pron_path.exists():
+        return []
+    data = json.loads(pron_path.read_text())
+    return data.get('terms', [])
+
+
+def apply_pronunciations(text: str, terms: list) -> str:
+    """Substitute approved pronunciation strings before TTS."""
+    for term in terms:
+        if not term.get('approved', False):
+            continue
+        tts = term.get('tts', '')
+        if not tts:
+            continue
+        # Case-insensitive whole-word replacement
+        pattern = r'\b' + re.escape(term['term']) + r'\b'
+        text = re.sub(pattern, tts, text, flags=re.IGNORECASE)
+    return text
+
+
+PRONUNCIATIONS = load_pronunciations()
 
 
 PROVIDERS = {
@@ -275,6 +302,8 @@ def main():
     for i, turn in enumerate(turns):
         speaker = turn.get('speaker', 'maya').lower()
         text = turn.get('text', '')
+        # Apply approved pronunciation substitutions before TTS
+        text = apply_pronunciations(text, PRONUNCIATIONS)
         pause_after = turn.get('pause_after', 0)
         
         out_path = out_dir / f'turn_{i:03d}.mp3'

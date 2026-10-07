@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useMemo } from 'react';
 import {
   AbsoluteFill,
   Audio,
@@ -8,9 +8,12 @@ import {
   useVideoConfig,
 } from 'remotion';
 import { TalkingHead } from './TalkingHead';
-import { ToneProvider } from '../validation/ToneContext';
+import { ToneProvider, SceneTone } from '../validation/ToneContext';
 import { AutoLayoutProvider } from '../validation/AutoLayout';
 import { LayoutGuard, Track, DEFAULT_GUARD_CONFIG } from '../lib/guard';
+import { deriveTermChips } from '../lib/derive-terms';
+import { TermChipView } from './KitOverlays';
+import renderConfig from '../data/render-config.json';
 
 interface Turn {
   id: string;
@@ -26,6 +29,12 @@ interface EpisodeShellProps {
   audioPath: (turnId: string) => string; // e.g. (id) => `audio/e3/${id}.mp3`
   backgroundForTurn: (turnId: string) => string; // image src
   seriousFromTurn?: number; // turn index where serious tone starts
+  /** Per-turn tone override (e.g. from a lesson plan). Wins over seriousFromTurn. */
+  toneForTurn?: (turnId: string) => SceneTone;
+  /** Skip the shell's built-in pause card (e.g. when the episode renders its own). */
+  hideDefaultPauseCard?: boolean;
+  /** Show auto-derived CED key-term chips. Default true. */
+  termChips?: boolean;
   children: (ctx: ShellContext) => React.ReactNode;
 }
 
@@ -62,12 +71,22 @@ export const EpisodeShell: React.FC<EpisodeShellProps> = ({
   audioPath,
   backgroundForTurn,
   seriousFromTurn = 0,
+  toneForTurn,
+  hideDefaultPauseCard = false,
+  termChips = true,
   children,
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const timeSec = frame / fps;
   const rootRef = useRef<HTMLDivElement>(null);
+
+  // Auto-derived CED key-term chips (from data/terms.json)
+  const chips = useMemo(() => {
+    if (!termChips) return [];
+    return deriveTermChips(episode.toLowerCase());
+  }, [episode, termChips]);
+  const activeChips = chips.filter(c => timeSec >= c.start && timeSec < c.end);
 
   // Validate lengths match
   if (turns.length !== starts.length || starts.length !== durations.length) {
@@ -97,9 +116,11 @@ export const EpisodeShell: React.FC<EpisodeShellProps> = ({
   const activeTurn = activeIndex >= 0 ? turns[activeIndex] : null;
   const activeStartFrame = activeIndex >= 0 ? Math.floor(starts[activeIndex] * fps) : 0;
 
-  // Tone: serious after threshold
+  // Tone: per-turn override wins; otherwise binary serious/playful threshold
   const turnNum = activeTurn ? parseInt(activeTurn.id.slice(1), 10) : 0;
-  const isSerious = turnNum >= seriousFromTurn;
+  const tone: SceneTone = activeTurn && toneForTurn
+    ? toneForTurn(activeTurn.id)
+    : turnNum >= seriousFromTurn ? 'serious' : 'playful';
 
   // Background (held through gaps)
   const bgSrc = activeTurn ? backgroundForTurn(activeTurn.id) : backgroundForTurn(turns[0]?.id ?? 't00');
@@ -118,7 +139,7 @@ export const EpisodeShell: React.FC<EpisodeShellProps> = ({
   };
 
   return (
-    <ToneProvider tone={isSerious ? 'serious' : 'playful'}>
+    <ToneProvider tone={tone}>
       <AutoLayoutProvider debug={false}>
         <AbsoluteFill ref={rootRef} style={{ backgroundColor: '#1a1512' }}>
           {/* Background */}
@@ -162,8 +183,8 @@ export const EpisodeShell: React.FC<EpisodeShellProps> = ({
             </Track>
           )}
 
-          {/* Pause card — show question during silence */}
-          {isPaused && activeTurn && (
+          {/* Pause card — show question during silence (episodes may supply their own) */}
+          {isPaused && activeTurn && !hideDefaultPauseCard && (
             <div style={{
               position: 'absolute',
               inset: 0,
@@ -188,6 +209,20 @@ export const EpisodeShell: React.FC<EpisodeShellProps> = ({
           <Track id="beats" role="stage" allowOverlap>
             {children(ctx)}
           </Track>
+
+          {/* Auto-derived CED key-term chips */}
+          {activeChips.map((chip, i) => (
+            <Sequence
+              key={`${chip.term}-${i}`}
+              from={Math.round(chip.start * fps)}
+              durationInFrames={Math.round((chip.end - chip.start) * fps)}
+            >
+              <TermChipView
+                chip={{ term: chip.term, definition: chip.definition, start: chip.start, end: chip.end }}
+                cfg={renderConfig as any}
+              />
+            </Sequence>
+          ))}
 
           {/* Runtime layout guard — measures real DOM, reports overlaps/cuts/clips */}
           <LayoutGuard cfg={DEFAULT_GUARD_CONFIG} rootRef={rootRef} />
