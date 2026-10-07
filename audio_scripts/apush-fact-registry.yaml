@@ -1778,3 +1778,35 @@ facts:
       - "alien friends.{0,60}imprison"
     sources: [prem27, britannica]
     tier_note: "book-error log; independently confirmed via Britannica (deport vs deport-or-imprison distinction)"
+
+  - id: F-U3-053
+    topic: Jefferson did not "keep the navy" — he reduced it
+    correct: "Do not teach Jefferson as preserving the navy parallel to the Bank. He kept Hamilton's financial machinery and the Bank ('accepted its economic usefulness'), but actively reduced the navy (laid up frigates, gunboat policy). 'Kept the navy' implies continuity where there was reduction — technically-true-but-misleading framing, blocked by the framing rule."
+    falsehoods:
+      - "jefferson.{0,40}kept the navy"
+    sources: [5steps, britannica]
+    tier_note: "framing correction from U3-E11 Layer 3"
+
+  - id: F-U3-054
+    topic: Federalist support for Burr in 1800 — motive per Tier 1
+    correct: "Tier 1 says Federalists backed Burr because they 'detested Jefferson' (5steps) / 'wished to embarrass Jefferson' (prem27). Do not teach 'easier to manage' — that motive is unattributed interpretation."
+    falsehoods:
+      - "burr.{0,40}easier to manage"
+    sources: [5steps, prem27]
+    tier_note: "motive correction from U3-E11 Layer 3"
+
+  - id: F-U3-055
+    topic: 1793 Capitol had no dome
+    correct: "The Capitol cornerstone was laid in 1793, but the cast-iron dome dates to the 1850s–60s. Do not describe 'columns and domes' for the 1790s building."
+    falsehoods:
+      - "1793.{0,40}domes"
+    sources: [britannica]
+    tier_note: "anachronism correction from U3-E11 Layer 3"
+
+  - id: F-U3-056
+    topic: 'Revolution of 1800 phrasing credited to Jefferson by premium2027, not 5steps'
+    correct: "premium2027 ch6 (16_Chapter06.xhtml:514): 'Jefferson labeled this transfer of power... the revolution of 1800.' 5steps2024 ch12 only says 'sometimes been called the Revolution of 1800' — it does NOT credit Jefferson. Do not cite 5steps ch12 for Jefferson's authorship or the 1819 letter."
+    falsehoods:
+      - "revolution of 1800.{0,40}5steps"
+    sources: [prem27, 5steps]
+    tier_note: "citation correction from U3-E11 Layer 3"
