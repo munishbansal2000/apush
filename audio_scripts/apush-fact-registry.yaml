@@ -7054,3 +7054,114 @@ facts:
   sources:
   - web
   tier_note: 'Added U7-L11 v2 2026-10-07 (Layer-3 pass).'
+- id: F-U7-071
+  topic: 'Carter''s July 15, 1979 ''crisis of confidence'' speech — he never said ''malaise'''
+  correct: 'On July 15, 1979 Carter gave a televised address diagnosing a ''crisis of confidence''
+    after a ten-day Camp David consultation retreat. He never used the word ''malaise'' in the
+    speech — opponents applied the label and it stuck.'
+  falsehoods:
+  - Carter.{0,30}(said|used).{0,20}malaise
+  - malaise.{0,25}was Carter.{0,15}(own )?(phrase|word|term)
+  guards:
+  - never said
+  sources:
+  - web
+  tier_note: 'Added U7-L12 v2 2026-10-07 (Layer-3 pass). Beyond the Tier-1 books; confirmed via
+    multiple web sources (the speech is titled ''A Crisis of Confidence''; opponents applied the
+    ''malaise'' label).'
+- id: F-U7-072
+  topic: '1973 OPEC oil embargo — Arab members, US target, prices roughly quadrupled'
+  correct: 'In October 1973, after Egypt and Syria attacked Israel in the Yom Kippur War and the
+    US backed Israel, the Arab members of OPEC embargoed oil exports to the United States.
+    The price of a barrel roughly quadrupled within months (~$3 to ~$12).'
+  falsehoods:
+  - OPEC.{0,20}is a country
+  - oil embargo.{0,20}(1972|1974)
+  sources:
+  - prem27
+  - web
+  tier_note: 'Added U7-L12 v2 2026-10-07 (Layer-3 pass). Embargo and motive per premium2027 ch10;
+    ~$3-to-~$12 quadrupling per web sources, disclosed in the script footer.'
+- id: F-U7-073
+  topic: '1979 second oil shock — Iranian Revolution, odd-even rationing, 55 mph'
+  correct: 'The 1979 Iranian Revolution cut oil supply again, producing a second oil shock:
+    odd-even gasoline rationing days and a 55 mph national speed limit to save fuel.'
+  falsehoods:
+  - odd-even.{0,20}(1973|1974)
+  - 55 mph.{0,20}(1973|Carter repealed)
+  sources:
+  - web
+  tier_note: 'Added U7-L12 v2 2026-10-07 (Layer-3 pass). Beyond the Tier-1 books; standard history
+    disclosed in the script footer.'
+- id: F-U7-074
+  topic: 'Three Mile Island March 1979 — partial meltdown, no deaths, nuclear freeze'
+  correct: 'In March 1979 the Three Mile Island reactor in Pennsylvania partially melted down,
+    releasing radioactive material. Nobody died, but new US nuclear plant orders dried up for
+    decades.'
+  falsehoods:
+  - Three Mile Island.{0,25}(killed|deaths|fatalities)
+  sources:
+  - princeton
+  - web
+  tier_note: 'Added U7-L12 v2 2026-10-07 (Layer-3 pass). Failure and radioactive release per
+    Princeton ch12 supp; March 1979 date, zero deaths, and the decades-long order freeze per web
+    sources, disclosed in the script footer.'
+- id: F-U7-075
+  topic: 'Iran hostage numbers — 66 seized, 52 held 444 days, released Jan 20 1981; Eagle Claw failed'
+  correct: 'On November 4, 1979 revolutionaries seized the US embassy in Tehran and took 66
+    Americans hostage; 52 were held the full 444 days. The April 1980 rescue mission
+    (Operation Eagle Claw) failed in the Iranian desert — sandstorms, a helicopter collision,
+    eight servicemen killed. The hostages were freed January 20, 1981, as Reagan took office.'
+  falsehoods:
+  - rescue mission.{0,20}freed
+  - hostages.{0,20}freed by.{0,20}rescue
+  sources:
+  - 5steps2024
+  - web
+  tier_note: 'Added U7-L12 v2 2026-10-07 (Layer-3 pass). 66 seized and 444 days per 5steps2024
+    ch28; the 52-held-through figure and Jan-20-1981 release per web sources, disclosed in the
+    script footer.'
+- id: F-U7-076
+  topic: 'Misery index = inflation + unemployment (Okun)'
+  correct: 'The ''misery index'' adds the inflation rate to the unemployment rate (economist
+    Arthur Okun); it became the signature number of 1970s economic pain.'
+  falsehoods:
+  - misery index.{0,20}(GDP|deficit|debt)
+  sources:
+  - web
+  tier_note: 'Added U7-L12 v2 2026-10-07 (Layer-3 pass). Beyond the Tier-1 books; disclosed in
+    the script footer.'
+- id: F-U7-077
+  topic: 'Camp David Accords 1978 — thirteen days, Sadat/Begin, Sinai for peace'
+  correct: 'In 1978 Carter brought Egypt''s Anwar Sadat and Israel''s Menachem Begin to Camp David
+    for thirteen days; the resulting Camp David Accords returned the Sinai Peninsula to Egypt
+    and had Egypt recognize Israel''s right to exist (formal treaty 1979).'
+  falsehoods:
+  - Camp David.{0,20}(1977|1979)
+  sources:
+  - prem27
+  - 5steps2024
+  tier_note: 'Added U7-L12 v2 2026-10-07 (Layer-3 pass).'
+- id: F-U7-078
+  topic: 'Ford — only president never elected to VP or presidency; WIN buttons; 10% unemployment'
+  correct: 'Gerald Ford remains the only president never elected to either the vice presidency or
+    the presidency. He declared ''our long national nightmare is over,'' his WIN (Whip Inflation
+    Now) button campaign was a dismal failure, and unemployment touched 10 percent under him.'
+  falsehoods:
+  - Ford.{0,25}(was|had been) elected
+  guards:
+  - never elected
+  sources:
+  - 5steps2024
+  tier_note: 'Added U7-L12 v2 2026-10-07 (Layer-3 pass).'
+- id: F-U7-079
+  topic: 'Stagflation — Nixon 90-day wage-price freeze 1971 failed; 12%/8% at Carter exit'
+  correct: 'Stagflation (stagnation + inflation) began under Nixon, whose 1971 90-day wage-price
+    freeze failed; it outlasted Ford. When Carter left office inflation was still 12 percent
+    with unemployment at 8 percent. Carter inherited stagflation; he did not create it.'
+  falsehoods:
+  - Carter (caused|created|invented) stagflation
+  sources:
+  - 5steps2024
+  - princeton
+  tier_note: 'Added U7-L12 v2 2026-10-07 (Layer-3 pass).'

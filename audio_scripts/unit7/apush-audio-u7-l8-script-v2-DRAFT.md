@@ -29,7 +29,7 @@ Marcus: [measured] Spring 1964: the University of Michigan's commencement at Ann
 
 Maya: [playful] Hold on. Michigan? The Big House? The football stadium that seats like a hundred thousand people?
 
-Marcus: [conversational] Same school, different field: the speech was at their spring commencement. Not the stadium. But yes, Ann Arbor. Even your college football knowledge is useful today.
+Marcus: [conversational] Same school, different occasion: their spring commencement. But yes, Ann Arbor. Even your college football knowledge is useful today.
 
 Maya: [conversational] One down, three to go. What does a "war on poverty" actually build?
 
@@ -59,7 +59,7 @@ Maya: [sheepish] So Medicare was the one for the poor —
 
 Marcus: [firm] Not quite. The swap everyone makes. Flip it: Medicare cares for the aged, Medicaid aids the poor. Say it once and it's yours.
 
-Maya: [confident tone] Medicare, sixty-five and up. Medicaid, can't-afford-it. Got it. And the government had never insured anybody's health before this, right?
+Maya: [confident tone] Medicare, sixty-five and up. Medicaid, can't-afford-it. Got it. And the government had never done health insurance on anything like this scale, right?
 
 Marcus: [measured] Right: Washington entering the doctor's office the same way it entered the classroom. And the same year, 1965, Johnson signed the Immigration and Nationality Act, the Hart-Celler Act. It killed the national-origins quota system from the 1920s, the one that had favored northern and western Europe for forty years.
 
@@ -69,7 +69,7 @@ Marcus: [firm] Classic mistake, and a favorite exam trap. The act abolished the 
 
 Maya: [conversational] The law that changed who America is: more immigration from Asia, Latin America, and Africa, permanently changing the country's makeup.
 
-Marcus: [thoughtful tone] Over the decades, yes. The premium book is careful: the shift was slow, and its full size only showed with time.
+Marcus: [thoughtful tone] Over the decades, yes. The shift was slow, and its full size only showed with time.
 
 Maya: [curious, inquisitive tone] Was there anything in the Great Society for the environment? Or was that all later?
 
@@ -77,13 +77,13 @@ Marcus: [conversational] The big environmental laws come later. Those are L10's.
 
 Maya: [conversational] Now the verdict. Did the war on poverty work?
 
-Marcus: [serious tone] Both things are true, and the exam wants both. The five-steps book says the poverty rate was cut by about forty percent, and seniors got government health insurance for the first time. And the book says flatly: much of Johnson's Great Society remained, a legacy that endured into the twenty-first century.
+Marcus: [serious tone] Both things are true, and the exam wants both. The five-steps book says the poverty rate was cut by about forty percent, and seniors got government health insurance. And the book says flatly: much of Johnson's Great Society remained, a legacy that endured into the twenty-first century.
 
-Maya: [curious, inquisitive tone] But it didn't end poverty. That was the promise, end poverty, and that didn't happen.
+Maya: [incredulous] But it didn't end poverty. That was the promise, end poverty, and that didn't happen.
 
 Marcus: [measured] Right. The books say it straight: the Great Society didn't end poverty. The cycle proved harder to break than the theory said, and then the money ran out: Vietnam. The fiscal strain of the war forced Congress to cut back or kill some of the programs. Martin Luther King said it in 1967 [beat]. The premium book quotes him: "The promises of the Great Society have been shot down on the battlefields of Vietnam."
 
-Maya: [thoughtful tone] Brutal. The war didn't just cost money. It cost the whole dream its champion.
+Maya: [thoughtful tone] Brutal. The war didn't just cost money. It drained the dream itself.
 
 Marcus: [serious tone] The five-steps book frames it as a flaw in the faith itself: the same confidence that Washington could end poverty was the confidence that Washington could win in Vietnam, and it calls that hubris. Critics added their verdict: too expensive, too much dependency, too much Washington. The argument never settled. It's the argument we're still having about what government is for.
 
@@ -99,11 +99,11 @@ Maya: [conversational] Box three: 1965, health care and immigration. Medicare is
 
 Marcus: [conversational] Memory check: Eastern Hemisphere one hundred seventy thousand, Western Hemisphere one hundred twenty thousand, the first-ever cap there. You've got it.
 
-Maya: [conversational] Box four: the verdict. Poverty cut by about forty percent, a huge drop. But the Great Society didn't end poverty. Vietnam drained the money and killed the momentum. King's line: the promises got shot down on the battlefields of Vietnam. The critics' version: too expensive, too much dependency, too much Washington. Check your boxes.
+Maya: [conversational] Box four: the verdict. Poverty cut by about forty percent, a huge drop. But the Great Society didn't end poverty. Vietnam drained the money and killed the momentum. King's line: the promises got shot down on the battlefields of Vietnam. The critics' version: too expensive, too much dependency, too much Washington.
 
 Marcus: [confident tone] Four boxes, all landed.
 
-Maya: Three questions, AP-shaped. Say your answer before I give it. One more, fast, at the end for the fourth box.
+Maya: Three questions, AP-shaped. Say your answer before I give it. One more, fast, at the end for the third box.
 
 Maya: Question one, stimulus style. The Princeton book quotes Johnson's 1964 Michigan speech promising "…where the meaning of our lives matches the marvelous products of our labor." Johnson is speaking to the richest country on earth. What is he saying prosperity alone can't buy?
 

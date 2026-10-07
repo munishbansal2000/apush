@@ -3,7 +3,7 @@
 # Read note: Maya (host, student-surrogate) + Marcus (expert). One tone tag opens most turns; tags are stripped before every gate check and before TTS — they never change the words. The [8-second pause], [15-second pause], and [5-second pause] marks are production notes for real silence — they never go to the voice. Strip this header, the read note, and all pause tags before TTS; convert pause tags to silence. Production: the tagline's em-dash is a held breath — do not rush it. Intended duration ~11 min at ≤180 WPM — experienced runtime including every scripted pause second.
 # Pronunciation: Ngo Dinh Diem (noh din zee-EM), Ho Chi Minh (hoh chee MIN), Viet Cong (vee-et KONG), Tet, Saigon (sy-GON), Dien Bien Phu (dyen byen FOO), Cronkite (KRON-kite), Pleiku (play-KOO)
 
-Maya: [professional broadcast tone] Last time: the war that ate the dream. Vietnam — the quagmire, the draft, and the generation it broke. Four boxes: the Domino Theory, the Gulf of Tonkin Resolution, the Tet Offensive, and Vietnamization. Circle the ones you couldn't explain right now. About eleven minutes, pauses and all.
+Maya: [professional broadcast tone] Last time: the war that ate the dream. Vietnam — the quagmire that broke the generation it drafted. Four boxes: the Domino Theory, the Gulf of Tonkin Resolution, the Tet Offensive, and Vietnamization. Circle the ones you couldn't explain right now. About eleven minutes, pauses and all.
 
 Marcus: [measured] Start with why Washington cared about a small country most Americans couldn't find on a map. After World War Two, America runs a policy called containment: box communism in wherever it appears. France is still holding Vietnam as a colony, and the Vietnamese are fighting for independence under a communist leader named Ho Chi Minh.
 
@@ -17,7 +17,7 @@ Marcus: [confident tone] Exactly. The Geneva Accords split Vietnam at the sevent
 
 Maya: [incredulous] The democracy side canceled the election?
 
-Marcus: [firm] The democracy side canceled the election. And Diem turned out brutal: jailing opponents, persecuting Buddhists. By nineteen sixty-three the Kennedy administration quietly approved a generals' coup, and Diem was killed. Three weeks later Kennedy himself was assassinated, and Lyndon Johnson inherited the whole mess.
+Marcus: [firm] It did. And Diem turned out brutal: jailing opponents, persecuting Buddhists. By nineteen sixty-three the Kennedy administration quietly approved a generals' coup, and Diem was killed. Three weeks later Kennedy himself was assassinated, and Lyndon Johnson inherited the whole mess.
 
 Maya: [curious, inquisitive tone] And the idea holding all this together?
 
@@ -55,13 +55,13 @@ Marcus: [firm] Not quite. The classic wrong answer, and it's worth a full box. M
 
 Maya: [curious, inquisitive tone] Because the cameras were there.
 
-Marcus: [serious tone] The living-room war. Television was in nearly every American living room by nineteen sixty, and Vietnam was the first war it ever carried. A month after Tet, Walter Cronkite, the most trusted newsman in the country, looked into the camera and said the war was [emphasis]mired in stalemate. A month after that, Johnson announced he wouldn't seek another term.
+Marcus: [serious tone] The living-room war. Television was in nearly every American living room by nineteen sixty, and Vietnam was the first American war it ever carried. A month after Tet, Walter Cronkite, the most trusted newsman in the country, looked into the camera and said the war was [emphasis]mired in stalemate. A month after that, Johnson announced he wouldn't seek another term.
 
 Marcus: [measured] The gap between the briefings and the broadcasts got a name: the credibility gap. In nineteen seventy-one the Pentagon Papers leaked: a secret Defense Department study, leaked by an analyst named Daniel Ellsberg, proving the government had misled the public about the war for years. And My Lai: in nineteen sixty-eight, American soldiers killed hundreds of Vietnamese civilians, and the Army buried it for over a year. [sigh]
 
 Maya: [conversational] How does a country come back from that?
 
-Marcus: [thoughtful tone] Slowly, and never all the way. The briefings said progress. The living room said otherwise.
+Marcus: [thoughtful tone] Slowly, and never all the way — not when the briefings promised progress and the evening news showed the opposite.
 
 Maya: [curious, inquisitive tone] So the war's lost at home before it's lost over there. What did it do to the generation that had to fight it?
 
@@ -81,7 +81,7 @@ Marcus: [serious tone] When Nixon widened the war into Cambodia in nineteen seve
 
 Maya: [conversational] So the exit. Nixon wins in sixty-eight promising a secret plan to end it. What was the plan?
 
-Marcus: [measured] Vietnamization. Train up the South Vietnamese army, pull the Americans out, keep the bombs falling. It cut the troop count fast: by nineteen seventy-two only about twenty-four thousand American personnel were left in Vietnam. As an exit it worked. As a strategy, it didn't.
+Marcus: [measured] Vietnamization. Train up the South Vietnamese army, pull the Americans out, keep the bombs falling. It cut the troop count fast: by nineteen seventy-two only about twenty-four thousand American personnel were left in Vietnam. As an exit it worked. As a strategy for keeping South Vietnam alive, it failed within two years.
 
 Maya: [curious, inquisitive tone] Paris, seventy-three — that's the peace?
 
@@ -95,7 +95,7 @@ Maya: [thoughtful tone] The credibility gap never really closed, did it.
 
 Marcus: [measured] It just found new scandals. A burglary at the Watergate complex was already unraveling: same machinery, different lie. That one's a later lesson's story. And the kids in the streets weren't only protesting; a whole counterculture was rising around the marches.
 
-Maya: [conversational] Four boxes, let's land them. Box one: the Domino Theory. If Vietnam went communist the neighbors would topple, so America bankrolled France's war and then took it over. Box two: the Gulf of Tonkin Resolution. A shaky incident, a blank check, and the escalation to nearly half a million troops on the draft's back. Box three: the Tet Offensive. January of, uh, sixty-eight?
+Maya: [conversational] Four boxes, let's land them. Box one: the Domino Theory. If Vietnam went communist the neighbors would topple, so America bankrolled France's war and then took it over. Box two: the Gulf of Tonkin Resolution. It started with a shaky incident and a blank check, and ended with nearly half a million troops there on the draft's back. Box three: the Tet Offensive. January of, uh, sixty-eight?
 
 Marcus: [conversational] Sixty-eight. January thirtieth.
 
