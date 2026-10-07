@@ -6363,3 +6363,66 @@ facts:
   - 5steps
   - britannica
   tier_note: 'Added U7-L4 v2 2026-10-07 — book error confirmed by coordinator against Britannica/Columbia/HISTORY same day.'
+
+- id: F-U7-019
+  topic: 'Levittown figures — teach Britannica''s numbers, not the popular-history ones'
+  correct: 'Levittown, Long Island (William Levitt, Levitt & Sons) debuted 1947: 17,000+ homes built 1947–51 at roughly nine a day via a 26-step process; ~$8,000 houses, no deposit required. The v1 draft''s "$6,990, a house every sixteen minutes" and "television included" come from popular histories, NOT the retrievable Tier 1/2 sources — do not teach them flat.'
+  falsehoods:
+  - levittown.{0,30}(6,990|6990)
+  - house every sixteen minutes
+  - sixteen minutes.{0,20}levitt
+  - levitt.{0,25}television included
+  - television included.{0,25}levitt
+  guards:
+  - if you write a Levittown price or build pace
+  sources:
+  - britannica
+  - apush-transcripts
+  tier_note: 'Added U7-L5 v2 2026-10-07 — writer fact pass; popular figures disclosed in Sources footer.'
+
+- id: F-U7-020
+  topic: 'Premium 2027 ch10 timeline misprints the Interstate Highway Act as 1954 (book error)'
+  correct: 'The Federal-Aid Highway Act (National Interstate and Defense Highways Act) was signed June 29, 1956 by Eisenhower, establishing a 41,000-mile National System of Interstate and Defense Highways. Premium2027 ch10''s timeline entry "1954 Interstate Highway Act" contradicts the book''s own prose (1956) and Congress.gov — teach 1956.'
+  falsehoods:
+  - interstate.{0,20}(act|highway).{0,15}1954
+  - 1954.{0,20}interstate highway act
+  guards:
+  - if you write the Interstate Highway Act year
+  sources:
+  - premium2027
+  - congress.gov
+  tier_note: 'Added U7-L5 v2 2026-10-07 — book error confirmed by writer against Congress.gov same day.'
+
+- id: F-U7-021
+  topic: 'GI Bill benefits were college + housing + business loans, not just mortgages'
+  correct: 'The Servicemen''s Readjustment Act (1944) gave WWII veterans money for college, low-interest home loans with little or nothing down, AND business loans. The common student error is reducing it to "the GI Bill was just mortgages."'
+  falsehoods:
+  - gi bill.{0,25}(was |only |just )mortgages
+  sources:
+  - 5steps
+  - premium2027
+  - apush-transcripts
+  tier_note: 'Added U7-L5 v2 2026-10-07 — writer fact pass.'
+
+- id: F-U7-022
+  topic: 'Sunbelt boom engines — federal spending, AC, interstates; sunshine is the myth'
+  correct: 'The Sunbelt (South/West) grew after WWII on technology and money: affordable air conditioning making the hot states livable, the 1956 interstate system, and federal spending flowing into the region''s growing economy (premium2027 ch10 lists federal spending among the factors behind the suburbs/Sunbelt shifts). Do NOT pin the specific "Pentagon built it in the South and West / bases, aircraft plants, space program" geography — not in the retrievable Tier 1/2 sources. The student error is "the Sunbelt boomed because of the nice weather" — weather is the bonus, not the engine. The political aftershock (seats follow population) is real but do NOT pin a specific electoral-vote crossover year.'
+  falsehoods:
+  - sunbelt.{0,25}(because of|chasing).{0,20}(sunshine|weather|nice weather)
+  - 1972.{0,25}sunbelt.{0,25}electoral
+  guards:
+  - if you explain why the Sunbelt grew
+  sources:
+  - premium2027
+  - apush-transcripts
+  tier_note: 'Added U7-L5 v2 2026-10-07 — writer fact pass; v1''s 1972 crossover claim cut as unverifiable.'
+
+- id: F-U7-023
+  topic: 'Redlining was federal policy — banks drew the lines, the FHA backed them'
+  correct: 'Redlining: banks drew maps with red lines around Black neighborhoods and labeled them "investment hazards"; the FHA (est. 1934) refused to insure mortgages in redlined neighborhoods, blocking federally-backed loan money from reaching African-American neighborhoods. Levittown and other FHA-backed developments excluded Black buyers via restrictive covenants. The student error is calling it a market accident — banks drew the lines and the federal government backed the play.'
+  falsehoods:
+  - redlining.{0,30}(market|accident|naturally)
+  sources:
+  - premium2027
+  - apush-transcripts
+  tier_note: 'Added U7-L5 v2 2026-10-07 — writer fact pass.'

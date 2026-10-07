@@ -104,12 +104,17 @@ def registry_hits(spoken, facts):
     # "write" — extended to writes/wrote/written; added the "is wrong" /
     # "that's wrong" debunking frame ("the 'Hoover did nothing' line is
     # wrong") — same pedagogical family as "classic mistake".
+    # 2026-10-07 (U7-L5): added the "mistake to kill" frame ("One exam
+    # mistake to kill right now: the GI Bill wasn't just mortgages") —
+    # the writer's own new F-U7-021/F-U7-023 patterns self-fired on the
+    # myth-bust lines that introduced them.
     NEG_FRAME = re.compile(
         r"\b(don't|do not|never)\s+(write|say|claim|argue)\s+that\b"
         r"|\bcommon mistake\b"
         r"|\bclassic mistake\b"
         r"|\btrap (check|answer)\b"
         r"|\breal error\b"
+        r"|\bmistake to kill\b"
         r"|\bstudents?\s+(writ\w*|wrote)\b"
         r"|\b(is|that's|that is|you're|you are)\s+wrong\b",
         re.IGNORECASE,
