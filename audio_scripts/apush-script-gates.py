@@ -89,13 +89,20 @@ def load_registry():
 def registry_hits(spoken, facts):
     # A "don't write that [falsehood]" pedagogical construction explicitly
     # labels the falsehood as wrong — it must not trip the gate. Skip any
-    # match whose sentence carries a negation frame.
+    # match whose sentence carries a negation frame. 2026-10-06: extended to
+    # the "common mistake" / "students write" frames — e.g. Students write
+    # "Jackson banned paper money." He didn't. — which quote the error only
+    # to refute it.
     NEG_FRAME = re.compile(
-        r"\b(don't|do not|never)\s+(write|say|claim|argue)\s+that\b",
+        r"\b(don't|do not|never)\s+(write|say|claim|argue)\s+that\b"
+        r"|\bcommon mistake\b"
+        r"|\bstudents?\s+write\b",
         re.IGNORECASE,
     )
     out = []
     for fact in facts:
+        guards = [re.compile(g, re.IGNORECASE)
+                  for g in fact.get("guards", []) or []]
         for pat in fact.get("falsehoods", []) or []:
             try:
                 rx = re.compile(pat, re.IGNORECASE)
@@ -103,7 +110,8 @@ def registry_hits(spoken, facts):
                 continue
             for ln, _, b in spoken:
                 for s in sentences(b):
-                    if rx.search(s) and not NEG_FRAME.search(s):
+                    if rx.search(s) and not NEG_FRAME.search(s) \
+                            and not any(g.search(s) for g in guards):
                         out.append((ln, fact["id"], pat, s[:70]))
                         break
                 else:

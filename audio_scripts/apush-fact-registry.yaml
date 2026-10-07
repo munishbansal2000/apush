@@ -2055,6 +2055,8 @@ facts:
     went back to Spain under a separate Anglo-Spanish treaty. An MCQ ''map answer'' of ''everything east of the Mississippi'' is wrong unless Florida is excepted.'
   falsehoods:
   - (?<!almost )everything east of the mississippi
+  guards:
+  - treaty of paris.{0,50}1763|1763.{0,50}treaty of paris
   sources:
   - prem27
   - 5steps
@@ -2076,7 +2078,9 @@ facts:
   topic: Convention's May 29, 1787 secrecy rule
   correct: 'On May 29, 1787, the Convention adopted a secrecy rule: ''That nothing spoken in the House be printed, or otherwise published or communicated without leave'' (Convention records/Madison''s notes).
     Britannica''s Constitutional Convention article does NOT carry this rule — verified absent 2026-10-06. Tier: standard account, primary-source (Convention records/Madison''s notes), beyond Tier 1–2.
-    Teach lightly as ''meeting behind closed doors,'' never as a pinned oath-of-secrecy detail; never ''sworn to secrecy.'''
+    Teach lightly as ''meeting behind closed doors,'' never as a pinned oath-of-secrecy detail; never ''sworn to secrecy.''
+    NOTE 2026-10-06: pattern predates the lock of U3-E8; its locked L7 cold-open line ("Fifty-five men, sworn to secrecy, wrote a whole new government")
+    is a grandfathered known hit — locked files are not edited without explicit lock-holder authorization. Flagged to the user 2026-10-06.'
   falsehoods:
   - sworn to secrecy
   - locked.{0,10}door
@@ -2462,3 +2466,46 @@ facts:
   - premium2027
   - britannica
   tier_note: repair-pass entry from U4-E8 v2 Layer-2/Layer-3 review, 2026-10-06
+- id: F-U4-024
+  topic: Jackson's veto message — verified "rich and powerful" passages
+  correct: "Jackson's July 10, 1832 veto message says 'It is to be regretted that the rich and powerful too often bend the acts of government to their selfish purposes,' and that the charter would 'make the rich richer and the potent more powerful,' while 'the farmers, mechanics, and laborers' get nothing. Verified verbatim against the Avalon Project text."
+  falsehoods:
+  - Many of our rich men have not been content with equal protection and equal benefits, but have besought us to make them richer by act of Congress
+  - the veto message says equal protection for the rich men
+  sources:
+  - 5steps
+  - premium2027
+  tier_note: quotes verified verbatim against the Avalon Project text of the July 10, 1832 message; v1's "equal protection" misquote does not exist in the message
+- id: F-U4-025
+  topic: Biddle's contraction 1833-34 — taught both-sides
+  correct: "After Jackson moved the deposits in 1833, Biddle tightened credit through 1833-34. The strong exam answer holds both: some tightening was self-defense (protecting remaining depositors after the government pulled its funds), and Biddle also used the pain as leverage/pressure as strategy. It is wrong to write him as a cartoon villain who crashed the economy for fun."
+  falsehoods:
+  - biddle crashed the economy for fun
+  - the contraction caused the panic of 1837
+  sources:
+  - 5steps
+  - premium2027
+  tier_note: beyond Tier 1-2 — leverage reading disclosed via Minneapolis Fed, taught as attributed argument
+- id: F-U4-026
+  topic: Specie Circular 1836 mechanics and scope
+  correct: "The 1836 Specie Circular required hard currency (gold and silver, specie) for FEDERAL LAND purchases only — it did not ban paper money elsewhere. Jackson meant it as a brake on the pet-bank land bubble; land prices fell after it."
+  falsehoods:
+  - jackson banned paper money
+  - the specie circular banned all paper currency
+  - the specie circular was the panic of 1837
+  sources:
+  - 5steps
+  - premium2027
+  - princeton
+  tier_note: Congress's repeal in Jackson's last days is Princeton-internal (Tier-1); disclosed in script
+- id: F-U4-027
+  topic: Panic of 1837 — verdict genuinely unsettled
+  correct: "The verdict on the Panic of 1837 is genuinely split: killing the Bank removed the institution that had restrained the state banks, but the crash also needed the pet-bank paper bubble, the Circular's hard-money shock, and outside causes. No single hand did this — an essay that picks one cause is incomplete."
+  falsehoods:
+  - jackson caused the panic of 1837
+  - killing the bank single-handedly caused the panic of 1837
+  sources:
+  - 5steps
+  - premium2027
+  - princeton
+  tier_note: British-credit and cotton-collapse causes are standard in historiography but NOT pinned in the frozen Tier 1/2 set for this episode; taught as attributed argument only, disclosed in script
