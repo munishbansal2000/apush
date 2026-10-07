@@ -73,7 +73,29 @@ The creative step drives image needs, not the reverse.
 Not modern state outlines. Source from Library of Congress. Calibrate overlay
 coordinates to the specific map image.
 
-### 5. Scene Build (technical implementation)
+### 5b. LTX Clips (AI video, optional per beat)
+```bash
+python3 stage_clips.py --episode E2                    # VM mode: placeholders
+python3 stage_clips.py --episode E2 --provider ltx-desktop  # Windows: real clips
+```
+
+**How it works:**
+- Creative direction marks beats with `anim_prompt` + `base_image` + `clip_duration` (max 10s)
+- **VM:** exact-duration Ken Burns placeholder holds the timing slot
+- **Windows:** real LTX clips render to `public/ltx/<episode>/<beat_id>.mp4`
+- **Episode component** (`LtxClip`) auto-swaps: real clip if present, placeholder if not
+- **Zero code changes** between VM and Windows renders
+
+**Providers:** `none` (default, VM), `ltx` (local diffusers), `ltx-desktop` (Windows app), `meta-ui` (Meta bridge)
+
+**Provenance:** `public/ltx/<episode>/MANIFEST.json` tracks prompt/seed/duration/still fingerprints. Incremental: unchanged beats reuse clips, changed beats regenerate.
+
+**Rules:**
+- Detailed prompts with base image, max 10 seconds per clip
+- Prompt safety gate (ambient-motion-only) enforced before generation
+- Clips are gitignored; MANIFEST.json is committed
+
+### 6. Scene Build (technical implementation)
 Transform SUB_BEATS into the renderable episode TSX.
 
 **This is where creative direction becomes technical implementation:**
@@ -180,6 +202,7 @@ ffmpeg -f concat -safe 0 -i concat_list.txt -c copy full.mp4
 | TTS | `stage_tts.py` | Render turns with meta/edge/fish (from audio_scripts/) |
 | Timing | `stage_timing.py` | Vosk alignment → timing_map.json |
 | Images | `stage_images.py` | Scan TSX → catalog → download missing |
+| Clips | `stage_clips.py` | LTX AI video clips (VM: placeholder, Windows: real) |
 | Validate | `build_episode.py --validate-only` | All validators |
 | Render | `stage_render.py` | Remotion render per act |
 | Keyframes | `extract_keyframes.py` | Frames at every beat |
