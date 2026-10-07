@@ -6234,3 +6234,13 @@ facts:
   sources:
   - 5steps
   tier_note: 'Added U7-L1 v2 2026-10-07 — writer fact pass.'
+- id: F-U7-007
+  topic: 'Berlin blockade vs airlift duration — 5steps2024 ch25 conflates them'
+  correct: 'The Berlin blockade ran June 24, 1948 – May 12, 1949 (~11 months; State Dept Office of the Historian). The airlift ran ~15 months total (through Sept 1949). 5steps2024 ch25''s keyword summary ("flew in supplies for 15 months, causing the Soviet Union to call off the blockade") conflates the airlift''s duration with the blockade''s. Teach the two durations separately.'
+  falsehoods:
+  - berlin blockade lasted 15 months
+  - blockade lasted fifteen months
+  sources:
+  - 5steps
+  - state.gov
+  tier_note: 'Pinned U7-L2 v2 2026-10-07 — State Dept Office of the Historian confirms blockade dates; airlift outlasted the blockade.'
