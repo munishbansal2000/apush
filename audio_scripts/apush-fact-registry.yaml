@@ -8336,3 +8336,155 @@ facts:
   sources:
   - princeton
   tier_note: 'Added U9-L4 v2 2026-10-07 (writer fact pass). Mechanics per princeton ch10.'
+- id: F-U9-028
+  topic: 'Homestead Act 1862 — 160 acres, $10 fee, live and work the land'
+  correct: 'The Homestead Act (1862) offered 160 acres to any citizen who filed, paid a
+    $10 registration fee, and lived on the land and worked it (5steps2024 ch17). Teach
+    the fee and the work requirement — never as unconditional free land.'
+  falsehoods:
+  - Homestead Act (of|in) 1860
+  - Homestead.*unconditional free land
+  sources:
+  - 5steps
+  tier_note: 'Added U9-L5 v2 2026-10-07 (writer fact pass). The book''s ''six months of
+    the year'' phrasing is not taught; dialogue says ''lived on the land and worked it.'''
+- id: F-U9-029
+  topic: 'Exodusters — Black post-Civil-War migration west; <20% got working farms'
+  correct: 'After the Civil War, thousands of Black families left the South for the West —
+    the Exodusters, named for the biblical Exodus of the Israelites from Egypt. Most ran
+    out of money and met racism; fewer than one in five ever established a working farm
+    (5steps2024 ch17).'
+  falsehoods:
+  - Exodusters.*majority.*successful
+  - Exodusters.*most.*thrived
+  sources:
+  - 5steps
+  tier_note: 'Added U9-L5 v2 2026-10-07 (writer fact pass).'
+- id: F-U9-030
+  topic: 'Mining frontier — Pike''s Peak gold, Comstock silver, Black Hills gold; boom/bust'
+  correct: 'Western mining: gold at Pike''s Peak, silver at the Comstock Lode (Nevada),
+    gold in the Black Hills of the Dakota Territory. Boom towns exploded and died with the
+    ore; Chinese laborers leaving railroad work joined the camps (5steps2024 ch17).'
+  falsehoods:
+  - Comstock gold
+  - Comstock.*gold rush
+  sources:
+  - 5steps
+  tier_note: 'Added U9-L5 v2 2026-10-07 (writer fact pass).'
+- id: F-U9-031
+  topic: 'Ranching frontier — Mexican cattle culture, 1866 long drives, cowboy diversity'
+  correct: 'Western settlers inherited cattle-ranching culture from Mexicans. In 1866 Texas
+    ranchers began driving herds overland to Kansas railroads — the long-drive era. Up to a
+    third of the cowboys were Mexican or African American. Barbed wire (Joseph Glidden,
+    1873) fenced the open range; the winters of 1885–87 killed up to 85% of Plains cattle
+    (5steps2024 ch17).'
+  falsehoods:
+  - cowboys were (all|entirely) white
+  - cowboys.*exclusively white
+  sources:
+  - 5steps
+  tier_note: 'Added U9-L5 v2 2026-10-07 (writer fact pass). Long-drive diversity and the
+    John Wayne wrong beat are L5''s Maya-human beat.'
+- id: F-U9-032
+  topic: 'Buffalo destruction — government-approved; foundation of Plains tribal life'
+  correct: 'The Plains tribes depended on the buffalo for food and much else; their lives
+    were organized around the herds. With government approval and support, settlers hunted
+    the buffalo to near extinction, destroying the foundation of Native American life on
+    the Plains. By the late 1880s most Native Americans in the West lived on reservations
+    subsisting on government rations (5steps2024 ch17).'
+  falsehoods:
+  - buffalo.*died out naturally
+  - buffalo.*vanished.*disease
+  sources:
+  - 5steps
+  tier_note: 'Added U9-L5 v2 2026-10-07 (writer fact pass).'
+- id: F-U9-033
+  topic: 'Little Bighorn June 1876 — Sioux/Cheyenne victory; changed nothing'
+  correct: 'June 1876: George Custer led the Seventh Cavalry into a large Sioux and Cheyenne
+    camp at the Little Bighorn, attacked without waiting for reinforcements, and he and
+    more than 200 of his men were killed. The most decisive Native victory of the Indian
+    wars — and it did not change the outcome: the army flooded the Plains and forced the
+    Sioux back onto the reservations (5steps2024 ch17).'
+  falsehoods:
+  - Little Bighorn ended the Indian wars?
+  - Custer.*won.*Bighorn
+  sources:
+  - 5steps
+  tier_note: 'Added U9-L5 v2 2026-10-07 (writer fact pass). Maya''s mid-episode wrong beat
+    (''the tribes kept the Plains'') is corrected in-flow with ''Not exactly'' — G12
+    wrong-beat exemption.'
+- id: F-U9-034
+  topic: 'WITHDRAWN 2026-10-07 — alleged Dawes Act 1890 book error does not exist'
+  correct: 'RETRACTED by parent verification 2026-10-07: premium2027 ch8''s timeline actually
+    lists the Dawes Severalty Act under 1887 (correct), not 1890 — confirmed by direct read
+    of 18_Chapter08.xhtml lines ~154-159. The U9-L5 coordinator misread the timeline. The
+    Dawes Act was enacted February 1887 (Britannica — Feb 8, 1887). Never teach any other
+    year, but do not cite premium2027 as erring here.'
+  falsehoods:
+  - Dawes Act.*1890
+  sources:
+  - book: premium2027 ch8 (timeline, verified correct 2026-10-07)
+  - web: Britannica (Feb 8, 1887)
+  tier_note: 'Originally flagged U9-L5 v2 2026-10-07; withdrawn same day by parent after
+    direct book read showed the timeline is correct. Kept as a retraction record.'
+- id: F-U9-035
+  topic: 'Carlisle 1879 — first boarding school; Pratt; ''Kill the Indian, Save the Man'''
+  correct: 'The Carlisle Indian Industrial School (Carlisle, Pennsylvania, 1879), founded by
+    army officer Richard Henry Pratt, was the first of the government off-reservation
+    boarding schools. The program erased Native culture to ''save'' the child — Pratt''s
+    philosophy, ''Kill the Indian, Save the Man'' (his 1892 speech wording: ''Kill the Indian
+    in him, and save the man''). Hair cut, names changed, native languages punished (NPS
+    Teaching with Historic Places; Britannica).'
+  falsehoods:
+  - boarding schools.*preserved Native culture
+  - Carlisle.*opened.*1920
+  sources:
+  - web
+  tier_note: 'Added U9-L5 v2 2026-10-07 (writer fact pass) — Tier 2 NPS + Britannica. Dialogue
+    uses the familiar shortened slogan with the ''boiled down'' disclosure.'
+- id: F-U9-036
+  topic: 'Turner thesis 1893 — AHA, World''s Columbian Exposition; frontier as process'
+  correct: 'Frederick Jackson Turner delivered ''The Significance of the Frontier in American
+    History'' to the American Historical Association at Chicago during the 1893 World''s
+    Columbian Exposition. His argument: the frontier was a PROCESS, not a place — the moving
+    line where settlement met wilderness, the engine of American character: democracy,
+    individualism, self-reliance. He opened by quoting the 1890 census bulletin, calling it
+    ''the closing of a great historic movement'' — his interpretation, not the census''s.'
+  falsehoods:
+  - Turner thesis.*(1900|1910|1920)
+  - Turner.*delivered.*1900
+  sources:
+  - 5steps
+  - prem27
+  - web
+  tier_note: 'Added U9-L5 v2 2026-10-07 (writer fact pass). 1893/Chicago/AHA per Britannica
+    and American YawP (Tier 2); argument per 5steps2024 ch17 + Britannica New Western
+    Historians article.'
+- id: F-U9-037
+  topic: 'New Western Historians — Limerick, Legacy of Conquest 1987; conquest framing'
+  correct: 'The New Western Historians (late 20th c.) challenged Turner''s frontier thesis as
+    ethnocentric: it erased women, Native Americans, Mexicans, and other westerners, and
+    treated the land as empty. Patricia Nelson Limerick''s The Legacy of Conquest (1987) is
+    the flagship: the West was a PLACE of conquest — of people and the environment — not a
+    frontier process, and the story did not end in 1890 (Britannica, New Western Historians).'
+  falsehoods:
+  - Limerick.*defended.*Turner
+  - Legacy of Conquest.*(1977|1997)
+  sources:
+  - web
+  tier_note: 'Added U9-L5 v2 2026-10-07 (writer fact pass) — Tier 2 Britannica. Task-brief
+    explicitly authorizes the Limerick framing.'
+- id: F-U9-038
+  topic: 'WITHDRAWN 2026-10-07 — alleged Chinese Exclusion Act 1883 book error does not exist'
+  correct: 'RETRACTED by parent verification 2026-10-07: premium2027 ch8''s timeline actually
+    lists the Chinese Exclusion Act under 1882 (correct), not 1883 — confirmed by direct
+    read of 18_Chapter08.xhtml lines ~98-103. The U9-L5 coordinator misread the timeline.
+    The Act was signed May 6, 1882 (F-U9-016, confirmed via Britannica and LOC, U9-L3).
+    Do not cite premium2027 as erring here.'
+  falsehoods:
+  - Chinese Exclusion Act.*1883
+  - Exclusion Act.*1883
+  sources:
+  - book: premium2027 ch8 (timeline, verified correct 2026-10-07)
+  tier_note: 'Originally flagged U9-L5 v2 2026-10-07; withdrawn same day by parent after
+    direct book read showed the timeline is correct. Kept as a retraction record.'
