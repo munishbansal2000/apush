@@ -3258,3 +3258,87 @@ facts:
   sources:
   - registry
   tier_note: Corrected U5-L3 v3 2026-10-07 — draft detail failed L3 fail-closed check.
+- id: F-U5-025
+  topic: Dred Scott litigation timeline (NPS Tier 2)
+  correct: 'Filed April 6, 1846 at the St. Louis (Old) Courthouse against Irene Emerson; lost June 1847; won January 12, 1850 (St. Louis Circuit Court, "once free, always free"); reversed 1852 (Missouri Supreme Court); federal court 1854; SCOTUS argued February and reargued December 1856; decided March 6, 1857. "Nearly eleven years of complex and often disappointing litigation." Docket reads "Sandford" — a clerk misspelled John F. A. Sanford.'
+  falsehoods:
+  - scott sued in 1857
+  - dred scott.{0,40}(filed|sued).{0,20}1857
+  sources:
+  - NPS
+  - Britannica
+  tier_note: Corrected U5-L4 v5 2026-10-07 — v1 said the case "bounced through Missouri courts for a decade" without the timeline.
+- id: F-U5-026
+  topic: Dred Scott vote 7-2 and the two dissenters
+  correct: 'Decided March 6, 1857, 7–2. Dissenters: Justice McLean (Ohio) and Justice Benjamin R. Curtis (Massachusetts).'
+  falsehoods:
+  - dred scott.{0,30}unanimous
+  - dred scott.{0,30}6.{0,5}3
+  - dred scott.{0,30}8.{0,5}1
+  sources:
+  - Britannica
+  tier_note: Corrected U5-L4 v5 2026-10-07.
+- id: F-U5-027
+  topic: '"no rights which the white man was bound to respect" — verbatim Taney, attribution caution'
+  correct: 'The phrase "no rights which the white man was bound to respect" is verbatim from Taney''s opinion (primary text). ATTRIBUTION CAUTION: the current Britannica Dred Scott article does NOT carry the phrase — cite the primary opinion, never Britannica, as its carrier.'
+  falsehoods:
+  - no rights.{0,30}white man.{0,30}bound to respect.{0,60}taney.{0,20}paraphrase
+  sources:
+  - primary
+  tier_note: Corrected U5-L4 v5 2026-10-07.
+- id: F-U5-028
+  topic: Curtis dissent — five-states voting claim, resignation, jurisdictional argument
+  correct: 'Curtis dissented with the history argument: free Black men voted in five of the thirteen states at the Founding (NH, MA, NY, NJ, NC — Britannica quotes the dissent). Curtis resigned in 1857 in dispute over the decision (Britannica Kids). The jurisdictional paraphrase "once the Court ruled Scott couldn''t sue, it should have stopped there" is fair to the dissent''s plea-in-abatement argument. NEVER the superlative "only justice ever to resign over a case."'
+  falsehoods:
+  - only.{0,20}justice.{0,30}resign.{0,20}(over|because of).{0,20}case
+  - curtis.{0,30}only.{0,20}resign
+  sources:
+  - Britannica
+  - primary
+  tier_note: Corrected U5-L4 v5 2026-10-07 — v1 taught "the only Supreme Court justice ever to resign over a case."
+- id: F-U5-029
+  topic: Lincoln's June 26, 1857 Springfield speech (CWAL 2:400–407)
+  correct: 'Lincoln answered Taney at Springfield on June 26, 1857. Verified verbatim phrases: "assumed historical facts which were not really true"; free negroes voters in "five of the thirteen States" (NH, MA, NY, NJ, NC); the Declaration was "thought to include all," now set aside "to aid in making the bondage of the negro universal and eternal." Never attribute House Divided content ("ultimate extinction," nationalization warning) to this speech — that is 1858.'
+  falsehoods:
+  - house divided.{0,40}1857
+  - lincoln.{0,40}springfield.{0,20}1857.{0,40}ultimate extinction
+  sources:
+  - primary
+  tier_note: Corrected U5-L4 v5 2026-10-07 — v1 put House Divided content in the June 1857 speech.
+- id: F-U5-030
+  topic: Federal slave code demand after Dred Scott — unverifiable in Tier 1+2
+  correct: '"Southerners demanded a federal slave code actively protecting slavery in the territories" appears in no Tier 1 book, transcript, or Tier 2 source (Britannica/NPS). Cut from U5-L4 v5. Never teach it flat without a Tier-1/2 source.'
+  falsehoods:
+  - (south|southerners).{0,30}demand.{0,20}federal slave code
+  - federal slave code.{0,30}after dred scott
+  sources:
+  - none
+  tier_note: Corrected U5-L4 v5 2026-10-07 — writer's hedge did not cure the sourceless fact.
+- id: F-U5-031
+  topic: Scotts' manumission and Dred Scott's 1858 death — Tier-1/2-silent
+  correct: 'Broad-web only: the Scotts were manumitted May 26, 1857; Dred Scott died of tuberculosis in September 1858, ~16 months free. Neither NPS Dred Scott page covers post-decision events. Teach only with disclosure, and never as "a year and a half" (16 months, not 18).'
+  falsehoods:
+  - dred scott.{0,40}died.{0,20}1858.{0,30}year and a half
+  - scott.{0,30}free for.{0,20}(eighteen|18) months
+  sources:
+  - broad-web-only
+  tier_note: Corrected U5-L4 v5 2026-10-07.
+- id: F-U5-032
+  topic: Sanford was Irene Emerson's brother and agent — not an heir
+  correct: 'John F. A. Sanford was Irene Emerson''s brother, handed control of her late husband''s estate (Britannica/NPS). "Inherited the estate" is imprecise — he was given control, not an heir.'
+  falsehoods:
+  - sanford.{0,20}inherited.{0,20}estate
+  - brother-in-law.{0,20}inherited
+  sources:
+  - NPS
+  - Britannica
+  tier_note: Corrected U5-L4 v5 2026-10-07 — v5''s first draft said "inherited the estate."
+- id: F-U5-033
+  topic: Dred Scott's birth year — NPS conflicts with itself
+  correct: 'NPS says "around 1799" (main Dred Scott page) and "about 1800" (chronology) — the source conflicts with itself. Never pin a year in dialogue; "the 1790s" is the safe ceiling and even that stays out of the script.'
+  falsehoods:
+  - dred scott.{0,20}born.{0,20}1799
+  - dred scott.{0,20}born.{0,20}1800
+  sources:
+  - NPS
+  tier_note: Corrected U5-L4 v5 2026-10-07 — v1 taught "around 1799" flat.
