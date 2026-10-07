@@ -6289,3 +6289,77 @@ facts:
   sources:
   - loc
   tier_note: 'Added U7-L3 v2 2026-10-07 — writer fact pass. Disclosure integrity: quote origin stated in-script.'
+- id: F-U7-012
+  topic: 'Hollywood Ten — prison for contempt of Congress, not espionage'
+  correct: 'The Hollywood Ten (writers/directors who refused to answer HUAC in 1947) received one-year jail sentences for contempt of Congress. They were never charged with espionage. Teach "contempt, not spying" — no spies were caught in Hollywood.'
+  falsehoods:
+  - hollywood ten.{0,30}(espionage|spy|spying).{0,25}(convict|prison|jail|sentenc)
+  - hollywood ten.{0,20}were spies
+  sources:
+  - 5steps
+  - britannica
+  tier_note: 'Added U7-L4 v2 2026-10-07 — writer fact pass.'
+
+- id: F-U7-013
+  topic: 'McCarthy''s list never existed — numbers shifted 205/81/57, no names ever produced'
+  correct: 'At Wheeling (Feb 9, 1950) McCarthy claimed 205 communists in the State Department; the number shifted across tellings (205/81/57) and the Senate found no list, no names, no evidence. Teach the shifting, never a pin — and never that he produced a list.'
+  falsehoods:
+  - mccarthy.{0,30}(produced|revealed|published|had).{0,20}list
+  - 205.{0,20}names.{0,20}(produced|revealed|published)
+  guards:
+  - if you write that
+  sources:
+  - 5steps
+  - premium2027
+  tier_note: 'Added U7-L4 v2 2026-10-07 — writer fact pass.'
+
+- id: F-U7-014
+  topic: 'Venona did NOT vindicate McCarthy'
+  correct: 'The Venona decrypts (released mid-1990s; NSA releases began July 1995) confirmed Soviet espionage was real and wider than admitted — Hiss, the Rosenbergs — but the real spies were handled by the FBI and the courts, NOT by McCarthy, and none of McCarthy''s victims appear in the cables. Confirming the threat is not justifying the hunt. (Corrected U7-L4 v2 2026-10-07: Hiss was convicted Jan 1950 and the Rosenbergs were arrested July/Aug 1950 and convicted March 1951 — NOT "years before" the Feb 1950 Wheeling speech.)'
+  falsehoods:
+  - venona.{0,30}vindicat.{0,15}mccarthy
+  - venona.{0,20}proved.{0,20}mccarthy.{0,10}right
+  sources:
+  - 5steps
+  - congress.gov
+  tier_note: 'Added U7-L4 v2 2026-10-07 — writer fact pass; timing corrected by Layer 3 same day.'
+
+- id: F-U7-015
+  topic: 'The scare''s machinery predated McCarthy — he did not invent the Second Red Scare'
+  correct: 'The Federal Employee Loyalty Program (EO 9835, 1947, Truman), HUAC''s 1947 Hollywood hearings, and the McCarran Internal Security Act (1950) were all running before the Wheeling speech (Feb 1950). McCarthy harvested a scare he did not invent.'
+  falsehoods:
+  - mccarthy.{0,25}(invented|created|started|began).{0,20}(red scare|mccarthyism)
+  sources:
+  - 5steps
+  - premium2027
+  tier_note: 'Added U7-L4 v2 2026-10-07 — writer fact pass.'
+
+- id: F-U7-016
+  topic: 'Welch quote exact wording'
+  correct: '"Have you no sense of decency, sir, at long last? Have you left no sense of decency?" — Joseph Welch to McCarthy, Army–McCarthy hearings, June 1954. The transposed variant ("At long last, have you no sense of decency?") is wrong.'
+  falsehoods:
+  - at long last, have you no sense of decency
+  sources:
+  - britannica
+  tier_note: 'Added U7-L4 v2 2026-10-07 — writer fact pass; wording confirmed by Layer 3 same day.'
+
+- id: F-U7-017
+  topic: 'Lavender Scare = Eisenhower''s EO 10450 (1953), not McCarthy''s program'
+  correct: 'The Lavender Scare purge of gay and lesbian federal workers came via Eisenhower''s Executive Order 10450 (1953), which added "sexual perversion" to federal-employment security criteria; thousands were fired or resigned on the blackmail-vulnerability theory. It extended Truman''s loyalty program — it was not McCarthy''s operation.'
+  falsehoods:
+  - mccarthy.{0,30}lavender scare
+  - lavender scare.{0,30}mccarthy's (order|program)
+  sources:
+  - nps
+  tier_note: 'Added U7-L4 v2 2026-10-07 — confirmed by Layer 3 via NPS same day.'
+
+- id: F-U7-018
+  topic: 'Rosenberg conviction year — 1951, not 1952 (5steps2024 book error)'
+  correct: 'Julius and Ethel Rosenberg were convicted March 29, 1951 and executed June 19, 1953 (Britannica; Columbia Encyclopedia; HISTORY). 5steps2024 ch25 prints "convicted of espionage in 1952" — wrong. Teach 1951.'
+  falsehoods:
+  - rosenberg.{0,30}convicted.{0,15}(in )?1952
+  - rosenbergs.{0,20}(trial|conviction).{0,15}1952
+  sources:
+  - 5steps
+  - britannica
+  tier_note: 'Added U7-L4 v2 2026-10-07 — book error confirmed by coordinator against Britannica/Columbia/HISTORY same day.'

@@ -108,7 +108,8 @@ def registry_hits(spoken, facts):
         r"\b(don't|do not|never)\s+(write|say|claim|argue)\s+that\b"
         r"|\bcommon mistake\b"
         r"|\bclassic mistake\b"
-        r"|\btrap check\b"
+        r"|\btrap (check|answer)\b"
+        r"|\breal error\b"
         r"|\bstudents?\s+(writ\w*|wrote)\b"
         r"|\b(is|that's|that is|you're|you are)\s+wrong\b",
         re.IGNORECASE,
