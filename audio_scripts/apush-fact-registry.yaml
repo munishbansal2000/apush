@@ -2083,7 +2083,7 @@ facts:
     is a grandfathered known hit — locked files are not edited without explicit lock-holder authorization. Flagged to the user 2026-10-06.'
   falsehoods:
   - sworn to secrecy
-  - locked.{0,10}door
+  - locked.{0,10}doors?\b.{0,100}(convention|philadelphia|delegates|1787)|(convention|philadelphia|delegates|1787).{0,100}locked.{0,10}doors?\b
   sources:
   - primary
   tier_note: beyond Tier 1-2 — Britannica checked and absent; pinned to Convention records/Madison's notes
@@ -2818,3 +2818,89 @@ facts:
   sources:
   - premium2027
   - Britannica
+- id: F-U4-064
+  topic: Douglass–Garrison split 1851 over the Constitution
+  correct: 'In 1851 Douglass announced his split from Garrison, declaring the Constitution "a valid legal document that could be used on behalf of emancipation"; Garrison held the Constitution an invalid document and discouraged political participation.'
+  falsehoods:
+  - douglass.{0,30}always.{0,20}garrison
+  - garrison.{0,30}support.{0,20}electoral
+  sources:
+  - britannica
+  - premium2027
+  tier_note: same-day entry from U4-E12 v2 draft, 2026-10-06
+- id: F-U4-065
+  topic: Nat Turner 1831 — toll and aftermath
+  correct: 'Nat Turner''s 1831 rebellion in Southampton County, VA, killed 55 (not ~60); more than 100 African Americans were executed afterward; stricter slave codes followed across the South.'
+  falsehoods:
+  - turner.{0,30}(sixty|60)\b
+  sources:
+  - premium2027
+  - 5steps
+  tier_note: same-day entry from U4-E12 v2 draft, 2026-10-06
+- id: F-U4-066
+  topic: Gag rule 1836–1844 — House, not Senate
+  correct: 'The gag rule (1836–1844) was a House rule automatically tabling antislavery petitions; John Quincy Adams fought it year after year. It was never a Senate rule.'
+  falsehoods:
+  - gag rule.{0,20}1835
+  - senate.{0,20}gag rule
+  sources:
+  - premium2027
+  tier_note: same-day entry from U4-E12 v2 draft, 2026-10-06
+- id: F-U4-067
+  topic: Vesey 1822 — plot questioned
+  correct: 'Denmark Vesey (1822, Charleston): a free Black man tried for plotting a rebellion; Vesey and 35 others were hanged. Some historians (incl. Michael P. Johnson) question whether a real plot existed — teach the questioning, never a certain plot.'
+  falsehoods:
+  - vesey.{0,40}definitely.{0,20}plot
+  sources:
+  - premium2027
+  tier_note: same-day entry from U4-E12 v2 draft, 2026-10-06
+- id: F-U4-068
+  topic: Lovejoy 1837 vs Garrison 1835 mob attacks
+  correct: 'Elijah Lovejoy was killed by a proslavery mob in Alton, Illinois, in 1837 (presses destroyed three times first). Garrison was attacked by a Boston mob in 1835. Never swap the years.'
+  falsehoods:
+  - lovejoy.{0,30}1835
+  sources:
+  - premium2027
+  - 5steps
+  tier_note: same-day entry from U4-E12 v2 draft, 2026-10-06
+- id: F-U4-069
+  topic: Truth "Ain''t I a Woman?" — wording debated
+  correct: 'Sojourner Truth campaigned for emancipation and women''s rights (Tier 1). The famous "Ain''t I a Woman?" wording was written down years later and is debated — quote nothing; teach her role only.'
+  falsehoods:
+  - ain't i a woman.{0,40}exact.{0,20}words
+  sources:
+  - princeton
+  tier_note: same-day entry from U4-E12 v2 draft, 2026-10-06
+- id: F-U4-070
+  topic: Walker death/price-on-head — Tier-1/2-silent
+  correct: 'David Walker''s death (1830) circumstances and any "price on his head" are Tier-1/2-SILENT. Teach only the seditious-pamphlet facts premium2027 verifies (Appeal 1829, "resist by any and every means," distribution penalties).'
+  falsehoods:
+  - walker.{0,30}(found dead|mysterious.{0,20}death)
+  - price on.{0,20}walker.{0,10}head
+  sources:
+  - premium2027
+  tier_note: same-day entry from U4-E12 v2 draft, 2026-10-06
+- id: F-U4-071
+  topic: Liberty Party 1840 / Free Soil 1848
+  correct: 'The Liberty Party ran James Birney in 1844 (62,000 votes). The Free Soil Party ran Martin Van Buren in 1848 ("Free soil, free speech, free labor, and free men").'
+  falsehoods:
+  - free soil.{0,20}1854
+  sources:
+  - 5steps
+  tier_note: same-day entry from U4-E12 v2 draft, 2026-10-06
+- id: F-U4-072
+  topic: Freedom's Journal 1827 + Black national conventions
+  correct: 'Freedom''s Journal (1827) was the first Black-owned and operated newspaper in the U.S. Black national conventions met every year after 1830.'
+  falsehoods: []
+  sources:
+  - maximum-insight-33
+  - princeton
+  tier_note: same-day entry from U4-E12 v2 draft, 2026-10-06
+- id: F-U4-073
+  topic: AASS founded 1833 (not 1831)
+  correct: 'The American Anti-Slavery Society was founded in 1833 by Garrison, Lewis Tappan, and Theodore Weld — not in 1831 (the Liberator''s year).'
+  falsehoods:
+  - american anti-slavery society.{0,20}1831
+  sources:
+  - 5steps
+  tier_note: same-day entry from U4-E12 v2 draft, 2026-10-06
