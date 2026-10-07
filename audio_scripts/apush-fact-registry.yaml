@@ -1841,7 +1841,7 @@ facts:
     topic: 1793 Capitol had no dome
     correct: "The Capitol cornerstone was laid in 1793, but the cast-iron dome dates to the 1850s–60s. Do not describe 'columns and domes' for the 1790s building."
     falsehoods:
-      - "1793.{0,40}domes"
+      - "1793.{0,40}\\bdomes\\b"
     sources: [britannica]
     tier_note: "anachronism correction from U3-E11 Layer 3"
 
@@ -1898,3 +1898,26 @@ facts:
       - "cobb.{0,150}kindled(?!.{0,150}which all the waters)"
     sources: [loc, primary]
     tier_note: "verbatim quote verified via Layer 3, U4-E5 repair; the lookahead intentionally also flags paraphrases of the quote so future drafts quote it verbatim"
+
+  - id: F-U4-007
+    topic: Deere steel plow 1837 (premium2027's 1847 is a book error)
+    correct: "John Deere developed the first commercially successful steel plow in 1837 at Grand Detour, Illinois (self-scouring polished steel for sticky prairie soil). premium2027 Ch.6's '1847' is an error."
+    falsehoods:
+      - "John Deere.{0,60}steel plow.{0,40}1847"
+    sources: [heimler, web]
+    tier_note: "book-error correction from U4-E6 Layer 3; independently confirmed (Heimler Tier 1, Columbia Encyclopedia, Deere company history) per the 2026-10-06 rule"
+
+  - id: F-U4-008
+    topic: B&O 1828 groundbreaking vs 1829 first tracks — two different events
+    correct: "B&O cornerstone laid July 4, 1828 (Charles Carroll, Baltimore); first tracks laid 1829. Both dates are correct and name different events — never collapse to a single date or imply construction finished in either year."
+    falsehoods:
+      - "Baltimore and Ohio.{0,40}(completed|finished) in 182[89]"
+    sources: [nps, prem27]
+    tier_note: "disambiguation from U4-E6 Layer 3"
+
+  - id: F-U4-009
+    topic: "'Second Middle Passage' — attributed label only, never flat"
+    correct: "The domestic/interstate slave trade forcibly moved 1M+ enslaved people from the Upper South to the Deep South, c. 1800–1860 (NPS-confirmed scale). 'Second Middle Passage' is Ira Berlin's term — use only with attribution ('some historians call it'), never as the trade's formal name."
+    falsehoods: []
+    sources: [nps, web]
+    tier_note: "attribution discipline from U4-E6 Layer 3"
