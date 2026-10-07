@@ -25,8 +25,7 @@ Listen through (or script-diff) for mispronunciations, wrong emphasis,
 unnatural pauses. Fix and re-render BEFORE locking timing.
 Re-rendering TTS invalidates everything downstream.
 
-### 3. Build timing.json (measured, never estimated)
-```bash
+### 3. Build timing.json (measured, never estimated)```bash
 python3 stage_timing.py --episode E2 --provider meta
 ```
 - TTS MP3s → Vosk word alignment → measured word times per turn.
@@ -34,6 +33,19 @@ python3 stage_timing.py --episode E2 --provider meta
 - Cached by MP3 hash (skips Vosk if unchanged).
 - This is the law. Every visual cue anchors to a measured word time.
 - No proportional estimates. No guessing.
+
+### 3a. Music timeline (data-driven, swappable)
+```bash
+python3 stage_music.py --episode E3 --music-dir ~/workspace/podcast-music/
+```
+- Reads `timing_map.json` + derived act boundaries → `src/data/<ep>/music_timeline.json`.
+- Events: 8s intro sting at t=0, 3s chapter sting at each act boundary, 8s outro.
+- Plus `bed_loop` (procedural, -20dB) under intro/transitions/outro only — not continuous.
+- Assets: `--music-dir` uses real files; otherwise procedural `audio_brand.py` fallback; `--no-music` skips.
+- **Music is mixed in post-production** (`stage_postmix.py`), NOT baked into Remotion.
+  Changing music = re-run `stage_music.py` + `stage_postmix.py`. No video re-render.
+- Scene planning must be music-aware: TitleCard during intro (0-8s), visual transitions
+  at chapter stings. `validate_scene.py` checks music alignment.
 
 ---
 
@@ -196,6 +208,16 @@ ffmpeg -f concat -safe 0 -i concat_list.txt -c copy full.mp4
 - QA the act boundaries (transitions between acts)
 - Full-timeline skim at low res for final coherence check
 
+### 12a. Music post-mix (swappable, no re-render)
+```bash
+python3 stage_postmix.py --video full.mp4 --episode E3
+# Output: full_final.mp4 (video copied, audio mixed)
+```
+- Reads `music_timeline.json`, mixes stings + bed via ffmpeg `adelay`/`amix`.
+- Video stream copied (no re-encode). Audio: dialogue + music events.
+- **To change music:** swap assets in `--music-dir`, re-run `stage_music.py` + `stage_postmix.py`.
+  ~15 seconds. Zero video re-render.
+
 ### 13. Push rules
 - Commit code after each act passes QA
 - Push: reusable source only (components, validators, stages, docs)
@@ -211,10 +233,12 @@ ffmpeg -f concat -safe 0 -i concat_list.txt -c copy full.mp4
 |-------|--------|---------|
 | TTS | `stage_tts.py` | Render turns with meta/edge/fish (from audio_scripts/) |
 | Timing | `stage_timing.py` | Vosk alignment → timing_map.json |
+| Music | `stage_music.py` | Music timeline + assets (from timing_map.json) |
 | Images | `stage_images.py` | Scan TSX → catalog → download missing |
 | Clips | `stage_clips.py` | LTX AI video clips (VM: placeholder, Windows: real) |
 | Validate | `build_episode.py --validate-only` | All validators |
-| Render | `stage_render.py` | Remotion render per act |
+| Render | `stage_render.py` | Remotion render per act (dialogue only, no music) |
+| Postmix | `stage_postmix.py` | Mix music into rendered video (ffmpeg, no re-render) |
 | Keyframes | `extract_keyframes.py` | Frames at every beat |
 | Full | `build_episode.py` | Orchestrator (validates → renders → keyframes) |
 
