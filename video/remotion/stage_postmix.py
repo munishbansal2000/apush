@@ -130,8 +130,13 @@ def main():
             start_ms = int(event['start_sec'] * 1000)
             duration_ms = int(event['duration_sec'] * 1000)
             
-            # Volume: stings at -6dB (0.5), with fade in/out
-            # Using volume filter with linear fades
+            # Volume by event type:
+            # - stings (intro/chapter/outro): -6dB (0.5 linear), prominent
+            # - bed_loop: -20dB (0.1 linear), very low under dialogue
+            is_bed = event['type'] == 'bed_loop'
+            volume = 0.1 if is_bed else 0.5
+            
+            # Fade in/out at edges
             fade_ms = min(500, duration_ms // 4)
             
             # Trim to duration, apply volume envelope, delay to start time
@@ -140,7 +145,7 @@ def main():
                 f"[{input_idx}:a]"
                 f"atrim=0:{duration_ms/1000:.3f},"
                 f"asetpts=PTS-STARTPTS,"
-                f"volume=0.5:eval=frame,"
+                f"volume={volume}:eval=frame,"
                 f"afade=t=in:st=0:d={fade_ms/1000:.3f},"
                 f"afade=t=out:st={(duration_ms-fade_ms)/1000:.3f}:d={fade_ms/1000:.3f},"
                 f"adelay={start_ms}|{start_ms}"

@@ -125,6 +125,24 @@ def main():
         "duck_dialogue": False,  # Outro plays over fading dialogue
     })
 
+    # Bed: low warm loop under intro, transitions, and outro only
+    # (not continuous — keeps dialogue clean in the middle)
+    # Bed regions: 0-INTRO_DURATION, each chapter sting window, last OUTRO_DURATION
+    bed_regions = [
+        (0.0, INTRO_DURATION),
+        *[(s, CHAPTER_STING_DURATION) for s in act_starts_sec],
+        (total_duration - OUTRO_DURATION, OUTRO_DURATION),
+    ]
+    for i, (bed_start, bed_dur) in enumerate(bed_regions):
+        events.append({
+            "type": "bed_loop",
+            "asset_id": "bed_loop",
+            "start_sec": bed_start,
+            "duration_sec": bed_dur,
+            "volume_db": BED_DUCK_DB,  # -20dB, very low under dialogue
+            "bed_index": i,
+        })
+
     # Prepare asset directory
     asset_dir = Path(f'public/audio/{ep_lower}/music')
     asset_dir.mkdir(parents=True, exist_ok=True)

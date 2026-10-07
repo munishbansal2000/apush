@@ -56,6 +56,66 @@
       "duck_dialogue": false,
       "src": "audio/e5/music/outro_sting.wav",
       "source": "music_dir"
+    },
+    {
+      "type": "bed_loop",
+      "asset_id": "bed_loop",
+      "start_sec": 0.0,
+      "duration_sec": 8.0,
+      "volume_db": -20.0,
+      "bed_index": 0,
+      "src": "audio/e5/music/bed_loop.wav",
+      "source": "procedural"
+    },
+    {
+      "type": "bed_loop",
+      "asset_id": "bed_loop",
+      "start_sec": 148.13333333333333,
+      "duration_sec": 3.0,
+      "volume_db": -20.0,
+      "bed_index": 1,
+      "src": "audio/e5/music/bed_loop.wav",
+      "source": "procedural"
+    },
+    {
+      "type": "bed_loop",
+      "asset_id": "bed_loop",
+      "start_sec": 290.1,
+      "duration_sec": 3.0,
+      "volume_db": -20.0,
+      "bed_index": 2,
+      "src": "audio/e5/music/bed_loop.wav",
+      "source": "procedural"
+    },
+    {
+      "type": "bed_loop",
+      "asset_id": "bed_loop",
+      "start_sec": 437.26666666666665,
+      "duration_sec": 3.0,
+      "volume_db": -20.0,
+      "bed_index": 3,
+      "src": "audio/e5/music/bed_loop.wav",
+      "source": "procedural"
+    },
+    {
+      "type": "bed_loop",
+      "asset_id": "bed_loop",
+      "start_sec": 592.3666666666667,
+      "duration_sec": 3.0,
+      "volume_db": -20.0,
+      "bed_index": 4,
+      "src": "audio/e5/music/bed_loop.wav",
+      "source": "procedural"
+    },
+    {
+      "type": "bed_loop",
+      "asset_id": "bed_loop",
+      "start_sec": 723.7882499999998,
+      "duration_sec": 8.0,
+      "volume_db": -20.0,
+      "bed_index": 5,
+      "src": "audio/e5/music/bed_loop.wav",
+      "source": "procedural"
     }
   ],
   "mix_rules": {
