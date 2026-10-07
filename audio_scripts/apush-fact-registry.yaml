@@ -1618,3 +1618,54 @@ facts:
     falsehoods:
       - "congress.{0,40}kept.{0,30}anti-slavery.{0,20}passage"
     sources: [5steps, web]
+
+  - id: F-U3-032
+    topic: Paine's American Crisis No. 1 read to the troops
+    correct: "Paine's 'The American Crisis. Number I' was published December 19, 1776, when Washington's army was on the verge of disintegration; Washington ordered it read to all his troops. 'These are the times that try men's souls' is verbatim (public domain)."
+    falsehoods: []
+    sources: [britannica]
+
+  - id: F-U3-033
+    topic: Von Steuben's inflated rank
+    correct: "Friedrich von Steuben was introduced to Congress as a 'Lieut. Genl. in the King of Prussia's Service' — he was actually a captain. His rank was, in Britannica's word, fictitious. 'Padded his résumé' is fair in-dialogue gloss, arguably an understatement."
+    falsehoods: []
+    sources: [britannica]
+
+  - id: F-U3-034
+    topic: Bunker Hill — date, hill, casualties
+    correct: "The Battle of Bunker Hill was fought June 17, 1775, on Breed's Hill — the name comes from a British map that mixed up the two hills. Of ~2,400 British engaged, ~1,000 were killed or wounded; the Americans lost the hill when their ammunition waned. Hedge the casualty figure ('roughly a thousand')."
+    falsehoods:
+      - "bunker hill.{0,30}fought on bunker hill"
+    sources: [nps, 5steps]
+
+  - id: F-U3-035
+    topic: Saratoga — Gates, Arnold's wound
+    correct: "At Saratoga, American forces were under Horatio Gates (who had replaced Philip Schuyler). Benedict Arnold led charges at Bemis Heights on October 7, 1777, and was severely wounded in the left leg — three years before his 1780 treason."
+    falsehoods: []
+    sources: [nps]
+
+  - id: F-U3-036
+    topic: Yorktown surrender — escape attempt, sword
+    correct: "At Yorktown, Cornwallis tried to slip his army across the river at night; a violent storm scattered the boats and doomed the attempt. He surrendered October 19, 1781, pleading illness; Brig. Gen. O'Hara offered his sword first to Rochambeau, then to Washington, who directed him to Benjamin Lincoln."
+    falsehoods: []
+    sources: [nps, 5steps]
+
+  - id: F-U3-037
+    topic: Treaty of Paris 1783 — NOT everything east of the Mississippi
+    correct: "The Treaty of Paris (1783) gave the US independence, the Mississippi as the western boundary, and Newfoundland fishing rights — but NOT everything east of the Mississippi: East and West Florida went back to Spain under a separate Anglo-Spanish treaty. An MCQ 'map answer' of 'everything east of the Mississippi' is wrong unless Florida is excepted."
+    falsehoods:
+      - "(?<!almost )everything east of the mississippi"
+    sources: [prem27, 5steps]
+
+  - id: F-U3-038
+    topic: Lafayette's age at Yorktown
+    correct: "Lafayette was born September 6, 1757 — 24 years old at Yorktown (October 1781), where he helped trap Cornwallis."
+    falsehoods: []
+    sources: [britannica]
+
+  - id: F-U3-039
+    topic: Emerson's "shot heard round the world" — 1837, not 1775
+    correct: "Emerson's 'Concord Hymn,' coining 'the shot heard round the world,' debuted at the July 4, 1837 dedication of the 1836 Battle Monument at Concord — 62 years after the battle. It is literature about the battle, never words spoken on Lexington Green. Quote verbatim (public domain); always fence it as 1837."
+    falsehoods:
+      - "shot heard round the world.{0,40}(said|shouted|cried).{0,20}(lexington|battle)"
+    sources: [nps]
