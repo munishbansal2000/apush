@@ -6955,3 +6955,102 @@ facts:
   tier_note: 'Added U7-L10 v2 2026-10-07 (Layer-3 pass). Beyond retrievable Tier-1 books;
     Britannica''s 1972-election coverage confirms Muskie''s 1972 campaign. Taught as hedged
     political analysis, not settled fact.'
+- id: F-U7-062
+  topic: '"third-rate burglary" was press secretary Ron Ziegler''s phrase, not Nixon''s'
+  correct: 'The "third-rate burglary" dismissal of the Watergate break-in came from Nixon''s press
+    secretary Ron Ziegler, not from Nixon himself. Scripts must attribute it to Ziegler.'
+  falsehoods:
+  - third-rate burglary.{0,40}Nixon (himself|own|own phrase|own words)
+  - Nixon.{0,25}called it a .{0,10}third-rate burglary
+  sources:
+  - web
+  tier_note: 'Added U7-L11 v2 2026-10-07 (Layer-3 pass). Corrected in dialogue during the pass;
+    the v2 draft initially had it as Nixon''s own phrase.'
+- id: F-U7-063
+  topic: 'Watergate break-in dating — early-morning June 17, 1972 (book discrepancy disclosed)'
+  correct: 'The five burglars were arrested in the early-morning hours of June 17, 1972 (Frank Wills
+    called police at about 1:47 a.m.; arrests about 2:30 a.m.). 5 Steps dates it to "the evening
+    of June 16, 1972" — the script uses the standard June-17 dating with the discrepancy
+    disclosed in the Sources footer.'
+  falsehoods:
+  - break-in.{0,25}June 16.{0,25}(arrest|morning)
+  sources:
+  - web
+  tier_note: 'Added U7-L11 v2 2026-10-07 (Layer-3 pass).'
+- id: F-U7-064
+  topic: 'Smoking-gun tape June 23, 1972, released August 5, 1974'
+  correct: 'The "smoking gun" tape recorded June 23, 1972 (six days after the break-in) captures
+    Nixon and Haldeman planning to have the CIA block the FBI''s investigation. Released
+    August 5, 1974, it collapsed Nixon''s remaining congressional support.'
+  falsehoods:
+  - smoking.?gun.{0,25}(July|August).{0,10}1972
+  sources:
+  - web
+  - 5steps2024
+  tier_note: 'Added U7-L11 v2 2026-10-07 (Layer-3 pass).'
+- id: F-U7-065
+  topic: 'United States v. Nixon — July 24, 1974, 8-0, Rehnquist recused'
+  correct: 'United States v. Nixon was decided July 24, 1974, 8-0 against Nixon (Burger wrote the
+    opinion). Justice Rehnquist recused himself, having served in Nixon''s Justice Department.
+    Executive privilege does not cover criminal evidence.'
+  falsehoods:
+  - (U\.?S\.? v\.? Nixon|v\. Nixon).{0,25}9-0
+  - Rehnquist.{0,25}(voted|joined).{0,25}Nixon
+  sources:
+  - web
+  tier_note: 'Added U7-L11 v2 2026-10-07 (Layer-3 pass).'
+- id: F-U7-066
+  topic: 'Saturday Night Massacre — October 20, 1973 principals'
+  correct: 'On October 20, 1973 Nixon ordered Attorney General Elliot Richardson to fire special
+    prosecutor Archibald Cox; Richardson refused and resigned, as did Deputy Attorney General
+    William Ruckelshaus; Solicitor General Robert Bork carried out the firing. Leon Jaworski
+    was appointed special prosecutor November 1, 1973.'
+  falsehoods:
+  - (Richardson|Ruckelshaus).{0,25}fired Cox
+  - Saturday Night Massacre.{0,25}(1972|1974)
+  sources:
+  - web
+  - 5steps2024
+  tier_note: 'Added U7-L11 v2 2026-10-07 (Layer-3 pass).'
+- id: F-U7-067
+  topic: 'Ford''s pardon of Nixon — September 8, 1974, Proclamation 4311'
+  correct: 'On September 8, 1974 Gerald Ford issued Proclamation 4311 granting Nixon a "full, free,
+    and absolute pardon" for offenses committed or possibly committed January 20, 1969 through
+    August 9, 1974.'
+  falsehoods:
+  - pardon.{0,25}(August|October).{0,10}1974
+  sources:
+  - web
+  tier_note: 'Added U7-L11 v2 2026-10-07 (Layer-3 pass).'
+- id: F-U7-068
+  topic: 'Agnew resignation — October 10, 1973; first use of 25th Amendment Section 2'
+  correct: 'Vice President Spiro Agnew resigned October 10, 1973, pleading no contest to tax
+    evasion amid bribery allegations from his Maryland governorship. His resignation triggered
+    the first use of the 25th Amendment''s Section 2, and Congress confirmed Gerald Ford
+    as vice president.'
+  falsehoods:
+  - Agnew.{0,25}(fired|impeached)
+  sources:
+  - web
+  - 5steps2024
+  tier_note: 'Added U7-L11 v2 2026-10-07 (Layer-3 pass).'
+- id: F-U7-069
+  topic: 'SALT I signed May 26, 1972, Moscow'
+  correct: 'Nixon and Brezhnev signed the SALT I agreements on May 26, 1972 in Moscow, freezing
+    the number of strategic ballistic-missile launchers at existing levels (with the ABM
+    Treaty alongside).'
+  falsehoods:
+  - SALT.{0,10}I.{0,25}(1971|1973)
+  sources:
+  - web
+  - 5steps2024
+  tier_note: 'Added U7-L11 v2 2026-10-07 (Layer-3 pass).'
+- id: F-U7-070
+  topic: '"-gate" suffix derives from Watergate; popularized by William Safire'
+  correct: 'The "-gate" scandal suffix derives from the Watergate scandal (named for the Watergate
+    complex) and was popularized by Nixon''s former speechwriter William Safire.'
+  falsehoods:
+  - -gate.{0,25}(Nixon coined|Woodward)
+  sources:
+  - web
+  tier_note: 'Added U7-L11 v2 2026-10-07 (Layer-3 pass).'
