@@ -96,6 +96,7 @@ def registry_hits(spoken, facts):
     NEG_FRAME = re.compile(
         r"\b(don't|do not|never)\s+(write|say|claim|argue)\s+that\b"
         r"|\bcommon mistake\b"
+        r"|\bclassic mistake\b"
         r"|\bstudents?\s+write\b",
         re.IGNORECASE,
     )

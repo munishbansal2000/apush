@@ -5347,3 +5347,87 @@ facts:
   - nps
   - 5steps
   tier_note: 'Pinned U6-L3 v2 2026-10-07 — 5steps inconsistency, not asserted as deliberate error.'
+- id: F-U6-014
+  topic: 'Reparations 132B gold marks set by 1921 commission, NOT in the treaty'
+  correct: 'The Treaty of Versailles (Art. 231) created the reparations OBLIGATION and left the figure blank; the Inter-Allied Reparations Commission set 132 billion gold marks in 1921 (U.S. State Dept Office of the Historian; also an initial $5B treaty payment). Teach as a rule: the treaty creates the obligation, the commission names the number. The archived U6-L4 v1 had the substance right; v2 teaches it as the mid-episode wrong beat ("Not quite" frame).'
+  falsehoods:
+  - treaty of versailles.{0,40}set.{0,20}132 billion
+  - versailles.{0,30}132 billion.{0,20}(gold marks|reparations).{0,20}treaty
+  sources:
+  - state.gov
+  - britannica
+  tier_note: 'Taught U6-L4 v2 2026-10-07 — v1''s "set in 1921" upgraded with State Dept Office of the Historian sourcing.'
+
+- id: F-U6-015
+  topic: '"Wilson had the votes for a compromised treaty" — interpretive, hedge/attribute'
+  correct: 'Lodge said he would deliver ratification with his reservations attached, and some European leaders preferred the treaty with reservations to no treaty (5steps2024 ch21) — the deal was real. But "Wilson had the votes" is historians'' interpretation, not fact. Teach hedged/attributed: "whether he could have closed it, historians argue about that, and plenty of them say yes." Never teach flat, and never call Lodge''s reservations "face-saving language" (archived U6-L4 v1 did both).'
+  falsehoods:
+  - wilson had the votes.{0,40}compromised treaty
+  sources:
+  - 5steps
+  tier_note: 'Corrected U6-L4 v2 2026-10-07 — archived v1 taught the interpretive claim flat.'
+
+- id: F-U6-016
+  topic: 'Wilson 1919 tour/stroke: 39 speeches in 3 weeks, breakdown Sept 25, stroke Oct 2'
+  correct: 'Britannica (Woodrow Wilson biography): September 1919 cross-country tour, 39 speeches in three weeks; breakdown September 25; massive stroke October 2, 1919 (partial paralysis, partial blindness, impaired judgment); Edith Wilson controlled access; he never fully functioned as president again. Do NOT teach the archived U6-L4 v1 figure "twenty-nine cities in twenty-two days" (uncited). Pueblo, Colorado is where the collapse happened per CPR/JNS but is NOT in the Tier-1/2 sources consulted — v2 omits the city name.'
+  falsehoods:
+  - twenty-nine cities.{0,20}twenty-two days
+  - 29 cities.{0,20}22 days
+  sources:
+  - britannica
+  tier_note: 'Corrected U6-L4 v2 2026-10-07 — v1''s tour figure replaced with Britannica''s.'
+
+- id: F-U6-017
+  topic: 'Senate votes Nov 19, 1919 and Mar 19, 1920 — both failed two-thirds'
+  correct: 'The Treaty of Versailles failed twice: November 19, 1919 and March 19, 1920, neither reaching two-thirds (Britannica). The first vote failed WITH Lodge''s reservations and WITHOUT them, because Wilson ordered loyal Democrats to vote no on the reservations version (5steps2024 ch21). The U.S. never joined the League; Congress made a separate peace with Germany under Harding in 1921.'
+  falsehoods:
+  - senate.{0,30}ratified.{0,20}versailles
+  - versailles.{0,30}ratified by the senate
+  sources:
+  - britannica
+  - 5steps
+  tier_note: 'Pinned U6-L4 v2 2026-10-07 — archived v1 gave no dates.'
+
+- id: F-U6-018
+  topic: 'Lodge reservationists vs irreconcilables — never conflate'
+  correct: 'Two distinct camps: Lodge''s RESERVATIONISTS would ratify the treaty WITH legal conditions (protect the Monroe Doctrine; only Congress authorizes U.S. military action for the League — 5steps2024 ch21), focused on Article 10''s war-power problem (Britannica). The IRRECONCILABLES (~12 senators, led by Borah of Idaho) opposed the League in ANY form; no reservations could fix it. Teach as "edits versus dead."'
+  falsehoods:
+  - lodge.{0,30}irreconcilable
+  - irreconcilables.{0,30}reservationist
+  - lodge led the irreconcilables
+  sources:
+  - 5steps
+  - prem27
+  - britannica
+  tier_note: 'Pinned U6-L4 v2 2026-10-07.'
+
+- id: F-U6-019
+  topic: 'League failure was structural, not just America''s absence'
+  correct: 'America''s absence hurt, but the League''s deeper problem was structural (Britannica): no army, no real enforcement, and a unanimity rule giving every member an effective veto. Japan withdrew 1933 (after invading Manchuria 1931); Italy withdrew 1937; Oct 1935 Abyssinia sanctions excluded oil/iron/steel and were lifted within a year; nothing done when Germany re-entered the Rhineland in 1936. The other side: the League settled small disputes, and its powers passed to the UN on disbandment (Apr 19, 1946) — "the first draft of the United Nations." Never teach "the League failed only because America stayed out."'
+  falsehoods:
+  - league.{0,30}failed (only|solely|just) because.{0,30}america
+  - league of nations.{0,30}failed.{0,40}united states.{0,20}(stayed out|never joined).{0,30}(sole|only)
+  sources:
+  - britannica
+  - prem27
+  tier_note: 'Taught U6-L4 v2 2026-10-07 as the both-sided verdict (box 4).'
+
+- id: F-U6-020
+  topic: 'Fourteen Points = Jan 8, 1918 war aims, not the treaty; covenant = treaty Part I'
+  correct: 'The Fourteen Points were Wilson''s January 8, 1918 address to Congress laying out U.S. war aims (open diplomacy, free seas, free trade, disarmament, colonial fairness, self-determination; point 14 = the League) — accepted by the Allies as their war aims (Britannica; 5steps2024 ch21). They are NOT the treaty: teach "don''t mush the plan and the punishment together" (Points Jan 1918 vs Versailles June 1919). The League covenant was embodied in the Versailles treaty itself — literally part one (Britannica). League established Jan 10, 1920; disbanded Apr 19, 1946.'
+  falsehoods:
+  - fourteen points.{0,30}(became|were|turned into).{0,20}(the treaty|versailles)
+  sources:
+  - britannica
+  - 5steps
+  tier_note: 'Pinned U6-L4 v2 2026-10-07 — archived v1 called the Points "his peace plan."'
+
+- id: F-U6-021
+  topic: 'Anschluss date — Austria annexed March 1938, not 1937'
+  correct: 'Germany annexed Austria in the Anschluss of March 1938 (troops entered March 12, Anschluss proclaimed March 13). Verified against Britannica.'
+  falsehoods:
+  - annexed austria in 1937
+  - anschluss in 1937
+  sources:
+  - prem27
+  - britannica
