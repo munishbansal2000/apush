@@ -1669,3 +1669,29 @@ facts:
     falsehoods:
       - "shot heard round the world.{0,40}(said|shouted|cried).{0,20}(lexington|battle)"
     sources: [nps]
+
+  - id: F-U3-040
+    topic: Convention's May 29, 1787 secrecy rule
+    correct: "On May 29, 1787, the Convention adopted a secrecy rule: 'That nothing spoken in the House be printed, or otherwise published or communicated without leave' (Convention records/Madison's notes). Britannica's Constitutional Convention article does NOT carry this rule — verified absent 2026-10-06. Tier: standard account, primary-source (Convention records/Madison's notes), beyond Tier 1–2. Teach lightly as 'meeting behind closed doors,' never as a pinned oath-of-secrecy detail; never 'sworn to secrecy.'"
+    falsehoods:
+      - "sworn to secrecy"
+      - "locked.{0,10}door"
+    sources: [primary]
+    tier_note: "beyond Tier 1-2 — Britannica checked and absent; pinned to Convention records/Madison's notes"
+
+  - id: F-U3-041
+    topic: The Constitution never uses the word "slavery"; enslaved people called "other persons"
+    correct: "The word 'slavery' is not used once in the entire Constitution; enslaved people are referred to as 'other persons' (premium2027 ch5, verbatim: \"the word 'slavery' is not used once in the entire document. Slaves are referred to as 'other persons'\"). Teach via the three euphemistic protections: three-fifths clause (Art. I s.2), fugitive slave clause (Art. IV s.2), slave-trade clause barring congressional action before 1808 (Art. I s.9) (F-RAT-009)."
+    falsehoods:
+      - "word.{0,15}slavery.{0,15}(appears|is used).{0,20}constitution"
+      - "constitution.{0,25}uses.{0,15}the word slavery"
+    sources: [prem27]
+
+  - id: F-U3-042
+    topic: First House apportionment totaled 65 representatives
+    correct: "The first House apportionment in Art. I s.2 cl. 3 named 65 representatives: NH 3, MA 8, RI 1, CT 5, NY 6, NJ 4, PA 8, DE 1, MD 6, VA 10, NC 5, SC 5, GA 3 (sums to 65). Constitution text, primary-source verified 2026-10-06; beyond Tier 1–2 (Britannica does not carry the count). Teach '65' flat; do NOT pair it with a pinned population figure — Brutus's 'for millions of people' phrasing is the safe form, never 'for three million people.'"
+    falsehoods:
+      - "sixty-?five representatives for three million"
+      - "65.{0,20}representatives.{0,20}three million"
+    sources: [primary]
+    tier_note: "beyond Tier 1-2 — verified against the Constitution text itself"
