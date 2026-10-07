@@ -33,11 +33,12 @@ interface SmartTextProps {
 }
 
 // Base font sizes per level (at 1280x720)
+// Bumped 2026-10-06: keyframe review showed text unreadable at 480x270
 const BASE_SIZES: Record<TextLevel, number> = {
-  hero: 64,
-  title: 48,
-  subtitle: 32,
-  body: 24,
+  hero: 88,
+  title: 68,
+  subtitle: 46,
+  body: 34,
 };
 
 // Priority per level

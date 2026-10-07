@@ -78,7 +78,8 @@ for m in re.finditer(
 # Components that are "visuals" (not just talking heads)
 VISUAL_COMPONENTS = {
     'MotiveBlocks', 'ThreeBoxesE2', 'LeaderSticker', 'TitleCard',
-    'SpeechBubble', 'GravityText', 'SmartText',
+    'SpeechBubble', 'GravityText', 'SmartText', 'ThreeWayCompare',
+    'MapRoute', 'ExchangeArrows',
 }
 
 # Leaders (persistent across turn ranges)

@@ -74,8 +74,7 @@ const SUB_BEATS: SubBeat[] = [
   // t01: gold, god, glory trio — three-block scene (fills as words are spoken)
   // (individual GOLD/GOD/GLORY popups replaced by MotiveBlocks below)
 
-  // t02: her question echoes the trio
-  { turnId: 't02', offset: 0, kind: 'smarttext', text: 'GOD + GLORY?', level: 'subtitle', position: [0.5, 0.2] },
+  // t02: her question echoes the trio — blocks show ? badges, no redundant text
 
   // t03: reconquista
   { turnId: 't03', offset: 0.99, kind: 'smarttext', text: 'RECONQUISTA', level: 'title', position: [0.5, 0.15], entrance: 'stamp' },
@@ -101,11 +100,8 @@ const SUB_BEATS: SubBeat[] = [
   { turnId: 't08', offset: 0, kind: 'bubble', text: 'The guy who never sailed anywhere', position: [0.5, 0.25], width: 420 },
   { turnId: 't08', offset: 0, kind: 'bg-swap', bgImage: 'historic/u1e2/henry-navigator.jpg' },
 
-  // t09: navigation tools trio
-  { turnId: 't09', offset: 5.37, kind: 'smarttext', text: 'CARAVEL', level: 'title', position: [0.3, 0.2], entrance: 'stamp' },
-  { turnId: 't09', offset: 5.37, kind: 'bg-swap', bgImage: 'historic/u1e2/astrolabe.jpg' },
-  { turnId: 't09', offset: 6.69, kind: 'smarttext', text: 'LATEEN SAIL', level: 'title', position: [0.5, 0.2], entrance: 'stamp' },
-  { turnId: 't09', offset: 8.0, kind: 'smarttext', text: 'ASTROLABE', level: 'title', position: [0.7, 0.2], entrance: 'stamp' },
+  // t09: navigation tools — 3-way compare (caravel @5.37, astrolabe @9.36, compass @12.09)
+  // (replaces flat CARAVEL/LATEEN/ASTROLABE text — lateen is part of caravel, compass was missing)
 
   // t10: ferry joke
   { turnId: 't10', offset: 0, kind: 'bubble', text: 'Compass and a prayer 🧭🙏', position: [0.5, 0.25], width: 400 },
@@ -117,7 +113,6 @@ const SUB_BEATS: SubBeat[] = [
   { turnId: 't11', offset: 4.0, kind: 'smarttext', text: 'GRANADA FALLS → CROWN HAS CASH', level: 'subtitle', position: [0.5, 0.35] },
 
   // t12: columbus enters (leader via component)
-  { turnId: 't12', offset: 0, kind: 'leader', leader: 'unit1_columbus_confident.webp', leaderName: 'Columbus', position: [0.28, 0.52] },
 
   // t13: wrong about asia
   { turnId: 't13', offset: 2.1, kind: 'smarttext', text: 'WRONG ABOUT ASIA', level: 'title', position: [0.5, 0.15], color: '#ff6b6b', entrance: 'stamp' },
@@ -161,20 +156,15 @@ const SUB_BEATS: SubBeat[] = [
   { turnId: 't23', offset: 9.81, kind: 'smarttext', text: 'THE COLUMBIAN EXCHANGE', level: 'hero', position: [0.5, 0.15], entrance: 'stamp' },
   { turnId: 't23', offset: 9.81, kind: 'bg-swap', bgImage: 'historic/u1e2/fuchs-maize-1542.jpg' },
 
-  // t24: preview both directions
-  { turnId: 't24', offset: 0, kind: 'smarttext', text: '🥔 → EAST  🐴 → WEST', level: 'title', position: [0.5, 0.2], entrance: 'stamp' },
+  // t24: preview both directions — big, high-contrast, horizontal layout
 
-  // t25: potatoes east
-  { turnId: 't25', offset: 0.78, kind: 'smarttext', text: '🥔 POTATOES → EAST', level: 'title', position: [0.5, 0.2], entrance: 'stamp' },
-  { turnId: 't25', offset: 0.78, kind: 'bg-swap', bgImage: 'historic/u1e2/potatoes.jpg' },
+  // t25: potatoes east — ExchangeArrows with east highlight (no redundant text)
 
   // t26: groceries joke
   { turnId: 't26', offset: 0, kind: 'bubble', text: 'A lot of groceries 🛒🌊', position: [0.5, 0.25], width: 380 },
   { turnId: 't26', offset: 0, kind: 'bg-swap', bgImage: 'historic/u1e2/sugarcane-harvest.jpg' },
 
-  // t27: horses west
-  { turnId: 't27', offset: 1.53, kind: 'smarttext', text: '🐴 HORSES → WEST', level: 'title', position: [0.5, 0.2], entrance: 'stamp' },
-  { turnId: 't27', offset: 1.53, kind: 'bg-swap', bgImage: 'historic/u1e2/comanche-horses.jpg' },
+  // t27: horses west — ExchangeArrows with west highlight (no redundant text)
 
   // t28: personality lie joke
   { turnId: 't28', offset: 0, kind: 'bubble', text: 'My whole personality is a lie', position: [0.5, 0.25], width: 380 },
@@ -199,7 +189,6 @@ const SUB_BEATS: SubBeat[] = [
   { turnId: 't33', offset: 1.05, kind: 'smarttext', text: 'SYPHILIS? — DEBATED', level: 'subtitle', position: [0.5, 0.2] },
 
   // t35: cortes enters
-  { turnId: 't35', offset: 3.84, kind: 'leader', leader: 'unit1_cortes.webp', leaderName: 'Cortés', position: [0.28, 0.52] },
   { turnId: 't35', offset: 3.84, kind: 'bg-swap', bgImage: 'historic/u1e2/lienzo-tlaxcala.jpg' },
 
   // t36: few hundred vs empire
@@ -222,7 +211,6 @@ const SUB_BEATS: SubBeat[] = [
   { turnId: 't40', offset: 0, kind: 'bubble', text: 'Supposed to. 🙄', position: [0.5, 0.3], width: 280 },
 
   // t41: las casas speaks up
-  { turnId: 't41', offset: 7.92, kind: 'leader', leader: 'unit1_las_casas.webp', leaderName: 'Las Casas', position: [0.28, 0.52] },
   { turnId: 't41', offset: 7.92, kind: 'bubble', text: 'One of them spoke up', position: [0.65, 0.25], width: 320 },
 
   // t42: did it work?
@@ -329,24 +317,58 @@ const MotiveBlocks: React.FC<{
         const showDetail = elapsed >= detailAt;
         const isQuestion = questionIds.includes(box.id);
         const isDimmed = dimIds.includes(box.id);
-        // Pulsing scale for questioned blocks (Maya's "what about...?")
-        const pulse = isQuestion ? 1 + 0.04 * Math.sin(elapsed * 6) : 1;
-        const scale = (isActive
-          ? interpolate(Math.min(1, (elapsed - appearAt) / 0.4), [0, 1], [0.7, 1], { extrapolateRight: 'clamp' })
-          : 0.9) * pulse;
-        const opacity = isDimmed ? 0.35 : isActive
-          ? interpolate(Math.min(1, (elapsed - appearAt) / 0.3), [0, 1], [0, 1])
-          : 0.4;
+        // STAMP entrance: slams in from above with impact
+        const stampProgress = isActive
+          ? Math.min(1, (elapsed - appearAt) / 0.35)
+          : 0;
+        // Overshoot: scale 1.3 -> 0.95 -> 1.0 (stamp thud)
+        const stampScale = stampProgress === 0 ? 0.5 :
+          stampProgress < 0.6 ? 1.3 - (stampProgress / 0.6) * 0.35 :
+          0.95 + ((stampProgress - 0.6) / 0.4) * 0.05;
+        // Shockwave ring expanding on stamp
+        const shockwave = stampProgress > 0 && stampProgress < 1
+          ? (stampProgress * 120)
+          : 0;
+        const shockOpacity = stampProgress > 0 && stampProgress < 1
+          ? 1 - stampProgress
+          : 0;
+        // Pulsing glow for questioned blocks
+        const pulse = isQuestion ? 1 + 0.05 * Math.sin(elapsed * 7) : 1;
+        // Golden glow when just stamped (first 1s)
+        const glowAge = isActive ? (elapsed - appearAt) : 999;
+        const glow = glowAge < 1.2 ? (1 - glowAge / 1.2) : 0;
+        const scale = stampScale * pulse;
+        const opacity = isDimmed ? 0.3 : isActive ? 1 : 0;
+        if (!isActive && opacity === 0) return null;
         return (
-          <div key={box.id} style={{
-            width: 280,
-            background: isActive ? 'rgba(20,16,12,0.92)' : 'rgba(20,16,12,0.45)',
-            border: `3px solid ${isQuestion ? '#fff' : isActive ? box.color : '#555'}`,
-            borderRadius: 12,
-            overflow: 'hidden',
-            transform: `scale(${scale})`,
-            opacity,
-          }}>
+          <div key={box.id} style={{ position: 'relative' }}>
+            {/* Shockwave ring */}
+            {shockOpacity > 0 && (
+              <div style={{
+                position: 'absolute',
+                left: '50%', top: '40%',
+                width: shockwave, height: shockwave,
+                transform: 'translate(-50%, -50%)',
+                border: `4px solid ${box.color}`,
+                borderRadius: '50%',
+                opacity: shockOpacity,
+                pointerEvents: 'none',
+              }} />
+            )}
+            <div style={{
+              width: 280,
+              background: isActive ? 'rgba(20,16,12,0.95)' : 'rgba(20,16,12,0.45)',
+              border: `3px solid ${isQuestion ? '#fff' : box.color}`,
+              borderRadius: 12,
+              overflow: 'hidden',
+              transform: `scale(${scale})`,
+              opacity,
+              boxShadow: glow > 0
+                ? `0 0 ${40 * glow}px ${box.color}, 0 8px 24px rgba(0,0,0,0.6)`
+                : isQuestion
+                  ? `0 0 20px rgba(255,255,255,0.4)`
+                  : '0 8px 24px rgba(0,0,0,0.6)',
+            }}>
             <div style={{ height: 150, overflow: 'hidden', position: 'relative' }}>
               {isActive ? (
                 <Img src={staticFile(box.image)}
@@ -373,7 +395,7 @@ const MotiveBlocks: React.FC<{
               textAlign: 'center',
               fontFamily: 'Georgia, serif',
               fontWeight: 800,
-              fontSize: 28,
+              fontSize: 36,
               color: isActive ? box.color : '#666',
               letterSpacing: 2,
             }}>
@@ -385,13 +407,14 @@ const MotiveBlocks: React.FC<{
                 textAlign: 'center',
                 fontFamily: 'Arial, sans-serif',
                 fontWeight: 700,
-                fontSize: 16,
+                fontSize: 22,
                 color: '#f5e6c8',
                 letterSpacing: 1,
               }}>
                 {box.detail}
               </div>
             )}
+            </div>
           </div>
         );
       })}
@@ -460,15 +483,365 @@ const ThreeBoxesE2: React.FC<{
 };
 
 /* ------------------------------------------------------------------ */
+/* Three-way compare: for "3 things" beats — image + title + desc per column */
+/* Ported from slideforge CompareSlide (2-col) extended to 3 columns.        */
+/* ------------------------------------------------------------------ */
+const COMPARE_ITEMS_T09 = [
+  { id: 'caravel', title: 'CARAVEL', desc: 'Light & fast, lateen sails claw the wind',
+    image: 'historic/u1e2/caravel-replicas.jpg' },
+  { id: 'astrolabe', title: 'ASTROLABE', desc: 'Find latitude from the stars',
+    image: 'historic/u1e2/astrolabe.jpg' },
+  { id: 'compass', title: 'COMPASS', desc: 'Hold a course across open ocean',
+    image: 'historic/u1e2/portolan-chart.jpg' },
+];
+
+const ThreeWayCompare: React.FC<{
+  at: number;
+  items: typeof COMPARE_ITEMS_T09;
+  appearOffsets: number[];
+  position?: [number, number];
+}> = ({ at, items, appearOffsets, position = [0.5, 0.45] }) => {
+  const frame = useCurrentFrame();
+  if (frame < at) return null;
+  const elapsed = (frame - at) / FPS;
+
+  return (
+    <div style={{
+      position: 'absolute',
+      left: `${position[0] * 100}%`,
+      top: `${position[1] * 100}%`,
+      transform: 'translate(-50%, -50%)',
+      display: 'flex',
+      gap: 20,
+      zIndex: 20,
+    }}>
+      {items.map((item, i) => {
+        const appearAt = appearOffsets[i] ?? 0;
+        if (elapsed < appearAt) return null;
+        const progress = Math.min(1, (elapsed - appearAt) / 0.5);
+        const scale = interpolate(progress, [0, 1], [0.6, 1], { extrapolateRight: 'clamp' });
+        const opacity = interpolate(progress, [0, 1], [0, 1]);
+        return (
+          <div key={item.id} style={{
+            width: 300,
+            background: 'rgba(20,16,12,0.92)',
+            border: '3px solid #c9a227',
+            borderRadius: 12,
+            overflow: 'hidden',
+            transform: `scale(${scale})`,
+            opacity,
+          }}>
+            <div style={{ height: 170, overflow: 'hidden' }}>
+              <Img src={staticFile(item.image)}
+                style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            </div>
+            <div style={{
+              padding: '12px 10px 4px',
+              textAlign: 'center',
+              fontFamily: 'Georgia, serif',
+              fontWeight: 800,
+              fontSize: 32,
+              color: '#ffd700',
+              letterSpacing: 2,
+            }}>
+              {item.title}
+            </div>
+            <div style={{
+              padding: '0 10px 14px',
+              textAlign: 'center',
+              fontFamily: 'Arial, sans-serif',
+              fontSize: 20,
+              color: '#f5e6c8',
+              lineHeight: 1.4,
+            }}>
+              {item.desc}
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+};
+
+/* ------------------------------------------------------------------ */
+/* MapRoute: animated SVG route/line over a map image.                  */
+/* For Columbus voyage, Tordesillas line, etc.                         */
+/* ------------------------------------------------------------------ */
+const MapRoute: React.FC<{
+  at: number;
+  mapImage: string;
+  // SVG path data (in 0-1000 coordinate space)
+  path: string;
+  // Duration of the draw animation in seconds
+  drawDuration?: number;
+  // Optional markers: [{x, y, label}] in 0-1000 space
+  markers?: { x: number; y: number; label: string }[];
+  color?: string;
+  // For Tordesillas-style: tint the two sides after line completes
+  tintSides?: { leftColor: string; rightColor: string; lineX: number };
+  // Papal seal stamp at top when line starts
+  papalSeal?: boolean;
+}> = ({ at, mapImage, path, drawDuration = 2, markers = [], color = '#ff4444',
+        tintSides, papalSeal = false }) => {
+  const frame = useCurrentFrame();
+  if (frame < at) return null;
+  const elapsed = (frame - at) / FPS;
+
+  // Animate stroke-dashoffset for draw effect
+  const progress = Math.min(1, elapsed / drawDuration);
+  const eased = 1 - Math.pow(1 - progress, 3); // ease-out cubic
+
+  // Side tints fade in after line completes
+  const tintProgress = tintSides
+    ? Math.min(1, Math.max(0, (elapsed - drawDuration) / 1.5))
+    : 0;
+
+  // Papal seal stamps in at start
+  const sealProgress = papalSeal ? Math.min(1, elapsed / 0.4) : 0;
+  const sealScale = sealProgress < 0.7
+    ? 1.4 - (sealProgress / 0.7) * 0.45
+    : 0.95 + ((sealProgress - 0.7) / 0.3) * 0.05;
+
+  return (
+    <div style={{
+      position: 'absolute', inset: 0, zIndex: 10,
+      display: 'flex', alignItems: 'center', justifyContent: 'center',
+    }}>
+      <div style={{ position: 'relative', width: '90%', height: '90%' }}>
+        <Img src={staticFile(mapImage)}
+          style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+        {/* Side tints for divided world */}
+        {tintSides && tintProgress > 0 && (
+          <svg viewBox="0 0 1000 1000" preserveAspectRatio="none"
+            style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }}>
+            <rect x="0" y="0" width={tintSides.lineX} height="1000"
+              fill={tintSides.leftColor} opacity={0.25 * tintProgress} />
+            <rect x={tintSides.lineX} y="0" width={1000 - tintSides.lineX} height="1000"
+              fill={tintSides.rightColor} opacity={0.25 * tintProgress} />
+          </svg>
+        )}
+        {/* Papal seal */}
+        {papalSeal && sealProgress > 0 && (
+          <div style={{
+            position: 'absolute',
+            left: '62%', top: '2%',
+            transform: `translate(-50%, -50%) scale(${sealScale})`,
+            opacity: sealProgress,
+            zIndex: 15,
+          }}>
+            <div style={{
+              width: 90, height: 90, borderRadius: '50%',
+              background: 'radial-gradient(circle, #ffd700 30%, #b8860b 70%)',
+              border: '4px solid #8b0000',
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              fontSize: 36, fontWeight: 900, color: '#8b0000',
+              boxShadow: '0 4px 16px rgba(0,0,0,0.5)',
+            }}>
+              ✠
+            </div>
+          </div>
+        )}
+        <svg viewBox="0 0 1000 1000" preserveAspectRatio="none"
+          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }}>
+          <path d={path} fill="none" stroke={color} strokeWidth="8"
+            strokeLinecap="round"
+            strokeDasharray="2000"
+            strokeDashoffset={2000 * (1 - eased)}
+            style={{ filter: 'drop-shadow(0 0 6px rgba(0,0,0,0.8))' }} />
+          {markers.map((m, i) => {
+            const showAt = (i + 1) * (drawDuration / (markers.length + 1));
+            if (elapsed < showAt) return null;
+            return (
+              <g key={i}>
+                <circle cx={m.x} cy={m.y} r="14" fill={color}
+                  stroke="#fff" strokeWidth="3" />
+                <text x={m.x} y={m.y - 24} textAnchor="middle"
+                  fill="#fff" fontSize="28" fontWeight="bold"
+                  style={{ textShadow: '2px 2px 4px #000' }}>
+                  {m.label}
+                </text>
+              </g>
+            );
+          })}
+        </svg>
+      </div>
+    </div>
+  );
+};
+
+/* ------------------------------------------------------------------ */
+/* ExchangeArrows: two-way Columbian Exchange flow visualization.       */
+/* Americas ↔ Europe with labeled arrows.                              */
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+/* ExchangeArrows: THE GREAT GROCERY RUN — items fly across a real map.*/
+/* Potatoes do flips east, horses gallop west, disease oozes. Funny.   */
+/* ------------------------------------------------------------------ */
+const FLYING_ITEMS = [
+  // Eastbound (Americas -> Europe): the groceries
+  { emoji: '🥔', label: 'potato', dir: 'east' as const, delay: 0, yOff: -80, spin: 360, bounce: 0 },
+  { emoji: '🌽', label: 'maize', dir: 'east' as const, delay: 0.7, yOff: -20, spin: 720, bounce: 0 },
+  { emoji: '🍅', label: 'tomato', dir: 'east' as const, delay: 1.4, yOff: 40, spin: 180, bounce: 30 },
+  // Westbound (Europe -> Americas): the livestock + disease
+  { emoji: '🐴', label: 'horse', dir: 'west' as const, delay: 0.4, yOff: -60, spin: 0, bounce: 40 },
+  { emoji: '🌾', label: 'wheat', dir: 'west' as const, delay: 1.1, yOff: 0, spin: 180, bounce: 10 },
+  { emoji: '☠️', label: 'disease', dir: 'west' as const, delay: 1.8, yOff: 60, spin: 0, bounce: 15 },
+];
+
+const ExchangeArrows: React.FC<{
+  at: number;
+  position?: [number, number];
+  highlight?: 'east' | 'west' | 'both';
+}> = ({ at, position = [0.5, 0.4], highlight = 'both' }) => {
+  const frame = useCurrentFrame();
+  if (frame < at) return null;
+  const elapsed = (frame - at) / FPS;
+
+  // Map coordinates (0-1000 space): Americas left, Europe right
+  const AMERICAS_X = 180;
+  const EUROPE_X = 820;
+  const MAP_Y = 500;
+
+  const eastItems = FLYING_ITEMS.filter(i => i.dir === 'east');
+  const westItems = FLYING_ITEMS.filter(i => i.dir === 'west');
+  const showEast = highlight !== 'west';
+  const showWest = highlight !== 'east';
+
+  const renderItem = (item: typeof FLYING_ITEMS[0], idx: number) => {
+    const start = item.delay;
+    const duration = 2.5;
+    const t = Math.min(1, Math.max(0, (elapsed - start) / duration));
+    if (t <= 0) return null;
+
+    // Eased progress
+    const eased = t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+
+    // X: left->right for east, right->left for west
+    const x = item.dir === 'east'
+      ? AMERICAS_X + (EUROPE_X - AMERICAS_X) * eased
+      : EUROPE_X - (EUROPE_X - AMERICAS_X) * eased;
+
+    // Y: arc (up in middle) + offset + bounce
+    const arcHeight = 120;
+    const arc = Math.sin(eased * Math.PI) * arcHeight;
+    const bounce = item.bounce > 0
+      ? Math.abs(Math.sin(eased * Math.PI * 6)) * item.bounce * (1 - eased * 0.5)
+      : 0;
+    const y = MAP_Y + item.yOff - arc - bounce;
+
+    // Rotation: spin for fun items
+    const rotation = (item.spin * eased) + (item.dir === 'west' && item.emoji === '🐴' ? Math.sin(eased * 20) * 10 : 0);
+
+    // Scale: pop in, then slight squash on landing
+    const popIn = Math.min(1, t / 0.15);
+    const scale = popIn * (t > 0.9 ? 1 - (t - 0.9) * 2 * 0.2 : 1);
+
+    // Trail opacity
+    const trailOp = t < 1 ? 0.3 : 0;
+
+    // Disease gets a sickly glow
+    const isDisease = item.emoji === '☠️';
+
+    return (
+      <g key={`${item.label}-${idx}`}>
+        {/* Motion trail */}
+        {t < 1 && t > 0.1 && (
+          <circle cx={x - (item.dir === 'east' ? 30 : -30)} cy={y}
+            r="18" fill={isDisease ? '#00ff00' : '#ffffff'}
+            opacity={trailOp * (1 - t)} />
+        )}
+        <text x={x} y={y}
+          textAnchor="middle" dominantBaseline="central"
+          fontSize="56"
+          transform={`rotate(${rotation} ${x} ${y}) scale(${scale})`}
+          opacity={Math.min(1, t * 3)}
+          style={isDisease ? { filter: 'drop-shadow(0 0 12px #00ff00)' } : {}}>
+          {item.emoji}
+        </text>
+      </g>
+    );
+  };
+
+  return (
+    <div style={{
+      position: 'absolute', inset: 0, zIndex: 10,
+      display: 'flex', alignItems: 'center', justifyContent: 'center',
+    }}>
+      <div style={{ position: 'relative', width: '92%', height: '92%' }}>
+        {/* Real map background */}
+        <Img src={staticFile('historic/u1e2/portolan-chart.jpg')}
+          style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: 12 }} />
+        {/* Dark overlay for contrast */}
+        <div style={{
+          position: 'absolute', inset: 0, borderRadius: 12,
+          background: 'rgba(0,0,0,0.35)',
+        }} />
+
+        {/* Continent labels */}
+        <div style={{
+          position: 'absolute', left: '8%', top: '8%',
+          fontFamily: 'Georgia, serif', fontWeight: 900, fontSize: 36,
+          color: '#ffd700', textShadow: '2px 2px 8px #000',
+          opacity: showEast || showWest ? 1 : 0.3,
+        }}>
+          AMERICAS
+        </div>
+        <div style={{
+          position: 'absolute', right: '8%', top: '8%',
+          fontFamily: 'Georgia, serif', fontWeight: 900, fontSize: 36,
+          color: '#ffd700', textShadow: '2px 2px 8px #000',
+          opacity: showEast || showWest ? 1 : 0.3,
+        }}>
+          EUROPE
+        </div>
+
+        {/* Flying items on SVG layer */}
+        <svg viewBox="0 0 1000 1000" preserveAspectRatio="none"
+          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }}>
+          {/* Dashed route guides */}
+          {showEast && (
+            <path d={`M ${AMERICAS_X} ${MAP_Y} Q 500 ${MAP_Y - 150} ${EUROPE_X} ${MAP_Y}`}
+              fill="none" stroke="#7CFC00" strokeWidth="3"
+              strokeDasharray="12,8" opacity="0.4" />
+          )}
+          {showWest && (
+            <path d={`M ${EUROPE_X} ${MAP_Y + 40} Q 500 ${MAP_Y + 190} ${AMERICAS_X} ${MAP_Y + 40}`}
+              fill="none" stroke="#ff6b6b" strokeWidth="3"
+              strokeDasharray="12,8" opacity="0.4" />
+          )}
+          {showEast && eastItems.map((item, i) => renderItem(item, i))}
+          {showWest && westItems.map((item, i) => renderItem(item, i + 10))}
+        </svg>
+
+        {/* Caption */}
+        <div style={{
+          position: 'absolute', bottom: '4%', left: '50%',
+          transform: 'translateX(-50%)',
+          fontFamily: 'Arial, sans-serif', fontWeight: 700, fontSize: 22,
+          color: '#f5e6c8', textShadow: '2px 2px 6px #000',
+          background: 'rgba(0,0,0,0.6)', padding: '8px 24px', borderRadius: 20,
+          whiteSpace: 'nowrap',
+        }}>
+          {highlight === 'east' && '🥔 → Potatoes, maize, tomatoes sail EAST'}
+          {highlight === 'west' && '🐴 → Horses, wheat (and disease) sail WEST'}
+          {highlight === 'both' && 'The Great Grocery Run: food EAST, livestock WEST'}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+/* ------------------------------------------------------------------ */
 /* Cartoon leader sticker (user-built assets, transparent WebP)         */
 /* ------------------------------------------------------------------ */
 const LeaderSticker: React.FC<{
   at: number;
   leader: string;
   name: string;
+  role?: string;
   position: [number, number];
   size?: number;
-}> = ({ at, leader, name, position, size = 320 }) => {
+}> = ({ at, leader, name, role, position, size = 320 }) => {
   const frame = useCurrentFrame();
   if (frame < at) return null;
   const elapsed = (frame - at) / FPS;
@@ -513,6 +886,22 @@ const LeaderSticker: React.FC<{
       }}>
         {name}
       </div>
+      {role && (
+        <div style={{
+          marginTop: 6,
+          display: 'inline-block',
+          background: 'rgba(20,16,12,0.85)',
+          color: '#f5e6c8',
+          fontFamily: 'Arial, sans-serif',
+          fontWeight: 700,
+          fontSize: 16,
+          padding: '4px 16px',
+          borderRadius: 12,
+          letterSpacing: 0.5,
+        }}>
+          {role}
+        </div>
+      )}
     </div>
   );
 };
@@ -665,17 +1054,47 @@ export const U1E2Episode: React.FC = () => {
               questionIds={['god', 'glory']}
               dimIds={['gold']} position={[0.5, 0.42]} />
           )}
-          {/* t03: God explained (0-12.15s), then glory (12.15s+) — two distinct visuals */}
-          {activeTurn?.id === 't03' && turnElapsed < 12.15 && (
-            <MotiveBlocks at={activeStartFrame}
-              appearOffsets={[0, 0, 0]}
-              detailOffsets={[0, 1.5, 999]} position={[0.5, 0.62]} />
+          {/* t03: God explained (0-12.15s), then glory (12.15s+) — clean Reconquista visual, no blocks */}
+          {/* (MotiveBlocks removed — they overstayed and cluttered the Reconquista scene) */}
+          {/* t09: 3-way compare — caravel, astrolabe, compass */}
+          {activeTurn?.id === 't09' && (
+            <ThreeWayCompare at={activeStartFrame}
+              items={COMPARE_ITEMS_T09}
+              appearOffsets={[5.37, 9.36, 12.09]} position={[0.5, 0.45]} />
           )}
-          {activeTurn?.id === 't03' && turnElapsed >= 12.15 && (
-            <MotiveBlocks at={activeStartFrame}
-              appearOffsets={[0, 0, 0]}
-              detailOffsets={[0, 0, 0]}
-              dimIds={['gold', 'god']} position={[0.5, 0.62]} />
+          {/* t24: Exchange directions — two-way visual flow */}
+          {activeTurn?.id === 't24' && (
+            <ExchangeArrows at={activeStartFrame} position={[0.5, 0.42]} />
+          )}
+          {/* t25: crops east — highlight eastward flow */}
+          {activeTurn?.id === 't25' && (
+            <ExchangeArrows at={activeStartFrame} position={[0.5, 0.42]}
+              highlight="east" />
+          )}
+          {/* t27: livestock west — highlight westward flow */}
+          {activeTurn?.id === 't27' && (
+            <ExchangeArrows at={activeStartFrame} position={[0.5, 0.42]}
+              highlight="west" />
+          )}
+          {/* t29: disease west — one-way, dramatic */}
+          {activeTurn?.id === 't29' && (
+            <ExchangeArrows at={activeStartFrame} position={[0.5, 0.42]}
+              highlight="west" />
+          )}
+          {/* t19: Tordesillas line draws on the map when he says "line" @5.31s */}
+          {activeTurn?.id === 't19' && turnElapsed >= 5.31 && (
+            <MapRoute at={activeStartFrame + Math.floor(5.31 * FPS)}
+              mapImage="historic/u1e2/tordesillas-map.jpg"
+              path="M 620 100 L 620 900"
+              drawDuration={2}
+              markers={[
+                { x: 620, y: 100, label: 'N' },
+                { x: 450, y: 500, label: '← SPAIN' },
+                { x: 790, y: 500, label: 'PORTUGAL →' },
+              ]}
+              color="#ff4444"
+              tintSides={{ leftColor: '#ff0000', rightColor: '#00aa00', lineX: 620 }}
+              papalSeal={true} />
           )}
           {/* Recap checks */}
           {activeTurn?.id === 't45' && (
@@ -704,18 +1123,21 @@ export const U1E2Episode: React.FC = () => {
               checked={['tordesillas', 'exchange', 'encomienda']} position={[0.5, 0.55]} />
           )}
 
-          {/* Cartoon leaders */}
+          {/* Cartoon leaders — dramatic entrances with contextual roles */}
           {showColumbus && (
             <LeaderSticker at={Math.floor(starts[12] * FPS)}
-              leader="unit1_columbus_confident.webp" name="Columbus" position={[0.28, 0.52]} />
+              leader="unit1_columbus_confident.webp" name="Columbus"
+              role="WRONG ABOUT EVERYTHING" position={[0.28, 0.52]} />
           )}
           {showCortes && (
             <LeaderSticker at={Math.floor(starts[35] * FPS) + Math.floor(3.84 * FPS)}
-              leader="unit1_cortes.webp" name="Cortés" position={[0.28, 0.52]} />
+              leader="unit1_cortes.webp" name="Cortés"
+              role="TENOCHTITLAN 1521" position={[0.28, 0.52]} />
           )}
           {showLasCasas && (
             <LeaderSticker at={Math.floor(starts[41] * FPS) + Math.floor(7.92 * FPS)}
-              leader="unit1_las_casas.webp" name="Las Casas" position={[0.28, 0.52]} />
+              leader="unit1_las_casas.webp" name="Las Casas"
+              role="SUBJECTS OR LABOR?" position={[0.28, 0.52]} />
           )}
 
           {/* Sub-beats — smarttext: beats at the same position replace each other */}
@@ -723,13 +1145,12 @@ export const U1E2Episode: React.FC = () => {
             const beatFrame = activeStartFrame + Math.floor(beat.offset * FPS);
             const key = `${beat.turnId}-${beat.offset}-${idx}`;
             if (beat.kind === 'smarttext' && beat.text) {
-              // A beat is superseded if a later beat of the same level at nearly
-              // the same position is also active (prevents text pile-up).
-              // Beats at different positions (e.g. question pairs) coexist.
+              // A beat is superseded if a later beat at nearly the same position
+              // is also active (prevents text pile-up). The later beat wins the
+              // position regardless of level. Beats at different positions coexist.
               const pos = beat.position || [0.5, 0.2];
-              const level = beat.level || 'title';
               const isSuperseded = activeSubBeats.some(b => {
-                if (b.kind !== 'smarttext' || (b.level || 'title') !== level) return false;
+                if (b.kind !== 'smarttext') return false;
                 if (b.offset <= beat.offset || turnElapsed < b.offset) return false;
                 const bp = b.position || [0.5, 0.2];
                 const dist = Math.hypot(bp[0] - pos[0], bp[1] - pos[1]);
