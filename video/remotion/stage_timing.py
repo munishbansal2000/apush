@@ -15,6 +15,7 @@ Skips Vosk if MP3s haven't changed (hash-based cache).
 import argparse
 import hashlib
 import json
+import re
 import subprocess
 from pathlib import Path
 
@@ -65,6 +66,27 @@ def run_vosk(mp3_path, model_path='/opt/vosk-model'):
     return words
 
 
+def get_speech_onset(mp3_path):
+    """Measure first non-silent instant via ffmpeg silencedetect.
+    
+    Returns seconds of leading silence. Visuals should key off
+    voice-start (onset), not file-start, or they appear early.
+    (Ports legacy video-pipeline/stages/timing.py onset detection.)
+    """
+    result = subprocess.run([
+        'ffmpeg', '-i', str(mp3_path),
+        '-af', 'silencedetect=noise=-30dB:d=0.1',
+        '-f', 'null', '-'
+    ], capture_output=True, text=True)
+    for line in result.stderr.split('\n'):
+        if 'silence_end:' in line:
+            # First silence_end is the onset (end of leading silence)
+            m = re.search(r'silence_end:\s*([\d.]+)', line)
+            if m:
+                return float(m.group(1))
+    return 0.0
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--episode', required=True)
@@ -84,10 +106,11 @@ def main():
     mp3s = sorted(tts_dir.glob('turn_*.mp3'))
     print(f"Found {len(mp3s)} turns")
 
-    # Check cache
+    # Check cache (use short hash of combined hashes)
     cache = get_cache()
-    combined_hash = ''.join(file_hash(p) for p in mp3s)
-    cache_key = cache / f'{episode}_{provider}_{combined_hash}.json'
+    combined = ''.join(file_hash(p) for p in mp3s)
+    short_hash = hashlib.sha256(combined.encode()).hexdigest()[:12]
+    cache_key = cache / f'{episode}_{provider}_{short_hash}.json'
     
     out_dir = Path(f'src/data/{episode.lower()}')
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -105,13 +128,18 @@ def main():
 
     # Build timing
     print("Running Vosk alignment...")
-    timing = {'starts': [], 'ends': [], 'durations': []}
+    timing = {'starts': [], 'ends': [], 'durations': [], 'onsets': []}
     all_words = []
     
     current_time = 0.0
     for i, mp3 in enumerate(mp3s):
         print(f"  [{i}] {mp3.name}...")
         words = run_vosk(mp3)
+        
+        # Measure speech onset (leading silence)
+        onset = get_speech_onset(mp3)
+        if onset > 0.05:
+            print(f"      onset: {onset:.2f}s leading silence")
         
         # Get duration
         result = subprocess.run([
@@ -124,8 +152,10 @@ def main():
         timing['starts'].append(current_time)
         timing['durations'].append(duration)
         timing['ends'].append(current_time + duration)
+        timing['onsets'].append(onset)
         
-        # Offset word times
+        # Offset word times (Vosk times are relative to file start;
+        # onset is stored separately for visual anchoring)
         for w in words:
             w['start'] += current_time
             w['end'] += current_time

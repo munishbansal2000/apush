@@ -33,6 +33,7 @@ Strict rules for building episodes. No exceptions. These govern every creative d
 ## 4. Images: Real, Not Decorative
 
 - **Every image must EARN its screen time.** Ask: "What does this image SHOW that words can't?"
+- **Image count:** 10-15 unique images for any episode over 8-10 minutes. 6 is too few — the viewer gets bored seeing the same visuals.
 - **Static images get procedural life.** Ken Burns drift, parallax, subtle zoom. No frozen frames.
 - **Serious scenes = photorealistic.** Disease, death, slavery, war — real images, real weight.
 - **Fun scenes = semi-cartoon OK.** Jokes, asides, playful moments can use stylized visuals.
