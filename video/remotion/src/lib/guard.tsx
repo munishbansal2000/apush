@@ -34,7 +34,7 @@ export interface GuardConfig {
   };
 }
 
-/** Default config: 5% safe margins, sensible tolerances. */
+/** Default config: 5% safe margins, sensible tolerances. Prefer render-config.json. */
 export const DEFAULT_GUARD_CONFIG: GuardConfig = {
   safe: [0.05, 0.05, 0.95, 0.95],
   guard: {
@@ -43,6 +43,14 @@ export const DEFAULT_GUARD_CONFIG: GuardConfig = {
     epsilon: 0.001,
   },
 };
+
+/** Load GuardConfig from render-config.json (subset of the full config). */
+export function guardConfigFromRenderConfig(rc: {
+  safe: Rect;
+  guard: { overlapMinArea: number; clipTolerancePx: number; epsilon: number };
+}): GuardConfig {
+  return { safe: rc.safe, guard: rc.guard };
+}
 
 export type TrackRole = 'chrome' | 'overlay' | 'stage' | 'text' | 'cover' | 'bg';
 
