@@ -1921,3 +1921,40 @@ facts:
     falsehoods: []
     sources: [nps, web]
     tier_note: "attribution discipline from U4-E6 Layer 3"
+
+  - id: F-U4-010
+    topic: Jackson veto tally — 12 total (5 regular + 7 pocket), more than all six predecessors combined (10)
+    correct: "Andrew Jackson issued 12 vetoes (5 regular + 7 pocket), more than the 10 combined for all six of his predecessors. Used in U4-E7 (Jacksonian Democracy)."
+    falsehoods:
+      - "jackson.{0,60}veto.{0,40}(more than|exceed).{0,40}(predecessors|before him)"
+    sources: [britannica, web-senate-historical]
+    tier_note: "veto tally verified via CRS/congress.gov (Senate historical list); same-day entry from U4-E7 repair, 2026-10-06"
+
+  - id: F-U4-011
+    topic: Marcy 1832 Senate line — "To the victor belong the spoils of the enemy"
+    correct: "Senator William L. Marcy, on the Senate floor in January 1832, said: 'They see nothing wrong in the rule, that to the victor belong the spoils of the enemy.' Quote the full line, never the truncated 'to the victor belong the spoils' alone when attributing."
+    falsehoods:
+      - "marcy.{0,80}\"to the victor belong the spoils\"(?![^.]{0,20}enemy)"
+    sources: [britannica]
+    tier_note: "verified via Register of Debates account (Jan 1832) per Britannica; same-day entry from U4-E7 repair, 2026-10-06"
+
+  - id: F-U4-012
+    topic: Kitchen Cabinet — Francis Preston Blair and Amos Kendall (Britannica hedges formality)
+    correct: "Jackson's Kitchen Cabinet circle included newspaper editors Francis Preston Blair and Amos Kendall. Britannica treats the body as an informal circle of advisers — never present it as a formally constituted cabinet or as Senate-confirmed."
+    falsehoods: []
+    sources: [britannica]
+    tier_note: "same-day entry from U4-E7 repair, 2026-10-06"
+
+  - id: F-U4-013
+    topic: Schlesinger, The Age of Jackson (1945) — working-class/labor interpretation
+    correct: "Arthur Schlesinger's The Age of Jackson (1945) advances the working-class/labor interpretation of Jacksonian democracy — Jackson as the hero of the working man. Later historiography starts from the exclusions (enslaved people, removed tribes)."
+    falsehoods: []
+    sources: [britannica]
+    tier_note: "same-day entry from U4-E7 repair, 2026-10-06"
+
+  - id: F-U4-014
+    topic: NPS — Indian removal driven by settler demand for cotton farmland
+    correct: "Indian removal was driven by settler demand for cotton farmland — the cleared ground became cotton ground worked by enslaved people. Say the motive plainly in U4-E7 territory."
+    falsehoods: []
+    sources: [nps]
+    tier_note: "same-day entry from U4-E7 repair, 2026-10-06"
