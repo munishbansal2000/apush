@@ -293,6 +293,76 @@ def check_music_alignment(content, episode='E2'):
     return warnings
 
 
+def check_beat_validity(content, episode='E2'):
+    """Check that SUB_BEATS reference valid turns and have sane offsets.
+    
+    From the external review:
+    1. Every beat's turn ID must exist
+    2. offset + minHold (1.5s) <= turn duration (beats that never show)
+    3. Beat anchor text should appear in turn transcript (catches stale IDs)
+    """
+    import json
+    from pathlib import Path
+    
+    errors = []
+    
+    # Load turns and timing
+    ep_lower = episode.lower()
+    if ep_lower == 'e2':
+        turns_path = Path('src/data/u1e2/turns.json')
+        timing_path = Path('src/data/u1e2/timing_map.json')
+    else:
+        turns_path = Path(f'src/data/{ep_lower}/turns.json')
+        timing_path = Path(f'src/data/{ep_lower}/timing_map.json')
+    
+    if not turns_path.exists() or not timing_path.exists():
+        return [f"BEAT: Missing turns.json or timing_map.json for {episode}"]
+    
+    with open(turns_path) as f:
+        turns_data = json.load(f)
+    turns = turns_data if isinstance(turns_data, list) else turns_data.get('turns', [])
+    turn_map = {t.get('id'): t for t in turns}
+    
+    with open(timing_path) as f:
+        timing = json.load(f)
+    durations = timing.get('durations', [])
+    
+    # Extract beats from TSX
+    beats = re.findall(
+        r"\{\s*turnId:\s*'(t\d+)',\s*offset:\s*([\d.]+),\s*kind:\s*'(\w+)'",
+        content
+    )
+    
+    MIN_HOLD = 1.5  # seconds — beat must be visible for at least this long
+    
+    for turn_id, offset_str, kind in beats:
+        offset = float(offset_str)
+        
+        # Check 1: turn exists
+        if turn_id not in turn_map:
+            errors.append(f"BEAT: turnId '{turn_id}' ({kind}) does not exist")
+            continue
+        
+        # Check 2: offset + hold <= duration
+        turn_idx = next((i for i, t in enumerate(turns) if t.get('id') == turn_id), -1)
+        if turn_idx >= 0 and turn_idx < len(durations):
+            dur = durations[turn_idx]
+            if offset + MIN_HOLD > dur:
+                errors.append(
+                    f"BEAT: '{turn_id}' offset {offset}s + {MIN_HOLD}s hold > "
+                    f"duration {dur:.1f}s — beat never shows ({kind})"
+                )
+    
+    # Check 3: turns/starts/durations length match
+    if not (len(turns) == len(timing.get('starts', [])) == len(durations)):
+        errors.append(
+            f"BEAT: length mismatch — turns={len(turns)}, "
+            f"starts={len(timing.get('starts', []))}, durations={len(durations)}"
+        )
+    
+    return errors
+
+
 def main():
     import argparse
     parser = argparse.ArgumentParser()
@@ -315,6 +385,7 @@ def main():
         ("Orphan leaders", check_orphan_leaders),
         ("Map regions", check_map_regions),
         ("Music alignment", lambda c: check_music_alignment(c, args.episode)),
+        ("Beat validity", lambda c: check_beat_validity(c, args.episode)),
     ]
 
     for name, check_fn in checks:

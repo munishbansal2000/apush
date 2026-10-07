@@ -112,16 +112,16 @@ const SUB_BEATS: SubBeat[] = [
   // t06: Potato hero and time bomb — over Clusius 1583 botanical
   { turnId: 't06', offset: 0, kind: 'bg-swap', bgImage: 'historic/u1e3/potato-plant.jpg' },
   { turnId: 't06', offset: 0, kind: 'smarttext', text: '🥔 HERO', level: 'title', position: [0.5, 0.15], entrance: 'stamp' },
-  { turnId: 't06', offset: 2.0, kind: 'smarttext', text: '💣 TIME BOMB', level: 'title', position: [0.5, 0.45], entrance: 'stamp', color: '#ff6b6b' },
+  { turnId: 't06', offset: 0.5, kind: 'smarttext', text: '💣 TIME BOMB', level: 'title', position: [0.5, 0.45], entrance: 'stamp', color: '#ff6b6b' },
 
   // t08: Tomato — "marinara sauce is an American import" — over botanical
   { turnId: 't08', offset: 0, kind: 'bg-swap', bgImage: 'historic/u1e3/tomato-plant.jpg' },
-  { turnId: 't08', offset: 0, kind: 'bubble', text: 'My Sunday dinner is a lie 🍝', position: [0.5, 0.3], width: 380 },
+  { turnId: 't10', offset: 0, kind: 'bubble', text: 'My Sunday dinner is a lie 🍝', position: [0.5, 0.3], width: 380 },
   { turnId: 't08', offset: 3.0, kind: 'smarttext', text: 'NO TOMATOES IN ROME BEFORE 1492', level: 'body', position: [0.5, 0.5] },
 
   // t07: Europeans thought tomatoes were poisonous
   { turnId: 't12', offset: 0, kind: 'smarttext', text: '☠️ POISON?', level: 'title', position: [0.5, 0.2], entrance: 'stamp' },
-  { turnId: 't12', offset: 2.5, kind: 'smarttext', text: 'NIGHTSHADE FAMILY', level: 'subtitle', position: [0.5, 0.35] },
+  { turnId: 't13', offset: 0.5, kind: 'smarttext', text: 'NIGHTSHADE FAMILY', level: 'subtitle', position: [0.5, 0.35] },
 
   // t08: Comanche took the horse
   { turnId: 't15', offset: 0, kind: 'smarttext', text: 'THE COMANCHE', level: 'title', position: [0.5, 0.15], entrance: 'stamp' },
@@ -154,7 +154,6 @@ const SUB_BEATS: SubBeat[] = [
   { turnId: 't23', offset: 0, kind: 'smarttext', text: '📦 BOX 1: THE INVENTORY', level: 'title', position: [0.5, 0.15], entrance: 'stamp' },
   { turnId: 't23', offset: 0, kind: 'smarttext', text: 'LIVESTOCK → WEST', level: 'subtitle', position: [0.5, 0.25], color: '#ffd700' },
   { turnId: 't23', offset: 1.5, kind: 'smarttext', text: 'CROPS → BOTH WAYS', level: 'subtitle', position: [0.5, 0.4], color: '#90ee90' },
-  { turnId: 't25', offset: 0, kind: 'smarttext', text: '✓ CHECKING THAT ONE', level: 'subtitle', position: [0.5, 0.5], color: '#90ee90', entrance: 'stamp' },
 
   // === TONE SHIFT: DISEASE (SERIOUS) ===
 
@@ -201,8 +200,6 @@ const SUB_BEATS: SubBeat[] = [
     hippExplanation: 'Nahua perspective — the conquered, not the conquerors. This is the view from inside the epidemic.' },
 
   // t27: Syphilis debate
-  { turnId: 't40', offset: 0, kind: 'smarttext', text: 'SYPHILIS?', level: 'title', position: [0.5, 0.2], entrance: 'stamp' },
-  { turnId: 't40', offset: 2.0, kind: 'smarttext', text: 'MAYBE SAILED EAST. DEBATED.', level: 'subtitle', position: [0.5, 0.35] },
 
   // Box 2 check
   { turnId: 't62', offset: 0, kind: 'smarttext', text: '📦 BOX 2: DISEASE', level: 'title', position: [0.5, 0.15], entrance: 'stamp' },
@@ -234,7 +231,7 @@ const SUB_BEATS: SubBeat[] = [
   // Box 3 & 4
   { turnId: 't64', offset: 0, kind: 'smarttext', text: '📦 BOX 3: WHO WON/PAID', level: 'title', position: [0.5, 0.15], entrance: 'stamp' },
   { turnId: 't65', offset: 0, kind: 'smarttext', text: '📦 BOX 4: LABOR CRISIS', level: 'title', position: [0.5, 0.15], entrance: 'stamp' },
-  { turnId: 't65', offset: 2.0, kind: 'smarttext', text: '✓✓ CHECKED', level: 'subtitle', position: [0.5, 0.3], color: '#90ee90' },
+  { turnId: 't65', offset: 0, kind: 'smarttext', text: '✓✓ CHECKED', level: 'subtitle', position: [0.5, 0.3], color: '#90ee90' },
 
   // === RECAP & EXAM ===
 
@@ -243,7 +240,7 @@ const SUB_BEATS: SubBeat[] = [
 
   // Closing line
   { turnId: 't81', offset: 0, kind: 'smarttext', text: 'THE FOOD WENT BOTH WAYS', level: 'subtitle', position: [0.5, 0.3] },
-  { turnId: 't81', offset: 2.0, kind: 'smarttext', text: 'AND THE DYING ONLY WENT ONE', level: 'title', position: [0.5, 0.45], entrance: 'stamp', color: '#ff6b6b' },
+  { turnId: 't81', offset: 0, kind: 'smarttext', text: 'AND THE DYING ONLY WENT ONE', level: 'title', position: [0.5, 0.45], entrance: 'stamp', color: '#ff6b6b' },
 ];
 
 /* ------------------------------------------------------------------ */
@@ -327,7 +324,7 @@ export const U1E3Episode: React.FC = () => {
   const kbY = Math.cos(kbProgress * Math.PI * 2) * 12;
 
   // Tone: serious for disease section (t16+), playful before
-  const isSeriousSection = activeTurn && parseInt(activeTurn.id.slice(1), 10) >= 16;
+  const isSeriousSection = activeTurn && parseInt(activeTurn.id.slice(1), 10) >= 27;
 
   const showHead = activeTurn &&
     (activeTurn.speaker === 'maya' || activeTurn.speaker === 'marcus') &&
@@ -354,7 +351,7 @@ export const U1E3Episode: React.FC = () => {
           {turns.map((turn, i) => (
             <Sequence key={`audio-${turn.id}`}
               from={Math.floor(starts[i] * fps)}
-              durationInFrames={Math.max(1, Math.floor(durations[i] * fps))}>
+              durationInFrames={Math.max(1, Math.ceil(durations[i] * fps))}>
               <Audio src={staticFile(`audio/${EP}/${turn.id}.mp3`)} />
             </Sequence>
           ))}
@@ -371,7 +368,7 @@ export const U1E3Episode: React.FC = () => {
               showName={true}
               assetPair={{
                 realistic: staticFile(activeTurn!.speaker === 'maya' ? 'maya-real.webp' : 'marcus-real.webp'),
-                stylized: staticFile(activeTurn!.speaker === 'maya' ? 'maya-toon.webp' : 'maya-toon.webp'),
+                stylized: staticFile(activeTurn!.speaker === 'maya' ? 'maya-toon.webp' : 'marcus-toon.webp'),
               }}
               frameStyle="rounded"
             />
@@ -384,7 +381,7 @@ export const U1E3Episode: React.FC = () => {
           )}
 
           {/* Versus: who won, who paid (t29) */}
-          {activeTurn?.id === 't29' && (
+          {activeTurn?.id === 't45' && (
             <VersusPolarization
               clashTitle={VERSUS_E3.clashTitle}
               periodLabel={VERSUS_E3.periodLabel}
@@ -453,7 +450,8 @@ export const U1E3Episode: React.FC = () => {
             return null;
           })}
 
-          {/* Debug */}
+          {/* Debug — studio only, never in render */}
+          {typeof window !== 'undefined' && (window as any).__REMOTION_STUDIO__ && (
           <div style={{
             position: 'absolute', top: 10, left: 10,
             fontFamily: 'monospace', fontSize: 13,
@@ -461,6 +459,7 @@ export const U1E3Episode: React.FC = () => {
           }}>
             {activeTurn ? `${activeTurn.id} [${activeTurn.speaker}] ${timeSec.toFixed(1)}s` : '—'}
           </div>
+          )}
         </AbsoluteFill>
       </AutoLayoutProvider>
     </ToneProvider>
