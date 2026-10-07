@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import {
   AbsoluteFill,
   Audio,
@@ -10,6 +10,7 @@ import {
 import { TalkingHead } from './TalkingHead';
 import { ToneProvider } from '../validation/ToneContext';
 import { AutoLayoutProvider } from '../validation/AutoLayout';
+import { LayoutGuard, Track, DEFAULT_GUARD_CONFIG } from '../lib/guard';
 
 interface Turn {
   id: string;
@@ -66,6 +67,7 @@ export const EpisodeShell: React.FC<EpisodeShellProps> = ({
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const timeSec = frame / fps;
+  const rootRef = useRef<HTMLDivElement>(null);
 
   // Validate lengths match
   if (turns.length !== starts.length || starts.length !== durations.length) {
@@ -118,18 +120,20 @@ export const EpisodeShell: React.FC<EpisodeShellProps> = ({
   return (
     <ToneProvider tone={isSerious ? 'serious' : 'playful'}>
       <AutoLayoutProvider debug={false}>
-        <AbsoluteFill style={{ backgroundColor: '#1a1512' }}>
+        <AbsoluteFill ref={rootRef} style={{ backgroundColor: '#1a1512' }}>
           {/* Background */}
-          <img
-            src={staticFile(bgSrc)}
-            style={{
-              position: 'absolute',
-              inset: 0,
-              width: '100%',
-              height: '100%',
-              objectFit: 'cover',
-            }}
-          />
+          <Track id="bg" role="bg">
+            <img
+              src={staticFile(bgSrc)}
+              style={{
+                position: 'absolute',
+                inset: 0,
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+              }}
+            />
+          </Track>
 
           {/* Audio — ceil to avoid clipping last frame */}
           {turns.map((turn, i) => (
@@ -144,16 +148,18 @@ export const EpisodeShell: React.FC<EpisodeShellProps> = ({
 
           {/* Talking head — correct toon per speaker */}
           {activeTurn && activeTurn.speaker !== 'pause' && (
-            <TalkingHead
-              key={`head-${activeTurn.id}`}
-              speakerName={activeTurn.speaker === 'maya' ? 'Maya' : activeTurn.speaker === 'marcus' ? 'Marcus' : 'Jay'}
-              speakerColor={activeTurn.speaker === 'maya' ? '#c9a227' : '#2c5aa0'}
-              position="bottom-right"
-              assetPair={{
-                realistic: staticFile(`${activeTurn.speaker}.webp`),
-                stylized: staticFile(`${activeTurn.speaker}-toon.webp`),
-              }}
-            />
+            <Track id="head" role="chrome">
+              <TalkingHead
+                key={`head-${activeTurn.id}`}
+                speakerName={activeTurn.speaker === 'maya' ? 'Maya' : activeTurn.speaker === 'marcus' ? 'Marcus' : 'Jay'}
+                speakerColor={activeTurn.speaker === 'maya' ? '#c9a227' : '#2c5aa0'}
+                position="bottom-right"
+                assetPair={{
+                  realistic: staticFile(`${activeTurn.speaker}.webp`),
+                  stylized: staticFile(`${activeTurn.speaker}-toon.webp`),
+                }}
+              />
+            </Track>
           )}
 
           {/* Pause card — show question during silence */}
@@ -179,7 +185,12 @@ export const EpisodeShell: React.FC<EpisodeShellProps> = ({
           )}
 
           {/* Episode beats */}
-          {children(ctx)}
+          <Track id="beats" role="stage" allowOverlap>
+            {children(ctx)}
+          </Track>
+
+          {/* Runtime layout guard — measures real DOM, reports overlaps/cuts/clips */}
+          <LayoutGuard cfg={DEFAULT_GUARD_CONFIG} rootRef={rootRef} />
 
           {/* Debug overlay — studio only, never burns into export */}
           {isStudio && (
