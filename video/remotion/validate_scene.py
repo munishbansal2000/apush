@@ -23,6 +23,8 @@ MAP_REGIONS = {
     'tordesillas-map.jpg': ['americas', 'atlantic', 'europe', 'africa'],
     'portolan-chart.jpg': ['mediterranean', 'europe'],
     'portolan-chart-clean.jpg': ['mediterranean', 'europe'],
+    'cantino-planisphere.jpg': ['americas', 'atlantic', 'europe', 'africa', 'asia'],
+    'james-river-map.jpg': ['americas', 'chesapeake', 'virginia'],
 }
 
 # Direction words and their expected coordinate relationships
@@ -34,10 +36,16 @@ DIRECTION_CHECKS = {
 
 def load_episode(episode='E2'):
     """Load TSX source and extract SUB_BEATS + hardcoded blocks."""
-    tsx_path = Path(f'src/components/U1{episode}Episode.tsx')
-    if not tsx_path.exists():
-        # Try U1E2Episode pattern
-        tsx_path = Path('src/components/U1E2Episode.tsx')
+    # Try multiple patterns
+    for pattern in [f'src/components/U1{episode}Episode.tsx',
+                    f'src/components/{episode}Episode.tsx',
+                    f'src/components/U1E{episode}Episode.tsx']:
+        tsx_path = Path(pattern)
+        if tsx_path.exists():
+            break
+    else:
+        # Try direct
+        tsx_path = Path(f'src/components/U1{episode}Episode.tsx')
 
     with open(tsx_path) as f:
         content = f.read()
@@ -220,11 +228,16 @@ def check_map_regions(content):
 
 
 def main():
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--episode', default='E2', help='Episode ID (e.g. E2, E3)')
+    args = parser.parse_args()
+    
     print("=" * 70)
-    print("SCENE VALIDATOR — catching errors before render")
+    print(f"SCENE VALIDATOR — {args.episode} — catching errors before render")
     print("=" * 70)
 
-    content = load_episode()
+    content = load_episode(args.episode)
 
     all_errors = []
     all_warnings = []

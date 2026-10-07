@@ -30,8 +30,8 @@ def _ffprobe_streams(path):
     if result.returncode != 0:
         raise RuntimeError(f"ffprobe failed on {path}")
     streams = result.stdout.strip().split('\n')
-    video = sum(1 for s in streams if s.strip() == 'video')
-    audio = sum(1 for s in streams if s.strip() == 'audio')
+    video = sum(1 for s in streams if s.strip().rstrip(',') == 'video')
+    audio = sum(1 for s in streams if s.strip().rstrip(',') == 'audio')
     return video, audio
 
 
