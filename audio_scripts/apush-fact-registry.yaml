@@ -5759,3 +5759,115 @@ facts:
   falsehoods: []
   sources: []
   tier_note: 'Pinned U6-L6 v2 2026-10-07.'
+
+- id: F-U6-050
+  topic: 'SEC created 1934, not a Hundred Days program'
+  correct: 'The Securities and Exchange Commission was created in 1934, a year AFTER the
+    Hundred Days — it licensed brokers, limited buying on margin, and banned insider
+    trading (premium2027 ch9). Teach as the standard student mix-up; Maya''s wrong beat
+    (''that was the Hundred Days too?'') is corrected in-flow with ''Not quite''.'
+  falsehoods:
+  - SEC.{0,50}hundred days
+  - securities and exchange commission.{0,40}nineteen thirty.three
+  - securities and exchange commission.{0,40}1933
+  sources:
+  - premium2027
+  tier_note: 'Pinned U6-L7 v2 2026-10-07 — writer wrong-beat, G12-exempt via correction marker.'
+
+- id: F-U6-051
+  topic: 'Social Security Act 1935, Second New Deal — not Hundred Days'
+  correct: 'The Social Security Act is 1935, Second New Deal: old-age pensions and
+    unemployment insurance funded by payroll taxes on workers and employers, benefits at
+    65 (premium2027 ch9). Teach with the common-mistake frame — ''don''''t file it under
+    the Hundred Days.'''
+  falsehoods:
+  - social security.{0,50}hundred days
+  - social security.{0,40}nineteen thirty.three
+  - social security.{0,40}1933
+  sources:
+  - premium2027
+  tier_note: 'Pinned U6-L7 v2 2026-10-07.'
+
+- id: F-U6-052
+  topic: 'Court-packing plan REJECTED by Congress, 1937'
+  correct: 'Roosevelt''s 1937 court-packing plan (up to six additional justices) was rejected
+    by Congress — not even his own party would back it (premium2027 ch9). The Court grew
+    friendlier anyway (''switch in time that saved nine''). Teach the failure, not the passage.'
+  falsehoods:
+  - court.packing plan passed
+  - court.packing.{0,30}succeeded
+  - congress approved.{0,30}court.packing
+  sources:
+  - premium2027
+  tier_note: 'Pinned U6-L7 v2 2026-10-07.'
+
+- id: F-U6-053
+  topic: 'Schechter (1935) killed the NRA; Butler (1936) killed the AAA'
+  correct: 'Schechter Poultry Corp. v. United States (1935) struck down the NRA on
+    separation-of-powers/delegation grounds; United States v. Butler (1936) struck down
+    the AAA (premium2027 ch9). Maya''s recap fumble swaps the years and is corrected
+    in-flow (''Not quite, flip them'').'
+  falsehoods:
+  - schechter.{0,25}thirty.six
+  - butler.{0,25}thirty.five
+  - schechter.{0,25}1936
+  - butler.{0,25}1935
+  - schechter.{0,25}killed the aaa
+  sources:
+  - premium2027
+  tier_note: 'Pinned U6-L7 v2 2026-10-07.'
+
+- id: F-U6-054
+  topic: 'AAA paid landowners to cut production; sharecroppers were evicted'
+  correct: 'The AAA paid farmers to grow LESS to kill the surplus crushing crop prices.
+    The checks went to landowners, who evicted sharecroppers and took land out of
+    cultivation — hurting the poorest Black and white Southern farmers (premium2027 ch9).
+    Teach as the New Deal''s blind spot, not as a farmer-rescue story.'
+  falsehoods:
+  - aaa helped (the )?sharecroppers
+  - aaa.{0,30}helped.{0,30}tenants
+  sources:
+  - premium2027
+  tier_note: 'Pinned U6-L7 v2 2026-10-07.'
+
+- id: F-U6-055
+  topic: 'The New Deal did NOT end the Depression — wartime spending did'
+  correct: 'The New Deal did not solve the economic crisis of the 1930s; the real recovery
+    came in 1939 with armament production, and the Depression ended with wartime spending
+    (premium2027 ch9). Teach the split verdict: failed to end the Depression, permanently
+    enlarged the federal government''s role.'
+  falsehoods:
+  - new deal ended the (great )?depression
+  - (?<!didn't )(?<!did not )(?<!never )the new deal.{0,25}ended.{0,25}depression
+  sources:
+  - premium2027
+  tier_note: 'Pinned U6-L7 v2 2026-10-07.'
+
+- id: F-U6-056
+  topic: 'Wagner Act 1935 created the NLRB — not 1933'
+  correct: 'The Wagner Act (1935, Second New Deal) encouraged union formation and created
+    the National Labor Relations Board — still exists — to oversee union elections and
+    arbitrate worker-owner conflicts (premium2027 ch9). Union membership rose from 3M in
+    1933 to 10.5M by 1941.'
+  falsehoods:
+  - wagner act.{0,40}nineteen thirty.three
+  - wagner act.{0,40}1933
+  sources:
+  - premium2027
+  tier_note: 'Pinned U6-L7 v2 2026-10-07.'
+- id: F-U6-057
+  topic: 'Court-packing plan date: premium2027 files it under 1936 — correct is 1937'
+  correct: 'Roosevelt announced the court-packing plan (Judicial Procedures Reform Bill)
+    in February 1937. premium2027 ch9 files it under 1936 in its timeline and says
+    "In 1936, he announced a plan" in review Q7 — but its own prose says "In 1937,
+    he proposed a bill," and 5steps2024 ch23 plus Princeton ch11 both confirm 1937.
+    Teach 1937.'
+  falsehoods:
+  - court(-| )packing.{0,20}1936
+  - 1936.{0,20}court(-| )packing
+  sources:
+  - prem27
+  - 5steps
+  - princeton
+  tier_note: 'Confirmed U6-L7 v2 2026-10-07 — parent verified book lines + independent
+    Tier-1 sources.'

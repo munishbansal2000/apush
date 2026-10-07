@@ -158,13 +158,27 @@ SPEAKER = re.compile(r"^([A-ZÀ-Þ][A-Za-zÀ-ÿ.'-]{0,39}):\s*(.*)$")
 def parse(path):
     text = open(path).read()
     notes, spoken = [], []
+    last_spk, in_footer = None, False
     for i, line in enumerate(text.split("\n"), 1):
         if line.startswith("#"):
+            if line.startswith("## Sources"):
+                in_footer = True
             notes.append(line)
-        else:
-            m = SPEAKER.match(line)
-            if m and m.group(1).upper() not in NON_SPEAKER:
-                spoken.append((i, m.group(1), m.group(2).strip()))
+            continue
+        if in_footer:
+            continue
+        m = SPEAKER.match(line)
+        if m and m.group(1).upper() not in NON_SPEAKER:
+            last_spk = m.group(1)
+            spoken.append((i, m.group(1), m.group(2).strip()))
+        elif (line.strip() and last_spk
+              and not line.strip().startswith(("[", "**", "---", "- "))):
+            # Continuation paragraph of the current speaker's turn.
+            # 2026-10-07: cold-open continuations carry no speaker label;
+            # they were skipped entirely — silently undercounting words and
+            # dodging every gate (incl. G12). Bracketed pause-tag lines,
+            # markdown bullets/rules/headers, and the Sources footer stay out.
+            spoken.append((i, last_spk, line.strip()))
     return text, "\n".join(notes), spoken
 
 
