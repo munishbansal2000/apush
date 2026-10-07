@@ -63,15 +63,39 @@ Write SUB_BEATS directly in the episode TSX. For each beat:
 - APUSH-specific: PrimarySourceSpotlight (HIPP), HistoricalTimeline, VersusPolarization
 - See `src/components/index.ts` for full list.
 
-### 5. Image selection (driven by the scene plan)
-Pick images AFTER the plan, not before. For each beat, the plan dictates
-what's needed. Then: download → convert to low-res → place in `public/historic/`.
-Sources: public domain historic, user-supplied packs, AI-generated where
-nothing else fits.
+### 5. Image Collection (explicit phase)
+```bash
+python3 stage_images.py --episode E2 --scan    # build catalog from TSX
+python3 stage_images.py --episode E2           # download missing
+```
 
-**Maps:** Use period-accurate maps where overlays must align perfectly.
-Not modern state outlines. Source from Library of Congress when needed.
-Calibrate overlay coordinates to the specific map image.
+**Persistence rules:**
+- `src/data/images.json` IS committed (catalog: paths, source URLs, licenses, descriptions, used_in)
+- Image FILES are NOT committed (in `public/`, gitignored)
+- Pipeline downloads missing images on demand from source URLs
+
+**Process:**
+1. Write SUB_BEATS first (creative direction dictates what's needed)
+2. Run `--scan` to build catalog entries from TSX image refs
+3. Fill in `source_url`, `license`, `description` for each (human)
+4. Run without flags to download missing images
+5. **Maps:** Use period-accurate maps where overlays must align perfectly. Not modern state outlines. Source from Library of Congress. Calibrate overlay coordinates to the specific map image.
+
+### 6. Scene Build (explicit phase)
+Transform SUB_BEATS into the renderable episode TSX.
+
+**This is where creative direction becomes technical implementation:**
+- SUB_BEATS define WHAT (content, timing, component kind)
+- The episode TSX defines HOW (Sequences, TalkingHeads, Audio, layout)
+- Each SUB_BEAT becomes a rendered element at its measured timestamp
+
+**Rules:**
+- **No inline components.** All components live in `src/components/`, episodes import them.
+- Talking heads switch on speaker (Maya/Marcus) via `TalkingHead` component
+- Audio: per-turn MP3s sequenced by measured timing
+- Background: era-appropriate, changes only on `bg-swap` beats
+
+**Validation:** The built TSX must pass `validate_scene.py` before rendering.
 
 ---
 
@@ -161,8 +185,9 @@ ffmpeg -f concat -safe 0 -i concat_list.txt -c copy full.mp4
 
 | Stage | Script | Purpose |
 |-------|--------|---------|
-| TTS | `stage_tts.py` | Render turns with meta/edge/fish |
+| TTS | `stage_tts.py` | Render turns with meta/edge/fish (from audio_scripts/) |
 | Timing | `stage_timing.py` | Vosk alignment → timing_map.json |
+| Images | `stage_images.py` | Scan TSX → catalog → download missing |
 | Validate | `build_episode.py --validate-only` | All validators |
 | Render | `stage_render.py` | Remotion render per act |
 | Keyframes | `extract_keyframes.py` | Frames at every beat |
