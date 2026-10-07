@@ -6426,3 +6426,175 @@ facts:
   - premium2027
   - apush-transcripts
   tier_note: 'Added U7-L5 v2 2026-10-07 — writer fact pass.'
+
+- id: F-U7-024
+  topic: 'Rosa Parks myth — NAACP organizer making a deliberate stand, not a tired seamstress acting alone'
+  correct: 'Rosa Parks was the secretary of the Montgomery NAACP and a trained civil-rights
+    activist making a deliberate stand (premium2027 ch10); she was not the first to defy
+    Montgomery''s bus rules — Claudette Colvin and others preceded her — and local leaders
+    (Jo Ann Robinson, the Women''s Political Council) had the boycott groundwork ready.
+    Teach ''trained organizer, deliberate stand,'' never ''one tired woman started a movement.'''
+  falsehoods:
+  - parks.{0,40}(just|only).{0,20}(tired|exhausted).{0,30}(sparked|started|launched)
+  - parks.{0,40}(alone|single-handedly|by herself).{0,20}(started|sparked|launched)
+  guards:
+  - had a long day
+  sources:
+  - premium2027
+  tier_note: 'Added U7-L6 v2 2026-10-07 — writer fact pass. Guards the mid-episode wrong beat.'
+
+- id: F-U7-025
+  topic: 'Brown v. Board (1954) — unanimous Warren decision killing the doctrine, not integrating the schools'
+  correct: 'Brown v. Board of Education of Topeka (1954): the NAACP (lead lawyer Thurgood
+    Marshall) bundled five similar cases; Chief Justice Earl Warren held all nine votes for
+    a unanimous ruling that ''separate educational facilities are inherently unequal''
+    (premium2027 ch10; princeton). The implementation order — desegregate ''with all
+    deliberate speed'' — became the South''s ''massive resistance'' loophole (premium2027
+    ch10). Teach: Brown killed the legal rule; classroom integration took another decade
+    of fights. Marshall later became the first African-American Supreme Court justice
+    (5steps ch26).'
+  falsehoods:
+  - brown.{0,30}(integrated|desegregated).{0,25}(the schools|america.{0,10}schools)
+  - warren.{0,30}(dissent|split decision|5-4)
+  sources:
+  - premium2027
+  - princeton
+  - 5steps
+  tier_note: 'Added U7-L6 v2 2026-10-07 — writer fact pass.'
+- id: F-U7-026
+  topic: 'Little Rock 1957 — Faubus used the Guard to block, Eisenhower sent federal troops to enforce'
+  correct: 'Little Rock, Arkansas, 1957: nine Black students (the Little Rock Nine) enrolled at
+    Central High; Governor Faubus mobilized the Arkansas National Guard to BLOCK their entry;
+    Eisenhower nationalized the Guard and sent federal troops to walk the students in (5steps
+    ch26; premium2027 ch10; princeton). Faubus decried ''Yankee troops'' and ''occupied
+    territory'' (premium2027 ch10). Teach as federal power enforcing a court order — federal
+    power, not Birmingham (cameras).'
+  falsehoods:
+  - faubus.{0,40}(welcomed|escorted|helped|protected).{0,20}(students|integration)
+  - little rock.{0,40}national guard.{0,20}(protect|escort)
+  sources:
+  - 5steps
+  - premium2027
+  - princeton
+  tier_note: 'Added U7-L6 v2 2026-10-07 — writer fact pass.'
+
+- id: F-U7-027
+  topic: 'Birmingham 1963 — Connor''s violence on TV, the Letter, and the road to the Civil Rights Act'
+  correct: 'Birmingham, Alabama, spring 1963: King and the Southern Christian Leadership
+    Conference campaigned against segregation; public safety commissioner Eugene ''Bull''
+    Connor met marchers — including the May 1963 children''s march (''children''s crusade'') —
+    with fire hoses, police dogs, and physical force; national TV images brought public
+    sympathy to the movement (premium2027 ch10). King, jailed, wrote the ''Letter from a
+    Birmingham Jail'': ''Wait has almost always meant Never.'' The campaign paved the way
+    for the Civil Rights Act a year later (premium2027 ch10). Teach: Birmingham is cameras
+    forcing legislation — not federal troops (that''s Little Rock).'
+  falsehoods:
+  - bull connor.{0,30}(negotiat|compromis|peaceful|welcomed)
+  - birmingham.{0,40}eisenhower.{0,20}(troops|soldiers)
+  sources:
+  - premium2027
+  tier_note: 'Added U7-L6 v2 2026-10-07 — writer fact pass.'
+
+- id: F-U7-028
+  topic: 'Civil Rights Act 1964 vs Voting Rights Act 1965 — public places/jobs vs the ballot'
+  correct: 'Civil Rights Act of 1964: outlawed segregation in public places and discrimination
+    in employment; the Equal Employment Opportunity Commission (EEOC) enforces the employment
+    clause; ''the basis of all discrimination suits to this day'' (princeton). Voting Rights
+    Act of 1965: ''cracked down on those states that denied Black people the right to vote
+    despite the Fifteenth Amendment'' (princeton). The Twenty-fourth Amendment banned the
+    poll tax (the ban is in Tier 1; no Tier 1 book states the ratification date). Teach
+    sixty-four = public places and jobs; sixty-five = the vote. Never swap.'
+  falsehoods:
+  - civil rights act.{0,25}of (nineteen )?sixty-five
+  - voting rights act.{0,25}of (nineteen )?sixty-four
+  - civil rights act.{0,30}voting rights
+  sources:
+  - princeton
+  - premium2027
+  tier_note: 'Added U7-L6 v2 2026-10-07 — writer fact pass.'
+
+- id: F-U7-029
+  topic: 'March on Washington August 1963 — more than 200,000; Lewis told to tone down his speech'
+  correct: 'March on Washington, August 1963: more than 200,000 people; King''s ''I Have a
+    Dream'' (premium2027 ch10). SNCC leader John Lewis was told by older organizers to tone
+    down his speech; his original draft urged marching ''through the heart of Dixie the way
+    Sherman did... and burn Jim Crow to the ground'' (premium2027 ch10). Teach ''more than
+    200,000,'' never 250,000.'
+  falsehoods:
+  - march on washington.{0,40}250,?000
+  sources:
+  - premium2027
+  tier_note: 'Added U7-L6 v2 2026-10-07 — writer fact pass. Corrects the archive u8-e6 v1 draft''s 250,000.'
+
+- id: F-U7-030
+  topic: 'Selma 1965 — Bloody Sunday on the Pettus Bridge as the Voting Rights Act trigger'
+  correct: 'Selma, Alabama, March 1965: after a prolonged 1964–65 voter-registration effort, the
+    march from Selma to Montgomery proceeded despite Governor George Wallace''s orders; at the
+    Edmund Pettus Bridge, police attacked marchers with clubs and tear gas — ''Bloody Sunday,''
+    broadcast on national television; the march completed later that month (premium2027 ch10).
+    The Voting Rights Act of 1965 followed. Teach Bloody Sunday as the televised trigger for
+    the VRA, not as an unopposed march.'
+  falsehoods:
+  - bloody sunday.{0,40}(unopposed|peaceful|celebrat)
+  - selma.{0,40}(wallace|police).{0,25}(welcomed|allowed|protected)
+  sources:
+  - premium2027
+  tier_note: 'Added U7-L6 v2 2026-10-07 — writer fact pass.'
+- id: F-U7-031
+  topic: 'Cuban Missile Crisis date — October 1962, not 1963 (premium2027 ch11 book error)'
+  correct: 'The Cuban Missile Crisis took place in October 1962 (premium2027 ch10 dates
+    it 1962 in prose and timeline; Britannica: ''The Cuban missile crisis took place
+    in October 1962''). premium2027 ch11''s parenthetical ''the Cuban Missile Crisis
+    (1963)'' is a book error — it contradicts the book''s own ch10. Teach 1962, never 1963.'
+  falsehoods:
+  - cuban missile crisis.{0,15}\(1963\)
+  - missile crisis.{0,25}(took place|happened|occurred).{0,10}1963
+  sources:
+  - premium2027
+  - britannica
+  tier_note: 'Added U7-L7 v2 2026-10-07 — writer fact pass. Book error confirmed by writer against Britannica same day; ch11 contradicts the book''s own ch10.'
+- id: F-U7-032
+  topic: '''Kennedy stared Khrushchev down'' myth — the crisis ended in a secret trade, not pure toughness'
+  correct: 'The crisis ended in a trade: publicly the Soviets removed their Cuban missiles
+    and the US pledged never to invade Cuba; secretly the US removed its Jupiter missiles
+    from Turkey within months (5steps ch27; premium2027 ch10; princeton: ''making it look
+    like the United States had won''). Teach ''the public saw resolve, the archives show
+    a deal'' — never a pure-toughness victory. (U7-L7 v2 teaches this as Maya''s mid-episode
+    wrong beat, corrected in flow by Marcus.)'
+  falsehoods:
+  - khrushchev.{0,30}blink.{0,40}toughness wins
+  - kennedy.{0,25}stared.{0,20}khrushchev.{0,20}down.{0,40}no (deal|trade|concession)
+  sources:
+  - 5steps
+  - premium2027
+  - princeton
+  tier_note: 'Added U7-L7 v2 2026-10-07 — writer fact pass. Guards the mid-episode wrong beat (G12 exemption applies: Marcus corrects in the immediately following turn).'
+- id: F-U7-033
+  topic: 'Limited Test Ban Treaty did NOT end the arms race or ban underground tests'
+  correct: 'The 1963 Limited (Partial) Test Ban Treaty — the US, the Soviet Union, and
+    Britain — banned nuclear tests in the atmosphere, in space, and underwater, and
+    EXEMPTED underground tests; it ''did not halt the arms race'' though it ''greatly
+    reduced atmospheric testing'' (premium2027 ch10). Teach the ban''s limits, never
+    ''the treaty ended the arms race.'''
+  falsehoods:
+  - test ban.{0,30}ended the arms race
+  - limited test ban.{0,25}halted.{0,15}arms race
+  sources:
+  - premium2027
+  - 5steps
+  tier_note: 'Added U7-L7 v2 2026-10-07 — writer fact pass. Guards the box-4 exam trap.'
+
+- id: F-U7-034
+  topic: 'Kennedy "one in three" estimate — Allison''s reported framing, not a direct quote'
+  correct: 'Historian Graham Allison (Essence of Decision) reports Kennedy''s estimate of the chances
+    of war during the crisis as "between one in three and even." Teach it attributed to Allison''s
+    account — the chances of war, not specifically a US nuclear attack on Cuba — never as Kennedy''s
+    direct quoted words, and never with a pinned timing Allison''s own accounts dispute.'
+  falsehoods:
+  - kennedy.{0,40}one in three.{0,40}(nuclear attack|attack on cuba)
+  - that number is kennedy's own
+  sources:
+  - web
+  tier_note: 'Added U7-L7 v2 2026-10-07 (Layer-3 repair). Allison''s own accounts differ on timing
+    (NPR 2012: "estimated after the fact"; Foreign Affairs 2012: "during the standoff... chance
+    of escalation to war"); the script teaches only the attributed estimate, not the disputed timing.'
