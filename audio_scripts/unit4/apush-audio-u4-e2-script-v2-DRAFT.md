@@ -5,95 +5,95 @@
 # Production: the closing tagline's em-dash is a held breath — do not rush it.
 # Pronunciation: MAR-bree (Marbury), muh-KUL-uk (McCulloch), GIB-unz (Gibbons), OG-den (Ogden), FLECH-er (Fletcher)
 
-Maya: Last time: Jefferson bought Louisiana and stretched the Constitution to do it. This time: Chief Justice John Marshall — the man who turned the weakest branch into the boss of everyone. Four cases on your sheet: Marbury v. Madison, Fletcher v. Peck, McCulloch v. Maryland, Gibbons v. Ogden. Circle the ones you couldn't explain right now. Ten minutes, and all four are yours.
+Maya: [professional broadcast tone] Last time: Jefferson bought Louisiana and stretched the Constitution to do it. This time: Chief Justice John Marshall — the man who turned the weakest branch into the boss of everyone. Four cases on your sheet: Marbury v. Madison, Fletcher v. Peck, McCulloch v. Maryland, Gibbons v. Ogden. Circle the ones you couldn't explain right now. Ten minutes, and all four are yours.
 
-Marcus: Start with the man. John Marshall takes the chief justice's chair in 1801 and keeps it for thirty-four years, a Federalist to the bone. And start with the Court he inherited: its power was ill-defined, its prestige limited. It was the branch nobody feared.
+Marcus: [measured] Start with the man. John Marshall takes the chief justice's chair in 1801 and keeps it for thirty-four years, a Federalist to the bone. And start with the Court he inherited: its power was ill-defined, its prestige limited. It was the branch nobody feared.
 
-Maya: I once spent twenty minutes arguing with a store clerk about a return. Then the manager walked over and ended the whole fight in one sentence. Somebody has to get the last word. In 1801, nobody did.
+Maya: [conversational] I once spent twenty minutes arguing with a store clerk about a return. Then the manager walked over and ended the whole fight in one sentence. Somebody has to get the last word. In 1801, nobody did.
 
-Marcus: Adams loses the election to Jefferson, and on his way out the door he stuffs the courts. The Judiciary Act of 1801 creates a batch of new judgeships, and Adams fills them with Federalists in his final weeks. The midnight appointments.
+Marcus: [measured] Adams loses the election to Jefferson, and on his way out the door he stuffs the courts. The Judiciary Act of 1801 creates a batch of new judgeships, and Adams fills them with Federalists in his final weeks. The midnight appointments.
 
-Maya: Losing the presidency and trying to keep the courts instead. Bold.
+Maya: [conversational] Losing the presidency and trying to keep the courts instead. Bold.
 
-Marcus: Jefferson takes office furious, and tells his Secretary of State, James Madison, to sit on the commissions that hadn't been delivered yet. One of the undelivered judges, William Marbury, sues Madison to force him to deliver.
+Marcus: [measured] Jefferson takes office furious, and tells his Secretary of State, James Madison, to sit on the commissions that hadn't been delivered yet. One of the undelivered judges, William Marbury, sues Madison to force him to deliver.
 
-Maya: And Marshall's a Federalist judging a fight between Adams's men and Jefferson's men. If he orders the commission delivered and Jefferson ignores him, the Court looks toothless.
+Maya: [conversational] And Marshall's a Federalist judging a fight between Adams's men and Jefferson's men. If he orders the commission delivered and Jefferson ignores him, the Court looks toothless.
 
-Marcus: So Marshall's stuck. Order the delivery and Jefferson ignores it, and the Court looks weak. Rule against Marbury outright and his own party loses for nothing. Nobody saw the trap coming.
+Marcus: [measured] So Marshall's stuck. Order the delivery and Jefferson ignores it, and the Court looks weak. Rule against Marbury outright and his own party loses for nothing. Nobody saw the trap coming.
 
 Maya: Your turn. If you were Marshall, Federalist chief justice with Jefferson breathing down your neck and no army to enforce a single word you write, what third option is hiding in there?
 [8-second pause]
 
 Marcus: He takes both doors at once. Marshall rules that Marbury did have a right to the judgeship, but the law he'd sued under, the Judiciary Act of 1789, gave the Court more power than the Constitution allows. So it was unconstitutional. Marbury loses the job. Jefferson keeps the commissions. And Marshall walks out of the same opinion with something nobody had handed the Court before: judicial review, the power to measure laws against the Constitution and throw out the ones that fail.
 
-Maya: Wait, so Marshall gave Marbury his job back, right?
+Maya: [incredulous] Wait, so Marshall gave Marbury his job back, right?
 
-Marcus: Nope. Marbury got nothing. He won the argument and lost the job. That's the whole trick. Jefferson gets the small win; Marshall gets the big one.
+Marcus: [measured] Nope. Marbury got nothing. He won the argument and lost the job. That's the whole trick. Jefferson gets the small win; Marshall gets the big one.
 
-Maya: Oh — it's a coach's challenge. Everybody freezes, the ref looks at the tape, and the ref's call stands.
+Maya: [conversational] Oh — it's a coach's challenge. Everybody freezes, the ref looks at the tape, and the ref's call stands.
 
-Marcus: Same play. His line: "It is emphatically the province and duty of the Judicial Department to say what the law is." From here on, the Court's main job is reviewing what Congress does for constitutionality.
+Marcus: [measured] Same play. His line: "It is emphatically the province and duty of the Judicial Department to say what the law is." From here on, the Court's main job is reviewing what Congress does for constitutionality.
 
-Maya: A stem will hand you a court striking down a law and ask what power it's using. The trap answer is "federal supremacy." The right one is judicial review. Supremacy is McCulloch's neighborhood, not Marbury's. And don't mix up the players: Marbury decides who interprets the Constitution; the Bank is McCulloch's fight, sixteen years later. Judicial review: Marbury v. Madison, 1803.
+Maya: [firm] A stem will hand you a court striking down a law and ask what power it's using. The trap answer is "federal supremacy." The right one is judicial review. Supremacy is McCulloch's neighborhood, not Marbury's. And don't mix up the players: Marbury decides who interprets the Constitution; the Bank is McCulloch's fight, sixteen years later. Judicial review: Marbury v. Madison, 1803.
 
-Marcus: Seven years later, the Court throws out a state law. Georgia had sold a big tract of land to private buyers in a corrupt deal, and a later legislature tried to undo the whole sale. A later buyer, Fletcher, ended up in court with Peck, his seller, over the title.
+Marcus: [measured] Seven years later, the Court throws out a state law. Georgia had sold a big tract of land to private buyers in a corrupt deal, and a later legislature tried to undo the whole sale. A later buyer, Fletcher, ended up in court with Peck, his seller, over the title.
 
-Maya: Georgia selling land, then unselling it, with buyers caught in the middle.
+Maya: [conversational] Georgia selling land, then unselling it, with buyers caught in the middle.
 
-Marcus: Marshall says the sale was a contract, and the Constitution won't let a state impair the obligation of contracts. Georgia's repeal dies. The deal was corrupt. But the contract stands.
+Marcus: [measured] Marshall says the sale was a contract, and the Constitution won't let a state impair the obligation of contracts. Georgia's repeal dies. The deal was corrupt. But the contract stands.
 
-Maya: So corruption loses, and the corrupt deal wins?
+Maya: [curious, inquisitive tone] So corruption loses, and the corrupt deal wins?
 
-Marcus: The deal wins. Students hear this one backwards: the Court wasn't blessing bribery. It was building a shield around contracts, and that shield guarded the era's business deals. Don't write that the justices approved the corruption. They protected the contract despite it.
+Marcus: [firm] The deal wins. Students hear this one backwards: the Court wasn't blessing bribery. It was building a shield around contracts, and that shield guarded the era's business deals. Don't write that the justices approved the corruption. They protected the contract despite it.
 
-Maya: The Contract Clause: Fletcher v. Peck, 1810. Two down.
+Maya: [conversational] The Contract Clause: Fletcher v. Peck, 1810. Two down.
 
-Marcus: 1819, sixteen years after Marbury. Congress has chartered the Second Bank of the United States, and Maryland doesn't like it, so Maryland taxes the Bank's Baltimore branch. The man who refused to pay — McCulloch — took the fight to the Supreme Court.
+Marcus: [measured] 1819, sixteen years after Marbury. Congress has chartered the Second Bank of the United States, and Maryland doesn't like it, so Maryland taxes the Bank's Baltimore branch. The man who refused to pay — McCulloch — took the fight to the Supreme Court.
 
-Maya: Hold on — can Congress even charter a bank? The Constitution never says the word "bank."
+Maya: [conversational] Hold on — can Congress even charter a bank? The Constitution never says the word "bank."
 
-Marcus: That was Maryland's whole case. Marshall's answer is implied powers: the Constitution never lists a bank, but it gives Congress the tools to do its job, the necessary and proper clause. If the goal is legitimate, Congress gets to choose the means.
+Marcus: [measured] That was Maryland's whole case. Marshall's answer is implied powers: the Constitution never lists a bank, but it gives Congress the tools to do its job, the necessary and proper clause. If the goal is legitimate, Congress gets to choose the means.
 
-Maya: Sounds like a blank check.
+Maya: [conversational] Sounds like a blank check.
 
-Marcus: Broad, but not a blank check. The power still has to hook to a listed power. The Bank hooks, so the Bank lives. And that's the clause Patrick Henry was scared of back in '88, now doing the Federalists' old work for them.
+Marcus: [measured] Broad, but not a blank check. The power still has to hook to a listed power. The Bank hooks, so the Bank lives. And that's the clause Patrick Henry was scared of back in '88, now doing the Federalists' old work for them.
 
 Maya: Your turn. Say Maryland's allowed to tax the Bank just a little, a small polite tax. What's stopping Maryland from raising it until the Bank chokes?
 [8-second pause]
 
 Marcus: Nothing. Marshall's whole second half is built on that: "the power to tax involves the power to destroy." A state that can tax a federal institution can kill it, and no state gets to destroy what the nation built. The tax dies. The Bank survives. Federal law outranks state law.
 
-Maya: So states can still tax plenty of things. Just not a federal institution.
+Maya: [conversational] So states can still tax plenty of things. Just not a federal institution.
 
-Marcus: Exactly. A tax they can set, they can raise to kill.
+Marcus: [measured] Exactly. A tax they can set, they can raise to kill.
 
-Maya: When a stimulus drops the words "necessary and proper," follow them: the question is McCulloch wearing a costume. They love hiding the case behind the clause name. Implied powers: McCulloch v. Maryland, 1819.
+Maya: [conversational] When a stimulus drops the words "necessary and proper," follow them: the question is McCulloch wearing a costume. They love hiding the case behind the clause name. Implied powers: McCulloch v. Maryland, 1819.
 
-Marcus: 1824, five years later. New York hands a company a monopoly on the steamboat run between New York and New Jersey. A rival runs the same waters anyway, sailing under a federal license.
+Marcus: [measured] 1824, five years later. New York hands a company a monopoly on the steamboat run between New York and New Jersey. A rival runs the same waters anyway, sailing under a federal license.
 
-Maya: And New York's monopoly just… evaporates?
+Maya: [curious, inquisitive tone] And New York's monopoly just… evaporates?
 
-Marcus: Marshall says the Constitution gives Congress the power to regulate interstate commerce. Trade between the states belongs to the federal government alone. A state can't fence off an interstate route with a monopoly.
+Marcus: [measured] Marshall says the Constitution gives Congress the power to regulate interstate commerce. Trade between the states belongs to the federal government alone. A state can't fence off an interstate route with a monopoly.
 
-Maya: So the whole case turned on a permission slip?
+Maya: [curious, inquisitive tone] So the whole case turned on a permission slip?
 
-Marcus: On whose permission slip outranks whose. The boats didn't matter. The license did.
+Marcus: [measured] On whose permission slip outranks whose. The boats didn't matter. The license did.
 
-Maya: The trap answer says the case killed all state business regulation. It didn't. It killed one state monopoly on one interstate route. Interstate commerce: Gibbons v. Ogden, 1824.
+Maya: [firm] The trap answer says the case killed all state business regulation. It didn't. It killed one state monopoly on one interstate route. Interstate commerce: Gibbons v. Ogden, 1824.
 
-Marcus: Four cases, one direction. Three move power from the states to the nation, and all four make the Court the referee.
+Marcus: [measured] Four cases, one direction. Three move power from the states to the nation, and all four make the Court the referee.
 
-Maya: Four boxes earned. Let's see if they stuck.
+Maya: [conversational] Four boxes earned. Let's see if they stuck.
 
-Maya: Four boxes, let's land them. Box one: Marbury, 1803. Marshall gives the Court the last word on what the Constitution means. Judicial review.
-Marcus: And Marbury himself got nothing: won the argument, lost the job.
-Maya: Box two: Fletcher, 1810. Georgia tries to undo a corrupt land sale, and the Court says the sale was a contract, so the contract stands.
-Marcus: Corrupt deal, protected contract.
-Maya: Box three: McCulloch, 1819. Congress can charter the Bank on implied powers, and Maryland can't tax it, because the power to tax involves the power to destroy.
-Marcus: States can tax plenty, just not a federal institution.
-Maya: Box four: Gibbons, 1824. The Bank one was McCulloch… no, wait. Steamboats. Interstate commerce belongs to Congress alone.
-Marcus: Bank's McCulloch. Boats are Gibbons. But you landed it.
-Maya: Check your boxes.
+Maya: [conversational] Four boxes, let's land them. Box one: Marbury, 1803. Marshall gives the Court the last word on what the Constitution means. Judicial review.
+Marcus: [measured] And Marbury himself got nothing: won the argument, lost the job.
+Maya: [conversational] Box two: Fletcher, 1810. Georgia tries to undo a corrupt land sale, and the Court says the sale was a contract, so the contract stands.
+Marcus: [conversational] Corrupt deal, protected contract.
+Maya: [conversational] Box three: McCulloch, 1819. Congress can charter the Bank on implied powers, and Maryland can't tax it, because the power to tax involves the power to destroy.
+Marcus: [measured] States can tax plenty, just not a federal institution.
+Maya: [conversational] Box four: Gibbons, 1824. The Bank one was McCulloch… no, wait. Steamboats. Interstate commerce belongs to Congress alone.
+Marcus: [thoughtful tone] Bank's McCulloch. Boats are Gibbons. But you landed it.
+Maya: [confident tone] Check your boxes.
 
 Maya: Three questions, AP-shaped. Say your answer before I give it. Question one: stimulus. Marshall, 1803: "It is emphatically the province and duty of the Judicial Department to say what the law is." What principle is he announcing, and what did it cost Marbury himself?
 [18-second pause]
@@ -114,7 +114,7 @@ Maya: McCulloch v. Maryland. Implied powers save the Bank. The power to tax invo
 Maya: Marshall never gave the Court a bigger gavel —
 Marcus: he gave it the last word.
 
-Maya: Next time: the war nobody won. Eighteen twelve. The capital burns. One fort holds. And out of the smoke comes the song.
+Maya: [intrigued] Next time: the war nobody won. Eighteen twelve. The capital burns. One fort holds. And out of the smoke comes the song.
 
 # Sources
 # Tier 1 — books (extracted):

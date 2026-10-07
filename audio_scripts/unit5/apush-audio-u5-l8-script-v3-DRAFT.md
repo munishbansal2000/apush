@@ -7,29 +7,29 @@
 
 ---
 
-Maya: Last time: Marcus promised the hundred and eighty thousand Black soldiers, and the document that put them in uniform. This is that document: the Emancipation Proclamation. What it freed, what it didn't, and why Lincoln waited. Four boxes: the road to the Proclamation, what it freed and what it didn't, why it mattered anyway, and Black enlistment and the verdict. Circle the ones you couldn't explain. Twelve minutes, let's go.
+Maya: [professional broadcast tone] Last time: Marcus promised the hundred and eighty thousand Black soldiers, and the document that put them in uniform. This is that document: the Emancipation Proclamation. What it freed, what it didn't, and why Lincoln waited. Four boxes: the road to the Proclamation, what it freed and what it didn't, why it mattered anyway, and Black enlistment and the verdict. Circle the ones you couldn't explain. Twelve minutes, let's go.
 
-Marcus: Start in 1861: the Union's war aim is one thing, save the Union. Lincoln says it in his First Inaugural, his words: "I have no purpose, directly or indirectly, to interfere with the institution of slavery in the States where it exists."
+Marcus: [measured] Start in 1861: the Union's war aim is one thing, save the Union. Lincoln says it in his First Inaugural, his words: "I have no purpose, directly or indirectly, to interfere with the institution of slavery in the States where it exists."
 
-Maya: So he's not running an abolition crusade. He's running a rescue mission.
+Maya: [conversational] So he's not running an abolition crusade. He's running a rescue mission.
 
-Marcus: Exactly. A year in, editor Horace Greeley publicly accuses Lincoln of foot-dragging on slavery, and Lincoln answers: "My paramount object in this struggle is to save the Union, and is not either to save or to destroy slavery. If I could save the Union without freeing any slave I would do it, and if I could save it by freeing all the slaves I would do it, and if I could save it by freeing some and leaving others alone I would also do that."
+Marcus: [measured] Exactly. A year in, editor Horace Greeley publicly accuses Lincoln of foot-dragging on slavery, and Lincoln answers: "My paramount object in this struggle is to save the Union, and is not either to save or to destroy slavery. If I could save the Union without freeing any slave I would do it, and if I could save it by freeing all the slaves I would do it, and if I could save it by freeing some and leaving others alone I would also do that."
 
-Maya: Ice cold. The Union's the fixed point; slavery's the variable.
+Maya: [conversational] Ice cold. The Union's the fixed point; slavery's the variable.
 
-Marcus: August 1862. What moved him? The enslaved themselves: in 1861, three enslaved people walk into a Union camp in Virginia. General Benjamin Butler has a problem: send them back and he's enforcing slavery, free them and he's overstepping. So he declares them contraband, property seizable in wartime, and turns the South's own chattel logic against it.
+Marcus: [measured] August 1862. What moved him? The enslaved themselves: in 1861, three enslaved people walk into a Union camp in Virginia. General Benjamin Butler has a problem: send them back and he's enforcing slavery, free them and he's overstepping. So he declares them contraband, property seizable in wartime, and turns the South's own chattel logic against it.
 
-Maya: Genuinely clever. The South insists they're property, so the Union says fine, seized property.
+Maya: [conversational] Genuinely clever. The South insists they're property, so the Union says fine, seized property.
 
-Marcus: Word spreads, and something like four hundred thousand enslaved people escape to Union lines. Congress answers with two Confiscation Acts, 1861 and 1862, seizing the enslaved of rebellion-supporters. The Radical Republicans drive it; with Southern members gone, they run Congress.
+Marcus: [measured] Word spreads, and something like four hundred thousand enslaved people escape to Union lines. Congress answers with two Confiscation Acts, 1861 and 1862, seizing the enslaved of rebellion-supporters. The Radical Republicans drive it; with Southern members gone, they run Congress.
 
-Maya: Self-emancipation first, and the law scrambles to catch up.
+Maya: [conversational] Self-emancipation first, and the law scrambles to catch up.
 
-Marcus: But Lincoln hesitates, and his reasons are math: four slave states never seceded — Kentucky, Maryland, Missouri, Delaware. Lincoln believes losing them means losing the war, so he won't risk an emancipation push that tips them out.
+Marcus: [measured] But Lincoln hesitates, and his reasons are math: four slave states never seceded — Kentucky, Maryland, Missouri, Delaware. Lincoln believes losing them means losing the war, so he won't risk an emancipation push that tips them out.
 
-Maya: So the border states were Confederate sympathizers who just never got around to seceding.
+Maya: [conversational] So the border states were Confederate sympathizers who just never got around to seceding.
 
-Marcus: No. They fought for the Union. That is the whole knife-edge: loyal states that kept slavery. Add Northern opinion, mostly not abolitionist, and the Copperheads, Democrats who wanted the war ended even at the price of letting the South go. Lincoln jailed something like fourteen thousand of them without trial and suspended habeas corpus.
+Marcus: [measured] No. They fought for the Union. That is the whole knife-edge: loyal states that kept slavery. Add Northern opinion, mostly not abolitionist, and the Copperheads, Democrats who wanted the war ended even at the price of letting the South go. Lincoln jailed something like fourteen thousand of them without trial and suspended habeas corpus.
 
 Maya: Your turn. It's the summer of 1862, and a draft proclamation is sitting in your desk drawer. What are you waiting for, and what goes wrong if you don't wait?
 
@@ -37,43 +37,43 @@ Maya: Your turn. It's the summer of 1862, and a draft proclamation is sitting in
 
 Maya: A claimable win. Announce it while losing and it reads as desperation; after a victory it reads as policy.
 
-Marcus: The books agree: he needed a battlefield victory first, so it wouldn't seem like political desperation.
+Marcus: [measured] The books agree: he needed a battlefield victory first, so it wouldn't seem like political desperation.
 
-Maya: Checking the first box. The road to the Proclamation.
+Maya: [conversational] Checking the first box. The road to the Proclamation.
 
-Marcus: Exam note: keep 1861 Lincoln and 1863 Lincoln in separate columns. The First Inaugural Lincoln isn't an abolitionist; the wartime Lincoln emancipates by military necessity. Blend them and lose the point.
+Marcus: [measured] Exam note: keep 1861 Lincoln and 1863 Lincoln in separate columns. The First Inaugural Lincoln isn't an abolitionist; the wartime Lincoln emancipates by military necessity. Blend them and lose the point.
 
-Maya: Keep this straight: Lincoln didn't free the slaves as a converted abolitionist. He freed them because it helped save the Union.
+Maya: [conversational] Keep this straight: Lincoln didn't free the slaves as a converted abolitionist. He freed them because it helped save the Union.
 
-Marcus: The opening Lincoln could claim arrived September 17, 1862, at Antietam, the bloodiest single day of the war — tactically a draw, strategically the Union victory he needed. Five days later Lincoln issues the preliminary proclamation: an ultimatum. Every state still in rebellion on January 1 will have its enslaved people declared free, but any state that came back before January 1 could keep slavery.
+Marcus: [measured] The opening Lincoln could claim arrived September 17, 1862, at Antietam, the bloodiest single day of the war — tactically a draw, strategically the Union victory he needed. Five days later Lincoln issues the preliminary proclamation: an ultimatum. Every state still in rebellion on January 1 will have its enslaved people declared free, but any state that came back before January 1 could keep slavery.
 
-Maya: So the Confederacy could have surrendered in December and kept slavery?
+Maya: [curious, inquisitive tone] So the Confederacy could have surrendered in December and kept slavery?
 
-Marcus: That was the deal. None of them took it. On January 1, 1863, the final proclamation names the states in rebellion — Arkansas, Texas, Louisiana, Mississippi, Alabama, Florida, Georgia, South Carolina, North Carolina, Virginia — and declares, in the document's real words, that all persons held as slaves there "shall be then, thenceforward, and forever free."
+Marcus: [measured] That was the deal. None of them took it. On January 1, 1863, the final proclamation names the states in rebellion — Arkansas, Texas, Louisiana, Mississippi, Alabama, Florida, Georgia, South Carolina, North Carolina, Virginia — and declares, in the document's real words, that all persons held as slaves there "shall be then, thenceforward, and forever free."
 
-Maya: There's the thunder. Now the exemptions.
+Maya: [conversational] There's the thunder. Now the exemptions.
 
-Marcus: The document exempts the four border states outright, plus the parts of the South already under Union control, down to named parishes in Louisiana and counties in Virginia. Tennessee isn't even named. It's justified as, quote, "a fit and necessary war measure": commander-in-chief power, not a moral crusade, because Lincoln had no power to touch slavery where the Constitution still protected it.
+Marcus: [measured] The document exempts the four border states outright, plus the parts of the South already under Union control, down to named parishes in Louisiana and counties in Virginia. Tennessee isn't even named. It's justified as, quote, "a fit and necessary war measure": commander-in-chief power, not a moral crusade, because Lincoln had no power to touch slavery where the Constitution still protected it.
 
-Maya: What did it sound like at the end? I pictured something soaring.
+Maya: [conversational] What did it sound like at the end? I pictured something soaring.
 
-Marcus: The real closing line: "And upon this act, sincerely believed to be an act of justice, warranted by the Constitution, upon military necessity, I invoke the considerate judgment of mankind, and the gracious favor of Almighty God." Then he signed it.
+Marcus: [measured] The real closing line: "And upon this act, sincerely believed to be an act of justice, warranted by the Constitution, upon military necessity, I invoke the considerate judgment of mankind, and the gracious favor of Almighty God." Then he signed it.
 
-Maya: My mom keeps our house deed in a shoebox, and it reads exactly like that. Whereas. Heretofore. I pictured a speech; it's a legal instrument.
+Maya: [conversational] My mom keeps our house deed in a shoebox, and it reads exactly like that. Whereas. Heretofore. I pictured a speech; it's a legal instrument.
 
-Marcus: Keep that. The most famous freedom document in American history reads like paperwork, because legally, that's all it could be.
+Marcus: [measured] Keep that. The most famous freedom document in American history reads like paperwork, because legally, that's all it could be.
 
-Maya: Checking the second box. What it freed, and what it didn't.
+Maya: [conversational] Checking the second box. What it freed, and what it didn't.
 
-Marcus: When the exam tests this document, it tests what it did not do. The border states kept slavery; that's the trap. Any choice saying the Proclamation ended slavery in the United States is wrong.
+Marcus: [measured] When the exam tests this document, it tests what it did not do. The border states kept slavery; that's the trap. Any choice saying the Proclamation ended slavery in the United States is wrong.
 
-Maya: And don't write that it freed every enslaved person. It freed enslaved people in areas in rebellion, and on day one, none of those areas were reachable.
+Maya: [firm] And don't write that it freed every enslaved person. It freed enslaved people in areas in rebellion, and on day one, none of those areas were reachable.
 
-Marcus: The paradox in one line: it freed people where Lincoln had no power to enforce it, and freed nobody where he did. On day one, legally, almost nothing changed, and the abolitionists said so at the time. Plenty of Northerners were dubious too, and the Democrats did well in the fall 1862 elections. Down South: outrage, vows of defiance.
+Marcus: [confident tone] The paradox in one line: it freed people where Lincoln had no power to enforce it, and freed nobody where he did. On day one, legally, almost nothing changed, and the abolitionists said so at the time. Plenty of Northerners were dubious too, and the Democrats did well in the fall 1862 elections. Down South: outrage, vows of defiance.
 
-Maya: But the enslaved weren't waiting on anyone's permission. They'd already been running.
+Maya: [conversational] But the enslaved weren't waiting on anyone's permission. They'd already been running.
 
-Marcus: And now the running had a destination. As Union armies pushed south, the Proclamation took effect behind them. The last place it reached was Texas: June 19, 1865, Galveston. Juneteenth. Then Europe: the South bet everything on cotton, Britain's mills need our cotton, so Britain will recognize us. Two problems. Britain had other places to grow cotton, including Egypt and India, and Britain and France had both abolished slavery. Once the war was officially against slavery, no European government could side with the Confederacy without looking like it fought for slavery.
+Marcus: [measured] And now the running had a destination. As Union armies pushed south, the Proclamation took effect behind them. The last place it reached was Texas: June 19, 1865, Galveston. Juneteenth. Then Europe: the South bet everything on cotton, Britain's mills need our cotton, so Britain will recognize us. Two problems. Britain had other places to grow cotton, including Egypt and India, and Britain and France had both abolished slavery. Once the war was officially against slavery, no European government could side with the Confederacy without looking like it fought for slavery.
 
 Maya: Your turn. You're Britain's prime minister in late 1862. Your textile mills are starving and the Confederacy is offering cotton for recognition. What changed about the war that makes saying yes politically impossible?
 
@@ -81,51 +81,51 @@ Maya: Your turn. You're Britain's prime minister in late 1862. Your textile mill
 
 Maya: The war's meaning. It's not a rebellion anymore; it's a war against slavery. Recognize the Confederacy and you're endorsing slavery, which your own voters had abolished a generation earlier.
 
-Marcus: On the cotton side I'll be honest: nobody's fully sure how to weigh the cotton shortage against the slavery politics. The books pair them. Alternative supplies loosened the squeeze, and the moral framing closed the door. Take both together.
+Marcus: [thoughtful tone] On the cotton side I'll be honest: nobody's fully sure how to weigh the cotton shortage against the slavery politics. The books pair them. Alternative supplies loosened the squeeze, and the moral framing closed the door. Take both together.
 
-Maya: Third box checked. Why it mattered anyway.
+Maya: [confident tone] Third box checked. Why it mattered anyway.
 
-Marcus: If a question asks why Europe stayed out, the exam wants more than one cause: alternative cotton sources plus the slavery framing. Single-cause answers are how this question steals points.
+Marcus: [measured] If a question asks why Europe stayed out, the exam wants more than one cause: alternative cotton sources plus the slavery framing. Single-cause answers are how this question steals points.
 
-Maya: The trap answer: saying the Proclamation single-handedly stopped Britain. It helped close a door the cotton supply and British abolitionism had already half-shut.
+Maya: [firm] The trap answer: saying the Proclamation single-handedly stopped Britain. It helped close a door the cotton supply and British abolitionism had already half-shut.
 
-Maya: The part you teased last time: the Proclamation didn't just declare. It recruited.
+Maya: [conversational] The part you teased last time: the Proclamation didn't just declare. It recruited.
 
-Marcus: Built into the document: persons of suitable condition, quote, "will be received into the armed service of the United States." Nearly a hundred and eighty thousand Black men enlisted, about one in ten Union soldiers, the most famous the 54th Massachusetts, one of the first Black regiments raised in the North after the Proclamation.
+Marcus: [measured] Built into the document: persons of suitable condition, quote, "will be received into the armed service of the United States." Nearly a hundred and eighty thousand Black men enlisted, about one in ten Union soldiers, the most famous the 54th Massachusetts, one of the first Black regiments raised in the North after the Proclamation.
 
-Maya: Wait — that's the Glory regiment. The Denzel Washington movie. My dad made me watch it on a rainy Sunday.
+Maya: [incredulous] Wait — that's the Glory regiment. The Denzel Washington movie. My dad made me watch it on a rainy Sunday.
 
-Marcus: The same one. July 18, 1863, they led the assault on Fort Wagner outside Charleston. Colonel Robert Gould Shaw was killed and the regiment lost about half its men, but recruiting surged after.
+Marcus: [measured] The same one. July 18, 1863, they led the assault on Fort Wagner outside Charleston. Colonel Robert Gould Shaw was killed and the regiment lost about half its men, but recruiting surged after.
 
-Maya: They weren't paid the same, though.
+Maya: [conversational] They weren't paid the same, though.
 
-Marcus: Ten dollars a month, three withheld for clothing, against thirteen for white soldiers. Congress fixed it in June 1864, retroactive. But the fight lasted most of the war: emancipation as a war aim did not mean equality.
+Marcus: [measured] Ten dollars a month, three withheld for clothing, against thirteen for white soldiers. Congress fixed it in June 1864, retroactive. But the fight lasted most of the war: emancipation as a war aim did not mean equality.
 
-Maya: So the verdict. Did it free anyone?
+Maya: [curious, inquisitive tone] So the verdict. Did it free anyone?
 
-Marcus: On January 1, 1863? Effectively no one; the lines hadn't moved yet. But the Proclamation advanced with the armies. In August 1863, Lincoln had written that the emancipation policy and Black troops were, his words, "the heaviest blow yet dealt to the rebellion."
+Marcus: [measured] On January 1, 1863? Effectively no one; the lines hadn't moved yet. But the Proclamation advanced with the armies. In August 1863, Lincoln had written that the emancipation policy and Black troops were, his words, "the heaviest blow yet dealt to the rebellion."
 
-Maya: His own scorecard.
+Maya: [conversational] His own scorecard.
 
-Marcus: The legal finish came with the 13th Amendment, ratified in December 1865: that's what actually ended slavery everywhere, including the border states.
+Marcus: [measured] The legal finish came with the 13th Amendment, ratified in December 1865: that's what actually ended slavery everywhere, including the border states.
 
-Maya: Fourth box. Black enlistment and the verdict, checked.
+Maya: [conversational] Fourth box. Black enlistment and the verdict, checked.
 
-Marcus: Last exam note: split Proclamation effects into two columns, immediate and long-term. Immediate: almost nothing, legally. Long-term: Black enlistment, European isolation, freedom following the armies.
+Marcus: [measured] Last exam note: split Proclamation effects into two columns, immediate and long-term. Immediate: almost nothing, legally. Long-term: Black enlistment, European isolation, freedom following the armies.
 
-Maya: And the common mistake: writing that the Proclamation had no real effect because it freed nobody on day one. Tell that to the hundred and eighty thousand.
+Maya: [firm] And the common mistake: writing that the Proclamation had no real effect because it freed nobody on day one. Tell that to the hundred and eighty thousand.
 
-Maya: Four boxes, let's land them. One: the road. Lincoln starts the war to save the Union, not end slavery; his Greeley letter says so. Enslaved people force the issue: Butler's contraband ruling, four hundred thousand escapes, the Confiscation Acts. Lincoln holds back for the border states he can't lose.
+Maya: [conversational] Four boxes, let's land them. One: the road. Lincoln starts the war to save the Union, not end slavery; his Greeley letter says so. Enslaved people force the issue: Butler's contraband ruling, four hundred thousand escapes, the Confiscation Acts. Lincoln holds back for the border states he can't lose.
 
-Marcus: Two: the document. Preliminary September 22 after Antietam; final January 1, 1863. It freed enslaved people in areas in rebellion, exempted the border states and Union-held pockets, and read like a legal instrument.
+Marcus: [conversational] Two: the document. Preliminary September 22 after Antietam; final January 1, 1863. It freed enslaved people in areas in rebellion, exempted the border states and Union-held pockets, and read like a legal instrument.
 
-Maya: Three: why it mattered. Abolitionists grumbled, Democrats gained in the fall, the South vowed defiance. But Europe stayed out, and freedom moved with the Union lines to Juneteenth.
+Maya: [conversational] Three: why it mattered. Abolitionists grumbled, Democrats gained in the fall, the South vowed defiance. But Europe stayed out, and freedom moved with the Union lines to Juneteenth.
 
-Marcus: Four: the soldiers and the verdict. Nearly a hundred and eighty thousand Black men in uniform, the 54th at Fort Wagner, and the equal-pay fight settled in June of '64.
+Marcus: [conversational] Four: the soldiers and the verdict. Nearly a hundred and eighty thousand Black men in uniform, the 54th at Fort Wagner, and the equal-pay fight settled in June of '64.
 
-Maya: June of '64, the pay fix, right?
+Maya: [curious, inquisitive tone] June of '64, the pay fix, right?
 
-Marcus: Right. And the legal finish belongs to the 13th Amendment.
+Marcus: [conversational] Right. And the legal finish belongs to the 13th Amendment.
 
 Maya: Three questions, AP-shaped. Say your answer before I give it. First: why did Lincoln wait for Antietam before issuing the preliminary proclamation?
 
@@ -151,15 +151,15 @@ Maya: One more, fast. Why couldn't Lincoln free the border states' enslaved peop
 
 Maya: He acted as commander-in-chief, on war powers, and those only reached areas in rebellion. Freeing slaves in loyal states would have exceeded that justification and risked pushing the border states out.
 
-Maya: Freedom followed the armies.
+Maya: [professional broadcast tone] Freedom followed the armies.
 
-Marcus: Freedom followed the armies.
+Marcus: [professional broadcast tone] Freedom followed the armies.
 
-Maya: Check your boxes.
+Maya: [confident tone] Check your boxes.
 
-Maya: Next time: the 13th Amendment finishes the legal work, but paper freedom and real freedom turn out to be different things.
+Maya: [intrigued] Next time: the 13th Amendment finishes the legal work, but paper freedom and real freedom turn out to be different things.
 
-Marcus: Reconstruction plans. See you there.
+Marcus: [professional broadcast tone] Reconstruction plans. See you there.
 
 ---
 

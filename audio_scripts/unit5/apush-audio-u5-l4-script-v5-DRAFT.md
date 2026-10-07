@@ -13,45 +13,45 @@
 
 ---
 
-Maya: Last time: Dred Scott sues for his freedom, and the Supreme Court tries to settle slavery once and for all. Spoiler: it does the opposite. Four boxes on my sheet: the man and the lawsuit, Taney's three holdings, the two dissenters, and the political explosion. Circle the ones you couldn't explain right now. Give me about ten minutes.
+Maya: [professional broadcast tone] Last time: Dred Scott sues for his freedom, and the Supreme Court tries to settle slavery once and for all. Spoiler: it does the opposite. Four boxes on my sheet: the man and the lawsuit, Taney's three holdings, the two dissenters, and the political explosion. Circle the ones you couldn't explain right now. Give me about ten minutes.
 
-Marcus: The case reaches Washington after nearly eleven years in the courts. Chief Justice Roger Taney won't just rule on it. He'll end the slavery debate for good.
+Marcus: [measured] The case reaches Washington after nearly eleven years in the courts. Chief Justice Roger Taney won't just rule on it. He'll end the slavery debate for good.
 
-Maya: Start with the human. Who was Dred Scott?
+Maya: [curious, inquisitive tone] Start with the human. Who was Dred Scott?
 
-Marcus: An enslaved man in St. Louis, Missouri. His owner, an army surgeon named John Emerson, was posted north: first Illinois, a free state, then the Wisconsin Territory, free soil too. Scott spent the better part of a decade there. He married Harriet, another enslaved woman, and they had two daughters. Back in Missouri, in April 1846, the Scotts walked into the Old Courthouse in St. Louis and sued for their freedom.
+Marcus: [measured] An enslaved man in St. Louis, Missouri. His owner, an army surgeon named John Emerson, was posted north: first Illinois, a free state, then the Wisconsin Territory, free soil too. Scott spent the better part of a decade there. He married Harriet, another enslaved woman, and they had two daughters. Back in Missouri, in April 1846, the Scotts walked into the Old Courthouse in St. Louis and sued for their freedom.
 
-Maya: I stood in that courtroom on a school trip. It's right across from the Gateway Arch, and it's tiny. You can't believe a case that big started in a room that small.
+Maya: [conversational] I stood in that courtroom on a school trip. It's right across from the Gateway Arch, and it's tiny. You can't believe a case that big started in a room that small.
 
-Marcus: Their argument was Missouri's old rule: once free, always free. And in 1850 a St. Louis jury agreed. They won.
+Marcus: [measured] Their argument was Missouri's old rule: once free, always free. And in 1850 a St. Louis jury agreed. They won.
 
-Maya: Wait, so he won?
+Maya: [incredulous] Wait, so he won?
 
-Marcus: He won the round. Then the widow Emerson appealed, and in 1852 the Missouri Supreme Court took the freedom back. By 1854 the case was in federal court. The Supreme Court heard it twice in 1856 and ruled in March 1857. Four courts, eleven years, and a misspelled docket: a clerk wrote Sandford for Sanford.
+Marcus: [measured] He won the round. Then the widow Emerson appealed, and in 1852 the Missouri Supreme Court took the freedom back. By 1854 the case was in federal court. The Supreme Court heard it twice in 1856 and ruled in March 1857. Four courts, eleven years, and a misspelled docket: a clerk wrote Sandford for Sanford.
 
-Maya: Sanford — Irene's brother, handed control of the estate.
+Maya: [conversational] Sanford — Irene's brother, handed control of the estate.
 
-Marcus: Exactly. And nobody's fully sure why 1846. Maybe he'd offered to buy his freedom and been refused. Maybe he feared being sold. The record doesn't say.
+Marcus: [thoughtful tone] Exactly. And nobody's fully sure why 1846. Maybe he'd offered to buy his freedom and been refused. Maybe he feared being sold. The record doesn't say.
 
-Maya: Eleven years of maybe.
+Maya: [conversational] Eleven years of maybe.
 
-Marcus: Common mistake, and it's mine to flag: don't write that Scott won his freedom in court. He won one round, in 1850, and lost every round after.
+Marcus: [firm] Common mistake, and it's mine to flag: don't write that Scott won his freedom in court. He won one round, in 1850, and lost every round after.
 
-Maya: So the case finally reaches Taney. And he goes big.
+Maya: [conversational] So the case finally reaches Taney. And he goes big.
 
-Marcus: He could have ruled narrowly: just said Scott stays enslaved, done. Instead, when others wanted to ignore the big questions, Taney chose to attack them head-on. He issued three holdings, and each one was a bomb.
+Marcus: [measured] He could have ruled narrowly: just said Scott stays enslaved, done. Instead, when others wanted to ignore the big questions, Taney chose to attack them head-on. He issued three holdings, and each one was a bomb.
 
-Maya: Slow. One at a time.
+Maya: [conversational] Slow. One at a time.
 
-Marcus: First: no Black person can be a U.S. citizen. Not just enslaved people. Taney wrote that no African Americans, not even free men and women, were citizens, which meant Scott couldn't even bring the suit. No citizenship, no standing.
+Marcus: [measured] First: no Black person can be a U.S. citizen. Not just enslaved people. Taney wrote that no African Americans, not even free men and women, were citizens, which meant Scott couldn't even bring the suit. No citizenship, no standing.
 
-Maya: Holding one. Keep going.
+Maya: [conversational] Holding one. Keep going.
 
-Marcus: Second: Congress has no power to ban slavery in the territories. Banning it strips a slaveholder of property without due process. Which makes the third: the Missouri Compromise is unconstitutional. Thirty-seven years of settled law, gone. Every territory in the country is now open to slavery.
+Marcus: [measured] Second: Congress has no power to ban slavery in the territories. Banning it strips a slaveholder of property without due process. Which makes the third: the Missouri Compromise is unconstitutional. Thirty-seven years of settled law, gone. Every territory in the country is now open to slavery.
 
-Marcus: Exam trap, and it's a real one: don't compress the three holdings into one. The citizenship holding kills standing; the other two kill Congress's power in the territories. The exam tests them separately.
+Marcus: [firm] Exam trap, and it's a real one: don't compress the three holdings into one. The citizenship holding kills standing; the other two kill Congress's power in the territories. The exam tests them separately.
 
-Maya: So popular sovereignty, the Kansas-Nebraska deal where the settlers vote, is dead too.
+Maya: [conversational] So popular sovereignty, the Kansas-Nebraska deal where the settlers vote, is dead too.
 
 Marcus: Dead on arrival. Your turn. If the Court says Congress can't ban slavery in the territories, what's left of a territorial vote on slavery?
 
@@ -59,23 +59,23 @@ Marcus: Dead on arrival. Your turn. If the Court says Congress can't ban slavery
 
 Maya: Nothing. A vote can't do what Congress itself can't. The whole Kansas-Nebraska bargain just evaporated.
 
-Marcus: Seven to two. The North reads the ruling as proof of a Slave Power: the South doesn't just participate in the federal government, it owns it.
+Marcus: [measured] Seven to two. The North reads the ruling as proof of a Slave Power: the South doesn't just participate in the federal government, it owns it.
 
-Maya: And the sentence everyone still quotes?
+Maya: [curious, inquisitive tone] And the sentence everyone still quotes?
 
-Marcus: Taney wrote that Black people had "no rights which the white man was bound to respect," his words, in the opinion. That sentence is why the country never let this decision fade.
+Marcus: [measured] Taney wrote that Black people had "no rights which the white man was bound to respect," his words, in the opinion. That sentence is why the country never let this decision fade.
 
-Maya: Checking that one. The three holdings. Now, two justices said no, and I want the no.
+Maya: [confident tone] Checking that one. The three holdings. Now, two justices said no, and I want the no.
 
-Marcus: John McLean said no. And Benjamin Curtis of Massachusetts said no with a history lesson. Curtis said Taney's history was simply wrong: at the Founding, free Black men voted in five of the original thirteen states. They'd helped make the Constitution, so they were part of the people it was made for. Curtis also made the lawyer's point. Once the Court ruled Scott couldn't sue, it should have stopped there. You don't throw out a case and then rewrite the territories.
+Marcus: [measured] John McLean said no. And Benjamin Curtis of Massachusetts said no with a history lesson. Curtis said Taney's history was simply wrong: at the Founding, free Black men voted in five of the original thirteen states. They'd helped make the Constitution, so they were part of the people it was made for. Curtis also made the lawyer's point. Once the Court ruled Scott couldn't sue, it should have stopped there. You don't throw out a case and then rewrite the territories.
 
-Maya: Five of thirteen. That's not a footnote.
+Maya: [conversational] Five of thirteen. That's not a footnote.
 
-Marcus: Then Curtis resigned in 1857, with this case's fallout all over it. A justice walking away mid-crisis. People noticed.
+Marcus: [measured] Then Curtis resigned in 1857, with this case's fallout all over it. A justice walking away mid-crisis. People noticed.
 
-Maya: Common mistake from my side of the desk: don't give the dissent to Taney. He wrote the majority; Curtis wrote the history lesson. Flip them and the whole answer inverts.
+Maya: [firm] Common mistake from my side of the desk: don't give the dissent to Taney. He wrote the majority; Curtis wrote the history lesson. Flip them and the whole answer inverts.
 
-Marcus: Another one for the exam: the Fourteenth Amendment is Dred Scott's undoing. Put "no rights which the white man was bound to respect" next to "all persons born or naturalized" and the contrast does half your analysis.
+Marcus: [measured] Another one for the exam: the Fourteenth Amendment is Dred Scott's undoing. Put "no rights which the white man was bound to respect" next to "all persons born or naturalized" and the contrast does half your analysis.
 
 Maya: Taney wanted to settle it. Your turn. His bet: declare the answer already settled and the debate ends. In 1857, with Kansas still bleeding, does that calm the country, or detonate it?
 
@@ -83,45 +83,45 @@ Maya: Taney wanted to settle it. Your turn. His bet: declare the answer already 
 
 Marcus: Detonate. Tell both sides the rules are fixed forever, and neither side accepts the fix.
 
-Marcus: The North heard "slavery is national now": Congress couldn't stop it anywhere, so the Republican idea of containment just died. The South heard vindication.
+Marcus: [measured] The North heard "slavery is national now": Congress couldn't stop it anywhere, so the Republican idea of containment just died. The South heard vindication.
 
-Maya: What did Lincoln do with it?
+Maya: [curious, inquisitive tone] What did Lincoln do with it?
 
-Marcus: In June 1857, in Springfield, Illinois, he answered on the history. The decision, he said, rested on "assumed historical facts which were not really true." Taney insisted the founders never meant to include Black people. Lincoln pointed at Curtis: free Black men voted in five of thirteen states. He said the Declaration was once "thought to include all," now torn apart to make slavery "universal and eternal."
+Marcus: [measured] In June 1857, in Springfield, Illinois, he answered on the history. The decision, he said, rested on "assumed historical facts which were not really true." Taney insisted the founders never meant to include Black people. Lincoln pointed at Curtis: free Black men voted in five of thirteen states. He said the Declaration was once "thought to include all," now torn apart to make slavery "universal and eternal."
 
-Maya: So the real fight was over the history.
+Maya: [conversational] So the real fight was over the history.
 
-Marcus: Because Taney's whole case rested on what the founders intended.
+Marcus: [measured] Because Taney's whole case rested on what the founders intended.
 
-Maya: And nobody accepted the settlement.
+Maya: [conversational] And nobody accepted the settlement.
 
-Marcus: Nobody. Douglas would try later, at Freeport, with a dodge that let the territories block slavery anyway. But the verdict is the simplest in this unit: the Court reached for a final answer and got a louder fight.
+Marcus: [measured] Nobody. Douglas would try later, at Freeport, with a dodge that let the territories block slavery anyway. But the verdict is the simplest in this unit: the Court reached for a final answer and got a louder fight.
 
-Maya: Did Scott himself ever get free?
+Maya: [curious, inquisitive tone] Did Scott himself ever get free?
 
-Marcus: The Scotts were freed in the months after the ruling. Dred Scott died in 1858, free for a little over a year.
+Marcus: [serious tone] The Scotts were freed in the months after the ruling. Dred Scott died in 1858, free for a little over a year.
 
-Maya: Watch the calendar on this one: the House Divided speech belongs in 1858. Next lesson. Lincoln's 1857 answer was about Taney's history.
+Maya: [conversational] Watch the calendar on this one: the House Divided speech belongs in 1858. Next lesson. Lincoln's 1857 answer was about Taney's history.
 
-Marcus: For the why-didn't-it-settle-it question: the answer isn't the law, it's the politics. Both sides read the same ruling as an attack. Name the two readings and you've got it.
+Marcus: [measured] For the why-didn't-it-settle-it question: the answer isn't the law, it's the politics. Both sides read the same ruling as an attack. Name the two readings and you've got it.
 
-Maya: Four boxes, all of them earned. Let's land them. Box one: the man and the lawsuit. Enslaved in Missouri, years on free soil, marries Harriet, sues in 1846. Wins in 1850, loses in 1852, loses in federal court, Supreme Court rules March 1857. Nearly eleven years.
+Maya: [conversational] Four boxes, all of them earned. Let's land them. Box one: the man and the lawsuit. Enslaved in Missouri, years on free soil, marries Harriet, sues in 1846. Wins in 1850, loses in 1852, loses in federal court, Supreme Court rules March 1857. Nearly eleven years.
 
-Marcus: Box two's yours too.
+Marcus: [conversational] Box two's yours too.
 
-Maya: Box two: the three holdings. No Black citizenship, so no right to sue. Congress can't ban slavery in the territories. Missouri Compromise unconstitutional. Seven to two, and the sentence: "no rights which the white man was bound to respect."
+Maya: [conversational] Box two: the three holdings. No Black citizenship, so no right to sue. Congress can't ban slavery in the territories. Missouri Compromise unconstitutional. Seven to two, and the sentence: "no rights which the white man was bound to respect."
 
-Marcus: Box three.
+Marcus: [conversational] Box three.
 
-Maya: Box three: the dissents. Curtis of Massachusetts says Taney's history is wrong: free Black men voted in five of thirteen states. McLean's the other no. Curtis resigns that year.
+Maya: [conversational] Box three: the dissents. Curtis of Massachusetts says Taney's history is wrong: free Black men voted in five of thirteen states. McLean's the other no. Curtis resigns that year.
 
-Marcus: And box four.
+Marcus: [conversational] And box four.
 
-Maya: Box four: the explosion. North hears Slave Power proof, South hears vindication, Lincoln answers in Springfield in June of '57. Or was it '58?
+Maya: [curious, inquisitive tone] Box four: the explosion. North hears Slave Power proof, South hears vindication, Lincoln answers in Springfield in June of '57. Or was it '58?
 
-Marcus: '57. The '58 speech is next lesson.
+Marcus: [measured] '57. The '58 speech is next lesson.
 
-Maya: Right. Tried to settle slavery, settled nothing.
+Maya: [conversational] Right. Tried to settle slavery, settled nothing.
 
 Maya: Three questions, AP-shaped. Say your answer before I give it. First: what were Taney's three holdings, and why did the citizenship holding reach past Dred Scott himself?
 
@@ -147,11 +147,11 @@ Maya: One more, fast. The Scotts won in 1850 and lost in 1852. Same facts — wh
 
 Maya: The court changed the rule. In 1850 a St. Louis jury followed "once free, always free." In 1852 the Missouri Supreme Court threw that doctrine out. Same lawsuit, new law.
 
-Maya: Check your boxes.
+Maya: [confident tone] Check your boxes.
 
-Maya: The Court tried to end the debate — and ended the middle instead. (held breath: do not rush it)
+Maya: [professional broadcast tone] The Court tried to end the debate — and ended the middle instead. (held breath: do not rush it)
 
-Maya: Next time: Lincoln and Douglas, seven debates across Illinois, and the strangest outcome in American politics. The man who loses the election wins the future.
+Maya: [intrigued] Next time: Lincoln and Douglas, seven debates across Illinois, and the strangest outcome in American politics. The man who loses the election wins the future.
 
 ---
 

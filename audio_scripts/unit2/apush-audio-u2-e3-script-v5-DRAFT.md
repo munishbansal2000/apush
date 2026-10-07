@@ -4,39 +4,39 @@
 # Read note: Maya tracks three boxes on her episode sheet and checks each one off in her own voice as the episode earns it. [10-second pause] marks are production notes for real silence in prediction beats; [15-second pause] and [20-second pause] marks are real silence for the CER self-test questions; [5-second pause] is the fast bonus — they never go to the voice. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence. The em dash in the closing tagline is a held beat: leave a full breath between Marcus's "They came to build a city on a hill —" and Maya's landing line. Do not rush it.
 # Pronunciation: AR-bell-uh (Arbella), WIN-thrup (Winthrop), MET-uh-kom (Metacom), wam-puh-NOH-ug (Wampanoag), nar-uh-GAN-sit (Narragansett), kuh-NON-ih-kuss (Canonicus), mee-an-toh-NOH-mee (Miantonomi), an-tee-NOH-mee-un (antinomian), SAH-suh-mun (Sassamon), uh-KWID-nek (Aquidneck)
 
-Maya: Last time: indentured servants in the Chesapeake, Bacon's Rebellion burning Jamestown in 1676, and planters answering with slave codes. This time we go north, to the colony that crossed an ocean for God and then started exiling its own people. A governor's sermon about a city on a hill. Two dissenters Boston couldn't silence. And a war that nearly erased English New England. Three boxes: the Great Migration and the covenant towns, the banished dissenters, and King Philip's War. Circle the ones you couldn't explain right now. Twelve minutes, and you'll land all three.
+Maya: [professional broadcast tone] Last time: indentured servants in the Chesapeake, Bacon's Rebellion burning Jamestown in 1676, and planters answering with slave codes. This time we go north, to the colony that crossed an ocean for God and then started exiling its own people. A governor's sermon about a city on a hill. Two dissenters Boston couldn't silence. And a war that nearly erased English New England. Three boxes: the Great Migration and the covenant towns, the banished dissenters, and King Philip's War. Circle the ones you couldn't explain right now. Twelve minutes, and you'll land all three.
 
-Marcus: Start with why they left. In England, Charles the First and his Archbishop Laud were squeezing Puritan preachers, and the economy back home had no room for them either. In 1629 the king chartered the Massachusetts Bay Company, and the charter didn't pin the company's headquarters in England. So the government sailed with the ships.
+Marcus: [measured] Start with why they left. In England, Charles the First and his Archbishop Laud were squeezing Puritan preachers, and the economy back home had no room for them either. In 1629 the king chartered the Massachusetts Bay Company, and the charter didn't pin the company's headquarters in England. So the government sailed with the ships.
 
-Maya: The whole government crossed the ocean?
+Maya: [curious, inquisitive tone] The whole government crossed the ocean?
 
-Marcus: The whole company government. Self-rule, packed in a hull. Winthrop's fleet landed in 1630, and before they even came ashore, Winthrop preached the sermon: "A Model of Christian Charity." The famous line: the colony would be as a city upon a hill, and "the eyes of all people are upon us."
+Marcus: [measured] The whole company government. Self-rule, packed in a hull. Winthrop's fleet landed in 1630, and before they even came ashore, Winthrop preached the sermon: "A Model of Christian Charity." The famous line: the colony would be as a city upon a hill, and "the eyes of all people are upon us."
 
-Maya: Hold on. The Pilgrims, 1620: same people, right? Funny hats, Thanksgiving?
+Maya: [curious, inquisitive tone] Hold on. The Pilgrims, 1620: same people, right? Funny hats, Thanksgiving?
 
-Marcus: Different decade, different boat. Plymouth, 1620: Separatists, who wanted out of the Church of England entirely. The Bay Puritans wanted to purify it from the inside.
+Marcus: [measured] Different decade, different boat. Plymouth, 1620: Separatists, who wanted out of the Church of England entirely. The Bay Puritans wanted to purify it from the inside.
 
-Maya: So the funny-hat Thanksgiving people and the city-on-a-hill people are two different outfits.
+Maya: [conversational] So the funny-hat Thanksgiving people and the city-on-a-hill people are two different outfits.
 
-Marcus: The city-on-a-hill people would have thrown a book at the hats. But yes.
+Marcus: [measured] The city-on-a-hill people would have thrown a book at the hats. But yes.
 
-Maya: I'd heard "city upon a hill" in a graduation speech. Never knew it was a sermon, and kind of a threat.
+Maya: [conversational] I'd heard "city upon a hill" in a graduation speech. Never knew it was a sermon, and kind of a threat.
 
-Marcus: A threat is right. Succeed, and the world watches. Fail, and the world watches. Presidents keep borrowing the line. Kennedy did, Reagan did, and why it keeps working, nobody's fully sure. It's a great sentence that means whatever the speaker needs.
+Marcus: [thoughtful tone] A threat is right. Succeed, and the world watches. Fail, and the world watches. Presidents keep borrowing the line. Kennedy did, Reagan did, and why it keeps working, nobody's fully sure. It's a great sentence that means whatever the speaker needs.
 
-Maya: How big was the migration itself?
+Maya: [curious, inquisitive tone] How big was the migration itself?
 
-Marcus: By 1640, more than twenty thousand had crossed. And they weren't Chesapeake fortune-hunters. These were middling sorts, farmers, carpenters, textile workers, and they came as families. Ten new towns in the first decade after 1630, and more than a hundred and thirty by the end of the century.
+Marcus: [measured] By 1640, more than twenty thousand had crossed. And they weren't Chesapeake fortune-hunters. These were middling sorts, farmers, carpenters, textile workers, and they came as families. Ten new towns in the first decade after 1630, and more than a hundred and thirty by the end of the century.
 
-Maya: So what made a Puritan town a Puritan town? Not just the church.
+Maya: [conversational] So what made a Puritan town a Puritan town? Not just the church.
 
-Marcus: The covenant. A covenant was a contract with God, and it ran everything. Believers signed a church covenant, and then the town itself covenanted. Dedham, 1636: the whole town signed one, covering how they'd live, settle disputes, tax themselves. The meetinghouse stood at the center. Church on Sunday, town meeting on Monday.
+Marcus: [measured] The covenant. A covenant was a contract with God, and it ran everything. Believers signed a church covenant, and then the town itself covenanted. Dedham, 1636: the whole town signed one, covering how they'd live, settle disputes, tax themselves. The meetinghouse stood at the center. Church on Sunday, town meeting on Monday.
 
-Maya: I toured a reconstructed meetinghouse in sixth grade and thought it was a barn. Their whole universe was a building I'd have walked right past.
+Maya: [conversational] I toured a reconstructed meetinghouse in sixth grade and thought it was a barn. Their whole universe was a building I'd have walked right past.
 
-Marcus: Box one, exam tip: watch for the Pilgrim–Puritan swap. Plymouth, 1620, Separatists, out of the Church. Massachusetts Bay, 1630, Puritans, purify it from inside. Read the year before you pick.
+Marcus: [measured] Box one, exam tip: watch for the Pilgrim–Puritan swap. Plymouth, 1620, Separatists, out of the Church. Massachusetts Bay, 1630, Puritans, purify it from inside. Read the year before you pick.
 
-Maya: And the common mistake for box one: don't write that they crossed an ocean for religious freedom for everyone. They came for their own. Ask the dissenters.
+Maya: [firm] And the common mistake for box one: don't write that they crossed an ocean for religious freedom for everyone. They came for their own. Ask the dissenters.
 
 Maya: Checking that one. Your turn: a town runs by covenant — church and town fused into one contract with God. So when a minister starts preaching something Boston doesn't like, what happens to him?
 
@@ -44,49 +44,49 @@ Maya: Checking that one. Your turn: a town runs by covenant — church and town 
 
 Maya: He doesn't get debated. He gets banished. Box two: the dissenters.
 
-Marcus: First up: Roger Williams, minister at Salem. Sharp, brilliant, impossible. He said two things Boston couldn't stand: the colony had no right to Native land it hadn't bought fair and square, and the government had no business meddling in religion. Soul liberty, he called it: every conscience answers to God alone.
+Marcus: [measured] First up: Roger Williams, minister at Salem. Sharp, brilliant, impossible. He said two things Boston couldn't stand: the colony had no right to Native land it hadn't bought fair and square, and the government had no business meddling in religion. Soul liberty, he called it: every conscience answers to God alone.
 
-Maya: And Boston's answer to that?
+Maya: [curious, inquisitive tone] And Boston's answer to that?
 
-Marcus: In 1635 the General Court banished him. They meant to ship him back to England. He fled south in the winter instead, and by the spring of 1636 he'd bought land from the Narragansetts, the sachems Canonicus and Miantonomi, and founded Providence.
+Marcus: [measured] In 1635 the General Court banished him. They meant to ship him back to England. He fled south in the winter instead, and by the spring of 1636 he'd bought land from the Narragansetts, the sachems Canonicus and Miantonomi, and founded Providence.
 
-Maya: When he bought that land, did the Narragansetts think they were selling it the same way he thought he was buying it?
+Maya: [curious, inquisitive tone] When he bought that land, did the Narragansetts think they were selling it the same way he thought he was buying it?
 
-Marcus: Honestly? Nobody's fully sure. A deed meant one thing to Williams. To the sachems, it may have meant permission to share the land.
+Marcus: [thoughtful tone] Honestly? Nobody's fully sure. A deed meant one thing to Williams. To the sachems, it may have meant permission to share the land.
 
-Marcus: Then the bigger shock: Anne Hutchinson. She arrived in 1634 and started hosting Bible meetings in her home: women at first, then men, then the magistrates themselves. She accused most of Boston's ministers of preaching a covenant of works instead of a covenant of grace.
+Marcus: [measured] Then the bigger shock: Anne Hutchinson. She arrived in 1634 and started hosting Bible meetings in her home: women at first, then men, then the magistrates themselves. She accused most of Boston's ministers of preaching a covenant of works instead of a covenant of grace.
 
-Maya: Translate that. Works versus grace.
+Maya: [conversational] Translate that. Works versus grace.
 
-Marcus: Works: you earn salvation by behaving. Grace: God decides, and you can't earn it. She said the ministers had it backwards, and she said it out loud, in front of them.
+Marcus: [measured] Works: you earn salvation by behaving. Grace: God decides, and you can't earn it. She said the ministers had it backwards, and she said it out loud, in front of them.
 
-Maya: Was that brave or suicidal?
+Maya: [curious, inquisitive tone] Was that brave or suicidal?
 
-Marcus: Both, honestly. She knew exactly what she was risking. In November 1637 they tried her before the General Court, several months pregnant, defending herself with Scripture, and convicted her. The church excommunicated her early the next year, and in March 1638 she left for Rhode Island: Portsmouth, on the island of Aquidneck, at Williams's suggestion.
+Marcus: [measured] Both, honestly. She knew exactly what she was risking. In November 1637 they tried her before the General Court, several months pregnant, defending herself with Scripture, and convicted her. The church excommunicated her early the next year, and in March 1638 she left for Rhode Island: Portsmouth, on the island of Aquidneck, at Williams's suggestion.
 
-Maya: Exiled while pregnant, and Boston still wasn't done with her?
+Maya: [curious, inquisitive tone] Exiled while pregnant, and Boston still wasn't done with her?
 
-Marcus: Winthrop never let go. That summer, after a stillbirth, he wrote it down as God's judgment on her errors.
+Marcus: [measured] Winthrop never let go. That summer, after a stillbirth, he wrote it down as God's judgment on her errors.
 
-Maya: She kept moving, right? Past Rhode Island?
+Maya: [curious, inquisitive tone] She kept moving, right? Past Rhode Island?
 
-Marcus: Past Boston's reach: Dutch New Netherland. And in 1643, she and several of her children were killed in a Native raid.
+Marcus: [serious tone] Past Boston's reach: Dutch New Netherland. And in 1643, she and several of her children were killed in a Native raid.
 
-Maya: So which is she: heretic or feminist?
+Maya: [curious, inquisitive tone] So which is she: heretic or feminist?
 
-Marcus: Depends who you ask. To Winthrop she was a heretic threatening the whole covenant. To later readers she's the first American feminist — a woman who claimed the right to read Scripture for herself. I don't think that's settled. Hold both sides; that's the move.
+Marcus: [measured] Depends who you ask. To Winthrop she was a heretic threatening the whole covenant. To later readers she's the first American feminist — a woman who claimed the right to read Scripture for herself. I don't think that's settled. Hold both sides; that's the move.
 
-Maya: For box two, the exam move on Williams: it's always the same two things. Fair purchase of Native land, and the church stays out of the government. Pick the answer with both.
+Maya: [conversational] For box two, the exam move on Williams: it's always the same two things. Fair purchase of Native land, and the church stays out of the government. Pick the answer with both.
 
-Maya: Common mistake: don't flatten Hutchinson to one label. Boston's heretic is later readers' feminist. Hold both, or you'll miss the question.
+Maya: [firm] Common mistake: don't flatten Hutchinson to one label. Boston's heretic is later readers' feminist. Hold both, or you'll miss the question.
 
-Maya: Last box: the war.
+Maya: [conversational] Last box: the war.
 
-Marcus: King Philip's War, 1675 to '76. Metacom — 'King Philip' to the English — son of Massasoit, the sachem who'd made peace with Plymouth back in 1621. The grievances had been piling up for decades: English settlers pushing onto Wampanoag land, colonial cattle trampling Native cornfields, missionaries pressing conversion.
+Marcus: [measured] King Philip's War, 1675 to '76. Metacom — 'King Philip' to the English — son of Massasoit, the sachem who'd made peace with Plymouth back in 1621. The grievances had been piling up for decades: English settlers pushing onto Wampanoag land, colonial cattle trampling Native cornfields, missionaries pressing conversion.
 
-Maya: And the spark?
+Maya: [curious, inquisitive tone] And the spark?
 
-Marcus: John Sassamon. A Harvard-educated praying Indian, a Native convert living in one of the mission towns, who'd been Metacom's interpreter and adviser, then warned the English about his plans. He was found dead. In June 1675 a Plymouth court tried three Wampanoags for the murder and hanged them.
+Marcus: [measured] John Sassamon. A Harvard-educated praying Indian, a Native convert living in one of the mission towns, who'd been Metacom's interpreter and adviser, then warned the English about his plans. He was found dead. In June 1675 a Plymouth court tried three Wampanoags for the murder and hanged them.
 
 Maya: Your turn. Three of Metacom's men hanged in an English court. The land pressure's been building for fifty years. Why does THIS light the fuse?
 
@@ -94,43 +94,43 @@ Maya: Your turn. Three of Metacom's men hanged in an English court. The land pre
 
 Maya: Because it's not about land anymore. It's English law reaching into his people: a Plymouth court claiming his men.
 
-Marcus: The courts claiming his men. There's the spark. The Narragansetts tried to stay neutral, but in December 1675 the English burned their winter fort in the Great Swamp, and that drove them into the war. The spring offensive of 1676 pushed the whole frontier back. They burned Providence in March. Williams walked out to meet the war party himself, and they burned it anyway.
+Marcus: [measured] The courts claiming his men. There's the spark. The Narragansetts tried to stay neutral, but in December 1675 the English burned their winter fort in the Great Swamp, and that drove them into the war. The spring offensive of 1676 pushed the whole frontier back. They burned Providence in March. Williams walked out to meet the war party himself, and they burned it anyway.
 
-Maya: The banished guy tried to stop the war?
+Maya: [curious, inquisitive tone] The banished guy tried to stop the war?
 
-Marcus: He tried. In August 1676 Metacom was killed, and the coalition fell apart.
+Marcus: [serious tone] He tried. In August 1676 Metacom was killed, and the coalition fell apart.
 
-Maya: How bad did it get?
+Maya: [curious, inquisitive tone] How bad did it get?
 
-Marcus: Britannica's count: seventeen settlements destroyed, fifty more damaged. Thousands of Native people killed, and the English sold captives into slavery, many shipped to the West Indies. By the spring of 1676, more than forty percent of the Wampanoags were dead.
+Marcus: [serious tone] Britannica's count: seventeen settlements destroyed, fifty more damaged. Thousands of Native people killed, and the English sold captives into slavery, many shipped to the West Indies. By the spring of 1676, more than forty percent of the Wampanoags were dead.
 
-Maya: Deadliest war per capita in American history. Real, or dramatic?
+Maya: [curious, inquisitive tone] Deadliest war per capita in American history. Real, or dramatic?
 
-Marcus: Real, with the per-capita part attached. One book calls it the deadliest of the settlement wars by share of population killed. Britannica calls it one of the bloodiest conflicts per capita in American history. Say the per-capita part, or it's wrong. That's the common mistake for box three.
+Marcus: [firm] Real, with the per-capita part attached. One book calls it the deadliest of the settlement wars by share of population killed. Britannica calls it one of the bloodiest conflicts per capita in American history. Say the per-capita part, or it's wrong. That's the common mistake for box three.
 
-Maya: The book everyone read afterward was written by a captive, right?
+Maya: [curious, inquisitive tone] The book everyone read afterward was written by a captive, right?
 
-Marcus: Mary Rowlandson, taken at Lancaster in February 1676. Three months a captive, ransomed in May. In 1682 she published her narrative, and it went through edition after edition, more than thirty printings. Some call it America's first bestseller — written by a woman.
+Marcus: [measured] Mary Rowlandson, taken at Lancaster in February 1676. Three months a captive, ransomed in May. In 1682 she published her narrative, and it went through edition after edition, more than thirty printings. Some call it America's first bestseller — written by a woman.
 
-Maya: A bestseller written on a forced march. The whole war in one image.
+Maya: [conversational] A bestseller written on a forced march. The whole war in one image.
 
-Maya: So Metacom's dead. Then what?
+Maya: [curious, inquisitive tone] So Metacom's dead. Then what?
 
-Marcus: Native power in New England was broken. The Wampanoags and Narragansetts were shattered, and it never came back.
+Marcus: [measured] Native power in New England was broken. The Wampanoags and Narragansetts were shattered, and it never came back.
 
-Maya: On box three, the exam's favorite trap is order. Land pressure for decades, then the courts overreaching. The Sassamon trial is the spark, not the background.
+Maya: [conversational] On box three, the exam's favorite trap is order. Land pressure for decades, then the courts overreaching. The Sassamon trial is the spark, not the background.
 
-Maya: Did any of it stick?
+Maya: [curious, inquisitive tone] Did any of it stick?
 
-Maya: Three boxes, let's land them. One: the Great Migration. The 1630s, more than twenty thousand people. Not the Pilgrims, I know, Marcus. Covenant everything: churches, towns, Dedham signing a deal with God. Meetinghouse at the center. Box one, checked.
+Maya: [confident tone] Three boxes, let's land them. One: the Great Migration. The 1630s, more than twenty thousand people. Not the Pilgrims, I know, Marcus. Covenant everything: churches, towns, Dedham signing a deal with God. Meetinghouse at the center. Box one, checked.
 
-Maya: Two: the banished dissenters. Williams was banished in 1635, founded Providence in... 1635?
+Maya: [sheepish] Two: the banished dissenters. Williams was banished in 1635, founded Providence in... 1635?
 
-Marcus: Banished in '35, fled that winter, Providence in the spring of '36.
+Marcus: [measured] Banished in '35, fled that winter, Providence in the spring of '36.
 
-Maya: Right. Soul liberty, and he actually bought the land. Hutchinson: the home Bible meetings, the trial in '37 while pregnant, excommunicated and gone by '38. Heretic to Boston, feminist to later readers. Box two, checked.
+Maya: [confident tone] Right. Soul liberty, and he actually bought the land. Hutchinson: the home Bible meetings, the trial in '37 while pregnant, excommunicated and gone by '38. Heretic to Boston, feminist to later readers. Box two, checked.
 
-Maya: Three: King Philip's War, 1675 to '76. Metacom, son of Massasoit. Land, livestock, missionaries. Then the Sassamon trial lights it. Seventeen settlements destroyed, fifty damaged, and the per-capita death toll. Aftermath: Native power in New England, broken. Box three, checked.
+Maya: [confident tone] Three: King Philip's War, 1675 to '76. Metacom, son of Massasoit. Land, livestock, missionaries. Then the Sassamon trial lights it. Seventeen settlements destroyed, fifty damaged, and the per-capita death toll. Aftermath: Native power in New England, broken. Box three, checked.
 
 Maya: Three questions, AP-shaped. Say your answer before I give it.
 
@@ -158,11 +158,11 @@ Maya: One more, fast. Civil trial in '37, church trial in '38, killed in a raid 
 
 Maya: Hutchinson.
 
-Maya: Check your three boxes. Next time: Pennsylvania, the colony that ran the opposite experiment, advertised in German.
+Maya: [intrigued] Check your three boxes. Next time: Pennsylvania, the colony that ran the opposite experiment, advertised in German.
 
-Marcus: They came to build a city on a hill —
+Marcus: [professional broadcast tone] They came to build a city on a hill —
 
-Maya: and spent a generation deciding who gets to live in it.
+Maya: [professional broadcast tone] and spent a generation deciding who gets to live in it.
 
 ## Sources (production footer — strip before TTS)
 # Tier 1 — Barron's AP U.S. History Premium 2027, ch. 4 (Period 2: 1607–1754): Laud/Charles I suppressing Puritans; 1629 Massachusetts Bay Company charter (headquarters not pinned to England); Winthrop, Arbella, "A Model of Christian Charity," "city upon a hill," "The eyes of all people are upon us"; Great Migration — more than 20,000 settlers by 1640, middling sorts (farmers, carpenters, textile workers), families vs Jamestown's men; 10 new towns in the first decade after 1630, 130+ by century's end; Plymouth Separatists vs Bay Puritans (purify from within); Williams — concerned at mistreatment of American Indians, critical of church in civil governance, fled to Narragansett Bay 1636, founded Rhode Island, separation of church and state; Hutchinson — arrived 1634, home meetings with men and women, God communicates directly, accused ministers of backsliding on salvation by divine plan, tried/excommunicated/banished 1638, settled Rhode Island, relocated to Dutch New Netherlands, killed 1643 in Dutch–Lenape conflict; King Philip's War — 1675 catalyst (execution of three Wampanoags for killing a Christianized Wampanoag), Metacomet attacked Massachusetts towns, 1,000+ colonists killed, Mohawk support for English, over 40% of Wampanoag killed by spring 1676, "the deadliest of the wars of European settlement in North America in regard to the percentage of the populations of each side killed"; 14 praying towns by the 1670s; Massasoit–Pilgrim alliance 1621.

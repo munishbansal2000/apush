@@ -9,35 +9,35 @@
 # Pronunciation: Tecumseh (teh-KUM-seh); Tippecanoe (tip-ee-kuh-NOO); Ghent (gent);
 # Pakenham (PAK-en-um); Guerriere (gair-ee-AIR); Macdonough (mak-DON-uh).
 
-Maya: Last time: Marshall gave the Court the last word. This time: the war nobody won. Eighteen twelve. The capital burns. One fort holds. And out of the smoke comes the song.
+Maya: [professional broadcast tone] Last time: Marshall gave the Court the last word. This time: the war nobody won. Eighteen twelve. The capital burns. One fort holds. And out of the smoke comes the song.
 
-Maya: Four boxes on my sheet: impressment and the War Hawks; the Canada disaster; Washington burns and Fort McHenry holds; Ghent, Hartford, New Orleans. Circle the ones you couldn't explain right now. Just under thirteen minutes. The sheet is yours.
+Maya: [conversational] Four boxes on my sheet: impressment and the War Hawks; the Canada disaster; Washington burns and Fort McHenry holds; Ghent, Hartford, New Orleans. Circle the ones you couldn't explain right now. Just under thirteen minutes. The sheet is yours.
 
-Maya: We already beat Britain once. Why fight them again?
+Maya: [curious, inquisitive tone] We already beat Britain once. Why fight them again?
 
-Marcus: Because Britain kept treating our ships like British property. After 1803, with Britain and France at war again, America tried trading with both. Britain answered with a blockade: our merchant ships needed British licenses or they were seized. And the Royal Navy started stopping American vessels and dragging sailors off the decks. About six thousand, between 1803 and 1812. London called them deserters — most weren't.
+Marcus: [measured] Because Britain kept treating our ships like British property. After 1803, with Britain and France at war again, America tried trading with both. Britain answered with a blockade: our merchant ships needed British licenses or they were seized. And the Royal Navy started stopping American vessels and dragging sailors off the decks. About six thousand, between 1803 and 1812. London called them deserters — most weren't.
 
-Maya: Impressment. And we just took it?
+Maya: [curious, inquisitive tone] Impressment. And we just took it?
 
-Marcus: Until 1807: a British warship fired on the American frigate Chesapeake off our own shoreline. Three Americans killed, four carried off. Jefferson answered with the Embargo Act: no American exports to anyone, anywhere. Peaceful coercion, he called it. It bankrupted New England merchants instead. Congress tried the Non-Intercourse Act, then Macon's Bill. Nothing moved London.
+Marcus: [measured] Until 1807: a British warship fired on the American frigate Chesapeake off our own shoreline. Three Americans killed, four carried off. Jefferson answered with the Embargo Act: no American exports to anyone, anywhere. Peaceful coercion, he called it. It bankrupted New England merchants instead. Congress tried the Non-Intercourse Act, then Macon's Bill. Nothing moved London.
 
-Maya: All of that failed. Then what?
+Maya: [curious, inquisitive tone] All of that failed. Then what?
 
-Marcus: The War Hawks: Henry Clay of Kentucky and John C. Calhoun of South Carolina. Their case had two halves. One was honor: a country that lets its sailors get kidnapped can't call itself independent. The other was the West.
+Marcus: [measured] The War Hawks: Henry Clay of Kentucky and John C. Calhoun of South Carolina. Their case had two halves. One was honor: a country that lets its sailors get kidnapped can't call itself independent. The other was the West.
 
-Maya: The West? What's that got to do with the Royal Navy?
+Maya: [curious, inquisitive tone] The West? What's that got to do with the Royal Navy?
 
-Marcus: Tecumseh. The Shawnee leader was building a confederacy to stop American expansion. In 1811, while Tecumseh was away, his brother the Prophet attacked William Henry Harrison at Tippecanoe and lost. Harrison burned Prophetstown. The War Hawks were convinced Britain was arming Tecumseh's confederacy from Canada. And plenty of Hawks figured a war would let America take Canada.
+Marcus: [measured] Tecumseh. The Shawnee leader was building a confederacy to stop American expansion. In 1811, while Tecumseh was away, his brother the Prophet attacked William Henry Harrison at Tippecanoe and lost. Harrison burned Prophetstown. The War Hawks were convinced Britain was arming Tecumseh's confederacy from Canada. And plenty of Hawks figured a war would let America take Canada.
 
-Maya: So Tecumseh was fighting for the British?
+Maya: [curious, inquisitive tone] So Tecumseh was fighting for the British?
 
-Marcus: Fighting for his confederacy. Britain was the arms dealer.
+Marcus: [measured] Fighting for his confederacy. Britain was the arms dealer.
 
-Maya: Invade Canada. Jefferson said that would be easy, right?
+Maya: [curious, inquisitive tone] Invade Canada. Jefferson said that would be easy, right?
 
-Marcus: "A mere matter of marching," he wrote. Madison asked Congress for war in June 1812. The vote split by section: the South and West for it, New England against. And Britain was already easing off the trade restrictions when Congress voted. The war was arguably obsolete before the first shot.
+Marcus: [measured] "A mere matter of marching," he wrote. Madison asked Congress for war in June 1812. The vote split by section: the South and West for it, New England against. And Britain was already easing off the trade restrictions when Congress voted. The war was arguably obsolete before the first shot.
 
-Maya: A war we barely needed, against the strongest navy on earth: honor, and a land grab in an honor costume. One down, three to go.
+Maya: [conversational] A war we barely needed, against the strongest navy on earth: honor, and a land grab in an honor costume. One down, three to go.
 
 Marcus: Now your turn. You're Madison in June 1812. Your army is tiny. The Royal Navy owns the ocean. London is already backing down on trade. Do you keep squeezing with trade laws, or roll the dice on a war?
 
@@ -45,61 +45,61 @@ Marcus: Now your turn. You're Madison in June 1812. Your army is tiny. The Royal
 
 Maya: He rolled the dice.
 
-Marcus: The exam trap for box one: if an answer says the Embargo Act pressured Britain into respecting our ships, kill it. It pressured New England.
+Marcus: [firm] The exam trap for box one: if an answer says the Embargo Act pressured Britain into respecting our ships, kill it. It pressured New England.
 
-Maya: Common mistake: if your essay says the embargo crushed Britain, flip it — Jefferson's own seaports starved first.
+Maya: [firm] Common mistake: if your essay says the embargo crushed Britain, flip it — Jefferson's own seaports starved first.
 
-Marcus: Box two: the invasion of Canada. Three columns, 1812: one from Detroit, one across the Niagara frontier, one down from Lake Champlain. Every one failed. The New England militias wouldn't march into Canada. General William Hull crossed from Detroit, lost his nerve, retreated, and surrendered the city in August, barely a fight. The other columns stalled and failed too.
+Marcus: [measured] Box two: the invasion of Canada. Three columns, 1812: one from Detroit, one across the Niagara frontier, one down from Lake Champlain. Every one failed. The New England militias wouldn't march into Canada. General William Hull crossed from Detroit, lost his nerve, retreated, and surrendered the city in August, barely a fight. The other columns stalled and failed too.
 
-Maya: And the navy? The Constitution, Old Ironsides, all the duels?
+Maya: [curious, inquisitive tone] And the navy? The Constitution, Old Ironsides, all the duels?
 
-Marcus: Seventeen ships, Maya. That was the whole navy. In August 1812 the Constitution, under Captain Isaac Hull, beat the British frigate Guerriere in a straight duel. British shot bounced off her oak hull, and her crew named her Old Ironsides. Decatur won duels that fall and became a hero. Then Britain bottled the fleet up in harbor for most of the war.
+Marcus: [measured] Seventeen ships, Maya. That was the whole navy. In August 1812 the Constitution, under Captain Isaac Hull, beat the British frigate Guerriere in a straight duel. British shot bounced off her oak hull, and her crew named her Old Ironsides. Decatur won duels that fall and became a hero. Then Britain bottled the fleet up in harbor for most of the war.
 
-Maya: So the navy didn't win the war. The duels were just... headlines?
+Maya: [incredulous] So the navy didn't win the war. The duels were just... headlines?
 
-Marcus: Just headlines. Seventeen ships don't beat the Royal Navy. It's the correction most students need: seventeen ships could win duels, but they couldn't win a war.
+Marcus: [measured] Just headlines. Seventeen ships don't beat the Royal Navy. It's the correction most students need: seventeen ships could win duels, but they couldn't win a war.
 
-Maya: Noted.
+Maya: [conversational] Noted.
 
-Marcus: The lakes were the exception: in September 1813 Oliver Hazard Perry destroyed the British fleet on Lake Erie: "We have met the enemy and they are ours." That cut Britain's western supply line. Harrison retook Detroit and chased the British into Canada. At the Thames his men killed Tecumseh. A year later, Macdonough beat a British fleet on Lake Champlain, turning back an invasion from Canada. The lakes were the navy's real contribution: control of the roads that mattered out west.
+Marcus: [measured] The lakes were the exception: in September 1813 Oliver Hazard Perry destroyed the British fleet on Lake Erie: "We have met the enemy and they are ours." That cut Britain's western supply line. Harrison retook Detroit and chased the British into Canada. At the Thames his men killed Tecumseh. A year later, Macdonough beat a British fleet on Lake Champlain, turning back an invasion from Canada. The lakes were the navy's real contribution: control of the roads that mattered out west.
 
-Maya: Watch how they test this: if a choice says the U.S. Navy dominated Britain at sea, it's lying. Duels, then a blockade. The lakes mattered because they cut supply lines.
+Maya: [conversational] Watch how they test this: if a choice says the U.S. Navy dominated Britain at sea, it's lying. Duels, then a blockade. The lakes mattered because they cut supply lines.
 
-Marcus: Common mistake: don't write that America had a serious navy. Seventeen ships. The duels were famous, but the fleet spent most of the war blockaded in harbor.
+Marcus: [firm] Common mistake: don't write that America had a serious navy. Seventeen ships. The duels were famous, but the fleet spent most of the war blockaded in harbor.
 
-Maya: Stalemate on land, navy in hiding. And that's when Britain finally has free hands.
+Maya: [conversational] Stalemate on land, navy in hiding. And that's when Britain finally has free hands.
 
-Marcus: Box three. In 1814 Napoleon abdicated, freeing Britain's best troops for America. A British force landed in Chesapeake Bay and in August 1814 walked into Washington and burned the public buildings, the Capitol and the President's Mansion. The government fled. Dolley Madison stayed long enough to order the valuables saved. The big Washington portrait couldn't be lifted off the wall, so her people broke the frame apart to get the canvas out.
+Marcus: [measured] Box three. In 1814 Napoleon abdicated, freeing Britain's best troops for America. A British force landed in Chesapeake Bay and in August 1814 walked into Washington and burned the public buildings, the Capitol and the President's Mansion. The government fled. Dolley Madison stayed long enough to order the valuables saved. The big Washington portrait couldn't be lifted off the wall, so her people broke the frame apart to get the canvas out.
 
-Maya: She saved the portrait while the army lost the city. I once cried in a parking lot over a lost retainer. Different energy.
+Maya: [conversational] She saved the portrait while the army lost the city. I once cried in a parking lot over a lost retainer. Different energy.
 
-Marcus: Now the part the textbooks skip. While the British held the Chesapeake, thousands of enslaved people ran to their lines. The British were promising freedom to anyone who reached them. For Black families in Maryland and Virginia, this war wasn't about impressment. It was a door. Slavery was a live factor in this war, not a footnote.
+Marcus: [measured] Now the part the textbooks skip. While the British held the Chesapeake, thousands of enslaved people ran to their lines. The British were promising freedom to anyone who reached them. For Black families in Maryland and Virginia, this war wasn't about impressment. It was a door. Slavery was a live factor in this war, not a footnote.
 
-Maya: And after Washington?
+Maya: [curious, inquisitive tone] And after Washington?
 
-Marcus: A harder target was Baltimore: a big port that outfitted privateers, the fast little ships chewing up British trade. On September 13th, 1814, the British fleet opened fire on Fort McHenry. Twenty-five hours of bombardment. A young lawyer, Francis Scott Key, watched from an American truce ship in the harbor. At dawn the smoke cleared and the fort's huge garrison flag was still flying. He wrote "The Defense of Fort McHenry." Set to music, it became "The Star-Spangled Banner." National anthem in 1931.
+Marcus: [measured] A harder target was Baltimore: a big port that outfitted privateers, the fast little ships chewing up British trade. On September 13th, 1814, the British fleet opened fire on Fort McHenry. Twenty-five hours of bombardment. A young lawyer, Francis Scott Key, watched from an American truce ship in the harbor. At dawn the smoke cleared and the fort's huge garrison flag was still flying. He wrote "The Defense of Fort McHenry." Set to music, it became "The Star-Spangled Banner." National anthem in 1931.
 
-Maya: Exam trap for box three: Key wasn't inside the fort. He was on a ship, in the dark. The flag at dawn was the news. That was the entire poem.
+Maya: [firm] Exam trap for box three: Key wasn't inside the fort. He was on a ship, in the dark. The flag at dawn was the news. That was the entire poem.
 
-Marcus: Common mistake: don't date the burning to 1812. Washington burned in August 1814. The war started in 1812; the humiliation came later.
+Marcus: [firm] Common mistake: don't date the burning to 1812. Washington burned in August 1814. The war started in 1812; the humiliation came later.
 
-Maya: The capital burns, the fort holds. Across the ocean, diplomats are trying to end it.
+Maya: [conversational] The capital burns, the fort holds. Across the ocean, diplomats are trying to end it.
 
-Marcus: Box four. In late 1814, negotiators met in Ghent, Belgium. On Christmas Eve they signed a treaty that did something remarkable: nothing at all. The map went back to what it was before the war, status quo ante. No mention of impressment, the seizures, or British aid to Native resistance. Every stated cause went unaddressed. Impressment ended because Napoleon lost, not because of the treaty.
+Marcus: [measured] Box four. In late 1814, negotiators met in Ghent, Belgium. On Christmas Eve they signed a treaty that did something remarkable: nothing at all. The map went back to what it was before the war, status quo ante. No mention of impressment, the seizures, or British aid to Native resistance. Every stated cause went unaddressed. Impressment ended because Napoleon lost, not because of the treaty.
 
-Maya: Meanwhile the Federalists are meeting in Hartford.
+Maya: [conversational] Meanwhile the Federalists are meeting in Hartford.
 
-Marcus: December 1814. New England Federalists, ruined by the war, talked secession and voted it down. But they demanded amendments: two-thirds of Congress to declare war, an end to the three-fifths clause, even a rule against two presidents in a row from the same state, aimed at the Virginia dynasty. Their demands reached Washington just as the news arrived: peace in Europe, and Jackson's victory at New Orleans. They looked unpatriotic at the moment everyone celebrated. The party never recovered.
+Marcus: [measured] December 1814. New England Federalists, ruined by the war, talked secession and voted it down. But they demanded amendments: two-thirds of Congress to declare war, an end to the three-fifths clause, even a rule against two presidents in a row from the same state, aimed at the Virginia dynasty. Their demands reached Washington just as the news arrived: peace in Europe, and Jackson's victory at New Orleans. They looked unpatriotic at the moment everyone celebrated. The party never recovered.
 
-Maya: New Orleans, then. I only know the song.
+Maya: [conversational] New Orleans, then. I only know the song.
 
-Marcus: January 8th, 1815, two weeks after Ghent was signed. Neither army knew; news crossed the Atlantic by ship. Jackson's men were dug in. The British attacked head-on. Roughly two thousand British casualties against fewer than a hundred Americans. Pakenham, their commander, was killed. Every telling agrees.
+Marcus: [measured] January 8th, 1815, two weeks after Ghent was signed. Neither army knew; news crossed the Atlantic by ship. Jackson's men were dug in. The British attacked head-on. Roughly two thousand British casualties against fewer than a hundred Americans. Pakenham, their commander, was killed. Every telling agrees.
 
-Maya: "We fired our guns and the British kept a-comin'." My grandpa plays that song on every road trip.
+Maya: [conversational] "We fired our guns and the British kept a-comin'." My grandpa plays that song on every road trip.
 
-Marcus: Johnny Horton. It also says they fired till the barrel melted down.
+Marcus: [measured] Johnny Horton. It also says they fired till the barrel melted down.
 
-Maya: The barrel didn't melt down.
+Maya: [conversational] The barrel didn't melt down.
 
 Marcus: Not even close. Now your turn. The treaty changed nothing. Two weeks later Jackson wins the biggest American victory of the war. Did America actually win the War of 1812?
 
@@ -107,31 +107,31 @@ Marcus: Not even close. Now your turn. The treaty changed nothing. Two weeks lat
 
 Maya: On paper, no. A draw, and Ghent proves it. But in feeling, the country decided it had won. That feeling built the next decade. The honest version is blunter: the Park Service says that by 1814 there was no hope of achieving the war's stated goals, free trade, sailors' rights, taking Canada. None of it happened. So was it a "Second War of Independence"? Not on paper. But America survived Britain, and the war broke Native resistance east of the Mississippi for good — the dark half, and the one the textbooks used to skip.
 
-Marcus: Historians still argue about that one, and I don't think it's settled.
+Marcus: [measured] Historians still argue about that one, and I don't think it's settled.
 
-Maya: And the marketing half?
+Maya: [curious, inquisitive tone] And the marketing half?
 
-Marcus: The feeling. A broke, stalemated country decided it had won anyway. That confidence powered what came next. American manufacturing took off. A one-party Era of Good Feelings began. And eventually America told Europe to keep out of the hemisphere.
+Marcus: [measured] The feeling. A broke, stalemated country decided it had won anyway. That confidence powered what came next. American manufacturing took off. A one-party Era of Good Feelings began. And eventually America told Europe to keep out of the hemisphere.
 
-Maya: Hold that thought — exam traps first.
+Maya: [firm] Hold that thought — exam traps first.
 
-Maya: Last one — and it's a classic: Ghent is the "nothing changed" treaty. If an answer says it ended impressment or redrew the border, cross it out.
+Maya: [conversational] Last one — and it's a classic: Ghent is the "nothing changed" treaty. If an answer says it ended impressment or redrew the border, cross it out.
 
-Marcus: Common mistake: don't write that New Orleans ended the war. The treaty was signed two weeks before the battle. Jackson won the headlines; the diplomats had already settled the draw.
+Marcus: [firm] Common mistake: don't write that New Orleans ended the war. The treaty was signed two weeks before the battle. Jackson won the headlines; the diplomats had already settled the draw.
 
-Maya: Four boxes, let's land them. One: impressment and the War Hawks. Britain grabbed our sailors. The embargo backfired. Clay and Calhoun wanted war: honor, the West, Canada.
+Maya: [conversational] Four boxes, let's land them. One: impressment and the War Hawks. Britain grabbed our sailors. The embargo backfired. Clay and Calhoun wanted war: honor, the West, Canada.
 
-Marcus: The "mere matter of marching" theory.
+Marcus: [measured] The "mere matter of marching" theory.
 
-Maya: Two: the Canada disaster. Hull surrendered Detroit; the Niagara and Champlain columns failed too. The navy won duels, the Constitution against the French ship Guerriere, then sat blockaded.
+Maya: [conversational] Two: the Canada disaster. Hull surrendered Detroit; the Niagara and Champlain columns failed too. The navy won duels, the Constitution against the French ship Guerriere, then sat blockaded.
 
-Marcus: British. The Guerriere was British.
+Marcus: [measured] British. The Guerriere was British.
 
-Maya: I knew that. Three: Washington burned in August 1814 — and for enslaved Marylanders, the war was a door to freedom. Dolley saved the portrait. Fort McHenry held twenty-five hours, and Key's poem became the anthem.
+Maya: [conversational] I knew that. Three: Washington burned in August 1814 — and for enslaved Marylanders, the war was a door to freedom. Dolley saved the portrait. Fort McHenry held twenty-five hours, and Key's poem became the anthem.
 
-Marcus: The flag at dawn told the story.
+Marcus: [measured] The flag at dawn told the story.
 
-Maya: Four: Ghent changed nothing. Hartford killed the Federalists. New Orleans made Jackson a hero two weeks after the war ended. On paper a draw; in feeling, a second war of independence.
+Maya: [conversational] Four: Ghent changed nothing. Hartford killed the Federalists. New Orleans made Jackson a hero two weeks after the war ended. On paper a draw; in feeling, a second war of independence.
 
 Maya: Three questions, AP-shaped. Say your answer before I give it. One: the War Hawks wanted war. Give me their case, and which part was really about the West.
 
@@ -157,13 +157,13 @@ Maya: One more, fast. Perry smashes the British on Lake Erie, September 1813. Wh
 
 Maya: The lakes were the waterways. Whoever held Lake Erie supplied the whole west. Perry cut the British supply line, so they gave up Detroit. Harrison chased them into Canada and finished Tecumseh at the Thames.
 
-Maya: Check your boxes.
+Maya: [confident tone] Check your boxes.
 
-Maya: The war nobody won.
+Maya: [professional broadcast tone] The war nobody won.
 
-Marcus: And the song nobody stopped singing.
+Marcus: [professional broadcast tone] And the song nobody stopped singing.
 
-Maya: Next time: the war's over, the parties collapse. America tells Europe to stay out.
+Maya: [intrigued] Next time: the war's over, the parties collapse. America tells Europe to stay out.
 
 ## Sources (production-only, never spoken)
 - Tier 1 (premium2027 ch. 6): impressment (~6,000 sailors, 1803–1812); Chesapeake-Leopard affair 1807 (3 killed, 4 taken); Embargo Act 1807 → Non-Intercourse Act 1809 (both crippled American trade, hated in New England); Macon's Bill No. 2 (1810; Napoleon agreed, didn't honor; US cut trade with Britain 1811); War Hawks led by Henry Clay (KY) and John C. Calhoun (SC); Tippecanoe 1811 ("perceived as an American victory"); Hawks convinced Britain armed Tecumseh's confederacy; Canada as war aim; war vote split sectionally (New England/Middle Atlantic opposed, South/West for); vote came just as Britain eased trade restrictions; US defeats at Fort Dearborn and Fort Detroit; York (Toronto) burned; Thames — Tecumseh killed; Washington seized and public buildings burned 1814 (Presidential Mansion, Capitol); New Orleans fought after Ghent signed (late 1814); Hartford Convention Dec 1814 (secession talk rejected; amendments: two-thirds vote for war declarations, end of three-fifths clause); Treaty of Ghent — status quo ante, grievances (impressment, shipping, aid to Indians) unmentioned.

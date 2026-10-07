@@ -3,27 +3,27 @@
 # Read note: Maya tracks four boxes on her episode sheet: the Townshend duties, the Boston Massacre, the Tea Party and the Intolerable Acts, and the First Continental Congress. [9-second pause] marks are production silence in the prediction beats; [15-second pause] and [20-second pause] marks are production silence in the CER self-test; the [5-second pause] is the fast bonus — they never go to the voice. Strip this header and the read note before TTS; convert pause tags to silence. The em dash in the closing tagline is a held beat: leave a full breath between Maya's setup line and Marcus's landing line. Do not rush it. Self-test model answers follow claim-evidence-reasoning logic in natural phrasing; no spoken labels (per the user's 2026-10-06 ruling: TTS reads everything literally).
 # Pronunciation: TOWN-zend (Townshend), KRIS-pus AT-uks (Crispus Attucks), DIK-in-sun (Dickinson), GAL-uh-way (Galloway), MO-hawk (Mohawk)
 
-Maya: Last time: Parliament repealed the Stamp Act and kept the claim — "in all cases whatsoever." Then it taxed the tea. Seven years from the tea tax to twelve colonies acting like one country. Four flashpoints: a tax on paint and paper, a street fight rebranded as a massacre, a harbor full of tea leaves, and a Congress in Philadelphia. Four boxes on your sheet: the Townshend duties, the Boston Massacre, the Tea Party and the Intolerable Acts, and the First Continental Congress. Circle the ones you couldn't explain right now. Twelve minutes, and you'll land all four.
+Maya: [professional broadcast tone] Last time: Parliament repealed the Stamp Act and kept the claim — "in all cases whatsoever." Then it taxed the tea. Seven years from the tea tax to twelve colonies acting like one country. Four flashpoints: a tax on paint and paper, a street fight rebranded as a massacre, a harbor full of tea leaves, and a Congress in Philadelphia. Four boxes on your sheet: the Townshend duties, the Boston Massacre, the Tea Party and the Intolerable Acts, and the First Continental Congress. Circle the ones you couldn't explain right now. Twelve minutes, and you'll land all four.
 
-Marcus: Seventeen sixty-seven. Charles Townshend, the new Chancellor of the Exchequer, has a theory: the colonists hated the Stamp Act because it was an internal tax. So he'll only tax external things. New duties on lead, paper, glass, and tea: goods the colonists buy from British merchants, taxed as they come in.
+Marcus: [measured] Seventeen sixty-seven. Charles Townshend, the new Chancellor of the Exchequer, has a theory: the colonists hated the Stamp Act because it was an internal tax. So he'll only tax external things. New duties on lead, paper, glass, and tea: goods the colonists buy from British merchants, taxed as they come in.
 
-Maya: But that's what the colonists said Parliament could do. Regulate trade, tax imports. So what's the problem?
+Maya: [curious, inquisitive tone] But that's what the colonists said Parliament could do. Regulate trade, tax imports. So what's the problem?
 
-Marcus: Townshend set that trap on purpose, and John Dickinson sprung it, a Pennsylvania lawyer writing as "a Farmer." His argument: Parliament could regulate the empire's trade but couldn't raise revenue off colonists without their consent. These duties weren't steering trade. They were raising money. So the internal-external distinction didn't wash.
+Marcus: [measured] Townshend set that trap on purpose, and John Dickinson sprung it, a Pennsylvania lawyer writing as "a Farmer." His argument: Parliament could regulate the empire's trade but couldn't raise revenue off colonists without their consent. These duties weren't steering trade. They were raising money. So the internal-external distinction didn't wash.
 
-Maya: Okay, but the duties were tiny. A tax on paint? Sounds like the colonists were making a mountain out of a paint can.
+Maya: [conversational] Okay, but the duties were tiny. A tax on paint? Sounds like the colonists were making a mountain out of a paint can.
 
-Marcus: Dickinson had an answer for that exact shrug. "If they have a right to levy a tax of one penny upon us, they have a right to levy a million upon us; for where does their right stop?" It was never about the price. It was about who decides.
+Marcus: [measured] Dickinson had an answer for that exact shrug. "If they have a right to levy a tax of one penny upon us, they have a right to levy a million upon us; for where does their right stop?" It was never about the price. It was about who decides.
 
-Maya: Exam note: a stimulus says "external tax" and asks why colonists still protested. Answer: Dickinson, revenue without consent. Cross out anything about the tax being too high.
+Maya: [conversational] Exam note: a stimulus says "external tax" and asks why colonists still protested. Answer: Dickinson, revenue without consent. Cross out anything about the tax being too high.
 
-Marcus: And don't write that the duties were crushing. They were light. The fight was who decides, not what it costs. And it wasn't just the duties: Townshend paid royal governors from the new revenue, and set up admiralty courts that tried smugglers without juries. The duties were the headline; the machine was the story.
+Marcus: [firm] And don't write that the duties were crushing. They were light. The fight was who decides, not what it costs. And it wasn't just the duties: Townshend paid royal governors from the new revenue, and set up admiralty courts that tried smugglers without juries. The duties were the headline; the machine was the story.
 
-Maya: So the colonies boycotted again?
+Maya: [curious, inquisitive tone] So the colonies boycotted again?
 
-Marcus: Nonimportation and nonconsumption, don't import British goods, don't buy them. The boycott bit because of women: they ran the household budgets, so they ran the thing. Spinning bees, homespun instead of British cloth. Homespun stopped being frumpy and started being a statement.
+Marcus: [measured] Nonimportation and nonconsumption, don't import British goods, don't buy them. The boycott bit because of women: they ran the household budgets, so they ran the thing. Spinning bees, homespun instead of British cloth. Homespun stopped being frumpy and started being a statement.
 
-Maya: My mom still darns socks instead of buying new ones. She would have fit right in.
+Maya: [conversational] My mom still darns socks instead of buying new ones. She would have fit right in.
 
 Marcus: British imports fell by something like forty percent by 1770. British merchants started howling at Parliament, same play as the Stamp Act fight, and Parliament caved, mostly. Your turn: Lord North becomes prime minister in 1770 and repeals the Townshend duties, every one except a single tax. Which one survives, and why keep a tax that raises almost nothing?
 
@@ -31,71 +31,71 @@ Marcus: British imports fell by something like forty percent by 1770. British me
 
 Maya: The tea tax. Forget the money — it's the marker. Repeal everything, keep one tax, and the claim survives.
 
-Marcus: Exactly. The penny stays so the principle stays.
+Marcus: [measured] Exactly. The penny stays so the principle stays.
 
-Marcus: Meanwhile Boston's boiling: in 1768 the crown parks two regiments there, four thousand soldiers in a town of sixteen thousand, moonlighting on the docks and taking working Bostonians' jobs. Harassing soldiers became a local sport.
+Marcus: [measured] Meanwhile Boston's boiling: in 1768 the crown parks two regiments there, four thousand soldiers in a town of sixteen thousand, moonlighting on the docks and taking working Bostonians' jobs. Harassing soldiers became a local sport.
 
-Maya: Four thousand soldiers in a town that size. That's not an occupation, that's a roommate situation.
+Maya: [conversational] Four thousand soldiers in a town that size. That's not an occupation, that's a roommate situation.
 
-Marcus: March fifth, 1770. A wigmaker's apprentice mouths off to a sentry. A crowd gathers, snowballs laced with ice, rocks. A musket goes off, probably by accident, and the line fires a volley. Five colonists dead, including a sailor of African and Indigenous ancestry named Crispus Attucks.
+Marcus: [measured] March fifth, 1770. A wigmaker's apprentice mouths off to a sentry. A crowd gathers, snowballs laced with ice, rocks. A musket goes off, probably by accident, and the line fires a volley. Five colonists dead, including a sailor of African and Indigenous ancestry named Crispus Attucks.
 
-Maya: Five dead. And they called that a massacre?
+Maya: [curious, inquisitive tone] Five dead. And they called that a massacre?
 
-Marcus: Samuel Adams called it a massacre, and his network spread the word, including Paul Revere's engraving, "The Boston Massacre," showing the soldiers in a firing line, shooting into the crowd.
+Marcus: [serious tone] Samuel Adams called it a massacre, and his network spread the word, including Paul Revere's engraving, "The Boston Massacre," showing the soldiers in a firing line, shooting into the crowd.
 
-Maya: Stimulus alert: when the exam hands me Revere's engraving, the question isn't what happened March fifth. It's what the source was for, propaganda to unite the colonies against British troops.
+Maya: [conversational] Stimulus alert: when the exam hands me Revere's engraving, the question isn't what happened March fifth. It's what the source was for, propaganda to unite the colonies against British troops.
 
-Marcus: The courtroom trap: eight tried, six acquitted, two branded on the thumb. The trial ran on law even when the newspapers ran on outrage.
+Marcus: [measured] The courtroom trap: eight tried, six acquitted, two branded on the thumb. The trial ran on law even when the newspapers ran on outrage.
 
-Maya: We did this in eighth grade. Mock trial. I prosecuted and got crushed. My teacher's words: "you can't convict men for panicking while a crowd throws ice at them."
+Maya: [conversational] We did this in eighth grade. Mock trial. I prosecuted and got crushed. My teacher's words: "you can't convict men for panicking while a crowd throws ice at them."
 
-Marcus: Your teacher had the history right. And both sides blinked: for two years after 1770, almost nothing happened. Then in 1772 Parliament started paying colonial officials out of customs money, and Samuel Adams answered with committees of correspondence, town to town, colony to colony. The argument went quiet. The organizing didn't.
+Marcus: [measured] Your teacher had the history right. And both sides blinked: for two years after 1770, almost nothing happened. Then in 1772 Parliament started paying colonial officials out of customs money, and Samuel Adams answered with committees of correspondence, town to town, colony to colony. The argument went quiet. The organizing didn't.
 
-Marcus: Seventeen seventy-three. The British East India Company is going broke. The Tea Act lets the Company sell directly in America, skipping the London middlemen. The tea tax stays exactly the same. The price goes down.
+Marcus: [measured] Seventeen seventy-three. The British East India Company is going broke. The Tea Act lets the Company sell directly in America, skipping the London middlemen. The tea tax stays exactly the same. The price goes down.
 
-Maya: Cheaper tea? That sounds like a gift.
+Maya: [conversational] Cheaper tea? That sounds like a gift.
 
-Marcus: It was still Parliament taxing them without consent, plus a monopoly, plus every colonial tea merchant cut out of the business. Cheaper didn't fix the principle. December sixteenth, 1773: members of the Sons of Liberty, dressed as Mohawk Indians, board the Company's ships in Boston harbor and spend three hours dumping tea over the side. Some three hundred fifty chests. In today's money, something like two million dollars of tea, floating.
+Marcus: [measured] It was still Parliament taxing them without consent, plus a monopoly, plus every colonial tea merchant cut out of the business. Cheaper didn't fix the principle. December sixteenth, 1773: members of the Sons of Liberty, dressed as Mohawk Indians, board the Company's ships in Boston harbor and spend three hours dumping tea over the side. Some three hundred fifty chests. In today's money, something like two million dollars of tea, floating.
 
-Maya: I keep picturing the smell. Three hours of tea leaves in salt water. The whole harbor brewing.
+Maya: [conversational] I keep picturing the smell. Three hours of tea leaves in salt water. The whole harbor brewing.
 
-Marcus: London's answer, 1774: the Coercive Acts. The colonists called them the Intolerable Acts, and the name stuck. Four laws, meant to make an example of Massachusetts — the last one aimed at every colony thinking of following. The Port Act: the harbor stays closed until the destroyed tea is paid for. The Government Act: the royal governor appoints officials the colonists used to elect, town meetings cut to once a year. The Justice Act: royal officials accused of crimes get tried in England, not by a Massachusetts jury. And a tougher Quartering Act: soldiers in civilian homes.
+Marcus: [measured] London's answer, 1774: the Coercive Acts. The colonists called them the Intolerable Acts, and the name stuck. Four laws, meant to make an example of Massachusetts — the last one aimed at every colony thinking of following. The Port Act: the harbor stays closed until the destroyed tea is paid for. The Government Act: the royal governor appoints officials the colonists used to elect, town meetings cut to once a year. The Justice Act: royal officials accused of crimes get tried in England, not by a Massachusetts jury. And a tougher Quartering Act: soldiers in civilian homes.
 
-Maya: MCQ writers love this list. "Which of the following was NOT one of the Intolerable Acts?" The Quebec Act is the plant: a fifth law in the same pile, nothing to do with tea. It let French Catholics in Canada worship freely and pushed Quebec's borders south and west. To Protestant colonists it read as London surrounding them and cutting off the west.
+Maya: [conversational] MCQ writers love this list. "Which of the following was NOT one of the Intolerable Acts?" The Quebec Act is the plant: a fifth law in the same pile, nothing to do with tea. It let French Catholics in Canada worship freely and pushed Quebec's borders south and west. To Protestant colonists it read as London surrounding them and cutting off the west.
 
-Marcus: If Quebec's in the options, that's your answer. Separate law, same year. And a second trap: the Tea Act made tea cheaper, not more expensive. Flip that and you've got the cause backwards.
+Marcus: [measured] If Quebec's in the options, that's your answer. Separate law, same year. And a second trap: the Tea Act made tea cheaper, not more expensive. Flip that and you've got the cause backwards.
 
-Maya: Did making an example of Massachusetts work?
+Maya: [curious, inquisitive tone] Did making an example of Massachusetts work?
 
-Marcus: Opposite. The other colonies did the math, we're next, and the assemblies started talking about meeting together.
+Marcus: [measured] Opposite. The other colonies did the math, we're next, and the assemblies started talking about meeting together.
 
-Maya: So the question hanging over every colony: do we answer this together, or get picked off one by one?
+Maya: [curious, inquisitive tone] So the question hanging over every colony: do we answer this together, or get picked off one by one?
 
-Marcus: Philadelphia, September fifth, 1774: fifty-six delegates, every colony except Georgia, and they didn't agree with each other. Pennsylvania sent conservatives like Joseph Galloway; Virginia sent radicals like Richard Henry Lee and Patrick Henry.
+Marcus: [measured] Philadelphia, September fifth, 1774: fifty-six delegates, every colony except Georgia, and they didn't agree with each other. Pennsylvania sent conservatives like Joseph Galloway; Virginia sent radicals like Richard Henry Lee and Patrick Henry.
 
-Maya: What could that room possibly agree on?
+Maya: [curious, inquisitive tone] What could that room possibly agree on?
 
-Marcus: More than you'd think. They adopted the Suffolk Resolves, a Massachusetts declaration refusing London's new government, boycotting British goods, and calling the militias to readiness. Then John Adams drafted a Declaration of Rights and Grievances: Parliament can regulate colonial trade, but it can't tax without representation. Dickinson's line, now official.
+Marcus: [measured] More than you'd think. They adopted the Suffolk Resolves, a Massachusetts declaration refusing London's new government, boycotting British goods, and calling the militias to readiness. Then John Adams drafted a Declaration of Rights and Grievances: Parliament can regulate colonial trade, but it can't tax without representation. Dickinson's line, now official.
 
-Maya: Okay, but who enforced a boycott across twelve colonies?
+Maya: [curious, inquisitive tone] Okay, but who enforced a boycott across twelve colonies?
 
-Marcus: The Association: a colonies-wide pact, nothing in from Britain and nothing out, with teeth. Committees of observation in every town to enforce it, committees that became the real government in plenty of towns. Then, before adjourning October twenty-sixth, Congress petitioned George the Third, politely, to repeal the Intolerable Acts, and set next spring for a second meeting.
+Marcus: [measured] The Association: a colonies-wide pact, nothing in from Britain and nothing out, with teeth. Committees of observation in every town to enforce it, committees that became the real government in plenty of towns. Then, before adjourning October twenty-sixth, Congress petitioned George the Third, politely, to repeal the Intolerable Acts, and set next spring for a second meeting.
 
-Maya: Wait. They built a boycott machine with enforcers AND wrote a polite letter to the king? Pick a lane.
+Maya: [incredulous] Wait. They built a boycott machine with enforcers AND wrote a polite letter to the king? Pick a lane.
 
-Marcus: That is the lane, 1774 in a sentence. Nobody in that room was proposing independence, but they'd just drawn a line around what Parliament could touch and left everything else to the colonies. A major break with everything Britain had claimed. A step toward independence, without saying the word.
+Marcus: [conversational] That is the lane, 1774 in a sentence. Nobody in that room was proposing independence, but they'd just drawn a line around what Parliament could touch and left everything else to the colonies. A major break with everything Britain had claimed. A step toward independence, without saying the word.
 
-Maya: For the long essay, this Congress is my "colonial unity" evidence, twelve colonies acting as one. The petition is the qualifier: unity without independence. The essay trap is jumping to 1776: the Congress petitioned the king. Unity, but not independence — not yet.
+Maya: [conversational] For the long essay, this Congress is my "colonial unity" evidence, twelve colonies acting as one. The petition is the qualifier: unity without independence. The essay trap is jumping to 1776: the Congress petitioned the king. Unity, but not independence — not yet.
 
-Maya: Four boxes, let's land them. Box one: the Townshend duties. Sixty-seven, duties on lead, paper, glass, and tea. Dickinson: Parliament can regulate trade but can't raise revenue without consent, the penny-or-a-million line. Boycotts, homespun, imports down forty percent. Parliament repealed the lot except the tea tax, the marker.
+Maya: [conversational] Four boxes, let's land them. Box one: the Townshend duties. Sixty-seven, duties on lead, paper, glass, and tea. Dickinson: Parliament can regulate trade but can't raise revenue without consent, the penny-or-a-million line. Boycotts, homespun, imports down forty percent. Parliament repealed the lot except the tea tax, the marker.
 
-Maya: Box two: the Boston Massacre. March fifth, seventeen seventy, five dead including Crispus Attucks. Samuel Adams turned it into propaganda, Revere's engraving did the traveling, but in court John Adams got six soldiers acquitted and the other two got, hanged? No—
+Maya: [professional broadcast tone] Box two: the Boston Massacre. March fifth, seventeen seventy, five dead including Crispus Attucks. Samuel Adams turned it into propaganda, Revere's engraving did the traveling, but in court John Adams got six soldiers acquitted and the other two got, hanged? No—
 
-Marcus: Branded. On the thumb. Nobody hanged.
+Marcus: [serious tone] Branded. On the thumb. Nobody hanged.
 
-Maya: Right, branded. Box three: the Tea Party and the Intolerable Acts. December sixteenth, seventy-three, the Sons of Liberty dump some three hundred fifty chests of tea. Parliament answers: port closed till the tea's paid for, the governor appoints the officials, trials moved to England, soldiers in homes. Plus the Quebec Act in the same pile, the odd one out.
+Maya: [conversational] Right, branded. Box three: the Tea Party and the Intolerable Acts. December sixteenth, seventy-three, the Sons of Liberty dump some three hundred fifty chests of tea. Parliament answers: port closed till the tea's paid for, the governor appoints the officials, trials moved to England, soldiers in homes. Plus the Quebec Act in the same pile, the odd one out.
 
-Maya: Box four: the First Continental Congress. September seventy-four, Philadelphia, fifty-six delegates, everybody but Georgia. The Suffolk Resolves, the Declaration of Rights and Grievances, the Association's boycott, and a polite petition to the king. Unity, but not independence. Not yet.
+Maya: [conversational] Box four: the First Continental Congress. September seventy-four, Philadelphia, fifty-six delegates, everybody but Georgia. The Suffolk Resolves, the Declaration of Rights and Grievances, the Association's boycott, and a polite petition to the king. Unity, but not independence. Not yet.
 
 Maya: Three questions, AP-shaped. Say your answer before I give it. One: a stimulus hands you Dickinson, 1768: "A perpetual jealousy, respecting liberty, is absolutely requisite in all free states." What's he warning his readers to do?
 
@@ -121,11 +121,11 @@ Maya: One more, fast. The Congress built the Association's boycott machine and p
 
 Maya: The petition. You don't politely ask the king to repeal his laws if you're about to break with him.
 
-Maya: They built the bridge—
+Maya: [professional broadcast tone] They built the bridge—
 
-Marcus: —before anyone voted to cross it.
+Marcus: [professional broadcast tone] —before anyone voted to cross it.
 
-Maya: Check your four boxes. Next time: the argument for independence. A pamphlet called Common Sense, and a Congress debating whether to say the word out loud. We're not going there yet.
+Maya: [intrigued] Check your four boxes. Next time: the argument for independence. A pamphlet called Common Sense, and a Congress debating whether to say the word out loud. We're not going there yet.
 
 ---
 

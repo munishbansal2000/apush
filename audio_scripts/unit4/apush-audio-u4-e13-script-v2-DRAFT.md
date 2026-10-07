@@ -4,115 +4,115 @@
 # Read note: Maya tracks four boxes on her episode sheet: the London root, the Declaration of Sentiments, the aftermath, and the split. [15-second pause], [18-second pause], and [8-second pause] marks are production notes for real silence — they never go to the voice. The tagline's em dash is a held breath: do not rush it. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence.
 # Pronunciation: Lucretia Mott (loo-KREE-shuh MOT), Stanton (STAN-tun), Sojourner Truth (so-JURN-er), coverture (KUH-vur-chur), Wesleyan (WES-lee-un), Seneca (SEN-uh-kuh)
 
-Maya: Last time: the women that abolition sidelined in London. This time, they hold their own convention in upstate New York. Eight years of simmering. Five days' notice. And a document that rewrote the Declaration of Independence with two extra words. Four boxes on your sheet: the London root, the Declaration of Sentiments, the aftermath, the split. Circle the ones you couldn't explain right now. About thirteen minutes, and you'll check all four off.
+Maya: [professional broadcast tone] Last time: the women that abolition sidelined in London. This time, they hold their own convention in upstate New York. Eight years of simmering. Five days' notice. And a document that rewrote the Declaration of Independence with two extra words. Four boxes on your sheet: the London root, the Declaration of Sentiments, the aftermath, the split. Circle the ones you couldn't explain right now. About thirteen minutes, and you'll check all four off.
 
-Marcus: The thesis: Seneca Falls took the abolitionist movement's organizing and the Declaration of Independence, and aimed both at women's rights. And the most famous demand, the vote, nearly didn't make the cut.
+Marcus: [measured] The thesis: Seneca Falls took the abolitionist movement's organizing and the Declaration of Independence, and aimed both at women's rights. And the most famous demand, the vote, nearly didn't make the cut.
 
-Maya: Start in London. Eighteen forty.
+Maya: [conversational] Start in London. Eighteen forty.
 
-Marcus: The World's Anti-Slavery Convention. American women crossed the Atlantic as delegates, and the men voted to bar them from the floor. The reason was gender, not nationality. Elizabeth Cady Stanton and Lucretia Mott watched from the gallery. Stanton's father was a New York judge, and she grew up on his law books, or so she told it, including the part where her father supposedly wished she'd been a boy. On the way home the two women asked: if we're good enough to fight slavery, why aren't we citizens? That anger sat for eight years.
+Marcus: [measured] The World's Anti-Slavery Convention. American women crossed the Atlantic as delegates, and the men voted to bar them from the floor. The reason was gender, not nationality. Elizabeth Cady Stanton and Lucretia Mott watched from the gallery. Stanton's father was a New York judge, and she grew up on his law books, or so she told it, including the part where her father supposedly wished she'd been a boy. On the way home the two women asked: if we're good enough to fight slavery, why aren't we citizens? That anger sat for eight years.
 
-Maya: Eight years is a long simmer. What finally lit it?
+Maya: [curious, inquisitive tone] Eight years is a long simmer. What finally lit it?
 
-Marcus: A tea party in Waterloo, New York, in July of eighteen forty-eight. The guest list, as it's remembered: Stanton, Mott, Martha Wright, Mary Ann McClintock, Jane Hunt. Around that table they called a women's rights convention, and gave themselves five days. A notice in the county paper, and the Wesleyan Chapel in Seneca Falls for July nineteenth and twentieth.
+Marcus: [measured] A tea party in Waterloo, New York, in July of eighteen forty-eight. The guest list, as it's remembered: Stanton, Mott, Martha Wright, Mary Ann McClintock, Jane Hunt. Around that table they called a women's rights convention, and gave themselves five days. A notice in the county paper, and the Wesleyan Chapel in Seneca Falls for July nineteenth and twentieth.
 
-Maya: Five days. I needed three weeks to lose a race for class treasurer. They got five days and started a movement.
+Maya: [conversational] Five days. I needed three weeks to lose a race for class treasurer. They got five days and started a movement.
 
-Marcus: About three hundred people came. And this was the Burned-over District, where the Awakening's perfectionism found a new target: the law.
+Marcus: [measured] About three hundred people came. And this was the Burned-over District, where the Awakening's perfectionism found a new target: the law.
 
-Maya: Hold on, Seneca Falls. The town's named for the Seneca nation, right?
+Maya: [curious, inquisitive tone] Hold on, Seneca Falls. The town's named for the Seneca nation, right?
 
-Marcus: Yep. The Seneca, one of the five Iroquois nations. Didn't expect the geography bee from you.
+Marcus: [measured] Yep. The Seneca, one of the five Iroquois nations. Didn't expect the geography bee from you.
 
-Maya: Seventh grade field trip. We stopped at the chapel on the way to Niagara Falls. I mostly remember the gift shop, but still.
+Maya: [conversational] Seventh grade field trip. We stopped at the chapel on the way to Niagara Falls. I mostly remember the gift shop, but still.
 
-Maya: Now the document. What did the Declaration of Sentiments actually say?
+Maya: [curious, inquisitive tone] Now the document. What did the Declaration of Sentiments actually say?
 
-Marcus: Stanton drafted it in those five days: the Declaration of Independence, rewritten, same shape. Only now the tyrant isn't a king. And the most famous line gets two extra words: "We hold these truths to be self-evident: that all men and women are created equal."
+Marcus: [measured] Stanton drafted it in those five days: the Declaration of Independence, rewritten, same shape. Only now the tyrant isn't a king. And the most famous line gets two extra words: "We hold these truths to be self-evident: that all men and women are created equal."
 
-Maya: Read me the charges. The real words, not the summary.
+Maya: [conversational] Read me the charges. The real words, not the summary.
 
-Marcus: These are exact, primary source, no paraphrase. And fair warning: the "he" in every line means men, mankind, the whole legal order. Three of the charges: "He has never permitted her to exercise her inalienable right to the elective franchise." "He has made her, if married, in the eye of the law, civilly dead." "He has taken from her all right in property, even to the wages she earns."
+Marcus: [measured] These are exact, primary source, no paraphrase. And fair warning: the "he" in every line means men, mankind, the whole legal order. Three of the charges: "He has never permitted her to exercise her inalienable right to the elective franchise." "He has made her, if married, in the eye of the law, civilly dead." "He has taken from her all right in property, even to the wages she earns."
 
-Maya: "Civilly dead." That line is chilling.
+Maya: [conversational] "Civilly dead." That line is chilling.
 
-Marcus: That was the legal doctrine, and it had a name: coverture. When a woman married, her legal identity folded into her husband's. She couldn't own property, sign contracts, sue, or keep her own wages. In law, a married woman barely existed.
+Marcus: [measured] That was the legal doctrine, and it had a name: coverture. When a woman married, her legal identity folded into her husband's. She couldn't own property, sign contracts, sue, or keep her own wages. In law, a married woman barely existed.
 
-Maya: So the charges are the mirror. What were the demands?
+Maya: [curious, inquisitive tone] So the charges are the mirror. What were the demands?
 
-Marcus: The count that's come down to us: eleven resolutions. Property rights. Education. Access to professions. Divorce reform. An end to coverture. Ten of them passed without a real fight.
+Marcus: [measured] The count that's come down to us: eleven resolutions. Property rights. Education. Access to professions. Divorce reform. An end to coverture. Ten of them passed without a real fight.
 
-Maya: Wait. The Declaration was the charges, and the resolutions were the demands? I always mashed those together.
+Maya: [incredulous] Wait. The Declaration was the charges, and the resolutions were the demands? I always mashed those together.
 
-Marcus: Common mash. The Declaration states the case; the resolutions say what to do about it. And the ninth resolution, the vote, blew up the room.
+Marcus: [measured] Common mash. The Declaration states the case; the resolutions say what to do about it. And the ninth resolution, the vote, blew up the room.
 
 Maya: Hold on, your turn. Eleven resolutions sail through. Then one says it's the duty of women to secure "their sacred right to the elective franchise," the vote. A room of reformers, eighteen forty-eight. What happens? Call it before I tell you. [8-second pause]
 
 Maya: They table it. No way eighteen forty-eight is ready for that.
 
-Marcus: Mott argued exactly that. The line that's come down to us is Stanton's own memory of it, written down decades later, so take the exact words as hers. Mott turned to Stanton and said, "Why, Lizzie, thee will make us ridiculous." The fear was tactical: demand the vote, and the ridicule sinks everything else.
+Marcus: [measured] Mott argued exactly that. The line that's come down to us is Stanton's own memory of it, written down decades later, so take the exact words as hers. Mott turned to Stanton and said, "Why, Lizzie, thee will make us ridiculous." The fear was tactical: demand the vote, and the ridicule sinks everything else.
 
-Maya: So did it pass?
+Maya: [curious, inquisitive tone] So did it pass?
 
-Marcus: It did, after a real fight. And the speech that swung it came from Frederick Douglass. No transcript of that afternoon survives; what we have is Stanton's memory and Douglass's own editorial the next week. In the North Star he wrote: "In respect to political rights, we hold woman to be justly entitled to all we claim for man…" The ninth passed, the only resolution that wasn't unanimous. The signers' list that survives names one hundred people: sixty-eight women, thirty-two men. And Douglass printed the whole proceedings at his North Star office in Rochester.
+Marcus: [measured] It did, after a real fight. And the speech that swung it came from Frederick Douglass. No transcript of that afternoon survives; what we have is Stanton's memory and Douglass's own editorial the next week. In the North Star he wrote: "In respect to political rights, we hold woman to be justly entitled to all we claim for man…" The ninth passed, the only resolution that wasn't unanimous. The signers' list that survives names one hundred people: sixty-eight women, thirty-two men. And Douglass printed the whole proceedings at his North Star office in Rochester.
 
-Maya: Exam tip, because I know I'd blow this one. If a prompt hands you a grievance and asks what the source is doing, the answer isn't "listing complaints."
+Maya: [confident tone] Exam tip, because I know I'd blow this one. If a prompt hands you a grievance and asks what the source is doing, the answer isn't "listing complaints."
 
-Marcus: Right. The mimicry is the argument. She copied seventeen seventy-six to dare the country: if the founding logic is true, it covers women. Reject the Declaration of Sentiments, and you're rejecting the Declaration of Independence.
+Marcus: [measured] Right. The mimicry is the argument. She copied seventeen seventy-six to dare the country: if the founding logic is true, it covers women. Reject the Declaration of Sentiments, and you're rejecting the Declaration of Independence.
 
-Maya: And don't write that Seneca Falls won women the vote. I almost did, just now, in my head.
+Maya: [firm] And don't write that Seneca Falls won women the vote. I almost did, just now, in my head.
 
-Marcus: Good catch. Eighteen forty-eight to nineteen twenty is seventy-two years. Seneca Falls didn't win the vote. It started the organized fight for it.
+Marcus: [measured] Good catch. Eighteen forty-eight to nineteen twenty is seventy-two years. Seneca Falls didn't win the vote. It started the organized fight for it.
 
-Maya: Okay, aftermath. The papers must have had a field day.
+Maya: [conversational] Okay, aftermath. The papers must have had a field day.
 
-Marcus: They did. As the Declaration predicted: "misconception, misrepresentation, and ridicule." The papers delivered. Some signers quietly pulled their names off. But here's the timing trap students fall into: that spring, before the convention ever met, New York had passed the Married Women's Property Act. The ink was barely dry. The convention didn't cause the act. It met in a state where coverture already had its first crack.
+Marcus: [measured] They did. As the Declaration predicted: "misconception, misrepresentation, and ridicule." The papers delivered. Some signers quietly pulled their names off. But here's the timing trap students fall into: that spring, before the convention ever met, New York had passed the Married Women's Property Act. The ink was barely dry. The convention didn't cause the act. It met in a state where coverture already had its first crack.
 
-Maya: So one demand was already partly won before they even gathered.
+Maya: [conversational] So one demand was already partly won before they even gathered.
 
-Marcus: Partly. Married women could hold property in their own name — the first crack in coverture. And the movement spread instead of stalling. Rochester held a bigger one that summer, and through the eighteen-fifties the national conventions carried the demands city to city.
+Marcus: [measured] Partly. Married women could hold property in their own name — the first crack in coverture. And the movement spread instead of stalling. Rochester held a bigger one that summer, and through the eighteen-fifties the national conventions carried the demands city to city.
 
-Maya: The conventions were where the two great reform fights kept colliding, right? Abolition and women's rights in the same rooms?
+Maya: [curious, inquisitive tone] The conventions were where the two great reform fights kept colliding, right? Abolition and women's rights in the same rooms?
 
-Marcus: At Akron, in eighteen fifty-one — Sojourner Truth stood up, born enslaved and freed, fighting both battles at once. The disclosure, because it matters: her famous "Ain't I a Woman?" wording was written down years later, and historians argue over the exact words. So we quote nothing. What we know is she was there, and she forced the room to face that "women" didn't only mean white women.
+Marcus: [measured] At Akron, in eighteen fifty-one — Sojourner Truth stood up, born enslaved and freed, fighting both battles at once. The disclosure, because it matters: her famous "Ain't I a Woman?" wording was written down years later, and historians argue over the exact words. So we quote nothing. What we know is she was there, and she forced the room to face that "women" didn't only mean white women.
 
-Maya: Which complicates the poster version. In a good way.
+Maya: [conversational] Which complicates the poster version. In a good way.
 
-Marcus: Then came the Civil War. And after it, Congress decided who counted. The Fifteenth Amendment said no state could deny the vote on account of race. Black men in. Women left out entirely.
+Marcus: [measured] Then came the Civil War. And after it, Congress decided who counted. The Fifteenth Amendment said no state could deny the vote on account of race. Black men in. Women left out entirely.
 
-Maya: And the abolitionists said... wait your turn?
+Maya: [incredulous] And the abolitionists said... wait your turn?
 
-Marcus: That was the pitch. Wendell Phillips even had a slogan for it: "the Negro's hour." The cold math was that Black men's votes would protect Reconstruction in the South, and women's suffrage could wait. Stanton and Anthony refused to back the amendment without women in it.
+Marcus: [measured] That was the pitch. Wendell Phillips even had a slogan for it: "the Negro's hour." The cold math was that Black men's votes would protect Reconstruction in the South, and women's suffrage could wait. Stanton and Anthony refused to back the amendment without women in it.
 
-Maya: She campaigned against Black men voting?
+Maya: [curious, inquisitive tone] She campaigned against Black men voting?
 
-Marcus: She fought the amendment as written, and some of the language she used doing it was openly racist. That's part of the record, and Seneca Falls doesn't excuse it. Lucy Stone and her husband Henry Blackwell took the other side: back Reconstruction, win women's suffrage state by state. The movement split down the middle. Stanton and Anthony formed the National Woman Suffrage Association in eighteen sixty-nine. Stone and Blackwell formed the American Woman Suffrage Association the same year. Rivals for twenty years, until the two merged in eighteen ninety.
+Marcus: [measured] She fought the amendment as written, and some of the language she used doing it was openly racist. That's part of the record, and Seneca Falls doesn't excuse it. Lucy Stone and her husband Henry Blackwell took the other side: back Reconstruction, win women's suffrage state by state. The movement split down the middle. Stanton and Anthony formed the National Woman Suffrage Association in eighteen sixty-nine. Stone and Blackwell formed the American Woman Suffrage Association the same year. Rivals for twenty years, until the two merged in eighteen ninety.
 
-Maya: So the hero of Seneca Falls spent twenty years running a rival organization.
+Maya: [conversational] So the hero of Seneca Falls spent twenty years running a rival organization.
 
-Marcus: History doesn't do clean heroes. The through-line is the one that matters: the same movement that borrowed abolition's organizing couldn't agree on whether women counted, and the split lasted a generation.
+Marcus: [measured] History doesn't do clean heroes. The through-line is the one that matters: the same movement that borrowed abolition's organizing couldn't agree on whether women counted, and the split lasted a generation.
 
-Maya: My grandma was born about thirty years after women could vote. Two generations, and that's nothing.
+Maya: [conversational] My grandma was born about thirty years after women could vote. Two generations, and that's nothing.
 
-Maya: Four boxes, let's land them. One: the London root. Eighteen forty, the World's Anti-Slavery Convention, women delegates barred from the floor because of their gender. Eight years of simmering, the Waterloo tea party, five days' notice, Seneca Falls, July eighteen forty-eight.
+Maya: [conversational] Four boxes, let's land them. One: the London root. Eighteen forty, the World's Anti-Slavery Convention, women delegates barred from the floor because of their gender. Eight years of simmering, the Waterloo tea party, five days' notice, Seneca Falls, July eighteen forty-eight.
 
-Marcus: Checked.
+Marcus: [conversational] Checked.
 
-Maya: Two: the Declaration of Sentiments. The seventeen seventy-six mirror, "all men and women are created equal," the grievance list, eleven resolutions: ten smooth, the ninth, the vote, passing after a fight once Douglass spoke.
+Maya: [conversational] Two: the Declaration of Sentiments. The seventeen seventy-six mirror, "all men and women are created equal," the grievance list, eleven resolutions: ten smooth, the ninth, the vote, passing after a fight once Douglass spoke.
 
-Marcus: On the sheet.
+Marcus: [conversational] On the sheet.
 
-Maya: Three: the aftermath. Papers sneered, some signers bailed, but New York's property act was already law. That's the timing trap. And the conventions spread through the fifties, Akron and Truth in fifty-one.
+Maya: [conversational] Three: the aftermath. Papers sneered, some signers bailed, but New York's property act was already law. That's the timing trap. And the conventions spread through the fifties, Akron and Truth in fifty-one.
 
-Marcus: Got it.
+Marcus: [conversational] Got it.
 
-Maya: Four: the split. The Fifteenth Amendment (Black men in, women out), the "Negro's hour" argument, Stanton's racist opposition, rival organizations from sixty-nine to ninety.
+Maya: [conversational] Four: the split. The Fifteenth Amendment (Black men in, women out), the "Negro's hour" argument, Stanton's racist opposition, rival organizations from sixty-nine to ninety.
 
-Marcus: And that's the set.
+Marcus: [conversational] And that's the set.
 
-Maya: Sixty-eight women, thirty-two men. Wait, was it the other way around?
+Maya: [curious, inquisitive tone] Sixty-eight women, thirty-two men. Wait, was it the other way around?
 
-Marcus: Sixty-eight women. The list survives.
+Marcus: [measured] Sixty-eight women. The list survives.
 
 Maya: Three questions, AP-shaped. Say your answer before I give it. One: stimulus. "He has made her, if married, in the eye of the law, civilly dead." The prompt asks: what's the strategy behind this document's form? [15-second pause]
 
@@ -130,9 +130,9 @@ Maya: One more, fast. Name the New York law, already on the books when the conve
 
 Maya: The Married Women's Property Act, eighteen forty-eight.
 
-Maya: Check your four boxes. Next time we trade the chapel for the continent: a newspaper slogan that launched a thousand wagons, and a Mexican province about to call itself a republic. Episode 14: Manifest Destiny and Texas.
+Maya: [confident tone] Check your four boxes. Next time we trade the chapel for the continent: a newspaper slogan that launched a thousand wagons, and a Mexican province about to call itself a republic. Episode 14: Manifest Destiny and Texas.
 
-Marcus: Borrow the founding's words — then spend seventy-two years making the country mean them.
+Marcus: [professional broadcast tone] Borrow the founding's words — then spend seventy-two years making the country mean them.
 
 ## Sources
 - Barron's AP US History Premium 2027, Chapter 6 (Period 4) (~/workspace/apush/books/extracted/premium2027/) — Seneca Falls Convention 1848 (Stanton/Mott, abolitionist veterans, first public gathering for women's suffrage, demands beyond the vote, Declaration of Sentiments modeled on the Declaration of Independence, "all men and women are created equal"); convention met weeks AFTER the NY Married Women's Property Act (1848) passed (Chapter 12 answer key, 23_Chapter12.xhtml)

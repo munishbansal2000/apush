@@ -3,23 +3,23 @@
 # Pronunciation: Crèvecoeur (krev-KUR), Bayard (BY-urd), Gallatin (GAL-uh-tin)
 # Read note: pause tags used in this script: [8-second pause], [10-second pause], [15-second pause], [5-second pause]. They are production silence — real quiet in the mix, never spoken. Strip this header, the read note, and all pause tags before TTS; convert pause tags to real silence. Spoken words: 1733. Pauses: 68s. Experienced runtime ≈ 10.8 min at ≤180 WPM.
 
-Maya: Last time: the Alien and Sedition backlash turned the election of 1800 into a verdict on the Federalists, and the verdict came back guilty. This time: the transfer itself. The sitting president loses, skips the inauguration, and leaves town before dawn. Somehow that's the most revolutionary thing in the episode. Four boxes on your sheet: the tie, the pragmatist, Marbury's judo, and the culture. Circle the ones you couldn't explain right now. About eleven minutes.
+Maya: [professional broadcast tone] Last time: the Alien and Sedition backlash turned the election of 1800 into a verdict on the Federalists, and the verdict came back guilty. This time: the transfer itself. The sitting president loses, skips the inauguration, and leaves town before dawn. Somehow that's the most revolutionary thing in the episode. Four boxes on your sheet: the tie, the pragmatist, Marbury's judo, and the culture. Circle the ones you couldn't explain right now. About eleven minutes.
 
-Marcus: Jefferson beats Adams in the Electoral College, 73 to 65. But each elector cast two votes back then, no separate vote for vice president, so Jefferson's own running mate, Aaron Burr, ties him at 73.
+Marcus: [measured] Jefferson beats Adams in the Electoral College, 73 to 65. But each elector cast two votes back then, no separate vote for vice president, so Jefferson's own running mate, Aaron Burr, ties him at 73.
 
-Maya: The tie isn't Jefferson versus Adams. It's Jefferson versus his own ticket.
+Maya: [conversational] The tie isn't Jefferson versus Adams. It's Jefferson versus his own ticket.
 
-Marcus: Exactly. A tie goes to the House, voting by state, and the House is still Federalist, the party that just lost. So the losers pick the winner.
+Marcus: [measured] Exactly. A tie goes to the House, voting by state, and the House is still Federalist, the party that just lost. So the losers pick the winner.
 
-Maya: What could go wrong.
+Maya: [conversational] What could go wrong.
 
-Marcus: Thirty-five ballots of nothing, then the thirty-sixth. Fair warning: if your review book says 35, that's a misprint in one of the big prep books. Count to 36, February 17, 1801.
+Marcus: [measured] Thirty-five ballots of nothing, then the thirty-sixth. Fair warning: if your review book says 35, that's a misprint in one of the big prep books. Count to 36, February 17, 1801.
 
-Maya: Thirty-six separate votes. My school needed four assemblies to pick a prom theme and I thought we were broken.
+Maya: [conversational] Thirty-six separate votes. My school needed four assemblies to pick a prom theme and I thought we were broken.
 
-Marcus: Some Federalists preferred Burr: not from trust, they just wanted to embarrass Jefferson. Then Hamilton started writing letters. His line on Burr, to his own party: "the most unfit man in the United States for the office of president."
+Marcus: [measured] Some Federalists preferred Burr: not from trust, they just wanted to embarrass Jefferson. Then Hamilton started writing letters. His line on Burr, to his own party: "the most unfit man in the United States for the office of president."
 
-Maya: Hamilton campaigning for Jefferson. The man he'd spent a decade trying to destroy.
+Maya: [conversational] Hamilton campaigning for Jefferson. The man he'd spent a decade trying to destroy.
 
 Marcus: He called Jefferson's principles wrong, but principles. Burr, he said, had none. Your turn. Deadlocked House, Federalists hate Jefferson, some think Burr's more useful, Hamilton's writing letters for him. What breaks first, the votes or the voters?
 
@@ -27,41 +27,41 @@ Marcus: He called Jefferson's principles wrong, but principles. Burr, he said, h
 
 Marcus: The voters. Nobody converted. James Bayard of Delaware led Federalists into abstaining, sitting the ballot out, and on the 36th the math moved: ten states for Jefferson, four for Burr, two blank.
 
-Maya: The republic was saved by people not voting. The most passive-aggressive rescue in history.
+Maya: [conversational] The republic was saved by people not voting. The most passive-aggressive rescue in history.
 
-Marcus: Then the part that made it a revolution. Adams left the capital before dawn rather than attend; the exact hour gets argued about, but the snub is solid. And Jefferson, in his inaugural, reached straight for the losers. His actual words: "We are all Republicans; we are all Federalists."
+Marcus: [measured] Then the part that made it a revolution. Adams left the capital before dawn rather than attend; the exact hour gets argued about, but the snub is solid. And Jefferson, in his inaugural, reached straight for the losers. His actual words: "We are all Republicans; we are all Federalists."
 
-Maya: He's telling the Federalists the temperature drops now.
+Maya: [conversational] He's telling the Federalists the temperature drops now.
 
-Marcus: The first time in the modern world a ruling party handed power to the opposition and walked away. No army in the streets, no coup. It's the precedent later democracies inherited. Congress fixed the bug with the Twelfth Amendment in 1804: separate ballots for president and vice president, so it could never happen again.
+Marcus: [measured] The first time in the modern world a ruling party handed power to the opposition and walked away. No army in the streets, no coup. It's the precedent later democracies inherited. Congress fixed the bug with the Twelfth Amendment in 1804: separate ballots for president and vice president, so it could never happen again.
 
-Maya: Don't write that the voters picked Jefferson. The House did, and in 1800 most Americans couldn't vote for president at all.
+Maya: [firm] Don't write that the voters picked Jefferson. The House did, and in 1800 most Americans couldn't vote for president at all.
 
-Maya: One down. Checking the tie off my sheet.
+Maya: [conversational] One down. Checking the tie off my sheet.
 
-Marcus: Box two: the pragmatist. Jefferson campaigned as the strict constructionist who'd tear down Hamilton's machine. Then he moved in and kept most of it running.
+Marcus: [measured] Box two: the pragmatist. Jefferson campaigned as the strict constructionist who'd tear down Hamilton's machine. Then he moved in and kept most of it running.
 
-Maya: He kept the Bank? He hated the Bank.
+Maya: [conversational] He kept the Bank? He hated the Bank.
 
-Marcus: He decided it was economically useful, a very un-campaign conclusion. Kept the financial machinery, and gave the books to his Treasury secretary, Albert Gallatin, who cut taxes, including the whiskey excise Washington once marched an army to collect, and started paying down the debt. The Sedition law died quietly. The ideologue became a manager.
+Marcus: [measured] He decided it was economically useful, a very un-campaign conclusion. Kept the financial machinery, and gave the books to his Treasury secretary, Albert Gallatin, who cut taxes, including the whiskey excise Washington once marched an army to collect, and started paying down the debt. The Sedition law died quietly. The ideologue became a manager.
 
-Maya: SAQ bait: continuity and change under Jefferson. The Bank is your continuity.
+Maya: [conversational] SAQ bait: continuity and change under Jefferson. The Bank is your continuity.
 
-Marcus: Then 1803, and the most un-Jeffersonian thing imaginable. Napoleon had forced Spain to hand Louisiana back to France, and Jefferson first just wanted New Orleans. Then Napoleon's American project collapsed: the army he'd sent to recapture Haiti died of disease, and war with Britain was coming. So Napoleon offered the entire territory, fifteen million dollars, about three cents an acre. The country doubled overnight.
+Marcus: [measured] Then 1803, and the most un-Jeffersonian thing imaginable. Napoleon had forced Spain to hand Louisiana back to France, and Jefferson first just wanted New Orleans. Then Napoleon's American project collapsed: the army he'd sent to recapture Haiti died of disease, and war with Britain was coming. So Napoleon offered the entire territory, fifteen million dollars, about three cents an acre. The country doubled overnight.
 
-Maya: Because he needed the cash for the war —
+Maya: [professional broadcast tone] Because he needed the cash for the war —
 
-Marcus: Cash helped, but the trigger was Haiti. Without Haiti, Louisiana was indefensible. The money was the bonus; the lost colony was the cause. Now the part that should've broken Jefferson's brain: he's the strict constructionist, the government holds only listed powers, and there's no buy-half-a-continent clause. He drafted an amendment, agonized in letters, and did it anyway, using Hamilton's loose reading of the Constitution he'd campaigned against.
+Marcus: [measured] Cash helped, but the trigger was Haiti. Without Haiti, Louisiana was indefensible. The money was the bonus; the lost colony was the cause. Now the part that should've broken Jefferson's brain: he's the strict constructionist, the government holds only listed powers, and there's no buy-half-a-continent clause. He drafted an amendment, agonized in letters, and did it anyway, using Hamilton's loose reading of the Constitution he'd campaigned against.
 
-Maya: So the small-government president stretched the document because everybody wanted the land.
+Maya: [conversational] So the small-government president stretched the document because everybody wanted the land.
 
-Marcus: Everybody wanted the land; the Senate ratified and the House paid. And don't write that Louisiana shrank Jefferson's government: buying half a continent on loose construction is the opposite of small government.
+Marcus: [firm] Everybody wanted the land; the Senate ratified and the House paid. And don't write that Louisiana shrank Jefferson's government: buying half a continent on loose construction is the opposite of small government.
 
-Maya: Box three: Marbury's judo. I know the name. I couldn't explain the judo.
+Maya: [conversational] Box three: Marbury's judo. I know the name. I couldn't explain the judo.
 
-Marcus: On his way out, Adams packed the courts with Federalist judges, the "midnight judges." The name's dramatic; most of those commissions were signed in his final weeks, not literally at midnight. But William Marbury never got his papers, and Jefferson's secretary of state, James Madison, refused to deliver them. Marbury sued, asking the Supreme Court to order Madison to hand them over.
+Marcus: [measured] On his way out, Adams packed the courts with Federalist judges, the "midnight judges." The name's dramatic; most of those commissions were signed in his final weeks, not literally at midnight. But William Marbury never got his papers, and Jefferson's secretary of state, James Madison, refused to deliver them. Marbury sued, asking the Supreme Court to order Madison to hand them over.
 
-Maya: And the chief justice is John Marshall, a Federalist. Open and shut for Marbury.
+Maya: [conversational] And the chief justice is John Marshall, a Federalist. Open and shut for Marbury.
 
 Marcus: A trap. Order delivery and Jefferson ignores the Court; everybody sees it's toothless. Back down and the Court looks gutless. Your turn. You're Marshall. Third door — go.
 
@@ -69,49 +69,49 @@ Marcus: A trap. Order delivery and Jefferson ignores the Court; everybody sees i
 
 Marcus: He found one. He ruled that the section of the Judiciary Act of 1789 giving the Court that power was itself unconstitutional. Marbury, his fellow Federalist, lost his commission, and the Court walked away with something infinitely bigger: judicial review, the power to strike down laws. He built the Court's authority by ruling against his own party's man.
 
-Maya: He gave up the battle to win the war.
+Maya: [conversational] He gave up the battle to win the war.
 
-Marcus: And almost nobody noticed at the time. Quiet revolutions work like that. Which is exactly what the exam tests: don't write that Marbury won. He lost, the Court won, and that's the whole trick.
+Marcus: [firm] And almost nobody noticed at the time. Quiet revolutions work like that. Which is exactly what the exam tests: don't write that Marbury won. He lost, the Court won, and that's the whole trick.
 
-Maya: Box four: the culture. A republic needs its own culture, not just its government.
+Maya: [conversational] Box four: the culture. A republic needs its own culture, not just its government.
 
-Marcus: Noah Webster started with spelling: the 1783 blue-backed speller, the little blue book that taught generations of kids to read. Theater, not theatre. Color, not colour. Spelling as independence. Then in 1789, in his Dissertations on the English Language, he wrote the line behind the whole project. His actual words: "a national language is a band of national union."
+Marcus: [measured] Noah Webster started with spelling: the 1783 blue-backed speller, the little blue book that taught generations of kids to read. Theater, not theatre. Color, not colour. Spelling as independence. Then in 1789, in his Dissertations on the English Language, he wrote the line behind the whole project. His actual words: "a national language is a band of national union."
 
-Maya: Language as nation-building.
+Maya: [conversational] Language as nation-building.
 
-Marcus: Peale's museum in Philadelphia put American nature and American heroes under one roof. Trumbull's giant Declaration canvas hangs in the Capitol rotunda, except it's romanticized: half the men in it were never in the room together. The founders were already mythologizing themselves.
+Marcus: [measured] Peale's museum in Philadelphia put American nature and American heroes under one roof. Trumbull's giant Declaration canvas hangs in the Capitol rotunda, except it's romanticized: half the men in it were never in the room together. The founders were already mythologizing themselves.
 
-Maya: You know that's the painting on the back of the two-dollar bill, right?
+Maya: [curious, inquisitive tone] You know that's the painting on the back of the two-dollar bill, right?
 
-Marcus: I have never once looked at the back of a two-dollar bill.
+Marcus: [measured] I have never once looked at the back of a two-dollar bill.
 
-Maya: Nobody has, which makes it the perfect hiding place. Writers were in on it too —
+Maya: [professional broadcast tone] Nobody has, which makes it the perfect hiding place. Writers were in on it too —
 
-Marcus: A French immigrant, Hector St. John de Crèvecoeur, asked in 1782: "What then is the American, this new man?" And the Capitol itself, begun in 1793: columns and pediments instead of Georgian brick. The message in stone: this is a republic, not a colony.
+Marcus: [measured] A French immigrant, Hector St. John de Crèvecoeur, asked in 1782: "What then is the American, this new man?" And the Capitol itself, begun in 1793: columns and pediments instead of Georgian brick. The message in stone: this is a republic, not a colony.
 
-Maya: The exam never wants the list. It wants the job: every item here answers one question: how do you make people feel American after 1783? And don't date the union line to the speller. Speller's 1783; the line is 1789. Six years apart.
+Maya: [conversational] The exam never wants the list. It wants the job: every item here answers one question: how do you make people feel American after 1783? And don't date the union line to the speller. Speller's 1783; the line is 1789. Six years apart.
 
-Maya: So was it a revolution? Jefferson's own phrase for it —
+Maya: [professional broadcast tone] So was it a revolution? Jefferson's own phrase for it —
 
-Marcus: He used the phrase years later, in a letter, and the honest answer cuts both ways. The transfer was genuinely new; nothing like it had happened in the modern world. But the promises stopped at the color line and the property line. Slavery didn't just survive Jefferson's revolution; it grew, fed by the Louisiana land he'd bought. Most Americans still couldn't vote, and Jefferson the liberator enslaved people himself.
+Marcus: [measured] He used the phrase years later, in a letter, and the honest answer cuts both ways. The transfer was genuinely new; nothing like it had happened in the modern world. But the promises stopped at the color line and the property line. Slavery didn't just survive Jefferson's revolution; it grew, fed by the Louisiana land he'd bought. Most Americans still couldn't vote, and Jefferson the liberator enslaved people himself.
 
-Maya: A real revolution with a real asterisk.
+Maya: [conversational] A real revolution with a real asterisk.
 
-Marcus: Some historians say 1800 wasn't a revolution at all, just a changing of the guard.
+Marcus: [measured] Some historians say 1800 wasn't a revolution at all, just a changing of the guard.
 
-Maya: And you?
+Maya: [curious, inquisitive tone] And you?
 
-Marcus: The handoff was real, and precious. The exclusions were damning in their own way. Both. The republic survived its first stress test and deferred its hardest questions.
+Marcus: [measured] The handoff was real, and precious. The exclusions were damning in their own way. Both. The republic survived its first stress test and deferred its hardest questions.
 
-Maya: Four boxes, let's land them. One: the tie. Seventy-three to seventy-three, the House voting by state, thirty-six ballots, not thirty-five, Hamilton's letters, Bayard's abstentions, ten to four with two blank. The first peaceful party handoff, Adams gone before dawn.
+Maya: [conversational] Four boxes, let's land them. One: the tie. Seventy-three to seventy-three, the House voting by state, thirty-six ballots, not thirty-five, Hamilton's letters, Bayard's abstentions, ten to four with two blank. The first peaceful party handoff, Adams gone before dawn.
 
-Maya: His actual words: "We are all Republicans; we are all Federalists." Two: the pragmatist. Kept the Bank, Gallatin cut taxes and paid down the debt, then bought Louisiana, fifteen million at three cents an acre, on the loose construction he'd campaigned against. Three: Marbury's judo. Midnight judges, Marshall's trap, judicial review built by ruling against his own Federalist.
+Maya: [conversational] His actual words: "We are all Republicans; we are all Federalists." Two: the pragmatist. Kept the Bank, Gallatin cut taxes and paid down the debt, then bought Louisiana, fifteen million at three cents an acre, on the loose construction he'd campaigned against. Three: Marbury's judo. Midnight judges, Marshall's trap, judicial review built by ruling against his own Federalist.
 
-Maya: Four: the culture. Webster's speller and the 1789 line, Peale, Trumbull, Crèvecoeur, the Capitol in stone. And the asterisk: real revolution, real exclusions. Wait, the House count. Ten to four with two... for Burr? No —
+Maya: [professional broadcast tone] Four: the culture. Webster's speller and the 1789 line, Peale, Trumbull, Crèvecoeur, the Capitol in stone. And the asterisk: real revolution, real exclusions. Wait, the House count. Ten to four with two... for Burr? No —
 
-Marcus: Ten Jefferson, four Burr, two blank.
+Marcus: [measured] Ten Jefferson, four Burr, two blank.
 
-Maya: Ten, four, two blank. Landed.
+Maya: [thoughtful tone] Ten, four, two blank. Landed.
 
 Maya: Three questions, AP-shaped. Say your answer before I give it. One: a Federalist writes privately that Aaron Burr is, quote, "the most unfit man in the United States for the office of president." Who wrote it, and what does the letter tell you about how the tie broke?
 
@@ -137,9 +137,9 @@ Maya: One more, fast. Webster's 1789 line on language and union. What's the line
 
 Maya: "A national language is a band of national union." Speller's 1783; the line is 1789. Don't mix them.
 
-Marcus: And that's the episode. Next time: the Unit Three cram. Eleven episodes, ten questions, no mercy.
+Marcus: [intrigued] And that's the episode. Next time: the Unit Three cram. Eleven episodes, ten questions, no mercy.
 
-Maya: Power changed hands. The hands stayed few.
+Maya: [professional broadcast tone] Power changed hands. The hands stayed few.
 
 ## Sources (production only — never spoken)
 

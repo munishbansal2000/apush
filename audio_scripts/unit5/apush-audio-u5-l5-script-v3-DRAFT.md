@@ -13,21 +13,21 @@
 
 ---
 
-Maya: Last time: Dred Scott sued for his freedom, and the Supreme Court tried to settle slavery once and for all — and blew the middle apart. I'd promised you the strangest outcome in American politics: the man who loses the election wins the future. Four boxes on my sheet: the House Divided speech, the seven debates, the Freeport trap, and the loser who won. Circle the ones you couldn't explain right now. Give me about twelve minutes.
+Maya: [professional broadcast tone] Last time: Dred Scott sued for his freedom, and the Supreme Court tried to settle slavery once and for all — and blew the middle apart. I'd promised you the strangest outcome in American politics: the man who loses the election wins the future. Four boxes on my sheet: the House Divided speech, the seven debates, the Freeport trap, and the loser who won. Circle the ones you couldn't explain right now. Give me about twelve minutes.
 
-Marcus: Illinois, 1858. The Senate seat belongs to Stephen Douglas, one of the most powerful Democrats in America. He wrote the Kansas-Nebraska Act, the law that let each territory vote slavery up or down for itself, and his whole career is built on that idea: popular sovereignty. Let the settlers decide.
+Marcus: [measured] Illinois, 1858. The Senate seat belongs to Stephen Douglas, one of the most powerful Democrats in America. He wrote the Kansas-Nebraska Act, the law that let each territory vote slavery up or down for itself, and his whole career is built on that idea: popular sovereignty. Let the settlers decide.
 
-Maya: And the challenger is some guy?
+Maya: [curious, inquisitive tone] And the challenger is some guy?
 
-Marcus: Abraham Lincoln. Forty-nine, a Springfield lawyer, a former Whig who served one term in Congress back in the 1840s and then went home to practice law. Outside Illinois, almost nobody had heard of him. The Kansas-Nebraska fight and the Dred Scott decision dragged him back into politics. The Illinois Republicans hand him the Senate nomination.
+Marcus: [measured] Abraham Lincoln. Forty-nine, a Springfield lawyer, a former Whig who served one term in Congress back in the 1840s and then went home to practice law. Outside Illinois, almost nobody had heard of him. The Kansas-Nebraska fight and the Dred Scott decision dragged him back into politics. The Illinois Republicans hand him the Senate nomination.
 
-Maya: So it's the heavyweight champ versus a guy whose national reputation fits on an index card. Why does Lincoln even take the fight?
+Maya: [curious, inquisitive tone] So it's the heavyweight champ versus a guy whose national reputation fits on an index card. Why does Lincoln even take the fight?
 
-Marcus: Because in June 1858 he walks into the state capitol in Springfield, accepts that nomination, and opens with a line that blows the race wide open. "A house divided against itself cannot stand. I believe this government cannot endure permanently half slave and half free. It will become all one thing or all the other."
+Marcus: [measured] Because in June 1858 he walks into the state capitol in Springfield, accepts that nomination, and opens with a line that blows the race wide open. "A house divided against itself cannot stand. I believe this government cannot endure permanently half slave and half free. It will become all one thing or all the other."
 
-Maya: Okay — not a campaign slogan, a prophecy.
+Maya: [conversational] Okay — not a campaign slogan, a prophecy.
 
-Marcus: It's a corner he's painting the country into. Either slavery's opponents stop its spread and put it on the road to extinction, or its supporters push it until it's lawful in every state, North and South. No permanent middle.
+Marcus: [measured] It's a corner he's painting the country into. Either slavery's opponents stop its spread and put it on the road to extinction, or its supporters push it until it's lawful in every state, North and South. No permanent middle.
 
 Maya: Your turn. Lincoln just told the whole country the Union ends up all slave or all free. Southerners are reading this in the papers. What do they hear?
 
@@ -35,29 +35,29 @@ Maya: Your turn. Lincoln just told the whole country the Union ends up all slave
 
 Marcus: They hear a threat. And they're not wrong about the direction. Lincoln's saying the crisis has to resolve, and his side of the resolution is slavery dying out. Douglas calls him a radical who'll break the Union. That line frames everything after.
 
-Maya: One down. House Divided. June 1858, Springfield: half slave and half free can't last.
+Maya: [conversational] One down. House Divided. June 1858, Springfield: half slave and half free can't last.
 
-Marcus: Exam tip, and it's a timing trap: the speech is 1858, a Senate race. When a question pairs Lincoln and Douglas in 1858, the office is the Senate. The presidency is two years later, so don't let the dates blur.
+Marcus: [measured] Exam tip, and it's a timing trap: the speech is 1858, a Senate race. When a question pairs Lincoln and Douglas in 1858, the office is the Senate. The presidency is two years later, so don't let the dates blur.
 
-Maya: And don't write that the speech called for freeing enslaved people where slavery already existed. It's about the spread: stop it, or watch it go everywhere. The whole argument, right there.
+Maya: [firm] And don't write that the speech called for freeing enslaved people where slavery already existed. It's about the spread: stop it, or watch it go everywhere. The whole argument, right there.
 
-Marcus: Then Lincoln does what his managers suggest: he challenges Douglas to a series of joint debates. Seven of them, August to October, in seven Illinois towns: Ottawa, Freeport, Jonesboro, Charleston, Galesburg, Quincy, Alton. Each one runs three hours. Thousands of people stand in fields and listen to the whole thing.
+Marcus: [measured] Then Lincoln does what his managers suggest: he challenges Douglas to a series of joint debates. Seven of them, August to October, in seven Illinois towns: Ottawa, Freeport, Jonesboro, Charleston, Galesburg, Quincy, Alton. Each one runs three hours. Thousands of people stand in fields and listen to the whole thing.
 
-Maya: I sat through a three-hour school board meeting once. About the dress code. I wouldn't do that again for any amount of money. These people did it seven times, standing up, about slavery.
+Maya: [conversational] I sat through a three-hour school board meeting once. About the dress code. I wouldn't do that again for any amount of money. These people did it seven times, standing up, about slavery.
 
-Marcus: Politics was the entertainment. And the issue was the only one that mattered: can slavery spread into the territories? Douglas keeps trying to brand Lincoln a dangerous radical, a man who wants racial equality and would tear the Union apart. Lincoln keeps calling slavery a moral wrong and blaming popular sovereignty for what it produced in Kansas: blood.
+Marcus: [measured] Politics was the entertainment. And the issue was the only one that mattered: can slavery spread into the territories? Douglas keeps trying to brand Lincoln a dangerous radical, a man who wants racial equality and would tear the Union apart. Lincoln keeps calling slavery a moral wrong and blaming popular sovereignty for what it produced in Kansas: blood.
 
-Maya: Wait — Lincoln-Douglas? Like LD debate? I did that in ninth grade. Affirmative, negative, cross-examination, everybody exhausted.
+Maya: [incredulous] Wait — Lincoln-Douglas? Like LD debate? I did that in ninth grade. Affirmative, negative, cross-examination, everybody exhausted.
 
-Marcus: Same shape. Two people, one question, nowhere to hide.
+Marcus: [measured] Same shape. Two people, one question, nowhere to hide.
 
-Maya: Okay, real question, and I want the honest version. Was Douglas just racist? And was Lincoln the good guy?
+Maya: [curious, inquisitive tone] Okay, real question, and I want the honest version. Was Douglas just racist? And was Lincoln the good guy?
 
-Marcus: Honest version: by our standards, both men accepted white supremacy. Douglas's whole pitch was that white settlers should decide, and he hammered Lincoln for supposedly favoring Black equality. Lincoln's 1858 position was containment, not equality. Stop the spread; put slavery on the road to extinction. Paraphrasing the historian Eric Foner: Lincoln's racial views changed during the war, but even as president he never became a principled egalitarian the way abolitionists like Frederick Douglass were.
+Marcus: [measured] Honest version: by our standards, both men accepted white supremacy. Douglas's whole pitch was that white settlers should decide, and he hammered Lincoln for supposedly favoring Black equality. Lincoln's 1858 position was containment, not equality. Stop the spread; put slavery on the road to extinction. Paraphrasing the historian Eric Foner: Lincoln's racial views changed during the war, but even as president he never became a principled egalitarian the way abolitionists like Frederick Douglass were.
 
-Maya: So it's not hero versus villain. It's two men inside a racist political system, and one of them thinks the moral question is whether slavery spreads.
+Maya: [conversational] So it's not hero versus villain. It's two men inside a racist political system, and one of them thinks the moral question is whether slavery spreads.
 
-Marcus: The both-sides version, and it's the one the exam rewards. Common mistake here: don't write that the debates were about abolishing slavery in the South. They were about whether it could spread into the territories. That's the distinction the test keeps probing.
+Marcus: [firm] The both-sides version, and it's the one the exam rewards. Common mistake here: don't write that the debates were about abolishing slavery in the South. They were about whether it could spread into the territories. That's the distinction the test keeps probing.
 
 Maya: Your turn. The trap being set: a year earlier, the Supreme Court said neither Congress nor a territorial legislature could keep slavery out. Douglas's entire career is "let the territories vote." Lincoln's about to ask him about it at Freeport, the second debate. If you're Douglas, what do you say?
 
@@ -65,47 +65,47 @@ Maya: Your turn. The trap being set: a year earlier, the Supreme Court said neit
 
 Marcus: Whatever you came up with, Douglas found something slipperier. Freeport, August 27. Lincoln asks him, in so many words: if the Court says nobody can ban slavery in a territory, how can your "let the people vote" still work? No safe answer exists. Say no, and Illinois deserts you. Say yes, and you're defying the Supreme Court to the South's face.
 
-Maya: A question with no safe answer. That's mean. I respect it.
+Maya: [conversational] A question with no safe answer. That's mean. I respect it.
 
-Marcus: Douglas's answer is what the history books call the Freeport Doctrine. Slavery, he says, can't survive a single day without local laws propping it up: slave codes, patrols, courts that enforce a master's claim. So if the settlers simply never pass those laws, slavery can't take root. Nobody bans it. The laws it needs just never get written.
+Marcus: [measured] Douglas's answer is what the history books call the Freeport Doctrine. Slavery, he says, can't survive a single day without local laws propping it up: slave codes, patrols, courts that enforce a master's claim. So if the settlers simply never pass those laws, slavery can't take root. Nobody bans it. The laws it needs just never get written.
 
-Maya: So the whole strategy is just... doing nothing? Sneakiest answer I've heard all episode.
+Maya: [conversational] So the whole strategy is just... doing nothing? Sneakiest answer I've heard all episode.
 
-Marcus: That was the move. The traditional label for the trick is "unfriendly legislation": not Douglas's exact words, just the name historians gave it. Refuse the friendly laws, and slavery withers.
+Marcus: [measured] That was the move. The traditional label for the trick is "unfriendly legislation": not Douglas's exact words, just the name historians gave it. Refuse the friendly laws, and slavery withers.
 
-Maya: So the South reads that and thinks, cool, the Court's on our side, nothing to worry about?
+Maya: [curious, inquisitive tone] So the South reads that and thinks, cool, the Court's on our side, nothing to worry about?
 
-Marcus: The opposite. They read it as Douglas telling settlers to dodge Dred Scott, defying the Court with a technicality. They're furious. And the thing the test writers can't resist: the Freeport Doctrine is Douglas's answer, not Lincoln's, and it says settlers could keep slavery OUT. The trap answer choices flip the speaker or flip the direction.
+Marcus: [firm] The opposite. They read it as Douglas telling settlers to dodge Dred Scott, defying the Court with a technicality. They're furious. And the thing the test writers can't resist: the Freeport Doctrine is Douglas's answer, not Lincoln's, and it says settlers could keep slavery OUT. The trap answer choices flip the speaker or flip the direction.
 
-Maya: November 1858. The votes are counted. Who wins?
+Maya: [curious, inquisitive tone] November 1858. The votes are counted. Who wins?
 
-Marcus: Now the part that breaks brains: the voters didn't pick the senator. Back then, state legislatures chose U.S. senators. Ordinary voters picked the legislators, and the legislators picked the man. The Illinois legislature voted 54 to 46, and Douglas kept his seat.
+Marcus: [measured] Now the part that breaks brains: the voters didn't pick the senator. Back then, state legislatures chose U.S. senators. Ordinary voters picked the legislators, and the legislators picked the man. The Illinois legislature voted 54 to 46, and Douglas kept his seat.
 
-Maya: So Douglas wins. Lincoln loses. Episode over?
+Maya: [curious, inquisitive tone] So Douglas wins. Lincoln loses. Episode over?
 
-Marcus: The election's over. What came next is the bigger story. Lincoln lost the seat and won everything else: the debates made him nationally famous, an eloquent spokesman for the Republican cause. He's invited east. February 27, 1860, he speaks at Cooper Union in New York City, argues against letting slavery spread into the territories, and closes with this: "Let us have faith that right makes might, and in that faith, let us, to the end, dare to do our duty as we understand it." Within three months he's the Republican nominee for president.
+Marcus: [measured] The election's over. What came next is the bigger story. Lincoln lost the seat and won everything else: the debates made him nationally famous, an eloquent spokesman for the Republican cause. He's invited east. February 27, 1860, he speaks at Cooper Union in New York City, argues against letting slavery spread into the territories, and closes with this: "Let us have faith that right makes might, and in that faith, let us, to the end, dare to do our duty as we understand it." Within three months he's the Republican nominee for president.
 
-Maya: And Douglas?
+Maya: [curious, inquisitive tone] And Douglas?
 
-Marcus: Douglas kept his Senate seat and lost his party. The South never forgave the Freeport Doctrine — it helped split the Democrats, and in 1860 he ran as the candidate of a divided party and finished a distant second to Lincoln. The debates were even printed as a book and used as a campaign document. The loser got the book deal and the presidency.
+Marcus: [measured] Douglas kept his Senate seat and lost his party. The South never forgave the Freeport Doctrine — it helped split the Democrats, and in 1860 he ran as the candidate of a divided party and finished a distant second to Lincoln. The debates were even printed as a book and used as a campaign document. The loser got the book deal and the presidency.
 
-Maya: Watch the wording here: Lincoln lost the 1858 race. Don't let the debates fool you into writing that he won the Senate seat.
+Maya: [conversational] Watch the wording here: Lincoln lost the 1858 race. Don't let the debates fool you into writing that he won the Senate seat.
 
-Maya: Okay, landing time.
+Maya: [conversational] Okay, landing time.
 
-Maya: Four boxes, let's land them. One: the House Divided speech. June 1858, Springfield: Lincoln accepts the Senate nomination and says the country can't stay half slave and half free. It'll become all one thing or all the other.
+Maya: [conversational] Four boxes, let's land them. One: the House Divided speech. June 1858, Springfield: Lincoln accepts the Senate nomination and says the country can't stay half slave and half free. It'll become all one thing or all the other.
 
-Marcus: And Douglas calls him a radical for it. That frame runs the whole campaign.
+Marcus: [measured] And Douglas calls him a radical for it. That frame runs the whole campaign.
 
-Maya: Two: the seven debates. August to October, seven Illinois towns, three hours each, one question: can slavery spread into the territories? Douglas paints Lincoln as a radical; Lincoln calls slavery a moral wrong and blames popular sovereignty for bleeding Kansas. And neither man is preaching racial equality — that's the honest version.
+Maya: [conversational] Two: the seven debates. August to October, seven Illinois towns, three hours each, one question: can slavery spread into the territories? Douglas paints Lincoln as a radical; Lincoln calls slavery a moral wrong and blames popular sovereignty for bleeding Kansas. And neither man is preaching racial equality — that's the honest version.
 
-Marcus: Right. Containment versus let-the-voters-decide.
+Marcus: [conversational] Right. Containment versus let-the-voters-decide.
 
-Maya: Three: Freeport, the second debate, in… August? Lincoln springs the Dred Scott trap: if the Court says nobody can ban slavery, how does voting still work? Douglas answers with the Freeport Doctrine — settlers dodge the Court by never passing the laws slavery needs. Unfriendly legislation. It saves him in Illinois and poisons him in the South.
+Maya: [conversational] Three: Freeport, the second debate, in… August? Lincoln springs the Dred Scott trap: if the Court says nobody can ban slavery, how does voting still work? Douglas answers with the Freeport Doctrine — settlers dodge the Court by never passing the laws slavery needs. Unfriendly legislation. It saves him in Illinois and poisons him in the South.
 
-Marcus: August 27, and you've got the mechanism exactly right.
+Marcus: [measured] August 27, and you've got the mechanism exactly right.
 
-Maya: Four: Douglas keeps the seat through the legislature, 54 to 46, but the South never forgives him. Lincoln loses, speaks at Cooper Union in February 1860, and walks out a presidential contender.
+Maya: [conversational] Four: Douglas keeps the seat through the legislature, 54 to 46, but the South never forgives him. Lincoln loses, speaks at Cooper Union in February 1860, and walks out a presidential contender.
 
 Maya: Three questions, AP-shaped. Say your answer before I give it.
 
@@ -133,11 +133,11 @@ Maya: One more, fast. In 1858, who actually cast the votes that sent Douglas bac
 
 Maya: The legislature, 54 to 46. Voters picked the legislators; the legislators picked the senator. Direct election wouldn't come until the 17th Amendment.
 
-Maya: Check your boxes.
+Maya: [confident tone] Check your boxes.
 
-Maya: Douglas kept the Senate. Lincoln got the country. (held breath — do not rush it)
+Maya: [professional broadcast tone] Douglas kept the Senate. Lincoln got the country. (held breath — do not rush it)
 
-Maya: Next time: the election of 1860: four candidates, a country splitting apart, and the South decides it's leaving.
+Maya: [intrigued] Next time: the election of 1860: four candidates, a country splitting apart, and the South decides it's leaving.
 
 ---
 

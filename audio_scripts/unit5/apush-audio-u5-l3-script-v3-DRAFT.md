@@ -13,35 +13,35 @@
 
 ---
 
-Maya: Last time: the Compromise of 1850 tried to settle slavery with popular sovereignty, and it barely held. Now Stephen Douglas does it again. Only this time he rips up the Missouri Compromise itself, and Kansas bleeds for it. Four boxes on my sheet: the Kansas-Nebraska Act, Bleeding Kansas, the caning of Charles Sumner, and the Republican Party. Circle the ones you couldn't explain right now. About thirteen and a half minutes. Fair warning: it gets violent.
+Maya: [professional broadcast tone] Last time: the Compromise of 1850 tried to settle slavery with popular sovereignty, and it barely held. Now Stephen Douglas does it again. Only this time he rips up the Missouri Compromise itself, and Kansas bleeds for it. Four boxes on my sheet: the Kansas-Nebraska Act, Bleeding Kansas, the caning of Charles Sumner, and the Republican Party. Circle the ones you couldn't explain right now. About thirteen and a half minutes. Fair warning: it gets violent.
 
-Marcus: 1854. Stephen Douglas is a Democratic senator from Illinois, and he's got one big dream: a transcontinental railroad running through Chicago.
+Marcus: [measured] 1854. Stephen Douglas is a Democratic senator from Illinois, and he's got one big dream: a transcontinental railroad running through Chicago.
 
-Maya: His home turf. Chicago's his state, so he wants it rich.
+Maya: [conversational] His home turf. Chicago's his state, so he wants it rich.
 
-Marcus: Rich, and he owns a pile of land there himself. If Chicago becomes the railroad's hub, Illinois booms and Douglas gets powerful. But Congress can't build through unorganized territory, so his bill carves the land west of Missouri into two new territories: Kansas and Nebraska.
+Marcus: [measured] Rich, and he owns a pile of land there himself. If Chicago becomes the railroad's hub, Illinois booms and Douglas gets powerful. But Congress can't build through unorganized territory, so his bill carves the land west of Missouri into two new territories: Kansas and Nebraska.
 
-Maya: And the slavery question in those territories, who decides?
+Maya: [curious, inquisitive tone] And the slavery question in those territories, who decides?
 
-Marcus: The settlers. Popular sovereignty: the people who move there vote slavery up or down themselves.
+Marcus: [measured] The settlers. Popular sovereignty: the people who move there vote slavery up or down themselves.
 
-Maya: The Compromise of 1850 already tried that trick, for Utah and New Mexico.
+Maya: [conversational] The Compromise of 1850 already tried that trick, for Utah and New Mexico.
 
-Marcus: Same trick, second act, but the price is steep. Both territories sit north of the thirty-six thirty line, where the Missouri Compromise banned slavery in 1820. Douglas repeals that ban to get his bill through.
+Marcus: [measured] Same trick, second act, but the price is steep. Both territories sit north of the thirty-six thirty line, where the Missouri Compromise banned slavery in 1820. Douglas repeals that ban to get his bill through.
 
-Maya: So the South gets its repeal and Douglas gets his railroad.
+Maya: [conversational] So the South gets its repeal and Douglas gets his railroad.
 
-Marcus: A straight trade. Southern senators wanted the Missouri Compromise dead, Northerners wanted the railroad through Illinois. Douglas stitched that coalition together and pushed the bill through over the objections of antislavery Whigs and Democrats in Congress.
+Marcus: [serious tone] A straight trade. Southern senators wanted the Missouri Compromise dead, Northerners wanted the railroad through Illinois. Douglas stitched that coalition together and pushed the bill through over the objections of antislavery Whigs and Democrats in Congress.
 
-Maya: And the North loses its mind.
+Maya: [conversational] And the North loses its mind.
 
-Marcus: The North reads it as proof the Slave Power runs Congress. For thirty years the line had settled the question: slavery could never touch that land. Douglas reopened it, and after that every bargain looked breakable.
+Marcus: [measured] The North reads it as proof the Slave Power runs Congress. For thirty years the line had settled the question: slavery could never touch that land. Douglas reopened it, and after that every bargain looked breakable.
 
-Maya: So Douglas gets his railroad bill, and the territory he just opened turns into a battlefield.
+Maya: [conversational] So Douglas gets his railroad bill, and the territory he just opened turns into a battlefield.
 
-Marcus: For the exam, name Douglas's motive: a railroad through Chicago, bought with a slavery concession.
+Marcus: [measured] For the exam, name Douglas's motive: a railroad through Chicago, bought with a slavery concession.
 
-Maya: Common mistake: writing that Douglas was taking a moral stand on slavery. He was buying Southern votes for a railroad.
+Maya: [firm] Common mistake: writing that Douglas was taking a moral stand on slavery. He was buying Southern votes for a railroad.
 
 Marcus: Before we leave Douglas, think like him: he needs Southern votes, and the South only deals if slavery can enter Kansas. Your turn: what's his offer?
 
@@ -49,31 +49,31 @@ Marcus: Before we leave Douglas, think like him: he needs Southern votes, and th
 
 Maya: Popular sovereignty, plus repealing the thirty-six thirty line, so that voting slavery in was even legal.
 
-Marcus: That was the deal. And the moment slavery's future goes on a ballot, everybody with a stake races to stuff it.
+Marcus: [measured] That was the deal. And the moment slavery's future goes on a ballot, everybody with a stake races to stuff it.
 
-Marcus: Within months Kansas is a magnet: pro-slavery Missourians flood across the border while antislavery groups ship in settlers of their own.
+Marcus: [measured] Within months Kansas is a magnet: pro-slavery Missourians flood across the border while antislavery groups ship in settlers of their own.
 
-Maya: I lost a student-council race once because the other side brought their whole lunch table to vote twice. This feels like that, with guns.
+Maya: [conversational] I lost a student-council race once because the other side brought their whole lunch table to vote twice. This feels like that, with guns.
 
-Marcus: With guns, yes. In the 1855 territorial legislature election, about fifteen hundred settlers counted as legal voters, and more than six thousand votes got cast. Thousands of Missourians, calling themselves Border Ruffians, crossed over for the day, voted, and went home.
+Marcus: [measured] With guns, yes. In the 1855 territorial legislature election, about fifteen hundred settlers counted as legal voters, and more than six thousand votes got cast. Thousands of Missourians, calling themselves Border Ruffians, crossed over for the day, voted, and went home.
 
-Maya: So the pro-slavery side wins a legislature most Kansans never elected.
+Maya: [conversational] So the pro-slavery side wins a legislature most Kansans never elected.
 
-Marcus: The Kansans never chose it, and that's the point. The antislavery Kansans refuse to recognize that legislature and elect a shadow government of their own. Now there are two governments, and each writes a constitution and mails it to Washington: the antislavery Topeka Constitution and the pro-slavery Lecompton Constitution.
+Marcus: [measured] The Kansans never chose it, and that's the point. The antislavery Kansans refuse to recognize that legislature and elect a shadow government of their own. Now there are two governments, and each writes a constitution and mails it to Washington: the antislavery Topeka Constitution and the pro-slavery Lecompton Constitution.
 
-Maya: Two constitutions, one territory — so which one wins?
+Maya: [curious, inquisitive tone] Two constitutions, one territory — so which one wins?
 
-Marcus: Neither one. That silence is the tell. President Franklin Pierce recognizes the pro-slavery Lecompton government and calls the Topeka one traitorous. But Washington never settles it for good: Kansas doesn't enter the Union until 1861, as a free state, after secession begins.
+Marcus: [measured] Neither one. That silence is the tell. President Franklin Pierce recognizes the pro-slavery Lecompton government and calls the Topeka one traitorous. But Washington never settles it for good: Kansas doesn't enter the Union until 1861, as a free state, after secession begins.
 
-Maya: Box two can wait. I'm not checking it off till the shooting stops.
+Maya: [conversational] Box two can wait. I'm not checking it off till the shooting stops.
 
-Marcus: SAQ trap I've actually seen: students flip Topeka and Lecompton. Anchor it to the president. Pierce was a pro-Southern Democrat, and he recognized Lecompton.
+Marcus: [measured] SAQ trap I've actually seen: students flip Topeka and Lecompton. Anchor it to the president. Pierce was a pro-Southern Democrat, and he recognized Lecompton.
 
-Maya: Students get this one wrong a lot: writing that Kansas voted itself a slave territory. Most of those ballots were cast by Missourians who went home afterward.
+Maya: [conversational] Students get this one wrong a lot: writing that Kansas voted itself a slave territory. Most of those ballots were cast by Missourians who went home afterward.
 
-Marcus: May 1856. A pro-slavery posse, Missourians riding under a federal marshal, marches into Lawrence, the free-state headquarters, and sacks it. Buildings burned and smashed, one person killed.
+Marcus: [measured] May 1856. A pro-slavery posse, Missourians riding under a federal marshal, marches into Lawrence, the free-state headquarters, and sacks it. Buildings burned and smashed, one person killed.
 
-Maya: Small body count, enormous message.
+Maya: [conversational] Small body count, enormous message.
 
 Marcus: Lawrence is in ruins, and the law just sided with the men who burned it. Now you're John Brown: you believe slavery is a sin and God demands you fight it. Your turn — what do you do?
 
@@ -81,83 +81,83 @@ Marcus: Lawrence is in ruins, and the law just sided with the men who burned it.
 
 Maya: If I truly believed all that... I wouldn't wait for the next election. I'd hit back.
 
-Marcus: He hit back. Days after Lawrence, Brown takes his sons and a few followers to Pottawatomie Creek at night, drags five pro-slavery settlers from their cabins, and kills them with swords.
+Marcus: [measured] He hit back. Days after Lawrence, Brown takes his sons and a few followers to Pottawatomie Creek at night, drags five pro-slavery settlers from their cabins, and kills them with swords.
 
 [4-second pause]
 
-Maya: I know that name from "John Brown's Body." We sang it in fourth grade, and I had no idea he was this.
+Maya: [conversational] I know that name from "John Brown's Body." We sang it in fourth grade, and I had no idea he was this.
 
-Marcus: The song's real. But Pottawatomie was murder, plain and simple. Five men, in the dark.
+Marcus: [measured] The song's real. But Pottawatomie was murder, plain and simple. Five men, in the dark.
 
-Maya: And the pro-slavery side says exactly that.
+Maya: [conversational] And the pro-slavery side says exactly that.
 
-Marcus: They do. And the exam wants both verdicts held at once: to pro-slavery Kansas, Brown's a murderer proving abolitionists are terrorists; to radical abolitionists, he's God's instrument answering a system already at war with Black people. Same five bodies, opposite meanings.
+Marcus: [measured] They do. And the exam wants both verdicts held at once: to pro-slavery Kansas, Brown's a murderer proving abolitionists are terrorists; to radical abolitionists, he's God's instrument answering a system already at war with Black people. Same five bodies, opposite meanings.
 
-Maya: So nobody's hands stay clean.
+Maya: [conversational] So nobody's hands stay clean.
 
-Marcus: And the stain spread. Kansas slides into guerrilla war, raids and reprisals, on and off until about 1859. The death toll is genuinely disputed, around fifty by one account, more than two hundred by another. Either way, the territory earned its name: Bleeding Kansas.
+Marcus: [measured] And the stain spread. Kansas slides into guerrilla war, raids and reprisals, on and off until about 1859. The death toll is genuinely disputed, around fifty by one account, more than two hundred by another. Either way, the territory earned its name: Bleeding Kansas.
 
-Maya: And while Kansas is bleeding, the violence jumps a thousand miles east, straight onto the Senate floor.
+Maya: [conversational] And while Kansas is bleeding, the violence jumps a thousand miles east, straight onto the Senate floor.
 
-Marcus: Rewind to May twenty-second, the day after Lawrence burned, two days before Brown rode out. While Kansas is arming itself, Massachusetts senator Charles Sumner stands in the Senate and delivers a speech called "The Crime Against Kansas."
+Marcus: [measured] Rewind to May twenty-second, the day after Lawrence burned, two days before Brown rode out. While Kansas is arming itself, Massachusetts senator Charles Sumner stands in the Senate and delivers a speech called "The Crime Against Kansas."
 
-Maya: Nobody's accusing him of subtlety.
+Maya: [conversational] Nobody's accusing him of subtlety.
 
-Marcus: Nobody. Over two days Sumner denounces the Slave Power and gets personal, singling out Andrew Butler, a pro-slavery senator from South Carolina, and mocking him in front of the whole chamber. Butler's nephew is Preston Brooks, a House representative from South Carolina, and Brooks decides the speech insulted his family and his state.
+Marcus: [measured] Nobody. Over two days Sumner denounces the Slave Power and gets personal, singling out Andrew Butler, a pro-slavery senator from South Carolina, and mocking him in front of the whole chamber. Butler's nephew is Preston Brooks, a House representative from South Carolina, and Brooks decides the speech insulted his family and his state.
 
-Maya: So he challenges Sumner to a duel, like a gentleman?
+Maya: [curious, inquisitive tone] So he challenges Sumner to a duel, like a gentleman?
 
-Marcus: No duel. The common mistake is assuming one. He waits until Sumner is seated at his desk in the Senate chamber, walks up, and beats him over the head with a heavy cane, again and again, until Sumner collapses bloody and unconscious.
+Marcus: [firm] No duel. The common mistake is assuming one. He waits until Sumner is seated at his desk in the Senate chamber, walks up, and beats him over the head with a heavy cane, again and again, until Sumner collapses bloody and unconscious.
 
-Maya: On the Senate floor? While Congress is in session?
+Maya: [curious, inquisitive tone] On the Senate floor? While Congress is in session?
 
-Marcus: Sumner's injuries keep him out for years; Massachusetts re-elects him anyway and leaves his seat empty, a protest you could see from the gallery.
+Marcus: [measured] Sumner's injuries keep him out for years; Massachusetts re-elects him anyway and leaves his seat empty, a protest you could see from the gallery.
 
-Maya: And the country splits straight down the middle.
+Maya: [conversational] And the country splits straight down the middle.
 
-Marcus: The North makes Sumner a martyr, proof the South answers argument with violence. The South makes Brooks a hero, proof someone finally defended Southern honor. Same beating, two opposite verdicts. When a republic can't agree that beating a senator unconscious is wrong, debate is over.
+Marcus: [measured] The North makes Sumner a martyr, proof the South answers argument with violence. The South makes Brooks a hero, proof someone finally defended Southern honor. Same beating, two opposite verdicts. When a republic can't agree that beating a senator unconscious is wrong, debate is over.
 
-Maya: So much for settling things with speeches. And the party system is cracking open at the same time.
+Maya: [conversational] So much for settling things with speeches. And the party system is cracking open at the same time.
 
-Maya: Exam tip from me for once: don't file the caning under random Senate violence. File it under Kansas. Sumner's speech was about Bleeding Kansas, and the beating came the day after Lawrence burned.
+Maya: [confident tone] Exam tip from me for once: don't file the caning under random Senate violence. File it under Kansas. Sumner's speech was about Bleeding Kansas, and the beating came the day after Lawrence burned.
 
-Marcus: So what did Kansas prove? Popular sovereignty was supposed to settle slavery without Congress lifting a finger. Instead it moved the fight from the Capitol to the frontier, and the frontier voted with rifles.
+Marcus: [measured] So what did Kansas prove? Popular sovereignty was supposed to settle slavery without Congress lifting a finger. Instead it moved the fight from the Capitol to the frontier, and the frontier voted with rifles.
 
-Maya: So the principle itself failed.
+Maya: [conversational] So the principle itself failed.
 
-Marcus: As a principle, yes. You can't put "are these people property" on a ballot and expect a peaceful count. And the failure detonated the party system. The Whigs were already split, pro-slavery Cotton Whigs against antislavery Conscience Whigs, and the 1854 elections destroy them. One of the books calls it the final stake in the party's heart.
+Marcus: [measured] As a principle, yes. You can't put "are these people property" on a ballot and expect a peaceful count. And the failure detonated the party system. The Whigs were already split, pro-slavery Cotton Whigs against antislavery Conscience Whigs, and the 1854 elections destroy them. One of the books calls it the final stake in the party's heart.
 
-Maya: And out of the wreckage, the Republicans.
+Maya: [conversational] And out of the wreckage, the Republicans.
 
-Marcus: Born 1854. Antislavery Whigs, northern Democrats, Free-Soilers — they fuse into a new party with one clear position: slavery must not expand into the territories. Not abolition — containment. The books draw that line hard. Underneath sits free labor: the idea that a working man should be able to rise, which slavery made impossible.
+Marcus: [measured] Born 1854. Antislavery Whigs, northern Democrats, Free-Soilers — they fuse into a new party with one clear position: slavery must not expand into the territories. Not abolition — containment. The books draw that line hard. Underneath sits free labor: the idea that a working man should be able to rise, which slavery made impossible.
 
-Maya: And the North buys it immediately.
+Maya: [conversational] And the North buys it immediately.
 
-Marcus: They win a majority of Northern House seats that same year. The Democrats hang on in 1856 with James Buchanan, a Northerner with Southern sympathies. Meanwhile the Know-Nothings flare and die: the American Party, nativists, everything run in secret. Hence the nickname. They look like the Democrats' great rival for about a minute, then slavery splits them north and south. Their 1856 man Millard Fillmore pulls twenty percent, and that's their last hurrah.
+Marcus: [measured] They win a majority of Northern House seats that same year. The Democrats hang on in 1856 with James Buchanan, a Northerner with Southern sympathies. Meanwhile the Know-Nothings flare and die: the American Party, nativists, everything run in secret. Hence the nickname. They look like the Democrats' great rival for about a minute, then slavery splits them north and south. Their 1856 man Millard Fillmore pulls twenty percent, and that's their last hurrah.
 
-Maya: So by 1856 the parties aren't national anymore. They're sectional.
+Maya: [conversational] So by 1856 the parties aren't national anymore. They're sectional.
 
-Marcus: The second party system is dead. Kansas proved the country couldn't vote its way out of the slavery question, and the Republicans are the proof in reverse: a party that doesn't even try to win the South.
+Marcus: [serious tone] The second party system is dead. Kansas proved the country couldn't vote its way out of the slavery question, and the Republicans are the proof in reverse: a party that doesn't even try to win the South.
 
-Maya: That tells you the old system is finished. A major party that doesn't even try to win the South.
+Maya: [conversational] That tells you the old system is finished. A major party that doesn't even try to win the South.
 
-Marcus: The chain the graders reward: Kansas-Nebraska Act, Whig collapse, Republican birth. Three links, one sentence each. Write that chain and you own this period.
+Marcus: [measured] The chain the graders reward: Kansas-Nebraska Act, Whig collapse, Republican birth. Three links, one sentence each. Write that chain and you own this period.
 
-Maya: Common mistake: calling the Republicans abolitionists. They said slavery was wrong, but the platform was stopping its spread. Don't blur that line.
+Maya: [firm] Common mistake: calling the Republicans abolitionists. They said slavery was wrong, but the platform was stopping its spread. Don't blur that line.
 
-Maya: Okay. One breath, then we're landing all four.
+Maya: [conversational] Okay. One breath, then we're landing all four.
 
-Maya: Four boxes, let's land them. One: the Kansas-Nebraska Act. Douglas wants a railroad through Chicago, where he owns land, so he organizes Kansas and Nebraska, lets the settlers vote on slavery, and repeals the thirty-six thirty line to buy Southern votes.
+Maya: [conversational] Four boxes, let's land them. One: the Kansas-Nebraska Act. Douglas wants a railroad through Chicago, where he owns land, so he organizes Kansas and Nebraska, lets the settlers vote on slavery, and repeals the thirty-six thirty line to buy Southern votes.
 
-Marcus: Motive plus price.
+Marcus: [conversational] Motive plus price.
 
-Maya: Two: Bleeding Kansas. Border Ruffians pour in from Missouri, six thousand votes from fifteen hundred legal voters, and Kansas ends up with two governments. Topeka free, Lecompton... Lecompton was the free one, right?
+Maya: [incredulous] Two: Bleeding Kansas. Border Ruffians pour in from Missouri, six thousand votes from fifteen hundred legal voters, and Kansas ends up with two governments. Topeka free, Lecompton... Lecompton was the free one, right?
 
-Marcus: Flip it. Lecompton's pro-slavery. It's the one Pierce recognized. Topeka's the free-state shadow government.
+Marcus: [measured] Flip it. Lecompton's pro-slavery. It's the one Pierce recognized. Topeka's the free-state shadow government.
 
-Maya: Right. Pierce picks Lecompton and calls Topeka traitorous. Lawrence gets sacked, Brown kills five at Pottawatomie, guerrilla war on and off till 1859. Three: the caning. Sumner mocks Butler, Brooks beats him bloody at his Senate desk, the North sees a martyr, the South a hero. Four: the verdict. Popular sovereignty fails, the Whigs die, the Republicans are born in 1854, anti-expansion not abolition, and the Know-Nothings fade out.
+Maya: [conversational] Right. Pierce picks Lecompton and calls Topeka traitorous. Lawrence gets sacked, Brown kills five at Pottawatomie, guerrilla war on and off till 1859. Three: the caning. Sumner mocks Butler, Brooks beats him bloody at his Senate desk, the North sees a martyr, the South a hero. Four: the verdict. Popular sovereignty fails, the Whigs die, the Republicans are born in 1854, anti-expansion not abolition, and the Know-Nothings fade out.
 
-Marcus: And Kansas enters the Union free in 1861, after secession begins. The blood bought nothing the ballot promised.
+Marcus: [conversational] And Kansas enters the Union free in 1861, after secession begins. The blood bought nothing the ballot promised.
 
 Maya: Three questions, AP-shaped. Say your answer before I give mine.
 
@@ -185,11 +185,11 @@ Maya: One more, fast. The Republicans, 1854: abolition or anti-expansion?
 
 Maya: Anti-expansion. They called slavery wrong, but the platform was containment. Keep that line sharp.
 
-Maya: Check your boxes.
+Maya: [confident tone] Check your boxes.
 
-Marcus: Douglas offered the country a vote instead of a war. Kansas gave them both.
+Marcus: [professional broadcast tone] Douglas offered the country a vote instead of a war. Kansas gave them both.
 
-Maya: Next time: Dred Scott sues for his freedom, and the Supreme Court tries to settle slavery once and for all.
+Maya: [intrigued] Next time: Dred Scott sues for his freedom, and the Supreme Court tries to settle slavery once and for all.
 
 ---
 

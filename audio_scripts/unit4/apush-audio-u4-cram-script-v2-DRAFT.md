@@ -17,153 +17,153 @@
 # Quotes: no verbatim historical quotes in this episode. The "54-40 or Fight" slogan is named as a slogan and
 # explicitly not attributed to Polk. The reported Jackson "enforce it" line is named only to flag it as legend.
 
-Maya: Last time: the republic bought half a continent — and the president who signed the deal admitted it stretched his own rules past breaking. This time: no new material. Fifteen lessons, fifteen questions, eighteen hundred to eighteen forty-eight, in about fifteen minutes. From the Louisiana Purchase to the treaty that bought California. I'm firing the questions this time. You answer out loud before Jay does. Circle the ones you couldn't explain right now.
+Maya: [professional broadcast tone] Last time: the republic bought half a continent — and the president who signed the deal admitted it stretched his own rules past breaking. This time: no new material. Fifteen lessons, fifteen questions, eighteen hundred to eighteen forty-eight, in about fifteen minutes. From the Louisiana Purchase to the treaty that bought California. I'm firing the questions this time. You answer out loud before Jay does. Circle the ones you couldn't explain right now.
 
-Maya: Lesson one. Jefferson said the government can only do what's listed. Buying a country wasn't listed. So how did the purchase happen?
-
-[2-second pause]
-
-Jay: He stretched? Used the treaty power?
-
-Maya: The treaty power. He drafted an amendment admitting the stretch, then shelved it, because Napoleon could walk away while Congress debated. Fifteen million dollars, three cents an acre, borrowed every cent of it: British and Dutch bankers, six percent interest. Spain protested the resale, by the way: France had promised not to hand Louisiana to a third power. The handover took three flags in twenty days: Spanish, French, then American. And don't blur the two Parises. The 1763 Treaty of Paris gave Britain everything east of the Mississippi, minus New Orleans. The 1783 Treaty of Paris gave the new nation almost everything east of the Mississippi, except Florida went back to Spain.
-
-Jay: Sixty-three, everything. Eighty-three, everything except Florida. Got it.
-
-Maya: Next. Four Marshall cases, one breath each.
+Maya: [curious, inquisitive tone] Lesson one. Jefferson said the government can only do what's listed. Buying a country wasn't listed. So how did the purchase happen?
 
 [2-second pause]
 
-Jay: Marbury: judicial review, the Court gets the last word on the Constitution. McCulloch: the Bank is constitutional on implied powers, and states can't tax it. Fletcher: contracts hold even when the deal was corrupt. Gibbons: interstate commerce belongs to Congress alone.
+Jay: [sheepish] He stretched? Used the treaty power?
 
-Maya: Four for four, and Marshall sat for thirty-four years to build all of it. Two traps: Marbury is about who interprets the Constitution. Federal supremacy is McCulloch's neighborhood. And Marbury won the argument and lost the job. Gibbons is the steamboat one: a state monopoly on the New York to New Jersey run, killed because the rival sailed under a federal license. Whose permission slip outranks whose.
+Maya: [conversational] The treaty power. He drafted an amendment admitting the stretch, then shelved it, because Napoleon could walk away while Congress debated. Fifteen million dollars, three cents an acre, borrowed every cent of it: British and Dutch bankers, six percent interest. Spain protested the resale, by the way: France had promised not to hand Louisiana to a third power. The handover took three flags in twenty days: Spanish, French, then American. And don't blur the two Parises. The 1763 Treaty of Paris gave Britain everything east of the Mississippi, minus New Orleans. The 1783 Treaty of Paris gave the new nation almost everything east of the Mississippi, except Florida went back to Spain.
 
-Maya: Three. Why did we fight in eighteen twelve, and what did the Treaty of Ghent actually settle?
+Jay: [casual] Sixty-three, everything. Eighty-three, everything except Florida. Got it.
 
-[2-second pause]
-
-Jay: Impressment: about six thousand sailors grabbed between 1803 and 1812, the Chesapeake fired on in 1807. The Hawks wanted honor, and Canada, and they were sure Britain was arming Tecumseh out west. Ghent settled nothing. Status quo ante. And New Orleans ended the war.
-
-Maya: Everything until the last sentence. Ghent settled nothing: no mention of impressment, no border moved. But New Orleans didn't end the war. The treaty was signed two weeks before the battle. Jackson won the headlines — the diplomats had already settled the draw. And Hartford killed the party that met there: the Federalists' amendments, two-thirds of Congress to declare war and an end to the three-fifths clause, reached Washington the same week as the peace news.
-
-Jay: Treaty first, battle second. That's backwards from every movie.
-
-Maya: Number four. Clay's American System, three parts, and the Monroe Doctrine's open secret.
+Maya: [energetic] Next. Four Marshall cases, one breath each.
 
 [2-second pause]
 
-Jay: Tariff, national bank, internal improvements: make America independent of Europe. And the Doctrine told Europe the hemisphere was closed. But our navy was tiny. Britain's fleet did the enforcing.
+Jay: [casual] Marbury: judicial review, the Court gets the last word on the Constitution. McCulloch: the Bank is constitutional on implied powers, and states can't tax it. Fletcher: contracts hold even when the deal was corrupt. Gibbons: interstate commerce belongs to Congress alone.
 
-Maya: Adams wrote it, Monroe announced it, British ships backed it. The scare behind it: the Holy Alliance looked ready to help Spain win its colonies back, and Russia had claimed the Pacific coast down to the fifty-first parallel. Britain's Canning offered a joint warning. Adams said no: America speaks alone, or it speaks as Britain's junior partner. The border deals underneath: the lakes demilitarized, the Canadian line at the forty-ninth parallel, Florida from Spain in eighteen nineteen. And the canal was New York's, not Washington's. Erie Canal, 1825, state-dug. A question will try to make it federal.
+Maya: [conversational] Four for four, and Marshall sat for thirty-four years to build all of it. Two traps: Marbury is about who interprets the Constitution. Federal supremacy is McCulloch's neighborhood. And Marbury won the argument and lost the job. Gibbons is the steamboat one: a state monopoly on the New York to New Jersey run, killed because the rival sailed under a federal license. Whose permission slip outranks whose.
 
-Maya: Five. The Missouri Compromise: the deal, the line, and what the line couldn't do.
-
-[2-second pause]
-
-Jay: Eleven free, eleven slave, Senate tied. Missouri in as a slave state, Maine carved off free, thirty-six thirty across the Louisiana Territory. And the line couldn't settle anything outside the Louisiana Territory.
-
-Maya: The pitch was one line sorts the West forever. It sorted about thirty years. Before the compromise came the Tallmadge Amendment, eighteen nineteen: no new enslaved people in Missouri, children freed at twenty-five. Gradual, not abolition. Passed the House, died in the Senate. The three-fifths clause sweetened the whole fight for the South: enslaved people counted toward House seats and presidential votes without voting. And the second crisis: Missouri tried to bar free Black people from entering, and Clay had to come back in eighteen twenty-one to get it in. Jefferson, retired at Monticello, wrote the fire-bell letter: the Missouri fight had woken him like an alarm in the night.
-
-Maya: Nearly halfway: six. Water or wires, which came first, and what year does Deere's steel plow carry?
+Maya: [energetic] Three. Why did we fight in eighteen twelve, and what did the Treaty of Ghent actually settle?
 
 [2-second pause]
 
-Jay: Water first. Erie Canal, 1825. Telegraph's 1844. Deere's plow... eighteen forty-seven?
+Jay: [casual] Impressment: about six thousand sailors grabbed between 1803 and 1812, the Chesapeake fired on in 1807. The Hawks wanted honor, and Canada, and they were sure Britain was arming Tecumseh out west. Ghent settled nothing. Status quo ante. And New Orleans ended the war.
 
-Maya: Eighteen thirty-seven. And if you wrote forty-seven, a book told you to: Deere's own company history says 1837. Trust the company over the typo. The mills came from Slater's memorized machines and Lowell's whole system under one roof, where the girls worked twelve-hour days and organized for ten. McCormick's reaper let one farmer do the harvesting work of five. The gin made cotton king, the 1808 ban ended imports but not demand, and the domestic trade moved something like a million people south and west. The Irish crowded into northeastern cities after the famine; the Germans were often skilled craftsmen who pushed west. Don't blob them. And the cult of domesticity was a middle-class story: working women were in the mills because the family needed the wages.
+Maya: [conversational] Everything until the last sentence. Ghent settled nothing: no mention of impressment, no border moved. But New Orleans didn't end the war. The treaty was signed two weeks before the battle. Jackson won the headlines — the diplomats had already settled the draw. And Hartford killed the party that met there: the Federalists' amendments, two-thirds of Congress to declare war and an end to the three-fifths clause, reached Washington the same week as the peace news.
 
-Jay: Thirty-seven. The book is wrong and I am paying for it.
+Jay: [casual] Treaty first, battle second. That's backwards from every movie.
 
-Maya: Seven. The corrupt bargain: did Adams and Clay actually cut a deal?
-
-[2-second pause]
-
-Jay: Jackson said they did. Historians still argue about it.
-
-Maya: The charge is the fact, and the charge powered four years of fury. The 1828 rematch was a mudfight: coffin handbills for Jackson's duels and executions, his marriage attacked, Rachel dead by December. The real shift underneath: property lines fell state by state, white men voted by the million, and Jackson turned the veto into a policy weapon: twelve vetoes. The spoils system, the Kitchen Cabinet, an inauguration that wrecked the furniture. The franchise kept spreading after him: Rhode Island needed the Dorr Rebellion in 1841 to finish the job. Jackson's Democrats against the new Whigs: the second party system. Democracy expanded. The voter stayed white and male.
-
-Maya: Eight. South Carolina nullifies the tariffs. What was it claiming, and what did Jackson actually use?
+Maya: [energetic] Number four. Clay's American System, three parts, and the Monroe Doctrine's open secret.
 
 [2-second pause]
 
-Jay: The compact theory: a state convention can void a federal law inside its borders. Calhoun wrote it anonymously as vice president. Jackson got the Force Bill and never used it. Clay's compromise tariff did the real work.
+Jay: [casual] Tariff, national bank, internal improvements: make America independent of Europe. And the Doctrine told Europe the hemisphere was closed. But our navy was tiny. Britain's fleet did the enforcing.
 
-Maya: The threat that worked. The whole fight in pairs: the toasts in eighteen thirty, Jackson's proclamation answering in December of thirty-two, the Force Bill and the compromise tariff passing the same week in March of thirty-three. Calhoun quit the vice presidency that December for a Senate seat. And the exam's favorite blur: nullification is not secession. Nullification keeps the state in while voiding the law. Secession leaves.
+Maya: [conversational] Adams wrote it, Monroe announced it, British ships backed it. The scare behind it: the Holy Alliance looked ready to help Spain win its colonies back, and Russia had claimed the Pacific coast down to the fifty-first parallel. Britain's Canning offered a joint warning. Adams said no: America speaks alone, or it speaks as Britain's junior partner. The border deals underneath: the lakes demilitarized, the Canadian line at the forty-ninth parallel, Florida from Spain in eighteen nineteen. And the canal was New York's, not Washington's. Erie Canal, 1825, state-dug. A question will try to make it federal.
 
-Maya: Nine. Jackson kills the Bank. Did killing it cause the Panic of eighteen thirty-seven?
-
-[2-second pause]
-
-Jay: Not by itself. The pet banks printed paper like confetti, the Specie Circular squeezed land buyers, and then… something with cotton prices falling? Or was it the Brits pulling credit?
-
-Maya: Both. British credit tightened AND cotton prices fell — four causes, and the verdict is genuinely split. Pet banks, the Circular, British credit, cotton. If an essay asks who caused the Panic, the honest answer is all of them, and the grader wants you to weigh them, not pick one.
-
-Maya: Hold the both-sides version: one cause gets you half credit. The chain: veto in thirty-two, deposits pulled in thirty-three, Biddle's credit squeeze through thirty-four, which was self-defense and leverage both. He framed the Bank as the rich bending government to their selfish purposes: a campaign speech dressed as a veto message. And his enemies organized as the Whigs in eighteen thirty-four, borrowing the British name for opposing a king. Their nickname for him: King Andrew. And the Circular covered federal land only. Never write that Jackson banned paper money. He didn't.
-
-Maya: Ten. Worcester v. Georgia said the Cherokee won. So why were they marched west in eighteen thirty-eight, and by whose orders?
+Maya: [energetic] Five. The Missouri Compromise: the deal, the line, and what the line couldn't do.
 
 [2-second pause]
 
-Jay: Jackson ignored the ruling and marched them out.
+Jay: [casual] Eleven free, eleven slave, Senate tied. Missouri in as a slave state, Maine carved off free, thirty-six thirty across the Louisiana Territory. And the line couldn't settle anything outside the Louisiana Territory.
 
-Maya: He ignored the ruling, yes. But Van Buren's administration carried out the removal: Jackson was out of office by then, and Van Buren enforced Jackson's treaty on Jackson's deadline. The backstory, compressed: gold found on Cherokee land in 1829, Georgia's lotteries handing Cherokee land to white winners, the Removal Act of 1830 authorizing negotiation but not the march, Ross's sixteen-thousand-signature petition ignored, the Senate ratifying by one vote. The Choctaw went first. The Seminole fought seven years in the Florida swamps. The trap cluster: Sequoyah's syllabary was eighty-six symbols. The wrong number to avoid is eighty-five. The Treaty of New Echota was signed by about twenty men and ratified by a single Senate vote. And that famous "enforce it" line Jackson supposedly said? Nobody wrote it down at the time. Treat it as legend.
+Maya: [conversational] The pitch was one line sorts the West forever. It sorted about thirty years. Before the compromise came the Tallmadge Amendment, eighteen nineteen: no new enslaved people in Missouri, children freed at twenty-five. Gradual, not abolition. Passed the House, died in the Senate. The three-fifths clause sweetened the whole fight for the South: enslaved people counted toward House seats and presidential votes without voting. And the second crisis: Missouri tried to bar free Black people from entering, and Clay had to come back in eighteen twenty-one to get it in. Jefferson, retired at Monticello, wrote the fire-bell letter: the Missouri fight had woken him like an alarm in the night.
 
-Jay: Van Buren. Going in my notes with a star.
-
-Maya: Roughly four thousand dead. About one in four.
-
-Maya: Eleven. The Awakening told Americans they could perfect their own souls. Where did that idea go next?
+Maya: [energetic] Nearly halfway: six. Water or wires, which came first, and what year does Deere's steel plow carry?
 
 [2-second pause]
 
-Jay: Perfectionism: perfect the soul, then perfect society. Temperance, Mann's schools, Dix's asylums. Cane Ridge kicked it off.
+Jay: [sheepish] Water first. Erie Canal, 1825. Telegraph's 1844. Deere's plow... eighteen forty-seven?
 
-Maya: Cane Ridge, eighteen oh-one: thousands in the Kentucky woods, no pinned headcount. The crowds were new: white and Black, enslaved and free, women on the stage. Richard Allen's AME Church, Philadelphia, 1816. Finney made the revival a method: salvation in human hands. Then the chain: the Temperance Society in eighteen twenty-six, Mann running Massachusetts schools from eighteen thirty-seven to forty-eight, Dix campaigning for asylums through the thirties and forties. Mann is schools, Dix is asylums: don't cross them. And the transcendentalists? They sat the movements out. Their perfectionism turned inward. The burned-over district, western New York along the Erie Canal, revival after revival: the same soil that grew the Mormons, the Oneida commune, and the women's movement.
+Maya: [conversational] Eighteen thirty-seven. And if you wrote forty-seven, a book told you to: Deere's own company history says 1837. Trust the company over the typo. The mills came from Slater's memorized machines and Lowell's whole system under one roof, where the girls worked twelve-hour days and organized for ten. McCormick's reaper let one farmer do the harvesting work of five. The gin made cotton king, the 1808 ban ended imports but not demand, and the domestic trade moved something like a million people south and west. The Irish crowded into northeastern cities after the famine; the Germans were often skilled craftsmen who pushed west. Don't blob them. And the cult of domesticity was a middle-class story: working women were in the mills because the family needed the wages.
 
-Maya: Twelve. Garrison versus the Colonization Society. What was the actual fight?
+Jay: [casual] Thirty-seven. The book is wrong and I am paying for it.
 
-[2-second pause]
-
-Jay: Garrison's Liberator, eighteen thirty-one: free everyone now, no payment, equal rights. The Society, eighteen seventeen: send free Black Americans to Liberia and wind slavery down slow. And Walker was first: his Appeal in eighteen twenty-nine.
-
-Maya: Walker before Garrison: the movement was Black-led before it was famous. Freedom's Journal, eighteen twenty-seven: the first Black-owned newspaper. The American Anti-Slavery Society, eighteen thirty-three. And most Black Americans wanted no part of Liberia. They were Americans. The backlash: Turner's revolt, fifty-five dead, and the South answered with a lockdown. Stricter slave codes, and a House gag rule on antislavery petitions, eighteen thirty-six to eighteen forty-four. Lovejoy murdered in Illinois in eighteen thirty-seven, a free state. And the political road: the Liberty Party in eighteen forty, Free Soil in eighteen forty-eight, the road toward Lincoln.
-
-Jay: The House one.
-
-Maya: The House. Not the Senate.
-
-Maya: Thirteen. Seneca Falls: how many resolutions, and which one nearly failed?
+Maya: [energetic] Seven. The corrupt bargain: did Adams and Clay actually cut a deal?
 
 [2-second pause]
 
-Jay: Twelve. And the vote.
+Jay: [casual] Jackson said they did. Historians still argue about it.
 
-Maya: The count is eleven. The ninth, the vote, passed only after Douglass spoke for it. The document was the Declaration of Independence rewritten with two extra words: all men and women are created equal. The charges named the doctrine: coverture. When a woman married, her legal identity folded into her husband's: no property, no contracts, none of her own wages. The signers' list that survives names sixty-eight women and thirty-two men, and Douglass printed the proceedings at his North Star office. And the timing trap: New York's Married Women's Property Act was already law when they met. The convention didn't cause it.
+Maya: [conversational] The charge is the fact, and the charge powered four years of fury. The 1828 rematch was a mudfight: coffin handbills for Jackson's duels and executions, his marriage attacked, Rachel dead by December. The real shift underneath: property lines fell state by state, white men voted by the million, and Jackson turned the veto into a policy weapon: twelve vetoes. The spoils system, the Kitchen Cabinet, an inauguration that wrecked the furniture. The franchise kept spreading after him: Rhode Island needed the Dorr Rebellion in 1841 to finish the job. Jackson's Democrats against the new Whigs: the second party system. Democracy expanded. The voter stayed white and male.
 
-Jay: Eleven. And it didn't win the vote. That took seventy years.
-
-Maya: Seventy-two.
-
-Maya: Fourteen. Texas: how did it actually get in, and whose slogan is "fifty-four forty or fight"?
+Maya: [energetic] Eight. South Carolina nullifies the tariffs. What was it claiming, and what did Jackson actually use?
 
 [2-second pause]
 
-Jay: Tyler's treaty died in the Senate: treaties need two-thirds. So they used a joint resolution. Simple majorities. Texas came in December of eighteen forty-five. And the slogan was shouted at Polk, not by him.
+Jay: [casual] The compact theory: a state convention can void a federal law inside its borders. Calhoun wrote it anonymously as vice president. Jackson got the Force Bill and never used it. Clay's compromise tariff did the real work.
 
-Maya: At him. Northern congressmen wanted all of Oregon to balance slave Texas; Polk settled at the forty-ninth parallel instead. The backstory: Austin's colony in the eighteen-twenties, Mexico banning slavery in eighteen twenty-nine, the eighteen thirty law shutting the door, first shots at Gonzales, the Alamo, Goliad, then San Jacinto. The Lone Star Republic, eighteen thirty-six to forty-five, never recognized by Mexico. The clause the North feared: up to four new states could be carved out of Texas, with Texas's consent. And San Jacinto decided the war. The Alamo was the defeat that made the revenge cry work.
+Maya: [conversational] The threat that worked. The whole fight in pairs: the toasts in eighteen thirty, Jackson's proclamation answering in December of thirty-two, the Force Bill and the compromise tariff passing the same week in March of thirty-three. Calhoun quit the vice presidency that December for a Senate seat. And the exam's favorite blur: nullification is not secession. Nullification keeps the state in while voiding the law. Secession leaves.
 
-Maya: Last one: fifteen. The Wilmot Proviso never became law. So why did one sentence nearly break Congress?
+Maya: [energetic] Nine. Jackson kills the Bank. Did killing it cause the Panic of eighteen thirty-seven?
 
 [2-second pause]
 
-Jay: Because it wasn't about the people already there. It was about the settlers coming next: free-labor North against a South that heard the territories closing for good. Mexico had already banned slavery there, which made it even weirder.
+Jay: [sheepish] Not by itself. The pet banks printed paper like confetti, the Specie Circular squeezed land buyers, and then… something with cotton prices falling? Or was it the Brits pulling credit?
 
-Maya: Passed the House again and again, never the Senate. Lincoln's spot resolutions pressed the other wound: was the ground even American soil? Never voted on. The war itself: Taylor's army in the north, Scott landing at Veracruz and taking Mexico City in twenty-one months. The real killer was the camp: disease killed far more men than battle, on both sides. Mexico's teenage cadets died defending Chapultepec. And the treaty man, Trist: the story goes Polk had recalled him, and he negotiated anyway. And the treaty that followed: Guadalupe Hidalgo, February second, eighteen forty-eight, fifteen million dollars, the country a third bigger. Signed nine days after gold showed up at Sutter's Mill. The gold is not why America wanted California.
+Maya: [conversational] Both. British credit tightened AND cotton prices fell — four causes, and the verdict is genuinely split. Pet banks, the Circular, British credit, cotton. If an essay asks who caused the Panic, the honest answer is all of them, and the grader wants you to weigh them, not pick one.
 
-Maya: Fifteen lessons, one sentence underneath all of them. Check your boxes. America spent this half-century building a democracy for white men — wider votes, bigger maps, louder markets — and the slavery question got harder to dodge with every mile of it.
+Maya: [firm] Hold the both-sides version: one cause gets you half credit. The chain: veto in thirty-two, deposits pulled in thirty-three, Biddle's credit squeeze through thirty-four, which was self-defense and leverage both. He framed the Bank as the rich bending government to their selfish purposes: a campaign speech dressed as a veto message. And his enemies organized as the Whigs in eighteen thirty-four, borrowing the British name for opposing a king. Their nickname for him: King Andrew. And the Circular covered federal land only. Never write that Jackson banned paper money. He didn't.
 
-Jay: Democracy for white men. And a knot that tightens.
+Maya: [curious, inquisitive tone] Ten. Worcester v. Georgia said the Cherokee won. So why were they marched west in eighteen thirty-eight, and by whose orders?
 
-Maya: Test it. Louisiana: more land, more slavery fights. Jackson: more voters, more removal. The market: more cotton, more enslaved labor forced south and west. Texas, Mexico: more territory, and Wilmot asking whether slavery follows. Every expansion feeds the knot.
+[2-second pause]
+
+Jay: [casual] Jackson ignored the ruling and marched them out.
+
+Maya: [conversational] He ignored the ruling, yes. But Van Buren's administration carried out the removal: Jackson was out of office by then, and Van Buren enforced Jackson's treaty on Jackson's deadline. The backstory, compressed: gold found on Cherokee land in 1829, Georgia's lotteries handing Cherokee land to white winners, the Removal Act of 1830 authorizing negotiation but not the march, Ross's sixteen-thousand-signature petition ignored, the Senate ratifying by one vote. The Choctaw went first. The Seminole fought seven years in the Florida swamps. The trap cluster: Sequoyah's syllabary was eighty-six symbols. The wrong number to avoid is eighty-five. The Treaty of New Echota was signed by about twenty men and ratified by a single Senate vote. And that famous "enforce it" line Jackson supposedly said? Nobody wrote it down at the time. Treat it as legend.
+
+Jay: [casual] Van Buren. Going in my notes with a star.
+
+Maya: [conversational] Roughly four thousand dead. About one in four.
+
+Maya: [energetic] Eleven. The Awakening told Americans they could perfect their own souls. Where did that idea go next?
+
+[2-second pause]
+
+Jay: [casual] Perfectionism: perfect the soul, then perfect society. Temperance, Mann's schools, Dix's asylums. Cane Ridge kicked it off.
+
+Maya: [conversational] Cane Ridge, eighteen oh-one: thousands in the Kentucky woods, no pinned headcount. The crowds were new: white and Black, enslaved and free, women on the stage. Richard Allen's AME Church, Philadelphia, 1816. Finney made the revival a method: salvation in human hands. Then the chain: the Temperance Society in eighteen twenty-six, Mann running Massachusetts schools from eighteen thirty-seven to forty-eight, Dix campaigning for asylums through the thirties and forties. Mann is schools, Dix is asylums: don't cross them. And the transcendentalists? They sat the movements out. Their perfectionism turned inward. The burned-over district, western New York along the Erie Canal, revival after revival: the same soil that grew the Mormons, the Oneida commune, and the women's movement.
+
+Maya: [energetic] Twelve. Garrison versus the Colonization Society. What was the actual fight?
+
+[2-second pause]
+
+Jay: [casual] Garrison's Liberator, eighteen thirty-one: free everyone now, no payment, equal rights. The Society, eighteen seventeen: send free Black Americans to Liberia and wind slavery down slow. And Walker was first: his Appeal in eighteen twenty-nine.
+
+Maya: [conversational] Walker before Garrison: the movement was Black-led before it was famous. Freedom's Journal, eighteen twenty-seven: the first Black-owned newspaper. The American Anti-Slavery Society, eighteen thirty-three. And most Black Americans wanted no part of Liberia. They were Americans. The backlash: Turner's revolt, fifty-five dead, and the South answered with a lockdown. Stricter slave codes, and a House gag rule on antislavery petitions, eighteen thirty-six to eighteen forty-four. Lovejoy murdered in Illinois in eighteen thirty-seven, a free state. And the political road: the Liberty Party in eighteen forty, Free Soil in eighteen forty-eight, the road toward Lincoln.
+
+Jay: [casual] The House one.
+
+Maya: [conversational] The House. Not the Senate.
+
+Maya: [energetic] Thirteen. Seneca Falls: how many resolutions, and which one nearly failed?
+
+[2-second pause]
+
+Jay: [casual] Twelve. And the vote.
+
+Maya: [conversational] The count is eleven. The ninth, the vote, passed only after Douglass spoke for it. The document was the Declaration of Independence rewritten with two extra words: all men and women are created equal. The charges named the doctrine: coverture. When a woman married, her legal identity folded into her husband's: no property, no contracts, none of her own wages. The signers' list that survives names sixty-eight women and thirty-two men, and Douglass printed the proceedings at his North Star office. And the timing trap: New York's Married Women's Property Act was already law when they met. The convention didn't cause it.
+
+Jay: [casual] Eleven. And it didn't win the vote. That took seventy years.
+
+Maya: [conversational] Seventy-two.
+
+Maya: [energetic] Fourteen. Texas: how did it actually get in, and whose slogan is "fifty-four forty or fight"?
+
+[2-second pause]
+
+Jay: [casual] Tyler's treaty died in the Senate: treaties need two-thirds. So they used a joint resolution. Simple majorities. Texas came in December of eighteen forty-five. And the slogan was shouted at Polk, not by him.
+
+Maya: [conversational] At him. Northern congressmen wanted all of Oregon to balance slave Texas; Polk settled at the forty-ninth parallel instead. The backstory: Austin's colony in the eighteen-twenties, Mexico banning slavery in eighteen twenty-nine, the eighteen thirty law shutting the door, first shots at Gonzales, the Alamo, Goliad, then San Jacinto. The Lone Star Republic, eighteen thirty-six to forty-five, never recognized by Mexico. The clause the North feared: up to four new states could be carved out of Texas, with Texas's consent. And San Jacinto decided the war. The Alamo was the defeat that made the revenge cry work.
+
+Maya: [energetic] Last one: fifteen. The Wilmot Proviso never became law. So why did one sentence nearly break Congress?
+
+[2-second pause]
+
+Jay: [casual] Because it wasn't about the people already there. It was about the settlers coming next: free-labor North against a South that heard the territories closing for good. Mexico had already banned slavery there, which made it even weirder.
+
+Maya: [conversational] Passed the House again and again, never the Senate. Lincoln's spot resolutions pressed the other wound: was the ground even American soil? Never voted on. The war itself: Taylor's army in the north, Scott landing at Veracruz and taking Mexico City in twenty-one months. The real killer was the camp: disease killed far more men than battle, on both sides. Mexico's teenage cadets died defending Chapultepec. And the treaty man, Trist: the story goes Polk had recalled him, and he negotiated anyway. And the treaty that followed: Guadalupe Hidalgo, February second, eighteen forty-eight, fifteen million dollars, the country a third bigger. Signed nine days after gold showed up at Sutter's Mill. The gold is not why America wanted California.
+
+Maya: [confident tone] Fifteen lessons, one sentence underneath all of them. Check your boxes. America spent this half-century building a democracy for white men — wider votes, bigger maps, louder markets — and the slavery question got harder to dodge with every mile of it.
+
+Jay: [casual] Democracy for white men. And a knot that tightens.
+
+Maya: [building] Test it. Louisiana: more land, more slavery fights. Jackson: more voters, more removal. The market: more cotton, more enslaved labor forced south and west. Texas, Mexico: more territory, and Wilmot asking whether slavery follows. Every expansion feeds the knot.
 
 Maya: Two bets I would take. First: evaluate the extent to which the Jacksonian era expanded democracy. Your turn.
 
@@ -177,11 +177,11 @@ Maya: Second: the Market Revolution. Same shape. Your turn.
 
 Maya: One: the machine. Canals, railroads, the telegraph, factories. Two: the human cost. Wage labor, immigrants, cities, and King Cotton expanding slavery on the domestic trade. Three: the backlash. The reformers the Awakening produced, trying to fix what the market broke. If Jackson doesn't show up on your exam, the market will.
 
-Maya: Fifteen lessons, one cram, nothing dropped. Say the thesis once more.
+Maya: [confident tone] Fifteen lessons, one cram, nothing dropped. Say the thesis once more.
 
-Jay: Democracy for white men. The knot tightens.
+Jay: [confident tone] Democracy for white men. The knot tightens.
 
-Maya: Sleep. Water. Go get the five. And say the thesis in your sleep.
+Maya: [conversational] Sleep. Water. Go get the five. And say the thesis in your sleep.
 
 ## Sources (production footer — strip before TTS)
 # Cross-checked against all fifteen rebuilt Unit 4 episodes — zero contradictions, zero references to dropped content:

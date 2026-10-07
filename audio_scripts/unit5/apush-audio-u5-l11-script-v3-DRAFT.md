@@ -7,92 +7,92 @@
 # Read note: Strip everything above the first speaker line and every [N-second pause] tag before TTS. Pause tags used: [8-second pause] and [9-second pause] for the two prediction beats; [15-second pause], [18-second pause], [20-second pause] for the three CER self-test questions (all within the 15-20s CER band). Convert tags to real silence. Production note: hold a beat on the tagline dash — "do not rush it."
 # Pronunciation: PLESS-ee; Tourgée (toor-ZHAY); Grady (GRAY-dee); Harlan (HAR-lun); Tuskegee (tus-KEE-gee); Du Bois (doo-BOYZ).
 
-Maya: Last time: the troops leave, and the South gets to work on its workarounds. After the Compromise of 1877 pulled the last federal troops out, the South undid Reconstruction without repealing a single amendment. Four boxes on my sheet: the voting machinery, Plessy v. Ferguson, the New South, and the Black Southerners who fought back. Circle the ones you couldn't explain right now. About twelve minutes.
+Maya: [professional broadcast tone] Last time: the troops leave, and the South gets to work on its workarounds. After the Compromise of 1877 pulled the last federal troops out, the South undid Reconstruction without repealing a single amendment. Four boxes on my sheet: the voting machinery, Plessy v. Ferguson, the New South, and the Black Southerners who fought back. Circle the ones you couldn't explain right now. About twelve minutes.
 
-Marcus: The 15th Amendment says you can't deny the vote because of race. It doesn't run the elections, though. States do. Registration, qualifications, procedures — all state business. So Southern states built machinery around the amendment instead of through it. Poll taxes: you pay to vote. Literacy tests: you read and interpret the state constitution to the registrar's satisfaction. Grandfather clauses: if your grandfather had been eligible to vote back when enslaved Black men couldn't be, you skipped the whole apparatus.
+Marcus: [measured] The 15th Amendment says you can't deny the vote because of race. It doesn't run the elections, though. States do. Registration, qualifications, procedures — all state business. So Southern states built machinery around the amendment instead of through it. Poll taxes: you pay to vote. Literacy tests: you read and interpret the state constitution to the registrar's satisfaction. Grandfather clauses: if your grandfather had been eligible to vote back when enslaved Black men couldn't be, you skipped the whole apparatus.
 
-Maya: So a Black man whose grandfather was enslaved gets the full obstacle course, and a white man gets the shortcut?
+Maya: [curious, inquisitive tone] So a Black man whose grandfather was enslaved gets the full obstacle course, and a white man gets the shortcut?
 
-Marcus: That was the design. Fourth tool: whites-only primaries. In the one-party Democratic South, the primary was the real election, so barring Black voters from it locked them out of choosing anyone.
+Marcus: [measured] That was the design. Fourth tool: whites-only primaries. In the one-party Democratic South, the primary was the real election, so barring Black voters from it locked them out of choosing anyone.
 
-Maya: So poll taxes were basically fundraising, right? The states were broke after the war.
+Maya: [conversational] So poll taxes were basically fundraising, right? The states were broke after the war.
 
-Marcus: The money was never the point. The gate was the point. And here's the tell: the taxes and tests would have excluded poor white men too. The grandfather clause was the escape hatch built for that. On paper the rules were race-neutral. In practice, registrars waived them for white voters and enforced them hard against Black ones. The whole machine: not repeal, just mechanics.
+Marcus: [measured] The money was never the point. The gate was the point. And here's the tell: the taxes and tests would have excluded poor white men too. The grandfather clause was the escape hatch built for that. On paper the rules were race-neutral. In practice, registrars waived them for white voters and enforced them hard against Black ones. The whole machine: not repeal, just mechanics.
 
-Maya: Don't write that the 15th Amendment got repealed. It stayed on the books. The states just owned the machinery around it.
+Maya: [firm] Don't write that the 15th Amendment got repealed. It stayed on the books. The states just owned the machinery around it.
 
 Marcus: Your turn. You're a Black teacher in 1895 and you can read just fine. You hand the registrar your poll tax money, and he slides you a passage of the state constitution and says, "Interpret this to my satisfaction." Honest forecast: how does this end? [8-second pause]
 
 Maya: Badly. Because "to my satisfaction" means he decides, and he's not grading honestly.
 
-Marcus: The test was a veto in practice. The registrar's satisfaction is whatever he wants it to be, and for a white voter he usually skipped the test entirely.
+Marcus: [measured] The test was a veto in practice. The registrar's satisfaction is whatever he wants it to be, and for a white voter he usually skipped the test entirely.
 
-Maya: Box one down. Checking it.
+Maya: [conversational] Box one down. Checking it.
 
-Marcus: Now the courts hand the South its biggest tool. Louisiana, 1890: the Separate Car Act says railroads must provide "equal but separate" cars for white and Black passengers. A group of Creole professionals in New Orleans forms the Citizens' Committee in 1891 to test the law, hiring Albion Tourgée, a Reconstruction-era judge, as their lawyer. Their test case is deliberate: they pick Homer Plessy, a man the records describe as seven-eighths white and one-eighth Black.
+Marcus: [measured] Now the courts hand the South its biggest tool. Louisiana, 1890: the Separate Car Act says railroads must provide "equal but separate" cars for white and Black passengers. A group of Creole professionals in New Orleans forms the Citizens' Committee in 1891 to test the law, hiring Albion Tourgée, a Reconstruction-era judge, as their lawyer. Their test case is deliberate: they pick Homer Plessy, a man the records describe as seven-eighths white and one-eighth Black.
 
-Maya: Why does it matter that Plessy looked white?
+Maya: [curious, inquisitive tone] Why does it matter that Plessy looked white?
 
-Marcus: Because the law couldn't define the races it claimed to separate. That was the point of the test case. In 1892 Plessy buys a ticket, takes a seat in the whites-only car, refuses to move, and gets arrested.
+Marcus: [measured] Because the law couldn't define the races it claimed to separate. That was the point of the test case. In 1892 Plessy buys a ticket, takes a seat in the whites-only car, refuses to move, and gets arrested.
 
-Maya: I once sat in the wrong Amtrak car and the conductor just pointed me down the aisle. For Plessy the wrong car meant a jail cell.
+Maya: [conversational] I once sat in the wrong Amtrak car and the conductor just pointed me down the aisle. For Plessy the wrong car meant a jail cell.
 
-Marcus: It meant a Supreme Court case. On May 18, 1896, the Court rules seven to one against him: legal equality doesn't require erasing "distinctions based upon color," so separate facilities are constitutional as long as they're equal. But the equal part was a fiction. Segregationists enforced the separate and ignored the equal: by the early 1950s, white schools in Southern districts were often getting 80 to 85 percent of the education funding.
+Marcus: [measured] It meant a Supreme Court case. On May 18, 1896, the Court rules seven to one against him: legal equality doesn't require erasing "distinctions based upon color," so separate facilities are constitutional as long as they're equal. But the equal part was a fiction. Segregationists enforced the separate and ignored the equal: by the early 1950s, white schools in Southern districts were often getting 80 to 85 percent of the education funding.
 
-Maya: So what happened to the one justice who disagreed?
+Maya: [curious, inquisitive tone] So what happened to the one justice who disagreed?
 
-Marcus: John Marshall Harlan, the lone dissenter, wrote that "our Constitution is color-blind, and neither knows nor tolerates classes among citizens." He saw straight through what the law was doing: forcing Black people to keep to themselves under the cover of equal treatment. His dissent lost in 1896 and won in 1954, when Brown v. Board of Education finally threw out the doctrine, nearly sixty years later.
+Marcus: [measured] John Marshall Harlan, the lone dissenter, wrote that "our Constitution is color-blind, and neither knows nor tolerates classes among citizens." He saw straight through what the law was doing: forcing Black people to keep to themselves under the cover of equal treatment. His dissent lost in 1896 and won in 1954, when Brown v. Board of Education finally threw out the doctrine, nearly sixty years later.
 
-Maya: Exam trap: don't compress the timeline. Plessy holds for generations before Brown. And don't write that it required facilities to be genuinely equal: it blessed "equal" on paper and gave states sixty years of cover to ignore it.
+Maya: [firm] Exam trap: don't compress the timeline. Plessy holds for generations before Brown. And don't write that it required facilities to be genuinely equal: it blessed "equal" on paper and gave states sixty years of cover to ignore it.
 
-Marcus: Meanwhile the South is selling a makeover. A journalist named Henry Grady starts pitching the "New South": modernize, adopt Northern industrial practices, join the national economy instead of leaning on cotton and memory. Money follows: Northern capital funds mills, mines, and factories, and industrial cities like Charlotte and Atlanta grow up around them. A real textile industry takes hold starting in the 1880s.
+Marcus: [measured] Meanwhile the South is selling a makeover. A journalist named Henry Grady starts pitching the "New South": modernize, adopt Northern industrial practices, join the national economy instead of leaning on cotton and memory. Money follows: Northern capital funds mills, mines, and factories, and industrial cities like Charlotte and Atlanta grow up around them. A real textile industry takes hold starting in the 1880s.
 
-Maya: Was Grady selling a real plan or just PR for the same old South?
+Maya: [curious, inquisitive tone] Was Grady selling a real plan or just PR for the same old South?
 
-Marcus: I don't think that's settled. Some of it was genuine. Those mills employed real people. But follow the ownership: the capital stayed mostly Northern, and the economic base underneath never changed. The lien-on-the-crop debt trap we broke down last episode kept Black labor tied to cotton, and cotton kept ruling. So the exam answer is both-sided: the New South industrialized and stayed a cotton economy.
+Marcus: [measured] I don't think that's settled. Some of it was genuine. Those mills employed real people. But follow the ownership: the capital stayed mostly Northern, and the economic base underneath never changed. The lien-on-the-crop debt trap we broke down last episode kept Black labor tied to cotton, and cotton kept ruling. So the exam answer is both-sided: the New South industrialized and stayed a cotton economy.
 
 Maya: Your turn. Northern investors are pouring money into Southern mills and mines. Who do you think ends up owning the profits, and who keeps working the fields? [9-second pause]
 
 Marcus: The profits mostly flowed north while Black workers stayed in the fields. The New South in one line: new machinery on top, same labor system underneath.
 
-Maya: Exam trap: write that the South industrialized past cotton and you've lost the point. The factories layered on; the base never moved.
+Maya: [firm] Exam trap: write that the South industrialized past cotton and you've lost the point. The factories layered on; the base never moved.
 
 
-Marcus: Now the part the textbooks used to rush past. Black Southerners weren't waiting to be saved: they were building. Churches anchored community life. Schools multiplied, including Tuskegee, the vocational and industrial school Booker T. Washington founded. And the Black press: newspapers owned and written by Black people, carrying news white papers wouldn't print.
+Marcus: [measured] Now the part the textbooks used to rush past. Black Southerners weren't waiting to be saved: they were building. Churches anchored community life. Schools multiplied, including Tuskegee, the vocational and industrial school Booker T. Washington founded. And the Black press: newspapers owned and written by Black people, carrying news white papers wouldn't print.
 
-Maya: Schools and newspapers are infrastructure, not just hope.
+Maya: [conversational] Schools and newspapers are infrastructure, not just hope.
 
-Marcus: Right, and the Black press is where Wells comes in. Ida B. Wells ran one of those papers in Memphis, the Free Speech and Headlight, and her story is the thread to watch. She was born into slavery in Mississippi in 1862. In 1884, she refused to give up her seat in the ladies' car, got thrown off the train, and sued the railroad. She won at first. Then the Tennessee Supreme Court overturned it.
+Marcus: [measured] Right, and the Black press is where Wells comes in. Ida B. Wells ran one of those papers in Memphis, the Free Speech and Headlight, and her story is the thread to watch. She was born into slavery in Mississippi in 1862. In 1884, she refused to give up her seat in the ladies' car, got thrown off the train, and sued the railroad. She won at first. Then the Tennessee Supreme Court overturned it.
 
-Maya: So she'd already been testing this fight since before Plessy was even arrested.
+Maya: [conversational] So she'd already been testing this fight since before Plessy was even arrested.
 
-Marcus: And then 1892 broke it open. Her friend Tom Moss and his two business partners, Calvin McDowell and Will Stewart, ran a Memphis grocery store that was pulling customers from a white-owned store. After clashes, the three men defended their shop, shot several white attackers, and got arrested. A lynch mob took them from their cells and murdered them.
+Marcus: [measured] And then 1892 broke it open. Her friend Tom Moss and his two business partners, Calvin McDowell and Will Stewart, ran a Memphis grocery store that was pulling customers from a white-owned store. After clashes, the three men defended their shop, shot several white attackers, and got arrested. A lynch mob took them from their cells and murdered them.
 
-Maya: And Wells decided to name it.
+Maya: [conversational] And Wells decided to name it.
 
-Marcus: She investigated, gathering facts and writing it all up, and one editorial naming what lynching really was pushed white Memphis over the edge. A mob stormed her newspaper office and destroyed her equipment. She was in New York at the time, which probably saved her life. She stayed in the North, wrote an in-depth lynching report for the New York Age, and kept that campaign going for years, all the way to the White House in 1898.
+Marcus: [measured] She investigated, gathering facts and writing it all up, and one editorial naming what lynching really was pushed white Memphis over the edge. A mob stormed her newspaper office and destroyed her equipment. She was in New York at the time, which probably saved her life. She stayed in the North, wrote an in-depth lynching report for the New York Age, and kept that campaign going for years, all the way to the White House in 1898.
 
-Maya: The review video I watched lumped in convict leasing with all of this. Same machine?
+Maya: [curious, inquisitive tone] The review video I watched lumped in convict leasing with all of this. Same machine?
 
-Marcus: Same machine, different gear. It deserves its own episode. Parking it.
+Marcus: [measured] Same machine, different gear. It deserves its own episode. Parking it.
 
-Maya: Fair.
+Maya: [conversational] Fair.
 
-Marcus: Now the strategy debate, and no strawmen. Booker T. Washington, born into slavery himself, argued Black Southerners should focus on education and economic self-sufficiency first. His 1895 Atlanta Exposition speech pledged patience to white Southerners: build wealth, learn trades, and full civil rights would follow. His critics called that accommodation. His defenders said he was reading the room he actually lived in, where direct confrontation could get you killed.
+Marcus: [measured] Now the strategy debate, and no strawmen. Booker T. Washington, born into slavery himself, argued Black Southerners should focus on education and economic self-sufficiency first. His 1895 Atlanta Exposition speech pledged patience to white Southerners: build wealth, learn trades, and full civil rights would follow. His critics called that accommodation. His defenders said he was reading the room he actually lived in, where direct confrontation could get you killed.
 
-Maya: And the other side says rights can't wait for wealth.
+Maya: [conversational] And the other side says rights can't wait for wealth.
 
-Marcus: The other voice is W.E.B. Du Bois: Harvard-trained historian, Washington's sharpest rival. He called the Atlanta speech submissive and called it the Atlanta Compromise. His argument was that economic power without political power is a leash, not a ladder, and Black Americans should demand full social equality now. He later helped found the NAACP. And Wells was already living the confrontational answer, investigating lynchings, publishing names and facts, refusing to look away.
+Marcus: [measured] The other voice is W.E.B. Du Bois: Harvard-trained historian, Washington's sharpest rival. He called the Atlanta speech submissive and called it the Atlanta Compromise. His argument was that economic power without political power is a leash, not a ladder, and Black Americans should demand full social equality now. He later helped found the NAACP. And Wells was already living the confrontational answer, investigating lynchings, publishing names and facts, refusing to look away.
 
-Maya: So it wasn't Washington versus everyone. It was a real argument about how you fight a system built to stop you.
+Maya: [conversational] So it wasn't Washington versus everyone. It was a real argument about how you fight a system built to stop you.
 
-Marcus: Everyone wanted equality. The fight was over the road there: patience and economics, or confrontation and rights. The exam wants both sides' actual arguments, not a hero and a villain.
+Marcus: [conversational] Everyone wanted equality. The fight was over the road there: patience and economics, or confrontation and rights. The exam wants both sides' actual arguments, not a hero and a villain.
 
-Maya: Don't reduce Wells to Washington's debate opponent. Her front was lynching terror, its own fight, its own campaign.
+Maya: [conversational] Don't reduce Wells to Washington's debate opponent. Her front was lynching terror, its own fight, its own campaign.
 
-Maya: Four boxes, let's land them. One: after 1877, voting machinery around the 15th Amendment: poll taxes, literacy tests, grandfather clauses, whites-only primaries; race-neutral on paper, enforced against Black voters only. Two: Plessy v. Ferguson, 1896: the Court blessed separate but equal, Harlan wrote the color-blind dissent, and it held nearly sixty years until Brown. Three: the New South: Grady's industrial pitch, real mills in Charlotte and Atlanta, textiles from the 1880s, but cotton stayed the base and profits mostly flowed north. Four: Black Southerners built their own institutions, churches, schools like Tuskegee, the Black press, while Wells turned lynching investigation into a national campaign and Washington and Du Bois argued strategy: patience and economics, or confrontation and rights.
+Maya: [conversational] Four boxes, let's land them. One: after 1877, voting machinery around the 15th Amendment: poll taxes, literacy tests, grandfather clauses, whites-only primaries; race-neutral on paper, enforced against Black voters only. Two: Plessy v. Ferguson, 1896: the Court blessed separate but equal, Harlan wrote the color-blind dissent, and it held nearly sixty years until Brown. Three: the New South: Grady's industrial pitch, real mills in Charlotte and Atlanta, textiles from the 1880s, but cotton stayed the base and profits mostly flowed north. Four: Black Southerners built their own institutions, churches, schools like Tuskegee, the Black press, while Wells turned lynching investigation into a national campaign and Washington and Du Bois argued strategy: patience and economics, or confrontation and rights.
 
-Marcus: Two fixes. First: the vote was seven to one — one justice didn't even participate — so "unanimous" is the wrong word. Second: your New South, say "layered on," not "replaced." The factories never replaced the cotton economy.
+Marcus: [conversational] Two fixes. First: the vote was seven to one — one justice didn't even participate — so "unanimous" is the wrong word. Second: your New South, say "layered on," not "replaced." The factories never replaced the cotton economy.
 
 Maya: Noted. Three questions, AP-shaped. Say your answer before I give it. First: how did Southern states get around the 15th Amendment without violating it? [15-second pause]
 
@@ -114,13 +114,13 @@ Marcus: One more, fast. Washington or Wells: who said you confront the terror he
 
 Maya: Wells. Washington built the school and played the long economic game; Wells published the facts and dared the mob.
 
-Marcus: Which brings us to the verdict. These were brutal decades for Black freedom. The South built a system of voting walls, court doctrine, and terror so complete it held for two generations. But look at what it seeded: the institutions (churches, schools, the press) and the argument about how to fight, Washington's patience against Wells and Du Bois's confrontation. That argument didn't die. It became the movement's playbook.
+Marcus: [professional broadcast tone] Which brings us to the verdict. These were brutal decades for Black freedom. The South built a system of voting walls, court doctrine, and terror so complete it held for two generations. But look at what it seeded: the institutions (churches, schools, the press) and the argument about how to fight, Washington's patience against Wells and Du Bois's confrontation. That argument didn't die. It became the movement's playbook.
 
-Maya: They couldn't touch the amendments, so they buried them — and then spent sixty years watching people dig them back out.
+Maya: [professional broadcast tone] They couldn't touch the amendments, so they buried them — and then spent sixty years watching people dig them back out.
 
-Marcus: Next time: the Unit 5 cram. Maya and Jay, rapid fire, Manifest Destiny to Jim Crow, every box we earned.
+Marcus: [intrigued] Next time: the Unit 5 cram. Maya and Jay, rapid fire, Manifest Destiny to Jim Crow, every box we earned.
 
-Maya: Check your boxes. See you there.
+Maya: [confident tone] Check your boxes. See you there.
 
 ---
 

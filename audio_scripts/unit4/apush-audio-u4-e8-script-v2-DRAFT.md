@@ -4,107 +4,107 @@
 # Read note: Debate format. Maya is the modern host — she moderates, delivers the verdict, and owns the afterlife (everything past 1833). Marcus argues the Union/Jackson case as an 1832-era advocate; his knowledge stops at 1833. The Nullifier is a one-off guest voice, appearing only in this episode and never again: a South Carolina supporter of John C. Calhoun, speaking in his own 1832 voice — measured, scholarly, never a caricature. Spoken disclosure (Maya's opening ground rule): four real quotes are given verbatim and flagged — Jackson's and Calhoun's 1830 dinner toasts, Webster's reply to Hayne, and Jackson's Proclamation line "disunion by armed force is treason"; one spliced line from the Ordinance of Nullification is marked with an ellipsis; the "hang the first man" story is flagged in-dialogue as reported, never verified; all other debate dialogue is dramatized. Pause tags are production silence, never spoken: [9-second pause] in the prediction beat; [18-second pause] and [15-second pause] in the self-test; [5-second pause] in the fast bonus. Strip this header, the read note, and every [N-second pause] tag before TTS; convert pause tags to real silence. The em dash in the closing tagline is a held breath — do not rush it.
 # Pronunciation: KAL-hoon (Calhoun), HAYN (Hayne), uh-BOM-uh-nay-shunz (Abominations).
 
-Maya: Last time: Jackson — hero to the men he let in, tyrant to everyone he locked out. This time: South Carolina decides it can ignore a federal law. The state doesn't argue. It votes. November 1832: South Carolina declares two federal tariffs null, void, and no law inside its borders. The president calls it treason. Four boxes tonight. One: the tariff fight, the tax that started it. Two: the compact theory, the idea that a state can say no. Three: the showdown, toasts and threats. Four: the compromise, and what the argument became. Circle the ones you couldn't explain right now. Twelve and a half minutes. Every one of them gets argued tonight.
+Maya: [professional broadcast tone] Last time: Jackson — hero to the men he let in, tyrant to everyone he locked out. This time: South Carolina decides it can ignore a federal law. The state doesn't argue. It votes. November 1832: South Carolina declares two federal tariffs null, void, and no law inside its borders. The president calls it treason. Four boxes tonight. One: the tariff fight, the tax that started it. Two: the compact theory, the idea that a state can say no. Three: the showdown, toasts and threats. Four: the compromise, and what the argument became. Circle the ones you couldn't explain right now. Twelve and a half minutes. Every one of them gets argued tonight.
 
-Maya: One ground rule. Four real quotes tonight, plus one spliced Ordinance line: Jackson's toast and Calhoun's answer at the 1830 dinner, Webster's reply to Hayne, one line from Jackson's Proclamation, and the Ordinance splice. I'll flag each. The "hang the first man" story reaches us as hearsay; I'll say so when we get there. The rest is dramatized: Marcus and the Nullifier argue the real positions of 1832, but the back-and-forth is ours. Their clocks stop at 1833. The afterlife is mine alone.
+Maya: [professional broadcast tone] One ground rule. Four real quotes tonight, plus one spliced Ordinance line: Jackson's toast and Calhoun's answer at the 1830 dinner, Webster's reply to Hayne, one line from Jackson's Proclamation, and the Ordinance splice. I'll flag each. The "hang the first man" story reaches us as hearsay; I'll say so when we get there. The rest is dramatized: Marcus and the Nullifier argue the real positions of 1832, but the back-and-forth is ours. Their clocks stop at 1833. The afterlife is mine alone.
 
-Maya: For the Union: Marcus, a Jackson man of 1832. For South Carolina: the Nullifier, a Calhoun man, in his own year. I'm Maya, and I call it at the end.
+Maya: [conversational] For the Union: Marcus, a Jackson man of 1832. For South Carolina: the Nullifier, a Calhoun man, in his own year. I'm Maya, and I call it at the end.
 
-Nullifier: And I'll win it before you call it.
+Nullifier: [passionate] And I'll win it before you call it.
 
-Maya: The question under everything: can a state say no to Washington? Nullifier, your grievance first, the tariff case in your words.
+Maya: [conversational] The question under everything: can a state say no to Washington? Nullifier, your grievance first, the tariff case in your words.
 
-Nullifier: The Tariff of 1828, our Tariff of Abominations, pushed import duties as high as fifty percent to shelter Northern mills from British goods. The shelter held. The bill came to us: dearer tools, dearer cloth, everything a planter buys.
+Nullifier: [intense] The Tariff of 1828, our Tariff of Abominations, pushed import duties as high as fifty percent to shelter Northern mills from British goods. The shelter held. The bill came to us: dearer tools, dearer cloth, everything a planter buys.
 
-Marcus: Those mills were American, and Britain could undersell every one. Without the tariff, the manufacturing the whole country said it wanted dies before it stands.
+Marcus: [measured] Those mills were American, and Britain could undersell every one. Without the tariff, the manufacturing the whole country said it wanted dies before it stands.
 
-Nullifier: Then let the whole country pay for it. Britain bought our cotton with the profits of its trade here; choke that trade and you choke our market. Congress taxed the South's customers to fatten the North's factories, by a majority we can never outvote.
+Nullifier: [passionate] Then let the whole country pay for it. Britain bought our cotton with the profits of its trade here; choke that trade and you choke our market. Congress taxed the South's customers to fatten the North's factories, by a majority we can never outvote.
 
-Maya: Hold on — "a majority we can never outvote." That's the nerve, isn't it? Not just the money: being a permanent minority on every economic question.
+Maya: [conversational] Hold on — "a majority we can never outvote." That's the nerve, isn't it? Not just the money: being a permanent minority on every economic question.
 
-Marcus: Losing a vote isn't tyranny. The tariff passed Congress and a president signed it. The Constitution, working.
+Marcus: [measured] Losing a vote isn't tyranny. The tariff passed Congress and a president signed it. The Constitution, working.
 
-Maya: So the 1832 tariff fixed it: rates down, everybody happy?
+Maya: [curious, inquisitive tone] So the 1832 tariff fixed it: rates down, everybody happy?
 
-Nullifier: It cut the average duty to the mid-thirties and kept the whole protective machine standing. A gesture, not a fix. South Carolina read it as an insult: the principle untouched, the rates still high, our objection unanswered.
+Nullifier: [intense] It cut the average duty to the mid-thirties and kept the whole protective machine standing. A gesture, not a fix. South Carolina read it as an insult: the principle untouched, the rates still high, our objection unanswered.
 
-Maya: Let's name what that economy ran on: enslaved labor growing cotton. The tariff fight was about trade, but the wealth being defended was made by enslaved people.
+Maya: [conversational] Let's name what that economy ran on: enslaved labor growing cotton. The tariff fight was about trade, but the wealth being defended was made by enslaved people.
 
-Maya: The mistake I keep seeing: writing that the tariff was designed to punish the South. It was aimed at British factories; the South caught the shrapnel. On a cause-and-effect question, name the mechanism: who pays, who gains.
+Maya: [conversational] The mistake I keep seeing: writing that the tariff was designed to punish the South. It was aimed at British factories; the South caught the shrapnel. On a cause-and-effect question, name the mechanism: who pays, who gains.
 
-Maya: Box two: the idea underneath the anger, and it had grandparents. You met them in U3-E10: Jefferson's Kentucky and Madison's Virginia Resolutions of 1798, answering the Alien and Sedition Acts. Nullifier, what did Calhoun build on that?
+Maya: [curious, inquisitive tone] Box two: the idea underneath the anger, and it had grandparents. You met them in U3-E10: Jefferson's Kentucky and Madison's Virginia Resolutions of 1798, answering the Alien and Sedition Acts. Nullifier, what did Calhoun build on that?
 
-Nullifier: The South Carolina Exposition and Protest, 1828, written anonymously while its author sat as vice president: the Constitution is a compact among sovereign states. The states made the federal government; the creature cannot judge the creators. When Congress oversteps, a state in convention can nullify the law within its borders. Not rebellion: the contract working as written.
+Nullifier: [passionate] The South Carolina Exposition and Protest, 1828, written anonymously while its author sat as vice president: the Constitution is a compact among sovereign states. The states made the federal government; the creature cannot judge the creators. When Congress oversteps, a state in convention can nullify the law within its borders. Not rebellion: the contract working as written.
 
-Marcus: The contract says otherwise. The Supremacy Clause makes federal law the supreme law of the land, not "supreme until a state objects." The Constitution was ordained by the people of the United States, not by the states as states. A bargain each party can veto at will isn't a government. It's an alliance.
+Marcus: [measured] The contract says otherwise. The Supremacy Clause makes federal law the supreme law of the land, not "supreme until a state objects." The Constitution was ordained by the people of the United States, not by the states as states. A bargain each party can veto at will isn't a government. It's an alliance.
 
-Maya: So the whole fight sits inside three words: "We the People." Marcus reads one body. The Nullifier reads "we, the states."
+Maya: [conversational] So the whole fight sits inside three words: "We the People." Marcus reads one body. The Nullifier reads "we, the states."
 
-Nullifier: Precisely. The people acted as states, ratifying state by state, and as states they may judge.
+Nullifier: [intense] Precisely. The people acted as states, ratifying state by state, and as states they may judge.
 
 Maya: Your turn. Calhoun says a state convention can nullify a federal law. What's the Union's one-line objection, the reason Jackson calls this treason and not just a bad argument? Reason it out. [9-second pause]
 
 Maya: If every state can veto any law, there's no federal law left, just a treaty each state exits at will. No union survives that, only a league. Jackson's charge isn't the tariff. It's that the doctrine dissolves the country.
 
-Maya: Don't write that nullification and secession are the same thing. Nullification keeps the state in the Union while vetoing the law; secession leaves. If a prompt says compare, put the difference in the first sentence.
+Maya: [firm] Don't write that nullification and secession are the same thing. Nullification keeps the state in the Union while vetoing the law; secession leaves. If a prompt says compare, put the difference in the first sentence.
 
-Maya: Two down, two to go.
+Maya: [conversational] Two down, two to go.
 
-Maya: Box three: the showdown. It starts, strangely, with an argument about Western land. Marcus, January 1830: how does a land debate become a trial of the Union?
+Maya: [curious, inquisitive tone] Box three: the showdown. It starts, strangely, with an argument about Western land. Marcus, January 1830: how does a land debate become a trial of the Union?
 
-Marcus: A Senate land debate became a trial of the Union. Hayne defended the compact theory on the floor; Webster answered for the Union, closing with the line every schoolhouse drilled. Quote: "Liberty and Union, now and forever, one and inseparable." End quote.
+Marcus: [measured] A Senate land debate became a trial of the Union. Hayne defended the compact theory on the floor; Webster answered for the Union, closing with the line every schoolhouse drilled. Quote: "Liberty and Union, now and forever, one and inseparable." End quote.
 
-Maya: My AP Gov teacher has that line on her classroom wall. I walked past it every day for a year before I knew what fight it came from.
+Maya: [conversational] My AP Gov teacher has that line on her classroom wall. I walked past it every day for a year before I knew what fight it came from.
 
-Nullifier: Fine words. Then came the dinner: April 1830, Jefferson's birthday. The toasts were a duel with dessert.
+Nullifier: [passionate] Fine words. Then came the dinner: April 1830, Jefferson's birthday. The toasts were a duel with dessert.
 
-Marcus: Jackson raised his glass, looking straight at Calhoun's friends. Quote: "Our Federal Union: it must be preserved." End quote. Calhoun answered, quote: "The Union: next to our liberty, the most dear." End quote. Everyone heard the threat inside the politeness.
+Marcus: [measured] Jackson raised his glass, looking straight at Calhoun's friends. Quote: "Our Federal Union: it must be preserved." End quote. Calhoun answered, quote: "The Union: next to our liberty, the most dear." End quote. Everyone heard the threat inside the politeness.
 
-Maya: My uncle and my dad do this at Thanksgiving: the sweetest toasts, the sharpest knives underneath. Everybody smiling, everybody keeping score. This dinner, exactly.
+Maya: [conversational] My uncle and my dad do this at Thanksgiving: the sweetest toasts, the sharpest knives underneath. Everybody smiling, everybody keeping score. This dinner, exactly.
 
-Nullifier: The 1832 tariff changed nothing, so that November our convention passed the Ordinance of Nullification: the tariffs of 1828 and 1832, quote, "null, void, and no law … nor binding upon this State." End quote. After February, no duties in South Carolina; if Washington used force, we were out.
+Nullifier: [intense] The 1832 tariff changed nothing, so that November our convention passed the Ordinance of Nullification: the tariffs of 1828 and 1832, quote, "null, void, and no law … nor binding upon this State." End quote. After February, no duties in South Carolina; if Washington used force, we were out.
 
-Marcus: Calhoun resigned the vice presidency that December for a Senate seat. Jackson answered December tenth with his Proclamation: the Union was made by the people, not the states, and quote, "disunion by armed force is treason." End quote.
+Marcus: [measured] Calhoun resigned the vice presidency that December for a Senate seat. Jackson answered December tenth with his Proclamation: the Union was made by the people, not the states, and quote, "disunion by armed force is treason." End quote.
 
-Maya: And the story that Jackson told a congressman he'd hang the first nullifier he could lay hands on: reported or verified? Reported. Nobody wrote it down at the time. Treat it as legend, not evidence.
+Maya: [conversational] And the story that Jackson told a congressman he'd hang the first nullifier he could lay hands on: reported or verified? Reported. Nobody wrote it down at the time. Treat it as legend, not evidence.
 
-Nullifier: Legend with teeth behind it. Jackson was preparing to send troops and federal marshals, and demanded the Force Bill: close our ports, collect the duties offshore, land an army if we resisted. Against his former vice president's state. Ask who the aggressor was.
+Nullifier: [passionate] Legend with teeth behind it. Jackson was preparing to send troops and federal marshals, and demanded the Force Bill: close our ports, collect the duties offshore, land an army if we resisted. Against his former vice president's state. Ask who the aggressor was.
 
-Marcus: The aggressor was the state threatening secession if Washington collected the duties by force. The Force Bill passed that March. South Carolina stood alone. Even the rest of the South wouldn't follow it into this.
+Marcus: [measured] The aggressor was the state threatening secession if Washington collected the duties by force. The Force Bill passed that March. South Carolina stood alone. Even the rest of the South wouldn't follow it into this.
 
-Maya: If a question asks how the crisis ended, never say that Jackson invaded South Carolina. He never had to use the Force Bill. It's your threat-that-worked example: name the pair, the stick and the carrot, passed in the same week.
+Maya: [conversational] If a question asks how the crisis ended, never say that Jackson invaded South Carolina. He never had to use the Force Bill. It's your threat-that-worked example: name the pair, the stick and the carrot, passed in the same week.
 
-Maya: Box four: the way out. Marcus, March 1833: how does this end without a war?
+Maya: [curious, inquisitive tone] Box four: the way out. Marcus, March 1833: how does this end without a war?
 
-Marcus: Henry Clay's Compromise Tariff passed alongside the Force Bill in the first days of March. The duties step down gradually, over ten years, to twenty percent. The stick and the carrot arrived the same week: obey the law, and the law gets lighter every year.
+Marcus: [measured] Henry Clay's Compromise Tariff passed alongside the Force Bill in the first days of March. The duties step down gradually, over ten years, to twenty percent. The stick and the carrot arrived the same week: obey the law, and the law gets lighter every year.
 
-Nullifier: Our convention reconvened that March, repealed the Ordinance, and then, to keep the last word, nullified the Force Bill. A law nobody was enforcing, voided on principle. Everybody claimed victory, and everybody had something to point at.
+Nullifier: [intense] Our convention reconvened that March, repealed the Ordinance, and then, to keep the last word, nullified the Force Bill. A law nobody was enforcing, voided on principle. Everybody claimed victory, and everybody had something to point at.
 
-Maya: The easy verdict to avoid: South Carolina "won" because the tariff fell. The doctrine lost; enforcement won.
+Maya: [conversational] The easy verdict to avoid: South Carolina "won" because the tariff fell. The doctrine lost; enforcement won.
 
-Maya: Closing statements. Answer each other, not just the room. Nullifier.
+Maya: [energetic] Closing statements. Answer each other, not just the room. Nullifier.
 
-Nullifier: You call nullification a veto that dissolves the Union. I call it the lock on the framers' door: a state that cannot defend its people against an unjust law is not a partner but a subject. We never fired a shot. We stood on the Constitution as we read it, and the tariff fell.
+Nullifier: [passionate] You call nullification a veto that dissolves the Union. I call it the lock on the framers' door: a state that cannot defend its people against an unjust law is not a partner but a subject. We never fired a shot. We stood on the Constitution as we read it, and the tariff fell.
 
-Marcus: Congress lowered the tariff. South Carolina had no veto, only a threat, and the threat moved Congress. Grief over a tax is real, and answerable by votes and repeal. No grief buys a veto. A union that cannot enforce its laws is not a union. The people made this Constitution; one state cannot unmake it.
+Marcus: [intense] Congress lowered the tariff. South Carolina had no veto, only a threat, and the threat moved Congress. Grief over a tax is real, and answerable by votes and repeal. No grief buys a veto. A union that cannot enforce its laws is not a union. The people made this Constitution; one state cannot unmake it.
 
-Maya: Verdict time. 1833 ended with two victory speeches and one unanswered question: can a state nullify a federal law? The tariff came down, so the nullifiers celebrated. The Union held, so Jackson celebrated. They just agreed to stop asking.
+Maya: [conversational] Verdict time. 1833 ended with two victory speeches and one unanswered question: can a state nullify a federal law? The tariff came down, so the nullifiers celebrated. The Union held, so Jackson celebrated. They just agreed to stop asking.
 
-Maya: And the question came back. The compact theory Calhoun built for a tax fight became the legal script for disunion. Twenty-eight years later, South Carolina didn't nullify a tariff. It seceded over slavery. Same legal clothes, different fight. Both sides had learned their lines: the South, the argument; the North, that it would fight.
+Maya: [conversational] And the question came back. The compact theory Calhoun built for a tax fight became the legal script for disunion. Twenty-eight years later, South Carolina didn't nullify a tariff. It seceded over slavery. Same legal clothes, different fight. Both sides had learned their lines: the South, the argument; the North, that it would fight.
 
-Maya: Jackson was dead by then, but his toast outlived him: "Our Federal Union: it must be preserved."
+Maya: [conversational] Jackson was dead by then, but his toast outlived him: "Our Federal Union: it must be preserved."
 
-Maya: Four boxes, let's land them. One: the tariff fight. The 1828 Tariff of Abominations pushed duties as high as fifty percent; the 1832 tariff cut them to the mid-thirties but kept the protection. South Carolina read it as an insult: the principle untouched.
+Maya: [conversational] Four boxes, let's land them. One: the tariff fight. The 1828 Tariff of Abominations pushed duties as high as fifty percent; the 1832 tariff cut them to the mid-thirties but kept the protection. South Carolina read it as an insult: the principle untouched.
 
-Maya: Two: the compact theory. Calhoun's 1828 Exposition and Protest, written anonymously while he was vice president. The Constitution is a compact of sovereign states; a state convention can nullify a federal law inside its borders. Its grandparents: the 1798 Kentucky and Virginia Resolutions.
+Maya: [conversational] Two: the compact theory. Calhoun's 1828 Exposition and Protest, written anonymously while he was vice president. The Constitution is a compact of sovereign states; a state convention can nullify a federal law inside its borders. Its grandparents: the 1798 Kentucky and Virginia Resolutions.
 
-Maya: Three: the showdown. The Ordinance of Nullification, November 1832: the tariffs "null, void, and no law" in South Carolina. Calhoun resigns the vice presidency that December for the Senate; Jackson's December Proclamation answers "disunion by armed force is treason"; Congress passes the Force Bill the next March.
+Maya: [conversational] Three: the showdown. The Ordinance of Nullification, November 1832: the tariffs "null, void, and no law" in South Carolina. Calhoun resigns the vice presidency that December for the Senate; Jackson's December Proclamation answers "disunion by armed force is treason"; Congress passes the Force Bill the next March.
 
-Maya: Four: the compromise. Clay's tariff steps rates down over ten years to twenty percent. South Carolina repeals the Ordinance, then symbolically nullifies the Force Bill. The afterlife: the compact theory becomes the legal script for secession in 1861.
+Maya: [conversational] Four: the compromise. Clay's tariff steps rates down over ten years to twenty percent. South Carolina repeals the Ordinance, then symbolically nullifies the Force Bill. The afterlife: the compact theory becomes the legal script for secession in 1861.
 
-Maya: Wait — Webster's toast was "Our Federal Union." No, that was Jackson's. Webster: "Liberty and Union, now and forever." I almost gave Webster Jackson's line.
+Maya: [incredulous] Wait — Webster's toast was "Our Federal Union." No, that was Jackson's. Webster: "Liberty and Union, now and forever." I almost gave Webster Jackson's line.
 
-Marcus: You did. Jackson's toast, Webster's reply. The duel's whole point was they weren't saying the same thing.
+Marcus: [measured] You did. Jackson's toast, Webster's reply. The duel's whole point was they weren't saying the same thing.
 
 Maya: Three questions, AP-shaped. Say your answer before I give it.
 
@@ -122,10 +122,10 @@ Maya: The compact theory. Calhoun's doctrine gave later secessionists their lega
 
 Maya: One more, fast. The Force Bill: used against South Carolina, or never used, and why does it matter? [5-second pause] Never used. The threat did the work; South Carolina repealed before it mattered. That's why "threat-that-worked" is the phrase to remember.
 
-Maya: 1833 ended the crisis —
-Marcus: — not the argument. [held breath — do not rush it]
+Maya: [professional broadcast tone] 1833 ended the crisis —
+Marcus: [professional broadcast tone] — not the argument. 
 
-Maya: Next time: The Bank War. Jackson, the Bank of the United States, and the veto that made his enemies crown him King Andrew. Check your boxes.
+Maya: [confident tone] Next time: The Bank War. Jackson, the Bank of the United States, and the veto that made his enemies crown him King Andrew. Check your boxes.
 
 ## Sources (not spoken)
 - Tier 1 (carried from v1's verified basis): prem27 ch6 (Tariff of Abominations 1828; Calhoun's South Carolina Exposition and Protest; Ordinance of Nullification Nov 1832; Jackson's Proclamation to South Carolina; Force Bill and Compromise Tariff, March 1833); 5steps2024 ch13 (nullification crisis sequence); princeton ch8 (Period 4); Heimler "How Andrew Jackson EXPANDED Federal Power" transcript (nullification crisis sequence, Calhoun, Force Bill); Maximum Insight "APUSH Unit 4 Topic 3" transcript (nullification doctrine, Force Bill, compromise); Norris "04-APUSH Period 4 Speed Review" (Tariff of Abominations 1828, nullification, Compromise Tariff 1833).

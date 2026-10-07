@@ -13,43 +13,43 @@
 # Pronunciation: poh-toh-SEE; WAHL-pah (Huallpa); gwah-MAHN POH-mah; MEE-tah (mita); tor-nah-VYAH-heh (tornaviaje);
 # ah-kah-POOL-koh; KEH-chwah (Quechua); oor-dah-NEH-tah; boh-DAN; mah-leh-STRAH; KEEN-toh (quinto).
 
-Maya: Last time: Jamestown — tobacco, the headright, and the House of Burgesses. Now rewind about sixty years, to a mountain in Bolivia in 1545, where one silver strike bankrolled an empire, and some historians say it helped wreck it. Four boxes: the silver machine, the human cost, Bodin and the birth of inflation theory, and the Manila galleons. Circle the ones you couldn't explain right now. Eleven minutes, and you'll check all four off.
+Maya: [professional broadcast tone] Last time: Jamestown — tobacco, the headright, and the House of Burgesses. Now rewind about sixty years, to a mountain in Bolivia in 1545, where one silver strike bankrolled an empire, and some historians say it helped wreck it. Four boxes: the silver machine, the human cost, Bodin and the birth of inflation theory, and the Manila galleons. Circle the ones you couldn't explain right now. Eleven minutes, and you'll check all four off.
 
-Marcus: The strike: 1545. Diego Huallpa, an Indigenous prospector, goes up the mountain looking for a shrine, and a gust of wind knocks him flat. He gets up, and the dirt in his hands is full of silver ore.
+Marcus: [measured] The strike: 1545. Diego Huallpa, an Indigenous prospector, goes up the mountain looking for a shrine, and a gust of wind knocks him flat. He gets up, and the dirt in his hands is full of silver ore.
 
-Maya: A gust of wind? I definitely read somewhere he was chasing a llama.
+Maya: [conversational] A gust of wind? I definitely read somewhere he was chasing a llama.
 
-Marcus: Some tellings say a llama. The wind version is the one Huallpa himself told, years later, to a Spanish viceroy. Either way, the hill filled up fast.
+Marcus: [measured] Some tellings say a llama. The wind version is the one Huallpa himself told, years later, to a Spanish viceroy. Either way, the hill filled up fast.
 
-Maya: And this is way up there, right? I got altitude sickness on a ski lift at Mammoth once, eight thousand feet, and I thought my skull was splitting. These people lived at what, thirteen thousand?
+Maya: [curious, inquisitive tone] And this is way up there, right? I got altitude sickness on a ski lift at Mammoth once, eight thousand feet, and I thought my skull was splitting. These people lived at what, thirteen thousand?
 
-Marcus: About thirteen thousand feet. And the ore had to become money. So where do you put the mint?
+Marcus: [measured] About thirteen thousand feet. And the ore had to become money. So where do you put the mint?
 
-Maya: Seville? That's where the treasure fleets sailed.
+Maya: [conversational] Seville? That's where the treasure fleets sailed.
 
-Marcus: At the foot of the mountain. Potosí stamped its own coins, pieces of eight, and those coins traveled the world. The mint there became one of the great mints of the Spanish world. And the crown took a fifth of everything the mines produced.
+Marcus: [measured] At the foot of the mountain. Potosí stamped its own coins, pieces of eight, and those coins traveled the world. The mint there became one of the great mints of the Spanish world. And the crown took a fifth of everything the mines produced.
 
-Maya: Hold on. Pieces of eight — that's pirate treasure. Pirates of the Caribbean pirate treasure.
+Maya: [conversational] Hold on. Pieces of eight — that's pirate treasure. Pirates of the Caribbean pirate treasure.
 
-Marcus: Same coins. The movie treasure chests are full of them.
+Marcus: [measured] Same coins. The movie treasure chests are full of them.
 
-Maya: Okay, that's going in my brain forever. So the coins go everywhere — wait, is that where the dollar sign comes from?
+Maya: [curious, inquisitive tone] Okay, that's going in my brain forever. So the coins go everywhere — wait, is that where the dollar sign comes from?
 
-Marcus: The leading theory says yes. The coin carried the Pillars of Hercules, wrapped in a curling banner, and the banner's curve became the dollar sign. Nobody's fully sure, but it's the best story we've got.
+Marcus: [thoughtful tone] The leading theory says yes. The coin carried the Pillars of Hercules, wrapped in a curling banner, and the banner's curve became the dollar sign. Nobody's fully sure, but it's the best story we've got.
 
-Maya: I'm looking at my keyboard differently now. And the town at the foot of it?
+Maya: [curious, inquisitive tone] I'm looking at my keyboard differently now. And the town at the foot of it?
 
-Marcus: Became a city. By the early 1600s, something like 160,000 people, a population that matched London's back then. A silver city in the clouds, bigger than most of Europe.
+Marcus: [measured] Became a city. By the early 1600s, something like 160,000 people, a population that matched London's back then. A silver city in the clouds, bigger than most of Europe.
 
-Maya: Exam tip, box one: the mint was at Potosí. If a question asks where New World silver was coined, Seville is the trap answer.
+Maya: [confident tone] Exam tip, box one: the mint was at Potosí. If a question asks where New World silver was coined, Seville is the trap answer.
 
-Maya: And the box-one mistake: the dollar sign is a "leading theory" answer. Never write it as settled.
+Maya: [firm] And the box-one mistake: the dollar sign is a "leading theory" answer. Never write it as settled.
 
-Marcus: But here's the part the coins don't show. By the 1560s, the easy ore was gone: the rich veins near the surface, worked out. Poorer ore needed a new trick, and the trick was mercury.
+Marcus: [measured] But here's the part the coins don't show. By the 1560s, the easy ore was gone: the rich veins near the surface, worked out. Poorer ore needed a new trick, and the trick was mercury.
 
-Maya: Mercury. The liquid metal.
+Maya: [conversational] Mercury. The liquid metal.
 
-Marcus: Mixed with crushed ore, mercury pulls the silver out. It worked. And it poisoned the men who worked it. The trembling, the teeth loosening. The whole refining district reeked of it.
+Marcus: [measured] Mixed with crushed ore, mercury pulls the silver out. It worked. And it poisoned the men who worked it. The trembling, the teeth loosening. The whole refining district reeked of it.
 
 Maya: Your turn. It's the 1570s. The easy silver is gone, the ore's poorer, and nobody volunteers to climb a freezing mountain to breathe poison. The viceroy needs thousands of workers, every year, for decades. What does he do?
 
@@ -57,51 +57,51 @@ Maya: Your turn. It's the 1570s. The easy silver is gone, the ore's poorer, and 
 
 Maya: He reaches for an old Inca draft and turns it into something harder. The mita.
 
-Marcus: In the 1570s, the viceroy Toledo rebuilt the whole operation. New refining, and new labor: the mita. About one in seven adult men, pulled from their villages in rotation, marched up to the mines. The Incas had run a draft too — for roads, for terraces. This one fed private silver mines.
+Marcus: [measured] In the 1570s, the viceroy Toledo rebuilt the whole operation. New refining, and new labor: the mita. About one in seven adult men, pulled from their villages in rotation, marched up to the mines. The Incas had run a draft too — for roads, for terraces. This one fed private silver mines.
 
-Maya: So it was slavery.
+Maya: [conversational] So it was slavery.
 
-Marcus: A forced draft, not slavery. The men served their turn and went home, and they were even paid, badly. Different system, different word. Don't let an answer choice blur them.
+Marcus: [measured] A forced draft, not slavery. The men served their turn and went home, and they were even paid, badly. Different system, different word. Don't let an answer choice blur them.
 
-Maya: And box two's mistake is right there: the mita wasn't slavery. Forced rotation, paid badly, then home.
+Maya: [conversational] And box two's mistake is right there: the mita wasn't slavery. Forced rotation, paid badly, then home.
 
-Marcus: But the voice I want you to know is an Indigenous one. Around 1615, an Andean nobleman named Felipe Guamán Poma de Ayala finished a chronicle, nearly twelve hundred pages, hundreds of his own drawings, addressed as a letter to the king of Spain. Page after page: the abuses of colonial rule, drawn by a man living under it. He wrote in Spanish and Quechua.
+Marcus: [measured] But the voice I want you to know is an Indigenous one. Around 1615, an Andean nobleman named Felipe Guamán Poma de Ayala finished a chronicle, nearly twelve hundred pages, hundreds of his own drawings, addressed as a letter to the king of Spain. Page after page: the abuses of colonial rule, drawn by a man living under it. He wrote in Spanish and Quechua.
 
-Maya: And the king read it and fixed everything?
+Maya: [curious, inquisitive tone] And the king read it and fixed everything?
 
-Marcus: The king never saw it. It sat unread for centuries. But it's one of the most important Indigenous voices we have from the whole colonial period.
+Marcus: [measured] The king never saw it. It sat unread for centuries. But it's one of the most important Indigenous voices we have from the whole colonial period.
 
-Maya: Two boxes down.
+Maya: [conversational] Two boxes down.
 
-Maya: Box three: Bodin and the birth of inflation theory. So the silver floods into Europe. What happens to prices?
+Maya: [curious, inquisitive tone] Box three: Bodin and the birth of inflation theory. So the silver floods into Europe. What happens to prices?
 
-Marcus: They climbed for a century. And people at the time argued about why. A French official named Malestroit said the coins were the problem: rulers were watering down the silver, so prices only looked higher.
+Marcus: [measured] They climbed for a century. And people at the time argued about why. A French official named Malestroit said the coins were the problem: rulers were watering down the silver, so prices only looked higher.
 
-Maya: That sounds almost reasonable. Lighter coins, higher prices.
+Maya: [conversational] That sounds almost reasonable. Lighter coins, higher prices.
 
-Marcus: Reasonable, and wrong. In 1568, Jean Bodin answered him: no — it's the American silver. More money chasing the same goods. That argument is basically the birth of the quantity theory of money.
+Marcus: [measured] Reasonable, and wrong. In 1568, Jean Bodin answered him: no — it's the American silver. More money chasing the same goods. That argument is basically the birth of the quantity theory of money.
 
-Maya: So the silver makes everything more expensive, but wages can't keep up?
+Maya: [curious, inquisitive tone] So the silver makes everything more expensive, but wages can't keep up?
 
-Marcus: Nearly. Wages did rise, but they lagged behind prices, and Spain felt the gap first: the wave hit there before anywhere else. The crown taxed harder to pay for its wars, and still couldn't keep up.
+Marcus: [measured] Nearly. Wages did rise, but they lagged behind prices, and Spain felt the gap first: the wave hit there before anywhere else. The crown taxed harder to pay for its wars, and still couldn't keep up.
 
-Maya: But wait. Spain had the mountain. How do you hold the silver mountain and end up broke?
+Maya: [curious, inquisitive tone] But wait. Spain had the mountain. How do you hold the silver mountain and end up broke?
 
-Marcus: Historians still argue about that one. One side calls it the resource curse: easy silver, climbing prices, workshops undercut by cheaper imports, and the crown spending on wars faster than the mines could produce. The other side says "curse" overstates it. Spain ran the biggest empire on earth for a century.
+Marcus: [measured] Historians still argue about that one. One side calls it the resource curse: easy silver, climbing prices, workshops undercut by cheaper imports, and the crown spending on wars faster than the mines could produce. The other side says "curse" overstates it. Spain ran the biggest empire on earth for a century.
 
-Maya: Bankrupt? With the silver still coming in?
+Maya: [curious, inquisitive tone] Bankrupt? With the silver still coming in?
 
-Marcus: Four times under Philip the Second. The crown borrowed against silver that hadn't even unloaded yet, and the lenders, mostly Genoese bankers, kept lending.
+Marcus: [measured] Four times under Philip the Second. The crown borrowed against silver that hadn't even unloaded yet, and the lenders, mostly Genoese bankers, kept lending.
 
-Maya: Scoring move, box three: when a question asks why prices rose, don't just write "inflation." Write the mechanism: American silver, more money chasing the same goods. It's the mechanism that scores.
+Maya: [confident tone] Scoring move, box three: when a question asks why prices rose, don't just write "inflation." Write the mechanism: American silver, more money chasing the same goods. It's the mechanism that scores.
 
-Maya: And the box-three trap: Malestroit is the wrong answer in a right-answer costume. He blamed the coins. Bodin blamed the silver.
+Maya: [conversational] And the box-three trap: Malestroit is the wrong answer in a right-answer costume. He blamed the coins. Bodin blamed the silver.
 
-Marcus: Now the silver that never went to Spain at all. From the 1560s, the Manila galleons ran between Acapulco and Manila, one of the longest trade routes on earth, on some of the biggest wooden ships of their age. Usually one or two a year, for two and a half centuries. The crossing took four to six months each way.
+Marcus: [measured] Now the silver that never went to Spain at all. From the 1560s, the Manila galleons ran between Acapulco and Manila, one of the longest trade routes on earth, on some of the biggest wooden ships of their age. Usually one or two a year, for two and a half centuries. The crossing took four to six months each way.
 
-Maya: So what sailed which way?
+Maya: [curious, inquisitive tone] So what sailed which way?
 
-Marcus: Silver sailed west. Silk and porcelain sailed back east. And the demand pulling it all was China: after the 1580s, a Ming tax reform let Chinese families pay their taxes in silver, and the hunger for it never stopped.
+Marcus: [measured] Silver sailed west. Silk and porcelain sailed back east. And the demand pulling it all was China: after the 1580s, a Ming tax reform let Chinese families pay their taxes in silver, and the hunger for it never stopped.
 
 Maya: Your turn. Silver sails west to Manila easy. The trade winds push it there. But a galleon loaded with silk has to get BACK. The same winds that carried it west now block the way home. What do you do?
 
@@ -109,31 +109,31 @@ Maya: Your turn. Silver sails west to Manila easy. The trade winds push it there
 
 Maya: You sail the long way around. North, past Japan, until you catch the winds blowing back toward America.
 
-Marcus: The tornaviaje — the return voyage. In 1565, a navigator named Andrés de Urdaneta cracked it: sail north from the Philippines, way north past Japan, catch the westerlies, ride them all the way to California and down to Acapulco. His first run took about four months.
+Marcus: [measured] The tornaviaje — the return voyage. In 1565, a navigator named Andrés de Urdaneta cracked it: sail north from the Philippines, way north past Japan, catch the westerlies, ride them all the way to California and down to Acapulco. His first run took about four months.
 
-Maya: One man figures out the winds and unlocks two centuries of silver ships.
+Maya: [conversational] One man figures out the winds and unlocks two centuries of silver ships.
 
-Marcus: Without the return trip, there's no trade. And the silver doesn't even go to Spain.
+Marcus: [measured] Without the return trip, there's no trade. And the silver doesn't even go to Spain.
 
-Maya: It doesn't?
+Maya: [curious, inquisitive tone] It doesn't?
 
-Marcus: A lot of it never did. The crown got its cut from the Atlantic fleets. But the Pacific trade enriched the merchants running it. The men in Manila and Mexico City, by most accounts, kept most of the profit, and Madrid saw little of it.
+Marcus: [measured] A lot of it never did. The crown got its cut from the Atlantic fleets. But the Pacific trade enriched the merchants running it. The men in Manila and Mexico City, by most accounts, kept most of the profit, and Madrid saw little of it.
 
-Maya: One way to think about the tornaviaje: start from the winds, not the map. The trade winds pushed ships west, so getting home needed winds that blew east. Sail north past Japan, catch the westerlies, and ride them all the way around.
+Maya: [conversational] One way to think about the tornaviaje: start from the winds, not the map. The trade winds pushed ships west, so getting home needed winds that blew east. Sail north past Japan, catch the westerlies, and ride them all the way around.
 
-Maya: The box-four mistake: don't sail the silver east. Silver went west to Manila. Silk and porcelain came east.
+Maya: [conversational] The box-four mistake: don't sail the silver east. Silver went west to Manila. Silk and porcelain came east.
 
-Maya: Four boxes, let's land them. One: the silver machine. The 1545 strike. Huallpa's wind, or the llama if you like that telling. The mint at Potosí. The exam trap answer is Seville, don't take it. Pieces of eight, and the dollar sign. Leading theory, and it stays a theory.
+Maya: [firm] Four boxes, let's land them. One: the silver machine. The 1545 strike. Huallpa's wind, or the llama if you like that telling. The mint at Potosí. The exam trap answer is Seville, don't take it. Pieces of eight, and the dollar sign. Leading theory, and it stays a theory.
 
-Maya: Two: the human cost. The mita, one in seven, the mercury, and Guamán Poma's letter to the king. Twelve hundred pages, and the king never saw it.
+Maya: [conversational] Two: the human cost. The mita, one in seven, the mercury, and Guamán Poma's letter to the king. Twelve hundred pages, and the king never saw it.
 
-Marcus: Around 1615.
+Marcus: [conversational] Around 1615.
 
-Maya: Right. Three: Bodin and the birth of inflation theory. Malestroit blamed the coins, Bodin blamed the silver. And the crown's cut was — a fifth? Twenty percent?
+Maya: [curious, inquisitive tone] Right. Three: Bodin and the birth of inflation theory. Malestroit blamed the coins, Bodin blamed the silver. And the crown's cut was — a fifth? Twenty percent?
 
-Marcus: A fifth. Yes.
+Marcus: [conversational] A fifth. Yes.
 
-Maya: The quinto. Four: the Manila galleons. Silver west, silk east, Urdaneta's way home past Japan, and China's hunger for silver. All four checked.
+Maya: [conversational] The quinto. Four: the Manila galleons. Silver west, silk east, Urdaneta's way home past Japan, and China's hunger for silver. All four checked.
 
 Maya: Three questions, AP-shaped. Say your answer before I give it.
 
@@ -161,11 +161,11 @@ Maya: One more, fast. The mita draft pulled about one in how many adult men?
 
 Maya: One in seven.
 
-Maya: Carry this one out the door: one mountain bankrolled the biggest empire on earth, and that empire still went broke four times. All four boxes checked? Next time: the labor systems, who actually dug it all out, and what the digging cost them.
+Maya: [intrigued] Carry this one out the door: one mountain bankrolled the biggest empire on earth, and that empire still went broke four times. All four boxes checked? Next time: the labor systems, who actually dug it all out, and what the digging cost them.
 
-Marcus: Potosí turned a mountain into money —
+Marcus: [professional broadcast tone] Potosí turned a mountain into money —
 
-Maya: and the money kept moving.
+Maya: [professional broadcast tone] and the money kept moving.
 
 ## Sources (production-only, never spoken)
 - Tier 1: premium2027 ch03 — the influx of silver and gold into Spain "set off a wave of inflation in the 1500s that made many ordinary items considerably more expensive"; Spanish taxes up fivefold in the 1500s to pay for the military; encomienda grants carried the right to extract labor with a percentage of gold and silver to the monarchy.

@@ -16,207 +16,207 @@
 # and malicious writing"; Jefferson's first-inaugural "We are all Republicans; we are all Federalists"; Webster's 1789 "A national
 # language is a band of national union"; Lee's resolution wording "free and independent States." No dramatized dialogue in this episode.
 
-Maya: Last time: power changed hands — but the hands stayed few. Jefferson's revolution, and the asterisk. Now: no new material. Eleven episodes, eleven questions, seventeen sixty-three to eighteen hundred, in about thirteen and a half minutes. From the bill coming due to the spelling book. Jay's holding the list. The dare: say every answer out loud before I do. Circle the ones you couldn't explain right now.
+Maya: [professional broadcast tone] Last time: power changed hands — but the hands stayed few. Jefferson's revolution, and the asterisk. Now: no new material. Eleven episodes, eleven questions, seventeen sixty-three to eighteen hundred, in about thirteen and a half minutes. From the bill coming due to the spelling book. Jay's holding the list. The dare: say every answer out loud before I do. Circle the ones you couldn't explain right now.
 
-Jay: Question one. The bill comes due. Why did London end the free ride after seventeen sixty-three?
-
-[2-second pause]
-
-Maya: The war left an enormous debt, and the books won't pin the number, so neither will I. Grenville did the math: the colonies had paid almost nothing toward the war, so London started taxing, and enforcing everything it used to ignore. The century of salutary neglect, London looking the other way, was over.
-
-Jay: So how broke were they? Like, a hundred million?
-
-Maya: No pin. Enormous. Use the books' word, not a figure you can't source.
-
-Jay: And the frontier was already on fire.
-
-Maya: Pontiac's Rebellion, sixty-three. The French left, Britain ended the gift diplomacy, and the Ottawa war chief Pontiac — not the prophet, that was Neolin — besieged Detroit while forts fell across the lakes.
-
-Jay: Pontiac? Hold on, like the car?
-
-Maya: Supposedly named for him. Focus. Neolin was the prophet; Pontiac was the war chief. And London's answer to the fire: the Proclamation Line, seventeen sixty-three. No settlement west of the Appalachians. Follow the money, not the revenge: London wanted the frontier wars off its books.
-
-Jay: Question two. Virtual versus actual representation. One sentence each.
+Jay: [curious, inquisitive tone] Question one. The bill comes due. Why did London end the free ride after seventeen sixty-three?
 
 [2-second pause]
 
-Maya: Parliament's theory: its members speak for the whole empire, so the colonists are virtually represented. The colonial answer: only a body we've elected can tax us. The whole constitutional crisis, in two sentences.
+Maya: [conversational] The war left an enormous debt, and the books won't pin the number, so neither will I. Grenville did the math: the colonies had paid almost nothing toward the war, so London started taxing, and enforcing everything it used to ignore. The century of salutary neglect, London looking the other way, was over.
 
-Jay: And the Stamp Act put it to the test.
+Jay: [sheepish] So how broke were they? Like, a hundred million?
 
-Maya: Seventeen sixty-five. First direct tax: stamped paper on wills, newspapers, dice, everything. Killed by the boycott and the Stamp Act Congress in early sixty-six. And the repeal came with company: the Declaratory Act, Parliament claiming power over the colonies "in all cases whatsoever." Same month as the repeal. The win that wasn't.
+Maya: [conversational] No pin. Enormous. Use the books' word, not a figure you can't source.
 
-Jay: It was the reach, not the rate. The tax touched everyone.
+Jay: [casual] And the frontier was already on fire.
 
-Maya: Lawyers, printers, merchants: every colony, every desk.
+Maya: [conversational] Pontiac's Rebellion, sixty-three. The French left, Britain ended the gift diplomacy, and the Ottawa war chief Pontiac — not the prophet, that was Neolin — besieged Detroit while forts fell across the lakes.
 
-Jay: Question three. Townshend, the Massacre, the Tea, the Congress. Walk it.
+Jay: [sheepish] Pontiac? Hold on, like the car?
 
-[2-second pause]
+Maya: [conversational] Supposedly named for him. Focus. Neolin was the prophet; Pontiac was the war chief. And London's answer to the fire: the Proclamation Line, seventeen sixty-three. No settlement west of the Appalachians. Follow the money, not the revenge: London wanted the frontier wars off its books.
 
-Maya: The Townshend duties, sixty-seven: lead, paper, glass, tea. Dickinson's Letters argued Parliament could regulate trade but couldn't raise revenue without consent. Boycotts, homespun, imports down forty percent. Parliament repealed the lot. The tea tax stayed, the marker.
-
-Jay: Then the street fight in Boston.
-
-Maya: March fifth, seventeen seventy. Five dead, including Crispus Attucks. Revere's engraving did the traveling, but in court, John Adams got six soldiers acquitted and the other two branded. Branded, not hanged.
-
-Jay: Tea Party, then the punishment.
-
-Maya: December sixteenth, seventy-three: some three hundred fifty chests dumped. Parliament answered with the Coercive Acts: the port closed, Massachusetts self-government gutted, trials moved to England. The Quebec Act landed in the same pile, the odd one out: it wasn't about the tea. Then September seventy-four: the First Continental Congress, fifty-six delegates, everybody but Georgia. Unity, but not independence. Not yet.
-
-Jay: Question four. Paine, the vote, the argument, the promise.
+Jay: [casual] Question two. Virtual versus actual representation. One sentence each.
 
 [2-second pause]
 
-Maya: Common Sense, January seventeen seventy-six. A hundred thousand copies in three months. Monarchy's the disease, and America could begin the world over again.
+Maya: [conversational] Parliament's theory: its members speak for the whole empire, so the colonists are virtually represented. The colonial answer: only a body we've elected can tax us. The whole constitutional crisis, in two sentences.
 
-Jay: Then the vote that almost didn't happen.
+Jay: [casual] And the Stamp Act put it to the test.
 
-Maya: Lee's resolution, June seventh: "free and independent States." July second: twelve yes, New York abstained. No instructions from home. July fourth: the announcement. Adams bet on the second, fireworks on the fourth.
+Maya: [conversational] Seventeen sixty-five. First direct tax: stamped paper on wills, newspapers, dice, everything. Killed by the boycott and the Stamp Act Congress in early sixty-six. And the repeal came with company: the Declaratory Act, Parliament claiming power over the colonies "in all cases whatsoever." Same month as the repeal. The win that wasn't.
 
-Jay: And the Declaration's a legal brief.
+Jay: [casual] It was the reach, not the rate. The tax touched everyone.
 
-Maya: Locke's principle, the charges, the verdict: twenty-seven, give or take. Jefferson didn't invent the ideas. He filed the application.
+Maya: [conversational] Lawyers, printers, merchants: every colony, every desk.
 
-Jay: But who were the promises for?
-
-Maya: The document bleeds right there. The slavery passage got deleted. Dunmore's offer had already promised freedom to enslaved people who'd fight for the Crown. Abigail Adams wrote "remember the ladies." And the slur that told the Native nations where they stood. The promises leaked past their authors.
-
-Jay: Question five. Two hinges and the long middle.
+Jay: [casual] Question three. Townshend, the Massacre, the Tea, the Congress. Walk it.
 
 [2-second pause]
 
-Maya: Lexington and Concord, April seventy-five. Bunker Hill, June — fought on Breed's Hill, not Bunker Hill. The British take it and bleed for it. The Second Continental Congress becomes a war government and hands the army to Washington. A Virginian, not the best general.
+Maya: [conversational] The Townshend duties, sixty-seven: lead, paper, glass, tea. Dickinson's Letters argued Parliament could regulate trade but couldn't raise revenue without consent. Boycotts, homespun, imports down forty percent. Parliament repealed the lot. The tea tax stayed, the marker.
 
-Jay: Then Trenton saves the army, and Saratoga, seventy-eight?
+Jay: [casual] Then the street fight in Boston.
 
-Maya: Seventy-seven. The French alliance is seventy-eight, so Saratoga was seventy-seven, the year before. Burgoyne surrenders a whole army, and France believes Franklin. The alliance: money, guns, the fleet. Valley Forge in between, where von Steuben drills the army into shape. Saratoga and Yorktown: those are the two hinges.
+Maya: [conversational] March fifth, seventeen seventy. Five dead, including Crispus Attucks. Revere's engraving did the traveling, but in court, John Adams got six soldiers acquitted and the other two branded. Branded, not hanged.
 
-Jay: And Yorktown ends it all.
+Jay: [casual] Tea Party, then the punishment.
 
-Maya: October eighty-one. The French fleet seals the bay, Cornwallis surrenders. The Treaty of Paris, eighty-three: independence, the Mississippi as the western border, fishing rights off Newfoundland, almost everything east of the Mississippi, except Florida, which went back to Spain.
+Maya: [conversational] December sixteenth, seventy-three: some three hundred fifty chests dumped. Parliament answered with the Coercive Acts: the port closed, Massachusetts self-government gutted, trials moved to England. The Quebec Act landed in the same pile, the odd one out: it wasn't about the tea. Then September seventy-four: the First Continental Congress, fifty-six delegates, everybody but Georgia. Unity, but not independence. Not yet.
 
-Jay: Question six. The structure, the failure, the one win, and why it lasted eight years.
-
-[2-second pause]
-
-Maya: The structure: one vote per state, no tax power, no executive, no courts, and amendments needed every state. Built by fear of power.
-
-Jay: No tax power? Did they just pass a hat?
-
-Maya: They requisitioned: asked the states for money. The hat came back empty. No trade control, no army. Then Shays' Rebellion: farmers drowning in debt marched on the Springfield arsenal, and a privately funded militia put them down.
-
-Jay: The one win was the Northwest Ordinance.
-
-Maya: Seventeen eighty-seven. Slavery banned north of the Ohio, schools encouraged, the statehood rule. But the map wasn't the mess. Little Turtle's confederacy destroyed two American armies on that same ground. The Ordinance outlived the government that wrote it.
-
-Jay: So why did it last eight years?
-
-Maya: It worked just well enough, and admitting the Revolution's first government was a failure took saying the unsayable. It took a scare. Shays made the alternative scarier than the embarrassment. Annapolis flopped with five states; Hamilton turned the flop into Philadelphia.
-
-Jay: Question seven. Fifty-five men, one hot summer. The three bargains.
+Jay: [casual] Question four. Paine, the vote, the argument, the promise.
 
 [2-second pause]
 
-Maya: Twelve states. Rhode Island sent none. The representation compromise: Virginia wanted seats by people, New Jersey wanted one vote a state, Connecticut split it, the Connecticut Compromise (the Great Compromise): House by population, Senate two per state.
+Maya: [conversational] Common Sense, January seventeen seventy-six. A hundred thousand copies in three months. Monarchy's the disease, and America could begin the world over again.
 
-Jay: How'd they handle the presidency?
+Jay: [casual] Then the vote that almost didn't happen.
 
-Maya: No king, no puppet of Congress: electors, state by state, matching each state's delegation. And the House was the only office the people chose outright.
+Maya: [conversational] Lee's resolution, June seventh: "free and independent States." July second: twelve yes, New York abstained. No instructions from home. July fourth: the announcement. Adams bet on the second, fireworks on the fourth.
 
-Jay: Then the bargain over slavery.
+Jay: [casual] And the Declaration's a legal brief.
 
-Maya: Three protections written in: three-fifths for House seats, the trade untouchable until eighteen-oh-eight, the fugitive clause sending escapees back. The word "slavery" never appears. The silence was the price tag.
+Maya: [conversational] Locke's principle, the charges, the verdict: twenty-seven, give or take. Jefferson didn't invent the ideas. He filed the application.
 
-Jay: And the machinery holding it together?
+Jay: [curious, inquisitive tone] But who were the promises for?
 
-Maya: Checks and balances: branches checking branches. Federalism: national versus state. Two machines, two names. Don't swap them.
+Maya: [conversational] The document bleeds right there. The slavery passage got deleted. Dunmore's offer had already promised freedom to enslaved people who'd fight for the Crown. Abigail Adams wrote "remember the ladies." And the slur that told the Native nations where they stood. The promises leaked past their authors.
 
-Jay: Question eight. The theory, the alarm, the squeakers, the verdict.
-
-[2-second pause]
-
-Maya: The Federalist theory: Madison's big republic, where factions die of bigness, and ambition counteracts ambition. Eighty-five essays, Hamilton, Madison, and Jay writing as Publius.
-
-Jay: And the Anti-Federalists just hated government?
-
-Maya: Trap answer. They weren't against government. They were against this government. The alarm: no bill of rights, standing armies, direct taxes, the elastic clause. Brutus warned a republic can't hold over this much territory.
-
-Jay: And it was close, right?
-
-Maya: Massachusetts by nineteen, Virginia by ten, New York by three. Hancock got carried in on a litter, his gout flaring — his enemies swore it was convenient, and offered the deal: ratify now, amendments to follow. Nothing written into the document. Just a promise.
-
-Jay: And the Bill of Rights was the price.
-
-Maya: Not written in Philadelphia. Added in seventeen ninety-one as the price of ratification. The Federalists won the fight. The Anti-Federalists won the argument's afterlife, or so their heirs claim.
-
-Jay: Question nine. Hamilton's money machine.
+Jay: [casual] Question five. Two hinges and the long middle.
 
 [2-second pause]
 
-Maya: The 1790 Report on Public Credit: fund the national debt at face value, and assumption: the federal government taking on the states' war debts. The speculators who'd bought the certificates cheap got the windfall, not the original soldiers.
+Maya: [conversational] Lexington and Concord, April seventy-five. Bunker Hill, June — fought on Breed's Hill, not Bunker Hill. The British take it and bleed for it. The Second Continental Congress becomes a war government and hands the army to Washington. A Virginian, not the best general.
 
-Jay: Then came the Bank fight.
+Jay: [curious, inquisitive tone] Then Trenton saves the army, and Saratoga, seventy-eight?
 
-Maya: Seventeen ninety-one. Jefferson said only the listed powers: strict construction. Hamilton answered with the elastic clause: loose construction. Washington read both memos and signed. He didn't veto it. And I bounced a check for twelve bucks once. My bank treated it like a constitutional crisis.
+Maya: [conversational] Seventy-seven. The French alliance is seventy-eight, so Saratoga was seventy-seven, the year before. Burgoyne surrenders a whole army, and France believes Franklin. The alliance: money, guns, the fleet. Valley Forge in between, where von Steuben drills the army into shape. Saratoga and Yorktown: those are the two hinges.
 
-Jay: Yeah, okay, very different bank.
+Jay: [casual] And Yorktown ends it all.
 
-Maya: Different century. Hamilton's bank was the opposite bet: hold the government's money, steady the credit. Then the whiskey tax: an excise, not a tariff. A tariff taxes imports at the docks; an excise taxes what you make at home.
+Maya: [conversational] October eighty-one. The French fleet seals the bay, Cornwallis surrenders. The Treaty of Paris, eighty-three: independence, the Mississippi as the western border, fishing rights off Newfoundland, almost everything east of the Mississippi, except Florida, which went back to Spain.
 
-Jay: And the frontier answered back.
-
-Maya: About five hundred men marched on the tax collector's house — not fifty. The crowd swelled to seven thousand on Pittsburgh, and Washington called up nearly thirteen thousand militiamen. He rode west with them to Bedford, then turned back and handed command to Henry Lee. He never marched into western Pennsylvania.
-
-Jay: And the verdict is parties.
-
-Maya: The fight hardened into the first party system: Hamilton's Federalists, for an active national government and commerce, against Jefferson's Democratic-Republicans, the party of limited government and the yeoman farmer. Not today's Republicans, not today's Democrats. Loose versus strict became the permanent fault line.
-
-Jay: Question ten. XYZ, the four acts, the counterattack, the verdict.
+Jay: [casual] Question six. The structure, the failure, the one win, and why it lasted eight years.
 
 [2-second pause]
 
-Maya: The XYZ Affair: Talleyrand's agents demanded a quarter-million-dollar bribe and a ten-million-dollar loan before talks even started. Adams published the dispatches, the country rallied, and America fought France in the Quasi-War, seventeen ninety-eight to eighteen hundred, an undeclared naval war.
+Maya: [conversational] The structure: one vote per state, no tax power, no executive, no courts, and amendments needed every state. Built by fear of power.
 
-Jay: And then the Alien and Sedition Acts. One law, right?
+Jay: [sheepish] No tax power? Did they just pass a hat?
 
-Maya: Four. The Naturalization Act: citizenship from five years to fourteen — not fifteen. The Alien Friends Act: in peacetime, the president can deport a foreigner he calls dangerous. Deport, not imprison. The Alien Enemies Act: in wartime, citizens of a hostile nation can be arrested or deported. And the Sedition Act: jail for publishing "any false, scandalous, and malicious writing" against the government. Adams never deported a soul under the Friends Act. The weapon was the Sedition Act.
+Maya: [conversational] They requisitioned: asked the states for money. The hat came back empty. No trade control, no army. Then Shays' Rebellion: farmers drowning in debt marched on the Springfield arsenal, and a privately funded militia put them down.
 
-Jay: Then the Republicans hit back.
+Jay: [casual] The one win was the Northwest Ordinance.
 
-Maya: The Virginia and Kentucky Resolutions, seventeen ninety-eight: compact theory: the states made the Constitution, so the states can judge it. Kentucky claimed nullification, Virginia interposition. They stood alone; no other state signed on.
+Maya: [conversational] Seventeen eighty-seven. Slavery banned north of the Ohio, schools encouraged, the statehood rule. But the map wasn't the mess. Little Turtle's confederacy destroyed two American armies on that same ground. The Ordinance outlived the government that wrote it.
 
-Jay: And the verdict was eighteen hundred.
+Jay: [curious, inquisitive tone] So why did it last eight years?
 
-Maya: The Sedition Act had a sunset. It expired March third, eighteen-oh-one, Adams's last day. Jefferson pardoned the convicted. No court struck the law down. Judicial review didn't exist yet. The check was the ballot box.
+Maya: [conversational] It worked just well enough, and admitting the Revolution's first government was a failure took saying the unsayable. It took a scare. Shays made the alternative scarier than the embarrassment. Annapolis flopped with five states; Hamilton turned the flop into Philadelphia.
 
-Jay: Question eleven. The tie, the pragmatist, the judo, the culture.
+Jay: [casual] Question seven. Fifty-five men, one hot summer. The three bargains.
 
 [2-second pause]
 
-Maya: Seventy-three to seventy-three, thrown to the House, voting by state. Thirty-six ballots — not thirty-five. Hamilton's letters for Jefferson, Bayard's abstentions, ten states for Jefferson, four for Burr, two blank. The first peaceful party handoff, and Adams left before dawn.
+Maya: [conversational] Twelve states. Rhode Island sent none. The representation compromise: Virginia wanted seats by people, New Jersey wanted one vote a state, Connecticut split it, the Connecticut Compromise (the Great Compromise): House by population, Senate two per state.
 
-Jay: The musical skips this part, huh.
+Jay: [curious, inquisitive tone] How'd they handle the presidency?
 
-Maya: The musical ends with the duel. It skips the part where Jefferson needed thirty-six ballots to land the job. His actual words at the inauguration: "We are all Republicans; we are all Federalists."
+Maya: [conversational] No king, no puppet of Congress: electors, state by state, matching each state's delegation. And the House was the only office the people chose outright.
 
-Jay: Then he campaigned against Hamilton's machine and kept it?
+Jay: [casual] Then the bargain over slavery.
 
-Maya: The pragmatist. Kept the Bank. Gallatin cut taxes and paid down the debt. Then bought Louisiana, fifteen million at three cents an acre, on the loose construction he'd campaigned against. The land mattered more than the theory.
+Maya: [conversational] Three protections written in: three-fifths for House seats, the trade untouchable until eighteen-oh-eight, the fugitive clause sending escapees back. The word "slavery" never appears. The silence was the price tag.
 
-Jay: Then the Marbury judo move.
+Jay: [curious, inquisitive tone] And the machinery holding it together?
 
-Maya: The midnight judges, Marshall's trap: he ruled against Marbury, his own Federalist, and by striking down the law that let the Court help him, claimed judicial review. Marshall denied Marbury his commission and walked away with judicial review.
+Maya: [conversational] Checks and balances: branches checking branches. Federalism: national versus state. Two machines, two names. Don't swap them.
 
-Jay: And the culture box last.
+Jay: [casual] Question eight. The theory, the alarm, the squeakers, the verdict.
 
-Maya: A republic needs its own culture: Webster's speller — and his seventeen eighty-nine line, "A national language is a band of national union," Peale, Trumbull, Crèvecoeur, the Capitol in stone. And the asterisk: a real revolution, real exclusions. Slavery expanded. Most people couldn't vote.
+[2-second pause]
 
-Maya: Eleven episodes, eleven questions, one through-line. The bill came due and the free ride ended. Taxation without representation became a constitutional crisis. Townshend to the Massacre to the Tea to a Congress in Philadelphia. Common Sense made the masses say the word, the vote made it official, and the Declaration's promises leaked past their authors. A protest became an army, Saratoga bought France, and Paris gave almost everything east of the Mississippi except Florida. The fear-built government couldn't tax or govern, and lasted eight years. Fifty-five men rewrote it behind closed doors. Twelve states sent them, and the document protected slavery without saying the word. The squeakers ratified it by nineteen, ten, and three. Hamilton's money machine built the first parties. The parties nearly broke the republic over France, and the ballot box, not the courts, struck the blow. Thirty-six ballots handed Jefferson the presidency, and he kept the machine he'd campaigned against.
+Maya: [conversational] The Federalist theory: Madison's big republic, where factions die of bigness, and ambition counteracts ambition. Eighty-five essays, Hamilton, Madison, and Jay writing as Publius.
 
-Jay: So what's the actual thesis?
+Jay: [curious, inquisitive tone] And the Anti-Federalists just hated government?
 
-Maya: Independence was won on the battlefield. The republic had to be argued into existence: over representation, slavery, and who the promises were for.
+Maya: [firm] Trap answer. They weren't against government. They were against this government. The alarm: no bill of rights, standing armies, direct taxes, the elastic clause. Brutus warned a republic can't hold over this much territory.
+
+Jay: [curious, inquisitive tone] And it was close, right?
+
+Maya: [conversational] Massachusetts by nineteen, Virginia by ten, New York by three. Hancock got carried in on a litter, his gout flaring — his enemies swore it was convenient, and offered the deal: ratify now, amendments to follow. Nothing written into the document. Just a promise.
+
+Jay: [casual] And the Bill of Rights was the price.
+
+Maya: [conversational] Not written in Philadelphia. Added in seventeen ninety-one as the price of ratification. The Federalists won the fight. The Anti-Federalists won the argument's afterlife, or so their heirs claim.
+
+Jay: [casual] Question nine. Hamilton's money machine.
+
+[2-second pause]
+
+Maya: [conversational] The 1790 Report on Public Credit: fund the national debt at face value, and assumption: the federal government taking on the states' war debts. The speculators who'd bought the certificates cheap got the windfall, not the original soldiers.
+
+Jay: [casual] Then came the Bank fight.
+
+Maya: [conversational] Seventeen ninety-one. Jefferson said only the listed powers: strict construction. Hamilton answered with the elastic clause: loose construction. Washington read both memos and signed. He didn't veto it. And I bounced a check for twelve bucks once. My bank treated it like a constitutional crisis.
+
+Jay: [casual] Yeah, okay, very different bank.
+
+Maya: [conversational] Different century. Hamilton's bank was the opposite bet: hold the government's money, steady the credit. Then the whiskey tax: an excise, not a tariff. A tariff taxes imports at the docks; an excise taxes what you make at home.
+
+Jay: [casual] And the frontier answered back.
+
+Maya: [conversational] About five hundred men marched on the tax collector's house — not fifty. The crowd swelled to seven thousand on Pittsburgh, and Washington called up nearly thirteen thousand militiamen. He rode west with them to Bedford, then turned back and handed command to Henry Lee. He never marched into western Pennsylvania.
+
+Jay: [casual] And the verdict is parties.
+
+Maya: [conversational] The fight hardened into the first party system: Hamilton's Federalists, for an active national government and commerce, against Jefferson's Democratic-Republicans, the party of limited government and the yeoman farmer. Not today's Republicans, not today's Democrats. Loose versus strict became the permanent fault line.
+
+Jay: [casual] Question ten. XYZ, the four acts, the counterattack, the verdict.
+
+[2-second pause]
+
+Maya: [conversational] The XYZ Affair: Talleyrand's agents demanded a quarter-million-dollar bribe and a ten-million-dollar loan before talks even started. Adams published the dispatches, the country rallied, and America fought France in the Quasi-War, seventeen ninety-eight to eighteen hundred, an undeclared naval war.
+
+Jay: [curious, inquisitive tone] And then the Alien and Sedition Acts. One law, right?
+
+Maya: [conversational] Four. The Naturalization Act: citizenship from five years to fourteen — not fifteen. The Alien Friends Act: in peacetime, the president can deport a foreigner he calls dangerous. Deport, not imprison. The Alien Enemies Act: in wartime, citizens of a hostile nation can be arrested or deported. And the Sedition Act: jail for publishing "any false, scandalous, and malicious writing" against the government. Adams never deported a soul under the Friends Act. The weapon was the Sedition Act.
+
+Jay: [casual] Then the Republicans hit back.
+
+Maya: [conversational] The Virginia and Kentucky Resolutions, seventeen ninety-eight: compact theory: the states made the Constitution, so the states can judge it. Kentucky claimed nullification, Virginia interposition. They stood alone; no other state signed on.
+
+Jay: [casual] And the verdict was eighteen hundred.
+
+Maya: [thoughtful tone] The Sedition Act had a sunset. It expired March third, eighteen-oh-one, Adams's last day. Jefferson pardoned the convicted. No court struck the law down. Judicial review didn't exist yet. The check was the ballot box.
+
+Jay: [casual] Question eleven. The tie, the pragmatist, the judo, the culture.
+
+[2-second pause]
+
+Maya: [thoughtful tone] Seventy-three to seventy-three, thrown to the House, voting by state. Thirty-six ballots — not thirty-five. Hamilton's letters for Jefferson, Bayard's abstentions, ten states for Jefferson, four for Burr, two blank. The first peaceful party handoff, and Adams left before dawn.
+
+Jay: [casual] The musical skips this part, huh.
+
+Maya: [thoughtful tone] The musical ends with the duel. It skips the part where Jefferson needed thirty-six ballots to land the job. His actual words at the inauguration: "We are all Republicans; we are all Federalists."
+
+Jay: [curious, inquisitive tone] Then he campaigned against Hamilton's machine and kept it?
+
+Maya: [thoughtful tone] The pragmatist. Kept the Bank. Gallatin cut taxes and paid down the debt. Then bought Louisiana, fifteen million at three cents an acre, on the loose construction he'd campaigned against. The land mattered more than the theory.
+
+Jay: [casual] Then the Marbury judo move.
+
+Maya: [thoughtful tone] The midnight judges, Marshall's trap: he ruled against Marbury, his own Federalist, and by striking down the law that let the Court help him, claimed judicial review. Marshall denied Marbury his commission and walked away with judicial review.
+
+Jay: [casual] And the culture box last.
+
+Maya: [thoughtful tone] A republic needs its own culture: Webster's speller — and his seventeen eighty-nine line, "A national language is a band of national union," Peale, Trumbull, Crèvecoeur, the Capitol in stone. And the asterisk: a real revolution, real exclusions. Slavery expanded. Most people couldn't vote.
+
+Maya: [thoughtful tone] Eleven episodes, eleven questions, one through-line. The bill came due and the free ride ended. Taxation without representation became a constitutional crisis. Townshend to the Massacre to the Tea to a Congress in Philadelphia. Common Sense made the masses say the word, the vote made it official, and the Declaration's promises leaked past their authors. A protest became an army, Saratoga bought France, and Paris gave almost everything east of the Mississippi except Florida. The fear-built government couldn't tax or govern, and lasted eight years. Fifty-five men rewrote it behind closed doors. Twelve states sent them, and the document protected slavery without saying the word. The squeakers ratified it by nineteen, ten, and three. Hamilton's money machine built the first parties. The parties nearly broke the republic over France, and the ballot box, not the courts, struck the blow. Thirty-six ballots handed Jefferson the presidency, and he kept the machine he'd campaigned against.
+
+Jay: [curious, inquisitive tone] So what's the actual thesis?
+
+Maya: [confident tone] Independence was won on the battlefield. The republic had to be argued into existence: over representation, slavery, and who the promises were for.
 
 Maya: Two predictions I'd bet on. One: evaluate the extent to which the American Revolution fundamentally changed American society between seventeen seventy-five and eighteen hundred. Your turn.
 
@@ -230,9 +230,9 @@ Maya: Two: evaluate the extent to which debates over the scope of federal power 
 
 Maya: The scope debate was the politics. Hamilton's program, the Bank fight, the whiskey tax, the Alien and Sedition Acts, the Virginia and Kentucky counterattack, and the election of eighteen hundred as the verdict. Loose versus strict construction became the permanent fault line. Argue with one example from each half of the decade.
 
-Maya: Eleven episodes: the battlefield settled the war. The arguments settled everything else.
+Maya: [thoughtful tone] Eleven episodes: the battlefield settled the war. The arguments settled everything else.
 
-Jay: Next time: Unit Four opens with the Louisiana Purchase.
+Jay: [intrigued] Next time: Unit Four opens with the Louisiana Purchase.
 
 ## Sources (production footer — strip before TTS)
 # Cross-checked against all eleven rebuilt Unit 3 episodes — zero contradictions, zero references to dropped content:

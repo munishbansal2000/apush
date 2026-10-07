@@ -4,15 +4,15 @@
 # Read note: Maya tracks four boxes on her episode sheet: the eleven-eleven deadlock, Tallmadge's amendment, the Compromise mechanics and the second Missouri crisis, and the fire bell and what it postponed. Pause tags are production notes for real silence — strip this header, the read note, and every [N-second pause] tag before TTS; convert tags to silence. Tags used: [8-second pause], [9-second pause], [18-second pause], [5-second pause]. The em dash in the closing tagline is a held beat — leave a full breath between Marcus's setup line and Maya's landing line. Do not rush it.
 # Pronunciation: tal-MAJ (Tallmadge); mon-tih-CHEL-oh (Monticello)
 
-Maya: Last time: the good feelings — and the cracks underneath. Now: the crack that nearly split the floor. Eighteen eighteen. Missouri asks to join the Union as a slave state, and Congress realizes the whole thing is balanced eleven to eleven, with nowhere to hide. Four boxes on your sheet: the eleven-eleven deadlock, Tallmadge's amendment, the Compromise and its second crisis, and the fire bell, and what it postponed. Circle the ones you couldn't explain right now. About twelve minutes, and they're yours.
+Maya: [professional broadcast tone] Last time: the good feelings — and the cracks underneath. Now: the crack that nearly split the floor. Eighteen eighteen. Missouri asks to join the Union as a slave state, and Congress realizes the whole thing is balanced eleven to eleven, with nowhere to hide. Four boxes on your sheet: the eleven-eleven deadlock, Tallmadge's amendment, the Compromise and its second crisis, and the fire bell, and what it postponed. Circle the ones you couldn't explain right now. About twelve minutes, and they're yours.
 
-Marcus: Start with the math, because the math is the whole fight. In eighteen nineteen: twenty-two states. Eleven free, eleven slave. Twenty-two to twenty-two in the Senate, and every new state was a power shift.
+Marcus: [measured] Start with the math, because the math is the whole fight. In eighteen nineteen: twenty-two states. Eleven free, eleven slave. Twenty-two to twenty-two in the Senate, and every new state was a power shift.
 
-Maya: And Missouri's the tiebreaker. Whoever gets Missouri gets the Senate.
+Maya: [conversational] And Missouri's the tiebreaker. Whoever gets Missouri gets the Senate.
 
-Marcus: Not just the Senate. The three-fifths clause counted enslaved people toward representation, people who voted for no one, so a new slave state meant more Southern seats in the House and more Southern votes for president. Missouri wasn't one state. It was the whole balance of power, wearing a trench coat.
+Marcus: [measured] Not just the Senate. The three-fifths clause counted enslaved people toward representation, people who voted for no one, so a new slave state meant more Southern seats in the House and more Southern votes for president. Missouri wasn't one state. It was the whole balance of power, wearing a trench coat.
 
-Maya: My aunt's outside Kansas City. I've driven across Missouri in August, windows down, cornfields the whole way and heat coming off the road. It's a real place to me. Which makes the math feel worse, somehow.
+Maya: [conversational] My aunt's outside Kansas City. I've driven across Missouri in August, windows down, cornfields the whole way and heat coming off the road. It's a real place to me. Which makes the math feel worse, somehow.
 
 Marcus: It should. Now your turn. Missouri wants in as a slave state. The Senate's tied at twenty-two all. What's the one thing the North can't afford?
 
@@ -20,53 +20,53 @@ Marcus: It should. Now your turn. Missouri wants in as a slave state. The Senate
 
 Marcus: Missouri, tipping the Senate, and through the three-fifths clause, the House and the presidency too. One state, three chambers of power.
 
-Maya: Checking that one. Box one: the eleven-eleven deadlock.
+Maya: [confident tone] Checking that one. Box one: the eleven-eleven deadlock.
 
-Marcus: When a prompt asks why one state could scare all of Congress, start with the Senate math, not the map.
+Marcus: [measured] When a prompt asks why one state could scare all of Congress, start with the Senate math, not the map.
 
-Maya: And watch the dates. Missouri applied in eighteen eighteen. Eighteen nineteen is Tallmadge's amendment. Two different events. The exam will split them, so don't merge them.
+Maya: [conversational] And watch the dates. Missouri applied in eighteen eighteen. Eighteen nineteen is Tallmadge's amendment. Two different events. The exam will split them, so don't merge them.
 
-Marcus: Why eighteen nineteen, though? Why did the fight blow up then and not earlier? Because slavery had looked like a fading institution. The Northwest Ordinance barred it from the Northwest Territory. Congress outlawed bringing enslaved people in from overseas in eighteen oh eight. Then the cotton gin made cotton a fortune crop, and demand for enslaved labor exploded. Missouri was the first test of whether slavery would spread. And the Panic of 1819 was breaking at the same time, so Congress fought this fight with the economy collapsing underneath it.
+Marcus: [measured] Why eighteen nineteen, though? Why did the fight blow up then and not earlier? Because slavery had looked like a fading institution. The Northwest Ordinance barred it from the Northwest Territory. Congress outlawed bringing enslaved people in from overseas in eighteen oh eight. Then the cotton gin made cotton a fortune crop, and demand for enslaved labor exploded. Missouri was the first test of whether slavery would spread. And the Panic of 1819 was breaking at the same time, so Congress fought this fight with the economy collapsing underneath it.
 
-Maya: So the fight was never about ending slavery. It was about whether it grows.
+Maya: [conversational] So the fight was never about ending slavery. It was about whether it grows.
 
-Marcus: Keep that sentence. It's the whole crisis in one line.
+Marcus: [confident tone] Keep that sentence. It's the whole crisis in one line.
 
-Maya: Box two. February, eighteen nineteen. James Tallmadge, a congressman from New York, attaches an amendment to the Missouri statehood bill. Two conditions: no more enslaved people brought into Missouri, and children born to enslaved mothers there after statehood, freed at twenty-five. So basically, Tallmadge would've ended slavery in Missouri.
+Maya: [conversational] Box two. February, eighteen nineteen. James Tallmadge, a congressman from New York, attaches an amendment to the Missouri statehood bill. Two conditions: no more enslaved people brought into Missouri, and children born to enslaved mothers there after statehood, freed at twenty-five. So basically, Tallmadge would've ended slavery in Missouri.
 
-Marcus: Not basically. Not even close. Nobody already enslaved got freed. Tallmadge left the current generation in place and bet on the next one. Gradual emancipation, on a twenty-five-year clock.
+Marcus: [measured] Not basically. Not even close. Nobody already enslaved got freed. Tallmadge left the current generation in place and bet on the next one. Gradual emancipation, on a twenty-five-year clock.
 
-Maya: I was one sentence from writing "Tallmadge abolishes slavery" in my notes. Good thing the mike's hot.
+Maya: [conversational] I was one sentence from writing "Tallmadge abolishes slavery" in my notes. Good thing the mike's hot.
 
-Marcus: The House passed it, since the North had the numbers. Then it hit the Senate, and died there. And the South treated it as an existential threat. Not a policy disagreement. An existential threat.
+Marcus: [serious tone] The House passed it, since the North had the numbers. Then it hit the Senate, and died there. And the South treated it as an existential threat. Not a policy disagreement. An existential threat.
 
-Maya: Why existential? It's gradual. It's one state.
+Maya: [conversational] Why existential? It's gradual. It's one state.
 
-Marcus: The precedent. If Congress can set terms on slavery as the price of admission, it can set terms for every state after Missouri. The North already owned the House, since it was the more-populous region. The Senate was the South's last wall, and Tallmadge was knocking on it.
+Marcus: [measured] The precedent. If Congress can set terms on slavery as the price of admission, it can set terms for every state after Missouri. The North already owned the House, since it was the more-populous region. The Senate was the South's last wall, and Tallmadge was knocking on it.
 
-Maya: How ugly did it get?
+Maya: [curious, inquisitive tone] How ugly did it get?
 
-Marcus: Georgia's Thomas Cobb, on the House floor, told Tallmadge straight out — his actual words, in the congressional record: "You have kindled a fire which all the waters of the ocean cannot put out, which seas of blood can only extinguish." In eighteen nineteen, men were talking about breaking the Union forty years before it happened.
+Marcus: [measured] Georgia's Thomas Cobb, on the House floor, told Tallmadge straight out — his actual words, in the congressional record: "You have kindled a fire which all the waters of the ocean cannot put out, which seas of blood can only extinguish." In eighteen nineteen, men were talking about breaking the Union forty years before it happened.
 
-Maya: Tallmadge's amendment, then: two conditions, passed the House, died in the Senate. It dragged slavery onto the national stage.
+Maya: [conversational] Tallmadge's amendment, then: two conditions, passed the House, died in the Senate. It dragged slavery onto the national stage.
 
-Marcus: If an SAQ names the Tallmadge Amendment, both conditions have to land. Name one and it reads as a guess.
+Marcus: [measured] If an SAQ names the Tallmadge Amendment, both conditions have to land. Name one and it reads as a guess.
 
-Maya: And don't write that Tallmadge would have abolished slavery in Missouri. Gradual emancipation. The twenty-five-year clause is the whole point.
+Maya: [firm] And don't write that Tallmadge would have abolished slavery in Missouri. Gradual emancipation. The twenty-five-year clause is the whole point.
 
-Maya: Box three: the Compromise itself. Eighteen twenty. Henry Clay, Speaker of the House, builds a package. First move: Missouri enters as a slave state.
+Maya: [conversational] Box three: the Compromise itself. Eighteen twenty. Henry Clay, Speaker of the House, builds a package. First move: Missouri enters as a slave state.
 
-Maya: And the North just takes that?
+Maya: [curious, inquisitive tone] And the North just takes that?
 
-Marcus: They take it because of the second move: Maine, until then just the northern part of Massachusetts, gets carved off and enters as a free state. Twelve to twelve. The tie holds.
+Marcus: [measured] They take it because of the second move: Maine, until then just the northern part of Massachusetts, gets carved off and enters as a free state. Twelve to twelve. The tie holds.
 
-Maya: Maine was Massachusetts? The whole state?
+Maya: [curious, inquisitive tone] Maine was Massachusetts? The whole state?
 
-Marcus: The District of Maine, governed from Boston. Congress separated it from Massachusetts and admitted it as a free state. Third move: the line. Congress draws a boundary across the rest of the Louisiana Territory at thirty-six degrees, thirty minutes north latitude, which was Missouri's southern border. North of the line, no slavery, except Missouri itself. South of it, slavery permitted.
+Marcus: [measured] The District of Maine, governed from Boston. Congress separated it from Massachusetts and admitted it as a free state. Third move: the line. Congress draws a boundary across the rest of the Louisiana Territory at thirty-six degrees, thirty minutes north latitude, which was Missouri's southern border. North of the line, no slavery, except Missouri itself. South of it, slavery permitted.
 
-Maya: So the pitch was: one line, and the West is sorted forever.
+Maya: [conversational] So the pitch was: one line, and the West is sorted forever.
 
-Marcus: The country told itself that story for thirty years, and it's wrong. The line only covered the Louisiana Territory. A latitude can't settle a moral question. It just scheduled the next fight.
+Marcus: [measured] The country told itself that story for thirty years, and it's wrong. The line only covered the Louisiana Territory. A latitude can't settle a moral question. It just scheduled the next fight.
 
 Maya: Your turn. Fast-forward to eighteen forty-eight. The country's a lot bigger than it was in eighteen twenty. Can the Compromise settle slavery there?
 
@@ -74,61 +74,61 @@ Maya: Your turn. Fast-forward to eighteen forty-eight. The country's a lot bigge
 
 Maya: No — the line stopped at the old Louisiana border. New land, new fight.
 
-Maya: And the Compromise almost died a second time, right?
+Maya: [curious, inquisitive tone] And the Compromise almost died a second time, right?
 
-Marcus: It did. Missouri wrote a constitution that barred free Black people from even entering the state. The North said absolutely not, and Missouri's admission stalled for another year. Clay came back in eighteen twenty-one: Missouri got in, on the condition it never enforced that ban.
+Marcus: [measured] It did. Missouri wrote a constitution that barred free Black people from even entering the state. The North said absolutely not, and Missouri's admission stalled for another year. Clay came back in eighteen twenty-one: Missouri got in, on the condition it never enforced that ban.
 
-Maya: So the famous compromise was really two bargains.
+Maya: [conversational] So the famous compromise was really two bargains.
 
-Marcus: Two bargains. The second one was about who counted as a citizen.
+Marcus: [measured] Two bargains. The second one was about who counted as a citizen.
 
-Maya: Wait — free Black people? Not enslaved people. Free people, and Missouri tried to ban them from the state?
+Maya: [incredulous] Wait — free Black people? Not enslaved people. Free people, and Missouri tried to ban them from the state?
 
-Marcus: From entering it. From living there. The North read it as Missouri writing racial exclusion into the Union itself, and Congress nearly tore the whole package apart over it.
+Marcus: [measured] From entering it. From living there. The North read it as Missouri writing racial exclusion into the Union itself, and Congress nearly tore the whole package apart over it.
 
-Maya: Handed a map stimulus with the thirty-six thirty line drawn on it? Don't describe the line. Explain what it was built to prevent.
+Maya: [conversational] Handed a map stimulus with the thirty-six thirty line drawn on it? Don't describe the line. Explain what it was built to prevent.
 
-Marcus: And one more trap: that line didn't free a single enslaved person. It only fenced where slavery could spread.
+Marcus: [measured] And one more trap: that line didn't free a single enslaved person. It only fenced where slavery could spread.
 
-Maya: Box four. The fire bell.
+Maya: [conversational] Box four. The fire bell.
 
-Marcus: Thomas Jefferson. Retired at Monticello, watching the whole fight. April, eighteen twenty, he writes to a congressman named John Holmes, and the letter's famous for one image. This momentous question, he wrote, like a fire bell in the night, awakened and filled me with terror.
+Marcus: [measured] Thomas Jefferson. Retired at Monticello, watching the whole fight. April, eighteen twenty, he writes to a congressman named John Holmes, and the letter's famous for one image. This momentous question, he wrote, like a fire bell in the night, awakened and filled me with terror.
 
-Maya: My English teacher paired that line with Poe's "The Bells" last month. Now every time I read it, I hear church bells.
+Maya: [conversational] My English teacher paired that line with Poe's "The Bells" last month. Now every time I read it, I hear church bells.
 
-Marcus: Poe and Jefferson in the same week. Your teacher's got range. There's a second line in that same letter: we have the wolf by the ear, and we can neither hold him, nor safely let him go.
+Marcus: [measured] Poe and Jefferson in the same week. Your teacher's got range. There's a second line in that same letter: we have the wolf by the ear, and we can neither hold him, nor safely let him go.
 
-Maya: So Jefferson's the good guy here? He's warning everybody.
+Maya: [conversational] So Jefferson's the good guy here? He's warning everybody.
 
-Marcus: He's the warning, not the hero. He saw where this was heading. Jefferson was writing as an enslaver, terrified of slavery and holding people in bondage. He rang the bell in a letter and went back to bed.
+Marcus: [measured] He's the warning, not the hero. He saw where this was heading. Jefferson was writing as an enslaver, terrified of slavery and holding people in bondage. He rang the bell in a letter and went back to bed.
 
-Maya: Ouch. Fair, but that one stung.
+Maya: [conversational] Ouch. Fair, but that one stung.
 
-Marcus: And here's what the bell postponed. The Compromise worked in eighteen twenty because both sides got something and the West was still mostly empty on American maps.
+Marcus: [measured] And here's what the bell postponed. The Compromise worked in eighteen twenty because both sides got something and the West was still mostly empty on American maps.
 
-Maya: So why couldn't they just draw another line in eighteen fifty?
+Maya: [curious, inquisitive tone] So why couldn't they just draw another line in eighteen fifty?
 
-Marcus: By eighteen fifty the maps had filled in. Gold had been found at Sutter's Mill back in forty-eight, and land ceded by Mexico that the old line never covered. You can't draw a line through a map that's still being drawn. The Compromise bought about thirty years, and the price went up every decade.
+Marcus: [measured] By eighteen fifty the maps had filled in. Gold had been found at Sutter's Mill back in forty-eight, and land ceded by Mexico that the old line never covered. You can't draw a line through a map that's still being drawn. The Compromise bought about thirty years, and the price went up every decade.
 
-Maya: A quote question on the fire bell is never testing the quote. It's testing one idea: the Missouri crisis made slavery national.
+Maya: [conversational] A quote question on the fire bell is never testing the quote. It's testing one idea: the Missouri crisis made slavery national.
 
-Marcus: And don't file that letter under "Jefferson the abolitionist." He was an enslaver. He never freed anyone himself — the letter is a warning, nothing more.
+Marcus: [measured] And don't file that letter under "Jefferson the abolitionist." He was an enslaver. He never freed anyone himself — the letter is a warning, nothing more.
 
-Maya: That bell's still ringing. Four boxes, let's land them. One: the eleven-eleven deadlock. Twenty-two states, Senate tied, Missouri the tiebreaker, and the three-fifths clause sweetening the pot for the South. Checked.
+Maya: [conversational] That bell's still ringing. Four boxes, let's land them. One: the eleven-eleven deadlock. Twenty-two states, Senate tied, Missouri the tiebreaker, and the three-fifths clause sweetening the pot for the South. Checked.
 
-Marcus: On the sheet.
+Marcus: [conversational] On the sheet.
 
-Maya: Two: Tallmadge's amendment. No new enslaved people in Missouri, children freed at twenty-five. Passed the House, died in the Senate, and it made slavery a national question. Two down.
+Maya: [conversational] Two: Tallmadge's amendment. No new enslaved people in Missouri, children freed at twenty-five. Passed the House, died in the Senate, and it made slavery a national question. Two down.
 
-Marcus: Locked.
+Marcus: [conversational] Locked.
 
-Maya: Three: the Compromise and its second crisis. Missouri in as a slave state, Maine carved off as a free one, the line at thirty-six thirty across the Louisiana Territory. Then Missouri tried to keep free Black people out, and Clay came back in eighteen twenty-one and made Missouri... admit them? Or made Congress admit Missouri anyway?
+Maya: [incredulous] Three: the Compromise and its second crisis. Missouri in as a slave state, Maine carved off as a free one, the line at thirty-six thirty across the Louisiana Territory. Then Missouri tried to keep free Black people out, and Clay came back in eighteen twenty-one and made Missouri... admit them? Or made Congress admit Missouri anyway?
 
-Marcus: Close, but not quite. Missouri got in on the condition that it never enforced the exclusion. The ban stayed on paper; it couldn't be used.
+Marcus: [measured] Close, but not quite. Missouri got in on the condition that it never enforced the exclusion. The ban stayed on paper; it couldn't be used.
 
-Maya: Three's on the sheet. Four: the fire bell. Jefferson's letter to John Holmes: like a fire bell in the night. The Compromise postponed the fight about thirty years, until the maps filled in.
+Maya: [conversational] Three's on the sheet. Four: the fire bell. Jefferson's letter to John Holmes: like a fire bell in the night. The Compromise postponed the fight about thirty years, until the maps filled in.
 
-Marcus: Four for four.
+Marcus: [conversational] Four for four.
 
 Maya: Three questions, AP-shaped. Say your answer before I give it. One: why did Missouri's application panic Congress?
 
@@ -154,11 +154,11 @@ Maya: One more, fast. Jefferson's fire bell: what did the bell wake up?
 
 Maya: The realization that slavery wasn't a local problem anymore. It was the question that could split the Union.
 
-Maya: Check your boxes. Next time: the Market Revolution. Canals, mills, the telegraph — and the cotton that made the South richer and the knot tighter.
+Maya: [confident tone] Check your boxes. Next time: the Market Revolution. Canals, mills, the telegraph — and the cotton that made the South richer and the knot tighter.
 
-Marcus: Missouri got in, Maine got out, the line got drawn —
+Marcus: [professional broadcast tone] Missouri got in, Maine got out, the line got drawn —
 
-Maya: and the clock started ticking.
+Maya: [professional broadcast tone] and the clock started ticking.
 
 # Sources (production-only, never spoken)
 # - 5 Steps to a 5: AP US History 2024, Ch. 12 (OEBPS/ch12.xhtml): 11 free / 11 slave states in 1819; cotton gin made cotton lucrative, raising demand for enslaved labor; Compromise mechanics — Missouri slave + Maine free, 36°30′ line through the Louisiana Territory; Clay as Speaker of the House resolving it in 1820.
