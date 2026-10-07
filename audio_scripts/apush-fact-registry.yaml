@@ -7355,3 +7355,150 @@ facts:
     L77. Confirmed via Congress.gov (H.R. 3838, 99th Congress: Tax Reform Act of 1986, P.L.
     99-514, signed 10/22/1986). The U8-L1 script never names the act, so no script change
     was needed.'
+- id: F-U8-013
+  topic: 'Glasnost vs perestroika — openness vs restructuring'
+  guards:
+  - —\s*wait\.
+  guard_note: 'Same-turn self-correction of the recap-fumble device (Maya performs the
+    swap, catches herself mid-turn: "perestroika was the — wait. No."). The falsehood
+    is taught as wrong within the same breath; Marcus reinforces next turn.'
+  correct: 'Glasnost means openness: the loosening/dismantling of the repressive apparatus —
+    censorship eased, the press could report real conditions, critics could speak. Perestroika
+    means restructuring: market elements introduced into the planned economy, managers given
+    real choices, some private business allowed. Gorbachev intended both to rescue the Soviet
+    system; the openness instead exposed the rot and helped end it.'
+  falsehoods:
+  - glasnost.{0,25}(economic|restructuring|market)
+  - perestroika.{0,25}(press|censorship|openness|speech)
+  - Gorbachev.{0,25}(set out|intended|aimed).{0,25}(end|destroy).{0,15}communism
+  sources:
+  - prem27
+  tier_note: 'Added U8-L2 v2 2026-10-07 (writer fact pass). Per premium2027 ch11: glasnost ''a
+    dismantling of the repressive apparatus of the Soviet government''; perestroika ''the
+    introduction of elements of capitalism to the sluggish Soviet economy''; the reforms ''opened
+    the way for protests and challenges to Soviet power that ultimately undid Soviet Communism.'''
+- id: F-U8-014
+  topic: 'Reykjavik summit October 1986 — near-miss on nuclear elimination, died over SDI'
+  correct: 'At Reykjavik (Oct 11-12, 1986), Reagan and Gorbachev nearly agreed to eliminate
+    their nuclear stockpiles within a decade. The deal died on one demand: Gorbachev would only
+    sign if Reagan gave up the Strategic Defense Initiative (space-based missile defense);
+    Reagan refused to confine SDI research to the laboratory and walked away. The failure made
+    the 1987 INF Treaty possible.'
+  falsehoods:
+  - Reykjavik.{0,25}(produced|signed).{0,15}treaty
+  - Reykjavik.{0,25}(1985|1987|1988)
+  - INF.{0,15}came from.{0,15}Geneva
+  sources:
+  - web
+  tier_note: 'Added U8-L2 v2 2026-10-07 (writer fact pass). Tier 1 books do not cover Reykjavik;
+    confirmed via Britannica (Reykjavik Summit of 1986: leaders ''nearly produced an agreement to
+    eliminate the Soviet and American nuclear weapons stockpiles by 2000,'' blocked by SDI) and
+    the U.S. State Dept Office of the Historian (INF page: Reykjavik ''signaled a breakthrough'';
+    talks stalled again on SDI, then moved forward in 1987 after the linkage was dropped).'
+- id: F-U8-015
+  topic: 'INF Treaty 1987 — first treaty to abolish an entire category of weapons'
+  correct: 'The Intermediate-Range Nuclear Forces Treaty, signed by Reagan and Gorbachev in
+    Washington on December 8, 1987, required both sides to destroy their land-based
+    intermediate- and shorter-range missiles (the ones aimed across Europe), with on-site
+    inspectors verifying the destruction. It was the first arms-control treaty to abolish an
+    entire category of weapons systems — earlier treaties only capped future arsenals.'
+  falsehoods:
+  - INF.{0,15}(capped|limited).{0,15}(future|arsenals)
+  - INF.{0,15}(ICBM|intercontinental|long-range)
+  - INF.{0,15}(1986|1988|1989)
+  sources:
+  - 5steps2024
+  - web
+  tier_note: 'Added U8-L2 v2 2026-10-07 (writer fact pass). Per 5steps2024 ch28: the treaty
+    ''called for both states to eliminate an entire class of missiles.'' ''First to abolish an
+    entire category'' per Britannica (INF Treaty page); signing date Washington Dec 8, 1987 per
+    U.S. State Dept Office of the Historian.'
+- id: F-U8-016
+  topic: 'Berlin Wall opened November 9, 1989 — Schabowski press-conference accident'
+  correct: 'The Berlin Wall opened on November 9, 1989, after East German spokesman Günter
+    Schabowski, handed new travel rules minutes before a live press conference, answered
+    ''when does this start?'' with ''immediately, without delay.'' West German TV reported the
+    border open; East Berliners flooded the checkpoints and overwhelmed guards gave up. The
+    pressure was already building — the accident was the spark, not the cause.'
+  falsehoods:
+  - Berlin Wall.{0,20}(fell|opened).{0,15}(1988|1990|1991)
+  - Reagan.{0,25}(1987|tear down).{0,25}opened.{0,15}wall
+  - Gorbachev.{0,25}ordered.{0,20}wall.{0,15}(opened|torn)
+  sources:
+  - prem27
+  - web
+  tier_note: 'Added U8-L2 v2 2026-10-07 (writer fact pass). Per premium2027 ch11: ''the November
+    1989 demolition of the Berlin Wall.'' The Schabowski details via Associated Press reporting
+    (Nov 9, 1989 briefing; ''as far as I know, this enters into force … this is immediately,
+    without delay''; guards ''gave up trying to hold back the crowds'').'
+- id: F-U8-017
+  topic: 'Baltic Way August 23, 1989 — ~2M human chain across Estonia, Latvia, Lithuania'
+  correct: 'On August 23, 1989, roughly two million people formed a human chain more than 600 km
+    long through Estonia, Latvia, and Lithuania — three republics occupied by the Soviet Union —
+    marking 50 years since the Molotov-Ribbentrop Pact carved them up. A peaceful
+    independence demonstration; no Soviet crackdown followed.'
+  falsehoods:
+  - Baltic Way.{0,20}(1990|1991)
+  - Baltic Way.{0,20}(battle|uprising|armed)
+  - Baltic.{0,20}chain.{0,20}(one|two).{0,15}(countries|states)
+  sources:
+  - web
+  tier_note: 'Added U8-L2 v2 2026-10-07 (writer fact pass). Not carried by Tier-1 books;
+    confirmed via European Parliament ''1989: The Year of Revolutions'' timeline (23 August:
+    ''Two million people join their hands to form a 600-kilometer long human chain across
+    Estonia, Latvia and Lithuania,'' 50th anniversary of the Molotov-Ribbentrop Pact).'
+- id: F-U8-018
+  topic: 'August 1991 coup, Yeltsin on the tank, USSR dissolved December 1991'
+  correct: 'On August 18-22, 1991, Communist hardliners detained Gorbachev at his Crimea vacation
+    house and seized Moscow. Boris Yeltsin, president of the Russian republic, climbed onto a
+    tank in front of the Russian parliament (the White House) and defied the coup; it collapsed
+    in three days. Gorbachev returned with nothing left to govern, and the Soviet Union was
+    dissolved in December 1991.'
+  falsehoods:
+  - (1991|August).{0,20}coup.{0,20}succeeded
+  - Yeltsin.{0,25}(arrested|detained).{0,20}coup
+  - Soviet Union.{0,20}dissolved.{0,15}(1990|1992|1993)
+  sources:
+  - 5steps2024
+  - web
+  tier_note: 'Added U8-L2 v2 2026-10-07 (writer fact pass). Per 5steps2024 ch29: ''a failed coup
+    attempt by Communist hardliners weakened Gorbachev''; Yeltsin ''proclaimed the dissolution of
+    the Soviet Union in December 1991.'' The Yeltsin-on-the-tank image via Britannica (1991
+    Soviet Coup Attempt: ''At 12:50 pm Russian Pres. Boris Yeltsin climbed atop a tank in front
+    of the White House, condemned the coup'').'
+- id: F-U8-019
+  topic: 'The Cold War end verdict — teach BOTH Reagan pressure and Soviet internal rot'
+  correct: 'The exam answer to ''what ended the Cold War'' is the debate, not a slogan. Reagan''s
+    side: the accelerated arms race (including SDI) taxed the Soviet economy far more than it
+    taxed America''s, forcing Moscow to spend money it did not have. The other side: internal
+    dynamics — economic stagnation, political dissatisfaction — and Gorbachev''s reforms, which
+    opened the system to protests that undid it. Some historians credit the arms race with
+    bankrupting the USSR; others mainly credit Gorbachev.'
+  falsehoods:
+  - Reagan.{0,20}(single-handedly|alone).{0,20}ended.{0,20}Cold War
+  - Cold War.{0,20}ended.{0,20}(only|solely).{0,20}(Gorbachev|Reagan)
+  - arms race.{0,25}(no|zero|little).{0,15}effect
+  sources:
+  - prem27
+  - princeton
+  tier_note: 'Added U8-L2 v2 2026-10-07 (writer fact pass). Per premium2027 ch11: ''an accelerated
+    arms race taxed the Soviet economy more than it did the American economy, but one must also
+    look at the internal dynamics of Soviet society — economic stagnation, political
+    dissatisfaction.'' Per Princeton Review ch13 supp: ''Some historians have argued that the arms
+    race bankrupted the Soviet Union and helped bring about an end to the Cold War, while others
+    mainly credit Soviet leader Mikhail Gorbachev.'''
+- id: F-U8-020
+  topic: 'Geneva November 1985 — first Reagan-Gorbachev summit, no arms deal'
+  correct: 'Reagan and Gorbachev''s first summit was at Geneva in November 1985. It produced no
+    arms-control breakthrough, but the two leaders established a working personal rapport; it was
+    the first of four Reagan-Gorbachev summits (Geneva 1985, Reykjavik 1986, Washington 1987,
+    Moscow 1988).'
+  falsehoods:
+  - Geneva.{0,20}(produced|signed).{0,15}(treaty|arms)
+  - Geneva.{0,20}(1986|1987)
+  sources:
+  - web
+  tier_note: 'Added U8-L2 v2 2026-10-07 (writer fact pass). Not carried by Tier-1 books;
+    standard history corroborated in research (State Dept Office of the Historian frames
+    Reykjavik-era diplomacy as following the Geneva first meeting). Disclosed as beyond-Tier-1
+    in the script footer.'
