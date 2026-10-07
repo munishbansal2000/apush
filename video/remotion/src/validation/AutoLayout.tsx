@@ -30,7 +30,7 @@ import {
   LayoutElement,
   resolveLayout,
   Priority,
-} from './autoLayout';
+} from './autoLayoutEngine';
 
 interface AutoLayoutContextValue {
   elements: Map<string, LayoutElement>;

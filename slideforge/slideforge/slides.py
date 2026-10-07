@@ -676,10 +676,24 @@ def _rich_tokens(text):
     return tokens
 
 
+def _shadow_offset(size):
+    """Hard-shadow offset for outlined display type, scaled to the size.
+
+    The classic look is a (7, 9) drop at 720p production sizes. A fixed
+    offset detaches into a duplicate line at review sizes (a 9px drop on
+    a 19px face reads as a second line), so small faces get a scaled
+    drop. Sizes >= ~54px keep the exact legacy (7, 9): 720p/1080p
+    production renders are pixel-identical.
+    """
+    return (min(7, max(2, round(size / 7))),
+            min(9, max(2, round(size / 6))))
+
+
 def _rich_line_img(tokens, size):
     """One line of tokens -> RGBA image, white outlined display type."""
     font = get_font(size, bold=True)
     sw = max(2, round(size / 28))
+    shx, shy = _shadow_offset(size)
     meas = ImageDraw.Draw(Image.new("RGBA", (8, 8)))
     widths = [meas.textlength(w + " ", font=font) for w, _, _ in tokens]
     total = int(sum(widths)) + 48
@@ -689,7 +703,7 @@ def _rich_line_img(tokens, size):
     x, y0 = 24, 24
     for (w, bold, _), tw in zip(tokens, widths):
         bsw = sw + (2 if bold else 0)
-        d.text((x + 7, y0 + 9), w + " ", font=font, fill=(0, 0, 0, 230),
+        d.text((x + shx, y0 + shy), w + " ", font=font, fill=(0, 0, 0, 230),
                stroke_width=bsw + 1, stroke_fill=(0, 0, 0, 230))
         d.text((x, y0), w + " ", font=font, fill=(255, 255, 255, 255),
                stroke_width=bsw, stroke_fill=(15, 15, 18, 255))
@@ -1984,11 +1998,15 @@ class StaggerSlide(Slide):
                 if le > 0:
                     pil = to_pil(frame)
                     lx = i * p["pw"] + p["pw"] // 2
-                    # label position follows panel (but stays on screen)
+                    # label position follows panel (but stays on screen).
+                    # The paragraph box scales with height: the fixed
+                    # +/-20px box crowds the frame edge at review sizes
+                    # (720p keeps the exact legacy box).
+                    half = min(20, max(12, int(h * 0.055)))
                     ly = p["py"] + p["ph"] + int(self._label_h * 0.45)
                     pil = C.draw_para(
-                        pil, (lx - p["pw"] // 2, ly - 20,
-                              lx + p["pw"] // 2, ly + 20),
+                        pil, (lx - p["pw"] // 2, ly - half,
+                              lx + p["pw"] // 2, ly + half),
                         p["label"], size=int(h * 0.035),
                         fill=(255, 255, 255), stroke=2,
                         alpha=int(255 * le))
@@ -2930,8 +2948,19 @@ class TerritorySlide(Slide):
         # drift defaults to False: territories are pinned to frame fractions,
         # so a moving bg would silently misalign them.
         self.map_image = _as_image(map_image)
-        # deep-ish copy: the layout resolver rewrites label_at in place
-        self.territories = [dict(t) for t in territories]
+        # deep-ish copy: the layout resolver rewrites label_at in place.
+        # Normalize colors to tuples: JSON plans deliver lists, and the
+        # frame renderer concatenates an alpha tuple (list + tuple fails).
+        self.territories = []
+        for _t in territories:
+            _t = dict(_t)
+            _c = _t.get('color')
+            if isinstance(_c, list):
+                _t['color'] = tuple(_c)
+            _a = _t.get('at')
+            if isinstance(_a, list):
+                _t['at'] = tuple(_a)
+            self.territories.append(_t)
         self.title = title
         self.stagger = stagger
         self.drift = drift
