@@ -6244,3 +6244,48 @@ facts:
   - 5steps
   - state.gov
   tier_note: 'Pinned U7-L2 v2 2026-10-07 — State Dept Office of the Historian confirms blockade dates; airlift outlasted the blockade.'
+- id: F-U7-008
+  topic: 'Chinese troop numbers in Korea — estimates range 150,000 to 1,000,000, never pin 300,000'
+  correct: 'Premium2027 ch10: Chinese troop estimates ''range from 150,000 to one million.''
+    Teach ''hundreds of thousands'' with the hedge that estimates vary widely — never pin
+    ''300,000 Chinese troops'' as the figure.'
+  falsehoods:
+  - 300,000 chinese troops.{0,20}korea
+  - chinese.{0,20}three hundred thousand.{0,15}troops
+  sources:
+  - premium2027
+  tier_note: 'Added U7-L3 v2 2026-10-07 — writer fact pass. De-pins the v1 draft''s ''roughly three hundred thousand.'''
+- id: F-U7-009
+  topic: 'US Korean War deaths — around 40,000 per 5steps2024 ch25, not a 36k pin'
+  correct: '5steps2024 ch25: the ''forgotten war'' cost ''around 40,000 American lives.''
+    Teach ''around forty thousand American dead'' — never pin a precise figure like 36,000.'
+  falsehoods:
+  - 36,000 americans.{0,15}korean war
+  - thirty-six thousand.{0,15}americans.{0,10}dead
+  sources:
+  - 5steps
+  tier_note: 'Added U7-L3 v2 2026-10-07 — writer fact pass. Replaces the v1 draft''s ''more than thirty-six thousand.'''
+- id: F-U7-010
+  topic: 'Truman''s warnings to MacArthur — do not pin ''twice'''
+  correct: 'The December 6, 1950 directive (via the Joint Chiefs) required MacArthur to clear
+    public statements with Washington before the April 1951 firing for insubordination.
+    Teach ''Truman had told him, through the Joint Chiefs, to stop freelancing policy
+    in public'' — never ''Truman warned him twice.'' No Tier-1 book documents the warning;
+    the directive is standard history (DOD).'
+  falsehoods:
+  - truman warned macarthur twice
+  - two warnings.{0,20}macarthur
+  sources:
+  - web
+  tier_note: 'Re-tiered U7-L3 v2 2026-10-07 (Layer 3): the Tier-1 books document only the firing for insubordination, not the warning — the December 1950 JCS directive is standard history via DOD. De-numbers the v1 draft''s ''told him, twice.'''
+- id: F-U7-011
+  topic: '''Old soldiers never die'' — MacArthur quoting a West Point ballad, not his own coinage'
+  correct: 'MacArthur closed his April 19, 1951 joint-session farewell with ''Old soldiers never
+    die, they just fade away'' — a line borrowed from an old West Point ballad (U.S. Capitol
+    Visitor Center / Library of Congress). Teach as borrowed, never as his coinage.'
+  falsehoods:
+  - macarthur coined.{0,25}old soldiers never die
+  - old soldiers never die.{0,20}macarthur''s own words
+  sources:
+  - loc
+  tier_note: 'Added U7-L3 v2 2026-10-07 — writer fact pass. Disclosure integrity: quote origin stated in-script.'
