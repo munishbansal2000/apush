@@ -1,0 +1,23 @@
+node_modules
+dist
+.DS_Store
+.env
+
+# Ignore the output video from Git but not videos you import into src/.
+out
+
+# Generated/downloaded image binaries — local render inputs only, never push
+public/*.webp
+public/*.png
+public/*.jpg
+public/bubbles/
+
+# Build cache — local render artifacts only, never push
+.build_cache/
+
+# Generated audio — TTS MP3s, music WAVs, timing artifacts — local only, never push
+public/audio/
+src/data/*/turns.json
+src/data/*/timing_map.json
+src/data/*/word_times.json
+src/data/*/music_timeline.json
