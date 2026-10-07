@@ -8097,3 +8097,34 @@ facts:
   sources:
   - web
   tier_note: Confirmed book error U9-L1 v2 2026-10-07 — Columbia University independent confirmation.
+
+- id: F-U9-013
+  topic: 'Homestead 1892 — broken by PA state militia, NOT federal troops'
+  correct: 'The 1892 Homestead strike was broken when the Pennsylvania governor called in
+    the state militia (~8,000 National Guard) to retake the plant (premium2027 ch8).
+    Federal troops broke the 1877 railroad strike and the 1894 Pullman strike — never
+    Homestead. Caught and corrected during U9-L1 build (L3 fact check); taught correctly
+    in U9-L2 with the trap set and defused three times.'
+  falsehoods:
+  - Homestead.*federal troops
+  - federal troops.*Homestead
+  sources:
+  - prem27
+  tier_note: 'Caught by Layer 3 U9-L1 v2 2026-10-07; registered U9-L2 (was missing from registry).'
+- id: F-U9-014
+  topic: '5steps2024 ch18 — Haymarket date sequence wrong'
+  correct: 'The Haymarket bombing demonstration was May 4, 1886, a rally reacting to the
+    May 3 McCormick shootings (premium2027 ch8; Britannica On This Day May 4). 5steps2024
+    ch18 narrates "On May 1, 100,000 people gathered at a rally... The next day, a
+    smaller demonstration was scheduled at Haymarket Square" — dating the bombing to
+    May 2 and omitting the May 3 shootings entirely. Also internally inconsistent: its
+    keyword box says the Knights were "established in the 1880s" while its own timeline
+    says 1869 (correct). Confirmed book error; independently confirmed 2026-10-07.
+    U9-L2 follows premium2027''s correct dating.'
+  falsehoods:
+  - Haymarket.*May 2
+  - Haymarket bomb.*May 1
+  sources:
+  - prem27
+  - web
+  tier_note: 'Confirmed book error U9-L2 v2 2026-10-07 — Britannica independent confirmation.'
