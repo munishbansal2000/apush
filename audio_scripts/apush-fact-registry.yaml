@@ -2081,6 +2081,9 @@ facts:
   falsehoods:
   - 130 million pounds
   - debt.*(roughly|nearly|about).*(doubled|double)
+  guards:
+  - \bReagan\b
+  - trillion
   sources:
   - prem27
   - 5steps
@@ -7165,3 +7168,190 @@ facts:
   - 5steps2024
   - princeton
   tier_note: 'Added U7-L12 v2 2026-10-07 (Layer-3 pass).'
+- id: F-U8-001
+  topic: 'Reaganomics — supply-side theory, 1981 and 1986 tax cuts'
+  correct: 'Reaganomics was supply-side economics: cut tax rates, spur investment and growth, and
+    collect more revenue even at lower rates. The 1981 law cut income tax rates about a quarter,
+    phased in over three years, dropping the top rate from about 70% to 50%. The 1986 law dropped
+    the top rate from 50% to 28%. ''Trickle-down'' was the critics'' label, not Reagan''s; George
+    Bush called it ''voodoo economics'' in the 1980 primaries.'
+  falsehoods:
+  - Reagan.{0,25}called (his|the) plan.{0,20}trickle-down
+  - trickle-down.{0,25}was Reagan.{0,15}(own|phrase|pitch|term)
+  - 1986.{0,25}(raised|increased).{0,15}top rate
+  sources:
+  - 5steps2024
+  - princeton
+  - web
+  tier_note: 'Added U8-L1 v2 2026-10-07 (writer fact pass). Theory, phase-in shape, and 50%-to-28%
+    per 5steps2024 ch28; Bush ''voodoo economics'' per Princeton ch13 supp; Laffer''s name and the
+    70%-to-50% figures per web sources, disclosed in the script footer.'
+- id: F-U8-002
+  topic: 'Reagan-era deficits — debt roughly doubled, ~$900B (1980) to $2T+ (1986)'
+  correct: 'Tax cuts plus rising defense spending with entitlements untouched exploded the
+    deficit. The national debt went from about $900 billion in 1980 to over $2 trillion by
+    1986 — roughly doubled in six years. The tax cuts did not pay for themselves.'
+  falsehoods:
+  - tax cuts paid for themselves
+  - Reagan.{0,25}(balanced|eliminated).{0,15}(deficit|debt)
+  - debt.{0,25}shrank under Reagan
+  guards:
+  - \bReagan\b
+  - trillion
+  sources:
+  - prem27
+  tier_note: 'Added U8-L1 v2 2026-10-07 (writer fact pass). Figures per premium2027 ch11
+    (''doubling... from around $900 billion in 1980 to over $2 trillion in 1986'').'
+- id: F-U8-003
+  topic: 'Reagan deregulation + PATCO 1981 — fired all striking air traffic controllers'
+  correct: 'Reagan deregulated banking, cable television, long-distance phone service, and
+    (per Princeton) industry and the environment. In 1981 he fired all striking air traffic
+    controllers, breaking their union PATCO — a major blow to organized labor.'
+  falsehoods:
+  - PATCO.{0,25}(survived|won).{0,15}strike
+  - air traffic controllers.{0,25}rehired
+  sources:
+  - 5steps2024
+  - prem27
+  - princeton
+  tier_note: 'Added U8-L1 v2 2026-10-07 (writer fact pass). Deregulation industries per 5steps2024
+    ch28 and Princeton ch13 supp; all-fired/broken PATCO per premium2027 ch11.'
+- id: F-U8-004
+  topic: 'Reaganomics inequality — gap between rich and poor widened'
+  correct: 'Critics charged Reagan''s tax cuts disproportionately benefited the wealthy and the
+    gap between rich and poor widened. The poor, paying little income tax, gained nothing from
+    rate cuts while housing aid and education money were cut.'
+  falsehoods:
+  - Reaganomics.{0,25}reduced.{0,15}inequality
+  - gap.{0,20}(rich|poor).{0,20}(shrank|narrowed) under Reagan
+  sources:
+  - 5steps2024
+  - prem27
+  - princeton
+  tier_note: 'Added U8-L1 v2 2026-10-07 (writer fact pass). Per 5steps2024 ch28 (''the gap
+    between the wealthiest Americans and the poorest Americans increased'') and Princeton ch13
+    supp (cuts ''hurt the poor, who pay little in income tax'').'
+- id: F-U8-005
+  topic: 'Reagan coalition — Goldwater 1964 seed, Moral Majority 1979, Sunbelt, Heritage 1973, Reagan Democrats'
+  correct: 'The coalition grew from Goldwater''s 1964 states''-rights campaign (the seed), the
+    Moral Majority (founded 1979 by Jerry Falwell, organizing evangelical Christians), the
+    booming Sunbelt (CA, TX, AZ, NV, FL), think tanks like the Heritage Foundation (founded
+    1973), and ''Reagan Democrats'' — working-class, often union and Catholic voters, Democratic
+    since FDR, who crossed over in 1980/1984 over the economy, the values message, and a racial
+    undertow historians still debate in its exact mix.'
+  falsehoods:
+  - Moral Majority.{0,20}(1968|1981)
+  - Reagan Democrats.{0,25}(never|didn''t).{0,15}exist
+  - Heritage Foundation.{0,20}(1981|1985)
+  sources:
+  - prem27
+  - 5steps2024
+  - web
+  tier_note: 'Added U8-L1 v2 2026-10-07 (writer fact pass). Goldwater seed and Sunbelt per
+    premium2027 ch11; Moral Majority 1979/Falwell per premium2027 timeline and the APUSH Unit 8
+    Review transcript; Heritage 1973 and the Reagan-Democrats framing per web sources, disclosed
+    in the script footer.'
+- id: F-U8-006
+  topic: 'Neshoba County Fair Aug 1980 — ''I believe in states'' rights''; historians'' debate'
+  correct: 'On August 3, 1980 Reagan spoke at the Neshoba County Fair in Mississippi and said
+    ''I believe in states'' rights,'' near the county where three civil rights workers were
+    murdered in 1964. Historians debate it: critics hear a coded racial signal (states'' rights
+    as the old language of resistance to integration); defenders call it a standard
+    small-government stump line about returning federal programs to the states. The exam answer
+    carries the debate, not a verdict.'
+  falsehoods:
+  - Neshoba.{0,30}Reagan (admitted|confessed).{0,15}racis
+  - Neshoba.{0,30}purely.{0,15}budget
+  sources:
+  - web
+  tier_note: 'Added U8-L1 v2 2026-10-07 (writer fact pass). Beyond the Tier-1 books; standard
+    history disclosed in the script footer. Quote verified against multiple web transcripts of
+    the public campaign speech.'
+- id: F-U8-007
+  topic: 'Welfare queen — 1976 NH campaign story; Linda Taylor convicted 1977 of ~$8,000 fraud'
+  correct: 'From his 1976 New Hampshire campaign, Reagan told crowds about a Chicago woman
+    gaming welfare — he claimed 80 aliases and $150,000 a year in tax-free cash. The real
+    woman, Linda Taylor, was convicted in 1977 of fraud worth about $8,000. Real story, wildly
+    exaggerated telling; historians debate whether it was a coded racial appeal (he never
+    named her race) or a government-waste story.'
+  falsehoods:
+  - welfare queen.{0,25}(\$150,000|150000).{0,20}actual|confirmed
+  - Reagan invented the welfare queen
+  sources:
+  - web
+  tier_note: 'Added U8-L1 v2 2026-10-07 (writer fact pass). Beyond the Tier-1 books; standard
+    history disclosed in the script footer. Campaign numbers and the 1977 conviction verified
+    against multiple web sources.'
+- id: F-U8-008
+  topic: 'Election of 1984 — 49 states, ~60% popular vote; Mondale/Ferraro'
+  correct: 'Reagan won 1984 with almost 60% of the popular vote and every electoral vote except
+    Minnesota and the District of Columbia — 49 states — on ''morning again in America.''
+    Walter Mondale (Carter''s VP) attacked supply-side, said he would raise taxes, and picked
+    Geraldine Ferraro, the first woman on a major party''s national ticket.'
+  falsehoods:
+  - Reagan.{0,25}won.{0,15}(all 50|fifty) states
+  - Ferraro.{0,25}first woman.{0,15}(president|presidential nominee)
+  sources:
+  - 5steps2024
+  tier_note: 'Added U8-L1 v2 2026-10-07 (writer fact pass). Per 5steps2024 ch28: ''almost 60
+    percent of the popular vote and winning all the electoral votes except those of Minnesota
+    and the District of Columbia''; Ferraro ''the first woman to be nominated to run on a major
+    party''s presidential ticket.'''
+- id: F-U8-009
+  topic: 'First inaugural Jan 20 1981 — ''government is not the solution... government is the problem'''
+  correct: 'In his first inaugural address, January 20, 1981 (the day the hostages came home),
+    Reagan said: ''In this present crisis, government is not the solution to our problem,
+    government is the problem.'' The line became the signature of the anti-government turn.'
+  falsehoods:
+  - government is the problem.{0,30}1984
+  - Reagan.{0,25}said.{0,20}government is.{0,15}always
+  sources:
+  - web
+  tier_note: 'Added U8-L1 v2 2026-10-07 (writer fact pass). Quoted from the primary-source text
+    of the public-domain inaugural address (Wikisource); books do not carry the line — disclosed
+    in the script footer.'
+- id: F-U8-010
+  topic: 'Cold War posture — Evil Empire 1983, SDI ''Star Wars'', MX, window of vulnerability'
+  correct: 'Reagan''s Cold War posture (kept to rhetoric + buildup in this lesson; the end of the
+    Cold War is U8-L2): in 1983 he called the Soviet Union an ''evil empire,'' launched the
+    Strategic Defense Initiative (the missile shield critics nicknamed ''Star Wars''), pursued
+    the MX missile program, and poured money into the military to close what he called a
+    ''window of vulnerability.'''
+  falsehoods:
+  - SDI.{0,25}was (operational|deployed).{0,15}1980s
+  - Evil Empire.{0,25}(1981|1985)
+  - INF.{0,15}treaty.{0,15}(1983|1984)
+  sources:
+  - prem27
+  - 5steps2024
+  - princeton
+  tier_note: 'Added U8-L1 v2 2026-10-07 (writer fact pass). Per premium2027 ch11 (Evil Empire
+    1983; SDI/Star Wars; MX; window of vulnerability) and 5steps2024 ch28. SDI was research, not
+    a deployed shield.'
+- id: F-U8-011
+  topic: 'Reagan-era persistence — AIDS from 1981, homelessness rose'
+  correct: 'What persisted/grew under Reagan: the deficit and debt, the rich-poor gap, the AIDS
+    crisis (news reports starting 1981; CDC identified AIDS in 1981) with a slow federal
+    response, and rising homelessness in American cities amid cuts to social services.'
+  falsehoods:
+  - Reagan.{0,25}(cured|ended).{0,15}homelessness
+  - AIDS.{0,20}(began|started).{0,15}(1985|1986|1990)
+  sources:
+  - prem27
+  tier_note: 'Added U8-L1 v2 2026-10-07 (writer fact pass). Per premium2027 ch11: AIDS news
+    reports ''starting in 1981,'' CDC identification in 1981, and critics citing ''an increase in
+    homelessness along with cuts to social services.'''
+- id: F-U8-012
+  topic: 'Tax Reform Act of 1986 — 5steps2024 ch28 misnames it ''Tax Revenue Act'''
+  correct: 'The 1986 tax law that dropped the top rate from 50 percent to 28 percent is the
+    Tax Reform Act of 1986 (H.R. 3838, Public Law 99-514), signed by Reagan on October 22,
+    1986. 5steps2024 ch28 calls it the ''Tax Revenue Act of 1986,'' which is wrong.'
+  falsehoods:
+  - Tax Revenue Act of 1986
+  - Revenue Act of 1986.{0,20}(Reagan|top rate)
+  sources:
+  - web
+  tier_note: 'Added U8-L1 v2 2026-10-07 (parent-verified book error). Book line: 5steps2024/OEBPS/ch28.xhtml
+    L77. Confirmed via Congress.gov (H.R. 3838, 99th Congress: Tax Reform Act of 1986, P.L.
+    99-514, signed 10/22/1986). The U8-L1 script never names the act, so no script change
+    was needed.'
