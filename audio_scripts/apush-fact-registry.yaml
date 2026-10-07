@@ -1890,3 +1890,11 @@ facts:
       - "columns never got moving"
     sources: [princeton, parkscanada, web]
     tier_note: "Princeton confirms the Champlain/militia prong; Queenston confirmed via Parks Canada (government historic-site authority); correction from U4-E3 Layer 3"
+
+  - id: F-U4-006
+    topic: Cobb's fire quote — exact wording only, never paraphrased
+    correct: "Rep. Thomas W. Cobb of Georgia, on the House floor during the 1819 Missouri debates, told Tallmadge: 'You have kindled a fire which all the waters of the ocean cannot put out, which seas of blood can only extinguish.' (Annals of Congress, 15th Cong., 2nd Sess. — quoted in Tallmadge's own Feb 16, 1819 speech; footnoted in the Annals record.) Quote it verbatim or don't quote it — paraphrase drift is the documented failure mode."
+    falsehoods:
+      - "cobb.{0,150}kindled(?!.{0,150}which all the waters)"
+    sources: [loc, primary]
+    tier_note: "verbatim quote verified via Layer 3, U4-E5 repair; the lookahead intentionally also flags paraphrases of the quote so future drafts quote it verbatim"
