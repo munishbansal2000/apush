@@ -2904,3 +2904,21 @@ facts:
   sources:
   - 5steps
   tier_note: same-day entry from U4-E12 v2 draft, 2026-10-06
+- id: F-U4-074
+  topic: Seneca Falls — eleven resolutions, not twelve
+  correct: 'The NPS-hosted original Report of the Woman''s Rights Convention transcribes eleven "Resolved" paragraphs; the elective-franchise (suffrage) resolution is the 9th and the only contested one. Teach "eleven resolutions, ten passed without a fight, the ninth contested" — never "twelve."'
+  falsehoods:
+  - seneca falls.{0,60}twelve resolutions
+  - twelve resolutions.{0,60}seneca falls
+  - declaration of sentiments.{0,60}twelve resolutions
+  sources:
+  - nps
+  tier_note: Tier 2 (NPS-hosted primary source, the original Report tract). Corrected U4-E13 v2 2026-10-07 — v1 taught twelve.
+- id: F-U4-075
+  topic: Douglass North Star editorial line — exact wording
+  correct: 'Douglass''s July 28, 1848 North Star editorial "The Rights of Women" reads: "In respect to political rights, we hold woman to be justly entitled to all we claim for man…" (NPS verbatim). Singular "woman"/"man", "for man" — not the pluralized "women"/"men", "from men" paraphrase.'
+  falsehoods:
+  - we hold women to be justly entitled to all we claim from men
+  sources:
+  - nps
+  tier_note: Tier 2 (NPS Frederick Douglass NHS / Women's Rights NHP pages). Corrected U4-E13 v2 2026-10-07.
