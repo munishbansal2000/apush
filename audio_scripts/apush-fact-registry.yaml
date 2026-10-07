@@ -1543,3 +1543,41 @@ facts:
       - "levying taxes without parliament's consent was illegal"
       - "bill of rights of 1689.{0,40}colonists' lawyers read it straight"
     sources: [princeton]
+
+  - id: F-U3-022
+    topic: Townshend tea duty kept as the marker of Parliament's taxing claim
+    correct: "Lord North's 1770 ministry repealed all the Townshend duties EXCEPT the tax on tea, which was deliberately kept as a reminder of Parliament's right to tax (5steps ch.9: 'left as a reminder that the British government maintained its power to tax'). Teach the kept tea duty as the marker of the claim, not as a revenue measure — 'the penny stays so the principle stays.' Never teach that all Townshend duties were repealed."
+    falsehoods:
+      - "townshend.{0,40}all.{0,20}repealed"
+      - "repealed.{0,30}townshend duties.{0,30}(all|every|entire)"
+    sources: [5steps, princeton]
+
+  - id: F-U3-023
+    topic: Boston Massacre trial verdicts — 8 tried, 6 acquitted, 2 branded
+    correct: "Of the eight British soldiers tried for the Boston Massacre (March 5, 1770), six were acquitted and two were convicted of manslaughter and branded on the thumb (5steps ch.9). John Adams defended them. Never teach that the soldiers were convicted of murder; the acquittals are the point — the trial ran on law."
+    falsehoods:
+      - "soldiers.{0,30}(convicted|found guilty).{0,30}murder"
+      - "massacre.{0,30}trial.{0,30}all.{0,20}(convicted|hanged)"
+    sources: [5steps, britannica]
+
+  - id: F-U3-024
+    topic: Tea Act 1773 lowered the price of tea; the tax stayed the same
+    correct: "The Tea Act 1773 let the East India Company sell directly in America without London middlemen; the tea TAX stayed the same but the PRICE of tea went down (5steps ch.9; prem27 ch.5: 'actually lowered tea prices in Boston'). The colonists opposed it anyway — over the monopoly, the cut-out merchants, and the principle. Never teach the Tea Party as a protest against expensive tea."
+    falsehoods:
+      - "tea act.{0,40}raised.{0,20}price"
+      - "tea party.{0,40}protest.{0,30}(expensive|costly|high).{0,20}tea"
+    sources: [5steps, prem27]
+
+  - id: F-U3-025
+    topic: Quebec Act is the separate fifth act, not a punishment for the Tea Party
+    correct: "The Quebec Act (1774) was passed around the same time as the four Coercive Acts but was UNRELATED to the Boston Tea Party (prem27 ch.5) — it enlarged Quebec's boundaries (Britannica: 'westward and southward to the junction of the Ohio and the Mississippi') and guaranteed French Catholics freedom of worship (5steps ch.9). Colonists read it as being cut off from the west and surrounded. Never list it as one of the Intolerable Acts proper; never teach it as punishment for the Tea Party."
+    falsehoods:
+      - "quebec act.{0,40}(punish|punishment).{0,30}tea party"
+      - "intolerable acts.{0,40}(five|5).{0,20}quebec"
+    sources: [prem27, 5steps, britannica]
+
+  - id: F-U3-026
+    topic: Suffolk Resolves adopted by the First Continental Congress
+    correct: "The Suffolk Resolves (Massachusetts, 1774) defied the Intolerable Acts, imposed a boycott of British products, and called on the colonies to ready their militias (5steps ch.9); the First Continental Congress adopted/endorsed them. Teach as Massachusetts's answer that the Congress made continent-wide, not as a Congress invention."
+    falsehoods: []
+    sources: [5steps]
