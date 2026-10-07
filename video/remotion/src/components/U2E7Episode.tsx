@@ -73,8 +73,6 @@ const SUB_BEATS: SubBeat[] = [
   { turnId: 't01', offset: 6.0, kind: 'bubble', text: 'the governor steps off the boat — and begs for his paycheck', position: [0.5, 0.5], width: 420 },
 
   // t02: Money.
-  { turnId: 't02', offset: 0.3, kind: 'smarttext', text: 'MONEY.', level: 'hero', position: [0.5, 0.35], entrance: 'stamp' },
-
   // t03: They vote the taxes
   { turnId: 't03', offset: 2.0, kind: 'smarttext', text: 'THEY VOTE THE TAXES. THE BUDGET.', level: 'subtitle', position: [0.5, 0.25] },
   { turnId: 't03', offset: 5.5, kind: 'smarttext', text: '…AND THE GOVERNOR\'S OWN SALARY', level: 'title', position: [0.5, 0.5], color: '#ffd700' },
@@ -119,8 +117,6 @@ const SUB_BEATS: SubBeat[] = [
   { turnId: 't12', offset: 1.5, kind: 'bubble', text: 'loyal British subjects… who\'ll riot for three days?', position: [0.5, 0.4], width: 400 },
 
   // t13: Loyal, not cuddly
-  { turnId: 't13', offset: 0.5, kind: 'smarttext', text: 'LOYAL, NOT CUDDLY.', level: 'subtitle', position: [0.5, 0.4] },
-
   // t14: Prediction beat — 1728
   { turnId: 't14', offset: 2.0, kind: 'smarttext', text: 'YOUR TURN: IT\'S 1728', level: 'title', position: [0.5, 0.2] },
   { turnId: 't14', offset: 6.0, kind: 'bubble', text: 'the governor wants his salary voted once, permanently', position: [0.5, 0.5], width: 400 },
@@ -213,8 +209,6 @@ const SUB_BEATS: SubBeat[] = [
   { turnId: 't36', offset: 9.0, kind: 'bubble', text: 'didn\'t want to look like provincial bumpkins', position: [0.5, 0.7], width: 400 },
 
   // t37: Trying really hard to be British
-  { turnId: 't37', offset: 0.5, kind: 'bubble', text: 'trying really hard to be British', position: [0.5, 0.4], width: 340 },
-
   // t38: The paradox
   { turnId: 't38', offset: 2.0, kind: 'smarttext', text: 'THE HARDER THEY TRIED…', level: 'body', position: [0.5, 0.25] },
   { turnId: 't38', offset: 6.0, kind: 'smarttext', text: '…THE SHARPER THE INSULT', level: 'subtitle', position: [0.5, 0.4] },
@@ -286,8 +280,6 @@ const SUB_BEATS: SubBeat[] = [
   { turnId: 't52', offset: 5.0, kind: 'bubble', text: 'both halves have evidence', position: [0.5, 0.6], width: 320 },
 
   // t53: All three landed
-  { turnId: 't53', offset: 0.4, kind: 'smarttext', text: 'ALL THREE LANDED.', level: 'subtitle', position: [0.5, 0.5], color: '#7dd87d' },
-
   // t54: Self-test intro
   { turnId: 't54', offset: 1.5, kind: 'smarttext', text: 'THREE QUESTIONS, AP-SHAPED', level: 'title', position: [0.5, 0.2] },
   { turnId: 't54', offset: 5.0, kind: 'bubble', text: 'say your answer before I give it', position: [0.5, 0.45], width: 360 },
@@ -331,8 +323,6 @@ const SUB_BEATS: SubBeat[] = [
   { turnId: 't63', offset: 13.5, kind: 'bubble', text: 'identity loaded the spring', position: [0.5, 0.8], width: 340 },
 
   // t64: Check your three boxes
-  { turnId: 't64', offset: 0.4, kind: 'smarttext', text: '✅ CHECK YOUR THREE BOXES', level: 'subtitle', position: [0.5, 0.5], color: '#7dd87d' },
-
   // t65: Forward tease — French and Indian War
   { turnId: 't65', offset: 1.0, kind: 'smarttext', text: 'NEXT TIME: THE FRENCH AND INDIAN WAR', level: 'title', position: [0.5, 0.25] },
   { turnId: 't65', offset: 4.5, kind: 'bubble', text: 'a 22-year-old named Washington fires a shot in the Ohio country, 1754', position: [0.5, 0.55], width: 460 },
@@ -341,8 +331,7 @@ const SUB_BEATS: SubBeat[] = [
   { turnId: 't66', offset: 0.8, kind: 'smarttext', text: 'A CENTURY OF SELF-RULE, LEARNED WHILE LONDON LOOKED AWAY —', level: 'subtitle', position: [0.5, 0.4] },
 
   // t67: Closing line — Maya
-  { turnId: 't67', offset: 0.5, kind: 'smarttext', text: 'THEN LONDON LOOKED BACK.', level: 'hero', position: [0.5, 0.5], entrance: 'stamp' },
-];
+  ];
 
 /* ------------------------------------------------------------------ */
 /* Background selector                                                  */

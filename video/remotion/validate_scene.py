@@ -160,10 +160,21 @@ def check_text_collisions(content):
     return errors
 
 
-def check_orphan_leaders(content, turns_path='src/data/u1e2/turns.json'):
+def check_orphan_leaders(content, episode='E2'):
     """Check that leaders are named in narration."""
     errors = []
     warnings = []
+
+    # Resolve turns path from episode (U2E1 -> u2e1, E2 -> u1e2 for legacy)
+    import re as _re
+    m = _re.match(r'U(\d+)E(\d+)', episode.upper())
+    if m:
+        data_id = f'u{m.group(1)}e{m.group(2)}'
+    elif episode.upper() == 'E2':
+        data_id = 'u1e2'  # legacy path
+    else:
+        data_id = episode.lower()
+    turns_path = f'src/data/{data_id}/turns.json'
 
     try:
         with open(turns_path) as f:
@@ -382,7 +393,7 @@ def main():
     checks = [
         ("Duplicates", check_duplicates),
         ("Text collisions", check_text_collisions),
-        ("Orphan leaders", check_orphan_leaders),
+        ("Orphan leaders", lambda c: check_orphan_leaders(c, args.episode)),
         ("Map regions", check_map_regions),
         ("Music alignment", lambda c: check_music_alignment(c, args.episode)),
         ("Beat validity", lambda c: check_beat_validity(c, args.episode)),

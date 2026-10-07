@@ -331,8 +331,6 @@ const SUB_BEATS: SubBeat[] = [
   { turnId: 't57', offset: 4.0, kind: 'bubble', text: 'next: the Great Awakening · Whitefield · open field · crowds that wept', position: [0.5, 0.6], width: 440 },
 
   // t58: Closing — London wrote the rules
-  { turnId: 't58', offset: 0.3, kind: 'smarttext', text: 'LONDON WROTE THE RULES —', level: 'subtitle', position: [0.5, 0.4] },
-
   // t59: ...and America thrived on the exceptions
   { turnId: 't59', offset: 0.3, kind: 'smarttext', text: 'AND AMERICA THRIVED ON THE EXCEPTIONS', level: 'hero', position: [0.5, 0.4] },
 ];

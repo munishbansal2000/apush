@@ -29,6 +29,9 @@ import { U2E5Episode } from "./components/U2E5Episode";
 import { U2E7Episode } from "./components/U2E7Episode";
 import { U2E8Episode } from "./components/U2E8Episode";
 import { U2E9Episode } from "./components/U2E9Episode";
+import { U2E10Episode } from "./components/U2E10Episode";
+import { U2E6Episode } from "./components/U2E6Episode";
+import { U2E3Episode } from "./components/U2E3Episode";
 import { EPISODE_FRAMES } from "./data/durations";
 // import { U3E6Scene } from "./u3e6/U3E6Scene";
 // import { U3E6_COMPS } from "./u3e6/u3e6_shots";
@@ -258,6 +261,30 @@ export const RemotionRoot: React.FC = () => {
         id="U2E9Episode"
         component={U2E9Episode}
         durationInFrames={EPISODE_FRAMES.U2E9}
+        fps={30}
+        width={1280}
+        height={720}
+      />
+      <Composition
+        id="U2E10Episode"
+        component={U2E10Episode}
+        durationInFrames={EPISODE_FRAMES.U2E10}
+        fps={30}
+        width={1280}
+        height={720}
+      />
+      <Composition
+        id="U2E6Episode"
+        component={U2E6Episode}
+        durationInFrames={EPISODE_FRAMES.U2E6}
+        fps={30}
+        width={1280}
+        height={720}
+      />
+      <Composition
+        id="U2E3Episode"
+        component={U2E3Episode}
+        durationInFrames={EPISODE_FRAMES.U2E3}
         fps={30}
         width={1280}
         height={720}

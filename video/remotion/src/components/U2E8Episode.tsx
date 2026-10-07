@@ -81,8 +81,6 @@ const SUB_BEATS: SubBeat[] = [
   { turnId: 't03', offset: 11.0, kind: 'bubble', text: 'the same death, told two ways', position: [0.5, 0.68], width: 340 },
 
   // t04: exam lens
-  { turnId: 't04', offset: 1.0, kind: 'smarttext', text: 'THE EXAM WANTS WHAT THE KILLING DID', level: 'subtitle', position: [0.5, 0.25] },
-
   // t05: Tanacharison
   { turnId: 't05', offset: 3.0, kind: 'smarttext', text: 'TANACHARISON — THE HALF-KING', level: 'title', position: [0.5, 0.2], entrance: 'stamp' },
   { turnId: 't05', offset: 10.0, kind: 'bubble', text: 'tomahawk — nine more scalped before Washington stops it', position: [0.5, 0.55], width: 400 },
@@ -136,8 +134,6 @@ const SUB_BEATS: SubBeat[] = [
   { turnId: 't17', offset: 7.0, kind: 'bubble', text: 'an ensign — the fury was about PEACETIME killing', position: [0.5, 0.5], width: 400 },
 
   // t18: Albany, next
-  { turnId: 't18', offset: 1.0, kind: 'smarttext', text: 'ALBANY, NEXT', level: 'subtitle', position: [0.5, 0.25] },
-
   // t19: Albany Plan of Union
   { turnId: 't19', offset: 2.0, kind: 'bg-swap', bgImage: 'historic/u2e8/join-or-die.jpg' },
   { turnId: 't19', offset: 3.0, kind: 'smarttext', text: 'ALBANY PLAN OF UNION — 1754', level: 'title', position: [0.5, 0.2], entrance: 'stamp' },
@@ -188,8 +184,6 @@ const SUB_BEATS: SubBeat[] = [
   { turnId: 't29', offset: 5.0, kind: 'smarttext', text: 'THIS shot is the one nobody remembers — and it started the world war', level: 'body', position: [0.5, 0.6] },
 
   // t30: two boxes down
-  { turnId: 't30', offset: 0.5, kind: 'smarttext', text: '✅ 2 BOXES DOWN — EARNED', level: 'subtitle', position: [0.5, 0.8], color: '#7dd87d' },
-
   // t31: Pitt takes charge
   { turnId: 't31', offset: 3.0, kind: 'smarttext', text: '1757: WILLIAM PITT TAKES CHARGE', level: 'title', position: [0.5, 0.2], entrance: 'stamp' },
   { turnId: 't31', offset: 7.0, kind: 'bubble', text: '"conquer America in Germany"', position: [0.5, 0.5], width: 360 },
@@ -241,8 +235,6 @@ const SUB_BEATS: SubBeat[] = [
   { turnId: 't42', offset: 4.5, kind: 'bubble', text: 'kept the Caribbean sugar colonies', position: [0.5, 0.55], width: 360 },
 
   // t43: the bill
-  { turnId: 't43', offset: 1.0, kind: 'smarttext', text: 'THE WAR\'S WON. NOW THE BILL.', level: 'subtitle', position: [0.5, 0.25] },
-
   // t44: enormous debt
   { turnId: 't44', offset: 2.0, kind: 'smarttext', text: 'THE BILL: ENORMOUS DEBT', level: 'title', position: [0.5, 0.25], entrance: 'stamp' },
 
@@ -257,8 +249,6 @@ const SUB_BEATS: SubBeat[] = [
   { turnId: 't46', offset: 18.0, kind: 'smarttext', text: 'TAKES BRITAIN A YEAR+ TO BREAK IT', level: 'subtitle', position: [0.5, 0.35] },
 
   // t47: the line
-  { turnId: 't47', offset: 1.5, kind: 'smarttext', text: 'THE BILL I GET — WHAT\'S THE LINE?', level: 'subtitle', position: [0.5, 0.25] },
-
   // t48: Proclamation of 1763
   { turnId: 't48', offset: 2.0, kind: 'bg-swap', bgImage: 'historic/u2e8/north-america-1763.jpg' },
   { turnId: 't48', offset: 3.0, kind: 'smarttext', text: 'PROCLAMATION OF 1763 — OCT 7', level: 'title', position: [0.5, 0.2], entrance: 'stamp' },
@@ -266,8 +256,6 @@ const SUB_BEATS: SubBeat[] = [
   { turnId: 't48', offset: 11.0, kind: 'bubble', text: 'stop paying for frontier wars · keep the fur trade flowing', position: [0.5, 0.7], width: 420 },
 
   // t49: the speculators
-  { turnId: 't49', offset: 0.5, kind: 'bubble', text: 'including the speculators', position: [0.5, 0.4], width: 300 },
-
   // t50: Washington's bounty land
   { turnId: 't50', offset: 2.0, kind: 'smarttext', text: 'Washington\'s 200,000 Ohio acres — grants FROZEN', level: 'body', position: [0.5, 0.3] },
   { turnId: 't50', offset: 6.0, kind: 'bubble', text: 'the kid who started the war couldn\'t cash in on winning it', position: [0.5, 0.6], width: 420 },
@@ -290,8 +278,6 @@ const SUB_BEATS: SubBeat[] = [
   { turnId: 't53', offset: 17.0, kind: 'smarttext', text: '✅ BOX 1 — LANDED', level: 'subtitle', position: [0.5, 0.8], color: '#7dd87d' },
 
   // t54: l'assassinat
-  { turnId: 't54', offset: 0.5, kind: 'smarttext', text: 'l\'assassinat — one word, one confession', level: 'body', position: [0.5, 0.3] },
-
   // t55: recap — box 2
   { turnId: 't55', offset: 2.0, kind: 'bg-swap', bgImage: 'historic/u2e8/monongahela.jpg' },
   { turnId: 't55', offset: 3.0, kind: 'smarttext', text: 'BOX 2: ALBANY DIES TWICE · BRADDOCK FALLS', level: 'title', position: [0.5, 0.2] },
@@ -299,8 +285,6 @@ const SUB_BEATS: SubBeat[] = [
   { turnId: 't55', offset: 13.0, kind: 'bubble', text: '"four bullets through my coat" — his actual words', position: [0.5, 0.7], width: 400 },
 
   // t56: his actual words
-  { turnId: 't56', offset: 0.3, kind: 'smarttext', text: 'his actual words', level: 'body', position: [0.5, 0.3] },
-
   // t57: recap — box 3
   { turnId: 't57', offset: 2.0, kind: 'bg-swap', bgImage: 'historic/u2e8/death-of-wolfe.jpg' },
   { turnId: 't57', offset: 3.0, kind: 'smarttext', text: 'BOX 3: QUEBEC 1759 · PARIS 1763', level: 'title', position: [0.5, 0.2] },
@@ -372,14 +356,11 @@ const SUB_BEATS: SubBeat[] = [
   { turnId: 't73', offset: 1.0, kind: 'smarttext', text: 'THE TREASURY — FRONTIER WARS OFF THE BOOKS', level: 'subtitle', position: [0.5, 0.3] },
 
   // t74: boxes checked
-  { turnId: 't74', offset: 0.3, kind: 'smarttext', text: '✅ FOUR BOXES — CHECKED', level: 'subtitle', position: [0.5, 0.5], color: '#7dd87d' },
-
   // t75: next time
   { turnId: 't75', offset: 1.0, kind: 'smarttext', text: 'NEXT: THE BILL LANDS', level: 'title', position: [0.5, 0.25] },
   { turnId: 't75', offset: 3.5, kind: 'bubble', text: 'Grenville does the math — the colonies learn what an empire costs', position: [0.5, 0.55], width: 420 },
 
   // t76/t77: closing tagline
-  { turnId: 't76', offset: 0.3, kind: 'smarttext', text: 'A CONTINENT WON —', level: 'hero', position: [0.5, 0.3] },
   { turnId: 't77', offset: 0.3, kind: 'smarttext', text: 'AND LONDON SENDS THE BILL.', level: 'hero', position: [0.5, 0.3] },
 ];
 

@@ -86,8 +86,6 @@ const SUB_BEATS: SubBeat[] = [
   { turnId: 't03', offset: 5.0, kind: 'smarttext', text: 'then start over as a freeholder', level: 'body', position: [0.5, 0.32] },
 
   // t04: What did it feel like?
-  { turnId: 't04', offset: 1.0, kind: 'smarttext', text: 'WHAT DID IT FEEL LIKE?', level: 'title', position: [0.5, 0.3] },
-
   // t05: The paper lied
   { turnId: 't05', offset: 2.0, kind: 'smarttext', text: 'THE CONTRACT BOUGHT AND SOLD', level: 'title', position: [0.5, 0.2] },
   { turnId: 't05', offset: 8.0, kind: 'bubble', text: 'run away = years tacked on', position: [0.5, 0.55], width: 340 },
@@ -178,8 +176,6 @@ const SUB_BEATS: SubBeat[] = [
   { turnId: 't24', offset: 15.0, kind: 'bubble', text: 'Berkeley hanged 23 of the leaders', position: [0.5, 0.32], width: 340 },
 
   // t25: Attributed
-  { turnId: 't25', offset: 1.0, kind: 'bubble', text: '"Attributed" = we do not know he said it', position: [0.5, 0.4], width: 360 },
-
   // t26: Story, not transcript
   { turnId: 't26', offset: 1.0, kind: 'smarttext', text: 'treat it as the story, not the transcript', level: 'body', position: [0.5, 0.5] },
 
@@ -211,8 +207,6 @@ const SUB_BEATS: SubBeat[] = [
   { turnId: 't33', offset: 7.0, kind: 'bubble', text: 'two white partners: +4 years. Punch: slavery for LIFE.', position: [0.5, 0.55], width: 420 },
 
   // t34: Same crime, different sentence
-  { turnId: 't34', offset: 0.5, kind: 'smarttext', text: 'SAME CRIME, DIFFERENT SENTENCE', level: 'subtitle', position: [0.5, 0.4] },
-
   // t35: 1662 mother rule + 1667 baptism
   { turnId: 't35', offset: 1.0, kind: 'bg-swap', bgImage: 'historic/u2e2/slave-ship.jpg' },
   { turnId: 't35', offset: 2.0, kind: 'smarttext', text: '1662: STATUS FOLLOWED THE MOTHER', level: 'title', position: [0.5, 0.2], entrance: 'stamp' },

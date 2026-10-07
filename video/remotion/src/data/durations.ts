@@ -23,6 +23,9 @@ import u2e5Timing from './u2e5/timing_map.json';
 import u2e7Timing from './u2e7/timing_map.json';
 import u2e8Timing from './u2e8/timing_map.json';
 import u2e9Timing from './u2e9/timing_map.json';
+import u2e10Timing from './u2e10/timing_map.json';
+import u2e6Timing from './u2e6/timing_map.json';
+import u2e3Timing from './u2e3/timing_map.json';
 
 const FPS = 30;
 
@@ -51,4 +54,7 @@ export const EPISODE_FRAMES = {
   U2E7: totalFrames(u2e7Timing),
   U2E8: totalFrames(u2e8Timing),
   U2E9: totalFrames(u2e9Timing),
+  U2E10: totalFrames(u2e10Timing),
+  U2E6: totalFrames(u2e6Timing),
+  U2E3: totalFrames(u2e3Timing),
 } as const;

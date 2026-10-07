@@ -197,8 +197,6 @@ const SUB_BEATS: SubBeat[] = [
   { turnId: 't28', offset: 5.0, kind: 'bubble', text: 'the frontier needed bodies — the Scots-Irish knew how to fight', position: [0.5, 0.55], width: 440 },
 
   // t29: what did they grow?
-  { turnId: 't29', offset: 0.6, kind: 'bubble', text: 'So what did all these people grow?', position: [0.5, 0.35], width: 340 },
-
   // t30: the breadbasket
   { turnId: 't30', offset: 2.0, kind: 'bg-swap', bgImage: 'historic/u2e4/harvest-wagon.jpg' },
   { turnId: 't30', offset: 3.0, kind: 'smarttext', text: 'THE BREADBASKET', level: 'hero', position: [0.5, 0.2], entrance: 'stamp' },
@@ -230,8 +228,6 @@ const SUB_BEATS: SubBeat[] = [
   { turnId: 't36', offset: 2.0, kind: 'smarttext', text: '⏳ THINK IT THROUGH', level: 'subtitle', position: [0.5, 0.5] },
 
   // t37: they ran it
-  { turnId: 't37', offset: 0.5, kind: 'smarttext', text: 'THEY RAN IT.', level: 'hero', position: [0.5, 0.3], color: '#ff8a8a' },
-
   // t38: the Walking Purchase
   { turnId: 't38', offset: 2.0, kind: 'bg-swap', bgImage: 'historic/u2e4/walking-purchase-map.png' },
   { turnId: 't38', offset: 3.0, kind: 'smarttext', text: 'THE WALKING PURCHASE 1737', level: 'title', position: [0.5, 0.16], entrance: 'stamp' },
