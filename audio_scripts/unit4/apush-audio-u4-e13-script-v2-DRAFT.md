@@ -4,7 +4,7 @@
 # Read note: Maya tracks four boxes on her episode sheet: the London root, the Declaration of Sentiments, the aftermath, and the split. [15-second pause], [18-second pause], and [8-second pause] marks are production notes for real silence — they never go to the voice. The tagline's em dash is a held breath: do not rush it. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence.
 # Pronunciation: Lucretia Mott (loo-KREE-shuh MOT), Stanton (STAN-tun), Sojourner Truth (so-JURN-er), coverture (KUH-vur-chur), Wesleyan (WES-lee-un), Seneca (SEN-uh-kuh)
 
-Maya: Last time: the women that abolition sidelined in London. This time, they hold their own convention in upstate New York. Eight years of simmering. Five days' notice. And a document that rewrote the Declaration of Independence with three extra words. Four boxes on your sheet: the London root, the Declaration of Sentiments, the aftermath, the split. Circle the ones you couldn't explain right now. About thirteen minutes, and you'll check all four off.
+Maya: Last time: the women that abolition sidelined in London. This time, they hold their own convention in upstate New York. Eight years of simmering. Five days' notice. And a document that rewrote the Declaration of Independence with two extra words. Four boxes on your sheet: the London root, the Declaration of Sentiments, the aftermath, the split. Circle the ones you couldn't explain right now. About thirteen minutes, and you'll check all four off.
 
 Marcus: The thesis: Seneca Falls took the abolitionist movement's organizing and the Declaration of Independence, and aimed both at women's rights. And the most famous demand, the vote, nearly didn't make the cut.
 
@@ -28,7 +28,7 @@ Maya: Seventh grade field trip. We stopped at the chapel on the way to Niagara F
 
 Maya: Now the document. What did the Declaration of Sentiments actually say?
 
-Marcus: Stanton drafted it in those five days: the Declaration of Independence, rewritten, same shape. Only now the tyrant isn't a king. And the most famous line gets three extra words: "We hold these truths to be self-evident: that all men and women are created equal."
+Marcus: Stanton drafted it in those five days: the Declaration of Independence, rewritten, same shape. Only now the tyrant isn't a king. And the most famous line gets two extra words: "We hold these truths to be self-evident: that all men and women are created equal."
 
 Maya: Read me the charges. The real words, not the summary.
 

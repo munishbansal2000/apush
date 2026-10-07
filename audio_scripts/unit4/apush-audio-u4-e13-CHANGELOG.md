@@ -110,3 +110,6 @@ Primary-source voices (public domain, exact wording):
 - **Registry:** F-U4-074 (eleven resolutions, not twelve) and F-U4-075 (Douglass editorial exact wording) added same day; registry now 317 facts.
 - **Fresh Layer-2 re-read (third agent):** all 7 repairs verified clean; found pre-existing over-cap antithesis (3/2) and triplets (2/1) — both reworded ("barred from the floor because of their gender"; Declaration-structure list collapsed to one triplet) — plus one stale footer clause, fixed. Final sweeps: antitheses 2, triplets 1, em dashes 3, That's/Here's starters 0, mirror pairs 0, expert turns ≤94 words.
 - Continuity: U4-E12's closer teases Seneca Falls only ✓; this episode's closer teases U4-E14 "Manifest Destiny and Texas" only ✓. Four boxes, three-question close + labeled fast fourth, ~1,845 words + 56 s pauses ≈ 13.0 min experienced, 13/13 gates PASS.
+
+## Post-push correction — 2026-10-07
+- The U4-CRAM rebuild's Layer-3 pass caught a genuine error in this draft (pushed as commit 4230c810): the Declaration of Sentiments inserts "and women" — **two** extra words, not three. Fixed at L7 and L31 ("three extra words" → "two extra words"). Registry F-U4-089 covers it. Gates re-run 13/13 PASS.

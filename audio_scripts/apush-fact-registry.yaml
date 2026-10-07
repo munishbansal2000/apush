@@ -3042,3 +3042,13 @@ facts:
   sources:
   - web
   tier_note: Hedged in U4-E15 v2 2026-10-07, flagged for Layer 3.
+- id: F-U4-089
+  topic: Declaration of Sentiments — TWO extra words, not three
+  correct: 'The Declaration of Sentiments rewrites "all men are created equal" (5 words) as "all men and women are created equal" (7 words) — the insertion is TWO words ("and women"), never "three extra words." Tier 1 confirms the wording (premium2027 ch6; Princeton sup).'
+  falsehoods:
+  - declaration of sentiments.{0,60}three extra words
+  - three extra words.{0,60}all men and women
+  sources:
+  - premium2027
+  - princeton
+  tier_note: Corrected U4-CRAM v2 2026-10-07 — error inherited from U4-E13 v2 (lines 7, 31 teach "three extra words"); flagged to parent for E13 fix decision.
