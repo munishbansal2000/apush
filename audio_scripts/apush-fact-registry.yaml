@@ -1852,3 +1852,33 @@ facts:
       - "revolution of 1800.{0,40}5steps"
     sources: [prem27, 5steps]
     tier_note: "citation correction from U3-E11 Layer 3"
+
+  - id: F-U4-001
+    topic: Marshall McCulloch quote — "involves," not "is"
+    correct: "Marshall's actual McCulloch v. Maryland wording is 'the power to tax involves the power to destroy' (public-domain opinion; National Archives McCulloch milestone page quotes 'involves'). The famous 'the power to tax IS the power to destroy' is a paraphrase. Never present the 'is' form as a direct Marshall quote."
+    falsehoods:
+      - "Marshall.{0,30}said.{0,10}\"the power to tax is the power to destroy\""
+      - "power to tax is the power to destroy.{0,10}Marshall"
+    sources: [primary, archives]
+    tier_note: "quote-exactness correction from U4-E2 Layer 3"
+
+  - id: F-U4-002
+    topic: Fletcher v. Peck "first state law struck down" — unverifiable in Tier 1+2
+    correct: "Fletcher v. Peck (1810) struck down a Georgia statute on Contract Clause grounds (Tier 1: prem27 ch6). The 'first state law the Court ever threw out' framing is standard textbook language but UNVERIFIABLE in Tier 1+2 — do not teach it as a verified claim."
+    falsehoods: []
+    sources: [prem27]
+    tier_note: "framing caution from U4-E2 Layer 3"
+
+  - id: F-U4-003
+    topic: Fletcher suit direction + "deplorable" wording — Tier-1-silent
+    correct: "Fletcher v. Peck: Georgia's corrupt land sale was held to be a contract the state could not impair (Tier 1: prem27 ch6 'corrupt land deal'). Who sued whom and the Court's 'deplorable' characterization are non-Tier here — teach direction-neutral ('ended up in court with Peck, his seller') and Tier-1-safe wording ('The deal was corrupt')."
+    falsehoods: []
+    sources: [prem27]
+    tier_note: "framing caution from U4-E2 Layer 3"
+
+  - id: F-U4-004
+    topic: McCulloch cashier detail — unverifiable in Tier 1+2
+    correct: "McCulloch v. Maryland: Maryland could not tax the Second Bank, a federal institution (Tier 1: prem27 ch6, princeton ch8). No Tier-1/2 source names McCulloch as the Bank's Baltimore-branch cashier — do not teach the name, title, or branch as verified."
+    falsehoods: []
+    sources: [prem27, princeton]
+    tier_note: "detail caution from U4-E2 Layer 3"
