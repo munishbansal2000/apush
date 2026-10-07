@@ -6157,3 +6157,80 @@ facts:
   - 5steps
   tier_note: 'Confirmed U6-L8 v2 2026-10-07 — parent verified book line; Layer 3 confirmed
     against Britannica (''issued on August 14, 1941'') and 5steps2024 ch24 (August 1941).'
+- id: F-U7-001
+  topic: 'Non-Aligned Movement formal founding — 1961 Belgrade, not 1955 Bandung'
+  correct: 'Bandung (April 18–24, 1955, Indonesia, 29 Asian and African countries) was
+    the precursor meeting that set the path toward non-alignment; the Non-Aligned
+    Movement itself was formally established in 1961 in Belgrade. Teach Bandung 1955
+    as the meeting, NAM 1961 as the movement.'
+  falsehoods:
+  - non-aligned movement.{0,30}(born|began|founded|started).{0,10}1955
+  - bandung.{0,40}birth of the non-aligned
+  sources:
+  - britannica
+  - web
+  tier_note: 'Added U7-L1 v2 2026-10-07 — writer fact pass. Corrects the v3 draft''s
+    flattening (''The Non-Aligned Movement is born'' at Bandung).'
+- id: F-U7-002
+  topic: 'Poland January 1947 election — ~80% official result, widely regarded as falsified'
+  correct: 'Poland''s January 1947 parliamentary election: the communist-led Democratic
+    Bloc officially claimed ~80% of the vote; the result is widely regarded as
+    falsified (opposition suppressed, results manipulated). Teach as the ''landslide
+    nobody outside Moscow believed,'' not as a legitimate win.'
+  falsehoods:
+  - poland.{0,30}1947.{0,30}free and fair
+  - 1947.{0,20}polish.{0,20}election.{0,25}legitimate
+  sources:
+  - 5steps
+  - web
+  tier_note: 'Added U7-L1 v2 2026-10-07 — writer fact pass.'
+- id: F-U7-003
+  topic: 'Long Telegram sent from the U.S. embassy in Moscow, Feb 1946 (Princeton book error)'
+  correct: 'Kennan''s Long Telegram was sent February 22, 1946 from the U.S. Embassy
+    in Moscow (telegram heading: ''The Chargé in Moscow (Kennan)''). The Princeton
+    Review ch12 supplement text locates it at ''his duty station in Germany'' — confirmed
+    book error, independently verified against Britannica''s Kennan article (''from Moscow
+    in February 1946''). Teach Moscow.'
+  falsehoods:
+  - long telegram.{0,30}(sent|written).{0,20}germany
+  - kennan.{0,30}telegram.{0,20}from germany
+  sources:
+  - 5steps
+  - britannica
+  tier_note: 'Added U7-L1 v2 2026-10-07 — writer fact pass. Book-error claim NOT
+    asserted per standing rule (needs Britannica/NPS/Congress.gov/State Dept/LOC
+    confirmation); recorded as a flagged discrepancy resolved via Tier 1.'
+- id: F-U7-004
+  topic: 'Soviet WWII deaths — roughly 27 million, exact figure debated'
+  correct: 'The Soviet Union suffered roughly 27 million WWII deaths (26.6M per the
+    Russian Academy of Sciences study; the old Soviet-era official figure was 20M).
+    Teach as ''roughly twenty-seven million'' with the hedge that the exact number
+    is debated — never pin 20M.'
+  falsehoods:
+  - soviet.{0,25}(lost|suffered).{0,15}20 million.{0,10}(dead|deaths)
+  sources:
+  - web
+  tier_note: 'Added U7-L1 v2 2026-10-07 — writer fact pass.'
+- id: F-U7-005
+  topic: 'Yalta = the free-elections promise; Potsdam = the colder sequel (no new promise)'
+  correct: 'Yalta (February 1945): Stalin promised free elections in Eastern Europe
+    (Poland first). Potsdam (July 1945): Truman''s first meeting with Stalin, colder
+    room, bomb aside — no new elections promise. Never attribute the elections
+    promise to Potsdam.'
+  falsehoods:
+  - potsdam.{0,40}promised.{0,20}free elections
+  - free elections.{0,25}promised at potsdam
+  sources:
+  - 5steps
+  tier_note: 'Added U7-L1 v2 2026-10-07 — writer fact pass.'
+- id: F-U7-006
+  topic: 'Iron Curtain speech — Churchill, Fulton Missouri, March 1946; he did not coin the phrase'
+  correct: 'Churchill''s March 1946 speech at Westminster College in Fulton, Missouri
+    gave the East–West split its famous ''iron curtain'' image. The phrase predates
+    him — teach that he gave it the name that stuck, never that he coined it.'
+  falsehoods:
+  - churchill coined.{0,20}iron curtain
+  - coined the.{0,10}iron curtain.{0,20}churchill
+  sources:
+  - 5steps
+  tier_note: 'Added U7-L1 v2 2026-10-07 — writer fact pass.'
