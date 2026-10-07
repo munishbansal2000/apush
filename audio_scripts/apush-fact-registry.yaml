@@ -7684,3 +7684,19 @@ facts:
   tier_note: 'Added U8-L3 v2 2026-10-07 (writer fact pass). Via Britannica (The End of History and
     the Last Man, 1992; thesis introduced 1989). The script has Maya ask ''So he said history was
     over? No more wars?'' and Marcus corrects firmly — the correction is taught in-dialogue.'
+- id: F-U8-032
+  topic: 'Operation Enduring Freedom start — October 7, 2001, not November (5steps2024 ch30
+    review-passage error)'
+  correct: 'The U.S.-led attack on Afghanistan (Operation Enduring Freedom) began October 7, 2001,
+    with airstrikes alongside the United Kingdom; Kabul fell to the Northern Alliance on November
+    13 and the Taliban lost most of the country by late November. 5steps2024 ch30''s own body text
+    correctly says ''On October 7,'' but its exam review passage says ''In November, the United
+    States launched an attack'' — the review passage is wrong. Confirmed via Congress.gov/CRS
+    timeline and standard histories.'
+  falsehoods:
+  - Enduring Freedom.{0,20}(began|started|launched).{0,15}November
+  - Afghanistan.{0,20}(attack|invasion|war).{0,15}began.{0,15}November 2001
+  sources:
+  - web
+  tier_note: 'Added U8-L4 v2 2026-10-07 (coordinator verification). The script hedges with ''that
+    fall'' — no dialogue change needed.'
