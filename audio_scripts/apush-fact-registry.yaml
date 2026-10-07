@@ -5871,3 +5871,289 @@ facts:
   - princeton
   tier_note: 'Confirmed U6-L7 v2 2026-10-07 — parent verified book lines + independent
     Tier-1 sources.'
+
+# MANUAL EDIT — U6-L8 v2 writer pass, 2026-10-07 (F-U6-058 through F-U6-075).
+- id: F-U6-058
+  topic: 'Nye Committee never proved the merchants-of-death theory'
+  correct: 'The Nye Committee (1934-36) investigated the popular belief that arms manufacturers
+    and bankers maneuvered the US into WWI but never found proof the so-called Merchants of
+    Death were responsible; the hearings publicized the suspicions, and the suspicion (not
+    evidence) fed the Neutrality Acts (5steps2024 ch24).'
+  falsehoods:
+  - nye committee.{0,40}proved
+  - merchants of death.{0,40}(caused|dragged|pushed).{0,20}(america|the u\.?s\.?).{0,20}(into|to enter)
+  guards:
+  - \bwhether\b
+  sources:
+  - 5steps
+  tier_note: 'Pinned U6-L8 v2 2026-10-07.'
+
+- id: F-U6-059
+  topic: 'Neutrality Acts 1935/36/37 content — arms, loans, travel'
+  correct: 'The 1935 Act outlawed American trade in weapons/military supplies with warring
+    powers; the 1936 and 1937 Acts strengthened the regime — no loans or credits to nations
+    at war, no shipments of war materials, no US citizens as passengers on ships of nations
+    at war (5steps2024 ch24; Britannica). Aim: cut every rope that had pulled the US into
+    the last war.'
+  falsehoods:
+  - neutrality act.{0,40}banned all trade
+  - neutrality acts.{0,40}forbade.{0,30}american.{0,20}ships.{0,20}entirely
+  sources:
+  - 5steps
+  - britannica
+  tier_note: 'Pinned U6-L8 v2 2026-10-07.'
+
+- id: F-U6-060
+  topic: 'Quarantine Speech: Chicago 1937, negative public response; Panay shrugged off'
+  correct: 'After Japan broadened its invasion of China in summer 1937, FDR said in Chicago
+    that aggressive nations should be "quarantined" by the international community; public
+    response was generally negative and he proceeded with caution. Weeks later Japanese
+    warplanes sank the USS Panay on the Yangtze (late 1937), and isolationist leaders
+    brushed it aside, urging acceptance of Japanese apologies (premium2027 ch9).'
+  falsehoods:
+  - quarantine speech.{0,40}warmly received
+  - panay.{0,40}(outraged|united).{0,20}(america|the public)
+  sources:
+  - prem27
+  tier_note: 'Pinned U6-L8 v2 2026-10-07.'
+
+- id: F-U6-061
+  topic: 'Ludlow Amendment: Jan 10, 1938 House discharge vote 209-188 — never voted as amendment'
+  correct: 'Louis Ludlow''s proposed constitutional amendment (national referendum before any
+    declaration of war, invasion excepted) never reached a vote as an amendment; the House
+    vote on Jan 10, 1938 was on the discharge petition to force it out of committee, and it
+    lost 209-188 after FDR''s personal opposition. Disclosed beyond Tier 1-2 (Council on
+    Foreign Relations, Jan 2026; Indiana Magazine of History).'
+  falsehoods:
+  - ludlow amendment.{0,40}(1937|late 1937)
+  - ludlow.{0,40}passed the house
+  sources:
+  - disclosed
+  tier_note: 'Pinned U6-L8 v2 2026-10-07. Beyond Tier 1-2; disclosed in script Sources.'
+
+- id: F-U6-062
+  topic: 'Cash-and-carry came with the November 1939 Neutrality Act revision'
+  correct: 'After Poland fell in September 1939, Congress revised the Neutrality Act in
+    November 1939 with the cash-and-carry provision: belligerents could buy American arms
+    if they paid cash and carried the goods in their own ships — an advantage to Britain
+    and France via their command of the sea (5steps2024 ch24).'
+  falsehoods:
+  - cash(-| )and(-| )carry.{0,20}september 1939
+  - cash(-| )and(-| )carry.{0,40}u\.?s\.? ships
+  sources:
+  - 5steps
+  tier_note: 'Pinned U6-L8 v2 2026-10-07.'
+
+- id: F-U6-063
+  topic: 'Destroyers-for-bases: Sept 1940, 50 destroyers, executive agreement — no congressional vote'
+  correct: 'In September 1940 FDR exchanged 50 WWI-vintage American destroyers for leases on
+    bases in British possessions in the Western Hemisphere (5steps2024 ch24). It was done
+    as an executive agreement under AG Robert Jackson''s Aug 27, 1940 opinion — FDR informed
+    Congress on Sept 3 without seeking a vote (CFR; FDR message to Congress via govinfo).
+    The no-vote mechanism is beyond Tier 1-2, disclosed.'
+  falsehoods:
+  - destroyers.{0,30}bases.{0,40}congress (approved|voted|authorized)
+  - destroyers for bases.{0,40}treaty
+  sources:
+  - 5steps
+  - disclosed
+  tier_note: 'Pinned U6-L8 v2 2026-10-07.'
+
+- id: F-U6-064
+  topic: 'America First scale: "boasted 820,000 members in 1940" — hedge the headcount'
+  correct: '5steps2024 ch24 says the America First Committee "boasted 820,000 members in
+    1940"; premium2027 ch9 names Lindbergh its leader. Teach the scale hedged ("around
+    eight hundred thousand members strong"), never as an audited census.'
+  falsehoods:
+  - america first.{0,40}exactly 820,?000 members
+  sources:
+  - 5steps
+  - prem27
+  tier_note: 'Pinned U6-L8 v2 2026-10-07.'
+
+- id: F-U6-065
+  topic: 'Arsenal of democracy: Dec 1940; garden-hose image is FDR''s own (Dec 17, 1940 press conference)'
+  correct: 'FDR''s "arsenal of democracy" line came in a December 1940 radio address (books
+    confirm 1940; Dec 29, 1940 fireside chat per the Miller Center). The garden-hose image
+    (lending a hose to a neighbor whose house is on fire) is FDR''s own, from his Dec 17,
+    1940 press conference (FDR Presidential Library transcript) — paraphrase it in scripts,
+    never present it as a verbatim quote.'
+  falsehoods:
+  - arsenal of democracy.{0,40}1941
+  - garden hose.{0,40}someone else''s (image|idea|metaphor)
+  sources:
+  - 5steps
+  - prem27
+  - disclosed
+  tier_note: 'Pinned U6-L8 v2 2026-10-07.'
+
+- id: F-U6-066
+  topic: 'Lend-Lease: Congress passed it in March 1941 — don''t teach it as FDR acting alone'
+  correct: 'The Lend-Lease Act passed Congress in March 1941 (premium2027 ch9): America would
+    send military equipment to Britain (later the USSR) with payment deferred until the
+    war''s end; billions in aid followed (5steps2024 ch24).'
+  falsehoods:
+  - lend(-| )lease.{0,40}executive order
+  - roosevelt.{0,30}lend(-| )lease.{0,40}without congress
+  sources:
+  - prem27
+  - 5steps
+  tier_note: 'Pinned U6-L8 v2 2026-10-07.'
+
+- id: F-U6-067
+  topic: 'Atlantic Charter: August 1941, statement of principles — NOT a treaty or declaration of war'
+  correct: 'The Atlantic Charter was issued in August 1941 after FDR and Churchill met aboard
+    warships off Newfoundland: a statement of common principles (no territorial grabs,
+    self-determination, free trade, a world organization to replace the League) — not a
+    treaty and not a declaration of war (5steps2024 ch24). premium2027 ch9 files it under
+    July 1941 — OPEN, needs direct history.state.gov confirmation before filing a book
+    error; teach August.'
+  falsehoods:
+  - atlantic charter.{0,40}treaty
+  - atlantic charter.{0,40}declaration of war
+  - atlantic charter.{0,20}july 1941
+  sources:
+  - 5steps
+  tier_note: 'Pinned U6-L8 v2 2026-10-07. July-vs-August is an open book-error question.'
+
+- id: F-U6-068
+  topic: 'Undeclared Atlantic war by fall 1941: Greer (Sept 1941), shoot-on-sight, Reuben James (Oct 31, 1941)'
+  correct: 'By fall 1941 the US was in an undeclared naval war with German submarines, the
+    Navy convoying lend-lease goods as far as Iceland (5steps2024 ch24). A U-boat fired on
+    the destroyer Greer in September 1941; FDR answered with a shoot-on-sight order. The
+    destroyer Reuben James was torpedoed Oct 31, 1941 escorting a convoy — the first US
+    Navy ship sunk by hostile action in WWII; death toll sources split 100 vs 115, so teach
+    "over a hundred." Greer/Reuben James are beyond Tier 1-2 (German Dec 11, 1941
+    declaration text; CFR; US Navy Memorial) — disclosed.'
+  falsehoods:
+  - reuben james.{0,40}sunk.{0,20}after pearl harbor
+  - shoot(-| )on(-| )sight.{0,40}1942
+  sources:
+  - 5steps
+  - disclosed
+  tier_note: 'Pinned U6-L8 v2 2026-10-07.'
+
+- id: F-U6-069
+  topic: 'Tripartite Pact 1940 — Japan, Germany, Italy (the Axis)'
+  correct: 'Japan signed the Tripartite Pact with Germany and Italy in 1940 (5steps2024 ch24;
+    Princeton ch11 supplement). Teach as the three-way pact that made the Axis; year only,
+    no month pinned.'
+  falsehoods:
+  - tripartite pact.{0,20}(1939|1941)
+  sources:
+  - 5steps
+  - princeton
+  tier_note: 'Pinned U6-L8 v2 2026-10-07.'
+
+- id: F-U6-070
+  topic: 'Oil embargo July 1941 + asset freeze; "about eighty percent" of Japan''s oil came from America'
+  correct: 'After Japan moved into French Indochina, the US ended oil sales to Japan in July
+    1941 and froze Japanese assets (5steps2024 ch24). Japan''s dependence — about 80% of
+    its oil from America — is multiply attested in secondary analyses but not pinned in
+    Tier 1-2; teach hedged as "about eighty percent," disclosed.'
+  falsehoods:
+  - oil embargo.{0,40}1940
+  - japan.{0,30}oil.{0,30}(self|domestically).{0,20}sufficient
+  sources:
+  - 5steps
+  - disclosed
+  tier_note: 'Pinned U6-L8 v2 2026-10-07.'
+
+- id: F-U6-071
+  topic: 'Hull Note (Nov 26, 1941): demanded full withdrawal; Tojo read it as an ultimatum — legally it threatened no war'
+  correct: 'On Nov 26, 1941 Secretary of State Cordell Hull gave Japan a ten-point note
+    demanding complete withdrawal of Japanese forces from China and Indochina before trade
+    talks could resume; Tojo told his cabinet "this is an ultimatum" (Yale Avalon Project
+    text; corroborating accounts). The note threatened no war in so many words — teach
+    Japan''s reading, not a false claim that it was a formal ultimatum. Beyond Tier 1-2,
+    disclosed.'
+  falsehoods:
+  - hull note.{0,40}declared war
+  - hull note.{0,40}formal ultimatum
+  sources:
+  - disclosed
+  tier_note: 'Pinned U6-L8 v2 2026-10-07.'
+
+- id: F-U6-072
+  topic: 'Pearl Harbor toll: ~2,400 killed (NPS 2,403); Arizona ~half; carriers away; fuel/repair survived'
+  correct: 'Sunday morning, Dec 7, 1941: over 180 Japanese warplanes hit Pearl Harbor; some
+    2,400 Americans killed (NPS: 2,403 killed, 1,178 injured), nearly half on the Arizona
+    (1,177 per the Congressional Record); 188 American planes destroyed (5steps2024 ch24;
+    NPS). The carriers were at sea and the maintenance facilities and fuel depots survived,
+    so Pearl Harbor stayed a working base (5steps2024 ch24).'
+  falsehoods:
+  - pearl harbor.{0,40}3,?000 (americans|people) (killed|died)
+  - arizona.{0,40}(2,?000|over two thousand).{0,20}(killed|died)
+  - pearl harbor.{0,40}carriers.{0,20}(sunk|destroyed)
+  sources:
+  - 5steps
+  - nps
+  tier_note: 'Pinned U6-L8 v2 2026-10-07.'
+
+- id: F-U6-073
+  topic: '"A date which will live in infamy" — quote exactly; Dec 8 war on Japan; Germany/Italy declared on the US Dec 11'
+  correct: 'FDR''s exact words for Dec 7, in his Dec 8, 1941 address asking Congress for war
+    against Japan: "a date which will live in infamy" (5steps2024 ch24; Congress.gov
+    Congressional Record). Congress declared war on Japan the same day. On Dec 11, 1941
+    Germany and Italy declared war on the United States — the direction ran Berlin/Rome to
+    Washington, not the reverse (5steps2024 ch24).'
+  falsehoods:
+  - december 11.{0,40}(america|the u\.?s\.?).{0,20}declared war on germany
+  - "day (that|which) will live in infamy"
+  sources:
+  - 5steps
+  tier_note: 'Pinned U6-L8 v2 2026-10-07.'
+
+- id: F-U6-074
+  topic: 'Magic intercepts were real but fragmentary — "let it happen" theories don''t hold up'
+  correct: 'US Naval intelligence read some Japanese codes, but the fragmentary evidence gave
+    no blueprint for Pearl Harbor; conspiracy theories that Roosevelt knew and let it
+    happen don''t hold up (5steps2024 ch24; Princeton notes the US knew an attack was
+    planned but not the location). Teach "real intercepts, no blueprint."'
+  falsehoods:
+  - roosevelt.{0,40}(knew|allowed).{0,20}pearl harbor
+  - magic.{0,40}blueprint
+  sources:
+  - 5steps
+  - princeton
+  tier_note: 'Pinned U6-L8 v2 2026-10-07.'
+
+- id: F-U6-075
+  topic: 'Dropped Wheeler "triple-A / plow under every fourth American boy" quote — unverifiable in Tier 1-2'
+  correct: 'The Burton Wheeler quote about Lend-Lease ("the New Deal''s triple-A foreign
+    policy" that would "plow under every fourth American boy") could not be verified for
+    exact wording in Tier 1 or Tier 2 during the U6-L8 v2 pass, so it was dropped as a
+    stimulus rather than taught loose. If a coordinator verifies the exact wording from a
+    trusted source, it may return.'
+  falsehoods:
+  - wheeler.{0,40}triple(-| )a.{0,60}plow under
+  sources:
+  - disclosed
+  tier_note: 'Pinned U6-L8 v2 2026-10-07. Negative finding — documents a deliberate omission.'
+
+- id: F-U6-076
+  topic: 'Nye Committee dates — 1934-36, not 1934-37 (premium2027 book error)'
+  correct: 'The Senate''s Special Committee Investigating the Munitions Industry (the Nye
+    Committee) ran 1934–1936; hearings September 1934 to February 1936. premium2027 ch9
+    dates it 1934–1937. Teach 1934–36 per the Senate''s own history page.'
+  falsehoods:
+  - nye.{0,20}(committee|commission).{0,30}1934.{0,15}1937
+  sources:
+  - prem27
+  - senate.gov
+  tier_note: 'Confirmed U6-L8 v2 2026-10-07 — parent verified book line; Layer 3 confirmed
+    against the Senate''s official history page (''1934-1936 Special Committee Investigating
+    the Munitions Industry'').'
+- id: F-U6-077
+  topic: 'Atlantic Charter date — August 1941, not July (premium2027 book error)'
+  correct: 'The Atlantic Charter was issued August 14, 1941, after the Aug 9–12 Roosevelt–
+    Churchill meetings at Placentia Bay. premium2027 ch9 places it in July 1941. Teach
+    August 1941.'
+  falsehoods:
+  - atlantic charter.{0,30}july.{0,10}1941
+  sources:
+  - prem27
+  - britannica
+  - 5steps
+  tier_note: 'Confirmed U6-L8 v2 2026-10-07 — parent verified book line; Layer 3 confirmed
+    against Britannica (''issued on August 14, 1941'') and 5steps2024 ch24 (August 1941).'
