@@ -1745,3 +1745,36 @@ facts:
       - "mississippi.*1787.*(three-?fifths|slave)"
     sources: [prem27, britannica]
     tier_note: "book-error log; Tier-2 cross-check"
+
+  - id: F-U3-049
+    topic: Tier-1 book errors — princeton Naturalization Act "5 to 15 years"
+    correct: "princeton sidebar (xhtml/069_sec_3_Practice_Test_2.xhtml): 'from 5 to 15 years' — wrong. The Naturalization Act of 1798 raised the residency requirement from 5 to 14 years (1 Stat. 566). The book also mislabels it 'The Alien Act' (it is the Naturalization Act)."
+    falsehoods:
+      - "naturalization.{0,40}15 years"
+    sources: [princeton, britannica]
+    tier_note: "book-error log; independently confirmed via Britannica + National Geographic"
+
+  - id: F-U3-050
+    topic: Tier-1 book errors — princeton "It took 35 ballots" (1800 House vote)
+    correct: "princeton (xhtml/041_c008_sup.xhtml): 'It took 35 ballots, but Jefferson finally won' — condensed wrong. The House cast 35 deadlocked ballots Feb 11–17, 1801; Jefferson was elected on the 36th ballot, Feb 17, 1801. Pattern is the book's 'took 35 ballots' phrasing so correct '35 deadlocked ballots' usage (U3-E11) does not false-fire."
+    falsehoods:
+      - "took 35 ballots"
+    sources: [princeton, web]
+    tier_note: "book-error log; independently confirmed via Monticello/Jefferson Foundation + American History Central; 5steps2024 ch12 corroborates (35 deadlocked + 36th decided)"
+
+  - id: F-U3-051
+    topic: Tier-1 book errors — prem27 "$12 million loan" (XYZ Affair)
+    correct: "prem27 (15_Chapter05.xhtml): 'promised a $12 million loan to France' — wrong. The standard figure is a $250,000 bribe + $10,000,000 loan (Britannica: 'a bribe of $250,000 to Talleyrand... and a loan of $10,000,000 to France as a prelude to negotiations'). Likely a dropped digit."
+    falsehoods:
+      - "\\$12 million.{0,20}loan"
+      - "loan.{0,20}\\$12 million"
+    sources: [prem27, britannica]
+    tier_note: "book-error log; independently confirmed via Britannica"
+
+  - id: F-U3-052
+    topic: Tier-1 book errors — prem27 "imprison and deport" (Alien Friends Act conflation)
+    correct: "prem27 (15_Chapter05.xhtml): 'The Alien Friends Act and the Alien Enemies Act allowed the president to imprison and deport noncitizens' — conflation. The Alien Friends Act gave the president power to DEPORT aliens judged dangerous (no presidential imprisonment power). Imprisonment/detention in wartime belongs to the Alien Enemies Act. (The Friends Act statute did allow up to 3 years' imprisonment for aliens defying a removal order — court-imposed, not presidential.)"
+    falsehoods:
+      - "alien friends.{0,60}imprison"
+    sources: [prem27, britannica]
+    tier_note: "book-error log; independently confirmed via Britannica (deport vs deport-or-imprison distinction)"
