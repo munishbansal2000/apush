@@ -5176,3 +5176,16 @@ facts:
   - hierarchy_check
   tier_note: 'Fail-closed 2026-10-07 — label cut from U5-L11 v3; do not re-teach without
     Tier-1/2 sourcing.'
+- id: F-U5-090
+  topic: Wade-Davis Bill — "a bare majority," never "51%"
+  correct: 'The Wade-Davis Bill (1864) required a majority of a state''s white male
+    voters to take the ironclad oath — teach as "a bare majority," never pin "51%."
+    The archived U5 cram v2 taught "51%" flat; U5-L9 v3 standardized dialogue on "a
+    bare majority" (coordinator repair 2026-10-07), carried into U5-CRAM v3.'
+  falsehoods:
+  - wade-davis.{0,30}51%
+  - wade davis.{0,30}fifty-one percent
+  sources:
+  - prem27
+  tier_note: Corrected U5-CRAM v3 2026-10-07 — v2 cram taught "51%"; no registry
+    entry existed for the false precision.
