@@ -5431,3 +5431,79 @@ facts:
   sources:
   - prem27
   - britannica
+
+- id: F-U6-022
+  topic: 'Model T "every 24 seconds" = 1925 (5steps); don''t pin the $260 price'
+  correct: '5steps2024 ch22: "In 1925, a Ford Model T was rolling off the factory floor every 24 seconds." Teach the rate with the 1925 pin. The "$260" price is historically real but NOT in the Tier-1/2 books consulted — teach Ford affordability via premium2027 ch9 instead: "by 1924, a Ford car cost about the equivalent of two to three months'' salary." Also soften "Ford didn''t invent the assembly line": premium2027 credits Ford with the 1913 continuous conveyor-belt plant and the price collapse; the inventor claim is beyond Tier 1. v2 teaches "Ford''s trick wasn''t inventing the car. It was making it cheap."'
+  falsehoods: []
+  sources:
+  - 5steps
+  - prem27
+  tier_note: 'Pinned U6-L5 v2 2026-10-07 — archived v1''s "$260" cut as unverifiable in hierarchy.'
+
+- id: F-U6-023
+  topic: '1920s growth: no "40 percent" pin; teach the verified distribution'
+  correct: 'No Tier-1/2 source consulted pins 1920s economic growth at "about 40 percent" — cut the pin. Teach premium2027 ch9''s verified distribution instead: "income for the top 1 percent of the population increased by nearly 75 percent, while the bottom 90 percent of the population saw their income rise by less than 10 percent." Same for the archived v1''s "top 5 percent took home roughly a third of all income" — unverifiable, cut. Qualitative frame is 5steps2024 ch22: "one of the most prosperous decades in American history. Not everyone shared equally in this prosperity."'
+  falsehoods: []
+  sources:
+  - prem27
+  - 5steps
+  tier_note: 'Corrected U6-L5 v2 2026-10-07 — archived v1 taught both pins flat.'
+
+- id: F-U6-024
+  topic: '18th Amendment: ratified 1919, took effect 1920 — never "the 18th Amendment, 1920"'
+  correct: 'Prohibition: the 18th Amendment was ratified in 1919 and took effect in 1920 (premium2027 ch9 timeline; 5steps2024 ch22 timeline: "Prohibition takes effect" under 1920). The amendment banned manufacture, sale, and transportation — never drinking itself (premium2027). Per-capita consumption dropped early in the decade, then approached pre-Prohibition levels by 1925.'
+  falsehoods:
+  - eighteenth amendment.{0,20}(was )?(ratified|passed).{0,12}1920
+  - 18th amendment.{0,20}(was )?(ratified|passed).{0,12}1920
+  sources:
+  - prem27
+  - 5steps
+  tier_note: 'Corrected U6-L5 v2 2026-10-07 — archived v1 said "The 18th Amendment, 1920."'
+
+- id: F-U6-025
+  topic: 'KKK 1925 Pennsylvania Avenue parade — verified; the headcount is not'
+  correct: 'The 1925 Klan parade down Pennsylvania Avenue is verified (Britannica Tier 2 photo caption: members "parading along Pennsylvania Ave. in Washington, D.C., August 18, 1925"). But NO Tier-1/2 source consulted gives a headcount — the archived v1''s "forty thousand" is cut. Teach the parade with no number. (The 3-million-membership claim is premium2027 ch9 "according to its own estimate" — always attribute.)'
+  falsehoods:
+  - forty thousand.{0,30}(klan|klansmen).{0,25}(march|parad)
+  - 40,000.{0,30}(klan|klansmen).{0,25}(march|parad)
+  sources:
+  - britannica
+  - prem27
+  tier_note: 'Corrected U6-L5 v2 2026-10-07 — archived v1 pinned "forty thousand."'
+
+- id: F-U6-026
+  topic: '"Chicken in every pot" — not in Tier-1 books; don''t attribute to Hoover'
+  correct: 'No Tier-1 book consulted attributes "a chicken in every pot" to Hoover. Teach Hoover''s 1928 campaign via 5steps2024 ch22: he "defended the Republican economic record and extolled ''American individualism''" and won in a landslide over Al Smith (Catholic, anti-Prohibition, Tammany Hall). Do not teach the chicken line as Hoover''s words.'
+  falsehoods:
+  - chicken in every pot.{0,40}hoover
+  - hoover.{0,40}chicken in every pot
+  sources:
+  - 5steps
+  tier_note: 'Cut U6-L5 v2 2026-10-07 — archived v1 used the line; unverifiable in hierarchy.'
+
+- id: F-U6-027
+  topic: 'Scopes aftermath details — 5steps2024 ch22 DOES verify them; restored'
+  correct: '5steps2024 ch22 verifies both Scopes aftermath details: Scopes was found guilty, though his conviction was later overturned on a technicality; and Bryan died shortly after the conclusion of the trial. The writer''s earlier "unverifiable in Tier 1/2" cut consulted only prem27 ch9 ("found guilty and fined $100") — 5steps ch22 is Tier 1 and carries both lines. Restored in the U6-L5 v2 repairs, 2026-10-07.'
+  falsehoods: []
+  sources:
+  - 5steps
+  - prem27
+  tier_note: 'Corrected U6-L5 v2 2026-10-07 — Layer 3 caught the entry''s false "not in Tier-1/2" claim; the entry itself was the error, not the books.'
+
+- id: F-U6-028
+  topic: '21st Amendment = the only amendment ever repealed (Britannica, Tier 2)'
+  correct: 'Britannica (Tier 2): the 21st Amendment "is the only amendment that has specifically repealed another amendment." Safe to teach: Prohibition''s repeal in 1933 is the only time an amendment has been repealed.'
+  falsehoods: []
+  sources:
+  - britannica
+  tier_note: 'Confirmed U6-L5 v2 2026-10-07 — archived v1 taught it; now Tier-2 confirmed.'
+
+- id: F-U6-029
+  topic: 'Sacco and Vanzetti: 1921 conviction, 1927 execution (both Tier 1)'
+  correct: '5steps2024 ch22: "the 1921 trial of Sacco and Vanzetti, two immigrant Italian anarchists who were convicted of robbing a shoe factory and murder." Executed 1927 (5steps ch22 timeline; premium2027 ch9: "the evidence against them was sketchy, but the judge was openly hostile... Despite protests, the two men were executed in 1927"). Teach the 1921/1927 pair.'
+  falsehoods: []
+  sources:
+  - 5steps
+  - prem27
+  tier_note: 'Pinned U6-L5 v2 2026-10-07.'
