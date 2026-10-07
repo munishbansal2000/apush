@@ -8128,3 +8128,85 @@ facts:
   - prem27
   - web
   tier_note: 'Confirmed book error U9-L2 v2 2026-10-07 — Britannica independent confirmation.'
+
+- id: F-U9-015
+  topic: 'Ellis Island vs Angel Island — opening years and purpose'
+  correct: 'Ellis Island opened January 1, 1892, as the federal immigration station for
+    the East Coast (mostly European arrivals). Angel Island Immigration Station in San
+    Francisco Bay opened January 21, 1910, and was designed for detention, control,
+    and interrogation — aimed at Chinese arrivals under the Exclusion Act. Never teach
+    Ellis as 1890 or Angel as a second welcoming station.'
+  falsehoods:
+  - Ellis Island.*1890
+  - Angel Island.*1892
+  - Angel Island.*Ellis Island of the West
+  sources:
+  - 5steps
+  - web
+  tier_note: 'Added U9-L3 v2 2026-10-07 (writer fact pass). Ellis Jan 1 1892 and Angel Jan 21
+    1910 confirmed via NPS.'
+- id: F-U9-016
+  topic: 'Chinese Exclusion Act 1882 — laborers only, 10 years, renewed'
+  correct: 'The Chinese Exclusion Act (signed May 6, 1882, by Chester A. Arthur) suspended
+    immigration of Chinese LABORERS for ten years — not a total ban on all Chinese.
+    Merchants, students, teachers, diplomats, and travelers were exempt. Extended by
+    the Geary Act (1892) and later made permanent. The first federal immigration law
+    aimed at a whole nationality.'
+  falsehoods:
+  - Chinese Exclusion.*total ban
+  - banned all Chinese
+  - Exclusion Act.*all immigration
+  sources:
+  - 5steps
+  - web
+  tier_note: 'Added U9-L3 v2 2026-10-07 (writer fact pass). Confirmed via Britannica and
+    the LOC research guide.'
+- id: F-U9-017
+  topic: 'Two 1882 immigration laws — Exclusion Act vs Immigration Act'
+  correct: '1882 produced TWO separate federal immigration laws. The Chinese Exclusion
+    Act sorted people by race/nationality. The Immigration Act of 1882 (Aug 3) imposed
+    a fifty-cent head tax on every arriving non-citizen and barred convicts, the
+    mentally ill, and anyone likely to become a public charge. Never attribute the
+    head tax to the Exclusion Act.'
+  falsehoods:
+  - Chinese Exclusion Act.*imposed.*head tax
+  - Exclusion Act.*levied.*head tax
+  - head tax.*was part of the Exclusion Act
+  sources:
+  - web
+  tier_note: 'Added U9-L3 v2 2026-10-07 (writer fact pass). Confirmed against Statutes at
+    Large 22 Stat. 214 (primary text). Patterns kept narrow (verb-attribution) so the
+    legitimate ''two 1882 laws'' pair does not trip G12.'
+- id: F-U9-018
+  topic: 'APA 1887 / Immigration Restriction League 1894 / literacy test'
+  correct: 'The American Protective Association was founded 1887 (anti-immigrant,
+    anti-Catholic). The Immigration Restriction League was founded 1894 and pushed a
+    literacy test — read and write in any language — as a deliberately neutral-looking
+    filter aimed at southern and eastern Europeans; Henry Cabot Lodge carried it in
+    Congress. The Know-Nothings were the 1850s: never conflate with the APA.'
+  falsehoods:
+  - Know-Nothing.*1887
+  - American Protective Association.*1850
+  - Restriction League.*1887
+  sources:
+  - 5steps
+  - web
+  tier_note: 'Added U9-L3 v2 2026-10-07 (writer fact pass). APA 1887 and Know-Nothings 1850s
+    per 5steps2024; IRL 1894 per Columbia history thesis.'
+- id: F-U9-019
+  topic: '1890 census frontier LINE vs ''closed'' — 5steps2024 ch17 book error'
+  correct: 'The 1890 census superintendent''s bulletin reported that the frontier LINE had
+    disappeared (''there can hardly be said to be a frontier line''). The census never
+    declared the frontier ''closed'' — that word is Frederick Jackson Turner''s 1893
+    interpretation of the bulletin. 5steps2024 ch17 flattens this to ''The 1890 census
+    had recently declared the frontier closed.'' Teach the census as the LINE
+    disappearing; save Turner for L5.'
+  falsehoods:
+  - 1890 census.*declared.*closed
+  - census.*closed the frontier
+  sources:
+  - 5steps
+  - prem27
+  - web
+  tier_note: 'Confirmed book error U9-L3 v2 2026-10-07 — primary bulletin text quoted in
+    Turner''s 1893 essay as independent confirmation.'
