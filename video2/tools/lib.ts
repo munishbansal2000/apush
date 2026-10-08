@@ -12,7 +12,8 @@ import { compileEpisode } from '../src/kit/episode';
 import type { TermsFile } from '../src/kit/derive';
 import type { CompiledEpisode } from '../src/kit/types';
 
-export const ROOT = new URL('..', import.meta.url).pathname;
+import { fileURLToPath } from 'node:url';
+export const ROOT = fileURLToPath(new URL('..', import.meta.url));
 export const PUBLIC = process.env.PUBLIC_DIR ?? join(ROOT, 'public');
 export const MANIFEST_PATH = process.env.IMAGES_MANIFEST ?? join(ROOT, 'data/images.json');
 

@@ -25,9 +25,10 @@
 import { execFileSync } from 'node:child_process';
 import { mkdirSync, rmSync, writeFileSync, readFileSync, existsSync } from 'node:fs';
 import { join, resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 const rootArg = process.argv.find((a, i) => process.argv[i - 1] === '--root');
-const ROOT = rootArg ? resolve(rootArg) : new URL('..', import.meta.url).pathname;
+const ROOT = rootArg ? resolve(rootArg) : fileURLToPath(new URL('..', import.meta.url));
 
 interface SamplePoint {
   frame: number;
