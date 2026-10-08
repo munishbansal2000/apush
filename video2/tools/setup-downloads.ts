@@ -103,7 +103,8 @@ function images() {
     for (const [file, e] of Object.entries(manifest)) if (!file.startsWith('_') && e.source_url) console.log(`  ${file}  ←  ${e.source_url}`);
     return;
   }
-  execFileSync('npx', ['tsx', 'tools/fetch-images.ts', '--all', ...(force ? ['--force'] : [])], { cwd: ROOT, stdio: 'inherit' });
+  const npx = process.platform === 'win32' ? 'npx.cmd' : 'npx';
+  execFileSync(npx, ['tsx', 'tools/fetch-images.ts', '--all', ...(force ? ['--force'] : [])], { cwd: ROOT, stdio: 'inherit', shell: process.platform === 'win32' });
 }
 
 if (!only || only === 'fonts') await fonts();
