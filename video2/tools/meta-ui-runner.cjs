@@ -21,6 +21,19 @@ function extractJson(text) {
   if (a < 0 || b < a) throw new Error(`Meta UI returned no JSON object: ${source.slice(0, 300)}`);
   return JSON.parse(source.slice(a, b + 1));
 }
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+function atomicWrite(file, text) {
+  fs.mkdirSync(path.dirname(file), {recursive: true});
+  const temp = path.join(path.dirname(file), `.${path.basename(file)}.${process.pid}.${Date.now()}.tmp`);
+  try {
+    fs.writeFileSync(temp, text, {encoding: 'utf8', flush: true});
+    fs.renameSync(temp, file);
+  } catch (error) {
+    try { if (fs.existsSync(temp)) fs.unlinkSync(temp); } catch (_) {}
+    throw error;
+  }
+}
 
 async function main() {
   const promptFile = value('prompt-file');
@@ -47,14 +60,37 @@ async function main() {
   const context = await browser.newContext({viewport: {width: 1400, height: 950}, acceptDownloads: true});
   await context.addInitScript(() => Object.defineProperty(navigator, 'webdriver', {get: () => undefined}));
   try {
-    const page = await meta.createSession(context, {cookies: cookie, downloads: debugDir});
-    const response = await meta.send(page, fs.readFileSync(promptFile, 'utf8'), debugDir, path.basename(out, '.json'), {
-      attachments: values('attachment'), timeoutMs: Number(value('timeout-sec', '1200')) * 1000,
-    });
-    fs.writeFileSync(`${out}.raw.md`, `${response.text}\n`);
-    const parsed = extractJson(response.text);
-    fs.mkdirSync(path.dirname(out), {recursive: true});
-    fs.writeFileSync(out, `${JSON.stringify(parsed, null, 2)}\n`);
+    const prompt = fs.readFileSync(promptFile, 'utf8');
+    const attachments = values('attachment');
+    for (const attachment of attachments) if (!fs.existsSync(attachment)) throw new Error(`Meta attachment missing: ${attachment}`);
+    if (attachments.length) console.log(`[meta-ui] attachments: ${attachments.map(file => path.basename(file)).join(', ')}`);
+    const attempts = Math.max(1, Number(value('attempts', process.env.META_ATTEMPTS || '3')) || 3);
+    let lastError;
+    for (let attempt = 1; attempt <= attempts; attempt++) {
+      let page;
+      try {
+        // A failed upload/composer interaction can leave the page in a dirty
+        // state. Each retry gets a fresh chat page in the authenticated context.
+        page = await meta.createSession(context, {cookies: cookie, downloads: debugDir});
+        const response = await meta.send(page, prompt, debugDir, `${path.basename(out, '.json')}-attempt-${attempt}`, {
+          attachments, timeoutMs: Number(value('timeout-sec', '1200')) * 1000,
+        });
+        atomicWrite(`${out}.raw.md`, `${response.text}\n`);
+        atomicWrite(`${out}.raw.attempt-${attempt}.md`, `${response.text}\n`);
+        const parsed = extractJson(response.text);
+        atomicWrite(out, `${JSON.stringify(parsed, null, 2)}\n`);
+        if (attempt > 1) console.log(`[meta-ui] valid JSON received on attempt ${attempt}/${attempts}`);
+        lastError = null;
+        break;
+      } catch (error) {
+        lastError = error;
+        console.error(`[meta-ui] attempt ${attempt}/${attempts} failed: ${error instanceof Error ? error.message : String(error)}`);
+      } finally {
+        if (page) await page.close().catch(() => {});
+      }
+      if (attempt < attempts) await sleep(Math.min(2000 * attempt, 5000));
+    }
+    if (lastError) throw lastError;
   } finally {
     await browser.close();
   }
