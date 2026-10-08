@@ -26,6 +26,25 @@ import { arg, flag, loadEpisode, PUBLIC, ROOT } from './lib';
 
 const UA = 'apush-episode-kit/1.0 (educational video production)';
 const API = 'https://commons.wikimedia.org/w/api.php';
+const MET_API = 'https://collectionapi.metmuseum.org/public/collection/v1';
+
+/** Fallback: search Met Museum Open Access for a similar image. */
+async function metFallback(searchTerm: string): Promise<string | null> {
+  try {
+    const search = await fetch(`${MET_API}/search?q=${encodeURIComponent(searchTerm)}&hasImages=true`);
+    if (!search.ok) return null;
+    const data = await search.json() as { objectIDs?: number[] };
+    if (!data.objectIDs?.length) return null;
+    // Try first 3 results
+    for (const id of data.objectIDs.slice(0, 3)) {
+      const obj = await fetch(`${MET_API}/objects/${id}`);
+      if (!obj.ok) continue;
+      const o = await obj.json() as { primaryImage?: string; isPublicDomain?: boolean };
+      if (o.primaryImage && o.isPublicDomain) return o.primaryImage;
+    }
+  } catch { /* ignore, return null */ }
+  return null;
+}
 
 interface CommonsInfo { url: string; width: number; height: number; license: string; artist: string; date: string; descriptionUrl: string }
 
@@ -168,8 +187,18 @@ for (const [path, m] of targets) {
     continue;
   }
 
-  const res = await getWithRetry(url);
-  const type = res.headers.get('content-type') ?? '';
+  let res = await getWithRetry(url);
+  let type = res.headers.get('content-type') ?? '';
+  // Fallback to Met Museum Open Access on Wikimedia failure
+  if (!res.ok || !type.startsWith('image/')) {
+    const term = path.split('/').pop()?.replace(/\.[^.]+$/, '').replace(/[-_]/g, ' ') ?? '';
+    console.log(`    … trying Met Museum fallback for "${term}"`);
+    const metUrl = await metFallback(term);
+    if (metUrl) {
+      res = await getWithRetry(metUrl);
+      type = res.headers.get('content-type') ?? '';
+    }
+  }
   if (!res.ok || !type.startsWith('image/')) {
     problems.push(`${path}: download failed (${res.status} ${type})`);
     continue;
