@@ -60,8 +60,14 @@ async function main() {
 
   const planOnly = process.argv.includes('--plan-only');
 
-  // Load episode data: out/data is canonical (pipeline output); src/data is the transition fallback.
+  // Load episode data: data/ is canonical (it's what gets bundled and rendered).
+  // out/data is the pipeline output; src/data is the transition fallback.
+  // All three must agree — sample points MUST come from the same source the
+  // bundler sees, otherwise frames get mislabeled (e.g. t36 sampled at a
+  // frame that belongs to a different turn).
   const dataDir = (name: string) => {
+    const bundled = join(ROOT, 'data', epLower, name);
+    if (existsSync(bundled)) return bundled;
     const out = join(ROOT, 'out', 'data', epLower, name);
     return existsSync(out) ? out : join(ROOT, 'src', 'data', epLower, name);
   };
@@ -199,6 +205,11 @@ async function main() {
   // (stills are written as 0000.png, 0001.png, ...).
   const sheet = join(ROOT, 'out', `${epLower}-contact.png`);
   const rows = Math.ceil(frames.length / cols);
+  // Windows: a stale contact PNG left open in a viewer locks the file and
+  // ffmpeg's image2 muxer fails with "Could not open file" even with -y.
+  // Remove it first so the tile step starts clean.
+  rmSync(sheet, { force: true });
+  mkdirSync(join(ROOT, 'out'), { recursive: true });
   execFileSync('ffmpeg', [
     '-y', '-v', 'error',
     '-i', join(outDir, '%04d.png'),
