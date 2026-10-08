@@ -84,10 +84,14 @@ export function loadEpisodeData(key: string): EpisodeData {
   }
 
   if (!turnsMod || !timingMod) {
-    throw new Error(
+    // Return empty data instead of throwing — the episode component
+    // will show a helpful error. This lets Root.tsx bundle even when
+    // only some episodes have pipeline data.
+    console.warn(
       `loadEpisodeData("${key}"): no data in out/data/${dirs.out}/ or src/data/${dirs.src || '(root)'}/. ` +
-        `Run the pipeline: python stage_tts.py --episode ${key.toUpperCase()} --provider edge && python stage_timing.py --episode ${key.toUpperCase()} --provider edge`
+        `Run: python stage_tts.py --episode ${key.toUpperCase()} --provider edge`
     );
+    return { turns: [], starts: [], durations: [] };
   }
 
   const timing = timingMod as { starts?: number[]; durations?: number[] };
