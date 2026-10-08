@@ -43,7 +43,8 @@ import { u1e3Plan } from '../data/u1e3-plan';
 import beatsJson from '../data/e3/beats_kit.json';
 import rcJson from '../data/render-config.json';
 import placesJson from '../data/places.json';
-import { loadEpisodeData, type EpisodeData } from '../lib/load-episode-data';
+import e3Turns from '../../data/e3/turns.json';
+import e3Timing from '../../data/e3/timing_map.json';
 
 interface Turn { id: string; speaker: string; text: string }
 
@@ -362,9 +363,15 @@ function deriveE3State(turns: Turn[], starts: number[], durations: number[]) {
 
 /* --------------------------------- episode ---------------------------------- */
 
-export const U1E3Episode: React.FC<{ episodeData?: EpisodeData }> = ({ episodeData }) => {
-  const data = React.useMemo(() => episodeData ?? loadEpisodeData('e3'), [episodeData]);
-  const s = React.useMemo(() => deriveE3State(data.turns, data.starts, data.durations), [data]);
+const e3TurnsList = (Array.isArray(e3Turns) ? e3Turns : (e3Turns as any).turns) as { id: string; speaker: string; text: string; pause_after?: number }[];
+const e3Data = {
+  turns: e3TurnsList,
+  starts: (e3Timing as any).starts as number[],
+  durations: (e3Timing as any).durations as number[],
+};
+
+export const U1E3Episode: React.FC = () => {
+  const s = React.useMemo(() => deriveE3State(e3Data.turns, e3Data.starts, e3Data.durations), []);
   return (
   <EpisodeShell
     episode="E3"

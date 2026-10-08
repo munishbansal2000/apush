@@ -75,10 +75,19 @@ async function main() {
   const durations: number[] = timing.durations;
   const fps = 30;
 
-  // Episode data travels via inputProps, never through the browser bundle:
-  // webpack cannot see runtime-generated out/data/ files, so loading them
-  // inside bundled modules yields empty data (and bogus AnchorErrors).
-  const inputProps = { episodeData: { turns, starts, durations } };
+  // 1:1 with the kit: episode data is bundled via static imports from data/,
+  // not passed as inputProps. If data/ is missing, populate it from the
+  // pipeline output in out/ so the bundler can see it.
+  const bundleDataDir = join(ROOT, 'data', epLower);
+  for (const name of ['turns.json', 'timing_map.json']) {
+    const dest = join(bundleDataDir, name);
+    const src = join(ROOT, 'out', 'data', epLower, name);
+    if (!existsSync(dest) && existsSync(src)) {
+      mkdirSync(bundleDataDir, { recursive: true });
+      writeFileSync(dest, readFileSync(src));
+      console.log(`  staged ${name} -> data/${epLower}/ for bundling`);
+    }
+  }
 
   // Sample points: turn starts, beat offsets, pause middles, final second
   const points = new Map<number, string>();
@@ -135,7 +144,6 @@ async function main() {
     serveUrl,
     id: compositionId,
     browserExecutable,
-    inputProps,
   });
 
   const cols = 6;
@@ -155,7 +163,6 @@ async function main() {
       output: file,
       scale: 0.25,
       browserExecutable,
-      inputProps,
       onBrowserLog: (log: any) => {
         const m = /\[layout-guard\] (.*)$/s.exec(log.text);
         if (!m) return;

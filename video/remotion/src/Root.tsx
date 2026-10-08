@@ -33,6 +33,7 @@ import { U2E10Episode } from "./components/U2E10Episode";
 import { U2E6Episode } from "./components/U2E6Episode";
 import { U2E3Episode } from "./components/U2E3Episode";
 import type { EpisodeData } from "./lib/load-episode-data";
+import e3Timing from "./data/e3/timing_map.json";
 // import { U3E6Scene } from "./u3e6/U3E6Scene";
 // import { U3E6_COMPS } from "./u3e6/u3e6_shots";
 // import { U3E6_Act1 } from "./u3e6/U3E6_Act1";
@@ -53,6 +54,12 @@ const FPS = 30;
  * With no props (Studio opened bare), fall back to a 1s placeholder; the
  * component's own data-loader fallback then applies at render time.
  */
+const _e3t = e3Timing as unknown as { starts: number[]; durations: number[] };
+const E3_FRAMES = Math.max(
+  30,
+  Math.ceil((_e3t.starts[_e3t.starts.length - 1] + _e3t.durations[_e3t.durations.length - 1]) * FPS)
+);
+
 function episodeMetadata({ props }: { props: { episodeData?: EpisodeData } }) {
   const d = props.episodeData;
   let durationInFrames = 30;
@@ -183,8 +190,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="U1E3Episode"
         component={U1E3Episode}
-        calculateMetadata={episodeMetadata}
-        durationInFrames={30}
+        durationInFrames={E3_FRAMES}
         fps={30}
         width={1280}
         height={720}

@@ -29,12 +29,37 @@ import argparse
 import json
 import re
 import subprocess
+import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
 
 # Base directory: this script's location. All paths anchor here, not cwd.
 _BASE = Path(__file__).parent
+
+# Wikimedia rate-limits aggressively; be polite and retry with backoff.
+_REQ_DELAY = 1.0
+_MAX_RETRIES = 4
+
+
+def _get(url, timeout=60):
+    """GET with User-Agent, inter-request delay, and 429/5xx retry."""
+    last = None
+    for attempt in range(_MAX_RETRIES):
+        time.sleep(_REQ_DELAY)
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "APUSH-Edu/1.0"})
+            return urllib.request.urlopen(req, timeout=timeout)
+        except urllib.error.HTTPError as e:
+            last = e
+            if e.code in (429, 500, 502, 503) and attempt < _MAX_RETRIES - 1:
+                wait = 2 ** attempt * 2
+                print(f"    (HTTP {e.code}, retrying in {wait}s...)")
+                time.sleep(wait)
+                continue
+            raise
+    raise last
 
 
 
@@ -110,7 +135,7 @@ def resolve_source_url(source_url):
             "iiprop": "url|size", "iiurlwidth": 1920, "format": "json",
         })
         req = urllib.request.Request(api, headers={"User-Agent": "APUSH-Edu/1.0"})
-        d = json.load(urllib.request.urlopen(req, timeout=60))
+        d = json.load(_get(api, timeout=60))
         for page in d["query"]["pages"].values():
             ii = (page.get("imageinfo") or [{}])[0]
             return ii.get("thumburl") or ii.get("url")
@@ -134,8 +159,7 @@ def download_image(path, source_url):
     print(f"  Downloading {path}...")
 
     try:
-        req = urllib.request.Request(direct, headers={"User-Agent": "APUSH-Edu/1.0"})
-        with urllib.request.urlopen(req, timeout=120) as resp, open(dest, "wb") as f:
+        with _get(direct, timeout=120) as resp, open(dest, "wb") as f:
             while True:
                 chunk = resp.read(1024 * 256)
                 if not chunk:
@@ -190,8 +214,14 @@ def main():
     # than inline TSX won't be found by the scan, so also include every
     # catalog entry tagged for this episode (used_in "E3:..." entries).
     wanted = set(found)
+    # Episode number for path matching: "E2"/"U1E2" -> "e2", matched against
+    # historic/u1e2/... style paths.
+    enum = re.sub(r"^u\d+", "", episode.lower())
     for path, entry in catalog.items():
         if any(str(u).startswith(f"{episode}:") for u in entry.get("used_in", [])):
+            wanted.add(path)
+            continue
+        if f"/u1{enum}/" in path.lower():
             wanted.add(path)
     missing = []
     for path in sorted(wanted):
