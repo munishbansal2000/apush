@@ -358,11 +358,15 @@ if (stages.includes('direct')) {
     const images = existsSync(imagesPlanPath) ? readJson<Record<string, unknown>>(imagesPlanPath) : {};
     const creative = videoGen === 'ltx' ? ', creative_clip' : '';
     const creativeContract = videoGen === 'ltx' ? ' creative_clip {image,prompt,title,caption,seed}; use it selectively for high-value cinematic moments. Its prompt must animate only the supplied still with subtle environmental/object motion, preserve the historical composition, add no people/text/objects, and contain no camera movement.' : '';
-    // Load director component registry (concise: name + when + props)
-    const compReg = readJson<{components: {name: string; when: string; props: Record<string, string>}[]}>(join(ROOT, 'src', 'data', 'director-components.json'));
-    const compList = compReg.components.map(c => `${c.name}: ${c.when} Props: ${Object.entries(c.props).map(([k, v]) => `${k}(${v})`).join(', ')}`).join('\n');
+    // Load director component registry (rich: when, examples, constraints, props)
+    const compReg = readJson<{components: {name: string; when: string; examples: string[]; constraints: string[]; props_detail: Record<string, {type: string; required: boolean; example: string}>}; image_rules?: {rules: string[]; examples: {wrong: string; right: string; why: string}[]}}>(join(ROOT, 'src', 'data', 'director-components.json'));
+    const compList = compReg.components.map(c => {
+      const props = Object.entries(c.props_detail).map(([k, v]) => `${k}(${v.type}${v.required ? ', required' : ''}): ${v.example}`).join('; ');
+      return `${c.name}: ${c.when}\n  Examples: ${c.examples.join(' / ')}\n  Constraints: ${c.constraints.join('; ')}\n  Props: ${props}`;
+    }).join('\n\n');
+    const imgRules = compReg.image_rules ? `\n\nIMAGE RULES:\n${compReg.image_rules.rules.join('\n')}\n${compReg.image_rules.examples.map(e => `WRONG: ${e.wrong}\nRIGHT: ${e.right}\nWhy: ${e.why}`).join('\n')}` : '';
     // Shrink images to path + description only (director doesn't need URLs)
-    const imgList = Object.entries(images as Record<string, {description?: string}>).map(([path, info]) => `${path}: ${info.description ?? ''}`).join('\n');
+    const imgList = Object.entries(images as Record<string, {description?: string}>).map(([path, info]) => `${path}: ${info.description ?? ''}`).join('\n') + imgRules;
     const prompt = `You are the senior director for a 1280x720 APUSH lesson. Build a detailed, narration-synchronized scene plan using ONLY these components:\n${compList}${creative ? `\ncreative_clip: AI-generated video. Props: image(path), prompt(string, min 20 chars), title, caption` : ''}\n\nReturn JSON only with {"version":1,"episode":"${episode}","title":"...","scenes":[...]}. Every scene requires id, component, a contiguous turnIds array, props, and transition (cut|crossfade|dip). Cover every turn exactly once, in order. Do not type seconds: timing is derived from TTS. Image values must be keys from AVAILABLE IMAGES. Favor a new visual idea every 1-3 turns and tie transitions to changes in narration.${creativeContract}\n\nTURNS WITH MEASURED TIMES:\n${turns.map((t, i) => `${t.id} ${timing.starts[i].toFixed(2)}-${(timing.starts[i] + timing.durations[i]).toFixed(2)} ${t.speaker ?? 'PAUSE'}: ${t.text ?? `[pause ${t.pauseSec}s]`}`).join('\n')}\n\nAVAILABLE IMAGES (path: description):\n${imgList}`;
     const out = meta('director', prompt, [join(ROOT, 'director-prompt-v13-remotion.txt')].filter(existsSync));
     if (!dryRun) {
