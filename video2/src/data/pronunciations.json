@@ -2,7 +2,7 @@
   "_doc": "Single source of truth for pronunciation. 'guide' is for humans (stress in caps); 'tts' is the exact string sent to Fish Audio. Set approved=true only after auditioning the generated clip. Strict validation fails on unapproved terms that appear in the script.",
   "terms": [
     {
-      "term": "São Tomé",
+      "term": "S\u00e3o Tom\u00e9",
       "guide": "sow toh-MAY",
       "tts": "sow toh-may",
       "approved": false
@@ -32,7 +32,7 @@
       "approved": false
     },
     {
-      "term": "Sahagún",
+      "term": "Sahag\u00fan",
       "guide": "sah-ah-GOON",
       "tts": "sah-ah-goon",
       "approved": false
@@ -78,6 +78,70 @@
       "guide": "his-pan-YOH-luh",
       "tts": "Hispaniola",
       "approved": true
+    },
+    {
+      "term": "Pontiac",
+      "guide": "PON-tee-ak",
+      "tts": "pon-tee-ak",
+      "approved": true,
+      "auto": true,
+      "source": "u3e1-script-header"
+    },
+    {
+      "term": "Ottawa",
+      "guide": "OT-uh-wuh",
+      "tts": "ot-uh-wuh",
+      "approved": true,
+      "auto": true,
+      "source": "u3e1-script-header"
+    },
+    {
+      "term": "Neolin",
+      "guide": "nee-OH-lin",
+      "tts": "nee-oh-lin",
+      "approved": true,
+      "auto": true,
+      "source": "u3e1-script-header"
+    },
+    {
+      "term": "Grenville",
+      "guide": "GREN-vil",
+      "tts": "gren-vil",
+      "approved": true,
+      "auto": true,
+      "source": "u3e1-script-header"
+    },
+    {
+      "term": "Appalachian",
+      "guide": "ap-uh-LAY-chun",
+      "tts": "ap-uh-lay-chun",
+      "approved": true,
+      "auto": true,
+      "source": "u3e1-script-header"
+    },
+    {
+      "term": "Amherst",
+      "guide": "AM-urst",
+      "tts": "am-urst",
+      "approved": true,
+      "auto": true,
+      "source": "u3e1-script-header"
+    },
+    {
+      "term": "Gage",
+      "guide": "gayj",
+      "tts": "gayj",
+      "approved": true,
+      "auto": true,
+      "source": "u3e1-script-header"
+    },
+    {
+      "term": "Conestoga",
+      "guide": "kon-uh-STOH-guh",
+      "tts": "kon-uh-stoh-guh",
+      "approved": true,
+      "auto": true,
+      "source": "u3e1-script-header"
     }
   ],
   "numbers": [
