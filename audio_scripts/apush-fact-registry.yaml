@@ -8488,3 +8488,53 @@ facts:
   - book: premium2027 ch8 (timeline, verified correct 2026-10-07)
   tier_note: 'Originally flagged U9-L5 v2 2026-10-07; withdrawn same day by parent after
     direct book read showed the timeline is correct. Kept as a retraction record.'
+- id: F-U9-039
+  topic: "Maine 1898 — cause never conclusively explained"
+  correct: 'The USS Maine exploded and sank in Havana harbor on February 15, 1898.
+    The cause was never definitively determined: 5steps2024 ch19 says it probably
+    blew up from a boiler failure, and that the subsequent naval investigation failed
+    to conclusively explain the explosion. Yellow journalists blamed Spain and
+    demanded readers ''Remember the Maine'' — that was manufactured war pressure,
+    not fact.'
+  falsehoods:
+  - Spain.*(sank|blew up).*Maine
+  - Maine.*sunk by Spain
+  guards:
+  - Don't write.*Maine.*as fact
+  - never (definitively|conclusively) determined
+  sources:
+  - book: 5steps2024 ch19 (key term + narrative)
+  tier_note: 'Added U9-L6 v2 2026-10-07 (coordinator book read). Script teaches
+    the never-explained cause and kills the Spain-did-it misconception in a
+    mid-episode wrong beat.'
+- id: F-U9-040
+  topic: "Teller vs Platt — 1898 promise vs 1901 leash"
+  correct: 'The Teller Amendment (April 1898 war resolution) declared the United
+    States had no intention of annexing Cuba. The Platt Amendment (1901, written
+    into Cuba''s new constitution) prohibited Cuba from making treaties without US
+    approval and gave the US the power to intervene in Cuban politics when
+    necessary — limiting Cuban independence until withdrawn in the 1930s
+    (5steps2024 ch19).'
+  falsehoods:
+  - Teller.*1901
+  - Platt.*1898
+  - Platt.*(promised|swore).*no annexation
+  sources:
+  - book: 5steps2024 ch19
+  tier_note: 'Added U9-L6 v2 2026-10-07 (coordinator book read). U9-L6''s debate
+    staged a Platt time-travel slip (Aguinaldo citing 1901 Platt from 1899);
+    repaired by moving the charge to Marcus.'
+- id: F-U9-041
+  topic: "'Splendid little war' — Hay on the Spanish-American War, not the
+    Philippine-American War"
+  correct: 'John Hay''s phrase ''a splendid little war'' describes the
+    Spanish-American War (summer 1898) — 5steps2024 ch19 uses it of that war.
+    Hay was the US ambassador in London at the time. Do not attribute the phrase
+    to the Philippine-American War (1899-1902).'
+  falsehoods:
+  - splendid little war.*(Philippine|Filipino|insurrection)
+  sources:
+  - book: 5steps2024 ch19
+  tier_note: 'Added U9-L6 v2 2026-10-07 (coordinator book read). The letter-to-Roosevelt
+    July 1898 specifics are NOT tier-verifiable; U9-L6 teaches only the phrase
+    and Hay''s post.'
