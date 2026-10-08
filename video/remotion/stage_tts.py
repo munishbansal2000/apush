@@ -238,12 +238,10 @@ def main():
     turns = None
     
     # Try audio_scripts first (canonical)
-    md_pattern = f'../audio_scripts/{unit}/apush-audio-u{unit_num}-e{ep_num}-script-v*-DRAFT.md'
-    # Also try repo path via API (for now, use local if exists)
+    # Scripts live in video/remotion/, audio_scripts is at repo root
+    script_dir = Path(__file__).parent
+    md_pattern = str(script_dir / '..' / '..' / 'audio_scripts' / unit / f'apush-audio-u{unit_num}-e{ep_num}-script-v*-DRAFT.md')
     md_files = sorted(glob.glob(md_pattern))
-    # Try absolute repo sync path
-    if not md_files:
-        md_files = sorted(glob.glob(f'/home/hatch/workspace/audio_scripts/{unit}/apush-audio-*-e{ep_num}-script-v*-DRAFT.md'))
     
     if md_files:
         # Use latest version (highest v number)
