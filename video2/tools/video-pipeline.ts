@@ -478,7 +478,7 @@ if (stages.includes('direct')) {
       console.warn(`[direct] checkpoint rejected:\n${checkpoint.issues.map(issue => `  - ${issue}`).join('\n')}`);
     }
     const creative = videoGen === 'ltx' ? ', creative_clip' : '';
-    const creativeContract = videoGen === 'ltx' ? ' creative_clip {image,prompt,title,caption,seed}; use it selectively for high-value cinematic moments. Its prompt must animate only the supplied still with subtle environmental/object motion, preserve the historical composition, add no people/text/objects. NEVER use the words camera, zoom, pan, tilt, dolly, tracking, crane, or any camera-movement term — the factory does its own camera work and rejects such prompts.' : '';
+    const creativeContract = videoGen === 'ltx' ? ' creative_clip {image,prompt,title,caption,seed}; REQUIRED: include at least 2 creative_clip scenes for high-value cinematic moments (battles, dramatic reveals, atmospheric shots). Its prompt must animate only the supplied still with subtle environmental/object motion, preserve the historical composition, add no people/text/objects. NEVER use the words camera, zoom, pan, tilt, dolly, tracking, crane, or any camera-movement term — the factory does its own camera work and rejects such prompts.' : '';
     // Send every renderer-supported tool, but only its selection guidance,
     // prop schema, and hard constraints. Lesson-specific examples add tokens
     // and tend to anchor the model to filenames from another episode.

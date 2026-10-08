@@ -8,6 +8,8 @@ interface ChartBar {
   label: string;
   value: number;
   color?: string;
+  /** Display override (e.g. "400+", "~2,000"); defaults to String(value) */
+  display?: string;
 }
 
 interface AnimatedChartProps extends TimingProps {
@@ -169,7 +171,7 @@ export const AnimatedChart: React.FC<AnimatedChartProps> = ({
                 color: COLOR.onNight,
                 opacity: growProgress,
               }}>
-                {bar.value}
+                {bar.display ?? String(bar.value)}
               </div>
               {/* Category label */}
               <div style={{

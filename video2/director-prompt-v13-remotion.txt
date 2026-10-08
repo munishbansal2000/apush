@@ -25,6 +25,8 @@ CONTENT RULES
 - Every visible factual statement, number, quotation, label, and caption must
   be supported by the assigned narration. Do not add outside facts.
 - Quote cards may use only verbatim words spoken in the assigned turns.
+- TRANSCRIPT GROUNDING: Any text displayed on screen (titles, quotes, labels, chart values) must match the narration transcript EXACTLY — do not paraphrase numbers, durations, or key phrases. If narration says "eleven and a half minutes", display "eleven and a half minutes", not "eleven minutes". If narration says "more than four hundred", use display "400+" not "400". Chart data supports a "display" field for qualified numbers.
+- DIALOGUE: When a scene covers turns from both speakers, ensure the visual shows or references BOTH speakers' contributions, not just the first.
 - Use primary_source only when the narration supplies or explicitly analyzes
   genuine document language. Never manufacture an excerpt.
 - Visuals supplement the audio; they must not carry an unstated claim.

@@ -292,8 +292,10 @@ function validateSceneProps(scene: DirectedScene): void {
       if (!Array.isArray(p.axis) || p.axis.length !== 2 || p.axis.some(label => typeof label !== 'string' || !label.trim())) throw new Error(`${scene.id}: spectrum requires axis [left, right]`);
       if (!Array.isArray(p.markers) || !p.markers.length || p.markers.some(marker => {
         const row = marker as Record<string, unknown>;
-        return !row || typeof row !== 'object' || typeof row.label !== 'string' || !row.label.trim() || !Number.isFinite(row.at) || Number(row.at) < 0 || Number(row.at) > 1;
-      })) throw new Error(`${scene.id}: spectrum requires markers with label and at between 0 and 1`);
+        const color = row.color;
+        const colorOk = typeof color === 'string' ? !!color.trim() : Array.isArray(color) && color.length === 3 && color.every(v => typeof v === 'number');
+        return !row || typeof row !== 'object' || typeof row.label !== 'string' || !row.label.trim() || !Number.isFinite(row.at) || Number(row.at) < 0 || Number(row.at) > 1 || !colorOk;
+      })) throw new Error(`${scene.id}: spectrum requires markers with label, at (0-1), and color (string or [r,g,b])`);
       break;
     case 'stagger':
       if (!Array.isArray(p.panels) || p.panels.length < 2 || p.panels.length > 4) throw new Error(`${scene.id}: stagger requires 2-4 panels`);
