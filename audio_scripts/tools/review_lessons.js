@@ -6,7 +6,7 @@ const fs = require('fs');
 const path = require('path');
 const { spawnSync } = require('child_process');
 
-const VERSION = 'apush-meta-ui-script-review-v3';
+const VERSION = 'apush-meta-ui-script-review-v4';
 const AUDIO_ROOT = path.resolve(__dirname, '..');
 const REPO_ROOT = path.resolve(AUDIO_ROOT, '..');
 const DEFAULT_LIB_DIR = process.env.APUSH_LLM_LIB_DIR ||
@@ -28,8 +28,7 @@ Audit these categories:
 4. exaggeration: absolutes, inflated novelty or importance, monocausal history, presentism, false
    certainty, and rhetoric stronger than the evidence supports.
 
-Use the attached local review context, but do not treat it as an infallible answer key. For the
-historical fact, completeness, and exaggeration checks, you MUST consult current external sources
+For the historical fact, completeness, and exaggeration checks, you MUST consult current external sources
 instead of relying on memory. Prefer Encyclopaedia Britannica where it covers the claim; otherwise
 consult an authoritative primary source, government archive, museum, university, or established
 scholarly history source. Open and read the source before reaching a conclusion. Do not rely on AI
@@ -266,44 +265,12 @@ function gateReport(file, content) {
     output: [result.stdout, result.stderr].filter(Boolean).join('\n').trim() };
 }
 
-function words(value) {
-  return new Set((String(value).toLowerCase().match(/[a-z][a-z'-]{3,}/g) || [])
-    .filter(word => !new Set(['that', 'this', 'with', 'from', 'have', 'were', 'what', 'when', 'they', 'their', 'about']).has(word)));
-}
-
-function referencePacket(file, content, gates) {
-  const guidelinePath = path.join(AUDIO_ROOT, 'apush-final-guidelines.md');
-  const registryPath = path.join(AUDIO_ROOT, 'apush-fact-registry.yaml');
-  const guidelines = fs.existsSync(guidelinePath) ? fs.readFileSync(guidelinePath, 'utf8') : '';
-  const registry = fs.existsSync(registryPath) ? fs.readFileSync(registryPath, 'utf8') : '';
-  const unitMatch = file.match(/[\\/]unit(\d+)[\\/]/i);
-  const unit = unitMatch ? unitMatch[1] : null;
-  const query = words(content);
-  const entries = registry.split(/\r?\n(?=- id:\s)/).filter(x => /^- id:/m.test(x));
-  const ranked = entries.map(entry => {
-    const entryWords = words(entry);
-    let score = 0;
-    for (const word of query) if (entryWords.has(word)) score++;
-    if (unit && new RegExp(`^- id:\\s*F-U${unit}-`, 'm').test(entry)) score += 25;
-    return { entry, score };
-  }).filter(x => x.score > 2).sort((a, b) => b.score - a.score);
-  const selected = [];
-  let used = 0;
-  for (const item of ranked) {
-    if (selected.length >= 35 || used + item.entry.length > 50000) break;
-    selected.push(item.entry.trim());
-    used += item.entry.length;
-  }
-  return `# Local review context (not the lesson)\n\n` +
-    `## Deterministic gate output\n\n\`\`\`text\n${gates.output || gates.status}\n\`\`\`\n\n` +
-    `## Editorial guidelines\n\n${guidelines}\n\n` +
-    `## Relevant fact-registry entries (${selected.length})\n\n${selected.join('\n\n')}\n`;
-}
-
 function metaPrompt(file, gates) {
-  return `${REVIEW_CONTRACT}\n\nThe lesson to review is the attachment named ${path.basename(file)}. ` +
-    `The attachment named review-context.md contains supporting local rules and selected facts; ` +
-    `do not review it as lesson prose. The deterministic gate status is ${gates.status}.`;
+  return `${REVIEW_CONTRACT}\n\nThe only attachment is the lesson to review: ${path.basename(file)}. ` +
+    `Review that complete lesson. Do not infer correctness from notes, source lists, or assertions ` +
+    `inside the lesson; independently verify disputed historical claims as instructed above. ` +
+    `A separate local deterministic check ran with status ${gates.status}; do not duplicate mechanical ` +
+    `format checking unless it materially affects the spoken lesson.`;
 }
 
 function reportMarkdown(source, hash, gates, review) {
@@ -377,8 +344,6 @@ async function main(argv = process.argv.slice(2)) {
         path.basename(file, path.extname(file)), hash.slice(0, 12));
       fs.mkdirSync(output, { recursive: true });
       atomicJson(path.join(output, 'gates.json'), gates);
-      const contextFile = path.join(output, 'review-context.md');
-      atomicWrite(contextFile, referencePacket(file, content, gates));
       const cache = path.join(output, 'meta.json');
       console.log(`[${index + 1}/${files.length}] ${relative} (gates=${gates.status})`);
       let result;
@@ -392,7 +357,7 @@ async function main(argv = process.argv.slice(2)) {
           page = await meta.createSession(context, { cookies: options.metaCookie, downloads: output });
           const response = await meta.send(page, metaPrompt(file, gates), output,
             `review-${path.basename(file, '.md')}`,
-            { attachments: [file, contextFile], timeoutMs: options.timeoutSec * 1000 });
+            { attachments: [file], timeoutMs: options.timeoutSec * 1000 });
           atomicWrite(path.join(output, 'meta.raw.md'), `${response.text}\n`);
           const review = extractJson(response.text);
           atomicJson(cache, review);
@@ -435,5 +400,5 @@ if (require.main === module) {
   });
 }
 
-module.exports = { REVIEW_CONTRACT, extractJson, extractRuntimeMinutes, globRegex, parseArgs, referencePacket,
+module.exports = { REVIEW_CONTRACT, extractJson, extractRuntimeMinutes, globRegex, parseArgs,
   reportMarkdown, selectFiles, validateReview };

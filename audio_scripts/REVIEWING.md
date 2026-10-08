@@ -6,10 +6,10 @@ AI browser conversation. It directly reuses the established
 Thinking mode, submission, response waiting, and response extraction.
 
 Meta checks grammar, AI-slop, factual accuracy, misleading omissions, and
-exaggeration. Before submission, the script also runs
-`apush-script-gates.py` and builds a compact `review-context.md` containing the
-editorial guidelines plus only the most relevant fact-registry entries. The
-complete 400KB registry is deliberately not attached.
+exaggeration. It receives only the lesson plus the focused review prompt; the
+guidelines and fact registry are not attached. This avoids redundant context,
+anchoring, and stale notes. `apush-script-gates.py` still runs locally and its
+result is preserved beside the Meta review.
 
 ## Run
 
@@ -42,8 +42,8 @@ Defaults:
 - Add `--keep-browser-on-error` to leave a failed Meta page open until Enter is
   pressed, making UI changes or response-extraction failures diagnosable.
 
-Each output directory contains the deterministic gate result, selected review
-context, raw Meta response, validated JSON, and readable `report.md`.
+Each output directory contains the deterministic gate result, raw Meta
+response, validated JSON, and readable `report.md`.
 `audio_scripts/_reviews/latest-run.json` indexes the most recent batch. Source
 lesson files are never modified.
 
