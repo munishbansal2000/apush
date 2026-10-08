@@ -209,6 +209,9 @@ function validateSceneProps(scene: DirectedScene): void {
       for (const key of ['documentTitle', 'authorAndDate', 'excerptText', 'highlightedPhrase', 'hippType', 'hippExplanation']) {
         if (!text(key)) throw new Error(`${scene.id}: primary_source requires props.${key}`);
       }
+      if (!(p.excerptText as string).includes(p.highlightedPhrase as string)) {
+        throw new Error(`${scene.id}: highlightedPhrase must appear verbatim in excerptText`);
+      }
       break;
     case 'talking_head':
       if (p.speaker !== 'maya' && p.speaker !== 'marcus') throw new Error(`${scene.id}: talking_head requires speaker maya|marcus`);
