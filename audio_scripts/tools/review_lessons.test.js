@@ -12,7 +12,8 @@ function validReview() {
     verdict: 'revise', summary: 'One issue.',
     scores: { grammar: 4, ai_slop: 3, factual_accuracy: 5, exaggeration_control: 4 },
     findings: [{ category: 'grammar', severity: 'minor', quote: 'bad phrase',
-      problem: 'Agreement.', suggested_fix: 'Fix agreement.', confidence: 0.95 }],
+      problem: 'Agreement.', reason: '', sources: [],
+      suggested_fix: 'Fix agreement.', confidence: 0.95 }],
   };
 }
 
@@ -25,6 +26,19 @@ test('invalid score fails closed', () => {
   const value = validReview();
   value.scores.ai_slop = 9;
   assert.throws(() => reviewer.validateReview(value), /integer from 0 to 5/);
+});
+
+test('factual dispute requires a reason and an authoritative source URL', () => {
+  const value = validReview();
+  value.findings[0] = { category: 'fact', severity: 'major', quote: 'Claim',
+    problem: 'The claim is inaccurate.', reason: '', sources: [],
+    suggested_fix: 'Correct it.', confidence: 0.9 };
+  assert.throws(() => reviewer.validateReview(value), /reason is required/);
+  value.findings[0].reason = 'The cited chronology contradicts it.';
+  assert.throws(() => reviewer.validateReview(value), /at least one authoritative source/);
+  value.findings[0].sources = [{ name: 'Britannica', url: 'https://www.britannica.com/topic/example',
+    evidence: 'Provides the documented chronology.' }];
+  assert.doesNotThrow(() => reviewer.validateReview(value));
 });
 
 test('requested lesson glob excludes changelogs', () => {

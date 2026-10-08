@@ -6,7 +6,7 @@ const fs = require('fs');
 const path = require('path');
 const { spawnSync } = require('child_process');
 
-const VERSION = 'apush-meta-ui-script-review-v2';
+const VERSION = 'apush-meta-ui-script-review-v3';
 const AUDIO_ROOT = path.resolve(__dirname, '..');
 const REPO_ROOT = path.resolve(AUDIO_ROOT, '..');
 const DEFAULT_LIB_DIR = process.env.APUSH_LLM_LIB_DIR ||
@@ -34,9 +34,10 @@ instead of relying on memory. Prefer Encyclopaedia Britannica where it covers th
 consult an authoritative primary source, government archive, museum, university, or established
 scholarly history source. Open and read the source before reaching a conclusion. Do not rely on AI
 summaries, search-result snippets, Wikipedia alone, blogs, or social media. Never invent a citation.
-Name the source and include its direct URL in the finding's problem text whenever the source affects
-your judgment. If you cannot verify a claim from an actual authoritative source, classify it as
-verify rather than declaring it true or false. Quote the exact shortest relevant passage from the lesson.
+If you dispute or qualify a lesson claim, explain why in the finding's reason field and cite the
+actual sources in its sources array. If you cannot verify a claim from an actual authoritative source,
+classify it as verify rather than declaring it true or false. Quote the exact shortest relevant passage
+from the lesson.
 
 Return JSON only, without Markdown fences, using exactly this top-level shape:
 {
@@ -48,12 +49,20 @@ Return JSON only, without Markdown fences, using exactly this top-level shape:
     "severity": "blocker|major|minor|info|verify",
     "quote": "exact lesson excerpt",
     "problem": "specific explanation",
+    "reason": "why this conclusion follows from the evidence; empty only for grammar or style findings",
+    "sources": [{
+      "name": "source title and publisher",
+      "url": "direct https URL, never a search-results URL",
+      "evidence": "what this source establishes about the disputed claim"
+    }],
     "suggested_fix": "localized correction or editorial direction",
     "confidence": 0.0
   }]
 }
 Scores are integers from 0 (unacceptable) to 5 (excellent). An empty findings array is allowed only
-when the lesson genuinely passes.`;
+when the lesson genuinely passes. For grammar and ai_slop findings, reason may be empty and sources
+may be an empty array. Every fact, exaggeration, or completeness finding must have a non-empty reason
+and at least one actual authoritative source with a direct HTTPS URL.`;
 
 function usage() {
   return `Usage:
@@ -187,8 +196,27 @@ function validateReview(value) {
     if (!finding || typeof finding !== 'object') throw new Error(`finding ${index} must be an object`);
     if (!categories.has(finding.category)) throw new Error(`finding ${index} has invalid category`);
     if (!severities.has(finding.severity)) throw new Error(`finding ${index} has invalid severity`);
-    for (const key of ['quote', 'problem', 'suggested_fix']) {
+    for (const key of ['quote', 'problem', 'reason', 'suggested_fix']) {
       if (typeof finding[key] !== 'string') throw new Error(`finding ${index}.${key} must be a string`);
+    }
+    if (!Array.isArray(finding.sources)) throw new Error(`finding ${index}.sources must be an array`);
+    finding.sources.forEach((source, sourceIndex) => {
+      if (!source || typeof source !== 'object') throw new Error(`finding ${index}.sources[${sourceIndex}] must be an object`);
+      for (const key of ['name', 'url', 'evidence']) {
+        if (typeof source[key] !== 'string' || !source[key].trim()) {
+          throw new Error(`finding ${index}.sources[${sourceIndex}].${key} must be non-empty`);
+        }
+      }
+      try {
+        const url = new URL(source.url);
+        if (url.protocol !== 'https:') throw new Error('not HTTPS');
+      } catch (_) {
+        throw new Error(`finding ${index}.sources[${sourceIndex}].url must be a direct HTTPS URL`);
+      }
+    });
+    if (['fact', 'exaggeration', 'completeness'].includes(finding.category)) {
+      if (!finding.reason.trim()) throw new Error(`finding ${index}.reason is required for disputed historical claims`);
+      if (!finding.sources.length) throw new Error(`finding ${index}.sources requires at least one authoritative source`);
     }
     if (typeof finding.confidence !== 'number' || finding.confidence < 0 || finding.confidence > 1) {
       throw new Error(`finding ${index}.confidence must be from 0 to 1`);
@@ -288,6 +316,9 @@ function reportMarkdown(source, hash, gates, review) {
   review.findings.forEach((finding, index) => {
     lines.push(`## ${index + 1}. ${finding.severity.toUpperCase()} · ${finding.category}`, '',
       `> ${finding.quote || '(no quote)'}`, '', finding.problem, '',
+      ...(finding.reason ? [`Reason: ${finding.reason}`, ''] : []),
+      ...(finding.sources.length ? ['Sources:', '', ...finding.sources.map(source =>
+        `- [${source.name}](${source.url}) — ${source.evidence}`), ''] : []),
       `Suggested fix: ${finding.suggested_fix}`, '', `Confidence: ${finding.confidence}`, '');
   });
   return `${lines.join('\n')}\n`;
