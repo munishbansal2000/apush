@@ -1,0 +1,1115 @@
+{
+  "_doc": "Free vs slave status of US states and territories, 1820-1863, for TerritoryOverTime (src/motion/territory.tsx). Each state/territory has a timeline of {date (ISO), status}; status at a date = the last entry on or before it (none before the first entry = not yet US / not shown). State ids are FIPS codes in src/data/geo/us-states-10m.json; modern state outlines stand in for historical ones. Territories are approximate polygons (ring [lon,lat], or an `acquisition` key from usGeo ACQUISITIONS) drawn under the states and clipped to the US outline; every one is flagged approximate. Status colours are theme roles assigned in code (src/theme/tokens.ts), not stored here.",
+  "statuses": {
+    "free": {
+      "label": "Free state"
+    },
+    "slave": {
+      "label": "Slave state"
+    },
+    "confederate": {
+      "label": "Seceded 1860–61"
+    },
+    "border": {
+      "label": "Border slave state"
+    },
+    "closed": {
+      "label": "Territory: slavery barred"
+    },
+    "open": {
+      "label": "Territory: slavery legal"
+    },
+    "popular": {
+      "label": "Popular sovereignty"
+    },
+    "other": {
+      "label": "Other territory"
+    }
+  },
+  "keyYears": [
+    {
+      "year": 1820,
+      "event": "Missouri Compromise (Mar 6, 1820); Maine admitted free (Mar 15, 1820): 12 free, 11 slave states",
+      "source": "National Archives, Milestone Documents: 'Missouri Compromise (1820)'; Library of Congress, 'Missouri Compromise: Primary Documents in American History'; U.S. Senate Historical Office, 'States in the Senate: dates of admission'; National Archives, statehood enabling acts and proclamations",
+      "verified": "2026-10-07",
+      "note": "Admission dates and free/slave counts verified (counts derived from verified admission dates). Missouri Compromise date (Mar 6, 1820) not re-retrieved this session."
+    },
+    {
+      "year": 1821,
+      "event": "Missouri admitted as a slave state (Aug 10, 1821): 12 free, 12 slave states",
+      "source": "National Archives, Milestone Documents: 'Missouri Compromise (1820)'; Library of Congress, 'Missouri Compromise: Primary Documents in American History'; U.S. Senate Historical Office, 'States in the Senate: dates of admission'; National Archives, statehood enabling acts and proclamations",
+      "verified": "2026-10-07",
+      "note": "Admission dates and free/slave counts verified (counts derived from verified admission dates)."
+    },
+    {
+      "year": 1850,
+      "event": "Compromise of 1850: California admitted free (Sept 9, 1850); Utah and New Mexico Territories organized with popular sovereignty: 16 free, 15 slave states",
+      "source": "National Archives, Milestone Documents: 'Compromise of 1850'; Library of Congress, 'Compromise of 1850: Primary Documents in American History'",
+      "verified": "2026-10-07",
+      "note": "Admission dates and free/slave counts verified (counts derived from verified admission dates)."
+    },
+    {
+      "year": 1854,
+      "event": "Kansas-Nebraska Act (May 30, 1854): popular sovereignty in Kansas and Nebraska Territories; Missouri Compromise line repealed",
+      "source": "Wikipedia, 'Kansas–Nebraska Act' (signed by Pierce May 30, 1854; https://en.wikipedia.org/wiki/Kansas%E2%80%93Nebraska_Act); U.S. Senate Historical Office, 'The Kansas-Nebraska Act' (https://www.senate.gov/artandhistory/history/minute/Kansas_Nebraska_Act.htm)",
+      "verified": "2026-10-07"
+    },
+    {
+      "year": 1861,
+      "event": "Eleven states secede (South Carolina Dec 20, 1860 to Tennessee June 8, 1861); four slave states (DE, MD, KY, MO) stay in the Union",
+      "source": "Wikipedia, 'Confederate States of America', order of secession resolutions and dates (https://en.wikipedia.org/wiki/Confederate_States_of_America; ordinance texts via archived civilwar ordinance pages); border states per same article",
+      "verified": "2026-10-07"
+    }
+  ],
+  "states": [
+    {
+      "id": "33",
+      "name": "New Hampshire",
+      "abbr": "NH",
+      "timeline": [
+        {
+          "date": "1788-06-21",
+          "status": "free",
+          "note": "admitted / ratified"
+        }
+      ],
+      "source": "Wikipedia, 'List of U.S. states by date of admission to the Union' (https://en.wikipedia.org/wiki/List_of_U.S._states_by_date_of_admission_to_the_Union; dates cited there to Library of Congress 'Today in History' and Vile, Constitutional Convention of 1787 encyclopedia)",
+      "verified": "2026-10-07"
+    },
+    {
+      "id": "25",
+      "name": "Massachusetts",
+      "abbr": "MA",
+      "timeline": [
+        {
+          "date": "1788-02-06",
+          "status": "free",
+          "note": "admitted / ratified"
+        }
+      ],
+      "source": "Wikipedia, 'List of U.S. states by date of admission to the Union' (https://en.wikipedia.org/wiki/List_of_U.S._states_by_date_of_admission_to_the_Union; dates cited there to Library of Congress 'Today in History' and Vile, Constitutional Convention of 1787 encyclopedia)",
+      "verified": "2026-10-07"
+    },
+    {
+      "id": "44",
+      "name": "Rhode Island",
+      "abbr": "RI",
+      "timeline": [
+        {
+          "date": "1790-05-29",
+          "status": "free",
+          "note": "admitted / ratified"
+        }
+      ],
+      "source": "Wikipedia, 'List of U.S. states by date of admission to the Union' (https://en.wikipedia.org/wiki/List_of_U.S._states_by_date_of_admission_to_the_Union; dates cited there to Library of Congress 'Today in History' and Vile, Constitutional Convention of 1787 encyclopedia)",
+      "verified": "2026-10-07"
+    },
+    {
+      "id": "09",
+      "name": "Connecticut",
+      "abbr": "CT",
+      "timeline": [
+        {
+          "date": "1788-01-09",
+          "status": "free",
+          "note": "admitted / ratified"
+        }
+      ],
+      "source": "Wikipedia, 'List of U.S. states by date of admission to the Union' (https://en.wikipedia.org/wiki/List_of_U.S._states_by_date_of_admission_to_the_Union; dates cited there to Library of Congress 'Today in History' and Vile, Constitutional Convention of 1787 encyclopedia)",
+      "verified": "2026-10-07"
+    },
+    {
+      "id": "36",
+      "name": "New York",
+      "abbr": "NY",
+      "timeline": [
+        {
+          "date": "1788-07-26",
+          "status": "free",
+          "note": "ratified; gradual abolition (1799 act; slavery ended 1827), counted as a free state"
+        }
+      ],
+      "source": "Wikipedia, 'List of U.S. states by date of admission to the Union' (https://en.wikipedia.org/wiki/List_of_U.S._states_by_date_of_admission_to_the_Union; dates cited there to Library of Congress 'Today in History' and Vile, Constitutional Convention of 1787 encyclopedia)",
+      "verified": "2026-10-07"
+    },
+    {
+      "id": "34",
+      "name": "New Jersey",
+      "abbr": "NJ",
+      "timeline": [
+        {
+          "date": "1787-12-18",
+          "status": "free",
+          "note": "ratified; gradual abolition (1804 act), counted as a free state"
+        }
+      ],
+      "source": "Wikipedia, 'List of U.S. states by date of admission to the Union' (https://en.wikipedia.org/wiki/List_of_U.S._states_by_date_of_admission_to_the_Union; dates cited there to Library of Congress 'Today in History' and Vile, Constitutional Convention of 1787 encyclopedia)",
+      "verified": "2026-10-07"
+    },
+    {
+      "id": "42",
+      "name": "Pennsylvania",
+      "abbr": "PA",
+      "timeline": [
+        {
+          "date": "1787-12-12",
+          "status": "free",
+          "note": "admitted / ratified"
+        }
+      ],
+      "source": "Wikipedia, 'List of U.S. states by date of admission to the Union' (https://en.wikipedia.org/wiki/List_of_U.S._states_by_date_of_admission_to_the_Union; dates cited there to Library of Congress 'Today in History' and Vile, Constitutional Convention of 1787 encyclopedia)",
+      "verified": "2026-10-07"
+    },
+    {
+      "id": "50",
+      "name": "Vermont",
+      "abbr": "VT",
+      "timeline": [
+        {
+          "date": "1791-03-04",
+          "status": "free",
+          "note": "admitted / ratified"
+        }
+      ],
+      "source": "Wikipedia, 'List of U.S. states by date of admission to the Union' (https://en.wikipedia.org/wiki/List_of_U.S._states_by_date_of_admission_to_the_Union; dates cited there to Library of Congress 'Today in History' and Vile, Constitutional Convention of 1787 encyclopedia)",
+      "verified": "2026-10-07"
+    },
+    {
+      "id": "39",
+      "name": "Ohio",
+      "abbr": "OH",
+      "timeline": [
+        {
+          "date": "1803-03-01",
+          "status": "free",
+          "note": "admitted / ratified"
+        }
+      ],
+      "source": "Wikipedia, 'List of U.S. states by date of admission to the Union' (https://en.wikipedia.org/wiki/List_of_U.S._states_by_date_of_admission_to_the_Union; dates cited there to Library of Congress 'Today in History' and Vile, Constitutional Convention of 1787 encyclopedia)",
+      "verified": "2026-10-07"
+    },
+    {
+      "id": "18",
+      "name": "Indiana",
+      "abbr": "IN",
+      "timeline": [
+        {
+          "date": "1816-12-11",
+          "status": "free",
+          "note": "admitted / ratified"
+        }
+      ],
+      "source": "Wikipedia, 'List of U.S. states by date of admission to the Union' (https://en.wikipedia.org/wiki/List_of_U.S._states_by_date_of_admission_to_the_Union; dates cited there to Library of Congress 'Today in History' and Vile, Constitutional Convention of 1787 encyclopedia)",
+      "verified": "2026-10-07"
+    },
+    {
+      "id": "17",
+      "name": "Illinois",
+      "abbr": "IL",
+      "timeline": [
+        {
+          "date": "1818-12-03",
+          "status": "free",
+          "note": "admitted / ratified"
+        }
+      ],
+      "source": "Wikipedia, 'List of U.S. states by date of admission to the Union' (https://en.wikipedia.org/wiki/List_of_U.S._states_by_date_of_admission_to_the_Union; dates cited there to Library of Congress 'Today in History' and Vile, Constitutional Convention of 1787 encyclopedia)",
+      "verified": "2026-10-07"
+    },
+    {
+      "id": "23",
+      "name": "Maine",
+      "abbr": "ME",
+      "timeline": [
+        {
+          "date": "1788-02-06",
+          "status": "free",
+          "note": "District of Maine, part of Massachusetts"
+        },
+        {
+          "date": "1820-03-15",
+          "status": "free",
+          "note": "admitted as a free state (Missouri Compromise)"
+        }
+      ],
+      "source": "Wikipedia, 'List of U.S. states by date of admission to the Union' (https://en.wikipedia.org/wiki/List_of_U.S._states_by_date_of_admission_to_the_Union; dates cited there to Library of Congress 'Today in History' and Vile, Constitutional Convention of 1787 encyclopedia)",
+      "verified": "2026-10-07",
+      "note": "Admission date verified; pre-statehood territorial dates (first timeline entry) not re-verified this session."
+    },
+    {
+      "id": "26",
+      "name": "Michigan",
+      "abbr": "MI",
+      "timeline": [
+        {
+          "date": "1805-06-30",
+          "status": "closed",
+          "note": "Michigan Territory; Northwest Ordinance barred slavery"
+        },
+        {
+          "date": "1837-01-26",
+          "status": "free",
+          "note": "admitted"
+        }
+      ],
+      "source": "Wikipedia, 'List of U.S. states by date of admission to the Union' (https://en.wikipedia.org/wiki/List_of_U.S._states_by_date_of_admission_to_the_Union; dates cited there to Library of Congress 'Today in History' and Vile, Constitutional Convention of 1787 encyclopedia)",
+      "verified": "2026-10-07",
+      "note": "Admission date verified; pre-statehood territorial dates (first timeline entry) not re-verified this session."
+    },
+    {
+      "id": "55",
+      "name": "Wisconsin",
+      "abbr": "WI",
+      "timeline": [
+        {
+          "date": "1818-10-01",
+          "status": "closed",
+          "note": "part of Michigan Territory, then Wisconsin Territory (1836); Northwest Ordinance"
+        },
+        {
+          "date": "1848-05-29",
+          "status": "free",
+          "note": "admitted"
+        }
+      ],
+      "source": "Wikipedia, 'List of U.S. states by date of admission to the Union' (https://en.wikipedia.org/wiki/List_of_U.S._states_by_date_of_admission_to_the_Union; dates cited there to Library of Congress 'Today in History' and Vile, Constitutional Convention of 1787 encyclopedia)",
+      "verified": "2026-10-07",
+      "note": "Admission date verified; pre-statehood territorial dates (first timeline entry) not re-verified this session."
+    },
+    {
+      "id": "19",
+      "name": "Iowa",
+      "abbr": "IA",
+      "timeline": [
+        {
+          "date": "1846-12-28",
+          "status": "free",
+          "note": "admitted (earlier: Louisiana Purchase north of 36°30′, see territories)"
+        }
+      ],
+      "source": "Wikipedia, 'List of U.S. states by date of admission to the Union' (https://en.wikipedia.org/wiki/List_of_U.S._states_by_date_of_admission_to_the_Union; dates cited there to Library of Congress 'Today in History' and Vile, Constitutional Convention of 1787 encyclopedia)",
+      "verified": "2026-10-07"
+    },
+    {
+      "id": "06",
+      "name": "California",
+      "abbr": "CA",
+      "timeline": [
+        {
+          "date": "1848-05-30",
+          "status": "other",
+          "note": "Mexican Cession (treaty ratified), under military government"
+        },
+        {
+          "date": "1850-09-09",
+          "status": "free",
+          "note": "admitted as a free state (Compromise of 1850)"
+        }
+      ],
+      "source": "Wikipedia, 'List of U.S. states by date of admission to the Union' (https://en.wikipedia.org/wiki/List_of_U.S._states_by_date_of_admission_to_the_Union; dates cited there to Library of Congress 'Today in History' and Vile, Constitutional Convention of 1787 encyclopedia)",
+      "verified": "2026-10-07",
+      "note": "Admission date verified; pre-statehood territorial dates (first timeline entry) not re-verified this session."
+    },
+    {
+      "id": "27",
+      "name": "Minnesota",
+      "abbr": "MN",
+      "timeline": [
+        {
+          "date": "1818-10-01",
+          "status": "closed",
+          "note": "east: Michigan Territory (Northwest Ordinance); west: Louisiana Purchase north of 36°30′ after 1820; Minnesota Territory 1849"
+        },
+        {
+          "date": "1858-05-11",
+          "status": "free",
+          "note": "admitted"
+        }
+      ],
+      "source": "Wikipedia, 'List of U.S. states by date of admission to the Union' (https://en.wikipedia.org/wiki/List_of_U.S._states_by_date_of_admission_to_the_Union; dates cited there to Library of Congress 'Today in History' and Vile, Constitutional Convention of 1787 encyclopedia)",
+      "verified": "2026-10-07",
+      "note": "Admission date verified; pre-statehood territorial dates (first timeline entry) not re-verified this session."
+    },
+    {
+      "id": "41",
+      "name": "Oregon",
+      "abbr": "OR",
+      "timeline": [
+        {
+          "date": "1846-06-15",
+          "status": "other",
+          "note": "Oregon Treaty; Oregon Country unorganized"
+        },
+        {
+          "date": "1848-08-14",
+          "status": "closed",
+          "note": "Oregon Territory; slavery prohibited"
+        },
+        {
+          "date": "1859-02-14",
+          "status": "free",
+          "note": "admitted"
+        }
+      ],
+      "source": "Wikipedia, 'List of U.S. states by date of admission to the Union' (https://en.wikipedia.org/wiki/List_of_U.S._states_by_date_of_admission_to_the_Union; dates cited there to Library of Congress 'Today in History' and Vile, Constitutional Convention of 1787 encyclopedia)",
+      "verified": "2026-10-07",
+      "note": "Admission date verified; pre-statehood territorial dates (first timeline entry) not re-verified this session."
+    },
+    {
+      "id": "20",
+      "name": "Kansas",
+      "abbr": "KS",
+      "timeline": [
+        {
+          "date": "1861-01-29",
+          "status": "free",
+          "note": "admitted as a free state (earlier: territory, see territories)"
+        }
+      ],
+      "source": "Wikipedia, 'List of U.S. states by date of admission to the Union' (https://en.wikipedia.org/wiki/List_of_U.S._states_by_date_of_admission_to_the_Union; dates cited there to Library of Congress 'Today in History' and Vile, Constitutional Convention of 1787 encyclopedia)",
+      "verified": "2026-10-07"
+    },
+    {
+      "id": "10",
+      "name": "Delaware",
+      "abbr": "DE",
+      "timeline": [
+        {
+          "date": "1787-12-07",
+          "status": "slave",
+          "note": "admitted / ratified"
+        },
+        {
+          "date": "1861-04-12",
+          "status": "border",
+          "note": "slave state that stayed in the Union once war began (Fort Sumter, Apr 12, 1861)"
+        }
+      ],
+      "source": "Wikipedia, 'List of U.S. states by date of admission to the Union' (https://en.wikipedia.org/wiki/List_of_U.S._states_by_date_of_admission_to_the_Union; dates cited there to Library of Congress 'Today in History' and Vile, Constitutional Convention of 1787 encyclopedia)",
+      "verified": "2026-10-07"
+    },
+    {
+      "id": "24",
+      "name": "Maryland",
+      "abbr": "MD",
+      "timeline": [
+        {
+          "date": "1788-04-28",
+          "status": "slave",
+          "note": "admitted / ratified"
+        },
+        {
+          "date": "1861-04-12",
+          "status": "border",
+          "note": "slave state that stayed in the Union once war began (Fort Sumter, Apr 12, 1861)"
+        }
+      ],
+      "source": "Wikipedia, 'List of U.S. states by date of admission to the Union' (https://en.wikipedia.org/wiki/List_of_U.S._states_by_date_of_admission_to_the_Union; dates cited there to Library of Congress 'Today in History' and Vile, Constitutional Convention of 1787 encyclopedia)",
+      "verified": "2026-10-07"
+    },
+    {
+      "id": "21",
+      "name": "Kentucky",
+      "abbr": "KY",
+      "timeline": [
+        {
+          "date": "1792-06-01",
+          "status": "slave",
+          "note": "admitted / ratified"
+        },
+        {
+          "date": "1861-04-12",
+          "status": "border",
+          "note": "slave state that stayed in the Union once war began (Fort Sumter, Apr 12, 1861)"
+        }
+      ],
+      "source": "Wikipedia, 'List of U.S. states by date of admission to the Union' (https://en.wikipedia.org/wiki/List_of_U.S._states_by_date_of_admission_to_the_Union; dates cited there to Library of Congress 'Today in History' and Vile, Constitutional Convention of 1787 encyclopedia)",
+      "verified": "2026-10-07"
+    },
+    {
+      "id": "29",
+      "name": "Missouri",
+      "abbr": "MO",
+      "timeline": [
+        {
+          "date": "1812-06-04",
+          "status": "open",
+          "note": "Missouri Territory; slavery legal"
+        },
+        {
+          "date": "1821-08-10",
+          "status": "slave",
+          "note": "admitted as a slave state (Missouri Compromise)"
+        },
+        {
+          "date": "1861-04-12",
+          "status": "border",
+          "note": "slave state that stayed in the Union once war began (Fort Sumter, Apr 12, 1861)"
+        }
+      ],
+      "source": "Wikipedia, 'List of U.S. states by date of admission to the Union' (https://en.wikipedia.org/wiki/List_of_U.S._states_by_date_of_admission_to_the_Union; dates cited there to Library of Congress 'Today in History' and Vile, Constitutional Convention of 1787 encyclopedia)",
+      "verified": "2026-10-07",
+      "note": "Admission date verified; pre-statehood territorial dates (first timeline entry) not re-verified this session."
+    },
+    {
+      "id": "51",
+      "name": "Virginia",
+      "abbr": "VA",
+      "timeline": [
+        {
+          "date": "1788-06-25",
+          "status": "slave",
+          "note": "admitted / ratified"
+        },
+        {
+          "date": "1861-04-17",
+          "status": "confederate",
+          "note": "ordinance adopted by convention (ratified by referendum May 23, 1861)"
+        }
+      ],
+      "source": "Wikipedia, 'List of U.S. states by date of admission to the Union' (https://en.wikipedia.org/wiki/List_of_U.S._states_by_date_of_admission_to_the_Union; dates cited there to Library of Congress 'Today in History' and Vile, Constitutional Convention of 1787 encyclopedia); Wikipedia, 'Confederate States of America', order of secession resolutions and dates (https://en.wikipedia.org/wiki/Confederate_States_of_America; ordinance texts via archived civilwar ordinance pages)",
+      "verified": "2026-10-07"
+    },
+    {
+      "id": "54",
+      "name": "West Virginia",
+      "abbr": "WV",
+      "timeline": [
+        {
+          "date": "1788-06-25",
+          "status": "slave",
+          "note": "part of Virginia"
+        },
+        {
+          "date": "1861-04-17",
+          "status": "confederate",
+          "note": "part of Virginia when it seceded; the northwestern counties rejected secession and formed the Restored Government of Virginia (June 1861)"
+        },
+        {
+          "date": "1863-06-20",
+          "status": "border",
+          "note": "admitted as West Virginia; a border slave state in the Union"
+        }
+      ],
+      "source": "Wikipedia, 'List of U.S. states by date of admission to the Union' (https://en.wikipedia.org/wiki/List_of_U.S._states_by_date_of_admission_to_the_Union; dates cited there to Library of Congress 'Today in History' and Vile, Constitutional Convention of 1787 encyclopedia); Wikipedia, 'Confederate States of America', order of secession resolutions and dates (https://en.wikipedia.org/wiki/Confederate_States_of_America; ordinance texts via archived civilwar ordinance pages)",
+      "verified": "2026-10-07"
+    },
+    {
+      "id": "37",
+      "name": "North Carolina",
+      "abbr": "NC",
+      "timeline": [
+        {
+          "date": "1789-11-21",
+          "status": "slave",
+          "note": "admitted / ratified"
+        },
+        {
+          "date": "1861-05-20",
+          "status": "confederate",
+          "note": "ordinance of secession adopted"
+        }
+      ],
+      "source": "Wikipedia, 'List of U.S. states by date of admission to the Union' (https://en.wikipedia.org/wiki/List_of_U.S._states_by_date_of_admission_to_the_Union; dates cited there to Library of Congress 'Today in History' and Vile, Constitutional Convention of 1787 encyclopedia); Wikipedia, 'Confederate States of America', order of secession resolutions and dates (https://en.wikipedia.org/wiki/Confederate_States_of_America; ordinance texts via archived civilwar ordinance pages)",
+      "verified": "2026-10-07"
+    },
+    {
+      "id": "45",
+      "name": "South Carolina",
+      "abbr": "SC",
+      "timeline": [
+        {
+          "date": "1788-05-23",
+          "status": "slave",
+          "note": "admitted / ratified"
+        },
+        {
+          "date": "1860-12-20",
+          "status": "confederate",
+          "note": "first state to secede"
+        }
+      ],
+      "source": "Wikipedia, 'List of U.S. states by date of admission to the Union' (https://en.wikipedia.org/wiki/List_of_U.S._states_by_date_of_admission_to_the_Union; dates cited there to Library of Congress 'Today in History' and Vile, Constitutional Convention of 1787 encyclopedia); Wikipedia, 'Confederate States of America', order of secession resolutions and dates (https://en.wikipedia.org/wiki/Confederate_States_of_America; ordinance texts via archived civilwar ordinance pages)",
+      "verified": "2026-10-07"
+    },
+    {
+      "id": "13",
+      "name": "Georgia",
+      "abbr": "GA",
+      "timeline": [
+        {
+          "date": "1788-01-02",
+          "status": "slave",
+          "note": "admitted / ratified"
+        },
+        {
+          "date": "1861-01-19",
+          "status": "confederate",
+          "note": "ordinance of secession adopted"
+        }
+      ],
+      "source": "Wikipedia, 'List of U.S. states by date of admission to the Union' (https://en.wikipedia.org/wiki/List_of_U.S._states_by_date_of_admission_to_the_Union; dates cited there to Library of Congress 'Today in History' and Vile, Constitutional Convention of 1787 encyclopedia); Wikipedia, 'Confederate States of America', order of secession resolutions and dates (https://en.wikipedia.org/wiki/Confederate_States_of_America; ordinance texts via archived civilwar ordinance pages)",
+      "verified": "2026-10-07"
+    },
+    {
+      "id": "47",
+      "name": "Tennessee",
+      "abbr": "TN",
+      "timeline": [
+        {
+          "date": "1796-06-01",
+          "status": "slave",
+          "note": "admitted / ratified"
+        },
+        {
+          "date": "1861-06-08",
+          "status": "confederate",
+          "note": "secession approved by referendum (legislature declared independence May 6, 1861)"
+        }
+      ],
+      "source": "Wikipedia, 'List of U.S. states by date of admission to the Union' (https://en.wikipedia.org/wiki/List_of_U.S._states_by_date_of_admission_to_the_Union; dates cited there to Library of Congress 'Today in History' and Vile, Constitutional Convention of 1787 encyclopedia); Wikipedia, 'Confederate States of America', order of secession resolutions and dates (https://en.wikipedia.org/wiki/Confederate_States_of_America; ordinance texts via archived civilwar ordinance pages)",
+      "verified": "2026-10-07",
+      "note": "Secession date shown = June 8, 1861 referendum (verified). The legislature's action is dated May 6, 1861 in the timeline note; Wikipedia's CSA list dates the legislature's military league with the Confederacy May 7, 1861 — both dates appear in sources."
+    },
+    {
+      "id": "22",
+      "name": "Louisiana",
+      "abbr": "LA",
+      "timeline": [
+        {
+          "date": "1812-04-30",
+          "status": "slave",
+          "note": "admitted / ratified"
+        },
+        {
+          "date": "1861-01-26",
+          "status": "confederate",
+          "note": "ordinance of secession adopted"
+        }
+      ],
+      "source": "Wikipedia, 'List of U.S. states by date of admission to the Union' (https://en.wikipedia.org/wiki/List_of_U.S._states_by_date_of_admission_to_the_Union; dates cited there to Library of Congress 'Today in History' and Vile, Constitutional Convention of 1787 encyclopedia); Wikipedia, 'Confederate States of America', order of secession resolutions and dates (https://en.wikipedia.org/wiki/Confederate_States_of_America; ordinance texts via archived civilwar ordinance pages)",
+      "verified": "2026-10-07"
+    },
+    {
+      "id": "28",
+      "name": "Mississippi",
+      "abbr": "MS",
+      "timeline": [
+        {
+          "date": "1817-12-10",
+          "status": "slave",
+          "note": "admitted / ratified"
+        },
+        {
+          "date": "1861-01-09",
+          "status": "confederate",
+          "note": "ordinance of secession adopted"
+        }
+      ],
+      "source": "Wikipedia, 'List of U.S. states by date of admission to the Union' (https://en.wikipedia.org/wiki/List_of_U.S._states_by_date_of_admission_to_the_Union; dates cited there to Library of Congress 'Today in History' and Vile, Constitutional Convention of 1787 encyclopedia); Wikipedia, 'Confederate States of America', order of secession resolutions and dates (https://en.wikipedia.org/wiki/Confederate_States_of_America; ordinance texts via archived civilwar ordinance pages)",
+      "verified": "2026-10-07"
+    },
+    {
+      "id": "01",
+      "name": "Alabama",
+      "abbr": "AL",
+      "timeline": [
+        {
+          "date": "1819-12-14",
+          "status": "slave",
+          "note": "admitted / ratified"
+        },
+        {
+          "date": "1861-01-11",
+          "status": "confederate",
+          "note": "ordinance of secession adopted"
+        }
+      ],
+      "source": "Wikipedia, 'List of U.S. states by date of admission to the Union' (https://en.wikipedia.org/wiki/List_of_U.S._states_by_date_of_admission_to_the_Union; dates cited there to Library of Congress 'Today in History' and Vile, Constitutional Convention of 1787 encyclopedia); Wikipedia, 'Confederate States of America', order of secession resolutions and dates (https://en.wikipedia.org/wiki/Confederate_States_of_America; ordinance texts via archived civilwar ordinance pages)",
+      "verified": "2026-10-07"
+    },
+    {
+      "id": "05",
+      "name": "Arkansas",
+      "abbr": "AR",
+      "timeline": [
+        {
+          "date": "1819-07-04",
+          "status": "open",
+          "note": "Arkansas Territory; slavery legal"
+        },
+        {
+          "date": "1836-06-15",
+          "status": "slave",
+          "note": "admitted / ratified"
+        },
+        {
+          "date": "1861-05-06",
+          "status": "confederate",
+          "note": "ordinance of secession adopted"
+        }
+      ],
+      "source": "Wikipedia, 'List of U.S. states by date of admission to the Union' (https://en.wikipedia.org/wiki/List_of_U.S._states_by_date_of_admission_to_the_Union; dates cited there to Library of Congress 'Today in History' and Vile, Constitutional Convention of 1787 encyclopedia); Wikipedia, 'Confederate States of America', order of secession resolutions and dates (https://en.wikipedia.org/wiki/Confederate_States_of_America; ordinance texts via archived civilwar ordinance pages)",
+      "verified": "2026-10-07",
+      "note": "Admission date verified; pre-statehood territorial dates (first timeline entry) not re-verified this session."
+    },
+    {
+      "id": "12",
+      "name": "Florida",
+      "abbr": "FL",
+      "timeline": [
+        {
+          "date": "1821-07-17",
+          "status": "open",
+          "note": "transferred from Spain (Adams-Onís Treaty); Florida Territory 1822, slavery legal"
+        },
+        {
+          "date": "1845-03-03",
+          "status": "slave",
+          "note": "admitted / ratified"
+        },
+        {
+          "date": "1861-01-10",
+          "status": "confederate",
+          "note": "ordinance of secession adopted"
+        }
+      ],
+      "source": "Wikipedia, 'List of U.S. states by date of admission to the Union' (https://en.wikipedia.org/wiki/List_of_U.S._states_by_date_of_admission_to_the_Union; dates cited there to Library of Congress 'Today in History' and Vile, Constitutional Convention of 1787 encyclopedia); Wikipedia, 'Confederate States of America', order of secession resolutions and dates (https://en.wikipedia.org/wiki/Confederate_States_of_America; ordinance texts via archived civilwar ordinance pages)",
+      "verified": "2026-10-07",
+      "note": "Admission date verified; pre-statehood territorial dates (first timeline entry) not re-verified this session."
+    },
+    {
+      "id": "48",
+      "name": "Texas",
+      "abbr": "TX",
+      "timeline": [
+        {
+          "date": "1845-12-29",
+          "status": "slave",
+          "note": "admitted / ratified"
+        },
+        {
+          "date": "1861-02-01",
+          "status": "confederate",
+          "note": "ordinance adopted by convention (ratified by referendum Feb 23, 1861)"
+        }
+      ],
+      "source": "Wikipedia, 'List of U.S. states by date of admission to the Union' (https://en.wikipedia.org/wiki/List_of_U.S._states_by_date_of_admission_to_the_Union; dates cited there to Library of Congress 'Today in History' and Vile, Constitutional Convention of 1787 encyclopedia); Wikipedia, 'Confederate States of America', order of secession resolutions and dates (https://en.wikipedia.org/wiki/Confederate_States_of_America; ordinance texts via archived civilwar ordinance pages)",
+      "verified": "2026-10-07"
+    }
+  ],
+  "territories": [
+    {
+      "id": "la-north",
+      "name": "Louisiana Purchase north of 36°30′",
+      "approximate": true,
+      "ring": [
+        [
+          -89.5,
+          36.5
+        ],
+        [
+          -89.6,
+          37.3
+        ],
+        [
+          -90.2,
+          38.6
+        ],
+        [
+          -91.4,
+          40.4
+        ],
+        [
+          -91.2,
+          42.7
+        ],
+        [
+          -92,
+          44.5
+        ],
+        [
+          -93.3,
+          45
+        ],
+        [
+          -94.4,
+          46.4
+        ],
+        [
+          -95.2,
+          47.2
+        ],
+        [
+          -95.2,
+          49
+        ],
+        [
+          -114.07,
+          49
+        ],
+        [
+          -113.4,
+          48.4
+        ],
+        [
+          -114.4,
+          47.5
+        ],
+        [
+          -114.6,
+          46.6
+        ],
+        [
+          -114.1,
+          45.7
+        ],
+        [
+          -113.5,
+          45.1
+        ],
+        [
+          -112.8,
+          44.4
+        ],
+        [
+          -111.4,
+          44.7
+        ],
+        [
+          -110.5,
+          44.4
+        ],
+        [
+          -109.5,
+          43.2
+        ],
+        [
+          -107.9,
+          42
+        ],
+        [
+          -106.3,
+          42
+        ],
+        [
+          -106.3,
+          39.2
+        ],
+        [
+          -105.5,
+          38.5
+        ],
+        [
+          -104,
+          38.2
+        ],
+        [
+          -102,
+          38
+        ],
+        [
+          -100,
+          37.75
+        ],
+        [
+          -100,
+          36.5
+        ]
+      ],
+      "timeline": [
+        {
+          "date": "1820-03-06",
+          "status": "closed",
+          "note": "Missouri Compromise: slavery prohibited north of 36°30′ (except Missouri)"
+        },
+        {
+          "date": "1854-05-30",
+          "status": "popular",
+          "note": "Kansas-Nebraska Act: Kansas and Nebraska Territories, slavery by popular sovereignty; Missouri Compromise line repealed"
+        }
+      ],
+      "note": "Approximation: Mississippi River, Continental Divide and Adams-Onís line simplified; from 1854 the whole area is shown as Kansas-Nebraska popular sovereignty, though its northeast (east of the Missouri River) belonged to Minnesota Territory until 1858. Territorial dates/boundaries not re-verified this session (approximate).",
+      "source": "National Archives, Milestone Documents: 'Missouri Compromise (1820)'; Library of Congress, 'Missouri Compromise: Primary Documents in American History'; National Archives, Milestone Documents: 'Kansas-Nebraska Act (1854)'; Library of Congress, 'Kansas-Nebraska Act: Primary Documents in American History'"
+    },
+    {
+      "id": "la-south",
+      "name": "Louisiana Purchase south of 36°30′ (Arkansas Territory / Indian Territory)",
+      "approximate": true,
+      "ring": [
+        [
+          -89.5,
+          36.5
+        ],
+        [
+          -100,
+          36.5
+        ],
+        [
+          -100,
+          34.56
+        ],
+        [
+          -98.5,
+          34.1
+        ],
+        [
+          -97,
+          33.8
+        ],
+        [
+          -95.5,
+          33.9
+        ],
+        [
+          -94.04,
+          33.55
+        ],
+        [
+          -94.04,
+          33
+        ],
+        [
+          -91.15,
+          33
+        ],
+        [
+          -91.1,
+          33.1
+        ],
+        [
+          -90.1,
+          35.1
+        ],
+        [
+          -89.4,
+          36
+        ]
+      ],
+      "timeline": [
+        {
+          "date": "1820-03-06",
+          "status": "open",
+          "note": "Arkansas Territory (1819); Missouri Compromise left slavery legal south of 36°30′"
+        },
+        {
+          "date": "1834-06-30",
+          "status": "other",
+          "note": "land west of Arkansas set aside as Indian Territory (boundary moved 1824/1828; Indian Intercourse Act 1834)"
+        }
+      ],
+      "note": "Approximation: modern Arkansas is drawn separately; the area west of it is shown as Indian Territory from 1834. Territorial dates/boundaries not re-verified this session (approximate).",
+      "source": "National Archives, Milestone Documents: 'Missouri Compromise (1820)'; Library of Congress, 'Missouri Compromise: Primary Documents in American History'; National Archives, Milestone Documents (Northwest Ordinance 1787; Missouri Compromise 1820; Oregon Territory Act 1848; Compromise of 1850; Kansas-Nebraska Act 1854); boundaries simplified"
+    },
+    {
+      "id": "texas-claim",
+      "name": "Texas claims beyond the modern state",
+      "approximate": true,
+      "acquisition": "texas",
+      "timeline": [
+        {
+          "date": "1845-12-29",
+          "status": "slave",
+          "note": "claimed by the state of Texas"
+        },
+        {
+          "date": "1850-09-09",
+          "status": "popular",
+          "note": "Compromise of 1850: Texas gave up its claims; most went to New Mexico Territory (popular sovereignty)"
+        }
+      ],
+      "note": "Approximation: uses the simplified Texas-annexation polygon from usGeo ACQUISITIONS; the modern state of Texas is drawn on top. Territorial dates/boundaries not re-verified this session (approximate).",
+      "source": "National Archives, Milestone Documents: 'Compromise of 1850'; Library of Congress, 'Compromise of 1850: Primary Documents in American History'"
+    },
+    {
+      "id": "mexican-cession",
+      "name": "Mexican Cession (Utah and New Mexico Territories from 1850)",
+      "approximate": true,
+      "acquisition": "mexican_cession",
+      "timeline": [
+        {
+          "date": "1848-05-30",
+          "status": "other",
+          "note": "Treaty of Guadalupe Hidalgo ratified; unorganized, status of slavery disputed (Wilmot Proviso)"
+        },
+        {
+          "date": "1850-09-09",
+          "status": "popular",
+          "note": "Compromise of 1850: Utah and New Mexico Territories, slavery by popular sovereignty"
+        }
+      ],
+      "note": "Approximation: simplified cession polygon from usGeo ACQUISITIONS; California drawn on top. Territorial dates/boundaries not re-verified this session (approximate).",
+      "source": "National Archives, Milestone Documents: 'Compromise of 1850'; Library of Congress, 'Compromise of 1850: Primary Documents in American History'"
+    },
+    {
+      "id": "gadsden",
+      "name": "Gadsden Purchase",
+      "approximate": true,
+      "acquisition": "gadsden",
+      "timeline": [
+        {
+          "date": "1854-06-30",
+          "status": "popular",
+          "note": "Gadsden Purchase in force; added to New Mexico Territory"
+        }
+      ],
+      "note": "Approximation: simplified polygon from usGeo ACQUISITIONS. Territorial dates/boundaries not re-verified this session (approximate).",
+      "source": "National Archives, 'Gadsden Purchase Treaty (1853)'; Library of Congress, 'Gadsden Purchase'"
+    },
+    {
+      "id": "oregon-country",
+      "name": "Oregon Country (Oregon, later also Washington Territory)",
+      "approximate": true,
+      "acquisition": "oregon",
+      "timeline": [
+        {
+          "date": "1846-06-15",
+          "status": "other",
+          "note": "Oregon Treaty with Britain"
+        },
+        {
+          "date": "1848-08-14",
+          "status": "closed",
+          "note": "Oregon Territory Act: slavery prohibited"
+        }
+      ],
+      "note": "Approximation: simplified polygon from usGeo ACQUISITIONS; state of Oregon drawn on top. Territorial dates/boundaries not re-verified this session (approximate).",
+      "source": "National Archives, Milestone Documents (Northwest Ordinance 1787; Missouri Compromise 1820; Oregon Territory Act 1848; Compromise of 1850; Kansas-Nebraska Act 1854); boundaries simplified"
+    }
+  ],
+  "lines": [
+    {
+      "id": "line-3630",
+      "name": "Missouri Compromise line, 36°30′ N",
+      "coords": [
+        [
+          -94.62,
+          36.5
+        ],
+        [
+          -100,
+          36.5
+        ]
+      ],
+      "drawn": "1820-03-06",
+      "repealed": "1854-05-30",
+      "note": "Applied to the Louisiana Purchase west of Missouri (to the 100th meridian, the 1819 boundary); extended through Texas claims in 1845 (not drawn). Repeal date May 30, 1854 verified (Kansas–Nebraska Act signed); drawn date Mar 6, 1820 not re-retrieved.",
+      "source": "National Archives, Milestone Documents: 'Missouri Compromise (1820)'; Library of Congress, 'Missouri Compromise: Primary Documents in American History'; National Archives, Milestone Documents: 'Kansas-Nebraska Act (1854)'; Library of Congress, 'Kansas-Nebraska Act: Primary Documents in American History'",
+      "verified": "2026-10-07"
+    }
+  ],
+  "enslaved1860": {
+    "total": 3953760,
+    "totalNote": "all states and territories, 1860 census",
+    "source": "Wikipedia, '1860 United States census', population table, Slave Population column (https://en.wikipedia.org/wiki/1860_United_States_census; tabulated from the Eighth Census returns)",
+    "states": [
+      {
+        "id": "51",
+        "name": "Virginia",
+        "value": 490865,
+        "source": "Wikipedia, '1860 United States census', population table, Slave Population column (https://en.wikipedia.org/wiki/1860_United_States_census; tabulated from the Eighth Census returns)",
+        "verified": "2026-10-07"
+      },
+      {
+        "id": "13",
+        "name": "Georgia",
+        "value": 462198,
+        "source": "Wikipedia, '1860 United States census', population table, Slave Population column (https://en.wikipedia.org/wiki/1860_United_States_census; tabulated from the Eighth Census returns)",
+        "verified": "2026-10-07"
+      },
+      {
+        "id": "28",
+        "name": "Mississippi",
+        "value": 436631,
+        "source": "Wikipedia, '1860 United States census', population table, Slave Population column (https://en.wikipedia.org/wiki/1860_United_States_census; tabulated from the Eighth Census returns)",
+        "verified": "2026-10-07"
+      },
+      {
+        "id": "01",
+        "name": "Alabama",
+        "value": 435080,
+        "source": "Wikipedia, '1860 United States census', population table, Slave Population column (https://en.wikipedia.org/wiki/1860_United_States_census; tabulated from the Eighth Census returns)",
+        "verified": "2026-10-07"
+      },
+      {
+        "id": "45",
+        "name": "South Carolina",
+        "value": 402406,
+        "source": "Wikipedia, '1860 United States census', population table, Slave Population column (https://en.wikipedia.org/wiki/1860_United_States_census; tabulated from the Eighth Census returns)",
+        "verified": "2026-10-07"
+      },
+      {
+        "id": "22",
+        "name": "Louisiana",
+        "value": 331726,
+        "source": "Wikipedia, '1860 United States census', population table, Slave Population column (https://en.wikipedia.org/wiki/1860_United_States_census; tabulated from the Eighth Census returns)",
+        "verified": "2026-10-07"
+      },
+      {
+        "id": "37",
+        "name": "North Carolina",
+        "value": 331059,
+        "source": "Wikipedia, '1860 United States census', population table, Slave Population column (https://en.wikipedia.org/wiki/1860_United_States_census; tabulated from the Eighth Census returns)",
+        "verified": "2026-10-07"
+      },
+      {
+        "id": "47",
+        "name": "Tennessee",
+        "value": 275719,
+        "source": "Wikipedia, '1860 United States census', population table, Slave Population column (https://en.wikipedia.org/wiki/1860_United_States_census; tabulated from the Eighth Census returns)",
+        "verified": "2026-10-07"
+      },
+      {
+        "id": "21",
+        "name": "Kentucky",
+        "value": 225483,
+        "source": "Wikipedia, '1860 United States census', population table, Slave Population column (https://en.wikipedia.org/wiki/1860_United_States_census; tabulated from the Eighth Census returns)",
+        "verified": "2026-10-07"
+      },
+      {
+        "id": "48",
+        "name": "Texas",
+        "value": 182566,
+        "source": "Wikipedia, '1860 United States census', population table, Slave Population column (https://en.wikipedia.org/wiki/1860_United_States_census; tabulated from the Eighth Census returns)",
+        "verified": "2026-10-07"
+      },
+      {
+        "id": "29",
+        "name": "Missouri",
+        "value": 114931,
+        "source": "Wikipedia, '1860 United States census', population table, Slave Population column (https://en.wikipedia.org/wiki/1860_United_States_census; tabulated from the Eighth Census returns)",
+        "verified": "2026-10-07"
+      },
+      {
+        "id": "05",
+        "name": "Arkansas",
+        "value": 111115,
+        "source": "Wikipedia, '1860 United States census', population table, Slave Population column (https://en.wikipedia.org/wiki/1860_United_States_census; tabulated from the Eighth Census returns)",
+        "verified": "2026-10-07"
+      },
+      {
+        "id": "24",
+        "name": "Maryland",
+        "value": 87189,
+        "source": "Wikipedia, '1860 United States census', population table, Slave Population column (https://en.wikipedia.org/wiki/1860_United_States_census; tabulated from the Eighth Census returns)",
+        "verified": "2026-10-07"
+      },
+      {
+        "id": "12",
+        "name": "Florida",
+        "value": 61745,
+        "source": "Wikipedia, '1860 United States census', population table, Slave Population column (https://en.wikipedia.org/wiki/1860_United_States_census; tabulated from the Eighth Census returns)",
+        "verified": "2026-10-07"
+      },
+      {
+        "id": "10",
+        "name": "Delaware",
+        "value": 1798,
+        "source": "Wikipedia, '1860 United States census', population table, Slave Population column (https://en.wikipedia.org/wiki/1860_United_States_census; tabulated from the Eighth Census returns)",
+        "verified": "2026-10-07"
+      }
+    ],
+    "verified": "2026-10-07",
+    "note": "State values match the 1860 census slave column. Total 3,953,760 = these 15 states (3,950,511) + New Jersey 18 + District of Columbia 3,185 + territories (Nebraska 15, Kansas 2, Utah 29); NJ/DC/territory components from standard census tabulations, not separately re-retrieved."
+  }
+}

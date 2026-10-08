@@ -1,0 +1,24 @@
+node_modules/
+out/
+dist/
+.DS_Store
+
+# ── Downloaded: re-download with `npm run setup:downloads` (links in docs/DOWNLOADS.md) ──
+public/fonts/
+public/historic/
+public/u1e*/
+src/data/geo/us-states-10m.json
+src/data/geo/lakes-50m.json
+src/data/geo/us-rivers-10m.json
+data/images.lock.json
+
+# ── Regenerable narration / build artifacts ──
+tts/
+public/audio/
+public/assets/_candidates/
+data/*/turns.json
+data/*/timing_map.json
+data/*/levels.json
+data/*/word_times.json
+script/*-practice.md
+tools/tmp-*

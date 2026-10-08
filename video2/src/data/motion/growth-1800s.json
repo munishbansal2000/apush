@@ -1,0 +1,144 @@
+{
+  "_doc": "Market Revolution / transportation growth data. Coordinates [lon, lat]. A line without `reached` draws in when the year passes `opened`. A line with `reached` grows waypoint by waypoint: each entry = the year construction reached waypoint index `wp` (first entry = start of construction, nothing drawn yet). Routes run through real towns but are simplified centre lines (approximate: true). Fractional years: 1869.36 ≈ May 10, 1869.",
+  "lines": [
+    {
+      "id": "erie-canal",
+      "name": "Erie Canal",
+      "kind": "canal",
+      "opened": 1825.8,
+      "approximate": true,
+      "path": [[-78.88, 42.89], [-78.69, 43.17], [-77.61, 43.16], [-77.0, 43.06], [-76.6, 43.02], [-76.15, 43.05], [-75.46, 43.21], [-75.23, 43.1], [-74.86, 43.04], [-74.19, 42.94], [-73.94, 42.81], [-73.75, 42.65]],
+      "stops": ["Buffalo", "Lockport", "Rochester", "Lyons", "Montezuma", "Syracuse", "Rome", "Utica", "Little Falls", "Amsterdam", "Schenectady", "Albany"],
+      "note": "Opened Oct. 26, 1825 (the Seneca Chief left Buffalo for Albany and New York). 363 miles, Buffalo to Albany, following the Mohawk Valley east of Rome. Sections opened from 1819; drawn here at full opening.",
+      "source": "New York State Canal Corporation, 'Erie Canal history'; Erie Canalway National Heritage Corridor (NPS). Route approximate (town to town)."
+    },
+    {
+      "id": "national-road",
+      "name": "National Road",
+      "kind": "road",
+      "opened": 1811,
+      "approximate": true,
+      "path": [[-78.76, 39.65], [-79.72, 39.9], [-80.25, 40.17], [-80.72, 40.06], [-81.3, 40.02], [-82.01, 39.94], [-83.0, 39.96], [-83.81, 39.92], [-84.89, 39.83], [-86.16, 39.77], [-87.41, 39.47], [-88.2, 39.2], [-89.09, 38.96]],
+      "stops": ["Cumberland", "Uniontown", "Washington, Pa.", "Wheeling", "Cambridge (approx.)", "Zanesville", "Columbus", "Springfield, Ohio", "Richmond, Ind.", "Indianapolis", "Terre Haute", "(Illinois)", "Vandalia"],
+      "reached": [{ "year": 1811, "wp": 0 }, { "year": 1818, "wp": 3 }, { "year": 1830, "wp": 5 }, { "year": 1833, "wp": 6 }, { "year": 1839, "wp": 12 }],
+      "note": "Begun at Cumberland, Md., 1811; reached Wheeling 1818; Zanesville c. 1830; Columbus 1833; graded (partly unfinished) to Vandalia, Ill., by c. 1839. Indiana–Illinois timing approximate.",
+      "source": "Federal Highway Administration, 'The National Road' (fhwa.dot.gov); National Road Heritage Corridor. Dates west of Columbus approximate."
+    },
+    {
+      "id": "b-and-o",
+      "name": "Baltimore & Ohio Railroad",
+      "label": "B&O Railroad",
+      "kind": "railroad",
+      "opened": 1830.4,
+      "approximate": true,
+      "path": [[-76.61, 39.29], [-76.8, 39.27], [-77.54, 39.27], [-77.73, 39.32], [-77.96, 39.46], [-78.18, 39.7], [-78.76, 39.65], [-79.41, 39.41], [-80.02, 39.34], [-80.14, 39.48], [-80.72, 40.06]],
+      "stops": ["Baltimore", "Ellicott's Mills", "Point of Rocks", "Harpers Ferry", "Martinsburg", "Hancock", "Cumberland", "Oakland", "Grafton", "Fairmont", "Wheeling"],
+      "reached": [{ "year": 1828.5, "wp": 0 }, { "year": 1830.4, "wp": 1 }, { "year": 1832.3, "wp": 2 }, { "year": 1834.9, "wp": 3 }, { "year": 1842.9, "wp": 6 }, { "year": 1853.0, "wp": 10 }],
+      "note": "First US common-carrier railroad: Ellicott's Mills May 1830, Harpers Ferry Dec. 1834, Cumberland Nov. 1842, Wheeling on the Ohio Jan. 1853.",
+      "source": "B&O Railroad Museum, 'History of the B&O'; Stover, History of the Baltimore and Ohio Railroad (1987). Route approximate."
+    },
+    {
+      "id": "pennsylvania-rr",
+      "name": "Pennsylvania Railroad",
+      "label": "Pennsylvania R.R.",
+      "kind": "railroad",
+      "opened": 1849.7,
+      "approximate": true,
+      "path": [[-76.88, 40.27], [-77.57, 40.6], [-78.01, 40.48], [-78.4, 40.52], [-78.92, 40.33], [-80.0, 40.44]],
+      "stops": ["Harrisburg", "Lewistown", "Huntingdon", "Altoona", "Johnstown", "Pittsburgh"],
+      "reached": [{ "year": 1847.6, "wp": 0 }, { "year": 1849.7, "wp": 1 }, { "year": 1850.9, "wp": 3 }, { "year": 1852.9, "wp": 5 }],
+      "note": "Harrisburg–Lewistown 1849; Altoona 1850; through service to Pittsburgh Dec. 1852 (via the Allegheny Portage RR until the Horseshoe Curve line opened Feb. 1854). Philadelphia–Harrisburg used earlier lines (Philadelphia & Columbia, 1834).",
+      "source": "Pennsylvania Historical and Museum Commission, 'Pennsylvania Railroad'; Churella, The Pennsylvania Railroad vol. 1 (2013). Route approximate."
+    },
+    {
+      "id": "lake-shore",
+      "name": "Buffalo–Chicago rail line",
+      "label": "Rails reach Chicago",
+      "kind": "railroad",
+      "opened": 1852.2,
+      "approximate": true,
+      "path": [[-78.88, 42.89], [-80.09, 42.13], [-81.69, 41.5], [-82.7, 41.45], [-83.54, 41.65], [-84.8, 41.72], [-85.98, 41.68], [-86.25, 41.68], [-86.72, 41.61], [-87.63, 41.88]],
+      "stops": ["Buffalo", "Erie", "Cleveland", "Sandusky (approx.)", "Toledo", "(Michigan line)", "Elkhart", "South Bend", "La Porte", "Chicago"],
+      "note": "Michigan Southern reached Chicago Feb. 1852; Buffalo–Cleveland 1852 and Cleveland–Toledo 1853 completed the lake-shore route (later Lake Shore & Michigan Southern). Drawn as one line at 1852.",
+      "source": "Encyclopedia of Chicago (Chicago Historical Society), 'Railroads'; Cronon, Nature's Metropolis (1991). Route approximate."
+    },
+    {
+      "id": "rock-island",
+      "name": "Chicago & Rock Island Railroad",
+      "label": "Rock Island R.R.",
+      "kind": "railroad",
+      "opened": 1854.15,
+      "approximate": true,
+      "path": [[-87.63, 41.88], [-88.08, 41.53], [-88.84, 41.35], [-89.09, 41.33], [-90.58, 41.51]],
+      "stops": ["Chicago", "Joliet", "Ottawa", "LaSalle", "Rock Island"],
+      "note": "First railroad to reach the Mississippi River, Feb. 22, 1854.",
+      "source": "Encyclopedia of Chicago, 'Railroads'; Rock Island Arsenal Museum. Route approximate."
+    },
+    {
+      "id": "illinois-central",
+      "name": "Illinois Central Railroad",
+      "label": "Illinois Central",
+      "kind": "railroad",
+      "opened": 1856.7,
+      "approximate": true,
+      "path": [[-87.63, 41.88], [-87.86, 41.12], [-88.24, 40.12], [-88.37, 39.48], [-88.54, 39.12], [-89.13, 38.53], [-89.22, 37.73], [-89.18, 37.0]],
+      "stops": ["Chicago", "Kankakee", "Champaign", "Mattoon", "Effingham", "Centralia", "Carbondale", "Cairo"],
+      "note": "Chicago branch, Chicago–Centralia–Cairo; the whole system (with the Galena line) was completed Sept. 1856, built with the first federal railroad land grant (1850).",
+      "source": "Illinois State Historical Society; Encyclopedia of Chicago, 'Illinois Central Railroad'. Route approximate."
+    },
+    {
+      "id": "chicago-north-western",
+      "name": "Chicago & North Western (to Council Bluffs)",
+      "label": "Chicago & North Western",
+      "kind": "railroad",
+      "opened": 1855.9,
+      "approximate": true,
+      "path": [[-87.63, 41.88], [-90.19, 41.84], [-91.67, 41.98], [-93.62, 42.03], [-95.35, 42.02], [-95.86, 41.26]],
+      "stops": ["Chicago", "Clinton (Mississippi)", "Cedar Rapids", "Ames", "Denison (approx.)", "Council Bluffs"],
+      "reached": [{ "year": 1854.0, "wp": 0 }, { "year": 1855.9, "wp": 1 }, { "year": 1859.5, "wp": 2 }, { "year": 1867.05, "wp": 5 }],
+      "note": "Chicago to the Mississippi at Fulton/Clinton 1855; Cedar Rapids 1859; Council Bluffs (across from Omaha) Jan. 1867. Dates approximate.",
+      "source": "Encyclopedia of Chicago, 'Chicago & North Western Railway'; Iowa DOT, 'Iowa railroad history'. Route and intermediate dates approximate."
+    },
+    {
+      "id": "union-pacific",
+      "name": "Union Pacific Railroad",
+      "label": "Union Pacific",
+      "kind": "railroad",
+      "opened": 1865.5,
+      "approximate": true,
+      "path": [[-95.94, 41.26], [-96.5, 41.43], [-97.37, 41.43], [-98.34, 40.92], [-99.08, 40.7], [-100.77, 41.12], [-101.72, 41.13], [-102.26, 40.99], [-102.98, 41.14], [-104.82, 41.14], [-105.59, 41.31], [-107.24, 41.79], [-109.47, 41.53], [-110.96, 41.27], [-111.97, 41.22], [-112.11, 41.55], [-112.55, 41.62]],
+      "stops": ["Omaha", "Fremont", "Columbus", "Grand Island", "Kearney", "North Platte", "Ogallala", "Julesburg", "Sidney", "Cheyenne", "Laramie", "Rawlins", "Green River", "Evanston", "Ogden", "Corinne", "Promontory Summit"],
+      "reached": [{ "year": 1865.5, "wp": 0 }, { "year": 1866.6, "wp": 4 }, { "year": 1866.95, "wp": 5 }, { "year": 1867.5, "wp": 7 }, { "year": 1867.87, "wp": 9 }, { "year": 1868.35, "wp": 10 }, { "year": 1868.6, "wp": 11 }, { "year": 1868.8, "wp": 12 }, { "year": 1868.95, "wp": 13 }, { "year": 1869.18, "wp": 14 }, { "year": 1869.36, "wp": 16 }],
+      "note": "Track-laying west from Omaha began July 1865; North Platte Dec. 1866; Cheyenne Nov. 1867; Ogden March 1869; met the Central Pacific at Promontory Summit, Utah Territory, May 10, 1869. Intermediate dates approximate.",
+      "source": "NPS, Golden Spike National Historical Park, 'The Race to Promontory'; Union Pacific, 'History'. Route and intermediate dates approximate."
+    },
+    {
+      "id": "central-pacific",
+      "name": "Central Pacific Railroad",
+      "label": "Central Pacific",
+      "kind": "railroad",
+      "opened": 1863.8,
+      "approximate": true,
+      "path": [[-121.49, 38.58], [-121.29, 38.75], [-121.08, 38.9], [-120.95, 39.1], [-120.56, 39.31], [-120.18, 39.33], [-119.81, 39.53], [-119.29, 39.63], [-118.47, 40.18], [-117.73, 40.97], [-116.93, 40.64], [-115.76, 40.83], [-114.96, 41.11], [-113.91, 41.35], [-113.13, 41.75], [-112.55, 41.62]],
+      "stops": ["Sacramento", "Roseville", "Auburn", "Colfax", "Cisco", "Truckee", "Reno", "Wadsworth", "Lovelock", "Winnemucca", "Battle Mountain", "Elko", "Wells", "Lucin", "Kelton", "Promontory Summit"],
+      "reached": [{ "year": 1863.8, "wp": 0 }, { "year": 1865.35, "wp": 2 }, { "year": 1865.7, "wp": 3 }, { "year": 1866.9, "wp": 4 }, { "year": 1868.3, "wp": 5 }, { "year": 1868.4, "wp": 6 }, { "year": 1868.75, "wp": 9 }, { "year": 1868.95, "wp": 11 }, { "year": 1869.05, "wp": 12 }, { "year": 1869.36, "wp": 15 }],
+      "note": "First rails at Sacramento Oct. 1863; Colfax 1865; through the Sierra Nevada (Summit Tunnel) to Truckee 1868; Reno May 1868; Promontory Summit May 10, 1869. Intermediate dates approximate.",
+      "source": "NPS, Golden Spike National Historical Park; California State Railroad Museum, 'Central Pacific Railroad'. Route and intermediate dates approximate."
+    }
+  ],
+  "cities": {
+    "_doc": "Population of the city proper at each census (New York = Manhattan only, before the 1898 consolidation; Philadelphia before the 1854 consolidation counts the city proper only). Values between censuses are interpolated for animation only.",
+    "source": "U.S. Census Bureau, Gibson, 'Population of the 100 Largest Cities and Other Urban Places in the United States: 1790 to 1990', Population Division Working Paper No. 27 (1998), Tables 5–11 (1820–1880) (https://www.census.gov/library/working-papers/1998/demo/POP-twps0027.html; tables at https://www2.census.gov/library/working-papers/1998/demographics/pop-twps0027/tab05.txt … tab11.txt).",
+    "verified": "2026-10-07",
+    "list": [
+      { "name": "New York", "ll": [-74.0, 40.71], "pop": [[1820, 123706], [1830, 202589], [1840, 312710], [1850, 515547], [1860, 813669], [1870, 942292], [1880, 1206299]] },
+      { "name": "Philadelphia", "ll": [-75.16, 39.95], "pop": [[1820, 63802], [1830, 80462], [1840, 93665], [1850, 121376], [1860, 565529], [1870, 674022], [1880, 847170]], "note": "Jump 1850→1860 = 1854 consolidation of Philadelphia County into the city." },
+      { "name": "Baltimore", "ll": [-76.61, 39.29], "pop": [[1820, 62738], [1830, 80620], [1840, 102313], [1850, 169054], [1860, 212418], [1870, 267354], [1880, 332313]] },
+      { "name": "Boston", "ll": [-71.06, 42.36], "pop": [[1820, 43298], [1830, 61392], [1840, 93383], [1850, 136881], [1860, 177840], [1870, 250526], [1880, 362839]] },
+      { "name": "Cincinnati", "ll": [-84.51, 39.1], "pop": [[1820, 9642], [1830, 24831], [1840, 46338], [1850, 115435], [1860, 161044], [1870, 216239], [1880, 255139]] },
+      { "name": "St. Louis", "ll": [-90.2, 38.63], "note": "1830 corrected 5,852 → 4,977 per Working Paper 27 Table 6 (5,852 appears in some other compilations).", "pop": [[1830, 4977], [1840, 16469], [1850, 77860], [1860, 160773], [1870, 310864], [1880, 350518]] },
+      { "name": "Chicago", "ll": [-87.63, 41.88], "pop": [[1833, 350], [1840, 4470], [1850, 29963], [1860, 112172], [1870, 298977], [1880, 503185]], "note": "1833 = incorporation as a town, ≈350 residents (estimate, not a census figure; not re-verified this session). 1840–1880 values verified against WP27." },
+      { "name": "New Orleans", "ll": [-90.07, 29.95], "pop": [[1820, 27176], [1830, 46082], [1840, 102193], [1850, 116375], [1860, 168675], [1870, 191418], [1880, 216090]] }
+    ]
+  }
+}

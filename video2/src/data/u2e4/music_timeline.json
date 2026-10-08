@@ -1,0 +1,126 @@
+{
+  "episode": "U2E4",
+  "total_duration_sec": 813.1469969999998,
+  "events": [
+    {
+      "type": "intro_sting",
+      "asset_id": "intro_sting",
+      "start_sec": 0.0,
+      "duration_sec": 8.0,
+      "duck_dialogue": true,
+      "duck_db": -8.0,
+      "src": "audio/u2e4/music/intro_sting.wav",
+      "source": "music_dir"
+    },
+    {
+      "type": "chapter_sting",
+      "asset_id": "chapter_sting",
+      "start_sec": 161.23333333333332,
+      "duration_sec": 3.0,
+      "act": 2,
+      "src": "audio/u2e4/music/chapter_sting.wav",
+      "source": "music_dir"
+    },
+    {
+      "type": "chapter_sting",
+      "asset_id": "chapter_sting",
+      "start_sec": 331.4,
+      "duration_sec": 3.0,
+      "act": 3,
+      "src": "audio/u2e4/music/chapter_sting.wav",
+      "source": "music_dir"
+    },
+    {
+      "type": "chapter_sting",
+      "asset_id": "chapter_sting",
+      "start_sec": 492.2,
+      "duration_sec": 3.0,
+      "act": 4,
+      "src": "audio/u2e4/music/chapter_sting.wav",
+      "source": "music_dir"
+    },
+    {
+      "type": "chapter_sting",
+      "asset_id": "chapter_sting",
+      "start_sec": 643.8333333333334,
+      "duration_sec": 3.0,
+      "act": 5,
+      "src": "audio/u2e4/music/chapter_sting.wav",
+      "source": "music_dir"
+    },
+    {
+      "type": "outro_sting",
+      "asset_id": "outro_sting",
+      "start_sec": 805.1469969999998,
+      "duration_sec": 8.0,
+      "duck_dialogue": false,
+      "src": "audio/u2e4/music/outro_sting.wav",
+      "source": "music_dir"
+    },
+    {
+      "type": "bed_loop",
+      "asset_id": "bed_loop",
+      "start_sec": 0.0,
+      "duration_sec": 8.0,
+      "volume_db": -20.0,
+      "bed_index": 0,
+      "src": "audio/u2e4/music/bed_loop.wav",
+      "source": "procedural"
+    },
+    {
+      "type": "bed_loop",
+      "asset_id": "bed_loop",
+      "start_sec": 161.23333333333332,
+      "duration_sec": 3.0,
+      "volume_db": -20.0,
+      "bed_index": 1,
+      "src": "audio/u2e4/music/bed_loop.wav",
+      "source": "procedural"
+    },
+    {
+      "type": "bed_loop",
+      "asset_id": "bed_loop",
+      "start_sec": 331.4,
+      "duration_sec": 3.0,
+      "volume_db": -20.0,
+      "bed_index": 2,
+      "src": "audio/u2e4/music/bed_loop.wav",
+      "source": "procedural"
+    },
+    {
+      "type": "bed_loop",
+      "asset_id": "bed_loop",
+      "start_sec": 492.2,
+      "duration_sec": 3.0,
+      "volume_db": -20.0,
+      "bed_index": 3,
+      "src": "audio/u2e4/music/bed_loop.wav",
+      "source": "procedural"
+    },
+    {
+      "type": "bed_loop",
+      "asset_id": "bed_loop",
+      "start_sec": 643.8333333333334,
+      "duration_sec": 3.0,
+      "volume_db": -20.0,
+      "bed_index": 4,
+      "src": "audio/u2e4/music/bed_loop.wav",
+      "source": "procedural"
+    },
+    {
+      "type": "bed_loop",
+      "asset_id": "bed_loop",
+      "start_sec": 805.1469969999998,
+      "duration_sec": 8.0,
+      "volume_db": -20.0,
+      "bed_index": 5,
+      "src": "audio/u2e4/music/bed_loop.wav",
+      "source": "procedural"
+    }
+  ],
+  "mix_rules": {
+    "intro_duck_db": -8.0,
+    "bed_duck_db": -20.0,
+    "sting_gain_db": -6.0
+  }
+}

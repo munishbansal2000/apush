@@ -1,0 +1,49 @@
+{
+  "_doc": "Roll calls and counts for PeopleDots (src/motion/dots.tsx). Each cohort is an atomic sub-group (section × party × vote) so a dot keeps its identity when it is re-sorted. Colours are theme roles assigned in code (src/theme/tokens.ts), not stored here. Section = the state a member represented (free vs slave state in 1854).",
+  "kansasNebraska": {
+    "event": "Kansas–Nebraska Act, final House passage (H.R. 236)",
+    "date": "1854-05-22",
+    "chamber": "House",
+    "yea": 113,
+    "nay": 100,
+    "senate": {
+      "date": "1854-03-04",
+      "yea": 37,
+      "nay": 14,
+      "note": "Senate passed its version (S. 22) 37–14 on March 4, 1854 (early morning, after an all-night session); after the House passed H.R. 236 on May 22, the Senate approved it 35–13 on May 25 and Pierce signed it May 30, 1854.",
+      "source": "Voteview, 33rd Senate roll calls 52 (S. 22, 37–14) and 143 (H.R. 236, 35–13, May 25, 1854) (https://voteview.com/static/data/out/rollcalls/S033_rollcalls.csv); U.S. Senate Historical Office, 'The Kansas-Nebraska Act' (https://www.senate.gov/artandhistory/history/minute/Kansas_Nebraska_Act.htm) — vote in the early morning of March 4 (Voteview records legislative day March 3)",
+      "verified": "2026-10-07"
+    },
+    "cohorts": [
+      { "id": "nd-yea", "section": "free", "party": "Northern Democrats", "vote": "yea", "count": 44 },
+      { "id": "nd-nay", "section": "free", "party": "Northern Democrats", "vote": "nay", "count": 42 },
+      { "id": "nw-nay", "section": "free", "party": "Northern Whigs", "vote": "nay", "count": 45 },
+      { "id": "fs-nay", "section": "free", "party": "Free Soil", "vote": "nay", "count": 4 },
+      { "id": "sd-yea", "section": "slave", "party": "Southern Democrats", "vote": "yea", "count": 57 },
+      { "id": "sd-nay", "section": "slave", "party": "Southern Democrats", "vote": "nay", "count": 2 },
+      { "id": "sw-yea", "section": "slave", "party": "Southern Whigs", "vote": "yea", "count": 12 },
+      { "id": "sw-nay", "section": "slave", "party": "Southern Whigs", "vote": "nay", "count": 7 }
+    ],
+    "totals": {
+      "free": { "yea": 44, "nay": 91 },
+      "slave": { "yea": 69, "nay": 9 }
+    },
+    "status": "settled",
+    "note": "Verified against the roll call (Voteview House roll 309, 'To pass H.R. 236', May 22, 1854: 113–100). Section totals are exact from the roll call: free states 44–91, slave states 69–9. Party split follows Nevins, Ordeal of the Union (pp. 156–57, as cited by Wikipedia): Northern Democrats 44–42, Northern Whigs 0–45, Free Soilers 0–4, Southern Democrats 57–2, Southern Whigs 12–7. Voteview's party coding differs by two members: Southern Democrats 56–2 / Southern Whigs 13–7 (it codes Alexander Stephens, Ga., as a Whig) and Northern Whigs 0–44 plus Caleb Lyon (N.Y., Independent) 0–1. Free Soil nays confirmed: De Witt (Mass.), Giddings (Ohio), Gerrit Smith (N.Y.), Wade (Ohio).",
+    "source": "Voteview, 33rd House roll call 309 with member party/state codes (https://voteview.com/static/data/out/votes/H033_votes.csv, https://voteview.com/static/data/out/members/H033_members.csv); Wikipedia, 'Kansas–Nebraska Act' (https://en.wikipedia.org/wiki/Kansas%E2%80%93Nebraska_Act; party split citing Nevins, Ordeal of the Union, pp. 156–157)",
+    "verified": "2026-10-07"
+  },
+  "threeFifths": {
+    "event": "Three-Fifths Compromise (Constitutional Convention, 1787; Art. I, Sec. 2)",
+    "rule": "Enslaved people counted as three-fifths of a person for apportioning House seats and direct taxes",
+    "census": 1790,
+    "enslaved": 697681,
+    "counted": 418609,
+    "dotEquals": 20000,
+    "dots": 35,
+    "status": "settled-with-nuance",
+    "note": "1790 census enslaved total: 697,681 — the state-by-state table (Census Bureau, Heads of Families at the First Census, 1908, as tabulated on Wikipedia) sums to 697,697, which includes 16 people in Vermont later found to be free persons misclassified as enslaved; 697,697 − 16 = 697,681. (The earlier claim that the 1791 printed return gave 694,280 could not be confirmed this session and was removed.) counted = 3/5 × 697,681 = 418,608.6 → 418,609. Dots are an approximation: 35 dots × 20,000 ≈ 700,000; 21 counted dots ≈ 420,000 — the labels show the exact figures.",
+    "source": "Wikipedia, '1790 United States census', state table and Vermont footnote (https://en.wikipedia.org/wiki/1790_United_States_census; citing U.S. Census Bureau, Heads of Families at the First Census, https://www.census.gov/library/publications/1907/dec/heads-of-families.html); U.S. Constitution, Art. I, Sec. 2, cl. 3",
+    "verified": "2026-10-07"
+  }
+}

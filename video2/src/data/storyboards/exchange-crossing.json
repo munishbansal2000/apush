@@ -1,0 +1,82 @@
+{
+  "id": "exchange-crossing",
+  "scene": "src/scenes/ExchangeCrossing.tsx",
+  "narration": "src/data/prototype/exchange.json",
+  "elements": {
+    "chip-1493": { "kind": "panel", "in": { "s": 0, "dt": -0.4 }, "out": { "s": 1, "dt": -0.2 }, "note": "date chip slides in from the left" },
+    "label-spain": { "kind": "label", "in": { "s": 0, "dt": -0.5 }, "out": { "s": 2 } },
+    "ship-west": { "kind": "motion", "in": { "s": 0, "dt": 1.7 }, "out": { "s": 2, "dt": 2.1 }, "note": "creak as it leaves Cádiz" },
+    "camera-follow": { "kind": "camera", "in": { "s": 0, "dt": 2.7 }, "out": { "s": 0, "dt": 5.7 } },
+    "camera-crossing": { "kind": "camera", "in": { "s": 1 }, "out": { "s": 1, "dt": 1.8 } },
+    "flow-west": {
+      "kind": "motion", "in": { "s": 1, "dt": -0.2 }, "out": { "s": 1, "dt": 1.0 },
+      "events": [{ "s": 1, "word": "wheat" }, { "s": 1, "word": "sugarcane" }, { "s": 1, "word": "horses" }, { "s": 1, "word": "pigs" }, { "s": 1, "word": "cattle" }],
+      "note": "draws west, thickens on each cargo word"
+    },
+    "terms-west": {
+      "kind": "panel", "in": { "s": 1, "word": "wheat", "dt": -0.15 }, "out": { "s": 2, "dt": -0.1 },
+      "events": [{ "s": 1, "word": "sugarcane" }, { "s": 1, "word": "horses" }, { "s": 1, "word": "pigs" }, { "s": 1, "word": "cattle" }]
+    },
+    "label-hispaniola": { "kind": "label", "in": { "s": 1, "dt": 1.6 }, "out": { "s": 3, "dt": -0.3 } },
+    "camera-ship": { "kind": "camera", "in": { "s": 2, "dt": -0.2 }, "out": { "s": 2, "dt": 1.6 } },
+    "stowaways": { "kind": "motion", "in": { "s": 2, "word": "invisible", "dt": -0.3 }, "out": { "s": 2, "dt": 2.1 }, "note": "red particles revealed in the hold" },
+    "camera-caribbean": { "kind": "camera", "in": { "s": 3, "dt": 0.3 }, "out": { "s": 3, "dt": 2.1 } },
+    "chip-1500s": { "kind": "panel", "in": { "s": 3, "dt": 0.4 }, "out": { "s": 4, "dt": -0.2 } },
+    "terms-disease": {
+      "kind": "panel", "in": { "s": 3, "word": "smallpox", "dt": -0.15 }, "out": { "s": 4, "dt": -0.2 },
+      "events": [{ "s": 3, "word": "measles" }, { "s": 3, "word": "influenza" }]
+    },
+    "spread": { "kind": "motion", "in": { "s": 3, "dt": 1.8 }, "out": { "s": 3, "dt": 8.4 }, "note": "particles reach 8 towns, 0.7 s apart; thud as each is struck" },
+    "camera-east": { "kind": "camera", "in": { "s": 4 }, "out": { "s": 4, "dt": 1.8 } },
+    "flow-east": {
+      "kind": "motion", "in": { "s": 4, "dt": -0.2 }, "out": { "s": 4, "dt": 1.0 },
+      "events": [{ "s": 4, "word": "maize" }, { "s": 4, "word": "potatoes" }, { "s": 4, "word": "tomatoes" }, { "s": 4, "word": "cacao" }, { "s": 4, "word": "silver" }]
+    },
+    "ship-east": { "kind": "motion", "in": { "s": 4, "dt": 0.6 }, "out": { "s": 5, "dt": 1.5 } },
+    "terms-east": {
+      "kind": "panel", "in": { "s": 4, "word": "maize", "dt": -0.15 }, "out": { "s": 5, "dt": -0.1 },
+      "events": [{ "s": 4, "word": "potatoes" }, { "s": 4, "word": "tomatoes" }, { "s": 4, "word": "cacao" }, { "s": 4, "word": "silver" }]
+    },
+    "camera-pullback": { "kind": "camera", "in": { "s": 5 }, "out": { "s": 5, "dt": 2.5 } },
+    "summary": { "kind": "panel", "in": { "s": 5, "dt": 0.2 }, "events": [{ "s": 5, "dt": 1.9 }], "note": "FOOD ⇄ FOOD, then DISEASE → AMERICAS" },
+    "flow-disease": { "kind": "motion", "in": { "s": 5, "dt": 1.6 }, "out": { "s": 5, "dt": 2.8 } }
+  },
+  "shots": [
+    {
+      "sentence": 0, "camera": "follow",
+      "action": "The ship casts off from Cádiz and the camera follows it out into the Atlantic.",
+      "shows": "Spain, autumn 1493: the second voyage leaving, holds full.",
+      "elements": ["chip-1493", "label-spain", "ship-west", "camera-follow"]
+    },
+    {
+      "sentence": 1, "camera": "pull-back",
+      "action": "The westward flow draws across the ocean and thickens as each cargo is named; each name lands in the list.",
+      "shows": "The volume of European crops and livestock heading to Hispaniola.",
+      "elements": ["camera-crossing", "flow-west", "terms-west", "label-hispaniola", "ship-west"]
+    },
+    {
+      "sentence": 2, "camera": "push-in",
+      "action": "The camera closes on the ship as red particles are revealed riding in its hold.",
+      "shows": "Disease crossed unseen, on the same ship and the same route.",
+      "elements": ["camera-ship", "stowaways", "ship-west"]
+    },
+    {
+      "sentence": 3, "camera": "pan",
+      "action": "Particles leave Hispaniola and strike town after town, each dot turning grey as they arrive.",
+      "shows": "Epidemics moving port to port through the Caribbean, Mexico and the Andes over decades.",
+      "elements": ["camera-caribbean", "chip-1500s", "terms-disease", "spread"]
+    },
+    {
+      "sentence": 4, "camera": "pull-back",
+      "action": "A second ship sails home on a new eastward flow that thickens with each crop and silver.",
+      "shows": "American crops and silver flowing to Europe.",
+      "elements": ["camera-east", "flow-east", "ship-east", "terms-east"]
+    },
+    {
+      "sentence": 5, "camera": "pull-back",
+      "action": "The camera pulls back to both flows; the summary drops in, then the disease line draws one way only.",
+      "shows": "The asymmetry: food went both ways, death almost entirely one way.",
+      "elements": ["camera-pullback", "summary", "flow-disease", "ship-east"]
+    }
+  ]
+}

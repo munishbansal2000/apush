@@ -1,0 +1,51 @@
+{
+  "_doc": "Unit 1 practice questions: the ONE place these are written. tools/build-practice-script.ts turns this into script/u1-practice.md (spoken), src/episodes/u1-practice.ts reads it for the cards, tools/export-quiz.ts turns it into a quiz CSV + answer key. Spoken text (ask/answer/why) is linted like any script; facts must cite registry ids.",
+  "unit": "u1",
+  "title": "Unit 1 Practice",
+  "intro": "Unit 1 practice. Three exam-style questions, mixed across the unit. Say your answer out loud before we give it.",
+  "outro": "That's the set. If one tripped you up, rewatch that episode, then come back and try again.",
+  "questions": [
+    {
+      "id": "u1-q1",
+      "topic": "1.4",
+      "episode": "u1e3",
+      "format": "Stimulus · short answer",
+      "ask": "Question one. It's a stimulus. A Nahua account in the Florentine Codex describes smallpox victims lying in their homes, unable to move, with no one left to care for them. What larger pattern does it illustrate?",
+      "card": { "stem": "What larger pattern does this account illustrate?", "source": { "title": "FLORENTINE CODEX, BOOK 12 (PARAPHRASED)", "text": "Smallpox victims lay in their homes, unable to move, with no one left to care for them." } },
+      "prompt": "A Nahua account: smallpox victims unable to move, no one left to care for them. What larger pattern?",
+      "pauseSec": 15,
+      "answer": "A virgin-soil epidemic: Old World diseases hitting people with no prior exposure, emptying towns ahead of the soldiers.",
+      "reveal": "A virgin-soil epidemic. Disease ran ahead of the conquest.",
+      "why": "Name the pattern, then use the source. And notice it was compiled decades later, under a Spanish friar. That's a sourcing point.",
+      "facts": ["F-U1-020", "F-U1-023"]
+    },
+    {
+      "id": "u1-q2",
+      "topic": "1.4",
+      "episode": "u1e3",
+      "format": "Argument · defend or refute",
+      "ask": "Question two. A historian argues the potato did more to change Europe than any treaty of the 1500s. Defend or refute, using the Exchange.",
+      "card": { "stem": "“The potato did more to change Europe than any treaty of the 1500s.” Defend or refute, using the Exchange." },
+      "prompt": "Did the potato change Europe more than any treaty of the 1500s? Defend or refute.",
+      "pauseSec": 20,
+      "answer": "Defend it, and you'd say new crops reshaped populations: the potato helped fuel Europe's boom, and maize did the same in Africa and Asia. Refute it, and you'd argue silver and empire mattered more.",
+      "reveal": "Defend: new crops fueled population growth. Either way, bring evidence.",
+      "why": "Either side can score. What earns the point is a clear claim plus specific evidence from the Exchange.",
+      "facts": ["F-U1-010"]
+    },
+    {
+      "id": "u1-q3",
+      "topic": "1.4",
+      "episode": "u1e3",
+      "format": "Causation",
+      "ask": "Question three. Native labor collapses, and the sugar plantations still need workers. Where had Europeans already used enslaved African labor on sugar, and what happened next?",
+      "card": { "stem": "Where had Europeans already used enslaved African labor on sugar, and what happened next?" },
+      "prompt": "Where had Europeans already used enslaved African labor on sugar? What happened next?",
+      "pauseSec": 15,
+      "answer": "Madeira and São Tomé. Then the model crossed the Atlantic, and the Middle Passage carried enslaved Africans by the millions.",
+      "reveal": "Madeira and São Tomé. The model crossed to the Americas.",
+      "why": "Causation questions want the chain: the labor collapse, the island model, then the Atlantic trade.",
+      "facts": ["F-U1-011", "F-U1-016"]
+    }
+  ]
+}

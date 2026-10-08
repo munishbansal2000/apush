@@ -1,0 +1,240 @@
+{
+  "_doc": "Single source of truth for render geometry and timing rules. The shell renders from this; the validator checks against it. Rects are [x0, y0, x1, y1] as fractions of the frame.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "timing": {
+    "leadInSec": 0.6,
+    "gapSec": 0.3,
+    "shortReplyGapSec": 0.12,
+    "shortReplyMaxWords": 5,
+    "tailSec": 2.5,
+    "audioDurationToleranceSec": 0.06
+  },
+  "minHoldSec": 1.2,
+  "maxSilentVisualSec": 9,
+  "minVisualCoverage": 0.7,
+  "titleCardSec": 3.2,
+  "safe": [
+    0.05,
+    0.05,
+    0.95,
+    0.95
+  ],
+  "head": {
+    "position": "bottom-right",
+    "size": 0.26,
+    "rect": [
+      0.72,
+      0.6,
+      0.95,
+      0.95
+    ]
+  },
+  "captions": {
+    "rect": [
+      0.06,
+      0.835,
+      0.7,
+      0.905
+    ],
+    "maxChars": 58
+  },
+  "boxTracker": {
+    "rect": [
+      0.73,
+      0.05,
+      0.95,
+      0.255
+    ]
+  },
+  "credit": {
+    "rect": [
+      0.06,
+      0.912,
+      0.7,
+      0.945
+    ]
+  },
+  "stage": [
+    0.06,
+    0.13,
+    0.7,
+    0.775
+  ],
+  "text": {
+    "hero": {
+      "fontPx": 140,
+      "lineHeight": 1.05
+    },
+    "title": {
+      "fontPx": 76,
+      "lineHeight": 1.1
+    },
+    "subtitle": {
+      "fontPx": 50,
+      "lineHeight": 1.15
+    },
+    "body": {
+      "fontPx": 38,
+      "lineHeight": 1.25
+    },
+    "maxWidthFrac": 0.62,
+    "glyphW": {
+      "_doc": "Advance width / font size, measured from rendered stills: Georgia bold caps 0.73-0.78 (frame 900 and closing tile). Err wide. Recalibrate when the font changes.",
+      "upper": 0.78,
+      "lower": 0.5,
+      "digit": 0.66,
+      "space": 0.28,
+      "other": 0.6
+    },
+    "stampOvershoot": 1.25
+  },
+  "bubble": {
+    "lineHeightPx": 44,
+    "paddingPx": 28,
+    "charW": 0.5,
+    "fontPx": 34
+  },
+  "speakers": {
+    "maya": {
+      "name": "Maya",
+      "color": "#c9a227",
+      "real": "maya-real.webp",
+      "toon": "maya-toon.webp"
+    },
+    "marcus": {
+      "name": "Marcus",
+      "color": "#2c5aa0",
+      "real": "marcus-real.webp",
+      "toon": "marcus-toon.webp"
+    }
+  },
+  "tones": {
+    "playful": {
+      "library": "playful",
+      "bgOpacity": 0.6,
+      "saturate": 1,
+      "kenBurns": "drift",
+      "accent": "#ffd166"
+    },
+    "serious": {
+      "library": "serious",
+      "bgOpacity": 0.5,
+      "saturate": 0.35,
+      "kenBurns": "push",
+      "accent": "#e8dcc8"
+    },
+    "sobering": {
+      "library": "serious",
+      "bgOpacity": 0.45,
+      "saturate": 0.15,
+      "kenBurns": "push",
+      "accent": "#d9cbb5"
+    },
+    "recap": {
+      "library": "playful",
+      "bgOpacity": 0.5,
+      "saturate": 0.8,
+      "kenBurns": "drift",
+      "accent": "#ffd166"
+    }
+  },
+  "textSlotsY": [
+    0.2,
+    0.34,
+    0.48,
+    0.62,
+    0.71
+  ],
+  "topBand": {
+    "rect": [
+      0.06,
+      0.05,
+      0.7,
+      0.122
+    ],
+    "_doc": "timed overlays: key-term chips and chapter banners"
+  },
+  "ribbon": {
+    "rect": [
+      0.06,
+      0.785,
+      0.7,
+      0.83
+    ]
+  },
+  "trapCard": {
+    "rect": [
+      0.06,
+      0.14,
+      0.7,
+      0.44
+    ]
+  },
+  "reveal": {
+    "rect": [
+      0.06,
+      0.13,
+      0.7,
+      0.33
+    ]
+  },
+  "heads": {
+    "mode": "pair",
+    "_doc": "pair = both hosts on screen, speaker enlarged, audio-reactive; single = library TalkingHead"
+  },
+  "overlayTiming": {
+    "termChipSec": 4.5,
+    "chapterBannerSec": 2.6,
+    "trapFactDelaySec": 0.4,
+    "yearHighlightSec": 5
+  },
+  "sfx": {
+    "hit": "sfx/hit.wav",
+    "check": "sfx/check.wav",
+    "whoosh": "sfx/whoosh.wav",
+    "tick": "sfx/tick.wav",
+    "volume": {
+      "hit": 0.35,
+      "check": 0.45,
+      "whoosh": 0.3,
+      "tick": 0.18
+    },
+    "stampTones": [
+      "playful",
+      "recap"
+    ]
+  },
+  "music": {
+    "file": "music/bed.mp3",
+    "duckTo": 0.25,
+    "volume": {
+      "playful": 0.16,
+      "serious": 0.08,
+      "sobering": 0.0,
+      "recap": 0.14
+    },
+    "fadeSec": 1.5
+  },
+  "shorts": {
+    "width": 1080,
+    "height": 1920,
+    "videoTop": 0.27
+  },
+  "guard": {
+    "_doc": "runtime layout guard thresholds (fractions of frame) epsilon: sub-pixel tolerance (fraction of frame) for cut/unsafe/overlap.",
+    "overlapMinArea": 0.0015,
+    "clipTolerancePx": 1,
+    "epsilon": 0.003
+  },
+  "figureCard": {
+    "rect": [
+      0.06,
+      0.43,
+      0.33,
+      0.775
+    ],
+    "_doc": "figure cards sit lower-left of the stage; the layout engine moves text out of their way"
+  }
+}

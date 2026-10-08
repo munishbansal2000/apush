@@ -1,0 +1,10 @@
+{
+  "_doc": "CED key terms. The first time a term is spoken in an episode, a key-term chip shows its definition (derived; no beat to author). `match` lists spoken forms. Definitions: one sentence, exam-usable, consistent with data/fact-registry.json.",
+  "terms": [
+    { "term": "Columbian Exchange", "match": ["Columbian Exchange"], "definition": "The two-way transfer of plants, animals, people, and diseases between the Americas and Afro-Eurasia after 1492.", "ced": "1.4" },
+    { "term": "Virgin-soil epidemic", "match": ["virgin-soil epidemic", "virgin soil epidemic"], "definition": "An outbreak among people with no prior exposure to a disease; historians debate the term because it hides war, slavery, and famine.", "ced": "1.4" },
+    { "term": "Encomienda", "match": ["encomiendas", "encomienda"], "definition": "A Spanish grant of Native labor and tribute to colonists, a system of coerced labor.", "ced": "1.5" },
+    { "term": "Middle Passage", "match": ["Middle Passage"], "definition": "The forced Atlantic crossing of enslaved Africans to the Americas, the deadliest leg of the trade.", "ced": "1.4" },
+    { "term": "Florentine Codex", "match": ["Florentine Codex"], "definition": "A 16th-century encyclopedia of Nahua life and the conquest, compiled under friar Bernardino de Sahagún with Nahua scholars.", "ced": "1.5" }
+  ]
+}

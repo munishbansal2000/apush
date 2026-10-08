@@ -1,0 +1,45 @@
+{
+  "global": {
+    "suffix": "Single subject, centered, full subject visible with margin, no text, no letters, no captions, no watermark, no signature, no frame.",
+    "negative": "text, letters, words, caption, watermark, signature, logo, frame, border, modern objects, anachronism, extra limbs, deformed hands, blurry, low resolution, photo collage"
+  },
+  "styles": {
+    "cutout-flat": {
+      "prefix": "Flat 2D cut-out illustration for an animated history explainer, paper puppet style, bold clean ink outlines (#2b1d0e), limited muted palette of parchment, ink brown, brick red, slate blue, sage green and gold, subtle paper grain, soft flat shading, three-quarter view, full body standing in a neutral pose with arms slightly away from the body (so limbs can be rigged):",
+      "suffix": "Isolated on a transparent background.",
+      "negative": "photorealistic, 3D render, gradient mesh, glossy, anime, chibi, caricature, exaggerated features, background scenery",
+      "notes": "Generic people and costumes. Must match src/theme tokens palette."
+    },
+    "prop-engraved": {
+      "prefix": "Hand-colored 18th–19th century engraving style object illustration, fine cross-hatched ink lines, muted watercolor wash in parchment, ink brown, brick red, slate blue and gold, isolated object, three-quarter view:",
+      "suffix": "Isolated on a transparent background, soft contact shadow only.",
+      "negative": "photorealistic, 3D render, neon, plastic, modern design, background scenery"
+    },
+    "vehicle-engraved": {
+      "prefix": "Detailed period engraving style illustration of a vehicle, fine ink line work with muted watercolor wash (parchment, ink brown, slate blue, brick red), side-on three-quarter view, historically accurate rigging and construction:",
+      "suffix": "Isolated on a transparent background, no water or ground except a thin waterline/ground shadow.",
+      "negative": "photorealistic, 3D render, fantasy, pirate flag, modern parts"
+    },
+    "portrait-engraving": {
+      "prefix": "Restyle this historical portrait as a hand-colored steel engraving: fine cross-hatched ink lines, warm sepia and parchment tones with a muted accent color, head-and-shoulders, preserve the exact likeness, features, hair and clothing of the reference:",
+      "suffix": "Oval vignette fading to a transparent background.",
+      "negative": "change of likeness, idealized face, modern clothing, cartoon, anime, photorealistic skin smoothing",
+      "notes": "Only for fetch-pd+stylize (image edit of the real portrait). Never generate a real person from text."
+    },
+    "texture-paper": {
+      "prefix": "Seamless high-resolution texture, flat top-down scan, even lighting:",
+      "suffix": "Tileable, no objects, no text.",
+      "negative": "objects, text, shadows, perspective, vignette"
+    },
+    "backdrop-painted": {
+      "prefix": "Muted painterly background plate for an animated history explainer, wide establishing view, soft atmospheric perspective, parchment-toned palette with ink brown, slate blue, sage green and gold, low detail in the center third (space for foreground characters and captions):",
+      "suffix": "No people, no text.",
+      "negative": "people, figures, text, modern buildings, cars, power lines, oversaturated"
+    },
+    "icon-ink": {
+      "prefix": "Simple bold ink icon, single color ink brown (#2b1d0e) on transparent background, clean vector-like shapes, consistent 6px stroke:",
+      "suffix": "Transparent background, centered.",
+      "negative": "color fills, gradients, text, 3D"
+    }
+  }
+}
