@@ -191,13 +191,24 @@ for (const [path, entry] of targets) {
   const resolved = await candidates(entry);
   let response: Response | null = null;
   let usedUrl = '';
+  let lastHost = '';
   for (const url of resolved.urls) {
+    const host = new URL(url).host;
+    // Small delay when switching hosts to avoid hammering
+    if (lastHost && host !== lastHost) {
+      await new Promise(r => setTimeout(r, 500));
+    }
+    lastHost = host;
     response = await getWithRetry(url);
-    if (isImageResponse(response)) { usedUrl = url; break; }
-    console.log(`    ... unusable ${new URL(url).host} response (${response?.status ?? 'network'} ${responseType(response)})`);
+    if (isImageResponse(response)) {
+      usedUrl = url;
+      console.log(`    ✓ got it from ${host}`);
+      break;
+    }
+    console.log(`    ... unusable ${host} response (${response?.status ?? 'network'} ${responseType(response)})`);
   }
   if (!isImageResponse(response)) {
-    errors.push(`${path}: all exact sources failed${resolved.urls.length ? ` (${resolved.urls.map(url => new URL(url).host).join(', ')})` : ''}`);
+    errors.push(`${path}: all ${resolved.urls.length} sources failed (${[...new Set(resolved.urls.map(url => new URL(url).host))].join(', ')})`);
     continue;
   }
 
