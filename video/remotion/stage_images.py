@@ -29,6 +29,7 @@ import argparse
 import json
 import re
 import subprocess
+import urllib.parse
 import urllib.request
 from pathlib import Path
 
@@ -90,16 +91,56 @@ def save_catalog(catalog):
     print(f"Saved catalog: {catalog_path} ({len(catalog)} entries)")
 
 
+def resolve_source_url(source_url):
+    """Turn a manifest source_url into a directly downloadable file URL.
+
+    Wikimedia Commons file *pages* (…/wiki/File:X.jpg) are HTML, not images —
+    resolve them via the MediaWiki API to a 1920px thumbnail (full originals
+    are often 30MB+; 1920px is plenty for 1280x720 renders). Direct image
+    URLs pass through. Anything else returns None for manual download.
+    """
+    # File pages first: they end in .jpg too, but are HTML pages.
+    if "commons.wikimedia.org/wiki/" in source_url or "wikipedia.org/wiki/File:" in source_url:
+        m = re.search(r"/wiki/(?:Special:FilePath/|File:)([^?#]+)", source_url)
+        if not m:
+            return None
+        title = "File:" + urllib.parse.unquote(m.group(1)).replace("_", " ")
+        api = "https://commons.wikimedia.org/w/api.php?" + urllib.parse.urlencode({
+            "action": "query", "titles": title, "prop": "imageinfo",
+            "iiprop": "url|size", "iiurlwidth": 1920, "format": "json",
+        })
+        req = urllib.request.Request(api, headers={"User-Agent": "APUSH-Edu/1.0"})
+        d = json.load(urllib.request.urlopen(req, timeout=60))
+        for page in d["query"]["pages"].values():
+            ii = (page.get("imageinfo") or [{}])[0]
+            return ii.get("thumburl") or ii.get("url")
+        return None
+    if re.search(r"\.(jpe?g|png|webp)(\?|$)", source_url, re.I):
+        return source_url  # already a direct image
+    return None
+
+
 def download_image(path, source_url):
     """Download image from source URL to public/ path."""
     dest = _BASE / f'public/{path}'
     dest.parent.mkdir(parents=True, exist_ok=True)
-    
+
+    direct = resolve_source_url(source_url)
+    if not direct:
+        print(f"  {path}: cannot auto-resolve {source_url[:60]}...")
+        print(f"    -> download manually to public/{path}")
+        return False
+
     print(f"  Downloading {path}...")
-    print(f"    from {source_url[:60]}...")
-    
+
     try:
-        urllib.request.urlretrieve(source_url, dest)
+        req = urllib.request.Request(direct, headers={"User-Agent": "APUSH-Edu/1.0"})
+        with urllib.request.urlopen(req, timeout=120) as resp, open(dest, "wb") as f:
+            while True:
+                chunk = resp.read(1024 * 256)
+                if not chunk:
+                    break
+                f.write(chunk)
         print(f"    ✓ {dest.stat().st_size} bytes")
         return True
     except Exception as e:
@@ -144,9 +185,16 @@ def main():
         print("\nCatalog rebuilt. Fill in source_url/license/description for new entries.")
         return 0
     
-    # Check what's missing
+    # Check what's missing.
+    # Episodes that declare images in data files (e.g. beats_kit.json) rather
+    # than inline TSX won't be found by the scan, so also include every
+    # catalog entry tagged for this episode (used_in "E3:..." entries).
+    wanted = set(found)
+    for path, entry in catalog.items():
+        if any(str(u).startswith(f"{episode}:") for u in entry.get("used_in", [])):
+            wanted.add(path)
     missing = []
-    for path in found:
+    for path in sorted(wanted):
         local_path = _BASE / f'public/{path}'
         if not local_path.exists():
             missing.append(path)
