@@ -1,6 +1,6 @@
 import React from 'react';
 import { useCurrentFrame, useVideoConfig, interpolate, spring, AbsoluteFill } from 'remotion';
-import { VersusProps } from './motionStudioTypes';
+import { VersusProps, VersusEntity } from './motionStudioTypes';
 
 export const VersusPolarization: React.FC<VersusProps> = ({
   clashTitle,
@@ -46,6 +46,62 @@ export const VersusPolarization: React.FC<VersusProps> = ({
   });
   const vsScale = interpolate(vsSpring, [0, 1], [3, 1]);
   const vsOpacity = interpolate(vsSpring, [0, 1], [0, 1]);
+
+  // Normalize the two entity shapes: motion-studio ({faction, portraitDesc,
+  // coreIdeology, keyStances, accentColor}) and kit beats ({name, subtitle,
+  // points, color}). Kit beats must render their points, not empty panels.
+  const accentA = entityA.accentColor ?? entityA.color ?? '#fbbf24';
+  const accentB = entityB.accentColor ?? entityB.color ?? '#fbbf24';
+  const descA = entityA.portraitDesc ?? entityA.subtitle ?? '';
+  const descB = entityB.portraitDesc ?? entityB.subtitle ?? '';
+
+  const renderBody = (e: VersusEntity, accent: string) => {
+    if (e.keyStances?.length) {
+      return (
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 10, marginTop: 'auto' }}>
+          {e.keyStances.map((stance, idx) => (
+            <div key={idx}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 12, marginBottom: 3 }}>
+                <span style={{ fontWeight: 600, color: 'rgba(255,255,255,0.9)' }}>{stance.topic}</span>
+                <span style={{ color: accent, fontSize: 11, fontFamily: "'JetBrains Mono', monospace" }}>
+                  {stance.powerLevel}% FOCUS
+                </span>
+              </div>
+              <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.6)', marginBottom: 4 }}>
+                {stance.position}
+              </div>
+              <div style={{ height: 4, backgroundColor: 'rgba(255,255,255,0.1)', borderRadius: 2, overflow: 'hidden' }}>
+                <div
+                  style={{
+                    height: '100%',
+                    width: `${interpolate(frame - 40 - idx * 10, [0, 20], [0, stance.powerLevel], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' })}%`,
+                    backgroundColor: accent,
+                    borderRadius: 2,
+                  }}
+                />
+              </div>
+            </div>
+          ))}
+        </div>
+      );
+    }
+    if (e.points?.length) {
+      return (
+        <ul style={{ margin: '14px 0 0', padding: 0, display: 'flex', flexDirection: 'column', gap: 10, listStyle: 'none' }}>
+          {e.points.map((pt, idx) => {
+            const o = interpolate(frame - 55 - idx * 14, [0, 20], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+            return (
+              <li key={idx} style={{ display: 'flex', gap: 10, alignItems: 'flex-start', opacity: o, transform: `translateX(${(1 - o) * -16}px)` }}>
+                <span style={{ color: accent, fontSize: 15, lineHeight: 1.4 }}>▸</span>
+                <span style={{ fontSize: 15, lineHeight: 1.45, color: 'rgba(241,245,249,0.92)' }}>{pt}</span>
+              </li>
+            );
+          })}
+        </ul>
+      );
+    }
+    return null;
+  };
 
   return (
     <AbsoluteFill
@@ -153,15 +209,15 @@ export const VersusPolarization: React.FC<VersusProps> = ({
               flex: 1,
               backgroundColor: 'rgba(15, 23, 42, 0.85)',
               backdropFilter: 'blur(16px)',
-              border: `1px solid ${entityA.accentColor}44`,
-              borderLeft: `4px solid ${entityA.accentColor}`,
+              border: `1px solid ${accentA}44`,
+              borderLeft: `4px solid ${accentA}`,
               borderRadius: 14,
               padding: isPortrait ? '14px 18px' : '22px 24px',
               display: 'flex',
               flexDirection: 'column',
               opacity: opacityA,
               transform: isPortrait ? `translateY(${offsetA}px)` : `translateX(${offsetA}px)`,
-              boxShadow: `0 12px 32px rgba(0,0,0,0.4), inset 0 0 20px ${entityA.accentColor}11`,
+              boxShadow: `0 12px 32px rgba(0,0,0,0.4), inset 0 0 20px ${accentA}11`,
             }}
           >
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 10 }}>
@@ -170,7 +226,7 @@ export const VersusPolarization: React.FC<VersusProps> = ({
                   style={{
                     fontSize: 12,
                     fontFamily: "'JetBrains Mono', monospace",
-                    color: entityA.accentColor,
+                    color: accentA,
                     fontWeight: 700,
                     textTransform: 'uppercase',
                   }}
@@ -189,11 +245,12 @@ export const VersusPolarization: React.FC<VersusProps> = ({
                   {entityA.name}
                 </h2>
                 <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.6)' }}>
-                  {entityA.portraitDesc}
+                  {descA}
                 </div>
               </div>
             </div>
 
+            {entityA.coreIdeology ? (
             <p
               style={{
                 fontSize: 13,
@@ -206,33 +263,9 @@ export const VersusPolarization: React.FC<VersusProps> = ({
             >
               {entityA.coreIdeology}
             </p>
+            ) : null}
 
-            {/* Stances */}
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 10, marginTop: 'auto' }}>
-              {entityA.keyStances?.map((stance, idx) => (
-                <div key={idx}>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 12, marginBottom: 3 }}>
-                    <span style={{ fontWeight: 600, color: 'rgba(255,255,255,0.9)' }}>{stance.topic}</span>
-                    <span style={{ color: entityA.accentColor, fontSize: 11, fontFamily: "'JetBrains Mono', monospace" }}>
-                      {stance.powerLevel}% FOCUS
-                    </span>
-                  </div>
-                  <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.6)', marginBottom: 4 }}>
-                    {stance.position}
-                  </div>
-                  <div style={{ height: 4, backgroundColor: 'rgba(255,255,255,0.1)', borderRadius: 2, overflow: 'hidden' }}>
-                    <div
-                      style={{
-                        height: '100%',
-                        width: `${interpolate(frame - 40 - idx * 10, [0, 20], [0, stance.powerLevel], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' })}%`,
-                        backgroundColor: entityA.accentColor,
-                        borderRadius: 2,
-                      }}
-                    />
-                  </div>
-                </div>
-              ))}
-            </div>
+            {renderBody(entityA, accentA)}
           </div>
 
           {/* Animated Center "VS" Emblem */}
@@ -281,15 +314,15 @@ export const VersusPolarization: React.FC<VersusProps> = ({
               flex: 1,
               backgroundColor: 'rgba(15, 23, 42, 0.85)',
               backdropFilter: 'blur(16px)',
-              border: `1px solid ${entityB.accentColor}44`,
-              borderRight: `4px solid ${entityB.accentColor}`,
+              border: `1px solid ${accentB}44`,
+              borderRight: `4px solid ${accentB}`,
               borderRadius: 14,
               padding: isPortrait ? '14px 18px' : '22px 24px',
               display: 'flex',
               flexDirection: 'column',
               opacity: opacityB,
               transform: isPortrait ? `translateY(${offsetB}px)` : `translateX(${offsetB}px)`,
-              boxShadow: `0 12px 32px rgba(0,0,0,0.4), inset 0 0 20px ${entityB.accentColor}11`,
+              boxShadow: `0 12px 32px rgba(0,0,0,0.4), inset 0 0 20px ${accentB}11`,
             }}
           >
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 10 }}>
@@ -298,7 +331,7 @@ export const VersusPolarization: React.FC<VersusProps> = ({
                   style={{
                     fontSize: 12,
                     fontFamily: "'JetBrains Mono', monospace",
-                    color: entityB.accentColor,
+                    color: accentB,
                     fontWeight: 700,
                     textTransform: 'uppercase',
                   }}
@@ -317,11 +350,12 @@ export const VersusPolarization: React.FC<VersusProps> = ({
                   {entityB.name}
                 </h2>
                 <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.6)' }}>
-                  {entityB.portraitDesc}
+                  {descB}
                 </div>
               </div>
             </div>
 
+            {entityB.coreIdeology ? (
             <p
               style={{
                 fontSize: 13,
@@ -334,33 +368,9 @@ export const VersusPolarization: React.FC<VersusProps> = ({
             >
               {entityB.coreIdeology}
             </p>
+            ) : null}
 
-            {/* Stances */}
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 10, marginTop: 'auto' }}>
-              {entityB.keyStances?.map((stance, idx) => (
-                <div key={idx}>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 12, marginBottom: 3 }}>
-                    <span style={{ fontWeight: 600, color: 'rgba(255,255,255,0.9)' }}>{stance.topic}</span>
-                    <span style={{ color: entityB.accentColor, fontSize: 11, fontFamily: "'JetBrains Mono', monospace" }}>
-                      {stance.powerLevel}% FOCUS
-                    </span>
-                  </div>
-                  <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.6)', marginBottom: 4 }}>
-                    {stance.position}
-                  </div>
-                  <div style={{ height: 4, backgroundColor: 'rgba(255,255,255,0.1)', borderRadius: 2, overflow: 'hidden' }}>
-                    <div
-                      style={{
-                        height: '100%',
-                        width: `${interpolate(frame - 40 - idx * 10, [0, 20], [0, stance.powerLevel], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' })}%`,
-                        backgroundColor: entityB.accentColor,
-                        borderRadius: 2,
-                      }}
-                    />
-                  </div>
-                </div>
-              ))}
-            </div>
+            {renderBody(entityB, accentB)}
           </div>
         </div>
 
