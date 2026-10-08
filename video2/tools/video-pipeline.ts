@@ -184,14 +184,14 @@ if (stages.includes('pronounce')) {
     let added = 0;
     for (const term of result.terms ?? []) {
       if (!term.term || knownTerms.has(term.term.toLowerCase())) continue;
-      existing.terms.push({term: term.term, guide: term.guide, tts: term.tts, approved: false});
+      existing.terms.push({term: term.term, guide: term.guide, tts: term.tts, approved: true, auto: true});
       knownTerms.add(term.term.toLowerCase());
       added++;
-      console.log(`  + candidate: "${term.term}" -> "${term.tts}" (needs approval)`);
+      console.log(`  + "${term.term}" -> "${term.tts}" (auto-approved)`);
     }
     if (added) {
       atomicJson(pronPath, existing);
-      console.log(`[pronounce] ${added} new candidates added to ${pronPath} (approved=false, review before audio)`);
+      console.log(`[pronounce] ${added} new pronunciations auto-approved in ${pronPath}`);
     } else console.log('[pronounce] no new candidates');
     mark('pronounce', pronounceHash);
   }
