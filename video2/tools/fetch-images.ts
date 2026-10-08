@@ -1,4 +1,4 @@
-/** Incrementally download and validate historical images from data/images.json. */
+/** Incrementally download and validate historical images from data/<lesson>/images.json. */
 import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import { existsSync, mkdirSync, readFileSync, unlinkSync, writeFileSync } from 'node:fs';
@@ -149,7 +149,30 @@ if (query) {
   process.exit(0);
 }
 
-const manifest = JSON.parse(readFileSync(join(ROOT, 'data/images.json'), 'utf8')) as Record<string, ManifestEntry>;
+/** Load manifest from per-lesson files. --lesson filters to one lesson. */
+function loadManifest(): Record<string, ManifestEntry> {
+  const lesson = arg('lesson');
+  const manifest: Record<string, ManifestEntry> = {};
+  const dataDir = join(ROOT, 'data');
+  // Per-lesson files: data/<lesson>/images.json
+  const lessons = lesson ? [lesson] : readdirSync(dataDir).filter(d => {
+    try { return statSync(join(dataDir, d)).isDirectory() && existsSync(join(dataDir, d, 'images.json')); }
+    catch { return false; }
+  });
+  for (const l of lessons) {
+    const fp = join(dataDir, l, 'images.json');
+    if (!existsSync(fp)) continue;
+    const entries = JSON.parse(readFileSync(fp, 'utf8')) as Record<string, ManifestEntry>;
+    Object.assign(manifest, entries);
+  }
+  // Fallback to legacy monolithic file
+  const legacy = join(dataDir, 'images.json');
+  if (!Object.keys(manifest).length && existsSync(legacy)) {
+    Object.assign(manifest, JSON.parse(readFileSync(legacy, 'utf8')));
+  }
+  return manifest;
+}
+const manifest = loadManifest();
 const lock: Record<string, LockEntry> = existsSync(LOCK_PATH) ? JSON.parse(readFileSync(LOCK_PATH, 'utf8')) : {};
 const saveLock = () => writeFileSync(LOCK_PATH, `${JSON.stringify(Object.fromEntries(Object.entries(lock).sort(([a], [b]) => a.localeCompare(b))), null, 2)}\n`);
 

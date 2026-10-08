@@ -334,8 +334,9 @@ if (stages.includes('images')) {
         patch[path] = {description: row.description, license: row.license, source_url: row.source_url, download_urls: row.download_urls, used_in: row.used_in};
       }
       atomicJson(imagesPlanPath, patch);
-      const manifestPath = join(ROOT, 'data/images.json');
-      const manifest = readJson<Record<string, unknown>>(manifestPath);
+      // Per-lesson registry: data/<episode>/images.json
+      const manifestPath = join(ROOT, 'data', episode, 'images.json');
+      const manifest = existsSync(manifestPath) ? readJson<Record<string, unknown>>(manifestPath) : {};
       atomicJson(manifestPath, {...manifest, ...patch});
       const tsx = join(ROOT, 'node_modules/tsx/dist/cli.mjs');
       // `fetch-images --only` does not require a compiled episode registry entry,
