@@ -1,0 +1,77 @@
+{
+  "_doc": "Director-safe component palette. The AI director chooses from these. Each has a 'when' guide and minimal props.",
+  "components": [
+    {
+      "name": "title",
+      "component": "TitleCard",
+      "when": "Episode open, act breaks, major topic shifts",
+      "props": {"title": "string (required)", "kicker": "string", "subline": "string"}
+    },
+    {
+      "name": "ken_burns",
+      "component": "KenBurnsSlide",
+      "when": "Single historic image with slow zoom/pan. Default for most scenes.",
+      "props": {"image": "path from AVAILABLE IMAGES (required)", "title": "string", "caption": "string", "stops": "[[x,y,scale],[x,y,scale]]"}
+    },
+    {
+      "name": "quote",
+      "component": "QuoteSlide",
+      "when": "Historical quote, primary source excerpt, memorable line",
+      "props": {"quote": "string (required)", "byline": "string"}
+    },
+    {
+      "name": "compare",
+      "component": "CompareSlide",
+      "when": "Two sides, before/after, British vs Colonial view",
+      "props": {"title": "string", "left": "{head, sections:[{sub,points}]}", "right": "{head, sections:[{sub,points}]}"}
+    },
+    {
+      "name": "causal_chain",
+      "component": "CausalChainSlide",
+      "when": "Cause → effect sequences, 2-5 linked events",
+      "props": {"title": "string", "nodes": "array of 2-5 strings"}
+    },
+    {
+      "name": "highlight",
+      "component": "HighlightSlide",
+      "when": "Key term with definition, exam concept",
+      "props": {"title": "string", "body": "string (required)", "highlights": "[{text, note}]"}
+    },
+    {
+      "name": "primary_source",
+      "component": "PrimarySourceSpotlight",
+      "when": "Document analysis (HIPP). Letters, proclamations, acts.",
+      "props": {"documentTitle": "string (required)", "authorAndDate": "string (required)", "excerptText": "string (required)", "highlightedPhrase": "string (required)", "hippType": "H|I|P|P (required)", "hippExplanation": "string (required)"}
+    },
+    {
+      "name": "talking_head",
+      "component": "TalkingHead",
+      "when": "Maya or Marcus speaking directly. Use for host presence.",
+      "props": {"speaker": "maya|marcus (required)", "image": "path from AVAILABLE IMAGES"}
+    },
+    {
+      "name": "timeline",
+      "component": "TimelineRibbon",
+      "when": "Chronological sequence of events",
+      "props": {"title": "string", "events": "[{date, label}]"}
+    },
+    {
+      "name": "map",
+      "component": "TerritorialExpansionMap",
+      "when": "Territory changes, Proclamation Line, expansion",
+      "props": {"title": "string", "highlights": "array of place names from places.json"}
+    },
+    {
+      "name": "versus",
+      "component": "VersusPolarization",
+      "when": "Two opposing viewpoints, debate",
+      "props": {"title": "string", "left": "{name, position}", "right": "{name, position}"}
+    },
+    {
+      "name": "collage",
+      "component": "CollageSlide",
+      "when": "Multiple related images together",
+      "props": {"title": "string", "images": "array of paths from AVAILABLE IMAGES (2-4)"}
+    }
+  ]
+}

@@ -153,7 +153,7 @@ export function normalizePlan(plan: DirectedPlan, turns: PipelineTurn[], starts:
   if (plan.version !== 1 || !Array.isArray(plan.scenes) || !plan.scenes.length) throw new Error('director plan must be version 1 with scenes');
   const index = new Map(turns.map((turn, i) => [turn.id, i]));
   let last = -1;
-  const allowed = new Set(['title', 'ken_burns', 'quote', 'compare', 'causal_chain', 'highlight', 'primary_source', 'creative_clip']);
+  const allowed = new Set(['title', 'ken_burns', 'quote', 'compare', 'causal_chain', 'highlight', 'primary_source', 'creative_clip', 'talking_head', 'timeline', 'map', 'versus', 'collage']);
   const scenes = plan.scenes.map((scene, sceneIndex) => {
     if (!allowed.has(scene.component)) throw new Error(`${scene.id}: unsupported component ${scene.component}`);
     validateSceneProps(scene);
@@ -209,6 +209,21 @@ function validateSceneProps(scene: DirectedScene): void {
       for (const key of ['documentTitle', 'authorAndDate', 'excerptText', 'highlightedPhrase', 'hippType', 'hippExplanation']) {
         if (!text(key)) throw new Error(`${scene.id}: primary_source requires props.${key}`);
       }
+      break;
+    case 'talking_head':
+      if (p.speaker !== 'maya' && p.speaker !== 'marcus') throw new Error(`${scene.id}: talking_head requires speaker maya|marcus`);
+      break;
+    case 'timeline':
+      if (!Array.isArray(p.events) || !p.events.length) throw new Error(`${scene.id}: timeline requires events array`);
+      break;
+    case 'map':
+      if (!text('title')) throw new Error(`${scene.id}: map requires title`);
+      break;
+    case 'versus':
+      if (!object('left') || !object('right')) throw new Error(`${scene.id}: versus requires left and right`);
+      break;
+    case 'collage':
+      if (!Array.isArray(p.images) || p.images.length < 2) throw new Error(`${scene.id}: collage requires 2+ images`);
       break;
     case 'creative_clip':
       if (!text('image') || !text('prompt')) throw new Error(`${scene.id}: creative_clip requires image and prompt`);
