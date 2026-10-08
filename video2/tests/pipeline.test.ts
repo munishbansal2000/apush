@@ -1,8 +1,19 @@
 import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
 import {describe, it} from 'node:test';
-import {normalizePlan, parseTranscript, resolveAudioScript, selectedStages, syncIssues, validateCanvas, type DirectedPlan} from '../tools/pipeline-core';
+import {DIRECTOR_COMPONENTS, normalizePlan, parseTranscript, resolveAudioScript, selectedStages, syncIssues, validateCanvas, type DirectedPlan} from '../tools/pipeline-core';
 
 describe('video pipeline core', () => {
+  it('documents every implemented director component', () => {
+    const registry = JSON.parse(readFileSync(new URL('../src/data/director-components.json', import.meta.url), 'utf8')) as {components: {name: string}[]};
+    const contract = JSON.parse(readFileSync(new URL('../src/data/director-output-contract.json', import.meta.url), 'utf8')) as {properties: {scenes: {items: {properties: {component: {enum: string[]}}}}}};
+    const documented = registry.components.map(component => component.name).concat('creative_clip').sort();
+    assert.deepEqual(documented, [...DIRECTOR_COMPONENTS].sort());
+    assert.deepEqual(contract.properties.scenes.items.properties.component.enum.sort(), [...DIRECTOR_COMPONENTS].sort());
+    const renderer = readFileSync(new URL('../src/directed/DirectedEpisode.tsx', import.meta.url), 'utf8');
+    for (const component of DIRECTOR_COMPONENTS) assert.match(renderer, new RegExp(`case ['"]${component}['"]`), `${component} is not rendered`);
+  });
+
   it('parses speaker lines and timed pauses', () => {
     const turns = parseTranscript('# Lesson\nMaya: Start here.\n[pause 2.5]\nMarcus: Continue.\n[10-second pause]');
     assert.deepEqual(turns.map(t => [t.id, t.kind]), [['t00', 'speech'], ['t01', 'pause'], ['t02', 'speech'], ['t03', 'pause']]);
@@ -23,6 +34,17 @@ describe('video pipeline core', () => {
     assert.throws(() => normalizePlan({...plan, scenes: [
       {id: 'unsafe', component: 'ken_burns', turnIds: ['t00', 't01', 't02'], props: {image: 'https://remote/image.jpg'}},
     ]}, turns, [0.25, 1.5, 3], [1, 1.25, 2]), /safe public\/ relative path/);
+    assert.throws(() => normalizePlan({...plan, scenes: [
+      {id: 'reversed', component: 'title', turnIds: ['t01', 't00'], props: {title: 'X'}},
+      {id: 'last', component: 'quote', turnIds: ['t02'], props: {quote: 'Three.'}},
+    ]}, turns, [0.25, 1.5, 3], [1, 1.25, 2]), /unique and in transcript order/);
+  });
+
+  it('validates nested component props before accepting a director plan', () => {
+    const turns = parseTranscript('Maya: Compare these.');
+    assert.throws(() => normalizePlan({version: 1, episode: 'x', title: 'X', scenes: [
+      {id: 'bad', component: 'compare', turnIds: ['t00'], props: {left: {head: 'A'}, right: {head: 'B', sections: []}}},
+    ]}, turns, [0], [3], 3), /head and non-empty sections/);
   });
 
   it('stops at contact sheet unless full rendering is requested', () => {

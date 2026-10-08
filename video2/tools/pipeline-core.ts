@@ -33,6 +33,9 @@ export interface DirectedPlan {
   scenes: DirectedScene[];
 }
 
+/** Components implemented by DirectedEpisode and accepted by the plan gate. */
+export const DIRECTOR_COMPONENTS = ['title', 'ken_burns', 'quote', 'compare', 'causal_chain', 'highlight', 'primary_source', 'creative_clip', 'chart', 'spectrum', 'stagger'] as const;
+
 export interface WordTiming {w: string; s: number; e: number}
 
 export const sha256 = (value: string | Buffer): string => createHash('sha256').update(value).digest('hex');
@@ -191,7 +194,7 @@ export function normalizePlan(plan: DirectedPlan, turns: PipelineTurn[], starts:
   const imageKeys = opts.imageKeys ? (opts.imageKeys instanceof Set ? opts.imageKeys : new Set(opts.imageKeys)) : null;
   let last = -1;
   const seenIds = new Set<string>();
-  const allowed = new Set(['title', 'ken_burns', 'quote', 'compare', 'causal_chain', 'highlight', 'primary_source', 'creative_clip', 'chart', 'spectrum', 'stagger']);
+  const allowed = new Set<string>(DIRECTOR_COMPONENTS);
   const scenes = plan.scenes.map((scene, sceneIndex) => {
     const sid = scene.id && String(scene.id).trim() ? String(scene.id) : `scene-${sceneIndex + 1}`;
     if (seenIds.has(sid)) throw new Error(`duplicate scene id "${sid}"`);
@@ -219,6 +222,7 @@ export function normalizePlan(plan: DirectedPlan, turns: PipelineTurn[], starts:
     const hi = Math.max(...ids);
     if (lo !== last + 1) throw new Error(`${scene.id}: scenes must cover turns contiguously; expected turn index ${last + 1}, got ${lo}`);
     if (ids.length !== hi - lo + 1) throw new Error(`${scene.id}: turnIds must be a contiguous range`);
+    if (ids.some((value, offset) => value !== lo + offset)) throw new Error(`${scene.id}: turnIds must be unique and in transcript order`);
     last = hi;
     const startSec = starts[lo];
     // Visuals meet on the next turn boundary. The final scene owns the audio
@@ -232,6 +236,9 @@ export function normalizePlan(plan: DirectedPlan, turns: PipelineTurn[], starts:
 }
 
 function validateSceneProps(scene: DirectedScene): void {
+  if (!scene.props || typeof scene.props !== 'object' || Array.isArray(scene.props)) {
+    throw new Error(`${scene.id}: props must be an object`);
+  }
   const p = scene.props;
   const text = (key: string) => typeof p[key] === 'string' && (p[key] as string).trim().length > 0;
   const object = (key: string) => !!p[key] && typeof p[key] === 'object' && !Array.isArray(p[key]);
@@ -250,12 +257,21 @@ function validateSceneProps(scene: DirectedScene): void {
       break;
     case 'compare':
       if (!object('left') || !object('right')) throw new Error(`${scene.id}: compare requires left and right objects`);
+      for (const side of ['left', 'right']) {
+        const value = p[side] as Record<string, unknown>;
+        if (typeof value.head !== 'string' || !value.head.trim() || !Array.isArray(value.sections) || !value.sections.length) {
+          throw new Error(`${scene.id}: compare ${side} requires head and non-empty sections`);
+        }
+      }
       break;
     case 'causal_chain':
-      if (!Array.isArray(p.nodes) || p.nodes.length < 2 || p.nodes.length > 5) throw new Error(`${scene.id}: causal_chain requires 2-5 nodes`);
+      if (!Array.isArray(p.nodes) || p.nodes.length < 2 || p.nodes.length > 5 || p.nodes.some(node => typeof node !== 'string' || !node.trim())) throw new Error(`${scene.id}: causal_chain requires 2-5 non-empty string nodes`);
       break;
     case 'highlight':
       if (!text('body') || !Array.isArray(p.highlights) || !p.highlights.length) throw new Error(`${scene.id}: highlight requires body and highlights`);
+      if ((p.highlights as unknown[]).some(item => !item || typeof item !== 'object' || typeof (item as Record<string, unknown>).text !== 'string' || !String((item as Record<string, unknown>).text).trim())) {
+        throw new Error(`${scene.id}: every highlight requires non-empty text`);
+      }
       break;
     case 'primary_source':
       for (const key of ['documentTitle', 'authorAndDate', 'excerptText', 'highlightedPhrase', 'hippType', 'hippExplanation']) {
@@ -268,13 +284,23 @@ function validateSceneProps(scene: DirectedScene): void {
     case 'chart':
       if (p.type !== 'bar' && p.type !== 'line') throw new Error(`${scene.id}: chart requires type bar|line`);
       if (!Array.isArray(p.data) || !p.data.length) throw new Error(`${scene.id}: chart requires data array`);
+      if ((p.data as unknown[]).some(item => typeof item === 'number' ? !Number.isFinite(item) : !item || typeof item !== 'object' || typeof (item as Record<string, unknown>).label !== 'string' || !Number.isFinite((item as Record<string, unknown>).value))) {
+        throw new Error(`${scene.id}: chart data must contain finite numbers or {label,value} rows`);
+      }
       break;
     case 'spectrum':
-      if (!Array.isArray(p.axis) || p.axis.length !== 2) throw new Error(`${scene.id}: spectrum requires axis [left, right]`);
-      if (!Array.isArray(p.markers) || !p.markers.length) throw new Error(`${scene.id}: spectrum requires markers`);
+      if (!Array.isArray(p.axis) || p.axis.length !== 2 || p.axis.some(label => typeof label !== 'string' || !label.trim())) throw new Error(`${scene.id}: spectrum requires axis [left, right]`);
+      if (!Array.isArray(p.markers) || !p.markers.length || p.markers.some(marker => {
+        const row = marker as Record<string, unknown>;
+        return !row || typeof row !== 'object' || typeof row.label !== 'string' || !row.label.trim() || !Number.isFinite(row.at) || Number(row.at) < 0 || Number(row.at) > 1;
+      })) throw new Error(`${scene.id}: spectrum requires markers with label and at between 0 and 1`);
       break;
     case 'stagger':
-      if (!Array.isArray(p.panels) || p.panels.length < 2) throw new Error(`${scene.id}: stagger requires 2+ panels`);
+      if (!Array.isArray(p.panels) || p.panels.length < 2 || p.panels.length > 4) throw new Error(`${scene.id}: stagger requires 2-4 panels`);
+      for (const [index, panel] of (p.panels as unknown[]).entries()) {
+        if (!panel || typeof panel !== 'object') throw new Error(`${scene.id}: stagger panel ${index + 1} must be an object`);
+        assertSafeImagePath(scene.id, `panel ${index + 1} image`, (panel as Record<string, unknown>).image);
+      }
       break;
     case 'creative_clip': {
       if (!text('image') || !text('prompt')) throw new Error(`${scene.id}: creative_clip requires image and prompt`);
@@ -284,7 +310,6 @@ function validateSceneProps(scene: DirectedScene): void {
       if (/\b(camera|zoom|pan|tilt|dolly|tracking|crane|aerial|flyover)\b/i.test(prompt)) throw new Error(`${scene.id}: creative_clip prompt contains banned camera-move phrase; the factory does its own camera work`);
       break;
     }
-      break;
   }
 }
 

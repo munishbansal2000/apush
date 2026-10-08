@@ -75,7 +75,9 @@
     "used_in": [
       "u3e1:t05",
       "u3e1:t09",
-      "u3e1:t50"
+      "u3e1:t50",
+      "u3e1:t04",
+      "u3e1:t14"
     ],
     "verified": "2026-10-08",
     "fallback_note": "Wikimedia Special:FilePath -> direct upload.wikimedia.org -> NYPL (different host) -> Commons redirect",
@@ -114,7 +116,7 @@
     "used_for": "Proclamation Line of 1763 - the line along Appalachians"
   },
   "historic/u3e1/french-indian-war.jpg": {
-    "description": "George Washington at the Battle of the Monongahela (1755) \u2014 the costly war that left Britain deeply in debt.",
+    "description": "George Washington at the Battle of the Monongahela (1755) — the costly war that left Britain deeply in debt.",
     "license": "Public domain",
     "source_url": "https://commons.wikimedia.org/wiki/File:Major_George_Washington_on_a_white_horse_at_the_Battle_of_the_Monongahela_in_the_French_and_Indian_War.jpg",
     "download_urls": [
@@ -157,21 +159,22 @@
     "used_for": "Appalachian Mountains landscape (the fence)"
   },
   "historic/u3e1/proclamation-line-1763-map.jpg": {
-    "description": "Contemporary map showing the Proclamation Line along the crest of the Appalachians as the fence, with the Mississippi Valley as the prize, illustrating why the line 'came too late' and failed as a fence but stung as an insult to land speculators including Washington.",
+    "description": "Thomas Kitchin 1763 map 'A new map of the British Dominions in North America' showing limits settled by Proclamation October 7th 1763 - the Appalachian crest line that was to be the fence and Indian Reserve.",
     "license": "Public domain",
-    "source_url": "https://commons.wikimedia.org/wiki/File:Proclamation_Line_1763.png",
+    "source_url": "https://www.loc.gov/item/75696331/",
     "download_urls": [
-      "https://upload.wikimedia.org/wikipedia/commons/f/f8/Proclamation_Line_1763.png",
-      "https://commons.wikimedia.org/wiki/Special:FilePath/Proclamation%20Line%201763.png",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Proclamation_Line_1763.png/1024px-Proclamation_Line_1763.png"
+      "https://www.loc.gov/resource/g3300.ar010300/",
+      "https://tile.loc.gov/storage-services/service/gmd/gmd5m/g3300m/g3300/ar/010300/00001v.jpg"
     ],
     "used_in": [
       "u3e1:t18",
-      "u3e1:t25",
+      "u3e1:t19",
+      "u3e1:t24",
       "u3e1:t27",
       "u3e1:t28",
       "u3e1:t33",
-      "u3e1:t52"
+      "u3e1:t56",
+      "u3e1:t58"
     ]
   },
   "historic/u3e1/paxton-boys.jpg": {
@@ -189,7 +192,7 @@
     "used_for": "Paxton Boys march on Philadelphia"
   },
   "historic/u3e1/british-troops.jpg": {
-    "description": "Benjamin West's 'The Death of General Wolfe' (1770) \u2014 iconic depiction of British troops in North America during the French and Indian War era.",
+    "description": "Benjamin West's 'The Death of General Wolfe' (1770) — iconic depiction of British troops in North America during the French and Indian War era.",
     "license": "Public domain",
     "source_url": "https://commons.wikimedia.org/wiki/File:Benjamin_West_-_The_Death_of_General_Wolfe_-_WGA25558.jpg",
     "download_urls": [
@@ -249,6 +252,77 @@
       "u3e1:t42",
       "u3e1:t47",
       "u3e1:t54"
+    ]
+  },
+  "historic/u3e1/pontiac-ottawa-chief-stanley.jpg": {
+    "description": "19th-century artistic impression of Pontiac, Ottawa war chief, leader of Pontiac's Rebellion 1763 - no authentic portrait exists, this John Mix Stanley interpretation is the standard teaching image.",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Pontiac-chief-artist-impression-414px.jpg",
+    "download_urls": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Pontiac-chief-artist-impression-414px.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/4/4f/Pontiac-chief-artist-impression-414px.jpg"
+    ],
+    "used_in": [
+      "u3e1:t34",
+      "u3e1:t35",
+      "u3e1:t36",
+      "u3e1:t40",
+      "u3e1:t41",
+      "u3e1:t54"
+    ]
+  },
+  "historic/u3e1/jeffrey-amherst-1785.jpg": {
+    "description": "Portrait of General Jeffrey Amherst by Thomas Gainsborough 1785 - ordered end of French gift diplomacy and cut off ceremonies, trigger for Pontiac's alliance, associated with smallpox blanket orders.",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Jeffrey_Amherst,_1st_Baron_Amherst.jpg",
+    "download_urls": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Jeffrey%20Amherst,%201st%20Baron%20Amherst.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/9/9f/Jeffrey_Amherst,_1st_Baron_Amherst.jpg"
+    ],
+    "used_in": [
+      "u3e1:t38",
+      "u3e1:t39",
+      "u3e1:t42",
+      "u3e1:t43"
+    ]
+  },
+  "historic/u3e1/thomas-gage-1768.jpg": {
+    "description": "Portrait of General Thomas Gage by John Singleton Copley c.1768, commander-in-chief who replaced Amherst August 1763 and broke Pontiac's siege campaign.",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Thomas_Gage_John_Singleton_Copley.jpeg",
+    "download_urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/7/76/Thomas_Gage_John_Singleton_Copley.jpeg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Thomas_Gage_John_Singleton_Copley.jpeg/250px-Thomas_Gage_John_Singleton_Copley.jpeg"
+    ],
+    "used_in": [
+      "u3e1:t30",
+      "u3e1:t44"
+    ]
+  },
+  "historic/u3e1/edmund-burke-1769.jpg": {
+    "description": "Portrait of Edmund Burke by studio of Sir Joshua Reynolds c.1767-1769, who coined term 'salutary neglect' in 1775 speech looking back at century of loose enforcement ended in 1763.",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Sir_Joshua_Reynolds_-_Edmund_Burke,_1729_-_1797._Statesman,_orator_and_author_-_PG_2362_-_National_Galleries_of_Scotland.jpg",
+    "download_urls": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Sir%20Joshua%20Reynolds%20-%20Edmund%20Burke,%201729%20-%201797.%20Statesman,%20orator%20and%20author%20-%20PG%202362%20-%20National%20Galleries%20of%20Scotland.jpg"
+    ],
+    "used_in": [
+      "u3e1:t09",
+      "u3e1:t10"
+    ]
+  },
+  "historic/u3e1/siege-of-fort-detroit-1763.jpg": {
+    "description": "Contemporary illustration 'Siege of Fort Detroit' - first target of Pontiac's alliance May 1763, shows how French forts became symbols of British occupation after gift diplomacy ended.",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Siege_of_Fort_Detroit.jpg",
+    "download_urls": [
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Siege%20of%20Fort%20Detroit.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/3/3a/Siege_of_Fort_Detroit.jpg"
+    ],
+    "used_in": [
+      "u3e1:t40",
+      "u3e1:t42",
+      "u3e1:t64"
     ]
   }
 }

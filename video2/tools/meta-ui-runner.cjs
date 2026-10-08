@@ -37,8 +37,10 @@ function atomicWrite(file, text) {
 
 async function main() {
   const promptFile = value('prompt-file');
+  const followupPromptFile = value('followup-prompt-file');
   const out = value('out');
-  if (!promptFile || !out) throw new Error('usage: meta-ui-runner.cjs --prompt-file FILE --out FILE [--attachment FILE]');
+  if (!promptFile || !out) throw new Error('usage: meta-ui-runner.cjs --prompt-file FILE --out FILE [--followup-prompt-file FILE] [--attachment FILE]');
+  const outStem = out.replace(/\.json$/i, '');
   const libDir = value('lib-dir', process.env.APUSH_LLM_LIB_DIR || 'C:\\Users\\munis\\projects\\sat_question_runner\\new_eng_qs\\lib');
   const cookie = value('cookie', process.env.META_COOKIE_FILE || 'C:\\Users\\munis\\projects\\sat_question_runner\\new_eng_qs\\config\\meta_cookies\\ramsham21.json');
   const metaFile = path.join(libDir, 'meta.js');
@@ -61,6 +63,7 @@ async function main() {
   await context.addInitScript(() => Object.defineProperty(navigator, 'webdriver', {get: () => undefined}));
   try {
     const prompt = fs.readFileSync(promptFile, 'utf8');
+    const followupPrompt = followupPromptFile ? fs.readFileSync(followupPromptFile, 'utf8') : null;
     const attachments = values('attachment');
     for (const attachment of attachments) if (!fs.existsSync(attachment)) throw new Error(`Meta attachment missing: ${attachment}`);
     if (attachments.length) console.log(`[meta-ui] attachments: ${attachments.map(file => path.basename(file)).join(', ')}`);
@@ -72,12 +75,30 @@ async function main() {
         // A failed upload/composer interaction can leave the page in a dirty
         // state. Each retry gets a fresh chat page in the authenticated context.
         page = await meta.createSession(context, {cookies: cookie, downloads: debugDir});
-        const response = await meta.send(page, prompt, debugDir, `${path.basename(out, '.json')}-attempt-${attempt}`, {
+        const response = await meta.send(page, prompt, debugDir, `${path.basename(out, '.json')}-draft-attempt-${attempt}`, {
           attachments, timeoutMs: Number(value('timeout-sec', '1200')) * 1000,
         });
-        atomicWrite(`${out}.raw.md`, `${response.text}\n`);
-        atomicWrite(`${out}.raw.attempt-${attempt}.md`, `${response.text}\n`);
-        const parsed = extractJson(response.text);
+        atomicWrite(`${outStem}.draft.raw.md`, `${response.text}\n`);
+        atomicWrite(`${outStem}.draft.raw.attempt-${attempt}.md`, `${response.text}\n`);
+        let parsed;
+        try {
+          parsed = extractJson(response.text);
+          atomicWrite(`${outStem}.draft.json`, `${JSON.stringify(parsed, null, 2)}\n`);
+        } catch (error) {
+          if (!followupPrompt) throw error;
+          // The second same-chat turn is specifically allowed to repair and
+          // reformat a malformed draft. Preserve the raw draft and continue.
+          console.warn(`[meta-ui] draft is not valid JSON; passing it to the same-chat reviewer: ${error.message}`);
+        }
+        if (followupPrompt) {
+          console.log('[meta-ui] draft received; starting same-chat director audit');
+          const reviewed = await meta.send(page, followupPrompt, debugDir, `${path.basename(out, '.json')}-review-attempt-${attempt}`, {
+            attachments: [], timeoutMs: Number(value('timeout-sec', '1200')) * 1000,
+          });
+          atomicWrite(`${outStem}.review.raw.md`, `${reviewed.text}\n`);
+          atomicWrite(`${outStem}.review.raw.attempt-${attempt}.md`, `${reviewed.text}\n`);
+          parsed = extractJson(reviewed.text);
+        }
         atomicWrite(out, `${JSON.stringify(parsed, null, 2)}\n`);
         if (attempt > 1) console.log(`[meta-ui] valid JSON received on attempt ${attempt}/${attempts}`);
         lastError = null;

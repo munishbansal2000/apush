@@ -7,12 +7,20 @@ import { FONT, COLOR, RADIUS, alpha } from '../theme/tokens';
 interface SpectrumMarker {
   at: number; // Position on axis (0-1)
   label: string;
-  color: [number, number, number] | string;
+  /** Optional: the component assigns a deterministic accessible accent. */
+  color?: [number, number, number] | string;
   /** Move to new position mid-slide */
   move_to?: number;
   /** Frame when movement starts */
   move_start?: number;
 }
+
+const DEFAULT_MARKER_COLORS = [
+  COLOR.goldOnNight,
+  COLOR.skyOnNight,
+  COLOR.mintOnNight,
+  COLOR.redOnNight,
+] as const;
 
 interface SpectrumSlideProps extends TimingProps {
   axis: [string, string]; // [left_label, right_label]
@@ -175,7 +183,7 @@ export const SpectrumSlide: React.FC<SpectrumSlideProps> = ({
         }
 
         const x = getMarkerX(currentAt);
-        const color = colorToString(marker.color);
+        const color = colorToString(marker.color ?? DEFAULT_MARKER_COLORS[i % DEFAULT_MARKER_COLORS.length]);
         // Axis end labels sit just below the axis at 0 and 1; a marker within
         // 10% of an end puts its label above the dot instead so they don't collide.
         const nearEnd = currentAt < 0.1 || currentAt > 0.9;
