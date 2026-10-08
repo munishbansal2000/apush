@@ -56,9 +56,13 @@ async function main() {
 
   const planOnly = process.argv.includes('--plan-only');
 
-  // Load episode data
-  const turnsPath = join(ROOT, 'src', 'data', epLower, 'turns.json');
-  const timingPath = join(ROOT, 'src', 'data', epLower, 'timing_map.json');
+  // Load episode data: out/data is canonical (pipeline output); src/data is the transition fallback.
+  const dataDir = (name: string) => {
+    const out = join(ROOT, 'out', 'data', epLower, name);
+    return existsSync(out) ? out : join(ROOT, 'src', 'data', epLower, name);
+  };
+  const turnsPath = dataDir('turns.json');
+  const timingPath = dataDir('timing_map.json');
   if (!existsSync(turnsPath) || !existsSync(timingPath)) {
     console.error(`Missing data for ${episode}`);
     process.exit(1);

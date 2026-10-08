@@ -49,11 +49,11 @@ def parse_beats(tsx_path):
 def get_timing(episode):
     """Load timing map."""
     # Try multiple locations
-    for path in [
+    for rel in [
+        f'out/data/{episode.lower()}/timing_map.json',
         f'src/data/{episode.lower()}/timing_map.json',
-        f'../episode_{episode.lower()}/timing_map.json',
     ]:
-        p = Path(path)
+        p = _BASE / rel
         if p.exists():
             with open(p) as f:
                 return json.load(f)

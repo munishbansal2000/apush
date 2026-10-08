@@ -275,8 +275,9 @@ def main():
     out_dir = base / f'episodes/{data_id}/tts/{provider}'
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    # Write turns.json to src/data for Remotion components
-    data_dir = base / f'src/data/{data_id}'
+    # Write turns.json to out/data (canonical generated-data location).
+    # Components load it via src/lib/load-episode-data.ts (props from Root).
+    data_dir = base / f'out/data/{data_id}'
     data_dir.mkdir(parents=True, exist_ok=True)
     turns_json_path = data_dir / 'turns.json'
     # Add turn IDs if not present (t00, t01, ...)

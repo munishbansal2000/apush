@@ -80,9 +80,13 @@ async function main() {
     else warnings++;
   };
 
-  // Load data
-  const turnsPath = join(ROOT, 'src', 'data', epLower, 'turns.json');
-  const timingPath = join(ROOT, 'src', 'data', epLower, 'timing_map.json');
+  // Load data: out/data is canonical (pipeline output); src/data is the transition fallback.
+  const dataDir = (name: string) => {
+    const out = join(ROOT, 'out', 'data', epLower, name);
+    return existsSync(out) ? out : join(ROOT, 'src', 'data', epLower, name);
+  };
+  const turnsPath = dataDir('turns.json');
+  const timingPath = dataDir('timing_map.json');
   const manifestPath = join(ROOT, 'src', 'data', 'images.json');
   const factsPath = join(ROOT, 'src', 'data', 'fact-registry.json');
   const compPath = join(ROOT, 'src', 'components', `U1${episode}Episode.tsx`);

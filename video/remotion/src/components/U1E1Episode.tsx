@@ -35,8 +35,7 @@ import { SmartText } from './SmartText';
 import { ToneProvider } from '../validation/ToneContext';
 import { AutoLayoutProvider } from '../validation/AutoLayout';
 
-import turnsData from '../data/turns.json';
-import timingData from '../data/timing_map.json';
+import { loadEpisodeData, type EpisodeData } from '../lib/load-episode-data';
 
 interface Turn {
   id: string;
@@ -45,9 +44,6 @@ interface Turn {
   duration_sec: number;
 }
 
-const turns = turnsData as Turn[];
-const starts = (timingData as { starts: number[] }).starts;
-const durations = (timingData as { durations: number[] }).durations;
 
 
 /**
@@ -230,7 +226,11 @@ const getBackgroundForTurn = (turnId: string | null, subBeatBg: string | null): 
   return 'historic/debry_secoton_1590.jpg';
 };
 
-export const U1E1Episode: React.FC = () => {
+export const U1E1Episode: React.FC<{ episodeData?: EpisodeData }> = ({ episodeData }) => {
+  const data = episodeData ?? loadEpisodeData('e1');
+  const turns = data.turns as Turn[];
+  const starts = data.starts;
+  const durations = data.durations;
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const timeSec = frame / fps;

@@ -18,8 +18,7 @@ import { PrimarySourceSpotlight } from './PrimarySourceSpotlight';
 import { ToneProvider } from '../validation/ToneContext';
 import { AutoLayoutProvider } from '../validation/AutoLayout';
 
-import turnsData from '../data/u2e5/turns.json';
-import timingData from '../data/u2e5/timing_map.json';
+import { loadEpisodeData, type EpisodeData } from '../lib/load-episode-data';
 
 interface Turn {
   id: string;
@@ -28,9 +27,6 @@ interface Turn {
   pause_after?: number;
 }
 
-const turns = turnsData as Turn[];
-const starts = (timingData as { starts: number[] }).starts;
-const durations = (timingData as { durations: number[] }).durations;
 
 const EP = 'u2e5';
 
@@ -377,7 +373,11 @@ function getBackgroundForTurn(turnId: string | null, subBeatBg: string | null): 
 /* ------------------------------------------------------------------ */
 /* Main episode                                                         */
 /* ------------------------------------------------------------------ */
-export const U2E5Episode: React.FC = () => {
+export const U2E5Episode: React.FC<{ episodeData?: EpisodeData }> = ({ episodeData }) => {
+  const data = episodeData ?? loadEpisodeData('u2e5');
+  const turns = data.turns as Turn[];
+  const starts = data.starts;
+  const durations = data.durations;
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const timeSec = frame / fps;

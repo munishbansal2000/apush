@@ -16,11 +16,8 @@ public/bubbles/
 .build_cache/
 
 # Generated audio — TTS MP3s, music WAVs, timing artifacts — local only, never push
+# (pipeline writes to out/data/; components load via src/lib/load-episode-data.ts)
 public/audio/
-src/data/*/turns.json
-src/data/*/timing_map.json
-src/data/*/word_times.json
-src/data/*/music_timeline.json
 episodes/*/tts/
 *.mp3
 *.wav

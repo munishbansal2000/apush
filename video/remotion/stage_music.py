@@ -13,7 +13,7 @@ Usage:
   python3 stage_music.py --episode E3 --music-dir music/podcast-pack-v1/
   python3 stage_music.py --episode E3 --no-music
 
-Output: src/data/<ep>/music_timeline.json
+Output: out/data/<ep>/music_timeline.json
         public/audio/<ep>/music/*.wav (generated or copied assets)
 """
 
@@ -76,12 +76,15 @@ def main():
     if args.no_music:
         print("Music disabled (--no-music)")
         # Write empty timeline
-        out_path = _BASE / f'src/data/{ep_lower}/music_timeline.json'
+        out_path = _BASE / f'out/data/{ep_lower}/music_timeline.json'
+        out_path.parent.mkdir(parents=True, exist_ok=True)
         out_path.write_text(json.dumps({"events": [], "disabled": True}, indent=2))
         return 0
 
     # Load timing
-    timing_path = _BASE / f'src/data/{ep_lower}/timing_map.json'
+    timing_path = _BASE / f'out/data/{ep_lower}/timing_map.json'
+    if not timing_path.exists():  # transition fallback
+        timing_path = _BASE / f'src/data/{ep_lower}/timing_map.json'
     if not timing_path.exists():
         print(f"ERROR: {timing_path} not found", file=sys.stderr)
         return 1
@@ -196,7 +199,8 @@ def main():
         }
     }
 
-    out_path = _BASE / f'src/data/{ep_lower}/music_timeline.json'
+    out_path = _BASE / f'out/data/{ep_lower}/music_timeline.json'
+    out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(json.dumps(timeline, indent=2))
     print(f"✅ Music timeline: {out_path}")
     print(f"   {len(events)} events, assets in {asset_dir}/")

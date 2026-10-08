@@ -96,7 +96,9 @@ def get_cache_dir(episode):
 def check_timing(episode, tts_provider, force=False):
     """Ensure timing.json exists and is current. Build if needed."""
     cache_dir = get_cache_dir(episode)
-    timing_path = _BASE / f'src/data/{episode.lower()}/timing_map.json'
+    timing_path = _BASE / f'out/data/{episode.lower()}/timing_map.json'
+    if not timing_path.exists():  # transition fallback
+        timing_path = _BASE / f'src/data/{episode.lower()}/timing_map.json'
     
     if timing_path.exists() and not force:
         print(f"  Timing exists: {timing_path}")

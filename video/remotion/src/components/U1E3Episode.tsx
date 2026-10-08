@@ -41,22 +41,11 @@ import { SceneTone } from '../validation/ToneContext';
 import { resolveAnchor, ResolveContext } from '../lib/anchors';
 import { u1e3Plan } from '../data/u1e3-plan';
 import beatsJson from '../data/e3/beats_kit.json';
-import turnsJson from '../data/e3/turns.json';
-import timingJson from '../data/e3/timing_map.json';
 import rcJson from '../data/render-config.json';
 import placesJson from '../data/places.json';
-
-/* ---------------------------------- data ---------------------------------- */
+import { loadEpisodeData, type EpisodeData } from '../lib/load-episode-data';
 
 interface Turn { id: string; speaker: string; text: string }
-const turns = turnsJson as Turn[];
-const starts: number[] = timingJson.starts;
-const durations: number[] = timingJson.durations;
-const totalSec = starts[starts.length - 1] + durations[durations.length - 1];
-const turnIdxById: Record<string, number> = {};
-turns.forEach((t, i) => { turnIdxById[t.id] = i; });
-
-const ACTX: ResolveContext = { turns, starts, durations, wordTimes: {} };
 
 interface ResolvedBeat {
   id: string;
@@ -107,119 +96,7 @@ const planToneToScene: Record<string, SceneTone> = {
   recap: 'fun',
 };
 
-const sections = u1e3Plan.sections
-  .map((s) => ({
-    start: resolveAnchor(s.from, ACTX).time,
-    tone: planToneToScene[s.tone] ?? 'serious',
-    bg: s.bg,
-  }))
-  .sort((a, b) => a.start - b.start);
-
-const sectionAt = (t: number) => {
-  let cur = sections[0];
-  for (const s of sections) if (t >= s.start) cur = s;
-  return cur;
-};
-
-const turnStart = (id: string) => starts[turnIdxById[id]];
-
-const titleAt = resolveAnchor(u1e3Plan.title.at, ACTX).time;
-
-/* Backgrounds: bg beats override plan section backgrounds, per turn. */
-const bgByTurn: Record<string, string> = {};
-for (const b of beats) {
-  if (b.kind !== 'bg') continue;
-  turns.forEach((t, i) => {
-    if (starts[i] >= b.start - 1e-6 && starts[i] < b.end - 1e-6) bgByTurn[t.id] = b.props.image;
-  });
-}
-
-const backgroundForTurn = (turnId: string) =>
-  bgByTurn[turnId] ?? sectionAt(turnStart(turnId)).bg;
-
-const toneForTurn = (turnId: string): SceneTone =>
-  sectionAt(turnStart(turnId)).tone;
-
-/* ------------------------------ pause / reveal ----------------------------- */
-
-interface PauseSpec {
-  card: { start: number; end: number; spec: { kind: string; prompt: string } };
-  reveal: string;
-  revealStart: number;
-  revealEnd: number;
-}
-
-const pauses: PauseSpec[] = u1e3Plan.pauseCards.map((pc) => {
-  const after = resolveAnchor(pc.after, ACTX);
-  const pauseIdx = after.turnIdx + 1; // the [N-second pause] turn
-  const start = starts[pauseIdx];
-  const end = start + durations[pauseIdx];
-  const revealStart = end;
-  const revealEnd = pauseIdx + 2 < turns.length ? starts[pauseIdx + 2] : totalSec;
-  // v9 has no turkey: the "one animal that went east" is a trick question.
-  const reveal = pc.reveal === 'The turkey.'
-    ? 'Trick question — none. The livestock all went west.'
-    : pc.reveal;
-  return {
-    card: { start, end, spec: { kind: pc.kind, prompt: pc.prompt } },
-    reveal,
-    revealStart,
-    revealEnd,
-  };
-});
-
-/* --------------------------------- traps ---------------------------------- */
-
-const traps = u1e3Plan.traps.map((t, i) => {
-  const r = resolveAnchor(t.at, ACTX);
-  const corrIdx = r.turnIdx + 1;
-  const corrStart = starts[corrIdx];
-  const corrEnd = corrIdx + 1 < turns.length ? starts[corrIdx + 1] : totalSec;
-  return {
-    spec: { myth: t.myth, fact: t.fact },
-    trapIdx: r.turnIdx,
-    start: r.time,
-    factStart: corrStart + CFG.overlayTiming.trapFactDelaySec,
-    end: corrEnd,
-    key: `trap-${i}`,
-  };
-});
-
-/* -------------------------------- chapters --------------------------------- */
-
-const chapters = u1e3Plan.chapters.map((c, i) => {
-  const r = resolveAnchor(c.at, ACTX);
-  const nextStart = i + 1 < u1e3Plan.chapters.length
-    ? resolveAnchor(u1e3Plan.chapters[i + 1].at, ACTX).time
-    : totalSec;
-  return {
-    spec: { label: c.label, box: c.box },
-    start: r.time,
-    end: nextStart,
-    bannerEnd: r.time + CFG.overlayTiming.chapterBannerSec,
-    key: `chapter-${i}`,
-  };
-});
-
-/* -------------------------------- box tracker ------------------------------- */
-
 const BOXES = ['Exchange inventory', 'Disease front', 'Who won / who paid', 'Labor crisis'];
-const CHECK_ANCHORS = ['Box one, checked.', 'Box two, checked.', 'Box three, checked.', 'Box four, checked.'];
-const checkedAt: (number | null)[] = CHECK_ANCHORS.map((a) => {
-  try { return resolveAnchor({ turn: a }, ACTX).time; } catch { return null; }
-});
-// All four boxes are named in the cold open (t00).
-const introAt: (number | null)[] = [starts[0], starts[0], starts[0], starts[0]];
-
-const boxChapters = chapters.filter((c) => c.spec.box);
-const currentBoxAt = (t: number) => {
-  for (const c of boxChapters) {
-    if (t >= c.start && t < c.end && c.spec.box) {
-      return { box: c.spec.box, progress: (t - c.start) / (c.end - c.start), since: t - c.start };
-    }
-  }
-  return null;
-};
 
 /* -------------------------------- beat view --------------------------------- */
 
@@ -229,140 +106,275 @@ const seq = (key: string, start: number, end: number, fps: number, el: React.Rea
   </Sequence>
 );
 
-const renderBeat = (b: ResolvedBeat): React.ReactNode => {
-  const p = b.props;
-  switch (b.kind) {
-    case 'text': {
-      const words = (p.text as string).split(/\s+/).filter(Boolean);
-      return (
-        <KineticText
-          text={p.text}
-          level={p.level}
-          position={p.position}
-          color={p.color ?? '#f5e6c8'}
-          wordOffsets={words.map((_, i) => i * 0.14)}
-          entrance={p.entrance ?? 'fade'}
-          keywords={new Set<string>()}
-          cfg={CFG}
-        />
-      );
-    }
-    case 'bubble':
-      return <SpeechBubble text={p.text} position={p.position} width={p.width} />;
-    case 'tour':
-      return (
-        <TourView
-          beat={{
-            image: p.image,
-            caption: p.caption,
-            stops: p.stops.map((s: { rect: [number, number, number, number]; callouts: { point: [number, number]; label: string }[] }) => ({
-              rect: s.rect,
-              callouts: s.callouts ?? [],
-            })),
-            itemOffsets: p.stops.map((s: { time: number }) => Math.max(0, s.time - b.start)),
-          }}
-          regionRect={() => undefined}
-          imageAspect={1.5}
-          cfg={CFG}
-        />
-      );
-    case 'figure':
-      return (
-        <FigureCard
-          beat={{ name: p.name, dates: p.dates, role: p.role, likeness: p.likeness, image: p.image }}
-          cfg={CFG}
-        />
-      );
-    case 'document': {
-      const words = (p.excerpt as string).split(/\s+/).filter(Boolean);
-      return (
-        <DocumentView
-          beat={{
-            title: p.title,
-            attribution: p.attribution,
-            excerpt: p.excerpt,
-            quoteStatus: p.quoteStatus,
-            highlight: p.highlight,
-            image: p.image,
-            marks: p.marks,
-            hipp: p.hipp,
-          }}
-          wordOffsets={words.map((_, i) => i * 0.35)}
-          imageAspect={0.7}
-          cfg={CFG}
-        />
-      );
-    }
-    case 'route':
-      return (
-        <RouteMap
-          beat={{ routes: p.routes, caption: p.caption, variant: p.variant }}
-          places={placesJson as unknown as Record<string, [number, number]>}
-          cfg={CFG}
-        />
-      );
-    case 'versus':
-      return (
-        <VersusPolarization
-          clashTitle={p.clashTitle}
-          periodLabel={p.periodLabel}
-          entityA={p.entityA}
-          entityB={p.entityB}
-          verdictSummary={p.verdictSummary}
-        />
-      );
-    case 'pictogram':
-      return (
-        <Pictogram
-          beat={{ total: p.total, lost: p.lost, label: p.label, caption: p.caption }}
-          cfg={CFG}
-        />
-      );
-    case 'ledger':
-      return (
-        <ExchangeLedger
-          beat={{ west: p.west, east: p.east, exception: p.exception }}
-          cfg={CFG}
-        />
-      );
-    case 'board': {
-      const items = p.items.map((it: { box: number; text: string }) => ({ box: it.box, text: it.text }));
-      const itemOffsets = p.items.map((it: { turn_id: string; offset: number }) =>
-        Math.max(0, turnStart(it.turn_id) + it.offset - b.start));
-      const footerOffset = Math.max(0, turnStart(p.footer.turn_id) + p.footer.offset - b.start);
-      return (
-        <RecapBoard
-          beat={{ items, footer: { text: p.footer.text }, itemOffsets, footerOffset }}
-          boxes={BOXES}
-          checkedAt={(box: number) => checkedAt[box - 1]}
-          beatStart={b.start}
-          cfg={CFG}
-        />
-      );
-    }
-    case 'question':
-      return (
-        <QuestionCard
-          beat={{ number: p.number, format: p.format, stem: p.stem, source: p.source }}
-          cfg={CFG}
-        />
-      );
-    default:
-      return null;
+/**
+ * All data-derived episode state. Computed inside the component (memoized),
+ * never at module scope, so the data can come from props or the loader.
+ */
+function deriveE3State(turns: Turn[], starts: number[], durations: number[]) {
+  const totalSec = starts[starts.length - 1] + durations[durations.length - 1];
+  const turnIdxById: Record<string, number> = {};
+  turns.forEach((t, i) => { turnIdxById[t.id] = i; });
+
+  const ACTX: ResolveContext = { turns, starts, durations, wordTimes: {} };
+
+  const sections = u1e3Plan.sections
+    .map((s) => ({
+      start: resolveAnchor(s.from, ACTX).time,
+      tone: planToneToScene[s.tone] ?? 'serious',
+      bg: s.bg,
+    }))
+    .sort((a, b) => a.start - b.start);
+
+  const sectionAt = (t: number) => {
+    let cur = sections[0];
+    for (const s of sections) if (t >= s.start) cur = s;
+    return cur;
+  };
+
+  const turnStart = (id: string) => starts[turnIdxById[id]];
+
+  const titleAt = resolveAnchor(u1e3Plan.title.at, ACTX).time;
+
+  /* Backgrounds: bg beats override plan section backgrounds, per turn. */
+  const bgByTurn: Record<string, string> = {};
+  for (const b of beats) {
+    if (b.kind !== 'bg') continue;
+    turns.forEach((t, i) => {
+      if (starts[i] >= b.start - 1e-6 && starts[i] < b.end - 1e-6) bgByTurn[t.id] = b.props.image;
+    });
   }
-};
+
+  const backgroundForTurn = (turnId: string) =>
+    bgByTurn[turnId] ?? sectionAt(turnStart(turnId)).bg;
+
+  const toneForTurn = (turnId: string): SceneTone =>
+    sectionAt(turnStart(turnId)).tone;
+
+  /* ------------------------------ pause / reveal ----------------------------- */
+
+  interface PauseSpec {
+    card: { start: number; end: number; spec: { kind: string; prompt: string } };
+    reveal: string;
+    revealStart: number;
+    revealEnd: number;
+  }
+
+  const pauses: PauseSpec[] = u1e3Plan.pauseCards.map((pc) => {
+    const after = resolveAnchor(pc.after, ACTX);
+    const pauseIdx = after.turnIdx + 1; // the [N-second pause] turn
+    const start = starts[pauseIdx];
+    const end = start + durations[pauseIdx];
+    const revealStart = end;
+    const revealEnd = pauseIdx + 2 < turns.length ? starts[pauseIdx + 2] : totalSec;
+    // v9 has no turkey: the "one animal that went east" is a trick question.
+    const reveal = pc.reveal === 'The turkey.'
+      ? 'Trick question — none. The livestock all went west.'
+      : pc.reveal;
+    return {
+      card: { start, end, spec: { kind: pc.kind, prompt: pc.prompt } },
+      reveal,
+      revealStart,
+      revealEnd,
+    };
+  });
+
+  /* --------------------------------- traps ---------------------------------- */
+
+  const traps = u1e3Plan.traps.map((t, i) => {
+    const r = resolveAnchor(t.at, ACTX);
+    const corrIdx = r.turnIdx + 1;
+    const corrStart = starts[corrIdx];
+    const corrEnd = corrIdx + 1 < turns.length ? starts[corrIdx + 1] : totalSec;
+    return {
+      spec: { myth: t.myth, fact: t.fact },
+      trapIdx: r.turnIdx,
+      start: r.time,
+      factStart: corrStart + CFG.overlayTiming.trapFactDelaySec,
+      end: corrEnd,
+      key: `trap-${i}`,
+    };
+  });
+
+  /* -------------------------------- chapters --------------------------------- */
+
+  const chapters = u1e3Plan.chapters.map((c, i) => {
+    const r = resolveAnchor(c.at, ACTX);
+    const nextStart = i + 1 < u1e3Plan.chapters.length
+      ? resolveAnchor(u1e3Plan.chapters[i + 1].at, ACTX).time
+      : totalSec;
+    return {
+      spec: { label: c.label, box: c.box },
+      start: r.time,
+      end: nextStart,
+      bannerEnd: r.time + CFG.overlayTiming.chapterBannerSec,
+      key: `chapter-${i}`,
+    };
+  });
+
+  const CHECK_ANCHORS = ['Box one, checked.', 'Box two, checked.', 'Box three, checked.', 'Box four, checked.'];
+  const checkedAt: (number | null)[] = CHECK_ANCHORS.map((a) => {
+    try { return resolveAnchor({ turn: a }, ACTX).time; } catch { return null; }
+  });
+  // All four boxes are named in the cold open (t00).
+  const introAt: (number | null)[] = [starts[0], starts[0], starts[0], starts[0]];
+
+  const boxChapters = chapters.filter((c) => c.spec.box);
+  const currentBoxAt = (t: number) => {
+    for (const c of boxChapters) {
+      if (t >= c.start && t < c.end && c.spec.box) {
+        return { box: c.spec.box, progress: (t - c.start) / (c.end - c.start), since: t - c.start };
+      }
+    }
+    return null;
+  };
+
+  const renderBeat = (b: ResolvedBeat): React.ReactNode => {
+    const p = b.props;
+    switch (b.kind) {
+      case 'text': {
+        const words = (p.text as string).split(/\s+/).filter(Boolean);
+        return (
+          <KineticText
+            text={p.text}
+            level={p.level}
+            position={p.position}
+            color={p.color ?? '#f5e6c8'}
+            wordOffsets={words.map((_, i) => i * 0.14)}
+            entrance={p.entrance ?? 'fade'}
+            keywords={new Set<string>()}
+            cfg={CFG}
+          />
+        );
+      }
+      case 'bubble':
+        return <SpeechBubble text={p.text} position={p.position} width={p.width} />;
+      case 'tour':
+        return (
+          <TourView
+            beat={{
+              image: p.image,
+              caption: p.caption,
+              stops: p.stops.map((s: { rect: [number, number, number, number]; callouts: { point: [number, number]; label: string }[] }) => ({
+                rect: s.rect,
+                callouts: s.callouts ?? [],
+              })),
+              itemOffsets: p.stops.map((s: { time: number }) => Math.max(0, s.time - b.start)),
+            }}
+            regionRect={() => undefined}
+            imageAspect={1.5}
+            cfg={CFG}
+          />
+        );
+      case 'figure':
+        return (
+          <FigureCard
+            beat={{ name: p.name, dates: p.dates, role: p.role, likeness: p.likeness, image: p.image }}
+            cfg={CFG}
+          />
+        );
+      case 'document': {
+        const words = (p.excerpt as string).split(/\s+/).filter(Boolean);
+        return (
+          <DocumentView
+            beat={{
+              title: p.title,
+              attribution: p.attribution,
+              excerpt: p.excerpt,
+              quoteStatus: p.quoteStatus,
+              highlight: p.highlight,
+              image: p.image,
+              marks: p.marks,
+              hipp: p.hipp,
+            }}
+            wordOffsets={words.map((_, i) => i * 0.35)}
+            imageAspect={0.7}
+            cfg={CFG}
+          />
+        );
+      }
+      case 'route':
+        return (
+          <RouteMap
+            beat={{ routes: p.routes, caption: p.caption, variant: p.variant }}
+            places={placesJson as unknown as Record<string, [number, number]>}
+            cfg={CFG}
+          />
+        );
+      case 'versus':
+        return (
+          <VersusPolarization
+            clashTitle={p.clashTitle}
+            periodLabel={p.periodLabel}
+            entityA={p.entityA}
+            entityB={p.entityB}
+            verdictSummary={p.verdictSummary}
+          />
+        );
+      case 'pictogram':
+        return (
+          <Pictogram
+            beat={{ total: p.total, lost: p.lost, label: p.label, caption: p.caption }}
+            cfg={CFG}
+          />
+        );
+      case 'ledger':
+        return (
+          <ExchangeLedger
+            beat={{ west: p.west, east: p.east, exception: p.exception }}
+            cfg={CFG}
+          />
+        );
+      case 'board': {
+        const items = p.items.map((it: { box: number; text: string }) => ({ box: it.box, text: it.text }));
+        const itemOffsets = p.items.map((it: { turn_id: string; offset: number }) =>
+          Math.max(0, turnStart(it.turn_id) + it.offset - b.start));
+        const footerOffset = Math.max(0, turnStart(p.footer.turn_id) + p.footer.offset - b.start);
+        return (
+          <RecapBoard
+            beat={{ items, footer: { text: p.footer.text }, itemOffsets, footerOffset }}
+            boxes={BOXES}
+            checkedAt={(box: number) => checkedAt[box - 1]}
+            beatStart={b.start}
+            cfg={CFG}
+          />
+        );
+      }
+      case 'question':
+        return (
+          <QuestionCard
+            beat={{ number: p.number, format: p.format, stem: p.stem, source: p.source }}
+            cfg={CFG}
+          />
+        );
+      default:
+        return null;
+    }
+  };
+
+  return {
+    turns, starts, durations,
+    titleAt, backgroundForTurn, toneForTurn,
+    pauses, traps, chapters,
+    checkedAt, introAt, currentBoxAt,
+    renderBeat,
+  };
+}
 
 /* --------------------------------- episode ---------------------------------- */
 
-export const U1E3Episode: React.FC = () => (
+export const U1E3Episode: React.FC<{ episodeData?: EpisodeData }> = ({ episodeData }) => {
+  const fallback = React.useMemo(() => loadEpisodeData('e3'), []);
+  const data = episodeData ?? fallback;
+  const s = React.useMemo(() => deriveE3State(data.turns, data.starts, data.durations), [data]);
+  return (
   <EpisodeShell
     episode="E3"
-    turns={turns}
-    starts={starts}
-    durations={durations}
+    turns={s.turns}
+    starts={s.starts}
+    durations={s.durations}
     audioPath={(id) => `audio/e3/${id}.mp3`}
-    backgroundForTurn={backgroundForTurn}
-    toneForTurn={toneForTurn}
+    backgroundForTurn={s.backgroundForTurn}
+    toneForTurn={s.toneForTurn}
     hideDefaultPauseCard
   >
     {(ctx: ShellContext) => {
@@ -370,7 +382,7 @@ export const U1E3Episode: React.FC = () => (
       return (
         <>
           {/* Title card */}
-          {seq('title', titleAt, titleAt + (rcJson.titleCardSec ?? 3), fps, (
+          {seq('title', s.titleAt, s.titleAt + (rcJson.titleCardSec ?? 3), fps, (
             <TitleCard
               at={0}
               kicker={u1e3Plan.title.kicker}
@@ -380,10 +392,10 @@ export const U1E3Episode: React.FC = () => (
           ))}
 
           {/* Beats (bg beats are handled by backgroundForTurn) */}
-          {beats.filter((b) => b.kind !== 'bg').map((b) => seq(b.id, b.start, b.end, fps, renderBeat(b)))}
+          {beats.filter((b) => b.kind !== 'bg').map((b) => seq(b.id, b.start, b.end, fps, s.renderBeat(b)))}
 
           {/* Pause cards + reveals */}
-          {pauses.map((pc, i) => (
+          {s.pauses.map((pc, i) => (
             <React.Fragment key={`pause-${i}`}>
               {seq(`pausecard-${i}`, pc.card.start, pc.card.end, fps, <PauseCard card={pc.card} cfg={CFG} />)}
               {seq(`reveal-${i}`, pc.revealStart, pc.revealEnd, fps, <RevealCard text={pc.reveal} cfg={CFG} />)}
@@ -391,18 +403,19 @@ export const U1E3Episode: React.FC = () => (
           ))}
 
           {/* Trap cards */}
-          {traps.map((t) => seq(t.key, t.start, t.end, fps, <TrapCard trap={t} cfg={CFG} />))}
+          {s.traps.map((t) => seq(t.key, t.start, t.end, fps, <TrapCard trap={t} cfg={CFG} />))}
 
           {/* Chapter banners */}
-          {chapters.map((c) => seq(c.key, c.start, c.bannerEnd, fps, <ChapterBanner chapter={c} cfg={CFG} />))}
+          {s.chapters.map((c) => seq(c.key, c.start, c.bannerEnd, fps, <ChapterBanner chapter={c} cfg={CFG} />))}
 
           {/* Box tracker — always mounted, appears when boxes are named */}
           <BoxTracker
-            state={{ boxes: BOXES, checkedAt, introAt, current: currentBoxAt(ctx.timeSec), t: ctx.timeSec }}
+            state={{ boxes: BOXES, checkedAt: s.checkedAt, introAt: s.introAt, current: s.currentBoxAt(ctx.timeSec), t: ctx.timeSec }}
             cfg={CFG}
           />
         </>
       );
     }}
   </EpisodeShell>
-);
+  );
+};

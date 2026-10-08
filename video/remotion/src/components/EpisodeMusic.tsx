@@ -38,21 +38,26 @@ export const EpisodeMusic: React.FC<{ episode: string }> = ({ episode }) => {
   let timeline: MusicTimeline | null = null;
   let disabled = false;
   
+  // out/data is canonical (pipeline output); src/data is the transition fallback.
+  const loadTimeline = (outDir: string, srcDir: string): any | null => {
+    try {
+      return require(`../../out/data/${outDir}/music_timeline.json`);
+    } catch {
+      try {
+        return require(`../data/${srcDir}/music_timeline.json`);
+      } catch {
+        return null;
+      }
+    }
+  };
+  const DIRS: Record<string, [string, string]> = {
+    e1: ['e1', ''], e2: ['e2', 'u1e2'], e3: ['e3', 'e3'], e4: ['e4', 'e4'],
+    e5: ['e5', 'e5'], e6: ['e6', 'e6'], e7: ['e7', 'e7'], e8: ['e8', 'e8'],
+    e9: ['e9', 'e9'],
+  };
   try {
-    // Dynamic import based on episode
-    // Note: Remotion requires static imports, so we use a lookup
-    const timelines: Record<string, any> = {
-      e1: require(`../data/e1/music_timeline.json`),
-      e2: require(`../data/u1e2/music_timeline.json`),
-      e3: require(`../data/e3/music_timeline.json`),
-      e4: require(`../data/e4/music_timeline.json`),
-      e5: require(`../data/e5/music_timeline.json`),
-      e6: require(`../data/e6/music_timeline.json`),
-      e7: require(`../data/e7/music_timeline.json`),
-      e8: require(`../data/e8/music_timeline.json`),
-      e9: require(`../data/e9/music_timeline.json`),
-    };
-    const data = timelines[epLower];
+    const dirs = DIRS[epLower];
+    const data = dirs ? loadTimeline(dirs[0], dirs[1]) : null;
     if (data?.disabled) {
       disabled = true;
     } else {

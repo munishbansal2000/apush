@@ -6,8 +6,8 @@ Usage:
   python3 stage_timing.py --episode E2 --provider meta
 
 Input:  episodes/<id>/tts/<provider>/turn_*.mp3
-Output: src/data/<id>/timing_map.json
-        src/data/<id>/word_times.json
+Output: out/data/<id>/timing_map.json
+        out/data/<id>/word_times.json
 
 Skips Vosk if MP3s haven't changed (hash-based cache).
 """
@@ -149,7 +149,7 @@ def main():
     short_hash = hashlib.sha256(combined.encode()).hexdigest()[:12]
     cache_key = cache / f'{data_id}_{provider}_{short_hash}.json'
     
-    out_dir = base / f'src/data/{data_id}'
+    out_dir = base / f'out/data/{data_id}'
     out_dir.mkdir(parents=True, exist_ok=True)
     
     timing_path = out_dir / 'timing_map.json'
