@@ -10,6 +10,7 @@ import {PrimarySourceSpotlight} from '../components/PrimarySourceSpotlight';
 import {AnimatedChart} from '../components/AnimatedChart';
 import {SpectrumSlide} from '../components/SpectrumSlide';
 import {StaggerSlide} from '../components/StaggerSlide';
+import {TimelineRibbon} from '../components/TimelineRibbon';
 
 export interface DirectedTurn { id: string; kind: 'speech' | 'pause'; text?: string }
 export interface DirectedTiming { starts: number[]; durations: number[]; totalSec: number }
@@ -20,10 +21,11 @@ export interface DirectedScene {
   startSec: number;
   endSec: number;
   transition?: 'cut' | 'crossfade' | 'dip';
+  roadmapIndex?: number;
 }
 export interface DirectedProps extends Record<string, unknown> {
   episode: string;
-  plan: {title: string; scenes: DirectedScene[]};
+  plan: {title: string; roadmap?: string[]; scenes: DirectedScene[]};
   turns: DirectedTurn[];
   timing: DirectedTiming;
 }
@@ -53,7 +55,7 @@ const SceneBody: React.FC<{scene: DirectedScene}> = ({scene}) => {
   }
 };
 
-const SceneFrame: React.FC<{scene: DirectedScene}> = ({scene}) => {
+const SceneFrame: React.FC<{scene: DirectedScene; roadmap?: string[]}> = ({scene, roadmap}) => {
   const frame = useCurrentFrame();
   const {durationInFrames} = useVideoConfig();
   const fade = scene.transition === 'crossfade' ? 12 : scene.transition === 'dip' ? 18 : 0;
@@ -63,7 +65,14 @@ const SceneFrame: React.FC<{scene: DirectedScene}> = ({scene}) => {
         interpolate(frame, [durationInFrames - fade, durationInFrames - 1], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'}),
       )
     : 1;
-  return <AbsoluteFill style={{opacity, background: '#0b1020'}}><SceneBody scene={scene} /></AbsoluteFill>;
+  return (
+    <AbsoluteFill style={{opacity, background: '#0b1020'}}>
+      <SceneBody scene={scene} />
+      {roadmap && roadmap.length > 0 && scene.roadmapIndex !== undefined && (
+        <TimelineRibbon boxes={roadmap} checkedCount={scene.roadmapIndex} />
+      )}
+    </AbsoluteFill>
+  );
 };
 
 export const DirectedEpisode: React.FC<DirectedProps> = ({episode, plan, turns, timing}) => {
@@ -73,7 +82,7 @@ export const DirectedEpisode: React.FC<DirectedProps> = ({episode, plan, turns, 
       {plan.scenes.map(scene => {
         const from = Math.round(scene.startSec * fps);
         const durationInFrames = Math.max(1, Math.ceil((scene.endSec - scene.startSec) * fps));
-        return <Sequence key={scene.id} name={scene.id} from={from} durationInFrames={durationInFrames}><SceneFrame scene={scene} /></Sequence>;
+        return <Sequence key={scene.id} name={scene.id} from={from} durationInFrames={durationInFrames}><SceneFrame scene={scene} roadmap={plan.roadmap} /></Sequence>;
       })}
       {turns.map((turn, index) => turn.kind === 'speech' ? (
         <Sequence key={turn.id} from={Math.round(timing.starts[index] * fps)} durationInFrames={Math.max(1, Math.ceil(timing.durations[index] * fps))}>
