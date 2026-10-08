@@ -160,11 +160,15 @@ if (only) {
 } else if (flag('all')) {
   selected = new Set(Object.keys(manifest).filter(path => !path.startsWith('_')));
 } else {
-  const ep = loadEpisode();
-  const key = `${ep.spec.manifestKey}:`;
-  selected = new Set(Object.entries(manifest)
-    .filter(([, entry]) => entry.used_in?.some(use => use.startsWith(key)))
-    .map(([path]) => path));
+  try {
+    const ep = loadEpisode();
+    const key = `${ep.spec.manifestKey}:`;
+    selected = new Set(Object.entries(manifest)
+      .filter(([, entry]) => entry.used_in?.some(use => use.startsWith(key)))
+      .map(([path]) => path));
+  } catch (e) {
+    throw new Error(`fetch-images needs --only <path> or --all when no episode is loaded: ${(e as Error).message}`);
+  }
 }
 
 const targets = Object.entries(manifest).filter(([path]) => selected.has(path));
