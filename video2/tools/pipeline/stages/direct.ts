@@ -5,6 +5,7 @@ import {atomicJson, normalizePlan, readJson, sha256, syncIssues, validateCanvas,
 import type {PipelineContext, Timing} from '../context';
 import {planImageRefs} from '../plan-refs';
 import {cleanSpeech} from '../speech';
+import {readCheckedWords} from './words';
 
 export const planPathFor = (ctx: PipelineContext) => join(ctx.dataDir, 'scene_plan.json');
 export const imageManifestPathFor = (ctx: PipelineContext) => join(ctx.dataDir, 'images.json');
@@ -34,6 +35,8 @@ export function directStage(ctx: PipelineContext, turns: PipelineTurn[], timing:
     outputSchema: readFileSync(directorContractPath, 'utf8'),
   }));
   if (stages.includes('direct')) {
+    // Hard gate: direction never runs on missing or invalid Vosk word timing (even with --from direct).
+    if (!dryRun) readCheckedWords(ctx, turns, timing);
     const imageKeys = Object.keys(readyImages);
     type TransportScene = Omit<DirectedPlan['scenes'][number], 'turnIds'> & {turnIds?: string[]; turnRange?: unknown};
     type TransportPlan = Omit<DirectedPlan, 'scenes'> & {scenes: TransportScene[]};

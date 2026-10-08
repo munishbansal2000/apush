@@ -73,3 +73,28 @@ earlier tags and audio.
 
 Gate: typecheck 0, lint 0, tests 81/81, u3e1 dry-run stdout unchanged.
 
+## P10, P11, P15, P16 (+ P29 widened): validation
+
+`tests/pipeline-validation.test.ts`: 8 of 9 tests failed on the unfixed code, each for its targeted reason
+(e.g. P10: `historic/u9e9/../../../evil.jpg` was accepted and handed to the downloader; P11: the director ran
+3 Meta calls with no word timing; P15: `--from render` selected nothing).
+
+**Real-corpus check** (`/tmp/v2dry/parse-all.ts`, every canonical script in `../audio_scripts`):
+
+| | Before | After |
+|---|---|---|
+| Scripts that parse | 32 of 55 (23 crashed on `## Sources` footers) | **55 of 55** |
+| Junk "speakers" read aloud | `**format`, `- tier 1`, `- potosí`, `**pronunciation`, … | none; only real speakers |
+
+Old vs new parser on the 32 scripts the old one could parse: **28 byte-identical**; 4 differ only by dropping junk
+(u1e5, u3e4 source notes; u5e1 header). **u9cram: the old parser kept 4 of 89 turns** (header junk counted as
+speech, then the first `---` ended the transcript).
+
+Fixes: `## Sources`/"never spoken" headings end the transcript; pre-dialogue metadata skipped; speaker labels must be
+names (Unicode letters, e.g. `Sepúlveda`); malformed pause numbers rejected; `normalizeTurns` rejects NaN/≤0 pauses,
+empty text, bad `holdAfterSec`; shared `isSafePublicPath` (no scheme, leading slash, backslash, empty/dot segments)
+for planned and plan image paths; `direct` validates word timing itself; `--from render` implies render; first scene
+starts at 0 (covers the lead-in) and `syncIssues` now checks the first scene too; `--only images` no longer needs timing.
+
+Gate: typecheck 0, lint 0, tests 90/90, smoke pass, u3e1 dry-run stdout and prompts unchanged.
+

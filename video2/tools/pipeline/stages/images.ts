@@ -1,7 +1,7 @@
 import {existsSync} from 'node:fs';
 import {join} from 'node:path';
 import {ROOT} from '../../lib';
-import {atomicJson, readJson, sha256, type PipelineTurn} from '../../pipeline-core';
+import {atomicJson, isSafePublicPath, readJson, sha256, type PipelineTurn} from '../../pipeline-core';
 import type {PipelineContext} from '../context';
 
 /** Meta UI archival image research → data/<episode>/images.json, then download each file. */
@@ -24,7 +24,7 @@ export function imagesStage(ctx: PipelineContext, turns: PipelineTurn[]): void {
       const patch: Record<string, unknown> = {};
       for (const row of planned.images) {
         const path = String(row.path ?? '');
-        if (!path.startsWith(`historic/${episode}/`) || !/\.(?:jpg|jpeg|png|webp)$/i.test(path)) throw new Error(`invalid planned image path: ${path}`);
+        if (!path.startsWith(`historic/${episode}/`) || !isSafePublicPath(path) || !/\.(?:jpg|jpeg|png|webp)$/i.test(path)) throw new Error(`invalid planned image path: ${path}`);
         const reviewed = manifest[path]?.verified ? manifest[path] : null;
         patch[path] = reviewed
           ? {...reviewed, used_in: [...new Set([...(reviewed.used_in as string[] ?? []), ...(row.used_in as string[] ?? [])])]}

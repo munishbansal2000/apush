@@ -2,7 +2,7 @@
 import {existsSync, readFileSync} from 'node:fs';
 import {join} from 'node:path';
 import {ROOT} from '../lib';
-import {PIPELINE_STAGES, checkFacts, sha256} from '../pipeline-core';
+import {checkFacts, sha256, type PipelineStage} from '../pipeline-core';
 import {treeHash, type PipelineContext} from './context';
 import {loadPronunciations} from './speech';
 import {turnsStage} from './stages/turns';
@@ -14,6 +14,8 @@ import {imagesStage} from './stages/images';
 import {directStage, planPathFor} from './stages/direct';
 import {clipsStage} from './stages/clips';
 import {ensureSync, remotion} from './stages/render';
+
+const TIMED_STAGES = new Set<PipelineStage>(['timing', 'words', 'direct', 'clips', 'contact', 'render']);
 
 /** Run the selected stages in order. */
 export async function runPipeline(ctx: PipelineContext): Promise<void> {
@@ -32,8 +34,10 @@ export async function runPipeline(ctx: PipelineContext): Promise<void> {
   const audioHash = audioInputHash(ctx, turns, PRONUNCIATIONS);
   audioStage(ctx, turns, PRONUNCIATIONS);
 
-  // Later stages need measured timing; stop here when none of them were selected.
-  if (!stages.some(stage => PIPELINE_STAGES.indexOf(stage) >= PIPELINE_STAGES.indexOf('timing'))) {
+  // Image research only needs turns; every other later stage needs measured timing.
+  // Without one of those selected, skip loading timing so --only audio/images works on a fresh episode.
+  if (!stages.some(stage => TIMED_STAGES.has(stage))) {
+    imagesStage(ctx, turns);
     console.log(`pipeline complete through: ${stages.join(', ')}`);
     return;
   }

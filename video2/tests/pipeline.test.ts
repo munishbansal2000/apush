@@ -28,7 +28,7 @@ describe('video pipeline core', () => {
       {id: 'b', component: 'stagger', turnIds: ['t01', 't02'], props: {panels: [{image: 'a.jpg'}, {image: 'b.jpg'}]}},
     ]};
     const out = normalizePlan(plan, turns, [0.25, 1.5, 3], [1, 1.25, 2]);
-    assert.equal(out.scenes[0].startSec, 0.25);
+    assert.equal(out.scenes[0].startSec, 0); // first scene covers the lead-in
     assert.equal(out.scenes[1].endSec, 5);
     assert.throws(() => normalizePlan({...plan, scenes: plan.scenes.slice(0, 1)}, turns, [0.25, 1.5, 3], [1, 1.25, 2]), /stops at turn/);
     assert.throws(() => normalizePlan({...plan, scenes: [

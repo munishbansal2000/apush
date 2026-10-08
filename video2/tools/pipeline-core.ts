@@ -91,22 +91,33 @@ export function wordTimingIssues(
 
 const norm = (s: string) => s.trim().toLowerCase();
 
+/** A spoken-line label: a plain name ("Maya", "MAYA", "Mr. Biddle"), never a bullet or markdown. */
+const SPEAKER_LINE = /^(\p{L}[\p{L} .'-]{0,38}):\s*(.+)$/u;
+/** Markdown headings that open the production-only footer ("## Sources (production only — never spoken)"). */
+const FOOTER_HEADING = /^#{1,6}\s*(?:sources?|references?|verification|production|notes?|changelog|fact[- ]check)\b|never spoken/i;
+
 /** Parse a transcript with `Speaker: text` lines and `[pause N]` markers. */
 export function parseTranscript(source: string): PipelineTurn[] {
   const turns: PipelineTurn[] = [];
   for (const [lineNo, raw] of source.replace(/\r/g, '').split('\n').entries()) {
     const line = raw.trim();
-    if (!line || line.startsWith('#')) continue;
-    // Canonical audio_scripts files put a Markdown rule before the production
-    // sources/footer. Nothing after it is spoken or sent to TTS.
-    if (/^---+$/.test(line) && turns.some(t => t.kind === 'speech')) break;
-    const pause = /^(?:\[(?:pause|silence)\s+([\d.]+)(?:s|\s*seconds?)?\]|\[([\d.]+)[- ]second pause\])$/i.exec(line);
+    if (!line) continue;
+    const started = turns.some(t => t.kind === 'speech');
+    // Canonical audio_scripts files end the spoken part with a Markdown rule or a
+    // "## Sources" heading. Nothing after it is spoken or sent to TTS.
+    if (started && (/^---+$/.test(line) || FOOTER_HEADING.test(line))) break;
+    if (line.startsWith('#')) continue;
+    const pause = /^(?:\[(?:pause|silence)\s+(\d+(?:\.\d+)?)(?:s|\s*seconds?)?\]|\[(\d+(?:\.\d+)?)[- ]second pause\])$/i.exec(line);
     if (pause) {
       turns.push({id: `t${String(turns.length).padStart(2, '0')}`, idx: turns.length, kind: 'pause', pauseSec: Number(pause[1] ?? pause[2])});
       continue;
     }
-    const speech = /^([^:]{1,40}):\s*(.+)$/.exec(line);
-    if (!speech) throw new Error(`transcript line ${lineNo + 1} is not "Speaker: text" or [pause N]: ${line}`);
+    const speech = SPEAKER_LINE.exec(line);
+    if (!speech) {
+      // Header metadata (**Format:** …, rules, read notes) precedes the dialogue.
+      if (!started) continue;
+      throw new Error(`transcript line ${lineNo + 1} is not "Speaker: text" or [pause N]: ${line}`);
+    }
     turns.push({
       id: `t${String(turns.length).padStart(2, '0')}`,
       idx: turns.length,
@@ -122,16 +133,20 @@ export function parseTranscript(source: string): PipelineTurn[] {
 export function normalizeTurns(value: unknown): PipelineTurn[] {
   const raw = Array.isArray(value) ? value : (value as {turns?: unknown[]})?.turns;
   if (!Array.isArray(raw)) throw new Error('turns JSON must be an array or {turns: [...]}');
-  return raw.map((item, idx) => {
+  return raw.map((item, idx): PipelineTurn => {
     const row = item as Record<string, unknown>;
+    const id = String(row.id ?? `t${String(idx).padStart(2, '0')}`);
     const pause = row.kind === 'pause' || norm(String(row.speaker ?? '')) === 'pause';
-    return pause
-      ? {id: String(row.id ?? `t${String(idx).padStart(2, '0')}`), idx, kind: 'pause', pauseSec: Number(row.pauseSec ?? row.duration ?? 3)}
-      : {
-          id: String(row.id ?? `t${String(idx).padStart(2, '0')}`), idx, kind: 'speech',
-          speaker: norm(String(row.speaker ?? 'narrator')), text: String(row.text ?? '').trim(),
-          holdAfterSec: row.holdAfterSec == null ? undefined : Number(row.holdAfterSec),
-        };
+    if (pause) {
+      const pauseSec = Number(row.pauseSec ?? row.duration ?? 3);
+      if (!Number.isFinite(pauseSec) || pauseSec <= 0) throw new Error(`${id}: pause length must be a positive number of seconds`);
+      return {id, idx, kind: 'pause', pauseSec};
+    }
+    const text = String(row.text ?? '').trim();
+    if (!text) throw new Error(`${id}: speech turn has empty text`);
+    const holdAfterSec = row.holdAfterSec == null ? undefined : Number(row.holdAfterSec);
+    if (holdAfterSec !== undefined && (!Number.isFinite(holdAfterSec) || holdAfterSec < 0)) throw new Error(`${id}: holdAfterSec must be a non-negative number`);
+    return {id, idx, kind: 'speech', speaker: norm(String(row.speaker ?? 'narrator')), text, holdAfterSec};
   });
 }
 
@@ -162,11 +177,15 @@ export interface NormalizePlanOpts {
   allowCreativeClip?: boolean;
 }
 
+/** A forward-slash path inside public/: no scheme, drive, leading slash, backslash, empty or dot segments. */
+export function isSafePublicPath(path: string): boolean {
+  if (!path || /^(?:[a-z][a-z0-9+.-]*:|\/)/i.test(path) || path.includes('\\')) return false;
+  return path.split('/').every(segment => segment !== '' && segment !== '.' && segment !== '..');
+}
+
 function assertSafeImagePath(sceneId: string, label: string, image: unknown): void {
   if (typeof image !== 'string' || !image.trim()) throw new Error(`${sceneId}: ${label} must be a non-empty string`);
-  if (/^(?:https?:|data:|blob:|\/)/i.test(image) || image.includes('..')) {
-    throw new Error(`${sceneId}: ${label} must be a safe public/ relative path`);
-  }
+  if (!isSafePublicPath(image)) throw new Error(`${sceneId}: ${label} must be a safe public/ relative path`);
 }
 
 function collectImageRefs(scene: DirectedScene): string[] {
@@ -228,7 +247,8 @@ export function normalizePlan(plan: DirectedPlan, turns: PipelineTurn[], starts:
     if (ids.length !== hi - lo + 1) throw new Error(`${scene.id}: turnIds must be a contiguous range`);
     if (ids.some((value, offset) => value !== lo + offset)) throw new Error(`${scene.id}: turnIds must be unique and in transcript order`);
     last = hi;
-    const startSec = starts[lo];
+    // The first scene also covers the lead-in before the first turn, so frame 0 is never blank.
+    const startSec = lo === 0 ? 0 : starts[lo];
     // Visuals meet on the next turn boundary. The final scene owns the audio
     // tail, so transitions cannot expose blank frames between spoken turns.
     const endSec = hi + 1 < turns.length ? starts[hi + 1] : (totalSec ?? starts[hi] + durations[hi] + (turns[hi].holdAfterSec ?? 0));
@@ -264,8 +284,7 @@ function validateSceneProps(scene: DirectedScene): void {
       break;
     case 'ken_burns': {
       if (!text('image')) throw new Error(`${scene.id}: ken_burns requires props.image`);
-      const image = p.image as string;
-      if (/^(?:https?:|data:|blob:|\/)/i.test(image) || image.includes('..')) throw new Error(`${scene.id}: image must be a safe public/ relative path`);
+      assertSafeImagePath(scene.id, 'image', p.image);
       break;
     }
     case 'quote':
@@ -322,7 +341,7 @@ function validateSceneProps(scene: DirectedScene): void {
       break;
     case 'creative_clip': {
       if (!text('image') || !text('prompt')) throw new Error(`${scene.id}: creative_clip requires image and prompt`);
-      if (/^(?:https?:|data:|blob:|\/)/i.test(p.image as string) || (p.image as string).includes('..')) throw new Error(`${scene.id}: creative image must be a safe public/ relative path`);
+      assertSafeImagePath(scene.id, 'creative image', p.image);
       const prompt = (p.prompt as string).trim();
       if (prompt.length < 20) throw new Error(`${scene.id}: creative prompt is too short`);
       if (/\b(camera|zoom|pan|tilt|dolly|tracking|crane|aerial|flyover)\b/i.test(prompt)) throw new Error(`${scene.id}: creative_clip prompt contains banned camera-move phrase; the factory does its own camera work`);
@@ -342,7 +361,7 @@ export function syncIssues(plan: DirectedPlan, turns: PipelineTurn[], starts: nu
   let cursor = 0;
   for (const scene of plan.scenes) {
     if (scene.startSec == null || scene.endSec == null) { issues.push(`${scene.id}: unresolved scene timing`); continue; }
-    if (Math.abs(scene.startSec - cursor) > tolerance && cursor !== 0) issues.push(`${scene.id}: visual gap/overlap ${(scene.startSec - cursor).toFixed(3)}s`);
+    if (Math.abs(scene.startSec - cursor) > tolerance) issues.push(`${scene.id}: visual gap/overlap ${(scene.startSec - cursor).toFixed(3)}s`);
     cursor = scene.endSec;
   }
   if (plan.scenes.length && Math.abs(cursor - totalSec) > tolerance) issues.push(`final scene ends at ${cursor.toFixed(3)}s, audio timeline ends at ${totalSec.toFixed(3)}s`);
@@ -434,5 +453,6 @@ export function selectedStages(only?: string, from?: string, full = false): Pipe
   if (!from) return normal;
   const i = PIPELINE_STAGES.indexOf(from as PipelineStage);
   if (i < 0) throw new Error(`unknown stage ${from}`);
-  return PIPELINE_STAGES.slice(i).filter(s => full || s !== 'render');
+  // --from render asks for the render explicitly; otherwise it still needs --full.
+  return PIPELINE_STAGES.slice(i).filter(s => full || s !== 'render' || from === 'render');
 }

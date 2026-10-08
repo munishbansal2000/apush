@@ -33,8 +33,8 @@ Status: `[ ]` open · `[~]` in progress · `[x]` fixed
   — `tools/video-pipeline.ts:691`
 - [ ] **P9. "Crossfade" is actually a dip to dark.** Scenes don't overlap, and a `cut` after a fade pops in
   from dark. — `src/directed/DirectedEpisode.tsx:61`
-- [ ] **P10. LLM image paths can escape `public/`.** The `..` check is missing. — `tools/video-pipeline.ts:361`
-- [ ] **P11. Vosk gate is skipped with `--from direct`.** `direct` never calls `readCheckedWords()`.
+- [x] **P10. LLM image paths can escape `public/`.** The `..` check is missing. — `tools/video-pipeline.ts:361`
+- [x] **P11. Vosk gate is skipped with `--from direct`.** `direct` never calls `readCheckedWords()`.
   — `tools/video-pipeline.ts:399`
 
 ## Low / housekeeping
@@ -42,14 +42,17 @@ Status: `[ ]` open · `[~]` in progress · `[x]` fixed
 - [ ] **P12.** Windows-only paths and hard-coded `C:\Users\munis\...` (`video-pipeline.ts:77`, `meta-ui-runner.cjs:44-45`, `setup-pipeline.ps1`).
 - [ ] **P13.** `data/` and `src/data/` hold diverging copies of fact-registry, pronunciations, images, render-config.
 - [x] **P14.** `DirectedPlan` lacks `roadmap`/`roadmapIndex`; `pipeline-core.ts` uses `as any`.
-- [ ] **P15.** `--from render` without `--full` selects no stages and quietly does nothing.
-- [ ] **P16.** Validation gaps: `syncIssues` skips the first-scene gap; `normalizeTurns` accepts NaN pauses and empty text;
+- [x] **P15.** `--from render` without `--full` selects no stages and quietly does nothing.
+- [x] **P16.** Validation gaps: `syncIssues` skips the first-scene gap; `normalizeTurns` accepts NaN pauses and empty text;
   any `Word: ...` line parses as speech.
 - [x] **P17.** No `tsconfig.json` or ESLint config, so `npm run typecheck|lint|check` fail.
   Working versions exist in the older `remotion-src/` copy (`tsconfig.json`, `eslint.config.js`); restore those.
 - [ ] **P18.** No tests cover cache invalidation (P2–P4, P7).
 
 - [x] **P29. `--only audio`/`--only pronounce` crashed on a fresh episode** (demanded timing_map.json). Found while testing P5.
+- [ ] **P30. Prod has no Fish voice for character speakers.** Scripts use `henry`, `editor`, `tomas`, `nullifier`, `brutus`,
+  `biddle`, `haswell`, `jefferson`, `rafael`, `loyalist`, `ellis`, `sepúlveda`, and `both`; `data/pipeline.json` only maps maya/marcus/jay,
+  so `--mode prod` throws on those episodes. (Dev falls back to the narrator voice.)
 
 ## Found by comparing with `remotion-src/` (older ancestor of video2)
 
