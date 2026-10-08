@@ -55,6 +55,8 @@ Status: `[ ]` open · `[~]` in progress · `[x]` fixed
   so `--mode prod` throws on those episodes. (Dev falls back to the narrator voice.)
   **Decision (2026-10-08): no code workaround and no script edits.** Owner adds Fish voice IDs for these characters to
   `fish.voices` in `data/pipeline.json`. Status: waiting on owner.
+- [ ] **P31. Spectrum marker labels collide with axis labels** (e.g. "Sons of Liberty" over "Patriot" at at=0.9). Seen in the visual baseline.
+- [ ] **P32. Causal chain hugs the left frame edge and reveals nodes on a fixed timer** (only 3 of 4 nodes visible at mid-scene), not on narration.
 
 ## Found by comparing with `remotion-src/` (older ancestor of video2)
 

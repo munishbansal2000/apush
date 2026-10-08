@@ -98,3 +98,21 @@ starts at 0 (covers the lead-in) and `syncIssues` now checks the first scene too
 
 Gate: typecheck 0, lint 0, tests 90/90, smoke pass, u3e1 dry-run stdout and prompts unchanged.
 
+## Visual baseline (before renderer fixes), 2026-10-08
+
+Owner ran `npm run verify:render` on their Mac (Playwright headless shell via `REMOTION_BROWSER`; fonts from
+`setup:downloads --only fonts`). Fixture: 10 scenes, one per directed component, roadmap of 3 boxes. Saved to
+`out/verify-before/` (gitignored). Observed in `contact.png`:
+
+| Finding | Evidence | Issue |
+|---|---|---|
+| Layout guard reported **0** findings despite visible collisions | `layout.json` empty | P1 confirmed |
+| Ken Burns caption "Ships carried the empire." is drawn under/through the ribbon labels | still 0002 | P23 confirmed |
+| Spectrum marker "Sons of Liberty" collides with axis label "Patriot" | still 0016 | P31 (new) |
+| Causal chain: first node touches the left frame edge; at mid-scene only 3 of 4 nodes are visible | still 0008 | P32 (new) |
+| Crossfade scenes at +6 frames show a dimmed scene over dark, not the previous scene | stills 0003, 0007, 0011, 0015, 0019 | P9 confirmed |
+| Compare: small text in the top third, large empty area below; Highlight: light card off the dark theme, note label crowds the text | stills 0006, 0010 | P25 (static slide layouts) |
+| Ribbon checks advance correctly (0 → 1 → 2 checked); the third box can never be checked | ribbon in all stills | P23 confirmed |
+
+Not a bug: the yellow/black stagger panel is `public/maya-real.webp`, a dev placeholder (`public/PLACEHOLDERS.md`).
+
