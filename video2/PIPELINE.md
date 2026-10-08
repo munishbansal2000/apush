@@ -7,42 +7,61 @@ End-to-end episode build using **only** video2. No references to `video/remotion
 ```bash
 cd video2
 npm install
-npm run setup
+npx tsx tools/setup-downloads.ts   # fonts, geo data, images
 ```
 
-`setup` runs: downloads → `ensure-data.ts` → `build-turns.ts` → `build-tts.ts` →
-`placeholder-audio` → `build-timing.ts` → `make:sfx` → `placeholder-heads` →
-`sync:manifest` → `validate`.
-
-## Per-episode E2E
+## Full Pipeline — Component Episodes (U1E1–U2E10)
 
 ```bash
 cd video2
 
-# 1. Validate (blocks on errors)
-npm run validate
+# 1. Contact sheet — sampled stills + layout guard (QA)
+npx tsx tools/contact-sheet-components.ts --episode U2E8 --every 8 --scale 0.3
 
-# 2. Contact sheet — sampled stills + layout guard
-npm run contact-sheet -- --episode u1e3 --every 5
+# 2. Full render — with layout guard on every frame
+npx tsx tools/render-components.ts --episode U2E8
 
-# 3. Full render (validates first, guard on every frame)
-npm run render -- --id U1E3
+# Output: out/u2e8episode.mp4 + out/logs/
+```
+
+## Full Pipeline — Kit Episodes (U1E3, U1-PRACTICE)
+
+```bash
+cd video2
+
+# 1. Setup data
+npx tsx tools/ensure-data.ts --episode u1e3
+npx tsx tools/build-turns.ts --episode u1e3
+npx tsx tools/build-tts.ts --episode u1e3
+npx tsx tools/build-timing.ts --episode u1e3
+
+# 2. Validate
+npx tsx tools/validate-episode.ts --episode u1e3
+
+# 3. Contact sheet
+npx tsx tools/contact-sheet.ts --episode u1e3 --every 5
+
+# 4. Full render
+npx tsx tools/render.ts --id U1E3
+
+# Output: out/u1e3.mp4 + out/logs/
 ```
 
 ## Stages
 
-| Phase | Script | Output |
-|-------|--------|--------|
-| Data | `tools/ensure-data.ts` | `data/{ep}/turns.json`, `timing_map.json` |
-| TTS | `tools/build-tts.ts` | `tts/{ep}/*.mp3` |
-| Timing | `tools/build-timing.ts` | `data/{ep}/word_times.json` |
-| Validate | `tools/validate-episode.ts` | console report, exit 1 on error |
-| QA | `tools/contact-sheet.ts` | `out/{ep}-contact.png` |
-| Render | `tools/render.ts` | `out/u1e3.mp4` + guard logs |
+| Phase | Component Episodes | Kit Episodes |
+|-------|-------------------|--------------|
+| Data | `src/data/{ep}/` (committed) | `tools/ensure-data.ts` + `build-turns.ts` |
+| TTS | (pre-existing MP3s) | `tools/build-tts.ts` |
+| Timing | `src/data/{ep}/timing_map.json` | `tools/build-timing.ts` |
+| Validate | (via contact-sheet guard) | `tools/validate-episode.ts` |
+| QA | `tools/contact-sheet-components.ts` | `tools/contact-sheet.ts` |
+| Render | `tools/render-components.ts` | `tools/render.ts` |
 
 ## Notes
 
 - All paths resolve from video2/ via `tools/lib.ts` (`ROOT`).
-- Render config: `data/render-config.json` (1920×1080).
-- Compositions: `U1E3`, `U1-PRACTICE` (see `src/episodes/KitCompositions.tsx`).
+- Component episodes use `src/components-index.ts` entry point.
+- Kit episodes use `src/index.ts` entry point with `src/episodes/`.
+- Render config: `data/render-config.json`.
 - Guard runs on every rendered frame; logs to `out/logs/`.
