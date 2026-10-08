@@ -38,7 +38,8 @@
     "render:demos": "for id in SectionalismDemo VotesDemo RoadToRevolutionDemo DocumentDemo CharactersDemo CivilWarDemo MarketRevolutionDemo; do bash tools/log.sh render-$id tsx tools/render.ts --id $id || exit 1; done",
     "render:practice": "bash tools/log.sh render-practice tsx tools/render.ts --id U1-PRACTICE",
     "gallery-sheet": "bash tools/log.sh gallery-sheet tsx tools/gallery-sheet.ts",
-    "setup:downloads": "bash tools/log.sh setup-downloads tsx tools/setup-downloads.ts"
+    "setup:downloads": "bash tools/log.sh setup-downloads tsx tools/setup-downloads.ts",
+    "contact-sheet:components": "bash tools/log.sh contact-sheet-components tsx tools/contact-sheet-components.ts"
   },
   "dependencies": {
     "@remotion/bundler": "^4.0.534",
