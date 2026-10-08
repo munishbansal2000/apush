@@ -33,7 +33,7 @@ import { U2E10Episode } from "./components/U2E10Episode";
 import { U2E6Episode } from "./components/U2E6Episode";
 import { U2E3Episode } from "./components/U2E3Episode";
 import type { EpisodeData } from "./lib/load-episode-data";
-import e3Timing from "./data/e3/timing_map.json";
+import e3Timing from "../data/e3/timing_map.json";
 // import { U3E6Scene } from "./u3e6/U3E6Scene";
 // import { U3E6_COMPS } from "./u3e6/u3e6_shots";
 // import { U3E6_Act1 } from "./u3e6/U3E6_Act1";
