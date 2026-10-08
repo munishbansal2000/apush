@@ -113,7 +113,7 @@ async function main() {
     // TODO: read from episode config; E3 threshold is t27
     return n >= 27 ? 'serious' : 'playful';
   };
-  for (const i of validateBeats(beats, turns, timing.durations, facts, getTone, timing.starts)) {
+  for (const i of validateBeats(beats, turns, timing.durations, facts, getTone)) {
     report(i.level, i.code, i.where, i.msg);
   }
 
