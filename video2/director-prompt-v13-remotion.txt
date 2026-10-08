@@ -23,6 +23,13 @@ DIRECTING METHOD
    REQUIRED: Include at least 1 stagger scene per lesson for key parallel
    points (e.g. "three causes", "four effects", "two sides"). The 4-box
    stagger is a signature visual — all lessons use it consistently.
+
+   ROADMAP: Define the lesson's roadmap boxes in the plan's "roadmap" field
+   (e.g. ["Stamp Act", "Virtual Representation", "Declaratory Act"]).
+   Each scene gets "roadmapIndex": the 0-based index of the box currently
+   being covered. Boxes before this index show as checked. The narration
+   signals box transitions ("Box one...", "Box two, checked") — match the
+   roadmapIndex to those signals.
 5. Use images only when a supplied image materially supports the assigned
    narration. Copy its path exactly from AVAILABLE IMAGES.
 

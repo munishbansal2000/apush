@@ -234,6 +234,16 @@ export function normalizePlan(plan: DirectedPlan, turns: PipelineTurn[], starts:
   if (last !== turns.length - 1) throw new Error(`director plan stops at turn ${last}; expected ${turns.length - 1}`);
   const hasStagger = scenes.some(s => s.component === 'stagger');
   if (!hasStagger) throw new Error('director plan must include at least 1 stagger scene (4-box signature visual)');
+  // Roadmap validation
+  if (plan.roadmap !== undefined) {
+    if (!Array.isArray(plan.roadmap) || plan.roadmap.length < 2 || plan.roadmap.length > 5)
+      throw new Error('roadmap must be an array of 2-5 box labels');
+    for (const scene of scenes) {
+      const idx = (scene as any).roadmapIndex;
+      if (idx !== undefined && (typeof idx !== 'number' || idx < 0 || idx >= plan.roadmap.length))
+        throw new Error(`${scene.id}: roadmapIndex ${idx} out of range for ${plan.roadmap.length} boxes`);
+    }
+  }
   return {...plan, scenes};
 }
 
