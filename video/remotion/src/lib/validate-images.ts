@@ -98,16 +98,25 @@ export function validateImages(
       push('error', 'I002', where, `file missing: public/${img}`);
     }
 
-    // I004: used_in drift — check that manifest used_in covers our refs
+    // I004: used_in must exactly match the beats that reference this image,
+    // in both directions. Kit strength: error, not warn. Fix with:
+    //   npx tsx tools/sync-manifest.ts --episode <EP>
     const episodeKey = imgRefs[0]?.episodeKey ?? '';
     const expected = new Set(imgRefs.map(r => `${episodeKey}:${r.beatId}`));
     const have = new Set((m.used_in ?? []).filter(u => u.startsWith(`${episodeKey}:`)));
 
     const missing = [...expected].filter(u => !have.has(u));
-    // Don't fail on missing if used_in uses turn IDs instead of beat IDs (our format)
-    // Instead, check that at least the episode is mentioned
-    if (missing.length > 0 && have.size === 0) {
-      push('warn', 'I004', where, `used_in has no ${episodeKey}: entries for ${imgRefs.length} beat(s). Run sync.`);
+    const stale = [...have].filter(u => !expected.has(u));
+    if (missing.length > 0 || stale.length > 0) {
+      const parts: string[] = [];
+      if (missing.length > 0) parts.push(`missing ${missing.join(', ')}`);
+      if (stale.length > 0) parts.push(`stale ${stale.join(', ')}`);
+      push(
+        'error',
+        'I004',
+        where,
+        `used_in out of sync — ${parts.join('; ')}. Run: npx tsx tools/sync-manifest.ts --episode ${episodeKey}`,
+      );
     }
 
     // I006: duplicate used_in
@@ -132,11 +141,50 @@ export function validateImages(
     for (const ek of episodeKeys) {
       const mine = (m.used_in ?? []).filter(u => u.startsWith(`${ek}:`));
       if (mine.length > 0 && !byImage.has(img)) {
-        push('warn', 'I004', `image:${img}`, `lists ${mine.join(', ')} but no beat references it`);
+        push(
+          'error',
+          'I004',
+          `image:${img}`,
+          `claims ${mine.join(', ')} but no beat references it. Run: npx tsx tools/sync-manifest.ts --episode ${ek}`,
+        );
       }
     }
   }
 
+  return issues;
+}
+
+/**
+ * Provenance validator: I011 — magnifier marks on document beats must be
+ * human-verified against the real scan.
+ *
+ * Ported from apush-episode-kit/src/kit/validate.ts (document section).
+ * I007/I008 (focus regions) have no repo equivalent: images.json carries no
+ * focus metadata and repo tour beats address stops by rect, not region id.
+ * I009/I010 (image lockfile) have no repo equivalent: stage_images.py keeps
+ * no lockfile. Both are deliberately not implemented rather than faked.
+ */
+export interface DocProvenance {
+  beatId: string;
+  hasMarks: boolean;
+  marksVerified?: boolean;
+}
+
+export function validateProvenance(
+  docs: DocProvenance[],
+  opts: { strict?: boolean } = {},
+): ImageIssue[] {
+  const issues: ImageIssue[] = [];
+  for (const d of docs) {
+    if (d.hasMarks && !d.marksVerified) {
+      issues.push({
+        level: opts.strict ? 'error' : 'warn',
+        code: 'I011',
+        where: `beat:${d.beatId}`,
+        msg: 'magnifier marks not verified against the real scan (set marksVerified: true)',
+      });
+    }
+  }
   return issues;
 }
 

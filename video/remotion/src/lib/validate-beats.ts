@@ -15,6 +15,15 @@ export interface BeatLike {
   kind: string;
   text?: string;
   level?: 'hero' | 'title' | 'subtitle' | 'body';
+  /** Absolute seconds (kit beats from beats_kit.json); preferred for B001. */
+  start?: number;
+  end?: number;
+  /** Full resolved props for kit beats (beats_kit.json). */
+  props?: {
+    quoteStatus?: string;
+    excerpt?: string;
+    [k: string]: unknown;
+  };
   // ... other fields ignored by validator
 }
 
@@ -74,7 +83,11 @@ export function validateBeats(
 
     const { idx } = entry;
     const dur = durations[idx] ?? 0;
-    const visible = dur - b.offset;
+    // B001: visible < minHold. Kit beats carry absolute start/end (they may
+    // span turns); legacy beats use turn duration minus offset.
+    const visible = (b.start !== undefined && b.end !== undefined)
+      ? b.end - b.start
+      : dur - b.offset;
 
     // B001: visible < minHold
     if (visible < MIN_HOLD_SEC) {
@@ -128,11 +141,15 @@ export function validateBeats(
       }
     }
 
-    // B008: paraphrase styled as quotation (heuristic: starts with quote mark)
-    if (text && /^["“]/.test(text)) {
-      // This is a heuristic — the real check needs quoteStatus metadata
-      // For now, warn if it looks like a quote in a context that might be paraphrase
-      push('warn', 'B008', where, `text starts with quotation mark — verify it's a real quote, not a paraphrase: "${text.slice(0, 40)}"`);
+    // B008: paraphrase must not be styled as a quotation.
+    // Kit strength: metadata-driven error, not a warn-on-any-quote heuristic.
+    // Only document beats carry quoteStatus; a paraphrase whose excerpt opens
+    // with a quotation mark is teaching a paraphrase as a verbatim quote.
+    if (b.kind === 'document' && b.props?.quoteStatus === 'paraphrase') {
+      const excerpt = String(b.props.excerpt ?? '').trim();
+      if (/^["“]/.test(excerpt)) {
+        push('error', 'B008', where, 'paraphrase must not be styled as a quotation');
+      }
     }
   }
 

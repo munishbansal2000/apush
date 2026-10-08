@@ -2,21 +2,28 @@
  * Sync images.json used_in from beat references.
  *
  * Scans the episode component for image references (bgImage, image, mapImage,
- * and getBackgroundForTurn), then updates images.json used_in arrays to match.
- * Deduplicates entries. Does not delete entries for other episodes.
+ * and getBackgroundForTurn), the resolved kit beats (src/data/<ep>/beats_kit.json),
+ * and the lesson-plan section backgrounds, then updates images.json used_in
+ * arrays to match the `<EP>:<turnId>` convention. Deduplicates entries.
+ * Does not delete entries for other episodes.
  *
  * Usage: npx tsx tools/sync-manifest.ts --episode E3
  *
  * Ported from apush-episode-kit/tools/sync-manifest.ts (concept).
+ * Reference collection is shared with the I004 validator via
+ * src/lib/episode-image-refs.ts so both agree on the expected set.
  */
 import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { join } from 'path';
+import { pathToFileURL } from 'url';
+import { collectImageRefs } from '../src/lib/episode-image-refs';
 
 const ROOT = join(__dirname, '..');
 
-function main() {
+async function main() {
   const ep = process.argv.find((a, i) => process.argv[i - 1] === '--episode') ?? 'E3';
   const episode = ep.toUpperCase();
+  const epLower = ep.toLowerCase();
 
   const compPath = join(ROOT, 'src', 'components', `U1${episode}Episode.tsx`);
   const manifestPath = join(ROOT, 'src', 'data', 'images.json');
@@ -54,6 +61,53 @@ function main() {
     images.get(img)!.add('bg');
   }
 
+  // From resolved kit beats (beats_kit.json) + lesson-plan section backgrounds,
+  // via the shared collector so this agrees with the I004 validator.
+  try {
+    const dataDir = (name: string) => {
+      const out = join(ROOT, 'out', 'data', epLower, name);
+      return existsSync(out) ? out : join(ROOT, 'src', 'data', epLower, name);
+    };
+    const turnsPath = dataDir('turns.json');
+    const timingPath = dataDir('timing_map.json');
+    const kitPath = join(ROOT, 'src', 'data', epLower, 'beats_kit.json');
+    if (existsSync(turnsPath) && existsSync(timingPath)) {
+      const turnsData = JSON.parse(readFileSync(turnsPath, 'utf8'));
+      const turns = Array.isArray(turnsData) ? turnsData : turnsData.turns;
+      const timing = JSON.parse(readFileSync(timingPath, 'utf8'));
+      const kitBeats = existsSync(kitPath) ? JSON.parse(readFileSync(kitPath, 'utf8')) : [];
+      let planSections: { bg?: string; from?: unknown }[] = [];
+      for (const pf of [`u1${epLower}-plan`, `u${epLower}-plan`]) {
+        const planPath = join(ROOT, 'src', 'data', `${pf}.ts`);
+        if (!existsSync(planPath)) continue;
+        try {
+          const planMod = await import(pathToFileURL(planPath).href);
+          const plan = Object.values(planMod).find(
+            (v: any) => v && typeof v === 'object' && Array.isArray(v.sections),
+          ) as any;
+          if (plan) planSections = plan.sections;
+        } catch { /* plan not importable */ }
+        break;
+      }
+      for (const r of collectImageRefs({
+        kitBeats,
+        planSections,
+        turns,
+        starts: timing.starts,
+        durations: timing.durations,
+      })) {
+        if (!images.has(r.image)) images.set(r.image, new Set());
+        images.get(r.image)!.add(r.turnId);
+      }
+      // A resolved turnId supersedes the imprecise 'bg' tag for the same image.
+      for (const tids of images.values()) {
+        if (tids.size > 1 && tids.has('bg')) tids.delete('bg');
+      }
+    }
+  } catch (e) {
+    console.error(`  (kit-beat/plan scan skipped: ${(e as Error).message})`);
+  }
+
   console.log(`${episode}: found ${images.size} referenced images`);
 
   let updated = 0;
@@ -83,12 +137,31 @@ function main() {
     }
   }
 
+  // Remove stale <EP>: tags from images no beat references anymore
+  // (e.g. after a turn renumber). Other episodes' tags are untouched.
+  const referenced = new Set(images.keys());
+  for (const [img, entry] of Object.entries(manifest) as [string, { used_in?: string[] }][]) {
+    const usedIn: string[] = entry.used_in ?? [];
+    const stale = usedIn.filter(u => u.startsWith(`${episode}:`));
+    if (stale.length > 0 && !referenced.has(img)) {
+      entry.used_in = usedIn.filter(u => !u.startsWith(`${episode}:`));
+      updated++;
+      console.log(`  Cleaned ${img}: removed stale ${stale.join(', ')}`);
+    }
+  }
+
   if (updated > 0) {
-    writeFileSync(manifestPath, JSON.stringify(manifest, null, 2) + '\n');
+    // Preserve the file's existing indent (currently 1 space) so a sync
+    // doesn't reformat all 800+ lines.
+    const indent = /^(\s*)"/m.exec(readFileSync(manifestPath, 'utf8'))?.[1].length ?? 2;
+    writeFileSync(manifestPath, JSON.stringify(manifest, null, indent) + '\n');
     console.log(`\nWrote ${manifestPath} (${updated} entries updated)`);
   } else {
     console.log('\nNo changes needed.');
   }
 }
 
-main();
+main().catch(e => {
+  console.error(e);
+  process.exit(1);
+});
