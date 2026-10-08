@@ -266,12 +266,13 @@ def main():
         print(f"Using JSON script: {script_path} (consider migrating to audio_scripts/)")
         turns = parse_json_script(script_path)
 
-    # Output dir
-    out_dir = Path(f'episodes/{data_id}/tts/{provider}')
+    # Output dir (anchored to script location, not cwd)
+    base = Path(__file__).parent
+    out_dir = base / f'episodes/{data_id}/tts/{provider}'
     out_dir.mkdir(parents=True, exist_ok=True)
 
     # Write turns.json to src/data for Remotion components
-    data_dir = Path(f'src/data/{data_id}')
+    data_dir = base / f'src/data/{data_id}'
     data_dir.mkdir(parents=True, exist_ok=True)
     turns_json_path = data_dir / 'turns.json'
     # Add turn IDs if not present (t00, t01, ...)
@@ -352,7 +353,7 @@ def main():
     
     # Copy to public/audio/{data_id}/ as tXX.mp3 for Remotion staticFile()
     import shutil
-    public_dir = Path(f'public/audio/{data_id}')
+    public_dir = Path(__file__).parent / f'public/audio/{data_id}'
     public_dir.mkdir(parents=True, exist_ok=True)
     for i in range(len(turns)):
         src = out_dir / f'turn_{i:03d}.mp3'

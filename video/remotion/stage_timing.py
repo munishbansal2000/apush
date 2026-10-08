@@ -129,7 +129,8 @@ def main():
     else:
         data_id = episode.lower()
     
-    tts_dir = Path(f'episodes/{data_id}/tts/{provider}')
+    base = Path(__file__).parent
+    tts_dir = base / f'episodes/{data_id}/tts/{provider}'
     if not tts_dir.exists():
         print(f"ERROR: No TTS output at {tts_dir}")
         print(f"Run: python3 stage_tts.py --episode {episode} --provider {provider}")
@@ -144,7 +145,7 @@ def main():
     short_hash = hashlib.sha256(combined.encode()).hexdigest()[:12]
     cache_key = cache / f'{data_id}_{provider}_{short_hash}.json'
     
-    out_dir = Path(f'src/data/{data_id}')
+    out_dir = base / f'src/data/{data_id}'
     out_dir.mkdir(parents=True, exist_ok=True)
     
     timing_path = out_dir / 'timing_map.json'
