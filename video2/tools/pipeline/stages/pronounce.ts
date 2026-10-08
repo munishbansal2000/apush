@@ -1,11 +1,11 @@
 import {existsSync, readFileSync} from 'node:fs';
 import {atomicJson, readJson, sha256, type PipelineTurn} from '../../pipeline-core';
 import type {PipelineContext} from '../context';
-import {PRONUNCIATIONS_PATH, type PronunciationFile} from '../speech';
+import type {PronunciationFile} from '../speech';
 
 /** Ask Meta UI for hard-to-pronounce terms and add new ones to src/data/pronunciations.json. */
 export function pronounceStage(ctx: PipelineContext, turns: PipelineTurn[]): void {
-  const pronPath = PRONUNCIATIONS_PATH;
+  const pronPath = ctx.pronunciationsPath;
   const pronounceHash = sha256(JSON.stringify(turns.map(t => t.text)));
   if (!ctx.stages.includes('pronounce')) return;
   if (ctx.current('pronounce', pronounceHash)) console.log('[pronounce] checkpoint current');

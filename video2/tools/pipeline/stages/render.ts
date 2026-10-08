@@ -35,7 +35,7 @@ export function ensureSync(ctx: PipelineContext, turns: PipelineTurn[], timing: 
   const registeredImageKeys = Object.keys(existsSync(imageManifestPath) ? readJson<Record<string, unknown>>(imageManifestPath) : {});
   for (const ref of planImageRefs(plan)) {
     if (!registeredImageKeys.includes(ref.path)) issues.push(`${ref.sceneId}: image is not registered: ${ref.path}`);
-    else if (!existsSync(join(ROOT, 'public', ref.path))) issues.push(`${ref.sceneId}: image file is missing: public/${ref.path}`);
+    else if (!existsSync(join(ctx.publicDir, ref.path))) issues.push(`${ref.sceneId}: image file is missing: public/${ref.path}`);
   }
   try {
     const normalized = normalizePlan(plan, turns, timing.starts, timing.durations, timing.totalSec, {
@@ -55,7 +55,7 @@ export function ensureSync(ctx: PipelineContext, turns: PipelineTurn[], timing: 
     if (Math.abs(actual - timing.durations[i]) > 1 / timing.fps) issues.push(`${turns[i].id}: timing/audio drift ${(actual - timing.durations[i]).toFixed(3)}s`);
   }
   for (const scene of plan.scenes) if (scene.component === 'creative_clip') {
-    const clip = join(ROOT, 'public', String(scene.props.clip));
+    const clip = join(ctx.publicDir, String(scene.props.clip));
     if (!existsSync(clip)) issues.push(`${scene.id}: creative clip missing`);
     else {
       const required = (scene.endSec ?? 0) - (scene.startSec ?? 0);
@@ -83,7 +83,7 @@ export async function remotion(ctx: PipelineContext, turns: PipelineTurn[], timi
   // a guard change invalidates cached stills and segments and forces re-checking.
   const sourceHash = treeHash(join(ROOT, 'src'));
   if (stage === 'render') {
-    const output = join(ROOT, 'out', `${episode}.mp4`);
+    const output = join(ctx.outDir, `${episode}.mp4`);
     const segmentsDir = join(work, 'segments');
     mkdirSync(segmentsDir, {recursive: true});
     const cachePath = join(work, 'render-cache.json');
@@ -107,7 +107,7 @@ export async function remotion(ctx: PipelineContext, turns: PipelineTurn[], timi
         return [id, existsSync(file) ? sha256(readFileSync(file)) : 'pause'];
       });
       const assets = ['image', 'clip'].map(key => String(scene.props[key] ?? '')).filter(Boolean).map(file => {
-        const path = join(ROOT, 'public', file);
+        const path = join(ctx.publicDir, file);
         return [file, existsSync(path) ? sha256(readFileSync(path)) : 'missing'];
       });
       const fingerprint = sha256(JSON.stringify({scene, from, to, audioRows, assets, sourceHash, fps: composition.fps, width: composition.width, height: composition.height}));
@@ -196,9 +196,9 @@ export async function remotion(ctx: PipelineContext, turns: PipelineTurn[], timi
     if (Number(file.slice(0, 4)) >= samples.length) unlinkSync(join(stillDir, file));
   }
   atomicJson(cachePath, nextCache);
-  const layoutReportPath = join(ROOT, 'out', `${episode}-layout.json`);
+  const layoutReportPath = join(ctx.outDir, `${episode}-layout.json`);
   atomicJson(layoutReportPath, {episode, checkedAt: new Date().toISOString(), issues: contactLayoutIssues});
-  const sheet = join(ROOT, 'out', `${episode}-contact.png`); rmSync(sheet, {force: true});
+  const sheet = join(ctx.outDir, `${episode}-contact.png`); rmSync(sheet, {force: true});
   execFileSync('ffmpeg', ['-y', '-v', 'error', '-i', join(stillDir, '%04d.png'), '-vf', `tile=5x${Math.ceil(samples.length / 5)}:padding=4:color=black`, '-frames:v', '1', sheet]);
   writeFileSync(sheet.replace(/\.png$/, '.txt'), samples.map((sample, i) => `${String(i).padStart(4, '0')} ${sample.scene.id}/${sample.label} frame=${sample.frame} sec=${sample.sec.toFixed(2)} ${sample.scene.component}`).join('\n') + '\n');
   console.log(`[contact] ${samples.length} transition/mid-scene stills across ${scenes.length} scenes -> ${sheet}`);

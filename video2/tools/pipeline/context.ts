@@ -3,6 +3,7 @@ import {spawnSync} from 'node:child_process';
 import {existsSync, mkdirSync, readFileSync, writeFileSync, unlinkSync, readdirSync, statSync} from 'node:fs';
 import {basename, join} from 'node:path';
 import {ROOT, arg, flag} from '../lib';
+import {PRONUNCIATIONS_PATH} from './speech';
 import {atomicJson, readJson, selectedStages, sha256, type PipelineMode, type PipelineStage} from '../pipeline-core';
 
 export interface Config {
@@ -30,6 +31,12 @@ export interface PipelineContext {
   /** public/audio/<episode>: one mp3 per speech turn. */
   audioDir: string;
   ttsDir: string;
+  /** public/: images, clips, audio served to Remotion. */
+  publicDir: string;
+  /** out/: final video, contact sheet, layout reports. */
+  outDir: string;
+  /** Shared pronunciation registry (src/data/pronunciations.json). */
+  pronunciationsPath: string;
   /** True when the stage's last completed input hash matches and --force is off. */
   current(stage: PipelineStage, hash: string): boolean;
   mark(stage: PipelineStage, hash: string): void;
@@ -100,6 +107,9 @@ export function createContext(): PipelineContext {
     episode, mode, dryRun, force, full: flag('full'), videoGen: videoGen as 'ltx' | 'none', stages, cfg, work, dataDir,
     audioDir: join(ROOT, 'public', 'audio', episode),
     ttsDir: join(ROOT, 'tts', episode),
+    publicDir: join(ROOT, 'public'),
+    outDir: join(ROOT, 'out'),
+    pronunciationsPath: PRONUNCIATIONS_PATH,
     current: (stage, hash) => !force && state.stages[stage]?.hash === hash,
     mark: (stage, hash) => {
       state = {...state, mode, stages: {...state.stages, [stage]: {hash, completedAt: new Date().toISOString()}}};

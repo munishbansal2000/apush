@@ -19,7 +19,7 @@ export function imagesStage(ctx: PipelineContext, turns: PipelineTurn[]): void {
       if (!Array.isArray(planned.images) || !planned.images.length) throw new Error('Meta UI image plan must contain a non-empty images array');
       // Per-lesson registry: data/<episode>/images.json. Reviewed entries are
       // creative source-of-truth and must not be replaced by a later Meta run.
-      const manifestPath = join(ROOT, 'data', episode, 'images.json');
+      const manifestPath = join(ctx.dataDir, 'images.json');
       const manifest = existsSync(manifestPath) ? readJson<Record<string, Record<string, unknown>>>(manifestPath) : {};
       const patch: Record<string, unknown> = {};
       for (const row of planned.images) {

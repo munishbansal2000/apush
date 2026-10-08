@@ -21,18 +21,18 @@ export function clipsStage(ctx: PipelineContext, timing: Timing): void {
       const clipCache = existsSync(clipCachePath) ? readJson<Record<string, {fingerprint: string; output: string}>>(clipCachePath) : {};
       if (!jobs.length) console.log('[clips] no creative_clip scenes');
       else if (videoGen === 'none') {
-        const missing = jobs.filter(scene => !existsSync(join(ROOT, 'public', String(scene.props.clip))));
+        const missing = jobs.filter(scene => !existsSync(join(ctx.publicDir, String(scene.props.clip))));
         if (missing.length) throw new Error(`creative clips missing with --video-gen none: ${missing.map(s => s.id).join(', ')}`);
-      } else if (current('clips', clipsHash) && jobs.every(scene => existsSync(join(ROOT, 'public', String(scene.props.clip))))) console.log('[clips] checkpoint current');
+      } else if (current('clips', clipsHash) && jobs.every(scene => existsSync(join(ctx.publicDir, String(scene.props.clip))))) console.log('[clips] checkpoint current');
       else if (dryRun) console.log(`[clips] dry-run: ${jobs.length} LTX job(s)`);
       else {
         const python = process.env.LTX_PYTHON ?? process.env.FISH_PYTHON ?? 'python';
         const generator = process.env.LTX_SCRIPT ?? join(ROOT, 'tools', 'animate_still.py');
         if (!existsSync(generator)) throw new Error(`LTX generator missing: ${generator}`);
         for (const scene of jobs) {
-          const image = join(ROOT, 'public', String(scene.props.image));
+          const image = join(ctx.publicDir, String(scene.props.image));
           if (!existsSync(image)) throw new Error(`${scene.id}: LTX base image missing: ${image}`);
-          const output = join(ROOT, 'public', String(scene.props.clip));
+          const output = join(ctx.publicDir, String(scene.props.clip));
           const seconds = (scene.endSec ?? 0) - (scene.startSec ?? 0);
           const fingerprint = sha256(JSON.stringify({
             prompt: scene.props.prompt, seed: scene.props.seed ?? 42, seconds,

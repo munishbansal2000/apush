@@ -19,7 +19,7 @@ export function directStage(ctx: PipelineContext, turns: PipelineTurn[], timing:
   // Direction uses turn durations, not Vosk's word dump: the scene schema can
   // only bind to whole turns. Only registered files that actually exist may be
   // selected; download URLs and license metadata do not help scene selection.
-  const readyImages = Object.fromEntries(Object.entries(imageManifest).filter(([path]) => existsSync(join(ROOT, 'public', path))));
+  const readyImages = Object.fromEntries(Object.entries(imageManifest).filter(([path]) => existsSync(join(ctx.publicDir, path))));
   const directorRegistryPath = join(ROOT, 'src', 'data', 'director-components.json');
   const directorRubricPath = join(ROOT, 'director-prompt-v13-remotion.txt');
   const directorContractPath = join(ROOT, 'src', 'data', 'director-output-contract.json');
