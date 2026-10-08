@@ -69,15 +69,9 @@ export const SpeechBubble: React.FC<SpeechBubbleProps> = ({
 
   // CONSTRAINT: max bubble width 380px (was 440, ate 40% of frame)
   // CONSTRAINT: min font size 20px (was shrinking to illegible)
+  // Clamping is normal behavior, not an error — no log spam.
   const constrainedWidth = Math.min(bubbleWidth, 380);
   const constrainedFontSize = Math.max(fontSize, 20);
-
-  if (bubbleWidth !== constrainedWidth && typeof console !== 'undefined') {
-    console.warn(
-      `[SpeechBubble] Width ${bubbleWidth}px exceeds max 380px, clamped. ` +
-      `Text: "${text.slice(0, 40)}..."`
-    );
-  }
 
   // Resolve 'random' to a deterministic pick (no flicker between frames)
   const resolvedArt = art === 'random' ? pickArt(text, randomSeed) : art;
