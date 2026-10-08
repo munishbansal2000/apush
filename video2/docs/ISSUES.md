@@ -53,6 +53,8 @@ Status: `[ ]` open · `[~]` in progress · `[x]` fixed
 - [ ] **P30. Prod has no Fish voice for character speakers.** Scripts use `henry`, `editor`, `tomas`, `nullifier`, `brutus`,
   `biddle`, `haswell`, `jefferson`, `rafael`, `loyalist`, `ellis`, `sepúlveda`, and `both`; `data/pipeline.json` only maps maya/marcus/jay,
   so `--mode prod` throws on those episodes. (Dev falls back to the narrator voice.)
+  **Decision (2026-10-08): no code workaround and no script edits.** Owner adds Fish voice IDs for these characters to
+  `fish.voices` in `data/pipeline.json`. Status: waiting on owner.
 
 ## Found by comparing with `remotion-src/` (older ancestor of video2)
 
