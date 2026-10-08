@@ -10,11 +10,14 @@ $ModelRoot = Join-Path $Root 'models'
 $Model = Join-Path $ModelRoot 'vosk-model-small-en-us-0.15'
 
 function Find-BootstrapPython {
-  $candidates = @(
+  # Force this to remain an array. PowerShell unwraps a one-item pipeline to a
+  # scalar string, where `$candidates[0]` is the first character (for example
+  # `C`) instead of the first path.
+  [string[]]$candidates = @(@(
     $env:PIPELINE_BOOTSTRAP_PYTHON,
     'C:\Users\munis\projects\fish_exmple\.venv\Scripts\python.exe'
-  ) | Where-Object { $_ -and (Test-Path -LiteralPath $_) }
-  if ($candidates.Count -gt 0) { return $candidates[0] }
+  ) | Where-Object { $_ -and (Test-Path -LiteralPath $_) })
+  if ($candidates.Count -gt 0) { return [string]$candidates[0] }
   foreach ($name in @('py', 'python')) {
     $cmd = Get-Command $name -ErrorAction SilentlyContinue
     if ($cmd) { return $cmd.Source }
