@@ -183,7 +183,12 @@ async function main() {
       },
     });
 
-    // Blank check via ffmpeg signalstats
+    // Blank check via ffmpeg signalstats.
+    // YLOW/YHIGH are the 10th/90th percentiles; YMAX is the true max.
+    // Flag only frames that are BOTH near-uniform (pct range < 12) AND have
+    // no bright pixels at all (ymax < 100). Dark-but-populated cards (e.g.
+    // versus: dark navy panels + bright title text, ymax ~235) must not flag;
+    // a genuinely failed render (flat bg color, missing image) has ymax ~30.
     try {
       const stats = execFileSync(
         'ffmpeg',
@@ -193,7 +198,8 @@ async function main() {
       const ydif = Number(/YDIF=([\d.]+)/.exec(stats)?.[1] ?? 0);
       const yhigh = Number(/YHIGH=([\d.]+)/.exec(stats)?.[1] ?? 0);
       const ylow = Number(/YLOW=([\d.]+)/.exec(stats)?.[1] ?? 0);
-      if (yhigh - ylow < 12 && ydif === 0) blank.push(`${label}@${frame}`);
+      const ymax = Number(/YMAX=([\d.]+)/.exec(stats)?.[1] ?? 0);
+      if (yhigh - ylow < 12 && ydif === 0 && ymax < 100) blank.push(`${label}@${frame}`);
     } catch { /* ffmpeg not available — skip blank check */ }
 
     labels.push(`${String(i - 1).padStart(4, '0')}  frame ${frame}  ${label}`);
