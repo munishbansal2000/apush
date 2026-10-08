@@ -14,6 +14,9 @@ video/audio/cuba/.cache/
 video/ref/
 video/samples/__pycache__/
 video/tts/__pycache__/
+# Deterministic per-turn TTS output and fingerprint cache. Keep episode scripts,
+# director plans, prompts, image manifests, and other creative inputs tracked.
+video/episodes/*/tts/
 .gitignore
 __pycache__/
 assets/images/
