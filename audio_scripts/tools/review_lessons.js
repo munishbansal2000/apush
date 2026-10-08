@@ -379,7 +379,7 @@ async function main(argv = process.argv.slice(2)) {
       const file = files[index];
       const content = fs.readFileSync(file, 'utf8');
       const gates = options.runGates ? gateReport(file, content) : { status: 'skipped', output: '' };
-      const hash = sha256(`${VERSION}\0${content}\0${JSON.stringify(gates)}`);
+      const hash = sha256(`${VERSION}\0${REVIEW_CONTRACT}\0${selfReviewPrompt()}\0${content}\0${JSON.stringify(gates)}`);
       const relative = path.relative(AUDIO_ROOT, file);
       const output = path.join(options.outputDir, path.dirname(relative),
         path.basename(file, path.extname(file)), hash.slice(0, 12));
