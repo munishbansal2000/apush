@@ -39,8 +39,32 @@ def get_cache():
 
 _VOSK_MODEL_CACHE = {}
 
+VOSK_MODEL_URL = 'https://alphacephei.com/vosk/models/vosk-model-small-en-us-0.15.zip'
+VOSK_MODEL_NAME = 'vosk-model-small-en-us-0.15'
+
+def _ensure_vosk_model():
+    """Download the Vosk model if missing. Returns the model directory path."""
+    import os
+    model_dir = _BASE / 'models' / VOSK_MODEL_NAME
+    if model_dir.is_dir() and any(model_dir.iterdir()):
+        return str(model_dir)
+    print(f"  Downloading Vosk model ({VOSK_MODEL_NAME})...", flush=True)
+    model_dir.parent.mkdir(parents=True, exist_ok=True)
+    import urllib.request, zipfile, tempfile
+    with tempfile.NamedTemporaryFile(suffix='.zip', delete=False) as tmp:
+        tmp_path = tmp.name
+    try:
+        urllib.request.urlretrieve(VOSK_MODEL_URL, tmp_path)
+        with zipfile.ZipFile(tmp_path) as z:
+            z.extractall(model_dir.parent)
+        print(f"  Vosk model ready: {model_dir}", flush=True)
+    finally:
+        if os.path.exists(tmp_path):
+            os.unlink(tmp_path)
+    return str(model_dir)
+
 def _resolve_vosk_model(model_path):
-    """Return a loaded vosk Model, with fallback to workspace model dirs."""
+    """Return a loaded vosk Model, downloading if necessary."""
     import os
     if model_path in _VOSK_MODEL_CACHE:
         return _VOSK_MODEL_CACHE[model_path]
@@ -50,7 +74,8 @@ def _resolve_vosk_model(model_path):
                   os.path.expanduser('~/workspace/video-pipeline/models/vosk-model-small-en-us-0.15')]
     chosen = next((c for c in candidates if os.path.isdir(c)), None)
     if not chosen:
-        raise RuntimeError(f"No Vosk model found (tried {candidates})")
+        # Auto-download to the project models/ dir (idempotent)
+        chosen = _ensure_vosk_model()
     print(f"  Using Vosk model: {chosen}", flush=True)
     model = Model(chosen)
     _VOSK_MODEL_CACHE[model_path] = model
