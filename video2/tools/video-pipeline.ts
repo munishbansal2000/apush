@@ -5,7 +5,7 @@ import {basename, dirname, join, resolve} from 'node:path';
 import {bundle} from '@remotion/bundler';
 import {renderMedia, renderStill, selectComposition} from '@remotion/renderer';
 import {ROOT, arg, flag, ffprobeDuration} from './lib';
-import {atomicJson, normalizePlan, normalizeTurns, parseTranscript, readJson, resolveAudioScript, selectedStages, sha256, syncIssues, type DirectedPlan, type PipelineMode, type PipelineStage, type PipelineTurn} from './pipeline-core';
+import {atomicJson, normalizePlan, normalizeTurns, parseTranscript, readJson, resolveAudioScript, selectedStages, sha256, syncIssues, wordTimingIssues, type DirectedPlan, type PipelineMode, type PipelineStage, type PipelineTurn, type WordTiming} from './pipeline-core';
 
 interface Config {
   timing: {gapSec: number; leadSec: number; tailSec: number};
@@ -15,6 +15,7 @@ interface Config {
 }
 interface Timing {starts: number[]; durations: number[]; totalSec: number; fps: number; ttsHash: Record<string, string>}
 interface State {version: 1; episode: string; mode: PipelineMode; stages: Partial<Record<PipelineStage, {hash: string; completedAt: string}>>}
+interface LayoutIssue {frame: number; kind: string; id: string; other?: string; detail?: string}
 
 const episode = (arg('episode') ?? '').toLowerCase();
 if (!episode) throw new Error('--episode is required');
@@ -40,6 +41,20 @@ const mark = (stage: PipelineStage, hash: string) => {
   atomicJson(statePath, state);
 };
 const current = (stage: PipelineStage, hash: string) => !force && state.stages[stage]?.hash === hash;
+const layoutIssuesFromLog = (text: string): LayoutIssue[] => {
+  const match = /\[(?:kit-layout|layout-guard)\]\s+(\{.*\})$/s.exec(text);
+  if (!match) return [];
+  try {
+    const payload = JSON.parse(match[1]) as {frame?: number; issues?: Omit<LayoutIssue, 'frame'>[]};
+    return (payload.issues ?? []).map(issue => ({frame: Number(payload.frame ?? -1), ...issue}));
+  } catch (error) {
+    throw new Error(`invalid layout-guard browser log: ${error instanceof Error ? error.message : String(error)}`);
+  }
+};
+const blockingLayoutIssues = (issues: LayoutIssue[]) => issues.filter(issue => issue.kind !== 'unsafe');
+const formatLayoutIssues = (issues: LayoutIssue[]) => issues.slice(0, 12).map(issue =>
+  `  - frame ${issue.frame}: ${issue.kind} ${issue.id}${issue.other ? ` x ${issue.other}` : ''}${issue.detail ? ` - ${issue.detail}` : ''}`,
+).join('\n');
 const run = (file: string, args: string[], env?: NodeJS.ProcessEnv) => {
   const result = spawnSync(file, args, {cwd: ROOT, stdio: 'inherit', env: {...process.env, ...env}, shell: false});
   if (result.error) throw result.error;
@@ -227,16 +242,28 @@ if (!existsSync(timingPath)) {
 const wordsPath = join(dataDir, 'word_times.json');
 const discoveredVoskModel = voskModel();
 const wordsHash = sha256(`${timingHash}:${discoveredVoskModel ?? ''}`);
+const readCheckedWords = (): Record<string, WordTiming[]> => {
+  if (!existsSync(wordsPath)) throw new Error(`word timing is required but missing: ${wordsPath}\nRun: npm run pipeline:dev -- --episode ${episode} --only words`);
+  const words = readJson<Record<string, WordTiming[]>>(wordsPath);
+  const issues = wordTimingIssues(turns, timing.durations, words);
+  if (issues.length) throw new Error(`Vosk word timing gate failed:\n${issues.map(issue => `  - ${issue}`).join('\n')}\nDelete the affected Vosk cache or rerun the words stage with --force.`);
+  return words;
+};
 if (stages.includes('words')) {
-  if (current('words', wordsHash) && existsSync(wordsPath)) console.log('[words] checkpoint current');
+  if (current('words', wordsHash) && existsSync(wordsPath)) {
+    readCheckedWords();
+    console.log('[words] checkpoint current (validated)');
+  }
   else if (dryRun) console.log('[words] dry-run');
   else {
     const python = pipelinePython();
     if (!discoveredVoskModel) throw new Error('Vosk model not found. Run: npm run setup:pipeline (or set VOSK_MODEL_PATH)');
     const args = [join(ROOT, 'tools/vosk-words.py'), '--audio-dir', audioDir, '--out', wordsPath, '--cache', join(work, 'vosk-cache.json')];
     args.push('--model', discoveredVoskModel);
-    run(python, args); mark('words', wordsHash);
-    console.log(`[words] -> ${wordsPath}`);
+    run(python, args);
+    const checked = readCheckedWords();
+    mark('words', wordsHash);
+    console.log(`[words] ${Object.values(checked).reduce((sum, rows) => sum + rows.length, 0)} timed words across ${Object.keys(checked).length} turns -> ${wordsPath}`);
   }
 }
 
@@ -269,7 +296,9 @@ if (stages.includes('images')) {
 }
 
 const planPath = join(dataDir, 'scene_plan.json');
-const measuredWords = existsSync(wordsPath) ? readJson<Record<string, {w: string; s: number; e: number}[]>>(wordsPath) : {};
+const measuredWords = stages.includes('direct') && !dryRun
+  ? readCheckedWords()
+  : existsSync(wordsPath) ? readJson<Record<string, WordTiming[]>>(wordsPath) : {};
 const directHash = sha256(JSON.stringify({turns, timing, measuredWords, videoGen, images: existsSync(imagesPlanPath) ? readFileSync(imagesPlanPath, 'utf8') : ''}));
 if (stages.includes('direct')) {
   if (current('direct', directHash) && existsSync(planPath)) console.log('[direct] checkpoint current');
@@ -371,6 +400,9 @@ async function remotion(stage: 'contact' | 'render') {
   const serveUrl = await bundle({entryPoint: join(ROOT, 'src/directed-index.tsx')});
   const browserExecutable = process.env.REMOTION_BROWSER ?? null;
   const composition = await selectComposition({serveUrl, id: 'DirectedEpisode', inputProps, browserExecutable, logLevel: 'error'});
+  // Includes the guard implementation/config as well as visual components, so
+  // a guard change invalidates cached stills and segments and forces re-checking.
+  const sourceHash = treeHash(join(ROOT, 'src'));
   if (stage === 'render') {
     const output = join(ROOT, 'out', `${episode}.mp4`);
     const segmentsDir = join(work, 'segments');
@@ -378,7 +410,8 @@ async function remotion(stage: 'contact' | 'render') {
     const cachePath = join(work, 'render-cache.json');
     const cache = existsSync(cachePath) ? readJson<Record<string, {fingerprint: string; file: string}>>(cachePath) : {};
     const nextCache: Record<string, {fingerprint: string; file: string}> = {};
-    const sourceHash = treeHash(join(ROOT, 'src'));
+    const layoutReportPath = join(work, 'render-layout.json');
+    const renderLayoutIssues: LayoutIssue[] = [];
     const boundaries = [0, ...plan.scenes.map((scene, index) => index === plan.scenes.length - 1
       ? composition.durationInFrames
       : Math.round((scene.endSec ?? 0) * composition.fps))];
@@ -407,10 +440,19 @@ async function remotion(stage: 'contact' | 'render') {
         console.log(`[render] ${scene.id}: segment current`);
         continue;
       }
+      const sceneLayoutIssues: LayoutIssue[] = [];
       await renderMedia({
         composition, serveUrl, codec: 'h264', outputLocation: file, inputProps,
         browserExecutable, logLevel: 'error', frameRange: [from, to],
+        onBrowserLog: log => sceneLayoutIssues.push(...layoutIssuesFromLog(log.text)),
       });
+      renderLayoutIssues.push(...sceneLayoutIssues);
+      atomicJson(layoutReportPath, {episode, checkedAt: new Date().toISOString(), issues: renderLayoutIssues});
+      const blocking = blockingLayoutIssues(sceneLayoutIssues);
+      if (blocking.length) {
+        if (existsSync(file)) unlinkSync(file);
+        throw new Error(`layout guard failed while rendering ${scene.id}:\n${formatLayoutIssues(blocking)}\nFull report: ${layoutReportPath}`);
+      }
       rendered++;
       atomicJson(cachePath, nextCache);
       console.log(`[render] ${scene.id}: frames ${from}-${to}`);
@@ -419,6 +461,7 @@ async function remotion(stage: 'contact' | 'render') {
       const full = join(segmentsDir, file);
       if (!segmentFiles.includes(full)) unlinkSync(full);
     }
+    atomicJson(layoutReportPath, {episode, checkedAt: new Date().toISOString(), issues: renderLayoutIssues});
     atomicJson(cachePath, nextCache);
     const concat = join(work, 'segments.concat.txt');
     writeFileSync(concat, segmentFiles.map(file => `file '${file.replace(/\\/g, '/').replace(/'/g, "'\\''")}'`).join('\n') + '\n');
@@ -432,28 +475,57 @@ async function remotion(stage: 'contact' | 'render') {
   }
   const stillDir = join(work, 'stills'); mkdirSync(stillDir, {recursive: true});
   const cachePath = join(work, 'contact-cache.json');
-  const cache = existsSync(cachePath) ? readJson<Record<string, string>>(cachePath) : {};
-  const nextCache: Record<string, string> = {};
+  interface ContactCacheEntry {fingerprint: string; issues: LayoutIssue[]}
+  const cache = existsSync(cachePath) ? readJson<Record<string, ContactCacheEntry>>(cachePath) : {};
+  const nextCache: Record<string, ContactCacheEntry> = {};
+  const contactLayoutIssues: LayoutIssue[] = [];
   const scenes = plan.scenes;
-  for (let i = 0; i < scenes.length; i++) {
-    const sec = ((scenes[i].startSec ?? 0) + (scenes[i].endSec ?? 0)) / 2;
+  const turnIndex = new Map(turns.map((turn, index) => [turn.id, index]));
+  const samples = scenes.flatMap((scene, sceneIndex) => {
+    const candidates = [
+      {label: 'mid', sec: ((scene.startSec ?? 0) + (scene.endSec ?? 0)) / 2},
+      ...scene.turnIds.map(turnId => {
+        const index = turnIndex.get(turnId)!;
+        return {label: turnId, sec: timing.starts[index] + Math.min(0.5, timing.durations[index] / 2)};
+      }),
+    ];
+    const byFrame = new Map<number, {label: string; sec: number}>();
+    for (const sample of candidates) byFrame.set(Math.min(composition.durationInFrames - 1, Math.max(0, Math.round(sample.sec * composition.fps))), sample);
+    return [...byFrame.entries()].map(([frame, sample]) => ({...sample, frame, scene, sceneIndex}));
+  });
+  for (let i = 0; i < samples.length; i++) {
+    const {scene, sceneIndex, sec, frame, label} = samples[i];
     const output = join(stillDir, `${String(i).padStart(4, '0')}.png`);
-    const fingerprint = sha256(JSON.stringify({scene: scenes[i], index: i, sec, fps: composition.fps}));
-    nextCache[scenes[i].id] = fingerprint;
-    if (!force && existsSync(output) && cache[scenes[i].id] === fingerprint) {
-      console.log(`[contact] ${scenes[i].id}: still current`);
+    const key = `${scene.id}:${label}:${frame}`;
+    const fingerprint = sha256(JSON.stringify({scene, sceneIndex, label, sec, frame, fps: composition.fps, sourceHash}));
+    const cached = cache[key];
+    if (!force && existsSync(output) && cached?.fingerprint === fingerprint && Array.isArray(cached.issues)) {
+      nextCache[key] = cached;
+      contactLayoutIssues.push(...cached.issues);
+      console.log(`[contact] ${scene.id}/${label}: still current`);
       continue;
     }
-    await renderStill({composition, serveUrl, frame: Math.min(composition.durationInFrames - 1, Math.round(sec * composition.fps)), output, scale: 0.3, inputProps, browserExecutable, logLevel: 'error'});
+    const sceneIssues: LayoutIssue[] = [];
+    await renderStill({
+      composition, serveUrl, frame, output, scale: 0.3, inputProps, browserExecutable, logLevel: 'error',
+      onBrowserLog: log => sceneIssues.push(...layoutIssuesFromLog(log.text)),
+    });
+    nextCache[key] = {fingerprint, issues: sceneIssues};
+    contactLayoutIssues.push(...sceneIssues);
   }
   for (const file of readdirSync(stillDir).filter(name => /^\d{4}\.png$/.test(name))) {
-    if (Number(file.slice(0, 4)) >= scenes.length) unlinkSync(join(stillDir, file));
+    if (Number(file.slice(0, 4)) >= samples.length) unlinkSync(join(stillDir, file));
   }
   atomicJson(cachePath, nextCache);
+  const layoutReportPath = join(ROOT, 'out', `${episode}-layout.json`);
+  atomicJson(layoutReportPath, {episode, checkedAt: new Date().toISOString(), issues: contactLayoutIssues});
   const sheet = join(ROOT, 'out', `${episode}-contact.png`); rmSync(sheet, {force: true});
-  execFileSync('ffmpeg', ['-y', '-v', 'error', '-i', join(stillDir, '%04d.png'), '-vf', `tile=5x${Math.ceil(scenes.length / 5)}:padding=4:color=black`, '-frames:v', '1', sheet]);
-  writeFileSync(sheet.replace(/\.png$/, '.txt'), scenes.map((s, i) => `${String(i).padStart(4, '0')} ${s.id} ${s.startSec?.toFixed(2)}-${s.endSec?.toFixed(2)} ${s.component}`).join('\n') + '\n');
-  console.log(`[contact] ${scenes.length} scene stills -> ${sheet}`);
+  execFileSync('ffmpeg', ['-y', '-v', 'error', '-i', join(stillDir, '%04d.png'), '-vf', `tile=5x${Math.ceil(samples.length / 5)}:padding=4:color=black`, '-frames:v', '1', sheet]);
+  writeFileSync(sheet.replace(/\.png$/, '.txt'), samples.map((sample, i) => `${String(i).padStart(4, '0')} ${sample.scene.id}/${sample.label} frame=${sample.frame} sec=${sample.sec.toFixed(2)} ${sample.scene.component}`).join('\n') + '\n');
+  console.log(`[contact] ${samples.length} transition/mid-scene stills across ${scenes.length} scenes -> ${sheet}`);
+  const blocking = blockingLayoutIssues(contactLayoutIssues);
+  if (blocking.length) throw new Error(`contact sheet layout guard failed with ${blocking.length} issue(s):\n${formatLayoutIssues(blocking)}\nFull report: ${layoutReportPath}`);
+  console.log(`[layout-guard] contact samples clean${contactLayoutIssues.length ? ` (${contactLayoutIssues.length} safe-area warning(s))` : ''}`);
 }
 
 const main = async () => {
@@ -461,7 +533,7 @@ const main = async () => {
     if (dryRun) console.log('[contact] dry-run');
     else {
       ensureSync();
-      const h = sha256(readFileSync(planPath));
+      const h = sha256(`${readFileSync(planPath)}:${treeHash(join(ROOT, 'src'))}`);
       if (current('contact', h) && existsSync(join(ROOT, 'out', `${episode}-contact.png`))) console.log('[contact] checkpoint current');
       else { await remotion('contact'); mark('contact', h); }
     }
@@ -470,7 +542,7 @@ const main = async () => {
     if (dryRun) console.log('[render] dry-run');
     else {
       ensureSync();
-      const h = sha256(`${readFileSync(planPath)}:${audioHash}`);
+      const h = sha256(`${readFileSync(planPath)}:${audioHash}:${treeHash(join(ROOT, 'src'))}`);
       if (current('render', h) && existsSync(join(ROOT, 'out', `${episode}.mp4`))) console.log('[render] checkpoint current');
       else { await remotion('render'); mark('render', h); }
     }

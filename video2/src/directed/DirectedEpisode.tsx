@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import {AbsoluteFill, Audio, OffthreadVideo, Sequence, interpolate, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
 import {TitleCard} from '../components/TitleCard';
 import {KenBurnsSlide} from '../components/KenBurnsSlide';
@@ -7,6 +7,9 @@ import {CompareSlide} from '../components/CompareSlide';
 import {CausalChainSlide} from '../components/CausalChainSlide';
 import {HighlightSlide} from '../components/HighlightSlide';
 import {PrimarySourceSpotlight} from '../components/PrimarySourceSpotlight';
+import {AutoLayoutProvider} from '../validation/AutoLayout';
+import {LayoutGuard, Track, guardConfigFromRenderConfig} from '../lib/guard';
+import renderConfig from '../data/render-config.json';
 
 export interface DirectedTurn { id: string; kind: 'speech' | 'pause'; text?: string }
 export interface DirectedTiming { starts: number[]; durations: number[]; totalSec: number }
@@ -62,18 +65,31 @@ const SceneFrame: React.FC<{scene: DirectedScene}> = ({scene}) => {
 
 export const DirectedEpisode: React.FC<DirectedProps> = ({episode, plan, turns, timing}) => {
   const {fps} = useVideoConfig();
+  const rootRef = useRef<HTMLDivElement>(null);
+  const guardCfg = guardConfigFromRenderConfig(renderConfig as never);
   return (
-    <AbsoluteFill style={{background: '#0b1020'}}>
-      {plan.scenes.map(scene => {
-        const from = Math.round(scene.startSec * fps);
-        const durationInFrames = Math.max(1, Math.ceil((scene.endSec - scene.startSec) * fps));
-        return <Sequence key={scene.id} name={scene.id} from={from} durationInFrames={durationInFrames}><SceneFrame scene={scene} /></Sequence>;
-      })}
-      {turns.map((turn, index) => turn.kind === 'speech' ? (
-        <Sequence key={turn.id} from={Math.round(timing.starts[index] * fps)} durationInFrames={Math.max(1, Math.ceil(timing.durations[index] * fps))}>
-          <Audio src={staticFile(`audio/${episode}/${turn.id}.mp3`)} />
-        </Sequence>
-      ) : null)}
-    </AbsoluteFill>
+    <AutoLayoutProvider debug={false}>
+      <AbsoluteFill ref={rootRef} style={{background: '#0b1020'}}>
+        {plan.scenes.map(scene => {
+          const from = Math.round(scene.startSec * fps);
+          const durationInFrames = Math.max(1, Math.ceil((scene.endSec - scene.startSec) * fps));
+          return (
+            <Sequence key={scene.id} name={scene.id} from={from} durationInFrames={durationInFrames}>
+              {/* Full-bleed images/video may leave the title-safe area by design. The
+                  guard still checks cuts, text overflow, clipping and marked-item overlap. */}
+              <Track id={`scene:${scene.id}`} role="stage" allowUnsafe>
+                <SceneFrame scene={scene} />
+              </Track>
+            </Sequence>
+          );
+        })}
+        {turns.map((turn, index) => turn.kind === 'speech' ? (
+          <Sequence key={turn.id} from={Math.round(timing.starts[index] * fps)} durationInFrames={Math.max(1, Math.ceil(timing.durations[index] * fps))}>
+            <Audio src={staticFile(`audio/${episode}/${turn.id}.mp3`)} />
+          </Sequence>
+        ) : null)}
+        <LayoutGuard cfg={guardCfg} rootRef={rootRef} />
+      </AbsoluteFill>
+    </AutoLayoutProvider>
   );
 };

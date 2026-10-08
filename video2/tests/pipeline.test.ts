@@ -1,6 +1,9 @@
 import assert from 'node:assert/strict';
 import {describe, it} from 'node:test';
-import {normalizePlan, parseTranscript, resolveAudioScript, selectedStages, syncIssues, type DirectedPlan} from '../tools/pipeline-core';
+import {mkdtempSync, readFileSync, readdirSync, rmSync} from 'node:fs';
+import {tmpdir} from 'node:os';
+import {join} from 'node:path';
+import {atomicJson, normalizePlan, parseTranscript, resolveAudioScript, selectedStages, syncIssues, wordTimingIssues, type DirectedPlan} from '../tools/pipeline-core';
 
 describe('video pipeline core', () => {
   it('parses speaker lines and timed pauses', () => {
@@ -46,5 +49,31 @@ describe('video pipeline core', () => {
     assert.deepEqual(syncIssues(plan, turns, [0.25, 1.5], [1, 2], 4), []);
     plan.scenes[1].startSec! += 0.2;
     assert.match(syncIssues(plan, turns, [0.25, 1.5], [1, 2], 4).join('\n'), /visual gap\/overlap/);
+  });
+
+  it('rejects incomplete or malformed Vosk timing before direction', () => {
+    const turns = parseTranscript('Maya: One word.\n[pause 1]\nMarcus: Two words.');
+    assert.match(wordTimingIssues(turns, [1, 1, 2], {t00: [{w: 'one', s: 0.1, e: 0.5}]}).join('\n'), /t02: missing Vosk result/);
+    assert.match(wordTimingIssues(turns, [1, 1, 2], {
+      t00: [{w: 'one', s: 0.1, e: 0.5}],
+      t02: [{w: 'two', s: 0.2, e: 0.5}, {w: 'words', s: 0.4, e: 0.8}],
+    }).join('\n'), /out of order/);
+    assert.deepEqual(wordTimingIssues(turns, [1, 1, 2], {
+      t00: [{w: 'one', s: 0.1, e: 0.5}],
+      t02: [{w: 'two', s: 0.2, e: 0.5}, {w: 'words', s: 0.6, e: 0.9}],
+    }), []);
+  });
+
+  it('atomically replaces JSON without leaving a temp sidecar', () => {
+    const dir = mkdtempSync(join(tmpdir(), 'video2-atomic-'));
+    try {
+      const path = join(dir, 'state.json');
+      atomicJson(path, {version: 1});
+      atomicJson(path, {version: 2, complete: true});
+      assert.deepEqual(JSON.parse(readFileSync(path, 'utf8')), {version: 2, complete: true});
+      assert.deepEqual(readdirSync(dir), ['state.json']);
+    } finally {
+      rmSync(dir, {recursive: true, force: true});
+    }
   });
 });

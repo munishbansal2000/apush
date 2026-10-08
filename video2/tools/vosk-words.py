@@ -9,6 +9,21 @@ def file_hash(path):
             digest.update(chunk)
     return digest.hexdigest()
 
+def atomic_json(path, value):
+    directory = os.path.dirname(os.path.abspath(path))
+    os.makedirs(directory, exist_ok=True)
+    fd, temp_path = tempfile.mkstemp(prefix=f'.{os.path.basename(path)}.', suffix='.tmp', dir=directory)
+    try:
+        with os.fdopen(fd, 'w', encoding='utf-8') as handle:
+            json.dump(value, handle, indent=2)
+            handle.write('\n')
+            handle.flush()
+            os.fsync(handle.fileno())
+        os.replace(temp_path, path)
+    except BaseException:
+        if os.path.exists(temp_path): os.unlink(temp_path)
+        raise
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--audio-dir', required=True)
@@ -43,6 +58,7 @@ def main():
         if old_hashes.get(turn_id) == fingerprint and turn_id in old_result:
             result[turn_id] = old_result[turn_id]
             reused += 1
+            print(f'[vosk] {turn_id}: reused ({len(result[turn_id])} words)', flush=True)
             continue
         with tempfile.NamedTemporaryFile(suffix='.wav', delete=False) as tmp:
             wav_path = tmp.name
@@ -60,16 +76,12 @@ def main():
                 rows += json.loads(rec.FinalResult()).get('result', [])
             result[turn_id] = [{'w': row['word'], 's': row['start'], 'e': row['end']} for row in rows]
             measured += 1
+            print(f'[vosk] {turn_id}: measured ({len(result[turn_id])} words)', flush=True)
         finally:
             if os.path.exists(wav_path): os.unlink(wav_path)
-    os.makedirs(os.path.dirname(os.path.abspath(args.out)), exist_ok=True)
-    with open(args.out, 'w', encoding='utf-8') as handle:
-        json.dump(result, handle, indent=2)
-        handle.write('\n')
+    atomic_json(args.out, result)
     if args.cache:
-        with open(args.cache, 'w', encoding='utf-8') as handle:
-            json.dump(hashes, handle, indent=2)
-            handle.write('\n')
-    print(f'vosk: {measured} measured, {reused} reused')
+        atomic_json(args.cache, hashes)
+    print(f'[vosk] complete: {measured} measured, {reused} reused, {sum(len(rows) for rows in result.values())} words', flush=True)
 
 if __name__ == '__main__': main()

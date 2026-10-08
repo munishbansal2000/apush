@@ -1,6 +1,6 @@
 import {createHash} from 'node:crypto';
-import {existsSync, readFileSync, writeFileSync, mkdirSync, unlinkSync, readdirSync} from 'node:fs';
-import {dirname, join, resolve} from 'node:path';
+import {existsSync, readFileSync, writeFileSync, mkdirSync, unlinkSync, readdirSync, renameSync} from 'node:fs';
+import {basename, dirname, join, resolve} from 'node:path';
 
 export type PipelineMode = 'dev' | 'prod';
 export type PipelineStage = 'turns' | 'audio' | 'timing' | 'words' | 'images' | 'direct' | 'clips' | 'contact' | 'render';
@@ -33,6 +33,8 @@ export interface DirectedPlan {
   scenes: DirectedScene[];
 }
 
+export interface WordTiming {w: string; s: number; e: number}
+
 export const sha256 = (value: string | Buffer): string => createHash('sha256').update(value).digest('hex');
 
 export function readJson<T>(path: string): T {
@@ -41,13 +43,43 @@ export function readJson<T>(path: string): T {
 
 export function atomicJson(path: string, value: unknown): void {
   mkdirSync(dirname(path), {recursive: true});
-  const temp = `${path}.tmp`;
-  writeFileSync(temp, `${JSON.stringify(value, null, 2)}\n`);
-  // On Windows rename-over-existing is not consistently atomic, but writing the
-  // complete temp first still prevents a half-written checkpoint.
-  if (existsSync(path)) writeFileSync(path, readFileSync(temp));
-  else writeFileSync(path, readFileSync(temp));
-  unlinkSync(temp);
+  const temp = join(dirname(path), `.${basename(path)}.${process.pid}.${Date.now()}.tmp`);
+  try {
+    writeFileSync(temp, `${JSON.stringify(value, null, 2)}\n`, {encoding: 'utf8', flush: true});
+    // The temp lives beside the destination, so rename is a same-filesystem
+    // replacement: readers see either the old complete JSON or the new one.
+    renameSync(temp, path);
+  } catch (error) {
+    if (existsSync(temp)) unlinkSync(temp);
+    throw error;
+  }
+}
+
+/** Reject missing, empty, malformed, unordered, or out-of-audio Vosk results. */
+export function wordTimingIssues(
+  turns: PipelineTurn[],
+  durations: number[],
+  words: Record<string, WordTiming[]>,
+): string[] {
+  const issues: string[] = [];
+  for (const [index, turn] of turns.entries()) {
+    if (turn.kind !== 'speech') continue;
+    const rows = words[turn.id];
+    if (!Array.isArray(rows)) { issues.push(`${turn.id}: missing Vosk result`); continue; }
+    if (!rows.length) { issues.push(`${turn.id}: Vosk recognized no words`); continue; }
+    let previousEnd = -1;
+    for (const [wordIndex, row] of rows.entries()) {
+      if (!row || typeof row.w !== 'string' || !row.w.trim() || !Number.isFinite(row.s) || !Number.isFinite(row.e) || row.s < 0 || row.e <= row.s) {
+        issues.push(`${turn.id}[${wordIndex}]: invalid word timing`);
+        continue;
+      }
+      if (row.s + 0.02 < previousEnd) issues.push(`${turn.id}[${wordIndex}]: word timings are out of order`);
+      const duration = durations[index];
+      if (Number.isFinite(duration) && row.e > duration + 0.25) issues.push(`${turn.id}[${wordIndex}]: word ends after audio (${row.e.toFixed(3)}s > ${duration.toFixed(3)}s)`);
+      previousEnd = Math.max(previousEnd, row.e);
+    }
+  }
+  return issues;
 }
 
 const norm = (s: string) => s.trim().toLowerCase();

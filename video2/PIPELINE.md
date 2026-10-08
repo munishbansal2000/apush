@@ -40,6 +40,8 @@ failed/throttled run resumes without repeating current work.
 Incrementality also applies *inside* the expensive stages:
 
 - TTS is cached per turn, and Vosk word timing is cached per audio file.
+- Vosk reports every measured/reused turn and is a hard gate for direction:
+  missing, empty, malformed, unordered, or out-of-audio word timings stop the run.
 - Image downloads are reused when their lock entry and local file are current.
 - LTX clips are cached per scene using the prompt, seed, duration, source image,
   and generator version.
@@ -52,6 +54,12 @@ Incrementality also applies *inside* the expensive stages:
 Thus editing one turn normally rebuilds its audio and word timing, any affected
 director output/assets, and only the scene segments whose inputs changed. The final
 concat still runs because it is the inexpensive step that creates the canonical MP4.
+
+`DirectedEpisode` uses the same browser-side runtime layout guard as the component
+episodes. The contact sheet samples every narration transition plus each scene midpoint,
+stores guard findings with the still cache, writes `out/<episode>-layout.json`, and fails
+on overlaps, cuts, clipping, overflow, or empty panels. Full scene rendering checks every
+rendered frame and writes `out/pipeline/<episode>/render-layout.json`.
 
 Meta UI uses the existing shared adapter at
 `C:\Users\munis\projects\sat_question_runner\new_eng_qs\lib\meta.js` and its
