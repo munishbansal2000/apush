@@ -44,7 +44,8 @@
     "gallery-sheet": "bash tools/log.sh gallery-sheet tsx tools/gallery-sheet.ts",
     "setup:downloads": "bash tools/log.sh setup-downloads tsx tools/setup-downloads.ts",
     "contact-sheet:components": "bash tools/log.sh contact-sheet-components tsx tools/contact-sheet-components.ts",
-    "render:components": "bash tools/log.sh render-components tsx tools/render-components.ts"
+    "render:components": "bash tools/log.sh render-components tsx tools/render-components.ts",
+    "verify:render": "tsx tools/verify-render.ts"
   },
   "dependencies": {
     "@remotion/bundler": "^4.0.534",
