@@ -84,6 +84,8 @@ async function main() {
   const timing = JSON.parse(readFileSync(timingPath, 'utf8'));
   const starts: number[] = timing.starts;
   const durations: number[] = timing.durations;
+  // Pass episode data via inputProps for components that accept it (e.g. U2E8Episode)
+  const episodeData = { turns, starts, durations };
   const fps = 30;
 
   // 1:1 with the kit: episode data is bundled via static imports from data/,
@@ -151,11 +153,12 @@ async function main() {
   const serveUrl = await bundle({ entryPoint: join(ROOT, 'src', 'index.ts') });
   const browserExecutable = process.env.REMOTION_BROWSER ?? null;
   const compArg = process.argv.find((a, i) => process.argv[i - 1] === '--composition');
-  const compositionId = compArg ?? `U1${episode}Episode`;
+  const compositionId = compArg ?? `${episode}Episode`;
   const composition = await selectComposition({
     serveUrl,
     id: compositionId,
     browserExecutable,
+    inputProps: { episodeData },
   });
 
   const cols = 6;
@@ -175,6 +178,7 @@ async function main() {
       output: file,
       scale: stillScale,
       browserExecutable,
+      inputProps: { episodeData },
       onBrowserLog: (log: any) => {
         const m = /\[layout-guard\] (.*)$/s.exec(log.text);
         if (!m) return;
