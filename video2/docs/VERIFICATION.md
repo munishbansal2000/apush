@@ -30,3 +30,20 @@ from `remotion-src/`.
 | `npm test` | 76/76 pass |
 | `npx tsx tools/pipeline-smoke.ts` | All smoke tests passed |
 
+## Phase 1: split `video-pipeline.ts` into modules (no behavior change)
+
+`tools/video-pipeline.ts` (774 lines) → thin orchestrator + `tools/pipeline/{context,speech,plan-refs}.ts` and
+`tools/pipeline/stages/{turns,pronounce,audio,timing,words,images,direct,clips,render}.ts`. Stage bodies were
+moved programmatically (extracted by marker, re-indented), not retyped.
+
+Parity check: `npx tsx tools/video-pipeline.ts --episode u3e1 --dry-run --force --full` before vs after.
+
+| Artifact | Result |
+|---|---|
+| stdout | identical (`diff` empty) |
+| `director.prompt.md`, `director.review.prompt.md`, `images.prompt.md` | byte-identical (`cmp`) |
+| typecheck / lint / tests | 0 / 0 / 76 of 76 pass |
+
+Limitation: dry-run doesn't reach the non-dry branches (TTS, plan validation, sync gate, render). Those get
+covered by the fixture harness in Phase 2.
+
