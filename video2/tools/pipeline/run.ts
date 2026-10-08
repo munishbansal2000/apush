@@ -2,7 +2,7 @@
 import {existsSync, readFileSync} from 'node:fs';
 import {join} from 'node:path';
 import {ROOT} from '../lib';
-import {checkFacts, sha256} from '../pipeline-core';
+import {PIPELINE_STAGES, checkFacts, sha256} from '../pipeline-core';
 import {treeHash, type PipelineContext} from './context';
 import {loadPronunciations} from './speech';
 import {turnsStage} from './stages/turns';
@@ -25,12 +25,18 @@ export async function runPipeline(ctx: PipelineContext): Promise<void> {
   const factIssues = checkFacts(turns, join(ROOT, 'src', 'data', 'fact-registry.json'));
   for (const issue of factIssues) console.log(`  ⚠ FACT: ${issue}`);
 
-  const PRONUNCIATIONS = loadPronunciations(ctx.pronunciationsPath);
+  // Load after the pronounce stage so terms it adds apply to this run's audio.
   pronounceStage(ctx, turns);
+  const PRONUNCIATIONS = loadPronunciations(ctx.pronunciationsPath);
 
   const audioHash = audioInputHash(ctx, turns, PRONUNCIATIONS);
   audioStage(ctx, turns, PRONUNCIATIONS);
 
+  // Later stages need measured timing; stop here when none of them were selected.
+  if (!stages.some(stage => PIPELINE_STAGES.indexOf(stage) >= PIPELINE_STAGES.indexOf('timing'))) {
+    console.log(`pipeline complete through: ${stages.join(', ')}`);
+    return;
+  }
   const timingHash = timingInputHash(ctx, audioHash);
   const timing = timingStage(ctx, turns, audioHash);
 

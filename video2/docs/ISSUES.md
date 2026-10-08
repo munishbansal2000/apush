@@ -19,14 +19,14 @@ Status: `[ ]` open · `[~]` in progress · `[x]` fixed
 - [ ] **P4. Contact stills are saved by position but cached by key.** Adding or removing a scene makes cache
   hits point at another scene's PNG. Fix: store the file path in the cache entry (as the render cache does).
   — `tools/video-pipeline.ts:720-729`
-- [ ] **P5. Pronunciations are applied one run late, and never in prod.** `PRONUNCIATIONS` loads before the
+- [x] **P5. Pronunciations are applied one run late, and never in prod.** `PRONUNCIATIONS` loads before the
   `pronounce` stage adds terms; prod Fish texts replace the substituted text. — `tools/video-pipeline.ts:193`, `:235`
-- [ ] **P6. The pronunciation regex escape is broken.** The character class closes early, so nothing is escaped
+- [x] **P6. The pronunciation regex escape is broken.** The character class closes early, so nothing is escaped
   (an unbalanced `(` throws). LLM terms are also auto-approved globally. — `tools/video-pipeline.ts:188`, `:210`
 
 ## Medium
 
-- [ ] **P7. TTS cache is keyed by position-based turn ID.** Inserting or deleting a line re-renders every later
+- [x] **P7. TTS cache is keyed by position-based turn ID.** Inserting or deleting a line re-renders every later
   turn (costs Fish credits). Fix: cache by text hash. — `tools/video-pipeline.ts:263`, `:277`
 - [ ] **P8. Per-segment AAC audio joined with `concat -c copy`.** Risk of clicks or gaps at each scene boundary;
   the check only compares total duration. Fix: render silent segments, then mux one audio track.
@@ -48,6 +48,8 @@ Status: `[ ]` open · `[~]` in progress · `[x]` fixed
 - [x] **P17.** No `tsconfig.json` or ESLint config, so `npm run typecheck|lint|check` fail.
   Working versions exist in the older `remotion-src/` copy (`tsconfig.json`, `eslint.config.js`); restore those.
 - [ ] **P18.** No tests cover cache invalidation (P2–P4, P7).
+
+- [x] **P29. `--only audio`/`--only pronounce` crashed on a fresh episode** (demanded timing_map.json). Found while testing P5.
 
 ## Found by comparing with `remotion-src/` (older ancestor of video2)
 

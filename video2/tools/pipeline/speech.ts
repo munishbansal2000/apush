@@ -20,10 +20,15 @@ export function loadPronunciations(path = PRONUNCIATIONS_PATH): Pronunciation[] 
   } catch { return []; }
 }
 
+/** Substitute TTS spellings for whole-word terms; [performance tags] are left untouched. */
 export function applyPronunciations(text: string, terms: Pronunciation[]): string {
-  for (const {term, tts} of terms) {
-    const pattern = new RegExp(`\\b${term.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&')}\\b`, 'gi');
-    text = text.replace(pattern, tts);
-  }
-  return text;
+  if (!terms.length) return text;
+  const patterns = terms.map(({term, tts}) => ({
+    // Lookarounds instead of \b so terms that start/end with punctuation ("U.S.") still match.
+    pattern: new RegExp(`(?<!\\w)${term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(?!\\w)`, 'gi'),
+    tts,
+  }));
+  return text.split(/(\[[^\]]*\])/).map(part => part.startsWith('[')
+    ? part
+    : patterns.reduce((acc, {pattern, tts}) => acc.replace(pattern, tts), part)).join('');
 }
