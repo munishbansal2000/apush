@@ -149,7 +149,39 @@ export function resolveAudioScript(audioRoot: string, episode: string): string |
   return candidates[0] ? join(dir, candidates[0].name) : null;
 }
 
-export function normalizePlan(plan: DirectedPlan, turns: PipelineTurn[], starts: number[], durations: number[], totalSec?: number): DirectedPlan {
+export interface NormalizePlanOpts {
+  imageKeys?: Set<string> | string[];
+  episode?: string;
+  allowCreativeClip?: boolean;
+}
+
+function assertSafeImagePath(sceneId: string, label: string, image: unknown): void {
+  if (typeof image !== 'string' || !image.trim()) throw new Error(`${sceneId}: ${label} must be a non-empty string`);
+  if (/^(?:https?:|data:|blob:|\/)/i.test(image) || image.includes('..')) {
+    throw new Error(`${sceneId}: ${label} must be a safe public/ relative path`);
+  }
+}
+
+function collectImageRefs(scene: DirectedScene): string[] {
+  const p = scene.props;
+  const refs: string[] = [];
+  const one = (v: unknown) => { if (typeof v === 'string' && v) refs.push(v); };
+  switch (scene.component) {
+    case 'ken_burns':
+    case 'creative_clip':
+      one(p.image);
+      break;
+    case 'stagger':
+      if (Array.isArray(p.panels)) for (const panel of p.panels) {
+        const r = panel as Record<string, unknown>;
+        if (r && typeof r === 'object') one(r.image);
+      }
+      break;
+  }
+  return refs;
+}
+
+export function normalizePlan(plan: DirectedPlan, turns: PipelineTurn[], starts: number[], durations: number[], totalSec?: number, opts: NormalizePlanOpts = {}): DirectedPlan {
   if (plan.version !== 1 || !Array.isArray(plan.scenes) || !plan.scenes.length) throw new Error('director plan must be version 1 with scenes');
   const index = new Map(turns.map((turn, i) => [turn.id, i]));
   let last = -1;
@@ -252,6 +284,37 @@ export function syncIssues(plan: DirectedPlan, turns: PipelineTurn[], starts: nu
 
 
 /** Check transcript text against fact-registry forbid patterns and hedge requirements. */
+/** Canvas-level warnings: text overflow, scene duration, visual monotony. Returns warnings (not errors). */
+export function validateCanvas(plan: DirectedPlan): string[] {
+  const warnings: string[] = [];
+  let run = 1;
+  for (let i = 0; i < plan.scenes.length; i++) {
+    const scene = plan.scenes[i];
+    const p = scene.props as Record<string, any>;
+    const dur = (scene.endSec ?? 0) - (scene.startSec ?? 0);
+    // Text overflow
+    if (typeof p.title === 'string' && p.title.length > 80) {
+      warnings.push(`${scene.id}: title is ${p.title.length} chars (may overflow at 1280x720)`);
+    }
+    if (typeof p.body === 'string' && p.body.length > 500) {
+      warnings.push(`${scene.id}: body is ${p.body.length} chars (may overflow)`);
+    }
+    // Scene duration
+    if (dur > 0 && dur < 2) {
+      warnings.push(`${scene.id}: scene is ${dur.toFixed(1)}s (too fast to read)`);
+    }
+    if (dur > 60) {
+      warnings.push(`${scene.id}: scene is ${dur.toFixed(1)}s (viewer fatigue risk)`);
+    }
+    // Visual monotony: >3 consecutive same component
+    if (i > 0 && plan.scenes[i - 1].component === scene.component) {
+      run++;
+      if (run > 3) warnings.push(`${scene.id}: ${run} consecutive ${scene.component} scenes (visual monotony)`);
+    } else run = 1;
+  }
+  return warnings;
+}
+
 export function checkFacts(turns: PipelineTurn[], factsPath: string): string[] {
   const issues: string[] = [];
   if (!existsSync(factsPath)) return issues;

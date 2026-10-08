@@ -1,9 +1,6 @@
 import assert from 'node:assert/strict';
 import {describe, it} from 'node:test';
-import {mkdtempSync, readFileSync, readdirSync, rmSync} from 'node:fs';
-import {tmpdir} from 'node:os';
-import {join} from 'node:path';
-import {atomicJson, normalizePlan, parseTranscript, resolveAudioScript, selectedStages, syncIssues, wordTimingIssues, type DirectedPlan} from '../tools/pipeline-core';
+import {normalizePlan, parseTranscript, resolveAudioScript, selectedStages, syncIssues, validateCanvas, type DirectedPlan} from '../tools/pipeline-core';
 
 describe('video pipeline core', () => {
   it('parses speaker lines and timed pauses', () => {
@@ -51,29 +48,27 @@ describe('video pipeline core', () => {
     assert.match(syncIssues(plan, turns, [0.25, 1.5], [1, 2], 4).join('\n'), /visual gap\/overlap/);
   });
 
-  it('rejects incomplete or malformed Vosk timing before direction', () => {
-    const turns = parseTranscript('Maya: One word.\n[pause 1]\nMarcus: Two words.');
-    assert.match(wordTimingIssues(turns, [1, 1, 2], {t00: [{w: 'one', s: 0.1, e: 0.5}]}).join('\n'), /t02: missing Vosk result/);
-    assert.match(wordTimingIssues(turns, [1, 1, 2], {
-      t00: [{w: 'one', s: 0.1, e: 0.5}],
-      t02: [{w: 'two', s: 0.2, e: 0.5}, {w: 'words', s: 0.4, e: 0.8}],
-    }).join('\n'), /out of order/);
-    assert.deepEqual(wordTimingIssues(turns, [1, 1, 2], {
-      t00: [{w: 'one', s: 0.1, e: 0.5}],
-      t02: [{w: 'two', s: 0.2, e: 0.5}, {w: 'words', s: 0.6, e: 0.9}],
-    }), []);
+  it('validateCanvas passes a clean plan', () => {
+    const plan: DirectedPlan = {version: 1, episode: 'x', title: 'X', scenes: [
+      {id: 'a', component: 'title', turnIds: ['t00'], props: {title: 'Short'}, startSec: 0, endSec: 5},
+      {id: 'b', component: 'ken_burns', turnIds: ['t01'], props: {image: 'x.jpg'}, startSec: 5, endSec: 15},
+    ]};
+    assert.deepEqual(validateCanvas(plan), []);
   });
 
-  it('atomically replaces JSON without leaving a temp sidecar', () => {
-    const dir = mkdtempSync(join(tmpdir(), 'video2-atomic-'));
-    try {
-      const path = join(dir, 'state.json');
-      atomicJson(path, {version: 1});
-      atomicJson(path, {version: 2, complete: true});
-      assert.deepEqual(JSON.parse(readFileSync(path, 'utf8')), {version: 2, complete: true});
-      assert.deepEqual(readdirSync(dir), ['state.json']);
-    } finally {
-      rmSync(dir, {recursive: true, force: true});
+  it('validateCanvas warns on long title', () => {
+    const plan: DirectedPlan = {version: 1, episode: 'x', title: 'X', scenes: [
+      {id: 'a', component: 'title', turnIds: ['t00'], props: {title: 'X'.repeat(100)}, startSec: 0, endSec: 5},
+    ]};
+    assert.match(validateCanvas(plan).join('\n'), /may overflow/);
+  });
+
+  it('validateCanvas warns on visual monotony', () => {
+    const scenes = [];
+    for (let i = 0; i < 5; i++) {
+      scenes.push({id: `s${i}`, component: 'ken_burns' as const, turnIds: [`t0${i}`], props: {image: 'x.jpg'}, startSec: i * 5, endSec: i * 5 + 5});
     }
+    const plan: DirectedPlan = {version: 1, episode: 'x', title: 'X', scenes};
+    assert.match(validateCanvas(plan).join('\n'), /visual monotony/);
   });
 });

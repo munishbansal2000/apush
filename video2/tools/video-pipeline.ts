@@ -370,7 +370,11 @@ if (stages.includes('direct')) {
     const prompt = `You are the senior director for a 1280x720 APUSH lesson. Build a detailed, narration-synchronized scene plan using ONLY these components:\n${compList}${creative ? `\ncreative_clip: AI-generated video. Props: image(path), prompt(string, min 20 chars), title, caption` : ''}\n\nReturn JSON only with {"version":1,"episode":"${episode}","title":"...","scenes":[...]}. Every scene requires id, component, a contiguous turnIds array, props, and transition (cut|crossfade|dip). Cover every turn exactly once, in order. Do not type seconds: timing is derived from TTS. Image values must be keys from AVAILABLE IMAGES. Favor a new visual idea every 1-3 turns and tie transitions to changes in narration.${creativeContract}\n\nTURNS WITH MEASURED TIMES:\n${turns.map((t, i) => `${t.id} ${timing.starts[i].toFixed(2)}-${(timing.starts[i] + timing.durations[i]).toFixed(2)} ${t.speaker ?? 'PAUSE'}: ${t.text ?? `[pause ${t.pauseSec}s]`}`).join('\n')}\n\nAVAILABLE IMAGES (path: description):\n${imgList}`;
     const out = meta('director', prompt, [join(ROOT, 'director-prompt-v13-remotion.txt')].filter(existsSync));
     if (!dryRun) {
-      const plan = normalizePlan(readJson<DirectedPlan>(out), turns, timing.starts, timing.durations, timing.totalSec);
+      const plan = normalizePlan(readJson<DirectedPlan>(out), turns, timing.starts, timing.durations, timing.totalSec, {
+        imageKeys: Object.keys(images),
+        episode,
+        allowCreativeClip: videoGen === 'ltx',
+      });
       for (const scene of plan.scenes) if (scene.component === 'creative_clip') {
         scene.props.clip = `clips/${episode}/${scene.id}.mp4`;
       }
