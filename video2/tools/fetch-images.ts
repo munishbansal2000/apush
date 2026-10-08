@@ -1,7 +1,7 @@
 /** Incrementally download and validate historical images from data/<lesson>/images.json. */
 import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
-import { existsSync, mkdirSync, readFileSync, unlinkSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, readdirSync, statSync, unlinkSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { arg, flag, loadEpisode, PUBLIC, ROOT } from './lib';
 
@@ -16,7 +16,7 @@ interface ManifestEntry {
   used_in?: string[];
   license?: string;
 }
-interface CommonsInfo { url: string; license: string }
+interface CommonsInfo { title: string; url: string; license: string }
 interface CommonsImageInfo {
   thumburl?: string; url: string; width: number; height: number;
   extmetadata?: Record<string, { value: string }>;
@@ -36,12 +36,12 @@ const responseType = (res: Response | null) => res?.headers.get('content-type') 
 const isImageResponse = (res: Response | null) =>
   !!res?.ok && /^(image\/|application\/octet-stream)/i.test(responseType(res));
 
-async function getWithRetry(url: string, tries = 4): Promise<Response | null> {
+async function getWithRetry(url: string, tries = 2): Promise<Response | null> {
   let last: Response | null = null;
   for (let attempt = 0; attempt < tries; attempt++) {
     try {
       last = await fetch(url, {
-        headers: { 'User-Agent': UA }, redirect: 'follow', signal: AbortSignal.timeout(45_000),
+        headers: { 'User-Agent': UA }, redirect: 'follow', signal: AbortSignal.timeout(20_000),
       });
       if (last.ok || last.status === 429 || last.status < 500) return last;
     } catch (error) {
@@ -78,9 +78,40 @@ async function commonsInfo(title: string): Promise<CommonsInfo | null> {
   const res = await getWithRetry(`${COMMONS_API}?${q}`);
   if (!res?.ok) return null;
   const data = await res.json() as CommonsApiResponse;
-  const info = Object.values(data.query?.pages ?? {})[0]?.imageinfo?.[0];
+  const page = Object.values(data.query?.pages ?? {})[0];
+  const info = page?.imageinfo?.[0];
   if (!info) return null;
-  return { url: info.thumburl ?? info.url, license: strip(info.extmetadata?.LicenseShortName?.value) || 'unknown' };
+  return { title, url: info.thumburl ?? info.url, license: strip(info.extmetadata?.LicenseShortName?.value) || 'unknown' };
+}
+
+/** Recover from plausible-but-nonexistent filenames produced by image research. */
+async function searchCommonsInfo(wantedTitle: string): Promise<CommonsInfo | null> {
+  const stem = wantedTitle.replace(/\.[^.]+$/, '').replace(/[_(),–—-]+/g, ' ').replace(/\s+/g, ' ').trim();
+  const q = new URLSearchParams({
+    action: 'query', format: 'json', generator: 'search', gsrsearch: `${stem} filetype:bitmap`,
+    gsrnamespace: '6', gsrlimit: '10', prop: 'imageinfo', iiprop: 'url|size|extmetadata', iiurlwidth: '2400', origin: '*',
+  });
+  const res = await getWithRetry(`${COMMONS_API}?${q}`);
+  if (!res?.ok) return null;
+  const data = await res.json() as {query?: {pages?: Record<string, {title: string; imageinfo?: CommonsImageInfo[]}>}};
+  const ignore = new Set(['file', 'jpg', 'jpeg', 'png', 'webp', 'the', 'and', 'with', 'from']);
+  const tokens = (value: string) => new Set(value.toLowerCase().match(/[a-z0-9]+/g)?.filter(token => token.length > 2 && !ignore.has(token)) ?? []);
+  const wanted = tokens(wantedTitle);
+  const ranked = Object.values(data.query?.pages ?? {}).map(page => {
+    const info = page.imageinfo?.[0];
+    const got = tokens(page.title);
+    const score = wanted.size ? [...wanted].filter(token => got.has(token)).length / wanted.size : 0;
+    return {page, info, score};
+  }).filter(row => row.info).sort((a, b) => b.score - a.score);
+  const best = ranked[0];
+  if (!best || best.score < 0.5) return null;
+  const canonicalTitle = best.page.title.replace(/^File:/i, '');
+  console.log(`    ... Commons corrected "${wantedTitle}" to "${canonicalTitle}" (${Math.round(best.score * 100)}% token match)`);
+  return {
+    title: canonicalTitle,
+    url: best.info!.thumburl ?? best.info!.url,
+    license: strip(best.info!.extmetadata?.LicenseShortName?.value) || 'unknown',
+  };
 }
 
 /** Resolve an institution record page to the image it explicitly embeds. */
@@ -101,19 +132,18 @@ async function candidates(entry: ManifestEntry): Promise<{ urls: string[]; licen
   const source = entry.source_url!;
   const title = commonsTitle(source);
   let license = entry.license ?? 'unknown';
-  // Explicit URLs may also select a page/frame from a multi-page source, so
-  // they intentionally take precedence over the generic source resolver.
-  const urls: string[] = [...(entry.download_urls ?? [])];
+  const urls: string[] = [];
   if (title) {
-    const info = await commonsInfo(title);
+    const info = await commonsInfo(title) ?? await searchCommonsInfo(title);
     if (info) {
       urls.push(info.url);
+      urls.push(`https://commons.wikimedia.org/wiki/Special:Redirect/file/${encodeURIComponent(info.title)}?width=2400`);
       license = info.license;
       const manifestPD = /public domain|cc0|\bpd\b/i.test(entry.license ?? '');
       const sourcePD = /public domain|cc0|\bpd\b/i.test(info.license);
       if (manifestPD !== sourcePD) console.log(`    ! license metadata differs: manifest "${entry.license}", Commons "${info.license}"`);
     }
-    // Official Commons download route is a fallback when the Action API is unavailable.
+    // Keep the requested title as a fallback if search/API resolution failed.
     urls.push(`https://commons.wikimedia.org/wiki/Special:Redirect/file/${encodeURIComponent(title)}?width=2400`);
   } else if (/\.(?:jpe?g|png|webp|tiff?)(?:\?|$)/i.test(source)) {
     urls.push(source);
@@ -121,6 +151,9 @@ async function candidates(entry: ManifestEntry): Promise<{ urls: string[]; licen
     const resolved = await imageFromHtml(source);
     if (resolved) urls.push(resolved);
   }
+  // Meta-supplied mirrors remain useful if the API or Wikimedia CDN is throttled,
+  // but a verified API URL is preferred over guessed upload hash paths.
+  urls.push(...(entry.download_urls ?? []));
   return { urls: [...new Set(urls)], license };
 }
 

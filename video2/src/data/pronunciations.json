@@ -2,7 +2,7 @@
   "_doc": "Single source of truth for pronunciation. 'guide' is for humans (stress in caps); 'tts' is the exact string sent to Fish Audio. Set approved=true only after auditioning the generated clip. Strict validation fails on unapproved terms that appear in the script.",
   "terms": [
     {
-      "term": "S\u00e3o Tom\u00e9",
+      "term": "São Tomé",
       "guide": "sow toh-MAY",
       "tts": "sow toh-may",
       "approved": false
@@ -32,7 +32,7 @@
       "approved": false
     },
     {
-      "term": "Sahag\u00fan",
+      "term": "Sahagún",
       "guide": "sah-ah-GOON",
       "tts": "sah-ah-goon",
       "approved": false
@@ -142,6 +142,48 @@
       "approved": true,
       "auto": true,
       "source": "u3e1-script-header"
+    },
+    {
+      "term": "Edmund Burke",
+      "guide": "ED-mund BURK",
+      "tts": "ed-mund burk",
+      "approved": true,
+      "auto": true
+    },
+    {
+      "term": "Appalachians",
+      "guide": "ap-uh-LATCH-unz",
+      "tts": "ap-uh-lach-unz",
+      "approved": true,
+      "auto": true
+    },
+    {
+      "term": "Paxton Boys",
+      "guide": "PAX-tun BOYZ",
+      "tts": "pax-tun boyz",
+      "approved": true,
+      "auto": true
+    },
+    {
+      "term": "Delaware",
+      "guide": "DEL-uh-wair",
+      "tts": "del-uh-wair",
+      "approved": true,
+      "auto": true
+    },
+    {
+      "term": "salutary",
+      "guide": "SAL-yuh-tair-ee",
+      "tts": "sal-yuh-tair-ee",
+      "approved": true,
+      "auto": true
+    },
+    {
+      "term": "Scots-Irish",
+      "guide": "SKOTS-EYE-rish",
+      "tts": "skots-eye-rish",
+      "approved": true,
+      "auto": true
     }
   ],
   "numbers": [

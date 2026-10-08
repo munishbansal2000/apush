@@ -101,9 +101,17 @@ const meta = (name: string, prompt: string, attachments: string[] = []) => {
   const hashPath = `${out}.input.sha256`;
   if (dryRun) { console.log(`[${name}] dry-run: ${savePrompt(name, prompt)}`); return out; }
   if (!force && existsSync(out) && existsSync(hashPath) && readFileSync(hashPath, 'utf8').trim() === inputHash) {
-    console.log(`[${name}] prompt cache current`);
-    return out;
+    try {
+      const cached = readJson<unknown>(out);
+      if (!cached || typeof cached !== 'object' || Array.isArray(cached)) throw new Error('top-level value is not an object');
+      console.log(`[${name}] prompt cache current`);
+      return out;
+    } catch (error) {
+      console.warn(`[${name}] ignoring invalid prompt cache: ${error instanceof Error ? error.message : String(error)}`);
+    }
   }
+  // A failed forced refresh must not leave the old input hash looking current.
+  if (existsSync(hashPath)) unlinkSync(hashPath);
   const args = [join(ROOT, 'tools/meta-ui-runner.cjs'), '--prompt-file', savePrompt(name, prompt), '--out', out, '--timeout-sec', String(cfg.meta.timeoutSec)];
   for (const file of attachments) args.push('--attachment', file);
   run(process.execPath, args);
@@ -326,17 +334,22 @@ if (stages.includes('images')) {
     const prompt = `Act as an APUSH archival image researcher. Read the complete lesson transcript below. Select only images that materially teach the lesson. Prefer public-domain/CC0 Wikimedia Commons, Library of Congress, National Archives, museums, or other authoritative collections. Provide 1 primary source_url plus 1-3 exact-work alternative download URLs to survive throttling. Do not invent URLs or licenses. Return JSON only: {"images":[{"path":"historic/${episode}/slug.jpg","description":"...","license":"Public domain|CC0|CC BY...","source_url":"https://...","download_urls":["https://..."],"used_in":["${episode}:t00"]}]}. used_in must reference relevant turn IDs.\n\nTRANSCRIPT:\n${turns.map(t => `${t.id} ${t.speaker ?? 'PAUSE'}: ${t.text ?? `[pause ${t.pauseSec}s]`}`).join('\n')}`;
     const out = meta('images', prompt);
     if (!dryRun) {
-      const planned = readJson<{images: Record<string, unknown>[] }>(out);
+      const planned = readJson<{images?: Record<string, unknown>[] }>(out);
+      if (!Array.isArray(planned.images) || !planned.images.length) throw new Error('Meta UI image plan must contain a non-empty images array');
+      // Per-lesson registry: data/<episode>/images.json. Reviewed entries are
+      // creative source-of-truth and must not be replaced by a later Meta run.
+      const manifestPath = join(ROOT, 'data', episode, 'images.json');
+      const manifest = existsSync(manifestPath) ? readJson<Record<string, Record<string, unknown>>>(manifestPath) : {};
       const patch: Record<string, unknown> = {};
-      for (const row of planned.images ?? []) {
+      for (const row of planned.images) {
         const path = String(row.path ?? '');
         if (!path.startsWith(`historic/${episode}/`) || !/\.(?:jpg|jpeg|png|webp)$/i.test(path)) throw new Error(`invalid planned image path: ${path}`);
-        patch[path] = {description: row.description, license: row.license, source_url: row.source_url, download_urls: row.download_urls, used_in: row.used_in};
+        const reviewed = manifest[path]?.verified ? manifest[path] : null;
+        patch[path] = reviewed
+          ? {...reviewed, used_in: [...new Set([...(reviewed.used_in as string[] ?? []), ...(row.used_in as string[] ?? [])])]}
+          : {description: row.description, license: row.license, source_url: row.source_url, download_urls: row.download_urls, used_in: row.used_in};
       }
       atomicJson(imagesPlanPath, patch);
-      // Per-lesson registry: data/<episode>/images.json
-      const manifestPath = join(ROOT, 'data', episode, 'images.json');
-      const manifest = existsSync(manifestPath) ? readJson<Record<string, unknown>>(manifestPath) : {};
       atomicJson(manifestPath, {...manifest, ...patch});
       const tsx = join(ROOT, 'node_modules/tsx/dist/cli.mjs');
       // `fetch-images --only` does not require a compiled episode registry entry,
@@ -359,7 +372,7 @@ if (stages.includes('direct')) {
     const creative = videoGen === 'ltx' ? ', creative_clip' : '';
     const creativeContract = videoGen === 'ltx' ? ' creative_clip {image,prompt,title,caption,seed}; use it selectively for high-value cinematic moments. Its prompt must animate only the supplied still with subtle environmental/object motion, preserve the historical composition, add no people/text/objects, and contain no camera movement.' : '';
     // Load director component registry (rich: when, examples, constraints, props)
-    const compReg = readJson<{components: {name: string; when: string; examples: string[]; constraints: string[]; props_detail: Record<string, {type: string; required: boolean; example: string}>}; image_rules?: {rules: string[]; examples: {wrong: string; right: string; why: string}[]}}>(join(ROOT, 'src', 'data', 'director-components.json'));
+    const compReg = readJson<{components: {name: string; when: string; examples: string[]; constraints: string[]; props_detail: Record<string, {type: string; required: boolean; example: string}>}[]; image_rules?: {rules: string[]; examples: {wrong: string; right: string; why: string}[]}}>(join(ROOT, 'src', 'data', 'director-components.json'));
     const compList = compReg.components.map(c => {
       const props = Object.entries(c.props_detail).map(([k, v]) => `${k}(${v.type}${v.required ? ', required' : ''}): ${v.example}`).join('; ');
       return `${c.name}: ${c.when}\n  Examples: ${c.examples.join(' / ')}\n  Constraints: ${c.constraints.join('; ')}\n  Props: ${props}`;

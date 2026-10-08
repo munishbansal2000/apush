@@ -18,7 +18,7 @@ export interface PipelineTurn {
 
 export interface DirectedScene {
   id: string;
-  component: 'title' | 'ken_burns' | 'quote' | 'compare' | 'causal_chain' | 'highlight' | 'primary_source' | 'creative_clip';
+  component: 'title' | 'ken_burns' | 'quote' | 'compare' | 'causal_chain' | 'highlight' | 'primary_source' | 'creative_clip' | 'chart' | 'spectrum' | 'stagger';
   turnIds: string[];
   props: Record<string, unknown>;
   transition?: 'cut' | 'crossfade' | 'dip';

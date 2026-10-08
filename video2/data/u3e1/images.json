@@ -1,45 +1,33 @@
 {
-  "historic/u3e1/george-grenville-portrait.jpg": {
-    "description": "Portrait of George Grenville (1712-1770) by William Hoare, 1764. Prime Minister 1763-1765, author of the Stamp Act.",
+  "historic/u3e1/fort-pitt-plan.jpg": {
+    "description": "1759 plan of Fort Pitt, where British officers distributed smallpox-infected blankets in 1763.",
     "license": "Public domain",
-    "source_url": "https://commons.wikimedia.org/wiki/Special:FilePath/George%20Grenville%20(1712%E2%80%931770)%20by%20William%20Hoare%20(1707-1792).jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Plan_of_Fort_Pitt%2C_1759.jpg",
     "download_urls": [
-      "https://upload.wikimedia.org/wikipedia/commons/3/32/George_Grenville_%281712%E2%80%931770%29_by_William_Hoare_%281707-1792%29.jpg",
-      "https://images.nypl.org/index.php?id=465956&t=w",
-      "https://commons.wikimedia.org/wiki/Special:FilePath/George%20Grenville%20(1712%E2%80%931770)%20by%20William%20Hoare%20(1707-1792).jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/7/72/Plan_of_Fort_Pitt%2C_1759.jpg"
     ],
     "used_in": [
-      "u3e1:t00"
+      "u3e1:t43",
+      "u3e1:t44"
     ],
     "verified": "2026-10-08",
-    "fallback_note": "Wikimedia Special:FilePath -> direct upload.wikimedia.org -> NYPL (different host) -> Commons redirect",
-    "used_for": "George Grenville intro (t04-t05), his \"brutally simple\" math"
+    "used_for": "Fort Pitt plan (smallpox blanket site)"
   },
-  "historic/u3e1/proclamation-line-map.jpg": {
-    "description": "Map showing the Proclamation Line of 1763 running along the Appalachian Mountains. (German-labeled version; the red line is the visual point.)",
-    "license": "Public domain",
-    "source_url": "https://commons.wikimedia.org/wiki/File:Proclamation_line_of_1763_de.png",
-    "download_urls": [
-      "https://upload.wikimedia.org/wikipedia/commons/c/c0/Proclamation_line_of_1763_de.png"
-    ],
-    "used_in": [
-      "u3e1:t00"
-    ],
-    "verified": "2026-10-08",
-    "used_for": "Proclamation Line of 1763 - the line along Appalachians"
-  },
-  "historic/u3e1/proclamation-document.jpg": {
-    "description": "The Royal Proclamation of 1763 document, issued by George III after the French and Indian War.",
+  "historic/u3e1/royal-proclamation-1763-document.jpg": {
+    "description": "Printed text of the Royal Proclamation of 1763 establishing British administration, reserving lands west of the Appalachians for Native nations and requiring license for trade - London's triage to avoid another costly frontier war.",
     "license": "Public domain",
     "source_url": "https://commons.wikimedia.org/wiki/File:Royal_Proclamation_of_1763.jpg",
     "download_urls": [
-      "https://upload.wikimedia.org/wikipedia/commons/9/96/Royal_Proclamation_of_1763.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/2/26/Royal_Proclamation_of_1763.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Royal%20Proclamation%20of%201763.jpg"
     ],
     "used_in": [
-      "u3e1:t00"
-    ],
-    "verified": "2026-10-08",
-    "used_for": "Proclamation document analysis (primary_source scenes)"
+      "u3e1:t18",
+      "u3e1:t29",
+      "u3e1:t33",
+      "u3e1:t56",
+      "u3e1:t58"
+    ]
   },
   "historic/u3e1/pontiac.jpg": {
     "description": "Artist's impression of Pontiac, Ottawa chief who led the 1763 rebellion against British forts.",
@@ -50,10 +38,48 @@
       "https://images.nypl.org/index.php?id=429686&t=w"
     ],
     "used_in": [
-      "u3e1:t00"
+      "u3e1:t34",
+      "u3e1:t38",
+      "u3e1:t40",
+      "u3e1:t42",
+      "u3e1:t47",
+      "u3e1:t54"
     ],
     "verified": "2026-10-08",
     "used_for": "Pontiac the Ottawa chief (not the car!)"
+  },
+  "historic/u3e1/jeffery-amherst-portrait.jpg": {
+    "description": "Portrait of General Jeffery Amherst, whose postwar policies helped provoke Pontiac's Rebellion.",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Amherst.jpg",
+    "download_urls": [
+      "https://commons.wikimedia.org/wiki/Special:Redirect/file/Amherst.jpg?width=2400"
+    ],
+    "used_in": [
+      "u3e1:t38",
+      "u3e1:t42",
+      "u3e1:t43",
+      "u3e1:t64"
+    ],
+    "verified": "2026-10-08"
+  },
+  "historic/u3e1/george-grenville-portrait.jpg": {
+    "description": "Portrait of George Grenville (1712-1770) by William Hoare, 1764. Prime Minister 1763-1765, author of the Stamp Act.",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:George_Grenville_%281712%E2%80%931770%29_by_William_Hoare_%281707-1792%29.jpg",
+    "download_urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/3/32/George_Grenville_%281712%E2%80%931770%29_by_William_Hoare_%281707-1792%29.jpg",
+      "https://images.nypl.org/index.php?id=465956&t=w",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/George%20Grenville%20(1712%E2%80%931770)%20by%20William%20Hoare%20(1707-1792).jpg"
+    ],
+    "used_in": [
+      "u3e1:t05",
+      "u3e1:t09",
+      "u3e1:t50"
+    ],
+    "verified": "2026-10-08",
+    "fallback_note": "Wikimedia Special:FilePath -> direct upload.wikimedia.org -> NYPL (different host) -> Commons redirect",
+    "used_for": "George Grenville intro (t04-t05), his \"brutally simple\" math"
   },
   "historic/u3e1/fort-detroit-siege.jpg": {
     "description": "The siege of Fort Detroit during Pontiac's Rebellion, 1763.",
@@ -63,62 +89,29 @@
       "https://upload.wikimedia.org/wikipedia/commons/6/6d/Siege_of_Fort_Detroit.jpg"
     ],
     "used_in": [
-      "u3e1:t00"
+      "u3e1:t42",
+      "u3e1:t47"
     ],
     "verified": "2026-10-08",
     "used_for": "Fort Detroit siege, first fort attacked"
   },
-  "historic/u3e1/fort-pitt-plan.jpg": {
-    "description": "1759 plan of Fort Pitt, where British officers distributed smallpox-infected blankets in 1763.",
+  "historic/u3e1/proclamation-line-map.jpg": {
+    "description": "Map showing the Proclamation Line of 1763 running along the Appalachian Mountains. German-labeled version; the red line is the visual point.",
     "license": "Public domain",
-    "source_url": "https://commons.wikimedia.org/wiki/File:Plan_of_Fort_Pitt%2C_1759.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Proclamation_line_of_1763_de.png",
     "download_urls": [
-      "https://upload.wikimedia.org/wikipedia/commons/7/72/Plan_of_Fort_Pitt%2C_1759.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/c/c0/Proclamation_line_of_1763_de.png"
     ],
     "used_in": [
-      "u3e1:t00"
+      "u3e1:t18",
+      "u3e1:t25",
+      "u3e1:t27",
+      "u3e1:t28",
+      "u3e1:t33",
+      "u3e1:t52"
     ],
     "verified": "2026-10-08",
-    "used_for": "Fort Pitt plan (smallpox blanket site)"
-  },
-  "historic/u3e1/paxton-boys.jpg": {
-    "description": "The Paxton Boys marching on Philadelphia, 1764, after their 1763 attacks on Conestoga Indians.",
-    "license": "Public domain",
-    "source_url": "https://commons.wikimedia.org/wiki/File:Paxton_Boys_march_on_Philadelphia.jpg",
-    "download_urls": [
-      "https://upload.wikimedia.org/wikipedia/commons/0/0b/Paxton_Boys_march_on_Philadelphia.jpg"
-    ],
-    "used_in": [
-      "u3e1:t00"
-    ],
-    "verified": "2026-10-08",
-    "used_for": "Paxton Boys march on Philadelphia"
-  },
-  "historic/u3e1/edmund-burke.jpg": {
-    "description": "Edmund Burke, who coined the phrase 'salutary neglect' in his 1775 speech on conciliation with America.",
-    "license": "Public domain",
-    "source_url": "https://commons.wikimedia.org/wiki/File:Edmund_Burke_cph.3a00566.jpg",
-    "download_urls": [
-      "https://upload.wikimedia.org/wikipedia/commons/e/ec/Edmund_Burke_cph.3a00566.jpg"
-    ],
-    "used_in": [
-      "u3e1:t00"
-    ],
-    "verified": "2026-10-08",
-    "used_for": "Edmund Burke, coined \"salutary neglect\" in 1775"
-  },
-  "historic/u3e1/british-troops.jpg": {
-    "description": "Benjamin West's 'The Death of General Wolfe' (1770) \u2014 iconic depiction of British troops in North America during the French and Indian War era.",
-    "license": "Public domain",
-    "source_url": "https://commons.wikimedia.org/wiki/File:Benjamin_West_-_The_Death_of_General_Wolfe_-_WGA25558.jpg",
-    "download_urls": [
-      "https://upload.wikimedia.org/wikipedia/commons/c/c6/Benjamin_West_-_The_Death_of_General_Wolfe_-_WGA25558.jpg"
-    ],
-    "used_in": [
-      "u3e1:t00"
-    ],
-    "verified": "2026-10-08",
-    "used_for": "British troops in America (10,000 soldiers)"
+    "used_for": "Proclamation Line of 1763 - the line along Appalachians"
   },
   "historic/u3e1/french-indian-war.jpg": {
     "description": "George Washington at the Battle of the Monongahela (1755) \u2014 the costly war that left Britain deeply in debt.",
@@ -128,10 +121,25 @@
       "https://upload.wikimedia.org/wikipedia/commons/6/67/Major_George_Washington_on_a_white_horse_at_the_Battle_of_the_Monongahela_in_the_French_and_Indian_War.jpg"
     ],
     "used_in": [
-      "u3e1:t00"
+      "u3e1:t01",
+      "u3e1:t02",
+      "u3e1:t03"
     ],
     "verified": "2026-10-08",
     "used_for": "French and Indian War debt, \"won the war and emptied the treasury\""
+  },
+  "historic/u3e1/edmund-burke-portrait.jpg": {
+    "description": "Portrait of Edmund Burke, who in 1775 coined the retrospective phrase 'salutary neglect' to describe a century of unenforced trade laws that ended after the Seven Years' War.",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Edmund_Burke_by_Joshua_Reynolds.jpg",
+    "download_urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/1/17/Edmund_Burke_by_Joshua_Reynolds.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Edmund%20Burke%20by%20Joshua%20Reynolds.jpg"
+    ],
+    "used_in": [
+      "u3e1:t09",
+      "u3e1:t10"
+    ]
   },
   "historic/u3e1/appalachian-mountains.jpg": {
     "description": "The Appalachian Mountains, along which the Proclamation Line of 1763 ran.",
@@ -141,9 +149,106 @@
       "https://upload.wikimedia.org/wikipedia/commons/9/98/View_of_Appalachian_mountains_from_Pine_Mountain_overlook.jpg"
     ],
     "used_in": [
-      "u3e1:t00"
+      "u3e1:t18",
+      "u3e1:t25",
+      "u3e1:t27"
     ],
     "verified": "2026-10-08",
     "used_for": "Appalachian Mountains landscape (the fence)"
+  },
+  "historic/u3e1/proclamation-line-1763-map.jpg": {
+    "description": "Contemporary map showing the Proclamation Line along the crest of the Appalachians as the fence, with the Mississippi Valley as the prize, illustrating why the line 'came too late' and failed as a fence but stung as an insult to land speculators including Washington.",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Proclamation_Line_1763.png",
+    "download_urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/f/f8/Proclamation_Line_1763.png",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Proclamation%20Line%201763.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Proclamation_Line_1763.png/1024px-Proclamation_Line_1763.png"
+    ],
+    "used_in": [
+      "u3e1:t18",
+      "u3e1:t25",
+      "u3e1:t27",
+      "u3e1:t28",
+      "u3e1:t33",
+      "u3e1:t52"
+    ]
+  },
+  "historic/u3e1/paxton-boys.jpg": {
+    "description": "The Paxton Boys marching on Philadelphia, 1764, after their 1763 attacks on Conestoga Indians.",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Paxton_Boys_march_on_Philadelphia.jpg",
+    "download_urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/0/0b/Paxton_Boys_march_on_Philadelphia.jpg"
+    ],
+    "used_in": [
+      "u3e1:t60",
+      "u3e1:t61"
+    ],
+    "verified": "2026-10-08",
+    "used_for": "Paxton Boys march on Philadelphia"
+  },
+  "historic/u3e1/british-troops.jpg": {
+    "description": "Benjamin West's 'The Death of General Wolfe' (1770) \u2014 iconic depiction of British troops in North America during the French and Indian War era.",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Benjamin_West_-_The_Death_of_General_Wolfe_-_WGA25558.jpg",
+    "download_urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/c/c6/Benjamin_West_-_The_Death_of_General_Wolfe_-_WGA25558.jpg"
+    ],
+    "used_in": [
+      "u3e1:t03",
+      "u3e1:t04",
+      "u3e1:t05"
+    ],
+    "verified": "2026-10-08",
+    "used_for": "British troops in America (10,000 soldiers)"
+  },
+  "historic/u3e1/proclamation-document.jpg": {
+    "description": "The Royal Proclamation of 1763 document, issued by George III after the French and Indian War.",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Royal_Proclamation_of_1763.jpg",
+    "download_urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/9/96/Royal_Proclamation_of_1763.jpg"
+    ],
+    "used_in": [
+      "u3e1:t18",
+      "u3e1:t29",
+      "u3e1:t33",
+      "u3e1:t56",
+      "u3e1:t58"
+    ],
+    "verified": "2026-10-08",
+    "used_for": "Proclamation document analysis (primary_source scenes)"
+  },
+  "historic/u3e1/edmund-burke.jpg": {
+    "description": "Edmund Burke, who coined the phrase 'salutary neglect' in his 1775 speech on conciliation with America.",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Edmund_Burke_cph.3a00566.jpg",
+    "download_urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/e/ec/Edmund_Burke_cph.3a00566.jpg"
+    ],
+    "used_in": [
+      "u3e1:t09",
+      "u3e1:t10"
+    ],
+    "verified": "2026-10-08",
+    "used_for": "Edmund Burke, coined \"salutary neglect\" in 1775"
+  },
+  "historic/u3e1/chief-pontiac-portrait.jpg": {
+    "description": "Portrait of Pontiac, Ottawa war chief around the Great Lakes who organized the 1763 pan-Indian alliance after the French defeat, distinct from Delaware prophet Neolin whose vision urged rejecting guns, alcohol, and infighting.",
+    "license": "Public domain",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Chief_Pontiac.jpg",
+    "download_urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/c/c1/Chief_Pontiac.jpg",
+      "https://commons.wikimedia.org/wiki/Special:FilePath/Chief%20Pontiac.jpg"
+    ],
+    "used_in": [
+      "u3e1:t34",
+      "u3e1:t38",
+      "u3e1:t40",
+      "u3e1:t42",
+      "u3e1:t47",
+      "u3e1:t54"
+    ]
   }
 }
