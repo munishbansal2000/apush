@@ -104,7 +104,11 @@ function images() {
     return;
   }
   const npx = process.platform === 'win32' ? 'npx.cmd' : 'npx';
-  execFileSync(npx, ['tsx', 'tools/fetch-images.ts', '--all', ...(force ? ['--force'] : [])], { cwd: ROOT, stdio: 'inherit', shell: process.platform === 'win32' });
+  try {
+    execFileSync(npx, ['tsx', 'tools/fetch-images.ts', '--all', ...(force ? ['--force'] : [])], { cwd: ROOT, stdio: 'inherit', shell: process.platform === 'win32' });
+  } catch (e) {
+    console.log('  ⚠ image fetch failed (rate-limited?) — continuing without images. Re-run with --only images later.');
+  }
 }
 
 if (!only || only === 'fonts') await fonts();
