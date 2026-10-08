@@ -236,6 +236,42 @@ export function syncIssues(plan: DirectedPlan, turns: PipelineTurn[], starts: nu
   return issues;
 }
 
+
+/** Check transcript text against fact-registry forbid patterns and hedge requirements. */
+export function checkFacts(turns: PipelineTurn[], factsPath: string): string[] {
+  const issues: string[] = [];
+  if (!existsSync(factsPath)) return issues;
+  try {
+    const registry = JSON.parse(readFileSync(factsPath, 'utf8')) as { facts?: any[] };
+    for (const fact of registry.facts ?? []) {
+      for (const f of fact.forbid ?? []) {
+        const pattern = new RegExp(f.pattern, 'i');
+        for (const turn of turns) {
+          if (turn.kind !== 'speech' || !turn.text) continue;
+          if (pattern.test(turn.text)) {
+            issues.push(`${turn.id}: forbidden claim (${fact.id}): ${f.why}`);
+          }
+        }
+      }
+      if (fact.hedge) {
+        const trigger = new RegExp(fact.hedge.trigger, 'i');
+        for (const turn of turns) {
+          if (turn.kind !== 'speech' || !turn.text) continue;
+          if (trigger.test(turn.text)) {
+            const hasHedge = fact.hedge.words.some((w: string) => turn.text!.toLowerCase().includes(w.toLowerCase()));
+            if (!hasHedge) {
+              issues.push(`${turn.id}: missing hedge for "${fact.hedge.trigger}" (${fact.id}): needs one of [${fact.hedge.words.join(', ')}]`);
+            }
+          }
+        }
+      }
+    }
+  } catch (e) {
+    issues.push(`fact-registry parse error: ${e}`);
+  }
+  return issues;
+}
+
 export function selectedStages(only?: string, from?: string, full = false): PipelineStage[] {
   const normal = full ? PIPELINE_STAGES : PIPELINE_STAGES.filter(s => s !== 'render');
   if (only) {

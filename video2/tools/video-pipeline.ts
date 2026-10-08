@@ -5,7 +5,7 @@ import {basename, dirname, join, resolve} from 'node:path';
 import {bundle} from '@remotion/bundler';
 import {renderMedia, renderStill, selectComposition} from '@remotion/renderer';
 import {ROOT, arg, flag, ffprobeDuration} from './lib';
-import {atomicJson, normalizePlan, normalizeTurns, parseTranscript, readJson, resolveAudioScript, selectedStages, sha256, syncIssues, wordTimingIssues, type DirectedPlan, type PipelineMode, type PipelineStage, type PipelineTurn, type WordTiming} from './pipeline-core';
+import {atomicJson, checkFacts, normalizePlan, normalizeTurns, parseTranscript, readJson, resolveAudioScript, selectedStages, sha256, syncIssues, wordTimingIssues, type DirectedPlan, type PipelineMode, type PipelineStage, type PipelineTurn, type WordTiming} from './pipeline-core';
 
 interface Config {
   timing: {gapSec: number; leadSec: number; tailSec: number};
@@ -145,7 +145,29 @@ if (stages.includes('turns')) {
 }
 if (!turns.length) loadTurns();
 
+// Fact-registry check (non-blocking warnings)
+const factIssues = checkFacts(turns, join(ROOT, 'src', 'data', 'fact-registry.json'));
+for (const issue of factIssues) console.log(`  ⚠ FACT: ${issue}`);
+
 const cleanSpeech = (text: string) => text.replace(/\{[^}]+\}/g, '').replace(/\[[^\]]+\]/g, '').replace(/\s+/g, ' ').trim();
+
+/** Load approved pronunciations and substitute before TTS. */
+function loadPronunciations(): {term: string; tts: string}[] {
+  const p = join(ROOT, 'src', 'data', 'pronunciations.json');
+  if (!existsSync(p)) return [];
+  try {
+    const data = JSON.parse(readFileSync(p, 'utf8'));
+    return (data.terms ?? []).filter((t: any) => t.approved && t.tts).map((t: any) => ({term: t.term, tts: t.tts}));
+  } catch { return []; }
+}
+function applyPronunciations(text: string, terms: {term: string; tts: string}[]): string {
+  for (const {term, tts} of terms) {
+    const pattern = new RegExp(`\\b${term.replace(/[.*+?^${}()|[\\]\\]/g, '\\$&')}\\b`, 'gi');
+    text = text.replace(pattern, tts);
+  }
+  return text;
+}
+const PRONUNCIATIONS = loadPronunciations();
 const audioHash = sha256(JSON.stringify({mode, turns, edge: cfg.edge, fish: cfg.fish}));
 if (stages.includes('audio')) {
   if (current('audio', audioHash) && turns.filter(t => t.kind === 'speech').every(t => existsSync(join(audioDir, `${t.id}.mp3`)))) console.log('[audio] checkpoint current');
@@ -154,7 +176,7 @@ if (stages.includes('audio')) {
     mkdirSync(audioDir, {recursive: true}); mkdirSync(ttsDir, {recursive: true});
     const indexPath = join(ttsDir, 'index.json');
     const priorIndex = existsSync(indexPath) ? readJson<Record<string, {artifactHash?: string; hash?: string; speaker?: string; text?: string; engine?: string}>>(indexPath) : {};
-    let texts = Object.fromEntries(turns.filter(t => t.kind === 'speech').map(t => [t.id, cleanSpeech(t.text ?? '')]));
+    let texts = Object.fromEntries(turns.filter(t => t.kind === 'speech').map(t => [t.id, applyPronunciations(cleanSpeech(t.text ?? ''), PRONUNCIATIONS)]));
     if (mode === 'prod') {
       const prompt = `You are a Fish Audio S2 performance editor. Preserve every spoken word and historical claim exactly. Add only supported square-bracket performance commands where they improve delivery. Never add stage directions that could be spoken aloud. Return JSON only: {"turns":[{"id":"t00","text":"..."}]}. Include every supplied speech turn exactly once.\n\n${JSON.stringify(turns.filter(t => t.kind === 'speech').map(t => ({id: t.id, speaker: t.speaker, text: t.text})), null, 2)}`;
       const planned = readJson<{turns: {id: string; text: string}[]}>(meta('fish-direction', prompt));
