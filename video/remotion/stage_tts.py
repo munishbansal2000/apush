@@ -24,7 +24,7 @@ import subprocess
 from pathlib import Path
 
 # Base directory: this script's location. All paths anchor here, not cwd.
-_BASE = _BASE
+_BASE = Path(__file__).parent
 
 
 
