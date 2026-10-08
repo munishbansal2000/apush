@@ -50,12 +50,12 @@ interface CommonsInfo { url: string; width: number; height: number; license: str
 
 const strip = (html = '') => html.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
 
-/** fetch with retry/backoff on 429/5xx (Commons rate-limits bursts). */
+/** fetch with retry/backoff on 5xx. On 429, return immediately (caller falls back to Met). */
 async function getWithRetry(url: string, tries = 4): Promise<Response> {
   let res: Response | null = null;
   for (let i = 0; i < tries; i++) {
     res = await fetch(url, { headers: { 'User-Agent': UA } });
-    if (res.ok || (res.status !== 429 && res.status < 500)) return res;
+    if (res.ok || res.status === 429 || res.status < 500) return res;
     const rawWait = Number(res.headers.get('retry-after')) * 1000 || 1500 * 2 ** i;
     const wait = Math.min(rawWait, 30000); // cap at 30s, never 600s
     console.log(`    … HTTP ${res.status}, retrying in ${(wait / 1000).toFixed(1)}s`);
