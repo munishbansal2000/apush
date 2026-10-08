@@ -117,11 +117,19 @@ function staleReason(path: string, sourceUrl: string): string | null {
   return null;
 }
 
-const ep = loadEpisode();
-const key = `${ep.spec.manifestKey}:`;
 const only = arg('only');
-const targets = Object.entries(ep.manifest).filter(([path, m]) => !!m && Array.isArray(m.used_in) && (
-  only ? path === only : flag('all') ? !!m.source_url : m.used_in.some(u => u.startsWith(key))));
+// --all: fetch every manifest entry with a source_url, no episode needed
+let manifest: Record<string, { source_url?: string; used_in?: string[] }>;
+let key = '';
+if (flag('all') && !only) {
+  manifest = JSON.parse(readFileSync(join(ROOT, 'data/images.json'), 'utf8'));
+} else {
+  const ep = loadEpisode();
+  manifest = ep.manifest;
+  key = `${ep.spec.manifestKey}:`;
+}
+const targets = Object.entries(manifest).filter(([path, m]) => !!m && (
+  only ? path === only : flag('all') ? !!m.source_url : Array.isArray(m.used_in) && m.used_in.some(u => u.startsWith(key))));
 if (only && !targets.length) throw new Error(`${only} is not in images.json`);
 let ok = 0;
 let skipped = 0;
