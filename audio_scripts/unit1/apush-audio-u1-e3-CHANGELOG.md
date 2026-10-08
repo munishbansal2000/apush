@@ -55,3 +55,130 @@ labels from all 3 self-test model answers — TTS reads everything literally.
 CER logic (claim -> evidence -> reasoning) preserved, carried by natural
 connective tissue (em-dash pivots, "which means," "so," "the giveaway is").
 Substance identical; header word count updated to 1,766; gates 12/12 PASS.
+
+## v9 → v10 — `apush-audio-u1-e3-script-v10-DRAFT.md` (1,917 words, ~12 min experienced) — 2026-10-07
+**Trigger:** fleet repair program — audit of v9 found 12 blockers + 8 minors; this repair applies all 20.
+**Provenance note:** this v10 is the fleet-repair v10, built solely from `fleet-findings/u1-e3-FINDINGS.md`
+under `apush-final-guidelines.md` (§§1–9). It is NOT the externally-produced `u1e3.v10.md` (different
+pipeline, dated 2026-10-07): that file was never read or used, and none of its claims were imported —
+in particular its changelog claim that "sugar went east, not west" is FALSE (Tier 1 premium2027 ch3 lists
+sugarcane as westbound: "westbound sugar/wheat/bananas"), and the v9/v10 sugar direction (west) is correct.
+**Gates:** 13/13 PASS (`--minutes 12`; 160 WPM; 9 em-dashes incl. the tagline beat). Direction tags 83% → 34%.
+**Registry:** 4 new entries (F-U1-061 turkey exception, F-U1-062 African states' roles, F-U1-063 plague-origin
+hedge, F-U1-064 chains-before-silver ordering); parses clean. F-U9-034/F-U9-038 untouched (withdrawn).
+
+### Blockers
+- **B1 tense math.** Before: "Named in 1972? The thing is almost five hundred years old and got its name in
+  my grandparents' lifetime?" After: "Named in 1972? The thing is over five hundred years old and got its
+  name in my grandparents' lifetime?" (1492→2026 = 534; "almost five hundred" was only true in 1972.)
+- **B2 turkey exception.** Before (eastbound list): "Eastbound, Americas to Europe: maize, potatoes, tomatoes,
+  tobacco." After: "Eastbound, Americas to Europe: maize, potatoes, tomatoes, tobacco, and the turkey."
+  (Tier 1 premium2027 ch3: "The list of organisms brought by Europeans back to the Old World included
+  turkeys, corn, potatoes, sweet potatoes, cacao (cocoa), and tomatoes.") The false all-west rule is now
+  taught as a live trap — before: "The box-one mistake: every farm animal on the list went west. Sending
+  horses or cattle east flips the Exchange backwards." (announcer voice, also garbled). After: Maya's exam tip
+  states the rule ("so the livestock all went west"), and Marcus catches her: "Not quite. One farm animal
+  breaks the rule: the turkey went east, right alongside the maize and potatoes." Recap and fast-bonus answer
+  now carry the exception — before: "Eastbound: maize, potatoes, tomatoes, tobacco." / "West. Horses, cattle,
+  pigs: all of them, Europe to the Americas. Because the Americas had almost no domesticated farm animals to
+  send back — the livestock all went west." After: "Eastbound: maize, potatoes, tomatoes, tobacco. And the
+  turkey, the one farm animal that went east." / "West. Horses, cattle, pigs, all of them, Europe to the
+  Americas. The Americas had almost no domesticated farm animals to send back, except the turkey. That one
+  sailed east." Registry F-U1-061.
+- **B3 encomienda named.** Before: the labor chain jumped disease → African labor with no intermediate (the
+  encomienda never appeared). After (new Marcus turn, before the prediction beat): "But Spain didn't go
+  straight to African labor. First it forced Native workers into the encomienda, on plantations and in the
+  mines, and as the towns emptied, the system collapsed. Enslaved Africans replaced them." (Tier 1
+  premium2027 ch3: "Spaniards first turned to the forced labor of native Indians in a system known as the
+  encomienda... used in plantation agriculture and in the extraction of precious metals. Over time, native
+  labor was replaced by enslaved Africans."; 5steps2024 ch06: "The encomienda system forced Native Americans
+  onto Spanish plantations in exchange for the dubious benefit of Spanish 'protection.'")
+- **B4 African actors named.** Before: Africans appeared only as "enslaved African labor," "people in chains,"
+  "millions" in holds. After (added to the Middle Passage turn): "And those captives weren't only taken by
+  Europeans. African kingdoms and merchants had been raiding and selling captives for centuries, and the
+  Europeans bought into a trade that already existed." (Tier 1 premium2027 ch3: "Africans and Europeans had
+  been enslaving and trading Africans for centuries.") Recap reworded — before: "And Africa got pulled into
+  the machine, because empty towns meant a labor crisis, and the crisis meant the Middle Passage." After:
+  "And the slave trade scaled the machine up: African kingdoms sold captives, European buyers shipped them
+  west." Registry F-U1-062.
+- **B5 causal hedge.** Before: "Europe's plagues came from living cheek by jowl with domesticated animals for
+  thousands of years." After: "Many of the worst Old World epidemics grew out of living cheek by jowl with
+  domesticated animals for thousands of years." (The Black Death was flea-borne — Tier 2 Britannica: bubonic
+  plague typically transmitted to humans "through the bites of infected fleas carried by rodents" — so the
+  unhedged claim overstated.) Registry F-U1-063.
+- **B6 false ordering dropped.** Before: "Germs, then silver, then chains. That's the order the Exchange built."
+  After: "One fix on the order: the chains came first. The island plantations were already running on enslaved
+  labor before the silver boom. Silver scaled the machine up; it didn't start it." (Tier 1 5steps2024 ch06:
+  "Beginning in the 1540s, African slaves were sold to colonists."; the script's own island-precedent beat.)
+  Registry F-U1-064.
+- **B7 attribution strength.** Before: "One textbook estimates that between fifty and ninety percent of the
+  Native peoples of the Americas died between 1500 and 1650." After: "The Princeton Review estimates that
+  between fifty and ninety percent of the Native peoples of the Americas died between 1500 and 1650."
+  (Tier 1 premium2027 ch3: "It is estimated that between 50 and 90 percent of the native peoples of the
+  Americas died between 1500 and 1650.")
+- **B8 retired stock phrase.** Before: "And the tomato. Think about that one for a second." After: "And the
+  tomato crossed east too." (Direction tag also stripped per B12.)
+- **B9 retired stock phrase.** Before: "Fun fact: Europeans thought tomatoes were poisonous. They grew them as
+  decoration." After: "Okay, this one I know. Europeans thought tomatoes were poisonous. They grew them as
+  decoration." (Maya's know-something-Marcus-doesn't beat kept; vehicle changed.)
+- **B10 live traps (all four).** Each announcer-voice "mistake" rebuilt as Maya-states-it / Marcus-catches-her,
+  with listed G12 correction markers ("Not quite," "Watch it," "That's not," "Common mistake"):
+  1. Before: "The box-one mistake: every farm animal on the list went west. Sending horses or cattle east flips
+     the Exchange backwards." After: Maya's exam tip states the all-west rule; Marcus: "Not quite. One farm
+     animal breaks the rule: the turkey went east, right alongside the maize and potatoes." (G12-clean via
+     the wrong-beat exemption; registry F-U1-061.)
+  2. Before: "Common mistake, box two: treating smallpox like a Spanish weapon. The epidemics ran ahead of the
+     soldiers." After: Maya: "So the Spanish basically used smallpox as a weapon, right? It cleared the way for
+     them." Marcus: "Watch it. The epidemics ran ahead of the soldiers. Nobody had to deploy them."
+  3. Before: "Box three's trap: don't write that Europe "won" the Exchange and stop there. The Americas got
+     wheat, sugar, and the horse." After: Maya: "So for the exam, Europe won the Exchange, end of story."
+     Marcus: "That's not the whole story. Don't write "won" and stop there. The Americas got wheat, sugar,
+     and the horse."
+  4. Before: "And box four's mistake: don't write that the slave trade started with cotton. It started with
+     sugar, in the 1500s." After: Maya: "So the slave trade started with cotton in the 1800s?" Marcus: "Common
+     mistake. It was sugar, not cotton. The slave trade started in the sugar fields in the 1500s." (G12-clean
+     via exemption; registry F-U1-011.)
+- **B11 Sahagún mediation.** Before: "The Florentine Codex preserves Nahua accounts — the peoples of central
+  Mexico — of smallpox hitting Tenochtitlan. One account describes..." After: "The Florentine Codex preserves
+  Nahua accounts — the peoples of central Mexico — of smallpox hitting Tenochtitlan. A Franciscan friar named
+  Bernardino de Sahagún compiled it with Nahua scholars. One account describes..." (Tier 2 Britannica:
+  "compiled by the Spanish Franciscan friar Bernardino de Sahagún... In partnership with Nahua elders and
+  authors who were formerly his students at the Colegio de Santa Cruz de Tlatelolco." Paraphrase disclosure
+  in the read note retained.)
+- **B12 tag density.** 63 of 76 turns tagged (83%) → 27 of 80 (34%). Stripped the workhorse defaults
+  ([measured] ×25, [conversational] ×15, plus [serious tone] on the horse correction). Kept the
+  catalog-consistent mapping: [professional broadcast tone] cold open + tagline, [curious, inquisitive tone]
+  Maya's genuine questions, [confident tone] exam tips/takeaways, [firm] all four myth-bust corrections,
+  [incredulous] kept, [intrigued] closer tease, [sheepish] on the recap fumble (was [confident tone], see M4).
+  No words changed by any tag edit.
+
+### Minors
+- **M1 earned question (primary-source beat).** Before: "Do we have a voice from inside it? Somebody who lived
+  through it?" After: "Let me guess: the Spanish wrote it all down, and we only get their side." (Wrong guess
+  that Marcus's Codex turn corrects.)
+- **M2 earned question (ledger beat).** Before: "Europe won the calories. What did the Americas get?" After:
+  "The Americas got something out of it, though: wheat, sugar, the horse. That counts for something."
+  (Pushback that Marcus's "Paid in people" reframes.)
+- **M3 echo removed.** Before: "Up to nine in ten." (echo of Marcus's "between fifty and ninety percent"). After:
+  turn deleted — the paragraph lands clean into the exam tip.
+- **M4 fumble tag.** Before: "Maya: [confident tone] Box one, checked. Two: the disease front. ...was...
+  smallpox?" After: tag changed to [sheepish] (caught-wrong beat per the fleet map); words unchanged.
+- **M5 question tag.** Before: "Maya: [conversational] Why that bad, though? Europe had plagues too?" After:
+  tag changed to [curious, inquisitive tone] (genuine question); words unchanged.
+- **M6 mid-body tease removed.** Before: "Europe also won the wealth. The silver mountain gets its own episode
+  down the line." After: "Europe also won the wealth: silver, mountains of it." (One "next time" per episode;
+  it belongs to the closer's Jamestown tease.)
+- **M7 hedge carried into the model answer.** Before: "A virgin-soil epidemic — Old World germs meeting a
+  population with no immunity, no childhood exposure, no resistance. The dying emptied the towns ahead of the
+  soldiers, and that's what made conquest possible." After: "...no resistance. Disease led, but it didn't work
+  alone: war, slavery, and broken food systems helped. The dying emptied the towns ahead of the soldiers, and
+  that's what made conquest possible."
+- **M8 fragments 4 → 2.** Before: "God. They just lay there." / "Syphilis. Maybe. Historians still argue." /
+  "One more, fast." After: "God, they just lay there." / "Syphilis, maybe. Historians still argue." /
+  "One more, fast." (ritual bonus label kept; 2 fragments, cap 2–3).
+
+### Runtime promise change
+- New material (encomienda turn, turkey live trap, African-roles turn, four trap corrections, Sahagún line)
+  took the script from 1,766 to 1,917 words: 1,917 ÷ 180 = 10.65 min + 75 s pauses = ~11.9 min experienced.
+  The cold-open promise, header, and actuals were re-aligned at **twelve minutes** ("Twelve minutes, and
+  you'll check all four off."); 160 WPM, under the 180 cap. No pause tags added or removed.

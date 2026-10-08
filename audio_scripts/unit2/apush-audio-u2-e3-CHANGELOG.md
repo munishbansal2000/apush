@@ -73,3 +73,152 @@ contradictions with rebuilt U1/U2 episodes.
 **Final:** 1,952 spoken words, ~12.1 min experienced (75s pauses), header /
 cold-open promise ("Twelve minutes") / actual all agree. Awaiting the user's
 lock. Nothing pushed, nothing rendered.
+
+## v5 → v6 — `apush-audio-u2-e3-script-v6-DRAFT.md` (1,938 words, ~12.0 min experienced)
+2026-10-07: fleet repair pass against `fleet-findings/u2-e3-FINDINGS.md` —
+3 blockers + 7 minors, all repaired. Gates (working copy): **13/13 PASS**
+at 161 WPM @ 12 min (W2 triple WARNs only — box list, content lists, all
+with intent; W5 'exactly' 2x WARN).
+
+**B1 — common-mistake proclamations → live traps (§5).** Each trap is now
+Maya committing the genuine classic error in flow, Marcus catching her in
+the immediately following turn with a strong correction marker
+("Not quite" / "Not exactly" / "Common mix-up" — all G12-exempt forms;
+different speaker, next turn, marker verified). Marcus's corrections keep
+the script's taught content verbatim:
+- Box one — before: `Maya: [firm] And the common mistake for box one: don't
+  write that they crossed an ocean for religious freedom for everyone. They
+  came for their own. Ask the dissenters.` → after: `Maya: So they crossed
+  an ocean for religious freedom. That's box one, right?` /
+  `Marcus: [firm] Not quite. Religious freedom — for themselves. They came
+  for their own. Ask the dissenters.`
+- Box two — before: `Maya: [firm] Common mistake: don't flatten Hutchinson
+  to one label. Boston's heretic is later readers' feminist. Hold both, or
+  you'll miss the question.` → after: `Maya: So Hutchinson: the feminist of
+  box two.` / `Marcus: [firm] Not exactly. Boston's heretic is later
+  readers' feminist. Hold both, or you'll miss the question.`
+- Box three — before: `Marcus: [firm] Real, with the per-capita part
+  attached. … Say the per-capita part, or it's wrong. That's the common
+  mistake for box three.` → the praised per-capita exchange is kept verbatim;
+  the trap is a new beat after the Rowlandson turn: `Maya: Still. The
+  deadliest war in American history, full stop.` /
+  `Marcus: [firm] Common mix-up. Deadliest per capita — share of the
+  population killed. Drop the qualifier and the claim falls apart.`
+  (Reworded, not repeated, so G5's verbatim-repeat check stays green.)
+
+**B2 — tag density 61/74 (82%) → 27/76 (~35.5%) (§9).** Stripped all
+`[measured]` ×20 and `[conversational]` ×9 plus most workhorse
+`[curious, inquisitive tone]`; kept catalog beats only: cold open + closer
+`[professional broadcast tone]` ×3, genuine-curiosity
+`[curious, inquisitive tone]` ×12, myth-bust `[firm]` ×4, grim
+`[serious tone]` ×2, recap takeaways `[confident tone]` ×3, recap fumble
+`[sheepish]` ×1, uncertainty `[thoughtful tone]` ×1, closer `[intrigued]` ×1.
+Self-test stays tag-free. No dialogue words changed by the strip.
+
+**B3 — Dedham 1636 town-covenant pin cut fail-closed (§7/§10).**
+Unverifiable in Tier 1–2 (zero hits for "Dedham" in all three books).
+Before: `Marcus: [measured] … Believers signed a church covenant, and then
+the town itself covenanted. Dedham, 1636: the whole town signed one,
+covering how they'd live, settle disputes, tax themselves. The meetinghouse
+stood at the center. Church on Sunday, town meeting on Monday.` → after:
+`Marcus: The covenant. A covenant was a contract with God, and it ran
+everything. Believers signed a church covenant, joining the congregation.
+The meetinghouse stood at the center. Church on Sunday, town meeting on
+Monday.` Recap line cut in parallel: "Dedham signing a deal with God."
+→ "churches and towns." Fail-closed registry entry **F-U2-078** added
+(same-day); footer updated.
+
+**M1** — `Kennedy did, Reagan did` cut (no Tier 1–2 source): before
+`Presidents keep borrowing the line. Kennedy did, Reagan did, and why it
+keeps working, nobody's fully sure.` → after `It's a great sentence that
+means whatever the speaker needs, which is why it keeps getting borrowed.`
+
+**M2** — `Soul liberty, he called it` → books' framing: before `Soul
+liberty, he called it: every conscience answers to God alone.` → after
+`Separation of church and state: every conscience answers to God alone.`
+Recap: `Soul liberty, and he actually bought the land.` → `Separation of
+church and state, and he actually bought the land.`
+
+**M3** — Hutchinson meetings trimmed to Tier-1 wording: before `started
+hosting Bible meetings in her home: women at first, then men, then the
+magistrates themselves.` → after `started hosting Bible meetings in her
+home, with men and women both.`
+
+**M4** — four feed lines rewritten as earned beats: `How big was the
+migration itself?` → wrong guess `A few hundred families, right? It can't
+have been that many people crossing in the 1630s.`; `And the spark?` →
+objection `A court trial started a war? That can't be the whole spark.`;
+`How bad did it get?` → numbers pushback `"Terrible" is doing a lot of
+work there. Numbers: towns, people.`; `So Metacom's dead. Then what?` →
+genuine question `So the war ends — and then what happened to the
+Wampanoags who survived?`
+
+**M5** — before `On box three, the exam's favorite trap is order.` → after
+`On box three, the move is order.` (substance kept).
+
+**M6** — fast bonus rebuilt as AP-shaped reasoning (was timeline-ID
+trivia): before `One more, fast. Civil trial in '37, church trial in '38,
+killed in a raid in '43. Whose timeline?` / `Hutchinson.` → after
+`One more, fast. Hutchinson: civil court convicts her in 1637, the church
+excommunicates her in 1638. What does that split tell you about Puritan
+Massachusetts?` / `Church and town punished together — the court and the
+congregation came after the same dissenter, a year apart.` (F-U2-024
+grounds the split; pause + neutral model answer kept).
+
+**M7** — web-tier pins hedged: before `In November 1637 they tried her
+before the General Court, several months pregnant, defending herself with
+Scripture, and convicted her.` → after `In 1637 they tried her before the
+General Court, defending herself with Scripture, and convicted her.`
+Recap `the trial in '37 while pregnant` → `the trial in '37`; follow-up
+`Exiled while pregnant, and Boston still wasn't done with her?` →
+`Exiled, and Boston still wasn't done with her?`
+
+**G4 artifact note:** the v5 header's v4-replacement parenthetical carried
+"~8 min"; the working gate reads minutes from `--minutes` (12), not the
+header, but the v6 header now carries exactly one minute figure
+("~12 min experienced") and the parenthetical is gone.
+
+**Registry:** F-U2-017 (Metacom son) and F-U2-024 (1637/1638 split) verified
+present — no new entries needed for the auditor's praised corrections.
+F-U2-078 added for B3 (above). Registry parses clean
+(`yaml.safe_load` verified).
+
+**Final:** 1,938 spoken words, ~12.0 min experienced (75s pauses: 2×10 +
+20 + 2×15 + 5), header / cold-open promise ("Twelve minutes") / actual all
+agree. Nothing pushed, nothing rendered.
+
+## v6 restore pass — Metacom-killed-August-1676 beat (2026-10-07)
+Re-read found one repair-induced content loss: M4's feed rewrite cut the
+v5 Metacom-killed-August-1676 beat with no finding authorizing it, so the
+episode never established how/when King Philip's War ended before Maya
+asked the aftermath question. Restored the beat with the v6 Maya question
+kept verbatim and the Maya lead-in unchanged (its existing "So the war
+ends" follows "the coalition fell apart" naturally; no em dashes added,
+em-dash count still at 10; no new triples, no new antitheses; one
+[serious tone] tag added, catalog grim beat).
+
+- Before:
+  `Marcus: [firm] Common mix-up. Deadliest per capita — share of the
+  population killed. Drop the qualifier and the claim falls apart.`
+  `Maya: [curious, inquisitive tone] So the war ends — and then what
+  happened to the Wampanoags who survived?`
+- After:
+  `Marcus: [firm] Common mix-up. Deadliest per capita — share of the
+  population killed. Drop the qualifier and the claim falls apart.`
+  `Marcus: [serious tone] He tried. In August 1676 Metacom was killed, and
+  the coalition fell apart.`
+  `Maya: [curious, inquisitive tone] So the war ends — and then what
+  happened to the Wampanoags who survived?`
+
+Tier-2 sourced: footer Britannica (Metacom) line — "Philip killed August
+1676" — verified present; no registry change needed. "He tried." refers
+to the Williams-walked-out-to-meet-the-war-party beat earlier in the box,
+so the turn needs no lead-in rewrite.
+
+**Registry:** no change (F-U2-017/024/078 verified present; parses clean).
+
+**Gates (working copy):** 13/13 PASS at 162 WPM @ 12 min (W2 triple WARNs
+only — box list, content lists, all with intent; W5 'exactly' 2x WARN).
+**Final:** 1,951 spoken words (+13), ~12.0 min experienced; header /
+cold-open promise ("Twelve minutes") / actual agree. No version bump —
+still v6. Nothing pushed, nothing rendered.
