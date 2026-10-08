@@ -41,6 +41,23 @@ test('factual dispute requires a reason and an authoritative source URL', () => 
   assert.doesNotThrow(() => reviewer.validateReview(value));
 });
 
+test('lesson validation rejects fabricated or spliced quotes', () => {
+  const value = validReview();
+  assert.doesNotThrow(() => reviewer.validateReviewAgainstLesson(value, 'The lesson contains a bad phrase here.'));
+  value.findings[0].quote = 'bad phrase that never appeared';
+  assert.throws(() => reviewer.validateReviewAgainstLesson(value, 'The lesson contains a bad phrase here.'),
+    /not an exact contiguous excerpt/);
+});
+
+test('same-chat self-review prompt explicitly audits evidence and quotes', () => {
+  const prompt = reviewer.selfReviewPrompt('finding 0 quote failed');
+  assert.match(prompt, /immediately previous review/);
+  assert.match(prompt, /Do not default to a\s+clean pass/);
+  assert.match(prompt, /one contiguous passage/);
+  assert.match(prompt, /attacked versus captured/);
+  assert.match(prompt, /finding 0 quote failed/);
+});
+
 test('requested lesson glob excludes changelogs', () => {
   const pattern = reviewer.globRegex('*lesson*.md');
   assert.equal(pattern.test('unit3-lesson4.md'), true);

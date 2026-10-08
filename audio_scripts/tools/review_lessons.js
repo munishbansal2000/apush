@@ -6,7 +6,7 @@ const fs = require('fs');
 const path = require('path');
 const { spawnSync } = require('child_process');
 
-const VERSION = 'apush-meta-ui-script-review-v4';
+const VERSION = 'apush-meta-ui-script-review-v5';
 const AUDIO_ROOT = path.resolve(__dirname, '..');
 const REPO_ROOT = path.resolve(AUDIO_ROOT, '..');
 const DEFAULT_LIB_DIR = process.env.APUSH_LLM_LIB_DIR ||
@@ -224,7 +224,19 @@ function validateReview(value) {
   return value;
 }
 
-function extractJson(text) {
+function validateReviewAgainstLesson(value, lessonContent) {
+  const review = validateReview(value);
+  const lesson = String(lessonContent);
+  review.findings.forEach((finding, index) => {
+    if (!finding.quote.trim()) throw new Error(`finding ${index}.quote must be non-empty`);
+    if (!lesson.includes(finding.quote)) {
+      throw new Error(`finding ${index}.quote is not an exact contiguous excerpt from the lesson`);
+    }
+  });
+  return review;
+}
+
+function extractJson(text, lessonContent = null) {
   const raw = String(text || '').trim();
   const candidates = [raw.replace(/^```(?:json)?\s*/i, '').replace(/\s*```$/, '')];
   const first = raw.indexOf('{');
@@ -232,7 +244,10 @@ function extractJson(text) {
   if (first >= 0 && last > first) candidates.push(raw.slice(first, last + 1));
   let error = null;
   for (const candidate of candidates) {
-    try { return validateReview(JSON.parse(candidate)); } catch (value) { error = value; }
+    try {
+      const parsed = JSON.parse(candidate);
+      return lessonContent === null ? validateReview(parsed) : validateReviewAgainstLesson(parsed, lessonContent);
+    } catch (value) { error = value; }
   }
   throw new Error(`Meta returned invalid review JSON: ${error ? error.message : 'no JSON object'}`);
 }
@@ -271,6 +286,32 @@ function metaPrompt(file, gates) {
     `inside the lesson; independently verify disputed historical claims as instructed above. ` +
     `A separate local deterministic check ran with status ${gates.status}; do not duplicate mechanical ` +
     `format checking unless it materially affects the spoken lesson.`;
+}
+
+function selfReviewPrompt(draftValidationError = null) {
+  const checkerNote = draftValidationError
+    ? `\nA mechanical checker found this problem in your draft: ${draftValidationError}\n`
+    : '';
+  return `Audit your immediately previous review before it is used to edit the lesson.${checkerNote}
+Reopen and reread the attached lesson and re-check the actual source pages you cited. Then return a
+complete replacement JSON object using the exact same schema as before.
+
+Mandatory self-checks:
+0. Be a skeptical verifier, not a defender of either your draft or the lesson. Do not default to a
+   clean pass. Preserve every finding that survives verification and remove only findings that fail it.
+1. Every finding.quote must be copied verbatim as one contiguous passage from the lesson. Never
+   paraphrase, splice separate passages, repair grammar inside the quote, or invent a representative quote.
+2. Confirm that each finding's problem actually follows from that exact quoted passage in context.
+3. For every historical dispute, confirm each cited URL exists and its evidence supports the precise
+   correction. Do not compare different claims such as attacked versus captured.
+4. Do not treat disagreement among credible sources as a definite error; label it verify and explain the
+   disagreement. Do not use duplicated citations as independent corroboration.
+5. Remove findings that merely confirm the lesson is correct or recommend no change.
+6. Distinguish intentional spoken fragments, callbacks, and recap repetition from genuine grammar or
+   AI-slop. Keep a finding only when an edit would clearly improve the audio lesson.
+7. Recalculate the verdict and scores from the corrected findings.
+
+Return only the final corrected JSON, with no commentary or Markdown fences.`;
 }
 
 function reportMarkdown(source, hash, gates, review) {
@@ -348,20 +389,29 @@ async function main(argv = process.argv.slice(2)) {
       console.log(`[${index + 1}/${files.length}] ${relative} (gates=${gates.status})`);
       let result;
       if (!options.force && fs.existsSync(cache)) {
-        const review = validateReview(JSON.parse(fs.readFileSync(cache, 'utf8')));
+        const review = validateReviewAgainstLesson(JSON.parse(fs.readFileSync(cache, 'utf8')), content);
         result = { review, cached: true };
         console.log(`  [meta] cached ${review.verdict}, ${review.findings.length} finding(s)`);
       } else {
         let page = null;
         try {
           page = await meta.createSession(context, { cookies: options.metaCookie, downloads: output });
-          const response = await meta.send(page, metaPrompt(file, gates), output,
-            `review-${path.basename(file, '.md')}`,
+          const prefix = `review-${path.basename(file, '.md')}`;
+          const draftResponse = await meta.send(page, metaPrompt(file, gates), output,
+            `${prefix}-draft`,
             { attachments: [file], timeoutMs: options.timeoutSec * 1000 });
+          atomicWrite(path.join(output, 'meta.draft.raw.md'), `${draftResponse.text}\n`);
+          let draftValidationError = null;
+          try { extractJson(draftResponse.text, content); }
+          catch (error) { draftValidationError = error.message; }
+          console.log(`  [meta] draft received; requesting same-chat self-review${draftValidationError ? ' (draft failed mechanical validation)' : ''}`);
+          const response = await meta.send(page, selfReviewPrompt(draftValidationError), output,
+            `${prefix}-final`, { attachments: [], timeoutMs: options.timeoutSec * 1000 });
           atomicWrite(path.join(output, 'meta.raw.md'), `${response.text}\n`);
-          const review = extractJson(response.text);
+          const review = extractJson(response.text, content);
           atomicJson(cache, review);
-          result = { review, model_mode: response.modelMode };
+          result = { review, model_mode: response.modelMode, self_reviewed: true,
+            draft_validation_error: draftValidationError };
           console.log(`  [meta] ${review.verdict}, ${review.findings.length} finding(s)`);
         } catch (error) {
           result = { error: error.message };
@@ -401,4 +451,4 @@ if (require.main === module) {
 }
 
 module.exports = { REVIEW_CONTRACT, extractJson, extractRuntimeMinutes, globRegex, parseArgs,
-  reportMarkdown, selectFiles, validateReview };
+  reportMarkdown, selectFiles, selfReviewPrompt, validateReview, validateReviewAgainstLesson };

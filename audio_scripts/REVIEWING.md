@@ -11,6 +11,12 @@ guidelines and fact registry are not attached. This avoids redundant context,
 anchoring, and stale notes. `apush-script-gates.py` still runs locally and its
 result is preserved beside the Meta review.
 
+Each lesson uses two messages in the same Meta conversation. The first produces
+a draft review. The second tells Meta to audit its own quotes, reasoning, and
+sources against the attached lesson and return a complete corrected review.
+Only that second response is accepted. The pipeline also rejects any final
+finding whose quoted text is not an exact contiguous excerpt from the lesson.
+
 ## Run
 
 From the repository root:
@@ -42,8 +48,9 @@ Defaults:
 - Add `--keep-browser-on-error` to leave a failed Meta page open until Enter is
   pressed, making UI changes or response-extraction failures diagnosable.
 
-Each output directory contains the deterministic gate result, raw Meta
-response, validated JSON, and readable `report.md`.
+Each output directory contains the deterministic gate result, draft response
+(`meta.draft.raw.md`), self-reviewed final response (`meta.raw.md`), validated
+JSON, and readable `report.md`.
 `audio_scripts/_reviews/latest-run.json` indexes the most recent batch. Source
 lesson files are never modified.
 
