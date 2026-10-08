@@ -1,5 +1,5 @@
 import React from 'react';
-import { useCurrentFrame, useVideoConfig, interpolate, Img } from 'remotion';
+import { useCurrentFrame, useVideoConfig, interpolate, Img, Html5Video } from 'remotion';
 import { useElementTracker, TrackedElement } from '../validation/tracker';
 import { useCanvasElements } from '../validation/CanvasTracker';
 import { useAutoLayout, Priority } from '../validation/AutoLayout';
@@ -34,6 +34,8 @@ interface TalkingHeadProps extends TimingProps {
   hairStyle?: 'bob' | 'short' | 'long' | 'curly';
   bg?: string;
   debug?: boolean;
+  /** Unique id for auto-layout registration (defaults to 'talking-head') */
+  layoutId?: string;
 }
 
 /**
@@ -67,6 +69,7 @@ export const TalkingHead: React.FC<TalkingHeadProps> = ({
   hairStyle = 'bob',
   bg = 'transparent',
   debug = false,
+  layoutId = 'talking-head',
   enterDuration = DEFAULT_TIMING.enterDuration,
   exitDuration = DEFAULT_TIMING.exitDuration,
 }) => {
@@ -94,13 +97,13 @@ export const TalkingHead: React.FC<TalkingHeadProps> = ({
 
   // Validation: ensure within bounds with margin
   const { px } = useProportions([{
-    id: 'talking-head',
+    id: layoutId,
     renderWidth: headSize,
     renderHeight: headSize + labelHeight,
   }], { debug, componentName: 'TalkingHead' });
 
   const trackedElements: TrackedElement[] = [{
-    id: 'talking-head',
+    id: layoutId,
     type: 'image',
     content: speakerName,
     x: pos.x,
@@ -134,7 +137,7 @@ export const TalkingHead: React.FC<TalkingHeadProps> = ({
 
   // Register TRUE position and get auto-adjusted coordinates (priority-based)
   const { x: resolvedX, y: resolvedY } = useAutoLayout(
-    'talking-head', trueX, trueY, headSize, headSize + labelHeight,
+    layoutId, trueX, trueY, headSize, headSize + labelHeight,
     Priority.CHARACTER, 'image', speakerName
   );
 
@@ -182,7 +185,7 @@ export const TalkingHead: React.FC<TalkingHeadProps> = ({
         left: resolvedX,
         top: resolvedY,
         width: isFullscreen ? width : headSize,
-        height: isFullscreen ? width : frameHeight,
+        height: isFullscreen ? height : frameHeight,
         borderRadius: fs.borderRadius as any,
         overflow: 'hidden',
         border: `4px solid ${speakerColor}`,
@@ -194,10 +197,11 @@ export const TalkingHead: React.FC<TalkingHeadProps> = ({
         transform: `rotate(${headTilt}deg) scale(${1 + excitement})`,
       }}>
         {isVideo ? (
-          <video
+          <Html5Video
             src={mediaSrc}
             style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-            autoPlay muted loop playsInline
+            muted
+            loop
           />
         ) : (
           <Img

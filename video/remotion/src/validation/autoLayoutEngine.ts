@@ -57,7 +57,7 @@ export const Priority = {
  * Returns [dx, dy]. Prefers directions that keep B on-canvas
  * and away from the canvas edges.
  */
-function separationVector(
+export function separationVector(
   ax: number, ay: number, aw: number, ah: number,
   bx: number, by: number, bw: number, bh: number,
   frameW: number, frameH: number,

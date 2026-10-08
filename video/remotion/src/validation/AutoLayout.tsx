@@ -10,32 +10,37 @@
  *   const { x, y } = useAutoLayout('my-id', rawX, rawY, w, h, Priority.BUBBLE);
  *   // Render at x, y — automatically nudged to avoid overlaps
  *
- * How it works:
- * - Components declare their desired position via useAutoLayout
- * - Declarations are collected in context state
- * - Each component synchronously computes its adjustment from the snapshot
- * - Converges in 2-3 renders; Remotion waits for stability
- * - Priority determines who moves (lower priority yields to higher)
+ * How it works (single pass, no state, no effects):
+ * - The provider owns a registry in a ref, tagged with the provider's current frame.
+ * - The first useAutoLayout call that sees a new frame clears the registry.
+ * - Elements register in React render order (tree order). Each element is
+ *   resolved immediately against the elements registered *before* it this frame:
+ *   if it overlaps an earlier element of strictly higher priority, it is nudged
+ *   (smallest on-canvas move — same strategy as autoLayoutEngine) and then clamped.
+ * - Its resolved rect is stored so later elements resolve against it.
+ * - The result is a pure function of (earlier registrations this frame, desired
+ *   rect, priority), so every frame renders identically on any render worker.
  */
-import React, {
-  createContext,
-  useContext,
-  useState,
-  useCallback,
-  useEffect,
-  useMemo,
-} from 'react';
-import { useVideoConfig } from 'remotion';
-import {
-  LayoutElement,
-  resolveLayout,
-  Priority,
-} from './autoLayoutEngine';
+import React, { createContext, useContext, useMemo, useRef } from 'react';
+import { useCurrentFrame, useVideoConfig } from 'remotion';
+import { LayoutElement, Priority, separationVector } from './autoLayoutEngine';
+
+interface RegisteredElement extends LayoutElement {
+  /** Identity of the hook instance (ids may collide between instances). */
+  token: object;
+  /** Desired (raw) position. */
+  rawX: number;
+  rawY: number;
+}
+
+interface Registry {
+  frame: number;
+  entries: RegisteredElement[];
+}
 
 interface AutoLayoutContextValue {
-  elements: Map<string, LayoutElement>;
-  declare: (el: LayoutElement) => void;
-  undeclare: (id: string) => void;
+  registry: React.MutableRefObject<Registry>;
+  frame: number;
   frameW: number;
   frameH: number;
 }
@@ -47,40 +52,14 @@ export const AutoLayoutProvider: React.FC<{
   debug?: boolean;
 }> = ({ children, debug = false }) => {
   const { width: frameW, height: frameH } = useVideoConfig();
-  const [elements, setElements] = useState<Map<string, LayoutElement>>(new Map());
+  const frame = useCurrentFrame();
+  const registry = useRef<Registry>({ frame: Number.NaN, entries: [] });
 
-  const declare = useCallback((el: LayoutElement) => {
-    setElements(prev => {
-      const existing = prev.get(el.id);
-      // Skip if unchanged (prevents loops)
-      if (
-        existing &&
-        existing.x === el.x &&
-        existing.y === el.y &&
-        existing.w === el.w &&
-        existing.h === el.h &&
-        existing.priority === el.priority
-      ) {
-        return prev;
-      }
-      const next = new Map(prev);
-      next.set(el.id, el);
-      return next;
-    });
-  }, []);
-
-  const undeclare = useCallback((id: string) => {
-    setElements(prev => {
-      if (!prev.has(id)) return prev;
-      const next = new Map(prev);
-      next.delete(id);
-      return next;
-    });
-  }, []);
-
+  // A new value object every frame so every useAutoLayout consumer re-renders
+  // (and therefore re-registers) on every frame, in tree order.
   const value = useMemo(
-    () => ({ elements, declare, undeclare, frameW, frameH }),
-    [elements, declare, undeclare, frameW, frameH]
+    () => ({ registry, frame, frameW, frameH }),
+    [frame, frameW, frameH]
   );
 
   return (
@@ -90,6 +69,51 @@ export const AutoLayoutProvider: React.FC<{
     </AutoLayoutContext.Provider>
   );
 };
+
+const canOverlap = (a: LayoutElement, b: LayoutElement): boolean => {
+  if (a.overlapGroup && a.overlapGroup === b.overlapGroup) return true;
+  if (a.allowOverlapWith?.includes(b.id)) return true;
+  if (b.allowOverlapWith?.includes(a.id)) return true;
+  return false;
+};
+
+/**
+ * Pure resolver: place `el` given the already-resolved elements before it.
+ * Non-colliding elements keep their exact desired position (no clamping).
+ */
+export function resolveAgainst(
+  el: LayoutElement,
+  earlier: readonly LayoutElement[],
+  frameW: number,
+  frameH: number
+): { x: number; y: number } {
+  const elPriority = el.priority ?? 50;
+  let px = el.x;
+  let py = el.y;
+  let moved = false;
+  // Obstacles: earlier elements with strictly higher priority, highest first
+  // (stable sort keeps render order among equals).
+  const obstacles = earlier
+    .filter(o => (o.priority ?? 50) > elPriority && !canOverlap(el, o))
+    .sort((a, b) => (b.priority ?? 50) - (a.priority ?? 50));
+  for (const o of obstacles) {
+    const [dx, dy] = separationVector(
+      o.x, o.y, o.w, o.h,
+      px, py, el.w, el.h,
+      frameW, frameH
+    );
+    if (dx !== 0 || dy !== 0) {
+      px += dx;
+      py += dy;
+      moved = true;
+    }
+  }
+  if (moved) {
+    px = Math.max(0, Math.min(px, frameW - el.w));
+    py = Math.max(0, Math.min(py, frameH - el.h));
+  }
+  return { x: px, y: py };
+}
 
 /**
  * useAutoLayout — declare your position, get back the adjusted position.
@@ -122,42 +146,48 @@ export function useAutoLayout(
   }
 ): { x: number; y: number } {
   const ctx = useContext(AutoLayoutContext);
-
-  // Declare via effect (safe, no render-phase side effects)
-  useEffect(() => {
-    if (!ctx) return;
-    ctx.declare({
-      id, x, y, w, h, priority, type, content,
-      allowOverlapWith: options?.allowOverlapWith,
-      overlapGroup: options?.overlapGroup,
-    });
-    return () => ctx.undeclare(id);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [ctx, id, x, y, w, h, priority]);
+  const tokenRef = useRef<object>({});
 
   // No provider — return raw position
   if (!ctx) return { x, y };
 
-  // Compute adjustment synchronously from current snapshot
-  // (May be one render behind, converges quickly)
-  const allElements = Array.from(ctx.elements.values());
-  if (allElements.length <= 1) return { x, y };
+  const reg = ctx.registry.current;
+  if (reg.frame !== ctx.frame) {
+    reg.frame = ctx.frame;
+    reg.entries = [];
+  }
 
-  const adjustments = resolveLayout(allElements, ctx.frameW, ctx.frameH);
-  const adj = adjustments.get(id) ?? { dx: 0, dy: 0 };
+  // If this instance already registered this frame (re-render at the same
+  // frame, StrictMode double render), keep its original slot so the result
+  // only depends on elements before it.
+  const token = tokenRef.current;
+  const existing = reg.entries.findIndex(e => e.token === token);
+  const slot = existing === -1 ? reg.entries.length : existing;
+  const earlier = reg.entries.slice(0, slot);
 
-  return { x: x + adj.dx, y: y + adj.dy };
+  const desired: LayoutElement = {
+    id, x, y, w, h, priority, type, content,
+    allowOverlapWith: options?.allowOverlapWith,
+    overlapGroup: options?.overlapGroup,
+  };
+  const pos = resolveAgainst(desired, earlier, ctx.frameW, ctx.frameH);
+
+  const entry: RegisteredElement = { ...desired, x: pos.x, y: pos.y, rawX: x, rawY: y, token };
+  if (existing === -1) reg.entries.push(entry);
+  else reg.entries[existing] = entry;
+
+  return pos;
 }
 
 /**
  * Debug overlay showing all declared elements and their adjustments.
+ * Rendered after the provider's children, so it sees this frame's registry.
  */
 const AutoLayoutDebugOverlay: React.FC = () => {
   const ctx = useContext(AutoLayoutContext);
   if (!ctx) return null;
-
-  const elements = Array.from(ctx.elements.values());
-  const adjustments = resolveLayout(elements, ctx.frameW, ctx.frameH);
+  const reg = ctx.registry.current;
+  const elements = reg.frame === ctx.frame ? reg.entries : [];
 
   return (
     <div style={{
@@ -166,12 +196,13 @@ const AutoLayoutDebugOverlay: React.FC = () => {
       pointerEvents: 'none',
       zIndex: 9999,
     }}>
-      {elements.map(el => {
-        const adj = adjustments.get(el.id) ?? { dx: 0, dy: 0 };
-        const moved = adj.dx !== 0 || adj.dy !== 0;
+      {elements.map((el, i) => {
+        const dx = el.x - el.rawX;
+        const dy = el.y - el.rawY;
+        const moved = dx !== 0 || dy !== 0;
         return (
           <div
-            key={el.id}
+            key={`${el.id}-${i}`}
             style={{
               position: 'absolute',
               left: el.x,
@@ -191,7 +222,7 @@ const AutoLayoutDebugOverlay: React.FC = () => {
               whiteSpace: 'nowrap',
             }}>
               {el.id} (p:{el.priority ?? 50})
-              {moved && ` → [${Math.round(adj.dx)}, ${Math.round(adj.dy)}]`}
+              {moved && ` → [${Math.round(dx)}, ${Math.round(dy)}]`}
             </div>
           </div>
         );

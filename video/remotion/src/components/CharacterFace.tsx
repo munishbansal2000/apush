@@ -62,14 +62,15 @@ export const CharacterFace: React.FC<CharacterFaceProps> = ({
       // Open mouth that animates
       const h = (8 + mouthOpen * 20) * s;
       return (
-        <ellipse
-          cx={100 * s} cy={140 * s}
-          rx={18 * s} ry={h}
-          fill="#5a1a1a"
-        >
-          {/* Tongue */}
-          <ellipse cx={100 * s} cy={(140 + h * 0.4) * s} rx={10 * s} ry={h * 0.4} fill="#c96a6a" />
-        </ellipse>
+        <g>
+          <ellipse
+            cx={100 * s} cy={140 * s}
+            rx={18 * s} ry={h}
+            fill="#5a1a1a"
+          />
+          {/* Tongue (h is already scaled — don't multiply by s again) */}
+          <ellipse cx={100 * s} cy={140 * s + h * 0.4} rx={10 * s} ry={h * 0.4} fill="#c96a6a" />
+        </g>
       );
     }
 

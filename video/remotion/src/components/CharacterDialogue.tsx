@@ -16,6 +16,21 @@ interface CharacterDialogueProps extends TimingProps {
   debug?: boolean;
 }
 
+const getBubbleRect = (i: number, count: number, isMaya: boolean, width: number, height: number) => {
+  const top = height * 0.06;
+  const bottom = height * 0.6; // avatars start at 0.65
+  const gap = height * 0.015;
+  const slot = (bottom - top) / Math.max(1, count);
+  const bubbleH = Math.min(height * 0.16, slot - gap);
+  const colW = width * 0.44;
+  return {
+    x: isMaya ? width * 0.05 : width * 0.51,
+    y: top + i * slot,
+    width: colW,
+    height: bubbleH,
+  };
+};
+
 /**
  * CharacterDialogue — Maya/Marcus as animated avatars talking.
  *
@@ -51,12 +66,11 @@ export const CharacterDialogue: React.FC<CharacterDialogueProps> = ({
     lines.forEach((line, i) => {
       if (frame >= line.at) {
         const isMaya = line.speaker === 'maya';
+        const r = getBubbleRect(i, lines.length, isMaya, width, height);
         els.push({
           id: `bubble-${i}`, type: 'text', content: line.text,
           fontSize: height * 0.03,
-          x: isMaya ? width * 0.05 : width * 0.45,
-          y: height * 0.15 + (i % 3) * height * 0.18,
-          width: width * 0.5, height: height * 0.15,
+          x: r.x, y: r.y, width: r.width, height: r.height,
         });
       }
     });
@@ -146,8 +160,9 @@ export const CharacterDialogue: React.FC<CharacterDialogueProps> = ({
 
         const isMaya = line.speaker === 'maya';
         const color = isMaya ? mayaColor : marcusColor;
-        const bubbleX = isMaya ? width * 0.05 : width * 0.45;
-        const bubbleY = height * 0.12 + (i % 3) * height * 0.16;
+        const r = getBubbleRect(i, lines.length, isMaya, width, height);
+        const bubbleX = r.x;
+        const bubbleY = r.y;
 
         // Fade out old bubbles
         const isCurrent = line === currentLine;

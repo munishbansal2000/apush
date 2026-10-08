@@ -59,31 +59,15 @@ export const IrisTransition: React.FC<IrisTransitionProps> = ({
     return <div style={{ width, height }}>{sceneB}</div>;
   }
 
+  const clip = `circle(${Math.max(0, radius)}px at ${width / 2}px ${height / 2}px)`;
+
   return (
-    <div style={{ width, height, position: 'relative', overflow: 'hidden' }}>
-      {/* Outgoing scene */}
-      <div style={{ position: 'absolute', inset: 0 }}>
-        {sceneA}
+    <div style={{ width, height, position: 'relative', overflow: 'hidden', backgroundColor: color }}>
+      {/* Scene seen through the iris: A while closing, B while opening.
+          Outside the circle the iris colour shows. */}
+      <div style={{ position: 'absolute', inset: 0, clipPath: clip }}>
+        {showB ? sceneB : sceneA}
       </div>
-
-      {/* Iris mask */}
-      <div style={{
-        position: 'absolute', inset: 0,
-        backgroundColor: color,
-        clipPath: `circle(${Math.max(0, radius)}px at ${width / 2}px ${height / 2}px)`,
-        // Invert: we want the hole, not the fill
-        // Actually for iris close: show scene through shrinking circle
-      }} />
-
-      {/* Incoming scene (revealed through iris) */}
-      {showB && (
-        <div style={{
-          position: 'absolute', inset: 0,
-          clipPath: `circle(${Math.max(0, radius)}px at ${width / 2}px ${height / 2}px)`,
-        }}>
-          {sceneB}
-        </div>
-      )}
     </div>
   );
 };

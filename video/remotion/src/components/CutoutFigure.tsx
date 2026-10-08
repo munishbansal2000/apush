@@ -4,8 +4,8 @@
  * NOT a white-bordered rectangle. Torn paper edges, aged backing —
  * like someone cut this from an 18th-century engraving.
  */
-import React from 'react';
-import { useCurrentFrame, useVideoConfig, spring, staticFile } from 'remotion';
+import React, { useId } from 'react';
+import { useCurrentFrame, useVideoConfig, spring, staticFile, Img } from 'remotion';
 import { useAutoLayout, Priority } from '../validation/AutoLayout';
 
 interface CutoutFigureProps {
@@ -54,7 +54,7 @@ export const CutoutFigure: React.FC<CutoutFigureProps> = ({
 
   if (frame < at) return null;
 
-  const filterId = `torn-${(name || src).length * 37 % 10000}`;
+  const filterId = `torn-${useId().replace(/:/g, '')}`;
 
   return (
     <div style={{
@@ -90,7 +90,7 @@ export const CutoutFigure: React.FC<CutoutFigureProps> = ({
           fill="#d4c096"
           filter={`url(#${filterId})`}
           opacity="0.9"
-          transform="rotate(-1.5 100 50%)"
+          transform={`rotate(-1.5 100 ${100 * (figHeight / figWidth)})`}
         />
 
         {/* Figure image clipped to torn shape */}
@@ -101,7 +101,7 @@ export const CutoutFigure: React.FC<CutoutFigureProps> = ({
               xmlns="http://www.w3.org/1999/xhtml"
               style={{ width: '100%', height: '100%', overflow: 'hidden' }}
             >
-              <img
+              <Img
                 src={src.startsWith('http') ? src : staticFile(src)}
                 style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top center' }}
               />

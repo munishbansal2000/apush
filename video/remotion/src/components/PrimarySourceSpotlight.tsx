@@ -225,32 +225,37 @@ export const PrimarySourceSpotlight: React.FC<PrimarySourceProps> = ({
               {/* Highlight container logic */}
               {excerptText.includes(highlightedPhrase) ? (
                 <>
-                  <span>{excerptText.split(highlightedPhrase)[0]}</span>
-                  <span
-                    style={{
-                      position: 'relative',
-                      display: 'inline',
-                      fontWeight: 700,
-                      color: '#1c1917',
-                    }}
-                  >
-                    {/* Animated highlighter ink bar */}
-                    <span
-                      style={{
-                        position: 'absolute',
-                        left: 0,
-                        top: '12%',
-                        bottom: '8%',
-                        width: `${highlightWidth}%`,
-                        backgroundColor: 'rgba(250, 204, 21, 0.55)',
-                        borderRadius: 3,
-                        zIndex: -1,
-                        boxShadow: '0 0 8px rgba(250, 204, 21, 0.4)',
-                      }}
-                    />
-                    {highlightedPhrase}
-                  </span>
-                  <span>{excerptText.split(highlightedPhrase)[1]}</span>
+                  {excerptText.split(highlightedPhrase).map((part, i, arr) => (
+                    <React.Fragment key={i}>
+                      <span>{part}</span>
+                      {i < arr.length - 1 && (
+                        <span
+                          style={{
+                            position: 'relative',
+                            display: 'inline',
+                            fontWeight: 700,
+                            color: '#1c1917',
+                          }}
+                        >
+                          {/* Animated highlighter ink bar */}
+                          <span
+                            style={{
+                              position: 'absolute',
+                              left: 0,
+                              top: '12%',
+                              bottom: '8%',
+                              width: `${highlightWidth}%`,
+                              backgroundColor: 'rgba(250, 204, 21, 0.55)',
+                              borderRadius: 3,
+                              zIndex: -1,
+                              boxShadow: '0 0 8px rgba(250, 204, 21, 0.4)',
+                            }}
+                          />
+                          {highlightedPhrase}
+                        </span>
+                      )}
+                    </React.Fragment>
+                  ))}
                 </>
               ) : (
                 <span>{excerptText}</span>

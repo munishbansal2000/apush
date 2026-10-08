@@ -15,7 +15,7 @@
  * No manual fontSize. No manual position tweaking.
  */
 import React from 'react';
-import { useCurrentFrame, interpolate } from 'remotion';
+import { useCurrentFrame, useVideoConfig, interpolate } from 'remotion';
 import { useAutoLayout, Priority } from '../validation/AutoLayout';
 
 export type TextLevel = 'hero' | 'title' | 'subtitle' | 'body';
@@ -121,7 +121,20 @@ function estimateSize(text: string, fontSize: number): [number, number, string[]
   return [w, h, lines];
 }
 
-export const SmartText: React.FC<SmartTextProps> = ({
+export const SmartText: React.FC<SmartTextProps> = (props) => {
+  const frame = useCurrentFrame();
+  const at = props.at ?? 0;
+  const duration = props.duration ?? 0;
+
+  // Visibility gate lives in this wrapper (no hooks after the early return);
+  // the inner component calls all its hooks unconditionally.
+  if (frame < at) return null;
+  if (duration > 0 && frame > at + duration) return null;
+
+  return <SmartTextInner {...props} />;
+};
+
+const SmartTextInner: React.FC<SmartTextProps> = ({
   text,
   level = 'title',
   at = 0,
@@ -131,20 +144,22 @@ export const SmartText: React.FC<SmartTextProps> = ({
   entrance = 'fade',
 }) => {
   const frame = useCurrentFrame();
-  
-  if (frame < at) return null;
-  if (duration > 0 && frame > at + duration) return null;
-  
-  const fontSize = autoFontSize(text, level);
-  const [estW, estH, lines] = estimateSize(text, fontSize);
-  
+  const { width, height } = useVideoConfig();
+  // Sizes are authored at 1280x720; scale to the actual composition.
+  const k = width / 1280;
+
+  const fontSize = autoFontSize(text, level) * k;
+  const [estW, estH, lines] = estimateSize(text, fontSize / k);
+  const estWs = estW * k;
+  const estHs = estH * k;
+
   // Position via auto-layout
-  const rawX = position[0] * 1280 - estW / 2;
-  const rawY = position[1] * 720 - estH / 2;
-  
+  const rawX = position[0] * width - estWs / 2;
+  const rawY = position[1] * height - estHs / 2;
+
   const { x, y } = useAutoLayout(
     `smarttext-${text.slice(0, 20)}`,
-    rawX, rawY, estW, estH,
+    rawX, rawY, estWs, estHs,
     LEVEL_PRIORITY[level],
     'text',
     text

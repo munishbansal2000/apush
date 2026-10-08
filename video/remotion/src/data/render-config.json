@@ -5,57 +5,57 @@
       0.73,
       0.05,
       0.95,
-      0.2
+      0.255
     ]
   },
   "bubble": {
     "charW": 0.5,
-    "fontPx": 28,
-    "lineHeightPx": 36,
-    "paddingPx": 24
+    "fontPx": 34,
+    "lineHeightPx": 44,
+    "paddingPx": 28
   },
   "captions": {
     "maxChars": 58,
     "rect": [
       0.06,
-      0.84,
+      0.835,
       0.7,
-      0.9
+      0.905
     ]
   },
   "credit": {
     "rect": [
       0.06,
-      0.92,
+      0.912,
       0.7,
-      0.95
+      0.945
     ]
   },
   "figureCard": {
     "rect": [
-      0.1,
-      0.15,
-      0.66,
-      0.75
+      0.06,
+      0.43,
+      0.33,
+      0.775
     ]
   },
   "fps": 30,
   "guard": {
-    "clipTolerancePx": 2,
-    "epsilon": 0.001,
-    "overlapMinArea": 0.0001
+    "clipTolerancePx": 1,
+    "epsilon": 0.003,
+    "overlapMinArea": 0.0015
   },
   "head": {
     "position": "bottom-right",
     "rect": [
       0.72,
-      0.68,
-      0.98,
-      0.98
+      0.6,
+      0.95,
+      0.95
     ],
     "size": 0.26
   },
-  "height": 720,
+  "height": 1080,
   "maxSilentVisualSec": 8,
   "minHoldSec": 1.5,
   "minVisualCoverage": 0.7,
@@ -70,9 +70,9 @@
   "ribbon": {
     "rect": [
       0.06,
-      0.81,
+      0.785,
       0.7,
-      0.84
+      0.83
     ]
   },
   "safe": [
@@ -83,35 +83,35 @@
   ],
   "stage": [
     0.06,
-    0.1,
+    0.13,
     0.7,
-    0.8
+    0.775
   ],
   "text": {
     "body": {
-      "fontPx": 34,
-      "lineHeight": 1.3
+      "fontPx": 38,
+      "lineHeight": 1.25
     },
     "glyphW": {
-      "digit": 0.55,
+      "digit": 0.66,
       "lower": 0.5,
       "other": 0.6,
-      "space": 0.3,
-      "upper": 0.7
+      "space": 0.28,
+      "upper": 0.78
     },
     "hero": {
-      "fontPx": 88,
-      "lineHeight": 1.1
+      "fontPx": 140,
+      "lineHeight": 1.05
     },
     "maxWidthFrac": 0.62,
     "stampOvershoot": 1.25,
     "subtitle": {
-      "fontPx": 46,
-      "lineHeight": 1.2
+      "fontPx": 50,
+      "lineHeight": 1.15
     },
     "title": {
-      "fontPx": 68,
-      "lineHeight": 1.15
+      "fontPx": 76,
+      "lineHeight": 1.1
     }
   },
   "timing": {
@@ -128,7 +128,7 @@
       0.06,
       0.05,
       0.7,
-      0.12
+      0.122
     ]
   },
   "trapCard": {
@@ -139,11 +139,18 @@
       0.44
     ]
   },
-  "width": 1280,
+  "width": 1920,
   "overlayTiming": {
     "termChipSec": 3,
     "chapterBannerSec": 4,
     "trapFactDelaySec": 2.5,
     "yearHighlightSec": 2
-  }
+  },
+  "textSlotsY": [
+    0.2,
+    0.34,
+    0.48,
+    0.62,
+    0.71
+  ]
 }

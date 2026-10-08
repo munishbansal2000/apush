@@ -47,6 +47,7 @@ export const DualTalkingHeads: React.FC<DualTalkingHeadsProps> = ({
     return (
       <>
         <TalkingHead
+          layoutId="talking-head-main"
           speakerName={main.name}
           speakerColor={main.color}
           videoSrc={main.videoSrc}
@@ -56,6 +57,7 @@ export const DualTalkingHeads: React.FC<DualTalkingHeadsProps> = ({
           debug={debug}
         />
         <TalkingHead
+          layoutId="talking-head-secondary"
           speakerName={secondary.name}
           speakerColor={secondary.color}
           videoSrc={secondary.videoSrc}

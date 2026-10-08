@@ -152,7 +152,7 @@ export const KineticCaptions: React.FC<KineticCaptionsProps> = ({
                   backgroundColor: isCurrent ? 'rgba(245, 158, 11, 0.25)' : 'transparent',
                 }}
               >
-                {token.word}
+                {token.text ?? token.word}
               </span>
             );
           })}

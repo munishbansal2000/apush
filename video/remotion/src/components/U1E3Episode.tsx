@@ -39,6 +39,9 @@ import {
 } from './KitMedia';
 import { SceneTone } from '../validation/ToneContext';
 import { resolveAnchor, ResolveContext } from '../lib/anchors';
+import { Track } from '../lib/guard';
+import { KitLayer, KIT_W, KIT_H } from './KitLayer';
+import { useImageAspect } from '../lib/useImageAspect';
 import { u1e3Plan } from '../data/u1e3-plan';
 import beatsJson from '../data/e3/beats_kit.json';
 import rcJson from '../data/render-config.json';
@@ -63,8 +66,9 @@ const beats = beatsJson as ResolvedBeat[];
 /* ------------------------------ render config ------------------------------ */
 
 const CFG = {
-  width: rcJson.width,
-  height: rcJson.height,
+  // kit components render inside <KitLayer> (1920×1080 scaled to the frame)
+  width: KIT_W,
+  height: KIT_H,
   fps: rcJson.fps,
   safe: rcJson.safe,
   stage: rcJson.stage,
@@ -101,9 +105,17 @@ const BOXES = ['Exchange inventory', 'Disease front', 'Who won / who paid', 'Lab
 
 /* -------------------------------- beat view --------------------------------- */
 
-const seq = (key: string, start: number, end: number, fps: number, el: React.ReactNode) => (
-  <Sequence key={key} from={Math.round(start * fps)} durationInFrames={Math.max(1, Math.round((end - start) * fps))}>
-    {el}
+/** Beat kinds that render at native composition resolution (not in the 1080p kit layer). */
+const NATIVE = new Set(['bubble', 'versus']);
+/** Beat kinds treated as text for guard roles. */
+const TEXT_LIKE = new Set(['text', 'bubble']);
+
+/** One beat: timed Sequence → its own guard Track → kit layer (1080p) unless native. */
+const timed = (key: string, start: number, end: number, fps: number, el: React.ReactNode, opts: { role?: 'text' | 'stage' | 'overlay' | 'cover'; native?: boolean } = {}) => (
+  <Sequence key={key} from={Math.round(start * fps)} durationInFrames={Math.max(1, Math.round((end - start) * fps))} layout="none" name={key}>
+    <Track id={key} role={opts.role ?? 'stage'}>
+      {opts.native ? el : <KitLayer>{el}</KitLayer>}
+    </Track>
   </Sequence>
 );
 
@@ -251,7 +263,7 @@ function deriveE3State(turns: Turn[], starts: number[], durations: number[]) {
         return <SpeechBubble text={p.text} position={p.position} width={p.width} />;
       case 'tour':
         return (
-          <TourView
+          <AspectTour
             beat={{
               image: p.image,
               caption: p.caption,
@@ -261,8 +273,6 @@ function deriveE3State(turns: Turn[], starts: number[], durations: number[]) {
               })),
               itemOffsets: p.stops.map((s: { time: number }) => Math.max(0, s.time - b.start)),
             }}
-            regionRect={() => undefined}
-            imageAspect={1.5}
             cfg={CFG}
           />
         );
@@ -276,7 +286,7 @@ function deriveE3State(turns: Turn[], starts: number[], durations: number[]) {
       case 'document': {
         const words = (p.excerpt as string).split(/\s+/).filter(Boolean);
         return (
-          <DocumentView
+          <AspectDocument
             beat={{
               title: p.title,
               attribution: p.attribution,
@@ -288,7 +298,6 @@ function deriveE3State(turns: Turn[], starts: number[], durations: number[]) {
               hipp: p.hipp,
             }}
             wordOffsets={words.map((_, i) => i * 0.35)}
-            imageAspect={0.7}
             cfg={CFG}
           />
         );
@@ -361,6 +370,16 @@ function deriveE3State(turns: Turn[], starts: number[], durations: number[]) {
   };
 }
 
+/** Tour/document with the image's REAL aspect (hard-coded aspects squashed scans and moved marks). */
+const AspectTour: React.FC<Omit<React.ComponentProps<typeof TourView>, 'imageAspect' | 'regionRect'>> = (props) => {
+  const aspect = useImageAspect((props.beat as { image?: string }).image, 16 / 9);
+  return <TourView {...props} imageAspect={aspect} regionRect={() => undefined} />;
+};
+const AspectDocument: React.FC<Omit<React.ComponentProps<typeof DocumentView>, 'imageAspect'>> = (props) => {
+  const aspect = useImageAspect((props.beat as { image?: string }).image, 4 / 3);
+  return <DocumentView {...props} imageAspect={aspect} />;
+};
+
 /* --------------------------------- episode ---------------------------------- */
 
 const e3TurnsList = (Array.isArray(e3Turns) ? e3Turns : (e3Turns as any).turns) as { id: string; speaker: string; text: string; pause_after?: number }[];
@@ -387,38 +406,47 @@ export const U1E3Episode: React.FC = () => {
       const fps = ctx.fps;
       return (
         <>
-          {/* Title card */}
-          {seq('title', s.titleAt, s.titleAt + (rcJson.titleCardSec ?? 3), fps, (
+          {/* Title card (720p-native component) */}
+          {timed('cover:title', s.titleAt, s.titleAt + (rcJson.titleCardSec ?? 3), fps, (
             <TitleCard
               at={0}
               kicker={u1e3Plan.title.kicker}
               title={u1e3Plan.title.title}
               subline={u1e3Plan.title.subline}
             />
-          ))}
+          ), { role: 'cover', native: true })}
 
           {/* Beats (bg beats are handled by backgroundForTurn) */}
-          {beats.filter((b) => b.kind !== 'bg').map((b) => seq(b.id, b.start, b.end, fps, s.renderBeat(b)))}
+          {beats.filter((b) => b.kind !== 'bg').map((b) =>
+            timed(`beat:${b.id}`, b.start, b.end, fps, s.renderBeat(b), {
+              role: TEXT_LIKE.has(b.kind) ? 'text' : 'stage',
+              native: NATIVE.has(b.kind),
+            }),
+          )}
 
           {/* Pause cards + reveals */}
           {s.pauses.map((pc, i) => (
             <React.Fragment key={`pause-${i}`}>
-              {seq(`pausecard-${i}`, pc.card.start, pc.card.end, fps, <PauseCard card={pc.card} cfg={CFG} />)}
-              {seq(`reveal-${i}`, pc.revealStart, pc.revealEnd, fps, <RevealCard text={pc.reveal} cfg={CFG} />)}
+              {timed(`pause:${i}`, pc.card.start, pc.card.end, fps, <PauseCard card={pc.card} cfg={CFG} />, { role: 'overlay' })}
+              {timed(`reveal:${i}`, pc.revealStart, pc.revealEnd, fps, <RevealCard text={pc.reveal} cfg={CFG} />, { role: 'overlay' })}
             </React.Fragment>
           ))}
 
           {/* Trap cards */}
-          {s.traps.map((t) => seq(t.key, t.start, t.end, fps, <TrapCard trap={t} cfg={CFG} />))}
+          {s.traps.map((t) => timed(`trap:${t.key}`, t.start, t.end, fps, <TrapCard trap={t} cfg={CFG} />, { role: 'overlay' }))}
 
           {/* Chapter banners */}
-          {s.chapters.map((c) => seq(c.key, c.start, c.bannerEnd, fps, <ChapterBanner chapter={c} cfg={CFG} />))}
+          {s.chapters.map((c) => timed(`chapter:${c.key}`, c.start, c.bannerEnd, fps, <ChapterBanner chapter={c} cfg={CFG} />, { role: 'overlay' }))}
 
           {/* Box tracker — always mounted, appears when boxes are named */}
-          <BoxTracker
-            state={{ boxes: BOXES, checkedAt: s.checkedAt, introAt: s.introAt, current: s.currentBoxAt(ctx.timeSec), t: ctx.timeSec }}
-            cfg={CFG}
-          />
+          <Track id="chrome:box-tracker" role="chrome">
+            <KitLayer>
+              <BoxTracker
+                state={{ boxes: BOXES, checkedAt: s.checkedAt, introAt: s.introAt, current: s.currentBoxAt(ctx.timeSec), t: ctx.timeSec }}
+                cfg={CFG}
+              />
+            </KitLayer>
+          </Track>
         </>
       );
     }}
