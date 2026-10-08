@@ -153,7 +153,7 @@ export function normalizePlan(plan: DirectedPlan, turns: PipelineTurn[], starts:
   if (plan.version !== 1 || !Array.isArray(plan.scenes) || !plan.scenes.length) throw new Error('director plan must be version 1 with scenes');
   const index = new Map(turns.map((turn, i) => [turn.id, i]));
   let last = -1;
-  const allowed = new Set(['title', 'ken_burns', 'quote', 'compare', 'causal_chain', 'highlight', 'primary_source', 'creative_clip', 'talking_head', 'timeline', 'map', 'versus', 'collage']);
+  const allowed = new Set(['title', 'ken_burns', 'quote', 'compare', 'causal_chain', 'highlight', 'primary_source', 'creative_clip', 'chart', 'spectrum', 'stagger']);
   const scenes = plan.scenes.map((scene, sceneIndex) => {
     if (!allowed.has(scene.component)) throw new Error(`${scene.id}: unsupported component ${scene.component}`);
     validateSceneProps(scene);
@@ -213,20 +213,16 @@ function validateSceneProps(scene: DirectedScene): void {
         throw new Error(`${scene.id}: highlightedPhrase must appear verbatim in excerptText`);
       }
       break;
-    case 'talking_head':
-      if (p.speaker !== 'maya' && p.speaker !== 'marcus') throw new Error(`${scene.id}: talking_head requires speaker maya|marcus`);
+    case 'chart':
+      if (p.type !== 'bar' && p.type !== 'line') throw new Error(`${scene.id}: chart requires type bar|line`);
+      if (!Array.isArray(p.data) || !p.data.length) throw new Error(`${scene.id}: chart requires data array`);
       break;
-    case 'timeline':
-      if (!Array.isArray(p.events) || !p.events.length) throw new Error(`${scene.id}: timeline requires events array`);
+    case 'spectrum':
+      if (!Array.isArray(p.axis) || p.axis.length !== 2) throw new Error(`${scene.id}: spectrum requires axis [left, right]`);
+      if (!Array.isArray(p.markers) || !p.markers.length) throw new Error(`${scene.id}: spectrum requires markers`);
       break;
-    case 'map':
-      if (!text('title')) throw new Error(`${scene.id}: map requires title`);
-      break;
-    case 'versus':
-      if (!object('left') || !object('right')) throw new Error(`${scene.id}: versus requires left and right`);
-      break;
-    case 'collage':
-      if (!Array.isArray(p.images) || p.images.length < 2) throw new Error(`${scene.id}: collage requires 2+ images`);
+    case 'stagger':
+      if (!Array.isArray(p.panels) || p.panels.length < 2) throw new Error(`${scene.id}: stagger requires 2+ panels`);
       break;
     case 'creative_clip':
       if (!text('image') || !text('prompt')) throw new Error(`${scene.id}: creative_clip requires image and prompt`);

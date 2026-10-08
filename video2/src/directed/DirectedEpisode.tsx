@@ -7,17 +7,15 @@ import {CompareSlide} from '../components/CompareSlide';
 import {CausalChainSlide} from '../components/CausalChainSlide';
 import {HighlightSlide} from '../components/HighlightSlide';
 import {PrimarySourceSpotlight} from '../components/PrimarySourceSpotlight';
-import {TalkingHead} from '../components/TalkingHead';
-import {TimelineRibbon} from '../components/TimelineRibbon';
-import {TerritorialExpansionMap} from '../components/TerritorialExpansionMap';
-import {VersusPolarization} from '../components/VersusPolarization';
-import {CollageSlide} from '../components/CollageSlide';
+import {AnimatedChart} from '../components/AnimatedChart';
+import {SpectrumSlide} from '../components/SpectrumSlide';
+import {StaggerSlide} from '../components/StaggerSlide';
 
 export interface DirectedTurn { id: string; kind: 'speech' | 'pause'; text?: string }
 export interface DirectedTiming { starts: number[]; durations: number[]; totalSec: number }
 export interface DirectedScene {
   id: string;
-  component: 'title' | 'ken_burns' | 'quote' | 'compare' | 'causal_chain' | 'highlight' | 'primary_source' | 'creative_clip' | 'talking_head' | 'timeline' | 'map' | 'versus' | 'collage';
+  component: 'title' | 'ken_burns' | 'quote' | 'compare' | 'causal_chain' | 'highlight' | 'primary_source' | 'creative_clip' | 'chart' | 'spectrum' | 'stagger';
   props: Record<string, unknown>;
   startSec: number;
   endSec: number;
@@ -40,11 +38,9 @@ const SceneBody: React.FC<{scene: DirectedScene}> = ({scene}) => {
     case 'causal_chain': return <CausalChainSlide title={p.title} nodes={p.nodes ?? []} />;
     case 'highlight': return <HighlightSlide title={p.title} body={p.body ?? ''} highlights={p.highlights ?? []} />;
     case 'primary_source': return <PrimarySourceSpotlight {...p} />;
-    case 'talking_head': return <TalkingHead speaker={p.speaker} image={p.image} />;
-    case 'timeline': return <TimelineRibbon title={p.title} events={p.events ?? []} />;
-    case 'map': return <TerritorialExpansionMap title={p.title} highlights={p.highlights ?? []} />;
-    case 'versus': return <VersusPolarization title={p.title} left={p.left} right={p.right} />;
-    case 'collage': return <CollageSlide title={p.title} images={p.images ?? []} />;
+    case 'chart': return <AnimatedChart type={p.type} data={p.data ?? []} labels={p.labels} title={p.title} />;
+    case 'spectrum': return <SpectrumSlide axis={p.axis} markers={p.markers ?? []} title={p.title} />;
+    case 'stagger': return <StaggerSlide panels={p.panels ?? []} title={p.title} />;
     case 'creative_clip': return (
       <AbsoluteFill style={{background: '#0b1020'}}>
         <OffthreadVideo src={staticFile(p.clip)} muted style={{width: '100%', height: '100%', objectFit: 'cover'}} />
