@@ -237,78 +237,104 @@
     {
       "name": "chart",
       "component": "AnimatedChart",
-      "when": "Bar/line charts for statistics (tax revenue, population, troop counts).",
+      "when": "Use when the narration turns on a number: tax revenue, population counts, troop levels, casualty figures, debt. The bars or line draw themselves on screen, which gives a static number a visual moment. Do NOT use when the numbers are approximate or the books won't pin one (the u3e1 debt is 'enormous' \u2014 no figure \u2014 so no chart there). Do not use for non-numeric comparisons; use compare or versus instead.",
       "examples": [
-        "Use for bar/line charts for statistics (tax revenue, population, troop counts)."
+        "Stamp Act revenue: bar chart of projected vs actual stamp-tax receipts in the first year, showing London's math falling short",
+        "Pontiac's Rebellion toll: bar chart \u2014 400+ British soldiers and ~2,000 colonists killed or captured \u2014 when Marcus lists the cost of the uprising"
       ],
-      "constraints": [],
+      "constraints": [
+        "props.type must be exactly 'bar' or 'line' (validator rejects anything else).",
+        "props.data is required: either number[] or [{label, value}]. Empty arrays are rejected.",
+        "props.data values must be finite numbers; labels[] (optional) must not exceed data length.",
+        "Keep data to 8 or fewer bars/points \u2014 more is unreadable at 1280x720.",
+        "Only chart quantities the script actually states or sources. Never invent numbers."
+      ],
       "props_detail": {
         "type": {
-          "type": "string",
+          "type": "'bar' | 'line'",
           "required": true,
-          "example": ""
+          "example": "bar"
         },
         "data": {
-          "type": "string",
+          "type": "number[] | {label: string, value: number}[]",
           "required": true,
-          "example": ""
+          "example": "[{\"label\": \"Projected receipts\", \"value\": 60000}, {\"label\": \"Actual receipts\", \"value\": 4000}]"
         },
         "labels": {
-          "type": "string",
-          "required": true,
-          "example": ""
+          "type": "string[]",
+          "required": false,
+          "example": "[\"1765\", \"1766\"]"
         },
         "title": {
           "type": "string",
-          "required": true,
-          "example": ""
+          "required": false,
+          "example": "Stamp Act receipts, first year"
+        },
+        "maxValue": {
+          "type": "number",
+          "required": false,
+          "example": "70000"
         }
       }
     },
     {
       "name": "spectrum",
       "component": "SpectrumSlide",
-      "when": "Position items on a labeled spectrum (e.g. 'how democratic was colonial Virginia?').",
+      "when": "Use when the narration positions something on a labeled continuum: how much autonomy did the colonies have (salutary neglect vs close supervision), how democratic was a colony, how hostile was a policy. Markers drop with spring physics onto the axis. Do NOT use for binary yes/no choices (use compare) or for sequences in time (use a ken_burns beat). Each marker needs a label and a position 0-1.",
       "examples": [
-        "Use for position items on a labeled spectrum (e.g. 'how democratic was colonial virginia?')."
+        "Salutary neglect spectrum: axis ['Ignored by London', 'Micromanaged by London'], markers for 'Salutary neglect 1650-1750' at 0.15 and 'Post-1763 enforcement' at 0.85 \u2014 when Marcus says the era of looking the other way ended",
+        "Colonial response spectrum: axis ['Loyal', 'Rebellious'] with markers for land speculators, settlers, and Sons of Liberty placed by how far each pushed back"
       ],
-      "constraints": [],
+      "constraints": [
+        "props.axis is required and must be exactly [leftLabel, rightLabel] \u2014 two non-empty strings (validator rejects anything else).",
+        "props.markers is required: non-empty array of {at, label}. Each 'at' must be a number 0-1; each 'label' a non-empty string.",
+        "Keep markers to 5 or fewer \u2014 more overlap on the axis.",
+        "Labels should be short (under ~30 characters); the axis labels under ~25.",
+        "Do not set move_to/move_start \u2014 those are renderer frame math, not director planning."
+      ],
       "props_detail": {
         "axis": {
-          "type": "string",
+          "type": "[string, string]",
           "required": true,
-          "example": ""
+          "example": "[\"Ignored by London\", \"Micromanaged by London\"]"
         },
         "markers": {
-          "type": "string",
+          "type": "{at: number (0-1), label: string}[]",
           "required": true,
-          "example": ""
+          "example": "[{\"at\": 0.15, \"label\": \"Salutary neglect 1650-1750\"}, {\"at\": 0.85, \"label\": \"Post-1763 enforcement\"}]"
         },
         "title": {
           "type": "string",
-          "required": true,
-          "example": ""
+          "required": false,
+          "example": "How tightly did London govern?"
         }
       }
     },
     {
       "name": "stagger",
       "component": "StaggerSlide",
-      "when": "Reveal 2-4 image panels with staggered spring entrances (multiple examples of one idea).",
+      "when": "Use when the narration lists 2-4 parallel examples of one idea: several forts that fell in Pontiac's Rebellion, several taxes Grenville planned, several grievances the colonists named. Panels spring in one after another, each with an image and a short label. Do NOT use for a single image (use ken_burns) or for more than 4 panels (unreadable). Every panel image must be a key from AVAILABLE IMAGES \u2014 copy exactly, never invent.",
       "examples": [
-        "Use for reveal 2-4 image panels with staggered spring entrances (multiple examples of one idea)."
+        "Forts that fell, 1763: panels for Fort Detroit (siege image), Fort Pitt (plan image), and two more Great Lakes forts \u2014 when Marcus says 'the alliance struck fort after fort'",
+        "Grenville's program: panels for the Sugar Act document, the Proclamation line map, and the Grenville portrait \u2014 when Maya lists what London did after 1763"
       ],
-      "constraints": [],
+      "constraints": [
+        "props.panels is required: 2-4 panels (validator rejects fewer than 2).",
+        "Each panel: {image: string (required, must be an exact AVAILABLE IMAGES key), label: string (optional, short)}.",
+        "Image paths follow the same safety rules as ken_burns: public/ relative, no http:, no '..'.",
+        "Keep labels under ~40 characters; panels are small.",
+        "Do not reuse the identical image set in adjacent scenes \u2014 vary the visual."
+      ],
       "props_detail": {
         "panels": {
-          "type": "string",
+          "type": "{image: string, label?: string}[]",
           "required": true,
-          "example": ""
+          "example": "[{\"image\": \"historic/u3e1/fort-detroit-siege.jpg\", \"label\": \"Fort Detroit, besieged\"}, {\"image\": \"historic/u3e1/fort-pitt-plan.jpg\", \"label\": \"Fort Pitt, 1759 plan\"}]"
         },
         "title": {
           "type": "string",
-          "required": true,
-          "example": ""
+          "required": false,
+          "example": "Forts that fell, 1763"
         }
       }
     }
