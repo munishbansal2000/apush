@@ -1,0 +1,27 @@
+{
+  "timing": {
+    "gapSec": 0.18,
+    "leadSec": 0.25,
+    "tailSec": 0.6
+  },
+  "edge": {
+    "voices": {
+      "maya": "en-US-AriaNeural",
+      "marcus": "en-US-GuyNeural",
+      "narrator": "en-US-GuyNeural"
+    },
+    "rate": "+4%",
+    "pitch": "+0Hz"
+  },
+  "fish": {
+    "model": "s2.1-pro-free",
+    "voices": {
+      "maya": "57785406027844b29b63a772a8477bc2",
+      "marcus": "bb742915b1fa41b389a850b11efae0c8",
+      "jay": "23c536451dd94b70b0d4ab0e8a630e1d"
+    }
+  },
+  "meta": {
+    "timeoutSec": 1200
+  }
+}

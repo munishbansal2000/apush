@@ -1,116 +1,145 @@
-/**
- * Download the real images for an episode from their manifest source_url, replacing the
- * dev placeholders in public/. Self-validating:
- *   - Wikimedia Commons files go through the Commons API, which returns the real file URL,
- *     size, and license metadata; the license is compared with images.json
- *   - every download must be an image (content-type + ffprobe) and ≥1280px wide (warn)
- *   - entries without a fetchable source are reported, never guessed
- *
- * Incremental: data/images.lock.json records, per image, the source_url it came from and the
- * sha256 of the file written. An image is skipped when the file exists, its hash matches the
- * lock, and the manifest's source_url hasn't changed. Placeholders, hand-edited files, and
- * changed sources are (re)fetched. Lock entries are written after each success, so an
- * interrupted run resumes where it stopped.
- *
- *   npm run fetch:images                      images used by the episode (incremental)
- *   npm run fetch:images -- --force           refetch everything selected
- *   npm run fetch:images -- --only historic/u1e3/tomato-plant.jpg
- *   npm run fetch:images -- --all             every manifest entry with a source_url
- *   npm run fetch:images -- --search "Catlin Comanche horsemanship"   find Commons candidates
- */
+/** Incrementally download and validate historical images from data/images.json. */
 import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, unlinkSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { arg, flag, loadEpisode, PUBLIC, ROOT } from './lib';
 
 const UA = 'apush-episode-kit/1.0 (educational video production)';
-const API = 'https://commons.wikimedia.org/w/api.php';
-const MET_API = 'https://collectionapi.metmuseum.org/public/collection/v1';
+const COMMONS_API = 'https://commons.wikimedia.org/w/api.php';
+const LOCK_PATH = join(ROOT, 'data/images.lock.json');
 
-/** Fallback: search Met Museum Open Access for a similar image. */
-async function metFallback(searchTerm: string): Promise<string | null> {
-  try {
-    const search = await fetch(`${MET_API}/search?q=${encodeURIComponent(searchTerm)}&hasImages=true`);
-    if (!search.ok) return null;
-    const data = await search.json() as { objectIDs?: number[] };
-    if (!data.objectIDs?.length) return null;
-    // Try first 3 results
-    for (const id of data.objectIDs.slice(0, 3)) {
-      const obj = await fetch(`${MET_API}/objects/${id}`);
-      if (!obj.ok) continue;
-      const o = await obj.json() as { primaryImage?: string; isPublicDomain?: boolean };
-      if (o.primaryImage && o.isPublicDomain) return o.primaryImage;
-    }
-  } catch { /* ignore, return null */ }
-  return null;
+interface ManifestEntry {
+  source_url?: string;
+  /** Direct downloads or mirrors of the exact same work, in preference order. */
+  download_urls?: string[];
+  used_in?: string[];
+  license?: string;
 }
-
-interface CommonsInfo { url: string; width: number; height: number; license: string; artist: string; date: string; descriptionUrl: string }
+interface CommonsInfo { url: string; license: string }
+interface CommonsImageInfo {
+  thumburl?: string; url: string; width: number; height: number;
+  extmetadata?: Record<string, { value: string }>;
+}
+interface CommonsApiResponse {
+  query?: { pages?: Record<string, { imageinfo?: CommonsImageInfo[] }> };
+}
+interface LockEntry {
+  source_url: string; sha256: string; width: number; height: number;
+  license: string; fetchedAt: string;
+}
 
 const strip = (html = '') => html.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
+const sha = (file: string) => createHash('sha256').update(readFileSync(file)).digest('hex');
+const responseType = (res: Response | null) => res?.headers.get('content-type') ?? '';
+const isImageResponse = (res: Response | null) =>
+  !!res?.ok && /^(image\/|application\/octet-stream)/i.test(responseType(res));
 
-/** fetch with retry/backoff on 5xx. On 429, return immediately (caller falls back to Met). */
-async function getWithRetry(url: string, tries = 4): Promise<Response> {
-  let res: Response | null = null;
-  for (let i = 0; i < tries; i++) {
-    res = await fetch(url, { headers: { 'User-Agent': UA } });
-    if (res.ok || res.status === 429 || res.status < 500) return res;
-    const rawWait = Number(res.headers.get('retry-after')) * 1000 || 1500 * 2 ** i;
-    const wait = Math.min(rawWait, 30000); // cap at 30s, never 600s
-    console.log(`    … HTTP ${res.status}, retrying in ${(wait / 1000).toFixed(1)}s`);
-    await new Promise(r => setTimeout(r, wait));
+async function getWithRetry(url: string, tries = 4): Promise<Response | null> {
+  let last: Response | null = null;
+  for (let attempt = 0; attempt < tries; attempt++) {
+    try {
+      last = await fetch(url, {
+        headers: { 'User-Agent': UA }, redirect: 'follow', signal: AbortSignal.timeout(45_000),
+      });
+      if (last.ok || (last.status < 500 && last.status !== 429)) return last;
+    } catch (error) {
+      if (attempt === tries - 1) {
+        console.log(`    ! ${new URL(url).host}: ${error instanceof Error ? error.message : String(error)}`);
+        return null;
+      }
+    }
+    const retryAfter = Number(last?.headers.get('retry-after')) * 1000;
+    const wait = Math.min(retryAfter || 1500 * 2 ** attempt, 30_000);
+    console.log(`    ... ${last ? `HTTP ${last.status}` : 'network error'}, retrying in ${(wait / 1000).toFixed(1)}s`);
+    await sleep(wait);
   }
-  return res!;
+  return last;
 }
 
-let lastStatus = 0;
+function decode(value: string): string {
+  try { return decodeURIComponent(value); } catch { return value; }
+}
 
-async function commonsInfo(fileTitle: string): Promise<CommonsInfo | null> {
+/** File title from either a Commons description page or upload URL. */
+export function commonsTitle(sourceUrl: string): string | null {
+  const page = /commons\.wikimedia\.org\/wiki\/(?:File:|File%3A)([^?#]+)/i.exec(sourceUrl);
+  if (page) return decode(page[1]).replace(/_/g, ' ');
+  const upload = /upload\.wikimedia\.org\/wikipedia\/commons\/(?:thumb\/)?[0-9a-f]\/[^/]+\/([^/]+)/i.exec(sourceUrl);
+  return upload ? decode(upload[1]).replace(/_/g, ' ') : null;
+}
+
+async function commonsInfo(title: string): Promise<CommonsInfo | null> {
   const q = new URLSearchParams({
-    action: 'query', format: 'json', titles: `File:${fileTitle}`, prop: 'imageinfo',
+    action: 'query', format: 'json', titles: `File:${title}`, prop: 'imageinfo',
     iiprop: 'url|size|extmetadata', iiurlwidth: '2400', origin: '*',
   });
-  const res = await getWithRetry(`${API}?${q}`);
-  lastStatus = res.status;
-  if (!res.ok) return null;
-  const data = (await res.json()) as { query?: { pages?: Record<string, { imageinfo?: { thumburl?: string; url: string; width: number; height: number; descriptionurl: string; extmetadata?: Record<string, { value: string }> }[] }> } };
-  const page = Object.values(data.query?.pages ?? {})[0];
-  const ii = page?.imageinfo?.[0];
-  if (!ii) return null;
-  const m = ii.extmetadata ?? {};
-  return {
-    url: ii.thumburl ?? ii.url,
-    width: ii.width,
-    height: ii.height,
-    license: strip(m.LicenseShortName?.value) || 'unknown',
-    artist: strip(m.Artist?.value),
-    date: strip(m.DateTimeOriginal?.value),
-    descriptionUrl: ii.descriptionurl,
-  };
+  const res = await getWithRetry(`${COMMONS_API}?${q}`);
+  if (!res?.ok) return null;
+  const data = await res.json() as CommonsApiResponse;
+  const info = Object.values(data.query?.pages ?? {})[0]?.imageinfo?.[0];
+  if (!info) return null;
+  return { url: info.thumburl ?? info.url, license: strip(info.extmetadata?.LicenseShortName?.value) || 'unknown' };
 }
 
-/** File title from a Commons page URL or an upload.wikimedia.org URL. */
-function commonsTitle(sourceUrl: string): string | null {
-  const page = /commons\.wikimedia\.org\/wiki\/File:(.+)$/.exec(sourceUrl);
-  if (page) return decodeURIComponent(page[1]);
-  const upload = /upload\.wikimedia\.org\/wikipedia\/commons\/(?:thumb\/)?[0-9a-f]\/[0-9a-f]{2}\/([^/]+)/.exec(sourceUrl);
-  if (upload) return decodeURIComponent(upload[1]);
-  return null;
+/** Resolve an institution record page to the image it explicitly embeds. */
+async function imageFromHtml(sourceUrl: string): Promise<string | null> {
+  const res = await getWithRetry(sourceUrl, 2);
+  if (!res?.ok || !responseType(res).includes('text/html')) return null;
+  const html = await res.text();
+  const contentImage = /<div[^>]+id=["']contentPage["'][^>]*>[\s\S]*?<img[^>]+src=["']([^"']+)/i.exec(html)?.[1];
+  const socialImage = /<meta[^>]+property=["']og:image["'][^>]+content=["']([^"']+)/i.exec(html)?.[1];
+  const found = contentImage ?? socialImage;
+  if (!found) return null;
+  const resolved = new URL(found.replace(/^http:\/\//i, 'https://'), sourceUrl).href;
+  console.log(`    ... resolved record page to ${resolved}`);
+  return resolved;
+}
+
+async function candidates(entry: ManifestEntry): Promise<{ urls: string[]; license: string }> {
+  const source = entry.source_url!;
+  const title = commonsTitle(source);
+  let license = entry.license ?? 'unknown';
+  // Explicit URLs may also select a page/frame from a multi-page source, so
+  // they intentionally take precedence over the generic source resolver.
+  const urls: string[] = [...(entry.download_urls ?? [])];
+  if (title) {
+    const info = await commonsInfo(title);
+    if (info) {
+      urls.push(info.url);
+      license = info.license;
+      const manifestPD = /public domain|cc0|\bpd\b/i.test(entry.license ?? '');
+      const sourcePD = /public domain|cc0|\bpd\b/i.test(info.license);
+      if (manifestPD !== sourcePD) console.log(`    ! license metadata differs: manifest "${entry.license}", Commons "${info.license}"`);
+    }
+    // Official Commons download route is a fallback when the Action API is unavailable.
+    urls.push(`https://commons.wikimedia.org/wiki/Special:Redirect/file/${encodeURIComponent(title)}?width=2400`);
+  } else if (/\.(?:jpe?g|png|webp|tiff?)(?:\?|$)/i.test(source)) {
+    urls.push(source);
+  } else {
+    const resolved = await imageFromHtml(source);
+    if (resolved) urls.push(resolved);
+  }
+  return { urls: [...new Set(urls)], license };
 }
 
 async function search(query: string) {
   const q = new URLSearchParams({
-    action: 'query', format: 'json', generator: 'search', gsrsearch: `${query} filetype:bitmap`, gsrnamespace: '6', gsrlimit: '10',
-    prop: 'imageinfo', iiprop: 'size|extmetadata', origin: '*',
+    action: 'query', format: 'json', generator: 'search', gsrsearch: `${query} filetype:bitmap`,
+    gsrnamespace: '6', gsrlimit: '10', prop: 'imageinfo', iiprop: 'size|extmetadata', origin: '*',
   });
-  const res = await fetch(`${API}?${q}`, { headers: { 'User-Agent': UA } });
-  const data = (await res.json()) as { query?: { pages?: Record<string, { title: string; imageinfo?: { width: number; height: number; extmetadata?: Record<string, { value: string }> }[] }> } };
-  for (const p of Object.values(data.query?.pages ?? {})) {
-    const ii = p.imageinfo?.[0];
-    const lic = strip(ii?.extmetadata?.LicenseShortName?.value);
-    const date = strip(ii?.extmetadata?.DateTimeOriginal?.value);
-    console.log(`${lic.padEnd(18)} ${String(ii?.width ?? '?').padStart(5)}×${String(ii?.height ?? '?').padEnd(5)} ${date.slice(0, 20).padEnd(20)} https://commons.wikimedia.org/wiki/${encodeURIComponent(p.title.replace(/ /g, '_')).replace(/%3A/, ':')}`);
+  const res = await getWithRetry(`${COMMONS_API}?${q}`);
+  if (!res?.ok) throw new Error(`Commons search failed (${res?.status ?? 'network error'})`);
+  const data = await res.json() as { query?: { pages?: Record<string, {
+    title: string;
+    imageinfo?: CommonsImageInfo[];
+  }> } };
+  for (const page of Object.values(data.query?.pages ?? {})) {
+    const info = page.imageinfo?.[0];
+    const license = strip(info?.extmetadata?.LicenseShortName?.value);
+    const href = `https://commons.wikimedia.org/wiki/${encodeURIComponent(page.title.replace(/ /g, '_')).replace(/%3A/i, ':')}`;
+    console.log(`${license.padEnd(18)} ${String(info?.width ?? '?').padStart(5)}x${String(info?.height ?? '?').padEnd(5)} ${href}`);
   }
 }
 
@@ -120,115 +149,88 @@ if (query) {
   process.exit(0);
 }
 
-interface LockEntry { source_url: string; sha256: string; width: number; height: number; license: string; fetchedAt: string }
-const LOCK_PATH = join(ROOT, 'data/images.lock.json');
+const manifest = JSON.parse(readFileSync(join(ROOT, 'data/images.json'), 'utf8')) as Record<string, ManifestEntry>;
 const lock: Record<string, LockEntry> = existsSync(LOCK_PATH) ? JSON.parse(readFileSync(LOCK_PATH, 'utf8')) : {};
-const saveLock = () => writeFileSync(LOCK_PATH, JSON.stringify(Object.fromEntries(Object.entries(lock).sort(([a], [b]) => a.localeCompare(b))), null, 2) + '\n');
-const sha = (file: string) => createHash('sha256').update(readFileSync(file)).digest('hex');
-
-/** Why an image needs fetching, or null when it is current. */
-function staleReason(path: string, sourceUrl: string): string | null {
-  const file = join(PUBLIC, path);
-  const entry = lock[path];
-  if (!existsSync(file)) return 'missing';
-  if (!entry) return 'not in lock (placeholder?)';
-  if (entry.source_url !== sourceUrl) return 'source_url changed';
-  if (sha(file) !== entry.sha256) return 'file differs from lock';
-  return null;
-}
+const saveLock = () => writeFileSync(LOCK_PATH, `${JSON.stringify(Object.fromEntries(Object.entries(lock).sort(([a], [b]) => a.localeCompare(b))), null, 2)}\n`);
 
 const only = arg('only');
-// --all: fetch every manifest entry with a source_url, no episode needed
-let manifest: Record<string, { source_url?: string; used_in?: string[] }>;
-let key = '';
-if (flag('all') && !only) {
-  manifest = JSON.parse(readFileSync(join(ROOT, 'data/images.json'), 'utf8'));
+let selected: Set<string>;
+if (only) {
+  selected = new Set([only]);
+} else if (flag('all')) {
+  selected = new Set(Object.keys(manifest).filter(path => !path.startsWith('_')));
 } else {
   const ep = loadEpisode();
-  manifest = ep.manifest;
-  key = `${ep.spec.manifestKey}:`;
+  const key = `${ep.spec.manifestKey}:`;
+  selected = new Set(Object.entries(manifest)
+    .filter(([, entry]) => entry.used_in?.some(use => use.startsWith(key)))
+    .map(([path]) => path));
 }
-const targets = Object.entries(manifest).filter(([path, m]) => !!m && (
-  only ? path === only : flag('all') ? !!m.source_url : Array.isArray(m.used_in) && m.used_in.some(u => u.startsWith(key))));
-if (only && !targets.length) throw new Error(`${only} is not in images.json`);
-let ok = 0;
+
+const targets = Object.entries(manifest).filter(([path]) => selected.has(path));
+if (only && !manifest[only]) throw new Error(`${only} is not in images.json`);
+
+let fetched = 0;
 let skipped = 0;
-const problems: string[] = [];
+const errors: string[] = [];
+const warnings: string[] = [];
 
-for (const [path, m] of targets) {
-  if (m.source_url && !flag('force')) {
-    const reason = staleReason(path, m.source_url);
-    if (!reason) {
-      skipped++;
-      continue;
-    }
-    console.log(`  → ${path}: ${reason}`);
-  }
-  if (!m.source_url) {
-    problems.push(`${path}: no source_url. Find one with --search, add source_url/license/credit to images.json, rerun`);
-    continue;
-  }
-  const title = commonsTitle(m.source_url);
-  let url = m.source_url;
-  let license = m.license;
-  if (title) {
-    const info = await commonsInfo(title);
-    if (!info) {
-      problems.push(lastStatus === 200 ? `${path}: Commons has no file "${title}"` : `${path}: Commons API error HTTP ${lastStatus}; rerun`);
-      continue;
-    }
-    url = info.url;
-    license = info.license;
-    const manifestPD = /public domain|cc0|pd/i.test(m.license);
-    const commonsPD = /public domain|cc0|pd/i.test(info.license);
-    if (manifestPD !== commonsPD) problems.push(`${path}: license mismatch: images.json says "${m.license}", Commons says "${info.license}"`);
-  } else if (!/\.(jpe?g|png|webp|tiff?)(\?|$)/i.test(m.source_url)) {
-    problems.push(`${path}: source_url is a web page, not a file (${m.source_url}). Add a direct download URL as source_url or download by hand`);
-    continue;
-  }
-
-  let res = await getWithRetry(url);
-  let type = res.headers.get('content-type') ?? '';
-  // Fallback to Met Museum Open Access on Wikimedia failure
-  if (!res.ok || !type.startsWith('image/')) {
-    const term = path.split('/').pop()?.replace(/\.[^.]+$/, '').replace(/[-_]/g, ' ') ?? '';
-    console.log(`    … trying Met Museum fallback for "${term}"`);
-    const metUrl = await metFallback(term);
-    if (metUrl) {
-      res = await getWithRetry(metUrl);
-      type = res.headers.get('content-type') ?? '';
-    }
-  }
-  if (!res.ok || !type.startsWith('image/')) {
-    problems.push(`${path}: download failed (${res.status} ${type})`);
+for (const [path, entry] of targets) {
+  if (!entry.source_url) {
+    errors.push(`${path}: no source_url`);
     continue;
   }
   const out = join(PUBLIC, path);
-  mkdirSync(dirname(out), { recursive: true });
-  const buf = Buffer.from(await res.arrayBuffer());
-  const tmp = `${out}.download`;
-  writeFileSync(tmp, buf);
-  // normalize to the manifest's extension (JPEG) and verify it decodes
-  try {
-    execFileSync('ffmpeg', ['-y', '-v', 'error', '-i', tmp, '-q:v', '3', '-frames:v', '1', out]);
-    execFileSync('rm', [tmp]);
-    const dims = execFileSync('ffprobe', ['-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=width,height', '-of', 'csv=p=0', out], { encoding: 'utf8' }).trim();
-    const [w, h] = dims.split(',').map(Number);
-    if (w < 1280) problems.push(`${path}: only ${dims} (soft on a 1920 frame)`);
-    console.log(`  ✓ ${path}  ${dims}  ${(buf.length / 1024).toFixed(0)} KB`);
-    lock[path] = { source_url: m.source_url, sha256: sha(out), width: w, height: h, license, fetchedAt: new Date().toISOString() };
-    saveLock(); // after every success, so an interrupted run resumes
-    ok++;
-  } catch {
-    problems.push(`${path}: downloaded file does not decode as an image`);
+  const old = lock[path];
+  if (!flag('force') && existsSync(out) && old?.source_url === entry.source_url && sha(out) === old.sha256) {
+    skipped++;
+    continue;
   }
-  await new Promise(r => setTimeout(r, 800)); // be polite to Commons
+
+  console.log(`  -> ${path}`);
+  const resolved = await candidates(entry);
+  let response: Response | null = null;
+  let usedUrl = '';
+  for (const url of resolved.urls) {
+    response = await getWithRetry(url);
+    if (isImageResponse(response)) { usedUrl = url; break; }
+    console.log(`    ... unusable ${new URL(url).host} response (${response?.status ?? 'network'} ${responseType(response)})`);
+  }
+  if (!isImageResponse(response)) {
+    errors.push(`${path}: all exact sources failed${resolved.urls.length ? ` (${resolved.urls.map(url => new URL(url).host).join(', ')})` : ''}`);
+    continue;
+  }
+
+  mkdirSync(dirname(out), { recursive: true });
+  const bytes = Buffer.from(await response!.arrayBuffer());
+  const temp = `${out}.download`;
+  writeFileSync(temp, bytes);
+  try {
+    execFileSync('ffmpeg', ['-y', '-v', 'error', '-i', temp, '-q:v', '3', '-frames:v', '1', out]);
+    const dimensions = execFileSync('ffprobe', [
+      '-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=width,height', '-of', 'csv=p=0', out,
+    ], { encoding: 'utf8' }).trim();
+    const [width, height] = dimensions.split(',').map(Number);
+    if (!Number.isFinite(width) || !Number.isFinite(height)) throw new Error('ffprobe returned no dimensions');
+    if (width < 1280) warnings.push(`${path}: only ${dimensions} (soft on a 1920 frame)`);
+    console.log(`  OK ${path}  ${dimensions}  ${(bytes.length / 1024).toFixed(0)} KB via ${new URL(usedUrl).host}`);
+    lock[path] = {
+      source_url: entry.source_url, sha256: sha(out), width, height,
+      license: resolved.license, fetchedAt: new Date().toISOString(),
+    };
+    saveLock();
+    fetched++;
+  } catch (error) {
+    errors.push(`${path}: downloaded file does not decode (${error instanceof Error ? error.message : String(error)})`);
+  } finally {
+    if (existsSync(temp)) unlinkSync(temp);
+  }
+  await sleep(250);
 }
 
-// stale lock entries (image removed from the manifest) are pruned
-for (const path of Object.keys(lock)) if (!ep.manifest[path]) delete lock[path];
+for (const path of Object.keys(lock)) if (!manifest[path]) delete lock[path];
 saveLock();
-console.log(`\n${ok} fetched, ${skipped} already current, ${targets.length - ok - skipped} not fetched (of ${targets.length})`);
-for (const p of problems) console.log(`  ! ${p}`);
-console.log('\nNext: check each image still matches its focus regions (images.json `focus`, set verified: true), then npm run validate.');
-process.exit(problems.some(p => !p.includes('soft on')) ? 1 : 0);
+console.log(`\n${fetched} fetched, ${skipped} already current, ${errors.length} failed (of ${targets.length})`);
+for (const warning of warnings) console.log(`  ! ${warning}`);
+for (const error of errors) console.error(`  ERROR ${error}`);
+if (errors.length) process.exitCode = 1;

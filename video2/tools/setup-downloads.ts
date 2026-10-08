@@ -103,12 +103,13 @@ function images() {
     for (const [file, e] of Object.entries(manifest)) if (!file.startsWith('_') && e.source_url) console.log(`  ${file}  ←  ${e.source_url}`);
     return;
   }
-  const npx = process.platform === 'win32' ? 'npx.cmd' : 'npx';
-  try {
-    execFileSync(npx, ['tsx', 'tools/fetch-images.ts', '--all', ...(force ? ['--force'] : [])], { cwd: ROOT, stdio: 'inherit', shell: process.platform === 'win32' });
-  } catch (e) {
-    console.log('  ⚠ image fetch failed (rate-limited?) — continuing without images. Re-run with --only images later.');
-  }
+  // Use the installed CLI through Node: cross-platform, no shell quoting, and failures
+  // propagate so setup cannot claim success after downloading nothing.
+  const tsxCli = join(ROOT, 'node_modules', 'tsx', 'dist', 'cli.mjs');
+  execFileSync(process.execPath, [tsxCli, 'tools/fetch-images.ts', '--all', ...(force ? ['--force'] : [])], {
+    cwd: ROOT,
+    stdio: 'inherit',
+  });
 }
 
 if (!only || only === 'fonts') await fonts();

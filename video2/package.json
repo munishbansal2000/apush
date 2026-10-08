@@ -3,6 +3,10 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "pipeline": "tsx tools/video-pipeline.ts",
+    "pipeline:dev": "tsx tools/video-pipeline.ts --mode dev",
+    "pipeline:prod": "tsx tools/video-pipeline.ts --mode prod",
+    "setup:pipeline": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/setup-pipeline.ps1",
     "build:turns": "tsx tools/build-turns.ts",
     "build:tts": "tsx tools/build-tts.ts",
     "build:timing": "tsx tools/build-timing.ts",
