@@ -44,3 +44,60 @@
 - Length (13 min) — does it earn it?
 - The "Maya: So the 'fire' was people, not buildings. Checking that one." merged turn — does the checkoff still land?
 - Any framing flattening in the Garrison-vs-colonization comparison (both-sides check).
+
+# U4-E11 Changelog — v2 → v3 (2026-10-08, fleet repair)
+
+## Corrections to the v2 changelog entry (do not repeat)
+- **Gate claim was false.** The v2 entry claimed "All 13 gates PASS: …G9 (1 antithesis)". Live re-run of `apush-script-gates.py --minutes 13` on the v2 file: **FAIL — G9 antithesis budget < 3** (3 gate hits: L52, L100, L154), i.e. v2 was 12/13, not 13/13. The gate's ", not"-family regex misses the isn't-form (L40) and the didn't-form (L150), so the true manual count was 5 antitheses, not the 1 the entry claimed.
+- **"Kept as the single G9 antithesis" was false.** Five antitheses existed in v2 (L40, L52, L100, L150, L154); the Mormon confusion-correction was one of five, not the single one.
+- **"Maya's knows-something: the Oneida silverware connection" was false.** In v2 MARCUS delivered the silverware line (`Marcus: [conversational] Your grandmother's silverware drawer.`); Maya only recognized the name. v3 makes the beat real — Maya lands it herself (see below).
+- **Stale numbers.** The v2 entry reported "2,097 spoken words"; the gate's live count on the v2 file is 2,107. v3 reports only live-run numbers below.
+
+## Accuracy fixes (auditor findings 1–4)
+1. **Mormon burned-over-district claim hedged + antithesis removed.** Before: `Marcus: [measured] Utah is where they ended up, not where they started. Joseph Smith's conversion happened in the burned-over district itself.` After: `Marcus: [measured] Utah's where the journey ends. The beginning is back east, in upstate New York, the region that came to be called the burned-over district.` (Tier-1 premium2027 only places the 1830 founding in upstate New York; the burned-over-district link is synthesis — now hedged in dialogue, and the ", not" antithesis is gone.)
+2. **Cane Ridge color hedge voiced in dialogue.** Before: `Marcus: [measured] August, eighteen oh-one. The Presbyterian minister Barton Stone called a communion gathering at his little church in Bourbon County, Kentucky.` After: `Marcus: [measured] Eighteen oh-one. The histories tell it this way: in August, the Presbyterian minister Barton Stone called a communion gathering at his church in Bourbon County, Kentucky.` (The month, communion framing, and wagons/tents color are standard-history detail beyond Tier-1/2 — the hedge is now spoken, not just footered. Sources footer updated to note this.)
+3. **Finney quote splice marked with ellipsis (both occurrences).** 5steps2024 Day55 gives "…oppose the influence of the gospel, **that** it is necessary to raise an excitement among them, till the tide rises so high as to sweep away the opposing obstacles." v2 started the quote mid-sentence at "It is necessary" with no marker. Before (exposition + self-test Q1): `"It is necessary to raise an excitement among them, till the tide rises so high as to sweep away the opposing obstacles."` After (both): `"…that it is necessary to raise an excitement among them, till the tide rises so high as to sweep away the opposing obstacles."` Sources footer quote line corrected to match.
+4. **Maya's "not a miracle" line reworded off the reported-not-verified phrasing.** Before: `Maya: [conversational] So a revival isn't a miracle. It's a method.` (echoed the F-U4-044 reported-not-verified wording the v2 entry claimed was "REPLACED" — it wasn't). After: `Maya: So a revival gets made. It's a technique.` (Also kills antithesis #14.)
+
+## Voice fixes (auditor findings 5–10)
+5. **Mirror pair broken.** Before: Maya `And the abolitionist fire was Black-led before Garrison ever set type. David Walker's Appeal was already circulating.` → `Marcus: [measured] Already circulating. Garrison drew on that fire.` After: `Marcus: It was. Garrison drew on that fire.` (same beat, no echo).
+6. **Tag + antithesis on the burned-over check-in.** Before: `Maya: [confident tone] So the "fire" was people, not buildings. Checking that one. The Awakening: ...` (Marcus just said "Wrong fire" — she should be sheepish, not confident). After: `Maya: [sheepish] I pictured flames. "Burned-over" is a metaphor: revival heat, person after person converted. That's box one: Cane Ridge, Finney's method, salvation as human work, the burned-over district. ...` This is the ONE kept mid-episode check-in (see 9).
+7. **Genuine questions re-tagged.** `Maya: [conversational] How many thousands? I've seen twenty thousand.` → `[curious, inquisitive tone]`; `Maya: [conversational] What else? People don't fill the woods for theology alone.` → `[curious, inquisitive tone]`.
+8. **Feed lines earned.** Before: `Maya: [conversational] Give me the exam-tip version.` After: `Maya: Wait, I thought reform was separate from the Awakening. What's the exam-tip version?` (wrong assumption first, then the ask). Before: `Maya: [curious, inquisitive tone] When did the women in the movement get their turn?` After: `Maya: The movement's all men. Women must have waited until after the war for their turn.` (stakes a position; Marcus corrects with the 1840 London beat).
+9. **Four mid-episode check-ins → one.** Kept (reworked): the box-1 check-in (finding 6). Replaced with natural bridges: box-2 wrap → the Dix/Mann live trap (finding 12); box-3 wrap → the transcendentalist live trap (finding 13); box-4 wrap → `Maya: The freedom fight: Garrison's immediatism, the Liberia plan it beat out, and Seneca Falls, eighteen forty-eight, where the women's movement gets born.` Checkoffs live in the recap and the closing "Check your four boxes." only.
+10. **Mid-turn fragments folded.** `Two hundred years of tradition. I'm telling her.` → `Two hundred years of tradition, and I'm telling her.`; Marcus's one-word `Silverware.` micro-turn folded into `...dissolved into a joint-stock company making silverware.`; recap `Finney's method: revivals get made.` / `Salvation as human work.` → `Finney's method, because a revival gets made; salvation as human work;`; `The burned-over district: western New York, revival fire, not real fire.` → `the burned-over district, western New York, where revival after revival burned through the population.` Micro-turns: 7 (all ≤4-word turns; cap is 8).
+
+## Announcer traps → live traps or cut (auditor findings 11–13)
+11. **CUT.** Before: `Marcus: [firm] Two hundred years and counting. One exam trap before we move on: don't pin Cane Ridge at some exact headcount. The estimates swing. "Thousands" is the safe word.` Redundant with the live headcount beat ("How many thousands? I've seen twenty thousand." → "Nobody counted, and nobody's fully sure."). Removed entirely; a short Marcus bridge (`Two centuries on, and it's still going.`) carries the transition.
+12. **Live trap.** Before: `Marcus: [measured] And don't cross your reformers. Mann is schools, Dix is asylums.` After: `Maya: Perfectionism, temperance. Then Dix's common schools and Mann with the asylums.` / `Marcus: Careful, you crossed them. Mann is schools, Dix is asylums.` (Maya makes the mix-up; Marcus catches her in flow.)
+13. **Live trap.** Before: `Marcus: [measured] Don't file the transcendentalists under "reformers." They mostly sat the movements out. A lot of students blow that one.` After: `Maya: So the seekers box: Brook Farm, Oneida, the Mormons trekking west, and the transcendentalists, the biggest reformers of the bunch.` / `Marcus: Not quite. The transcendentalists mostly sat the movements out; Emerson and Thoreau were busy perfecting the self.` (Maya files them under reformers; Marcus catches her.)
+
+## Antitheses: 5 → 0 (auditor findings 14–18; G9 budget ≤2 strictly)
+14. `So a revival isn't a miracle. It's a method.` → `So a revival gets made. It's a technique.` (finding 4)
+15. `So the "fire" was people, not buildings.` → `I pictured flames. "Burned-over" is a metaphor: revival heat, person after person converted.` (finding 6)
+16. `Utah is where they ended up, not where they started.` → `Utah's where the journey ends. The beginning is back east, in upstate New York, the region that came to be called the burned-over district.` (finding 1)
+17. `Seventy years. Seneca Falls didn't win the vote. It launched the movement that did.` → `Marcus: [measured] The vote took seventy more years. Seneca Falls launched the movement that won it.` (also removes the "Seventy years." fragment)
+18. `The burned-over district: western New York, revival fire, not real fire.` → `the burned-over district, western New York, where revival after revival burned through the population.` (finding 10)
+
+## Triples (auditor finding 15)
+- No new stylistic triples introduced. The earned chain stays: `If the soul, why not the saloon, the school, the asylum, the cell?`
+- W2 fires on 3 content lists — all inherent threeness per §4.4 (the facts are three), kept with intent: temperance "drink is the root of poverty, crime, and wrecked families"; the seekers-box list (Brook Farm, Oneida, Mormons, transcendentalists); the freedom-fight box list. A first-draft rework of the "no ticket" line introduced a W2-pattern hit (`, X, and `); reverted to v2's three-sentence structure.
+- Oneida beat: `Marcus: [conversational] Your grandmother's silverware drawer.` → `Maya: And Oneida? I know that name. The silverware company? My grandmother's drawer?` / `Marcus: You know it. The commune came first; the silverware company came later.` / `Maya: Seriously? A utopian commune became a silverware company?` — Maya now owns the silverware connection, so the "knows-something" beat is real (corrects the v2 entry's false claim).
+
+## Direction density (auditor finding 16 — error)
+- 81 of 93 turns tagged (87.1%) → **37 of 93 (39.8%)**, ≤40% cap. One tag per turn max.
+- Preserved/extended fleet mapping: cold open + closer sign-off `[professional broadcast tone]`; Maya genuine questions `[curious, inquisitive tone]`; Maya caught-wrong `[sheepish]` ×2 (burned-over fires, Dix/Mann cross); takeaway `[confident tone]` on "Check your four boxes."; self-test zero tags; no broadcast tone in body; no paralanguage/emphasis; Marcus body tags all `[measured]` (18) + one `[serious tone]` (the "nobody's fully sure" headcount beat).
+
+## Mechanical verification (apush-script-gates.py --minutes 13, live run 2026-10-08)
+- **13/13 PASS** (G1–G13). WARNs dismissed with intent: W1 (2× "it is" — both inside the verbatim Finney quote; W1 never applies inside quotation marks); W2 (3 content-list triples above — inherent threeness per §4.4).
+- 2,112 spoken words (pause tags stripped) ≥ 1,440 floor; 162 WPM ≤ 180 cap. Header / cold-open promise (13 min) / actual agree: 2,112 words at ≤180 WPM + 74 s scripted pauses = **~12:58 experienced runtime**.
+- Micro-turns: 7 (≤8). Marcus turns: none >100 words. Maya lines ending in "?": 35% (≤60%). Pauses unchanged: 2× 9 s prediction, 3× 17 s CER self-test, 1× 5 s labeled bonus. Exactly one "next time." All four ritual lines present once each. Em-dashes in dialogue: 2 (closer only; ≤10).
+- G12: no known falsehoods vs registry. (F-U3-037's G12 pattern did not fire — no 1763 lines in this episode.)
+
+## Registry
+- No new registry entries: all v3 changes are framings, hedges, and voice repairs — no factual corrections. `apush-fact-registry.yaml` re-verified parsing clean (no edits made).
+
+## Open for the fresh re-read (Layer 2)
+- The box-1 kept check-in is long (Maya's sheepish correction + full box list + aunt human-moment in one turn) — does it still land as one beat?
+- Two consecutive Maya turns at the box-4 → recap seam (bridge line, then "Four boxes, let's land them.") — precedented in v2, but ear-check it.
+- The Dix/Mann and transcendentalist live traps: do Maya's wrong statements read as confident-human rather than staged?

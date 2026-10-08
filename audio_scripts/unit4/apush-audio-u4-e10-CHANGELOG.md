@@ -49,3 +49,61 @@ Dignity guardrails for the somber material: no cute openers, no levity beats any
 ## Open for Layer 2 / Layer 3
 - The 1839 killings, Worcester's pardon mechanics, and the Tahlequah/1839-constitution details are corroborated outside the frozen Tier 2 — flagged in Sources; a stricter read may want them softened further.
 - Word count is at the high end of the target band (2,150); the density is the disclosures + verdict work, not padding.
+
+---
+
+## v3 repairs (2026-10-08, fleet repair program — 15 audit findings applied)
+
+**C1/C2 correction first:** the v2 changelog entry above contains two false claims that this entry corrects. It said "Gates re-run: 13/13 PASS (2,137 words, 164 WPM)" — the real v2 result was 12/13 (G9 antithesis FAIL), 2,143 words, 165 WPM. It also said "2,150 → 2,137 spoken words" — the v2 header reads 2143. Neither figure is repeated here; v3 reports only live-run numbers below. The old entries are left untouched.
+
+### ACCURACY (A1–A6)
+- **A1 (contested "America's first gold rush"):** before — "Gold. In 1829, gold was found on Cherokee land around Dahlonega, Georgia: America's first gold rush." → after — "Gold. In 1829, gold was found on Cherokee land around Dahlonega, Georgia. Some call the Dahlonega strike America's first gold rush — North Carolina claims 1799, and the argument never quite ends." (claim now attributed/debated, not flattened)
+- **A2 (unsupported plural "printing presses"):** before — "They farmed, ran schools, owned printing presses." → after — "They farmed, and their schools were full. A Cherokee newspaper and print shop turned out page after page." (singular per NPS New Echota: "a national newspaper and print shop"; also breaks the TR1 stylistic triple)
+- **A3 ("every road" overclaim):** before — "People still died on every road." → after — "People still died on many of those roads."
+- **A4 (unsourced superlative):** before — "Say it plainly: this was about some of the richest farmland in the South." → after — "Say it plainly: Georgia's leaders saw some of the richest farmland in the South, and they wanted it." (now Georgia's leaders' perception, not the script's fact)
+- **A5 (closer "took everything" overclaim):** before — "The Cherokee did everything the republic said it valued, and the republic took everything anyway." → after — "The Cherokee did everything the republic said it valued, and the republic took their land anyway." (the Nation rebuilt at Tahlequah and endures — "everything" was false)
+- **A6 (supreme court precision):** before — "Their capital, New Echota, Georgia, had its own council house, courthouse, and supreme court." → after — "Their capital, New Echota, Georgia, had its own council house and courthouse, where its supreme court met." (per NPS: the court met IN the courthouse)
+
+### VOICE (V1–V4)
+- **V1 (fragments, §4.10):** six mid-turn fragments integrated into full sentences —
+  - "Not a state: a nation inside land Georgia claimed." → "They were a nation standing on land Georgia claimed for itself, and that collision is the whole fight." (also fixes the antithesis)
+  - "For living there. Without asking Georgia first." → "He was sentenced for living on Cherokee land without asking Georgia's permission."
+  - "Van Buren." (in "Okay. Van Buren. Going in my notes with a star.") → "Okay, Van Buren goes in my notes with a star."
+  - "The knock. Minutes to decide what a whole life fits into — that's the part I keep coming back to." → "That knock at the door is the part I keep coming back to. Minutes to decide what a whole life fits into."
+  - "Minutes. Families were herded into stockades…" → "They had minutes. Then families were herded into stockades, open-walled prison camps, through a brutal summer."
+  - "Nobody. And that's the verdict." → "No clean heroes anywhere in this story. And that's the verdict."
+- **V2 (identical "Then came" transitions):** kept "What landed next hit like a thunderclap." (reworded off the shared construction) for Worcester; the treaty transition moved to Maya's voice per §6 ("So winning in court changed nothing. What came next was the paper that made it all "legal.""), replacing Marcus's "Then came the paper that made it all "legal.""
+- **V3 (identical "Hold that" reactions):** kept "Hold that thought — it's about to matter."; the Ridge-question reaction changed from "Hold that question." → "I hear you. Ross would have made your argument. Here's what followed:"
+- **V4 (announcer voice):** before — "No. And that's a mistake I see in essays all the time." → after — "Not quite — that's exactly the mix-up to watch for. The Act authorized negotiation. The marches came eight years later, under a treaty most Cherokee called a fraud." (Maya makes the live mistake; Marcus corrects in flow, no essay reference)
+
+### TRIPLES (TR1 — L7 kept as the earned chain)
+- **KEPT:** "The Cherokee had written a constitution. They'd started a newspaper. They'd won in the Supreme Court." (carries the central paradox)
+- **Broken:** "They farmed, ran schools, owned printing presses." (see A2); "their businesses outlawed, their contracts void, their testimony barred in court against any white person." → "the state outlawed their businesses and voided their contracts — and barred any Cherokee from testifying in court against a white person."; "It was policy: a law passed, a treaty ratified, courts heard." → "It was policy: Congress passed the law and ratified the treaty, and the courts heard the case through to the end."; "A court victory nobody enforced. A treaty nobody agreed to. "Voluntary" emigration at bayonet point." → "a court victory means nothing when nobody enforces it. The Nation never agreed to that treaty — and "voluntary" emigration at bayonet point was the official story."
+- **Kept as inherent threeness (content, allowed):** the three 1839 victims' names; recap box-1 item list; the 1821/1827/1828 timeline; "Disease, exposure, hunger, exhaustion."
+
+### TAGS (TG1 — 86% → ~25%)
+- Cut from 49/57 tagged (86%) to 16 of 64 turns tagged (~25%), under the ~40% cap. Dropped: all `[measured]` body tags, all `[conversational]` body tags (all were body defaults, kept zero).
+- Mapping preserved/extended per the catalog: cold open `[professional broadcast tone]`; Maya's genuine questions `[curious, inquisitive tone]` (10 turns); takeaways `[confident tone]` (verdict + recap); grim turn `[serious tone]` (the ~4,000 dead); self-test zero tags (unchanged); paralanguage 0; `[emphasis]` 0.
+- `[sheepish]` added to Maya's three caught-wrong beats: "So they were basically a state?", "So the Act ordered the Trail of Tears?", "Wait — I thought Jackson—" (was `[incredulous]`).
+- Closer tease `[intrigued]` → `[professional broadcast tone]` per the catalog's sign-off rule ("Next time, a different kind of fire…").
+
+### ANTITHESIS (G9 — 5 found, all reworked, 0 remain)
+- "Not a state: a nation inside land Georgia claimed." → "They were a nation standing on land Georgia claimed for itself, and that collision is the whole fight."
+- "hold it as an estimate, not a headcount." → "so treat it as an estimate."
+- "The Act authorized deals, not forced marches. Don't mix that up." → "The Act authorized land-swap deals. The marches came later, under the treaty. Don't mix that up."
+- "removal in 1838 under Van Buren, not Jackson." → "removal in 1838 under Van Buren, with Jackson already out of office."
+- "Grade the evidence, not your gut." → "Grade the evidence, then decide."
+- Borderline denials left alone per the audit (L36 "Not a foreign country, not fully subject to the states either."; "Don't picture Jackson marching anyone anywhere in 1838.").
+- **One more the auditor missed (repair worker's own catch):** self-test Q3's ""Fewer lives" misses it: … The comparison isn't about efficiency. It's about what each choice reveals." was a genuine "isn't X. It's Y." sentence-form antithesis → "The comparison measures something else entirely: what each choice reveals." Final antithesis count: 0.
+
+### Verification (live numbers, this run)
+- Gates: **13/13 PASS** (`apush-script-gates.py apush-audio-u4-e10-script-v3-DRAFT.md --minutes 13`, exit 0; G9 now passes). Two warnings kept with intent: W2 (the three 1839 victims — inherent threeness, same class as v2's kept content lists) and W5 ('exactly' 2x: "Exactly." acknowledgment + "exactly the mix-up" trap correction — warning only, both natural).
+- G12 passed; F-U3-037 did not fire on any v3 line (no accurate line was touched to satisfy it).
+- Words: 2,143 (v2) → **2,233** (v3, gate count). Runtime: 2233/180 = 744.3s speech + 61s scripted pauses = 805.3s ≈ **13.4 min experienced**; cold-open promise "About thirteen minutes, pauses included" still matches real math. WPM at 13 min: 172 (≤180 cap). Header, promise, and count agree.
+- Direction density: 16/64 turns tagged (~25%); one tag per turn max; tags never changed words.
+- Three mandated disclosures intact in dialogue: the "enforce it" line (may be legend), Burnett's contested 1890 account, Quatie's blanket (family tradition). Prediction beat, CER pauses (15/18/20s), and the 8s prediction pause unchanged. No rendering, no push.
+- Registry: `apush-fact-registry.yaml` parses clean; **no new entries** — all six A-findings were framings/hedges/attributions, not factual corrections.
+
+### Open for re-read
+- Fresh Layer-2 re-read still pending before lock (this repair worker did not re-read the full script against §§1–9, only the 15 findings).
+- Em-dash count sits at 9 in dialogue vs the 10 hard cap (G8 passes) — tight but legal; the re-read should confirm none feel forced.

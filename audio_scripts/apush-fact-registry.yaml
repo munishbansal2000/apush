@@ -389,14 +389,31 @@ facts:
   - norris
 - id: F-AOC-004
   topic: Northwest Indian War sequence
-  correct: Little Turtle's confederacy destroyed Harmar's army (1790) and St. Clair's
-    army at the Wabash (1791, 600+ killed — worst US Army defeat at Native hands);
-    Wayne won at Fallen Timbers (1794); Treaty of Greenville (1795) ceded most of
-    Ohio. Keep the sequence in chronological order.
-  falsehoods: []
+  correct: 'Little Turtle''s confederacy ROUTED Harmar''s army (1790) and destroyed
+    St. Clair''s army at the Wabash (1791, 600+ killed — worst US Army defeat at Native
+    hands); Wayne won at Fallen Timbers (1794); Treaty of Greenville (1795) ceded most
+    of Ohio. Keep the sequence in chronological order. (Britannica, Little Turtle:
+    "In 1790 he routed Gen. Josiah Harmar''s poorly trained militia. The next year he
+    decimated the better-prepared expeditionary force of Gen. Arthur St. Clair.")'
+  falsehoods:
+  - destroyed two american armies
   sources:
   - prem27
-  - web
+  - britannica
+- id: F-AOC-005
+  topic: Shays' Rebellion scale — hundreds, not thousands; Shays a veteran, rank unverified
+  correct: 'Shays'' Rebellion (1786-87): HUNDREDS of farmers rose (not thousands), led
+    by Daniel Shays, a Continental Army VETERAN. Do not give Shays the rank of captain
+    or scale the rising to thousands without a quoted Tier-1 line — premium2027:
+    "hundreds of Massachusetts farmers, led by veteran Daniel Shays"; 5steps2024:
+    "a veteran of the Continental Army" leading "hundreds of protestors."'
+  falsehoods:
+  - thousands of farmers
+  - captain daniel shays
+  - captain named daniel shays
+  sources:
+  - prem27
+  - 5steps
 - id: F-RAT-001
   topic: Federalist Papers authorship — Hamilton wrote most
   correct: '85 Federalist essays under the Publius pseudonym (Oct 1787–Aug 1788, aimed
@@ -903,7 +920,9 @@ facts:
     strain — seeds from Trinidad (Nicotiana tabacum), not the harsh native leaf. Dates
     and shipment figures beyond this (e.g. 1613 samples, 1617/1618 poundage) are outside
     Tier 1–2 sources and stay hedged out of the script.
-  falsehoods: []
+  falsehoods:
+  - sweet-scented strain
+  - rolfe's sweet-scented
   sources:
   - prem27
   - nps
@@ -1082,7 +1101,9 @@ facts:
     past Japan, catch the westerlies — the tornaviaje. After the 1580s, Ming tax reforms
     (Single Whip) letting families pay taxes in silver drove China''s silver hunger.
     By most accounts the merchants in Manila and Mexico City kept most of the profit
-    — not Madrid. Keep the profit share attributed.'
+    — not Madrid. Keep the profit share attributed. (2026-10-07 fleet-repair note:
+    U1-E5 v6 hedged the script to ''took their cut'' — no Tier-1 source for ''most
+    of the profit''; teach the hedge, not the strong claim.)'
   falsehoods:
   - silk sailed west.{0,30}silver sailed east
   - manila galleons.{0,30}silver.{0,20}sailed east
@@ -1163,6 +1184,9 @@ facts:
   sources:
   - web
   - prem27
+  tier_note: 'Corrected U2-E1 v6 2026-10-07 (audit M5) — v5 taught "dozens of finer
+    slices"; dialogue now reads "a full casta series ran to sixteen named mixtures"
+    per the sixteen-scene series.'
 - id: F-U1-042
   topic: Hacienda debt peonage — technically free, bound by debt
   correct: 'By about 1600 the hacienda — a large self-sufficient rural estate — rose
@@ -1264,15 +1288,21 @@ facts:
   - prem27
   - britannica
 - id: F-U1-050
-  topic: Popé's fall and death — deposed, reelected 1688, died 1692 (NOT ~1688)
-  correct: After the revolt Popé's authority collapsed within a few years (drought,
-    enemy raids, internal dissension — Britannica). He was REELECTED Pueblo leader
-    in 1688 and died not long after; Britannica gives his death as 1692. He did NOT
-    rule the whole twelve years of Pueblo self-rule.
+  topic: Popé's fall and death — deposed within a few years, died 1692 (NOT ~1688).
+    1688 re-election pin WITHDRAWN 2026-10-07 (no Tier-1/2 source)
+  correct: 'After the revolt Popé''s authority collapsed within a few years (drought,
+    enemy raids, internal dissension — Britannica). He did NOT rule the whole twelve
+    years of Pueblo self-rule. Britannica (Tier 2): ''Popé (died 1692, San Juan Pueblo
+    New Spain [now in New Mexico, U.S.]) was a Tewa Pueblo who led an all-Indian revolt
+    in 1680...'' WITHDRAWN 2026-10-07 (U1-E8 v7 repair): the ''re-elected in 1688'' pin
+    taught in v6 has no Tier-1 or Tier-2 source — Britannica''s entry mentions neither
+    deposition nor re-election, and the books are silent on his post-revolt fate. Teach
+    only: deposed within a few years, records go quiet, died 1692.'
   falsehoods:
   - popé.{0,30}died.{0,20}1688
   - popé led the pueblos for twelve years
   - popé ruled.{0,20}twelve years
+  - popé.{0,40}re-?elected.{0,20}1688
   sources:
   - britannica
 - id: F-U1-051
@@ -1339,17 +1369,22 @@ facts:
   - web
 - id: F-U1-056
   topic: Post-revolt reforms — public defender, land grants, tolerated ceremonies
-  correct: 'After the revolt Spain ruled differently: a public defender was appointed
-    to protect Pueblo rights in Spanish courts, each Pueblo family was granted land
-    under Spanish law, and Pueblo cultural practices/ceremonies were tolerated (premium2027,
-    Tier 1). Princeton (Tier 1): the Spanish were ''more accommodating... the fear
-    of continued conflicts driving the need for compromise.'' Frame as fear, not kindness.'
+  correct: 'After the revolt Spain ruled differently: ''A public defender was appointed
+    with the responsibility of protecting the rights of the Pueblo people'' (premium2027
+    ch4, Tier 1); the Spanish issued substantial land grants to each Pueblo — community-level
+    grants, NOT per-family plots (web-tier account: ''the Spanish issued substantial land
+    grants to each Pueblo''); Pueblo ceremonies were tolerated. Princeton (Tier 1): the
+    Spanish were ''more accommodating... the fear of continued conflicts driving the need
+    for compromise.'' Frame as fear, not kindness. CORRECTED 2026-10-07 (U1-E8 v7 repair):
+    the ''each Pueblo family was granted land'' framing had no Tier-1 book line behind it.'
   falsehoods:
   - spain returned kinder
   - the spanish came back.{0,30}(kinder|gentler)
+  - each pueblo family.{0,40}land
   sources:
   - prem27
   - princeton
+  - web
 - id: F-U1-057
   topic: Otermín's account — no "journal"
   correct: Governor Antonio de Otermín left reports/testimony of the 1680 collapse,
@@ -1373,6 +1408,33 @@ facts:
   - 5steps
   - prem27
   - britannica
+- id: F-U1-059
+  topic: African states' role in the transatlantic slave trade — no passive-voice
+    erasure
+  correct: 'African kingdoms and traders sold captives to Portuguese ships on the
+    Atlantic sugar-island model (Sao Tome). The Portuguese did not round up the captives
+    themselves: "Africans and Europeans had been enslaving and trading Africans for
+    centuries" (prem27). Name the African actors — never teach the Middle Passage with
+    the captives as mere cargo the Europeans seized.'
+  falsehoods:
+  - portuguese.*(rounded up|captured|seized).*captives.*(themselves|alone)
+  - middle passage.*only.*(the portuguese|european).*actor
+  sources:
+  - prem27
+- id: F-U1-060
+  topic: Encomienda's end — old grants lived out their terms; the repartimiento
+    replaced the system
+  correct: 'The New Laws'' inheritance ban was revoked after the encomendero revolt,
+    so existing grants lived out their terms — but no new encomiendas worked that way:
+    "By 1550, Spain abandoned the encomienda system" and "replaced the encomienda
+    system with the repartimiento system" (prem27). "The grant survived" (old grants)
+    and "the old system was done" (by 1550) are both true; teach the reconciling step,
+    never the flat contradiction.'
+  falsehoods:
+  - grants survived.*(so|therefore|and).*encomienda.*(continued|kept running|unchanged)
+  - the crown dropped the ban.*nothing changed
+  sources:
+  - prem27
 - id: F-U2-001
   topic: 1629 Charter of Freedoms and Exemptions — patroon grants
   correct: '1629 Charter of Freedoms and Exemptions: any company member settling 50
@@ -1682,6 +1744,8 @@ facts:
   falsehoods:
   - penn.*held no slaves
   - penn.*never.*enslaved
+  - pennsylvania had no slavery
+  - pennsylvania never had slaves
   sources:
   - web
 - id: F-U2-028
@@ -1766,8 +1830,11 @@ facts:
   topic: Navigation Acts 1651/1660/1663 — three-act structure
   correct: 'Three key Navigation Acts: 1651 (first, aimed at the Dutch — English trade
     on English ships); 1660 (restored monarchy — the enumerated list, tobacco-led,
-    shipped to England only, English ships and mostly-English crews); 1663 Staple
-    Act (European goods for the colonies must pass through an English port first).'
+    shipped to England only, English ships and mostly-English crews); 1663
+    (European goods for the colonies must pass through an English port first).
+    Fail-closed note (2026-10-07): the 1663 act''s common "Staple Act" label is NOT
+    attested in the three extracted Tier-1 books — scripts teach the 1663 content
+    without the name until a Tier-1/2 source line is quoted.'
   falsehoods:
   - the navigation act.*1651.*enumerated
   - staple act.*1660
@@ -1846,7 +1913,10 @@ facts:
   correct: 'Adam Smith''s actual words (Wealth of Nations, 1776, Book IV ch. 3): ''Nothing,
     however, can be more absurd than this whole doctrine of the balance of trade.''
     Public domain. May be quoted verbatim with disclosure; 1776 is the exam hook (economic
-    case against mercantilism lands the same year as the political case).'
+    case against mercantilism lands the same year as the political case).
+    Source-trace note (2026-10-07): the verbatim wording is NOT carried in the three
+    extracted Tier-1 books — it is public-domain primary text, registry-attested verbatim;
+    scripts keep the in-dialogue "his actual words" disclosure.'
   falsehoods:
   - nothing.{0,30}absurd.{0,30}balance of trade.{0,30}(paraphrase|rewording)
   sources:
@@ -2031,7 +2101,8 @@ facts:
     the British Parliament''; the elected lower house''s powers included the ''power
     of the purse'' (control over government salaries and tax legislation); the upper
     house was appointed and advised the governor. Use for the ''little parliament''
-    framing — the book''s words are ''modeled after,'' not ''little parliaments.'''
+    framing — the book''s words are ''modeled after,'' not ''little parliaments.''
+    Pennsylvania excepted — unicameral (see F-U2-083).'
   falsehoods:
   - colonial.*upper house.*elected
   - power of the purse.*controlled trade regulations
@@ -2104,31 +2175,43 @@ facts:
   sources:
   - web
 - id: F-U2-066
-  topic: 1644 second attack and 1646 treaty — Powhatan power broken
+  topic: 1644 second attack, 1646 settlement, 1677 tribute — Powhatan power broken
   correct: '1644: Opechancanough (Powhatan''s brother, now an old man) led a second
     attack on Virginia; the English crushed it, captured him in 1646, and he was killed
-    while a prisoner. The 1646 treaty drew a boundary, set aside reservation land,
-    and demanded tribute — Powhatan power was broken. Tier 1 confirms the 1644 war
-    and the precipitous decline (prem27) and the Powhatan Wars span 1610-1677 (princeton);
-    the capture/killing/treaty details are standard accounts, hedged in dialogue.
-    Never teach that the Powhatan story ends in 1622.'
+    while a prisoner. The 1646 settlement drew a boundary and set aside reservation
+    land; the yearly tribute payment to the English king belongs to the 1677 treaty
+    (NPS chronology: ''The 1677 treaty also set up yearly tribute payment that was
+    made to the English king.''). NPS corroborates the capture and killing: ''1646
+    - Opechancanough, who was about 100, was captured by the English. While in captivity
+    he was shot in the back by an English guard - against orders - and killed.''
+    Tier 1 confirms the 1644 war and the precipitous decline (prem27: ''After another
+    war in 1644, the Powhatan presence in the area precipitously declined.'') and
+    the Powhatan Wars span 1610-1677 (princeton). Never teach that the Powhatan story
+    ends in 1622; never fold the tribute into 1646.'
   falsehoods:
   - powhatan.*(vanished|disappeared|destroyed).*(in )?1622
   - 1644.*powhatan.*(victory|drove out the english|succeeded)
+  - 1646 treaty.*tribute
   sources:
   - prem27
   - princeton
   - web
 - id: F-U2-067
   topic: Maryland — Catholic refuge that ran Virginia's tobacco playbook
-  correct: 'Maryland: charter 1632 to George Calvert, Lord Baltimore (Charles I);
-    first settlers 1634; first proprietary colony (one owner, not a company). Calvert
-    wanted a Catholic refuge AND tobacco profits — he got the tobacco. Maryland ran
-    Virginia''s playbook: tobacco, indentured servants, enslaved Africans (prem27:
-    ''Maryland bore similarities to Virginia''). Protestants outnumbered Catholics
-    almost immediately; the Act of Toleration (1649) protected Christian worship —
-    the Catholics needed the law in their own colony. Never teach that Maryland stayed
-    Catholic.'
+  correct: 'Maryland: charter 1632 from Charles I to the Calvert family; first settlers
+    1634; first proprietary colony (one owner, not a company). Tier-1 sources split
+    on the named recipient — prem27 ch04: George Calvert, 1st Baron Baltimore ''was
+    granted a charter by King Charles I, but died just weeks before the colony was
+    to be established'' and ''His son, Cecelius Calvert, became the actual proprietor
+    of Maryland''; princeton ch06 sup: ''Maryland was another, granted to Cecilius
+    Calvert, Lord Baltimore''; 5steps2024 ch07 gives the family-level grant: ''King
+    Charles I gave a charter to the Calvert family''. Teach the family grant — never
+    flatten to one recipient. Calvert wanted a Catholic refuge AND tobacco profits
+    — he got the tobacco. Maryland ran Virginia''s playbook: tobacco, indentured
+    servants, enslaved Africans (prem27: ''Maryland bore similarities to Virginia'').
+    Protestants outnumbered Catholics almost immediately; the Act of Toleration (1649)
+    protected Christian worship — the Catholics needed the law in their own colony.
+    Never teach that Maryland stayed Catholic.'
   falsehoods:
   - maryland.*stayed catholic
   - maryland.*remained.*catholic.*(colony|refuge)
@@ -2201,8 +2284,9 @@ facts:
   topic: British 'germ warfare' — smallpox-infected blankets against the Ottawa
   correct: 'Princeton (ch. 7) calls it British ''germ warfare'': smallpox-infected
     blankets handed out ''to help defeat the Ottawa.'' The Fort Pitt site-name is
-    standard-accounts-only, beyond Tier 1-2 — hedge in dialogue (''by the usual account'')
-    or disclose in the footer.'
+    standard-accounts-only, beyond Tier 1-2 — removed from dialogue in the 2026-10-07
+    v3 repair (fail-closed); dialogue teaches only the pinned tactic. Footer discloses
+    the site-name''s beyond-Tier-1-2 status.'
   falsehoods:
   - smallpox.*blankets.*(french|spanish)
   sources:
@@ -2227,12 +2311,14 @@ facts:
   sources:
   - princeton
 - id: F-U3-009
-  topic: Postwar British troop figure ~10,000 — hedge and disclose
+  topic: Postwar British troop figure ~10,000 — FAIL-CLOSED handling note, NOT a verified fact — hedge and disclose
   correct: '''Roughly ten thousand'' British soldiers in postwar North America is
     the commonly taught figure, but it is NOT pinned in any Tier 1-2 source used —
     always hedge (''roughly'') and disclose in the Sources footer. Never teach a ''French
     rematch'' purpose — Tier 1-2 do not pin it; teach ''enforce the line and keep
-    a burning frontier quiet.'''
+    a burning frontier quiet.'' This entry is a fail-closed handling note, NOT a
+    verified fact: it exists so the fleet hedges and discloses the figure consistently
+    instead of teaching it flat.'
   falsehoods:
   - ten thousand soldiers.*french rematch
   sources:
@@ -2388,11 +2474,14 @@ facts:
     exact wording — always hedge (''nobody swears to the exact words'') and disclose
     in the footer. Princeton confirms Otis ''put forward the No taxation without representation
     argument'' in the pamphlet — the idea is his, the wording is not verified. Never
-    teach the maxim as a verified Otis quotation.'
+    teach the maxim as a verified Otis quotation. FAIL-CLOSED NOTE (2026-10-07, U3-E2
+    M5): the Adams-recollection mediation detail is NOT pinned by any Tier-1/2 line;
+    it rests on general historical knowledge disclosed in the lesson footer. The old
+    ''web'' source is removed — broad web is not a source. Dialogue teaches only ''decades
+    later,'' never a pinned number (''forty years'' was cut from v3).'
   falsehoods: []
   sources:
   - princeton
-  - web
 - id: F-U3-020
   topic: Stamp Act effective date and repeal month — do not pin in dialogue
   correct: 'The Stamp Act''s effective date (Nov 1, 1765) and the repeal month (March
@@ -2689,7 +2778,9 @@ facts:
     Cumberland for reviews, then put Virginia Governor Henry Lee and Hamilton in charge
     and headed back to Philadelphia. He did NOT march the army into western Pennsylvania.
     'Washington marched them west himself' is defensible (he rode west with them to
-    Bedford); 'marched into western Pennsylvania' overstates.
+    Bedford); 'marched into western Pennsylvania' overstates. U3-E9 v3 teaches 'rode
+    west with them as far as Bedford, then returned east' to match the NPS disclosure
+    exactly.
   falsehoods:
   - washington marched.*into western pennsylvania
   sources:
@@ -2698,27 +2789,35 @@ facts:
   tier_note: Tier 2 NPS Whiskey Rebellion Q7
 - id: F-U3-045
   topic: Speculator advance knowledge of Hamilton's funding plan — genuinely debated
-  correct: Whether speculators (including members of Congress) traded on advance knowledge
-    of Hamilton's funding plan is a genuine historiographical debate — Madison and
-    contemporaries alleged it; no leak was ever proven. Never teach flat 'no' or flat
-    'yes'; hedge or attribute in-dialogue.
-  falsehoods: []
+  correct: 'Whether speculators (including members of Congress) traded on advance knowledge
+    of Hamilton''s funding plan is a genuine historiographical debate — Madison and
+    contemporaries alleged it; the Tier 1-2 record does not settle whether a leak
+    occurred. Never teach flat ''no leak was ever proven'' or flat ''yes''; hedge or
+    attribute in-dialogue. U3-E9 v3 cut the flat ''No leak was ever proven'' fail-closed
+    and teaches the Tier-1 mechanics instead: ''The certificates were changing hands
+    at a fraction of their original value'' (premium2027 ch5).'
+  falsehoods:
+  - no leak was ever proven
   sources:
   - web
   tier_note: beyond Tier 1-2 — standard historiographical record; disclosed in script
 - id: F-U3-046
-  topic: Madison's discrimination proposal — unverifiable in Tier 1+2, do not teach
-    mechanics
+  topic: Madison and the debt/assumption fights — teach only Tier-1-verifiable framing
   correct: 'Madison''s Feb 1790 discrimination proposal on the debt certificates (pay
     originals vs current holders) is unverifiable in Tier 1+2 — the books and transcripts
-    don''t cover it, and common summaries mismatch the standard account. Teach only
-    Tier-1-verifiable: ''Madison led the fight against assumption in the House — and
-    lost the vote.'''
+    don''t cover it, and common summaries mismatch the standard account. Do not teach
+    its mechanics. Also do not teach ''Madison led the fight against assumption in the
+    House — and lost the vote'' (cut in U3-E9 v3 fail-closed): Madison is absent from
+    the Tier-1 assumption coverage, and ''lost the vote'' flattens the House''s initial
+    rejection before the Compromise of 1790. Safe form: ''Madison opposed assumption
+    in the House, where the measure failed before the 1790 compromise.'''
   falsehoods:
   - madison.*pay the original.*full value.*current holders.*purchase price
+  - madison led the fight against assumption
   sources:
   - prem27
-  tier_note: cut from U3-E9 in Layer-3 repair
+  tier_note: discrimination beat cut in Layer-3; assumption-role wording repaired in
+    U3-E9 v3
 - id: F-U3-047
   topic: Tier-1 book errors — 5steps ch11 timeline (manufactures 1790; convention
     'ratifies')
@@ -2849,6 +2948,49 @@ facts:
   - prem27
   - 5steps
   tier_note: citation correction from U3-E11 Layer 3
+- id: F-U3-057
+  topic: Webster "national language" quote — Tier-1 attribution gap (fail-closed note, U3-CRAM M4)
+  correct: 'U3-CRAM teaches Webster''s "A national language is a band of national union"
+    only as "the line credited to his 1789 Dissertations" — hedged, never flat. Tier 1
+    (premium2027 15_Chapter05.xhtml) confirms the publication facts — "He published
+    a three-volume set of textbooks that were intended for American schoolchildren—
+    A Grammatical Institute of the English Language. The work consisted of a speller
+    (1783), a grammar (1784), and a reader (1785)." — but carries neither the quote
+    nor the 1789 Dissertations attribution (full-text search of the chapter: no hit).
+    The only provenance trail found (E11 v1 draft sources note) is web verification,
+    which Tier 1–2 does not accept. Do not unhedge the 1789 attribution without a
+    Tier-1 or Tier-2 (Britannica/NPS) line.'
+  falsehoods:
+  - eighty-nine line, "a national language
+  sources:
+  - prem27
+  tier_note: attribution-strength hedge from U3-CRAM fleet repair 2026-10-07; not a book-error claim — no book is wrong, the quote's provenance simply cannot be closed from Tier 1–2
+- id: F-U3-058
+  topic: First Continental Congress colony count — twelve colonies unverifiable in Tier 1 (fail-closed note, U3-E2 M6)
+  correct: 'The First Continental Congress met with twelve colonies attending (Georgia
+    absent) — historically standard, but NOT pinned by any Tier-1 line (the U3-E2
+    audit searched all three books and the Unit 3 transcripts for "twelve colonies":
+    zero hits). Fail-closed: dialogue teases the Congress without the number ("the
+    colonies answer by sending delegates to Philadelphia"). Do not pin "twelve colonies"
+    in dialogue until a Tier-1 or Tier-2 (Britannica/NPS) line confirms it.'
+  falsehoods: []
+  sources:
+  - 5steps
+  - prem27
+  - princeton
+  - norris-transcript
+  tier_note: searched-and-absent provenance from U3-E2 fleet repair 2026-10-07; not a book-error claim — no book is wrong, the number simply cannot be closed from Tier 1
+- id: F-U3-059
+  topic: Committees of observation — do not teach "in every town"
+  correct: 'princeton ch. 7 (Tier 1): "Continental Association with committees of
+    observation enforcing the boycott, becoming towns'' de facto governments." The
+    book does not pin every town, so U3-E3 v3 teaches "Committees of observation in
+    town after town to enforce it" rather than the v2 "in every town."'
+  falsehoods:
+  - committees.{0,20}observation.{0,30}every town
+  sources:
+  - princeton
+  tier_note: hedge correction from U3-E3 fleet repair 2026-10-07; not a book-error claim — no book is wrong, the v2 script overstated the book's pin
 - id: F-U4-001
   topic: Marshall McCulloch quote — "involves," not "is"
   correct: Marshall's actual McCulloch v. Maryland wording is 'the power to tax involves
@@ -2966,12 +3108,15 @@ facts:
   correct: Andrew Jackson issued 12 vetoes (5 regular + 7 pocket), more than the 10
     combined for all six of his predecessors. Used in U4-E7 (Jacksonian Democracy).
   falsehoods:
-  - jackson.{0,60}veto.{0,40}(more than|exceed).{0,40}(predecessors|before him)
+  - jackson.{0,40}(twelve|12) policy vetoes
   sources:
   - britannica
   - web-senate-historical
   tier_note: veto tally verified via CRS/congress.gov (Senate historical list); same-day
-    entry from U4-E7 repair, 2026-10-06
+    entry from U4-E7 repair, 2026-10-06. Pattern fixed 2026-10-08 - the old pattern
+    (jackson.{0,60}veto.{0,40}(more than|exceed).{0,40}(predecessors|before him)) matched
+    the TRUE statement — same bug class as F-U3-037. Replaced with the genuine misframing
+    ("twelve policy vetoes" unqualified; 7 of the 12 were pocket vetoes).
 - id: F-U4-011
   topic: Marcy 1832 Senate line — "To the victor belong the spoils of the enemy"
   correct: 'Senator William L. Marcy, on the Senate floor in January 1832, said: ''They
@@ -3132,21 +3277,26 @@ facts:
   - britannica
   tier_note: repair-pass entry from U4-E8 v2 Layer-2/Layer-3 review, 2026-10-06
 - id: F-U4-024
-  topic: Jackson's veto message — verified "rich and powerful" passages
-  correct: Jackson's July 10, 1832 veto message says 'It is to be regretted that the
-    rich and powerful too often bend the acts of government to their selfish purposes,'
-    and that the charter would 'make the rich richer and the potent more powerful,'
-    while 'the farmers, mechanics, and laborers' get nothing. Verified verbatim against
-    the Avalon Project text.
+  topic: "WITHDRAWN 2026-10-08 — alleged 'equal protection' misquote DOES exist (verbatim in the message)"
+  correct: "RETRACTED 2026-10-08: the sentence 'Many of our rich men have not been content
+    with equal protection and equal benefits, but have besought us to make them richer
+    by act of Congress' IS verbatim in Jackson's July 10, 1832 veto message — verified
+    against the UChicago Press Founders' Constitution printing of Richardson's Messages
+    and Papers (a1_8_18s20, lines 974-980), the Miller Center transcript, and Teaching
+    American History. The entry's original claim ('v1's equal protection misquote does
+    not exist in the message') was wrong. Never teach that the sentence is absent; the
+    U4-E7 v2 script's 'these are his words' is accurate."
   falsehoods:
-  - Many of our rich men have not been content with equal protection and equal benefits,
-    but have besought us to make them richer by act of Congress
-  - the veto message says equal protection for the rich men
+  - equal protection.{0,40}(misquote|does not exist|not in the (veto )?message)
+  - veto message does not contain.{0,40}equal protection
   sources:
-  - 5steps
-  - premium2027
-  tier_note: quotes verified verbatim against the Avalon Project text of the July
-    10, 1832 message; v1's "equal protection" misquote does not exist in the message
+  - web: UChicago Press Founders' Constitution (Richardson Messages and Papers, a1_8_18s20 — verified verbatim 2026-10-08)
+  - web: Miller Center (veto message transcript)
+  - web: Teaching American History
+  tier_note: "Originally registered from U4-E7 v1 2026-10-06 as a book-error; the registry's
+    own claim was wrong. Retracted 2026-10-08 after a direct read of the primary text
+    showed the sentence is verbatim. Kept as a retraction record. (Richardson compilation
+    is public domain, 1896-99; verified via the live UChicago Press page, not Tier-1/2 books.)"
 - id: F-U4-025
   topic: Biddle's contraction 1833-34 — taught both-sides
   correct: 'After Jackson moved the deposits in 1833, Biddle tightened credit through
@@ -3204,7 +3354,7 @@ facts:
   falsehoods:
   - john marshall has made his decision.{0,80}enforce it
   guards:
-  - supposedly|reportedly|legend|may be legend|purportedly
+  - supposedly|reportedly|legend|may be legend|purportedly|thirdhand|nobody knows|no one knows
   sources:
   - 5steps
   - premium2027
@@ -3962,6 +4112,8 @@ facts:
   falsehoods:
   - declaration of sentiments.{0,60}three extra words
   - three extra words.{0,60}all men and women
+  - declaration of sentiments.{0,60}three added words
+  - created equal.{0,60}three added words
   sources:
   - premium2027
   - princeton
@@ -8538,3 +8690,543 @@ facts:
   tier_note: 'Added U9-L6 v2 2026-10-07 (coordinator book read). The letter-to-Roosevelt
     July 1898 specifics are NOT tier-verifiable; U9-L6 teaches only the phrase
     and Hay''s post.'
+- id: F-U1-061
+  topic: "The turkey went east — the farm-animal direction exception"
+  correct: 'The turkey is the domesticated farm animal that went EAST. premium2027
+    ch3: "The list of organisms brought by Europeans back to the Old World included
+    turkeys, corn, potatoes, sweet potatoes, cacao (cocoa), and tomatoes." Every
+    other farm animal on the Exchange list (horses, cattle, pigs) went west. U1-E3
+    teaches the turkey as the rule-breaker via a live trap: Maya states the all-west
+    rule, Marcus corrects ("Not quite... the turkey went east").'
+  falsehoods:
+  - livestock all went west
+  - every farm animal.{0,40}went west
+  sources:
+  - book: premium2027 ch3 (eastbound organism list)
+  - web (Spanish exported turkeys to Europe in the 1500s; turkey farms in Spain by 1530)
+  tier_note: 'Added 2026-10-07, U1-E3 v10 fleet repair (audit B2). The v9 script
+    taught "the livestock all went west" with no exception.'
+- id: F-U1-062
+  topic: "African states' roles in the slave trade — no passive-voice erasure"
+  correct: 'Africans appear as actors, not only cargo. premium2027 ch3: "Africans
+    and Europeans had been enslaving and trading Africans for centuries." U1-E3 names
+    African kingdoms and merchants raiding and selling captives, with Europeans buying
+    into a trade that already existed.'
+  falsehoods: []
+  sources:
+  - book: premium2027 ch3
+  - web (African rulers, traders and military aristocrats sold war captives to Europeans)
+  tier_note: 'Added 2026-10-07, U1-E3 v10 fleet repair (audit B4). Framing/completeness
+    entry — v9 named no African actor.'
+- id: F-U1-063
+  topic: "Old World plague origins — hedge the livestock claim"
+  correct: 'Teach "many of the worst Old World epidemics," never "Europe''s plagues
+    came from domesticated animals" unhedged. The Black Death (bubonic plague) was
+    flea-borne — Britannica: typically transmitted to humans "through the bites of
+    infected fleas carried by rodents" — so the flat livestock-origin claim overstates
+    (guide section 7: no flattened causal chains).'
+  falsehoods:
+  - "europe's plagues came from.{0,40}domesticated animals"
+  sources:
+  - guide: apush-final-guidelines section 7
+  - britannica (bubonic plague transmission)
+  tier_note: 'Added 2026-10-07, U1-E3 v10 fleet repair (audit B5).'
+- id: F-U1-064
+  topic: "Atlantic-island slavery predates the silver boom — no 'germs, then silver, then chains'"
+  correct: 'The chains came first: the Atlantic-island sugar plantations (Madeira,
+    Sao Tome) ran on enslaved African labor before the Potosi silver boom, and 5steps2024
+    ch6 dates it: "Beginning in the 1540s, African slaves were sold to colonists."
+    Never teach "germs, then silver, then chains" as the Exchange''s order.'
+  falsehoods:
+  - germs, then silver, then chains
+  sources:
+  - book: 5steps2024 ch6
+  - book: premium2027 ch3 (island precedent)
+  tier_note: 'Added 2026-10-07, U1-E3 v10 fleet repair (audit B6).'
+- id: F-U1-065
+  topic: "John Smith's gold-fever line — exact wording, Smith attributed"
+  correct: 'Captain John Smith wrote of the Jamestown gold fever: the colonists
+    did nothing but "dig gold, wash gold, refine gold, load gold." NPS (Historic
+    Jamestowne, nps.gov/jame/all-that-glitters.htm): all the men did was
+    "dig gold, wash gold, refine gold, load gold," wrote the exasperated Captain
+    John Smith. The NPS John Smith biography (nps.gov/jame/learn/historyculture/life-of-john-smith.htm)
+    gives the full line: "There was no talk, no hope, no work but dig gold,
+    wash gold, refine gold, load gold." Never attribute it to an unnamed "one
+    of them," and never drop "wash gold" or recast it as "nothing but
+    …dig gold, refine gold, load gold."'
+  falsehoods:
+  - nothing but.{0,40}dig gold, refine gold
+  - one of them wrote.{0,80}dig gold
+  sources:
+  - 'nps (all-that-glitters: Smith''s gold line, exact words)'
+  - 'nps (life-of-john-smith biography: full Smith line)'
+  tier_note: 'Added 2026-10-07, U1-E4 v7 fleet repair (audit B2). The v6 script
+    taught a garbled paraphrase in quote form — "nothing but …dig gold, refine
+    gold, load gold" — attributed to an unnamed "one of them." Replaced with
+    Smith''s exact words, Smith named as the writer.'
+- id: F-U2-069
+  topic: Flushing Remonstrance — the petition IS the Remonstrance (1657)
+  correct: 'The Flushing Remonstrance IS the 1657 petition — never stage it as petition,
+    then refusal, then Remonstrance. premium2027 ch4: "In Dutch New Amsterdam, several
+    residents wrote the Flushing Remonstrance in 1657, requesting that Peter Stuyvesant
+    lift his ban on Quaker worship in the colony." Both it and Maryland''s 1649 Act
+    of Religious Toleration are seen as early expressions of religious tolerance.'
+  falsehoods:
+  - petitioned.{0,60}stuyvesant.{0,40}(said no|refused).{0,40}remonstrance
+  - flushing.*petition.*then.*remonstrance instead
+  sources:
+  - book: premium2027 ch4
+  tier_note: 'Added 2026-10-07, U2-E1 v6 fleet repair (audit M1). v5 staged a
+    petition-then-refusal-then-Remonstrance arc; the book line shows the Remonstrance
+    is the petition.'
+- id: F-U2-070
+  topic: Rensselaerswijck — the patroonship that worked
+  correct: 'Rensselaerswijck, Kiliaen van Rensselaer''s patroonship on the upper
+    Hudson around present-day Albany, was the patroon venture that survived and
+    worked. NPS (Rensselaer County Courthouse nomination form, npgallery.nps.gov):
+    "Killiaen Van Rensselaer was one of the most successful of the Dutch patroons,
+    who although he never even visited his holding in North America, nevertheless
+    contributed directly to the settlement of the Hudson Valley in the 17th and
+    18th centuries"; "Van Rensselaer acquired 700,000 acres in the area around
+    today''s Albany and Rensselaer Counties, and his patroon was known as
+    Rensselaerwyck." Teach "most of the other lords'' ventures never got off the
+    ground" hedged — that detail is beyond Tier 1/2.'
+  falsehoods: []
+  sources:
+  - nps (Rensselaer County Courthouse nomination form)
+  tier_note: 'Added 2026-10-07, U2-E1 v6 fleet repair (audit M4).'
+- id: F-U2-071
+  topic: Seigneurs' unkept passage promises — CUT, unverifiable in hierarchy
+  correct: 'The claim "most seigneurs never paid the passage they''d promised their
+    tenants" has ZERO hits for "seigneur" across all three Tier-1 books and all
+    public_content transcripts, and no Tier-2 line. Per fail-closed it was CUT from
+    U2-E1 v6 (audit B3) — both the body line and the Q2 model answer. Never teach
+    flat; do not re-teach without Tier-1/2 sourcing.'
+  falsehoods:
+  - seigneurs?.*(promised|never paid).*(passage|tenants)
+  - passage they.{0,20}(mostly )?didn''t pay
+  sources:
+  - hierarchy_check
+  tier_note: 'Fail-closed 2026-10-07 — claim cut from U2-E1 v6; do not re-teach
+    without Tier-1/2 sourcing.'
+- id: F-U2-072
+  topic: Berkeley's 'six parts of seven' 1676 line — reported wording, never verified verbatim
+  correct: 'Berkeley''s reported 1676 line — roughly six of seven Virginians "poor, indebted,
+    discontented and armed" — is widely quoted in secondary sources but appears in NO Tier 1
+    book and NO Tier 2 source (Britannica/NPS) in the hierarchy. Per fail-closed, scripts must
+    present it as REPORTED ("Berkeley''s reported line...", "roughly six of seven") and must
+    never teach the exact "six parts of seven" wording as verified verbatim.'
+  falsehoods:
+  - six parts of seven
+  sources:
+  - hierarchy_check
+  tier_note: 'Fail-closed 2026-10-07 — v5''s verbatim presentation cut to a reported, hedged
+    line in U2-E2 v6; do not re-teach the exact wording without Tier-1/2 sourcing.'
+- id: F-U2-073
+  topic: Freedom-dues specifics — hedge, Tier-1/2 unverified
+  correct: 'Tier 1 verifies the indenture term (usually four to seven years, premium2027) and the
+    contract sale, but NO Tier 1/2 line verifies freedom dues as "a little corn, some clothes,
+    maybe some land." Per fail-closed, scripts must hedge the specifics ("the promise was...",
+    "at least on paper") — never teach the bundle flat.'
+  falsehoods:
+  - finish the contract and collect a little corn
+  sources:
+  - hierarchy_check
+  tier_note: 'Fail-closed 2026-10-07 — hedged in U2-E2 v6; do not pin the bundle without
+    Tier-1/2 sourcing.'
+- id: F-U2-074
+  topic: Servitude penalties (runaway extra years, marriage permission) — hedge
+  correct: 'Tier 1 verifies indenture contracts were bought and sold (premium2027). The
+    runaway-extra-years and marry-without-permission penalty claims appear in NO Tier 1/2
+    source. Per fail-closed, scripts must hedge ("the court could tack years", "a woman
+    servant could get extra time") — never teach flat.'
+  falsehoods:
+  - court tacked years onto your term
+  - woman servant got extra time tacked on
+  sources:
+  - hierarchy_check
+  tier_note: 'Fail-closed 2026-10-07 — hedged in U2-E2 v6.'
+- id: F-U2-075
+  topic: 1667 baptism act — year unpinned, Tier-1/2 unverified
+  correct: 'The 1662 mother-rule is Tier-1 verified (F-U2-009); the 1667 baptism act appears in
+    NO Tier 1 book or Tier 2 source (registry F-U2-012 cites the year from web only). Per
+    fail-closed, scripts must not pin "In 1667: baptism didn''t free anybody" — hedge to "by
+    the late 1660s, baptism didn''t free anybody either," or source the act.'
+  falsehoods:
+  - 'in 1667: baptism didn''t free'
+  sources:
+  - hierarchy_check
+  tier_note: 'Fail-closed 2026-10-07 — hedged in U2-E2 v6.'
+- id: F-U2-076
+  topic: Seasoning-mortality decline as the freedmen-surplus mechanism — cut the mechanism
+  correct: 'No Tier 1/2 line supports the specific claim that seasoning mortality DECLINED and
+    thereby grew the landless-freedmen population. Per fail-closed, U2-E2 v6 teaches the effect
+    only ("More servants survived their terms, and most of them wanted land") — the "seasoning
+    fevers eased" mechanism was cut. Do not re-teach the mechanism without sourcing.'
+  falsehoods:
+  - seasoning fevers eased
+  sources:
+  - hierarchy_check
+  tier_note: 'Fail-closed 2026-10-07 — mechanism cut in U2-E2 v6.'
+- id: F-U2-077
+  topic: Bacon's age 'twenty-nine' — Tier-1/2 unverified, drop the number
+  correct: 'Tier 1 verifies Bacon as a recent immigrant, wealthy but too late for coastal land
+    (Princeton) — no Tier 1/2 source gives his age. Per fail-closed, U2-E2 v6 drops "Twenty-nine."
+    Never pin the age without sourcing.'
+  falsehoods:
+  - bacon.{0,40}twenty-nine
+  sources:
+  - hierarchy_check
+  tier_note: 'Fail-closed 2026-10-07 — number dropped in U2-E2 v6.'
+- id: F-U2-078
+  topic: Dedham 1636 town covenant — Tier-1/2 unverified, cut the pin
+  correct: 'The pinned Dedham 1636 town-covenant claim (town + year + covenant contents) appears
+    in none of the Tier 1 books (zero hits for "Dedham" in premium2027 ch.4, 5steps2024,
+    Princeton). Per fail-closed, U2-E3 v6 cuts it from dialogue and recap. Teach covenant
+    towns only in general terms (church covenant, meetinghouse at the center) until a
+    Tier-1 or Tier-2 (Britannica/NPS) line confirms the pin with an exact quote.'
+  falsehoods:
+  - dedham.*1636.*covenant
+  sources:
+  - hierarchy_check
+  tier_note: 'Fail-closed 2026-10-07 — pin cut in U2-E3 v6.'
+- id: F-U2-079
+  topic: Whitefield "America's first celebrity" — Kidd attribution, Yale UP 2014
+  correct: 'The "America''s first celebrity" label for George Whitefield is Thomas S. Kidd''s
+    characterization (George Whitefield: America''s Spiritual Founding Father, Yale University
+    Press, 2014): "was America''s first celebrity, whose fame was an initial ingredient in
+    an emerging national selfconsciousness." Per §7 attribution strength, scripts name Kidd
+    in dialogue — never the flat "historians call" form. U2-E6 v7: "Whitefield''s biographer
+    Thomas Kidd calls him America''s first celebrity."'
+  falsehoods: []
+  sources:
+  - web
+  tier_note: 'Attribution strengthened 2026-10-07 — M2 fix in U2-E6 v7.'
+- id: F-U2-080
+  topic: Princeton 1746 charter — hedge the New Light Presbyterian founders
+  correct: 'The College of New Jersey (Princeton) was chartered October 22, 1746 — the 1911
+    Britannica records the charter granted by New Jersey acting governor John Hamilton, and
+    the founding synod formed from radical (New School) presbyteries. None of the three
+    Tier-1 books carries the New Light Presbyterian founding pin. Per fail-closed, U2-E6 v7
+    hedges in dialogue ("Princeton''s 1746 charter is usually credited to New Light
+    Presbyterians"). The flat pin is blocked until a Tier-1/2 exact-quote line verifies it —
+    not disproven, just unverified against the strict hierarchy.'
+  falsehoods:
+  - princeton was chartered in 1746 by new light
+  sources:
+  - hierarchy_check
+  tier_note: 'Fail-closed 2026-10-07 — flat claim hedged in U2-E6 v7.'
+- id: F-U2-081
+  topic: Franklin's orphanage-in-Philadelphia advice — Tier-1/2 unverified, cut
+  correct: 'Franklin''s advice that Whitefield build his orphanage in Philadelphia rather than
+    Georgia is Tier-1/2 unverified in this pass — no quoted line in the v6 footer or registry.
+    (The collection-dish anecdote IS verified — Autobiography: "emptied my pocket wholly into
+    the collector''s dish, gold and all.") Per fail-closed, U2-E6 v7 cuts the orphanage sentence
+    entirely. Do not re-teach the Philadelphia advice until a Tier-1/2 exact-quote line verifies
+    it — not disproven, just unverified.'
+  falsehoods:
+  - orphanage.{0,40}(philadelphia|georgia)
+  sources:
+  - hierarchy_check
+  tier_note: 'Fail-closed 2026-10-07 — sentence cut in U2-E6 v7.'
+- id: F-U2-082
+  topic: Franklin's press printed Whitefield's sermons — Tier-1/2 unverified, cut
+  correct: 'That Franklin''s press printed Whitefield''s sermons is Tier-1/2 unverified in this
+    pass — no quoted book line in the v6 footer or registry. Per fail-closed, U2-E6 v7 cuts the
+    sentence; the print-spread mechanism survives only in general terms ("The sermons sold
+    newspapers; the newspapers spread the name"). Do not re-teach the specific printing claim
+    until a Tier-1/2 exact-quote line verifies it — not disproven, just unverified.'
+  falsehoods:
+  - franklin.{0,30}press.{0,30}print.{0,20}sermon
+  sources:
+  - hierarchy_check
+  tier_note: 'Fail-closed 2026-10-07 — sentence cut in U2-E6 v7.'
+- id: F-U2-083
+  topic: Pennsylvania unicameral exception to bicameral colonial legislatures
+  correct: 'princeton ch. 6 supplement (Tier 1): "Except for Pennsylvania (which had
+    a unicameral legislature with just one house), all the colonies had bicameral
+    legislatures modeled after the British Parliament." U2-E7 v6 teaches the exception
+    in dialogue: "Most colonies ran a little parliament of their own... Pennsylvania
+    was the exception: a single house instead of two."'
+  falsehoods:
+  - every colony had a bicameral legislature
+  - all the colonies had bicameral legislatures
+  sources:
+  - princeton
+- id: F-U2-084
+  topic: Colonial governors appointed by the king or the proprietor
+  correct: 'princeton ch. 6 supplement (Tier 1): "Every colony had a governor who was
+    appointed by either the king or the proprietor." U2-E7 v6 corrects the flattened
+    script line to "The king or the proprietor still appointed the governor and the
+    council." The v5 claim that the governor commissioned the judges was cut per
+    fail-closed — unverified against the Tier 1/2 hierarchy.'
+  falsehoods:
+  - the king appointed every colonial governor
+  - the king appointed the governor and the council in every colony
+  sources:
+  - princeton
+- id: F-U3-060
+  topic: 'Abigail Adams "remember the ladies" — primary reads "into", book renders "in"'
+  correct: 'U3-E4 v3 dialogue: "remember the ladies... Do not put such unlimited power into
+    the hands of the husbands." Exact primary line — Abigail Adams to John Adams, March 31,
+    1776 (Founders Online, National Archives): "Do not put such unlimited power into the
+    hands of the Husbands" (corroborated by Massachusetts Historical Society and Gilder
+    Lehrman transcriptions). Exact Tier-1 book line — 5steps2024 ch10: "March 1776, Abigail
+    Adams urged her husband, John Adams, to “remember the ladies. … Do not put such unlimited
+    power in the hands of the husbands.”" One-preposition rendering variance; dialogue
+    follows the primary, variance disclosed in the episode Sources. Not a student falsehood
+    — no G12 pattern.'
+  falsehoods: []
+  sources:
+  - 5steps
+  - web
+  tier_note: 'Quote-wording correction 2026-10-07 — U3-E4 v3 W-2.'
+- id: F-U3-061
+  topic: Common Sense Israelites/1 Samuel biblical argument — Tier-1/2 unverified, cut
+  correct: 'The claim that Paine argued in Common Sense from the Israelites'' demand for a
+    king (1 Samuel 8) is unverified in Tier 1 (5steps2024 ch10, premium2027 ch5, princeton
+    c007 — audit searched "Israelites"/"Samuel"/"Bible", no relevant hits) with no Tier-2
+    exact-quote line. Per fail-closed §7, U3-E4 v3 cuts the sentence ("And then the Bible:
+    the Israelites demand a king, and God treats the demand as a rejection of Him."); the
+    pamphlet''s case survives on the Tier-1-pinned arguments (monarchy "blood and ashes",
+    continent-vs-island, "begin the world over again"). Not disproven — do not re-teach
+    until a Tier-1/2 exact-quote line verifies it.'
+  falsehoods:
+  - paine.{0,60}israelites
+  - common sense.{0,60}(israelites|1 samuel)
+  sources:
+  - hierarchy_check
+  tier_note: 'Fail-closed 2026-10-07 — sentence cut in U3-E4 v3.'
+- id: F-U3-062
+  topic: 'Bunker Hill date — June 17, 1775 (Tier-2 confirmed)'
+  correct: 'The Battle of Bunker Hill was fought June 17, 1775. Tier-1 books pin only
+    "June 1775"; the day is Tier-2-confirmed — Britannica Kids: "The battle was fought
+    just north of Boston, Massachusetts, on June 17, 1775" (also NPS). The v3 dialogue''s
+    "June seventeenth, seventeen seventy-five" stands.'
+  falsehoods: []
+  sources:
+  - britannica
+  - nps
+  tier_note: '2026-10-07 — U3-E5 v3; was UNVERIFIED in the 2026-10-07 audit, now Tier-2-verified.'
+- id: F-U3-063
+  topic: 'Washington appointed commander in chief — June 15, 1775; motive hedged'
+  correct: 'The Second Continental Congress appointed George Washington commander in chief
+    on June 15, 1775 — Britannica: "appointed Washington commander in chief of the American
+    army on June 15, 1775" (also U.S. Army Center of Military History: "the 15th, the
+    Congress named Virginian George Washington as commander-in-chief"). Tier 1 (5steps
+    ch10) states only "the experienced soldier George Washington of Virginia" — no motive
+    given. U3-E5 v3 voices the Virginia/politics motive as "the political read," hedged
+    in dialogue.'
+  falsehoods: []
+  sources:
+  - britannica
+  - 5steps
+  tier_note: '2026-10-07 — U3-E5 v3; month confirmed via Tier 2, motive hedged fail-closed.'
+- id: F-U3-064
+  topic: 'Spain entered the Revolutionary War in 1779 (Tier-2 confirmed)'
+  correct: 'Spain entered the war in 1779 — Britannica: "with America being joined by France
+    in 1778 and Spain in 1779." Tier-1 books do not pin the year; the v3 dialogue line
+    "Spain jumps in on France''s side in seventy-nine" is Tier-2-confirmed.'
+  falsehoods: []
+  sources:
+  - britannica
+  tier_note: '2026-10-07 — U3-E5 v3; was UNVERIFIED in the 2026-10-07 audit, now Tier-2-verified.'
+- id: F-U3-065
+  topic: 'Hessian mercenaries — about 30,000 (Tier-2 confirmed)'
+  correct: 'Britain supplemented its regulars with about 30,000 German (Hessian) mercenaries —
+    Britannica: "numbering about 42,000 regulars, supplemented by about 30,000 German
+    (Hessian) mercenaries." Tier 1 (5steps ch10) says only "thousands of German troops,
+    known collectively as Hessians." The v3 dialogue''s "tens of thousands of hired
+    German soldiers, the Hessians" is Tier-2-confirmed.'
+  falsehoods: []
+  sources:
+  - britannica
+  - 5steps
+  tier_note: '2026-10-07 — U3-E5 v3; was Tier-1-silent in the 2026-10-07 audit, now Tier-2-verified.'
+- id: F-U3-066
+  topic: 'Paris 1783 generous terms — the books'' rationale is trade, not haste'
+  correct: 'The generous terms of the Treaty of Paris (1783) follow the books'' read:
+    deliberately favorable from the British point of view because Shelburne foresaw highly
+    profitable two-way trade with the fast-growing United States. Exact Tier-1 line (5steps
+    ch10, quoted in the 2026-10-07 audit): "The treaty was highly favorable for the United
+    States and deliberately so from the British point of view. Shelburne foresaw highly
+    profitable two-way trade between Britain and the rapidly-growing United States."'
+  falsehoods:
+  - out of france's orbit
+  - paid for the hurry
+  sources:
+  - 5steps
+  tier_note: '2026-10-07 — U3-E5 v3 replaced "the usual read: London wanted the Americans out
+    of France''s orbit fast, and paid for the hurry." Note: the Shelburne sentence is absent
+    from this checkout''s 5steps2024 extraction; the quote is the auditor''s Tier-1 line from
+    the 2026-10-07 audit.'
+- id: F-U3-067
+  topic: '"Doubles in size" (1783) — cut fail-closed'
+  correct: 'The line "the country roughly doubles in size" (Treaty of Paris, 1783) was CUT in
+    U3-E5 v3 — fail-closed: Tier 1 silent, no Tier-2 (Britannica/NPS) exact-quote confirmation
+    found. The Mississippi western boundary itself is Tier-1-pinned (5steps ch10: "gave
+    Americans the territory between the Appalachian Mountains and the Mississippi River")
+    and remains in the script.'
+  falsehoods:
+  - roughly doubles in size
+  sources:
+  - hierarchy_check
+  tier_note: '2026-10-07 — U3-E5 v3 cut per fail-closed; was UNVERIFIED in the 2026-10-07 audit.'
+- id: F-U3-068
+  topic: Assumption opposition — never name Virginia/Massachusetts as paid-down vs debtor
+    states
+  correct: 'premium2027 ch5 on assumption opposition: "The proposal met with strenuous
+    opposition from states that either did not have a large debt or had already paid
+    back their debts." No Tier-1 or Tier-2 source names which states had paid down their
+    debts, so never teach "Virginia has paid down her debts. Massachusetts has not."
+    (cut from U3-E9 v3 fail-closed). Safe form names no states.'
+  falsehoods:
+  - virginia.*paid down.*debts.*massachusetts has not
+  - virginian farmer pays taxes.*massachusetts speculator
+  sources:
+  - prem27
+  tier_note: 2026-10-07 — added in U3-E9 v3 fleet repair (M-5)
+- id: F-U3-069
+  topic: Bayard of Delaware + 10-4-2 state count — cut fail-closed (U3-E11 v3)
+  correct: 'U3-E11 v2 taught: ''James Bayard of Delaware led Federalists into abstaining,
+    sitting the ballot out, and on the 36th the math moved: ten states for Jefferson,
+    four for Burr, two blank.'' No Tier-1 line found in full-chapter scans of all three
+    books (2026-10-07 audit). U3-E11 v3 teaches only what Tier 1 supports (5steps2024
+    ch12): ''Jefferson owed his victory on the thirty-sixth ballot to Alexander Hamilton,
+    who told supporters that Burr was "the most unfit man in the United States for
+    the office of president."'' The abstention mechanism and the 10-4-2 count are not
+    taught.'
+  falsehoods:
+  - james bayard.{0,30}delaware.{0,30}abstain
+  - ten states for jefferson.{0,20}four for burr
+  sources:
+  - 5steps
+  - hierarchy_check
+  tier_note: 2026-10-08 — U3-E11 v3 fail-closed cut; not a book-error claim, no book is wrong
+- id: F-U3-070
+  topic: Gallatin "paying down the debt" — cut fail-closed (U3-E11 v3)
+  correct: 'U3-E11 v2 taught Gallatin ''started paying down the debt'' (body) and ''paid
+    down the debt'' (recap). Tier 1 verifies only the tax cuts: ''he and his secretary
+    of the treasury, Albert Gallatin, cut taxes like that on whiskey'' (5steps2024 ch12).
+    The debt-paydown claim was not found in Tier-1 in the 2026-10-07 full-chapter scans.
+    U3-E11 v3 teaches the whiskey-excise cut only.'
+  falsehoods:
+  - gallatin.{0,30}paying down the debt
+  - gallatin.{0,30}paid down the debt
+  sources:
+  - 5steps
+  - hierarchy_check
+  tier_note: 2026-10-08 — U3-E11 v3 fail-closed cut; not a book-error claim
+- id: F-U3-071
+  topic: Jefferson drafted a Louisiana amendment / agonized in letters — cut fail-closed (U3-E11 v3)
+  correct: 'U3-E11 v2 taught: ''He drafted an amendment, agonized in letters, and did
+    it anyway, using Hamilton''s loose reading of the Constitution he''d campaigned
+    against.'' Tier 1 verifies only ''legal scruples'': ''Jefferson had some legal scruples
+    about the federal government''s ability to purchase such an expanse of territory''
+    (5steps2024 ch12). U3-E11 v3 teaches the scruples only. The ''loose construction
+    he''d campaigned against'' gloss remains as the script''s disclosed interpretive
+    commentary on the scruples passage, not a book line.'
+  falsehoods:
+  - drafted an amendment.{0,40}louisiana
+  - agonized in letters
+  sources:
+  - 5steps
+  - hierarchy_check
+  tier_note: 2026-10-08 — U3-E11 v3 fail-closed cut; not a book-error claim
+- id: F-U3-072
+  topic: '"Senate ratified and the House paid" (Louisiana) — cut fail-closed (U3-E11 v3)'
+  correct: 'U3-E11 v2 taught: ''Everybody wanted the land; the Senate ratified and the
+    House paid.'' Not found in Tier-1 in the 2026-10-07 full-chapter scans. Cut in U3-E11
+    v3 (folded into the box-2 live-trap rebuild).'
+  falsehoods:
+  - senate ratified.{0,25}house paid
+  sources:
+  - hierarchy_check
+  tier_note: 2026-10-08 — U3-E11 v3 fail-closed cut; not a book-error claim
+- id: F-U3-073
+  topic: Peale museum / Trumbull rotunda / Capitol-1793 — cut fail-closed (U3-E11 v3)
+  correct: 'U3-E11 v2 taught: Peale''s museum in Philadelphia (''American nature and
+    American heroes under one roof''), Trumbull''s Declaration canvas ''in the Capitol
+    rotunda'' with ''half the men in it were never in the room together'', and the Capitol
+    ''begun in 1793''. None found in Tier-1 in the 2026-10-07 full-chapter scans (premium2027
+    ch06 ''peale'' hit is the word ''repealed''). U3-E11 v3 teaches only Trumbull''s
+    Declaration canvas, 1818 (princeton practice test, Tier-1 minimal) plus Crèvecoeur
+    1782 and the Webster speller (both Tier-1).'
+  falsehoods:
+  - peale.{0,25}museum
+  - trumbull.{0,35}rotunda
+  - half the men.{0,35}never in the room
+  - capitol.{0,25}begun in 1793
+  sources:
+  - hierarchy_check
+  tier_note: 2026-10-08 — U3-E11 v3 fail-closed cut; not a book-error claim
+- id: F-U3-074
+  topic: Slavery-growth-under-Jefferson causal claim — cut fail-closed (U3-E11 v3)
+  correct: 'U3-E11 v2 taught: ''Slavery didn''t just survive Jefferson''s revolution;
+    it grew, fed by the Louisiana land he''d bought.'' No Tier-1 line in the 2026-10-07
+    full-chapter scans (5steps2024 ch12''s slavery lines concern Missouri 1819–20 and
+    Haiti). The interpretive causal claim is cut in U3-E11 v3; the closing keeps only
+    the interpretive ''real revolution with a real asterisk'' and the tagline.'
+  falsehoods:
+  - fed by the louisiana land
+  sources:
+  - hierarchy_check
+  tier_note: 2026-10-08 — U3-E11 v3 fail-closed cut; not a book-error claim
+- id: F-U3-075
+  topic: '"Most Americans couldn''t vote" suffrage generalization — cut fail-closed (U3-E11 v3)'
+  correct: 'U3-E11 v2 taught ''most Americans couldn''t vote for president at all'' (box-1
+    trap) and ''Most Americans still couldn''t vote, and Jefferson the liberator enslaved
+    people himself'' (asterisk beat). No Tier-1 lines found in the 2026-10-07 full-chapter
+    scans. Both cut in U3-E11 v3.'
+  falsehoods:
+  - most americans couldn.{0,5}t vote
+  sources:
+  - hierarchy_check
+  tier_note: 2026-10-08 — U3-E11 v3 fail-closed cut; not a book-error claim
+- id: F-U3-076
+  topic: '"First time in the modern world" transfer superlative — trimmed to Tier-1 (U3-E11 v3)'
+  correct: 'U3-E11 v2 taught: ''The first time in the modern world a ruling party handed
+    power to the opposition and walked away.'' Tier 1 verifies only: ''the first time
+    that control of the presidency passed from one party to another'' (5steps2024 ch12).
+    The ''modern world'' extension was the script''s own — cut in U3-E11 v3, which teaches
+    the Tier-1 line verbatim in scope.'
+  falsehoods:
+  - first time in the modern world.{0,45}ruling party
+  sources:
+  - 5steps
+  - hierarchy_check
+  tier_note: 2026-10-08 — U3-E11 v3 framing trim; not a book-error claim
+- id: F-U4-090
+  topic: Twenty-one months = the Mexican-American War's duration, NOT Scott's campaign (U4-CRAM v3 framing repair)
+  correct: 'The Mexican-American War ran 1846-48, roughly twenty-one months total
+    (premium2027). Scott''s campaign - Veracruz (Mar 1847) to Mexico City (Sep 1847)
+    - was about six months. U4-CRAM v2 attached the twenty-one months to Scott:
+    "Scott landing at Veracruz and taking Mexico City in twenty-one months." v3
+    rewords: "The war itself: twenty-one months. Taylor''s army in the north; Scott
+    landing at Veracruz in March of forty-seven and taking Mexico City that September,
+    about six months from beach to capital."'
+  falsehoods:
+  - Scott.*twenty-one months
+  sources:
+  - premium2027
+  tier_note: 2026-10-08 - U4-CRAM v3 framing repair per fleet audit F13; "technically
+    true but misleading = wrong" (final-guidelines section 7). Veracruz Mar 1847 to
+    Mexico City Sep 1847 dates per premium2027.
+- id: F-LP-011
+  topic: '"France forced out of the Americas" overclaim (Haiti model exam sentence)'
+  correct: 'Teach the Haitian Revolution as ending Napoleon''s mainland/North American
+    empire project — NOT as forcing France out of the Americas. France kept French
+    Guiana and regained Martinique and Guadeloupe after 1814: "At the close of the
+    Napoleonic Wars, most of France''s colonies were restored to it by Britain,
+    notably Guadeloupe and Martinique in the West Indies, French Guiana on the coast
+    of South America" (standard account, trusted web — not Tier 1/2). U4-E1 v4 taught
+    the model sentence "the Haitian Revolution forced France out of the Americas";
+    v5 rewords to "the Haitian Revolution killed Napoleon''s American empire plans
+    and put Louisiana on the market."'
+  falsehoods:
+  - forced france out of the americas
+  sources:
+  - web
+  tier_note: 2026-10-08 - U4-E1 v5 fleet repair; overclaim caught by audit. Correction
+    verified against the standard account of post-1814 colonial restoration (trusted web,
+    disclosed — not Tier 1/2).

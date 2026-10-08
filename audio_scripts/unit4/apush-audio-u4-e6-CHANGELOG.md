@@ -37,3 +37,48 @@ Gates after repairs: 13/13 PASS.
 
 ## Final re-read — 2026-10-07
 Fresh Layer-2 re-read of all 14 repairs: REPAIRS VERIFIED. One flagged seam smoothed: "So which region had the leverage?" / "And resented each other." → Marcus now opens "Mutual leverage — and mutual resentment." (answers the question directly, keeps his line). Final: 2,048 words + 73s pauses = 12.6 min, 13/13 gates PASS.
+
+## Repair pass — 2026-10-08 (5 audit findings, all fixed)
+Fresh Layer-2 audit found 5 items; repair worker applied all. Accuracy findings: none — Deere 1837, B&O 1828/1829 disambiguation, "Second Middle Passage" attribution all confirmed in-dialogue and intact.
+
+- **F1 (§5 error — announcer-voice exam proclamation → live trap).** Box 2's Slater/Lowell trap was a proclamation, not a live trap. Maya now makes the real student mistake and Marcus catches her in flow. Maya's caught-wrong moment gets [sheepish], Marcus's correction keeps [firm].
+  - Before: `Marcus: [firm] And by the 1840s many of those farm girls were being replaced by Irish immigrants who'd work for less. One exam trap to pocket: Slater brought the know-how in his head; Lowell built the whole system under one roof. If the prompt says "factory system," that's Lowell.`
+  - After: `Marcus: And by the 1840s many of those farm girls were being replaced by Irish immigrants who'd work for less.` + `Maya: [sheepish] So when the prompt says "factory system," that's Slater. He built the whole system under one roof.` + `Marcus: [firm] Slater brought the know-how in his head; Lowell built the whole system under one roof. If the prompt says "factory system," that's Lowell.`
+- **F2 (§4.4 warning — unearned stylistic chain).** The episode's one unearned chain re-cadenced into non-parallel form, facts kept.
+  - Before: `Long hours, dangerous machines, low pay.`
+  - After: `They worked past dark for wages that never quite covered the month, and the machines showed no mercy to a tired hand.`
+- **F3 (§9 error — tag density 83.6%).** Stripped body-default tags ([measured] ×22, [conversational] ×18) to beat-level tagging. Kept: cold-open [professional broadcast tone]; sign-off tagline [professional broadcast tone] (both lines); [firm] on the live-trap correction; [curious, inquisitive tone] on all 10 of Maya's genuine questions; [incredulous] on the Deere-tractors beat; [thoughtful tone] on 5 nuance/verdict beats; takeaway [confident tone]; [sheepish] per F1/F4; self-test fully neutral; one tag per turn max (0 turns exceed it). Live counts: 61/73 = 83.6% → 23/75 = 30.7%. Note: this lands below the audit's ~35–38% fleet target because the keep list was applied exactly — no body-default tags survived. The re-read should confirm 30.7% reads as under-tagged vs fleet-consistency concerns.
+- **F4 (§9 warning — caught-wrong re-tag).** Telegraph-first wrong beat: Maya's "I'm going to flip them" line re-tagged to the catalog's caught-wrong tag.
+  - Before: `Maya: [conversational] Noted. And I'm absolutely going to flip them on the test, I can feel it.`
+  - After: `Maya: [sheepish] Noted. And I'm absolutely going to flip them on the test, I can feel it.`
+- **F5 (§7 minor warning — attribution strength).** "Historians estimate" → named source per registry F-U4-009 (scale is NPS-confirmed; term is Ira Berlin's). No new registry entry needed.
+  - Before: `Marcus: [measured] Historians estimate something like a million over the decades.`
+  - After: `Marcus: The National Park Service's estimate runs something like a million over the decades.`
+- **No-action (per audit):** antitheses exactly 2 in banned form, at budget (L41 "Not an improvement — a different universe."; L91 "that's an estimate, not a census.") — left untouched, no new ones introduced. Canal song, Deere-tractors beat, both wrong-beat tools kept. Accuracy-sensitive lines untouched.
+
+**Runtime (honest math, no padding):** the audit-mandated fixes added words, so the v2 promise no longer holds: 2,079 spoken words + 73s pauses = 12.8 min at 180 WPM → cold-open promise and header both updated to "About thirteen minutes."
+
+**Gates (live run, v3 file, --minutes 13):** 13/13 PASS. Warnings reviewed, all benign: W1 "This is" (pre-existing); W2 possible triples — all pre-existing lines (box list L7, appositives L17/L59, L29, L35), none from the new lines. G12 PASS — no F-U3-037-type false positive on this lesson.
+
+**v2-entry drift corrected (auditor-flagged, live counts confirmed):** Maya ?-ratio was listed 0.31 → actual 0.40; Marcus max turn 67 → 70; em dashes 5 → 6. Reported v3 numbers are all live-run.
+
+**Not re-read yet:** this repair pass had no Layer-2 re-read — the blind re-read still pending before lock. One item flagged for the re-reader: tag density 30.7% vs the ~35–38% fleet target (see F3 note above).
+
+## Surgical repair — 2026-10-08 (2 antithesis forms reworked, v4)
+
+**Record correction:** the v3 entry's no-action line claimed "antitheses exactly 2 in banned form, at budget." That was false — 4 existed in v3. The audit had counted only 2 (L41, L95); L17 and L83 were pre-existing v2 lines the audit never counted. This v4 repair reworks exactly those 2 into asymmetric phrasing; L41 and L95 are untouched, at the §4.14 ≤2 budget.
+
+- **R1 (L17, ", not" punchline tail → asymmetric).** Facts kept: steamboats ran up and down the Mississippi, freight moved against the current.
+  - Before: `Marcus: ...within a generation steamboats were running up and down the Mississippi, goods moving against the current, not just with it.`
+  - After: `Marcus: ...within a generation steamboats were running up and down the Mississippi, freight moving against the current.`
+- **R2 (L83, "didn't X. Y" denial + affirmative restatement → asymmetric).** Facts kept: the telegraph didn't start the revolution; it arrived late and sped things up.
+  - Before: `Marcus: ...the telegraph didn't start this revolution. It showed up late and made it faster.`
+  - After: `Marcus: ...the telegraph showed up late to this revolution, and then it made everything faster.`
+- **Manual antithesis count (all sentence-forms, §4.14 "Not X, just Y" budget 2):** v3 = 4 (L17, L41, L83, L95) → v4 = 2 (L41 `One-twentieth? Not an improvement — a different universe.`; L95 `that's an estimate, not a census.`). Note for the re-reader: L91 carries denial-style lines (`It should have. It didn't, and that gap is the exam's favorite trap.`; `It didn't touch the demand.`) — reviewed and left; they are expectation-denial beats, not "Not X, just Y" antithesis forms, and were never in the counted 4.
+- **Nothing else touched.** L41, L95, and every other line are byte-identical to v3.
+
+**Gates (live run, v4 file, --minutes 13):** 13/13 PASS. W1 uncontracted phrasing 1x ('This is', L65 — pre-existing); W2 possible triples — all pre-existing appositive/list lines (L7 box list, L17/L29/L35/L59 appositives), none from the reworked lines. G9 antithesis budget PASS.
+
+**Runtime (live run, honest math):** 2,075 spoken words (−4 vs v3) + 73s pauses = 12.7 min @180 WPM. Cold-open promise and header both say "About thirteen minutes" — still holds; header word-count line updated to the live 2,075.
+
+**Not re-read yet:** this surgical pass had no Layer-2 re-read — the blind re-read still pending before lock. The re-reader should spot-check the two reworked lines in flow and the tag-density note carried from v3.

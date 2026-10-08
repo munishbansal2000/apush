@@ -156,3 +156,82 @@ foreign policy" (L3: acceptable characterization), L13 echo-adjacent
 factory line (adds image).
 Registry: no new corrections from this pass — all Layer-3 confirmed
 claims were already consistent with the 247-entry registry.
+
+---
+
+## Repair pass — 2026-10-08 (repair worker, 13 audit findings → v3)
+
+Auditor's 13 findings, all repaired. v3: 1,855 spoken words + 69s scripted
+pauses ([8s]×2, [16s]×3, [5s]×1) = 11.46 min ≈ 11.5 at ≤180 WPM (gate
+reports 161 WPM). Cold-open promise "Eleven and a half minutes", header,
+and real math agree. Gates run by the repair worker on the v3 file:
+**13/13 PASS** (G9 antithesis: 0 hits remain, budget ≤2; G8: 8 dialogue
+em-dashes, ≤10; G1: 0 banned starters; G12: no known-falsehood hits —
+F-U3-037 pattern did not fire on any line; nothing to flag). W2 triple
+warnings remain on inherent-content lists only (L7 boxes, L17 earned chain,
+L139 recap, L161 Q2 answer) — accepted, not stylistic.
+
+### Accuracy
+- **A1 (drop unsourced "first" ×2).**
+  BEFORE: `Marcus: ... Land values crashed, farmers lost their farms, workers lost their jobs. The first nationwide depression.`
+  AFTER: `Marcus: ... Land values crashed, and farmers and workers took the worst of it. A nationwide depression.`
+  BEFORE: `Maya: ... land values collapse, farms go to foreclosure: the country's first nationwide depression.`
+  AFTER: `Maya: ... land values collapse, and farmers and workers take the worst of it. A nationwide depression.`
+- **A2 (hedge unverified foreclosure detail; folded into the same edits).**
+  L113 above: "farmers lost their farms" → "farmers and workers took the worst of it" (Tier 1 supports "nationwide depression", not foreclosure counts).
+  BEFORE (recap): `Maya: ... the Bank's easy loans, the credit squeeze, the foreclosures.`
+  AFTER: `Maya: ... the Bank's easy loans, the credit squeeze, land values crashing.`
+- **A3 (soften "the country's great port").**
+  BEFORE: `Marcus: ... It made New York City the country's great port and gave the Great Lakes a water road to the Atlantic.`
+  AFTER: `Marcus: ... It made New York City the port that mattered for the Great Lakes trade, and gave the Great Lakes a water road to the Atlantic.`
+- **A4 (scope the bonus answer to sourced European reception).**
+  BEFORE: `Maya: Washington Irving and the Hudson River School, American stories and American landscapes, sold and read in Europe too.`
+  AFTER: `Maya: Irving's stories sold and were read in Europe too. The painters made the landscapes the world came to see. Same project: a culture independent of Europe.`
+- **A5 (mark federal funding as the plan, not the outcome).**
+  BEFORE: `Marcus: ... And the last part, the one the states ended up leading: internal improvements. Federally funded roads and canals, stitching the country into one market.`
+  AFTER: `Marcus: ... And the last part: internal improvements. Federally funded roads and canals. That was the plan, though the states ended up leading the building. Stitching the country into one market.`
+
+### Voice / traps
+- **V1 (three announcer-voice proclamations → live traps; Maya makes the mistake, Marcus catches her, [sheepish]/[firm]).**
+  L51 — BEFORE: `Maya: [firm] One mistake to skip: don't write that the canal was a federal project. New York State dug it, and that's the kind of detail a question uses to separate readers from guessers.`
+  AFTER: `Maya: [sheepish] So the canal was the System working: federal money dug the ditch?` / `Marcus: [firm] New York State dug it. The plan was federal funding. Questions use that kind of detail to separate readers from guessers.`
+  L65 — BEFORE: `Maya: [firm] So the trap answer is "they painted Washington." Their subject was the land, which is the whole point of the school.`
+  AFTER: `Maya: [sheepish] So the Hudson River guys painted the heroes: Washington crossing, the founders?` / `Marcus: [firm] Their subject was the land. Nature itself, painted to make you feel something. That's the point of the school.`
+  L125 — BEFORE: `Marcus: [measured] One more trap: don't file the Panic under "the war ended and trade dried up." The chain starts at the Bank's easy money on western land — the exam wants the lender, not the aftermath.`
+  AFTER: `Maya: [sheepish] The war ended, trade dried up, the economy crashed. That's the Panic, right?` / `Marcus: [firm] Start at the Bank. The chain runs: easy money on western land, then tightened credit, then collapsed values. The lender's the hinge. File it there.`
+- **V2 (earn the Doctrine quote — Maya stakes a claim first).**
+  BEFORE: `Maya: [conversational] Give me his actual words. The line they'd put in a textbook.`
+  AFTER: `Maya: [curious, inquisitive tone] He told Europe to stay out; was it really that blunt?`
+- **V3 (replace the re-list with the implication).**
+  BEFORE: `Maya: [conversational] Three parts, one machine. Tariff, Bank, roads and canals.`
+  AFTER: `Maya: [curious, inquisitive tone] Three parts, one machine, and the tariff pays for the rest, right?` (tariff revenue earmarked for improvements — Tier-1, ch12)
+- **T1 (G9 antithesis: 6 structures → 0).**
+  L41 — BEFORE: `Marcus: ... Graders reward the connection, not just the list.`
+  AFTER: `Marcus: ... List the parts, then name the goal they share. The connection is what gets graded.`
+  L63 — killed by the L65 live-trap conversion above.
+  L107 — BEFORE: `Marcus: [firm] And never write that the US Navy enforced the Doctrine. In 1823 it was tiny. Britain's fleet did the enforcing.`
+  AFTER: `Marcus: [firm] America's navy in 1823 couldn't have enforced the Doctrine. It was tiny. Britain's fleet enforced it.` (kept auditor-cleared characterization "America supplied the words.")
+  L125 — killed by the L125 live-trap conversion above (both structures gone).
+  L149 — BEFORE: `Maya: ... And the tell is who built it: New York State, not the federal government.`
+  AFTER: `Maya: ... The tell is who built it: New York State — the states were doing the improving themselves, and that's the hinge the whole question turns on.` (also reworded per audit to avoid re-teaching the L51 trap twice)
+  Gate G9 on v3: 0 hits (budget ≤2). Manually verified: no remaining ", not X." / "Not X. Y." / "never X. Y." structures.
+- **TR1 (break the excess parallel chain; keep the earned L17 chain).**
+  BEFORE: `Marcus: ... Land values crashed, farmers lost their farms, workers lost their jobs.`
+  AFTER: `Marcus: ... Land values crashed, and farmers and workers took the worst of it.` (re-cadenced non-parallel; rides in the A1/A2 edit)
+- **TA1 (tag density 85% → 24.4%).**
+  Stripped body-default [measured]/[conversational] to beat-level tagging: 20/82 turns tagged (24.4%, under the ~40% fleet cap; cf. U4-E13 36.5%). Kept: cold-open + sign-off duet [professional broadcast tone] (×3); [firm] ×4 on Marcus's exam-truth corrections (L51, L65, L107, L125 traps); [curious, inquisitive tone] ×3 on Maya's genuine questions (L21, L37, L41); [incredulous] ×2 on her wrong beats (L6, recap fumble); [sheepish] ×3 on her caught-wrong trap lines; [confident tone] ×2 (takeaways); [playful] canal song, [warm tone] debit-card moment, [intrigued] tease. Self-test fully neutral. One tag per turn max.
+
+### Changelog corrections (this entry supersedes the false v2 claims)
+- **C1 — the v2 entry's claim #4 was false.** It said the back-to-back "the exam wants X, not Y" template was "replaced with a fresh template" — but v2's L123 (`the exam doesn't want the year; it wants the chain.`) and L125 (`the exam wants the lender, not the aftermath.`) still had it back-to-back. v3 actually replaces both: L123 → "For the Panic, memorize the chain: easy loans, tightened credit, collapsed land values. It starts at the Bank. If your answer starts anywhere else, rewrite it."; L125 died with the live-trap conversion. No "exam wants/doesn't want" template remains in v3.
+- **C2 — the v2 entry's "0 antithesis-pattern hits" was false.** v2's gate run reported 3 G9 hits (L41, L125, L149) and a manual count finds 6 structures (L41, L63, L107, L125×2, L149). All 6 are reworded in v3; v3 gate run reports 0 hits, manually verified.
+- Observed (not an audit finding, noted for the record): the v2 entry claimed dialogue em-dashes were "purged" to 1 (tagline only); v2 actually carried 9 dialogue dashes (it still passed G8's ≤10). v3 carries 8 (10 new ones from this pass were converted to periods/colons/semicolons before the gate run). G8: PASS.
+
+### Registry
+No new entries: all accuracy changes are framings/hedges of Tier-1-supported claims, no genuine factual corrections. `apush-fact-registry.yaml` re-verified to parse (715 top-level entries).
+
+### Kept per brief
+Canal song, Headless Horseman cartoon, debit-card human moment; mid-episode wrong beat and recap fumble (Box 3 "wars? Quarrels?" retained); both prediction beats with 8s pauses; self-test ritual (3 CER + "One more, fast." bonus); four boxes incl. recap ownership; "Check your boxes."; forward tease on Missouri only.
+
+### Not fixed
+- W2 triple warnings (L7, L17, L39, L139, L161): inherent-content lists (boxes, the earned deficit chain, recap items, the taught Panic chain), not stylistic — accepted per §4.4 inherent-threeness ruling.
+- No auditor claim was found wrong in the file; all 13 applied as written.
