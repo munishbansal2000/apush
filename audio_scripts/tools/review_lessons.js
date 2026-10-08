@@ -6,7 +6,7 @@ const fs = require('fs');
 const path = require('path');
 const { spawnSync } = require('child_process');
 
-const VERSION = 'apush-meta-ui-script-review-v1';
+const VERSION = 'apush-meta-ui-script-review-v2';
 const AUDIO_ROOT = path.resolve(__dirname, '..');
 const REPO_ROOT = path.resolve(AUDIO_ROOT, '..');
 const DEFAULT_LIB_DIR = process.env.APUSH_LLM_LIB_DIR ||
@@ -28,9 +28,15 @@ Audit these categories:
 4. exaggeration: absolutes, inflated novelty or importance, monocausal history, presentism, false
    certainty, and rhetoric stronger than the evidence supports.
 
-Use the attached local review context, but do not treat it as an infallible answer key. Never invent
-a citation. If a fact needs outside verification, classify it as verify rather than declaring it false.
-Quote the exact shortest relevant passage from the lesson.
+Use the attached local review context, but do not treat it as an infallible answer key. For the
+historical fact, completeness, and exaggeration checks, you MUST consult current external sources
+instead of relying on memory. Prefer Encyclopaedia Britannica where it covers the claim; otherwise
+consult an authoritative primary source, government archive, museum, university, or established
+scholarly history source. Open and read the source before reaching a conclusion. Do not rely on AI
+summaries, search-result snippets, Wikipedia alone, blogs, or social media. Never invent a citation.
+Name the source and include its direct URL in the finding's problem text whenever the source affects
+your judgment. If you cannot verify a claim from an actual authoritative source, classify it as
+verify rather than declaring it true or false. Quote the exact shortest relevant passage from the lesson.
 
 Return JSON only, without Markdown fences, using exactly this top-level shape:
 {
