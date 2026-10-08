@@ -359,7 +359,6 @@ export const FigureCard: React.FC<{ beat: FigureBeat; cfg: RenderConfig }> = ({ 
   const portraitH = box.h * 0.55;
   const nameSize = useFit(beat.name, box.w - 40, 1, 34);
   const roleSize = useFit(beat.role, box.w - 40, 2, 22, SANS, 400);
-  const initials = beat.name.split(/\s+/).filter(w => /^[A-Z]/.test(w)).map(w => w[0]).slice(0, 2).join('');
   return (
     <div data-kit="figure" style={{ ...rectStyle(cfg.figureCard.rect), perspective: 900 }}>
       <div style={{ width: '100%', height: '100%', background: '#f3ead6', color: '#231c14', borderRadius: 10, overflow: 'hidden', boxShadow: '0 14px 34px rgba(0,0,0,0.5)',
@@ -369,11 +368,18 @@ export const FigureCard: React.FC<{ beat: FigureBeat; cfg: RenderConfig }> = ({ 
             <Img src={staticFile(beat.image)} style={{ display: 'block', width: '100%', height: '100%', objectFit: 'cover', objectPosition: '50% 20%',
               filter: `sepia(${1 - develop * 0.7}) blur(${(1 - develop) * 8}px) contrast(${0.8 + develop * 0.25})`, transform: `scale(${1.08 - develop * 0.08})` }} />
           ) : (
-            <svg width="100%" height="100%" viewBox="0 0 100 80" preserveAspectRatio="xMidYMid slice" style={{ display: 'block', opacity: 0.4 + develop * 0.6 }}>
-              <circle cx={50} cy={30} r={15} fill="#6b5b48" />
-              <path d="M18 80 Q50 42 82 80 Z" fill="#6b5b48" />
-              <text x={50} y={35} textAnchor="middle" fontSize={11} fontFamily={SERIF} fill="#f3ead6" fontWeight={700}>{initials}</text>
-            </svg>
+            /* No image: honest typographic treatment. Never a fake portrait,
+               never initials in a circle. The likeness badge below the
+               portrait area already states the provenance. */
+            <div style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
+              background: '#2e2620', padding: '0 28px', opacity: 0.4 + develop * 0.6 }}>
+              <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 32, color: '#f3ead6', textAlign: 'center', lineHeight: 1.25 }}>
+                {beat.name}
+              </div>
+              <div style={{ fontFamily: SANS, fontSize: 13, letterSpacing: '0.2em', color: '#a89880', marginTop: 12, textTransform: 'uppercase', textAlign: 'center' }}>
+                {beat.likeness === 'none' ? 'No portrait survives' : 'No contemporary portrait'}
+              </div>
+            </div>
           )}
           {beat.likeness && beat.likeness !== 'from life' && (
             <div style={{ position: 'absolute', right: 8, bottom: 8, fontFamily: SANS, fontSize: 14, color: '#f3ead6', background: 'rgba(0,0,0,0.55)', padding: '2px 8px', borderRadius: 4 }}>

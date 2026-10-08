@@ -80,9 +80,10 @@ B = [
    ]}),
  ('figure-crosby', 'figure', 'In 1972 a historian named Alfred Crosby', 't20', 'alfred crosby', ('anchor', 'In 1972 a historian named Alfred Crosby', 'columbian exchange'),
   {'name': 'Alfred W. Crosby', 'dates': '1931–2018', 'role': 'Historian who named the Columbian Exchange (1972)', 'likeness': 'none'}),
- ('figure-sahagun', 'figure', 'The Florentine Codex preserves Nahua accounts', 't37', None, ('turns', 2),
-  {'name': 'Bernardino de Sahagún', 'dates': 'c. 1499–1590', 'role': 'Franciscan friar; compiled the Codex with Nahua scholars', 'likeness': 'later likeness'}),
- ('doc-codex', 'document', 'The Florentine Codex preserves Nahua accounts', 't37', 'nahua accounts', ('turns', 3),
+ ('figure-sahagun', 'figure', 'The Florentine Codex preserves Nahua accounts', 't37', None, ('anchor', 'The Florentine Codex preserves Nahua accounts', 'nahua accounts'),
+  {'name': 'Bernardino de Sahagún', 'dates': 'c. 1499–1590', 'role': 'Franciscan friar; compiled the Codex with Nahua scholars', 'likeness': 'later likeness',
+   'image': 'historic/u1e3/sahagun-portrait.jpg'}),
+ ('doc-codex', 'document', 'The Florentine Codex preserves Nahua accounts', 't37', 'nahua accounts', ('turns', 2),
   {'image': 'historic/u1e3/florentine-codex-page.jpg', 'title': 'Florentine Codex, Book 12',
    'attribution': 'Compiled under Bernardino de Sahagún with Nahua scholars, c. 1545–1577',
    'excerpt': 'The sick lay in their homes, unable to move, unable even to turn over, and there was no one left to care for them.',
@@ -176,7 +177,7 @@ B = [
   {'text': 'CATTLE → RANCHING', 'level': 'subtitle', 'position': [X, 0.36]}),
  ('bg-maize', 'bg', "Now maize. It didn't stop in Europe", 't19', None, None,
   {'image': 'historic/u1e3/maize-botanical.jpg'}),
- ('crosby-1972', 'text', 'In 1972 a historian named Alfred Crosby', 't20', '1972', ('turns', 2),
+ ('crosby-1972', 'text', 'In 1972 a historian named Alfred Crosby', 't20', '1972', ('anchor', 'In 1972 a historian named Alfred Crosby', 'alfred crosby'),
   {'text': '1972', 'level': 'hero', 'position': [X, 0.2], 'entrance': 'stamp', 'color': GOLD}),
  ('crosby-label', 'text', 'In 1972 a historian named Alfred Crosby', 't20', 'columbian exchange', ('turns', 2),
   {'text': 'THE COLUMBIAN EXCHANGE', 'level': 'subtitle', 'position': [X, 0.5], 'entrance': 'stamp'}),
@@ -308,7 +309,7 @@ for bid, kind, anchor, manual_tid, word, until, props in B:
             ui = uh[0][0]
             uo = 0.0
             if until[2]:
-                uo = word_offset(turns[ui]['text'], until[2], durations[ui]) or 0.0
+                uo = round(word_offset(turns[ui]['text'], until[2], durations[ui]) or 0.0, 2)
             end = round(starts[ui] + uo, 2)
         else:
             issues.append(f"UNTIL-MISS {bid}: '{until[1]}' -> {len(uh)} hits (using turn end)")
@@ -339,4 +340,20 @@ print(f"Resolved {len(resolved)}/{len(B)} beats")
 print(f"Issues: {len(issues)}")
 for i in issues:
     print(" ", i)
+
+# Layout auto-fix pass (ported from apush-episode-kit): correct text/bubble
+# positions that collide or leave the safe area. Logs L001-L003; B003/B004
+# errors are for the author to fix in the B table above.
+try:
+    from layout_fix import resolve_layout
+    _cfg = json.load(open(os.path.join(ROOT, 'src', 'data', 'render-config.json'), encoding='utf-8'))
+    resolved, _layout_issues = resolve_layout(resolved, _cfg)
+    _n_fix = sum(1 for _i in _layout_issues if _i['code'] in ('L001', 'L002', 'L003'))
+    _n_err = sum(1 for _i in _layout_issues if _i['level'] == 'error')
+    print(f"Layout: {_n_fix} auto-corrected, {_n_err} errors")
+    for _i in _layout_issues:
+        print(f"  [{_i['level']}] {_i['code']} {_i['where']}: {_i['msg']}")
+except ImportError as _e:
+    print(f"Layout pass skipped: {_e}")
+
 json.dump(resolved, open(OUT, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
