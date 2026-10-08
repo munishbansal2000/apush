@@ -20,9 +20,10 @@
  */
 import { execFileSync } from 'node:child_process';
 import { mkdirSync, rmSync, writeFileSync, readFileSync, existsSync } from 'node:fs';
-import { join } from 'node:path';
+import { join, resolve } from 'node:path';
 
-const ROOT = join(__dirname, '..');
+const rootArg = process.argv.find((a, i) => process.argv[i - 1] === '--root');
+const ROOT = rootArg ? resolve(rootArg) : join(__dirname, '..');
 
 interface SamplePoint {
   frame: number;
@@ -149,7 +150,8 @@ async function main() {
   console.log('Bundling...');
   const serveUrl = await bundle({ entryPoint: join(ROOT, 'src', 'index.ts') });
   const browserExecutable = process.env.REMOTION_BROWSER ?? null;
-  const compositionId = `U1${episode}Episode`;
+  const compArg = process.argv.find((a, i) => process.argv[i - 1] === '--composition');
+  const compositionId = compArg ?? `U1${episode}Episode`;
   const composition = await selectComposition({
     serveUrl,
     id: compositionId,

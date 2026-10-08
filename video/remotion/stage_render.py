@@ -105,7 +105,15 @@ def main():
     parser.add_argument('--act', type=int, help='Act number, omit for all')
     parser.add_argument('--mode', choices=['test', 'review', 'prod'], default='test')
     parser.add_argument('--force', action='store_true')
+    parser.add_argument('--remotion-root', default=None,
+                        help='Remotion project root (default: this script\'s dir). Use for video2/.')
     args = parser.parse_args()
+
+    # Allow targeting a different remotion project (e.g. video2/).
+    # All src/ reads and the npx render run against ROOT.
+    global _BASE
+    if args.remotion_root:
+        _BASE = Path(args.remotion_root).resolve()
 
     episode = args.episode.upper()
     mode = args.mode
@@ -150,7 +158,7 @@ def main():
         ]
         
         env = {**os.environ, 'TMPDIR': str(Path.home() / 'workspace' / 'render_tmp')}
-        result = subprocess.run(cmd, capture_output=True, text=True, env=env)
+        result = subprocess.run(cmd, capture_output=True, text=True, env=env, cwd=str(_BASE))
         
         if result.returncode != 0:
             print(f"ERROR rendering act {act_num}:")
