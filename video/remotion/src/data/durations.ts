@@ -10,11 +10,11 @@ function totalFrames(epKey: string): number {
   try {
     const data = loadEpisodeData(epKey);
     const { starts, durations } = data;
-    if (!starts.length || !durations.length) return 0;
+    if (!starts.length || !durations.length) return 30; // 1s fallback for missing data
     const totalSec = starts[starts.length - 1] + durations[durations.length - 1];
-    return Math.ceil(totalSec * FPS);
+    return Math.max(30, Math.ceil(totalSec * FPS));
   } catch {
-    return 0;
+    return 30;
   }
 }
 
