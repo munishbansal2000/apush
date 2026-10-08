@@ -8,6 +8,14 @@ offsets (estimated method, matching anchors.ts), and writes resolved beats JSON.
 """
 import json, re, unicodedata, sys
 
+# Windows consoles and open() default to a locale encoding (cp1252) that
+# cannot handle the unicode in beat props (→, ·, —). Be explicit everywhere.
+if hasattr(sys.stdout, 'reconfigure'):
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+    except Exception:
+        pass
+
 def norm(s):
     s = s.lower()
     s = unicodedata.normalize('NFD', s)
@@ -48,8 +56,8 @@ TURNS = os.path.join(ROOT, 'src', 'data', 'e3', 'turns.json')
 TIMING = os.path.join(ROOT, 'src', 'data', 'e3', 'timing_map.json')
 OUT = os.path.join(ROOT, 'src', 'data', 'e3', 'beats_kit.json')
 
-turns = json.load(open(TURNS))
-timing = json.load(open(TIMING))
+turns = json.load(open(TURNS, encoding='utf-8'))
+timing = json.load(open(TIMING, encoding='utf-8'))
 starts, durations = timing['starts'], timing['durations']
 total = starts[-1] + durations[-1]
 turn_id_to_idx = {t.get('id', 't%02d' % i): i for i, t in enumerate(turns)}
@@ -331,4 +339,4 @@ print(f"Resolved {len(resolved)}/{len(B)} beats")
 print(f"Issues: {len(issues)}")
 for i in issues:
     print(" ", i)
-json.dump(resolved, open(OUT, 'w'), indent=1, ensure_ascii=False)
+json.dump(resolved, open(OUT, 'w', encoding='utf-8'), indent=1, ensure_ascii=False)
