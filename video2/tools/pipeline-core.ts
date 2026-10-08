@@ -3,8 +3,8 @@ import {existsSync, readFileSync, writeFileSync, mkdirSync, unlinkSync, readdirS
 import {basename, dirname, join, resolve} from 'node:path';
 
 export type PipelineMode = 'dev' | 'prod';
-export type PipelineStage = 'turns' | 'audio' | 'timing' | 'words' | 'images' | 'direct' | 'clips' | 'contact' | 'render';
-export const PIPELINE_STAGES: PipelineStage[] = ['turns', 'audio', 'timing', 'words', 'images', 'direct', 'clips', 'contact', 'render'];
+export type PipelineStage = 'turns' | 'pronounce' | 'audio' | 'timing' | 'words' | 'images' | 'direct' | 'clips' | 'contact' | 'render';
+export const PIPELINE_STAGES: PipelineStage[] = ['turns', 'pronounce', 'audio', 'timing', 'words', 'images', 'direct', 'clips', 'contact', 'render'];
 
 export interface PipelineTurn {
   id: string;

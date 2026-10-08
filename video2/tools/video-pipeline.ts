@@ -168,7 +168,36 @@ function applyPronunciations(text: string, terms: {term: string; tts: string}[])
   return text;
 }
 const PRONUNCIATIONS = loadPronunciations();
-const audioHash = sha256(JSON.stringify({mode, turns, edge: cfg.edge, fish: cfg.fish}));
+
+// Pronunciation candidate generation (Meta UI identifies hard words)
+const pronPath = join(ROOT, 'src', 'data', 'pronunciations.json');
+const pronounceHash = sha256(JSON.stringify(turns.map(t => t.text)));
+if (stages.includes('pronounce')) {
+  if (current('pronounce', pronounceHash)) console.log('[pronounce] checkpoint current');
+  else if (dryRun) console.log('[pronounce] dry-run: would identify difficult words via Meta UI');
+  else {
+    const existing = existsSync(pronPath) ? JSON.parse(readFileSync(pronPath, 'utf8')) : {terms: []};
+    const knownTerms = new Set((existing.terms ?? []).map((t: any) => t.term.toLowerCase()));
+    const prompt = `You are a TTS pronunciation specialist. Read the transcript below. Identify words that English TTS engines commonly mispronounce: foreign names, indigenous terms, archaic spellings, and historical figures. For each, provide the term as it appears, a human stress guide (CAPS for stressed syllable), and a phonetic TTS string (lowercase, hyphenated syllables). Skip common English words. Return JSON only: {"terms":[{"term":"...","guide":"...","tts":"..."}]}.\n\nTRANSCRIPT:\n${turns.filter(t => t.kind === 'speech').map(t => t.text).join('\n')}`;
+    const out = meta('pronounce', prompt);
+    const result = readJson<{terms: {term: string; guide: string; tts: string}[]}>(out);
+    let added = 0;
+    for (const term of result.terms ?? []) {
+      if (!term.term || knownTerms.has(term.term.toLowerCase())) continue;
+      existing.terms.push({term: term.term, guide: term.guide, tts: term.tts, approved: false});
+      knownTerms.add(term.term.toLowerCase());
+      added++;
+      console.log(`  + candidate: "${term.term}" -> "${term.tts}" (needs approval)`);
+    }
+    if (added) {
+      atomicJson(pronPath, existing);
+      console.log(`[pronounce] ${added} new candidates added to ${pronPath} (approved=false, review before audio)`);
+    } else console.log('[pronounce] no new candidates');
+    mark('pronounce', pronounceHash);
+  }
+}
+
+const audioHash = sha256(JSON.stringify({mode, turns, edge: cfg.edge, fish: cfg.fish, pron: PRONUNCIATIONS}));
 if (stages.includes('audio')) {
   if (current('audio', audioHash) && turns.filter(t => t.kind === 'speech').every(t => existsSync(join(audioDir, `${t.id}.mp3`)))) console.log('[audio] checkpoint current');
   else if (dryRun) console.log(`[audio] dry-run: ${mode === 'prod' ? 'Meta UI Fish direction + Fish' : 'Edge TTS'}`);
