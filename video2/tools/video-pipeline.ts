@@ -401,13 +401,13 @@ if (stages.includes('direct')) {
   type TransportScene = Omit<DirectedPlan['scenes'][number], 'turnIds'> & {turnIds?: string[]; turnRange?: unknown};
   type TransportPlan = Omit<DirectedPlan, 'scenes'> & {scenes: TransportScene[]};
   const validateTransportContract = (raw: TransportPlan): void => {
-    const topKeys = new Set(['version', 'episode', 'title', 'scenes']);
+    const topKeys = new Set(['version', 'episode', 'title', 'roadmap', 'scenes']);
     const extraTop = Object.keys(raw as object).filter(key => !topKeys.has(key));
     if (extraTop.length) throw new Error(`director output has unsupported top-level fields: ${extraTop.join(', ')}`);
     if (raw.version !== 1 || typeof raw.episode !== 'string' || !raw.episode || typeof raw.title !== 'string' || !raw.title || !Array.isArray(raw.scenes) || !raw.scenes.length) {
       throw new Error('director output must contain version=1, non-empty episode/title, and non-empty scenes');
     }
-    const sceneKeys = new Set(['id', 'component', 'turnRange', 'props', 'transition']);
+    const sceneKeys = new Set(['id', 'component', 'turnRange', 'props', 'transition', 'roadmapIndex']);
     for (const [index, scene] of raw.scenes.entries()) {
       if (!scene || typeof scene !== 'object') throw new Error(`scene ${index}: must be an object`);
       const extra = Object.keys(scene).filter(key => !sceneKeys.has(key));
