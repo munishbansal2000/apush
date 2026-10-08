@@ -357,6 +357,9 @@ export function validateCanvas(plan: DirectedPlan): string[] {
     if (dur > 60) {
       warnings.push(`${scene.id}: scene is ${dur.toFixed(1)}s (viewer fatigue risk)`);
     }
+    if (dur > 25 && (scene.component === 'ken_burns' || scene.component === 'title' || scene.component === 'quote')) {
+      warnings.push(`${scene.id}: static ${scene.component} holds for ${dur.toFixed(1)}s (consider splitting or adding motion)`);
+    }
     // Visual monotony: >3 consecutive same component
     if (i > 0 && plan.scenes[i - 1].component === scene.component) {
       run++;
