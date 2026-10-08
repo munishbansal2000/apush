@@ -190,12 +190,14 @@ async function main() {
   }
   console.log('\n');
 
-  // Tile into contact sheet
+  // Tile into contact sheet. NOTE: -pattern_type glob is not supported by
+  // Windows ffmpeg builds, so use the %04d sequence pattern instead
+  // (stills are written as 0000.png, 0001.png, ...).
   const sheet = join(ROOT, 'out', `${epLower}-contact.png`);
   const rows = Math.ceil(frames.length / cols);
   execFileSync('ffmpeg', [
     '-y', '-v', 'error',
-    '-pattern_type', 'glob', '-i', join(outDir, '*.png'),
+    '-i', join(outDir, '%04d.png'),
     '-vf', `tile=${cols}x${rows}:padding=4:color=black`,
     '-frames:v', '1', sheet,
   ]);
