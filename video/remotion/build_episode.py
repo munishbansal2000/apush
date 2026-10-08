@@ -39,6 +39,10 @@ import subprocess
 import sys
 from pathlib import Path
 
+# Base directory: this script's location. All paths anchor here, not cwd.
+_BASE = Path(__file__).parent
+
+
 
 # Act boundaries (frames) — from timing_map.json
 # TODO: derive from timing instead of hardcoding
@@ -84,7 +88,7 @@ def file_hash(path):
 
 
 def get_cache_dir(episode):
-    d = Path(f'.build_cache/{episode}')
+    d = _BASE / f'.build_cache/{episode}'
     d.mkdir(parents=True, exist_ok=True)
     return d
 
@@ -92,7 +96,7 @@ def get_cache_dir(episode):
 def check_timing(episode, tts_provider, force=False):
     """Ensure timing.json exists and is current. Build if needed."""
     cache_dir = get_cache_dir(episode)
-    timing_path = Path(f'src/data/{episode.lower()}/timing_map.json')
+    timing_path = _BASE / f'src/data/{episode.lower()}/timing_map.json'
     
     if timing_path.exists() and not force:
         print(f"  Timing exists: {timing_path}")
@@ -133,7 +137,7 @@ def render_act(episode, act_num, mode, force=False):
     print(f"\n[2/5] Rendering Act {act_num} ({mode})...")
     
     cache_dir = get_cache_dir(episode)
-    tsx_path = Path(f'src/components/U1{episode}Episode.tsx')
+    tsx_path = _BASE / f'src/components/U1{episode}Episode.tsx'
     tsx_hash = file_hash(tsx_path)
     
     # Check cache

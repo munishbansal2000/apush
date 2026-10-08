@@ -22,6 +22,10 @@ import os
 import subprocess
 from pathlib import Path
 
+# Base directory: this script's location. All paths anchor here, not cwd.
+_BASE = Path(__file__).parent
+
+
 
 def get_act_boundaries(episode, num_acts=5, fps=30):
     """
@@ -32,7 +36,7 @@ def get_act_boundaries(episode, num_acts=5, fps=30):
     import re
     m = re.match(r'U(\d+)E(\d+)', episode.upper())
     ep_lower = f'u{m.group(1)}e{m.group(2)}' if m else episode.lower()
-    timing_path = Path(f'src/data/{ep_lower}/timing_map.json')
+    timing_path = _BASE / f'src/data/{ep_lower}/timing_map.json'
     
     if not timing_path.exists():
         raise FileNotFoundError(f"Timing map not found: {timing_path}")
@@ -108,13 +112,13 @@ def main():
     scale = RENDER_SCALES[mode]
     fps = RENDER_FPS[mode]
     
-    tsx_path = Path(f'src/components/U1{episode}Episode.tsx')
+    tsx_path = _BASE / f'src/components/U1{episode}Episode.tsx'
     if not tsx_path.exists():
         print(f"ERROR: {tsx_path} not found")
         return 1
     
     tsx_hash = file_hash(tsx_path)
-    cache_dir = Path(f'.build_cache/{episode}')
+    cache_dir = _BASE / f'.build_cache/{episode}'
     cache_dir.mkdir(parents=True, exist_ok=True)
     
     # Derive act boundaries from timing data (not hardcoded)

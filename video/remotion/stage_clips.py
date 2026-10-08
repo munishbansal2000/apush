@@ -51,6 +51,10 @@ import subprocess
 import sys
 from pathlib import Path
 
+# Base directory: this script's location. All paths anchor here, not cwd.
+_BASE = Path(__file__).parent
+
+
 # LTX generation caps at ~6s per call; longer beats are extended by looping.
 LTX_GEN_SECONDS = 6.0
 # Max seconds per clip (user rule).
@@ -311,7 +315,7 @@ def generate_clips(beats, ep_dir, cfg, provider_override="manifest",
 
         # Resolve base image to public/ path
         base_image = beat["base_image"]
-        image_path = Path("public") / base_image
+        image_path = _BASE / "public" / base_image
         if not image_path.is_file():
             raise RuntimeError(
                 f"[clips] beat {bid}: base_image not found: {image_path}")
@@ -434,7 +438,7 @@ def main():
     print(f"[clips] found {len(beats)} LTX beats")
 
     # Load prior manifest
-    manifest_path = Path("public") / "ltx" / episode.lower() / "MANIFEST.json"
+    manifest_path = _BASE / "public" / "ltx" / episode.lower() / "MANIFEST.json"
     prior = {}
     if manifest_path.exists():
         try:

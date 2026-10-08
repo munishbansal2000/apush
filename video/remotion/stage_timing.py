@@ -19,6 +19,10 @@ import re
 import subprocess
 from pathlib import Path
 
+# Base directory: this script's location. All paths anchor here, not cwd.
+_BASE = Path(__file__).parent
+
+
 
 def file_hash(path):
     h = hashlib.sha256()
@@ -28,7 +32,7 @@ def file_hash(path):
 
 
 def get_cache():
-    d = Path('.timing_cache')
+    d = _BASE / '.timing_cache'
     d.mkdir(exist_ok=True)
     return d
 

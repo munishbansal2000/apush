@@ -32,10 +32,14 @@ import subprocess
 import urllib.request
 from pathlib import Path
 
+# Base directory: this script's location. All paths anchor here, not cwd.
+_BASE = Path(__file__).parent
+
+
 
 def scan_tsx_for_images(episode):
     """Find all image references in episode TSX."""
-    tsx_path = Path(f'src/components/U1{episode}Episode.tsx')
+    tsx_path = _BASE / f'src/components/U1{episode}Episode.tsx'
     if not tsx_path.exists():
         print(f"ERROR: {tsx_path} not found")
         return {}
@@ -72,7 +76,7 @@ def scan_tsx_for_images(episode):
 
 def load_catalog():
     """Load images.json catalog."""
-    catalog_path = Path('src/data/images.json')
+    catalog_path = _BASE / 'src/data/images.json'
     if catalog_path.exists():
         return json.loads(catalog_path.read_text())
     return {}
@@ -80,7 +84,7 @@ def load_catalog():
 
 def save_catalog(catalog):
     """Save images.json catalog."""
-    catalog_path = Path('src/data/images.json')
+    catalog_path = _BASE / 'src/data/images.json'
     catalog_path.parent.mkdir(parents=True, exist_ok=True)
     catalog_path.write_text(json.dumps(catalog, indent=1, sort_keys=True))
     print(f"Saved catalog: {catalog_path} ({len(catalog)} entries)")
@@ -88,7 +92,7 @@ def save_catalog(catalog):
 
 def download_image(path, source_url):
     """Download image from source URL to public/ path."""
-    dest = Path(f'public/{path}')
+    dest = _BASE / f'public/{path}'
     dest.parent.mkdir(parents=True, exist_ok=True)
     
     print(f"  Downloading {path}...")
@@ -143,7 +147,7 @@ def main():
     # Check what's missing
     missing = []
     for path in found:
-        local_path = Path(f'public/{path}')
+        local_path = _BASE / f'public/{path}'
         if not local_path.exists():
             missing.append(path)
     

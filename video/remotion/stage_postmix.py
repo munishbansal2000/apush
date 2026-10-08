@@ -24,6 +24,10 @@ import sys
 import tempfile
 from pathlib import Path
 
+# Base directory: this script's location. All paths anchor here, not cwd.
+_BASE = Path(__file__).parent
+
+
 
 def main():
     parser = argparse.ArgumentParser()
@@ -41,7 +45,7 @@ def main():
     ep_lower = episode.lower()
 
     # Load music timeline
-    timeline_path = Path(f'src/data/{ep_lower}/music_timeline.json')
+    timeline_path = _BASE / f'src/data/{ep_lower}/music_timeline.json'
     if not timeline_path.exists():
         print(f"ERROR: {timeline_path} not found. Run stage_music.py first.", file=sys.stderr)
         return 1
@@ -96,7 +100,7 @@ def main():
     # Each music event: adelay to position, volume envelope, then amix with dialogue
     
     # Use workspace temp dir (not /tmp — it's only 512MB tmpfs)
-    tmp_base = Path('.build_cache/tmp')
+    tmp_base = _BASE / '.build_cache/tmp'
     tmp_base.mkdir(parents=True, exist_ok=True)
     
     with tempfile.TemporaryDirectory(dir=str(tmp_base)) as tmpdir:

@@ -17,6 +17,10 @@ import re
 import subprocess
 from pathlib import Path
 
+# Base directory: this script's location. All paths anchor here, not cwd.
+_BASE = Path(__file__).parent
+
+
 
 def parse_beats(tsx_path):
     """Extract SUB_BEATS from TSX."""
@@ -78,7 +82,7 @@ def main():
     beats.sort(key=lambda x: x['abs_time'])
     
     # Output dir
-    out_dir = Path(f'keyframes/{episode}') / (f'act{args.act}' if args.act else 'full')
+    out_dir = _BASE / f'keyframes/{episode}' / (f'act{args.act}' if args.act else 'full')
     out_dir.mkdir(parents=True, exist_ok=True)
     
     # Save manifest

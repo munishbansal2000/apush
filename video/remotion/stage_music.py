@@ -24,6 +24,10 @@ import shutil
 import sys
 from pathlib import Path
 
+# Base directory: this script's location. All paths anchor here, not cwd.
+_BASE = Path(__file__).parent
+
+
 # Music event definitions (seconds)
 INTRO_DURATION = 8.0
 CHAPTER_STING_DURATION = 3.0
@@ -72,12 +76,12 @@ def main():
     if args.no_music:
         print("Music disabled (--no-music)")
         # Write empty timeline
-        out_path = Path(f'src/data/{ep_lower}/music_timeline.json')
+        out_path = _BASE / f'src/data/{ep_lower}/music_timeline.json'
         out_path.write_text(json.dumps({"events": [], "disabled": True}, indent=2))
         return 0
 
     # Load timing
-    timing_path = Path(f'src/data/{ep_lower}/timing_map.json')
+    timing_path = _BASE / f'src/data/{ep_lower}/timing_map.json'
     if not timing_path.exists():
         print(f"ERROR: {timing_path} not found", file=sys.stderr)
         return 1
@@ -147,7 +151,7 @@ def main():
         })
 
     # Prepare asset directory
-    asset_dir = Path(f'public/audio/{ep_lower}/music')
+    asset_dir = _BASE / f'public/audio/{ep_lower}/music'
     asset_dir.mkdir(parents=True, exist_ok=True)
 
     # Resolve assets: use music_dir if provided, else procedural fallback
@@ -192,7 +196,7 @@ def main():
         }
     }
 
-    out_path = Path(f'src/data/{ep_lower}/music_timeline.json')
+    out_path = _BASE / f'src/data/{ep_lower}/music_timeline.json'
     out_path.write_text(json.dumps(timeline, indent=2))
     print(f"✅ Music timeline: {out_path}")
     print(f"   {len(events)} events, assets in {asset_dir}/")

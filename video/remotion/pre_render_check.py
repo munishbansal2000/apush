@@ -16,6 +16,10 @@ Exit codes:
 import subprocess
 import sys
 
+# Base directory: this script's location. All paths anchor here, not cwd.
+_BASE = Path(__file__).parent
+
+
 def run_validator():
     r = subprocess.run(
         ["python3", "validate_episode.py"],

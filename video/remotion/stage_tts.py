@@ -23,10 +23,14 @@ import re
 import subprocess
 from pathlib import Path
 
+# Base directory: this script's location. All paths anchor here, not cwd.
+_BASE = _BASE
+
+
 
 def load_pronunciations():
     """Load pronunciations.json for TTS text substitution."""
-    pron_path = Path(__file__).parent / 'src' / 'data' / 'pronunciations.json'
+    pron_path = _BASE / 'src' / 'data' / 'pronunciations.json'
     if not pron_path.exists():
         return []
     data = json.loads(pron_path.read_text())
@@ -239,7 +243,7 @@ def main():
     
     # Try audio_scripts first (canonical)
     # Scripts live in video/remotion/, audio_scripts is at repo root
-    script_dir = Path(__file__).parent
+    script_dir = _BASE
     md_pattern = str(script_dir / '..' / '..' / 'audio_scripts' / unit / f'apush-audio-u{unit_num}-e{ep_num}-script-v*-DRAFT.md')
     md_files = sorted(glob.glob(md_pattern))
     
@@ -250,7 +254,7 @@ def main():
         turns = parse_markdown_script(script_path)
     else:
         # Fall back to JSON
-        script_path = Path(f'episodes/{episode.lower()}/script.json')
+        script_path = _BASE / f'episodes/{episode.lower()}/script.json'
         for alt in [f'../episode_{episode.lower()}/script.json',
                     f'src/data/{episode.lower()}/script.json']:
             if Path(alt).exists():
@@ -267,7 +271,7 @@ def main():
         turns = parse_json_script(script_path)
 
     # Output dir (anchored to script location, not cwd)
-    base = Path(__file__).parent
+    base = _BASE
     out_dir = base / f'episodes/{data_id}/tts/{provider}'
     out_dir.mkdir(parents=True, exist_ok=True)
 
@@ -353,7 +357,7 @@ def main():
     
     # Copy to public/audio/{data_id}/ as tXX.mp3 for Remotion staticFile()
     import shutil
-    public_dir = Path(__file__).parent / f'public/audio/{data_id}'
+    public_dir = _BASE / f'public/audio/{data_id}'
     public_dir.mkdir(parents=True, exist_ok=True)
     for i in range(len(turns)):
         src = out_dir / f'turn_{i:03d}.mp3'
