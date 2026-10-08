@@ -370,7 +370,7 @@ if (stages.includes('direct')) {
   else {
     const images = existsSync(imagesPlanPath) ? readJson<Record<string, unknown>>(imagesPlanPath) : {};
     const creative = videoGen === 'ltx' ? ', creative_clip' : '';
-    const creativeContract = videoGen === 'ltx' ? ' creative_clip {image,prompt,title,caption,seed}; use it selectively for high-value cinematic moments. Its prompt must animate only the supplied still with subtle environmental/object motion, preserve the historical composition, add no people/text/objects, and contain no camera movement.' : '';
+    const creativeContract = videoGen === 'ltx' ? ' creative_clip {image,prompt,title,caption,seed}; use it selectively for high-value cinematic moments. Its prompt must animate only the supplied still with subtle environmental/object motion, preserve the historical composition, add no people/text/objects. NEVER use the words camera, zoom, pan, tilt, dolly, tracking, crane, or any camera-movement term — the factory does its own camera work and rejects such prompts.' : '';
     // Load director component registry (rich: when, examples, constraints, props)
     const compReg = readJson<{components: {name: string; when: string; examples: string[]; constraints: string[]; props_detail: Record<string, {type: string; required: boolean; example: string}>}[]; image_rules?: {rules: string[]; examples: {wrong: string; right: string; why: string}[]}}>(join(ROOT, 'src', 'data', 'director-components.json'));
     const compList = compReg.components.map(c => {

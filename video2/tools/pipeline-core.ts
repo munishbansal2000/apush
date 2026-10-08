@@ -256,10 +256,14 @@ function validateSceneProps(scene: DirectedScene): void {
     case 'stagger':
       if (!Array.isArray(p.panels) || p.panels.length < 2) throw new Error(`${scene.id}: stagger requires 2+ panels`);
       break;
-    case 'creative_clip':
+    case 'creative_clip': {
       if (!text('image') || !text('prompt')) throw new Error(`${scene.id}: creative_clip requires image and prompt`);
       if (/^(?:https?:|data:|blob:|\/)/i.test(p.image as string) || (p.image as string).includes('..')) throw new Error(`${scene.id}: creative image must be a safe public/ relative path`);
-      if ((p.prompt as string).trim().length < 20) throw new Error(`${scene.id}: creative prompt is too short`);
+      const prompt = (p.prompt as string).trim();
+      if (prompt.length < 20) throw new Error(`${scene.id}: creative prompt is too short`);
+      if (/\b(camera|zoom|pan|tilt|dolly|tracking|crane|aerial|flyover)\b/i.test(prompt)) throw new Error(`${scene.id}: creative_clip prompt contains banned camera-move phrase; the factory does its own camera work`);
+      break;
+    }
       break;
   }
 }
