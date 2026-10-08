@@ -6,7 +6,9 @@
  * Also collects [layout-guard] issues from the browser console and fails
  * if any overlap/cut/clip is found. Asserts no blank frames.
  *
- * Usage: npx tsx tools/contact-sheet.ts --episode E3 [--every N]
+ * Usage: npx tsx tools/contact-sheet.ts --episode E3 [--every N] [--scale S]
+ *   --every N  sample every Nth point (default 1)
+ *   --scale S  still resolution scale, 0.25=320px … 1=1280px (default 0.25)
  *
  * Output:
  *   out/e3-contact.png      — tiled contact sheet (6 per row)
@@ -42,6 +44,8 @@ async function main() {
   const epLower = epArg.toLowerCase();
   const everyArg = process.argv.find((a, i) => process.argv[i - 1] === '--every');
   const every = everyArg ? parseInt(everyArg, 10) : 1;
+  const scaleArg = process.argv.find((a, i) => process.argv[i - 1] === '--scale');
+  const stillScale = scaleArg ? parseFloat(scaleArg) : 0.25;
 
   // Dynamic imports so the tool works without @remotion/renderer installed
   let bundle: any, renderStill: any, selectComposition: any;
@@ -161,7 +165,7 @@ async function main() {
       serveUrl,
       frame,
       output: file,
-      scale: 0.25,
+      scale: stillScale,
       browserExecutable,
       onBrowserLog: (log: any) => {
         const m = /\[layout-guard\] (.*)$/s.exec(log.text);
