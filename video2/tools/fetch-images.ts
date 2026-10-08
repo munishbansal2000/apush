@@ -43,7 +43,7 @@ async function getWithRetry(url: string, tries = 4): Promise<Response | null> {
       last = await fetch(url, {
         headers: { 'User-Agent': UA }, redirect: 'follow', signal: AbortSignal.timeout(45_000),
       });
-      if (last.ok || (last.status < 500 && last.status !== 429)) return last;
+      if (last.ok || last.status === 429 || last.status < 500) return last;
     } catch (error) {
       if (attempt === tries - 1) {
         console.log(`    ! ${new URL(url).host}: ${error instanceof Error ? error.message : String(error)}`);
