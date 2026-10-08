@@ -76,7 +76,7 @@ const CFG = {
   topBand: rcJson.topBand,
   reveal: rcJson.reveal,
   text: rcJson.text,
-  overlayTiming: { termChipSec: 3, chapterBannerSec: 4, trapFactDelaySec: 2.5, yearHighlightSec: 2 },
+  overlayTiming: rcJson.overlayTiming ?? { termChipSec: 3, chapterBannerSec: 4, trapFactDelaySec: 2.5, yearHighlightSec: 2 },
   head: { rect: (rcJson.head.rect as unknown as [number, number, number, number]) },
   sfx: { hit: '', check: '', whoosh: '', tick: '', volume: {} },
   tones: {
@@ -363,8 +363,7 @@ function deriveE3State(turns: Turn[], starts: number[], durations: number[]) {
 /* --------------------------------- episode ---------------------------------- */
 
 export const U1E3Episode: React.FC<{ episodeData?: EpisodeData }> = ({ episodeData }) => {
-  const fallback = React.useMemo(() => loadEpisodeData('e3'), []);
-  const data = episodeData ?? fallback;
+  const data = React.useMemo(() => episodeData ?? loadEpisodeData('e3'), [episodeData]);
   const s = React.useMemo(() => deriveE3State(data.turns, data.starts, data.durations), [data]);
   return (
   <EpisodeShell

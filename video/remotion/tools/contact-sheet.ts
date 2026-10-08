@@ -75,6 +75,11 @@ async function main() {
   const durations: number[] = timing.durations;
   const fps = 30;
 
+  // Episode data travels via inputProps, never through the browser bundle:
+  // webpack cannot see runtime-generated out/data/ files, so loading them
+  // inside bundled modules yields empty data (and bogus AnchorErrors).
+  const inputProps = { episodeData: { turns, starts, durations } };
+
   // Sample points: turn starts, beat offsets, pause middles, final second
   const points = new Map<number, string>();
   turns.forEach((t: any, i: number) => {
@@ -130,6 +135,7 @@ async function main() {
     serveUrl,
     id: compositionId,
     browserExecutable,
+    inputProps,
   });
 
   const cols = 6;
@@ -149,6 +155,7 @@ async function main() {
       output: file,
       scale: 0.25,
       browserExecutable,
+      inputProps,
       onBrowserLog: (log: any) => {
         const m = /\[layout-guard\] (.*)$/s.exec(log.text);
         if (!m) return;

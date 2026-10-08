@@ -32,12 +32,36 @@ import { U2E9Episode } from "./components/U2E9Episode";
 import { U2E10Episode } from "./components/U2E10Episode";
 import { U2E6Episode } from "./components/U2E6Episode";
 import { U2E3Episode } from "./components/U2E3Episode";
-import { EPISODE_FRAMES } from "./data/durations";
-import { loadEpisodeData } from "./lib/load-episode-data";
+import type { EpisodeData } from "./lib/load-episode-data";
 // import { U3E6Scene } from "./u3e6/U3E6Scene";
 // import { U3E6_COMPS } from "./u3e6/u3e6_shots";
 // import { U3E6_Act1 } from "./u3e6/U3E6_Act1";
 // import { U3E6_ACT1_DUR } from "./u3e6/u3e6_act1_data";
+
+const FPS = 30;
+
+/**
+ * Derive composition duration from episode data supplied via inputProps.
+ *
+ * Generated pipeline data (out/data/) is never bundled into the JS — the
+ * caller (tools/contact-sheet.ts, or Studio's props editor) supplies it as
+ * props. Root must not resolve episode data at bundle time: that would run
+ * inside the browser bundle for all 19 compositions at once, and webpack
+ * cannot see runtime-generated files, so every episode would warn and the
+ * selected one would render with empty data.
+ *
+ * With no props (Studio opened bare), fall back to a 1s placeholder; the
+ * component's own data-loader fallback then applies at render time.
+ */
+function episodeMetadata({ props }: { props: { episodeData?: EpisodeData } }) {
+  const d = props.episodeData;
+  let durationInFrames = 30;
+  if (d && d.starts.length > 0 && d.durations.length > 0) {
+    const totalSec = d.starts[d.starts.length - 1] + d.durations[d.durations.length - 1];
+    durationInFrames = Math.max(30, Math.ceil(totalSec * FPS));
+  }
+  return { durationInFrames };
+}
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -141,8 +165,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="U1E1Episode"
         component={U1E1Episode}
-        defaultProps={{ episodeData: loadEpisodeData('e1') }}
-        durationInFrames={EPISODE_FRAMES.E1}
+        calculateMetadata={episodeMetadata}
+        durationInFrames={30}
         fps={30}
         width={1280}
         height={720}
@@ -150,8 +174,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="U1E2Episode"
         component={U1E2Episode}
-        defaultProps={{ episodeData: loadEpisodeData('e2') }}
-        durationInFrames={EPISODE_FRAMES.E2}
+        calculateMetadata={episodeMetadata}
+        durationInFrames={30}
         fps={30}
         width={1280}
         height={720}
@@ -159,8 +183,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="U1E3Episode"
         component={U1E3Episode}
-        defaultProps={{ episodeData: loadEpisodeData('e3') }}
-        durationInFrames={EPISODE_FRAMES.E3}
+        calculateMetadata={episodeMetadata}
+        durationInFrames={30}
         fps={30}
         width={1280}
         height={720}
@@ -168,8 +192,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="U1E4Episode"
         component={U1E4Episode}
-        defaultProps={{ episodeData: loadEpisodeData('e4') }}
-        durationInFrames={EPISODE_FRAMES.E4}
+        calculateMetadata={episodeMetadata}
+        durationInFrames={30}
         fps={30}
         width={1280}
         height={720}
@@ -177,8 +201,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="U1E5Episode"
         component={U1E5Episode}
-        defaultProps={{ episodeData: loadEpisodeData('e5') }}
-        durationInFrames={EPISODE_FRAMES.E5}
+        calculateMetadata={episodeMetadata}
+        durationInFrames={30}
         fps={30}
         width={1280}
         height={720}
@@ -186,8 +210,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="U1E6Episode"
         component={U1E6Episode}
-        defaultProps={{ episodeData: loadEpisodeData('e6') }}
-        durationInFrames={EPISODE_FRAMES.E6}
+        calculateMetadata={episodeMetadata}
+        durationInFrames={30}
         fps={30}
         width={1280}
         height={720}
@@ -195,8 +219,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="U1E7Episode"
         component={U1E7Episode}
-        defaultProps={{ episodeData: loadEpisodeData('e7') }}
-        durationInFrames={EPISODE_FRAMES.E7}
+        calculateMetadata={episodeMetadata}
+        durationInFrames={30}
         fps={30}
         width={1280}
         height={720}
@@ -204,8 +228,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="U1E8Episode"
         component={U1E8Episode}
-        defaultProps={{ episodeData: loadEpisodeData('e8') }}
-        durationInFrames={EPISODE_FRAMES.E8}
+        calculateMetadata={episodeMetadata}
+        durationInFrames={30}
         fps={30}
         width={1280}
         height={720}
@@ -213,8 +237,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="U1E9Episode"
         component={U1E9Episode}
-        defaultProps={{ episodeData: loadEpisodeData('e9') }}
-        durationInFrames={EPISODE_FRAMES.E9}
+        calculateMetadata={episodeMetadata}
+        durationInFrames={30}
         fps={30}
         width={1280}
         height={720}
@@ -222,8 +246,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="U2E1Episode"
         component={U2E1Episode}
-        defaultProps={{ episodeData: loadEpisodeData('u2e1') }}
-        durationInFrames={EPISODE_FRAMES.U2E1}
+        calculateMetadata={episodeMetadata}
+        durationInFrames={30}
         fps={30}
         width={1280}
         height={720}
@@ -231,8 +255,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="U2E2Episode"
         component={U2E2Episode}
-        defaultProps={{ episodeData: loadEpisodeData('u2e2') }}
-        durationInFrames={EPISODE_FRAMES.U2E2}
+        calculateMetadata={episodeMetadata}
+        durationInFrames={30}
         fps={30}
         width={1280}
         height={720}
@@ -240,8 +264,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="U2E4Episode"
         component={U2E4Episode}
-        defaultProps={{ episodeData: loadEpisodeData('u2e4') }}
-        durationInFrames={EPISODE_FRAMES.U2E4}
+        calculateMetadata={episodeMetadata}
+        durationInFrames={30}
         fps={30}
         width={1280}
         height={720}
@@ -249,8 +273,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="U2E5Episode"
         component={U2E5Episode}
-        defaultProps={{ episodeData: loadEpisodeData('u2e5') }}
-        durationInFrames={EPISODE_FRAMES.U2E5}
+        calculateMetadata={episodeMetadata}
+        durationInFrames={30}
         fps={30}
         width={1280}
         height={720}
@@ -258,8 +282,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="U2E7Episode"
         component={U2E7Episode}
-        defaultProps={{ episodeData: loadEpisodeData('u2e7') }}
-        durationInFrames={EPISODE_FRAMES.U2E7}
+        calculateMetadata={episodeMetadata}
+        durationInFrames={30}
         fps={30}
         width={1280}
         height={720}
@@ -267,8 +291,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="U2E8Episode"
         component={U2E8Episode}
-        defaultProps={{ episodeData: loadEpisodeData('u2e8') }}
-        durationInFrames={EPISODE_FRAMES.U2E8}
+        calculateMetadata={episodeMetadata}
+        durationInFrames={30}
         fps={30}
         width={1280}
         height={720}
@@ -276,8 +300,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="U2E9Episode"
         component={U2E9Episode}
-        defaultProps={{ episodeData: loadEpisodeData('u2e9') }}
-        durationInFrames={EPISODE_FRAMES.U2E9}
+        calculateMetadata={episodeMetadata}
+        durationInFrames={30}
         fps={30}
         width={1280}
         height={720}
@@ -285,8 +309,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="U2E10Episode"
         component={U2E10Episode}
-        defaultProps={{ episodeData: loadEpisodeData('u2e10') }}
-        durationInFrames={EPISODE_FRAMES.U2E10}
+        calculateMetadata={episodeMetadata}
+        durationInFrames={30}
         fps={30}
         width={1280}
         height={720}
@@ -294,8 +318,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="U2E6Episode"
         component={U2E6Episode}
-        defaultProps={{ episodeData: loadEpisodeData('u2e6') }}
-        durationInFrames={EPISODE_FRAMES.U2E6}
+        calculateMetadata={episodeMetadata}
+        durationInFrames={30}
         fps={30}
         width={1280}
         height={720}
@@ -303,8 +327,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="U2E3Episode"
         component={U2E3Episode}
-        defaultProps={{ episodeData: loadEpisodeData('u2e3') }}
-        durationInFrames={EPISODE_FRAMES.U2E3}
+        calculateMetadata={episodeMetadata}
+        durationInFrames={30}
         fps={30}
         width={1280}
         height={720}

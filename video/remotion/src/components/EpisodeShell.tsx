@@ -176,8 +176,14 @@ export const EpisodeShell: React.FC<EpisodeShellProps> = ({
                 speakerColor={activeTurn.speaker === 'maya' ? '#c9a227' : '#2c5aa0'}
                 position="bottom-right"
                 assetPair={{
-                  realistic: staticFile(`${activeTurn.speaker}.webp`),
-                  stylized: staticFile(`${activeTurn.speaker}-toon.webp`),
+                  realistic: staticFile(`${activeTurn.speaker}-real.webp`),
+                  // TODO: marcus-toon.webp doesn't exist yet — maya-toon.webp as
+                  // placeholder (same pattern as U2E4/U2E7/U2E8)
+                  stylized: staticFile(
+                    activeTurn.speaker === 'marcus'
+                      ? 'maya-toon.webp'
+                      : `${activeTurn.speaker}-toon.webp`
+                  ),
                 }}
               />
             </Track>

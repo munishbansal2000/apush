@@ -501,7 +501,7 @@ const getBackgroundForTurn = (turnId: string | null): string => {
 /* Main episode                                                         */
 /* ------------------------------------------------------------------ */
 export const U1E9Episode: React.FC<{ episodeData?: EpisodeData }> = ({ episodeData }) => {
-  const data = episodeData ?? loadEpisodeData('e9');
+  const data = React.useMemo(() => episodeData ?? loadEpisodeData('e9'), [episodeData]);
   const turns = data.turns as Turn[];
   const starts = data.starts;
   const durations = data.durations;
