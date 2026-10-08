@@ -415,7 +415,7 @@ if (stages.includes('clips')) {
     else if (dryRun) console.log(`[clips] dry-run: ${jobs.length} LTX job(s)`);
     else {
       const python = process.env.LTX_PYTHON ?? process.env.FISH_PYTHON ?? 'python';
-      const generator = process.env.LTX_SCRIPT ?? resolve(ROOT, '..', 'video', 'animate_still.py');
+      const generator = process.env.LTX_SCRIPT ?? join(ROOT, 'tools', 'animate_still.py');
       if (!existsSync(generator)) throw new Error(`LTX generator missing: ${generator}`);
       for (const scene of jobs) {
         const image = join(ROOT, 'public', String(scene.props.image));

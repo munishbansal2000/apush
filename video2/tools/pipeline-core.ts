@@ -183,12 +183,32 @@ function collectImageRefs(scene: DirectedScene): string[] {
 
 export function normalizePlan(plan: DirectedPlan, turns: PipelineTurn[], starts: number[], durations: number[], totalSec?: number, opts: NormalizePlanOpts = {}): DirectedPlan {
   if (plan.version !== 1 || !Array.isArray(plan.scenes) || !plan.scenes.length) throw new Error('director plan must be version 1 with scenes');
+  if (!plan.title || !String(plan.title).trim()) throw new Error('director plan requires a non-empty title');
+  if (opts.episode !== undefined && plan.episode !== opts.episode) {
+    throw new Error(`director plan episode "${plan.episode}" does not match expected "${opts.episode}"`);
+  }
   const index = new Map(turns.map((turn, i) => [turn.id, i]));
+  const imageKeys = opts.imageKeys ? (opts.imageKeys instanceof Set ? opts.imageKeys : new Set(opts.imageKeys)) : null;
   let last = -1;
+  const seenIds = new Set<string>();
   const allowed = new Set(['title', 'ken_burns', 'quote', 'compare', 'causal_chain', 'highlight', 'primary_source', 'creative_clip', 'chart', 'spectrum', 'stagger']);
   const scenes = plan.scenes.map((scene, sceneIndex) => {
-    if (!allowed.has(scene.component)) throw new Error(`${scene.id}: unsupported component ${scene.component}`);
-    validateSceneProps(scene);
+    const sid = scene.id && String(scene.id).trim() ? String(scene.id) : `scene-${sceneIndex + 1}`;
+    if (seenIds.has(sid)) throw new Error(`duplicate scene id "${sid}"`);
+    seenIds.add(sid);
+    if (!allowed.has(scene.component)) throw new Error(`${sid}: unsupported component ${scene.component}`);
+    if (scene.transition !== undefined && scene.transition !== 'cut' && scene.transition !== 'crossfade' && scene.transition !== 'dip') {
+      throw new Error(`${sid}: invalid transition "${scene.transition}"; must be cut, crossfade, or dip`);
+    }
+    if (scene.component === 'creative_clip' && opts.allowCreativeClip === false) {
+      throw new Error(`${sid}: creative_clip is not allowed for this run (video-gen is off)`);
+    }
+    validateSceneProps({...scene, id: sid});
+    if (imageKeys) {
+      for (const ref of collectImageRefs({...scene, id: sid})) {
+        if (!imageKeys.has(ref)) throw new Error(`${sid}: image "${ref}" is not in the images registry`);
+      }
+    }
     if (!Array.isArray(scene.turnIds) || !scene.turnIds.length) throw new Error(`${scene.id}: turnIds is empty`);
     const ids = scene.turnIds.map(id => {
       const i = index.get(id);
@@ -205,7 +225,7 @@ export function normalizePlan(plan: DirectedPlan, turns: PipelineTurn[], starts:
     // tail, so transitions cannot expose blank frames between spoken turns.
     const endSec = hi + 1 < turns.length ? starts[hi + 1] : (totalSec ?? starts[hi] + durations[hi] + (turns[hi].holdAfterSec ?? 0));
     if (!Number.isFinite(startSec) || !Number.isFinite(endSec) || endSec <= startSec) throw new Error(`${scene.id}: invalid measured timing`);
-    return {...scene, id: scene.id || `scene-${sceneIndex + 1}`, startSec, endSec};
+    return {...scene, id: sid, startSec, endSec};
   });
   if (last !== turns.length - 1) throw new Error(`director plan stops at turn ${last}; expected ${turns.length - 1}`);
   return {...plan, scenes};
