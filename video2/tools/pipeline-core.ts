@@ -232,6 +232,8 @@ export function normalizePlan(plan: DirectedPlan, turns: PipelineTurn[], starts:
     return {...scene, id: sid, startSec, endSec};
   });
   if (last !== turns.length - 1) throw new Error(`director plan stops at turn ${last}; expected ${turns.length - 1}`);
+  const hasStagger = scenes.some(s => s.component === 'stagger');
+  if (!hasStagger) throw new Error('director plan must include at least 1 stagger scene (4-box signature visual)');
   return {...plan, scenes};
 }
 
