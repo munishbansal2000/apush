@@ -15,3 +15,18 @@ from `remotion-src/`.
 | `npm run lint` | **20 errors**: `no-explicit-any` (pipeline-core, video-pipeline, contact-sheet-components), `require()` + unused vars in `meta-ui-runner.cjs`, unused vars in `pipeline-smoke.ts` |
 | `npm test` | **74/76 pass**. 2 failures in `tests/pipeline.test.ts` ("derives scene boundaries…", "rejects visual drift…"): fixtures lack the stagger scene that commit 2201114 made mandatory |
 
+## Green gate + P14 (roadmap types)
+
+- `DirectedPlan.roadmap?: string[]` and `DirectedScene.roadmapIndex?: number` added; `as any` removed from roadmap validation.
+- Lint fixed: typed Remotion dynamic imports and turns in `contact-sheet-components.ts`; typed pronunciation/fact JSON;
+  `.cjs` override for `require()`; optional catch bindings; dead vars in `pipeline-smoke.ts`.
+- Stale fixtures updated to include the mandatory stagger scene (`tests/pipeline.test.ts`, `tools/pipeline-smoke.ts`);
+  smoke script now resolves the current u3e1 script via `resolveAudioScript` (it hard-coded a deleted v2 file).
+
+| Gate | Result |
+|---|---|
+| `npm run typecheck` | 0 errors |
+| `npm run lint` | 0 errors |
+| `npm test` | 76/76 pass |
+| `npx tsx tools/pipeline-smoke.ts` | All smoke tests passed |
+

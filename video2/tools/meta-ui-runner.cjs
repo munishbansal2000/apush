@@ -30,7 +30,7 @@ function atomicWrite(file, text) {
     fs.writeFileSync(temp, text, {encoding: 'utf8', flush: true});
     fs.renameSync(temp, file);
   } catch (error) {
-    try { if (fs.existsSync(temp)) fs.unlinkSync(temp); } catch (_) {}
+    try { if (fs.existsSync(temp)) fs.unlinkSync(temp); } catch {}
     throw error;
   }
 }
@@ -49,7 +49,7 @@ async function main() {
   const meta = require(metaFile);
   let playwright;
   for (const candidate of [path.resolve(libDir, '..', 'node_modules', 'playwright'), 'C:\\Users\\munis\\projects\\1600\\node_modules\\playwright']) {
-    try { playwright = require(candidate); break; } catch (_) {}
+    try { playwright = require(candidate); break; } catch {}
   }
   if (!playwright) throw new Error('Playwright not found beside Meta UI adapter or in C:\\Users\\munis\\projects\\1600');
   const debugDir = path.join(path.dirname(out), 'meta-debug');

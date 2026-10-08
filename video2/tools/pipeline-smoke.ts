@@ -16,6 +16,7 @@ import {
   validateCanvas,
   syncIssues,
   type DirectedPlan,
+  resolveAudioScript,
 } from './pipeline-core';
 
 const ROOT = join(__dirname, '..');
@@ -37,7 +38,9 @@ function assert(cond: boolean, msg: string): void {
 
 // --- turns phase: real parseTranscript + normalizeTurns ---
 console.log('[turns]');
-const script = readFileSync(join(ROOT, '..', 'audio_scripts', 'unit3', 'apush-audio-u3-e1-script-v2-DRAFT.md'), 'utf8');
+const scriptPath = resolveAudioScript(join(ROOT, '..', 'audio_scripts'), 'u3e1');
+if (!scriptPath) throw new Error('no canonical u3e1 script under ../audio_scripts/unit3');
+const script = readFileSync(scriptPath, 'utf8');
 const turns = normalizeTurns(parseTranscript(script));
 check('parses turns', () => {
   assert(turns.length > 60, `expected 60+ turns, got ${turns.length}`);
@@ -57,11 +60,9 @@ const goodPlan: DirectedPlan = {
   version: 1, episode: 'u3e1', title: 'Test',
   scenes: [
     {id: 's01', component: 'title', turnIds: ['t00'], props: {title: 'Hello'}, transition: 'cut'},
-    {id: 's02', component: 'ken_burns', turnIds: ['t01'], props: {image: imageKeys[0]}, transition: 'cut'},
+    {id: 's02', component: 'stagger', turnIds: ['t01'], props: {panels: [{image: imageKeys[0]}, {image: imageKeys[1] ?? imageKeys[0]}]}, transition: 'cut'},
   ],
 };
-const starts = turns.map((_, i) => i * 10);
-const durations = turns.map(() => 9);
 
 check('accepts valid plan', () => {
   const plan = normalizePlan(goodPlan, turns.slice(0, 2), [0, 10], [9, 9], 20, {imageKeys, episode: 'u3e1'});
@@ -71,7 +72,7 @@ check('accepts valid plan', () => {
 
 check('rejects invented image path', () => {
   const bad = JSON.parse(JSON.stringify(goodPlan));
-  bad.scenes[1].props.image = 'historic/u3e1/invented-filename.jpg';
+  bad.scenes[1].props.panels[0].image = 'historic/u3e1/invented-filename.jpg';
   try {
     normalizePlan(bad, turns.slice(0, 2), [0, 10], [9, 9], 20, {imageKeys});
     throw new Error('should have thrown');

@@ -22,6 +22,8 @@ export interface DirectedScene {
   turnIds: string[];
   props: Record<string, unknown>;
   transition?: 'cut' | 'crossfade' | 'dip';
+  /** 0-based roadmap box this scene covers; earlier boxes render as checked. */
+  roadmapIndex?: number;
   startSec?: number;
   endSec?: number;
 }
@@ -30,6 +32,8 @@ export interface DirectedPlan {
   version: 1;
   episode: string;
   title: string;
+  /** Lesson roadmap box labels shown by the TimelineRibbon. */
+  roadmap?: string[];
   scenes: DirectedScene[];
 }
 
@@ -239,7 +243,7 @@ export function normalizePlan(plan: DirectedPlan, turns: PipelineTurn[], starts:
     if (!Array.isArray(plan.roadmap) || plan.roadmap.length < 2 || plan.roadmap.length > 5)
       throw new Error('roadmap must be an array of 2-5 box labels');
     for (const scene of scenes) {
-      const idx = (scene as any).roadmapIndex;
+      const idx = scene.roadmapIndex;
       if (idx !== undefined && (typeof idx !== 'number' || idx < 0 || idx >= plan.roadmap.length))
         throw new Error(`${scene.id}: roadmapIndex ${idx} out of range for ${plan.roadmap.length} boxes`);
     }
@@ -353,7 +357,7 @@ export function validateCanvas(plan: DirectedPlan): string[] {
   let run = 1;
   for (let i = 0; i < plan.scenes.length; i++) {
     const scene = plan.scenes[i];
-    const p = scene.props as Record<string, any>;
+    const p = scene.props;
     const dur = (scene.endSec ?? 0) - (scene.startSec ?? 0);
     // Text overflow
     if (typeof p.title === 'string' && p.title.length > 80) {
@@ -381,11 +385,17 @@ export function validateCanvas(plan: DirectedPlan): string[] {
   return warnings;
 }
 
+interface FactEntry {
+  id: string;
+  forbid?: {pattern: string; why: string}[];
+  hedge?: {trigger: string; words: string[]};
+}
+
 export function checkFacts(turns: PipelineTurn[], factsPath: string): string[] {
   const issues: string[] = [];
   if (!existsSync(factsPath)) return issues;
   try {
-    const registry = JSON.parse(readFileSync(factsPath, 'utf8')) as { facts?: any[] };
+    const registry = JSON.parse(readFileSync(factsPath, 'utf8')) as {facts?: FactEntry[]};
     for (const fact of registry.facts ?? []) {
       for (const f of fact.forbid ?? []) {
         const pattern = new RegExp(f.pattern, 'i');
@@ -401,7 +411,7 @@ export function checkFacts(turns: PipelineTurn[], factsPath: string): string[] {
         for (const turn of turns) {
           if (turn.kind !== 'speech' || !turn.text) continue;
           if (trigger.test(turn.text)) {
-            const hasHedge = fact.hedge.words.some((w: string) => turn.text!.toLowerCase().includes(w.toLowerCase()));
+            const hasHedge = fact.hedge.words.some(w => turn.text!.toLowerCase().includes(w.toLowerCase()));
             if (!hasHedge) {
               issues.push(`${turn.id}: missing hedge for "${fact.hedge.trigger}" (${fact.id}): needs one of [${fact.hedge.words.join(', ')}]`);
             }

@@ -54,7 +54,9 @@ async function main() {
   const stillScale = scaleArg ? parseFloat(scaleArg) : 0.25;
 
   // Dynamic imports so the tool works without @remotion/renderer installed
-  let bundle: any, renderStill: any, selectComposition: any;
+  let bundle: typeof import('@remotion/bundler').bundle;
+  let renderStill: typeof import('@remotion/renderer').renderStill;
+  let selectComposition: typeof import('@remotion/renderer').selectComposition;
   try {
     ({ bundle } = await import('@remotion/bundler'));
     ({ renderStill, selectComposition } = await import('@remotion/renderer'));
@@ -85,7 +87,7 @@ async function main() {
   }
 
   const turnsData = JSON.parse(readFileSync(turnsPath, 'utf8'));
-  const turns = Array.isArray(turnsData) ? turnsData : turnsData.turns;
+  const turns: {id: string; speaker?: string}[] = Array.isArray(turnsData) ? turnsData : turnsData.turns;
   const timing = JSON.parse(readFileSync(timingPath, 'utf8'));
   const starts: number[] = timing.starts;
   const durations: number[] = timing.durations;
@@ -109,7 +111,7 @@ async function main() {
 
   // Sample points: turn starts, beat offsets, pause middles, final second
   const points = new Map<number, string>();
-  turns.forEach((t: any, i: number) => {
+  turns.forEach((t, i) => {
     points.set(Math.round((starts[i] + 0.3) * fps), t.id);
     if (t.speaker === 'pause') {
       points.set(Math.round((starts[i] + durations[i] / 2) * fps), `pause@${t.id}`);
@@ -122,7 +124,7 @@ async function main() {
     const src = readFileSync(compPath, 'utf8');
     const re = /\{\s*turnId:\s*'(t\d+)',\s*offset:\s*([\d.]+),/g;
     let m;
-    const turnStart = new Map(turns.map((t: any, i: number) => [t.id, starts[i]]));
+    const turnStart = new Map(turns.map((t, i) => [t.id, starts[i]]));
     while ((m = re.exec(src)) !== null) {
       const s = turnStart.get(m[1]) as number | undefined;
       if (s !== undefined) {
@@ -184,7 +186,7 @@ async function main() {
       scale: stillScale,
       browserExecutable,
       inputProps: { episodeData },
-      onBrowserLog: (log: any) => {
+      onBrowserLog: (log: {text: string}) => {
         const m = /\[layout-guard\] (.*)$/s.exec(log.text);
         if (!m) return;
         try {

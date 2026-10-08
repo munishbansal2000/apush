@@ -25,7 +25,7 @@ describe('video pipeline core', () => {
     const turns = parseTranscript('Maya: One.\nMarcus: Two.\nMaya: Three.');
     const plan: DirectedPlan = {version: 1, episode: 'x', title: 'X', scenes: [
       {id: 'a', component: 'title', turnIds: ['t00'], props: {title: 'X'}},
-      {id: 'b', component: 'causal_chain', turnIds: ['t01', 't02'], props: {nodes: ['A', 'B']}},
+      {id: 'b', component: 'stagger', turnIds: ['t01', 't02'], props: {panels: [{image: 'a.jpg'}, {image: 'b.jpg'}]}},
     ]};
     const out = normalizePlan(plan, turns, [0.25, 1.5, 3], [1, 1.25, 2]);
     assert.equal(out.scenes[0].startSec, 0.25);
@@ -63,7 +63,7 @@ describe('video pipeline core', () => {
     const turns = parseTranscript('Maya: One.\nMarcus: Two.');
     const plan = normalizePlan({version: 1, episode: 'x', title: 'X', scenes: [
       {id: 'a', component: 'title', turnIds: ['t00'], props: {title: 'X'}},
-      {id: 'b', component: 'quote', turnIds: ['t01'], props: {quote: 'Two.'}},
+      {id: 'b', component: 'stagger', turnIds: ['t01'], props: {panels: [{image: 'a.jpg'}, {image: 'b.jpg'}]}},
     ]}, turns, [0.25, 1.5], [1, 2], 4);
     assert.deepEqual(syncIssues(plan, turns, [0.25, 1.5], [1, 2], 4), []);
     plan.scenes[1].startSec! += 0.2;

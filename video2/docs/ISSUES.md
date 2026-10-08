@@ -41,11 +41,11 @@ Status: `[ ]` open · `[~]` in progress · `[x]` fixed
 
 - [ ] **P12.** Windows-only paths and hard-coded `C:\Users\munis\...` (`video-pipeline.ts:77`, `meta-ui-runner.cjs:44-45`, `setup-pipeline.ps1`).
 - [ ] **P13.** `data/` and `src/data/` hold diverging copies of fact-registry, pronunciations, images, render-config.
-- [ ] **P14.** `DirectedPlan` lacks `roadmap`/`roadmapIndex`; `pipeline-core.ts` uses `as any`.
+- [x] **P14.** `DirectedPlan` lacks `roadmap`/`roadmapIndex`; `pipeline-core.ts` uses `as any`.
 - [ ] **P15.** `--from render` without `--full` selects no stages and quietly does nothing.
 - [ ] **P16.** Validation gaps: `syncIssues` skips the first-scene gap; `normalizeTurns` accepts NaN pauses and empty text;
   any `Word: ...` line parses as speech.
-- [ ] **P17.** No `tsconfig.json` or ESLint config, so `npm run typecheck|lint|check` fail.
+- [x] **P17.** No `tsconfig.json` or ESLint config, so `npm run typecheck|lint|check` fail.
   Working versions exist in the older `remotion-src/` copy (`tsconfig.json`, `eslint.config.js`); restore those.
 - [ ] **P18.** No tests cover cache invalidation (P2–P4, P7).
 

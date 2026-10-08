@@ -174,13 +174,15 @@ for (const issue of factIssues) console.log(`  ⚠ FACT: ${issue}`);
 
 const cleanSpeech = (text: string) => text.replace(/\{[^}]+\}/g, '').replace(/\[[^\]]+\]/g, '').replace(/\s+/g, ' ').trim();
 
+interface PronunciationFile {terms?: {term: string; guide?: string; tts?: string; approved?: boolean; auto?: boolean}[]}
+
 /** Load approved pronunciations and substitute before TTS. */
 function loadPronunciations(): {term: string; tts: string}[] {
   const p = join(ROOT, 'src', 'data', 'pronunciations.json');
   if (!existsSync(p)) return [];
   try {
-    const data = JSON.parse(readFileSync(p, 'utf8'));
-    return (data.terms ?? []).filter((t: any) => t.approved && t.tts).map((t: any) => ({term: t.term, tts: t.tts}));
+    const data = JSON.parse(readFileSync(p, 'utf8')) as PronunciationFile;
+    return (data.terms ?? []).filter(t => t.approved && t.tts).map(t => ({term: t.term, tts: t.tts!}));
   } catch { return []; }
 }
 function applyPronunciations(text: string, terms: {term: string; tts: string}[]): string {
@@ -199,8 +201,9 @@ if (stages.includes('pronounce')) {
   if (current('pronounce', pronounceHash)) console.log('[pronounce] checkpoint current');
   else if (dryRun) console.log('[pronounce] dry-run: would identify difficult words via Meta UI');
   else {
-    const existing = existsSync(pronPath) ? JSON.parse(readFileSync(pronPath, 'utf8')) : {terms: []};
-    const knownTerms = new Set((existing.terms ?? []).map((t: any) => t.term.toLowerCase()));
+    const existing: PronunciationFile = existsSync(pronPath) ? JSON.parse(readFileSync(pronPath, 'utf8')) : {terms: []};
+    existing.terms ??= [];
+    const knownTerms = new Set(existing.terms.map(t => t.term.toLowerCase()));
     const prompt = `You are a TTS pronunciation specialist. Read the transcript below. Identify words that English TTS engines commonly mispronounce: foreign names, indigenous terms, archaic spellings, and historical figures. For each, provide the term as it appears, a human stress guide (CAPS for stressed syllable), and a phonetic TTS string (lowercase, hyphenated syllables). Skip common English words. Return JSON only: {"terms":[{"term":"...","guide":"...","tts":"..."}]}.\n\nTRANSCRIPT:\n${turns.filter(t => t.kind === 'speech').map(t => t.text).join('\n')}`;
     const out = meta('pronounce', prompt);
     const result = readJson<{terms: {term: string; guide: string; tts: string}[]}>(out);

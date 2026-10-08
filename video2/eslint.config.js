@@ -15,6 +15,11 @@ export default tseslint.config(
     },
   },
   {
+    // CommonJS runner launched with plain node (loads the external Meta UI adapter via require).
+    files: ['**/*.cjs'],
+    rules: { '@typescript-eslint/no-require-imports': 'off' },
+  },
+  {
     // Episode files are data. No turn-number logic, no hand-built audio/sequences.
     files: ['src/episodes/**/*.{ts,tsx}'],
     rules: {
