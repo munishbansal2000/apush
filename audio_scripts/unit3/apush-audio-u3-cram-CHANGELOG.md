@@ -125,3 +125,70 @@ No new facts added — Layer 3 surfaced zero wrong claims and zero new book erro
 
 ## Status
 Draft v2 validated 2026-10-06: Layer 1 13/13, Layer 2 PASS, Layer 3 zero-wrong (8 inherited hierarchy gaps documented above). **Not pushed, not rendered.** Ready for the parent's push and the user's lock.
+
+## v2 → v3 fleet repair (2026-10-07) — audit u3-cram-FINDINGS.md: 2 blockers, 4 minors
+
+**B1 — direction-tag density 96% → 35.4% (§9).** Stripped the workhorse/neutral-default tags
+([conversational] ×36, [casual] ×30, [thoughtful tone] where unearned) from every turn whose
+beat didn't genuinely earn one. Kept catalog beats only: cold-open `[professional broadcast tone]`;
+correction myth-busts `[firm]` ×5; grim `[serious tone]` ×4 (Massacre, slavery bargain, Sedition
+sunset, culture asterisk); genuine questions `[curious, inquisitive tone]` ×10; caught-wrong
+`[sheepish]` ×3; takeaway `[confident tone]`; closer `[intrigued]` ×2; verdict exposition
+`[thoughtful tone]` ×7 and `[measured]` ×1. 34 of 96 turns tagged. Words unchanged by this fix.
+Before: `Maya: [conversational] The war left an enormous debt, and the books won't pin the number, so neither will I.`
+After: `Maya: The war left an enormous debt, and the books won't pin the number, so neither will I.`
+(Kept-tag example) Before: `Maya: [conversational] March fifth, seventeen seventy. Five dead, including Crispus Attucks.`
+After: `Maya: [serious tone] March fifth, seventeen seventy. Five dead, including Crispus Attucks.`
+
+**B2 — antitheses 7 → 2 (§4.14, G9).** Kept the two strongest: "Branded, not hanged." (the
+hanged-soldiers live-trap correction) and "Deport, not imprison." (registry F-U3-052 anchor).
+Reworded five, corrections intact:
+1. Before: `Jay: [casual] It was the reach, not the rate. The tax touched everyone.`
+   After: `Jay: It was the reach that mattered. The tax touched everyone.`
+2. Before: `...fought on Breed's Hill, not Bunker Hill.`
+   After: `...fought on Breed's Hill, despite the name.`
+3. Before: `...hands the army to Washington. A Virginian, not the best general.`
+   After: `...hands the army to Washington, more unifier than tactician.`
+4. Before: `The speculators who'd bought the certificates cheap got the windfall, not the original soldiers.`
+   After: `The speculators who'd bought the certificates cheap got the windfall; the original soldiers got nothing.`
+5. Before: `Then the whiskey tax: an excise, not a tariff. A tariff taxes imports at the docks; an excise taxes what you make at home.`
+   After: `Then the whiskey tax: an excise. A tariff taxes imports at the docks; an excise taxes what you make at home.`
+   (excise-vs-tariff correction survives via the definitions; 14-not-15 survives untouched as an em-dash clause.)
+
+**M1 — mid-turn fragments 6 → 2 (§4.10).** Folded four into full sentences; the two survivors are
+the kept B2 antitheses (within the 2–3 budget):
+- Before: `...Parliament claiming power over the colonies "in all cases whatsoever." Same month as the repeal. The win that wasn't.`
+  After: `...Parliament claiming power over the colonies "in all cases whatsoever." Same month as the repeal, so the win wasn't much of one.`
+- Before: `...fifty-six delegates, everybody but Georgia. Unity, but not independence. Not yet.`
+  After: `...fifty-six delegates, everybody but Georgia. Unity, but not independence. That would come later.`
+- Before: `Not written in Philadelphia. Added in seventeen ninety-one as the price of ratification.`
+  After: `It wasn't written in Philadelphia. It was added in seventeen ninety-one as the price of ratification.`
+
+**M2 — Trenton dropped thread restored (§8 completeness).** Jay asked "Then Trenton saves the army,
+and Saratoga, seventy-eight?" and v2 answered only Saratoga. The Q5 answer now gives Trenton its beat.
+Before: `Maya: [conversational] Seventy-seven. The French alliance is seventy-eight, so Saratoga was seventy-seven, the year before. Burgoyne surrenders a whole army, and France believes Franklin. ...`
+After: `Maya: [measured] Seventy-seven. But Trenton came first: Christmas, seventy-six, when Washington crosses the Delaware and captures the Hessian garrison, the counterstroke that saves a melting army. Then Saratoga, seventy-seven: Burgoyne surrenders a whole army, and France believes Franklin. The alliance of seventy-eight: money, guns, the fleet. Valley Forge in between, where von Steuben drills the army into shape. Saratoga and Yorktown: those are the two hinges.`
+Tier-1 grounding — 5steps2024 ch10: "Washington retrieved the situation with a brilliant counterstroke. On the evening of December 25, he led his men across the Delaware River, surprising and capturing the Hessian garrison of Trenton, New Jersey." (preceding context: "desertions and expiring enlistments").
+
+**M3 — Hamilton-musical claim cut per fail-closed (§7).** "The musical ends with the duel" is not
+verifiable in Tier 1–2. Before: `Jay: [casual] The musical skips this part, huh.` /
+`Maya: [thoughtful tone] The musical ends with the duel. It skips the part where Jefferson needed thirty-six ballots to land the job.`
+After: `Jay: Bet the musical skips this part.` /
+`Maya: Thirty-six rounds of voting doesn't exactly sing. His actual words at the inauguration: "We are all Republicans; we are all Federalists."`
+(Jay's pop-culture knows-something beat survives as a hedged aside; Maya makes no claim about the musical.)
+
+**M4 — Webster quote attribution hedged (§7).** Tier 1 (premium2027 ch05) carries the speller facts
+but not the quote or the 1789 *Dissertations* attribution; the only provenance trail is web
+verification (E11 v1 sources note), which Tier 1–2 does not accept. Fail-closed registry note added
+as F-U3-057. Before: `Maya: [thoughtful tone] A republic needs its own culture: Webster's speller — and his seventeen eighty-nine line, "A national language is a band of national union," Peale, Trumbull, Crèvecoeur, the Capitol in stone.`
+After: `Maya: [serious tone] A republic needs its own culture: Webster's speller — and the line credited to his seventeen eighty-nine Dissertations, "A national language is a band of national union" — Peale, Trumbull, Crèvecoeur, the Capitol in stone.`
+Header Quotes line updated to match ("the line credited to his 1789 Dissertations — Tier-1 books confirm the speller facts, not the quote").
+
+**Runtime:** 2,351 gate-counted words (was 2,339; +12 net from the Trenton beat and rewords), 38s pauses
+unchanged → 13.7 min experienced. Cold-open promise kept at "about thirteen and a half minutes";
+header figure updated to `~13.7 min experienced (2,351 words speech + 38s pauses)`.
+**Gate:** working copy `apush-script-gates.py --minutes 13.5` → **13/13 PASS** (174 WPM; G8 9/10 em-dashes;
+G9 exactly 2 antitheses). WARNs unchanged from v2 and intentional (W1 "We are" ×2 inside Jefferson's
+verbatim inaugural quote — guide exempts quotes; W2 box-content enumerations, not decorative chains).
+**Status:** Draft v3 repaired 2026-10-07, not pushed, not rendered. Awaits fresh Layer-2 re-read of the
+repairs per the program (writer never validates their own work).

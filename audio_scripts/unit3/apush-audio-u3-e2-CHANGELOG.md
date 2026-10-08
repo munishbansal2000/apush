@@ -86,3 +86,58 @@
   correct: "'Taxation without representation is tyranny' is credited to James Otis via John Adams's recollection decades later; no contemporary record pins the exact wording — always hedge ('nobody swears to the exact words') and disclose. Never teach the maxim as a verified Otis quotation."
   falsehoods: []
   sources: [web]
+
+# U3-E2 v3 — Fleet repair (2026-10-07)
+
+Repair worker pass against the fleet audit (`fleet-findings/u3-e2-FINDINGS.md`: 3 blockers, 6 minors). New version = v3. Words unchanged by direction-tag work; dialogue word edits confined to B2/B3/M1–M6. Final gates 13/13 PASS (working copy, `--minutes 11.5`): 1,881 spoken words, 164 WPM. Only warnings: the two intentional W2 triples (dispositioned in v2) and W5 'exactly' ×2 ("makes exactly that sound" + the "Not exactly" correction marker the G12 exemption requires).
+
+## B1 — Direction-tag density 85.3% → 37.7% (§9 ~40% cap)
+- Stripped workhorse/neutral-default tags (`[measured]`, `[conversational]`) from all body exposition, micro-answers ("Rockingham.", "Checked.", "On the sheet.", "All three."), prediction beats (already neutral), and the recap body. Kept only catalog beats, fleet-consistent: cold open `[professional broadcast tone]`; Maya's genuine questions `[curious, inquisitive tone]` (10); takeaways/checkoffs `[confident tone]` (exam tips, "Checking box one, then.", recap checkoffs); myth-bust corrections `[firm]` (the two live-trap catches); grim material `[serious tone]` (hot-tar turn, upgraded from `[measured]`); the postage-stamp wrong beat `[incredulous]`; the prank beat `[playful]` + `[chuckle]` (sole paralanguage); closer `[intrigued]`; tagline `[professional broadcast tone]`.
+- Count: 26/69 dialogue turns tagged = 37.7%. Self-test stays fully neutral (no tags). Words unchanged.
+
+## B2 — Antithesis budget 4 → 2 (hard gate §4.14)
+- Kept the 2 strongest: "Reach, not rate." (box-one exam tip) and "Credit the boycott, not just the bricks." (box-one trap correction).
+- Reworded the L138 pair (self-test Q2 model answer) into plain phrasing, meaning preserved:
+  - BEFORE: `...the Stamp Act's opponents aimed their fire at Parliament's authority, not the price. The slogan was representation, not relief. Nobody marched demanding cheaper stamps.`
+  - AFTER: `...the Stamp Act's opponents aimed their fire at Parliament's authority rather than the price. The slogan put representation first. Nobody marched demanding cheaper stamps.`
+
+## B3 — Announcer-voice mistake devices → live traps (§5)
+- L56 (box one) — BEFORE: `Marcus: [measured] And the mistake to dodge: the repeal wasn't won by the mobs alone. British merchants, bleeding from the boycott, lobbied Parliament for repeal themselves. Credit the boycott, not just the bricks.`
+  - AFTER (Maya commits the classic mistake in flow; Marcus catches her next turn): `Maya: So the mobs won the repeal: the Sons of Liberty scared Parliament into backing down.` / `Marcus: [firm] Common mix-up. Credit the boycott, not just the bricks. British merchants, bleeding from the boycott, lobbied Parliament for repeal themselves.`
+  - Correction content verbatim to the script's teaching, registry F-U3-016 (boycott won the repeal, not the mob alone). G12: Maya's turn matches no falsehood pattern (no "won by/because of" after "repeal"), so no exemption needed; Marcus's "Common mix-up" is a strong marker regardless.
+- L110 (box three) — BEFORE: `Maya: [firm] Common mistake for this box: don't write that the repeal settled the argument. The repeal ended a tax. The Declaratory Act kept the claim. Two things happened that month, and they point in opposite directions.`
+  - AFTER: `Maya: So the repeal settled the argument, right? Then the principle fight was over.` / `Marcus: [firm] Not exactly. The repeal ended a tax. The Declaratory Act kept the claim. Two things happened that month, and they point in opposite directions.`
+  - Correction content verbatim to the script's teaching, registry F-U3-018 (repeal didn't settle the principle). G12-exempt: Maya's "the repeal settled the argument" matches F-U3-018's falsehood pattern, and the immediately following turn is a different speaker (Marcus) with the strong correction marker "Not exactly" — gate G12 PASS confirms the exemption fires.
+
+## M1 — Retired stock phrase "Fun fact:" (§4.16)
+- BEFORE: `Maya: [conversational] Fun fact I actually know: D.C. license plates still say "Taxation Without Representation." ...`
+- AFTER: `Maya: One I genuinely know: D.C. license plates still say "Taxation Without Representation." ...` (detail and Marcus's "I didn't know that was on the plates." beat kept; tag stripped per B1)
+
+## M2 — Exam-tip opener template monoculture (§5)
+- L88 re-templated; L54 keeps "Exam tip for this box."
+- BEFORE: `Maya: [confident tone] Second exam tip. "Virtual representation" is Parliament's line, never the colonists'. ...`
+- AFTER: `Maya: [confident tone] One more exam note. "Virtual representation" is Parliament's line, never the colonists'. ...`
+
+## M3 — Box transitions voiced by Marcus → Maya one-liners (§2)
+- Box two — BEFORE: `Marcus: [measured] Box two: the argument underneath it all. Parliament had an answer ready for the protests, and it had a name: virtual representation.`
+- AFTER: `Maya: Box two: the argument underneath it all. Parliament's answer had a name: virtual representation.`
+- Box three — BEFORE: `Marcus: [measured] Box three. But the repeal came with company. Parliament linked it to the Declaratory Act: full power to make laws binding the colonies, in all cases whatsoever.` followed by `Maya: [conversational] A repeal with fine print.`
+- AFTER (merged into one Maya turn, content preserved): `Maya: Box three: the repeal came with company — a repeal with fine print. Parliament linked it to the Declaratory Act: full power to make laws binding the colonies, in all cases whatsoever.`
+
+## M4 — "signed that" unverified second-order detail (§7)
+- BEFORE (self-test Q1 model answer): `...Twenty-seven delegates from nine colonies signed that in October sixty-five, right after the Stamp Act, ...`
+- AFTER: `...Twenty-seven delegates from nine colonies drew it up in October sixty-five, right after the Stamp Act, ...` ("drew up" is the Tier-1-pinned verb, already used in the body; "signed" cut per Britannica's note that some delegates refused to sign even the moderate petitions)
+
+## M5 — "forty years after the fact" fail-closed (§7)
+- BEFORE: `...But Adams was remembering forty years after the fact, so nobody swears to the exact words. ...`
+- AFTER: `...but nobody swears to the exact words — Adams was remembering it across decades. ...`
+- Registry F-U3-019 updated same day: removed the `web` source (broad web is not a source); added a fail-closed note — the Adams-recollection mediation detail is not pinned by any Tier-1/2 line and rests on footer-disclosed general historical knowledge; dialogue teaches only "decades later," never a number.
+
+## M6 — "twelve colonies" fail-closed (§7)
+- BEFORE (closer): `...and twelve colonies answer by sending delegates to Philadelphia.`
+- AFTER: `...and the colonies answer by sending delegates to Philadelphia.`
+- Registry: new fail-closed entry F-U3-058 — twelve colonies at the First Continental Congress is historically standard but unpinned by any Tier-1 line (audit searched all three books + Unit 3 transcripts: zero hits); the number stays out of dialogue until a Tier-1/2 line confirms it.
+
+## Runtime math (header/promise/actual agree)
+- 1,881 spoken words (gate-measured, tags stripped) + 63s scripted pauses (2×[9-second pause] + 3×[15-second pause]) = 1881/180 + 63/60 = 10.45 + 1.05 = 11.5 min experienced. Header updated to 1,881; cold-open promise "Eleven and a half minutes" holds. (v2 was 1,884; net −3 words across the trap rewrites.)
+- Tag density: 26/69 = 37.7% (B1). Antitheses: 2 (B2). Em dashes in dialogue: 10 (one added by the box-three merge, one removed from the box-one trap rewrite — net at the cap, gate PASS).

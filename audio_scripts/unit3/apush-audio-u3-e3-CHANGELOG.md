@@ -34,3 +34,48 @@
 - Fresh Layer-2 re-read of all 8 repairs: PASS in context, no new violations.
 - Registry: +5 facts (F-U3-022 Townshend tea marker, F-U3-023 trial verdicts, F-U3-024 Tea Act price cut, F-U3-025 Quebec separateness, F-U3-026 Suffolk Resolves). Now 206 entries.
 - Gate-note for the parent: G9's antithesis regex undercounts ", it's the Y" / "X, not Y" variants; G1's starter regex missed a mid-joke That's. Both under budget — noted, not fixed.
+
+## Fleet repair — v2 → v3 (2026-10-07, repair worker)
+
+Per audit `fleet-findings/u3-e3-FINDINGS.md` (2 blockers, 2 minors), against `apush-final-guidelines.md`. New version v3: `apush-audio-u3-e3-script-v3-DRAFT.md`. No push (parent's job).
+
+### B1 — direction-tag density 47/57 (82.5%) → 23/60 (38.3%) (§9 ~40% cap)
+
+Stripped all 17 `[measured]` and all 14 `[conversational]` workhorse defaults, plus the recap's body `[professional broadcast tone]` (turn 42). Kept only catalog beats: cold open + tagline sign-off `[professional broadcast tone]` (fleet-canonical); Maya's genuine questions `[curious, inquisitive tone]` ×7; myth-busts `[firm]` ×3; grim material `[serious tone]` ×3; Maya's wrong beats `[incredulous]` ×3; takeaway `[confident tone]` (Dickinson penny quote); caught-wrong `[sheepish]` (recap "Right, branded."); human moment `[warm tone]` (mom darns socks); closer `[intrigued]`. Re-tags are direction-only; no words changed:
+- "Marcus: [measured] Dickinson had an answer for that exact shrug." → "Marcus: [confident tone] Dickinson had an answer for that exact shrug."
+- "Marcus: [measured] If Quebec's in the options, that's your answer." → "Marcus: [firm] If Quebec's in the options, that's your answer."
+- "Maya: [conversational] Cheaper tea? That sounds like a gift." → "Maya: [incredulous] Cheaper tea? That sounds like a gift."
+- "Maya: [conversational] Right, branded." → "Maya: [sheepish] Right, branded."
+- Self-test stays fully neutral (no tags), per §2/§9.
+
+### B2 — G9 antithesis budget 4 → 2 (max 2, §4.14)
+
+Kept the two substantive factual contrasts; reworded the two punchline-family members:
+1. Kept: "The Justice Act: royal officials accused of crimes get tried in England, not by a Massachusetts jury." (verbatim, turn 27)
+2. Kept: "The Tea Act made tea cheaper, not more expensive." (verbatim, inside the new live-trap correction, turn 29)
+3. Cut → "Marcus: [firm] And don't write that the duties were crushing. They were light. The fight was who decides, not what it costs." → folded into the M1 live-trap correction: "Marcus: [firm] Not quite. Don't write that the duties were crushing. They were light. Price was never the point; the principle was. And it wasn't just the duties: Townshend paid royal governors from the new revenue, and set up admiralty courts that tried smugglers without juries. The duties were the headline; the machine was the story."
+4. Cut → "Maya: The Quebec Act doesn't belong. … Read the list, not the nickname." → "Maya: The Quebec Act doesn't belong. The other four punished Massachusetts for the Tea Party; the Quebec Act governed Canada, Catholic worship, western borders. It just landed in the same pile. The exam sets this trap because the colonists lumped them together, so students do too. Match the list to the law; the nickname steers you wrong."
+
+### M1 — three announcer-voice proclamations → live traps (§5)
+
+Each: Maya now commits the genuine classic mistake in flow; Marcus catches her in the immediately following turn with a strong correction marker (all three G12-exempt per the gate's wrong-beat rule: different speaker, next turn, strong marker — verified by the gate run):
+1. Before: "Maya: Exam note: a stimulus says "external tax" and asks why colonists still protested. Answer: Dickinson, revenue without consent. Cross out anything about the tax being too high." + "Marcus: [firm] And don't write that the duties were crushing. They were light. The fight was who decides, not what it costs. And it wasn't just the duties: …"
+   After: "Maya: Exam note: a stimulus says "external tax" and asks why colonists still protested. Answer: Dickinson, revenue without consent." / "Maya: So if a stimulus calls the duties a crushing burden, that's my pick." / "Marcus: [firm] Not quite. Don't write that the duties were crushing. They were light. Price was never the point; the principle was. And it wasn't just the duties: Townshend paid royal governors from the new revenue, and set up admiralty courts that tried smugglers without juries. The duties were the headline; the machine was the story."
+2. Before: "Marcus: [measured] If Quebec's in the options, that's your answer. Separate law, same year. And a second trap: the Tea Act made tea cheaper, not more expensive. Flip that and you've got the cause backwards."
+   After: "Maya: So the Tea Party was a protest against expensive tea. Parliament raised the price, and the merchants snapped?" / "Marcus: [firm] Common mix-up. The Tea Act made tea cheaper, not more expensive. Flip that and you've got the cause backwards. If Quebec's in the options, that's your answer. Separate law, same year."
+3. Before: "Maya: [conversational] For the long essay, this Congress is my "colonial unity" evidence, twelve colonies acting as one. The petition is the qualifier: unity without independence. The essay trap is jumping to 1776: the Congress petitioned the king. Unity, but not independence — not yet."
+   After: "Maya: For the long essay, this Congress is my "colonial unity" evidence, twelve colonies acting as one — and my first step toward 1776." / "Marcus: [firm] Common mistake — jumping to 1776. The Congress petitioned the king. Unity without independence — not yet."
+
+### M2 — "every town" flattening → "town after town" (§7, "Most of" beats "all")
+
+Before: "Marcus: The Association: a colonies-wide pact, nothing in from Britain and nothing out, with teeth. Committees of observation in every town to enforce it, committees that became the real government in plenty of towns."
+After: "Marcus: The Association: a colonies-wide pact, nothing in from Britain and nothing out, with teeth. Committees of observation in town after town to enforce it, committees that became the real government in plenty of towns."
+Tier 1 line (princeton ch. 7, also quoted in the v2 sources footer): "Continental Association with committees of observation enforcing the boycott, becoming towns' de facto governments." — the book does not pin every town. Not a book-error claim; hedge correction only. Registry: +F-U3-059 (committees-of-observation hedge; falsehood pattern `committees.{0,20}observation.{0,30}every town`). Sources footer updated with the disclosure.
+
+### Mechanical verification (working gate copy, `--minutes 12`)
+
+- Gates: 13/13 PASS. Warns only (all pre-existing shape): W1 1x "That is" (kept with intent per v2), W2 possible triples (pre-existing), W5 "exactly" 2x (back to v2 level after one repair draft hit 3x).
+- Runtime math: 1,948 spoken words (gate count) + 64s scripted pauses = 11.9 min at 180 WPM; header, cold-open promise ("Twelve minutes"), and gate count agree. Note: gate must be run with `--minutes 12` — the default `--minutes 8` G4 FAIL is a gate-script default artifact, not a script defect (auditor note N1).
+- Tag density: 23/60 = 38.3%. Em dashes: 9 (≤10).
+- G9: exactly 2 surviving antitheses (the two substantive contrasts above).
+- G12: PASS with the new F-U3-059 falsehood pattern loaded; all three new Maya wrong-beat turns exempt via the gate's correction-marker rule.

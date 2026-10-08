@@ -52,3 +52,125 @@ Substance identical; header word count updated to 1,879; gates 12/12 PASS.
 Independent re-read caught two self-test question PROMPTS still speaking the
 banned labels ("Claim, evidence, reasoning: go."). Stripped to "Make your case."
 Gates 12/12 PASS.
+
+## v3 repair — fleet audit findings (2026-10-07)
+
+Auditor: 4 blockers, 4 minors on v2. All repaired below. Words changed only
+where the findings required it; the B1 retag changed no words. Gates re-run
+on the final draft with the working copy (`your_files/apush-script-gates.py`,
+carries the G12 wrong-beat exemption), `--minutes 11.5`.
+
+### B1 — direction-tag density 83.9% → 38.1% (§9)
+Stripped every workhorse/neutral-default tag: `[conversational]` ×20,
+`[measured]` ×16, `[thoughtful tone]` ×4 — all gone. Tags kept only on
+§9-canonical beats: cold open `[professional broadcast tone]`; takeaways
+`[confident tone]` ×5; myth-busts/exam truths `[firm]` ×4; Maya's genuine
+questions `[curious, inquisitive tone]` ×2; Maya caught-wrong `[sheepish]`
+×1; grim passages (smallpox, Paxton Boys) `[serious tone]` ×3; recap
+self-corrections `[catching]` ×2; the troop-figure prediction beat
+`[speaking slowly]` ×1; closer `[intrigued]` ×1; sign-off tagline
+`[professional broadcast tone]` ×2. 24 of 63 turns tagged = 38.1%.
+Self-test stays fully neutral (no tone tags on questions or answers).
+No paralanguage, no `[emphasis]`.
+
+### B2 — box-1 announcer trap → live trap (§5)
+Before:
+`Marcus: [firm] And the mistake to avoid for this box: pinning a number on that debt. The books say "enormous." Use their word, not a figure you can't source.`
+After — Maya commits the genuine classic error, Marcus catches her:
+`Maya: The debt was a hundred and forty million pounds? Putting that on the sheet.`
+`Marcus: [firm] Not quite. Don't pin a number on that debt. The books say "enormous." Use their word, not a figure you can't source.`
+`Maya: [sheepish] Box one, done. But the frontier's already on fire.`
+Marcus's correction teaches verbatim what v2 taught (F-U2-064: no pinned
+figure; the books' word is "enormous"). G12: no registry falsehood pattern
+matches Maya's line ("130 million pounds" is a literal pattern; she claims
+no "doubled"), so the gate is clean without needing the exemption — the
+"Not quite" strong marker from a different speaker is belt-and-braces.
+
+### B3 — box-2 announcer trap → live trap (§5)
+Before:
+`Marcus: [firm] Common slip: the Mississippi was the prize, the Appalachians were the fence. Don't swap them.`
+After:
+`Maya: So the Mississippi was the fence, and the Appalachians were the prize.`
+`Marcus: [firm] Not quite. The Mississippi was the prize, the Appalachians were the fence. Don't swap them.`
+Correction verbatim to v2's taught content. De-dup vs the recap: v2's recap
+re-taught the swap as a fumble —
+`Maya: [professional broadcast tone] Two: the Proclamation Line of 1763. No settlement past the — the Mississippi? No —` /
+`Marcus: [conversational] The Appalachians.` /
+`Maya: [thoughtful tone] The Appalachians. The Mississippi was the prize, the mountains were the fence. London was dodging a war. Pure triage. And it failed as a fence anyway.` /
+`Marcus: [thoughtful tone] On the sheet.`
+— four turns now replaced by two, with the recap fumbling on a different
+beat (whether the fence held) instead of repeating the swap:
+`Maya: [catching] Two: the Proclamation Line of 1763. A line along the Appalachians, no settlement past it. London was dodging a war, pure triage. And the fence held. No, wait: it failed as a fence.`
+`Marcus: Came too late. On the sheet.`
+The swap is now taught exactly once, mid-episode, as the live trap. (This
+also resolves M1 — see below.)
+
+### B4 — box-3 announcer trap → live trap (§5)
+Before:
+`Marcus: [firm] And watch for this mistake: Neolin was the prophet, Pontiac was the war chief. Swap the jobs and the paragraph falls apart.`
+After:
+`Maya: [confident tone] Sorting rule, test-ready: the rebels in 1763 were Ottawa-led Native nations. If your draft says the colonists rebelled, you've written the wrong war.`
+`Maya: So Pontiac was the prophet.`
+`Marcus: [firm] Common mix-up. Neolin was the prophet, Pontiac was the war chief. Swap the jobs and the paragraph falls apart.`
+Correction verbatim to v2's taught content. G12 verification: Maya's line
+matches F-U3-003's `pontiac…prophet` falsehood pattern, but Marcus's
+immediately following turn is a different speaker carrying the strong
+correction marker ("Common mix-up") → the wrong-beat exemption applies and
+the gate stays clean (confirmed in the 13/13 run). "Common mix-up" was
+chosen over a third "Not quite" to vary Marcus's corrections.
+
+### M1 — `[professional broadcast tone]` in the recap body (§9)
+Gone with the B3 recap rewrite: the box-2 recap turn is now `[catching]`
+(Maya's mid-stream self-correction — the catalog fit). Broadcast tone now
+appears only on the cold open and the two closing-tagline turns (sign-off),
+per §9.
+
+### M2 — "Cheap beats fair" verbatim ×2 (§4.6)
+Before (Maya's self-test model answer):
+`Maya: ...With the treasury empty, freezing settlement west cost less than fighting another frontier war. Cheap beats fair.`
+After:
+`Maya: ...With the treasury empty, freezing settlement west cost less than fighting another frontier war. Triage won because the treasury was empty.`
+Marcus's mid-episode "Cheap beats fair when the treasury's empty." is the
+surviving instance; G5 confirms no verbatim repeat remains.
+
+### M3 — "by the usual account" for the Fort Pitt site (§7)
+Before:
+`Marcus: [measured] ...The books count more than four hundred British soldiers and around two thousand colonists killed or captured. At Fort Pitt, by the usual account, the British handed out blankets deliberately infected with smallpox.`
+After:
+`Marcus: [serious tone] ...The books count more than four hundred British soldiers and around two thousand colonists killed or captured. The British handed out blankets deliberately infected with smallpox.`
+Fail-closed: Princeton (Tier 1) pins the tactic
+("germ warfare... smallpox-infected blankets... to help defeat the Ottawa")
+but names no fort, and the Fort Pitt site-name could not be pinned in
+Tier 1–2 — so the site pin is cut from dialogue; the line now teaches only
+what Princeton pins. The footer discloses the site-name's
+standard-accounts-only, beyond-Tier-1–2 status. Registry F-U3-006 updated
+same day (correct-field now records the removal, not a hedge).
+
+### M4 — F-U3-009 troop figure (registry discipline)
+Dialogue keeps the correct handling — "roughly ten thousand soldiers"
+(hedged) + footer disclosure — unchanged. The figure is NOT registered as a
+verified fact: F-U3-009's topic/correct now flag it explicitly as a
+"FAIL-CLOSED handling note, NOT a verified fact" (hedge-and-disclose rule
+for the fleet). Registry re-parsed after the edit (693 facts, valid YAML).
+
+### Incidental trims (runtime agreement, §8)
+The three live-trap conversions add a Maya error turn each. To keep the
+experienced runtime at the promised 11.5 min, four small cuts: "after the
+French are gone" (prediction-beat setup), the double "already" (Washington
+line), "itself" (Paxton march), "Anyway —" (car-lore pivot). Net word
+delta vs v2: 1,879 → 1,882 (+3).
+
+### Validation (v3, final draft)
+- Gates (working copy, `--minutes 11.5`): **13/13 PASS** —
+  1,882 words, 164 WPM. WARNs only: W2 triples (4 hits, all pre-existing
+  v2 lines) and W5 "exactly" (2x, the v2 baseline — the B4 "Common mix-up"
+  choice kept it there).
+- Runtime math: 1,882 ÷ 180 × 60 + 63s pauses = 690.3s = 11.51 min →
+  header "11.5 min" and cold-open "Eleven and a half minutes" agree.
+- Tag density: 24/63 turns = 38.1% (measured, §9 ~40% cap).
+- G12 wrong-beat exemptions verified live: B4's Maya error trips F-U3-003's
+  pattern and is exempted via Marcus's "Common mix-up"; B2's error matches
+  no pattern. Gate output shows zero G12 hits.
+- Self-test: 3 questions + 3 model answers, zero tone tags (neutral),
+  no spoken CER labels (G13 pass), 15s pauses on all three.
+- `~/workspace/apush/` untouched; nothing pushed (parent's job).

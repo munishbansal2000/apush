@@ -119,3 +119,140 @@ Writer computed runtime at ~160 WPM ("≈12.0 min at ~160 WPM"). Frozen standard
 
 ## Layer-2 re-read — 2026-10-06
 REPAIRS PASS: all 7 repairs verified natural in context, substance intact, no new violations. Body/recap agree on navy fix; footer honest and complete. One fix from the re-read: stale header figure "≈12.0 min at ~160 WPM" corrected to "≈10.8 min at ≤180 WPM" (header, cold-open promise, and actual now agree at the standard rate).
+
+---
+
+# U3-E11 v2 → v3 Changelog (2026-10-08 — fleet repair program)
+
+Audit verdict on v2: NOT CLEAN — 5 blockers, 6 majors (gates 13/13 at --minutes 11 did not cover them). v3 applies every finding. No push; repair worker only.
+
+## B-01 — tone-tag density 81% → 32%
+- Before: 51/63 turns tagged (81%), incl. four body misuses of `[professional broadcast tone]`:
+  `Maya: [professional broadcast tone] Because he needed the cash for the war —`,
+  `Maya: [professional broadcast tone] Nobody has, which makes it the perfect hiding place. Writers were in on it too —`,
+  `Maya: [professional broadcast tone] So was it a revolution? Jefferson's own phrase for it —`,
+  `Maya: [professional broadcast tone] Four: the culture. Webster's speller and the 1789 line, Peale, Trumbull, Crèvecoeur, the Capitol in stone. ...`
+- After: 21/65 turns tagged (32%). `[professional broadcast tone]` on cold open + tagline closer only. Kept tags: cold open, `[speaking slowly]` (36-ballot numbers), `[firm]` (four live-trap corrections + recap misprint warning), `[catching]` (Haiti/cash fumble), `[curious, inquisitive tone]` (Maya's genuine questions), `[confident tone]` (takeaways/checkoffs/recap), `[thoughtful tone]` (closing verdict), `[intrigued]` (Marcus closer). Self-test fully neutral.
+
+## B-02 — negation-replacement antithesis 10 → 2
+- Kept (the 2 most substantive): `The tie isn't Jefferson versus Adams. It's Jefferson versus his own ticket.` and `most of those commissions were signed in his final weeks, not literally at midnight.`
+- Reworded to plain positive statements, e.g.:
+  - Before: `Some Federalists preferred Burr: not from trust, they just wanted to embarrass Jefferson.` → After: `Some Federalists preferred Burr out of spite, embarrassing Jefferson mattered more than trusting Burr.`
+  - Before: `...Slavery didn't just survive Jefferson's revolution; it grew, fed by the Louisiana land he'd bought.` → CUT (unverifiable, B-05).
+  - Before: `Seventy-three to seventy-three, the House voting by state, thirty-six ballots, not thirty-five, ...` → After: recap fumble `thirty-five ballots — no, thirty-six.` (+ Marcus misprint correction).
+  - Before: `A republic needs its own culture, not just its government.` → After: `A republic needs its own culture as much as its government.`
+  - Before: `Theater, not theatre. Color, not colour.` → After: `Theater for theatre, color for colour.` (G9 counted the spelling pairs mechanically; content kept, construction gone.)
+  - The four "Don't write" proclamations → live traps (B-03).
+
+## B-03 — four announcer-voice "Don't write" proclamations → four live traps (one per box)
+Each rebuilt as Maya-error → Marcus-correction in the immediately following turn with a strong marker:
+- Box 1 — Before: `Maya: [firm] Don't write that the voters picked Jefferson. The House did, and in 1800 most Americans couldn't vote for president at all.` → After: `Maya: So the voters picked Jefferson. The people had spoken.` / `Marcus: [firm] Not quite. The House did. The 73-73 tie went to the House, voting by state, and the Federalists who'd just lost got to choose.` (suffrage clause cut — unverifiable, B-05.)
+- Box 2 — Before: `Marcus: [firm] ... And don't write that Louisiana shrank Jefferson's government: buying half a continent on loose construction is the opposite of small government.` → After: `Maya: So buying Louisiana shrank his government. Small-government president, smaller footprint.` / `Marcus: [firm] Common mix-up. Buying half a continent on loose construction is the opposite of small government.` ("The Senate ratified and the House paid" cut — unverifiable, B-05.)
+- Box 3 — Before: `Marcus: [firm] ... don't write that Marbury won. He lost, the Court won, and that's the whole trick.` → After: `Maya: So Marbury won his case. Commission delivered, everybody goes home.` / `Marcus: [firm] Common mistake. Marbury lost. The Court won judicial review.`
+- Box 4 — Before: `Maya: [conversational] ... And don't date the union line to the speller. Speller's 1783; the line is 1789. Six years apart.` → After: `Maya: And the union line came from the speller: 1783, the blue book.` / `Marcus: [firm] Not quite. The speller's 1783; the union line is credited to his 1789 Dissertations. Different book.`
+
+## B-04 — Webster "actual words" → hedged per F-U3-057
+- Before: `Marcus: [measured] ... His actual words: "a national language is a band of national union."` and self-test `Maya: "A national language is a band of national union." Speller's 1783; the line is 1789. Don't mix them.`
+- After: `... "a national language is a band of national union," is credited to his 1789 Dissertations.` and bonus `Maya: The 1789 Dissertations get the credit. The line: "A national language is a band of national union."` Never presented as verified verbatim; matches the U3-CRAM v3 hedge registered in F-U3-057.
+
+## B-05 — 12 unverifiable details, fail-closed
+1. Bayard + 10-4-2 count — CUT. Before: `James Bayard of Delaware led Federalists into abstaining... ten states for Jefferson, four for Burr, two blank.` (also recap + self-test). After: `Hamilton's letters did the work, and on the 36th ballot Jefferson won it.` Tier-1 supports only "Jefferson owed his victory on the thirty-sixth ballot to Alexander Hamilton" (5steps ch12). Registry F-U3-069.
+2. Feb 17, 1801 — KEPT: registered correct in F-U3-050 (Monticello/LOC-confirmed).
+3. Gallatin "paying down the debt" — CUT. Before: `...who cut taxes, including the whiskey excise Washington once marched an army to collect, and started paying down the debt.` → After: ends at `...to collect.` (also cut from recap). Registry F-U3-070.
+4. Amendment draft / agonized in letters — CUT. Before: `He drafted an amendment, agonized in letters, and did it anyway, using Hamilton's loose reading of the Constitution he'd campaigned against.` → After: `He had real legal scruples about it, and bought it anyway, on the loose construction he'd campaigned against.` ("loose construction" gloss stays as disclosed interpretive commentary.) Registry F-U3-071.
+5. "The Senate ratified and the House paid" — CUT (folded into the box-2 live trap rebuild). Registry F-U3-072.
+6. Peale's museum — CUT entirely (no Tier-1 line). Registry F-U3-073.
+7. Trumbull rotunda / "never in the room together" — CUT. Before: `Trumbull's giant Declaration canvas hangs in the Capitol rotunda, except it's romanticized: half the men in it were never in the room together.` → After: `And John Trumbull's Declaration canvas, 1818. The founders were already painting their own story.` (Tier-1: princeton practice test "Declaration of Independence, John Trumbull, 1818"). The $2-bill beat kept as Maya's pop-culture knowledge. Registry F-U3-073.
+8. Capitol begun 1793 — CUT (no Tier-1 line). Registry F-U3-073.
+9. Slavery-growth causal claim — CUT. Before: `Slavery didn't just survive Jefferson's revolution; it grew, fed by the Louisiana land he'd bought.` No Tier-1 line in full-chapter scans. Registry F-U3-074.
+10. Suffrage generalization + "Jefferson the liberator enslaved people himself" — CUT. Before: `Most Americans still couldn't vote, and Jefferson the liberator enslaved people himself.` (also the box-1 trap's `most Americans couldn't vote for president at all`). No Tier-1 lines found. Registry F-U3-075.
+11. "Modern world" superlative — CUT. Before: `The first time in the modern world a ruling party handed power to the opposition and walked away.` → After: `The first time control of the presidency passed from one party to another.` (5steps ch12 verbatim scope). Registry F-U3-076.
+12. "Years later, in a letter" (revolution-of-1800 phrase) — CUT. Before: `He used the phrase years later, in a letter, and the honest answer cuts both ways.` → After: `His phrase, yes: "the revolution of 1800." And the honest answer cuts both ways.` (premium2027 ch6 credits Jefferson; the 1819-letter refinement is not in Tier-1.)
+
+## M-01 — three triple-parallel cadences → zero
+- Before: `The sitting president loses, skips the inauguration, and leaves town before dawn.` → After: `The sitting president loses and skips the inauguration, leaving town before dawn.`
+- Before: `A tie goes to the House, voting by state, and the House is still Federalist, the party that just lost.` → After: `A tie goes to the House, voting by state. And the House is still Federalist, the party that just lost.`
+- Third (`He drafted an amendment, agonized in letters, and did it anyway`) died with the B-05 amendment cut.
+
+## M-02 — "Some historians say" → Maya's earned pushback
+- Before: `Marcus: [measured] Some historians say 1800 wasn't a revolution at all, just a changing of the guard.` → After: `Maya: [curious, inquisitive tone] I'll push back. Same system, new letterhead. Isn't that just a changing of the guard?` / `Marcus: [thoughtful tone] The counterargument is real. But the precedent was new and it held: a ruling party handing power to the opposition and walking away. The republic survived its first stress test and deferred its hardest questions.`
+
+## M-03 — 12th Amendment framing
+- Before: `...so it could never happen again.` → After: `...so that tie could never happen again.`
+
+## M-04 — header word count
+- Before: 1,733 (header) vs 1,725 true. After: header/read note carry the true tag-stripped figure 1,567; experienced runtime 1,567/180 + 68/60 ≈ 9.8 min. Cold-open promise changed `About eleven minutes.` → `About ten minutes.` (fail-closed cuts shortened the episode; floor 1,440 still met). Header, promise, and actual agree.
+
+## M-05 — aphoristic button lines → plain
+- Before: `Maya: [conversational] He gave up the battle to win the war.` → After: `Maya: [confident tone] He traded one man's commission for the Court's whole future.`
+- Before: `Marcus: [firm] And almost nobody noticed at the time. Quiet revolutions work like that.` → After: `Marcus: And almost nobody noticed at the time.` (the `that's the whole trick` kicker died with the box-3 trap rebuild.)
+
+## M-06 — "before dawn" hedge kept
+- `Adams left the capital before dawn rather than attend; the exact hour gets argued about, but the snub is solid.` unchanged — the hedge shape the audit accepted.
+
+## Watch items
+- W-01: W1's 4 uncontracted hits are all `We are` inside the verbatim inaugural quote — exempt per §4.11, keep.
+- W-02: "Exactly." once; fine.
+- W-03: `the promises stopped at the color line and the property line` — CUT with the asterisk specifics (post-1900 phrasing + unverifiable).
+- W-04: mid-episode wrong beats kept (Haiti/cash fumble, "Open and shut for Marbury"); recap fumble rebuilt as the 35/36 memory-check (`thirty-five ballots — no, thirty-six.` + Marcus misprint correction). Both tools still in play.
+- W-05: the Princeton "35" misprint warning moved from body announcer-voice into the recap fumble's Marcus correction — still the only book-error correction in that voice.
+
+## Validation (repair pass)
+- `apush-script-gates.py --minutes 11`: 13/13 PASS (G9 needed the spelling-pair reword; fixed in-pass, re-run green).
+- Tone density 21/65 = 32% (≤~40%). Em dashes in dialogue: 4/10. That's/Here's starters: 0. Antithesis: 2 (tie, midnight). Self-test neutral/untagged. No spoken CER labels. Pause tags unchanged (68s). Pronunciation header: Bayard dropped (no longer in dialogue).
+- Tier-1 confirmations done this pass (read-only): 5steps2024 ch12 carries no suffrage generalization and no Jefferson-era slavery-growth claim (its slavery lines are Missouri 1819–20 + Haiti); premium2027 ch06's "peale" hit is a false positive ("repealed"); no Trumbull/Crèvecoeur lines in ch06. Cuts confirmed against the books, not just the audit.
+- Registry: +8 (F-U3-069 … F-U3-076), YAML re-parsed after edit.
+
+---
+
+# U3-E11 v3 → v4 Changelog (2026-10-08 — fleet repair program, re-read fix)
+
+Independent re-read of v3 found ONE residual issue. v4 fixes it. No push;
+repair worker only.
+
+## R-01 — Maya's "people not voting" joke cut of the Bayard/abstention echo
+- Finding: the re-read flagged Maya's joke line immediately after Marcus's
+  36th-ballot beat. Before:
+  `Maya: The republic was saved by people not voting. The most passive-aggressive rescue in history.`
+  The "people not voting" half echoes the CUT Bayard/abstention mechanism
+  (B-05 v3, registered in F-U3-069 as not found in Tier-1) with no
+  correction — Marcus moves straight on. Under §7 fail-closed, a line
+  gesturing at the cut mechanism can't stand uncorrected. The Tier-1-taught
+  cause is Hamilton's letters ("Nobody converted. Hamilton's letters did
+  the work, and on the 36th ballot Jefferson won it.").
+- After:
+  `Maya: The republic was saved by stationery. The most passive-aggressive rescue in history.`
+  Riffs on "nobody converted" / letters-doing-the-work without implying
+  abstention or non-voting did the work. Joke shape kept (Maya's voice,
+  "The most passive-aggressive rescue in history." still lands against
+  letters doing the persuading).
+- Word-choice note: the brief's e.g. "saved by letters, not votes" was NOT
+  used verbatim — the ", not Y." shape is itself a negation-replacement
+  punchline and the antithesis budget sits at exactly 2 ("The tie isn't
+  Jefferson versus Adams. It's Jefferson versus his own ticket." /
+  "most of those commissions were signed in his final weeks, not literally
+  at midnight."). G9's regex family also flags it mechanically. "Stationery"
+  keeps the humor with zero negation.
+
+## Runtime math (verified independently for v4)
+- Spoken words: 1,565 (was 1,567; −2: "people not voting" → "stationery").
+  Pauses unchanged: 68s.
+- 1,565 ÷ 180 WPM = 521.7s speech + 68s pauses = 589.7s ≈ 9.8 min
+  experienced — agrees with the cold-open promise ("About ten minutes").
+- Header read note updated: "Spoken words: 1565. Pauses: 68s. Experienced
+  runtime ≈ 9.8 min at ≤180 WPM."
+
+## Validation (repair pass)
+- `apush-script-gates.py apush-audio-u3-e11-script-v4-DRAFT.md --minutes 11`:
+  13/13 PASS (warnings only: W1 'We are' ×4 — all inside the verbatim
+  inaugural quote, exempt per §4.11; W2 triples — false positives, box
+  lists). G9 stays at its single mechanical hit ("final weeks, not
+  literally at midnight").
+- Diff vs v3: exactly one dialogue line changed + the read-note word-count
+  bookkeeping. The abstention implication is gone; "stationery" = Hamilton's
+  letters, the Tier-1 cause.
+
+## v4 post-repair header correction (coordinator, 2026-10-08)
+- The re-read caught a stale header: title line read "1,567 spoken words"
+  while the read note and gates count 1,565. Corrected the title header to
+  1,565. Gates re-run: 13/13 PASS (--minutes 11). No dialogue touched.
