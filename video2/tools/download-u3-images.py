@@ -28,6 +28,8 @@ def get_rate_limit(url):
             return limit
     return RATE_LIMITS["default"]
 
+FORCE = "--force" in sys.argv
+
 def download_one(img, out_dir):
     img_id = img["id"]
     # Determine extension from URL or default to .jpg
@@ -44,7 +46,7 @@ def download_one(img, out_dir):
             ext = ".tif"
         
         out_path = out_dir / f"{img_id}{ext}"
-        if out_path.exists() and out_path.stat().st_size > 0:
+        if out_path.exists() and out_path.stat().st_size > 0 and not FORCE:
             return f"skip (exists): {img_id}"
         
         try:
