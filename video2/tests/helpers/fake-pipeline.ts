@@ -60,6 +60,8 @@ export function fakeContext(options: FakeOptions = {}) {
     force: options.force ?? false,
     full: true,
     videoGen: options.videoGen ?? 'none',
+    agent: false,
+    draft: false,
     stages: options.stages ?? [...PIPELINE_STAGES],
     cfg: structuredClone(DEFAULT_CONFIG),
     ...dirs,

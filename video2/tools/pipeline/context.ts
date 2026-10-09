@@ -21,7 +21,12 @@ export interface PipelineContext {
   dryRun: boolean;
   force: boolean;
   full: boolean;
+  /** none = never run LTX; clip shots fall back to their still. */
   videoGen: 'ltx' | 'none';
+  /** --agent: the director writes prompt files for external agents instead of calling Meta UI. */
+  agent: boolean;
+  /** --draft: allow library geography that is not approved yet (samples; not for publishing). */
+  draft: boolean;
   stages: PipelineStage[];
   cfg: Config;
   /** out/pipeline/<episode>: checkpoints, prompts, caches. */
@@ -107,7 +112,7 @@ export function createContext(): PipelineContext {
   };
 
   return {
-    episode, mode, dryRun, force, full: flag('full'), videoGen: videoGen as 'ltx' | 'none', stages, cfg, work, dataDir,
+    episode, mode, dryRun, force, full: flag('full'), videoGen: videoGen as 'ltx' | 'none', agent: flag('agent'), draft: flag('draft'), stages, cfg, work, dataDir,
     audioDir: join(ROOT, 'public', 'audio', episode),
     ttsDir: join(ROOT, 'tts', episode),
     publicDir: join(ROOT, 'public'),
