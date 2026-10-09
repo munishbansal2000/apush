@@ -97,9 +97,9 @@ async function geo() {
 }
 
 function images() {
-  console.log('images → public/historic (from data/images.json)');
+  console.log('images → public/historic (from src/data/images.json)');
   if (dry) {
-    const manifest = JSON.parse(readFileSync(join(ROOT, 'data/images.json'), 'utf8')) as Record<string, { source_url?: string }>;
+    const manifest = JSON.parse(readFileSync(join(ROOT, 'src/data/images.json'), 'utf8')) as Record<string, { source_url?: string }>;
     for (const [file, e] of Object.entries(manifest)) if (!file.startsWith('_') && e.source_url) console.log(`  ${file}  ←  ${e.source_url}`);
     return;
   }

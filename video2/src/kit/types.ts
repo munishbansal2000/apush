@@ -195,7 +195,7 @@ export interface LedgerBeat extends BeatBase {
 
 export interface RouteBeat extends BeatBase {
   kind: 'route';
-  /** Place names from data/places.json. */
+  /** Place names from src/data/places.json. */
   routes: { from: string; to: string; label?: string }[];
   caption: string;
   variant: 'overview' | 'dark';

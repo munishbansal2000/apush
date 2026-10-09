@@ -163,3 +163,31 @@ Gate: typecheck 0, lint 0, tests 97/97.
 files only imported each other). `docs/HANDOFF.md` and a comment in `src/motion/layout.ts` updated. The full old system
 stays available in `remotion-src/`. Gate: typecheck 0, lint 0, tests 97/97.
 
+## P13: one copy of shared data, in `src/data/`
+
+Reader map before the merge: the kit (U1E3/practice, `tools/lib.ts`, `tests/kit.test.ts`, `make.tsx`) read `data/`;
+the directed pipeline read `src/data/fact-registry` + `pronunciations`; component episodes/motion read
+`src/data/render-config` (720p); `src/data/images.json` and `src/data/style-rules.json` had **no readers**.
+
+Rule: the copy code actually used wins; everything moves to `src/data/`; every losing value is saved in
+`docs/data-merge-conflicts.json`.
+
+| File | Result |
+|---|---|
+| fact-registry | union (16 kit + 5 pipeline facts, no overlapping ids) |
+| pronunciations | `src/data` (kit's 13 terms were an identical subset of its 31) |
+| places | identical values; documented nested shape kept; `U1E3Episode` reads `.places` |
+| terms | identical; one copy |
+| style-rules | kit values (only reader); unused variant saved to conflicts file |
+| images | kit's in-use entries win all 35 conflicts (saved to conflicts file); 31 entries only in `src/data` added → 145 |
+| render-config | **not duplicates**: kit 1920×1080 → `src/data/kit-render-config.json`; component 1280×720 stays `src/data/render-config.json` |
+
+Kit validator before/after (`tools/validate-episode.ts`): practice identical; u1e3 identical except **2 new errors**,
+both real issues the split data had hidden:
+- `B006 F-U1-EXCHANGE-05`: on-screen "NO TOMATOES IN ROME BEFORE 1492" implies arrival in 1492 (registry: "UNTIL AFTER 1492").
+  Content fix left to the owner.
+- `I004 historic/u1e2/potatoes.jpg`: `used_in` from the old `src/data` copy names E3:t05/t06, but no beat uses it
+  (fix: `npm run sync:manifest`).
+
+Gate: typecheck 0, lint 0, tests 97/97.
+

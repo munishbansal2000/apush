@@ -101,7 +101,7 @@ export const u1e3 = defineEpisode({
       hipp: { type: 'Point of View', text: 'The Nahua side of the conquest, recorded decades later under a Spanish friar: not a raw diary.' },
     },
 
-    /* real-geography route maps (data/places.json) */
+    /* real-geography route maps (src/data/places.json) */
     {
       id: 'route-west', kind: 'route', at: { turn: 'Westbound first', word: 'westbound' }, variant: 'overview',
       caption: 'WESTBOUND: Europe → the Americas',

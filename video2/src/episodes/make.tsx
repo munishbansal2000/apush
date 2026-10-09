@@ -3,12 +3,12 @@
  * full-length component plus a Short component. Episode modules stay a few lines long.
  */
 import React from 'react';
-import facts from '../../data/fact-registry.json';
-import manifest from '../../data/images.json';
+import facts from '../data/fact-registry.json';
+import manifest from '../data/images.json';
 import imageLock from '../../data/images.lock.json';
-import places from '../../data/places.json';
-import config from '../../data/render-config.json';
-import terms from '../../data/terms.json';
+import places from '../data/places.json';
+import config from '../data/kit-render-config.json';
+import terms from '../data/terms.json';
 import type { TermsFile } from '../kit/derive';
 import { assertRenderable, compileEpisode } from '../kit/episode';
 import { EpisodeShell, type EpisodeShellProps } from '../kit/EpisodeShell';

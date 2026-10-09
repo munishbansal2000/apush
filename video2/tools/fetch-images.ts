@@ -199,7 +199,7 @@ function loadManifest(): Record<string, ManifestEntry> {
     Object.assign(manifest, entries);
   }
   // Fallback to legacy monolithic file
-  const legacy = join(dataDir, 'images.json');
+  const legacy = join(ROOT, 'src', 'data', 'images.json');
   if (!Object.keys(manifest).length && existsSync(legacy)) {
     Object.assign(manifest, JSON.parse(readFileSync(legacy, 'utf8')));
   }

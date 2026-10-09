@@ -9,7 +9,7 @@ import { AbsoluteFill, Sequence } from 'remotion';
 import { LayoutGuard, Track } from '../kit/guard';
 import { AutoLayoutProvider } from '../validation/AutoLayout';
 import { ToneProvider } from '../validation/ToneContext';
-import renderConfig from '../../data/render-config.json';
+import renderConfig from '../data/kit-render-config.json';
 import type { RenderConfig } from '../kit/layout';
 import { PART_A } from './partA';
 import { PART_B } from './partB';

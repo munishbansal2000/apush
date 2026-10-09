@@ -40,7 +40,7 @@ Status: `[ ]` open · `[~]` in progress · `[x]` fixed
 ## Low / housekeeping
 
 - [ ] **P12.** Windows-only paths and hard-coded `C:\Users\munis\...` (`video-pipeline.ts:77`, `meta-ui-runner.cjs:44-45`, `setup-pipeline.ps1`).
-- [ ] **P13.** `data/` and `src/data/` hold diverging copies of fact-registry, pronunciations, images, render-config.
+- [x] **P13.** `data/` and `src/data/` hold diverging copies of fact-registry, pronunciations, images, render-config.
 - [x] **P14.** `DirectedPlan` lacks `roadmap`/`roadmapIndex`; `pipeline-core.ts` uses `as any`.
 - [x] **P15.** `--from render` without `--full` selects no stages and quietly does nothing.
 - [x] **P16.** Validation gaps: `syncIssues` skips the first-scene gap; `normalizeTurns` accepts NaN pauses and empty text;
@@ -57,6 +57,9 @@ Status: `[ ]` open · `[~]` in progress · `[x]` fixed
   `fish.voices` in `data/pipeline.json`. Status: waiting on owner.
 - [ ] **P31. Spectrum marker labels collide with axis labels** (e.g. "Sons of Liberty" over "Patriot" at at=0.9). Seen in the visual baseline.
 - [ ] **P32. Causal chain hugs the left frame edge and reveals nodes on a fixed timer** (only 3 of 4 nodes visible at mid-scene), not on narration.
+- [ ] **P33. U1E3 on-screen claim violates fact F-U1-EXCHANGE-05:** "NO TOMATOES IN ROME BEFORE 1492" (use "UNTIL AFTER 1492").
+  Surfaced by the P13 merge. Owner content fix in `src/episodes/u1e3.ts`.
+- [ ] **P34. Stale image registry entry** `historic/u1e2/potatoes.jpg` lists E3:t05/t06 but no beat uses it. Run `npm run sync:manifest`.
 
 ## Found by comparing with `remotion-src/` (older ancestor of video2)
 

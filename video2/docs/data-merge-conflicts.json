@@ -1,0 +1,439 @@
+{
+  "_doc": "Values that lost the 2026-10-08 data/ -> src/data/ merge (P13). The in-use copy won; these are the discarded variants, kept for review.",
+  "style-rules.json": {
+    "_doc": "Language and structure rules enforced by the script linter (S0xx) and on-screen linter (B0xx). Edit here, never in code.",
+    "speakers": [
+      "maya",
+      "marcus"
+    ],
+    "banned_phrases": [
+      {
+        "pattern": "\\bfun fact\\b",
+        "why": "announcer voice; let the fact be fun"
+      },
+      {
+        "pattern": "\\bthink about that( one)? for a (second|moment)\\b",
+        "why": "stock filler"
+      },
+      {
+        "pattern": "\\blet'?s dive in\\b",
+        "why": "YouTube filler"
+      },
+      {
+        "pattern": "\\bbuckle up\\b",
+        "why": "YouTube filler"
+      },
+      {
+        "pattern": "\\bwithout further ado\\b",
+        "why": "filler"
+      },
+      {
+        "pattern": "\\bit'?s important to note\\b",
+        "why": "essay filler"
+      },
+      {
+        "pattern": "\\bin today'?s (video|episode)\\b",
+        "why": "filler"
+      },
+      {
+        "pattern": "\\bcommon mistake\\b",
+        "why": "announce-the-mistake device retired in v10; use a {trap} line instead"
+      },
+      {
+        "pattern": "\\bexam tip\\b",
+        "why": "announcer device retired in v10; fold the tip into a trap correction"
+      }
+    ],
+    "terminology": [
+      {
+        "pattern": "\\bslaves\\b",
+        "prefer": "enslaved people / enslaved Africans / captives",
+        "level": "error"
+      },
+      {
+        "pattern": "\\bNew World\\b",
+        "prefer": "the Americas (quote the phrase only when quoting a source)",
+        "level": "error"
+      },
+      {
+        "pattern": "\\bdiscover(ed|y|ies)\\b",
+        "prefer": "reached / arrived / encountered",
+        "level": "error"
+      },
+      {
+        "pattern": "\\bIndians\\b",
+        "prefer": "Native peoples, or the specific nation",
+        "level": "error"
+      },
+      {
+        "pattern": "\\bsavages?\\b",
+        "prefer": "(never, outside a labeled primary-source quote)",
+        "level": "error"
+      },
+      {
+        "pattern": "\\btribes?\\b",
+        "prefer": "nation / people / confederacy",
+        "level": "warn"
+      },
+      {
+        "pattern": "\\bOld World\\b",
+        "prefer": "fine in disease context; otherwise Afro-Eurasia / Europe",
+        "level": "info"
+      }
+    ],
+    "limits": {
+      "maxTurnWords": 80,
+      "targetWords": 1500,
+      "maxWords": 1600,
+      "speakerShareMin": 0.35,
+      "maxConsecutiveSameSpeaker": 4,
+      "shortSentenceWords": 4,
+      "maxShortSentenceRatio": 0.32,
+      "repeatedNgram": {
+        "n": 5,
+        "maxRepeats": 2
+      },
+      "allowedPauses": [
+        5,
+        10,
+        15,
+        20
+      ],
+      "predictionBeats": 2,
+      "selfTestPauses": 4,
+      "minTraps": 4,
+      "promptVerbs": [
+        "defend",
+        "refute",
+        "name",
+        "explain",
+        "identify",
+        "describe",
+        "compare"
+      ]
+    },
+    "trap": {
+      "_doc": "A {trap} line is a deliberate student mistake. The other speaker's very next turn must correct it with one of these markers.",
+      "correctionMarkers": [
+        "trap",
+        "careful",
+        "not so fast",
+        "almost",
+        "exception",
+        "half an answer",
+        "not quite"
+      ]
+    },
+    "emotionMarkers": {
+      "_doc": "Allowed {marker} tags at the start of a line. Emitted to Fish as (marker) only when build-tts runs with --emotion. Verify the list against your Fish model before enabling.",
+      "allowed": [
+        "soft tone",
+        "serious",
+        "sad",
+        "sighing",
+        "excited",
+        "surprised",
+        "curious",
+        "confident",
+        "whispering"
+      ]
+    },
+    "onscreen": {
+      "maxChars": {
+        "hero": 18,
+        "title": 34,
+        "subtitle": 42,
+        "body": 64
+      },
+      "emojiTones": [
+        "playful"
+      ],
+      "maxConcurrentBeats": 3
+    }
+  },
+  "images.json": {
+    "historic/bison-herd.jpg": {
+      "description": "Reused from episode asset for U1E9 cram session",
+      "license": "public domain",
+      "source_url": "",
+      "used_in": [
+        "E9:cramsession"
+      ]
+    },
+    "historic/cahokia-monks-mound.jpg": {
+      "description": "Reused from episode asset for U1E9 cram session",
+      "license": "public domain",
+      "source_url": "",
+      "used_in": [
+        "E9:cramsession"
+      ]
+    },
+    "historic/u1e2/behaim-erdapfel-1492.jpg": {
+      "description": "",
+      "license": "unknown",
+      "source_url": "",
+      "used_in": [
+        "E2:t13"
+      ]
+    },
+    "historic/u1e2/cannon.jpg": {
+      "description": "",
+      "license": "unknown",
+      "source_url": "",
+      "used_in": [
+        "E2:t36"
+      ]
+    },
+    "historic/u1e2/cantino-planisphere.jpg": {
+      "description": "Reused from episode asset for U1E9 cram session",
+      "license": "public domain",
+      "source_url": "",
+      "used_in": [
+        "E9:cramsession"
+      ]
+    },
+    "historic/u1e2/caravel-replicas.jpg": {
+      "description": "",
+      "license": "unknown",
+      "source_url": "",
+      "used_in": [
+        "E2:t10",
+        "E9:cramsession"
+      ]
+    },
+    "historic/u1e2/comanche-horses.jpg": {
+      "description": "George Catlin, \"Comanche War Party, Mounted on Wild Horses\" (c. 1830s). Smithsonian American Art Museum. Comanche riders with lances on the prairie — the horse culture the Spanish introduction made possible.",
+      "license": "public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:George_Catlin_-_Comanche_War_Party,_Mounted_on_Wild_Horses_-_1985.66.496_-_Smithsonian_American_Art_Museum.jpg",
+      "used_in": [
+        "E9:cramsession",
+        "E3:comanche"
+      ]
+    },
+    "historic/u1e2/debry-columbus-departs.jpg": {
+      "description": "",
+      "license": "unknown",
+      "source_url": "",
+      "used_in": [
+        "E2:t11"
+      ]
+    },
+    "historic/u1e2/debry-columbus-landing.jpg": {
+      "description": "",
+      "license": "unknown",
+      "source_url": "",
+      "used_in": [
+        "E2:t16"
+      ]
+    },
+    "historic/u1e2/debry-hispaniola-mines.jpg": {
+      "description": "",
+      "license": "unknown",
+      "source_url": "",
+      "used_in": [
+        "E2:t39"
+      ]
+    },
+    "historic/u1e2/durer-large-horse-1505.jpg": {
+      "description": "",
+      "license": "unknown",
+      "source_url": "",
+      "used_in": [
+        "E2:t28"
+      ]
+    },
+    "historic/u1e2/fuchs-maize-1542.jpg": {
+      "description": "",
+      "license": "unknown",
+      "source_url": "",
+      "used_in": [
+        "E2:t23"
+      ]
+    },
+    "historic/u1e2/henry-navigator.jpg": {
+      "description": "",
+      "license": "unknown",
+      "source_url": "",
+      "used_in": [
+        "E2:t08"
+      ]
+    },
+    "historic/u1e2/isabella-ferdinand.jpg": {
+      "description": "",
+      "license": "unknown",
+      "source_url": "",
+      "used_in": [
+        "E2:t03"
+      ]
+    },
+    "historic/u1e2/lienzo-tlaxcala.jpg": {
+      "description": "",
+      "license": "unknown",
+      "source_url": "",
+      "used_in": [
+        "E2:t35"
+      ]
+    },
+    "historic/u1e2/pirotechnia-cannons-1540.jpg": {
+      "description": "",
+      "license": "unknown",
+      "source_url": "",
+      "used_in": [
+        "E2:t37"
+      ]
+    },
+    "historic/u1e2/smallpox-florentine-codex.jpg": {
+      "description": "",
+      "license": "unknown",
+      "source_url": "",
+      "used_in": [
+        "E2:t29"
+      ]
+    },
+    "historic/u1e2/sugarcane-harvest.jpg": {
+      "description": "",
+      "license": "unknown",
+      "source_url": "",
+      "used_in": [
+        "E2:t26"
+      ]
+    },
+    "historic/u1e2/tordesillas-map.jpg": {
+      "description": "",
+      "license": "unknown",
+      "source_url": "",
+      "used_in": [
+        "E2:t05",
+        "E9:cramsession"
+      ]
+    },
+    "historic/u1e3/brookes-slave-ship.jpg": {
+      "description": "Stowage diagram of the British slave ship Brookes under the Regulated Slave Trade Act of 1788. Iconic Middle Passage image.",
+      "license": "public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Slaveshipposter.jpg",
+      "used_in": [
+        "E3:t53"
+      ]
+    },
+    "historic/u1e3/cantino-planisphere.jpg": {
+      "description": "The Cantino planisphere (1502), Portuguese manuscript world map showing the Atlantic, Europe, Africa, and the New World. Main map for E3 MapJourney beats.",
+      "license": "public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cantino_planisphere_(1502).jpg",
+      "used_in": [
+        "E3:t01",
+        "E3:t05",
+        "E3:t19",
+        "E3:t28",
+        "E3:t52"
+      ]
+    },
+    "historic/u1e3/disease-dark.jpg": {
+      "description": "Engraving of a plague doctor (Wellcome Collection). Dark, serious tone for E3 disease-section backgrounds.",
+      "license": "public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Plague_doctor_Wellcome_L0025219.jpg",
+      "used_in": [
+        "E3:t27-t42"
+      ]
+    },
+    "historic/u1e3/feral-pigs.jpg": {
+      "description": "Wild boar, Plate XVI. NGA artwork 69759 (\"Plate 16: Wild Boar\"). Feral pigs: European livestock gone wild in the Americas.",
+      "license": "public domain (NGA open access)",
+      "source_url": "https://api.nga.gov/iiif/09f951bd-abfb-4c33-8d29-fb496cba7a4a/full/!800,800/0/default.jpg",
+      "used_in": [
+        "E3:t18"
+      ]
+    },
+    "historic/u1e3/florentine-codex-page.jpg": {
+      "description": "Nahua depiction from Book 12 of the Florentine Codex (1577): a healer (ticitl) tending smallpox sufferers in 1520. Used behind PrimarySourceSpotlight HIPP analysis.",
+      "license": "public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Healer_(ticitl)_tending_to_people_suffering_from_smallpox_in_1520_in_Book_12_of_the_Florentine_Codex,_1577.jpg",
+      "used_in": [
+        "E3:t36"
+      ]
+    },
+    "historic/u1e3/maize-botanical.jpg": {
+      "description": "Leonhart Fuchs, maize illustration from De historia stirpium (1542)",
+      "license": "public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Turcicum_plant,_from_%27De_historia...%27_Wellcome_L0051254.jpg",
+      "used_in": [
+        "E3:t19"
+      ]
+    },
+    "historic/u1e3/potato-plant.jpg": {
+      "description": "17th century Dutch watercolor of a potato plant (Solanum tuberosum), Rijksmuseum — 3372x4494",
+      "license": "public domain (CC0)",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Aardappel_(Solanum_tuberosum)_aerde_appelen._Arachidna_theophrasti_Tartouffani._pommes_de_terre._(titel_op_object),_RP-T-BR-2017-1-9-74.jpg",
+      "used_in": [
+        "E3:t06"
+      ]
+    },
+    "historic/u1e3/sahagun-portrait.jpg": {
+      "description": "Later imagined portrait of Bernardino de Sahagún (Franciscan friar writing). No contemporary portrait exists; labeled as later likeness on the figure card.",
+      "license": "public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bernardino_de_sahagun.png",
+      "used_in": [
+        "E3:figure-sahagun"
+      ]
+    },
+    "historic/u1e3/smallpox-victims.jpg": {
+      "description": "Nahua depiction of smallpox victims (Florentine Codex tradition). Serious tone for E3 '8 or 9 out of 10' beat.",
+      "license": "public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Aztec_smallpox_victims.jpg",
+      "used_in": [
+        "E3:t29"
+      ]
+    },
+    "historic/u1e3/sugarcane-plantation.jpg": {
+      "description": "Frans Post, Brazilian landscape with sugar mill (17th c., Dutch Brazil, Staatliches Museum Schwerin). Shows the plantation labor system for E3 labor-crisis beats.",
+      "license": "public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Post,_Frans_-_Brazilian_Landscape_with_Sugar_Mill_-_Staatliches_Museum_Schwerin.jpeg",
+      "used_in": [
+        "E3:t55"
+      ]
+    },
+    "historic/u1e3/tenochtitlan.jpg": {
+      "description": "1524 Nuremberg/Cortés map of Tenochtitlan, the Aztec capital on the lake — 3029x1931",
+      "license": "public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Map_of_Tenochtitlan,_1524.jpg",
+      "used_in": [
+        "E3:t32"
+      ]
+    },
+    "historic/u1e3/tomato-plant.jpg": {
+      "description": "Solanum lycopersicum (tomato) botanical artwork, Naturalis Biodiversity Center",
+      "license": "public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Naturalis_Biodiversity_Center_-_L.0939626_-_Solanum_lycopersicum_-_Artwork.jpeg",
+      "used_in": [
+        "E3:t08"
+      ]
+    },
+    "historic/u1e3/wheat-field.jpg": {
+      "description": "Pieter Bruegel the Elder, The Harvesters (1565) — 16th century wheat harvest",
+      "license": "public domain",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pieter_Bruegel_the_Elder-_The_Harvesters_-_Google_Art_Project.jpg",
+      "used_in": [
+        "E3:t02"
+      ]
+    },
+    "historic/u1e7/valladolid-1550.jpg": {
+      "description": "Braun & Hogenberg, 'Vallisoletum' — panoramic view of Valladolid, Spain, from Civitates Orbis Terrarum, 16th century",
+      "license": "Public domain",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Braun_Valladolid_UBHD.jpg",
+      "used_in": [
+        "E2:t13"
+      ]
+    },
+    "historic/u1e8/knotted-cord.jpg": {
+      "description": "Knotted fiber cord (quipu), plate from 'The Ancient Quipu' — Popé's signal for the coordinated 1680 uprising was a knotted maguey-fiber cord; 2421x1847",
+      "license": "Public domain",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/The_Ancient_Quipu_Figure_45.jpg",
+      "used_in": []
+    },
+    "historic/u1e8/pueblo-village.jpg": {
+      "description": "19th-century photograph of Taos Pueblo — multi-story adobe village with ladders, residents and hornos beneath the mountains; 4392x2856 (Library of Congress)",
+      "license": "Public domain",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Taos_Pueblo%2C_New_Mexico_LCCN2015651512.jpg",
+      "used_in": []
+    }
+  }
+}

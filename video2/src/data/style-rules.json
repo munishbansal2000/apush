@@ -81,7 +81,7 @@
   ],
   "limits": {
     "maxTurnWords": 80,
-    "targetWords": 1500,
+    "targetWords": 1450,
     "maxWords": 1600,
     "speakerShareMin": 0.35,
     "maxConsecutiveSameSpeaker": 4,
@@ -98,7 +98,7 @@
       20
     ],
     "predictionBeats": 2,
-    "selfTestPauses": 4,
+    "selfTestPauses": 1,
     "minTraps": 4,
     "promptVerbs": [
       "defend",
@@ -108,7 +108,8 @@
       "identify",
       "describe",
       "compare"
-    ]
+    ],
+    "_doc_selfTest": "episodes keep one fast check; AP-style self-tests live in the unit practice video (data/practice/<unit>.json)"
   },
   "trap": {
     "_doc": "A {trap} line is a deliberate student mistake. The other speaker's very next turn must correct it with one of these markers.",

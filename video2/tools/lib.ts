@@ -15,7 +15,7 @@ import type { CompiledEpisode } from '../src/kit/types';
 import { fileURLToPath } from 'node:url';
 export const ROOT = fileURLToPath(new URL('..', import.meta.url));
 export const PUBLIC = process.env.PUBLIC_DIR ?? join(ROOT, 'public');
-export const MANIFEST_PATH = process.env.IMAGES_MANIFEST ?? join(ROOT, 'data/images.json');
+export const MANIFEST_PATH = process.env.IMAGES_MANIFEST ?? join(ROOT, 'src/data/images.json');
 
 export const readJson = <T>(p: string): T => JSON.parse(readFileSync(join(ROOT, p), 'utf8')) as T;
 export const readJsonOr = <T>(p: string, fallback: T): T => (existsSync(join(ROOT, p)) ? readJson<T>(p) : fallback);
@@ -51,17 +51,17 @@ export function loadEpisode(id = arg('episode', 'u1e3')!): EpisodeContext {
   return {
     spec,
     dataDir,
-    config: readJson('data/render-config.json'),
-    style: readJson('data/style-rules.json'),
-    facts: readJson('data/fact-registry.json'),
-    pron: readJson('data/pronunciations.json'),
+    config: readJson('src/data/kit-render-config.json'),
+    style: readJson('src/data/style-rules.json'),
+    facts: readJson('src/data/fact-registry.json'),
+    pron: readJson('src/data/pronunciations.json'),
     manifest: JSON.parse(readFileSync(MANIFEST_PATH, 'utf8')) as Manifest,
     scriptSrc: readFileSync(join(ROOT, spec.script), 'utf8'),
     turns: () => readJson(`${dataDir}/turns.json`),
     timing: () => readJson(`${dataDir}/timing_map.json`),
     wordTimes: () => readJsonOr(`${dataDir}/word_times.json`, {}),
-    terms: readJson('data/terms.json'),
-    places: readJson<{ places: Record<string, [number, number]> }>('data/places.json').places,
+    terms: readJson('src/data/terms.json'),
+    places: readJson<{ places: Record<string, [number, number]> }>('src/data/places.json').places,
     compile() {
       return compileEpisode(spec, {
         turns: this.turns(),

@@ -387,7 +387,7 @@ export function deriveE3State(turns: Turn[], starts: number[], durations: number
         return (
           <RouteMap
             beat={{ routes: p.routes, caption: p.caption, variant: p.variant }}
-            places={placesJson as unknown as Record<string, [number, number]>}
+            places={placesJson.places as unknown as Record<string, [number, number]>}
             cfg={CFG}
           />
         );

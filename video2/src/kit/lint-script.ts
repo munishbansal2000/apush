@@ -128,7 +128,7 @@ export function lintScript(src: string, style: StyleRules, facts: FactRegistry, 
   }
   for (const w of watched) {
     if (!termList.some(term => term === w || term.split(' ').includes(w))) {
-      push(strict ? 'error' : 'warn', 'S008', 'script', `"${w}" needs a pronunciation entry in data/pronunciations.json`);
+      push(strict ? 'error' : 'warn', 'S008', 'script', `"${w}" needs a pronunciation entry in src/data/pronunciations.json`);
     }
   }
   for (const term of pron.terms) {

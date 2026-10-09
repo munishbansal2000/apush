@@ -16,10 +16,10 @@ import type { ResolvedBeat, TurnsFile } from '../src/kit/types';
 
 const read = (p: string) => readFileSync(new URL(`../${p}`, import.meta.url), 'utf8');
 const json = <T>(p: string) => JSON.parse(read(p)) as T;
-const style = json<StyleRules>('data/style-rules.json');
-const facts = json<FactRegistry>('data/fact-registry.json');
-const pron = json<Pronunciations>('data/pronunciations.json');
-const cfg = json<RenderConfig>('data/render-config.json');
+const style = json<StyleRules>('src/data/style-rules.json');
+const facts = json<FactRegistry>('src/data/fact-registry.json');
+const pron = json<Pronunciations>('src/data/pronunciations.json');
+const cfg = json<RenderConfig>('src/data/kit-render-config.json');
 
 const MINI = `# @episode: test
 # @boxes: alpha | beta
@@ -277,7 +277,7 @@ describe('derived overlays', () => {
     const tl = buildTimeline(turns, layoutStarts(turns, () => 4, RULES));
     const banner = { spec: { label: 'Box 1', box: 1, at: { turn: 'x' } }, start: 0, end: 10, bannerEnd: 4 };
     const issues: import('../src/kit/types').Issue[] = [];
-    const chips = deriveTerms(json('data/terms.json'), tl, [banner], cfg, {}, issues);
+    const chips = deriveTerms(json('src/data/terms.json'), tl, [banner], cfg, {}, issues);
     assert.equal(chips.length, 1);
     assert.ok(chips[0].start >= 4);
     assert.ok(issues.some(i => i.code === 'L004'));
@@ -322,7 +322,7 @@ describe('U1E3 compiled episode', () => {
     const { u1e3 } = await import('../src/episodes/u1e3');
     const ep = compileEpisode(u1e3, {
       turns: json('data/e3/turns.json'), timing: json('data/e3/timing_map.json'), wordTimes: json('data/e3/word_times.json'),
-      config: cfg, terms: json('data/terms.json'), facts,
+      config: cfg, terms: json('src/data/terms.json'), facts,
     });
     assert.deepEqual(ep.issues.filter(i => i.level === 'error'), []);
     assert.equal(ep.traps.length, 5);
