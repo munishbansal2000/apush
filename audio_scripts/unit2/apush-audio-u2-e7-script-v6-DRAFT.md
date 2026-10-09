@@ -1,7 +1,7 @@
 # U2-E7 — Maya + Marcus (Fish Audio)
-# Episode 7: Colonial Self-Government. ~12 min experienced (1919 words speech + 70s pauses)
+# Episode 7: Colonial Self-Government. ~11.5 min experienced (1919 words speech + 50s pauses)
 # Draft v6 (2026-10-07): repair pass per the 2026-10-07 fleet audit (11 findings: 3 blockers, 8 minor). Direction-tag density 82% to 35% — workhorse tags stripped, only catalog beats keep tags (tags never change words). "X, not Y" antitheses 4 to 2 ("Loyal, not cuddly." and "Leverage, not sovereignty." survive; the other two reworded). All three announcer-voice common-mistake devices converted to live traps: Maya commits the genuine classic error in flow, Marcus catches her in the next turn with a strong correction marker ("Not quite" / "Not exactly" / "Common mix-up"). Both box transitions rewritten as Maya one-liners. One of two personal human moments cut (the bake-sale line). Recap fumble retagged [sheepish]. Burnet and Knowles added to the pronunciation line. princeton fixes: Pennsylvania unicameral exception restored; governors appointed by king or proprietor. Burnet's "beneath the crown's dignity" characterization cut per fail-closed (unverifiable). Hamilton's "most celebrated" superlative cut (unsourced). Header carries one clean minute figure; the v4 parenthetical that broke the gate's header parse is gone. Replaces v5.
-# Read note: Maya tracks three boxes on her episode sheet; one mid-episode checkoff is her voice (box one), the full recap is the check layer. [10-second pause] marks are production notes for real silence in prediction beats; [15-second pause] and [20-second pause] marks are real silence for the CER self-test questions — they never go to the voice. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence. The em dash in the closing tagline is a held beat: a full breath between Marcus's lead and Maya's landing. Do not rush it. Disclosure: the Hamilton line in the self-test is his actual 1735 summation wording, lightly trimmed. The 1728 Massachusetts House figure (seventeen hundred pounds, fixed salary refused) is from the House's own September 1728 document. The ## Sources section is production-only, never spoken.
+# Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Maya tracks three boxes on her episode sheet; one mid-episode checkoff is her voice (box one), the full recap is the check layer. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence. The em dash in the closing tagline is a held beat: a full breath between Marcus's lead and Maya's landing. Do not rush it. Disclosure: the Hamilton line in the self-test is his actual 1735 summation wording, lightly trimmed. The 1728 Massachusetts House figure (seventeen hundred pounds, fixed salary refused) is from the House's own September 1728 document. The ## Sources section is production-only, never spoken.
 # Pronunciation: ZENG-er (Zenger), KOZ-bee (Cosby), an-gliss-ih-ZAY-shun (Anglicization), deh-LAN-see (De Lancey), seh-DIH-shus (seditious), LEW-is MOR-is (Lewis Morris), BUR-net (Burnet), NOLZ (Knowles)
 
 Maya: [professional broadcast tone] Last time: Whitefield's open fields, Edwards's spider sermon, and the Old Lights fighting the New Lights over who owned religion. This time: the quieter trick: how the colonies learned to make the king's own governor come begging for his paycheck. Three boxes: the power of the purse, the Zenger trial, and Anglicization. Circle the ones you couldn't explain right now. Twelve minutes.
@@ -122,19 +122,19 @@ Maya: Three questions, AP-shaped. Say your answer before I give it. And on the l
 
 Maya: One. The stimulus is the Massachusetts House, September 1728. The House grants Governor Burnet seventeen hundred pounds, but refuses the fixed, stated salary he demanded. What's the assembly's move, and why does it matter?
 
-[15-second pause]
+[10-second pause]
 
 Maya: The assembly buys obedience one year at a time. They granted the seventeen hundred pounds but no permanent salary, keeping the annual vote. Because the purse is the power — a governor who comes back for his pay each year can't ignore the people who vote it.
 
 Maya: Two. The stimulus is 1735, and these are Hamilton's actual words, lightly trimmed: "it is not the cause of one poor printer, nor of New-York alone, which you are now trying... It is the best cause. It is the cause of liberty." What's the bigger claim the lawyer is selling?
 
-[20-second pause]
+[10-second pause]
 
 Maya: Press freedom isn't about one printer. "Not one poor printer, nor of New-York alone." He scaled it to every colony. Because a jury that defends a printer's right to criticize a governor defends every colonist's rights. The Revolution's pamphlet wars, forty years early.
 
 Maya: Three. Anglicization made colonists feel more British in the 1700s, and more ready to revolt. Can both be true?
 
-[15-second pause]
+[10-second pause]
 
 Maya: Yes, that's the paradox. They drank the tea and read the English papers, then demanded the rights of Englishmen: assemblies and trials. Because the more British they felt, the more London's post-1763 crackdown felt like a betrayal of the deal. Identity loaded the spring.
 

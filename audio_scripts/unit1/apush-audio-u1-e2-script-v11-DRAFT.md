@@ -1,5 +1,5 @@
 # U1-E2 — Maya + Marcus (Fish Audio)
-# Episode 2: Why Europe Sailed West. ~11 min experienced (1,879 words speech + 55s pauses)
+# Episode 2: Why Europe Sailed West. ~12 min experienced (1,879 words speech + 80s pauses)
 # v11 (2026-10-07): fleet-repair pass on v10 — live traps for all three boxes (F1), tag density
 # thinned to ~40% (F2), bullion-shortage motive cut as Tier-1/2-unsourced (F4), "owned the sea
 # road" / "brand-new kingdom" / "the line mostly held" framing fixed (F7-F9), "five hundred
@@ -9,9 +9,9 @@
 # v10 (2026-10-06): full rebuild to the 2026-10-06 standards — three boxes, two prediction beats,
 # exam devices (exam traps, common-mistake live traps), hedged facts, CED 1.3 complete (motives ranked,
 # Iberia first, toolkit, Tordesillas/Line of Demarcation). Replaces v9 (1,440 words, 8 min, thin).
-# Read note: Maya tracks three boxes on her episode sheet and checks each one off in her own voice
+# Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Maya tracks three boxes on her episode sheet and checks each one off in her own voice
 # as the episode earns it. [10-second pause] marks are production notes for real silence in prediction
-# beats; [15-second pause] marks are real silence for the CER self-test questions; [5-second pause]
+# beats; [10-second pause] marks are real silence for the CER self-test questions; [10-second pause]
 # is the fast bonus question — they never go to the voice. The em dash in the closing tagline is a
 # held beat: leave a full breath between Marcus's "They wanted a shortcut to Asia —" and Maya's
 # landing line. Do not rush it. Strip this header, the read note, and all [pause] tags before TTS;
@@ -151,19 +151,19 @@ Maya: Three questions, AP-shaped. Say your answer before I give it.
 
 Maya: One. A Portuguese captain's log from the 1480s lists new gear aboard: an astrolabe and updated portolan charts. What's the bigger pattern this source points to?
 
-[15-second pause]
+[10-second pause]
 
 Maya: New instruments made the ocean crossable — the astrolabe read latitude from the stars, and portolan charts mapped the coasts sailors trusted. Which means Iberian sailors weren't braver than everyone else. They had the tools to sail beyond sight of land and find their way back, and that's what made 1492 possible instead of 1392.
 
 Maya: Two, and this one's a source. A Spanish priest writes in 1493 that the new lands will bring souls to the church and silver to the crown. A classmate says God mattered more than gold. How do you answer?
 
-[15-second pause]
+[10-second pause]
 
 Maya: Both, but ranked — the crown spent money for metal: the spice trade, the hunger for gold and silver, the Ottoman squeeze. So if the test asks for the most significant cause, lead with economics, because the crown spent money for metal first.
 
 Maya: One more, fast. What did the Treaty of Tordesillas actually divide, and who ignored it?
 
-[5-second pause]
+[10-second pause]
 
 Maya: The newly found lands outside Europe: west of the line to Spain, east to Portugal, along a meridian three hundred and seventy leagues west of the Cape Verdes. Everybody else ignored it, starting with France and England.
 

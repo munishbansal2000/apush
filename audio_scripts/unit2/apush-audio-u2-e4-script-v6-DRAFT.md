@@ -1,7 +1,7 @@
 # U2-E4 — Maya + Marcus (Fish Audio)
-# Episode 4: Middle Colonies & Diversity. ~12 min experienced (1,948 words speech + 75s pauses)
+# Episode 4: Middle Colonies & Diversity. ~12 min experienced (1,948 words speech + 60s pauses)
 # Draft v6 (2026-10-07): repair pass on v5 — M1: three common-mistake proclamations rebuilt as live traps (Maya commits the error in flow; Marcus catches her in the next turn with "Not quite" / "Common mix-up" / "Not exactly" — G12-exempt). M2: ", not X" antitheses cut from 6 to 2 (kept "Germans, not Dutch" + one "Pluralist, not necessarily tolerant."). M3: tag density 52/65 (80%) → ~25/70 (~36%): all [conversational] stripped, most [measured] stripped (kept on 7 dense-exposition turns), all catalog beats kept. M4: both box transitions rewritten as Maya one-liners (Marcus's prediction setups kept verbatim). M5: recap duplicate "Pluralist, not necessarily tolerant." cut to one; Dutch≠Holland echo trimmed in the checkoff. M6: feed line rewritten as an earned pushback. ADDITIONAL: header + cold-open promise corrected to ~12 min per the honest-promise rule (v5 promised 13, delivered ~11.9). Replaces v5.
-# Read note: Maya tracks three boxes on her episode sheet and checks each one off in her own voice as the episode earns it. [10-second pause] marks are production notes for real silence in prediction beats; [20-second pause] and [15-second pause] marks are real silence for the CER self-test questions; [5-second pause] is the fast bonus — they never go to the voice. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence. The em dash in the closing tagline is a held beat: leave a full breath between Marcus's "Pennsylvania proved a colony could hold every faith —" and Maya's landing line. Do not rush it. The ## Sources section is production-only, never spoken.
+# Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Maya tracks three boxes on her episode sheet and checks each one off in her own voice as the episode earns it. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence. The em dash in the closing tagline is a held beat: leave a full breath between Marcus's "Pennsylvania proved a colony could hold every faith —" and Maya's landing line. Do not rush it. The ## Sources section is production-only, never spoken.
 # Pronunciation: LEH-nee leh-NAH-pay (Lenni Lenape), shack-uh-MAX-un (Shackamaxon), PAH-luh-tyne (Palatine), doytch (Deutsch), sus-kwuh-HA-nuh (Susquehanna), UL-ster (Ulster), "sour" (Saur)
 
 Maya: [professional broadcast tone] Last time: covenant towns, banished dissenters, King Philip's War. New England, held together by fear of the wrong belief. This time: the colony that ran the opposite experiment. One colony advertised in German. Its founder had been jailed in England for his religion. And by the Revolution, arguably the most diverse colony in British North America. Three boxes: the Holy Experiment, the Pennsylvania Dutch, and the limits of tolerance. Circle the ones you couldn't explain right now. Twelve minutes, and you'll land all three.
@@ -126,25 +126,25 @@ Maya: Three questions, AP-shaped. Say your answer before I give it.
 
 Maya: One. A 1751 essay warns: "Why should Pennsylvania, founded by the English, become a Colony of Aliens, who will shortly be so numerous as to Germanize us instead of our Anglifying them?" What's the point of this source?
 
-[20-second pause]
+[10-second pause]
 
 Maya: By 1751, German immigration had grown so large it alarmed even a Pennsylvanian — "so numerous as to Germanize us." The fear of the numbers proves the scale: the Germans weren't a footnote; they were roughly a third of the colony.
 
 Maya: Two. Penn advertised religious liberty across Europe in 1681. Was the liberty the point, or the pitch?
 
-[15-second pause]
+[10-second pause]
 
 Maya: The pitch paid for the point — the pamphlet went out in German, and the land started selling, making Pennsylvania one of the fastest-growing colonies. The colony needed paying settlers; liberty recruited the buyers the business needed.
 
 Maya: Three. A historian writes that Pennsylvania was pluralist rather than tolerant. Using one limit from this episode, explain what she means.
 
-[15-second pause]
+[10-second pause]
 
 Maya: Many peoples, one hierarchy: pick yours. The Walking Purchase cheated the Lenape out of a Rhode Island-sized piece of land. The 1688 anti-slavery protest was filed away. The founder himself held enslaved people. The groups were present; they weren't equal, and that gap is the difference between pluralism and tolerance.
 
 Maya: One more, fast: Penn's liberty was also a business plan — in one phrase, why did he need the buyers?
 
-[5-second pause]
+[10-second pause]
 
 Maya: The colony was a debt repayment — and paper promises don't sell themselves. He had to sell land to make the debt pay.
 

@@ -1,7 +1,7 @@
 # U2-E5 — Maya + Marcus (Fish Audio)
-# Episode 5: The Empire's Money Theory. ~10.7 min experienced (1,705 words speech + 75s pauses)
+# Episode 5: The Empire's Money Theory. ~10.5 min experienced (1,705 words speech + 60s pauses)
 # Draft v6 (2026-10-07): repair of v5 — runtime promise corrected to the actual experienced number, words at ≤180 WPM plus every scripted pause second (B1); "Not X, just Y" antithesis budget cut from 4 to 2 (B2); all four exam tips rewritten with four distinct openers (B3 — the audit found three; a recount of the v5 draft found four "Exam tip:" openers); all three common-mistake devices converted to live traps — Maya commits the genuine classic error in flow, Marcus catches her in the immediately following turn with a strong correction marker (B4 — each verified G12-exempt: different speaker, next turn, strong marker); one Maya echo folded into a genuine synthesis line, the other dissolved by the trap rewrite (B5); direction-tag density cut from 76% (41/54) to ~38% by stripping workhorse tags, keeping only catalog-earned beats (B6, coordinator-added — the §9 40% cap stands as written); unattributed "Some say/Others say" attributed to the books' "double-edged sword" framing (M1); recap fumble retagged [sheepish] per the fleet tag map (M2); bonus question rewritten as an AP-shaped anachronism-reasoning question with pause and neutral model answer (M3); "Staple Act" name cut from dialogue (fail-closed — the 1663 content is Tier-1 supported, the name is not; trace noted in registry F-U2-037) and the Smith-verb-quote source-trace gap noted in registry F-U2-044 (M4). Replaces v5.
-# Read note: Maya tracks three boxes on her episode sheet; one mid-episode checkoff is her voice, the full recap is the check layer. [10-second pause] marks are production notes for real silence in prediction beats; [15-second pause] and [20-second pause] marks are real silence for the CER self-test questions; [5-second pause] is the fast bonus — they never go to the voice. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence. The em dash in the closing tagline is a held beat: leave a full breath between Marcus's "London wrote the rules —" and Maya's landing line. Do not rush it. Disclosure: the Adam Smith line in the self-test is his actual wording. Walpole's "sleeping dogs" line comes to us secondhand — the neglect was real, the exact quote is reported, and the dialogue says so honestly. The ## Sources section is production-only, never spoken.
+# Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Maya tracks three boxes on her episode sheet; one mid-episode checkoff is her voice, the full recap is the check layer. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence. The em dash in the closing tagline is a held beat: leave a full breath between Marcus's "London wrote the rules —" and Maya's landing line. Do not rush it. Disclosure: the Adam Smith line in the self-test is his actual wording. Walpole's "sleeping dogs" line comes to us secondhand — the neglect was real, the exact quote is reported, and the dialogue says so honestly. The ## Sources section is production-only, never spoken.
 # Pronunciation: MEHR-kun-tih-lizm (mercantilism), BOOL-yun (bullion), eh-NOO-muh-ray-ted (enumerated), SAL-yoo-teh-ree (salutary), WAHL-pohl (Walpole), moh-LAS-iz (molasses), vice ad-MIR-al-tee (vice-admiralty)
 
 Maya: [professional broadcast tone] Last time: Penn's Holy Experiment, the Pennsylvania Dutch, the limits of tolerance. This time: the money underneath it all. Britain ran its empire on a theory that said the world's wealth was a fixed pile. Grab the pile, fence off the trade. Three boxes: mercantilism, the Navigation Acts, and salutary neglect. Circle the ones you couldn't explain. Just under eleven minutes. One note first: the Adam Smith line later is his actual words. Walpole's sleeping-dogs line comes to us secondhand.
@@ -98,25 +98,25 @@ Maya: Three questions, AP-shaped. Say your answer before I give it.
 
 Maya: One. The stimulus is Adam Smith, 1776, and these are his actual words: "Nothing, however, can be more absurd than this whole doctrine of the balance of trade." Which theory is he attacking, and why does the year matter?
 
-[15-second pause]
+[10-second pause]
 
 Maya: He's attacking mercantilism, and the date is the argument. "The whole doctrine of the balance of trade" is mercantilism's beating heart. The economic case against the empire arrives in the same year as the political one: the demolition and the Declaration share a birthday.
 
 Maya: Two. A Boston customs ledger, 1740: a merchant lands French molasses with the duty unpaid. What does one entry like that tell an AP reader about the Navigation Acts?
 
-[15-second pause]
+[10-second pause]
 
 Maya: Strict on paper, porous on the water: the Molasses Act's steep duty sat unpaid, the same way Hancock's charges were dropped. The system's real shape came from enforcement, not statutes. Neglect was the operating system.
 
 Maya: Three. England built an empire on mercantilism, then spent decades barely enforcing it. Paradox, or the whole point?
 
-[20-second pause]
+[10-second pause]
 
 Maya: The paradox IS the point: protected markets and the Navy's guarded lanes made the colonies rich, while unenforced Acts let merchants keep the profits. Neglect turned a cage into something like a partnership, which is why the crackdown after 1763 would feel like a betrayal.
 
 Maya: One more, fast: Burke coined "salutary neglect" in 1775 — decades after the policy was running. What does that gap tell you about a colonist living under the trade laws in 1740?
 
-[5-second pause]
+[10-second pause]
 
 Maya: He never used the word. The label is Burke looking backward in 1775; the colonists just lived inside laws that were on the books and mostly unenforced. If a stimulus puts "salutary neglect" in a 1740 mouth, that's the anachronism — the reality was real, the name is late.
 

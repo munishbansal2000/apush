@@ -1,7 +1,7 @@
 # U1-E4 — Maya + Marcus (Fish Audio)
-# Episode 4: Planting, Not Raiding — Jamestown and the Start of English America. ~12 min experienced (1,963 words speech + 75s pauses)
+# Episode 4: Planting, Not Raiding — Jamestown and the Start of English America. ~12 min experienced (1,963 words speech + 60s pauses)
 # v7 (2026-10-07): fleet repair — four common-mistake proclamations converted to live traps (box-two duplicate folded into the existing live trap and cut), Smith gold-fever quote verified against two NPS pages and quoted exactly (replaces garbled "nothing but …dig gold, refine gold, load gold"), Rolfe quote fixed to his exact wording, "sons of gentry, jewelers" cut back to sourced "gentlemen", 1619 callback reworked as earned transition, exam-tip template de-duplicated, tag density 82.9% → ~28%. Replaces v6.
-# Read note: Maya tracks four boxes on her episode sheet and checks each one off in her own voice as the episode earns it. [10-second pause] marks are production notes for real silence in prediction beats; [15-second pause] and [20-second pause] marks are real silence for the CER self-test questions; [5-second pause] is the fast bonus question — they never go to the voice. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence. The em dash in the closing tagline is a held beat: leave a full breath between Marcus's "They sailed here hunting gold —" and Maya's landing line. Do not rush it. The ## Sources section at the end is production-only, never spoken.
+# Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Maya tracks four boxes on her episode sheet and checks each one off in her own voice as the episode earns it. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence. The em dash in the closing tagline is a held beat: leave a full breath between Marcus's "They sailed here hunting gold —" and Maya's landing line. Do not rush it. The ## Sources section at the end is production-only, never spoken.
 # Pronunciation: POW-uh-tan; poh-kuh-HON-tuhs; BUR-juh-sez; oh-pech-an-KAH-noh; DEL-uh-wair; ROLF (rhymes with golf).
 
 Maya: [professional broadcast tone] Last time: what crossed the Atlantic in both directions, and the cargo nobody chose. This time: England stops raiding and starts planting. Jamestown, 1607. A company town that starved, nearly quit, and survived. Four boxes: Jamestown, tobacco, the House of Burgesses, and 1619, the year the assembly and the slave ship arrived together. Circle the ones you couldn't explain right now. Twelve minutes, and you'll check all four off.
@@ -123,25 +123,25 @@ Maya: Three questions, AP-shaped. Say your answer before I give it.
 
 Maya: One. John Smith wrote that the colonists did nothing but "dig gold, wash gold, refine gold, load gold." What's the point of this source: why did Jamestown nearly starve?
 
-[15-second pause]
+[10-second pause]
 
 Maya: The settlers chased gold instead of planting food — gentlemen hunting iron pyrite while the food stores ran out. The cause was human, not geographic: gold-fever beat the swamp.
 
 Maya: Two. A planter pays the passage for six servants and claims three hundred acres. Name the system, and say who benefits.
 
-[15-second pause]
+[10-second pause]
 
 Maya: The headright system — fifty acres a head, six heads, three hundred acres. The giveaway is who benefits: the planter who paid. The servants get years of labor, never land.
 
 Maya: Three. 1619: an assembly meets in Jamestown, and the White Lion lands "20 and odd" Africans at Point Comfort. A historian pairs these two events. What's the argument?
 
-[20-second pause]
+[10-second pause]
 
 Maya: Self-government and forced labor arrived together — the House of Burgesses and the White Lion, same year. The contradiction at the start of English America: the vote and the slave ship, side by side.
 
 Maya: One more, fast. Virginia becomes a royal colony in 1624. Whose charter got revoked?
 
-[5-second pause]
+[10-second pause]
 
 Maya: The Virginia Company's. The king took it back after the wars and the death toll.
 
