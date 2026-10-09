@@ -1,0 +1,84 @@
+{
+  "_doc": "Hand-directed shot plan for the u3e1 cold open (docs/LOOK.md). Same format the automated director will emit; it is the director's quality target. Times are phrases the narrator says ({turn, phrase}) or offsets from a shot's start. State outlines are modern stand-ins for colonial boundaries; the frontier ring is approximate.",
+  "episode": "u3e1",
+  "end": {"turn": 5, "phrase": "prime minister from 1763"},
+  "years": [{"at": {"turn": 0, "phrase": "1763"}, "text": "1763"}],
+  "boxes": [
+    {"label": "The end of salutary neglect", "intro": {"turn": 0, "phrase": "the end of salutary neglect"}, "check": {"turn": 15, "phrase": "box one done"}, "turns": {"from": 1, "to": 15}},
+    {"label": "The Proclamation Line of 1763", "intro": {"turn": 0, "phrase": "the proclamation line of 1763"}, "check": {"turn": 53, "phrase": "on the sheet"}, "turns": {"from": 16, "to": 33}},
+    {"label": "Pontiac's Rebellion", "intro": {"turn": 0, "phrase": "pontiacs rebellion"}, "check": {"turn": 55, "phrase": "all three"}, "turns": {"from": 34, "to": 49}}
+  ],
+  "shots": [
+    {"type": "map", "at": {"turn": 0, "phrase": "last time"}, "projection": "us", "extent": [[-92, 24], [-62, 48]],
+      "camera": [
+        {"at": {"offset": 0}, "center": [-77, 39], "zoom": 1.15},
+        {"at": {"turn": 0, "phrase": "english colonies"}, "center": [-75.5, 40.5], "zoom": 1.7, "ease": 3}
+      ],
+      "fills": [
+        {"at": {"turn": 0, "phrase": "new england"}, "region": {"state": "MA"}, "color": "#c9a227"},
+        {"at": {"turn": 0, "phrase": "new england"}, "region": {"state": "NH"}, "color": "#c9a227"},
+        {"at": {"turn": 0, "phrase": "new england"}, "region": {"state": "CT"}, "color": "#c9a227"},
+        {"at": {"turn": 0, "phrase": "new england"}, "region": {"state": "RI"}, "color": "#c9a227"},
+        {"at": {"turn": 0, "phrase": "middle colonies"}, "region": {"state": "NY"}, "color": "#e2a33b"},
+        {"at": {"turn": 0, "phrase": "middle colonies"}, "region": {"state": "NJ"}, "color": "#e2a33b"},
+        {"at": {"turn": 0, "phrase": "middle colonies"}, "region": {"state": "PA"}, "color": "#e2a33b"},
+        {"at": {"turn": 0, "phrase": "middle colonies"}, "region": {"state": "DE"}, "color": "#e2a33b"},
+        {"at": {"turn": 0, "phrase": "the south"}, "region": {"state": "MD"}, "color": "#b3261e"},
+        {"at": {"turn": 0, "phrase": "the south"}, "region": {"state": "VA"}, "color": "#b3261e"},
+        {"at": {"turn": 0, "phrase": "the south"}, "region": {"state": "NC"}, "color": "#b3261e"},
+        {"at": {"turn": 0, "phrase": "the south"}, "region": {"state": "SC"}, "color": "#b3261e"},
+        {"at": {"turn": 0, "phrase": "the south"}, "region": {"state": "GA"}, "color": "#b3261e"}
+      ]},
+    {"type": "map", "at": {"turn": 0, "phrase": "start arguing with london"}, "projection": "world", "extent": [[-100, 18], [25, 66]], "transition": "crossfade",
+      "camera": [
+        {"at": {"offset": 0}, "center": [-70, 41], "zoom": 1.25},
+        {"at": {"offset": 0.4}, "center": [-3, 51.5], "zoom": 1.55, "ease": 2.2}
+      ],
+      "lines": [{"at": {"offset": 0.2}, "coords": [[-71.06, 42.36], [-40, 50], [-0.13, 51.51]], "color": "#b3261e", "dashed": true, "draw": 1.8}],
+      "fills": [{"at": {"offset": 1.9}, "region": {"country": "United Kingdom"}, "color": "#b3261e"}]},
+    {"type": "image_move", "at": {"turn": 0, "phrase": "1763"}, "image": "historic/u3e1/french-indian-war.jpg",
+      "from": {"x": 0.42, "y": 0.5, "zoom": 1.0}, "to": {"x": 0.58, "y": 0.48, "zoom": 1.06}},
+    {"type": "image_move", "at": {"turn": 0, "phrase": "the prime minister opens the books"}, "image": "historic/u3e1/george-grenville-portrait.jpg",
+      "from": {"x": 0.5, "y": 0.2, "zoom": 1.25}, "to": {"x": 0.47, "y": 0.15, "zoom": 1.7}},
+    {"type": "image_move", "at": {"turn": 0, "phrase": "three boxes on your sheet"}, "image": "historic/u3e1/paxton-boys.jpg",
+      "from": {"x": 0.5, "y": 0.35, "zoom": 1.0}, "to": {"x": 0.5, "y": 0.3, "zoom": 1.12}},
+    {"type": "image_move", "at": {"turn": 0, "phrase": "circle the ones"}, "image": "historic/u3e1/paxton-boys.jpg",
+      "from": {"x": 0.3, "y": 0.45, "zoom": 1.5}, "to": {"x": 0.62, "y": 0.42, "zoom": 1.5}},
+    {"type": "map", "at": {"turn": 0, "phrase": "eleven and a half minutes"}, "projection": "us", "extent": [[-95, 26], [-64, 49]],
+      "camera": [
+        {"at": {"offset": 0}, "center": [-80, 38.5], "zoom": 1.2},
+        {"at": {"offset": 0.2}, "center": [-82, 39.5], "zoom": 1.35, "ease": 4}
+      ]},
+    {"type": "image_move", "at": {"turn": 1, "phrase": "then start with the bill"}, "image": "historic/u3e1/george-grenville-portrait.jpg",
+      "from": {"x": 0.55, "y": 0.55, "zoom": 1.35}, "to": {"x": 0.6, "y": 0.72, "zoom": 1.9}},
+    {"type": "map", "at": {"turn": 1, "phrase": "and the empire cost more"}, "projection": "world", "extent": [[-135, 18], [-50, 66]],
+      "camera": [
+        {"at": {"offset": 0}, "center": [-88, 44], "zoom": 1.1},
+        {"at": {"turn": 1, "phrase": "a frontier past every map"}, "center": [-84, 38], "zoom": 1.5, "ease": 1.6}
+      ],
+      "fills": [
+        {"at": {"turn": 1, "phrase": "canada to garrison"}, "region": {"country": "Canada"}, "color": "#b3261e"},
+        {"at": {"turn": 1, "phrase": "florida to administer"}, "region": {"state": "FL"}, "color": "#b3261e"},
+        {"at": {"turn": 1, "phrase": "a frontier past every map"}, "region": {"ring": [[-91, 30.5], [-84, 30.5], [-81.5, 34], [-79, 37.5], [-78.5, 40.5], [-80, 42.3], [-83.5, 45.5], [-91, 46.5]]}, "color": "#e2a33b"}
+      ]},
+    {"type": "point", "at": {"turn": 1, "phrase": "the thesis for your notes"}, "backdrop": "historic/u3e1/edmund-burke-1769.jpg",
+      "bullets": [
+        {"at": {"turn": 1, "phrase": "britain won the war"}, "text": "Britain won the war"},
+        {"at": {"turn": 1, "phrase": "and wrecked the arrangement"}, "text": "…and wrecked the arrangement"}
+      ]},
+    {"type": "map", "at": {"turn": 2, "phrase": "and now londons looking"}, "projection": "world", "extent": [[-100, 18], [25, 66]],
+      "camera": [
+        {"at": {"offset": 0}, "center": [-2, 52], "zoom": 2.2},
+        {"at": {"turn": 3, "phrase": "won the world"}, "center": [-45, 42], "zoom": 1.05, "ease": 2.4}
+      ],
+      "fills": [
+        {"at": {"offset": 0.1}, "region": {"country": "United Kingdom"}, "color": "#b3261e"},
+        {"at": {"turn": 3, "phrase": "won the world"}, "region": {"country": "Canada"}, "color": "#b3261e"},
+        {"at": {"turn": 3, "phrase": "won the world"}, "region": {"state": "FL"}, "color": "#b3261e"}
+      ]},
+    {"type": "image_move", "at": {"turn": 4, "phrase": "let me guess"}, "image": "historic/u3e1/george-grenville-portrait.jpg",
+      "from": {"x": 0.62, "y": 0.75, "zoom": 1.9}, "to": {"x": 0.5, "y": 0.45, "zoom": 1.3}},
+    {"type": "portrait", "at": {"turn": 5, "phrase": "george grenville"}, "image": "historic/u3e1/george-grenville-portrait.jpg",
+      "from": {"x": 0.5, "y": 0.3, "zoom": 1.15}, "to": {"x": 0.48, "y": 0.18, "zoom": 1.5}, "name": "George Grenville", "role": "Prime Minister, 1763–1765"}
+  ]
+}
