@@ -39,10 +39,11 @@ almost no text on screen.
 
 ## Questions and pauses (script convention, checked by `tools/audit-scripts.ts`)
 
-- **In-lesson think-pauses:** a question or prompt, then a 5-10s pause on its own line, then the answer. They stay in
+- **Every question pause is 10s** (fleet-wide standard, `audio_scripts/apush-final-guidelines.md`).
+- **In-lesson think-pauses:** a question or prompt, then a 10s pause on its own line, then the answer. They stay in
   the lesson (active recall is the edge over a lecture) with a question card and countdown on screen.
-- **Practice block (final chapter):** "Three questions, AP-shaped." then 3 questions, each with a 15-20s pause and an
-  answer; an optional "One more, fast." bonus with a 5-8s pause. Also cut per question into Shorts.
+- **Practice block (final chapter):** "Three questions, AP-shaped." then 3 questions, each with a 10s pause and an
+  answer; an optional "One more, fast." bonus, also 10s. Also cut per question into Shorts.
 - Pause markers sit on their own line. A marker inside a spoken line is read straight through: no pause.
 - Crams keep their own rapid-fire rhythm ("Your turn." + short pause).
 

@@ -5,12 +5,12 @@ import {parseTranscript} from '../tools/pipeline-core';
 
 const filler = Array.from({length: 12}, (_, i) => `Marcus: Teaching line ${i + 1}.`).join('\n');
 const good = [
-  'Maya: Which one buys time?', '[9-second pause]', 'Marcus: The line does.', filler,
+  'Maya: Which one buys time?', '[10-second pause]', 'Marcus: The line does.', filler,
   'Maya: Three questions, AP-shaped. Say your answer before I give it.',
-  'Maya: One. Using the episode, explain the debt.', '[15-second pause]', 'Maya: The war cost a fortune.',
-  'Maya: Two: name the line.', '[18-second pause]', 'Maya: The Proclamation Line.',
-  'Maya: Three. Which mattered most, and why?', '[20-second pause]', 'Maya: Broken trust.',
-  'Maya: One more, fast. Who led the coalition?', '[5-second pause]', 'Maya: Pontiac.',
+  'Maya: One. Using the episode, explain the debt.', '[10-second pause]', 'Maya: The war cost a fortune.',
+  'Maya: Two: name the line.', '[10-second pause]', 'Maya: The Proclamation Line.',
+  'Maya: Three. Which mattered most, and why?', '[10-second pause]', 'Maya: Broken trust.',
+  'Maya: One more, fast. Who led the coalition?', '[10-second pause]', 'Maya: Pontiac.',
   'Maya: Check your boxes.',
 ].join('\n');
 
@@ -23,15 +23,15 @@ describe('script audit (questions and pauses)', () => {
   });
 
   it('flags a pause marker written inside a spoken line (no real pause)', () => {
-    const inline = good.replace("Maya: Three. Which mattered most, and why?\n[20-second pause]\nMaya: Broken trust.", 'Maya: Three. Which mattered most, and why? [20-second pause] Broken trust.');
+    const inline = good.replace("Maya: Three. Which mattered most, and why?\n[10-second pause]\nMaya: Broken trust.", 'Maya: Three. Which mattered most, and why? [10-second pause] Broken trust.');
     const a = auditTurns('u9e1', 'x.md', parseTranscript(inline));
     assert.match(a.issues.join('\n'), /R5 .* inside a spoken line/);
     assert.match(a.issues.join('\n'), /practice block has 2 question pause/);
   });
 
-  it('flags long in-lesson pauses, short practice pauses, missing blocks, and pauses after statements', () => {
-    assert.match(auditTurns('u9e1', 'x.md', parseTranscript(good.replace('[9-second pause]', '[15-second pause]'))).issues.join('\n'), /R2 .* think-pauses are 5-10s/);
-    assert.match(auditTurns('u9e1', 'x.md', parseTranscript(good.replace('[18-second pause]', '[5-second pause]'))).issues.join('\n'), /R1 .* practice pauses are 15-20s/);
+  it('flags pauses that are not the uniform 10s, missing blocks, and pauses after statements', () => {
+    assert.match(auditTurns('u9e1', 'x.md', parseTranscript(good.replace('[10-second pause]', '[15-second pause]'))).issues.join('\n'), /R2 .*\(15s\): question pauses are 10s/);
+    assert.match(auditTurns('u9e1', 'x.md', parseTranscript(good.replace('Maya: Two: name the line.\n[10-second pause]', 'Maya: Two: name the line.\n[18-second pause]'))).issues.join('\n'), /R2 .*\(18s\): question pauses are 10s/);
     assert.match(auditTurns('u9e1', 'x.md', parseTranscript(`Maya: Hello.\n${filler}\nMaya: Bye.`)).issues.join('\n'), /R1 no practice block/);
     assert.match(auditTurns('u9e1', 'x.md', parseTranscript(good.replace('Maya: Which one buys time?', 'Maya: The line was drawn.'))).issues.join('\n'), /R3 .* not preceded by a question/);
   });
