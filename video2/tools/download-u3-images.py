@@ -18,10 +18,12 @@ needs Pillow, otherwise they are skipped).
 
 Usage: python tools/download-u3-images.py --all                 every Unit 3 catalog (u3e1..u3e11)
        python tools/download-u3-images.py --lesson u3e1 [--force]
+       python tools/download-u3-images.py --lesson u3e1 --upgrade-small  retry only images below render resolution
        python tools/download-u3-images.py --lesson u3e1 --register-only   (no network: move + register files on disk)
 """
 import hashlib
 import http.client
+import io
 import json
 import os
 import random
@@ -47,6 +49,7 @@ RATE_LIMITS = {"upload.wikimedia.org": 12, "commons.wikimedia.org": 12, "cdn.loc
 USER_AGENT = "APUSH-video2-image-downloader/2.0 (https://github.com/munishbansal2000/apush; educational video assets) Python-urllib"
 COOL_OFF = 10 * 60
 FORCE = "--force" in sys.argv
+UPGRADE_SMALL = "--upgrade-small" in sys.argv
 REGISTER_ONLY = "--register-only" in sys.argv
 EXTS = (".jpg", ".jpeg", ".png", ".webp", ".tif", ".tiff")
 
@@ -63,41 +66,54 @@ def ext_for(url, ctype=""):
     return ".jpg"
 
 
-def image_size(path):
-    """(width, height) from the file header: JPEG, PNG or WebP. None if unreadable."""
-    with open(path, "rb") as f:
-        head = f.read(32)
-        if head[:8] == b"\x89PNG\r\n\x1a\n":
-            return struct.unpack(">II", head[16:24])
-        if head[:4] == b"RIFF" and head[8:12] == b"WEBP":
-            kind = head[12:16]
-            if kind == b"VP8 ":
-                f.seek(26)
-                w, h = struct.unpack("<HH", f.read(4))
-                return w & 0x3FFF, h & 0x3FFF
-            if kind == b"VP8L":
-                f.seek(21)
-                b = f.read(4)
-                return 1 + (((b[1] & 0x3F) << 8) | b[0]), 1 + (((b[3] & 0xF) << 10) | (b[2] << 2) | ((b[1] & 0xC0) >> 6))
-            if kind == b"VP8X":
-                f.seek(24)
-                b = f.read(6)
-                return 1 + int.from_bytes(b[0:3], "little"), 1 + int.from_bytes(b[3:6], "little")
-            return None
-        if head[:2] == b"\xff\xd8":
-            f.seek(2)
-            while True:
-                marker = f.read(2)
-                if len(marker) < 2 or marker[0] != 0xFF:
-                    return None
-                if marker[1] in (0xD8, 0x01) or 0xD0 <= marker[1] <= 0xD7:
-                    continue
-                length = struct.unpack(">H", f.read(2))[0]
-                if marker[1] in (0xC0, 0xC1, 0xC2, 0xC3, 0xC5, 0xC6, 0xC7, 0xC9, 0xCA, 0xCB, 0xCD, 0xCE, 0xCF):
-                    h, w = struct.unpack(">xHH", f.read(5))
-                    return w, h
-                f.seek(length - 2, 1)
+def _image_size(f):
+    """(width, height) from a JPEG, PNG or WebP binary stream; None if unreadable."""
+    head = f.read(32)
+    if head[:8] == b"\x89PNG\r\n\x1a\n":
+        return struct.unpack(">II", head[16:24])
+    if head[:4] == b"RIFF" and head[8:12] == b"WEBP":
+        kind = head[12:16]
+        if kind == b"VP8 ":
+            f.seek(26)
+            w, h = struct.unpack("<HH", f.read(4))
+            return w & 0x3FFF, h & 0x3FFF
+        if kind == b"VP8L":
+            f.seek(21)
+            b = f.read(4)
+            return 1 + (((b[1] & 0x3F) << 8) | b[0]), 1 + (((b[3] & 0xF) << 10) | (b[2] << 2) | ((b[1] & 0xC0) >> 6))
+        if kind == b"VP8X":
+            f.seek(24)
+            b = f.read(6)
+            return 1 + int.from_bytes(b[0:3], "little"), 1 + int.from_bytes(b[3:6], "little")
+        return None
+    if head[:2] == b"\xff\xd8":
+        f.seek(2)
+        while True:
+            marker = f.read(2)
+            if len(marker) < 2 or marker[0] != 0xFF:
+                return None
+            if marker[1] in (0xD8, 0x01) or 0xD0 <= marker[1] <= 0xD7:
+                continue
+            length = struct.unpack(">H", f.read(2))[0]
+            if marker[1] in (0xC0, 0xC1, 0xC2, 0xC3, 0xC5, 0xC6, 0xC7, 0xC9, 0xCA, 0xCB, 0xCD, 0xCE, 0xCF):
+                h, w = struct.unpack(">xHH", f.read(5))
+                return w, h
+            f.seek(length - 2, 1)
     return None
+
+
+def image_size(path):
+    with open(path, "rb") as f:
+        return _image_size(f)
+
+
+def image_size_bytes(data):
+    return _image_size(io.BytesIO(data))
+
+
+def cover_quality(size):
+    """Native pixels per required 1080p cover pixel; >= 0.625 stays inside the pipeline's 1.6x limit."""
+    return min(size[0] / 1920, size[1] / 1080) if size else 0
 
 
 def tiff_to_jpeg(path):
@@ -267,17 +283,24 @@ def place(img, out_dir, throttle):
     target_stem = out_dir / slug(img_id)
     have = existing_file(out_dir, img_id)
     if have and not FORCE:
-        if have.stem != slug(img_id):
-            new = target_stem.with_suffix(have.suffix)
-            have.rename(new)
-            have = new
-            status = "moved"
+        existing_size = image_size(have)
+        if UPGRADE_SMALL and cover_quality(existing_size) < 1 / 1.6 and not REGISTER_ONLY:
+            pass  # Try the catalog sources below, retaining this file unless one is better.
         else:
-            status = "exists"
-        return have, img.get("primary_url") or img.get("alt_url"), status
+            if have.stem != slug(img_id):
+                new = target_stem.with_suffix(have.suffix)
+                have.rename(new)
+                have = new
+                status = "moved"
+            else:
+                status = "exists"
+            return have, img.get("primary_url") or img.get("alt_url"), status
+    else:
+        existing_size = image_size(have) if have else None
     if REGISTER_ONLY:
         return None, None, "not on disk"
     errors = []
+    best = None
     for key in ("primary_url", "alt_url"):
         url = img.get(key)
         if not url:
@@ -287,12 +310,27 @@ def place(img, out_dir, throttle):
         except ValueError as e:
             errors.append(f"{key}: {e}")
             continue
+        size = image_size_bytes(data)
+        candidate = (cover_quality(size), data, ctype, url, key, size)
+        if best is None or candidate[0] > best[0]:
+            best = candidate
+        # A render-safe primary needs no fallback request. If it is small,
+        # inspect the alternate and keep whichever source has more usable
+        # resolution instead of accepting the first thumbnail that answered.
+        if candidate[0] >= 1 / 1.6:
+            break
+    if best and (not have or best[0] > cover_quality(existing_size)):
+        quality, data, ctype, url, key, size = best
         out = target_stem.with_suffix(ext_for(url, ctype))
         out.parent.mkdir(parents=True, exist_ok=True)
         if have and have != out:
             have.unlink()
         out.write_bytes(data)
-        return out, url, f"ok {key} {len(data) // 1024}KB"
+        dims = f" {size[0]}x{size[1]}" if size else ""
+        source_note = f"best of primary/alternate: {key}" if img.get("primary_url") and img.get("alt_url") else key
+        return out, url, f"ok {source_note} {len(data) // 1024}KB{dims}"
+    if have:
+        return have, img.get("primary_url") or img.get("alt_url"), "kept existing; no source had higher resolution"
     return None, None, "FAILED " + ("; ".join(errors) or "no URLs")
 
 
