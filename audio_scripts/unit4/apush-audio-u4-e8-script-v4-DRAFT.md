@@ -1,9 +1,8 @@
 # U4-E8 — Debate: Maya moderates, Marcus (1832 Union advocate) vs the Nullifier (a South Carolina Calhoun supporter, one-off guest)
 # Episode 8: The Nullification Crisis. DRAFT v4.
-# Word count: 2,057 spoken words (pause tags stripped). Experienced runtime ~12.5 min (speech at ≤180 WPM + 62s scripted pauses).
+# Word count: 2,057 spoken words (pause tags stripped). Experienced runtime ~12.5 min (speech at ≤180 WPM + 50s pauses).
 # Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Debate format. Maya is the modern host — she moderates, delivers the verdict, and owns the afterlife (everything past 1833). Marcus argues the Union/Jackson case as an 1832-era advocate; his knowledge stops at 1833. The Nullifier is a one-off guest voice, appearing only in this episode and never again: a South Carolina supporter of John C. Calhoun, speaking in his own 1832 voice — measured, scholarly, never a caricature. Spoken disclosure (Maya's opening ground rule): four real quotes are given verbatim and flagged — Jackson's and Calhoun's 1830 dinner toasts, Webster's reply to Hayne, and Jackson's Proclamation line "disunion by armed force is treason"; one spliced line from the Ordinance of Nullification is marked with an ellipsis; the "hang the first man" story is flagged in-dialogue as reported, never verified; all other debate dialogue is dramatized. Strip this header, the read note, and every [N-second pause] tag before TTS; convert pause tags to real silence. The em dash in the closing tagline is a held breath — do not rush it.
 # Pronunciation: KAL-hoon (Calhoun), HAYN (Hayne), uh-BOM-uh-nay-shunz (Abominations).
-
 Maya: [professional broadcast tone] Last time: Jackson, hero to the men he let in, tyrant to everyone he locked out. This time: South Carolina decides it can ignore a federal law. It doesn't argue. It votes. November 1832: South Carolina declares two federal tariffs null, void, and no law inside its borders. The president calls it treason. Four boxes tonight. One: the tariff fight. Two: the compact theory. Three: the showdown, toasts and threats. Four: the compromise, and what the argument became. Circle the ones you couldn't explain right now. Twelve and a half minutes. Every one gets argued tonight.
 
 Maya: [professional broadcast tone] One ground rule. Four real quotes tonight, plus one spliced Ordinance line: Jackson's toast and Calhoun's answer at the 1830 dinner, Webster's reply to Hayne, one line from Jackson's Proclamation, and the Ordinance splice. I'll flag each. The "hang the first man" story reaches us as hearsay; I'll say so when we get there. The rest is dramatized: the positions are 1832's, the back-and-forth is ours. Their clocks stop at 1833. The afterlife is mine alone.
@@ -46,7 +45,8 @@ Maya: So the whole fight sits inside three words: "We the People." Marcus reads 
 
 Nullifier: Precisely. The people acted as states, ratifying state by state, and as states they may judge.
 
-Maya: Your turn. Calhoun says a state convention can nullify a federal law. What's the Union's one-line objection, the reason Jackson calls this treason? Reason it out. [10-second pause]
+Maya: Your turn. Calhoun says a state convention can nullify a federal law. What's the Union's one-line objection, the reason Jackson calls this treason? Reason it out.
+[10-second pause]
 
 Maya: If every state can veto any law, there's no federal law left, just a treaty each state exits at will. No union survives that, only a league. Jackson's charge goes deeper than the tariff: the doctrine dissolves the country.
 
@@ -120,25 +120,30 @@ Marcus: You did. Jackson's toast, Webster's reply. The duel's whole point was th
 
 Maya: Three questions, AP-shaped. Say your answer before I give it.
 
-Maya: First, stimulus. An 1832 South Carolina document declares the 1828 and 1832 tariffs "null, void, and no law … nor binding upon this State." Name the doctrine, and the earlier American documents it's borrowing from. [10-second pause]
+Maya: First, stimulus. An 1832 South Carolina document declares the 1828 and 1832 tariffs "null, void, and no law … nor binding upon this State." Name the doctrine, and the earlier American documents it's borrowing from.
+[10-second pause]
 
 Maya: Nullification, built on the compact theory, borrowing from the 1798 Kentucky and Virginia Resolutions, Jefferson's and Madison's answer to the Alien and Sedition Acts. The giveaway is the verb "void": a state unmaking federal law inside its own borders.
 
-Maya: Second. The Tariff of 1832 lowered rates. So why didn't the crisis end there? [10-second pause]
+Maya: Second. The Tariff of 1832 lowered rates. So why didn't the crisis end there?
+[10-second pause]
 
 Maya: Because it kept the protective system. Rates fell to the mid-thirties, but the principle stood; South Carolina wanted the doctrine answered or the protection gone, and got neither. What finally worked was the pair: the Force Bill's threat and the Compromise Tariff's cuts, passed in the same week.
 
-Maya: Third. A prompt asks how the nullification crisis connects to the Civil War. What's the thread? [10-second pause]
+Maya: Third. A prompt asks how the nullification crisis connects to the Civil War. What's the thread?
+[10-second pause]
 
 Maya: The compact theory. Calhoun's doctrine gave later secessionists their legal script: the same argument, moved from a tariff fight to slavery. Hold onto that continuity: one argument wearing two different fights.
 
-Maya: One more, fast. The Force Bill: used against South Carolina, or never used, and why does it matter? [10-second pause] It never had to be used. The threat did the work; South Carolina repealed before it mattered. That's why "threat-that-worked" is the phrase to remember.
+Maya: One more, fast. The Force Bill: used against South Carolina, or never used, and why does it matter?
+[10-second pause]
+It never had to be used. The threat did the work; South Carolina repealed before it mattered. That's why "threat-that-worked" is the phrase to remember.
 
 Maya: [professional broadcast tone] 1833 ended the crisis — the argument refused to quit.
 
 Maya: [confident tone] Next time: The Bank War. Jackson, the Bank of the United States, and the veto that made his enemies crown him King Andrew. Check your boxes.
 
-## Sources (not spoken)
+## Sources (production-only, never spoken)
 - Tier 1 (carried from v1's verified basis): prem27 ch6 (Tariff of Abominations 1828; Calhoun's South Carolina Exposition and Protest; Ordinance of Nullification Nov 1832; Jackson's Proclamation to South Carolina; Force Bill and Compromise Tariff, March 1833); 5steps2024 ch13 (nullification crisis sequence); princeton ch8 (Period 4); Heimler "How Andrew Jackson EXPANDED Federal Power" transcript (nullification crisis sequence, Calhoun, Force Bill); Maximum Insight "APUSH Unit 4 Topic 3" transcript (nullification doctrine, Force Bill, compromise); Norris "04-APUSH Period 4 Speed Review" (Tariff of Abominations 1828, nullification, Compromise Tariff 1833).
 - Tier 2 (Britannica): Tariff of 1828 raised duties on imports "to as much as 50 percent" (Britannica video feature, "How a Tax Increase Led to the American Civil War," Sep 2026); Tariff of 1832 "reduced slightly … more of a gesture than a fix."
 - Web-verified with standard accounts (disclosed, not Tier 1/2): Tariff of 1832 lowered average duties to ~35% (script hedges "mid-thirties"); Ordinance of Nullification adopted Nov 24, 1832, effective Feb 1, 1833, declaring the 1828/1832 tariffs "null, void, and no law, nor binding upon this State" (script splices with ellipsis); Calhoun resigned the vice presidency Dec 28, 1832 for a Senate seat; Jackson's Proclamation Dec 10, 1832; Force Bill and Compromise Tariff both passed early March 1833; Compromise Tariff stepped rates down over ten years to 20% by 1842; SC convention repealed the Ordinance March 1833, then symbolically nullified the Force Bill; Jackson was preparing to send troops and federal marshals to South Carolina; the four verbatim quotes (Jackson's toast, Calhoun's reply, Webster's reply to Hayne, Proclamation "disunion by armed force is treason") per the assignment's verified list.
