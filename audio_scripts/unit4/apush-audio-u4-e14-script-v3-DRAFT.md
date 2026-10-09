@@ -58,9 +58,8 @@ Marcus: The math is smaller than that. Four new ones at most, only with Texas's 
 
 Tomas: And the method was the scandal. Tyler signed an annexation treaty in eighteen forty-four, and the Senate killed it: treaties need two-thirds, and the votes weren't there. So Tyler went around the Senate with a joint resolution, which needs only simple majorities. Tyler signed on March first, eighteen forty-five.
 
-Maya: Hold on. Your turn.
+Maya: Hold on. Your turn. Tyler's treaty is dead. The Senate won't give two-thirds. Congress still wants Texas. What procedure gets Texas in?
 [10-second pause]
-Tyler's treaty is dead. The Senate won't give two-thirds. Congress still wants Texas. What procedure gets Texas in?
 
 Marcus: You just heard it: the joint resolution. Same result, lower bar. Treaties need two-thirds; joint resolutions need simple majorities. The distinction IS the annexation story.
 
@@ -118,15 +117,15 @@ The phrase shows how expansion was sold: providence, inevitability, morality. It
 
 Maya: Two, stimulus. Real words from eighteen thirty-seven: Tejano officer Juan Seguin, honoring the Alamo dead: "Texas shall be free and independent or we shall perish in glorious combat." What's the point of this source on an exam?
 [10-second pause]
-It proves Tejanos, Texans of Mexican descent, fought for independence. If a prompt asks who made the Texas Revolution, this source widens the frame: Tejanos bled for it too.
+Maya: It proves Tejanos, Texans of Mexican descent, fought for independence. If a prompt asks who made the Texas Revolution, this source widens the frame: Tejanos bled for it too.
 
 Maya: Three. Why did Tyler's eighteen forty-four annexation treaty fail while the eighteen forty-five joint resolution succeeded?
 [10-second pause]
-A treaty needs two-thirds of the Senate; a joint resolution needs simple majorities. Tyler couldn't clear the higher bar, so he used the lower one. Say that sentence and you own box three.
+Maya: A treaty needs two-thirds of the Senate; a joint resolution needs simple majorities. Tyler couldn't clear the higher bar, so he used the lower one. Say that sentence and you own box three.
 
 Maya: One more, fast. Box four. Two rivers: which one did Mexico say was the real border?
 [10-second pause]
-The Nueces. Texas claimed the Rio Grande. Mix them up and the whole war makes no sense.
+Maya: The Nueces. Texas claimed the Rio Grande. Mix them up and the whole war makes no sense.
 
 Marcus: [professional broadcast tone] Destiny had a press release.
 

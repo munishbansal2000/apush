@@ -119,7 +119,7 @@ Maya: Naturalization targeted immigrants who'd vote Republican — fourteen year
 
 Maya: One more, fast. The Sedition Act died by repeal, court ruling, or expiration?
 [10-second pause]
-Expiration. It lapsed on Adams's last day, and Jefferson pardoned the convicted.
+Maya: Expiration. It lapsed on Adams's last day, and Jefferson pardoned the convicted.
 
 Maya: [professional broadcast tone] Criticism isn't treason. The voters said so in 1800, and every frightened generation since has had to decide the case again.
 
