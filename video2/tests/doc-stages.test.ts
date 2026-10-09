@@ -34,3 +34,19 @@ describe('documentary render segments', () => {
     assert.notEqual(segmentKey(plan(), seg, env, sha), segmentKey(plan(), seg, {...env, sourceHash: 'src2'}, sha));
   });
 });
+
+describe('director outline reuse', () => {
+  it('offers the accepted outline only after a script edit, so unchanged re-runs hit the prompt cache', async () => {
+    const {mkdtempSync, writeFileSync} = await import('node:fs');
+    const {tmpdir} = await import('node:os');
+    const {join} = await import('node:path');
+    const {sha256} = await import('../tools/pipeline-core');
+    const {priorOutlineFor} = await import('../tools/pipeline/stages/doc');
+    const turns = [{id: 't00', kind: 'speech', text: 'One.'}, {id: 't01', kind: 'speech', text: 'Two.'}];
+    const outline = {title: 'T', thesis: 'X', boxes: [], acts: []};
+    const path = join(mkdtempSync(join(tmpdir(), 'v2-outline-')), 'doc-outline.accepted.json');
+    writeFileSync(path, JSON.stringify({turnsHash: sha256(JSON.stringify(turns.map(t => [t.id, t.kind, t.text]))), outline}));
+    assert.equal(priorOutlineFor(path, turns), undefined, 'same script: prompt unchanged, cached outline reused');
+    assert.deepEqual(priorOutlineFor(path, [turns[0], {...turns[1], text: 'Two, edited.'}]), outline, 'edited script: revise from the accepted outline');
+  });
+});
