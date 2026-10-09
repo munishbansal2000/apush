@@ -14,7 +14,7 @@ import {levelsPathFor} from './timing';
 import {wordsPathFor} from './words';
 
 interface LayoutIssue {frame: number; kind: string; id: string; other?: string; detail?: string}
-const layoutIssuesFromLog = (text: string): LayoutIssue[] => {
+export const layoutIssuesFromLog = (text: string): LayoutIssue[] => {
   const match = /\[(?:kit-layout|layout-guard)\]\s+(\{.*\})$/s.exec(text);
   if (!match) return [];
   try {
@@ -23,6 +23,12 @@ const layoutIssuesFromLog = (text: string): LayoutIssue[] => {
   } catch (error) {
     throw new Error(`invalid layout-guard browser log: ${error instanceof Error ? error.message : String(error)}`);
   }
+};
+/** Frame number from the guard's per-frame `[kit-layout-ok]` heartbeat, or null for any other log line. */
+export const guardHeartbeat = (text: string): number | null => {
+  if (!text.startsWith('[kit-layout-ok]')) return null;
+  const frame = Number((JSON.parse(text.slice('[kit-layout-ok]'.length)) as {frame?: number}).frame);
+  return Number.isFinite(frame) ? frame : null;
 };
 const blockingLayoutIssues = (issues: LayoutIssue[]) => issues.filter(issue => issue.kind !== 'unsafe');
 const formatLayoutIssues = (issues: LayoutIssue[]) => issues.slice(0, 12).map(issue =>
@@ -120,11 +126,21 @@ export async function remotion(ctx: PipelineContext, turns: PipelineTurn[], timi
         continue;
       }
       const sceneLayoutIssues: LayoutIssue[] = [];
+      const measured = new Set<number>();
       await renderMedia({
         composition, serveUrl, codec: 'h264', outputLocation: file, inputProps, muted: true,
         browserExecutable, logLevel: 'error', frameRange: [from, to],
-        onBrowserLog: log => sceneLayoutIssues.push(...layoutIssuesFromLog(log.text)),
+        onBrowserLog: log => {
+          const beat = guardHeartbeat(log.text);
+          if (beat !== null) measured.add(beat);
+          else sceneLayoutIssues.push(...layoutIssuesFromLog(log.text));
+        },
       });
+      // A guard that never reported is a failure, not a clean pass.
+      if (measured.size < to - from + 1) {
+        if (existsSync(file)) unlinkSync(file);
+        throw new Error(`${scene.id}: layout guard measured ${measured.size} of ${to - from + 1} frames; refusing an unchecked segment`);
+      }
       renderLayoutIssues.push(...sceneLayoutIssues);
       atomicJson(layoutReportPath, {episode, checkedAt: new Date().toISOString(), issues: renderLayoutIssues});
       const blocking = blockingLayoutIssues(sceneLayoutIssues);
@@ -183,10 +199,15 @@ export async function remotion(ctx: PipelineContext, turns: PipelineTurn[], timi
       continue;
     }
     const sceneIssues: LayoutIssue[] = [];
+    let measured = false;
     await renderStill({
       composition, serveUrl, frame, output, scale: 0.3, inputProps, browserExecutable, logLevel: 'error',
-      onBrowserLog: log => sceneIssues.push(...layoutIssuesFromLog(log.text)),
+      onBrowserLog: log => {
+        if (guardHeartbeat(log.text) !== null) measured = true;
+        else sceneIssues.push(...layoutIssuesFromLog(log.text));
+      },
     });
+    if (!measured) throw new Error(`${scene.id}/${label}: layout guard did not measure frame ${frame}; refusing an unchecked contact sheet`);
     nextCache[key] = {fingerprint, issues: sceneIssues};
     contactLayoutIssues.push(...sceneIssues);
   }

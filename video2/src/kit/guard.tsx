@@ -259,7 +259,9 @@ export const LayoutGuard: React.FC<{ cfg: GuardCfg; rootRef: React.RefObject<HTM
   useLayoutEffect(() => {
     const root = rootRef.current;
     if (!root) return;
-    const { issues } = measureTracks(root, cfg);
+    const { boxes, issues } = measureTracks(root, cfg);
+    // Heartbeat: proves the guard measured this frame, so a silent guard can't pass for a clean render.
+    if (!studio) console.warn(`[kit-layout-ok] ${JSON.stringify({ frame, tracks: Object.fromEntries([...boxes].map(([id, b]) => [id, b.rect.map(v => +v.toFixed(3))])) })}`);
     const key = JSON.stringify(issues.map(i => [i.kind, i.id, i.other]));
     if (issues.length) console.warn(`[kit-layout] ${JSON.stringify({ frame, issues: issues.map(({ kind, id, other, detail, rect }) => ({ kind, id, other, detail, rect: rect.map(v => +v.toFixed(3)) })) })}`);
     if (studio && key !== last.current) {

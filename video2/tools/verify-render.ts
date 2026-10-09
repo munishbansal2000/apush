@@ -82,15 +82,21 @@ const samples = [
   {label: 'boxes 2+3 checked: finale', frame: f(36.3) + 20},
 ];
 const logs: {label: string; frame: number; text: string}[] = [];
+const heartbeats: {label: string; frame: number; tracks: Record<string, number[]>}[] = [];
 for (const [i, sample] of samples.entries()) {
   await renderStill({
     composition, serveUrl, inputProps, browserExecutable, logLevel: 'error', scale: 0.5, frame: sample.frame,
     output: join(outDir, 'stills', `${String(i).padStart(4, '0')}.png`),
-    onBrowserLog: log => { if (/kit-layout|layout-guard/.test(log.text)) logs.push({...sample, text: log.text}); },
+    onBrowserLog: log => {
+      if (log.text.startsWith('[kit-layout-ok]')) heartbeats.push({...sample, tracks: JSON.parse(log.text.slice('[kit-layout-ok]'.length)).tracks});
+      else if (/kit-layout|layout-guard/.test(log.text)) logs.push({...sample, text: log.text});
+    },
   });
   console.log(`[verify] ${sample.label} (frame ${sample.frame})`);
 }
 execFileSync('ffmpeg', ['-y', '-v', 'error', '-i', join(outDir, 'stills', '%04d.png'), '-vf', `tile=4x${Math.ceil(samples.length / 4)}:padding=6:color=black`, '-frames:v', '1', join(outDir, 'contact.png')]);
 writeFileSync(join(outDir, 'contact.txt'), samples.map((s, i) => `${String(i).padStart(4, '0')} ${s.label} frame=${s.frame}`).join('\n') + '\n');
-writeFileSync(join(outDir, 'layout.json'), `${JSON.stringify(logs, null, 2)}\n`);
-console.log(`[verify] ${samples.length} stills -> ${join(outDir, 'contact.png')} (${logs.length} layout-guard reports -> layout.json)`);
+writeFileSync(join(outDir, 'layout.json'), `${JSON.stringify({reports: logs, heartbeats}, null, 2)}\n`);
+console.log(`[verify] ${samples.length} stills -> ${join(outDir, 'contact.png')}`);
+console.log(`[verify] layout guard: ${heartbeats.length}/${samples.length} frames measured, ${logs.length} issue report(s) -> layout.json`);
+if (heartbeats.length < samples.length) console.log('[verify] WARNING: the layout guard did not measure every frame');
