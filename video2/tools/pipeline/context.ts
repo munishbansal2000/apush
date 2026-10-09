@@ -34,6 +34,8 @@ export interface PipelineContext {
   images: 'download' | 'placeholder';
   /** --editor: one LLM editor pass over each act's cut list after the build. */
   editor: boolean;
+  /** Maximum simultaneous Meta UI act storyboard sessions (--director-workers, default 1). */
+  directorWorkers: number;
   /** --draft: allow library geography that is not approved yet (samples; not for publishing). */
   draft: boolean;
   stages: PipelineStage[];
@@ -57,6 +59,7 @@ export interface PipelineContext {
   run(file: string, args: string[], env?: NodeJS.ProcessEnv): void;
   /** Run one Meta UI prompt (optionally with a same-chat follow-up); returns the JSON output path. */
   meta(name: string, prompt: string, attachments?: string[], followupPrompt?: string): string;
+  metaBatch(jobs: {name: string; prompt: string; attachments?: string[]; followupPrompt?: string; label: string}[]): string[];
 }
 
 export function createContext(): PipelineContext {
@@ -73,6 +76,8 @@ export function createContext(): PipelineContext {
   if (!['download', 'placeholder'].includes(images)) throw new Error('--images must be download or placeholder');
   const videoGen = arg('video-gen', 'ltx')!;
   if (!['ltx', 'none'].includes(videoGen)) throw new Error('--video-gen must be ltx or none');
+  const directorWorkers = Number(arg('director-workers', process.env.DIRECTOR_WORKERS ?? '1'));
+  if (!Number.isInteger(directorWorkers) || directorWorkers < 1 || directorWorkers > 8) throw new Error('--director-workers must be an integer from 1 to 8');
   // --skip images,clips: leave stages out of a run (e.g. the overnight unit runner skips image research).
   const skip = (arg('skip') ?? '').split(',').map(x => x.trim()).filter(Boolean);
   for (const name of skip) if (!(PIPELINE_STAGES as string[]).includes(name)) throw new Error(`--skip: unknown stage ${name}`);
@@ -96,13 +101,14 @@ export function createContext(): PipelineContext {
     return path;
   };
   const agent = flag('agent');
-  const meta = (name: string, prompt: string, attachments: string[] = [], followupPrompt?: string) => {
+  type MetaJob = {name: string; prompt: string; attachments?: string[]; followupPrompt?: string; label?: string};
+  const prepareMeta = ({name, prompt, attachments = [], followupPrompt}: MetaJob) => {
     // --agent: every LLM call becomes a prompt file for your own agents (one place, so no stage can bypass it). Steps
     // that make a single call stop here until its answer exists; the storyboard batches its acts itself.
     if (agent) {
       const dir = join(work, 'agent');
       const answer = agentIO(dir).meta(name, prompt, attachments, followupPrompt);
-      if (answer) return answer;
+      if (answer) return {out: answer, ready: 'agent' as const, inputHash: '', hashPath: '', args: []};
       throw new PendingAnswers([relative(ROOT, pendingPromptFile(dir, name) ?? name)], 'the same command');
     }
     const out = join(work, `${name}.json`);
@@ -112,14 +118,14 @@ export function createContext(): PipelineContext {
       const promptPath = savePrompt(name, prompt);
       const reviewPath = followupPrompt ? savePrompt(`${name}.review`, followupPrompt) : null;
       console.log(`[${name}] dry-run: ${promptPath}${reviewPath ? ` + ${reviewPath}` : ''}`);
-      return out;
+      return {out, ready: 'dry-run' as const, inputHash, hashPath, args: []};
     }
     if (!force && existsSync(out) && existsSync(hashPath) && readFileSync(hashPath, 'utf8').trim() === inputHash) {
       try {
         const cached = readJson<unknown>(out);
         if (!cached || typeof cached !== 'object' || Array.isArray(cached)) throw new Error('top-level value is not an object');
         console.log(`[${name}] prompt cache current`);
-        return out;
+        return {out, ready: 'cache' as const, inputHash, hashPath, args: []};
       } catch (error) {
         console.warn(`[${name}] ignoring invalid prompt cache: ${error instanceof Error ? error.message : String(error)}`);
       }
@@ -132,14 +138,64 @@ export function createContext(): PipelineContext {
     for (const dir of cfg.meta.playwrightDirs ?? []) args.push('--playwright-dir', dir);
     if (followupPrompt) args.push('--followup-prompt-file', savePrompt(`${name}.review`, followupPrompt));
     for (const file of attachments) args.push('--attachment', file);
-    run(process.execPath, args);
-    writeFileSync(hashPath, `${inputHash}\n`);
-    return out;
+    return {out, ready: false as const, inputHash, hashPath, args};
+  };
+  const meta = (name: string, prompt: string, attachments: string[] = [], followupPrompt?: string) => {
+    const job = prepareMeta({name, prompt, attachments, followupPrompt});
+    if (job.ready) return job.out;
+    run(process.execPath, job.args);
+    writeFileSync(job.hashPath, `${job.inputHash}\n`);
+    return job.out;
+  };
+  const metaBatch = (specs: {name: string; prompt: string; attachments?: string[]; followupPrompt?: string; label: string}[]): string[] => {
+    if (agent) return specs.map(s => meta(s.name, s.prompt, s.attachments, s.followupPrompt));
+    const jobs = specs.map(prepareMeta);
+    const pending = jobs.map((job, i) => ({job, spec: specs[i]})).filter(x => !x.job.ready);
+    for (const {job, spec} of jobs.map((job, i) => ({job, spec: specs[i]})).filter(x => x.job.ready)) {
+      console.log(`[storyboard] ${spec.label} ${job.ready === 'cache' ? 'reused from prompt cache' : job.ready === 'dry-run' ? 'prompt prepared (dry-run)' : 'answer already supplied'}`);
+    }
+    if (!pending.length) return jobs.map(j => j.out);
+    if (directorWorkers === 1) {
+      for (const [n, {job, spec}] of pending.entries()) {
+        console.log(`[storyboard] ${spec.label} generating; ${pending.length - n - 1} generation(s) remaining`);
+        run(process.execPath, job.args);
+        writeFileSync(job.hashPath, `${job.inputHash}\n`);
+        console.log(`[storyboard] ${spec.label} generated + LLM-audited; ${pending.length - n - 1} generation(s) remaining`);
+      }
+      return jobs.map(j => j.out);
+    }
+    const token = `${process.pid}.${Date.now()}`;
+    const manifest = join(work, `.meta-batch.${token}.json`);
+    const resultPath = join(work, `.meta-batch.${token}.result.json`);
+    atomicJson(manifest, pending.map(({job, spec}) => ({label: spec.label, args: job.args, cwd: ROOT})));
+    let batchError: Error | undefined;
+    try {
+      const result = spawnSync(process.execPath, [join(ROOT, 'tools', 'meta-ui-batch-runner.cjs'), '--manifest', manifest, '--result', resultPath, '--workers', String(directorWorkers)], {cwd: ROOT, stdio: 'inherit', shell: false});
+      if (result.error) throw result.error;
+      const statuses = existsSync(resultPath) ? readJson<{code: number; error?: string}[]>(resultPath) : [];
+      const failed: string[] = [];
+      pending.forEach(({job, spec}, i) => {
+        if (statuses[i]?.code === 0 && existsSync(job.out)) {
+          try {
+            const parsed = readJson<unknown>(job.out);
+            if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) throw new Error('top-level value is not an object');
+            writeFileSync(job.hashPath, `${job.inputHash}\n`);
+            return;
+          } catch (error) { statuses[i] = {code: 1, error: error instanceof Error ? error.message : String(error)}; }
+        }
+        failed.push(`${spec.label}${statuses[i]?.error ? `: ${statuses[i].error}` : `: exit ${statuses[i]?.code ?? 'unknown'}`}`);
+      });
+      if (result.status !== 0 || failed.length) batchError = new Error(`Meta storyboard batch failed:\n  - ${failed.join('\n  - ')}`);
+    } finally {
+      for (const file of [manifest, resultPath]) if (existsSync(file)) unlinkSync(file);
+    }
+    if (batchError) throw batchError;
+    return jobs.map(j => j.out);
   };
 
   return {
     episode, mode, dryRun, force, full: flag('full'), videoGen: videoGen as 'ltx' | 'none', agent, draft: flag('draft'),
-    tts, estimateWords: flag('estimate-words'), images, editor: flag('editor'), stages, cfg, work, dataDir,
+    tts, estimateWords: flag('estimate-words'), images, editor: flag('editor'), directorWorkers, stages, cfg, work, dataDir,
     audioDir: join(ROOT, 'public', 'audio', episode),
     ttsDir: join(ROOT, 'tts', episode),
     publicDir: join(ROOT, 'public'),
@@ -152,6 +208,7 @@ export function createContext(): PipelineContext {
     },
     run,
     meta,
+    metaBatch,
   };
 }
 

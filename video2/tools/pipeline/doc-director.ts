@@ -169,6 +169,8 @@ export interface DirectorIO {
    * answer is not available yet (agent mode: the prompt was written out for an external agent to answer).
    */
   meta(name: string, prompt: string, attachments?: string[], followupPrompt?: string): string | null;
+  /** Run independent prompts concurrently when supported; result order matches job order. */
+  metaBatch?(jobs: {name: string; prompt: string; attachments?: string[]; followupPrompt?: string; label: string}[]): (string | null)[];
 }
 
 
@@ -221,13 +223,15 @@ export function directOutline(io: DirectorIO, input: Pick<DirectorInputs, 'episo
   const allowEstimated = !!input.options.allowEstimated;
   const basePrompt = outlinePrompt(input.episode, input.turns, input.timing.durations, input.previousOutline);
   let name = 'doc-outline';
+  console.log('[storyboard] outline loading/generating + LLM audit');
   let source = io.meta(name, basePrompt, [], OUTLINE_REVIEW);
   for (let attempt = 0; attempt <= maxRepairs; attempt++) {
     if (!source) return {pending: [name]};
     const checked = validateOutline(readAnswer(source), input.turns, input.timing, input.words, allowEstimated);
     log.push({stage: attempt ? `outline repair ${attempt}` : 'outline', source, issues: checked.issues});
-    if (checked.outline) return {outline: checked.outline};
+    if (checked.outline) { console.log(`[storyboard] outline valid: ${checked.outline.acts.length} acts; act generation next`); return {outline: checked.outline}; }
     if (attempt === maxRepairs) return {};
+    console.log(`[storyboard] outline needs repair ${attempt + 1}/${maxRepairs} (${checked.issues.length} issue(s))`);
     name = `doc-outline-repair-${attempt + 1}`;
     source = io.meta(name, `${basePrompt}\n\nYOUR PREVIOUS OUTLINE HAD THESE PROBLEMS; return the corrected JSON only:\n${checked.issues.map(i => `- ${i}`).join('\n')}\n\nPREVIOUS OUTLINE:\n${readFileSync(source, 'utf8')}`);
   }

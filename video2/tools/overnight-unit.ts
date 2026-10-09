@@ -5,7 +5,7 @@
  * Re-running the same command continues where it stopped (checkpoints). Logs and summary.md: out/overnight/<time>/.
  *
  *   npx tsx tools/overnight-unit.ts --unit 3 [--lessons u3e1,u3e4] [--mode prod] [--list]
- *   options: --no-clips (no LTX)  --no-draft (approved geography only)  --preview (no final render)  --editor
+ *   options: --director-workers 2  --no-clips (no LTX)  --no-draft (approved geography only)  --preview  --editor
  *
  * Prod (Fish): FISH_API_KEYS="k1,k2,..." or FISH_API_KEYS_FILE (one per line); keys go round-robin per lesson.
  * Needs: Meta UI login (storyboards), LTX Desktop (clips), DEPTH_PYTHON for parallax depth maps. Keep the PC awake.
@@ -28,7 +28,7 @@ const opt = (name: string, ...aliases: string[]): string | undefined => {
   }
   return undefined;
 };
-const KNOWN = new Set(['unit', 'lessons', 'lesson', 'mode', 'list', 'no-clips', 'no-draft', 'preview', 'editor']);
+const KNOWN = new Set(['unit', 'lessons', 'lesson', 'mode', 'list', 'no-clips', 'no-draft', 'preview', 'editor', 'director-workers']);
 for (const a of process.argv.slice(2)) {
   const m = /^--([^=]+)/.exec(a);
   if (m && !KNOWN.has(m[1])) { console.error(`unknown option --${m[1]} (known: ${[...KNOWN].map(k => `--${k}`).join(' ')})`); process.exit(1); }
@@ -120,7 +120,9 @@ async function main() {
 
   // Lessons, one at a time (each runs the whole pipeline: voices, images, storyboard, build, clips, render); failed
   // lessons are retried once at the end.
-  const base = ['--mode', mode, '--full', ...(flag('no-draft') ? [] : ['--draft']), ...(flag('no-clips') ? ['--video-gen', 'none'] : []), ...(flag('editor') ? ['--editor'] : [])];
+  const directorWorkers = opt('director-workers');
+  if (directorWorkers && (!/^\d+$/.test(directorWorkers) || Number(directorWorkers) < 1 || Number(directorWorkers) > 8)) throw new Error('--director-workers must be an integer from 1 to 8');
+  const base = ['--mode', mode, '--full', ...(flag('no-draft') ? [] : ['--draft']), ...(flag('no-clips') ? ['--video-gen', 'none'] : []), ...(flag('editor') ? ['--editor'] : []), ...(directorWorkers ? ['--director-workers', directorWorkers] : [])];
   if (flag('preview')) base.splice(base.indexOf('--full'), 1);
   const results = new Map<string, Result>();
   const build = async (lesson: string, attempt: number, extra: string[] = []) => {

@@ -47,7 +47,7 @@ function prepare(ctx: PipelineContext) {
   const agentDir = join(ctx.work, 'agent');
   const io: DirectorIO = ctx.agent
     ? {meta: (name, prompt, att, follow) => agentIO(agentDir).meta(name, prompt, att, follow ? storySelfCheckFor(follow) : undefined)}
-    : {meta: ctx.meta};
+    : {meta: ctx.meta, metaBatch: ctx.metaBatch};
   return {inputs, catalog: directorCatalog(inputs), maps: directorMaps(inputs, ctx.draft), io, agentDir, dataRoot: dirname(ctx.dataDir)};
 }
 

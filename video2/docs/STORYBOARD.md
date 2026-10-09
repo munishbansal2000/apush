@@ -1,5 +1,13 @@
 # Storyboard → treatment → build
 
+Independent act storyboards can be generated and audited concurrently:
+
+```powershell
+npx tsx tools/video-pipeline.ts --episode u3e1 --director-workers 2
+```
+
+The default is one worker; the supported range is 1-8. The outline remains sequential because every act depends on it. Each worker owns one act's complete Meta conversation, including the same-chat editorial audit and any JSON repair. Cached acts do not consume a worker slot.
+
 The documentary is made in steps that can each be reviewed, approved (frozen) and revised on their own, so every round
 fixes issues instead of redoing a lesson. Creativity and iteration live in the storyboard; the build is bookkeeping
 plus an editor pass.

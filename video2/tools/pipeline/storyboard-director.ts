@@ -218,23 +218,35 @@ export function directStoryboard(io: DirectorIO, input: StoryboardInputs, maxRep
     outline.acts.forEach((_, i) => { acts[i] = actBoardOf(input.revise!.storyboard, outline!, i, input.turns); latest[i] = acts[i]; });
     for (const [act, notes] of input.revise.notes) problems.set(act - 1, notes.map(n => `REVIEWER NOTE: ${n}`));
   } else {
-    const asked = outline.acts.map((_, i) => ({i, path: io.meta(nameFor(i), prompts[i], [], STORY_REVIEW)}));
+    const jobs = outline.acts.map((_, i) => ({name: nameFor(i), prompt: prompts[i], attachments: [], followupPrompt: STORY_REVIEW, label: `act ${i + 1}/${outline!.acts.length}`}));
+    const paths = io.metaBatch?.(jobs) ?? jobs.map(j => io.meta(j.name, j.prompt, j.attachments, j.followupPrompt));
+    const asked = paths.map((path, i) => ({i, path}));
     const waiting = asked.filter(a => !a.path).map(a => nameFor(a.i));
     if (waiting.length) return {outline, log, pending: waiting};
+    let remainingValidation = asked.length;
     for (const {i, path} of asked) {
+      console.log(`[storyboard] act ${i + 1}/${outline.acts.length} validating locally; ${remainingValidation} validation(s) remaining`);
       const raw = readAnswer(path!);
       latest[i] = raw as ActBoard;
       const checked = validateStoryAct(raw, i, outline, input.turns, input.timing.durations, input.catalog, blocked, input.options.geo ?? {});
       log.push({stage: `storyboard act ${i + 1}`, source: path!, issues: checked.issues});
       if (checked.act) acts[i] = checked.act; else problems.set(i, checked.issues);
+      remainingValidation--;
+      console.log(`[storyboard] act ${i + 1}/${outline.acts.length} ${checked.act ? 'valid' : `needs repair (${checked.issues.length} issue(s))`}; ${remainingValidation} validation(s) remaining`);
     }
   }
   for (let attempt = 0; attempt <= maxRepairs; attempt++) {
     if (!problems.size) {
+      console.log(`[storyboard] ${outline.acts.length}/${outline.acts.length} acts locally valid; checking lesson-wide coherence and budgets`);
       const sb = assembleStoryboard(input.episode, outline, input.turns, acts as ActBoard[]);
       // Lesson-wide: image uses past the budget and explainer repeats go back to the acts that hold the extra uses.
       const c = checkStoryboard(sb, input.turns, input.timing.durations, {rejectedImages: input.options.rejectedImages, maxImageUses: LOOK_RULES.maxImageUses});
-      if (!c.issues.length) { log.push({stage: 'storyboard', source: 'assembled', issues: [...c.warnings, ...varietyWarnings(sb)]}); return {storyboard: sb, outline, log}; }
+      if (!c.issues.length) {
+        console.log('[storyboard] lesson-wide validation passed; storyboard complete');
+        log.push({stage: 'storyboard', source: 'assembled', issues: [...c.warnings, ...varietyWarnings(sb)]});
+        return {storyboard: sb, outline, log};
+      }
+      console.log(`[storyboard] lesson-wide validation found ${c.issues.length} issue(s); assigning affected acts for repair`);
       log.push({stage: `storyboard assembled (attempt ${attempt + 1})`, source: 'assembled', issues: c.issues});
       for (const issue of c.issues) {
         const image = /^"([^"]+)" is used (\d+) times/.exec(issue)?.[1];
@@ -247,21 +259,27 @@ export function directStoryboard(io: DirectorIO, input: StoryboardInputs, maxRep
       if (!problems.size) return {outline, log};
     }
     if (attempt === maxRepairs) return {outline, log};
-    const asked = [...problems].map(([i, lines]) => {
+    const repairSpecs = [...problems].map(([i, lines]) => {
       const name = nameFor(i, input.revise ? `-revise-${attempt + 1}` : `-repair-${attempt + 1}`);
       const prev = latest[i] ?? acts[i];
       const ask = `${input.revise ? 'YOUR CURRENT STORYBOARD FOR THIS ACT NEEDS THESE CHANGES' : 'YOUR PREVIOUS STORYBOARD FOR THIS ACT HAD THESE PROBLEMS'}:\n${lines.map(l => `- ${l}`).join('\n')}\n\n${prev ? `CURRENT STORYBOARD:\n${JSON.stringify(prev)}\n\nChange only what is needed and return` : 'Return'} the complete corrected JSON object {"turns": [...], "years": [...]} only.`;
-      return {i, name, path: io.meta(name, `${prompts[i]}\n\n${ask}`)};
+      return {i, name, prompt: `${prompts[i]}\n\n${ask}`, label: `act ${i + 1}/${outline!.acts.length} ${input.revise ? 'revision' : `repair ${attempt + 1}`}`};
     });
+    const repairPaths = io.metaBatch?.(repairSpecs) ?? repairSpecs.map(j => io.meta(j.name, j.prompt));
+    const asked = repairSpecs.map((spec, n) => ({...spec, path: repairPaths[n]}));
     const waiting = asked.filter(a => !a.path).map(a => a.name);
     if (waiting.length) return {outline, log, pending: waiting};
     problems = new Map();
+    let remainingValidation = asked.length;
     for (const {i, path} of asked) {
+      console.log(`[storyboard] act ${i + 1}/${outline.acts.length} ${input.revise ? 'revision' : `repair ${attempt + 1}`} validating locally; ${remainingValidation} validation(s) remaining`);
       const raw = readAnswer(path!);
       latest[i] = raw as ActBoard;
       const checked = validateStoryAct(raw, i, outline, input.turns, input.timing.durations, input.catalog, blocked, input.options.geo ?? {});
       log.push({stage: `storyboard act ${i + 1} ${input.revise ? 'revise' : 'repair'} ${attempt + 1}`, source: path!, issues: checked.issues});
       if (checked.act) acts[i] = checked.act; else problems.set(i, checked.issues);
+      remainingValidation--;
+      console.log(`[storyboard] act ${i + 1}/${outline.acts.length} ${checked.act ? 'valid' : `still has ${checked.issues.length} issue(s)`}; ${remainingValidation} validation(s) remaining`);
     }
   }
   return {outline, log};

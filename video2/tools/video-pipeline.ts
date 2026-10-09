@@ -7,6 +7,7 @@
  *   --mode prod      final voices (Fish); default dev (edge-tts)        --tts edge | say | fish (say = macOS, previews)
  *   --estimate-words no Vosk: phrase times estimated (previews)        --images placeholder (copies of local images; previews)
  *   --agent          storyboard prompts as files for your own agents    --editor   one editor pass after the build
+ *   --director-workers 2   generate/audit independent storyboard acts in parallel (default 1, max 8)
  *   --draft          unapproved library geography allowed               --video-gen none   no LTX clips
  */
 import {createContext} from './pipeline/context';
