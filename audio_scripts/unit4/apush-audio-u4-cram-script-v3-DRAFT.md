@@ -1,5 +1,5 @@
 # U4-CRAM — Cram Session: Maya + Jay (Fish Audio)
-# Unit 4 Cram: 1800–1848, fifteen episodes in one. ~19.5 min experienced (2,868 words speech + 200s pauses)
+# Unit 4 Cram: 1800–1848, fifteen episodes in one. ~19 min experienced (2,868 words speech + 180s pauses)
 # Draft v3 (2026-10-08): fleet repair of the v2 audit (2 major, 7 substantive, 7 minor). Direction-tag density 94%→~20% —
 # workhorse [energetic]/[conversational]/[casual] stripped everywhere no beat genuinely earned one; catalog beats kept
 # (cold-open broadcast, Jay caught-wrong sheepish, Jay's genuine question curious, both-sides myth-bust firm, grim
@@ -21,7 +21,6 @@
 # O'Sullivan (oh-SUL-ih-vun); Nueces (noo-AY-sis); Guadalupe Hidalgo (gwah-dah-LOOP-ay ee-DAL-goh).
 # Quotes: no verbatim historical quotes in this episode. The "54-40 or Fight" slogan is named as a slogan and
 # explicitly not attributed to Polk. The reported Jackson "enforce it" line is named only to flag it as legend.
-
 Maya: [professional broadcast tone] Fifteen lessons in one cram — eighteen hundred to eighteen forty-eight, in about seventeen minutes. Fifteen boxes on your sheet, one per lesson: Louisiana, the Marshall Court, the War of 1812, the American System, Missouri, the market, Jackson, nullification, the Bank War, removal, the Awakening, the abolitionists, Seneca Falls, Texas, the war with Mexico. I'm firing the questions. Answer out loud before Jay does. Circle the ones you couldn't explain right now.
 
 Maya: Question one: Jefferson said the government can only do what's listed. Buying a country wasn't listed. So how did the purchase happen?
@@ -230,7 +229,7 @@ Jay: Democracy for white men. The knot tightens.
 
 Maya: Get some sleep and drink some water — then go get the five. Say the thesis in your sleep. Next time: eighteen forty-eight to eighteen seventy-seven — the knot snaps.
 
-## Sources (production footer — strip before TTS)
+## Sources (production-only, never spoken)
 # Cross-checked against all fifteen rebuilt Unit 4 episodes — zero contradictions, zero references to dropped content:
 # - U4-E1 v4 (Louisiana Purchase): treaty-power justification (amendment drafted, shelved — Napoleon could walk away), $15M borrowed
 #   at 6% from British/Dutch bankers, three cents an acre, Senate ratified 24–7 Oct 1803, three-flags handover, Adams–Onís 1819.

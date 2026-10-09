@@ -1,9 +1,8 @@
 # U4-E6 — Maya + Marcus (Fish Audio)
-# Episode 6: The Market Revolution. About thirteen minutes experienced (2,075 spoken words + 73s scripted pauses = 12.7 min at 180 WPM).
+# Episode 6: The Market Revolution. About thirteen minutes experienced (2,075 spoken words + 60s pauses = 12.7 min at 180 WPM).
 # Draft v4. Surgical repair pass: 2 antithesis forms reworked into asymmetric phrasing (L17 steamboat tail, L83 telegraph line); L41 and L95 untouched at budget (≤2, §4.14). Standards: frozen 2026-10-06 + final guidelines 2026-10-07.
 # Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Maya tracks four boxes on her episode sheet: the transportation revolution, the factory system and the telegraph, King Cotton's South, and the human cost. Pause tags are production notes for real silence — strip this header, the read note, and every [N-second pause] tag before TTS; convert tags to silence. The em dash in the closing tagline is a held beat — leave a full breath between Maya's setup line and Marcus's landing line. Do not rush it.
 # Pronunciation: EER-ee (Erie); LOH-uhl (Lowell); MEH-rih-mak (Merrimack); muh-KOR-mik (McCormick); Deere rhymes with "deer"; FOOL-tun (Fulton)
-
 Maya: [professional broadcast tone] Last time: the compromise held the Union together — now the economy remakes it. Picture America in 1800: most people growing what they eat and hauling everything else by wagon over mud. Forty years later the whole thing runs on markets: strangers buying and selling across a thousand miles. Four boxes on your sheet: the transportation revolution, the factory system and the telegraph, King Cotton's South, and the human cost. Circle the ones you couldn't explain right now. About thirteen minutes, and they're yours.
 
 Marcus: Start with the roads, because they came first and they were terrible.
@@ -166,7 +165,7 @@ Marcus: [professional broadcast tone] and the market made the country richer whi
 
 Maya: [confident tone] Check your boxes. Next time: the common man's president. Andrew Jackson, hero or tyrant.
 
-# Sources (production-only, never spoken)
+## Sources (production-only, never spoken)
 # - Princeton Review AP US History Premium Prep 2027, Ch. 6 "Period 4" (OEBPS/text/16_Chapter06.xhtml): market revolution framing (4.5/4.6); Erie Canal completed 1825 (Hudson to Great Lakes, freight Buffalo–NYC down ~90%); Fulton steamboat Clermont on the Hudson 1807; interchangeable parts proposed by Whitney for small firearms; telegraph — Morse 1844, "What hath God wrought?", Washington D.C. to Baltimore, lines along railroads by 1850; Cumberland/National Road 1811–1853; first railroad tracks laid 1829 by the B&O; steel plow (John Deere — text says 1847, see disclosure); McCormick reaper 1831 (one farmer = five men); Slater mill 1790s Pawtucket RI after smuggling machinery plans from Britain; Lowell mills along the Merrimack starting 1821, 6,000+ women by 1830, strikes 1834/1836, replaced by Irish immigrants by the 1840s, Lowell Offering; cotton gin 1793; King Cotton (58% of US exports by 1860, three-quarters of world supply); international slave trade banned 1808, internal/domestic slave trade expanded; Irish largest antebellum immigrant group (famine 1845–52, ~1M to US), Germans second (post-1848); middle class (lawyers, clerks, accountants); cult of domesticity + separate spheres; Panic of 1819 (Second Bank 1816, wildcat banks, land speculation).
 # - Princeton Review AP US History (books/extracted/princeton, OEBPS/xhtml/041_c008_sup.xhtml): by 1855 transport costs fell to 1/20 of 1825 levels, arriving in 1/5 the time; America's first railroads built in the 1830s; panics of 1819 and 1837.
 # - 5 Steps to a 5: AP US History 2024, Ch. 13 (OEBPS/ch13.xhtml): "Steamboats traveled up and down America's great rivers"; National Road connected Potomac and Ohio Rivers; Erie Canal spurred canal building.

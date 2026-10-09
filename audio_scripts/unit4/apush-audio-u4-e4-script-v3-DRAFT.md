@@ -1,9 +1,8 @@
 # U4-E4 — Maya + Marcus (Fish Audio)
-# Episode 4: The Era of Good Feelings and the Monroe Doctrine. Eleven and a half minutes experienced (1,855 spoken words + 69s scripted pauses = ~11.5 min at ≤180 WPM).
+# Episode 4: The Era of Good Feelings and the Monroe Doctrine. Eleven and a half minutes experienced (1,855 spoken words + 60s pauses = ~11.5 min at ≤180 WPM).
 # Draft v3 (2026-10-08): fleet repair pass — 13 audit findings repaired (5 accuracy, 3 voice/traps, 3 mechanical T1/TR1/TA1, 2 changelog corrections). Live traps replace announcer-voice proclamations; tag density cut from 85% to ~26%.
 # Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Maya tracks four boxes on her episode sheet: the American System, a homegrown American culture, the Monroe Doctrine, and the cracks underneath it all. They never go to the voice. The em dash in the closing tagline is a held beat: leave a full breath between Marcus's setup line and Maya's landing line. Do not rush it. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence.
 # Pronunciation: mon-ROH (Monroe); KAN-ing (Canning); uh-DAMS is just Adams; duh-WIT (DeWitt Clinton); oh-NEES (Onís); BA-gut (Bagot)
-
 Maya: [professional broadcast tone] Last time: a war nobody won, and the nationalism it left behind. This time the glow fades and the bills come due, and a president draws a line across the whole hemisphere. Four boxes on your sheet: the American System, a homegrown American culture, the Monroe Doctrine, and the cracks underneath it all. Circle the ones you couldn't explain right now. Eleven and a half minutes, and they're yours.
 
 Marcus: Start with the mood. The Federalists were gone, broken by the Hartford Convention. One party owned everything: Monroe won in 1816, then again in 1820 with barely an opponent in sight.
@@ -180,7 +179,7 @@ Maya: [professional broadcast tone] and a fault line running underneath.
 
 Maya: [intrigued] Next time: Missouri. Eleven free states, eleven slave states, one line across the map, and a retired president who heard a fire bell in the night.
 
-# Sources (production only — never spoken)
+## Sources (production-only, never spoken)
 # - 5 Steps to a 5 AP US History 2024, ch12 (books/extracted/5steps2024/OEBPS/ch12.xhtml): Federalist collapse after Hartford; Monroe elected 1816, served two terms; Era of Good Feelings dated 1816–1823; Clay's American System as economic independence from Europe; Second Bank chartered 1816; Tariff of 1816 (RATE DISCREPANCY: ch12 says 22%, ch13 says 25% — script pins no rate); tariff revenue earmarked for roads/internal improvements; Missouri applied 1819 as a slave state; free/slave balance at 11–11; "acrimonious political debate."
 # - 5 Steps to a 5 AP US History 2024, ch13 (books/extracted/5steps2024/OEBPS/ch13.xhtml): Erie Canal built by New York State 1817–1825, waterway between New York City and the Great Lakes; Panic of 1819 (post-Napoleonic international shifts + Second Bank branches' inflationary land-speculation policies); Monroe Doctrine section (British joint proposal; "reluctant to be seen acting in the shadow of the British"; Adams as SoS; the two claims; a key tenet of US foreign policy for a century).
 # - Princeton Review AP US History Premium Prep (26th ed.), ch6 (books/extracted/premium2027/OEBPS/text/16_Chapter06.xhtml): Monroe's 1823 foreign-policy address; Holy Alliance = Russia, Prussia, Austria, threatening to restore Spain's lost colonies; Russian czar's 51st-parallel decree; "The United States did not have the military might to enforce this pronouncement"; Adams-Onís Treaty 1819 (Florida; Adams negotiated as SoS); period timeline (Second Bank 1816; Erie Canal 1817–1825; Monroe re-elected 1820; Jackson vetoes Bank recharter 1832).

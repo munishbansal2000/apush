@@ -1,5 +1,5 @@
 # U1-E9 — Maya + Jay (Fish Audio)
-# Episode 9: Cram Session, Unit 1. ~15 min experienced (1,925 words speech + 250s pauses)
+# Episode 9: Cram Session, Unit 1. ~14 min experienced (1,925 words speech + 200s pauses)
 # Draft v8 (2026-10-06): full rebuild to the frozen standards. Study Buddies format (Maya + Jay).
 # Replaces v7 (1,440 words, old standard): Q4 is now Jamestown — E4 was rebuilt as Planting, Not Raiding,
 # and the old Cortes beat has no home in the new unit. England's-challenge beat dropped: Drake,
@@ -31,7 +31,6 @@
 # Anaquito (ahn-yah-KEE-toh); Guaman Poma (gwah-MAHN POH-mah); tornaviaje (tor-nah-VYAH-heh);
 # Sao Tome (sow toh-MAY); Pope (poh-PAY); Otermin (oh-ter-MEEN); Treviño (treh-VEE-nyo);
 # maguey (mah-GAY); kiva (KEE-vuh).
-
 Maya: [professional broadcast tone] Last time: the Pueblo Revolt — the conquered answering back, and an empire forced to change. Now: no new boxes. Eight episodes, ten questions, twelve minutes. The dare: fit every answer to the unit's three shapes: what changed, what stayed the same, who pushed back. The eight boxes: Native societies, why Europe sailed, the Exchange, Jamestown, the silver mountain, the labor chain, Valladolid, the Pueblo Revolt. Circle the ones you couldn't explain right now.
 
 Jay: [curious, inquisitive tone] Ten questions. Any mercy today?
@@ -195,7 +194,7 @@ Jay: [professional broadcast tone] no mercy, and all of them landed.
 
 Maya: [intrigued] Check your eight boxes. Next time: the neighbors move in. Spain, France, Holland, England: four empires, four ways to run a colony.
 
-## Sources
+## Sources (production-only, never spoken)
 - Every cram answer cross-checked against the rebuilt episodes for zero contradictions: U1-E1 LOCKED (v15), U1-E2 v10, U1-E3 v9, U1-E4 v6, U1-E5 v5, U1-E6 v6, U1-E7 v4, U1-E8 v6.
 - apush-fact-registry.yaml (F-U1-001 through F-U1-065): corrections applied in this rebuild — Middle Passage mortality ~1 in 8 (F-U1-038; v7 said "one in seven"); Otermin left reports, not a "journal" (F-U1-057); syphilis origin attributed both sides in-dialogue (F-U1-009); casta ladder order, peninsulares born in Spain (F-U1-041).
 - No new historical claims introduced beyond the episode scripts and the registry-canonical Rolfe letter rendering; no Tier-2 lookups required. Dropped from v7 with no home in the rebuilt unit: the Cortes/conquest beat (E4 is now Jamestown) and the Drake/Roanoke/Armada beat (in no current episode).

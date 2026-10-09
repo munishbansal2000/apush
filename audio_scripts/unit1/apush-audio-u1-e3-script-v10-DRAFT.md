@@ -1,5 +1,5 @@
 # U1-E3 — Maya + Marcus (Fish Audio)
-# Episode 3: The Exchange. ~12.5 min experienced (1,917 words speech + 100s pauses)
+# Episode 3: The Exchange. ~11.5 min experienced (1,917 words speech + 60s pauses)
 # Draft v10 (2026-10-07): fleet-repair pass — all 20 audit findings applied (12 blockers, 8 minors).
 # Repairs: tense math fixed ("over five hundred"); the turkey taught as the eastbound exception (live trap);
 # the encomienda named as the intermediate labor step; African kingdoms/merchants named as sellers;
@@ -24,7 +24,6 @@
 # tags to silence.
 # Pronunciation: Crosby (KROZ-bee); Nahua (NAH-wah); Florentine (FLOH-ren-teen); Sahagún (sah-hah-GOON);
 # encomienda (en-koh-mee-EN-dah); São Tomé (sow toh-MAY); Madeira (muh-DEER-uh); Tlaxcalan (tlahsh-kah-LAHN).
-
 Maya: [professional broadcast tone] Last time: the three Gs, the toolkit, and the pope's line that split the ocean in two. Now the ships start moving — and they carry cargo nobody bought a ticket for. Two worlds, ten thousand years apart, about to swap everything: crops, animals, people, germs. Four boxes: the Exchange inventory, the disease front, who won and who paid, and the labor crisis. Circle the ones you couldn't explain right now. Twelve minutes, and you'll check all four off.
 
 Marcus: Westbound, Europe to the Americas: wheat, sugarcane, and the animals. Horses, cattle, pigs. The Americas had never seen any of them.

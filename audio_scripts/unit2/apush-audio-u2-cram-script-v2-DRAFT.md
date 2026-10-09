@@ -1,5 +1,5 @@
 # U2 — Cram Session: Maya + Jay (Fish Audio)
-# Episode 19: Ten Questions, One Unit. ~14.5 min experienced (2,183 words speech + 140s pauses)
+# Episode 19: Ten Questions, One Unit. ~14 min experienced (2,183 words speech + 120s pauses)
 # Draft v2 (2026-10-07): full repair of the archived v1 draft to the frozen 2026-10-07 final guidelines — Study Buddies
 # (Maya + Jay), Maya drives the rapid-fire quiz, ten questions, the period thesis, two DBQ predictions with "Your turn."
 # beats, explicit pause tags counted in the experienced runtime, Fish direction as written. Registry corrections applied:
@@ -15,7 +15,6 @@
 # Pronunciation: koo-RUHR duh BWAH (coureurs de bois), pah-TROON (patroon), REN-suh-lerz-WAYK (Rensselaerswijck),
 # see-nyoor (seigneur), meh-tah-KOM (Metacom), ah-beh-NAH-kee (Abenaki), POHN-tee-ak (Pontiac), NEE-oh-lin (Neolin),
 # moh-non-guh-HEE-luh (Monongahela), duh-KAYN (Duquesne), ZENG-er (Zenger), an-gliss-ih-ZAY-shun (Anglicization)
-
 Maya: [professional broadcast tone] Last time: the French and Indian War, the war Britain won so completely that paying for it broke the colonial arrangement. This time: no new material. Ten questions, 1607 to 1763, a century and a half, in about thirteen minutes. The dare: say every answer out loud before Jay does. Circle the ones you couldn't explain right now.
 
 Jay: [sheepish] Ten questions. Last cram I called the patroons the patronuses. Different franchise, same confidence.
@@ -214,7 +213,7 @@ Jay: [professional broadcast tone] Growth made them valuable —
 
 Maya: [professional broadcast tone] And ungovernable.
 
-## Sources
+## Sources (production-only, never spoken)
 - Cross-checked against the rebuilt U2-E9 v5 cram (the validated Unit 2 cram, 2026-10-06) — zero contradictions; shared beats reworded per the tissue rule (Walpole disclosure, King Philip's War per-capita framing, Braddock/Monongahela, triangular-trade pattern, 1705 consolidation, Whitefield 1739, debt unpinned, Albany rejection order, Pontiac/Proclamation).
 - U2-E1 v5 (Four Ways to Want a Continent): Spain souls+silver; France fur empire, coureurs de bois, Huguenots barred, thin settlement; Holland patroon, Rensselaerswijck; England joint-stock, headright to the payer.
 - U2-E2 v5 (From Servitude to Slavery): servants 4–7 years; Bacon 1676; John Punch 1640; 1662 mother rule; Barbados 1661 template; Carolina planters from Barbados; 1705 code ("real estate"); Morgan thesis, racism/slavery debate both sides.

@@ -1,5 +1,5 @@
 # U4-E3 — Maya + Marcus (Fish Audio)
-# Episode: The War of 1812. ~12.5 min experienced (2,067 words speech + 70s pauses)
+# Episode: The War of 1812. ~12.5 min experienced (2,067 words speech + 60s pauses)
 # v3 (2026-10-08): repair per the 2026-10-08 audit — 19 findings applied (A1–A8 accuracy/
 # lock-bar, V1–V3 voice, T1 antithesis budget, TR1 stylistic threeness, TG1–TG3 direction).
 # Eight announcer-voice exam proclamations became six live traps (embargo pair and navy pair
@@ -10,7 +10,6 @@
 # convert pause tags to silence. The ## Sources section at the end is production-only, never spoken.
 # Pronunciation: Tecumseh (teh-KUM-seh); Tippecanoe (tip-ee-kuh-NOO); Ghent (gent);
 # Pakenham (PAK-en-um); Guerriere (gair-ee-AIR); Macdonough (mak-DON-uh).
-
 Maya: [professional broadcast tone] Last time: Marshall gave the Court the last word. This time: the war nobody won. Eighteen twelve. The capital burns. One fort holds. And out of the smoke comes the song.
 
 Maya: Four boxes on my sheet: impressment and the War Hawks; the Canada disaster; Washington burns and Fort McHenry holds; Ghent, Hartford, New Orleans. Circle the ones you couldn't explain right now. Just under thirteen minutes. The sheet is yours.

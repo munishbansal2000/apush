@@ -39,7 +39,8 @@ Maya: [sheepish] More than a fourth foreign-held, but still an American corporat
 
 Maya: One number worth carrying: twelve vetoes, more than all six presidents before him combined.
 
-Maya: One more thing. Henry Clay forced that recharter vote four years early, betting a Jackson veto would cost him the 1832 election. Your turn. You're advising Jackson that summer. Veto and own the fight, or sign and defuse it? Which costs him less? Reason it out. [10-second pause]
+Maya: One more thing. Henry Clay forced that recharter vote four years early, betting a Jackson veto would cost him the 1832 election. Your turn. You're advising Jackson that summer. Veto and own the fight, or sign and defuse it? Which costs him less? Reason it out.
+[10-second pause]
 
 Maya: Jackson vetoed, and Clay's trap caught Clay: the rich-and-powerful language played straight to voters, and Jackson won reelection. Box one is checked. No more checkoffs till the recap.
 
@@ -71,7 +72,8 @@ Maya: [curious, inquisitive tone] Biddle, the Circular was aimed at your pet-ban
 
 Biddle: [intense] The Circular proved my point, not his. Jackson's own chosen banks inflated the land bubble with reckless paper. Then his Circular told every speculator their paper was worthless for the one purchase that mattered. He built the bubble with one hand and burst it with the other.
 
-Maya: Your turn. It's 1836. You hold paper claims on frontier land, and the government just announced it will only take gold and silver. What happens to land prices over the next year, and what happens to the people holding your paper? Reason it out. [10-second pause]
+Maya: Your turn. It's 1836. You hold paper claims on frontier land, and the government just announced it will only take gold and silver. What happens to land prices over the next year, and what happens to the people holding your paper? Reason it out.
+[10-second pause]
 
 Maya: Prices fall: the books record falling land prices and a shortage of government funds after the Circular. The paper holders are left holding promises no land office will honor.
 
@@ -111,19 +113,24 @@ Maya: For federal land only. Right. Box four: the Panic of 1837. The verdict sta
 
 Maya: Three questions, AP-shaped. Say your answer before I give it. Take the full fifteen to twenty seconds.
 
-Maya: One. Stimulus, July 1832. Real quote: "It is to be regretted that the rich and powerful too often bend the acts of government to their selfish purposes." What's the author's purpose, and what does it reveal about his strategy? [10-second pause]
+Maya: One. Stimulus, July 1832. Real quote: "It is to be regretted that the rich and powerful too often bend the acts of government to their selfish purposes." What's the author's purpose, and what does it reveal about his strategy?
+[10-second pause]
 
 Maya: The purpose was persuasion: the closing of a veto message, aimed at voters as much as senators. The evidence is the matchup, "the rich and powerful" against "the farmers, mechanics, and laborers." Jackson turned a constitutional fight over a bank charter into a moral fight over who the government serves. He was campaigning, not explaining.
 
-Maya: Two. Jackson pulled the deposits in 1833 instead of waiting for the charter to die in 1836. Why was the faster move worth the cost? [10-second pause]
+Maya: Two. Jackson pulled the deposits in 1833 instead of waiting for the charter to die in 1836. Why was the faster move worth the cost?
+[10-second pause]
 
 Maya: Because a Bank with its deposits intact could fight back: fund its defense, keep lending, survive to embarrass him. Biddle's contraction proved the Bank would use its remaining power as leverage. Waiting meant three more years of a hostile institution sitting on the government's own money. Jackson paid the price to starve it now.
 
-Maya: Three. The Whigs named themselves after the British party that opposed the king's power. What does that tell you about how they saw Jackson? [10-second pause]
+Maya: Three. The Whigs named themselves after the British party that opposed the king's power. What does that tell you about how they saw Jackson?
+[10-second pause]
 
 Maya: Their charge was constitutional before it was economic: they saw a president grabbing power like a monarch. The evidence is the nickname "King Andrew," and a coalition whose glue was opposition to Jackson. The name was the argument: executive power as monarchy, with Jackson as the tyranny they existed to check.
 
-Maya: One more, fast. The Panic of 1837: one cause, or no single hand? [10-second pause] No single hand. The verdict stays split.
+Maya: One more, fast. The Panic of 1837: one cause, or no single hand?
+[10-second pause]
+No single hand. The verdict stays split.
 
 Biddle: [professional broadcast tone] And on the contraction: a bank that cannot defend its depositors' money is no bank at all. A president who yanks the floor out from under it, then blames it for the fall, is the one wielding the power he fears.
 
@@ -131,7 +138,7 @@ Maya: [professional broadcast tone] The Bank is gone. The argument never adjourn
 
 Maya: [confident tone] Check your boxes. Next time: removal. The Cherokee Nation's fight in the courts, in the press, and on the road west. Episode ten: the Trail of Tears.
 
-## Sources (production only — never spoken)
+## Sources (production-only, never spoken)
 
 Tier 1:
 - Barron's AP US History Premium 2027, ch. 6 (Period 4) — recharter pushed 1832 four years before charter expiry; Jackson's veto rhetoric and reelection; deposits moved 1833 to state banks in Democratic-leaning states; Specie Circular 1836 (hard currency for government land); Panic of 1837 lasted five years, hundreds of banks/businesses folded; Van Buren lost 1840 to Harrison; Whigs founded 1833 (note: Britannica dates formal organization to 1834 — script teaches 1834).

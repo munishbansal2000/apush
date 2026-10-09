@@ -1,8 +1,7 @@
 # U3-E1 — Maya + Marcus (Fish Audio)
-# Episode 18: The Bill Comes Due. Eleven-and-a-half minutes experienced (1,882 spoken words + 63s scripted pauses = 11.5 min at 180 WPM).
+# Episode 18: The Bill Comes Due. Eleven-and-a-half minutes experienced (1,882 spoken words + 50s pauses = 11.5 min at 180 WPM).
 # Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Maya tracks three boxes on her episode sheet: the end of salutary neglect, the Proclamation Line of 1763, and Pontiac's Rebellion. Strip this header and the read note before TTS; convert pause tags to silence. The em dash in the closing tagline is a held beat: leave a full breath between Marcus's setup line and Maya's landing line. No verbatim historical quotes in this episode — the Proclamation's Native-land promise is paraphrased, not quoted. Strip this header and the read note before TTS.
 # Pronunciation: PON-tee-ak (Pontiac), OT-uh-wuh (Ottawa), nee-OH-lin (Neolin), GREN-vil (Grenville), ap-uh-LAY-chun (Appalachian), AM-urst (Amherst), gayj (Gage), kon-uh-STOH-guh (Conestoga)
-
 Maya: [professional broadcast tone] Last time: two centuries of English colonies: New England, the middle colonies, the South. This time those colonies stop arguing with each other, and start arguing with London. 1763. Britain's won the biggest war of the century, and the prime minister opens the books and turns pale. Three boxes on your sheet: the end of salutary neglect, the Proclamation Line of 1763, and Pontiac's Rebellion. Circle the ones you couldn't explain right now. Eleven and a half minutes, and you'll land all three.
 
 Marcus: [confident tone] Then start with the bill. The war left London drowning in debt. The books' word is "enormous," so we'll borrow it. And the empire cost more to run than ever: Canada to garrison, Florida to administer, a frontier past every map London owned. The thesis for your notes: Britain won the war, and wrecked the arrangement that had made the empire work.
@@ -139,9 +138,8 @@ Marcus: [professional broadcast tone] Britain won the war —
 
 Maya: [professional broadcast tone] — and couldn't afford the peace.
 
----
 
-## Sources (production footer — strip before TTS)
+## Sources (production-only, never spoken)
 
 Tier 1:
 - premium2027 ch. 5 — Pontiac's Rebellion (Neolin's 1760–61 vision: Delaware leader, apocalyptic vision, curb contact with fur traders, reduce guns/alcohol/European goods, lessen infighting, "set the stage for unified, violent resistance"); French vs British approach (French negotiated, ceremonial gift exchanges; Amherst saw gift exchanges as demeaning; Native nations read gift-giving as dominance and protection); attacks after the 1763 Treaty of Paris (Fort Detroit, then six other forts; several forts captured west of Detroit; 400+ British soldiers and 2,000 colonists killed or captured; Amherst replaced by Gage Aug 1763; bloodshed into 1764; "finally broken by Gage"); Proclamation of 1763 ("in response to the outbreak of Pontiac's Rebellion," line through the Appalachians, colonists not to settle beyond it, British motive: avoid provoking additional warfare + costs of more campaigns + keep fur-trade profits, "one of the first major disputes between Great Britain and the colonists"); Paxton Boys (1763 attack on peaceful Conestoga Indians, many Christians, twenty deaths; Jan 1764 ~250 marched to Philadelphia; their "Apology" — bitterness toward frontier Indians, resentment of Quaker elite's lenient policy); debt and taxation ("large debt that had accumulated during almost half a century of constant warfare"; colonists should assume some costs of war and continued protection); Sugar Act (1764) as the first significant postwar tax (lowered molasses duty, cracked down on smuggling, strengthened admiralty courts); "salutary neglect" → "close supervision" shift as an important cause of the resentments and protests culminating in the Revolution.
