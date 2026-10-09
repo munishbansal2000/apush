@@ -22,35 +22,52 @@ RATE_LIMITS = {
     "default": 30,
 }
 
-def get_rate_limit(url):
-    for host, limit in RATE_LIMITS.items():
-        if host in url:
-            return limit
-    return RATE_LIMITS["default"]
+def rate_bucket(url):
+    for host in RATE_LIMITS:
+        if host != "default" and host in url:
+            return host
+    return "default"
+
+def wait_for_host(url, last_host_time):
+    """Pace only real requests, using the host actually being requested."""
+    host = rate_bucket(url)
+    min_interval = 60.0 / RATE_LIMITS[host]
+    elapsed = time.time() - last_host_time.get(host, 0)
+    if elapsed < min_interval:
+        time.sleep(min_interval - elapsed)
+    last_host_time[host] = time.time()
 
 FORCE = "--force" in sys.argv
 
-def download_one(img, out_dir):
+def output_path(img_id, url, out_dir):
+    ext = ".jpg"
+    if ".png" in url.lower():
+        ext = ".png"
+    elif ".webp" in url.lower():
+        ext = ".webp"
+    elif ".tif" in url.lower():
+        ext = ".tif"
+    return out_dir / f"{img_id}{ext}"
+
+def download_one(img, out_dir, last_host_time):
     img_id = img["id"]
     last_error = "no URLs"
-    # Determine extension from URL or default to .jpg
+    urls = [img.get(key) for key in ["primary_url", "alt_url"] if img.get(key)]
+    # A fallback may have a different extension. Check every possible output
+    # before sleeping or touching the network.
+    if not FORCE:
+        for url in urls:
+            existing = output_path(img_id, url, out_dir)
+            if existing.exists() and existing.stat().st_size > 0:
+                return f"skip (exists): {img_id}"
+
     for url_key in ["primary_url", "alt_url"]:
         url = img.get(url_key)
         if not url:
             continue
-        ext = ".jpg"
-        if ".png" in url.lower():
-            ext = ".png"
-        elif ".webp" in url.lower():
-            ext = ".webp"
-        elif ".tif" in url.lower():
-            ext = ".tif"
-        
-        out_path = out_dir / f"{img_id}{ext}"
-        if out_path.exists() and out_path.stat().st_size > 0 and not FORCE:
-            return f"skip (exists): {img_id}"
-        
+        out_path = output_path(img_id, url, out_dir)
         try:
+            wait_for_host(url, last_host_time)
             req = urllib.request.Request(url, headers={"User-Agent": "APUSH-Educational/1.0"})
             with urllib.request.urlopen(req, timeout=30) as resp:
                 ctype = resp.headers.get("Content-Type", "")
@@ -84,20 +101,7 @@ def download_lesson(lesson):
     
     last_host_time = {}
     for i, img in enumerate(images):
-        url = img.get("primary_url") or ""
-        host = next((h for h in RATE_LIMITS if h in url), "default")
-        limit = RATE_LIMITS.get(host, 30)
-        min_interval = 60.0 / limit
-        
-        # Rate limit
-        now = time.time()
-        if host in last_host_time:
-            elapsed = now - last_host_time[host]
-            if elapsed < min_interval:
-                time.sleep(min_interval - elapsed)
-        last_host_time[host] = time.time()
-        
-        result = download_one(img, out_dir)
+        result = download_one(img, out_dir, last_host_time)
         print(f"  [{i+1}/{len(images)}] {result}")
 
 if __name__ == "__main__":
