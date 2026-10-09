@@ -5,9 +5,13 @@ import { existsSync, mkdirSync, readFileSync, readdirSync, statSync, unlinkSync,
 import { dirname, join } from 'node:path';
 import { arg, flag, loadEpisode, PUBLIC, ROOT } from './lib';
 
-const UA = 'apush-episode-kit/1.0 (educational video production)';
+// Wikimedia requires a descriptive client plus contact URL. A compliant UA is
+// also assigned a substantially less restrictive rate-limit class.
+const UA = 'apush-episode-kit/1.1 (https://github.com/munishbansal2000/apush; educational video production)';
 const COMMONS_API = 'https://commons.wikimedia.org/w/api.php';
 const LOCK_PATH = join(ROOT, 'data/images.lock.json');
+const WIKIMEDIA_DELAY_MS = Math.max(1000, Number(arg('wikimedia-delay-ms', '1500')));
+const lastRequestAt = new Map<string, number>();
 
 interface ManifestEntry {
   source_url?: string;
@@ -36,22 +40,48 @@ const responseType = (res: Response | null) => res?.headers.get('content-type') 
 const isImageResponse = (res: Response | null) =>
   !!res?.ok && /^(image\/|application\/octet-stream)/i.test(responseType(res));
 
-async function getWithRetry(url: string, tries = 2): Promise<Response | null> {
+const throttleGroup = (url: string) => {
+  const host = new URL(url).host.toLowerCase();
+  if (host.endsWith('wikimedia.org')) return 'wikimedia.org';
+  if (host.endsWith('loc.gov')) return 'loc.gov';
+  return host;
+};
+const retryAfterMs = (value: string | null): number | null => {
+  if (!value) return null;
+  const seconds = Number(value);
+  if (Number.isFinite(seconds)) return Math.max(0, seconds * 1000);
+  const date = Date.parse(value);
+  return Number.isFinite(date) ? Math.max(0, date - Date.now()) : null;
+};
+const pace = async (url: string) => {
+  const group = throttleGroup(url);
+  const minimum = group === 'wikimedia.org' ? WIKIMEDIA_DELAY_MS : group === 'loc.gov' ? 3100 : 250;
+  const wait = minimum - (Date.now() - (lastRequestAt.get(group) ?? 0));
+  if (wait > 0) await sleep(wait);
+  lastRequestAt.set(group, Date.now());
+};
+
+async function getWithRetry(url: string, tries = 4): Promise<Response | null> {
   let last: Response | null = null;
   for (let attempt = 0; attempt < tries; attempt++) {
+    await pace(url);
     try {
       last = await fetch(url, {
         headers: { 'User-Agent': UA }, redirect: 'follow', signal: AbortSignal.timeout(20_000),
       });
-      if (last.ok || last.status === 429 || last.status < 500) return last;
+      if (last.ok) return last;
+      if (last.status !== 429 && last.status !== 503 && last.status < 500) return last;
     } catch (error) {
       if (attempt === tries - 1) {
         console.log(`    ! ${new URL(url).host}: ${error instanceof Error ? error.message : String(error)}`);
         return null;
       }
     }
-    const retryAfter = Number(last?.headers.get('retry-after')) * 1000;
-    const wait = Math.min(retryAfter || 1500 * 2 ** attempt, 30_000);
+    if (attempt === tries - 1) return last;
+    // Wikimedia explicitly requires clients to honor Retry-After. Without it,
+    // wait at least five seconds and exponentially back off.
+    const retryAfter = retryAfterMs(last?.headers.get('retry-after') ?? null);
+    const wait = retryAfter ?? 5000 * 2 ** attempt;
     console.log(`    ... ${last ? `HTTP ${last.status}` : 'network error'}, retrying in ${(wait / 1000).toFixed(1)}s`);
     await sleep(wait);
   }
@@ -73,7 +103,7 @@ export function commonsTitle(sourceUrl: string): string | null {
 async function commonsInfo(title: string): Promise<CommonsInfo | null> {
   const q = new URLSearchParams({
     action: 'query', format: 'json', titles: `File:${title}`, prop: 'imageinfo',
-    iiprop: 'url|size|extmetadata', iiurlwidth: '2400', origin: '*',
+    iiprop: 'url|size|extmetadata', iiurlwidth: '2400', maxlag: '5', origin: '*',
   });
   const res = await getWithRetry(`${COMMONS_API}?${q}`);
   if (!res?.ok) return null;
@@ -89,7 +119,7 @@ async function searchCommonsInfo(wantedTitle: string): Promise<CommonsInfo | nul
   const stem = wantedTitle.replace(/\.[^.]+$/, '').replace(/[_(),–—-]+/g, ' ').replace(/\s+/g, ' ').trim();
   const q = new URLSearchParams({
     action: 'query', format: 'json', generator: 'search', gsrsearch: `${stem} filetype:bitmap`,
-    gsrnamespace: '6', gsrlimit: '10', prop: 'imageinfo', iiprop: 'url|size|extmetadata', iiurlwidth: '2400', origin: '*',
+    gsrnamespace: '6', gsrlimit: '10', prop: 'imageinfo', iiprop: 'url|size|extmetadata', iiurlwidth: '2400', maxlag: '5', origin: '*',
   });
   const res = await getWithRetry(`${COMMONS_API}?${q}`);
   if (!res?.ok) return null;
@@ -128,6 +158,38 @@ async function imageFromHtml(sourceUrl: string): Promise<string | null> {
   return resolved;
 }
 
+/** Resolve an LOC item/resource page through its supported JSON API. */
+async function locImageUrls(sourceUrl: string): Promise<string[]> {
+  const parsed = new URL(sourceUrl);
+  if (!parsed.host.toLowerCase().endsWith('loc.gov')) return [];
+  parsed.search = '';
+  parsed.searchParams.set('fo', 'json');
+  parsed.searchParams.set('at', 'resources');
+  const res = await getWithRetry(parsed.href);
+  if (!res?.ok || !responseType(res).includes('json')) return [];
+  const data = await res.json() as unknown;
+  const found: string[] = [];
+  const walk = (value: unknown): void => {
+    if (typeof value === 'string') {
+      const absolute = value.startsWith('//') ? `https:${value}` : value;
+      try {
+        const url = new URL(absolute);
+        if (url.host.toLowerCase().endsWith('loc.gov') && /(?:\.(?:jpe?g|png|webp)(?:\?|$)|\/default\.jpg(?:\?|$))/i.test(url.href)) found.push(url.href);
+      } catch {}
+      return;
+    }
+    if (Array.isArray(value)) for (const child of value) walk(child);
+    else if (value && typeof value === 'object') for (const child of Object.values(value as Record<string, unknown>)) walk(child);
+  };
+  walk(data);
+  const score = (url: string) =>
+    (/tile\.loc\.gov\/image-services\/iiif/i.test(url) ? 100 : 0) +
+    (/\/full\//i.test(url) ? 20 : 0) +
+    (/default\.jpg/i.test(url) ? 10 : 0) -
+    (/(?:thumb|small|icon)/i.test(url) ? 50 : 0);
+  return [...new Set(found)].sort((a, b) => score(b) - score(a));
+}
+
 async function candidates(entry: ManifestEntry): Promise<{ urls: string[]; license: string }> {
   const source = entry.source_url!;
   const title = commonsTitle(source);
@@ -147,6 +209,12 @@ async function candidates(entry: ManifestEntry): Promise<{ urls: string[]; licen
     urls.push(`https://commons.wikimedia.org/wiki/Special:Redirect/file/${encodeURIComponent(title)}?width=2400`);
   } else if (/\.(?:jpe?g|png|webp|tiff?)(?:\?|$)/i.test(source)) {
     urls.push(source);
+  } else if (new URL(source).host.toLowerCase().endsWith('loc.gov')) {
+    const resolved = await locImageUrls(source);
+    if (resolved.length) {
+      console.log(`    ... LOC API resolved ${resolved.length} image derivative(s)`);
+      urls.push(...resolved);
+    }
   } else {
     const resolved = await imageFromHtml(source);
     if (resolved) urls.push(resolved);
@@ -160,7 +228,7 @@ async function candidates(entry: ManifestEntry): Promise<{ urls: string[]; licen
 async function search(query: string) {
   const q = new URLSearchParams({
     action: 'query', format: 'json', generator: 'search', gsrsearch: `${query} filetype:bitmap`,
-    gsrnamespace: '6', gsrlimit: '10', prop: 'imageinfo', iiprop: 'size|extmetadata', origin: '*',
+    gsrnamespace: '6', gsrlimit: '10', prop: 'imageinfo', iiprop: 'size|extmetadata', maxlag: '5', origin: '*',
   });
   const res = await getWithRetry(`${COMMONS_API}?${q}`);
   if (!res?.ok) throw new Error(`Commons search failed (${res?.status ?? 'network error'})`);

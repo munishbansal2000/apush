@@ -16,6 +16,7 @@ def main():
     ap.add_argument('--model', default='depth-anything/Depth-Anything-V2-Base-hf')
     ap.add_argument('--public', default=os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'public'))
     ap.add_argument('--max-edge', type=int, default=2048)
+    ap.add_argument('--device', choices=('auto', 'cuda', 'cpu', 'mps'), default='auto')
     ap.add_argument('--force', action='store_true')
     args = ap.parse_args()
     try:
@@ -24,7 +25,27 @@ def main():
         from transformers import pipeline
     except ImportError as exc:
         raise SystemExit(f'missing dependency ({exc}); run: pip install -r requirements-depth.txt')
-    device = 'cuda' if torch.cuda.is_available() else 'mps' if torch.backends.mps.is_available() else 'cpu'
+    device = ('cuda' if torch.cuda.is_available() else
+              'mps' if torch.backends.mps.is_available() else 'cpu') \
+        if args.device == 'auto' else args.device
+    if device == 'cuda':
+        if not torch.cuda.is_available():
+            raise SystemExit('CUDA was requested but torch.cuda.is_available() is false')
+        capability = torch.cuda.get_device_capability(0)
+        required_arch = f'sm_{capability[0]}{capability[1]}'
+        built_arches = set(torch.cuda.get_arch_list())
+        if capability >= (12, 0) and required_arch not in built_arches:
+            raise SystemExit(
+                'installed PyTorch cannot execute kernels on this Blackwell GPU\n'
+                f'  torch: {torch.__version__}\n'
+                f'  torch CUDA build: {torch.version.cuda}\n'
+                f'  GPU: {torch.cuda.get_device_name(0)} ({required_arch})\n'
+                f'  wheel architectures: {", ".join(sorted(built_arches)) or "unknown"}\n'
+                'Install the CUDA 12.8 wheel in this environment:\n'
+                f'  "{sys.executable}" -m pip install --upgrade --force-reinstall '
+                'torch torchvision --index-url https://download.pytorch.org/whl/cu128\n'
+                'Or use --device cpu for a slow CPU fallback.'
+            )
     estimator = None
     public = os.path.abspath(args.public)
     done = skipped = 0

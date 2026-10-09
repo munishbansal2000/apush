@@ -12,7 +12,8 @@ Every tool is a CLI under `tools/`, run through an npm script. All of them:
 | `IMAGES_MANIFEST` | `data/images.json` | Image manifest to read/write |
 | `REMOTION_BROWSER` | (Remotion's headless shell) | Path to a Chrome binary when the shell download is unavailable |
 
-Scripts marked **logged** run through `tools/log.sh`: full output, timestamped, goes to
+Scripts marked **logged** run through the cross-platform `tools/log-command.cjs`
+wrapper (`tools/log.sh` remains available for Unix shells): full output, timestamped, goes to
 `out/logs/<name>-<YYYYmmdd-HHMMSS>.log` and `out/logs/<name>-latest.log`; the exit code is
 preserved.
 

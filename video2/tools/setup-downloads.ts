@@ -9,6 +9,7 @@
  *   npx tsx tools/setup-downloads.ts --force    re-download everything
  *   npx tsx tools/setup-downloads.ts --dry-run  list links only
  *   --only fonts|geo|images                     one group
+ *   --only images --lesson u3e1                 only one lesson's images
  */
 import { execFileSync } from 'node:child_process';
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
@@ -18,6 +19,7 @@ import { arg, PUBLIC, ROOT } from './lib';
 const force = process.argv.includes('--force');
 const dry = process.argv.includes('--dry-run');
 const only = arg('only', '');
+const lesson = arg('lesson');
 
 const FONTSOURCE = 'https://cdn.jsdelivr.net/fontsource/fonts';
 export const FONTS: { file: string; url: string }[] = [
@@ -106,7 +108,7 @@ function images() {
   // Use the installed CLI through Node: cross-platform, no shell quoting, and failures
   // propagate so setup cannot claim success after downloading nothing.
   const tsxCli = join(ROOT, 'node_modules', 'tsx', 'dist', 'cli.mjs');
-  execFileSync(process.execPath, [tsxCli, 'tools/fetch-images.ts', '--all', ...(force ? ['--force'] : [])], {
+  execFileSync(process.execPath, [tsxCli, 'tools/fetch-images.ts', '--all', ...(lesson ? ['--lesson', lesson] : []), ...(force ? ['--force'] : [])], {
     cwd: ROOT,
     stdio: 'inherit',
   });

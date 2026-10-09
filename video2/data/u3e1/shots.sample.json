@@ -460,6 +460,24 @@
       "type": "image_move",
       "at": {
         "turn": 0,
+        "phrase": "the Proclamation Line of 1763"
+      },
+      "image": "historic/u3e1/proclamation-line-map.jpg",
+      "from": {
+        "x": 0.48,
+        "y": 0.5,
+        "zoom": 1.0
+      },
+      "to": {
+        "x": 0.53,
+        "y": 0.48,
+        "zoom": 1.12
+      }
+    },
+    {
+      "type": "image_move",
+      "at": {
+        "turn": 0,
         "phrase": "circle the ones"
       },
       "image": "historic/u3e1/paxton-boys.jpg",
@@ -564,6 +582,24 @@
         "x": 0.6,
         "y": 0.72,
         "zoom": 1.9
+      }
+    },
+    {
+      "type": "image_move",
+      "at": {
+        "turn": 1,
+        "phrase": "the books' word is enormous"
+      },
+      "image": "historic/u3e1/french-indian-war.jpg",
+      "from": {
+        "x": 0.46,
+        "y": 0.5,
+        "zoom": 1.0
+      },
+      "to": {
+        "x": 0.56,
+        "y": 0.47,
+        "zoom": 1.06
       }
     },
     {

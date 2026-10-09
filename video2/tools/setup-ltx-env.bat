@@ -28,8 +28,8 @@ if errorlevel 1 (
     exit /b 1
 )
 
-echo [3/4] Verifying torch CUDA ...
-"%VENV_DIR%\Scripts\python.exe" -c "import torch; assert torch.cuda.is_available(), 'CUDA not available'; print('CUDA:', torch.cuda.get_device_name(0))"
+echo [3/4] Verifying torch CUDA kernel execution ...
+"%VENV_DIR%\Scripts\python.exe" -c "import torch; assert torch.cuda.is_available(), 'CUDA not available'; x=torch.zeros(1,device='cuda'); torch.cuda.synchronize(); print('Torch:',torch.__version__,'CUDA:',torch.version.cuda,'GPU:',torch.cuda.get_device_name(0),'arches:',torch.cuda.get_arch_list())"
 if errorlevel 1 (
     echo ERROR: torch CUDA check failed. Check your NVIDIA driver.
     exit /b 1

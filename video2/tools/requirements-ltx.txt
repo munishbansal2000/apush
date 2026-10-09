@@ -1,9 +1,11 @@
 # LTX video generation requirements
 # Install with: pip install -r requirements-ltx.txt
-# CUDA 12.6 builds (supports RTX 5090 sm_120) for RTX 5090. For CPU-only, remove the --index-url lines
+# CUDA 12.8 builds support RTX 5090 / Blackwell sm_120. CUDA 12.6 wheels
+# detect the GPU but contain no compatible kernel image. For CPU-only, remove
+# the --index-url lines
 # and install torch/torchvision from default PyPI.
 
---index-url https://download.pytorch.org/whl/cu126
+--index-url https://download.pytorch.org/whl/cu128
 --extra-index-url https://pypi.org/simple
 
 torch

@@ -1,0 +1,1221 @@
+{
+  "version": 1,
+  "episode": "u3e2",
+  "title": "The Stamp Act Crisis",
+  "scenes": [
+    {
+      "id": "s00",
+      "component": "highlight",
+      "props": {
+        "title": "The Tax That Touched Everything",
+        "body": "Last time: the bill came due. The Sugar Act landed and the smuggling crackdown began. Thirteen colonies got London's message: the free ride is over. Now comes the tax that touched everything — your newspaper, your diploma, even your dice. Three boxes on your sheet: the Stamp Act, virtual representation, and the Declaratory Act. Circle the ones you couldn't explain right now. Eleven and a half minutes, and you'll land all three.",
+        "highlights": [
+          {
+            "text": "the tax that touched everything",
+            "note": "newspaper, diploma, dice"
+          },
+          {
+            "text": "the Stamp Act, virtual representation, and the Declaratory Act",
+            "note": "three boxes"
+          },
+          {
+            "text": "Eleven and a half minutes"
+          }
+        ]
+      },
+      "transition": "cut",
+      "turnIds": [
+        "t00"
+      ],
+      "startSec": 0.25,
+      "endSec": 30.142
+    },
+    {
+      "id": "s01",
+      "component": "ken_burns",
+      "props": {
+        "image": "historic/u3e2/stamp-act-proof-sheet.jpg",
+        "title": "Seventeen Sixty-Five",
+        "caption": "Customs duties at the docks vs direct tax into desk drawer"
+      },
+      "transition": "cut",
+      "turnIds": [
+        "t01"
+      ],
+      "startSec": 30.142,
+      "endSec": 48.730000000000004
+    },
+    {
+      "id": "s02",
+      "component": "quote",
+      "props": {
+        "byline": " Maya",
+        "quote": "Wait — stamps? Like lick-and-stick postage stamps? Were colonists just mailing a lot of letters?"
+      },
+      "transition": "cut",
+      "turnIds": [
+        "t02"
+      ],
+      "startSec": 48.730000000000004,
+      "endSec": 56.830000000000005
+    },
+    {
+      "id": "s03",
+      "component": "ken_burns",
+      "props": {
+        "image": "historic/u3e2/stamp-act-proof-sheet.jpg",
+        "caption": "A mark pressed into the paper — you had to buy that paper from the crown"
+      },
+      "transition": "cut",
+      "turnIds": [
+        "t03"
+      ],
+      "startSec": 56.830000000000005,
+      "endSec": 70.33000000000001
+    },
+    {
+      "id": "s04",
+      "component": "ken_burns",
+      "props": {
+        "image": "historic/u3e2/stamp-act-proof-sheet.jpg",
+        "caption": "Every diploma and newspaper made that crunch, money went to London"
+      },
+      "transition": "cut",
+      "turnIds": [
+        "t04"
+      ],
+      "startSec": 70.33000000000001,
+      "endSec": 85.39000000000001
+    },
+    {
+      "id": "s05",
+      "component": "highlight",
+      "props": {
+        "title": "What It Touched",
+        "body": "Wills, deeds, licenses, newspapers, pamphlets, almanacs, playing cards, dice. It touched almost everyone, and it landed hardest on the people who could complain the loudest: lawyers, printers, merchants. Unlike old duties which claimed to steer trade, this one had a single purpose. Raise revenue.",
+        "highlights": [
+          {
+            "text": "Wills, deeds, licenses, newspapers, pamphlets, almanacs, playing cards, dice",
+            "note": "touched almost everyone"
+          },
+          {
+            "text": "lawyers, printers, merchants",
+            "note": "loudest complainants"
+          },
+          {
+            "text": "Raise revenue",
+            "note": "single purpose"
+          }
+        ]
+      },
+      "transition": "cut",
+      "turnIds": [
+        "t05"
+      ],
+      "startSec": 85.39000000000001,
+      "endSec": 105.68200000000002
+    },
+    {
+      "id": "s06",
+      "component": "quote",
+      "props": {
+        "byline": " Maya",
+        "quote": "So it wasn't the price of the stamp that made people furious."
+      },
+      "transition": "cut",
+      "turnIds": [
+        "t06"
+      ],
+      "startSec": 105.68200000000002,
+      "endSec": 109.84600000000002
+    },
+    {
+      "id": "s07",
+      "component": "compare",
+      "props": {
+        "title": "Broken Arrangement",
+        "left": {
+          "head": "Old Way",
+          "sections": [
+            {
+              "sub": "Self-tax",
+              "points": [
+                "Assemblies voted money",
+                "Over a century of practice"
+              ]
+            }
+          ]
+        },
+        "right": {
+          "head": "Stamp Act",
+          "sections": [
+            {
+              "sub": "New reach",
+              "points": [
+                "Tax on paper on desks",
+                "No assembly in between",
+                "Broke old arrangement"
+              ]
+            }
+          ]
+        }
+      },
+      "transition": "crossfade",
+      "turnIds": [
+        "t07"
+      ],
+      "startSec": 109.84600000000002,
+      "endSec": 126.37000000000002
+    },
+    {
+      "id": "s08",
+      "component": "ken_burns",
+      "props": {
+        "image": "historic/u3e2/pennsylvania-journal-skull-stamp.jpg",
+        "title": "Dead on Arrival",
+        "caption": "Effective date: not one distributor willing to do the job — Sons of Liberty"
+      },
+      "transition": "crossfade",
+      "turnIds": [
+        "t08",
+        "t09",
+        "t10"
+      ],
+      "startSec": 126.37000000000002,
+      "endSec": 140.42200000000005
+    },
+    {
+      "id": "s09",
+      "component": "creative_clip",
+      "props": {
+        "image": "historic/u3e2/pennsylvania-journal-skull-stamp.jpg",
+        "prompt": "A candle flame flickers softly across the skull woodcut while fine dust drifts over the aged newsprint",
+        "title": "Sons Organize",
+        "caption": "Samuel Adams, Boston: speeches, pamphlets, distributors threatened until resigned",
+        "clip": "clips/u3e2/s09.mp4"
+      },
+      "transition": "crossfade",
+      "turnIds": [
+        "t11"
+      ],
+      "startSec": 140.42200000000005,
+      "endSec": 163.49800000000005
+    },
+    {
+      "id": "s10",
+      "component": "compare",
+      "props": {
+        "title": "Prank vs Burns",
+        "left": {
+          "head": "Sounds like prank",
+          "sections": [
+            {
+              "sub": " Maya",
+              "points": [
+                "Sounds like a prank"
+              ]
+            }
+          ]
+        },
+        "right": {
+          "head": "Reality",
+          "sections": [
+            {
+              "sub": "Marcus",
+              "points": [
+                "Tar was often boiling hot",
+                "Left deep burns",
+                "No one thought it funny"
+              ]
+            }
+          ]
+        }
+      },
+      "transition": "crossfade",
+      "turnIds": [
+        "t12",
+        "t13"
+      ],
+      "startSec": 163.49800000000005,
+      "endSec": 176.48200000000006
+    },
+    {
+      "id": "s11",
+      "component": "highlight",
+      "props": {
+        "title": "Legal Case?",
+        "body": "Okay, but a burned house isn't a constitutional argument. Where's the legal case?",
+        "highlights": [
+          {
+            "text": "constitutional argument",
+            "note": "need legal case, not mob"
+          }
+        ]
+      },
+      "transition": "dip",
+      "turnIds": [
+        "t14"
+      ],
+      "startSec": 176.48200000000006,
+      "endSec": 182.83000000000007
+    },
+    {
+      "id": "s12",
+      "component": "ken_burns",
+      "props": {
+        "image": "historic/u3e2/patrick-henry-burgesses.jpg",
+        "title": "Virginia Resolves",
+        "caption": "Young burgess Patrick Henry: only Virginia's own assembly can tax Virginians"
+      },
+      "transition": "cut",
+      "turnIds": [
+        "t15"
+      ],
+      "startSec": 182.83000000000007,
+      "endSec": 205.13800000000006
+    },
+    {
+      "id": "s13",
+      "component": "quote",
+      "props": {
+        "byline": "Trimmed Resolves",
+        "quote": "only their own assembly could tax them."
+      },
+      "transition": "cut",
+      "turnIds": [
+        "t16",
+        "t17"
+      ],
+      "startSec": 205.13800000000006,
+      "endSec": 216.99400000000006
+    },
+    {
+      "id": "s14",
+      "component": "highlight",
+      "props": {
+        "body": "So one colony's assembly says 'only we can tax us.' Did the other colonies just copy the homework?",
+        "highlights": [
+          {
+            "text": "only we can tax us"
+          }
+        ]
+      },
+      "transition": "cut",
+      "turnIds": [
+        "t18"
+      ],
+      "startSec": 216.99400000000006,
+      "endSec": 224.18200000000004
+    },
+    {
+      "id": "s15",
+      "component": "primary_source",
+      "props": {
+        "documentTitle": "Declaration of Rights and Grievances",
+        "authorAndDate": "Stamp Act Congress, October 1765",
+        "documentType": "Resolution",
+        "excerptText": "only our own elected representatives can tax us.",
+        "highlightedPhrase": "only our own elected representatives can tax us",
+        "hippType": "P",
+        "hippExplanation": "Purpose: Congress claims only elected colonial assemblies can consent to taxes, denying Parliament's power to tax, turning complaint into rallying cry."
+      },
+      "transition": "crossfade",
+      "turnIds": [
+        "t19"
+      ],
+      "startSec": 224.18200000000004,
+      "endSec": 246.01000000000005
+    },
+    {
+      "id": "s16",
+      "component": "highlight",
+      "props": {
+        "body": "Box one's taking shape. But speeches and conventions don't scare Parliament. What actually worked?",
+        "highlights": [
+          {
+            "text": "don't scare Parliament"
+          }
+        ]
+      },
+      "transition": "cut",
+      "turnIds": [
+        "t20"
+      ],
+      "startSec": 246.01000000000005,
+      "endSec": 254.13400000000004
+    },
+    {
+      "id": "s17",
+      "component": "ken_burns",
+      "props": {
+        "image": "historic/u3e2/spinning-colonial-kitchen.jpg",
+        "title": "The Boycott",
+        "caption": "Nonimportation: no British goods in. Daughters of Liberty: spinning bees, homespun, herbal teas"
+      },
+      "transition": "cut",
+      "turnIds": [
+        "t21"
+      ],
+      "startSec": 254.13400000000004,
+      "endSec": 274.42600000000004
+    },
+    {
+      "id": "s18",
+      "component": "compare",
+      "props": {
+        "title": "Street vs Wheel",
+        "left": {
+          "head": "Sons",
+          "sections": [
+            {
+              "sub": "Tactic",
+              "points": [
+                "Speeches, pamphlets",
+                "Street actions"
+              ]
+            }
+          ]
+        },
+        "right": {
+          "head": "Daughters",
+          "sections": [
+            {
+              "sub": "Weapon",
+              "points": [
+                "Spinning wheel, shopping list",
+                "Nothing illegal",
+                "Bled merchants dry"
+              ]
+            }
+          ]
+        }
+      },
+      "transition": "crossfade",
+      "turnIds": [
+        "t22",
+        "t23"
+      ],
+      "startSec": 274.42600000000004,
+      "endSec": 293.7700000000001
+    },
+    {
+      "id": "s19",
+      "component": "highlight",
+      "props": {
+        "title": "Exam Tip: Reach Not Rate",
+        "body": "Exam tip for this box. If a prompt asks why the Stamp Act united the colonies, don't write 'the tax was too high.' Write 'the tax touched everyone.' Lawyers, printers, merchants. Every colony, every desk. Reach, not rate.",
+        "highlights": [
+          {
+            "text": "the tax touched everyone",
+            "note": "lawyers, printers, merchants"
+          },
+          {
+            "text": "Reach, not rate",
+            "note": "key distinction"
+          }
+        ]
+      },
+      "transition": "cut",
+      "turnIds": [
+        "t24"
+      ],
+      "startSec": 293.7700000000001,
+      "endSec": 312.7180000000001
+    },
+    {
+      "id": "s20",
+      "component": "causal_chain",
+      "props": {
+        "title": "Why Repeal Happened",
+        "nodes": [
+          "Sons threaten distributors until resign",
+          "Merchants sign nonimportation agreements",
+          "British merchants bleed from boycott",
+          "London merchants lobby Parliament for repeal"
+        ]
+      },
+      "transition": "crossfade",
+      "turnIds": [
+        "t25",
+        "t26"
+      ],
+      "startSec": 312.7180000000001,
+      "endSec": 328.94200000000006
+    },
+    {
+      "id": "s21",
+      "component": "highlight",
+      "props": {
+        "body": "Your turn. The boycott is biting, and British merchants are losing money fast. Parliament hears two groups: colonists three thousand miles away who can't vote, and London merchants who can walk into Parliament's lobby any afternoon. Who does Parliament listen to?",
+        "highlights": [
+          {
+            "text": "three thousand miles away who can't vote"
+          },
+          {
+            "text": "walk into Parliament's lobby any afternoon"
+          }
+        ]
+      },
+      "transition": "cut",
+      "turnIds": [
+        "t27"
+      ],
+      "startSec": 328.94200000000006,
+      "endSec": 346.66600000000005
+    },
+    {
+      "id": "s22",
+      "component": "ken_burns",
+      "props": {
+        "image": "historic/u3e2/spinning-colonial-kitchen.jpg",
+        "title": "Pause"
+      },
+      "transition": "dip",
+      "turnIds": [
+        "t28"
+      ],
+      "startSec": 346.66600000000005,
+      "endSec": 355.84600000000006
+    },
+    {
+      "id": "s23",
+      "component": "highlight",
+      "props": {
+        "body": "The merchants. Follow the money Parliament can hear. The boycott didn't just starve the treasury. It recruited London's own businessmen to the colonial cause.",
+        "highlights": [
+          {
+            "text": "Follow the money Parliament can hear"
+          },
+          {
+            "text": "recruited London's own businessmen"
+          }
+        ]
+      },
+      "transition": "cut",
+      "turnIds": [
+        "t29"
+      ],
+      "startSec": 355.84600000000006,
+      "endSec": 367.61800000000005
+    },
+    {
+      "id": "s24",
+      "component": "title",
+      "props": {
+        "kicker": "Box Two",
+        "title": "Virtual Representation",
+        "subline": "Parliament's Answer"
+      },
+      "transition": "dip",
+      "turnIds": [
+        "t30",
+        "t31"
+      ],
+      "startSec": 367.61800000000005,
+      "endSec": 379.52200000000005
+    },
+    {
+      "id": "s25",
+      "component": "ken_burns",
+      "props": {
+        "image": "historic/u3e2/james-otis-rights-colonies.jpg",
+        "caption": "Theory: members represent whole empire, every subject whether voted in London or farmed in Virginia"
+      },
+      "transition": "cut",
+      "turnIds": [
+        "t32"
+      ],
+      "startSec": 379.52200000000005,
+      "endSec": 392.61400000000003
+    },
+    {
+      "id": "s26",
+      "component": "quote",
+      "props": {
+        "byline": "Maya",
+        "quote": "I'm represented by people I've never met, who couldn't find my town on a map, and I can't vote them out?"
+      },
+      "transition": "cut",
+      "turnIds": [
+        "t33"
+      ],
+      "startSec": 392.61400000000003,
+      "endSec": 402.682
+    },
+    {
+      "id": "s27",
+      "component": "compare",
+      "props": {
+        "title": "Two Theories",
+        "left": {
+          "head": "Virtual",
+          "sections": [
+            {
+              "sub": "Parliament line",
+              "points": [
+                "MPs speak for whole empire",
+                "Virtually represented"
+              ]
+            }
+          ]
+        },
+        "right": {
+          "head": "Actual",
+          "sections": [
+            {
+              "sub": "Colonial answer",
+              "points": [
+                "No tax without consent",
+                "Consent = body you elected",
+                "Assemblies taxed a century"
+              ]
+            }
+          ]
+        }
+      },
+      "transition": "crossfade",
+      "turnIds": [
+        "t34"
+      ],
+      "startSec": 402.682,
+      "endSec": 418.87
+    },
+    {
+      "id": "s28",
+      "component": "highlight",
+      "props": {
+        "body": "And they had the receipts. Wasn't that just the old English rule?",
+        "highlights": [
+          {
+            "text": "old English rule"
+          }
+        ]
+      },
+      "transition": "cut",
+      "turnIds": [
+        "t35"
+      ],
+      "startSec": 418.87,
+      "endSec": 423.97
+    },
+    {
+      "id": "s29",
+      "component": "quote",
+      "props": {
+        "byline": "Old precept",
+        "quote": "no Englishman could be compelled to pay taxes without his consent."
+      },
+      "transition": "cut",
+      "turnIds": [
+        "t36"
+      ],
+      "startSec": 423.97,
+      "endSec": 442.10200000000003
+    },
+    {
+      "id": "s30",
+      "component": "highlight",
+      "props": {
+        "body": "So who wrote the famous version? 'Taxation without representation is tyranny.' That was Otis, right?",
+        "highlights": [
+          {
+            "text": "Taxation without representation is tyranny"
+          }
+        ]
+      },
+      "transition": "crossfade",
+      "turnIds": [
+        "t37"
+      ],
+      "startSec": 442.10200000000003,
+      "endSec": 450.538
+    },
+    {
+      "id": "s31",
+      "component": "highlight",
+      "props": {
+        "title": "Otis: Seats Not Independence",
+        "body": "James Otis, in a pamphlet called The Rights of the British Colonies Asserted and Proved, a bestseller of its day. Decades later, John Adams swore he'd heard Otis say that exact line, but nobody swears to the exact words — Adams was remembering it across decades. The idea was Otis's. Otis wasn't arguing for independence. He wanted seats in Parliament, or the colonies taxing themselves. In 1765, almost nobody was arguing for independence.",
+        "highlights": [
+          {
+            "text": "The Rights of the British Colonies Asserted and Proved",
+            "note": "bestseller of its day"
+          },
+          {
+            "text": "wasn't arguing for independence"
+          },
+          {
+            "text": "seats in Parliament, or the colonies taxing themselves"
+          }
+        ]
+      },
+      "transition": "cut",
+      "turnIds": [
+        "t38"
+      ],
+      "startSec": 450.538,
+      "endSec": 481.654
+    },
+    {
+      "id": "s32",
+      "component": "quote",
+      "props": {
+        "byline": "D.C. plates",
+        "quote": "Taxation Without Representation."
+      },
+      "transition": "crossfade",
+      "turnIds": [
+        "t39",
+        "t40",
+        "t41"
+      ],
+      "startSec": 481.654,
+      "endSec": 498.346
+    },
+    {
+      "id": "s33",
+      "component": "highlight",
+      "props": {
+        "title": "Exam Trap",
+        "body": "One more exam note. 'Virtual representation' is Parliament's line, never the colonists'. If you hand it to the wrong side, the whole paragraph falls apart. And the trap here: don't write that the colonists told Parliament it had no power at all. In sixty-five they were denying one power, the power to tax them, while still calling themselves British subjects.",
+        "highlights": [
+          {
+            "text": "Virtual representation is Parliament's line, never the colonists'"
+          },
+          {
+            "text": "denying one power, the power to tax them"
+          },
+          {
+            "text": "still calling themselves British subjects"
+          }
+        ]
+      },
+      "transition": "cut",
+      "turnIds": [
+        "t42"
+      ],
+      "startSec": 498.346,
+      "endSec": 522.2620000000001
+    },
+    {
+      "id": "s34",
+      "component": "ken_burns",
+      "props": {
+        "image": "historic/u3e2/funeral-miss-ame-stamp-repeal.jpg",
+        "caption": "Early sixty-six: Parliament repeals. Grenville gone, Rockingham opposed the tax"
+      },
+      "transition": "cut",
+      "turnIds": [
+        "t43"
+      ],
+      "startSec": 522.2620000000001,
+      "endSec": 535.9060000000001
+    },
+    {
+      "id": "s35",
+      "component": "highlight",
+      "props": {
+        "body": "Checking box one, then. The Stamp Act: first direct tax, stamped paper on everything down to the dice, dead by boycott in sixty-six. Box one, checked.",
+        "highlights": [
+          {
+            "text": "first direct tax"
+          },
+          {
+            "text": "stamped paper on everything down to the dice"
+          },
+          {
+            "text": "dead by boycott in sixty-six"
+          }
+        ]
+      },
+      "transition": "cut",
+      "turnIds": [
+        "t44"
+      ],
+      "startSec": 535.9060000000001,
+      "endSec": 548.182
+    },
+    {
+      "id": "s36",
+      "component": "ken_burns",
+      "props": {
+        "image": "historic/u3e2/funeral-miss-ame-stamp-repeal.jpg",
+        "title": "The Fine Print",
+        "caption": "Repeal linked to Declaratory Act: full power in all cases whatsoever"
+      },
+      "transition": "crossfade",
+      "turnIds": [
+        "t45"
+      ],
+      "startSec": 548.182,
+      "endSec": 560.602
+    },
+    {
+      "id": "s37",
+      "component": "compare",
+      "props": {
+        "title": "Win vs Principle",
+        "left": {
+          "head": "Fight Won",
+          "sections": [
+            {
+              "sub": "Stamp tax",
+              "points": [
+                "Colonists won fight over stamp tax"
+              ]
+            }
+          ]
+        },
+        "right": {
+          "head": "Principle Lost",
+          "sections": [
+            {
+              "sub": "Authority",
+              "points": [
+                "Hadn't gained inch on principle",
+                "Whether Parliament could tax at all"
+              ]
+            }
+          ]
+        }
+      },
+      "transition": "crossfade",
+      "turnIds": [
+        "t46"
+      ],
+      "startSec": 560.602,
+      "endSec": 572.35
+    },
+    {
+      "id": "s38",
+      "component": "creative_clip",
+      "props": {
+        "image": "historic/u3e2/funeral-miss-ame-stamp-repeal.jpg",
+        "prompt": "Paper coffin trembling gently, ink lines shimmering on the cartoon, Thames water rippling, empty warehouse shadows deepening subtly",
+        "title": "Funeral of Miss Ame-Stamp",
+        "caption": "Born 1765 died 1766 — boycott emptied warehouses, sobered the party",
+        "clip": "clips/u3e2/s38.mp4"
+      },
+      "transition": "crossfade",
+      "turnIds": [
+        "t47",
+        "t48"
+      ],
+      "startSec": 572.35,
+      "endSec": 582.334
+    },
+    {
+      "id": "s39",
+      "component": "highlight",
+      "props": {
+        "body": "Your turn. You've just watched Parliament repeal your tax, then declare it can tax you in all cases whatsoever. Do you celebrate the win, or worry about the fine print?",
+        "highlights": [
+          {
+            "text": "in all cases whatsoever"
+          },
+          {
+            "text": "celebrate the win, or worry about the fine print"
+          }
+        ]
+      },
+      "transition": "cut",
+      "turnIds": [
+        "t49"
+      ],
+      "startSec": 582.334,
+      "endSec": 594.034
+    },
+    {
+      "id": "s40",
+      "component": "ken_burns",
+      "props": {
+        "image": "historic/u3e2/funeral-miss-ame-stamp-repeal.jpg",
+        "title": "Pause"
+      },
+      "transition": "dip",
+      "turnIds": [
+        "t50"
+      ],
+      "startSec": 594.034,
+      "endSec": 603.2139999999999
+    },
+    {
+      "id": "s41",
+      "component": "compare",
+      "props": {
+        "title": "Promise and Threat",
+        "left": {
+          "head": "Celebrate Repeal",
+          "sections": [
+            {
+              "sub": "Win",
+              "points": [
+                "Tax gone"
+              ]
+            }
+          ]
+        },
+        "right": {
+          "head": "Read Fine Print",
+          "sections": [
+            {
+              "sub": "Declaratory",
+              "points": [
+                "In all cases whatsoever",
+                "Claiming next tax as right",
+                "Promise and threat same afternoon"
+              ]
+            }
+          ]
+        }
+      },
+      "transition": "crossfade",
+      "turnIds": [
+        "t51"
+      ],
+      "startSec": 603.2139999999999,
+      "endSec": 617.698
+    },
+    {
+      "id": "s42",
+      "component": "causal_chain",
+      "props": {
+        "title": "Two Directions Same Month",
+        "nodes": [
+          "Parliament repeals Stamp Act — tax ends",
+          "Parliament passes Declaratory Act in all cases whatsoever",
+          "Tax ended, claim kept"
+        ]
+      },
+      "transition": "crossfade",
+      "turnIds": [
+        "t52",
+        "t53"
+      ],
+      "startSec": 617.698,
+      "endSec": 634.9540000000001
+    },
+    {
+      "id": "s43",
+      "component": "highlight",
+      "props": {
+        "title": "Three Boxes Final Check",
+        "body": "One last look before the lock. Three boxes, let's land them. One: the Stamp Act. Seventeen sixty-five, first direct tax. Stamped paper on wills, newspapers, dice, the works. Killed by the boycott and the Stamp Act Congress in early sixty-six. And Grenville got replaced by — Rocking...",
+        "highlights": [
+          {
+            "text": "Seventeen sixty-five, first direct tax"
+          },
+          {
+            "text": "wills, newspapers, dice"
+          },
+          {
+            "text": "Killed by the boycott and the Stamp Act Congress in early sixty-six"
+          }
+        ]
+      },
+      "transition": "dip",
+      "turnIds": [
+        "t54"
+      ],
+      "startSec": 634.9540000000001,
+      "endSec": 658.3420000000001
+    },
+    {
+      "id": "s44",
+      "component": "quote",
+      "props": {
+        "byline": "Marcus",
+        "quote": "Rockingham."
+      },
+      "transition": "cut",
+      "turnIds": [
+        "t55",
+        "t56",
+        "t57"
+      ],
+      "startSec": 658.3420000000001,
+      "endSec": 667.8580000000002
+    },
+    {
+      "id": "s45",
+      "component": "compare",
+      "props": {
+        "title": "Box Two Check",
+        "left": {
+          "head": "Virtual",
+          "sections": [
+            {
+              "sub": "Parliament theory",
+              "points": [
+                "Members speak for whole empire",
+                "Virtually represented"
+              ]
+            }
+          ]
+        },
+        "right": {
+          "head": "Actual",
+          "sections": [
+            {
+              "sub": "Colonial answer",
+              "points": [
+                "Only body we elected can tax us",
+                "Otis pamphlet and old rule"
+              ]
+            }
+          ]
+        }
+      },
+      "transition": "crossfade",
+      "turnIds": [
+        "t58"
+      ],
+      "startSec": 667.8580000000002,
+      "endSec": 689.7820000000002
+    },
+    {
+      "id": "s46",
+      "component": "highlight",
+      "props": {
+        "body": "On the sheet. Three: the Declaratory Act. Same month as the repeal, sixty-six. Parliament claims power in all cases whatsoever. The win that wasn't. Box three, checked. All three.",
+        "highlights": [
+          {
+            "text": "in all cases whatsoever"
+          },
+          {
+            "text": "The win that wasn't"
+          },
+          {
+            "text": "All three"
+          }
+        ]
+      },
+      "transition": "cut",
+      "turnIds": [
+        "t59",
+        "t60",
+        "t61"
+      ],
+      "startSec": 689.7820000000002,
+      "endSec": 707.8900000000002
+    },
+    {
+      "id": "s47",
+      "component": "highlight",
+      "props": {
+        "title": "AP Q1",
+        "body": "Three questions, AP-shaped. Say your answer before I give it. One: a stimulus hands you the Stamp Act Congress's Declaration of Rights and Grievances. Only representatives chosen by the colonists can tax them. What principle is the Congress asserting, and what line did Parliament invent to answer it?",
+        "highlights": [
+          {
+            "text": "Only representatives chosen by the colonists can tax them"
+          },
+          {
+            "text": "What principle is the Congress asserting"
+          },
+          {
+            "text": "what line did Parliament invent"
+          }
+        ]
+      },
+      "transition": "crossfade",
+      "turnIds": [
+        "t62"
+      ],
+      "startSec": 707.8900000000002,
+      "endSec": 728.7340000000003
+    },
+    {
+      "id": "s48",
+      "component": "ken_burns",
+      "props": {
+        "image": "historic/u3e2/patrick-henry-burgesses.jpg",
+        "title": "Pause"
+      },
+      "transition": "crossfade",
+      "turnIds": [
+        "t63"
+      ],
+      "startSec": 728.7340000000003,
+      "endSec": 743.9140000000002
+    },
+    {
+      "id": "s49",
+      "component": "highlight",
+      "props": {
+        "title": "A1 Actual Representation",
+        "body": "Actual representation. Taxation needs consent through a body you elected. Twenty-seven delegates from nine colonies drew it up in October sixty-five, right after the Stamp Act, and the logic is that Parliament's virtual representation line was invented to answer this very cry: a London MP who never faced colonial voters can't consent for a Boston printer. The consent has to come from our side.",
+        "highlights": [
+          {
+            "text": "Actual representation"
+          },
+          {
+            "text": "Twenty-seven delegates from nine colonies"
+          },
+          {
+            "text": "October sixty-five"
+          },
+          {
+            "text": "virtual representation line"
+          }
+        ]
+      },
+      "transition": "crossfade",
+      "turnIds": [
+        "t64"
+      ],
+      "startSec": 743.9140000000002,
+      "endSec": 769.6780000000002
+    },
+    {
+      "id": "s50",
+      "component": "quote",
+      "props": {
+        "byline": "Maya",
+        "quote": "Two: was the Stamp Act fight about money?"
+      },
+      "transition": "cut",
+      "turnIds": [
+        "t65"
+      ],
+      "startSec": 769.6780000000002,
+      "endSec": 773.0260000000002
+    },
+    {
+      "id": "s51",
+      "component": "ken_burns",
+      "props": {
+        "image": "historic/u3e2/stamp-act-proof-sheet.jpg",
+        "title": "Pause"
+      },
+      "transition": "crossfade",
+      "turnIds": [
+        "t66"
+      ],
+      "startSec": 773.0260000000002,
+      "endSec": 788.2060000000001
+    },
+    {
+      "id": "s52",
+      "component": "highlight",
+      "props": {
+        "title": "A2 Who Decides",
+        "body": "No. It was about who decides. The Sugar Act had actually lowered a duty and the colonies still protested, and the Stamp Act's opponents aimed their fire at Parliament's authority rather than the price. The slogan put representation first. Nobody marched demanding cheaper stamps.",
+        "highlights": [
+          {
+            "text": "about who decides"
+          },
+          {
+            "text": "Sugar Act had actually lowered a duty"
+          },
+          {
+            "text": "aimed their fire at Parliament's authority"
+          }
+        ]
+      },
+      "transition": "crossfade",
+      "turnIds": [
+        "t67"
+      ],
+      "startSec": 788.2060000000001,
+      "endSec": 807.6100000000001
+    },
+    {
+      "id": "s53",
+      "component": "highlight",
+      "props": {
+        "title": "AP Q3",
+        "body": "Three: a stimulus prints this line from seventeen sixty-six: Parliament asserts its right to bind the colonies 'in all cases whatsoever.' What did this do to the colonists' victory?",
+        "highlights": [
+          {
+            "text": "in all cases whatsoever"
+          },
+          {
+            "text": "What did this do to the colonists' victory"
+          }
+        ]
+      },
+      "transition": "crossfade",
+      "turnIds": [
+        "t68"
+      ],
+      "startSec": 807.6100000000001,
+      "endSec": 819.3820000000002
+    },
+    {
+      "id": "s54",
+      "component": "ken_burns",
+      "props": {
+        "image": "historic/u3e2/funeral-miss-ame-stamp-repeal.jpg",
+        "title": "Pause"
+      },
+      "transition": "crossfade",
+      "turnIds": [
+        "t69"
+      ],
+      "startSec": 819.3820000000002,
+      "endSec": 834.5620000000001
+    },
+    {
+      "id": "s55",
+      "component": "causal_chain",
+      "props": {
+        "title": "Hollowed Victory",
+        "nodes": [
+          "Declaratory Act linked to repeal",
+          "Repeal removed one tax",
+          "Act kept claim to tax at will",
+          "Principle stayed lost — won battle, lost argument"
+        ]
+      },
+      "transition": "crossfade",
+      "turnIds": [
+        "t70"
+      ],
+      "startSec": 834.5620000000001,
+      "endSec": 851.6140000000001
+    },
+    {
+      "id": "s56",
+      "component": "title",
+      "props": {
+        "kicker": "Check Your Boxes",
+        "title": "Boston Punished Next",
+        "subline": "Episode 19: Tea Party to Philadelphia"
+      },
+      "transition": "dip",
+      "turnIds": [
+        "t71"
+      ],
+      "startSec": 851.6140000000001,
+      "endSec": 863.6260000000002
+    },
+    {
+      "id": "s57",
+      "component": "quote",
+      "props": {
+        "byline": "Marcus",
+        "quote": "They killed the tax —"
+      },
+      "transition": "cut",
+      "turnIds": [
+        "t72"
+      ],
+      "startSec": 863.6260000000002,
+      "endSec": 865.8460000000002
+    },
+    {
+      "id": "s58",
+      "component": "quote",
+      "props": {
+        "byline": "Maya",
+        "quote": "— but not the claim."
+      },
+      "transition": "dip",
+      "turnIds": [
+        "t73"
+      ],
+      "startSec": 865.8460000000002,
+      "endSec": 868.6180000000003
+    }
+  ]
+}
