@@ -76,4 +76,18 @@ describe('pipeline audio', () => {
     await runPipeline(fresh.ctx);
     assert.equal(fresh.ttsCalls().length, 0);
   });
+
+  it('timing stage writes per-frame loudness for the heads', async () => {
+    const h = fakeContext({stages: ['audio', 'timing']});
+    atomicJson(join(h.ctx.dataDir, 'turns.json'), {turns: parseTranscript('Maya: Alpha line here.\n[pause 1]\nMarcus: Bravo.')});
+    await runPipeline(h.ctx);
+    const timing = JSON.parse(readFileSync(join(h.ctx.dataDir, 'timing_map.json'), 'utf8'));
+    const levels = JSON.parse(readFileSync(join(h.ctx.dataDir, 'levels.json'), 'utf8')) as Record<string, number[]>;
+    assert.deepEqual(Object.keys(levels).sort(), ['t00', 't02']);
+    for (const id of ['t00', 't02']) {
+      const index = Number(id.slice(1));
+      assert.ok(Math.abs(levels[id].length - timing.durations[index] * 30) <= 2, `${id}: ${levels[id].length} frames for ${timing.durations[index]}s`);
+      assert.ok(levels[id].some(v => v > 0.5), `${id}: a 440 Hz tone should read as loud`);
+    }
+  });
 });

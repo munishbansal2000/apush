@@ -95,3 +95,17 @@ export function listFiles(dir: string, exts: RegExp): string[] {
   walk(dir);
   return out;
 }
+
+/**
+ * Per-frame loudness (0..1) of an audio file, so a speaking head can bounce without decoding audio in the browser.
+ * RMS per frame-sized chunk, mapped from [-50, -10] dBFS.
+ */
+export function audioLevels(file: string, fps: number): number[] {
+  const sr = Number(execFileSync('ffprobe', ['-v', 'error', '-select_streams', 'a:0', '-show_entries', 'stream=sample_rate', '-of', 'csv=p=0', file], { encoding: 'utf8' }).trim());
+  const n = Math.round(sr / fps);
+  const raw = execFileSync('ffmpeg', ['-v', 'error', '-i', file, '-af', `asetnsamples=n=${n}:p=0,astats=metadata=1:reset=1,ametadata=print:key=lavfi.astats.Overall.RMS_level:file=-`, '-f', 'null', '-'], { encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 });
+  return [...raw.matchAll(/RMS_level=(-?[\d.]+|-inf)/g)].map(m => {
+    const db = m[1] === '-inf' ? -90 : Number(m[1]);
+    return Math.round(Math.min(1, Math.max(0, (db + 50) / 40)) * 100) / 100;
+  });
+}

@@ -10,6 +10,8 @@ import {assembleEpisode, buildNarrationTrack} from '../assemble';
 import {planImageRefs} from '../plan-refs';
 import {segmentFingerprint, stillFileName, stillFingerprint, type RenderEnv} from '../render-cache';
 import {imageManifestPathFor, planPathFor} from './direct';
+import {levelsPathFor} from './timing';
+import {wordsPathFor} from './words';
 
 interface LayoutIssue {frame: number; kind: string; id: string; other?: string; detail?: string}
 const layoutIssuesFromLog = (text: string): LayoutIssue[] => {
@@ -77,7 +79,9 @@ export async function remotion(ctx: PipelineContext, turns: PipelineTurn[], timi
   const planPath = planPathFor(ctx);
   if (!existsSync(planPath)) throw new Error(`missing ${planPath}; run direct stage`);
   const plan = readJson<DirectedPlan>(planPath);
-  const inputProps = {episode, plan, turns, timing};
+  const words = existsSync(wordsPathFor(ctx)) ? readJson<Record<string, {w: string; s: number; e: number}[]>>(wordsPathFor(ctx)) : {};
+  const levels = existsSync(levelsPathFor(ctx)) ? readJson<Record<string, number[]>>(levelsPathFor(ctx)) : {};
+  const inputProps = {episode, plan, turns, timing, words, levels};
   const serveUrl = await bundle({entryPoint: join(ROOT, 'src/directed-index.tsx')});
   const browserExecutable = process.env.REMOTION_BROWSER ?? null;
   const composition = await selectComposition({serveUrl, id: 'DirectedEpisode', inputProps, browserExecutable, logLevel: 'error'});
