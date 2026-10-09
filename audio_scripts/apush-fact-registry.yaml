@@ -7440,3 +7440,59 @@ facts:
   tier_note: 'Corrected U7-L8 v3 2026-10-09 (independent repair audit F5 MINOR) — book file grepped for the exact line; v2''s "chain migration" was a misquote of the book''s "chain immigration." U9-L3 v3
     2026-10-09 (repair audit B1): the 1880s draft used "chain migration" for the family-letters mechanism; two targeted searches found no Tier-2 (Britannica/NPS) line for the term, so per the audit fallback
     the draft teaches premium2027 ch10''s exact "chain immigration" instead — pattern left unchanged, no narrowing.'
+- id: F-U6-HF-001
+  topic: WPB conversion — no "car plants became tank plants" image
+  correct: 'premium2027 ch9 (19_Chapter09.xhtml) prints: "In 1942, Roosevelt created the War Production Board, and later the Office of War Mobilization, to oversee the conversion from civilian industry to war production." The books support civilian-to-war conversion generally; the specific "car plants became tank plants" image has no Tier-1 quote — cut from the U6 homefront v2 script, replaced with the book''s general wording.'
+  falsehoods:
+  - car plants became tank plants
+  sources:
+  - prem27
+  tier_note: Cut U6-homefront v2 2026-10-09 (repair audit B2) — unverified specific image; book line grepped 2026-10-09.
+- id: F-U6-HF-002
+  topic: OPA mandate — rationing, not inflation-fighting
+  correct: 'premium2027 ch9 (19_Chapter09.xhtml): "Starting in 1942, the Office of Price Administration began rationing key commodities to civilians, such as gasoline and tires" … "sugar, meat, coffee, lard, butter, and many other items"; "Families received ration books and used their ration stamps." Tier 1 covers rationing only — no mandate to hold prices down or fight inflation. The U6 homefront v2 script teaches rationing/allocation only (dialogue, recap, and self-test model answer all de-inflationed).'
+  falsehoods:
+  - OPA was also holding prices down
+  - holding down prices to fight inflation
+  - real job was economic.{0,20}fight inflation
+  sources:
+  - prem27
+  tier_note: Corrected U6-homefront v2 2026-10-09 (repair audit B3) — book file grepped for "inflation"/OPA 2026-10-09; no price-control mandate line exists in ch9.
+- id: F-U6-HF-003
+  topic: wartime dissent on internment — no "thin record" hedge
+  correct: 'The lesson teaches the verified later verdict: premium2027 ch9 (19_Chapter09.xhtml) — in 1988 the government apologized and paid "$20,000 in reparations to each one"; the federal law acknowledged the relocation was based on "race prejudice, war hysteria, and a failure of political leadership," not national security. The v1 hedge ("Nobody''s fully sure how much quiet dissent there was. The record on that is thin.") was itself unverified — cut; v2 leans on the 1988 findings quote.'
+  falsehoods:
+  - how much quiet dissent there was
+  - the record on that is thin
+  sources:
+  - prem27
+  tier_note: Cut U6-homefront v2 2026-10-09 (repair audit B4).
+- id: F-U6-HF-004
+  topic: Double V attribution — Black newspapers and NAACP, not "the Black press called it"
+  correct: '5steps2024 ch24: "African-American newspapers promoted the Double V campaign, which called for the defeat of Nazism and Japanese imperialism abroad and racial discrimination at home." premium2027 ch9 (19_Chapter09.xhtml): "The National Association for the Advancement of Colored People encouraged African Americans to take part in the ''Double V'' campaign." The U6 homefront v2 script attributes it to Black newspapers + the NAACP; "the Black press called it" was an over-specific misattribution.'
+  falsehoods:
+  - black press called it.{0,30}double v
+  sources:
+  - prem27
+  - 5steps
+  tier_note: Re-attributed U6-homefront v2 2026-10-09 (repair audit B5) — both book lines grepped 2026-10-09.
+- id: F-U6-HF-005
+  topic: Korematsu status — 2018 Court disavowal, not "still on the books as decided"
+  correct: 'Korematsu v. United States (1944) upheld the relocation — premium2027 ch9: "the Supreme Court ruled that the relocation was acceptable on the grounds of national security"; 1988 apology and "$20,000 in reparations to each one"; the 1988 law cited "race prejudice, war hysteria, and a failure of political leadership." In 2018 Trump v. Hawaii formally repudiated it: Chief Justice Roberts, quoting Justice Jackson''s dissent — Korematsu "was gravely wrong the day it was decided, has been overruled in the court of history, and — to be clear — ''has no place in law under the Constitution''" (slip op. at 38). The U6 homefront v2 script teaches the disavowal; the flat "still on the books as decided" is technically true but misleading without it.'
+  falsehoods:
+  - korematsu is still on the books as decided
+  sources:
+  - prem27
+  - web
+  tier_note: Reframed U6-homefront v2 2026-10-09 (repair audit B16) — Tier 1 (prem27 ch9, grepped 2026-10-09) covers 1944/1988 but not the 2018 repudiation; the 2018 quote verified against the opinion text via multiple consistent secondary reports 2026-10-09.
+- id: F-U6-AT-001
+  topic: Princeton ch11 supplement book error — the Manhattan Project did NOT test bombs at Bikini
+  correct: 'Princeton Review APUSH prep ch11 supplement (053_c011_sup.xhtml) prints the exact line: "Based in Los Alamos, New Mexico, a team of more than 100,000 scientists and technicians created and tested nuclear bombs on the Pacific island of Bikini." That is false. The Manhattan Project''s only wartime test was Trinity: the first atomic bomb detonated at 5:29:45 am on July 16, 1945, at the Alamogordo air base in New Mexico (Britannica: "The Trinity test was the detonation of the first atomic bomb, a plutonium implosion device called Gadget, at 5:29:45 am on July 16, 1945, at the Alamogordo air base in New Mexico"). Bikini''s atomic tests were Operation Crossroads — "the world''s first peacetime atomic-weapons test was conducted at Bikini on July 1, 1946" (Britannica) — run by Joint Army/Navy Task Force One after the war, not by the Manhattan Project. The U6 atomic v2 script teaches Trinity at Alamogordo, July 16, 1945, and never repeats the Bikini claim; no dialogue change was needed.'
+  falsehoods:
+  - tested nuclear bombs on the Pacific island of Bikini
+  - manhattan project.{0,40}bikini
+  - bikini.{0,40}manhattan project test
+  sources:
+  - princeton ch11 053_c011_sup.xhtml (book line, verified by grep 2026-10-09)
+  - britannica (Trinity test; Bikini atoll / Operation Crossroads July 1, 1946)
+  tier_note: 'Added U6-atomic v2 2026-10-09 (independent repair audit §7 book-error protocol: exact book quote + Tier-2 confirmation). Auditor-caught; the v1 script never taught the Bikini claim, so the fix is registry-only.'
