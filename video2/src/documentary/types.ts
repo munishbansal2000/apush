@@ -105,7 +105,14 @@ export interface QuestionShot extends ShotBase {
   size?: {width: number; height: number};
 }
 
-export type DocShot = ImageMoveShot | PortraitShot | MapShot | PointShot | ClipShot | QuestionShot;
+/** A custom explainer component (src/components/custom) for one event, played over the whole shot on its default phases. */
+export interface CustomShot extends ShotBase {
+  type: 'custom';
+  /** A name from src/components/custom/catalog.ts. */
+  component: string;
+}
+
+export type DocShot = ImageMoveShot | PortraitShot | MapShot | PointShot | ClipShot | QuestionShot | CustomShot;
 
 /** Year that slams in over whatever shot is playing. */
 export interface YearStamp {text: string; sec: number}

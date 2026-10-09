@@ -35,6 +35,7 @@ almost no text on screen.
 | `point` | Full-bleed dimmed backdrop image + 1–3 bullets on cues | Enumerations, theses, "three reasons" |
 | `question` | Full-screen card for a scripted pause: "Your turn" kicker, the question verbatim from the line before, a countdown ring for the pause; the Episode Sheet steps aside | Every pause of 5s or more (think-pauses and AP practice) |
 | `clip` | LTX motion generated from a real still (static camera, ambient motion only: smoke, water, flags, trees), cropped never stretched to 16:9, looped as a seamless forward/reverse boomerang; falls back to a camera move on the still until generated | 1–2 hero moments per lesson (battles, crowds) |
+| `custom` | A hand-built animated explainer for one event (src/components/custom: Pontiac's forts, the Proclamation line, the Tea Party, Saratoga, Yorktown, the Constitution's branches…), on the same parchment as the maps, one animated beat, only place/unit labels and at most one key number | Up to 2 per lesson, 5–14s, only where the narration covers exactly that event |
 
 ## Questions and pauses (script convention, checked by `tools/audit-scripts.ts`)
 

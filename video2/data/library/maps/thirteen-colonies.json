@@ -1,0 +1,62 @@
+{
+  "id": "map.thirteen-colonies",
+  "name": "The thirteen colonies on the Atlantic coast",
+  "projection": "us",
+  "extent": [
+    [
+      -92,
+      24
+    ],
+    [
+      -62,
+      48
+    ]
+  ],
+  "camera": {
+    "center": [
+      -77,
+      39
+    ],
+    "zoom": 1.15
+  },
+  "labels": [
+    {
+      "text": "Atlantic Ocean",
+      "lonlat": [
+        -68,
+        34
+      ],
+      "style": "ocean"
+    }
+  ],
+  "focus": {
+    "colonies": {
+      "center": [
+        -75.5,
+        40.5
+      ],
+      "zoom": 1.7
+    },
+    "new-england": {
+      "center": [
+        -71.5,
+        43
+      ],
+      "zoom": 2.4
+    },
+    "middle-colonies": {
+      "center": [
+        -75,
+        40.8
+      ],
+      "zoom": 2.4
+    },
+    "southern-colonies": {
+      "center": [
+        -79.5,
+        34.5
+      ],
+      "zoom": 2.0
+    }
+  }
+}

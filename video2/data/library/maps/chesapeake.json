@@ -1,0 +1,48 @@
+{
+  "id": "map.chesapeake",
+  "name": "The Chesapeake Bay and Virginia peninsula",
+  "projection": "us",
+  "extent": [
+    [
+      -79,
+      36
+    ],
+    [
+      -74.5,
+      40.2
+    ]
+  ],
+  "camera": {
+    "center": [
+      -76.6,
+      38
+    ],
+    "zoom": 1.1
+  },
+  "labels": [
+    {
+      "text": "Atlantic Ocean",
+      "lonlat": [
+        -75.0,
+        37.0
+      ],
+      "style": "ocean"
+    }
+  ],
+  "focus": {
+    "yorktown": {
+      "center": [
+        -76.51,
+        37.24
+      ],
+      "zoom": 2.6
+    },
+    "bay-mouth": {
+      "center": [
+        -76.0,
+        37.0
+      ],
+      "zoom": 2.0
+    }
+  }
+}

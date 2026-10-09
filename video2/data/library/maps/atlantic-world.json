@@ -1,0 +1,70 @@
+{
+  "id": "map.atlantic-world",
+  "name": "The British Atlantic: colonies to London",
+  "projection": "world",
+  "extent": [
+    [
+      -100,
+      18
+    ],
+    [
+      25,
+      66
+    ]
+  ],
+  "camera": {
+    "center": [
+      -45,
+      42
+    ],
+    "zoom": 1.05
+  },
+  "labels": [
+    {
+      "text": "Atlantic Ocean",
+      "lonlat": [
+        -38,
+        44
+      ],
+      "style": "ocean"
+    },
+    {
+      "text": "Great Britain",
+      "lonlat": [
+        -2.5,
+        54.2
+      ],
+      "style": "region"
+    }
+  ],
+  "focus": {
+    "colonies": {
+      "center": [
+        -70,
+        41
+      ],
+      "zoom": 1.25
+    },
+    "london": {
+      "center": [
+        -3,
+        51.5
+      ],
+      "zoom": 1.55
+    },
+    "britain": {
+      "center": [
+        -2,
+        52
+      ],
+      "zoom": 2.2
+    },
+    "atlantic": {
+      "center": [
+        -45,
+        42
+      ],
+      "zoom": 1.05
+    }
+  }
+}

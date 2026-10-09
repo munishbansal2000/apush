@@ -1,0 +1,52 @@
+{
+  "id": "map.eastern-frontier-1763",
+  "name": "Eastern North America with the Appalachian crest (table map)",
+  "projection": "us",
+  "extent": [
+    [
+      -95,
+      26
+    ],
+    [
+      -64,
+      49
+    ]
+  ],
+  "camera": {
+    "center": [
+      -80,
+      38.5
+    ],
+    "zoom": 1.2
+  },
+  "tilt": 30,
+  "terrain": {
+    "ridges": [
+      "geo.line.appalachian-crest"
+    ],
+    "rivers": true
+  },
+  "focus": {
+    "frontier": {
+      "center": [
+        -82,
+        39.5
+      ],
+      "zoom": 1.35
+    },
+    "ohio-valley": {
+      "center": [
+        -82,
+        40
+      ],
+      "zoom": 1.9
+    },
+    "great-lakes": {
+      "center": [
+        -83,
+        43.5
+      ],
+      "zoom": 1.8
+    }
+  }
+}

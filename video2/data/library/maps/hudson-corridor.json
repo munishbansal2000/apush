@@ -1,0 +1,45 @@
+{
+  "id": "map.hudson-corridor",
+  "name": "The Champlain-Hudson corridor, Montreal to New York",
+  "projection": "us",
+  "extent": [
+    [
+      -77,
+      40
+    ],
+    [
+      -70.5,
+      46.2
+    ]
+  ],
+  "camera": {
+    "center": [
+      -73.7,
+      43.2
+    ],
+    "zoom": 1.1
+  },
+  "focus": {
+    "lake-champlain": {
+      "center": [
+        -73.3,
+        44.5
+      ],
+      "zoom": 1.8
+    },
+    "saratoga": {
+      "center": [
+        -73.64,
+        43.0
+      ],
+      "zoom": 2.2
+    },
+    "new-york": {
+      "center": [
+        -74.0,
+        40.7
+      ],
+      "zoom": 2.2
+    }
+  }
+}

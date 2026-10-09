@@ -7,7 +7,7 @@
  *   - src/motion/characters.tsx: hex inside a `const COSTUME*` block (costume palette).
  *   - data/*.json is not scanned.
  *
- * Every violation is reported as file:line. src/components + geo is strict; src/motion and
+ * Every violation is reported as file:line. src/components + geo + custom is strict; src/motion and
  * src/scenes are reported as `todo` while those blocks are still migrating (flip STRICT_MOTION).
  * Run: npm test
  */
@@ -38,6 +38,7 @@ const COMPONENT_EXCLUDE = /^(U1E\d+Episode|U2E\d+Episode|U2E5Act1|EpisodeShell|K
 const componentFiles = (): string[] => [
   ...walk(join(ROOT, 'src/components'), /\.tsx$/, false).filter((p) => !COMPONENT_EXCLUDE.test(p.split(sep).pop()!)),
   ...walk(join(ROOT, 'src/components/geo'), /\.tsx?$/, false),
+  ...walk(join(ROOT, 'src/components/custom'), /\.tsx?$/, false),
 ];
 const motionFiles = (): string[] => [
   ...walk(join(ROOT, 'src/motion'), /\.tsx$/, false),

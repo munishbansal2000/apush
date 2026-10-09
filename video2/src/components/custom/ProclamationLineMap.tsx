@@ -1,252 +1,164 @@
-import React from 'react';
-import {useCurrentFrame, useVideoConfig, interpolate, Easing} from 'remotion';
-import {FONT, COLOR, TYPE, RADIUS, alpha} from '../../theme/tokens';
+/**
+ * Proclamation of 1763: a parchment map of eastern North America. The line draws down the Appalachian divide; the
+ * land between it and the Mississippi washes in as the Indian Reserve; then settler dots appear already past the
+ * line (western Pennsylvania, the upper Ohio and Virginia valleys) while the line pulses. Real coastlines, lakes and
+ * the Mississippi (Natural Earth, the same data as the documentary maps), slow push-in. Labels: "Indian Reserve",
+ * "Thirteen Colonies", "Mississippi".
+ *
+ * DEFAULT_PHASES (6-8 s):
+ * - draw     0.00-0.40  the line draws north to south
+ * - reserve  0.35-0.60  the reserve washes in, west of the line to the Mississippi
+ * - settlers 0.60-1.00  settlers appear west of the line; the line pulses
+ */
+import React, {useMemo} from 'react';
+import {Easing, interpolate} from 'remotion';
+import {geoPath} from 'd3-geo';
+import type {FeatureCollection, MultiPolygon} from 'geojson';
+import {feature} from 'topojson-client';
+import type {GeometryCollection, Topology} from 'topojson-specification';
+import landTopo from 'world-atlas/land-50m.json';
+import lakesJson from '../../data/geo/lakes-50m.json';
+import {ringPolygon, riverPaths, usProjection, type LonLat} from '../geo/usGeo';
+import {FONT, TYPE, alpha} from '../../theme/tokens';
+import {CLAMP, PAPER, PaperSheet, paperHalo, usePhases, type CustomProps, type Phase} from './kit';
 
-/** Time-control contract: phases as 0-1 fractions of duration. No hardcoded frames. */
-export interface Phase {name: string; start: number; end: number} // 0-1 fractions of duration
-export interface ProclamationLineMapProps {
-  durationInFrames: number;
-  phases: Phase[];
-}
-
-const DEFAULT_PHASES: Phase[] = [
-  {name: 'setup', start: 0, end: 0.15},
-  {name: 'draw', start: 0.15, end: 0.45},
-  {name: 'settlers', start: 0.45, end: 0.7},
-  {name: 'tension', start: 0.7, end: 1.0},
+export const DEFAULT_PHASES: Phase[] = [
+  {name: 'draw', start: 0, end: 0.4},
+  {name: 'reserve', start: 0.35, end: 0.6},
+  {name: 'settlers', start: 0.6, end: 1.0},
 ];
 
-/** Proclamation Line: along the Appalachian crest, north to south. */
-const APPALACHIAN_CREST: [number, number][] = [
-  [-74.5, 45.0], [-75.5, 43.5], [-77.0, 42.0], [-78.5, 40.5],
-  [-79.8, 39.0], [-81.0, 37.5], [-82.5, 36.0], [-83.5, 34.5],
+export type ProclamationLineMapProps = CustomProps;
+
+const LAND = (() => {
+  const t = landTopo as unknown as Topology<{land: GeometryCollection}>;
+  return feature(t, t.objects.land) as unknown as FeatureCollection<MultiPolygon>;
+})();
+const LAKES = lakesJson as unknown as FeatureCollection<MultiPolygon>;
+
+/**
+ * The line, north to south (approximate). Basis: the proclamation reserves the lands "beyond the heads or sources of
+ * any of the rivers which fall into the Atlantic Ocean from the west and northwest", i.e. the eastern continental
+ * divide (E1 L42: "along the crest of the Appalachians"). It starts where Quebec's 1763 boundary crosses the
+ * St. Lawrence at 45°N and runs through Georgia to the Florida line at about 31°N. The New York stretch was never
+ * surveyed in 1763 and is the least certain.
+ */
+const LINE: LonLat[] = [
+  [-74.7, 45.0], [-75.5, 43.5], [-77.0, 42.2], [-78.0, 41.6], [-78.6, 40.5], [-79.1, 39.6], [-79.6, 38.9],
+  [-80.1, 38.0], [-80.4, 37.3], [-81.2, 36.4], [-82.3, 35.6], [-83.1, 35.0], [-83.9, 34.4], [-84.2, 33.6],
+  [-83.6, 32.3], [-82.6, 30.8],
 ];
 
-/** Simplified eastern seaboard + Gulf coast (lon/lat, north to south). */
-const COASTLINE: [number, number][] = [
-  [-67.0, 45.0], [-68.5, 44.5], [-70.0, 43.9], [-70.8, 43.2],
-  [-71.3, 42.3], [-70.1, 41.8], [-71.0, 41.3], [-71.5, 41.2],
-  [-72.4, 40.9], [-73.9, 40.6], [-73.5, 40.5], [-74.2, 39.5],
-  [-75.0, 38.4], [-75.3, 37.8], [-76.0, 37.0], [-75.9, 36.2],
-  [-75.7, 35.2], [-76.2, 34.6], [-78.5, 33.8], [-79.3, 33.0],
-  [-80.2, 32.4], [-81.0, 31.5], [-81.3, 30.5], [-80.0, 29.0],
-  [-80.3, 27.2], [-80.6, 25.9], [-81.6, 25.9], [-82.4, 27.0],
-  [-82.8, 28.2], [-84.0, 30.0], [-85.0, 29.6], [-86.5, 30.3],
-  [-88.0, 30.2], [-89.2, 29.5], [-90.5, 29.0], [-92.0, 29.5],
-  [-93.8, 29.6],
+/**
+ * Reserve outline: west of the line, north of the Floridas (31°N, 1763), east of the Mississippi (Spanish Louisiana
+ * lay beyond it after 1763), south-west of Quebec (St. Lawrence at 45°N to Lake Nipissing). The Mississippi edge
+ * follows the same points as the documentary's acquisition maps (usGeo MISSISSIPPI); clipped to land on screen.
+ */
+const RESERVE: LonLat[] = [
+  ...LINE,
+  [-91.6, 31.0], [-91.4, 31.9], [-91.1, 33.1], [-90.1, 35.1], [-89.4, 36.6], [-90.2, 38.6], [-91.4, 40.4],
+  [-91.2, 42.7], [-92.0, 44.5], [-93.3, 45.0], [-94.4, 46.4], [-95.2, 47.2], [-95.2, 49.5], [-79.6, 49.5],
+  [-79.6, 46.3],
 ];
 
-/** Colonial cities (lon/lat) for grounding, with per-city label offsets. */
-const CITIES: {name: string; lon: number; lat: number; dx: number; dy: number; anchor: 'start' | 'end'}[] = [
-  {name: 'Boston', lon: -71.0, lat: 42.3, dx: 8, dy: 4, anchor: 'start'},
-  {name: 'New York', lon: -74.0, lat: 40.7, dx: 8, dy: -8, anchor: 'start'},
-  {name: 'Philadelphia', lon: -75.1, lat: 39.9, dx: 8, dy: 16, anchor: 'start'},
-  {name: 'Charleston', lon: -79.9, lat: 32.8, dx: 8, dy: 4, anchor: 'start'},
+/**
+ * Settlers already west of the line in the early 1760s (E1 L54: "Settlers were already west of it"). Basis: the
+ * squatters Bouquet and the Pennsylvania government tried to evict on Redstone Creek and around Fort Pitt (1762-
+ * 1766), the Cheat valley, the Greenbrier settlements, and the Holston valley.
+ */
+const SETTLERS: LonLat[] = [
+  [-80.05, 40.35], [-79.88, 40.02], [-79.85, 39.3], [-80.45, 37.8], [-81.6, 36.85], [-81.95, 36.6],
 ];
 
-/** Settler dots: already west of the line, in the Indian Reserve (lon/lat). */
-const SETTLERS: [number, number][] = [
-  [-88.0, 34.0], [-90.0, 37.0], [-86.5, 38.5], [-92.0, 40.0],
-  [-87.0, 41.0], [-89.0, 43.0], [-94.0, 36.5],
-];
+const EXTENT: [LonLat, LonLat] = [[-93.5, 29.5], [-68.5, 47.5]];
 
-/** Map extent (lon/lat) and equirectangular projection with cos correction. */
-const LON_MIN = -98, LON_MAX = -66, LAT_MIN = 26, LAT_MAX = 48;
-const MEAN_LAT = (LAT_MIN + LAT_MAX) / 2;
-const COS_LAT = Math.cos((MEAN_LAT * Math.PI) / 180);
+export const ProclamationLineMap: React.FC<ProclamationLineMapProps> = ({durationInFrames, phases}) => {
+  const clock = usePhases(phases, DEFAULT_PHASES, durationInFrames);
+  const {u, frame, fps} = clock;
+  const width = u(1280);
+  const height = u(720);
 
-const catmullRom = (pts: [number, number][]): string => {
-  if (pts.length < 2) return '';
-  let d = `M ${pts[0][0].toFixed(1)} ${pts[0][1].toFixed(1)}`;
-  for (let i = 0; i < pts.length - 1; i++) {
-    const p0 = pts[Math.max(0, i - 1)], p1 = pts[i];
-    const p2 = pts[i + 1], p3 = pts[Math.min(pts.length - 1, i + 2)];
-    const c1: [number, number] = [p1[0] + (p2[0] - p0[0]) / 6, p1[1] + (p2[1] - p0[1]) / 6];
-    const c2: [number, number] = [p2[0] - (p3[0] - p1[0]) / 6, p2[1] - (p3[1] - p1[1]) / 6];
-    d += ` C ${c1[0].toFixed(1)} ${c1[1].toFixed(1)}, ${c2[0].toFixed(1)} ${c2[1].toFixed(1)}, ${p2[0].toFixed(1)} ${p2[1].toFixed(1)}`;
-  }
-  return d;
-};
+  const drawT = clock.t('draw');
+  const reserveT = clock.t('reserve');
+  const settlerT = clock.t('settlers');
 
-/** Halo text: ink on a soft paper outline, legible over the map. */
-const Halo: React.FC<{x: number; y: number; size: number; color: string; opacity: number;
-  anchor?: 'start' | 'middle' | 'end'; weight?: number | string; children: React.ReactNode}> =
-  ({x, y, size, color, opacity, anchor = 'middle', weight = 'normal', children}) => (
-    <text x={x} y={y} textAnchor={anchor} fontFamily={FONT.text} fontSize={size}
-      fill={color} fontWeight={weight} opacity={opacity}
-      stroke={COLOR.paper} strokeWidth={size * 0.22} paintOrder="stroke" strokeLinejoin="round">
-      {children}
-    </text>
-  );
+  const geo = useMemo(() => {
+    const proj = usProjection(width, height, EXTENT).clipExtent([[-width * 0.2, -height * 0.2], [width * 1.2, height * 1.2]]);
+    const path = geoPath(proj);
+    return {
+      at: (ll: LonLat): [number, number] => proj(ll) ?? [0, 0],
+      land: path(LAND) ?? '',
+      lakes: path(LAKES) ?? '',
+      reserve: path(ringPolygon(RESERVE)) ?? '',
+      line: path({type: 'LineString', coordinates: LINE}) ?? '',
+      rivers: riverPaths(path, ['Mississippi', 'Ohio']),
+    };
+  }, [width, height]);
 
-export const ProclamationLineMap: React.FC<ProclamationLineMapProps> = ({
-  durationInFrames: propDuration,
-  phases = DEFAULT_PHASES,
-}) => {
-  const frame = useCurrentFrame();
-  const {width, height, durationInFrames: configDuration} = useVideoConfig();
-  const durationInFrames = propDuration ?? configDuration;
-  const total = Math.max(1, durationInFrames);
-  const u = (n: number) => n * (width / 1280);
+  // Slow push toward the line across the whole shot.
+  const D = Math.max(1, clock.durationInFrames);
+  const zoom = interpolate(frame, [0, D], [1, 1.07], {...CLAMP, easing: Easing.inOut(Easing.quad)});
+  const [fx, fy] = geo.at([-80.5, 38.5]);
 
-  /** Find a named phase, falling back to the built-in default if the caller omitted it. */
-  const findPhase = (name: string): Phase =>
-    phases.find(p => p.name === name) ?? DEFAULT_PHASES.find(p => p.name === name)!;
-  /** Local 0-1 progress inside a named phase. */
-  const phaseP = (name: string): number => {
-    const p = findPhase(name);
-    return interpolate(frame, [p.start * total, p.end * total], [0, 1], {
-      extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.inOut(Easing.cubic),
-    });
+  const drawn = Easing.inOut(Easing.cubic)(drawT);
+  const pulse = settlerT > 0 ? 0.5 + 0.5 * Math.sin((frame / fps) * Math.PI * 2) : 0;
+  const halo = paperHalo(u);
+  const label = (text: string, ll: LonLat, opacity: number, size: number, italic = false) => {
+    const [x, y] = geo.at(ll);
+    return (
+      <text x={x} y={y} textAnchor="middle" fill={PAPER.inkSoft} opacity={opacity} fontSize={u(size)} fontFamily={FONT.display}
+        fontWeight={700} fontStyle={italic ? 'italic' : 'normal'} letterSpacing={u(1)} {...halo}>
+        {text}
+      </text>
+    );
   };
 
-  const setupT = phaseP('setup');
-  const drawT = phaseP('draw');
-  const settlerT = phaseP('settlers');
-  const tensionT = phaseP('tension');
-
-  // Fit the extent into the frame, preserving aspect; leave room for title and caption.
-  const pad = u(50), topMargin = u(150), bottomMargin = u(120);
-  const spanX = (LON_MAX - LON_MIN) * COS_LAT, spanY = LAT_MAX - LAT_MIN;
-  const s = Math.min((width - pad * 2) / spanX, (height - topMargin - bottomMargin) / spanY);
-  const ox = (width - spanX * s) / 2;
-  const oy = topMargin + (height - topMargin - bottomMargin - spanY * s) / 2;
-  const X = (lon: number) => ox + (lon - LON_MIN) * COS_LAT * s;
-  const Y = (lat: number) => oy + (LAT_MAX - lat) * s;
-
-  const landPts = COASTLINE.map(([lo, la]) => [X(lo), Y(la)] as [number, number]);
-  const landD = catmullRom(landPts)
-    + ` L ${X(LON_MIN)} ${Y(LAT_MIN)} L ${X(LON_MIN)} ${Y(LAT_MAX)} L ${X(LON_MAX)} ${Y(LAT_MAX)} Z`;
-
-  const linePts = APPALACHIAN_CREST.map(([lo, la]) => [X(lo), Y(la)] as [number, number]);
-  const lineD = catmullRom(linePts);
-
-  // Indian Reserve: everything west of the line within the map extent.
-  // Closes diagonally off the top edge so the line reads as continuing north.
-  const reserveD = catmullRom(linePts)
-    + ` L ${X(LON_MIN)} ${Y(34.5)} L ${X(LON_MIN)} ${Y(LAT_MAX)} Z`;
-
-  const wipeOffset = interpolate(drawT, [0, 1], [100, 0]);
-  const dashOpacity = interpolate(drawT, [0.55, 0.95], [0, 1],
-    {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
-  const wipeOut = interpolate(drawT, [0.9, 1], [1, 0],
-    {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
-
-  const reserveBase = interpolate(drawT, [0.4, 1], [0, 1],
-    {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
-
-  // Pulsing forbidden tint during tension (frame-derived frequency; not a hardcoded frame).
-  const pulse = tensionT * (0.32 + 0.22 * (0.5 + 0.5 * Math.sin((frame / 30) * Math.PI * 2)));
-
-  const mapOpacity = interpolate(setupT, [0, 0.6], [0, 1],
-    {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
-  const titleOpacity = interpolate(setupT, [0.3, 1], [0, 1],
-    {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
-
-  const labelT = (name: string) => interpolate(phaseP(name), [0.5, 1], [0, 1],
-    {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
-
   return (
-    <div style={{width, height, backgroundColor: COLOR.paper, position: 'relative', overflow: 'hidden'}}>
-      <svg width={width} height={height} style={{position: 'absolute'}}>
-        {/* Ocean wash */}
-        <rect width={width} height={height} fill={alpha(COLOR.ocean, 0.35)} />
-        {/* Land */}
-        <g opacity={mapOpacity}>
-          <path d={landD} fill={COLOR.paperDeep} stroke={COLOR.coast} strokeWidth={u(2.5)} strokeLinejoin="round" />
-        </g>
+    <PaperSheet fontFamily={FONT.display}>
+      <svg width={width} height={height} viewBox={`0 0 ${width} ${height}`} style={{position: 'absolute', inset: 0}}>
+        <defs>
+          <clipPath id="plm-land">
+            <path d={geo.land} />
+          </clipPath>
+        </defs>
+        <g transform={`translate(${fx} ${fy}) scale(${zoom}) translate(${-fx} ${-fy})`}>
+          <rect x={-width} y={-height} width={width * 3} height={height * 3} fill={PAPER.water} />
+          <path d={geo.land} fill={PAPER.land} stroke={PAPER.coast} strokeWidth={u(1.6)} strokeLinejoin="round" />
 
-        {/* Indian Reserve: green wash once the line exists, pulsing red forbidden tint in tension */}
-        <g opacity={mapOpacity}>
-          <path d={reserveD} fill={alpha(COLOR.green, 0.2)} opacity={reserveBase * (1 - tensionT)} />
-          <path d={reserveD} fill={COLOR.red} opacity={pulse} />
-        </g>
-
-        {/* The Proclamation Line: wipe-draws down the Appalachians, settles as a dashed line */}
-        <path d={lineD} fill="none" stroke={COLOR.red} strokeWidth={u(4.5)}
-          pathLength={100} strokeDasharray="100" strokeDashoffset={wipeOffset}
-          strokeLinecap="round" opacity={mapOpacity * wipeOut} />
-        <path d={lineD} fill="none" stroke={COLOR.red} strokeWidth={u(4)}
-          pathLength={100} strokeDasharray="5 4" strokeLinecap="round"
-          opacity={mapOpacity * dashOpacity} />
-
-        {/* Settler dots: already there, west of the line */}
-        {SETTLERS.map(([lo, la], i) => {
-          const local = interpolate(settlerT, [i * 0.1, i * 0.1 + 0.3], [0, 1],
-            {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
-          return (
-            <circle key={i} cx={X(lo)} cy={Y(la)} r={u(6) * (0.6 + 0.4 * local)}
-              fill={COLOR.british} stroke={COLOR.paper} strokeWidth={u(1.5)}
-              opacity={mapOpacity * local} />
-          );
-        })}
-
-        {/* Cities */}
-        {CITIES.map(c => (
-          <g key={c.name} opacity={mapOpacity}>
-            <circle cx={X(c.lon)} cy={Y(c.lat)} r={u(3.5)} fill={COLOR.ink} />
-            <text x={X(c.lon) + u(c.dx)} y={Y(c.lat) + u(c.dy)} textAnchor={c.anchor}
-              fontFamily={FONT.ui} fontSize={u(TYPE.town)} fill={COLOR.inkSoft}>{c.name}</text>
+          {/* the Indian Reserve, clipped to land */}
+          <g clipPath="url(#plm-land)">
+            <path d={geo.reserve} fill={alpha(PAPER.gold, 0.32)} opacity={reserveT} />
           </g>
-        ))}
+          <path d={geo.lakes} fill={PAPER.water} stroke={PAPER.coast} strokeWidth={u(1.2)} strokeLinejoin="round" />
+          {geo.rivers.map((r, i) => (
+            <path key={i} d={r.d} fill="none" stroke={PAPER.waterDeep} strokeWidth={u(r.name === 'Mississippi' ? 2.4 : 1.6)} strokeLinecap="round" />
+          ))}
 
-        {/* Map furniture: north arrow */}
-        <g opacity={mapOpacity * 0.8} transform={`translate(${width - u(70)}, ${u(70)})`}>
-          <polygon points={`0,${-u(14)} ${u(7)},${u(8)} 0,${u(3)} ${-u(7)},${u(8)}`}
-            fill={COLOR.ink} />
-          <text y={u(26)} textAnchor="middle" fontFamily={FONT.ui}
-            fontSize={u(TYPE.town)} fill={COLOR.inkSoft}>N</text>
-        </g>
+          {/* the line: draws north to south, then pulses while settlers appear */}
+          {settlerT > 0 && (
+            <path d={geo.line} fill="none" stroke={PAPER.red} strokeWidth={u(10)} strokeLinecap="round" strokeLinejoin="round" opacity={0.25 * pulse * settlerT} />
+          )}
+          <path d={geo.line} fill="none" stroke={PAPER.red} strokeWidth={u(4)} strokeLinecap="round" strokeLinejoin="round"
+            pathLength={1} strokeDasharray="1 1" strokeDashoffset={1 - drawn} opacity={drawT > 0 ? 1 : 0} />
 
-        {/* Labels */}
-        <g opacity={mapOpacity}>
-          <Halo x={X(-77.8)} y={Y(37.3)} size={u(TYPE.flow)} color={COLOR.inkSoft}
-            opacity={labelT('draw')}>The Thirteen Colonies</Halo>
-          <Halo x={X(-93.5)} y={Y(44.5)} size={u(TYPE.flow)} color={COLOR.inkSoft}
-            opacity={labelT('settlers')}>Indian Reserve</Halo>
+          {/* settlers already past the line */}
+          {SETTLERS.map((ll, i) => {
+            const [x, y] = geo.at(ll);
+            const p = interpolate(settlerT, [i * 0.1, i * 0.1 + 0.25], [0, 1], CLAMP);
+            if (p <= 0) return null;
+            return (
+              <g key={i}>
+                {p < 1 && <circle cx={x} cy={y} r={u(4 + 16 * p)} fill="none" stroke={PAPER.red} strokeWidth={u(2)} opacity={1 - p} />}
+                <circle cx={x} cy={y} r={u(4.5) * (0.5 + 0.5 * p)} fill={PAPER.ink} stroke={PAPER.bg} strokeWidth={u(1.2)} opacity={p} />
+              </g>
+            );
+          })}
+
+          {label('Indian Reserve', [-86.0, 38.6], reserveT, TYPE.place)}
+          {label('Thirteen Colonies', [-77.2, 37.4], interpolate(drawT, [0.5, 1], [0, 1], CLAMP), TYPE.label)}
+          {label('Mississippi', [-91.9, 35.6], reserveT, TYPE.small, true)}
         </g>
-        <Halo x={X(-82.6) + u(10)} y={Y(35.3)} size={u(TYPE.place)} color={COLOR.red}
-          anchor="start" weight="bold" opacity={labelT('tension')}>
-          Proclamation Line, 1763
-        </Halo>
-        <Halo x={X(-89)} y={Y(40)} size={u(TYPE.h3)} color={COLOR.red} weight="bold"
-          opacity={labelT('tension')}>No settlement west of here</Halo>
       </svg>
-
-      {/* Document frame */}
-      <div style={{position: 'absolute', inset: u(14), border: `${u(2)} solid ${COLOR.ink}`,
-        borderRadius: RADIUS.md, pointerEvents: 'none', opacity: mapOpacity}} />
-      <div style={{position: 'absolute', inset: u(22), border: `${u(1)} solid ${COLOR.inkSoft}`,
-        borderRadius: RADIUS.sm, pointerEvents: 'none', opacity: mapOpacity}} />
-
-      {/* Title */}
-      <div style={{position: 'absolute', top: u(40), left: u(52), opacity: titleOpacity}}>
-        <div style={{fontFamily: FONT.display, fontSize: u(TYPE.h2), color: COLOR.ink}}>
-          The Proclamation of 1763
-        </div>
-        <div style={{fontFamily: FONT.text, fontSize: u(TYPE.body), color: COLOR.inkSoft, marginTop: u(6)}}>
-          After the Seven Years&rsquo; War, Britain drew a line down the Appalachians
-        </div>
-      </div>
-
-      {/* Colonist anger: the teaching caption */}
-      <div style={{
-        position: 'absolute', left: u(52), right: u(52), bottom: u(48),
-        display: 'flex', justifyContent: 'center', opacity: tensionT, pointerEvents: 'none',
-      }}>
-        <div style={{
-          backgroundColor: COLOR.paper, border: `${u(2)} solid ${COLOR.red}`,
-          borderRadius: RADIUS.md, padding: `${u(12)} ${u(28)}`,
-          boxShadow: '0 6px 18px rgba(20,12,4,0.28)', textAlign: 'center',
-        }}>
-          <div style={{fontFamily: FONT.hand, fontSize: u(TYPE.h3), color: COLOR.red}}>
-            &ldquo;We fought for that land!&rdquo;
-          </div>
-          <div style={{fontFamily: FONT.ui, fontSize: u(TYPE.small), color: COLOR.inkSoft, marginTop: u(4)}}>
-            Colonial reaction — settlers and veterans felt robbed of their prize
-          </div>
-        </div>
-      </div>
-    </div>
+    </PaperSheet>
   );
 };

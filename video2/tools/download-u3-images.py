@@ -66,23 +66,28 @@ def download_one(img, out_dir, last_host_time):
         if not url:
             continue
         out_path = output_path(img_id, url, out_dir)
-        try:
-            wait_for_host(url, last_host_time)
-            req = urllib.request.Request(url, headers={"User-Agent": "APUSH-Educational/1.0"})
-            with urllib.request.urlopen(req, timeout=30) as resp:
-                ctype = resp.headers.get("Content-Type", "")
-                if not ctype.startswith("image/"):
-                    continue  # Not an image, try alt
-                data = resp.read()
-                if len(data) < 50 * 1024:
-                    continue  # Too small (<50KB), likely thumbnail or error page
-                out_path.parent.mkdir(parents=True, exist_ok=True)
-                with open(out_path, "wb") as f:
-                    f.write(data)
-                return f"ok ({url_key}): {img_id} ({len(data)//1024}KB)"
-        except Exception as e:
-            last_error = str(e)[:60]
-            continue  # Try alt_url
+        for _retry in range(3):
+            try:
+                wait_for_host(url, last_host_time)
+                req = urllib.request.Request(url, headers={"User-Agent": "APUSH-Educational/1.0"})
+                with urllib.request.urlopen(req, timeout=30) as resp:
+                    ctype = resp.headers.get("Content-Type", "")
+                    if not ctype.startswith("image/"):
+                        last_error = f"unusable content type {ctype}"
+                        break  # Try the alternate URL; this response will not improve on retry.
+                    data = resp.read()
+                    if len(data) < 50 * 1024:
+                        last_error = f"image too small ({len(data)} bytes)"
+                        break  # Likely a thumbnail or error image; try the alternate URL.
+                    out_path.parent.mkdir(parents=True, exist_ok=True)
+                    with open(out_path, "wb") as f:
+                        f.write(data)
+                    return f"ok ({url_key}): {img_id} ({len(data)//1024}KB)"
+            except Exception as e:
+                last_error = str(e)[:60]
+                # Retry this exact source up to three times before using the
+                # alternate. wait_for_host() paces every actual retry.
+                continue
     
     return f"FAILED: {img_id} ({last_error})"
 

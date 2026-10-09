@@ -1,0 +1,48 @@
+{
+  "id": "map.new-england",
+  "name": "New England and Massachusetts Bay",
+  "projection": "us",
+  "extent": [
+    [
+      -75,
+      40.5
+    ],
+    [
+      -68,
+      46.5
+    ]
+  ],
+  "camera": {
+    "center": [
+      -71.8,
+      43
+    ],
+    "zoom": 1.1
+  },
+  "labels": [
+    {
+      "text": "Atlantic Ocean",
+      "lonlat": [
+        -69.2,
+        41.6
+      ],
+      "style": "ocean"
+    }
+  ],
+  "focus": {
+    "boston": {
+      "center": [
+        -71.06,
+        42.36
+      ],
+      "zoom": 2.6
+    },
+    "massachusetts": {
+      "center": [
+        -71.8,
+        42.3
+      ],
+      "zoom": 1.7
+    }
+  }
+}

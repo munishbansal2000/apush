@@ -1,197 +1,193 @@
 import React from 'react';
-import {useCurrentFrame, useVideoConfig, interpolate, Easing} from 'remotion';
-import {FONT, COLOR, TYPE, RADIUS, alpha} from '../../theme/tokens';
+import {Easing, interpolate} from 'remotion';
+import {FONT, RADIUS, alpha} from '../../theme/tokens';
+import {CLAMP, PAPER, PaperSheet, usePhases, type CustomProps, type Phase} from './kit';
 
-/** Time-control contract: phases as 0-1 fractions of duration. */
-export interface Phase {name: string; start: number; end: number}
-export interface StampActTaxProps {
-  durationInFrames?: number;
-  phases: Phase[];
-}
-
-const DEFAULT_PHASES: Phase[] = [
-  {name: 'setup', start: 0, end: 0.15},
-  {name: 'stamp', start: 0.15, end: 0.55},
-  {name: 'cost', start: 0.55, end: 0.8},
-  {name: 'resolve', start: 0.8, end: 1.0},
+/**
+ * The Stamp Act, 1765 (APUSH Unit 3, u3e2 L8 / L16 / L54): a direct tax that reached every desk.
+ *
+ * Everyday papers and goods land on a parchment desk (newspaper, will, deed, playing cards, dice); a red revenue
+ * stamp slams onto each in turn; then the camera pulls back to reveal desk after desk, every item stamped. The point
+ * is reach, not rate (E2 L54, L140), so there are no prices and no captions.
+ *
+ * DEFAULT_PHASES: setup (items land) / stamp (each item stamped) / reach (pull back: every desk stamped).
+ */
+export const DEFAULT_PHASES: Phase[] = [
+  {name: 'setup', start: 0, end: 0.18},
+  {name: 'stamp', start: 0.18, end: 0.65},
+  {name: 'reach', start: 0.65, end: 1},
 ];
 
-const CL = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
-type ItemKind = 'news' | 'deed' | 'cards' | 'pamphlet' | 'license';
+export type StampActTaxProps = CustomProps;
+
+type ItemKind = 'news' | 'will' | 'deed' | 'cards' | 'dice';
 
 interface DeskItem {
-  name: string; kind: ItemKind;
-  x: number; y: number; // center, fractions of width/height
-  w: number; h: number; // px at 1280x720
+  kind: ItemKind;
+  x: number; y: number; // center, authored 1280x720
+  w: number; h: number; // authored size
   rot: number; // degrees
-  pre: number; post: number; unit: string; // price before/after tax
 }
 
+/** Items the script names (E2 L16: wills, deeds, licenses, newspapers, pamphlets, almanacs, playing cards, dice). */
 const ITEMS: DeskItem[] = [
-  {name: 'Newspaper', kind: 'news', x: 0.14, y: 0.42, w: 250, h: 330, rot: -6, pre: 2, post: 3, unit: 'd'},
-  {name: 'Deed', kind: 'deed', x: 0.33, y: 0.48, w: 240, h: 300, rot: 4, pre: 3, post: 5, unit: 's'},
-  {name: 'Playing cards', kind: 'cards', x: 0.52, y: 0.42, w: 220, h: 280, rot: -4, pre: 1, post: 2, unit: 's'},
-  {name: 'Pamphlet', kind: 'pamphlet', x: 0.70, y: 0.48, w: 220, h: 260, rot: 6, pre: 2, post: 4, unit: 'd'},
-  {name: 'Marriage license', kind: 'license', x: 0.88, y: 0.42, w: 240, h: 300, rot: -5, pre: 5, post: 10, unit: 's'},
+  {kind: 'news', x: 190, y: 330, w: 240, h: 320, rot: -6},
+  {kind: 'will', x: 430, y: 380, w: 220, h: 290, rot: 4},
+  {kind: 'deed', x: 660, y: 320, w: 220, h: 280, rot: -3},
+  {kind: 'cards', x: 880, y: 380, w: 200, h: 250, rot: 5},
+  {kind: 'dice', x: 1090, y: 340, w: 190, h: 190, rot: -4},
 ];
 
-/** Abstract ink lines suggesting printed text (centered on x=0). */
+/** Abstract ink lines suggesting handwriting or print (centered on x=0). */
 function textLines(u: (n: number) => number, y0: number, count: number, gap: number, lw: number) {
   return Array.from({length: count}, (_, i) => (
-    <rect key={i} x={u(-lw / 2)} y={u(y0 + i * gap)} width={u(lw)} height={u(5)} rx={u(2.5)} fill={alpha(COLOR.inkMuted, 0.55)} />
+    <rect key={i} x={u(-lw / 2)} y={u(y0 + i * gap)} width={u(lw * (i % 3 === 2 ? 0.7 : 1))} height={u(5)} rx={u(2.5)} fill={alpha(PAPER.inkSoft, 0.5)} />
   ));
 }
 
-/** Per-item paper decoration, drawn around the item's center. */
-function itemDetail(kind: ItemKind, w: number, h: number, u: (n: number) => number) {
-  switch (kind) {
-    case 'news': return (
-      <g>
-        <rect x={u(-w * 0.4)} y={u(-h / 2 + 20)} width={u(w * 0.8)} height={u(32)} fill={COLOR.ink} />
-        <text x={0} y={u(-h / 2 + 45)} textAnchor="middle" fontFamily={FONT.display} fontSize={u(20)} fill={COLOR.paper}>GAZETTE</text>
-        {textLines(u, -h / 2 + 92, 9, 22, w * 0.8)}
-      </g>);
-    case 'deed': return (
-      <g>
-        <rect x={u(-w * 0.32)} y={u(-h / 2 + 22)} width={u(w * 0.64)} height={u(24)} fill={COLOR.ink} />
-        {textLines(u, -h / 2 + 80, 7, 24, w * 0.72)}
-        <circle cx={u(w / 2 - 52)} cy={u(h / 2 - 52)} r={u(24)} fill={COLOR.redDeep} />
-        <circle cx={u(w / 2 - 52)} cy={u(h / 2 - 52)} r={u(16)} fill="none" stroke={COLOR.gold} strokeWidth={u(2)} />
-      </g>);
-    case 'cards': return (
-      <g>
-        <g transform={`rotate(-9) translate(${u(-58)} ${u(-85)})`}>
-          <rect width={u(116)} height={u(170)} rx={u(8)} fill={COLOR.paper} stroke={COLOR.inkSoft} strokeWidth={u(1.5)} />
-          <path d={`M ${u(58)} ${u(48)} l ${u(16)} ${u(24)} l ${u(-16)} ${u(24)} l ${u(-16)} ${u(-24)} Z`} fill={COLOR.red} />
-          <text x={u(58)} y={u(142)} textAnchor="middle" fontFamily={FONT.display} fontSize={u(34)} fill={COLOR.ink}>A</text>
-        </g>
-        <g transform={`rotate(8) translate(${u(-20)} ${u(-75)})`}>
-          <rect width={u(116)} height={u(170)} rx={u(8)} fill={COLOR.paperDeep} stroke={COLOR.inkSoft} strokeWidth={u(1.5)} />
-          <circle cx={u(58)} cy={u(68)} r={u(22)} fill={COLOR.red} />
-          <text x={u(58)} y={u(142)} textAnchor="middle" fontFamily={FONT.display} fontSize={u(34)} fill={COLOR.ink}>K</text>
-        </g>
-      </g>);
-    case 'pamphlet': return (
-      <g>
-        <rect x={u(-w * 0.42)} y={u(-h * 0.42)} width={u(w * 0.84)} height={u(h * 0.84)} fill="none" stroke={COLOR.inkSoft} strokeWidth={u(2)} />
-        <rect x={u(-w * 0.3)} y={u(-h / 2 + 26)} width={u(w * 0.6)} height={u(22)} fill={COLOR.inkSoft} />
-        {textLines(u, -h / 2 + 82, 6, 24, w * 0.68)}
-      </g>);
-    case 'license': return (
-      <g>
-        {textLines(u, -h / 2 + 40, 6, 26, w * 0.7)}
-        <circle cx={u(-w / 2 + 52)} cy={u(h / 2 - 52)} r={u(22)} fill="none" stroke={COLOR.gold} strokeWidth={u(4)} />
-        <path d={`M ${u(-w * 0.3)} ${u(h / 2 - 46)} c ${u(20)} ${u(-18)} ${u(40)} ${u(10)} ${u(70)} ${u(-8)}`}
-          fill="none" stroke={COLOR.inkSoft} strokeWidth={u(2.5)} strokeLinecap="round" />
-      </g>);
-  }
-}
+const Pip: React.FC<{u: (n: number) => number; x: number; y: number}> = ({u, x, y}) => <circle cx={u(x)} cy={u(y)} r={u(7)} fill={PAPER.ink} />;
 
-/** Red-ink tax seal: double ring, abstract crown, TAX / STAMP ACT lettering. */
-function StampSeal({u}: {u: (n: number) => number}) {
-  const s = u(1);
+/** One die face, authored around its own center. */
+function Die({u, x, y, rot, pips}: {u: (n: number) => number; x: number; y: number; rot: number; pips: [number, number][]}) {
   return (
-    <g>
-      <circle r={36 * s} fill={alpha(COLOR.red, 0.14)} stroke={COLOR.red} strokeWidth={4 * s} />
-      <circle r={29 * s} fill="none" stroke={COLOR.red} strokeWidth={1.8 * s} />
-      <path d={`M ${-15 * s} ${-8 * s} L ${-10 * s} ${-20 * s} L ${-5 * s} ${-11 * s} L 0 ${-22 * s} L ${5 * s} ${-11 * s} L ${10 * s} ${-20 * s} L ${15 * s} ${-8 * s} L ${15 * s} ${-2 * s} L ${-15 * s} ${-2 * s} Z`} fill={COLOR.red} />
-      <text y={14 * s} textAnchor="middle" fontFamily={FONT.display} fontWeight="bold" fontSize={17 * s} fill={COLOR.red}>TAX</text>
-      <text y={25 * s} textAnchor="middle" fontFamily={FONT.ui} fontSize={8.5 * s} letterSpacing={1.5 * s} fill={COLOR.red}>STAMP ACT</text>
+    <g transform={`translate(${u(x)} ${u(y)}) rotate(${rot})`}>
+      <rect x={u(-40)} y={u(-40)} width={u(80)} height={u(80)} rx={u(12)} fill={PAPER.bg} stroke={PAPER.ink} strokeWidth={u(2)} />
+      {pips.map(([px, py], i) => <Pip key={i} u={u} x={px} y={py} />)}
     </g>
   );
 }
 
-export const StampActTax: React.FC<StampActTaxProps> = ({durationInFrames: propDuration, phases = DEFAULT_PHASES}) => {
-  const frame = useCurrentFrame();
-  const {width, height, durationInFrames: configDuration} = useVideoConfig();
-  const durationInFrames = propDuration ?? configDuration;
-  const u = (n: number) => (n * width) / 1280;
-  const dur = Math.max(1, durationInFrames);
-  const getPhase = (name: string): Phase => phases.find((p) => p.name === name) ?? {name, start: 0, end: 1};
-  const phaseT = (name: string) => {
-    const p = getPhase(name);
-    return interpolate(frame, [p.start * dur, p.end * dur], [0, 1], CL);
-  };
-  const setupT = phaseT('setup'), stampT = phaseT('stamp'), costT = phaseT('cost'), resolveT = phaseT('resolve');
+/** Per-item drawing, around the item's center. Papers get a sheet; dice sit on the desk. */
+function itemDetail(kind: ItemKind, w: number, h: number, u: (n: number) => number) {
+  switch (kind) {
+    case 'news': return (
+      <g>
+        <rect x={u(-w * 0.4)} y={u(-h / 2 + 20)} width={u(w * 0.8)} height={u(32)} fill={PAPER.ink} />
+        <text x={0} y={u(-h / 2 + 44)} textAnchor="middle" fontFamily={FONT.display} fontSize={u(19)} fill={PAPER.bg}>GAZETTE</text>
+        {textLines(u, -h / 2 + 76, 10, 20, w * 0.8)}
+      </g>);
+    case 'will': return (
+      <g>
+        {textLines(u, -h / 2 + 40, 8, 24, w * 0.7)}
+        <path d={`M ${u(-w * 0.3)} ${u(h / 2 - 40)} c ${u(20)} ${u(-18)} ${u(40)} ${u(10)} ${u(70)} ${u(-8)}`}
+          fill="none" stroke={PAPER.inkSoft} strokeWidth={u(2.5)} strokeLinecap="round" />
+      </g>);
+    case 'deed': return (
+      <g>
+        <rect x={u(-w * 0.32)} y={u(-h / 2 + 22)} width={u(w * 0.64)} height={u(22)} fill={PAPER.ink} />
+        {textLines(u, -h / 2 + 70, 6, 24, w * 0.72)}
+        <circle cx={u(w / 2 - 46)} cy={u(h / 2 - 46)} r={u(22)} fill={PAPER.red} />
+        <circle cx={u(w / 2 - 46)} cy={u(h / 2 - 46)} r={u(14)} fill="none" stroke={PAPER.gold} strokeWidth={u(2)} />
+      </g>);
+    case 'cards': return (
+      <g>
+        <g transform={`rotate(-9) translate(${u(-58)} ${u(-85)})`}>
+          <rect width={u(116)} height={u(170)} rx={u(8)} fill={PAPER.bg} stroke={PAPER.inkSoft} strokeWidth={u(1.5)} />
+          <path d={`M ${u(58)} ${u(48)} l ${u(16)} ${u(24)} l ${u(-16)} ${u(24)} l ${u(-16)} ${u(-24)} Z`} fill={PAPER.red} />
+          <text x={u(58)} y={u(142)} textAnchor="middle" fontFamily={FONT.display} fontSize={u(34)} fill={PAPER.ink}>A</text>
+        </g>
+        <g transform={`rotate(8) translate(${u(-20)} ${u(-75)})`}>
+          <rect width={u(116)} height={u(170)} rx={u(8)} fill={PAPER.land} stroke={PAPER.inkSoft} strokeWidth={u(1.5)} />
+          <circle cx={u(58)} cy={u(68)} r={u(22)} fill={PAPER.red} />
+          <text x={u(58)} y={u(142)} textAnchor="middle" fontFamily={FONT.display} fontSize={u(34)} fill={PAPER.ink}>K</text>
+        </g>
+      </g>);
+    case 'dice': return (
+      <g>
+        <Die u={u} x={-38} y={10} rot={-10} pips={[[-20, -20], [20, -20], [0, 0], [-20, 20], [20, 20]]} />
+        <Die u={u} x={42} y={-18} rot={12} pips={[[-20, -20], [0, 0], [20, 20]]} />
+      </g>);
+  }
+}
+
+/**
+ * Red revenue stamp: double ring and crown. Basis: the 1765 stamps were embossed or inked marks bearing a crown and
+ * the word AMERICA (E2 L12: "a mark pressed into the paper itself"). No duty value is shown (reach, not rate).
+ */
+function StampSeal({u}: {u: (n: number) => number}) {
+  return (
+    <g>
+      <circle r={u(36)} fill={alpha(PAPER.red, 0.14)} stroke={PAPER.red} strokeWidth={u(4)} />
+      <circle r={u(29)} fill="none" stroke={PAPER.red} strokeWidth={u(1.8)} />
+      <path d={`M ${u(-15)} ${u(-4)} L ${u(-10)} ${u(-16)} L ${u(-5)} ${u(-7)} L 0 ${u(-18)} L ${u(5)} ${u(-7)} L ${u(10)} ${u(-16)} L ${u(15)} ${u(-4)} L ${u(15)} ${u(2)} L ${u(-15)} ${u(2)} Z`} fill={PAPER.red} />
+      <text y={u(18)} textAnchor="middle" fontFamily={FONT.display} fontWeight="bold" fontSize={u(9.5)} letterSpacing={u(1.2)} fill={PAPER.red}>AMERICA</text>
+    </g>
+  );
+}
+
+/** One desk of items; `stampT` 0..1 stamps the items in turn, `enterT` 0..1 lands them. */
+function Desk({u, enterT, stampT}: {u: (n: number) => number; enterT: number; stampT: number}) {
   const n = ITEMS.length;
+  return (
+    <g>
+      {ITEMS.map((it, i) => {
+        const seg: [number, number] = [i / n, (i + 1) / n];
+        const enter = interpolate(enterT, seg, [0, 1], {...CLAMP, easing: Easing.out(Easing.quad)});
+        const slam = interpolate(stampT, seg, [0, 1], CLAMP);
+        const sealScale = interpolate(slam, [0, 0.35], [1.5, 1], {...CLAMP, easing: Easing.out(Easing.back(2))});
+        const sealOpacity = interpolate(slam, [0, 0.12], [0, 1], CLAMP);
+        const sealRot = interpolate(slam, [0, 0.35], [-12, -4], CLAMP);
+        const dip = interpolate(slam, [0.25, 0.4, 0.6], [0, 1, 0], CLAMP);
+        const ring = interpolate(slam, [0.35, 1], [0, 1], CLAMP);
+        const paper = it.kind !== 'dice';
+        return (
+          <g key={it.kind} opacity={enter} transform={`translate(${u(it.x)} ${u(it.y) + (1 - enter) * u(60) + dip * u(12)}) rotate(${it.rot})`}>
+            {paper && (
+              <>
+                <rect x={u(-it.w / 2 + 7)} y={u(-it.h / 2 + 9)} width={u(it.w)} height={u(it.h)} rx={u(RADIUS.md)} fill={alpha(PAPER.ink, 0.2)} />
+                <rect x={u(-it.w / 2)} y={u(-it.h / 2)} width={u(it.w)} height={u(it.h)} rx={u(RADIUS.md)} fill={PAPER.bg} stroke={PAPER.inkSoft} strokeWidth={u(1.5)} />
+              </>
+            )}
+            {itemDetail(it.kind, it.w, it.h, u)}
+            {slam > 0 && (
+              <g transform={`translate(0 ${u(paper ? -10 : 70)}) rotate(${sealRot}) scale(${sealScale})`} opacity={sealOpacity}>
+                <StampSeal u={u} />
+              </g>
+            )}
+            {ring > 0 && ring < 1 && (
+              <circle cy={u(paper ? -10 : 70)} r={u(36) + ring * u(34)} fill="none" stroke={PAPER.red} strokeWidth={u(3)} opacity={(1 - ring) * 0.6} />
+            )}
+          </g>
+        );
+      })}
+    </g>
+  );
+}
 
-  const rendered = ITEMS.map((it, i) => {
-    const seg: [number, number] = [i / n, (i + 1) / n];
-    const enter = interpolate(setupT, seg, [0, 1], {...CL, easing: Easing.out(Easing.quad)});
-    const slam = interpolate(stampT, seg, [0, 1], CL);
-    const sealScale = interpolate(slam, [0, 0.35], [1.5, 1], {...CL, easing: Easing.out(Easing.back(2))});
-    const sealOpacity = interpolate(slam, [0, 0.12], [0, 1], CL);
-    const sealRot = interpolate(slam, [0, 0.35], [-12, -4], CL);
-    const dip = interpolate(slam, [0.25, 0.4, 0.6], [0, 1, 0], CL);
-    const ring = interpolate(slam, [0.35, 1], [0, 1], CL);
-    const tagT = interpolate(costT, seg, [0, 1], CL);
-    const curPrice = Math.round(interpolate(tagT, [0, 1], [it.pre, it.post], CL));
-    const cx = it.x * width, cy = it.y * height + (1 - enter) * u(60) + dip * u(12);
-    return (
-      <g key={it.name} opacity={enter} transform={`translate(${cx} ${cy}) rotate(${it.rot})`}>
-        <rect x={u(-it.w / 2 + 7)} y={u(-it.h / 2 + 9)} width={u(it.w)} height={u(it.h)} rx={u(RADIUS.md)} fill={alpha(COLOR.night, 0.28)} />
-        <rect x={u(-it.w / 2)} y={u(-it.h / 2)} width={u(it.w)} height={u(it.h)} rx={u(RADIUS.md)} fill={COLOR.paper} stroke={COLOR.inkSoft} strokeWidth={u(1.5)} />
-        {itemDetail(it.kind, it.w, it.h, u)}
-        <text y={u(it.h / 2) + u(24)} textAnchor="middle" fontFamily={FONT.ui} fontSize={u(TYPE.small)} fill={COLOR.inkSoft}>{it.name}</text>
-        {slam > 0 && (
-          <g transform={`translate(0 ${u(-10)}) rotate(${sealRot}) scale(${sealScale})`} opacity={sealOpacity}>
-            <StampSeal u={u} />
-          </g>)}
-        {ring > 0 && <circle r={u(36) + ring * u(34)} fill="none" stroke={COLOR.red} strokeWidth={u(3)} opacity={(1 - ring) * 0.6} />}
-        {tagT > 0 && (
-          <g transform={`translate(${u(it.w / 2 - 62)} ${u(it.h / 2 - 52)})`} opacity={tagT}>
-            <rect width={u(124)} height={u(40)} rx={u(RADIUS.sm)} fill={COLOR.paperDeep} stroke={COLOR.ink} strokeWidth={u(1.5)} />
-            <text x={u(62)} y={u(27)} textAnchor="middle" fontFamily={FONT.mono} fontSize={u(19)} fill={COLOR.ink}>
-              {`${it.pre}${it.unit} → ${curPrice}${it.unit}`}
-            </text>
-          </g>)}
-      </g>
-    );
-  });
+/** Neighbouring desks revealed by the pull-back: offsets in authored units, and the order they get stamped. */
+const OTHER_DESKS: {dx: number; dy: number; order: number}[] = [
+  {dx: -1320, dy: 0, order: 0}, {dx: 1320, dy: 0, order: 1}, {dx: 0, dy: -760, order: 2}, {dx: 0, dy: 760, order: 3},
+  {dx: -1320, dy: -760, order: 4}, {dx: 1320, dy: 760, order: 5}, {dx: 1320, dy: -760, order: 6}, {dx: -1320, dy: 760, order: 7},
+];
 
-  // Phase captions (fade in/out across phase boundaries)
-  const capSetup = interpolate(setupT, [0.4, 0.8], [0, 1], CL) * (1 - interpolate(stampT, [0, 0.15], [0, 1], CL));
-  const capStamp = interpolate(stampT, [0.1, 0.3], [0, 1], CL) * (1 - interpolate(stampT, [0.85, 1], [0, 1], CL))
-    * (1 - interpolate(costT, [0, 0.15], [0, 1], CL));
-  const capCost = interpolate(costT, [0.1, 0.3], [0, 1], CL) * (1 - interpolate(resolveT, [0, 0.2], [0, 1], CL));
-  const captions = [
-    {op: capSetup, text: 'Boston, 1765 — paper is part of everyday life'},
-    {op: capStamp, text: 'Parliament decrees: every paper must carry a paid tax stamp'},
-    {op: capCost, text: 'The added cost lands on the colonists'},
-  ];
+export const StampActTax: React.FC<StampActTaxProps> = ({durationInFrames, phases}) => {
+  const {u, t} = usePhases(phases, DEFAULT_PHASES, durationInFrames);
+  const setupT = t('setup');
+  const stampT = t('stamp');
+  const reachT = t('reach');
 
-  const bannerOp = interpolate(resolveT, [0, 0.25], [0, 1], CL);
-  const bannerScale = interpolate(resolveT, [0, 0.35], [0.92, 1], {...CL, easing: Easing.out(Easing.back(1.4))});
+  // Camera: a slow push during setup/stamp, then pull back to roughly 1/3 scale so the neighbouring desks show.
+  const push = 1 + 0.04 * stampT;
+  const pull = interpolate(reachT, [0, 0.7], [1, 0.34], {...CLAMP, easing: Easing.inOut(Easing.cubic)});
+  const scale = push * pull;
 
   return (
-    <div style={{width, height, backgroundColor: COLOR.brown, position: 'relative', overflow: 'hidden'}}>
-      <svg width={width} height={height} style={{position: 'absolute'}}>
-        <defs>
-          <radialGradient id="deskVignette" cx="50%" cy="45%" r="75%">
-            <stop offset="0%" stopColor={alpha(COLOR.night, 0)} />
-            <stop offset="100%" stopColor={alpha(COLOR.night, 0.35)} />
-          </radialGradient>
-        </defs>
-        {[0.15, 0.3, 0.45, 0.6, 0.75, 0.9].map((fy, i) => (
-          <path key={i} fill="none" stroke={alpha(COLOR.ink, 0.14)} strokeWidth={u(2)}
-            d={`M 0 ${height * fy} C ${width * 0.3} ${height * fy + (i % 2 ? 18 : -18)} ${width * 0.7} ${height * fy + (i % 2 ? -18 : 18)} ${width} ${height * fy}`} />
-        ))}
-        {rendered}
-        {resolveT > 0 && <rect width={width} height={height} fill={alpha(COLOR.ink, resolveT * 0.3)} />}
-        {captions.map((c, i) => c.op > 0 && (
-          <text key={i} x={width / 2} y={height - u(44)} textAnchor="middle" fontFamily={FONT.text} fontSize={u(TYPE.body)}
-            fill={COLOR.ink} opacity={c.op} stroke={COLOR.paper} strokeWidth={u(5)} style={{paintOrder: 'stroke'}}>{c.text}</text>
-        ))}
-        {resolveT > 0 && (
-          <g transform={`translate(${width / 2} ${height * 0.5}) scale(${bannerScale})`} opacity={bannerOp}>
-            <rect x={u(-470)} y={u(-132)} width={u(940)} height={u(264)} rx={u(RADIUS.lg)} fill={COLOR.paperDeep} stroke={COLOR.ink} strokeWidth={u(3)} />
-            <rect x={u(-458)} y={u(-120)} width={u(916)} height={u(240)} rx={u(RADIUS.md)} fill="none" stroke={COLOR.inkSoft} strokeWidth={u(1.5)} />
-            <text y={u(-56)} textAnchor="middle" fontFamily={FONT.display} fontSize={u(TYPE.h1)} fill={COLOR.ink}>The Stamp Act, 1765</text>
-            <text y={u(-4)} textAnchor="middle" fontFamily={FONT.text} fontSize={u(TYPE.body)} fill={COLOR.inkSoft}>A tax on every newspaper, deed, card deck, and pamphlet</text>
-            <text y={u(58)} textAnchor="middle" fontFamily={FONT.hand} fontSize={u(30)} fill={COLOR.red}>Colonists: “No taxation without representation”</text>
-          </g>
-        )}
+    <PaperSheet fontFamily={FONT.display}>
+      <svg width="100%" height="100%" viewBox={`0 0 ${u(1280)} ${u(720)}`} style={{position: 'absolute', inset: 0}}>
+        <g transform={`translate(${u(640)} ${u(360)}) scale(${scale}) translate(${u(-640)} ${u(-360)})`}>
+          {/* Desk blotters: the central one, then its neighbours (already laid out, stamped as the camera pulls back). */}
+          {[{dx: 0, dy: 0, order: -1}, ...OTHER_DESKS].map(({dx, dy, order}) => {
+            const enterT = order < 0 ? setupT : 1;
+            const deskStamp = order < 0 ? stampT : interpolate(reachT, [0.15 + order * 0.06, 0.5 + order * 0.06], [0, 1], CLAMP);
+            return (
+              <g key={`${dx},${dy}`} transform={`translate(${u(dx)} ${u(dy)})`} opacity={order < 0 ? 1 : interpolate(reachT, [0, 0.2], [0, 1], CLAMP)}>
+                <rect x={u(30)} y={u(110)} width={u(1220)} height={u(500)} rx={u(RADIUS.lg)} fill={alpha(PAPER.brown, 0.18)} stroke={PAPER.rule} strokeWidth={u(2)} />
+                <Desk u={u} enterT={enterT} stampT={deskStamp} />
+              </g>
+            );
+          })}
+        </g>
       </svg>
-    </div>
+    </PaperSheet>
   );
 };

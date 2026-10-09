@@ -1,0 +1,52 @@
+{
+  "id": "map.north-america-1763",
+  "name": "British North America after 1763: Quebec, the Floridas, the frontier",
+  "projection": "world",
+  "extent": [
+    [
+      -135,
+      18
+    ],
+    [
+      -50,
+      66
+    ]
+  ],
+  "camera": {
+    "center": [
+      -88,
+      44
+    ],
+    "zoom": 1.1
+  },
+  "tilt": 22,
+  "terrain": {
+    "ridges": [
+      "geo.line.appalachian-crest"
+    ],
+    "rivers": true
+  },
+  "focus": {
+    "frontier": {
+      "center": [
+        -84,
+        38
+      ],
+      "zoom": 1.5
+    },
+    "quebec": {
+      "center": [
+        -72,
+        47
+      ],
+      "zoom": 1.6
+    },
+    "florida": {
+      "center": [
+        -82,
+        29
+      ],
+      "zoom": 1.7
+    }
+  }
+}

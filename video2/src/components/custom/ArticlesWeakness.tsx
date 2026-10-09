@@ -1,262 +1,168 @@
+/**
+ * ArticlesWeakness: the Confederation government as one small CONGRESS box on parchment. Three dashed empty slots
+ * pop in around it and each takes a red X as its failure plays: coins thrown at Congress bounce off (no tax), an
+ * order drawn down from Congress fizzles before it lands (no executive), two states' arrows meet at an empty court
+ * slot under a red "?" (no national courts). Fits E6 L23 / L27.
+ *
+ * DEFAULT_PHASES (6-8 s shot): notax 0-0.34, noexec 0.34-0.67, nocourt 0.67-1. Each slot and its X persist once
+ * shown. A missing phase leaves its slot hidden.
+ */
 import React from 'react';
-import {useCurrentFrame, useVideoConfig, interpolate, Easing} from 'remotion';
-import {FONT, COLOR, TYPE, RADIUS, alpha} from '../../theme/tokens';
+import {Easing, interpolate, spring} from 'remotion';
+import {FONT, RADIUS, TYPE, alpha} from '../../theme/tokens';
+import {CLAMP, PAPER, PaperSheet, paperHalo, usePhases, type CustomProps, type Phase} from './kit';
 
-/** Time-control contract: phases as 0-1 fractions of duration. */
-export interface Phase {name: string; start: number; end: number}
-export interface ArticlesWeaknessProps {
-  durationInFrames?: number;
-  phases: Phase[];
-}
+export type ArticlesWeaknessProps = CustomProps;
 
-/** Fallback timing when phase entries are missing. */
-const DEFAULT_PHASES: Phase[] = [
-  {name: 'setup', start: 0, end: 0.15},
-  {name: 'notax', start: 0.15, end: 0.35},
-  {name: 'noexec', start: 0.35, end: 0.55},
-  {name: 'nocourt', start: 0.55, end: 0.75},
-  {name: 'resolve', start: 0.75, end: 1},
+export const DEFAULT_PHASES: Phase[] = [
+  {name: 'notax', start: 0, end: 0.34},
+  {name: 'noexec', start: 0.34, end: 0.67},
+  {name: 'nocourt', start: 0.67, end: 1},
 ];
 
-const CAPTIONS: Record<string, string> = {
-  setup: 'One small box. That was the entire federal government.',
-  notax: 'Congress begs states for money',
-  noexec: 'No president to enforce laws',
-  nocourt: 'No courts to settle disputes',
-};
-
-/** The three missing powers — dashed empty outlines, one per failure phase. */
+// Basis: Articles of Confederation (1781): Congress could requisition but not tax, had no executive and no national
+// judiciary (E6 L23, L27).
+/** The three missing powers, authored at 1280x720. */
 const SLOTS = [
-  {phase: 'notax', label: 'NO POWER TO TAX', fx: 0.2, fy: 0.46, w: 205, h: 100},
-  {phase: 'noexec', label: 'NO EXECUTIVE', fx: 0.5, fy: 0.77, w: 225, h: 92},
-  {phase: 'nocourt', label: 'NO NATIONAL COURTS', fx: 0.8, fy: 0.46, w: 235, h: 100},
+  {phase: 'notax', label: 'NO TAX', x: 256, y: 340, w: 205, h: 100},
+  {phase: 'noexec', label: 'NO EXECUTIVE', x: 640, y: 560, w: 225, h: 92},
+  {phase: 'nocourt', label: 'NO COURTS', x: 1024, y: 340, w: 235, h: 100},
 ] as const;
 
-const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
+const CX = 640;
+const CY = 330;
+const BOX_W = 210;
+const BOX_H = 96;
 
-export const ArticlesWeakness: React.FC<ArticlesWeaknessProps> = ({durationInFrames: propDuration, phases}) => {
-  const frame = useCurrentFrame();
-  const {width, height, durationInFrames: configDuration} = useVideoConfig();
-  const durationInFrames = propDuration ?? configDuration;
-  const u = width / 1280;
+export const ArticlesWeakness: React.FC<ArticlesWeaknessProps> = ({durationInFrames, phases}) => {
+  const clock = usePhases(phases, DEFAULT_PHASES, durationInFrames);
+  const {frame, fps, u, t} = clock;
+  const width = u(1280);
+  const height = u(720);
+  const halo = paperHalo(u);
 
-  const list = phases && phases.length ? phases : DEFAULT_PHASES;
-  const phaseT = (name: string): number => {
-    const p = list.find((q) => q.name === name) ?? {name, start: 0, end: 1};
-    return interpolate(frame, [p.start * durationInFrames, p.end * durationInFrames], [0, 1], clamp);
-  };
+  const nt = t('notax');
+  const nx = t('noexec');
+  const nc = t('nocourt');
+  const sec = frame / fps;
 
-  const st = phaseT('setup');
-  const nt = phaseT('notax');
-  const nx = phaseT('noexec');
-  const nc = phaseT('nocourt');
-  const nr = phaseT('resolve');
-
-  const cxC = width * 0.5;
-  const cyC = height * 0.46;
-  const boxW = 190 * u;
-  const boxH = 96 * u;
-
-  // Congress box entrance + a weak wobble whenever an attempt fails.
-  const boxPop = interpolate(st, [0, 1], [0, 1], {...clamp, easing: Easing.out(Easing.back(1.4))});
+  // Congress is on screen from the first frame; it pops in over the first ~0.5 s.
+  const boxPop = spring({frame, fps, config: {damping: 13, mass: 0.7, stiffness: 140}});
   const failShake = Math.max(
-    interpolate(nt, [0.55, 0.68, 1], [0, 1, 0], clamp),
-    interpolate(nx, [0.5, 0.63, 1], [0, 1, 0], clamp),
-    interpolate(nc, [0.5, 0.63, 1], [0, 1, 0], clamp),
+    interpolate(nt, [0.55, 0.68, 1], [0, 1, 0], CLAMP),
+    interpolate(nx, [0.5, 0.63, 1], [0, 1, 0], CLAMP),
+    interpolate(nc, [0.5, 0.63, 1], [0, 1, 0], CLAMP),
   );
-  const boxX = cxC + failShake * Math.sin(frame * 0.9) * 3 * u;
+  const boxX = CX + failShake * Math.sin(sec * 27) * 3;
 
-  /** Dashed empty slot + red ✗. Same visual grammar for all three failures. */
+  /** Dashed empty slot + red X: the same grammar for all three failures. */
   const slot = (def: (typeof SLOTS)[number], n: number) => {
-    const w = def.w * u;
-    const h = def.h * u;
-    const pop = interpolate(n, [0, 0.18], [0, 1], {...clamp, easing: Easing.out(Easing.back(1.5))});
-    const xPop = interpolate(n, [0.55, 0.75], [0, 1], {...clamp, easing: Easing.out(Easing.back(1.8))});
-    const alert = interpolate(n, [0.3, 0.45], [0, 1], clamp) > 0.5;
-    const s = 44 * u * xPop;
+    if (n <= 0) return null;
+    const pop = interpolate(n, [0, 0.18], [0, 1], {...CLAMP, easing: Easing.out(Easing.back(1.5))});
+    const xPop = interpolate(n, [0.55, 0.75], [0, 1], {...CLAMP, easing: Easing.out(Easing.back(1.8))});
+    const alert = n > 0.4;
+    const s = 44 * xPop;
     return (
-      <g key={def.phase} opacity={pop} transform={`translate(${def.fx * width} ${def.fy * height}) scale(${Math.max(0.001, pop)})`}>
-        <rect x={-w / 2} y={-h / 2} width={w} height={h} rx={RADIUS.md * u}
-          fill={alpha(COLOR.red, alert ? 0.05 : 0)} stroke={alert ? COLOR.red : COLOR.inkMuted}
-          strokeWidth={3 * u} strokeDasharray={`${10 * u} ${8 * u}`} />
+      <g key={def.phase} opacity={Math.min(1, pop)} transform={`translate(${u(def.x)} ${u(def.y)}) scale(${Math.max(0.001, pop)})`}>
+        <rect x={u(-def.w / 2)} y={u(-def.h / 2)} width={u(def.w)} height={u(def.h)} rx={u(RADIUS.md)}
+          fill={alpha(PAPER.red, alert ? 0.06 : 0)} stroke={alert ? PAPER.red : PAPER.muted}
+          strokeWidth={u(3)} strokeDasharray={`${u(10)} ${u(8)}`} />
         <g opacity={xPop}>
-          <line x1={-s} y1={-s} x2={s} y2={s} stroke={COLOR.red} strokeWidth={7 * u} strokeLinecap="round" />
-          <line x1={s} y1={-s} x2={-s} y2={s} stroke={COLOR.red} strokeWidth={7 * u} strokeLinecap="round" />
+          <line x1={u(-s)} y1={u(-s)} x2={u(s)} y2={u(s)} stroke={PAPER.red} strokeWidth={u(7)} strokeLinecap="round" />
+          <line x1={u(s)} y1={u(-s)} x2={u(-s)} y2={u(s)} stroke={PAPER.red} strokeWidth={u(7)} strokeLinecap="round" />
         </g>
-        <text x={0} y={h / 2 - 13 * u} textAnchor="middle" fontFamily={FONT.ui} fontWeight={700}
-          fontSize={TYPE.label * u} letterSpacing={1.5 * u} fill={alert ? COLOR.red : COLOR.inkMuted}>
+        <text x={0} y={u(def.h / 2 + 30)} textAnchor="middle" fontFamily={FONT.display} fontWeight={700}
+          fontSize={u(TYPE.label)} letterSpacing={u(1.5)} fill={alert ? PAPER.red : PAPER.inkSoft} {...halo}>
           {def.label}
         </text>
       </g>
     );
   };
 
-  // notax: coins fly IN toward Congress, bounce off, spin away.
-  const coinX0 = SLOTS[0].fx * width + (SLOTS[0].w / 2) * u + 30 * u;
-  const coinXHit = boxX - boxW / 2 - 18 * u;
-  const coinX = interpolate(nt, [0, 0.55, 1], [coinX0, coinXHit, coinX0 + 34 * u], clamp);
-  const coinArc = interpolate(nt, [0.55, 0.68, 0.8, 1], [0, -16 * u, 8 * u, 0], clamp);
-  const coinSpin = interpolate(nt, [0.55, 1], [0, 300], clamp);
-  const coinOp = interpolate(nt, [0, 0.08, 0.92, 1], [0, 1, 1, 0], clamp);
-  const ripple = interpolate(nt, [0.5, 0.82], [0, 1], clamp);
-  const rippleOp = interpolate(nt, [0.5, 0.82], [0.7, 0], clamp);
+  // notax: coins fly in toward Congress, bounce off, spin away.
+  const coinX0 = SLOTS[0].x + SLOTS[0].w / 2 + 30;
+  const coinXHit = CX - BOX_W / 2 - 18;
+  const coinX = interpolate(nt, [0, 0.55, 1], [coinX0, coinXHit, coinX0 + 34], CLAMP);
+  const coinArc = interpolate(nt, [0.55, 0.68, 0.8, 1], [0, -16, 8, 0], CLAMP);
+  const coinSpin = interpolate(nt, [0.55, 1], [0, 300], CLAMP);
+  const coinOp = nt > 0 ? interpolate(nt, [0, 0.08, 0.92, 1], [0, 1, 1, 0], CLAMP) : 0;
+  const ripple = interpolate(nt, [0.5, 0.82], [0, 1], CLAMP);
+  const rippleOp = interpolate(nt, [0.5, 0.82], [0.7, 0], CLAMP);
 
-  // noexec: the ENFORCE order draws downward, then fizzles into sparks.
-  const drawP = interpolate(nx, [0.05, 0.45], [0, 1], {...clamp, easing: Easing.inOut(Easing.quad)});
-  const execTop = SLOTS[1].fy * height - (SLOTS[1].h / 2) * u;
-  const ordY0 = cyC + boxH / 2 + 10 * u;
-  const ordY1 = execTop - 12 * u;
+  // noexec: the order draws down from Congress, then fizzles into sparks short of the slot.
+  const drawP = interpolate(nx, [0.05, 0.45], [0, 1], {...CLAMP, easing: Easing.inOut(Easing.quad)});
+  const ordY0 = CY + BOX_H / 2 + 10;
+  const ordY1 = SLOTS[1].y - SLOTS[1].h / 2 - 12;
   const ordY = interpolate(drawP, [0, 1], [ordY0, ordY1]);
-  const ordOp = interpolate(nx, [0.5, 0.62, 0.95], [1, 1, 0], clamp);
-  const fzDist = interpolate(nx, [0.55, 1], [0, 46 * u], clamp);
-  const fzOp = interpolate(nx, [0.55, 0.7, 1], [0, 0.9, 0], clamp);
+  const ordOp = nx > 0 ? interpolate(nx, [0.5, 0.62, 0.95], [1, 1, 0], CLAMP) : 0;
+  const fzDist = interpolate(nx, [0.55, 1], [0, 46], CLAMP);
+  const fzOp = interpolate(nx, [0.55, 0.7, 1], [0, 0.9, 0], CLAMP);
 
-  // nocourt: two states' arrows meet at the empty slot — nowhere to be judged.
-  const move = interpolate(nc, [0.05, 0.5], [0, 1], {...clamp, easing: Easing.inOut(Easing.quad)});
-  const courtCx = SLOTS[2].fx * width;
-  const courtHalf = (SLOTS[2].w / 2) * u;
-  const jit = interpolate(nc, [0.5, 1], [0, 1], clamp) * Math.sin(frame * 1.1) * 4 * u;
-  const ax = interpolate(move, [0, 1], [courtCx - courtHalf - 150 * u, courtCx - courtHalf - 26 * u]) + jit;
-  const bx = interpolate(move, [0, 1], [courtCx + courtHalf + 150 * u, courtCx + courtHalf + 26 * u]) - jit;
-  const dispY = height * 0.46;
-  const dispOp = interpolate(nc, [0, 0.08, 0.6, 0.95], [0, 1, 1, 0], clamp);
-  const qOp = interpolate(nc, [0.45, 0.6, 0.85], [0, 1, 0], clamp);
+  // nocourt: two states' arrows meet at the empty slot, with nowhere to be judged.
+  const move = interpolate(nc, [0.05, 0.5], [0, 1], {...CLAMP, easing: Easing.inOut(Easing.quad)});
+  const courtCx = SLOTS[2].x;
+  const courtHalf = SLOTS[2].w / 2;
+  const jit = interpolate(nc, [0.5, 1], [0, 1], CLAMP) * Math.sin(sec * 33) * 4;
+  const ax = interpolate(move, [0, 1], [courtCx - courtHalf - 150, courtCx - courtHalf - 26]) + jit;
+  const bx = interpolate(move, [0, 1], [courtCx + courtHalf + 150, courtCx + courtHalf + 26]) - jit;
+  const dispY = SLOTS[2].y;
+  const dispOp = nc > 0 ? interpolate(nc, [0, 0.08, 0.6, 0.95], [0, 1, 1, 0], CLAMP) : 0;
+  const qOp = interpolate(nc, [0.45, 0.6, 0.85], [0, 1, 0], CLAMP);
 
-  const capOp = (n: number) =>
-    Math.min(interpolate(n, [0, 0.12], [0, 1], clamp), interpolate(n, [0.88, 1], [1, 0], clamp));
-  const resolveOp = interpolate(nr, [0, 0.15], [0, 1], clamp);
-  const shaysOp = interpolate(nr, [0.25, 0.45], [0, 1], clamp);
-
+  /** Arrowhead at authored (x, y) pointing in `dir`. */
   const head = (x: number, y: number, dir: 1 | -1, color: string) => (
-    <polygon points={`${x},${y} ${x - dir * 12 * u},${y - 6.6 * u} ${x - dir * 12 * u},${y + 6.6 * u}`} fill={color} />
+    <polygon points={`${u(x)},${u(y)} ${u(x - dir * 12)},${u(y - 6.6)} ${u(x - dir * 12)},${u(y + 6.6)}`} fill={color} />
   );
 
   return (
-    <svg width={width} height={height} viewBox={`0 0 ${width} ${height}`}>
-      <defs>
-        <linearGradient id="paperGrad" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stopColor="#f7f2e6" />
-          <stop offset="1" stopColor={COLOR.paperDeep} />
-        </linearGradient>
-      </defs>
-      <rect width={width} height={height} fill="url(#paperGrad)" />
-      <rect x={18 * u} y={18 * u} width={width - 36 * u} height={height - 36 * u} fill="none" stroke={COLOR.ink} strokeWidth={3 * u} />
-      <rect x={26 * u} y={26 * u} width={width - 52 * u} height={height - 52 * u} fill="none" stroke={COLOR.inkMuted} strokeWidth={1 * u} />
+    <PaperSheet fontFamily={FONT.text}>
+      <svg width={width} height={height} viewBox={`0 0 ${width} ${height}`} style={{position: 'absolute', inset: 0}}>
+        {/* CONGRESS: the entire federal government, one small box */}
+        <g opacity={Math.min(1, boxPop)} transform={`translate(${u(boxX)} ${u(CY)}) scale(${Math.max(0.001, boxPop)})`}>
+          <rect x={u(-BOX_W / 2)} y={u(-BOX_H / 2)} width={u(BOX_W)} height={u(BOX_H)} rx={u(RADIUS.md)}
+            fill={PAPER.panel} stroke={PAPER.ink} strokeWidth={u(3.5)}
+            style={{filter: `drop-shadow(0 ${u(6)}px ${u(10)}px ${alpha(PAPER.ink, 0.3)})`}} />
+          <text x={0} y={u(12)} textAnchor="middle" fontFamily={FONT.display} fontWeight={700}
+            fontSize={u(34)} letterSpacing={u(3)} fill={PAPER.ink}>
+            CONGRESS
+          </text>
+        </g>
 
-      {/* header */}
-      <rect x={52 * u} y={44 * u} width={262 * u} height={30 * u} rx={RADIUS.pill * u} fill={COLOR.ink} />
-      <text x={183 * u} y={65 * u} textAnchor="middle" fontFamily={FONT.ui} fontWeight={700}
-        fontSize={TYPE.micro * u} letterSpacing={2.5 * u} fill={COLOR.paper}>
-        U3E6 · THE CONFEDERATION ERA
-      </text>
-      <text x={width / 2} y={118 * u} textAnchor="middle" fontFamily={FONT.display} fontWeight={700}
-        fontSize={52 * u} fill={COLOR.ink}>
-        Why the Articles Failed
-      </text>
+        {SLOTS.map((s) => slot(s, t(s.phase)))}
 
-      {/* resolve: faint tethers from Congress to each empty slot */}
-      <g opacity={resolveOp * 0.6}>
-        {SLOTS.map((s) => (
-          <line key={s.phase} x1={cxC} y1={cyC} x2={s.fx * width} y2={s.fy * height}
-            stroke={COLOR.inkMuted} strokeWidth={1.5 * u} strokeDasharray={`${6 * u} ${6 * u}`} />
-        ))}
-      </g>
+        {/* notax: coins bounce off Congress */}
+        <g opacity={coinOp}>
+          <circle cx={u(coinXHit)} cy={u(CY)} r={u(10 + ripple * 34)} fill="none" stroke={PAPER.red} strokeWidth={u(3)} opacity={rippleOp} />
+          {[-24, 0, 24].map((dy) => (
+            <g key={dy} transform={`translate(${u(coinX)} ${u(CY + dy + coinArc)}) rotate(${coinSpin})`}>
+              <circle r={u(15)} fill={PAPER.gold} stroke={PAPER.brown} strokeWidth={u(2.5)} />
+              <circle r={u(9.5)} fill="none" stroke={PAPER.brown} strokeWidth={u(1.2)} />
+            </g>
+          ))}
+        </g>
 
-      {/* CONGRESS — the entire federal government, one small box */}
-      <g opacity={boxPop} transform={`translate(${boxX} ${cyC}) scale(${Math.max(0.001, boxPop)})`}>
-        <rect x={-boxW / 2} y={-boxH / 2} width={boxW} height={boxH} rx={RADIUS.md * u}
-          fill={COLOR.halo} stroke={COLOR.ink} strokeWidth={3.5 * u}
-          style={{filter: `drop-shadow(0 ${6 * u}px ${10 * u}px rgba(20,12,4,0.3))`}} />
-        <text x={0} y={-6 * u} textAnchor="middle" fontFamily={FONT.display} fontWeight={700}
-          fontSize={34 * u} letterSpacing={3 * u} fill={COLOR.ink}>
-          CONGRESS
-        </text>
-        <text x={0} y={24 * u} textAnchor="middle" fontFamily={FONT.text} fontStyle="italic"
-          fontSize={TYPE.small * u} fill={COLOR.inkSoft}>
-          the entire federal government
-        </text>
-      </g>
+        {/* noexec: the order fizzles before it reaches the slot */}
+        <g opacity={ordOp}>
+          <line x1={u(CX)} y1={u(ordY0)} x2={u(CX)} y2={u(ordY)} stroke={PAPER.ink} strokeWidth={u(5)} strokeLinecap="round" />
+          <polygon points={`${u(CX)},${u(ordY + 12)} ${u(CX - 8)},${u(ordY - 4)} ${u(CX + 8)},${u(ordY - 4)}`}
+            fill={PAPER.ink} opacity={drawP > 0.02 ? 1 : 0} />
+          {[0, 1, 2, 3, 4, 5].map((i) => {
+            const a = (i / 6) * Math.PI * 2 + 0.5;
+            return <circle key={i} cx={u(CX + Math.cos(a) * fzDist)} cy={u(ordY1 + Math.sin(a) * fzDist)} r={u(3.2)} fill={PAPER.red} opacity={fzOp} />;
+          })}
+        </g>
 
-      {/* the three missing-power slots (persist once revealed) */}
-      {slot(SLOTS[0], Math.max(nt, nr))}
-      {slot(SLOTS[1], Math.max(nx, nr))}
-      {slot(SLOTS[2], Math.max(nc, nr))}
-
-      {/* notax: coins bounce off Congress */}
-      <g opacity={coinOp}>
-        <circle cx={coinXHit} cy={cyC} r={10 * u + ripple * 34 * u} fill="none" stroke={COLOR.red} strokeWidth={3 * u} opacity={rippleOp} />
-        {[-24, 0, 24].map((dy) => (
-          <g key={dy} transform={`translate(${coinX} ${cyC + dy * u + coinArc}) rotate(${coinSpin})`}>
-            <circle r={15 * u} fill={COLOR.gold} stroke={COLOR.brown} strokeWidth={2.5 * u} />
-            <circle r={9.5 * u} fill="none" stroke={COLOR.brown} strokeWidth={1.2 * u} />
-            <text x={0} y={6 * u} textAnchor="middle" fontFamily={FONT.ui} fontWeight={800}
-              fontSize={16 * u} fill={COLOR.brown}>$</text>
-          </g>
-        ))}
-        <text x={coinX0 - 40 * u} y={cyC - 52 * u} textAnchor="middle" fontFamily={FONT.hand}
-          fontSize={TYPE.body * u} fill={COLOR.inkSoft} opacity={interpolate(nt, [0, 0.2, 0.5], [0, 1, 0], clamp)}>
-          tax revenue?
-        </text>
-      </g>
-
-      {/* noexec: the order fizzles before reaching the slot */}
-      <g opacity={ordOp}>
-        <line x1={cxC} y1={ordY0} x2={cxC} y2={ordY} stroke={COLOR.blue} strokeWidth={5 * u} strokeLinecap="round" />
-        <polygon points={`${cxC},${ordY + 12 * u} ${cxC - 8 * u},${ordY - 4 * u} ${cxC + 8 * u},${ordY - 4 * u}`}
-          fill={COLOR.blue} opacity={drawP > 0.02 ? 1 : 0} />
-        <text x={cxC + 26 * u} y={(ordY0 + ordY) / 2} fontFamily={FONT.ui} fontWeight={700}
-          fontSize={TYPE.micro * u} letterSpacing={2 * u} fill={COLOR.blue}>
-          ENFORCE
-        </text>
-        {[0, 1, 2, 3, 4, 5].map((i) => {
-          const a = (i / 6) * Math.PI * 2 + 0.5;
-          return <circle key={i} cx={cxC + Math.cos(a) * fzDist} cy={ordY1 + Math.sin(a) * fzDist} r={3.2 * u} fill={COLOR.red} opacity={fzOp} />;
-        })}
-      </g>
-
-      {/* nocourt: STATE A vs STATE B — nowhere to be judged */}
-      <g opacity={dispOp}>
-        <text x={ax - 60 * u} y={dispY - 34 * u} textAnchor="middle" fontFamily={FONT.ui} fontWeight={700}
-          fontSize={TYPE.micro * u} letterSpacing={1.5 * u} fill={COLOR.inkSoft}>STATE A</text>
-        <text x={bx + 60 * u} y={dispY - 34 * u} textAnchor="middle" fontFamily={FONT.ui} fontWeight={700}
-          fontSize={TYPE.micro * u} letterSpacing={1.5 * u} fill={COLOR.inkSoft}>STATE B</text>
-        <line x1={ax - 56 * u} y1={dispY} x2={ax} y2={dispY} stroke={COLOR.brown} strokeWidth={5 * u} strokeLinecap="round" />
-        {head(ax, dispY, 1, COLOR.brown)}
-        <line x1={bx + 56 * u} y1={dispY} x2={bx} y2={dispY} stroke={COLOR.brown} strokeWidth={5 * u} strokeLinecap="round" />
-        {head(bx, dispY, -1, COLOR.brown)}
-        <text x={courtCx} y={dispY - 44 * u} textAnchor="middle" fontFamily={FONT.hand}
-          fontSize={44 * u} fill={COLOR.red} opacity={qOp}>?</text>
-      </g>
-
-      {/* resolve: the summary */}
-      <g opacity={resolveOp}>
-        <text x={width / 2} y={172 * u} textAnchor="middle" fontFamily={FONT.display} fontWeight={700}
-          fontSize={40 * u} fill={COLOR.ink}>
-          A government that can&apos;t tax,
-        </text>
-        <text x={width / 2} y={222 * u} textAnchor="middle" fontFamily={FONT.display} fontWeight={700}
-          fontSize={40 * u} fill={COLOR.red}>
-          enforce, or judge — can&apos;t govern.
-        </text>
-      </g>
-      <text x={width / 2} y={height - 74 * u} textAnchor="middle" fontFamily={FONT.text} fontStyle="italic"
-        fontSize={TYPE.caption * u} fill={COLOR.inkSoft} opacity={shaysOp}>
-        Shays&apos; Rebellion proved it, 1786–87
-      </text>
-
-      {/* phase captions */}
-      {[
-        {key: 'setup', n: st},
-        {key: 'notax', n: nt},
-        {key: 'noexec', n: nx},
-        {key: 'nocourt', n: nc},
-      ].map(({key, n}) => (
-        <text key={key} x={width / 2} y={height - 74 * u} textAnchor="middle" fontFamily={FONT.text}
-          fontStyle="italic" fontSize={TYPE.h3 * u} fill={COLOR.ink} opacity={capOp(n)}>
-          {CAPTIONS[key]}
-        </text>
-      ))}
-    </svg>
+        {/* nocourt: two states, nowhere to be judged */}
+        <g opacity={dispOp}>
+          <line x1={u(ax - 56)} y1={u(dispY)} x2={u(ax)} y2={u(dispY)} stroke={PAPER.inkSoft} strokeWidth={u(5)} strokeLinecap="round" />
+          {head(ax, dispY, 1, PAPER.inkSoft)}
+          <line x1={u(bx + 56)} y1={u(dispY)} x2={u(bx)} y2={u(dispY)} stroke={PAPER.inkSoft} strokeWidth={u(5)} strokeLinecap="round" />
+          {head(bx, dispY, -1, PAPER.inkSoft)}
+          <text x={u(courtCx)} y={u(dispY - 70)} textAnchor="middle" fontFamily={FONT.display} fontWeight={700}
+            fontSize={u(48)} fill={PAPER.red} opacity={qOp} {...halo}>?</text>
+        </g>
+      </svg>
+    </PaperSheet>
   );
 };
 
