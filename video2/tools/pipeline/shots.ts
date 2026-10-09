@@ -49,13 +49,15 @@ export interface ShotPlan {
 
 export interface ResolvedShotPlan {shots: DocShot[]; years: YearStamp[]; boxes: DocBox[]; endSec: number}
 
-export interface ShotRules {minShotSec: number; maxShotSec: number; maxMapSec: number; maxBullets: number; maxBulletWords: number; maxUpscale: number; maxImageUses: number; maxClips: number; questionPauseSec: number; questionOverrunSec: number; minCustomSec: number; maxCustoms: number}
+export interface ShotRules {minShotSec: number; maxShotSec: number; maxMapSec: number; maxBullets: number; maxBulletWords: number; maxUpscale: number; maxImageUses: number; maxClips: number; questionPauseSec: number; questionOverrunSec: number; minCustomSec: number; maxCustoms: number; lengthToleranceSec: number}
 /** maxImageUses is 4 while the asset library is thin (the hand sample uses Grenville 4x); LOOK.md's target is 3. */
 export const LOOK_RULES: ShotRules = {minShotSec: 1.2, maxShotSec: 8, maxMapSec: 14, maxBullets: 3, maxBulletWords: 6, maxUpscale: 1.6, maxImageUses: 4, maxClips: 2,
   /** Pauses this long or longer must be covered by a question card; a card may outlast its pause by questionOverrunSec. */
   questionPauseSec: 5, questionOverrunSec: 6,
   /** Custom explainers are signature moments: long enough to play their beat (up to maxMapSec), a couple per lesson. */
-  minCustomSec: 5, maxCustoms: 2};
+  minCustomSec: 5, maxCustoms: 2,
+  /** A shot may run this much past its max length before it counts as too long (phrase timing is not exact). */
+  lengthToleranceSec: 1};
 
 export interface ResolveOptions {
   /** Pixel sizes of public/ images (data/images.lock.json); a shot on a missing or unsized image is an error. */
@@ -137,7 +139,7 @@ export function resolveShotPlan(input: ShotPlan, turns: PipelineTurn[], timing: 
       const pauseLen = shot.type === 'question' && turns[shot.at.turn]?.kind === 'pause' ? timing.durations[shot.at.turn] : 0;
       if (shot.type === 'custom' && len < rules.minCustomSec) issues.push(`${id}: ${len.toFixed(1)}s is too short for a custom explainer (min ${rules.minCustomSec}s); give it a longer stretch of narration`);
       const max = shot.type === 'map' || shot.type === 'custom' ? rules.maxMapSec : shot.type === 'question' ? pauseLen + rules.questionOverrunSec : rules.maxShotSec;
-      if (len > max + 0.05) issues.push(`${id}: ${len.toFixed(1)}s holds longer than ${max}s on one ${shot.type} shot; cut on another spoken cue`);
+      if (len > max + rules.lengthToleranceSec) issues.push(`${id}: ${len.toFixed(1)}s holds longer than ${max}s on one ${shot.type} shot; cut on another spoken cue`);
     }
     const cue = (where: string, c: Cue) => ('offset' in c ? startSec + c.offset : phrase(`${id} ${where}`, c));
     for (const kind of shot.atmosphere ?? []) if (!(ATMOSPHERES as readonly string[]).includes(kind)) issues.push(`${id}: unknown atmosphere "${kind}" (${ATMOSPHERES.join(', ')})`);
