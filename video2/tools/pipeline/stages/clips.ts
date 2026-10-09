@@ -4,6 +4,7 @@ import {ROOT, ffprobeDuration} from '../../lib';
 import {atomicJson, readJson, sha256, type DirectedPlan} from '../../pipeline-core';
 import type {PipelineContext, Timing} from '../context';
 import {planPathFor} from './direct';
+import {findTool} from '../tools';
 
 /** Generate (or require, with --video-gen none) one LTX clip per creative_clip scene. */
 export function clipsStage(ctx: PipelineContext, timing: Timing): void {
@@ -26,7 +27,7 @@ export function clipsStage(ctx: PipelineContext, timing: Timing): void {
       } else if (current('clips', clipsHash) && jobs.every(scene => existsSync(join(ctx.publicDir, String(scene.props.clip))))) console.log('[clips] checkpoint current');
       else if (dryRun) console.log(`[clips] dry-run: ${jobs.length} LTX job(s)`);
       else {
-        const python = process.env.LTX_PYTHON ?? process.env.FISH_PYTHON ?? 'python';
+        const python = findTool(['python3', 'python'], process.env.LTX_PYTHON ? 'LTX_PYTHON' : 'FISH_PYTHON');
         const generator = process.env.LTX_SCRIPT ?? join(ROOT, 'tools', 'animate_still.py');
         if (!existsSync(generator)) throw new Error(`LTX generator missing: ${generator}`);
         for (const scene of jobs) {

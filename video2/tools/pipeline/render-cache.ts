@@ -32,12 +32,16 @@ function visualInputs(plan: DirectedPlan, index: number, publicDir: string) {
   };
 }
 
-export function segmentFingerprint(plan: DirectedPlan, index: number, range: {from: number; to: number}, env: RenderEnv, publicDir: string): string {
-  return sha256(JSON.stringify({kind: 'segment-v2', ...visualInputs(plan, index, publicDir), range, env}));
+/**
+ * `overlays`: per-turn data drawn over the scene in its frames (caption words, head loudness, turn text) for the
+ * scene's turns, so a words or audio-level change re-renders the segments it shows up in.
+ */
+export function segmentFingerprint(plan: DirectedPlan, index: number, range: {from: number; to: number}, env: RenderEnv, publicDir: string, overlays: unknown = null): string {
+  return sha256(JSON.stringify({kind: 'segment-v2', ...visualInputs(plan, index, publicDir), range, env, overlays}));
 }
 
-export function stillFingerprint(plan: DirectedPlan, index: number, sample: {label: string; frame: number}, env: RenderEnv, publicDir: string): string {
-  return sha256(JSON.stringify({kind: 'still-v2', ...visualInputs(plan, index, publicDir), sample, env}));
+export function stillFingerprint(plan: DirectedPlan, index: number, sample: {label: string; frame: number}, env: RenderEnv, publicDir: string, overlays: unknown = null): string {
+  return sha256(JSON.stringify({kind: 'still-v2', ...visualInputs(plan, index, publicDir), sample, env, overlays}));
 }
 
 /** Stills are stored by content key, so a cache hit can never point at another scene's image. */

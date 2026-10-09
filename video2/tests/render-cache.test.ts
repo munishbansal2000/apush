@@ -58,4 +58,12 @@ describe('render cache keys', () => {
     assert.notEqual(newFiles[1], oldFiles[1]);
     assert.equal(new Set(newFiles).size, newFiles.length);
   });
+
+  it('review fix: caption words and head levels of the scene turns invalidate its segment', () => {
+    const {publicDir, plan} = fixture();
+    const before = segmentFingerprint(plan, 0, range, env, publicDir, [{id: 't00', words: [{w: 'one', s: 0, e: 0.4}], levels: [0.5]}]);
+    const reworded = segmentFingerprint(plan, 0, range, env, publicDir, [{id: 't00', words: [{w: 'one', s: 0.1, e: 0.5}], levels: [0.5]}]);
+    assert.notEqual(before, reworded);
+  });
 });
+

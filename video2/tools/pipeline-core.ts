@@ -112,7 +112,7 @@ const norm = (s: string) => s.trim().toLowerCase();
 /** A spoken-line label: a plain name ("Maya", "MAYA", "Mr. Biddle"), never a bullet or markdown. */
 const SPEAKER_LINE = /^(\p{L}[\p{L} .'-]{0,38}):\s*(.+)$/u;
 /** Markdown headings that open the production-only footer ("## Sources (production only — never spoken)"). */
-const FOOTER_HEADING = /^#{1,6}\s*(?:sources?|references?|verification|production|notes?|changelog|fact[- ]check)\b|never spoken/i;
+const FOOTER_HEADING = /^#{1,6}\s*(?:(?:sources?|references?|verification|production|notes?|changelog|fact[- ]check)\b|.*never spoken)/i;
 
 /** Parse a transcript with `Speaker: text` lines and `[pause N]` markers. */
 export function parseTranscript(source: string): PipelineTurn[] {

@@ -95,6 +95,9 @@ export async function remotion(ctx: PipelineContext, turns: PipelineTurn[], timi
   // a guard change invalidates cached stills and segments and forces re-checking.
   const sourceHash = treeHash(join(ROOT, 'src'));
   const env: RenderEnv = {sourceHash, fps: composition.fps, width: composition.width, height: composition.height};
+  // Captions (words + turn text) and the audio-reactive head (levels) are drawn from per-turn data, not the scene.
+  const turnById = new Map(turns.map(turn => [turn.id, turn]));
+  const overlaysFor = (scene: DirectedPlan['scenes'][number]) => scene.turnIds.map(id => [turnById.get(id) ?? null, words[id] ?? null, levels[id] ?? null]);
   if (stage === 'render') {
     const output = join(ctx.outDir, `${episode}.mp4`);
     const segmentsDir = join(work, 'segments');
@@ -116,7 +119,7 @@ export async function remotion(ctx: PipelineContext, turns: PipelineTurn[], timi
       const to = boundaries[i + 1] - 1;
       if (to < from) throw new Error(`${scene.id}: empty render range ${from}-${to}`);
       // Segments are silent video; narration is mixed once at assembly, so audio edits never re-render pixels.
-      const fingerprint = segmentFingerprint(plan, i, {from, to}, env, ctx.publicDir);
+      const fingerprint = segmentFingerprint(plan, i, {from, to}, env, ctx.publicDir, overlaysFor(scene));
       const file = join(segmentsDir, `${String(i).padStart(4, '0')}-${scene.id}.mp4`);
       nextCache[scene.id] = {fingerprint, file};
       segmentFiles.push(file);
@@ -186,7 +189,7 @@ export async function remotion(ctx: PipelineContext, turns: PipelineTurn[], timi
   const stillFiles: string[] = [];
   for (let i = 0; i < samples.length; i++) {
     const {scene, sceneIndex, frame, label} = samples[i];
-    const fingerprint = stillFingerprint(plan, sceneIndex, {label, frame}, env, ctx.publicDir);
+    const fingerprint = stillFingerprint(plan, sceneIndex, {label, frame}, env, ctx.publicDir, overlaysFor(scene));
     // Named by content: a cache hit can never be a still rendered for a different scene or slot.
     const key = stillFileName(fingerprint);
     const output = join(stillDir, key);

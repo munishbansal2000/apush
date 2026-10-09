@@ -320,7 +320,7 @@ for (const [path, entry] of targets) {
   const old = lock[path];
   // A local copy smaller than the verified original (e.g. an old 250px thumbnail) is re-fetched.
   const [ow] = (entry.original_size ?? '').split('x').map(Number);
-  const expectedWidth = ow ? Math.min(ow, ow > ORIGINAL_MAX_EDGE ? Number(RENDITION_WIDTH) : ow) : 0;
+  const expectedWidth = ow ? (ow > ORIGINAL_MAX_EDGE ? Number(RENDITION_WIDTH) : ow) : 0;
   const undersized = expectedWidth > 0 && (old?.width ?? 0) < expectedWidth * 0.95;
   if (!flag('force') && !undersized && existsSync(out) && old?.source_url === entry.source_url && sha(out) === old.sha256) {
     skipped++;
@@ -331,14 +331,9 @@ for (const [path, entry] of targets) {
   const resolved = await candidates(entry);
   let response: Response | null = null;
   let usedUrl = '';
-  let lastHost = '';
   for (const url of resolved.urls) {
     const host = new URL(url).host;
-    // Small delay when switching hosts to avoid hammering
-    if (lastHost && host !== lastHost) {
-      await new Promise(r => setTimeout(r, 500));
-    }
-    lastHost = host;
+    // getWithRetry paces every request per host group, so no extra delay is needed here.
     response = await getWithRetry(url);
     if (isImageResponse(response)) {
       usedUrl = url;

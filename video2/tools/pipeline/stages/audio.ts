@@ -49,6 +49,9 @@ export function audioStage(ctx: PipelineContext, turns: PipelineTurn[], pronunci
         if (kept) directed[turn.id] = kept;
       }
     }
+    // Resolve the synthesizer once (and only when a turn actually needs rendering), not per turn.
+    let edgeTts: string | undefined;
+    let fishPython: string | undefined;
     const index: Record<string, IndexEntry> = {};
     let rendered = 0;
     let reused = 0;
@@ -61,15 +64,14 @@ export function audioStage(ctx: PipelineContext, turns: PipelineTurn[], pronunci
       if (mode === 'dev') {
         const voice = cfg.edge.voices[turn.speaker ?? ''] ?? cfg.edge.voices.narrator;
         artifactHash = sha256(JSON.stringify({engine: 'edge', text, voice, rate: cfg.edge.rate, pitch: cfg.edge.pitch}));
-        synthesize = file => ctx.run(findTool(['edge-tts'], 'EDGE_TTS'), ['--voice', voice, '--rate', cfg.edge.rate, '--pitch', cfg.edge.pitch, '--text', text, '--write-media', file]);
+        synthesize = file => ctx.run(edgeTts ??= findTool(['edge-tts'], 'EDGE_TTS'), ['--voice', voice, '--rate', cfg.edge.rate, '--pitch', cfg.edge.pitch, '--text', text, '--write-media', file]);
       } else {
         const script = process.env.FISH_TTS_SCRIPT;
-        const python = findTool(['python3', 'python'], 'FISH_PYTHON');
         if (!script) throw new Error('PROD requires FISH_TTS_SCRIPT (Fish fish_tts.py path); optionally set FISH_PYTHON');
         const reference = cfg.fish.voices[turn.speaker ?? ''];
         if (!reference) throw new Error(`no Fish reference id for speaker ${turn.speaker}`);
         artifactHash = sha256(JSON.stringify({engine: 'fish', text, reference, model: cfg.fish.model}));
-        synthesize = file => ctx.run(python, [script, '--text', text, '--out', file, '--model', cfg.fish.model, '--reference-id', reference, '--format', 'mp3']);
+        synthesize = file => ctx.run(fishPython ??= findTool(['python3', 'python'], 'FISH_PYTHON'), [script, '--text', text, '--out', file, '--model', cfg.fish.model, '--reference-id', reference, '--format', 'mp3']);
       }
       const cached = join(cacheDir, `${artifactHash}.mp3`);
       if (!force && existsSync(cached)) reused++;

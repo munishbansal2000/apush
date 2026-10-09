@@ -9,7 +9,7 @@ import {turnsStage} from './stages/turns';
 import {pronounceStage} from './stages/pronounce';
 import {audioInputHash, audioStage} from './stages/audio';
 import {timingInputHash, timingStage} from './stages/timing';
-import {wordsStage} from './stages/words';
+import {wordsPathFor, wordsStage} from './stages/words';
 import {imagesStage} from './stages/images';
 import {directStage, planPathFor} from './stages/direct';
 import {clipsStage} from './stages/clips';
@@ -50,11 +50,14 @@ export async function runPipeline(ctx: PipelineContext): Promise<void> {
   clipsStage(ctx, timing);
 
   const planPath = planPathFor(ctx);
+  // Captions come from Vosk words, so a words-stage rerun must invalidate the contact/render checkpoints too.
+  const wordsPath = wordsPathFor(ctx);
+  const wordsSha = existsSync(wordsPath) ? sha256(readFileSync(wordsPath)) : '';
   if (stages.includes('contact')) {
     if (dryRun) console.log('[contact] dry-run');
     else {
       ensureSync(ctx, turns, timing);
-      const h = sha256(`${readFileSync(planPath)}:${treeHash(join(ROOT, 'src'))}`);
+      const h = sha256(`${readFileSync(planPath)}:${wordsSha}:${treeHash(join(ROOT, 'src'))}`);
       if (ctx.current('contact', h) && existsSync(join(ctx.outDir, `${episode}-contact.png`))) console.log('[contact] checkpoint current');
       else { await remotion(ctx, turns, timing, 'contact'); ctx.mark('contact', h); }
     }
@@ -63,7 +66,7 @@ export async function runPipeline(ctx: PipelineContext): Promise<void> {
     if (dryRun) console.log('[render] dry-run');
     else {
       ensureSync(ctx, turns, timing);
-      const h = sha256(`${readFileSync(planPath)}:${audioHash}:${treeHash(join(ROOT, 'src'))}`);
+      const h = sha256(`${readFileSync(planPath)}:${audioHash}:${wordsSha}:${treeHash(join(ROOT, 'src'))}`);
       if (ctx.current('render', h) && existsSync(join(ctx.outDir, `${episode}.mp4`))) console.log('[render] checkpoint current');
       else { await remotion(ctx, turns, timing, 'render'); ctx.mark('render', h); }
     }

@@ -63,6 +63,20 @@ The forward plan lives in `docs/ROADMAP.md`; this file tracks defects.
   Surfaced by the P13 merge. Owner content fix in `src/episodes/u1e3.ts`.
 - [ ] **P34. Stale image registry entry** `historic/u1e2/potatoes.jpg` lists E3:t05/t06 but no beat uses it. Run `npm run sync:manifest`.
 
+## Found by the branch review (2026-10-08)
+
+Fixed in the review commit: director roadmap fields rejected (now accepted and dropped); committed scene plans failing the
+first-scene-at-0 rule; render/contact caches ignoring caption words and head levels; "never spoken" in a spoken line
+ending the transcript; clips stage bypassing findTool; per-turn tool lookups; doc-render `--seconds` NaN.
+
+- [ ] **P36. The legacy directed path (`video-pipeline.ts` direct stage + DirectedEpisode) never produces Episode Sheet boxes or
+  reveal cues**, so those episodes render without the sheet. The documentary path (`doc-direct.ts` → DocEpisode) does produce
+  boxes; move the pipeline's direct/contact/render stages onto it (ROADMAP O2) instead of extending the legacy prompt.
+- [ ] **P37. Commons `maxlag` errors may arrive as HTTP 200 + JSON error**, which `getWithRetry` doesn't retry; fetch-images
+  would treat them as "no image". Unverified (status code not confirmed). Images work paused by owner.
+- [ ] **P38. A pre-dialogue header line shaped like `Format: …` (no `#` or `**`) parses as a speaker.** Current scripts are safe
+  (headers are `#`-prefixed or bold); tighten if new scripts add plain header lines.
+
 ## Found by comparing with `remotion-src/` (older ancestor of video2)
 
 - [x] **P19. Kit episodes U1E3 and U1-PRACTICE can't build in video2.** `src/episodes/u1e3.ts` and `u1-practice.ts`

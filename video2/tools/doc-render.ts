@@ -41,6 +41,7 @@ const composition = await selectComposition({serveUrl, id: 'DocEpisode', inputPr
 const fps = composition.fps;
 // --seconds N renders only the first N seconds (quick looks at a full-lesson plan).
 const limitSec = arg('seconds') ? Number(arg('seconds')) : Infinity;
+if (!(limitSec > 0)) throw new Error(`--seconds must be a positive number, got "${arg('seconds')}"`);
 const endFrame = Math.min(composition.durationInFrames - 1, Math.round(Math.min(resolved.endSec, limitSec) * fps) - 1);
 
 // Contact sheet: each shot just after its cut and near its end, plus every box event.

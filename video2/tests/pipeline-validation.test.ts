@@ -13,6 +13,11 @@ describe('pipeline validation', () => {
     assert.deepEqual(turns.map(t => t.text), ['The Bank is gone.']);
   });
 
+  it('review fix: "never spoken" inside a spoken line does not end the transcript; only a heading does', () => {
+    const turns = parseTranscript('Marcus: Those words were never spoken by Pontiac.\nMaya: Then who said them?\n## Quotes (never spoken)\nnote');
+    assert.deepEqual(turns.map(t => t.speaker), ['marcus', 'maya']);
+  });
+
   it('P16: bold metadata lines before the dialogue are not spoken', () => {
     const turns = parseTranscript('# U5 Cram\n**Format:** Cram | **Target:** 1200+ words\n**Pronunciation:** Calhoun = CAL-hoon\n\n---\n\nMaya: Thirty-second thesis.');
     assert.deepEqual(turns.map(t => [t.speaker, t.text]), [['maya', 'Thirty-second thesis.']]);
