@@ -69,9 +69,19 @@ function phraseAt(text: string, from: number, after: number): string | null {
 }
 
 type Cue = {turn: number; phrase: string};
+type F = {x: number; y: number; zoom: number};
+
+/** A camera move within the image's zoom limit (moves from an older plan or a stale treatment may exceed it). */
+function clampMove(maxZoom: number, move: {from: F; to: F}, t: Treatment | null): {from: F; to: F} {
+  const z = (f: F): F => ({...f, zoom: Math.min(maxZoom, Math.max(1, f.zoom))});
+  const out = {from: z(move.from), to: z(move.to)};
+  if (moveOf(out.from, out.to) !== 'still') return out;
+  // Clamping flattened the move: use the treatment's framing (also clamped), else a gentle pan.
+  const alt = t ? Object.values(t.framings).map(f => ({from: z(f.from), to: z(f.to)})).find(f => moveOf(f.from, f.to) !== 'still') : undefined;
+  return alt ?? {from: {x: 0.45, y: 0.5, zoom: 1}, to: {x: 0.55, y: 0.5, zoom: 1}};
+}
 type Shot = Record<string, unknown> & {type: string; at: unknown};
 interface Draft {shot: Shot; visual?: StoryVisual; split?: boolean}
-type F = {x: number; y: number; zoom: number};
 const fromOf = (s: Shot) => s.from as F;
 const toOf = (s: Shot) => s.to as F;
 
@@ -104,10 +114,11 @@ export function buildPlan(input: BuildInputs): BuildResult {
       const common = {at, ...(v.atmosphere ? {atmosphere: v.atmosphere} : {}), ...(v.transition ? {transition: v.transition} : {})};
       let shot: Shot | null = null;
       if (v.kind === 'image' || v.kind === 'clip') {
-        const t = v.image ? treatmentFor(v.image) : null;
-        if (!v.image || !t) { storyboardIssues.push(`turn ${index}: "${v.image}" is not an available image`); continue; }
+        const entry = v.image ? byPath.get(v.image) : undefined;
+        const t = v.image && entry ? treatmentFor(v.image) : null;
+        if (!v.image || !entry || !t) { storyboardIssues.push(`turn ${index}: "${v.image}" is not available (not downloaded, turned down, or too small for a full-frame shot)`); continue; }
         const picked = pickFraming(t, v.framing);
-        const move = v.move ?? {from: picked.framing.from, to: picked.framing.to};
+        const move = clampMove(entry.maxZoom, v.move ?? {from: picked.framing.from, to: picked.framing.to}, t);
         if (v.kind === 'clip') {
           const focus = v.focus ?? [move.to.x, move.to.y] as [number, number];
           shot = {type: 'clip', ...common, image: v.image, prompt: v.prompt ?? '', seed: v.seed ?? 42, focus, from: move.from, to: move.to} as Shot;
@@ -117,7 +128,17 @@ export function buildPlan(input: BuildInputs): BuildResult {
           shot = {type: 'image_move', ...common, image: v.image, from: move.from, to: move.to, framing: picked.name} as unknown as Shot;
         }
       } else if (v.kind === 'map') shot = {type: 'map', ...(v.map ?? {}), ...common} as unknown as Shot;
-      else if (v.kind === 'point') shot = {type: 'point', ...common, backdrop: v.backdrop, bullets: v.bullets ?? []} as unknown as Shot;
+      else if (v.kind === 'point') {
+        // A backdrop that cannot be used full frame is replaced by the nearest usable storyboard image (and reported).
+        let backdrop = v.backdrop;
+        if (!backdrop || !byPath.has(backdrop)) {
+          const near = sb.turns.flatMap(x => x.visuals).map(x => (x.kind === 'point' ? x.backdrop : x.image)).find(p => p && byPath.has(p));
+          storyboardIssues.push(`turn ${index}: point card backdrop "${backdrop}" is not available${near ? `; using "${near}"` : ''}`);
+          backdrop = near;
+          if (!backdrop) continue;
+        }
+        shot = {type: 'point', ...common, backdrop, bullets: v.bullets ?? []} as unknown as Shot;
+      }
       else if (v.kind === 'custom') {
         const beats = ((v as {beats?: string[]}).beats ?? []).map(p => cue(index, p)).filter((c): c is Cue => !!c);
         shot = {type: 'custom', ...common, component: v.component, ...(beats.length ? {beats} : {})} as unknown as Shot;
@@ -138,7 +159,9 @@ export function buildPlan(input: BuildInputs): BuildResult {
     if (d.shot.type === 'question') return timing.starts[at.turn];
     try { return resolvePhrase(at as Cue, turns, timing, words, 'start', input.allowEstimated).sec; } catch { return NaN; }
   };
-  const maxFor = (type: string) => (type === 'map' || type === 'custom' ? LOOK_RULES.maxMapSec : LOOK_RULES.maxShotSec) + LOOK_RULES.lengthToleranceSec;
+  const maxFor = (d: Draft) => (d.shot.type === 'question'
+    ? timing.durations[(d.shot.at as {turn: number}).turn] + LOOK_RULES.questionOverrunSec
+    : d.shot.type === 'map' || d.shot.type === 'custom' ? LOOK_RULES.maxMapSec : LOOK_RULES.maxShotSec) + LOOK_RULES.lengthToleranceSec;
   for (let pass = 0; pass < 400; pass++) {
     const starts = drafts.map(timeOf);
     const ends = starts.map((_, i) => (i + 1 < starts.length ? starts[i + 1] : timing.totalSec));
@@ -159,7 +182,7 @@ export function buildPlan(input: BuildInputs): BuildResult {
     for (let i = 0; i < drafts.length; i++) {
       const d = drafts[i];
       const len = ends[i] - starts[i];
-      if (!(len > maxFor(d.shot.type)) || d.shot.type === 'question') continue;
+      if (!(len > maxFor(d))) continue;
       const mid = starts[i] + len / 2;
       // Prefer a new line starting inside the hold (a natural cut point), nearest the middle; else split mid-line.
       const lineStarts = turns.map((t, k) => ({k, t: timing.starts[k]})).filter(({k, t}) => turns[k].kind === 'speech' && t > starts[i] + LOOK_RULES.minShotSec && t < ends[i] - LOOK_RULES.minShotSec)
@@ -167,10 +190,13 @@ export function buildPlan(input: BuildInputs): BuildResult {
       const atLine = lineStarts[0] && Math.abs(lineStarts[0].t - mid) < len / 3 ? lineStarts[0].k : -1;
       const turnIdx = atLine >= 0 ? atLine : timing.starts.findIndex((s, k) => s <= mid && mid < (k + 1 < timing.starts.length ? timing.starts[k + 1] : timing.totalSec));
       const turn = turns[turnIdx];
-      const image = (d.shot as {image?: string}).image;
-      if (turn?.kind !== 'speech' || !image || !['image_move', 'portrait', 'clip'].includes(d.shot.type)) {
-        if (d.shot.type !== 'map' && d.shot.type !== 'custom') storyboardIssues.push(`turn ${(d.shot.at as Cue).turn}: "${(d.shot.at as Cue).phrase}" holds ${len.toFixed(1)}s; add a visual in this stretch`);
-        else warnings.push(`turn ${(d.shot.at as Cue).turn}: ${d.shot.type} holds ${len.toFixed(1)}s`);
+      // The image to continue: the shot's own, else the nearest image shot (next first) — a map, point card or question
+      // card that runs long cuts back to a picture instead of holding.
+      const own = typeof d.shot.image === 'string' && ['image_move', 'portrait', 'clip'].includes(d.shot.type) ? d.shot.image as string : undefined;
+      const near = own ?? [...drafts.slice(i + 1), ...drafts.slice(0, i).reverse()].map(x => x.shot).find(x => ['image_move', 'portrait'].includes(x.type) && typeof x.image === 'string')?.image as string | undefined;
+      const image = near && byPath.has(near) ? near : undefined;
+      if (turn?.kind !== 'speech' || !image) {
+        storyboardIssues.push(`turn ${(d.shot.at as Cue).turn}: ${d.shot.type} holds ${len.toFixed(1)}s; add a visual in this stretch`);
         continue;
       }
       const hay = tokens(cleanSpeech(turn.text ?? ''));
@@ -179,10 +205,11 @@ export function buildPlan(input: BuildInputs): BuildResult {
       const phrase = phraseAt(turn.text ?? '', word, sameTurn);
       if (!phrase) { storyboardIssues.push(`turn ${turnIdx}: a ${len.toFixed(1)}s hold needs another visual (no phrase to split on)`); continue; }
       const t = treatmentFor(image);
-      const currentMove = moveOf(fromOf(d.shot), toOf(d.shot));
+      const currentMove = own ? moveOf(fromOf(d.shot), toOf(d.shot)) : 'still';
       const alt = t ? alternateFraming(t, currentMove) ?? pickFraming(t) : null;
-      const from = alt ? alt.framing.from : toOf(d.shot);
-      const to = alt ? alt.framing.to : fromOf(d.shot);
+      const clamped = clampMove(byPath.get(image)!.maxZoom, alt ? {from: alt.framing.from, to: alt.framing.to} : {from: toOf(d.shot), to: fromOf(d.shot)}, t);
+      const from = clamped.from;
+      const to = clamped.to;
       const cont = {type: 'image_move', at: {turn: turnIdx, phrase}, image, from, to, continues: true, ...(alt ? {framing: alt.name} : {})} as unknown as Shot;
       drafts.splice(i + 1, 0, {shot: cont, visual: d.visual ? {...d.visual, priority: 'optional'} : undefined, split: true});
       fixes.push(`turn ${turnIdx}: "${image.split('/').pop()}" continues in another framing on "${phrase}" (${len.toFixed(1)}s hold split)`);

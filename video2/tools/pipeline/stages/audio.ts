@@ -10,9 +10,12 @@ import {loadLessonReview} from '../review';
 import {dirname} from 'node:path';
 import {lessonKeyEnv, loadFishKeys} from '../fish-keys';
 
+/** macOS `say` voices for --tts say (previews only). */
+const SAY_VOICES: Record<string, string> = {maya: 'Samantha', marcus: 'Daniel', jay: 'Reed (English (US))', narrator: 'Fred'};
+
 /** Hash of every input that determines the rendered narration. */
 export const audioInputHash = (ctx: PipelineContext, turns: PipelineTurn[], pronunciations: Pronunciation[]) =>
-  sha256(JSON.stringify({mode: ctx.mode, turns, edge: ctx.cfg.edge, fish: ctx.cfg.fish, pron: pronunciations}));
+  sha256(JSON.stringify({mode: ctx.mode, turns, edge: ctx.cfg.edge, fish: ctx.cfg.fish, pron: pronunciations, tts: process.argv.includes('--tts') ? process.argv[process.argv.indexOf('--tts') + 1] : undefined}));
 
 /**
  * Render one mp3 per speech turn. Dev: Edge TTS with every tag stripped. Prod: Fish speaking the script's own direction
@@ -63,7 +66,17 @@ export function audioStage(ctx: PipelineContext, turns: PipelineTurn[], pronunci
       writeFileSync(join(ttsDir, `${turn.id}.txt`), `${text}\n`);
       let artifactHash: string;
       let synthesize: (file: string) => void;
-      if (mode === 'dev') {
+      if (mode === 'dev' && process.argv.includes('--tts') && process.argv[process.argv.indexOf('--tts') + 1] === 'say') {
+        // macOS built-in voices, offline: rough, for previews on a laptop (--tts say). Distinct voice per speaker.
+        const voice = SAY_VOICES[turn.speaker ?? ''] ?? 'Fred';
+        artifactHash = sha256(JSON.stringify({engine: 'say', text, voice}));
+        synthesize = file => {
+          const aiff = `${file}.aiff`;
+          ctx.run('say', ['-v', voice, '-o', aiff, cleanSpeech(text)]);
+          ctx.run('ffmpeg', ['-y', '-v', 'error', '-i', aiff, '-ac', '1', '-ar', '24000', '-c:a', 'libmp3lame', file]);
+          unlinkSync(aiff);
+        };
+      } else if (mode === 'dev') {
         const voice = cfg.edge.voices[turn.speaker ?? ''] ?? cfg.edge.voices.narrator;
         artifactHash = sha256(JSON.stringify({engine: 'edge', text, voice, rate: cfg.edge.rate, pitch: cfg.edge.pitch}));
         synthesize = file => ctx.run(edgeTts ??= findTool(['edge-tts'], 'EDGE_TTS'), ['--voice', voice, '--rate', cfg.edge.rate, '--pitch', cfg.edge.pitch, '--text', text, '--write-media', file]);

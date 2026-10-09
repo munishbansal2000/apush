@@ -43,9 +43,13 @@ export async function runPipeline(ctx: PipelineContext): Promise<void> {
   const timingHash = timingInputHash(ctx, audioHash);
   const timing = timingStage(ctx, turns, audioHash);
 
-  wordsStage(ctx, turns, timing, timingHash);
+  // --estimate-words: machines without Vosk (a preview on a laptop) skip word alignment and estimate phrase times from
+  // their position in the line. Cuts land approximately; never use it for a final render.
+  const estimateWords = process.argv.includes('--estimate-words');
+  if (estimateWords) console.log('[words] --estimate-words: no Vosk; phrase times estimated (preview only)');
+  else wordsStage(ctx, turns, timing, timingHash);
   imagesStage(ctx, turns);
-  if (stages.includes('direct')) docDirectStage(ctx);
+  if (stages.includes('direct')) docDirectStage(ctx, {allowEstimated: estimateWords});
   if (!stages.some(stage => stage === 'clips' || stage === 'contact' || stage === 'render')) {
     console.log(`pipeline complete through: ${stages.join(', ')}`);
     return;
@@ -55,10 +59,10 @@ export async function runPipeline(ctx: PipelineContext): Promise<void> {
     console.log(`pipeline complete through: ${stages.join(', ')}`);
     return;
   }
-  let {inputs, resolved} = docResolve(episode, ctx.draft);
+  let {inputs, resolved} = docResolve(episode, ctx.draft, estimateWords);
   if (stages.includes('clips')) {
     if (ctx.videoGen === 'none') console.log('[clips] --video-gen none: clip shots show their still');
-    else if (generateClips(episode, resolved, {force: ctx.force})) ({inputs, resolved} = docResolve(episode, ctx.draft));
+    else if (generateClips(episode, resolved, {force: ctx.force})) ({inputs, resolved} = docResolve(episode, ctx.draft, estimateWords));
   }
   const issues = docSyncIssues(episode, inputs);
   atomicJson(join(ctx.work, 'sync_report.json'), {episode, issues});
