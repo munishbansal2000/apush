@@ -9,9 +9,9 @@
 
 Maya: [professional broadcast tone] Last time: the Bonus Army marched on Washington. MacArthur cleared them out, and Herbert Hoover lost the country. The crash pulled the trigger, but the twenties loaded the gun. And the tease was: nineteen thirty-two. Hoover's out, Roosevelt's in. And the biggest answer the federal government ever gave: the New Deal.
 
-Three boxes. Circle the ones you couldn't explain right now.
+Maya: Three boxes. Circle the ones you couldn't explain right now.
 
-March nineteen thirty-three. Banks closing in state after state, a quarter of the country out of work, and a new president saying the only thing we have to fear is fear itself. About twelve minutes. Let's go.
+Maya: March nineteen thirty-three. Banks closing in state after state, a quarter of the country out of work, and a new president saying the only thing we have to fear is fear itself. About twelve minutes. Let's go.
 
 Marcus: [measured] Four hundred seventy-two electoral votes out of five thirty-one. Fifty-seven percent of the popular vote. And here's the thing about that landslide: Roosevelt ran on a vibe. The campaign promise was two words, a New Deal.
 
