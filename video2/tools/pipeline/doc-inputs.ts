@@ -3,9 +3,19 @@ import {existsSync, readdirSync, readFileSync} from 'node:fs';
 import {join, resolve} from 'node:path';
 import {ROOT} from '../lib';
 import {normalizeTurns, readJson, sha256, type PipelineTurn, type WordTiming} from '../pipeline-core';
+import {DESKTOP_SETTINGS, PAINTING_NEGATIVE, ltxBackend} from './clip-fingerprint';
 import {resolveShotPlan, type GeoFeature, type ResolveOptions, type ResolvedShotPlan, type ShotPlan} from './shots';
 
 export const GENERATOR = join(ROOT, 'tools', 'animate_still.py');
+export const DESKTOP_CLIENT = join(ROOT, 'tools', 'ltx_desktop.py');
+
+/** Fingerprint input for the active LTX backend: the client/generator source plus the settings it is driven with. */
+function generatorKey(): string {
+  const backend = ltxBackend();
+  const script = backend === 'desktop' ? DESKTOP_CLIENT : GENERATOR;
+  const source = existsSync(script) ? sha256(readFileSync(script)) : 'missing';
+  return sha256(JSON.stringify(backend === 'desktop' ? {backend, source, settings: DESKTOP_SETTINGS, negative: PAINTING_NEGATIVE} : {backend, source}));
+}
 export const clipsDirFor = (episode: string) => join(ROOT, 'public', 'clips', episode);
 export interface ClipManifest {[fingerprint: string]: {path: string; durationSec: number; prompt: string; image: string; seed: number; createdAt: string}}
 
@@ -50,7 +60,7 @@ export function loadDocInputs(episode: string, planPath: string, draft: boolean)
     plan: readJson<ShotPlan>(resolve(planPath)),
     options: {
       imageSizes, imageShas, depthMaps, geo, places, clips,
-      generatorSha: existsSync(GENERATOR) ? sha256(readFileSync(GENERATOR)) : '',
+      generatorSha: generatorKey(),
       allowEstimated: !existsSync(wordsPath), allowUnapproved: draft,
     },
   };

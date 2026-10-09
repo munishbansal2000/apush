@@ -158,3 +158,23 @@ describe('hero clips and atmosphere', () => {
   });
 });
 
+describe('LTX Desktop clips', () => {
+  it('crops stills to 16:9 around the focus point without stretching', async () => {
+    const {aspectCrop} = await import('../tools/pipeline/clip-fingerprint');
+    const war = aspectCrop({width: 1280, height: 869}, 1248 / 704, [0.5, 0.5]);
+    assert.equal(war.w, 1280);
+    assert.ok(Math.abs(war.w / war.h - 1248 / 704) < 0.005, 'exact 16:9');
+    assert.ok(war.y > 0 && war.y + war.h <= 869, 'cropped top and bottom, inside the image');
+    const portrait = aspectCrop({width: 2322, height: 2902}, 1248 / 704, [0.5, 0.15]);
+    assert.equal(portrait.y, 0, 'a focus near the top clamps to the top edge');
+    const wide = aspectCrop({width: 3770, height: 2678}, 16 / 9, [0.9, 0.5]);
+    assert.ok(wide.x + wide.w === 3770, 'a focus near the right clamps to the right edge');
+  });
+
+  it('switching backend changes clip fingerprints, so clips are never reused across backends', async () => {
+    const {clipFingerprint} = await import('../tools/pipeline/clip-fingerprint');
+    const base = {imageSha: 'a', prompt: 'Smoke drifts slowly over the field of battle.', seed: 1, focus: [0.5, 0.5] as [number, number]};
+    assert.notEqual(clipFingerprint({...base, generatorSha: 'desktop-key'}), clipFingerprint({...base, generatorSha: 'diffusers-key'}));
+  });
+});
+

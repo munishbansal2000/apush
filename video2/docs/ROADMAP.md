@@ -24,7 +24,7 @@ Status: ✅ done · 🔶 in progress · ⬜ not started · Owner: **C** = Claude
 | V3 | Episode Sheet: opens mid-screen, flies to corner, translucent tab, pops on box events | ✅ | C |
 | V4 | 2.5D parallax from depth maps (Depth Anything V2 + deterministic CPU warp) | ✅ code; depth maps run on the 5090 | C |
 | V5 | Period map engine: terrain relief, rivers, labels, towns/forts, arrows, tilt, library geo ids | ✅ | C |
-| V6 | `clip` shot type + `tools/doc-clips.ts` (LTX at 1248×704, crop not stretch, boomerang loop, content-keyed cache) | ✅ code; generation on the 5090 | C |
+| V6 | `clip` shot type + `tools/doc-clips.ts`: LTX Desktop by default (`LTX_BACKEND=diffusers` optional), 16:9 crop before sending, painting-safe negative prompt, boomerang loop, content-keyed cache | ✅ code; generation on the 5090 | C |
 | V7 | `document` shot: zoom to a transcribed phrase and highlight it as spoken (DocumentLens exists) | ⬜ | C |
 | V8 | Atmosphere layers: dust, smoke, embers, fog, candle | ✅ | C |
 | V9 | Shorts: vertical 1080×1920 cut per Episode Sheet box, auto-reframed | ⬜ | C |
