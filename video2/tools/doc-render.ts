@@ -4,6 +4,7 @@
  *   npx tsx tools/doc-render.ts --episode u3e1 --plan data/u3e1/shots.sample.json --check   # validate only
  *   npx tsx tools/doc-render.ts --episode u3e1 --plan data/u3e1/shots.sample.json           # stills + MP4
  *   add --draft to allow library geography that is not approved yet (samples only)
+ *   add --seconds 90 to render only the first 90 seconds
  *
  * Uses Vosk word timing (data/<ep>/word_times.json) when present; otherwise estimates phrase times inside each turn
  * (fine for a sample, refused by the production pipeline). Outputs out/<ep>-doc.mp4, out/<ep>-doc-contact.png.
@@ -38,7 +39,9 @@ console.log('[doc] bundling…');
 const serveUrl = await bundle({entryPoint: join(ROOT, 'src/documentary-index.tsx')});
 const composition = await selectComposition({serveUrl, id: 'DocEpisode', inputProps, browserExecutable, logLevel: 'error'});
 const fps = composition.fps;
-const endFrame = Math.min(composition.durationInFrames - 1, Math.round(resolved.endSec * fps) - 1);
+// --seconds N renders only the first N seconds (quick looks at a full-lesson plan).
+const limitSec = arg('seconds') ? Number(arg('seconds')) : Infinity;
+const endFrame = Math.min(composition.durationInFrames - 1, Math.round(Math.min(resolved.endSec, limitSec) * fps) - 1);
 
 // Contact sheet: each shot just after its cut and near its end, plus every box event.
 const stillsDir = join(ROOT, 'out', `${episode}-doc-stills`);
