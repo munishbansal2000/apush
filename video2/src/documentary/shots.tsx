@@ -10,10 +10,12 @@ import {World, WorldLayer, useWorld} from '../motion/world';
 import {densify, ringFeature, stateFeature} from '../motion/territory';
 import {US_RIVERS} from '../components/geo/usGeo';
 import {COLOR, FONT} from '../theme/tokens';
+import {CUSTOM_COMPONENTS} from '../components/custom/registry';
+import type {CustomName} from '../components/custom/catalog';
 import {AtmosphereLayers} from './atmosphere';
 import {easeInOut, frameImage, framingAt} from './framing';
 import {depthAtPoint, normalizeDepth, parallaxMotion, warpFrame, type DepthSource, type PixelSource} from './parallax';
-import type {ClipShot, Framing, ImageMoveShot, LonLat, MapShot, PointShot, PortraitShot, QuestionShot, RegionRef} from './types';
+import type {ClipShot, CustomShot, Framing, ImageMoveShot, LonLat, MapShot, PointShot, PortraitShot, QuestionShot, RegionRef} from './types';
 
 const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
 
@@ -354,6 +356,21 @@ export const PointView: React.FC<{shot: PointShot; lead: number}> = ({shot, lead
  * A scripted pause: the question that was just asked, a kicker, and a countdown ring that drains over the pause, so
  * the silence reads as "your turn", not dead air. Times are local to the shot's Sequence.
  */
+/* ---------------------------------- custom explainer ---------------------------------- */
+
+/** A custom component plays its default phases over the whole shot (lead included, so a crossfade shows it moving). */
+export const CustomView: React.FC<{shot: CustomShot; lead: number}> = ({shot, lead}) => {
+  const {fps} = useVideoConfig();
+  const entry = CUSTOM_COMPONENTS[shot.component as CustomName];
+  if (!entry) throw new Error(`unknown custom component "${shot.component}"`);
+  const Component = entry.component;
+  return (
+    <div style={{position: 'absolute', inset: 0}}>
+      <Component durationInFrames={Math.max(1, Math.round((shot.endSec - shot.startSec + lead) * fps))} phases={entry.phases} />
+    </div>
+  );
+};
+
 export const QuestionView: React.FC<{shot: QuestionShot; lead: number}> = ({shot, lead}) => {
   const frame = useCurrentFrame();
   const {fps, width} = useVideoConfig();

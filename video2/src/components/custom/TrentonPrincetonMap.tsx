@@ -1,32 +1,44 @@
 import React from 'react';
-import { geoPath } from 'd3-geo';
-import { useCurrentFrame, useVideoConfig, interpolate, Easing, spring } from 'remotion';
-import { NEIGHBORS, US_NATION, US_STATE_LINES, riverPaths, usProjection, type LonLat } from '../geo/usGeo';
-import { FONT, COLOR, TYPE, RADIUS, SHADOW, alpha } from '../../theme/tokens';
+import {geoPath} from 'd3-geo';
+import {Easing, interpolate, useVideoConfig} from 'remotion';
+import {NEIGHBORS, US_NATION, US_STATE_LINES, riverPaths, usProjection, type LonLat} from '../geo/usGeo';
+import {FONT, TYPE, alpha} from '../../theme/tokens';
+import {CLAMP, PAPER, PaperSheet, paperHalo, usePhases, type CustomProps, type Phase} from './kit';
 
-export interface Phase { name: string; start: number; end: number } // 0-1 fractions of duration
-export interface TrentonPrincetonMapProps {
-  durationInFrames?: number;
-  phases: Phase[];
-}
-
-// Trenton & Princeton campaign, Dec 1776 – Jan 1777 (LonLat)
-const CROSSING: LonLat = [-74.87, 40.32]; // McConkey's Ferry, PA side
-const CROSSING_EAST: LonLat = [-74.84, 40.32]; // NJ landing side
-const TRENTON: LonLat = [-74.76, 40.22];
-const PRINCETON: LonLat = [-74.66, 40.36];
-const EXTENT: [LonLat, LonLat] = [
-  [-75.2, 40.02],
-  [-74.4, 40.56],
+/**
+ * Trenton and Princeton, winter 1776-77 (APUSH Unit 3, u3e5 L44 / L48): the crossing and the two strikes.
+ *
+ * Parchment map of the Delaware above Trenton. Christmas night: the river runs dark, snow falls, lantern-lit boats
+ * cross from McConkey's Ferry; at dawn two columns come down the river and Pennington roads and the Hessian marker
+ * at Trenton collapses; then the march east and north to Princeton with a second flash. The camera drifts from the
+ * crossing toward Trenton and Princeton throughout. Labels only (Delaware, Trenton, Princeton, Washington,
+ * Hessians); no HUD, date chips, "Ten Days" card or closing sentence.
+ *
+ * DEFAULT_PHASES: crossing (night crossing in snow) / trenton (dawn attack) / princeton (march and second strike).
+ */
+export const DEFAULT_PHASES: Phase[] = [
+  {name: 'crossing', start: 0, end: 0.35},
+  {name: 'trenton', start: 0.35, end: 0.65},
+  {name: 'princeton', start: 0.65, end: 1},
 ];
 
-const DEFAULT_PHASES: Phase[] = [
-  { name: 'setup', start: 0, end: 0.15 },
-  { name: 'crossing', start: 0.15, end: 0.4 },
-  { name: 'trenton', start: 0.4, end: 0.6 },
-  { name: 'princeton', start: 0.6, end: 0.85 },
-  { name: 'resolve', start: 0.85, end: 1 },
-];
+export type TrentonPrincetonMapProps = CustomProps;
+
+// Basis: Washington Crossing Historic Park (McConkey's Ferry, PA) and the NJ landing opposite; Trenton Battle
+// Monument / Old Barracks; Princeton Battlefield State Park (NPS / NJ state park sites). Routes per standard accounts:
+// two columns on the River and Pennington roads to Trenton (Dec 26, 1776); the night march round Cornwallis via the
+// Quaker Bridge road to Princeton (Jan 3, 1777).
+const FERRY_PA: LonLat = [-74.876, 40.296];
+const FERRY_NJ: LonLat = [-74.862, 40.3];
+const TRENTON: LonLat = [-74.764, 40.222];
+const PRINCETON: LonLat = [-74.677, 40.33];
+const RIVER_ROAD: LonLat[] = [FERRY_NJ, [-74.835, 40.272], [-74.8, 40.245], [-74.772, 40.226]];
+const PENNINGTON_ROAD: LonLat[] = [FERRY_NJ, [-74.83, 40.3], [-74.795, 40.272], [-74.762, 40.23]];
+const TO_PRINCETON: LonLat[] = [TRENTON, [-74.725, 40.228], [-74.698, 40.275], PRINCETON];
+const EXTENT: [LonLat, LonLat] = [[-74.98, 40.16], [-74.6, 40.38]];
+
+type XY = [number, number];
+const ease = Easing.inOut(Easing.cubic);
 
 /** Deterministic pseudo-random from a seed (stable across frames). */
 const rand = (seed: number) => {
@@ -34,32 +46,17 @@ const rand = (seed: number) => {
   return x - Math.floor(x);
 };
 
-export const TrentonPrincetonMap: React.FC<TrentonPrincetonMapProps> = ({
-  durationInFrames: propDuration,
-  phases,
-}) => {
-  const frame = useCurrentFrame();
-  const { width, height, durationInFrames: configDuration } = useVideoConfig();
-  const durationInFrames = propDuration ?? configDuration;
-  const total = Math.max(1, durationInFrames);
-  const u = (n: number) => n * (width / 1280);
+export const TrentonPrincetonMap: React.FC<TrentonPrincetonMapProps> = ({durationInFrames, phases}) => {
+  const clock = usePhases(phases, DEFAULT_PHASES, durationInFrames);
+  const {frame, fps, u, t, bounds} = clock;
+  const {width, height} = useVideoConfig();
+  const total = Math.max(1, clock.durationInFrames);
 
-  const find = React.useCallback(
-    (name: string) => phases.find(p => p.name === name) ?? DEFAULT_PHASES.find(p => p.name === name)!,
-    [phases]
-  );
-  /** local 0-1 progress inside a named phase */
-  const t = React.useCallback(
-    (name: string) =>
-      interpolate(frame, [find(name).start * total, find(name).end * total], [0, 1], {
-        extrapolateLeft: 'clamp',
-        extrapolateRight: 'clamp',
-        easing: Easing.inOut(Easing.cubic),
-      }),
-    [frame, total, find]
-  );
+  const crossingT = interpolate(t('crossing'), [0, 1], [0, 1], {easing: ease});
+  const trentonT = interpolate(t('trenton'), [0, 1], [0, 1], {easing: ease});
+  const princetonT = interpolate(t('princeton'), [0, 1], [0, 1], {easing: ease});
 
-  const projection = React.useMemo(() => usProjection(width, height, EXTENT, height * 0.08), [width, height]);
+  const projection = React.useMemo(() => usProjection(width, height, EXTENT, height * 0.05), [width, height]);
   const geo = React.useMemo(() => {
     const path = geoPath(projection);
     return {
@@ -69,242 +66,126 @@ export const TrentonPrincetonMap: React.FC<TrentonPrincetonMapProps> = ({
       delaware: riverPaths(path, ['Delaware']),
     };
   }, [projection]);
-
-  const at = (ll: LonLat): [number, number] => projection(ll) ?? [0, 0];
+  const at = (ll: LonLat): XY => projection(ll) ?? [0, 0];
   const line = (lls: LonLat[]) => lls.map((ll, i) => `${i ? 'L' : 'M'} ${at(ll).map(v => v.toFixed(1)).join(' ')}`).join(' ');
-  const halo = { stroke: alpha(COLOR.night, 0.92), strokeWidth: u(3.5), paintOrder: 'stroke' as const, strokeLinejoin: 'round' as const };
+  const halo = paperHalo(u);
 
-  const crossingT = t('crossing');
-  const trentonT = t('trenton');
-  const princetonT = t('princeton');
-  const resolveT = spring({ frame, fps: 30, from: 0, to: find('resolve').start * total <= frame ? 1 : 0, config: { damping: 14, stiffness: 120 } });
-
-  const [cx, cy] = at(CROSSING);
+  const [ax, ay] = at(FERRY_PA);
+  const [bx, by] = at(FERRY_NJ);
   const [tx, ty] = at(TRENTON);
   const [px, py] = at(PRINCETON);
 
-  // Hessian marker collapse (springy defeat at Trenton)
-  const hessianScale = interpolate(trentonT, [0.35, 0.75], [1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const trentonFlash = Math.max(0, Math.sin(trentonT * Math.PI)) * (1 - Math.abs(trentonT - 0.5) * 1.4);
-  const princetonFlash = Math.max(0, Math.sin(princetonT * Math.PI)) * (1 - Math.abs(princetonT - 0.5) * 1.4);
+  // Night until the dawn attack: the river runs dark, then lightens as the Trenton beat starts.
+  const nightShown = clock.has('crossing') ? 1 - interpolate(t('trenton'), [0, 0.35], [0, 1], CLAMP) : 0;
+  const riverColor = nightShown > 0.5 ? PAPER.waterDeep : PAPER.water;
 
-  // Snow particles: fall during crossing phase only
-  const snow = React.useMemo(
-    () =>
-      Array.from({ length: 42 }, (_, i) => ({
-        x: rand(i * 3.1) * width,
-        speed: 0.6 + rand(i * 7.7) * 1.4,
-        drift: (rand(i * 5.3) - 0.5) * 40,
-        r: u(1 + rand(i * 9.2) * 2.2),
-        seed: i * 13.7,
-      })),
-    [width]
+  // Camera: from the crossing toward the Trenton-Princeton country.
+  const s = interpolate(frame, [0, total], [1.3, 1.08], {...CLAMP, easing: Easing.inOut(Easing.quad)});
+  const fx = interpolate(frame, [0, total], [ax, (tx + px) / 2], {...CLAMP, easing: Easing.inOut(Easing.quad)});
+  const fy = interpolate(frame, [0, total], [ay, (ty + py) / 2], {...CLAMP, easing: Easing.inOut(Easing.quad)});
+
+  const hessianScale = interpolate(trentonT, [0.45, 0.8], [1, 0], CLAMP);
+  const flash = (p: number) => Math.max(0, Math.sin(Math.min(1, Math.max(0, (p - 0.4) / 0.5)) * Math.PI));
+  const trentonFlash = flash(trentonT);
+  const princetonFlash = flash(princetonT);
+
+  // Snow during the crossing, moved in seconds (fps-independent).
+  const [cs, ce] = bounds('crossing');
+  const snowOn = frame >= cs && frame < ce ? interpolate(frame, [cs, cs + 0.3 * fps, ce - 0.4 * fps, ce], [0, 1, 1, 0], CLAMP) : 0;
+  const flakes = React.useMemo(
+    () => Array.from({length: 46}, (_, i) => ({x: rand(i * 3.1), speed: 0.25 + rand(i * 7.7) * 0.35, drift: rand(i * 5.3) - 0.5, r: 1 + rand(i * 9.2) * 2.2, y0: rand(i * 13.7)})),
+    [],
   );
-  const crossingSpan = find('crossing').end * total - find('crossing').start * total;
-  const snowFall = (s: (typeof snow)[number]) => {
-    const local = Math.max(0, frame - find('crossing').start * total);
-    const y = (s.seed * 47 + local * s.speed * u(1)) % (height + u(20)) - u(10);
-    const x = s.x + s.drift * Math.sin((local + s.seed) * 0.03);
-    return { x, y };
-  };
+  const local = Math.max(0, frame - cs) / fps;
 
   return (
-    <div style={{ position: 'relative', width: '100%', height: '100%', overflow: 'hidden', backgroundColor: COLOR.night, fontFamily: FONT.ui }}>
-      <div style={{ position: 'absolute', inset: 0 }}>
-        <svg viewBox={`0 0 ${width} ${height}`} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', overflow: 'visible' }}>
-          <rect x={-width} y={-height} width={width * 3} height={height * 3} fill={COLOR.nightOcean} />
+    <PaperSheet fontFamily={FONT.display}>
+      <div style={{position: 'absolute', inset: 0, transformOrigin: '0 0', transform: `translate(${width / 2 - fx * s}px, ${height / 2 - fy * s}px) scale(${s})`}}>
+        <svg viewBox={`0 0 ${width} ${height}`} style={{position: 'absolute', inset: 0, width: '100%', height: '100%', overflow: 'visible'}}>
+          <rect x={-width} y={-height} width={width * 3} height={height * 3} fill={PAPER.water} />
           {geo.neighbors.map((d, i) => (
-            <path key={i} d={d} fill={COLOR.nightPanel} stroke={alpha(COLOR.nightCoast, 0.6)} strokeWidth={u(0.8)} />
+            <path key={i} d={d} fill={PAPER.land} stroke={PAPER.coast} strokeWidth={u(0.8)} />
           ))}
-          <path d={geo.nation} fill={COLOR.nightLand} stroke={COLOR.nightCoast} strokeWidth={u(1.2)} />
-          <path d={geo.states} fill="none" stroke={alpha(COLOR.onNight, 0.22)} strokeWidth={u(1)} strokeDasharray={`${u(6)} ${u(4)}`} />
-          {/* Delaware River — glowing night thread */}
-          <g fill="none" stroke={COLOR.skyOnNight} strokeLinecap="round">
-            {geo.delaware.map((r, i) => (
-              <g key={i}>
-                <path d={r.d} strokeWidth={u(7)} opacity={0.18} />
-                <path d={r.d} strokeWidth={u(3)} opacity={0.75} />
-              </g>
-            ))}
+          <path d={geo.nation} fill={PAPER.land} stroke={PAPER.coast} strokeWidth={u(1.2)} />
+          <path d={geo.states} fill="none" stroke={PAPER.rule} strokeWidth={u(1)} strokeDasharray={`${u(6)} ${u(4)}`} />
+          {/* Delaware River: dark on Christmas night, lighter at dawn */}
+          <g fill="none" stroke={riverColor} strokeLinecap="round" strokeLinejoin="round">
+            {geo.delaware.map((r, i) => <path key={i} d={r.d} strokeWidth={u(7)} />)}
           </g>
-          <text x={cx - u(70)} y={cy + u(90)} fill={alpha(COLOR.skyOnNight, 0.85)} fontSize={u(TYPE.tag)} fontStyle="italic" fontFamily={FONT.text} {...halo}>
-            Delaware River
+          <text x={ax - u(36)} y={ay + u(70)} transform={`rotate(-58, ${ax - u(36)}, ${ay + u(70)})`} textAnchor="middle" fill={PAPER.inkSoft}
+            fontSize={u(TYPE.label)} fontStyle="italic" fontFamily={FONT.display} {...halo}>
+            Delaware
           </text>
 
-          {/* SETUP: night positions */}
-          <g opacity={1}>
-            {/* American position, PA side */}
-            <g transform={`translate(${cx - u(46)}, ${cy - u(30)})`}>
-              <circle r={u(9)} fill={COLOR.skyOnNight} stroke={COLOR.onNight} strokeWidth={u(2)} style={{ filter: `drop-shadow(0 0 ${u(6)}px ${COLOR.skyOnNight})` }} />
-              <text x={-u(16)} y={u(2)} textAnchor="end" fill={COLOR.skyOnNight} fontSize={u(TYPE.town)} fontWeight={800} fontFamily={FONT.display} {...halo}>
-                WASHINGTON
-              </text>
-              <text x={-u(16)} y={u(17)} textAnchor="end" fill={COLOR.onNight} fontSize={u(TYPE.micro)} fontFamily={FONT.mono} {...halo}>
-                2,400 Continentals · PA shore
-              </text>
-            </g>
-            {/* Hessian / British garrison at Trenton */}
-            <g transform={`translate(${tx}, ${ty}) scale(${Math.max(0.001, hessianScale)})`}>
-              <rect x={-u(8)} y={-u(8)} width={u(16)} height={u(16)} fill={COLOR.red} stroke={COLOR.onNight} strokeWidth={u(2)} transform="rotate(45)" style={{ filter: `drop-shadow(0 0 ${u(6)}px ${COLOR.red})` }} />
-              <text x={u(16)} y={u(2)} fill={COLOR.redOnNight} fontSize={u(TYPE.town)} fontWeight={800} fontFamily={FONT.display} {...halo}>
-                RALL · HESSIANS
-              </text>
-              <text x={u(16)} y={u(17)} fill={COLOR.onNight} fontSize={u(TYPE.micro)} fontFamily={FONT.mono} {...halo}>
-                Trenton garrison
-              </text>
-            </g>
-            {/* town pins */}
-            <g transform={`translate(${px}, ${py})`}>
-              <circle r={u(6)} fill="none" stroke={COLOR.onNightMuted} strokeWidth={u(1.5)} />
-              <text x={u(12)} y={u(2)} fill={COLOR.onNightMuted} fontSize={u(TYPE.town)} fontWeight={700} fontFamily={FONT.display} {...halo}>
-                Princeton
-              </text>
-            </g>
+          {/* Washington on the Pennsylvania shore */}
+          <g transform={`translate(${ax}, ${ay})`} opacity={1 - interpolate(crossingT, [0.6, 1], [0, 0.6], CLAMP)}>
+            <circle r={u(8)} fill={PAPER.patriot} stroke={PAPER.halo} strokeWidth={u(2)} />
+            <text x={-u(14)} y={-u(10)} textAnchor="end" fill={PAPER.patriot} fontSize={u(TYPE.label)} fontWeight={800} fontFamily={FONT.display} {...halo}>
+              Washington
+            </text>
           </g>
 
-          {/* CROSSING: stylized blue boats across the river */}
-          {crossingT > 0 && (
-            <g>
-              <path d={line([CROSSING, CROSSING_EAST])} fill="none" stroke={COLOR.skyOnNight} strokeWidth={u(4)} strokeLinecap="round" strokeDasharray={`${u(10)} ${u(8)}`} opacity={0.9} style={{ filter: `drop-shadow(0 0 ${u(6)}px ${COLOR.skyOnNight})` }} />
-              {[0, 0.25, 0.5, 0.75, 1].map(i => {
-                const along = Math.min(1, crossingT * 1.25 - i * 0.05);
-                if (along <= 0) return null;
-                const lx = cx + (at(CROSSING_EAST)[0] - cx) * along;
-                const ly = cy + (at(CROSSING_EAST)[1] - cy) * along + Math.sin(along * Math.PI * 3) * u(4);
-                return (
-                  <g key={i} transform={`translate(${lx}, ${ly})`} opacity={0.6 + along * 0.4}>
-                    <path d={`M ${-u(7)} 0 L ${u(7)} 0 L ${u(3)} ${u(6)} L ${-u(3)} ${u(6)} Z`} fill={COLOR.skyOnNight} stroke={COLOR.onNight} strokeWidth={u(1.2)} />
-                    <circle cx={-u(2)} cy={u(2.5)} r={u(1.4)} fill={COLOR.night} />
-                    <circle cx={u(2)} cy={u(2.5)} r={u(1.4)} fill={COLOR.night} />
-                  </g>
-                );
-              })}
-              {/* ice floe texture dots */}
-              {[0.3, 0.7].map(i => (
-                <g key={i} opacity={crossingT * 0.8}>
-                  {Array.from({ length: 9 }, (_, k) => {
-                    const lx = cx - u(50) + rand(i * 100 + k) * u(160);
-                    const ly = cy - u(40) + rand(i * 77 + k * 3) * u(90);
-                    return <circle key={k} cx={lx} cy={ly} r={u(1.5 + rand(k * 5 + i) * 2)} fill={alpha(COLOR.foam, 0.55)} />;
-                  })}
-                </g>
-              ))}
-              <text x={cx - u(120)} y={cy - u(70)} fill={COLOR.gold} fontSize={u(TYPE.label)} fontWeight={900} fontFamily={FONT.display} letterSpacing="0.08em" {...halo} opacity={Math.min(1, crossingT * 3)}>
-                DEC 25, 1776 — CHRISTMAS NIGHT
+          {/* Crossing: lantern-lit boats */}
+          {crossingT > 0 && [0, 1, 2, 3].map(i => {
+            const along = Math.max(0, Math.min(1, crossingT * 1.3 - i * 0.1));
+            if (along <= 0) return null;
+            const x = ax + (bx - ax) * along;
+            const y = ay + (by - ay) * along + (i - 1.5) * u(7);
+            return (
+              <g key={i} transform={`translate(${x}, ${y})`}>
+                <circle r={u(7)} fill={alpha(PAPER.gold, 0.35 * nightShown)} />
+                <path d={`M ${-u(6)} 0 L ${u(6)} 0 L ${u(3)} ${u(4)} L ${-u(3)} ${u(4)} Z`} fill={PAPER.patriot} stroke={PAPER.halo} strokeWidth={u(0.8)} />
+                <circle cy={-u(2)} r={u(1.6)} fill={PAPER.gold} />
+              </g>
+            );
+          })}
+
+          {/* Hessian garrison at Trenton */}
+          {hessianScale > 0.01 && (
+            <g transform={`translate(${tx}, ${ty}) scale(${hessianScale})`}>
+              <rect x={-u(8)} y={-u(8)} width={u(16)} height={u(16)} fill={PAPER.british} stroke={PAPER.halo} strokeWidth={u(2)} transform="rotate(45)" />
+              <text x={u(16)} y={u(22)} fill={PAPER.british} fontSize={u(TYPE.label)} fontWeight={800} fontFamily={FONT.display} {...halo}>
+                Hessians
               </text>
             </g>
           )}
 
-          {/* TRENTON: blue arrow sweeps in at dawn */}
-          {trentonT > 0 && (
-            <g>
-              <path
-                d={line([CROSSING_EAST, [-74.8, 40.28], TRENTON])}
-                fill="none"
-                stroke={COLOR.skyOnNight}
-                strokeWidth={u(5)}
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                pathLength={1}
-                strokeDasharray="1 1"
-                strokeDashoffset={1 - Math.min(1, trentonT * 1.4)}
-                style={{ filter: `drop-shadow(0 0 ${u(6)}px ${COLOR.skyOnNight})` }}
-              />
-              {trentonFlash > 0.02 && (
-                <g transform={`translate(${tx}, ${ty})`}>
-                  <circle r={u(10 + trentonFlash * 46)} fill={alpha(COLOR.gold, 0.5 * trentonFlash)} style={{ filter: `drop-shadow(0 0 ${u(14)}px ${COLOR.amber})` }} />
-                  <text y={-u(56)} textAnchor="middle" fill={COLOR.gold} fontSize={u(TYPE.body)} fontWeight={900} fontFamily={FONT.display} {...halo}>
-                    DAWN ATTACK
-                  </text>
-                </g>
-              )}
-              {hessianScale <= 0.4 && (
-                <g opacity={Math.min(1, (0.4 - hessianScale) * 3)}>
-                  <text x={tx} y={ty + u(58)} textAnchor="middle" fill={COLOR.gold} fontSize={u(TYPE.label)} fontWeight={900} fontFamily={FONT.display} {...halo}>
-                    DEC 26 — TRENTON
-                  </text>
-                  <text x={tx} y={ty + u(76)} textAnchor="middle" fill={COLOR.onNight} fontSize={u(TYPE.small)} fontFamily={FONT.mono} {...halo}>
-                    ~900 Hessians captured
-                  </text>
-                </g>
-              )}
-            </g>
-          )}
+          {/* Dawn: two columns strike Trenton */}
+          {trentonT > 0 && [RIVER_ROAD, PENNINGTON_ROAD].map((road, i) => (
+            <path key={i} d={line(road)} fill="none" stroke={PAPER.patriot} strokeWidth={u(4)} strokeLinecap="round" strokeLinejoin="round"
+              pathLength={1} strokeDasharray="1 1" strokeDashoffset={1 - Math.min(1, trentonT * 1.5)} />
+          ))}
+          {trentonFlash > 0.02 && <circle cx={tx} cy={ty} r={u(10 + trentonFlash * 36)} fill={alpha(PAPER.gold, 0.45 * trentonFlash)} />}
 
-          {/* PRINCETON: march north, second battle */}
+          {/* March to Princeton */}
           {princetonT > 0 && (
-            <g>
-              <path
-                d={line([TRENTON, [-74.71, 40.29], PRINCETON])}
-                fill="none"
-                stroke={COLOR.skyOnNight}
-                strokeWidth={u(5)}
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                pathLength={1}
-                strokeDasharray="1 1"
-                strokeDashoffset={1 - Math.min(1, princetonT * 1.4)}
-                style={{ filter: `drop-shadow(0 0 ${u(6)}px ${COLOR.skyOnNight})` }}
-              />
-              {princetonFlash > 0.02 && (
-                <g transform={`translate(${px}, ${py})`}>
-                  <circle r={u(8 + princetonFlash * 38)} fill={alpha(COLOR.gold, 0.45 * princetonFlash)} style={{ filter: `drop-shadow(0 0 ${u(12)}px ${COLOR.amber})` }} />
-                </g>
-              )}
-              <g opacity={interpolate(princetonT, [0.55, 0.9], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' })}>
-                <text x={px + u(20)} y={py - u(34)} textAnchor="start" fill={COLOR.gold} fontSize={u(TYPE.label)} fontWeight={900} fontFamily={FONT.display} {...halo}>
-                  JAN 3, 1777 — PRINCETON
-                </text>
-                <text x={px + u(20)} y={py - u(16)} textAnchor="start" fill={COLOR.onNight} fontSize={u(TYPE.small)} fontFamily={FONT.mono} {...halo}>
-                  Second victory · Cornwallis outmaneuvered
-                </text>
-              </g>
-            </g>
+            <path d={line(TO_PRINCETON)} fill="none" stroke={PAPER.patriot} strokeWidth={u(4)} strokeLinecap="round" strokeLinejoin="round"
+              pathLength={1} strokeDasharray="1 1" strokeDashoffset={1 - Math.min(1, princetonT * 1.4)} />
           )}
+          {princetonFlash > 0.02 && <circle cx={px} cy={py} r={u(10 + princetonFlash * 32)} fill={alpha(PAPER.gold, 0.45 * princetonFlash)} />}
 
-          {/* Snowfall (cheap animated circles, crossing phase only) */}
-          {crossingT > 0 && crossingT < 1 && (
-            <g opacity={0.75 * Math.min(1, crossingSpan / 30)}>
-              {snow.map((s, i) => {
-                const { x, y } = snowFall(s);
-                return <circle key={i} cx={x} cy={y} r={s.r} fill={alpha(COLOR.foam, 0.5)} />;
-              })}
+          {/* Towns */}
+          {[{x: tx, y: ty, name: 'Trenton', dx: -14, dy: 6, anchor: 'end' as const}, {x: px, y: py, name: 'Princeton', dx: 14, dy: -8, anchor: 'start' as const}].map(tw => (
+            <g key={tw.name}>
+              <circle cx={tw.x} cy={tw.y} r={u(4.5)} fill={PAPER.ink} stroke={PAPER.halo} strokeWidth={u(1.5)} />
+              <text x={tw.x + u(tw.dx)} y={tw.y + u(tw.dy)} textAnchor={tw.anchor} fill={PAPER.ink} fontSize={u(TYPE.place)} fontWeight={700} fontFamily={FONT.display} {...halo}>
+                {tw.name}
+              </text>
             </g>
-          )}
+          ))}
         </svg>
       </div>
 
-      {/* Night vignette */}
-      <div style={{ position: 'absolute', inset: 0, background: `radial-gradient(ellipse at 50% 45%, ${alpha(COLOR.night, 0)} 50%, ${alpha(COLOR.night, 0.72)} 100%)`, pointerEvents: 'none' }} />
-
-      {/* HUD header */}
-      <div style={{ position: 'absolute', top: u(14), left: u(16), right: u(16), display: 'flex', justifyContent: 'space-between', alignItems: 'center', pointerEvents: 'none' }}>
-        <div style={{ backgroundColor: alpha(COLOR.night, 0.9), border: `1px solid ${alpha(COLOR.skyOnNight, 0.4)}`, borderLeft: `4px solid ${COLOR.skyOnNight}`, borderRadius: RADIUS.md, padding: `${u(8)} ${u(16)}` }}>
-          <span style={{ fontFamily: FONT.display, fontSize: u(TYPE.nano), fontWeight: 900, color: COLOR.skyOnNight, letterSpacing: '0.12em' }}>
-            APUSH PERIOD 3 · DEC 1776 – JAN 1777
-          </span>
-          <span style={{ fontSize: u(TYPE.tag), fontWeight: 800, color: COLOR.onNight }}> · Trenton &amp; Princeton</span>
-        </div>
-        <div style={{ backgroundColor: alpha(COLOR.night, 0.9), border: `1px solid ${alpha(COLOR.onNight, 0.15)}`, borderRadius: RADIUS.md, padding: `${u(8)} ${u(16)}` }}>
-          <span style={{ fontSize: u(TYPE.nano), fontFamily: FONT.mono, color: alpha(COLOR.onNight, 0.55) }}>CAMPAIGN </span>
-          <span style={{ fontFamily: FONT.mono, fontSize: u(TYPE.town), fontWeight: 900, color: COLOR.gold }}>TEN DAYS</span>
-        </div>
-      </div>
-
-      {/* RESOLVE: closing caption */}
-      {resolveT > 0.01 && (
-        <div style={{ position: 'absolute', left: 0, right: 0, bottom: u(64), display: 'flex', flexDirection: 'column', alignItems: 'center', pointerEvents: 'none', opacity: resolveT }}>
-          <div style={{ backgroundColor: alpha(COLOR.night, 0.92), border: `1px solid ${alpha(COLOR.gold, 0.5)}`, borderRadius: RADIUS.lg, padding: `${u(16)} ${u(32)}`, textAlign: 'center', transform: `translateY(${(1 - resolveT) * u(24)}px)` }}>
-            <div style={{ fontFamily: FONT.display, fontSize: u(TYPE.h2), fontWeight: 900, color: COLOR.gold, textShadow: SHADOW.text }}>
-              The Ten Days that Saved the Revolution
-            </div>
-            <div style={{ fontSize: u(TYPE.small), color: COLOR.onNight, marginTop: u(8), maxWidth: u(720) }}>
-              Two victories in nine days — enlistments renewed, Congress regained the field,
-              and Britain lost the war it had already won.
-            </div>
-          </div>
-        </div>
+      {/* Snow over the crossing (screen space, so it is not scaled by the camera) */}
+      {snowOn > 0 && (
+        <svg viewBox={`0 0 ${width} ${height}`} style={{position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none'}} opacity={0.85 * snowOn}>
+          {flakes.map((f, i) => {
+            const y = ((f.y0 + local * f.speed) % 1) * height;
+            const x = f.x * width + f.drift * u(40) * Math.sin(local * 1.2 + i);
+            return <circle key={i} cx={x} cy={y} r={u(f.r)} fill={PAPER.halo} stroke={PAPER.wave} strokeWidth={u(0.5)} />;
+          })}
+        </svg>
       )}
-    </div>
+    </PaperSheet>
   );
 };

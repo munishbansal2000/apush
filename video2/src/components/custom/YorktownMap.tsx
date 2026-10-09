@@ -1,322 +1,257 @@
 import React from 'react';
-import { geoPath } from 'd3-geo';
-import { useCurrentFrame, useVideoConfig, interpolate, Easing } from 'remotion';
-import { NEIGHBORS, US_NATION, US_STATE_LINES, riverPaths, usProjection, type LonLat } from '../geo/usGeo';
-import { FONT, COLOR, TYPE, RADIUS, alpha } from '../../theme/tokens';
+import {geoPath} from 'd3-geo';
+import {Easing, interpolate} from 'remotion';
+import {NEIGHBORS, US_NATION, US_STATE_LINES, riverPaths, usProjection, type LonLat} from '../geo/usGeo';
+import {FONT, TYPE, alpha} from '../../theme/tokens';
+import {CLAMP, PAPER, PaperSheet, paperHalo, usePhases, type CustomProps, type Phase} from './kit';
 
 /**
- * Siege of Yorktown, 1781 (APUSH Unit 3, u3e5).
+ * Siege of Yorktown, 1781 (APUSH Unit 3, u3e5 L76 / L124): the trap closes on Cornwallis.
  *
- * Time-control contract: every animation derives from `phases` (0-1 fractions of the
- * composition) and `durationInFrames` — no hard-coded frame numbers. Expected phases:
- * setup (map + Cornwallis at Yorktown), trap (de Grasse seals the Chesapeake, Washington
- * marches south), siege (trench rings tighten), surrender. Missing phases degrade to 0-1.
+ * Parchment Chesapeake map. Cornwallis is dug in at Yorktown; de Grasse's French fleet sails in and seals the bay
+ * mouth while Washington and Rochambeau's allied army comes down the bay and up the James; then the allied siege
+ * lines tighten ring by ring around Yorktown with artillery flashes, the camera drifting in. Labels only (places,
+ * commanders); dates come from the documentary's year stamps.
+ *
+ * DEFAULT_PHASES: setup (map + Cornwallis at Yorktown) / trap (fleet seals the bay, allied army arrives) /
+ * siege (siege lines tighten).
  */
-export interface Phase { name: string; start: number; end: number }
-export interface YorktownMapProps {
-  durationInFrames?: number;
-  phases: Phase[];
-}
+export const DEFAULT_PHASES: Phase[] = [
+  {name: 'setup', start: 0, end: 0.15},
+  {name: 'trap', start: 0.15, end: 0.6},
+  {name: 'siege', start: 0.6, end: 1},
+];
+
+export type YorktownMapProps = CustomProps;
 
 const YORKTOWN: LonLat = [-76.51, 37.24];
 const WILLIAMSBURG: LonLat = [-76.71, 37.27];
 /** Camera fitted to the Virginia / Chesapeake theater. New York sits off-frame north. */
 const EXTENT: [LonLat, LonLat] = [[-78.0, 36.0], [-74.9, 38.9]];
-/** Washington + Rochambeau march south from the top edge toward Yorktown. */
-const WASHINGTON_MARCH: LonLat[] = [[-76.48, 38.98], [-76.72, 38.35], [-76.7, 37.62], [-76.71, 37.27], [-76.64, 37.19]];
+/**
+ * Allied army's approach. Basis: after marching from New York to the head of the Chesapeake, most of the allied army
+ * was carried down the bay by water (Head of Elk / Annapolis) to the James River and landed near Williamsburg in late
+ * September 1781 (standard accounts; review note). Drawn as a water route from the top edge, then a short march.
+ */
+const ALLIED_ROUTE: LonLat[] = [
+  [-76.45, 39.0], [-76.38, 38.55], [-76.22, 38.0], [-76.12, 37.5], [-76.1, 37.12],
+  [-76.3, 36.98], [-76.47, 36.99], [-76.62, 37.12], [-76.74, 37.2], [-76.71, 37.27], [-76.6, 37.24],
+];
 /** Hand-drawn York River (absent from the 10m rivers dataset). */
 const YORK_RIVER: LonLat[] = [[-76.51, 37.24], [-76.72, 37.34], [-76.94, 37.5], [-77.2, 37.64]];
-/** French blockade line across the Chesapeake mouth; ships sail in from offshore. */
+/** French blockade line across the Chesapeake mouth (Cape Henry - Cape Charles); ships sail in from offshore. */
 const BLOCK_A: LonLat = [-76.16, 36.84];
 const BLOCK_B: LonLat = [-75.84, 37.13];
 const OFFSHORE: LonLat = [-75.22, 36.98];
 
-const SIDE = { british: COLOR.redOnNight, american: COLOR.skyOnNight, french: COLOR.goldOnNight } as const;
+const SIDE = {british: PAPER.british, american: PAPER.patriot, french: PAPER.gold} as const;
 const clamp01 = (v: number) => Math.max(0, Math.min(1, v));
 
-/** Stylized 18th-century warship (hull, mast, sails). */
-const ShipGlyph: React.FC<{ x: number; y: number; s: number; color: string; opacity: number }> = ({ x, y, s, color, opacity }) => (
+/** Stylized 18th-century warship (hull, mast, sails), authored at unit size; `s` carries the scale. */
+const ShipGlyph: React.FC<{x: number; y: number; s: number; color: string; opacity: number}> = ({x, y, s, color, opacity}) => (
   <g transform={`translate(${x}, ${y}) scale(${s})`} opacity={opacity}>
-    <path d="M -11 -2 L 11 -2 L 7 5 L -7 5 Z" fill={color} />
-    <line x1={0} y1={-2} x2={0} y2={-16} stroke={color} strokeWidth={1.6} />
+    <path d="M -11 -2 L 11 -2 L 7 5 L -7 5 Z" fill={color} stroke={PAPER.ink} strokeWidth={0.8} />
+    <line x1={0} y1={-2} x2={0} y2={-16} stroke={PAPER.ink} strokeWidth={1.4} />
     <path d="M 0 -16 L 0 0 L -8 0 Z" fill={alpha(color, 0.95)} />
     <path d="M 0 -16 L 0 0 L 8 0 Z" fill={alpha(color, 0.65)} />
   </g>
 );
 
-export const YorktownMap: React.FC<YorktownMapProps> = ({ durationInFrames: propDuration, phases }) => {
-  const frame = useCurrentFrame();
-  const { width, height, durationInFrames: configDuration } = useVideoConfig();
-  const durationInFrames = propDuration ?? configDuration;
-  /** Sizes are authored for a 1280-wide frame and scale with the composition width. */
-  const u = width / 1280;
-  const total = Math.max(1, durationInFrames);
+/** Walk a screen-space polyline by arc length. */
+const walk = (pts: [number, number][], t: number): [number, number] => {
+  let totalLen = 0;
+  const lens = pts.slice(1).map((p, i) => {
+    const d = Math.hypot(p[0] - pts[i][0], p[1] - pts[i][1]);
+    totalLen += d;
+    return d;
+  });
+  let dist = t * totalLen;
+  for (let i = 1; i < pts.length; i++) {
+    if (dist <= lens[i - 1]) {
+      const f = lens[i - 1] ? dist / lens[i - 1] : 0;
+      return [pts[i - 1][0] + (pts[i][0] - pts[i - 1][0]) * f, pts[i - 1][1] + (pts[i][1] - pts[i - 1][1]) * f];
+    }
+    dist -= lens[i - 1];
+  }
+  return pts[pts.length - 1];
+};
 
-  /** Phase progress 0-1 from fractions of the composition; unknown phases degrade to 0-1. */
-  const phase = (name: string): Phase => phases.find(p => p.name === name) ?? { name, start: 0, end: 1 };
-  const pt = (name: string, easing?: (t: number) => number) =>
-    interpolate(frame, [phase(name).start * total, phase(name).end * total], [0, 1],
-      easing
-        ? { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing }
-        : { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+export const YorktownMap: React.FC<YorktownMapProps> = ({durationInFrames, phases}) => {
+  const clock = usePhases(phases, DEFAULT_PHASES, durationInFrames);
+  const {frame, u} = clock;
+  const width = u(1280);
+  const height = u(720);
+  const ease = Easing.inOut(Easing.cubic);
 
-  const setupT = pt('setup');
-  const trapT = pt('trap', Easing.inOut(Easing.cubic));
-  const siegeT = pt('siege', Easing.inOut(Easing.cubic));
-  const surrenderT = pt('surrender', Easing.inOut(Easing.cubic));
-  const marchT = clamp01(trapT * 1.55);
+  const setupT = clock.t('setup');
+  const trapT = ease(clock.t('trap'));
+  const siegeT = ease(clock.t('siege'));
+  // Fleet first (seals the bay), then the army comes down behind it.
+  const fleetT = clamp01(trapT * 1.6);
+  const marchT = clamp01(trapT * 1.5 - 0.5);
 
   const projection = React.useMemo(() => usProjection(width, height, EXTENT, width * 0.04), [width, height]);
   const geo = React.useMemo(() => {
     const path = geoPath(projection);
-    return { neighbors: NEIGHBORS.features.map(f => path(f) ?? ''), nation: path(US_NATION) ?? '',
-      states: path(US_STATE_LINES) ?? '', rivers: riverPaths(path, ['James', 'Potomac', 'Susquehanna', 'S. Branch Potomac'], 8) };
+    return {
+      neighbors: NEIGHBORS.features.map(f => path(f) ?? ''),
+      nation: path(US_NATION) ?? '',
+      states: path(US_STATE_LINES) ?? '',
+      rivers: riverPaths(path, ['James', 'Potomac', 'Susquehanna', 'S. Branch Potomac'], 8),
+    };
   }, [projection]);
 
   const at = (ll: LonLat): [number, number] => projection(ll) ?? [0, 0];
   const line = (lls: LonLat[]) => lls.map((ll, i) => `${i ? 'L' : 'M'} ${at(ll).map(v => v.toFixed(1)).join(' ')}`).join(' ');
-  const halo = { stroke: alpha(COLOR.night, 0.92), strokeWidth: 3.5 * u, paintOrder: 'stroke' as const, strokeLinejoin: 'round' as const };
+  const halo = paperHalo(u);
 
   const [ykX, ykY] = at(YORKTOWN);
   const [wmX, wmY] = at(WILLIAMSBURG);
 
-  // Camera: gentle zoom-in all clip; during the siege it drifts to center on Yorktown.
-  const zoom = interpolate(frame, [0, total], [1.0, 1.14], { extrapolateRight: 'clamp' });
+  // Camera: gentle zoom-in across the shot; during the siege it drifts to center on Yorktown.
+  const zoom = interpolate(frame, [0, Math.max(1, clock.durationInFrames)], [1.0, 1.14], CLAMP);
   const panX = (width / 2 - ykX) * 0.35 * siegeT;
   const panY = (height / 2 - ykY) * 0.35 * siegeT;
 
-  // March marker walks the screen-space polyline by arc length.
-  const walk = (pts: [number, number][], t: number): [number, number] => {
-    let totalLen = 0;
-    const lens = pts.slice(1).map((p, i) => { const d = Math.hypot(p[0] - pts[i][0], p[1] - pts[i][1]); totalLen += d; return d; });
-    let dist = t * totalLen;
-    for (let i = 1; i < pts.length; i++) {
-      if (dist <= lens[i - 1]) { const f = lens[i - 1] ? dist / lens[i - 1] : 0; return [pts[i - 1][0] + (pts[i][0] - pts[i - 1][0]) * f, pts[i - 1][1] + (pts[i][1] - pts[i - 1][1]) * f]; }
-      dist -= lens[i - 1];
-    }
-    return pts[pts.length - 1];
-  };
-  const marchPts = React.useMemo(() => WASHINGTON_MARCH.map(at), [projection]); // eslint-disable-line react-hooks/exhaustive-deps
+  const marchPts = ALLIED_ROUTE.map(at);
   const marchHead = walk(marchPts, marchT);
   const marchNose = walk(marchPts, Math.min(1, marchT + 0.015));
   const marchAngle = (Math.atan2(marchNose[1] - marchHead[1], marchNose[0] - marchHead[0]) * 180) / Math.PI + 90;
 
-  // French fleet: staggered sail-in from offshore onto the blockade line, then bobbing at anchor.
+  // French fleet: staggered sail-in from offshore onto the blockade line, then riding at anchor.
   const SHIPS = 7;
-  const fleetT = pt('trap', Easing.inOut(Easing.cubic));
-  const ships = Array.from({ length: SHIPS }, (_, i) => {
+  const [ax, ay] = at(BLOCK_A);
+  const [bx, by] = at(BLOCK_B);
+  const [ox, oy] = at(OFFSHORE);
+  const ships = Array.from({length: SHIPS}, (_, i) => {
     const sail = Easing.out(Easing.cubic)(clamp01(fleetT * 1.5 - i * 0.07));
-    const [ax, ay] = at(BLOCK_A); const [bx, by] = at(BLOCK_B); const [ox, oy] = at(OFFSHORE);
-    const lx = ax + ((bx - ax) * i) / (SHIPS - 1), ly = ay + ((by - ay) * i) / (SHIPS - 1);
-    const oxj = ox + (i % 2 ? 22 : -22) * u, oyj = oy + (((i * 37) % 3 - 1) * 16) * u;
-    return { x: oxj + (lx - oxj) * sail, y: oyj + (ly - oyj) * sail + (sail >= 1 ? Math.sin(frame * 0.12 + i * 1.7) * 3 * u : 0),
-      s: (0.85 + sail * 0.45) * u, o: sail };
+    const lx = ax + ((bx - ax) * i) / (SHIPS - 1);
+    const ly = ay + ((by - ay) * i) / (SHIPS - 1);
+    const oxj = ox + u(i % 2 ? 22 : -22);
+    const oyj = oy + u((((i * 37) % 3) - 1) * 16);
+    const bob = sail >= 1 ? Math.sin(frame * 0.12 + i * 1.7) * u(3) : 0;
+    return {x: oxj + (lx - oxj) * sail, y: oyj + (ly - oyj) * sail + bob, s: (0.85 + sail * 0.45) * u(1), o: sail};
   });
-  const [baX, baY] = at(BLOCK_A);
-  const [bbX, bbY] = at(BLOCK_B);
 
-  // Siege rings: 3 trench ellipses tightening around Yorktown, drawn progressively.
-  const ringRx = [52, 84, 116].map(r => r * u);
+  // Siege lines: 3 ellipses tightening around Yorktown, drawn progressively (outer first).
+  const ringRx = [52, 84, 116].map(r => u(r));
   const ringRy = ringRx.map(r => r * 0.72);
-  const ringT = [0, 1, 2].map(i => clamp01(siegeT * 3.4 - i * 0.8));
+  const ringT = [0, 1, 2].map(i => clamp01(siegeT * 3.4 - (2 - i) * 0.8));
   const ringCirc = (rx: number, ry: number) => 2 * Math.PI * Math.sqrt((rx * rx + ry * ry) / 2);
 
-  // Artillery flashes along the middle ring; flicker while its ring is drawn.
-  const flashes = Array.from({ length: 8 }, (_, i) => {
-    const a = ((i / 8) * Math.PI * 2) + 0.35;
-    return { x: ykX + ringRx[1] * Math.cos(a), y: ykY + ringRy[1] * Math.sin(a),
-      on: ringT[1] > 0.55 && Math.sin(frame * 1.05 + i * 2.4) > 0.05, s: 3 + (i % 3) * 1.5 };
+  // Artillery flashes along the middle ring while it is drawn.
+  const flashes = Array.from({length: 8}, (_, i) => {
+    const a = (i / 8) * Math.PI * 2 + 0.35;
+    return {
+      x: ykX + ringRx[1] * Math.cos(a),
+      y: ykY + ringRy[1] * Math.sin(a),
+      on: ringT[1] > 0.55 && Math.sin(frame * 1.05 + i * 2.4) > 0.05,
+      s: 3 + (i % 3) * 1.5,
+    };
   });
 
-  const britishR = 10 * u * (1 - 0.25 * siegeT);
-  const trapClosed = trapT >= 0.97 && surrenderT < 0.4;
-  const trapPulse = 42 * u + Math.sin(frame * 0.25) * 6 * u;
-
-  const phaseNames: Phase['name'][] = ['setup', 'trap', 'siege', 'surrender'];
-  const activePhase = [...phaseNames].reverse().find(n => pt(n) >= 0.999) ?? 'setup';
-  const captions: Record<string, string> = {
-    setup: 'September 1781 — Cornwallis occupies Yorktown on the York River',
-    trap: 'de Grasse seals the Chesapeake — Washington marches south. The trap closes.',
-    siege: 'Allied trenches tighten ring by ring — artillery pounds the British lines',
-    surrender: 'October 19, 1781 — the last major battle of the Revolution',
+  const britishR = u(10) * (1 - 0.25 * siegeT);
+  const waterLabel = (ll: LonLat, text: string, rot = 0) => {
+    const [x, y] = at(ll);
+    return (
+      <text x={x} y={y} transform={rot ? `rotate(${rot}, ${x}, ${y})` : undefined} textAnchor="middle" fill={PAPER.inkSoft}
+        fontSize={u(TYPE.label)} fontFamily={FONT.display} fontStyle="italic" letterSpacing={u(2)} {...halo}>
+        {text}
+      </text>
+    );
   };
 
   return (
-    <div style={{ position: 'relative', width: '100%', height: '100%', overflow: 'hidden', backgroundColor: COLOR.night, fontFamily: FONT.ui }}>
-      {/* MAP in one svg, moved by the camera */}
-      <div
-        style={{
-          position: 'absolute',
-          inset: 0,
-          transform: `scale(${zoom}) translate(${panX}px, ${panY}px)`,
-          transformOrigin: 'center center',
-          zIndex: 20,
-          opacity: clamp01(setupT * 4),
-        }}
-      >
-        <svg viewBox={`0 0 ${width} ${height}`} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', overflow: 'visible' }}>
-          <rect x={-width} y={-height} width={width * 3} height={height * 3} fill={COLOR.nightOcean} />
+    <PaperSheet fontFamily={FONT.display}>
+      <div style={{position: 'absolute', inset: 0, transform: `scale(${zoom}) translate(${panX}px, ${panY}px)`, transformOrigin: 'center center', opacity: clamp01(setupT * 4)}}>
+        <svg viewBox={`0 0 ${width} ${height}`} style={{position: 'absolute', inset: 0, width: '100%', height: '100%', overflow: 'visible'}}>
+          <rect x={-width} y={-height} width={width * 3} height={height * 3} fill={PAPER.water} />
           {geo.neighbors.map((d, i) => (
-            <path key={i} d={d} fill={COLOR.nightPanel} stroke={COLOR.nightCoast} strokeWidth={0.8 * u} />
+            <path key={i} d={d} fill={PAPER.land} stroke={PAPER.coast} strokeWidth={u(0.8)} />
           ))}
-          <path d={geo.nation} fill={COLOR.nightLand} stroke={COLOR.nightCoast} strokeWidth={1.2 * u} />
-          <path d={geo.states} fill="none" stroke={alpha(COLOR.paperDeep, 0.28)} strokeWidth={u} strokeDasharray={`${6 * u} ${4 * u}`} />
-          <g fill="none" stroke={alpha(COLOR.skyOnNight, 0.55)} strokeLinecap="round">
+          <path d={geo.nation} fill={PAPER.land} stroke={PAPER.coast} strokeWidth={u(1.2)} />
+          <path d={geo.states} fill="none" stroke={PAPER.rule} strokeWidth={u(1)} strokeDasharray={`${u(6)} ${u(4)}`} />
+          <g fill="none" stroke={PAPER.waterDeep} strokeLinecap="round">
             {geo.rivers.map((r, i) => (
-              <path key={i} d={r.d} strokeWidth={2 * u} />
+              <path key={i} d={r.d} strokeWidth={u(2)} />
             ))}
-            <path d={line(YORK_RIVER)} strokeWidth={2 * u} />
+            <path d={line(YORK_RIVER)} strokeWidth={u(2)} />
           </g>
 
-          {/* Water labels */}
-          <text x={at([-76.32, 37.66])[0]} y={at([-76.32, 37.66])[1]} transform={`rotate(-18, ${at([-76.32, 37.66])[0]}, ${at([-76.32, 37.66])[1]})`} textAnchor="middle" fill={alpha(COLOR.onNight, 0.85)} fontSize={TYPE.tag * u} fontStyle="italic" fontWeight={700} {...halo}>
-            Chesapeake Bay
-          </text>
-          <text x={at([-75.1, 37.42])[0]} y={at([-75.1, 37.42])[1]} textAnchor="middle" fill={alpha(COLOR.onNight, 0.6)} fontSize={TYPE.tag * u} fontStyle="italic" fontWeight={700} {...halo}>
-            Atlantic Ocean
-          </text>
-          <text x={at([-77.5, 37.62])[0]} y={at([-77.5, 37.62])[1]} textAnchor="middle" fill={alpha(COLOR.onNight, 0.55)} fontSize={TYPE.place * u} fontFamily={FONT.display} fontWeight={900} letterSpacing={3 * u} {...halo}>
-            VIRGINIA
-          </text>
-          <text x={at([-76.28, 38.6])[0]} y={at([-76.28, 38.6])[1]} textAnchor="middle" fill={alpha(COLOR.onNight, 0.4)} fontSize={TYPE.tag * u} fontFamily={FONT.display} fontWeight={700} letterSpacing={2 * u} {...halo}>
-            MARYLAND
-          </text>
+          {waterLabel([-76.32, 37.66], 'CHESAPEAKE BAY', -18)}
+          {waterLabel([-75.1, 37.42], 'ATLANTIC OCEAN')}
+          {(() => {
+            const [x, y] = at([-77.5, 37.62]);
+            return (
+              <text x={x} y={y} textAnchor="middle" fill={PAPER.ink} opacity={0.75} fontSize={u(TYPE.place)} fontWeight={700} letterSpacing={u(5)} {...halo}>
+                VIRGINIA
+              </text>
+            );
+          })()}
 
           {/* Williamsburg */}
           <g opacity={clamp01(setupT * 5)}>
-            <circle cx={wmX} cy={wmY} r={4.5 * u} fill={COLOR.onNightMuted} stroke={COLOR.onNight} strokeWidth={1.2 * u} />
-            <text x={wmX + 9 * u} y={wmY + 1 * u} fill={COLOR.onNight} fontSize={TYPE.town * u} fontWeight={700} {...halo}>
-              Williamsburg
+            <circle cx={wmX} cy={wmY} r={u(4.5)} fill={PAPER.ink} stroke={PAPER.halo} strokeWidth={u(1.5)} />
+            <text x={wmX - u(9)} y={wmY - u(8)} textAnchor="end" fill={PAPER.ink} fontSize={u(TYPE.town)} fontWeight={700} {...halo}>
+              WILLIAMSBURG
             </text>
           </g>
 
           {/* TRAP: French fleet seals the Chesapeake mouth */}
-          <g opacity={clamp01(trapT * 3)}>
-            <line x1={baX} y1={baY} x2={bbX} y2={bbY} stroke={alpha(SIDE.french, 0.5)} strokeWidth={3 * u} strokeDasharray={`${8 * u} ${6 * u}`} />
+          <g opacity={clamp01(fleetT * 3)}>
+            <line x1={ax} y1={ay} x2={bx} y2={by} stroke={alpha(SIDE.french, 0.7)} strokeWidth={u(3)} strokeDasharray={`${u(8)} ${u(6)}`} />
             {ships.map((s, i) => <ShipGlyph key={i} x={s.x} y={s.y} s={s.s} color={SIDE.french} opacity={s.o} />)}
             {fleetT > 0.55 && (
-              <text x={(baX + bbX) / 2 + 130 * u} y={(baY + bbY) / 2 + 44 * u} textAnchor="middle" fill={SIDE.french} fontSize={TYPE.label * u} fontWeight={900} fontFamily={FONT.display} {...halo}>
-                de Grasse · 29 warships
+              <text x={(ax + bx) / 2 + u(110)} y={(ay + by) / 2 + u(44)} textAnchor="middle" fill={PAPER.ink} fontSize={u(TYPE.label)} fontWeight={700} {...halo}>
+                DE GRASSE
               </text>
             )}
           </g>
 
-          {/* TRAP: Washington & Rochambeau march south */}
-          <g opacity={clamp01(trapT * 3)}>
-            <path d={line(WASHINGTON_MARCH)} fill="none" stroke={SIDE.american} strokeWidth={4 * u} strokeLinecap="round" strokeLinejoin="round" pathLength={1} strokeDasharray="1 1" strokeDashoffset={1 - marchT} style={{ filter: `drop-shadow(0 0 ${5 * u}px ${SIDE.american})` }} />
+          {/* TRAP: Washington & Rochambeau come down the bay and up the James */}
+          <g opacity={clamp01(marchT * 6)}>
+            <path d={line(ALLIED_ROUTE)} fill="none" stroke={SIDE.american} strokeWidth={u(4)} strokeLinecap="round" strokeLinejoin="round"
+              pathLength={1} strokeDasharray="1 1" strokeDashoffset={1 - marchT} />
             {marchT > 0.02 && (
-              <g transform={`translate(${marchHead[0]}, ${marchHead[1]}) rotate(${marchAngle})`}>
-                <path d="M 0 -9 L 6 6 L 0 3 L -6 6 Z" fill={SIDE.american} stroke={COLOR.onNight} strokeWidth={1.2} transform={`scale(${u})`} />
+              <g transform={`translate(${marchHead[0]}, ${marchHead[1]}) rotate(${marchAngle}) scale(${u(1)})`}>
+                <path d="M 0 -9 L 6 6 L 0 3 L -6 6 Z" fill={SIDE.american} stroke={PAPER.halo} strokeWidth={1.2} />
               </g>
             )}
-            {marchT > 0.25 && (
-              <text x={marchHead[0] + 14 * u} y={marchHead[1] - 8 * u} fill={SIDE.american} fontSize={TYPE.label * u} fontWeight={900} fontFamily={FONT.display} {...halo}>
-                Washington &amp; Rochambeau
+            {marchT > 0.1 && (
+              <text x={at([-76.45, 38.3])[0] + u(16)} y={at([-76.45, 38.3])[1]} fill={SIDE.american} fontSize={u(TYPE.label)} fontWeight={700} {...halo}>
+                WASHINGTON &amp; ROCHAMBEAU
               </text>
             )}
           </g>
 
-          {/* SIEGE: concentric trench rings tightening around Yorktown */}
+          {/* SIEGE: allied siege lines tightening around Yorktown */}
           <g opacity={clamp01(siegeT * 3)}>
             {[2, 1, 0].map(i => (
-              <ellipse
-                key={i}
-                cx={ykX}
-                cy={ykY}
-                rx={ringRx[i]}
-                ry={ringRy[i]}
-                fill="none"
-                stroke={i === 0 ? COLOR.gold : alpha(COLOR.amber, 0.9)}
-                strokeWidth={(i === 0 ? 3 : 2.2) * u}
-                strokeDasharray={`${ringCirc(ringRx[i], ringRy[i])}`}
-                strokeDashoffset={ringCirc(ringRx[i], ringRy[i]) * (1 - ringT[i])}
-                style={{ filter: `drop-shadow(0 0 ${5 * u}px ${alpha(COLOR.amber, 0.7)})` }}
-                transform={`rotate(-90 ${ykX} ${ykY})`}
-              />
+              <ellipse key={i} cx={ykX} cy={ykY} rx={ringRx[i]} ry={ringRy[i]} fill="none" stroke={SIDE.american}
+                strokeWidth={u(i === 0 ? 3 : 2.2)} opacity={i === 0 ? 1 : 0.7}
+                strokeDasharray={`${ringCirc(ringRx[i], ringRy[i])}`} strokeDashoffset={ringCirc(ringRx[i], ringRy[i]) * (1 - ringT[i])}
+                transform={`rotate(-90 ${ykX} ${ykY})`} />
             ))}
             {flashes.map((f, i) =>
               f.on ? (
                 <g key={i} transform={`translate(${f.x}, ${f.y})`}>
-                  <circle r={f.s * 3.2 * u} fill={alpha(COLOR.goldOnNight, 0.35)} />
-                  <circle r={f.s * u} fill={COLOR.goldOnNight} style={{ filter: `drop-shadow(0 0 ${6 * u}px ${COLOR.amber})` }} />
+                  <circle r={u(f.s * 3.2)} fill={alpha(PAPER.gold, 0.35)} />
+                  <circle r={u(f.s)} fill={PAPER.gold} stroke={PAPER.ink} strokeWidth={u(0.6)} />
                 </g>
-              ) : null
+              ) : null,
             )}
           </g>
 
-          {/* Trap-closed pulse while Cornwallis is sealed in */}
-          {trapClosed && (
-            <g>
-              <circle cx={ykX} cy={ykY} r={trapPulse} fill="none" stroke={SIDE.british} strokeWidth={2.5 * u} strokeDasharray={`${10 * u} ${8 * u}`} opacity={0.9} />
-              <text x={ykX} y={ykY - trapPulse - 12 * u} textAnchor="middle" fill={SIDE.british} fontSize={TYPE.tag * u} fontFamily={FONT.mono} fontWeight={900} letterSpacing={2 * u} {...halo}>
-                TRAPPED
-              </text>
-            </g>
-          )}
-
-          {/* British position at Yorktown — flips to surrender flag */}
-          <g opacity={1 - surrenderT}>
-            <circle cx={ykX} cy={ykY} r={britishR} fill={SIDE.british} stroke={COLOR.onNight} strokeWidth={2.5 * u} style={{ filter: `drop-shadow(0 0 ${7 * u}px ${SIDE.british})` }} opacity={1 - siegeT * 0.35} />
-            <text x={ykX} y={ykY - 18 * u} textAnchor="middle" fill={COLOR.onNight} fontSize={TYPE.place * u} fontFamily={FONT.display} fontWeight={900} {...halo}>
-              YORKTOWN
-            </text>
-            <text x={ykX} y={ykY + ringRy[0] + 24 * u} textAnchor="middle" fill={SIDE.british} fontSize={TYPE.tag * u} fontFamily={FONT.mono} fontWeight={700} {...halo}>
-              Cornwallis · ~7,000 British
-            </text>
-          </g>
-          <g opacity={clamp01(surrenderT * 4)} transform={`translate(${ykX}, ${ykY})`}>
-            <circle r={16 * u} fill={COLOR.onNight} opacity={0.95} />
-            <line x1={0} y1={-22 * u} x2={0} y2={10 * u} stroke={COLOR.night} strokeWidth={2.5 * u} />
-            <path d={`M 0 ${-22 * u} L ${20 * u} ${-17 * u} L 0 ${-12 * u} Z`} fill={COLOR.onNight} stroke={COLOR.night} strokeWidth={1.2 * u} />
-          </g>
+          {/* British position at Yorktown */}
+          <circle cx={ykX} cy={ykY} r={britishR} fill={SIDE.british} stroke={PAPER.halo} strokeWidth={u(2.5)} />
+          <text x={ykX} y={ykY - u(18)} textAnchor="middle" fill={PAPER.ink} fontSize={u(TYPE.place)} fontWeight={700} letterSpacing={u(2)} {...halo}>
+            YORKTOWN
+          </text>
+          <text x={ykX + u(4)} y={ykY + ringRy[0] + u(26)} textAnchor="middle" fill={SIDE.british} fontSize={u(TYPE.label)} fontWeight={700} {...halo}>
+            CORNWALLIS
+          </text>
         </svg>
       </div>
-
-      {/* Vignette */}
-      <div
-        style={{
-          position: 'absolute',
-          inset: 0,
-          background: `radial-gradient(ellipse at 50% 50%, ${alpha(COLOR.night, 0)} 45%, ${alpha(COLOR.night, 0.72)} 100%)`,
-          pointerEvents: 'none',
-          zIndex: 21,
-        }}
-      />
-
-      {/* Surrender announcement */}
-      <div style={{ position: 'absolute', top: height * 0.16, left: 0, right: 0, display: 'flex', justifyContent: 'center', zIndex: 40, pointerEvents: 'none',
-          opacity: clamp01(surrenderT * 3), transform: `translateY(${(1 - clamp01(surrenderT * 2.5)) * -30 * u}px)` }}>
-        <div style={{ backgroundColor: alpha(COLOR.night, 0.92), border: `1px solid ${alpha(COLOR.goldOnNight, 0.6)}`, borderRadius: RADIUS.lg,
-            padding: `${10 * u}px ${28 * u}px`, textAlign: 'center', boxShadow: `0 12px 32px ${alpha(COLOR.night, 0.7)}` }}>
-          <div style={{ fontFamily: FONT.display, fontSize: TYPE.h1 * u, fontWeight: 900, color: COLOR.goldOnNight, letterSpacing: `${2 * u}px` }}>OCT 19, 1781</div>
-          <div style={{ fontSize: TYPE.h3 * u, fontWeight: 800, color: COLOR.onNight, marginTop: 4 * u }}>~8,000 British surrender</div>
-          <div style={{ fontSize: TYPE.label * u, fontStyle: 'italic', color: COLOR.onNightMuted, marginTop: 4 * u }}>The last major battle of the Revolution</div>
-        </div>
-      </div>
-
-      {/* Top HUD */}
-      <div style={{ position: 'absolute', top: 14, left: 16, right: 16, display: 'flex', justifyContent: 'space-between', alignItems: 'center', zIndex: 40, pointerEvents: 'none' }}>
-        <div style={{ backgroundColor: alpha(COLOR.night, 0.94), border: `1px solid ${alpha(COLOR.amber, 0.45)}`, borderLeft: `4px solid ${COLOR.amber}`, borderRadius: RADIUS.md, padding: '8px 16px' }}>
-          <span style={{ fontFamily: FONT.display, fontSize: TYPE.nano, fontWeight: 900, color: COLOR.amber, letterSpacing: '0.12em' }}>APUSH PERIOD 3 · 1781</span>
-          <span style={{ color: alpha(COLOR.onNight, 0.3) }}> · </span>
-          <span style={{ fontSize: TYPE.tag, fontWeight: 800, color: COLOR.onNight }}>Siege of Yorktown</span>
-        </div>
-        <div style={{ display: 'flex', gap: 8, backgroundColor: alpha(COLOR.night, 0.94), border: `1px solid ${alpha(COLOR.onNight, 0.15)}`, borderRadius: RADIUS.md, padding: '8px 12px' }}>
-          {phaseNames.map(n => (
-            <span key={n} style={{ fontSize: TYPE.nano, fontFamily: FONT.mono, fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.08em',
-                color: activePhase === n ? COLOR.goldOnNight : alpha(COLOR.onNight, 0.35),
-                borderBottom: activePhase === n ? `2px solid ${COLOR.goldOnNight}` : '2px solid transparent', paddingBottom: 2 }}>
-              {n}
-            </span>
-          ))}
-        </div>
-      </div>
-
-      {/* Bottom phase caption strip */}
-      <div style={{ position: 'absolute', bottom: 12, left: 16, right: 16, backgroundColor: alpha(COLOR.night, 0.94), borderRadius: RADIUS.md,
-          border: `1px solid ${alpha(COLOR.onNight, 0.12)}`, borderLeft: `4px solid ${SIDE.french}`, padding: '10px 18px', zIndex: 40, pointerEvents: 'none' }}>
-        <span style={{ fontSize: TYPE.small, color: alpha(COLOR.onNight, 0.92), lineHeight: 1.35 }}>{captions[activePhase]}</span>
-      </div>
-    </div>
+    </PaperSheet>
   );
 };

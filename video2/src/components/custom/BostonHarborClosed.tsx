@@ -1,39 +1,46 @@
+/**
+ * Boston Port Act, 1774: a parchment harbor schematic (Boston inside, the harbor mouth opening east). Merchant ships
+ * come and go; three Royal Navy warships sail in and take station across the mouth; inbound merchants turn back and
+ * the traffic thins. Labels: "Boston" only. (The Act closed the port to commerce until the destroyed tea was paid for,
+ * E3 L64; licensed coastal food and fuel still came in, so nothing here claims "no ships".)
+ *
+ * DEFAULT_PHASES (6-8 s):
+ * - trade    0.00-0.30  merchant traffic in and out
+ * - blockade 0.25-0.65  warships sail in and take station; the closure line draws
+ * - turned   0.60-1.00  inbound merchants turn back; traffic thins
+ */
 import React from 'react';
-import {useCurrentFrame, useVideoConfig, interpolate, Easing} from 'remotion';
-import {FONT, COLOR, TYPE, RADIUS, alpha} from '../../theme/tokens';
+import {Easing, interpolate} from 'remotion';
+import {FONT, TYPE} from '../../theme/tokens';
+import {CLAMP, PAPER, PaperSheet, paperHalo, usePhases, type CustomProps, type Phase} from './kit';
 
-/** Time-control contract: phases as 0-1 fractions of duration. */
-export interface Phase {name: string; start: number; end: number}
-export interface BostonHarborClosedProps {
-  durationInFrames?: number;
-  phases: Phase[];
-}
-
-const DEFAULT_PHASES: Phase[] = [
-  {name: 'setup', start: 0, end: 0.15},
-  {name: 'closure', start: 0.15, end: 0.5},
-  {name: 'strangle', start: 0.5, end: 0.8},
-  {name: 'resolve', start: 0.8, end: 1.0},
+export const DEFAULT_PHASES: Phase[] = [
+  {name: 'trade', start: 0, end: 0.3},
+  {name: 'blockade', start: 0.25, end: 0.65},
+  {name: 'turned', start: 0.6, end: 1.0},
 ];
 
-/** Shipping lane: offscreen east → harbor mouth → inner harbor (design space 1280×720). */
+export type BostonHarborClosedProps = CustomProps;
+
+// Everything below is authored at 1280x720 and drawn inside one scale(u(1)) group.
+
+/** Shipping lane: offscreen east -> harbor mouth -> inner harbor. */
 const LANE: number[][] = [
   [1310, 362], [1050, 360], [880, 360], [760, 360], [620, 358], [480, 356], [390, 356],
 ];
 
-/** U-turn path: an inbound merchant reaches the blockade, curves north, and flees east. */
+/** Turn-back path: an inbound merchant reaches the blockade, swings south and heads back out to sea. */
 const UTURN: number[][] = [
-  [1260, 332], [1090, 345], [995, 360], [955, 395],
-  [970, 448], [1040, 478], [1140, 470], [1300, 452],
+  [1300, 332], [1120, 342], [1010, 356], [965, 392], [980, 446], [1050, 474], [1150, 466], [1320, 450],
 ];
 
-/** Blockade stations across the harbor mouth (east of the tips at x≈760). */
+/** Blockade stations across the harbor mouth (east of the headlands at x~760). */
 const WARSHIP_STATIONS: number[][] = [[900, 272], [900, 360], [900, 448]];
 
-const NORTH_LAND =
-  'M 0 0 L 900 0 C 870 120 830 210 760 298 L 690 330 C 520 285 260 270 0 270 Z';
-const SOUTH_LAND =
-  'M 0 720 L 900 720 C 870 600 830 510 760 422 L 690 390 C 520 435 260 450 0 450 Z';
+const NORTH_LAND = 'M -40 -40 L 900 -40 L 900 0 C 870 120 830 210 760 298 L 690 330 C 520 285 260 270 -40 270 Z';
+const SOUTH_LAND = 'M -40 760 L 900 760 L 900 720 C 870 600 830 510 760 422 L 690 390 C 520 435 260 450 -40 450 Z';
+
+const WAVES: number[][] = [[980, 250], [1120, 300], [1040, 540], [1180, 600], [520, 330], [600, 395]];
 
 function samplePath(path: number[][], s: number): {x: number; y: number; ang: number} {
   const total = path.length - 1;
@@ -42,254 +49,112 @@ function samplePath(path: number[][], s: number): {x: number; y: number; ang: nu
   const f = c * total - seg;
   const [x1, y1] = path[seg];
   const [x2, y2] = path[seg + 1];
-  return {
-    x: x1 + (x2 - x1) * f,
-    y: y1 + (y2 - y1) * f,
-    ang: (Math.atan2(y2 - y1, x2 - x1) * 180) / Math.PI,
-  };
+  return {x: x1 + (x2 - x1) * f, y: y1 + (y2 - y1) * f, ang: (Math.atan2(y2 - y1, x2 - x1) * 180) / Math.PI};
 }
 
-const ShipIcon: React.FC<{
-  size: number;
-  hull: string;
-  hullEdge: string;
-  sail: string;
-  warship?: boolean;
-}> = ({size, hull, hullEdge, sail, warship = false}) => {
-  const s = size;
+/** Heading -> transform: westbound ships are mirrored, not rotated 180° (which would put the sails under the hull). */
+const heading = (x: number, y: number, ang: number) => {
+  const west = Math.abs(ang) > 90;
+  const tilt = west ? (ang > 0 ? ang - 180 : ang + 180) : ang;
+  return `translate(${x.toFixed(1)} ${y.toFixed(1)}) rotate(${tilt.toFixed(1)}) scale(${west ? -1 : 1} 1)`;
+};
+
+/** Side-view ship; bow toward +x. */
+const ShipIcon: React.FC<{size: number; hull: string; sail: string; pennant: string; warship?: boolean}> = ({size: s, hull, sail, pennant, warship = false}) => {
   const masts = warship ? [s * 0.25, -s * 0.35] : [0];
   return (
     <g>
-      <polygon
-        points={`${-s * 0.9},${-s * 0.22} ${s * 0.7},${-s * 0.22} ${s * 0.95},0 ${s * 0.7},${s * 0.22} ${-s * 0.9},${s * 0.22}`}
-        fill={hull}
-        stroke={hullEdge}
-        strokeWidth={s * 0.06}
-        strokeLinejoin="round"
-      />
+      <polygon points={`${-s * 0.9},${-s * 0.22} ${s * 0.7},${-s * 0.22} ${s * 0.95},0 ${s * 0.7},${s * 0.22} ${-s * 0.9},${s * 0.22}`}
+        fill={hull} stroke={PAPER.ink} strokeWidth={s * 0.06} strokeLinejoin="round" />
       {masts.map((mx, i) => (
         <g key={i}>
-          <line
-            x1={mx} y1={-s * 0.05} x2={mx} y2={-s * 1.05}
-            stroke={COLOR.brown} strokeWidth={s * 0.07} strokeLinecap="round"
-          />
-          <polygon
-            points={`${mx},${-s * 1.05} ${mx + s * 0.78},${-s * 0.12} ${mx},${-s * 0.12}`}
-            fill={sail} opacity={0.94}
-          />
-          <polygon
-            points={`${mx},${-s * 1.05} ${mx + s * 0.28},${-s * 0.96} ${mx},${-s * 0.87}`}
-            fill={warship ? COLOR.red : COLOR.gold}
-          />
+          <line x1={mx} y1={-s * 0.05} x2={mx} y2={-s * 1.05} stroke={PAPER.ink} strokeWidth={s * 0.07} strokeLinecap="round" />
+          <polygon points={`${mx},${-s * 1.05} ${mx + s * 0.78},${-s * 0.12} ${mx},${-s * 0.12}`} fill={sail} stroke={PAPER.inkSoft} strokeWidth={s * 0.04} />
+          <polygon points={`${mx},${-s * 1.05} ${mx - s * 0.28},${-s * 0.96} ${mx},${-s * 0.87}`} fill={pennant} />
         </g>
       ))}
     </g>
   );
 };
 
-export const BostonHarborClosed: React.FC<BostonHarborClosedProps> = ({
-  durationInFrames: propDuration,
-  phases = DEFAULT_PHASES,
-}) => {
-  const frame = useCurrentFrame();
-  const {width, height, durationInFrames: configDuration} = useVideoConfig();
-  const durationInFrames = propDuration ?? configDuration;
-  const u = width / 1280;
-  const total = Math.max(1, durationInFrames);
+export const BostonHarborClosed: React.FC<BostonHarborClosedProps> = ({durationInFrames, phases}) => {
+  const clock = usePhases(phases, DEFAULT_PHASES, durationInFrames);
+  const {u, frame, fps} = clock;
+  const width = u(1280);
+  const height = u(720);
 
-  const span = (name: string): Phase => {
-    const p = phases.find((q) => q.name === name);
-    if (!p || p.end <= p.start) return {name, start: 0, end: 1};
-    return p;
-  };
-  /** Phase-local 0→1 progress; all animation derives from phases + durationInFrames. */
-  const phaseT = (name: string, ease?: (v: number) => number) => {
-    const p = span(name);
-    return interpolate(frame, [p.start * total, p.end * total], [0, 1], {
-      extrapolateLeft: 'clamp',
-      extrapolateRight: 'clamp',
-      ...(ease ? {easing: ease} : {}),
-    });
-  };
+  const tradeT = clock.t('trade');
+  const blockT = Easing.inOut(Easing.cubic)(clock.t('blockade'));
+  const turnedT = clock.t('turned');
+  const sec = frame / fps;
 
-  const setupT = phaseT('setup');
-  const closureT = phaseT('closure', Easing.inOut(Easing.cubic));
-  const strangleT = phaseT('strangle', Easing.inOut(Easing.cubic));
-  const resolveT = phaseT('resolve', Easing.out(Easing.cubic));
-
-  // --- Merchant traffic: loops during setup, slows in closure, dims out in strangle ---
-  const shipClock = setupT * 1.8 + closureT * 1.0 + strangleT * 0.12;
-  const merchantFade = interpolate(strangleT, [0, 1], [1, 0.18]);
-  const merchantIntro = interpolate(setupT, [0.02, 0.25], [0, 1], {
-    extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
-  });
-  const merchants = [0, 1, 2, 3, 4].map((i) => {
+  // Merchant traffic: flows through trade, slows in the blockade, thins out once ships are turned back.
+  const shipClock = tradeT * 1.2 + blockT * 0.5 + turnedT * 0.1;
+  const merchantIntro = interpolate(tradeT, [0, 0.2], [0, 1], CLAMP);
+  const merchantFade = interpolate(turnedT, [0, 1], [1, 0.15], CLAMP);
+  const merchants = [0, 1, 2, 3, 4].map(i => {
     const inbound = i % 2 === 0;
-    const s = (((i / 5) + shipClock) % 1 + 1) % 1;
-    const pos = samplePath(LANE, inbound ? s : 1 - s);
-    return {pos, opacity: merchantIntro * merchantFade, key: i};
+    const s = ((i / 5 + shipClock) % 1 + 1) % 1;
+    return {...samplePath(LANE, inbound ? s : 1 - s), ang: inbound ? 180 : 0, inbound};
   });
 
-  // --- British warships: sail in staggered and take station across the mouth ---
+  const lineT = interpolate(blockT, [0.6, 1], [0, 1], CLAMP);
   const warships = WARSHIP_STATIONS.map(([sx, sy], k) => {
-    const w = interpolate(closureT, [k * 0.22, Math.min(1, k * 0.22 + 0.55)], [0, 1], {
-      extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.inOut(Easing.cubic),
-    });
-    return {
-      x: interpolate(w, [0, 1], [1340, sx]),
-      y: interpolate(w, [0, 1], [sy + 70, sy]),
-      ang: interpolate(w, [0, 1], [-12, 0]),
-      opacity: w > 0 ? 1 : 0,
-      key: k,
-    };
-  });
-  const blockadeLineOp = interpolate(closureT, [0.7, 1], [0, 0.9], {
-    extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
+    const w = interpolate(blockT, [k * 0.2, Math.min(1, k * 0.2 + 0.6)], [0, 1], {...CLAMP, easing: Easing.inOut(Easing.cubic)});
+    return {x: interpolate(w, [0, 1], [1360, sx]), y: interpolate(w, [0, 1], [sy + 60, sy]), w};
   });
 
-  // --- Strangle: inbound merchants turn away at the blockade ---
-  const turnarounds = [0, 1].map((j) => {
-    const uT = interpolate(strangleT, [j * 0.3, Math.min(1, 0.55 + j * 0.3)], [0, 1], {
-      extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
-    });
-    const pos = samplePath(UTURN, uT);
-    const opacity = uT <= 0 ? 0 : interpolate(uT, [0.72, 1], [1, 0], {
-      extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
-    });
-    return {pos, opacity, key: j};
+  const turnarounds = [0, 1].map(j => {
+    const p = interpolate(turnedT, [j * 0.3, Math.min(1, 0.6 + j * 0.3)], [0, 1], CLAMP);
+    return {...samplePath(UTURN, p), opacity: p <= 0 ? 0 : interpolate(p, [0.8, 1], [1, 0], CLAMP)};
   });
 
-  // --- Labels ---
-  const setupLabelOp = interpolate(setupT, [0.1, 0.4], [0, 1], {
-    extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
-  }) * (1 - closureT);
-  const closureLabelOp = interpolate(closureT, [0.35, 0.7], [0, 1], {
-    extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
-  }) * (1 - strangleT);
-  const strangleLabelOp = interpolate(strangleT, [0.15, 0.45], [0, 1], {
-    extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
-  }) * (1 - resolveT);
-  const resolveDim = interpolate(resolveT, [0, 0.6], [0, 0.55], {
-    extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
-  });
-  const panelScale = interpolate(resolveT, [0, 1], [0.92, 1], {
-    extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
-  });
-
-  const mouthPulse = 0.55 + 0.45 * Math.sin(frame * 0.18);
+  // Slow push toward the harbor mouth.
+  const D = Math.max(1, clock.durationInFrames);
+  const zoom = interpolate(frame, [0, D], [1, 1.07], {...CLAMP, easing: Easing.inOut(Easing.quad)});
 
   return (
-    <div style={{width, height, backgroundColor: COLOR.night, position: 'relative', overflow: 'hidden'}}>
-      <svg width={width} height={height} style={{position: 'absolute'}}>
-        <g transform={`scale(${u})`}>
-          {/* Sea */}
-          <rect x={0} y={0} width={1280} height={720} fill={COLOR.nightOcean} />
-          {/* Harbor basin glow */}
-          <ellipse cx={470} cy={360} rx={290} ry={82} fill={alpha(COLOR.skyOnNight, 0.07)} />
-          {/* Land masses */}
-          <path d={NORTH_LAND} fill={COLOR.nightLand} stroke={COLOR.nightCoast} strokeWidth={3} />
-          <path d={SOUTH_LAND} fill={COLOR.nightLand} stroke={COLOR.nightCoast} strokeWidth={3} />
+    <PaperSheet fontFamily={FONT.display}>
+      <svg width={width} height={height} viewBox={`0 0 ${width} ${height}`} style={{position: 'absolute', inset: 0}}>
+        <g transform={`scale(${u(1)}) translate(830 360) scale(${zoom}) translate(-830 -360)`}>
+          <rect x={-200} y={-200} width={1680} height={1120} fill={PAPER.water} />
+          <ellipse cx={1150} cy={360} rx={260} ry={420} fill={PAPER.waterDeep} opacity={0.35} />
+          {WAVES.map(([wx, wy], i) => (
+            <path key={i} d={`M ${wx - 24} ${wy} q 12 -7 24 0 t 24 0`} fill="none" stroke={PAPER.wave} strokeWidth={2}
+              transform={`translate(${6 * Math.sin(sec * 1.1 + i)} 0)`} />
+          ))}
+          <path d={NORTH_LAND} fill={PAPER.land} stroke={PAPER.coast} strokeWidth={2.5} strokeLinejoin="round" />
+          <path d={SOUTH_LAND} fill={PAPER.land} stroke={PAPER.coast} strokeWidth={2.5} strokeLinejoin="round" />
 
-          {/* Boston town marker */}
-          <circle cx={430} cy={244} r={6} fill={COLOR.goldOnNight} />
-          <text x={446} y={252} fontFamily={FONT.ui} fontSize={TYPE.place} fill={COLOR.onNight}>
+          {/* Boston */}
+          <circle cx={430} cy={244} r={6} fill={PAPER.ink} />
+          <text x={446} y={252} fontFamily={FONT.display} fontWeight={700} fontSize={TYPE.place} fill={PAPER.ink} {...paperHalo(n => n)}>
             Boston
           </text>
 
-          {/* Blockade line */}
-          <line
-            x1={900} y1={248} x2={900} y2={472}
-            stroke={COLOR.red} strokeWidth={3} strokeDasharray="10 8"
-            opacity={blockadeLineOp}
-          />
+          {/* closure line across the mouth */}
+          {lineT > 0 && <line x1={900} y1={240} x2={900} y2={240 + 240 * lineT} stroke={PAPER.red} strokeWidth={3} strokeDasharray="10 8" opacity={0.9} />}
 
-          {/* Merchant ships */}
-          {merchants.map(({pos, opacity, key}) => (
-            <g key={key} transform={`translate(${pos.x.toFixed(1)} ${pos.y.toFixed(1)}) rotate(${pos.ang.toFixed(1)})`} opacity={opacity}>
-              <ShipIcon size={16} hull={COLOR.brown} hullEdge={alpha(COLOR.foam, 0.5)} sail={alpha(COLOR.foam, 0.88)} />
+          {merchants.map((m, i) => (
+            <g key={i} transform={heading(m.x, m.y, m.ang)} opacity={merchantIntro * merchantFade * (m.inbound ? 1 - lineT : 1)}>
+              <ShipIcon size={16} hull={PAPER.brown} sail={PAPER.bg} pennant={PAPER.gold} />
             </g>
           ))}
 
-          {/* Turned-away merchants (strangle) */}
-          {turnarounds.map(({pos, opacity, key}) => (
-            <g key={key} transform={`translate(${pos.x.toFixed(1)} ${pos.y.toFixed(1)}) rotate(${pos.ang.toFixed(1)})`} opacity={opacity}>
-              <ShipIcon size={16} hull={COLOR.brown} hullEdge={alpha(COLOR.foam, 0.5)} sail={alpha(COLOR.foam, 0.88)} />
+          {turnarounds.map((m, i) => (
+            <g key={i} transform={heading(m.x, m.y, m.ang)} opacity={m.opacity}>
+              <ShipIcon size={16} hull={PAPER.brown} sail={PAPER.bg} pennant={PAPER.gold} />
             </g>
           ))}
 
-          {/* British warships */}
-          {warships.map(({x, y, ang, opacity, key}) => (
-            <g key={key} transform={`translate(${x.toFixed(1)} ${y.toFixed(1)}) rotate(${ang.toFixed(1)})`} opacity={opacity}>
-              <ShipIcon size={24} hull={COLOR.redDeep} hullEdge={COLOR.red} sail={alpha(COLOR.grey, 0.9)} warship />
+          {/* Royal Navy: bow-first westward into station */}
+          {warships.map((w, k) => (
+            <g key={k} transform={heading(w.x, w.y, 180)} opacity={w.w > 0 ? 1 : 0}>
+              <ShipIcon size={24} hull={PAPER.british} sail={PAPER.bg} pennant={PAPER.red} warship />
             </g>
           ))}
-
-          {/* Pulsing marker at the harbor mouth during closure */}
-          {closureT > 0.5 && strangleT < 0.5 && (
-            <circle
-              cx={830} cy={360} r={26}
-              fill="none" stroke={COLOR.red} strokeWidth={2.5}
-              opacity={mouthPulse * closureLabelOp}
-            />
-          )}
-
-          {/* Phase labels */}
-          {setupLabelOp > 0 && (
-            <g opacity={setupLabelOp}>
-              <text x={640} y={76} textAnchor="middle" fontFamily={FONT.display} fontSize={TYPE.h3} fill={COLOR.goldOnNight}>
-                Boston: busiest port in New England
-              </text>
-              <text x={640} y={110} textAnchor="middle" fontFamily={FONT.ui} fontSize={TYPE.body} fill={COLOR.onNightMuted}>
-                merchant ships come and go freely
-              </text>
-            </g>
-          )}
-          {closureLabelOp > 0 && (
-            <g opacity={closureLabelOp}>
-              <text x={1040} y={150} textAnchor="middle" fontFamily={FONT.ui} fontSize={TYPE.body} fill={COLOR.redOnNight}>
-                British warships take station
-              </text>
-              <text x={1040} y={180} textAnchor="middle" fontFamily={FONT.ui} fontSize={TYPE.body} fill={COLOR.redOnNight}>
-                across the harbor mouth
-              </text>
-            </g>
-          )}
-          {strangleLabelOp > 0 && (
-            <g opacity={strangleLabelOp}>
-              <text x={640} y={76} textAnchor="middle" fontFamily={FONT.display} fontSize={TYPE.h3} fill={COLOR.redOnNight}>
-                Trade stops — no ships in or out
-              </text>
-              <text x={1150} y={430} textAnchor="middle" fontFamily={FONT.ui} fontSize={TYPE.label} fill={COLOR.onNightMuted}>
-                turned away
-              </text>
-            </g>
-          )}
-
-          {/* Resolve: dim + act panel */}
-          {resolveDim > 0 && <rect x={0} y={0} width={1280} height={720} fill={alpha(COLOR.night, resolveDim)} />}
-          {resolveT > 0 && (
-            <g opacity={resolveT} transform={`translate(640 360) scale(${panelScale.toFixed(3)}) translate(-640 -360)`}>
-              <rect x={340} y={210} width={600} height={300} rx={RADIUS.lg}
-                fill={alpha(COLOR.nightPanel, 0.95)} stroke={COLOR.gold} strokeWidth={2.5} />
-              <text x={640} y={285} textAnchor="middle" fontFamily={FONT.display} fontSize={TYPE.h2} fill={COLOR.goldOnNight}>
-                THE BOSTON PORT ACT
-              </text>
-              <text x={640} y={325} textAnchor="middle" fontFamily={FONT.ui} fontSize={TYPE.body} fill={COLOR.onNightMuted}>
-                1774 — one of the Intolerable Acts
-              </text>
-              <text x={640} y={385} textAnchor="middle" fontFamily={FONT.ui} fontSize={TYPE.body} fill={COLOR.onNight}>
-                Harbor closed until the tea is paid for
-              </text>
-              <text x={640} y={425} textAnchor="middle" fontFamily={FONT.ui} fontSize={TYPE.body} fill={COLOR.onNight}>
-                No trade in or out
-              </text>
-              <text x={640} y={475} textAnchor="middle" fontFamily={FONT.ui} fontSize={TYPE.caption} fill={COLOR.redOnNight}>
-                1 in 3 Bostonians out of work
-              </text>
-            </g>
-          )}
         </g>
       </svg>
-    </div>
+    </PaperSheet>
   );
 };

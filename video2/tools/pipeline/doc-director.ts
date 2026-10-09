@@ -15,6 +15,7 @@ import {resolveBoxes} from './cues';
 import {LOOK_RULES, resolveShotPlan, type PlanShot, type ResolveOptions, type ShotPlan} from './shots';
 import type {PipelineTurn, WordTiming} from '../pipeline-core';
 import {ATMOSPHERES} from '../../src/documentary/atmosphere';
+import {CUSTOM_CATALOG} from '../../src/components/custom/catalog';
 
 /* ------------------------------------ catalog ------------------------------------ */
 
@@ -124,6 +125,8 @@ export function validateOutline(raw: unknown, turns: PipelineTurn[], timing: {st
 export interface MapData {
   geo: {id: string; name: string; type: string; precision: string}[];
   places: {id: string; name: string}[];
+  /** Library map views (data/library/maps): id, name and named camera targets. */
+  views?: {id: string; name: string; focus: string[]}[];
 }
 
 export interface ActOutput {shots: PlanShot[]; years?: NonNullable<ShotPlan['years']>}
@@ -145,11 +148,13 @@ export function actPrompt(index: number, outline: Outline, turns: PipelineTurn[]
     `- An image shot lasts at most ${LOOK_RULES.maxShotSec}s; a map at most ${LOOK_RULES.maxMapSec}s; no shot under ${LOOK_RULES.minShotSec}s.`,
     '- Text appears ONLY as: a point card (1-3 bullets, <= 6 words each, when the narration enumerates or states a thesis), a portrait name tag (first time a person is shown), a year stamp, and map labels.',
     '- First appearance of a named person: a "portrait" shot with name and role. Geography, borders, routes, empires: a "map" shot.',
+    '- Write maps against a MAP VIEW ("view": id): the view supplies projection, extent, opening camera, terrain and base labels. Add only what the narration drives: "moves" to a view focus or a place id, fills, lines, points by id. Use the full map form only when no view fits.',
     '- Every image shot must move: change zoom by >= 0.05 or move the focus point by >= 0.05.',
     `- Zoom is between 1.0 and that image's max zoom (listed). x and y (0..1) are the point to centre, e.g. a face.`,
     `- The same image may appear in at most ${LOOK_RULES.maxImageUses} shots in the whole lesson; prefer variety.`,
     '- "clip" (generated motion from a still) only for one big battle, fire, sea or crowd moment, at most one per act; prompt describes ambient motion only (smoke, water, flags, trees), never camera moves, never new people.',
-    `- Optional "atmosphere" on image, clip, portrait and point shots (not maps): ${ATMOSPHERES.join(', ')}.`,
+    `- "custom" (a hand-built animated explainer from CUSTOM EXPLAINERS) only where the narration is about exactly that event: at most one per act, ${LOOK_RULES.maxCustoms} per lesson, each ${LOOK_RULES.minCustomSec}-${LOOK_RULES.maxMapSec}s, starting on the phrase that introduces the event.`,
+    `- Optional "atmosphere" on image, clip, portrait and point shots (not maps or custom): ${ATMOSPHERES.join(', ')}.`,
     `- Every PAUSE turn of ${LOOK_RULES.questionPauseSec}s or more gets a "question" shot anchored to the pause itself ({"turn": pauseIndex}, no phrase), quoting the question VERBATIM from the line just before it (the question sentence only, not its setup). Mark questions after "N questions, AP-shaped" with "practice": true. Shorter pauses need nothing.`,
     '- Use only images from ASSETS and geography from MAP DATA. Never invent paths or ids. 19th-century imaginings (marked retrospective) must not be presented as eyewitness records.',
     `- The FIRST shot must start in turn ${act.turns.from}. Shots are in time order. ${PHRASE_RULE}`,
@@ -158,20 +163,27 @@ export function actPrompt(index: number, outline: Outline, turns: PipelineTurn[]
     'SHOT FORMATS (copy exactly):',
     '{"type":"image_move","at":{"turn":5,"phrase":"..."},"image":"<asset path>","from":{"x":0.5,"y":0.4,"zoom":1.0},"to":{"x":0.48,"y":0.3,"zoom":1.3},"atmosphere":["dust"]}',
     '{"type":"portrait","at":{...},"image":"<asset path>","from":{...},"to":{...},"name":"George Grenville","role":"Prime Minister, 1763-1765"}',
-    '{"type":"map","at":{...},"projection":"us"|"world","extent":{"southwest":{"lon":-92,"lat":24},"northeast":{"lon":-62,"lat":48}},"tilt":24,"terrain":{"ridges":["geo.line.appalachian-crest"],"rivers":true},',
-    ' "camera":[{"at":{"offset":0},"center":{"lon":-77,"lat":39},"zoom":1.2},{"at":{"turn":5,"phrase":"..."},"center":{"lon":-75,"lat":40},"zoom":1.6,"ease":2.5}],',
-    ' "fills":[{"at":{...},"region":{"geo":"<geo id>"}|{"state":"MA"},"color":"#b3261e"}], "lines":[{"at":{...},"geo":"<geo id>","color":"#b3261e","arrow":false}],',
-    ' "points":[{"at":{...},"place":"<place id>","kind":"fort"|"town"|"battle"}], "labels":[{"at":{...},"text":"Province of Quebec","lonlat":{"lon":-71,"lat":48.3},"style":"region"|"ocean"|"town"}]}',
+    '{"type":"map","at":{...},"view":"<map view id>","moves":[{"at":{"turn":5,"phrase":"..."},"to":"<view focus or place id>"}],',
+    ' "fills":[{"at":{...},"region":{"geo":"<geo id>"}|{"state":"MA"},"color":"red"}], "lines":[{"at":{...},"geo":"<geo id>","color":"red","arrow":false}], "points":[{"at":{...},"place":"<place id>","kind":"fort"|"town"|"battle"}]}',
+    'Full map form (only when no view fits): {"type":"map","at":{...},"projection":"us"|"world","extent":{"southwest":{"lon":-92,"lat":24},"northeast":{"lon":-62,"lat":48}},"tilt":24,"terrain":{"ridges":["<geo id>"],"rivers":true},',
+    ' "camera":[{"at":{"offset":0},"center":{"lon":-77,"lat":39},"zoom":1.2}], "labels":[{"at":{...},"text":"Province of Quebec","lonlat":{"lon":-71,"lat":48.3},"style":"region"|"ocean"|"town"}], plus fills/lines/points as above}',
     '{"type":"point","at":{...},"backdrop":"<asset path>","bullets":[{"at":{...},"text":"Britain won the war"}],"atmosphere":["embers"]}',
     '{"type":"clip","at":{...},"image":"<asset path>","prompt":"Gunpowder smoke drifts slowly across the battlefield; the flag ripples softly.","seed":1763,"focus":{"x":0.5,"y":0.5}}',
     '{"type":"question","at":{"turn":57},"question":"Which one buys time?","practice":false,"backdrop":"<optional asset path>"}',
-    'Cue forms: {"turn": i, "phrase": "..."} or {"offset": seconds after the shot starts}. Colors: gold #c9a227, amber #e2a33b, red #b3261e, blue #2c5aa0.',
+    '{"type":"custom","at":{...},"component":"<custom explainer name>"}',
+    'Cue forms: {"turn": i, "phrase": "..."} or {"offset": seconds after the shot starts}. Colors by name: gold, amber, red, blue.',
     'Optional year stamps for the act: "years":[{"at":{...},"text":"1763"}] (only for a year the narration says).',
     '',
     'Return JSON only: {"shots": [...], "years": [...]}',
     '',
     'ASSETS (path | size | max zoom | description | focus regions):',
     ...(catalog.length ? catalog.map(c => `${c.path} | ${c.width}x${c.height} | ${fmtZoom(c.maxZoom)} | ${c.description.replace(/\s+/g, ' ').slice(0, 200)}${c.retrospective ? ' (retrospective)' : ''}${c.focus?.length ? ` | ${c.focus.join(', ')}` : ''}`) : ['(none: use maps and point cards only)']),
+    '',
+    'CUSTOM EXPLAINERS (name | event | what it shows):',
+    ...Object.entries(CUSTOM_CATALOG).map(([name, c]) => `${name} | ${c.topic} | ${c.shows}`),
+    '',
+    'MAP VIEWS (view id | name | focus targets):',
+    ...(maps.views?.length ? maps.views.map(v => `${v.id} | ${v.name} | ${v.focus.join(', ')}`) : ['(none)']),
     '',
     'MAP DATA (geo id | type | precision | name), places (id | name), plus US states by postal code and countries by name:',
     ...maps.geo.map(g => `${g.id} | ${g.type} | ${g.precision} | ${g.name}`),
@@ -182,7 +194,7 @@ export function actPrompt(index: number, outline: Outline, turns: PipelineTurn[]
   ].join('\n');
 }
 
-export const ACT_REVIEW = `Switch roles: you are a skeptical senior editor. Re-check the shots you just wrote against every rule above: phrases verbatim from their turns, first shot in the first turn, cuts every 3-6 seconds, shot length limits, every image shot moves, zoom within each image's max zoom, only listed assets and geo ids, text limits, at most one clip. ${COORDINATE_RULE} Fix every problem silently and return ONLY the corrected JSON object {"shots": [...], "years": [...]}.`;
+export const ACT_REVIEW = `Switch roles: you are a skeptical senior editor. Re-check the shots you just wrote against every rule above: phrases verbatim from their turns, first shot in the first turn, cuts every 3-6 seconds, shot length limits, every image shot moves, zoom within each image's max zoom, only listed assets and geo ids, text limits, at most one clip, custom explainers only for their exact event. ${COORDINATE_RULE} Fix every problem silently and return ONLY the corrected JSON object {"shots": [...], "years": [...]}.`;
 
 /** Structural checks on one act before assembly (everything else is checked on the merged plan). */
 export function validateAct(raw: unknown, index: number, outline: Outline): {act?: ActOutput; issues: string[]} {

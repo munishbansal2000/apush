@@ -11,6 +11,8 @@ import type {PipelineTurn, WordTiming} from '../pipeline-core';
 import {resolvePhrase, type AnchorTiming, type PhraseAnchor} from './anchors';
 import {clipFingerprint, clipPromptIssues} from './clip-fingerprint';
 import {ATMOSPHERES, type Atmosphere} from '../../src/documentary/atmosphere';
+import {CUSTOM_NAMES} from '../../src/components/custom/catalog';
+import {expandMapViews, type MapViewDef, type ViewMapShot} from './map-views';
 
 /** A cue: a spoken phrase, or seconds after the shot starts. */
 export type Cue = PhraseAnchor | {offset: number};
@@ -29,6 +31,7 @@ export type PlanShot = (
       transition?: 'cut' | 'crossfade'}
   | {type: 'point'; at: PhraseAnchor; backdrop: string; bullets: {at: Cue; text: string}[]; transition?: 'cut' | 'crossfade'}
   | {type: 'question'; at: PauseAnchor; question: string; practice?: boolean; backdrop?: string; transition?: 'cut' | 'crossfade'}
+  | {type: 'custom'; at: PhraseAnchor; component: string; transition?: 'cut' | 'crossfade'}
 ) & {atmosphere?: string[]};
 
 /** A pause has no words to quote: question shots are anchored to the pause turn itself ({"turn": 57}). */
@@ -36,7 +39,8 @@ export interface PauseAnchor {turn: number; phrase?: undefined}
 
 export interface ShotPlan {
   episode: string;
-  shots: PlanShot[];
+  /** Map shots may be written against a library map view (see map-views.ts). */
+  shots: (PlanShot | ViewMapShot)[];
   years?: {at: PhraseAnchor; text: string}[];
   boxes?: {label: string; intro: PhraseAnchor; check: PhraseAnchor; turns: {from: number; to: number}}[];
   /** Where the last shot ends: a spoken phrase (samples) or the end of the episode audio (default). */
@@ -45,11 +49,13 @@ export interface ShotPlan {
 
 export interface ResolvedShotPlan {shots: DocShot[]; years: YearStamp[]; boxes: DocBox[]; endSec: number}
 
-export interface ShotRules {minShotSec: number; maxShotSec: number; maxMapSec: number; maxBullets: number; maxBulletWords: number; maxUpscale: number; maxImageUses: number; maxClips: number; questionPauseSec: number; questionOverrunSec: number}
+export interface ShotRules {minShotSec: number; maxShotSec: number; maxMapSec: number; maxBullets: number; maxBulletWords: number; maxUpscale: number; maxImageUses: number; maxClips: number; questionPauseSec: number; questionOverrunSec: number; minCustomSec: number; maxCustoms: number}
 /** maxImageUses is 4 while the asset library is thin (the hand sample uses Grenville 4x); LOOK.md's target is 3. */
 export const LOOK_RULES: ShotRules = {minShotSec: 1.2, maxShotSec: 8, maxMapSec: 14, maxBullets: 3, maxBulletWords: 6, maxUpscale: 1.6, maxImageUses: 4, maxClips: 2,
   /** Pauses this long or longer must be covered by a question card; a card may outlast its pause by questionOverrunSec. */
-  questionPauseSec: 5, questionOverrunSec: 6};
+  questionPauseSec: 5, questionOverrunSec: 6,
+  /** Custom explainers are signature moments: long enough to play their beat (up to maxMapSec), a couple per lesson. */
+  minCustomSec: 5, maxCustoms: 2};
 
 export interface ResolveOptions {
   /** Pixel sizes of public/ images (data/images.lock.json); a shot on a missing or unsized image is an error. */
@@ -62,6 +68,8 @@ export interface ResolveOptions {
   allowEstimated?: boolean;
   /** Library geography by id (data/library/geo). */
   geo?: Record<string, GeoFeature>;
+  /** Library map views by id (data/library/maps). */
+  mapViews?: Record<string, MapViewDef>;
   /** Library places by id: name and [lon, lat]. */
   places?: Record<string, {name: string; location?: LonLat}>;
   /** Samples only: allow geography that is not yet approved. */
@@ -90,10 +98,12 @@ function fixWinding(geometry: {type: string; coordinates: unknown}): {type: 'Pol
   throw new Error(`expected a Polygon or MultiPolygon, got ${geometry.type}`);
 }
 
-export function resolveShotPlan(plan: ShotPlan, turns: PipelineTurn[], timing: AnchorTiming & {totalSec: number}, words: Record<string, WordTiming[]>, opts: ResolveOptions): ResolvedShotPlan {
+export function resolveShotPlan(input: ShotPlan, turns: PipelineTurn[], timing: AnchorTiming & {totalSec: number}, words: Record<string, WordTiming[]>, opts: ResolveOptions): ResolvedShotPlan {
   const rules = opts.rules ?? LOOK_RULES;
   const frame = opts.frame ?? {width: 1920, height: 1080};
-  const issues: string[] = [];
+  const expanded = expandMapViews(input, opts.mapViews ?? {}, opts.places ?? {});
+  const plan = expanded.plan as Omit<ShotPlan, 'shots'> & {shots: PlanShot[]};
+  const issues: string[] = [...expanded.issues];
   const phrase = (where: string, a: PhraseAnchor, edge: 'start' | 'end' = 'start'): number => {
     try { return resolvePhrase(a, turns, timing, words, edge, opts.allowEstimated).sec; } catch (error) {
       issues.push(`${where}: ${error instanceof Error ? error.message : String(error)}`);
@@ -125,12 +135,13 @@ export function resolveShotPlan(plan: ShotPlan, turns: PipelineTurn[], timing: A
     if (Number.isFinite(len)) {
       if (len < rules.minShotSec) issues.push(`${id}: ${len.toFixed(2)}s is shorter than ${rules.minShotSec}s (cuts must not stutter)`);
       const pauseLen = shot.type === 'question' && turns[shot.at.turn]?.kind === 'pause' ? timing.durations[shot.at.turn] : 0;
-      const max = shot.type === 'map' ? rules.maxMapSec : shot.type === 'question' ? pauseLen + rules.questionOverrunSec : rules.maxShotSec;
+      if (shot.type === 'custom' && len < rules.minCustomSec) issues.push(`${id}: ${len.toFixed(1)}s is too short for a custom explainer (min ${rules.minCustomSec}s); give it a longer stretch of narration`);
+      const max = shot.type === 'map' || shot.type === 'custom' ? rules.maxMapSec : shot.type === 'question' ? pauseLen + rules.questionOverrunSec : rules.maxShotSec;
       if (len > max) issues.push(`${id}: ${len.toFixed(1)}s holds longer than ${max}s on one ${shot.type} shot; cut on another spoken cue`);
     }
     const cue = (where: string, c: Cue) => ('offset' in c ? startSec + c.offset : phrase(`${id} ${where}`, c));
     for (const kind of shot.atmosphere ?? []) if (!(ATMOSPHERES as readonly string[]).includes(kind)) issues.push(`${id}: unknown atmosphere "${kind}" (${ATMOSPHERES.join(', ')})`);
-    if (shot.atmosphere?.length && shot.type === 'map') issues.push(`${id}: maps take no atmosphere layers`);
+    if (shot.atmosphere?.length && (shot.type === 'map' || shot.type === 'custom')) issues.push(`${id}: ${shot.type} shots take no atmosphere layers`);
     const base = {id, startSec, endSec: end, transition: shot.transition, atmosphere: shot.atmosphere as Atmosphere[] | undefined};
     switch (shot.type) {
       case 'image_move':
@@ -222,6 +233,10 @@ export function resolveShotPlan(plan: ShotPlan, turns: PipelineTurn[], timing: A
         const size = shot.backdrop ? sized(id, shot.backdrop, [{x: 0.5, y: 0.5, zoom: 1.1}]) : undefined;
         return {...base, type: 'question', question: shot.question, practice: shot.practice, pauseStartSec, pauseEndSec, backdrop: shot.backdrop, size};
       }
+      case 'custom': {
+        if (!(CUSTOM_NAMES as string[]).includes(shot.component)) issues.push(`${id}: unknown custom component "${shot.component}" (${CUSTOM_NAMES.join(', ')})`);
+        return {...base, type: 'custom', component: shot.component};
+      }
       case 'point': {
         if (!shot.bullets.length || shot.bullets.length > rules.maxBullets) issues.push(`${id}: a point card has 1-${rules.maxBullets} bullets, got ${shot.bullets.length}`);
         for (const b of shot.bullets) {
@@ -248,6 +263,14 @@ export function resolveShotPlan(plan: ShotPlan, turns: PipelineTurn[], timing: A
   for (const [image, ids] of uses) if (ids.length > rules.maxImageUses) issues.push(`${ids[rules.maxImageUses]}: "${image}" is used in ${ids.length} shots (${ids.join(', ')}); max ${rules.maxImageUses} per lesson`);
   const clipShots = shots.filter(s => s.type === 'clip');
   if (clipShots.length > rules.maxClips) issues.push(`${clipShots[rules.maxClips].id}: ${clipShots.length} LTX clips; max ${rules.maxClips} per lesson`);
+  const customShots = shots.filter(s => s.type === 'custom');
+  if (customShots.length > rules.maxCustoms) issues.push(`${customShots[rules.maxCustoms].id}: ${customShots.length} custom explainers; max ${rules.maxCustoms} per lesson`);
+  const customSeen = new Map<string, string>();
+  for (const s of customShots) {
+    if (s.type !== 'custom') continue;
+    if (customSeen.has(s.component)) issues.push(`${s.id}: custom explainer "${s.component}" already used in ${customSeen.get(s.component)}`);
+    else customSeen.set(s.component, s.id);
+  }
   for (let i = 1; i < starts.length; i++) if (starts[i] <= starts[i - 1]) issues.push(`shot ${i + 1} starts at or before shot ${i} (${starts[i].toFixed(2)}s ≤ ${starts[i - 1].toFixed(2)}s)`);
 
   const years = (plan.years ?? []).map((y, i) => ({text: y.text, sec: phrase(`year ${i + 1}`, y.at)}));

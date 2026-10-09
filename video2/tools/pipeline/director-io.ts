@@ -18,12 +18,13 @@ export function directorCatalog(inputs: DocInputs): CatalogEntry[] {
   return buildCatalog(lessonImages, Object.fromEntries(Object.entries(registry).map(([k, v]) => [k, v.description ?? ''])), library);
 }
 
-/** Library geography (approved only, unless drafting) and places the director may reference. */
+/** Library geography (approved only, unless drafting), places and map views the director may reference. */
 export function directorMaps(inputs: DocInputs, draft: boolean): MapData {
   return {
     geo: Object.values(inputs.options.geo ?? {}).filter(g => draft || g.properties.review.status === 'approved')
       .map(g => ({id: g.properties.id, name: (g.properties as unknown as {name?: string}).name ?? g.properties.id, type: g.geometry.type, precision: g.properties.precision})),
     places: Object.entries(inputs.options.places ?? {}).map(([id, p]) => ({id, name: p.name})),
+    views: Object.values(inputs.options.mapViews ?? {}).map(v => ({id: v.id, name: v.name, focus: Object.keys(v.focus ?? {})})),
   };
 }
 

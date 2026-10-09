@@ -3,7 +3,8 @@ import {describe, it} from 'node:test';
 import {frameImage, framingAt, upscaleAt} from '../src/documentary/framing';
 import {shotWindows, soundCues, DOC_CROSSFADE_FRAMES} from '../src/documentary/DocEpisode';
 import {parseTranscript} from '../tools/pipeline-core';
-import {resolveShotPlan, type ShotPlan} from '../tools/pipeline/shots';
+import {LOOK_RULES, resolveShotPlan, type ShotPlan} from '../tools/pipeline/shots';
+import {CUSTOM_CATALOG} from '../src/components/custom/catalog';
 
 const frame = {width: 1920, height: 1080};
 
@@ -62,6 +63,51 @@ describe('shot plans', () => {
     const slow = plan();
     slow.shots = [slow.shots[1]];
     assert.throws(() => resolveShotPlan(slow, turns, timing, words, {imageSizes}), /13\.2s holds longer than 8s on one image_move shot/);
+  });
+
+  it('plays a custom explainer by catalog name, long enough for its beat, a couple per lesson at most', () => {
+    const custom = plan();
+    custom.shots.splice(1, 2, {type: 'custom', at: {turn: 0, phrase: '1763'}, component: 'ProclamationLineMap'});
+    const r = resolveShotPlan(custom, turns, timing, words, {imageSizes});
+    assert.ok(r.shots[1].type === 'custom' && r.shots[1].component === 'ProclamationLineMap');
+    const unknown = plan();
+    unknown.shots.splice(1, 2, {type: 'custom', at: {turn: 0, phrase: '1763'}, component: 'GrenvilleDance'});
+    assert.throws(() => resolveShotPlan(unknown, turns, timing, words, {imageSizes}), /unknown custom component "GrenvilleDance"/);
+    const short = plan();
+    short.shots[2] = {type: 'custom', at: {turn: 1, phrase: 'george grenville'}, component: 'StampActTax'};
+    assert.throws(() => resolveShotPlan(short, turns, timing, words, {imageSizes}), /too short for a custom explainer/);
+    assert.throws(() => resolveShotPlan(custom, turns, timing, words, {imageSizes, rules: {...LOOK_RULES, maxCustoms: 0}}), /1 custom explainers; max 0 per lesson/);
+  });
+
+  it('keeps the custom catalog and the component registry in step, with short default phases', async () => {
+    const {CUSTOM_COMPONENTS} = await import('../src/components/custom/registry');
+    assert.deepEqual(Object.keys(CUSTOM_COMPONENTS).sort(), Object.keys(CUSTOM_CATALOG).sort());
+    for (const [name, entry] of Object.entries(CUSTOM_COMPONENTS)) {
+      assert.ok(entry.phases.length >= 1 && entry.phases.length <= 3, `${name}: one beat, 1-3 phases`);
+      for (const p of entry.phases) assert.ok(p.start >= 0 && p.end <= 1 && p.end > p.start, `${name}: phase ${p.name} within 0..1`);
+    }
+  });
+
+  it('expands a map written against a library view: no coordinates, moves to focus targets or places, colour names', () => {
+    const mapViews = {'map.test': {id: 'map.test', name: 'Test', projection: 'us' as const, extent: [[-92, 24], [-62, 48]] as [[number, number], [number, number]], camera: {center: [-77, 39] as [number, number], zoom: 1.2}, tilt: 20,
+      labels: [{text: 'Atlantic Ocean', lonlat: [-68, 34] as [number, number], style: 'ocean' as const}], focus: {colonies: {center: [-75.5, 40.5] as [number, number], zoom: 1.7}}}};
+    const places = {'place.fort-pitt': {name: 'Fort Pitt', location: [-80.009, 40.441] as [number, number]}};
+    const viewPlan = plan();
+    viewPlan.shots[0] = {type: 'map', at: {turn: 0, phrase: 'last time'}, view: 'map.test',
+      moves: [{at: {turn: 0, phrase: 'english colonies'}, to: 'colonies'}, {at: {offset: 3}, to: 'place.fort-pitt'}],
+      fills: [{at: {turn: 0, phrase: 'english colonies'}, region: {state: 'MA'}, color: 'gold'}]};
+    const r = resolveShotPlan(viewPlan, turns, timing, words, {imageSizes, mapViews, places});
+    const m = r.shots[0];
+    assert.ok(m.type === 'map');
+    assert.deepEqual([m.projection, m.extent, m.tilt], ['us', [[-92, 24], [-62, 48]], 20]);
+    assert.deepEqual(m.camera.map(k => [k.center, k.zoom]), [[[-77, 39], 1.2], [[-75.5, 40.5], 1.7], [[-80.009, 40.441], 1.2 * 1.4]]);
+    assert.equal(m.fills![0].color, '#c9a227');
+    assert.equal(m.labels![0].text, 'Atlantic Ocean');
+    const bad = plan();
+    bad.shots[0] = {type: 'map', at: {turn: 0, phrase: 'last time'}, view: 'map.test', moves: [{at: {offset: 1}, to: 'ohio'}]};
+    assert.throws(() => resolveShotPlan(bad, turns, timing, words, {imageSizes, mapViews, places}), /"ohio" is not a focus of map\.test/);
+    bad.shots[0] = {type: 'map', at: {turn: 0, phrase: 'last time'}, view: 'map.nowhere'};
+    assert.throws(() => resolveShotPlan(bad, turns, timing, words, {imageSizes, mapViews, places}), /unknown map view "map\.nowhere"/);
   });
 
   it('allows estimated phrase times only when asked (samples without Vosk)', () => {
@@ -154,7 +200,7 @@ describe('hero clips and atmosphere', () => {
   it('rejects unknown atmosphere layers and atmosphere on maps', () => {
     assert.throws(() => resolveShotPlan(clipPlan(good, {atmosphere: ['lasers']}), turns, timing, words, base), /unknown atmosphere "lasers"/);
     const map: ShotPlan = {episode: 'x', shots: [{type: 'map', at: {turn: 0, phrase: '1763'}, projection: 'world', extent: [[-100, 20], [20, 60]], camera: [{at: {offset: 0}, center: [-40, 40], zoom: 1}], atmosphere: ['fog']}]};
-    assert.throws(() => resolveShotPlan(map, turns, timing, words, base), /maps take no atmosphere layers/);
+    assert.throws(() => resolveShotPlan(map, turns, timing, words, base), /map shots take no atmosphere layers/);
   });
 });
 

@@ -1,56 +1,78 @@
 import React from 'react';
-import { geoPath } from 'd3-geo';
-import { useCurrentFrame, useVideoConfig, interpolate, Easing } from 'remotion';
-import { NEIGHBORS, US_NATION, usProjection, type LonLat } from '../geo/usGeo';
-import { FONT, COLOR, TYPE, RADIUS, alpha } from '../../theme/tokens';
-
-export interface Phase { name: string; start: number; end: number } // 0-1 fractions of duration
-export interface BunkerHillMapProps {
-  durationInFrames: number;
-  phases: Phase[];
-}
+import {geoPath} from 'd3-geo';
+import {Easing, interpolate, useVideoConfig} from 'remotion';
+import {ringPolygon, usProjection, type LonLat} from '../geo/usGeo';
+import {FONT, TYPE, alpha} from '../../theme/tokens';
+import {CLAMP, PAPER, PaperSheet, paperHalo, usePhases, type CustomProps, type Phase} from './kit';
 
 /**
- * BATTLE OF BUNKER HILL — June 17, 1775 (fought mostly on Breed's Hill).
+ * Bunker Hill, June 1775 (APUSH Unit 3, u3e5 L18): three British charges up Breed's Hill.
  *
- * Expected phases (fractions of durationInFrames); a missing phase degrades to no motion:
- * - setup    0.00-0.15  Charlestown peninsula map: British hold Boston (red), colonials
- *                       fortify Breed's Hill overnight (blue redoubt markers appear)
- * - assault1 0.15-0.40  first British assault: red wave advances uphill, then recoils — repulsed
- * - assault2 0.40-0.60  second assault: same advance-and-collapse pattern
- * - assault3 0.60-0.85  third assault: wave advances and HOLDS — hill marker flips red,
- *                       colonial blues retreat across Charlestown Neck ("out of powder")
- * - resolve  0.85-1.00  casualty counters — British ~1,054 vs Colonial ~450, "Pyrrhic victory"
+ * Parchment map of the 1775 Charlestown and Boston peninsulas (hand-drawn period shoreline; the modern coastline is
+ * filled land). The American redoubt sits on Breed's Hill; a British wave climbs from the landing at Moulton's Point
+ * and is thrown back, twice; the third wave carries the hill (the Americans are out of powder), the hill marker turns
+ * red and the defenders fall back over Charlestown Neck, the camera pushing in. Labels only (Breed's Hill, Bunker
+ * Hill, Charlestown, Boston, the two rivers); no caption strip, no casualty card.
  *
- * All animation timing derives from `phases` + `durationInFrames`. No literal frame numbers.
+ * DEFAULT_PHASES: assault1 (repulsed) / assault2 (repulsed) / assault3 (takes the hill, retreat over the Neck).
  */
+export const DEFAULT_PHASES: Phase[] = [
+  {name: 'assault1', start: 0, end: 0.3},
+  {name: 'assault2', start: 0.3, end: 0.6},
+  {name: 'assault3', start: 0.6, end: 1},
+];
 
-// Key coordinates (LonLat)
-const BOSTON: LonLat = [-71.06, 42.36];
-const CHARLESTOWN: LonLat = [-71.06, 42.375];
-const BUNKER_HILL: LonLat = [-71.071, 42.381];
-const BREEDS_HILL: LonLat = [-71.065, 42.376];
-const NECK: LonLat = [-71.077, 42.384]; // Charlestown Neck — the only escape route
-const LANDING: LonLat = [-71.049, 42.369]; // British boats come ashore near Moulton's Point
+export type BunkerHillMapProps = CustomProps;
 
-// Tight zoom on the Charlestown peninsula / Boston harbor
-const EXTENT: [LonLat, LonLat] = [[-71.135, 42.345], [-70.965, 42.415]];
+// Sites. Basis: Bunker Hill Monument (on Breed's Hill) 42.3763 N, 71.0608 W; Bunker Hill's summit ~400 m NW near
+// today's Bunker Hill St; Charlestown Neck at the peninsula's NW end; Moulton's Point the SE tip where the British
+// landed (NPS Boston NHP; standard battle maps).
+const BREEDS_HILL: LonLat = [-71.0608, 42.3763];
+const BUNKER_HILL: LonLat = [-71.0655, 42.3795];
+const NECK: LonLat = [-71.0768, 42.3842];
+const LANDING: LonLat = [-71.0538, 42.3738];
+const CHARLESTOWN: LonLat = [-71.0585, 42.3722];
+const BOSTON: LonLat = [-71.0605, 42.3585];
 
-const MYSTIC_RIVER: LonLat[] = [[-71.115, 42.4], [-71.1, 42.395], [-71.085, 42.391], [-71.07, 42.387], [-71.055, 42.381]];
-const CHARLES_RIVER: LonLat[] = [[-71.12, 42.351], [-71.105, 42.355], [-71.09, 42.359], [-71.075, 42.364], [-71.058, 42.369]];
+// 1775 shoreline, hand-drawn and simplified from period maps (e.g. Page's 1775 plan of the action; Boston before the
+// Back Bay and Mill Pond fills). Approximate: it shows the two peninsulas, the Charles and Mystic, and the Neck.
+/** Cambridge / Somerville mainland, Charlestown peninsula and its Neck, as one landmass. */
+const MAINLAND_WEST: LonLat[] = [
+  [-71.14, 42.3555], [-71.11, 42.3565], [-71.095, 42.3595], [-71.085, 42.3628], [-71.079, 42.3662], [-71.0755, 42.3688],
+  [-71.0785, 42.3722], [-71.0805, 42.3778], [-71.0782, 42.3826],
+  // Charlestown peninsula: Charles side to Moulton's Point, back up the Mystic side
+  [-71.0732, 42.3787], [-71.0692, 42.3748], [-71.065, 42.3716], [-71.061, 42.3701], [-71.0565, 42.3705], [-71.0525, 42.3722],
+  [-71.0522, 42.3746], [-71.0572, 42.3782], [-71.0628, 42.3812], [-71.0688, 42.3837], [-71.0745, 42.3858],
+  [-71.08, 42.3878], [-71.09, 42.3902], [-71.14, 42.3915],
+];
+/** Medford / Malden / Chelsea shore north of the Mystic. */
+const MAINLAND_NORTH: LonLat[] = [
+  [-71.14, 42.3985], [-71.09, 42.3968], [-71.07, 42.3942], [-71.05, 42.3918], [-71.035, 42.3882], [-71.02, 42.3832],
+  [-70.99, 42.3832], [-70.99, 42.43], [-71.14, 42.43],
+];
+/** Roxbury / Dorchester shore south of the Back Bay. */
+const MAINLAND_SOUTH: LonLat[] = [
+  [-71.14, 42.3525], [-71.115, 42.35], [-71.1, 42.3452], [-71.085, 42.3402], [-71.0745, 42.3335], [-71.066, 42.3332],
+  [-71.055, 42.3302], [-71.03, 42.3255], [-70.99, 42.3255], [-70.99, 42.29], [-71.14, 42.29],
+];
+/** Shawmut (Boston) peninsula on its narrow Neck. */
+const BOSTON_PENINSULA: LonLat[] = [
+  [-71.0555, 42.3696], [-71.051, 42.3676], [-71.0498, 42.3642], [-71.0522, 42.3612], [-71.049, 42.3592], [-71.0508, 42.3556],
+  [-71.0545, 42.3516], [-71.061, 42.3482], [-71.0662, 42.3432], [-71.0688, 42.3362], [-71.0705, 42.3336], [-71.0728, 42.3338],
+  [-71.0712, 42.3372], [-71.0705, 42.3442], [-71.0702, 42.3492], [-71.0722, 42.3546], [-71.0702, 42.3602], [-71.0652, 42.3652],
+  [-71.0602, 42.3672],
+];
+/** Noddle's Island (East Boston). */
+const NODDLES: LonLat[] = [[-71.0455, 42.3722], [-71.031, 42.3752], [-71.022, 42.3685], [-71.03, 42.3602], [-71.0425, 42.3622]];
+const LANDS = [MAINLAND_WEST, MAINLAND_NORTH, MAINLAND_SOUTH, BOSTON_PENINSULA, NODDLES].map(ringPolygon);
 
-const CAPTIONS: Record<string, string> = {
-  setup: 'June 16, overnight — colonials entrench a redoubt on Breed\u2019s Hill',
-  assault1: 'First assault — British redcoats climb the slope, then recoil under musketry',
-  assault2: 'Second assault — again the line wavers and falls back',
-  assault3: 'Third assault — colonials out of powder; the hill falls',
-  resolve: 'A pyrrhic victory: the British hold the hill at devastating cost',
-};
+const EXTENT: [LonLat, LonLat] = [[-71.092, 42.352], [-71.03, 42.392]];
 
 type Pt = [number, number];
+const ease = Easing.inOut(Easing.quad);
 
 /** Screen position + heading (deg) at fraction s along a polyline. */
-const trace = (pts: Pt[], s: number): { x: number; y: number; angle: number } => {
+const trace = (pts: Pt[], s: number): {x: number; y: number; angle: number} => {
   const c = Math.max(0, Math.min(1, s));
   const lens = pts.slice(0, -1).map((p, i) => Math.hypot(pts[i + 1][0] - p[0], pts[i + 1][1] - p[1]));
   const total = lens.reduce((a, b) => a + b, 0) || 1;
@@ -61,259 +83,131 @@ const trace = (pts: Pt[], s: number): { x: number; y: number; angle: number } =>
       const x = pts[i][0] + (pts[i + 1][0] - pts[i][0]) * f;
       const y = pts[i][1] + (pts[i + 1][1] - pts[i][1]) * f;
       const angle = (Math.atan2(pts[i + 1][1] - pts[i][1], pts[i + 1][0] - pts[i][0]) * 180) / Math.PI;
-      return { x, y, angle };
+      return {x, y, angle};
     }
     d -= lens[i];
   }
-  return { x: pts[pts.length - 1][0], y: pts[pts.length - 1][1], angle: 0 };
+  return {x: pts[pts.length - 1][0], y: pts[pts.length - 1][1], angle: 0};
 };
 
-/** Wave advance/collapse state from 0-1 phase progress. `sticks=true` holds the hill. */
-const waveState = (t: number, sticks: boolean) => {
-  const opacity = interpolate(t, [0, 0.08, 0.92, 1], [0, 1, 1, 0], {
-    extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
-  });
-  let pos: number;
-  if (t < 0.55) pos = t / 0.55; // advance uphill
-  else if (sticks) pos = 1; // hold the hill
-  else pos = 1 - ((t - 0.55) / 0.4) * 0.85; // recoil toward the water
-  // repulsed waves visibly collapse as they fall back
-  const collapse = sticks ? 1 : interpolate(t, [0.55, 0.95], [1, 0.35], {
-    extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
-  });
-  return { opacity, pos: Math.max(0, Math.min(1, pos)), collapse };
+/** Wave advance / recoil from 0-1 phase progress. `holds` keeps the hill instead of falling back. */
+const waveState = (t: number, holds: boolean) => {
+  const opacity = interpolate(t, [0, 0.08, 0.9, 1], [0, 1, 1, holds ? 1 : 0], CLAMP);
+  const climb = interpolate(t, [0, 0.55], [0, 1], {...CLAMP, easing: ease});
+  const pos = holds ? climb : climb - interpolate(t, [0.6, 0.95], [0, 0.85], {...CLAMP, easing: ease});
+  // repulsed waves thin out as they fall back
+  const collapse = holds ? 1 : interpolate(t, [0.55, 0.95], [1, 0.4], CLAMP);
+  return {opacity, pos, collapse};
 };
 
-export const BunkerHillMap: React.FC<BunkerHillMapProps> = ({ durationInFrames: propDuration, phases = [
-  {name: 'setup', start: 0, end: 0.2},
-  {name: 'assault1', start: 0.2, end: 0.4},
-  {name: 'assault2', start: 0.4, end: 0.6},
-  {name: 'assault3', start: 0.6, end: 0.8},
-  {name: 'resolve', start: 0.8, end: 1.0},
-] }) => {
-  const frame = useCurrentFrame();
-  const { width, height, durationInFrames: configDuration } = useVideoConfig();
-  const durationInFrames = propDuration ?? configDuration;
-  const u = (n: number) => n * (width / 1280);
-  const D = Math.max(1, durationInFrames);
+export const BunkerHillMap: React.FC<BunkerHillMapProps> = ({durationInFrames, phases}) => {
+  const clock = usePhases(phases, DEFAULT_PHASES, durationInFrames);
+  const {frame, fps, u, t} = clock;
+  const {width, height} = useVideoConfig();
+  const total = Math.max(1, clock.durationInFrames);
+  const sec = frame / fps;
 
-  /** 0-1 progress of a named phase; missing/degenerate phase → 0 (graceful no-op). */
-  const prog = (name: string): number => {
-    const p = phases.find(x => x.name === name);
-    if (!p || p.end <= p.start) return 0;
-    return interpolate(frame, [p.start * D, p.end * D], [0, 1], {
-      extrapolateLeft: 'clamp', extrapolateRight: 'clamp',
-    });
-  };
+  const a1 = t('assault1');
+  const a2 = t('assault2');
+  const a3 = t('assault3');
 
-  const setup = prog('setup');
-  const a1 = prog('assault1');
-  const a2 = prog('assault2');
-  const a3 = prog('assault3');
-  const res = prog('resolve');
-
-  const projection = React.useMemo(() => usProjection(width, height, EXTENT, height * 0.04), [width, height]);
+  const projection = React.useMemo(() => usProjection(width, height, EXTENT, height * 0.02), [width, height]);
   const geo = React.useMemo(() => {
     const path = geoPath(projection);
-    const line = (lls: LonLat[]) => `M ${lls.map(ll => (projection(ll) ?? [0, 0]).map(v => v.toFixed(1)).join(' ')).join(' L ')}`;
-    return {
-      neighbors: NEIGHBORS.features.map(f => path(f) ?? ''),
-      nation: path(US_NATION) ?? '',
-      mystic: line(MYSTIC_RIVER),
-      charles: line(CHARLES_RIVER),
-    };
+    return {lands: LANDS.map(f => path(f) ?? '')};
   }, [projection]);
-
   const at = (ll: LonLat): Pt => (projection(ll) ?? [0, 0]) as Pt;
+  const halo = paperHalo(u);
 
-  // Slow push-in across the whole clip (no literal frames — anchored to D).
-  const camZoom = interpolate(frame, [0, D], [1.03, 1.12], { extrapolateRight: 'clamp', easing: Easing.inOut(Easing.quad) });
-
-  const halo = { stroke: alpha(COLOR.night, 0.92), strokeWidth: u(3.5), paintOrder: 'stroke' as const, strokeLinejoin: 'round' as const };
-
-  const [bx, by] = at(BOSTON);
+  const camZoom = interpolate(frame, [0, total], [1.02, 1.12], {...CLAMP, easing: ease});
   const [hx, hy] = at(BREEDS_HILL);
-  const [khx, khy] = at(BUNKER_HILL);
-  const [cx, cy] = at(CHARLESTOWN);
+  const [kx, ky] = at(BUNKER_HILL);
 
-  // Assault route: landing beach → mid-slope → Breed's Hill summit.
-  const wavePts: Pt[] = [at(LANDING), at([-71.057, 42.373]), at(BREEDS_HILL)];
+  // Assault route: landing at Moulton's Point -> up the slope -> the redoubt.
+  const wavePts: Pt[] = [at(LANDING), at([-71.0565, 42.3748]), at(BREEDS_HILL)];
   const waveD = `M ${wavePts.map(p => p.map(v => v.toFixed(1)).join(' ')).join(' L ')}`;
   const retreatPts: Pt[] = [at(BREEDS_HILL), at(BUNKER_HILL), at(NECK)];
 
-  /** British assault wave: 9 redcoats in a wedge + drawn route line. */
-  const renderWave = (t: number, sticks: boolean, n: number) => {
-    if (t <= 0) return null;
-    const { opacity, pos, collapse } = waveState(t, sticks);
-    const { x, y, angle } = trace(wavePts, pos);
-    // Local frame: +x = heading. col = across the front, row = back along -heading.
-    const gap = u(13) * collapse;
+  /** One British wave: nine redcoats in a block, plus the drawn route. */
+  const renderWave = (tt: number, holds: boolean, key: number) => {
+    if (tt <= 0) return null;
+    const {opacity, pos, collapse} = waveState(tt, holds);
+    const {x, y, angle} = trace(wavePts, pos);
+    const gap = u(11) * collapse;
     return (
-      <g key={n} opacity={opacity}>
-        <path d={waveD} fill="none" stroke={COLOR.british} strokeWidth={u(3.5)} strokeLinecap="round"
-          pathLength={1} strokeDasharray="1 1" strokeDashoffset={1 - pos} opacity={0.55} />
+      <g key={key} opacity={opacity}>
+        <path d={waveD} fill="none" stroke={PAPER.british} strokeWidth={u(3)} strokeLinecap="round"
+          pathLength={1} strokeDasharray="1 1" strokeDashoffset={1 - pos} opacity={0.5} />
         <g transform={`translate(${x}, ${y}) rotate(${angle})`}>
-          {Array.from({ length: 9 }).map((_, i) => {
-            const col = (i % 3) - 1; const row = Math.floor(i / 3);
-            return <circle key={i} cx={-row * gap * 1.15} cy={col * gap}
-              r={u(5.5) * collapse} fill={COLOR.british} stroke={COLOR.onNight} strokeWidth={u(1.2)} />;
+          {Array.from({length: 9}).map((_, i) => {
+            const col = (i % 3) - 1;
+            const row = Math.floor(i / 3);
+            return <circle key={i} cx={-row * gap * 1.15} cy={col * gap} r={u(5) * collapse} fill={PAPER.british} stroke={PAPER.halo} strokeWidth={u(1.2)} />;
           })}
-          <polygon points={`${u(26)},0 ${u(12)},${u(-9)} ${u(12)},${u(9)}`} fill={COLOR.redOnNight} opacity={0.9} />
         </g>
       </g>
     );
   };
 
-  // Hill control: blue (colonial) crossfades to red (British) once assault 3 takes it.
-  const hillRed = interpolate(a3, [0.75, 0.92], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  // Musket fire from the redoubt while a wave is on the slope (stops in assault 3: out of powder).
+  const fireFrom = (tt: number) => (tt > 0.3 && tt < 0.65 ? 0.5 + 0.5 * Math.sin(sec * 2 * Math.PI * 2.2) : 0);
+  const fire = Math.max(fireFrom(a1), fireFrom(a2), a3 > 0.3 && a3 < 0.42 ? fireFrom(a3) : 0);
+  // The hill changes hands late in assault 3; defenders fall back over the Neck.
+  const hillRed = interpolate(a3, [0.5, 0.65], [0, 1], CLAMP);
+  const retT = interpolate(a3, [0.5, 0.95], [0, 1], {...CLAMP, easing: ease});
+  const retOp = interpolate(a3, [0.45, 0.55], [0, 1], CLAMP);
 
-  // Colonial retreat across Charlestown Neck during assault 3.
-  const retT = interpolate(a3, [0.3, 0.95], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-  const retOp = interpolate(a3, [0.25, 0.4, 0.95, 1], [0, 1, 1, 0.3], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-
-  // "REPULSED" stamps for the first two assaults (visible as each wave recoils).
-  const repulse = (t: number) =>
-    interpolate(t, [0.6, 0.7, 0.88, 0.97], [0, 1, 1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
-
-  // Casualty count-up during resolve.
-  const britLoss = Math.floor(interpolate(res, [0, 0.7], [0, 1054], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' }));
-  const amerLoss = Math.floor(interpolate(res, [0.1, 0.8], [0, 450], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' }));
-
-  // Active-phase caption (drives the bottom strip).
-  const f = frame / D;
-  const activePhase = phases.find(x => f >= x.start && f < x.end) ?? phases[phases.length - 1];
-  const caption = activePhase ? CAPTIONS[activePhase.name] ?? '' : '';
-
-  const label = (x: number, y: number, text: string, opts?: { anchor?: 'start' | 'middle' | 'end'; size?: number; color?: string; weight?: number; italic?: boolean }) => (
-    <text x={x} y={y} textAnchor={opts?.anchor ?? 'middle'} fontSize={u(opts?.size ?? TYPE.label)}
-      fontFamily={FONT.display} fontWeight={opts?.weight ?? 800} fill={opts?.color ?? COLOR.onNight}
-      fontStyle={opts?.italic ? 'italic' : 'normal'} {...halo}>{text}</text>
+  const label = (x: number, y: number, text: string, o?: {anchor?: 'start' | 'middle' | 'end'; size?: number; color?: string; italic?: boolean}) => (
+    <text x={x} y={y} textAnchor={o?.anchor ?? 'middle'} fontSize={u(o?.size ?? TYPE.place)} fontFamily={FONT.display} fontWeight={o?.italic ? 400 : 700}
+      fill={o?.color ?? PAPER.ink} fontStyle={o?.italic ? 'italic' : 'normal'} {...halo}>{text}</text>
   );
+  const water = (ll: LonLat, text: string) => {
+    const [x, y] = at(ll);
+    return label(x, y, text, {size: TYPE.label, color: PAPER.inkSoft, italic: true});
+  };
 
   return (
-    <div style={{ position: 'relative', width: '100%', height: '100%', overflow: 'hidden', backgroundColor: COLOR.night, fontFamily: FONT.ui }}>
-      <div style={{ position: 'absolute', inset: 0, transform: `scale(${camZoom})`, transformOrigin: 'center center', zIndex: 20 }}>
-        <svg viewBox={`0 0 ${width} ${height}`} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', overflow: 'visible' }}>
-          <rect x={-width} y={-height} width={width * 3} height={height * 3} fill={COLOR.nightOcean} />
-          {geo.neighbors.map((d, i) => (
-            <path key={i} d={d} fill={COLOR.nightPanel} stroke={COLOR.nightCoast} strokeWidth={u(0.8)} vectorEffect="non-scaling-stroke" />
+    <PaperSheet fontFamily={FONT.display}>
+      <div style={{position: 'absolute', inset: 0, transform: `scale(${camZoom})`, transformOrigin: `${(hx / width) * 100}% ${(hy / height) * 100}%`}}>
+        <svg viewBox={`0 0 ${width} ${height}`} style={{position: 'absolute', inset: 0, width: '100%', height: '100%', overflow: 'visible'}}>
+          <rect x={-width} y={-height} width={width * 3} height={height * 3} fill={PAPER.water} />
+          {geo.lands.map((d, i) => (
+            <path key={i} d={d} fill={PAPER.land} stroke={PAPER.coast} strokeWidth={u(1.6)} strokeLinejoin="round" />
           ))}
-          <path d={geo.nation} fill={COLOR.nightLand} stroke={COLOR.nightCoast} strokeWidth={u(1.2)} vectorEffect="non-scaling-stroke" />
-          {/* Rivers */}
-          <g fill="none" stroke={COLOR.skyOnNight} strokeWidth={u(2.5)} strokeLinecap="round" opacity={0.75} vectorEffect="non-scaling-stroke">
-            <path d={geo.mystic} /><path d={geo.charles} />
-          </g>
-          {label((at([-71.085, 42.394]))[0], (at([-71.085, 42.394]))[1], 'Mystic River', { size: TYPE.tag, italic: true, color: alpha(COLOR.onNight, 0.75), weight: 700 })}
-          {label((at([-71.09, 42.356]))[0], (at([-71.09, 42.356]))[1], 'Charles River', { size: TYPE.tag, italic: true, color: alpha(COLOR.onNight, 0.75), weight: 700 })}
-          {label((at([-71.0, 42.36]))[0], (at([-71.0, 42.36]))[1], 'Boston Harbor', { size: TYPE.tag, italic: true, color: alpha(COLOR.onNight, 0.6), weight: 700 })}
+          {water([-71.0715, 42.3655], 'Charles River')}
+          {water([-71.062, 42.3885], 'Mystic River')}
 
-          {/* British garrison in Boston */}
-          <g transform={`translate(${bx}, ${by})`} opacity={interpolate(setup, [0, 0.25], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' })}>
-            <circle r={u(11 + Math.sin(frame * 0.25) * 2)} fill="none" stroke={COLOR.british} strokeWidth={u(2)} opacity={0.7} />
-            <circle r={u(8)} fill={COLOR.british} stroke={COLOR.onNight} strokeWidth={u(2)} style={{ filter: `drop-shadow(0 0 ${u(6)}px ${COLOR.british})` }} />
-            {label(u(14), u(6), 'Boston — British garrison', { anchor: 'start', size: TYPE.small, color: COLOR.redOnNight })}
-          </g>
+          {/* Bunker Hill (behind) */}
+          <circle cx={kx} cy={ky} r={u(6)} fill={PAPER.inkSoft} stroke={PAPER.halo} strokeWidth={u(1.5)} />
+          {label(kx - u(12), ky - u(8), 'Bunker Hill', {anchor: 'end', size: TYPE.label, color: PAPER.inkSoft})}
 
-          {/* Colonial redoubt dug overnight on Breed's Hill */}
-          <g opacity={interpolate(setup, [0.3, 0.8], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' })}>
-            <rect x={hx - u(18)} y={hy - u(18)} width={u(36)} height={u(36)} fill={alpha(COLOR.patriot, 0.25)}
-              stroke={COLOR.skyOnNight} strokeWidth={u(2)} strokeDasharray={`${u(5)} ${u(4)}`} transform={`rotate(12, ${hx}, ${hy})`} />
-            {label(hx, hy - u(30), 'American redoubt', { size: TYPE.micro, color: COLOR.skyOnNight, weight: 900 })}
-            {label(hx, hy - u(16), 'dug overnight, June 16', { size: TYPE.nano, color: alpha(COLOR.onNight, 0.7), weight: 700 })}
-          </g>
+          {/* The redoubt on Breed's Hill */}
+          <rect x={hx - u(16)} y={hy - u(16)} width={u(32)} height={u(32)} fill={alpha(PAPER.patriot, 0.18)} stroke={PAPER.patriot}
+            strokeWidth={u(2.5)} transform={`rotate(12, ${hx}, ${hy})`} opacity={1 - hillRed * 0.6} />
+          {fire > 0 && <circle cx={hx} cy={hy} r={u(20 + fire * 14)} fill="none" stroke={PAPER.gold} strokeWidth={u(2.5)} opacity={fire} />}
+          <circle cx={hx} cy={hy} r={u(9)} fill={PAPER.patriot} stroke={PAPER.halo} strokeWidth={u(2.5)} opacity={1 - hillRed} />
+          <circle cx={hx} cy={hy} r={u(9)} fill={PAPER.british} stroke={PAPER.halo} strokeWidth={u(2.5)} opacity={hillRed} />
+          {label(hx + u(26), hy - u(18), "Breed's Hill", {anchor: 'start'})}
 
-          {/* The two hills — label both (the battle raged on Breed's) */}
-          <g opacity={interpolate(setup, [0.1, 0.5], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' })}>
-            <circle cx={khx} cy={khy} r={u(6)} fill={COLOR.patriot} stroke={COLOR.onNight} strokeWidth={u(1.5)} />
-            {label(khx - u(12), khy + u(4), 'Bunker Hill', { anchor: 'end', size: TYPE.town, color: alpha(COLOR.onNight, 0.85) })}
-            {/* Breed's Hill: colonial blue crossfades to British red in assault 3 */}
-            <circle cx={hx} cy={hy} r={u(10)} fill={COLOR.patriot} stroke={COLOR.onNight} strokeWidth={u(2.5)}
-              opacity={1 - hillRed} style={{ filter: `drop-shadow(0 0 ${u(6)}px ${COLOR.skyOnNight})` }} />
-            <circle cx={hx} cy={hy} r={u(10)} fill={COLOR.british} stroke={COLOR.onNight} strokeWidth={u(2.5)}
-              opacity={hillRed} style={{ filter: `drop-shadow(0 0 ${u(8)}px ${COLOR.british})` }} />
-            {label(hx + u(16), hy - u(2), "Breed's Hill", { anchor: 'start', size: TYPE.label, color: hillRed > 0.5 ? COLOR.redOnNight : COLOR.skyOnNight, weight: 900 })}
-            {label(hx + u(16), hy + u(16), 'most fighting here', { anchor: 'start', size: TYPE.micro, color: alpha(COLOR.onNight, 0.65), weight: 700 })}
-          </g>
-
-          {label(cx + u(12), cy + u(26), 'Charlestown', { anchor: 'start', size: TYPE.small, color: alpha(COLOR.onNight, 0.7) })}
+          {label(at(CHARLESTOWN)[0], at(CHARLESTOWN)[1] + u(6), 'Charlestown', {size: TYPE.label, color: PAPER.inkSoft})}
+          {label(at(BOSTON)[0], at(BOSTON)[1], 'Boston')}
 
           {/* Assault waves */}
           {renderWave(a1, false, 1)}
           {renderWave(a2, false, 2)}
           {renderWave(a3, true, 3)}
 
-          {/* REPULSED stamps */}
-          <g opacity={repulse(a1)}>
-            {label(hx, hy + u(52), 'REPULSED', { size: TYPE.h3, color: COLOR.skyOnNight, weight: 900 })}
-          </g>
-          <g opacity={repulse(a2)}>
-            {label(hx, hy + u(52), 'REPULSED', { size: TYPE.h3, color: COLOR.skyOnNight, weight: 900 })}
-          </g>
-
-          {/* Out of powder chip (assault 3) */}
-          <g opacity={interpolate(a3, [0.45, 0.55, 0.95, 1], [0, 1, 1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' })}
-            transform={`translate(${hx + u(16)}, ${hy + u(40)})`}>
-            <rect x={-u(8)} y={-u(14)} width={u(196)} height={u(24)} rx={RADIUS.sm} fill={alpha(COLOR.night, 0.92)} stroke={COLOR.amber} strokeWidth={u(1.5)} />
-            <text x={u(90)} y={u(3)} textAnchor="middle" fontSize={u(TYPE.tag)} fontFamily={FONT.ui} fontWeight={900} fill={COLOR.amber} letterSpacing={1}>
-              AMERICANS OUT OF POWDER
-            </text>
-          </g>
-
-          {/* Colonial retreat across Charlestown Neck */}
-          <g opacity={retOp}>
-            {trace(retreatPts, retT).x > 0 && [0, 1, 2].map(i => {
-              const p = trace(retreatPts, Math.max(0, retT - i * 0.04));
-              return <circle key={i} cx={p.x} cy={p.y} r={u(6)} fill={COLOR.patriot} stroke={COLOR.onNight} strokeWidth={u(1.5)} opacity={1 - i * 0.25} />;
-            })}
-            {retT > 0.7 && label((at(NECK))[0], (at(NECK))[1] + u(24), 'retreat across Charlestown Neck', { size: TYPE.tag, color: COLOR.skyOnNight, weight: 700 })}
-          </g>
-
-          {/* Resolve: casualty counters */}
-          {res > 0 && (
-            <g opacity={interpolate(res, [0, 0.15], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' })}
-              transform={`translate(${width / 2}, ${height * 0.62})`}>
-              <rect x={-u(250)} y={-u(78)} width={u(500)} height={u(156)} rx={RADIUS.lg}
-                fill={alpha(COLOR.night, 0.94)} stroke={alpha(COLOR.gold, 0.6)} strokeWidth={u(2)} />
-              <text x={0} y={-u(50)} textAnchor="middle" fontSize={u(TYPE.micro)} fontFamily={FONT.mono} fontWeight={800}
-                fill={COLOR.gold} letterSpacing={3}>CASUALTIES · A PYRRHIC VICTORY</text>
-              <text x={-u(120)} y={u(12)} textAnchor="middle" fontSize={u(TYPE.display - 24)} fontFamily={FONT.mono}
-                fontWeight={900} fill={COLOR.redOnNight} {...halo}>{britLoss.toLocaleString('en-US')}</text>
-              <text x={-u(120)} y={u(40)} textAnchor="middle" fontSize={u(TYPE.tag)} fontFamily={FONT.ui} fontWeight={700}
-                fill={alpha(COLOR.onNight, 0.8)}>BRITISH killed &amp; wounded</text>
-              <text x={u(120)} y={u(12)} textAnchor="middle" fontSize={u(TYPE.display - 24)} fontFamily={FONT.mono}
-                fontWeight={900} fill={COLOR.skyOnNight} {...halo}>{amerLoss.toLocaleString('en-US')}</text>
-              <text x={u(120)} y={u(40)} textAnchor="middle" fontSize={u(TYPE.tag)} fontFamily={FONT.ui} fontWeight={700}
-                fill={alpha(COLOR.onNight, 0.8)}>COLONIAL killed &amp; wounded</text>
+          {/* Defenders fall back over Charlestown Neck */}
+          {retOp > 0 && (
+            <g opacity={retOp}>
+              {[0, 1, 2].map(i => {
+                const p = trace(retreatPts, Math.max(0, retT - i * 0.06));
+                return <circle key={i} cx={p.x} cy={p.y} r={u(5.5)} fill={PAPER.patriot} stroke={PAPER.halo} strokeWidth={u(1.5)} opacity={1 - i * 0.25} />;
+              })}
             </g>
           )}
         </svg>
       </div>
-
-      {/* Vignette */}
-      <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', zIndex: 21,
-        background: `radial-gradient(ellipse at 50% 50%, ${alpha(COLOR.night, 0)} 45%, ${alpha(COLOR.night, 0.72)} 100%)` }} />
-
-      {/* Top HUD */}
-      <div style={{ position: 'absolute', top: 14, left: 16, zIndex: 40, pointerEvents: 'none',
-        backgroundColor: alpha(COLOR.night, 0.94), border: `1px solid ${alpha(COLOR.amber, 0.45)}`,
-        borderLeft: `4px solid ${COLOR.amber}`, borderRadius: RADIUS.md, padding: '8px 16px' }}>
-        <span style={{ fontFamily: FONT.display, fontSize: TYPE.nano, fontWeight: 900, color: COLOR.amber, letterSpacing: '0.12em' }}>
-          APUSH PERIOD 3 · JUNE 17, 1775
-        </span>
-        <span style={{ color: alpha(COLOR.onNight, 0.3) }}> · </span>
-        <span style={{ fontSize: TYPE.tag, fontWeight: 800, color: COLOR.onNight }}>
-          Battle of Bunker Hill (fought on Breed&rsquo;s Hill)
-        </span>
-      </div>
-
-      {/* Bottom phase caption */}
-      {caption !== '' && (
-        <div style={{ position: 'absolute', bottom: 12, left: 16, right: 16, zIndex: 40, pointerEvents: 'none',
-          backgroundColor: alpha(COLOR.night, 0.94), border: `1px solid ${alpha(COLOR.onNight, 0.12)}`,
-          borderLeft: `4px solid ${COLOR.skyOnNight}`, borderRadius: RADIUS.md, padding: '10px 18px' }}>
-          <span style={{ fontFamily: FONT.display, fontSize: TYPE.small, fontWeight: 800, color: COLOR.onNight }}>{caption}</span>
-        </div>
-      )}
-    </div>
+    </PaperSheet>
   );
 };
