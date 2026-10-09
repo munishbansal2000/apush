@@ -39,3 +39,20 @@ describe('P12: cross-platform tool discovery', () => {
       (e: Error) => e.message.includes('edge-tts-missing not found') && e.message.includes(venvBin) && e.message.includes('Set EDGE_TTS_MISSING'));
   });
 });
+
+describe('Fish keys for overnight runs', () => {
+  it('loads keys from FISH_API_KEYS and a keys file, and cycles one per lesson run', async () => {
+    const {loadFishKeys, keyForRun, keyTag} = await import('../tools/pipeline/fish-keys');
+    const {mkdtempSync, writeFileSync} = await import('node:fs');
+    const {join} = await import('node:path');
+    const {tmpdir} = await import('node:os');
+    const file = join(mkdtempSync(join(tmpdir(), 'fish-')), 'keys.txt');
+    writeFileSync(file, '# my keys\nkey-cccc3333\n\nkey-aaaa1111  # duplicate\n');
+    const keys = loadFishKeys({FISH_API_KEYS: 'key-aaaa1111, key-bbbb2222', FISH_API_KEYS_FILE: file});
+    assert.deepEqual(keys, ['key-aaaa1111', 'key-bbbb2222', 'key-cccc3333']);
+    assert.deepEqual([0, 1, 2, 3, 4].map(n => keyForRun(keys, n)), ['key-aaaa1111', 'key-bbbb2222', 'key-cccc3333', 'key-aaaa1111', 'key-bbbb2222']);
+    assert.equal(keyForRun([], 3), undefined);
+    assert.equal(keyTag('key-aaaa1111'), '…1111');
+    assert.throws(() => loadFishKeys({FISH_API_KEYS_FILE: join(tmpdir(), 'nope-keys.txt')}), /does not exist/);
+  });
+});
