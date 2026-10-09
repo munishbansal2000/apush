@@ -29,15 +29,12 @@ describe('pipeline audio', () => {
     assert.match(ttsText(calls[0].args), /pow-uh-tan/);
   });
 
-  it('P5: applies pronunciations to Fish-directed text in prod', async () => {
+  it('P5: prod speaks the script\'s own Fish tags (no LLM pass), with pronunciations applied', async () => {
     process.env.FISH_TTS_SCRIPT = 'fish_tts.py';
     try {
-      const h = fakeContext({mode: 'prod', stages: ['audio'], meta: name => {
-        assert.equal(name, 'fish-direction');
-        return {turns: [{id: 't00', text: '[calm] Powhatan led the confederacy.'}]};
-      }});
+      const h = fakeContext({mode: 'prod', stages: ['audio'], meta: name => { throw new Error(`unexpected Meta call ${name}`); }});
       writeFileSync(h.ctx.pronunciationsPath, JSON.stringify({terms: [{term: 'Powhatan', tts: 'pow-uh-tan', approved: true}]}));
-      atomicJson(join(h.ctx.dataDir, 'turns.json'), {turns: parseTranscript('Maya: Powhatan led the confederacy.')});
+      atomicJson(join(h.ctx.dataDir, 'turns.json'), {turns: parseTranscript('Maya: [calm] Powhatan led the confederacy.')});
       await runPipeline(h.ctx);
       const calls = h.ttsCalls();
       assert.equal(calls.length, 1);
@@ -45,6 +42,21 @@ describe('pipeline audio', () => {
     } finally {
       delete process.env.FISH_TTS_SCRIPT;
     }
+  });
+
+  it('P5: prod refuses a direction tag outside the guideline catalog; dev strips tags', async () => {
+    process.env.FISH_TTS_SCRIPT = 'fish_tts.py';
+    try {
+      const h = fakeContext({mode: 'prod', stages: ['audio']});
+      atomicJson(join(h.ctx.dataDir, 'turns.json'), {turns: parseTranscript('Maya: [furiously] Powhatan led the confederacy.')});
+      await assert.rejects(runPipeline(h.ctx), /\[furiously\] is not in the Fish tag catalog/);
+    } finally {
+      delete process.env.FISH_TTS_SCRIPT;
+    }
+    const dev = fakeContext({stages: ['audio']});
+    atomicJson(join(dev.ctx.dataDir, 'turns.json'), {turns: parseTranscript('Maya: [firm] Powhatan led the confederacy.')});
+    await runPipeline(dev.ctx);
+    assert.equal(ttsText(dev.ttsCalls()[0].args), 'Powhatan led the confederacy.');
   });
 
   it('P7: inserting a line only synthesizes the new line', async () => {

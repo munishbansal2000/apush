@@ -1,5 +1,8 @@
 # U3-E8 (Ratification Fight) — Version Changelog
 
+## 2026-10-09 — Fish direction density
+- Tagged turns 31/44 (70%) -> 17/44 (39%), under the guideline's ~40% cap (§9): removed the five [conversational] tags (the default delivery), six of Marcus's seven [measured] tags (kept the first), Maya's [energetic] and two [confident tone]. Henry's [passionate]/[intense] oratory kept. Words unchanged.
+
 Every version is kept as a separate file. Nothing is overwritten.
 This log records what changed between versions and why.
 
