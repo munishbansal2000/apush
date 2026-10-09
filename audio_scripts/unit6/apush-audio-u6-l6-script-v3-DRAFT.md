@@ -183,7 +183,7 @@ Maya: Rugged individualism: the government would help banks, but never people di
 
 Maya: [intrigued] Next time: 1932. Hoover's out, Roosevelt's in, and one of the biggest answers the federal government ever gave: the New Deal.
 
-[production note: held breath — do not rush it]
+# [production note: held breath — do not rush it]
 Marcus: [professional broadcast tone] The crash pulled the trigger — but the twenties loaded the gun.
 
 Maya: [confident tone] Check your boxes.
