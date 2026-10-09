@@ -130,7 +130,7 @@ Maya: Their charge was constitutional before it was economic: they saw a preside
 
 Maya: One more, fast. The Panic of 1837: one cause, or no single hand?
 [10-second pause]
-No single hand. The verdict stays split.
+Maya: No single hand. The verdict stays split.
 
 Biddle: [professional broadcast tone] And on the contraction: a bank that cannot defend its depositors' money is no bank at all. A president who yanks the floor out from under it, then blames it for the fall, is the one wielding the power he fears.
 

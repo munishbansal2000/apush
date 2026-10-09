@@ -60,7 +60,7 @@ Tomas: And the method was the scandal. Tyler signed an annexation treaty in eigh
 
 Maya: Hold on. Your turn.
 [10-second pause]
-Tyler's treaty is dead. The Senate won't give two-thirds. Congress still wants Texas. What procedure gets Texas in?
+Maya: Tyler's treaty is dead. The Senate won't give two-thirds. Congress still wants Texas. What procedure gets Texas in?
 
 Marcus: You just heard it: the joint resolution. Same result, lower bar. Treaties need two-thirds; joint resolutions need simple majorities. The distinction IS the annexation story.
 
@@ -114,19 +114,19 @@ Maya: Self-test. Three questions, AP-shaped. Say your answer before I give it.
 
 Maya: One. O'Sullivan writes that Americans have a manifest destiny "to overspread the continent." A student says the phrase proves expansion was universally popular. What do you tell them?
 [10-second pause]
-The phrase shows how expansion was sold: providence, inevitability, morality. It says nothing about how it landed. The North fought every acre over slavery, and Mexico never agreed to any of it.
+Maya: The phrase shows how expansion was sold: providence, inevitability, morality. It says nothing about how it landed. The North fought every acre over slavery, and Mexico never agreed to any of it.
 
 Maya: Two, stimulus. Real words from eighteen thirty-seven: Tejano officer Juan Seguin, honoring the Alamo dead: "Texas shall be free and independent or we shall perish in glorious combat." What's the point of this source on an exam?
 [10-second pause]
-It proves Tejanos, Texans of Mexican descent, fought for independence. If a prompt asks who made the Texas Revolution, this source widens the frame: Tejanos bled for it too.
+Maya: It proves Tejanos, Texans of Mexican descent, fought for independence. If a prompt asks who made the Texas Revolution, this source widens the frame: Tejanos bled for it too.
 
 Maya: Three. Why did Tyler's eighteen forty-four annexation treaty fail while the eighteen forty-five joint resolution succeeded?
 [10-second pause]
-A treaty needs two-thirds of the Senate; a joint resolution needs simple majorities. Tyler couldn't clear the higher bar, so he used the lower one. Say that sentence and you own box three.
+Maya: A treaty needs two-thirds of the Senate; a joint resolution needs simple majorities. Tyler couldn't clear the higher bar, so he used the lower one. Say that sentence and you own box three.
 
 Maya: One more, fast. Box four. Two rivers: which one did Mexico say was the real border?
 [10-second pause]
-The Nueces. Texas claimed the Rio Grande. Mix them up and the whole war makes no sense.
+Maya: The Nueces. Texas claimed the Rio Grande. Mix them up and the whole war makes no sense.
 
 Marcus: [professional broadcast tone] Destiny had a press release.
 

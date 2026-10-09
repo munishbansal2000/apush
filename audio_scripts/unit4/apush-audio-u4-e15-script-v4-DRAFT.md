@@ -27,7 +27,7 @@ Rafael: [intense] Before the shooting, Polk tried to buy. He sent John Slidell t
 
 Maya: Your turn: the ground was disputed, and Congress knew it. The war's opponents couldn't deny the dead, so what did they attack instead?
 [10-second pause]
-The soil. The dead were real, but the ground was the argument — was the spot American at all? Lincoln's answer comes later. For now: fuse lit, exploded. One down.
+Maya: The soil. The dead were real, but the ground was the argument — was the spot American at all? Lincoln's answer comes later. For now: fuse lit, exploded. One down.
 
 Maya: Box two: the war. Marcus, how'd it go?
 
@@ -57,7 +57,7 @@ Rafael: [intense] What the North kept forgetting: Mexico had already banned slav
 
 Maya: Which is exactly why it exploded. Your turn: if slavery was already illegal there, why did one sentence nearly break Congress? Think about who wanted the West next.
 [10-second pause]
-What drove the explosion was who'd settle the West next: Northern free-labor men wanted the new land for white settlers, with no slave labor to compete against. Southerners heard the territories closing to them for good. The House passed it again and again. The Senate never did. And the vote ran on the sectional line: North against South.
+Maya: What drove the explosion was who'd settle the West next: Northern free-labor men wanted the new land for white settlers, with no slave labor to compete against. Southerners heard the territories closing to them for good. The House passed it again and again. The Senate never did. And the vote ran on the sectional line: North against South.
 
 Maya: [sheepish] So the Wilmot Proviso banned slavery in the new territories, and the South walked out of Congress over it, right?
 
@@ -117,19 +117,19 @@ Maya: Three questions, AP-shaped. Say your answer before I give it.
 
 Maya: One, stimulus. Real words, from Polk's war message of May eleventh, eighteen forty-six: Mexico had, quote, "passed the boundary of the United States, has invaded our territory and shed American blood upon the American soil." On the exam, what's the move with this source?
 [10-second pause]
-The move is sourcing. It's a war message, and its job is to get Congress to declare war. Attack the phrase "American soil": it assumes the boundary Polk himself chose, in a strip both sides claimed. Name the sleight: Polk put the army on disputed ground, then called the ground American.
+Maya: The move is sourcing. It's a war message, and its job is to get Congress to declare war. Attack the phrase "American soil": it assumes the boundary Polk himself chose, in a strip both sides claimed. Name the sleight: Polk put the army on disputed ground, then called the ground American.
 
 Maya: Two. Wilmot's proviso banned slavery from land where Mexico had already banned slavery. So why did it nearly break Congress?
 [10-second pause]
-Same logic as before, in your own words: it ran on who'd settle the West next — free-labor North against a South that heard the territories closing for good. Calhoun's counter: the territories belong to all the states in common. Lincoln's spot resolutions pressed the other wound: was the spot American soil at all? Never voted on, but the question outlived the war. Never a law. The exam asks about the collision the proviso started.
+Maya: Same logic as before, in your own words: it ran on who'd settle the West next — free-labor North against a South that heard the territories closing for good. Calhoun's counter: the territories belong to all the states in common. Lincoln's spot resolutions pressed the other wound: was the spot American soil at all? Never voted on, but the question outlived the war. Never a law. The exam asks about the collision the proviso started.
 
 Maya: Three, stimulus. Real words, from Ulysses Grant, writing nearly forty years later: "I do not think there was ever a more wicked war than that waged by the United States on Mexico." On the exam, what's Grant doing with this source?
 [10-second pause]
-He's handing you the war's moral verdict from the inside: a veteran calling his own war unjust. Pair it with the facts: twenty-one months, Palo Alto to Mexico City, "fast, and lopsided." Disease killed far more than bullets, on both sides — the histories agree on that, even where the numbers get foggy.
+Maya: He's handing you the war's moral verdict from the inside: a veteran calling his own war unjust. Pair it with the facts: twenty-one months, Palo Alto to Mexico City, "fast, and lopsided." Disease killed far more than bullets, on both sides — the histories agree on that, even where the numbers get foggy.
 
 Maya: One more, fast. The treaty: date and price.
 [10-second pause]
-February second, eighteen forty-eight. Fifteen million dollars, and the United States took over American claims against Mexico.
+Maya: February second, eighteen forty-eight. Fifteen million dollars, and the United States took over American claims against Mexico.
 
 Maya: [professional broadcast tone] Polk's war ended at Guadalupe Hidalgo. Its argument didn't end until Appomattox. Check your boxes, all four. Next time: the whole unit in one sitting. Ten questions, no mercy. The Unit 4 cram.
 

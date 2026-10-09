@@ -137,7 +137,7 @@ Maya: The compact theory. Calhoun's doctrine gave later secessionists their lega
 
 Maya: One more, fast. The Force Bill: used against South Carolina, or never used, and why does it matter?
 [10-second pause]
-It never had to be used. The threat did the work; South Carolina repealed before it mattered. That's why "threat-that-worked" is the phrase to remember.
+Maya: It never had to be used. The threat did the work; South Carolina repealed before it mattered. That's why "threat-that-worked" is the phrase to remember.
 
 Maya: [professional broadcast tone] 1833 ended the crisis — the argument refused to quit.
 

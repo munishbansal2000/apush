@@ -129,7 +129,7 @@ Maya: A navy. De Grasse's fleet sealed the Chesapeake and trapped Cornwallis aga
 
 Maya: One more, fast. Washington's appointment or the Declaration of Independence: which came first?
 [10-second pause]
-The appointment. June seventeen seventy-five, a full year before the Declaration.
+Maya: The appointment. June seventeen seventy-five, a full year before the Declaration.
 
 Marcus: [professional broadcast tone] So the war's won, and the bills come due. And underneath it all, the question nobody's answered: what freedom did this war actually win for the enslaved people who fought in it?
 

@@ -85,13 +85,13 @@ Maya: Right. Twenty signers, sixteen thousand protesters, removal in 1838 under 
 Maya: Three questions, AP-shaped. Say your answer before I give it.
 Maya: One. Stimulus: Marshall, Worcester v. Georgia. The Cherokee are, quote, "a distinct community, occupying its own territory," and "the laws of Georgia can have no force." So why didn't this ruling protect the Cherokee?
 [10-second pause]
-Because a ruling isn't an army. The Court declares what the law is, but it can't make a president obey. Jackson refused to enforce it and kept pushing removal. Georgia was never compelled. The roundups went ahead on paper that said they couldn't. Winning the argument isn't winning the power.
+Maya: Because a ruling isn't an army. The Court declares what the law is, but it can't make a president obey. Jackson refused to enforce it and kept pushing removal. Georgia was never compelled. The roundups went ahead on paper that said they couldn't. Winning the argument isn't winning the power.
 Maya: Two. The Treaty Party said signing was the only way to save the Cherokee; Ross said the treaty was treason. Whose position was stronger, and what evidence decides it for you?
 [10-second pause]
-There's no clean answer, which is the point. Ridge's side: thirty years of Georgia taking land piece by piece. The treaty at least bought five million dollars and western land. Ross's side: twenty signers against sixteen thousand protesters. A Senate ratification by a single vote. And removal happened anyway. Grade the evidence, then decide.
+Maya: There's no clean answer, which is the point. Ridge's side: thirty years of Georgia taking land piece by piece. The treaty at least bought five million dollars and western land. Ross's side: twenty signers against sixteen thousand protesters. A Senate ratification by a single vote. And removal happened anyway. Grade the evidence, then decide.
 Maya: Three. Compare: the Cherokee resisted in court; the Seminole resisted with seven years of war. Which resistance cost fewer lives?
 [10-second pause]
-Careful, it's a trick question. The Cherokee lost roughly four thousand on the trail. The Seminole war killed on both sides for seven years, and most Seminole were removed anyway. "Fewer lives" misses it: the Cherokee tried every peaceful, legal means available and were removed regardless. The comparison measures something else entirely: what each choice reveals.
+Maya: Careful, it's a trick question. The Cherokee lost roughly four thousand on the trail. The Seminole war killed on both sides for seven years, and most Seminole were removed anyway. "Fewer lives" misses it: the Cherokee tried every peaceful, legal means available and were removed regardless. The comparison measures something else entirely: what each choice reveals.
 Maya: One more, fast: Jackson or Van Buren in 1838? Van Buren. Jackson was out of office. Check your boxes.
 
 Marcus: The Cherokee did everything the republic said it valued, and the republic took their land anyway. So carry this: a right the government won't defend is a right you don't have. Remember the sixteen thousand. Remember the knock at the door.
