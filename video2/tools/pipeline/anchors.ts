@@ -9,7 +9,7 @@ import {cleanSpeech} from './speech';
 
 export interface PhraseAnchor {turn: number; phrase: string}
 export interface AnchorTiming {starts: number[]; durations: number[]}
-export interface ResolvedPhrase {sec: number; turnId: string; method: 'measured' | 'interpolated'}
+export interface ResolvedPhrase {sec: number; turnId: string; method: 'measured' | 'interpolated' | 'estimated'}
 
 /** Throws unless `anchor.phrase` occurs (token-wise, case/punctuation-insensitive) in speech turn `anchor.turn`. */
 export function resolvePhrase(
@@ -18,6 +18,8 @@ export function resolvePhrase(
   timing: AnchorTiming,
   words: Record<string, WordTiming[]>,
   edge: 'start' | 'end' = 'start',
+  /** Samples only: without Vosk words, estimate the time from the phrase's position in the turn. */
+  allowEstimated = false,
 ): ResolvedPhrase {
   if (!anchor || typeof anchor !== 'object') throw new Error('anchor must be {"turn": index, "phrase": "..."}');
   const {turn: index, phrase} = anchor;
@@ -30,8 +32,8 @@ export function resolvePhrase(
   const at = findPhrase(tokens(text), needle);
   if (at < 0) throw new Error(`turn ${index} (${turn.id}) does not say "${phrase}"`);
   const rows = words[turn.id];
-  if (!rows?.length) throw new Error(`turn ${index} (${turn.id}) has no Vosk word timing`);
+  if (!rows?.length && !allowEstimated) throw new Error(`turn ${index} (${turn.id}) has no Vosk word timing`);
   const {offset, method} = wordOffset(text, edge === 'start' ? at : at + needle.length - 1, rows, timing.durations[index]);
-  if (method === 'estimated') throw new Error(`turn ${index} (${turn.id}): could not align "${phrase}" to measured words`);
+  if (method === 'estimated' && !allowEstimated) throw new Error(`turn ${index} (${turn.id}): could not align "${phrase}" to measured words`);
   return {sec: timing.starts[index] + offset, turnId: turn.id, method};
 }
