@@ -203,7 +203,7 @@ const TrackerRow: React.FC<{ label: string; h: number; since: number; isCurrent:
       </div>
       {isCurrent && (
         <span style={{ fontFamily: 'Helvetica, Arial, sans-serif', fontSize: 13, fontWeight: 700, letterSpacing: 1, color: '#7a5c1f',
-          opacity: nowIn, transform: `translateX(${(1 - nowIn) * 12}px)`, marginRight: 6 }}>NOW</span>
+          opacity: nowIn, transform: `scale(${0.6 + 0.4 * nowIn})`, transformOrigin: 'right center', marginRight: 6 }}>NOW</span>
       )}
       {isCurrent && (
         <div style={{ position: 'absolute', left: 44, right: 10, bottom: 2, height: 3, background: 'rgba(42,32,24,0.12)', borderRadius: 2 }}>
