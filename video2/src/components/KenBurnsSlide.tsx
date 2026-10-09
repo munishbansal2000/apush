@@ -1,7 +1,7 @@
 import React from 'react';
 import { useCurrentFrame, useVideoConfig, interpolate, Img, staticFile } from 'remotion';
 import { FONT, COLOR, alpha } from '../theme/tokens';
-import { useTextScale } from '../directed/reveal';
+import { useTextScale } from './reveal';
 
 /** URLs, data URIs and already-resolved paths pass through; bare names go through staticFile. */
 const resolveSrc = (src: string) =>

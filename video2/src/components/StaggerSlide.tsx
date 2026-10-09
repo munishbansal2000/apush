@@ -3,7 +3,7 @@ import { useCurrentFrame, useVideoConfig, interpolate, spring, Img, staticFile }
 import { useElementTracker, TrackedElement } from '../validation/tracker';
 import { TimingProps } from '../validation/timing';
 import { COLOR, FONT, RADIUS, alpha } from '../theme/tokens';
-import { useRevealFrames, useTextScale } from '../directed/reveal';
+import { useRevealFrames, useTextScale } from './reveal';
 
 interface StaggerPanel {
   image: string;

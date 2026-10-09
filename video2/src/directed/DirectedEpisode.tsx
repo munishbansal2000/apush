@@ -26,8 +26,8 @@ import {GUARD_WRAPPER, LayoutGuard, Track} from '../kit/guard';
 import type {RenderConfig} from '../kit/layout';
 import type {TimelineTurn, WordTimesFile} from '../kit/types';
 import {ActiveHead, activeSpeakerAt} from './ActiveHead';
-import {sheetTransform} from './boxIntro';
-import {RevealProvider} from './reveal';
+import {sheetTransform} from '../documentary/sheet';
+import {RevealProvider} from '../components/reveal';
 import renderConfigJson from '../data/kit-render-config.json';
 
 const cfg = renderConfigJson as unknown as RenderConfig;

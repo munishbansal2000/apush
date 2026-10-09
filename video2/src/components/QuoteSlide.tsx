@@ -1,7 +1,7 @@
 import React from 'react';
 import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion';
 import { COLOR, FONT, TYPE } from '../theme/tokens';
-import { useTextScale } from '../directed/reveal';
+import { useTextScale } from './reveal';
 
 interface QuoteSlideProps {
   quote: string;

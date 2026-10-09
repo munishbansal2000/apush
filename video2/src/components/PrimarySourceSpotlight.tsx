@@ -3,7 +3,7 @@ import { useCurrentFrame, useVideoConfig, interpolate, spring, AbsoluteFill, Img
 import { PrimarySourceProps } from './motionStudioTypes';
 import { parchmentAsset } from './motionStudioPresets';
 import { COLOR, FONT, MOTION, RADIUS, TYPE, alpha } from '../theme/tokens';
-import { useRevealFrame, useTextScale } from '../directed/reveal';
+import { useRevealFrame, useTextScale } from './reveal';
 
 /** URLs, data URIs and already-resolved paths pass through; bare names go through staticFile. */
 const resolveSrc = (src: string) =>

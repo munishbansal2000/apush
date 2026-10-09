@@ -3,7 +3,7 @@ import { useCurrentFrame, useVideoConfig, interpolate } from 'remotion';
 import { useElementTracker, TrackedElement } from '../validation/tracker';
 import { TimingProps, DEFAULT_TIMING, getAnimationProgress } from '../validation/timing';
 import { FONT, COLOR, RADIUS } from '../theme/tokens';
-import { useRevealFrames, useTextScale } from '../directed/reveal';
+import { useRevealFrames, useTextScale } from './reveal';
 
 interface ChartBar {
   label: string;

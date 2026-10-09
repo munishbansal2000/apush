@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import { useCurrentFrame, useVideoConfig, interpolate, spring } from 'remotion';
 import { useElementTracker, TrackedElement } from '../validation/tracker';
 import { TimingProps } from '../validation/timing';
-import { useRevealFrames, useTextScale } from '../directed/reveal';
+import { useRevealFrames, useTextScale } from './reveal';
 import { FONT, COLOR, RADIUS, alpha } from '../theme/tokens';
 
 interface SpectrumMarker {

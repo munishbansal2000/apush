@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import {describe, it} from 'node:test';
-import {guardHeartbeat, layoutIssuesFromLog} from '../tools/pipeline/stages/render';
+import {guardHeartbeat, layoutIssuesFromLog} from '../tools/pipeline/guard-logs';
 
 describe('layout guard browser logs', () => {
   const beat = '[kit-layout-ok] {"frame":42,"tracks":{"stage":[0.06,0.13,0.7,0.775]}}';

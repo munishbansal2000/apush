@@ -14,7 +14,7 @@ import {mkdirSync, rmSync, writeFileSync} from 'node:fs';
 import {join} from 'node:path';
 import {ROOT, arg, flag} from './lib';
 import {loadDocInputs, resolveDocPlan} from './pipeline/doc-inputs';
-import {guardHeartbeat, layoutIssuesFromLog} from './pipeline/stages/render';
+import {guardHeartbeat, layoutIssuesFromLog} from './pipeline/guard-logs';
 
 const episode = arg('episode') ?? (() => { throw new Error('--episode is required'); })();
 const draft = flag('draft');

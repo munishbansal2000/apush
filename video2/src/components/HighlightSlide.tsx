@@ -1,7 +1,7 @@
 import React from 'react';
 import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion';
 import { FONT, COLOR, TYPE, RADIUS } from '../theme/tokens';
-import { useRevealFrames, useTextScale } from '../directed/reveal';
+import { useRevealFrames, useTextScale } from './reveal';
 
 interface Highlight {
   text: string;

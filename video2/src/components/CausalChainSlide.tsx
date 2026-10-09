@@ -3,7 +3,7 @@ import { useCurrentFrame, useVideoConfig, interpolate, spring } from 'remotion';
 import { useElementTracker, TrackedElement } from '../validation/tracker';
 import { TimingProps } from '../validation/timing';
 import { FONT, COLOR, TYPE, RADIUS, MOTION, alpha } from '../theme/tokens';
-import { useRevealFrames, useTextScale } from '../directed/reveal';
+import { useRevealFrames, useTextScale } from './reveal';
 
 interface CausalChainSlideProps extends TimingProps {
   nodes: (string | [string, string])[];

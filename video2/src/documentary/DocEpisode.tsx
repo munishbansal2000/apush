@@ -9,7 +9,7 @@ import {BoxTracker, Vignette} from '../kit/components';
 import {GUARD_WRAPPER, LayoutGuard, Track} from '../kit/guard';
 import type {RenderConfig} from '../kit/layout';
 import {FilmGrain} from '../kit/media';
-import {sheetTransform} from '../directed/boxIntro';
+import {sheetTransform} from './sheet';
 import kitConfig from '../data/kit-render-config.json';
 import {AtmosphereLayers} from './atmosphere';
 import {ClipView, ImageMoveView, MapView, PointView, YearStampView} from './shots';

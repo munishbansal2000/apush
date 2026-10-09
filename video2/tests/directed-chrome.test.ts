@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import {describe, it} from 'node:test';
 import {activeSpeakerAt, type HeadTurn} from '../src/directed/ActiveHead';
-import {BIG_WIDTH, INTRO_FLY_SEC, INTRO_HOLD_SEC, sheetTransform, type Rect} from '../src/directed/boxIntro';
+import {BIG_WIDTH, INTRO_FLY_SEC, INTRO_HOLD_SEC, sheetTransform, type Rect} from '../src/documentary/sheet';
 
 const size = {width: 1920, height: 1080};
 const tracker: Rect = [0.73, 0.05, 0.95, 0.255];
