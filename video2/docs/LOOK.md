@@ -35,6 +35,15 @@ almost no text on screen.
 | `point` | Full-bleed dimmed backdrop image + 1–3 bullets on cues | Enumerations, theses, "three reasons" |
 | `clip` | LTX motion generated from a real still (static camera, ambient motion only: smoke, water, flags, trees), cropped never stretched to 16:9, looped as a seamless forward/reverse boomerang; falls back to a camera move on the still until generated | 1–2 hero moments per lesson (battles, crowds) |
 
+## Questions and pauses (script convention, checked by `tools/audit-scripts.ts`)
+
+- **In-lesson think-pauses:** a question or prompt, then a 5-10s pause on its own line, then the answer. They stay in
+  the lesson (active recall is the edge over a lecture) with a question card and countdown on screen.
+- **Practice block (final chapter):** "Three questions, AP-shaped." then 3 questions, each with a 15-20s pause and an
+  answer; an optional "One more, fast." bonus with a 5-8s pause. Also cut per question into Shorts.
+- Pause markers sit on their own line. A marker inside a spoken line is read straight through: no pause.
+- Crams keep their own rapid-fire rhythm ("Your turn." + short pause).
+
 ## Atmosphere
 
 Optional layers on image, clip, portrait and point shots (never maps), chosen to match the scene; procedural and

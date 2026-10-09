@@ -77,6 +77,11 @@ ending the transcript; clips stage bypassing findTool; per-turn tool lookups; do
 - [ ] **P38. A pre-dialogue header line shaped like `Format: …` (no `#` or `**`) parses as a speaker.** Current scripts are safe
   (headers are `#`-prefixed or bold); tighten if new scripts add plain header lines.
 
+- [ ] **P39. 11 lessons break the question/pause convention** (`docs/SCRIPT_AUDIT.md`, from `tools/audit-scripts.ts`):
+  7 have pause markers inside spoken lines, so their question pauses are silent (u3e5, u3e10, u4e8, u4e9, u4e10, u4e13,
+  u4e14, u4e15); u1e2 is missing practice question three; u2e9 has no practice block; u5e1 has two practice questions
+  with 5s pauses. Script fixes for the owner; re-run the audit to confirm.
+
 ## Found by comparing with `remotion-src/` (older ancestor of video2)
 
 - [x] **P19. Kit episodes U1E3 and U1-PRACTICE can't build in video2.** `src/episodes/u1e3.ts` and `u1-practice.ts`
