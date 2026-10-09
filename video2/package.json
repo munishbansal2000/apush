@@ -47,7 +47,8 @@
     "render:components": "node tools/log-command.cjs render-components tsx tools/render-components.ts",
     "setup:pipeline:unix": "bash tools/setup-pipeline.sh",
     "overnight": "tsx tools/overnight-unit.ts",
-    "review": "tsx tools/review.ts"
+    "review": "tsx tools/review.ts",
+    "storyboard": "tsx tools/storyboard.ts"
   },
   "dependencies": {
     "@remotion/bundler": "^4.0.534",
