@@ -4,7 +4,9 @@ Findings from the 2026-10-08 review of the directed pipeline (`tools/video-pipel
 `tools/pipeline-core.ts`, `src/directed/DirectedEpisode.tsx`). Check an item off when its
 fix lands, and note the commit.
 
-Status: `[ ]` open · `[~]` in progress · `[x]` fixed
+Status: `[ ]` open · `[~]` in progress or superseded · `[x]` fixed
+
+The forward plan lives in `docs/ROADMAP.md`; this file tracks defects.
 
 ## High — wrong output or a check that silently passes
 
@@ -31,7 +33,7 @@ Status: `[ ]` open · `[~]` in progress · `[x]` fixed
 - [x] **P8. Per-segment AAC audio joined with `concat -c copy`.** Risk of clicks or gaps at each scene boundary;
   the check only compares total duration. Fix: render silent segments, then mux one audio track.
   — `tools/video-pipeline.ts:691`
-- [ ] **P9. "Crossfade" is actually a dip to dark.** Scenes don't overlap, and a `cut` after a fade pops in
+- [x] **P9. "Crossfade" is actually a dip to dark.** Scenes don't overlap, and a `cut` after a fade pops in
   from dark. — `src/directed/DirectedEpisode.tsx:61`
 - [x] **P10. LLM image paths can escape `public/`.** The `..` check is missing. — `tools/video-pipeline.ts:361`
 - [x] **P11. Vosk gate is skipped with `--from direct`.** `direct` never calls `readCheckedWords()`.
@@ -47,7 +49,7 @@ Status: `[ ]` open · `[~]` in progress · `[x]` fixed
   any `Word: ...` line parses as speech.
 - [x] **P17.** No `tsconfig.json` or ESLint config, so `npm run typecheck|lint|check` fail.
   Working versions exist in the older `remotion-src/` copy (`tsconfig.json`, `eslint.config.js`); restore those.
-- [ ] **P18.** No tests cover cache invalidation (P2–P4, P7).
+- [x] **P18.** No tests cover cache invalidation (P2–P4, P7).
 
 - [x] **P29. `--only audio`/`--only pronounce` crashed on a fresh episode** (demanded timing_map.json). Found while testing P5.
 - [ ] **P30. Prod has no Fish voice for character speakers.** Scripts use `henry`, `editor`, `tomas`, `nullifier`, `brutus`,
@@ -55,15 +57,15 @@ Status: `[ ]` open · `[~]` in progress · `[x]` fixed
   so `--mode prod` throws on those episodes. (Dev falls back to the narrator voice.)
   **Decision (2026-10-08): no code workaround and no script edits.** Owner adds Fish voice IDs for these characters to
   `fish.voices` in `data/pipeline.json`. Status: waiting on owner.
-- [ ] **P31. Spectrum marker labels collide with axis labels** (e.g. "Sons of Liberty" over "Patriot" at at=0.9). Seen in the visual baseline.
-- [ ] **P32. Causal chain hugs the left frame edge and reveals nodes on a fixed timer** (only 3 of 4 nodes visible at mid-scene), not on narration.
+- [x] **P31. Spectrum marker labels collide with axis labels** (e.g. "Sons of Liberty" over "Patriot" at at=0.9). Seen in the visual baseline.
+- [x] **P32. Causal chain hugs the left frame edge and reveals nodes on a fixed timer** (only 3 of 4 nodes visible at mid-scene), not on narration.
 - [ ] **P33. U1E3 on-screen claim violates fact F-U1-EXCHANGE-05:** "NO TOMATOES IN ROME BEFORE 1492" (use "UNTIL AFTER 1492").
   Surfaced by the P13 merge. Owner content fix in `src/episodes/u1e3.ts`.
 - [ ] **P34. Stale image registry entry** `historic/u1e2/potatoes.jpg` lists E3:t05/t06 but no beat uses it. Run `npm run sync:manifest`.
 
 ## Found by comparing with `remotion-src/` (older ancestor of video2)
 
-- [ ] **P19. Kit episodes U1E3 and U1-PRACTICE can't build in video2.** `src/episodes/u1e3.ts` and `u1-practice.ts`
+- [x] **P19. Kit episodes U1E3 and U1-PRACTICE can't build in video2.** `src/episodes/u1e3.ts` and `u1-practice.ts`
   point at `script/u1e3.v10.md` and `script/u1-practice.md`, and `U1E3Episode.tsx`/`U1PracticeEpisode.tsx` import
   `data/e3/*.json` and `data/u1-practice/*.json`. None of these exist in video2; they only exist in `remotion-src/`.
   Missing JSON imports can break the whole `src/index.ts` bundle (studio, `tools/render.ts`), not just these episodes.
@@ -85,24 +87,24 @@ cue phrasing varies ("Box one, done.", "Checked.", "Box two, checked").
 in `boxTracker`, host heads in `head`, captions in `captions`, all inside guard tracks. Slide type sizes get raised (P25) because
 scenes render at ~64% width.
 
-- [ ] **P21. The pipeline prompt forbids `roadmapIndex`.** `video-pipeline.ts:498` says "Every scene uses exactly id, component,
+- [~] **P21. (superseded by the documentary pipeline, docs/ROADMAP.md) The pipeline prompt forbids `roadmapIndex`.** `video-pipeline.ts:498` says "Every scene uses exactly id, component,
   turnRange, props, and transition", which contradicts the rubric's ROADMAP section. The example output has no `roadmap` either.
-- [ ] **P22. Roadmap is optional everywhere.** If the LLM omits it, the ribbon silently never appears. No validation requires it
+- [~] **P22. (superseded by the documentary pipeline, docs/ROADMAP.md) Roadmap is optional everywhere.** If the LLM omits it, the ribbon silently never appears. No validation requires it
   or checks that `roadmapIndex` only ever increases.
-- [ ] **P23. The ribbon flickers and the last box can never be checked.** It only renders on scenes that have `roadmapIndex`, and
+- [~] **P23. (superseded by the documentary pipeline, docs/ROADMAP.md) The ribbon flickers and the last box can never be checked.** It only renders on scenes that have `roadmapIndex`, and
   `idx >= roadmap.length` is rejected, so there's no "all done" state. The check mark appears with a hard cut instead of animating
   on the spoken "box two, checked" cue. It covers the bottom 9% of the frame, on top of KenBurns and creative_clip captions.
-- [ ] **P24. The current `data/u3e1/scene_plan.json` predates stagger and roadmap.** It has no `roadmap` and no stagger scene, so
+- [~] **P24. (superseded by the documentary pipeline, docs/ROADMAP.md) The current `data/u3e1/scene_plan.json` predates stagger and roadmap.** It has no `roadmap` and no stagger scene, so
   `ensureSync` will reject it and `direct` must be re-run.
 
 ## "Glorified slides" — why output isn't video
 
-- [ ] **P25. One static component per scene, with long holds.** u3e1: 33 scenes, average 26s, longest 50s, despite the 8–15s target.
+- [~] **P25. (superseded by the documentary pipeline, docs/ROADMAP.md) One static component per scene, with long holds.** u3e1: 33 scenes, average 26s, longest 50s, despite the 8–15s target.
   Nothing changes inside a scene once its entrance animation finishes.
-- [ ] **P26. Word timing is measured and then thrown away.** Vosk `word_times.json` never reaches DirectedEpisode. Components accept
+- [x] **P26. Word timing is measured and then thrown away.** Vosk `word_times.json` never reaches DirectedEpisode. Components accept
   `wordTimings`/`anchor` (TimingProps, StaggerPanel.anchor), but DirectedEpisode passes neither, so builds aren't synced to speech.
-- [ ] **P27. The director sees ~10 slide components out of a large motion library.** Unused: `src/motion/*` (characters, dots, growth,
+- [~] **P27. (superseded by the documentary pipeline, docs/ROADMAP.md) The director sees ~10 slide components out of a large motion library.** Unused: `src/motion/*` (characters, dots, growth,
   territory, military, world, document), maps (Louisiana, Oregon Trail, TerritorialExpansion, Tactical), TalkingHead/CharacterDialogue,
   KineticCaptions, CinematicLowerThird, Ship/Projectile/ParticleSystem, and the storyboard camera system (`SHOT_CAMERAS`).
-- [ ] **P28. No persistent motion layer.** There are no on-screen hosts, captions, or camera moves across cuts. `ken_burns` stops are
+- [~] **P28. (superseded by the documentary pipeline, docs/ROADMAP.md) No persistent motion layer.** There are no on-screen hosts, captions, or camera moves across cuts. `ken_burns` stops are
   stripped by the prompt ("omit ken_burns stops"), and transitions are fades to dark.
