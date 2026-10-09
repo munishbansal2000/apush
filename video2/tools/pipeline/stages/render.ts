@@ -1,11 +1,12 @@
 import {execFileSync} from 'node:child_process';
-import {copyFileSync, existsSync, mkdirSync, readFileSync, writeFileSync, rmSync, unlinkSync, readdirSync, renameSync} from 'node:fs';
+import {copyFileSync, existsSync, mkdirSync, writeFileSync, rmSync, unlinkSync, readdirSync} from 'node:fs';
 import {join} from 'node:path';
 import {bundle} from '@remotion/bundler';
 import {renderMedia, renderStill, selectComposition} from '@remotion/renderer';
 import {ROOT, ffprobeDuration} from '../../lib';
-import {atomicJson, normalizePlan, readJson, sha256, syncIssues, validateCanvas, type DirectedPlan, type PipelineTurn} from '../../pipeline-core';
+import {atomicJson, normalizePlan, readJson, syncIssues, validateCanvas, type DirectedPlan, type PipelineTurn} from '../../pipeline-core';
 import {treeHash, type PipelineContext, type Timing} from '../context';
+import {assembleEpisode, buildNarrationTrack} from '../assemble';
 import {planImageRefs} from '../plan-refs';
 import {segmentFingerprint, stillFileName, stillFingerprint, type RenderEnv} from '../render-cache';
 import {imageManifestPathFor, planPathFor} from './direct';
@@ -72,7 +73,7 @@ export function ensureSync(ctx: PipelineContext, turns: PipelineTurn[], timing: 
 
 /** Contact sheet stills or segmented full render of DirectedEpisode. */
 export async function remotion(ctx: PipelineContext, turns: PipelineTurn[], timing: Timing, stage: 'contact' | 'render') {
-  const {episode, force, work, audioDir, run} = ctx;
+  const {episode, force, work, audioDir} = ctx;
   const planPath = planPathFor(ctx);
   if (!existsSync(planPath)) throw new Error(`missing ${planPath}; run direct stage`);
   const plan = readJson<DirectedPlan>(planPath);
@@ -104,11 +105,8 @@ export async function remotion(ctx: PipelineContext, turns: PipelineTurn[], timi
       const from = boundaries[i];
       const to = boundaries[i + 1] - 1;
       if (to < from) throw new Error(`${scene.id}: empty render range ${from}-${to}`);
-      const audioRows = scene.turnIds.map(id => {
-        const file = join(audioDir, `${id}.mp3`);
-        return [id, existsSync(file) ? sha256(readFileSync(file)) : 'pause'];
-      });
-      const fingerprint = sha256(JSON.stringify({visual: segmentFingerprint(plan, i, {from, to}, env, ctx.publicDir), audioRows}));
+      // Segments are silent video; narration is mixed once at assembly, so audio edits never re-render pixels.
+      const fingerprint = segmentFingerprint(plan, i, {from, to}, env, ctx.publicDir);
       const file = join(segmentsDir, `${String(i).padStart(4, '0')}-${scene.id}.mp4`);
       nextCache[scene.id] = {fingerprint, file};
       segmentFiles.push(file);
@@ -119,7 +117,7 @@ export async function remotion(ctx: PipelineContext, turns: PipelineTurn[], timi
       }
       const sceneLayoutIssues: LayoutIssue[] = [];
       await renderMedia({
-        composition, serveUrl, codec: 'h264', outputLocation: file, inputProps,
+        composition, serveUrl, codec: 'h264', outputLocation: file, inputProps, muted: true,
         browserExecutable, logLevel: 'error', frameRange: [from, to],
         onBrowserLog: log => sceneLayoutIssues.push(...layoutIssuesFromLog(log.text)),
       });
@@ -140,14 +138,9 @@ export async function remotion(ctx: PipelineContext, turns: PipelineTurn[], timi
     }
     atomicJson(layoutReportPath, {episode, checkedAt: new Date().toISOString(), issues: renderLayoutIssues});
     atomicJson(cachePath, nextCache);
-    const concat = join(work, 'segments.concat.txt');
-    writeFileSync(concat, segmentFiles.map(file => `file '${file.replace(/\\/g, '/').replace(/'/g, "'\\''")}'`).join('\n') + '\n');
-    const temp = `${output}.assembling.mp4`;
-    run('ffmpeg', ['-y', '-v', 'error', '-f', 'concat', '-safe', '0', '-i', concat, '-c', 'copy', '-movflags', '+faststart', temp]);
-    if (existsSync(output)) unlinkSync(output);
-    renameSync(temp, output);
-    const actual = ffprobeDuration(output);
-    if (Math.abs(actual - timing.totalSec) > 2 / timing.fps) throw new Error(`assembled video is ${actual.toFixed(3)}s; expected ${timing.totalSec.toFixed(3)}s`);
+    const narration = join(work, 'narration.m4a');
+    buildNarrationTrack(turns, timing, audioDir, narration);
+    assembleEpisode(segmentFiles, narration, output, work, timing.totalSec, timing.fps);
     console.log(`[render] ${rendered} scene segment(s) rendered, ${reused} reused; assembled -> ${output}`); return;
   }
   const stillDir = join(work, 'stills'); mkdirSync(stillDir, {recursive: true});

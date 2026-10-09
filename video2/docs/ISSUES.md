@@ -28,7 +28,7 @@ Status: `[ ]` open · `[~]` in progress · `[x]` fixed
 
 - [x] **P7. TTS cache is keyed by position-based turn ID.** Inserting or deleting a line re-renders every later
   turn (costs Fish credits). Fix: cache by text hash. — `tools/video-pipeline.ts:263`, `:277`
-- [ ] **P8. Per-segment AAC audio joined with `concat -c copy`.** Risk of clicks or gaps at each scene boundary;
+- [x] **P8. Per-segment AAC audio joined with `concat -c copy`.** Risk of clicks or gaps at each scene boundary;
   the check only compares total duration. Fix: render silent segments, then mux one audio track.
   — `tools/video-pipeline.ts:691`
 - [ ] **P9. "Crossfade" is actually a dip to dark.** Scenes don't overlap, and a `cut` after a fade pops in

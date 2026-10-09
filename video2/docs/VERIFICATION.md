@@ -137,3 +137,23 @@ owner's Windows run in Phase 7.
 
 Gate: typecheck 0, lint 0, tests pass.
 
+## P8: one continuous narration track
+
+Before: each scene segment was rendered with its own AAC audio and joined with `concat -c copy`; the only check was
+container duration ±2 frames.
+
+After (`tools/pipeline/assemble.ts`): segments render with `muted: true`; `buildNarrationTrack` mixes every turn mp3
+at its measured start over a silent bed of exactly `totalSec` (48 kHz stereo AAC); `assembleEpisode` concatenates the
+video, muxes the track, and checks exactly one video + one audio stream and each stream's duration (±2 frames).
+Segment cache keys no longer include audio, so narration-only edits re-mix audio without re-rendering video.
+
+`tests/assemble.test.ts` (real ffmpeg, 3 pass):
+- turns land at their starts: lead-in, pause, and tail windows < -60 dB; both turn windows > -30 dB
+- mux output: streams `audio,video`, length 4.000s ±2 frames, narration audible after mux
+- a 2s video under a 4s track is rejected. This test **failed on the first draft** of `assembleEpisode`
+  (the container reported 4s because the audio stream was longer); fixed by checking each stream's duration.
+
+**UNVERIFIED end-to-end** with real Remotion segments (needs a browser): Phase 7 owner run.
+
+Gate: typecheck 0, lint 0, tests 97/97.
+
