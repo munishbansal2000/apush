@@ -78,4 +78,23 @@ describe('plan fix-ups: lesson budgets', () => {
     assert.deepEqual(fixed.map(a => shots(a).length), [2, 2]);
     assert.equal(fixes.length, 1);
   });
+
+  it('reserves portrait uses, fixes place ids without their prefix, frames clips within the zoom limit, drops out-of-order cuts', () => {
+    const portrait = {type: 'portrait', at: {turn: 0, phrase: 'x'}, image: 'historic/seal.jpg', name: 'Seal', from: {x: 0.5, y: 0.3, zoom: 1}, to: {x: 0.5, y: 0.25, zoom: 1.2}};
+    const map = {type: 'map', at: {turn: 0, phrase: 'x'}, view: 'map.test', points: [{at: {offset: 1}, place: 'fort-detroit'}], moves: [{at: {offset: 2}, to: 'fort-pitt'}]};
+    const clip = {type: 'clip', at: {turn: 0, phrase: 'x'}, image: 'historic/small.jpg', prompt: 'smoke', focus: [0.5, 0.5]};
+    // stamp.jpg is over budget; seal.jpg has 4 portraits coming, so it must not be picked as the swap.
+    const acts = [{shots: [...[1, 2, 3, 4, 5].map(() => im('historic/stamp.jpg')), map, clip]}, {shots: [1, 2, 3, 4].map(() => portrait)}] as unknown as ActOutput[];
+    const {acts: fixed} = fixPlanBudgets(acts, outline, turns, catalog, assetsForAct, undefined, new Set(['place.fort-detroit', 'place.fort-pitt']));
+    const swapped = shots(fixed[0])[4].image;
+    assert.notEqual(swapped, 'historic/seal.jpg', 'portrait image is reserved');
+    assert.notEqual(swapped, 'historic/stamp.jpg');
+    const m = shots(fixed[0])[5] as {points: {place: string}[]; moves: {to: string}[]};
+    assert.equal(m.points[0].place, 'place.fort-detroit');
+    assert.equal(m.moves[0].to, 'place.fort-pitt');
+    const c = shots(fixed[0])[6] as {to: {zoom: number}};
+    assert.ok(c.to.zoom <= catalog.find(e => e.path === 'historic/small.jpg')!.maxZoom);
+    const ordered = dropShortShots([{shots: [im('a'), im('b'), im('c')]}] as unknown as ActOutput[], 'shot plan invalid:\n  - shot 3 starts at or before shot 2 (515.39s ≤ 518.42s)');
+    assert.deepEqual(shots(ordered.acts[0]).map(x => x.image), ['a', 'b']);
+  });
 });

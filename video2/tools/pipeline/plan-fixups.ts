@@ -80,7 +80,7 @@ export function fixActQuestions(act: ActOutput, range: {from: number; to: number
 }
 
 /** Lesson-wide budgets and zoom limits, applied to the acts in place of LLM repairs. */
-export function fixPlanBudgets(acts: ActOutput[], outline: Outline, turns: PipelineTurn[], catalog: CatalogEntry[], assetsForAct: (catalog: CatalogEntry[], actText: string) => CatalogEntry[], rules: ShotRules = LOOK_RULES): {acts: ActOutput[]; fixes: string[]} {
+export function fixPlanBudgets(acts: ActOutput[], outline: Outline, turns: PipelineTurn[], catalog: CatalogEntry[], assetsForAct: (catalog: CatalogEntry[], actText: string) => CatalogEntry[], rules: ShotRules = LOOK_RULES, placeIds: Set<string> = new Set()): {acts: ActOutput[]; fixes: string[]} {
   const fixes: string[] = [];
   const byPath = new Map(catalog.map(c => [c.path, c]));
   const uses = new Map<string, number>();
@@ -97,6 +97,10 @@ export function fixPlanBudgets(acts: ActOutput[], outline: Outline, turns: Pipel
     return [f, t];
   };
   const fresh = (image: string): [Framing, Framing] => clampFraming(image, {x: 0.5, y: 0.5, zoom: 1}, {x: 0.5, y: 0.45, zoom: 1.15});
+  // Portraits are never swapped (the name tag belongs to the person), so their uses are reserved up front.
+  const portraitsLeft = new Map<string, number>();
+  for (const act of acts) for (const sh of act.shots as Shot[]) if (isObj(sh) && sh.type === 'portrait' && typeof sh.image === 'string') portraitsLeft.set(sh.image, (portraitsLeft.get(sh.image) ?? 0) + 1);
+  const committed = (p: string) => (uses.get(p) ?? 0) + (portraitsLeft.get(p) ?? 0);
   let customs = 0;
   let clips = 0;
   const customSeen = new Set<string>();
@@ -108,8 +112,8 @@ export function fixPlanBudgets(acts: ActOutput[], outline: Outline, turns: Pipel
     /** The act's least-used relevant image with budget left (never the one being replaced). */
     const replacement = (not: string | null): string | null => {
       pool ??= assetsForAct(catalog, actText);
-      const ranked = pool.map((c, n) => ({c, n})).filter(({c}) => c.path !== not && (uses.get(c.path) ?? 0) < rules.maxImageUses)
-        .sort((a, b) => (uses.get(a.c.path) ?? 0) - (uses.get(b.c.path) ?? 0) || a.n - b.n);
+      const ranked = pool.map((c, n) => ({c, n})).filter(({c}) => c.path !== not && committed(c.path) < rules.maxImageUses)
+        .sort((a, b) => committed(a.c.path) - committed(b.c.path) || a.n - b.n);
       return ranked[0]?.c.path ?? null;
     };
     const shots = (act.shots as Shot[]).flatMap((raw): Shot[] => {
@@ -127,6 +131,11 @@ export function fixPlanBudgets(acts: ActOutput[], outline: Outline, turns: Pipel
       }
       if (s.type === 'clip') {
         clips++;
+        // The fallback camera move on the still must respect the image's zoom limit too.
+        if (typeof s.image === 'string' && (!isObj(s.from) || !isObj(s.to))) {
+          const focus = Array.isArray(s.focus) ? s.focus as number[] : [0.5, 0.5];
+          [s.from, s.to] = clampFraming(s.image, {x: focus[0], y: focus[1], zoom: 1}, {x: focus[0], y: focus[1], zoom: 1.08});
+        }
         if (clips > rules.maxClips) {
           const focus = Array.isArray(s.focus) ? s.focus as number[] : [0.5, 0.5];
           s.type = 'image_move';
@@ -136,8 +145,17 @@ export function fixPlanBudgets(acts: ActOutput[], outline: Outline, turns: Pipel
           fixes.push(`act ${i + 1}: LTX clip over the lesson budget became a camera move on its still`);
         }
       }
+      if (s.type === 'portrait' && typeof s.image === 'string') portraitsLeft.set(s.image, (portraitsLeft.get(s.image) ?? 1) - 1);
+      // Place ids written without their "place." prefix.
+      for (const key of ['points', 'moves'] as const) {
+        const list = s[key];
+        if (Array.isArray(list)) for (const item of list) if (isObj(item)) for (const field of ['place', 'to'] as const) {
+          const v = item[field];
+          if (typeof v === 'string' && !placeIds.has(v) && placeIds.has(`place.${v}`)) { item[field] = `place.${v}`; fixes.push(`act ${i + 1}: place "${v}" -> "place.${v}"`); }
+        }
+      }
       const image = imageOf(s);
-      if (image && s.type !== 'portrait' && (uses.get(image) ?? 0) >= rules.maxImageUses) {
+      if (image && s.type !== 'portrait' && committed(image) >= rules.maxImageUses) {
         const swap = replacement(image);
         if (swap) {
           fixes.push(`act ${i + 1}: "${image}" past its ${rules.maxImageUses}-use budget; swapped for "${swap}"`);
@@ -162,17 +180,23 @@ export function fixPlanBudgets(acts: ActOutput[], outline: Outline, turns: Pipel
   return {acts: out, fixes};
 }
 
-/** Drops shots the resolver reported as too short (by plan-wide shot number), unless dropping would break the act. */
+/**
+ * Drops shots the resolver reported as too short or out of order (by plan-wide shot number), never the first shot of
+ * an act or a question card; the previous shot holds instead.
+ */
 export function dropShortShots(acts: ActOutput[], message: string): {acts: ActOutput[]; fixes: string[]} {
   const fixes: string[] = [];
-  const short = new Set([...message.matchAll(/shot0*(\d+): [\d.]+s is shorter than/g)].map(m => Number(m[1]) - 1));
+  const short = new Set([
+    ...[...message.matchAll(/shot0*(\d+): -?[\d.]+s is shorter than/g)].map(m => Number(m[1]) - 1),
+    ...[...message.matchAll(/shot (\d+) starts at or before shot \d+/g)].map(m => Number(m[1]) - 1),
+  ]);
   if (!short.size) return {acts, fixes};
   let g = 0;
   const out = acts.map((act, i) => {
     const kept = (act.shots as Shot[]).filter((s, n) => {
       const id = g++;
       const drop = short.has(id) && n > 0 && !(isObj(s) && s.type === 'question');
-      if (drop) fixes.push(`act ${i + 1}: dropped shot index ${n} (cut shorter than ${LOOK_RULES.minShotSec}s); the previous shot holds`);
+      if (drop) fixes.push(`act ${i + 1}: dropped shot index ${n} (cut too short or out of order); the previous shot holds`);
       return !drop;
     });
     return {...act, shots: kept as ActOutput['shots']};

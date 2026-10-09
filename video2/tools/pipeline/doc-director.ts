@@ -477,7 +477,7 @@ export function directDocumentary(io: DirectorIO, input: DirectorInputs, maxRepa
   for (let attempt = 0; attempt <= maxRepairs; attempt++) {
     if (!problems.size) {
       // Lesson-wide budgets (image uses, custom explainers, clips) and zoom limits: fixed in code, not by repair rounds.
-      const budgeted = fixPlanBudgets(acts as ActOutput[], outline, input.turns, input.catalog, assetsForAct);
+      const budgeted = fixPlanBudgets(acts as ActOutput[], outline, input.turns, input.catalog, assetsForAct, LOOK_RULES, new Set(Object.keys(input.options.places ?? {})));
       if (budgeted.fixes.length) log.push({stage: `assembled auto-fix (attempt ${attempt + 1})`, source: 'merged plan', issues: budgeted.fixes});
       budgeted.acts.forEach((a, i) => { acts[i] = a; latest[i] = a; });
       let {plan, shotAct, yearAct} = assemblePlan(input.episode, outline, acts as ActOutput[]);

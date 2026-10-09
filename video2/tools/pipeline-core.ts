@@ -144,6 +144,15 @@ export function resolveAudioScript(audioRoot: string, episode: string): string |
       version: Number(/-v(\d+)-/i.exec(name)?.[1] ?? 0),
     }))
     .sort((a, b) => Number(b.locked) - Number(a.locked) || b.version - a.version || b.name.localeCompare(a.name));
+  // A LOCKED script wins, unless a numbered draft newer than the version it was locked from exists (the fleet retires a
+  // lock by finalizing a newer draft, e.g. u3e8 v5 over a LOCKED made from v4). The lock's version is in its header.
+  const lockedFile = candidates.find(c => c.locked);
+  const newest = candidates.filter(c => !c.locked).sort((a, b) => b.version - a.version)[0];
+  if (lockedFile && newest) {
+    const header = readFileSync(join(dir, lockedFile.name), 'utf8').split('\n').slice(0, 6).join('\n');
+    const lockedFrom = Number(/\bv(\d+)\b/i.exec(header)?.[1] ?? Infinity);
+    if (newest.version > lockedFrom) return join(dir, newest.name);
+  }
   return candidates[0] ? join(dir, candidates[0].name) : null;
 }
 

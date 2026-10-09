@@ -28,7 +28,7 @@ Status: ✅ done · 🔶 in progress · ⬜ not started · Owner: **C** = Claude
 | V7 | `document` shot: zoom to a transcribed phrase and highlight it as spoken (DocumentLens exists) | ⬜ | C |
 | V8 | Atmosphere layers: dust, smoke, embers, fog, candle | ✅ | C |
 | V9 | Shorts: vertical 1080×1920 cut per Episode Sheet box, auto-reframed | ⬜ | C |
-| V10 | Layout guard reporting in real renders (heartbeat showed 0 measured frames; ISSUES P1) | 🔶 | C |
+| V10 | Layout guard reporting in real renders (heartbeat showed 0 measured frames: the guard read its parent ref before React attached it on mount; now falls back to [data-kit-root], unverified until the next real render) | 🔶 | C |
 
 ## 2. Asset library (the moat)
 

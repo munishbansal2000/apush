@@ -22,4 +22,18 @@ describe('video pipeline core', () => {
     assert.match(resolved ?? '', /audio_scripts[\\/]unit3[\\/]apush-audio-u3-e1-script-v\d+-DRAFT\.md$/i);
   });
 
+  it('prefers a LOCKED script unless a draft newer than the version it was locked from exists', async () => {
+    const {mkdtempSync, mkdirSync, writeFileSync} = await import('node:fs');
+    const {join} = await import('node:path');
+    const {tmpdir} = await import('node:os');
+    const root = mkdtempSync(join(tmpdir(), 'scripts-'));
+    mkdirSync(join(root, 'unit3'));
+    const put = (name: string, header: string) => writeFileSync(join(root, 'unit3', name), `${header}\nMaya: Hello.\n`);
+    put('apush-audio-u3-e8-script-LOCKED.md', '# U3-E8\n# Draft v4 (rebuild).');
+    put('apush-audio-u3-e8-script-v4-DRAFT.md', '# Draft v4');
+    assert.match(resolveAudioScript(root, 'u3e8') ?? '', /LOCKED\.md$/, 'the lock beats its own source draft');
+    put('apush-audio-u3-e8-script-v5-DRAFT.md', '# Draft v5');
+    assert.match(resolveAudioScript(root, 'u3e8') ?? '', /v5-DRAFT\.md$/, 'a newer draft retires the lock');
+  });
+
 });

@@ -257,7 +257,9 @@ export const LayoutGuard: React.FC<{ cfg: GuardCfg; rootRef: React.RefObject<HTM
   const last = useRef('');
 
   useLayoutEffect(() => {
-    const root = rootRef.current;
+    // On mount React runs this (child) layout effect before attaching the parent's rootRef, so a single-frame render
+    // (renderStill, the first frame of a segment) would see null and never report. The DOM is already in place: find it.
+    const root = rootRef.current ?? document.querySelector<HTMLDivElement>('[data-kit-root]');
     if (!root) return;
     const { boxes, issues } = measureTracks(root, cfg);
     // Heartbeat: proves the guard measured this frame, so a silent guard can't pass for a clean render.
