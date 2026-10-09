@@ -1,6 +1,6 @@
 # U4-E9 — The Bank War (full debate) — Maya + Marcus + Biddle
 # Episode: The Bank War. Experienced runtime ~14.4 min (dialogue 2,353 words at ≤180 WPM + 79 s scripted pauses). Draft v3, 2026-10-08.
-# Read note: Debate format. Maya moderates (modern voice, 2026). Marcus argues Andrew Jackson's side as an 1830s advocate — his knowledge runs through the Panic of 1837 but stops at the decade's end. Biddle is Nicholas Biddle, Bank president, in his 1832–1836 voice — he is never asked about outcomes after 1836. Pause tags: [9-second pause] = prediction beats; [15-second pause], [18-second pause], [20-second pause] = self-test CER questions; [8-second pause] = fast bonus. STRIP BEFORE TTS: this header, the read note, the pronunciation line, and every [N-second pause] tag — convert pauses to real silence; raw bracket text must never reach the voice. Em dashes in dialogue are TTS beats (interruptions/asides), not punctuation to rush. The tagline has no dash — land it clean. Production: test "specie" (SPEE-shee) and "Biddle" in both male voices before full render; Biddle's February 1834 letter line is a reported-but-genuine quote (see Sources footer) and must be read verbatim, heat and all. School-safe note: the letter line contains "scalped" — historical verbatim, not profanity; keep it.
+# Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Debate format. Maya moderates (modern voice, 2026). Marcus argues Andrew Jackson's side as an 1830s advocate — his knowledge runs through the Panic of 1837 but stops at the decade's end. Biddle is Nicholas Biddle, Bank president, in his 1832–1836 voice — he is never asked about outcomes after 1836. STRIP BEFORE TTS: this header, the read note, the pronunciation line, and every [N-second pause] tag — convert pauses to real silence; raw bracket text must never reach the voice. Em dashes in dialogue are TTS beats (interruptions/asides), not punctuation to rush. The tagline has no dash — land it clean. Production: test "specie" (SPEE-shee) and "Biddle" in both male voices before full render; Biddle's February 1834 letter line is a reported-but-genuine quote (see Sources footer) and must be read verbatim, heat and all. School-safe note: the letter line contains "scalped" — historical verbatim, not profanity; keep it.
 # Pronunciation: Nicholas Biddle (NIK-uh-lus BID-ul); specie (SPEE-shee); Roger Taney (TAW-nee); Van Buren (van BYOO-ren); McCulloch (muh-CULL-uck)
 
 Maya: [professional broadcast tone] Jackson fought two wars at home in the 1830s, and only one needed an army. Last episode: nullification, South Carolina and the tariff. E7 sketched the Bank War; this episode argues it. Marcus speaks for Andrew Jackson. Across from him: Nicholas Biddle, the Bank's president, in his 1832-to-36 voice. Four boxes: the veto message as an argument, Biddle's credit squeeze, the Specie Circular and the land bubble, the Panic of 1837 with the verdict question. Circle the ones you couldn't explain right now. About fourteen minutes, pauses included. Let's go.
@@ -39,7 +39,7 @@ Maya: [sheepish] More than a fourth foreign-held, but still an American corporat
 
 Maya: One number worth carrying: twelve vetoes, more than all six presidents before him combined.
 
-Maya: One more thing. Henry Clay forced that recharter vote four years early, betting a Jackson veto would cost him the 1832 election. Your turn. You're advising Jackson that summer. Veto and own the fight, or sign and defuse it? Which costs him less? Reason it out. [9-second pause]
+Maya: One more thing. Henry Clay forced that recharter vote four years early, betting a Jackson veto would cost him the 1832 election. Your turn. You're advising Jackson that summer. Veto and own the fight, or sign and defuse it? Which costs him less? Reason it out. [10-second pause]
 
 Maya: Jackson vetoed, and Clay's trap caught Clay: the rich-and-powerful language played straight to voters, and Jackson won reelection. Box one is checked. No more checkoffs till the recap.
 
@@ -71,7 +71,7 @@ Maya: [curious, inquisitive tone] Biddle, the Circular was aimed at your pet-ban
 
 Biddle: [intense] The Circular proved my point, not his. Jackson's own chosen banks inflated the land bubble with reckless paper. Then his Circular told every speculator their paper was worthless for the one purchase that mattered. He built the bubble with one hand and burst it with the other.
 
-Maya: Your turn. It's 1836. You hold paper claims on frontier land, and the government just announced it will only take gold and silver. What happens to land prices over the next year, and what happens to the people holding your paper? Reason it out. [9-second pause]
+Maya: Your turn. It's 1836. You hold paper claims on frontier land, and the government just announced it will only take gold and silver. What happens to land prices over the next year, and what happens to the people holding your paper? Reason it out. [10-second pause]
 
 Maya: Prices fall: the books record falling land prices and a shortage of government funds after the Circular. The paper holders are left holding promises no land office will honor.
 
@@ -111,19 +111,19 @@ Maya: For federal land only. Right. Box four: the Panic of 1837. The verdict sta
 
 Maya: Three questions, AP-shaped. Say your answer before I give it. Take the full fifteen to twenty seconds.
 
-Maya: One. Stimulus, July 1832. Real quote: "It is to be regretted that the rich and powerful too often bend the acts of government to their selfish purposes." What's the author's purpose, and what does it reveal about his strategy? [15-second pause]
+Maya: One. Stimulus, July 1832. Real quote: "It is to be regretted that the rich and powerful too often bend the acts of government to their selfish purposes." What's the author's purpose, and what does it reveal about his strategy? [10-second pause]
 
 Maya: The purpose was persuasion: the closing of a veto message, aimed at voters as much as senators. The evidence is the matchup, "the rich and powerful" against "the farmers, mechanics, and laborers." Jackson turned a constitutional fight over a bank charter into a moral fight over who the government serves. He was campaigning, not explaining.
 
-Maya: Two. Jackson pulled the deposits in 1833 instead of waiting for the charter to die in 1836. Why was the faster move worth the cost? [18-second pause]
+Maya: Two. Jackson pulled the deposits in 1833 instead of waiting for the charter to die in 1836. Why was the faster move worth the cost? [10-second pause]
 
 Maya: Because a Bank with its deposits intact could fight back: fund its defense, keep lending, survive to embarrass him. Biddle's contraction proved the Bank would use its remaining power as leverage. Waiting meant three more years of a hostile institution sitting on the government's own money. Jackson paid the price to starve it now.
 
-Maya: Three. The Whigs named themselves after the British party that opposed the king's power. What does that tell you about how they saw Jackson? [20-second pause]
+Maya: Three. The Whigs named themselves after the British party that opposed the king's power. What does that tell you about how they saw Jackson? [10-second pause]
 
 Maya: Their charge was constitutional before it was economic: they saw a president grabbing power like a monarch. The evidence is the nickname "King Andrew," and a coalition whose glue was opposition to Jackson. The name was the argument: executive power as monarchy, with Jackson as the tyranny they existed to check.
 
-Maya: One more, fast. The Panic of 1837: one cause, or no single hand? [8-second pause] No single hand. The verdict stays split.
+Maya: One more, fast. The Panic of 1837: one cause, or no single hand? [10-second pause] No single hand. The verdict stays split.
 
 Biddle: [professional broadcast tone] And on the contraction: a bank that cannot defend its depositors' money is no bank at all. A president who yanks the floor out from under it, then blames it for the fall, is the one wielding the power he fears.
 

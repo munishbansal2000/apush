@@ -2,7 +2,7 @@
 # Episode 12: The Abolitionists.
 # Draft v3.
 # Word count: 1,869 spoken words (pause tags stripped; gates count, canonical). Experienced runtime ≈ 11.5 minutes: 1,869 words at 180 WPM (~10.4 min speech) + 66 seconds of scripted pause silence (three 16-second self-test pauses, two 9-second prediction beats). Cold-open promise: "About eleven and a half minutes."
-# Read note: Debate format. Maya moderates. Marcus argues the immediatist position. Ellis is a fictional composite voicing the 1830s colonizationist-gradualist position — measured, never a caricature. Garrison's Liberator quote and Douglass's July 4th line are real quotes; each is disclosed in dialogue as such. Truth's "Ain't I a Woman?" wording is flagged in dialogue as remembered, not transcript-verified. Strip this header and the read note before TTS. Pause tags used in the script, convert to real silence: [16-second pause] x3 (self-test CER questions), [9-second pause] x2 (prediction beats).
+# Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Debate format. Maya moderates. Marcus argues the immediatist position. Ellis is a fictional composite voicing the 1830s colonizationist-gradualist position — measured, never a caricature. Garrison's Liberator quote and Douglass's July 4th line are real quotes; each is disclosed in dialogue as such. Truth's "Ain't I a Woman?" wording is flagged in dialogue as remembered, not transcript-verified. Strip this header and the read note before TTS.
 # Pronunciation: Sojourner Truth (soh-JURN-ur), Garrison (GAR-uh-sun), Grimke (grim-KEE), Vesey (VEE-zee), Southampton (sowth-HAMP-tun), Birney (BUR-nee)
 
 Maya: [professional broadcast tone] Last time: the reform fire met its hardest target — slavery itself. This time: the fight inside the fight — free everyone now, no compromise, or wind slavery down slowly. Four boxes on your sheet: immediatism versus gradualism, the Black-led movement, the backlash, and the Constitution split. Circle the ones you couldn't explain right now. About eleven and a half minutes, and you'll check all four off.
@@ -23,7 +23,7 @@ Marcus: The people you claimed to help rejected the offer. Douglass said coloniz
 
 Maya: Your turn. Why did gradualists call colonization the safe exit, when most Black Americans wanted nothing to do with it?
 
-[9-second pause]
+[10-second pause]
 
 Maya: It answered the white South's fear: fewer free Black people nearby, without asking anyone to change their mind. Douglass's answer: that accommodation was the problem.
 
@@ -85,7 +85,7 @@ Maya: My mom would've read Walker's pamphlet and said, "You're getting all of us
 
 Maya: Your turn. Why would slaveholders hundreds of miles away fear a pamphlet their enslaved workers weren't supposed to be able to read?
 
-[9-second pause]
+[10-second pause]
 
 Maya: Walker was free and literate — and Black, which is exactly what made the pamphlet terrifying. The pamphlet proved the resistance was coming from Black people themselves, organized and writing it down.
 
@@ -141,19 +141,19 @@ Marcus: All four on the sheet.
 
 Maya: Three questions, AP-shaped. Say your answer before I give it. One: a textbook prints Garrison's line, "I will not retreat a single inch... And I will be heard." The prompt asks how this source shows immediatism breaking from the older antislavery approaches?
 
-[16-second pause]
+[10-second pause]
 
 Maya: The absolutes are the answer. No retreat, no inch: immediatism rejecting gradualism's timeline and colonization's exit plan.
 
 Maya: Two: the House tables every antislavery resolution without debate. The gag rule in action. Which side did it help, and what does it tell you about slavery in the eighteen thirties?
 
-[16-second pause]
+[10-second pause]
 
 Maya: Slavery's defenders. It tells you slavery couldn't survive open debate. A system that needs a gag rule knows its argument loses in the open.
 
 Maya: Three: Douglass breaks with Garrison in eighteen fifty-one over the Constitution. Why does that split matter more than a personal feud?
 
-[16-second pause]
+[10-second pause]
 
 Maya: It's a strategy fork with real stakes. Garrison's camp condemns the document and rejects politics; Douglass's side decides the Constitution's own words can be wielded against slavery.
 

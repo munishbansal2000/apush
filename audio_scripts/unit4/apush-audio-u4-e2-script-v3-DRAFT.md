@@ -1,7 +1,7 @@
 # U4-E2 — Maya + Marcus (Fish Audio)
 # Episode 2: The Marshall Court. Experienced runtime ~10 minutes (1,513 spoken words + 75 seconds of scripted pauses).
 # Draft v3 (2026-10-08 fleet repair — full finding list in CHANGELOG).
-# Read note: Strip this header, the read note, and all pause tags before TTS; convert pause tags to real silence. Pause marks: [8-second pause] (prediction beats), [18-second pause] (self-test CER questions), [5-second pause] (fast bonus). Maya and Marcus run an interview: cold open, four case topics, recap, self-test, closer. Maya drives the boxes and the self-test answers; Marcus leads the topics.
+# Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Strip this header, the read note, and all pause tags before TTS; convert pause tags to real silence. Maya and Marcus run an interview: cold open, four case topics, recap, self-test, closer. Maya drives the boxes and the self-test answers; Marcus leads the topics.
 # Production: the closing tagline's em-dash is a held breath — do not rush it.
 # Pronunciation: MAR-bree (Marbury), muh-KUL-uk (McCulloch), GIB-unz (Gibbons), OG-den (Ogden), FLECH-er (Fletcher)
 
@@ -22,7 +22,7 @@ Maya: And this is literally where Hamilton the musical leaves off: the election 
 Marcus: And the midnight appointments were Adams's parting shot at that ending. He couldn't keep the presidency, so he packed the courts on his way out.
 
 Maya: Your turn. If you were Marshall, Federalist chief justice with Jefferson breathing down your neck and no army to enforce a single word you write, what third option is hiding in there?
-[8-second pause]
+[10-second pause]
 
 Marcus: Marshall rules that Marbury did have a right to the judgeship, but the law he'd sued under, the Judiciary Act of 1789, gave the Court more power than the Constitution allows. So it was unconstitutional. Marbury walks out with the right and no way to use it. Jefferson keeps the undelivered commissions. And Marshall leaves with something nobody had handed the Court before: judicial review, the power to measure laws against the Constitution and throw out the ones that fail.
 
@@ -61,7 +61,7 @@ Maya: Sounds like a blank check.
 Marcus: Broad, not unlimited. The power still has to hook to a listed power, and the Bank hooks. And remember, this is the clause Patrick Henry was scared of back in '88, now doing the Federalists' old work for them.
 
 Maya: Your turn. Say Maryland's allowed to tax the Bank just a little, a small polite tax. What's stopping Maryland from raising it until the Bank chokes?
-[8-second pause]
+[10-second pause]
 
 Marcus: Nothing. Marshall's whole second half is built on that: "the power to tax involves the power to destroy." A state that can tax a federal institution can raise that tax until the Bank chokes, and no state gets to destroy what the nation built. The ruling killed the tax, and the Bank stayed open. Federal law outranks state law.
 
@@ -108,19 +108,19 @@ Marcus: Landed it. Gibbons owns the steamboats. Box four.
 Maya: Check your boxes.
 
 Maya: Three questions, AP-shaped. Say your answer before I give it. Question one: stimulus. Marshall, 1803: "It is emphatically the province and duty of the Judicial Department to say what the law is." What principle is he announcing, and what did it cost Marbury himself?
-[18-second pause]
+[10-second pause]
 Maya: Judicial review: the Court takes the final word on whether a law squares with the Constitution. It cost Marbury his judgeship: the law he'd sued under turned out to be unconstitutional itself.
 
 Maya: Question two. A state sells land in a corrupt deal. A later legislature repeals the sale. Constitutional?
-[18-second pause]
+[10-second pause]
 Maya: No. Fletcher v. Peck. The sale counted as a contract, and the Contract Clause bars states from impairing contracts, so the repeal failed even though the original deal was corrupt.
 
 Maya: Question three. New York gives one company a monopoly on the New York–New Jersey steamboat route, and a rival keeps sailing under a federal license. Who wins, and on what power?
-[18-second pause]
+[10-second pause]
 Maya: The federal-license rival, Gibbons. Marshall hands interstate commerce to Congress alone, and the state monopoly evaporates.
 
 Maya: One more, fast. Maryland taxes the Second Bank of the United States. Which case controls?
-[5-second pause]
+[10-second pause]
 Maya: McCulloch v. Maryland. Implied powers save the Bank. The power to tax involves the power to destroy.
 
 Maya: So Marshall's gift to the Court was the final say on what the Constitution means —

@@ -1,762 +1,773 @@
 {
   "version": 1,
   "episode": "u3e1",
-  "title": "1763: Winning the War, Losing the Peace",
+  "title": "1763: The Price of Victory",
   "scenes": [
     {
       "id": "s00",
       "component": "title",
-      "props": {
-        "kicker": "APUSH U3E1",
-        "title": "1763: The Empire Breaks",
-        "subline": "Three boxes in eleven minutes"
-      },
-      "transition": "cut",
       "turnIds": [
         "t00"
       ],
+      "props": {
+        "title": "Two Centuries of Colonies — Now Arguing With London",
+        "kicker": "APUSH Unit 3 Episode 1",
+        "subline": "1763: Three boxes — end of salutary neglect, Proclamation Line, Pontiac's Rebellion"
+      },
+      "transition": "cut",
       "startSec": 0,
       "endSec": 34.678
     },
     {
       "id": "s01",
       "component": "causal_chain",
-      "props": {
-        "title": "The Bill",
-        "nodes": [
-          "Britain wins Seven Years' War",
-          "Treasury left with enormous debt",
-          "Canada and Florida costly to run"
-        ]
-      },
-      "transition": "cut",
       "turnIds": [
         "t01"
       ],
+      "props": {
+        "title": "Britain Won the Biggest War — and Broke the System",
+        "nodes": [
+          "War leaves London drowning in debt — books' word is 'enormous'",
+          "Empire costs more than ever: Canada to garrison, Florida to administer, frontier past every map London owned",
+          "Thesis: Britain won the war and wrecked the arrangement that had made the empire work"
+        ]
+      },
+      "transition": "dip",
       "startSec": 34.678,
       "endSec": 56.31399999999999
     },
     {
       "id": "s02",
-      "component": "quote",
-      "props": {
-        "quote": "And now London's looking for someone else to bill.",
-        "byline": "maya"
-      },
-      "transition": "cut",
+      "component": "ken_burns",
       "turnIds": [
         "t02",
         "t03",
-        "t04"
-      ],
-      "startSec": 56.31399999999999,
-      "endSec": 71.30199999999999
-    },
-    {
-      "id": "s03",
-      "component": "ken_burns",
-      "props": {
-        "image": "historic/u3e1/george-grenville-portrait.jpg",
-        "title": "Grenville's Math",
-        "caption": "Colonies gained most, paid least; tax burden light next to English farmer"
-      },
-      "transition": "cut",
-      "turnIds": [
+        "t04",
         "t05"
       ],
-      "startSec": 71.30199999999999,
+      "props": {
+        "image": "historic/u3e1/george-grenville-portrait.jpg",
+        "title": "George Grenville — Prime Minister 1763",
+        "caption": "His math was brutally simple: colonies gained most from war and paid least — tax burden sat light next to English farmer even on same goods",
+        "stops": [
+          [
+            0.5,
+            0.4,
+            1
+          ],
+          [
+            0.5,
+            0.5,
+            1.25
+          ]
+        ]
+      },
+      "transition": "cut",
+      "startSec": 56.31399999999999,
       "endSec": 93.72999999999999
     },
     {
-      "id": "s04",
+      "id": "s03",
       "component": "compare",
-      "props": {
-        "title": "Different Ledgers",
-        "left": {
-          "head": "Colonial Ledger",
-          "sections": [
-            {
-              "sub": "Argument",
-              "points": [
-                "Sent their sons to fight",
-                "Fulfilled obligation",
-                "Bill with no vote = shakedown"
-              ]
-            }
-          ]
-        },
-        "right": {
-          "head": "London Ledger",
-          "sections": [
-            {
-              "sub": "Answer",
-              "points": [
-                "Colonial taxes a fraction of ours",
-                "Empire protecting you is sinking",
-                "Both sides could add"
-              ]
-            }
-          ]
-        }
-      },
-      "transition": "crossfade",
       "turnIds": [
         "t06",
         "t07",
         "t08"
       ],
+      "props": {
+        "title": "Different Ledgers",
+        "left": {
+          "head": "London Counted Money",
+          "sections": [
+            {
+              "sub": "Grenville's Ledger",
+              "points": [
+                "Your taxes were a fraction of ours",
+                "Empire that protected you is sinking",
+                "Why should London drown in debt for empire colonists got on cheap?"
+              ]
+            }
+          ]
+        },
+        "right": {
+          "head": "Colonies Counted Cost",
+          "sections": [
+            {
+              "sub": "Colonial Case",
+              "points": [
+                "Sent their sons, provided so many soldiers they fulfilled obligation",
+                "Then London mails bill with no vote attached",
+                "That's not math, that's a shakedown"
+              ]
+            }
+          ]
+        }
+      },
+      "transition": "crossfade",
       "startSec": 93.72999999999999,
       "endSec": 131.902
     },
     {
-      "id": "s05",
+      "id": "s04",
       "component": "ken_burns",
-      "props": {
-        "image": "historic/u3e1/edmund-burke-portrait.jpg",
-        "title": "Salutary Neglect",
-        "caption": "Burke coined the name in 1775 looking back; a century of unenforced trade laws"
-      },
-      "transition": "cut",
       "turnIds": [
         "t09",
         "t10"
       ],
+      "props": {
+        "image": "historic/u3e1/edmund-burke-portrait.jpg",
+        "title": "Salutary Neglect — Named in 1775, Real for 100 Years Before",
+        "caption": "Absentee customs officers, smuggled molasses, everybody rich enough not to ask questions — decades later Burke called it beneficial neglect",
+        "stops": [
+          [
+            0.5,
+            0.35,
+            1
+          ],
+          [
+            0.5,
+            0.45,
+            1.2
+          ]
+        ]
+      },
+      "transition": "cut",
       "startSec": 131.902,
       "endSec": 173.10999999999999
     },
     {
-      "id": "s06",
+      "id": "s05",
       "component": "highlight",
-      "props": {
-        "title": "The Other Shoe",
-        "body": "In 1763 salutary neglect ended. Old trade laws got real teeth. On Grenville's desk: the Sugar Act, first big postwar tax, and a crackdown on smuggling everyone got rich on.",
-        "highlights": [
-          {
-            "text": "salutary neglect ended",
-            "note": "1775 name for 100-year practice"
-          },
-          {
-            "text": "Sugar Act",
-            "note": "first big postwar tax"
-          }
-        ]
-      },
-      "transition": "cut",
       "turnIds": [
-        "t11"
+        "t11",
+        "t12",
+        "t13",
+        "t14",
+        "t15"
       ],
-      "startSec": 173.10999999999999,
-      "endSec": 194.938
-    },
-    {
-      "id": "s07",
-      "component": "highlight",
       "props": {
-        "title": "Exam Tip: Debt",
-        "body": "When a prompt asks why London turned to taxes, start with war debt. Debt is the engine. Don't pin a number on it. The books say enormous. Use their word, not 140 million.",
+        "title": "Debt Is the Engine",
+        "body": "In 1763 neglect ended. Old laws got real teeth. On Grenville's desk already drafted: Sugar Act first big postwar tax and crackdown on smuggling everyone got rich on. Exam tip: when prompt asks why London turned to taxes, start with war debt. Smuggling makes colorful sentence. Debt is engine. Books say enormous — don't pin 140 million pounds figure you can't source. Box one done, but frontier already on fire.",
         "highlights": [
           {
             "text": "enormous",
-            "note": "books' word, not a figure"
+            "note": "Use books' word, not a number — don't pin 140M"
           },
           {
-            "text": "Don't pin a number",
-            "note": "no 140 million on sheet"
+            "text": "Sugar Act",
+            "note": "First big postwar tax, gets own episode"
+          },
+          {
+            "text": "Debt is the engine",
+            "note": "AP thinking: war debt > smuggling anecdote"
           }
         ]
       },
-      "transition": "crossfade",
-      "turnIds": [
-        "t12",
-        "t13",
-        "t14"
-      ],
-      "startSec": 194.938,
-      "endSec": 222.862
+      "transition": "dip",
+      "startSec": 173.10999999999999,
+      "endSec": 228.106
     },
     {
-      "id": "s08",
+      "id": "s06",
       "component": "title",
-      "props": {
-        "kicker": "Triage",
-        "title": "A Line or an Army?",
-        "subline": "Cheaper move buys time"
-      },
-      "transition": "dip",
       "turnIds": [
-        "t15",
         "t16",
         "t17"
       ],
-      "startSec": 222.862,
+      "props": {
+        "title": "Burned Frontier, Empty Treasury",
+        "kicker": "London's Choice",
+        "subline": "Cheaper move: draw a line and freeze everyone east, or pour more soldiers west?"
+      },
+      "transition": "crossfade",
+      "startSec": 228.106,
       "endSec": 250.45
     },
     {
-      "id": "s09",
-      "component": "ken_burns",
-      "props": {
-        "image": "historic/u3e1/proclamation-line-1763-map.jpg",
-        "title": "Proclamation of 1763",
-        "caption": "Line along crest of Appalachians, no settlement past it; dodge another war, keep fur trade profits"
-      },
-      "transition": "cut",
+      "id": "s07",
+      "component": "primary_source",
       "turnIds": [
         "t18"
       ],
+      "props": {
+        "documentTitle": "Royal Proclamation of 1763",
+        "authorAndDate": "King George III, 7 October 1763",
+        "excerptText": "We do hereby strictly forbid, on Pain of our Displeasure, all our loving Subjects from making any Purchases or Settlements whatever, or taking Possession of any of the Lands above reserved, without our especial Leave and Licence for that Purpose first obtained. And We do further declare it to be Our Royal Will and Pleasure to reserve under our Sovereignty, Protection, and Dominion, for the use of the said Indians, all the Lands and Territories not included within the Limits of Our said Three new Governments.",
+        "highlightedPhrase": "a line along the crest of the Appalachians, and no colonial settlement past it",
+        "hippType": "Purpose",
+        "hippExplanation": "Official reason buried in dry language: London didn't want another frontier war or cost of fighting one, wanted fur trade profits to keep flowing — second frontier war would cost more than empty treasury could bear. Triage, not revenge.",
+        "documentType": "Royal Proclamation"
+      },
+      "transition": "cut",
       "startSec": 250.45,
       "endSec": 283.918
     },
     {
-      "id": "s10",
-      "component": "compare",
-      "props": {
-        "title": "Why the Line?",
-        "left": {
-          "head": "Colonial Read",
-          "sections": [
-            {
-              "sub": "Punishment",
-              "points": [
-                "You cost us fortune",
-                "So no Ohio for you?"
-              ]
-            }
-          ]
-        },
-        "right": {
-          "head": "London Reality",
-          "sections": [
-            {
-              "sub": "Triage",
-              "points": [
-                "Terrified of second war cost",
-                "Line was bandage on frontier",
-                "Cheap beats fair"
-              ]
-            }
-          ]
-        }
-      },
-      "transition": "crossfade",
+      "id": "s08",
+      "component": "ken_burns",
       "turnIds": [
         "t19",
-        "t20",
-        "t21"
+        "t20"
       ],
-      "startSec": 283.918,
-      "endSec": 313.882
-    },
-    {
-      "id": "s11",
-      "component": "ken_burns",
       "props": {
         "image": "historic/u3e1/proclamation-line-1763-map.jpg",
-        "title": "Fenced Off",
-        "caption": "Speculators like Washington fenced off; settlers already west; came too late, stung as insult, failed as fence"
+        "title": "Triage, Not Punishment",
+        "caption": "Not Britain punishing colonies 'no Ohio for you' — colonial read, wrong in useful way. Line was bandage on bleeding frontier, terrified of paying for second war",
+        "stops": [
+          [
+            0.3,
+            0.5,
+            1
+          ],
+          [
+            0.7,
+            0.5,
+            1.1
+          ]
+        ]
       },
       "transition": "cut",
+      "startSec": 283.918,
+      "endSec": 307.87
+    },
+    {
+      "id": "s09",
+      "component": "ken_burns",
       "turnIds": [
+        "t21",
         "t22",
         "t23",
         "t24"
       ],
-      "startSec": 313.882,
+      "props": {
+        "image": "historic/u3e1/royal-proclamation-1763-document.jpg",
+        "title": "Fenced Off Fortunes",
+        "caption": "Land speculators — men who bought western claims betting prices rise — including young George Washington speculating in western holdings. Settlers furious they'd fought for that land. Line didn't hold: already west and more coming. Came too late, stung as insult, failed as fence",
+        "stops": [
+          [
+            0.5,
+            0.5,
+            1
+          ],
+          [
+            0.5,
+            0.5,
+            1.3
+          ]
+        ]
+      },
+      "transition": "crossfade",
+      "startSec": 307.87,
       "endSec": 359.854
     },
     {
-      "id": "s12",
-      "component": "ken_burns",
-      "props": {
-        "image": "historic/u3e1/royal-proclamation-1763-document.jpg",
-        "title": "A Fence on Paper",
-        "caption": "Real mountains, paper fence; America would later copy drawing a line and calling one side Indian country"
-      },
-      "transition": "crossfade",
+      "id": "s10",
+      "component": "creative_clip",
       "turnIds": [
         "t25",
         "t26"
       ],
+      "props": {
+        "image": "historic/u3e1/proclamation-line-1763-map.jpg",
+        "title": "A Real Fence. On Paper.",
+        "caption": "Blue Ridge Parkway tunnels and mountains that never ended — on paper, a fence. Pattern: drawing line on map calling one side Indian country, America would copy trick later",
+        "prompt": "Animate only the supplied still historical map with subtle environmental motion: faint drifting mist and slow-moving cloud shadows gliding over the Appalachian ridge, slight parchment texture shimmer, preserve the historical composition, add no people, text, or objects, and contain no camera movement.",
+        "seed": 1763,
+        "clip": "clips/u3e1/s10.mp4"
+      },
+      "transition": "dip",
       "startSec": 359.854,
       "endSec": 385.678
     },
     {
-      "id": "s13",
+      "id": "s11",
       "component": "compare",
+      "turnIds": [
+        "t27",
+        "t28"
+      ],
       "props": {
-        "title": "Don't Swap",
+        "title": "Don't Swap Them",
         "left": {
-          "head": "Wrong",
+          "head": "Common Error",
           "sections": [
             {
-              "sub": "Swap",
+              "sub": "Maya's First Take",
               "points": [
                 "Mississippi was the fence",
-                "Appalachians were prize"
+                "Appalachians were the prize"
               ]
             }
           ]
         },
         "right": {
-          "head": "Correct",
+          "head": "Correct — On The Sheet",
           "sections": [
             {
-              "sub": "Right",
+              "sub": "Marcus Fix",
               "points": [
-                "Mississippi was the prize",
-                "Appalachians were fence"
+                "Mississippi was the prize — vast new territory",
+                "Appalachians were the fence — Proclamation Line along crest"
               ]
             }
           ]
         }
       },
       "transition": "cut",
-      "turnIds": [
-        "t27",
-        "t28"
-      ],
       "startSec": 385.678,
       "endSec": 398.326
     },
     {
-      "id": "s14",
+      "id": "s12",
       "component": "highlight",
-      "props": {
-        "title": "HIPP Tip: Purpose",
-        "body": "If a stimulus hands you the Proclamation's promise that Native nations would be left undisturbed, ask what the source is for. London dodging another expensive war. Purpose before grievance.",
-        "highlights": [
-          {
-            "text": "Purpose before grievance",
-            "note": "London dodging war"
-          },
-          {
-            "text": "left undisturbed"
-          }
-        ]
-      },
-      "transition": "cut",
       "turnIds": [
         "t29"
       ],
-      "startSec": 398.326,
-      "endSec": 414.514
-    },
-    {
-      "id": "s15",
-      "component": "spectrum",
       "props": {
-        "title": "Ten Thousand Troops",
-        "axis": [
-          "Sleeps worst",
-          "Sleeps best"
-        ],
-        "markers": [
+        "title": "Purpose Before Grievance",
+        "body": "Test tip: If stimulus hands you Proclamation's promise to leave Native lands undisturbed, ask what source is for. London dodging another expensive war. Purpose before grievance — that's how these sources crack open.",
+        "highlights": [
           {
-            "at": 0.9,
-            "label": "Officer: employed"
+            "text": "leave Native lands undisturbed",
+            "note": "Stimulus language — ask purpose, not grievance"
           },
           {
-            "at": 0.75,
-            "label": "Minister: frontier cheap"
-          },
-          {
-            "at": 0.15,
-            "label": "Settler: hears boots"
+            "text": "Purpose before the grievance",
+            "note": "AP source skill: why London did it > how colonists felt"
           }
         ]
       },
       "transition": "crossfade",
+      "startSec": 398.326,
+      "endSec": 414.514
+    },
+    {
+      "id": "s13",
+      "component": "causal_chain",
       "turnIds": [
         "t30",
         "t31",
         "t32"
       ],
+      "props": {
+        "title": "10,000 Soldiers in America — Who Sleeps Best?",
+        "nodes": [
+          "London leaves roughly 10,000 soldiers — three hear news: minister, settler, officer",
+          "Minister in London: frontier covered cheaply — sleeps okay. Officer: employed — sleeps best",
+          "Settler in Pennsylvania: hears boots in peacetime, does new math — officially to enforce line and keep burning frontier quiet",
+          "Colonist in Boston third answer: us — expensive army in peacetime looks like police for colonists"
+        ]
+      },
+      "transition": "dip",
       "startSec": 414.514,
       "endSec": 462.07000000000005
     },
     {
-      "id": "s16",
+      "id": "s14",
       "component": "quote",
-      "props": {
-        "quote": "London draws a fence it can't patrol, to dodge a war it can't afford.",
-        "byline": "maya"
-      },
-      "transition": "dip",
       "turnIds": [
         "t33"
       ],
+      "props": {
+        "quote": "The Proclamation Line of 1763, in one line: London draws a fence it can't patrol, to dodge a war it can't afford.",
+        "byline": "Maya — AP one-liner"
+      },
+      "transition": "crossfade",
       "startSec": 462.07000000000005,
       "endSec": 470.72200000000004
     },
     {
-      "id": "s17",
+      "id": "s15",
       "component": "ken_burns",
-      "props": {
-        "image": "historic/u3e1/chief-pontiac-portrait.jpg",
-        "title": "Pontiac's Rebellion",
-        "caption": "Pontiac, Ottawa chief around Great Lakes — the fire the line was drawn against"
-      },
-      "transition": "cut",
       "turnIds": [
         "t34",
         "t35",
         "t36",
         "t37"
       ],
+      "props": {
+        "image": "historic/u3e1/chief-pontiac-portrait.jpg",
+        "title": "Pontiac's Rebellion — The Fire the Line Was Drawn Against",
+        "caption": "Pontiac — like the car? Car company said it was. Ottawa chief around Great Lakes, not just a car name",
+        "stops": [
+          [
+            0.5,
+            0.3,
+            1
+          ],
+          [
+            0.5,
+            0.5,
+            1.2
+          ]
+        ]
+      },
+      "transition": "cut",
       "startSec": 470.72200000000004,
       "endSec": 490.11400000000003
     },
     {
-      "id": "s18",
+      "id": "s16",
       "component": "compare",
+      "turnIds": [
+        "t38"
+      ],
       "props": {
-        "title": "Diplomacy to Soldiers",
+        "title": "French Gifts vs British Forts",
         "left": {
-          "head": "French Way",
+          "head": "French Did Differently",
           "sections": [
             {
-              "sub": "Negotiation",
+              "sub": "Negotiated",
               "points": [
                 "Sat through ceremonies",
-                "Gifts meant protection",
-                "Forts as trading partners"
+                "Gave gifts — to Native nations gift-giving meant dominance and protection",
+                "It was diplomacy"
               ]
             }
           ]
         },
         "right": {
-          "head": "British Way",
+          "head": "British Under Amherst",
           "sections": [
             {
-              "sub": "Amherst",
+              "sub": "Occupied",
               "points": [
-                "Gift ceremonies demeaning",
-                "Cut them off",
-                "Taking forts cost the room"
+                "Took French forts",
+                "General Amherst decided gift ceremonies demeaning and cut them off",
+                "No more gifts, no more diplomacy — just soldiers and settlers"
               ]
             }
           ]
         }
       },
-      "transition": "cut",
-      "turnIds": [
-        "t38",
-        "t39"
-      ],
+      "transition": "crossfade",
       "startSec": 490.11400000000003,
-      "endSec": 527.2180000000001
+      "endSec": 524.278
     },
     {
-      "id": "s19",
-      "component": "highlight",
-      "props": {
-        "title": "Neolin's Vision",
-        "body": "In 1760-61 Delaware holy man Neolin preached apocalyptic vision: curb contact with fur traders, put down guns and alcohol, stop infighting or disappear. Message still burning in 1763.",
-        "highlights": [
-          {
-            "text": "Neolin",
-            "note": "Delaware holy man, prophet"
-          },
-          {
-            "text": "apocalyptic vision"
-          },
-          {
-            "text": "guns and alcohol"
-          }
-        ]
-      },
-      "transition": "crossfade",
+      "id": "s17",
+      "component": "ken_burns",
       "turnIds": [
+        "t39",
         "t40"
       ],
-      "startSec": 527.2180000000001,
+      "props": {
+        "image": "historic/u3e1/jeffery-amherst-portrait.jpg",
+        "title": "Taking the Forts Cost Them the Room",
+        "caption": "Message older than Pontiac: 1760-61 Delaware holy man Neolin preached apocalyptic vision — curb contact with fur traders, put down guns and alcohol, stop infighting or disappear",
+        "stops": [
+          [
+            0.5,
+            0.4,
+            1
+          ],
+          [
+            0.5,
+            0.45,
+            1.15
+          ]
+        ]
+      },
+      "transition": "cut",
+      "startSec": 524.278,
       "endSec": 554.374
     },
     {
-      "id": "s20",
-      "component": "chart",
-      "props": {
-        "title": "The Toll",
-        "type": "bar",
-        "data": [
-          {
-            "label": "British soldiers",
-            "value": 400
-          },
-          {
-            "label": "Colonists killed/captured",
-            "value": 2000
-          },
-          {
-            "label": "Forts fell",
-            "value": 7
-          }
-        ]
-      },
-      "transition": "cut",
+      "id": "s18",
+      "component": "highlight",
       "turnIds": [
         "t41",
         "t42"
       ],
+      "props": {
+        "title": "Fort After Fort — Deeply Organized",
+        "body": "This wasn't random, it was organized. Deeply. Alliance struck fort after fort around Great Lakes, Detroit first then six more, settlements from upstate New York down Appalachian frontier. Several forts fell. Books count more than four hundred British soldiers and around two thousand colonists killed or captured. British handed out blankets deliberately infected with smallpox.",
+        "highlights": [
+          {
+            "text": "Detroit first, then six more",
+            "note": "Pattern of coordinated strikes"
+          },
+          {
+            "text": "more than four hundred British soldiers and around two thousand colonists killed or captured",
+            "note": "Scope — books' count"
+          },
+          {
+            "text": "blankets deliberately infected with smallpox",
+            "note": "Biological warfare 1763"
+          }
+        ]
+      },
+      "transition": "dip",
       "startSec": 554.374,
       "endSec": 581.062
     },
     {
-      "id": "s21",
-      "component": "ken_burns",
-      "props": {
-        "image": "historic/u3e1/jeffery-amherst-portrait.jpg",
-        "title": "Germ Warfare",
-        "caption": "Blankets deliberately infected with smallpox; Amherst replaced by Gage August 1763; bloodshed into 1764"
-      },
-      "transition": "crossfade",
+      "id": "s19",
+      "component": "quote",
       "turnIds": [
         "t43",
         "t44"
       ],
+      "props": {
+        "quote": "One of the books calls it germ warfare, flatly.",
+        "byline": "Marcus on smallpox blankets — Amherst replaced August 1763 by Thomas Gage, Gage broke rebellion, bloodshed into 1764"
+      },
+      "transition": "crossfade",
       "startSec": 581.062,
       "endSec": 600.958
     },
     {
-      "id": "s22",
+      "id": "s20",
       "component": "causal_chain",
-      "props": {
-        "title": "Mirror Image",
-        "nodes": [
-          "Frontier is tinderbox",
-          "Paxton Boys murder 20 peaceful Conestoga",
-          "250 march on Philadelphia",
-          "London: every policy pours fuel"
-        ]
-      },
-      "transition": "cut",
       "turnIds": [
         "t45",
         "t46"
       ],
+      "props": {
+        "title": "Mirror Image: The Paxton Boys",
+        "nodes": [
+          "Scots-Irish frontiersmen in Pennsylvania decide guilty and innocent looked alike",
+          "1763 murder 20 peaceful Conestoga Indians, Christians with nothing to do with fighting",
+          "About 250 march on Philadelphia demanding colony stop protecting Indians",
+          "London gets message: frontier was tinderbox, every policy poured something on it — Proclamation was first pour"
+        ]
+      },
+      "transition": "cut",
       "startSec": 600.958,
       "endSec": 638.7339999999999
     },
     {
-      "id": "s23",
+      "id": "s21",
       "component": "highlight",
+      "turnIds": [
+        "t47"
+      ],
       "props": {
-        "title": "Who Rebelled?",
-        "body": "Sorting rule, test-ready: the rebels in 1763 were Ottawa-led Native nations. If your draft says the colonists rebelled, you've written the wrong war.",
+        "title": "Sorting Rule: Who Rebelled in 1763?",
+        "body": "Sorting rule test-ready: rebels in 1763 were Ottawa-led Native nations. If your draft says colonists rebelled, you've written wrong war.",
         "highlights": [
           {
             "text": "Ottawa-led Native nations",
-            "note": "not colonists in 1763"
+            "note": "Correct — Pontiac's alliance"
+          },
+          {
+            "text": "colonists rebelled",
+            "note": "Wrong war — colonists rebel later"
           }
         ]
       },
       "transition": "cut",
-      "turnIds": [
-        "t47"
-      ],
       "startSec": 638.7339999999999,
       "endSec": 649.5699999999999
     },
     {
-      "id": "s24",
+      "id": "s22",
       "component": "compare",
+      "turnIds": [
+        "t48",
+        "t49"
+      ],
       "props": {
-        "title": "Prophet vs Chief",
+        "title": "Prophet vs War Chief — Don't Swap Jobs",
         "left": {
-          "head": "Neolin",
+          "head": "Neolin — The Prophet",
           "sections": [
             {
-              "sub": "Role",
+              "sub": "Delaware Holy Man 1760-61",
               "points": [
-                "Delaware prophet",
-                "Vision 1760-61"
+                "Preached apocalyptic vision",
+                "Curb fur traders, put down guns and alcohol",
+                "Stop infighting or disappear"
               ]
             }
           ]
         },
         "right": {
-          "head": "Pontiac",
+          "head": "Pontiac — The War Chief",
           "sections": [
             {
-              "sub": "Role",
+              "sub": "Ottawa Chief 1763",
               "points": [
-                "Ottawa war chief",
-                "Organized 1763"
+                "Around Great Lakes",
+                "Organized resistance, message still burning",
+                "First targets: forts"
               ]
             }
           ]
         }
       },
       "transition": "crossfade",
-      "turnIds": [
-        "t48",
-        "t49"
-      ],
       "startSec": 649.5699999999999,
       "endSec": 661.8099999999998
     },
     {
-      "id": "s25",
-      "component": "highlight",
-      "props": {
-        "title": "Box One: Neglect Ends",
-        "body": "One: end of salutary neglect. War left London with enormous debt. No number; books won't give one. Grenville did math, London started enforcing everything it used to ignore.",
-        "highlights": [
-          {
-            "text": "enormous debt",
-            "note": "no number"
-          },
-          {
-            "text": "end of salutary neglect"
-          }
-        ]
-      },
-      "transition": "cut",
+      "id": "s23",
+      "component": "ken_burns",
       "turnIds": [
         "t50",
         "t51"
       ],
+      "props": {
+        "image": "historic/u3e1/george-grenville-portrait.jpg",
+        "title": "Box One Landed: End of Salutary Neglect",
+        "caption": "War left London enormous debt — no number, books won't give one. Grenville did math, London started enforcing everything it used to ignore",
+        "stops": [
+          [
+            0.5,
+            0.5,
+            1.1
+          ],
+          [
+            0.5,
+            0.4,
+            1
+          ]
+        ]
+      },
+      "transition": "cut",
       "startSec": 661.8099999999998,
       "endSec": 681.2739999999999
     },
     {
-      "id": "s26",
-      "component": "highlight",
-      "props": {
-        "title": "Box Two: The Line",
-        "body": "Two: Proclamation Line of 1763. Line along Appalachians, no settlement past it. London dodging war, pure triage. Fence held? No, failed as fence. Came too late.",
-        "highlights": [
-          {
-            "text": "Proclamation Line of 1763"
-          },
-          {
-            "text": "Came too late",
-            "note": "failed as fence, stung as insult"
-          }
-        ]
-      },
-      "transition": "cut",
+      "id": "s24",
+      "component": "ken_burns",
       "turnIds": [
         "t52",
         "t53"
       ],
+      "props": {
+        "image": "historic/u3e1/proclamation-line-1763-map.jpg",
+        "title": "Box Two Landed: Proclamation Line 1763",
+        "caption": "Line along Appalachians no settlement past it — London dodging war pure triage. Fence held? No: failed as fence, came too late, stung as insult",
+        "stops": [
+          [
+            0.4,
+            0.5,
+            1
+          ],
+          [
+            0.6,
+            0.5,
+            1.2
+          ]
+        ]
+      },
+      "transition": "crossfade",
       "startSec": 681.2739999999999,
       "endSec": 701.6019999999999
     },
     {
-      "id": "s27",
+      "id": "s25",
       "component": "ken_burns",
-      "props": {
-        "image": "historic/u3e1/chief-pontiac-portrait.jpg",
-        "title": "Box Three: Pontiac",
-        "caption": "Pontiac the Ottawa chief, Neolin the prophet; forts fell, London panicked into new policy"
-      },
-      "transition": "cut",
       "turnIds": [
         "t54",
         "t55"
       ],
+      "props": {
+        "image": "historic/u3e1/chief-pontiac-portrait.jpg",
+        "title": "Box Three Landed: Pontiac's Rebellion",
+        "caption": "Pontiac Ottawa chief 1763 — Neolin was prophet. Forts fell, London panicked its way into whole new imperial policy",
+        "stops": [
+          [
+            0.5,
+            0.5,
+            1.2
+          ],
+          [
+            0.5,
+            0.35,
+            1
+          ]
+        ]
+      },
+      "transition": "dip",
       "startSec": 701.6019999999999,
       "endSec": 721.4019999999999
     },
     {
-      "id": "s28",
-      "component": "ken_burns",
-      "props": {
-        "image": "historic/u3e1/royal-proclamation-1763-document.jpg",
-        "title": "AP Q1: Why the Promise?",
-        "caption": "Cheap answer to Pontiac's Rebellion; freezing settlement cost less than another frontier war"
-      },
-      "transition": "crossfade",
+      "id": "s26",
+      "component": "primary_source",
       "turnIds": [
         "t56",
         "t57",
         "t58"
       ],
+      "props": {
+        "documentTitle": "Proclamation Promise to Native Nations",
+        "authorAndDate": "British Crown, October 1763, in response to Pontiac's Rebellion",
+        "excerptText": "That the several Nations or Tribes of Indians with whom We are connected, and who live under our Protection, should not be molested or disturbed in the Possession of such Parts of Our Dominions and Territories as are reserved to them as their Hunting Grounds.",
+        "highlightedPhrase": "should not be molested or disturbed",
+        "hippType": "Historical Situation",
+        "hippExplanation": "Proclamation was London's cheap answer to Pontiac's Rebellion outbreak — drawing settlement line through Appalachians. With treasury empty, freezing settlement west cost less than fighting another frontier war. Triage won because treasury empty.",
+        "documentType": "SAQ Stimulus — Royal Proclamation excerpt"
+      },
+      "transition": "crossfade",
       "startSec": 721.4019999999999,
       "endSec": 771.8619999999999
     },
     {
-      "id": "s29",
-      "component": "spectrum",
-      "props": {
-        "title": "Broken Trust",
-        "axis": [
-          "Policy problem",
-          "Constitutional crack"
-        ],
-        "markers": [
-          {
-            "at": 0.2,
-            "label": "Debt"
-          },
-          {
-            "at": 0.35,
-            "label": "Territory"
-          },
-          {
-            "at": 0.9,
-            "label": "Broken trust: crack widens"
-          }
-        ]
-      },
-      "transition": "crossfade",
+      "id": "s27",
+      "component": "highlight",
       "turnIds": [
         "t59",
         "t60",
         "t61"
       ],
+      "props": {
+        "title": "Most Significant Effect? Broken Trust",
+        "body": "Most significant effect of Seven Years' War — debt was policy problem later governments managed, territory stayed British, but broken trust never healed. Britain started treating colonies like problem to be managed, colonies started seeing Britain as threat to freedom. That's crack every later crisis widens.",
+        "highlights": [
+          {
+            "text": "broken trust",
+            "note": "Most significant — over debt or territory"
+          },
+          {
+            "text": "never fully healed",
+            "note": "Crack every later crisis widens"
+          }
+        ]
+      },
+      "transition": "dip",
       "startSec": 771.8619999999999,
       "endSec": 813.2739999999998
     },
     {
-      "id": "s30",
+      "id": "s28",
       "component": "causal_chain",
-      "props": {
-        "title": "AP Q3: Why War?",
-        "nodes": [
-          "British replace French diplomacy with soldiers",
-          "Amherst ends gift ceremonies",
-          "Troops occupy French forts",
-          "Forts become symbols, first targets"
-        ]
-      },
-      "transition": "cut",
       "turnIds": [
         "t62",
         "t63",
         "t64"
       ],
+      "props": {
+        "title": "What Changed After 1763 That Pushed Alliance to War?",
+        "nodes": [
+          "British replace French diplomacy with soldiers",
+          "Amherst ends gift ceremonies French had used",
+          "British troops occupy French forts",
+          "Forts stop being trading partner's posts, become symbols of new order — first targets"
+        ]
+      },
+      "transition": "crossfade",
       "startSec": 813.2739999999998,
       "endSec": 853.5579999999998
     },
     {
-      "id": "s31",
+      "id": "s29",
       "component": "title",
-      "props": {
-        "kicker": "Next Episode",
-        "title": "First Sugar, Then Stamps",
-        "subline": "Who gets to tax whom?"
-      },
-      "transition": "dip",
       "turnIds": [
-        "t65"
-      ],
-      "startSec": 853.5579999999998,
-      "endSec": 865.7859999999997
-    },
-    {
-      "id": "s32",
-      "component": "quote",
-      "props": {
-        "quote": "Britain won the war —",
-        "byline": "marcus"
-      },
-      "transition": "dip",
-      "turnIds": [
+        "t65",
         "t66",
         "t67"
       ],
-      "startSec": 865.7859999999997,
+      "props": {
+        "title": "Britain Won the War — and Couldn't Afford the Peace",
+        "kicker": "Three Boxes Checked",
+        "subline": "Next: taxes arrive — first sugar, then stamps, and fight over who gets to tax whom"
+      },
+      "transition": "crossfade",
+      "startSec": 853.5579999999998,
       "endSec": 871.3059999999998
     }
   ]

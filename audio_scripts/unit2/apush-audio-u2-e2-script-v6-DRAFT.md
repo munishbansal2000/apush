@@ -1,5 +1,5 @@
 # U2-E2 — Maya + Marcus (Fish Audio)
-# Episode 2: From Servitude to Slavery. ~11 min experienced (1,831 words speech + 80s pauses)
+# Episode 2: From Servitude to Slavery. ~12 min experienced (1,831 words speech + 100s pauses)
 # Draft v5 (2026-10-06): full rebuild to the frozen 2026-10-06 standards from the v4 draft — Maya + Marcus interview,
 # three boxes with Maya's checkoffs, two prediction beats, exam devices (common-mistake lines, varied exam tips,
 # CER self-test with stimulus, fast bonus, LEQ tie-in), hedged facts, Morgan-debate both sides, attributed-quote disclosures.
@@ -10,9 +10,9 @@
 # mistake devices converted to live traps (Maya errs, Marcus corrects next turn), bonus rewritten AP-shaped
 # with the consolidation framing, M1-M10 line repairs, G9 antithesis cut to the 2 audit-blessed
 # (gate detection broadened post-v5).
-# Read note: Maya tracks three boxes on her episode sheet and checks each one off in her own voice as the episode earns it.
-# [10-second pause] marks are production notes for real silence in prediction beats; [15-second pause] and [20-second pause]
-# marks are real silence for the CER self-test questions; [5-second pause] is the fast bonus — they never go to the voice.
+# Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Maya tracks three boxes on her episode sheet and checks each one off in her own voice as the episode earns it.
+# [10-second pause] marks are production notes for real silence in prediction beats; [10-second pause] and [10-second pause]
+# marks are real silence for the CER self-test questions; [10-second pause] is the fast bonus — they never go to the voice.
 # Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence. The em dash in the
 # closing tagline is a held beat: leave a full breath between Marcus's "One rebellion showed the planters the poor could
 # fight together —" and Maya's landing line. Do not rush it. The ## Sources section is production-only, never spoken.
@@ -141,25 +141,25 @@ Maya: Three questions, AP-shaped. Say your answer before I give it.
 
 Maya: One. Berkeley's reported 1676 line: roughly six of seven Virginians were "poor, indebted, discontented and armed." A historian pairs that line with the burning of Jamestown. What's the argument?
 
-[20-second pause]
+[10-second pause]
 
 Maya: Berkeley feared the united, armed poor: six of seven poor and armed, and the rebellion proved it, with servants and freedmen and enslaved Black people fighting together. The giveaway: Berkeley feared a united poor, and the rebellion showed him exactly that. The planters spent the next thirty years engineering it away.
 
 Maya: Two. After 1676, Virginia's planters pivoted from servants to enslaved Africans. Give both reasons.
 
-[15-second pause]
+[10-second pause]
 
 Maya: Politics and price: the rebellion showed landowners that landless young white men were dangerous, and the Dutch trade monopoly broke in 1682, so enslaved Africans got cheaper. A workforce for life, divided by race, solved both problems at once.
 
 Maya: Three. The exam hands you a line from the 1705 code: "All Negro, mulatto and Indian slaves within this dominion… shall be held to be real estate." What changed between 1640 and 1705?
 
-[20-second pause]
+[10-second pause]
 
 Maya: Custom hardened into law: in 1640, one court gave John Punch a life sentence while his white partners got four more years. By 1705, the assembly wrote it down for everyone: people as property, for life, hereditary. One-off punishments became a system.
 
 Maya: One more, fast. A student writes that Virginia copied its slave code from Barbados, 1661. Which word in that sentence is the problem?
 
-[5-second pause]
+[10-second pause]
 
 Maya: "Copied." Virginia built its 1705 code by consolidating decades of its own laws: 1640, 1662, 1667. Planters knew the 1661 Barbados template, but the code they passed was Virginia's own.
 

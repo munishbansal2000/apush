@@ -1,7 +1,7 @@
 # U3-E6 — Study Buddies: Maya + Jay (Fish Audio)
 # Episode 23: Articles of Confederation. ~12.5 min (2,012 words @ 180 WPM max)
 # Draft v3 (fleet repair pass — 2026-10-07 audit findings applied). Study Buddies per the master build plan. CED 3.7.
-# Read note: [5-second pause], [8-second pause], and [15-second pause] marks are production notes for real silence in prediction beats and the self-test — they never go to the voice. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence.
+# Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence.
 # Pronunciation: Shays (SHAYZ); Miami (my-AM-uh); Harmar (HAR-mer); St. Clair (saynt KLAIR); Greenville (GREEN-vil); Annapolis (uh-NAP-uh-lis); Knox (nocks).
 
 Maya: [professional broadcast tone] Last time: Yorktown, 1781. The war is won, the British are going home. Now the founders face a harder problem than beating a king: governing without becoming one. Four boxes today: the structure they built, why it failed, the one thing it did brilliantly, and why it lasted eight years anyway. Circle the ones you couldn't explain right now. Twelve and a half minutes, and you'll check all four off.
@@ -36,7 +36,7 @@ Maya: The fear was the design. And it took four years just to ratify the thing, 
 
 Maya: Your turn. You're sitting in Congress, and Rhode Island just killed your only tax. You're broke, soldiers are unpaid, and you need money somewhere. What's left to sell?
 
-[8-second pause]
+[10-second pause]
 
 Jay: Uh... the furniture? No — wait. The western land. The stuff Maryland fought over.
 
@@ -62,7 +62,7 @@ Maya: In hard money they didn't have. A Continental Army veteran named Daniel Sh
 
 Maya: Your turn. You're a Massachusetts farmer, 1786. You owe debts, the taxes are due in silver, and the sheriff is coming for the farm. The courts won't help you. What do you do?
 
-[8-second pause]
+[10-second pause]
 
 Maya: Do what Shays did. You stop the courts yourselves, farm by farm, until the state can't take anything.
 
@@ -126,25 +126,25 @@ Maya: Four boxes, let's land them. A fear-built structure with no tax power and 
 
 Maya: Three questions, AP-shaped. Say your answer before I give it. One: under the Articles, what did it take to amend the document?
 
-[15-second pause]
+[10-second pause]
 
 Maya: The bar was impossibly high — all thirteen states had to agree, and Rhode Island alone killed the 1781 import tax. Unanimity meant any single state could veto reform, which is why the Articles could never fix themselves.
 
 Maya: Two, stimulus-style. Knox warned Washington that the rebels saw the government's weakness and felt their own strength. What's the point of this source?
 
-[15-second pause]
+[10-second pause]
 
 Maya: It shows Shays' Rebellion terrified the elite into action. Knox is writing to Washington in panic, and with no national forces available, a privately raised militia had to put the rebellion down. The rebellion proved the Confederation couldn't defend itself, which is what pushed leaders toward the Philadelphia Convention.
 
 Maya: Three: name two things the Northwest Ordinance did, and one limit.
 
-[15-second pause]
+[10-second pause]
 
 Maya: It was the Articles' one triumph, with a hard edge — it banned slavery north of the Ohio and set the sixty-thousand-person statehood rule, but the ban stopped at the river. The Ordinance shaped how America grew, while leaving slavery untouched everywhere else.
 
 Maya: One more, fast. Rescue or counter-revolution: what's Beard's argument?
 
-[5-second pause]
+[10-second pause]
 
 Maya: That the framers were protecting their money and their class. Whether you buy it or not, know the thesis.
 

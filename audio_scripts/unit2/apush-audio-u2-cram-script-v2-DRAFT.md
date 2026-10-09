@@ -1,5 +1,5 @@
 # U2 — Cram Session: Maya + Jay (Fish Audio)
-# Episode 19: Ten Questions, One Unit. ~13 min experienced (2,183 words speech + 36s pauses)
+# Episode 19: Ten Questions, One Unit. ~14.5 min experienced (2,183 words speech + 140s pauses)
 # Draft v2 (2026-10-07): full repair of the archived v1 draft to the frozen 2026-10-07 final guidelines — Study Buddies
 # (Maya + Jay), Maya drives the rapid-fire quiz, ten questions, the period thesis, two DBQ predictions with "Your turn."
 # beats, explicit pause tags counted in the experienced runtime, Fish direction as written. Registry corrections applied:
@@ -7,8 +7,8 @@
 # causation debate (F-U2-012/F-U2-013), Rolfe's Caribbean strain (fleet canonical, U1 cram), debt unpinned (F-U2-064),
 # Albany rejection order (F-U2-063). Cut the unverifiable "first intercolonial" superlative (fail-closed: Tier 1 silent,
 # broad web not a source). Cross-checked against the rebuilt U2-E9 v5 cram — no contradictions, shared beats reworded.
-# Read note: Cram format — no boxes on the episode sheet. Maya drives the rapid-fire quiz; Jay retrieves, guesses, and
-# gets corrected. [2-second pause] marks are the rapid-fire beat — real silence, never sent to TTS. [8-second pause]
+# Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Cram format — no boxes on the episode sheet. Maya drives the rapid-fire quiz; Jay retrieves, guesses, and
+# gets corrected. [10-second pause] marks are the rapid-fire beat — real silence, never sent to TTS. [10-second pause]
 # marks are prediction beats — real silence, never sent to TTS. Strip this header, the read note, and all [pause] tags
 # before TTS; convert pause tags to silence. The em dash in the closing tagline is a held beat: leave a full breath
 # between Jay's setup line and Maya's landing line. Do not rush it. The ## Sources section is production-only, never spoken.
@@ -22,7 +22,7 @@ Jay: [sheepish] Ten questions. Last cram I called the patroons the patronuses. D
 
 Maya: [energetic] Redemption arc. Question one: match the model. Spain, France, Holland, England. One sentence each.
 
-[2-second pause]
+[10-second pause]
 
 Jay: [casual] Spain: souls and silver. Missions and mines, the biggest empire, the most bureaucracy.
 
@@ -42,7 +42,7 @@ Maya: [conversational] Four models, one coastline. And four Native answers. Spai
 
 Maya: [energetic] Question two: why did Jamestown survive when it should have died?
 
-[2-second pause]
+[10-second pause]
 
 Jay: [casual] Winter 1609. About five hundred going in, about sixty coming out. The starving time.
 
@@ -58,7 +58,7 @@ Maya: [conversational] Staple crop, imported labor, hunger for workers. Two down
 
 Maya: [energetic] Question three: Bacon's Rebellion to the slave codes. Walk the chain.
 
-[2-second pause]
+[10-second pause]
 
 Jay: [casual] 1676. Nathaniel Bacon leads frontier farmers against Governor Berkeley. The frontier wants war on the Indians, tidewater wants peace and the fur trade. The rebels burn Jamestown. Bacon dies of dysentery, the rebellion collapses.
 
@@ -78,7 +78,7 @@ Maya: [conversational] Freedom and slavery, growing up together. Three down. The
 
 Maya: [energetic] Question four: why did the Puritans come, and how did covenant shape their towns?
 
-[2-second pause]
+[10-second pause]
 
 Jay: [casual] 1630. Winthrop's fleet. Archbishop Laud cracking down back home, the economy sour, thousands cross in the Great Migration of the 1630s. They wanted a godly society: covenant theology, a contract with God organizing everything. Towns built around the meetinghouse, church membership tied to voting, town meetings running local life.
 
@@ -98,7 +98,7 @@ Maya: [conversational] And the book everyone read afterward: Mary Rowlandson's c
 
 Maya: [energetic] Question five: what made the Middle Colonies the diversity lab of colonial America?
 
-[2-second pause]
+[10-second pause]
 
 Jay: [casual] Pennsylvania. William Penn's holy experiment. Quakers, Germans, the Pennsylvania Dutch, which is actually Deutsch, Scots-Irish pushed to the frontier, plus Dutch and Swedes left over from New Netherland. Penn advertised across Europe. Cheap land, religious freedom.
 
@@ -114,7 +114,7 @@ Maya: [thoughtful tone] Tolerant or merely pluralist? That's the historian's arg
 
 Maya: [energetic] Question six: mercantilism in one paragraph. Theory, Navigation Acts, and why the colonists dodged them.
 
-[2-second pause]
+[10-second pause]
 
 Jay: [casual] Mercantilists believed the world's wealth was fixed: grab the gold, keep a favorable balance of trade. The Navigation Acts, starting 1651: certain goods could only ship to England, only on English ships, European goods only through England. Tobacco led the enumerated list, and the list kept growing: rice, naval stores. Parliament fenced off colonial factories too: wool, hats, iron.
 
@@ -136,7 +136,7 @@ Maya: [firm] The exam move: evaluate the extent. Did mercantilism help the colon
 
 Maya: [energetic] Question seven: what was the Great Awakening's political aftershock?
 
-[2-second pause]
+[10-second pause]
 
 Jay: [casual] The 1740s. George Whitefield, mid-twenties, preaching to open fields in 1739, crowds in the thousands, newspapers claiming twenty-five thousand. Jonathan Edwards preaching Sinners in the Hands of an Angry God at Enfield in 1741.
 
@@ -154,7 +154,7 @@ Maya: [thoughtful tone] The causation question: did the revival cause the Revolu
 
 Maya: [energetic] Question eight: how did assemblies get powerful while nobody in London was watching?
 
-[2-second pause]
+[10-second pause]
 
 Jay: [casual] Follow the money. The assemblies voted the taxes and paid the governor's salary, so the governor answered to the people who signed his paycheck. Decades of precedent turning into power.
 
@@ -170,7 +170,7 @@ Maya: [conversational] Eight down. Two to go.
 
 Maya: [energetic] Question nine: the French and Indian War. Why did Britain win, and what did victory cost?
 
-[2-second pause]
+[10-second pause]
 
 Jay: [casual] 1754. A twenty-two-year-old George Washington ambushes a French party in the Ohio country and starts a world war. Then the disaster years: 1755, Braddock marches on Fort Duquesne with nearly fifteen hundred regulars, and a smaller French and Native force shoots the column to pieces from the tree line at the Monongahela. Nearly a thousand killed or wounded. Braddock dies four days later. Washington rides out with four bullets through his coat and two horses shot under him.
 
@@ -190,7 +190,7 @@ Maya: [confident tone] The double legacy: victory and the bill. It's where every
 
 Maya: [energetic] Last one. Question ten: in one sentence, why did 1763 change everything?
 
-[2-second pause]
+[10-second pause]
 
 Jay: [casual] Britain won the war and lost the peace? The debt ended salutary neglect, and the colonies were too used to running themselves.
 
@@ -198,13 +198,13 @@ Maya: [confident tone] The period thesis. A century and a half of growth made th
 
 Maya: Two predictions I'd bet on. One: evaluate the extent to which the British colonies had developed a distinct identity and self-government by 1754. Your turn.
 
-[8-second pause]
+[10-second pause]
 
 Maya: The assemblies holding the purse, the Awakening teaching people to organize, a century and a half of running their own affairs, and an ocean between them and the king. The identity was already distinct; the war's bill just made it a problem.
 
 Maya: Two: evaluate the role of salutary neglect in colonial autonomy. Your turn.
 
-[8-second pause]
+[10-second pause]
 
 Maya: The neglect built the autonomy: a century of assemblies voting money, governors looking the other way, smugglers everybody knew by name. Then 1763, and London tried to enforce everything at once. Was the break a change or a betrayal? Argue it both ways.
 

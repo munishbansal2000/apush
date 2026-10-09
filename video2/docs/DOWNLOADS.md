@@ -37,10 +37,20 @@ World land/countries come from the `world-atlas` npm package (installed by `npm 
 
 ## 3. Historic images → `public/historic/…` (public domain, Wikimedia Commons)
 
-Driven by `data/images.json`: every entry's `source_url` is the Commons page; credits,
+Driven by `data/<lesson>/images.json` (per-lesson manifests; `data/images.json` is the
+legacy monolith): every entry's `source_url` is the Commons page; credits,
 license and description are in the same entry. `tools/fetch-images.ts --all` downloads them
-incrementally (records what it fetched in `data/images.lock.json`). The full list with links:
+incrementally (records what it fetched in `data/images.lock.json`, one save per file —
+Ctrl-C safe, resumes where it left off). The full list with links:
 `npx tsx tools/setup-downloads.ts --only images --dry-run`.
+
+Planning and recovery flags (no downloads, no lock writes in dry-run):
+- `npx tsx tools/fetch-images.ts --all --dry-run` (alias `--check`): prints an upfront
+  plan summary (`N to fetch, M already current, K failed previously`), then resolves each
+  pending entry's download URL via the Commons API and prints what *would* be fetched.
+  Use this to verify a new inventory before downloading anything.
+- Failures are recorded in `data/images.lock.json` as `{ lastError, failedAt }` per path;
+  the next run (and `--dry-run`) reports them as "failed <when> with <reason> — retrying".
 
 Main ones used by the motion work:
 

@@ -1,7 +1,7 @@
 # U3-E11 — Interview: Maya + Marcus (Fish Audio)
 # Episode 28: The Revolution of 1800. ~10 min experienced (1,565 spoken words + 68s scripted pauses = ≈9.8 min at ≤180 WPM).
 # Pronunciation: Crèvecoeur (krev-KUR), Gallatin (GAL-uh-tin)
-# Read note: pause tags used in this script: [8-second pause], [10-second pause], [15-second pause], [5-second pause]. They are production silence — real quiet in the mix, never spoken. Strip this header, the read note, and all pause tags before TTS; convert pause tags to real silence. Spoken words: 1565. Pauses: 68s. Experienced runtime ≈ 9.8 min at ≤180 WPM.
+# Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. They are production silence — real quiet in the mix, never spoken. Strip this header, the read note, and all pause tags before TTS; convert pause tags to real silence. Spoken words: 1565. Pauses: 68s. Experienced runtime ≈ 9.8 min at ≤180 WPM.
 
 Maya: [professional broadcast tone] Last time: the Alien and Sedition backlash turned the election of 1800 into a verdict on the Federalists, and the verdict came back guilty. This time: the transfer itself. The sitting president loses and skips the inauguration, leaving town before dawn. Somehow that's the most revolutionary thing in the episode. Four boxes on your sheet: the tie, the pragmatist, Marbury's judo, and the culture. Circle the ones you couldn't explain right now. About ten minutes.
 
@@ -23,7 +23,7 @@ Maya: Hamilton campaigning for Jefferson. The man he'd spent a decade trying to 
 
 Marcus: He called Jefferson's principles wrong, but principles. Burr, he said, had none. Your turn. Deadlocked House, Federalists hate Jefferson, some think Burr's more useful, Hamilton's writing letters for him. What breaks first, the votes or the voters?
 
-[8-second pause]
+[10-second pause]
 
 Marcus: The voters. Nobody converted. Hamilton's letters did the work, and on the 36th ballot Jefferson won it.
 
@@ -119,25 +119,25 @@ Maya: [confident tone] Four: the culture. Webster's speller and the 1789 line, T
 
 Maya: Three questions, AP-shaped. Say your answer before I give it. One: a Federalist writes privately that Aaron Burr is, quote, "the most unfit man in the United States for the office of president." Who wrote it, and what does the letter tell you about how the tie broke?
 
-[15-second pause]
+[10-second pause]
 
 Maya: Alexander Hamilton, writing to his own party, for Jefferson. The tell: nobody converted. Federalists decided Burr was worse, and Hamilton's letters tipped the House. Thirty-six ballots.
 
 Maya: Two: Jefferson the strict constructionist buys Louisiana with no constitutional clause allowing it. Explain the contradiction.
 
-[15-second pause]
+[10-second pause]
 
 Maya: He believed the government holds only listed powers, couldn't find this one, then bought it anyway on the loose construction he'd campaigned against. The land mattered more than the theory. Pragmatist beats ideologue.
 
 Maya: Three: Marshall the Federalist rules against Marbury the Federalist. How does losing the case give the Court more power?
 
-[15-second pause]
+[10-second pause]
 
 Maya: By striking down the law that let the Court help Marbury, Marshall claimed judicial review, the power to void acts of Congress. Marbury lost his commission; the Court won the final word.
 
 Maya: One more, fast. Webster's line on language and union: which book gets the credit?
 
-[5-second pause]
+[10-second pause]
 
 Maya: The 1789 Dissertations get the credit. The line: "A national language is a band of national union."
 

@@ -1,7 +1,7 @@
 # U3-E10 — Debate: Maya moderates, Marcus (Federalist) vs Haswell (1798–1800 voice)
 # Episode 27: Adams and the Alien and Sedition Acts. DRAFT v5.
 # Word count: 2,047 spoken words (pause tags stripped). Experienced runtime ~12.5 min (speech at ≤180 WPM + 68s scripted pauses).
-# Read note: Maya moderates; Marcus argues the Federalist case as a 1798–1800 advocate — his knowledge stops at 1800, and he cannot know how the Acts aged; Haswell speaks as Anthony Haswell, the Vermont newspaper editor actually prosecuted under the Sedition Act, in his own 1798–1800 voice — measured, never a caricature; the afterlife of the Acts is Maya's modern voice only. Pause tags are production silence, never spoken: [9-second pause] in the prediction beat; [15-second pause], [18-second pause], and [20-second pause] in the CER self-test; [6-second pause] in the fast bonus. Strip this header, the read note, and every [N-second pause] tag before TTS; convert pause tags to real silence. Tagline dash carries a held breath — do not rush it.
+# Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Maya moderates; Marcus argues the Federalist case as a 1798–1800 advocate — his knowledge stops at 1800, and he cannot know how the Acts aged; Haswell speaks as Anthony Haswell, the Vermont newspaper editor actually prosecuted under the Sedition Act, in his own 1798–1800 voice — measured, never a caricature; the afterlife of the Acts is Maya's modern voice only. Strip this header, the read note, and every [N-second pause] tag before TTS; convert pause tags to real silence. Tagline dash carries a held breath — do not rush it.
 # Pronunciation: Talleyrand (TAL-ee-rand), Haswell (HAZ-wel), Pinckney (PINK-nee), Gerry (GEH-ree).
 
 Maya: [professional broadcast tone] Last time: the parties we just built turn on each other, and on France. Now, 1798: American diplomats sail to Paris, and the French foreign minister's men hand them a price list: a quarter of a million dollars in bribes just to start talking. America answers with warships, and Congress passes a law that can jail a man for printing words against the government. Four boxes tonight. One: the XYZ Affair and the Quasi-War. Two: the four Alien and Sedition Acts, and what each one did. Three: the Republican counterattack, the Virginia and Kentucky Resolutions, and compact theory. Four: the election of 1800, and the verdict. Circle the ones you couldn't explain right now. Twelve and a half minutes. Every one of them gets argued tonight.
@@ -22,7 +22,7 @@ Haswell: [intense] The threat was real. The answer was aimed somewhere else. Fra
 
 Marcus: Because a government can't fight a war with its own press cheering the enemy. French agents are operating in America, their sympathizers run the Republican papers, and those papers print poison every week while our sailors are taken. Many nations in history have drawn this line in wartime.
 
-Maya: Your turn. Adams holds the dispatches, proof of the bribe demand. Publish or sit on them: does publishing help him or hurt him? [9-second pause]
+Maya: Your turn. Adams holds the dispatches, proof of the bribe demand. Publish or sit on them: does publishing help him or hurt him? [10-second pause]
 
 Maya: It helps him, enormously. A diplomatic insult becomes a national one, which quiets the Republicans who'd cheered France and hands Adams his war fever. Published evidence converts embarrassment into outrage. If an SAQ asks for a cause of the Quasi-War, give the mechanism: a published bribe demand turning embarrassment into national outrage.
 
@@ -102,19 +102,19 @@ Marcus: You did. Jefferson, Kentucky, nullify. Madison, Virginia, interpose. The
 
 Maya: Three questions, AP-shaped. Say your answer before I give it.
 
-Maya: First. A 1798 document says that when the federal government assumes powers never delegated, quote, "its acts are unauthoritative, void, and of no force." End quote. Which resolution, and what doctrine? [15-second pause]
+Maya: First. A 1798 document says that when the federal government assumes powers never delegated, quote, "its acts are unauthoritative, void, and of no force." End quote. Which resolution, and what doctrine? [10-second pause]
 
 Maya: The Kentucky Resolutions, Jefferson in secret. The doctrine is nullification — the quote only makes sense if the Constitution is a compact among the states, a deal the states can police. And the giveaway is the verb "void."
 
-Maya: Second. Adams publishes the XYZ dispatches, the agents' names replaced by X, Y, and Z. Explain the effect on public opinion, and connect it to the Quasi-War. [18-second pause]
+Maya: Second. Adams publishes the XYZ dispatches, the agents' names replaced by X, Y, and Z. Explain the effect on public opinion, and connect it to the Quasi-War. [10-second pause]
 
 Maya: Publication turned a diplomatic insult into a national one — a country split over France rallied behind "millions for defense, but not one cent for tribute," and Congress funded the naval buildup. Outrage needs a visible trigger, and a published bribe demand was it.
 
-Maya: Third. Sort by target: the Naturalization Act, the Alien Friends Act, the Sedition Act. Who does each hit? [20-second pause]
+Maya: Third. Sort by target: the Naturalization Act, the Alien Friends Act, the Sedition Act. Who does each hit? [10-second pause]
 
 Maya: Naturalization targeted immigrants who'd vote Republican — fourteen years instead of five. The Alien Friends Act gave the president peacetime deportation power over foreign residents he called dangerous. And the Sedition Act put Republican editors and critics in jail for words. Three different targets, one political strategy.
 
-Maya: One more, fast. The Sedition Act died by repeal, court ruling, or expiration? [6-second pause] Expiration. It lapsed on Adams's last day, and Jefferson pardoned the convicted.
+Maya: One more, fast. The Sedition Act died by repeal, court ruling, or expiration? [10-second pause] Expiration. It lapsed on Adams's last day, and Jefferson pardoned the convicted.
 
 Maya: [professional broadcast tone] Criticism isn't treason. The voters said so in 1800, and every frightened generation since has had to decide the case again.
 

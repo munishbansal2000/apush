@@ -1,7 +1,7 @@
 # U4-E7 — Debate: Maya moderates, Marcus + the Editor (Fish Audio)
-# Episode 7: Jacksonian Democracy. ~13 min experienced (2,097 words speech + 69s pauses).
+# Episode 7: Jacksonian Democracy. ~12.5 min experienced (2,097 words speech + 60s pauses).
 # Draft v4.
-# Read note: Debate format. Maya is the modern host — she moderates, calls the verdict at the end, and owns the afterlife (everything past 1837). Marcus argues the democratic-hero case from inside Jackson's America; his knowledge stops around 1837, no future knowledge. The Editor is a one-off guest voice, appearing only in this episode and never again: a National Republican newspaper editor who covered the 1828 campaign, speaking in his own 1828–1832 voice — measured, never caricature. Pause tags used in this script, each on its own line: [8-second pause] (prediction beats and the fast bonus question) and [15-second pause] (self-test CER questions). The em dash in the closing tagline is a held beat: leave a full breath between Marcus's setup line and the Editor's landing line. Do not rush it. Quoted lines inside quotation marks are real documented words (Jackson's July 10, 1832 Bank veto message; Senator Marcy's January 1832 Senate line, per the Register of Debates); the famous "John Marshall" line is flagged in-dialogue as reported rather than transcript-verified; all other debate dialogue is dramatized. Strip this header and the read note before TTS, and convert every pause tag to real silence — raw bracket text must never reach the voice.
+# Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Debate format. Maya is the modern host — she moderates, calls the verdict at the end, and owns the afterlife (everything past 1837). Marcus argues the democratic-hero case from inside Jackson's America; his knowledge stops around 1837, no future knowledge. The Editor is a one-off guest voice, appearing only in this episode and never again: a National Republican newspaper editor who covered the 1828 campaign, speaking in his own 1828–1832 voice — measured, never caricature. The em dash in the closing tagline is a held beat: leave a full breath between Marcus's setup line and the Editor's landing line. Do not rush it. Quoted lines inside quotation marks are real documented words (Jackson's July 10, 1832 Bank veto message; Senator Marcy's January 1832 Senate line, per the Register of Debates); the famous "John Marshall" line is flagged in-dialogue as reported rather than transcript-verified; all other debate dialogue is dramatized. Strip this header and the read note before TTS, and convert every pause tag to real silence — raw bracket text must never reach the voice.
 # Pronunciation: BID-ull (Biddle), MAR-see (Marcy), KEN-dull (Kendall), WUSS-ter (Worcester), CHAIR-uh-kee (Cherokee), van BYOO-ren (Van Buren), SHLEH-sing-er (Schlesinger), kal-HOON (Calhoun), dor (Dorr), SEM-in-ole (Seminole)
 
 Maya: [professional broadcast tone] Last time: the Market Revolution, new canals, new mills, and cotton tying the South tighter to slavery. This time: the man all those new voters put in the White House. Andrew Jackson. Hero of the common man, or King Andrew the First?
@@ -12,7 +12,7 @@ Maya: [energetic] Round one: who got in. Editor, 1824, what happened?
 Editor: Four men ran. Jackson won the most votes, popular and electoral, but nobody had a majority, so the House decided it. Clay was Speaker. He threw his weight behind Adams, and Adams won. Weeks later Adams named Clay Secretary of State, Adams's own old office. Jackson's people called it the corrupt bargain, and screamed it for four years.
 Marcus: I'll say it louder. Clay came in fourth, out of the running, so he played kingmaker and Adams paid him with State. You don't need a back-room deal to see why Jackson's voters believed it.
 Maya: Your turn. It's 1825. The House just handed the presidency to the runner-up, who then gives the top cabinet job to the man who swung the vote. Does Jackson's camp shrug and move on, or does this detonate?
-[8-second pause]
+[10-second pause]
 Maya: It detonated. "Corrupt bargain" became the rallying cry for four years, aimed at one rematch: 1828.
 Maya: [curious, inquisitive tone] So, 1828. Editor, you were there. Was it really the dirtiest race ever?
 Editor: [serious tone] Both sides slung filth. Our papers ran the coffin handbills, six black coffins across the top, for militiamen Jackson had executed. His side called Rachel an adulteress, said they'd married before her divorce was final. She died that December. Jackson blamed the papers.
@@ -43,7 +43,7 @@ Maya: [confident tone] Asked how the presidency changed, "he made it stronger" e
 Maya: Two boxes down, two to go.
 Maya: [energetic] Round three: the Bank. Marcus, the veto message. I want his actual words.
 Maya: First, your turn. July 1832, four months before the election. Congress hands Jackson the recharter bill. His advisors say signing looks presidential. What does he do?
-[8-second pause]
+[10-second pause]
 Maya: He vetoes it. And the message reads like a campaign speech. Marcus, his words.
 Marcus: July 1832, and these are his words, from the message he sent Congress: "It is to be regretted that the rich and powerful too often bend the acts of government to their selfish purposes." And this: "Many of our rich men have not been content with equal protection and equal benefits, but have besought us to make them richer by act of Congress."
 Editor: [dry] The rich against the rest, with a presidential seal. [chuckle] Clay and Biddle pushed the recharter four years early, betting Jackson wouldn't dare kill it in an election year. He dared.
@@ -70,16 +70,16 @@ Marcus: The receipt for the whole era.
 Maya: The boundary ran wider. Women were shut out — the culture kept them to the home. Black Americans were shut out too, North and South. A color line and a sex line, both deliberate.
 Maya: Three questions, AP-shaped. Answer before I do.
 Maya: One. Jackson's Bank veto message. Using his actual words, explain how he framed the Bank as a threat to ordinary Americans.
-[15-second pause]
+[10-second pause]
 Maya: The veto message argues the Bank is rigged, and the evidence is his own line: the rich had "besought us to make them richer by act of Congress." That quote is the charge in his own words. Once you hear it, the veto reads as a power play.
 Maya: Two. An 1832 National Republican paper prints the headline "King Andrew the First." What's the source actually attacking? List the actions behind the nickname.
-[15-second pause]
+[10-second pause]
 Maya: The vetoes, twelve of them, five the full written kind, used on policy and not just constitutionality. The spoils, Marcy's "to the victor belong the spoils of the enemy" on the Senate floor. The Kitchen Cabinet, Kendall and Blair, running things past the real cabinet. Strip the adjective and the charge is simple: he ruled alone.
 Maya: Three. Evaluate the extent: did the spread of white male suffrage make Jacksonian America more democratic?
-[15-second pause]
+[10-second pause]
 Maya: The answer is more, and not. The property line fell, conventions replaced the caucus, the histories put it at more than a million men voting for president, roughly triple 1824. But women, Black Americans, and Native Americans were deliberately walled out, and the same president who rode the expanded vote signed the Removal Act. Hold both halves, or the answer collapses.
 Maya: One more, fast. The Cherokee beat removal in court, Worcester v. Georgia, 1832. What did the win get them?
-[8-second pause]
+[10-second pause]
 Maya: Nothing from Jackson. He never lifted a finger to enforce Marshall's ruling, and the Cherokee were driven west in 1838.
 Maya: [professional broadcast tone] Closing statements. You're answering each other now. Marcus.
 Marcus: [intense] The Editor calls twelve vetoes tyranny. The ones he returned went back to Congress in writing, open to override. The farmers read those messages, and they reelected him for it.

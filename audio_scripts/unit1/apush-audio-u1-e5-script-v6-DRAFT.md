@@ -1,14 +1,14 @@
 # U1-E5 — Maya + Marcus (Fish Audio)
-# Episode 5: Silver Empire. ~11 min experienced (1,857 words speech + 75s pauses)
+# Episode 5: Silver Empire. ~12 min experienced (1,857 words speech + 100s pauses)
 # Draft v6 (2026-10-07): fleet repair of the 2026-10-07 audit (1 blocker, 7 minor) — the four
 # announcer-voice mistake proclamations converted to live traps (box two's cut as redundant with its
 # existing live trap); Malestroit reframed as incomplete rather than wrong; merchant-profit and Ming
 # claims fail-closed hedged; cold-open attribution fixed; two mistagged beats corrected.
-# Read note: Maya tracks four boxes on her episode sheet. She checks ONE off mid-episode
+# Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Maya tracks four boxes on her episode sheet. She checks ONE off mid-episode
 # ("Two boxes down.") and lands the rest in the recap — never a checkoff for every
 # box mid-episode (frozen guide rule). [10-second pause] marks are production notes for real silence in prediction
-# beats; [15-second pause] and [20-second pause] marks are real silence for the CER self-test questions;
-# [5-second pause] is the fast bonus question — they never go to the voice. The em dash in the closing
+# beats; [10-second pause] and [10-second pause] marks are real silence for the CER self-test questions;
+# [10-second pause] is the fast bonus question — they never go to the voice. The em dash in the closing
 # tagline is a held beat: leave a full breath between Marcus's "Potosí turned a mountain into money —" and Maya's
 # landing line. Do not rush it. Strip this header, the read note, and all [pause] tags before TTS; convert pause
 # tags to silence. The ## Sources section at the end is production-only, never spoken.
@@ -145,25 +145,25 @@ Maya: Three questions, AP-shaped. Say your answer before I give it.
 
 Maya: Question one comes with a stimulus. A 1615 drawing shows an Indigenous miner whipped by a Spanish overseer. It's one of hundreds of drawings in a chronicle addressed to the king of Spain. Why do historians call this source gold?
 
-[15-second pause]
+[10-second pause]
 
 Maya: It's an Indigenous voice testifying from inside the system — Guamán Poma, an Andean nobleman, drew the abuses himself, hundreds of drawings, in a letter to the king. The colonized almost never got to testify. Here one did, in the empire's own language, to the king himself.
 
 Maya: Two. A student writes: "European prices rose in the 1500s because rulers watered down their coins." What's the mistake?
 
-[15-second pause]
+[10-second pause]
 
 Maya: Malestroit's argument, and Bodin refuted it — in 1568, Bodin answered that American silver, more money chasing the same goods, was the primary cause. Debasement couldn't explain the scale of the rise. The silver flood could. That's the quantity theory being born.
 
 Maya: Three. Silver sailed from Acapulco to Manila. Silk and porcelain sailed back. A student concludes that Spain got rich off the Pacific trade. Defend or refute.
 
-[20-second pause]
+[10-second pause]
 
 Maya: Refute it. The Pacific trade enriched the merchants running it: the men in Manila and Mexico City took their cut, and Madrid saw little of it. The crown's cut came on the Atlantic side.
 
 Maya: One more, fast. The mita draft pulled about one in how many adult men?
 
-[5-second pause]
+[10-second pause]
 
 Maya: One in seven.
 

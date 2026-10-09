@@ -1,7 +1,7 @@
 # U4-E6 — Maya + Marcus (Fish Audio)
 # Episode 6: The Market Revolution. About thirteen minutes experienced (2,075 spoken words + 73s scripted pauses = 12.7 min at 180 WPM).
 # Draft v4. Surgical repair pass: 2 antithesis forms reworked into asymmetric phrasing (L17 steamboat tail, L83 telegraph line); L41 and L95 untouched at budget (≤2, §4.14). Standards: frozen 2026-10-06 + final guidelines 2026-10-07.
-# Read note: Maya tracks four boxes on her episode sheet: the transportation revolution, the factory system and the telegraph, King Cotton's South, and the human cost. Pause tags are production notes for real silence — strip this header, the read note, and every [N-second pause] tag before TTS; convert tags to silence. Tags used: [9-second pause], [8-second pause], [18-second pause], [15-second pause], [5-second pause]. The em dash in the closing tagline is a held beat — leave a full breath between Maya's setup line and Marcus's landing line. Do not rush it.
+# Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Maya tracks four boxes on her episode sheet: the transportation revolution, the factory system and the telegraph, King Cotton's South, and the human cost. Pause tags are production notes for real silence — strip this header, the read note, and every [N-second pause] tag before TTS; convert tags to silence. The em dash in the closing tagline is a held beat — leave a full breath between Maya's setup line and Marcus's landing line. Do not rush it.
 # Pronunciation: EER-ee (Erie); LOH-uhl (Lowell); MEH-rih-mak (Merrimack); muh-KOR-mik (McCormick); Deere rhymes with "deer"; FOOL-tun (Fulton)
 
 Maya: [professional broadcast tone] Last time: the compromise held the Union together — now the economy remakes it. Picture America in 1800: most people growing what they eat and hauling everything else by wagon over mud. Forty years later the whole thing runs on markets: strangers buying and selling across a thousand miles. Four boxes on your sheet: the transportation revolution, the factory system and the telegraph, King Cotton's South, and the human cost. Circle the ones you couldn't explain right now. About thirteen minutes, and they're yours.
@@ -30,7 +30,7 @@ Marcus: It was always about the economy. The canal set off a canal craze: everyb
 
 Maya: Your turn. It's 1820 and you're a farmer outside Buffalo with grain to sell. Before the canal, moving it east costs a fortune per ton. After, roughly a tenth. What changes about where you can sell?
 
-[9-second pause]
+[10-second pause]
 
 Marcus: Everything. Before, you sold to whoever was close, because distance ate your profit. After, you can sell in New York City, hundreds of miles away, and still come out ahead. One decision, and the whole revolution's in it: farmers stop growing just to survive and start growing to sell.
 
@@ -52,7 +52,7 @@ Marcus: The manufacturing side starts earlier, with a gun contract. Eli Whitney 
 
 Maya: Your turn. You're a gun owner in 1790 and your musket's trigger snaps. Old world: you need a master gunsmith. New world, every part identical: who can fix it?
 
-[8-second pause]
+[10-second pause]
 
 Maya: Anyone. Same specs, any gun. And once it worked for muskets, it worked for clocks and tools and everything else.
 
@@ -138,25 +138,25 @@ Maya: Box four, the human cost: wage labor, Irish and German immigrants, the new
 
 Maya: Three questions, AP-shaped. Say your answer before I give it. One. Your stimulus, picture this: an 1830 newspaper ad for canal freight. Buffalo to New York, a tenth of the wagon price. What's the point of a source like that? What does it explain?
 
-[18-second pause]
+[10-second pause]
 
 Maya: The point is the transportation revolution rewiring trade. The evidence is the price collapse, roughly ninety percent, which made it profitable to ship western grain east. And that matters because once moving goods got cheap, farmers stopped growing just to survive and started growing to sell. The market revolution in one page.
 
 Maya: Two. The cotton gin is 1793, and Congress bans the international slave trade in 1808. So why does slavery grow after the ban?
 
-[18-second pause]
+[10-second pause]
 
 Maya: Because the gin made cotton wildly profitable, planters pushed into Alabama, Mississippi, and Louisiana, and with imports banned they built a domestic slave trade, something like a million people forced south and west. The ban cut off the supply from Africa. The demand just found a new supply.
 
 Maya: Three. A Lowell girl works twelve-hour days under boarding-house curfews. A middle-class magazine preaches the cult of domesticity. What's the tension between those two pictures?
 
-[15-second pause]
+[10-second pause]
 
 Maya: The cult said a woman's place was the home, separate from the rough world of work. But that was a middle-class story. The Lowell girls were in the factories because their families needed the wages. Same decade, two different womanhoods, which is why you can't universalize the ideal.
 
 Maya: One more, fast. Why did the telegraph come last in this revolution? What had to exist first?
 
-[5-second pause]
+[10-second pause]
 
 Maya: Water. The goods had to move before the words could matter. The canal's 1825, the telegraph's 1844. Wires sped up what the water had built.
 

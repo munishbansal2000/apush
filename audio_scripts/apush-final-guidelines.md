@@ -60,8 +60,9 @@ memory-check ("the crown took... twenty percent?") and the content-fumble.
 Marcus corrects crisply; never lectures the correction.
 
 Self-test: "Three questions, AP-shaped" ritual framing stays; question →
-`[15-second pause]` for CER questions (15–20s; they need real thinking
-time), 8–10s for prediction beats → Maya's model answer after the pause.
+`[10-second pause]` for every pause — CER questions, prediction beats, fast
+bonus — then Maya's model answer after the pause. One uniform 10s timeout
+across the fleet, no per-lesson variation.
 Answers in claim–evidence–reasoning shape — the logic, never spoken labels
 ("Claim:/Evidence:/Reasoning:" aloud is bad TTS, banned with no exceptions).
 At least one stimulus-style question. With 4 boxes, a fast clearly-labeled
@@ -106,7 +107,16 @@ uncertainty ("I don't think that's settled"). Never announces lists.
 3. Empty exam-pitch clichés: "the exam counts/loves…", "shows up on the
    test." Substantive exam devices (§5) are content, not pitch.
 4. Balanced triples and parallel closers: one earned chain per episode max,
-   and it must carry real logic.
+   and it must carry real logic (necessity, not decoration). RULING 2026-10-08
+   (fleet repair): distinguish INHERENT threeness from STYLISTIC threeness.
+   Inherent threeness — the facts themselves are three (the Missouri
+   Compromise's provisions, coverture's legal disabilities, a bare list of
+   three movements) — is content, not the tic; allowed, though
+   matched-rhythm anaphora should still be avoided where easy. Stylistic
+   threeness — the writer chose three parallel beats for rhythm (matched SVO
+   clauses, "it" anaphora, parallel temporal PPs) — is the banned tic; max
+   one earned chain per episode. Test: would the sentence still need three
+   parts if rhythm didn't matter?
 5. Feed lines (see §3).
 6. Verbatim repeated taglines within an episode. Cross-episode repetition is
    governed by series grammar (§6).
@@ -130,7 +140,7 @@ uncertainty ("I don't think that's settled"). Never announces lists.
 ## 5. Exam devices
 
 Substantive devices that teach exam thinking are standard in every episode:
-- **Prediction beats (1–2):** "Your turn." + real pause (8–10s). Answerable
+- **Prediction beats (1–2):** "Your turn." + `[10-second pause]`. Answerable
   by reasoning, not trivia recall, at a natural decision point. Never let a
   speaker say "Pause." aloud. (Video pipeline may add an on-screen reveal;
   audio scripts don't need it.)
@@ -247,8 +257,7 @@ direction pass that edits dialogue is a rewrite and needs the full loop.
   where the moment earns it. Pause tags are production silence, unchanged.
 - **Consistency is the rule:** the same dramatic situation gets the same tag
   in every lesson. Cold opens: `[professional broadcast tone]`. Maya's
-  genuine questions: `[curious, inquisitive tone]`. Takeaways: `[confident
-  tone]`. Myth-busts: `[firm]`/`[stern]`. Maya caught wrong: `[sheepish]`.
+  genuine questions: `[curious, inquisitive tone]`. Takeaways: `[conversational]`. Myth-busts: `[firm]`/`[stern]`. Maya caught wrong: `[sheepish]`.
   Grim material: `[serious tone]`. Debate guests: `[passionate]`/`[intense]`.
   Numbers to catch: `[speaking slowly]`. A lesson that directs its cold open
   differently from the fleet is wrong — match the fleet, not the whim.
