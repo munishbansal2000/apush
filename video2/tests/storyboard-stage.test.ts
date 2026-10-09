@@ -5,6 +5,7 @@ import {describe, it} from 'node:test';
 import {atomicJson, parseTranscript} from '../tools/pipeline-core';
 import {buildStage, storyboardStage} from '../tools/pipeline/stages/storyboard';
 import {loadLessonReview, saveLessonReview} from '../tools/pipeline/review';
+import {turnKeys} from '../tools/pipeline/storyboard';
 import {fakeContext} from './helpers/fake-pipeline';
 
 // Maps only: no lesson images, so nothing is written to the shared treatments library.
@@ -83,5 +84,23 @@ describe('storyboard and build stages: script -> storyboard -> plan, revisions, 
     writeFileSync(join(h.ctx.dataDir, 'storyboard.json'), JSON.stringify(edited));
     buildStage(h.ctx);
     assert.deepEqual(plan().shots, plan2.shots, 'approved plan unchanged');
+  });
+});
+
+describe('build stage: problems go back to the storyboard', () => {
+  it('a plan that fails its checks becomes review notes on the acts that own the lines', () => {
+    const h = fakeContext({episode: 'u9e7'});
+    h.ctx.estimateWords = true;
+    const turns = parseTranscript(script);
+    const durations = [6, 22, 2, 10, 4]; // line 1 holds one map for 22s: longer than a map may hold
+    const starts = durations.reduce<number[]>((acc, _, i) => [...acc, i === 0 ? 0.25 : acc[i - 1] + durations[i - 1] + 0.18], []);
+    atomicJson(join(h.ctx.dataDir, 'turns.json'), {turns});
+    atomicJson(join(h.ctx.dataDir, 'timing_map.json'), {starts, durations, totalSec: starts[4] + durations[4] + 0.6});
+    const keys = turnKeys(turns);
+    atomicJson(join(h.ctx.dataDir, 'storyboard.json'), {episode: 'u9e7', acts: outline.acts, turns: keys.map((key, index) => ({key, index,
+      visuals: index === 0 ? [map('map.atlantic-world', 'last time')] : index === 1 ? [map('map.north-america-1763', 'the empire stretched')] : index === 4 ? [map('map.eastern-frontier-1763', 'drawn along the mountains')] : []}))});
+    assert.throws(() => buildStage(h.ctx), /sent back to storyboard act\(s\) 1 as review notes/);
+    const notes = loadLessonReview('u9e7', join(h.root, 'data')).storyboard?.notes?.['1'] ?? [];
+    assert.ok(notes.some(n => /build check, line 1: .*holds longer than 14s on one map/.test(n.text)), JSON.stringify(notes));
   });
 });

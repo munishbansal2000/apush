@@ -38,7 +38,7 @@ export function storyboardPrompt(index: number, outline: Outline, turns: Pipelin
     '- Kinds: "image" (optional "framing": "wide" | "face" | "detail"; first appearance of a person: add "name" and "role" for a name tag), "map" (a map view), "point", "custom" (only a listed explainer, only for its exact event), "clip" (a hero still with gentle ambient motion: smoke, water, flags; never faces or text; at most one per act).',
     '- Images only from ASSETS, each at most twice in this act. Images marked retrospective (later imaginings) must not be presented as eyewitness records.',
     '- "priority": "essential" for what the words name, "optional" for texture. "pace": "hold" on the act\'s key line, "quick" for a spoken list, "reveal" for a pull-back reveal.',
-    '- Never put visuals on PAUSE lines (question cards are automatic). Recap, practice and next-time lines may revisit images shown earlier.',
+    `- Never put visuals on PAUSE lines (question cards are automatic). Recap, practice and next-time lines may revisit images shown earlier, within the lesson limit of ${LOOK_RULES.maxImageUses} uses per image; each custom explainer at most once per lesson, ${LOOK_RULES.maxCustoms} in all.`,
     '',
     'FORMAT (JSON only):',
     '{"turns":[{"turn":12,"visuals":[',
@@ -66,10 +66,26 @@ export function storyboardPrompt(index: number, outline: Outline, turns: Pipelin
   ].join('\n');
 }
 
+/** Map geography by type: fills need an area (Polygon/MultiPolygon), lines need a LineString; ids must exist. */
+function mapGeoIssues(map: Record<string, unknown>, geo: Record<string, {geometry: {type: string}}>): string[] {
+  const out: string[] = [];
+  const typeOf = (id: string) => geo[id]?.geometry.type;
+  for (const f of (map.fills as {region?: {geo?: string}}[] | undefined) ?? []) {
+    const id = f?.region?.geo;
+    if (id && !typeOf(id)) out.push(`map fill: unknown geo id "${id}"`);
+    else if (id && !/Polygon/.test(typeOf(id)!)) out.push(`map fill: "${id}" is a ${typeOf(id)}, not an area; draw it as a line ("lines": [{"geo": "${id}"}])`);
+  }
+  for (const l of (map.lines as {geo?: string}[] | undefined) ?? []) {
+    if (l?.geo && !typeOf(l.geo)) out.push(`map line: unknown geo id "${l.geo}"`);
+    else if (l?.geo && typeOf(l.geo) !== 'LineString') out.push(`map line: "${l.geo}" is a ${typeOf(l.geo)}, not a line; use it as a fill`);
+  }
+  return out;
+}
+
 interface ActBoard {turns: {turn: number; visuals: StoryVisual[]}[]; years?: {turn: number; phrase: string; text: string}[]}
 
 /** Structure and anchors of one act's storyboard answer; returns the parsed act or the problems for a repair. */
-export function validateStoryAct(raw: unknown, index: number, outline: Outline, turns: PipelineTurn[], durations: number[], catalog: CatalogEntry[], blockedCustoms: Set<string> = new Set()): {act?: ActBoard; issues: string[]} {
+export function validateStoryAct(raw: unknown, index: number, outline: Outline, turns: PipelineTurn[], durations: number[], catalog: CatalogEntry[], blockedCustoms: Set<string> = new Set(), geo: Record<string, {geometry: {type: string}}> = {}): {act?: ActBoard; issues: string[]} {
   const a = raw as ActBoard;
   const {from, to} = outline.acts[index].turns;
   if (!a || !Array.isArray(a.turns)) return {issues: ['answer must be {"turns": [...], "years": [...]}']};
@@ -90,6 +106,7 @@ export function validateStoryAct(raw: unknown, index: number, outline: Outline, 
       }
       if (v.kind === 'clip') clips++;
       if (v.kind === 'custom' && (!v.component || blockedCustoms.has(v.component))) issues.push(`turn ${t.turn}: custom explainer "${v.component}" is not available`);
+      if (v.kind === 'map') issues.push(...mapGeoIssues(v.map ?? {}, geo).map(i => `turn ${t.turn}: ${i}`));
     }
   }
   for (const [image, n] of perImage) if (n > 2) issues.push(`"${image}" is used ${n} times in this act; at most twice`);
@@ -167,7 +184,7 @@ export function directStoryboard(io: DirectorIO, input: StoryboardInputs, maxRep
     for (const {i, path} of asked) {
       const raw = readAnswer(path!);
       latest[i] = raw as ActBoard;
-      const checked = validateStoryAct(raw, i, outline, input.turns, input.timing.durations, input.catalog, blocked);
+      const checked = validateStoryAct(raw, i, outline, input.turns, input.timing.durations, input.catalog, blocked, input.options.geo ?? {});
       log.push({stage: `storyboard act ${i + 1}`, source: path!, issues: checked.issues});
       if (checked.act) acts[i] = checked.act; else problems.set(i, checked.issues);
     }
@@ -175,8 +192,8 @@ export function directStoryboard(io: DirectorIO, input: StoryboardInputs, maxRep
   for (let attempt = 0; attempt <= maxRepairs; attempt++) {
     if (!problems.size) {
       const sb = assembleStoryboard(input.episode, outline, input.turns, acts as ActBoard[]);
-      // Lesson-wide: image uses past the budget go back to the acts that hold the extra uses (recap revisits allowed).
-      const c = checkStoryboard(sb, input.turns, input.timing.durations, {rejectedImages: input.options.rejectedImages, maxImageUses: LOOK_RULES.maxImageUses + 2});
+      // Lesson-wide: image uses past the budget and explainer repeats go back to the acts that hold the extra uses.
+      const c = checkStoryboard(sb, input.turns, input.timing.durations, {rejectedImages: input.options.rejectedImages, maxImageUses: LOOK_RULES.maxImageUses});
       if (!c.issues.length) { log.push({stage: 'storyboard', source: 'assembled', issues: c.warnings}); return {storyboard: sb, outline, log}; }
       log.push({stage: `storyboard assembled (attempt ${attempt + 1})`, source: 'assembled', issues: c.issues});
       for (const issue of c.issues) {
@@ -202,7 +219,7 @@ export function directStoryboard(io: DirectorIO, input: StoryboardInputs, maxRep
     for (const {i, path} of asked) {
       const raw = readAnswer(path!);
       latest[i] = raw as ActBoard;
-      const checked = validateStoryAct(raw, i, outline, input.turns, input.timing.durations, input.catalog, blocked);
+      const checked = validateStoryAct(raw, i, outline, input.turns, input.timing.durations, input.catalog, blocked, input.options.geo ?? {});
       log.push({stage: `storyboard act ${i + 1} ${input.revise ? 'revise' : 'repair'} ${attempt + 1}`, source: path!, issues: checked.issues});
       if (checked.act) acts[i] = checked.act; else problems.set(i, checked.issues);
     }

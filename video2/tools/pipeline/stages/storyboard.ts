@@ -92,6 +92,28 @@ function noteChangedLines(review: LessonReview, sb: Storyboard, inputs: DocInput
   return added;
 }
 
+/** Resolver problems ("shot12: …") as storyboard notes on the act that holds the shot's line. */
+function noteBuildProblems(review: LessonReview, sb: Storyboard, plan: ShotPlan, problem: string): {count: number; acts: number[]; rest: string[]} {
+  const acts = new Set<number>();
+  const rest: string[] = [];
+  let count = 0;
+  for (const line of problem.split('\n').slice(1).map(l => l.replace(/^\s*-\s*/, '')).filter(Boolean)) {
+    const n = Number(/^shot ?0*(\d+)/.exec(line)?.[1]);
+    const turn = Number.isInteger(n) ? (plan.shots[n - 1] as {at?: {turn?: number}} | undefined)?.at?.turn : undefined;
+    const act = turn === undefined ? -1 : sb.acts.findIndex(a => turn >= a.turns.from && turn <= a.turns.to) + 1;
+    if (act <= 0) { rest.push(`  - ${line}`); continue; }
+    review.storyboard ??= {};
+    review.storyboard.notes ??= {};
+    const list = (review.storyboard.notes[String(act)] ??= []);
+    const text = `build check, line ${turn}: ${line.replace(/^shot ?\d+:?\s*/, '')}`;
+    if (!list.some(x => !x.done && x.text === text)) list.push({text, at: now()});
+    if (review.storyboard.acts) delete review.storyboard.acts[String(act)];
+    acts.add(act);
+    count++;
+  }
+  return {count, acts: [...acts].sort((a, b) => a - b), rest};
+}
+
 export function storyboardStage(ctx: PipelineContext): void {
   if (ctx.dryRun) { console.log('[storyboard] dry-run'); return; }
   const {inputs, catalog, maps, io, agentDir, dataRoot} = prepare(ctx);
@@ -179,7 +201,14 @@ export function buildStage(ctx: PipelineContext): void {
   }
   if (problem) {
     report(ctx, 'build.log.json', log, undefined, agentDir);
-    throw new Error(`build: the plan from the storyboard does not pass the checks:\n${problem}\nAdd storyboard notes for these lines (npm run review -- ${ctx.episode} note --storyboard --turn N "...") and run again.`);
+    // Closed loop: each problem goes back to the storyboard act that owns its line, as a note; the next run re-boards
+    // only those acts. Problems not tied to a shot (e.g. Episode Sheet boxes) stop the run as they are.
+    const noted = noteBuildProblems(review, sb, plan, problem);
+    if (noted.acts.length) {
+      saveLessonReview(ctx.episode, review, dataRoot);
+      throw new Error(`build: ${noted.count} problem(s) sent back to storyboard act(s) ${noted.acts.join(', ')} as review notes; run again to re-board them${noted.rest.length ? `\nnot tied to a shot:\n${noted.rest.join('\n')}` : ''}`);
+    }
+    throw new Error(`build: the plan from the storyboard does not pass the checks:\n${problem}`);
   }
   if (ctx.editor) {
     const edited = editorPass(io, {...plan, acts: sb.acts}, inputs.turns, inputs.timing, inputs.words, treatments, validate, log);

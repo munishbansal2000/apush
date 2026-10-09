@@ -55,3 +55,20 @@ describe('storyboard (S1)', () => {
     assert.match(thin.warnings.join('\n'), /turn 0 \(30s\): 1 visual\(s\); a line this long needs about 3/);
   });
 });
+
+describe('storyboard custom explainers', () => {
+  it('allows each explainer once per lesson and at most two in all, addressed by line', () => {
+    const t = parseTranscript('Maya: The line was drawn along the mountains.\nMarcus: Pontiac struck the forts.\nMaya: The line again, drawn twice.\nMarcus: Then the stamps arrived.');
+    const keys = turnKeys(t);
+    const custom = (component: string, phrase: string) => ({kind: 'custom' as const, component, at: {phrase}, priority: 'essential' as const});
+    const sb: Storyboard = {episode: 'x', acts: [], turns: [
+      {key: keys[0], index: 0, visuals: [custom('ProclamationLineMap', 'the line was drawn')]},
+      {key: keys[1], index: 1, visuals: [custom('PontiacFortsMap', 'pontiac struck')]},
+      {key: keys[2], index: 2, visuals: [custom('ProclamationLineMap', 'the line again')]},
+      {key: keys[3], index: 3, visuals: [custom('StampActTax', 'the stamps arrived')]},
+    ]};
+    const issues = checkStoryboard(sb, t, [3, 3, 3, 3]).issues.join('\n');
+    assert.match(issues, /turn 2: custom explainer "ProclamationLineMap" is already used at turn 0/);
+    assert.match(issues, /turn 3: custom explainer "StampActTax" is over the lesson budget/);
+  });
+});

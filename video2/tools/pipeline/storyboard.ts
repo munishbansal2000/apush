@@ -118,6 +118,20 @@ export function checkStoryboard(sb: Storyboard, turns: PipelineTurn[], durations
       for (let k = 0; k <= (v.span ?? 0); k++) covered.add(index + k);
     });
   }
+  // Custom explainers: each at most once per lesson, at most LOOK_RULES.maxCustoms distinct (turn-addressed, so a
+  // repair goes to the act that holds the extra one).
+  const customAt = new Map<string, number>();
+  for (const st of sb.turns) {
+    const index = keys.get(st.key);
+    if (index === undefined) continue;
+    for (const v of st.visuals) {
+      if (v.kind !== 'custom' || !v.component) continue;
+      const first = customAt.get(v.component);
+      if (first !== undefined) issues.push(`turn ${index}: custom explainer "${v.component}" is already used at turn ${first}; once per lesson, use a standard visual here`);
+      else if (customAt.size >= LOOK_RULES.maxCustoms) issues.push(`turn ${index}: custom explainer "${v.component}" is over the lesson budget (${LOOK_RULES.maxCustoms} explainers, already ${[...customAt.keys()].join(', ')}); use a standard visual here`);
+      else customAt.set(v.component, index);
+    }
+  }
   const max = opts.maxImageUses ?? LOOK_RULES.maxImageUses;
   for (const [image, n] of uses) if (n > max) issues.push(`"${image}" is used ${n} times; max ${max} per lesson`);
   // Coverage: a long spoken turn needs several visuals (or a span from before); flag thin stretches for re-boarding.

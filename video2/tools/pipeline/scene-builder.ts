@@ -178,6 +178,17 @@ export function buildPlan(input: BuildInputs): BuildResult {
       break;
     }
     if (changed) continue;
+    // A custom explainer needs time to play its beat: the visual after a too-short one gives way (never a question card).
+    for (let i = 0; i + 1 < drafts.length; i++) {
+      if (drafts[i].shot.type !== 'custom' || !(ends[i] - starts[i] < LOOK_RULES.minCustomSec - 0.05)) continue;
+      const next = drafts[i + 1];
+      if (next.shot.type === 'question') { storyboardIssues.push(`turn ${(drafts[i].shot.at as Cue).turn}: custom explainer "${String(drafts[i].shot.component)}" has under ${LOOK_RULES.minCustomSec}s before the question card`); continue; }
+      fixes.push(`dropped "${String((next.shot.at as Cue).phrase)}" (turn ${(next.shot.at as Cue).turn}): the explainer before it needs ${LOOK_RULES.minCustomSec}s`);
+      drafts.splice(i + 1, 1);
+      changed = true;
+      break;
+    }
+    if (changed) continue;
     // Too long: continue the same image in another framing on a phrase near the middle.
     for (let i = 0; i < drafts.length; i++) {
       const d = drafts[i];
