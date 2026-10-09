@@ -117,18 +117,20 @@
     {
       "id": "map.proclamation-line-1763",
       "title": "Map of the Proclamation Line of 1763",
-      "primary_url": "https://tile.loc.gov/storage-services/service/gmd/gmd3/g3300/g3300/ar009900.gif",
-      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Mid-Atlantic_portion_of_the_Proclamation_Line_of_1763.png",
-      "source": "loc",
-      "verified": true
+      "primary_url": "https://teva.contentdm.oclc.org/iiif/2/p15138coll23:377/full/full/0/default.jpg",
+      "alt_url": "https://www.loc.gov/static/exhibitions/two-georges/images/objects/british-beginnings/expanding-the-british-empire/2G_019_00_00_standard.jpg",
+      "source": "tsla",
+      "verified": true,
+      "fix_note": "Period 1763 Gibson map 'The British governments in Nth America laid down agreeable to the proclamation of Octr. 7, 1763' (exact match); alt is a modern LOC exhibition graphic (noted as modern)"
     },
     {
       "id": "map.north-america-1763",
       "title": "North America after the Treaty of Paris, 1763",
-      "primary_url": "https://tile.loc.gov/storage-services/service/gmd/gmd3/g3300/g3300/ar010600.gif",
-      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/New_Map_of_North_America_%281763%29.JPG",
+      "primary_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd3:g3290:g3290:ar305500/full/pct:25/0/default.jpg",
+      "alt_url": "https://images.nypl.org/index.php?id=434522&t=w",
       "source": "loc",
-      "verified": true
+      "verified": true,
+      "fix_note": "D'Anville/Sayer 1772 'whole continent of America... definitive treaty concluded at Paris Feby. 10th 1763' (different plate from british-empire map); alt Sayer 1763 'new map of North America' (also different plate); primary scaled pct:25 (pct:100 500s)"
     },
     {
       "id": "map.french-indian-war",
@@ -157,10 +159,11 @@
     {
       "id": "map.ohio-country",
       "title": "The Ohio Country, 1750s",
-      "primary_url": "https://tile.loc.gov/storage-services/service/gmd/gmd3/g3300/g3300/ct000378.gif",
-      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Map_of_the_Country_about_the_Mississippi%2C_Circa_1755_WDL9587.png",
+      "primary_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd3:g3300:g3300:ct000378/full/pct:100/0/default.jpg",
+      "alt_url": "https://images.nypl.org/index.php?id=434579&t=w",
       "source": "loc",
-      "verified": true
+      "verified": true,
+      "fix_note": "'Map of the country about the Mississippi' 1755 (same item as the dead gif, via working IIIF); alt 'accurate map of the English colonies in North America bordering on the River Ohio' 1754 (exact subject match)"
     },
     {
       "id": "map.pontiac-rebellion",
@@ -189,10 +192,11 @@
     {
       "id": "map.new-france",
       "title": "New France at its greatest extent",
-      "primary_url": "https://tile.loc.gov/storage-services/service/gmd/gmd3/g3300/g3300/ct003127a.gif",
-      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Flag-map_of_New_Caledonia_%28all%29_%28France%29.png",
+      "primary_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd3:g3400:g3400:ar011200/full/pct:100/0/default.jpg",
+      "alt_url": "https://images.nypl.org/index.php?id=434920&t=w",
       "source": "loc",
-      "verified": true
+      "verified": true,
+      "fix_note": "'La Nouvelle France ou Canada' 1764; alt Visscher/Schenk 'Canada sive Nova Francia' 1746"
     },
     {
       "id": "map.florida-1763",
@@ -230,18 +234,20 @@
     {
       "id": "art.braddocks-defeat",
       "title": "Braddock's Defeat on the Monongahela, 1755",
-      "primary_url": null,
-      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Plan_of_the_Battle_of_Braddock%27s_Defeat_at_the_beginning_of_action_July_9%2C_1755.jpg",
+      "primary_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd382:g3824:g3824p:ar303900/full/pct:100/0/default.jpg",
+      "alt_url": "https://bpldcassets.blob.core.windows.net/derivatives/images/commonwealth:q524mv488/image_access_800.jpg",
       "source": "loc",
-      "verified": true
+      "verified": true,
+      "fix_note": "1755 manuscript plan of Braddock's Defeat (exact match); alt is Orme 1768 map of Braddock's 1755 campaign route (same campaign, substitution noted)"
     },
     {
       "id": "art.fort-necessity",
       "title": "Washington at Fort Necessity (Great Meadows), 1754",
-      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Fort_Necessity_by_Paul_Weber%2C_1855.jpg",
-      "alt_url": "https://tile.loc.gov/storage-services/service/gmd/gmd382/g3822/g3822f/ct007903.gif",
-      "source": "wikimedia",
-      "verified": true
+      "primary_url": "https://images.nypl.org/?id=808340&t=w",
+      "alt_url": "https://www.battlefields.org/sites/default/files/styles/wysiwyg_original/public/thumbnails/image/The%20Night%20Council%20at%20Fort%20Necessity%20_0.png.webp?itok=qfQtcZEA",
+      "source": "nypl",
+      "verified": true,
+      "fix_note": "1856 steel engraving 'The night council at Fort Necessity' (McNevin/Hall) from both institutions; alt is webp"
     },
     {
       "id": "art.siege-detroit-1763",
@@ -278,18 +284,20 @@
     {
       "id": "art.taking-quebec",
       "title": "The taking of Quebec, 1759",
-      "primary_url": null,
-      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/a/af/A_View_of_the_taking_of_Quebec_Sept_13th_1759.jpg",
-      "source": "loc",
-      "verified": true
+      "primary_url": "https://images.metmuseum.org/CRDImages/dp/web-large/MM7995.jpg",
+      "alt_url": "https://bpldcassets.blob.core.windows.net/derivatives/images/commonwealth:dz010v115/image_access_800.jpg",
+      "source": "met",
+      "verified": true,
+      "fix_note": "'A View of the Taking of Quebec, September 13, 1759' (exact match); alt is Hervey Smyth 1760 Quebec landing view (same campaign)"
     },
     {
       "id": "art.bouquet-council",
       "title": "Colonel Bouquet's council with the Indians, 1764",
-      "primary_url": "https://tile.loc.gov/image-services/iiif/public:gdc:00010377304:0001/full/pct:100/0/default.jpg",
-      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Benjamin_West_-_The_Indians_Giving_a_Talk_to_Colonel_Bouquet_in_a_conference_at_a_Council_Fire_Near_his_Camp_on_the_-_B1975.4.798_-_Yale_Center_for_British_Art.jpg",
-      "source": "loc",
-      "verified": true
+      "primary_url": "https://images.collections.yale.edu/iiif/2/ycba:3acc303b-d8eb-4082-b8d9-6868f773e933/full/full/0/default.jpg",
+      "alt_url": "https://tile.loc.gov/image-services/iiif/public:gdc:00010377304:0001/full/pct:100/0/default.jpg",
+      "source": "yale",
+      "verified": true,
+      "fix_note": "Benjamin West 'The Indians Giving a Talk to Colonel Bouquet' from both; Yale primary is subject-confirmed via IIIF manifest"
     },
     {
       "id": "art.frontier-cabin",
@@ -302,18 +310,20 @@
     {
       "id": "art.redcoat-1760s",
       "title": "A British redcoat of the 1760s",
-      "primary_url": "https://tile.loc.gov/storage-services/master/gdc/gdcebookspublic/20/20/71/90/21/2020719021/2020719021.gif",
-      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Grenadier%2C_40th_Foot%2C_1767.jpg",
-      "source": "loc",
-      "verified": true
+      "primary_url": "https://archive.org/download/historicalrecor00smytgoog/page/n77.jpg",
+      "alt_url": "https://www.worldhistory.org/img/c/p/1200x900/18674.jpg",
+      "source": "ia",
+      "verified": true,
+      "fix_note": "Color plate 'A Grenadier, 1767' (40th Regiment of Foot) — identified British infantry uniform of the 1760s"
     },
     {
       "id": "art.fort-duquesne",
       "title": "Fort Duquesne at the forks of the Ohio",
-      "primary_url": null,
-      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Fort-Duquesne.jpg",
+      "primary_url": "https://tile.loc.gov/storage-services/service/pnp/cph/3a20000/3a22000/3a22400/3a22418r.jpg",
+      "alt_url": "https://ark.digitalcommonwealth.org/ark:/50959/hx11z222w/large_image",
       "source": "loc",
-      "verified": true
+      "verified": true,
+      "fix_note": "18th-c. engraving of Fort Duquesne (LOC 2018661886); alt is ca.1761 Amherst-papers manuscript map incl. Fort Duquesne (contemporary map, not a fort view)"
     },
     {
       "id": "art.philadelphia-1760s",
@@ -350,10 +360,11 @@
     {
       "id": "doc.treaty-paris-1763",
       "title": "The Treaty of Paris, 1763 (signatures page)",
-      "primary_url": "https://tile.loc.gov/storage-services/service/gmd/gmd3/g3300/g3300/ar010700.gif",
-      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/2/22/C._1735-1763_Europe_%28treaty_adjustments%29.jpg",
-      "source": "loc",
-      "verified": true
+      "primary_url": "https://archive.org/download/McGillLibrary-rbsc_lc_treaty-of-peace_lande00393-19908/page/n2.jpg",
+      "alt_url": "https://archive.org/download/bim_eighteenth-century_the-definitive-treaty-of_1763/page/n0.jpg",
+      "source": "ia",
+      "verified": true,
+      "fix_note": "Documented substitute: actual 1763 signatures page not obtainable online (UK NA SP 113/141 not digitized); both are title pages of verified 1763 London printings of the Definitive Treaty (two editions, two source libraries; same host)"
     },
     {
       "id": "doc.burke-conciliation-1775",
@@ -366,10 +377,11 @@
     {
       "id": "doc.washington-ohio-survey",
       "title": "Washington's Ohio land survey plat",
-      "primary_url": "https://tile.loc.gov/storage-services/service/gmd/gmd408/g4083/g4083w/la000686.gif",
-      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Plat_of_a_survey_of_2%2C314_acres_of_land%2C_being_the_first_large_bottom_on_the_east_side_of_the_Ohio_River%2C_3_or_4_miles_below_the_mouth%2C_a_portion_of_which_is_divided_into_17_lots_LOC_75690212.jpg",
+      "primary_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd389:g3893:g3893w:ct000358/full/pct:25/0/default.jpg",
+      "alt_url": "https://cdm16829.contentdm.oclc.org/iiif/2/p16829coll19:13/full/full/0/default.jpg",
       "source": "loc",
-      "verified": true
+      "verified": true,
+      "fix_note": "Washington's 1771 Ohio land survey plat (William Crawford survey); LOC annotated copy + Mount Vernon's copy of the same survey"
     },
     {
       "id": "doc.albany-plan-1754",
@@ -438,10 +450,11 @@
     {
       "id": "object.colonial-currency",
       "title": "Colonial paper currency",
-      "primary_url": "https://tile.loc.gov/storage-services/master/gdc/gdcebookspublic/20/20/71/90/21/2020719021/2020719021.gif",
-      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/US-Colonial_%28PA-115%29-Pennsylvania-18_Jun_1764.jpg",
-      "source": "loc",
-      "verified": true
+      "primary_url": "https://images.numismatics.org/collectionimages%2F00001899%2F0000%2F0000.999.29334.obv.noscale.jpg/full/full/0/default.jpg",
+      "alt_url": "http://www.masshist.org/database/images/MA17761117_1_lg.jpg",
+      "source": "ans",
+      "verified": true,
+      "fix_note": "Genuine Pennsylvania 5-pound colonial bill, May 1 1760 (Franklin & Hall era); alt is MA 16-shilling bill of credit 1776 engraved by Paul Revere (colonial-era paper money)"
     },
     {
       "id": "object.powder-horn",
@@ -486,18 +499,20 @@
     {
       "id": "scene.london-1760s",
       "title": "London street scene, 1760s",
-      "primary_url": null,
-      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/5/53/Pont_Neuf_engraving_by_William_Miller_after_Turner.jpg",
-      "source": "loc",
-      "verified": true
+      "primary_url": "https://images.collections.yale.edu/iiif/2/ycba:0330f99d-05e5-4159-bed7-f7dca4e8a952/full/!1600,1600/0/default.jpg",
+      "alt_url": "http://media.britishmuseum.org/media/Repository/Documents/2014_10/11_22/721d8dd8_45ea_4483_ab22_a3c1016f529b/mid_00709048_001.jpg",
+      "source": "yale",
+      "verified": true,
+      "fix_note": "Canaletto 'St. Paul's Cathedral' c.1754 (period London city view, not literal street scene); alt is Ludgate Street 1795 (c.30y later, genuine street scene)"
     },
     {
       "id": "scene.westminster-1760s",
       "title": "Westminster and the Houses of Parliament, 1760s",
-      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/England%2C_18th_century_-_Palace_of_Westminster_-_1925.602_-_Cleveland_Museum_of_Art.jpg",
-      "alt_url": "https://tile.loc.gov/storage-services/master/gdc/gdcebookspublic/20/20/71/90/21/2020719021/2020719021.gif",
-      "source": "wikimedia",
-      "verified": true
+      "primary_url": "https://openaccess-cdn.clevelandart.org/1925.602/1925.602_web.jpg",
+      "alt_url": "https://images.collections.yale.edu/iiif/2/ycba:bdaf099b-037f-4a47-86ed-62fb80eb94e3/full/!1600,1600/0/default.jpg",
+      "source": "cma",
+      "verified": true,
+      "fix_note": "Cleveland 'Palace of Westminster' 1706 hand-colored engraving; alt Samuel Scott 'View on the Thames with Westminster Bridge' 1743-44"
     },
     {
       "id": "scene.merchant-ship",
@@ -518,18 +533,20 @@
     {
       "id": "scene.fort-pitt-1763",
       "title": "Fort Pitt at the forks of the Ohio, 1763",
-      "primary_url": "https://tile.loc.gov/storage-services/service/gmd/gmd382/g3822/g3822f/ar130400.gif",
-      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/%22The_Indians_will_soon_be_here%22_-_Carliste%2C_4_July_1763.jpg",
-      "source": "loc",
-      "verified": true
+      "primary_url": "https://iiif.digitalcommonwealth.org/iiif/2/commonwealth%3Aft84g987m/full/max/0/default.jpg",
+      "alt_url": "https://archive.org/download/setofplansfortsi00rocq/page/n68.jpg",
+      "source": "leventhal",
+      "verified": true,
+      "fix_note": "Mary Ann Rocque 'A plan of the new fort at Pitts-Burgh or Du Quesne Novr. 1759' — Leventhal copy primary; IA scan of Univ. of Pittsburgh Darlington copy, leaf n68 visually confirmed as the Pitts-Burgh plan (U-Michigan IIIF rejected: 403 for downloader UA)"
     },
     {
       "id": "scene.fort-niagara",
       "title": "Fort Niagara",
-      "primary_url": null,
-      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/A_view_of_Niagara_Fort%2C_taken_by_Sir_William_Johnson%2C_on_the_25th_of_July_1759%2C_drawn_on_the_spot_in_1758_%28NYPL_NYPG94-F42-419821%29.tif",
-      "source": "loc",
-      "verified": true
+      "primary_url": "https://iiif.nypl.org/iiif/3/419820/full/!1600,1600/0/default.jpg",
+      "alt_url": "https://archive.org/download/setofplansfortsi00rocq/page/n30.jpg",
+      "source": "nypl",
+      "verified": true,
+      "fix_note": "NYPL is the exact 1759 Johnson 'View of Niagara Fort'; alt is Rocque 1765 'Plan of Fort Niagara, with its Environ'"
     },
     {
       "id": "scene.customs-wharf",
@@ -585,10 +602,11 @@
     {
       "id": "object.conestoga-wagon",
       "title": "A Conestoga wagon — named for the Conestoga Valley",
-      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/6/63/Conestoga_Wagon%2C_about_1840-1850_-_National_Museum_of_American_History_-_DSC06101.JPG",
-      "alt_url": null,
-      "source": "wikimedia",
-      "verified": true
+      "primary_url": "https://ids.si.edu/ids/deliveryService?id=SIA-74-1415-000002&max=2000",
+      "alt_url": "https://cdn.loc.gov/service/pnp/cph/3a20000/3a25000/3a25300/3a25345r.jpg",
+      "source": "si",
+      "verified": true,
+      "fix_note": "NMAH Conestoga wagon object photo via Smithsonian ids.si.edu; alt is LOC c1906 'Turnpike Schooner' Conestoga wagon photo (later photograph, genuine wagon)"
     },
     {
       "id": "map.iroquois-country",
