@@ -25,6 +25,8 @@ export interface PipelineContext {
   videoGen: 'ltx' | 'none';
   /** --agent: the director writes prompt files for external agents instead of calling Meta UI. */
   agent: boolean;
+  /** Director review/repair rounds answer with patches (changed shots only); --no-patches or DIRECTOR_PATCHES=0 turns it off. */
+  patches?: boolean;
   /** --draft: allow library geography that is not approved yet (samples; not for publishing). */
   draft: boolean;
   stages: PipelineStage[];
@@ -112,7 +114,7 @@ export function createContext(): PipelineContext {
   };
 
   return {
-    episode, mode, dryRun, force, full: flag('full'), videoGen: videoGen as 'ltx' | 'none', agent: flag('agent'), draft: flag('draft'), stages, cfg, work, dataDir,
+    episode, mode, dryRun, force, full: flag('full'), videoGen: videoGen as 'ltx' | 'none', agent: flag('agent'), patches: !flag('no-patches') && process.env.DIRECTOR_PATCHES !== '0', draft: flag('draft'), stages, cfg, work, dataDir,
     audioDir: join(ROOT, 'public', 'audio', episode),
     ttsDir: join(ROOT, 'tts', episode),
     publicDir: join(ROOT, 'public'),

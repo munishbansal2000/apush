@@ -243,10 +243,12 @@ export function actPrompt(index: number, outline: Outline, turns: PipelineTurn[]
 const ACT_CHECKS = `phrases verbatim from their turns, first shot in the first turn, cuts every 3-6 seconds, shot length limits, every image shot moves, zoom within each image's max zoom, only listed assets, map views and geo ids, text limits, at most one clip, custom explainers only for their exact event. ${COORDINATE_RULE}`;
 /** Same-chat review (Meta UI): returns only what it changes, as a patch onto the draft it just wrote. */
 export const ACT_REVIEW = `Switch roles: you are a skeptical senior editor. Re-check the shots you just wrote against every rule above: ${ACT_CHECKS}\n${PATCH_FORMAT}`;
+/** Same-chat review with patches turned off (--no-patches): the complete corrected act. */
+export const ACT_REVIEW_FULL = `Switch roles: you are a skeptical senior editor. Re-check the shots you just wrote against every rule above: ${ACT_CHECKS} Fix every problem silently and return ONLY the corrected JSON object {"shots": [...], "years": [...]}.`;
 /** Single-pass agents have no draft to patch: they self-check and answer with the complete act. */
 export const ACT_SELF_CHECK = `re-check your shots against every rule above (${ACT_CHECKS}), fix every problem, and answer with the COMPLETE JSON object {"shots": [...], "years": [...]}.`;
 /** What a single-pass agent is told instead of a same-chat follow-up. */
-export const selfCheckFor = (followup: string) => (followup === ACT_REVIEW ? ACT_SELF_CHECK : followup);
+export const selfCheckFor = (followup: string) => (followup === ACT_REVIEW || followup === ACT_REVIEW_FULL ? ACT_SELF_CHECK : followup);
 
 /** Structural checks on one act before assembly (everything else is checked on the merged plan). */
 export function validateAct(raw: unknown, index: number, outline: Outline): {act?: ActOutput; issues: string[]} {
@@ -313,6 +315,8 @@ export interface DirectorInputs {
   catalog: CatalogEntry[];
   maps: MapData;
   previousOutline?: Outline;
+  /** Review and repair answer with patches (default); false asks for complete acts every time. */
+  patches?: boolean;
 }
 
 export interface DirectorLog {stage: string; source: string; issues: string[]}
@@ -403,6 +407,7 @@ export function directDocumentary(io: DirectorIO, input: DirectorInputs, maxRepa
   if (!outline) return {log};
 
   // 2. Acts (each validated structurally), then 3. assemble + resolve, 4. repair only failing acts.
+  const patches = input.patches ?? true;
   const prompts = outline.acts.map((_, i) => actPrompt(i, outline!, input.turns, input.timing.durations, input.catalog, input.maps));
   const acts: (ActOutput | undefined)[] = [];
   /** Latest full answer per act, valid or not: what a repair patch applies to. */
@@ -410,7 +415,7 @@ export function directDocumentary(io: DirectorIO, input: DirectorInputs, maxRepa
   const sources: string[] = [];
   const problems = new Map<number, string[]>();
   // Ask for every act before reading any answer, so external agents can work on all acts in parallel.
-  const asked = outline.acts.map((_, i) => ({name: `doc-act-${String(i + 1).padStart(2, '0')}`, path: io.meta(`doc-act-${String(i + 1).padStart(2, '0')}`, prompts[i], [], ACT_REVIEW)}));
+  const asked = outline.acts.map((_, i) => ({name: `doc-act-${String(i + 1).padStart(2, '0')}`, path: io.meta(`doc-act-${String(i + 1).padStart(2, '0')}`, prompts[i], [], patches ? ACT_REVIEW : ACT_REVIEW_FULL)}));
   const waiting = asked.filter(a => !a.path).map(a => a.name);
   if (waiting.length) return {outline, log, pending: waiting};
   const take = (i: number, path: string, stage: string, base?: ActOutput) => {
@@ -441,7 +446,9 @@ export function directDocumentary(io: DirectorIO, input: DirectorInputs, maxRepa
     const repairs = [...problems].map(([i, lines]) => {
       const name = `doc-act-${String(i + 1).padStart(2, '0')}-repair-${attempt + 1}`;
       const previous = latest[i];
-      const ask = previous
+      const ask = previous && !patches
+        ? `YOUR PREVIOUS ANSWER FOR THIS ACT HAD THESE PROBLEMS; return the corrected JSON only:\n${lines.map(l => `- ${l}`).join('\n')}\n\nPREVIOUS ANSWER:\n${JSON.stringify(previous)}`
+        : previous
         ? `YOUR PREVIOUS ANSWER FOR THIS ACT HAD THESE PROBLEMS:\n${lines.map(l => `- ${l}`).join('\n')}\n\nPREVIOUS ANSWER (index: shot):\n${indexedAct(previous)}\n\nFix only what the problems need. ${PATCH_FORMAT}\nIf most shots must change, you may instead return the complete corrected {"shots": [...], "years": [...]}.`
         : `YOUR PREVIOUS ANSWER FOR THIS ACT HAD THESE PROBLEMS:\n${lines.map(l => `- ${l}`).join('\n')}\n\nReturn the COMPLETE corrected JSON object {"shots": [...], "years": [...]} only.`;
       return {i, name, path: io.meta(name, `${prompts[i]}\n\n${ask}`)};

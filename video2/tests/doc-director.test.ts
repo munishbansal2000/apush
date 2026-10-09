@@ -4,7 +4,7 @@ import {tmpdir} from 'node:os';
 import {join} from 'node:path';
 import {describe, it} from 'node:test';
 import {parseTranscript, type PipelineTurn} from '../tools/pipeline-core';
-import {ACT_ASSET_LIMIT, ACT_REVIEW, ACT_SELF_CHECK, actPrompt, assetsForAct, buildCatalog, customsForAct, directDocumentary, selfCheckFor, validateOutline, type ActOutput, type Outline} from '../tools/pipeline/doc-director';
+import {ACT_ASSET_LIMIT, ACT_REVIEW, ACT_REVIEW_FULL, ACT_SELF_CHECK, actPrompt, assetsForAct, buildCatalog, customsForAct, directDocumentary, selfCheckFor, validateOutline, type ActOutput, type Outline} from '../tools/pipeline/doc-director';
 import {applyActPatch, isPatch} from '../tools/pipeline/act-patch';
 import type {GeoFeature, PlanShot, ShotPlan} from '../tools/pipeline/shots';
 
@@ -207,6 +207,24 @@ describe('review and repair patches (only changed shots come back)', () => {
     assert.deepEqual(calls.slice(-1), ['doc-act-02-repair-1']);
     assert.match(r.log.find(l => l.stage === 'act 2')!.issues.join('\n'), /no earlier answer to apply it to/);
     assert.equal(selfCheckFor(ACT_REVIEW), ACT_SELF_CHECK);
+    assert.equal(selfCheckFor(ACT_REVIEW_FULL), ACT_SELF_CHECK);
     assert.doesNotMatch(ACT_SELF_CHECK, /"replace"/);
+  });
+
+  it('--no-patches: the review and repair ask for complete acts', () => {
+    const prompts: Record<string, string> = {};
+    const broken = {shots: act2.shots.map((s, i) => (i === 1 ? {...s, at: {turn: s.at.turn, phrase: 'words nobody said'}} : s))};
+    const answers: Record<string, unknown> = {'doc-outline': outline, 'doc-act-01': act1, 'doc-act-02': broken, 'doc-act-02-repair-1': act2};
+    const dir = mkdtempSync(join(tmpdir(), 'v2-nopatch-'));
+    const io = {meta: (name: string, prompt: string, _a?: string[], followup?: string) => {
+      prompts[name] = `${prompt}\n${followup ?? ''}`;
+      writeFileSync(join(dir, `${name}.json`), JSON.stringify(answers[name]));
+      return join(dir, `${name}.json`);
+    }};
+    const r = directDocumentary(io, {episode: 'u3e1', turns, timing, words: {}, options, catalog, maps, patches: false});
+    assert.ok(r.plan);
+    assert.doesNotMatch(prompts['doc-act-01'], /"replace"/);
+    assert.match(prompts['doc-act-01'], /return ONLY the corrected JSON object/);
+    assert.doesNotMatch(prompts['doc-act-02-repair-1'], /"replace"/);
   });
 });
