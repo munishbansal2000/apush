@@ -1,14 +1,14 @@
 # U1-E6 — Maya + Jay (Fish Audio)
-# Episode 6: Labor Systems. ~12 min experienced (1,832 words speech + 81s pauses)
+# Episode 6: Labor Systems. ~13 min experienced (1,832 words speech + 160s pauses)
 # Draft v7: fleet repair pass (2026-10-07) — box-1 and box-4 traps converted to
 # live beats (Jay voices the misconception, Maya catches him), box-3 redundant
 # trap proclamation cut, tag density 85.7% -> ~35%, F6/F7/F8/F5 accuracy fixes.
 # CED 1.5, 1.6. Study Buddies format (Maya + Jay).
-# Read note: Maya tracks four boxes on her episode sheet and checks each one off in her own
-# voice as the episode earns it. [8-second pause] and [10-second pause] marks are production
-# notes for real silence in prediction beats; [15-second pause] and [20-second pause] marks
-# are real silence for the CER self-test questions; [5-second pause] is the fast bonus
-# question; [2-second pause] marks are the rapid-fire beat in the lightning round — they
+# Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Maya tracks four boxes on her episode sheet and checks each one off in her own
+# voice as the episode earns it. [10-second pause] and [10-second pause] marks are production
+# notes for real silence in prediction beats; [10-second pause] and [10-second pause] marks
+# are real silence for the CER self-test questions; [10-second pause] is the fast bonus
+# question; [10-second pause] marks are the rapid-fire beat in the lightning round — they
 # never go to the voice. The em dash in the closing tagline is a held beat:
 # leave a full breath between Maya's "Four systems, one hunger —" and Jay's landing line.
 # Do not rush it. Strip this header, the read note, and all [pause] tags before TTS;
@@ -47,7 +47,7 @@ Maya: Two things that matter. The encomienda dies with its holder: no passing it
 
 Maya: Your turn. You're an encomendero in Peru, 1544. Your whole fortune is a grant that dies with you now. Your kids get nothing. What do you do?
 
-[8-second pause]
+[10-second pause]
 
 Maya: You fight. Gonzalo Pizarro raised an army of encomenderos. The crown sent its first viceroy of Peru, Blasco Núñez Vela, to enforce the laws. Pizarro's rebels met him at Añaquito in January 1546, and killed the king's viceroy on the field.
 
@@ -151,25 +151,25 @@ Maya: Lightning round. One hunger, four systems. I name the trigger, you answer.
 
 Maya: [energetic] The crown grants a colonist a town's labor.
 
-[2-second pause]
+[10-second pause]
 
 Jay: Encomienda. The grant.
 
 Maya: [energetic] The crown takes the assigning power back.
 
-[2-second pause]
+[10-second pause]
 
 Jay: Repartimiento. The draft.
 
 Maya: [energetic] The towns keep emptying, so Spain looks across the ocean.
 
-[2-second pause]
+[10-second pause]
 
 Jay: Enslaved African labor. The Middle Passage.
 
 Maya: [energetic] The legal ladder, and the estates where the debt never clears.
 
-[2-second pause]
+[10-second pause]
 
 Jay: The casta system. And the hacienda.
 
@@ -199,25 +199,25 @@ Maya: Three questions, AP-shaped. Say your answer before I give it.
 
 Maya: One, and it comes with a source. A ship's log from an Atlantic crossing lists four hundred captives boarded and three hundred forty-eight landed. A historian cites this log to make one point about the Middle Passage. What's the point?
 
-[20-second pause]
+[10-second pause]
 
 Maya: The dying was built into the business. Fifty-two of four hundred died, about thirteen percent, right on the average. The traders sailed anyway. The ships kept coming, so the trade kept working. The mortality didn't stop it, because it was expected.
 
 Maya: Two. The crown passed the New Laws in 1542. By the end of the decade the inheritance ban was dead. Why did the crown back down?
 
-[15-second pause]
+[10-second pause]
 
 Maya: The encomenderos rebelled, and the crown chose Peru over the reform. Gonzalo Pizarro raised an army, and the king's own viceroy was killed at Añaquito in 1546. Enforcing the laws cost a viceroy's life, so the crown dropped the ban and kept the colony.
 
 Maya: Three. A 1560s record shows a crown official assigning village workers to a silver mine for one month, then sending them home. Encomienda or repartimiento, and what detail decides it?
 
-[15-second pause]
+[10-second pause]
 
 Maya: Repartimiento. A crown official does the assigning, and the workers go home after a month. The encomienda handed a colonist the town's labor outright — the draft is the crown renting it by rotation.
 
 Maya: One more, fast. A peon owes the hacienda a debt he can never repay. Slave or free?
 
-[5-second pause]
+[10-second pause]
 
 Maya: Free, technically. The debt's the chain.
 

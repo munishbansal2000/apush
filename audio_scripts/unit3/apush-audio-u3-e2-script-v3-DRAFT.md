@@ -1,6 +1,6 @@
 # U3-E2 — Maya + Marcus (Fish Audio)
 # Episode 19: Taxation Without Representation. Eleven and a half minutes experienced (1,881 spoken words + 63s scripted pauses = 11.5 min at 180 WPM).
-# Read note: Maya tracks three boxes on her episode sheet: the Stamp Act, virtual representation, and the Declaratory Act. [9-second pause] marks are production silence in the prediction beats; [15-second pause] marks are production silence in the CER self-test — they never go to the voice. Strip this header and the read note before TTS; convert pause tags to silence. The em dash in the closing tagline is a held beat: leave a full breath between Marcus's setup line and Maya's landing line. Do not rush it. Self-test model answers follow claim-evidence-reasoning logic in natural phrasing; no spoken labels (per the user's 2026-10-06 ruling: TTS reads everything literally).
+# Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Maya tracks three boxes on her episode sheet: the Stamp Act, virtual representation, and the Declaratory Act. Strip this header and the read note before TTS; convert pause tags to silence. The em dash in the closing tagline is a held beat: leave a full breath between Marcus's setup line and Maya's landing line. Do not rush it. Self-test model answers follow claim-evidence-reasoning logic in natural phrasing; no spoken labels (per the user's 2026-10-06 ruling: TTS reads everything literally).
 # Pronunciation: GREN-vil (Grenville), OH-tiss (Otis), ROCK-ing-um (Rockingham), deh-KLAIR-uh-tor-ee (Declaratory), non-im-por-TAY-shun (nonimportation)
 
 Maya: [professional broadcast tone] Last time: the bill came due. The Sugar Act landed and the smuggling crackdown began. Thirteen colonies got London's message: the free ride is over. Now comes the tax that touched everything — your newspaper, your diploma, even your dice. Three boxes on your sheet: the Stamp Act, virtual representation, and the Declaratory Act. Circle the ones you couldn't explain right now. Eleven and a half minutes, and you'll land all three.
@@ -59,7 +59,7 @@ Marcus: [firm] Common mix-up. Credit the boycott, not just the bricks. British m
 
 Maya: Your turn. The boycott is biting, and British merchants are losing money fast. Parliament hears two groups: colonists three thousand miles away who can't vote, and London merchants who can walk into Parliament's lobby any afternoon. Who does Parliament listen to?
 
-[9-second pause]
+[10-second pause]
 
 Marcus: The merchants. Follow the money Parliament can hear. The boycott didn't just starve the treasury. It recruited London's own businessmen to the colonial cause.
 
@@ -103,7 +103,7 @@ Marcus: They did. Then word of the Declaratory Act arrived, and it sobered the p
 
 Maya: Your turn. You've just watched Parliament repeal your tax, then declare it can tax you in all cases whatsoever. Do you celebrate the win, or worry about the fine print?
 
-[9-second pause]
+[10-second pause]
 
 Marcus: Both. Celebrate the repeal, then read the fine print twice. "In all cases whatsoever" means Parliament was claiming the next tax as its right. The smart colonists heard a promise and a threat in the same afternoon.
 
@@ -129,19 +129,19 @@ Marcus: All three.
 
 Maya: Three questions, AP-shaped. Say your answer before I give it. One: a stimulus hands you the Stamp Act Congress's Declaration of Rights and Grievances. Only representatives chosen by the colonists can tax them. What principle is the Congress asserting, and what line did Parliament invent to answer it?
 
-[15-second pause]
+[10-second pause]
 
 Maya: Actual representation. Taxation needs consent through a body you elected. Twenty-seven delegates from nine colonies drew it up in October sixty-five, right after the Stamp Act, and the logic is that Parliament's virtual representation line was invented to answer this very cry: a London MP who never faced colonial voters can't consent for a Boston printer. The consent has to come from our side.
 
 Maya: Two: was the Stamp Act fight about money?
 
-[15-second pause]
+[10-second pause]
 
 Maya: No. It was about who decides. The Sugar Act had actually lowered a duty and the colonies still protested, and the Stamp Act's opponents aimed their fire at Parliament's authority rather than the price. The slogan put representation first. Nobody marched demanding cheaper stamps.
 
 Maya: Three: a stimulus prints this line from seventeen sixty-six: Parliament asserts its right to bind the colonies "in all cases whatsoever." What did this do to the colonists' victory?
 
-[15-second pause]
+[10-second pause]
 
 Maya: It hollowed the victory out. The Declaratory Act came linked to the repeal, and the repeal removed one tax while the Act kept Parliament's claim to tax at will. The principle the colonists fought over stayed lost. They won the battle and lost the argument.
 

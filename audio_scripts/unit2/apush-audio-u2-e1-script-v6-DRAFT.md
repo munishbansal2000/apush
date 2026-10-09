@@ -1,5 +1,5 @@
 # U2-E1 — Study Buddies: Maya + Jay (Fish Audio)
-# Episode 1: Four Ways to Want a Continent. ~12 min experienced (1,962 words speech + 75s pauses)
+# Episode 1: Four Ways to Want a Continent. ~12.5 min experienced (1,962 words speech + 90s pauses)
 # Draft v6 (2026-10-07): fleet repair pass over v5 — live traps replacing announcer-voice mistake
 # devices (B2), seigneur passage-promise claim cut per fail-closed (B3), Flushing Remonstrance
 # causality fixed to the book (M1), New France population hedged to Tier-1 (M2), Jesuit Relations
@@ -9,9 +9,9 @@
 # recap keeps one earned chain (M9), direction density 81% to ~40% per §9 (B1). Direction tags never
 # change words; every dialogue word edit re-ran the full gate check (12/13 — G9 is a documented
 # gate artifact: the 3 flagged lines are the "X, not Y" form, not the banned "Not X, just Y" form).
-# Read note: Maya drives the quiz; Jay retrieves, guesses, and gets corrected. [10-second pause] marks are
-# production notes for real silence in prediction beats; [15-second pause] and [20-second pause] marks are
-# real silence for the CER self-test questions; [5-second pause] is the fast bonus — they never go to the voice.
+# Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Maya drives the quiz; Jay retrieves, guesses, and gets corrected.
+# production notes for real silence in prediction beats; [10-second pause] and [10-second pause] marks are
+# real silence for the CER self-test questions; [10-second pause] is the fast bonus — they never go to the voice.
 # Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence.
 # The em dash in the closing tagline is a held beat: leave a full breath between Jay's setup line and Maya's
 # landing line. Do not rush it. The ## Sources section is production-only, never spoken.
@@ -162,25 +162,25 @@ Maya: I did. Sixteen stuck. Three questions, AP-shaped. Say your answer before I
 
 Maya: One. A 1657 petition from English settlers in Flushing, New Netherland, asks Stuyvesant to let Quakers worship. What's the point of this source?
 
-[20-second pause]
+[10-second pause]
 
 Maya: The Dutch ran a company colony, not a godly one — English settlers petitioning a Dutch governor for somebody else's worship, in a town already full of other languages and peoples. The logic is commercial: a company needs customers more than it needs conformity. Diversity served the trade.
 
 Maya: Two. Why did New France stay thin while the English colonies filled up?
 
-[15-second pause]
+[10-second pause]
 
 Maya: The French model discouraged settlement. Huguenots barred, crown control with no assembly, a fur economy that needed no farmers. Nothing in the machine rewarded bringing families.
 
 Maya: Three. The long essay asks you to compare Spanish and English colonization. The move?
 
-[15-second pause]
+[10-second pause]
 
 Maya: Collide, don't list — Spain's encomienda folded Native peoples into its labor machine, and England's headright rewarded importing workers onto Native land. Extraction needs labor, settlement needs land: the collision.
 
 Maya: One more, fast. A 1629 company charter offers feudal estates for shipping fifty settlers. Which empire, and what's the system called?
 
-[5-second pause]
+[10-second pause]
 
 Maya: The Dutch. The patroon system. The comparison essay is yours now. Four boxes, one collision. Check your boxes. Next time: a swamp in Virginia. One hundred five land in 1607, five hundred become sixty, and one weed changes everything.
 

@@ -1,7 +1,7 @@
 # U2-E6 — Maya + Marcus (Fish Audio)
-# Episode 6: The Great Awakening. ~12 min experienced (1,889 words speech + 75s pauses)
+# Episode 6: The Great Awakening. ~11.5 min experienced (1,889 words speech + 60s pauses)
 # Draft v7 (2026-10-07): fleet repair of v6 per audit findings (3 blockers, 4 minors). B1: direction density 83%->36% — all 26 [measured] + 17 [conversational] workhorses stripped; catalog beats kept (cold-open/closer broadcast, takeaways confident, trap corrections firm, grim serious, genuine questions curious, recap fumble sheepish, closer intrigued) + 5 earned beats ([firm] on the "Backwards" correction, [warm tone] Phoenix memory, [dry] skeptic line, [deadpan] TikTok beat, [playful] fields/Junto contrast). B2: 4 antitheses->2 — orphanage sentence cut (M4b fail-closed, not reworded); spider-tip reworded; "live debate, not a fact" + "the weighing, not the verdict" kept. B3: all four common-mistake proclamations rebuilt as live traps — Maya commits each classic error in flow, Marcus corrects in the next turn with a strong marker (Common mix-up / Not quite / Common mistake / Not exactly); corrections verbatim to v6's teaching; all four G12-exempt. M1: Franklin exam-tip opener re-templated. M2: "first celebrity" attributed to Thomas S. Kidd in dialogue. M3: "some/others" historiography grounded as named debate positions. M4: Princeton hedged ("usually credited"); orphanage advice cut; "press printed the sermons" cut — all per fail-closed. Replaces v6.
-# Read note: Maya tracks four boxes on her episode sheet; one mid-episode checkoff is her voice (the box-one line — boxes two and three land as unlabeled summary lines), the full recap is the check layer. [10-second pause] marks are production notes for real silence in prediction beats; [15-second pause] and [20-second pause] marks are real silence for the CER self-test questions; [5-second pause] is the fast bonus — they never go to the voice. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence. The em dash in the closing tagline is a held beat: a full breath between Maya's lead and Marcus's landing. Do not rush it. Disclosure: the Edwards line in the self-test is his actual wording, from the 1741 printed sermon. Franklin's voice-range figure is his own computation, from his Autobiography. The ## Sources section is production-only, never spoken.
+# Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Maya tracks four boxes on her episode sheet; one mid-episode checkoff is her voice (the box-one line — boxes two and three land as unlabeled summary lines), the full recap is the check layer. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence. The em dash in the closing tagline is a held beat: a full breath between Maya's lead and Marcus's landing. Do not rush it. Disclosure: the Edwards line in the self-test is his actual wording, from the 1741 printed sermon. Franklin's voice-range figure is his own computation, from his Autobiography. The ## Sources section is production-only, never spoken.
 # Pronunciation: HWIT-field (Whitefield), ED-wards (Edwards), EN-field (Enfield), HOON-toh (Junto), AWL-muh-nak (Almanack), DEE-iz-um (deism), north-HAMP-tun (Northampton)
 
 Maya: [professional broadcast tone] Last time: mercantilism, the Navigation Acts, and salutary neglect. London's money theory, and the loopholes the colonies grew rich in. As promised: a young English preacher named Whitefield, an open field, and crowds that came to weep. Four boxes this time: Whitefield, Edwards, Franklin's counterweight, and the splits the revival left behind. Circle the ones you couldn't explain. Twelve minutes, starting now.
@@ -150,25 +150,25 @@ Maya: Three questions, AP-shaped. Say your answer before I give it.
 
 Maya: One. The stimulus is Edwards, 1741, and these are his actual words: "The God that holds you over the pit of hell, much as one holds a spider, or some loathsome insect, over the fire." Who's preaching, and what's the point of this passage?
 
-[15-second pause]
+[10-second pause]
 
 Maya: Jonathan Edwards, at Enfield, Connecticut, in July 1741 — the spider image, the pit of hell, the famous sermon title. The point is the method, not the theology: terror as conversion, the Awakening's emotional style doing what the cold, formal churches couldn't.
 
 Maya: Two. Why did the Awakening split churches into New Lights and Old Lights?
 
-[15-second pause]
+[10-second pause]
 
 Maya: The split was a fight over authority — itinerant preachers drew crowds without invitations, and converts claimed their own experience outranked the old ministers. Once feeling counts as proof, the old guard's rules stop working, and the church divides.
 
 Maya: Three. How far did the Great Awakening go toward causing the American Revolution?
 
-[20-second pause]
+[10-second pause]
 
 Maya: Argue both sides. For: colonists learned to organize and defy the established church, in a shared experience from New England to Georgia. Against: the fires burned out decades before 1776, and plenty of patriot leaders were never awakened. The graders want the weighing, not the verdict.
 
 Maya: One more, fast. The Awakening and the Enlightenment both challenged authority. Which one worked through the heart, and which through the head?
 
-[5-second pause]
+[10-second pause]
 
 Maya: The Awakening through the heart, the Enlightenment through the head.
 

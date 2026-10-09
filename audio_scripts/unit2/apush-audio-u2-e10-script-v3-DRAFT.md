@@ -1,7 +1,7 @@
 # U2-E10 — Story Mode: Marcus-led, Maya interjects
 # Episode 10: Jamestown & the Chesapeake. Twelve minutes experienced (1,953 spoken words + 73s scripted pauses = 12.1 min at 180 WPM).
 # Draft v3 (2026-10-07): fleet repair pass on v2 — B1 antithesis budget 3→2 (dropped the repeated "not by births" in self-test Q1), B2 all four "Common mistake" proclamations converted to live traps (Maya commits, Marcus catches; box three's was already live, proclamation deleted), M1 "Three out of four" → "More than three out of four" (book hedges), M2 charter recipient hedged to the Calvert family (Tier-1 split documented), M3 footer disclosure corrected (dialogue was never hedged), M4 tribute re-attributed to the 1677 treaty (NPS), M5 two Maya echo-questions rewritten as genuine questions. Registry F-U2-066/F-U2-067 corrected same day.
-# Read note: Maya tracks four boxes on her episode sheet and checks each one off in her own voice as the episode earns it, with one mid-episode checkoff and the full recap as the check layer. [10-second pause] and [8-second pause] marks are production notes for real silence in prediction beats; [15-second pause] and [20-second pause] marks are real silence for the CER self-test questions; [5-second pause] is the fast bonus — they never go to the voice. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence. The em dash in the closing tagline is a held beat: a full breath between Marcus's lead and Maya's landing. Do not rush it. No verbatim historical quotes are used; all dates and figures are hedged per the fact standards. The ## Sources section is production-only, never spoken.
+# Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Maya tracks four boxes on her episode sheet and checks each one off in her own voice as the episode earns it, with one mid-episode checkoff and the full recap as the check layer. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence. The em dash in the closing tagline is a held beat: a full breath between Marcus's lead and Maya's landing. Do not rush it. No verbatim historical quotes are used; all dates and figures are hedged per the fact standards. The ## Sources section is production-only, never spoken.
 # Pronunciation: POW-uh-tan (Powhatan); poh-kuh-HON-tuhs (Pocahontas); oh-puh-chan-kuh-NOH (Opechancanough); KAL-vert (Calvert); SES-ul (Cecil).
 
 Maya: [professional broadcast tone] Last time: the whole unit in one sitting, ten questions, 1607 to 1763, no new material. This time: back to the Chesapeake, where English America started. Not the founding, you know that story. The society tobacco built on top of it. Four boxes: the killing ground, rivers not towns, the planter class, and the legend. Circle the ones you couldn't explain right now. Twelve minutes.
@@ -86,7 +86,7 @@ Marcus: [measured] Keep the name and the river. Lose almost everything else. Tha
 
 Maya: Your turn. You're Smith in 1624. Your colony's founding is famous, you're selling a book, and Pocahontas is dead. What goes in the new chapter?
 
-[8-second pause]
+[10-second pause]
 
 Maya: The rescue. The story that makes you the hero of your own book.
 
@@ -120,25 +120,25 @@ Maya: Three questions, AP-shaped. Say your answer before I give it. On the long 
 
 Maya: One. For most of the 1600s, the Chesapeake grew by immigration. Why?
 
-[15-second pause]
+[10-second pause]
 
 Maya: Death outran birth — malaria, dysentery, and typhoid cut roughly ten years off a newcomer's life, and the migration was mostly young men, roughly six to one in 1650. High death plus few women means few families, so the population could only grow by fresh boats.
 
 Maya: Two. The stimulus is a passage from Smith's Generall Historie, 1624, describing Pocahontas saving his life. A historian wants to use it as evidence of what happened in 1607. What's the problem?
 
-[20-second pause]
+[10-second pause]
 
 Maya: It's Smith's own late telling, not a neutral record — the rescue appears in none of his earlier accounts; it shows up in 1624, roughly seventeen years later, when he's selling a book. Read the author before the story: historians still split on whether he invented it or misunderstood a ritual.
 
 Maya: Three. Contrast the Chesapeake and New England in one move each: why did the Chesapeake scatter along rivers while New England clustered in towns?
 
-[15-second pause]
+[10-second pause]
 
 Maya: The crop built the map — tobacco needed fresh soil and river frontage, and the headright stacked land onto the importers; New England's covenant towns centered on the meetinghouse. The land system made the settlement pattern: dispersed plantations here, clustered towns there.
 
 Maya: One more, fast. Maryland, 1649: what law, and who was it really for?
 
-[5-second pause]
+[10-second pause]
 
 Maya: The Act of Toleration: worship protected for Christians. Really for the Catholics, already outnumbered in their own refuge.
 

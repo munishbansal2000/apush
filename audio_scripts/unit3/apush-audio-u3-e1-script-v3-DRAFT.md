@@ -1,6 +1,6 @@
 # U3-E1 — Maya + Marcus (Fish Audio)
 # Episode 18: The Bill Comes Due. Eleven-and-a-half minutes experienced (1,882 spoken words + 63s scripted pauses = 11.5 min at 180 WPM).
-# Read note: Maya tracks three boxes on her episode sheet: the end of salutary neglect, the Proclamation Line of 1763, and Pontiac's Rebellion. [9-second pause] marks are production silence in the prediction beats; [15-second pause] marks are production silence in the CER self-test — they never go to the voice. Strip this header and the read note before TTS; convert pause tags to silence. The em dash in the closing tagline is a held beat: leave a full breath between Marcus's setup line and Maya's landing line. No verbatim historical quotes in this episode — the Proclamation's Native-land promise is paraphrased, not quoted. Strip this header and the read note before TTS.
+# Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Maya tracks three boxes on her episode sheet: the end of salutary neglect, the Proclamation Line of 1763, and Pontiac's Rebellion. Strip this header and the read note before TTS; convert pause tags to silence. The em dash in the closing tagline is a held beat: leave a full breath between Marcus's setup line and Maya's landing line. No verbatim historical quotes in this episode — the Proclamation's Native-land promise is paraphrased, not quoted. Strip this header and the read note before TTS.
 # Pronunciation: PON-tee-ak (Pontiac), OT-uh-wuh (Ottawa), nee-OH-lin (Neolin), GREN-vil (Grenville), ap-uh-LAY-chun (Appalachian), AM-urst (Amherst), gayj (Gage), kon-uh-STOH-guh (Conestoga)
 
 Maya: [professional broadcast tone] Last time: two centuries of English colonies: New England, the middle colonies, the South. This time those colonies stop arguing with each other, and start arguing with London. 1763. Britain's won the biggest war of the century, and the prime minister opens the books and turns pale. Three boxes on your sheet: the end of salutary neglect, the Proclamation Line of 1763, and Pontiac's Rebellion. Circle the ones you couldn't explain right now. Eleven and a half minutes, and you'll land all three.
@@ -37,7 +37,7 @@ Maya: [sheepish] Box one, done. But the frontier's already on fire.
 
 Maya: Your turn. London's staring at a burned frontier and an empty treasury. Cheaper move: draw a line and freeze everyone east, or pour more soldiers west? Which one buys time?
 
-[9-second pause]
+[10-second pause]
 
 Marcus: The line. Always the line, if you're the one paying. London drew it. The Proclamation of 1763: a line along the crest of the Appalachians, and no colonial settlement past it. The official reason, buried in the dry language: London didn't want another frontier war, or the cost of fighting one. It wanted the fur trade profits to keep flowing. A second frontier war would have cost more than an empty treasury could bear. Triage, not revenge. Cheap beats fair when the treasury's empty.
 
@@ -65,7 +65,7 @@ Maya: [confident tone] Tip for the test. If a stimulus hands you the Proclamatio
 
 Maya: [speaking slowly] Your turn again. London leaves roughly ten thousand soldiers in America. Three people hear that news: a minister in London, a settler in Pennsylvania, a British officer. Who sleeps best?
 
-[9-second pause]
+[10-second pause]
 
 Marcus: The officer: he's employed. The minister: the frontier's covered, cheaply. And the settler? He hears boots in peacetime and does new math. Officially, to enforce the line and keep a burning frontier quiet. Ask a colonist in Boston and you'd get a third answer: us. An army that expensive, sitting in peacetime, starts to look like it's there to police the colonists.
 
@@ -117,19 +117,19 @@ Marcus: All three.
 
 Maya: Three questions, AP-shaped. Say your answer before I give it. One: a stimulus prints the Proclamation's promise that Native nations would be left undisturbed in their reserved lands, and asks what situation produced it. Make your case.
 
-[15-second pause]
+[10-second pause]
 
 Maya: The Proclamation was London's cheap answer to Pontiac's Rebellion: it came in response to the outbreak, drawing a settlement line through the Appalachians. With the treasury empty, freezing settlement west cost less than fighting another frontier war. Triage won because the treasury was empty.
 
 Maya: Two: most significant effect of the Seven Years' War — the debt, the territory, or the broken trust?
 
-[15-second pause]
+[10-second pause]
 
 Maya: The broken trust: the debt was a policy problem that later governments managed, and the territory stayed British. But Britain started treating the colonies like a problem to be managed, and the colonies started seeing Britain as a threat to their freedom. That never fully healed, and it's the crack every later crisis widens.
 
 Maya: Three: an SAQ asks what changed after 1763 that pushed Pontiac's alliance to war. Make your case.
 
-[15-second pause]
+[10-second pause]
 
 Maya: The British replaced French diplomacy with soldiers: Amherst ended the gift ceremonies the French had used, and British troops occupied the French forts. The forts stopped being a trading partner's posts and became symbols of a new order, so they were the first targets.
 

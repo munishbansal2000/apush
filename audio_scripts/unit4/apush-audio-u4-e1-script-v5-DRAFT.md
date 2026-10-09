@@ -3,7 +3,7 @@
 # Thirteen and a half minutes experienced runtime (165 WPM + 61s scripted pauses).
 # Script v5 DRAFT — fleet-repair pass (2026-10-08): tag density 82%→~10%, 3 live traps, overclaim fix, all 7 feed lines reworked, checkoffs to Maya, antitheses ≤2, CER-label word removed, Northwest Passage qualified, "begged Congress" downgraded, Tier-2 pins resolved (5 verified, 4 hedged), cold open trimmed.
 # v4 read for topic/version continuity (Spain's protest, three-flags handover, boundary dispute, Adams–Onís, France's claim vs. Native land) — prose reworked per repair findings.
-# Read note: Maya tracks four boxes on her episode sheet; the episode earns each one through plain topic transitions, and she checks them off in her own voice in the recap and the closing. The pause tags used are [8-second pause] and [15-second pause] — bracketed second counts marking real silence for the self-test and prediction beats. They never go to the voice. The bonus self-test ("One more, fast.") is a deliberate labeled exception: no pause, by design.
+# Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Maya tracks four boxes on her episode sheet; the episode earns each one through plain topic transitions, and she checks them off in her own voice in the recap and the closing. They never go to the voice. The bonus self-test ("One more, fast.") is a deliberate labeled exception: no pause, by design.
 # Pronunciation: Toussaint Louverture (too-SAN loo-ver-TOOR), Saint-Domingue (san doh-MANG), Talleyrand (TAL-ee-rand), Fort de Joux (for duh ZHOO), Sacagawea (sak-uh-juh-WEE-uh), Adams–Onís (ah-dahms oh-NEES)
 # Tagline note: held breath on the em-dash in the closer — do not rush it.
 # Sources footer lists what Tier 1 + Tier 2 could and could not verify.
@@ -28,7 +28,7 @@ Marcus: Closed the right. Western farmers panicked, and war fever ran in the wes
 
 Maya: Your turn. Jefferson's got no real army and no money for a fight, while the West is screaming for one. You're Jefferson. Threaten war, send troops, or try something quieter? Eight seconds.
 
-[8-second pause]
+[10-second pause]
 
 Marcus: He did the quiet thing. Sent an envoy to buy New Orleans. Not conquer it. Buy it. For a president elected arguing against big federal power plays, that was the small-government answer to a big problem.
 
@@ -72,7 +72,7 @@ Marcus: Then Napoleon's foreign minister, Talleyrand, stunned them. The standard
 
 Maya: Your turn. Their orders: New Orleans, nothing more. Talleyrand's offering an empire for fifteen, and Napoleon could change his mind any day. Sign or wait? Eight seconds.
 
-[8-second pause]
+[10-second pause]
 
 Marcus: They signed. The treaty was dated April 30, 1803: fifteen million dollars, mostly U.S. bonds plus debts France owed Americans, for about 828,000 square miles. Around three cents an acre. One signature, and the country had doubled.
 
@@ -164,7 +164,7 @@ Maya: Box four: what the purchase set in motion. Lewis and Clark turned mapping 
 
 Maya: Three questions, AP-shaped. Say your answer before I give it. First: a historian claims the Haitian Revolution was the decisive cause of the Louisiana Purchase. Does the evidence support that?
 
-[15-second pause]
+[10-second pause]
 
 Maya: Yes. Without the disaster in Saint-Domingue, Napoleon keeps his empire dream and Louisiana stays French. The war with Britain mattered, but Haiti removed the reason to keep it.
 
@@ -172,7 +172,7 @@ Marcus: Strong.
 
 Maya: Second. A private 1803 letter reads: "The constitution has made no provision for our holding foreign territory." Who wrote it, and what's the point of the source?
 
-[15-second pause]
+[10-second pause]
 
 Maya: Jefferson, to a Kentucky senator. Even the president who made the deal believed it stretched past his own reading of the Constitution. That contradiction, in his own hand, is the source's whole point.
 
@@ -180,7 +180,7 @@ Marcus: Nailed it.
 
 Maya: Third: Lewis and Clark crossed the continent, 1804 to 1806. Adventure, or something colder?
 
-[15-second pause]
+[10-second pause]
 
 Maya: Because the maps, journals, and specimens made the case: science on the surface, sovereignty underneath. The expedition told Britain and Spain the land was claimed.
 

@@ -1,5 +1,5 @@
 # U1-E3 — Maya + Marcus (Fish Audio)
-# Episode 3: The Exchange. ~12 min experienced (1,917 words speech + 75s pauses)
+# Episode 3: The Exchange. ~12.5 min experienced (1,917 words speech + 100s pauses)
 # Draft v10 (2026-10-07): fleet-repair pass — all 20 audit findings applied (12 blockers, 8 minors).
 # Repairs: tense math fixed ("over five hundred"); the turkey taught as the eastbound exception (live trap);
 # the encomienda named as the intermediate labor step; African kingdoms/merchants named as sellers;
@@ -13,11 +13,11 @@
 # exam devices, hedged facts, CED 1.4 complete (two-way inventory, ecological transformation, maize
 # beyond Europe, disease asymmetry with debated framing attributed, labor crisis/Middle Passage).
 # Replaces v8 (1,440 words, 8 min, thin on ecology and the labor pull).
-# Read note: Maya tracks four boxes on her episode sheet. She checks ONE off mid-episode
+# Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Maya tracks four boxes on her episode sheet. She checks ONE off mid-episode
 # ("Checking that one.") and lands the rest in the recap — never a checkoff for every
 # box mid-episode (frozen guide rule). [10-second pause] marks are production notes for real silence in prediction
-# beats; [15-second pause] and [20-second pause] marks are real silence for the CER self-test questions;
-# [5-second pause] is the fast bonus question — they never go to the voice. The em dash in the closing
+# beats; [10-second pause] and [10-second pause] marks are real silence for the CER self-test questions;
+# [10-second pause] is the fast bonus question — they never go to the voice. The em dash in the closing
 # tagline is a held beat: leave a full breath between Marcus's "The food went both ways —" and Maya's
 # landing line. Do not rush it. The Nahua smallpox account is paraphrased from the Florentine Codex,
 # not a direct quote. Strip this header, the read note, and all [pause] tags before TTS; convert pause
@@ -169,25 +169,25 @@ Maya: Three questions, AP-shaped. Say your answer before I give it.
 
 Maya: One, and it's a stimulus. A Nahua account from the Florentine Codex describes smallpox victims lying in their houses, unable to move, with no one left to tend them. What's the bigger pattern?
 
-[15-second pause]
+[10-second pause]
 
 Maya: A virgin-soil epidemic — Old World germs meeting a population with no immunity, no childhood exposure, no resistance. Disease led, but it didn't work alone: war, slavery, and broken food systems helped. The dying emptied the towns ahead of the soldiers, and that's what made conquest possible.
 
 Maya: Two. A historian argues the potato did more to change Europe than any treaty of the 1500s. Defend or refute, and use the Exchange to do it.
 
-[20-second pause]
+[10-second pause]
 
 Maya: Defend it. Calories move history — the potato fed a European population boom, and maize did the same in Africa and Asia. More mouths meant more workers and soldiers, and no treaty reshaped populations like a new food source.
 
 Maya: Three. The dying emptied the Native towns and broke Spain's labor supply. The sugar plantations still needed workers. What did Spain do, and where had Europeans already done it?
 
-[15-second pause]
+[10-second pause]
 
 Maya: Spain turned to enslaved African labor — the Atlantic island plantations, Madeira and São Tomé, were already growing sugar with enslaved African labor. The Americas scaled the machine up: thousands at first, then millions.
 
 Maya: One more, fast. Which direction did the farm animals travel — and why?
 
-[5-second pause]
+[10-second pause]
 
 Maya: West. Horses, cattle, pigs, all of them, Europe to the Americas. The Americas had almost no domesticated farm animals to send back, except the turkey. That one sailed east.
 

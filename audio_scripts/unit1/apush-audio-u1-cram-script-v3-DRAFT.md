@@ -1,5 +1,5 @@
 # U1 — Cram Session: Maya + Jay (Fish Audio)
-# Episode: Ten Questions, One Unit. ~13 min experienced (2,304 words speech + 36s pauses)
+# Episode: Ten Questions, One Unit. ~15 min experienced (2,304 words speech + 130s pauses)
 # Draft v3 (2026-10-07): repair pass over v2 for the 11 fleet-audit findings (0 blockers) — header pause math fixed,
 # African states' role added to the Middle Passage beat, encomienda→repartimiento reconciling step, de-duplicated
 # biology/economy/labor triptych, strengthened attributions, galleon beat broken up, eight/nine-episode Sources
@@ -9,8 +9,8 @@
 # Replaces v1 (thin ~8-min draft, no pause marks; its Cortes/Malinche beat has no home in the rebuilt unit and its
 # navigation-school line contradicted E2; applied registry corrections: Middle Passage ~1 in 8, Otermin's reports
 # not a journal, syphilis both sides, Pueblo Revolt "one of the most successful").
-# Read note: Maya drives the rapid-fire quiz; Jay retrieves, guesses, and gets corrected. [2-second pause] marks are
-# the rapid-fire beat — real silence, never sent to TTS. [8-second pause] marks are prediction beats — real silence,
+# Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Maya drives the rapid-fire quiz; Jay retrieves, guesses, and gets corrected.
+# the rapid-fire beat — real silence, never sent to TTS. [10-second pause] marks are prediction beats — real silence,
 # never sent to TTS. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence.
 # The em dash in the closing tagline is a held beat: leave a full breath between Maya's setup line and Jay's landing
 # line. Do not rush it. The ## Sources section is production-only, never spoken.
@@ -30,7 +30,7 @@ Jay: [sheepish] Ten questions. Last quiz I blanked on three of twelve.
 
 Maya: [energetic] Then this is your redemption round. Question one: three Native regions, and how the land shaped each one.
 
-[2-second pause]
+[10-second pause]
 
 Jay: [casual] Southwest: the Pueblo peoples, desert farmers. Adobe villages, irrigation. Plains: bison hunters on foot, tipis, following the herds. Northeast: the Iroquois, farming plus hunting and fishing, longhouses. Clans through the mother's line, matrilineal, and the clan mothers chose the council leaders.
 
@@ -48,7 +48,7 @@ Jay: [casual] Controlled burns, cleared fields, fish traps across rivers. A mana
 
 Maya: [energetic] Question two: what sent Europeans across the Atlantic? Motives first, machines second.
 
-[2-second pause]
+[10-second pause]
 
 Jay: [casual] Gold, God, and glory, ranked. Gold: the spice hunger, the Ottoman squeeze after 1453, and a bullion shortage. Not enough coin for a growing economy.
 
@@ -82,7 +82,7 @@ Jay: [casual] West for Spain. Locked. And France and England never signed. The l
 
 Maya: [energetic] Question three: the Exchange. Each direction, and the deadliest cargo.
 
-[2-second pause]
+[10-second pause]
 
 Jay: [casual] Sailing west: wheat, sugarcane, horses, cattle, pigs. Sailing east: maize, potatoes, tomatoes, tobacco. The deadliest cargo was invisible: smallpox, measles, influenza, sailing west into populations with no immunity.
 
@@ -110,7 +110,7 @@ Maya: [conversational] Nightshade family. Fair suspicion, honestly.
 
 Maya: [energetic] Question four: Jamestown. Why did it almost die?
 
-[2-second pause]
+[10-second pause]
 
 Jay: [casual] The king sent a hundred and five men on three ships in 1607 —
 
@@ -134,7 +134,7 @@ Maya: [conversational] The assembly and the landing, same year. 1622: Opechancan
 
 Maya: [energetic] Question five: Potosi. Why was one mountain the engine of the Spanish Empire?
 
-[2-second pause]
+[10-second pause]
 
 Jay: [casual] The 1545 strike. Huallpa: a gust of wind knocks him flat, and the dirt in his hands is full of silver ore. Or he was chasing a llama. Both tellings exist.
 
@@ -166,7 +166,7 @@ Maya: [conversational] The crown's cut came from the Atlantic side. Five down, f
 
 Maya: [energetic] Question six: the labor chain. What drove each shift?
 
-[2-second pause]
+[10-second pause]
 
 Jay: [casual] The encomienda: the crown granted a colonist a town's labor and tribute. Not the land. The people.
 
@@ -198,7 +198,7 @@ Maya: [conversational] The goal never changed. Only the system did.
 
 Maya: [energetic] Question seven: Valladolid, 1550. The actual disagreement?
 
-[2-second pause]
+[10-second pause]
 
 Jay: [casual] Whether the conquest was just. Sepulveda: Aristotle's natural slaves, four just causes. Las Casas: the Native peoples are rational souls, fully human, with rights.
 
@@ -226,7 +226,7 @@ Maya: [conversational] No ruling, but the question survived the empire that aske
 
 Maya: [energetic] Question eight: the Pueblo Revolt. The causes, and what twelve years of freedom bought.
 
-[2-second pause]
+[10-second pause]
 
 Jay: [casual] Eighty years of missions: kivas, the underground ceremonial rooms, banned, masks burned, Pueblo labor running the mission farms. Then drought, and Apache raids the Spanish couldn't stop. 1675: Trevino arrests forty-seven medicine men. Three hanged, one killed himself, the rest whipped.
 
@@ -250,7 +250,7 @@ Maya: [conversational] The reconquest bargain: land under Spanish law, a public 
 
 Maya: [energetic] Question nine: the New Laws and Valladolid both tried to check the conquest. Why did so little change on the ground?
 
-[2-second pause]
+[10-second pause]
 
 Jay: [conversational] Distance and defiance. The crown was an ocean away with no way to enforce anything. The colonists answered the New Laws with rebellion and a dead viceroy.
 
@@ -260,7 +260,7 @@ Jay: [conversational] The machine needed workers. Every serious fix threatened t
 
 Maya: [energetic] Last one. Question ten: in one sentence, why does 1491 to 1607 shape everything that follows?
 
-[2-second pause]
+[10-second pause]
 
 Jay: [conversational] Because the terms were set here — the exchange, the silver, the labor system — and almost everything after runs on them.
 
@@ -268,13 +268,13 @@ Maya: [confident tone] The period thesis. The biology: the Exchange. The economy
 
 Maya: Two predictions I'd bet on. One: evaluate the extent to which the Columbian Exchange transformed the Americas. Your turn.
 
-[8-second pause]
+[10-second pause]
 
 Maya: Transformed, almost completely. Eight or nine out of ten dead in the hardest-hit towns, and the dying forced a new labor machine into being. Maize and potatoes feeding Europe, silver flooding the world. The horse rebuilt Plains life, and the Pueblos held a province for twelve years. Pushback belongs in the answer.
 
 Maya: Two: evaluate the extent to which Spanish colonial rule changed between 1542 and 1700. Your turn.
 
-[8-second pause]
+[10-second pause]
 
 Maya: 1542: the New Laws try and fail. 1550: Valladolid argues and rules nothing. The repartimiento and the mita replace the encomienda. The names on paper changed; the hunger for workers kept driving everything. 1680: the Pueblos rise. After 1692, a frightened empire grants land, a public defender, tolerated ceremonies. The thesis: the systems kept changing; the goal didn't. Then a province walked out, and the rules changed with it.
 

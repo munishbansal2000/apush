@@ -1,7 +1,7 @@
 # U1-E8 — Story Mode: Marcus leads, Maya interjects
-# Episode 8: The Pueblo Revolt. ~12 min experienced (1,975 words speech + 77s pauses)
+# Episode 8: The Pueblo Revolt. ~12 min experienced (1,975 words speech + 60s pauses)
 # Draft v7 (fleet repair 2026-10-07: audit's 3 blockers + 5 minors repaired; see changelog). CED 1.6.
-# Read note: Story Mode — Marcus carries the narrative, Maya interjects as a real person: questions, wrong guesses, pushback. [9-second pause] marks are production notes for real silence in prediction beats; [17-second pause] and [20-second pause] marks are real silence for the CER self-test; [5-second pause] is the fast bonus — they never go to the voice. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence. Popé's reported words and the spirit-vision reach us through Spanish records — the script says so in-dialogue. Tagline dash: held breath, do not rush it.
+# Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Story Mode — Marcus carries the narrative, Maya interjects as a real person: questions, wrong guesses, pushback. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence. Popé's reported words and the spirit-vision reach us through Spanish records — the script says so in-dialogue. Tagline dash: held breath, do not rush it.
 # Pronunciation: Popé (poh-PAY), Otermín (oh-ter-MEEN), Treviño (treh-VEE-nyo), Vargas (VAR-gahs), kiva (KEE-vah), Tewa (TAY-wah), Ohkay Owingeh (oh-KAY oh-WIN-geh), maguey (mah-GAY), yucca (YOO-kah), Tesuque (teh-SOO-keh), Fragua (FRAH-gwah).
 
 Maya: [professional broadcast tone] Last time: Valladolid, 1550: Las Casas and Sepúlveda arguing over whether conquering the Americas was even just. This time, the conquered answer back. August, 1680: runners are crossing the New Mexico desert carrying knotted cords. One knot for every day. When the last knot comes loose, every pueblo rises at once. Three boxes: the mission system, Popé's Rebellion, and the reconquest bargain. Circle the ones you couldn't explain. Twelve minutes. Santa Fe has no idea.
@@ -50,7 +50,7 @@ Maya: [curious, inquisitive tone] Five years holding a secret across half a doze
 
 Marcus: Your turn. You're Popé. Half a dozen languages, hundreds of miles, and anything you write down, the Spanish can read. How do you set one date for every pueblo to rise?
 
-[9-second pause]
+[10-second pause]
 
 Marcus: A calendar made of knots. Runners carried cords of maguey fiber, a tough desert plant, to each pueblo. One knot for each day. When the last knot comes loose, everybody rises the same day.
 
@@ -92,7 +92,7 @@ Marcus: [firm] Not exactly — he didn't lead the pueblos for twelve years. The 
 
 Maya: Third box. The Spanish come back. Vargas walks into Santa Fe in 1692 with a small force. The pueblos have held the province for twelve years. Does he fight his way in or talk his way in?
 
-[9-second pause]
+[10-second pause]
 
 Marcus: He talked. Pardons for the rising, respect for Pueblo lands, at least on paper. The pueblos swore allegiance, and by the Spanish accounts it was bloodless. Twelve years after the cords, the Spanish walked back through the front door.
 
@@ -128,25 +128,25 @@ Maya: Three questions, AP-shaped. Say your answer before I give it. And on the l
 
 Maya: One. A lot of textbooks frame the Pueblo Revolt as a religious war, the friars versus the kivas. Using evidence from the episode, argue it was about more than religion.
 
-[17-second pause]
+[10-second pause]
 
 Maya: Labor and land drove it too — Pueblo workers built the mission farms, the encomienda pulled Pueblo men into labor for colonists, and the 1670s drought and Apache raids broke the empire's protection bargain. Which is why the revolt targeted the whole colonial machine, priests and settlers alike, not just the friars.
 
 Maya: Two. A Pueblo man interrogated by the Spanish in 1681 said Popé was told to "make a cord of maguey fiber and tie some knots in it which would signify the number of days that they must wait before the rebellion." What's the point of this source? What does it tell you about the revolt?
 
-[20-second pause]
+[10-second pause]
 
 Maya: The revolt was centrally planned — the cord was a countdown every pueblo could read without a shared language, carried by runners across hundreds of miles. And the proof is a source the Spanish recorded themselves: this wasn't spontaneous rage, it was organized, which is why it succeeded where earlier plots never got off the ground.
 
 Maya: Three. A student writes: "The Pueblo Revolt failed because the Spanish returned in 1692." Why would a grader mark that wrong?
 
-[17-second pause]
+[10-second pause]
 
 Maya: The revolt succeeded in its deeper aim — twelve years of self-rule, and when Spain returned it issued land grants to each Pueblo, appointed a public defender, and tolerated the banned ceremonies. So "failed" measures the wrong thing: the revolt forced the empire to change how it ruled.
 
 Maya: One more, fast. An LEQ asks whether Native resistance changed colonial rule. You've got the 1680 rising and the twelve free years. Which one leads your paragraph, and why?
 
-[5-second pause]
+[10-second pause]
 
 Maya: The twelve years. 1680 proves they could fight; the twelve years prove the empire had to change — land grants, a public defender, tolerated ceremonies. Only the twelve years answer the prompt.
 

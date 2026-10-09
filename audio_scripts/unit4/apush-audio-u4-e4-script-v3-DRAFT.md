@@ -1,7 +1,7 @@
 # U4-E4 — Maya + Marcus (Fish Audio)
 # Episode 4: The Era of Good Feelings and the Monroe Doctrine. Eleven and a half minutes experienced (1,855 spoken words + 69s scripted pauses = ~11.5 min at ≤180 WPM).
 # Draft v3 (2026-10-08): fleet repair pass — 13 audit findings repaired (5 accuracy, 3 voice/traps, 3 mechanical T1/TR1/TA1, 2 changelog corrections). Live traps replace announcer-voice proclamations; tag density cut from 85% to ~26%.
-# Read note: Maya tracks four boxes on her episode sheet: the American System, a homegrown American culture, the Monroe Doctrine, and the cracks underneath it all. [8-second pause], [16-second pause], and [5-second pause] are production notes for real silence — the prediction beats get 8 seconds, the self-test CER questions get 16, the bonus gets 5. They never go to the voice. The em dash in the closing tagline is a held beat: leave a full breath between Marcus's setup line and Maya's landing line. Do not rush it. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence.
+# Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Maya tracks four boxes on her episode sheet: the American System, a homegrown American culture, the Monroe Doctrine, and the cracks underneath it all. They never go to the voice. The em dash in the closing tagline is a held beat: leave a full breath between Marcus's setup line and Maya's landing line. Do not rush it. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence.
 # Pronunciation: mon-ROH (Monroe); KAN-ing (Canning); uh-DAMS is just Adams; duh-WIT (DeWitt Clinton); oh-NEES (Onís); BA-gut (Bagot)
 
 Maya: [professional broadcast tone] Last time: a war nobody won, and the nationalism it left behind. This time the glow fades and the bills come due, and a president draws a line across the whole hemisphere. Four boxes on your sheet: the American System, a homegrown American culture, the Monroe Doctrine, and the cracks underneath it all. Circle the ones you couldn't explain right now. Eleven and a half minutes, and they're yours.
@@ -22,7 +22,7 @@ Marcus: Henry Clay gave it one: the American System, a program to make America e
 
 Maya: Your turn. If you had to make a whole country economically independent in 1816, what three things would you build? Reason it out, don't recall it.
 
-[8-second pause]
+[10-second pause]
 
 Maya: You'd keep foreign goods out with a tariff. You'd need your own money system, a national bank. And roads and canals to move goods around.
 
@@ -96,7 +96,7 @@ Marcus: It echoed for two centuries. The glow leaves out the awkward part: in 18
 
 Maya: Your turn. A country with a small army and a small navy tells Europe the hemisphere is closed, and it holds. Why? Who else wanted Europe out?
 
-[8-second pause]
+[10-second pause]
 
 Maya: Britain. The Royal Navy kept the other Europeans out because Britain wanted Latin America's markets open for its own ships, and America took the credit.
 
@@ -150,25 +150,25 @@ Marcus: Landed.
 
 Maya: Three questions, AP-shaped. Say your answer before I give it. Question one, and it's stimulus-style. Imagine an 1817 newspaper describing New York's new canal project: a waterway to the Great Lakes. Which part of Clay's American System does this project illustrate, and who built it — Washington or the state?
 
-[16-second pause]
+[10-second pause]
 
 Maya: Internal improvements, the roads-and-canals part. The tell is who built it: New York State — the states were doing the improving themselves, and that's the hinge the whole question turns on.
 
 Maya: Question two. The Monroe Doctrine made two claims: name them. Then tell me who actually kept European ships out of the Americas, and why they bothered.
 
-[16-second pause]
+[10-second pause]
 
 Maya: The claims: the hemisphere is closed to new European colonization, and the United States stays out of Europe's wars. The enforcer, though, was Britain's Royal Navy, because America couldn't do it, and because Britain wanted Latin America's markets open for its own trade. The logic runs: bold American words, British ships behind them. If your answer stopped at the two claims, you left the best part out.
 
 Maya: Question three. Walk the chain: how did the Era of Good Feelings become the Panic of 1819?
 
-[16-second pause]
+[10-second pause]
 
 Maya: Start at the Second Bank's branches, handing out easy, inflationary loans on western land. The post-Napoleonic economy shifts, the Bank slams credit shut, land values collapse, and farmers and workers take the worst of it. A nationwide depression. And the grudge it built in the West followed Andrew Jackson to the presidency.
 
 Maya: One more, fast. The writer and the painters: what did they share?
 
-[5-second pause]
+[10-second pause]
 
 Maya: Irving's stories sold and were read in Europe too. The painters made the landscapes the world came to see. Same project: a culture independent of Europe.
 

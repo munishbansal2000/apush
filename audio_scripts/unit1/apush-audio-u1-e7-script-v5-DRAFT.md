@@ -1,7 +1,7 @@
 # U1-E7 — Debate: Maya moderates, Marcus (Las Casas's side) vs Sepúlveda (guest) (Fish Audio)
-# Episode 7: The Valladolid Debate. ~12 min experienced (1,949 words speech + 73s pauses)
+# Episode 7: The Valladolid Debate. ~12 min experienced (1,949 words speech + 60s pauses)
 # Draft v5 (2026-10-07): repair pass on the 2026-10-07 fleet audit (1 blocker + 6 minor) — all six common-mistake proclamations converted to live traps (Maya voices the wrong version, a debater catches her with a strong correction marker); Sepúlveda directed ([measured] scholarly / [passionate] attacks); Maya's double echo of the Black Legend point cut; tag density 70%→44% (all 13 [conversational] defaults stripped); numbers-to-catch retagged [speaking slowly]; Hanke named in dialogue; closer trimmed to a topic-only tease. Replaces v4.
-# Read note: Maya moderates and tracks four boxes on her episode sheet, checking each off in her own voice — once mid-episode ("one down" beat) and the rest in the recap. Marcus argues Las Casas's position as a modern advocate: he never speaks AS Las Casas in the first person. His future knowledge (the book's print history, the Black Legend, modern estimates, the 1551 reconvening) is modern narration, not a 1550 voice. Sepúlveda argues in his own voice — a measured, scholarly advocate, never a caricature. [8-second pause] and [10-second pause] marks are production notes for real silence in prediction beats; [15-second pause] and [20-second pause] marks are real silence for the CER self-test questions; [5-second pause] is the fast bonus question — they never go to the voice. The em dash in the closing tagline is a held beat: leave a full breath between "trial" and "and the trial outlived the empire." Do not rush it. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence.
+# Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Maya moderates and tracks four boxes on her episode sheet, checking each off in her own voice — once mid-episode ("one down" beat) and the rest in the recap. Marcus argues Las Casas's position as a modern advocate: he never speaks AS Las Casas in the first person. His future knowledge (the book's print history, the Black Legend, modern estimates, the 1551 reconvening) is modern narration, not a 1550 voice. Sepúlveda argues in his own voice — a measured, scholarly advocate, never a caricature. The em dash in the closing tagline is a held beat: leave a full breath between "trial" and "and the trial outlived the empire." Do not rush it. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence.
 # Pronunciation: bah-yah-doh-LEED (Valladolid); seh-POOL-veh-dah (Sepúlveda); lahs KAH-sahs (Las Casas); bahr-toh-loh-MEH (Bartolomé); Aristotle (AIR-ih-stot-ul); uh-KWY-nus (Aquinas); hoh-MUN-kyoo-lye (homunculi); oh-VYEH-doh (Oviedo); deh-MOH-krah-tees AHL-tehr (Democrates Alter); ahn-yah-KEE-toh (Añaquito); gon-SAH-loh pee-SAH-roh (Gonzalo Pizarro); his-pahn-YOH-lah (Hispaniola).
 
 Maya: [professional broadcast tone] Last time: the labor chain — encomienda, the repartimiento draft, African slavery, the casta ladder. Now the empire stops to argue with itself. Spain has conquered half a hemisphere, and in 1550 the crown puts its own conquests on trial: can conquest ever be just? Four boxes: Sepúlveda's case for natural slavery, Las Casas's answer, the New Laws and the verdict that wasn't, and the afterlife. Circle the ones you couldn't explain right now. Twelve minutes. For the conquest: Sepúlveda, the court's scholar of Aristotle. Against it: Marcus, arguing Las Casas's case. I did mock trial in eighth grade, and my coach drilled one rule: a hung jury means nobody wins. Just saying.
@@ -34,7 +34,7 @@ Sepúlveda: [measured] Not quite. I never crossed the Atlantic, and I won't hide
 
 Maya: Your turn. You're one of the theologians on the junta. Sepúlveda argues from Aristotle and Oviedo's books. Las Casas answers: he was there, he watched it happen. Books or eyewitness: which evidence do you trust?
 
-[8-second pause]
+[10-second pause]
 
 Maya: Most of you just picked the eyewitness. The theologians heard both and picked neither. First box checked: Sepúlveda's case.
 
@@ -124,25 +124,25 @@ Maya: Three questions, AP-shaped. Say your answer before I give it. And on the l
 
 Maya: One, and it comes with a source. Las Casas, 1550: "They are not ignorant, inhuman, or bestial. Rather, long before they had heard the word Spaniard they had properly organized states, wisely ordered by excellent laws, religion, and custom." What is he claiming, and whose argument is he answering?
 
-[20-second pause]
+[10-second pause]
 
 Maya: He's claiming the Native peoples are rational and self-governing — ordered states, excellent laws, religion, custom, all before contact. And the logic is: a people who govern themselves can't be natural slaves. He's answering Sepúlveda.
 
 Maya: Two. A student writes: "Sepúlveda defended the conquest because he'd seen the Indies himself." What's the mistake?
 
-[15-second pause]
+[10-second pause]
 
 Maya: He never went — never crossed the Atlantic; his whole case came from Aristotle and Oviedo's chronicles. Flip the expectation: the eyewitness case belonged to the side arguing against conquest, while the defense of conquest never left the library.
 
 Maya: Three. The junta heard both cases in 1550 and 1551, and never ruled. Why was a ruling dangerous either way?
 
-[15-second pause]
+[10-second pause]
 
 Maya: Either verdict broke something. Condemn the conquest, and Spain's title to half a hemisphere unwinds; bless it, and every conquistador gets a license. So the junta scattered, and both sides claimed victory.
 
 Maya: One more, fast. Whose pages built the Black Legend, and whose presses printed it?
 
-[5-second pause]
+[10-second pause]
 
 Maya: Las Casas's pages. English and Dutch presses.
 

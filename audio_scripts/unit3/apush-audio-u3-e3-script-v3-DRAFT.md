@@ -1,6 +1,6 @@
 # U3-E3 — Maya + Marcus (Fish Audio)
 # Episode 20: The Bridge to Revolution. Twelve minutes experienced (1,948 spoken words + 64s scripted pauses = 11.9 min at 180 WPM).
-# Read note: Maya tracks four boxes on her episode sheet: the Townshend duties, the Boston Massacre, the Tea Party and the Intolerable Acts, and the First Continental Congress. [9-second pause] marks are production silence in the prediction beats; [15-second pause] and [20-second pause] marks are production silence in the CER self-test; the [5-second pause] is the fast bonus — they never go to the voice. Strip this header and the read note before TTS; convert pause tags to silence. The em dash in the closing tagline is a held beat: leave a full breath between Maya's setup line and Marcus's landing line. Do not rush it. Self-test model answers follow claim-evidence-reasoning logic in natural phrasing; no spoken labels (per the user's 2026-10-06 ruling: TTS reads everything literally).
+# Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Maya tracks four boxes on her episode sheet: the Townshend duties, the Boston Massacre, the Tea Party and the Intolerable Acts, and the First Continental Congress. Strip this header and the read note before TTS; convert pause tags to silence. The em dash in the closing tagline is a held beat: leave a full breath between Maya's setup line and Marcus's landing line. Do not rush it. Self-test model answers follow claim-evidence-reasoning logic in natural phrasing; no spoken labels (per the user's 2026-10-06 ruling: TTS reads everything literally).
 # Pronunciation: TOWN-zend (Townshend), KRIS-pus AT-uks (Crispus Attucks), DIK-in-sun (Dickinson), GAL-uh-way (Galloway), MO-hawk (Mohawk)
 
 Maya: [professional broadcast tone] Last time: Parliament repealed the Stamp Act and kept the claim — "in all cases whatsoever." Then it taxed the tea. Seven years from the tea tax to twelve colonies acting like one country. Four flashpoints: a tax on paint and paper, a street fight rebranded as a massacre, a harbor full of tea leaves, and a Congress in Philadelphia. Four boxes on your sheet: the Townshend duties, the Boston Massacre, the Tea Party and the Intolerable Acts, and the First Continental Congress. Circle the ones you couldn't explain right now. Twelve minutes, and you'll land all four.
@@ -29,7 +29,7 @@ Maya: [warm tone] My mom still darns socks instead of buying new ones. She would
 
 Marcus: British imports fell by something like forty percent by 1770. British merchants started howling at Parliament, same play as the Stamp Act fight, and Parliament caved, mostly. Your turn: Lord North becomes prime minister in 1770 and repeals the Townshend duties, every one except a single tax. Which one survives, and why keep a tax that raises almost nothing?
 
-[9-second pause]
+[10-second pause]
 
 Maya: The tea tax. Forget the money — it's the marker. Repeal everything, keep one tax, and the claim survives.
 
@@ -105,25 +105,25 @@ Maya: Box four: the First Continental Congress. September seventy-four, Philadel
 
 Maya: Three questions, AP-shaped. Say your answer before I give it. One: a stimulus hands you Dickinson, 1768: "A perpetual jealousy, respecting liberty, is absolutely requisite in all free states." What's he warning his readers to do?
 
-[15-second pause]
+[10-second pause]
 
 Maya: He's telling them to stay suspicious of power. He's writing against the Townshend duties, taxes imposed without consent. So the duties aren't a small bill, they're the test case. A penny today, a million tomorrow.
 
 Maya: Two: a stimulus pairs Revere's engraving with the trial verdicts. A student says the verdicts prove the engraving was a lie. Where does that go wrong?
 
-[15-second pause]
+[10-second pause]
 
 Maya: They were doing different jobs. The print was propaganda: Adams's network used it to unite the colonies against British troops. The trial was law: John Adams defending the soldiers showed the colonists still believed in fair trials, even for redcoats. One rallies, the other judges.
 
 Maya: Three: a stimulus lists five 1774 laws, the Port Act, the Government Act, the Justice Act, the Quartering Act, and the Quebec Act. A student labels all five "the Intolerable Acts." What's the error?
 
-[20-second pause]
+[10-second pause]
 
 Maya: The Quebec Act doesn't belong. The other four punished Massachusetts for the Tea Party; the Quebec Act governed Canada, Catholic worship, western borders. It just landed in the same pile. The exam sets this trap because the colonists lumped them together, so students do too. Match the list to the law; the nickname steers you wrong.
 
 Maya: One more, fast. The Congress built the Association's boycott machine and petitioned the king as loyal subjects. Which one proves independence wasn't on the table?
 
-[5-second pause]
+[10-second pause]
 
 Maya: The petition. You don't politely ask the king to repeal his laws if you're about to break with him.
 

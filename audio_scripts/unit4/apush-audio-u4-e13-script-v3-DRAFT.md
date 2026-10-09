@@ -1,7 +1,7 @@
 # U4-E13 — Maya + Marcus (Fish Audio)
 # Episode 13: Seneca Falls and Women's Rights. About 11 minutes.
 # Draft v3.
-# Read note: Maya tracks four boxes on her episode sheet: the London root, the Declaration of Sentiments, the aftermath, and the split. [15-second pause], [18-second pause], and [8-second pause] marks are production notes for real silence — they never go to the voice. The tagline's em dash is a held breath: do not rush it. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence.
+# Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Maya tracks four boxes on her episode sheet: the London root, the Declaration of Sentiments, the aftermath, and the split. The tagline's em dash is a held breath: do not rush it. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence.
 # Pronunciation: Lucretia Mott (loo-KREE-shuh MOT), Stanton (STAN-tun), Sojourner Truth (so-JURN-er), coverture (KUH-vur-chur), Wesleyan (WES-lee-un), Seneca (SEN-uh-kuh)
 
 Maya: [professional broadcast tone] Last time: the women that abolition sidelined in London. This time, they hold their own convention in upstate New York. Eight years of simmering. Five days' notice. And a document that rewrote one famous line with two extra words. Four boxes on your sheet: the London root, the Declaration of Sentiments, the aftermath, the split. Circle the ones you couldn't explain right now. About eleven minutes, and you'll check all four off.
@@ -42,7 +42,7 @@ Maya: [incredulous] So I had it exactly backward. The famous part is the complai
 
 Marcus: Common mash. The Declaration states the case; the resolutions say what to do about it. And the ninth resolution, the vote, blew up the room.
 
-Maya: Hold on, your turn. Eleven resolutions sail through. Then one says it's the duty of women to secure "their sacred right to the elective franchise," the vote. A room of reformers, eighteen forty-eight. What happens? Call it before I tell you. [8-second pause]
+Maya: Hold on, your turn. Eleven resolutions sail through. Then one says it's the duty of women to secure "their sacred right to the elective franchise," the vote. A room of reformers, eighteen forty-eight. What happens? Call it before I tell you. [10-second pause]
 
 Maya: They table it — no way eighteen forty-eight is ready for that.
 
@@ -110,15 +110,15 @@ Maya: [catching] Sixty-eight women, thirty-two men. Wait, was it the other way a
 
 Marcus: Sixty-eight women, and the list survives to prove it.
 
-Maya: Three questions, AP-shaped. Say your answer before I give it. One: stimulus. "He has made her, if married, in the eye of the law, civilly dead." The prompt asks: what's the strategy behind this document's form? [15-second pause]
+Maya: Three questions, AP-shaped. Say your answer before I give it. One: stimulus. "He has made her, if married, in the eye of the law, civilly dead." The prompt asks: what's the strategy behind this document's form? [10-second pause]
 
 Maya: Look at the shape: Stanton copied the whole Declaration of Independence playbook and turned its charges on a new tyrant. So the reader must accept the logic or reject seventeen seventy-six. The evidence: "created equal" with two added words, grievances shaped like Jefferson's. The strategy underneath: if the founding promise is true, it covers women.
 
-Maya: Two: why did the ninth resolution nearly fail at Seneca Falls? [18-second pause]
+Maya: Two: why did the ninth resolution nearly fail at Seneca Falls? [10-second pause]
 
 Maya: Even allies thought demanding the vote was too radical. Mott's fear was that ridicule would sink the other ten. It passed after a real fight, and only after Douglass spoke for it.
 
-Maya: Three: the movement split after the Civil War. What was the fight actually about? [15-second pause]
+Maya: Three: the movement split after the Civil War. What was the fight actually about? [10-second pause]
 
 Maya: The Fifteenth Amendment. It barred denying the vote on account of race: Black men in, women out. Stanton and Anthony refused to back it without women; Stone and Blackwell said take the win and go state by state. Rival organizations, eighteen sixty-nine to eighteen ninety.
 

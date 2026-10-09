@@ -1,13 +1,13 @@
 # U2-E9 — Cram Session: Maya + Jay (Fish Audio)
-# Unit 2 Cram: 1607 to 1763, in one episode. ~13.5 min experienced (2,331 words speech + 36s pauses)
+# Unit 2 Cram: 1607 to 1763, in one episode. ~15 min experienced (2,331 words speech + 130s pauses)
 # Draft v6 (2026-10-07): fleet repair pass on v5 per u2-e9v5-FINDINGS.md — B1 tag-density strip, B2 antithesis budget 9→2 kept, M1 parallel-closer breaks, M2 pause-math fix, M3 registry-max fix, M4 patroon hedge. Validated content preserved; dialogue words changed only where the findings required.
 # Jay holds the question list and fires ten rapid-fire questions mapping 1:1 onto the rebuilt unit's boxes (E1–E8 v5/v6);
 # Maya answers and corrects crisply. The period thesis plus two AP-shaped predictions with model theses. Replaces v4
 # (thin ~8-min draft, no pause marks; rebuild-era corrections applied: no pinned debt figure, no Stono Rebellion or
 # Mayflower Compact — neither appears in the rebuilt episodes — Britannica's 17-destroyed/50-damaged, families not a
 # women-share pin, Zenger's law unchanged, Washington 22).
-# Read note: Jay fires the questions; Maya answers and corrects. [2-second pause] marks are the rapid-fire beat — real
-# silence, never sent to TTS. [8-second pause] marks are prediction beats — real silence, never sent to TTS. Strip this
+# Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Jay fires the questions; Maya answers and corrects.
+# silence, never sent to TTS. [10-second pause] marks are prediction beats — real silence, never sent to TTS. Strip this
 # header, the read note, and all [pause] tags before TTS; convert pause tags to silence. The em dash in the closing
 # tagline is a held beat: leave a full breath between Jay's setup line and Maya's landing line. Do not rush it.
 # The ## Sources section is production-only, never spoken. CED: Period 2, 1607–1763.
@@ -26,7 +26,7 @@ Maya: [professional broadcast tone] Last time: one 22-year-old's shot in the rai
 
 Jay: Question one. Four empires, one continent. Match the model, one breath each.
 
-[2-second pause]
+[10-second pause]
 
 Maya: Spain: crown-run, souls and silver. Missions to convert, mines to pay, the crown skimming its fifth off the silver, and the casta labels ranking your grandparents.
 
@@ -44,7 +44,7 @@ Maya: Company money, settler families, farms. The headright paid fifty acres to 
 
 Jay: Question two. Servants to slaves: walk the chain.
 
-[2-second pause]
+[10-second pause]
 
 Maya: Start with the deal: four to seven years of labor for a boat ticket. Finish and collect freedom dues: a little corn, some clothes, maybe land. Then the system worked too well: the servants lived, and wanted land that was already taken.
 
@@ -62,7 +62,7 @@ Maya: The code gathered; it didn't invent. And the historians' fight rides with 
 
 Jay: [curious, inquisitive tone] Question three. New England: why'd they come, and who got kicked off the hill?
 
-[2-second pause]
+[10-second pause]
 
 Jay: [sheepish] The Pilgrims and the Puritans, same people, right? Funny hats, Thanksgiving?
 
@@ -74,7 +74,7 @@ Maya: Church and town fused into one contract with God, the meetinghouse at the 
 
 Jay: Question four. The middle colonies: the diversity lab.
 
-[2-second pause]
+[10-second pause]
 
 Maya: Penn's Holy Experiment, 1681: a colony paid for a debt, advertised in German, because empty land pays nothing. The Pennsylvania Dutch meant Deutsch, German. Palatine Germans, roughly a third of the colony by the Revolution, and something like half of them arrived as redemptioners: negotiating their servitude on the dock, sick and broke, instead of back in Europe.
 
@@ -88,7 +88,7 @@ Maya: [firm] The brand, not the books. Penn himself held enslaved people. In 168
 
 Jay: Question five. Mercantilism: the theory, the rules, the dodge.
 
-[2-second pause]
+[10-second pause]
 
 Maya: The theory: the world's wealth is a fixed pile, and power is how much of it sits in your vaults. The colonies ship raw materials cheap, buy finished goods dear, and never build the factory. Some historians call that a decent bargain: protected markets, the Navy's guarded sea lanes. Others call it a cage.
 
@@ -110,7 +110,7 @@ Maya: She means the signature. The fortune came first, and some of it came throu
 
 Jay: Question six. The Awakening: heart, head, and the split.
 
-[2-second pause]
+[10-second pause]
 
 Jay: [sheepish] Whitefield started the whole thing, right? The fields, the crowds?
 
@@ -130,7 +130,7 @@ Maya: Some say rehearsal; others say the fires burned out decades before 1776. A
 
 Jay: [curious, inquisitive tone] Question seven. How'd the assemblies get powerful while London looked away?
 
-[2-second pause]
+[10-second pause]
 
 Jay: The purse.
 
@@ -146,7 +146,7 @@ Maya: [firm] The reverse. They were growing more British every year. English tea
 
 Jay: Question eight. The war: one shot, one plan, one gamble.
 
-[2-second pause]
+[10-second pause]
 
 Maya: [thoughtful tone] May 1754, Jumonville Glen, before dawn, in the rain. Washington, twenty-two, about forty men around a French camp. Somebody fires; the French commander dies. France called it murder, and the man was an ensign — a junior officer. Washington signed the surrender paper at Fort Necessity in French he couldn't read, and the French word in it was l'assassinat. Assassination. They carried it home like a confession.
 
@@ -164,7 +164,7 @@ Maya: [thoughtful tone] 1757. Spend in North America, pin France in Europe: "con
 
 Jay: [curious, inquisitive tone] Question nine. 1763: why did winning break everything?
 
-[2-second pause]
+[10-second pause]
 
 Maya: [thoughtful tone] The bill. An enormous debt. The books won't pin the number, and neither will I. Pontiac's rising the moment the French left: the British had ended the gift diplomacy, and his warriors besieged Detroit while forts fell across the lakes. Hundreds of soldiers, thousands of colonists, more than a year to break it.
 
@@ -174,7 +174,7 @@ Maya: [thoughtful tone] Follow the money, not the revenge. October 1763: no sett
 
 Jay: Last one. Question ten: the whole unit, one sentence.
 
-[2-second pause]
+[10-second pause]
 
 Jay: Growth made the colonies too valuable, too diverse, and too used to running themselves to be ruled on London's old terms. When London tried anyway, the arrangement broke.
 
@@ -182,13 +182,13 @@ Maya: [confident tone] The period thesis. Keep it. Eight episodes, ten questions
 
 Maya: Two predictions I'd bet on. One: evaluate the extent to which the British colonies had developed a distinct identity and self-government by 1754. Your turn.
 
-[8-second pause]
+[10-second pause]
 
 Maya: Extensive self-government, thin distinct identity. The assemblies held the purse, a colonial jury acquitted Zenger, and decades of salutary neglect trained the colonies to rule themselves, yet Anglicization had them drinking English tea and demanding Englishmen's rights. The complexity point: the machinery was American, the loyalty was British, and the war starting in 1754 would test which one held.
 
 Maya: Two: evaluate the extent to which the shift from indentured servitude to enslaved labor transformed the Chesapeake between 1660 and 1700. Your turn.
 
-[8-second pause]
+[10-second pause]
 
 Maya: The labor force transformed; the engine didn't. Term contracts became lifetime, hereditary, race-coded slavery, written down from John Punch in 1640 to Virginia's 1705 code. But tobacco still demanded land and workers, and the planters' hunger never changed. The transformation was legal and racial. The economy barely changed.
 

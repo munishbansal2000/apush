@@ -1,5 +1,5 @@
 # U4-CRAM — Cram Session: Maya + Jay (Fish Audio)
-# Unit 4 Cram: 1800–1848, fifteen episodes in one. ~17 min experienced (2,868 words speech + 61s pauses)
+# Unit 4 Cram: 1800–1848, fifteen episodes in one. ~19.5 min experienced (2,868 words speech + 200s pauses)
 # Draft v3 (2026-10-08): fleet repair of the v2 audit (2 major, 7 substantive, 7 minor). Direction-tag density 94%→~20% —
 # workhorse [energetic]/[conversational]/[casual] stripped everywhere no beat genuinely earned one; catalog beats kept
 # (cold-open broadcast, Jay caught-wrong sheepish, Jay's genuine question curious, both-sides myth-bust firm, grim
@@ -11,9 +11,9 @@
 # DBQ bets. Cold open names all fifteen boxes and drops the "Last time:" nod. Closer adds the one-line next-unit tease.
 # F13 framing fix: twenty-one months is the WAR's duration; Scott's campaign gets its own ~6-month frame (registry F-U4-090).
 # Dialogue reworded only where the findings required; all other words unchanged from v2.
-# Read note: Maya fires the questions; Jay answers and gets corrected. [2-second pause] marks are the rapid-fire beat —
-# real silence, never sent to TTS. [8-second pause] marks are prediction beats — real silence, never sent to TTS.
-# [15-second pause] is the stimulus-question read beat — real silence, never sent to TTS. Self-test carries no direction
+# Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Maya fires the questions; Jay answers and gets corrected.
+# real silence, never sent to TTS. [10-second pause] marks are prediction beats — real silence, never sent to TTS.
+# [10-second pause] is the stimulus-question read beat — real silence, never sent to TTS. Self-test carries no direction
 # tags at all. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence.
 # The ## Sources section is production-only, never spoken.
 # CED: Period 4, 1800–1848.
@@ -26,7 +26,7 @@ Maya: [professional broadcast tone] Fifteen lessons in one cram — eighteen hun
 
 Maya: Question one: Jefferson said the government can only do what's listed. Buying a country wasn't listed. So how did the purchase happen?
 
-[2-second pause]
+[10-second pause]
 
 Jay: [sheepish] He stretched? Used the treaty power?
 
@@ -40,7 +40,7 @@ Jay: Okay, so sixty-three is the BEFORE map, eighty-three is the AFTER map. Sixt
 
 Maya: Question two: four Marshall cases, one breath each.
 
-[2-second pause]
+[10-second pause]
 
 Jay: Marbury: judicial review, the Court gets the last word on the Constitution. McCulloch: the Bank is constitutional on implied powers, and states can't tax it. Fletcher: contracts hold even when the deal was corrupt. Gibbons: interstate commerce belongs to Congress alone.
 
@@ -52,7 +52,7 @@ Maya: Different blur. Marbury is about who interprets the Constitution. Federal 
 
 Maya: Question three: why did we fight in eighteen twelve, and what did the Treaty of Ghent actually settle?
 
-[2-second pause]
+[10-second pause]
 
 Jay: Impressment: about six thousand sailors grabbed between 1803 and 1812, the Chesapeake fired on in 1807. The Hawks wanted honor and Canada — and they were sure Britain was arming Tecumseh out west. Ghent settled nothing. Status quo ante. And New Orleans ended the war.
 
@@ -62,7 +62,7 @@ Jay: So New Orleans is the most famous battle that changed nothing.
 
 Maya: Question four: Clay's American System, three parts, and the Monroe Doctrine's open secret.
 
-[2-second pause]
+[10-second pause]
 
 Jay: Tariff, national bank, internal improvements: make America independent of Europe. And the Doctrine told Europe the hemisphere was closed. But our navy was tiny. Britain's fleet did the enforcing.
 
@@ -74,7 +74,7 @@ Maya: Not federal. Erie Canal, 1825, state-dug, New York's money, not Washington
 
 Maya: Question five: the Missouri Compromise: the deal, the line, and what the line couldn't do.
 
-[2-second pause]
+[10-second pause]
 
 Jay: Eleven free, eleven slave, Senate tied. Missouri in as a slave state, Maine carved off free, thirty-six thirty across the Louisiana Territory. And the line couldn't settle anything outside the Louisiana Territory.
 
@@ -84,7 +84,7 @@ Maya: Nearly halfway: six.
 
 Maya: Water or wires, which came first, and what year does Deere's steel plow carry?
 
-[2-second pause]
+[10-second pause]
 
 Jay: [sheepish] Water first. Erie Canal, 1825. Telegraph's 1844. Deere's plow... eighteen forty-seven?
 
@@ -94,7 +94,7 @@ Jay: Thirty-seven, and the book is wrong, and I'm the one paying for it.
 
 Maya: Question seven: the corrupt bargain: did Adams and Clay actually cut a deal?
 
-[2-second pause]
+[10-second pause]
 
 Jay: Jackson said they did. The charge was never proven, and historians are still split on whether the two of them had any real understanding.
 
@@ -102,7 +102,7 @@ Maya: The charge is the fact, and the charge powered four years of fury. The 182
 
 Maya: Question eight: South Carolina nullifies the tariffs. What was it claiming, and what did Jackson actually use?
 
-[2-second pause]
+[10-second pause]
 
 Jay: The compact theory: a state convention can void a federal law inside its borders. Calhoun wrote it anonymously as vice president. Jackson got the Force Bill and never used it. Clay's compromise tariff did the real work.
 
@@ -114,7 +114,7 @@ Maya: The exam's favorite blur. And no: nullification keeps the state in the Uni
 
 Maya: Question nine: Jackson kills the Bank. Did killing it cause the Panic of eighteen thirty-seven?
 
-[2-second pause]
+[10-second pause]
 
 Jay: [sheepish] The pet banks printed paper like confetti, the Specie Circular squeezed land buyers, and then… something with cotton prices falling? Or was it the Brits pulling credit?
 
@@ -130,7 +130,7 @@ Maya: Never write that. The Circular covered federal land only: land buyers paid
 
 Maya: Question ten: Worcester v. Georgia said the Cherokee won. So why were they marched west in eighteen thirty-eight, and by whose orders?
 
-[2-second pause]
+[10-second pause]
 
 Jay: Jackson ignored the ruling and marched them out.
 
@@ -146,7 +146,7 @@ Maya: [serious tone] Roughly four thousand dead. About one in four.
 
 Maya: Question eleven: the Awakening told Americans they could perfect their own souls. Where did that idea go next?
 
-[2-second pause]
+[10-second pause]
 
 Jay: Perfectionism: perfect the soul, then perfect society. Temperance, Mann's schools, Dix's asylums. Cane Ridge kicked it off.
 
@@ -158,7 +158,7 @@ Maya: You just crossed them. Mann is schools, Massachusetts, eighteen thirty-sev
 
 Maya: Question twelve: Garrison versus the Colonization Society. What was the actual fight?
 
-[2-second pause]
+[10-second pause]
 
 Jay: Garrison's Liberator, eighteen thirty-one: free everyone now, no payment, equal rights. The Society, eighteen seventeen: send free Black Americans to Liberia and wind slavery down slow. And Walker was first: his Appeal in eighteen twenty-nine.
 
@@ -170,7 +170,7 @@ Maya: The House gag rule, eighteen thirty-six to forty-four. The Senate never pa
 
 Maya: Question thirteen: Seneca Falls: how many resolutions, and which one nearly failed?
 
-[2-second pause]
+[10-second pause]
 
 Jay: Twelve. And the vote.
 
@@ -184,7 +184,7 @@ Jay: Eleven resolutions, and the vote took another seventy-two years.
 
 Maya: Question fourteen: Texas: how did it actually get in, and whose slogan is "fifty-four forty or fight"?
 
-[2-second pause]
+[10-second pause]
 
 Jay: Tyler's treaty died in the Senate: treaties need two-thirds. So they used a joint resolution. Simple majorities. Texas came in December of eighteen forty-five. And the slogan was aimed at Polk. It was never his own.
 
@@ -194,7 +194,7 @@ Jay: The slogan was aimed at Polk, never his. All of Oregon wanted, forty-ninth 
 
 Maya: Last one: fifteen. The Wilmot Proviso never became law. So why did one sentence nearly break Congress?
 
-[2-second pause]
+[10-second pause]
 
 Jay: Because it was never really about the people already there. The fight was over the settlers coming next: free-labor North against a South that heard the territories closing for good. Mexico had already banned slavery there, which made it even weirder.
 
@@ -208,19 +208,19 @@ Maya: [building] Test it. Louisiana: more land, more slavery fights. Jackson: mo
 
 Maya: Three questions, AP-shaped. First, a source. An 1848 newspaper cartoon shows Uncle Sam slicing Mexico in half on a table, and an enslaved man standing chained beside the table. What's the cartoonist arguing?
 
-[15-second pause]
+[10-second pause]
 
 Maya: The cartoonist is saying the war's real product isn't the land — it's the fight over what follows it. The sliced map and the chains share one frame: expansion and slavery, inseparable. If you read it as "taking Mexico forces the slavery question," you've got it.
 
 Maya: Second: evaluate the extent to which the Jacksonian era expanded democracy. Your turn.
 
-[8-second pause]
+[10-second pause]
 
 Maya: The thesis: expanded for white men, contracted for everyone else. One: the expansion. Property lines fell, so nominating conventions replaced the caucus. Jackson turned the veto into the people's weapon. Two: the limits. The Cherokee were forced west. Defenders dug in around slavery. And women stayed shut out of the vote. Three: the contradiction in one room. A bigger vote and a narrower country. Show the tension. A hero story alone won't do.
 
 Maya: Third: the Market Revolution. Same shape. Your turn.
 
-[8-second pause]
+[10-second pause]
 
 Maya: One: the machine. Canals, railroads, the telegraph, factories. Two: the human cost. Wage labor, immigrants, cities, and King Cotton expanding slavery on the domestic trade. Three: the backlash. The reformers the Awakening produced, trying to fix what the market broke. If Jackson doesn't show up on your exam, the market will.
 

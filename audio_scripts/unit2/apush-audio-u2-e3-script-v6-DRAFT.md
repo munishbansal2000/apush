@@ -1,7 +1,7 @@
 # U2-E3 — Maya + Marcus (Fish Audio)
-# Episode 3: New England Puritans. ~12 min experienced (1,951 words speech + 75s pauses)
+# Episode 3: New England Puritans. ~12 min experienced (1,951 words speech + 60s pauses)
 # Draft v6 (2026-10-07): fleet repair pass — three common-mistake devices rebuilt as live traps (Maya errs, Marcus catches); direction-tag density cut to ~35% with catalog beats kept; Dedham 1636 covenant claim cut fail-closed (unverifiable in Tier 1-2); minors M1-M7 repaired. Replaces v5.
-# Read note: Maya tracks three boxes on her episode sheet and checks each one off in her own voice as the episode earns it. [10-second pause] marks are production notes for real silence in prediction beats; [15-second pause] and [20-second pause] marks are real silence for the CER self-test questions; [5-second pause] is the fast bonus — they never go to the voice. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence. The em dash in the closing tagline is a held beat: leave a full breath between Marcus's "They came to build a city on a hill —" and Maya's landing line. Do not rush it.
+# Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Maya tracks three boxes on her episode sheet and checks each one off in her own voice as the episode earns it. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence. The em dash in the closing tagline is a held beat: leave a full breath between Marcus's "They came to build a city on a hill —" and Maya's landing line. Do not rush it.
 # Pronunciation: AR-bell-uh (Arbella), WIN-thrup (Winthrop), MET-uh-kom (Metacom), wam-puh-NOH-ug (Wampanoag), nar-uh-GAN-sit (Narragansett), kuh-NON-ih-kuss (Canonicus), mee-an-toh-NOH-mee (Miantonomi), an-tee-NOH-mee-un (antinomian), SAH-suh-mun (Sassamon), uh-KWID-nek (Aquidneck)
 
 Maya: [professional broadcast tone] Last time: indentured servants in the Chesapeake, Bacon's Rebellion burning Jamestown in 1676, and planters answering with slave codes. This time we go north, to the colony that crossed an ocean for God and then started exiling its own people. A governor's sermon about a city on a hill. Two dissenters Boston couldn't silence. And a war that nearly erased English New England. Three boxes: the Great Migration and the covenant towns, the banished dissenters, and King Philip's War. Circle the ones you couldn't explain right now. Twelve minutes, and you'll land all three.
@@ -142,25 +142,25 @@ Maya: Three questions, AP-shaped. Say your answer before I give it.
 
 Maya: One. Winthrop, 1630: "we shall be as a city upon a hill," "the eyes of all people are upon us." What's the point of this source? And what does Hutchinson's trial, seven years later, do to it?
 
-[20-second pause]
+[10-second pause]
 
 Maya: The point is that the sermon sets the colony's mission as a public example: succeed or fail where everyone watches. You can see it in "the eyes of all people are upon us," preached to the fleet before landing. And that's why Hutchinson's 1637 trial collides with it: the city upon a hill banishing a woman for disagreeing with its ministers. Aspiration versus reality.
 
 Maya: Two. New England versus the Chesapeake. One difference, one similarity.
 
-[15-second pause]
+[10-second pause]
 
 Maya: The point is different migrations, same land hunger. You can see it in New England, which came as families bound by covenant, more than twenty thousand of them by 1640, while the Chesapeake came as young men chasing tobacco. And that's why both took Native land by force: covenant towns in one, King Philip's War in the other.
 
 Maya: Three. A question gives you Britannica's count: seventeen settlements destroyed, fifty more damaged, and calls King Philip's War one of the bloodiest per-capita conflicts in American history. What's the reasoning that connects the numbers to the label?
 
-[15-second pause]
+[10-second pause]
 
 Maya: The point is the destruction proves the scale because the colonies were small: seventeen destroyed and fifty damaged, out of a New England of only tens of thousands of colonists. And that's why that share of towns hit means a huge share of people touched — which is what per capita means.
 
 Maya: One more, fast. Hutchinson: civil court convicts her in 1637, the church excommunicates her in 1638. What does that split tell you about Puritan Massachusetts?
 
-[5-second pause]
+[10-second pause]
 
 Maya: Church and town punished together — the court and the congregation came after the same dissenter, a year apart.
 

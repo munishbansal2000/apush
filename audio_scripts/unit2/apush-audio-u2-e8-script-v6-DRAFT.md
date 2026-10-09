@@ -1,7 +1,7 @@
 # U2-E8 — Story Mode: Marcus-led, Maya interjects
 # Episode 8: The War That Started With One Shot in the Rain. Twelve minutes experienced (1,942 spoken words + 73s scripted pauses = 12.0 min at 180 WPM).
 # Draft v6 (2026-10-07): fleet repair of v5 per u2-e8-FINDINGS.md — direction-tag density 81.9%→~26% (stripped workhorse [conversational]/[measured] tags; kept catalog beats only: cold-open/closer broadcast, takeaways confident, myth-busts firm, grim serious, genuine curiosity curious, caught-wrong beats, self-test neutral, closer intrigued), "Not X, just Y" antitheses 3→2 (Proclamation "The treasury, not revenge." reworded to plain phrasing), five announcer-voice common-mistake proclamations converted to live traps (Maya commits the classic error in flow; Marcus corrects in the next turn with a strong marker), cold-open triple broken into plain phrasing, forward tease moved from recap to closer, cold-open first shot hedged to the scene's "one shot in the rain," "you'd ambushed" grammar fixed. Words otherwise unchanged. Replaces v5.
-# Read note: Maya tracks four boxes on her episode sheet; the full recap is the check layer, with one mid-episode checkoff in her voice. [10-second pause] and [8-second pause] marks are production notes for real silence in prediction beats; [15-second pause] and [20-second pause] marks are real silence for the CER self-test questions; [5-second pause] is the fast bonus — they never go to the voice. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence. The em dash in the closing tagline is a held beat: a full breath between Marcus's lead and Maya's landing. Do not rush it. Disclosure: the Washington line ("four bullets through my coat, and two horses shot under me") is his actual wording from his July 18, 1755 letter home. The Tanacharison brains detail is reported legend, disclosed in-dialogue; the tomahawk killing is Britannica's account. The ## Sources section is production-only, never spoken.
+# Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Maya tracks four boxes on her episode sheet; the full recap is the check layer, with one mid-episode checkoff in her voice. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence. The em dash in the closing tagline is a held beat: a full breath between Marcus's lead and Maya's landing. Do not rush it. Disclosure: the Washington line ("four bullets through my coat, and two horses shot under me") is his actual wording from his July 18, 1755 letter home. The Tanacharison brains detail is reported legend, disclosed in-dialogue; the tomahawk killing is Britannica's account. The ## Sources section is production-only, never spoken.
 # Pronunciation: zhoo-mohn-VEEL (Jumonville), tan-uh-kuh-RIH-sun (Tanacharison), doo-KAYN (Duquesne), muh-nahn-guh-HEE-luh (Monongahela), mohn-KAHM (Montcalm), PAHN-tee-ak (Pontiac), GREN-vil (Grenville), lah-sah-see-NAH (l'assassinat).
 
 Maya: [professional broadcast tone] Last time: the power of the purse, the Zenger trial, and Anglicization. This time: a twenty-two-year-old Washington rides into the Ohio country in 1754, and one shot in the rain sets the world on fire. Four boxes: the shot. Albany and Braddock. The fall of Quebec. And the aftermath: a line on a map and an enormous debt. London stops looking the other way. Circle the ones you couldn't explain right now. Twelve minutes.
@@ -74,7 +74,7 @@ Marcus: Three years of losing. Then 1757: William Pitt takes charge of Britain's
 
 Maya: Your turn. You're Pitt, 1757. Britain's losing in America, France is fighting Prussia in Europe. Where do you spend?
 
-[8-second pause]
+[10-second pause]
 
 Maya: Keep France tied down in Europe, and spend the real money where the war gets decided: North America.
 
@@ -140,25 +140,25 @@ Maya: Three questions, AP-shaped. Say your answer before I give it. On the long 
 
 Maya: One. The stimulus is the surrender document Washington signed at Fort Necessity: a French text containing the word l'assassinat. What does this source prove about the war's start?
 
-[15-second pause]
+[10-second pause]
 
 Maya: It proves the incident became France's justification for war, not that Washington was guilty: Washington couldn't read French; the paper said "assassination." The document mattered as propaganda. France carried home a confession, real or not, and used it to demand revenge.
 
 Maya: Two. Braddock's army outnumbered the French and their Native allies at the Monongahela. So why did Britain lose?
 
-[20-second pause]
+[10-second pause]
 
 Maya: European tactics failed in American woods: British regulars held formation and fired volleys while French and Native fighters fired from the tree line; nearly a thousand British killed or wounded. Discipline designed for open fields became a target in the forest, and the war exposed the limits of an empire's way of fighting.
 
 Maya: Three. The stimulus is a 1763 map: everything east of the Mississippi is British, Louisiana and New Orleans are Spanish, Florida is British. What does the map show about who won what?
 
-[15-second pause]
+[10-second pause]
 
 Maya: Britain won the continent; France kept the sugar: Canada and the east go to Britain, but France keeps Guadeloupe and Martinique, and Spain trades Florida for Louisiana. The map shows France chose sugar profits over land, and Britain chose the land it would now have to pay for.
 
 Maya: One more, fast. Why did London draw the Proclamation line — revenge, or the treasury?
 
-[5-second pause]
+[10-second pause]
 
 Maya: The treasury. London wanted the frontier wars off its books.
 

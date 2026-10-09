@@ -1,7 +1,7 @@
 # U3-E9 — Debate: Maya moderates, Marcus (Hamiltonian) vs Jefferson
-# Episode 26: Hamilton's Program. ~12.6 min experienced (2,034 words speech + 77s pauses)
+# Episode 26: Hamilton's Program. ~12.5 min experienced (2,034 words speech + 60s pauses)
 # Draft v3 (fleet repair of v2 — see CHANGELOG). Debate per the lesson map. CED 3.10.
-# Read note: Maya moderates; Marcus argues Hamilton's case as a 1790s advocate — his knowledge stops in the 1790s; Jefferson speaks in his own 1790s voice, measured, never caricature. Lines flagged "real words" are verbatim historical wording; the debate around them is dramatization. [8-second pause] marks production silence in prediction beats; [15-second pause], [18-second pause], and [20-second pause] mark production silence in the self-test questions; they never go to the voice. Strip this header, the read note, and all pause tags before TTS; convert pause tags to silence. Tagline dash: held breath — do not rush it.
+# Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Maya moderates; Marcus argues Hamilton's case as a 1790s advocate — his knowledge stops in the 1790s; Jefferson speaks in his own 1790s voice, measured, never caricature. Lines flagged "real words" are verbatim historical wording; the debate around them is dramatization. Strip this header, the read note, and all pause tags before TTS; convert pause tags to silence. Tagline dash: held breath — do not rush it.
 # Pronunciation: excise (ek-SIZE); yeoman (YOH-mun); manufactures (man-yoo-FAC-churz); elastic; speculator.
 
 Maya: [professional broadcast tone] Last time: "We, the people" beat "We, the states." The Constitution got sold and ratified. But what those words let the government do is another fight. The first great fight of the new republic was about money: who gets paid, who gets taxed — and whether the Constitution lets the government build a bank at all. Four boxes: Hamilton's funding and assumption, the Bank fight, tariffs and the whiskey tax, and the verdict: how this fight built America's first parties. Circle the ones you couldn't explain. About twelve and a half minutes. Arguing Hamilton's program: Marcus. Arguing the other side, in his own voice: Jefferson. Two rules. Some lines are their real words. I'll flag those. The rest is our dramatization.
@@ -28,7 +28,7 @@ Marcus: Then you know how those veterans felt. Hamilton's answer: the nation's c
 
 Maya: Your turn. It's 1789. Someone offers you a government IOU at ten cents on the dollar. Nobody believes the government will ever pay. Do you buy, and what would change your mind?
 
-[8-second pause]
+[10-second pause]
 
 Maya: Hamilton's report, the promise of full payment: the moment trash paper turns valuable. So who profited from funding at full value? The soldiers?
 
@@ -48,7 +48,7 @@ Marcus: Hamilton answered eight days later. His real words too: the elastic clau
 
 Maya: Your turn. Washington's desk, February 1791. Two memos: one warns of a boundless field of power, one promises the compass of the national authority. He can sign the Bank bill or veto it. Eight seconds: what does he do?
 
-[8-second pause]
+[10-second pause]
 
 Maya: He signs. Washington weighs both memos and sides with Hamilton. The Bank of the United States becomes law in 1791. If the exam hands you a bank stimulus, check the reading. Jefferson's side: only the listed powers, strict construction. Hamilton's side: the elastic clause, loose construction. They flip under pressure: Jefferson strict, Hamilton loose. Washington read both memos and signed. That lands the Bank.
 
@@ -86,25 +86,25 @@ Maya: Twenty-year charter. Government owned a fifth, private investors the rest.
 
 Maya: Three questions, AP-shaped. Say your answer before I give it. First: Hamilton's plan had two debt policies: funding at full value and assumption. Which one enriched the speculators, and why? Use the certificate story.
 
-[18-second pause]
+[10-second pause]
 
 Maya: Funding. The certificates had been sold for a fraction of face value because nobody trusted the government to pay. Hamilton's promise made that cheap paper suddenly worth face value. So the profit went to whoever held the paper when the promise landed: the speculators.
 
 Maya: Second, stimulus-style. A 1791 cabinet memo warns that a national bank means taking "possession of a boundless field of power, no longer susceptible of any definition." Two things: whose constitutional reading is this, strict or loose, and who's writing?
 
-[15-second pause]
+[10-second pause]
 
 Maya: Strict construction, and the writer is Jefferson. His argument: the Constitution grants only its listed powers, so a bank not on the list is a step past the boundary. Hamilton answered with the elastic clause: the loose reading.
 
 Maya: Third. In 1794, Washington sent nearly thirteen thousand militiamen into western Pennsylvania. Explain what that response proved about the Constitution, and contrast it with Shays's Rebellion.
 
-[20-second pause]
+[10-second pause]
 
 Maya: It proved the federal government could enforce its own laws. Under the Articles, Congress couldn't tax or raise troops, so Shays's Rebellion fell to a privately paid militia after months. Same shape of revolt, opposite answer. That's the Constitution's difference, made visible.
 
 Maya: One more, fast. Hamilton's party and Jefferson's party: the names?
 
-[8-second pause]
+[10-second pause]
 
 Maya: The Federalists, and Jefferson's Democratic-Republicans.
 
