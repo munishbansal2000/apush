@@ -111,6 +111,9 @@ export function buildPlan(input: BuildInputs): BuildResult {
     for (const v of st.visuals) {
       const at = cue(index, v.at.phrase, v.at.occurrence);
       if (!at) { storyboardIssues.push(`turn ${index}: "${v.at.phrase}" is not in the line`); continue; }
+      // Phrase cues inside the visual become timed cues of this line (offsets pass through).
+      const inner = (c: unknown) => (c && typeof c === 'object' && 'phrase' in c && !('turn' in c) ? cue(index, (c as {phrase: string}).phrase, (c as {occurrence?: number}).occurrence) ?? c : c);
+      const timed = <T extends {at?: unknown}>(list: T[] | undefined) => list?.map(x => ({...x, at: inner(x.at)}));
       const common = {at, ...(v.atmosphere ? {atmosphere: v.atmosphere} : {}), ...(v.transition ? {transition: v.transition} : {})};
       let shot: Shot | null = null;
       if (v.kind === 'image' || v.kind === 'clip') {
@@ -127,7 +130,11 @@ export function buildPlan(input: BuildInputs): BuildResult {
         } else {
           shot = {type: 'image_move', ...common, image: v.image, from: move.from, to: move.to, framing: picked.name} as unknown as Shot;
         }
-      } else if (v.kind === 'map') shot = {type: 'map', ...(v.map ?? {}), ...common} as unknown as Shot;
+      } else if (v.kind === 'map') {
+        const m = (v.map ?? {}) as Record<string, {at?: unknown}[] | unknown>;
+        const lists = Object.fromEntries((['moves', 'fills', 'lines', 'points', 'labels'] as const).filter(k => Array.isArray(m[k])).map(k => [k, timed(m[k] as {at?: unknown}[])]));
+        shot = {type: 'map', ...m, ...lists, ...common} as unknown as Shot;
+      }
       else if (v.kind === 'point') {
         // A backdrop that cannot be used full frame is replaced by the nearest usable storyboard image (and reported).
         let backdrop = v.backdrop;
@@ -137,7 +144,7 @@ export function buildPlan(input: BuildInputs): BuildResult {
           backdrop = near;
           if (!backdrop) continue;
         }
-        shot = {type: 'point', ...common, backdrop, bullets: v.bullets ?? []} as unknown as Shot;
+        shot = {type: 'point', ...common, backdrop, bullets: timed(v.bullets) ?? []} as unknown as Shot;
       }
       else if (v.kind === 'custom') {
         const beats = ((v as {beats?: string[]}).beats ?? []).map(p => cue(index, p)).filter((c): c is Cue => !!c);

@@ -44,7 +44,10 @@ npm test                                              # tests/map-views.test.ts 
   "tilt": 20,
   "terrain": {"ridges": ["geo.line.appalachian-crest"], "rivers": true},
   "labels": [{"text": "Lake Erie", "lonlat": [-81.2, 42.2], "style": "ocean"}],
-  "focus": {"detroit": {"center": [-83.05, 42.33], "zoom": 2.4}}
+  "focus": {
+    "detroit": {"center": [-83.05, 42.33], "zoom": 2.4},
+    "lakes": {"center": [-82, 44], "zoom": 1.5, "region": {"states": ["MI"], "label": "Michigan", "labelAt": [-84.6, 43.6], "color": "gold"}}
+  }
 }
 ```
 
@@ -59,6 +62,7 @@ npm test                                              # tests/map-views.test.ts 
 | `terrain.ridges` | LineString geo ids drawn as relief (they must exist in `data/library/geo`). `rivers: true` draws the major rivers |
 | `labels` | **Timeless only**: oceans, lakes, rivers, mountain ranges. `style` is `region`, `ocean` or `town`; each label sits inside the extent. No dated names ("New France", "Province of Quebec", "Indian Reserve"): those are period layers |
 | `focus` | Named camera targets for `moves`: lowercase-hyphen names, centres inside the extent, zoom 1 to 4. Name them after what a narrator says ("fort-pitt", "bay-mouth", "frontier"). At least one |
+| `focus.<name>.region` | Optional: what a move with `"highlight": true` fills and names. Either `{"states": ["MA", "NH"], ...}` (US postal codes, `us` projection) or `{"geo": "<library polygon id>", ...}`, plus `label` (timeless, no year), `labelAt` inside the extent, and an optional `color` (a map colour name or `#rrggbb`). Give a region to every target a narrator names as a region ("New England", "the Ohio Valley") |
 
 3. **Validate, preview, look:** run `npm run maps -- validate`, then `npm run maps -- preview <id>`.
 4. **Commit the view alone**, with the preview checked. Views need no review status: `validate` plus a looked-at preview is the bar.
@@ -83,7 +87,7 @@ The director sees MAP VIEWS (id | name | focus targets) and MAP DATA (geo ids; b
 ```
 
 - `period` is the moment the *narration* is about, not the year of the lesson: a year means the map at the end of that year, and `"1763-03-01"` is a precise day inside a year of change.
-- `moves[].to` is a focus target of the view, or a place with a location.
+- `moves[].to` is a focus target of the view, or a place with a location. On a target with a region (marked `*` in the director's list), `"highlight": true` fills and labels it as the camera arrives; a colour name instead of `true` overrides its colour.
 - Add only what the words point at. The era's borders arrive with `period`.
 - Variety rules (enforced): the same view at most twice per act and three times per lesson (the lesson limit is a warning); at most 3 maps in a row.
 

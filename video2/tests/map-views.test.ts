@@ -102,3 +102,31 @@ describe('period layers and the storyboard', () => {
     assert.deepEqual(shot.fills.filter(f => f.region.geo === quebec.properties.id).map(f => f.color), ['#2c5aa0']);
   });
 });
+
+describe('focus regions', () => {
+  it('a move with "highlight" fills the focus region and names it as the camera arrives', () => {
+    const views = loadMapViews(LIB);
+    const plan = {episode: 'x', shots: [{type: 'map', at: {turn: 0}, view: 'map.thirteen-colonies',
+      moves: [{at: {offset: 1.2}, to: 'new-england', highlight: true}, {at: {offset: 2.4}, to: 'middle-colonies', highlight: 'blue'}, {at: {offset: 3.4}, to: 'colonies'}]}]} as unknown as ShotPlan;
+    const {plan: out, issues} = expandMapViews(plan, views, {});
+    assert.deepEqual(issues, []);
+    const shot = out.shots[0] as unknown as {fills: {at: {offset: number}; region: {state?: string}; color: string}[]; labels: {text: string; at: {offset?: number}}[]};
+    assert.deepEqual(shot.fills.filter(f => f.at.offset === 1.2).map(f => f.region.state), ['MA', 'NH', 'CT', 'RI']);
+    assert.ok(shot.fills.filter(f => f.at.offset === 2.4).every(f => f.color === '#2c5aa0'), 'a colour name on the move overrides the region colour');
+    assert.deepEqual(shot.labels.filter(l => l.at.offset === 1.2 || l.at.offset === 2.4).map(l => l.text), ['New England', 'Middle Colonies']);
+    const bad = expandMapViews({...plan, shots: [{...plan.shots[0], moves: [{at: {offset: 1}, to: 'colonies', highlight: true}]}]} as unknown as ShotPlan, views, {});
+    assert.match(bad.issues.join('\n'), /"colonies" has no region to highlight .*new-england, middle-colonies, southern-colonies/);
+  });
+
+  it('region rules: postal codes, a label inside the extent, no years', () => {
+    const geoLib = {'geo.line.appalachian-crest': feature('geo.line.appalachian-crest', 'LineString', [[-84, 34], [-72, 45]])};
+    const view = (region: unknown) => ({id: 'map.test-region', name: 'Test', projection: 'us', extent: [[-90, 30], [-70, 45]], camera: {center: [-80, 38], zoom: 1.1},
+      focus: {east: {center: [-76, 40], zoom: 2, region}}}) as unknown as MapViewDef;
+    const issues = (region: unknown) => validateMapView(view(region), 'test-region.json', geoLib).join('\n');
+    assert.equal(issues({states: ['PA', 'NJ'], label: 'Middle Colonies', labelAt: [-76, 40.5], color: 'amber'}), '');
+    assert.match(issues({states: ['XX'], label: 'X', labelAt: [-76, 40]}), /"XX" is not a US postal code/);
+    assert.match(issues({states: ['PA'], label: 'Penn 1681', labelAt: [-76, 40]}), /region labels are timeless/);
+    assert.match(issues({states: ['PA'], label: 'Penn', labelAt: [-60, 40]}), /labelAt must be inside the extent/);
+    assert.match(issues({geo: 'geo.line.appalachian-crest', label: 'Ridge', labelAt: [-76, 40]}), /must be a Polygon/);
+  });
+});

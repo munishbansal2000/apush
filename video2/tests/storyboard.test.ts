@@ -91,3 +91,14 @@ describe('storyboard variety', () => {
     assert.ok(varietyWarnings(lesson).some(w => /appears 4 times in the lesson/.test(w)), 'a lesson-wide view count is a warning, not a repair');
   });
 });
+
+describe('cues inside a visual', () => {
+  it('a map move can cue on a phrase of the same line; a missing or earlier phrase is an issue', () => {
+    const t = parseTranscript('Maya: Two centuries of colonies: New England, the middle colonies, the South.');
+    const keys = turnKeys(t);
+    const sb = (moves: unknown[]): Storyboard => ({episode: 'x', acts: [], turns: [{key: keys[0], index: 0, visuals: [{kind: 'map', map: {view: 'map.thirteen-colonies', moves}, at: {phrase: 'of colonies'}, priority: 'essential'}]}]});
+    assert.deepEqual(checkStoryboard(sb([{at: {phrase: 'new england'}, to: 'new-england'}, {at: {offset: 2}, to: 'colonies'}]), t, [6]).issues, []);
+    assert.match(checkStoryboard(sb([{at: {phrase: 'the west'}, to: 'x'}]), t, [6]).issues.join('\n'), /map moves 1: "the west" is not in the line/);
+    assert.match(checkStoryboard(sb([{at: {phrase: 'two centuries'}, to: 'x'}]), t, [6]).issues.join('\n'), /spoken before the visual starts/);
+  });
+});

@@ -24,9 +24,18 @@ export interface MapViewDef {
   terrain?: {ridges: string[]; rivers?: boolean};
   /** Base map typography (oceans, regions), faded in at the start. */
   labels?: {text: string; lonlat: LonLat; style?: 'region' | 'ocean' | 'town'}[];
-  /** Named camera targets the director can move to. */
-  focus?: Record<string, {center: LonLat; zoom: number}>;
+  /** Named camera targets the director can move to; a target with a region can be highlighted on arrival. */
+  focus?: Record<string, MapFocus>;
 }
+
+export interface MapFocus {
+  center: LonLat;
+  zoom: number;
+  /** What a move with "highlight" fills: US states (postal codes) or one library geo region. Timeless names only. */
+  region?: {states: string[]; label: string; labelAt: LonLat; color?: string} | {geo: string; label: string; labelAt: LonLat; color?: string};
+}
+
+const STATE_CODES = new Set('AL AK AZ AR CA CO CT DE DC FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY'.split(' '));
 
 /** A map shot written against a view: no coordinates. */
 export interface ViewMapShot {
@@ -37,7 +46,7 @@ export interface ViewMapShot {
    *  (borders, claims) valid then are drawn automatically. */
   period?: number | string;
   /** Camera moves: to a focus name of the view, or a place id (zoom defaults to 1.4x the view's opening zoom). */
-  moves?: {at: Cue; to: string; zoom?: number; ease?: number}[];
+  moves?: {at: Cue; to: string; zoom?: number; ease?: number; highlight?: boolean | string}[];
   fills?: {at: Cue; region: {geo: string} | {state: string} | {country: string}; color: string}[];
   lines?: {at: Cue; geo: string; color?: string; dashed?: boolean; draw?: number; arrow?: boolean}[];
   points?: {at: Cue; place: string; kind?: 'town' | 'fort' | 'battle'; label?: string}[];
@@ -131,9 +140,20 @@ export function expandMapViews(
       return {type: 'map', at: shot.at, projection: 'us', extent: [[-100, 20], [-60, 50]], camera: [{at: {offset: 0}, center: [-80, 35], zoom: 1}]} as PlanShot;
     }
     const camera = [{at: {offset: 0} as Cue, center: view.camera.center, zoom: view.camera.zoom}];
+    const highlights: {fills: NonNullable<ViewMapShot['fills']>; labels: NonNullable<ViewMapShot['labels']>} = {fills: [], labels: []};
     (shot.moves ?? []).forEach((m, n) => {
       const focus = view.focus?.[m.to];
       const place = places[m.to];
+      if (m.highlight) {
+        const r = focus?.region;
+        if (!r) issues.push(`${where} move ${n + 1}: "${m.to}" has no region to highlight in ${view.id} (${Object.entries(view.focus ?? {}).filter(([, f]) => f.region).map(([k]) => k).join(', ') || 'none'})`);
+        else {
+          // Fill as the camera arrives, then name it.
+          const c = color(typeof m.highlight === 'string' ? m.highlight : r.color ?? 'gold')!;
+          for (const region of 'states' in r ? r.states.map(state => ({state})) : [{geo: r.geo}]) highlights.fills.push({at: m.at, region, color: c} as never);
+          highlights.labels.push({at: m.at, text: r.label, lonlat: r.labelAt, style: 'region'});
+        }
+      }
       if (focus) camera.push({at: m.at, center: focus.center, zoom: m.zoom ?? focus.zoom, ...(m.ease ? {ease: m.ease} : {})});
       else if (place?.location) camera.push({at: m.at, center: place.location, zoom: m.zoom ?? view.camera.zoom * 1.4, ...(m.ease ? {ease: m.ease} : {})});
       else issues.push(`${where} move ${n + 1}: "${m.to}" is not a focus of ${view.id} (${Object.keys(view.focus ?? {}).join(', ') || 'none'}) or a place with a location`);
@@ -145,10 +165,10 @@ export function expandMapViews(
       type: 'map', at: shot.at, transition: shot.transition,
       projection: view.projection, extent: view.extent, tilt: view.tilt, terrain: view.terrain,
       camera,
-      fills: [...era.fills, ...(shot.fills ?? []).map(f => ({...f, color: color(f.color)!}))],
+      fills: [...era.fills, ...highlights.fills, ...(shot.fills ?? []).map(f => ({...f, color: color(f.color)!}))],
       lines: [...era.lines, ...(shot.lines ?? []).map(l => ({...l, color: color(l.color)}))],
       points: shot.points,
-      labels: [...base, ...era.labels, ...(shot.labels ?? [])],
+      labels: [...base, ...era.labels, ...highlights.labels, ...(shot.labels ?? [])],
     };
   });
   return {plan: {...plan, shots}, issues};
@@ -189,6 +209,21 @@ export function validateMapView(view: MapViewDef, file: string, geo: Record<stri
     if (!/^[a-z0-9-]+$/.test(name)) add(`focus "${name}": names are lowercase-hyphen`);
     if (!inside(f?.center)) add(`focus "${name}": center must be [lon, lat] inside the extent`);
     if (!(f?.zoom >= 1 && f.zoom <= 4)) add(`focus "${name}": zoom must be 1-4`);
+    const r = f?.region;
+    if (r) {
+      if ('states' in r) {
+        if (!Array.isArray(r.states) || !r.states.length) add(`focus "${name}": region.states lists US postal codes`);
+        for (const st of r.states ?? []) if (!STATE_CODES.has(st)) add(`focus "${name}": "${st}" is not a US postal code`);
+        if (view.projection !== 'us') add(`focus "${name}": state regions need the "us" projection`);
+      } else if ('geo' in r) {
+        if (!geo[r.geo]) add(`focus "${name}": region geo "${r.geo}" is not in data/library/geo`);
+        else if (!/Polygon/.test(geo[r.geo].geometry.type)) add(`focus "${name}": region geo "${r.geo}" must be a Polygon or MultiPolygon`);
+      } else add(`focus "${name}": region needs "states" or "geo"`);
+      if (!r.label?.trim()) add(`focus "${name}": region.label is required (what the viewer reads)`);
+      else if (/\b1[5-9]\d\d\b/.test(r.label)) add(`focus "${name}": region labels are timeless; dated names belong to period layers`);
+      if (!inside(r.labelAt)) add(`focus "${name}": region.labelAt must be inside the extent`);
+      if (r.color && !MAP_COLORS[r.color] && !/^#[0-9a-f]{6}$/i.test(r.color)) add(`focus "${name}": color is a map colour name (${Object.keys(MAP_COLORS).join(', ')}) or #rrggbb`);
+    }
   }
   return out;
 }

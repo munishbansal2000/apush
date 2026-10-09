@@ -37,6 +37,18 @@ export interface StoryVisual {
 }
 
 export interface StoryTurn {key: string; index: number; visuals: StoryVisual[]}
+
+/** A cue inside a visual: a phrase of the same line (exact timing from the audio) or seconds after the visual starts. */
+export type InnerCue = {phrase: string; occurrence?: number; turn?: number} | {offset: number};
+const INNER_LISTS = ['moves', 'fills', 'lines', 'points', 'labels'] as const;
+
+/** Every timed part inside a visual (map moves, fills, lines, points, labels; point bullets), with where it is. */
+export function innerCues(v: StoryVisual): {where: string; holder: {at?: InnerCue}}[] {
+  const out: {where: string; holder: {at?: InnerCue}}[] = [];
+  for (const list of INNER_LISTS) ((v.map?.[list] as {at?: InnerCue}[] | undefined) ?? []).forEach((holder, n) => holder && out.push({where: `map ${list} ${n + 1}`, holder}));
+  (v.bullets ?? []).forEach((holder, n) => out.push({where: `bullet ${n + 1}`, holder}));
+  return out;
+}
 export interface StoryAct {title: string; purpose?: string; turns: {from: number; to: number}}
 export interface Storyboard {
   episode: string;
@@ -108,6 +120,20 @@ export function checkStoryboard(sb: Storyboard, turns: PipelineTurn[], durations
       if (pos >= 0 && pos < last) issues.push(`${where}: lands before the previous visual in the same line`);
       if (pos >= 0 && pos === last) issues.push(`${where}: lands on the same phrase as the previous visual`);
       if (pos >= 0) last = pos;
+      // Phrase cues inside the visual: spoken in the same line, once (or with occurrence), not before the visual.
+      for (const {where: part, holder} of innerCues(v)) {
+        const c = holder.at as InnerCue & {turn?: number} | undefined;
+        if (!c || !('phrase' in c)) continue;
+        // An explicit later line (a visual that carries on into it) is checked against that line.
+        if (c.turn !== undefined && c.turn !== index) {
+          if (!countPhrase(turns[c.turn]?.text ?? '', c.phrase)) issues.push(`${where} ${part}: "${c.phrase}" is not in line ${c.turn}`);
+          continue;
+        }
+        const k = countPhrase(text, c.phrase);
+        if (!k) issues.push(`${where} ${part}: "${c.phrase}" is not in the line (inner cues are phrases of the same line, or {"offset": seconds})`);
+        else if (k > 1 && !c.occurrence) issues.push(`${where} ${part}: "${c.phrase}" appears ${k} times in the line; give "occurrence" or a longer phrase`);
+        else if (pos >= 0 && phrasePos(text, c.phrase, c.occurrence ?? 1) < pos) issues.push(`${where} ${part}: "${c.phrase}" is spoken before the visual starts`);
+      }
       const image = v.kind === 'point' ? v.backdrop : v.image;
       if (image) {
         uses.set(image, (uses.get(image) ?? 0) + 1);

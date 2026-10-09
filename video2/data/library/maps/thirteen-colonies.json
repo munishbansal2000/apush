@@ -42,21 +42,64 @@
         -71.5,
         43
       ],
-      "zoom": 2.4
+      "zoom": 2.4,
+      "region": {
+        "states": [
+          "MA",
+          "NH",
+          "CT",
+          "RI"
+        ],
+        "label": "New England",
+        "labelAt": [
+          -71.6,
+          43.9
+        ],
+        "color": "gold"
+      }
     },
     "middle-colonies": {
       "center": [
         -75,
         40.8
       ],
-      "zoom": 2.4
+      "zoom": 2.4,
+      "region": {
+        "states": [
+          "NY",
+          "NJ",
+          "PA",
+          "DE"
+        ],
+        "label": "Middle Colonies",
+        "labelAt": [
+          -75.6,
+          41.3
+        ],
+        "color": "amber"
+      }
     },
     "southern-colonies": {
       "center": [
         -79.5,
         34.5
       ],
-      "zoom": 2.0
+      "zoom": 2.0,
+      "region": {
+        "states": [
+          "MD",
+          "VA",
+          "NC",
+          "SC",
+          "GA"
+        ],
+        "label": "Southern Colonies",
+        "labelAt": [
+          -79.6,
+          35.3
+        ],
+        "color": "red"
+      }
     }
   }
 }

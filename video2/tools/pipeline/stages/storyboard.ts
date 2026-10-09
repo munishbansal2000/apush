@@ -102,6 +102,9 @@ function noteBuildProblems(review: LessonReview, sb: Storyboard, plan: ShotPlan,
     const turn = Number.isInteger(n) ? (plan.shots[n - 1] as {at?: {turn?: number}} | undefined)?.at?.turn : undefined;
     const act = turn === undefined ? -1 : sb.acts.findIndex(a => turn >= a.turns.from && turn <= a.turns.to) + 1;
     if (act <= 0) { rest.push(`  - ${line}`); continue; }
+    // Library approval is a person's decision; a re-board could only drop the asset. Say what to approve instead.
+    const unapproved = /"(geo\.[^"]+)" is \w+, not approved/.exec(line)?.[1];
+    if (unapproved) { rest.push(`  - ${unapproved} needs approval (npm run maps -- review ${unapproved} approve), or build with --draft: act ${act}, line ${turn}`); continue; }
     review.storyboard ??= {};
     review.storyboard.notes ??= {};
     const list = (review.storyboard.notes[String(act)] ??= []);
@@ -113,7 +116,7 @@ function noteBuildProblems(review: LessonReview, sb: Storyboard, plan: ShotPlan,
     acts.add(act);
     count++;
   }
-  return {count, acts: [...acts].sort((a, b) => a - b), rest};
+  return {count, acts: [...acts].sort((a, b) => a - b), rest: [...new Set(rest)]};
 }
 
 export function storyboardStage(ctx: PipelineContext): void {
@@ -208,7 +211,7 @@ export function buildStage(ctx: PipelineContext): void {
     const noted = noteBuildProblems(review, sb, plan, problem);
     if (noted.acts.length) {
       saveLessonReview(ctx.episode, review, dataRoot);
-      throw new Error(`build: ${noted.count} problem(s) sent back to storyboard act(s) ${noted.acts.join(', ')} as review notes; run again to re-board them${noted.rest.length ? `\nnot tied to a shot:\n${noted.rest.join('\n')}` : ''}`);
+      throw new Error(`build: ${noted.count} problem(s) sent back to storyboard act(s) ${noted.acts.join(', ')} as review notes; run again to re-board them${noted.rest.length ? `\nfor a person:\n${noted.rest.join('\n')}` : ''}`);
     }
     throw new Error(`build: the plan from the storyboard does not pass the checks:\n${noted.rest.length ? noted.rest.join('\n') : problem}`);
   }

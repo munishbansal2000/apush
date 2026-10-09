@@ -110,3 +110,21 @@ describe('build stage: problems go back to the storyboard', () => {
     assert.equal((loadLessonReview('u9e7', join(h.root, 'data')).storyboard?.notes?.['1'] ?? []).filter(n => !n.done).length, 0, 'no new note');
   });
 });
+
+describe('build stage: approval is a person\'s call', () => {
+  it('an unapproved library asset is not sent to the storyboard; the error says what to approve', () => {
+    const h = fakeContext({episode: 'u9e6'});
+    h.ctx.estimateWords = true;
+    h.ctx.draft = false;
+    const turns = parseTranscript(script);
+    const durations = [6, 7, 2, 10, 4];
+    const starts = durations.reduce<number[]>((acc, _, i) => [...acc, i === 0 ? 0.25 : acc[i - 1] + durations[i - 1] + 0.18], []);
+    atomicJson(join(h.ctx.dataDir, 'turns.json'), {turns});
+    atomicJson(join(h.ctx.dataDir, 'timing_map.json'), {starts, durations, totalSec: starts[4] + durations[4] + 0.6});
+    const keys = turnKeys(turns);
+    atomicJson(join(h.ctx.dataDir, 'storyboard.json'), {episode: 'u9e6', acts: outline.acts, turns: keys.map((key, index) => ({key, index,
+      visuals: index === 0 ? [map('map.atlantic-world', 'last time')] : index === 1 ? [map('map.north-america', 'the empire stretched')] : index === 4 ? [map('map.eastern-north-america', 'drawn along the mountains', {lines: [{at: {offset: 0.5}, geo: 'geo.line.proclamation@1763', color: 'red'}]})] : []}))});
+    assert.throws(() => buildStage(h.ctx), /geo\.line\.proclamation@1763 needs approval \(npm run maps -- review/);
+    assert.deepEqual(loadLessonReview('u9e6', join(h.root, 'data')).storyboard?.notes ?? {}, {}, 'no storyboard notes');
+  });
+});

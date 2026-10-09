@@ -30,7 +30,7 @@ export function directorMaps(inputs: DocInputs, draft: boolean): MapData {
       .map(g => ({id: g.properties.id, name: (g.properties as unknown as {name?: string}).name ?? g.properties.id, type: g.geometry.type, precision: g.properties.precision,
         ...baseYears(g.properties as {layer?: {base: true}; validFrom?: string; validTo?: string})})),
     places: Object.entries(inputs.options.places ?? {}).map(([id, p]) => ({id, name: p.name})),
-    views: Object.values(inputs.options.mapViews ?? {}).map(v => ({id: v.id, name: v.name, focus: Object.keys(v.focus ?? {})})),
+    views: Object.values(inputs.options.mapViews ?? {}).map(v => ({id: v.id, name: v.name, focus: Object.entries(v.focus ?? {}).map(([k, f]) => (f.region ? `${k}*` : k))})),
   };
 }
 

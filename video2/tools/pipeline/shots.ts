@@ -134,7 +134,10 @@ export function resolveShotPlan(input: ShotPlan, turns: PipelineTurn[], timing: 
     if (!turn || turn.kind !== 'pause') { issues.push(`${where}: question cards are anchored to a pause turn ({"turn": index}); turn ${a?.turn} is not a pause`); return NaN; }
     return timing.starts[a.turn];
   };
-  const starts = plan.shots.map((shot, i) => (shot.type === 'question' ? pauseStart(`shot ${i + 1} at`, shot.at) : i === 0 ? 0 : phrase(`shot ${i + 1} at`, shot.at as PhraseAnchor)));
+  // When each shot's words are spoken. Offsets inside a shot count from here, not from where the shot is first seen:
+  // the first shot is shown from 0s, but its moves still follow its phrase.
+  const anchors = plan.shots.map((shot, i) => (shot.type === 'question' ? pauseStart(`shot ${i + 1} at`, shot.at) : phrase(`shot ${i + 1} at`, shot.at as PhraseAnchor)));
+  const starts = [...anchors];
   if (starts.length) starts[0] = 0;
   const endSec = plan.end ? phrase('plan end', plan.end, 'end') : timing.totalSec;
   const shots: DocShot[] = plan.shots.map((shot, i) => {
@@ -149,7 +152,7 @@ export function resolveShotPlan(input: ShotPlan, turns: PipelineTurn[], timing: 
       const max = shot.type === 'map' || shot.type === 'custom' ? rules.maxMapSec : shot.type === 'question' ? pauseLen + rules.questionOverrunSec : rules.maxShotSec;
       if (len > max + rules.lengthToleranceSec) issues.push(`${id}: ${len.toFixed(1)}s holds longer than ${max}s on one ${shot.type} shot; cut on another spoken cue`);
     }
-    const cue = (where: string, c: Cue) => ('offset' in c ? startSec + c.offset : phrase(`${id} ${where}`, c));
+    const cue = (where: string, c: Cue) => ('offset' in c ? anchors[i] + c.offset : phrase(`${id} ${where}`, c));
     for (const kind of shot.atmosphere ?? []) if (!(ATMOSPHERES as readonly string[]).includes(kind)) issues.push(`${id}: unknown atmosphere "${kind}" (${ATMOSPHERES.join(', ')})`);
     if (shot.atmosphere?.length && (shot.type === 'map' || shot.type === 'custom')) issues.push(`${id}: ${shot.type} shots take no atmosphere layers`);
     const base = {id, startSec, endSec: end, transition: shot.transition, atmosphere: shot.atmosphere as Atmosphere[] | undefined};
