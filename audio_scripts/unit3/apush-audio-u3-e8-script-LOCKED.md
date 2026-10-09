@@ -10,7 +10,7 @@ Marcus: [passionate] Ratify it. The Articles are dead, the country is broke. We 
 
 Henry: [passionate] I declined the Convention because I smelt a rat, and the rat is consolidation. This Constitution does not mend a confederacy of states. It replaces it with one great national government that will swallow the states whole. A president who commands armies. A Congress that taxes you directly. Courts that overrule your own. And nowhere in it a bill of rights for the liberties we just fought a war to win.
 
-Maya: [energetic] Round one: the theory fight. Marcus, make the case.
+Maya: Round one: the theory fight. Marcus, make the case.
 
 Marcus: [measured] Three men, one pseudonym: Publius. They raced the ratification clock in the New York papers. Take Federalist 10, the Papers' best argument. The problem is factions: citizens united by some passion or interest, against everyone else's rights. Small republics die of factions: a majority faction simply votes the minority down. Madison's answer: extend the sphere. Enlarge the republic, take in more interests, and no single faction can become a majority. He came back to it in Federalist 51: "a coalition of a majority of the whole society could seldom take place." Bigness isn't the danger. Bigness is the cure.
 
@@ -18,31 +18,31 @@ Maya: [curious, inquisitive tone] Hold on. Bigness is the cure?
 
 Henry: [passionate] Then let Publius answer this. A republic lives only where the rulers know the ruled, where the farmer sees the magistrate, and the magistrate fears the farmer. Stretch that bond across a continent and what remains — a government the people cannot see, and cannot touch? And while your Publius writes of factions, his Federalist 78 hands judges the power to void laws. Unelected men, serving for life, overruling elected legislatures. How is that republican?
 
-Marcus: [measured] Some tribunal must say what the law is. Federalist 51: ambition must be made to counteract ambition. The branches check one another, so none runs wild.
+Marcus: Some tribunal must say what the law is. Federalist 51: ambition must be made to counteract ambition. The branches check one another, so none runs wild.
 
 Henry: [intense] If this government is so safe, why must it tax me directly, raise a standing army in peacetime, and override my state's laws by the supremacy clause? Necessary and proper, they call it, words so elastic they cover anything. A government that may do whatever it calls necessary is a government without limits.
 
 Henry: [passionate] And I ask you, what right had they to say, "We, the people"? Who authorized them to speak the language of "We, the people," instead of "We, the states"? If the states be not the agents of this compact, it must be one great, consolidated, national government.
 
-Maya: [confident tone] First box checked. The Federalist theory: Madison's big republic, ambition countering ambition. And the Anti-Federalist answer: consolidation, distant power. Round two: the alarm. Henry, your strongest card was what the document leaves out.
+Maya: First box checked. The Federalist theory: Madison's big republic, ambition countering ambition. And the Anti-Federalist answer: consolidation, distant power. Round two: the alarm. Henry, your strongest card was what the document leaves out.
 
 Henry: [intense] A bill of rights. We had just fought a war for liberty, and this Constitution protects none of it in writing. The Federalists called such a list unnecessary. Then, when we pressed them, dangerous. Publius wrote in Federalist 84 that listing rights might imply the unlisted ones aren't protected. Then the votes ran short, and the list became a promise. So which was it, Marcus? Unnecessary while you were winning, essential when you were losing?
 
-Marcus: [measured] The argument in 84 was real. But the states wanted the insurance in writing, and the promise was kept: ten amendments ratified by 1791.
+Marcus: The argument in 84 was real. But the states wanted the insurance in writing, and the promise was kept: ten amendments ratified by 1791.
 
 Henry: [passionate] If listed powers were so safe, nineteen votes would not have nearly killed this thing. The people demanded their rights in writing. Does a list of rights restrain a government with a standing army and the necessary and proper clause? Paper restrains power only while power agrees to be restrained.
 
-Maya: [conversational] Henry, a word about the speaker. You warn of tyranny and bondage, and you hold people in bondage. A student hearing "liberty" from a slaveholder hears the contradiction.
+Maya: Henry, a word about the speaker. You warn of tyranny and bondage, and you hold people in bondage. A student hearing "liberty" from a slaveholder hears the contradiction.
 
 Henry: [intense] You strike where I am weakest, and I will not dodge it. I have said I deplore slavery, and I hold men in bondage still. But hear my fear plainly, for it is Virginia's fear. Among the ten thousand implied powers Congress may assume, they may, if we be engaged in war, liberate every one of your slaves if they please. By men, a majority of whom have no common interest with you.
 
-Marcus: [measured] Slavery wasn't a footnote to ratification. In Virginia, the fear that federal power might one day end slavery was itself an argument against the Constitution. That's the exam point: slavery shaped this fight.
+Marcus: Slavery wasn't a footnote to ratification. In Virginia, the fear that federal power might one day end slavery was itself an argument against the Constitution. That's the exam point: slavery shaped this fight.
 
-Maya: [conversational] But what's your alternative? The Articles just failed.
+Maya: But what's your alternative? The Articles just failed.
 
 Henry: [passionate] Amend them. Give the confederation teeth: the power to tax and regulate trade, with the states still the masters of the compact. And I am not alone. George Mason refused to sign this Constitution in Philadelphia. In New York, a writer calling himself Brutus answered the Constitution essay by essay. His charge, and mine: you call this government federal. Read it. It is one complete national government, and no republic this large can hold together. It must consolidate, or break apart.
 
-Maya: [confident tone] Second box checked. The alarm: no bill of rights, standing armies, direct taxes, elastic clauses, Brutus's warning. One exam warning: the Anti-Federalists weren't against government. They were against this government.
+Maya: Second box checked. The alarm: no bill of rights, standing armies, direct taxes, elastic clauses, Brutus's warning. One exam warning: the Anti-Federalists weren't against government. They were against this government.
 
 Maya: Round three: the votes. Theory didn't decide this. Your turn. You're a Massachusetts delegate in February 1788. The Constitution needs nine states, not thirteen. Your convention is deadlocked and slipping away. What deal do you offer?
 
@@ -50,13 +50,13 @@ Maya: Round three: the votes. Theory didn't decide this. Your turn. You're a Mas
 
 Maya: You offer what Governor Hancock offered, carried into the convention on a litter, wrapped in flannel, his gout flaring — his enemies swore it was convenient: ratify now, recommend amendments the moment the new government starts. Nothing written into the document. Just a promise. Massachusetts ratifies, by nineteen votes. Third box checked: the squeaker votes.
 
-Marcus: [measured] And the squeaks kept coming. New Hampshire made nine in June 1788. Then Virginia, Henry's own state. Then New York, by three votes.
+Marcus: And the squeaks kept coming. New Hampshire made nine in June 1788. Then Virginia, Henry's own state. Then New York, by three votes.
 
-Maya: [conversational] Rewind three weeks, to before New York voted. Picture Philadelphia, July Fourth, 1788. Ten states in. Five thousand marching, seventeen thousand watching. Blacksmiths dragging a working forge through the streets, hammering swords into farm tools. A rolling temple with thirteen columns: ten finished, three still bare, for the states still holding out.
+Maya: Rewind three weeks, to before New York voted. Picture Philadelphia, July Fourth, 1788. Ten states in. Five thousand marching, seventeen thousand watching. Blacksmiths dragging a working forge through the streets, hammering swords into farm tools. A rolling temple with thirteen columns: ten finished, three still bare, for the states still holding out.
 
 Henry: [intense] I fought it in Virginia for weeks. Two states stood outside the union it claimed to speak for. North Carolina refused to ratify and adjourned. Rhode Island refused to call a ratifying convention. They put it to town meetings instead, and voted it down face to face.
 
-Marcus: [measured] And they joined: 1789 and 1790, last and under pressure. The union held and grew.
+Marcus: And they joined: 1789 and 1790, last and under pressure. The union held and grew.
 
 Henry: [passionate] We got the Bill of Rights because we nearly killed the Constitution without it. Do not rewrite that as generosity. It was not written in Philadelphia. It was added in 1791, the price of ratification.
 
@@ -68,13 +68,13 @@ Maya: I tried reading all 85 once. I got to number 14. Closing statements. Henry
 
 Henry: [intense] We warned that a distant government would grow, that the states would wither, that liberty on paper would yield to power in armies and taxes. We lost the vote. Time will prove us right. They promised a government of listed powers. They built one whose powers have no list.
 
-Marcus: [measured] The Federalists promised a large republic could be energetic and safe, and they built it: representation, checks, courts, then the Bill of Rights on top. Now the hardest truth about this document: it protected slavery. It counted three-fifths of the enslaved population toward House seats. It ordered fugitive slaves returned. It barred Congress from touching the slave trade until 1808. The Constitution I defend compromised with slavery to exist at all.
+Marcus: The Federalists promised a large republic could be energetic and safe, and they built it: representation, checks, courts, then the Bill of Rights on top. Now the hardest truth about this document: it protected slavery. It counted three-fifths of the enslaved population toward House seats. It ordered fugitive slaves returned. It barred Congress from touching the slave trade until 1808. The Constitution I defend compromised with slavery to exist at all.
 
-Maya: [conversational] That's an honest concession. But Henry's charge was consolidation.
+Maya: That's an honest concession. But Henry's charge was consolidation.
 
 Marcus: [intense] And here is my answer. The states kept their governments, their courts, their militias. Two centuries on, the "one great national government" Henry fears still shares power with fifty states. Whether a confederacy of jealous states could ever have ended slavery — that is this debate's question, not its answer.
 
-Maya: [conversational] Four boxes, let's land them. The Federalist theory. The Anti-Federalist alarm, and Brutus's warning about the word "federal." The squeaker votes: 19, then 3, and Hancock's promise. The verdict: the Federalists won the fight. The Anti-Federalists won the argument's afterlife, or so their heirs claim. Marcus would answer that the machine still runs. But many a states' rights battle since has quoted the losers of 1788.
+Maya: Four boxes, let's land them. The Federalist theory. The Anti-Federalist alarm, and Brutus's warning about the word "federal." The squeaker votes: 19, then 3, and Hancock's promise. The verdict: the Federalists won the fight. The Anti-Federalists won the argument's afterlife, or so their heirs claim. Marcus would answer that the machine still runs. But many a states' rights battle since has quoted the losers of 1788.
 
 Maya: Three questions, AP-shaped. Say your answer before I give it. And on the long essay: this debate is your counterargument paragraph. Argue the Federalist case, then answer Henry. Graders reward the student who sees both sides.
 

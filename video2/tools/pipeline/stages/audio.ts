@@ -4,18 +4,22 @@ import {atomicJson, readJson, sha256, type PipelineTurn} from '../../pipeline-co
 import type {PipelineContext} from '../context';
 import {applyPronunciations, cleanSpeech, type Pronunciation} from '../speech';
 import {findTool} from '../tools';
+import {isDirected, tagIssues} from '../fish-tags';
 
 /** Hash of every input that determines the rendered narration. */
 export const audioInputHash = (ctx: PipelineContext, turns: PipelineTurn[], pronunciations: Pronunciation[]) =>
   sha256(JSON.stringify({mode: ctx.mode, turns, edge: ctx.cfg.edge, fish: ctx.cfg.fish, pron: pronunciations}));
 
-/** Render one mp3 per speech turn (Edge TTS in dev, Meta-directed Fish in prod). */
+/**
+ * Render one mp3 per speech turn. Dev: Edge TTS with every tag stripped. Prod: Fish speaking the script's own direction
+ * tags (checked against the guideline catalog); no LLM pass, so the same script always yields the same audio.
+ */
 export function audioStage(ctx: PipelineContext, turns: PipelineTurn[], pronunciations: Pronunciation[]): void {
   const {cfg, mode, force, audioDir, ttsDir} = ctx;
   const audioHash = audioInputHash(ctx, turns, pronunciations);
   if (!ctx.stages.includes('audio')) return;
   if (ctx.current('audio', audioHash) && turns.filter(t => t.kind === 'speech').every(t => existsSync(join(audioDir, `${t.id}.mp3`)))) console.log('[audio] checkpoint current');
-  else if (ctx.dryRun) console.log(`[audio] dry-run: ${mode === 'prod' ? 'Meta UI Fish direction + Fish' : 'Edge TTS'}`);
+  else if (ctx.dryRun) console.log(`[audio] dry-run: ${mode === 'prod' ? 'Fish with the script\'s own direction tags' : 'Edge TTS'}`);
   else {
     mkdirSync(audioDir, {recursive: true}); mkdirSync(ttsDir, {recursive: true});
     // Rendered audio is content-addressed (tts/<episode>/cache/<artifactHash>.mp3), so
@@ -29,25 +33,13 @@ export function audioStage(ctx: PipelineContext, turns: PipelineTurn[], pronunci
     // Text sent to TTS before pronunciation substitution (Fish adds performance tags in prod).
     let directed = Object.fromEntries(speech.map(t => [t.id, cleanSpeech(t.text ?? '')]));
     if (mode === 'prod') {
-      const prompt = `You are a Fish Audio S2 performance editor. Preserve every spoken word and historical claim exactly. Add only supported square-bracket performance commands where they improve delivery. Never add stage directions that could be spoken aloud. Return JSON only: {"turns":[{"id":"t00","text":"..."}]}. Include every supplied speech turn exactly once.\n\n${JSON.stringify(speech.map(t => ({id: t.id, speaker: t.speaker, text: t.text})), null, 2)}`;
-      const planned = readJson<{turns: {id: string; text: string}[]}>(ctx.meta('fish-direction', prompt));
-      directed = Object.fromEntries(planned.turns.map(row => [row.id, row.text]));
-      const missing = speech.filter(t => !directed[t.id]);
-      if (missing.length) throw new Error(`Meta Fish plan omitted ${missing.map(t => t.id).join(', ')}`);
-      for (const turn of speech) if (cleanSpeech(directed[turn.id]) !== cleanSpeech(turn.text ?? '')) {
-        throw new Error(`Meta Fish direction changed spoken wording in ${turn.id}; refusing production TTS`);
-      }
-      // A lesson-level Meta review may phrase performance tags differently on
-      // every call. Preserve the approved directed text for unchanged source
-      // lines (matched by speaker + wording, not turn id) so an edit cannot churn unrelated Fish audio.
-      const priorDirected = new Map<string, string>();
-      for (const prior of Object.values(priorIndex)) {
-        if (prior.engine === 'fish' && prior.hash && (prior.directed ?? prior.text)) priorDirected.set(`${prior.speaker}|${prior.hash}`, (prior.directed ?? prior.text)!);
-      }
-      for (const turn of speech) {
-        const kept = priorDirected.get(`${turn.speaker ?? 'narrator'}|${sha256(cleanSpeech(turn.text ?? ''))}`);
-        if (kept) directed[turn.id] = kept;
-      }
+      // Lessons are directed as they are written (apush-final-guidelines.md §9): Fish speaks the script's own tags,
+      // minus {...} markup, after a catalog check. An undirected script is spoken plainly.
+      const issues = tagIssues(speech.map(t => ({id: t.id, text: t.text ?? ''})));
+      if (issues.length) throw new Error(`script direction uses tags Fish does not support:\n${issues.map(i => `  - ${i}`).join('\n')}`);
+      directed = Object.fromEntries(speech.map(t => [t.id, (t.text ?? '').replace(/\{[^}]+\}/g, '').replace(/\s+/g, ' ').trim()]));
+      if (!isDirected(speech.map(t => t.text ?? ''))) console.warn('[audio] WARNING: the script has no Fish direction tags; Fish will read it flat. Direct it per apush-final-guidelines.md §9.');
+      else console.log(`[audio] Fish direction: the script's own tags (${speech.filter(t => /\[/.test(t.text ?? '')).length}/${speech.length} turns tagged)`);
     }
     // Resolve the synthesizer once (and only when a turn actually needs rendering), not per turn.
     let edgeTts: string | undefined;
