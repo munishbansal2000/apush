@@ -1,14 +1,14 @@
 # U3-E11 — Interview: Maya + Marcus (Fish Audio)
-# Episode 28: The Revolution of 1800. ~10 min experienced (1,565 spoken words + 60s pauses = ≈9.8 min at ≤180 WPM).
+# Episode 28: The Revolution of 1800. ~10 min experienced (1,589 spoken words + 60s pauses = ≈9.8 min at ≤180 WPM).
 # Pronunciation: Crèvecoeur (krev-KUR), Gallatin (GAL-uh-tin)
-# Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. They are production silence — real quiet in the mix, never spoken. Strip this header, the read note, and all pause tags before TTS; convert pause tags to real silence. Spoken words: 1565. Pauses: 68s. Experienced runtime ≈ 9.8 min at ≤180 WPM.
+# Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. They are production silence — real quiet in the mix, never spoken. Strip this header, the read note, and all pause tags before TTS; convert pause tags to real silence. Spoken words: 1589. Pauses: 60s. Experienced runtime ≈ 9.8 min at ≤180 WPM.
 Maya: [professional broadcast tone] Last time: the Alien and Sedition backlash turned the election of 1800 into a verdict on the Federalists, and the verdict came back guilty. This time: the transfer itself. The sitting president loses and skips the inauguration, leaving town before dawn. Somehow that's the most revolutionary thing in the episode. Four boxes on your sheet: the tie, the pragmatist, Marbury's judo, and the culture. Circle the ones you couldn't explain right now. About ten minutes.
 
 Marcus: Jefferson beats Adams in the Electoral College, 73 to 65. But each elector cast two votes back then, no separate vote for vice president, so Jefferson's own running mate, Aaron Burr, ties him at 73.
 
 Maya: The tie isn't Jefferson versus Adams. It's Jefferson versus his own ticket.
 
-Marcus: Exactly. A tie goes to the House, voting by state. And the House is still Federalist, the party that just lost. So the losers pick the winner.
+Marcus: Exactly. A tie goes to the House, voting by state. And the House is still Federalist, the party that just lost. So the losers can block the winner.
 
 Maya: What could go wrong.
 
@@ -24,7 +24,7 @@ Marcus: He called Jefferson's principles wrong, but principles. Burr, he said, h
 
 [10-second pause]
 
-Marcus: The voters. Nobody converted. Hamilton's letters did the work, and on the 36th ballot Jefferson won it.
+Marcus: The votes. Nobody converted. Federalist holdouts stopped blocking Jefferson once Hamilton's letters helped push them, and he won on the 36th ballot.
 
 Maya: The republic was saved by stationery. The most passive-aggressive rescue in history.
 
@@ -36,7 +36,7 @@ Marcus: The first time control of the presidency passed from one party to anothe
 
 Maya: So the voters picked Jefferson. The people had spoken.
 
-Marcus: [firm] Not quite. The House did. The 73-73 tie went to the House, voting by state. The Federalists who'd just lost got to choose.
+Marcus: [firm] Not quite. The House did. The seventy-three to seventy-three tie went to the House, voting by state. The Federalists who'd just lost could block the winner.
 
 Maya: [confident tone] One down. Checking the tie off my sheet.
 
@@ -48,7 +48,7 @@ Marcus: He decided it was economically useful, a very un-campaign conclusion. Ke
 
 Maya: SAQ bait: continuity and change under Jefferson. The Bank is your continuity.
 
-Marcus: Then 1803, and the most un-Jeffersonian thing imaginable. Napoleon had forced Spain to hand Louisiana back to France, and Jefferson first just wanted New Orleans. Then Napoleon's American project collapsed: the army he'd sent to recapture Haiti died of disease, and war with Britain was coming. Napoleon offered the entire territory: fifteen million dollars, about three cents an acre. The country doubled overnight.
+Marcus: Then 1803, and the most un-Jeffersonian thing imaginable. Napoleon had forced Spain to hand Louisiana back to France, and Jefferson first just wanted New Orleans. Then Napoleon's American project collapsed: the army he'd sent to recapture Haiti was destroyed by disease and Haitian resistance, and war with Britain was coming. Napoleon offered the entire territory: fifteen million dollars, about three cents an acre. The country doubled overnight.
 
 Maya: [catching] Because he needed the cash for the war —
 
@@ -80,7 +80,7 @@ Marcus: [firm] Common mistake. Marbury lost. The Court won judicial review.
 
 Maya: Box four: the culture. A republic needs its own culture as much as its government.
 
-Marcus: Noah Webster started with spelling: the 1783 blue-backed speller, the little blue book generations of kids learned to read from. Theater for theatre, color for colour. Spelling as independence. And the line behind the whole project, "a national language is a band of national union," is credited to his 1789 Dissertations.
+Marcus: Noah Webster started with spelling: the 1783 blue-backed speller, the little blue book generations of kids learned to read from. His later books pushed theater for theatre, color for colour. Spelling as independence. And the line behind the whole project, "a national language is a band of national union," is credited to his 1789 Dissertations.
 
 Maya: [confident tone] Language as nation-building.
 
@@ -120,7 +120,7 @@ Maya: Three questions, AP-shaped. Say your answer before I give it. One: a Feder
 
 [10-second pause]
 
-Maya: Alexander Hamilton, writing to his own party, for Jefferson. The tell: nobody converted. Federalists decided Burr was worse, and Hamilton's letters tipped the House. Thirty-six ballots.
+Maya: Alexander Hamilton, writing to his own party, for Jefferson. The tell: nobody converted. Federalist holdouts stopped blocking Jefferson, and Hamilton's letters helped push them. Thirty-six ballots.
 
 Maya: Two: Jefferson the strict constructionist buys Louisiana with no constitutional clause allowing it. Explain the contradiction.
 
@@ -134,13 +134,13 @@ Maya: Three: Marshall the Federalist rules against Marbury the Federalist. How d
 
 Maya: By striking down the law that let the Court help Marbury, Marshall claimed judicial review, the power to void acts of Congress. Marbury lost his commission; the Court won the final word.
 
-Maya: One more, fast. Webster's line on language and union: which book gets the credit?
+Maya: One more, fast. Webster's speller: what job did it do for national identity?
 
 [10-second pause]
 
-Maya: The 1789 Dissertations get the credit. The line: "A national language is a band of national union."
+Maya: It taught generations of kids to read from one American book, so a shared language became a badge of the new nation.
 
-Marcus: [intrigued] And that's the episode. Next time: the Unit Three cram. Eleven episodes, ten questions, no mercy.
+Marcus: [intrigued] And that's the episode. Next time: the Unit Three cram. Eleven episodes, eleven questions, no mercy. Check your boxes.
 
 Maya: [professional broadcast tone] Power changed hands. The hands stayed few.
 
@@ -158,10 +158,10 @@ Tier 1 = the books (`~/workspace/apush/books/extracted/{5steps2024,premium2027,p
 - First party transfer: 5steps2024 ch12 — "the first time that control of the presidency passed from one party to another" (Tier 1). The v2 "modern world" extension was the script's own — cut in v3 (registry F-U3-076).
 - Twelfth Amendment (1804), separate ballots for president/VP: 5steps2024 ch12 (Tier 1). v3 teaches "so that tie could never happen again" (the amendment fixed the tie mechanism; House-decided elections remained possible).
 - Jefferson kept the Bank ("accepted its economic usefulness"); Gallatin cut taxes incl. the whiskey excise; the Alien and Sedition Acts allowed to lapse: 5steps2024 ch12 (Tier 1). CUT fail-closed (v3): "started/paying down the debt" — not found in Tier-1 (registry F-U3-070).
-- Louisiana: Napoleon forced Spain's cession (1800); the army sent to recapture Haiti perished of disease; looming Anglo-French war; $15M for the entire territory; ~3¢/acre; doubled the country; Jefferson's scruples set aside: 5steps2024 ch12 (Tier 1). CUT fail-closed (v3): drafted-an-amendment / agonized-in-letters (Tier-1 verifies "legal scruples" only); "the Senate ratified and the House paid" (not found in Tier-1). "On the loose construction he'd campaigned against" remains the script's interpretive gloss on the scruples passage — disclosed as commentary (registry F-U3-071, F-U3-072).
+- Louisiana: Napoleon forced Spain's cession (1800); the army sent to recapture Haiti perished of disease (2026-10-09: dialogue now also names Haitian resistance per §7 name-the-actor — standard account, Layer 3 to pin); looming Anglo-French war; $15M for the entire territory; ~3¢/acre; doubled the country; Jefferson's scruples set aside: 5steps2024 ch12 (Tier 1). CUT fail-closed (v3): drafted-an-amendment / agonized-in-letters (Tier-1 verifies "legal scruples" only); "the Senate ratified and the House paid" (not found in Tier-1). "On the loose construction he'd campaigned against" remains the script's interpretive gloss on the scruples passage — disclosed as commentary (registry F-U3-071, F-U3-072).
 - Midnight judges: "erroneously believed to be signing these many commissions on his last night in office": 5steps2024 ch12 (Tier 1).
 - Marshall chief justice 1801–1835; Marbury (justice of the peace, DC) commission undelivered; Madison refused; Judiciary Act of 1789 provision ruled unconstitutional; judicial review established: 5steps2024 ch12 (Tier 1).
-- Webster's speller (1783), Americanized spellings (theater/theatre, color/colour): premium2027 ch5 (Tier 1).
+- Webster's speller (1783), Americanized spellings (theater/theatre, color/colour): premium2027 ch5 (Tier 1). 2026-10-09: dialogue ties the spellings to "his later books" (most reforms came in later editions/dictionaries) pending a quoted prem27 line; bonus question no longer asks which book gets the quote (§8 no-trivia).
 - "A national language is a band of national union" — taught ONLY as "the line credited to his 1789 Dissertations," never as verified actual words (registry F-U3-057; Tier-1 attribution gap, fail-closed).
 - Trumbull's Declaration canvas, 1818: princeton practice test (Tier 1, minimal). The v2 rotunda / "never in the room together" claims cut fail-closed — not in Tier-1. Trumbull on the $2 bill reverse: general currency knowledge, disclosed as Maya's pop-culture beat, not a taught historical claim.
 - CUT fail-closed (v3): Peale's museum; the Capitol begun 1793 — not found in Tier-1 (registry F-U3-073).

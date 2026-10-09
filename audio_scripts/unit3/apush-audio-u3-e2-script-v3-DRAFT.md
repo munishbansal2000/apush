@@ -1,8 +1,8 @@
 # U3-E2 — Maya + Marcus (Fish Audio)
-# Episode 19: Taxation Without Representation. Eleven and a half minutes experienced (1,881 spoken words + 50s pauses = 11.5 min at 180 WPM).
+# Episode 19: Taxation Without Representation. About eleven minutes experienced (1,844 spoken words + 50s pauses = 11.1 min at 180 WPM).
 # Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Maya tracks three boxes on her episode sheet: the Stamp Act, virtual representation, and the Declaratory Act. Strip this header and the read note before TTS; convert pause tags to silence. The em dash in the closing tagline is a held beat: leave a full breath between Marcus's setup line and Maya's landing line. Do not rush it. Self-test model answers follow claim-evidence-reasoning logic in natural phrasing; no spoken labels (per the user's 2026-10-06 ruling: TTS reads everything literally).
 # Pronunciation: GREN-vil (Grenville), OH-tiss (Otis), ROCK-ing-um (Rockingham), deh-KLAIR-uh-tor-ee (Declaratory), non-im-por-TAY-shun (nonimportation)
-Maya: [professional broadcast tone] Last time: the bill came due. The Sugar Act landed and the smuggling crackdown began. Thirteen colonies got London's message: the free ride is over. Now comes the tax that touched everything — your newspaper, your diploma, even your dice. Three boxes on your sheet: the Stamp Act, virtual representation, and the Declaratory Act. Circle the ones you couldn't explain right now. Eleven and a half minutes, and you'll land all three.
+Maya: [professional broadcast tone] Last time: the bill came due. The Sugar Act landed and the smuggling crackdown began. Thirteen colonies got London's message: the free ride is over. Now comes the tax that touched everything — your newspaper, your diploma, even your dice. Three boxes on your sheet: the Stamp Act, virtual representation, and the Declaratory Act. Circle the ones you couldn't explain right now. About eleven minutes, and you'll land all three.
 
 Marcus: Seventeen sixty-five. Parliament passes the Stamp Act, and this one is different from everything before it. The old taxes were customs duties, paid at the docks when goods came in. This was a direct tax: Parliament reaching past the port, past the merchant, straight into a colonist's desk drawer.
 
@@ -10,7 +10,7 @@ Maya: [incredulous] Wait — stamps? Like lick-and-stick postage stamps? Were co
 
 Marcus: Not postage. No envelopes, no licking. The "stamp" was a mark pressed into the paper itself, and you had to buy that paper from the crown before you could print or sign a word. That little crunch —
 
-Maya: I know that crunch. My aunt's a notary, and her seal press makes exactly that sound on every document she stamps. So every diploma and every newspaper in 1765 made that sound, and the money went to London.
+Maya: I know that crunch. My aunt's a notary, and her seal press makes exactly that sound on every document she stamps. So every diploma and every newspaper in 1765 would have made that sound, and the money went to London.
 
 Marcus: Wills, deeds, licenses, newspapers, pamphlets, almanacs, playing cards, dice. It touched almost everyone, and it landed hardest on the people who could complain the loudest: lawyers, printers, merchants. And unlike the old duties, which at least claimed to steer trade, this one had a single purpose. Raise revenue.
 
@@ -60,9 +60,7 @@ Maya: Your turn. The boycott is biting, and British merchants are losing money f
 
 [10-second pause]
 
-Marcus: The merchants. Follow the money Parliament can hear. The boycott didn't just starve the treasury. It recruited London's own businessmen to the colonial cause.
-
-Maya: Box two: the argument underneath it all. Parliament's answer had a name: virtual representation.
+Marcus: The merchants. Follow the money Parliament can hear. The boycott didn't just starve the treasury. It recruited London's own businessmen to the colonial cause. And box two is the argument underneath it all. Parliament's answer had a name: virtual representation.
 
 Maya: [curious, inquisitive tone] Virtual. Like pretend representation?
 
@@ -70,7 +68,7 @@ Marcus: The theory said members of Parliament represented the whole empire: ever
 
 Maya: [curious, inquisitive tone] I'm sorry, but that's the dumbest thing I've ever heard. I'm represented by people I've never met, who couldn't find my town on a map, and I can't vote them out?
 
-Marcus: The colonists said the same thing. Their answer was actual representation: no Englishman pays a tax he never consented to, and consent means a body you actually elected. Their assemblies had taxed them for a century. Parliament never had.
+Marcus: The colonists said the same thing. Their answer was actual representation: no Englishman pays a tax he never consented to, and consent means a body you actually elected. Their assemblies had taxed them for a century. Parliament had never laid a direct tax on them.
 
 Maya: [curious, inquisitive tone] And they had the receipts. Wasn't that just the old English rule?
 
@@ -78,9 +76,9 @@ Marcus: The old accepted precept: no Englishman could be compelled to pay taxes 
 
 Maya: [curious, inquisitive tone] So who wrote the famous version? "Taxation without representation is tyranny." That was Otis, right?
 
-Marcus: James Otis, in a pamphlet called The Rights of the British Colonies Asserted and Proved, a bestseller of its day. Decades later, John Adams swore he'd heard Otis say that exact line, but nobody swears to the exact words — Adams was remembering it across decades. The idea was Otis's. One thing students get wrong: Otis wasn't arguing for independence. He wanted seats in Parliament, or the colonies taxing themselves. In 1765, almost nobody was arguing for independence.
+Marcus: James Otis, in a pamphlet called The Rights of the British Colonies Asserted and Proved, a bestseller of its day. John Adams remembered Otis saying something like it, decades later; nobody can confirm the exact words. The idea was Otis's. One thing students get wrong: Otis wasn't arguing for independence. He wanted seats in Parliament, or the colonies taxing themselves. In 1765, almost nobody was arguing for independence.
 
-Maya: One I genuinely know: D.C. license plates still say "Taxation Without Representation." The slogan outlived the empire by two and a half centuries.
+Maya: One I genuinely know: D.C. license plates say "End Taxation Without Representation." The slogan outlived the Stamp Act by two and a half centuries.
 
 Marcus: I didn't know that was on the plates.
 
@@ -89,8 +87,6 @@ Maya: First thing you see in a D.C. traffic jam.
 Maya: [confident tone] One more exam note. "Virtual representation" is Parliament's line, never the colonists'. If you hand it to the wrong side, the whole paragraph falls apart. And the trap here: don't write that the colonists told Parliament it had no power at all. In sixty-five they were denying one power, the power to tax them, while still calling themselves British subjects.
 
 Marcus: The boycott worked. In early sixty-six, Parliament repeals the Stamp Act. By then Grenville was already gone. The king had replaced him with Lord Rockingham, who'd opposed the tax all along.
-
-Maya: [confident tone] Checking box one, then. The Stamp Act: first direct tax, stamped paper on everything down to the dice, dead by boycott in sixty-six. Box one, checked.
 
 Maya: Box three: the repeal came with company — a repeal with fine print. Parliament linked it to the Declaratory Act: full power to make laws binding the colonies, in all cases whatsoever.
 
@@ -110,27 +106,27 @@ Maya: So the repeal settled the argument, right? Then the principle fight was ov
 
 Marcus: [firm] Not exactly. The repeal ended a tax. The Declaratory Act kept the claim. Two things happened that month, and they point in opposite directions.
 
-Maya: One last look before the lock. Three boxes, let's land them. One: the Stamp Act. Seventeen sixty-five, first direct tax. Stamped paper on wills, newspapers, dice, the works. Killed by the boycott and the Stamp Act Congress in early sixty-six. And Grenville got replaced by — Rocking...
+Maya: Three boxes, let's land them. One: the Stamp Act. Seventeen sixty-five, first direct tax. Stamped paper on wills, newspapers, dice, the works. Killed by the boycott and the Stamp Act Congress in early sixty-six. And Grenville got replaced by — Rocking...
 
 Marcus: Rockingham.
 
 Maya: [confident tone] Rockingham. Right. Box one, checked.
 
-Marcus: Checked.
+Marcus: Solid.
 
-Maya: [confident tone] Two: virtual representation versus actual representation. Parliament's theory: its members speak for the whole empire, so the colonists are virtually represented. The colonial answer: only a body we elected can tax us. Otis's pamphlet and the old no-tax-without-consent rule behind it. Box two, checked.
+Maya: [confident tone] Two: virtual representation versus actual representation. Parliament's theory: its members speak for the whole empire, so the colonists are virtually represented. The colonial answer: only a body we elected can tax us. Otis's pamphlet and the old no-tax-without-consent rule behind it. Two's on paper.
 
 Marcus: On the sheet.
 
-Maya: [confident tone] Three: the Declaratory Act. Same month as the repeal, sixty-six. Parliament claims power in all cases whatsoever. The win that wasn't. Box three, checked.
+Maya: [confident tone] Three: the Declaratory Act. Same month as the repeal, sixty-six. Parliament claims power in all cases whatsoever. The win that wasn't. Three for three.
 
 Marcus: All three.
 
-Maya: Three questions, AP-shaped. Say your answer before I give it. One: a stimulus hands you the Stamp Act Congress's Declaration of Rights and Grievances. Only representatives chosen by the colonists can tax them. What principle is the Congress asserting, and what line did Parliament invent to answer it?
+Maya: Three questions, AP-shaped. Say your answer before I give it. One: a stimulus hands you the Stamp Act Congress's Declaration of Rights and Grievances. Only representatives chosen by the colonists can tax them. What principle is the Congress asserting, and what line had Parliament used to justify the tax?
 
 [10-second pause]
 
-Maya: Actual representation. Taxation needs consent through a body you elected. Twenty-seven delegates from nine colonies drew it up in October sixty-five, right after the Stamp Act, and the logic is that Parliament's virtual representation line was invented to answer this very cry: a London MP who never faced colonial voters can't consent for a Boston printer. The consent has to come from our side.
+Maya: Actual representation. Taxation needs consent through a body you elected. Twenty-seven delegates from nine colonies drew it up in October sixty-five, right after the Stamp Act, and the logic is that Parliament's virtual representation line can't answer this cry: a London MP who never faced colonial voters can't consent for a Boston printer. The consent has to come from our side.
 
 Maya: Two: was the Stamp Act fight about money?
 
@@ -144,7 +140,7 @@ Maya: Three: a stimulus prints this line from seventeen sixty-six: Parliament as
 
 Maya: It hollowed the victory out. The Declaratory Act came linked to the repeal, and the repeal removed one tax while the Act kept Parliament's claim to tax at will. The principle the colonists fought over stayed lost. They won the battle and lost the argument.
 
-Maya: [intrigued] Check your three boxes. Episode nineteen in the books. Next time: Boston gets punished for the Tea Party, and the colonies answer by sending delegates to Philadelphia.
+Maya: [intrigued] Check your three boxes. Episode nineteen in the books. Next time: London tries a new set of duties, and Boston fills up with soldiers.
 
 Marcus: [professional broadcast tone] They killed the tax —
 

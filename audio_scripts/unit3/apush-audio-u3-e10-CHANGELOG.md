@@ -1,3 +1,15 @@
+## 2026-10-09 — review fixes (video2/out/review/scripts-e10-cram.md)
+- Alien Friends Act: "in peacetime" -> "at any time" (topic 2); self-test Q3 answer drops "peacetime" (the Act had no peacetime condition).
+- Marcus stays in his Federalist role: the no-deportations line now says "Our weapon was the Sedition Act, aimed at the editors doing France's work" (was "that's the tell... the weapon they used"); his war-scare counterfactual now ends "our critics' charge, a party protecting itself, would have stuck" (was conceding "what it was").
+- Repeal/lapse beat moved from Marcus (time-travel: his knowledge stops at 1800) to Maya ([catching]); "He let the Acts lapse" -> "He let the Sedition Act lapse" (the Naturalization Act was repealed in 1802; the Alien Enemies Act never lapsed). Next line: "so this part is mine" -> "so the rest is mine too."
+- Maya to Haswell: "His was a jail cell" -> "Yours was a jail cell."
+- "The Alien Acts were about immigrants" -> "The Naturalization and Alien Acts were about immigrants."
+- Exam tip: "the Court couldn't strike down a federal law" -> "hadn't yet claimed the power to strike down a federal law."
+- Cut the exam-pitch cliche "The exam rewards following the thread across the decades." (§4.3).
+- Runtime: cold open "Twelve and a half minutes" -> "About twelve minutes"; header 2,047 -> 2,046 words, ~12.2 min (2,046/180 + 50s pauses).
+- Already fixed before this pass: "Maya: " on the bonus "Expiration" answer (report item 8).
+- Checks: parseTranscript 64 turns, pauses 10x5; gates PASS.
+
 # U3-E10 Changelog — v1 → v2 (full rebuild, 2026-10-06)
 
 ## What changed (v1 → v2)

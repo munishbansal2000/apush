@@ -1,5 +1,16 @@
 # U3-E3 Changelog — v1 → v2
 
+## 2026-10-09 — review fixes (video2/out/review/scripts-e1-e3.md)
+- Revere engraving title -> "The Bloody Massacre."
+- Boston garrison: dropped "two regiments, four thousand soldiers" -> "thousands of soldiers ... in a town of about sixteen thousand"; Maya's reaction matched.
+- 1774 Quartering Act: "soldiers in civilian homes" -> "soldiers quartered in empty buildings the governor could seize"; recap "soldiers in seized buildings."
+- Townshend courts: "set up" -> "added new" admiralty courts.
+- Dialogue order: Marcus line inserted between Maya's exam note and her "crushing burden" trap; "Answer:" -> "Go with Dickinson"; Quebec answer moved to its own Marcus turn right after the NOT-question, removed from the Tea Act correction.
+- Banned phrase: "MCQ writers love this list" -> "A classic multiple-choice setup."
+- Cold open: cut "Then it taxed the tea" (this episode's content).
+- Tagline moved to the very end, after "Check your four boxes ... Next time."
+- Runtime: 1,957 spoken words + 50s pauses = 11.7 min; header updated; "Twelve minutes" promise kept.
+
 ## What v1 was
 - v1 (`_archive/apush-audio-u3-e3-script-v1-DRAFT.md`) was a Marcus-solo Story Mode draft (~8 min) covering April 1775: the riders, Lexington Green, Concord/North Bridge, the retreat to Boston, Emerson's "shot heard round the world," the Second Continental Congress, and Bunker Hill.
 - v2 is a from-scratch rewrite to the frozen 2026-10-06 standards. No v1 prose was carried over (topic continuity only). Format is now the house default: Maya + Marcus interview.

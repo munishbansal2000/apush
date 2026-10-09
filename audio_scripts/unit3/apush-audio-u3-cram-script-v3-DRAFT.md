@@ -1,5 +1,5 @@
 # U3-CRAM — Cram Session: Maya + Jay (Fish Audio)
-# Unit 3 Cram: Revolution and Republic, eleven episodes in one. ~15 min experienced (2,351 words speech + 130s pauses)
+# Unit 3 Cram: Revolution and Republic, eleven episodes in one. ~15 min experienced (2,336 words speech + 130s pauses)
 # Draft v3 (2026-10-07): fleet repair of the v2 audit (2 blockers, 4 minors). Direction-tag density 96%→~35% — workhorse
 # [conversational]/[casual] stripped wherever no beat genuinely earned one; catalog beats kept (cold-open broadcast, correction
 # myth-busts firm, grim serious, genuine-question curious, caught-wrong sheepish, takeaway confident, closer intrigued).
@@ -11,19 +11,19 @@
 # never sent to TTS. [10-second pause] marks are prediction beats — real silence, never sent to TTS. Strip this header, the read
 # note, and all [pause] tags before TTS; convert pause tags to silence. The ## Sources section is production-only, never spoken.
 # CED: Period 3, 1754–1800.
-# Pronunciation: Pontiac (PAHN-tee-ak); Neolin (NEE-oh-lin); Crèvecoeur (krev-KUHR); Crispus Attucks (KRIS-pus AT-uks);
-# Talleyrand (TAH-lee-rahnd); Dunmore (dun-MOR); Publius (POOB-lee-us); von Steuben (fon SHTOY-ben); Bayard (BY-urd); Gallatin (GAL-uh-tin).
+# Pronunciation: Pontiac (PAHN-tee-ak); Neolin (NEE-oh-lin); Crèvecoeur (krev-KUR); Crispus Attucks (KRIS-pus AT-uks);
+# Talleyrand (TAL-ee-rand); Dunmore (dun-MOR); Publius (POOB-lee-us); von Steuben (fon SHTOY-ben); Gallatin (GAL-uh-tin).
 # Quotes: all verbatim quotes are real — the Declaratory Act's "in all cases whatsoever"; the Sedition Act's "any false, scandalous,
 # and malicious writing"; Jefferson's first-inaugural "We are all Republicans; we are all Federalists"; Webster's "A national
 # language is a band of national union" (the line credited to his 1789 Dissertations — Tier-1 books confirm the speller facts,
 # not the quote; see M4); Lee's resolution wording "free and independent States." No dramatized dialogue in this episode.
-Maya: [professional broadcast tone] Last time: power changed hands — but the hands stayed few. Jefferson's revolution, and the asterisk. Now: no new material. Eleven episodes, eleven questions, seventeen sixty-three to eighteen hundred, in about thirteen and a half minutes. From the bill coming due to the spelling book. Jay's holding the list. The dare: say every answer out loud before I do. Circle the ones you couldn't explain right now.
+Maya: [professional broadcast tone] Last time: power changed hands — but the hands stayed few. Jefferson's revolution, and the asterisk. Now: no new material. Eleven episodes, eleven questions, seventeen sixty-three to eighteen hundred, in about fifteen minutes. From the bill coming due to the spelling book. Jay's holding the list. The dare: say every answer out loud before I do. Circle the ones you couldn't explain right now.
 
 Jay: Question one. The bill comes due. Why did London end the free ride after seventeen sixty-three?
 
 [10-second pause]
 
-Maya: The war left an enormous debt, and the books won't pin the number, so neither will I. Grenville did the math: the colonies had paid almost nothing toward the war, so London started taxing, and enforcing everything it used to ignore. The century of salutary neglect, London looking the other way, was over.
+Maya: The war left an enormous debt, and the books won't pin the number, so neither will I. Grenville did the math: the colonies had paid almost nothing toward the war, so London started taxing, and enforcing everything it used to ignore. The decades of salutary neglect, London looking the other way, was over.
 
 Jay: [sheepish] So how broke were they? Like, a hundred million?
 
@@ -55,7 +55,7 @@ Jay: Question three. Townshend, the Massacre, the Tea, the Congress. Walk it.
 
 [10-second pause]
 
-Maya: The Townshend duties, sixty-seven: lead, paper, glass, tea. Dickinson's Letters argued Parliament could regulate trade but couldn't raise revenue without consent. Boycotts, homespun, imports down forty percent. Parliament repealed the lot. The tea tax stayed, the marker.
+Maya: The Townshend duties, sixty-seven: lead, paper, glass, tea. Dickinson's Letters argued Parliament could regulate trade but couldn't raise revenue without consent. Boycotts, homespun, imports down forty percent. Parliament repealed all but the tea tax, kept as the marker.
 
 Jay: Then the street fight in Boston.
 
@@ -109,7 +109,7 @@ Maya: They requisitioned: asked the states for money. The hat came back empty. N
 
 Jay: The one win was the Northwest Ordinance.
 
-Maya: Seventeen eighty-seven. Slavery banned north of the Ohio, schools encouraged, the statehood rule. But the map wasn't the mess. Little Turtle's confederacy destroyed two American armies on that same ground. The Ordinance outlived the government that wrote it.
+Maya: Seventeen eighty-seven. Slavery banned north of the Ohio, schools encouraged, the statehood rule. But the map wasn't the mess. Little Turtle's confederacy routed one American army and destroyed another on that same ground. The Ordinance outlived the government that wrote it.
 
 Jay: [curious, inquisitive tone] So why did it last eight years?
 
@@ -137,7 +137,7 @@ Jay: Question eight. The theory, the alarm, the squeakers, the verdict.
 
 [10-second pause]
 
-Maya: The Federalist theory: Madison's big republic, where factions die of bigness, and ambition counteracts ambition. Eighty-five essays, Hamilton, Madison, and Jay writing as Publius.
+Maya: The Federalist theory: Madison's big republic, where factions multiply and cancel out, and ambition counteracts ambition. Eighty-five essays, Hamilton, Madison, and Jay writing as Publius.
 
 Jay: [curious, inquisitive tone] And the Anti-Federalists just hated government?
 
@@ -145,7 +145,7 @@ Maya: [firm] Trap answer. They weren't against government. They were against thi
 
 Jay: [curious, inquisitive tone] And it was close, right?
 
-Maya: Massachusetts by nineteen, Virginia by ten, New York by three. Hancock got carried in on a litter, his gout flaring — his enemies swore it was convenient, and offered the deal: ratify now, amendments to follow. Nothing written into the document. Just a promise.
+Maya: Massachusetts by nineteen, Virginia by ten, New York by three. Hancock got carried in on a litter, his gout flaring — his enemies swore it was convenient. Hancock offered the deal: ratify now, amendments to follow. Nothing written into the document. Just a promise.
 
 Jay: And the Bill of Rights was the price.
 
@@ -155,7 +155,7 @@ Jay: Question nine. Hamilton's money machine.
 
 [10-second pause]
 
-Maya: The 1790 Report on Public Credit: fund the national debt at face value, and assumption: the federal government taking on the states' war debts. The speculators who'd bought the certificates cheap got the windfall; the original soldiers got nothing.
+Maya: The 1790 Report on Public Credit: fund the national debt at face value, and assumption: the federal government taking on the states' war debts. The speculators who'd bought the certificates cheap got the windfall; most original holders, many of them soldiers, had sold cheap and missed it.
 
 Jay: Then came the Bank fight.
 
@@ -181,7 +181,7 @@ Maya: The XYZ Affair: Talleyrand's agents demanded a quarter-million-dollar brib
 
 Jay: [curious, inquisitive tone] And then the Alien and Sedition Acts. One law, right?
 
-Maya: [firm] Four. The Naturalization Act: citizenship from five years to fourteen — not fifteen. The Alien Friends Act: in peacetime, the president can deport a foreigner he calls dangerous. Deport, not imprison. The Alien Enemies Act: in wartime, citizens of a hostile nation can be arrested or deported. And the Sedition Act: jail for publishing "any false, scandalous, and malicious writing" against the government. Adams never deported a soul under the Friends Act. The weapon was the Sedition Act.
+Maya: [firm] Four. The Naturalization Act: citizenship from five years to fourteen — not fifteen. The Alien Friends Act: at any time, the president can deport a foreigner he calls dangerous. Deport, not imprison. The Alien Enemies Act: in wartime, citizens of a hostile nation can be arrested or deported. And the Sedition Act: jail for publishing "any false, scandalous, and malicious writing" against the government. As far as the record shows, Adams never deported a soul under the Friends Act. The weapon was the Sedition Act.
 
 Jay: Then the Republicans hit back.
 
@@ -189,29 +189,25 @@ Maya: The Virginia and Kentucky Resolutions, seventeen ninety-eight: compact the
 
 Jay: And the verdict was eighteen hundred.
 
-Maya: [serious tone] The Sedition Act had a sunset. It expired March third, eighteen-oh-one, Adams's last day. Jefferson pardoned the convicted. No court struck the law down. Judicial review didn't exist yet. The check was the ballot box.
+Maya: [serious tone] The Sedition Act had a sunset. It expired on Adams's last day in office. Jefferson pardoned the convicted. No court struck the law down. Judicial review didn't exist yet. The check was the ballot box.
 
 Jay: Question eleven. The tie, the pragmatist, the judo, the culture.
 
 [10-second pause]
 
-Maya: [firm] Seventy-three to seventy-three, thrown to the House, voting by state. Thirty-six ballots — not thirty-five. Hamilton's letters for Jefferson, Bayard's abstentions, ten states for Jefferson, four for Burr, two blank. The first peaceful party handoff, and Adams left before dawn.
-
-Jay: Bet the musical skips this part.
-
-Maya: Thirty-six rounds of voting doesn't exactly sing. His actual words at the inauguration: "We are all Republicans; we are all Federalists."
+Maya: [firm] Seventy-three to seventy-three, thrown to the House, voting by state. Thirty-six ballots — not thirty-five. Nobody converted: Federalist holdouts stopped blocking Jefferson, and Hamilton's letters helped push them. The first peaceful party handoff, and Adams left before dawn. Jefferson's actual words at the inauguration: "We are all Republicans; we are all Federalists."
 
 Jay: [curious, inquisitive tone] Then he campaigned against Hamilton's machine and kept it?
 
-Maya: [thoughtful tone] The pragmatist. Kept the Bank. Gallatin cut taxes and paid down the debt. Then bought Louisiana, fifteen million at three cents an acre, on the loose construction he'd campaigned against. The land mattered more than the theory.
+Maya: [thoughtful tone] The pragmatist. Kept the Bank. Gallatin cut taxes. Then bought Louisiana, fifteen million at three cents an acre, on the loose construction he'd campaigned against. The land mattered more than the theory.
 
 Jay: Then the Marbury judo move.
 
-Maya: [thoughtful tone] The midnight judges, Marshall's trap: he ruled against Marbury, his own Federalist, and by striking down the law that let the Court help him, claimed judicial review. Marshall denied Marbury his commission and walked away with judicial review.
+Maya: [thoughtful tone] The midnight judges, Marshall's trap: he ruled against Marbury, his own Federalist, and by striking down the law that let the Court help him, claimed judicial review. Marbury never got his commission, and the Court walked away with judicial review.
 
 Jay: And the culture box last.
 
-Maya: [serious tone] A republic needs its own culture: Webster's speller — and the line credited to his seventeen eighty-nine Dissertations, "A national language is a band of national union" — Peale, Trumbull, Crèvecoeur, the Capitol in stone. And the asterisk: a real revolution, real exclusions. Slavery expanded. Most people couldn't vote.
+Maya: [serious tone] A republic needs its own culture: Webster's speller — and the line credited to his seventeen eighty-nine Dissertations, "A national language is a band of national union" — Trumbull, Crèvecoeur. And the asterisk: a real revolution, real exclusions.
 
 Maya: [thoughtful tone] Eleven episodes, eleven questions, one through-line. The bill came due and the free ride ended. Taxation without representation became a constitutional crisis. Townshend to the Massacre to the Tea to a Congress in Philadelphia. Common Sense made the masses say the word, the vote made it official, and the Declaration's promises leaked past their authors. A protest became an army, Saratoga bought France, and Paris gave almost everything east of the Mississippi except Florida. The fear-built government couldn't tax or govern, and lasted eight years. Fifty-five men rewrote it behind closed doors. Twelve states sent them, and the document protected slavery without saying the word. The squeakers ratified it by nineteen, ten, and three. Hamilton's money machine built the first parties. The parties nearly broke the republic over France, and the ballot box, not the courts, struck the blow. Thirty-six ballots handed Jefferson the presidency, and he kept the machine he'd campaigned against.
 
@@ -236,7 +232,7 @@ Maya: [intrigued] Eleven episodes: the battlefield settled the war. The argument
 Jay: [intrigued] Next time: Unit Four opens with the Louisiana Purchase.
 
 ## Sources (production-only, never spoken)
-# Cross-checked against all eleven rebuilt Unit 3 episodes — zero contradictions, zero references to dropped content:
+# Cross-checked against all eleven rebuilt Unit 3 episodes (E10/E11 re-checked against E10 v5 and E11 v4 on 2026-10-09):
 # - U3-E1 v2 (The Bill Comes Due): end of salutary neglect (Grenville, debt "enormous" unpinned), Proclamation Line Oct 1763 (treasury
 #   motive, not revenge), Pontiac's Rebellion 1763 (Neolin prophet / Pontiac Ottawa war chief), Paxton mirror noted but unasked here.
 # - U3-E2 v2 (Taxation Without Representation): Stamp Act 1765 first direct tax, boycott + Stamp Act Congress, early-1766 repeal,
@@ -265,13 +261,14 @@ Jay: [intrigued] Next time: Unit Four opens with the Louisiana Purchase.
 #   Washington signed, didn't veto), tariffs + whiskey tax (excise not tariff; ~500 at the tax collector's house not 50; 7,000 to Pittsburgh;
 #   ~13,000 militia; Washington rode to Bedford only, Henry Lee took command), verdict = first parties (Federalists vs Democratic-Republicans).
 # - U3-E10 v2 (Adams & Alien/Sedition): XYZ ($250k bribe + $10M loan, not $12M), Quasi-War 1798–1800, four Acts (Naturalization 5->14 years
-#   not 15; Alien Friends = peacetime deportation only, no imprisonment; Alien Enemies = wartime arrest/deport; Sedition Act "false,
-#   scandalous, and malicious writing"; Adams deported none under Friends Act), VA/KY Resolutions 1798 (compact theory, nullification/
-#   interposition, stood alone), 1800 verdict (Sedition Act expired Mar 3 1801, Jefferson pardoned, ballot box not courts).
-# - U3-E11 v2 (Revolution of 1800): the tie (73–73, House by state, 36 ballots not 35, Hamilton's letters, Bayard's abstentions, 10-4-2),
-#   the pragmatist (kept the Bank, Gallatin cut taxes/paid down debt, Louisiana $15M at 3 cents/acre on loose construction), Marbury's judo
+#   not 15; Alien Friends = deportation only, no imprisonment, no peacetime condition; Alien Enemies = wartime arrest/deport; Sedition Act "false,
+#   scandalous, and malicious writing"; Adams deported none under Friends Act, hedged "as far as the record shows"), VA/KY Resolutions 1798 (compact theory, nullification/
+#   interposition, stood alone), 1800 verdict (Sedition Act expired on Adams's last day — E10 v5 dropped the exact Mar 3 1801 pin; Jefferson pardoned, ballot box not courts).
+# - U3-E11 v4 (Revolution of 1800; re-aligned 2026-10-09): the tie (73–73, House by state, 36 ballots not 35, nobody converted — Federalist holdouts
+#   stopped blocking, Hamilton's letters helped; Bayard/10-4-2 CUT per F-U3-069), the pragmatist (kept the Bank, Gallatin cut taxes — debt claim CUT per F-U3-070, Louisiana $15M at 3 cents/acre on loose construction), Marbury's judo
 #   (midnight judges, Marshall ruled against Marbury to claim judicial review), the culture (Webster's speller 1783 + 1789 line "A national
-#   language is a band of national union", Peale, Trumbull, Crèvecoeur, Capitol in stone), the asterisk (real revolution, real exclusions).
+#   language is a band of national union", Trumbull, Crèvecoeur; Peale + Capitol CUT per F-U3-073), the asterisk (real revolution, real exclusions;
+#   slavery-expanded / most-couldn't-vote specifics CUT per F-U3-074/075).
 # Registry anchors: F-U3-037 (Paris 1783 not "everything east"), F-U3-041 (word "slavery" never in Constitution), F-U3-043 (~500 not 50),
 # F-U3-044 (Washington to Bedford only), F-U3-049 (Naturalization 14 not 15), F-U3-050 (36 ballots not 35), F-U3-051 ($10M not $12M loan),
 # F-U3-052 (Alien Friends = deportation only). v1 orphans dropped: "ten questions" (now eleven, 1:1 per lesson), "Washington marched

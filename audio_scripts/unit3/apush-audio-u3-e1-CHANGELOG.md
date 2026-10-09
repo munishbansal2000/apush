@@ -1,5 +1,14 @@
 # U3-E1 v2 Changelog — "The Bill Comes Due" (Episode 18)
 
+## 2026-10-09 — review fixes (video2/out/review/scripts-e1-e3.md)
+- Debt trap: Marcus now opens "Close, but don't pin a number..." (Maya's figure wasn't wrong, just unsourced).
+- Geography correction: "The land between the mountains and the Mississippi was the prize; the Appalachians were the fence."
+- Troop prediction beat now answers the question ("The minister sleeps best"); Boston colonist folded into the settler's answer.
+- Paxton line: cut "London got the message ... The Proclamation was the first pour" (timeline error, contradicted "bandage") -> "every policy after that landed on it."
+- "Gage broke the rebellion" -> "Gage's forces wore the rebellion down."
+- Self-test Q2 answer: dropped "debt ... managed" and "territory stayed British"; now "The debt and the territory mattered, but mostly for what they did to trust."
+- Runtime: 1,887 spoken words + 50s pauses = 11.3 min; header and cold-open promise ("Just over eleven minutes") updated.
+
 ## What changed vs v1 (full rebuild, fresh prose — nothing copied)
 - **Debt discipline (F-U2-064):** v1 taught "roughly one hundred forty million pounds, about double the debt" with interest "more than half the government's budget." Both are registry-forbidden (no pinned figure, no "doubled" in Tier 1+2). v2 uses only the books' language — "enormous" — and Maya says so in the recap ("No number; the books won't give me one").
 - **Fort-count discipline:** v1's "eight of the twelve British frontier forts fell" was not in Tier 1. v2 uses premium2027's own account: Detroit first, then six other forts, several forts captured west of Detroit.

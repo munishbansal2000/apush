@@ -1,5 +1,16 @@
 # U3-E2 v2 — Changelog (clean rebuild, 2026-10-06)
 
+## 2026-10-09 — review fixes (video2/out/review/scripts-e1-e3.md)
+- Speaker glitch: the virtual-representation intro moved from Maya to the end of Marcus's prior turn, so Maya no longer answers herself.
+- Notary line: "made that sound" -> "would have made that sound" (tax was never collected).
+- "Parliament never had" -> "Parliament had never laid a direct tax on them" (Sugar Act was a Parliamentary tax).
+- Otis/Adams line: "John Adams remembered Otis saying something like it, decades later; nobody can confirm the exact words."
+- D.C. plates: "End Taxation Without Representation"; "outlived the empire" -> "outlived the Stamp Act."
+- Self-test Q1: no longer says Parliament "invented" virtual representation to answer the Congress; asks what line Parliament used to justify the tax.
+- Closer tease now matches E3 (new duties, soldiers in Boston).
+- Cut "One last look before the lock" and the mid-episode "Box one, checked" beat; recap landings varied ("Solid." / "Two's on paper." / "Three for three.") to break the button loop.
+- Runtime: 1,844 spoken words + 50s pauses = 11.1 min; header and cold-open promise ("About eleven minutes") updated.
+
 ## What changed from v1
 - v1 was a scope sprawl: it taught the Sugar Act, Currency Act, Quartering Act, Stamp Act, Townshend Acts, Boston Massacre, Tea Act, Boston Tea Party, Coercive Acts, Quebec Act, First Continental Congress, AND Lexington/Concord in one episode — roughly four lessons' worth of CED 3.3–3.5. v2 is a clean rebuild scoped to the assigned topic only: the Sugar Act → Stamp Act resistance arc, i.e. the Stamp Act (1765), colonial resistance, virtual vs actual representation, and the Declaratory Act (1766).
 - No prose, sentences, or jokes carried over from v1. The one v1 line that survived in spirit — the repeal/Declaratory "win that wasn't" framing — is reworded ("A repeal with fine print." / "Fine print that swallowed the repeal.") and is now source-anchored to princeton ch. 7 ("won the battle over the stamp tax, but not the war of principles").

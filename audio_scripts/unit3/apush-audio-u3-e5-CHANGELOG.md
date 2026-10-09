@@ -1,3 +1,12 @@
+# U3-E5 Changelog — 2026-10-09 review fixes (video2/out/review/scripts-e4-e6.md)
+- Closing tagline: the "Both:" line split at the dash into a Maya line and a Marcus line (the pipeline has no "both" voice).
+- Facts: "Christmas morning" → "the morning after Christmas"; "frozen river" → "ice-choked river" (x2); Bunker Hill "lost roughly a thousand men" → "took roughly a thousand casualties"; "Camden falls" → "Gates's army is routed at Camden"; Cowpens now credited as Morgan's win and Guilford Courthouse as Greene losing the field; Washington and Rochambeau now march south "to join Lafayette in Virginia"; France "three years" on the sidelines → "two and a half years" (x2).
+- Attribution: dropped "the books don't pin the motive", "The books say", and "a correction on the old textbooks"; Shelburne named as the British prime minister; France "joined mainly for revenge on Britain and to weaken its rival."
+- Chronology: "Days earlier" → "Days before the crossing" (Paine's Crisis).
+- Cuts: the "war starts with the Declaration" trap (contradicted the cold open); the duplicate "SAQ answer" trap (also removes the "SAQ" TTS hazard); Marcus's echo "Surprise was the entire weapon…"; the hanging closer question about enslaved soldiers.
+- Em dashes in dialogue: 10 → 8 (none added).
+- Header and promise: 1,982 spoken words + 60s pauses = 12.0 min; cold open "Thirteen minutes" → "Twelve minutes." Parse check: 6 pauses, all 10s.
+
 # U3-E5 Changelog — v1 → v2 (2026-10-06)
 
 ## What changed and why

@@ -1,9 +1,9 @@
 # U3-E10 — Debate: Maya moderates, Marcus (Federalist) vs Haswell (1798–1800 voice)
 # Episode 27: Adams and the Alien and Sedition Acts. DRAFT v5.
-# Word count: 2,047 spoken words (pause tags stripped). Experienced runtime ~12.5 min (speech at ≤180 WPM + 50s pauses).
+# Word count: 2,046 spoken words (pause tags stripped). Experienced runtime ~12.2 min (speech at ≤180 WPM + 50s pauses).
 # Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Maya moderates; Marcus argues the Federalist case as a 1798–1800 advocate — his knowledge stops at 1800, and he cannot know how the Acts aged; Haswell speaks as Anthony Haswell, the Vermont newspaper editor actually prosecuted under the Sedition Act, in his own 1798–1800 voice — measured, never a caricature; the afterlife of the Acts is Maya's modern voice only. Strip this header, the read note, and every [N-second pause] tag before TTS; convert pause tags to real silence. Tagline dash carries a held breath — do not rush it.
 # Pronunciation: Talleyrand (TAL-ee-rand), Haswell (HAZ-wel), Pinckney (PINK-nee), Gerry (GEH-ree).
-Maya: [professional broadcast tone] Last time: the parties we just built turn on each other, and on France. Now, 1798: American diplomats sail to Paris, and the French foreign minister's men hand them a price list: a quarter of a million dollars in bribes just to start talking. America answers with warships, and Congress passes a law that can jail a man for printing words against the government. Four boxes tonight. One: the XYZ Affair and the Quasi-War. Two: the four Alien and Sedition Acts, and what each one did. Three: the Republican counterattack, the Virginia and Kentucky Resolutions, and compact theory. Four: the election of 1800, and the verdict. Circle the ones you couldn't explain right now. Twelve and a half minutes. Every one of them gets argued tonight.
+Maya: [professional broadcast tone] Last time: the parties we just built turn on each other, and on France. Now, 1798: American diplomats sail to Paris, and the French foreign minister's men hand them a price list: a quarter of a million dollars in bribes just to start talking. America answers with warships, and Congress passes a law that can jail a man for printing words against the government. Four boxes tonight. One: the XYZ Affair and the Quasi-War. Two: the four Alien and Sedition Acts, and what each one did. Three: the Republican counterattack, the Virginia and Kentucky Resolutions, and compact theory. Four: the election of 1800, and the verdict. Circle the ones you couldn't explain right now. About twelve minutes. Every one of them gets argued tonight.
 
 Maya: One ground rule. You'll hear real quotes tonight: the Sedition Act's words, the First Amendment, the Kentucky Resolutions' nullification line, and the famous reply to the French. I'll flag each one. The debate is dramatized: Marcus and Haswell argue the real positions of 1798, but their back-and-forth is ours. Marcus's knowledge stops at 1800. The afterlife is my territory only.
 
@@ -34,17 +34,17 @@ Maya: Box one is landed, the XYZ Affair and the Quasi-War.
 
 Maya: The war fever is the kindling. The Acts are the fire. Four separate laws, Marcus. Why not one big crackdown? What did each one actually do?
 
-Marcus: Four laws, summer of 1798. The Naturalization Act: citizenship goes from five years to fourteen, hitting immigrants, who mostly vote Republican. The Alien Friends Act: in peacetime, the president can deport any foreigner he calls dangerous. The Alien Enemies Act: in wartime, citizens of a hostile nation can be arrested or deported. And the Sedition Act: it makes it a crime to publish, quote, "any false, scandalous, and malicious writing" against the government, Congress, or the president. End quote.
+Marcus: Four laws, summer of 1798. The Naturalization Act: citizenship goes from five years to fourteen, hitting immigrants, who mostly vote Republican. The Alien Friends Act: at any time, the president can deport any foreigner he calls dangerous. The Alien Enemies Act: in wartime, citizens of a hostile nation can be arrested or deported. And the Sedition Act: it makes it a crime to publish, quote, "any false, scandalous, and malicious writing" against the government, Congress, or the president. End quote.
 
 Haswell: [passionate] Notice who that crime protects. Not the nation in wartime. The government, which means the Federalist Party. Slow citizenship for the people likely to vote against you, deport the ones you can't convince, jail the editors who complain. An election strategy wearing a war's uniform.
 
 Maya: [curious, inquisitive tone] But dozens of French spies were rounded up and shipped out, right?
 
-Marcus: No, and that's the tell. As far as the record shows, Adams never deported a single person under the Alien Friends Act. The deportation power sat unused. The weapon they used was the Sedition Act, against Republican editors.
+Marcus: Wrong rumor. As far as the record shows, Adams never deported a single person under the Alien Friends Act. The deportation power sat unused. Our weapon was the Sedition Act, aimed at the editors doing France's work.
 
 Haswell: [intense] I felt that weapon. I printed words, and they jailed me for them. A Vermont editor in a jail cell, for a newspaper.
 
-Maya: My sophomore year, our yearbook roasted the cafeteria food and the principal killed it for a week. I was furious, and it was a lunch menu. I keep thinking about that trial, Haswell. His was a jail cell.
+Maya: My sophomore year, our yearbook roasted the cafeteria food and the principal killed it for a week. I was furious, and it was a lunch menu. I keep thinking about that trial, Haswell. Yours was a jail cell.
 
 Marcus: The law did include a truth defense, an advance on the old English rule of seditious libel, where criticizing the government was a crime and truth made it worse.
 
@@ -54,7 +54,7 @@ Maya: The weapon had targets. The Sedition Act's prosecutions reached Republican
 
 Maya: So the Alien Acts were the speech crime, the laws that put the editors in jail.
 
-Marcus: Not quite. The speech crime was the Sedition Act. The Alien Acts were about immigrants: longer waits for citizenship, deportation powers. Keep the four laws separate, because the exam does.
+Marcus: Not quite. The speech crime was the Sedition Act. The Naturalization and Alien Acts were about immigrants: longer waits for citizenship, deportation powers. Keep the four laws separate, because the exam does.
 
 Maya: Bank points by explaining who each act was aimed at. The Naturalization Act stretched the citizenship wait to fourteen years, slowing the immigrant vote that leaned Republican. The Alien Acts handed the president deportation power over foreigners he called dangerous. The Sedition Act put Republican editors in jail for what they printed. Targeting is the analysis.
 
@@ -66,7 +66,7 @@ Haswell: [intense] Jefferson wrote Kentucky's in secret. The Constitution is a c
 
 Marcus: And that doctrine nearly breaks the country. If each state can veto federal law, there's no federal law. There's the Articles of Confederation again with better stationery. And Kentucky and Virginia stood alone. Not one other state adopted them.
 
-Maya: Not one did. The resolutions failed as law the day they were written. But the idea survived. Compact theory, the idea that the Constitution is a deal among sovereign states, became the seed of many states'-rights fights to come. If the prompt asks about continuity, start here and walk forward: Kentucky's compact theory becomes South Carolina's nullification argument in the 1830s. The exam rewards following the thread across the decades.
+Maya: Not one did. The resolutions failed as law the day they were written. But the idea survived. Compact theory, the idea that the Constitution is a deal among sovereign states, became the seed of many states'-rights fights to come. If the prompt asks about continuity, start here and walk forward: Kentucky's compact theory becomes South Carolina's nullification argument in the 1830s.
 
 Maya: So nullification is where the states first say they can secede. Same family tree, right?
 
@@ -74,7 +74,7 @@ Marcus: Common mistake. Nullification says a state can void a federal law inside
 
 Maya: [curious, inquisitive tone] Honest question. If the French had just negotiated, no bribe, no XYZ, do the Acts still pass?
 
-Marcus: [thoughtful tone] Honestly? Nobody's fully sure. But without the war scare, I doubt the Federalists have the votes or the public behind them. The bribe demand is what made the country hold its breath. Take that away, and the whole thing looks like what it was: a party protecting itself.
+Marcus: [thoughtful tone] Honestly? Nobody's fully sure. But without the war scare, I doubt the Federalists have the votes or the public behind them. The bribe demand is what made the country hold its breath. Take that away, and our critics' charge, a party protecting itself, would have stuck.
 
 Maya: Box three is landed, the Republican counter and the compact theory under it.
 
@@ -84,13 +84,13 @@ Haswell: [passionate] They drew the line around their critics. I printed words a
 
 Maya: So Jefferson rides in and repeals the whole package. Day one, clean slate.
 
-Marcus: Not quite. The exam baits you with that verb. Jefferson never signed a repeal. He let the Acts lapse.
+Maya: [catching] Scratch that, and watch the verb, because the exam baits you with it. Jefferson never signed a repeal. He let the Sedition Act lapse.
 
-Maya: You're both stuck in 1800, so this part is mine. The verdict was an election. In 1800 the country threw the Federalists out and elected Jefferson. The Sedition Act had that sunset written in: it expired on Adams's last day in office. Jefferson pardoned the convicted. And no court struck the law down. Judicial review didn't exist yet; the Court wouldn't claim that power until 1803. The check was the ballot box.
+Maya: You're both stuck in 1800, so the rest is mine too. The verdict was an election. In 1800 the country threw the Federalists out and elected Jefferson. The Sedition Act had that sunset written in: it expired on Adams's last day in office. Jefferson pardoned the convicted. And no court struck the law down. Judicial review didn't exist yet; the Court wouldn't claim that power until 1803. The check was the ballot box.
 
 Maya: The Alien Friends Act expired too, never renewed. The Alien Enemies Act is the odd one out. It's still on the books. The template was set here: when a frightened government criminalizes dissent, the voters get the last word at the ballot box.
 
-Maya: [confident tone] Exam-day tip: when the question asks how the Sedition Act was checked, the check was the election of 1800. In 1798 the Court couldn't strike down a federal law.
+Maya: [confident tone] Exam-day tip: when the question asks how the Sedition Act was checked, the check was the election of 1800. In 1798 the Court hadn't yet claimed the power to strike down a federal law.
 
 Maya: Box four is landed, the election of 1800 as the verdict. That's all four.
 
@@ -115,7 +115,7 @@ Maya: Publication turned a diplomatic insult into a national one — a country s
 Maya: Third. Sort by target: the Naturalization Act, the Alien Friends Act, the Sedition Act. Who does each hit?
 [10-second pause]
 
-Maya: Naturalization targeted immigrants who'd vote Republican — fourteen years instead of five. The Alien Friends Act gave the president peacetime deportation power over foreign residents he called dangerous. And the Sedition Act put Republican editors and critics in jail for words. Three different targets, one political strategy.
+Maya: Naturalization targeted immigrants who'd vote Republican — fourteen years instead of five. The Alien Friends Act gave the president deportation power over foreign residents he called dangerous. And the Sedition Act put Republican editors and critics in jail for words. Three different targets, one political strategy.
 
 Maya: One more, fast. The Sedition Act died by repeal, court ruling, or expiration?
 [10-second pause]

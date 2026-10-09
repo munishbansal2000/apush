@@ -1,3 +1,25 @@
+## 2026-10-09 — review fixes (video2/out/review/scripts-e10-cram.md)
+Aligned with E11 v4's deliberate cuts (E11 is the source of truth):
+- Q11: cut "Bayard's abstentions, ten states for Jefferson, four for Burr, two blank" (F-U3-069); replaced with E11's "Nobody converted: Federalist holdouts stopped blocking Jefferson, and Hamilton's letters helped push them."
+- Cut the musical exchange ("Bet the musical skips this part." / "Thirty-six rounds of voting doesn't exactly sing."); Hamilton has a song called "The Election of 1800". The inaugural quote is now "Jefferson's actual words" (it had read as Adams's).
+- "Gallatin cut taxes and paid down the debt" -> "Gallatin cut taxes" (F-U3-070).
+- Culture box: cut Peale, "the Capitol in stone" (F-U3-073), and "Slavery expanded. Most people couldn't vote." (F-U3-074/075); kept "a real revolution, real exclusions."
+- Sources footer: E11 entry re-pointed to v4 with the cuts noted; "zero contradictions" claim restated as a 2026-10-09 re-check against E10 v5/E11 v4.
+Aligned with E10 v5:
+- Alien Friends Act "in peacetime" -> "at any time"; restored E10's hedge "As far as the record shows, Adams never deported a soul."
+- "It expired March third, eighteen-oh-one, Adams's last day" -> "It expired on Adams's last day in office" (E10 dropped the pin); footer updated.
+Other fixes:
+- "Marshall denied Marbury his commission" -> "Marbury never got his commission, and the Court walked away with judicial review."
+- Federalist 10: "factions die of bigness" -> "factions multiply and cancel out."
+- Hancock: "...swore it was convenient. Hancock offered the deal" (fixes the grammar that made his enemies the ones offering it).
+- Townshend: "Parliament repealed the lot. The tea tax stayed" -> "Parliament repealed all but the tea tax, kept as the marker."
+- "The century of salutary neglect" -> "The decades of."
+- Assumption: "the original soldiers got nothing" -> "most original holders, many of them soldiers, had sold cheap and missed it."
+- Cold open "about thirteen and a half minutes" -> "about fifteen minutes" (experienced runtime); header 2,351 -> 2,336 words + 130s = ~15.1 min.
+- Pronunciation aligned: Talleyrand (TAL-ee-rand) per E10, Crevecoeur (krev-KUR) per E11; dropped the now-unused Bayard.
+- Skipped: the Unit 4 tease "Unit Four opens with the Louisiana Purchase" stays, because U4-E1 is "The Louisiana Purchase", so the tease is accurate.
+- Checks: parseTranscript 107 turns, pauses 10x13. Gates: G12 F-U3-069 regression cleared; the F-AOC-004 Little Turtle hit ("destroyed two American armies", Q6) was already there and is not in this review, so it is left for the coordinator.
+
 # U3-CRAM Changelog — v1 → v2 (2026-10-06)
 
 ## Scope decisions (frozen before writing)
