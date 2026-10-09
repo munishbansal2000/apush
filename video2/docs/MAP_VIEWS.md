@@ -13,6 +13,18 @@ Maps are drawn by the renderer from data, never from a picture of a map. They co
 
 A storyboard map names a view and, optionally, a year: `{"view": "map.eastern-north-america", "period": 1763}`. The build then draws every **approved** base layer valid in 1763 that overlaps the view: regions tinted by side, lines dashed, labels at their label spot. Whatever the storyboard adds (`fills`, `lines`, `points`, `labels`, `moves`) is drawn on top. If the storyboard fills a base layer itself, only the storyboard's copy is drawn.
 
+## Map agent work
+
+Three kinds of work expand the map set. Each is done in small, separately committed pieces:
+
+| Work | What an agent adds | How it is used | Guide |
+|---|---|---|---|
+| **Views** | A framing of a region with named camera targets | `{"view": ...}` plus `moves` | [Building a map view](#building-a-map-view) |
+| **Regions** | A named area on a view's camera target (states or a polygon) | `"highlight": true` on a move: filled and named as the camera arrives | [Adding regions](#adding-regions-to-a-view) |
+| **Period layers** | A dated border, claim or line | `"period": 1763`: drawn automatically | [PERIOD_LAYERS.md](PERIOD_LAYERS.md) |
+
+To find work, read the lesson scripts (`data/<lesson>/script.json`) for places and regions the narration names, then check `npm run maps -- list`. A `*` marks targets that already have a region. Add what is missing, starting with what the most lessons name.
+
 ## Commands
 
 ```bash
@@ -66,6 +78,32 @@ npm test                                              # tests/map-views.test.ts 
 
 3. **Validate, preview, look:** run `npm run maps -- validate`, then `npm run maps -- preview <id>`.
 4. **Commit the view alone**, with the preview checked. Views need no review status: `validate` plus a looked-at preview is the bar.
+
+## Adding regions to a view
+
+A region turns a camera target into something a storyboard can highlight. When the narration says "New England, the middle colonies, the South", each move fills its region and names it on the words. Regions are the most-used map element after the camera, so every region a narrator names should have one.
+
+1. **Find the regions.** List the regions the scripts name for the view's area: colonial regions, "the Ohio Country", "the Old Northwest", "the backcountry", "the Deep South", "the Great Plains", "the Dust Bowl", "the Sun Belt". Use only regions narrators actually say.
+2. **Pick or add a camera target.** A region lives on a focus target whose centre and zoom frame it. Reuse a target if one frames it; otherwise add one (the name is lowercase-hyphen and matches the words: `ohio-country`, `deep-south`).
+3. **Choose the shape:**
+   - **`states`** (US postal codes, `us` projection only): use these when the region is commonly taught as a group of states. Modern state lines stand in for colonial borders here, which is acceptable for a region label (New England = MA, NH, CT, RI; add ME and VT only if the lesson's era counts them).
+   - **`geo`** (a polygon in `data/library/geo`): use one when state lines would mislead. The Ohio Country is not the state of Ohio; the Dust Bowl cuts across five states; the Great Plains has no state edges. Trace the polygon as a timeless feature (no `@year`, no `layer` block), follow the geo rules in docs/ASSET_LIBRARY.md, and give it sources.
+   - **`world` projection views** (Atlantic, North America) take `geo` regions only.
+4. **Label, label spot and colour:**
+   - **`label`** is what the viewer reads: the region's common name, with no year. "Province of Quebec (1763)" is a period layer, not a region.
+   - **`labelAt`** goes inside the region, near its visual centre, clear of the view's own labels.
+   - **`color`** keeps neighbours distinct: when regions are named in sequence, use different colours (gold, amber, red, blue, green, brown). Don't use a side colour (red = British, blue = French, …) for a region that has nothing to do with that power, if a neutral colour works.
+5. **Validate, preview, look:** run `npm run maps -- validate`, then `npm run maps -- preview <view>`. The preview highlights every region target. Check that the fill covers what the label names, the label reads at full frame, and neighbouring regions don't look like one.
+6. **Commit** the view, with any new polygon in the same commit.
+
+Region rules that `validate` enforces: states are real postal codes and only on `us` views; a `geo` region exists and is a Polygon or MultiPolygon; a label is given and has no year; `labelAt` is inside the extent; the colour is a map colour name or `#rrggbb`.
+
+Example (`map.thirteen-colonies`):
+
+```json
+"new-england": {"center": [-71.5, 43], "zoom": 2.4,
+  "region": {"states": ["MA", "NH", "CT", "RI"], "label": "New England", "labelAt": [-71.6, 43.9], "color": "gold"}}
+```
 
 ## Building a period layer
 

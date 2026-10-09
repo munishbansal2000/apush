@@ -39,7 +39,9 @@ function loadGeo(): Record<string, PeriodFeature> {
 function list() {
   const views = loadMapViews(LIB);
   console.log(`${Object.keys(views).length} map views:`);
-  for (const v of Object.values(views).sort((a, b) => a.id.localeCompare(b.id))) console.log(`  ${v.id.padEnd(30)} ${v.projection.padEnd(5)} ${v.name}\n  ${''.padEnd(30)}       focus: ${Object.keys(v.focus ?? {}).join(', ') || '(none)'}`);
+  for (const v of Object.values(views).sort((a, b) => a.id.localeCompare(b.id))) console.log(`  ${v.id.padEnd(30)} ${v.projection.padEnd(5)} ${v.name}\n  ${''.padEnd(30)}       focus: ${Object.entries(v.focus ?? {}).map(([k, f]) => (f.region ? `${k}* (${f.region.label})` : k)).join(', ') || '(none)'}`);
+  const regions = Object.values(views).reduce((n, v) => n + Object.values(v.focus ?? {}).filter(f => f.region).length, 0);
+  console.log(`(* = a region a storyboard can highlight; ${regions} in all)`);
   const layers = Object.values(loadGeo()).filter(g => g.properties.layer?.base);
   console.log(`\n${layers.length} period layer(s):`);
   for (const g of layers) console.log(`  ${g.properties.id.padEnd(42)} ${g.properties.validFrom}..${g.properties.validTo}  ${g.properties.layer!.side}  [${g.properties.review.status}]`);
@@ -129,7 +131,7 @@ async function preview(which: string, periodArg?: string) {
       const turns = parseTranscript(words.map(w => `Maya: ${w} of the map preview.`).join('\n'));
       const timing = {starts: turns.map((_, i) => i * 3), durations: turns.map(() => 3), totalSec: turns.length * 3};
       const plan = {episode: 'preview', shots: stops.map(([, focus], i) => ({type: 'map', at: {turn: i, phrase: words[i]}, view: view.id, ...(period ? {period} : {}),
-        ...(focus ? {moves: [{at: {offset: 0.1}, to: focus}]} : {})}))} as unknown as ShotPlan;
+        ...(focus ? {moves: [{at: {offset: 0.1}, to: focus, ...(view.focus?.[focus]?.region ? {highlight: true} : {})}]} : {})}))} as unknown as ShotPlan;
       const resolved = resolveShotPlan(plan, turns, timing, {}, {imageSizes: {}, geo: geo as never, mapViews: views, allowEstimated: true, allowUnapproved: true, rules: {...(await import('./pipeline/shots')).LOOK_RULES, minShotSec: 0}});
       const inputProps = {episode: 'preview', shots: resolved.shots, years: [], boxes: [], turns: turns.map(t => ({id: t.id, kind: t.kind, speaker: t.speaker})), timing};
       const composition = await selectComposition({serveUrl, id: 'DocEpisode', inputProps, browserExecutable, puppeteerInstance: browser, logLevel: 'error'});
