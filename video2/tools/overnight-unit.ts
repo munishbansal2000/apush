@@ -4,6 +4,7 @@
  *   npx tsx tools/overnight-unit.ts --unit 3                 images -> depth maps -> every lesson (final videos)
  *   npx tsx tools/overnight-unit.ts --unit 3 --lessons u3e1,u3e4
  *   npx tsx tools/overnight-unit.ts --unit 3 --list          show the plan and exit
+ *   npx tsx tools/overnight-unit.ts --unit 3 --mode prod      final Fish voices (default: dev, edge-tts)
  *   options: --skip-images  --skip-depth  --no-clips (no LTX)  --no-draft (approved geography only)  --preview (no final render)
  *
  * 1. images   python tools/download-u3-images.py --all: polite downloads of the unit's catalogs, registered for the director
@@ -12,6 +13,8 @@
  * 4. retry    each failed lesson once more; when LTX was the problem, the retry renders without clips (stills move instead)
  * Every step is resumable (checkpoints), so re-running the same command after a crash continues where it stopped.
  * A failing lesson never stops the others. Logs and summary.md go to out/overnight/<timestamp>/.
+ * Prod (Fish): set FISH_TTS_SCRIPT, and FISH_API_KEYS="k1,k2,..." or FISH_API_KEYS_FILE (one per line). Each lesson
+ * gets the next key in turn (a retry gets the one after); the key reaches the Fish script as FISH_API_KEY.
  * Needs: Meta UI login (director), LTX Desktop running (clips), Fish/edge-tts set up (audio). Keep the PC awake.
  */
 import {spawn} from 'node:child_process';
@@ -19,6 +22,8 @@ import {createWriteStream, existsSync, mkdirSync, readdirSync, readFileSync, wri
 import {join, relative} from 'node:path';
 import {ROOT, arg} from './lib';
 import {findTool, pipelinePython} from './pipeline/tools';
+import {keyForRun, keyTag, loadFishKeys} from './pipeline/fish-keys';
+import {parseTranscript, resolveAudioScript} from './pipeline-core';
 
 const flag = (name: string) => process.argv.includes(`--${name}`);
 const unit = arg('unit');
@@ -42,13 +47,13 @@ function unitLessons(): string[] {
 }
 
 /** Runs a command, teeing output to the console and a log file; resolves with the exit code. */
-function run(label: string, cmd: string, args: string[], logName: string): Promise<{code: number; log: string}> {
+function run(label: string, cmd: string, args: string[], logName: string, extraEnv: NodeJS.ProcessEnv = {}): Promise<{code: number; log: string}> {
   const log = join(logDir, logName);
   const out = createWriteStream(log, {flags: 'a'});
   out.write(`\n$ ${cmd} ${args.join(' ')}\n`);
   console.log(`\n[${label}] ${new Date().toLocaleTimeString()}  ${cmd.split(/[\\/]/).pop()} ${args.join(' ')}`);
   return new Promise(resolve => {
-    const child = spawn(cmd, args, {cwd: ROOT, env: process.env});
+    const child = spawn(cmd, args, {cwd: ROOT, env: {...process.env, ...extraEnv}});
     const tee = (chunk: Buffer) => { process.stdout.write(chunk); out.write(chunk); };
     child.stdout.on('data', tee);
     child.stderr.on('data', tee);
@@ -103,22 +108,52 @@ async function main() {
     steps.push(`depth maps: ${notes.length ? notes.join('; ') : 'ok'}`);
   } else steps.push('depth maps: skipped');
 
+  // Prod preflight: the Fish script, keys, and a voice for every speaker (lessons missing one will fail at audio).
+  const mode = arg('mode') ?? 'dev';
+  const noVoice = new Set<string>();
+  const keys = mode === 'prod' ? loadFishKeys() : [];
+  if (mode === 'prod') {
+    if (!process.env.FISH_TTS_SCRIPT) throw new Error('--mode prod needs FISH_TTS_SCRIPT (path to fish_tts.py)');
+    const voices = (JSON.parse(readFileSync(join(ROOT, 'data', 'pipeline.json'), 'utf8')) as {fish: {voices: Record<string, string>}}).fish.voices;
+    const scripts = process.env.AUDIO_SCRIPTS_DIR ?? join(ROOT, '..', 'audio_scripts');
+    const missing = lessons.flatMap(l => {
+      // Collected as "<lesson> (<speakers>)"; the lesson itself goes into `noVoice` and is skipped below.
+      const f = resolveAudioScript(scripts, l);
+      if (!f) return [];
+      const speakers = [...new Set(parseTranscript(readFileSync(f, 'utf8')).filter(t => t.kind === 'speech').map(t => t.speaker ?? 'narrator'))];
+      const without = speakers.filter(s => !voices[s]);
+      if (without.length) noVoice.add(l);
+      return without.length ? [`${l} (${without.join(', ')})`] : [];
+    });
+    steps.push(`Fish: ${keys.length} key(s)${keys.length ? `, cycled per lesson (${keys.map(keyTag).join(', ')})` : ' (none set: the Fish script uses its own key)'}`);
+    if (missing.length) steps.push(`skipped, no Fish voice in data/pipeline.json for: ${missing.join('; ')}`);
+    console.log(`[overnight] ${steps.slice(-2).join('\n[overnight] ')}`);
+  }
+  let runs = 0;
+
   // 3 + 4. Lessons, one at a time; failed ones retried once at the end.
-  const base = ['--full', '--skip', 'images', ...(flag('no-draft') ? [] : ['--draft']), ...(flag('no-clips') ? ['--video-gen', 'none'] : [])];
+  const base = ['--mode', mode, '--full', '--skip', 'images', ...(flag('no-draft') ? [] : ['--draft']), ...(flag('no-clips') ? ['--video-gen', 'none'] : [])];
   if (flag('preview')) base.splice(base.indexOf('--full'), 1);
   const results = new Map<string, Result>();
   const build = async (lesson: string, attempt: number, extra: string[] = []) => {
     const t0 = Date.now();
-    const {code, log} = await run(`${lesson}${attempt > 1 ? ' retry' : ''}`, process.execPath, [tsx, join('tools', 'video-pipeline.ts'), '--episode', lesson, ...base, ...extra], `${lesson}.log`);
+    // Round-robin Fish keys: every lesson run (retries included) takes the next key.
+    const key = keyForRun(keys, runs++);
+    const keyEnv = key ? {[process.env.FISH_KEY_ENV ?? 'FISH_API_KEY']: key} : {};
+    if (key) console.log(`[overnight] ${lesson}: Fish key ${keyTag(key)}`);
+    const {code, log} = await run(`${lesson}${attempt > 1 ? ' retry' : ''}`, process.execPath, [tsx, join('tools', 'video-pipeline.ts'), '--episode', lesson, ...base, ...extra], `${lesson}.log`, keyEnv);
     const text = tail(log, 40);
     const waiting = /waiting for \d+ agent answer/.test(text);
     const video = join(ROOT, 'out', `${lesson}.mp4`);
     const ok = code === 0 && !waiting && (flag('preview') || existsSync(video));
     const note = ok ? (extra.includes('none') ? 'rendered without LTX clips' : '') : waiting ? 'director is waiting for agent answers (agent mode?)' : (text.split('\n').reverse().find(l => /error|failed|not reachable|invalid|missing/i.test(l)) ?? `exit ${code}`).trim().slice(0, 200);
-    results.set(lesson, {lesson, ok, took: minutes(Date.now() - t0), attempt, note, video: ok && !flag('preview') ? relative(ROOT, video) : undefined, log: relative(ROOT, log)});
+    results.set(lesson, {lesson, ok, took: minutes(Date.now() - t0), attempt, note: [note, key ? `key ${keyTag(key)}` : ''].filter(Boolean).join(' · '), video: ok && !flag('preview') ? relative(ROOT, video) : undefined, log: relative(ROOT, log)});
   };
-  for (const lesson of lessons) await build(lesson, 1);
-  for (const lesson of lessons.filter(l => !results.get(l)!.ok)) {
+  for (const lesson of lessons) {
+    if (noVoice.has(lesson)) results.set(lesson, {lesson, ok: false, took: '0 min', attempt: 0, note: 'skipped: a speaker has no Fish voice id (data/pipeline.json fish.voices)', log: '-'});
+    else await build(lesson, 1);
+  }
+  for (const lesson of lessons.filter(l => !results.get(l)!.ok && !noVoice.has(l))) {
     const ltx = /LTX|ltx_desktop|\[clips\]/i.test(tail(join(logDir, `${lesson}.log`), 60));
     await build(lesson, 2, ltx && !flag('no-clips') ? ['--video-gen', 'none'] : []);
   }
