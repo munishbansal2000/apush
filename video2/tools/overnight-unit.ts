@@ -5,7 +5,7 @@
  *   npx tsx tools/overnight-unit.ts --unit 3 --lessons u3e1,u3e4
  *   npx tsx tools/overnight-unit.ts --unit 3 --list          show the plan and exit
  *   npx tsx tools/overnight-unit.ts --unit 3 --mode prod      final Fish voices (default: dev, edge-tts)
- *   options: --skip-images  --skip-depth  --no-clips (no LTX)  --no-draft (approved geography only)  --preview (no final render)
+ *   options: --keep-plan (lessons with a plan keep it)  --skip-images  --skip-depth  --no-clips (no LTX)  --no-draft (approved geography only)  --preview (no final render)
  *
  * 1. images   python tools/download-u3-images.py --all: polite downloads of the unit's catalogs, registered for the director
  * 2. depth    python tools/depth-maps.py per lesson folder (2.5D parallax; skipped with a warning if torch is missing)
@@ -37,7 +37,7 @@ const opt = (name: string, ...aliases: string[]): string | undefined => {
   }
   return undefined;
 };
-const KNOWN = new Set(['unit', 'lessons', 'lesson', 'mode', 'list', 'skip-images', 'skip-depth', 'no-clips', 'no-draft', 'preview']);
+const KNOWN = new Set(['unit', 'lessons', 'lesson', 'mode', 'list', 'skip-images', 'skip-depth', 'no-clips', 'no-draft', 'preview', 'keep-plan']);
 for (const a of process.argv.slice(2)) {
   const m = /^--([^=]+)/.exec(a);
   if (m && !KNOWN.has(m[1])) { console.error(`unknown option --${m[1]} (known: ${[...KNOWN].map(k => `--${k}`).join(' ')})`); process.exit(1); }
@@ -156,7 +156,7 @@ async function main() {
   }
 
   // 3 + 4. Lessons, one at a time; failed ones retried once at the end.
-  const base = ['--mode', mode, '--full', '--skip', 'images', ...(flag('no-draft') ? [] : ['--draft']), ...(flag('no-clips') ? ['--video-gen', 'none'] : [])];
+  const base = ['--mode', mode, '--full', '--skip', 'images', ...(flag('no-draft') ? [] : ['--draft']), ...(flag('no-clips') ? ['--video-gen', 'none'] : []), ...(flag('keep-plan') ? ['--keep-plan'] : [])];
   if (flag('preview')) base.splice(base.indexOf('--full'), 1);
   const results = new Map<string, Result>();
   const build = async (lesson: string, attempt: number, extra: string[] = []) => {

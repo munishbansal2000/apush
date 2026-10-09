@@ -40,6 +40,8 @@ export function docDirectStage(ctx: PipelineContext, opts: {allowEstimated?: boo
   const patches = ctx.patches ?? true;
   const hash = sha256(JSON.stringify({turns: inputs.turns, timing: inputs.timing, words: inputs.words, catalog, maps, directorSource, draft: ctx.draft, patches}));
   if (ctx.current('direct', hash) && existsSync(out)) { console.log('[direct] checkpoint current'); return; }
+  // --keep-plan: a lesson that already has a plan keeps it even when its inputs changed (e.g. new images were added).
+  if (process.argv.includes('--keep-plan') && existsSync(out)) { console.log('[direct] --keep-plan: using the existing plan'); return; }
   const outlinePath = join(ctx.work, 'doc-outline.accepted.json');
   const agentDir = join(ctx.work, 'agent');
   const io = ctx.agent ? agentIO(agentDir) : {meta: ctx.meta};
