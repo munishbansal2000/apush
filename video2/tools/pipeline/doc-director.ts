@@ -51,6 +51,49 @@ export function buildCatalog(
   return [...entries.values()].sort((a, b) => a.path.localeCompare(b.path));
 }
 
+/* ---------------------------- per-act selection (prompt size) ---------------------------- */
+
+/** An act prompt offers at most this many images: the ones its narration is about (keeps prompts ~3k tokens). */
+export const ACT_ASSET_LIMIT = 30;
+/** With few matches, still offer at least this many (generic scenes and maps can carry any narration). */
+const ACT_ASSET_MIN = 12;
+const DESCRIPTION_CHARS = 120;
+const STOPWORDS = new Set('the and for with that this from into over under then than they them their there what when where which while who whom whose will would could should about after before because been being were was are has have had his her its our your you not but all any can one two three also just only very more most some such each other upon onto out off own same too here how why did does doing done said says like well back even still much many made make'.split(' '));
+
+const terms = (text: string): string[] =>
+  text.toLowerCase().replace(/[^a-z0-9'\s-]/g, ' ').split(/[\s-]+/).map(w => w.replace(/'s$|'/g, '').replace(/(?<=[a-z]{3})s$/, ''))
+    .filter(w => w.length >= 3 && !STOPWORDS.has(w));
+
+/** Text the director sees for an image, also what relevance is scored on. */
+const assetText = (c: CatalogEntry) => `${c.path.split('/').pop()!.replace(/\.[^.]+$/, '').replace(/[-_.]/g, ' ')} ${c.description} ${(c.focus ?? []).join(' ')}`;
+
+/**
+ * The images an act prompt offers: every image when the catalog is small, otherwise the ACT_ASSET_LIMIT whose name,
+ * description and focus tags share the most distinctive words with the act (words rare across the catalog count more).
+ */
+export function assetsForAct(catalog: CatalogEntry[], actText: string, limit = ACT_ASSET_LIMIT): CatalogEntry[] {
+  if (catalog.length <= limit) return catalog;
+  const docs = catalog.map(c => new Set(terms(assetText(c))));
+  const df = new Map<string, number>();
+  for (const d of docs) for (const t of d) df.set(t, (df.get(t) ?? 0) + 1);
+  const act = new Set(terms(actText));
+  const scored = catalog.map((c, i) => ({c, score: [...docs[i]].reduce((sum, t) => sum + (act.has(t) ? Math.log(1 + catalog.length / df.get(t)!) : 0), 0)}));
+  const ranked = scored.filter(x => x.score > 0).sort((a, b) => b.score - a.score || a.c.path.localeCompare(b.c.path)).slice(0, limit).map(x => x.c);
+  const filler = ranked.length < ACT_ASSET_MIN ? scored.filter(x => x.score === 0).slice(0, ACT_ASSET_MIN - ranked.length).map(x => x.c) : [];
+  return [...ranked, ...filler].sort((a, b) => a.path.localeCompare(b.path));
+}
+
+/** Custom explainers whose event the act's narration names (by keyword); usually none, at most a couple. */
+export function customsForAct(actText: string): [string, (typeof CUSTOM_CATALOG)[keyof typeof CUSTOM_CATALOG]][] {
+  const text = actText.toLowerCase();
+  return Object.entries(CUSTOM_CATALOG).filter(([, c]) => c.keywords.some(k => new RegExp(`\\b${k.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`).test(text)));
+}
+
+const shortDescription = (text: string) => {
+  const t = text.replace(/\s+/g, ' ').trim();
+  return t.length <= DESCRIPTION_CHARS ? t : `${t.slice(0, t.lastIndexOf(' ', DESCRIPTION_CHARS)).replace(/[,;:]$/, '')}…`;
+};
+
 /* ------------------------------------ outline ------------------------------------ */
 
 export interface Outline {
@@ -136,6 +179,9 @@ const fmtZoom = (z: number) => z.toFixed(2);
 export function actPrompt(index: number, outline: Outline, turns: PipelineTurn[], durations: number[], catalog: CatalogEntry[], maps: MapData): string {
   const act = outline.acts[index];
   const span = turns.map((t, i) => ({t, i})).filter(({i}) => i >= act.turns.from && i <= act.turns.to);
+  const actText = [act.title, act.purpose, ...span.map(({t}) => cleanSpeech(t.text ?? ''))].join(' ');
+  const assets = assetsForAct(catalog, actText);
+  const customs = customsForAct(actText);
   return [
     'You are the director of a top-tier APUSH documentary that must beat Heimler\'s History on YouTube. Direct the SHOTS for ONE act.',
     '',
@@ -153,6 +199,7 @@ export function actPrompt(index: number, outline: Outline, turns: PipelineTurn[]
     `- Zoom is between 1.0 and that image's max zoom (listed). x and y (0..1) are the point to centre, e.g. a face.`,
     `- The same image may appear in at most ${LOOK_RULES.maxImageUses} shots in the whole lesson; prefer variety.`,
     '- "clip" (generated motion from a still) only for one big battle, fire, sea or crowd moment, at most one per act; prompt describes ambient motion only (smoke, water, flags, trees), never camera moves, never new people.',
+    ...(customs.length ? [] : ['- No custom explainer fits this act: do not use "custom" shots.']),
     `- "custom" (a hand-built animated explainer from CUSTOM EXPLAINERS) only where the narration is about exactly that event: at most one per act, ${LOOK_RULES.maxCustoms} per lesson, each ${LOOK_RULES.minCustomSec}-${LOOK_RULES.maxMapSec}s, starting on the phrase that introduces the event.`,
     `- Optional "atmosphere" on image, clip, portrait and point shots (not maps or custom): ${ATMOSPHERES.join(', ')}.`,
     `- Every PAUSE turn of ${LOOK_RULES.questionPauseSec}s or more gets a "question" shot anchored to the pause itself ({"turn": pauseIndex}, no phrase), quoting the question VERBATIM from the line just before it (the question sentence only, not its setup). Mark questions after "N questions, AP-shaped" with "practice": true. Shorter pauses need nothing.`,
@@ -176,12 +223,10 @@ export function actPrompt(index: number, outline: Outline, turns: PipelineTurn[]
     '',
     'Return JSON only: {"shots": [...], "years": [...]}',
     '',
-    'ASSETS (path | size | max zoom | description | focus regions):',
-    ...(catalog.length ? catalog.map(c => `${c.path} | ${c.width}x${c.height} | ${fmtZoom(c.maxZoom)} | ${c.description.replace(/\s+/g, ' ').slice(0, 200)}${c.retrospective ? ' (retrospective)' : ''}${c.focus?.length ? ` | ${c.focus.join(', ')}` : ''}`) : ['(none: use maps and point cards only)']),
+    `ASSETS for this act (${assets.length} of ${catalog.length}; path | size | max zoom | description | focus regions):`,
+    ...(assets.length ? assets.map(c => `${c.path} | ${c.width}x${c.height} | ${fmtZoom(c.maxZoom)} | ${shortDescription(c.description)}${c.retrospective ? ' (retrospective)' : ''}${c.focus?.length ? ` | ${c.focus.join(', ')}` : ''}`) : ['(none: use maps and point cards only)']),
     '',
-    'CUSTOM EXPLAINERS (name | event | what it shows):',
-    ...Object.entries(CUSTOM_CATALOG).map(([name, c]) => `${name} | ${c.topic} | ${c.shows}`),
-    '',
+    ...(customs.length ? ['CUSTOM EXPLAINERS (name | event | what it shows):', ...customs.map(([name, c]) => `${name} | ${c.topic} | ${c.shows}`), ''] : []),
     'MAP VIEWS (view id | name | focus targets):',
     ...(maps.views?.length ? maps.views.map(v => `${v.id} | ${v.name} | ${v.focus.join(', ')}`) : ['(none)']),
     '',

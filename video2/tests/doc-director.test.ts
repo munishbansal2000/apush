@@ -4,7 +4,7 @@ import {tmpdir} from 'node:os';
 import {join} from 'node:path';
 import {describe, it} from 'node:test';
 import {parseTranscript, type PipelineTurn} from '../tools/pipeline-core';
-import {actPrompt, buildCatalog, directDocumentary, validateOutline, type Outline} from '../tools/pipeline/doc-director';
+import {ACT_ASSET_LIMIT, actPrompt, assetsForAct, buildCatalog, customsForAct, directDocumentary, validateOutline, type Outline} from '../tools/pipeline/doc-director';
 import type {GeoFeature, PlanShot, ShotPlan} from '../tools/pipeline/shots';
 
 const root = new URL('..', import.meta.url).pathname;
@@ -111,3 +111,33 @@ describe('documentary director', () => {
   });
 });
 
+describe('act prompt size: per-act images and custom explainers', () => {
+  const big = buildCatalog(Object.fromEntries([
+    ...Array.from({length: 60}, (_, i) => [`historic/filler-${String(i).padStart(2, '0')}.jpg`, {width: 3000, height: 2000}]),
+    ['historic/pontiac-council.jpg', {width: 3000, height: 2000}], ['historic/grenville.jpg', {width: 3000, height: 2000}],
+  ]), {
+    ...Object.fromEntries(Array.from({length: 60}, (_, i) => [`historic/filler-${String(i).padStart(2, '0')}.jpg`, `Harbor scene with ships and sailors, view ${i}`])),
+    'historic/pontiac-council.jpg': 'Pontiac addresses the council of Ottawa leaders before the siege of Detroit',
+    'historic/grenville.jpg': 'Portrait of George Grenville, prime minister',
+  });
+
+  it('offers at most ACT_ASSET_LIMIT images, the ones the act talks about first', () => {
+    const picked = assetsForAct(big, 'Pontiac gathers the Ottawa and strikes Detroit. The forts fall.');
+    assert.ok(picked.length <= ACT_ASSET_LIMIT);
+    assert.ok(picked.some(c => c.path === 'historic/pontiac-council.jpg'));
+    assert.ok(!picked.some(c => c.path === 'historic/grenville.jpg'), 'an unrelated portrait is not offered');
+    assert.equal(assetsForAct(big.slice(0, 10), 'anything').length, 10, 'a small catalog is offered whole');
+  });
+
+  it('offers a custom explainer only when the narration names its event', () => {
+    assert.deepEqual(customsForAct('Then Pontiac moves on Detroit.').map(([n]) => n), ['PontiacFortsMap']);
+    assert.deepEqual(customsForAct('London counts the money.'), []);
+    assert.deepEqual(customsForAct('Stamp Act riots in Boston').map(([n]) => n), ['StampActTax']);
+  });
+
+  it('keeps an act prompt small with a large catalog', () => {
+    const prompt = actPrompt(0, outline, turns, durations, big, maps);
+    assert.ok((prompt.match(/^historic\//gm) ?? []).length <= ACT_ASSET_LIMIT);
+    assert.ok(!/CUSTOM EXPLAINERS/.test(prompt) || /PontiacFortsMap/.test(prompt));
+  });
+});
