@@ -32,6 +32,7 @@ FORCE = "--force" in sys.argv
 
 def download_one(img, out_dir):
     img_id = img["id"]
+    last_error = "no URLs"
     # Determine extension from URL or default to .jpg
     for url_key in ["primary_url", "alt_url"]:
         url = img.get(url_key)
@@ -63,9 +64,10 @@ def download_one(img, out_dir):
                     f.write(data)
                 return f"ok ({url_key}): {img_id} ({len(data)//1024}KB)"
         except Exception as e:
+            last_error = str(e)[:60]
             continue  # Try alt_url
     
-    return f"FAILED: {img_id}"
+    return f"FAILED: {img_id} ({last_error})"
 
 def download_lesson(lesson):
     catalog_path = CATALOG_DIR / f"{lesson}-images.json"
