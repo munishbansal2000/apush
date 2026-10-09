@@ -19,8 +19,16 @@ interface ManifestEntry {
   download_urls?: string[];
   used_in?: string[];
   license?: string;
+  /** Pixel size of the original file ("WxH"), recorded when the entry was verified; smaller local copies are re-fetched. */
+  original_size?: string;
 }
 interface CommonsInfo { title: string; url: string; license: string }
+
+/** Longest edge we download as-is; larger originals come as Commons' standard 3840px rendition (ample for 1080p moves). */
+const ORIGINAL_MAX_EDGE = 4000;
+const RENDITION_WIDTH = '3840';
+/** The original when it is a sensible size, else the 3840px rendition. Never a small thumbnail. */
+const bestCommonsUrl = (info: CommonsImageInfo) => (Math.max(info.width, info.height) <= ORIGINAL_MAX_EDGE ? info.url : info.thumburl ?? info.url);
 interface CommonsImageInfo {
   thumburl?: string; url: string; width: number; height: number;
   extmetadata?: Record<string, { value: string }>;
@@ -103,7 +111,7 @@ export function commonsTitle(sourceUrl: string): string | null {
 async function commonsInfo(title: string): Promise<CommonsInfo | null> {
   const q = new URLSearchParams({
     action: 'query', format: 'json', titles: `File:${title}`, prop: 'imageinfo',
-    iiprop: 'url|size|extmetadata', iiurlwidth: '2400', maxlag: '5', origin: '*',
+    iiprop: 'url|size|extmetadata', iiurlwidth: RENDITION_WIDTH, maxlag: '5', origin: '*',
   });
   const res = await getWithRetry(`${COMMONS_API}?${q}`);
   if (!res?.ok) return null;
@@ -111,7 +119,7 @@ async function commonsInfo(title: string): Promise<CommonsInfo | null> {
   const page = Object.values(data.query?.pages ?? {})[0];
   const info = page?.imageinfo?.[0];
   if (!info) return null;
-  return { title, url: info.thumburl ?? info.url, license: strip(info.extmetadata?.LicenseShortName?.value) || 'unknown' };
+  return { title, url: bestCommonsUrl(info), license: strip(info.extmetadata?.LicenseShortName?.value) || 'unknown' };
 }
 
 /** Recover from plausible-but-nonexistent filenames produced by image research. */
@@ -119,7 +127,7 @@ async function searchCommonsInfo(wantedTitle: string): Promise<CommonsInfo | nul
   const stem = wantedTitle.replace(/\.[^.]+$/, '').replace(/[_(),–—-]+/g, ' ').replace(/\s+/g, ' ').trim();
   const q = new URLSearchParams({
     action: 'query', format: 'json', generator: 'search', gsrsearch: `${stem} filetype:bitmap`,
-    gsrnamespace: '6', gsrlimit: '10', prop: 'imageinfo', iiprop: 'url|size|extmetadata', iiurlwidth: '2400', maxlag: '5', origin: '*',
+    gsrnamespace: '6', gsrlimit: '10', prop: 'imageinfo', iiprop: 'url|size|extmetadata', iiurlwidth: RENDITION_WIDTH, maxlag: '5', origin: '*',
   });
   const res = await getWithRetry(`${COMMONS_API}?${q}`);
   if (!res?.ok) return null;
@@ -139,7 +147,7 @@ async function searchCommonsInfo(wantedTitle: string): Promise<CommonsInfo | nul
   console.log(`    ... Commons corrected "${wantedTitle}" to "${canonicalTitle}" (${Math.round(best.score * 100)}% token match)`);
   return {
     title: canonicalTitle,
-    url: best.info!.thumburl ?? best.info!.url,
+    url: bestCommonsUrl(best.info!),
     license: strip(best.info!.extmetadata?.LicenseShortName?.value) || 'unknown',
   };
 }
@@ -199,14 +207,14 @@ async function candidates(entry: ManifestEntry): Promise<{ urls: string[]; licen
     const info = await commonsInfo(title) ?? await searchCommonsInfo(title);
     if (info) {
       urls.push(info.url);
-      urls.push(`https://commons.wikimedia.org/wiki/Special:Redirect/file/${encodeURIComponent(info.title)}?width=2400`);
+      urls.push(`https://commons.wikimedia.org/wiki/Special:Redirect/file/${encodeURIComponent(info.title)}?width=${RENDITION_WIDTH}`);
       license = info.license;
       const manifestPD = /public domain|cc0|\bpd\b/i.test(entry.license ?? '');
       const sourcePD = /public domain|cc0|\bpd\b/i.test(info.license);
       if (manifestPD !== sourcePD) console.log(`    ! license metadata differs: manifest "${entry.license}", Commons "${info.license}"`);
     }
     // Keep the requested title as a fallback if search/API resolution failed.
-    urls.push(`https://commons.wikimedia.org/wiki/Special:Redirect/file/${encodeURIComponent(title)}?width=2400`);
+    urls.push(`https://commons.wikimedia.org/wiki/Special:Redirect/file/${encodeURIComponent(title)}?width=${RENDITION_WIDTH}`);
   } else if (/\.(?:jpe?g|png|webp|tiff?)(?:\?|$)/i.test(source)) {
     urls.push(source);
   } else if (new URL(source).host.toLowerCase().endsWith('loc.gov')) {
@@ -310,7 +318,11 @@ for (const [path, entry] of targets) {
   }
   const out = join(PUBLIC, path);
   const old = lock[path];
-  if (!flag('force') && existsSync(out) && old?.source_url === entry.source_url && sha(out) === old.sha256) {
+  // A local copy smaller than the verified original (e.g. an old 250px thumbnail) is re-fetched.
+  const [ow] = (entry.original_size ?? '').split('x').map(Number);
+  const expectedWidth = ow ? Math.min(ow, ow > ORIGINAL_MAX_EDGE ? Number(RENDITION_WIDTH) : ow) : 0;
+  const undersized = expectedWidth > 0 && (old?.width ?? 0) < expectedWidth * 0.95;
+  if (!flag('force') && !undersized && existsSync(out) && old?.source_url === entry.source_url && sha(out) === old.sha256) {
     skipped++;
     continue;
   }
