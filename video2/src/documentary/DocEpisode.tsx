@@ -81,8 +81,13 @@ export const DocEpisode: React.FC<DocEpisodeProps> = ({episode, shots, years = [
   const currentBox = boxes.findIndex(b => t >= b.startSec && t < b.endSec);
   // The Episode Sheet steps aside while a question card is up.
   const onQuestion = shots.some(s => s.type === 'question' && t >= s.startSec && t < s.endSec);
-  // Map labels step aside from a year stamp while it is up.
-  const zones = years.filter(y => t >= y.sec && t < y.sec + 5).map(y => yearStampZone(y.text, frame - Math.round(y.sec * fps), fps, width, height));
+  // Map labels step aside from the chrome on screen: a year stamp while it is up, the docked sheet while it shows.
+  const sheetOpacity = boxes.length && sheet.phase === 'docked' ? (onQuestion ? 0 : dockedOpacity(t, boxes)) : 0;
+  const [rx0, ry0, rx1, ry1] = cfg.boxTracker.rect;
+  const zones = [
+    ...years.filter(y => t >= y.sec && t < y.sec + 5).map(y => yearStampZone(y.text, frame - Math.round(y.sec * fps), fps, width, height)),
+    ...(sheetOpacity > 0 ? [{rect: [rx0 * width, ry0 * height, rx1 * width, ry1 * height] as [number, number, number, number], opacity: Math.min(1, sheetOpacity * 4)}] : []),
+  ];
   const speaking = (sec: number) => turns.some((turn, i) => turn.kind === 'speech' && sec >= timing.starts[i] && sec < timing.starts[i] + timing.durations[i]);
   return (
     <AbsoluteFill ref={rootRef} data-kit-root style={{background: '#0b0907'}}>
@@ -108,7 +113,7 @@ export const DocEpisode: React.FC<DocEpisodeProps> = ({episode, shots, years = [
           <Track id="chrome:box-tracker" role={sheet.phase === 'docked' ? 'chrome' : 'cover'}>
             <div {...GUARD_WRAPPER} style={{position: 'absolute', inset: 0, transformOrigin: '0 0', transform: `translate(${sheet.tx}px, ${sheet.ty}px) scale(${sheet.scale})`,
               // Docked, the sheet recedes to a translucent tab and comes forward around box events.
-              opacity: sheet.phase === 'docked' ? (onQuestion ? 0 : dockedOpacity(t, boxes)) : 1}}>
+              opacity: sheet.phase === 'docked' ? sheetOpacity : 1}}>
               <BoxTracker cfg={cfg} state={{
                 boxes: boxes.map(b => b.label),
                 checkedAt: boxes.map(b => b.checkSec),
