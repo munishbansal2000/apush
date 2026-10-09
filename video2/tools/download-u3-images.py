@@ -50,8 +50,9 @@ def download_one(img, out_dir):
         if out_path.exists() and out_path.stat().st_size > 0 and not FORCE:
             return f"skip (exists): {img_id}"
         
-        try:
-            req = urllib.request.Request(url, headers={"User-Agent": "APUSH-Educational/1.0"})
+        for _retry in range(3):
+            try:
+                req = urllib.request.Request(url, headers={"User-Agent": "APUSH-Educational/1.0"})
             with urllib.request.urlopen(req, timeout=30) as resp:
                 ctype = resp.headers.get("Content-Type", "")
                 if not ctype.startswith("image/"):
