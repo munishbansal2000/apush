@@ -1,0 +1,158 @@
+# APUSH Unit 6, Lesson 4: Versailles and the League Fight
+# Script v3 DRAFT — Maya + Marcus Interview
+# Format: Interview | Words: 2,050 spoken | Runtime: ~12 min experienced (11.4 min speech @ 180 WPM + 50 s scripted pauses) | CED: 7.3
+# v3 (2026-10-08): fleet-repair pass on the independent audit — four announcer "common mistake" beats converted to live traps (Maya wrong, Marcus corrects, purely affirmative corrections), "never names a number" corrected to "never names the total" (Art. 235 named the 20B interim figure), all pause tags unified to [10-second pause], direction-tag density thinned to ≤40%, negation-replacement shapes dissolved to ≤2, `## Script` header flattened to `#`, `---` rules removed, closer renamed to the production-only `## Sources` form.
+# Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Strip this header, the read note, and all [10-second pause] tags before TTS; convert pause tags to silence.
+# Production note: the closing tagline contains an em dash — hold the beat, do not rush it.
+# Pronunciation: Versailles (vair-SY), Clemenceau (klem-en-SOH), Lloyd George, Orlando, Diktat (dik-TAHT), Borah (BOR-uh), Abyssinia (ab-ih-SIN-ee-uh), Posen (POH-zen), Danzig (DANT-sig)
+
+Maya: [professional broadcast tone] Last time: the home front went all-in — bond drives, rationing, Washington running the economy. Now the guns stop, and the peace is the hard part. Wilson sails to Paris with fourteen points for a perfect peace, and comes home to a Senate that says no. Four boxes: the Fourteen Points, the Treaty of Versailles, the League fight, and the verdict — too harsh, too soft, or both. Circle the ones you couldn't explain right now. Twelve minutes.
+
+Marcus: January 1918. The war is still raging, and Wilson goes before Congress with fourteen points, his plan for the peace. No secret treaties. Free seas. Lower trade barriers. Fewer weapons. A fair deal on colonies. Redraw Europe around self-determination. And point fourteen: a general association of nations. The League.
+
+Maya: So it's a pitch. He's telling the world what America's fighting for, the war aims, like we talked about two episodes back.
+
+Marcus: Exactly. And the Allies signed onto the points as their war aims too. So when Wilson sails for Paris a year later, he's carrying a promise everybody in Europe heard him make.
+
+Maya: [firm] Exam brain. Keep the plan and the punishment in two separate boxes. Fourteen Points: January 1918, Wilson's wish list, announced while the fighting is still on. Versailles: June 1919, the actual treaty, mostly written by the French and British. Two different documents, two different years.
+
+Maya: [sheepish] Okay, so the Fourteen Points just became the treaty? Wilson wrote the plan, then Paris made it official?
+
+Marcus: [firm] Common mix-up. Most of the points died in Paris. Wilson traded them away to keep the League.
+
+Maya: [confident tone] Fourteen Points: checking that one. Wilson's January 1918 war aims, a year and a half before the treaty.
+
+Marcus: [dramatic] December 1918. Wilson sails for France. No sitting president had ever crossed the ocean for diplomacy before. He spends seven months in Paris arguing with the three other men who run the conference. The Big Four: Wilson, Clemenceau of France, Lloyd George of Britain, and Orlando of Italy.
+
+Maya: [playful] I've been to Versailles, tenth-grade school trip. The Hall of Mirrors is absurd. Absolute power, in mirrors. And they signed the peace treaty in that room.
+
+Marcus: They picked it on purpose. Now the collision. Wilson walks in believing the war was fought for his fourteen points. The other three fought it for survival, and they want payment. Clemenceau wants Germany broken so it can never march into France again. Lloyd George's voters want Germany to pay for the war. Orlando wants the territory Italy was promised in secret wartime deals.
+
+Maya: Secret deals, which point one says shouldn't exist.
+
+Marcus: The whole conference runs on contradictions like that. Wilson trades points away to protect the one thing he won't give up: the League.
+
+Maya: [playful] Fourteen points walk into Paris. How many walk out?
+
+Marcus: [dramatic] June 28, 1919. The treaty is signed in the Hall of Mirrors. The League's covenant goes in first, literally part one of the treaty. Then the punishment. Article 231, the war guilt clause: Germany accepts responsibility for the war. On that legal hook hangs reparations.
+
+Maya: Set at 132 billion gold marks.
+
+Marcus: [firm] The treaty never names the total. It creates the obligation, plus an interim 20-billion-mark payment, and leaves the rest to a reparations commission. The commission fills in the number in 1921: 132 billion gold marks. The rule: the treaty creates the obligation, the commission names the total. Any answer choice that puts 132 billion inside the 1919 treaty is wrong.
+
+Maya: [sheepish] Going straight into my notes. Treaty sets the guilt in 1919; the commission sets the bill in 1921.
+
+Marcus: Then the rest of the punishment. German army capped at 100,000. No draft, no air force, navy gutted. The Rhineland demilitarized. Alsace-Lorraine goes back to France. In the east, land goes to the new Poland, splitting Germany in two. The overseas colonies become League mandates. Roughly a tenth of Germany's European territory, gone.
+
+Maya: [incredulous] And Germany's in the room for this?
+
+Marcus: [serious tone] The German delegation gets handed the treaty and told to sign or face an invasion. The Germans have a word for it: a Diktat. A dictated peace.
+
+Maya: [sheepish] So Germany negotiated the terms down; they at least pushed back on the draft?
+
+Marcus: [firm] The terms were read to them. Sign or face invasion. That was the whole negotiation.
+
+Marcus: Your turn. Germany loses territory, pays for the war, gets its army gutted. Next war: more likely or less likely? Ten seconds, no fence-sitting.
+[10-second pause]
+Maya: More likely. Humiliation plus a wrecked economy is a recruiting poster for extremists.
+
+Marcus: The harsh-peace argument in one line.
+
+Maya: Filed for the verdict, we're coming back to it. The treaty gets signed. Then it comes home, and that's where it dies? The Senate? Two-thirds to ratify, right?
+
+Marcus: Two-thirds. And the 1919 Senate is full of men who hate this treaty for different reasons. The League is the flashpoint, specifically Article 10 of the covenant. Every member promises to respect and preserve the others' territory. Sounds noble, until you ask who does the preserving.
+
+Maya: [curious, inquisitive tone] That sounds like NATO's Article 5. An attack on one is an attack on all.
+
+Marcus: Same DNA, yes. And that's exactly what scared Henry Cabot Lodge. Massachusetts senator, runs the Foreign Relations Committee. Lodge leads the reservationists. They'd take the League with conditions: protect the Monroe Doctrine. And above all: only Congress can send Americans to fight for the League. He reads Article 10 as a blank check for wars Congress never declared.
+
+Maya: And the other camp?
+
+Marcus: The irreconcilables. About a dozen senators, led by William Borah of Idaho. No reservations could fix it. They oppose the League in any form. To them it's a surrender of American independence, full stop.
+
+Maya: Got it. Edits versus dead. Writing that distinction down before I mix them up.
+
+Marcus: Your turn. Article 10 says members defend each other's territory. The Constitution says only Congress declares war. You're a senator in 1919. Do you sign? Ten seconds.
+[10-second pause]
+Maya: I don't. Because I'd be promising wars that a future Congress never voted for. My grandkids' wars, decided in Geneva.
+
+Marcus: Lodge's whole case, right there.
+
+Maya: So Lodge is offering a deal, reservations, conditions, Congress keeps the war power. Why doesn't Wilson take it?
+
+Marcus: The tragedy of this story is that the deal was real. Lodge said he'd deliver ratification with his reservations on it. Even some European leaders said they'd take the treaty with reservations over no treaty at all. But Wilson treated any reservation as a betrayal of the whole vision. Whether he could have closed it, historians argue about that, and plenty of them say yes.
+
+Maya: So instead of dealing, he goes to the people.
+
+Marcus: [serious tone] September 1919. Thirty-nine speeches in three weeks, cross-country by rail. The strain breaks him. He collapses on September 25, the tour is canceled, and on October 2 a massive stroke leaves him partly paralyzed, partly blind in one eye, his judgment impaired. His wife Edith controls who gets in to see him. He never really functions as president again.
+
+Maya: And the treaty?
+
+Marcus: Twice it comes up, November 1919, then March 1920, and twice it fails to get two-thirds. The first time it fails with Lodge's reservations and without them, because Wilson told his own Democrats to vote no on the compromised version. America never joins the League. In 1921, under Harding, Congress makes a separate peace with Germany.
+
+Maya: If a question asks why the treaty failed, lead with the math. Two-thirds was the bar. Lodge's reservationists offered a path with conditions. The irreconcilables offered nothing. And Wilson ordered his own Democrats to vote no on the compromise. Three factions, no two-thirds: November 1919, then March 1920.
+
+Maya: [sheepish] So after this, America just went isolationist? Pulled back from the world?
+
+Marcus: [firm] The United States stayed in the game through the 1920s. The Senate rejected this one treaty; America stayed active in world affairs.
+
+Maya: [curious, inquisitive tone] So the verdict. Too harsh, or too soft?
+
+Marcus: [serious tone] Too harsh? Look at the bill: war guilt, reparations with the total filled in later, a tenth of its territory, an army cut to almost nothing. The Germans called it a Diktat, and the bitterness it planted helped seed the next war. The harsh-peace case, and it's strong.
+
+Maya: And the other side says it wasn't harsh enough?
+
+Marcus: The other side says it was harsh enough to humiliate and too weak to restrain, the worst of both. The League had no army, no real enforcement, and every big decision needed unanimity. Every member holding a veto.
+
+Maya: [playful] Oh, I've lived that. Getting eight friends to agree on one restaurant. Nobody eats. [chuckle]
+
+Marcus: Exactly. Japan walks out in 1933 after invading Manchuria. Italy invades Ethiopia in 1935, and the League answers with sanctions that leave out oil and steel, then lifts them within a year. When Germany marches back into the Rhineland in 1936, the League does nothing at all.
+
+Maya: So blaming America's absence is too easy.
+
+Marcus: [thoughtful tone] America's absence hurt, and the structure was the deeper problem. The League settled small border disputes nobody remembers, and when it died in 1946 its powers passed straight to the United Nations. The UN's offices and agencies grew out of the League's. The institution failed. The idea survived. Call it the first draft of the United Nations.
+
+Maya: First draft.
+
+Marcus: First draft.
+
+Maya: [confident tone] On a harsh-or-soft prompt, I'd plant my flag on harsh. War guilt, a wrecked army, a tenth of the land — case closed.
+
+Marcus: [thoughtful tone] The credited answer holds both: harsh enough to humiliate Germany, too weak to stop what came next. The humiliation planted the bitterness; the League couldn't restrain what grew out of it.
+
+Maya: Four boxes, let's land them. One: the Fourteen Points, January 1918, Wilson's war aims. Open diplomacy, free seas, free trade, fewer weapons, self-determination, and point fourteen, the League. Two: Versailles, June 1919, the Big Four carve up the map. Germany gets Article 231 war guilt, reparations with the number filled in later, a gutted army, and no seat at the table. Three: the League fight. Lodge wants reservations, especially on Article 10. The irreconcilables want nothing. Wilson won't deal, takes the train, then the stroke, two failed votes, and America never joins. Four: the verdict, too harsh to forgive, too weak to restrain, but the League's machinery becomes the UN. Wait — Article 231 was the war guilt one, and Article 10 was the League promise one? I always mix those up.
+
+Marcus: [warm tone] You've got them right. 231 pins the blame on Germany. 10 is the promise to defend other members — the one Lodge couldn't swallow.
+
+Maya: Three questions, AP-shaped. Say your answer before I give it. First: Wilson gave up point after point at Paris but wouldn't budge on the League. Why?
+[10-second pause]
+Maya: Because the League was the one piece he thought could fix everything else later. The other thirteen points were tradable; the League was the machine that would deliver the fair peace. Which is why he swallowed a treaty he didn't like.
+
+Maya: Second, stimulus-style. A 1919 Senate speech warns that Article 10 would have America preserving the territorial integrity of every League nation, without Congress ever declaring war. A student says this is about the war guilt clause. What's wrong, and what clause is it really about?
+[10-second pause]
+Maya: The war guilt clause is the blame one, so, Article 231? The speech names Article 10, but the blame language threw me.
+
+Marcus: Article 231 pins the past war's blame on Germany. This speech runs on Article 10: the League's promise that members defend each other's territory, the promise Lodge read as a blank check: wars Congress never declared.
+
+Maya: Third: why did the Treaty of Versailles fail in the Senate? Give me the mechanism.
+[10-second pause]
+Maya: Lodge's reservationists would ratify with conditions protecting Congress's war power. The irreconcilables would vote no on anything. And Wilson ordered his own Democrats to vote no on the compromised version. With the middle gone and his own side voting no, neither version could reach two-thirds. November 1919, then again in March 1920.
+
+Maya: One more, fast. One structural reason the League couldn't stop aggression in the thirties.
+Maya: No enforcement of its own. No army, and big decisions needed unanimity. Japan walked out, Italy got sanctions without teeth, and that was that.
+
+Maya: [intrigued] Next time: the soldiers come home, the war's over, and America lets loose. Cars, jazz, speakeasies, and trouble underneath. The 1920s.
+
+Maya: Check your boxes.
+
+Marcus: [professional broadcast tone] He sailed to Paris to end war forever — and came home to a Senate that wouldn't even end the debate.
+
+## Sources (production-only, never spoken)
+
+- premium2027 ch9: Senate irreconcilables (isolationists) vs reservationists (middle position, conditions on League participation); Wilson refused to compromise, urged allies to reject reservations; treaty rejected 1919; "demilitarized Rhineland" (1936 remilitarization reference); Japan invaded Manchuria 1931; Italy conquered Ethiopia 1936
+- 5steps2024 ch21: Fourteen Points (open diplomacy, freedom of the seas, self-determination, League); Paris conference Jan 12, 1919, Big Four; Wilson's concessions to secure the League; German guilt + reparations to France and Britain, colonies lost, ~10% of territory, military gutted; German delegates excluded from terms ("sign or face invasion"); League covenant as the treaty's purpose; 12 irreconcilables; Lodge (Foreign Relations chair) reservationists — Monroe Doctrine + Congress-only military authorization; Lodge willing to guarantee ratification with reservations; European leaders preferred reservations to failure; Wilson's Sept 1919 tour, Oct 2 incapacitating stroke; Senate rejections in 1919 and 1920; US never joined; Harding separate peace 1921; rejection ≠ isolationism (US active in 1920s); German bitterness planted seeds of WWII
+- princeton ch11 review: Wilson sought openness, free trade, arms reduction, League; did not seek punitive treaty; European allies insisted; negotiated little of the Points; hoped the League would broker a fairer peace
+- Britannica (Tier 2): Treaty of Versailles signed June 28, 1919, Hall of Mirrors, in effect Jan 10, 1920; Article 231 "war guilt clause" (Germany + allies responsible for all loss/damage); League of Nations established Jan 10, 1920, disbanded Apr 19, 1946, powers/functions transferred to UN; Fourteen Points speech Jan 8, 1918 (liberal nonpunitive peace, self-determination, open diplomacy, collective security; accepted by Allies as war aims); Wilson's "general association of nations" phrase; Wilson in Paris seven months; Big Four (Lloyd George, Orlando, Clemenceau, Wilson); League covenant embodied in the Versailles treaty; League "lacked teeth," unanimity/veto weakness; US failed to ratify (Mar 1920 two-thirds vote); Germany in League 1926–33, Japan withdrew 1933, Italy 1937 (Britannica); Manchuria invaded 1931 (premium2027); Abyssinia sanctions Oct 1935 excluded oil/iron/steel, lifted within a year, not applied for Rhineland 1936 (Britannica); settled small disputes (Finland–Sweden etc.); UN "formed a continuum" with the League (Britannica)
+- U.S. State Dept, Office of the Historian (independent trusted source, disclosed): reparations amount (132 billion gold marks) set by the Inter-Allied Commission in 1921, on top of an initial $5B treaty payment; Germany surrendered ~10% of prewar European territory and all overseas possessions; Danzig and Saar under League administration
+- Treaty text, Art. 235 (primary source, Yale Avalon Project): "Germany shall pay ... during 1919, 1920 and the first four months of 1921, the equivalent of 20,000,000,000 gold marks" — pending full determination of claims; the treaty named this interim figure but never the total
+- Beyond Tier 1–2 (disclosed): treaty text Art. 160 (100,000-man army cap, primary source); standard references corroborate the mandate system, the "Diktat" label, the Big Four's aims (Clemenceau/security, Lloyd George/payment, Orlando/promised territory), and the Hall of Mirrors as the 1871 German Empire proclamation site — none stated in the Tier-1 chapter text, taught here with that disclosure
