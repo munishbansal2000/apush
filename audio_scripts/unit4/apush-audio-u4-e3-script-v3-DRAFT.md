@@ -1,11 +1,11 @@
 # U4-E3 — Maya + Marcus (Fish Audio)
-# Episode: The War of 1812. ~12.8 min experienced (2,067 words speech + 78s pauses)
+# Episode: The War of 1812. ~12.5 min experienced (2,067 words speech + 70s pauses)
 # v3 (2026-10-08): repair per the 2026-10-08 audit — 19 findings applied (A1–A8 accuracy/
 # lock-bar, V1–V3 voice, T1 antithesis budget, TR1 stylistic threeness, TG1–TG3 direction).
 # Eight announcer-voice exam proclamations became six live traps (embargo pair and navy pair
 # each folded into one trap). Direction stripped to beat-level tagging (~29% of turns).
-# Read note: [8-second pause] marks are production notes for real silence in prediction beats and the
-# fast bonus question; [18-second pause] marks are real silence for the CER self-test questions —
+# Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. 
+# fast bonus question; [10-second pause] marks are real silence for the CER self-test questions —
 # they never go to the voice. Strip this header, the read note, and all [pause] tags before TTS;
 # convert pause tags to silence. The ## Sources section at the end is production-only, never spoken.
 # Pronunciation: Tecumseh (teh-KUM-seh); Tippecanoe (tip-ee-kuh-NOO); Ghent (gent);
@@ -49,7 +49,7 @@ Maya: A war we barely needed, against the strongest navy on earth: honor, and a 
 
 Marcus: Now your turn. You're Madison in June 1812. Your army is tiny. The Royal Navy owns the ocean. London is already backing down on trade. Do you keep squeezing with trade laws, or roll the dice on a war?
 
-[8-second pause]
+[10-second pause]
 
 Maya: He rolled the dice.
 
@@ -113,7 +113,7 @@ Maya: The barrel didn't melt down.
 
 Marcus: Not even close. Now your turn. The treaty changed nothing. Two weeks later Jackson wins the American victory everyone remembers. Did America actually win the War of 1812?
 
-[8-second pause]
+[10-second pause]
 
 Maya: On paper, a draw — Ghent proves it. The country decided it had won anyway, and that feeling built the next decade. The honest version is blunter: the Park Service says that by 1814 there was no hope of achieving the war's stated goals, free trade, sailors' rights, taking Canada. None of it happened. So was it a "Second War of Independence"? Not on paper. But America survived Britain, and the war broke Native resistance east of the Mississippi for good — the dark half, and the one the textbooks used to skip.
 
@@ -153,25 +153,25 @@ Maya: Four: Ghent changed nothing. Hartford killed the Federalists. New Orleans 
 
 Maya: Three questions, AP-shaped. Say your answer before I give it. One: the War Hawks wanted war. Give me their case, and which part was really about the West.
 
-[18-second pause]
+[10-second pause]
 
 Maya: Honor at sea, impressment and the seizures, plus two western aims: they were convinced Britain was arming Tecumseh, and they wanted Canada. The vote is the evidence: West and South for it, New England against. The western half is what made it a War Hawk war.
 
 Maya: Two, a stimulus. September 1814. Key, stuck on a truce ship in Baltimore harbor, watches a twenty-five-hour bombardment and writes: "the rocket's red glare, the bombs bursting in air, gave proof through the night that our flag was still there." What's the point of this source? What does it tell you about what the war meant?
 
-[18-second pause]
+[10-second pause]
 
 Maya: Baltimore changed almost nothing militarily. But one flag surviving one night became proof the republic could take a punch — the "Second War of Independence" distilled to a single image, a feeling the country earned that night.
 
 Maya: Three. The Treaty of Ghent ended the war. Did it settle anything the war was fought over?
 
-[18-second pause]
+[10-second pause]
 
 Maya: No. Status quo ante, and no mention of impressment, the seizures, or British aid to Native resistance. What actually ended impressment was Napoleon's fall. The treaty just ended the shooting.
 
 Maya: One more, fast. Perry smashes the British on Lake Erie, September 1813. Why does winning on a lake let Harrison retake Detroit?
 
-[8-second pause]
+[10-second pause]
 
 Maya: The lakes were the waterways. Whoever held Lake Erie supplied the whole west. Perry cut the British supply line, so they gave up Detroit. Harrison chased them into Canada and finished Tecumseh at the Thames.
 

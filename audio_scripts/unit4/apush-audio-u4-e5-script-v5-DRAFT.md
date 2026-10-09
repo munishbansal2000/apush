@@ -1,7 +1,7 @@
 # U4-E5 — Maya + Marcus (Fish Audio)
 # Episode 5: The Missouri Compromise. About twelve minutes experienced.
 # Draft v5. Surgical antithesis rework on v4: 7 sentence-pair antithesis forms → asymmetric phrasing; "Keep that sentence" → "Keep that thought" as rework fallout. No other dialogue words changed. Tag density unchanged (27%).
-# Read note: Maya tracks four boxes on her episode sheet: the eleven-eleven deadlock, Tallmadge's amendment, the Compromise mechanics and the second Missouri crisis, and the fire bell and what it postponed. Pause tags are production notes for real silence — strip this header, the read note, and every [N-second pause] tag before TTS; convert tags to silence. Tags used: [8-second pause], [9-second pause], [18-second pause], [5-second pause]. The em dash in the closing tagline is a held beat — leave a full breath between Marcus's setup line and Maya's landing line. Do not rush it.
+# Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Maya tracks four boxes on her episode sheet: the eleven-eleven deadlock, Tallmadge's amendment, the Compromise mechanics and the second Missouri crisis, and the fire bell and what it postponed. Pause tags are production notes for real silence — strip this header, the read note, and every [N-second pause] tag before TTS; convert tags to silence. The em dash in the closing tagline is a held beat — leave a full breath between Marcus's setup line and Maya's landing line. Do not rush it.
 # Pronunciation: tal-MAJ (Tallmadge); mon-tih-CHEL-oh (Monticello)
 
 Maya: [professional broadcast tone] Last time: the good feelings — and the cracks underneath. Now: the crack that nearly split the floor. Eighteen eighteen. Missouri asks to join the Union as a slave state, and Congress realizes the whole thing is balanced eleven to eleven, with nowhere to hide. Four boxes on your sheet: the eleven-eleven deadlock, Tallmadge's amendment, the Compromise and its second crisis, and the fire bell, and what it postponed. Circle the ones you couldn't explain right now. About twelve minutes, and they're yours.
@@ -16,7 +16,7 @@ Maya: My aunt's outside Kansas City. I've driven across Missouri in August, wind
 
 Marcus: It should. Now your turn. Missouri wants in as a slave state. The Senate's tied at twenty-two all. What's the one thing the North can't afford?
 
-[8-second pause]
+[10-second pause]
 
 Marcus: Missouri, tipping the Senate, and through the three-fifths clause, the House and the presidency too. One state, three chambers of power.
 
@@ -72,7 +72,7 @@ Marcus: The country told itself that story for thirty years, and it's wrong. The
 
 Maya: Your turn. Fast-forward to eighteen forty-eight. The country's a lot bigger than it was in eighteen twenty. Can the Compromise settle slavery there?
 
-[9-second pause]
+[10-second pause]
 
 Maya: No — the line stopped at the old Louisiana border. New land, new fight.
 
@@ -136,25 +136,25 @@ Marcus: And the sheet's full.
 
 Maya: Three questions, AP-shaped. Say your answer before I give it. One: why did Missouri's application panic Congress?
 
-[18-second pause]
+[10-second pause]
 
 Maya: The Senate sat at twenty-two all. A slave Missouri tips the Senate, and through the three-fifths clause, it pads Southern seats in the House and votes for president. One state pulling three levers of power at once. Which is why a statehood application, normally routine, turned into a national crisis.
 
 Maya: Two: what did the Tallmadge Amendment propose, and where did it die?
 
-[18-second pause]
+[10-second pause]
 
 Maya: Two conditions: no new enslaved people brought into Missouri, and children born to enslaved mothers freed at twenty-five. It passed the House, where the North had the numbers, and died in the Senate.
 
 Maya: Three. A stimulus shows a map of the Louisiana Territory with a straight line drawn at thirty-six thirty. Two things: what does the line do, and what can't it do?
 
-[18-second pause]
+[10-second pause]
 
 Maya: It divides where slavery may spread: banned north of the line except in Missouri itself, permitted south of it. What it can't do: settle the moral question, or cover land outside the Louisiana Territory. Every new territory reopens the fight. Call it the postponement in box four: the line bought about thirty years, and nothing more.
 
 Maya: One more, fast. Jefferson's fire bell: what did the bell wake up?
 
-[5-second pause]
+[10-second pause]
 
 Maya: The realization that slavery had gone national. It was the question that could split the Union.
 
