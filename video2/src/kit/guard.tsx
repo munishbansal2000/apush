@@ -24,7 +24,7 @@
  * offending elements get red outlines.
  */
 import React, { useLayoutEffect, useRef, useState } from 'react';
-import { getRemotionEnvironment, useCurrentFrame } from 'remotion';
+import { getRemotionEnvironment, useCurrentFrame, useVideoConfig } from 'remotion';
 import type { Rect } from './layout';
 
 /** The subset of render-config the guard needs (RenderConfig satisfies it). */
@@ -78,10 +78,12 @@ const isPanel = (cs: CSSStyleDeclaration) =>
   (['Top', 'Right', 'Bottom', 'Left'] as const).some(sd => parseFloat(cs[`border${sd}Width`]) > 0 && cs[`border${sd}Style`] !== 'none');
 const ownText = (d: Element) => [...d.childNodes].some(n => n.nodeType === 3 && n.textContent?.trim());
 
-export function measureTracks(root: HTMLElement, cfg: GuardCfg): { boxes: Map<string, { rect: Rect; role: string; el: HTMLElement }>; issues: GuardIssue[] } {
+export function measureTracks(root: HTMLElement, cfg: GuardCfg, frame?: { width: number; height: number }): { boxes: Map<string, { rect: Rect; role: string; el: HTMLElement }>; issues: GuardIssue[] } {
   const rootRect = root.getBoundingClientRect();
-  const W = rootRect.width;
-  const H = rootRect.height;
+  // A single-frame render can measure the root before its parent is laid out (0x0); the root always covers the
+  // composition frame, so measure against that size instead of dividing by zero.
+  const W = rootRect.width || frame?.width || 1;
+  const H = rootRect.height || frame?.height || 1;
   const toFrac = (r: DOMRect): Rect => [(r.left - rootRect.left) / W, (r.top - rootRect.top) / H, (r.right - rootRect.left) / W, (r.bottom - rootRect.top) / H];
   const boxes = new Map<string, { rect: Rect; role: string; el: HTMLElement }>();
   const issues: GuardIssue[] = [];
@@ -252,6 +254,7 @@ export function measureTracks(root: HTMLElement, cfg: GuardCfg): { boxes: Map<st
 
 export const LayoutGuard: React.FC<{ cfg: GuardCfg; rootRef: React.RefObject<HTMLDivElement | null> }> = ({ cfg, rootRef }) => {
   const frame = useCurrentFrame();
+  const { width, height } = useVideoConfig();
   const studio = getRemotionEnvironment().isStudio;
   const [outlines, setOutlines] = useState<GuardIssue[]>([]);
   const last = useRef('');
@@ -261,7 +264,7 @@ export const LayoutGuard: React.FC<{ cfg: GuardCfg; rootRef: React.RefObject<HTM
     // (renderStill, the first frame of a segment) would see null and never report. The DOM is already in place: find it.
     const root = rootRef.current ?? document.querySelector<HTMLDivElement>('[data-kit-root]');
     if (!root) return;
-    const { boxes, issues } = measureTracks(root, cfg);
+    const { boxes, issues } = measureTracks(root, cfg, { width, height });
     // Heartbeat: proves the guard measured this frame, so a silent guard can't pass for a clean render.
     if (!studio) console.warn(`[kit-layout-ok] ${JSON.stringify({ frame, tracks: Object.fromEntries([...boxes].map(([id, b]) => [id, b.rect.map(v => +v.toFixed(3))])) })}`);
     const key = JSON.stringify(issues.map(i => [i.kind, i.id, i.other]));
