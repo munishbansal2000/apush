@@ -9,13 +9,14 @@
  * Each act's prompt contains only that act's turns, so editing one line changes one prompt (the Meta prompt cache keeps
  * the rest). The LLM never writes seconds: every time is a phrase quoted from a turn, proven by the resolver.
  */
-import {readFileSync} from 'node:fs';
+import {existsSync, readFileSync} from 'node:fs';
 import {cleanSpeech} from './speech';
 import {resolveBoxes} from './cues';
 import {LOOK_RULES, resolveShotPlan, type PlanShot, type ResolveOptions, type ShotPlan} from './shots';
 import type {PipelineTurn, WordTiming} from '../pipeline-core';
 import {ATMOSPHERES} from '../../src/documentary/atmosphere';
 import {CUSTOM_CATALOG} from '../../src/components/custom/catalog';
+import {PATCH_FORMAT, applyActPatch, indexedAct, isFullAct, isPatch} from './act-patch';
 
 /* ------------------------------------ catalog ------------------------------------ */
 
@@ -239,7 +240,13 @@ export function actPrompt(index: number, outline: Outline, turns: PipelineTurn[]
   ].join('\n');
 }
 
-export const ACT_REVIEW = `Switch roles: you are a skeptical senior editor. Re-check the shots you just wrote against every rule above: phrases verbatim from their turns, first shot in the first turn, cuts every 3-6 seconds, shot length limits, every image shot moves, zoom within each image's max zoom, only listed assets and geo ids, text limits, at most one clip, custom explainers only for their exact event. ${COORDINATE_RULE} Fix every problem silently and return ONLY the corrected JSON object {"shots": [...], "years": [...]}.`;
+const ACT_CHECKS = `phrases verbatim from their turns, first shot in the first turn, cuts every 3-6 seconds, shot length limits, every image shot moves, zoom within each image's max zoom, only listed assets, map views and geo ids, text limits, at most one clip, custom explainers only for their exact event. ${COORDINATE_RULE}`;
+/** Same-chat review (Meta UI): returns only what it changes, as a patch onto the draft it just wrote. */
+export const ACT_REVIEW = `Switch roles: you are a skeptical senior editor. Re-check the shots you just wrote against every rule above: ${ACT_CHECKS}\n${PATCH_FORMAT}`;
+/** Single-pass agents have no draft to patch: they self-check and answer with the complete act. */
+export const ACT_SELF_CHECK = `re-check your shots against every rule above (${ACT_CHECKS}), fix every problem, and answer with the COMPLETE JSON object {"shots": [...], "years": [...]}.`;
+/** What a single-pass agent is told instead of a same-chat follow-up. */
+export const selfCheckFor = (followup: string) => (followup === ACT_REVIEW ? ACT_SELF_CHECK : followup);
 
 /** Structural checks on one act before assembly (everything else is checked on the merged plan). */
 export function validateAct(raw: unknown, index: number, outline: Outline): {act?: ActOutput; issues: string[]} {
@@ -249,10 +256,10 @@ export function validateAct(raw: unknown, index: number, outline: Outline): {act
   if (!a || !Array.isArray(a.shots) || !a.shots.length) return {issues: ['act output must be {"shots": [...]} with at least one shot']};
   a.shots.forEach((shot, n) => {
     const turn = shot?.at?.turn;
-    if (!Number.isInteger(turn) || turn < from || turn > to) issues.push(`shot ${n + 1}: "at" turn ${turn} is outside this act (turns ${from}-${to})`);
+    if (!Number.isInteger(turn) || turn < from || turn > to) issues.push(`shot index ${n}: "at" turn ${turn} is outside this act (turns ${from}-${to})`);
   });
   if (a.shots[0]?.at?.turn !== from) issues.push(`the first shot must start in turn ${from}`);
-  for (const [n, y] of (a.years ?? []).entries()) if (!Number.isInteger(y?.at?.turn) || y.at.turn < from || y.at.turn > to) issues.push(`year ${n + 1}: turn is outside this act`);
+  for (const [n, y] of (a.years ?? []).entries()) if (!Number.isInteger(y?.at?.turn) || y.at.turn < from || y.at.turn > to) issues.push(`year index ${n}: turn is outside this act`);
   return issues.length ? {issues} : {act: a, issues};
 }
 
@@ -264,16 +271,25 @@ export function assemblePlan(episode: string, outline: Outline, acts: ActOutput[
   return {plan: {episode, boxes: outline.boxes, shots, years}, shotAct, yearAct};
 }
 
-/** Problems from the merged-plan resolver, grouped by the act that owns them (-1 = outline-level). */
+/**
+ * Problems from the merged-plan resolver, grouped by the act that owns them (-1 = outline-level). Shot and year
+ * numbers are rewritten as 0-based indexes within the act ("shot 37" -> "shot index 4"), matching the patch format.
+ */
 export function issuesByAct(message: string, shotAct: number[], yearAct: number[]): Map<number, string[]> {
   const out = new Map<number, string[]>();
   const add = (act: number, line: string) => out.set(act, [...(out.get(act) ?? []), line]);
   for (const line of message.split('\n').slice(1).map(l => l.replace(/^\s*-\s*/, '')).filter(Boolean)) {
     const shot = /^shot ?0*(\d+)\b/.exec(line);
     const year = /^year (\d+)\b/.exec(line);
-    if (shot) add(shotAct[Number(shot[1]) - 1] ?? -1, line);
-    else if (year) add(yearAct[Number(year[1]) - 1] ?? -1, line);
-    else add(-1, line);
+    if (shot) {
+      const g = Number(shot[1]) - 1;
+      const act = shotAct[g] ?? -1;
+      add(act, act < 0 ? line : line.replace(shot[0], `shot index ${g - shotAct.indexOf(act)}`));
+    } else if (year) {
+      const g = Number(year[1]) - 1;
+      const act = yearAct[g] ?? -1;
+      add(act, act < 0 ? line : line.replace(year[0], `year index ${g - yearAct.indexOf(act)}`));
+    } else add(-1, line);
   }
   return out;
 }
@@ -314,8 +330,11 @@ const lonLat = (value: unknown): [number, number] | null =>
  * only after the response has safely crossed the UI boundary.
  */
 export function materializeCoordinateObjects(raw: unknown): unknown {
-  if (!object(raw) || !Array.isArray(raw.shots)) return raw;
-  for (const value of raw.shots) {
+  if (!object(raw)) return raw;
+  // Full answers carry "shots"; review/repair patches carry new shots inside replace/insert edits.
+  const edits = [...(Array.isArray(raw.replace) ? raw.replace : []), ...(Array.isArray(raw.insert) ? raw.insert : [])];
+  const shots: unknown[] = Array.isArray(raw.shots) ? raw.shots : edits.map(e => (object(e) ? e.shot : null));
+  for (const value of shots) {
     if (!object(value)) continue;
     if (value.type === 'clip' && object(value.focus) && finite(value.focus.x) && finite(value.focus.y)) {
       value.focus = [value.focus.x, value.focus.y];
@@ -348,6 +367,20 @@ export function materializeCoordinateObjects(raw: unknown): unknown {
 
 const readAnswer = (path: string): unknown => materializeCoordinateObjects(JSON.parse(readFileSync(path, 'utf8')));
 
+/**
+ * An act answer as a full act: a full answer as is, a patch applied onto `base` (repairs) or onto the same-chat draft
+ * the Meta UI runner saved beside the answer (<name>.draft.json, reviews). Problems come back as repair lines.
+ */
+export function readActAnswer(path: string, base?: ActOutput): {raw?: unknown; issues: string[]} {
+  const raw = readAnswer(path);
+  if (!isPatch(raw)) return {raw, issues: []};
+  const draftPath = path.replace(/\.json$/, '.draft.json');
+  const onto = base ?? (existsSync(draftPath) ? readAnswer(draftPath) : undefined);
+  if (!isFullAct(onto)) return {issues: ['the answer is a patch but there is no earlier answer to apply it to; return the COMPLETE JSON object {"shots": [...], "years": [...]}']};
+  const applied = applyActPatch(onto as ActOutput, raw);
+  return applied.act ? {raw: applied.act, issues: []} : {issues: applied.issues};
+}
+
 export interface DirectorResult {plan?: ShotPlan; outline?: Outline; log: DirectorLog[]; /** Prompt names still awaiting answers (agent mode). */ pending?: string[]}
 
 export function directDocumentary(io: DirectorIO, input: DirectorInputs, maxRepairs = 2): DirectorResult {
@@ -372,19 +405,24 @@ export function directDocumentary(io: DirectorIO, input: DirectorInputs, maxRepa
   // 2. Acts (each validated structurally), then 3. assemble + resolve, 4. repair only failing acts.
   const prompts = outline.acts.map((_, i) => actPrompt(i, outline!, input.turns, input.timing.durations, input.catalog, input.maps));
   const acts: (ActOutput | undefined)[] = [];
+  /** Latest full answer per act, valid or not: what a repair patch applies to. */
+  const latest: (ActOutput | undefined)[] = [];
   const sources: string[] = [];
   const problems = new Map<number, string[]>();
   // Ask for every act before reading any answer, so external agents can work on all acts in parallel.
   const asked = outline.acts.map((_, i) => ({name: `doc-act-${String(i + 1).padStart(2, '0')}`, path: io.meta(`doc-act-${String(i + 1).padStart(2, '0')}`, prompts[i], [], ACT_REVIEW)}));
   const waiting = asked.filter(a => !a.path).map(a => a.name);
   if (waiting.length) return {outline, log, pending: waiting};
-  asked.forEach(({path}, i) => {
-    sources[i] = path!;
-    const checked = validateAct(readAnswer(sources[i]), i, outline!);
-    log.push({stage: `act ${i + 1}`, source: sources[i], issues: checked.issues});
+  const take = (i: number, path: string, stage: string, base?: ActOutput) => {
+    sources[i] = path;
+    const answer = readActAnswer(path, base);
+    if (isFullAct(answer.raw)) latest[i] = answer.raw as ActOutput;
+    const checked = answer.issues.length ? {act: undefined, issues: answer.issues} : validateAct(answer.raw, i, outline!);
+    log.push({stage, source: path, issues: checked.issues});
     acts[i] = checked.act;
-    if (!checked.act) problems.set(i, checked.issues);
-  });
+    if (checked.act) problems.delete(i); else problems.set(i, checked.issues);
+  };
+  asked.forEach(({path}, i) => take(i, path!, `act ${i + 1}`));
   for (let attempt = 0; attempt <= maxRepairs; attempt++) {
     if (!problems.size) {
       const {plan, shotAct, yearAct} = assemblePlan(input.episode, outline, acts as ActOutput[]);
@@ -402,17 +440,15 @@ export function directDocumentary(io: DirectorIO, input: DirectorInputs, maxRepa
     if (attempt === maxRepairs) return {outline, log};
     const repairs = [...problems].map(([i, lines]) => {
       const name = `doc-act-${String(i + 1).padStart(2, '0')}-repair-${attempt + 1}`;
-      return {i, name, path: io.meta(name, `${prompts[i]}\n\nYOUR PREVIOUS ANSWER FOR THIS ACT HAD THESE PROBLEMS; return the corrected JSON only:\n${lines.map(l => `- ${l}`).join('\n')}\n\nPREVIOUS ANSWER:\n${readFileSync(sources[i], 'utf8')}`)};
+      const previous = latest[i];
+      const ask = previous
+        ? `YOUR PREVIOUS ANSWER FOR THIS ACT HAD THESE PROBLEMS:\n${lines.map(l => `- ${l}`).join('\n')}\n\nPREVIOUS ANSWER (index: shot):\n${indexedAct(previous)}\n\nFix only what the problems need. ${PATCH_FORMAT}\nIf most shots must change, you may instead return the complete corrected {"shots": [...], "years": [...]}.`
+        : `YOUR PREVIOUS ANSWER FOR THIS ACT HAD THESE PROBLEMS:\n${lines.map(l => `- ${l}`).join('\n')}\n\nReturn the COMPLETE corrected JSON object {"shots": [...], "years": [...]} only.`;
+      return {i, name, path: io.meta(name, `${prompts[i]}\n\n${ask}`)};
     });
     const repairsWaiting = repairs.filter(r => !r.path).map(r => r.name);
     if (repairsWaiting.length) return {outline, log, pending: repairsWaiting};
-    for (const {i, path} of repairs) {
-      sources[i] = path!;
-      const checked = validateAct(readAnswer(sources[i]), i, outline);
-      log.push({stage: `act ${i + 1} repair ${attempt + 1}`, source: sources[i], issues: checked.issues});
-      acts[i] = checked.act;
-      if (checked.act) problems.delete(i); else problems.set(i, checked.issues);
-    }
+    for (const {i, path} of repairs) take(i, path!, `act ${i + 1} repair ${attempt + 1}`, latest[i]);
   }
   return {outline, log};
 }

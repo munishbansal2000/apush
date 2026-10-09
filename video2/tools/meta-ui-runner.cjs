@@ -77,6 +77,8 @@ async function main() {
         // A failed upload/composer interaction can leave the page in a dirty
         // state. Each retry gets a fresh chat page in the authenticated context.
         page = await meta.createSession(context, {cookies: cookie, downloads: debugDir});
+        // A review patch is applied onto <out>.draft.json: never leave one from an earlier attempt or run.
+        fs.rmSync(`${outStem}.draft.json`, {force: true});
         const response = await meta.send(page, prompt, debugDir, `${path.basename(out, '.json')}-draft-attempt-${attempt}`, {
           attachments, timeoutMs: Number(value('timeout-sec', '1200')) * 1000,
         });
@@ -92,11 +94,12 @@ async function main() {
           // its output ceiling and stopped before closing the JSON. Repair it in
           // the same chat, where the model still has the full prompt and draft,
           // instead of immediately repeating the expensive request from scratch.
-          effectiveFollowup ??= 'Your previous response was truncated or malformed and is not valid JSON. Return the COMPLETE corrected JSON object again. Preserve all required content, but make it compact: omit whitespace, redundant entries, optional empty arrays, and optional empty objects. Return JSON only, with every array and object closed. Do not explain the repair.';
+          // This replaces any review follow-up: a review may answer with a patch, and a patch needs a parsed draft.
+          effectiveFollowup = 'Your previous response was truncated or malformed and is not valid JSON. Return the COMPLETE corrected JSON object again. Preserve all required content, but make it compact: omit whitespace, redundant entries, optional empty arrays, and optional empty objects. Return JSON only, with every array and object closed. Do not explain the repair.';
           console.warn(`[meta-ui] draft is not valid JSON; requesting a compact same-chat repair: ${error.message}`);
         }
         if (effectiveFollowup) {
-          console.log(`[meta-ui] draft received; starting same-chat ${followupPrompt ? 'director audit' : 'JSON repair'}`);
+          console.log(`[meta-ui] draft received; starting same-chat ${parsed && followupPrompt ? 'director audit' : 'JSON repair'}`);
           const reviewed = await meta.send(page, effectiveFollowup, debugDir, `${path.basename(out, '.json')}-review-attempt-${attempt}`, {
             attachments: [], timeoutMs: Number(value('timeout-sec', '1200')) * 1000,
           });
