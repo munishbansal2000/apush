@@ -1,0 +1,91 @@
+[assembled (attempt 1)] 78 problem(s):
+    - shot index 15: 0.84s is shorter than 1.2s (cuts must not stutter)
+    - shot index 21: 1.16s is shorter than 1.2s (cuts must not stutter)
+    - shot index 5: "historic/u3e2/object-stamp-seal-press.jpg" exceeds the lesson image budget: occurrence 5 of 9 (shot10, shot13, shot15, shot16, shot25, shot109, shot123, shot142, shot167); max 4. Replace this occurrence with a different relevant asset
+    - shot index 0: custom explainer "StampActTax" already used in shot04
+    - shot index 0: 4.0s is too short for a custom explainer (min 5s); give it a longer stretch of narration
+    - shot index 7: 9.0s holds longer than 8s on one image_move shot; cut on another spoken cue
+    - shot index 11: "historic/u3e2/cartoon-sons-of-liberty-emblem.jpg" exceeds the lesson image budget: occurrence 5 of 8 (shot32, shot33, shot52, shot58, shot72, shot100, shot141, shot161); max 4. Replace this occurrence with a different relevant asset
+    - shot index 0: custom explainer exceeds the lesson budget (5 total; max 2); replace this occurrence with a standard shot
+  [assembled (attempt 2)] 57 problem(s):
+    - shot index 1: 8.0s holds longer than 8s on one image_move shot; cut on another spoken cue
+    - shot index 11: "historic/u3e2/doc-stamp-act-statute.jpg" exceeds the lesson image budget: occurrence 5 of 6 (shot07, shot23, shot24, shot87, shot90, shot122); max 4. Replace this occurrence with a different relevant asset
+    - shot index 12: "historic/u3e2/doc-sons-of-liberty-broadside.jpg" exceeds the lesson image budget: occurrence 5 of 10 (shot31, shot51, shot56, shot73, shot91, shot103, shot145, shot154, shot165, shot169); max 4. Replace this occurrence with a different relevant asset
+    - shot index 24: "historic/u3e2/doc-sons-of-liberty-broadside.jpg" exceeds the lesson image budget: occurrence 6 of 10 (shot31, shot51, shot56, shot73, shot91, shot103, shot145, shot154, shot165, shot169); max 4. Replace this occurrence with a different relevant asset
+    - shot index 5: "historic/u3e2/object-homespun-cloth.jpg" exceeds the lesson image budget: occurrence 5 of 8 (shot61, shot62, shot75, shot79, shot84, shot93, shot112, shot134); max 4. Replace this occurrence with a different relevant asset
+    - shot index 14: "historic/u3e2/object-homespun-cloth.jpg" exceeds the lesson image budget: occurrence 6 of 8 (shot61, shot62, shot75, shot79, shot84, shot93, shot112, shot134); max 4. Replace this occurrence with a different relevant asset
+    - shot index 21: "historic/u3e2/object-spinning-wheel.jpg" exceeds the lesson image budget: occurrence 5 of 10 (shot63, shot66, shot80, shot88, shot100, shot106, shot123, shot152, shot162, shot174); max 4. Replace this occurrence with a different relevant asset
+    - shot index 27: "historic/u3e2/object-spinning-wheel.jpg" exceeds the lesson image budget: occurrence 6 of 10 (shot63, shot66, shot80, shot88, shot100, shot106, shot123, shot152, shot162, shot174); max 4. Replace this occurrence with a different relevant asset
+  [assembled (attempt 3)] 78 problem(s):
+    - shot index 6: "historic/u3e2/object-quill-inkstand.jpg" (1280×1968) would be upscaled 1.72× at this framing (max 1.6); use a larger image or zoom out
+    - shot index 10: "historic/u3e2/doc-house-of-burgesses.jpg" exceeds the lesson image budget: occurrence 5 of 8 (shot02, shot22, shot43, shot46, shot89, shot90, shot147, shot152); max 4. Replace this occurrence with a different relevant asset
+    - shot index 11: "historic/u3e2/doc-house-of-burgesses.jpg" exceeds the lesson image budget: occurrence 6 of 8 (shot02, shot22, shot43, shot46, shot89, shot90, shot147, shot152); max 4. Replace this occurrence with a different relevant asset
+    - shot index 9: "historic/u3e2/doc-stamp-act-full-text.jpg" exceeds the lesson image budget: occurrence 5 of 9 (shot05, shot14, shot21, shot69, shot88, shot114, shot134, shot149, shot169); max 4. Replace this occurrence with a different relevant asset
+    - shot index 15: "historic/u3e2/cartoon-deplorable-state-america.jpg" exceeds the lesson image budget: occurrence 5 of 9 (shot06, shot39, shot40, shot59, shot94, shot125, shot161, shot162, shot175); max 4. Replace this occurrence with a different relevant asset
+    - shot index 6: "historic/u3e2/object-quill-inkstand.jpg" exceeds the lesson image budget: occurrence 5 of 10 (shot09, shot17, shot28, shot42, shot85, shot107, shot123, shot141, shot151, shot165); max 4. Replace this occurrence with a different relevant asset
+    - shot index 28: "historic/u3e2/object-quill-inkstand.jpg" exceeds the lesson image budget: occurrence 6 of 10 (shot09, shot17, shot28, shot42, shot85, shot107, shot123, shot141, shot151, shot165); max 4. Replace this occurrence with a different relevant asset
+    - shot index 0: "historic/u3e2/object-stamp-seal-press.jpg" exceeds the lesson image budget: occurrence 5 of 9 (shot10, shot13, shot15, shot16, shot79, shot118, shot130, shot160, shot178); max 4. Replace this occurrence with a different relevant asset
+C:\Users\munis\projects\apush2\apush\video2\tools\pipeline\stages\doc.ts:57
+  if (!result.plan) throw new Error(`director found no valid plan after repairs; see ${relative(ROOT, join(ctx.work, 'doc-director.json'))}`);
+                          ^
+
+Error: director found no valid plan after repairs; see out\pipeline\u3e2\doc-director.json
+    at docDirectStage (C:\Users\munis\projects\apush2\apush\video2\tools\pipeline\stages\doc.ts:57:27)
+    at runPipeline (C:\Users\munis\projects\apush2\apush\video2\tools\pipeline\run.ts:47:34)
+    at <anonymous> (C:\Users\munis\projects\apush2\apush\video2\tools\video-pipeline.ts:11:9)
+    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)
+    at async node:internal/modules/esm/loader:643:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)
+
+Node.js v24.18.0
+
+[u3e3 retry] 3:14:22 AM  node.exe C:\Users\munis\projects\apush2\apush\video2\node_modules\tsx\dist\cli.mjs tools\video-pipeline.ts --episode u3e3 --mode prod --full --skip images --draft
+[turns] checkpoint current
+[pronounce] checkpoint current
+[audio] checkpoint current
+[timing] checkpoint current
+[words] checkpoint current (validated)
+[direct] 67 turns, 49 usable images, 4 geo features
+[doc-outline] prompt cache current
+[doc-act-01] prompt cache current
+[doc-act-02] prompt cache current
+[doc-act-03] prompt cache current
+[doc-act-04] prompt cache current
+[doc-act-05] prompt cache current
+[doc-act-06] prompt cache current
+[doc-act-07] prompt cache current
+[doc-act-08] prompt cache current
+[doc-act-03-repair-1] prompt cache current
+[doc-act-01-repair-2] prompt cache current
+[doc-act-02-repair-2] prompt cache current
+[doc-act-03-repair-2] prompt cache current
+[doc-act-04-repair-2] prompt cache current
+[doc-act-05-repair-2] prompt cache current
+[doc-act-06-repair-2] prompt cache current
+[doc-act-07-repair-2] prompt cache current
+[doc-act-08-repair-2] prompt cache current
+  [act 3] 3 problem(s):
+    - shot 1: turn 14 is a pause; replace this image_move with exactly one {"type":"question","at":{"turn":14},...} shot (no phrase)
+    - shot 2: turn 14 is a pause; replace this image_move with exactly one {"type":"question","at":{"turn":14},...} shot (no phrase)
+    - turn 14: 10s pause needs exactly one question shot, got 0
+  [assembled (attempt 2)] 67 problem(s):
+    - shot index 2: 8.7s holds longer than 8s on one point shot; cut on another spoken cue
+    - shot index 27: 1.02s is shorter than 1.2s (cuts must not stutter)
+    - shot index 30: "historic/u3e3/object-eic-ship.jpg" (1280×868) would be upscaled 1.72× at this framing (max 1.6); use a larger image or zoom out
+    - shot index 26: "historic/u3e3/event-british-fleet-boston.jpg" exceeds the lesson image budget: occurrence 5 of 9 (shot03, shot12, shot31, shot33, shot49, shot56, shot116, shot179, shot182); max 4. Replace this occurrence with a different relevant asset
+    - shot index 3: "historic/u3e3/doc-letters-from-a-farmer.jpg" exceeds the lesson image budget: occurrence 5 of 10 (shot11, shot15, shot20, shot24, shot26, shot29, shot30, shot166, shot170, shot173); max 4. Replace this occurrence with a different relevant asset
+    - shot index 6: "historic/u3e3/doc-letters-from-a-farmer.jpg" exceeds the lesson image budget: occurrence 6 of 10 (shot11, shot15, shot20, shot24, shot26, shot29, shot30, shot166, shot170, shot173); max 4. Replace this occurrence with a different relevant asset
+    - shot index 7: "historic/u3e3/doc-letters-from-a-farmer.jpg" exceeds the lesson image budget: occurrence 7 of 10 (shot11, shot15, shot20, shot24, shot26, shot29, shot30, shot166, shot170, shot173); max 4. Replace this occurrence with a different relevant asset
+    - shot index 0: question "How did a tax fight become a military occupation?" is not verbatim from the line before the pause
+  [assembled (attempt 3)] 35 problem(s):
+    - shot index 0: question "How does a fight over taxes become a military occupation?" is not verbatim from the line before the pause
+    - shot index 19: "historic/u3e3/doc-liberty-song.jpg" exceeds the lesson image budget: occurrence 5 of 7 (shot08, shot26, shot27, shot30, shot75, shot90, shot91); max 4. Replace this occurrence with a different relevant asset
+    - shot index 22: "historic/u3e3/event-boston-massacre-nara.jpg" exceeds the lesson image budget: occurrence 5 of 6 (shot65, shot67, shot73, shot76, shot78, shot159); max 4. Replace this occurrence with a different relevant asset
+    - shot index 6: "historic/u3e3/event-liberty-tree.jpg" (1275×1650) would be upscaled 1.73× at this framing (max 1.6); use a larger image or zoom out
+    - shot index 1: "historic/u3e3/doc-declaratory-act.jpg" exceeds the lesson image budget: occurrence 6 of 9 (shot01, shot18, shot29, shot31, shot35, shot172, shot198, shot201, shot204); max 4. Replace this occurrence with a different relevant asset
+    - shot index 8: "historic/u3e3/event-troops-landing-1768.jpg" exceeds the lesson image budget: occurrence 6 of 7 (shot33, shot61, shot101, shot117, shot163, shot179, shot180); max 4. Replace this occurrence with a different relevant asset
+    - shot index 9: "historic/u3e3/event-troops-landing-1768.jpg" exceeds the lesson image budget: occurrence 7 of 7 (shot33, shot61, shot101, shot117, shot163, shot179, shot180); max 4. Replace this occurrence with a different relevant asset
+    - shot index 2: "historic/u3e3/doc-nonimportation-agreement.jpg" exceeds the lesson image budget: occurrence 8 of 9 (shot40, shot50, shot88, shot115, shot130, shot137, shot147, shot173, shot174); max 4. Replace this occurrence with a different relevant asset
+C:\Users\munis\projects\apush2\apush\video2\tools\pipeline\stages\doc.ts:57
+  if (!result.plan) throw new Error(`director found no valid plan after repairs; see ${relative(ROOT, join(ctx.work, 'doc-director.json'))}`);
+                          ^
