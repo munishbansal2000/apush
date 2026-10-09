@@ -10,6 +10,7 @@ import type {LonLat} from '../../src/documentary/types';
 import {readJson} from '../pipeline-core';
 import {yearOf} from '../../src/library/validate';
 import {periodInstant, validAt} from './periods';
+import {renamedHint} from './renames';
 import type {PhraseAnchor} from './anchors';
 import type {Cue, PlanShot, ShotPlan} from './shots';
 
@@ -136,7 +137,7 @@ export function expandMapViews(
     const where = `shot ${i + 1}`;
     const view = views[shot.view];
     if (!view) {
-      issues.push(`${where}: unknown map view "${shot.view}" (${Object.keys(views).join(', ') || 'none in data/library/maps'})`);
+      issues.push(`${where}: unknown map view "${shot.view}"${renamedHint(shot.view)} (${Object.keys(views).join(', ') || 'none in data/library/maps'})`);
       return {type: 'map', at: shot.at, projection: 'us', extent: [[-100, 20], [-60, 50]], camera: [{at: {offset: 0}, center: [-80, 35], zoom: 1}]} as PlanShot;
     }
     const camera = [{at: {offset: 0} as Cue, center: view.camera.center, zoom: view.camera.zoom}];

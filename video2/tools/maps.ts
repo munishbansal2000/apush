@@ -8,6 +8,7 @@
  *                                                          by the real renderer -> out/review/maps/<view>[-<period>].png
  *   npm run maps -- layer-preview <geo id>                 a layer on the view that fits it best, at its first day
  *   npm run maps -- review <geo id> verify|approve|reject|candidate [--note "..."] [--by name]
+ *   npm run maps -- migrate                                rewrite renamed ids (data/library/renames.json) in every lesson's files
  * Previews need Chrome (REMOTION_BROWSER) like any render.
  */
 import {existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync} from 'node:fs';
@@ -17,6 +18,7 @@ import {ROOT, arg} from './lib';
 import {parseTranscript} from './pipeline-core';
 import {loadMapViews, validateMapView, type MapViewDef, type PeriodFeature} from './pipeline/map-views';
 import {periodStatus, validatePeriods, type PeriodWorklist} from './pipeline/periods';
+import {applyRenames, loadRenames} from './pipeline/renames';
 import {resolveShotPlan, type ShotPlan} from './pipeline/shots';
 
 const LIB = join(ROOT, 'data', 'library');
@@ -61,12 +63,34 @@ function validate(): number {
   }
   // Period layers: the library validator checks their schema; here, the worklist, geometry, chains, overlaps, coverage.
   const periods = validatePeriods(loadPeriods(), geo, loadMapViews(LIB));
+  for (const file of lessonFiles()) if (applyRenames(readFileSync(file, 'utf8'), loadRenames()).count) periods.warnings.push(`${relative(ROOT, file)} uses renamed ids: run npm run maps -- migrate`);
   issues.push(...periods.errors);
   for (const i of issues) console.log(`  - ${i}`);
   for (const w of periods.warnings) console.log(`  ~ ${w}`);
   const layers = Object.values(geo).filter(g => g.properties.layer?.base).length;
   console.log(`${ids.size} view(s), ${loadPeriods().layers.length} worklist layer(s), ${layers} layer file(s) checked: ${issues.length ? `${issues.length} problem(s)` : 'all valid'}${periods.warnings.length ? `, ${periods.warnings.length} warning(s)` : ''}`);
   return issues.length;
+}
+
+/** Lesson files that name library ids: storyboards, plans, and their review notes. */
+function lessonFiles(): string[] {
+  const data = join(ROOT, 'data');
+  return readdirSync(data, {withFileTypes: true}).filter(d => d.isDirectory() && d.name !== 'library')
+    .flatMap(d => ['storyboard.json', 'shots.json', 'review.json'].map(f => join(data, d.name, f))).filter(existsSync);
+}
+
+function migrate() {
+  const renames = loadRenames();
+  let total = 0;
+  for (const file of lessonFiles()) {
+    const {text, count} = applyRenames(readFileSync(file, 'utf8'), renames);
+    if (!count) continue;
+    JSON.parse(text); // still valid JSON before it is written
+    writeFileSync(file, text);
+    total += count;
+    console.log(`  ${relative(ROOT, file)}: ${count} id(s) renamed`);
+  }
+  console.log(total ? `${total} renamed id(s) updated` : 'nothing to migrate');
 }
 
 function status() {
@@ -154,6 +178,7 @@ async function preview(which: string, periodArg?: string) {
 if (cmd === 'list') list();
 else if (cmd === 'validate') process.exitCode = validate() ? 1 : 0;
 else if (cmd === 'status') status();
+else if (cmd === 'migrate') migrate();
 else if (cmd === 'preview') await preview(process.argv[3] ?? fail('preview <view id|all> [--period YEAR]'));
 else if (cmd === 'layer-preview') {
   const id = process.argv[3] ?? fail('layer-preview <geo id>');

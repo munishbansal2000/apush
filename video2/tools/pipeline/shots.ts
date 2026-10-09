@@ -3,6 +3,7 @@
  * ({turn, phrase}) or an offset from the shot's start; this module proves each phrase exists, times it from the audio,
  * and enforces the look's pacing and text rules. Nothing lesson-specific lives here.
  */
+import {renamedHint} from './renames';
 import type {DocBox, DocShot, Framing, LonLat, RegionRef, YearStamp} from '../../src/documentary/types';
 import {upscaleAt} from '../../src/documentary/framing';
 import type {MultiPolygon, Polygon} from 'geojson';
@@ -186,7 +187,7 @@ export function resolveShotPlan(input: ShotPlan, turns: PipelineTurn[], timing: 
         let approx = false;
         const geoOf = (where: string, geoId: string): GeoFeature | null => {
           const f = opts.geo?.[geoId];
-          if (!f) { issues.push(`${id} ${where}: unknown geo id "${geoId}"`); return null; }
+          if (!f) { issues.push(`${id} ${where}: unknown geo id "${geoId}"${renamedHint(geoId)}`); return null; }
           if (f.properties.review.status !== 'approved' && !opts.allowUnapproved) issues.push(`${id} ${where}: "${geoId}" is ${f.properties.review.status}, not approved`);
           if (f.properties.precision !== 'exact') approx = true;
           return f;

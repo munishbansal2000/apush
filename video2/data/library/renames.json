@@ -1,0 +1,9 @@
+{
+  "_doc": "Library ids that were renamed (old -> new). npm run maps -- migrate rewrites them in every lesson's storyboard and plan; the build names the new id when it meets an old one.",
+  "ids": {
+    "map.eastern-frontier-1763": "map.eastern-north-america",
+    "map.north-america-1763": "map.north-america",
+    "map.great-lakes-1763": "map.great-lakes",
+    "geo.line.proclamation-1763": "geo.line.proclamation@1763"
+  }
+}
