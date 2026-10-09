@@ -50,7 +50,7 @@ export function storyboardPrompt(index: number, outline: Outline, turns: Pipelin
     ' {"kind":"clip","image":"<asset path>","prompt":"Gunpowder smoke drifts slowly across the field.","at":{"phrase":"..."},"priority":"essential","span":1}',
     ']}],"years":[{"turn":0,"phrase":"in 1763","text":"1763"}]}',
     'Lines with no new visual are simply left out. Cues inside maps and point cards are {"offset": seconds after the visual starts}.',
-    'A map\'s "period" is the year the narration is about: the borders and claims the library has for that year are drawn automatically (add only what the words point at).',
+    'A map\'s "period" is the moment the narration is about: a year (the map as it stood at the end of that year) or "YYYY-MM-DD" inside a year of change (1763-03-01 is before the Proclamation). The borders and claims the library has for that moment are drawn automatically; add only what the words point at.',
     COORDINATE_RULE,
     '',
     `ASSETS for this act (${assets.length} of ${catalog.length}; path | size | max zoom | description):`,
@@ -72,6 +72,9 @@ export function storyboardPrompt(index: number, outline: Outline, turns: Pipelin
 function mapGeoIssues(map: Record<string, unknown>, geo: Record<string, {geometry: {type: string}}>): string[] {
   const out: string[] = [];
   const typeOf = (id: string) => geo[id]?.geometry.type;
+  const period = map.period;
+  if (period !== undefined && !(typeof period === 'number' ? Number.isInteger(period) && period >= 1400 && period <= 2030 : typeof period === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(period)))
+    out.push(`map period: ${JSON.stringify(period)} must be a year (1763) or a date ("1763-03-01")`);
   for (const f of (map.fills as {region?: {geo?: string}}[] | undefined) ?? []) {
     const id = f?.region?.geo;
     if (id && !typeOf(id)) out.push(`map fill: unknown geo id "${id}"`);

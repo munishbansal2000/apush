@@ -1,0 +1,813 @@
+{
+  "_doc": "Period layers the book needs (docs/PERIOD_LAYERS.md). Planning agents extend layers and snapshots; tracing agents fulfil one layer each with data/library/geo/<id>.geojson. npm run maps -- status shows progress.",
+  "snapshots": [
+    {
+      "year": 1750,
+      "title": "Before the war for the continent",
+      "units": [
+        2,
+        3
+      ],
+      "views": [
+        "map.north-america",
+        "map.eastern-north-america"
+      ],
+      "layers": [
+        "geo.region.new-france@1713",
+        "geo.region.british-colonies@1732",
+        "geo.region.spanish-florida@1565",
+        "geo.region.new-spain@1713",
+        "geo.region.ruperts-land@1670"
+      ]
+    },
+    {
+      "year": 1763,
+      "title": "After the Treaty of Paris and the Proclamation",
+      "units": [
+        3
+      ],
+      "views": [
+        "map.north-america",
+        "map.eastern-north-america"
+      ],
+      "layers": [
+        "geo.region.province-of-quebec@1763",
+        "geo.region.british-colonies@1763",
+        "geo.region.east-florida@1763",
+        "geo.region.west-florida@1763",
+        "geo.region.indian-reserve@1763",
+        "geo.region.spanish-louisiana@1763",
+        "geo.region.new-spain@1713",
+        "geo.region.ruperts-land@1670",
+        "geo.line.proclamation@1763"
+      ]
+    },
+    {
+      "year": 1774,
+      "title": "The Quebec Act",
+      "units": [
+        3
+      ],
+      "views": [
+        "map.eastern-north-america"
+      ],
+      "layers": [
+        "geo.region.province-of-quebec@1774",
+        "geo.region.british-colonies@1763",
+        "geo.region.east-florida@1763",
+        "geo.region.west-florida@1763",
+        "geo.region.indian-reserve@1774",
+        "geo.region.spanish-louisiana@1763",
+        "geo.region.new-spain@1713",
+        "geo.region.ruperts-land@1670"
+      ]
+    },
+    {
+      "year": 1783,
+      "title": "Independence: the Treaty of Paris",
+      "units": [
+        3,
+        4
+      ],
+      "views": [
+        "map.north-america",
+        "map.eastern-north-america"
+      ],
+      "layers": [
+        "geo.region.united-states@1783",
+        "geo.region.british-north-america@1783",
+        "geo.region.spanish-florida@1783",
+        "geo.region.spanish-louisiana@1763",
+        "geo.region.new-spain@1713",
+        "geo.region.ruperts-land@1670"
+      ]
+    },
+    {
+      "year": 1803,
+      "title": "The Louisiana Purchase",
+      "units": [
+        4
+      ],
+      "views": [
+        "map.north-america"
+      ],
+      "layers": [
+        "geo.region.united-states@1803",
+        "geo.region.british-north-america@1783",
+        "geo.region.spanish-florida@1783",
+        "geo.region.new-spain@1713",
+        "geo.region.ruperts-land@1670",
+        "geo.region.russian-america@1799"
+      ]
+    },
+    {
+      "year": 1820,
+      "title": "The Missouri Compromise",
+      "units": [
+        4
+      ],
+      "views": [
+        "map.north-america"
+      ],
+      "layers": [
+        "geo.region.united-states@1803",
+        "geo.region.spanish-florida@1783",
+        "geo.region.new-spain@1713",
+        "geo.region.oregon-country@1818",
+        "geo.region.british-north-america@1783",
+        "geo.region.ruperts-land@1670",
+        "geo.region.russian-america@1799",
+        "geo.line.missouri-compromise@1820"
+      ]
+    },
+    {
+      "year": 1836,
+      "title": "Texas independence",
+      "units": [
+        4
+      ],
+      "views": [
+        "map.north-america"
+      ],
+      "layers": [
+        "geo.region.united-states@1821",
+        "geo.region.mexico@1836",
+        "geo.region.republic-of-texas@1836",
+        "geo.region.oregon-country@1818",
+        "geo.region.british-north-america@1783",
+        "geo.region.ruperts-land@1670",
+        "geo.region.russian-america@1799",
+        "geo.line.missouri-compromise@1820"
+      ]
+    },
+    {
+      "year": 1848,
+      "title": "After the Mexican-American War",
+      "units": [
+        5
+      ],
+      "views": [
+        "map.north-america"
+      ],
+      "layers": [
+        "geo.region.united-states@1848",
+        "geo.region.mexico@1848",
+        "geo.region.british-north-america@1846",
+        "geo.region.ruperts-land@1670",
+        "geo.region.russian-america@1799",
+        "geo.line.missouri-compromise@1820"
+      ]
+    },
+    {
+      "year": 1854,
+      "title": "Kansas-Nebraska",
+      "units": [
+        5
+      ],
+      "views": [
+        "map.north-america"
+      ],
+      "layers": [
+        "geo.region.united-states@1853",
+        "geo.region.mexico@1853",
+        "geo.region.british-north-america@1846",
+        "geo.region.ruperts-land@1670",
+        "geo.region.russian-america@1799"
+      ]
+    },
+    {
+      "year": 1861,
+      "title": "Secession",
+      "units": [
+        5
+      ],
+      "views": [
+        "map.north-america",
+        "map.eastern-north-america"
+      ],
+      "layers": [
+        "geo.region.united-states@1853",
+        "geo.region.confederacy@1861",
+        "geo.region.mexico@1853",
+        "geo.region.british-north-america@1846",
+        "geo.region.ruperts-land@1670",
+        "geo.region.russian-america@1799"
+      ]
+    },
+    {
+      "year": 1867,
+      "title": "Confederation and Alaska",
+      "units": [
+        5,
+        6
+      ],
+      "views": [
+        "map.north-america"
+      ],
+      "layers": [
+        "geo.region.united-states@1867",
+        "geo.region.canada@1867",
+        "geo.region.british-columbia@1866",
+        "geo.region.ruperts-land@1670",
+        "geo.region.mexico@1853"
+      ]
+    }
+  ],
+  "layers": [
+    {
+      "id": "geo.region.new-france@1713",
+      "name": "New France",
+      "side": "french",
+      "validFrom": "1713-04-11",
+      "validTo": "1763-02-10",
+      "units": [
+        2,
+        3
+      ],
+      "priority": 1,
+      "sources": [
+        "Treaty of Utrecht 1713 (Acadia, Newfoundland and Hudson Bay to Britain)",
+        "Bellin, \"Carte de la Louisiane et des pays voisins\" (1755)",
+        "Mitchell Map (1755) for the contested Ohio Country"
+      ],
+      "notes": "Canada, the pays d'en haut around the Great Lakes, the Illinois Country and Louisiana on both banks of the Mississippi. The Ohio Country was claimed by both crowns: precision \"contested\"."
+    },
+    {
+      "id": "geo.region.british-colonies@1732",
+      "name": "British mainland colonies",
+      "side": "british",
+      "validFrom": "1732-06-20",
+      "validTo": "1763-02-10",
+      "units": [
+        2,
+        3
+      ],
+      "priority": 1,
+      "sources": [
+        "Charters and the Mitchell Map (1755): settled colonies east of the Appalachians, Nova Scotia to Georgia",
+        "Georgia charter (1732-06-20) sets the start"
+      ],
+      "notes": "Draw the colonies, not their sea-to-sea charter claims (those are the contested Ohio Country)."
+    },
+    {
+      "id": "geo.region.spanish-florida@1565",
+      "name": "Spanish Florida",
+      "side": "spanish",
+      "validFrom": "1565-09-08",
+      "validTo": "1763-02-10",
+      "units": [
+        1,
+        2,
+        3
+      ],
+      "priority": 2,
+      "sources": [
+        "St. Augustine founded 1565-09-08",
+        "Treaty of Paris 1763 (Florida to Britain)",
+        "Popple, \"A Map of the British Empire in America\" (1733) for the Georgia-Florida frontier"
+      ]
+    },
+    {
+      "id": "geo.region.new-spain@1713",
+      "name": "New Spain (northern frontier)",
+      "side": "spanish",
+      "validFrom": "1713-04-11",
+      "validTo": "1821-09-27",
+      "units": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "priority": 2,
+      "sources": [
+        "Spanish missions and presidios of Texas, New Mexico and (from 1769) Alta California",
+        "Adams-Onis Treaty line (1819) for its northern edge late in the period",
+        "Treaty of Cordoba 1821-09-27 ends it"
+      ],
+      "notes": "Northern borderlands only (Texas, New Mexico, the Californias). Its eastern edge with Louisiana was undefined until 1819: precision \"contested\" or \"approximate\". Mexico south of the frontier may be included."
+    },
+    {
+      "id": "geo.region.ruperts-land@1670",
+      "name": "Rupert's Land (Hudson's Bay Company)",
+      "side": "british",
+      "validFrom": "1670-05-02",
+      "validTo": "1870-07-15",
+      "units": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "priority": 3,
+      "sources": [
+        "Hudson's Bay Company charter (1670-05-02): the Hudson Bay drainage basin",
+        "Transfer to Canada 1870-07-15"
+      ]
+    },
+    {
+      "id": "geo.region.province-of-quebec@1763",
+      "name": "Province of Quebec",
+      "side": "british",
+      "validFrom": "1763-10-07",
+      "validTo": "1774-06-22",
+      "units": [
+        3
+      ],
+      "priority": 1,
+      "sources": [
+        "Royal Proclamation of 1763, boundary clause",
+        "Kitchin, \"A New Map of the Province of Quebec\" (1763)"
+      ],
+      "notes": "Seeded (candidate)."
+    },
+    {
+      "id": "geo.region.british-colonies@1763",
+      "name": "British colonies (the thirteen, Nova Scotia)",
+      "side": "british",
+      "validFrom": "1763-02-10",
+      "validTo": "1783-09-03",
+      "units": [
+        3
+      ],
+      "priority": 1,
+      "sources": [
+        "Mitchell Map (1755) for colony bounds",
+        "the Proclamation line for the western edge (geo.line.proclamation-1763)"
+      ],
+      "notes": "East of the Proclamation line; the 1768 treaties (Fort Stanwix, Hard Labour) moved it west: one later state may follow."
+    },
+    {
+      "id": "geo.region.east-florida@1763",
+      "name": "British East Florida",
+      "side": "british",
+      "validFrom": "1763-10-07",
+      "validTo": "1783-09-03",
+      "units": [
+        3
+      ],
+      "priority": 1,
+      "sources": [
+        "Royal Proclamation of 1763 (bounds of East Florida)",
+        "Jefferys, \"The Peninsula and Gulf of Florida\" (1763)"
+      ]
+    },
+    {
+      "id": "geo.region.west-florida@1763",
+      "name": "British West Florida",
+      "side": "british",
+      "validFrom": "1763-10-07",
+      "validTo": "1783-09-03",
+      "units": [
+        3
+      ],
+      "priority": 2,
+      "sources": [
+        "Royal Proclamation of 1763: Gulf coast from the Apalachicola to the Mississippi, north to 31 degrees",
+        "1764 extension north to 32 deg 28 min"
+      ],
+      "notes": "Draw the 1764 northern line if the source supports it."
+    },
+    {
+      "id": "geo.region.indian-reserve@1763",
+      "name": "Indian Reserve (Proclamation of 1763)",
+      "side": "native",
+      "validFrom": "1763-10-07",
+      "validTo": "1774-06-22",
+      "units": [
+        3
+      ],
+      "priority": 1,
+      "sources": [
+        "Royal Proclamation of 1763: lands west of the Proclamation line, east of the Mississippi, outside Quebec and the Floridas"
+      ],
+      "notes": "British-claimed land reserved for Native nations: side \"native\"."
+    },
+    {
+      "id": "geo.region.spanish-louisiana@1763",
+      "name": "Spanish Louisiana",
+      "side": "spanish",
+      "validFrom": "1763-02-10",
+      "validTo": "1800-10-01",
+      "units": [
+        3,
+        4
+      ],
+      "priority": 1,
+      "sources": [
+        "Treaty of Fontainebleau (1762) and Treaty of Paris 1763: Louisiana west of the Mississippi, with New Orleans",
+        "Treaty of San Ildefonso 1800-10-01 ends it"
+      ],
+      "notes": "Western edge undefined (Mississippi drainage); precision \"approximate\"."
+    },
+    {
+      "id": "geo.line.proclamation@1763",
+      "name": "Proclamation Line of 1763",
+      "side": "british",
+      "validFrom": "1763-10-07",
+      "validTo": "1768-11-05",
+      "units": [
+        3
+      ],
+      "priority": 1,
+      "sources": [
+        "Royal Proclamation of 1763: the heads of rivers falling into the Atlantic",
+        "Treaties of Hard Labour and Fort Stanwix (1768) supersede it"
+      ],
+      "notes": "Seeded (candidate): extend the northern end into New York before approving."
+    },
+    {
+      "id": "geo.region.province-of-quebec@1774",
+      "name": "Province of Quebec (Quebec Act)",
+      "side": "british",
+      "validFrom": "1774-06-22",
+      "validTo": "1783-09-03",
+      "units": [
+        3
+      ],
+      "priority": 1,
+      "sources": [
+        "Quebec Act 1774: Quebec extended south to the Ohio and west to the Mississippi"
+      ]
+    },
+    {
+      "id": "geo.region.indian-reserve@1774",
+      "name": "Indian Reserve (after the Quebec Act)",
+      "side": "native",
+      "validFrom": "1774-06-22",
+      "validTo": "1783-09-03",
+      "units": [
+        3
+      ],
+      "priority": 3,
+      "sources": [
+        "Quebec Act 1774 (the reserve north of the Ohio becomes Quebec)"
+      ],
+      "notes": "What is left south of the Ohio and west of the colonies."
+    },
+    {
+      "id": "geo.region.united-states@1783",
+      "name": "United States (Treaty of Paris)",
+      "side": "united-states",
+      "validFrom": "1783-09-03",
+      "validTo": "1803-04-30",
+      "units": [
+        3,
+        4
+      ],
+      "priority": 1,
+      "sources": [
+        "National Atlas of the United States, \"Territorial Acquisitions of the United States\" (USGS, public domain)",
+        "Treaty of Paris 1783, article 2 (boundaries)"
+      ],
+      "notes": "Includes the western lands states claimed (later territories). The Florida border at 31 deg N was disputed with Spain until 1795."
+    },
+    {
+      "id": "geo.region.british-north-america@1783",
+      "name": "British North America",
+      "side": "british",
+      "validFrom": "1783-09-03",
+      "validTo": "1846-06-15",
+      "units": [
+        3,
+        4,
+        5
+      ],
+      "priority": 2,
+      "sources": [
+        "Treaty of Paris 1783 (northern US border)",
+        "Treaty of 1818 (49th parallel to the Rockies)",
+        "Webster-Ashburton Treaty 1842 (Maine border)"
+      ],
+      "notes": "Quebec (Upper and Lower Canada after 1791), Nova Scotia, New Brunswick, Newfoundland; Rupert's Land is its own layer."
+    },
+    {
+      "id": "geo.region.spanish-florida@1783",
+      "name": "Spanish Florida (East and West)",
+      "side": "spanish",
+      "validFrom": "1783-09-03",
+      "validTo": "1821-02-22",
+      "units": [
+        4
+      ],
+      "priority": 2,
+      "sources": [
+        "Treaty of Paris 1783 (Floridas returned to Spain)",
+        "Pinckney's Treaty 1795 (31 deg N)",
+        "Adams-Onis Treaty, effective 1821-02-22"
+      ],
+      "notes": "West Florida west of the Perdido was seized by the US in 1810-13: a later state may follow."
+    },
+    {
+      "id": "geo.region.french-louisiana@1800",
+      "name": "French Louisiana",
+      "side": "french",
+      "validFrom": "1800-10-01",
+      "validTo": "1803-04-30",
+      "units": [
+        4
+      ],
+      "priority": 3,
+      "sources": [
+        "Treaty of San Ildefonso 1800-10-01",
+        "Louisiana Purchase treaty 1803-04-30"
+      ],
+      "notes": "Same ground as Spanish Louisiana (Spain still administered it)."
+    },
+    {
+      "id": "geo.region.united-states@1803",
+      "name": "United States (Louisiana Purchase)",
+      "side": "united-states",
+      "validFrom": "1803-04-30",
+      "validTo": "1821-02-22",
+      "units": [
+        4
+      ],
+      "priority": 1,
+      "sources": [
+        "National Atlas of the United States, \"Territorial Acquisitions of the United States\" (USGS, public domain)"
+      ],
+      "notes": "The Purchase's northern and western edges follow the Mississippi-Missouri drainage until the 1818 and 1819 treaties."
+    },
+    {
+      "id": "geo.region.russian-america@1799",
+      "name": "Russian America",
+      "side": "other",
+      "validFrom": "1799-07-08",
+      "validTo": "1867-10-18",
+      "units": [
+        4,
+        5
+      ],
+      "priority": 3,
+      "sources": [
+        "Russian-American Company charter 1799",
+        "Alaska transfer 1867-10-18"
+      ]
+    },
+    {
+      "id": "geo.region.oregon-country@1818",
+      "name": "Oregon Country (joint occupation)",
+      "side": "other",
+      "validFrom": "1818-10-20",
+      "validTo": "1846-06-15",
+      "units": [
+        4,
+        5
+      ],
+      "priority": 2,
+      "sources": [
+        "Treaty of 1818 (joint US-British occupation)",
+        "Adams-Onis (42 deg N south line) and the Russo-American Treaty of 1824 (54 deg 40 min north line)"
+      ],
+      "notes": "Claimed by both: precision \"contested\"."
+    },
+    {
+      "id": "geo.line.missouri-compromise@1820",
+      "name": "Missouri Compromise line (36 deg 30 min)",
+      "side": "united-states",
+      "validFrom": "1820-03-06",
+      "validTo": "1854-05-30",
+      "units": [
+        4
+      ],
+      "priority": 1,
+      "sources": [
+        "Missouri Compromise 1820: 36 deg 30 min N across the Louisiana Purchase, west of Missouri",
+        "Kansas-Nebraska Act 1854-05-30 repeals it"
+      ]
+    },
+    {
+      "id": "geo.region.united-states@1821",
+      "name": "United States (Adams-Onis)",
+      "side": "united-states",
+      "validFrom": "1821-02-22",
+      "validTo": "1845-12-29",
+      "units": [
+        4
+      ],
+      "priority": 1,
+      "sources": [
+        "National Atlas of the United States, \"Territorial Acquisitions of the United States\" (USGS, public domain)",
+        "Adams-Onis Treaty, effective 1821-02-22"
+      ]
+    },
+    {
+      "id": "geo.region.mexico@1821",
+      "name": "Mexico",
+      "side": "mexico",
+      "validFrom": "1821-09-27",
+      "validTo": "1836-03-02",
+      "units": [
+        4
+      ],
+      "priority": 1,
+      "sources": [
+        "Treaty of Cordoba 1821-09-27",
+        "Adams-Onis line for the northern border",
+        "Natural Earth admin-0/admin-1 (public domain) where the border follows a modern one"
+      ]
+    },
+    {
+      "id": "geo.region.republic-of-texas@1836",
+      "name": "Republic of Texas",
+      "side": "other",
+      "validFrom": "1836-03-02",
+      "validTo": "1845-12-29",
+      "units": [
+        4
+      ],
+      "priority": 1,
+      "sources": [
+        "Texas Declaration of Independence 1836-03-02",
+        "Texas claim to the Rio Grande (contested by Mexico)"
+      ],
+      "notes": "Draw the claimed Rio Grande border; precision \"contested\"."
+    },
+    {
+      "id": "geo.region.mexico@1836",
+      "name": "Mexico (after Texas)",
+      "side": "mexico",
+      "validFrom": "1836-03-02",
+      "validTo": "1848-02-02",
+      "units": [
+        4
+      ],
+      "priority": 1,
+      "sources": [
+        "Natural Earth admin-0/admin-1 (public domain) where the border follows a modern one",
+        "the Nueces/Rio Grande dispute"
+      ]
+    },
+    {
+      "id": "geo.region.united-states@1845",
+      "name": "United States (Texas annexed)",
+      "side": "united-states",
+      "validFrom": "1845-12-29",
+      "validTo": "1846-06-15",
+      "units": [
+        4,
+        5
+      ],
+      "priority": 2,
+      "sources": [
+        "National Atlas of the United States, \"Territorial Acquisitions of the United States\" (USGS, public domain)"
+      ]
+    },
+    {
+      "id": "geo.region.united-states@1846",
+      "name": "United States (Oregon Treaty)",
+      "side": "united-states",
+      "validFrom": "1846-06-15",
+      "validTo": "1848-02-02",
+      "units": [
+        4,
+        5
+      ],
+      "priority": 2,
+      "sources": [
+        "National Atlas of the United States, \"Territorial Acquisitions of the United States\" (USGS, public domain)",
+        "Oregon Treaty 1846-06-15 (49th parallel)"
+      ]
+    },
+    {
+      "id": "geo.region.british-north-america@1846",
+      "name": "British North America (after Oregon)",
+      "side": "british",
+      "validFrom": "1846-06-15",
+      "validTo": "1867-07-01",
+      "units": [
+        5
+      ],
+      "priority": 2,
+      "sources": [
+        "Oregon Treaty 1846"
+      ],
+      "notes": "Adds the Pacific coast north of the 49th parallel."
+    },
+    {
+      "id": "geo.region.united-states@1848",
+      "name": "United States (Mexican Cession)",
+      "side": "united-states",
+      "validFrom": "1848-02-02",
+      "validTo": "1853-12-30",
+      "units": [
+        5
+      ],
+      "priority": 1,
+      "sources": [
+        "National Atlas of the United States, \"Territorial Acquisitions of the United States\" (USGS, public domain)",
+        "Treaty of Guadalupe Hidalgo 1848-02-02"
+      ]
+    },
+    {
+      "id": "geo.region.mexico@1848",
+      "name": "Mexico (after the Mexican Cession)",
+      "side": "mexico",
+      "validFrom": "1848-02-02",
+      "validTo": "1853-12-30",
+      "units": [
+        5
+      ],
+      "priority": 1,
+      "sources": [
+        "Natural Earth admin-0/admin-1 (public domain) where the border follows a modern one",
+        "Treaty of Guadalupe Hidalgo 1848"
+      ]
+    },
+    {
+      "id": "geo.region.united-states@1853",
+      "name": "United States (Gadsden Purchase)",
+      "side": "united-states",
+      "validFrom": "1853-12-30",
+      "validTo": "1867-10-18",
+      "units": [
+        5
+      ],
+      "priority": 1,
+      "sources": [
+        "National Atlas of the United States, \"Territorial Acquisitions of the United States\" (USGS, public domain)",
+        "Gadsden Purchase 1853-12-30"
+      ],
+      "notes": "Modern lower-48 outline: build it from Natural Earth."
+    },
+    {
+      "id": "geo.region.mexico@1853",
+      "name": "Mexico",
+      "side": "mexico",
+      "validFrom": "1853-12-30",
+      "units": [
+        5,
+        6,
+        7
+      ],
+      "priority": 2,
+      "sources": [
+        "Natural Earth admin-0/admin-1 (public domain) where the border follows a modern one"
+      ],
+      "notes": "The modern border: build it from Natural Earth admin-0."
+    },
+    {
+      "id": "geo.region.confederacy@1861",
+      "name": "Confederate States",
+      "side": "confederacy",
+      "validFrom": "1861-06-08",
+      "validTo": "1865-05-10",
+      "units": [
+        5
+      ],
+      "priority": 1,
+      "sources": [
+        "the eleven seceded states (Tennessee seceded last, 1861-06-08)",
+        "Natural Earth admin-0/admin-1 (public domain) where the border follows a modern one: union of the eleven states' outlines"
+      ],
+      "notes": "Never recognised: precision \"contested\" (it draws over the United States layer)."
+    },
+    {
+      "id": "geo.region.british-columbia@1866",
+      "name": "British Columbia",
+      "side": "british",
+      "validFrom": "1866-11-19",
+      "validTo": "1871-07-20",
+      "units": [
+        5
+      ],
+      "priority": 3,
+      "sources": [
+        "union of Vancouver Island and British Columbia 1866-11-19",
+        "joins Canada 1871-07-20"
+      ]
+    },
+    {
+      "id": "geo.region.canada@1867",
+      "name": "Dominion of Canada",
+      "side": "british",
+      "validFrom": "1867-07-01",
+      "validTo": "1870-07-15",
+      "units": [
+        5
+      ],
+      "priority": 2,
+      "sources": [
+        "British North America Act 1867: Ontario, Quebec, Nova Scotia, New Brunswick"
+      ],
+      "notes": "A later state (1870, Rupert's Land and Manitoba) is for a planning agent to add."
+    },
+    {
+      "id": "geo.region.united-states@1867",
+      "name": "United States (Alaska)",
+      "side": "united-states",
+      "validFrom": "1867-10-18",
+      "units": [
+        5,
+        6
+      ],
+      "priority": 2,
+      "sources": [
+        "National Atlas of the United States, \"Territorial Acquisitions of the United States\" (USGS, public domain)",
+        "Alaska transfer 1867-10-18"
+      ],
+      "notes": "Overseas territories (1898) belong on a world view: a planning agent adds them."
+    }
+  ]
+}

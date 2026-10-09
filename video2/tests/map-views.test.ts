@@ -14,7 +14,7 @@ const feature = (id: string, type: string, coordinates: unknown, props: Partial<
   properties: {id, validFrom: '1763-10-07', validTo: '1774-06-22', review: {status: 'approved'}, layer: {base: true, side: 'british', label: 'Quebec', labelAt: [-71, 48]}, ...props},
 });
 const quebec = feature('geo.region.quebec@1763', 'Polygon', [[[-80, 45], [-64, 45], [-64, 52], [-80, 52], [-80, 45]]]);
-const line = feature('geo.line.proclamation-1763', 'LineString', [[-84, 34], [-78, 40], [-72, 45]], {layer: {base: true, side: 'british'}, validTo: '1768-11-05'});
+const line = feature('geo.line.proclamation@1763', 'LineString', [[-84, 34], [-78, 40], [-72, 45]], {layer: {base: true, side: 'british'}, validTo: '1768-11-05'});
 const louisiana = feature('geo.region.spanish-louisiana@1763', 'Polygon', [[[-110, 29], [-90, 29], [-90, 49], [-110, 49], [-110, 29]]], {layer: {base: true, side: 'spanish'}, validTo: '1800-10-01'});
 const geo = {[quebec.properties.id]: quebec, [line.properties.id]: line, [louisiana.properties.id]: louisiana};
 const east: [[number, number], [number, number]] = [[-88, 30], [-62, 50]];
@@ -87,7 +87,8 @@ describe('geo layer validation', () => {
   it('a base layer needs a known side, both dates in order, and a [lon, lat] label spot; points cannot be layers', () => {
     assert.equal(issues(props({base: true, side: 'british', label: 'Quebec', labelAt: [-71, 48]})), '');
     assert.match(issues(props({base: true, side: 'dutch'})), /layer\.side must be one of/);
-    assert.match(issues(props({base: true, side: 'british'}, {validTo: undefined})), /needs validFrom and validTo/);
+    assert.equal(issues(props({base: true, side: 'british'}, {validTo: undefined})), '', 'no validTo: still true');
+    assert.match(issues(props({base: true, side: 'british'}, {validFrom: undefined})), /needs validFrom/);
     assert.match(issues(props({base: true, side: 'british'}, {validTo: '1760-01-01'})), /validFrom is after validTo/);
     assert.match(issues(props({base: true, side: 'british', labelAt: [48]})), /layer\.labelAt must be/);
     assert.match(issues(props({base: true, side: 'british'}, {id: 'geo.point.detroit', type: 'point'})), /points are not base layers/);

@@ -129,7 +129,7 @@ export interface Entity {
 
 /** Geo features are GeoJSON with these properties (one feature per file or a FeatureCollection). */
 export interface GeoProperties {
-  /** `geo.<type>.<slug>[@year]`, e.g. "geo.line.proclamation-1763", "geo.region.province-of-quebec@1763". */
+  /** `geo.<type>.<slug>[@year]`, e.g. "geo.line.proclamation@1763", "geo.region.province-of-quebec@1763". */
   id: string;
   type: 'region' | 'line' | 'route' | 'point';
   name: string;

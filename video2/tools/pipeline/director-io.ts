@@ -22,7 +22,7 @@ export function directorCatalog(inputs: DocInputs): CatalogEntry[] {
 
 /** Library geography (approved only, unless drafting), places and map views the director may reference. */
 const baseYears = (p: {layer?: {base: true}; validFrom?: string; validTo?: string}) =>
-  p.layer?.base && p.validFrom && p.validTo ? {base: `${p.validFrom.slice(0, 4)}-${p.validTo.slice(0, 4)}`} : {};
+  p.layer?.base && p.validFrom ? {base: `${p.validFrom.slice(0, 4)}-${p.validTo?.slice(0, 4) ?? ''}`} : {};
 
 export function directorMaps(inputs: DocInputs, draft: boolean): MapData {
   return {

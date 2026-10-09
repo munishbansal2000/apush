@@ -122,7 +122,7 @@ for entities, `geo.<type>.<slug>[@year]` for geography (e.g. `geo.region.provinc
 - The director receives the index slice for a lesson (matching units, topics, people, events, places): id, title, one-line
   description, date, `retrospective`, focus names. It never sees URLs or guesses coordinates.
 - Shot plans reference assets and focus regions by name: `{"asset": "portrait.george-grenville-hoare-1764", "from": "face",
-  "to": "paper"}`, and map features by id: `{"geo": "geo.line.proclamation-1763"}`. The shot resolver turns names into
+  "to": "paper"}`, and map features by id: `{"geo": "geo.line.proclamation@1763"}`. The shot resolver turns names into
   framings and geometry, and rejects unknown ids, unapproved assets, and over-upscaled framings.
 - Derived layers (depth maps for 2.5D parallax, LTX clips for hero moments) attach to the record, so every lesson that
   uses an asset gets them for free.

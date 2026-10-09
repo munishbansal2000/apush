@@ -9,6 +9,7 @@ import {join} from 'node:path';
 import type {LonLat} from '../../src/documentary/types';
 import {readJson} from '../pipeline-core';
 import {yearOf} from '../../src/library/validate';
+import {periodInstant, validAt} from './periods';
 import type {PhraseAnchor} from './anchors';
 import type {Cue, PlanShot, ShotPlan} from './shots';
 
@@ -32,8 +33,9 @@ export interface ViewMapShot {
   type: 'map';
   at: PhraseAnchor;
   view: string;
-  /** The year the narration is about: the period's base layers (borders, claims) valid then are drawn automatically. */
-  period?: number;
+  /** The moment the narration is about: a year (as it stood at the end of that year) or an ISO date. The base layers
+   *  (borders, claims) valid then are drawn automatically. */
+  period?: number | string;
   /** Camera moves: to a focus name of the view, or a place id (zoom defaults to 1.4x the view's opening zoom). */
   moves?: {at: Cue; to: string; zoom?: number; ease?: number}[];
   fills?: {at: Cue; region: {geo: string} | {state: string} | {country: string}; color: string}[];
@@ -66,16 +68,18 @@ function bboxOf(coords: unknown): [number, number, number, number] {
 }
 
 /** Base layers for a period inside an extent: regions tinted by side, lines dashed, labels where given. */
-export function periodLayers(period: number, extent: [LonLat, LonLat], geo: Record<string, PeriodFeature>, allowUnapproved = false) {
+export function periodLayers(period: number | string, extent: [LonLat, LonLat], geo: Record<string, PeriodFeature>, allowUnapproved = false) {
+  const t = periodInstant(period);
   const [[w, s], [e, n]] = extent;
   const fills: {at: Cue; region: {geo: string}; color: string}[] = [];
   const lines: {at: Cue; geo: string; color: string; dashed: boolean; draw: number}[] = [];
   const labels: {at: Cue; text: string; lonlat: LonLat; style: 'region'}[] = [];
-  for (const f of Object.values(geo)) {
+  // Older layers first, so a later claim on the same ground (a seceded South, a contested strip) draws on top.
+  const ordered = Object.values(geo).filter(f => f.properties.layer?.base).sort((a, b) => yearOf(a.properties.validFrom ?? '0') - yearOf(b.properties.validFrom ?? '0'));
+  for (const f of ordered) {
     const p = f.properties;
-    if (!p.layer?.base || !p.validFrom || !p.validTo) continue;
+    if (!p.layer || !validAt(p, t)) continue;
     if (p.review.status !== 'approved' && !allowUnapproved) continue;
-    if (period < Math.floor(yearOf(p.validFrom)) || period > Math.floor(yearOf(p.validTo))) continue;
     const [fw, fs, fe, fn] = bboxOf(f.geometry.coordinates);
     if (fe < w || fw > e || fn < s || fs > n) continue;
     const color = SIDE_COLORS[p.layer.side] ?? MAP_COLORS.ink;
@@ -115,7 +119,7 @@ export function expandMapViews(
   const shots = (plan.shots as (PlanShot | ViewMapShot)[]).map((shot, i): PlanShot => {
     if (shot.type !== 'map') return shot;
     if (!isViewShot(shot)) {
-      const period = (shot as {period?: number}).period;
+      const period = (shot as {period?: number | string}).period;
       const base = period ? withoutOwn(periodLayers(period, shot.extent, geo, allowUnapproved), shot) : {fills: [], lines: [], labels: []};
       return {...shot, fills: [...base.fills, ...(shot.fills ?? []).map(f => ({...f, color: color(f.color)!}))], lines: [...base.lines, ...(shot.lines ?? []).map(l => ({...l, color: color(l.color)}))],
         labels: [...base.labels, ...(shot.labels ?? [])]} as PlanShot;

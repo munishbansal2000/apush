@@ -120,7 +120,7 @@ export function validateGeo(p: GeoProperties, taxonomy: Taxonomy): string[] {
   if (p.layer) {
     if (p.layer.base !== true) add('layer.base must be true (only period base layers use "layer")');
     if (!PERIOD_SIDES.includes(p.layer.side)) add(`layer.side must be one of ${PERIOD_SIDES.join(', ')}`);
-    if (!p.validFrom || !p.validTo) add('a period base layer needs validFrom and validTo (the years it was true)');
+    if (!p.validFrom) add('a period base layer needs validFrom (and validTo unless it is still true)');
     if (p.validFrom && p.validTo && yearOf(p.validFrom) > yearOf(p.validTo)) add('validFrom is after validTo');
     const at = p.layer.labelAt;
     if (at && !(Array.isArray(at) && at.length === 2 && Math.abs(at[0]) <= 180 && Math.abs(at[1]) <= 90)) add('layer.labelAt must be [lon, lat]');

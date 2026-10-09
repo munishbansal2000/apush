@@ -7,7 +7,7 @@ Maps are drawn by the renderer from data, never from a picture of a map. They co
 | | **Map view** (`data/library/maps/<region>.json`) | **Period layer** (`data/library/geo/geo.<type>.<slug>@<year>.geojson`) |
 |---|---|---|
 | What | A *place*: a framing of a region (projection, extent, camera, tilt, ridges, timeless labels, named camera targets) | A *time*: one border, claim, colony or line as it was between two dates |
-| Dated? | Never. Coastlines, lakes, rivers and mountains are the modern ones (reservoirs removed) | Always: `validFrom` / `validTo` |
+| Dated? | Never. Coastlines, lakes, rivers and mountains are the modern ones (reservoirs removed) | Always: from `validFrom` to `validTo` (see PERIOD_LAYERS.md) |
 | Reused by | Every lesson set in that region, 1491 to 1980 | Every map whose `period` falls inside its dates and whose view overlaps it |
 | Example | `map.great-lakes` | `geo.region.province-of-quebec@1763` (1763-10-07 to 1774-06-22) |
 
@@ -21,6 +21,8 @@ npm run maps -- validate                              # every rule below; exit 1
 npm run maps -- preview map.great-lakes               # stills of the opening framing and each focus target
 npm run maps -- preview map.eastern-north-america --period 1763   # the same, with that year's layers (drafts included)
 npm run maps -- preview all
+npm run maps -- status                                # period layers: missing / in review / approved, per snapshot year
+npm run maps -- layer-preview geo.region.province-of-quebec@1763
 npx tsx tools/library.ts validate                     # geo schema, including the layer fields
 npm test                                              # tests/map-views.test.ts runs validate on the whole library
 ```
@@ -63,43 +65,11 @@ npm test                                              # tests/map-views.test.ts 
 
 ## Building a period layer
 
-A period layer is an ordinary library geo feature (docs/ASSET_LIBRARY.md) with a `layer` block:
-
-```json
-{
-  "type": "Feature",
-  "geometry": {"type": "Polygon", "coordinates": [[[-79.5, 46.3], [-64.3, 48.9], ...]]},
-  "properties": {
-    "id": "geo.region.province-of-quebec@1763",
-    "type": "region",
-    "name": "Province of Quebec (1763)",
-    "validFrom": "1763-10-07",
-    "validTo": "1774-06-22",
-    "precision": "approximate",
-    "sources": ["Royal Proclamation of 1763, boundary clause: ..."],
-    "units": [3],
-    "review": {"status": "candidate", "notes": "Verify against Kitchin 1763 before approving."},
-    "layer": {"base": true, "side": "british", "label": "Province of Quebec", "labelAt": [-71.0, 48.3]}
-  }
-}
-```
-
-| Field | Rule |
-|---|---|
-| `id` | `geo.<region\|line\|route>.<slug>@<year>`, the year it begins. Points are never base layers (use places) |
-| `validFrom` / `validTo` | Required, ISO dates, in order: the treaty, act or proclamation that made it true and the one that ended it. A map with `period: Y` draws it when `Y` lies between the two years, inclusive |
-| `layer.side` | `british`, `french`, `spanish`, `native`, `united-states`, `mexico`, `confederacy` or `other`. The side picks the colour (`SIDE_COLORS` in `tools/pipeline/map-views.ts`), so every lesson shows the same power in the same colour |
-| `layer.label`, `labelAt` | Optional name drawn at `[lon, lat]`. Put the spot inside the region and away from timeless labels |
-| `precision` | `exact` (surveyed or treaty-defined), `approximate` (vertices at named landmarks) or `contested` (claims) |
-| `sources` | Where every vertex comes from: the treaty text, a named period map, a historical atlas. A border without a source is not accepted |
-
-**One state per file.** When a border moves (Quebec grows in 1774, Louisiana changes hands in 1762 and 1800), add a new file with the new dates and set the old file's `validTo`. Don't edit a geometry to a later state. Neighbouring layers in the same year shouldn't overlap unless the claim really was contested; mark that `precision: "contested"`.
-
-**Getting it right.** Trace from a period map you can name, with vertices at landmarks the source names (river mouths, lakes, forts, parallels), at a resolution that reads at full-frame zoom: 15 to 60 vertices is plenty. Check the coordinates are `[lon, lat]`, with west negative.
-
-**Review.** A new layer starts as `"status": "candidate"`. A storyboard map draws only `approved` layers, except in draft runs (`--draft`) and `maps preview`. To approve, a person compares the preview with the source map and sets `review.status` to `"approved"` (`verified` is the step between: an agent checked it against a source, but no person has yet). Agents never approve.
-
-**Check it:** run `npx tsx tools/library.ts validate` and `npm run maps -- validate`. `validate` also reports a layer that no view covers. Then preview a view that covers it with `--period <a year inside its dates>`.
+Period layers have their own guide: **[PERIOD_LAYERS.md](PERIOD_LAYERS.md)**. It covers the worklist (`data/library/periods.json`), the planning, tracing and checking roles, the time and space rules, and review. In short:
+- a layer is a library geo feature with a `layer` block (`side`, `label`, `labelAt`);
+- each file holds one state, from `validFrom` (inclusive) to `validTo` (exclusive, or omitted if still true);
+- it must be planned in the worklist first;
+- only `approved` layers are drawn outside `--draft`.
 
 ## Using maps in a storyboard
 
@@ -112,7 +82,7 @@ The director sees MAP VIEWS (id | name | focus targets) and MAP DATA (geo ids; b
  "at": {"phrase": "pontiac moved on detroit"}, "priority": "essential"}
 ```
 
-- `period` is the year the *narration* is about, not the year of the lesson.
+- `period` is the moment the *narration* is about, not the year of the lesson: a year means the map at the end of that year, and `"1763-03-01"` is a precise day inside a year of change.
 - `moves[].to` is a focus target of the view, or a place with a location.
 - Add only what the words point at. The era's borders arrive with `period`.
 - Variety rules (enforced): the same view at most twice per act and three times per lesson (the lesson limit is a warning); at most 3 maps in a row.
