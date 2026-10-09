@@ -3,6 +3,7 @@ import { useCurrentFrame, useVideoConfig, interpolate, spring } from 'remotion';
 import { useElementTracker, TrackedElement } from '../validation/tracker';
 import { TimingProps } from '../validation/timing';
 import { FONT, COLOR, TYPE, RADIUS, MOTION, alpha } from '../theme/tokens';
+import { useRevealFrames, useTextScale } from '../directed/reveal';
 
 interface CausalChainSlideProps extends TimingProps {
   nodes: (string | [string, string])[];
@@ -14,6 +15,14 @@ interface CausalChainSlideProps extends TimingProps {
   /** Frames for arrow draw animation */
   arrow_dur?: number;
   debug?: boolean;
+}
+
+/** Horizontal node layout, kept inside the 5% safe margins (the old formula left 14px at the edge for 4 nodes). */
+export function chainLayout(n: number, width: number) {
+  const gap = 60; // room for the arrows
+  const nodeWidth = Math.min(width * 0.22, (width * 0.9 - (n - 1) * gap) / n);
+  const totalWidth = n * nodeWidth + (n - 1) * gap;
+  return {gap, nodeWidth, totalWidth, startX: (width - totalWidth) / 2};
 }
 
 /**
@@ -38,6 +47,10 @@ export const CausalChainSlide: React.FC<CausalChainSlideProps> = ({
   const frame = useCurrentFrame();
   const arrowId = `arrowhead-${useId().replace(/:/g, '')}`;
   const { width, height, fps } = useVideoConfig();
+  const revealFrames = useRevealFrames();
+  const ts = useTextScale();
+  // Spoken cue per node when directed; otherwise the fixed stagger.
+  const appearAt = (i: number) => revealFrames?.[i] ?? i * stagger;
 
   // Normalize nodes to [label, sub]
   const normalizedNodes = useMemo(() => {
@@ -45,10 +58,8 @@ export const CausalChainSlide: React.FC<CausalChainSlideProps> = ({
   }, [nodes]);
 
   const n = normalizedNodes.length;
-  const nodeWidth = Math.min(width * 0.22, (width * 0.9) / n - 20);
+  const {gap, nodeWidth, startX} = chainLayout(n, width);
   const nodeHeight = height * 0.28;
-  const totalWidth = n * nodeWidth + (n - 1) * 60; // 60px gap for arrows
-  const startX = (width - totalWidth) / 2;
   const nodeY = height * 0.38;
 
   // Track all nodes for validation
@@ -63,7 +74,7 @@ export const CausalChainSlide: React.FC<CausalChainSlideProps> = ({
       });
     }
     normalizedNodes.forEach(([label, sub], i) => {
-      const x = startX + i * (nodeWidth + 60);
+      const x = startX + i * (nodeWidth + gap);
       els.push({
         id: `node-${i}`, type: 'text', content: label,
         fontSize: height * 0.032, fontWeight: 'bold',
@@ -82,9 +93,9 @@ export const CausalChainSlide: React.FC<CausalChainSlideProps> = ({
 
   // Node positions
   const nodePositions = normalizedNodes.map((_, i) => ({
-    x: startX + i * (nodeWidth + 60),
+    x: startX + i * (nodeWidth + gap),
     y: nodeY,
-    centerX: startX + i * (nodeWidth + 60) + nodeWidth / 2,
+    centerX: startX + i * (nodeWidth + gap) + nodeWidth / 2,
   }));
 
   return (
@@ -93,7 +104,7 @@ export const CausalChainSlide: React.FC<CausalChainSlideProps> = ({
       {title && (
         <div style={{
           position: 'absolute', top: height * 0.08, left: 0, right: 0,
-          textAlign: 'center', fontSize: height * 0.045, fontWeight: 'bold',
+          textAlign: 'center', fontSize: height * 0.045 * ts, fontWeight: 'bold',
           color: COLOR.onNight, zIndex: 10,
           opacity: interpolate(frame, [0, 15], [0, 1], { extrapolateRight: 'clamp' }),
         }}>
@@ -109,7 +120,8 @@ export const CausalChainSlide: React.FC<CausalChainSlideProps> = ({
           </marker>
         </defs>
         {nodePositions.slice(0, -1).map((pos, i) => {
-          const arrowStartFrame = (i + 1) * stagger;
+          // The arrow draws into the next node as it lands.
+          const arrowStartFrame = Math.max(appearAt(i), appearAt(i + 1) - arrow_dur);
           if (frame < arrowStartFrame) return null;
 
           const x1 = pos.centerX + nodeWidth / 2;
@@ -142,7 +154,7 @@ export const CausalChainSlide: React.FC<CausalChainSlideProps> = ({
 
       {/* Nodes */}
       {normalizedNodes.map(([label, sub], i) => {
-        const appearFrame = i * stagger;
+        const appearFrame = appearAt(i);
         if (frame < appearFrame) return null;
 
         const progress = spring({
@@ -159,6 +171,8 @@ export const CausalChainSlide: React.FC<CausalChainSlideProps> = ({
         return (
           <div
             key={i}
+            data-guard-item={`node ${i + 1}`}
+            data-guard-moving={progress < 0.99 ? '' : undefined}
             style={{
               position: 'absolute',
               left: pos.x,
@@ -190,14 +204,14 @@ export const CausalChainSlide: React.FC<CausalChainSlideProps> = ({
               {i + 1}
             </div>
             <div style={{
-              fontSize: height * 0.032, fontWeight: 'bold',
+              fontSize: height * 0.032 * ts, fontWeight: 'bold',
               color: COLOR.onNight, textAlign: 'center', lineHeight: 1.3,
             }}>
               {label}
             </div>
             {sub && (
               <div style={{
-                fontSize: height * 0.024, color: COLOR.onNightMuted,
+                fontSize: height * 0.024 * ts, color: COLOR.onNightMuted,
                 textAlign: 'center', marginTop: 8, lineHeight: 1.4,
               }}>
                 {sub}

@@ -3,6 +3,7 @@ import { useCurrentFrame, useVideoConfig, interpolate, spring, AbsoluteFill, Img
 import { PrimarySourceProps } from './motionStudioTypes';
 import { parchmentAsset } from './motionStudioPresets';
 import { COLOR, FONT, MOTION, RADIUS, TYPE, alpha } from '../theme/tokens';
+import { useRevealFrame, useTextScale } from '../directed/reveal';
 
 /** URLs, data URIs and already-resolved paths pass through; bare names go through staticFile. */
 const resolveSrc = (src: string) =>
@@ -20,6 +21,10 @@ export const PrimarySourceSpotlight: React.FC<PrimarySourceProps> = ({
   const frame = useCurrentFrame();
   const { fps, width, height } = useVideoConfig();
   const isPortrait = height > width;
+  const ts = useTextScale();
+  // Directed: highlighter sweep on cue 1, HIPP card on cue 2; otherwise the fixed frames 35 and 65.
+  const sweepAt = useRevealFrame(0, 35);
+  const hippAt = useRevealFrame(1, 65);
 
   // Ken Burns subtle camera zoom
   const cameraZoom = interpolate(frame, [0, 180], [1, 1.05], {
@@ -37,7 +42,7 @@ export const PrimarySourceSpotlight: React.FC<PrimarySourceProps> = ({
 
   // Highlighter sweep starts at frame 35
   const highlightProgress = spring({
-    frame: frame - 35,
+    frame: frame - sweepAt,
     fps,
     // intentional: slower, overshoot-free highlighter sweep
     config: { damping: 18, mass: 0.9, stiffness: 80 },
@@ -46,7 +51,7 @@ export const PrimarySourceSpotlight: React.FC<PrimarySourceProps> = ({
 
   // HIPP card pops up at frame 65
   const hippEnter = spring({
-    frame: frame - 65,
+    frame: frame - hippAt,
     fps,
     config: MOTION.spring,
   });
@@ -98,7 +103,7 @@ export const PrimarySourceSpotlight: React.FC<PrimarySourceProps> = ({
             <span
               style={{
                 fontFamily: FONT.display,
-                fontSize: isPortrait ? TYPE.tag : TYPE.small,
+                fontSize: (isPortrait ? TYPE.tag : TYPE.small) * ts,
                 fontWeight: 800,
                 color: COLOR.gold,
                 letterSpacing: '0.1em',
@@ -109,7 +114,7 @@ export const PrimarySourceSpotlight: React.FC<PrimarySourceProps> = ({
             <span style={{ color: alpha(COLOR.onNight, 0.3) }}>·</span>
             <span
               style={{
-                fontSize: TYPE.tag,
+                fontSize: TYPE.tag * ts,
                 fontFamily: FONT.mono,
                 color: alpha(COLOR.onNight, 0.6),
               }}
@@ -125,7 +130,7 @@ export const PrimarySourceSpotlight: React.FC<PrimarySourceProps> = ({
               backgroundColor: alpha(COLOR.gold, 0.15),
               border: `1px solid ${alpha(COLOR.gold, 0.3)}`,
               color: COLOR.gold,
-              fontSize: TYPE.micro,
+              fontSize: TYPE.micro * ts,
               fontWeight: 600,
               fontFamily: FONT.mono,
             }}
@@ -185,7 +190,7 @@ export const PrimarySourceSpotlight: React.FC<PrimarySourceProps> = ({
               <h2
                 style={{
                   fontFamily: FONT.display,
-                  fontSize: isPortrait ? TYPE.place : TYPE.h3,
+                  fontSize: (isPortrait ? TYPE.place : TYPE.h3) * ts,
                   fontWeight: 900,
                   color: COLOR.ink,
                   margin: '0 0 6px 0',
@@ -197,7 +202,7 @@ export const PrimarySourceSpotlight: React.FC<PrimarySourceProps> = ({
               <div
                 style={{
                   fontFamily: FONT.ui,
-                  fontSize: isPortrait ? TYPE.tag : TYPE.small,
+                  fontSize: (isPortrait ? TYPE.tag : TYPE.small) * ts,
                   fontWeight: 600,
                   color: COLOR.brown,
                   fontStyle: 'italic',
@@ -219,7 +224,7 @@ export const PrimarySourceSpotlight: React.FC<PrimarySourceProps> = ({
                 justifyContent: 'center',
                 color: COLOR.brown,
                 fontFamily: FONT.display,
-                fontSize: TYPE.nano,
+                fontSize: TYPE.nano * ts,
                 fontWeight: 800,
                 textAlign: 'center',
                 lineHeight: 1,
@@ -242,7 +247,7 @@ export const PrimarySourceSpotlight: React.FC<PrimarySourceProps> = ({
               style={{
                 margin: 0,
                 fontFamily: FONT.text,
-                fontSize: isPortrait ? TYPE.label : TYPE.body,
+                fontSize: (isPortrait ? TYPE.label : TYPE.body) * ts,
                 lineHeight: 1.6,
                 color: COLOR.ink,
                 position: 'relative',
@@ -319,7 +324,7 @@ export const PrimarySourceSpotlight: React.FC<PrimarySourceProps> = ({
               color: COLOR.gold,
               fontFamily: FONT.display,
               fontWeight: 800,
-              fontSize: TYPE.tag,
+              fontSize: TYPE.tag * ts,
               letterSpacing: '0.05em',
               whiteSpace: 'nowrap',
             }}
@@ -331,7 +336,7 @@ export const PrimarySourceSpotlight: React.FC<PrimarySourceProps> = ({
             <p
               style={{
                 margin: 0,
-                fontSize: TYPE.tag,
+                fontSize: TYPE.tag * ts,
                 lineHeight: 1.45,
                 color: alpha(COLOR.onNight, 0.9),
               }}

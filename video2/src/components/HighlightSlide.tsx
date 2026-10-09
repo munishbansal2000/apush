@@ -1,6 +1,7 @@
 import React from 'react';
 import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion';
 import { FONT, COLOR, TYPE, RADIUS } from '../theme/tokens';
+import { useRevealFrames, useTextScale } from '../directed/reveal';
 
 interface Highlight {
   text: string;
@@ -29,6 +30,10 @@ export const HighlightSlide: React.FC<HighlightSlideProps> = ({
   const { fps, width } = useVideoConfig();
   // Hard-coded 1280×720 px values scale with the frame (identical at 1280×720).
   const k = width / 1280;
+  const revealFrames = useRevealFrames();
+  const ts = useTextScale();
+  // Notes float above their phrase; give them a line gap to sit in so they never land on the previous line.
+  const hasNotes = highlights.some(h => h.note);
 
   // intentional: critically damped (no overshoot) entrances
   const titleIn = spring({ frame, fps, config: { damping: 200 } });
@@ -68,7 +73,7 @@ export const HighlightSlide: React.FC<HighlightSlideProps> = ({
 
       // Highlighted text with underline animation
       const hlIn = spring({
-        frame: frame - 20 - m.index * 15,
+        frame: frame - (revealFrames?.[m.index] ?? 20 + m.index * 15),
         fps,
         config: { damping: 200 }, // intentional: critically damped, no overshoot
       });
@@ -79,7 +84,7 @@ export const HighlightSlide: React.FC<HighlightSlideProps> = ({
           key={`hl-${m.start}`}
           style={{ position: 'relative', display: 'inline-block' }}
         >
-          <span style={{ position: 'relative', zIndex: 1 }}>{m.highlight.text}</span>
+          <span data-guard-item={`highlight ${m.index + 1}`} style={{ position: 'relative', zIndex: 1 }}>{m.highlight.text}</span>
           <span
             style={{
               position: 'absolute',
@@ -96,12 +101,13 @@ export const HighlightSlide: React.FC<HighlightSlideProps> = ({
           />
           {m.first && m.highlight.note && (
             <span
+              data-guard-item={`note ${m.index + 1}`}
               style={{
                 position: 'absolute',
-                top: -28 * k,
+                top: -30 * k * ts,
                 left: '50%',
                 transform: 'translateX(-50%)',
-                fontSize: TYPE.label * k,
+                fontSize: TYPE.label * k * ts,
                 color: accent,
                 fontWeight: 700,
                 whiteSpace: 'nowrap',
@@ -142,7 +148,7 @@ export const HighlightSlide: React.FC<HighlightSlideProps> = ({
       {title && (
         <div
           style={{
-            fontSize: TYPE.h2 * k,
+            fontSize: TYPE.h2 * k * ts,
             fontWeight: 800,
             color: COLOR.ink,
             marginBottom: 32 * k,
@@ -155,10 +161,10 @@ export const HighlightSlide: React.FC<HighlightSlideProps> = ({
       )}
       <div
         style={{
-          fontSize: TYPE.h3 * k,
+          fontSize: TYPE.h3 * k * ts,
           color: COLOR.ink,
           fontFamily: FONT.text,
-          lineHeight: 1.8,
+          lineHeight: hasNotes ? 2.4 : 1.8,
           opacity: bodyOpacity,
         }}
       >

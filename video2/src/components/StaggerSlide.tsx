@@ -3,6 +3,7 @@ import { useCurrentFrame, useVideoConfig, interpolate, spring, Img, staticFile }
 import { useElementTracker, TrackedElement } from '../validation/tracker';
 import { TimingProps } from '../validation/timing';
 import { COLOR, FONT, RADIUS, alpha } from '../theme/tokens';
+import { useRevealFrames, useTextScale } from '../directed/reveal';
 
 interface StaggerPanel {
   image: string;
@@ -51,6 +52,8 @@ export const StaggerSlide: React.FC<StaggerSlideProps> = ({
 }) => {
   const frame = useCurrentFrame();
   const { width, height, fps, durationInFrames } = useVideoConfig();
+  const revealFrames = useRevealFrames();
+  const ts = useTextScale();
   // TimingProps: enterDuration overrides entrance_dur when given; exitDuration
   // (optional) fades the whole slide out over the last N frames.
   const entranceFrames = enterDuration ?? entrance_dur;
@@ -77,10 +80,11 @@ export const StaggerSlide: React.FC<StaggerSlideProps> = ({
     };
     return panels.map((p, i) => ({
       ...p,
-      at: p.at ?? anchorFrame(p) ?? i * 30,
+      // A directed spoken cue starts the entrance on the word, so the panel settles just after it.
+      at: p.at ?? (revealFrames?.[i] !== undefined ? revealFrames[i] + entranceFrames : undefined) ?? anchorFrame(p) ?? i * 30,
       from: p.from ?? (i % 2 === 0 ? 'left' : 'right') as 'left' | 'right' | 'top' | 'bottom',
     }));
-  }, [panels, wordTimings]);
+  }, [panels, wordTimings, revealFrames, entranceFrames]);
 
   // Track panels for validation
   const trackedElements = useMemo((): TrackedElement[] => {
@@ -135,7 +139,7 @@ export const StaggerSlide: React.FC<StaggerSlideProps> = ({
       {title && (
         <div style={{
           position: 'absolute', top: height * 0.05, left: 0, right: 0,
-          textAlign: 'center', fontSize: height * 0.045, fontWeight: 'bold',
+          textAlign: 'center', fontSize: height * 0.045 * ts, fontWeight: 'bold',
           color: COLOR.onNight,
           opacity: interpolate(frame, [0, 15], [0, 1], { extrapolateRight: 'clamp' }),
         }}>
@@ -157,7 +161,7 @@ export const StaggerSlide: React.FC<StaggerSlideProps> = ({
         const x = startX + i * (panelWidth + 16);
 
         return (
-          <div key={i} style={{ position: 'absolute', left: x, top: panelY }}>
+          <div key={i} data-guard-item={`panel ${i + 1}`} data-guard-moving={progress < 0.99 ? '' : undefined} style={{ position: 'absolute', left: x, top: panelY }}>
             <div style={{
               width: panelWidth,
               height: panelHeight,
@@ -177,7 +181,7 @@ export const StaggerSlide: React.FC<StaggerSlideProps> = ({
               <div style={{
                 width: panelWidth,
                 textAlign: 'center',
-                fontSize: height * 0.028,
+                fontSize: height * 0.028 * ts,
                 color: COLOR.onNight,
                 marginTop: 12,
                 opacity,

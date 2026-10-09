@@ -3,6 +3,7 @@ import { useCurrentFrame, useVideoConfig, interpolate } from 'remotion';
 import { useElementTracker, TrackedElement } from '../validation/tracker';
 import { TimingProps, DEFAULT_TIMING, getAnimationProgress } from '../validation/timing';
 import { FONT, COLOR, TYPE, RADIUS, alpha } from '../theme/tokens';
+import { useRevealFrames, useTextScale } from '../directed/reveal';
 
 interface CompareSlideProps extends TimingProps {
   title?: string;
@@ -39,6 +40,12 @@ export const CompareSlide: React.FC<CompareSlideProps> = ({
 
   const { enter, exit } = getAnimationProgress(frame, durationInFrames, enterDuration, exitDuration);
   const overallOpacity = Math.min(enter * 2, exit * 2, 1);
+  const revealFrames = useRevealFrames();
+  const ts = useTextScale();
+  // Left column on its spoken cue, right column on its own; without cues both enter together.
+  const sideEnter = (i: number) => revealFrames?.[i] === undefined
+    ? enter
+    : interpolate(frame, [revealFrames[i], revealFrames[i] + enterDuration], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
 
   // Layout constants
   const padding = width * 0.05;
@@ -138,25 +145,32 @@ export const CompareSlide: React.FC<CompareSlideProps> = ({
     componentName: 'CompareSlide',
   });
 
-  const leftX = interpolate(enter, [0, 1], [-50, 0]);
-  const rightX = interpolate(enter, [0, 1], [50, 0]);
+  const leftX = interpolate(sideEnter(0), [0, 1], [-50, 0]);
+  const rightX = interpolate(sideEnter(1), [0, 1], [50, 0]);
 
   const renderSide = (
     side: typeof left,
     x: number,
-    opacity: number
+    opacity: number,
+    index: number,
   ) => (
     <div
+      data-guard-item={index === 0 ? 'left column' : 'right column'}
+      data-guard-moving={opacity < 0.99 ? '' : undefined}
       style={{
         flex: 1,
         padding: width * 0.04,
         opacity,
         transform: `translateX(${x}px)`,
+        // Centre short columns vertically instead of leaving the lower half empty.
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
       }}
     >
       <div
         style={{
-          fontSize: height * 0.045,
+          fontSize: height * 0.045 * ts,
           fontWeight: 'bold',
           color: accent,
           marginBottom: height * 0.02,
@@ -168,7 +182,7 @@ export const CompareSlide: React.FC<CompareSlideProps> = ({
       {side.sections.map((section, i) => (
         <div key={i} style={{ marginBottom: height * 0.02 }}>
           {section.sub && (
-            <div style={{ fontSize: height * 0.03, color: COLOR.onNightMuted, marginBottom: 8 }}>
+            <div style={{ fontSize: height * 0.03 * ts, color: COLOR.onNightMuted, marginBottom: 8 }}>
               {section.sub}
             </div>
           )}
@@ -176,7 +190,7 @@ export const CompareSlide: React.FC<CompareSlideProps> = ({
             <div
               key={j}
               style={{
-                fontSize: height * 0.028,
+                fontSize: height * 0.028 * ts,
                 color: COLOR.onNight,
                 marginBottom: 6,
                 paddingLeft: 16,
@@ -210,7 +224,7 @@ export const CompareSlide: React.FC<CompareSlideProps> = ({
       {title && (
         <div
           style={{
-            fontSize: height * 0.05,
+            fontSize: height * 0.05 * ts,
             fontWeight: 'bold',
             color: COLOR.onNight,
             textAlign: 'center',
@@ -223,16 +237,16 @@ export const CompareSlide: React.FC<CompareSlideProps> = ({
       )}
 
       <div style={{ display: 'flex', flex: 1, gap: width * 0.03 }}>
-        {renderSide(left, leftX, enter)}
+        {renderSide(left, leftX, sideEnter(0), 0)}
         <div
           style={{
             width: 2,
             backgroundColor: accent,
-            opacity: 0.5 * enter,
+            opacity: 0.5 * Math.max(sideEnter(0), sideEnter(1)),
             margin: `${height * 0.05}px 0`,
           }}
         />
-        {renderSide(right, rightX, enter)}
+        {renderSide(right, rightX, sideEnter(1), 1)}
       </div>
 
       {/* Validation status (debug only) */}

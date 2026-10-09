@@ -2,6 +2,7 @@ import React, { useMemo } from 'react';
 import { useCurrentFrame, useVideoConfig, interpolate, spring } from 'remotion';
 import { useElementTracker, TrackedElement } from '../validation/tracker';
 import { TimingProps } from '../validation/timing';
+import { useRevealFrames, useTextScale } from '../directed/reveal';
 import { FONT, COLOR, RADIUS, alpha } from '../theme/tokens';
 
 interface SpectrumMarker {
@@ -42,6 +43,20 @@ interface SpectrumSlideProps extends TimingProps {
  * and slide smoothly between positions. This is exactly what Remotion's
  * animation model was built for — PIL can't do this elegantly.
  */
+/** Label row per marker: markers closer than `minGap` on the axis alternate rows so their labels don't collide. */
+export function spectrumLabelRows(positions: number[], minGap = 0.16): number[] {
+  const order = positions.map((at, i) => ({at, i})).sort((a, b) => a.at - b.at);
+  const rows = new Array<number>(positions.length).fill(0);
+  const lastInRow: number[] = [];
+  for (const {at, i} of order) {
+    let row = 0;
+    while (lastInRow[row] !== undefined && at - lastInRow[row] < minGap) row++;
+    rows[i] = row;
+    lastInRow[row] = at;
+  }
+  return rows;
+}
+
 export const SpectrumSlide: React.FC<SpectrumSlideProps> = ({
   axis,
   markers,
@@ -54,6 +69,9 @@ export const SpectrumSlide: React.FC<SpectrumSlideProps> = ({
 }) => {
   const frame = useCurrentFrame();
   const { width, height, fps, durationInFrames } = useVideoConfig();
+  const revealFrames = useRevealFrames();
+  const ts = useTextScale();
+  const labelRows = spectrumLabelRows(markers.map(m => m.at));
   // TimingProps (optional, defaults unchanged): enterDuration stretches each
   // marker's drop spring to N frames; exitDuration fades the slide out at the end.
   const exitOpacity = exitDuration && exitDuration > 0
@@ -114,7 +132,7 @@ export const SpectrumSlide: React.FC<SpectrumSlideProps> = ({
       {title && (
         <div style={{
           position: 'absolute', top: height * 0.08, left: 0, right: 0,
-          textAlign: 'center', fontSize: height * 0.045, fontWeight: 'bold',
+          textAlign: 'center', fontSize: height * 0.045 * ts, fontWeight: 'bold',
           color: COLOR.onNight,
           opacity: interpolate(frame, [0, 15], [0, 1], { extrapolateRight: 'clamp' }),
         }}>
@@ -131,27 +149,21 @@ export const SpectrumSlide: React.FC<SpectrumSlideProps> = ({
         opacity: interpolate(frame, [0, 20], [0, 1], { extrapolateRight: 'clamp' }),
       }} />
 
-      {/* Axis labels */}
-      <div style={{
-        position: 'absolute', left: axisLeft - 100, top: axisY + 20,
-        width: 200, textAlign: 'center',
-        fontSize: height * 0.032, fontWeight: 'bold', color: COLOR.onNightMuted,
-        opacity: interpolate(frame, [10, 25], [0, 1], { extrapolateRight: 'clamp' }),
-      }}>
-        {axis[0]}
-      </div>
-      <div style={{
-        position: 'absolute', left: axisRight - 100, top: axisY + 20,
-        width: 200, textAlign: 'center',
-        fontSize: height * 0.032, fontWeight: 'bold', color: COLOR.onNightMuted,
-        opacity: interpolate(frame, [10, 25], [0, 1], { extrapolateRight: 'clamp' }),
-      }}>
-        {axis[1]}
-      </div>
+      {/* Axis end labels sit ABOVE the axis, centred on each end; marker labels go below, so they never meet. */}
+      {[axis[0], axis[1]].map((label, end) => (
+        <div key={end} data-guard-item={`axis ${end ? 'right' : 'left'}`} style={{
+          position: 'absolute', left: end ? axisRight : axisLeft, bottom: height - axisY + 18,
+          transform: 'translateX(-50%)', whiteSpace: 'nowrap',
+          fontSize: height * 0.032 * ts, fontWeight: 'bold', color: COLOR.onNightMuted,
+          opacity: interpolate(frame, [10, 25], [0, 1], { extrapolateRight: 'clamp' }),
+        }}>
+          {label}
+        </div>
+      ))}
 
       {/* Markers */}
       {markers.map((marker, i) => {
-        const dropFrame = i * stagger;
+        const dropFrame = revealFrames?.[i] ?? i * stagger;
         if (frame < dropFrame) return null;
 
         // Drop animation (spring from above)
@@ -184,12 +196,9 @@ export const SpectrumSlide: React.FC<SpectrumSlideProps> = ({
 
         const x = getMarkerX(currentAt);
         const color = colorToString(marker.color ?? DEFAULT_MARKER_COLORS[i % DEFAULT_MARKER_COLORS.length]);
-        // Axis end labels sit just below the axis at 0 and 1; a marker within
-        // 10% of an end puts its label above the dot instead so they don't collide.
-        const nearEnd = currentAt < 0.1 || currentAt > 0.9;
 
         return (
-          <div key={i} style={{
+          <div key={i} data-guard-moving={dropProgress < 0.99 ? '' : undefined} style={{
             position: 'absolute',
             left: x - 12,
             top: axisY - 12 + dropY,
@@ -204,11 +213,10 @@ export const SpectrumSlide: React.FC<SpectrumSlideProps> = ({
               boxShadow: `0 0 15px ${color}`,
             }} />
             {/* Label */}
-            <div style={{
-              position: 'absolute', left: -40,
-              ...(nearEnd ? { bottom: 32 } : { top: 30 }),
-              width: 104, textAlign: 'center',
-              fontSize: height * 0.026, fontWeight: 'bold',
+            <div data-guard-item={`marker ${i + 1}`} style={{
+              position: 'absolute', left: 12, top: 30 + labelRows[i] * height * 0.026 * ts * 1.5,
+              transform: 'translateX(-50%)', textAlign: 'center',
+              fontSize: height * 0.026 * ts, fontWeight: 'bold',
               color: COLOR.onNight,
               textShadow: `1px 1px 4px ${alpha(COLOR.night, 0.8)}`,
               whiteSpace: 'nowrap',

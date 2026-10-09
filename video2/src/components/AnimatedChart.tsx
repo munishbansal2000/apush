@@ -3,6 +3,7 @@ import { useCurrentFrame, useVideoConfig, interpolate } from 'remotion';
 import { useElementTracker, TrackedElement } from '../validation/tracker';
 import { TimingProps, DEFAULT_TIMING, getAnimationProgress } from '../validation/timing';
 import { FONT, COLOR, RADIUS } from '../theme/tokens';
+import { useRevealFrames, useTextScale } from '../directed/reveal';
 
 interface ChartBar {
   label: string;
@@ -51,6 +52,10 @@ export const AnimatedChart: React.FC<AnimatedChartProps> = ({
 }) => {
   const frame = useCurrentFrame();
   const { width, height, durationInFrames } = useVideoConfig();
+  const revealFrames = useRevealFrames();
+  const ts = useTextScale();
+  // Spoken cue per bar/point when directed; otherwise the fixed stagger.
+  const appearAt = (i: number) => revealFrames?.[i] ?? i * stagger;
 
   const { enter, exit } = getAnimationProgress(frame, durationInFrames, enterDuration, exitDuration);
 
@@ -80,7 +85,7 @@ export const AnimatedChart: React.FC<AnimatedChartProps> = ({
     if (title) {
       els.push({
         id: 'title', type: 'text', content: title,
-        fontSize: height * 0.04, fontWeight: 'bold',
+        fontSize: height * 0.04 * ts, fontWeight: 'bold',
         x: width * 0.05, y: height * 0.05,
         width: width * 0.9, height: height * 0.06,
       });
@@ -88,7 +93,7 @@ export const AnimatedChart: React.FC<AnimatedChartProps> = ({
     bars.forEach((bar, i) => {
       els.push({
         id: `bar-label-${i}`, type: 'text', content: bar.label,
-        fontSize: height * 0.024,
+        fontSize: height * 0.024 * ts,
         x: chartLeft + (i / bars.length) * chartWidth,
         y: chartBottom + 8,
         width: chartWidth / bars.length, height: 30,
@@ -118,7 +123,7 @@ export const AnimatedChart: React.FC<AnimatedChartProps> = ({
         {title && (
           <div style={{
             position: 'absolute', top: height * 0.05, left: 0, right: 0,
-            textAlign: 'center', fontSize: height * 0.04, fontWeight: 'bold',
+            textAlign: 'center', fontSize: height * 0.04 * ts, fontWeight: 'bold',
             color: COLOR.onNight,
           }}>{title}</div>
         )}
@@ -135,7 +140,7 @@ export const AnimatedChart: React.FC<AnimatedChartProps> = ({
 
         {/* Bars */}
         {bars.map((bar, i) => {
-          const appearFrame = i * stagger;
+          const appearFrame = appearAt(i);
           if (frame < appearFrame) return null;
 
           const barHeight = (bar.value / max) * chartHeight;
@@ -163,22 +168,22 @@ export const AnimatedChart: React.FC<AnimatedChartProps> = ({
                 boxShadow: `0 0 15px ${color}44`,
               }} />
               {/* Value label */}
-              <div style={{
+              <div data-guard-item={`value ${i + 1}`} style={{
                 position: 'absolute',
                 left: x - 20, top: chartBottom - currentHeight - 30,
                 width: barWidth + 40, textAlign: 'center',
-                fontSize: height * 0.026, fontWeight: 'bold',
+                fontSize: height * 0.026 * ts, fontWeight: 'bold',
                 color: COLOR.onNight,
                 opacity: growProgress,
               }}>
                 {bar.display ?? String(bar.value)}
               </div>
               {/* Category label */}
-              <div style={{
+              <div data-guard-item={`label ${i + 1}`} style={{
                 position: 'absolute',
                 left: x - 30, top: chartBottom + 10,
                 width: barWidth + 60, textAlign: 'center',
-                fontSize: height * 0.024, color: COLOR.onNightMuted,
+                fontSize: height * 0.024 * ts, color: COLOR.onNightMuted,
                 opacity: growProgress,
               }}>
                 {bar.label}
@@ -200,7 +205,7 @@ export const AnimatedChart: React.FC<AnimatedChartProps> = ({
   }));
 
   const pathD = points.map((p, i) => `${i === 0 ? 'M' : 'L'} ${p.x} ${p.y}`).join(' ');
-  const drawProgress = interpolate(frame, [0, bars.length * stagger], [0, 1], {
+  const drawProgress = interpolate(frame, [0, Math.max(1, appearAt(bars.length - 1) + stagger)], [0, 1], {
     extrapolateRight: 'clamp',
   });
 
@@ -214,7 +219,7 @@ export const AnimatedChart: React.FC<AnimatedChartProps> = ({
       {title && (
         <div style={{
           position: 'absolute', top: height * 0.05, left: 0, right: 0,
-          textAlign: 'center', fontSize: height * 0.04, fontWeight: 'bold',
+          textAlign: 'center', fontSize: height * 0.04 * ts, fontWeight: 'bold',
           color: COLOR.onNight,
         }}>{title}</div>
       )}
@@ -242,17 +247,17 @@ export const AnimatedChart: React.FC<AnimatedChartProps> = ({
         />
         {/* Points */}
         {points.map((p, i) => {
-          const appearFrame = i * stagger;
+          const appearFrame = appearAt(i);
           if (frame < appearFrame) return null;
           return (
             <g key={i}>
               <circle cx={p.x} cy={p.y} r={8} fill={accent} stroke={COLOR.onNight} strokeWidth={3} />
               <text x={p.x} y={p.y - 18} textAnchor="middle"
-                fill={COLOR.onNight} fontSize={height * 0.026} fontWeight="bold">
+                fill={COLOR.onNight} fontSize={height * 0.026 * ts} fontWeight="bold">
                 {p.value}
               </text>
               <text x={p.x} y={chartBottom + 25} textAnchor="middle"
-                fill={COLOR.onNightMuted} fontSize={height * 0.024}>
+                fill={COLOR.onNightMuted} fontSize={height * 0.024 * ts}>
                 {p.label}
               </text>
             </g>

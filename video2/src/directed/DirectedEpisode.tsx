@@ -1,5 +1,14 @@
-import React from 'react';
-import {AbsoluteFill, Audio, OffthreadVideo, Sequence, interpolate, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
+/**
+ * DirectedEpisode: renders a validated scene plan in the kit frame (src/data/render-config.json rects):
+ *   - stage:      each scene renders at full composition size and is scaled into the stage rect
+ *   - boxTracker: the kit Episode Sheet, driven by the plan's spoken box cues
+ *   - head:       the kit HeadPair (speaker enlarged, audio-reactive from per-frame levels)
+ *   - captions:   the kit CaptionLine, word-timed from Vosk
+ * Every element sits in a guard <Track>, and <LayoutGuard> measures each rendered frame.
+ * Transitions: crossfade overlaps the incoming scene over the outgoing one; dip fades out and back in.
+ */
+import React, {useRef} from 'react';
+import {AbsoluteFill, Audio, interpolate, OffthreadVideo, Sequence, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
 import {TitleCard} from '../components/TitleCard';
 import {KenBurnsSlide} from '../components/KenBurnsSlide';
 import {QuoteSlide} from '../components/QuoteSlide';
@@ -10,27 +19,48 @@ import {PrimarySourceSpotlight} from '../components/PrimarySourceSpotlight';
 import {AnimatedChart} from '../components/AnimatedChart';
 import {SpectrumSlide} from '../components/SpectrumSlide';
 import {StaggerSlide} from '../components/StaggerSlide';
-import {TimelineRibbon} from '../components/TimelineRibbon';
+import {captionChunks} from '../kit/captions';
+import {BoxTracker, CaptionLine, Vignette} from '../kit/components';
+import {GUARD_WRAPPER, LayoutGuard, Track} from '../kit/guard';
+import type {RenderConfig} from '../kit/layout';
+import {HeadPair} from '../kit/overlays';
+import type {TimelineTurn, WordTimesFile} from '../kit/types';
+import {RevealProvider} from './reveal';
+import renderConfigJson from '../data/render-config.json';
 
-export interface DirectedTurn { id: string; kind: 'speech' | 'pause'; text?: string }
-export interface DirectedTiming { starts: number[]; durations: number[]; totalSec: number }
+const cfg = renderConfigJson as unknown as RenderConfig;
+
+export type DirectedComponent = 'title' | 'ken_burns' | 'quote' | 'compare' | 'causal_chain' | 'highlight' | 'primary_source' | 'creative_clip' | 'chart' | 'spectrum' | 'stagger';
+export interface DirectedTurn {id: string; kind: 'speech' | 'pause'; speaker?: string; text?: string}
+export interface DirectedTiming {starts: number[]; durations: number[]; totalSec: number}
 export interface DirectedScene {
   id: string;
-  component: 'title' | 'ken_burns' | 'quote' | 'compare' | 'causal_chain' | 'highlight' | 'primary_source' | 'creative_clip' | 'chart' | 'spectrum' | 'stagger';
+  component: DirectedComponent;
   props: Record<string, unknown>;
   startSec: number;
   endSec: number;
   transition?: 'cut' | 'crossfade' | 'dip';
-  roadmapIndex?: number;
+  /** Absolute seconds each revealable item appears (from the plan's spoken cues). */
+  revealSec?: number[];
 }
+export interface DirectedBox {label: string; introSec: number; checkSec: number; startSec: number; endSec: number}
 export interface DirectedProps extends Record<string, unknown> {
   episode: string;
-  plan: {title: string; roadmap?: string[]; scenes: DirectedScene[]};
+  plan: {title: string; boxes?: DirectedBox[]; scenes: DirectedScene[]};
   turns: DirectedTurn[];
   timing: DirectedTiming;
+  /** Vosk word times per turn id (seconds from the turn's start). */
+  words?: Record<string, {w: string; s: number; e: number}[]>;
+  /** Per-turn loudness per frame (0..1) for the audio-reactive heads. */
+  levels?: Record<string, number[]>;
 }
 
+/** Frames of overlap for a crossfade, and of fade-out + fade-in for a dip. */
+export const CROSSFADE_FRAMES = 12;
+export const DIP_FRAMES = 9;
+
 const SceneBody: React.FC<{scene: DirectedScene}> = ({scene}) => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any -- props were validated by the pipeline gate
   const p = scene.props as any;
   switch (scene.component) {
     case 'title': return <TitleCard title={p.title ?? ''} kicker={p.kicker} subline={p.subline} />;
@@ -55,40 +85,113 @@ const SceneBody: React.FC<{scene: DirectedScene}> = ({scene}) => {
   }
 };
 
-const SceneFrame: React.FC<{scene: DirectedScene; roadmap?: string[]}> = ({scene, roadmap}) => {
-  const frame = useCurrentFrame();
-  const {durationInFrames} = useVideoConfig();
-  const fade = scene.transition === 'crossfade' ? 12 : scene.transition === 'dip' ? 18 : 0;
-  const opacity = fade
-    ? Math.min(
-        interpolate(frame, [0, fade], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'}),
-        interpolate(frame, [durationInFrames - fade, durationInFrames - 1], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'}),
-      )
-    : 1;
+/** Frame window of each scene's Sequence: a crossfade starts early so the incoming scene can blend over the outgoing one. */
+export function sceneWindows(scenes: DirectedScene[], fps: number) {
+  return scenes.map((scene, i) => {
+    const start = Math.round(scene.startSec * fps);
+    const end = Math.round(scene.endSec * fps);
+    const lead = i > 0 && scene.transition === 'crossfade' ? CROSSFADE_FRAMES : 0;
+    const from = Math.max(0, start - lead);
+    return {from, durationInFrames: Math.max(1, end - from), lead: start - from, fadeOut: scenes[i + 1]?.transition === 'dip' ? DIP_FRAMES : 0};
+  });
+}
+
+/** Opacity of a scene at local frame f: crossfade in over `lead`, dip in after a dip, dip out before a dip. */
+export function sceneOpacity(scene: DirectedScene, index: number, f: number, window: ReturnType<typeof sceneWindows>[number]): number {
+  const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
+  let o = 1;
+  if (window.lead > 0) o = Math.min(o, interpolate(f, [0, window.lead], [0, 1], clamp));
+  if (scene.transition === 'dip' || index === 0) o = Math.min(o, interpolate(f, [0, DIP_FRAMES], [0, 1], clamp));
+  if (window.fadeOut > 0) o = Math.min(o, interpolate(f, [window.durationInFrames - window.fadeOut, window.durationInFrames], [1, 0], clamp));
+  return o;
+}
+
+const ScaledScene: React.FC<{scene: DirectedScene; index: number; window: ReturnType<typeof sceneWindows>[number]}> = ({scene, index, window}) => {
+  const f = useCurrentFrame();
+  const {width, height, fps} = useVideoConfig();
+  const [x0, y0, x1, y1] = cfg.stage;
+  const stageW = (x1 - x0) * width;
+  const stageH = (y1 - y0) * height;
+  const scale = Math.min(stageW / width, stageH / height);
+  const sceneStartSec = window.from / fps;
+  const opacity = sceneOpacity(scene, index, f, window);
   return (
-    <AbsoluteFill style={{opacity, background: '#0b1020'}}>
-      <SceneBody scene={scene} />
-      {roadmap && roadmap.length > 0 && scene.roadmapIndex !== undefined && (
-        <TimelineRibbon boxes={roadmap} checkedCount={scene.roadmapIndex} />
-      )}
-    </AbsoluteFill>
+    // While fading (crossfade/dip) the two scenes overlap on purpose; the guard skips [data-guard-moving].
+    <div {...GUARD_WRAPPER} data-guard-moving={opacity < 1 ? '' : undefined} style={{position: 'absolute', left: x0 * width + (stageW - width * scale) / 2, top: y0 * height + (stageH - height * scale) / 2,
+      width: width * scale, height: height * scale, opacity}}>
+      <div style={{width, height, transform: `scale(${scale})`, transformOrigin: 'top left', borderRadius: 16 / scale, overflow: 'hidden', background: '#0b1020'}}>
+        <RevealProvider revealFrames={scene.revealSec?.map(sec => Math.round((sec - sceneStartSec) * fps))} textScale={1 / scale}>
+          <SceneBody scene={scene} />
+        </RevealProvider>
+      </div>
+    </div>
   );
 };
 
-export const DirectedEpisode: React.FC<DirectedProps> = ({episode, plan, turns, timing}) => {
+/** Kit timeline view of the pipeline's turns (captions use it). */
+function kitTimeline(turns: DirectedTurn[], timing: DirectedTiming): TimelineTurn[] {
+  return turns.map((turn, idx) => ({
+    turn: turn.kind === 'speech'
+      ? {id: turn.id, idx, kind: 'speech', speaker: turn.speaker ?? 'narrator', text: (turn.text ?? '').replace(/\[[^\]]*\]/g, '').replace(/\s+/g, ' ').trim(), tags: []}
+      : {id: turn.id, idx, kind: 'pause', pauseSec: timing.durations[idx], line: 0},
+    start: timing.starts[idx],
+    dur: timing.durations[idx],
+  })) as unknown as TimelineTurn[];
+}
+
+export const DirectedEpisode: React.FC<DirectedProps> = ({episode, plan, turns, timing, words = {}, levels = {}}) => {
+  const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
+  const t = frame / fps;
+  const rootRef = useRef<HTMLDivElement>(null);
+  const windows = sceneWindows(plan.scenes, fps);
+  const timeline = React.useMemo(() => kitTimeline(turns, timing), [turns, timing]);
+  const chunks = React.useMemo(() => captionChunks(timeline, words as WordTimesFile, cfg.captions.maxChars), [timeline, words]);
+  const caption = chunks.find(c => t >= c.start && t < c.end) ?? null;
+  const speaking = turns.findIndex((turn, i) => turn.kind === 'speech' && t >= timing.starts[i] && t < timing.starts[i] + timing.durations[i]);
+  const speakers = cfg.speakers as Record<string, {name: string; color: string; toon: string}>;
+  const boxes = plan.boxes ?? [];
+  const currentBox = boxes.findIndex(b => t >= b.startSec && t < b.endSec);
   return (
-    <AbsoluteFill style={{background: '#0b1020'}}>
-      {plan.scenes.map(scene => {
-        const from = Math.round(scene.startSec * fps);
-        const durationInFrames = Math.max(1, Math.ceil((scene.endSec - scene.startSec) * fps));
-        return <Sequence key={scene.id} name={scene.id} from={from} durationInFrames={durationInFrames}><SceneFrame scene={scene} roadmap={plan.roadmap} /></Sequence>;
-      })}
+    <AbsoluteFill ref={rootRef} data-kit-root style={{background: '#1a1512'}}>
+      <Vignette />
+      <Track id="stage" role="stage">
+        {plan.scenes.map((scene, i) => (
+          <Sequence key={scene.id} name={scene.id} from={windows[i].from} durationInFrames={windows[i].durationInFrames} layout="none">
+            <ScaledScene scene={scene} index={i} window={windows[i]} />
+          </Sequence>
+        ))}
+      </Track>
       {turns.map((turn, index) => turn.kind === 'speech' ? (
-        <Sequence key={turn.id} from={Math.round(timing.starts[index] * fps)} durationInFrames={Math.max(1, Math.ceil(timing.durations[index] * fps))}>
+        <Sequence key={turn.id} from={Math.round(timing.starts[index] * fps)} durationInFrames={Math.max(1, Math.ceil(timing.durations[index] * fps))} layout="none">
           <Audio src={staticFile(`audio/${episode}/${turn.id}.mp3`)} />
         </Sequence>
       ) : null)}
+      {boxes.length > 0 && (
+        <Track id="chrome:box-tracker" role="chrome">
+          <BoxTracker cfg={cfg} state={{
+            boxes: boxes.map(b => b.label),
+            checkedAt: boxes.map(b => b.checkSec),
+            introAt: boxes.map(b => b.introSec),
+            current: currentBox >= 0 ? {box: currentBox + 1, progress: (t - boxes[currentBox].startSec) / (boxes[currentBox].endSec - boxes[currentBox].startSec), since: boxes[currentBox].startSec} : null,
+            t,
+          }} />
+        </Track>
+      )}
+      <Track id="chrome:head" role="chrome" allowUnsafe>
+        <HeadPair
+          heads={['maya', 'marcus'].filter(id => speakers[id]).map(id => ({id, name: speakers[id].name, color: speakers[id].color, src: staticFile(speakers[id].toon)}))}
+          speaker={speaking >= 0 && speakers[turns[speaking].speaker ?? ''] ? turns[speaking].speaker! : null}
+          level={speaking >= 0 ? levels[turns[speaking].id]?.[frame - Math.round(timing.starts[speaking] * fps)] ?? 0 : 0}
+          cfg={cfg}
+        />
+      </Track>
+      {caption && (
+        <Track id="chrome:captions" role="chrome">
+          <CaptionLine words={caption.words} t={t} color={speakers[caption.speaker]?.color ?? '#fff'} cfg={cfg} />
+        </Track>
+      )}
+      <LayoutGuard cfg={cfg} rootRef={rootRef} />
     </AbsoluteFill>
   );
 };

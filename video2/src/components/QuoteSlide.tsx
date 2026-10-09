@@ -1,6 +1,7 @@
 import React from 'react';
 import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion';
 import { COLOR, FONT, TYPE } from '../theme/tokens';
+import { useTextScale } from '../directed/reveal';
 
 interface QuoteSlideProps {
   quote: string;
@@ -20,6 +21,7 @@ export const QuoteSlide: React.FC<QuoteSlideProps> = ({
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
+  const ts = useTextScale();
 
   // intentional: damping 200 = critically damped fade-in, no overshoot
   const quoteIn = spring({ frame, fps, config: { damping: 200 } });
@@ -76,7 +78,7 @@ export const QuoteSlide: React.FC<QuoteSlideProps> = ({
           style={{
             marginTop: 30,
             fontFamily: FONT.text,
-            fontSize: TYPE.h3,
+            fontSize: TYPE.h3 * ts,
             color: COLOR.onNightMuted,
             fontStyle: 'italic',
             opacity: bylineOpacity,

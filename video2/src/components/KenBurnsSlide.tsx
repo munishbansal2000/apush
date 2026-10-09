@@ -1,6 +1,7 @@
 import React from 'react';
 import { useCurrentFrame, useVideoConfig, interpolate, Img, staticFile } from 'remotion';
 import { FONT, COLOR, alpha } from '../theme/tokens';
+import { useTextScale } from '../directed/reveal';
 
 /** URLs, data URIs and already-resolved paths pass through; bare names go through staticFile. */
 const resolveSrc = (src: string) =>
@@ -24,6 +25,7 @@ export const KenBurnsSlide: React.FC<KenBurnsSlideProps> = ({
 }) => {
   const frame = useCurrentFrame();
   const { width, height, durationInFrames } = useVideoConfig();
+  const ts = useTextScale();
 
   // Interpolate between stops
   const progress = frame / durationInFrames;
@@ -86,7 +88,7 @@ export const KenBurnsSlide: React.FC<KenBurnsSlideProps> = ({
             position: 'absolute',
             top: height * 0.08,
             left: width * 0.06,
-            fontSize: height * 0.05,
+            fontSize: height * 0.05 * ts,
             fontWeight: 'bold',
             color: COLOR.onNight,
             fontFamily: FONT.text,
@@ -106,7 +108,7 @@ export const KenBurnsSlide: React.FC<KenBurnsSlideProps> = ({
             bottom: height * 0.06,
             left: width * 0.06,
             right: width * 0.06,
-            fontSize: height * 0.032,
+            fontSize: height * 0.032 * ts,
             color: COLOR.onNight,
             fontFamily: FONT.text,
             textShadow: `1px 1px 4px ${alpha(COLOR.night, 0.9)}`,
