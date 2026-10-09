@@ -25,8 +25,10 @@ interface CommonsApiResponse {
   query?: { pages?: Record<string, { imageinfo?: CommonsImageInfo[] }> };
 }
 interface LockEntry {
-  source_url: string; sha256: string; width: number; height: number;
-  license: string; fetchedAt: string;
+  source_url: string; sha256?: string; width?: number; height?: number;
+  license?: string; fetchedAt?: string;
+  /** Set when the last fetch attempt failed; cleared on the next success. */
+  lastError?: string; failedAt?: string;
 }
 
 const strip = (html = '') => html.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
@@ -198,6 +200,15 @@ function loadManifest(): Record<string, ManifestEntry> {
     const entries = JSON.parse(readFileSync(fp, 'utf8')) as Record<string, ManifestEntry>;
     Object.assign(manifest, entries);
   }
+  // Unit shared pools: data/_shared/unitN.json — always loaded (cross-lesson assets).
+  // (data/_shared/images.json itself loads via the per-lesson loop above.)
+  const sharedDir = join(dataDir, '_shared');
+  if (existsSync(sharedDir)) {
+    for (const f of readdirSync(sharedDir).filter(f => /^unit\d+\.json$/.test(f)).sort()) {
+      const entries = JSON.parse(readFileSync(join(sharedDir, f), 'utf8')) as Record<string, ManifestEntry>;
+      Object.assign(manifest, entries);
+    }
+  }
   // Fallback to legacy monolithic file
   const legacy = join(dataDir, 'images.json');
   if (!Object.keys(manifest).length && existsSync(legacy)) {
@@ -230,6 +241,65 @@ if (only) {
 const targets = Object.entries(manifest).filter(([path]) => selected.has(path));
 if (only && !manifest[only]) throw new Error(`${only} is not in images.json`);
 
+const dryRun = flag('dry-run') || flag('check');
+
+/** True when the on-disk file matches the locked checksum for this source_url. */
+const isCurrent = (path: string, entry: ManifestEntry): boolean => {
+  const out = join(PUBLIC, path);
+  const old = lock[path];
+  return !flag('force') && !!old?.sha256 && existsSync(out) &&
+    old.source_url === entry.source_url && sha(out) === old.sha256;
+};
+
+/** Record a fetch failure in the lock so the next run reports it. Never throws. */
+const recordFailure = (path: string, entry: ManifestEntry, message: string, license?: string) => {
+  const old = lock[path];
+  lock[path] = {
+    source_url: entry.source_url ?? old?.source_url ?? '',
+    sha256: old?.sha256, width: old?.width, height: old?.height,
+    license: old?.license ?? license ?? 'unknown', fetchedAt: old?.fetchedAt,
+    lastError: message, failedAt: new Date().toISOString(),
+  };
+  saveLock();
+};
+
+type PlanStatus = 'current' | 'failed' | 'fetch' | 'broken';
+const plan: { path: string; entry: ManifestEntry; status: PlanStatus }[] = targets.map(([path, entry]) => {
+  if (!entry.source_url) return { path, entry, status: 'broken' as const };
+  if (isCurrent(path, entry)) return { path, entry, status: 'current' as const };
+  if (lock[path]?.lastError) return { path, entry, status: 'failed' as const };
+  return { path, entry, status: 'fetch' as const };
+});
+const nCurrent = plan.filter(p => p.status === 'current').length;
+const nFailed = plan.filter(p => p.status === 'failed').length;
+const nFetch = plan.filter(p => p.status === 'fetch').length;
+const nBroken = plan.filter(p => p.status === 'broken').length;
+console.log(`Plan: ${nFetch} to fetch, ${nCurrent} already current, ${nFailed} failed previously${nBroken ? `, ${nBroken} broken (no source_url)` : ''} (of ${targets.length} selected)`);
+
+if (dryRun) {
+  // Planning only: resolve each target's download URL via the Commons API
+  // (metadata queries, no binaries), print what would happen, change nothing.
+  for (const item of plan) {
+    if (item.status === 'current') {
+      console.log(`  = ${item.path} (current)`);
+      continue;
+    }
+    if (item.status === 'broken') {
+      console.log(`  ! ${item.path}: no source_url — cannot fetch`);
+      continue;
+    }
+    if (item.status === 'failed') {
+      console.log(`  ~ ${item.path}: failed ${lock[item.path].failedAt} with "${lock[item.path].lastError}" — retrying`);
+    }
+    const resolved = await candidates(item.entry);
+    console.log(`  -> ${item.path}`);
+    console.log(`     would fetch: ${resolved.urls[0] ?? '(no resolvable URL)'}`);
+    console.log(`     license: ${resolved.license}${resolved.urls.length > 1 ? ` (+${resolved.urls.length - 1} fallbacks)` : ''}`);
+  }
+  console.log('\nDry run complete: no files downloaded, lock file untouched.');
+  process.exit(nBroken ? 1 : 0);
+}
+
 let fetched = 0;
 let skipped = 0;
 const errors: string[] = [];
@@ -237,14 +307,18 @@ const warnings: string[] = [];
 
 for (const [path, entry] of targets) {
   if (!entry.source_url) {
-    errors.push(`${path}: no source_url`);
+    const msg = 'no source_url';
+    errors.push(`${path}: ${msg}`);
+    recordFailure(path, entry, msg);
     continue;
   }
   const out = join(PUBLIC, path);
-  const old = lock[path];
-  if (!flag('force') && existsSync(out) && old?.source_url === entry.source_url && sha(out) === old.sha256) {
+  if (isCurrent(path, entry)) {
     skipped++;
     continue;
+  }
+  if (lock[path]?.lastError) {
+    console.log(`  ~ ${path}: retrying after failure at ${lock[path].failedAt} ("${lock[path].lastError}")`);
   }
 
   console.log(`  -> ${path}`);
@@ -268,7 +342,9 @@ for (const [path, entry] of targets) {
     console.log(`    ... unusable ${host} response (${response?.status ?? 'network'} ${responseType(response)})`);
   }
   if (!isImageResponse(response)) {
-    errors.push(`${path}: all ${resolved.urls.length} sources failed (${[...new Set(resolved.urls.map(url => new URL(url).host))].join(', ')})`);
+    const msg = `all ${resolved.urls.length} sources failed (${[...new Set(resolved.urls.map(url => new URL(url).host))].join(', ')})`;
+    errors.push(`${path}: ${msg}`);
+    recordFailure(path, entry, msg, resolved.license);
     continue;
   }
 
@@ -292,7 +368,9 @@ for (const [path, entry] of targets) {
     saveLock();
     fetched++;
   } catch (error) {
-    errors.push(`${path}: downloaded file does not decode (${error instanceof Error ? error.message : String(error)})`);
+    const msg = `downloaded file does not decode (${error instanceof Error ? error.message : String(error)})`;
+    errors.push(`${path}: ${msg}`);
+    recordFailure(path, entry, msg, resolved.license);
   } finally {
     if (existsSync(temp)) unlinkSync(temp);
   }
@@ -301,7 +379,7 @@ for (const [path, entry] of targets) {
 
 for (const path of Object.keys(lock)) if (!manifest[path]) delete lock[path];
 saveLock();
-console.log(`\n${fetched} fetched, ${skipped} already current, ${errors.length} failed (of ${targets.length})`);
+console.log(`\n${fetched} fetched, ${skipped} already current, ${errors.length} failed (of ${targets.length}) — failures recorded in data/images.lock.json with lastError/failedAt`);
 for (const warning of warnings) console.log(`  ! ${warning}`);
 for (const error of errors) console.error(`  ERROR ${error}`);
 if (errors.length) process.exitCode = 1;
