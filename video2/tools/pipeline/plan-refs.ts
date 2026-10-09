@@ -1,4 +1,4 @@
-import type {DirectedPlan} from '../pipeline-core';
+import type {DirectedPlan, DirectedScene} from '../pipeline-core';
 
 /** Every public/ image path a plan references, with its scene. */
 export const planImageRefs = (plan: DirectedPlan): {sceneId: string; path: string}[] => plan.scenes.flatMap(scene => {
@@ -9,3 +9,10 @@ export const planImageRefs = (plan: DirectedPlan): {sceneId: string; path: strin
   }
   return refs.map(path => ({sceneId: scene.id, path}));
 });
+
+/** Every public/ file a single scene draws: images, stagger panel images, and generated clips. */
+export function sceneAssetRefs(scene: DirectedScene): string[] {
+  const refs = planImageRefs({version: 1, episode: '', title: '', scenes: [scene]}).map(ref => ref.path);
+  if (scene.component === 'creative_clip' && typeof scene.props?.clip === 'string') refs.push(scene.props.clip);
+  return refs;
+}

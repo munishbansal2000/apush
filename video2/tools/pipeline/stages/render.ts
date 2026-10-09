@@ -1,5 +1,5 @@
 import {execFileSync} from 'node:child_process';
-import {existsSync, mkdirSync, readFileSync, writeFileSync, rmSync, unlinkSync, readdirSync, renameSync} from 'node:fs';
+import {copyFileSync, existsSync, mkdirSync, readFileSync, writeFileSync, rmSync, unlinkSync, readdirSync, renameSync} from 'node:fs';
 import {join} from 'node:path';
 import {bundle} from '@remotion/bundler';
 import {renderMedia, renderStill, selectComposition} from '@remotion/renderer';
@@ -7,6 +7,7 @@ import {ROOT, ffprobeDuration} from '../../lib';
 import {atomicJson, normalizePlan, readJson, sha256, syncIssues, validateCanvas, type DirectedPlan, type PipelineTurn} from '../../pipeline-core';
 import {treeHash, type PipelineContext, type Timing} from '../context';
 import {planImageRefs} from '../plan-refs';
+import {segmentFingerprint, stillFileName, stillFingerprint, type RenderEnv} from '../render-cache';
 import {imageManifestPathFor, planPathFor} from './direct';
 
 interface LayoutIssue {frame: number; kind: string; id: string; other?: string; detail?: string}
@@ -82,6 +83,7 @@ export async function remotion(ctx: PipelineContext, turns: PipelineTurn[], timi
   // Includes the guard implementation/config as well as visual components, so
   // a guard change invalidates cached stills and segments and forces re-checking.
   const sourceHash = treeHash(join(ROOT, 'src'));
+  const env: RenderEnv = {sourceHash, fps: composition.fps, width: composition.width, height: composition.height};
   if (stage === 'render') {
     const output = join(ctx.outDir, `${episode}.mp4`);
     const segmentsDir = join(work, 'segments');
@@ -106,11 +108,7 @@ export async function remotion(ctx: PipelineContext, turns: PipelineTurn[], timi
         const file = join(audioDir, `${id}.mp3`);
         return [id, existsSync(file) ? sha256(readFileSync(file)) : 'pause'];
       });
-      const assets = ['image', 'clip'].map(key => String(scene.props[key] ?? '')).filter(Boolean).map(file => {
-        const path = join(ctx.publicDir, file);
-        return [file, existsSync(path) ? sha256(readFileSync(path)) : 'missing'];
-      });
-      const fingerprint = sha256(JSON.stringify({scene, from, to, audioRows, assets, sourceHash, fps: composition.fps, width: composition.width, height: composition.height}));
+      const fingerprint = sha256(JSON.stringify({visual: segmentFingerprint(plan, i, {from, to}, env, ctx.publicDir), audioRows}));
       const file = join(segmentsDir, `${String(i).padStart(4, '0')}-${scene.id}.mp4`);
       nextCache[scene.id] = {fingerprint, file};
       segmentFiles.push(file);
@@ -172,11 +170,14 @@ export async function remotion(ctx: PipelineContext, turns: PipelineTurn[], timi
     for (const sample of candidates) byFrame.set(Math.min(composition.durationInFrames - 1, Math.max(0, Math.round(sample.sec * composition.fps))), sample);
     return [...byFrame.entries()].map(([frame, sample]) => ({...sample, frame, scene, sceneIndex}));
   });
+  const stillFiles: string[] = [];
   for (let i = 0; i < samples.length; i++) {
-    const {scene, sceneIndex, sec, frame, label} = samples[i];
-    const output = join(stillDir, `${String(i).padStart(4, '0')}.png`);
-    const key = `${scene.id}:${label}:${frame}`;
-    const fingerprint = sha256(JSON.stringify({scene, sceneIndex, label, sec, frame, fps: composition.fps, sourceHash}));
+    const {scene, sceneIndex, frame, label} = samples[i];
+    const fingerprint = stillFingerprint(plan, sceneIndex, {label, frame}, env, ctx.publicDir);
+    // Named by content: a cache hit can never be a still rendered for a different scene or slot.
+    const key = stillFileName(fingerprint);
+    const output = join(stillDir, key);
+    stillFiles.push(output);
     const cached = cache[key];
     if (!force && existsSync(output) && cached?.fingerprint === fingerprint && Array.isArray(cached.issues)) {
       nextCache[key] = cached;
@@ -192,14 +193,16 @@ export async function remotion(ctx: PipelineContext, turns: PipelineTurn[], timi
     nextCache[key] = {fingerprint, issues: sceneIssues};
     contactLayoutIssues.push(...sceneIssues);
   }
-  for (const file of readdirSync(stillDir).filter(name => /^\d{4}\.png$/.test(name))) {
-    if (Number(file.slice(0, 4)) >= samples.length) unlinkSync(join(stillDir, file));
-  }
+  for (const file of readdirSync(stillDir)) if (!stillFiles.includes(join(stillDir, file))) rmSync(join(stillDir, file), {recursive: true, force: true});
+  // ffmpeg's tile filter reads a numbered sequence; stage the current stills in sheet order.
+  const sheetDir = join(work, 'sheet-frames');
+  rmSync(sheetDir, {recursive: true, force: true}); mkdirSync(sheetDir, {recursive: true});
+  stillFiles.forEach((file, i) => copyFileSync(file, join(sheetDir, `${String(i).padStart(4, '0')}.png`)));
   atomicJson(cachePath, nextCache);
   const layoutReportPath = join(ctx.outDir, `${episode}-layout.json`);
   atomicJson(layoutReportPath, {episode, checkedAt: new Date().toISOString(), issues: contactLayoutIssues});
   const sheet = join(ctx.outDir, `${episode}-contact.png`); rmSync(sheet, {force: true});
-  execFileSync('ffmpeg', ['-y', '-v', 'error', '-i', join(stillDir, '%04d.png'), '-vf', `tile=5x${Math.ceil(samples.length / 5)}:padding=4:color=black`, '-frames:v', '1', sheet]);
+  execFileSync('ffmpeg', ['-y', '-v', 'error', '-i', join(sheetDir, '%04d.png'), '-vf', `tile=5x${Math.ceil(samples.length / 5)}:padding=4:color=black`, '-frames:v', '1', sheet]);
   writeFileSync(sheet.replace(/\.png$/, '.txt'), samples.map((sample, i) => `${String(i).padStart(4, '0')} ${sample.scene.id}/${sample.label} frame=${sample.frame} sec=${sample.sec.toFixed(2)} ${sample.scene.component}`).join('\n') + '\n');
   console.log(`[contact] ${samples.length} transition/mid-scene stills across ${scenes.length} scenes -> ${sheet}`);
   const blocking = blockingLayoutIssues(contactLayoutIssues);

@@ -12,11 +12,11 @@ Status: `[ ]` open · `[~]` in progress · `[x]` fixed
   browser logs, but only `src/kit/guard.tsx` emits them and none of the 11 directed components use it.
   The gate always reports clean. Fix: wrap `SceneFrame` in `LayoutGuard`, or drop the claim from `PIPELINE.md`.
   — `src/directed/DirectedEpisode.tsx`, `tools/video-pipeline.ts:53`
-- [ ] **P2. Roadmap edits don't invalidate cached stills or segments.** Fingerprints hash `scene` but not
+- [x] **P2. Roadmap edits don't invalidate cached stills or segments.** Fingerprints hash `scene` but not
   `plan.roadmap`, so old TimelineRibbon labels are reused. — `tools/video-pipeline.ts:656`, `:722`
-- [ ] **P3. Stagger panel images missing from the segment fingerprint.** Only `props.image`/`props.clip` are hashed.
+- [x] **P3. Stagger panel images missing from the segment fingerprint.** Only `props.image`/`props.clip` are hashed.
   — `tools/video-pipeline.ts:652`
-- [ ] **P4. Contact stills are saved by position but cached by key.** Adding or removing a scene makes cache
+- [x] **P4. Contact stills are saved by position but cached by key.** Adding or removing a scene makes cache
   hits point at another scene's PNG. Fix: store the file path in the cache entry (as the render cache does).
   — `tools/video-pipeline.ts:720-729`
 - [x] **P5. Pronunciations are applied one run late, and never in prod.** `PRONUNCIATIONS` loads before the

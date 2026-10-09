@@ -116,3 +116,24 @@ Owner ran `npm run verify:render` on their Mac (Playwright headless shell via `R
 
 Not a bug: the yellow/black stagger panel is `public/maya-real.webp`, a dev placeholder (`public/PLACEHOLDERS.md`).
 
+## P2, P3, P4: render and contact caches
+
+Before (code evidence; this logic was inline, so the new tests can't run against it):
+- Segment key: `{scene, from, to, audioRows, assets, sourceHash, …}` where `assets` = `['image','clip']` props only.
+  No `plan.roadmap` (P2), no stagger `panels[].image` (P3).
+- Still key: `{scene, sceneIndex, label, sec, frame, fps, sourceHash}`, file `stills/<index>.png`. No roadmap (P2),
+  and the file is chosen by position while the cache is keyed by scene (P4).
+
+After: `tools/pipeline/render-cache.ts`. Keys include episode title, roadmap labels, the scene, both neighbours
+(transitions blend across cuts), and content hashes of every image/panel/clip each of them draws. Stills are stored as
+`stills/<fingerprint>.png` and copied into `sheet-frames/%04d.png` only for tiling.
+
+`tests/render-cache.test.ts` (4 pass): roadmap relabel changes both keys; rewriting a panel image file changes the
+segment key; a neighbour's transition change invalidates; after inserting a scene, the slot that used to hold the
+stagger never reuses its still, and no two stills share a file.
+
+**UNVERIFIED end-to-end:** the contact/render stages need a real episode (TTS audio + plan) and a browser. Covered by the
+owner's Windows run in Phase 7.
+
+Gate: typecheck 0, lint 0, tests pass.
+
