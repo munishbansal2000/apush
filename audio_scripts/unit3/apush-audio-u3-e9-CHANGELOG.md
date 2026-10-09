@@ -3,6 +3,18 @@
 Every version is kept as a separate file. Nothing is overwritten.
 This log records what changed between versions and why.
 
+## 2026-10-09 — review fixes (video2/out/review/scripts-e7-e9.md)
+- Stale line: "Eight seconds: what does he do?" -> "Ten seconds: what does he do?"
+- Jefferson "my real phrase, is 'a handmaid to agriculture'" -> "Manufacturing, as I see it, should serve agriculture: the servant, not the master." (likely misattribution; his documented "handmaid" line is about commerce, 1801; book line not available to check). Sources notes updated.
+- Added the 1790 compromise to Maya's musical line: "And the compromise was your dinner table, Mr. Jefferson: assumption passes, the capital goes to the Potomac."
+- Cut Marcus's "They didn't need a leak." denial (insider trading did happen); his tag [firm] -> [measured], Maya's [sheepish] -> [curious, inquisitive tone] since her question is no longer a wrong beat.
+- Funding trap rebuilt: Maya's error is now "the windfall came from assumption" (the soldiers point was already answered twice); Marcus corrects to funding.
+- "They flip under pressure" -> "Students flip them under pressure" (ambiguous).
+- "Congress said yes to tariffs. It said no to subsidies." -> "Congress raised some tariffs, and said no to subsidies."
+- Jefferson closer: cut "not by invasion, but by consolidation" antithesis and the "borrows/spends/grows without limit" triple -> "A government that reads its own limits away, one clause at a time."
+- Self-test A3: "Congress couldn't tax or raise troops" -> "couldn't tax directly or force the states to send troops".
+- Word count 2,034 -> 2,018; experienced runtime 2,018/180 + 60s = ~12.2 min; header updated; promise "About twelve and a half minutes" -> "About twelve minutes". Parse check: 6 pauses, all 10s. Gates PASS.
+
 ## v2 — `apush-audio-u3-e9-script-v2-DRAFT.md` (1,971 words, 12.2 min experienced)
 First full draft, written as v2 per the rebuild naming (no v1 exists for
 E9). Debate per the lesson map: Maya moderates; Marcus argues Hamilton's

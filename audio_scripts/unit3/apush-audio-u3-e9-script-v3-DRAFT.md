@@ -1,10 +1,10 @@
 # U3-E9 — Debate: Maya moderates, Marcus (Hamiltonian) vs Jefferson
-# Episode 26: Hamilton's Program. ~12.5 min experienced (2,034 words speech + 60s pauses)
+# Episode 26: Hamilton's Program. ~12.2 min experienced (2,018 words speech + 60s pauses)
 # Draft v3 (fleet repair of v2 — see CHANGELOG). Debate per the lesson map. CED 3.10.
 # Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Maya moderates; Marcus argues Hamilton's case as a 1790s advocate — his knowledge stops in the 1790s; Jefferson speaks in his own 1790s voice, measured, never caricature. Lines flagged "real words" are verbatim historical wording; the debate around them is dramatization. Strip this header, the read note, and all pause tags before TTS; convert pause tags to silence. Tagline dash: held breath — do not rush it.
 # Pronunciation: excise (ek-SIZE); yeoman (YOH-mun); manufactures (man-yoo-FAC-churz); elastic; speculator.
 
-Maya: [professional broadcast tone] Last time: "We, the people" beat "We, the states." The Constitution got sold and ratified. But what those words let the government do is another fight. The first great fight of the new republic was about money: who gets paid, who gets taxed — and whether the Constitution lets the government build a bank at all. Four boxes: Hamilton's funding and assumption, the Bank fight, tariffs and the whiskey tax, and the verdict: how this fight built America's first parties. Circle the ones you couldn't explain. About twelve and a half minutes. Arguing Hamilton's program: Marcus. Arguing the other side, in his own voice: Jefferson. Two rules. Some lines are their real words. I'll flag those. The rest is our dramatization.
+Maya: [professional broadcast tone] Last time: "We, the people" beat "We, the states." The Constitution got sold and ratified. But what those words let the government do is another fight. The first great fight of the new republic was about money: who gets paid, who gets taxed — and whether the Constitution lets the government build a bank at all. Four boxes: Hamilton's funding and assumption, the Bank fight, tariffs and the whiskey tax, and the verdict: how this fight built America's first parties. Circle the ones you couldn't explain. About twelve minutes. Arguing Hamilton's program: Marcus. Arguing the other side, in his own voice: Jefferson. Two rules. Some lines are their real words. I'll flag those. The rest is our dramatization.
 
 Maya: First clash: the debt. Marcus, the new government is broke. What's Hamilton's plan?
 
@@ -12,13 +12,13 @@ Marcus: In 1790, Treasury Secretary Alexander Hamilton sends Congress his Report
 
 Jefferson: [passionate] The logic is elegant, and the morality is rotten. Those certificates no longer sit in soldiers' hands. The men who fought sold them years ago, for a fraction of their worth, because no one believed this government would ever pay. Now Hamilton proposes to pay full value to the speculators who bought them up cheap. A speculator buys risky paper hoping it pays off. Hamilton's plan turns their gamble into a fortune, paid from the public purse.
 
-Maya: [sheepish] Wait, so the speculators knew Hamilton's plan was coming? Somebody at the Treasury talking out of turn?
+Maya: [curious, inquisitive tone] Wait, so the speculators knew Hamilton's plan was coming? Somebody at the Treasury talking out of turn?
 
-Marcus: [firm] They didn't need a leak. The certificates were changing hands at a fraction of their original value, because almost nobody believed the new government would ever pay. The suspicion that someone knew more is what made funding so bitter. Hamilton's promise turned their gamble into a fortune. That's Jefferson's objection, and it's a fair one.
+Marcus: [measured] The certificates were changing hands at a fraction of their original value, because almost nobody believed the new government would ever pay. The suspicion that someone knew more is what made funding so bitter. Hamilton's promise turned their gamble into a fortune. That's Jefferson's objection, and it's a fair one.
 
 Jefferson: [intense] And assumption punishes virtue. Why should a state that paid down its debts be taxed so another state's debts get made whole? Madison opposed assumption in the House, where the measure failed before the 1790 compromise.
 
-Maya: [curious, inquisitive tone] Okay, this is the rap battle from the musical, right? Cabinet Battle Number One?
+Maya: [curious, inquisitive tone] And the compromise was your dinner table, Mr. Jefferson: assumption passes, the capital goes to the Potomac. Okay, this is the rap battle from the musical, right? Cabinet Battle Number One?
 
 Marcus: Close enough. Same two men, same fight, fought with memorials and ledgers. Every bit as vicious.
 
@@ -30,9 +30,9 @@ Maya: Your turn. It's 1789. Someone offers you a government IOU at ten cents on 
 
 [10-second pause]
 
-Maya: Hamilton's report, the promise of full payment: the moment trash paper turns valuable. So who profited from funding at full value? The soldiers?
+Maya: Hamilton's report, the promise of full payment: the moment trash paper turns valuable. So the windfall came from assumption, right? The states' debts?
 
-Marcus: [firm] Common mix-up. The soldiers sold years ago, for a fraction of face value. Full funding paid whoever held the paper when the promise landed: the speculators who bought it up cheap. Funding is not assumption: funding paid the national government's own debts at face value, assumption took on the states' war debts.
+Marcus: [firm] Common mix-up. The windfall came from funding: it paid the national government's own certificates at face value, to whoever held the paper when the promise landed, mostly speculators who bought it up cheap. Assumption took on the states' war debts. Funding is not assumption.
 
 Maya: First box checked.
 
@@ -46,17 +46,17 @@ Maya: [curious, inquisitive tone] Real quote, flagged. Marcus, Hamilton's answer
 
 Marcus: Hamilton answered eight days later. His real words too: the elastic clause lets Congress make all laws "necessary and proper" for carrying out its listed powers. "If the end be clearly comprehended within any of the specified powers … it may safely be deemed to come within the compass of the national authority." A bank serves borrowing, taxing, paying debts — necessary and proper. Loose construction: the Constitution's words stretch to cover what the job requires.
 
-Maya: Your turn. Washington's desk, February 1791. Two memos: one warns of a boundless field of power, one promises the compass of the national authority. He can sign the Bank bill or veto it. Eight seconds: what does he do?
+Maya: Your turn. Washington's desk, February 1791. Two memos: one warns of a boundless field of power, one promises the compass of the national authority. He can sign the Bank bill or veto it. Ten seconds: what does he do?
 
 [10-second pause]
 
-Maya: He signs. Washington weighs both memos and sides with Hamilton. The Bank of the United States becomes law in 1791. If the exam hands you a bank stimulus, check the reading. Jefferson's side: only the listed powers, strict construction. Hamilton's side: the elastic clause, loose construction. They flip under pressure: Jefferson strict, Hamilton loose. Washington read both memos and signed. That lands the Bank.
+Maya: He signs. Washington weighs both memos and sides with Hamilton. The Bank of the United States becomes law in 1791. If the exam hands you a bank stimulus, check the reading. Jefferson's side: only the listed powers, strict construction. Hamilton's side: the elastic clause, loose construction. Students flip them under pressure: Jefferson strict, Hamilton loose. Washington read both memos and signed. That lands the Bank.
 
 Maya: Third clash: what America should make, and who pays. Marcus.
 
-Marcus: Hamilton's Report on Manufactures, 1791. His argument: America cannot stay a nation of farmers forever. It needs workshops of its own. His real words: "Not only the wealth, but the independence and security of a country, appear to be materially connected with the prosperity of manufactures." So: tariffs on foreign goods to protect America's infant industries, new ones not yet strong enough to compete. And subsidies, government money to build them up. Congress said yes to tariffs. It said no to subsidies.
+Marcus: Hamilton's Report on Manufactures, 1791. His argument: America cannot stay a nation of farmers forever. It needs workshops of its own. His real words: "Not only the wealth, but the independence and security of a country, appear to be materially connected with the prosperity of manufactures." So: tariffs on foreign goods to protect America's infant industries, new ones not yet strong enough to compete. And subsidies, government money to build them up. Congress raised some tariffs, and said no to subsidies.
 
-Jefferson: [intense] I have a different America in mind: a republic of independent yeoman farmers, men who own their land and answer to no master. Manufacturing, in my phrase, my real phrase, is "a handmaid to agriculture." The servant, not the master. Instead of Hamilton's tariffs, I want free trade: let the farmer buy cheap manufactured goods from abroad and sell his crops to the world. A nation of workshops is a nation of dependents.
+Jefferson: [intense] I have a different America in mind: a republic of independent yeoman farmers, men who own their land and answer to no master. Manufacturing, as I see it, should serve agriculture: the servant, not the master. Instead of Hamilton's tariffs, I want free trade: let the farmer buy cheap manufactured goods from abroad and sell his crops to the world. A nation of workshops is a nation of dependents.
 
 Marcus: But the program has to be paid for. Hamilton's answer: taxes. In 1791, an excise tax on whiskey, a tax on liquor made and sold inside the country. Now picture the western farmer. Grain is bulky, the roads are terrible, and the only way that paid was to distill it into whiskey and carry that instead. The tax lands hardest on the frontier men least able to pay it.
 
@@ -70,7 +70,7 @@ Maya: One fight left: the verdict. And this one never really ended.
 
 Marcus: In the 1790s, it ended in Hamilton's favor. The debts got funded and assumed. The Bank got its charter. The whiskey tax got collected. Washington signed the program and enforced it. And every power we used was tied to an enumerated end: borrowing, taxing, paying debts. A government doing the jobs the Constitution gave it is not consolidation by another name.
 
-Jefferson: [intense] At what price? A government that reads "necessary and proper" as a license reads every limit out of the Constitution. Farmers taxed to enrich speculators. A bank that marries the republic to moneyed men, the very corruption we fought a revolution to escape. That is how republics die: not by invasion, but by consolidation. A government that borrows without limit, spends without limit, grows without limit — until no limit in the Constitution means anything at all.
+Jefferson: [intense] At what price? A government that reads "necessary and proper" as a license reads every limit out of the Constitution. Farmers taxed to enrich speculators. A bank that marries the republic to moneyed men, the very corruption we fought a revolution to escape. A government that reads its own limits away, one clause at a time.
 
 Maya: [confident tone] The afterlife is my department; theirs ended in the 1790s. Loose versus strict outlived both men. It became the permanent fault line of American politics. The two camps hardened into the first party system. Hamilton's Federalists, for an active national government. Jefferson's Democratic-Republicans — the party of limited government and the yeoman farmer. So that's the Republicans, right? Same name, same party?
 
@@ -100,7 +100,7 @@ Maya: Third. In 1794, Washington sent nearly thirteen thousand militiamen into w
 
 [10-second pause]
 
-Maya: It proved the federal government could enforce its own laws. Under the Articles, Congress couldn't tax or raise troops, so Shays's Rebellion fell to a privately paid militia after months. Same shape of revolt, opposite answer. That's the Constitution's difference, made visible.
+Maya: It proved the federal government could enforce its own laws. Under the Articles, Congress couldn't tax directly or force the states to send troops, so Shays's Rebellion fell to a privately paid militia after months. Same shape of revolt, opposite answer. That's the Constitution's difference, made visible.
 
 Maya: One more, fast. Hamilton's party and Jefferson's party: the names?
 
@@ -111,7 +111,7 @@ Maya: The Federalists, and Jefferson's Democratic-Republicans.
 Maya: [confident tone] Next time: the parties we just built turn on each other, and on France. An undeclared naval war across the Atlantic, and at home the Federalists make it a crime to criticize the government. Adams and the Alien and Sedition Acts. The Constitution didn't end the argument. It gave the argument a home — loose against strict, and we're still living in the house they built. Check your boxes.
 
 ## Sources (production-only, never spoken)
-Tier 1: 5steps ch11 (Report on Public Credit 1790 in glossary; Hamilton secretary of treasury, Jefferson secretary of state; loose vs strict construction; Federalists vs Democratic-Republicans; "a handmaid to agriculture" verbatim; high tariff proposal; whiskey tax angering western farmers; Washington's large militia force); prem27 ch5 (Report on Public Credit details: funding at full value builds confidence/legitimacy; certificates traded at a fraction of face value; windfall for speculators; assumption opposed by "states that either did not have a large debt or had already paid back their debts" — no state names given; Bank: 20% public / 80% private, holds tax revenues, stabilizing force, wealthy Americans invested; Jefferson's strict-construction objection vs Hamilton's elastic-clause answer; Washington signed the Bank into law 1791; Report on Manufactures: tariffs + subsidies, Congress adopted except subsidies; Whiskey Rebellion 1794: about 500 men on the tax collector's house → 7,000 to Pittsburgh, nearly 13,000 militiamen, Washington rode west with them to Bedford then returned to Philadelphia (NPS); Shays vs Whiskey comparison box); Norris transcript Topic 3.10 (first parties: Federalists led by Hamilton, Democratic-Republicans led by Jefferson and Madison).
-Real quotes (standard account / Founders Online, beyond Tier 1 — disclosed in dialogue as "real words"): Jefferson's Bank opinion to Washington, Feb 15 1791 ("boundless field of power"); Hamilton's Bank opinion, Feb 23 1791 ("compass of the national authority," spliced with ellipsis); Hamilton, Report on Manufactures conclusion ("independence and security ... prosperity of manufactures"); Jefferson, "a handmaid to agriculture" (Tier 1 via 5steps ch11).
+Tier 1: 5steps ch11 (Report on Public Credit 1790 in glossary; Hamilton secretary of treasury, Jefferson secretary of state; loose vs strict construction; Federalists vs Democratic-Republicans; "a handmaid to agriculture" (book line not re-checked; spoken "real phrase" claim dropped 2026-10-09); high tariff proposal; whiskey tax angering western farmers; Washington's large militia force); prem27 ch5 (Report on Public Credit details: funding at full value builds confidence/legitimacy; certificates traded at a fraction of face value; windfall for speculators; assumption opposed by "states that either did not have a large debt or had already paid back their debts" — no state names given; Bank: 20% public / 80% private, holds tax revenues, stabilizing force, wealthy Americans invested; Jefferson's strict-construction objection vs Hamilton's elastic-clause answer; Washington signed the Bank into law 1791; Report on Manufactures: tariffs + subsidies, Congress adopted except subsidies; Whiskey Rebellion 1794: about 500 men on the tax collector's house → 7,000 to Pittsburgh, nearly 13,000 militiamen, Washington rode west with them to Bedford then returned to Philadelphia (NPS); Shays vs Whiskey comparison box); Norris transcript Topic 3.10 (first parties: Federalists led by Hamilton, Democratic-Republicans led by Jefferson and Madison).
+Real quotes (standard account / Founders Online, beyond Tier 1 — disclosed in dialogue as "real words"): Jefferson's Bank opinion to Washington, Feb 15 1791 ("boundless field of power"); Hamilton's Bank opinion, Feb 23 1791 ("compass of the national authority," spliced with ellipsis); Hamilton, Report on Manufactures conclusion ("independence and security ... prosperity of manufactures"). (Jefferson "handmaid" quote removed from dialogue 2026-10-09 pending a check of the book line.)
 Disclosed, not Tier-1/2-pinned: 20-year Bank charter (standard account; charter lapsed 1811); the Feb 15 / Feb 23 1791 memo dates and Washington's two-memo deliberation; Jefferson-as-slaveholder framing of the agrarian vision (general historical record; prem27 ch6 discusses the Hemings evidence).
 CUT in repair: Madison's discrimination proposal on the debt certificates (unverifiable in Tier 1+2; stated mechanics also mismatched the standard account) — cut in Layer-3. Its replacement line ("Madison led the fight against assumption in the House — and lost the vote") was itself cut in v3: Madison is absent from the Tier-1 assumption coverage, and "lost the vote" flattens the House's initial rejection before the Compromise of 1790 — now "Madison opposed assumption in the House, where the measure failed before the 1790 compromise." Also cut in v3: "Virginia has paid down her debts. Massachusetts has not." (no Tier-1/2 source names the states) → Tier-1 wording above; "No leak was ever proven." (unverifiable) → Tier-1 mechanics: "The certificates were changing hands at a fraction of their original value" (prem27 ch5); "marched them west himself" → "rode west with them as far as Bedford, then returned east" (writer's NPS disclosure: Washington rode to Bedford, then returned to Philadelphia).

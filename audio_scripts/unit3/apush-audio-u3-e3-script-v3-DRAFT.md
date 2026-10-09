@@ -1,8 +1,8 @@
 # U3-E3 — Maya + Marcus (Fish Audio)
-# Episode 20: The Bridge to Revolution. Twelve minutes experienced (1,948 spoken words + 50s pauses = 11.9 min at 180 WPM).
+# Episode 20: The Bridge to Revolution. About twelve minutes experienced (1,957 spoken words + 50s pauses = 11.7 min at 180 WPM).
 # Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Maya tracks four boxes on her episode sheet: the Townshend duties, the Boston Massacre, the Tea Party and the Intolerable Acts, and the First Continental Congress. Strip this header and the read note before TTS; convert pause tags to silence. The em dash in the closing tagline is a held beat: leave a full breath between Maya's setup line and Marcus's landing line. Do not rush it. Self-test model answers follow claim-evidence-reasoning logic in natural phrasing; no spoken labels (per the user's 2026-10-06 ruling: TTS reads everything literally).
 # Pronunciation: TOWN-zend (Townshend), KRIS-pus AT-uks (Crispus Attucks), DIK-in-sun (Dickinson), GAL-uh-way (Galloway), MO-hawk (Mohawk)
-Maya: [professional broadcast tone] Last time: Parliament repealed the Stamp Act and kept the claim — "in all cases whatsoever." Then it taxed the tea. Seven years from the tea tax to twelve colonies acting like one country. Four flashpoints: a tax on paint and paper, a street fight rebranded as a massacre, a harbor full of tea leaves, and a Congress in Philadelphia. Four boxes on your sheet: the Townshend duties, the Boston Massacre, the Tea Party and the Intolerable Acts, and the First Continental Congress. Circle the ones you couldn't explain right now. Twelve minutes, and you'll land all four.
+Maya: [professional broadcast tone] Last time: Parliament repealed the Stamp Act and kept the claim — "in all cases whatsoever." Seven years from the tea tax to twelve colonies acting like one country. Four flashpoints: a tax on paint and paper, a street fight rebranded as a massacre, a harbor full of tea leaves, and a Congress in Philadelphia. Four boxes on your sheet: the Townshend duties, the Boston Massacre, the Tea Party and the Intolerable Acts, and the First Continental Congress. Circle the ones you couldn't explain right now. Twelve minutes, and you'll land all four.
 
 Marcus: Seventeen sixty-seven. Charles Townshend, the new Chancellor of the Exchequer, has a theory: the colonists hated the Stamp Act because it was an internal tax. So he'll only tax external things. New duties on lead, paper, glass, and tea: goods the colonists buy from British merchants, taxed as they come in.
 
@@ -14,11 +14,13 @@ Maya: [incredulous] Okay, but the duties were tiny. A tax on paint? Sounds like 
 
 Marcus: [confident tone] Dickinson had an answer for that exact shrug. "If they have a right to levy a tax of one penny upon us, they have a right to levy a million upon us; for where does their right stop?" It was never about the price. It was about who decides.
 
-Maya: Exam note: a stimulus says "external tax" and asks why colonists still protested. Answer: Dickinson, revenue without consent.
+Maya: Exam note: a stimulus says "external tax" and asks why colonists still protested. Go with Dickinson, revenue without consent.
+
+Marcus: Good. Hold onto that when the distractors get dramatic.
 
 Maya: So if a stimulus calls the duties a crushing burden, that's my pick.
 
-Marcus: [firm] Not quite. Don't write that the duties were crushing. They were light. Price was never the point; the principle was. And it wasn't just the duties: Townshend paid royal governors from the new revenue, and set up admiralty courts that tried smugglers without juries. The duties were the headline; the machine was the story.
+Marcus: [firm] Not quite. Don't write that the duties were crushing. They were light. Price was never the point; the principle was. And it wasn't just the duties: Townshend paid royal governors from the new revenue, and added new admiralty courts that tried smugglers without juries. The duties were the headline; the machine was the story.
 
 Maya: [curious, inquisitive tone] So the colonies boycotted again?
 
@@ -34,15 +36,15 @@ Maya: The tea tax. Forget the money — it's the marker. Repeal everything, keep
 
 Marcus: Exactly. The penny stays so the principle stays.
 
-Marcus: Meanwhile Boston's boiling: in 1768 the crown parks two regiments there, four thousand soldiers in a town of sixteen thousand, moonlighting on the docks and taking working Bostonians' jobs. Harassing soldiers became a local sport.
+Marcus: Meanwhile Boston's boiling: in 1768 the crown parks thousands of soldiers there, in a town of about sixteen thousand, moonlighting on the docks and taking working Bostonians' jobs. Harassing soldiers became a local sport.
 
-Maya: Four thousand soldiers in a town that size. That's not an occupation, that's a roommate situation.
+Maya: Thousands of soldiers in a town that size. That's not an occupation, that's a roommate situation.
 
 Marcus: [serious tone] March fifth, 1770. A wigmaker's apprentice mouths off to a sentry. A crowd gathers, snowballs laced with ice, rocks. A musket goes off, probably by accident, and the line fires a volley. Five colonists dead, including a sailor of African and Indigenous ancestry named Crispus Attucks.
 
 Maya: [curious, inquisitive tone] Five dead. And they called that a massacre?
 
-Marcus: [serious tone] Samuel Adams called it a massacre, and his network spread the word, including Paul Revere's engraving, "The Boston Massacre," showing the soldiers in a firing line, shooting into the crowd.
+Marcus: [serious tone] Samuel Adams called it a massacre, and his network spread the word, including Paul Revere's engraving, "The Bloody Massacre," showing the soldiers in a firing line, shooting into the crowd.
 
 Maya: Stimulus alert: when the exam hands me Revere's engraving, the question isn't what happened March fifth. It's what the source was for, propaganda to unite the colonies against British troops.
 
@@ -60,13 +62,15 @@ Marcus: It was still Parliament taxing them without consent, plus a monopoly, pl
 
 Maya: I keep picturing the smell. Three hours of tea leaves in salt water. The whole harbor brewing.
 
-Marcus: London's answer, 1774: the Coercive Acts. The colonists called them the Intolerable Acts, and the name stuck. Four laws, meant to make an example of Massachusetts — the last one aimed at every colony thinking of following. The Port Act: the harbor stays closed until the destroyed tea is paid for. The Government Act: the royal governor appoints officials the colonists used to elect, town meetings cut to once a year. The Justice Act: royal officials accused of crimes get tried in England, not by a Massachusetts jury. And a tougher Quartering Act: soldiers in civilian homes.
+Marcus: London's answer, 1774: the Coercive Acts. The colonists called them the Intolerable Acts, and the name stuck. Four laws, meant to make an example of Massachusetts — the last one aimed at every colony thinking of following. The Port Act: the harbor stays closed until the destroyed tea is paid for. The Government Act: the royal governor appoints officials the colonists used to elect, town meetings cut to once a year. The Justice Act: royal officials accused of crimes get tried in England, not by a Massachusetts jury. And a tougher Quartering Act: soldiers quartered in empty buildings the governor could seize.
 
-Maya: MCQ writers love this list. "Which of the following was NOT one of the Intolerable Acts?" The Quebec Act is the plant: a fifth law in the same pile, nothing to do with tea. It let French Catholics in Canada worship freely and pushed Quebec's borders south and west. To Protestant colonists it read as London surrounding them and cutting off the west.
+Maya: A classic multiple-choice setup: "Which of the following was NOT one of the Intolerable Acts?" The Quebec Act is the plant: a fifth law in the same pile, nothing to do with tea. It let French Catholics in Canada worship freely and pushed Quebec's borders south and west. To Protestant colonists it read as London surrounding them and cutting off the west.
+
+Marcus: If Quebec's in the options, that's your answer. Separate law, same year.
 
 Maya: So the Tea Party was a protest against expensive tea. Parliament raised the price, and the merchants snapped?
 
-Marcus: [firm] Common mix-up. The Tea Act made tea cheaper, not more expensive. Flip that and you've got the cause backwards. If Quebec's in the options, that's your answer. Separate law, same year.
+Marcus: [firm] Common mix-up. The Tea Act made tea cheaper, not more expensive. Flip that and you've got the cause backwards.
 
 Maya: [curious, inquisitive tone] Did making an example of Massachusetts work?
 
@@ -98,7 +102,7 @@ Maya: Box two: the Boston Massacre. March fifth, seventeen seventy, five dead in
 
 Marcus: [serious tone] Branded. On the thumb. Nobody hanged.
 
-Maya: [sheepish] Right, branded. Box three: the Tea Party and the Intolerable Acts. December sixteenth, seventy-three, the Sons of Liberty dump some three hundred fifty chests of tea. Parliament answers: port closed till the tea's paid for, the governor appoints the officials, trials moved to England, soldiers in homes. Plus the Quebec Act in the same pile, the odd one out.
+Maya: [sheepish] Right, branded. Box three: the Tea Party and the Intolerable Acts. December sixteenth, seventy-three, the Sons of Liberty dump some three hundred fifty chests of tea. Parliament answers: port closed till the tea's paid for, the governor appoints the officials, trials moved to England, soldiers in seized buildings. Plus the Quebec Act in the same pile, the odd one out.
 
 Maya: Box four: the First Continental Congress. September seventy-four, Philadelphia, fifty-six delegates, everybody but Georgia. The Suffolk Resolves, the Declaration of Rights and Grievances, the Association's boycott, and a polite petition to the king. Unity, but not independence. Not yet.
 
@@ -126,11 +130,11 @@ Maya: One more, fast. The Congress built the Association's boycott machine and p
 
 Maya: The petition. You don't politely ask the king to repeal his laws if you're about to break with him.
 
+Maya: [intrigued] Check your four boxes. Next time: the argument for independence. A pamphlet called Common Sense, and a Congress debating whether to say the word out loud. We're not going there yet.
+
 Maya: [professional broadcast tone] They built the bridge—
 
 Marcus: [professional broadcast tone] —before anyone voted to cross it.
-
-Maya: [intrigued] Check your four boxes. Next time: the argument for independence. A pamphlet called Common Sense, and a Congress debating whether to say the word out loud. We're not going there yet.
 
 
 ## Sources (production-only, never spoken)
@@ -142,7 +146,7 @@ Tier 1:
 - Transcripts — Norris Period 3 speed review (Townshend Acts taxing tea/glass/paper/lead + customs agents; Boston Massacre; Tea Act; Boston Tea Party; Intolerable Acts incl. Boston Port Act, MA Government Act, Administration of Justice Act, Quartering Act; First Continental Congress, all but Georgia); Heimler "NO Taxation without REPRESENTATION!" (Townshend Acts 1767 on glass/paint/paper; boycotts, women's homespun role; Boston Massacre 1770 — snowballs/rocks, shot probably accidental, five killed, "not sure that qualifies as a massacre," Adams/Sons of Liberty PR campaign; Townshend repeal except tea tax; Tea Act 1773 — no tax increase, EIC monopoly framing; ~50 colonists, nearly 50 tons, ~$1.5–2M today; Coercive Acts 1774 — harbor closed till tea paid for, new Quartering Act); Maximum Insight 3.3 (1767 Townshend Acts on paper/paint/tea; 1770 Boston Massacre, five killed; 1773 Tea Act; Boston Tea Party; Intolerable Acts closing the harbor).
 
 Tier 2 (Britannica/NPS — pending Layer-3 confirmation):
-- Revere engraving depiction (soldiers shown in a firing line shooting into the crowd): prem27 confirms the print's title/year; the visual description should be confirmed against Britannica's Boston Massacre article at Layer 3.
+- Revere engraving depiction (soldiers shown in a firing line shooting into the crowd): prem27 confirms the print's year; the spoken title is the print's own, "The Bloody Massacre Perpetrated in King Street" (2026-10-09 review: the script previously called it "The Boston Massacre"); the visual description should be confirmed against Britannica's Boston Massacre article at Layer 3.
 
 Hedged / unverifiable (disclosed, not taught flat):
 - First shot at the Massacre ("probably by accident"): Tier 1 does not pin who fired first; dialogue hedges in-line.

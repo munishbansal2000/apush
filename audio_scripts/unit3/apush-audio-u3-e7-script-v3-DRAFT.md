@@ -1,5 +1,5 @@
 # U3-E7 — Debate: Maya moderates, Marcus (Convention defense, 1787 voice) vs Brutus (Anti-Federalist, 1787 voice)
-# Episode 24: The Constitutional Convention. ~12 min experienced (2,006 words speech + 60s pauses)
+# Episode 24: The Constitutional Convention. ~12 min experienced (1,960 words speech + 60s pauses; 2026-10-09 review fixes)
 # Draft v3 (2026-10-07): fleet-repair pass on the 2026-10-07 audit (4 blockers, 8 warnings). Tone-tag density 80.6% → ~37% (26/71 turns; kept fleet-catalog beats only). All four common-mistake traps rebuilt as Maya-error → Marcus-correction live traps with strong markers. Antitheses 8 → 2 (kept the two carrying real logic). Brutus's "your textbooks" line reframed to his 1787 vantage. Warnings: EC correction hardened to "Not quite."; "That's the federalism box" recast; "So did they." folded; six triple-parallels → cold-open keeper only; "Three ideas"/"Three things" count-ups dropped; stimulus source named (Barron's); Q1 model answer hedged ("reads like"); unverifiable electors-meet line cut. Word count 1,967 → 2,006; experienced runtime ~12.4 min — header and "Twelve minutes" promise agree. Replaces v2 (retired to _archive).
 # Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Marcus argues the Convention's case as a man of 1787 — his knowledge stops at the signing, so he gets no spoilers and no modern narration. Brutus argues the skeptic's case in his own 1787 voice — measured, scholarly, never a caricature; his lines are our dramatization of his real arguments, not verbatim quotes. Maya is the only modern voice: the afterlife of the compromises belongs to her, clearly framed. The em dash in the closing tagline is a held beat: leave a full breath between "act" and "and left the hardest bargains." Do not rush it. The Franklin closing story is reported, not transcript-verified — Maya discloses that in the line itself. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence.
 # Pronunciation: an-tee FED-er-al-ist (Anti-Federalist); BROO-tus (Brutus); kon-NET-ih-kut (Connecticut).
@@ -26,7 +26,7 @@ Brutus: [passionate] They were sent to revise a confederation. Revise. Instead t
 
 Marcus: The secrecy let men change their minds. With no gallery to please, men argue honestly.
 
-Maya: Your turn. You're a small-state delegate. The big states want every seat counted by people. Tell me why that buries your state, and what you'll take instead.
+Maya: Your turn. You're a small-state delegate. The big states want every seat counted by people. Why does that bury your state, and what will you take instead?
 
 [10-second pause]
 
@@ -58,9 +58,7 @@ Marcus: [firm] Not quite. That was the one idea they ruled out. A president chos
 
 Maya: [sheepish] So Americans voted for the president directly back then?
 
-Marcus: [firm] Not quite. The House was the only office the people chose outright; the electors chose the president.
-
-Maya: Watch the trap: a question asks why the framers rejected letting Congress pick the president. The reason isn't distrust of voters; it's that a president chosen by Congress would be its puppet, and the design needed the branches standing apart.
+Marcus: [firm] No, and this one's sneakier. The House was the only office the people chose outright; the electors chose the president.
 
 Brutus: [intense] Indirect here, indirect there. The people choose neither their president nor their senators. You call it filtering passion. I call it filtering the public.
 
@@ -82,7 +80,7 @@ Maya: Your turn. South Carolina's line is plain: no protection for slavery, no s
 
 [10-second pause]
 
-Maya: Most of you just paid it, and so did they. Sit with how that feels. The exam will ask you to explain the bargain, whatever you feel about it.
+Maya: Most of you just paid it, and so did they. Sit with how that feels. Your job is to explain the bargain, whatever you feel about it.
 
 Maya: And the afterlife, from the modern side: those three-fifths seats didn't just fill the House. Do the math forward: those extra House seats meant extra electors too — the same count, carried into the Electoral College.
 
@@ -94,7 +92,7 @@ Maya: Last clash: the machinery. You're handing a government real power. What ke
 
 Marcus: They split it three ways and set the pieces against each other. Three branches, each with ways to check the others. And they split power between levels: the national government got to make war and peace, and to regulate trade crossing state lines; the rest stays with the states and the people. That split is federalism.
 
-Maya: That split is federalism — born in that hall, and written down later as the Tenth Amendment.
+Maya: And the Tenth Amendment later spelled out the reserved half.
 
 Brutus: [passionate] Two phrases undo your machinery: necessary and proper, and the supremacy clause. Congress may make all laws necessary and proper to its powers, and its laws are the supreme law of the land. Those two clauses let the national government stretch its powers at the states' expense. A republic this large, this distant, consolidates or it breaks.
 

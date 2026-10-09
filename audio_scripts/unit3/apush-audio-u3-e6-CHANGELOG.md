@@ -1,5 +1,15 @@
 # U3-E6 (Articles of Confederation) — Version Changelog
 
+## 2026-10-09: review fixes (video2/out/review/scripts-e4-e6.md)
+- Speaker bug: "Third, and it's huge: no slavery…" split off Jay's line into a new Maya turn ("Third, back to 1787…").
+- Ordinances: township survey/sale and school land now attributed to the Land Ordinance of 1785; the slavery ban stays with the 1787 Northwest Ordinance. States list → "…Wisconsin, and part of Minnesota."
+- Chronology: the Articles are now framed as built mid-war (cold open, pop quiz, box-one setup, the mix-up correction), replacing "just fought a king for eight years." Annapolis now "Even before Springfield, in September 1786."
+- "right where the treaties said they'd go" → "on land the treaty said they'd give up."
+- Cut "Think about that." (close to retired stock phrase) and "And that's Episode 6." (replaced by "Check your boxes.").
+- TTS: "St. Clair's" → "Saint Clair's". Jay's unanswered question now answered ("Yes, and that letter…").
+- Recap: split into box beats with a Jay memory-check fumble (Shays as a tax revolt) corrected by Maya.
+- Header: 2,051 spoken words + 60s pauses = 12.4 min; "Twelve and a half minutes" promise kept (holds). Parse check: 6 pauses, all 10s.
+
 Every version is kept as a separate file. Nothing is overwritten.
 This log records what changed between versions and why.
 

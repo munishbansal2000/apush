@@ -1,3 +1,14 @@
+## 2026-10-09 — review fixes (video2/out/review/scripts-e10-cram.md)
+- Tie mechanics: "So the losers pick the winner" -> "So the losers can block the winner"; "The Federalists who'd just lost got to choose" -> "could block the winner" (by-state voting let them stall, not choose).
+- "Votes or voters" answer made consistent: "The votes. Nobody converted. Federalist holdouts stopped blocking Jefferson once Hamilton's letters helped push them, and he won on the 36th ballot." Self-test Q1 answer reworded the same way (was "Federalists decided Burr was worse... tipped the House").
+- Haiti: "died of disease" -> "was destroyed by disease and Haitian resistance" (§7 name the actor).
+- Webster (verify item): Americanized spellings now tied to "his later books" rather than the 1783 speller.
+- Bonus question was trivia (§8): now "Webster's speller: what job did it do for national identity?" with a national-identity model answer.
+- TTS: "The 73-73 tie" -> "The seventy-three to seventy-three tie."
+- Closer: "Eleven episodes, ten questions" -> "eleven questions"; added "Check your boxes." (§6 check layer).
+- Sources notes updated for the Haiti and Webster changes. Header: 1,565 -> 1,589 words, pauses corrected 68s -> 60s (six 10s pauses); ~9.8 min, "About ten minutes" holds.
+- Checks: parseTranscript 71 turns, pauses 10x6; gates PASS.
+
 # U3-E11 v1 → v2 Changelog (2026-10-06)
 
 ## What v2 is

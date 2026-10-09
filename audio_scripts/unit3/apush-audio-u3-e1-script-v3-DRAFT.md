@@ -1,8 +1,8 @@
 # U3-E1 — Maya + Marcus (Fish Audio)
-# Episode 18: The Bill Comes Due. Eleven-and-a-half minutes experienced (1,882 spoken words + 50s pauses = 11.5 min at 180 WPM).
+# Episode 18: The Bill Comes Due. Just over eleven minutes experienced (1,887 spoken words + 50s pauses = 11.3 min at 180 WPM).
 # Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Maya tracks three boxes on her episode sheet: the end of salutary neglect, the Proclamation Line of 1763, and Pontiac's Rebellion. Strip this header and the read note before TTS; convert pause tags to silence. The em dash in the closing tagline is a held beat: leave a full breath between Marcus's setup line and Maya's landing line. No verbatim historical quotes in this episode — the Proclamation's Native-land promise is paraphrased, not quoted. Strip this header and the read note before TTS.
 # Pronunciation: PON-tee-ak (Pontiac), OT-uh-wuh (Ottawa), nee-OH-lin (Neolin), GREN-vil (Grenville), ap-uh-LAY-chun (Appalachian), AM-urst (Amherst), gayj (Gage), kon-uh-STOH-guh (Conestoga)
-Maya: [professional broadcast tone] Last time: two centuries of English colonies: New England, the middle colonies, the South. This time those colonies stop arguing with each other, and start arguing with London. 1763. Britain's won the biggest war of the century, and the prime minister opens the books and turns pale. Three boxes on your sheet: the end of salutary neglect, the Proclamation Line of 1763, and Pontiac's Rebellion. Circle the ones you couldn't explain right now. Eleven and a half minutes, and you'll land all three.
+Maya: [professional broadcast tone] Last time: two centuries of English colonies: New England, the middle colonies, the South. This time those colonies stop arguing with each other, and start arguing with London. 1763. Britain's won the biggest war of the century, and the prime minister opens the books and turns pale. Three boxes on your sheet: the end of salutary neglect, the Proclamation Line of 1763, and Pontiac's Rebellion. Circle the ones you couldn't explain right now. Just over eleven minutes, and you'll land all three.
 
 Marcus: [confident tone] Then start with the bill. The war left London drowning in debt. The books' word is "enormous," so we'll borrow it. And the empire cost more to run than ever: Canada to garrison, Florida to administer, a frontier past every map London owned. The thesis for your notes: Britain won the war, and wrecked the arrangement that had made the empire work.
 
@@ -30,7 +30,7 @@ Maya: [confident tone] One for the exam, and it's a thinking one. When a prompt 
 
 Maya: The debt was a hundred and forty million pounds? Putting that on the sheet.
 
-Marcus: [firm] Not quite. Don't pin a number on that debt. The books say "enormous." Use their word, not a figure you can't source.
+Marcus: [firm] Close, but don't pin a number on that debt. The books say "enormous." Use their word, not a figure you can't source.
 
 Maya: [sheepish] Box one, done. But the frontier's already on fire.
 
@@ -58,7 +58,7 @@ Marcus: On paper, exactly. And it set a pattern: drawing a line on a map and cal
 
 Maya: So the Mississippi was the fence, and the Appalachians were the prize.
 
-Marcus: [firm] Not quite. The Mississippi was the prize, the Appalachians were the fence. Don't swap them.
+Marcus: [firm] Not quite. The land between the mountains and the Mississippi was the prize; the Appalachians were the fence. Don't swap them.
 
 Maya: [confident tone] Tip for the test. If a stimulus hands you the Proclamation's promise to leave Native lands undisturbed, ask what the source is for. London dodging another expensive war. Purpose before the grievance — that's how these sources crack open.
 
@@ -66,7 +66,7 @@ Maya: [speaking slowly] Your turn again. London leaves roughly ten thousand sold
 
 [10-second pause]
 
-Marcus: The officer: he's employed. The minister: the frontier's covered, cheaply. And the settler? He hears boots in peacetime and does new math. Officially, to enforce the line and keep a burning frontier quiet. Ask a colonist in Boston and you'd get a third answer: us. An army that expensive, sitting in peacetime, starts to look like it's there to police the colonists.
+Marcus: The minister sleeps best: the frontier's covered, cheaply. The officer's fine too: he's employed. And the settler? He hears boots in peacetime and does new math. Officially, the troops are there to enforce the line and keep a burning frontier quiet. Ask him, or a colonist in Boston, and you get another answer: us. An army that expensive, sitting in peacetime, starts to look like it's there to police the colonists.
 
 Maya: [confident tone] The Proclamation Line of 1763, in one line: London draws a fence it can't patrol, to dodge a war it can't afford.
 
@@ -90,11 +90,11 @@ Marcus: [serious tone] Deeply. The alliance struck fort after fort around the Gr
 
 Maya: [serious tone] Biological warfare. In 1763.
 
-Marcus: One of the books calls it germ warfare, flatly. London replaced Amherst that August and sent Thomas Gage. Gage broke the rebellion. The bloodshed dragged into 1764, with skirmishes sputtering on for years.
+Marcus: One of the books calls it germ warfare, flatly. London replaced Amherst that August and sent Thomas Gage. Gage's forces wore the rebellion down. The bloodshed dragged into 1764, with skirmishes sputtering on for years.
 
 Maya: And the colonists had their own ugly answer, didn't they? The Paxton Boys.
 
-Marcus: [serious tone] The mirror image. A mob of Scots-Irish frontiersmen in Pennsylvania decided the guilty and the innocent looked alike. In 1763 they murdered peaceful Conestoga Indians, Christians, people who'd had nothing to do with the fighting. Twenty dead. Then about two hundred fifty of them marched on Philadelphia, demanding the colony stop protecting Indians. London got the message: the frontier was a tinderbox, and every policy poured something on it. The Proclamation was the first pour.
+Marcus: [serious tone] The mirror image. A mob of Scots-Irish frontiersmen in Pennsylvania decided the guilty and the innocent looked alike. In 1763 they murdered peaceful Conestoga Indians, Christians, people who'd had nothing to do with the fighting. Twenty dead. Then about two hundred fifty of them marched on Philadelphia, demanding the colony stop protecting Indians. The frontier was a tinderbox, and every policy after that landed on it.
 
 Maya: [confident tone] Sorting rule, test-ready: the rebels in 1763 were Ottawa-led Native nations. If your draft says the colonists rebelled, you've written the wrong war.
 
@@ -124,7 +124,7 @@ Maya: Two: most significant effect of the Seven Years' War — the debt, the ter
 
 [10-second pause]
 
-Maya: The broken trust: the debt was a policy problem that later governments managed, and the territory stayed British. But Britain started treating the colonies like a problem to be managed, and the colonies started seeing Britain as a threat to their freedom. That never fully healed, and it's the crack every later crisis widens.
+Maya: The broken trust. The debt and the territory mattered, but mostly for what they did to trust. Britain started treating the colonies like a problem to be managed, and the colonies started seeing Britain as a threat to their freedom. That never fully healed, and it's the crack every later crisis widens.
 
 Maya: Three: an SAQ asks what changed after 1763 that pushed Pontiac's alliance to war. Make your case.
 

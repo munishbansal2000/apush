@@ -1,5 +1,13 @@
 # U3-E7 Changelog
 
+## 2026-10-09 — review fixes (video2/out/review/scripts-e7-e9.md)
+- Prediction beat: "Tell me why that buries your state, and what you'll take instead." -> "Why does that bury your state, and what will you take instead?" (banned "Tell me" tic).
+- Box-two trap correction: second "[firm] Not quite." -> "[firm] No, and this one's sneakier." (reactions vary).
+- Cut Maya's "Watch the trap: ... Congress pick the president ..." line (third repeat of the Congress-as-picker trap; self-test Q2 still covers it).
+- "The exam will ask you to explain the bargain..." -> "Your job is to explain the bargain..." (exam-pitch).
+- Maya's "That split is federalism — born in that hall, and written down later as the Tenth Amendment." -> "And the Tenth Amendment later spelled out the reserved half." (echoed Marcus; federalism is in the 1787 text, the Tenth only restates reserved powers).
+- Word count 2,006 -> 1,960; experienced runtime 1,960/180 + 60s = ~11.9 min; header updated, "Twelve minutes" kept. Parse check: 6 pauses, all 10s. Gates PASS.
+
 ## v2-repair (2026-10-06) — Layer-2 voice + Layer-3 fact validation fixes (REPAIR agent)
 
 Gates after repair: **13/13 PASS** (`apush-script-gates.py ... --minutes 12`; 1,967 words speech, 164 WPM @ 12 min, 73s pauses; WARNs only: W1 2x uncontracted, W2 triple-flag scan). Em dashes in dialogue: 6 (≤10; 5 from these prescribed rewrites + the pre-existing closing-tagline held beat). No new That's/Here's starters; antithesis budget unchanged; no spoken CER labels. Word count grew 1,923 → 1,967 (+44); header updated to 1,967; experienced runtime ~12 min — "Twelve minutes" cold-open promise kept.

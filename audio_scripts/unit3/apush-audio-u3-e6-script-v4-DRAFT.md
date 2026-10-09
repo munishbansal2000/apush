@@ -1,18 +1,18 @@
 # U3-E6 — Study Buddies: Maya + Jay (Fish Audio)
-# Episode 23: Articles of Confederation. ~12.5 min (2,012 words @ 180 WPM max)
+# Episode 23: Articles of Confederation. ~12.4 min experienced (2,051 spoken words ÷ 180 WPM = 11.4 min + 60s pauses)
 # Draft v3 (fleet repair pass — 2026-10-07 audit findings applied). Study Buddies per the master build plan. CED 3.7.
 # Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence.
 # Pronunciation: Shays (SHAYZ); Miami (my-AM-uh); Harmar (HAR-mer); St. Clair (saynt KLAIR); Greenville (GREEN-vil); Annapolis (uh-NAP-uh-lis); Knox (nocks).
 
-Maya: [professional broadcast tone] Last time: Yorktown, 1781. The war is won, the British are going home. Now the founders face a harder problem than beating a king: governing without becoming one. Four boxes today: the structure they built, why it failed, the one thing it did brilliantly, and why it lasted eight years anyway. Circle the ones you couldn't explain right now. Twelve and a half minutes, and you'll check all four off.
+Maya: [professional broadcast tone] Last time: Yorktown, 1781. The war is won, the British are going home. And the government they'd built mid-war faces a harder problem than beating a king: governing without becoming one. Four boxes today: the structure they built, why it failed, the one thing it did brilliantly, and why it lasted eight years anyway. Circle the ones you couldn't explain right now. Twelve and a half minutes, and you'll check all four off.
 
 Jay: [sheepish] Eight years? A whole government lasted eight years?
 
-Maya: [curious, inquisitive tone] Start to finish, 1781 to 1789. And here's my thesis for the episode: the Articles failed at almost everything, except the one thing that mattered most. Pop quiz first. The founders just won a war against a king. They sit down to build a new government. What's the one thing they're terrified of?
+Maya: [curious, inquisitive tone] Start to finish, 1781 to 1789. And here's my thesis for the episode: the Articles failed at almost everything, except the one thing that mattered most. Pop quiz first. The founders are in the middle of a war against a king. They sit down to build a new government. What's the one thing they're terrified of?
 
 Jay: [sheepish] Losing? Like, going broke?
 
-Maya: [curious, inquisitive tone] They're terrified of power itself. One strong government, one man on top. They just fought a king for eight years, so they build a government designed to make sure it can never happen again. Box one: the structure. Jay, under the Articles, how many votes did each state get in Congress?
+Maya: [curious, inquisitive tone] They're terrified of power itself. One strong government, one man on top. They're in the middle of a war against a king, so they build a government designed to make sure it can never happen again. Box one: the structure. Jay, under the Articles, how many votes did each state get in Congress?
 
 Jay: [sheepish] One? One vote per state?
 
@@ -44,13 +44,13 @@ Maya: The one thing Congress actually controlled was the western territory. Reme
 
 Jay: [sheepish] So the founders were just… bad at this? They wrote a government that couldn't even tax?
 
-Maya: [firm] Not quite: that's the classic mix-up. They built it weak on purpose. They'd just spent eight years fighting a king; a strong central government was the thing they were building against.
+Maya: [firm] Not quite: that's the classic mix-up. They built it weak on purpose. They wrote it in the middle of a war against a king; a strong central government was the thing they were fighting against.
 
 Jay: Okay, but couldn't they see it wouldn't work?
 
 Maya: Some did. But nobody wanted to be the one who said the Revolution's government was a failure. So the structure: fear-built, one vote a state, no tax power, no executive, no courts, and a unanimity trap. Now box two: the failures, and they came fast.
 
-Maya: Congress can't tax, so it can't pay its debts or its soldiers. It can't regulate trade between the states, either. And Britain never really left. They kept their frontier forts on American soil, right where the treaties said they'd go. Congress can't touch any of it.
+Maya: Congress can't tax, so it can't pay its debts or its soldiers. It can't regulate trade between the states, either. And Britain never really left. They kept their frontier forts on land the treaty said they'd give up. Congress can't touch any of it.
 
 Jay: [curious, inquisitive tone] So it's like thirteen countries pretending to be one?
 
@@ -68,7 +68,7 @@ Maya: Do what Shays did. You stop the courts yourselves, farm by farm, until the
 
 Jay: [curious, inquisitive tone] And Congress just watched?
 
-Maya: Congress couldn't do anything. No money, no tax power, no army to raise. So private citizens raised a militia and put the rebellion down themselves. Think about that.
+Maya: Congress couldn't do anything. No money, no tax power, no army to raise. So private citizens raised a militia and put the rebellion down themselves.
 
 Jay: Embarrassing. For the government, I mean.
 
@@ -76,7 +76,7 @@ Maya: It terrified the elite. Henry Knox writes to Washington in a panic. His wa
 
 Jay: So the rebels knew the government couldn't stop them?
 
-Maya: That letter is the moment a lot of founders realize the Articles might not survive.
+Maya: Yes, and that letter is the moment a lot of founders realize the Articles might not survive.
 
 Jay: [sheepish] So Shays was basically a tax revolt. The Tea Party, part two.
 
@@ -88,9 +88,11 @@ Maya: The failures came down to this. Congress couldn't pay its soldiers or its 
 
 Jay: [curious, inquisitive tone] The Northwest. Like, Ohio?
 
-Maya: The territory north of the Ohio River. Future Ohio, Indiana, Illinois, Michigan, Wisconsin, Minnesota. Remember the question I asked you a few minutes ago? Congress couldn't tax, but it could sell land. So it wrote a rulebook. How do you turn wilderness into states? First: survey it into townships and sell it, orderly, no chaos. Second: set aside land in every township for public schools. Public education, written into the frontier's law.
+Maya: The territory north of the Ohio River. Future Ohio, Indiana, Illinois, Michigan, Wisconsin, and part of Minnesota. Remember the question I asked you a few minutes ago? Congress couldn't tax, but it could sell land. So it wrote rulebooks, starting two years earlier. How do you turn wilderness into states? First, the Land Ordinance of 1785: survey it into townships and sell it, orderly, no chaos. Second, same law: set aside land in every township for public schools. Public education, written into the frontier's law.
 
-Jay: So my school exists because Congress needed to sell Ohio? I'm putting that on a poster. Third, and it's huge: no slavery north of the Ohio River. It's banned.
+Jay: So my school exists because Congress needed to sell Ohio? I'm putting that on a poster.
+
+Maya: Third, back to 1787, and it's huge: no slavery north of the Ohio River. It's banned.
 
 Jay: [sheepish] Whoa. So they just ended slavery? In 1787, before the Constitution even existed?
 
@@ -100,7 +102,7 @@ Maya: And fourth: when a territory hit sixty thousand people, it could write a c
 
 Jay: Okay, but did the orderly part actually happen? People don't usually wait for surveyors.
 
-Maya: They didn't. Second half of this box: the map versus the mess. The Ordinance promised order. The 1790s delivered war. Settlers poured over the Ohio anyway. And the Native nations already living there weren't leaving. A Miami chief named Little Turtle built a confederacy that routed Harmar's army in 1790 and destroyed St. Clair's in 1791, at the Wabash River. Over six hundred Americans killed — still the worst defeat the United States Army ever suffered at Native hands.
+Maya: They didn't. Second half of this box: the map versus the mess. The Ordinance promised order. The 1790s delivered war. Settlers poured over the Ohio anyway. And the Native nations already living there weren't leaving. A Miami chief named Little Turtle built a confederacy that routed Harmar's army in 1790 and destroyed Saint Clair's in 1791, at the Wabash River. Over six hundred Americans killed — still the worst defeat the United States Army ever suffered at Native hands.
 
 Jay: So the law said one thing and the frontier did the opposite.
 
@@ -112,7 +114,7 @@ Maya: Exactly. The Ordinance promised order, and the frontier answered with war.
 
 Jay: [sheepish] Because nobody had a better idea yet? And it kind of worked?
 
-Maya: Both, honestly. It worked just well enough to get through the war's aftermath, and replacing it meant admitting the Revolution's first government was a failure, which nobody wanted to say out loud. It took a real scare to change the math. Shays and his farmers marching on an arsenal made the alternative scarier than the embarrassment. And the scare kept building. 1786: a convention at Annapolis to talk about trade problems. Only five states bother to show up. Alexander Hamilton uses the flop to call for a bigger meeting in Philadelphia the next year, to fix the Articles.
+Maya: Both, honestly. It worked just well enough to get through the war's aftermath, and replacing it meant admitting the Revolution's first government was a failure, which nobody wanted to say out loud. It took a real scare to change the math. Shays and his farmers marching on an arsenal made the alternative scarier than the embarrassment. Even before Springfield, in September 1786, a convention at Annapolis met to talk about trade problems. Only five states bother to show up. Alexander Hamilton uses the flop to call for a bigger meeting in Philadelphia the next year, to fix the Articles.
 
 Jay: [sheepish] Which became the Constitutional Convention. So the rescue: everyone agreed the Articles were done, and they just wrote something new.
 
@@ -122,7 +124,11 @@ Maya: Quick exam note: Beard's argument has a name you'll see. If a question ask
 
 Jay: So: built weak on purpose, couldn't tax or govern. Shays proved it. The Ordinance was the one win, and only a real scare got it replaced.
 
-Maya: Four boxes, let's land them. A fear-built structure with no tax power and a unanimity trap. Failures from debt to Shays' Rebellion. The Northwest Ordinance's promise against the violent reality of the Ohio country. And eight years of barely working, until the scare got bigger than the embarrassment.
+Maya: Four boxes, let's land them. One: a fear-built structure with no tax power and a unanimity trap.
+
+Jay: Two: the failures, from debt to Shays' Rebellion. Which was a tax revolt, right?
+
+Maya: Taxes plus debt plus hard currency, all at once. Three: the Northwest Ordinance's promise against the violent reality of the Ohio country. And four: eight years of barely working, until the scare got bigger than the embarrassment.
 
 Maya: Three questions, AP-shaped. Say your answer before I give it. One: under the Articles, what did it take to amend the document?
 
@@ -150,7 +156,7 @@ Maya: That the framers were protecting their money and their class. Whether you 
 
 Jay: [casual] I think I got all four. The fast one too.
 
-Maya: [confident tone] One thing to carry forward: the Articles solved the founders' fear — no king — and built a government too weak to do anything else. And that's Episode 6. Next time: fifty-five men in a Philadelphia heat wave, rewriting the whole government. And the three bargains they struck, including the one about slavery.
+Maya: [confident tone] One thing to carry forward: the Articles solved the founders' fear — no king — and built a government too weak to do anything else. Check your boxes. Next time: fifty-five men in a Philadelphia heat wave, rewriting the whole government. And the three bargains they struck, including the one about slavery.
 
 Jay: [casual] From the map and the mess to the men in the hot room.
 
@@ -165,7 +171,7 @@ Tier 1 = the three books (5steps2024, premium2027, princeton) + the APUSH Unit 3
 - The structure: one vote per state regardless of size; no power to tax; no power to regulate trade between the states; amendments required unanimous (13/13) consent (Tier 1).
 - The 1781 impost: a five percent tax on imports to pay the war debts; twelve states approved, Rhode Island alone killed it (the undisputed core; the later 1783 attempt's blockers conflict across sources — not taught).
 - Shays' Rebellion (1786): the causes were crushing private debt plus heavy state taxes plus hard-currency demands — both books list debt and taxes (F-AOC-001); Daniel Shays, a Continental Army veteran, led hundreds of farmers (premium2027: "hundreds of Massachusetts farmers, led by veteran Daniel Shays"; 5steps2024: "a veteran of the Continental Army," "hundreds of protestors") — never "thousands" (F-AOC-005); the rebels shut the courts and marched on the Springfield arsenal; a privately raised militia put the rebellion down (5steps2024: "The rebels were dispersed by a privately raised militia"; Princeton: "private citizens organized to put the rebellion down").
-- The Northwest Ordinance (1787): 5steps2024: "Taken together, the Northwest Ordinances were the most consequential legislation passed during the period of the Articles of Confederation"; the provisions taught are schools, slavery banned north of the Ohio River, and new states equal to the original thirteen — never colonies (Tier 1).
+- The Northwest Ordinance (1787): 5steps2024: "Taken together, the Northwest Ordinances were the most consequential legislation passed during the period of the Articles of Confederation"; the provisions taught are survey/sale by township and school land (Land Ordinance of 1785, named as such in dialogue), slavery banned north of the Ohio River, and new states equal to the original thirteen — never colonies (Tier 1).
 - The Ohio country reality: Little Turtle's confederacy routed Harmar's army in 1790 and destroyed St. Clair's in 1791 at the Wabash (Britannica; F-AOC-004 corrected); over six hundred Americans killed — the worst U.S. Army defeat at Native hands; Wayne's victory at Fallen Timbers (1794); the Treaty of Greenville (1795), the tribes ceding most of Ohio (Tier 1 + Britannica).
 - Annapolis 1786: only five states showed up; Hamilton used the flop to call the Philadelphia convention (the script's "five states" stands; Princeton's "only five delegates" is the apparent book error — no book-error registration per section 7).
 - The Beard thesis: the historian Charles Beard argued the framers were protecting their money and their class — the rescue vs counter-revolution debate (Tier 1).

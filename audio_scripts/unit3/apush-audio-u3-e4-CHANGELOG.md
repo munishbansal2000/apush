@@ -1,5 +1,13 @@
 # U3-E4 Changelog — "Declaring Independence" (Episode 21)
 
+## 2026-10-09: review fixes (video2/out/review/scripts-e4-e6.md)
+- Post-war slavery line: "and that was about it" → "a handful of northern states followed in the 1780s; in the South it stayed."
+- Time-travel: the "Republican motherhood" sentence moved from Marcus (1776 voice) to a new Maya turn framed "after the war."
+- Deleted Declaration passage: "blaming American slavery on the king… would have walked" → "blaming the slave trade on the king… cut it out to placate South Carolina and Georgia."
+- Prediction beat: "June 1776" → "early June 1776."
+- TTS: numeric dates in dialogue spelled out (June seventh, July first/second/fourth).
+- Header: word count 2,136, 60s pauses, 12.9 min; v4 line corrected to 60s pauses / 12.8 min. "Thirteen minutes" promise holds. Parse check: 6 pauses, all 10s.
+
 ## v2 — 2026-10-06: full rebuild to the frozen 2026-10-06 standards
 Replaces the archived v1 debate draft (8.2 min, Marcus-solo-era prose, no boxes,
 no exam devices, 2-second pauses, no disclosure, no changelog discipline).

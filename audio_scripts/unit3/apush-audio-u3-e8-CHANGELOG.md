@@ -3,6 +3,18 @@
 Every version is kept as a separate file. Nothing is overwritten.
 This log records what changed between versions and why.
 
+## 2026-10-09 — review fixes to LOCKED (video2/out/review/scripts-e7-e9.md); v4-DRAFT left untouched
+- Fact: "a coalition of a majority of the whole society could seldom take place" is Federalist 51, not 10. Kept the quote, re-credited: Marcus "He came back to it in Federalist 51: ..."; self-test A1 "As Federalist 51 puts it, a majority coalition 'could seldom take place'" (Fed 51 makes the same extended-republic argument, so the reasoning holds).
+- Exchange logic / time travel: cut Henry's "Madison, Madison, Madison ... Hamilton wrote 51 ... credits the wrong author" jab and Marcus's "Fair. Hamilton wrote the bulk ..." reply (attack landed on nothing; authorship was not public in 1788). Henry now says "Then let Publius answer this", "your Publius ... his Federalist 78", "Publius wrote in Federalist 84".
+- Cold open: "sworn to secrecy" -> "meeting in secret" (F-U3-040).
+- Quote disclosure: "the quotes you'll hear are Henry's real words" -> "you'll hear Henry's real arguments, and some of his recorded words; 'smelt a rat' is how others reported it." Read note updated to match.
+- "Rhode Island never called a ratifying convention" -> "refused to call a ratifying convention" (it did in 1790).
+- "It counted enslaved people as three-fifths of a person" -> "It counted three-fifths of the enslaved population toward House seats."
+- Self-test A3: "bought the votes" -> "won the votes".
+- Final line: "ratified by 19 votes in Massachusetts and 3 in New York, and it survived because" -> "squeaked through Massachusetts by 19 votes and New York by 3, and it held partly because".
+- Pauses: all six retagged to [10-second pause] (were 8/8/15/20/15/5 = 71s; header had wrongly said 119s). Read note pause description updated.
+- Word count 1,822 -> 1,789; experienced runtime 1,789/180 + 60s = ~10.9 min; header "~11 min ... + 60s pauses"; cold-open promise "Twelve minutes" -> "Eleven minutes". Parse check: 6 pauses, all 10s. Gates PASS (--minutes 11).
+
 ## v1 — `apush-audio-u3-e8-script-v1-DRAFT.md` (1,462 words)
 Original draft from the script pipeline. Debate (Maya moderates; Marcus
 Federalist; Henry as Patrick Henry, Anti-Federalist). Passed the old
