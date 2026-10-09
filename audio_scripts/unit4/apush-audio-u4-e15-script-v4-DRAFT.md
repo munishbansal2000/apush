@@ -57,7 +57,7 @@ Rafael: [intense] What the North kept forgetting: Mexico had already banned slav
 
 Maya: Which is exactly why it exploded. Your turn: if slavery was already illegal there, why did one sentence nearly break Congress? Think about who wanted the West next.
 [10-second pause]
-What drove the explosion was who'd settle the West next: Northern free-labor men wanted the new land for white settlers, with no slave labor to compete against. Southerners heard the territories closing to them for good. The House passed it again and again. The Senate never did. And the vote ran on the sectional line: North against South.
+Maya: What drove the explosion was who'd settle the West next: Northern free-labor men wanted the new land for white settlers, with no slave labor to compete against. Southerners heard the territories closing to them for good. The House passed it again and again. The Senate never did. And the vote ran on the sectional line: North against South.
 
 Maya: [sheepish] So the Wilmot Proviso banned slavery in the new territories, and the South walked out of Congress over it, right?
 
@@ -125,7 +125,7 @@ Maya: Same logic as before, in your own words: it ran on who'd settle the West n
 
 Maya: Three, stimulus. Real words, from Ulysses Grant, writing nearly forty years later: "I do not think there was ever a more wicked war than that waged by the United States on Mexico." On the exam, what's Grant doing with this source?
 [10-second pause]
-He's handing you the war's moral verdict from the inside: a veteran calling his own war unjust. Pair it with the facts: twenty-one months, Palo Alto to Mexico City, "fast, and lopsided." Disease killed far more than bullets, on both sides — the histories agree on that, even where the numbers get foggy.
+Maya: He's handing you the war's moral verdict from the inside: a veteran calling his own war unjust. Pair it with the facts: twenty-one months, Palo Alto to Mexico City, "fast, and lopsided." Disease killed far more than bullets, on both sides — the histories agree on that, even where the numbers get foggy.
 
 Maya: One more, fast. The treaty: date and price.
 [10-second pause]
