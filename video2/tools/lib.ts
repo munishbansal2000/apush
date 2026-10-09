@@ -79,7 +79,9 @@ export const audioPath = (episode: string, turnId: string) => join(PUBLIC, 'audi
 
 export function ffprobeDuration(file: string): number {
   const out = execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'default=nw=1:nk=1', file], { encoding: 'utf8' });
-  return Number(out.trim());
+  const sec = parseFloat(out);
+  if (!Number.isFinite(sec)) throw new Error(`ffprobe could not read the duration of ${file}: ${JSON.stringify(out.trim())}`);
+  return sec;
 }
 
 export function listFiles(dir: string, exts: RegExp): string[] {
@@ -101,7 +103,9 @@ export function listFiles(dir: string, exts: RegExp): string[] {
  * RMS per frame-sized chunk, mapped from [-50, -10] dBFS.
  */
 export function audioLevels(file: string, fps: number): number[] {
-  const sr = Number(execFileSync('ffprobe', ['-v', 'error', '-select_streams', 'a:0', '-show_entries', 'stream=sample_rate', '-of', 'csv=p=0', file], { encoding: 'utf8' }).trim());
+  // parseInt: CSV output may carry trailing fields on newer ffprobe ("44100,").
+  const sr = parseInt(execFileSync('ffprobe', ['-v', 'error', '-select_streams', 'a:0', '-show_entries', 'stream=sample_rate', '-of', 'csv=p=0', file], { encoding: 'utf8' }), 10);
+  if (!Number.isFinite(sr) || sr <= 0) throw new Error(`ffprobe could not read the sample rate of ${file}`);
   const n = Math.round(sr / fps);
   const raw = execFileSync('ffmpeg', ['-v', 'error', '-i', file, '-af', `asetnsamples=n=${n}:p=0,astats=metadata=1:reset=1,ametadata=print:key=lavfi.astats.Overall.RMS_level:file=-`, '-f', 'null', '-'], { encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 });
   return [...raw.matchAll(/RMS_level=(-?[\d.]+|-inf)/g)].map(m => {

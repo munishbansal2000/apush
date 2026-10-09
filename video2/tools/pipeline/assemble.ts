@@ -15,8 +15,7 @@ export function assembleEpisode(segmentFiles: string[], narrationTrack: string, 
   const temp = `${output}.assembling.mp4`;
   ffmpeg(['-f', 'concat', '-safe', '0', '-i', concat, '-i', narrationTrack, '-map', '0:v:0', '-map', '1:a:0',
     '-c:v', 'copy', '-c:a', 'copy', '-t', totalSec.toFixed(6), '-movflags', '+faststart', temp]);
-  const streams = execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'stream=codec_type', '-of', 'csv=p=0', temp], {encoding: 'utf8'})
-    .split(/\s+/).filter(Boolean).sort();
+  const streams = probeStreams(temp).map(s => s.codec_type ?? '?').sort();
   if (streams.join(',') !== 'audio,video') {
     unlinkSync(temp);
     throw new Error(`assembled video must have exactly one video and one audio stream, got: ${streams.join(', ')}`);
@@ -33,7 +32,15 @@ export function assembleEpisode(segmentFiles: string[], narrationTrack: string, 
   renameSync(temp, output);
 }
 
+// JSON, not CSV: CSV output varies between ffprobe versions (newer ones add trailing fields, "video,").
+export function probeStreams(file: string, select?: string): {codec_type?: string; duration?: string}[] {
+  const out = execFileSync('ffprobe', ['-v', 'error', ...(select ? ['-select_streams', select] : []), '-show_entries', 'stream=codec_type,duration', '-of', 'json', file], {encoding: 'utf8'});
+  return (JSON.parse(out) as {streams?: {codec_type?: string; duration?: string}[]}).streams ?? [];
+}
+
 function streamDuration(file: string, kind: 'v' | 'a'): number {
-  const out = execFileSync('ffprobe', ['-v', 'error', '-select_streams', `${kind}:0`, '-show_entries', 'stream=duration', '-of', 'csv=p=0', file], {encoding: 'utf8'});
-  return Number(out.trim());
+  const duration = Number(probeStreams(file, `${kind}:0`)[0]?.duration);
+  // An unreadable duration must fail the check, not slip past it (NaN compares false).
+  if (!Number.isFinite(duration)) throw new Error(`could not read the ${kind === 'v' ? 'video' : 'audio'} stream duration of ${file}`);
+  return duration;
 }
