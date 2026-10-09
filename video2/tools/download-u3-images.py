@@ -21,6 +21,7 @@ Usage: python tools/download-u3-images.py --all                 every Unit 3 cat
        python tools/download-u3-images.py --lesson u3e1 --register-only   (no network: move + register files on disk)
 """
 import hashlib
+import http.client
 import json
 import os
 import random
@@ -107,8 +108,29 @@ def tiff_to_jpeg(path):
         return None
     out = path.with_suffix(".jpg")
     with Image.open(path) as im:
-        im.convert("RGB").save(out, "JPEG", quality=92)
-    path.unlink()
+        # Pillow opens TIFFs lazily. Materialize and explicitly close the
+        # converted image so its TIFF decoder/file mapping is released before
+        # Windows is asked to remove the source file.
+        im.load()
+        rgb = im.convert("RGB")
+        try:
+            rgb.save(out, "JPEG", quality=92)
+        finally:
+            rgb.close()
+
+    # Windows, antivirus, and image indexers can retain a just-closed TIFF for
+    # a short time. The JPEG is already complete, so cleanup must not abort the
+    # entire resumable download. Retry briefly, then leave the redundant TIFF
+    # for a later run while continuing with the valid JPEG.
+    for attempt in range(5):
+        try:
+            path.unlink()
+            break
+        except PermissionError:
+            if attempt == 4:
+                print(f"    warning: converted {path.name}, but it is still locked; leaving the TIFF in place")
+                break
+            time.sleep(0.25 * (attempt + 1))
     return out
 
 
@@ -209,6 +231,9 @@ def fetch(url, throttle):
                 if not ctype.startswith("image/"):
                     raise ValueError(f"not an image ({ctype or 'no content type'})")
                 data = resp.read()
+                declared = resp.headers.get("Content-Length")
+                if declared and len(data) != int(declared):
+                    raise http.client.IncompleteRead(data, int(declared) - len(data))
             throttle.ok(url)
             if len(data) < MIN_BYTES:
                 raise ValueError(f"too small ({len(data) // 1024}KB), likely a thumbnail or error page")
@@ -225,8 +250,10 @@ def fetch(url, throttle):
                 delay *= 2
                 continue
             raise ValueError(f"HTTP {e.code}")
-        except (urllib.error.URLError, TimeoutError, ConnectionError) as e:
+        except (urllib.error.URLError, http.client.IncompleteRead,
+                http.client.RemoteDisconnected, TimeoutError, ConnectionError) as e:
             if attempt < 4:
+                print(f"      interrupted download ({str(getattr(e, 'reason', e))[:100]}), retrying in {delay}s")
                 time.sleep(delay)
                 delay *= 2
                 continue

@@ -95,7 +95,7 @@ async function main() {
           // the same chat, where the model still has the full prompt and draft,
           // instead of immediately repeating the expensive request from scratch.
           // This replaces any review follow-up: a review may answer with a patch, and a patch needs a parsed draft.
-          effectiveFollowup = 'Your previous response was truncated or malformed and is not valid JSON. Return the COMPLETE corrected JSON object again. Preserve all required content, but make it compact: omit whitespace, redundant entries, optional empty arrays, and optional empty objects. Return JSON only, with every array and object closed. Do not explain the repair.';
+          effectiveFollowup = `Your previous response is not valid JSON (${error.message}). Repair that exact response in this same chat; do not redo the research or planning. Return the COMPLETE corrected JSON object again. Preserve all required content, but make it compact: omit whitespace, redundant entries, optional empty arrays, and optional empty objects. Return JSON only, with every property name double-quoted and every array and object closed. Do not explain the repair.`;
           console.warn(`[meta-ui] draft is not valid JSON; requesting a compact same-chat repair: ${error.message}`);
         }
         if (effectiveFollowup) {
@@ -105,7 +105,25 @@ async function main() {
           });
           atomicWrite(`${outStem}.review.raw.md`, `${reviewed.text}\n`);
           atomicWrite(`${outStem}.review.raw.attempt-${attempt}.md`, `${reviewed.text}\n`);
-          parsed = extractJson(reviewed.text);
+          let candidateText = reviewed.text;
+          const sameChatRepairs = Math.max(0, Number(value('same-chat-repairs', process.env.META_SAME_CHAT_REPAIRS || '2')) || 0);
+          for (let repair = 0; ; repair++) {
+            try {
+              parsed = extractJson(candidateText);
+              break;
+            } catch (error) {
+              if (repair >= sameChatRepairs) throw error;
+              const repairNumber = repair + 1;
+              console.warn(`[meta-ui] same-chat response is still invalid JSON; repair ${repairNumber}/${sameChatRepairs}: ${error.message}`);
+              const repairPrompt = `The response you just returned is still not valid JSON: ${error.message}\n\nFix ONLY its JSON syntax in this same chat. Do not repeat the research or reasoning. Return the complete compact JSON object from the opening { through the closing }. No markdown, commentary, citations, or text outside the object. Verify every property name uses double quotes and every array/object is closed before sending.`;
+              const repaired = await meta.send(page, repairPrompt, debugDir, `${path.basename(out, '.json')}-json-repair-${repairNumber}-attempt-${attempt}`, {
+                attachments: [], timeoutMs: Number(value('timeout-sec', '1200')) * 1000,
+              });
+              candidateText = repaired.text;
+              atomicWrite(`${outStem}.json-repair-${repairNumber}.raw.md`, `${candidateText}\n`);
+              atomicWrite(`${outStem}.json-repair-${repairNumber}.raw.attempt-${attempt}.md`, `${candidateText}\n`);
+            }
+          }
         }
         atomicWrite(out, `${JSON.stringify(parsed, null, 2)}\n`);
         if (attempt > 1) console.log(`[meta-ui] valid JSON received on attempt ${attempt}/${attempts}`);

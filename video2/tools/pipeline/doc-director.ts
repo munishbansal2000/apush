@@ -251,17 +251,56 @@ export const ACT_SELF_CHECK = `re-check your shots against every rule above (${A
 export const selfCheckFor = (followup: string) => (followup === ACT_REVIEW || followup === ACT_REVIEW_FULL ? ACT_SELF_CHECK : followup);
 
 /** Structural checks on one act before assembly (everything else is checked on the merged plan). */
-export function validateAct(raw: unknown, index: number, outline: Outline): {act?: ActOutput; issues: string[]} {
+export function validateAct(raw: unknown, index: number, outline: Outline, turns: PipelineTurn[], durations: number[]): {act?: ActOutput; issues: string[]} {
   const issues: string[] = [];
   const a = raw as ActOutput;
   const {from, to} = outline.acts[index].turns;
   if (!a || !Array.isArray(a.shots) || !a.shots.length) return {issues: ['act output must be {"shots": [...]} with at least one shot']};
+  const questionCounts = new Map<number, number>();
   a.shots.forEach((shot, n) => {
     const turn = shot?.at?.turn;
-    if (!Number.isInteger(turn) || turn < from || turn > to) issues.push(`shot index ${n}: "at" turn ${turn} is outside this act (turns ${from}-${to})`);
+    const where = `shot ${n + 1}`;
+    if (!Number.isInteger(turn) || turn < from || turn > to) {
+      issues.push(`${where}: "at" turn ${turn} is outside this act (turns ${from}-${to})`);
+      return;
+    }
+    const turnKind = turns[turn]?.kind;
+    if (turnKind === 'pause') {
+      if (shot.type !== 'question') issues.push(`${where}: turn ${turn} is a pause; replace this ${shot.type} with exactly one {"type":"question","at":{"turn":${turn}},...} shot (no phrase)`);
+      else {
+        questionCounts.set(turn, (questionCounts.get(turn) ?? 0) + 1);
+        if ('phrase' in shot.at && shot.at.phrase !== undefined) issues.push(`${where}: a question pause anchor is {"turn":${turn}} with no phrase`);
+      }
+    } else if (shot.type === 'question') {
+      issues.push(`${where}: question shots must anchor to a pause turn; turn ${turn} is ${turnKind ?? 'missing'}`);
+    }
+
+    // Nested animation cues are either spoken phrases or offsets from the
+    // containing shot. A pause turn is only legal as the top-level anchor of a
+    // question shot; accepting it here defers an impossible repair until the
+    // fully assembled plan.
+    const nested: {label: string; at: unknown}[] = shot.type === 'map'
+      ? [
+          ...(shot.camera ?? []).map((v, i) => ({label: `camera ${i + 1}`, at: v.at})),
+          ...(shot.fills ?? []).map((v, i) => ({label: `fill ${i + 1}`, at: v.at})),
+          ...(shot.lines ?? []).map((v, i) => ({label: `line ${i + 1}`, at: v.at})),
+          ...(shot.points ?? []).map((v, i) => ({label: `point ${i + 1}`, at: v.at})),
+          ...(shot.labels ?? []).map((v, i) => ({label: `label ${i + 1}`, at: v.at})),
+        ]
+      : shot.type === 'point'
+        ? (shot.bullets ?? []).map((v, i) => ({label: `bullet ${i + 1}`, at: v.at}))
+        : [];
+    for (const cue of nested) if (object(cue.at) && Number.isInteger(cue.at.turn) && turns[cue.at.turn as number]?.kind === 'pause') {
+      issues.push(`${where} ${cue.label}: turn ${cue.at.turn} is a pause; use {"offset":seconds} inside a shot, or a top-level question shot`);
+    }
   });
   if (a.shots[0]?.at?.turn !== from) issues.push(`the first shot must start in turn ${from}`);
-  for (const [n, y] of (a.years ?? []).entries()) if (!Number.isInteger(y?.at?.turn) || y.at.turn < from || y.at.turn > to) issues.push(`year index ${n}: turn is outside this act`);
+  for (let turn = from; turn <= to; turn++) {
+    if (turns[turn]?.kind !== 'pause' || durations[turn] < LOOK_RULES.questionPauseSec) continue;
+    const count = questionCounts.get(turn) ?? 0;
+    if (count !== 1) issues.push(`turn ${turn}: ${durations[turn]}s pause needs exactly one question shot, got ${count}`);
+  }
+  for (const [n, y] of (a.years ?? []).entries()) if (!Number.isInteger(y?.at?.turn) || y.at.turn < from || y.at.turn > to) issues.push(`year ${n + 1}: turn is outside this act`);
   return issues.length ? {issues} : {act: a, issues};
 }
 
@@ -422,7 +461,7 @@ export function directDocumentary(io: DirectorIO, input: DirectorInputs, maxRepa
     sources[i] = path;
     const answer = readActAnswer(path, base);
     if (isFullAct(answer.raw)) latest[i] = answer.raw as ActOutput;
-    const checked = answer.issues.length ? {act: undefined, issues: answer.issues} : validateAct(answer.raw, i, outline!);
+    const checked = answer.issues.length ? {act: undefined, issues: answer.issues} : validateAct(answer.raw, i, outline!, input.turns, input.timing.durations);
     log.push({stage, source: path, issues: checked.issues});
     acts[i] = checked.act;
     if (checked.act) problems.delete(i); else problems.set(i, checked.issues);
