@@ -1,5 +1,5 @@
 # U3-CRAM — Cram Session: Maya + Jay (Fish Audio)
-# Unit 3 Cram: Revolution and Republic, eleven episodes in one. ~15.5 min experienced (2,351 words speech + 140s pauses)
+# Unit 3 Cram: Revolution and Republic, eleven episodes in one. ~15 min experienced (2,351 words speech + 130s pauses)
 # Draft v3 (2026-10-07): fleet repair of the v2 audit (2 blockers, 4 minors). Direction-tag density 96%→~35% — workhorse
 # [conversational]/[casual] stripped wherever no beat genuinely earned one; catalog beats kept (cold-open broadcast, correction
 # myth-busts firm, grim serious, genuine-question curious, caught-wrong sheepish, takeaway confident, closer intrigued).
@@ -17,7 +17,6 @@
 # and malicious writing"; Jefferson's first-inaugural "We are all Republicans; we are all Federalists"; Webster's "A national
 # language is a band of national union" (the line credited to his 1789 Dissertations — Tier-1 books confirm the speller facts,
 # not the quote; see M4); Lee's resolution wording "free and independent States." No dramatized dialogue in this episode.
-
 Maya: [professional broadcast tone] Last time: power changed hands — but the hands stayed few. Jefferson's revolution, and the asterisk. Now: no new material. Eleven episodes, eleven questions, seventeen sixty-three to eighteen hundred, in about thirteen and a half minutes. From the bill coming due to the spelling book. Jay's holding the list. The dare: say every answer out loud before I do. Circle the ones you couldn't explain right now.
 
 Jay: Question one. The bill comes due. Why did London end the free ride after seventeen sixty-three?
@@ -236,7 +235,7 @@ Maya: [intrigued] Eleven episodes: the battlefield settled the war. The argument
 
 Jay: [intrigued] Next time: Unit Four opens with the Louisiana Purchase.
 
-## Sources (production footer — strip before TTS)
+## Sources (production-only, never spoken)
 # Cross-checked against all eleven rebuilt Unit 3 episodes — zero contradictions, zero references to dropped content:
 # - U3-E1 v2 (The Bill Comes Due): end of salutary neglect (Grenville, debt "enormous" unpinned), Proclamation Line Oct 1763 (treasury
 #   motive, not revenge), Pontiac's Rebellion 1763 (Neolin prophet / Pontiac Ottawa war chief), Paxton mirror noted but unasked here.

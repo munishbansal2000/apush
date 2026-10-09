@@ -1,9 +1,8 @@
 # U3-E10 — Debate: Maya moderates, Marcus (Federalist) vs Haswell (1798–1800 voice)
 # Episode 27: Adams and the Alien and Sedition Acts. DRAFT v5.
-# Word count: 2,047 spoken words (pause tags stripped). Experienced runtime ~12.5 min (speech at ≤180 WPM + 68s scripted pauses).
+# Word count: 2,047 spoken words (pause tags stripped). Experienced runtime ~12.5 min (speech at ≤180 WPM + 50s pauses).
 # Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Maya moderates; Marcus argues the Federalist case as a 1798–1800 advocate — his knowledge stops at 1800, and he cannot know how the Acts aged; Haswell speaks as Anthony Haswell, the Vermont newspaper editor actually prosecuted under the Sedition Act, in his own 1798–1800 voice — measured, never a caricature; the afterlife of the Acts is Maya's modern voice only. Strip this header, the read note, and every [N-second pause] tag before TTS; convert pause tags to real silence. Tagline dash carries a held breath — do not rush it.
 # Pronunciation: Talleyrand (TAL-ee-rand), Haswell (HAZ-wel), Pinckney (PINK-nee), Gerry (GEH-ree).
-
 Maya: [professional broadcast tone] Last time: the parties we just built turn on each other, and on France. Now, 1798: American diplomats sail to Paris, and the French foreign minister's men hand them a price list: a quarter of a million dollars in bribes just to start talking. America answers with warships, and Congress passes a law that can jail a man for printing words against the government. Four boxes tonight. One: the XYZ Affair and the Quasi-War. Two: the four Alien and Sedition Acts, and what each one did. Three: the Republican counterattack, the Virginia and Kentucky Resolutions, and compact theory. Four: the election of 1800, and the verdict. Circle the ones you couldn't explain right now. Twelve and a half minutes. Every one of them gets argued tonight.
 
 Maya: One ground rule. You'll hear real quotes tonight: the Sedition Act's words, the First Amendment, the Kentucky Resolutions' nullification line, and the famous reply to the French. I'll flag each one. The debate is dramatized: Marcus and Haswell argue the real positions of 1798, but their back-and-forth is ours. Marcus's knowledge stops at 1800. The afterlife is my territory only.
@@ -22,7 +21,8 @@ Haswell: [intense] The threat was real. The answer was aimed somewhere else. Fra
 
 Marcus: Because a government can't fight a war with its own press cheering the enemy. French agents are operating in America, their sympathizers run the Republican papers, and those papers print poison every week while our sailors are taken. Many nations in history have drawn this line in wartime.
 
-Maya: Your turn. Adams holds the dispatches, proof of the bribe demand. Publish or sit on them: does publishing help him or hurt him? [10-second pause]
+Maya: Your turn. Adams holds the dispatches, proof of the bribe demand. Publish or sit on them: does publishing help him or hurt him?
+[10-second pause]
 
 Maya: It helps him, enormously. A diplomatic insult becomes a national one, which quiets the Republicans who'd cheered France and hands Adams his war fever. Published evidence converts embarrassment into outrage. If an SAQ asks for a cause of the Quasi-War, give the mechanism: a published bribe demand turning embarrassment into national outrage.
 
@@ -102,25 +102,30 @@ Marcus: You did. Jefferson, Kentucky, nullify. Madison, Virginia, interpose. The
 
 Maya: Three questions, AP-shaped. Say your answer before I give it.
 
-Maya: First. A 1798 document says that when the federal government assumes powers never delegated, quote, "its acts are unauthoritative, void, and of no force." End quote. Which resolution, and what doctrine? [10-second pause]
+Maya: First. A 1798 document says that when the federal government assumes powers never delegated, quote, "its acts are unauthoritative, void, and of no force." End quote. Which resolution, and what doctrine?
+[10-second pause]
 
 Maya: The Kentucky Resolutions, Jefferson in secret. The doctrine is nullification — the quote only makes sense if the Constitution is a compact among the states, a deal the states can police. And the giveaway is the verb "void."
 
-Maya: Second. Adams publishes the XYZ dispatches, the agents' names replaced by X, Y, and Z. Explain the effect on public opinion, and connect it to the Quasi-War. [10-second pause]
+Maya: Second. Adams publishes the XYZ dispatches, the agents' names replaced by X, Y, and Z. Explain the effect on public opinion, and connect it to the Quasi-War.
+[10-second pause]
 
 Maya: Publication turned a diplomatic insult into a national one — a country split over France rallied behind "millions for defense, but not one cent for tribute," and Congress funded the naval buildup. Outrage needs a visible trigger, and a published bribe demand was it.
 
-Maya: Third. Sort by target: the Naturalization Act, the Alien Friends Act, the Sedition Act. Who does each hit? [10-second pause]
+Maya: Third. Sort by target: the Naturalization Act, the Alien Friends Act, the Sedition Act. Who does each hit?
+[10-second pause]
 
 Maya: Naturalization targeted immigrants who'd vote Republican — fourteen years instead of five. The Alien Friends Act gave the president peacetime deportation power over foreign residents he called dangerous. And the Sedition Act put Republican editors and critics in jail for words. Three different targets, one political strategy.
 
-Maya: One more, fast. The Sedition Act died by repeal, court ruling, or expiration? [10-second pause] Expiration. It lapsed on Adams's last day, and Jefferson pardoned the convicted.
+Maya: One more, fast. The Sedition Act died by repeal, court ruling, or expiration?
+[10-second pause]
+Expiration. It lapsed on Adams's last day, and Jefferson pardoned the convicted.
 
 Maya: [professional broadcast tone] Criticism isn't treason. The voters said so in 1800, and every frightened generation since has had to decide the case again.
 
 Maya: [confident tone] Next time: the Revolution of 1800, the tie that threw the election into the House, and the first peaceful transfer of power between parties. Check your boxes.
 
-## Sources (not spoken)
+## Sources (production-only, never spoken)
 - Tier 1: 5steps2024 ch11 (XYZ: Talleyrand's three agents demanded a bribe, Americans refused, X/Y/Z code names, public support; Quasi-War 1798–1800 undeclared naval war; Convention of 1800: France compensated for seized ships, 1778 alliance terminated; Alien & Sedition Acts: "two laws in 1798," KY/VA Resolves — Jefferson authored Kentucky, Madison Virginia — "states had no obligation to respect unconstitutional laws," laid foundation for nullification and states' rights; KY Resolutions quote "unauthoritative, void, and of no force"); 5steps2024 ch12 (election of 1800: Jefferson 73 / Adams 65, Burr also 73, thrown to the House, 35 deadlocked ballots + 36th decided via Hamilton, Twelfth Amendment 1804, "Revolution of 1800" = first party transfer of presidency, Jefferson "allowed the hated Alien and Sedition Acts to lapse," "We are all Republicans; we are all Federalists"); prem27 ch5 (XYZ: 300+ ships seized, $250,000 bribe + loan — book says "$12 million loan," verified error, correct $10M (F-U3-051); X/Y/Z, Quasi-War 1798–1800; four acts: Naturalization, Sedition "defame the president or Congress," Alien Friends + Alien Enemies "imprison and deport noncitizens" — verified conflation, Friends Act is deportation-only (F-U3-052); KY/VA Resolutions 1798–1799, nullification, reemerged in Tariff of Abominations / Nullification Crisis); princeton ch7 (XYZ: Adams published report with X/Y/Z, public turned anti-French, Quasi-War naval skirmishes; Alien & Sedition Acts: expel foreigners, jail editors for "scandalous and malicious writing," aimed at immigrant Democratic-Republican support; VA/KY Resolutions anonymous, states' right to judge constitutionality = nullification, resolutions declared Acts void but never blocked enforcement; Naturalization passage says 5→15 years — verified book error, correct is 14 (see registry F-U3-049); prem27's "$12 million loan" — verified book error, correct is $10M + $250k bribe (F-U3-051); prem27's "imprison and deport noncitizens" for the Alien Friends Act conflates the Enemies Act's wartime powers (F-U3-052)); Norris Period 3 speed review (A&S: illegal for newspapers to criticize government; led to Adams's downfall, lost 1800 to Jefferson); Heimler APUSH Unit 3 review transcript (A&S under Adams: silenced dissent against Federalist policy, response to fears of foreign influence; VA/KY resolutions declared Acts unconstitutional and null/void).
 - Verification references (the standard's Tier 2 is Britannica + NPS only — HISTORY, National Geographic, and americanhistorycentral are standard-account references, NOT Tier-2 sources): Naturalization Act 5→14 years — princeton's "5 to 15 years" is a verified book error (F-U3-049); 1800 House vote: 35 deadlocked ballots Feb 11–17, 1801, Jefferson elected on the 36th — princeton's "35 ballots" is a verified book error (F-U3-050); XYZ demand $250,000 bribe + $10 million loan (Britannica) — prem27's "$12 million loan" is a verified book error (F-U3-051); Alien Friends Act = deportation only — prem27's "imprison and deport" conflates the Enemies Act's wartime powers (F-U3-052); KY/VA stood alone, no other state adopted them (National Geographic: rejected by the other states) — standard account, NOT Tier-2-verified; Layer 3 to pin or hedge.
 - Standard accounts beyond Tier 1–2 (disclosed in dialogue where used): "No! No! Not a sixpence!" is the reported line, disclosed as such in dialogue; "millions for defense, but not one cent for tribute" is a reported toast, disclosed as such in dialogue; Adams never ordered a deportation under the Alien Friends Act (hedged in dialogue as "as far as the record shows" — Layer 3 to pin or decide the hedge suffices); Jefferson pardoned those convicted under the Sedition Act (standard account — Layer 3 to pin); the Sedition Act expired on Adams's last day in office (v2's exact "March 3rd, 1801" softened — Tier 1 verifies "lapse"/"not renewed" only); the Alien Enemies Act remains on the books (Maya's modern voice only); the truth-defense as an advance on English seditious libel (standard legal history — Layer 3 to pin or hedge). CUT in v3 as unverifiable in Tier 1/2 — Layer 3 may restore with Britannica/NPS pins: Haswell case specifics (lottery ad for Lyon's fine, "hard-hearted savage," midnight arrest, fifty-mile ride, Paterson's truth-defense jury instruction, $200 fine, ~2 months in Bennington jail); Lyon ($1,000 fine, 4 months in jail, re-elected from his cell, the "ridiculous pomp" letter wording); Bache (arrested for his newspaper, died of yellow fever before trial).

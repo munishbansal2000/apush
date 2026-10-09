@@ -42,7 +42,8 @@ Maya: [incredulous] So I had it exactly backward. The famous part is the complai
 
 Marcus: Common mash. The Declaration states the case; the resolutions say what to do about it. And the ninth resolution, the vote, blew up the room.
 
-Maya: Hold on, your turn. Eleven resolutions sail through. Then one says it's the duty of women to secure "their sacred right to the elective franchise," the vote. A room of reformers, eighteen forty-eight. What happens? Call it before I tell you. [10-second pause]
+Maya: Hold on, your turn. Eleven resolutions sail through. Then one says it's the duty of women to secure "their sacred right to the elective franchise," the vote. A room of reformers, eighteen forty-eight. What happens? Call it before I tell you.
+[10-second pause]
 
 Maya: They table it — no way eighteen forty-eight is ready for that.
 
@@ -110,15 +111,18 @@ Maya: [catching] Sixty-eight women, thirty-two men. Wait, was it the other way a
 
 Marcus: Sixty-eight women, and the list survives to prove it.
 
-Maya: Three questions, AP-shaped. Say your answer before I give it. One: stimulus. "He has made her, if married, in the eye of the law, civilly dead." The prompt asks: what's the strategy behind this document's form? [10-second pause]
+Maya: Three questions, AP-shaped. Say your answer before I give it. One: stimulus. "He has made her, if married, in the eye of the law, civilly dead." The prompt asks: what's the strategy behind this document's form?
+[10-second pause]
 
 Maya: Look at the shape: Stanton copied the whole Declaration of Independence playbook and turned its charges on a new tyrant. So the reader must accept the logic or reject seventeen seventy-six. The evidence: "created equal" with two added words, grievances shaped like Jefferson's. The strategy underneath: if the founding promise is true, it covers women.
 
-Maya: Two: why did the ninth resolution nearly fail at Seneca Falls? [10-second pause]
+Maya: Two: why did the ninth resolution nearly fail at Seneca Falls?
+[10-second pause]
 
 Maya: Even allies thought demanding the vote was too radical. Mott's fear was that ridicule would sink the other ten. It passed after a real fight, and only after Douglass spoke for it.
 
-Maya: Three: the movement split after the Civil War. What was the fight actually about? [10-second pause]
+Maya: Three: the movement split after the Civil War. What was the fight actually about?
+[10-second pause]
 
 Maya: The Fifteenth Amendment. It barred denying the vote on account of race: Black men in, women out. Stanton and Anthony refused to back it without women; Stone and Blackwell said take the win and go state by state. Rival organizations, eighteen sixty-nine to eighteen ninety.
 
@@ -130,7 +134,7 @@ Maya: [confident tone] Check your four boxes. Next time we trade the chapel for 
 
 Marcus: [professional broadcast tone] Borrow the founding's words — then spend seventy-two years making the country mean them.
 
-## Sources
+## Sources (production-only, never spoken)
 - Barron's AP US History Premium 2027, Chapter 6 (Period 4) (~/workspace/apush/books/extracted/premium2027/) — Seneca Falls Convention 1848 (Stanton/Mott, abolitionist veterans, first public gathering for women's suffrage, demands beyond the vote, Declaration of Sentiments modeled on the Declaration of Independence, "all men and women are created equal"); convention met weeks AFTER the NY Married Women's Property Act (1848) passed (Chapter 12 answer key, 23_Chapter12.xhtml)
 - Barron's Premium 2027, Chapter 7 — the split: Fifteenth Amendment wording alienated women's advocates; Stanton/Anthony refused to support it; Lucy Stone/Henry Blackwell backed Reconstruction and state-by-state suffrage; NWSA (1869) vs AWSA (1869); merged 1890 as NAWSA
 - Barron's Premium 2027, Chapter 13 review — "at least seventy-two years of effort" from the Declaration of Rights and Sentiments (1848) to the Nineteenth Amendment (1920)
