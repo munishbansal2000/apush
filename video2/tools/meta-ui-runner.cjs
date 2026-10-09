@@ -21,6 +21,16 @@ function extractJson(text) {
   if (a < 0 || b < a) throw new Error(`Meta UI returned no JSON object: ${source.slice(0, 300)}`);
   return JSON.parse(source.slice(a, b + 1));
 }
+function isTransientMetaFailure(text) {
+  const value = String(text || '').replace(/\s+/g, ' ').trim();
+  return [
+    /sorry,? i (?:can(?:not|'t)|am unable to) help you with this request right now/i,
+    /(?:problems?|issue) on my side.*(?:try|again)/i,
+    /something went wrong.*(?:try|again)/i,
+    /please try again(?: later)?[.!]?$/i,
+  ].some(pattern => pattern.test(value));
+}
+const transientRetryPrompt = error => `Your last message was a temporary service error and did not answer the request (${error.message}). Retry the ORIGINAL request now using the full context already present in this chat. Do not redo external research and do not discuss the error. Return the complete requested JSON only.`;
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 function atomicWrite(file, text) {
@@ -86,6 +96,7 @@ async function main() {
         atomicWrite(`${outStem}.draft.raw.attempt-${attempt}.md`, `${response.text}\n`);
         let parsed;
         let effectiveFollowup = followupPrompt;
+        let recoveryLabel = 'director audit';
         try {
           parsed = extractJson(response.text);
           atomicWrite(`${outStem}.draft.json`, `${JSON.stringify(parsed, null, 2)}\n`);
@@ -95,11 +106,18 @@ async function main() {
           // the same chat, where the model still has the full prompt and draft,
           // instead of immediately repeating the expensive request from scratch.
           // This replaces any review follow-up: a review may answer with a patch, and a patch needs a parsed draft.
-          effectiveFollowup = `Your previous response is not valid JSON (${error.message}). Repair that exact response in this same chat; do not redo the research or planning. Return the COMPLETE corrected JSON object again. Preserve all required content, but make it compact: omit whitespace, redundant entries, optional empty arrays, and optional empty objects. Return JSON only, with every property name double-quoted and every array and object closed. Do not explain the repair.`;
-          console.warn(`[meta-ui] draft is not valid JSON; requesting a compact same-chat repair: ${error.message}`);
+          if (isTransientMetaFailure(response.text)) {
+            effectiveFollowup = transientRetryPrompt(error);
+            recoveryLabel = 'temporary-error retry';
+            console.warn(`[meta-ui] Meta returned a temporary error; retrying the original request in the same chat: ${response.text.trim().slice(0, 180)}`);
+          } else {
+            effectiveFollowup = `Your previous response is not valid JSON (${error.message}). Repair that exact response in this same chat; do not redo the research or planning. Return the COMPLETE corrected JSON object again. Preserve all required content, but make it compact: omit whitespace, redundant entries, optional empty arrays, and optional empty objects. Return JSON only, with every property name double-quoted and every array and object closed. Do not explain the repair.`;
+            recoveryLabel = 'JSON repair';
+            console.warn(`[meta-ui] draft is not valid JSON; requesting a compact same-chat repair: ${error.message}`);
+          }
         }
         if (effectiveFollowup) {
-          console.log(`[meta-ui] draft received; starting same-chat ${parsed && followupPrompt ? 'director audit' : 'JSON repair'}`);
+          console.log(`[meta-ui] draft received; starting same-chat ${parsed && followupPrompt ? 'director audit' : recoveryLabel}`);
           const reviewed = await meta.send(page, effectiveFollowup, debugDir, `${path.basename(out, '.json')}-review-attempt-${attempt}`, {
             attachments: [], timeoutMs: Number(value('timeout-sec', '1200')) * 1000,
           });
@@ -114,8 +132,11 @@ async function main() {
             } catch (error) {
               if (repair >= sameChatRepairs) throw error;
               const repairNumber = repair + 1;
-              console.warn(`[meta-ui] same-chat response is still invalid JSON; repair ${repairNumber}/${sameChatRepairs}: ${error.message}`);
-              const repairPrompt = `The response you just returned is still not valid JSON: ${error.message}\n\nFix ONLY its JSON syntax in this same chat. Do not repeat the research or reasoning. Return the complete compact JSON object from the opening { through the closing }. No markdown, commentary, citations, or text outside the object. Verify every property name uses double quotes and every array/object is closed before sending.`;
+              const transient = isTransientMetaFailure(candidateText);
+              console.warn(`[meta-ui] same-chat response is still ${transient ? 'a temporary error' : 'invalid JSON'}; repair ${repairNumber}/${sameChatRepairs}: ${error.message}`);
+              const repairPrompt = transient
+                ? transientRetryPrompt(error)
+                : `The response you just returned is still not valid JSON: ${error.message}\n\nFix ONLY its JSON syntax in this same chat. Do not repeat the research or reasoning. Return the complete compact JSON object from the opening { through the closing }. No markdown, commentary, citations, or text outside the object. Verify every property name uses double quotes and every array/object is closed before sending.`;
               const repaired = await meta.send(page, repairPrompt, debugDir, `${path.basename(out, '.json')}-json-repair-${repairNumber}-attempt-${attempt}`, {
                 attachments: [], timeoutMs: Number(value('timeout-sec', '1200')) * 1000,
               });
