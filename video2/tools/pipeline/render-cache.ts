@@ -16,7 +16,7 @@ export function sceneAssetHashes(scene: DirectedScene, publicDir: string): [stri
 
 /**
  * Visual inputs of scene `index`: the scene, its neighbours (transitions blend across the cut), and
- * plan-level overlays (roadmap ribbon labels, episode title).
+ * plan-level overlays (Episode Sheet boxes, episode title).
  */
 function visualInputs(plan: DirectedPlan, index: number, publicDir: string) {
   const neighbour = (i: number) => {
@@ -25,7 +25,7 @@ function visualInputs(plan: DirectedPlan, index: number, publicDir: string) {
   };
   return {
     title: plan.title,
-    roadmap: plan.roadmap ?? null,
+    boxes: plan.boxes ?? null,
     previous: neighbour(index - 1),
     current: neighbour(index),
     next: neighbour(index + 1),

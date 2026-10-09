@@ -22,8 +22,26 @@ export interface DirectedScene {
   turnIds: string[];
   props: Record<string, unknown>;
   transition?: 'cut' | 'crossfade' | 'dip';
-  /** 0-based roadmap box this scene covers; earlier boxes render as checked. */
-  roadmapIndex?: number;
+  /** One spoken cue per revealable item (panel, node, bar, marker, …), in item order. */
+  reveals?: PhraseAnchor[];
+  /** Resolved from `reveals`: absolute seconds each item appears. */
+  revealSec?: number[];
+  startSec?: number;
+  endSec?: number;
+}
+
+/** A phrase spoken in a turn; resolved to a time from Vosk words (tools/pipeline/anchors.ts). */
+export interface PhraseAnchor {turn: number; phrase: string}
+
+/** One Episode Sheet box: named at `intro`, covered over `turns`, checked off at `check`. */
+export interface PlanBox {
+  label: string;
+  intro: PhraseAnchor;
+  check: PhraseAnchor;
+  turns: {from: number; to: number};
+  /** Resolved seconds (filled by resolvePlanCues). */
+  introSec?: number;
+  checkSec?: number;
   startSec?: number;
   endSec?: number;
 }
@@ -32,8 +50,8 @@ export interface DirectedPlan {
   version: 1;
   episode: string;
   title: string;
-  /** Lesson roadmap box labels shown by the TimelineRibbon. */
-  roadmap?: string[];
+  /** Episode Sheet boxes (the lesson's "N boxes on your sheet"). */
+  boxes?: PlanBox[];
   scenes: DirectedScene[];
 }
 
@@ -258,16 +276,6 @@ export function normalizePlan(plan: DirectedPlan, turns: PipelineTurn[], starts:
   if (last !== turns.length - 1) throw new Error(`director plan stops at turn ${last}; expected ${turns.length - 1}`);
   const hasStagger = scenes.some(s => s.component === 'stagger');
   if (!hasStagger) throw new Error('director plan must include at least 1 stagger scene (4-box signature visual)');
-  // Roadmap validation
-  if (plan.roadmap !== undefined) {
-    if (!Array.isArray(plan.roadmap) || plan.roadmap.length < 2 || plan.roadmap.length > 5)
-      throw new Error('roadmap must be an array of 2-5 box labels');
-    for (const scene of scenes) {
-      const idx = scene.roadmapIndex;
-      if (idx !== undefined && (typeof idx !== 'number' || idx < 0 || idx >= plan.roadmap.length))
-        throw new Error(`${scene.id}: roadmapIndex ${idx} out of range for ${plan.roadmap.length} boxes`);
-    }
-  }
   return {...plan, scenes};
 }
 
