@@ -24,7 +24,7 @@
  * offending elements get red outlines.
  */
 import React, { useLayoutEffect, useRef, useState } from 'react';
-import { getRemotionEnvironment, useCurrentFrame, useVideoConfig } from 'remotion';
+import { continueRender, delayRender, getRemotionEnvironment, useCurrentFrame, useVideoConfig } from 'remotion';
 import type { Rect } from './layout';
 
 /** The subset of render-config the guard needs (RenderConfig satisfies it). */
@@ -262,8 +262,33 @@ export const LayoutGuard: React.FC<{ cfg: GuardCfg; rootRef: React.RefObject<HTM
   useLayoutEffect(() => {
     // On mount React runs this (child) layout effect before attaching the parent's rootRef, so a single-frame render
     // (renderStill, the first frame of a segment) would see null and never report. The DOM is already in place: find it.
-    const root = rootRef.current ?? document.querySelector<HTMLDivElement>('[data-kit-root]');
-    if (!root) return;
+    const find = () => rootRef.current ?? document.querySelector<HTMLDivElement>('[data-kit-root]');
+    const laidOut = (r: HTMLElement) => r.getBoundingClientRect().width > 0;
+    const root = find();
+    if (root && laidOut(root)) { report(root); return; }
+    // Not laid out yet (a single-frame render measures before the page has a size: percentage-sized panels collapse to
+    // their padding and every line of text looks cut). Hold the frame and measure once layout is in place.
+    const handle = delayRender('layout guard: waiting for layout');
+    let done = false;
+    let tries = 0;
+    let raf = 0;
+    const finish = (r: HTMLElement | null) => {
+      if (done) return;
+      done = true;
+      if (r) report(r);
+      continueRender(handle);
+    };
+    const tick = () => {
+      const r = find();
+      if (r && laidOut(r)) finish(r);
+      else if (++tries > 120) finish(r); // ~2s: measure what there is (against the frame size) rather than hang
+      else raf = requestAnimationFrame(tick);
+    };
+    raf = requestAnimationFrame(tick);
+    return () => { cancelAnimationFrame(raf); if (!done) { done = true; continueRender(handle); } };
+  });
+
+  function report(root: HTMLElement) {
     const { boxes, issues } = measureTracks(root, cfg, { width, height });
     // Heartbeat: proves the guard measured this frame, so a silent guard can't pass for a clean render.
     if (!studio) console.warn(`[kit-layout-ok] ${JSON.stringify({ frame, tracks: Object.fromEntries([...boxes].map(([id, b]) => [id, b.rect.map(v => +v.toFixed(3))])) })}`);
@@ -273,7 +298,7 @@ export const LayoutGuard: React.FC<{ cfg: GuardCfg; rootRef: React.RefObject<HTM
       last.current = key;
       setOutlines(issues);
     }
-  });
+  }
 
   if (!studio) return null;
   return (
