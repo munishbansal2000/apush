@@ -73,7 +73,9 @@ const serveUrl = await bundle({entryPoint: join(ROOT, 'src/directed-index.tsx')}
 const composition = await selectComposition({serveUrl, id: 'DirectedEpisode', inputProps, browserExecutable, logLevel: 'error'});
 const f = (t: number) => Math.round(t * composition.fps);
 const samples = [
-  {label: 'sheet arrives as boxes are named', frame: f(2.0)},
+  {label: 'sheet big mid-stage while boxes are named', frame: f(2.4)},
+  {label: 'sheet flying to the corner', frame: f(4.0)},
+  {label: 'sheet docked; Marcus took over from Maya', frame: f(4.8)},
   ...scenes.map(scene => ({label: `${scene.id} ${scene.component} mid`, frame: f(scene.startSec + sec / 2)})),
   {label: 's3 compare: left column only (before right cue)', frame: f(3 * sec + 1.2)},
   {label: 's4 chain: 2 of 4 nodes (cue-driven)', frame: f(4 * sec + 1.5)},
@@ -85,7 +87,7 @@ const logs: {label: string; frame: number; text: string}[] = [];
 const heartbeats: {label: string; frame: number; tracks: Record<string, number[]>}[] = [];
 for (const [i, sample] of samples.entries()) {
   await renderStill({
-    composition, serveUrl, inputProps, browserExecutable, logLevel: 'error', scale: 0.5, frame: sample.frame,
+    composition, serveUrl, inputProps, browserExecutable, logLevel: 'error', scale: 0.35, frame: sample.frame,
     output: join(outDir, 'stills', `${String(i).padStart(4, '0')}.png`),
     onBrowserLog: log => {
       if (log.text.startsWith('[kit-layout-ok]')) heartbeats.push({...sample, tracks: JSON.parse(log.text.slice('[kit-layout-ok]'.length)).tracks});

@@ -1,8 +1,9 @@
 /**
- * DirectedEpisode: renders a validated scene plan in the kit frame (src/data/render-config.json rects):
+ * DirectedEpisode: renders a validated scene plan in the kit frame at 1920×1080 (src/data/kit-render-config.json rects):
  *   - stage:      each scene renders at full composition size and is scaled into the stage rect
- *   - boxTracker: the kit Episode Sheet, driven by the plan's spoken box cues
- *   - head:       the kit HeadPair (speaker enlarged, audio-reactive from per-frame levels)
+ *   - boxTracker: the kit Episode Sheet, driven by the plan's spoken box cues; it opens large mid-stage while the
+ *                 boxes are named, then flies into its corner
+ *   - head:       only the current speaker (kit HeadFace art, audio-reactive from per-frame levels)
  *   - captions:   the kit CaptionLine, word-timed from Vosk
  * Every element sits in a guard <Track>, and <LayoutGuard> measures each rendered frame.
  * Transitions: crossfade overlaps the incoming scene over the outgoing one; dip fades out and back in.
@@ -23,10 +24,11 @@ import {captionChunks} from '../kit/captions';
 import {BoxTracker, CaptionLine, Vignette} from '../kit/components';
 import {GUARD_WRAPPER, LayoutGuard, Track} from '../kit/guard';
 import type {RenderConfig} from '../kit/layout';
-import {HeadPair} from '../kit/overlays';
 import type {TimelineTurn, WordTimesFile} from '../kit/types';
+import {ActiveHead, activeSpeakerAt} from './ActiveHead';
+import {sheetTransform} from './boxIntro';
 import {RevealProvider} from './reveal';
-import renderConfigJson from '../data/render-config.json';
+import renderConfigJson from '../data/kit-render-config.json';
 
 const cfg = renderConfigJson as unknown as RenderConfig;
 
@@ -148,10 +150,13 @@ export const DirectedEpisode: React.FC<DirectedProps> = ({episode, plan, turns, 
   const timeline = React.useMemo(() => kitTimeline(turns, timing), [turns, timing]);
   const chunks = React.useMemo(() => captionChunks(timeline, words as WordTimesFile, cfg.captions.maxChars), [timeline, words]);
   const caption = chunks.find(c => t >= c.start && t < c.end) ?? null;
-  const speaking = turns.findIndex((turn, i) => turn.kind === 'speech' && t >= timing.starts[i] && t < timing.starts[i] + timing.durations[i]);
   const speakers = cfg.speakers as Record<string, {name: string; color: string; toon: string}>;
+  const head = activeSpeakerAt(turns, timing, t, speaker => !!speakers[speaker]);
+  const {width, height} = useVideoConfig();
   const boxes = plan.boxes ?? [];
   const currentBox = boxes.findIndex(b => t >= b.startSec && t < b.endSec);
+  const sheet = sheetTransform(boxes.map(b => b.introSec), t, {width, height}, cfg.boxTracker.rect, cfg.stage);
+  const [sx0, sy0, sx1, sy1] = cfg.stage;
   return (
     <AbsoluteFill ref={rootRef} data-kit-root style={{background: '#1a1512'}}>
       <Vignette />
@@ -167,22 +172,28 @@ export const DirectedEpisode: React.FC<DirectedProps> = ({episode, plan, turns, 
           <Audio src={staticFile(`audio/${episode}/${turn.id}.mp3`)} />
         </Sequence>
       ) : null)}
-      {boxes.length > 0 && (
-        <Track id="chrome:box-tracker" role="chrome">
-          <BoxTracker cfg={cfg} state={{
-            boxes: boxes.map(b => b.label),
-            checkedAt: boxes.map(b => b.checkSec),
-            introAt: boxes.map(b => b.introSec),
-            current: currentBox >= 0 ? {box: currentBox + 1, progress: (t - boxes[currentBox].startSec) / (boxes[currentBox].endSec - boxes[currentBox].startSec), since: boxes[currentBox].startSec} : null,
-            t,
-          }} />
+      {sheet.dim > 0 && (
+        // Dim only the stage while the big sheet is up; captions and the speaker stay bright.
+        <div style={{position: 'absolute', left: sx0 * width, top: sy0 * height, width: (sx1 - sx0) * width, height: (sy1 - sy0) * height, borderRadius: 16, background: `rgba(10,8,6,${sheet.dim})`}} />
+      )}
+      {boxes.length > 0 && sheet.phase !== 'hidden' && (
+        // Big/flying: a cover over the stage (guard-exempt). Docked: persistent chrome in its own rect.
+        <Track id="chrome:box-tracker" role={sheet.phase === 'docked' ? 'chrome' : 'cover'}>
+          <div {...GUARD_WRAPPER} style={{position: 'absolute', inset: 0, transformOrigin: '0 0', transform: `translate(${sheet.tx}px, ${sheet.ty}px) scale(${sheet.scale})`}}>
+            <BoxTracker cfg={cfg} state={{
+              boxes: boxes.map(b => b.label),
+              checkedAt: boxes.map(b => b.checkSec),
+              introAt: boxes.map(b => b.introSec),
+              current: currentBox >= 0 ? {box: currentBox + 1, progress: (t - boxes[currentBox].startSec) / (boxes[currentBox].endSec - boxes[currentBox].startSec), since: boxes[currentBox].startSec} : null,
+              t,
+            }} />
+          </div>
         </Track>
       )}
       <Track id="chrome:head" role="chrome" allowUnsafe>
-        <HeadPair
-          heads={['maya', 'marcus'].filter(id => speakers[id]).map(id => ({id, name: speakers[id].name, color: speakers[id].color, src: staticFile(speakers[id].toon)}))}
-          speaker={speaking >= 0 && speakers[turns[speaking].speaker ?? ''] ? turns[speaking].speaker! : null}
-          level={speaking >= 0 ? levels[turns[speaking].id]?.[frame - Math.round(timing.starts[speaking] * fps)] ?? 0 : 0}
+        <ActiveHead
+          state={head}
+          level={head ? levels[turns[head.turnIndex].id]?.[frame - Math.round(timing.starts[head.turnIndex] * fps)] ?? 0 : 0}
           cfg={cfg}
         />
       </Track>

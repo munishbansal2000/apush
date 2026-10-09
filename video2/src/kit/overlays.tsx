@@ -326,7 +326,7 @@ export const HeadPair: React.FC<{ heads: HeadInfo[]; speaker: string | null; lev
   );
 };
 
-const HeadFace: React.FC<{ head: HeadInfo; active: boolean; amp: number; maxScale: number; lift: number; idle?: number }> = ({ head, active, amp, maxScale, lift, idle = 0 }) => (
+export const HeadFace: React.FC<{ head: HeadInfo; active: boolean; amp: number; maxScale: number; lift: number; idle?: number }> = ({ head, active, amp, maxScale, lift, idle = 0 }) => (
   <div style={{ width: '100%', height: '100%', borderRadius: 24, overflow: 'hidden', border: `6px solid ${head.color}`, background: '#222', boxSizing: 'border-box',
     transform: `scale(${1 + (maxScale - 1) * amp}) translateY(${-lift * amp - idle * 3}px) rotate(${(idle - 0.5) * 2}deg)`, filter: active ? 'none' : 'saturate(0.4) brightness(0.65)',
     boxShadow: active ? `0 0 28px ${head.color}` : 'none', position: 'relative' }}>

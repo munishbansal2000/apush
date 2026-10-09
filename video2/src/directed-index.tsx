@@ -9,8 +9,8 @@ const Root: React.FC = () => (
     component={DirectedEpisode}
     durationInFrames={30}
     fps={30}
-    width={1280}
-    height={720}
+    width={1920}
+    height={1080}
     defaultProps={{episode: 'episode', plan: {title: '', scenes: []}, turns: [], timing: {starts: [], durations: [], totalSec: 1}}}
     calculateMetadata={({props}) => ({durationInFrames: Math.max(30, Math.ceil(props.timing.totalSec * 30))})}
   />
