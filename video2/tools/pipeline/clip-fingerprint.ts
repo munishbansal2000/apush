@@ -7,8 +7,11 @@ export const CLIP_SIZE = {width: 1248, height: 704};
 export type LtxBackend = 'desktop' | 'diffusers';
 export const ltxBackend = (): LtxBackend => (process.env.LTX_BACKEND === 'diffusers' ? 'diffusers' : 'desktop');
 
-/** Settings sent to LTX Desktop; part of every desktop clip's fingerprint. */
-export const DESKTOP_SETTINGS = {model: 'fast', resolution: '1080p', duration: 5, fps: 24, cameraMotion: 'none'} as const;
+/**
+ * Settings sent to LTX Desktop; part of every desktop clip's fingerprint. 720p by default: about 2x faster than 1080p,
+ * and the ~1.5x upscale stays within the look's 1.6x limit (grain and atmosphere hide it). LTX_RESOLUTION=1080p for finals.
+ */
+export const DESKTOP_SETTINGS = {model: 'fast', resolution: process.env.LTX_RESOLUTION ?? '720p', duration: 5, fps: 24, cameraMotion: 'none'} as const;
 
 /**
  * Avoid-prompt for animating historical paintings: protect the figures that are already there (the Desktop script's

@@ -15,7 +15,7 @@ import {ATMOSPHERES, type Atmosphere} from '../../src/documentary/atmosphere';
 /** A cue: a spoken phrase, or seconds after the shot starts. */
 export type Cue = PhraseAnchor | {offset: number};
 
-type PlanShot = (
+export type PlanShot = (
   | {type: 'image_move' | 'portrait'; at: PhraseAnchor; image: string; from: Framing; to: Framing; name?: string; role?: string; transition?: 'cut' | 'crossfade'}
   | {type: 'clip'; at: PhraseAnchor; image: string; prompt: string; seed?: number; focus?: [number, number]; from?: Framing; to?: Framing; transition?: 'cut' | 'crossfade'}
   | {type: 'map'; at: PhraseAnchor; projection: 'us' | 'world'; extent: [LonLat, LonLat]; camera: {at: Cue; center: LonLat; zoom: number; ease?: number}[];
@@ -41,8 +41,9 @@ export interface ShotPlan {
 
 export interface ResolvedShotPlan {shots: DocShot[]; years: YearStamp[]; boxes: DocBox[]; endSec: number}
 
-export interface ShotRules {minShotSec: number; maxShotSec: number; maxMapSec: number; maxBullets: number; maxBulletWords: number; maxUpscale: number}
-export const LOOK_RULES: ShotRules = {minShotSec: 1.2, maxShotSec: 8, maxMapSec: 14, maxBullets: 3, maxBulletWords: 6, maxUpscale: 1.6};
+export interface ShotRules {minShotSec: number; maxShotSec: number; maxMapSec: number; maxBullets: number; maxBulletWords: number; maxUpscale: number; maxImageUses: number; maxClips: number}
+/** maxImageUses is 4 while the asset library is thin (the hand sample uses Grenville 4x); LOOK.md's target is 3. */
+export const LOOK_RULES: ShotRules = {minShotSec: 1.2, maxShotSec: 8, maxMapSec: 14, maxBullets: 3, maxBulletWords: 6, maxUpscale: 1.6, maxImageUses: 4, maxClips: 2};
 
 export interface ResolveOptions {
   /** Pixel sizes of public/ images (data/images.lock.json); a shot on a missing or unsized image is an error. */
@@ -205,6 +206,15 @@ export function resolveShotPlan(plan: ShotPlan, turns: PipelineTurn[], timing: A
       }
     }
   });
+  // Variety: no image carries too many shots; LTX clips are for a few hero moments only.
+  const uses = new Map<string, string[]>();
+  for (const shot of shots) {
+    const image = 'image' in shot ? shot.image : shot.type === 'point' ? shot.backdrop : null;
+    if (image) uses.set(image, [...(uses.get(image) ?? []), shot.id]);
+  }
+  for (const [image, ids] of uses) if (ids.length > rules.maxImageUses) issues.push(`${ids[rules.maxImageUses]}: "${image}" is used in ${ids.length} shots (${ids.join(', ')}); max ${rules.maxImageUses} per lesson`);
+  const clipShots = shots.filter(s => s.type === 'clip');
+  if (clipShots.length > rules.maxClips) issues.push(`${clipShots[rules.maxClips].id}: ${clipShots.length} LTX clips; max ${rules.maxClips} per lesson`);
   for (let i = 1; i < starts.length; i++) if (starts[i] <= starts[i - 1]) issues.push(`shot ${i + 1} starts at or before shot ${i} (${starts[i].toFixed(2)}s ≤ ${starts[i - 1].toFixed(2)}s)`);
 
   const years = (plan.years ?? []).map((y, i) => ({text: y.text, sec: phrase(`year ${i + 1}`, y.at)}));
