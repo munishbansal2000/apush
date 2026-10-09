@@ -81,6 +81,10 @@ step (checked against the spoken "N boxes on your sheet: …" line); rows appear
 the narration's cue word, verified against Vosk timing. Script drift to handle: 0 of 106 scripts have `# @boxes:`, and
 cue phrasing varies ("Box one, done.", "Checked.", "Box two, checked").
 
+**Decision (2026-10-08): directed episodes use the kit frame** (`render-config` rects): scene scaled into `stage`, Episode Sheet
+in `boxTracker`, host heads in `head`, captions in `captions`, all inside guard tracks. Slide type sizes get raised (P25) because
+scenes render at ~64% width.
+
 - [ ] **P21. The pipeline prompt forbids `roadmapIndex`.** `video-pipeline.ts:498` says "Every scene uses exactly id, component,
   turnRange, props, and transition", which contradicts the rubric's ROADMAP section. The example output has no `roadmap` either.
 - [ ] **P22. Roadmap is optional everywhere.** If the LLM omits it, the ribbon silently never appears. No validation requires it
