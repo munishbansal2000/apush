@@ -34,6 +34,8 @@ export const LOOK_RULES: ShotRules = {minShotSec: 1.2, maxShotSec: 8, maxMapSec:
 export interface ResolveOptions {
   /** Pixel sizes of public/ images (data/images.lock.json); a shot on a missing or unsized image is an error. */
   imageSizes: Record<string, {width: number; height: number}>;
+  /** Depth maps by image path (public/ relative), for 2.5D parallax. */
+  depthMaps?: Record<string, string>;
   frame?: {width: number; height: number};
   rules?: ShotRules;
   /** Samples only: estimate phrase times when there are no Vosk words. */
@@ -79,9 +81,10 @@ export function resolveShotPlan(plan: ShotPlan, turns: PipelineTurn[], timing: A
         if (shot.name && shot.name.length > 40) issues.push(`${id}: name tag "${shot.name}" is longer than 40 characters`);
         if (Math.abs(shot.from.zoom - shot.to.zoom) < 0.04 && Math.hypot(shot.from.x - shot.to.x, shot.from.y - shot.to.y) < 0.03) issues.push(`${id}: camera barely moves; every shot must move`);
         const size = sized(id, shot.image, [shot.from, shot.to]);
+        const depth = opts.depthMaps?.[shot.image];
         return shot.type === 'portrait'
-          ? {...base, type: 'portrait', image: shot.image, size, from: shot.from, to: shot.to, name: shot.name ?? '', role: shot.role}
-          : {...base, type: 'image_move', image: shot.image, size, from: shot.from, to: shot.to};
+          ? {...base, type: 'portrait', image: shot.image, size, from: shot.from, to: shot.to, name: shot.name ?? '', role: shot.role, depth}
+          : {...base, type: 'image_move', image: shot.image, size, from: shot.from, to: shot.to, depth};
       }
       case 'map':
         if (!shot.camera.length) issues.push(`${id}: map needs at least one camera key`);

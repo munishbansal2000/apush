@@ -26,12 +26,16 @@ const lock = readJson<Record<string, {width?: number; height?: number}>>(join(RO
 const imageSizes = Object.fromEntries(Object.entries(lock)
   .filter(([path, v]) => v.width && v.height && existsSync(join(ROOT, 'public', path)))
   .map(([path, v]) => [path, {width: v.width!, height: v.height!}]));
+// Depth maps from tools/depth-maps.py: public/depth/<image path>.png
+const depthMaps = Object.fromEntries(Object.keys(imageSizes)
+  .map(path => [path, `depth/${path.replace(/\.[^.]+$/, '')}.png`])
+  .filter(([, depth]) => existsSync(join(ROOT, 'public', depth))));
 const estimated = !existsSync(wordsPath);
 const plan = readJson<ShotPlan>(planPath);
-const resolved = resolveShotPlan(plan, turns, timing, words, {imageSizes, allowEstimated: estimated});
+const resolved = resolveShotPlan(plan, turns, timing, words, {imageSizes, depthMaps, allowEstimated: estimated});
 const lengths = resolved.shots.map(s => s.endSec - s.startSec);
 console.log(`[doc] ${resolved.shots.length} shots over ${resolved.endSec.toFixed(1)}s; median shot ${[...lengths].sort((a, b) => a - b)[Math.floor(lengths.length / 2)].toFixed(1)}s, longest ${Math.max(...lengths).toFixed(1)}s${estimated ? ' (phrase times ESTIMATED: no Vosk word_times.json)' : ''}`);
-for (const s of resolved.shots) console.log(`  ${s.id} ${s.startSec.toFixed(2)}-${s.endSec.toFixed(2)}s ${s.type}${'image' in s ? ` ${s.image}` : ''}`);
+for (const s of resolved.shots) console.log(`  ${s.id} ${s.startSec.toFixed(2)}-${s.endSec.toFixed(2)}s ${s.type}${'image' in s ? ` ${s.image}${'depth' in s && s.depth ? ' [parallax]' : ''}` : ''}`);
 if (flag('check')) process.exit(0);
 
 const {bundle} = await import('@remotion/bundler');

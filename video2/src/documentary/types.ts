@@ -18,6 +18,8 @@ interface ShotBase {
 export interface ImageMoveShot extends ShotBase {
   type: 'image_move';
   image: string;
+  /** Depth map (public/ path) for 2.5D parallax; without one the shot is a flat camera move. */
+  depth?: string;
   /** Pixel size of the image (from data/images.lock.json), needed to frame it exactly. */
   size: {width: number; height: number};
   from: Framing;
@@ -27,6 +29,8 @@ export interface ImageMoveShot extends ShotBase {
 export interface PortraitShot extends ShotBase {
   type: 'portrait';
   image: string;
+  /** Depth map (public/ path) for 2.5D parallax; without one the shot is a flat camera move. */
+  depth?: string;
   size: {width: number; height: number};
   from: Framing;
   to: Framing;
