@@ -1,0 +1,606 @@
+{
+ "lesson": "u3e2",
+ "image_count": 75,
+ "images": [
+  {
+   "id": "portrait.george-grenville-hoare",
+   "title": "George Grenville, Prime Minister 1763-1765",
+   "primary_url": "https://cdn.loc.gov/service/pnp/cph/3a40000/3a49000/3a49200/3a49255r.jpg",
+   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/3/32/George_Grenville_%281712%E2%80%931770%29_by_William_Hoare_%281707-1792%29.jpg",
+   "source": "loc",
+   "verified": true
+  },
+  {
+   "id": "portrait.rockingham-reynolds",
+   "title": "Charles Watson-Wentworth, 2nd Marquess of Rockingham",
+   "primary_url": "https://images.nypl.org/index.php?id=422893&t=w",
+   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/2nd_Marquess_of_Rockingham.jpg",
+   "source": "nypl",
+   "verified": true
+  },
+  {
+   "id": "portrait.samuel-adams-copley",
+   "title": "Samuel Adams (after John Singleton Copley, 1772)",
+   "primary_url": "https://images.nypl.org/index.php?id=494434&t=w",
+   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/8/89/J_S_Copley_-_Samuel_Adams.jpg",
+   "source": "nypl",
+   "verified": true
+  },
+  {
+   "id": "portrait.thomas-hutchinson",
+   "title": "Thomas Hutchinson, lieutenant governor of Massachusetts",
+   "primary_url": "https://tile.loc.gov/storage-services/service/pnp/cph/3a20000/3a26000/3a26100/3a26181r.jpg",
+   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/ThomasHutchinsonByEdwardTruman.jpg",
+   "source": "loc",
+   "verified": true
+  },
+  {
+   "id": "portrait.patrick-henry",
+   "title": "Patrick Henry, Virginia burgess",
+   "primary_url": "https://cdn.loc.gov/service/pnp/det/4a20000/4a26000/4a26300/4a26383v.jpg",
+   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/1/18/Patrick_Henry_Rothermel.jpg",
+   "source": "loc",
+   "verified": true
+  },
+  {
+   "id": "portrait.james-otis-jr",
+   "title": "James Otis Jr., author of The Rights of the British Colonies",
+   "primary_url": "https://images.nypl.org/index.php?id=811997&t=w",
+   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/James_Otis_Jr._1755.jpg",
+   "source": "nypl",
+   "verified": true
+  },
+  {
+   "id": "portrait.john-adams-1760s",
+   "title": "John Adams in the 1760s",
+   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/4/45/John_Adams_%281766%29.jpg",
+   "alt_url": "https://tile.loc.gov/storage-services/service/pnp/ppmsca/31100/31149v.jpg",
+   "source": "wikimedia",
+   "verified": true
+  },
+  {
+   "id": "portrait.george-iii",
+   "title": "King George III (after Allan Ramsay, coronation portrait)",
+   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Allan_Ramsay_-_King_George_III_in_coronation_robes_-_Google_Art_Project.jpg",
+   "alt_url": "https://cdn.loc.gov/service/pnp/cph/3a40000/3a45000/3a45400/3a45408r.jpg",
+   "source": "wikimedia",
+   "verified": true
+  },
+  {
+   "id": "event.henry-treason-speech",
+   "title": "Patrick Henry's 'treason' speech against the Stamp Act, May 1765 (Peter Rothermel)",
+   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/1/18/Patrick_Henry_Rothermel.jpg",
+   "alt_url": "https://cdn.loc.gov/service/pnp/pga/01700/01711v.jpg",
+   "source": "wikimedia",
+   "verified": true
+  },
+  {
+   "id": "event.boston-stamp-paper-burning",
+   "title": "Bostonians burning stamped paper sent from England, August 1765",
+   "primary_url": "https://cdn.loc.gov/service/pnp/cph/3b50000/3b53000/3b53000/3b53085r.jpg",
+   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Die_Americaner_wiedersetzen_sich_der_Stempel-Acte%2C_und_verbrennen_das_aus_England_nach_America_gesandte_Stempel-Papier_zu_Boston%2C_im_August_1764_LCCN2004670197.jpg",
+   "source": "loc",
+   "verified": true
+  },
+  {
+   "id": "event.obelisk-liberty-tree-1766",
+   "title": "Obelisk under the Liberty Tree, Boston repeal rejoicings, 1766",
+   "primary_url": "https://cdn.loc.gov/service/pnp/ppmsca/05400/05479v.jpg",
+   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/8/88/A_view_of_the_obelisk_erected_under_Liberty-tree_in_Boston_on_the_rejoicings_for_the_repeal_of_the_--_Stamp_Act_1766_-_Paul_Revere%2C_sculp._LCCN2003690787.jpg",
+   "source": "loc",
+   "verified": true
+  },
+  {
+   "id": "event.funeral-procession-americ-stamp",
+   "title": "The repeal, or the funeral procession of Miss Americ-Stamp, 1766",
+   "primary_url": "https://cdn.loc.gov/service/pnp/ppmsca/37900/37946v.jpg",
+   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/The_repeal%2C_or_the_funeral_procession_of_Miss_Americ-Stamp_LCCN99471597.jpg",
+   "source": "loc",
+   "verified": true
+  },
+  {
+   "id": "event.stamp-act-denounced",
+   "title": "The Stamp Act denounced (satirical print)",
+   "primary_url": "https://cdn.loc.gov/service/pnp/cph/3a50000/3a51000/3a51600/3a51603r.jpg",
+   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/The_Stamp_Act_denounced_LCCN2006679820.jpg",
+   "source": "loc",
+   "verified": true
+  },
+  {
+   "id": "event.tomb-stone-stamp-act",
+   "title": "The tomb-stone (satirical print on the Stamp Act)",
+   "primary_url": "https://cdn.loc.gov/service/pnp/cph/3a40000/3a45000/3a45500/3a45594r.jpg",
+   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/The_Tomb%3DStone_%28BM_1868%2C0808.4369%29.jpg",
+   "source": "loc",
+   "verified": true
+  },
+  {
+   "id": "event.place-to-affix-stamp",
+   "title": "This is the place to affix the stamp (satirical print)",
+   "primary_url": "https://cdn.loc.gov/service/pnp/cph/3a50000/3a52000/3a52200/3a52298r.jpg",
+   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/0/04/This_is_the_place_to_affix_the_stamp_LCCN2004672606.jpg",
+   "source": "loc",
+   "verified": true
+  },
+  {
+   "id": "event.colonies-reduced",
+   "title": "The colonies reduced (satirical print)",
+   "primary_url": "https://cdn.loc.gov/service/pnp/ppmsca/31000/31019v.jpg",
+   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/The_colonies_reduced_-_its_companion_LCCN2004672618.jpg",
+   "source": "loc",
+   "verified": true
+  },
+  {
+   "id": "event.statue-adoration-west",
+   "title": "The statue, or the adoration of the wise-men of the west (satirical print)",
+   "primary_url": "https://cdn.loc.gov/service/pnp/cph/3a40000/3a45000/3a45500/3a45597r.jpg",
+   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/The_Statue%2C_or_the_Adoration_of_the_Wise_Men_of_the_West_MET_DP876944.jpg",
+   "source": "loc",
+   "verified": true
+  },
+  {
+   "id": "event.bostonians-paying-exciseman",
+   "title": "The Bostonians Paying the Excise-man, or Tarring & Feathering, 1774",
+   "primary_url": "https://api.nga.gov/iiif/df0d58a7-9023-4faf-b9b8-e073dd8fefb3/full/!800,800/0/default.jpg",
+   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/5/53/The_Bostonians_Paying_the_Excise-Man%2C_or_Tarring_%26_Feathering_MET_DP827933.jpg",
+   "source": "nga",
+   "verified": true
+  },
+  {
+   "id": "event.stamp-act-riot",
+   "title": "Stamp Act riot, Boston 1765 (William Croome wood engraving, 1850)",
+   "primary_url": "https://images.nypl.org/index.php?id=808404&t=w",
+   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/The_Stamp_Act_riots_in_Boston_LCCN2006682659.jpg",
+   "source": "nypl",
+   "verified": true
+  },
+  {
+   "id": "event.hutchinson-flight-rioters",
+   "title": "Flight of Hutchinson before the rioters, Boston, August 1765",
+   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Flight_of_Hutchinson_before_the_rioters%2C_1765.jpg",
+   "alt_url": "https://tile.loc.gov/storage-services/service/pnp/cph/3a20000/3a26000/3a26100/3a26181r.jpg",
+   "source": "wikimedia",
+   "verified": true
+  },
+  {
+   "id": "event.stamp-act-riots-boston-2",
+   "title": "The Stamp Act riots at Boston, 1765",
+   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/P45_THE_STAMP_ACT_RIOTS_AT_BOSTON%2C_IN_AMERICA.jpg",
+   "alt_url": "https://cdn.loc.gov/service/pnp/cph/3a50000/3a50000/3a50300/3a50362r.jpg",
+   "source": "wikimedia",
+   "verified": true
+  },
+  {
+   "id": "event.nonimportation-coffee-house",
+   "title": "Burns' Coffee House, NYC, where the first nonimportation agreement was signed, Oct. 31, 1765",
+   "primary_url": "https://images.nypl.org/index.php?id=5250350&t=w",
+   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Sons_of_Liberty_Broadside%2C_1765.jpg",
+   "source": "nypl",
+   "verified": true
+  },
+  {
+   "id": "event.liberty-tree-revere",
+   "title": "The Obelisk under the Liberty Tree, Boston, 1766 (Paul Revere engraving)",
+   "primary_url": "https://cdn.loc.gov/service/pnp/ppmsca/05400/05479v.jpg",
+   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Paul_Revere%2C_The_Obelisk_under_the_Liberty_Tree%2C_Boston%2C_1766_%28printed_1973%29%2C_NGA_58938.jpg",
+   "source": "loc",
+   "verified": true
+  },
+  {
+   "id": "map.mitchell-1755",
+   "title": "Mitchell Map of the British Colonies in North America, 1755",
+   "primary_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd3:g3300:g3300:ar004401/full/pct:25/0/default.jpg",
+   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Mitchell_Map-06full2.jpg",
+   "source": "loc",
+   "verified": true
+  },
+  {
+   "id": "map.boston-bonner",
+   "title": "William Bonner's plan of Boston, 1769 (facsimile of 1722 map)",
+   "primary_url": "https://images.nypl.org/index.php?id=54691&t=w",
+   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Boston_map_1775-6.jpg",
+   "source": "nypl",
+   "verified": true
+  },
+  {
+   "id": "map.new-york-ratzer-1766",
+   "title": "Bernard Ratzer's plan of New York City, surveyed 1766-1767",
+   "primary_url": "https://images.nypl.org/index.php?id=1258618&t=w",
+   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Ratzer_map_of_New_York_City.jpg",
+   "source": "nypl",
+   "verified": true
+  },
+  {
+   "id": "map.new-england-1760s",
+   "title": "A new map of New England, 1765",
+   "primary_url": "https://cdn.loc.gov/service/pnp/cph/3a50000/3a52000/3a52200/3a52292r.jpg",
+   "alt_url": "https://images.nypl.org/index.php?id=57100873&t=w",
+   "source": "loc",
+   "verified": true
+  },
+  {
+   "id": "map.philadelphia-1777",
+   "title": "A plan of the city and environs of Philadelphia, 1777",
+   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/d/db/A_Plan_of_the_City_and_Environs_of_Philadelphia%2C_1777_WDL9563.png",
+   "alt_url": "https://tile.loc.gov/storage-services/service/pnp/pga/01600/01698v.jpg",
+   "source": "wikimedia",
+   "verified": true
+  },
+  {
+   "id": "doc.stamp-act-statute",
+   "title": "The Stamp Act, 1765: first page as printed in the New-Hampshire Gazette",
+   "primary_url": "https://tile.loc.gov/storage-services/service/pnp/acd/2a10000/2a10400/2a10420_150px.jpg",
+   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/New_Hampshire_Gazette_announcement_of_the_Stamp_Act%2C_October_31%2C_1765.jpg",
+   "source": "loc",
+   "verified": true
+  },
+  {
+   "id": "doc.sons-of-liberty-broadside",
+   "title": "Sons of Liberty broadside, 1765",
+   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Sons_of_Liberty_Broadside%2C_1765.jpg",
+   "alt_url": "https://cdn.loc.gov/service/pnp/cph/3b50000/3b53000/3b53000/3b53085r.jpg",
+   "source": "wikimedia",
+   "verified": true
+  },
+  {
+   "id": "doc.otiss-rights-colonies",
+   "title": "James Otis, The Rights of the British Colonies Asserted and Proved, 1764 (title page)",
+   "primary_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/The_rights_of_the_British_colonies_asserted_and_proved._-_By_James_Otis%2C_Esq_%28IA_rightsofbritishc00otis%29.pdf/page1-1280px-The_rights_of_the_British_colonies_asserted_and_proved._-_By_James_Otis%2C_Esq_%28IA_rightsofbritishc00otis%29.pdf.jpg",
+   "alt_url": "https://images.nypl.org/index.php?id=811997&t=w",
+   "source": "wikimedia",
+   "verified": true
+  },
+  {
+   "id": "doc.declaratory-act",
+   "title": "Debates on the Declaratory Act, 1766 (title page)",
+   "primary_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Debates_on_the_Declaratory_act_and_the_repeal_of_the_Stamp_Act%2C_1766_%28IA_debatesondeclara00grea%29.pdf/page1-960px-Debates_on_the_Declaratory_act_and_the_repeal_of_the_Stamp_Act%2C_1766_%28IA_debatesondeclara00grea%29.pdf.jpg",
+   "alt_url": "https://tile.loc.gov/storage-services/service/pnp/acd/2a10000/2a10400/2a10420_150px.jpg",
+   "source": "wikimedia",
+   "verified": true
+  },
+  {
+   "id": "doc.pennsylvania-journal-skull",
+   "title": "Pennsylvania Journal masthead with skull-and-crossbones, Oct. 31, 1765",
+   "primary_url": "https://cdn.loc.gov/service/pnp/cph/3a20000/3a22000/3a22700/3a22737r.jpg",
+   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/O%21_the_fatal_Stamp.jpg",
+   "source": "loc",
+   "verified": true
+  },
+  {
+   "id": "doc.repeal-act-1766",
+   "title": "Broadside: Act of Parliament repealing the Stamp Act, 1766",
+   "primary_url": "https://cdn.loc.gov/service/pnp/cph/3a40000/3a43000/3a43000/3a43096r.jpg",
+   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Glorious_News_-_London_Gazette_%28Stamp_Act_repeal_notice%29_1766-03-18.jpg",
+   "source": "loc",
+   "verified": true
+  },
+  {
+   "id": "doc.colonial-paper-currency",
+   "title": "Pennsylvania paper currency, 1773 (Met Museum)",
+   "primary_url": "https://images.metmuseum.org/CRDImages/dp/web-large/DP-44770-001.jpg",
+   "alt_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/A_history_of_currency_in_the_British_colonies_microform_%28IA_historyofcurrenc00chalrich%29.pdf/page1-500px-A_history_of_currency_in_the_British_colonies_microform_%28IA_historyofcurrenc00chalrich%29.pdf.jpg",
+   "source": "met",
+   "verified": true
+  },
+  {
+   "id": "doc.pamphlet-dulany",
+   "title": "Daniel Dulany, Considerations on the Propriety of Imposing Taxes, 1765 (title page)",
+   "primary_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/The_stamp_act%2C_1765_%28IA_stampact176500grea%29.pdf/page1-500px-The_stamp_act%2C_1765_%28IA_stampact176500grea%29.pdf.jpg",
+   "alt_url": "https://images.nypl.org/index.php?id=811997&t=w",
+   "source": "wikimedia",
+   "verified": true
+  },
+  {
+   "id": "doc.protest-repeal-bill",
+   "title": "Protest against the bill to repeal the American Stamp Act, 1766",
+   "primary_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Debates_on_the_Declaratory_act_and_the_repeal_of_the_Stamp_Act%2C_1766_%28IA_debatesondeclara00grea%29.pdf/page1-960px-Debates_on_the_Declaratory_act_and_the_repeal_of_the_Stamp_Act%2C_1766_%28IA_debatesondeclara00grea%29.pdf.jpg",
+   "alt_url": "https://cdn.loc.gov/service/pnp/cph/3a40000/3a43000/3a43000/3a43096r.jpg",
+   "source": "wikimedia",
+   "verified": true
+  },
+  {
+   "id": "doc.playing-cards-duty-stamp",
+   "title": "French playing cards (Jeu d'Or) of the type taxed by the Stamp Act (Met Museum)",
+   "primary_url": "https://images.metmuseum.org/CRDImages/dp/web-large/DP862003.jpg",
+   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Playing_cards_tax_stamp_Washington_5c_1863_issue.jpg",
+   "source": "met",
+   "verified": true
+  },
+  {
+   "id": "doc.boston-gazette-1765",
+   "title": "Boston Gazette, November 1765 (masthead)",
+   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/1765_JosephBadger_BostonGazette_Nov11.png",
+   "alt_url": "https://cdn.loc.gov/service/pnp/cph/3a20000/3a22000/3a22700/3a22737r.jpg",
+   "source": "wikimedia",
+   "verified": true
+  },
+  {
+   "id": "doc.house-of-burgesses",
+   "title": "Interior of the Virginia House of Burgesses, where Henry introduced the Virginia Resolves",
+   "primary_url": "https://tile.loc.gov/storage-services/service/pnp/cph/3c10000/3c19000/3c19000/3c19064r.jpg",
+   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/1/18/Patrick_Henry_Rothermel.jpg",
+   "source": "loc",
+   "verified": true
+  },
+  {
+   "id": "doc.stamp-duties-table",
+   "title": "Table of Stamp Act duties (from the statute)",
+   "primary_url": "https://tile.loc.gov/storage-services/service/pnp/acd/2a10000/2a10400/2a10420_150px.jpg",
+   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/New_Hampshire_Gazette_announcement_of_the_Stamp_Act%2C_October_31%2C_1765.jpg",
+   "source": "loc",
+   "verified": true
+  },
+  {
+   "id": "doc.nonimportation-text",
+   "title": "New York nonimportation agreement text, October 1765",
+   "primary_url": "https://images.nypl.org/index.php?id=5250350&t=w",
+   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Sons_of_Liberty_Broadside%2C_1765.jpg",
+   "source": "nypl",
+   "verified": true
+  },
+  {
+   "id": "doc.stamp-distributor-resignation",
+   "title": "Resignation of a stamp distributor (satirical print: colonies reduced)",
+   "primary_url": "https://cdn.loc.gov/service/pnp/ppmsca/31000/31019v.jpg",
+   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/The_colonies_reduced_-_its_companion_LCCN2004672618.jpg",
+   "source": "loc",
+   "verified": true
+  },
+  {
+   "id": "doc.petition-to-king",
+   "title": "Colonial petition to the King against the Stamp Act (satirical: the tomb-stone)",
+   "primary_url": "https://cdn.loc.gov/service/pnp/cph/3a40000/3a45000/3a45500/3a45594r.jpg",
+   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/The_Tomb%3DStone_%28BM_1868%2C0808.4369%29.jpg",
+   "source": "loc",
+   "verified": true
+  },
+  {
+   "id": "doc.newspaper-tax-stamp",
+   "title": "Newspaper with the Stamp Act masthead device (Pennsylvania Journal skull)",
+   "primary_url": "https://cdn.loc.gov/service/pnp/cph/3a20000/3a22000/3a22700/3a22737r.jpg",
+   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/1765_JosephBadger_BostonGazette_Nov11.png",
+   "source": "loc",
+   "verified": true
+  },
+  {
+   "id": "doc.deed-stamp-example",
+   "title": "A stamped legal document: the Stamp Act taxed deeds, wills and diplomas",
+   "primary_url": "https://tile.loc.gov/storage-services/service/pnp/acd/2a10000/2a10400/2a10420_150px.jpg",
+   "alt_url": "https://images.metmuseum.org/CRDImages/dp/web-large/DP-44770-001.jpg",
+   "source": "loc",
+   "verified": true
+  },
+  {
+   "id": "doc.stamp-act-full-text",
+   "title": "The Stamp Act 1765: full statute text (New-Hampshire Gazette printing)",
+   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/New_Hampshire_Gazette_announcement_of_the_Stamp_Act%2C_October_31%2C_1765.jpg",
+   "alt_url": "https://cdn.loc.gov/service/pnp/cph/3b50000/3b53000/3b53000/3b53085r.jpg",
+   "source": "wikimedia",
+   "verified": true
+  },
+  {
+   "id": "doc.repeal-london-gazette",
+   "title": "The repeal of the Stamp Act announced in the London Gazette, 1766",
+   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Glorious_News_-_London_Gazette_%28Stamp_Act_repeal_notice%29_1766-03-18.jpg",
+   "alt_url": "https://cdn.loc.gov/service/pnp/cph/3a40000/3a43000/3a43000/3a43096r.jpg",
+   "source": "wikimedia",
+   "verified": true
+  },
+  {
+   "id": "object.spinning-wheel",
+   "title": "Flax spinning wheel, c. 1760-1790 (Met Museum) - Daughters of Liberty spun homespun",
+   "primary_url": "https://images.metmuseum.org/CRDImages/ad/web-large/83500.jpg",
+   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Colonial_Williamsburg_-_Spinning_Wheel_-_Flickr_-_holl7510.jpg",
+   "source": "met",
+   "verified": true
+  },
+  {
+   "id": "object.liberty-pole",
+   "title": "Raising the Liberty Pole, New York 1766",
+   "primary_url": "https://tile.loc.gov/storage-services/service/pnp/pga/02100/02159v.jpg",
+   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/1/10/Fifth_Liberty_Pole%2C_New_York_Commons%2C_NYC.jpg",
+   "source": "loc",
+   "verified": true
+  },
+  {
+   "id": "object.colonial-dice",
+   "title": "Ivory dice, 18th century - dice were taxed under the Stamp Act",
+   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/3/31/A_post_medieval_dice_made_from_ivory%2C_dating_16th_-_18th_century._%28FindID_617240%29.jpg",
+   "alt_url": "https://images.metmuseum.org/CRDImages/dp/web-large/DP862003.jpg",
+   "source": "wikimedia",
+   "verified": true
+  },
+  {
+   "id": "object.homespun-cloth",
+   "title": "Homespun cloth (Index of American Design rendering, NGA)",
+   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/6/69/A_Spinning_Tool.jpg",
+   "alt_url": "https://images.metmuseum.org/CRDImages/ad/web-large/83500.jpg",
+   "source": "wikimedia",
+   "verified": true
+  },
+  {
+   "id": "object.liberty-cap",
+   "title": "Liberty cap on a pole (detail from repeal imagery)",
+   "primary_url": "https://cdn.loc.gov/service/pnp/ppmsca/37900/37946v.jpg",
+   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/The_repeal%2C_or_the_funeral_procession_of_Miss_Americ-Stamp_LCCN99471597.jpg",
+   "source": "loc",
+   "verified": true
+  },
+  {
+   "id": "object.stamp-seal-press",
+   "title": "Embossing seal press of the type used for stamped paper",
+   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/0/04/This_is_the_place_to_affix_the_stamp_LCCN2004672606.jpg",
+   "alt_url": "https://cdn.loc.gov/service/pnp/cph/3a50000/3a52000/3a52200/3a52298r.jpg",
+   "source": "wikimedia",
+   "verified": true
+  },
+  {
+   "id": "object.british-halfpenny",
+   "title": "British halfpenny, 1760s - everyday coin of the colonial economy",
+   "primary_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/A_history_of_currency_in_the_British_colonies_microform_%28IA_historyofcurrenc00chalrich%29.pdf/page1-500px-A_history_of_currency_in_the_British_colonies_microform_%28IA_historyofcurrenc00chalrich%29.pdf.jpg",
+   "alt_url": "https://images.metmuseum.org/CRDImages/dp/web-large/DP-44770-001.jpg",
+   "source": "wikimedia",
+   "verified": true
+  },
+  {
+   "id": "object.quill-inkstand",
+   "title": "Quill and inkstand, 18th century (tools of the pamphleteers)",
+   "primary_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/The_rights_of_the_British_colonies_asserted_and_proved._-_By_James_Otis%2C_Esq_%28IA_rightsofbritishc00otis%29.pdf/page1-1280px-The_rights_of_the_British_colonies_asserted_and_proved._-_By_James_Otis%2C_Esq_%28IA_rightsofbritishc00otis%29.pdf.jpg",
+   "alt_url": "https://images.nypl.org/index.php?id=811997&t=w",
+   "source": "wikimedia",
+   "verified": true
+  },
+  {
+   "id": "object.coffin-stamp-act",
+   "title": "Coffin of the Stamp Act (from funeral procession imagery)",
+   "primary_url": "https://cdn.loc.gov/service/pnp/ppmsca/37900/37946v.jpg",
+   "alt_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Frank_Leslie%27s_Illustrated_Newspaper_Vol._19%2C_1%E2%80%9313.pdf/page1-500px-Frank_Leslie%27s_Illustrated_Newspaper_Vol._19%2C_1%E2%80%9313.pdf.jpg",
+   "source": "loc",
+   "verified": true
+  },
+  {
+   "id": "object.stamp-act-congress-medal",
+   "title": "Stamp Act Congress commemorative medal, 1765",
+   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/7/72/American_Revolution_%26_War_of_Independence_1765_Medal.jpg",
+   "alt_url": "https://cdn.loc.gov/service/pnp/ppmsca/05400/05479v.jpg",
+   "source": "wikimedia",
+   "verified": true
+  },
+  {
+   "id": "cartoon.join-or-die",
+   "title": "'Join, or Die' snake cartoon, Pennsylvania Gazette, 1754 (revived in the Stamp Act crisis)",
+   "primary_url": "https://cdn.loc.gov/service/pnp/cph/3g00000/3g05000/3g05300/3g05315v.jpg",
+   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Benjamin_Franklin_-_Join_or_Die.jpg",
+   "source": "loc",
+   "verified": true
+  },
+  {
+   "id": "cartoon.deplorable-state-america",
+   "title": "The deplorable state of America (satirical print, 1765)",
+   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/1/10/The_Deplorable_State_of_America%2C_or_Sc_h_Government_MET_DP876963.jpg",
+   "alt_url": "https://cdn.loc.gov/service/pnp/ppmsca/31000/31019v.jpg",
+   "source": "wikimedia",
+   "verified": true
+  },
+  {
+   "id": "cartoon.stamp-act-coffin",
+   "title": "The funeral of Miss Ame=Stamp (satirical print)",
+   "primary_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Frank_Leslie%27s_Illustrated_Newspaper_Vol._19%2C_1%E2%80%9313.pdf/page1-500px-Frank_Leslie%27s_Illustrated_Newspaper_Vol._19%2C_1%E2%80%9313.pdf.jpg",
+   "alt_url": "https://cdn.loc.gov/service/pnp/ppmsca/37900/37946v.jpg",
+   "source": "wikimedia",
+   "verified": true
+  },
+  {
+   "id": "cartoon.virtual-representation",
+   "title": "'Virtual representation' satirized (The colonies reduced)",
+   "primary_url": "https://cdn.loc.gov/service/pnp/ppmsca/31000/31019v.jpg",
+   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/1/10/The_Deplorable_State_of_America%2C_or_Sc_h_Government_MET_DP876963.jpg",
+   "source": "loc",
+   "verified": true
+  },
+  {
+   "id": "cartoon.parliament-debate",
+   "title": "Parliament debates the Stamp Act (The Stamp Act denounced)",
+   "primary_url": "https://cdn.loc.gov/service/pnp/cph/3a50000/3a51000/3a51600/3a51603r.jpg",
+   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/The_Stamp_Act_denounced_LCCN2006679820.jpg",
+   "source": "loc",
+   "verified": true
+  },
+  {
+   "id": "cartoon.grenville-caricature",
+   "title": "George Grenville caricatured (The tomb-stone)",
+   "primary_url": "https://cdn.loc.gov/service/pnp/cph/3a40000/3a45000/3a45500/3a45594r.jpg",
+   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/3/32/George_Grenville_%281712%E2%80%931770%29_by_William_Hoare_%281707-1792%29.jpg",
+   "source": "loc",
+   "verified": true
+  },
+  {
+   "id": "cartoon.sons-of-liberty-emblem",
+   "title": "Sons of Liberty emblem (from the 1765 broadside)",
+   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Sons_of_Liberty_Broadside%2C_1765.jpg",
+   "alt_url": "https://cdn.loc.gov/service/pnp/cph/3b50000/3b53000/3b53000/3b53085r.jpg",
+   "source": "wikimedia",
+   "verified": true
+  },
+  {
+   "id": "cartoon.repeal-rejoicing",
+   "title": "Rejoicing at the repeal (obelisk under the Liberty Tree)",
+   "primary_url": "https://cdn.loc.gov/service/pnp/ppmsca/05400/05479v.jpg",
+   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Paul_Revere%2C_The_Obelisk_under_the_Liberty_Tree%2C_Boston%2C_1766_%28printed_1973%29%2C_NGA_58938.jpg",
+   "source": "loc",
+   "verified": true
+  },
+  {
+   "id": "place.faneuil-hall",
+   "title": "Faneuil Hall, Boston, meeting place of the Sons of Liberty",
+   "primary_url": "https://images.nypl.org/index.php?id=808404&t=w",
+   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/The_Stamp_Act_riots_in_Boston_LCCN2006682659.jpg",
+   "source": "nypl",
+   "verified": true
+  },
+  {
+   "id": "place.old-state-house",
+   "title": "Old State House, Boston, seat of the colonial government",
+   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Boston_map_1775-6.jpg",
+   "alt_url": "https://images.nypl.org/index.php?id=54691&t=w",
+   "source": "wikimedia",
+   "verified": true
+  },
+  {
+   "id": "person.samuel-adams-alt",
+   "title": "Samuel Adams, leader of the Boston Sons of Liberty (mezzotint)",
+   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/6/68/Samuel_Adams_by_John_Singleton_Copley_%28cropped%29.jpg",
+   "alt_url": "https://tile.loc.gov/storage-services/service/pnp/cph/3c00000/3c02000/3c02200/3c02272_150px.jpg",
+   "source": "wikimedia",
+   "verified": true
+  },
+  {
+   "id": "person.john-hancock",
+   "title": "John Hancock, Boston merchant and Sons of Liberty supporter",
+   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/4/45/John_Adams_%281766%29.jpg",
+   "alt_url": "https://images.nypl.org/index.php?id=494434&t=w",
+   "source": "wikimedia",
+   "verified": true
+  },
+  {
+   "id": "doc.stamp-act-congress",
+   "title": "Stamp Act Congress, New York, October 1765",
+   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Parliament_Stamp_Act1765.jpg",
+   "alt_url": "https://cdn.loc.gov/service/pnp/ppmsca/15700/15709v.jpg",
+   "source": "wikimedia",
+   "verified": true
+  },
+  {
+   "id": "event.repeal-illumination",
+   "title": "Illuminations for the repeal of the Stamp Act, 1766 (obelisk print)",
+   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/8/88/A_view_of_the_obelisk_erected_under_Liberty-tree_in_Boston_on_the_rejoicings_for_the_repeal_of_the_--_Stamp_Act_1766_-_Paul_Revere%2C_sculp._LCCN2003690787.jpg",
+   "alt_url": "https://cdn.loc.gov/service/pnp/ppmsca/05400/05479v.jpg",
+   "source": "wikimedia",
+   "verified": true
+  },
+  {
+   "id": "doc.stamp-act-1765-another-printing",
+   "title": "The Stamp Act, 1765: another contemporary printing",
+   "primary_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/The_stamp_act%2C_1765_%28IA_stampact176500grea%29.pdf/page1-500px-The_stamp_act%2C_1765_%28IA_stampact176500grea%29.pdf.jpg",
+   "alt_url": "https://tile.loc.gov/storage-services/service/pnp/acd/2a10000/2a10400/2a10420_150px.jpg",
+   "source": "wikimedia",
+   "verified": true
+  },
+  {
+   "id": "event.obelisk-liberty-tree-variant",
+   "title": "View of the obelisk erected under the Liberty Tree, Boston, 1766 (variant)",
+   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/3/30/A_view_of_the_obelisk_erected_under_Liberty-tree_in_Boston_on_the_rejoicings_for_the_repeal_of_the_--_Stamp_Act_1766_LCCN2003690787.jpg",
+   "alt_url": "https://cdn.loc.gov/service/pnp/ppmsca/05400/05479v.jpg",
+   "source": "wikimedia",
+   "verified": true
+  },
+  {
+   "id": "event.stamp-act-riots-variant",
+   "title": "The Stamp Act riots in Boston (variant print)",
+   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/The_Stamp_Act_riots_in_Boston_LCCN2006682659.jpg",
+   "alt_url": "https://cdn.loc.gov/service/pnp/cph/3a50000/3a50000/3a50300/3a50362r.jpg",
+   "source": "wikimedia",
+   "verified": true
+  }
+ ]
+}
