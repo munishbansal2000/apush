@@ -1,5 +1,5 @@
 /** Full-bleed documentary shots. Every shot moves for its whole duration; all text follows docs/LOOK.md. */
-import React, {useEffect, useLayoutEffect, useMemo, useRef, useState} from 'react';
+import React, {useContext, useEffect, useLayoutEffect, useMemo, useRef, useState} from 'react';
 import {Img, Loop, OffthreadVideo, cancelRender, continueRender, delayRender, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
 import {geoPath} from 'd3-geo';
 import type {Feature, FeatureCollection, MultiPolygon, Polygon} from 'geojson';
@@ -13,6 +13,7 @@ import {COLOR, FONT} from '../theme/tokens';
 import {CUSTOM_COMPONENTS} from '../components/custom/registry';
 import type {CustomName} from '../components/custom/catalog';
 import {AtmosphereLayers} from './atmosphere';
+import {ChromeZones, labelBox, labelVisibility, type ChromeZone} from './chrome-zones';
 import {easeInOut, frameImage, framingAt} from './framing';
 import {depthAtPoint, normalizeDepth, parallaxMotion, warpFrame, type DepthSource, type PixelSource} from './parallax';
 import type {ClipShot, CustomShot, Framing, ImageMoveShot, LonLat, MapShot, PointShot, PortraitShot, QuestionShot, RegionRef} from './types';
@@ -250,11 +251,14 @@ const LABEL_STYLE = {
 /** Old-map typography pinned to the world, constant on-screen size, haloed for legibility. */
 const MapLabel: React.FC<{text: string; at: LonLat; from: number; style?: 'region' | 'ocean' | 'town'; dy?: number}> = ({text, at, from, style = 'region', dy = 0}) => {
   const w = useWorld();
-  const o = interpolate(w.t, [from, from + 0.6], [0, 1], clamp);
-  if (o <= 0) return null;
+  const zones = useContext(ChromeZones);
   const st = LABEL_STYLE[style];
   const k = 1 / w.cam.s;
   const [x, y] = w.proj(at) ?? [0, 0];
+  // Constant on-screen size: the box on screen decides whether the label is near an edge or under the year stamp.
+  const box = labelBox(w.frameW / 2 + (x - w.cam.x) * w.cam.s, w.frameH / 2 + (y + dy * k - w.cam.y) * w.cam.s, text, st.size, st.spacing);
+  const o = interpolate(w.t, [from, from + 0.6], [0, 1], clamp) * labelVisibility(box, w.frameW, w.frameH, zones);
+  if (o <= 0.01) return null;
   const fs = st.size * k;
   return (
     <WorldLayer>
@@ -420,15 +424,30 @@ export const QuestionView: React.FC<{shot: QuestionShot; lead: number}> = ({shot
 /* ---------------------------------- year stamp ---------------------------------- */
 
 /** A year that slams in large, holds, and settles to a small top-left chip. Local frame 0 = the spoken cue. */
-export const YearStampView: React.FC<{text: string}> = ({text}) => {
-  const frame = useCurrentFrame();
-  const {fps, width, height} = useVideoConfig();
+function yearStampState(frame: number, fps: number, width: number, height: number) {
   const slam = spring({frame, fps, config: {damping: 12, stiffness: 160}, durationInFrames: 12});
   const settle = spring({frame: frame - Math.round(1.6 * fps), fps, config: {damping: 200}, durationInFrames: 18});
   const fade = interpolate(frame, [Math.round(4.5 * fps), Math.round(5 * fps)], [1, 0], clamp);
   const size = interpolate(settle, [0, 1], [260, 72]);
   const x = interpolate(settle, [0, 1], [width / 2, 120]);
   const y = interpolate(settle, [0, 1], [height / 2, 110]);
+  return {slam, settle, fade, size, x, y};
+}
+
+/** Where the year stamp is on screen at local frame `frame` (an estimate from its type size; generous). */
+export function yearStampZone(text: string, frame: number, fps: number, width: number, height: number): ChromeZone {
+  const {slam, settle, fade, size, x, y} = yearStampState(frame, fps, width, height);
+  const scale = 1.6 - 0.6 * slam;
+  const w0 = text.length * size * 0.62 + 6 * text.length;
+  const left = x - 0.5 * (1 - settle) * w0;
+  const h = size * 1.2 * scale;
+  return {rect: [left, y - h / 2, left + w0 * scale, y + h / 2], opacity: Math.min(slam, fade)};
+}
+
+export const YearStampView: React.FC<{text: string}> = ({text}) => {
+  const frame = useCurrentFrame();
+  const {fps, width, height} = useVideoConfig();
+  const {slam, settle, fade, size, x, y} = yearStampState(frame, fps, width, height);
   return (
     <div data-guard-item="year" style={{position: 'absolute', left: x, top: y, transform: `translate(${-50 * (1 - settle)}%, -50%) scale(${1.6 - 0.6 * slam})`, transformOrigin: 'left center',
       opacity: Math.min(slam, fade), fontFamily: FONT.display, fontWeight: 700, fontSize: size, color: COLOR.paper, letterSpacing: 6,

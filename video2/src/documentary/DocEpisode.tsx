@@ -12,7 +12,8 @@ import {FilmGrain} from '../kit/media';
 import {sheetTransform} from './sheet';
 import kitConfig from '../data/kit-render-config.json';
 import {AtmosphereLayers} from './atmosphere';
-import {ClipView, CustomView, ImageMoveView, MapView, PointView, QuestionView, YearStampView} from './shots';
+import {ClipView, CustomView, ImageMoveView, MapView, PointView, QuestionView, YearStampView, yearStampZone} from './shots';
+import {ChromeZones} from './chrome-zones';
 import type {DocEpisodeProps, DocShot} from './types';
 
 const cfg = kitConfig as unknown as RenderConfig;
@@ -80,9 +81,12 @@ export const DocEpisode: React.FC<DocEpisodeProps> = ({episode, shots, years = [
   const currentBox = boxes.findIndex(b => t >= b.startSec && t < b.endSec);
   // The Episode Sheet steps aside while a question card is up.
   const onQuestion = shots.some(s => s.type === 'question' && t >= s.startSec && t < s.endSec);
+  // Map labels step aside from a year stamp while it is up.
+  const zones = years.filter(y => t >= y.sec && t < y.sec + 5).map(y => yearStampZone(y.text, frame - Math.round(y.sec * fps), fps, width, height));
   const speaking = (sec: number) => turns.some((turn, i) => turn.kind === 'speech' && sec >= timing.starts[i] && sec < timing.starts[i] + timing.durations[i]);
   return (
     <AbsoluteFill ref={rootRef} data-kit-root style={{background: '#0b0907'}}>
+      <ChromeZones.Provider value={zones}>
       <Track id="shots" role="cover">
         {shots.map((shot, i) => (
           <Sequence key={shot.id} name={`${shot.id} ${shot.type}`} from={windows[i].from} durationInFrames={windows[i].durationInFrames} layout="none">
@@ -90,6 +94,7 @@ export const DocEpisode: React.FC<DocEpisodeProps> = ({episode, shots, years = [
           </Sequence>
         ))}
       </Track>
+      </ChromeZones.Provider>
       <Vignette />
       <Track id="bg:grain" role="bg"><FilmGrain opacity={0.08} /></Track>
       {years.map(y => (
