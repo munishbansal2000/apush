@@ -1,5 +1,5 @@
 # U2-E9 — Cram Session: Maya + Jay (Fish Audio)
-# Unit 2 Cram: 1607 to 1763, in one episode. ~15 min experienced (2,331 words speech + 130s pauses)
+# Unit 2 Cram: 1607 to 1763, in one episode. ~15 min experienced (2,331 words speech + 120s pauses)
 # Draft v6 (2026-10-07): fleet repair pass on v5 per u2-e9v5-FINDINGS.md — B1 tag-density strip, B2 antithesis budget 9→2 kept, M1 parallel-closer breaks, M2 pause-math fix, M3 registry-max fix, M4 patroon hedge. Validated content preserved; dialogue words changed only where the findings required.
 # Jay holds the question list and fires ten rapid-fire questions mapping 1:1 onto the rebuilt unit's boxes (E1–E8 v5/v6);
 # Maya answers and corrects crisply. The period thesis plus two AP-shaped predictions with model theses. Replaces v4
@@ -21,7 +21,6 @@
 # De Lancey (deh-LAN-see); Jumonville (zhoo-mohn-VEEL); Tanacharison (tan-uh-kuh-RIH-sun); Duquesne (doo-KAYN);
 # Monongahela (muh-nahn-guh-HEE-luh); Montcalm (mohn-KAHM); Pontiac (PAHN-tee-ak); Grenville (GREN-vil);
 # l'assassinat (lah-sah-see-NAH).
-
 Maya: [professional broadcast tone] Last time: one 22-year-old's shot in the rain. It went global. Now London is sending the bill. This time: no new material. Eight episodes, ten questions, 1607 to 1763, in about thirteen and a half minutes. Jay's holding the list. The dare: say every answer out loud before I do. Circle the ones you couldn't explain right now.
 
 Jay: Question one. Four empires, one continent. Match the model, one breath each.
@@ -198,7 +197,7 @@ Maya: [thoughtful tone] London's old terms couldn't hold them.
 
 Jay: [intrigued] Next time: one region, up close — how the Chesapeake turned tobacco into a society.
 
-## Sources (production footer — strip before TTS)
+## Sources (production-only, never spoken)
 # Cross-checked against all eight rebuilt Unit 2 episodes — zero contradictions, zero references to dropped content:
 # - U2-E1 v5 (Four Ways to Want a Continent): Spain souls+silver, quinto, encomienda, casta; France fur empire, beaver/hats,
 #   Champlain Quebec 1608, coureurs de bois, licensed trade, Huguenots barred, Wendat vs Iroquois, Beaver Wars 1640–1701;

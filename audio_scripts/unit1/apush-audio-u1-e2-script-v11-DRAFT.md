@@ -1,5 +1,5 @@
 # U1-E2 — Maya + Marcus (Fish Audio)
-# Episode 2: Why Europe Sailed West. ~12 min experienced (1,879 words speech + 80s pauses)
+# Episode 2: Why Europe Sailed West. ~11.5 min experienced (1,879 words speech + 50s pauses)
 # v11 (2026-10-07): fleet-repair pass on v10 — live traps for all three boxes (F1), tag density
 # thinned to ~40% (F2), bullion-shortage motive cut as Tier-1/2-unsourced (F4), "owned the sea
 # road" / "brand-new kingdom" / "the line mostly held" framing fixed (F7-F9), "five hundred
@@ -20,7 +20,6 @@
 # astrolabe (ASS-troh-layb); portolan (POR-toh-lahn); Reconquista (ray-kohn-KEES-tuh);
 # Castile (kah-STEEL); Bartolomeu Dias (bar-too-loo-MAY-oo DEE-ush); da Gama (dah GAH-mah);
 # Las Casas (lahss KAH-sahs); Cabral (kah-BRAHL); Isabella (iz-uh-BEL-uh); Ferdinand.
-
 Maya: [professional broadcast tone] Last time: a continent that was never empty, and never simple. This time: the ocean in between, and the sailors who decided it was a road, not a wall. Three boxes: the three Gs, the toolkit, and the Treaty of Tordesillas. Circle the ones you couldn't explain right now. Eleven minutes, and you'll check all three off.
 
 Marcus: Start with the why, because the why decided everything. Europe wanted Asian spices and silk. The old land routes ran east through Ottoman territory, and after Constantinople fell in 1453, those routes got pricier and shakier. So motive one goes up on the board: gold.

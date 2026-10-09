@@ -1,5 +1,5 @@
 # U1-E5 — Maya + Marcus (Fish Audio)
-# Episode 5: Silver Empire. ~12 min experienced (1,857 words speech + 100s pauses)
+# Episode 5: Silver Empire. ~11.5 min experienced (1,857 words speech + 60s pauses)
 # Draft v6 (2026-10-07): fleet repair of the 2026-10-07 audit (1 blocker, 7 minor) — the four
 # announcer-voice mistake proclamations converted to live traps (box two's cut as redundant with its
 # existing live trap); Malestroit reframed as incomplete rather than wrong; merchant-profit and Ming
@@ -14,7 +14,6 @@
 # tags to silence. The ## Sources section at the end is production-only, never spoken.
 # Pronunciation: poh-toh-SEE; WAHL-pah (Huallpa); gwah-MAHN POH-mah; MEE-tah (mita); tor-nah-VYAH-heh (tornaviaje);
 # ah-kah-POOL-koh; KEH-chwah (Quechua); oor-dah-NEH-tah; boh-DAN; mah-leh-STRAH; KEEN-toh (quinto).
-
 Maya: [professional broadcast tone] Last time: Jamestown — tobacco, the headright, and the House of Burgesses. Now rewind about sixty years, to a mountain in Bolivia in 1545, where one silver strike bankrolled an empire, and kicked off a debate that's still running: blessing or curse? Four boxes: the silver machine, the human cost, Bodin and the birth of inflation theory, and the Manila galleons. Circle the ones you couldn't explain right now. Eleven minutes, and you'll check all four off.
 
 Marcus: [measured] The strike: 1545. Diego Huallpa, an Indigenous prospector, goes up the mountain looking for a shrine, and a gust of wind knocks him flat. He gets up, and the dirt in his hands is full of silver ore.
