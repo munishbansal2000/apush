@@ -50,8 +50,8 @@ describe('pipeline validation', () => {
     assert.equal(isSafePublicPath('historic/u3e1/grenville.jpg'), true);
   });
 
-  it('P11: the direct stage refuses to run without valid word timing', async () => {
-    const h = fakeContext({stages: ['direct'], meta: () => ({})});
+  it('P11: the storyboard stage refuses to run without valid word timing', async () => {
+    const h = fakeContext({stages: ['storyboard'], meta: () => ({})});
     const turns = parseTranscript('Maya: One two three.');
     atomicJson(join(h.ctx.dataDir, 'turns.json'), {turns});
     atomicJson(join(h.ctx.dataDir, 'timing_map.json'), {starts: [0.25], durations: [1.5], totalSec: 2.5, fps: 30, ttsHash: {}});

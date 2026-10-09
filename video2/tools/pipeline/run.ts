@@ -12,9 +12,10 @@ import {audioInputHash, audioStage} from './stages/audio';
 import {timingInputHash, timingStage} from './stages/timing';
 import {wordsStage} from './stages/words';
 import {imagesStage} from './stages/images';
-import {docContactStage, docDirectStage, docRenderStage, docResolve, docSyncIssues, generateClips} from './stages/doc';
+import {docContactStage, docRenderStage, docResolve, docSyncIssues, generateClips} from './stages/doc';
+import {buildStage, storyboardStage} from './stages/storyboard';
 
-const TIMED_STAGES = new Set<PipelineStage>(['timing', 'words', 'direct', 'clips', 'contact', 'render']);
+const TIMED_STAGES = new Set<PipelineStage>(['timing', 'words', 'storyboard', 'build', 'clips', 'contact', 'render']);
 
 /** Run the selected stages in order. */
 export async function runPipeline(ctx: PipelineContext): Promise<void> {
@@ -33,8 +34,8 @@ export async function runPipeline(ctx: PipelineContext): Promise<void> {
   const audioHash = audioInputHash(ctx, turns, PRONUNCIATIONS);
   audioStage(ctx, turns, PRONUNCIATIONS);
 
-  // Image research only needs turns; every other later stage needs measured timing.
-  // Without one of those selected, skip loading timing so --only audio/images works on a fresh episode.
+  // Images only need the script; everything after needs measured timing. Without a timed stage selected, stop here so
+  // --only audio / --only images work on a fresh lesson.
   if (!stages.some(stage => TIMED_STAGES.has(stage))) {
     imagesStage(ctx, turns);
     console.log(`pipeline complete through: ${stages.join(', ')}`);
@@ -42,14 +43,11 @@ export async function runPipeline(ctx: PipelineContext): Promise<void> {
   }
   const timingHash = timingInputHash(ctx, audioHash);
   const timing = timingStage(ctx, turns, audioHash);
-
-  // --estimate-words: machines without Vosk (a preview on a laptop) skip word alignment and estimate phrase times from
-  // their position in the line. Cuts land approximately; never use it for a final render.
-  const estimateWords = process.argv.includes('--estimate-words');
-  if (estimateWords) console.log('[words] --estimate-words: no Vosk; phrase times estimated (preview only)');
+  if (ctx.estimateWords) console.log('[words] --estimate-words: no Vosk; phrase times estimated (preview only)');
   else wordsStage(ctx, turns, timing, timingHash);
   imagesStage(ctx, turns);
-  if (stages.includes('direct')) docDirectStage(ctx, {allowEstimated: estimateWords});
+  if (stages.includes('storyboard')) storyboardStage(ctx);
+  if (stages.includes('build')) buildStage(ctx);
   if (!stages.some(stage => stage === 'clips' || stage === 'contact' || stage === 'render')) {
     console.log(`pipeline complete through: ${stages.join(', ')}`);
     return;
@@ -59,10 +57,10 @@ export async function runPipeline(ctx: PipelineContext): Promise<void> {
     console.log(`pipeline complete through: ${stages.join(', ')}`);
     return;
   }
-  let {inputs, resolved} = docResolve(episode, ctx.draft, estimateWords);
+  let {inputs, resolved} = docResolve(episode, ctx.draft, ctx.estimateWords);
   if (stages.includes('clips')) {
     if (ctx.videoGen === 'none') console.log('[clips] --video-gen none: clip shots show their still');
-    else if (generateClips(episode, resolved, {force: ctx.force})) ({inputs, resolved} = docResolve(episode, ctx.draft, estimateWords));
+    else if (generateClips(episode, resolved, {force: ctx.force})) ({inputs, resolved} = docResolve(episode, ctx.draft, ctx.estimateWords));
   }
   const issues = docSyncIssues(episode, inputs);
   atomicJson(join(ctx.work, 'sync_report.json'), {episode, issues});

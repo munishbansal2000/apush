@@ -1,28 +1,19 @@
 /**
- * Overnight: build every lesson of a unit end to end, unattended, and leave a report in the morning.
+ * Overnight: build every lesson of a unit end to end, unattended, and leave a report in the morning. Each lesson runs
+ * the whole pipeline (script -> voices -> images -> storyboard -> build -> clips -> contact sheet -> render), one at a
+ * time; a failing lesson never stops the others and is retried once (without LTX when clips were the problem).
+ * Re-running the same command continues where it stopped (checkpoints). Logs and summary.md: out/overnight/<time>/.
  *
- *   npx tsx tools/overnight-unit.ts --unit 3                 images -> depth maps -> every lesson (final videos)
- *   npx tsx tools/overnight-unit.ts --unit 3 --lessons u3e1,u3e4
- *   npx tsx tools/overnight-unit.ts --unit 3 --list          show the plan and exit
- *   npx tsx tools/overnight-unit.ts --unit 3 --mode prod      final Fish voices (default: dev, edge-tts)
- *   options: --keep-plan (lessons with a plan keep it)  --skip-images  --skip-depth  --no-clips (no LTX)  --no-draft (approved geography only)  --preview (no final render)
+ *   npx tsx tools/overnight-unit.ts --unit 3 [--lessons u3e1,u3e4] [--mode prod] [--list]
+ *   options: --no-clips (no LTX)  --no-draft (approved geography only)  --preview (no final render)  --editor
  *
- * 1. images   python tools/download-u3-images.py --all: polite downloads of the unit's catalogs, registered for the director
- * 2. depth    python tools/depth-maps.py per lesson folder (2.5D parallax; skipped with a warning if torch is missing)
- * 3. lessons  tools/video-pipeline.ts --episode <ep> --full --draft --skip images for each lesson, one at a time
- * 4. retry    each failed lesson once more; when LTX was the problem, the retry renders without clips (stills move instead)
- * Every step is resumable (checkpoints), so re-running the same command after a crash continues where it stopped.
- * A failing lesson never stops the others. Logs and summary.md go to out/overnight/<timestamp>/.
- * Prod (Fish): set FISH_API_KEYS="k1,k2,..." or FISH_API_KEYS_FILE (one per line); tools/fish_tts.py calls the Fish
- * cloud API (FISH_TTS_SCRIPT swaps in another script). Keys go
- * round-robin per lesson (lesson 1 key 1, lesson 2 key 2, ...); the key reaches the Fish script as FISH_API_KEY.
- * Needs: Meta UI login (director), LTX Desktop running (clips), Fish/edge-tts set up (audio). Keep the PC awake.
+ * Prod (Fish): FISH_API_KEYS="k1,k2,..." or FISH_API_KEYS_FILE (one per line); keys go round-robin per lesson.
+ * Needs: Meta UI login (storyboards), LTX Desktop (clips), DEPTH_PYTHON for parallax depth maps. Keep the PC awake.
  */
 import {spawn} from 'node:child_process';
 import {createWriteStream, existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync} from 'node:fs';
 import {join, relative} from 'node:path';
 import {ROOT, arg} from './lib';
-import {findTool, pipelinePython} from './pipeline/tools';
 import {keyTag, loadFishKeys} from './pipeline/fish-keys';
 import {parseTranscript, resolveAudioScript} from './pipeline-core';
 
@@ -37,7 +28,7 @@ const opt = (name: string, ...aliases: string[]): string | undefined => {
   }
   return undefined;
 };
-const KNOWN = new Set(['unit', 'lessons', 'lesson', 'mode', 'list', 'skip-images', 'skip-depth', 'no-clips', 'no-draft', 'preview', 'keep-plan']);
+const KNOWN = new Set(['unit', 'lessons', 'lesson', 'mode', 'list', 'no-clips', 'no-draft', 'preview', 'editor']);
 for (const a of process.argv.slice(2)) {
   const m = /^--([^=]+)/.exec(a);
   if (m && !KNOWN.has(m[1])) { console.error(`unknown option --${m[1]} (known: ${[...KNOWN].map(k => `--${k}`).join(' ')})`); process.exit(1); }
@@ -105,34 +96,6 @@ async function main() {
   const steps: string[] = [];
   console.log(`[overnight] unit ${unit}: ${lessons.join(', ')}${lessonArg === undefined ? ' (all; use --lessons u3e1,u3e2 for some)' : ''}\n[overnight] logs: ${relative(ROOT, logDir)}`);
 
-  // 1. Images from the unit catalogs (polite; skips what is already on disk).
-  const downloader = join(ROOT, 'tools', `download-u${unit}-images.py`);
-  if (!flag('skip-images') && existsSync(downloader)) {
-    let code = 0;
-    // Only the listed lessons' catalogs; a failed lesson does not stop the others.
-    if (lessonArg !== undefined) for (const l of lessons) { const c = (await run('images', pipelinePython(), [downloader, '--lesson', l], 'images.log')).code; code = code || c; }
-    else code = (await run('images', pipelinePython(), [downloader, '--all'], 'images.log')).code;
-    steps.push(`images: ${code === 0 ? 'ok' : `exit ${code} (see images.log); continuing with what downloaded`}`);
-  } else steps.push(`images: skipped${existsSync(downloader) ? '' : ` (no tools/download-u${unit}-images.py)`}`);
-
-  // 2. Depth maps per lesson folder (torch lives in the LTX/diffusers Python more often than the pipeline one).
-  if (!flag('skip-depth')) {
-    let python: string;
-    try { python = findTool(['python3', 'python'], process.env.DEPTH_PYTHON ? 'DEPTH_PYTHON' : process.env.LTX_PYTHON ? 'LTX_PYTHON' : undefined); } catch { python = pipelinePython(); }
-    const notes: string[] = [];
-    for (const lesson of lessons) {
-      const dir = join(ROOT, 'public', 'historic', lesson);
-      const files = existsSync(dir) ? readdirSync(dir).filter(f => /\.(jpe?g|png|webp)$/i.test(f)).map(f => join('public', 'historic', lesson, f)) : [];
-      if (!files.length) continue;
-      const {code, log} = await run('depth', python, [join('tools', 'depth-maps.py'), ...files], 'depth.log');
-      if (code !== 0) {
-        notes.push(`${lesson}: exit ${code}`);
-        if (/missing dependency/.test(tail(log, 3))) { notes.push('torch/transformers missing: set DEPTH_PYTHON or pip install -r requirements-depth.txt; shots stay flat'); break; }
-      }
-    }
-    steps.push(`depth maps: ${notes.length ? notes.join('; ') : 'ok'}`);
-  } else steps.push('depth maps: skipped');
-
   // Prod preflight: the Fish script, keys, and a voice for every speaker (lessons missing one will fail at audio).
   const mode = opt('mode') ?? 'dev';
   const noVoice = new Set<string>();
@@ -155,8 +118,9 @@ async function main() {
     console.log(`[overnight] ${steps.slice(-2).join('\n[overnight] ')}`);
   }
 
-  // 3 + 4. Lessons, one at a time; failed ones retried once at the end.
-  const base = ['--mode', mode, '--full', '--skip', 'images', ...(flag('no-draft') ? [] : ['--draft']), ...(flag('no-clips') ? ['--video-gen', 'none'] : []), ...(flag('keep-plan') ? ['--keep-plan'] : [])];
+  // Lessons, one at a time (each runs the whole pipeline: voices, images, storyboard, build, clips, render); failed
+  // lessons are retried once at the end.
+  const base = ['--mode', mode, '--full', ...(flag('no-draft') ? [] : ['--draft']), ...(flag('no-clips') ? ['--video-gen', 'none'] : []), ...(flag('editor') ? ['--editor'] : [])];
   if (flag('preview')) base.splice(base.indexOf('--full'), 1);
   const results = new Map<string, Result>();
   const build = async (lesson: string, attempt: number, extra: string[] = []) => {

@@ -7,7 +7,7 @@ import type {PipelineTurn} from '../pipeline-core';
 import {cleanSpeech} from './speech';
 import {LOOK_RULES} from './shots';
 import {
-  assetsForAct, customsForAct, directOutline, readAnswer, type CatalogEntry, type DirectorInputs, type DirectorIO, type DirectorLog, type MapData, type Outline,
+  COORDINATE_RULE, assetsForAct, customsForAct, directOutline, readAnswer, type CatalogEntry, type DirectorInputs, type DirectorIO, type DirectorLog, type MapData, type Outline,
 } from './doc-director';
 import {checkStoryboard, turnKeys, type Storyboard, type StoryTurn, type StoryVisual} from './storyboard';
 
@@ -49,6 +49,7 @@ export function storyboardPrompt(index: number, outline: Outline, turns: Pipelin
     ' {"kind":"clip","image":"<asset path>","prompt":"Gunpowder smoke drifts slowly across the field.","at":{"phrase":"..."},"priority":"essential","span":1}',
     ']}],"years":[{"turn":0,"phrase":"in 1763","text":"1763"}]}',
     'Lines with no new visual are simply left out. Cues inside maps and point cards are {"offset": seconds after the visual starts}.',
+    COORDINATE_RULE,
     '',
     `ASSETS for this act (${assets.length} of ${catalog.length}; path | size | max zoom | description):`,
     ...(assets.length ? assets.map(c => `${c.path} | ${c.width}x${c.height} | ${fmtZoom(c.maxZoom)} | ${c.description.replace(/\s+/g, ' ').slice(0, 120)}${c.retrospective ? ' (retrospective)' : ''}`) : ['(none: use maps and point cards)']),

@@ -225,7 +225,7 @@ export function buildPlan(input: BuildInputs): BuildResult {
     const [a, b, c] = [kindOf(drafts[i - 1]), kindOf(drafts[i]), kindOf(drafts[i + 1])];
     if (!b || a !== b || b !== c) continue;
     const d = drafts[i];
-    if (d.visual?.pace === 'hold' || (d.visual?.move && !d.visual.moveFromPlan) || d.shot.type === 'portrait') { warnings.push(`turn ${(d.shot.at as Cue).turn}: three ${b} moves in a row (kept: storyboard intent)`); continue; }
+    if (d.visual?.pace === 'hold' || d.visual?.move || d.shot.type === 'portrait') { warnings.push(`turn ${(d.shot.at as Cue).turn}: three ${b} moves in a row (kept: storyboard intent)`); continue; }
     const t = treatmentFor(String(d.shot.image));
     const alt = t && alternateFraming(t, b);
     if (!alt) { warnings.push(`turn ${(d.shot.at as Cue).turn}: three ${b} moves in a row (no alternative framing)`); continue; }

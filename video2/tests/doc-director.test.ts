@@ -1,84 +1,33 @@
 import assert from 'node:assert/strict';
-import {mkdtempSync, readdirSync, readFileSync, writeFileSync} from 'node:fs';
+import {mkdtempSync, readFileSync, writeFileSync} from 'node:fs';
 import {tmpdir} from 'node:os';
 import {join} from 'node:path';
 import {describe, it} from 'node:test';
 import {parseTranscript, type PipelineTurn} from '../tools/pipeline-core';
-import {ACT_ASSET_LIMIT, ACT_REVIEW, ACT_REVIEW_FULL, ACT_SELF_CHECK, actPrompt, assetsForAct, buildCatalog, customsForAct, directDocumentary, selfCheckFor, validateOutline, type ActOutput, type Outline} from '../tools/pipeline/doc-director';
-import {applyActPatch, isPatch} from '../tools/pipeline/act-patch';
-import type {GeoFeature, PlanShot, ShotPlan} from '../tools/pipeline/shots';
+import {ACT_ASSET_LIMIT, assetsForAct, buildCatalog, customsForAct, materializeCoordinateObjects, validateOutline, type Outline} from '../tools/pipeline/doc-director';
+import {directStoryboard, storyboardPrompt} from '../tools/pipeline/storyboard-director';
 
 const root = new URL('..', import.meta.url).pathname;
-const sample = JSON.parse(readFileSync(join(root, 'data/u3e1/shots.sample.json'), 'utf8')) as ShotPlan & {shots: PlanShot[]};
-// The cold open (u3e1 t00-t05, verbatim; t05 trimmed to its first sentence, where the sample ends), with measured durations.
-const script = readFileSync(join(root, 'tests/fixtures/u3e1-cold-open.txt'), 'utf8');
-const turns = parseTranscript(script);
+// The cold open (u3e1 t00-t05, verbatim; t05 trimmed to its first sentence), with measured durations.
+const turns = parseTranscript(readFileSync(join(root, 'tests/fixtures/u3e1-cold-open.txt'), 'utf8'));
 const durations = [34.25, 21.46, 3.26, 5.76, 5.42, 3.4];
 const starts = durations.reduce<number[]>((acc, _, i) => [...acc, i === 0 ? 0.25 : acc[i - 1] + durations[i - 1] + 0.18], []);
 const timing = {starts, durations, totalSec: starts[5] + durations[5] + 0.6};
-const sizes = {
-  'historic/u3e1/french-indian-war.jpg': {width: 1280, height: 869}, 'historic/u3e1/george-grenville-portrait.jpg': {width: 2322, height: 2902},
-  'historic/u3e1/paxton-boys.jpg': {width: 3770, height: 2678}, 'historic/u3e1/proclamation-line-map.jpg': {width: 1900, height: 2340},
-  'historic/u3e1/edmund-burke-1769.jpg': {width: 3840, height: 4685},
-};
-const geoDir = join(root, 'data/library/geo');
-const geo = Object.fromEntries(readdirSync(geoDir).map(f => JSON.parse(readFileSync(join(geoDir, f), 'utf8')) as GeoFeature).map(f => [f.properties.id, f]));
-const places = Object.fromEntries((JSON.parse(readFileSync(join(root, 'data/library/entities/places.json'), 'utf8')) as {id: string; name: string; location: [number, number]}[]).map(p => [p.id, p]));
-const options = {imageSizes: sizes, imageShas: Object.fromEntries(Object.keys(sizes).map(k => [k, 'a'.repeat(64)])), geo, places, allowEstimated: true, allowUnapproved: true};
-// Boxes check later in the full episode; this six-turn excerpt checks box 1 on its own last turn.
 const outline: Outline = {
   title: 'Salutary Neglect, the Proclamation Line, and Pontiac', thesis: 'Britain won the war and wrecked the arrangement that made the empire work.',
   boxes: [
-    {label: 'The end of salutary neglect', intro: {turn: 0, phrase: 'the end of salutary neglect'}, check: {turn: 5, phrase: 'prime minister from 1763'}, turns: {from: 1, to: 5}},
-    {label: 'The Proclamation Line of 1763', intro: {turn: 0, phrase: 'the proclamation line of 1763'}, check: {turn: 5, phrase: 'from 1763'}, turns: {from: 5, to: 5}},
-  ].slice(0, 1).concat([{label: 'Pontiac', intro: {turn: 0, phrase: 'pontiacs rebellion'}, check: {turn: 5, phrase: 'from 1763'}, turns: {from: 5, to: 5}}]),
+    {label: 'The end of salutary neglect', intro: {turn: 0, phrase: 'the end of salutary neglect'}, check: {turn: 4, phrase: 'let me guess'}, turns: {from: 1, to: 4}},
+    {label: 'Pontiac', intro: {turn: 0, phrase: 'pontiacs rebellion'}, check: {turn: 5, phrase: 'from 1763'}, turns: {from: 5, to: 5}},
+  ],
   acts: [{title: 'Cold open', purpose: 'Set up 1763 and the three boxes', turns: {from: 0, to: 0}}, {title: 'The bill', purpose: 'War debt and Grenville', turns: {from: 1, to: 5}}],
 };
-// Fix the overlapping box spans of the excerpt: box 1 covers 1-4, box 3 covers 5.
-outline.boxes[0].turns = {from: 1, to: 4};
-outline.boxes[0].check = {turn: 4, phrase: 'let me guess'};
-const act1 = {shots: sample.shots.filter(s => s.at.turn === 0), years: sample.years};
-const act2 = {shots: sample.shots.filter(s => s.at.turn >= 1)};
-const catalog = buildCatalog(sizes, {});
-const maps = {geo: Object.values(geo).map(g => ({id: g.properties.id, name: g.properties.id, type: 'x', precision: g.properties.precision})), places: Object.values(places).map(p => ({id: p.id, name: p.name}))};
+const catalog = buildCatalog({'historic/u3e1/paxton-boys.jpg': {width: 3770, height: 2678}, 'historic/u3e1/scene-london-1760s.jpg': {width: 4000, height: 2600}}, {});
+const options = {imageSizes: {}, allowEstimated: true};
+const maps = {geo: [], places: []};
+const img = (image: string, phrase: string) => ({kind: 'image', image, at: {phrase}, priority: 'essential'});
 
-function fakeIO(answers: Record<string, unknown>) {
-  const dir = mkdtempSync(join(tmpdir(), 'v2-director-'));
-  const calls: string[] = [];
-  return {calls, io: {meta: (name: string) => {
-    calls.push(name);
-    if (!(name in answers)) throw new Error(`unexpected LLM call ${name}`);
-    const path = join(dir, `${name}.json`);
-    writeFileSync(path, JSON.stringify(answers[name]));
-    return path;
-  }}};
-}
-
-describe('documentary director', () => {
-  it('outline -> acts -> a plan the resolver accepts (the hand sample, split into acts)', () => {
-    const {io, calls} = fakeIO({'doc-outline': outline, 'doc-act-01': act1, 'doc-act-02': act2});
-    const r = directDocumentary(io, {episode: 'u3e1', turns, timing, words: {}, options, catalog, maps});
-    assert.ok(r.plan, `director failed:\n${JSON.stringify(r.log, null, 1)}`);
-    assert.equal(r.plan!.shots.length, sample.shots.length);
-    assert.deepEqual(calls, ['doc-outline', 'doc-act-01', 'doc-act-02']);
-  });
-
-  it('re-asks only the act that failed', () => {
-    const broken = {shots: act2.shots.map((s, i) => (i === 1 ? {...s, at: {turn: s.at.turn, phrase: 'words nobody said'}} : s))};
-    const {io, calls} = fakeIO({'doc-outline': outline, 'doc-act-01': act1, 'doc-act-02': broken, 'doc-act-02-repair-1': act2});
-    const r = directDocumentary(io, {episode: 'u3e1', turns, timing, words: {}, options, catalog, maps});
-    assert.ok(r.plan, JSON.stringify(r.log, null, 1));
-    assert.deepEqual(calls, ['doc-outline', 'doc-act-01', 'doc-act-02', 'doc-act-02-repair-1']);
-    assert.match(r.log.find(l => l.stage.startsWith('assembled (attempt 1)'))!.issues.join('\n'), /does not say "words nobody said"/);
-  });
-
-  it('editing one line changes only the prompt of the act that contains it', () => {
-    const edited: PipelineTurn[] = turns.map((t, i) => (i === 3 ? {...t, text: `${t.text} Edited.`} : t));
-    assert.equal(actPrompt(0, outline, turns, durations, catalog, maps), actPrompt(0, outline, edited, durations, catalog, maps));
-    assert.notEqual(actPrompt(1, outline, turns, durations, catalog, maps), actPrompt(1, outline, edited, durations, catalog, maps));
-  });
-
-  it('rejects outlines with gaps, out-of-order checks, and invented cues', () => {
+describe('outline (shared by the storyboard director)', () => {
+  it('rejects outlines with gaps and invented cues', () => {
     const gap = structuredClone(outline);
     gap.acts[1].turns.from = 2;
     assert.match(validateOutline(gap, turns, timing, {}, true).issues.join('\n'), /act 2: starts at turn 2, expected 1/);
@@ -92,27 +41,9 @@ describe('documentary director', () => {
     assert.deepEqual(c.map(e => e.path), ['a.jpg']);
     assert.ok(c[0].maxZoom > 1.5 && c[0].maxZoom <= 2.6, `maxZoom ${c[0].maxZoom}`);
   });
-
-  it('agent mode: returns every pending act prompt at once, then continues when the answers exist', () => {
-    const dir = mkdtempSync(join(tmpdir(), 'v2-agent-'));
-    const answers: Record<string, unknown> = {'doc-outline': outline};
-    const asked: string[] = [];
-    const io = {meta: (name: string) => {
-      asked.push(name);
-      if (!(name in answers)) return null;
-      const path = join(dir, `${name}.json`);
-      writeFileSync(path, JSON.stringify(answers[name]));
-      return path;
-    }};
-    const first = directDocumentary(io, {episode: 'u3e1', turns, timing, words: {}, options, catalog, maps});
-    assert.deepEqual(first.pending, ['doc-act-01', 'doc-act-02'], 'both acts handed out together for parallel agents');
-    Object.assign(answers, {'doc-act-01': act1, 'doc-act-02': act2});
-    const second = directDocumentary(io, {episode: 'u3e1', turns, timing, words: {}, options, catalog, maps});
-    assert.ok(second.plan && !second.pending);
-  });
 });
 
-describe('act prompt size: per-act images and custom explainers', () => {
+describe('storyboard prompts', () => {
   const big = buildCatalog(Object.fromEntries([
     ...Array.from({length: 60}, (_, i) => [`historic/filler-${String(i).padStart(2, '0')}.jpg`, {width: 3000, height: 2000}]),
     ['historic/pontiac-council.jpg', {width: 3000, height: 2000}], ['historic/grenville.jpg', {width: 3000, height: 2000}],
@@ -122,12 +53,14 @@ describe('act prompt size: per-act images and custom explainers', () => {
     'historic/grenville.jpg': 'Portrait of George Grenville, prime minister',
   });
 
-  it('offers at most ACT_ASSET_LIMIT images, the ones the act talks about first', () => {
+  it('offers each act at most ACT_ASSET_LIMIT images, the ones its narration talks about first', () => {
     const picked = assetsForAct(big, 'Pontiac gathers the Ottawa and strikes Detroit. The forts fall.');
     assert.ok(picked.length <= ACT_ASSET_LIMIT);
     assert.ok(picked.some(c => c.path === 'historic/pontiac-council.jpg'));
     assert.ok(!picked.some(c => c.path === 'historic/grenville.jpg'), 'an unrelated portrait is not offered');
     assert.equal(assetsForAct(big.slice(0, 10), 'anything').length, 10, 'a small catalog is offered whole');
+    const prompt = storyboardPrompt(0, outline, turns, durations, big, maps);
+    assert.ok((prompt.match(/^historic\//gm) ?? []).length <= ACT_ASSET_LIMIT);
   });
 
   it('offers a custom explainer only when the narration names its event', () => {
@@ -136,122 +69,45 @@ describe('act prompt size: per-act images and custom explainers', () => {
     assert.deepEqual(customsForAct('Stamp Act riots in Boston').map(([n]) => n), ['StampActTax']);
   });
 
-  it('keeps an act prompt small with a large catalog', () => {
-    const prompt = actPrompt(0, outline, turns, durations, big, maps);
-    assert.ok((prompt.match(/^historic\//gm) ?? []).length <= ACT_ASSET_LIMIT);
-    assert.ok(!/CUSTOM EXPLAINERS/.test(prompt) || /PontiacFortsMap/.test(prompt));
-  });
-});
-
-describe('review and repair patches (only changed shots come back)', () => {
-  const base = {shots: [
-    {type: 'image_move', at: {turn: 1, phrase: 'then start with the bill'}, image: 'a.jpg'},
-    {type: 'image_move', at: {turn: 1, phrase: 'drowning in debt'}, image: 'b.jpg'},
-    {type: 'image_move', at: {turn: 2, phrase: 'someone else to bill'}, image: 'c.jpg'},
-  ], years: [{at: {turn: 1, phrase: 'then start'}, text: '1763'}]} as unknown as ActOutput;
-  const img = (shots: unknown[]) => shots.map(s => (s as {image: string}).image);
-
-  it('replaces, removes and inserts by index, checked against each shot anchor', () => {
-    const r = applyActPatch(base, {
-      replace: [{index: 1, anchor: {turn: 1, phrase: 'Drowning in debt!'}, shot: {type: 'image_move', at: {turn: 1, phrase: 'drowning in debt'}, image: 'B.jpg'}}],
-      remove: [{index: 2, anchor: {turn: 2, phrase: 'someone else to bill'}}],
-      insert: [{index: -1, shot: {image: 'first.jpg'}}, {index: 0, anchor: {turn: 1, phrase: 'then start with the bill'}, shot: {image: 'after-a.jpg'}}],
-      years: [],
-    });
-    assert.deepEqual(r.issues, []);
-    assert.deepEqual(img(r.act!.shots), ['first.jpg', 'a.jpg', 'after-a.jpg', 'B.jpg']);
-    assert.deepEqual(r.act!.years, []);
-    assert.deepEqual(applyActPatch(base, {ok: true}).act, base, '{"ok": true} keeps the draft');
+  it('editing one line changes only the prompt of the act that contains it', () => {
+    const edited: PipelineTurn[] = turns.map((t, i) => (i === 3 ? {...t, text: `${t.text} Edited.`} : t));
+    assert.equal(storyboardPrompt(0, outline, turns, durations, catalog, maps), storyboardPrompt(0, outline, edited, durations, catalog, maps));
+    assert.notEqual(storyboardPrompt(1, outline, turns, durations, catalog, maps), storyboardPrompt(1, outline, edited, durations, catalog, maps));
   });
 
-  it('corrects an off-by-one index from the anchor, and rejects edits it cannot place', () => {
-    const fixed = applyActPatch(base, {replace: [{index: 2, anchor: {turn: 1, phrase: 'drowning in debt'}, shot: {image: 'B.jpg'}}]});
-    assert.deepEqual(img(fixed.act!.shots), ['a.jpg', 'B.jpg', 'c.jpg']);
-    assert.match(applyActPatch(base, {replace: [{index: 7, anchor: {turn: 9, phrase: 'nothing'}, shot: {}}]}).issues.join('\n'), /do not identify one shot/);
-    assert.match(applyActPatch(base, {replace: [{index: 0, shot: {image: 'x'}}], remove: [{index: 0}]}).issues.join('\n'), /both replaced and removed/);
-    assert.ok(!isPatch({shots: []}) && isPatch({ok: true}) && !isPatch({ok: true, extra: 1}));
-  });
-
-  function draftIO(answers: Record<string, {answer: unknown; draft?: unknown}>) {
-    const dir = mkdtempSync(join(tmpdir(), 'v2-patch-'));
-    const calls: string[] = [];
-    return {calls, io: {meta: (name: string) => {
-      calls.push(name);
-      const a = answers[name];
-      if (!a) throw new Error(`unexpected LLM call ${name}`);
-      writeFileSync(join(dir, `${name}.json`), JSON.stringify(a.answer));
-      if (a.draft) writeFileSync(join(dir, `${name}.draft.json`), JSON.stringify(a.draft));
-      return join(dir, `${name}.json`);
-    }}};
-  }
-
-  it('applies a same-chat review patch onto the saved draft, and a repair patch onto the previous answer', () => {
-    const broken = {shots: act2.shots.map((s, i) => (i === 1 ? {...s, at: {turn: s.at.turn, phrase: 'words nobody said'}} : s))};
-    const {io, calls} = draftIO({
-      'doc-outline': {answer: outline},
-      'doc-act-01': {answer: {ok: true}, draft: act1},
-      'doc-act-02': {answer: {remove: [{index: 0, anchor: act2.shots[0].at}], insert: [{index: -1, shot: act2.shots[0]}]}, draft: broken},
-      'doc-act-02-repair-1': {answer: {replace: [{index: 1, anchor: {turn: broken.shots[1].at.turn, phrase: 'words nobody said'}, shot: act2.shots[1]}]}},
-    });
-    const r = directDocumentary(io, {episode: 'u3e1', turns, timing, words: {}, options, catalog, maps});
-    assert.ok(r.plan, JSON.stringify(r.log, null, 1));
-    assert.deepEqual(calls, ['doc-outline', 'doc-act-01', 'doc-act-02', 'doc-act-02-repair-1']);
-    assert.match(r.log.find(l => l.stage.startsWith('assembled (attempt 1)'))!.issues.join('\n'), /^shot index 1 at: turn 1/m, 'repair lines use act-local indexes');
-    assert.equal(r.plan!.shots.length, sample.shots.length);
-  });
-
-  it('a patch with nothing to apply to asks for the complete act; agents are told to answer in full', () => {
-    const {io, calls} = draftIO({'doc-outline': {answer: outline}, 'doc-act-01': {answer: act1}, 'doc-act-02': {answer: {ok: true}}, 'doc-act-02-repair-1': {answer: act2}});
-    const r = directDocumentary(io, {episode: 'u3e1', turns, timing, words: {}, options, catalog, maps});
-    assert.ok(r.plan);
-    assert.deepEqual(calls.slice(-1), ['doc-act-02-repair-1']);
-    assert.match(r.log.find(l => l.stage === 'act 2')!.issues.join('\n'), /no earlier answer to apply it to/);
-    assert.equal(selfCheckFor(ACT_REVIEW), ACT_SELF_CHECK);
-    assert.equal(selfCheckFor(ACT_REVIEW_FULL), ACT_SELF_CHECK);
-    assert.doesNotMatch(ACT_SELF_CHECK, /"replace"/);
-  });
-
-  it('--no-patches: the review and repair ask for complete acts', () => {
-    const prompts: Record<string, string> = {};
-    const broken = {shots: act2.shots.map((s, i) => (i === 1 ? {...s, at: {turn: s.at.turn, phrase: 'words nobody said'}} : s))};
-    const answers: Record<string, unknown> = {'doc-outline': outline, 'doc-act-01': act1, 'doc-act-02': broken, 'doc-act-02-repair-1': act2};
-    const dir = mkdtempSync(join(tmpdir(), 'v2-nopatch-'));
-    const io = {meta: (name: string, prompt: string, _a?: string[], followup?: string) => {
-      prompts[name] = `${prompt}\n${followup ?? ''}`;
+  it('agent mode: every act prompt is handed out at once, and the run continues when the answers exist', () => {
+    const dir = mkdtempSync(join(tmpdir(), 'v2-agent-'));
+    const answers: Record<string, unknown> = {'doc-outline': outline};
+    const io = {meta: (name: string) => {
+      if (!(name in answers)) return null;
       writeFileSync(join(dir, `${name}.json`), JSON.stringify(answers[name]));
       return join(dir, `${name}.json`);
     }};
-    const r = directDocumentary(io, {episode: 'u3e1', turns, timing, words: {}, options, catalog, maps, patches: false});
-    assert.ok(r.plan);
-    assert.doesNotMatch(prompts['doc-act-01'], /"replace"/);
-    assert.match(prompts['doc-act-01'], /return ONLY the corrected JSON object/);
-    assert.doesNotMatch(prompts['doc-act-02-repair-1'], /"replace"/);
+    const input = {episode: 'u3e1', turns, timing, words: {}, options, catalog, maps};
+    assert.deepEqual(directStoryboard(io, input).pending, ['sb-act-01', 'sb-act-02'], 'both acts together, for parallel agents');
+    Object.assign(answers, {
+      'sb-act-01': {turns: [{turn: 0, visuals: [img('historic/u3e1/scene-london-1760s.jpg', 'last time')]}]},
+      'sb-act-02': {turns: [{turn: 1, visuals: [img('historic/u3e1/paxton-boys.jpg', 'drowning in debt')]}]},
+    });
+    const done = directStoryboard(io, input);
+    assert.ok(done.storyboard && !done.pending, JSON.stringify(done.log, null, 1));
   });
 });
 
-describe('review: frozen acts and note-driven revision', () => {
-  it('revise mode re-asks only the noted act, as a patch with the reviewer note, and keeps the other acts', async () => {
-    const plan = {episode: 'u3e1', boxes: outline.boxes, shots: [...act1.shots, ...act2.shots], years: act1.years ?? []} as ShotPlan;
-    const target = act2.shots[1];
-    const prompts: Record<string, string> = {};
-    const dir = mkdtempSync(join(tmpdir(), 'v2-revise-'));
-    const io = {meta: (name: string, prompt: string) => {
-      prompts[name] = prompt;
-      if (name !== 'doc-act-02-revise-1') throw new Error(`unexpected LLM call ${name}`);
-      writeFileSync(join(dir, `${name}.json`), JSON.stringify({ok: true}));
-      return join(dir, `${name}.json`);
-    }};
-    const r = directDocumentary(io, {episode: 'u3e1', turns, timing, words: {}, options, catalog, maps,
-      revise: {outline, plan, notes: new Map([[2, ['shot index 1: wrong image, use the Grenville portrait']]])}});
-    assert.ok(r.plan, JSON.stringify(r.log, null, 1));
-    assert.deepEqual(Object.keys(prompts), ['doc-act-02-revise-1'], 'act 1 is never re-asked');
-    assert.match(prompts['doc-act-02-revise-1'], /REVIEWER NOTE: shot index 1: wrong image/);
-    assert.match(prompts['doc-act-02-revise-1'], /1: \{"type"/);
-    assert.deepEqual(r.plan!.shots.slice(0, act1.shots.length), act1.shots, 'act 1 kept exactly');
-    assert.ok(r.plan!.shots.some(s => JSON.stringify(s) === JSON.stringify(target)), "the noted act keeps its shots ({ok: true})");
+describe('coordinate transport', () => {
+  it('turns object-shaped coordinates back into arrays anywhere in an answer (Meta UI deletes bare numeric arrays)', () => {
+    const answer = {turns: [{turn: 3, visuals: [{kind: 'map', map: {extent: {southwest: {lon: -92, lat: 24}, northeast: {lon: -62, lat: 48}},
+      labels: [{text: 'Quebec', lonlat: {lon: -71, lat: 48.3}}]}}, {kind: 'clip', focus: {x: 0.4, y: 0.6}}]}]};
+    const out = materializeCoordinateObjects(answer) as {turns: {visuals: Record<string, unknown>[]}[]};
+    const map = out.turns[0].visuals[0].map as {extent: unknown; labels: {lonlat: unknown}[]};
+    assert.deepEqual(map.extent, [[-92, 24], [-62, 48]]);
+    assert.deepEqual(map.labels[0].lonlat, [-71, 48.3]);
+    assert.deepEqual(out.turns[0].visuals[1].focus, [0.4, 0.6]);
   });
+});
 
-  it('locates contact-sheet shots in acts and knows when a plan is fully approved', async () => {
+describe('review helpers', () => {
+  it('locate contact-sheet shots in acts and know when a plan is fully approved', async () => {
     const {locateShot, planApproved, openNotes} = await import('../tools/pipeline/review');
     const shots = [{at: {turn: 0}}, {at: {turn: 0}}, {at: {turn: 2}}, {at: {turn: 3}}];
     const acts = [{turns: {from: 0, to: 1}}, {turns: {from: 2, to: 5}}];

@@ -3,7 +3,7 @@ import {existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSyn
 import {join, relative} from 'node:path';
 import {ROOT} from '../lib';
 import {readJson, sha256} from '../pipeline-core';
-import {buildCatalog, selfCheckFor, type CatalogEntry, type DirectorIO, type MapData} from './doc-director';
+import {buildCatalog, type CatalogEntry, type DirectorIO, type MapData} from './doc-director';
 import type {DocInputs} from './doc-inputs';
 
 /** Approved library assets + this lesson's downloaded images (descriptions from data/<ep>/images.json). */
@@ -38,8 +38,8 @@ export function agentIO(dir: string): DirectorIO {
   mkdirSync(dir, {recursive: true});
   return {
     meta: (name, prompt, _attachments, followupPrompt) => {
-      // Single-pass agents get the review step as a final self-check (full answer: there is no draft to patch).
-      const text = followupPrompt ? `${prompt}\n\n---\nBEFORE YOU ANSWER: ${selfCheckFor(followupPrompt)}` : prompt;
+      // Single-pass agents get the review step as a final self-check.
+      const text = followupPrompt ? `${prompt}\n\n---\nBEFORE YOU ANSWER: ${followupPrompt}` : prompt;
       const stem = join(dir, `${name}.${sha256(text).slice(0, 10)}`);
       if (!existsSync(`${stem}.prompt.md`)) writeFileSync(`${stem}.prompt.md`, `${text}\n`);
       const answer = `${stem}.answer.json`;

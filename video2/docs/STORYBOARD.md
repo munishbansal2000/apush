@@ -53,26 +53,22 @@ plus an editor pass.
 12. Retrospective images (later imaginings) are warned when used as "what happened", and approved explicitly.
 13. An image rejected after approval invalidates only the turns that use it.
 
-## Stages (all landed)
+## The pipeline
 
-- **S1** data model, bootstrap from an existing plan, checks, storyboard sheet: `npm run storyboard -- u3e1 bootstrap | check | sheet`
-- **S2** storyboard director (`tools/pipeline/storyboard-director.ts`): outline shared with the old director, one small
-  prompt per act, verbatim/unique/ordered anchors, at most twice per image per act, one clip per act, lesson budget
-  pushed back to the acts holding the extra uses (recap revisits allowed: budget + 2), repairs and reviewer notes
-  re-ask only their acts. Review: `review u3e1 approve storyboard [--acts]`, `review u3e1 note --storyboard --turn 18 "…"`.
-- **S3** treatments (`tools/pipeline/treatments.ts`, `data/library/treatments.json`): kind from name/description
-  (portrait, map, document, object, scene), named framings within the zoom limit, an alternative with a different move,
-  parallax off for maps and documents, focus kept out of the docked sheet's corner. Framing stills:
-  `npm run storyboard -- u3e1 framings`; review: `review treatment <path> approve | needs-work`. LTX clips are keyed
-  by image + prompt + seed + focus, so re-cutting never regenerates them.
-- **S4** scene builder (`tools/pipeline/scene-builder.ts`): repeated phrases made unique, framings copied into the
-  plan, automatic verbatim question cards, optional visuals dropped first, long holds split at a new line (or
-  mid-line) into another framing of the same image (`continues`: one image use), variety on runs of three identical
-  moves unless the storyboard said hold, explainer beats timed from cue phrases; lines it cannot cover are reported as
-  storyboard items. Editor pass (`--editor`): switch framing or drop an optional shot per act; invalid edits discarded.
-- **S5** the pipeline's direct stage runs storyboard -> treatments -> build (`tools/pipeline/stages/storyboard.ts`):
-  bootstraps from an existing plan, moves plan notes to the storyboard, auto-notes acts whose lines changed, freezes
-  approved steps, `--keep-plan` keeps an existing plan, `--legacy-director` runs the previous director.
+`tools/video-pipeline.ts` runs one path, each stage checkpointed and frozen where review approved it:
+
+| Stage | Does | Output |
+|---|---|---|
+| turns | parse the locked script | `data/<lesson>/turns.json` |
+| pronounce | name pronunciations (auto-approved) | `src/data/pronunciations.json` |
+| audio | voices: edge (dev), Fish (prod, the script's own tags), say (macOS previews) | `public/audio/<lesson>/` |
+| timing, words | line timing; Vosk word alignment (`--estimate-words` skips it for previews) | `timing_map.json`, `word_times.json` |
+| images | catalog downloads (`tools/download-images.py`) + list fetches; research when a lesson has neither; depth maps with `DEPTH_PYTHON`; `--images placeholder` for previews | `public/historic/<lesson>/`, `data/<lesson>/images.json`, lock |
+| storyboard | outline + one prompt per act (`tools/pipeline/storyboard-director.ts`); notes and changed lines re-board only their acts | `data/<lesson>/storyboard.json` |
+| build | treatments for the storyboard's images (`treatments.ts`), then the timed plan (`scene-builder.ts`), `--editor` pass | `data/library/treatments.json`, `data/<lesson>/shots.json` |
+| clips, contact, render | LTX hero clips, contact sheet, segmented render | `public/clips/`, `out/<lesson>-contact.png`, `out/<lesson>.mp4` |
+
+Review tools: `npm run storyboard -- <lesson> check | sheet | framings`, `npm run review -- …` (docs/TOOLS.md).
 
 Not built yet: overlay staggering (decision 10's year stamps vs point cards; nothing checks it today), and focus points
 from images (they come from code proposals until someone edits them after the framing stills; thumbnails are not

@@ -15,14 +15,14 @@ const SAY_VOICES: Record<string, string> = {maya: 'Samantha', marcus: 'Daniel', 
 
 /** Hash of every input that determines the rendered narration. */
 export const audioInputHash = (ctx: PipelineContext, turns: PipelineTurn[], pronunciations: Pronunciation[]) =>
-  sha256(JSON.stringify({mode: ctx.mode, turns, edge: ctx.cfg.edge, fish: ctx.cfg.fish, pron: pronunciations, tts: process.argv.includes('--tts') ? process.argv[process.argv.indexOf('--tts') + 1] : undefined}));
+  sha256(JSON.stringify({tts: ctx.tts, turns, edge: ctx.cfg.edge, fish: ctx.cfg.fish, pron: pronunciations}));
 
 /**
  * Render one mp3 per speech turn. Dev: Edge TTS with every tag stripped. Prod: Fish speaking the script's own direction
  * tags (checked against the guideline catalog); no LLM pass, so the same script always yields the same audio.
  */
 export function audioStage(ctx: PipelineContext, turns: PipelineTurn[], pronunciations: Pronunciation[]): void {
-  const {cfg, mode, force, audioDir, ttsDir} = ctx;
+  const {cfg, force, audioDir, ttsDir} = ctx;
   const audioHash = audioInputHash(ctx, turns, pronunciations);
   if (!ctx.stages.includes('audio')) return;
   // Approved audio is frozen: reused as is, even if the voices, model or pronunciations changed since.
@@ -31,7 +31,7 @@ export function audioStage(ctx: PipelineContext, turns: PipelineTurn[], pronunci
     return;
   }
   if (ctx.current('audio', audioHash) && turns.filter(t => t.kind === 'speech').every(t => existsSync(join(audioDir, `${t.id}.mp3`)))) console.log('[audio] checkpoint current');
-  else if (ctx.dryRun) console.log(`[audio] dry-run: ${mode === 'prod' ? 'Fish with the script\'s own direction tags' : 'Edge TTS'}`);
+  else if (ctx.dryRun) console.log(`[audio] dry-run: ${ctx.tts}`);
   else {
     mkdirSync(audioDir, {recursive: true}); mkdirSync(ttsDir, {recursive: true});
     // Rendered audio is content-addressed (tts/<episode>/cache/<artifactHash>.mp3), so
@@ -44,7 +44,7 @@ export function audioStage(ctx: PipelineContext, turns: PipelineTurn[], pronunci
     const speech = turns.filter(t => t.kind === 'speech');
     // Text sent to TTS before pronunciation substitution (Fish adds performance tags in prod).
     let directed = Object.fromEntries(speech.map(t => [t.id, cleanSpeech(t.text ?? '')]));
-    if (mode === 'prod') {
+    if (ctx.tts === 'fish') {
       // Lessons are directed as they are written (apush-final-guidelines.md §9): Fish speaks the script's own tags,
       // minus {...} markup, after a catalog check. An undirected script is spoken plainly.
       const issues = tagIssues(speech.map(t => ({id: t.id, text: t.text ?? ''})));
@@ -66,7 +66,7 @@ export function audioStage(ctx: PipelineContext, turns: PipelineTurn[], pronunci
       writeFileSync(join(ttsDir, `${turn.id}.txt`), `${text}\n`);
       let artifactHash: string;
       let synthesize: (file: string) => void;
-      if (mode === 'dev' && process.argv.includes('--tts') && process.argv[process.argv.indexOf('--tts') + 1] === 'say') {
+      if (ctx.tts === 'say') {
         // macOS built-in voices, offline: rough, for previews on a laptop (--tts say). Distinct voice per speaker.
         const voice = SAY_VOICES[turn.speaker ?? ''] ?? 'Fred';
         artifactHash = sha256(JSON.stringify({engine: 'say', text, voice}));
@@ -76,7 +76,7 @@ export function audioStage(ctx: PipelineContext, turns: PipelineTurn[], pronunci
           ctx.run('ffmpeg', ['-y', '-v', 'error', '-i', aiff, '-ac', '1', '-ar', '24000', '-c:a', 'libmp3lame', file]);
           unlinkSync(aiff);
         };
-      } else if (mode === 'dev') {
+      } else if (ctx.tts === 'edge') {
         const voice = cfg.edge.voices[turn.speaker ?? ''] ?? cfg.edge.voices.narrator;
         artifactHash = sha256(JSON.stringify({engine: 'edge', text, voice, rate: cfg.edge.rate, pitch: cfg.edge.pitch}));
         synthesize = file => ctx.run(edgeTts ??= findTool(['edge-tts'], 'EDGE_TTS'), ['--voice', voice, '--rate', cfg.edge.rate, '--pitch', cfg.edge.pitch, '--text', text, '--write-media', file]);
@@ -98,7 +98,7 @@ export function audioStage(ctx: PipelineContext, turns: PipelineTurn[], pronunci
         rendered++;
       }
       copyFileSync(cached, output);
-      index[turn.id] = {speaker: turn.speaker ?? 'narrator', text, directed: directed[turn.id], hash: sha256(cleanSpeech(turn.text ?? '')), engine: mode === 'dev' ? 'edge' : 'fish', artifactHash};
+      index[turn.id] = {speaker: turn.speaker ?? 'narrator', text, directed: directed[turn.id], hash: sha256(cleanSpeech(turn.text ?? '')), engine: ctx.tts, artifactHash};
     }
     // Turn ids are positional; drop audio for ids that no longer exist so later stages never see it.
     const live = new Set(speech.map(t => `${t.id}.mp3`));

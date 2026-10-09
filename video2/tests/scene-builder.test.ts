@@ -8,7 +8,7 @@ import {buildCatalog, type Outline} from '../tools/pipeline/doc-director';
 import {applyEdits} from '../tools/pipeline/editor-pass';
 import {buildPlan, uniquePhrase} from '../tools/pipeline/scene-builder';
 import {resolveShotPlan, type GeoFeature, type ShotPlan} from '../tools/pipeline/shots';
-import {bootstrapStoryboard, turnKeys, type Storyboard} from '../tools/pipeline/storyboard';
+import {turnKeys, type Storyboard} from '../tools/pipeline/storyboard';
 import {directStoryboard} from '../tools/pipeline/storyboard-director';
 import {imageKind, moveOf, proposeTreatment, safeFocus} from '../tools/pipeline/treatments';
 
@@ -29,8 +29,7 @@ const geoDir = join(root, 'data/library/geo');
 const geo = Object.fromEntries(readdirSync(geoDir).map(f => JSON.parse(readFileSync(join(geoDir, f), 'utf8')) as GeoFeature).map(f => [f.properties.id, f]));
 const places = Object.fromEntries((JSON.parse(readFileSync(join(root, 'data/library/entities/places.json'), 'utf8')) as {id: string; name: string; location: [number, number]}[]).map(p => [p.id, p]));
 const options = {imageSizes: sizes, imageShas: Object.fromEntries(Object.keys(sizes).map(k => [k, 'a'.repeat(64)])), geo, places, allowEstimated: true, allowUnapproved: true};
-// The sample's Episode Sheet boxes point at lines of the full lesson; the fixture is its 6-line cold open.
-const sample = {...JSON.parse(readFileSync(join(root, 'data/u3e1/shots.sample.json'), 'utf8')), boxes: []} as ShotPlan;
+const fixture = (): Storyboard => JSON.parse(readFileSync(join(root, 'tests/fixtures/u3e1-cold-open.storyboard.json'), 'utf8'));
 const acts = [{title: 'Cold open', purpose: 'p', turns: {from: 0, to: 0}}, {title: 'The bill', purpose: 'p', turns: {from: 1, to: 5}}];
 const keys = turnKeys(turns);
 const img = (image: string, phrase: string, extra = {}) => ({kind: 'image' as const, image, at: {phrase}, priority: 'essential' as const, ...extra});
@@ -44,13 +43,14 @@ describe('scene builder (S4)', () => {
     assert.equal(uniquePhrase(text, 'not here'), null);
   });
 
-  it('rebuilds the hand sample from its bootstrapped storyboard into a plan the resolver accepts', () => {
-    const sb = bootstrapStoryboard(sample, turns, acts);
+  it('builds the cold-open storyboard into a plan the checks accept, with act boundaries and a year stamp', () => {
+    const sb = fixture();
     const r = build(sb);
     assert.deepEqual(r.storyboardIssues, []);
     const resolved = resolveShotPlan(r.plan, turns, timing, {}, options);
-    assert.ok(resolved.shots.length >= sample.shots.length - 1);
-    assert.deepEqual(r.plan.acts, acts, 'act boundaries carried into the plan');
+    assert.ok(resolved.shots.length >= 14);
+    assert.deepEqual(r.plan.acts, sb.acts, 'act boundaries carried into the plan');
+    assert.ok((r.plan.years ?? []).length >= 1);
   });
 
   it('splits a long hold into another framing of the same image (one image use) on a phrase near the middle', () => {
@@ -75,7 +75,7 @@ describe('scene builder (S4)', () => {
   });
 
   it('reports lines that changed since boarding instead of guessing', () => {
-    const sb = bootstrapStoryboard(sample, turns, acts);
+    const sb = fixture();
     const edited = turns.map((t, i) => (i === 5 ? {...t, text: 'George Grenville took office in 1763.'} : t));
     const r = buildPlan({storyboard: sb, turns: edited, timing, words: {}, catalog, treatments: {}, allowEstimated: true});
     assert.ok(r.storyboardIssues.some(i => /line changed/.test(i)));

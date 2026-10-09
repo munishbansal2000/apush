@@ -1,9 +1,10 @@
 /** Shared run context: CLI options, config, paths, stage checkpoints, and process/LLM helpers. */
 import {spawnSync} from 'node:child_process';
 import {existsSync, mkdirSync, readFileSync, writeFileSync, unlinkSync, readdirSync, statSync} from 'node:fs';
-import {basename, join} from 'node:path';
+import {basename, join, relative} from 'node:path';
 import {ROOT, arg, flag} from '../lib';
 import {PRONUNCIATIONS_PATH} from './speech';
+import {PendingAnswers, agentIO, pendingPromptFile} from './director-io';
 import {PIPELINE_STAGES, atomicJson, readJson, selectedStages, sha256, type PipelineMode, type PipelineStage} from '../pipeline-core';
 
 export interface Config {
@@ -25,8 +26,14 @@ export interface PipelineContext {
   videoGen: 'ltx' | 'none';
   /** --agent: the director writes prompt files for external agents instead of calling Meta UI. */
   agent: boolean;
-  /** Director review/repair rounds answer with patches (changed shots only); --no-patches or DIRECTOR_PATCHES=0 turns it off. */
-  patches?: boolean;
+  /** Voice engine: --tts edge | say | fish. Default: edge in dev, fish in prod. `say` = macOS voices (offline previews). */
+  tts: 'edge' | 'say' | 'fish';
+  /** --estimate-words: no Vosk; phrase times estimated from their position in the line (previews, never final). */
+  estimateWords: boolean;
+  /** Images: download (catalogs + registry) or --images placeholder (copies of large local images; previews). */
+  images: 'download' | 'placeholder';
+  /** --editor: one LLM editor pass over each act's cut list after the build. */
+  editor: boolean;
   /** --draft: allow library geography that is not approved yet (samples; not for publishing). */
   draft: boolean;
   stages: PipelineStage[];
@@ -59,6 +66,11 @@ export function createContext(): PipelineContext {
   if (!['dev', 'prod'].includes(mode)) throw new Error('--mode must be dev or prod');
   const dryRun = flag('dry-run');
   const force = flag('force');
+  const tts = (arg('tts') ?? (mode === 'prod' ? 'fish' : 'edge')) as PipelineContext['tts'];
+  if (!['edge', 'say', 'fish'].includes(tts)) throw new Error('--tts must be edge, say or fish');
+  if (mode === 'prod' && tts !== 'fish') throw new Error('--mode prod voices with Fish (--tts fish)');
+  const images = (arg('images') ?? 'download') as PipelineContext['images'];
+  if (!['download', 'placeholder'].includes(images)) throw new Error('--images must be download or placeholder');
   const videoGen = arg('video-gen', 'ltx')!;
   if (!['ltx', 'none'].includes(videoGen)) throw new Error('--video-gen must be ltx or none');
   // --skip images,clips: leave stages out of a run (e.g. the overnight unit runner skips image research).
@@ -83,7 +95,16 @@ export function createContext(): PipelineContext {
     writeFileSync(path, text);
     return path;
   };
+  const agent = flag('agent');
   const meta = (name: string, prompt: string, attachments: string[] = [], followupPrompt?: string) => {
+    // --agent: every LLM call becomes a prompt file for your own agents (one place, so no stage can bypass it). Steps
+    // that make a single call stop here until its answer exists; the storyboard batches its acts itself.
+    if (agent) {
+      const dir = join(work, 'agent');
+      const answer = agentIO(dir).meta(name, prompt, attachments, followupPrompt);
+      if (answer) return answer;
+      throw new PendingAnswers([relative(ROOT, pendingPromptFile(dir, name) ?? name)], 'the same command');
+    }
     const out = join(work, `${name}.json`);
     const inputHash = sha256(JSON.stringify({prompt, followupPrompt, attachments: attachments.map(file => [file, existsSync(file) ? sha256(readFileSync(file)) : 'missing'])}));
     const hashPath = `${out}.input.sha256`;
@@ -117,7 +138,8 @@ export function createContext(): PipelineContext {
   };
 
   return {
-    episode, mode, dryRun, force, full: flag('full'), videoGen: videoGen as 'ltx' | 'none', agent: flag('agent'), patches: !flag('no-patches') && process.env.DIRECTOR_PATCHES !== '0', draft: flag('draft'), stages, cfg, work, dataDir,
+    episode, mode, dryRun, force, full: flag('full'), videoGen: videoGen as 'ltx' | 'none', agent, draft: flag('draft'),
+    tts, estimateWords: flag('estimate-words'), images, editor: flag('editor'), stages, cfg, work, dataDir,
     audioDir: join(ROOT, 'public', 'audio', episode),
     ttsDir: join(ROOT, 'tts', episode),
     publicDir: join(ROOT, 'public'),

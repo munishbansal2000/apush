@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Download cataloged images for Unit 3 lessons and register them with the pipeline.
+Download cataloged images for a lesson and register them with the pipeline (the pipeline's images stage runs it).
 
-Reads data/u3-catalogs/<lesson>-images.json and, for each image:
+Reads data/u<N>-catalogs/<lesson>-images.json and, for each image:
   1. saves it as public/historic/<lesson>/<slug>.<ext> (slug = catalog id with "." -> "-",
      e.g. portrait.george-grenville -> portrait-george-grenville.jpg). A copy already downloaded
      under the old name (<id>.<ext>) is moved there, not downloaded again.
@@ -16,10 +16,10 @@ three 429s in a row cool off for 10 minutes. Files already on disk are never fet
 lock are saved after every image, so stopping (Ctrl-C) and re-running resumes where it left off. TIFFs are converted to JPEG (browsers cannot draw TIFF;
 needs Pillow, otherwise they are skipped).
 
-Usage: python tools/download-u3-images.py --all                 every Unit 3 catalog (u3e1..u3e11)
-       python tools/download-u3-images.py --lesson u3e1 [--force]
-       python tools/download-u3-images.py --lesson u3e1 --upgrade-small  retry only images below render resolution
-       python tools/download-u3-images.py --lesson u3e1 --register-only   (no network: move + register files on disk)
+Usage: python tools/download-images.py --lesson u3e1 [--force]
+       python tools/download-images.py --all                 every catalog in data/u*-catalogs/
+       python tools/download-images.py --lesson u3e1 --upgrade-small  retry only images below render resolution
+       python tools/download-images.py --lesson u3e1 --register-only   (no network: move + register files on disk)
 """
 import hashlib
 import http.client
@@ -37,7 +37,7 @@ from email.utils import parsedate_to_datetime
 from pathlib import Path
 
 VIDEO2 = Path(__file__).resolve().parent.parent
-CATALOG_DIR = VIDEO2 / "data" / "u3-catalogs"
+DATA = VIDEO2 / "data"
 PUBLIC = VIDEO2 / "public"
 LOCK_PATH = VIDEO2 / "data" / "images.lock.json"
 MIN_BYTES = 50 * 1024
@@ -277,11 +277,15 @@ def fetch(url, throttle):
     raise ValueError("gave up after retries")
 
 
-def place(img, out_dir, throttle):
+def place(img, out_dir, throttle, lock=None):
     """Returns (path, source_url, status) for one catalog image; path is None on failure."""
     img_id = img["id"]
     target_stem = out_dir / slug(img_id)
     have = existing_file(out_dir, img_id)
+    # A preview placeholder (pipeline --images placeholder) is not the image: download the real one over it.
+    if have and lock is not None and str(lock.get(have.relative_to(PUBLIC).as_posix(), {}).get("source_url", "")).startswith("placeholder:"):
+        have.unlink()
+        have = None
     if have and not FORCE:
         existing_size = image_size(have)
         if UPGRADE_SMALL and cover_quality(existing_size) < 1 / 1.6 and not REGISTER_ONLY:
@@ -334,8 +338,14 @@ def place(img, out_dir, throttle):
     return None, None, "FAILED " + ("; ".join(errors) or "no URLs")
 
 
+def catalog_for(lesson):
+    """data/u<N>-catalogs/<lesson>-images.json (any unit)."""
+    unit = lesson[1:].split("e")[0].split("cram")[0]
+    return DATA / f"u{unit}-catalogs" / f"{lesson}-images.json"
+
+
 def download_lesson(lesson, throttle):
-    catalog_path = CATALOG_DIR / f"{lesson}-images.json"
+    catalog_path = catalog_for(lesson)
     if not catalog_path.exists():
         print(f"No catalog: {catalog_path}")
         return
@@ -347,7 +357,7 @@ def download_lesson(lesson, throttle):
     counts = {"registered": 0, "failed": 0}
     print(f"\n=== {lesson}: {len(images)} images -> {out_dir} ===")
     for i, img in enumerate(images, 1):
-        path, url, status = place(img, out_dir, throttle)
+        path, url, status = place(img, out_dir, throttle, lock)
         if path and path.suffix in (".tif", ".tiff"):
             converted = tiff_to_jpeg(path)
             if not converted:
@@ -366,9 +376,10 @@ def download_lesson(lesson, throttle):
             continue
         rel = path.relative_to(PUBLIC).as_posix()
         digest = sha256(path)
-        if lock.get(rel, {}).get("sha256") != digest:
+        if lock.get(rel, {}).get("sha256") != digest or str(lock.get(rel, {}).get("source_url", "")).startswith("placeholder:"):
             lock[rel] = {"source_url": url, "sha256": digest, "width": size[0], "height": size[1],
                          "fetchedAt": datetime.now(timezone.utc).isoformat(timespec="seconds")}
+        registry.get(rel, {}).pop("placeholder", None)
         if rel not in registry:
             registry[rel] = {"description": img.get("title", ""), "source_url": lock[rel]["source_url"],
                              "download_urls": [u for u in (img.get("primary_url"), img.get("alt_url")) if u],
@@ -385,7 +396,7 @@ def download_lesson(lesson, throttle):
 if __name__ == "__main__":
     throttle = Throttle()
     if "--all" in sys.argv:
-        for catalog in sorted(CATALOG_DIR.glob("u3e*-images.json"), key=lambda p: int(p.name[3:].split("-")[0])):
+        for catalog in sorted(DATA.glob("u*-catalogs/*-images.json")):
             download_lesson(catalog.name.split("-")[0], throttle)
     elif "--lesson" in sys.argv:
         download_lesson(sys.argv[sys.argv.index("--lesson") + 1], throttle)

@@ -1,7 +1,6 @@
 /**
  * Storyboard tools (docs/STORYBOARD.md, stage S1).
  *
- *   npm run storyboard -- u3e1 bootstrap [--force]   data/u3e1/shots.json -> data/u3e1/storyboard.json
  *   npm run storyboard -- u3e1 check                 anchors, stale turns, image budget, thin coverage
  *   npm run storyboard -- u3e1 sheet                 out/review/u3e1-storyboard.html (line, visuals, thumbnails, problems)
  *   npm run storyboard -- u3e1 framings [--all]      out/review/u3e1-framings.png: start/end still of every framing of every
@@ -12,20 +11,19 @@ import {existsSync, mkdirSync, writeFileSync} from 'node:fs';
 import {join, relative} from 'node:path';
 import {ROOT} from './lib';
 import {normalizeTurns, readJson, type PipelineTurn} from './pipeline-core';
-import type {ShotPlan} from './pipeline/shots';
-import {loadImageReview, planActs, rejectedKeys} from './pipeline/review';
-import {bootstrapStoryboard, checkStoryboard, normWords, turnKeys, type Storyboard, type StoryVisual} from './pipeline/storyboard';
+import {loadImageReview, rejectedKeys} from './pipeline/review';
+import {checkStoryboard, normWords, turnKeys, type Storyboard, type StoryVisual} from './pipeline/storyboard';
 import {cleanSpeech} from './pipeline/speech';
 
 const [ep, cmd] = process.argv.slice(2).filter(a => !a.startsWith('--'));
 const fail = (m: string): never => { console.error(m); process.exit(1); };
-if (!ep || !cmd) { console.log('usage: npm run storyboard -- <lesson> bootstrap [--force] | check | sheet'); process.exit(1); }
+if (!ep || !cmd) { console.log('usage: npm run storyboard -- <lesson> check | sheet | framings [--all]'); process.exit(1); }
 
 const dataDir = join(ROOT, 'data', ep);
 const sbPath = join(dataDir, 'storyboard.json');
 const turns = existsSync(join(dataDir, 'turns.json')) ? normalizeTurns(readJson(relative(ROOT, join(dataDir, 'turns.json')))) as PipelineTurn[] : fail(`${ep}: no data/${ep}/turns.json (run the turns stage)`);
 const timing = existsSync(join(dataDir, 'timing_map.json')) ? readJson<{starts: number[]; durations: number[]}>(relative(ROOT, join(dataDir, 'timing_map.json'))) : {starts: [], durations: turns.map(() => 0)};
-const loadBoard = () => (existsSync(sbPath) ? readJson<Storyboard>(relative(ROOT, sbPath)) : fail(`${ep}: no storyboard yet (npm run storyboard -- ${ep} bootstrap)`));
+const loadBoard = () => (existsSync(sbPath) ? readJson<Storyboard>(relative(ROOT, sbPath)) : fail(`${ep}: no storyboard yet (the pipeline's storyboard stage writes it)`));
 const check = (sb: Storyboard) => checkStoryboard(sb, turns, timing.durations, {rejectedImages: rejectedKeys(loadImageReview())});
 
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -129,19 +127,6 @@ async function framings(sb: Storyboard) {
 }
 
 switch (cmd) {
-  case 'bootstrap': {
-    if (existsSync(sbPath) && !process.argv.includes('--force')) fail(`${relative(ROOT, sbPath)} exists; --force to replace it`);
-    const planPath = join(dataDir, 'shots.json');
-    if (!existsSync(planPath)) fail(`${ep}: no data/${ep}/shots.json to bootstrap from`);
-    const plan = readJson<ShotPlan & {acts?: {title: string; turns: {from: number; to: number}}[]}>(relative(ROOT, planPath));
-    const acts = planActs(plan, join(ROOT, 'out', 'pipeline', ep, 'doc-outline.accepted.json'));
-    const sb = bootstrapStoryboard(plan, turns, acts);
-    writeFileSync(sbPath, `${JSON.stringify(sb, null, 2)}\n`);
-    const c = check(sb);
-    console.log(`${ep}: storyboard with ${sb.turns.reduce((n, t) => n + t.visuals.length, 0)} visuals over ${turns.length} turns${acts.length ? `, ${acts.length} acts` : ' (no act boundaries found)'} -> ${relative(ROOT, sbPath)}`);
-    console.log(`  ${c.issues.length} problem(s), ${c.warnings.length} warning(s); see: npm run storyboard -- ${ep} sheet`);
-    break;
-  }
   case 'check': {
     const c = check(loadBoard());
     for (const i of c.issues) console.log(`  problem: ${i}`);

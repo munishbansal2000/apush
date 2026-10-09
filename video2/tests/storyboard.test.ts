@@ -3,15 +3,14 @@ import {readFileSync} from 'node:fs';
 import {join} from 'node:path';
 import {describe, it} from 'node:test';
 import {parseTranscript} from '../tools/pipeline-core';
-import type {ShotPlan} from '../tools/pipeline/shots';
-import {bootstrapStoryboard, checkStoryboard, turnKeys, type Storyboard} from '../tools/pipeline/storyboard';
+import {checkStoryboard, turnKeys, type Storyboard} from '../tools/pipeline/storyboard';
 
 const root = new URL('..', import.meta.url).pathname;
 const script = readFileSync(join(root, 'tests/fixtures/u3e1-cold-open.txt'), 'utf8');
 const turns = parseTranscript(script);
 const durations = [34.25, 21.46, 3.26, 5.76, 5.42, 3.4];
-const sample = JSON.parse(readFileSync(join(root, 'data/u3e1/shots.sample.json'), 'utf8')) as ShotPlan;
-const acts = [{title: 'Cold open', turns: {from: 0, to: 0}}, {title: 'The bill', turns: {from: 1, to: 5}}];
+// The cold open's storyboard (the hand sample's 15 visuals, keyed to these lines).
+const fixture = (): Storyboard => JSON.parse(readFileSync(join(root, 'tests/fixtures/u3e1-cold-open.storyboard.json'), 'utf8'));
 
 describe('storyboard (S1)', () => {
   it('keys turns by speaker + words, numbering repeated lines', () => {
@@ -22,19 +21,15 @@ describe('storyboard (S1)', () => {
     assert.ok(!keys[1].includes('#'), 'a different speaker is a different line');
   });
 
-  it('bootstraps from an existing plan with every non-question shot as a visual on its anchor turn, and checks clean', () => {
-    const sb = bootstrapStoryboard(sample, turns, acts);
-    const visuals = sb.turns.flatMap(t => t.visuals);
-    assert.equal(visuals.length, sample.shots.filter(s => s.type !== 'question').length);
-    assert.deepEqual([...new Set(visuals.map(v => v.kind))].sort(), ['clip', 'image', 'map', 'point'].filter(k => visuals.some(v => v.kind === k)).sort());
-    const portrait = visuals.find(v => v.framing === 'portrait');
-    assert.ok(portrait?.name, 'portraits keep their name tag');
-    const c = checkStoryboard(sb, turns, durations);
-    assert.deepEqual(c.issues, []);
+  it('the cold-open storyboard checks clean: every visual anchored verbatim, unique and in order', () => {
+    const sb = fixture();
+    assert.equal(sb.turns.flatMap(t => t.visuals).length, 15);
+    assert.ok(sb.turns.flatMap(t => t.visuals).some(v => v.name), 'portraits carry their name tag');
+    assert.deepEqual(checkStoryboard(sb, turns, durations).issues, []);
   });
 
   it('after a script edit, only the changed turn loses its visuals; inserted lines shift nothing else', () => {
-    const sb = bootstrapStoryboard(sample, turns, acts);
+    const sb = fixture();
     const edited = parseTranscript(script.replace('George Grenville. Prime minister from 1763.', 'George Grenville became prime minister in 1763.').replace(/^(Maya: And now)/m, 'Marcus: An inserted line.\n$1'));
     const c = checkStoryboard(sb, edited, [...durations, 3]);
     const stale = c.issues.filter(i => /line changed or was removed/.test(i));

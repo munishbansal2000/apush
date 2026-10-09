@@ -50,6 +50,10 @@ Source-only zip at `dist/apush-episode-kit.zip`: excludes `node_modules/`, `out/
 
 ## Pipeline order
 
+Documentary (current): `npx tsx tools/video-pipeline.ts --episode <lesson> --full` runs script -> voices -> timing ->
+words -> images -> storyboard -> build -> clips -> contact sheet -> render (docs/STORYBOARD.md has the stage table).
+The chart below is the older kit pipeline (unit 1-2 episodes).
+
 ```
 script/<ep>.vN.md
    │ build:turns ──────────────► data/<ep>/turns.json
@@ -166,11 +170,10 @@ Typecheck + ESLint (episode-file rules) + unit tests + validate. Use in CI.
 ## Review
 
 ### `npm run storyboard -- <lesson> …` — storyboard review tools (docs/STORYBOARD.md)
-The pipeline's direct stage runs storyboard -> treatments -> build; these commands show and check its work.
+The pipeline's storyboard and build stages write these files; these commands show and check their work.
 
 | Command | |
 |---|---|
-| `bootstrap [--force]` | storyboard from an existing `shots.json` (the pipeline does this itself when the storyboard is missing) |
 | `check` | stale lines, missing/ambiguous/out-of-order anchors, image budget, rejected images, thin long lines |
 | `sheet` | `out/review/<lesson>-storyboard.html`: each line with its anchor phrases marked beside the visuals' thumbnails |
 | `framings [--all]` | `out/review/<lesson>-framings.png` (+ .txt index): start/end stills of each image's framings, rendered |

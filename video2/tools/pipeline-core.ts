@@ -3,8 +3,13 @@ import {existsSync, readFileSync, writeFileSync, mkdirSync, unlinkSync, readdirS
 import {basename, dirname, join, resolve} from 'node:path';
 
 export type PipelineMode = 'dev' | 'prod';
-export type PipelineStage = 'turns' | 'pronounce' | 'audio' | 'timing' | 'words' | 'images' | 'direct' | 'clips' | 'contact' | 'render';
-export const PIPELINE_STAGES: PipelineStage[] = ['turns', 'pronounce', 'audio', 'timing', 'words', 'images', 'direct', 'clips', 'contact', 'render'];
+/**
+ * The pipeline, in order: script -> pronunciations -> voices -> timing -> word alignment -> images (use what exists,
+ * download the rest) -> storyboard (what is on screen per line) -> build (treatments + the timed shot plan) -> LTX clips
+ * -> contact sheet -> render. docs/STORYBOARD.md.
+ */
+export type PipelineStage = 'turns' | 'pronounce' | 'audio' | 'timing' | 'words' | 'images' | 'storyboard' | 'build' | 'clips' | 'contact' | 'render';
+export const PIPELINE_STAGES: PipelineStage[] = ['turns', 'pronounce', 'audio', 'timing', 'words', 'images', 'storyboard', 'build', 'clips', 'contact', 'render'];
 
 export interface PipelineTurn {
   id: string;
