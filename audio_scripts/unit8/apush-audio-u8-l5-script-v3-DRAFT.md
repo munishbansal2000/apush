@@ -96,7 +96,7 @@ Maya: [conversational] Right. TARP steadied the banks, the Fed cut rates to zero
 
 Maya: Three questions, AP-shaped. Say your answer out loud before I do. One: a historian hands you a chart of American home prices from 2000 to 2010, up, up, up, then off a cliff. What's the chart actually proving about 2008?
 [10-second pause]
-That housing was the first domino. Prices fell by roughly a third, and everything built on rising prices fell with them. The mechanism matters more than the chart.
+Maya: That housing was the first domino. Prices fell by roughly a third, and everything built on rising prices fell with them. The mechanism matters more than the chart.
 
 Maya: Two: compare Washington's response in 1929 with 2008. What changed?
 [10-second pause]
