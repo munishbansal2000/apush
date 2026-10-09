@@ -41,17 +41,19 @@ async function main() {
   const out = value('out');
   if (!promptFile || !out) throw new Error('usage: meta-ui-runner.cjs --prompt-file FILE --out FILE [--followup-prompt-file FILE] [--attachment FILE]');
   const outStem = out.replace(/\.json$/i, '');
-  const libDir = value('lib-dir', process.env.APUSH_LLM_LIB_DIR || 'C:\\Users\\munis\\projects\\sat_question_runner\\new_eng_qs\\lib');
-  const cookie = value('cookie', process.env.META_COOKIE_FILE || 'C:\\Users\\munis\\projects\\sat_question_runner\\new_eng_qs\\config\\meta_cookies\\ramsham21.json');
+  const libDir = process.env.APUSH_LLM_LIB_DIR || value('lib-dir');
+  const cookie = process.env.META_COOKIE_FILE || value('cookie');
+  if (!libDir) throw new Error('Meta UI adapter dir missing: set meta.libDir in data/pipeline.json or APUSH_LLM_LIB_DIR');
+  if (!cookie) throw new Error('Meta UI cookie missing: set meta.cookieFile in data/pipeline.json or META_COOKIE_FILE');
   const metaFile = path.join(libDir, 'meta.js');
   if (!fs.existsSync(metaFile)) throw new Error(`Meta UI adapter missing: ${metaFile}`);
   if (!fs.existsSync(cookie)) throw new Error(`Meta UI cookie missing: ${cookie}`);
   const meta = require(metaFile);
   let playwright;
-  for (const candidate of [path.resolve(libDir, '..', 'node_modules', 'playwright'), 'C:\\Users\\munis\\projects\\1600\\node_modules\\playwright']) {
+  for (const candidate of [path.resolve(libDir, '..', 'node_modules', 'playwright'), ...values('playwright-dir')]) {
     try { playwright = require(candidate); break; } catch {}
   }
-  if (!playwright) throw new Error('Playwright not found beside Meta UI adapter or in C:\\Users\\munis\\projects\\1600');
+  if (!playwright) throw new Error('Playwright not found beside the Meta UI adapter or in meta.playwrightDirs (data/pipeline.json)');
   const debugDir = path.join(path.dirname(out), 'meta-debug');
   fs.mkdirSync(debugDir, {recursive: true});
   const browser = await playwright.chromium.launch({

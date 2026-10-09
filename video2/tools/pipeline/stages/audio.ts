@@ -1,9 +1,9 @@
 import {copyFileSync, existsSync, mkdirSync, readdirSync, renameSync, unlinkSync, writeFileSync} from 'node:fs';
 import {join} from 'node:path';
-import {ROOT} from '../../lib';
 import {atomicJson, readJson, sha256, type PipelineTurn} from '../../pipeline-core';
 import type {PipelineContext} from '../context';
 import {applyPronunciations, cleanSpeech, type Pronunciation} from '../speech';
+import {findTool} from '../tools';
 
 /** Hash of every input that determines the rendered narration. */
 export const audioInputHash = (ctx: PipelineContext, turns: PipelineTurn[], pronunciations: Pronunciation[]) =>
@@ -61,11 +61,10 @@ export function audioStage(ctx: PipelineContext, turns: PipelineTurn[], pronunci
       if (mode === 'dev') {
         const voice = cfg.edge.voices[turn.speaker ?? ''] ?? cfg.edge.voices.narrator;
         artifactHash = sha256(JSON.stringify({engine: 'edge', text, voice, rate: cfg.edge.rate, pitch: cfg.edge.pitch}));
-        const localEdge = join(ROOT, '.venv-pipeline', 'Scripts', 'edge-tts.exe');
-        synthesize = file => ctx.run(existsSync(localEdge) ? localEdge : 'edge-tts', ['--voice', voice, '--rate', cfg.edge.rate, '--pitch', cfg.edge.pitch, '--text', text, '--write-media', file]);
+        synthesize = file => ctx.run(findTool(['edge-tts'], 'EDGE_TTS'), ['--voice', voice, '--rate', cfg.edge.rate, '--pitch', cfg.edge.pitch, '--text', text, '--write-media', file]);
       } else {
         const script = process.env.FISH_TTS_SCRIPT;
-        const python = process.env.FISH_PYTHON ?? 'python';
+        const python = findTool(['python3', 'python'], 'FISH_PYTHON');
         if (!script) throw new Error('PROD requires FISH_TTS_SCRIPT (Fish fish_tts.py path); optionally set FISH_PYTHON');
         const reference = cfg.fish.voices[turn.speaker ?? ''];
         if (!reference) throw new Error(`no Fish reference id for speaker ${turn.speaker}`);

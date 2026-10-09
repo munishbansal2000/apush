@@ -10,7 +10,7 @@ export interface Config {
   timing: {gapSec: number; leadSec: number; tailSec: number};
   edge: {voices: Record<string, string>; rate: string; pitch: string};
   fish: {model: string; voices: Record<string, string>};
-  meta: {timeoutSec: number};
+  meta: {timeoutSec: number; libDir?: string; cookieFile?: string; playwrightDirs?: string[]};
 }
 export interface Timing {starts: number[]; durations: number[]; totalSec: number; fps: number; ttsHash: Record<string, string>}
 interface State {version: 1; episode: string; mode: PipelineMode; stages: Partial<Record<PipelineStage, {hash: string; completedAt: string}>>}
@@ -96,6 +96,9 @@ export function createContext(): PipelineContext {
     // A failed forced refresh must not leave the old input hash looking current.
     if (existsSync(hashPath)) unlinkSync(hashPath);
     const args = [join(ROOT, 'tools/meta-ui-runner.cjs'), '--prompt-file', savePrompt(name, prompt), '--out', out, '--timeout-sec', String(cfg.meta.timeoutSec)];
+    if (cfg.meta.libDir) args.push('--lib-dir', cfg.meta.libDir);
+    if (cfg.meta.cookieFile) args.push('--cookie', cfg.meta.cookieFile);
+    for (const dir of cfg.meta.playwrightDirs ?? []) args.push('--playwright-dir', dir);
     if (followupPrompt) args.push('--followup-prompt-file', savePrompt(`${name}.review`, followupPrompt));
     for (const file of attachments) args.push('--attachment', file);
     run(process.execPath, args);
@@ -133,23 +136,3 @@ export function treeHash(dir: string): string {
   walk(dir);
   return sha256(JSON.stringify(rows));
 }
-
-export const pipelinePython = () => {
-  const candidates = [
-    process.env.VOSK_PYTHON,
-    join(ROOT, '.venv-pipeline', 'Scripts', 'python.exe'),
-    process.env.FISH_PYTHON,
-    'C:\\Users\\munis\\projects\\fish_exmple\\.venv\\Scripts\\python.exe',
-  ].filter((item): item is string => !!item);
-  return candidates.find(existsSync) ?? 'python';
-};
-
-export const voskModel = () => {
-  const candidates = [
-    process.env.VOSK_MODEL_PATH,
-    join(ROOT, 'models', 'vosk-model-small-en-us-0.15'),
-    join(process.env.USERPROFILE ?? '', 'vosk-model-small-en-us-0.15'),
-    join(process.env.USERPROFILE ?? '', 'workspace', 'vosk-model-small-en-us-0.15'),
-  ].filter((item): item is string => !!item);
-  return candidates.find(existsSync) ?? null;
-};

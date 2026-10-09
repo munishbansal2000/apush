@@ -36,6 +36,9 @@ export function writeTone(path: string, seconds: number): void {
 }
 
 export function fakeContext(options: FakeOptions = {}) {
+  // The fake runner intercepts TTS calls; point tool discovery at a file that always exists.
+  process.env.EDGE_TTS ??= process.execPath;
+  process.env.FISH_PYTHON ??= process.execPath;
   const root = mkdtempSync(join(tmpdir(), 'v2-pipeline-'));
   const episode = options.episode ?? 'u9e9';
   const dirs = {

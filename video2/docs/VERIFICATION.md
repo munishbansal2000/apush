@@ -191,3 +191,20 @@ both real issues the split data had hidden:
 
 Gate: typecheck 0, lint 0, tests 97/97.
 
+## P12: cross-platform tool discovery and setup
+
+Trigger: on the owner's Mac, `--only audio` failed with `spawnSync edge-tts ENOENT`: edge-tts lives in
+`~/miniconda3/bin`, which wasn't on the Terminal's PATH, and the code only looked in `.venv-pipeline/Scripts/*.exe`.
+
+- `tools/pipeline/tools.ts` `findTool(names, envVar)`: env override → `.venv-pipeline/{Scripts|bin}` → Miniconda/
+  Anaconda/Mambaforge/Miniforge → Homebrew/`/usr/local` → PATH; adds `.exe` on Windows; errors list every place
+  searched. Used for edge-tts (`EDGE_TTS`), Fish Python (`FISH_PYTHON`), and Vosk Python (`VOSK_PYTHON`).
+- Hard-coded `C:\Users\munis\…` paths removed from `meta-ui-runner.cjs` and pipeline code; they now live in
+  `data/pipeline.json` `meta.libDir/cookieFile/playwrightDirs` (env vars still override).
+- `tools/setup-pipeline.sh` + `npm run setup:pipeline:unix`: macOS/Linux twin of `setup-pipeline.ps1`.
+
+`tests/tools.test.ts` (4 pass): PATH-only tool found (the Miniconda case); venv preferred over PATH; env override wins
+and must exist; failure message lists searched dirs. Test harness pins `EDGE_TTS`/`FISH_PYTHON` so tests don't depend
+on what's installed. `bash -n tools/setup-pipeline.sh` passes.
+**UNVERIFIED:** `setup:pipeline:unix` end-to-end on a clean Mac; Windows discovery (Phase 7 run).
+

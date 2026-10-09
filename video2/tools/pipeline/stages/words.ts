@@ -2,7 +2,8 @@ import {existsSync} from 'node:fs';
 import {join} from 'node:path';
 import {ROOT} from '../../lib';
 import {readJson, sha256, wordTimingIssues, type PipelineTurn, type WordTiming} from '../../pipeline-core';
-import {pipelinePython, voskModel, type PipelineContext, type Timing} from '../context';
+import type {PipelineContext, Timing} from '../context';
+import {pipelinePython, voskModel} from '../tools';
 
 export const wordsPathFor = (ctx: PipelineContext) => join(ctx.dataDir, 'word_times.json');
 

@@ -22,6 +22,12 @@
     }
   },
   "meta": {
-    "timeoutSec": 1200
+    "timeoutSec": 1200,
+    "_doc": "Meta UI runner location (machine-specific). Env APUSH_LLM_LIB_DIR / META_COOKIE_FILE override these.",
+    "libDir": "C:\\Users\\munis\\projects\\sat_question_runner\\new_eng_qs\\lib",
+    "cookieFile": "C:\\Users\\munis\\projects\\sat_question_runner\\new_eng_qs\\config\\meta_cookies\\ramsham21.json",
+    "playwrightDirs": [
+      "C:\\Users\\munis\\projects\\1600\\node_modules\\playwright"
+    ]
   }
 }

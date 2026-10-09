@@ -39,7 +39,7 @@ Status: `[ ]` open · `[~]` in progress · `[x]` fixed
 
 ## Low / housekeeping
 
-- [ ] **P12.** Windows-only paths and hard-coded `C:\Users\munis\...` (`video-pipeline.ts:77`, `meta-ui-runner.cjs:44-45`, `setup-pipeline.ps1`).
+- [x] **P12.** Windows-only paths and hard-coded `C:\Users\munis\...` (`video-pipeline.ts:77`, `meta-ui-runner.cjs:44-45`, `setup-pipeline.ps1`).
 - [x] **P13.** `data/` and `src/data/` hold diverging copies of fact-registry, pronunciations, images, render-config.
 - [x] **P14.** `DirectedPlan` lacks `roadmap`/`roadmapIndex`; `pipeline-core.ts` uses `as any`.
 - [x] **P15.** `--from render` without `--full` selects no stages and quietly does nothing.
