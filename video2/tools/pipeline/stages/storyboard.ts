@@ -10,7 +10,7 @@
  *  build       plan approved            -> frozen
  *              otherwise                -> rebuilt whenever its inputs change (deterministic), then the editor pass
  */
-import {existsSync, readFileSync} from 'node:fs';
+import {existsSync, readFileSync, writeFileSync} from 'node:fs';
 import {dirname, join, relative} from 'node:path';
 import {ROOT} from '../../lib';
 import {atomicJson, readJson, sha256} from '../../pipeline-core';
@@ -147,7 +147,10 @@ export function storyboardDirectStage(ctx: PipelineContext, opts: {allowEstimate
   const used = [...new Set(sb.turns.flatMap(t => t.visuals.map(v => (v.kind === 'point' ? v.backdrop : v.image)).filter(Boolean) as string[]))];
   const hash = sha256(JSON.stringify({sb, treatments: used.map(p => treatments[p] ?? null), turns: inputs.turns, timing: inputs.timing, words: inputs.words,
     code: ['scene-builder.ts', 'treatments.ts', 'plan-fixups.ts', 'storyboard.ts'].map(f => sha(src(f))), editor: process.argv.includes('--editor')}));
-  if (ctx.current('direct', hash) && existsSync(out)) { console.log('[build] checkpoint current'); return; }
+  // The checkpoint holds only while shots.json is still the file this build wrote (a checkout or hand edit rebuilds).
+  const builtShaPath = join(ctx.work, 'build.shots.sha256');
+  const untouched = existsSync(out) && existsSync(builtShaPath) && readFileSync(builtShaPath, 'utf8').trim() === sha(out);
+  if (ctx.current('direct', hash) && untouched) { console.log('[build] checkpoint current'); return; }
   if (process.argv.includes('--keep-plan') && existsSync(out)) { console.log('[build] --keep-plan: using the existing plan'); return; }
   const built = buildPlan({storyboard: sb, turns: inputs.turns, timing: inputs.timing, words: inputs.words, catalog, treatments, depthMaps: inputs.options.depthMaps, allowEstimated: inputs.options.allowEstimated});
   if (built.fixes.length) log.push({stage: 'build', source: 'storyboard', issues: built.fixes});
@@ -175,6 +178,7 @@ export function storyboardDirectStage(ctx: PipelineContext, opts: {allowEstimate
     plan = edited.plan;
   } else pendingOrThrow(undefined);
   atomicJson(out, {_doc: `Built from data/${ctx.episode}/storyboard.json ${now()}`, ...plan, acts: sb.acts});
+  writeFileSync(builtShaPath, `${sha(out)}\n`);
   ctx.mark('direct', hash);
   console.log(`[build] ${plan.shots.length} shots -> ${relative(ROOT, out)}${built.storyboardIssues.length ? ` (${built.storyboardIssues.length} storyboard item(s) to look at)` : ''}`);
 }

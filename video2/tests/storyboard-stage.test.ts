@@ -57,6 +57,11 @@ describe('storyboard stage (S5): bootstrap, build, revise from notes, frozen whe
     assert.ok(plan2.shots.some((s: {at: {phrase?: string}}) => s.at.phrase === 'drawn along the mountains'));
     assert.ok(plan2.shots.some((s: {at: {phrase?: string}}) => s.at.phrase === 'last time'), 'act 1 kept');
 
+    // A replaced shots.json (git checkout, hand edit) is rebuilt even though the build inputs did not change.
+    writeFileSync(join(h.ctx.dataDir, 'shots.json'), JSON.stringify({episode: 'u9e9', shots: [map(0, 'last time', 'map.atlantic-world')]}));
+    storyboardDirectStage(h.ctx, {allowEstimated: true});
+    assert.deepEqual(JSON.parse(readFileSync(join(h.ctx.dataDir, 'shots.json'), 'utf8')).shots, plan2.shots, 'rebuilt from the storyboard');
+
     // Run 3: plan approved -> frozen, even when the storyboard changes.
     after.plan = {acts: {'1': {status: 'approved', at: 'now'}, '2': {status: 'approved', at: 'now'}}};
     saveLessonReview('u9e9', after, join(h.root, 'data'));
