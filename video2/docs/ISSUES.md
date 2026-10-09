@@ -69,7 +69,7 @@ Fixed in the review commit: director roadmap fields rejected (now accepted and d
 first-scene-at-0 rule; render/contact caches ignoring caption words and head levels; "never spoken" in a spoken line
 ending the transcript; clips stage bypassing findTool; per-turn tool lookups; doc-render `--seconds` NaN.
 
-- [ ] **P36. The legacy directed path (`video-pipeline.ts` direct stage + DirectedEpisode) never produces Episode Sheet boxes or
+- [x] **P36. (resolved: legacy path deleted; the pipeline now runs the documentary path) The legacy directed path (`video-pipeline.ts` direct stage + DirectedEpisode) never produces Episode Sheet boxes or
   reveal cues**, so those episodes render without the sheet. The documentary path (`doc-direct.ts` → DocEpisode) does produce
   boxes; move the pipeline's direct/contact/render stages onto it (ROADMAP O2) instead of extending the legacy prompt.
 - [ ] **P37. Commons `maxlag` errors may arrive as HTTP 200 + JSON error**, which `getWithRetry` doesn't retry; fetch-images

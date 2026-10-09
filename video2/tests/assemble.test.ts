@@ -1,13 +1,11 @@
 import assert from 'node:assert/strict';
 import {execFileSync, spawnSync} from 'node:child_process';
-import {mkdirSync, mkdtempSync} from 'node:fs';
+import {mkdtempSync} from 'node:fs';
 import {tmpdir} from 'node:os';
 import {join} from 'node:path';
 import {describe, it} from 'node:test';
 import {ffprobeDuration} from '../tools/lib';
-import {parseTranscript} from '../tools/pipeline-core';
-import {assembleEpisode, buildNarrationTrack} from '../tools/pipeline/assemble';
-import {writeTone} from './helpers/fake-pipeline';
+import {assembleEpisode} from '../tools/pipeline/assemble';
 
 /** Mean volume (dB) of a window of an audio file; silence reports about -91 dB. */
 function meanVolume(file: string, start: number, seconds: number): number {
@@ -23,22 +21,13 @@ function silentSegment(path: string, seconds: number): void {
 
 describe('P8: final assembly', () => {
   const dir = mkdtempSync(join(tmpdir(), 'v2-assemble-'));
-  const audioDir = join(dir, 'audio');
-  mkdirSync(audioDir);
-  const turns = parseTranscript('Maya: One.\n[pause 1]\nMarcus: Two.');
-  writeTone(join(audioDir, 't00.mp3'), 0.8);
-  writeTone(join(audioDir, 't02.mp3'), 0.8);
-  const timing = {starts: [0.25, 1.23, 2.41], totalSec: 4};
   const track = join(dir, 'narration.m4a');
 
-  it('places each turn at its measured start in one continuous track', () => {
-    buildNarrationTrack(turns, timing, audioDir, track);
-    assert.ok(Math.abs(ffprobeDuration(track) - 4) < 0.05, `track is ${ffprobeDuration(track)}s`);
-    assert.ok(meanVolume(track, 0, 0.2) < -60, 'lead-in should be silent');
-    assert.ok(meanVolume(track, 0.35, 0.5) > -30, 'turn t00 should be audible');
-    assert.ok(meanVolume(track, 1.3, 0.9) < -60, 'pause should be silent');
-    assert.ok(meanVolume(track, 2.5, 0.5) > -30, 'turn t02 should be audible');
-    assert.ok(meanVolume(track, 3.4, 0.5) < -60, 'tail should be silent');
+  it('test audio track: a 4s tone between silences', () => {
+    // Stand-in for the episode's rendered audio mix: silence, a tone, silence.
+    execFileSync('ffmpeg', ['-y', '-v', 'error', '-f', 'lavfi', '-i', 'sine=frequency=440:duration=0.8', '-af', 'adelay=2410:all=1,apad', '-t', '4', '-ac', '2', '-ar', '48000', '-c:a', 'aac', track]);
+    assert.ok(Math.abs(ffprobeDuration(track) - 4) < 0.05);
+    assert.ok(meanVolume(track, 2.5, 0.5) > -30 && meanVolume(track, 0.5, 1) < -60);
   });
 
   it('muxes silent segments with the track: exactly one video and one audio stream, correct length', () => {

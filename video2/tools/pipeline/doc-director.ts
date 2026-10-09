@@ -11,7 +11,7 @@
  */
 import {readFileSync} from 'node:fs';
 import {cleanSpeech} from './speech';
-import {resolvePlanCues} from './cues';
+import {resolveBoxes} from './cues';
 import {LOOK_RULES, resolveShotPlan, type PlanShot, type ResolveOptions, type ShotPlan} from './shots';
 import type {PipelineTurn, WordTiming} from '../pipeline-core';
 import {ATMOSPHERES} from '../../src/documentary/atmosphere';
@@ -111,7 +111,7 @@ export function validateOutline(raw: unknown, turns: PipelineTurn[], timing: {st
     if (next !== turns.length) issues.push(`acts end at turn ${next - 1}; the last turn is ${turns.length - 1}`);
   }
   try {
-    resolvePlanCues({version: 1, episode: '', title: '', boxes: o.boxes, scenes: []}, turns, timing, words, {requireBoxes: true, allowEstimated});
+    resolveBoxes(o.boxes, turns, timing, words, {requireBoxes: true, allowEstimated});
   } catch (error) {
     issues.push(...String(error instanceof Error ? error.message : error).split('\n').slice(1).map(line => line.replace(/^\s*-\s*/, '')));
   }

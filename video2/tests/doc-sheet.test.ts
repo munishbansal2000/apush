@@ -1,6 +1,5 @@
 import assert from 'node:assert/strict';
 import {describe, it} from 'node:test';
-import {activeSpeakerAt, type HeadTurn} from '../src/directed/ActiveHead';
 import {BIG_WIDTH, INTRO_FLY_SEC, INTRO_HOLD_SEC, sheetTransform, type Rect} from '../src/documentary/sheet';
 
 const size = {width: 1920, height: 1080};
@@ -37,29 +36,5 @@ describe('Episode Sheet entrance', () => {
     assert.deepEqual([end.phase, end.scale, end.tx, end.ty, end.dim], ['docked', 1, 0, 0, 0]);
     const nearEnd = sheetTransform(intro, flyStart + INTRO_FLY_SEC - 1e-6, size, tracker, stage);
     assert.ok(Math.abs(nearEnd.scale - 1) < 1e-3 && Math.abs(nearEnd.tx) < 1, 'no jump when it docks');
-  });
-});
-
-describe('active speaker head', () => {
-  const turns: HeadTurn[] = [
-    {id: 't00', kind: 'speech', speaker: 'maya'}, {id: 't01', kind: 'speech', speaker: 'maya'},
-    {id: 't02', kind: 'speech', speaker: 'marcus'}, {id: 't03', kind: 'pause'},
-    {id: 't04', kind: 'speech', speaker: 'henry'}, {id: 't05', kind: 'speech', speaker: 'maya'},
-  ];
-  const timing = {starts: [0, 3.2, 6.4, 9.6, 12.8, 16], durations: [3, 3, 3, 3, 3, 3]};
-  const art = (s: string) => s === 'maya' || s === 'marcus';
-
-  it('shows only the speaker, keeping one entrance across consecutive lines by the same host', () => {
-    const a = activeSpeakerAt(turns, timing, 4, art)!;
-    assert.deepEqual([a.speaker, a.since, a.previous], ['maya', 0, null]);
-    const b = activeSpeakerAt(turns, timing, 7, art)!;
-    assert.deepEqual([b.speaker, b.since, b.previous], ['marcus', 6.4, 'maya']);
-  });
-
-  it('holds through short gaps, leaves during pauses, and shows nobody for speakers without art', () => {
-    assert.equal(activeSpeakerAt(turns, timing, 3.1, art)?.speaker, 'maya', 'gap between lines');
-    assert.equal(activeSpeakerAt(turns, timing, 10, art), null, 'pause turn');
-    assert.equal(activeSpeakerAt(turns, timing, 13, art), null, 'henry has no head art');
-    assert.equal(activeSpeakerAt(turns, timing, 16.5, art)?.previous, null, 'no exit animation for a speaker without art');
   });
 });

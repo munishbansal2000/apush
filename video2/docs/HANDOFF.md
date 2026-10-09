@@ -36,8 +36,8 @@ Paste any `[kit-layout]` lines or the render summary back to the assistant.
 These may have finished or left partial files — check before continuing:
 
 1. **Generic plan system: retired (2026-10-08).** The JSON plan system (`src/plan/`, `tools/validate-plan.ts`,
-   `tools/build-narration.ts`) was superseded by the directed pipeline (`tools/video-pipeline.ts` +
-   `src/directed/DirectedEpisode.tsx`) and its leftovers were deleted. The last full copy is in `remotion-src/`.
+   `tools/build-narration.ts`) was superseded by the documentary pipeline (`tools/video-pipeline.ts` +
+   `src/documentary/DocEpisode.tsx`, docs/LOOK.md) and its leftovers were deleted. The last full copy is in `remotion-src/`.
    Shared overlays `src/motion/overlays.tsx`, `src/motion/measure.ts`, and `src/motion/layout.ts` remain in use.
 2. **Fact check — finished partially** (network lookups were denied midway). Details in
    `docs/FACT_CHECK_MOTION.md`.

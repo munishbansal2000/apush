@@ -2,87 +2,59 @@
 
 End-to-end episode build using **only** video2. No references to `video/remotion`.
 
-## One-command transcript pipeline
+## One-command documentary pipeline
 
-Install the non-Node runtime once. This creates `.venv-pipeline`, installs Edge TTS
-and Vosk, downloads the small English Vosk model, and verifies ffmpeg/ffprobe:
+Lesson script → narration → word timing → documentary director → LTX hero clips → contact sheet → video, in the
+visuals-first look of `docs/LOOK.md`. Install the non-Node runtime once (Edge TTS, Vosk + model, ffmpeg check):
 
-```powershell
-npm run setup:pipeline
+```bash
+npm run setup:pipeline          # Windows (PowerShell)
+npm run setup:pipeline:unix     # macOS / Linux
 ```
 
-The staged pipeline can now start from an existing `turns.json` or a plain transcript
-containing `Speaker: text` lines and `[pause 2.5]` markers. When `--transcript` is
-omitted, an episode such as `u3e1` automatically resolves the newest canonical script
-under `../audio_scripts/unit3/` (a `LOCKED` script wins when present). Override the
-shared root with `AUDIO_SCRIPTS_DIR`.
+```bash
+# Narration, timing, words, director, clips, contact sheet (stops before the full render).
+npm run pipeline:dev -- --episode u3e1
 
-```powershell
-# Fast development build: Edge TTS, Vosk, Meta UI image research/direction,
-# smart downloads, and a contact sheet. It stops before the expensive full render.
-npm run pipeline:dev -- --episode u3e1 --transcript path\to\lesson.txt
+# Same, but answer the director's prompts with your own agents instead of Meta UI:
+# writes out/pipeline/u3e1/agent/*.prompt.md; answer each in the matching .answer.json; re-run.
+npm run pipeline:dev -- --episode u3e1 --agent
 
-# Production audio: Meta UI adds Fish performance direction without changing
-# spoken wording, then the configured Fish CLI renders each turn.
-$env:FISH_PYTHON = 'C:\path\to\python.exe'
-$env:FISH_TTS_SCRIPT = 'C:\path\to\fish_tts.py'
-npm run pipeline:prod -- --episode u3e1 --transcript path\to\lesson.txt
-
-# Build the final MP4 after approving out/u3e1-contact.png.
-npm run pipeline:prod -- --episode u3e1 --from render --full
+# Final video after approving out/u3e1-contact.png.
+npm run pipeline:dev -- --episode u3e1 --from render
 ```
 
-Stages are `turns`, `audio`, `timing`, `words`, `images`, `direct`, `clips`, `contact`,
-and `render`. Use `--only <stage>`, `--from <stage>`, `--force`, or `--dry-run`.
-Each completed stage is content-hashed in `out/pipeline/<episode>/state.json`, so a
-failed/throttled run resumes without repeating current work.
+Production audio: `npm run pipeline:prod` (Meta UI adds Fish performance direction without changing wording; the
+Fish CLI renders each turn; set `FISH_TTS_SCRIPT`, optionally `FISH_PYTHON`).
 
-Incrementality also applies *inside* the expensive stages:
+Stages: `turns`, `pronounce`, `audio`, `timing`, `words`, `images`, `direct`, `clips`, `contact`, `render`.
+Use `--only <stage>`, `--from <stage>`, `--force`, `--dry-run`, `--draft` (allow unapproved library geography),
+`--agent` (director prompts as files), `--video-gen none` (never run LTX; clip shots show their still).
 
-- TTS is cached per turn, and Vosk word timing is cached per audio file.
-- Vosk reports every measured/reused turn and is a hard gate for direction:
-  missing, empty, malformed, unordered, or out-of-audio word timings stop the run.
-- Image downloads are reused when their lock entry and local file are current.
-- LTX clips are cached per scene using the prompt, seed, duration, source image,
-  and generator version.
-- Contact-sheet stills are cached per scene.
-- The final render is split into `out/pipeline/<episode>/segments/*.mp4` and cached
-  per scene using that scene's plan, audio, imagery/clips, frame range, and renderer
-  source. Only stale scenes are rendered; ffmpeg then concatenates all current
-  segments into `out/<episode>.mp4` and validates the assembled duration.
+What each back-half stage does:
 
-Thus editing one turn normally rebuilds its audio and word timing, any affected
-director output/assets, and only the scene segments whose inputs changed. The final
-concat still runs because it is the inexpensive step that creates the canonical MP4.
+- **direct**: the documentary director (`tools/pipeline/doc-director.ts`): an outline (thesis, acts, Episode Sheet
+  boxes with spoken cues), then one prompt per act, merged and checked against every LOOK rule; only failing acts are
+  re-asked. Writes `data/<episode>/shots.json`. Requires Vosk words. Each act's prompt holds only that act's turns, so
+  a one-line edit re-directs one act (Meta prompt cache / agent answer files keep the rest).
+- **clips**: LTX hero clips for `clip` shots via LTX Desktop (default) or `LTX_BACKEND=diffusers`; 16:9 crop around
+  the focus (never stretched), forward/reverse boomerang, keyed by content under `public/clips/<episode>/`.
+- **contact**: stills at every shot start and end with the runtime layout guard; fails on layout problems or any
+  unmeasured frame. Writes `out/<episode>-contact.png` and `out/<episode>-layout.json`.
+- **render**: ~20s segments at shot boundaries, each cached by content (shots, next shot, assets, sheet, years,
+  renderer source), every frame guard-checked; one audio pass mixes narration, music and sound cues for the whole
+  episode; ffmpeg assembles and verifies one video + one audio stream of the right length. `out/<episode>.mp4`.
 
-`DirectedEpisode` uses the same browser-side runtime layout guard as the component
-episodes. The contact sheet samples every narration transition plus each scene midpoint,
-stores guard findings with the still cache, writes `out/<episode>-layout.json`, and fails
-on overlaps, cuts, clipping, overflow, or empty panels. Full scene rendering checks every
-rendered frame and writes `out/pipeline/<episode>/render-layout.json`.
+Incrementality: TTS is content-addressed (inserting a line synthesizes only that line), Vosk is cached per audio
+file, director prompts are cached per act, clips per content key, and render segments per content key.
 
-Meta UI uses the existing shared adapter at
-`C:\Users\munis\projects\sat_question_runner\new_eng_qs\lib\meta.js` and its
-existing cookie by default. Override their locations with `APUSH_LLM_LIB_DIR` and
-`META_COOKIE_FILE`; set `META_HEADLESS=1` only when the UI is known to work headlessly.
-The pipeline automatically discovers `.venv-pipeline` and its checked model first.
-`VOSK_PYTHON`, `FISH_PYTHON`, and `VOSK_MODEL_PATH` remain available as overrides.
+Standalone tools run the same stage code: `tools/doc-direct.ts` (director, `--agent`), `tools/doc-clips.ts`,
+`tools/doc-render.ts` (`--plan` for hand-made plans such as `data/u3e1/shots.sample.json`, `--seconds N` previews,
+`--check` to validate only). Depth maps for 2.5D parallax: `tools/depth-maps.py` (see `docs/LOOK.md`).
 
-The director may select `creative_clip` scenes when `--video-gen ltx` (the default).
-The `clips` stage invokes the old checked-in `../video/animate_still.py` safety-filtered
-LTX generator, caps native generation at six seconds, conforms/loops it to the exact
-measured scene duration, probes the result, and caches it under
-`public/clips/<episode>/`. Set `LTX_PYTHON` and optionally `LTX_SCRIPT`; use
-`--video-gen none` to require already-generated clips without invoking LTX.
-
-The director emits validated `data/<episode>/scene_plan.json`. Its component vocabulary
-is deliberately constrained to `title`, `ken_burns`, `quote`, `compare`,
-`causal_chain`, `highlight`, and `primary_source`; the model cannot emit executable
-code. Scene boundaries are overwritten from measured TTS timing and must cover every
-turn exactly once. Before either a contact sheet or full render, `sync_report.json`
-checks the real audio files, timing map, contiguous scene boundaries, final duration,
-and creative-clip lengths to a one-frame tolerance. Rendering uses
-`src/directed/DirectedEpisode.tsx`.
+Meta UI uses the shared adapter and cookie configured in `data/pipeline.json` (`meta.libDir`, `meta.cookieFile`);
+`APUSH_LLM_LIB_DIR` / `META_COOKIE_FILE` override them. External tools are found by `tools/pipeline/tools.ts`
+(env override, project venv, Miniconda/Homebrew, PATH).
 
 ## Setup (once)
 

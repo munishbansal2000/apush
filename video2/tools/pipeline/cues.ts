@@ -1,54 +1,42 @@
-/** Resolve and validate a plan's spoken cues: Episode Sheet boxes and per-item scene reveals. */
-import type {DirectedPlan, DirectedScene, PipelineTurn, WordTiming} from '../pipeline-core';
-import {resolvePhrase, type AnchorTiming} from './anchors';
+/** Episode Sheet boxes: resolve and validate their spoken cues (used by the director's outline check). */
+import type {PipelineTurn, WordTiming} from '../pipeline-core';
+import {resolvePhrase, type AnchorTiming, type PhraseAnchor} from './anchors';
 
-/** How many items a component reveals one by one (and so how many `reveals` cues it takes). */
-export function revealItemCount(scene: DirectedScene): number | null {
-  const p = scene.props as Record<string, unknown>;
-  const len = (key: string) => (Array.isArray(p[key]) ? (p[key] as unknown[]).length : 0);
-  switch (scene.component) {
-    case 'stagger': return len('panels');
-    case 'causal_chain': return len('nodes');
-    case 'chart': return len('data');
-    case 'spectrum': return len('markers');
-    case 'highlight': return len('highlights');
-    case 'compare': return 2; // left column, then right column
-    case 'primary_source': return 2; // highlight sweep, then HIPP card
-    default: return null;
-  }
-}
+/** One Episode Sheet box: named at `intro`, covered over `turns`, checked off at `check`. */
+export interface PlanBox {label: string; intro: PhraseAnchor; check: PhraseAnchor; turns: {from: number; to: number}}
+export interface ResolvedBox extends PlanBox {introSec: number; checkSec: number; startSec: number; endSec: number}
 
 export const MAX_BOX_LABEL = 48;
 
 /**
- * Returns a copy of `plan` with introSec/checkSec/startSec/endSec on every box and revealSec on every scene that has
- * reveals. Throws with every problem found. `requireReveals` makes cues mandatory for revealable components.
+ * Resolves introSec/checkSec/startSec/endSec for every box and throws with every problem found: 2-5 boxes (when
+ * required), labels <= MAX_BOX_LABEL, ordered non-overlapping turn spans, cues the narration really says, a box named
+ * before its coverage starts and checked after it starts, and checks in box order.
  */
-export function resolvePlanCues(
-  plan: DirectedPlan,
+export function resolveBoxes(
+  boxes: PlanBox[] | undefined,
   turns: PipelineTurn[],
   timing: AnchorTiming & {totalSec: number},
   words: Record<string, WordTiming[]>,
-  opts: {requireBoxes?: boolean; requireReveals?: boolean; allowEstimated?: boolean} = {},
-): DirectedPlan {
+  opts: {requireBoxes?: boolean; allowEstimated?: boolean} = {},
+): ResolvedBox[] {
   const issues: string[] = [];
+  const list = boxes ?? [];
   const at = (where: string, fn: () => number): number => {
     try { return fn(); } catch (error) { issues.push(`${where}: ${error instanceof Error ? error.message : String(error)}`); return NaN; }
   };
   const turnEnd = (i: number) => (i + 1 < turns.length ? timing.starts[i + 1] : timing.totalSec);
-
-  const boxes = plan.boxes ?? [];
-  if (opts.requireBoxes && (boxes.length < 2 || boxes.length > 5)) issues.push(`plan needs 2-5 Episode Sheet boxes, got ${boxes.length}`);
+  if (opts.requireBoxes && (list.length < 2 || list.length > 5)) issues.push(`plan needs 2-5 Episode Sheet boxes, got ${list.length}`);
   let lastTo = -1;
   let lastCheck = -Infinity;
-  const resolvedBoxes = boxes.map((box, i) => {
+  const resolved = list.map((box, i): ResolvedBox | null => {
     const where = `box ${i + 1}`;
     if (typeof box.label !== 'string' || !box.label.trim()) issues.push(`${where}: label is empty`);
     else if (box.label.length > MAX_BOX_LABEL) issues.push(`${where}: label "${box.label}" is longer than ${MAX_BOX_LABEL} characters`);
     const {from, to} = box.turns ?? ({} as {from: number; to: number});
     if (!Number.isInteger(from) || !Number.isInteger(to) || from > to || from < 0 || to >= turns.length) {
       issues.push(`${where}: turns ${JSON.stringify(box.turns)} is not a valid turn range`);
-      return box;
+      return null;
     }
     if (from <= lastTo) issues.push(`${where}: turns ${from}-${to} overlap or precede box ${i}`);
     lastTo = to;
@@ -62,29 +50,6 @@ export function resolvePlanCues(
     if (Number.isFinite(checkSec)) lastCheck = checkSec;
     return {...box, introSec, checkSec, startSec, endSec};
   });
-
-  const index = new Map(turns.map((turn, i) => [turn.id, i]));
-  const scenes = plan.scenes.map(scene => {
-    const count = revealItemCount(scene);
-    if (!scene.reveals) {
-      if (opts.requireReveals && count) issues.push(`${scene.id}: ${scene.component} needs ${count} reveal cues (one per item)`);
-      return scene;
-    }
-    if (count === null) { issues.push(`${scene.id}: ${scene.component} does not take reveal cues`); return scene; }
-    if (scene.reveals.length !== count) { issues.push(`${scene.id}: ${scene.reveals.length} reveal cues for ${count} items`); return scene; }
-    const own = new Set(scene.turnIds.map(id => index.get(id)));
-    let previous = -Infinity;
-    const revealSec = scene.reveals.map((cue, item) => {
-      const where = `${scene.id} reveal ${item + 1}`;
-      if (!own.has(cue?.turn)) { issues.push(`${where}: turn ${cue?.turn} is outside the scene's turns`); return NaN; }
-      const sec = at(where, () => resolvePhrase(cue, turns, timing, words, 'start', opts.allowEstimated).sec);
-      if (sec < previous) issues.push(`${where}: cue comes before the previous item's`);
-      if (Number.isFinite(sec)) previous = sec;
-      return sec;
-    });
-    return {...scene, revealSec};
-  });
-
   if (issues.length) throw new Error(`plan cues invalid:\n${issues.map(issue => `  - ${issue}`).join('\n')}`);
-  return {...plan, ...(plan.boxes ? {boxes: resolvedBoxes} : {}), scenes};
+  return resolved as ResolvedBox[];
 }

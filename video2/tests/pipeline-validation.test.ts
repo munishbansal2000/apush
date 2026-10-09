@@ -1,11 +1,10 @@
 import assert from 'node:assert/strict';
 import {join} from 'node:path';
 import {describe, it} from 'node:test';
-import {atomicJson, normalizePlan, normalizeTurns, parseTranscript, selectedStages, syncIssues, type DirectedPlan} from '../tools/pipeline-core';
+import {atomicJson, isSafePublicPath, normalizeTurns, parseTranscript, selectedStages} from '../tools/pipeline-core';
 import {runPipeline} from '../tools/pipeline/run';
 import {fakeContext} from './helpers/fake-pipeline';
 
-const stagger = {component: 'stagger' as const, props: {panels: [{image: 'a.jpg'}, {image: 'b.jpg'}]}};
 
 describe('pipeline validation', () => {
   it('P16: a "## Sources" heading ends the spoken transcript', () => {
@@ -36,19 +35,6 @@ describe('pipeline validation', () => {
     assert.throws(() => normalizeTurns([{speaker: 'maya', text: '   '}]), /empty/);
   });
 
-  it('P16: the first scene covers the lead-in, and a late first scene is flagged', () => {
-    const turns = parseTranscript('Maya: One.\nMarcus: Two.');
-    const plan = normalizePlan({version: 1, episode: 'x', title: 'X', scenes: [
-      {id: 'a', component: 'title', turnIds: ['t00'], props: {title: 'X'}},
-      {id: 'b', turnIds: ['t01'], ...stagger},
-    ]}, turns, [0.25, 1.5], [1, 2], 4);
-    assert.equal(plan.scenes[0].startSec, 0);
-    assert.deepEqual(syncIssues(plan, turns, [0.25, 1.5], [1, 2], 4), []);
-    const late: DirectedPlan = structuredClone(plan);
-    late.scenes[0].startSec = 0.5;
-    assert.match(syncIssues(late, turns, [0.25, 1.5], [1, 2], 4).join('\n'), /a: visual gap/);
-  });
-
   it('P15: --from render selects the render stage without --full', () => {
     assert.deepEqual(selectedStages(undefined, 'render', false), ['render']);
     assert.deepEqual(selectedStages(undefined, 'contact', false), ['contact']);
@@ -60,10 +46,8 @@ describe('pipeline validation', () => {
       atomicJson(join(h.ctx.dataDir, 'turns.json'), {turns: parseTranscript('Maya: One.')});
       await assert.rejects(runPipeline(h.ctx), /invalid planned image path/, path);
     }
-    const turns = parseTranscript('Maya: One.');
-    assert.throws(() => normalizePlan({version: 1, episode: 'x', title: 'X', scenes: [
-      {id: 'b', component: 'stagger', turnIds: ['t00'], props: {panels: [{image: 'a.jpg'}, {image: 'historic\\..\\..\\x.jpg'}]}},
-    ]}, turns, [0], [1], 2), /safe public\/ relative path/);
+    for (const path of ['historic/../x.jpg', 'historic\\x.jpg', '/abs/x.jpg', 'https://x/y.jpg', 'a//b.jpg']) assert.equal(isSafePublicPath(path), false, path);
+    assert.equal(isSafePublicPath('historic/u3e1/grenville.jpg'), true);
   });
 
   it('P11: the direct stage refuses to run without valid word timing', async () => {

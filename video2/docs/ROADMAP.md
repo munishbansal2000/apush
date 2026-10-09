@@ -48,10 +48,10 @@ Status: ✅ done · 🔶 in progress · ⬜ not started · Owner: **C** = Claude
 |---|---|---|---|
 | D1 | Shot-plan format, phrase anchors, resolver enforcing LOOK.md rules | ✅ | C |
 | D2 | Hand-directed u3e1 cold open (quality target) | ✅ | C |
-| D3 | Outline step: thesis, acts, Episode Sheet boxes + cues (checked against the spoken "N boxes on your sheet") | ⬜ | C |
-| D4 | Per-act shot-plan step from the library index (asset ids + focus names, geo ids), with same-chat review | ⬜ | C |
-| D5 | Code checks + per-act repair loop; image repetition limit; variety scoring | ⬜ | C |
-| D6 | Caching per act, so a one-line edit re-directs one act | ⬜ | C |
+| D3 | Outline step: thesis, acts, Episode Sheet boxes + cues | ✅ | C |
+| D4 | Per-act shot-plan step from the catalog + library geography, with same-chat review | ✅ | C |
+| D5 | Code checks + per-act repair loop; image repetition and clip limits | ✅ | C |
+| D6 | Caching per act (Meta prompt cache; agent answers keyed by prompt hash) | ✅ | C |
 | D7 | Contact-sheet approval gate before full render | ✅ (pipeline stops at contact) | C |
 
 ## 4. Voice and sound
@@ -69,7 +69,7 @@ Status: ✅ done · 🔶 in progress · ⬜ not started · Owner: **C** = Claude
 | ID | Item | Status | Owner |
 |---|---|---|---|
 | O1 | Correctness fixes, caches, parsing (all 55 scripts), cross-platform tools | ✅ | C |
-| O2 | Wire documentary stages into `video-pipeline.ts` (direct → shots → clips → contact → render) | ⬜ | C |
+| O2 | Pipeline back half runs the documentary path (director with `--agent`, clips, guarded contact, segmented render + full audio mix); legacy slide director/renderer deleted | ✅ | C |
 | O3 | End-to-end run on the Windows 5090 machine (Fish, Vosk, LTX) | ⬜ | U |
 | O4 | Render performance: parallel segment renders, GPU encode, timing per lesson | ⬜ | C |
 | O5 | Independent review pass of all changes (fresh-context reviewer) | ⬜ | C |

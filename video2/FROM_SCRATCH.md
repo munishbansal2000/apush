@@ -3,14 +3,12 @@
 U1E1 has a component (`src/components/U1E1Episode.tsx`) but no script, turns, timing, or TTS.
 This is the from-scratch path.
 
-## Step 1: Director (meta.ai)
+## Step 1: Director
 
-1. Open https://www.meta.ai/ (meta_ui)
-2. Paste the contents of `director-prompt-v13-remotion.txt` as the system prompt
-3. Provide your locked two-host script (Maya + Marcus dialogue)
-4. The director outputs a JSON scene plan with beats (word-anchored, not seconds)
-
-Save the output as `src/data/u1e1/beats.json` (or feed it to the episode component).
+The old manual director prompt (`director-prompt-v13-remotion.txt`) was retired with the slide-based renderer. Lessons
+now go through the documentary pipeline (`PIPELINE.md`): `npx tsx tools/doc-direct.ts --episode <ep> --agent` writes
+the director's prompts as files for your agents (or drop `--agent` to use Meta UI) and produces `data/<ep>/shots.json`.
+The hand-built component episode `src/components/U1E1Episode.tsx` keeps its own `BEATS` array.
 
 ## Step 2: TTS
 

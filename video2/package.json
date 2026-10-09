@@ -45,7 +45,6 @@
     "setup:downloads": "node tools/log-command.cjs setup-downloads tsx tools/setup-downloads.ts",
     "contact-sheet:components": "node tools/log-command.cjs contact-sheet-components tsx tools/contact-sheet-components.ts",
     "render:components": "node tools/log-command.cjs render-components tsx tools/render-components.ts",
-    "verify:render": "tsx tools/verify-render.ts",
     "setup:pipeline:unix": "bash tools/setup-pipeline.sh"
   },
   "dependencies": {
