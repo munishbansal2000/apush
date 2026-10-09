@@ -10,8 +10,8 @@ Usage: python3 download-u3-images.py [--lesson u3e2] [--all]
 import json, os, sys, time, urllib.request, urllib.error
 from pathlib import Path
 
-CATALOG_DIR = Path(__file__).parent / "data" / "u3-catalogs"
-OUTPUT_BASE = Path(__file__).parent / "public" / "historic"
+CATALOG_DIR = Path(__file__).parent.parent / "data" / "u3-catalogs"
+OUTPUT_BASE = Path(__file__).parent.parent / "public" / "historic"
 
 # Rate limits per host (requests per minute)
 RATE_LIMITS = {
