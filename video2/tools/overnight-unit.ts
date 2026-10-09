@@ -27,7 +27,22 @@ import {keyTag, loadFishKeys} from './pipeline/fish-keys';
 import {parseTranscript, resolveAudioScript} from './pipeline-core';
 
 const flag = (name: string) => process.argv.includes(`--${name}`);
-const unit = arg('unit');
+/** --name value, --name=value; --lesson is accepted for --lessons (a typo used to fall back to the whole unit). */
+const opt = (name: string, ...aliases: string[]): string | undefined => {
+  for (const n of [name, ...aliases]) {
+    const eq = process.argv.find(a => a.startsWith(`--${n}=`));
+    if (eq) return eq.slice(n.length + 3);
+    const v = arg(n);
+    if (v !== undefined) return v;
+  }
+  return undefined;
+};
+const KNOWN = new Set(['unit', 'lessons', 'lesson', 'mode', 'list', 'skip-images', 'skip-depth', 'no-clips', 'no-draft', 'preview']);
+for (const a of process.argv.slice(2)) {
+  const m = /^--([^=]+)/.exec(a);
+  if (m && !KNOWN.has(m[1])) { console.error(`unknown option --${m[1]} (known: ${[...KNOWN].map(k => `--${k}`).join(' ')})`); process.exit(1); }
+}
+const unit = opt('unit');
 if (!unit || !/^\d+$/.test(unit)) {
   console.log(readFileSync(new URL(import.meta.url), 'utf8').split('*/')[0]);
   process.exit(1);
@@ -70,7 +85,15 @@ const tsx = join(ROOT, 'node_modules', 'tsx', 'dist', 'cli.mjs');
 interface Result {lesson: string; ok: boolean; took: string; attempt: number; note: string; video?: string; log: string}
 
 async function main() {
-  const lessons = arg('lessons')?.split(',').map(s => s.trim()).filter(Boolean) ?? unitLessons();
+  const lessonArg = opt('lessons', 'lesson');
+  // "--lessons u3e1,u3e2", "--lessons u3e1 u3e2" (PowerShell may split on commas), or "--lessons=u3e1,u3e2".
+  const flagAt = process.argv.findIndex(a => a === '--lessons' || a === '--lesson');
+  const extra: string[] = [];
+  for (let i = flagAt + 2; flagAt >= 0 && i < process.argv.length && !process.argv[i].startsWith('--'); i++) extra.push(process.argv[i]);
+  const lessons = lessonArg === undefined ? unitLessons() : [lessonArg, ...extra].flatMap(a => a.split(/[,\s]+/)).map(s => s.trim().toLowerCase()).filter(Boolean);
+  const known = new Set(unitLessons());
+  const unknown = lessons.filter(l => !known.has(l));
+  if (unknown.length) { console.error(`no unit ${unit} script for: ${unknown.join(', ')} (lessons: ${[...known].join(', ')})`); process.exit(1); }
   if (!lessons.length) throw new Error(`no lessons found for unit ${unit}`);
   if (flag('list')) {
     console.log(`unit ${unit}: ${lessons.length} lessons: ${lessons.join(', ')}`);
@@ -80,13 +103,14 @@ async function main() {
   mkdirSync(logDir, {recursive: true});
   const started = Date.now();
   const steps: string[] = [];
-  console.log(`[overnight] unit ${unit}: ${lessons.join(', ')}\n[overnight] logs: ${relative(ROOT, logDir)}`);
+  console.log(`[overnight] unit ${unit}: ${lessons.join(', ')}${lessonArg === undefined ? ' (all; use --lessons u3e1,u3e2 for some)' : ''}\n[overnight] logs: ${relative(ROOT, logDir)}`);
 
   // 1. Images from the unit catalogs (polite; skips what is already on disk).
   const downloader = join(ROOT, 'tools', `download-u${unit}-images.py`);
   if (!flag('skip-images') && existsSync(downloader)) {
     let code = 0;
-    if (arg('lessons')) for (const l of lessons) code ||= (await run('images', pipelinePython(), [downloader, '--lesson', l], 'images.log')).code;
+    // Only the listed lessons' catalogs; a failed lesson does not stop the others.
+    if (lessonArg !== undefined) for (const l of lessons) { const c = (await run('images', pipelinePython(), [downloader, '--lesson', l], 'images.log')).code; code = code || c; }
     else code = (await run('images', pipelinePython(), [downloader, '--all'], 'images.log')).code;
     steps.push(`images: ${code === 0 ? 'ok' : `exit ${code} (see images.log); continuing with what downloaded`}`);
   } else steps.push(`images: skipped${existsSync(downloader) ? '' : ` (no tools/download-u${unit}-images.py)`}`);
@@ -110,7 +134,7 @@ async function main() {
   } else steps.push('depth maps: skipped');
 
   // Prod preflight: the Fish script, keys, and a voice for every speaker (lessons missing one will fail at audio).
-  const mode = arg('mode') ?? 'dev';
+  const mode = opt('mode') ?? 'dev';
   const noVoice = new Set<string>();
   const keys = mode === 'prod' ? loadFishKeys() : [];
   if (mode === 'prod') {
