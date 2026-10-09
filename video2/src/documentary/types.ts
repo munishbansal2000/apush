@@ -89,7 +89,23 @@ export interface ClipShot extends ShotBase {
   to: Framing;
 }
 
-export type DocShot = ImageMoveShot | PortraitShot | MapShot | PointShot | ClipShot;
+/**
+ * Question card for a scripted pause: the question (verbatim from the line before), a "your turn" kicker, and a
+ * countdown for the pause. Optional dimmed backdrop image. The Episode Sheet steps aside while it is up.
+ */
+export interface QuestionShot extends ShotBase {
+  type: 'question';
+  question: string;
+  /** The pause the countdown runs over (absolute seconds). */
+  pauseStartSec: number;
+  pauseEndSec: number;
+  /** Practice-block questions (AP-style) vs in-lesson think-pauses: changes the kicker. */
+  practice?: boolean;
+  backdrop?: string;
+  size?: {width: number; height: number};
+}
+
+export type DocShot = ImageMoveShot | PortraitShot | MapShot | PointShot | ClipShot | QuestionShot;
 
 /** Year that slams in over whatever shot is playing. */
 export interface YearStamp {text: string; sec: number}

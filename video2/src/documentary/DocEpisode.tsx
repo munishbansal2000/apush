@@ -12,7 +12,7 @@ import {FilmGrain} from '../kit/media';
 import {sheetTransform} from './sheet';
 import kitConfig from '../data/kit-render-config.json';
 import {AtmosphereLayers} from './atmosphere';
-import {ClipView, ImageMoveView, MapView, PointView, YearStampView} from './shots';
+import {ClipView, ImageMoveView, MapView, PointView, QuestionView, YearStampView} from './shots';
 import type {DocEpisodeProps, DocShot} from './types';
 
 const cfg = kitConfig as unknown as RenderConfig;
@@ -51,6 +51,7 @@ const ShotBody: React.FC<{shot: DocShot; lead: number}> = ({shot, lead}) => {
     case 'clip': return <ClipView shot={shot} lead={lead} />;
     case 'map': return <MapView shot={shot} lead={lead} />;
     case 'point': return <PointView shot={shot} lead={lead} />;
+    case 'question': return <QuestionView shot={shot} lead={lead} />;
   }
 };
 
@@ -58,7 +59,7 @@ const ShotBody: React.FC<{shot: DocShot; lead: number}> = ({shot, lead}) => {
 const ShotView: React.FC<{shot: DocShot; lead: number}> = ({shot, lead}) => (
   <>
     <ShotBody shot={shot} lead={lead} />
-    {shot.type !== 'point' && shot.type !== 'portrait' && <AtmosphereLayers kinds={shot.atmosphere} seed={shot.id} />}
+    {shot.type !== 'point' && shot.type !== 'portrait' && shot.type !== 'question' && <AtmosphereLayers kinds={shot.atmosphere} seed={shot.id} />}
   </>
 );
 
@@ -76,6 +77,8 @@ export const DocEpisode: React.FC<DocEpisodeProps> = ({episode, shots, years = [
   const windows = shotWindows(shots, fps);
   const sheet = sheetTransform(boxes.map(b => b.introSec), t, {width, height}, cfg.boxTracker.rect, SHEET_STAGE);
   const currentBox = boxes.findIndex(b => t >= b.startSec && t < b.endSec);
+  // The Episode Sheet steps aside while a question card is up.
+  const onQuestion = shots.some(s => s.type === 'question' && t >= s.startSec && t < s.endSec);
   const speaking = (sec: number) => turns.some((turn, i) => turn.kind === 'speech' && sec >= timing.starts[i] && sec < timing.starts[i] + timing.durations[i]);
   return (
     <AbsoluteFill ref={rootRef} data-kit-root style={{background: '#0b0907'}}>
@@ -99,7 +102,7 @@ export const DocEpisode: React.FC<DocEpisodeProps> = ({episode, shots, years = [
           <Track id="chrome:box-tracker" role={sheet.phase === 'docked' ? 'chrome' : 'cover'}>
             <div {...GUARD_WRAPPER} style={{position: 'absolute', inset: 0, transformOrigin: '0 0', transform: `translate(${sheet.tx}px, ${sheet.ty}px) scale(${sheet.scale})`,
               // Docked, the sheet recedes to a translucent tab and comes forward around box events.
-              opacity: sheet.phase === 'docked' ? dockedOpacity(t, boxes) : 1}}>
+              opacity: sheet.phase === 'docked' ? (onQuestion ? 0 : dockedOpacity(t, boxes)) : 1}}>
               <BoxTracker cfg={cfg} state={{
                 boxes: boxes.map(b => b.label),
                 checkedAt: boxes.map(b => b.checkSec),

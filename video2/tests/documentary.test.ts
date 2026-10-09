@@ -178,3 +178,31 @@ describe('LTX Desktop clips', () => {
   });
 });
 
+
+describe('question cards for scripted pauses', () => {
+  const turns = parseTranscript('Maya: The line was drawn.\nMarcus: Draw a line or send soldiers? Which one buys time?\n[9-second pause]\nMaya: The line buys time.');
+  const timing = {starts: [0.25, 3, 7.5, 16.68], durations: [2.5, 4.3, 9, 3], totalSec: 20.3};
+  const words = Object.fromEntries(turns.filter(t => t.kind === 'speech').map(t => [t.id, (t.text ?? '').toLowerCase().replace(/[^a-z ]/g, ' ').split(/\s+/).filter(Boolean).map((w, i) => ({w, s: i * 0.3, e: i * 0.3 + 0.25}))]));
+  const imageSizes = {'historic/a.jpg': {width: 3000, height: 2000}};
+  const img = (phrase: string, turn: number) => ({type: 'image_move' as const, at: {turn, phrase}, image: 'historic/a.jpg', from: {x: 0.5, y: 0.5, zoom: 1}, to: {x: 0.5, y: 0.45, zoom: 1.2}});
+  const plan = (question?: Record<string, unknown>): ShotPlan => ({episode: 'x', shots: [
+    img('the line was drawn', 0), img('draw a line', 1),
+    ...(question ? [{type: 'question', at: {turn: 2}, question: 'Which one buys time?', ...question} as ShotPlan['shots'][number]] : []),
+    img('the line buys time', 3),
+  ]});
+
+  it('covers the pause with a card that starts when the pause starts and may run its full length', () => {
+    const r = resolveShotPlan(plan({}), turns, timing, words, {imageSizes});
+    const q = r.shots[2];
+    assert.ok(q.type === 'question');
+    assert.equal(q.startSec, 7.5);
+    assert.equal(q.pauseEndSec, 16.5);
+    assert.ok(q.endSec - q.startSec > 8, 'longer than the 8s image limit is fine for a question card');
+  });
+
+  it('requires a card on every long pause, verbatim question text, and a pause-turn anchor', () => {
+    assert.throws(() => resolveShotPlan(plan(), turns, timing, words, {imageSizes}), /9s pause has no question card/);
+    assert.throws(() => resolveShotPlan(plan({question: 'Which option is cheaper?'}), turns, timing, words, {imageSizes}), /not verbatim from the line before the pause/);
+    assert.throws(() => resolveShotPlan(plan({at: {turn: 1}}), turns, timing, words, {imageSizes}), /anchored to a pause turn/);
+  });
+});

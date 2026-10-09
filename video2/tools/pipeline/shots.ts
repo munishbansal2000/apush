@@ -28,7 +28,11 @@ export type PlanShot = (
       tilt?: number;
       transition?: 'cut' | 'crossfade'}
   | {type: 'point'; at: PhraseAnchor; backdrop: string; bullets: {at: Cue; text: string}[]; transition?: 'cut' | 'crossfade'}
+  | {type: 'question'; at: PauseAnchor; question: string; practice?: boolean; backdrop?: string; transition?: 'cut' | 'crossfade'}
 ) & {atmosphere?: string[]};
+
+/** A pause has no words to quote: question shots are anchored to the pause turn itself ({"turn": 57}). */
+export interface PauseAnchor {turn: number; phrase?: undefined}
 
 export interface ShotPlan {
   episode: string;
@@ -41,9 +45,11 @@ export interface ShotPlan {
 
 export interface ResolvedShotPlan {shots: DocShot[]; years: YearStamp[]; boxes: DocBox[]; endSec: number}
 
-export interface ShotRules {minShotSec: number; maxShotSec: number; maxMapSec: number; maxBullets: number; maxBulletWords: number; maxUpscale: number; maxImageUses: number; maxClips: number}
+export interface ShotRules {minShotSec: number; maxShotSec: number; maxMapSec: number; maxBullets: number; maxBulletWords: number; maxUpscale: number; maxImageUses: number; maxClips: number; questionPauseSec: number; questionOverrunSec: number}
 /** maxImageUses is 4 while the asset library is thin (the hand sample uses Grenville 4x); LOOK.md's target is 3. */
-export const LOOK_RULES: ShotRules = {minShotSec: 1.2, maxShotSec: 8, maxMapSec: 14, maxBullets: 3, maxBulletWords: 6, maxUpscale: 1.6, maxImageUses: 4, maxClips: 2};
+export const LOOK_RULES: ShotRules = {minShotSec: 1.2, maxShotSec: 8, maxMapSec: 14, maxBullets: 3, maxBulletWords: 6, maxUpscale: 1.6, maxImageUses: 4, maxClips: 2,
+  /** Pauses this long or longer must be covered by a question card; a card may outlast its pause by questionOverrunSec. */
+  questionPauseSec: 5, questionOverrunSec: 6};
 
 export interface ResolveOptions {
   /** Pixel sizes of public/ images (data/images.lock.json); a shot on a missing or unsized image is an error. */
@@ -102,7 +108,14 @@ export function resolveShotPlan(plan: ShotPlan, turns: PipelineTurn[], timing: A
     return size;
   };
 
-  const starts = plan.shots.map((shot, i) => (i === 0 ? 0 : phrase(`shot ${i + 1} at`, shot.at)));
+  // Question cards start when their pause starts; every other shot starts on a spoken phrase.
+  const pauseStart = (where: string, a: PauseAnchor): number => {
+    const turn = turns[a?.turn];
+    if (!turn || turn.kind !== 'pause') { issues.push(`${where}: question cards are anchored to a pause turn ({"turn": index}); turn ${a?.turn} is not a pause`); return NaN; }
+    return timing.starts[a.turn];
+  };
+  const starts = plan.shots.map((shot, i) => (shot.type === 'question' ? pauseStart(`shot ${i + 1} at`, shot.at) : i === 0 ? 0 : phrase(`shot ${i + 1} at`, shot.at as PhraseAnchor)));
+  if (starts.length) starts[0] = 0;
   const endSec = plan.end ? phrase('plan end', plan.end, 'end') : timing.totalSec;
   const shots: DocShot[] = plan.shots.map((shot, i) => {
     const id = `shot${String(i + 1).padStart(2, '0')}`;
@@ -111,7 +124,8 @@ export function resolveShotPlan(plan: ShotPlan, turns: PipelineTurn[], timing: A
     const len = end - startSec;
     if (Number.isFinite(len)) {
       if (len < rules.minShotSec) issues.push(`${id}: ${len.toFixed(2)}s is shorter than ${rules.minShotSec}s (cuts must not stutter)`);
-      const max = shot.type === 'map' ? rules.maxMapSec : rules.maxShotSec;
+      const pauseLen = shot.type === 'question' && turns[shot.at.turn]?.kind === 'pause' ? timing.durations[shot.at.turn] : 0;
+      const max = shot.type === 'map' ? rules.maxMapSec : shot.type === 'question' ? pauseLen + rules.questionOverrunSec : rules.maxShotSec;
       if (len > max) issues.push(`${id}: ${len.toFixed(1)}s holds longer than ${max}s on one ${shot.type} shot; cut on another spoken cue`);
     }
     const cue = (where: string, c: Cue) => ('offset' in c ? startSec + c.offset : phrase(`${id} ${where}`, c));
@@ -195,6 +209,19 @@ export function resolveShotPlan(plan: ShotPlan, turns: PipelineTurn[], timing: A
           approx,
         };
       }
+      case 'question': {
+        const index = shot.at.turn;
+        const prev = turns[index - 1];
+        const spoken = prev?.kind === 'speech' ? (prev.text ?? '').replace(/\[[^\]]*\]/g, '').replace(/\s+/g, ' ').trim() : '';
+        const norm = (v: string) => v.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+        if (!shot.question?.trim()) issues.push(`${id}: question card needs the question text`);
+        else if (!norm(spoken).includes(norm(shot.question))) issues.push(`${id}: question "${shot.question.slice(0, 60)}" is not verbatim from the line before the pause`);
+        if (shot.question && shot.question.split(/\s+/).length > 40) issues.push(`${id}: question card text is over 40 words; quote the question itself, not its setup`);
+        const pauseStartSec = timing.starts[index] ?? NaN;
+        const pauseEndSec = pauseStartSec + (timing.durations[index] ?? 0);
+        const size = shot.backdrop ? sized(id, shot.backdrop, [{x: 0.5, y: 0.5, zoom: 1.1}]) : undefined;
+        return {...base, type: 'question', question: shot.question, practice: shot.practice, pauseStartSec, pauseEndSec, backdrop: shot.backdrop, size};
+      }
       case 'point': {
         if (!shot.bullets.length || shot.bullets.length > rules.maxBullets) issues.push(`${id}: a point card has 1-${rules.maxBullets} bullets, got ${shot.bullets.length}`);
         for (const b of shot.bullets) {
@@ -206,10 +233,16 @@ export function resolveShotPlan(plan: ShotPlan, turns: PipelineTurn[], timing: A
       }
     }
   });
+  // Every scripted pause long enough to answer in gets a question card starting on it.
+  const carded = new Set(plan.shots.filter(sh => sh.type === 'question').map(sh => sh.at.turn));
+  turns.forEach((turn, i) => {
+    if (turn.kind !== 'pause' || timing.durations[i] < rules.questionPauseSec || timing.starts[i] >= endSec) return;
+    if (!carded.has(i)) issues.push(`turn ${i} (${turn.id}): ${timing.durations[i]}s pause has no question card ({"type":"question","at":{"turn":${i}}})`);
+  });
   // Variety: no image carries too many shots; LTX clips are for a few hero moments only.
   const uses = new Map<string, string[]>();
   for (const shot of shots) {
-    const image = 'image' in shot ? shot.image : shot.type === 'point' ? shot.backdrop : null;
+    const image = 'image' in shot ? shot.image : shot.type === 'point' ? shot.backdrop : shot.type === 'question' ? shot.backdrop ?? null : null;
     if (image) uses.set(image, [...(uses.get(image) ?? []), shot.id]);
   }
   for (const [image, ids] of uses) if (ids.length > rules.maxImageUses) issues.push(`${ids[rules.maxImageUses]}: "${image}" is used in ${ids.length} shots (${ids.join(', ')}); max ${rules.maxImageUses} per lesson`);
