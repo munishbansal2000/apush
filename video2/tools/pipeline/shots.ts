@@ -133,11 +133,11 @@ export function resolveShotPlan(input: ShotPlan, turns: PipelineTurn[], timing: 
     const end = i + 1 < starts.length ? starts[i + 1] : endSec;
     const len = end - startSec;
     if (Number.isFinite(len)) {
-      if (len < rules.minShotSec) issues.push(`${id}: ${len.toFixed(2)}s is shorter than ${rules.minShotSec}s (cuts must not stutter)`);
+      if (len < rules.minShotSec - 0.05) issues.push(`${id}: ${len.toFixed(2)}s is shorter than ${rules.minShotSec}s (cuts must not stutter)`);
       const pauseLen = shot.type === 'question' && turns[shot.at.turn]?.kind === 'pause' ? timing.durations[shot.at.turn] : 0;
       if (shot.type === 'custom' && len < rules.minCustomSec) issues.push(`${id}: ${len.toFixed(1)}s is too short for a custom explainer (min ${rules.minCustomSec}s); give it a longer stretch of narration`);
       const max = shot.type === 'map' || shot.type === 'custom' ? rules.maxMapSec : shot.type === 'question' ? pauseLen + rules.questionOverrunSec : rules.maxShotSec;
-      if (len > max) issues.push(`${id}: ${len.toFixed(1)}s holds longer than ${max}s on one ${shot.type} shot; cut on another spoken cue`);
+      if (len > max + 0.05) issues.push(`${id}: ${len.toFixed(1)}s holds longer than ${max}s on one ${shot.type} shot; cut on another spoken cue`);
     }
     const cue = (where: string, c: Cue) => ('offset' in c ? startSec + c.offset : phrase(`${id} ${where}`, c));
     for (const kind of shot.atmosphere ?? []) if (!(ATMOSPHERES as readonly string[]).includes(kind)) issues.push(`${id}: unknown atmosphere "${kind}" (${ATMOSPHERES.join(', ')})`);

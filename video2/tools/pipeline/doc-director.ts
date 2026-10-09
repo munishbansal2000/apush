@@ -17,6 +17,7 @@ import type {PipelineTurn, WordTiming} from '../pipeline-core';
 import {ATMOSPHERES} from '../../src/documentary/atmosphere';
 import {CUSTOM_CATALOG} from '../../src/components/custom/catalog';
 import {PATCH_FORMAT, applyActPatch, indexedAct, isFullAct, isPatch} from './act-patch';
+import {dropShortShots, fixActQuestions, fixPlanBudgets} from './plan-fixups';
 
 /* ------------------------------------ catalog ------------------------------------ */
 
@@ -198,12 +199,12 @@ export function actPrompt(index: number, outline: Outline, turns: PipelineTurn[]
     '- Write maps against a MAP VIEW ("view": id): the view supplies projection, extent, opening camera, terrain and base labels. Add only what the narration drives: "moves" to a view focus or a place id, fills, lines, points by id. Use the full map form only when no view fits.',
     '- Every image shot must move: change zoom by >= 0.05 or move the focus point by >= 0.05.',
     `- Zoom is between 1.0 and that image's max zoom (listed). x and y (0..1) are the point to centre, e.g. a face.`,
-    `- The same image may appear in at most ${LOOK_RULES.maxImageUses} shots in the whole lesson; prefer variety.`,
+    `- Use each image at most twice in this act (other acts draw on the same images; the lesson cap is ${LOOK_RULES.maxImageUses}). Prefer variety: spread shots across the listed assets.`,
     '- "clip" (generated motion from a still) only for one big battle, fire, sea or crowd moment, at most one per act; prompt describes ambient motion only (smoke, water, flags, trees), never camera moves, never new people.',
     ...(customs.length ? [] : ['- No custom explainer fits this act: do not use "custom" shots.']),
     `- "custom" (a hand-built animated explainer from CUSTOM EXPLAINERS) only where the narration is about exactly that event: at most one per act, ${LOOK_RULES.maxCustoms} per lesson, each ${LOOK_RULES.minCustomSec}-${LOOK_RULES.maxMapSec}s, starting on the phrase that introduces the event.`,
     `- Optional "atmosphere" on image, clip, portrait and point shots (not maps or custom): ${ATMOSPHERES.join(', ')}.`,
-    `- Every PAUSE turn of ${LOOK_RULES.questionPauseSec}s or more gets a "question" shot anchored to the pause itself ({"turn": pauseIndex}, no phrase), quoting the question VERBATIM from the line just before it (the question sentence only, not its setup). Mark questions after "N questions, AP-shaped" with "practice": true. Shorter pauses need nothing.`,
+    `- Every PAUSE turn of ${LOOK_RULES.questionPauseSec}s or more gets a "question" shot anchored to the pause itself ({"turn": pauseIndex}, no phrase); the code fills in the question text. Mark questions after "N questions, AP-shaped" with "practice": true. Never anchor any other shot or cue on a pause turn.`,
     '- Use only images from ASSETS and geography from MAP DATA. Never invent paths or ids. 19th-century imaginings (marked retrospective) must not be presented as eyewitness records.',
     `- The FIRST shot must start in turn ${act.turns.from}. Shots are in time order. ${PHRASE_RULE}`,
     `- ${COORDINATE_RULE}`,
@@ -217,7 +218,7 @@ export function actPrompt(index: number, outline: Outline, turns: PipelineTurn[]
     ' "camera":[{"at":{"offset":0},"center":{"lon":-77,"lat":39},"zoom":1.2}], "labels":[{"at":{...},"text":"Province of Quebec","lonlat":{"lon":-71,"lat":48.3},"style":"region"|"ocean"|"town"}], plus fills/lines/points as above}',
     '{"type":"point","at":{...},"backdrop":"<asset path>","bullets":[{"at":{...},"text":"Britain won the war"}],"atmosphere":["embers"]}',
     '{"type":"clip","at":{...},"image":"<asset path>","prompt":"Gunpowder smoke drifts slowly across the battlefield; the flag ripples softly.","seed":1763,"focus":{"x":0.5,"y":0.5}}',
-    '{"type":"question","at":{"turn":57},"question":"Which one buys time?","practice":false,"backdrop":"<optional asset path>"}',
+    '{"type":"question","at":{"turn":57},"practice":false,"backdrop":"<optional asset path>"}',
     '{"type":"custom","at":{...},"component":"<custom explainer name>"}',
     'Cue forms: {"turn": i, "phrase": "..."} or {"offset": seconds after the shot starts}. Colors by name: gold, amber, red, blue.',
     'Optional year stamps for the act: "years":[{"at":{...},"text":"1763"}] (only for a year the narration says).',
@@ -460,7 +461,13 @@ export function directDocumentary(io: DirectorIO, input: DirectorInputs, maxRepa
   const take = (i: number, path: string, stage: string, base?: ActOutput) => {
     sources[i] = path;
     const answer = readActAnswer(path, base);
-    if (isFullAct(answer.raw)) latest[i] = answer.raw as ActOutput;
+    if (isFullAct(answer.raw)) {
+      // Question cards are bookkeeping the code does exactly (convert, add, verbatim text) before validation.
+      const fixed = fixActQuestions(answer.raw as ActOutput, outline!.acts[i].turns, input.turns, input.timing.durations);
+      if (fixed.fixes.length) log.push({stage: `${stage} auto-fix`, source: path, issues: fixed.fixes});
+      answer.raw = fixed.act;
+      latest[i] = fixed.act;
+    }
     const checked = answer.issues.length ? {act: undefined, issues: answer.issues} : validateAct(answer.raw, i, outline!, input.turns, input.timing.durations);
     log.push({stage, source: path, issues: checked.issues});
     acts[i] = checked.act;
@@ -469,9 +476,23 @@ export function directDocumentary(io: DirectorIO, input: DirectorInputs, maxRepa
   asked.forEach(({path}, i) => take(i, path!, `act ${i + 1}`));
   for (let attempt = 0; attempt <= maxRepairs; attempt++) {
     if (!problems.size) {
-      const {plan, shotAct, yearAct} = assemblePlan(input.episode, outline, acts as ActOutput[]);
+      // Lesson-wide budgets (image uses, custom explainers, clips) and zoom limits: fixed in code, not by repair rounds.
+      const budgeted = fixPlanBudgets(acts as ActOutput[], outline, input.turns, input.catalog, assetsForAct);
+      if (budgeted.fixes.length) log.push({stage: `assembled auto-fix (attempt ${attempt + 1})`, source: 'merged plan', issues: budgeted.fixes});
+      budgeted.acts.forEach((a, i) => { acts[i] = a; latest[i] = a; });
+      let {plan, shotAct, yearAct} = assemblePlan(input.episode, outline, acts as ActOutput[]);
       try {
-        resolveShotPlan(plan, input.turns, input.timing, input.words, input.options);
+        try {
+          resolveShotPlan(plan, input.turns, input.timing, input.words, input.options);
+        } catch (first) {
+          // Cuts too short to read: drop them (the previous shot holds) and check again before asking for repairs.
+          const dropped = dropShortShots(acts as ActOutput[], first instanceof Error ? first.message : String(first));
+          if (!dropped.fixes.length) throw first;
+          log.push({stage: `assembled auto-fix (attempt ${attempt + 1})`, source: 'merged plan', issues: dropped.fixes});
+          dropped.acts.forEach((a, i) => { acts[i] = a; latest[i] = a; });
+          ({plan, shotAct, yearAct} = assemblePlan(input.episode, outline, acts as ActOutput[]));
+          resolveShotPlan(plan, input.turns, input.timing, input.words, input.options);
+        }
         log.push({stage: 'assembled', source: 'merged plan', issues: []});
         return {plan, outline, log};
       } catch (error) {
