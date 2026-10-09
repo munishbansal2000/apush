@@ -86,9 +86,9 @@ export function assetsForAct(catalog: CatalogEntry[], actText: string, limit = A
 }
 
 /** Custom explainers whose event the act's narration names (by keyword); usually none, at most a couple. */
-export function customsForAct(actText: string): [string, (typeof CUSTOM_CATALOG)[keyof typeof CUSTOM_CATALOG]][] {
+export function customsForAct(actText: string, blocked: Set<string> = new Set()): [string, (typeof CUSTOM_CATALOG)[keyof typeof CUSTOM_CATALOG]][] {
   const text = actText.toLowerCase();
-  return Object.entries(CUSTOM_CATALOG).filter(([, c]) => c.keywords.some(k => new RegExp(`\\b${k.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`).test(text)));
+  return Object.entries(CUSTOM_CATALOG).filter(([name]) => !blocked.has(name)).filter(([, c]) => c.keywords.some(k => new RegExp(`\\b${k.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`).test(text)));
 }
 
 const shortDescription = (text: string) => {
@@ -178,12 +178,12 @@ export interface ActOutput {shots: PlanShot[]; years?: NonNullable<ShotPlan['yea
 
 const fmtZoom = (z: number) => z.toFixed(2);
 
-export function actPrompt(index: number, outline: Outline, turns: PipelineTurn[], durations: number[], catalog: CatalogEntry[], maps: MapData): string {
+export function actPrompt(index: number, outline: Outline, turns: PipelineTurn[], durations: number[], catalog: CatalogEntry[], maps: MapData, blockedCustoms?: Set<string>): string {
   const act = outline.acts[index];
   const span = turns.map((t, i) => ({t, i})).filter(({i}) => i >= act.turns.from && i <= act.turns.to);
   const actText = [act.title, act.purpose, ...span.map(({t}) => cleanSpeech(t.text ?? ''))].join(' ');
   const assets = assetsForAct(catalog, actText);
-  const customs = customsForAct(actText);
+  const customs = customsForAct(actText, blockedCustoms);
   return [
     'You are the director of a top-tier APUSH documentary that must beat Heimler\'s History on YouTube. Direct the SHOTS for ONE act.',
     '',
@@ -357,6 +357,11 @@ export interface DirectorInputs {
   previousOutline?: Outline;
   /** Review and repair answer with patches (default); false asks for complete acts every time. */
   patches?: boolean;
+  /**
+   * Revise an existing plan from reviewer notes: only the acts with notes are re-asked (as repairs of their current
+   * shots, with the notes as the problems); every other act is kept exactly as it is.
+   */
+  revise?: {outline: Outline; plan: ShotPlan; notes: Map<number, string[]>};
 }
 
 export interface DirectorLog {stage: string; source: string; issues: string[]}
@@ -427,9 +432,70 @@ export function readActAnswer(path: string, base?: ActOutput): {raw?: unknown; i
 
 export interface DirectorResult {plan?: ShotPlan; outline?: Outline; log: DirectorLog[]; /** Prompt names still awaiting answers (agent mode). */ pending?: string[]}
 
+/** Splits a plan's shots and years into its acts by anchor turn. */
+export function splitPlan(plan: ShotPlan, outline: Outline): ActOutput[] {
+  const inAct = (turn: number, a: Outline['acts'][number]) => turn >= a.turns.from && turn <= a.turns.to;
+  return outline.acts.map(a => ({
+    shots: (plan.shots as ActOutput['shots']).filter(s => inAct((s as {at: {turn: number}}).at.turn, a)),
+    years: (plan.years ?? []).filter(y => inAct(y.at.turn, a)),
+  }));
+}
+
+/** Revise mode: re-ask only the noted acts (repair prompts carrying the reviewer's notes), keep the rest untouched. */
+function reviseDocumentary(io: DirectorIO, input: DirectorInputs, log: DirectorLog[], maxRepairs: number): DirectorResult {
+  const {outline, plan, notes} = input.revise!;
+  const patches = input.patches ?? true;
+  const prompts = outline.acts.map((_, i) => actPrompt(i, outline, input.turns, input.timing.durations, input.catalog, input.maps, input.options.rejectedComponents));
+  let acts = splitPlan(plan, outline);
+  let problems = new Map([...notes].map(([act, lines]) => [act - 1, lines.map(l => `REVIEWER NOTE: ${l}`)] as const));
+  for (let attempt = 0; attempt <= maxRepairs; attempt++) {
+    if (!problems.size) {
+      const budgeted = fixPlanBudgets(acts, outline, input.turns, input.catalog, assetsForAct, LOOK_RULES, new Set(Object.keys(input.options.places ?? {})));
+      if (budgeted.fixes.length) log.push({stage: `revised auto-fix (attempt ${attempt})`, source: 'merged plan', issues: budgeted.fixes});
+      acts = budgeted.acts;
+      const {plan: merged, shotAct, yearAct} = assemblePlan(input.episode, outline, acts);
+      try {
+        resolveShotPlan(merged, input.turns, input.timing, input.words, input.options);
+        log.push({stage: 'revised', source: 'merged plan', issues: []});
+        return {plan: merged, outline, log};
+      } catch (error) {
+        const grouped = issuesByAct(error instanceof Error ? error.message : String(error), shotAct, yearAct);
+        log.push({stage: `revised (attempt ${attempt})`, source: 'merged plan', issues: [...grouped.values()].flat()});
+        if (grouped.has(-1)) return {outline, log};
+        problems = new Map(grouped);
+      }
+    }
+    if (attempt === maxRepairs) return {outline, log};
+    const asked = [...problems].map(([i, lines]) => {
+      const name = `doc-act-${String(i + 1).padStart(2, '0')}-revise-${attempt + 1}`;
+      const ask = patches
+        ? `YOUR CURRENT SHOTS FOR THIS ACT NEED THESE CHANGES:\n${lines.map(l => `- ${l}`).join('\n')}\n\nCURRENT SHOTS (index: shot):\n${indexedAct(acts[i])}\n\nChange only what the notes ask. ${PATCH_FORMAT}`
+        : `YOUR CURRENT SHOTS FOR THIS ACT NEED THESE CHANGES:\n${lines.map(l => `- ${l}`).join('\n')}\n\nCURRENT SHOTS:\n${JSON.stringify(acts[i])}\n\nReturn the complete corrected JSON object {"shots": [...], "years": [...]} only.`;
+      return {i, name, path: io.meta(name, `${prompts[i]}\n\n${ask}`)};
+    });
+    const waiting = asked.filter(a => !a.path).map(a => a.name);
+    if (waiting.length) return {outline, log, pending: waiting};
+    problems = new Map();
+    for (const {i, path} of asked) {
+      const answer = readActAnswer(path!, acts[i]);
+      let raw = answer.raw;
+      if (isFullAct(raw)) {
+        const fixed = fixActQuestions(raw as ActOutput, outline.acts[i].turns, input.turns, input.timing.durations);
+        if (fixed.fixes.length) log.push({stage: `act ${i + 1} revise auto-fix`, source: path!, issues: fixed.fixes});
+        raw = fixed.act;
+      }
+      const checked = answer.issues.length ? {act: undefined, issues: answer.issues} : validateAct(raw, i, outline, input.turns, input.timing.durations);
+      log.push({stage: `act ${i + 1} revise ${attempt + 1}`, source: path!, issues: checked.issues});
+      if (checked.act) acts[i] = checked.act; else problems.set(i, checked.issues);
+    }
+  }
+  return {outline, log};
+}
+
 export function directDocumentary(io: DirectorIO, input: DirectorInputs, maxRepairs = 2): DirectorResult {
   const log: DirectorLog[] = [];
   const allowEstimated = !!input.options.allowEstimated;
+  if (input.revise) return reviseDocumentary(io, input, log, maxRepairs);
   // 1. Outline, with repairs.
   const basePrompt = outlinePrompt(input.episode, input.turns, input.timing.durations, input.previousOutline);
   let outline: Outline | undefined;
@@ -448,7 +514,7 @@ export function directDocumentary(io: DirectorIO, input: DirectorInputs, maxRepa
 
   // 2. Acts (each validated structurally), then 3. assemble + resolve, 4. repair only failing acts.
   const patches = input.patches ?? true;
-  const prompts = outline.acts.map((_, i) => actPrompt(i, outline!, input.turns, input.timing.durations, input.catalog, input.maps));
+  const prompts = outline.acts.map((_, i) => actPrompt(i, outline!, input.turns, input.timing.durations, input.catalog, input.maps, input.options.rejectedComponents));
   const acts: (ActOutput | undefined)[] = [];
   /** Latest full answer per act, valid or not: what a repair patch applies to. */
   const latest: (ActOutput | undefined)[] = [];

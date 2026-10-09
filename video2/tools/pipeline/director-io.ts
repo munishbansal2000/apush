@@ -15,7 +15,9 @@ export function directorCatalog(inputs: DocInputs): CatalogEntry[] {
   const library = existsSync(indexPath)
     ? readJson<{entries: {kind: string; path: string; description: string; width?: number; height?: number; focus: string[]; retrospective?: boolean; date?: string}[]}>(indexPath).entries.filter(e => e.kind !== 'geo')
     : [];
-  return buildCatalog(lessonImages, Object.fromEntries(Object.entries(registry).map(([k, v]) => [k, v.description ?? ''])), library);
+  // Images turned down in review are never offered.
+  const rejected = inputs.options.rejectedImages ?? new Set<string>();
+  return buildCatalog(lessonImages, Object.fromEntries(Object.entries(registry).map(([k, v]) => [k, v.description ?? ''])), library).filter(c => !rejected.has(c.path));
 }
 
 /** Library geography (approved only, unless drafting), places and map views the director may reference. */

@@ -76,6 +76,9 @@ export interface ResolveOptions {
   places?: Record<string, {name: string; location?: LonLat}>;
   /** Samples only: allow geography that is not yet approved. */
   allowUnapproved?: boolean;
+  /** Images and custom explainers turned down in review (data/library/review). */
+  rejectedImages?: Set<string>;
+  rejectedComponents?: Set<string>;
   /** sha256 of public/ images (data/images.lock.json) and of tools/animate_still.py, for clip fingerprints. */
   imageShas?: Record<string, string>;
   generatorSha?: string;
@@ -240,6 +243,7 @@ export function resolveShotPlan(input: ShotPlan, turns: PipelineTurn[], timing: 
       }
       case 'custom': {
         if (!(CUSTOM_NAMES as string[]).includes(shot.component)) issues.push(`${id}: unknown custom component "${shot.component}" (${CUSTOM_NAMES.join(', ')})`);
+        else if (opts.rejectedComponents?.has(shot.component)) issues.push(`${id}: custom explainer "${shot.component}" was turned down in review; use a standard shot`);
         return {...base, type: 'custom', component: shot.component};
       }
       case 'point': {
@@ -264,6 +268,7 @@ export function resolveShotPlan(input: ShotPlan, turns: PipelineTurn[], timing: 
   for (const shot of shots) {
     const image = 'image' in shot ? shot.image : shot.type === 'point' ? shot.backdrop : shot.type === 'question' ? shot.backdrop ?? null : null;
     if (image) uses.set(image, [...(uses.get(image) ?? []), shot.id]);
+    if (image && opts.rejectedImages?.has(image)) issues.push(`${shot.id}: "${image}" was turned down in review; use a different asset`);
   }
   // Report every occurrence beyond the budget, not only the first one. The
   // documentary director repairs acts independently; one aggregate issue

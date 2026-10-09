@@ -1,6 +1,7 @@
 /** Stage orchestration for the resumable episode pipeline. */
 import {existsSync} from 'node:fs';
-import {join} from 'node:path';
+import {dirname, join} from 'node:path';
+import {loadLessonReview} from './review';
 import {ROOT} from '../lib';
 import {atomicJson, checkFacts, sha256, type PipelineStage} from '../pipeline-core';
 import {treeHash, type PipelineContext} from './context';
@@ -69,7 +70,9 @@ export async function runPipeline(ctx: PipelineContext): Promise<void> {
     if (ctx.current('contact', visualHash) && existsSync(join(ctx.outDir, `${episode}-contact.png`))) console.log('[contact] checkpoint current');
     else { await docContactStage(renderCtx, inputs, resolved); ctx.mark('contact', visualHash); }
   }
-  if (stages.includes('render')) {
+  if (stages.includes('render') && loadLessonReview(episode, dirname(ctx.dataDir)).render?.approved && existsSync(join(ctx.outDir, `${episode}.mp4`))) {
+    console.log('[render] approved in review (frozen)');
+  } else if (stages.includes('render')) {
     const renderHash = sha256(`${visualHash}:${audioHash}`);
     if (ctx.current('render', renderHash) && existsSync(join(ctx.outDir, `${episode}.mp4`))) console.log('[render] checkpoint current');
     else { await docRenderStage(renderCtx, inputs, resolved); ctx.mark('render', renderHash); }

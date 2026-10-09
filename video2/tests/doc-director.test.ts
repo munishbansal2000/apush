@@ -228,3 +228,38 @@ describe('review and repair patches (only changed shots come back)', () => {
     assert.doesNotMatch(prompts['doc-act-02-repair-1'], /"replace"/);
   });
 });
+
+describe('review: frozen acts and note-driven revision', () => {
+  it('revise mode re-asks only the noted act, as a patch with the reviewer note, and keeps the other acts', async () => {
+    const plan = {episode: 'u3e1', boxes: outline.boxes, shots: [...act1.shots, ...act2.shots], years: act1.years ?? []} as ShotPlan;
+    const target = act2.shots[1];
+    const prompts: Record<string, string> = {};
+    const dir = mkdtempSync(join(tmpdir(), 'v2-revise-'));
+    const io = {meta: (name: string, prompt: string) => {
+      prompts[name] = prompt;
+      if (name !== 'doc-act-02-revise-1') throw new Error(`unexpected LLM call ${name}`);
+      writeFileSync(join(dir, `${name}.json`), JSON.stringify({ok: true}));
+      return join(dir, `${name}.json`);
+    }};
+    const r = directDocumentary(io, {episode: 'u3e1', turns, timing, words: {}, options, catalog, maps,
+      revise: {outline, plan, notes: new Map([[2, ['shot index 1: wrong image, use the Grenville portrait']]])}});
+    assert.ok(r.plan, JSON.stringify(r.log, null, 1));
+    assert.deepEqual(Object.keys(prompts), ['doc-act-02-revise-1'], 'act 1 is never re-asked');
+    assert.match(prompts['doc-act-02-revise-1'], /REVIEWER NOTE: shot index 1: wrong image/);
+    assert.match(prompts['doc-act-02-revise-1'], /1: \{"type"/);
+    assert.deepEqual(r.plan!.shots.slice(0, act1.shots.length), act1.shots, 'act 1 kept exactly');
+    assert.ok(r.plan!.shots.some(s => JSON.stringify(s) === JSON.stringify(target)), "the noted act keeps its shots ({ok: true})");
+  });
+
+  it('locates contact-sheet shots in acts and knows when a plan is fully approved', async () => {
+    const {locateShot, planApproved, openNotes} = await import('../tools/pipeline/review');
+    const shots = [{at: {turn: 0}}, {at: {turn: 0}}, {at: {turn: 2}}, {at: {turn: 3}}];
+    const acts = [{turns: {from: 0, to: 1}}, {turns: {from: 2, to: 5}}];
+    assert.deepEqual(locateShot(shots, acts, 3), {act: 1, local: 1});
+    assert.deepEqual(locateShot(shots, acts, 1), {act: 0, local: 1});
+    const review = {plan: {acts: {'1': {status: 'approved' as const, at: 'x'}}, notes: {'2': [{text: 'a', at: 'x'}, {text: 'b', at: 'x', done: 'y'}]}}};
+    assert.equal(planApproved(review, 2), false);
+    assert.equal(planApproved({plan: {acts: {'1': {status: 'approved', at: 'x'}, '2': {status: 'approved', at: 'x'}}}}, 2), true);
+    assert.deepEqual([...openNotes(review)].map(([a, n]) => [a, n.map(x => x.text)]), [[2, ['a']]]);
+  });
+});

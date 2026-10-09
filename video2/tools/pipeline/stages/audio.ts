@@ -6,6 +6,8 @@ import type {PipelineContext} from '../context';
 import {applyPronunciations, cleanSpeech, type Pronunciation} from '../speech';
 import {findTool} from '../tools';
 import {isDirected, tagIssues} from '../fish-tags';
+import {loadLessonReview} from '../review';
+import {dirname} from 'node:path';
 import {lessonKeyEnv, loadFishKeys} from '../fish-keys';
 
 /** Hash of every input that determines the rendered narration. */
@@ -20,6 +22,11 @@ export function audioStage(ctx: PipelineContext, turns: PipelineTurn[], pronunci
   const {cfg, mode, force, audioDir, ttsDir} = ctx;
   const audioHash = audioInputHash(ctx, turns, pronunciations);
   if (!ctx.stages.includes('audio')) return;
+  // Approved audio is frozen: reused as is, even if the voices, model or pronunciations changed since.
+  if (loadLessonReview(ctx.episode, dirname(ctx.dataDir)).audio?.approved && turns.filter(t => t.kind === 'speech').every(t => existsSync(join(audioDir, `${t.id}.mp3`)))) {
+    console.log('[audio] approved in review (frozen)');
+    return;
+  }
   if (ctx.current('audio', audioHash) && turns.filter(t => t.kind === 'speech').every(t => existsSync(join(audioDir, `${t.id}.mp3`)))) console.log('[audio] checkpoint current');
   else if (ctx.dryRun) console.log(`[audio] dry-run: ${mode === 'prod' ? 'Fish with the script\'s own direction tags' : 'Edge TTS'}`);
   else {

@@ -5,7 +5,7 @@
  */
 import {execFileSync, spawnSync} from 'node:child_process';
 import {existsSync, mkdirSync, readdirSync, readFileSync, renameSync, rmSync, unlinkSync, writeFileSync} from 'node:fs';
-import {join, relative} from 'node:path';
+import {dirname, join, relative} from 'node:path';
 import {ROOT, ffprobeDuration} from '../../lib';
 import {atomicJson, readJson, sha256} from '../../pipeline-core';
 import type {DocShot} from '../../../src/documentary/types';
@@ -14,10 +14,11 @@ import {assembleEpisode} from '../assemble';
 import {CLIP_SIZE, DESKTOP_SETTINGS, PAINTING_NEGATIVE, aspectCrop, ltxBackend} from '../clip-fingerprint';
 import {treeHash, type PipelineContext} from '../context';
 import {directDocumentary, type Outline} from '../doc-director';
+import {loadLessonReview, now, openNotes, planActs, planApproved, saveLessonReview} from '../review';
 import {DESKTOP_CLIENT, GENERATOR, clipsDirFor, loadDocInputs, resolveDocPlan, type ClipManifest, type DocInputs} from '../doc-inputs';
 import {PendingAnswers, agentIO, directorCatalog, directorMaps, pendingPromptFile} from '../director-io';
 import {blockingLayoutIssues, formatLayoutIssues, guardHeartbeat, layoutIssuesFromLog, type LayoutIssue} from '../guard-logs';
-import type {ResolvedShotPlan} from '../shots';
+import type {ResolvedShotPlan, ShotPlan} from '../shots';
 import {findTool} from '../tools';
 import {readCheckedWords} from './words';
 
@@ -39,27 +40,68 @@ export function docDirectStage(ctx: PipelineContext, opts: {allowEstimated?: boo
   const directorSource = sha(join(ROOT, 'tools', 'pipeline', 'doc-director.ts'));
   const patches = ctx.patches ?? true;
   const hash = sha256(JSON.stringify({turns: inputs.turns, timing: inputs.timing, words: inputs.words, catalog, maps, directorSource, draft: ctx.draft, patches}));
-  if (ctx.current('direct', hash) && existsSync(out)) { console.log('[direct] checkpoint current'); return; }
-  // --keep-plan: a lesson that already has a plan keeps it even when its inputs changed (e.g. new images were added).
-  if (process.argv.includes('--keep-plan') && existsSync(out)) { console.log('[direct] --keep-plan: using the existing plan'); return; }
   const outlinePath = join(ctx.work, 'doc-outline.accepted.json');
   const agentDir = join(ctx.work, 'agent');
   const io = ctx.agent ? agentIO(agentDir) : {meta: ctx.meta};
+  const finish = (result: ReturnType<typeof directDocumentary>, what: string) => {
+    atomicJson(join(ctx.work, 'doc-director.json'), {episode: ctx.episode, at: new Date().toISOString(), pending: result.pending ?? [], log: result.log});
+    for (const entry of result.log) if (entry.issues.length) console.log(`  [${entry.stage}] ${entry.issues.length} problem(s):\n${entry.issues.slice(0, 8).map(i => `    - ${i}`).join('\n')}`);
+    if (result.pending?.length) throw new PendingAnswers(result.pending.map(name => relative(ROOT, pendingPromptFile(agentDir, name) ?? name)), 'the same command');
+    if (!result.plan) throw new Error(`director found no valid plan ${what}; see ${relative(ROOT, join(ctx.work, 'doc-director.json'))}`);
+  };
+
+  // Review state comes first: an approved plan is frozen, notes revise only their acts, and a partly reviewed plan is
+  // never re-directed from scratch (data/<lesson>/review.json, tools/review.ts).
+  const review = loadLessonReview(ctx.episode, dirname(ctx.dataDir));
+  if (existsSync(out)) {
+    const existing = readJson<ShotPlan & {acts?: {title: string; purpose?: string; turns: {from: number; to: number}}[]}>(out);
+    const acts = planActs(existing, outlinePath);
+    const notes = openNotes(review);
+    if (notes.size) {
+      if (!acts.length) throw new Error(`${relative(ROOT, out)} has no act boundaries (and no saved outline); cannot revise by act`);
+      const saved = existsSync(outlinePath) ? readJson<{outline?: Outline}>(outlinePath).outline : undefined;
+      const outline: Outline = {title: saved?.title ?? ctx.episode, thesis: saved?.thesis ?? '', boxes: existing.boxes ?? [],
+        acts: acts.map((a, i) => ({title: a.title, purpose: (a as {purpose?: string}).purpose ?? saved?.acts[i]?.purpose ?? '', turns: a.turns}))};
+      console.log(`[direct] revising ${notes.size} act(s) from review notes: ${[...notes.keys()].join(', ')}; ${outline.acts.length - notes.size} kept as they are`);
+      const result = directDocumentary(io, {
+        episode: ctx.episode, turns: inputs.turns, timing: inputs.timing, words: inputs.words, options: inputs.options, catalog, maps, patches,
+        revise: {outline, plan: existing, notes: new Map([...notes].map(([act, list]) => [act, list.map(n => (n.shot ? `${n.shot}: ${n.text}` : n.text))]))},
+      });
+      finish(result, 'after revising');
+      writePlan(out, result.plan!, outline);
+      // Notes are done; revised acts go back to "awaiting review".
+      const stamp = now();
+      for (const act of notes.keys()) {
+        for (const n of review.plan?.notes?.[String(act)] ?? []) n.done ??= stamp;
+        if (review.plan?.acts) delete review.plan.acts[String(act)];
+      }
+      saveLessonReview(ctx.episode, review, dirname(ctx.dataDir));
+      ctx.mark('direct', hash);
+      console.log(`[direct] revised plan -> ${relative(ROOT, out)}`);
+      return;
+    }
+    if (planApproved(review, acts.length)) { console.log('[direct] plan approved in review (frozen)'); return; }
+    if (Object.keys(review.plan?.acts ?? {}).length) { console.log('[direct] plan partly approved: kept as is (add review notes to change acts)'); return; }
+  }
+  if (ctx.current('direct', hash) && existsSync(out)) { console.log('[direct] checkpoint current'); return; }
+  // --keep-plan: a lesson that already has a plan keeps it even when its inputs changed (e.g. new images were added).
+  if (process.argv.includes('--keep-plan') && existsSync(out)) { console.log('[direct] --keep-plan: using the existing plan'); return; }
   console.log(`[direct] ${inputs.turns.length} turns, ${catalog.length} usable images, ${maps.geo.length} geo features${ctx.agent ? ' (agent mode)' : ''}`);
   const result = directDocumentary(io, {
     episode: ctx.episode, turns: inputs.turns, timing: inputs.timing, words: inputs.words, options: inputs.options, catalog, maps,
     previousOutline: priorOutlineFor(outlinePath, inputs.turns), patches,
   });
-  atomicJson(join(ctx.work, 'doc-director.json'), {episode: ctx.episode, at: new Date().toISOString(), pending: result.pending ?? [], log: result.log});
-  for (const entry of result.log) if (entry.issues.length) console.log(`  [${entry.stage}] ${entry.issues.length} problem(s):\n${entry.issues.slice(0, 8).map(i => `    - ${i}`).join('\n')}`);
-  if (result.pending?.length) {
-    throw new PendingAnswers(result.pending.map(name => relative(ROOT, pendingPromptFile(agentDir, name) ?? name)), 'the same command');
-  }
+  finish(result, 'after repairs');
   if (result.outline) atomicJson(outlinePath, {turnsHash: turnsHash(inputs.turns), outline: result.outline});
-  if (!result.plan) throw new Error(`director found no valid plan after repairs; see ${relative(ROOT, join(ctx.work, 'doc-director.json'))}`);
-  atomicJson(out, {_doc: `Generated by the documentary director ${new Date().toISOString()}`, ...result.plan});
+  writePlan(out, result.plan!, result.outline!);
   ctx.mark('direct', hash);
-  console.log(`[direct] ${result.plan.shots.length} shots -> ${relative(ROOT, out)}`);
+  console.log(`[direct] ${result.plan!.shots.length} shots -> ${relative(ROOT, out)}`);
+}
+
+/** shots.json with the act boundaries, so review notes and revisions can address acts. */
+function writePlan(out: string, plan: ShotPlan, outline: Outline) {
+  atomicJson(out, {_doc: `Generated by the documentary director ${new Date().toISOString()}`, ...plan,
+    acts: outline.acts.map(a => ({title: a.title, purpose: a.purpose, turns: a.turns}))});
 }
 
 const turnsHash = (turns: {id: string; text?: string; kind: string}[]) => sha256(JSON.stringify(turns.map(t => [t.id, t.kind, t.text ?? ''])));

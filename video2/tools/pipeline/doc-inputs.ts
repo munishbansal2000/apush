@@ -6,6 +6,7 @@ import {normalizeTurns, readJson, sha256, type PipelineTurn, type WordTiming} fr
 import {DESKTOP_SETTINGS, PAINTING_NEGATIVE, ltxBackend} from './clip-fingerprint';
 import {resolveShotPlan, type GeoFeature, type ResolveOptions, type ResolvedShotPlan, type ShotPlan} from './shots';
 import {loadMapViews} from './map-views';
+import {loadComponentReview, loadImageReview, rejectedKeys} from './review';
 
 export const GENERATOR = join(ROOT, 'tools', 'animate_still.py');
 export const DESKTOP_CLIENT = join(ROOT, 'tools', 'ltx_desktop.py');
@@ -66,6 +67,7 @@ export function loadDocInputs(episode: string, planPath: string | null, draft: b
     plan: planPath ? readJson<ShotPlan>(resolve(planPath)) : undefined,
     options: {
       imageSizes, imageShas, depthMaps, geo, places, mapViews, clips,
+      rejectedImages: rejectedKeys(loadImageReview()), rejectedComponents: rejectedKeys(loadComponentReview(), ['rejected', 'needs-work']),
       generatorSha: generatorKey(),
       allowEstimated: !existsSync(wordsPath), allowUnapproved: draft,
     },

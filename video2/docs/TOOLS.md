@@ -165,6 +165,22 @@ Typecheck + ESLint (episode-file rules) + unit tests + validate. Use in CI.
 
 ## Review
 
+### `npm run review -- …` — approvals and notes (documentary pipeline)
+Mark work approved (frozen: the pipeline reuses it even when code changes) or note what needs fixing (the next run
+fixes only that). State is committed: `data/<lesson>/review.json`, `data/library/review/{images,components}.json`.
+
+| Command | Effect on the next run |
+|---|---|
+| `status --unit 3` | board for the unit → `docs/UNIT3_STATUS.md` (script, audio, images, plan acts, clips, explainers, render, open notes) |
+| `u3e1 status` | acts with their shot ranges (ids as on the contact sheet), approvals, notes, clips |
+| `u3e1 approve audio` | audio frozen (not re-voiced when voices, model or pronunciations change) |
+| `u3e1 approve plan [--acts 1,2,4-8]` | those acts frozen; all acts approved = plan frozen; a partly approved plan is never re-directed from scratch |
+| `u3e1 note --shot shot045 "…"` / `--act 3 "…"` | only that act is re-asked (patch, with the note); every other act kept; the act returns to "awaiting review" |
+| `u3e1 clip shot015 approve` / `reject --regenerate` / `reject --still` | a rejected clip gets a new seed (new generation) or becomes a camera move on its still |
+| `u3e1 approve render` | final video frozen |
+| `images u3e1` then `image u3e1:12 reject "…"` | image sheet with numbered index; a rejected image is never offered again, and a frozen plan using it is flagged |
+| `component PontiacFortsMap approve` / `reject` / `needs-work` | anything but approved keeps the explainer out of new plans |
+
 ### `npm run contact-sheet [-- --every N]` — logged
 Render stills at every turn start, every beat (+0.5 s), the middle of every pause and the final
 second; tile them into one image.

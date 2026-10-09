@@ -46,7 +46,8 @@
     "contact-sheet:components": "node tools/log-command.cjs contact-sheet-components tsx tools/contact-sheet-components.ts",
     "render:components": "node tools/log-command.cjs render-components tsx tools/render-components.ts",
     "setup:pipeline:unix": "bash tools/setup-pipeline.sh",
-    "overnight": "tsx tools/overnight-unit.ts"
+    "overnight": "tsx tools/overnight-unit.ts",
+    "review": "tsx tools/review.ts"
   },
   "dependencies": {
     "@remotion/bundler": "^4.0.534",
