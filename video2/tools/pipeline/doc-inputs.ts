@@ -30,20 +30,23 @@ export interface DocInputs {
   plan?: ShotPlan;
 }
 
-export function loadDocInputs(episode: string, planPath: string | null, draft: boolean): DocInputs {
-  const dataDir = join(ROOT, 'data', episode);
+/** dirs: the pipeline context's data/public folders (tests use temp dirs); defaults to the repository's. */
+export function loadDocInputs(episode: string, planPath: string | null, draft: boolean, dirs: {dataDir?: string; publicDir?: string} = {}): DocInputs {
+  const dataDir = dirs.dataDir ?? join(ROOT, 'data', episode);
+  const publicDir = dirs.publicDir ?? join(ROOT, 'public');
   const turns = normalizeTurns(readJson(join(dataDir, 'turns.json')));
   const timing = readJson<DocInputs['timing']>(join(dataDir, 'timing_map.json'));
   const wordsPath = join(dataDir, 'word_times.json');
   const words = existsSync(wordsPath) ? readJson<Record<string, WordTiming[]>>(wordsPath) : {};
-  const lock = readJson<Record<string, {width?: number; height?: number; sha256?: string}>>(join(ROOT, 'data', 'images.lock.json'));
-  const present = Object.entries(lock).filter(([path]) => existsSync(join(ROOT, 'public', path)));
+  const lockPath = join(ROOT, 'data', 'images.lock.json');
+  const lock = existsSync(lockPath) ? readJson<Record<string, {width?: number; height?: number; sha256?: string}>>(lockPath) : {};
+  const present = Object.entries(lock).filter(([path]) => existsSync(join(publicDir, path)));
   const imageSizes = Object.fromEntries(present.filter(([, v]) => v.width && v.height).map(([path, v]) => [path, {width: v.width!, height: v.height!}]));
   const imageShas = Object.fromEntries(present.filter(([, v]) => v.sha256).map(([path, v]) => [path, v.sha256!]));
   // Depth maps from tools/depth-maps.py: public/depth/<image path>.png
   const depthMaps = Object.fromEntries(present
     .map(([path]) => [path, `depth/${path.replace(/\.[^.]+$/, '')}.png`] as const)
-    .filter(([, depth]) => existsSync(join(ROOT, 'public', depth))));
+    .filter(([, depth]) => existsSync(join(publicDir, depth))));
   const libDir = join(ROOT, 'data', 'library');
   const geo = Object.fromEntries(readdirSync(join(libDir, 'geo')).filter(name => name.endsWith('.geojson')).flatMap(name => {
     const data = readJson<{type: string; geometry?: GeoFeature['geometry']; properties?: GeoFeature['properties']; features?: GeoFeature[]}>(join(libDir, 'geo', name));
@@ -54,7 +57,7 @@ export function loadDocInputs(episode: string, planPath: string | null, draft: b
   const manifestPath = join(clipsDirFor(episode), 'clips.json');
   const manifest = existsSync(manifestPath) ? readJson<ClipManifest>(manifestPath) : {};
   const clips = Object.fromEntries(Object.entries(manifest)
-    .filter(([, c]) => existsSync(join(ROOT, 'public', c.path)))
+    .filter(([, c]) => existsSync(join(publicDir, c.path)))
     .map(([fp, c]) => [fp, {path: c.path, durationSec: c.durationSec}]));
   return {
     episode, turns, timing, words, estimated: !existsSync(wordsPath),

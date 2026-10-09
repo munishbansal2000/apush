@@ -19,6 +19,7 @@ import {PendingAnswers, agentIO, directorCatalog, directorMaps, pendingPromptFil
 import {blockingLayoutIssues, formatLayoutIssues, guardHeartbeat, layoutIssuesFromLog, type LayoutIssue} from '../guard-logs';
 import type {ResolvedShotPlan} from '../shots';
 import {findTool} from '../tools';
+import {readCheckedWords} from './words';
 
 export const shotsPathFor = (episode: string) => join(ROOT, 'data', episode, 'shots.json');
 const sha = (path: string) => (existsSync(path) ? sha256(readFileSync(path)) : 'missing');
@@ -26,10 +27,11 @@ const sha = (path: string) => (existsSync(path) ? sha256(readFileSync(path)) : '
 /* --------------------------------------- direct --------------------------------------- */
 
 /** Script -> data/<ep>/shots.json via the documentary director (Meta UI, or prompt files with --agent). */
-export function docDirectStage(ctx: Pick<PipelineContext, 'episode' | 'agent' | 'draft' | 'force' | 'work' | 'meta' | 'current' | 'mark' | 'dryRun'>, opts: {allowEstimated?: boolean} = {}): void {
-  const inputs = loadDocInputs(ctx.episode, null, ctx.draft);
+export function docDirectStage(ctx: PipelineContext, opts: {allowEstimated?: boolean} = {}): void {
+  const inputs = loadDocInputs(ctx.episode, null, ctx.draft, {dataDir: ctx.dataDir, publicDir: ctx.publicDir});
   if (ctx.dryRun) { console.log(`[direct] dry-run: documentary director over ${inputs.turns.length} turns${ctx.agent ? ' (agent mode)' : ''}`); return; }
-  if (!opts.allowEstimated && inputs.estimated) throw new Error(`direct needs Vosk word timing (data/${ctx.episode}/word_times.json); run the words stage first`);
+  // Hard gate for the pipeline: direction never runs on missing or invalid Vosk word timing (samples may estimate).
+  if (!opts.allowEstimated) readCheckedWords(ctx, inputs.turns, {...inputs.timing, fps: 30, ttsHash: {}});
   inputs.options.allowEstimated = !!opts.allowEstimated && inputs.estimated;
   const catalog = directorCatalog(inputs);
   const maps = directorMaps(inputs, ctx.draft);
