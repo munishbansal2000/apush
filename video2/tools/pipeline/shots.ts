@@ -18,7 +18,9 @@ import {expandMapViews, type MapViewDef, type ViewMapShot} from './map-views';
 export type Cue = PhraseAnchor | {offset: number};
 
 export type PlanShot = (
-  | {type: 'image_move' | 'portrait'; at: PhraseAnchor; image: string; from: Framing; to: Framing; name?: string; role?: string; transition?: 'cut' | 'crossfade'}
+  | {type: 'image_move' | 'portrait'; at: PhraseAnchor; image: string; from: Framing; to: Framing; name?: string; role?: string; transition?: 'cut' | 'crossfade';
+      /** The same image continuing in another framing (a split long hold): not a new use of the image. */
+      continues?: boolean}
   | {type: 'clip'; at: PhraseAnchor; image: string; prompt: string; seed?: number; focus?: [number, number]; from?: Framing; to?: Framing; transition?: 'cut' | 'crossfade'}
   | {type: 'map'; at: PhraseAnchor; projection: 'us' | 'world'; extent: [LonLat, LonLat]; camera: {at: Cue; center: LonLat; zoom: number; ease?: number}[];
       fills?: {at: Cue; region: RegionRef | {geo: string}; color: string}[];
@@ -31,7 +33,7 @@ export type PlanShot = (
       transition?: 'cut' | 'crossfade'}
   | {type: 'point'; at: PhraseAnchor; backdrop: string; bullets: {at: Cue; text: string}[]; transition?: 'cut' | 'crossfade'}
   | {type: 'question'; at: PauseAnchor; question: string; practice?: boolean; backdrop?: string; transition?: 'cut' | 'crossfade'}
-  | {type: 'custom'; at: PhraseAnchor; component: string; transition?: 'cut' | 'crossfade'}
+  | {type: 'custom'; at: PhraseAnchor; component: string; beats?: PhraseAnchor[]; transition?: 'cut' | 'crossfade'}
 ) & {atmosphere?: string[]};
 
 /** A pause has no words to quote: question shots are anchored to the pause turn itself ({"turn": 57}). */
@@ -244,7 +246,9 @@ export function resolveShotPlan(input: ShotPlan, turns: PipelineTurn[], timing: 
       case 'custom': {
         if (!(CUSTOM_NAMES as string[]).includes(shot.component)) issues.push(`${id}: unknown custom component "${shot.component}" (${CUSTOM_NAMES.join(', ')})`);
         else if (opts.rejectedComponents?.has(shot.component)) issues.push(`${id}: custom explainer "${shot.component}" was turned down in review; use a standard shot`);
-        return {...base, type: 'custom', component: shot.component};
+        // Beats: the explainer's phases start on these spoken phrases (docs/STORYBOARD.md, decision 8).
+        const beatsSec = (shot.beats ?? []).map((b, n) => phrase(`${id} beat ${n + 1}`, b));
+        return {...base, type: 'custom', component: shot.component, ...(beatsSec.length ? {beatsSec} : {})};
       }
       case 'point': {
         if (!shot.bullets.length || shot.bullets.length > rules.maxBullets) issues.push(`${id}: a point card has 1-${rules.maxBullets} bullets, got ${shot.bullets.length}`);
@@ -267,7 +271,8 @@ export function resolveShotPlan(input: ShotPlan, turns: PipelineTurn[], timing: 
   const uses = new Map<string, string[]>();
   for (const shot of shots) {
     const image = 'image' in shot ? shot.image : shot.type === 'point' ? shot.backdrop : shot.type === 'question' ? shot.backdrop ?? null : null;
-    if (image) uses.set(image, [...(uses.get(image) ?? []), shot.id]);
+    const continues = (plan.shots[shots.indexOf(shot)] as {continues?: boolean} | undefined)?.continues;
+    if (image && !continues) uses.set(image, [...(uses.get(image) ?? []), shot.id]);
     if (image && opts.rejectedImages?.has(image)) issues.push(`${shot.id}: "${image}" was turned down in review; use a different asset`);
   }
   // Report every occurrence beyond the budget, not only the first one. The

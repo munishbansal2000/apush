@@ -1,0 +1,220 @@
+/**
+ * Scene builder (docs/STORYBOARD.md, S4): storyboard + treatments + word timing -> the timed shot plan. Bookkeeping
+ * only; the creative decisions (what, on which phrase, priority, pace) are the storyboard's. Rules:
+ *  - each visual starts on its phrase (a repeated phrase is extended until it is unique, so the resolver lands on it)
+ *  - framings come from the treatment named by the storyboard and are COPIED into the plan (frozen lessons never change)
+ *  - question cards for every 5s+ pause, verbatim text (plan-fixups)
+ *  - cuts too close: the optional visual goes first; holds too long: the same image continues in another framing on a
+ *    phrase near the middle (one image use); anything still too long is reported back to the storyboard
+ *  - variety: three same moves in a row -> the middle one takes its alternative framing, unless the storyboard said
+ *    "hold"; storyboard intent always wins, the rule only warns then
+ *  - custom explainers get beats timed from their cue phrases
+ */
+import {findPhrase} from '../../src/kit/anchors';
+import {tokens} from '../../src/kit/text';
+import type {PipelineTurn, WordTiming} from '../pipeline-core';
+import {resolvePhrase, type AnchorTiming} from './anchors';
+import type {CatalogEntry} from './doc-director';
+import {fixActQuestions} from './plan-fixups';
+import {LOOK_RULES, type PlanShot, type ShotPlan} from './shots';
+import {cleanSpeech} from './speech';
+import {turnKeys, type Storyboard, type StoryVisual} from './storyboard';
+import {alternateFraming, moveOf, pickFraming, proposeTreatment, type MoveKind, type Treatment} from './treatments';
+
+export interface BuildInputs {
+  storyboard: Storyboard;
+  turns: PipelineTurn[];
+  timing: AnchorTiming & {totalSec: number};
+  words: Record<string, WordTiming[]>;
+  catalog: CatalogEntry[];
+  treatments: Record<string, Treatment>;
+  depthMaps?: Record<string, string>;
+  allowEstimated?: boolean;
+}
+
+export interface BuildResult {plan: ShotPlan & {acts: Storyboard['acts']}; warnings: string[]; fixes: string[]; storyboardIssues: string[]}
+
+/** A phrase the resolver will find at this occurrence: extended word by word (forward, then back) until unique. */
+export function uniquePhrase(text: string, phrase: string, occurrence = 1): string | null {
+  const hay = tokens(cleanSpeech(text));
+  const needle = tokens(phrase);
+  const pos = findPhrase(hay, needle, occurrence);
+  if (pos < 0) return null;
+  if (findPhrase(hay, needle, 1) === pos) return needle.join(' ');
+  for (let len = needle.length + 1; pos + len <= hay.length && len <= 10; len++) {
+    const ext = hay.slice(pos, pos + len);
+    if (findPhrase(hay, ext, 1) === pos) return ext.join(' ');
+  }
+  for (let start = pos - 1; start >= 0 && pos + needle.length - start <= 10; start--) {
+    const ext = hay.slice(start, pos + needle.length);
+    if (findPhrase(hay, ext, 1) === start) return ext.join(' ');
+  }
+  return null;
+}
+
+/** A unique 3-5 word phrase near a word index (searching forward, then back), after word `after`, for splitting a hold. */
+function phraseAt(text: string, from: number, after: number): string | null {
+  const hay = tokens(cleanSpeech(text));
+  const tryAt = (j: number) => {
+    for (let len = 3; len <= 5 && j + len <= hay.length; len++) {
+      const cand = hay.slice(j, j + len);
+      if (findPhrase(hay, cand, 1) === j) return cand.join(' ');
+    }
+    return null;
+  };
+  const start = Math.min(Math.max(from, after + 1), Math.max(after + 1, hay.length - 3));
+  for (let j = start; j < hay.length; j++) { const p = tryAt(j); if (p) return p; }
+  for (let j = start - 1; j > after; j--) { const p = tryAt(j); if (p) return p; }
+  return null;
+}
+
+type Cue = {turn: number; phrase: string};
+type Shot = Record<string, unknown> & {type: string; at: unknown};
+interface Draft {shot: Shot; visual?: StoryVisual; split?: boolean}
+type F = {x: number; y: number; zoom: number};
+const fromOf = (s: Shot) => s.from as F;
+const toOf = (s: Shot) => s.to as F;
+
+export function buildPlan(input: BuildInputs): BuildResult {
+  const {storyboard: sb, turns, timing, words, catalog, treatments} = input;
+  const warnings: string[] = [];
+  const fixes: string[] = [];
+  const storyboardIssues: string[] = [];
+  const keys = turnKeys(turns);
+  const indexOf = new Map(keys.map((k, i) => [k, i]));
+  const byPath = new Map(catalog.map(c => [c.path, c]));
+  const treatmentFor = (image: string): Treatment | null => {
+    if (treatments[image]) return treatments[image];
+    const entry = byPath.get(image);
+    return entry ? proposeTreatment(entry, Boolean(input.depthMaps?.[image])) : null;
+  };
+  const cue = (index: number, phrase: string, occurrence?: number): Cue | null => {
+    const p = uniquePhrase(turns[index]?.text ?? '', phrase, occurrence);
+    return p ? {turn: index, phrase: p} : null;
+  };
+
+  // 1. One shot per storyboard visual, framings copied from treatments.
+  let drafts: Draft[] = [];
+  for (const st of sb.turns) {
+    const index = indexOf.get(st.key);
+    if (index === undefined) { if (st.visuals.length) storyboardIssues.push(`turn ${st.index}: the line changed; re-board its ${st.visuals.length} visual(s)`); continue; }
+    for (const v of st.visuals) {
+      const at = cue(index, v.at.phrase, v.at.occurrence);
+      if (!at) { storyboardIssues.push(`turn ${index}: "${v.at.phrase}" is not in the line`); continue; }
+      const common = {at, ...(v.atmosphere ? {atmosphere: v.atmosphere} : {}), ...(v.transition ? {transition: v.transition} : {})};
+      let shot: Shot | null = null;
+      if (v.kind === 'image' || v.kind === 'clip') {
+        const t = v.image ? treatmentFor(v.image) : null;
+        if (!v.image || !t) { storyboardIssues.push(`turn ${index}: "${v.image}" is not an available image`); continue; }
+        const picked = pickFraming(t, v.framing);
+        const move = v.move ?? {from: picked.framing.from, to: picked.framing.to};
+        if (v.kind === 'clip') {
+          const focus = v.focus ?? [move.to.x, move.to.y] as [number, number];
+          shot = {type: 'clip', ...common, image: v.image, prompt: v.prompt ?? '', seed: v.seed ?? 42, focus, from: move.from, to: move.to} as Shot;
+        } else if (v.name || v.framing === 'portrait') {
+          shot = {type: 'portrait', ...common, image: v.image, from: move.from, to: move.to, name: v.name ?? '', ...(v.role ? {role: v.role} : {})} as Shot;
+        } else {
+          shot = {type: 'image_move', ...common, image: v.image, from: move.from, to: move.to, framing: picked.name} as unknown as Shot;
+        }
+      } else if (v.kind === 'map') shot = {type: 'map', ...(v.map ?? {}), ...common} as unknown as Shot;
+      else if (v.kind === 'point') shot = {type: 'point', ...common, backdrop: v.backdrop, bullets: v.bullets ?? []} as unknown as Shot;
+      else if (v.kind === 'custom') {
+        const beats = ((v as {beats?: string[]}).beats ?? []).map(p => cue(index, p)).filter((c): c is Cue => !!c);
+        shot = {type: 'custom', ...common, component: v.component, ...(beats.length ? {beats} : {})} as unknown as Shot;
+      }
+      if (shot) drafts.push({shot, visual: v});
+    }
+  }
+
+  // 2. Question cards (automatic, verbatim) over the whole lesson.
+  const withQuestions = fixActQuestions({shots: drafts.map(d => d.shot) as never}, {from: 0, to: turns.length - 1}, turns, timing.durations);
+  const visualOf = new Map(drafts.map(d => [d.shot, d.visual]));
+  drafts = (withQuestions.act.shots as unknown as Shot[]).map(shot => ({shot, visual: visualOf.get(shot)}));
+
+  // 3. Timing passes: too-close cuts, too-long holds.
+  const timeOf = (d: Draft, i: number): number => {
+    if (i === 0) return 0;
+    const at = d.shot.at as {turn: number; phrase?: string};
+    if (d.shot.type === 'question') return timing.starts[at.turn];
+    try { return resolvePhrase(at as Cue, turns, timing, words, 'start', input.allowEstimated).sec; } catch { return NaN; }
+  };
+  const maxFor = (type: string) => (type === 'map' || type === 'custom' ? LOOK_RULES.maxMapSec : LOOK_RULES.maxShotSec) + LOOK_RULES.lengthToleranceSec;
+  for (let pass = 0; pass < 400; pass++) {
+    const starts = drafts.map(timeOf);
+    const ends = starts.map((_, i) => (i + 1 < starts.length ? starts[i + 1] : timing.totalSec));
+    let changed = false;
+    // Too close: drop the optional one of the pair (else the later), never a question card or the first shot.
+    for (let i = 1; i < drafts.length; i++) {
+      const len = ends[i] - starts[i];
+      if (!(len < LOOK_RULES.minShotSec - 0.05) || drafts[i].shot.type === 'question') continue;
+      const next = drafts[i + 1];
+      const victim = next && next.shot.type !== 'question' && next.visual?.priority === 'optional' && drafts[i].visual?.priority !== 'optional' ? i + 1 : i;
+      fixes.push(`dropped "${String((drafts[victim].shot.at as Cue).phrase)}" (turn ${(drafts[victim].shot.at as Cue).turn}): cut too close to the next`);
+      drafts.splice(victim, 1);
+      changed = true;
+      break;
+    }
+    if (changed) continue;
+    // Too long: continue the same image in another framing on a phrase near the middle.
+    for (let i = 0; i < drafts.length; i++) {
+      const d = drafts[i];
+      const len = ends[i] - starts[i];
+      if (!(len > maxFor(d.shot.type)) || d.shot.type === 'question') continue;
+      const mid = starts[i] + len / 2;
+      // Prefer a new line starting inside the hold (a natural cut point), nearest the middle; else split mid-line.
+      const lineStarts = turns.map((t, k) => ({k, t: timing.starts[k]})).filter(({k, t}) => turns[k].kind === 'speech' && t > starts[i] + LOOK_RULES.minShotSec && t < ends[i] - LOOK_RULES.minShotSec)
+        .sort((a, b) => Math.abs(a.t - mid) - Math.abs(b.t - mid));
+      const atLine = lineStarts[0] && Math.abs(lineStarts[0].t - mid) < len / 3 ? lineStarts[0].k : -1;
+      const turnIdx = atLine >= 0 ? atLine : timing.starts.findIndex((s, k) => s <= mid && mid < (k + 1 < timing.starts.length ? timing.starts[k + 1] : timing.totalSec));
+      const turn = turns[turnIdx];
+      const image = (d.shot as {image?: string}).image;
+      if (turn?.kind !== 'speech' || !image || !['image_move', 'portrait', 'clip'].includes(d.shot.type)) {
+        if (d.shot.type !== 'map' && d.shot.type !== 'custom') storyboardIssues.push(`turn ${(d.shot.at as Cue).turn}: "${(d.shot.at as Cue).phrase}" holds ${len.toFixed(1)}s; add a visual in this stretch`);
+        else warnings.push(`turn ${(d.shot.at as Cue).turn}: ${d.shot.type} holds ${len.toFixed(1)}s`);
+        continue;
+      }
+      const hay = tokens(cleanSpeech(turn.text ?? ''));
+      const word = atLine >= 0 ? 0 : Math.floor(((mid - timing.starts[turnIdx]) / Math.max(0.1, timing.durations[turnIdx])) * hay.length);
+      const sameTurn = (d.shot.at as Cue).turn === turnIdx ? findPhrase(hay, tokens((d.shot.at as Cue).phrase), 1) : -1;
+      const phrase = phraseAt(turn.text ?? '', word, sameTurn);
+      if (!phrase) { storyboardIssues.push(`turn ${turnIdx}: a ${len.toFixed(1)}s hold needs another visual (no phrase to split on)`); continue; }
+      const t = treatmentFor(image);
+      const currentMove = moveOf(fromOf(d.shot), toOf(d.shot));
+      const alt = t ? alternateFraming(t, currentMove) ?? pickFraming(t) : null;
+      const from = alt ? alt.framing.from : toOf(d.shot);
+      const to = alt ? alt.framing.to : fromOf(d.shot);
+      const cont = {type: 'image_move', at: {turn: turnIdx, phrase}, image, from, to, continues: true, ...(alt ? {framing: alt.name} : {})} as unknown as Shot;
+      drafts.splice(i + 1, 0, {shot: cont, visual: d.visual ? {...d.visual, priority: 'optional'} : undefined, split: true});
+      fixes.push(`turn ${turnIdx}: "${image.split('/').pop()}" continues in another framing on "${phrase}" (${len.toFixed(1)}s hold split)`);
+      changed = true;
+      break;
+    }
+    if (!changed) break;
+  }
+
+  // 4. Variety: three same moves in a row -> the middle one takes its alternative, unless the storyboard said hold.
+  const kindOf = (d: Draft): MoveKind | null => (['image_move', 'portrait'].includes(d.shot.type) ? moveOf(fromOf(d.shot), toOf(d.shot)) : null);
+  for (let i = 1; i + 1 < drafts.length; i++) {
+    const [a, b, c] = [kindOf(drafts[i - 1]), kindOf(drafts[i]), kindOf(drafts[i + 1])];
+    if (!b || a !== b || b !== c) continue;
+    const d = drafts[i];
+    if (d.visual?.pace === 'hold' || (d.visual?.move && !d.visual.moveFromPlan) || d.shot.type === 'portrait') { warnings.push(`turn ${(d.shot.at as Cue).turn}: three ${b} moves in a row (kept: storyboard intent)`); continue; }
+    const t = treatmentFor(String(d.shot.image));
+    const alt = t && alternateFraming(t, b);
+    if (!alt) { warnings.push(`turn ${(d.shot.at as Cue).turn}: three ${b} moves in a row (no alternative framing)`); continue; }
+    Object.assign(d.shot, {from: alt.framing.from, to: alt.framing.to, framing: alt.name});
+    fixes.push(`turn ${(d.shot.at as Cue).turn}: "${String(String(d.shot.image)).split('/').pop()}" switched to ${alt.name} (${alt.framing.move}) for variety`);
+  }
+
+  const years = (sb.years ?? []).flatMap(y => {
+    const index = indexOf.get(y.key);
+    const at = index === undefined ? null : cue(index, y.phrase);
+    if (!at) { storyboardIssues.push(`year ${y.text}: its line changed or "${y.phrase}" is not in it`); return []; }
+    return [{at, text: y.text}];
+  });
+  const shots = drafts.map(d => {
+    const {framing: _f, ...rest} = d.shot as Record<string, unknown>;
+    return rest as unknown as PlanShot;
+  });
+  return {plan: {episode: sb.episode, ...(sb.boxes ? {boxes: sb.boxes} : {}), shots, years, acts: sb.acts}, warnings, fixes: [...withQuestions.fixes, ...fixes], storyboardIssues};
+}

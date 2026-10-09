@@ -110,6 +110,8 @@ export interface CustomShot extends ShotBase {
   type: 'custom';
   /** A name from src/components/custom/catalog.ts. */
   component: string;
+  /** Absolute times the explainer's phases start on (its spoken cues); without them it plays its default phases. */
+  beatsSec?: number[];
 }
 
 export type DocShot = ImageMoveShot | PortraitShot | MapShot | PointShot | ClipShot | QuestionShot | CustomShot;

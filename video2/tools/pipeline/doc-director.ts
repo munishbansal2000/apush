@@ -414,7 +414,7 @@ export function materializeCoordinateObjects(raw: unknown): unknown {
   return raw;
 }
 
-const readAnswer = (path: string): unknown => materializeCoordinateObjects(JSON.parse(readFileSync(path, 'utf8')));
+export const readAnswer = (path: string): unknown => materializeCoordinateObjects(JSON.parse(readFileSync(path, 'utf8')));
 
 /**
  * An act answer as a full act: a full answer as is, a patch applied onto `base` (repairs) or onto the same-chat draft
@@ -492,24 +492,31 @@ function reviseDocumentary(io: DirectorIO, input: DirectorInputs, log: DirectorL
   return {outline, log};
 }
 
-export function directDocumentary(io: DirectorIO, input: DirectorInputs, maxRepairs = 2): DirectorResult {
-  const log: DirectorLog[] = [];
+/** Outline (title, thesis, Episode Sheet boxes, acts) with same-chat review and repairs; shared by the storyboard director. */
+export function directOutline(io: DirectorIO, input: Pick<DirectorInputs, 'episode' | 'turns' | 'timing' | 'words' | 'options' | 'previousOutline'>, log: DirectorLog[], maxRepairs = 2): {outline?: Outline; pending?: string[]} {
   const allowEstimated = !!input.options.allowEstimated;
-  if (input.revise) return reviseDocumentary(io, input, log, maxRepairs);
-  // 1. Outline, with repairs.
   const basePrompt = outlinePrompt(input.episode, input.turns, input.timing.durations, input.previousOutline);
-  let outline: Outline | undefined;
   let name = 'doc-outline';
   let source = io.meta(name, basePrompt, [], OUTLINE_REVIEW);
   for (let attempt = 0; attempt <= maxRepairs; attempt++) {
-    if (!source) return {log, pending: [name]};
+    if (!source) return {pending: [name]};
     const checked = validateOutline(readAnswer(source), input.turns, input.timing, input.words, allowEstimated);
     log.push({stage: attempt ? `outline repair ${attempt}` : 'outline', source, issues: checked.issues});
-    if (checked.outline) { outline = checked.outline; break; }
-    if (attempt === maxRepairs) return {log};
+    if (checked.outline) return {outline: checked.outline};
+    if (attempt === maxRepairs) return {};
     name = `doc-outline-repair-${attempt + 1}`;
     source = io.meta(name, `${basePrompt}\n\nYOUR PREVIOUS OUTLINE HAD THESE PROBLEMS; return the corrected JSON only:\n${checked.issues.map(i => `- ${i}`).join('\n')}\n\nPREVIOUS OUTLINE:\n${readFileSync(source, 'utf8')}`);
   }
+  return {};
+}
+
+export function directDocumentary(io: DirectorIO, input: DirectorInputs, maxRepairs = 2): DirectorResult {
+  const log: DirectorLog[] = [];
+  if (input.revise) return reviseDocumentary(io, input, log, maxRepairs);
+  // 1. Outline, with repairs.
+  const got = directOutline(io, input, log, maxRepairs);
+  if (got.pending) return {log, pending: got.pending};
+  const outline = got.outline;
   if (!outline) return {log};
 
   // 2. Acts (each validated structurally), then 3. assemble + resolve, 4. repair only failing acts.

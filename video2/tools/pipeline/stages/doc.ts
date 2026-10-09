@@ -21,6 +21,7 @@ import {blockingLayoutIssues, formatLayoutIssues, guardHeartbeat, layoutIssuesFr
 import type {ResolvedShotPlan, ShotPlan} from '../shots';
 import {findTool} from '../tools';
 import {readCheckedWords} from './words';
+import {storyboardDirectStage} from './storyboard';
 
 export const shotsPathFor = (episode: string) => join(ROOT, 'data', episode, 'shots.json');
 const sha = (path: string) => (existsSync(path) ? sha256(readFileSync(path)) : 'missing');
@@ -29,6 +30,8 @@ const sha = (path: string) => (existsSync(path) ? sha256(readFileSync(path)) : '
 
 /** Script -> data/<ep>/shots.json via the documentary director (Meta UI, or prompt files with --agent). */
 export function docDirectStage(ctx: PipelineContext, opts: {allowEstimated?: boolean} = {}): void {
+  // The storyboard flow (storyboard -> treatments -> build) is the default; the all-in-one director stays as a fallback.
+  if (!process.argv.includes('--legacy-director')) return storyboardDirectStage(ctx, opts);
   const inputs = loadDocInputs(ctx.episode, null, ctx.draft, {dataDir: ctx.dataDir, publicDir: ctx.publicDir});
   if (ctx.dryRun) { console.log(`[direct] dry-run: documentary director over ${inputs.turns.length} turns${ctx.agent ? ' (agent mode)' : ''}`); return; }
   // Hard gate for the pipeline: direction never runs on missing or invalid Vosk word timing (samples may estimate).

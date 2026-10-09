@@ -1,7 +1,8 @@
 /**
- * Resumable episode pipeline: transcript -> TTS -> timing -> Vosk words -> documentary director -> LTX clips ->
- * contact sheet -> segmented render (docs/LOOK.md, docs/PIPELINE.md). Add --agent to answer director prompts with
- * your own agents, --draft to allow unapproved library geography.
+ * Resumable episode pipeline: transcript -> TTS -> timing -> Vosk words -> storyboard -> treatments -> build (the direct
+ * stage, docs/STORYBOARD.md) -> LTX clips -> contact sheet -> segmented render (docs/LOOK.md). --agent answers prompts
+ * with your own agents, --draft allows unapproved library geography, --editor adds the editor pass to the build,
+ * --legacy-director uses the previous all-in-one director instead of the storyboard flow.
  */
 import {createContext} from './pipeline/context';
 import {PendingAnswers} from './pipeline/director-io';

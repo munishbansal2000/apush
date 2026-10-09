@@ -17,9 +17,14 @@ export type Status = 'approved' | 'rejected' | 'needs-work';
 /** A reviewer note on an act; `shot` is the act-local reference the director sees ("shot index 4"), `ref` the contact-sheet id. */
 export interface Note {text: string; shot?: string; ref?: string; at: string; done?: string}
 
+/** Per-act approvals and notes (act numbers are 1-based strings). */
+export interface ActReview {acts?: Record<string, {status: Status; at: string}>; notes?: Record<string, Note[]>}
+
 export interface LessonReview {
   audio?: {approved?: string};
-  plan?: {acts?: Record<string, {status: Status; at: string}>; notes?: Record<string, Note[]>};
+  plan?: ActReview;
+  /** The storyboard (what is on screen per line), reviewed per act like the plan. */
+  storyboard?: ActReview;
   clips?: Record<string, {status: Status; at: string; note?: string}>;
   render?: {approved?: string};
 }
@@ -54,9 +59,9 @@ export const rejectedKeys = (review: LibraryReview, statuses: Status[] = ['rejec
   new Set(Object.entries(review).filter(([, v]) => statuses.includes(v.status)).map(([k]) => k));
 
 /** Open (not done) notes per act number (1-based, as strings). */
-export function openNotes(review: LessonReview): Map<number, Note[]> {
+export function openNotes(review: LessonReview, section: 'plan' | 'storyboard' = 'plan'): Map<number, Note[]> {
   const out = new Map<number, Note[]>();
-  for (const [act, notes] of Object.entries(review.plan?.notes ?? {})) {
+  for (const [act, notes] of Object.entries(review[section]?.notes ?? {})) {
     const open = notes.filter(n => !n.done);
     if (open.length) out.set(Number(act), open);
   }
@@ -64,8 +69,8 @@ export function openNotes(review: LessonReview): Map<number, Note[]> {
 }
 
 /** True when every act of the plan is approved (the whole plan is frozen). */
-export const planApproved = (review: LessonReview, actCount: number) =>
-  actCount > 0 && Array.from({length: actCount}, (_, i) => review.plan?.acts?.[String(i + 1)]?.status).every(s => s === 'approved');
+export const planApproved = (review: LessonReview, actCount: number, section: 'plan' | 'storyboard' = 'plan') =>
+  actCount > 0 && Array.from({length: actCount}, (_, i) => review[section]?.acts?.[String(i + 1)]?.status).every(s => s === 'approved');
 
 /** Act turn ranges for a plan: written into shots.json by the director; older plans fall back to the saved outline. */
 export function planActs(plan: {acts?: {title: string; turns: {from: number; to: number}}[]}, outlinePath?: string): {title: string; turns: {from: number; to: number}}[] {

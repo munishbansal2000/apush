@@ -4,6 +4,9 @@
  *   npm run storyboard -- u3e1 bootstrap [--force]   data/u3e1/shots.json -> data/u3e1/storyboard.json
  *   npm run storyboard -- u3e1 check                 anchors, stale turns, image budget, thin coverage
  *   npm run storyboard -- u3e1 sheet                 out/review/u3e1-storyboard.html (line, visuals, thumbnails, problems)
+ *   npm run storyboard -- u3e1 framings [--all]      out/review/u3e1-framings.png: start/end still of every framing of every
+ *                                                    storyboard image not yet approved (--all: every one); index in .txt
+ * The pipeline's direct stage runs the whole flow (storyboard -> treatments -> build); these are the review tools.
  */
 import {existsSync, mkdirSync, writeFileSync} from 'node:fs';
 import {join, relative} from 'node:path';
@@ -80,6 +83,51 @@ ${rows}`;
   console.log(`storyboard sheet -> ${relative(ROOT, out)} (${c.issues.length} problem(s), ${c.warnings.length} warning(s))`);
 }
 
+/** Start and end stills of every framing (rendered by the real renderer), tiled with an index, for treatment review. */
+async function framings(sb: Storyboard) {
+  const {bundle} = await import('@remotion/bundler');
+  const {openBrowser, renderStill, selectComposition} = await import('@remotion/renderer');
+  const {execFileSync} = await import('node:child_process');
+  const {rmSync} = await import('node:fs');
+  const {loadTreatments, proposeTreatment} = await import('./pipeline/treatments');
+  const lock = existsSync(join(ROOT, 'data', 'images.lock.json')) ? readJson<Record<string, {width?: number; height?: number}>>('data/images.lock.json') : {};
+  const treatments = loadTreatments();
+  const images = [...new Set(sb.turns.flatMap(t => t.visuals.map(v => (v.kind === 'point' ? v.backdrop : v.image)).filter((p): p is string => !!p)))]
+    .filter(p => lock[p]?.width && (process.argv.includes('--all') || treatments[p]?.status !== 'approved'));
+  if (!images.length) { console.log('no images to show (all approved; --all to show every one)'); return; }
+  const {buildCatalog} = await import('./pipeline/doc-director');
+  const catalog = new Map(buildCatalog(Object.fromEntries(images.map(p => [p, {width: lock[p].width!, height: lock[p].height!}])), {}).map(c => [c.path, c]));
+  const browserExecutable = process.env.REMOTION_BROWSER ?? null;
+  const serveUrl = await bundle({entryPoint: join(ROOT, 'src/documentary-index.tsx')});
+  const browser = await openBrowser('chrome', {browserExecutable});
+  const dir = join(ROOT, 'out', 'review', `${ep}-framings`);
+  rmSync(dir, {recursive: true, force: true}); mkdirSync(dir, {recursive: true});
+  const index: string[] = [];
+  let n = 0;
+  try {
+    for (const image of images) {
+      const t = treatments[image] ?? (catalog.get(image) ? proposeTreatment(catalog.get(image)!, false) : null);
+      if (!t) continue;
+      for (const [name, f] of Object.entries(t.framings)) {
+        const inputProps = {episode: ep, shots: [{id: 'f', type: 'image_move', startSec: 0, endSec: 3, image, size: {width: lock[image].width, height: lock[image].height}, from: f.from, to: f.to}],
+          years: [], boxes: [], turns: [{id: 't00', kind: 'speech', speaker: 'maya'}], timing: {starts: [0], durations: [3], totalSec: 3}};
+        const composition = await selectComposition({serveUrl, id: 'DocEpisode', inputProps, browserExecutable, puppeteerInstance: browser, logLevel: 'error'});
+        for (const [label, frame] of [['start', 2], ['end', 87]] as const) {
+          await renderStill({composition, serveUrl, inputProps, browserExecutable, puppeteerInstance: browser, logLevel: 'error', scale: 0.25, frame, output: join(dir, `${String(n).padStart(4, '0')}.png`)});
+          index.push(`${String(n).padStart(4, '0')} (row ${Math.floor(n / 4) + 1}, col ${(n % 4) + 1})  ${image}  ${name} (${f.move}) ${label}`);
+          n++;
+        }
+      }
+    }
+  } finally {
+    await browser.close({silent: true});
+  }
+  const out = join(ROOT, 'out', 'review', `${ep}-framings.png`);
+  execFileSync('ffmpeg', ['-y', '-v', 'error', '-i', join(dir, '%04d.png'), '-vf', `tile=4x${Math.ceil(n / 4)}:padding=6:color=gray`, '-frames:v', '1', out]);
+  writeFileSync(out.replace(/\.png$/, '.txt'), `${index.join('\n')}\n`);
+  console.log(`${n} stills (${images.length} images) -> ${relative(ROOT, out)}; approve with: npm run review -- treatment <path> approve`);
+}
+
 switch (cmd) {
   case 'bootstrap': {
     if (existsSync(sbPath) && !process.argv.includes('--force')) fail(`${relative(ROOT, sbPath)} exists; --force to replace it`);
@@ -103,5 +151,6 @@ switch (cmd) {
     break;
   }
   case 'sheet': sheet(loadBoard()); break;
+  case 'framings': await framings(loadBoard()); break;
   default: fail(`unknown command ${cmd}`);
 }

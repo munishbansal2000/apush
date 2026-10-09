@@ -165,6 +165,16 @@ Typecheck + ESLint (episode-file rules) + unit tests + validate. Use in CI.
 
 ## Review
 
+### `npm run storyboard -- <lesson> …` — storyboard review tools (docs/STORYBOARD.md)
+The pipeline's direct stage runs storyboard -> treatments -> build; these commands show and check its work.
+
+| Command | |
+|---|---|
+| `bootstrap [--force]` | storyboard from an existing `shots.json` (the pipeline does this itself when the storyboard is missing) |
+| `check` | stale lines, missing/ambiguous/out-of-order anchors, image budget, rejected images, thin long lines |
+| `sheet` | `out/review/<lesson>-storyboard.html`: each line with its anchor phrases marked beside the visuals' thumbnails |
+| `framings [--all]` | `out/review/<lesson>-framings.png` (+ .txt index): start/end stills of each image's framings, rendered |
+
 ### `npm run review -- …` — approvals and notes (documentary pipeline)
 Mark work approved (frozen: the pipeline reuses it even when code changes) or note what needs fixing (the next run
 fixes only that). State is committed: `data/<lesson>/review.json`, `data/library/review/{images,components}.json`.
@@ -174,6 +184,8 @@ fixes only that). State is committed: `data/<lesson>/review.json`, `data/library
 | `status --unit 3` | board for the unit → `docs/UNIT3_STATUS.md` (script, audio, images, plan acts, clips, explainers, render, open notes) |
 | `u3e1 status` | acts with their shot ranges (ids as on the contact sheet), approvals, notes, clips |
 | `u3e1 approve audio` | audio frozen (not re-voiced when voices, model or pronunciations change) |
+| `u3e1 approve storyboard [--acts 1-3]` / `note --storyboard --turn 18 "…"` | storyboard acts frozen / only the noted act re-boarded |
+| `treatment <image> approve` / `needs-work "…"` | the image's framings (data/library/treatments.json) accepted / flagged |
 | `u3e1 approve plan [--acts 1,2,4-8]` | those acts frozen; all acts approved = plan frozen; a partly approved plan is never re-directed from scratch |
 | `u3e1 note --shot shot045 "…"` / `--act 3 "…"` | only that act is re-asked (patch, with the note); every other act kept; the act returns to "awaiting review" |
 | `u3e1 clip shot015 approve` / `reject --regenerate` / `reject --still` | a rejected clip gets a new seed (new generation) or becomes a camera move on its still |

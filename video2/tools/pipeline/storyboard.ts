@@ -20,6 +20,8 @@ export interface StoryVisual {
   /** Named treatment framing (S3); until treatments exist, `move` keeps an explicit camera move. */
   framing?: string;
   move?: {from: {x: number; y: number; zoom: number}; to: {x: number; y: number; zoom: number}};
+  /** The move came from an earlier automatic plan (bootstrap), not a person: the build may vary it. */
+  moveFromPlan?: boolean;
   /** Portrait name tag. */
   name?: string;
   role?: string;
@@ -38,7 +40,15 @@ export interface StoryVisual {
 
 export interface StoryTurn {key: string; index: number; visuals: StoryVisual[]}
 export interface StoryAct {title: string; purpose?: string; turns: {from: number; to: number}}
-export interface Storyboard {episode: string; acts: StoryAct[]; turns: StoryTurn[]}
+export interface Storyboard {
+  episode: string;
+  acts: StoryAct[];
+  turns: StoryTurn[];
+  /** Episode Sheet boxes (from the outline), carried to the plan. */
+  boxes?: {label: string; intro: {turn: number; phrase: string}; check: {turn: number; phrase: string}; turns: {from: number; to: number}}[];
+  /** Year stamps: the line (by key) and the phrase they land on. */
+  years?: {key: string; phrase: string; text: string}[];
+}
 
 /** Stable turn identity: speaker + hash of the spoken words (tags and markup ignored). */
 const baseKey = (turn: PipelineTurn): string =>
@@ -82,8 +92,8 @@ export function bootstrapStoryboard(plan: ShotPlan, turns: PipelineTurn[], acts:
       ...(raw.atmosphere ? {atmosphere: raw.atmosphere as string[]} : {}), ...(raw.transition ? {transition: raw.transition as 'cut' | 'crossfade'} : {})};
     let v: StoryVisual;
     switch (raw.type) {
-      case 'image_move': v = {...base, kind: 'image', image: raw.image as string, move: {from: raw.from as never, to: raw.to as never}}; break;
-      case 'portrait': v = {...base, kind: 'image', image: raw.image as string, framing: 'portrait', name: raw.name as string, role: raw.role as string, move: {from: raw.from as never, to: raw.to as never}}; break;
+      case 'image_move': v = {...base, kind: 'image', image: raw.image as string, move: {from: raw.from as never, to: raw.to as never}, moveFromPlan: true}; break;
+      case 'portrait': v = {...base, kind: 'image', image: raw.image as string, framing: 'portrait', name: raw.name as string, role: raw.role as string, move: {from: raw.from as never, to: raw.to as never}, moveFromPlan: true}; break;
       case 'clip': v = {...base, kind: 'clip', image: raw.image as string, prompt: raw.prompt as string, seed: raw.seed as number, focus: raw.focus as [number, number]}; break;
       case 'point': v = {...base, kind: 'point', backdrop: raw.backdrop as string, bullets: raw.bullets as StoryVisual['bullets']}; break;
       case 'custom': v = {...base, kind: 'custom', component: raw.component as string}; break;
@@ -110,10 +120,13 @@ export function bootstrapStoryboard(plan: ShotPlan, turns: PipelineTurn[], acts:
       last = Math.max(last, phrasePos(text, v.at.phrase, v.at.occurrence ?? 1));
     }
   }
+  const keys = turnKeys(turns);
   return {
     episode: plan.episode,
     acts,
-    turns: turnKeys(turns).map((key, index) => ({key, index, visuals: byTurn.get(index) ?? []})),
+    ...(plan.boxes ? {boxes: plan.boxes} : {}),
+    years: (plan.years ?? []).filter(y => keys[y.at.turn]).map(y => ({key: keys[y.at.turn], phrase: y.at.phrase, text: y.text})),
+    turns: keys.map((key, index) => ({key, index, visuals: byTurn.get(index) ?? []})),
   };
 }
 
