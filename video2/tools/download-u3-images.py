@@ -54,8 +54,8 @@ def download_one(img, out_dir):
                 if not ctype.startswith("image/"):
                     continue  # Not an image, try alt
                 data = resp.read()
-                if len(data) < 1024:
-                    continue  # Too small, likely error page
+                if len(data) < 50 * 1024:
+                    continue  # Too small (<50KB), likely thumbnail or error page
                 out_path.parent.mkdir(parents=True, exist_ok=True)
                 with open(out_path, "wb") as f:
                     f.write(data)
