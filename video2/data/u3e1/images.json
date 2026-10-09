@@ -1175,5 +1175,82 @@
     "source": "loc",
     "catalog_id": "map.british-empire-1763",
     "verified": true
+  },
+  "historic/u3e1/portrait-edmund-burke.jpg": {
+    "description": "Edmund Burke (portrait by Joshua Reynolds)",
+    "source_url": "https://images.metmuseum.org/CRDImages/dp/original/DP805431.jpg",
+    "download_urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/a/a5/Reynolds_-_Edmund_Burke_-_National_Galleries_of_Scotland.png",
+      "https://images.metmuseum.org/CRDImages/dp/original/DP805431.jpg"
+    ],
+    "source": "wikimedia",
+    "catalog_id": "portrait.edmund-burke",
+    "verified": true
+  },
+  "historic/u3e1/map-proclamation-line-1763.jpg": {
+    "description": "Map of the Proclamation Line of 1763",
+    "source_url": "https://teva.contentdm.oclc.org/iiif/2/p15138coll23:377/full/full/0/default.jpg",
+    "download_urls": [
+      "https://teva.contentdm.oclc.org/iiif/2/p15138coll23:377/full/full/0/default.jpg",
+      "https://www.loc.gov/static/exhibitions/two-georges/images/objects/british-beginnings/expanding-the-british-empire/2G_019_00_00_standard.jpg"
+    ],
+    "source": "tsla",
+    "catalog_id": "map.proclamation-line-1763",
+    "verified": true
+  },
+  "historic/u3e1/map-north-america-1763.jpg": {
+    "description": "North America after the Treaty of Paris, 1763",
+    "source_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd3:g3290:g3290:ar305500/full/pct:25/0/default.jpg",
+    "download_urls": [
+      "https://tile.loc.gov/image-services/iiif/service:gmd:gmd3:g3290:g3290:ar305500/full/pct:25/0/default.jpg",
+      "https://images.nypl.org/index.php?id=434522&t=w"
+    ],
+    "source": "loc",
+    "catalog_id": "map.north-america-1763",
+    "verified": true
+  },
+  "historic/u3e1/map-ohio-country.jpg": {
+    "description": "The Ohio Country, 1750s",
+    "source_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd3:g3300:g3300:ct000378/full/pct:100/0/default.jpg",
+    "download_urls": [
+      "https://tile.loc.gov/image-services/iiif/service:gmd:gmd3:g3300:g3300:ct000378/full/pct:100/0/default.jpg",
+      "https://images.nypl.org/index.php?id=434579&t=w"
+    ],
+    "source": "loc",
+    "catalog_id": "map.ohio-country",
+    "verified": true
+  },
+  "historic/u3e1/map-new-france.jpg": {
+    "description": "New France at its greatest extent",
+    "source_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd3:g3400:g3400:ar011200/full/pct:100/0/default.jpg",
+    "download_urls": [
+      "https://tile.loc.gov/image-services/iiif/service:gmd:gmd3:g3400:g3400:ar011200/full/pct:100/0/default.jpg",
+      "https://images.nypl.org/index.php?id=434920&t=w"
+    ],
+    "source": "loc",
+    "catalog_id": "map.new-france",
+    "verified": true
+  },
+  "historic/u3e1/object-wampum-belt.png": {
+    "description": "Wampum belt (diplomatic gift exchange)",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Wabanaki_Wampum_Belts.png",
+    "download_urls": [
+      "https://journals.openedition.org/gradhiva/docannexe/image/6173/img-5.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/3/3f/Wabanaki_Wampum_Belts.png"
+    ],
+    "source": "quaibranly",
+    "catalog_id": "object.wampum-belt",
+    "verified": true
+  },
+  "historic/u3e1/object-kentucky-rifle.png": {
+    "description": "A Kentucky (long) rifle — the frontiersman's weapon",
+    "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/William_Clark_long_rifle_MHS-Resource-203045-01.png",
+    "download_urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/6/6b/William_Clark_long_rifle_MHS-Resource-203045-01.png",
+      "https://tile.loc.gov/storage-services/service/pnp/trmk/1t50000/1t58000/1t58000/1t58013r.jpg"
+    ],
+    "source": "wikimedia",
+    "catalog_id": "object.kentucky-rifle",
+    "verified": true
   }
 }
