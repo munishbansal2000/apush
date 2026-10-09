@@ -3,16 +3,17 @@
  *
  *   npx tsx tools/doc-render.ts --episode u3e1 --plan data/u3e1/shots.sample.json --check   # validate only
  *   npx tsx tools/doc-render.ts --episode u3e1 --plan data/u3e1/shots.sample.json           # stills + MP4
+ *   add --draft to allow library geography that is not approved yet (samples only)
  *
  * Uses Vosk word timing (data/<ep>/word_times.json) when present; otherwise estimates phrase times inside each turn
  * (fine for a sample, refused by the production pipeline). Outputs out/<ep>-doc.mp4, out/<ep>-doc-contact.png.
  */
 import {execFileSync} from 'node:child_process';
-import {existsSync, mkdirSync, rmSync, writeFileSync} from 'node:fs';
+import {existsSync, mkdirSync, readdirSync, rmSync, writeFileSync} from 'node:fs';
 import {join, resolve} from 'node:path';
 import {ROOT, arg, flag} from './lib';
 import {normalizeTurns, readJson, type WordTiming} from './pipeline-core';
-import {resolveShotPlan, type ShotPlan} from './pipeline/shots';
+import {resolveShotPlan, type GeoFeature, type ShotPlan} from './pipeline/shots';
 import {guardHeartbeat, layoutIssuesFromLog} from './pipeline/stages/render';
 
 const episode = arg('episode') ?? (() => { throw new Error('--episode is required'); })();
@@ -30,9 +31,19 @@ const imageSizes = Object.fromEntries(Object.entries(lock)
 const depthMaps = Object.fromEntries(Object.keys(imageSizes)
   .map(path => [path, `depth/${path.replace(/\.[^.]+$/, '')}.png`])
   .filter(([, depth]) => existsSync(join(ROOT, 'public', depth))));
+// Library geography and places (data/library). --draft allows features that are not approved yet (samples only).
+const libDir = join(ROOT, 'data', 'library');
+const geo = Object.fromEntries(readdirSync(join(libDir, 'geo')).filter(name => name.endsWith('.geojson')).flatMap(name => {
+  const data = readJson<{type: string; geometry?: GeoFeature['geometry']; properties?: GeoFeature['properties']; features?: GeoFeature[]}>(join(libDir, 'geo', name));
+  const features = data.type === 'FeatureCollection' ? data.features ?? [] : [{geometry: data.geometry!, properties: data.properties!}];
+  return features.map(f => [f.properties.id, f] as const);
+}));
+const places = Object.fromEntries(readJson<{id: string; name: string; location?: [number, number]}[]>(join(libDir, 'entities', 'places.json')).map(p => [p.id, p]));
+const draft = flag('draft');
 const estimated = !existsSync(wordsPath);
 const plan = readJson<ShotPlan>(planPath);
-const resolved = resolveShotPlan(plan, turns, timing, words, {imageSizes, depthMaps, allowEstimated: estimated});
+const resolved = resolveShotPlan(plan, turns, timing, words, {imageSizes, depthMaps, geo, places, allowEstimated: estimated, allowUnapproved: draft});
+if (draft) console.log('[doc] DRAFT: unapproved library geography allowed (not for publishing)');
 const lengths = resolved.shots.map(s => s.endSec - s.startSec);
 console.log(`[doc] ${resolved.shots.length} shots over ${resolved.endSec.toFixed(1)}s; median shot ${[...lengths].sort((a, b) => a - b)[Math.floor(lengths.length / 2)].toFixed(1)}s, longest ${Math.max(...lengths).toFixed(1)}s${estimated ? ' (phrase times ESTIMATED: no Vosk word_times.json)' : ''}`);
 for (const s of resolved.shots) console.log(`  ${s.id} ${s.startSec.toFixed(2)}-${s.endSec.toFixed(2)}s ${s.type}${'image' in s ? ` ${s.image}${'depth' in s && s.depth ? ' [parallax]' : ''}` : ''}`);

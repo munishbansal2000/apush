@@ -82,3 +82,43 @@ describe('episode assembly', () => {
     assert.deepEqual(cues.map(c => c.name), ['tick', 'hit', 'whoosh', 'quill', 'check']);
   });
 });
+
+describe('map geography from the library', () => {
+  const turns = parseTranscript('Maya: Canada to garrison and Florida to administer.');
+  const timing = {starts: [0.25], durations: [4], totalSec: 5};
+  const words = {t00: 'canada to garrison and florida to administer'.split(' ').map((w, i) => ({w, s: i * 0.5, e: i * 0.5 + 0.4}))};
+  // Counter-clockwise ring (wrong winding for d3): the resolver must flip it.
+  const quebec = {geometry: {type: 'Polygon', coordinates: [[[-79.6, 46.2], [-64.3, 50.3], [-64.2, 48.9], [-73.3, 45.0], [-79.6, 46.2]]]}, properties: {id: 'geo.region.q@1763', precision: 'approximate', review: {status: 'candidate'}}};
+  const plan = (): ShotPlan => ({episode: 'x', shots: [{type: 'map', at: {turn: 0, phrase: 'canada'}, projection: 'world', extent: [[-130, 20], [-50, 65]],
+    camera: [{at: {offset: 0}, center: [-80, 45], zoom: 1}], fills: [{at: {turn: 0, phrase: 'canada to garrison'}, region: {geo: 'geo.region.q@1763'}, color: '#b3261e'}],
+    points: [{at: {offset: 1}, place: 'place.fort-detroit', kind: 'fort'}]}]});
+  const places = {'place.fort-detroit': {name: 'Fort Detroit', location: [-83.05, 42.33] as [number, number]}};
+
+  it('refuses unapproved geography unless drafting, and flags approximate features', () => {
+    assert.throws(() => resolveShotPlan(plan(), turns, timing, words, {imageSizes: {}, geo: {[quebec.properties.id]: quebec}, places}), /is candidate, not approved/);
+    const r = resolveShotPlan(plan(), turns, timing, words, {imageSizes: {}, geo: {[quebec.properties.id]: quebec}, places, allowUnapproved: true});
+    const shot = r.shots[0];
+    assert.ok(shot.type === 'map' && shot.approx, 'approximate geometry sets the on-screen note');
+    assert.ok(shot.type === 'map' && shot.points![0].label === 'Fort Detroit', 'place ids resolve to name + location');
+  });
+
+  it('fixes ring winding so a region never fills the whole globe', async () => {
+    const {geoArea} = await import('d3-geo');
+    const r = resolveShotPlan(plan(), turns, timing, words, {imageSizes: {}, geo: {[quebec.properties.id]: quebec}, places, allowUnapproved: true});
+    const shot = r.shots[0];
+    assert.ok(shot.type === 'map');
+    const region = shot.fills![0].region as {geometry: {type: 'Polygon'; coordinates: number[][][]}};
+    assert.ok(geoArea({type: 'Feature', properties: {}, geometry: region.geometry} as never) < 2 * Math.PI);
+  });
+
+  it('rejects unknown geo ids and places without a location', () => {
+    const bad = plan();
+    const shot = bad.shots[0] as Extract<ShotPlan['shots'][number], {type: 'map'}>;
+    shot.fills = [{at: {offset: 0.5}, region: {geo: 'geo.region.nowhere'}, color: '#000'}];
+    shot.points = [{at: {offset: 1}, place: 'place.atlantis'}];
+    const message = (() => { try { resolveShotPlan(bad, turns, timing, words, {imageSizes: {}, geo: {}, places, allowUnapproved: true}); return ''; } catch (e) { return (e as Error).message; } })();
+    assert.match(message, /unknown geo id "geo.region.nowhere"/);
+    assert.match(message, /place "place.atlantis" is unknown/);
+  });
+});
+

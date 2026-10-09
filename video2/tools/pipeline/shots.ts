@@ -5,6 +5,8 @@
  */
 import type {DocBox, DocShot, Framing, LonLat, RegionRef, YearStamp} from '../../src/documentary/types';
 import {upscaleAt} from '../../src/documentary/framing';
+import type {MultiPolygon, Polygon} from 'geojson';
+import {geoArea} from 'd3-geo';
 import type {PipelineTurn, WordTiming} from '../pipeline-core';
 import {resolvePhrase, type AnchorTiming, type PhraseAnchor} from './anchors';
 
@@ -14,7 +16,14 @@ export type Cue = PhraseAnchor | {offset: number};
 type PlanShot =
   | {type: 'image_move' | 'portrait'; at: PhraseAnchor; image: string; from: Framing; to: Framing; name?: string; role?: string; transition?: 'cut' | 'crossfade'}
   | {type: 'map'; at: PhraseAnchor; projection: 'us' | 'world'; extent: [LonLat, LonLat]; camera: {at: Cue; center: LonLat; zoom: number; ease?: number}[];
-      fills?: {at: Cue; region: RegionRef; color: string}[]; lines?: {at: Cue; coords: LonLat[]; color?: string; dashed?: boolean; draw?: number}[]; transition?: 'cut' | 'crossfade'}
+      fills?: {at: Cue; region: RegionRef | {geo: string}; color: string}[];
+      lines?: ({at: Cue; color?: string; dashed?: boolean; draw?: number; arrow?: boolean} & ({coords: LonLat[]} | {geo: string}))[];
+      labels?: {at: Cue; text: string; lonlat: LonLat; style?: 'region' | 'ocean' | 'town'}[];
+      points?: ({at: Cue; kind?: 'town' | 'fort' | 'battle'; label?: string} & ({place: string} | {lonlat: LonLat}))[];
+      /** Terrain: library ridge lines (geo ids) for relief shading, plus rivers. */
+      terrain?: {ridges: string[]; rivers?: boolean};
+      tilt?: number;
+      transition?: 'cut' | 'crossfade'}
   | {type: 'point'; at: PhraseAnchor; backdrop: string; bullets: {at: Cue; text: string}[]; transition?: 'cut' | 'crossfade'};
 
 export interface ShotPlan {
@@ -40,6 +49,29 @@ export interface ResolveOptions {
   rules?: ShotRules;
   /** Samples only: estimate phrase times when there are no Vosk words. */
   allowEstimated?: boolean;
+  /** Library geography by id (data/library/geo). */
+  geo?: Record<string, GeoFeature>;
+  /** Library places by id: name and [lon, lat]. */
+  places?: Record<string, {name: string; location?: LonLat}>;
+  /** Samples only: allow geography that is not yet approved. */
+  allowUnapproved?: boolean;
+}
+
+export interface GeoFeature {geometry: {type: string; coordinates: unknown}; properties: {id: string; precision: string; review: {status: string}}}
+
+/** d3-geo treats a ring wound the wrong way as "everything but this shape"; flip such rings. */
+function fixWinding(geometry: {type: string; coordinates: unknown}): {type: 'Polygon' | 'MultiPolygon'; coordinates: unknown} {
+  const flip = (rings: LonLat[][]) => rings.map(r => [...r].reverse());
+  const feature = (g: {type: string; coordinates: unknown}) => ({type: 'Feature' as const, properties: {}, geometry: g as Polygon | MultiPolygon});
+  if (geometry.type === 'Polygon') {
+    const rings = geometry.coordinates as LonLat[][];
+    return geoArea(feature(geometry)) > 2 * Math.PI ? {type: 'Polygon', coordinates: flip(rings)} : {type: 'Polygon', coordinates: rings};
+  }
+  if (geometry.type === 'MultiPolygon') {
+    const polys = (geometry.coordinates as LonLat[][][]).map(rings => (geoArea(feature({type: 'Polygon', coordinates: rings})) > 2 * Math.PI ? flip(rings) : rings));
+    return {type: 'MultiPolygon', coordinates: polys};
+  }
+  throw new Error(`expected a Polygon or MultiPolygon, got ${geometry.type}`);
 }
 
 export function resolveShotPlan(plan: ShotPlan, turns: PipelineTurn[], timing: AnchorTiming & {totalSec: number}, words: Record<string, WordTiming[]>, opts: ResolveOptions): ResolvedShotPlan {
@@ -86,14 +118,58 @@ export function resolveShotPlan(plan: ShotPlan, turns: PipelineTurn[], timing: A
           ? {...base, type: 'portrait', image: shot.image, size, from: shot.from, to: shot.to, name: shot.name ?? '', role: shot.role, depth}
           : {...base, type: 'image_move', image: shot.image, size, from: shot.from, to: shot.to, depth};
       }
-      case 'map':
+      case 'map': {
         if (!shot.camera.length) issues.push(`${id}: map needs at least one camera key`);
-        return {
-          ...base, type: 'map', projection: shot.projection, extent: shot.extent,
-          camera: shot.camera.map((k, n) => ({sec: cue(`camera ${n + 1}`, k.at), center: k.center, zoom: k.zoom, ease: k.ease})),
-          fills: (shot.fills ?? []).map((f, n) => ({sec: cue(`fill ${n + 1}`, f.at), region: f.region, color: f.color})),
-          lines: (shot.lines ?? []).map((l, n) => ({sec: cue(`line ${n + 1}`, l.at), coords: l.coords, color: l.color, dashed: l.dashed, draw: l.draw})),
+        let approx = false;
+        const geoOf = (where: string, geoId: string): GeoFeature | null => {
+          const f = opts.geo?.[geoId];
+          if (!f) { issues.push(`${id} ${where}: unknown geo id "${geoId}"`); return null; }
+          if (f.properties.review.status !== 'approved' && !opts.allowUnapproved) issues.push(`${id} ${where}: "${geoId}" is ${f.properties.review.status}, not approved`);
+          if (f.properties.precision !== 'exact') approx = true;
+          return f;
         };
+        const fills = (shot.fills ?? []).flatMap((f, n) => {
+          if (!('geo' in f.region)) {
+            if ('ring' in f.region) approx = true;
+            return [{sec: cue(`fill ${n + 1}`, f.at), region: f.region as RegionRef, color: f.color}];
+          }
+          const g = geoOf(`fill ${n + 1}`, f.region.geo);
+          if (!g) return [];
+          try { return [{sec: cue(`fill ${n + 1}`, f.at), region: {geometry: fixWinding(g.geometry)}, color: f.color}]; } catch (error) {
+            issues.push(`${id} fill ${n + 1}: ${error instanceof Error ? error.message : String(error)}`);
+            return [];
+          }
+        });
+        const lineCoords = (where: string, l: {coords: LonLat[]} | {geo: string}): LonLat[] | null => {
+          if ('coords' in l) return l.coords;
+          const g = geoOf(where, l.geo);
+          if (!g) return null;
+          if (g.geometry.type !== 'LineString') { issues.push(`${id} ${where}: "${l.geo}" is not a LineString`); return null; }
+          return g.geometry.coordinates as LonLat[];
+        };
+        const lines = (shot.lines ?? []).flatMap((l, n) => {
+          const coords = lineCoords(`line ${n + 1}`, l);
+          return coords ? [{sec: cue(`line ${n + 1}`, l.at), coords, color: l.color, dashed: l.dashed, draw: l.draw, arrow: l.arrow}] : [];
+        });
+        const points = (shot.points ?? []).flatMap((pt, n) => {
+          if ('lonlat' in pt) return [{sec: cue(`point ${n + 1}`, pt.at), at: pt.lonlat, label: pt.label, kind: pt.kind}];
+          const place = opts.places?.[pt.place];
+          if (!place?.location) { issues.push(`${id} point ${n + 1}: place "${pt.place}" is unknown or has no location`); return []; }
+          return [{sec: cue(`point ${n + 1}`, pt.at), at: place.location, label: pt.label ?? place.name, kind: pt.kind}];
+        });
+        const ridges = (shot.terrain?.ridges ?? []).flatMap(geoId => {
+          const coords = lineCoords('terrain', {geo: geoId});
+          return coords ? [coords] : [];
+        });
+        return {
+          ...base, type: 'map', projection: shot.projection, extent: shot.extent, tilt: shot.tilt,
+          camera: shot.camera.map((k, n) => ({sec: cue(`camera ${n + 1}`, k.at), center: k.center, zoom: k.zoom, ease: k.ease})),
+          fills, lines, points,
+          labels: (shot.labels ?? []).map((lb, n) => ({sec: cue(`label ${n + 1}`, lb.at), text: lb.text, at: lb.lonlat, style: lb.style})),
+          terrain: shot.terrain ? {ridges, rivers: shot.terrain.rivers} : undefined,
+          approx,
+        };
+      }
       case 'point': {
         if (!shot.bullets.length || shot.bullets.length > rules.maxBullets) issues.push(`${id}: a point card has 1-${rules.maxBullets} bullets, got ${shot.bullets.length}`);
         for (const b of shot.bullets) {

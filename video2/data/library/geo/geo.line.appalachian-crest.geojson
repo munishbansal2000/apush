@@ -1,0 +1,16 @@
+{
+  "type": "Feature",
+  "geometry": {"type": "LineString", "coordinates": [
+    [-85.5, 34.0], [-84.0, 35.0], [-82.5, 36.0], [-81.0, 37.0], [-79.8, 38.3], [-78.8, 39.6], [-77.8, 40.7],
+    [-76.5, 41.6], [-75.0, 42.3], [-73.8, 43.6], [-72.5, 44.5], [-71.0, 45.3], [-69.5, 46.0]
+  ]},
+  "properties": {
+    "id": "geo.line.appalachian-crest",
+    "type": "line",
+    "name": "Appalachian Mountains (crest, for terrain shading)",
+    "precision": "approximate",
+    "sources": ["Generalized Appalachian highlands axis, Alabama to Maine (physiographic overview; visual guide only)."],
+    "units": [1, 2, 3, 4],
+    "review": {"status": "candidate", "notes": "Terrain guide for map shading, not a boundary."}
+  }
+}
