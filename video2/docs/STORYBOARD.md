@@ -72,7 +72,7 @@ plus an editor pass.
 | audio | voices: edge (dev), Fish (prod, the script's own tags), say (macOS previews) | `public/audio/<lesson>/` |
 | timing, words | line timing; Vosk word alignment (`--estimate-words` skips it for previews) | `timing_map.json`, `word_times.json` |
 | images | catalog downloads (`tools/download-images.py`) + list fetches; research when a lesson has neither; depth maps with `DEPTH_PYTHON`; `--images placeholder` for previews | `public/historic/<lesson>/`, `data/<lesson>/images.json`, lock |
-| storyboard | outline + one prompt per act (`tools/pipeline/storyboard-director.ts`); notes and changed lines re-board only their acts | `data/<lesson>/storyboard.json` |
+| storyboard | images → lines first (catalog `turns`, else one LLM pass; `used_in` in `images.json`), then outline + one prompt per act (`tools/pipeline/storyboard-director.ts`). Each act is offered the images mapped to its lines, with its share of each image's lesson uses, and only the explainers assigned to it (`allocateActs`), so acts boarded in parallel cannot break the lesson limits; notes and changed lines re-board only their acts | `data/<lesson>/storyboard.json` |
 | build | treatments for the storyboard's images (`treatments.ts`), then the timed plan (`scene-builder.ts`), `--editor` pass | `data/library/treatments.json`, `data/<lesson>/shots.json` |
 | clips, contact, render | LTX hero clips, contact sheet, segmented render | `public/clips/`, `out/<lesson>-contact.png`, `out/<lesson>.mp4` |
 

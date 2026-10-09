@@ -7,7 +7,7 @@ import type {PipelineTurn} from '../pipeline-core';
 import {cleanSpeech} from './speech';
 import {LOOK_RULES} from './shots';
 import {
-  COORDINATE_RULE, assetsForAct, customsForAct, directOutline, readAnswer, type CatalogEntry, type DirectorInputs, type DirectorIO, type DirectorLog, type MapData, type Outline,
+  COORDINATE_RULE, allocateActs, directOutline, readAnswer, type CatalogEntry, type DirectorInputs, type DirectorIO, type DirectorLog, type MapData, type Outline,
 } from './doc-director';
 import {checkStoryboard, turnKeys, type Storyboard, type StoryTurn, type StoryVisual} from './storyboard';
 
@@ -16,15 +16,13 @@ const turnLine = (t: PipelineTurn, i: number, durations: number[]) =>
   `${i} | ${t.kind === 'pause' ? 'PAUSE' : t.speaker} | ${durations[i].toFixed(1)}s | ${t.kind === 'pause' ? `[pause ${t.pauseSec}s: question card, no visuals]` : cleanSpeech(t.text ?? '')}`;
 
 export const STORY_REVIEW = 'Switch roles: you are a demanding documentary editor. Re-check the storyboard you just wrote: every phrase verbatim and unique in its line and in spoken order, a new visual every 3-6 seconds of narration (spans for quick exchanges), the picture matches what the words name, no image more than twice in the act, at most one clip, explainers only for their exact event, nothing on PAUSE lines. Fix every problem and return ONLY the corrected JSON object {"turns": [...], "years": [...]}.';
-const STORY_SELF_CHECK = 're-check your storyboard (phrases verbatim, unique and in order; a visual every 3-6 seconds; pictures match the words; each image at most twice; at most one clip; nothing on PAUSE lines) and answer with the COMPLETE JSON object {"turns": [...], "years": [...]}.';
+const STORY_SELF_CHECK = 're-check your storyboard (phrases verbatim, unique and in order; a visual every 3-6 seconds; pictures match the words; each image within its "uses"; at most one clip; nothing on PAUSE lines) and answer with the COMPLETE JSON object {"turns": [...], "years": [...]}.';
 export const storySelfCheckFor = (followup: string) => (followup === STORY_REVIEW ? STORY_SELF_CHECK : followup);
 
 export function storyboardPrompt(index: number, outline: Outline, turns: PipelineTurn[], durations: number[], catalog: CatalogEntry[], maps: MapData, blockedCustoms?: Set<string>): string {
   const act = outline.acts[index];
   const span = turns.map((t, i) => ({t, i})).filter(({i}) => i >= act.turns.from && i <= act.turns.to);
-  const actText = [act.title, act.purpose, ...span.map(({t}) => cleanSpeech(t.text ?? ''))].join(' ');
-  const assets = assetsForAct(catalog, actText);
-  const customs = customsForAct(actText, blockedCustoms);
+  const {assets, uses, customs} = allocateActs(outline, turns, catalog, blockedCustoms)[index];
   return [
     'You are the storyboard artist for a top-tier APUSH history documentary that must beat Heimler\'s History on YouTube. Decide WHAT is on screen for each line of ONE act. Do not time shots: an editor times them from the narration.',
     '',
@@ -36,7 +34,7 @@ export function storyboardPrompt(index: number, outline: Outline, turns: Pipelin
     '- Each visual lands on a phrase: 2-6 consecutive words copied VERBATIM from that line, unique within the line, in the order spoken.',
     '- Show what the words are about: the person named, the place, the document, the event, the object. For an abstract idea use a document detail, a map, a point card (1-3 bullets, <= 6 words each) or a listed custom explainer.',
     '- Kinds: "image" (optional "framing": "wide" | "face" | "detail"; first appearance of a person: add "name" and "role" for a name tag), "map" (a map view), "point", "custom" (only a listed explainer, only for its exact event), "clip" (a hero still with gentle ambient motion: smoke, water, flags; never faces or text; at most one per act).',
-    '- Images only from ASSETS, each at most twice in this act. Images marked retrospective (later imaginings) must not be presented as eyewitness records.',
+    '- Images only from ASSETS, each at most its "uses" in this act (the lesson shares each image between acts). Images marked retrospective (later imaginings) must not be presented as eyewitness records.',
     `- Variety: at most ${LOOK_RULES.maxPointsPerAct} point cards in the act (only for a spoken list or the thesis) and never two in a row; at most ${LOOK_RULES.maxMapRun} maps in a row; the same map view at most ${LOOK_RULES.maxViewPerAct} times in the act.`,
     '- "priority": "essential" for what the words name, "optional" for texture. "pace": "hold" on the act\'s key line, "quick" for a spoken list, "reveal" for a pull-back reveal.',
     `- Never put visuals on PAUSE lines (question cards are automatic). Recap, practice and next-time lines may revisit images shown earlier, within the lesson limit of ${LOOK_RULES.maxImageUses} uses per image; each custom explainer at most once per lesson, ${LOOK_RULES.maxCustoms} in all.`,
@@ -53,8 +51,8 @@ export function storyboardPrompt(index: number, outline: Outline, turns: Pipelin
     'A map\'s "period" is the moment the narration is about: a year (the map as it stood at the end of that year) or "YYYY-MM-DD" inside a year of change (1763-03-01 is before the Proclamation). The borders and claims the library has for that moment are drawn automatically; add only what the words point at.',
     COORDINATE_RULE,
     '',
-    `ASSETS for this act (${assets.length} of ${catalog.length}; path | size | max zoom | description):`,
-    ...(assets.length ? assets.map(c => `${c.path} | ${c.width}x${c.height} | ${fmtZoom(c.maxZoom)} | ${c.description.replace(/\s+/g, ' ').slice(0, 120)}${c.retrospective ? ' (retrospective)' : ''}`) : ['(none: use maps and point cards)']),
+    `ASSETS for this act (${assets.length} of ${catalog.length}; path | size | max zoom | uses | description):`,
+    ...(assets.length ? assets.map(c => `${c.path} | ${c.width}x${c.height} | ${fmtZoom(c.maxZoom)} | ${uses.get(c.path) ?? 1} | ${c.description.replace(/\s+/g, ' ').slice(0, 120)}${c.retrospective ? ' (retrospective)' : ''}`) : ['(none: use maps and point cards)']),
     '',
     ...(customs.length ? ['CUSTOM EXPLAINERS (name | event | what it shows):', ...customs.map(([n, c]) => `${n} | ${c.topic} | ${c.shows}`), ''] : []),
     'A focus target marked * is a region: "highlight": true on the move fills and names it as the camera arrives. Use it whenever the narration names that region (a spoken list of regions: one move per region, each highlighted on its words).',
@@ -97,6 +95,8 @@ export function validateStoryAct(raw: unknown, index: number, outline: Outline, 
   if (!a || !Array.isArray(a.turns)) return {issues: ['answer must be {"turns": [...], "years": [...]}']};
   const issues: string[] = [];
   const paths = new Set(catalog.map(c => c.path));
+  // The act's share of the lesson's images and explainers (the same split its prompt offered).
+  const share = allocateActs(outline, turns, catalog, blockedCustoms)[index];
   const perImage = new Map<string, number>();
   let clips = 0;
   for (const t of a.turns) {
@@ -108,14 +108,19 @@ export function validateStoryAct(raw: unknown, index: number, outline: Outline, 
       const image = v.kind === 'point' ? v.backdrop : v.image;
       if (image) {
         if (!paths.has(image)) issues.push(`turn ${t.turn}: "${image}" is not a listed asset`);
+        else if (!share.uses.has(image)) issues.push(`turn ${t.turn}: "${image}" is not offered to this act (other acts use it); pick one from ASSETS`);
         perImage.set(image, (perImage.get(image) ?? 0) + 1);
       }
       if (v.kind === 'clip') clips++;
       if (v.kind === 'custom' && (!v.component || blockedCustoms.has(v.component))) issues.push(`turn ${t.turn}: custom explainer "${v.component}" is not available`);
+      else if (v.kind === 'custom' && !share.customs.some(([name]) => name === v.component)) issues.push(`turn ${t.turn}: custom explainer "${v.component}" is not offered to this act (another act shows it); use a standard visual`);
       if (v.kind === 'map') issues.push(...mapGeoIssues(v.map ?? {}, geo).map(i => `turn ${t.turn}: ${i}`));
     }
   }
-  for (const [image, n] of perImage) if (n > 2) issues.push(`"${image}" is used ${n} times in this act; at most twice`);
+  for (const [image, n] of perImage) {
+    const allowed = share.uses.get(image) ?? 0;
+    if (allowed && n > allowed) issues.push(`"${image}" is used ${n} times in this act; at most ${allowed} here (the lesson shares it with other acts)`);
+  }
   // Variety an act can always fix on its own (blocking): point cards, maps in a row, one map view repeated.
   const ordered = a.turns.filter(t => Number.isInteger(t?.turn)).sort((x, y) => x.turn - y.turn).flatMap(t => (t.visuals ?? []).map(v => ({turn: t.turn, v})));
   const points = ordered.filter(x => x.v.kind === 'point');

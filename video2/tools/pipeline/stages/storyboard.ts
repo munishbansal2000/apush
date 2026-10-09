@@ -23,6 +23,7 @@ import {checkStoryboard, type Storyboard} from '../storyboard';
 import {directStoryboard, storySelfCheckFor} from '../storyboard-director';
 import {loadTreatments, proposeTreatment, saveTreatments} from '../treatments';
 import {readCheckedWords} from './words';
+import {mapImages} from '../image-map';
 
 const sha = (path: string) => sha256(readFileSync(path));
 const turnsHash = (turns: {id: string; kind: string; text?: string}[]) => sha256(JSON.stringify(turns.map(t => [t.id, t.kind, t.text ?? ''])));
@@ -121,7 +122,12 @@ function noteBuildProblems(review: LessonReview, sb: Storyboard, plan: ShotPlan,
 
 export function storyboardStage(ctx: PipelineContext): void {
   if (ctx.dryRun) { console.log('[storyboard] dry-run'); return; }
-  const {inputs, catalog, maps, io, agentDir, dataRoot} = prepare(ctx);
+  const prepared = prepare(ctx);
+  const {inputs, maps, io, agentDir, dataRoot} = prepared;
+  // Images -> lines first: each act is offered the images mapped to its lines.
+  const mapped = mapImages(ctx.episode, ctx.dataDir, inputs, io);
+  if (mapped === null) throw new PendingAnswers([relative(ROOT, pendingPromptFile(agentDir, 'image-map') ?? 'image-map')], 'the same command');
+  const catalog = mapped ? directorCatalog(inputs) : prepared.catalog;
   const review = loadLessonReview(ctx.episode, dataRoot);
   const sbPath = storyboardPathFor(ctx.dataDir);
   const outlinePath = join(ctx.work, 'doc-outline.accepted.json');

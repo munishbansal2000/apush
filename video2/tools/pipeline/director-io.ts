@@ -9,7 +9,7 @@ import type {DocInputs} from './doc-inputs';
 /** Approved library assets + this lesson's downloaded images (descriptions from data/<ep>/images.json). */
 export function directorCatalog(inputs: DocInputs): CatalogEntry[] {
   const registryPath = join(ROOT, 'data', inputs.episode, 'images.json');
-  const registry = existsSync(registryPath) ? readJson<Record<string, {description?: string}>>(registryPath) : {};
+  const registry = existsSync(registryPath) ? readJson<Record<string, {description?: string; used_in?: string[]}>>(registryPath) : {};
   const lessonImages = Object.fromEntries(Object.entries(inputs.options.imageSizes).filter(([path]) => path in registry));
   const indexPath = join(ROOT, 'src', 'data', 'library-index.json');
   const library = existsSync(indexPath)
@@ -17,7 +17,10 @@ export function directorCatalog(inputs: DocInputs): CatalogEntry[] {
     : [];
   // Images turned down in review are never offered.
   const rejected = inputs.options.rejectedImages ?? new Set<string>();
-  return buildCatalog(lessonImages, Object.fromEntries(Object.entries(registry).map(([k, v]) => [k, v.description ?? ''])), library).filter(c => !rejected.has(c.path));
+  // The image catalog's line mapping ("u3e1:t25" -> "t25") travels with each image to the act split.
+  const turnsOf = (path: string) => registry[path]?.used_in?.map(u => u.split(':').pop()!).filter(Boolean);
+  return buildCatalog(lessonImages, Object.fromEntries(Object.entries(registry).map(([k, v]) => [k, v.description ?? ''])), library)
+    .filter(c => !rejected.has(c.path)).map(c => (turnsOf(c.path)?.length ? {...c, turns: turnsOf(c.path)} : c));
 }
 
 /** Library geography (approved only, unless drafting), places and map views the director may reference. */

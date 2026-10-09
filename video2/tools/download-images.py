@@ -380,10 +380,15 @@ def download_lesson(lesson, throttle):
             lock[rel] = {"source_url": url, "sha256": digest, "width": size[0], "height": size[1],
                          "fetchedAt": datetime.now(timezone.utc).isoformat(timespec="seconds")}
         registry.get(rel, {}).pop("placeholder", None)
+        # The catalog's line mapping (which lines the image was picked for) decides which act is offered it.
+        mapped = [f"{lesson}:{t}" for t in img.get("turns") or []]
+        if rel in registry and mapped:
+            registry[rel]["used_in"] = mapped
         if rel not in registry:
             registry[rel] = {"description": img.get("title", ""), "source_url": lock[rel]["source_url"],
                              "download_urls": [u for u in (img.get("primary_url"), img.get("alt_url")) if u],
-                             "source": img.get("source"), "catalog_id": img["id"], "verified": img.get("verified")}
+                             "source": img.get("source"), "catalog_id": img["id"], "verified": img.get("verified"),
+                             **({"used_in": mapped} if mapped else {})}
         counts["registered"] += 1
         print(f"  [{i}/{len(images)}] {img['id']}: {status} {size[0]}x{size[1]}")
         # Saved after every image, so a stopped run resumes where it left off.

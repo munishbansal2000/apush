@@ -66,6 +66,7 @@ export function fakeContext(options: FakeOptions = {}) {
     estimateWords: false,
     images: 'download',
     editor: false,
+    directorWorkers: 1,
     stages: options.stages ?? [...PIPELINE_STAGES],
     cfg: structuredClone(DEFAULT_CONFIG),
     ...dirs,
@@ -86,6 +87,7 @@ export function fakeContext(options: FakeOptions = {}) {
       writeFileSync(out, JSON.stringify(options.meta(name, prompt, followupPrompt)));
       return out;
     },
+    metaBatch: jobs => jobs.map(j => ctx.meta(j.name, j.prompt, j.attachments, j.followupPrompt)),
   };
   return {ctx, root, runs, metaCalls, state, ttsCalls: () => runs.filter(r => r.args.includes('--write-media') || r.args.includes('--reference-id'))};
 }

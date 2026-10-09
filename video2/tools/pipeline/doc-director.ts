@@ -20,6 +20,8 @@ export interface CatalogEntry {
   height: number;
   /** Largest zoom (relative to a cover fit) that stays within the look's upscale limit. */
   maxZoom: number;
+  /** Turn ids the image catalog mapped it to ("t25"); decides which acts are offered it. */
+  turns?: string[];
   focus?: string[];
   retrospective?: boolean;
   date?: string;
@@ -80,6 +82,71 @@ export function assetsForAct(catalog: CatalogEntry[], actText: string, limit = A
 export function customsForAct(actText: string, blocked: Set<string> = new Set()): [string, (typeof CUSTOM_CATALOG)[keyof typeof CUSTOM_CATALOG]][] {
   const text = actText.toLowerCase();
   return Object.entries(CUSTOM_CATALOG).filter(([name]) => !blocked.has(name)).filter(([, c]) => c.keywords.some(k => new RegExp(`\\b${k.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`).test(text)));
+}
+
+/**
+ * The lesson's shared budgets, split between acts BEFORE they are boarded (acts are boarded independently, in parallel,
+ * so a limit checked only after assembly makes the acts fight over repairs):
+ *  - each image is offered to the acts it fits best (at most maxImageUses of them) with a per-act number of uses whose
+ *    sum stays within the lesson limit; images no act names go to the acts with the fewest pictures;
+ *  - each custom explainer is offered only to the act that names its event most, and the lesson offers at most
+ *    maxCustoms of them.
+ * Deterministic: the prompt and the check of an act's answer compute the same split.
+ */
+export interface ActAllocation {assets: CatalogEntry[]; uses: Map<string, number>; customs: ReturnType<typeof customsForAct>}
+
+export const actNarration = (act: Outline['acts'][number], turns: PipelineTurn[]) =>
+  [act.title, act.purpose, ...turns.slice(act.turns.from, act.turns.to + 1).map(t => cleanSpeech(t.text ?? ''))].join(' ');
+
+export function allocateActs(outline: Outline, turns: PipelineTurn[], catalog: CatalogEntry[], blocked: Set<string> = new Set()): ActAllocation[] {
+  const n = outline.acts.length;
+  const texts = outline.acts.map(act => actNarration(act, turns));
+  const docs = catalog.map(c => new Set(terms(assetText(c))));
+  const df = new Map<string, number>();
+  for (const d of docs) for (const t of d) df.set(t, (df.get(t) ?? 0) + 1);
+  const actTerms = texts.map(t => new Set(terms(t)));
+  const score = (act: number, i: number) => [...docs[i]].reduce((sum, t) => sum + (actTerms[act].has(t) ? Math.log(1 + catalog.length / df.get(t)!) : 0), 0);
+  const maxUses = LOOK_RULES.maxImageUses;
+  // Spread a lesson budget over k acts: 1-2 acts get 2 uses each, 3+ acts get 1 each (sum <= maxUses).
+  const share = (k: number) => (k <= Math.floor(maxUses / 2) ? 2 : 1);
+  const offered = outline.acts.map(() => new Map<number, number>()); // act -> image index -> score
+  const generic: number[] = [];
+  const actOf = new Map(turns.map((t, i) => [t.id, outline.acts.findIndex(a => i >= a.turns.from && i <= a.turns.to)]));
+  catalog.forEach((c, i) => {
+    // Mapped images go to the acts holding their lines (most mapped lines first); unmapped ones are ranked by relevance.
+    const mapped = new Map<number, number>();
+    for (const id of c.turns ?? []) { const a = actOf.get(id); if (a !== undefined && a >= 0) mapped.set(a, (mapped.get(a) ?? 0) + 1); }
+    const ranked = (mapped.size ? [...mapped].map(([a, k]) => ({a, s: 1000 + k + score(a, i)})) : Array.from({length: n}, (_, a) => ({a, s: score(a, i)})))
+      .filter(x => x.s > 0).sort((x, y) => y.s - x.s || x.a - y.a).slice(0, maxUses);
+    if (!ranked.length) generic.push(i);
+    for (const {a, s} of ranked) offered[a].set(i, s);
+  });
+  const uses = outline.acts.map(() => new Map<string, number>());
+  for (let i = 0; i < catalog.length; i++) {
+    const holders = offered.map((m, a) => (m.has(i) ? a : -1)).filter(a => a >= 0);
+    for (const a of holders) uses[a].set(catalog[i].path, share(holders.length));
+  }
+  // Pictures no act names (generic scenes): to the two acts with the fewest so far.
+  for (const i of generic) {
+    const pick = Array.from({length: n}, (_, a) => a).sort((x, y) => offered[x].size - offered[y].size || x - y).slice(0, 2);
+    for (const a of pick) { offered[a].set(i, 0); uses[a].set(catalog[i].path, share(pick.length)); }
+  }
+  const assets = offered.map((m, a) => {
+    const kept = [...m.entries()].sort((x, y) => y[1] - x[1] || catalog[x[0]].path.localeCompare(catalog[y[0]].path)).slice(0, ACT_ASSET_LIMIT).map(([i]) => catalog[i]);
+    for (const path of [...uses[a].keys()]) if (!kept.some(c => c.path === path)) uses[a].delete(path);
+    return kept.sort((x, y) => x.path.localeCompare(y.path));
+  });
+  // Custom explainers: the act that names the event most (ties: the earlier act); the most-named ones first.
+  const hits = (name: string, a: number) => (CUSTOM_CATALOG as Record<string, {keywords: readonly string[]}>)[name].keywords
+    .reduce((sum, k) => sum + (texts[a].toLowerCase().match(new RegExp(`\\b${k.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'g'))?.length ?? 0), 0);
+  const candidates = Object.keys(CUSTOM_CATALOG).filter(name => !blocked.has(name)).map(name => {
+    const per = Array.from({length: n}, (_, a) => hits(name, a));
+    const best = per.reduce((b, h, a) => (h > per[b] ? a : b), 0);
+    return {name, best, total: per.reduce((x, y) => x + y, 0)};
+  }).filter(c => c.total > 0).sort((x, y) => y.total - x.total || x.best - y.best).slice(0, LOOK_RULES.maxCustoms);
+  const all = customsForAct(texts.join(' '), blocked);
+  const customs = outline.acts.map((_, a) => all.filter(([name]) => candidates.some(c => c.name === name && c.best === a)));
+  return outline.acts.map((_, a) => ({assets: assets[a], uses: uses[a], customs: customs[a]}));
 }
 
 /* ------------------------------------ outline ------------------------------------ */
