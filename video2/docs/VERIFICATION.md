@@ -157,3 +157,9 @@ Segment cache keys no longer include audio, so narration-only edits re-mix audio
 
 Gate: typecheck 0, lint 0, tests 97/97.
 
+## P20: retired plan system removed
+
+`src/plan/{schema,sources,timing}.ts` deleted. Before deleting: `grep` showed no importer outside `src/plan/` (the three
+files only imported each other). `docs/HANDOFF.md` and a comment in `src/motion/layout.ts` updated. The full old system
+stays available in `remotion-src/`. Gate: typecheck 0, lint 0, tests 97/97.
+

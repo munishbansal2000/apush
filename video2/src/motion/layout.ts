@@ -5,7 +5,7 @@
  *
  * - `DESIGN` is the 16:9 design base the TYPE tokens are specified at. It is the ONLY place
  *   the base numbers appear (tests/plan.test.ts fails on 1280/720 literals elsewhere in
- *   src/motion, src/scenes and src/plan).
+ *   src/motion and src/scenes).
  * - `s` = type/spacing scale = short side / design short side (1 at 1280×720 and 720×1280,
  *   1.5 at 1080×1080). Overlays multiply TYPE sizes and paddings by it.
  * - `space` = the design space screen-space blocks lay out in (scaled by width / space.w):
