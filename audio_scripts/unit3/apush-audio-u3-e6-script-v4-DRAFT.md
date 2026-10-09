@@ -155,3 +155,30 @@ Maya: [confident tone] One thing to carry forward: the Articles solved the found
 Jay: [casual] From the map and the mess to the men in the hot room.
 
 Maya: [professional broadcast tone] See you there.
+
+## Sources (production-only, never spoken)
+
+Tier 1 = the three books (5steps2024, premium2027, princeton) + the APUSH Unit 3 review transcripts (incl. Norris). Tier 2 = Britannica + NPS only. Broad web is not a source.
+
+**Tier-1/2-verified claims:**
+- The Articles were drafted in 1777; ratification took four years because Maryland held out over western land claims, completing in 1781 (Tier 1).
+- The structure: one vote per state regardless of size; no power to tax; no power to regulate trade between the states; amendments required unanimous (13/13) consent (Tier 1).
+- The 1781 impost: a five percent tax on imports to pay the war debts; twelve states approved, Rhode Island alone killed it (the undisputed core; the later 1783 attempt's blockers conflict across sources — not taught).
+- Shays' Rebellion (1786): the causes were crushing private debt plus heavy state taxes plus hard-currency demands — both books list debt and taxes (F-AOC-001); Daniel Shays, a Continental Army veteran, led hundreds of farmers (premium2027: "hundreds of Massachusetts farmers, led by veteran Daniel Shays"; 5steps2024: "a veteran of the Continental Army," "hundreds of protestors") — never "thousands" (F-AOC-005); the rebels shut the courts and marched on the Springfield arsenal; a privately raised militia put the rebellion down (5steps2024: "The rebels were dispersed by a privately raised militia"; Princeton: "private citizens organized to put the rebellion down").
+- The Northwest Ordinance (1787): 5steps2024: "Taken together, the Northwest Ordinances were the most consequential legislation passed during the period of the Articles of Confederation"; the provisions taught are schools, slavery banned north of the Ohio River, and new states equal to the original thirteen — never colonies (Tier 1).
+- The Ohio country reality: Little Turtle's confederacy routed Harmar's army in 1790 and destroyed St. Clair's in 1791 at the Wabash (Britannica; F-AOC-004 corrected); over six hundred Americans killed — the worst U.S. Army defeat at Native hands; Wayne's victory at Fallen Timbers (1794); the Treaty of Greenville (1795), the tribes ceding most of Ohio (Tier 1 + Britannica).
+- Annapolis 1786: only five states showed up; Hamilton used the flop to call the Philadelphia convention (the script's "five states" stands; Princeton's "only five delegates" is the apparent book error — no book-error registration per section 7).
+- The Beard thesis: the historian Charles Beard argued the framers were protecting their money and their class — the rescue vs counter-revolution debate (Tier 1).
+
+**Disclosed (taught, but beyond Tier 1+2 or interpretive):**
+- Knox's warning to Washington is paraphrased, never quoted — no Tier-1 book contains the letter verbatim (fail-closed).
+- "The map vs the mess" (the Ordinance's orderly promise vs the Ohio country war) is interpretive framing of verified facts.
+- "Eight years of barely working" is the episode's synthesis, not a book line.
+
+**Cut per fail-closed rule (not taught):**
+- Virginia as co-blocker of the 1781 impost (the undisputed Rhode Island core only).
+- Boston merchants funding the militia (kept: "privately raised militia").
+- States taxing each other's goods at the border (kept: "couldn't regulate trade between the states").
+- The British trading guns to resisting Native nations (kept: the frontier forts).
+- Settlers "squatting" (the word cut as unverified).
+- "Sworn to secrecy" in the closer tease (cut as unverified).

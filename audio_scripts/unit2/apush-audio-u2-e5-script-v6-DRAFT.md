@@ -128,7 +128,7 @@ Marcus: [professional broadcast tone] London wrote the rules —
 
 Maya: [professional broadcast tone] and America thrived on the exceptions.
 
-## Sources (production footer — strip before TTS)
+## Sources (production-only, never spoken)
 # Tier 1 — premium2027 ch. 4 (Period 2): mercantilism — limited world wealth, maximize precious-metal share, favorable balance of trade (exports > imports); colonies defined as raw-material suppliers + markets for British manufactures; Navigation Acts from the 1650s; enumerated goods shipped only to Britain (tar/pitch/masts, rice/tobacco/sugar/indigo); Wool Act 1699, Hat Act 1732, Iron Act 1750 restricting colonial manufacturing; salutary neglect — early 1700s, "without excessive oversight," often attributed to Walpole (1721-1742) who urged the Crown not to excessively interfere with profitable trade; Molasses Act 1733 — prohibitive import tax on sugar/molasses from non-British colonies, Boston merchants routinely flouted it for rum distilleries.
 # Tier 1 — 5steps2024 ch. 8/gloss: mercantilism — finite world wealth, favorable balance of trade; Navigation Acts of 1660 — tobacco sold only to England, colonial sales to other countries routed through England, trade in English ships; Navigation Acts caused resentment but "not strictly enforced"; triangular trade system — Europe/Africa/colonies complex trading system (slaves to colonies, raw materials to Europe, finished goods to colonies); salutary neglect — British policy of relaxing enforcement of trade restrictions as long as colonies stayed loyal and traded with Britain.
 # Tier 1 — 5steps2024 (answer.xhtml): Adam Smith's The Wealth of Nations (1776) as the free-trade advocate's book.

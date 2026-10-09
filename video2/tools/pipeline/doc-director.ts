@@ -9,13 +9,14 @@
  * Each act's prompt contains only that act's turns, so editing one line changes one prompt (the Meta prompt cache keeps
  * the rest). The LLM never writes seconds: every time is a phrase quoted from a turn, proven by the resolver.
  */
-import {readFileSync} from 'node:fs';
+import {existsSync, readFileSync} from 'node:fs';
 import {cleanSpeech} from './speech';
 import {resolveBoxes} from './cues';
 import {LOOK_RULES, resolveShotPlan, type PlanShot, type ResolveOptions, type ShotPlan} from './shots';
 import type {PipelineTurn, WordTiming} from '../pipeline-core';
 import {ATMOSPHERES} from '../../src/documentary/atmosphere';
 import {CUSTOM_CATALOG} from '../../src/components/custom/catalog';
+import {PATCH_FORMAT, applyActPatch, indexedAct, isFullAct, isPatch} from './act-patch';
 
 /* ------------------------------------ catalog ------------------------------------ */
 
@@ -50,6 +51,49 @@ export function buildCatalog(
   for (const e of library) add(e.path, e.width && e.height ? {width: e.width, height: e.height} : imageSizes[e.path], {description: e.description, focus: e.focus, retrospective: e.retrospective, date: e.date});
   return [...entries.values()].sort((a, b) => a.path.localeCompare(b.path));
 }
+
+/* ---------------------------- per-act selection (prompt size) ---------------------------- */
+
+/** An act prompt offers at most this many images: the ones its narration is about (keeps prompts ~3k tokens). */
+export const ACT_ASSET_LIMIT = 30;
+/** With few matches, still offer at least this many (generic scenes and maps can carry any narration). */
+const ACT_ASSET_MIN = 12;
+const DESCRIPTION_CHARS = 120;
+const STOPWORDS = new Set('the and for with that this from into over under then than they them their there what when where which while who whom whose will would could should about after before because been being were was are has have had his her its our your you not but all any can one two three also just only very more most some such each other upon onto out off own same too here how why did does doing done said says like well back even still much many made make'.split(' '));
+
+const terms = (text: string): string[] =>
+  text.toLowerCase().replace(/[^a-z0-9'\s-]/g, ' ').split(/[\s-]+/).map(w => w.replace(/'s$|'/g, '').replace(/(?<=[a-z]{3})s$/, ''))
+    .filter(w => w.length >= 3 && !STOPWORDS.has(w));
+
+/** Text the director sees for an image, also what relevance is scored on. */
+const assetText = (c: CatalogEntry) => `${c.path.split('/').pop()!.replace(/\.[^.]+$/, '').replace(/[-_.]/g, ' ')} ${c.description} ${(c.focus ?? []).join(' ')}`;
+
+/**
+ * The images an act prompt offers: every image when the catalog is small, otherwise the ACT_ASSET_LIMIT whose name,
+ * description and focus tags share the most distinctive words with the act (words rare across the catalog count more).
+ */
+export function assetsForAct(catalog: CatalogEntry[], actText: string, limit = ACT_ASSET_LIMIT): CatalogEntry[] {
+  if (catalog.length <= limit) return catalog;
+  const docs = catalog.map(c => new Set(terms(assetText(c))));
+  const df = new Map<string, number>();
+  for (const d of docs) for (const t of d) df.set(t, (df.get(t) ?? 0) + 1);
+  const act = new Set(terms(actText));
+  const scored = catalog.map((c, i) => ({c, score: [...docs[i]].reduce((sum, t) => sum + (act.has(t) ? Math.log(1 + catalog.length / df.get(t)!) : 0), 0)}));
+  const ranked = scored.filter(x => x.score > 0).sort((a, b) => b.score - a.score || a.c.path.localeCompare(b.c.path)).slice(0, limit).map(x => x.c);
+  const filler = ranked.length < ACT_ASSET_MIN ? scored.filter(x => x.score === 0).slice(0, ACT_ASSET_MIN - ranked.length).map(x => x.c) : [];
+  return [...ranked, ...filler].sort((a, b) => a.path.localeCompare(b.path));
+}
+
+/** Custom explainers whose event the act's narration names (by keyword); usually none, at most a couple. */
+export function customsForAct(actText: string): [string, (typeof CUSTOM_CATALOG)[keyof typeof CUSTOM_CATALOG]][] {
+  const text = actText.toLowerCase();
+  return Object.entries(CUSTOM_CATALOG).filter(([, c]) => c.keywords.some(k => new RegExp(`\\b${k.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`).test(text)));
+}
+
+const shortDescription = (text: string) => {
+  const t = text.replace(/\s+/g, ' ').trim();
+  return t.length <= DESCRIPTION_CHARS ? t : `${t.slice(0, t.lastIndexOf(' ', DESCRIPTION_CHARS)).replace(/[,;:]$/, '')}…`;
+};
 
 /* ------------------------------------ outline ------------------------------------ */
 
@@ -136,6 +180,9 @@ const fmtZoom = (z: number) => z.toFixed(2);
 export function actPrompt(index: number, outline: Outline, turns: PipelineTurn[], durations: number[], catalog: CatalogEntry[], maps: MapData): string {
   const act = outline.acts[index];
   const span = turns.map((t, i) => ({t, i})).filter(({i}) => i >= act.turns.from && i <= act.turns.to);
+  const actText = [act.title, act.purpose, ...span.map(({t}) => cleanSpeech(t.text ?? ''))].join(' ');
+  const assets = assetsForAct(catalog, actText);
+  const customs = customsForAct(actText);
   return [
     'You are the director of a top-tier APUSH documentary that must beat Heimler\'s History on YouTube. Direct the SHOTS for ONE act.',
     '',
@@ -153,6 +200,7 @@ export function actPrompt(index: number, outline: Outline, turns: PipelineTurn[]
     `- Zoom is between 1.0 and that image's max zoom (listed). x and y (0..1) are the point to centre, e.g. a face.`,
     `- The same image may appear in at most ${LOOK_RULES.maxImageUses} shots in the whole lesson; prefer variety.`,
     '- "clip" (generated motion from a still) only for one big battle, fire, sea or crowd moment, at most one per act; prompt describes ambient motion only (smoke, water, flags, trees), never camera moves, never new people.',
+    ...(customs.length ? [] : ['- No custom explainer fits this act: do not use "custom" shots.']),
     `- "custom" (a hand-built animated explainer from CUSTOM EXPLAINERS) only where the narration is about exactly that event: at most one per act, ${LOOK_RULES.maxCustoms} per lesson, each ${LOOK_RULES.minCustomSec}-${LOOK_RULES.maxMapSec}s, starting on the phrase that introduces the event.`,
     `- Optional "atmosphere" on image, clip, portrait and point shots (not maps or custom): ${ATMOSPHERES.join(', ')}.`,
     `- Every PAUSE turn of ${LOOK_RULES.questionPauseSec}s or more gets a "question" shot anchored to the pause itself ({"turn": pauseIndex}, no phrase), quoting the question VERBATIM from the line just before it (the question sentence only, not its setup). Mark questions after "N questions, AP-shaped" with "practice": true. Shorter pauses need nothing.`,
@@ -176,12 +224,10 @@ export function actPrompt(index: number, outline: Outline, turns: PipelineTurn[]
     '',
     'Return JSON only: {"shots": [...], "years": [...]}',
     '',
-    'ASSETS (path | size | max zoom | description | focus regions):',
-    ...(catalog.length ? catalog.map(c => `${c.path} | ${c.width}x${c.height} | ${fmtZoom(c.maxZoom)} | ${c.description.replace(/\s+/g, ' ').slice(0, 200)}${c.retrospective ? ' (retrospective)' : ''}${c.focus?.length ? ` | ${c.focus.join(', ')}` : ''}`) : ['(none: use maps and point cards only)']),
+    `ASSETS for this act (${assets.length} of ${catalog.length}; path | size | max zoom | description | focus regions):`,
+    ...(assets.length ? assets.map(c => `${c.path} | ${c.width}x${c.height} | ${fmtZoom(c.maxZoom)} | ${shortDescription(c.description)}${c.retrospective ? ' (retrospective)' : ''}${c.focus?.length ? ` | ${c.focus.join(', ')}` : ''}`) : ['(none: use maps and point cards only)']),
     '',
-    'CUSTOM EXPLAINERS (name | event | what it shows):',
-    ...Object.entries(CUSTOM_CATALOG).map(([name, c]) => `${name} | ${c.topic} | ${c.shows}`),
-    '',
+    ...(customs.length ? ['CUSTOM EXPLAINERS (name | event | what it shows):', ...customs.map(([name, c]) => `${name} | ${c.topic} | ${c.shows}`), ''] : []),
     'MAP VIEWS (view id | name | focus targets):',
     ...(maps.views?.length ? maps.views.map(v => `${v.id} | ${v.name} | ${v.focus.join(', ')}`) : ['(none)']),
     '',
@@ -194,7 +240,15 @@ export function actPrompt(index: number, outline: Outline, turns: PipelineTurn[]
   ].join('\n');
 }
 
-export const ACT_REVIEW = `Switch roles: you are a skeptical senior editor. Re-check the shots you just wrote against every rule above: phrases verbatim from their turns, first shot in the first turn, cuts every 3-6 seconds, shot length limits, every image shot moves, zoom within each image's max zoom, only listed assets and geo ids, text limits, at most one clip, custom explainers only for their exact event. ${COORDINATE_RULE} Fix every problem silently and return ONLY the corrected JSON object {"shots": [...], "years": [...]}.`;
+const ACT_CHECKS = `phrases verbatim from their turns, first shot in the first turn, cuts every 3-6 seconds, shot length limits, every image shot moves, zoom within each image's max zoom, only listed assets, map views and geo ids, text limits, at most one clip, custom explainers only for their exact event. ${COORDINATE_RULE}`;
+/** Same-chat review (Meta UI): returns only what it changes, as a patch onto the draft it just wrote. */
+export const ACT_REVIEW = `Switch roles: you are a skeptical senior editor. Re-check the shots you just wrote against every rule above: ${ACT_CHECKS}\n${PATCH_FORMAT}`;
+/** Same-chat review with patches turned off (--no-patches): the complete corrected act. */
+export const ACT_REVIEW_FULL = `Switch roles: you are a skeptical senior editor. Re-check the shots you just wrote against every rule above: ${ACT_CHECKS} Fix every problem silently and return ONLY the corrected JSON object {"shots": [...], "years": [...]}.`;
+/** Single-pass agents have no draft to patch: they self-check and answer with the complete act. */
+export const ACT_SELF_CHECK = `re-check your shots against every rule above (${ACT_CHECKS}), fix every problem, and answer with the COMPLETE JSON object {"shots": [...], "years": [...]}.`;
+/** What a single-pass agent is told instead of a same-chat follow-up. */
+export const selfCheckFor = (followup: string) => (followup === ACT_REVIEW || followup === ACT_REVIEW_FULL ? ACT_SELF_CHECK : followup);
 
 /** Structural checks on one act before assembly (everything else is checked on the merged plan). */
 export function validateAct(raw: unknown, index: number, outline: Outline, turns: PipelineTurn[], durations: number[]): {act?: ActOutput; issues: string[]} {
@@ -258,16 +312,25 @@ export function assemblePlan(episode: string, outline: Outline, acts: ActOutput[
   return {plan: {episode, boxes: outline.boxes, shots, years}, shotAct, yearAct};
 }
 
-/** Problems from the merged-plan resolver, grouped by the act that owns them (-1 = outline-level). */
+/**
+ * Problems from the merged-plan resolver, grouped by the act that owns them (-1 = outline-level). Shot and year
+ * numbers are rewritten as 0-based indexes within the act ("shot 37" -> "shot index 4"), matching the patch format.
+ */
 export function issuesByAct(message: string, shotAct: number[], yearAct: number[]): Map<number, string[]> {
   const out = new Map<number, string[]>();
   const add = (act: number, line: string) => out.set(act, [...(out.get(act) ?? []), line]);
   for (const line of message.split('\n').slice(1).map(l => l.replace(/^\s*-\s*/, '')).filter(Boolean)) {
     const shot = /^shot ?0*(\d+)\b/.exec(line);
     const year = /^year (\d+)\b/.exec(line);
-    if (shot) add(shotAct[Number(shot[1]) - 1] ?? -1, line);
-    else if (year) add(yearAct[Number(year[1]) - 1] ?? -1, line);
-    else add(-1, line);
+    if (shot) {
+      const g = Number(shot[1]) - 1;
+      const act = shotAct[g] ?? -1;
+      add(act, act < 0 ? line : line.replace(shot[0], `shot index ${g - shotAct.indexOf(act)}`));
+    } else if (year) {
+      const g = Number(year[1]) - 1;
+      const act = yearAct[g] ?? -1;
+      add(act, act < 0 ? line : line.replace(year[0], `year index ${g - yearAct.indexOf(act)}`));
+    } else add(-1, line);
   }
   return out;
 }
@@ -291,6 +354,8 @@ export interface DirectorInputs {
   catalog: CatalogEntry[];
   maps: MapData;
   previousOutline?: Outline;
+  /** Review and repair answer with patches (default); false asks for complete acts every time. */
+  patches?: boolean;
 }
 
 export interface DirectorLog {stage: string; source: string; issues: string[]}
@@ -308,8 +373,11 @@ const lonLat = (value: unknown): [number, number] | null =>
  * only after the response has safely crossed the UI boundary.
  */
 export function materializeCoordinateObjects(raw: unknown): unknown {
-  if (!object(raw) || !Array.isArray(raw.shots)) return raw;
-  for (const value of raw.shots) {
+  if (!object(raw)) return raw;
+  // Full answers carry "shots"; review/repair patches carry new shots inside replace/insert edits.
+  const edits = [...(Array.isArray(raw.replace) ? raw.replace : []), ...(Array.isArray(raw.insert) ? raw.insert : [])];
+  const shots: unknown[] = Array.isArray(raw.shots) ? raw.shots : edits.map(e => (object(e) ? e.shot : null));
+  for (const value of shots) {
     if (!object(value)) continue;
     if (value.type === 'clip' && object(value.focus) && finite(value.focus.x) && finite(value.focus.y)) {
       value.focus = [value.focus.x, value.focus.y];
@@ -342,6 +410,20 @@ export function materializeCoordinateObjects(raw: unknown): unknown {
 
 const readAnswer = (path: string): unknown => materializeCoordinateObjects(JSON.parse(readFileSync(path, 'utf8')));
 
+/**
+ * An act answer as a full act: a full answer as is, a patch applied onto `base` (repairs) or onto the same-chat draft
+ * the Meta UI runner saved beside the answer (<name>.draft.json, reviews). Problems come back as repair lines.
+ */
+export function readActAnswer(path: string, base?: ActOutput): {raw?: unknown; issues: string[]} {
+  const raw = readAnswer(path);
+  if (!isPatch(raw)) return {raw, issues: []};
+  const draftPath = path.replace(/\.json$/, '.draft.json');
+  const onto = base ?? (existsSync(draftPath) ? readAnswer(draftPath) : undefined);
+  if (!isFullAct(onto)) return {issues: ['the answer is a patch but there is no earlier answer to apply it to; return the COMPLETE JSON object {"shots": [...], "years": [...]}']};
+  const applied = applyActPatch(onto as ActOutput, raw);
+  return applied.act ? {raw: applied.act, issues: []} : {issues: applied.issues};
+}
+
 export interface DirectorResult {plan?: ShotPlan; outline?: Outline; log: DirectorLog[]; /** Prompt names still awaiting answers (agent mode). */ pending?: string[]}
 
 export function directDocumentary(io: DirectorIO, input: DirectorInputs, maxRepairs = 2): DirectorResult {
@@ -364,21 +446,27 @@ export function directDocumentary(io: DirectorIO, input: DirectorInputs, maxRepa
   if (!outline) return {log};
 
   // 2. Acts (each validated structurally), then 3. assemble + resolve, 4. repair only failing acts.
+  const patches = input.patches ?? true;
   const prompts = outline.acts.map((_, i) => actPrompt(i, outline!, input.turns, input.timing.durations, input.catalog, input.maps));
   const acts: (ActOutput | undefined)[] = [];
+  /** Latest full answer per act, valid or not: what a repair patch applies to. */
+  const latest: (ActOutput | undefined)[] = [];
   const sources: string[] = [];
   const problems = new Map<number, string[]>();
   // Ask for every act before reading any answer, so external agents can work on all acts in parallel.
-  const asked = outline.acts.map((_, i) => ({name: `doc-act-${String(i + 1).padStart(2, '0')}`, path: io.meta(`doc-act-${String(i + 1).padStart(2, '0')}`, prompts[i], [], ACT_REVIEW)}));
+  const asked = outline.acts.map((_, i) => ({name: `doc-act-${String(i + 1).padStart(2, '0')}`, path: io.meta(`doc-act-${String(i + 1).padStart(2, '0')}`, prompts[i], [], patches ? ACT_REVIEW : ACT_REVIEW_FULL)}));
   const waiting = asked.filter(a => !a.path).map(a => a.name);
   if (waiting.length) return {outline, log, pending: waiting};
-  asked.forEach(({path}, i) => {
-    sources[i] = path!;
-    const checked = validateAct(readAnswer(sources[i]), i, outline!, input.turns, input.timing.durations);
-    log.push({stage: `act ${i + 1}`, source: sources[i], issues: checked.issues});
+  const take = (i: number, path: string, stage: string, base?: ActOutput) => {
+    sources[i] = path;
+    const answer = readActAnswer(path, base);
+    if (isFullAct(answer.raw)) latest[i] = answer.raw as ActOutput;
+    const checked = answer.issues.length ? {act: undefined, issues: answer.issues} : validateAct(answer.raw, i, outline!, input.turns, input.timing.durations);
+    log.push({stage, source: path, issues: checked.issues});
     acts[i] = checked.act;
-    if (!checked.act) problems.set(i, checked.issues);
-  });
+    if (checked.act) problems.delete(i); else problems.set(i, checked.issues);
+  };
+  asked.forEach(({path}, i) => take(i, path!, `act ${i + 1}`));
   for (let attempt = 0; attempt <= maxRepairs; attempt++) {
     if (!problems.size) {
       const {plan, shotAct, yearAct} = assemblePlan(input.episode, outline, acts as ActOutput[]);
@@ -396,17 +484,17 @@ export function directDocumentary(io: DirectorIO, input: DirectorInputs, maxRepa
     if (attempt === maxRepairs) return {outline, log};
     const repairs = [...problems].map(([i, lines]) => {
       const name = `doc-act-${String(i + 1).padStart(2, '0')}-repair-${attempt + 1}`;
-      return {i, name, path: io.meta(name, `${prompts[i]}\n\nYOUR PREVIOUS ANSWER FOR THIS ACT HAD THESE PROBLEMS; return the corrected JSON only:\n${lines.map(l => `- ${l}`).join('\n')}\n\nPREVIOUS ANSWER:\n${readFileSync(sources[i], 'utf8')}`)};
+      const previous = latest[i];
+      const ask = previous && !patches
+        ? `YOUR PREVIOUS ANSWER FOR THIS ACT HAD THESE PROBLEMS; return the corrected JSON only:\n${lines.map(l => `- ${l}`).join('\n')}\n\nPREVIOUS ANSWER:\n${JSON.stringify(previous)}`
+        : previous
+        ? `YOUR PREVIOUS ANSWER FOR THIS ACT HAD THESE PROBLEMS:\n${lines.map(l => `- ${l}`).join('\n')}\n\nPREVIOUS ANSWER (index: shot):\n${indexedAct(previous)}\n\nFix only what the problems need. ${PATCH_FORMAT}\nIf most shots must change, you may instead return the complete corrected {"shots": [...], "years": [...]}.`
+        : `YOUR PREVIOUS ANSWER FOR THIS ACT HAD THESE PROBLEMS:\n${lines.map(l => `- ${l}`).join('\n')}\n\nReturn the COMPLETE corrected JSON object {"shots": [...], "years": [...]} only.`;
+      return {i, name, path: io.meta(name, `${prompts[i]}\n\n${ask}`)};
     });
     const repairsWaiting = repairs.filter(r => !r.path).map(r => r.name);
     if (repairsWaiting.length) return {outline, log, pending: repairsWaiting};
-    for (const {i, path} of repairs) {
-      sources[i] = path!;
-      const checked = validateAct(readAnswer(sources[i]), i, outline, input.turns, input.timing.durations);
-      log.push({stage: `act ${i + 1} repair ${attempt + 1}`, source: sources[i], issues: checked.issues});
-      acts[i] = checked.act;
-      if (checked.act) problems.delete(i); else problems.set(i, checked.issues);
-    }
+    for (const {i, path} of repairs) take(i, path!, `act ${i + 1} repair ${attempt + 1}`, latest[i]);
   }
   return {outline, log};
 }

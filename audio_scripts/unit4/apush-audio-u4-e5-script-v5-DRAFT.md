@@ -164,7 +164,7 @@ Marcus: [professional broadcast tone] Missouri got in, Maine got out, the line g
 
 Maya: [professional broadcast tone] and the clock started ticking.
 
-# Sources (production-only, never spoken)
+## Sources (production-only, never spoken)
 # - 5 Steps to a 5: AP US History 2024, Ch. 12 (OEBPS/ch12.xhtml): 11 free / 11 slave states in 1819; cotton gin made cotton lucrative, raising demand for enslaved labor; Compromise mechanics — Missouri slave + Maine free, 36°30′ line through the Louisiana Territory; Clay as Speaker of the House resolving it in 1820.
 # - Princeton Review AP US History Premium Prep 2027, Ch. 6 (OEBPS/text/16_Chapter06.xhtml): Missouri applied for statehood as a slave state in 1818 with 11 slave / 11 free states; Jefferson's 1820 letter — "like a fire bell in the night" and "filled me with terror"; Compromise — Missouri slave, Maine free, 36°30′ line across the remaining Louisiana Territory (above: no slavery except Missouri; below: permitted); Tallmadge Amendment as gradual emancipation, rejected 1819 (COMPARISON tip box).
 # - Heimler transcript, "APUSH Unit 4/02" (public_contnent): Tallmadge Amendment by New York Congressman James Tallmadge — banned the introduction of slavery and gradually emancipated the enslaved; three-fifths clause meant a new slave state boosted Southern numbers in the House as well.

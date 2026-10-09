@@ -1,5 +1,5 @@
 # U1-E6 — Maya + Jay (Fish Audio)
-# Episode 6: Labor Systems. ~13 min experienced (1,832 words speech + 160s pauses)
+# Episode 6: Labor Systems. ~12 min experienced (1,832 words speech + 100s pauses)
 # Draft v7: fleet repair pass (2026-10-07) — box-1 and box-4 traps converted to
 # live beats (Jay voices the misconception, Maya catches him), box-3 redundant
 # trap proclamation cut, tag density 85.7% -> ~35%, F6/F7/F8/F5 accuracy fixes.
@@ -18,7 +18,6 @@
 # kree-OH-yohs (criollos), meh-STEE-sohs (mestizos), moo-LAH-tohs (mulatos),
 # BLAHS-koh NOO-nyehs VEH-lah (Blasco Núñez Vela), pee-SAH-rroh (Pizarro),
 # ahn-yah-KEE-toh (Añaquito), ah-see-EHN-dah (hacienda), peh-OHN (peón)
-
 Maya: [professional broadcast tone] Last time: Potosí, the silver mountain that bankrolled an empire. All of it ran on one thing: workers. And Spain kept running out of them. Four boxes on your sheet: the encomienda, the repartimiento, the Middle Passage, and the casta system with the hacienda hiding behind it. Circle the ones you couldn't explain right now. Twelve minutes, and you'll check all four off.
 
 Maya: [energetic] Warm-up. Name every labor system the Spanish tried.

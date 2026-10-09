@@ -37,7 +37,8 @@ export function docDirectStage(ctx: PipelineContext, opts: {allowEstimated?: boo
   const maps = directorMaps(inputs, ctx.draft);
   const out = shotsPathFor(ctx.episode);
   const directorSource = sha(join(ROOT, 'tools', 'pipeline', 'doc-director.ts'));
-  const hash = sha256(JSON.stringify({turns: inputs.turns, timing: inputs.timing, words: inputs.words, catalog, maps, directorSource, draft: ctx.draft}));
+  const patches = ctx.patches ?? true;
+  const hash = sha256(JSON.stringify({turns: inputs.turns, timing: inputs.timing, words: inputs.words, catalog, maps, directorSource, draft: ctx.draft, patches}));
   if (ctx.current('direct', hash) && existsSync(out)) { console.log('[direct] checkpoint current'); return; }
   const outlinePath = join(ctx.work, 'doc-outline.accepted.json');
   const agentDir = join(ctx.work, 'agent');
@@ -45,7 +46,7 @@ export function docDirectStage(ctx: PipelineContext, opts: {allowEstimated?: boo
   console.log(`[direct] ${inputs.turns.length} turns, ${catalog.length} usable images, ${maps.geo.length} geo features${ctx.agent ? ' (agent mode)' : ''}`);
   const result = directDocumentary(io, {
     episode: ctx.episode, turns: inputs.turns, timing: inputs.timing, words: inputs.words, options: inputs.options, catalog, maps,
-    previousOutline: priorOutlineFor(outlinePath, inputs.turns),
+    previousOutline: priorOutlineFor(outlinePath, inputs.turns), patches,
   });
   atomicJson(join(ctx.work, 'doc-director.json'), {episode: ctx.episode, at: new Date().toISOString(), pending: result.pending ?? [], log: result.log});
   for (const entry of result.log) if (entry.issues.length) console.log(`  [${entry.stage}] ${entry.issues.length} problem(s):\n${entry.issues.slice(0, 8).map(i => `    - ${i}`).join('\n')}`);

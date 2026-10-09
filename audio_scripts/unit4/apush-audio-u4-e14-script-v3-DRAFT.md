@@ -58,7 +58,8 @@ Marcus: The math is smaller than that. Four new ones at most, only with Texas's 
 
 Tomas: And the method was the scandal. Tyler signed an annexation treaty in eighteen forty-four, and the Senate killed it: treaties need two-thirds, and the votes weren't there. So Tyler went around the Senate with a joint resolution, which needs only simple majorities. Tyler signed on March first, eighteen forty-five.
 
-Maya: Hold on. Your turn. [10-second pause] Tyler's treaty is dead. The Senate won't give two-thirds. Congress still wants Texas. What procedure gets Texas in?
+Maya: Hold on. Your turn. Tyler's treaty is dead. The Senate won't give two-thirds. Congress still wants Texas. What procedure gets Texas in?
+[10-second pause]
 
 Marcus: You just heard it: the joint resolution. Same result, lower bar. Treaties need two-thirds; joint resolutions need simple majorities. The distinction IS the annexation story.
 
@@ -110,13 +111,21 @@ Maya: [confident tone] Eighteen forty-five, got it. Texas enters December twenty
 
 Maya: Self-test. Three questions, AP-shaped. Say your answer before I give it.
 
-Maya: One. O'Sullivan writes that Americans have a manifest destiny "to overspread the continent." A student says the phrase proves expansion was universally popular. What do you tell them? [10-second pause] The phrase shows how expansion was sold: providence, inevitability, morality. It says nothing about how it landed. The North fought every acre over slavery, and Mexico never agreed to any of it.
+Maya: One. O'Sullivan writes that Americans have a manifest destiny "to overspread the continent." A student says the phrase proves expansion was universally popular. What do you tell them?
+[10-second pause]
+The phrase shows how expansion was sold: providence, inevitability, morality. It says nothing about how it landed. The North fought every acre over slavery, and Mexico never agreed to any of it.
 
-Maya: Two, stimulus. Real words from eighteen thirty-seven: Tejano officer Juan Seguin, honoring the Alamo dead: "Texas shall be free and independent or we shall perish in glorious combat." What's the point of this source on an exam? [10-second pause] It proves Tejanos, Texans of Mexican descent, fought for independence. If a prompt asks who made the Texas Revolution, this source widens the frame: Tejanos bled for it too.
+Maya: Two, stimulus. Real words from eighteen thirty-seven: Tejano officer Juan Seguin, honoring the Alamo dead: "Texas shall be free and independent or we shall perish in glorious combat." What's the point of this source on an exam?
+[10-second pause]
+Maya: It proves Tejanos, Texans of Mexican descent, fought for independence. If a prompt asks who made the Texas Revolution, this source widens the frame: Tejanos bled for it too.
 
-Maya: Three. Why did Tyler's eighteen forty-four annexation treaty fail while the eighteen forty-five joint resolution succeeded? [10-second pause] A treaty needs two-thirds of the Senate; a joint resolution needs simple majorities. Tyler couldn't clear the higher bar, so he used the lower one. Say that sentence and you own box three.
+Maya: Three. Why did Tyler's eighteen forty-four annexation treaty fail while the eighteen forty-five joint resolution succeeded?
+[10-second pause]
+Maya: A treaty needs two-thirds of the Senate; a joint resolution needs simple majorities. Tyler couldn't clear the higher bar, so he used the lower one. Say that sentence and you own box three.
 
-Maya: One more, fast. Box four. Two rivers: which one did Mexico say was the real border? [10-second pause] The Nueces. Texas claimed the Rio Grande. Mix them up and the whole war makes no sense.
+Maya: One more, fast. Box four. Two rivers: which one did Mexico say was the real border?
+[10-second pause]
+Maya: The Nueces. Texas claimed the Rio Grande. Mix them up and the whole war makes no sense.
 
 Marcus: [professional broadcast tone] Destiny had a press release.
 
@@ -124,7 +133,7 @@ Maya: [professional broadcast tone] Mexico had the receipts.
 
 Maya: [professional broadcast tone] Next time: the border dispute becomes a battlefield. U4-E15, the Mexican-American War.
 
-## Sources
+## Sources (production-only, never spoken)
 - 5 Steps to a 5 APUSH 2024: ch14 (O'Sullivan 1845 coinage; verified wording "to overspread the continent allotted by Providence for the free development of our yearly multiplying millions"; Nueces vs Rio Grande dispute; Slidell sent Oct 1845, refused; Taylor posted along the Rio Grande; April 1846 Mexican attack; May 13, 1846 war declaration); ch03 (joint-resolution expedient to bring Texas in, 1845; Seguin burial oration Apr 4, 1837 — "Texas shall be free and independent or we shall perish in glorious combat," Tejano support for independence; boundary dispute led to the Mexican War); answer key (Alamo Feb 23–Mar 6, 1836, ~200 defenders, Santa Anna 3,000+, all Texans killed, ~600 Mexican casualties; San Jacinto Apr 21, 1836, "Remember the Alamo!"; Polk 1844 ran on Texas + all of Oregon; Texas admitted 1845)
 - Barron's Premium 2027: ch6 timeline (1822 Austin settlement; 1836 Alamo + Texas independence; 1845 Texas annexation and statehood); ch6 narrative ("slavery, which was banned in Mexico"; settlers "routinely flouted Mexican law... in practicing slavery"; Alamo "almost 200 died"; Goliad "almost 400 were killed"; Republic of Texas 1836, "Lone Star Republic"; Jackson blocked 1836 annexation, Van Buren and Harrison avoided it, Tyler pushed annexation through Congress in early 1845 after Polk's win); ch7 (O'Sullivan coined "manifest destiny" 1845; Oregon 54°40′)
 - Princeton Review: 045_c009_sup (TIER-1 CORRECTION: "54°40′ or Fight" was "not Polk's slogan, but one directed at him" — Northern congressmen demanding all of Oregon to balance Texas; Polk settled at the 49th parallel); Practice Test 3 Document 1 (O'Sullivan "Annexation," US Magazine and Democratic Review, July 1845 — the article the phrase comes from); 012_sec_2 diag (Manifest Destiny carried a claim of cultural/moral superiority entitling Americans to take land others lived on)

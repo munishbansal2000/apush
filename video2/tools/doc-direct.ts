@@ -6,6 +6,8 @@
  *
  * Agent mode writes out/pipeline/<ep>/agent/<name>.<hash>.prompt.md; answer each with JSON only in the matching
  * .answer.json and re-run. Without Vosk words, phrase times are estimated (fine for samples).
+ * Review and repair rounds answer with patches (changed shots only); --no-patches (or DIRECTOR_PATCHES=0) asks for
+ * complete acts instead. Also accepted by tools/video-pipeline.ts.
  */
 import {createContext} from './pipeline/context';
 import {PendingAnswers} from './pipeline/director-io';

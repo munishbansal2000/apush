@@ -1,5 +1,5 @@
 # U1 — Cram Session: Maya + Jay (Fish Audio)
-# Episode: Ten Questions, One Unit. ~15 min experienced (2,304 words speech + 130s pauses)
+# Episode: Ten Questions, One Unit. ~15 min experienced (2,304 words speech + 120s pauses)
 # Draft v3 (2026-10-07): repair pass over v2 for the 11 fleet-audit findings (0 blockers) — header pause math fixed,
 # African states' role added to the Middle Passage beat, encomienda→repartimiento reconciling step, de-duplicated
 # biology/economy/labor triptych, strengthened attributions, galleon beat broken up, eight/nine-episode Sources
@@ -23,7 +23,6 @@
 # maguey (mah-GAY); kiva (KEE-vuh); matrilineal; Bodin (boh-DAN); Malestroit (mah-leh-STRAH);
 # Urdaneta (oor-dah-NEH-tah); quinto; Huallpa (WAHL-pah); caravel (KAIR-uh-vel); lateen (luh-TEEN);
 # astrolabe (ASS-troh-layb); portolan (POR-toh-lahn); Reconquista (ray-kohn-KEES-tuh).
-
 Maya: [professional broadcast tone] Last time: the Pueblo Revolt, knotted cords, August 1680, and twelve years of Pueblo independence. This time: no new material. Eight episodes, ten questions, about thirteen minutes. The dare: say every answer out loud before Jay does. Circle the ones you couldn't explain right now.
 
 Jay: [sheepish] Ten questions. Last quiz I blanked on three of twelve.
@@ -284,7 +283,7 @@ Jay: [professional broadcast tone] and they're staying in my head this time.
 
 Maya: [professional broadcast tone] Next time: Unit 2. Thirteen colonies, an ocean apart from London.
 
-## Sources
+## Sources (production-only, never spoken)
 - Cross-checked against all nine rebuilt Unit 1 episodes (E1–E8 are the eight content episodes the ten questions cover; E9 is the sibling cram draft) — zero contradictions, zero references to dropped content:
 - U1-E1 LOCKED (v15): Native regions and the land-food-move chain; maize bred from teosinte, never found; Cahokia 10,000–20,000, Monk's Mound ~100 ft, emptied by the 1300s (cause uncertain); Iroquois Confederacy five founding nations, consensus not a vote, clan mothers, matrilineal gloss; managed landscape vs untouched-wilderness myth.
 - U1-E2 v10: three Gs ranked (gold first; bullion shortage hedged as historians' reading; Ottoman squeeze after 1453); Reconquista, Granada January 1492; toolkit (caravel, lateen, astrolabe, compass, portolan charts); Henry the Navigator funded the voyages, never sailed them, the navigation school mostly legend; Dias 1488, da Gama India 1498; Columbus four voyages, San Salvador, bad math, died insisting he'd found Asia; papal line (Spanish-born Alexander VI) → Tordesillas 1494, 370 leagues west of Cape Verde, bound Spain and Portugal only; France and England ignored it.

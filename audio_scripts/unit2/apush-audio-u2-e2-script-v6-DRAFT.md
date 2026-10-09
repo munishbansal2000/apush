@@ -1,5 +1,5 @@
 # U2-E2 — Maya + Marcus (Fish Audio)
-# Episode 2: From Servitude to Slavery. ~12 min experienced (1,831 words speech + 100s pauses)
+# Episode 2: From Servitude to Slavery. ~11 min experienced (1,831 words speech + 60s pauses)
 # Draft v5 (2026-10-06): full rebuild to the frozen 2026-10-06 standards from the v4 draft — Maya + Marcus interview,
 # three boxes with Maya's checkoffs, two prediction beats, exam devices (common-mistake lines, varied exam tips,
 # CER self-test with stimulus, fast bonus, LEQ tie-in), hedged facts, Morgan-debate both sides, attributed-quote disclosures.
@@ -18,7 +18,6 @@
 # fight together —" and Maya's landing line. Do not rush it. The ## Sources section is production-only, never spoken.
 # Pronunciation: BAY-kun (Bacon); BARK-lee (Berkeley); dohg (Doeg); sus-kwuh-HAN-uck (Susquehannock);
 # puh-MUNK-ee (Pamunkey); oh-kuh-NEE-chee (Occoneechee); PEED-mont (piedmont).
-
 Maya: [professional broadcast tone] Last time: four empires, four ways to want a continent — Spain's silver machine, France's beaver trade, the Dutch patroons, England's families and farms. This time: the labor that worked England's tobacco fields. Servants first. Then a rebellion burns the capital, and the planters rebuild the whole system on race. Three boxes: indentured servitude, Bacon's Rebellion, and the slave codes of 1705. Circle the ones you couldn't explain right now. Eleven minutes.
 
 Marcus: Start with the deal. A poor English kid signs away four to seven years of labor for a boat ticket. Call it the indenture: paid up front with the passage. The planter gets cheap labor, and the headright you met last episode sweetened it: fifty acres to whoever paid the passage. The acres followed the money: whoever paid got the land.
@@ -169,7 +168,7 @@ Marcus: [professional broadcast tone] One rebellion showed the planters the poor
 
 Maya: [professional broadcast tone] so the codes made sure they'd never fight together again.
 
-## Sources (production footer — strip before TTS)
+## Sources (production-only, never spoken)
 # Tier 1 — Barron's AP U.S. History Premium 2027, ch. 4 (Period 2: 1607–1754): freed servants pushed to the piedmont,
 # resented taxes and lack of representation, frontier violence; Bacon's Rebellion 1676 — Nathaniel Bacon, a lower-level
 # planter; Berkeley refused help fighting the American Indians (wealthy Virginians profited from Indian trade); Bacon

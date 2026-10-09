@@ -1,5 +1,5 @@
 # U2-E1 — Study Buddies: Maya + Jay (Fish Audio)
-# Episode 1: Four Ways to Want a Continent. ~12.5 min experienced (1,962 words speech + 90s pauses)
+# Episode 1: Four Ways to Want a Continent. ~12 min experienced (1,962 words speech + 60s pauses)
 # Draft v6 (2026-10-07): fleet repair pass over v5 — live traps replacing announcer-voice mistake
 # devices (B2), seigneur passage-promise claim cut per fail-closed (B3), Flushing Remonstrance
 # causality fixed to the book (M1), New France population hedged to Tier-1 (M2), Jesuit Relations
@@ -19,7 +19,6 @@
 # Stuyvesant (STY-vuh-sunt); Wendat (WEN-dat); Champlain (shahm-PLAYN); encomienda (ehn-koh-mee-EHN-dah);
 # casta (KAH-stah); criollos (kree-OH-yohs); peninsulares (peh-neen-soo-LAH-res); Huguenot (HYOO-guh-noht);
 # quinto (KEEN-toh); Suriname (soo-ruh-NAHM); Iroquois (EER-uh-kwoy); Jesuit Relations; Sephardic (suh-FAR-dik).
-
 Maya: [professional broadcast tone] Last time: Unit 1 in ten questions — one ocean making one world, on conquest's terms — ending with the Pueblo Revolt, 1680, knotted cords and twelve years of saying no. This time: four empires, one continent, four ways to want it. Four boxes on the sheet: Spain's extraction machine, France's fur empire, Holland's company colony, and England's settler play. Circle the ones you couldn't explain right now. Twelve minutes, quiz-style. I drive, you retrieve. Catch me blanking on a box and I owe you fries.
 
 Jay: [curious, inquisitive tone] Spain first. Souls and silver, right?
@@ -188,7 +187,7 @@ Jay: [intrigued] Four empires, four appetites —
 
 Maya: [intrigued] one continent, and the map still shows every bite.
 
-## Sources (production footer — strip before TTS)
+## Sources (production-only, never spoken)
 # Transcripts read:
 # - ~/workspace/apush/public_contnent/APUSH Unit 2/1 - How EUROPEANS Colonized the AMERICAS [APUSH Review].en.srt (Heimler's History)
 # Books consulted:

@@ -207,7 +207,10 @@ export function resolveShotPlan(input: ShotPlan, turns: PipelineTurn[], timing: 
           if (!place?.location) { issues.push(`${id} point ${n + 1}: place "${pt.place}" is unknown or has no location`); return []; }
           return [{sec: cue(`point ${n + 1}`, pt.at), at: place.location, label: pt.label ?? place.name, kind: pt.kind}];
         });
+        // Relief shading is decoration: a ridge line not yet approved is left out (outside drafts), not an error.
         const ridges = (shot.terrain?.ridges ?? []).flatMap(geoId => {
+          const f = opts.geo?.[geoId];
+          if (f && f.properties.review.status !== 'approved' && !opts.allowUnapproved) return [];
           const coords = lineCoords('terrain', {geo: geoId});
           return coords ? [coords] : [];
         });

@@ -1,8 +1,7 @@
 # U3-E2 — Maya + Marcus (Fish Audio)
-# Episode 19: Taxation Without Representation. Eleven and a half minutes experienced (1,881 spoken words + 63s scripted pauses = 11.5 min at 180 WPM).
+# Episode 19: Taxation Without Representation. Eleven and a half minutes experienced (1,881 spoken words + 50s pauses = 11.5 min at 180 WPM).
 # Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Maya tracks three boxes on her episode sheet: the Stamp Act, virtual representation, and the Declaratory Act. Strip this header and the read note before TTS; convert pause tags to silence. The em dash in the closing tagline is a held beat: leave a full breath between Marcus's setup line and Maya's landing line. Do not rush it. Self-test model answers follow claim-evidence-reasoning logic in natural phrasing; no spoken labels (per the user's 2026-10-06 ruling: TTS reads everything literally).
 # Pronunciation: GREN-vil (Grenville), OH-tiss (Otis), ROCK-ing-um (Rockingham), deh-KLAIR-uh-tor-ee (Declaratory), non-im-por-TAY-shun (nonimportation)
-
 Maya: [professional broadcast tone] Last time: the bill came due. The Sugar Act landed and the smuggling crackdown began. Thirteen colonies got London's message: the free ride is over. Now comes the tax that touched everything — your newspaper, your diploma, even your dice. Three boxes on your sheet: the Stamp Act, virtual representation, and the Declaratory Act. Circle the ones you couldn't explain right now. Eleven and a half minutes, and you'll land all three.
 
 Marcus: Seventeen sixty-five. Parliament passes the Stamp Act, and this one is different from everything before it. The old taxes were customs duties, paid at the docks when goods came in. This was a direct tax: Parliament reaching past the port, past the merchant, straight into a colonist's desk drawer.
@@ -151,9 +150,8 @@ Marcus: [professional broadcast tone] They killed the tax —
 
 Maya: [professional broadcast tone] — but not the claim.
 
----
 
-## Sources (production footer — strip before TTS)
+## Sources (production-only, never spoken)
 
 Tier 1:
 - 5steps2024 ch. 9 — Stamp Act (1765) as the first time Parliament imposed a direct tax on the colonies (vs. a customs duty on imported goods); stamped paper for wills, newspapers, playing cards; payable in scarce hard currency, not colonial paper money; "in violation of more than a century of precedent during which they had managed their own internal finances"; revenue service "reaching into the colonists' domestic affairs, taxing elements of their everyday lives"; July 1765 — Samuel Adams played a leading role organizing the Sons of Liberty in Boston; stamp agent for Massachusetts intimidated into surrendering his office, other stamp agents compelled to resign; Daughters of Liberty — boycotts of British goods, women's purchasing power as main household consumers, herbal teas, spinning bees for textiles; merchants' non-importation agreements; Oct 1765 Stamp Act Congress (NYC, nine colonies) — Declaration of Rights and Grievances, colonists could not be taxed by a body that did not represent them; British business owners lobbied effectively against the Stamp Act; Grenville left office July 1765, Rockingham replaced him; repeal early 1766; Declaratory Act asserted the right to legislate for the colonies "in all cases whatsoever," passed as a "face-saving measure."

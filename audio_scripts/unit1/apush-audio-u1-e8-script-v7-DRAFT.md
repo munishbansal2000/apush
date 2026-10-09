@@ -151,3 +151,33 @@ Maya: One more, fast. An LEQ asks whether Native resistance changed colonial rul
 Maya: The twelve years. 1680 proves they could fight; the twelve years prove the empire had to change — land grants, a public defender, tolerated ceremonies. Only the twelve years answer the prompt.
 
 Maya: [intrigued] One thing to carry forward: the story of this continent isn't only defeat. Sometimes the conquered organized, counted down the days in knots, and took a whole province back — and the empire that returned was never the same. Check your three boxes. Next time: the whole unit in one episode. The Unit 1 cram session.
+
+## Sources (production-only, never spoken)
+
+Tier 1 = the three books (5steps2024, premium2027, princeton) + the APUSH Unit 1 review transcripts. Tier 2 = Britannica + NPS only. Broad web is not a source.
+
+**Tier-1/2-verified claims:**
+- Spanish in New Mexico since the 1590s; the Franciscan missions aimed to replace Pueblo religion with Catholicism; kivas banned, masks and sacred objects burned, medicine men rounded up as sorcerers; the old religion never died — it went underground (Tier 1; Layer-3 30-claim check clean).
+- Pueblo labor underpinned the colony: mission farms plus the encomienda system pulling Pueblo men into colonists' labor (Tier 1; Layer-3 clean).
+- Popé: a Tewa religious leader from Ohkay Owingeh (San Juan Pueblo), not a king; withdrew to Taos, out of Santa Fe's reach, and spent five years planning (Tier 1; Britannica: "Pope (died 1692, San Juan Pueblo...) was a Tewa Pueblo who led an all-Indian revolt in 1680").
+- The knotted-cord calendar: maguey-fiber cords carried by runners, one knot per day; two Tesuque runners were caught, so Pope moved the date up; the pueblos rose August 10, 1680 (Pedro Naranjo's testimony in the Spanish interrogation records).
+- Naranjo's account of Pope's vision: three spirits with fire shooting from their bodies, commanding him to purge the Spanish so the world would be made whole (Naranjo testimony; the Spanish-pens disclosure is in-dialogue).
+- The rising: close to four hundred Spaniards killed, twenty-one priests; Santa Fe besieged and its water cut; Governor Otermín abandoned the city on August 21 and led the survivors south to El Paso ("the governor's own account," F-U1-057).
+- Twelve years of self-rule, 1680-1692: churches, crosses, and baptismal names destroyed; converts scrubbed baptism off with yucca (Tier 1; Layer-3 clean).
+- Popé deposed within a few years — too much control, too little rain (drought); the Spanish called him a tyrant; the records go quiet afterward; died 1692 (Britannica).
+- 1692: Vargas negotiated his way into Santa Fe — pardons and promises, bloodless by the Spanish accounts (F-U1-055: negotiated return vs 1693 force retaking).
+- 1693: Vargas returned with hundreds of colonists; Santa Fe fell by force; dozens of Pueblo men executed (Spanish accounts).
+- The reconquest bargain: land grants to each Pueblo (community grants, F-U1-056); a public defender appointed to protect Pueblo rights in Spanish courts (premium2027 ch4); kivas and dances tolerated as never before; the reforms were driven by fear, not kindness (Princeton's framing).
+- Tier 1 calls the revolt "one of the most successful" Native uprisings — never "the single most successful" (F-U1-051).
+- Timing trap: 1680 is the rising, 1692 the return.
+
+**Disclosed (taught, but beyond Tier 1+2 or interpretive):**
+- The 1675 figures (47/4/3/1) are web-tier, labeled honestly in-dialogue (F-U1-054).
+- Everything about Pope's words and the spirit vision reaches us through Spanish interrogation records — "through Spanish pens," disclosed in the read note and in-dialogue (F-U1-053).
+- "The empire that came back was chastened by fear" is interpretive framing; the fear-motive itself is Princeton's (F-U1-056).
+- Popé's Capitol statue (carved by Cliff Fragua, 2005) is a public-record detail, not a Tier-1 book claim.
+
+**Cut per fail-closed rule (not taught):**
+- Popé "re-elected in 1688" — no Tier-1/2 source; withdrawn from F-U1-050 (falsehood pattern added).
+- "21 of the 33 Franciscans" — denominator dropped; the script says "twenty-one priests" (F-U1-052).
+- Per-family land grants — unsupported; the community framing is taught (F-U1-056).

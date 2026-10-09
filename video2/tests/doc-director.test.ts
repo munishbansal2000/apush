@@ -4,7 +4,8 @@ import {tmpdir} from 'node:os';
 import {join} from 'node:path';
 import {describe, it} from 'node:test';
 import {parseTranscript, type PipelineTurn} from '../tools/pipeline-core';
-import {actPrompt, buildCatalog, directDocumentary, validateOutline, type Outline} from '../tools/pipeline/doc-director';
+import {ACT_ASSET_LIMIT, ACT_REVIEW, ACT_REVIEW_FULL, ACT_SELF_CHECK, actPrompt, assetsForAct, buildCatalog, customsForAct, directDocumentary, selfCheckFor, validateOutline, type ActOutput, type Outline} from '../tools/pipeline/doc-director';
+import {applyActPatch, isPatch} from '../tools/pipeline/act-patch';
 import type {GeoFeature, PlanShot, ShotPlan} from '../tools/pipeline/shots';
 
 const root = new URL('..', import.meta.url).pathname;
@@ -111,3 +112,119 @@ describe('documentary director', () => {
   });
 });
 
+describe('act prompt size: per-act images and custom explainers', () => {
+  const big = buildCatalog(Object.fromEntries([
+    ...Array.from({length: 60}, (_, i) => [`historic/filler-${String(i).padStart(2, '0')}.jpg`, {width: 3000, height: 2000}]),
+    ['historic/pontiac-council.jpg', {width: 3000, height: 2000}], ['historic/grenville.jpg', {width: 3000, height: 2000}],
+  ]), {
+    ...Object.fromEntries(Array.from({length: 60}, (_, i) => [`historic/filler-${String(i).padStart(2, '0')}.jpg`, `Harbor scene with ships and sailors, view ${i}`])),
+    'historic/pontiac-council.jpg': 'Pontiac addresses the council of Ottawa leaders before the siege of Detroit',
+    'historic/grenville.jpg': 'Portrait of George Grenville, prime minister',
+  });
+
+  it('offers at most ACT_ASSET_LIMIT images, the ones the act talks about first', () => {
+    const picked = assetsForAct(big, 'Pontiac gathers the Ottawa and strikes Detroit. The forts fall.');
+    assert.ok(picked.length <= ACT_ASSET_LIMIT);
+    assert.ok(picked.some(c => c.path === 'historic/pontiac-council.jpg'));
+    assert.ok(!picked.some(c => c.path === 'historic/grenville.jpg'), 'an unrelated portrait is not offered');
+    assert.equal(assetsForAct(big.slice(0, 10), 'anything').length, 10, 'a small catalog is offered whole');
+  });
+
+  it('offers a custom explainer only when the narration names its event', () => {
+    assert.deepEqual(customsForAct('Then Pontiac moves on Detroit.').map(([n]) => n), ['PontiacFortsMap']);
+    assert.deepEqual(customsForAct('London counts the money.'), []);
+    assert.deepEqual(customsForAct('Stamp Act riots in Boston').map(([n]) => n), ['StampActTax']);
+  });
+
+  it('keeps an act prompt small with a large catalog', () => {
+    const prompt = actPrompt(0, outline, turns, durations, big, maps);
+    assert.ok((prompt.match(/^historic\//gm) ?? []).length <= ACT_ASSET_LIMIT);
+    assert.ok(!/CUSTOM EXPLAINERS/.test(prompt) || /PontiacFortsMap/.test(prompt));
+  });
+});
+
+describe('review and repair patches (only changed shots come back)', () => {
+  const base = {shots: [
+    {type: 'image_move', at: {turn: 1, phrase: 'then start with the bill'}, image: 'a.jpg'},
+    {type: 'image_move', at: {turn: 1, phrase: 'drowning in debt'}, image: 'b.jpg'},
+    {type: 'image_move', at: {turn: 2, phrase: 'someone else to bill'}, image: 'c.jpg'},
+  ], years: [{at: {turn: 1, phrase: 'then start'}, text: '1763'}]} as unknown as ActOutput;
+  const img = (shots: unknown[]) => shots.map(s => (s as {image: string}).image);
+
+  it('replaces, removes and inserts by index, checked against each shot anchor', () => {
+    const r = applyActPatch(base, {
+      replace: [{index: 1, anchor: {turn: 1, phrase: 'Drowning in debt!'}, shot: {type: 'image_move', at: {turn: 1, phrase: 'drowning in debt'}, image: 'B.jpg'}}],
+      remove: [{index: 2, anchor: {turn: 2, phrase: 'someone else to bill'}}],
+      insert: [{index: -1, shot: {image: 'first.jpg'}}, {index: 0, anchor: {turn: 1, phrase: 'then start with the bill'}, shot: {image: 'after-a.jpg'}}],
+      years: [],
+    });
+    assert.deepEqual(r.issues, []);
+    assert.deepEqual(img(r.act!.shots), ['first.jpg', 'a.jpg', 'after-a.jpg', 'B.jpg']);
+    assert.deepEqual(r.act!.years, []);
+    assert.deepEqual(applyActPatch(base, {ok: true}).act, base, '{"ok": true} keeps the draft');
+  });
+
+  it('corrects an off-by-one index from the anchor, and rejects edits it cannot place', () => {
+    const fixed = applyActPatch(base, {replace: [{index: 2, anchor: {turn: 1, phrase: 'drowning in debt'}, shot: {image: 'B.jpg'}}]});
+    assert.deepEqual(img(fixed.act!.shots), ['a.jpg', 'B.jpg', 'c.jpg']);
+    assert.match(applyActPatch(base, {replace: [{index: 7, anchor: {turn: 9, phrase: 'nothing'}, shot: {}}]}).issues.join('\n'), /do not identify one shot/);
+    assert.match(applyActPatch(base, {replace: [{index: 0, shot: {image: 'x'}}], remove: [{index: 0}]}).issues.join('\n'), /both replaced and removed/);
+    assert.ok(!isPatch({shots: []}) && isPatch({ok: true}) && !isPatch({ok: true, extra: 1}));
+  });
+
+  function draftIO(answers: Record<string, {answer: unknown; draft?: unknown}>) {
+    const dir = mkdtempSync(join(tmpdir(), 'v2-patch-'));
+    const calls: string[] = [];
+    return {calls, io: {meta: (name: string) => {
+      calls.push(name);
+      const a = answers[name];
+      if (!a) throw new Error(`unexpected LLM call ${name}`);
+      writeFileSync(join(dir, `${name}.json`), JSON.stringify(a.answer));
+      if (a.draft) writeFileSync(join(dir, `${name}.draft.json`), JSON.stringify(a.draft));
+      return join(dir, `${name}.json`);
+    }}};
+  }
+
+  it('applies a same-chat review patch onto the saved draft, and a repair patch onto the previous answer', () => {
+    const broken = {shots: act2.shots.map((s, i) => (i === 1 ? {...s, at: {turn: s.at.turn, phrase: 'words nobody said'}} : s))};
+    const {io, calls} = draftIO({
+      'doc-outline': {answer: outline},
+      'doc-act-01': {answer: {ok: true}, draft: act1},
+      'doc-act-02': {answer: {remove: [{index: 0, anchor: act2.shots[0].at}], insert: [{index: -1, shot: act2.shots[0]}]}, draft: broken},
+      'doc-act-02-repair-1': {answer: {replace: [{index: 1, anchor: {turn: broken.shots[1].at.turn, phrase: 'words nobody said'}, shot: act2.shots[1]}]}},
+    });
+    const r = directDocumentary(io, {episode: 'u3e1', turns, timing, words: {}, options, catalog, maps});
+    assert.ok(r.plan, JSON.stringify(r.log, null, 1));
+    assert.deepEqual(calls, ['doc-outline', 'doc-act-01', 'doc-act-02', 'doc-act-02-repair-1']);
+    assert.match(r.log.find(l => l.stage.startsWith('assembled (attempt 1)'))!.issues.join('\n'), /^shot index 1 at: turn 1/m, 'repair lines use act-local indexes');
+    assert.equal(r.plan!.shots.length, sample.shots.length);
+  });
+
+  it('a patch with nothing to apply to asks for the complete act; agents are told to answer in full', () => {
+    const {io, calls} = draftIO({'doc-outline': {answer: outline}, 'doc-act-01': {answer: act1}, 'doc-act-02': {answer: {ok: true}}, 'doc-act-02-repair-1': {answer: act2}});
+    const r = directDocumentary(io, {episode: 'u3e1', turns, timing, words: {}, options, catalog, maps});
+    assert.ok(r.plan);
+    assert.deepEqual(calls.slice(-1), ['doc-act-02-repair-1']);
+    assert.match(r.log.find(l => l.stage === 'act 2')!.issues.join('\n'), /no earlier answer to apply it to/);
+    assert.equal(selfCheckFor(ACT_REVIEW), ACT_SELF_CHECK);
+    assert.equal(selfCheckFor(ACT_REVIEW_FULL), ACT_SELF_CHECK);
+    assert.doesNotMatch(ACT_SELF_CHECK, /"replace"/);
+  });
+
+  it('--no-patches: the review and repair ask for complete acts', () => {
+    const prompts: Record<string, string> = {};
+    const broken = {shots: act2.shots.map((s, i) => (i === 1 ? {...s, at: {turn: s.at.turn, phrase: 'words nobody said'}} : s))};
+    const answers: Record<string, unknown> = {'doc-outline': outline, 'doc-act-01': act1, 'doc-act-02': broken, 'doc-act-02-repair-1': act2};
+    const dir = mkdtempSync(join(tmpdir(), 'v2-nopatch-'));
+    const io = {meta: (name: string, prompt: string, _a?: string[], followup?: string) => {
+      prompts[name] = `${prompt}\n${followup ?? ''}`;
+      writeFileSync(join(dir, `${name}.json`), JSON.stringify(answers[name]));
+      return join(dir, `${name}.json`);
+    }};
+    const r = directDocumentary(io, {episode: 'u3e1', turns, timing, words: {}, options, catalog, maps, patches: false});
+    assert.ok(r.plan);
+    assert.doesNotMatch(prompts['doc-act-01'], /"replace"/);
+    assert.match(prompts['doc-act-01'], /return ONLY the corrected JSON object/);
+    assert.doesNotMatch(prompts['doc-act-02-repair-1'], /"replace"/);
+  });
+});

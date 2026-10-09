@@ -1,8 +1,7 @@
 # U3-E11 — Interview: Maya + Marcus (Fish Audio)
-# Episode 28: The Revolution of 1800. ~10 min experienced (1,565 spoken words + 68s scripted pauses = ≈9.8 min at ≤180 WPM).
+# Episode 28: The Revolution of 1800. ~10 min experienced (1,565 spoken words + 60s pauses = ≈9.8 min at ≤180 WPM).
 # Pronunciation: Crèvecoeur (krev-KUR), Gallatin (GAL-uh-tin)
 # Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. They are production silence — real quiet in the mix, never spoken. Strip this header, the read note, and all pause tags before TTS; convert pause tags to real silence. Spoken words: 1565. Pauses: 68s. Experienced runtime ≈ 9.8 min at ≤180 WPM.
-
 Maya: [professional broadcast tone] Last time: the Alien and Sedition backlash turned the election of 1800 into a verdict on the Federalists, and the verdict came back guilty. This time: the transfer itself. The sitting president loses and skips the inauguration, leaving town before dawn. Somehow that's the most revolutionary thing in the episode. Four boxes on your sheet: the tie, the pragmatist, Marbury's judo, and the culture. Circle the ones you couldn't explain right now. About ten minutes.
 
 Marcus: Jefferson beats Adams in the Electoral College, 73 to 65. But each elector cast two votes back then, no separate vote for vice president, so Jefferson's own running mate, Aaron Burr, ties him at 73.
@@ -145,7 +144,7 @@ Marcus: [intrigued] And that's the episode. Next time: the Unit Three cram. Elev
 
 Maya: [professional broadcast tone] Power changed hands. The hands stayed few.
 
-## Sources (production only — never spoken)
+## Sources (production-only, never spoken)
 
 Tier 1 = the books (`~/workspace/apush/books/extracted/{5steps2024,premium2027,princeton}/`) + `~/workspace/apush/public_contnent/` + transcripts. Tier 2 = Britannica + NPS only when Tier 1 is insufficient. Broad web is NOT a source.
 

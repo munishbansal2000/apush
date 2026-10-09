@@ -1,13 +1,12 @@
 # U4-E1 — Maya + Marcus (Fish Audio)
 # Episode 1: The Louisiana Purchase. 2005 spoken words (gate-counted).
-# Thirteen and a half minutes experienced runtime (165 WPM + 61s scripted pauses).
+# Thirteen and a half minutes experienced runtime (165 WPM + 50s pauses).
 # Script v5 DRAFT — fleet-repair pass (2026-10-08): tag density 82%→~10%, 3 live traps, overclaim fix, all 7 feed lines reworked, checkoffs to Maya, antitheses ≤2, CER-label word removed, Northwest Passage qualified, "begged Congress" downgraded, Tier-2 pins resolved (5 verified, 4 hedged), cold open trimmed.
 # v4 read for topic/version continuity (Spain's protest, three-flags handover, boundary dispute, Adams–Onís, France's claim vs. Native land) — prose reworked per repair findings.
 # Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Maya tracks four boxes on her episode sheet; the episode earns each one through plain topic transitions, and she checks them off in her own voice in the recap and the closing. They never go to the voice. The bonus self-test ("One more, fast.") is a deliberate labeled exception: no pause, by design.
 # Pronunciation: Toussaint Louverture (too-SAN loo-ver-TOOR), Saint-Domingue (san doh-MANG), Talleyrand (TAL-ee-rand), Fort de Joux (for duh ZHOO), Sacagawea (sak-uh-juh-WEE-uh), Adams–Onís (ah-dahms oh-NEES)
 # Tagline note: held breath on the em-dash in the closer — do not rush it.
-# Sources footer lists what Tier 1 + Tier 2 could and could not verify.
-
+## Sources (production-only, never spoken)
 Maya: [professional broadcast tone] Last time: the republic got built and Jefferson took power. Three years later he bought half a continent, and blew up his own rulebook to do it.
 
 Maya: The one where America doubles in size. Four boxes on your sheet: Saint-Domingue, the Louisiana Purchase, strict construction, and what the purchase set in motion. Circle the ones you couldn't explain right now. Thirteen and a half minutes, and you'll check all four off. Start here: the small-government president stretched the Constitution like taffy.
@@ -192,7 +191,7 @@ Maya: That treaty shows expansion by negotiation and treaty: the border drawn at
 
 Maya: Check your four boxes. The small-government president bought half a continent on borrowed money — and the map is still growing. Next time: John Marshall turns the weakest branch into the boss of everyone.
 
-# Sources (Tier 1 / Tier 2 — frozen hierarchy)
+## Sources (production-only, never spoken)
 - Saint-Domingue uprising 1791, half a million enslaved, three phases, Louverture's leadership, Haiti independent 1804 as the first Black republic: premium2027 ch5 (Tier 1).
 - Leclerc's death of yellow fever, Nov 1802: Britannica (Tier 2, verified 2026-10-08): "Charles Leclerc (born March 17, 1772, Pontoise, France—died Nov. 2, 1802, Cap-Français, Saint-Domingue) was a French general, brother-in-law of Napoleon" and "Leclerc, accompanied by 23,000 French troops, landed in Haiti in 1802" and "Leclerc himself succumbed in November" to the yellow fever epidemic.
 - Louverture's death at Fort de Joux, April 1803: Britannica (Tier 2, verified 2026-10-08): "died April 7, 1803, Fort-de-Joux, France" and "He was imprisoned in Fort-de-Joux, a cold, remote mountain fortress, where he died in April 1803."

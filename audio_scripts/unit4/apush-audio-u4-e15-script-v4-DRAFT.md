@@ -1,9 +1,8 @@
 # U4-E15 — Maya + Marcus + Rafael (Fish Audio)
 # Episode 15: The Mexican-American War. About fourteen minutes.
-# Draft v4. Spoken words: 2235 (pause tags stripped). Experienced runtime: ~13.8 min (words at 180 WPM + 80s scripted pauses).
+# Draft v4. Spoken words: 2235 (pause tags stripped). Experienced runtime: ~13.8 min (words at 180 WPM + 60s pauses).
 # Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Debate format. Maya moderates as the modern host. Marcus argues Polk's case as an advocate from 1848 — his knowledge stops at the war's end. Rafael is a fictional composite: he voices the Mexican civilian perspective, not any one historical person. When anyone quotes real words, the speaker says so out loud. Strip this header and the read note before TTS.
 # Pronunciation: Guadalupe Hidalgo (gwah-dah-LOOP-ay ee-DAL-goh), Veracruz (veh-rah-KROOS), Matamoros (mah-tah-MOH-rohs), Chapultepec (chah-pool-teh-PEK), Cerro Gordo (SEH-roh GOHR-doh), Monterrey (mon-tuh-RAY), Buena Vista (BWAY-nah VEES-tah), Resaca de la Palma (ray-SAH-kah day lah PAHL-mah), Nueces (noo-AY-sez), Palo Alto (PAH-loh AHL-toh), Ashmun (ASH-mun), Wilmot (WIL-maht), Trist (trist), Niños Héroes (NEEN-yohs EH-roh-ehs)
-
 Maya: [professional broadcast tone] Last time: Texas joined the Union, Taylor's army stood in the disputed strip between the Nueces and the Rio Grande, and the fuse was lit. Now: the explosion. A president tells Congress about American blood on American soil. And a freshman congressman from Illinois writes back: show me the spot. Four boxes: the fuse, the war, the revolt at home, and the treaty that grew the country by a third and poisoned what came after. Circle the ones you couldn't explain right now. About fourteen minutes, pauses included.
 
 Maya: [professional broadcast tone] Box one: the fuse. Marcus, you're Polk's man. Make his case. Rafael's our composite: he voices the Mexican civilians who lived it. Rafael gets the rebuttal.
@@ -26,7 +25,9 @@ Maya: I once sat in a car at the San Diego crossing for three hours, no air cond
 
 Rafael: [intense] Before the shooting, Polk tried to buy. He sent John Slidell to Mexico City in the fall of eighteen forty-five: five million for the disputed strip, twenty-five million for California, five million more for the lands between. Mexico wouldn't even receive him. When the buying failed, Polk dared Mexico to shoot first. The blood was real. The "American soil" part was the argument.
 
-Maya: Your turn: the ground was disputed, and Congress knew it. The war's opponents couldn't deny the dead, so what did they attack instead? [10-second pause] The soil. The dead were real, but the ground was the argument — was the spot American at all? Lincoln's answer comes later. For now: fuse lit, exploded. One down.
+Maya: Your turn: the ground was disputed, and Congress knew it. The war's opponents couldn't deny the dead, so what did they attack instead?
+[10-second pause]
+Maya: The soil. The dead were real, but the ground was the argument — was the spot American at all? Lincoln's answer comes later. For now: fuse lit, exploded. One down.
 
 Maya: Box two: the war. Marcus, how'd it go?
 
@@ -54,7 +55,9 @@ Marcus: For John C. Calhoun, speaking for the South, it was a door slamming: an 
 
 Rafael: [intense] What the North kept forgetting: Mexico had already banned slavery in that land. Wilmot was banning what was already banned.
 
-Maya: Which is exactly why it exploded. Your turn: if slavery was already illegal there, why did one sentence nearly break Congress? Think about who wanted the West next. [10-second pause] What drove the explosion was who'd settle the West next: Northern free-labor men wanted the new land for white settlers, with no slave labor to compete against. Southerners heard the territories closing to them for good. The House passed it again and again. The Senate never did. And the vote ran on the sectional line: North against South.
+Maya: Which is exactly why it exploded. Your turn: if slavery was already illegal there, why did one sentence nearly break Congress? Think about who wanted the West next.
+[10-second pause]
+What drove the explosion was who'd settle the West next: Northern free-labor men wanted the new land for white settlers, with no slave labor to compete against. Southerners heard the territories closing to them for good. The House passed it again and again. The Senate never did. And the vote ran on the sectional line: North against South.
 
 Maya: [sheepish] So the Wilmot Proviso banned slavery in the new territories, and the South walked out of Congress over it, right?
 
@@ -112,17 +115,25 @@ Maya: [confident tone] Noted. All four boxes checked.
 
 Maya: Three questions, AP-shaped. Say your answer before I give it.
 
-Maya: One, stimulus. Real words, from Polk's war message of May eleventh, eighteen forty-six: Mexico had, quote, "passed the boundary of the United States, has invaded our territory and shed American blood upon the American soil." On the exam, what's the move with this source? [10-second pause] The move is sourcing. It's a war message, and its job is to get Congress to declare war. Attack the phrase "American soil": it assumes the boundary Polk himself chose, in a strip both sides claimed. Name the sleight: Polk put the army on disputed ground, then called the ground American.
+Maya: One, stimulus. Real words, from Polk's war message of May eleventh, eighteen forty-six: Mexico had, quote, "passed the boundary of the United States, has invaded our territory and shed American blood upon the American soil." On the exam, what's the move with this source?
+[10-second pause]
+Maya: The move is sourcing. It's a war message, and its job is to get Congress to declare war. Attack the phrase "American soil": it assumes the boundary Polk himself chose, in a strip both sides claimed. Name the sleight: Polk put the army on disputed ground, then called the ground American.
 
-Maya: Two. Wilmot's proviso banned slavery from land where Mexico had already banned slavery. So why did it nearly break Congress? [10-second pause] Same logic as before, in your own words: it ran on who'd settle the West next — free-labor North against a South that heard the territories closing for good. Calhoun's counter: the territories belong to all the states in common. Lincoln's spot resolutions pressed the other wound: was the spot American soil at all? Never voted on, but the question outlived the war. Never a law. The exam asks about the collision the proviso started.
+Maya: Two. Wilmot's proviso banned slavery from land where Mexico had already banned slavery. So why did it nearly break Congress?
+[10-second pause]
+Maya: Same logic as before, in your own words: it ran on who'd settle the West next — free-labor North against a South that heard the territories closing for good. Calhoun's counter: the territories belong to all the states in common. Lincoln's spot resolutions pressed the other wound: was the spot American soil at all? Never voted on, but the question outlived the war. Never a law. The exam asks about the collision the proviso started.
 
-Maya: Three, stimulus. Real words, from Ulysses Grant, writing nearly forty years later: "I do not think there was ever a more wicked war than that waged by the United States on Mexico." On the exam, what's Grant doing with this source? [10-second pause] He's handing you the war's moral verdict from the inside: a veteran calling his own war unjust. Pair it with the facts: twenty-one months, Palo Alto to Mexico City, "fast, and lopsided." Disease killed far more than bullets, on both sides — the histories agree on that, even where the numbers get foggy.
+Maya: Three, stimulus. Real words, from Ulysses Grant, writing nearly forty years later: "I do not think there was ever a more wicked war than that waged by the United States on Mexico." On the exam, what's Grant doing with this source?
+[10-second pause]
+He's handing you the war's moral verdict from the inside: a veteran calling his own war unjust. Pair it with the facts: twenty-one months, Palo Alto to Mexico City, "fast, and lopsided." Disease killed far more than bullets, on both sides — the histories agree on that, even where the numbers get foggy.
 
-Maya: One more, fast. The treaty: date and price. [10-second pause] February second, eighteen forty-eight. Fifteen million dollars, and the United States took over American claims against Mexico.
+Maya: One more, fast. The treaty: date and price.
+[10-second pause]
+Maya: February second, eighteen forty-eight. Fifteen million dollars, and the United States took over American claims against Mexico.
 
 Maya: [professional broadcast tone] Polk's war ended at Guadalupe Hidalgo. Its argument didn't end until Appomattox. Check your boxes, all four. Next time: the whole unit in one sitting. Ten questions, no mercy. The Unit 4 cram.
 
-## Sources
+## Sources (production-only, never spoken)
 - 5 Steps to a 5 APUSH 2024, ch14 (Tier 1): Nueces vs Rio Grande dispute; Slidell sent Oct 1845 with $5M (Nueces–Rio Grande strip) / $25M (California) / $5M (lands between Texas and California) offers, refused; Taylor provocatively posted along the Rio Grande; April 1846 Mexican attack on a US patrol; May 13, 1846 war declaration; Scott's March 8, 1847 Veracruz landing ("first major amphibious landing in American military history"); Mexico City captured September 1847; Treaty of Guadalupe Hidalgo Feb 2, 1848 — $15M plus US assumption of American citizens' claims against Mexico; US territory grew by one-third; Wilmot (summer 1846, attached to a military appropriations bill, "passed by the House four times, defeated in the Senate"); Calhoun's common-territory position; Polk's bid to extend the Missouri Compromise line to the Pacific; 1848 election (Whigs ran war hero Taylor, Democrats Cass, Free Soil Van Buren 10%, Taylor won)
 - Barron's Premium 2027, ch7 (Tier 1): Nueces vs Rio Grande "150 miles to the south"; skirmishes in the disputed area → war; Taylor's prong; Scott's capture of Mexico City; Guadalupe Hidalgo 1848, $15M, Mexican Cession = CA, NV, UT + parts of AZ, NM, CO, WY; gold discovered "a week before the US formally acquired" the cession (taught instead as Jan 24, 1848, nine days before the signing, per Britannica); Wilmot Proviso 1846 (House yes/Senate no); free-labor framing; 1848 Free Soil Party
 - Barron's Premium 2027, ch6 (Tier 1): Thoreau's "Resistance to Civil Government" (1849), "Civil Disobedience," urging individuals not to acquiesce to unjust government dictates; transcendentalists did not gravitate toward reform movements (F-U4-055)
