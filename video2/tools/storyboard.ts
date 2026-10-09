@@ -13,6 +13,7 @@ import {ROOT} from './lib';
 import {normalizeTurns, readJson, type PipelineTurn} from './pipeline-core';
 import {loadImageReview, rejectedKeys} from './pipeline/review';
 import {checkStoryboard, normWords, turnKeys, type Storyboard, type StoryVisual} from './pipeline/storyboard';
+import {varietyWarnings} from './pipeline/storyboard-director';
 import {cleanSpeech} from './pipeline/speech';
 
 const [ep, cmd] = process.argv.slice(2).filter(a => !a.startsWith('--'));
@@ -24,7 +25,7 @@ const sbPath = join(dataDir, 'storyboard.json');
 const turns = existsSync(join(dataDir, 'turns.json')) ? normalizeTurns(readJson(relative(ROOT, join(dataDir, 'turns.json')))) as PipelineTurn[] : fail(`${ep}: no data/${ep}/turns.json (run the turns stage)`);
 const timing = existsSync(join(dataDir, 'timing_map.json')) ? readJson<{starts: number[]; durations: number[]}>(relative(ROOT, join(dataDir, 'timing_map.json'))) : {starts: [], durations: turns.map(() => 0)};
 const loadBoard = () => (existsSync(sbPath) ? readJson<Storyboard>(relative(ROOT, sbPath)) : fail(`${ep}: no storyboard yet (the pipeline's storyboard stage writes it)`));
-const check = (sb: Storyboard) => checkStoryboard(sb, turns, timing.durations, {rejectedImages: rejectedKeys(loadImageReview())});
+const check = (sb: Storyboard) => { const c = checkStoryboard(sb, turns, timing.durations, {rejectedImages: rejectedKeys(loadImageReview())}); return {...c, warnings: [...c.warnings, ...varietyWarnings(sb)]}; };
 
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 /** The line with each visual's anchor phrase marked. */

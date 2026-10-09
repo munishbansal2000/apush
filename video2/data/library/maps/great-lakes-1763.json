@@ -1,0 +1,84 @@
+{
+  "id": "map.great-lakes-1763",
+  "name": "The Great Lakes forts, 1763 (Detroit, Niagara, Michilimackinac, Fort Pitt)",
+  "projection": "us",
+  "extent": [
+    [
+      -92,
+      39.5
+    ],
+    [
+      -73.5,
+      48
+    ]
+  ],
+  "camera": {
+    "center": [
+      -82.5,
+      43.5
+    ],
+    "zoom": 1.1
+  },
+  "tilt": 20,
+  "terrain": {
+    "ridges": [
+      "geo.line.appalachian-crest"
+    ],
+    "rivers": true
+  },
+  "labels": [
+    {
+      "text": "Lake Erie",
+      "lonlat": [
+        -81.2,
+        42.2
+      ],
+      "style": "ocean"
+    },
+    {
+      "text": "Lake Huron",
+      "lonlat": [
+        -82.4,
+        44.8
+      ],
+      "style": "ocean"
+    }
+  ],
+  "focus": {
+    "detroit": {
+      "center": [
+        -83.05,
+        42.33
+      ],
+      "zoom": 2.4
+    },
+    "niagara": {
+      "center": [
+        -79.06,
+        43.26
+      ],
+      "zoom": 2.4
+    },
+    "michilimackinac": {
+      "center": [
+        -84.73,
+        45.78
+      ],
+      "zoom": 2.4
+    },
+    "fort-pitt": {
+      "center": [
+        -80.0,
+        40.44
+      ],
+      "zoom": 2.4
+    },
+    "lakes": {
+      "center": [
+        -82.5,
+        43.8
+      ],
+      "zoom": 1.4
+    }
+  }
+}

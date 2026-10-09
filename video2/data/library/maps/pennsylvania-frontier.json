@@ -1,0 +1,66 @@
+{
+  "id": "map.pennsylvania-frontier",
+  "name": "The Pennsylvania frontier: Philadelphia, Lancaster, Conestoga, Fort Pitt",
+  "projection": "us",
+  "extent": [
+    [
+      -81.2,
+      39.0
+    ],
+    [
+      -74.4,
+      42.4
+    ]
+  ],
+  "camera": {
+    "center": [
+      -77.6,
+      40.6
+    ],
+    "zoom": 1.1
+  },
+  "tilt": 18,
+  "terrain": {
+    "ridges": [
+      "geo.line.appalachian-crest"
+    ],
+    "rivers": true
+  },
+  "focus": {
+    "philadelphia": {
+      "center": [
+        -75.16,
+        39.95
+      ],
+      "zoom": 2.6
+    },
+    "lancaster": {
+      "center": [
+        -76.3,
+        40.04
+      ],
+      "zoom": 2.8
+    },
+    "conestoga": {
+      "center": [
+        -76.36,
+        39.94
+      ],
+      "zoom": 3.0
+    },
+    "fort-pitt": {
+      "center": [
+        -80.0,
+        40.44
+      ],
+      "zoom": 2.6
+    },
+    "frontier": {
+      "center": [
+        -78.5,
+        40.6
+      ],
+      "zoom": 1.7
+    }
+  }
+}

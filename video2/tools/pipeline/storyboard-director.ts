@@ -37,6 +37,7 @@ export function storyboardPrompt(index: number, outline: Outline, turns: Pipelin
     '- Show what the words are about: the person named, the place, the document, the event, the object. For an abstract idea use a document detail, a map, a point card (1-3 bullets, <= 6 words each) or a listed custom explainer.',
     '- Kinds: "image" (optional "framing": "wide" | "face" | "detail"; first appearance of a person: add "name" and "role" for a name tag), "map" (a map view), "point", "custom" (only a listed explainer, only for its exact event), "clip" (a hero still with gentle ambient motion: smoke, water, flags; never faces or text; at most one per act).',
     '- Images only from ASSETS, each at most twice in this act. Images marked retrospective (later imaginings) must not be presented as eyewitness records.',
+    `- Variety: at most ${LOOK_RULES.maxPointsPerAct} point cards in the act (only for a spoken list or the thesis) and never two in a row; at most ${LOOK_RULES.maxMapRun} maps in a row; the same map view at most ${LOOK_RULES.maxViewPerAct} times in the act.`,
     '- "priority": "essential" for what the words name, "optional" for texture. "pace": "hold" on the act\'s key line, "quick" for a spoken list, "reveal" for a pull-back reveal.',
     `- Never put visuals on PAUSE lines (question cards are automatic). Recap, practice and next-time lines may revisit images shown earlier, within the lesson limit of ${LOOK_RULES.maxImageUses} uses per image; each custom explainer at most once per lesson, ${LOOK_RULES.maxCustoms} in all.`,
     '',
@@ -110,6 +111,19 @@ export function validateStoryAct(raw: unknown, index: number, outline: Outline, 
     }
   }
   for (const [image, n] of perImage) if (n > 2) issues.push(`"${image}" is used ${n} times in this act; at most twice`);
+  // Variety an act can always fix on its own (blocking): point cards, maps in a row, one map view repeated.
+  const ordered = a.turns.filter(t => Number.isInteger(t?.turn)).sort((x, y) => x.turn - y.turn).flatMap(t => (t.visuals ?? []).map(v => ({turn: t.turn, v})));
+  const points = ordered.filter(x => x.v.kind === 'point');
+  if (points.length > LOOK_RULES.maxPointsPerAct) issues.push(`${points.length} point cards in this act (turns ${points.map(x => x.turn).join(', ')}); at most ${LOOK_RULES.maxPointsPerAct}: keep the ones that land a list or the thesis, show the rest as pictures or maps`);
+  let mapRun = 0;
+  ordered.forEach((x, n) => {
+    if (x.v.kind === 'point' && ordered[n - 1]?.v.kind === 'point') issues.push(`turn ${x.turn}: two point cards in a row; put a picture or map between them`);
+    mapRun = x.v.kind === 'map' ? mapRun + 1 : 0;
+    if (mapRun === LOOK_RULES.maxMapRun + 1) issues.push(`turn ${x.turn}: more than ${LOOK_RULES.maxMapRun} maps in a row; break the run with a picture`);
+  });
+  const views = new Map<string, number>();
+  for (const x of ordered) if (x.v.kind === 'map' && typeof x.v.map?.view === 'string') views.set(x.v.map.view as string, (views.get(x.v.map.view as string) ?? 0) + 1);
+  for (const [view, n] of views) if (n > LOOK_RULES.maxViewPerAct) issues.push(`map view "${view}" is used ${n} times in this act; at most ${LOOK_RULES.maxViewPerAct} (use another view or a picture)`);
   if (clips > 1) issues.push(`${clips} clips in this act; at most one`);
   // Anchors: verbatim, unique, ordered (shared with the lesson-wide check).
   const keys = turnKeys(turns);
@@ -118,6 +132,27 @@ export function validateStoryAct(raw: unknown, index: number, outline: Outline, 
   issues.push(...anchors);
   for (const [n, y] of (a.years ?? []).entries()) if (!Number.isInteger(y?.turn) || y.turn < from || y.turn > to) issues.push(`year ${n + 1}: turn outside this act`);
   return issues.length ? {issues} : {act: a, issues};
+}
+
+/**
+ * Lesson-wide variety, as warnings only (never repair prompts: fixing one act could break another and loop): one map
+ * view used more than LOOK_RULES.maxViewPerLesson times, and runs of maps or point cards that cross act boundaries.
+ */
+export function varietyWarnings(sb: Storyboard): string[] {
+  const out: string[] = [];
+  const views = new Map<string, number[]>();
+  const seq: {turn: number; kind: string}[] = [];
+  for (const t of sb.turns) for (const v of t.visuals) {
+    seq.push({turn: t.index, kind: v.kind});
+    if (v.kind === 'map' && typeof v.map?.view === 'string') views.set(v.map.view as string, [...(views.get(v.map.view as string) ?? []), t.index]);
+  }
+  for (const [view, turns] of views) if (turns.length > LOOK_RULES.maxViewPerLesson) out.push(`map view "${view}" appears ${turns.length} times in the lesson (turns ${turns.join(', ')}); consider varying it`);
+  let run = 1;
+  for (let i = 1; i < seq.length; i++) {
+    run = seq[i].kind === seq[i - 1].kind && (seq[i].kind === 'map' || seq[i].kind === 'point') ? run + 1 : 1;
+    if ((seq[i].kind === 'map' && run === LOOK_RULES.maxMapRun + 1) || (seq[i].kind === 'point' && run === 2)) out.push(`turn ${seq[i].turn}: ${run} ${seq[i].kind}s in a row across acts`);
+  }
+  return out;
 }
 
 export interface StoryboardResult {storyboard?: Storyboard; outline?: Outline; log: DirectorLog[]; pending?: string[]}
@@ -194,7 +229,7 @@ export function directStoryboard(io: DirectorIO, input: StoryboardInputs, maxRep
       const sb = assembleStoryboard(input.episode, outline, input.turns, acts as ActBoard[]);
       // Lesson-wide: image uses past the budget and explainer repeats go back to the acts that hold the extra uses.
       const c = checkStoryboard(sb, input.turns, input.timing.durations, {rejectedImages: input.options.rejectedImages, maxImageUses: LOOK_RULES.maxImageUses});
-      if (!c.issues.length) { log.push({stage: 'storyboard', source: 'assembled', issues: c.warnings}); return {storyboard: sb, outline, log}; }
+      if (!c.issues.length) { log.push({stage: 'storyboard', source: 'assembled', issues: [...c.warnings, ...varietyWarnings(sb)]}); return {storyboard: sb, outline, log}; }
       log.push({stage: `storyboard assembled (attempt ${attempt + 1})`, source: 'assembled', issues: c.issues});
       for (const issue of c.issues) {
         const image = /^"([^"]+)" is used (\d+) times/.exec(issue)?.[1];

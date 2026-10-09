@@ -1,0 +1,59 @@
+{
+  "id": "map.ohio-valley",
+  "name": "The Ohio Valley between the Appalachians and the Mississippi",
+  "projection": "us",
+  "extent": [
+    [
+      -91.5,
+      36.0
+    ],
+    [
+      -77.5,
+      42.6
+    ]
+  ],
+  "camera": {
+    "center": [
+      -84.5,
+      39.3
+    ],
+    "zoom": 1.1
+  },
+  "tilt": 22,
+  "terrain": {
+    "ridges": [
+      "geo.line.appalachian-crest"
+    ],
+    "rivers": true
+  },
+  "focus": {
+    "forks-of-the-ohio": {
+      "center": [
+        -80.0,
+        40.44
+      ],
+      "zoom": 2.4
+    },
+    "ohio-river": {
+      "center": [
+        -84.5,
+        38.8
+      ],
+      "zoom": 1.6
+    },
+    "mississippi": {
+      "center": [
+        -89.6,
+        38.0
+      ],
+      "zoom": 1.9
+    },
+    "appalachians": {
+      "center": [
+        -80.5,
+        38.8
+      ],
+      "zoom": 1.8
+    }
+  }
+}

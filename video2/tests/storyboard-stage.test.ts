@@ -102,5 +102,11 @@ describe('build stage: problems go back to the storyboard', () => {
     assert.throws(() => buildStage(h.ctx), /sent back to storyboard act\(s\) 1 as review notes/);
     const notes = loadLessonReview('u9e7', join(h.root, 'data')).storyboard?.notes?.['1'] ?? [];
     assert.ok(notes.some(n => /build check, line 1: .*holds longer than 14s on one map/.test(n.text)), JSON.stringify(notes));
+    // A re-board that did not fix it: the same problem is not sent back again (no loop); it is left for a person.
+    const review = loadLessonReview('u9e7', join(h.root, 'data'));
+    for (const n of review.storyboard!.notes!['1']) n.done = 'now';
+    saveLessonReview('u9e7', review, join(h.root, 'data'));
+    assert.throws(() => buildStage(h.ctx), /came back after a re-board; needs a person/);
+    assert.equal((loadLessonReview('u9e7', join(h.root, 'data')).storyboard?.notes?.['1'] ?? []).filter(n => !n.done).length, 0, 'no new note');
   });
 });

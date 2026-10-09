@@ -72,3 +72,22 @@ describe('storyboard custom explainers', () => {
     assert.match(issues, /turn 3: custom explainer "StampActTax" is over the lesson budget/);
   });
 });
+
+describe('storyboard variety', () => {
+  it('blocks what an act can fix itself (point cards, map runs, one view repeated) and only warns across acts', async () => {
+    const {validateStoryAct, varietyWarnings} = await import('../tools/pipeline/storyboard-director');
+    const t = parseTranscript('Maya: One two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen.');
+    const outline = {title: 't', thesis: 't', boxes: [], acts: [{title: 'a', purpose: 'p', turns: {from: 0, to: 0}}]};
+    const point = (phrase: string) => ({kind: 'point', backdrop: 'b.jpg', bullets: [{text: 'x', at: {offset: 0}}], at: {phrase}, priority: 'essential'});
+    const map = (phrase: string, view = 'map.atlantic-world') => ({kind: 'map', map: {view}, at: {phrase}, priority: 'essential'});
+    const catalog = [{path: 'b.jpg', description: '', width: 3000, height: 2000, maxZoom: 1.6}];
+    const issues = (visuals: unknown[]) => validateStoryAct({turns: [{turn: 0, visuals}]}, 0, outline, t, [16], catalog).issues.join('\n');
+    assert.match(issues([point('one two'), map('three four'), point('five six'), map('seven eight'), point('nine ten')]), /3 point cards in this act/);
+    assert.match(issues([point('one two'), point('three four')]), /two point cards in a row/);
+    assert.match(issues([map('one two', 'a'), map('three four', 'b'), map('five six', 'c'), map('seven eight', 'd')]), /more than 3 maps in a row/);
+    assert.match(issues([map('one two'), point('three four'), map('five six'), point('seven eight'), map('nine ten')]), /map view "map.atlantic-world" is used 3 times in this act/);
+    const keys = turnKeys(t);
+    const lesson = {episode: 'x', acts: [], turns: [{key: keys[0], index: 0, visuals: [map('one two'), map('three four', 'b'), map('five six'), map('seven eight', 'c'), map('nine ten'), map('eleven twelve', 'd'), map('thirteen fourteen')]}]} as unknown as Storyboard;
+    assert.ok(varietyWarnings(lesson).some(w => /appears 4 times in the lesson/.test(w)), 'a lesson-wide view count is a warning, not a repair');
+  });
+});

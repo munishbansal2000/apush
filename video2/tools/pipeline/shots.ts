@@ -51,7 +51,7 @@ export interface ShotPlan {
 
 export interface ResolvedShotPlan {shots: DocShot[]; years: YearStamp[]; boxes: DocBox[]; endSec: number}
 
-export interface ShotRules {minShotSec: number; maxShotSec: number; maxMapSec: number; maxBullets: number; maxBulletWords: number; maxUpscale: number; maxImageUses: number; maxClips: number; questionPauseSec: number; questionOverrunSec: number; minCustomSec: number; maxCustoms: number; lengthToleranceSec: number}
+export interface ShotRules {minShotSec: number; maxShotSec: number; maxMapSec: number; maxBullets: number; maxBulletWords: number; maxUpscale: number; maxImageUses: number; maxClips: number; questionPauseSec: number; questionOverrunSec: number; minCustomSec: number; maxCustoms: number; lengthToleranceSec: number; maxPointsPerAct: number; maxMapRun: number; maxViewPerAct: number; maxViewPerLesson: number}
 /** maxImageUses is 4 while the asset library is thin (the hand sample uses Grenville 4x); LOOK.md's target is 3. */
 export const LOOK_RULES: ShotRules = {minShotSec: 1.2, maxShotSec: 8, maxMapSec: 14, maxBullets: 3, maxBulletWords: 6, maxUpscale: 1.6, maxImageUses: 4, maxClips: 2,
   /** Pauses this long or longer must be covered by a question card; a card may outlast its pause by questionOverrunSec. */
@@ -59,7 +59,10 @@ export const LOOK_RULES: ShotRules = {minShotSec: 1.2, maxShotSec: 8, maxMapSec:
   /** Custom explainers are signature moments: long enough to play their beat (up to maxMapSec), a couple per lesson. */
   minCustomSec: 5, maxCustoms: 2,
   /** A shot may run this much past its max length before it counts as too long (phrase timing is not exact). */
-  lengthToleranceSec: 1};
+  lengthToleranceSec: 1,
+  /** Storyboard variety. Per act (an act can always fix these itself): point cards, maps in a row, uses of one map view.
+   *  Per lesson (warnings only, so acts never ping-pong): uses of one map view. */
+  maxPointsPerAct: 2, maxMapRun: 3, maxViewPerAct: 2, maxViewPerLesson: 3};
 
 export interface ResolveOptions {
   /** Pixel sizes of public/ images (data/images.lock.json); a shot on a missing or unsized image is an error. */

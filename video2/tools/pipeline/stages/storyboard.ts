@@ -106,6 +106,8 @@ function noteBuildProblems(review: LessonReview, sb: Storyboard, plan: ShotPlan,
     review.storyboard.notes ??= {};
     const list = (review.storyboard.notes[String(act)] ??= []);
     const text = `build check, line ${turn}: ${line.replace(/^shot ?\d+:?\s*/, '')}`;
+    // The same problem after a re-board meant to fix it: do not loop; leave it for a person.
+    if (list.some(x => x.done && x.text === text)) { rest.push(`  - act ${act}, line ${turn} (came back after a re-board; needs a person): ${line}`); continue; }
     if (!list.some(x => !x.done && x.text === text)) list.push({text, at: now()});
     if (review.storyboard.acts) delete review.storyboard.acts[String(act)];
     acts.add(act);
@@ -208,7 +210,7 @@ export function buildStage(ctx: PipelineContext): void {
       saveLessonReview(ctx.episode, review, dataRoot);
       throw new Error(`build: ${noted.count} problem(s) sent back to storyboard act(s) ${noted.acts.join(', ')} as review notes; run again to re-board them${noted.rest.length ? `\nnot tied to a shot:\n${noted.rest.join('\n')}` : ''}`);
     }
-    throw new Error(`build: the plan from the storyboard does not pass the checks:\n${problem}`);
+    throw new Error(`build: the plan from the storyboard does not pass the checks:\n${noted.rest.length ? noted.rest.join('\n') : problem}`);
   }
   if (ctx.editor) {
     const edited = editorPass(io, {...plan, acts: sb.acts}, inputs.turns, inputs.timing, inputs.words, treatments, validate, log);
