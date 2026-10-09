@@ -1,4 +1,5 @@
 /** Resolved documentary shots (times in absolute seconds). See docs/LOOK.md for the vocabulary. */
+import type {Atmosphere} from './atmosphere';
 export type LonLat = [number, number];
 
 /** A framing on an image: (x, y) is the point to centre (0..1 of the image), zoom is relative to a cover fit (>= 1). */
@@ -16,6 +17,8 @@ interface ShotBase {
   endSec: number;
   /** How this shot enters: cut (default) or a short crossfade over the previous shot. */
   transition?: 'cut' | 'crossfade';
+  /** Atmosphere layers over the shot (dust, smoke, embers, fog, candle). */
+  atmosphere?: Atmosphere[];
 }
 
 export interface ImageMoveShot extends ShotBase {
@@ -67,7 +70,26 @@ export interface PointShot extends ShotBase {
   bullets: {text: string; sec: number}[];
 }
 
-export type DocShot = ImageMoveShot | PortraitShot | MapShot | PointShot;
+/**
+ * Generated motion from a real still (LTX on the 5090). `clip` is the rendered boomerang file when it exists; without
+ * it the shot falls back to a camera move (with parallax when a depth map exists) on the same still.
+ */
+export interface ClipShot extends ShotBase {
+  type: 'clip';
+  image: string;
+  size: {width: number; height: number};
+  prompt: string;
+  seed: number;
+  /** Where LTX centres its 16:9 crop of the still (0..1). Part of the fingerprint. */
+  focus: [number, number];
+  fingerprint: string;
+  clip?: {path: string; durationSec: number};
+  depth?: string;
+  from: Framing;
+  to: Framing;
+}
+
+export type DocShot = ImageMoveShot | PortraitShot | MapShot | PointShot | ClipShot;
 
 /** Year that slams in over whatever shot is playing. */
 export interface YearStamp {text: string; sec: number}

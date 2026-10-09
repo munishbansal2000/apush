@@ -22,11 +22,11 @@ Status: ✅ done · 🔶 in progress · ⬜ not started · Owner: **C** = Claude
 | V1 | Documentary renderer: full-bleed shots, crossfades, grain, vignette, year stamps, sound cues | ✅ | C |
 | V2 | Shot types: image move, portrait + name tag, map, point card | ✅ | C |
 | V3 | Episode Sheet: opens mid-screen, flies to corner, translucent tab, pops on box events | ✅ | C |
-| V4 | **2.5D parallax** from depth maps on every painting (needs `three` + depth tool) | ⬜ next | C |
-| V5 | **Period map engine**: terrain relief, labels, towns/forts, animated arrows, 3D tilt, geo ids from the library | ⬜ next | C |
-| V6 | `clip` shot type wired to the existing LTX clips stage, landscape 16:9 (script defaults to portrait 704×1248) | ⬜ | C |
+| V4 | 2.5D parallax from depth maps (Depth Anything V2 + deterministic CPU warp) | ✅ code; depth maps run on the 5090 | C |
+| V5 | Period map engine: terrain relief, rivers, labels, towns/forts, arrows, tilt, library geo ids | ✅ | C |
+| V6 | `clip` shot type + `tools/doc-clips.ts` (LTX at 1248×704, crop not stretch, boomerang loop, content-keyed cache) | ✅ code; generation on the 5090 | C |
 | V7 | `document` shot: zoom to a transcribed phrase and highlight it as spoken (DocumentLens exists) | ⬜ | C |
-| V8 | Atmosphere layers: smoke, dust, fog, embers, candle flicker, matched to shot mood | ⬜ | C |
+| V8 | Atmosphere layers: dust, smoke, embers, fog, candle | ✅ | C |
 | V9 | Shorts: vertical 1080×1920 cut per Episode Sheet box, auto-reframed | ⬜ | C |
 | V10 | Layout guard reporting in real renders (heartbeat showed 0 measured frames; ISSUES P1) | 🔶 | C |
 

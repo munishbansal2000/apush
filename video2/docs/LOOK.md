@@ -33,7 +33,20 @@ almost no text on screen.
 | `map` | Parchment world/US map; camera flies to a region; lines draw, regions fill, arrows sweep, year stamp ticks, all on spoken cues | Geography, borders, campaigns, change over time |
 | `document` | Paper lens over a real document; zooms to a phrase; highlighter sweeps as it is spoken | Primary sources, laws, quotes |
 | `point` | Full-bleed dimmed backdrop image + 1–3 bullets on cues | Enumerations, theses, "three reasons" |
-| `clip` | 3–6s motion generated from a real still | Rare big moments (battles, crowds) |
+| `clip` | LTX motion generated from a real still (static camera, ambient motion only: smoke, water, flags, trees), cropped never stretched to 16:9, looped as a seamless forward/reverse boomerang; falls back to a camera move on the still until generated | 1–2 hero moments per lesson (battles, crowds) |
+
+## Atmosphere
+
+Optional layers on image, clip, portrait and point shots (never maps), chosen to match the scene; procedural and
+seeded, so nothing visibly loops:
+
+| Layer | Use for |
+|---|---|
+| `dust` | Interiors, old paper, quiet portraits: motes drifting in the light |
+| `smoke` | Battles, cities, protests: powder smoke drifting across |
+| `embers` | Fire, revolt, the thesis landing |
+| `fog` | Frontier, sea, dawn landscapes |
+| `candle` | 18th-century interiors and portraits: warm light that breathes |
 
 ## Frame
 

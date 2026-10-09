@@ -147,6 +147,19 @@ def snap32(n):
     return max(32, int(n) // 32 * 32)
 
 
+def crop_to_aspect(image, width, height, focus=(0.5, 0.5)):
+    """Crop (never stretch) the still to width:height around focus (0..1), so historical art is not distorted."""
+    target = width / height
+    w, h = image.size
+    if w / h > target:  # too wide: crop the sides
+        cw = int(round(h * target))
+        left = int(round(min(max(focus[0] * w - cw / 2, 0), w - cw)))
+        return image.crop((left, 0, left + cw, h))
+    ch = int(round(w / target))  # too tall: crop top/bottom
+    top = int(round(min(max(focus[1] * h - ch / 2, 0), h - ch)))
+    return image.crop((0, top, w, top + ch))
+
+
 def snap_frames(duration_s, fps=FPS):
     """LTX-Video needs num_frames = 8N+1; round to nearest."""
     n = max(9, int(round(duration_s * fps)))
@@ -287,8 +300,9 @@ def cmd_generate(args):
           f"seed {seed}")
 
     image = load_image(img_path).convert("RGB")
-    # match the requested aspect as close as the still allows
-    image = image.resize((width, height))
+    # Crop to the output aspect around --focus, then scale: never stretch the painting.
+    focus = tuple(float(v) for v in args.focus.split(",")) if args.focus else (0.5, 0.5)
+    image = crop_to_aspect(image, width, height, focus).resize((width, height))
 
     gen_kwargs = dict(
         prompt=args.prompt,
@@ -437,6 +451,8 @@ def build_parser():
                     help="output height (snapped to multiple of 32)")
     ap.add_argument("--steps", type=int, default=8,
                     help="inference steps (distilled models: ~8)")
+    ap.add_argument("--focus", default=None,
+                    help="x,y (0..1) to centre the crop on when the still's aspect differs from the output")
     ap.add_argument("--negative-prompt", default=None,
                     help="override the built-in negative prompt")
     ap.add_argument("--cpu-offload", action="store_true", default=True,

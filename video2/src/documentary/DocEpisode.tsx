@@ -11,7 +11,8 @@ import type {RenderConfig} from '../kit/layout';
 import {FilmGrain} from '../kit/media';
 import {sheetTransform} from '../directed/boxIntro';
 import kitConfig from '../data/kit-render-config.json';
-import {ImageMoveView, MapView, PointView, YearStampView} from './shots';
+import {AtmosphereLayers} from './atmosphere';
+import {ClipView, ImageMoveView, MapView, PointView, YearStampView} from './shots';
 import type {DocEpisodeProps, DocShot} from './types';
 
 const cfg = kitConfig as unknown as RenderConfig;
@@ -43,14 +44,23 @@ export function soundCues(props: Pick<DocEpisodeProps, 'shots' | 'years' | 'boxe
   return cues.filter(c => c.sec >= 0).sort((a, b) => a.sec - b.sec);
 }
 
-const ShotView: React.FC<{shot: DocShot; lead: number}> = ({shot, lead}) => {
+const ShotBody: React.FC<{shot: DocShot; lead: number}> = ({shot, lead}) => {
   switch (shot.type) {
     case 'image_move':
     case 'portrait': return <ImageMoveView shot={shot} lead={lead} />;
+    case 'clip': return <ClipView shot={shot} lead={lead} />;
     case 'map': return <MapView shot={shot} lead={lead} />;
     case 'point': return <PointView shot={shot} lead={lead} />;
   }
 };
+
+/** A shot plus its atmosphere. Portraits and point cards place it themselves, under their text. */
+const ShotView: React.FC<{shot: DocShot; lead: number}> = ({shot, lead}) => (
+  <>
+    <ShotBody shot={shot} lead={lead} />
+    {shot.type !== 'point' && shot.type !== 'portrait' && <AtmosphereLayers kinds={shot.atmosphere} seed={shot.id} />}
+  </>
+);
 
 const Fade: React.FC<{leadFrames: number; children: React.ReactNode}> = ({leadFrames, children}) => {
   const f = useCurrentFrame();

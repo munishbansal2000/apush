@@ -9,12 +9,15 @@ import type {MultiPolygon, Polygon} from 'geojson';
 import {geoArea} from 'd3-geo';
 import type {PipelineTurn, WordTiming} from '../pipeline-core';
 import {resolvePhrase, type AnchorTiming, type PhraseAnchor} from './anchors';
+import {clipFingerprint, clipPromptIssues} from './clip-fingerprint';
+import {ATMOSPHERES, type Atmosphere} from '../../src/documentary/atmosphere';
 
 /** A cue: a spoken phrase, or seconds after the shot starts. */
 export type Cue = PhraseAnchor | {offset: number};
 
-type PlanShot =
+type PlanShot = (
   | {type: 'image_move' | 'portrait'; at: PhraseAnchor; image: string; from: Framing; to: Framing; name?: string; role?: string; transition?: 'cut' | 'crossfade'}
+  | {type: 'clip'; at: PhraseAnchor; image: string; prompt: string; seed?: number; focus?: [number, number]; from?: Framing; to?: Framing; transition?: 'cut' | 'crossfade'}
   | {type: 'map'; at: PhraseAnchor; projection: 'us' | 'world'; extent: [LonLat, LonLat]; camera: {at: Cue; center: LonLat; zoom: number; ease?: number}[];
       fills?: {at: Cue; region: RegionRef | {geo: string}; color: string}[];
       lines?: ({at: Cue; color?: string; dashed?: boolean; draw?: number; arrow?: boolean} & ({coords: LonLat[]} | {geo: string}))[];
@@ -24,7 +27,8 @@ type PlanShot =
       terrain?: {ridges: string[]; rivers?: boolean};
       tilt?: number;
       transition?: 'cut' | 'crossfade'}
-  | {type: 'point'; at: PhraseAnchor; backdrop: string; bullets: {at: Cue; text: string}[]; transition?: 'cut' | 'crossfade'};
+  | {type: 'point'; at: PhraseAnchor; backdrop: string; bullets: {at: Cue; text: string}[]; transition?: 'cut' | 'crossfade'}
+) & {atmosphere?: string[]};
 
 export interface ShotPlan {
   episode: string;
@@ -55,6 +59,11 @@ export interface ResolveOptions {
   places?: Record<string, {name: string; location?: LonLat}>;
   /** Samples only: allow geography that is not yet approved. */
   allowUnapproved?: boolean;
+  /** sha256 of public/ images (data/images.lock.json) and of tools/animate_still.py, for clip fingerprints. */
+  imageShas?: Record<string, string>;
+  generatorSha?: string;
+  /** Generated hero clips by fingerprint (public/clips/<episode>/clips.json). */
+  clips?: Record<string, {path: string; durationSec: number}>;
 }
 
 export interface GeoFeature {geometry: {type: string; coordinates: unknown}; properties: {id: string; precision: string; review: {status: string}}}
@@ -105,7 +114,9 @@ export function resolveShotPlan(plan: ShotPlan, turns: PipelineTurn[], timing: A
       if (len > max) issues.push(`${id}: ${len.toFixed(1)}s holds longer than ${max}s on one ${shot.type} shot; cut on another spoken cue`);
     }
     const cue = (where: string, c: Cue) => ('offset' in c ? startSec + c.offset : phrase(`${id} ${where}`, c));
-    const base = {id, startSec, endSec: end, transition: shot.transition};
+    for (const kind of shot.atmosphere ?? []) if (!(ATMOSPHERES as readonly string[]).includes(kind)) issues.push(`${id}: unknown atmosphere "${kind}" (${ATMOSPHERES.join(', ')})`);
+    if (shot.atmosphere?.length && shot.type === 'map') issues.push(`${id}: maps take no atmosphere layers`);
+    const base = {id, startSec, endSec: end, transition: shot.transition, atmosphere: shot.atmosphere as Atmosphere[] | undefined};
     switch (shot.type) {
       case 'image_move':
       case 'portrait': {
@@ -117,6 +128,19 @@ export function resolveShotPlan(plan: ShotPlan, turns: PipelineTurn[], timing: A
         return shot.type === 'portrait'
           ? {...base, type: 'portrait', image: shot.image, size, from: shot.from, to: shot.to, name: shot.name ?? '', role: shot.role, depth}
           : {...base, type: 'image_move', image: shot.image, size, from: shot.from, to: shot.to, depth};
+      }
+      case 'clip': {
+        for (const issue of clipPromptIssues(shot.prompt ?? '')) issues.push(`${id}: ${issue}`);
+        const focus: [number, number] = shot.focus ?? [0.5, 0.5];
+        const from = shot.from ?? {x: focus[0], y: focus[1], zoom: 1};
+        const to = shot.to ?? {x: focus[0], y: focus[1], zoom: 1.08};
+        // The fallback (no clip yet) is a camera move on the still, so the still must survive that framing too.
+        const size = sized(id, shot.image, [from, to]);
+        const seed = shot.seed ?? 42;
+        const imageSha = opts.imageShas?.[shot.image];
+        if (!imageSha) issues.push(`${id}: no sha256 for "${shot.image}" (needed to key its clip)`);
+        const fingerprint = clipFingerprint({imageSha: imageSha ?? '', prompt: shot.prompt, seed, focus, generatorSha: opts.generatorSha ?? ''});
+        return {...base, type: 'clip', image: shot.image, size, prompt: shot.prompt, seed, focus, fingerprint, clip: opts.clips?.[fingerprint], depth: opts.depthMaps?.[shot.image], from, to};
       }
       case 'map': {
         if (!shot.camera.length) issues.push(`${id}: map needs at least one camera key`);

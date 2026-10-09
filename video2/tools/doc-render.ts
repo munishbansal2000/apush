@@ -9,44 +9,25 @@
  * (fine for a sample, refused by the production pipeline). Outputs out/<ep>-doc.mp4, out/<ep>-doc-contact.png.
  */
 import {execFileSync} from 'node:child_process';
-import {existsSync, mkdirSync, readdirSync, rmSync, writeFileSync} from 'node:fs';
-import {join, resolve} from 'node:path';
+import {mkdirSync, rmSync, writeFileSync} from 'node:fs';
+import {join} from 'node:path';
 import {ROOT, arg, flag} from './lib';
-import {normalizeTurns, readJson, type WordTiming} from './pipeline-core';
-import {resolveShotPlan, type GeoFeature, type ShotPlan} from './pipeline/shots';
+import {loadDocInputs, resolveDocPlan} from './pipeline/doc-inputs';
 import {guardHeartbeat, layoutIssuesFromLog} from './pipeline/stages/render';
 
 const episode = arg('episode') ?? (() => { throw new Error('--episode is required'); })();
-const planPath = resolve(arg('plan') ?? join(ROOT, 'data', episode, 'shots.json'));
-const dataDir = join(ROOT, 'data', episode);
-const turns = normalizeTurns(readJson(join(dataDir, 'turns.json')));
-const timing = readJson<{starts: number[]; durations: number[]; totalSec: number}>(join(dataDir, 'timing_map.json'));
-const wordsPath = join(dataDir, 'word_times.json');
-const words = existsSync(wordsPath) ? readJson<Record<string, WordTiming[]>>(wordsPath) : {};
-const lock = readJson<Record<string, {width?: number; height?: number}>>(join(ROOT, 'data', 'images.lock.json'));
-const imageSizes = Object.fromEntries(Object.entries(lock)
-  .filter(([path, v]) => v.width && v.height && existsSync(join(ROOT, 'public', path)))
-  .map(([path, v]) => [path, {width: v.width!, height: v.height!}]));
-// Depth maps from tools/depth-maps.py: public/depth/<image path>.png
-const depthMaps = Object.fromEntries(Object.keys(imageSizes)
-  .map(path => [path, `depth/${path.replace(/\.[^.]+$/, '')}.png`])
-  .filter(([, depth]) => existsSync(join(ROOT, 'public', depth))));
-// Library geography and places (data/library). --draft allows features that are not approved yet (samples only).
-const libDir = join(ROOT, 'data', 'library');
-const geo = Object.fromEntries(readdirSync(join(libDir, 'geo')).filter(name => name.endsWith('.geojson')).flatMap(name => {
-  const data = readJson<{type: string; geometry?: GeoFeature['geometry']; properties?: GeoFeature['properties']; features?: GeoFeature[]}>(join(libDir, 'geo', name));
-  const features = data.type === 'FeatureCollection' ? data.features ?? [] : [{geometry: data.geometry!, properties: data.properties!}];
-  return features.map(f => [f.properties.id, f] as const);
-}));
-const places = Object.fromEntries(readJson<{id: string; name: string; location?: [number, number]}[]>(join(libDir, 'entities', 'places.json')).map(p => [p.id, p]));
 const draft = flag('draft');
-const estimated = !existsSync(wordsPath);
-const plan = readJson<ShotPlan>(planPath);
-const resolved = resolveShotPlan(plan, turns, timing, words, {imageSizes, depthMaps, geo, places, allowEstimated: estimated, allowUnapproved: draft});
+const inputs = loadDocInputs(episode, arg('plan') ?? join(ROOT, 'data', episode, 'shots.json'), draft);
+const {turns, timing, estimated} = inputs;
+const resolved = resolveDocPlan(inputs);
 if (draft) console.log('[doc] DRAFT: unapproved library geography allowed (not for publishing)');
+for (const s of resolved.shots) if (s.type === 'clip' && !s.clip) console.log(`[doc] ${s.id}: no LTX clip yet (run tools/doc-clips.ts on the GPU machine); showing the still`);
 const lengths = resolved.shots.map(s => s.endSec - s.startSec);
 console.log(`[doc] ${resolved.shots.length} shots over ${resolved.endSec.toFixed(1)}s; median shot ${[...lengths].sort((a, b) => a - b)[Math.floor(lengths.length / 2)].toFixed(1)}s, longest ${Math.max(...lengths).toFixed(1)}s${estimated ? ' (phrase times ESTIMATED: no Vosk word_times.json)' : ''}`);
-for (const s of resolved.shots) console.log(`  ${s.id} ${s.startSec.toFixed(2)}-${s.endSec.toFixed(2)}s ${s.type}${'image' in s ? ` ${s.image}${'depth' in s && s.depth ? ' [parallax]' : ''}` : ''}`);
+for (const s of resolved.shots) {
+  const tags = [('depth' in s && s.depth) ? 'parallax' : '', s.type === 'clip' && s.clip ? 'LTX clip' : '', ...(s.atmosphere ?? [])].filter(Boolean);
+  console.log(`  ${s.id} ${s.startSec.toFixed(2)}-${s.endSec.toFixed(2)}s ${s.type}${'image' in s ? ` ${s.image}` : ''}${tags.length ? ` [${tags.join(', ')}]` : ''}`);
+}
 if (flag('check')) process.exit(0);
 
 const {bundle} = await import('@remotion/bundler');

@@ -1,6 +1,6 @@
 /** Full-bleed documentary shots. Every shot moves for its whole duration; all text follows docs/LOOK.md. */
 import React, {useEffect, useLayoutEffect, useMemo, useRef, useState} from 'react';
-import {Img, cancelRender, continueRender, delayRender, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
+import {Img, Loop, OffthreadVideo, cancelRender, continueRender, delayRender, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
 import {geoPath} from 'd3-geo';
 import type {Feature, FeatureCollection, MultiPolygon, Polygon} from 'geojson';
 import {feature} from 'topojson-client';
@@ -10,9 +10,10 @@ import {World, WorldLayer, useWorld} from '../motion/world';
 import {densify, ringFeature, stateFeature} from '../motion/territory';
 import {US_RIVERS} from '../components/geo/usGeo';
 import {COLOR, FONT} from '../theme/tokens';
+import {AtmosphereLayers} from './atmosphere';
 import {easeInOut, frameImage, framingAt} from './framing';
 import {depthAtPoint, normalizeDepth, parallaxMotion, warpFrame, type DepthSource, type PixelSource} from './parallax';
-import type {Framing, ImageMoveShot, LonLat, MapShot, PointShot, PortraitShot, RegionRef} from './types';
+import type {ClipShot, Framing, ImageMoveShot, LonLat, MapShot, PointShot, PortraitShot, RegionRef} from './types';
 
 const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
 
@@ -119,9 +120,38 @@ export const ImageMoveView: React.FC<{shot: ImageMoveShot | PortraitShot; lead: 
     {shot.depth
       ? <ParallaxMove image={shot.image} depth={shot.depth} from={shot.from} to={shot.to} durationSec={shot.endSec - shot.startSec + lead} />
       : <ImageMove image={shot.image} size={shot.size} from={shot.from} to={shot.to} durationSec={shot.endSec - shot.startSec + lead} />}
+    {shot.type === 'portrait' && <AtmosphereLayers kinds={shot.atmosphere} seed={shot.id} />}
     {shot.type === 'portrait' && <NameTag name={shot.name} role={shot.role} />}
   </>
 );
+
+/* --------------------------------- hero clips --------------------------------- */
+
+/**
+ * LTX motion from a real still. The file is a forward-then-reverse boomerang (seamless when looped); a slow push
+ * keeps the frame alive. Without a generated clip, falls back to a camera move on the same still.
+ */
+export const ClipView: React.FC<{shot: ClipShot; lead: number}> = ({shot, lead}) => {
+  const frame = useCurrentFrame();
+  const {fps, durationInFrames} = useVideoConfig();
+  if (!shot.clip) {
+    const duration = shot.endSec - shot.startSec + lead;
+    return shot.depth
+      ? <ParallaxMove image={shot.image} depth={shot.depth} from={shot.from} to={shot.to} durationSec={duration} />
+      : <ImageMove image={shot.image} size={shot.size} from={shot.from} to={shot.to} durationSec={duration} />;
+  }
+  const push = interpolate(frame, [0, durationInFrames], [1, 1.05], clamp);
+  const clipFrames = Math.max(1, Math.round(shot.clip.durationSec * fps));
+  return (
+    <div style={{position: 'absolute', inset: 0, overflow: 'hidden', background: COLOR.night}}>
+      <div style={{position: 'absolute', inset: 0, transform: `scale(${push})`}}>
+        <Loop durationInFrames={clipFrames} layout="none">
+          <OffthreadVideo src={staticFile(shot.clip.path)} muted style={{width: '100%', height: '100%', objectFit: 'cover'}} />
+        </Loop>
+      </div>
+    </div>
+  );
+};
 
 /* ------------------------------------ maps ------------------------------------ */
 
@@ -300,6 +330,7 @@ export const PointView: React.FC<{shot: PointShot; lead: number}> = ({shot, lead
   return (
     <>
       <ImageMove image={shot.backdrop} size={shot.size} from={{x: 0.5, y: 0.5, zoom: 1.05}} to={{x: 0.5, y: 0.5, zoom: 1.15}} durationSec={duration} dim={0.62} blur={6} />
+      <AtmosphereLayers kinds={shot.atmosphere} seed={shot.id} />
       <div style={{position: 'absolute', left: 200, right: 200, top: 0, bottom: 0, display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: 48}}>
         {shot.bullets.map((b, i) => {
           const at = Math.round((b.sec - shot.startSec + lead) * fps);

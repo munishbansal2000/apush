@@ -122,3 +122,39 @@ describe('map geography from the library', () => {
   });
 });
 
+describe('hero clips and atmosphere', () => {
+  const turns = parseTranscript('Maya: 1763. Britain won the biggest war of the century.');
+  const timing = {starts: [0.25], durations: [5], totalSec: 6};
+  const words = {t00: '1763 britain won the biggest war of the century'.split(' ').map((w, i) => ({w, s: i * 0.5, e: i * 0.5 + 0.4}))};
+  const base = {imageSizes: {'historic/war.jpg': {width: 3000, height: 2000}}, imageShas: {'historic/war.jpg': 'a'.repeat(64)}, generatorSha: 'gen'};
+  const clipPlan = (prompt: string, extra: Record<string, unknown> = {}): ShotPlan => ({episode: 'x', shots: [
+    {type: 'clip', at: {turn: 0, phrase: '1763'}, image: 'historic/war.jpg', prompt, seed: 7, atmosphere: ['smoke'], ...extra} as ShotPlan['shots'][number],
+  ]});
+  const good = 'Gunpowder smoke drifts slowly across the battlefield; the flag ripples softly.';
+
+  it('rejects camera moves and invented content in clip prompts', () => {
+    assert.throws(() => resolveShotPlan(clipPlan('Slow camera zoom into the smoke over the battlefield'), turns, timing, words, base), /camera-move word/);
+    assert.throws(() => resolveShotPlan(clipPlan('Smoke drifts as new soldiers appear from the trees'), turns, timing, words, base), /adds people or objects/);
+  });
+
+  it('keys clips by content and attaches a generated clip only when the key matches', () => {
+    const a = resolveShotPlan(clipPlan(good), turns, timing, words, base).shots[0];
+    const again = resolveShotPlan(clipPlan(good), turns, timing, words, base).shots[0];
+    const reseeded = resolveShotPlan(clipPlan(good, {seed: 8}), turns, timing, words, base).shots[0];
+    const refocused = resolveShotPlan(clipPlan(good, {focus: [0.3, 0.5]}), turns, timing, words, base).shots[0];
+    assert.ok(a.type === 'clip' && again.type === 'clip' && reseeded.type === 'clip' && refocused.type === 'clip');
+    assert.equal(a.fingerprint, again.fingerprint);
+    assert.notEqual(a.fingerprint, reseeded.fingerprint);
+    assert.notEqual(a.fingerprint, refocused.fingerprint);
+    assert.equal(a.clip, undefined, 'no clip generated yet: falls back to the still');
+    const withClip = resolveShotPlan(clipPlan(good), turns, timing, words, {...base, clips: {[a.fingerprint]: {path: 'clips/x/a.mp4', durationSec: 12}}}).shots[0];
+    assert.ok(withClip.type === 'clip' && withClip.clip?.durationSec === 12);
+  });
+
+  it('rejects unknown atmosphere layers and atmosphere on maps', () => {
+    assert.throws(() => resolveShotPlan(clipPlan(good, {atmosphere: ['lasers']}), turns, timing, words, base), /unknown atmosphere "lasers"/);
+    const map: ShotPlan = {episode: 'x', shots: [{type: 'map', at: {turn: 0, phrase: '1763'}, projection: 'world', extent: [[-100, 20], [20, 60]], camera: [{at: {offset: 0}, center: [-40, 40], zoom: 1}], atmosphere: ['fog']}]};
+    assert.throws(() => resolveShotPlan(map, turns, timing, words, base), /maps take no atmosphere layers/);
+  });
+});
+
