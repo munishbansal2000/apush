@@ -10,7 +10,7 @@ import { Easing, interpolate, useCurrentFrame, useVideoConfig } from 'remotion';
 import { feature } from 'topojson-client';
 import type { GeometryCollection, Topology } from 'topojson-specification';
 import landTopo from 'world-atlas/land-50m.json';
-import lakesJson from '../data/geo/lakes-50m.json';
+import {NATURAL_LAKES} from './natural-lakes';
 import { US_STATE_LINES } from '../components/geo/usGeo';
 import { COLOR } from '../theme/tokens';
 
@@ -34,8 +34,8 @@ const LAND = (() => {
   return feature(t, t.objects.land) as unknown as FeatureCollection<MultiPolygon> | MultiPolygon;
 })();
 
-/** Major lakes (Natural Earth 50m, public domain): the land layer has none, so the Great Lakes would read as land. */
-const LAKES = lakesJson as unknown as FeatureCollection<MultiPolygon>;
+/** Major natural lakes (Natural Earth 50m, public domain, reservoirs removed): the land layer has none, so the Great Lakes would read as land. */
+const LAKES = NATURAL_LAKES;
 
 export function worldProjection(spec: WorldSpec): GeoProjection {
   const [[w, s], [e, n]] = spec.extent;

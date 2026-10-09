@@ -17,7 +17,7 @@ import type {FeatureCollection, MultiPolygon} from 'geojson';
 import {feature} from 'topojson-client';
 import type {GeometryCollection, Topology} from 'topojson-specification';
 import landTopo from 'world-atlas/land-50m.json';
-import lakesJson from '../../data/geo/lakes-50m.json';
+import {NATURAL_LAKES} from '../../motion/natural-lakes';
 import {ringPolygon, riverPaths, usProjection, type LonLat} from '../geo/usGeo';
 import {FONT, TYPE, alpha} from '../../theme/tokens';
 import {CLAMP, PAPER, PaperSheet, paperHalo, usePhases, type CustomProps, type Phase} from './kit';
@@ -34,7 +34,7 @@ const LAND = (() => {
   const t = landTopo as unknown as Topology<{land: GeometryCollection}>;
   return feature(t, t.objects.land) as unknown as FeatureCollection<MultiPolygon>;
 })();
-const LAKES = lakesJson as unknown as FeatureCollection<MultiPolygon>;
+const LAKES = NATURAL_LAKES;
 
 /**
  * The line, north to south (approximate). Basis: the proclamation reserves the lands "beyond the heads or sources of

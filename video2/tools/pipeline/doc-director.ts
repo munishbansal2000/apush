@@ -152,7 +152,8 @@ export function validateOutline(raw: unknown, turns: PipelineTurn[], timing: {st
 }
 
 export interface MapData {
-  geo: {id: string; name: string; type: string; precision: string}[];
+  /** `base`: a period base layer (years it was true), drawn automatically on a map with a matching period. */
+  geo: {id: string; name: string; type: string; precision: string; base?: string}[];
   places: {id: string; name: string}[];
   /** Library map views (data/library/maps): id, name and named camera targets. */
   views?: {id: string; name: string; focus: string[]}[];

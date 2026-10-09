@@ -1,4 +1,5 @@
 /** Library validation and indexing. Pure functions: the CLI (tools/library.ts) supplies files and existence checks. */
+import {PERIOD_SIDES} from './types';
 import type {AssetRecord, Brief, Entity, GeoProperties, IndexEntry} from './types';
 
 export interface Taxonomy {
@@ -116,7 +117,22 @@ export function validateGeo(p: GeoProperties, taxonomy: Taxonomy): string[] {
   if (!Array.isArray(p.sources) || !p.sources.length) add('sources are required (where the geometry comes from)');
   if (!Array.isArray(p.units) || p.units.some(u => !taxonomy.units[String(u)])) add('units must list CED units 1-9');
   if (!['candidate', 'verified', 'approved', 'rejected'].includes(p.review?.status)) add('review.status is required');
+  if (p.layer) {
+    if (p.layer.base !== true) add('layer.base must be true (only period base layers use "layer")');
+    if (!PERIOD_SIDES.includes(p.layer.side)) add(`layer.side must be one of ${PERIOD_SIDES.join(', ')}`);
+    if (!p.validFrom || !p.validTo) add('a period base layer needs validFrom and validTo (the years it was true)');
+    if (p.validFrom && p.validTo && yearOf(p.validFrom) > yearOf(p.validTo)) add('validFrom is after validTo');
+    const at = p.layer.labelAt;
+    if (at && !(Array.isArray(at) && at.length === 2 && Math.abs(at[0]) <= 180 && Math.abs(at[1]) <= 90)) add('layer.labelAt must be [lon, lat]');
+    if (p.type === 'point') add('points are not base layers (use places)');
+  }
   return issues;
+}
+
+/** The year of an ISO date or a bare year ("1763-10-07" -> 1763.77, "1763" -> 1763). */
+export function yearOf(date: string): number {
+  const [y, m = '1', d = '1'] = String(date).split('-');
+  return Number(y) + (Number(m) - 1) / 12 + (Number(d) - 1) / 365;
 }
 
 /** Approved assets only: what the director may choose from. */

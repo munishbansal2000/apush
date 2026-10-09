@@ -2,7 +2,7 @@ import React from 'react';
 import {geoPath} from 'd3-geo';
 import type {FeatureCollection, MultiPolygon} from 'geojson';
 import {Easing, interpolate, useVideoConfig} from 'remotion';
-import lakesJson from '../../data/geo/lakes-50m.json';
+import {NATURAL_LAKES} from '../../motion/natural-lakes';
 import {NEIGHBORS, US_NATION, US_STATE_LINES, riverPaths, usProjection, type LonLat} from '../geo/usGeo';
 import {FONT, TYPE} from '../../theme/tokens';
 import {CLAMP, PAPER, PaperSheet, paperHalo, usePhases, type CustomProps, type Phase} from './kit';
@@ -26,7 +26,7 @@ export const DEFAULT_PHASES: Phase[] = [
 
 export type SaratogaMapProps = CustomProps;
 
-const LAKES = lakesJson as unknown as FeatureCollection<MultiPolygon>;
+const LAKES = NATURAL_LAKES;
 const CORRIDOR_LAKES: FeatureCollection<MultiPolygon> = {
   type: 'FeatureCollection',
   features: LAKES.features.filter(f => ['Lake Champlain', 'Lake George'].includes(String((f.properties as {name?: string} | null)?.name))),

@@ -111,7 +111,7 @@ function fixWinding(geometry: {type: string; coordinates: unknown}): {type: 'Pol
 export function resolveShotPlan(input: ShotPlan, turns: PipelineTurn[], timing: AnchorTiming & {totalSec: number}, words: Record<string, WordTiming[]>, opts: ResolveOptions): ResolvedShotPlan {
   const rules = opts.rules ?? LOOK_RULES;
   const frame = opts.frame ?? {width: 1920, height: 1080};
-  const expanded = expandMapViews(input, opts.mapViews ?? {}, opts.places ?? {});
+  const expanded = expandMapViews(input, opts.mapViews ?? {}, opts.places ?? {}, (opts.geo ?? {}) as never, opts.allowUnapproved);
   const plan = expanded.plan as Omit<ShotPlan, 'shots'> & {shots: PlanShot[]};
   const issues: string[] = [...expanded.issues];
   const phrase = (where: string, a: PhraseAnchor, edge: 'start' | 'end' = 'start'): number => {

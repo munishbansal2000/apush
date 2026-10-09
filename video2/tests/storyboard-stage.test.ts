@@ -32,9 +32,9 @@ describe('storyboard and build stages: script -> storyboard -> plan, revisions, 
       'doc-outline': outline,
       'sb-act-01': {turns: [
         {turn: 0, visuals: [map('map.atlantic-world', 'last time'), map('map.atlantic-world', 'to london', {moves: [{at: {offset: 1}, to: 'london'}]})]},
-        {turn: 1, visuals: [map('map.north-america-1763', 'the empire stretched')]},
+        {turn: 1, visuals: [map('map.north-america', 'the empire stretched')]},
       ]},
-      'sb-act-02': {turns: [{turn: 4, visuals: [map('map.eastern-frontier-1763', 'the line always')]}]},
+      'sb-act-02': {turns: [{turn: 4, visuals: [map('map.eastern-north-america', 'the line always')]}]},
     };
     const h = fakeContext({episode: 'u9e9', meta: name => {
       if (!(name in answers)) throw new Error(`unexpected Meta UI call: ${name}`);
@@ -63,7 +63,7 @@ describe('storyboard and build stages: script -> storyboard -> plan, revisions, 
     const review = loadLessonReview('u9e9', join(h.root, 'data'));
     review.storyboard = {notes: {'2': [{text: 'turn 4: land on the mountains instead', at: 'now'}]}};
     saveLessonReview('u9e9', review, join(h.root, 'data'));
-    answers['sb-act-02-revise-1'] = {turns: [{turn: 4, visuals: [map('map.eastern-frontier-1763', 'drawn along the mountains', {moves: [{at: {offset: 0.5}, to: 'frontier'}]})]}]};
+    answers['sb-act-02-revise-1'] = {turns: [{turn: 4, visuals: [map('map.eastern-north-america', 'drawn along the mountains', {moves: [{at: {offset: 0.5}, to: 'frontier'}]})]}]};
     storyboardStage(h.ctx);
     assert.deepEqual(h.metaCalls.map(c => c.name).slice(3), ['sb-act-02-revise-1']);
     assert.ok(loadLessonReview('u9e9', join(h.root, 'data')).storyboard?.notes?.['2'][0].done, 'note done');
@@ -98,7 +98,7 @@ describe('build stage: problems go back to the storyboard', () => {
     atomicJson(join(h.ctx.dataDir, 'timing_map.json'), {starts, durations, totalSec: starts[4] + durations[4] + 0.6});
     const keys = turnKeys(turns);
     atomicJson(join(h.ctx.dataDir, 'storyboard.json'), {episode: 'u9e7', acts: outline.acts, turns: keys.map((key, index) => ({key, index,
-      visuals: index === 0 ? [map('map.atlantic-world', 'last time')] : index === 1 ? [map('map.north-america-1763', 'the empire stretched')] : index === 4 ? [map('map.eastern-frontier-1763', 'drawn along the mountains')] : []}))});
+      visuals: index === 0 ? [map('map.atlantic-world', 'last time')] : index === 1 ? [map('map.north-america', 'the empire stretched')] : index === 4 ? [map('map.eastern-north-america', 'drawn along the mountains')] : []}))});
     assert.throws(() => buildStage(h.ctx), /sent back to storyboard act\(s\) 1 as review notes/);
     const notes = loadLessonReview('u9e7', join(h.root, 'data')).storyboard?.notes?.['1'] ?? [];
     assert.ok(notes.some(n => /build check, line 1: .*holds longer than 14s on one map/.test(n.text)), JSON.stringify(notes));

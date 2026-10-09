@@ -142,7 +142,16 @@ export interface GeoProperties {
   sensitivity?: {level: 'none' | 'care' | 'high'; note?: string};
   units: number[];
   review: {status: ReviewStatus; by?: string; at?: string; notes?: string};
+  /**
+   * Part of the period base map (docs/MAP_VIEWS.md): drawn automatically on any map shot whose "period" falls inside
+   * validFrom..validTo and whose view overlaps it. Regions are tinted by side, lines drawn dashed, with an optional label.
+   */
+  layer?: {base: true; side: PeriodSide; label?: string; labelAt?: [number, number]};
 }
+
+/** Who holds or claims a period region; each side has one map colour. */
+export type PeriodSide = 'british' | 'french' | 'spanish' | 'native' | 'united-states' | 'mexico' | 'confederacy' | 'other';
+export const PERIOD_SIDES: PeriodSide[] = ['british', 'french', 'spanish', 'native', 'united-states', 'mexico', 'confederacy', 'other'];
 
 /** Consumption index entry: compact, searchable, what the director sees. */
 export interface IndexEntry {

@@ -1,9 +1,68 @@
 {
   "type": "Feature",
-  "geometry": {"type": "Polygon", "coordinates": [[
-    [-64.3, 50.27], [-64.4, 51.3], [-72.0, 48.6], [-79.6, 46.2], [-74.7, 45.0], [-73.35, 45.0], [-71.5, 45.0],
-    [-70.3, 45.9], [-69.2, 47.4], [-66.6, 47.95], [-64.8, 48.4], [-64.21, 48.86], [-64.5, 49.9], [-64.3, 50.27]
-  ]]},
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -64.3,
+          50.27
+        ],
+        [
+          -64.4,
+          51.3
+        ],
+        [
+          -72.0,
+          48.6
+        ],
+        [
+          -79.6,
+          46.2
+        ],
+        [
+          -74.7,
+          45.0
+        ],
+        [
+          -73.35,
+          45.0
+        ],
+        [
+          -71.5,
+          45.0
+        ],
+        [
+          -70.3,
+          45.9
+        ],
+        [
+          -69.2,
+          47.4
+        ],
+        [
+          -66.6,
+          47.95
+        ],
+        [
+          -64.8,
+          48.4
+        ],
+        [
+          -64.21,
+          48.86
+        ],
+        [
+          -64.5,
+          49.9
+        ],
+        [
+          -64.3,
+          50.27
+        ]
+      ]
+    ]
+  },
   "properties": {
     "id": "geo.region.province-of-quebec@1763",
     "type": "region",
@@ -11,8 +70,24 @@
     "validFrom": "1763-10-07",
     "validTo": "1774-06-22",
     "precision": "approximate",
-    "sources": ["Royal Proclamation of 1763, boundary clause: River St. John (Labrador coast) - Lake St. John - south end of Lake Nipissing - St. Lawrence and Lake Champlain at 45°N - the highlands - north coast of the Baie des Chaleurs - Cape Rosier - west end of Anticosti. Vertices placed at those landmarks; the highlands segment is approximate."],
-    "units": [3],
-    "review": {"status": "candidate", "notes": "Seed for the u3e1 sample; replaces the anachronistic modern-Canada fill. Verify against a period map (e.g. Kitchin 1763) before approving."}
+    "sources": [
+      "Royal Proclamation of 1763, boundary clause: River St. John (Labrador coast) - Lake St. John - south end of Lake Nipissing - St. Lawrence and Lake Champlain at 45\u00b0N - the highlands - north coast of the Baie des Chaleurs - Cape Rosier - west end of Anticosti. Vertices placed at those landmarks; the highlands segment is approximate."
+    ],
+    "units": [
+      3
+    ],
+    "review": {
+      "status": "candidate",
+      "notes": "Seed for the u3e1 sample; replaces the anachronistic modern-Canada fill. Verify against a period map (e.g. Kitchin 1763) before approving."
+    },
+    "layer": {
+      "base": true,
+      "side": "british",
+      "label": "Province of Quebec",
+      "labelAt": [
+        -71.0,
+        48.3
+      ]
+    }
   }
 }

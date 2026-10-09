@@ -21,10 +21,14 @@ export function directorCatalog(inputs: DocInputs): CatalogEntry[] {
 }
 
 /** Library geography (approved only, unless drafting), places and map views the director may reference. */
+const baseYears = (p: {layer?: {base: true}; validFrom?: string; validTo?: string}) =>
+  p.layer?.base && p.validFrom && p.validTo ? {base: `${p.validFrom.slice(0, 4)}-${p.validTo.slice(0, 4)}`} : {};
+
 export function directorMaps(inputs: DocInputs, draft: boolean): MapData {
   return {
     geo: Object.values(inputs.options.geo ?? {}).filter(g => draft || g.properties.review.status === 'approved')
-      .map(g => ({id: g.properties.id, name: (g.properties as unknown as {name?: string}).name ?? g.properties.id, type: g.geometry.type, precision: g.properties.precision})),
+      .map(g => ({id: g.properties.id, name: (g.properties as unknown as {name?: string}).name ?? g.properties.id, type: g.geometry.type, precision: g.properties.precision,
+        ...baseYears(g.properties as {layer?: {base: true}; validFrom?: string; validTo?: string})})),
     places: Object.entries(inputs.options.places ?? {}).map(([id, p]) => ({id, name: p.name})),
     views: Object.values(inputs.options.mapViews ?? {}).map(v => ({id: v.id, name: v.name, focus: Object.keys(v.focus ?? {})})),
   };

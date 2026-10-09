@@ -162,6 +162,9 @@ The pre-render gate. Pure checks over the script, data, compiled episode, images
 
 Codes: see the table in `README.md`. Info-level `L0xx` lines are automatic layout fixes.
 
+### `npm run maps -- list | validate | preview <view|all> [--period YEAR]`
+Map views (`data/library/maps/`) and period layers (dated geo with a `layer` block). `validate` checks every view and that each layer is covered by some view; `preview` renders the opening framing and each focus target to `out/review/maps/<region>[-<year>].png`. Guide: [MAP_VIEWS.md](MAP_VIEWS.md).
+
 ### `npm run check`
 Typecheck + ESLint (episode-file rules) + unit tests + validate. Use in CI.
 
