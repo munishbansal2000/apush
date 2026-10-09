@@ -83,18 +83,21 @@ async function main() {
         atomicWrite(`${outStem}.draft.raw.md`, `${response.text}\n`);
         atomicWrite(`${outStem}.draft.raw.attempt-${attempt}.md`, `${response.text}\n`);
         let parsed;
+        let effectiveFollowup = followupPrompt;
         try {
           parsed = extractJson(response.text);
           atomicWrite(`${outStem}.draft.json`, `${JSON.stringify(parsed, null, 2)}\n`);
         } catch (error) {
-          if (!followupPrompt) throw error;
-          // The second same-chat turn is specifically allowed to repair and
-          // reformat a malformed draft. Preserve the raw draft and continue.
-          console.warn(`[meta-ui] draft is not valid JSON; passing it to the same-chat reviewer: ${error.message}`);
+          // A response can be marked complete by Meta even when generation hit
+          // its output ceiling and stopped before closing the JSON. Repair it in
+          // the same chat, where the model still has the full prompt and draft,
+          // instead of immediately repeating the expensive request from scratch.
+          effectiveFollowup ??= 'Your previous response was truncated or malformed and is not valid JSON. Return the COMPLETE corrected JSON object again. Preserve all required content, but make it compact: omit whitespace, redundant entries, optional empty arrays, and optional empty objects. Return JSON only, with every array and object closed. Do not explain the repair.';
+          console.warn(`[meta-ui] draft is not valid JSON; requesting a compact same-chat repair: ${error.message}`);
         }
-        if (followupPrompt) {
-          console.log('[meta-ui] draft received; starting same-chat director audit');
-          const reviewed = await meta.send(page, followupPrompt, debugDir, `${path.basename(out, '.json')}-review-attempt-${attempt}`, {
+        if (effectiveFollowup) {
+          console.log(`[meta-ui] draft received; starting same-chat ${followupPrompt ? 'director audit' : 'JSON repair'}`);
+          const reviewed = await meta.send(page, effectiveFollowup, debugDir, `${path.basename(out, '.json')}-review-attempt-${attempt}`, {
             attachments: [], timeoutMs: Number(value('timeout-sec', '1200')) * 1000,
           });
           atomicWrite(`${outStem}.review.raw.md`, `${reviewed.text}\n`);

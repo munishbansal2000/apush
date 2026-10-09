@@ -63,6 +63,7 @@ const turnLine = (turn: PipelineTurn, index: number, durations: number[]) =>
   `${index} | ${turn.kind === 'pause' ? 'PAUSE' : turn.speaker} | ${durations[index].toFixed(1)}s | ${turn.kind === 'pause' ? `[pause ${turn.pauseSec}s]` : cleanSpeech(turn.text ?? '')}`;
 
 const PHRASE_RULE = 'Every cue is {"turn": index, "phrase": "..."}: 2-6 consecutive words copied VERBATIM from that turn (case and punctuation ignored). Never paraphrase; code rejects any phrase the turn does not contain.';
+const COORDINATE_RULE = 'Never emit a bare numeric array: Meta UI can render it as a citation and delete its numbers. Write coordinates as {"lon":number,"lat":number}, map extents as {"southwest":{"lon":number,"lat":number},"northeast":{"lon":number,"lat":number}}, and clip focus as {"x":number,"y":number}. Arrays of objects or strings are safe.';
 
 export function outlinePrompt(episode: string, turns: PipelineTurn[], durations: number[], previous?: Outline): string {
   return [
@@ -151,16 +152,17 @@ export function actPrompt(index: number, outline: Outline, turns: PipelineTurn[]
     `- Optional "atmosphere" on image, clip, portrait and point shots (not maps): ${ATMOSPHERES.join(', ')}.`,
     '- Use only images from ASSETS and geography from MAP DATA. Never invent paths or ids. 19th-century imaginings (marked retrospective) must not be presented as eyewitness records.',
     `- The FIRST shot must start in turn ${act.turns.from}. Shots are in time order. ${PHRASE_RULE}`,
+    `- ${COORDINATE_RULE}`,
     '',
     'SHOT FORMATS (copy exactly):',
     '{"type":"image_move","at":{"turn":5,"phrase":"..."},"image":"<asset path>","from":{"x":0.5,"y":0.4,"zoom":1.0},"to":{"x":0.48,"y":0.3,"zoom":1.3},"atmosphere":["dust"]}',
     '{"type":"portrait","at":{...},"image":"<asset path>","from":{...},"to":{...},"name":"George Grenville","role":"Prime Minister, 1763-1765"}',
-    '{"type":"map","at":{...},"projection":"us"|"world","extent":[[-92,24],[-62,48]],"tilt":24,"terrain":{"ridges":["geo.line.appalachian-crest"],"rivers":true},',
-    ' "camera":[{"at":{"offset":0},"center":[-77,39],"zoom":1.2},{"at":{"turn":5,"phrase":"..."},"center":[-75,40],"zoom":1.6,"ease":2.5}],',
+    '{"type":"map","at":{...},"projection":"us"|"world","extent":{"southwest":{"lon":-92,"lat":24},"northeast":{"lon":-62,"lat":48}},"tilt":24,"terrain":{"ridges":["geo.line.appalachian-crest"],"rivers":true},',
+    ' "camera":[{"at":{"offset":0},"center":{"lon":-77,"lat":39},"zoom":1.2},{"at":{"turn":5,"phrase":"..."},"center":{"lon":-75,"lat":40},"zoom":1.6,"ease":2.5}],',
     ' "fills":[{"at":{...},"region":{"geo":"<geo id>"}|{"state":"MA"},"color":"#b3261e"}], "lines":[{"at":{...},"geo":"<geo id>","color":"#b3261e","arrow":false}],',
-    ' "points":[{"at":{...},"place":"<place id>","kind":"fort"|"town"|"battle"}], "labels":[{"at":{...},"text":"Province of Quebec","lonlat":[-71,48.3],"style":"region"|"ocean"|"town"}]}',
+    ' "points":[{"at":{...},"place":"<place id>","kind":"fort"|"town"|"battle"}], "labels":[{"at":{...},"text":"Province of Quebec","lonlat":{"lon":-71,"lat":48.3},"style":"region"|"ocean"|"town"}]}',
     '{"type":"point","at":{...},"backdrop":"<asset path>","bullets":[{"at":{...},"text":"Britain won the war"}],"atmosphere":["embers"]}',
-    '{"type":"clip","at":{...},"image":"<asset path>","prompt":"Gunpowder smoke drifts slowly across the battlefield; the flag ripples softly.","seed":1763,"focus":[0.5,0.5]}',
+    '{"type":"clip","at":{...},"image":"<asset path>","prompt":"Gunpowder smoke drifts slowly across the battlefield; the flag ripples softly.","seed":1763,"focus":{"x":0.5,"y":0.5}}',
     'Cue forms: {"turn": i, "phrase": "..."} or {"offset": seconds after the shot starts}. Colors: gold #c9a227, amber #e2a33b, red #b3261e, blue #2c5aa0.',
     'Optional year stamps for the act: "years":[{"at":{...},"text":"1763"}] (only for a year the narration says).',
     '',
@@ -178,7 +180,7 @@ export function actPrompt(index: number, outline: Outline, turns: PipelineTurn[]
   ].join('\n');
 }
 
-export const ACT_REVIEW = 'Switch roles: you are a skeptical senior editor. Re-check the shots you just wrote against every rule above: phrases verbatim from their turns, first shot in the first turn, cuts every 3-6 seconds, shot length limits, every image shot moves, zoom within each image\'s max zoom, only listed assets and geo ids, text limits, at most one clip. Fix every problem silently and return ONLY the corrected JSON object {"shots": [...], "years": [...]}.';
+export const ACT_REVIEW = `Switch roles: you are a skeptical senior editor. Re-check the shots you just wrote against every rule above: phrases verbatim from their turns, first shot in the first turn, cuts every 3-6 seconds, shot length limits, every image shot moves, zoom within each image's max zoom, only listed assets and geo ids, text limits, at most one clip. ${COORDINATE_RULE} Fix every problem silently and return ONLY the corrected JSON object {"shots": [...], "years": [...]}.`;
 
 /** Structural checks on one act before assembly (everything else is checked on the merged plan). */
 export function validateAct(raw: unknown, index: number, outline: Outline): {act?: ActOutput; issues: string[]} {
@@ -240,7 +242,52 @@ export interface DirectorInputs {
 
 export interface DirectorLog {stage: string; source: string; issues: string[]}
 
-const readAnswer = (path: string): unknown => JSON.parse(readFileSync(path, 'utf8'));
+type JsonObject = Record<string, unknown>;
+const object = (value: unknown): value is JsonObject => !!value && typeof value === 'object' && !Array.isArray(value);
+const finite = (value: unknown): value is number => typeof value === 'number' && Number.isFinite(value);
+const lonLat = (value: unknown): [number, number] | null =>
+  object(value) && finite(value.lon) && finite(value.lat) ? [value.lon, value.lat] : null;
+
+/**
+ * Meta's UI treats some bare numeric arrays as citation references and removes
+ * their contents from copied text. The prompt therefore uses object-shaped
+ * coordinates; turn that transport representation into the renderer contract
+ * only after the response has safely crossed the UI boundary.
+ */
+export function materializeCoordinateObjects(raw: unknown): unknown {
+  if (!object(raw) || !Array.isArray(raw.shots)) return raw;
+  for (const value of raw.shots) {
+    if (!object(value)) continue;
+    if (value.type === 'clip' && object(value.focus) && finite(value.focus.x) && finite(value.focus.y)) {
+      value.focus = [value.focus.x, value.focus.y];
+    }
+    if (value.type !== 'map') continue;
+    if (object(value.extent)) {
+      const southwest = lonLat(value.extent.southwest);
+      const northeast = lonLat(value.extent.northeast);
+      if (southwest && northeast) value.extent = [southwest, northeast];
+    }
+    if (Array.isArray(value.camera)) for (const key of value.camera) if (object(key)) {
+      const center = lonLat(key.center);
+      if (center) key.center = center;
+    }
+    if (Array.isArray(value.labels)) for (const label of value.labels) if (object(label)) {
+      const at = lonLat(label.lonlat);
+      if (at) label.lonlat = at;
+    }
+    if (Array.isArray(value.points)) for (const point of value.points) if (object(point)) {
+      const at = lonLat(point.lonlat);
+      if (at) point.lonlat = at;
+    }
+    if (Array.isArray(value.lines)) for (const line of value.lines) if (object(line) && Array.isArray(line.coords)) {
+      const coords = line.coords.map(lonLat);
+      if (coords.every((coord): coord is [number, number] => coord !== null)) line.coords = coords;
+    }
+  }
+  return raw;
+}
+
+const readAnswer = (path: string): unknown => materializeCoordinateObjects(JSON.parse(readFileSync(path, 'utf8')));
 
 export interface DirectorResult {plan?: ShotPlan; outline?: Outline; log: DirectorLog[]; /** Prompt names still awaiting answers (agent mode). */ pending?: string[]}
 
