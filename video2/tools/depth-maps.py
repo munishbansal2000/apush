@@ -8,7 +8,7 @@ white = near, same aspect as the image (long edge capped at 2048). Uses Depth An
 Install once in the Python you run it with:  pip install -r requirements-depth.txt
 Existing maps are skipped unless --force; the source image hash is stored beside each map so edits re-run.
 """
-import argparse, hashlib, os, sys
+import argparse, glob, hashlib, os, sys
 
 def main():
     ap = argparse.ArgumentParser()
@@ -28,7 +28,9 @@ def main():
     estimator = None
     public = os.path.abspath(args.public)
     done = skipped = 0
-    for path in args.images:
+    # Expand wildcards ourselves: Windows cmd passes '*.jpg' through literally.
+    paths = [p for pattern in args.images for p in (sorted(glob.glob(pattern)) or [pattern])]
+    for path in paths:
         src = os.path.abspath(path)
         rel = os.path.relpath(src, public)
         if rel.startswith('..'):
