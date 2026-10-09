@@ -82,7 +82,7 @@ def download_lesson(lesson):
     
     last_host_time = {}
     for i, img in enumerate(images):
-        url = img.get("primary_url", "")
+        url = img.get("primary_url") or ""
         host = next((h for h in RATE_LIMITS if h in url), "default")
         limit = RATE_LIMITS.get(host, 30)
         min_interval = 60.0 / limit
