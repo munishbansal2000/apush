@@ -4,7 +4,7 @@ import {existsSync, mkdirSync, readFileSync, writeFileSync, unlinkSync, readdirS
 import {basename, join} from 'node:path';
 import {ROOT, arg, flag} from '../lib';
 import {PRONUNCIATIONS_PATH} from './speech';
-import {atomicJson, readJson, selectedStages, sha256, type PipelineMode, type PipelineStage} from '../pipeline-core';
+import {PIPELINE_STAGES, atomicJson, readJson, selectedStages, sha256, type PipelineMode, type PipelineStage} from '../pipeline-core';
 
 export interface Config {
   timing: {gapSec: number; leadSec: number; tailSec: number};
@@ -61,7 +61,10 @@ export function createContext(): PipelineContext {
   const force = flag('force');
   const videoGen = arg('video-gen', 'ltx')!;
   if (!['ltx', 'none'].includes(videoGen)) throw new Error('--video-gen must be ltx or none');
-  const stages = selectedStages(arg('only'), arg('from'), flag('full'));
+  // --skip images,clips: leave stages out of a run (e.g. the overnight unit runner skips image research).
+  const skip = (arg('skip') ?? '').split(',').map(x => x.trim()).filter(Boolean);
+  for (const name of skip) if (!(PIPELINE_STAGES as string[]).includes(name)) throw new Error(`--skip: unknown stage ${name}`);
+  const stages = selectedStages(arg('only'), arg('from'), flag('full')).filter(stage => !skip.includes(stage));
   const cfg = readJson<Config>(join(ROOT, 'data/pipeline.json'));
   const work = join(ROOT, 'out', 'pipeline', episode);
   const dataDir = join(ROOT, 'data', episode);
