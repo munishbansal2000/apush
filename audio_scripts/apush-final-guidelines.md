@@ -4,8 +4,11 @@ This document supersedes and merges four predecessors:
 `apush-script-guide.md`, `apush-validator-checklist.md`,
 `apush-uber-fix-list.md`, `apush-fish-direction-catalog.md`
 (archived at `_archive/guidelines-superseded-2026-10-07/`).
-One doc, no duplicates. The executable companion is `apush-script-gates.py`
-(13 gates) — referenced here, not merged.
+One doc, no duplicates. The executable companions are `apush-script-gates.py`
+(13 gates) and `apush_schema_validate.py` (static schema validator — every
+lesson must parse clean: `#` headers only, Title-case speakers,
+`[10-second pause]` on its own line, `## Sources` closer; run with `--all`)
+— referenced here, not merged.
 
 How it was built: the v11 that survived a high schooler's "ai slop" verdict,
 the user's own line-level reviews (U3-E8 v2→v4), the 2026-10-06 freeze, the
