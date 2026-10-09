@@ -29,7 +29,7 @@ export function resolvePlanCues(
   turns: PipelineTurn[],
   timing: AnchorTiming & {totalSec: number},
   words: Record<string, WordTiming[]>,
-  opts: {requireBoxes?: boolean; requireReveals?: boolean} = {},
+  opts: {requireBoxes?: boolean; requireReveals?: boolean; allowEstimated?: boolean} = {},
 ): DirectedPlan {
   const issues: string[] = [];
   const at = (where: string, fn: () => number): number => {
@@ -54,8 +54,8 @@ export function resolvePlanCues(
     lastTo = to;
     const startSec = timing.starts[from];
     const endSec = turnEnd(to);
-    const introSec = at(`${where} intro`, () => resolvePhrase(box.intro, turns, timing, words, 'start').sec);
-    const checkSec = at(`${where} check`, () => resolvePhrase(box.check, turns, timing, words, 'end').sec);
+    const introSec = at(`${where} intro`, () => resolvePhrase(box.intro, turns, timing, words, 'start', opts.allowEstimated).sec);
+    const checkSec = at(`${where} check`, () => resolvePhrase(box.check, turns, timing, words, 'end', opts.allowEstimated).sec);
     if (introSec > startSec) issues.push(`${where}: named at ${introSec.toFixed(2)}s, after its coverage starts (${startSec.toFixed(2)}s)`);
     if (checkSec < startSec) issues.push(`${where}: checked at ${checkSec.toFixed(2)}s, before its coverage starts (${startSec.toFixed(2)}s)`);
     if (checkSec < lastCheck) issues.push(`${where}: checked before box ${i}`);
@@ -77,7 +77,7 @@ export function resolvePlanCues(
     const revealSec = scene.reveals.map((cue, item) => {
       const where = `${scene.id} reveal ${item + 1}`;
       if (!own.has(cue?.turn)) { issues.push(`${where}: turn ${cue?.turn} is outside the scene's turns`); return NaN; }
-      const sec = at(where, () => resolvePhrase(cue, turns, timing, words, 'start').sec);
+      const sec = at(where, () => resolvePhrase(cue, turns, timing, words, 'start', opts.allowEstimated).sec);
       if (sec < previous) issues.push(`${where}: cue comes before the previous item's`);
       if (Number.isFinite(sec)) previous = sec;
       return sec;

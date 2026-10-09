@@ -26,10 +26,11 @@ export interface DocInputs {
   words: Record<string, WordTiming[]>;
   estimated: boolean;
   options: ResolveOptions;
-  plan: ShotPlan;
+  /** The shot plan, when a plan path was given. */
+  plan?: ShotPlan;
 }
 
-export function loadDocInputs(episode: string, planPath: string, draft: boolean): DocInputs {
+export function loadDocInputs(episode: string, planPath: string | null, draft: boolean): DocInputs {
   const dataDir = join(ROOT, 'data', episode);
   const turns = normalizeTurns(readJson(join(dataDir, 'turns.json')));
   const timing = readJson<DocInputs['timing']>(join(dataDir, 'timing_map.json'));
@@ -57,7 +58,7 @@ export function loadDocInputs(episode: string, planPath: string, draft: boolean)
     .map(([fp, c]) => [fp, {path: c.path, durationSec: c.durationSec}]));
   return {
     episode, turns, timing, words, estimated: !existsSync(wordsPath),
-    plan: readJson<ShotPlan>(resolve(planPath)),
+    plan: planPath ? readJson<ShotPlan>(resolve(planPath)) : undefined,
     options: {
       imageSizes, imageShas, depthMaps, geo, places, clips,
       generatorSha: generatorKey(),
@@ -66,4 +67,7 @@ export function loadDocInputs(episode: string, planPath: string, draft: boolean)
   };
 }
 
-export const resolveDocPlan = (inputs: DocInputs): ResolvedShotPlan => resolveShotPlan(inputs.plan, inputs.turns, inputs.timing, inputs.words, inputs.options);
+export function resolveDocPlan(inputs: DocInputs): ResolvedShotPlan {
+  if (!inputs.plan) throw new Error('no shot plan loaded');
+  return resolveShotPlan(inputs.plan, inputs.turns, inputs.timing, inputs.words, inputs.options);
+}
