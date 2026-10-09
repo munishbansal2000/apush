@@ -76,7 +76,7 @@ describe('shot plans', () => {
     const short = plan();
     short.shots[2] = {type: 'custom', at: {turn: 1, phrase: 'george grenville'}, component: 'StampActTax'};
     assert.throws(() => resolveShotPlan(short, turns, timing, words, {imageSizes}), /too short for a custom explainer/);
-    assert.throws(() => resolveShotPlan(custom, turns, timing, words, {imageSizes, rules: {...LOOK_RULES, maxCustoms: 0}}), /1 custom explainers; max 0 per lesson/);
+    assert.throws(() => resolveShotPlan(custom, turns, timing, words, {imageSizes, rules: {...LOOK_RULES, maxCustoms: 0}}), /custom explainer exceeds the lesson budget \(1 total; max 0\)/);
   });
 
   it('keeps the custom catalog and the component registry in step, with short default phases', async () => {
