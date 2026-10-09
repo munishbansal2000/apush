@@ -1,5 +1,5 @@
 # U3-CRAM — Cram Session: Maya + Jay (Fish Audio)
-# Unit 3 Cram: Revolution and Republic, eleven episodes in one. ~13.7 min experienced (2,351 words speech + 38s pauses)
+# Unit 3 Cram: Revolution and Republic, eleven episodes in one. ~15.5 min experienced (2,351 words speech + 140s pauses)
 # Draft v3 (2026-10-07): fleet repair of the v2 audit (2 blockers, 4 minors). Direction-tag density 96%→~35% — workhorse
 # [conversational]/[casual] stripped wherever no beat genuinely earned one; catalog beats kept (cold-open broadcast, correction
 # myth-busts firm, grim serious, genuine-question curious, caught-wrong sheepish, takeaway confident, closer intrigued).
@@ -7,8 +7,8 @@
 # Mid-turn fragments 6→2. Trenton restored to the Q5 answer (Tier-1: 5steps2024 ch10). Hamilton-musical claim cut to a hedged
 # aside; Webster 1789 attribution hedged ("credited to") with a fail-closed registry note (F-U3-057). Dialogue reworded only
 # where the findings required; all other words byte-identical to v2. Gate: 13/13 at --minutes 13.5.
-# Read note: Jay fires the questions; Maya answers and corrects. [2-second pause] marks are the rapid-fire beat — real silence,
-# never sent to TTS. [8-second pause] marks are prediction beats — real silence, never sent to TTS. Strip this header, the read
+# Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Jay fires the questions; Maya answers and corrects.
+# never sent to TTS. [10-second pause] marks are prediction beats — real silence, never sent to TTS. Strip this header, the read
 # note, and all [pause] tags before TTS; convert pause tags to silence. The ## Sources section is production-only, never spoken.
 # CED: Period 3, 1754–1800.
 # Pronunciation: Pontiac (PAHN-tee-ak); Neolin (NEE-oh-lin); Crèvecoeur (krev-KUHR); Crispus Attucks (KRIS-pus AT-uks);
@@ -22,7 +22,7 @@ Maya: [professional broadcast tone] Last time: power changed hands — but the h
 
 Jay: Question one. The bill comes due. Why did London end the free ride after seventeen sixty-three?
 
-[2-second pause]
+[10-second pause]
 
 Maya: The war left an enormous debt, and the books won't pin the number, so neither will I. Grenville did the math: the colonies had paid almost nothing toward the war, so London started taxing, and enforcing everything it used to ignore. The century of salutary neglect, London looking the other way, was over.
 
@@ -40,7 +40,7 @@ Maya: Supposedly named for him. Focus. Neolin was the prophet; Pontiac was the w
 
 Jay: Question two. Virtual versus actual representation. One sentence each.
 
-[2-second pause]
+[10-second pause]
 
 Maya: Parliament's theory: its members speak for the whole empire, so the colonists are virtually represented. The colonial answer: only a body we've elected can tax us. The whole constitutional crisis, in two sentences.
 
@@ -54,7 +54,7 @@ Maya: Lawyers, printers, merchants: every colony, every desk.
 
 Jay: Question three. Townshend, the Massacre, the Tea, the Congress. Walk it.
 
-[2-second pause]
+[10-second pause]
 
 Maya: The Townshend duties, sixty-seven: lead, paper, glass, tea. Dickinson's Letters argued Parliament could regulate trade but couldn't raise revenue without consent. Boycotts, homespun, imports down forty percent. Parliament repealed the lot. The tea tax stayed, the marker.
 
@@ -68,7 +68,7 @@ Maya: December sixteenth, seventy-three: some three hundred fifty chests dumped.
 
 Jay: Question four. Paine, the vote, the argument, the promise.
 
-[2-second pause]
+[10-second pause]
 
 Maya: Common Sense, January seventeen seventy-six. A hundred thousand copies in three months. Monarchy's the disease, and America could begin the world over again.
 
@@ -86,7 +86,7 @@ Maya: [thoughtful tone] The document bleeds right there. The slavery passage got
 
 Jay: Question five. Two hinges and the long middle.
 
-[2-second pause]
+[10-second pause]
 
 Maya: Lexington and Concord, April seventy-five. Bunker Hill, June — fought on Breed's Hill, despite the name. The British take it and bleed for it. The Second Continental Congress becomes a war government and hands the army to Washington, more unifier than tactician.
 
@@ -100,7 +100,7 @@ Maya: October eighty-one. The French fleet seals the bay, Cornwallis surrenders.
 
 Jay: Question six. The structure, the failure, the one win, and why it lasted eight years.
 
-[2-second pause]
+[10-second pause]
 
 Maya: The structure: one vote per state, no tax power, no executive, no courts, and amendments needed every state. Built by fear of power.
 
@@ -118,7 +118,7 @@ Maya: [thoughtful tone] It worked just well enough, and admitting the Revolution
 
 Jay: Question seven. Fifty-five men, one hot summer. The three bargains.
 
-[2-second pause]
+[10-second pause]
 
 Maya: Twelve states. Rhode Island sent none. The representation compromise: Virginia wanted seats by people, New Jersey wanted one vote a state, Connecticut split it, the Connecticut Compromise (the Great Compromise): House by population, Senate two per state.
 
@@ -136,7 +136,7 @@ Maya: [thoughtful tone] Checks and balances: branches checking branches. Federal
 
 Jay: Question eight. The theory, the alarm, the squeakers, the verdict.
 
-[2-second pause]
+[10-second pause]
 
 Maya: The Federalist theory: Madison's big republic, where factions die of bigness, and ambition counteracts ambition. Eighty-five essays, Hamilton, Madison, and Jay writing as Publius.
 
@@ -154,7 +154,7 @@ Maya: It wasn't written in Philadelphia. It was added in seventeen ninety-one as
 
 Jay: Question nine. Hamilton's money machine.
 
-[2-second pause]
+[10-second pause]
 
 Maya: The 1790 Report on Public Credit: fund the national debt at face value, and assumption: the federal government taking on the states' war debts. The speculators who'd bought the certificates cheap got the windfall; the original soldiers got nothing.
 
@@ -176,7 +176,7 @@ Maya: [thoughtful tone] The fight hardened into the first party system: Hamilton
 
 Jay: Question ten. XYZ, the four acts, the counterattack, the verdict.
 
-[2-second pause]
+[10-second pause]
 
 Maya: The XYZ Affair: Talleyrand's agents demanded a quarter-million-dollar bribe and a ten-million-dollar loan before talks even started. Adams published the dispatches, the country rallied, and America fought France in the Quasi-War, seventeen ninety-eight to eighteen hundred, an undeclared naval war.
 
@@ -194,7 +194,7 @@ Maya: [serious tone] The Sedition Act had a sunset. It expired March third, eigh
 
 Jay: Question eleven. The tie, the pragmatist, the judo, the culture.
 
-[2-second pause]
+[10-second pause]
 
 Maya: [firm] Seventy-three to seventy-three, thrown to the House, voting by state. Thirty-six ballots — not thirty-five. Hamilton's letters for Jefferson, Bayard's abstentions, ten states for Jefferson, four for Burr, two blank. The first peaceful party handoff, and Adams left before dawn.
 
@@ -222,13 +222,13 @@ Maya: [confident tone] Independence was won on the battlefield. The republic had
 
 Maya: Two predictions I'd bet on. One: evaluate the extent to which the American Revolution fundamentally changed American society between seventeen seventy-five and eighteen hundred. Your turn.
 
-[8-second pause]
+[10-second pause]
 
 Maya: Political revolution, social evolution. The change: republican government, the franchise question opened, slavery questioned and starting to die in the North. The limits: slavery expanded in the South, women voteless, Native dispossession accelerating. The complexity point: the ideals were uneven from the start. Argue the change, then argue the limits, and the verdict lands in the middle.
 
 Maya: Two: evaluate the extent to which debates over the scope of federal power shaped the early republic, seventeen ninety to eighteen hundred. Your turn.
 
-[8-second pause]
+[10-second pause]
 
 Maya: The scope debate was the politics. Hamilton's program, the Bank fight, the whiskey tax, the Alien and Sedition Acts, the Virginia and Kentucky counterattack, and the election of eighteen hundred as the verdict. Loose versus strict construction became the permanent fault line. Argue with one example from each half of the decade.
 

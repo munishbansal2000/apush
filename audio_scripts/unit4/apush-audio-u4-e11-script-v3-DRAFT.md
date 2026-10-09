@@ -1,7 +1,7 @@
 # U4-E11 — Maya + Marcus (Fish Audio)
 # Episode 11: The Second Great Awakening and Reform. ~13 min.
 # Draft v3.
-# Read note: Maya tracks four boxes on her episode sheet: the Awakening, the reform pipeline, the seekers, the freedom fight. Pause tags used: [9-second pause] x2, [17-second pause] x3, [5-second pause] x1 — production notes for real silence in the self-test and prediction beats; they never go to the voice. The closer's dash is a held breath — do not rush it. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence.
+# Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Maya tracks four boxes on her episode sheet: the Awakening, the reform pipeline, the seekers, the freedom fight. The closer's dash is a held breath — do not rush it. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence.
 # Pronunciation: Cane Ridge (KAYN RIJ), Bourbon (BUR-bun), Charles Grandison Finney (FIN-ee), Dorothea Dix (dor-uh-THEE-uh DIX), Ralph Waldo Emerson (EM-ur-sun), Thoreau (thuh-ROW), Oneida (oh-NY-duh), Noyes (NOYZ), Seneca (SEN-uh-kuh), Lucretia Mott (loo-KREE-shuh MOT)
 # Word count: 2112 spoken words (pause tags stripped). Experienced runtime: ~12:58 (words at ≤180 WPM + 74 s scripted pauses).
 
@@ -67,7 +67,7 @@ Marcus: And it taught later movements the playbook: the society, the pledge, the
 
 Maya: Your turn. You've got the playbook. Where do you aim it next?
 
-[9-second pause]
+[10-second pause]
 
 Marcus: Schools. Horace Mann, Massachusetts' education secretary from eighteen thirty-seven to forty-eight, argued for free common schools for every child. A democracy can't run on uneducated citizens. Not everyone cheered: Catholic families worried the "common" school would be Protestant underneath. Fair worry, honestly.
 
@@ -129,7 +129,7 @@ Marcus: It was. Garrison drew on that fire.
 
 Maya: Your turn. Garrison demands freedom now; the Colonization Society offers a ticket to Liberia. You're a free Black family in Philadelphia in 1835. Which future, and why?
 
-[9-second pause]
+[10-second pause]
 
 Marcus: Most picked no ticket at all. They were Americans. Their families had been here for generations, and they wanted their freedom on American soil.
 
@@ -173,25 +173,25 @@ Marcus: All four.
 
 Maya: Three questions, AP-shaped. Say your answer before I give it. One, stimulus. Finney, in his 1835 Lectures on Revivals of Religion: "…that it is necessary to raise an excitement among them, till the tide rises so high as to sweep away the opposing obstacles." What does that tell you changed in American religion?
 
-[17-second pause]
+[10-second pause]
 
 Maya: Salvation moved into human hands. Predestination is out; human effort is in. Do the work and the revival comes. That energy became the engine of every reform after it.
 
 Maya: Two. Pick one pipeline reform and explain the perfectionist logic connecting the revival to it.
 
-[17-second pause]
+[10-second pause]
 
 Maya: Any of the four works. The Awakening said you can perfect your soul through your own choices. Perfectionism stretched that to society. If the soul, why not the saloon, the school, the asylum, the cell? The reform is the revival, aimed outward.
 
 Maya: Three. Why did the burned-over district produce so many reform movements?
 
-[17-second pause]
+[10-second pause]
 
 Maya: The Awakening's hottest ground: the Erie Canal corridor, revival after revival. A population convinced human effort could remake the world, with all that energy looking for a target. Mormons, utopians, women's rights, all from the same soil.
 
 Maya: One more, fast. Seneca Falls, eighteen forty-eight. What made it bigger than just the vote?
 
-[5-second pause]
+[10-second pause]
 
 Maya: The vote was one line in a whole list: property, education, wages, custody, divorce, legal status. The demand was equality itself.
 

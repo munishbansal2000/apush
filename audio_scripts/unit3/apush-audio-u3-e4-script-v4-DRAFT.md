@@ -2,7 +2,7 @@
 # Episode 21: Declaring Independence. Thirteen minutes experienced (2,126 spoken words + 68s scripted pauses = 12.9 min at 180 WPM).
 # Draft v3 (2026-10-07): fleet-repair pass on the audited v2 — the four common-mistake proclamations rewritten as live traps (Maya voices the wrong take, Marcus corrects in the next turn); tag density 80.3% → 34.8% (24/69 turns, tags kept only on fleet-catalog beats); antitheses cut to 2 ("The announcement, not the decision." + "Offered it as a weapon, not a principle."); the unverifiable Israelites/1 Samuel Common Sense claim cut per fail-closed; "port cities in growing numbers" hedged to "running where they could"; the June wrong beat directed [sheepish]; the second exam tip re-opened ("The big trap:"); the "pomp and parade" splice marked with an ellipsis; the Abigail Adams quote follows the primary ("into"); the incidental triple list in the Loyalist trap trimmed; ~60 words trimmed so the experienced runtime sits under the "Thirteen minutes" promise; one "press release" varied. v2 untouched.
 # Draft v4 (2026-10-07): residual repair from the independent re-read of v3 — one Maya bridge turn inserted between the Loyalist's warehouse-burning charge and Marcus's philosophy continuation (the W-4 trim had cut Maya's summarizer, leaving Marcus's "That was the whole trick" abutting the Loyalist's attack as a non-response). Bridge: "A fair warning. But the trick of the thing—" — concession acknowledging the charge, pivot echoing "the trick" so Marcus's turn lands as a continuation. No tag (24/70 turns = 34.3%, under the ~40% cap); not a That's/Here's opener; not a ", not Y" antithesis; +9 words → 2,126, 68s pauses, 12.94 min experienced, still under the 13-minute promise. v3 untouched.
-# Read note: Maya moderates as a modern host. Marcus argues the Patriot case as a 1776 advocate — everything he knows stops at 1776; the afterlife of the Declaration's promises belongs to Maya's modern coda, never to him. The Loyalist speaks in his own 1776 voice and cannot know the war's outcome. [9-second pause] marks are production silence in prediction beats; [15-second pause] marks are real silence in the CER self-test questions; [5-second pause] is the fast bonus question — they never go to the voice. The em dash in the closing tagline is a held beat: leave a full breath between "worked" and "the promises are still being collected on." Do not rush it. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence.
+# Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Maya moderates as a modern host. Marcus argues the Patriot case as a 1776 advocate — everything he knows stops at 1776; the afterlife of the Declaration's promises belongs to Maya's modern coda, never to him. The Loyalist speaks in his own 1776 voice and cannot know the war's outcome. The em dash in the closing tagline is a held beat: leave a full breath between "worked" and "the promises are still being collected on." Do not rush it. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence.
 # Pronunciation: PAYN (Paine); lee (Richard Henry Lee); dun-MOR (Dunmore); AB-ih-gayl (Abigail); lock (Locke).
 
 Maya: [professional broadcast tone] Last time: the First Continental Congress answered the Intolerable Acts, and the shooting started anyway, Lexington and Concord in April, Bunker Hill in June. Now Congress has to say the word it has avoided for a year: independence. Four boxes: Paine's Common Sense, the vote that almost didn't happen, the Declaration as a legal argument, and who the promises were actually for. Circle the ones you couldn't explain right now. Thirteen minutes. Arguing for independence: Marcus. Against it: our Loyalist guest, a New York merchant.
@@ -51,7 +51,7 @@ Maya: Adams predicted the wrong party date. Very human of him.
 
 Maya: Your turn. You're a Pennsylvania delegate in June 1776, and your instructions still say reconcile. Lee's resolution is on the table, and voting yes means the rope if you lose. What changes your vote?
 
-[9-second pause]
+[10-second pause]
 
 Maya: Most of you just said "proof we could win." Nobody in that room could give them that. They voted yes anyway, carried by the argument.
 
@@ -95,7 +95,7 @@ Marcus: John read it, smiled, and did nothing. What women got was what historian
 
 Maya: Your turn. You're an enslaved Virginian in the winter of 1775. You've heard two offers: the Patriots' "all men are created equal," and Dunmore's proclamation. Which one can you actually collect on, and what's the catch in each?
 
-[9-second pause]
+[10-second pause]
 
 Maya: Dunmore's you can collect, if you reach his lines and survive the war. The Patriots' is a promise with no delivery date. One is a military tactic, the other an undated promise.
 
@@ -133,25 +133,25 @@ Maya: Three questions, AP-shaped. Say your answer before I give it. And on the l
 
 Maya: One, and it comes with a source. Paine, 1776: "monarchy and hereditary succession have laid the world in blood and ashes." What argument is he making, and why did it land harder than anything Congress had said?
 
-[15-second pause]
+[10-second pause]
 
 Maya: He's making the case against monarchy as a system. And it landed because he wrote plain, angry English a farmer could read aloud, nothing like Congress's polite petitions.
 
 Maya: Two. A student writes: "America declared independence on July 4, 1776, when the delegates signed the Declaration." How many things are wrong, and what actually happened?
 
-[15-second pause]
+[10-second pause]
 
 Maya: Two things wrong. The vote was July 2, twelve yes with New York abstaining, and the fourth was the announcement. And most of the famous signatures went on weeks later, when the formal engrossed copy was ready. The fourth explained the vote. The decision came on the second.
 
 Maya: Three, with a stimulus. "He has kept among us, in times of peace, Standing Armies without the Consent of our legislatures." Which part of the Declaration is this, and what's its job in the argument?
 
-[15-second pause]
+[10-second pause]
 
 Maya: The evidence section, the long list of charges. It proves the verdict: sitting between the principle and the resolution, Jefferson stacks the crimes so the breakup reads as a legal conclusion.
 
 Maya: One more, fast. Whose offer of freedom came first, the Declaration's or Dunmore's?
 
-[5-second pause]
+[10-second pause]
 
 Maya: Dunmore's. November 1775, eight months before the Declaration. The Crown's governor moved first; the Patriots' promise arrived in July with no delivery date.
 

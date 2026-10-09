@@ -1,7 +1,7 @@
 # U3-E7 — Debate: Maya moderates, Marcus (Convention defense, 1787 voice) vs Brutus (Anti-Federalist, 1787 voice)
-# Episode 24: The Constitutional Convention. ~12 min experienced (2,006 words speech + 73s pauses)
+# Episode 24: The Constitutional Convention. ~12 min experienced (2,006 words speech + 60s pauses)
 # Draft v3 (2026-10-07): fleet-repair pass on the 2026-10-07 audit (4 blockers, 8 warnings). Tone-tag density 80.6% → ~37% (26/71 turns; kept fleet-catalog beats only). All four common-mistake traps rebuilt as Maya-error → Marcus-correction live traps with strong markers. Antitheses 8 → 2 (kept the two carrying real logic). Brutus's "your textbooks" line reframed to his 1787 vantage. Warnings: EC correction hardened to "Not quite."; "That's the federalism box" recast; "So did they." folded; six triple-parallels → cold-open keeper only; "Three ideas"/"Three things" count-ups dropped; stimulus source named (Barron's); Q1 model answer hedged ("reads like"); unverifiable electors-meet line cut. Word count 1,967 → 2,006; experienced runtime ~12.4 min — header and "Twelve minutes" promise agree. Replaces v2 (retired to _archive).
-# Read note: Marcus argues the Convention's case as a man of 1787 — his knowledge stops at the signing, so he gets no spoilers and no modern narration. Brutus argues the skeptic's case in his own 1787 voice — measured, scholarly, never a caricature; his lines are our dramatization of his real arguments, not verbatim quotes. Maya is the only modern voice: the afterlife of the compromises belongs to her, clearly framed. [8-second pause] and [10-second pause] marks are production notes for real silence in prediction beats; [15-second pause] and [20-second pause] marks are real silence for the CER self-test questions; [5-second pause] is the fast bonus question — they never go to the voice. The em dash in the closing tagline is a held beat: leave a full breath between "act" and "and left the hardest bargains." Do not rush it. The Franklin closing story is reported, not transcript-verified — Maya discloses that in the line itself. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence.
+# Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. Marcus argues the Convention's case as a man of 1787 — his knowledge stops at the signing, so he gets no spoilers and no modern narration. Brutus argues the skeptic's case in his own 1787 voice — measured, scholarly, never a caricature; his lines are our dramatization of his real arguments, not verbatim quotes. Maya is the only modern voice: the afterlife of the compromises belongs to her, clearly framed. The em dash in the closing tagline is a held beat: leave a full breath between "act" and "and left the hardest bargains." Do not rush it. The Franklin closing story is reported, not transcript-verified — Maya discloses that in the line itself. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence.
 # Pronunciation: an-tee FED-er-al-ist (Anti-Federalist); BROO-tus (Brutus); kon-NET-ih-kut (Connecticut).
 
 Maya: [professional broadcast tone] Last time: the Articles solved the founders' fear of a king, and built a government too weak to do anything else. Now: Philadelphia, summer of 1787. Fifty-five delegates, meeting behind closed doors, shut in a brick hall through a hot Philadelphia summer, rewriting the entire government. Three bargains made it possible: representation, the presidency, and the one about slavery. Four boxes: the representation compromise, the presidency bargain, slavery's protections, and the machinery that held it all together. Circle the ones you couldn't explain right now. Twelve minutes.
@@ -28,7 +28,7 @@ Marcus: The secrecy let men change their minds. With no gallery to please, men a
 
 Maya: Your turn. You're a small-state delegate. The big states want every seat counted by people. Tell me why that buries your state, and what you'll take instead.
 
-[8-second pause]
+[10-second pause]
 
 Maya: You said one vote per state, or you walk. The delegates said the same.
 
@@ -132,25 +132,25 @@ Maya: Three questions, AP-shaped. Say your answer before I give it.
 
 Maya: One, and it comes with a source. Barron's AP U.S. History puts it this way: "The word 'slavery' is not used once in the entire document. Slaves are referred to as 'other persons.'" What's the point of this source: what does the euphemism tell you about where the framers stood?
 
-[20-second pause]
+[10-second pause]
 
 Maya: The dodge is the evidence: the euphemism reads like men who knew the word was shameful, and they wrote the protections in anyway: counting enslaved people toward representation, keeping the trade legal for twenty more years, and sending escapees back. Guilt, signed anyway. The euphemism is the tell: they wrote around the word, then signed the protections.
 
 Maya: Two. A student writes: "The Electoral College proves the framers wanted Congress to pick the president." What's the mistake?
 
-[15-second pause]
+[10-second pause]
 
 Maya: Backwards. Congress picking the president was the idea they rejected: a president chosen by Congress would answer to Congress, and the design needed the branches standing apart. The College was the workaround.
 
 Maya: Three. Why did the small states threaten to walk out over representation, and what did the Connecticut deal hand them?
 
-[15-second pause]
+[10-second pause]
 
 Maya: Seats by population would have buried them; the big states would outvote them on everything. The deal handed them a whole house where every state stands equal: two senators each, whatever the size.
 
 Maya: One more, fast. Branches checking branches, or national versus state: which one is federalism?
 
-[5-second pause]
+[10-second pause]
 
 Maya: National versus state: the federalism box.
 

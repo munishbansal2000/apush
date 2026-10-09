@@ -1,7 +1,7 @@
 # U3-E5 — Winning the War
 # 2,113 spoken words · 13.0 min experienced runtime (2,113 words ÷ 180 WPM = 11.7 min speech + 75s scripted pauses = 13.0 min)
 # Episode 22: Winning the War. Thirteen minutes experienced (2,113 spoken words + 75s scripted pauses = 13.0 min at 180 WPM).
-# Read note: [15-second pause], [17-second pause], and [20-second pause] marks are real silence in the CER self-test questions; [9-second pause] marks are production silence in prediction beats; [5-second pause] is the fast bonus question — they never go to the voice. The dash in the closing tagline is a held beat: leave a full breath before the final line. Do not rush it. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence.
+# Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. The dash in the closing tagline is a held beat: leave a full breath before the final line. Do not rush it. Strip this header, the read note, and all [pause] tags before TTS; convert pause tags to silence.
 # Pronunciation: HESS-unz (Hessians), fon STOY-bun (von Steuben), bur-GOYN (Burgoyne), roh-sham-BOH (Rochambeau), lah-fay-ET (Lafayette), duh GRAHSS (de Grasse)
 # Quote disclosure: Paine's "The American Crisis" line is his verbatim wording (public domain). Emerson's "shot heard round the world" phrase is quoted verbatim from "Concord Hymn" (1837, public domain) — the script states it is literature about the battle, not words spoken at it. The Yorktown band tune is presented as tradition, not verified fact.
 
@@ -47,7 +47,7 @@ MAYA: I walked back from the library once in freezing rain in sneakers and I sti
 
 MARCUS: And it worked. Close to a thousand prisoners, barely an American scratch — and a week later, Princeton keeps the momentum. Neither battle changed the map, but enlistments steadied and the cause lived through the winter. Days earlier, Paine's The American Crisis had been read to the troops: "These are the times that try men's souls."
 
-MARCUS: Your turn. Washington's staring at a frozen river on Christmas night. Two questions: why could this work, and what happens if it doesn't? [9-second pause]
+MARCUS: Your turn. Washington's staring at a frozen river on Christmas night. Two questions: why could this work, and what happens if it doesn't? [10-second pause]
 
 MAYA: It could work because nobody sets a defense for Christmas morning in a blizzard. Surprise is the entire weapon. And if it fails, he loses the army, and the army is the Revolution. So he loses everything.
 
@@ -55,7 +55,7 @@ MARCUS: Surprise was the entire weapon — and the army was the Revolution. Lose
 
 MARCUS: Seventeen seventy-seven. General Burgoyne marches down from Canada to cut New England off. It falls apart. American forces under Horatio Gates close in, and at Saratoga, Benedict Arnold, yes, that Arnold, before the treason, leads the charges and takes a bullet in the leg. In October, Burgoyne surrenders an entire British army.
 
-MARCUS: Your turn. You're France, watching from the sidelines for three years. Why does a British surrender at Saratoga change your mind, when Lexington and Trenton didn't? [9-second pause]
+MARCUS: Your turn. You're France, watching from the sidelines for three years. Why does a British surrender at Saratoga change your mind, when Lexington and Trenton didn't? [10-second pause]
 
 MAYA: Because now the Americans don't look like a lost cause. France isn't a charity. If it's spending money and ships, it needs a winner. And didn't France lose big to Britain in the last war? This smells like payback.
 
@@ -111,19 +111,19 @@ MAYA: [confident tone] Valley Forge in between, where von Steuben drills the arm
 
 MAYA: Three questions, AP-shaped. Say your answer before I give it.
 
-MAYA: One. "These are the times that try men's souls." December seventeen seventy-six, read aloud to Washington's troops. What does this source tell you about the state of the cause that winter? [15-second pause]
+MAYA: One. "These are the times that try men's souls." December seventeen seventy-six, read aloud to Washington's troops. What does this source tell you about the state of the cause that winter? [10-second pause]
 
 MAYA: The army was dissolving. Enlistments expiring, desertion everywhere. Paine is writing to men about to walk away — soldiers with desertion on their minds. The battlefield that winter was morale itself. Washington needed them to stay more than he needed a new plan.
 
-MAYA: Two. Saratoga, October seventeen seventy-seven. France watched three years of war from the sidelines. Why does this surrender change the calculation? [17-second pause]
+MAYA: Two. Saratoga, October seventeen seventy-seven. France watched three years of war from the sidelines. Why does this surrender change the calculation? [10-second pause]
 
 MAYA: Saratoga proved the Americans could beat a British army in the field. France wasn't betting on a lost cause anymore. And France had its own reasons: payback for the Seven Years' War, and a weaker Britain. Paris bet on the odds; ideals were the sales pitch.
 
-MAYA: Three. At Yorktown, what did France bring that Washington could never have supplied himself? [20-second pause]
+MAYA: Three. At Yorktown, what did France bring that Washington could never have supplied himself? [10-second pause]
 
 MAYA: A navy. De Grasse's fleet sealed the Chesapeake and trapped Cornwallis against the sea. Without that fleet, Cornwallis sails away, and the war drags on for years.
 
-MAYA: One more, fast. Washington's appointment or the Declaration of Independence: which came first? [5-second pause] The appointment. June seventeen seventy-five, a full year before the Declaration.
+MAYA: One more, fast. Washington's appointment or the Declaration of Independence: which came first? [10-second pause] The appointment. June seventeen seventy-five, a full year before the Declaration.
 
 MARCUS: [professional broadcast tone] So the war's won, and the bills come due. And underneath it all, the question nobody's answered: what freedom did this war actually win for the enslaved people who fought in it?
 

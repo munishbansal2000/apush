@@ -1,7 +1,7 @@
 # U4-E14 — Maya + Marcus + Tomas (Fish Audio)
 # Episode 14: Manifest Destiny and Texas. Twelve minutes.
 # Draft v3. Spoken words: 2035. Pauses: 65 seconds. Runtime = 2035/180*60 + 65 = 743s = 12.4 min.
-# Read note: DEBATE format (lesson map). Maya moderates. Marcus argues the expansionist position; Tomas is a MODERN COMPOSITE — a present-day voice arguing Mexico's historical case, not a period figure. He knows no outcomes past 1846. O'Sullivan's quoted wording is verified against the 5 Steps glossary; Seguin's quoted line is verified against 5 Steps ch03. Strip this header and the read note before TTS. Pause tags used: [10-second pause]; [15-second pause]; [20-second pause]; [5-second pause] — become real silence, never read aloud.
+# Read note: [10-second pause] marks are production silence for prediction beats, self-test questions, and the fast bonus — they never go to the voice. DEBATE format (lesson map). Maya moderates. Marcus argues the expansionist position; Tomas is a MODERN COMPOSITE — a present-day voice arguing Mexico's historical case, not a period figure. He knows no outcomes past 1846. O'Sullivan's quoted wording is verified against the 5 Steps glossary; Seguin's quoted line is verified against 5 Steps ch03. Strip this header and the read note before TTS.
 # Pronunciation: O'Sullivan (oh-SUL-ih-vun), Nueces (noo-AY-sis), Tejano (teh-HAH-noh), Velasco (veh-LAHS-koh), Matamoros (mah-tah-MOH-rohs), Slidell (sly-DEL), empresario (em-pray-SAH-ree-oh), Gonzales (gon-ZAH-less), Goliad (goh-lee-AHD)
 
 Maya: [professional broadcast tone] Last time: Seneca Falls stretched the founding's promises. This time, the nation stretches its borders, and a three-word phrase turns a land grab into a mission from God. Four boxes: Manifest Destiny, the Texas Revolution, the annexation fight, a border dispute with two rivers. Circle the ones you couldn't explain right now. Twelve minutes, two debaters, two maps. You decide.
@@ -110,13 +110,13 @@ Maya: [confident tone] Eighteen forty-five, got it. Texas enters December twenty
 
 Maya: Self-test. Three questions, AP-shaped. Say your answer before I give it.
 
-Maya: One. O'Sullivan writes that Americans have a manifest destiny "to overspread the continent." A student says the phrase proves expansion was universally popular. What do you tell them? [15-second pause] The phrase shows how expansion was sold: providence, inevitability, morality. It says nothing about how it landed. The North fought every acre over slavery, and Mexico never agreed to any of it.
+Maya: One. O'Sullivan writes that Americans have a manifest destiny "to overspread the continent." A student says the phrase proves expansion was universally popular. What do you tell them? [10-second pause] The phrase shows how expansion was sold: providence, inevitability, morality. It says nothing about how it landed. The North fought every acre over slavery, and Mexico never agreed to any of it.
 
-Maya: Two, stimulus. Real words from eighteen thirty-seven: Tejano officer Juan Seguin, honoring the Alamo dead: "Texas shall be free and independent or we shall perish in glorious combat." What's the point of this source on an exam? [20-second pause] It proves Tejanos, Texans of Mexican descent, fought for independence. If a prompt asks who made the Texas Revolution, this source widens the frame: Tejanos bled for it too.
+Maya: Two, stimulus. Real words from eighteen thirty-seven: Tejano officer Juan Seguin, honoring the Alamo dead: "Texas shall be free and independent or we shall perish in glorious combat." What's the point of this source on an exam? [10-second pause] It proves Tejanos, Texans of Mexican descent, fought for independence. If a prompt asks who made the Texas Revolution, this source widens the frame: Tejanos bled for it too.
 
-Maya: Three. Why did Tyler's eighteen forty-four annexation treaty fail while the eighteen forty-five joint resolution succeeded? [15-second pause] A treaty needs two-thirds of the Senate; a joint resolution needs simple majorities. Tyler couldn't clear the higher bar, so he used the lower one. Say that sentence and you own box three.
+Maya: Three. Why did Tyler's eighteen forty-four annexation treaty fail while the eighteen forty-five joint resolution succeeded? [10-second pause] A treaty needs two-thirds of the Senate; a joint resolution needs simple majorities. Tyler couldn't clear the higher bar, so he used the lower one. Say that sentence and you own box three.
 
-Maya: One more, fast. Box four. Two rivers: which one did Mexico say was the real border? [5-second pause] The Nueces. Texas claimed the Rio Grande. Mix them up and the whole war makes no sense.
+Maya: One more, fast. Box four. Two rivers: which one did Mexico say was the real border? [10-second pause] The Nueces. Texas claimed the Rio Grande. Mix them up and the whole war makes no sense.
 
 Marcus: [professional broadcast tone] Destiny had a press release.
 
