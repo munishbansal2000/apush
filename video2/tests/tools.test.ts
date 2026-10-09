@@ -54,5 +54,10 @@ describe('Fish keys for overnight runs', () => {
     assert.equal(keyForRun([], 3), undefined);
     assert.equal(keyTag('key-aaaa1111'), '…1111');
     assert.throws(() => loadFishKeys({FISH_API_KEYS_FILE: join(tmpdir(), 'nope-keys.txt')}), /does not exist/);
+    const {lessonKeyEnv} = await import('../tools/pipeline/fish-keys');
+    const state = join(mkdtempSync(join(tmpdir(), 'fish-state-')), 'state.json');
+    const picks = [0, 1, 2, 3].map(() => lessonKeyEnv(keys, state, 'FISH_API_KEY').env.FISH_API_KEY);
+    assert.deepEqual(picks, ['key-aaaa1111', 'key-bbbb2222', 'key-cccc3333', 'key-aaaa1111'], 'one key per lesson, cycling across lessons');
+    assert.deepEqual(lessonKeyEnv([], state).env, {});
   });
 });

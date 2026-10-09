@@ -1,10 +1,12 @@
 import {copyFileSync, existsSync, mkdirSync, readdirSync, renameSync, unlinkSync, writeFileSync} from 'node:fs';
 import {join} from 'node:path';
+import {ROOT} from '../../lib';
 import {atomicJson, readJson, sha256, type PipelineTurn} from '../../pipeline-core';
 import type {PipelineContext} from '../context';
 import {applyPronunciations, cleanSpeech, type Pronunciation} from '../speech';
 import {findTool} from '../tools';
 import {isDirected, tagIssues} from '../fish-tags';
+import {lessonKeyEnv, loadFishKeys} from '../fish-keys';
 
 /** Hash of every input that determines the rendered narration. */
 export const audioInputHash = (ctx: PipelineContext, turns: PipelineTurn[], pronunciations: Pronunciation[]) =>
@@ -44,6 +46,7 @@ export function audioStage(ctx: PipelineContext, turns: PipelineTurn[], pronunci
     // Resolve the synthesizer once (and only when a turn actually needs rendering), not per turn.
     let edgeTts: string | undefined;
     let fishPython: string | undefined;
+    let fishKey: {env: NodeJS.ProcessEnv; tag?: string} | undefined;
     const index: Record<string, IndexEntry> = {};
     let rendered = 0;
     let reused = 0;
@@ -58,12 +61,13 @@ export function audioStage(ctx: PipelineContext, turns: PipelineTurn[], pronunci
         artifactHash = sha256(JSON.stringify({engine: 'edge', text, voice, rate: cfg.edge.rate, pitch: cfg.edge.pitch}));
         synthesize = file => ctx.run(edgeTts ??= findTool(['edge-tts'], 'EDGE_TTS'), ['--voice', voice, '--rate', cfg.edge.rate, '--pitch', cfg.edge.pitch, '--text', text, '--write-media', file]);
       } else {
-        const script = process.env.FISH_TTS_SCRIPT;
-        if (!script) throw new Error('PROD requires FISH_TTS_SCRIPT (Fish fish_tts.py path); optionally set FISH_PYTHON');
+        // tools/fish_tts.py calls the Fish Audio cloud API; FISH_TTS_SCRIPT swaps in another script with the same CLI.
+        const script = process.env.FISH_TTS_SCRIPT ?? join(ROOT, 'tools', 'fish_tts.py');
         const reference = cfg.fish.voices[turn.speaker ?? ''];
         if (!reference) throw new Error(`no Fish reference id for speaker ${turn.speaker}`);
         artifactHash = sha256(JSON.stringify({engine: 'fish', text, reference, model: cfg.fish.model}));
-        synthesize = file => ctx.run(fishPython ??= findTool(['python3', 'python'], 'FISH_PYTHON'), [script, '--text', text, '--out', file, '--model', cfg.fish.model, '--reference-id', reference, '--format', 'mp3']);
+        // One key per lesson: the first line that needs Fish takes the next key of FISH_API_KEYS(_FILE) for this run.
+        synthesize = file => ctx.run(fishPython ??= findTool(['python3', 'python'], 'FISH_PYTHON'), [script, '--text', text, '--out', file, '--model', cfg.fish.model, '--reference-id', reference, '--format', 'mp3'], (fishKey ??= lessonKeyEnv(loadFishKeys())).env);
       }
       const cached = join(cacheDir, `${artifactHash}.mp3`);
       if (!force && existsSync(cached)) reused++;
@@ -81,7 +85,7 @@ export function audioStage(ctx: PipelineContext, turns: PipelineTurn[], pronunci
     for (const name of readdirSync(audioDir)) if (name.endsWith('.mp3') && !live.has(name)) unlinkSync(join(audioDir, name));
     atomicJson(indexPath, index);
     ctx.mark('audio', audioHash);
-    console.log(`[audio] ${rendered} rendered, ${reused} reused`);
+    console.log(`[audio] ${rendered} rendered, ${reused} reused${fishKey?.tag ? ` (Fish key ${fishKey.tag})` : ''}`);
   }
 }
 
