@@ -263,11 +263,17 @@ export function resolveShotPlan(input: ShotPlan, turns: PipelineTurn[], timing: 
     const image = 'image' in shot ? shot.image : shot.type === 'point' ? shot.backdrop : shot.type === 'question' ? shot.backdrop ?? null : null;
     if (image) uses.set(image, [...(uses.get(image) ?? []), shot.id]);
   }
-  for (const [image, ids] of uses) if (ids.length > rules.maxImageUses) issues.push(`${ids[rules.maxImageUses]}: "${image}" is used in ${ids.length} shots (${ids.join(', ')}); max ${rules.maxImageUses} per lesson`);
+  // Report every occurrence beyond the budget, not only the first one. The
+  // documentary director repairs acts independently; one aggregate issue
+  // assigned to the fifth shot otherwise leaves the sixth, seventh, etc. in
+  // other acts undiscovered until later rounds and makes repairs oscillate.
+  for (const [image, ids] of uses) for (const id of ids.slice(rules.maxImageUses)) {
+    issues.push(`${id}: "${image}" exceeds the lesson image budget: occurrence ${ids.indexOf(id) + 1} of ${ids.length} (${ids.join(', ')}); max ${rules.maxImageUses}. Replace this occurrence with a different relevant asset`);
+  }
   const clipShots = shots.filter(s => s.type === 'clip');
-  if (clipShots.length > rules.maxClips) issues.push(`${clipShots[rules.maxClips].id}: ${clipShots.length} LTX clips; max ${rules.maxClips} per lesson`);
+  for (const shot of clipShots.slice(rules.maxClips)) issues.push(`${shot.id}: LTX clip exceeds the lesson budget (${clipShots.length} total; max ${rules.maxClips}); replace this occurrence with an image_move shot`);
   const customShots = shots.filter(s => s.type === 'custom');
-  if (customShots.length > rules.maxCustoms) issues.push(`${customShots[rules.maxCustoms].id}: ${customShots.length} custom explainers; max ${rules.maxCustoms} per lesson`);
+  for (const shot of customShots.slice(rules.maxCustoms)) issues.push(`${shot.id}: custom explainer exceeds the lesson budget (${customShots.length} total; max ${rules.maxCustoms}); replace this occurrence with a standard shot`);
   const customSeen = new Map<string, string>();
   for (const s of customShots) {
     if (s.type !== 'custom') continue;
