@@ -62,8 +62,9 @@ evidence is recorded in `docs/VERIFICATION.md`.
 - **P1** Wrap directed scenes in `LayoutGuard`; register tracks for text/panels. Test: a deliberately
   overflowing fixture scene produces a blocking issue; a clean one doesn't.
 - **P9** Real crossfades: overlap adjacent scenes by the transition length; `dip` stays a dip.
-- **P23** Ribbon on every scene once a roadmap exists, "all done" state, animated check on the
-  spoken cue word, reserved bottom band so captions move above it (guard verifies no overlap).
+- **P23** Restore the kit `BoxTracker` (Episode Sheet) as a persistent layer: labels from the outline, rows on first
+  mention, checks on the spoken cue word, NOW + progress per box section, finale; inside a guard `Track`.
+  `TimelineRibbon` leaves the directed path.
 - **P26** Pass word timings (frames) to components; beats reveal on anchor words.
 - **P28** Persistent layer: kinetic captions + ribbon across cuts; keep `ken_burns` stops.
 - Evidence: rendered stills at transition frames and cue words, guard report.

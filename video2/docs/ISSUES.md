@@ -72,6 +72,12 @@ Status: `[ ]` open · `[~]` in progress · `[x]` fixed
 
 ## Roadmap ("box checked") system
 
+**Decision (2026-10-08): restore the kit's `BoxTracker` ("Episode Sheet", `src/kit/components.tsx`, identical to
+`remotion-src`) in DirectedEpisode and drop `TimelineRibbon` from the directed path.** Box labels come from the outline
+step (checked against the spoken "N boxes on your sheet: …" line); rows appear when each label is spoken; checks land on
+the narration's cue word, verified against Vosk timing. Script drift to handle: 0 of 106 scripts have `# @boxes:`, and
+cue phrasing varies ("Box one, done.", "Checked.", "Box two, checked").
+
 - [ ] **P21. The pipeline prompt forbids `roadmapIndex`.** `video-pipeline.ts:498` says "Every scene uses exactly id, component,
   turnRange, props, and transition", which contradicts the rubric's ROADMAP section. The example output has no `roadmap` either.
 - [ ] **P22. Roadmap is optional everywhere.** If the LLM omits it, the ribbon silently never appears. No validation requires it
