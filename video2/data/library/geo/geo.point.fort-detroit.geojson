@@ -1,0 +1,15 @@
+{
+  "type": "Feature",
+  "geometry": {"type": "Point", "coordinates": [-83.046, 42.329]},
+  "properties": {
+    "id": "geo.point.fort-detroit",
+    "type": "point",
+    "name": "Fort Detroit",
+    "validFrom": "1701",
+    "validTo": "1826",
+    "precision": "approximate",
+    "sources": ["Site of Fort Pontchartrain du Détroit / Fort Detroit, downtown Detroit (location approximate to the modern street grid)"],
+    "units": [2, 3],
+    "review": {"status": "candidate", "notes": "Seed example. Confirm coordinates against a period map before approving."}
+  }
+}

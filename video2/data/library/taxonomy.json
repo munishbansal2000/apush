@@ -1,0 +1,32 @@
+{
+  "_doc": "Controlled vocabulary for the historical asset library (see docs/ASSET_LIBRARY.md). Validators read every rule here.",
+  "units": {
+    "1": {"name": "Period 1", "from": 1491, "to": 1607},
+    "2": {"name": "Period 2", "from": 1607, "to": 1754},
+    "3": {"name": "Period 3", "from": 1754, "to": 1800},
+    "4": {"name": "Period 4", "from": 1800, "to": 1848},
+    "5": {"name": "Period 5", "from": 1844, "to": 1877},
+    "6": {"name": "Period 6", "from": 1865, "to": 1898},
+    "7": {"name": "Period 7", "from": 1890, "to": 1945},
+    "8": {"name": "Period 8", "from": 1945, "to": 1980},
+    "9": {"name": "Period 9", "from": 1980, "to": 2026}
+  },
+  "kinds": ["portrait", "scene", "cartoon", "map", "view", "document", "object", "photo", "footage", "audio"],
+  "licenses": {
+    "_doc": "Allowed as-is. Anything else (CC BY-SA, NC, ND, 'fair use', unknown) is rejected by the validator.",
+    "allowed": ["Public domain", "CC0", "CC BY 2.0", "CC BY 3.0", "CC BY 4.0", "No known restrictions"]
+  },
+  "quality": {
+    "_doc": "Minimums for full-screen 1080p camera moves (shots allow up to 1.6x upscale).",
+    "imageMinLongEdge": 2000,
+    "imagePreferredLongEdge": 3000,
+    "portraitMinShortEdge": 1200,
+    "footageMinHeight": 480
+  },
+  "tags": {
+    "_doc": "Suggested, not exhaustive. Prefer these spellings so search works.",
+    "mood": ["triumphant", "tense", "violent", "somber", "everyday", "ceremonial", "chaotic", "satirical"],
+    "setting": ["battlefield", "city", "frontier", "sea", "harbor", "interior", "legislature", "plantation", "village", "wilderness", "factory"],
+    "subject": ["military", "politics", "economy", "religion", "native-nations", "slavery", "women", "labor", "trade", "law", "diplomacy", "technology"]
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "_doc": "Briefs for Unit 3 (seed: drawn from the u3e1 script). Planning agents extend this; collector agents fulfil it.",
+  "briefs": [
+    {
+      "id": "brief.u3.grenville-portrait",
+      "kind": "portrait",
+      "want": "George Grenville, contemporary portrait, high resolution",
+      "usedIn": [
+        "u3e1:t04",
+        "u3e1:t05"
+      ],
+      "priority": 1,
+      "count": 2,
+      "hints": [
+        "William Hoare 1764 (Commons)",
+        "National Portrait Gallery London"
+      ],
+      "accept": [
+        "painted 1750s-1770s",
+        "face clearly visible"
+      ]
+    },
+    {
+      "id": "brief.u3.pontiac-depiction",
+      "kind": "portrait",
+      "want": "Depictions associated with Pontiac (no authenticated life portrait exists)",
+      "usedIn": [
+        "u3e1:t34",
+        "u3e1:t38",
+        "u3e1:t40"
+      ],
+      "priority": 1,
+      "count": 2,
+      "accept": [
+        "record must set depicts.retrospective = true",
+        "sensitivity.level care, with a note on Euro-American imagining"
+      ],
+      "hints": [
+        "John Mix Stanley",
+        "19th-century engravings"
+      ]
+    },
+    {
+      "id": "brief.u3.proclamation-text",
+      "kind": "document",
+      "want": "Royal Proclamation of 1763, printed text, full page scan with transcription",
+      "usedIn": [
+        "u3e1:t16",
+        "u3e1:t18",
+        "u3e1:t33"
+      ],
+      "priority": 1,
+      "accept": [
+        "transcription included",
+        "phrase boxes for 'reserve to them' and the settlement ban"
+      ],
+      "hints": [
+        "Library and Archives Canada",
+        "Avalon Project transcription"
+      ]
+    },
+    {
+      "id": "brief.u3.kitchin-1763-map",
+      "kind": "map",
+      "want": "English-language map of British North America c. 1763 showing the Proclamation boundary",
+      "usedIn": [
+        "u3e1:t16",
+        "u3e1:t18",
+        "u3e1:t24"
+      ],
+      "priority": 1,
+      "accept": [
+        "English labels",
+        "long edge 3000px+"
+      ],
+      "hints": [
+        "Thomas Kitchin 1763, Library of Congress",
+        "Emanuel Bowen"
+      ]
+    },
+    {
+      "id": "brief.u3.fort-detroit-siege",
+      "kind": "scene",
+      "want": "Siege of Fort Detroit, 1763, any period or 19th-century depiction, high resolution",
+      "usedIn": [
+        "u3e1:t42"
+      ],
+      "priority": 2,
+      "count": 2,
+      "accept": [
+        "long edge 2000px+",
+        "retrospective flag if 19th-century"
+      ]
+    },
+    {
+      "id": "brief.u3.seven-years-war-victory",
+      "kind": "scene",
+      "want": "British victory imagery from the Seven Years' War (Quebec 1759, Louisbourg), high resolution",
+      "usedIn": [
+        "u3e1:t00",
+        "u3e1:t01"
+      ],
+      "priority": 1,
+      "count": 3,
+      "hints": [
+        "Benjamin West, The Death of General Wolfe (National Gallery of Canada high-res)"
+      ],
+      "accept": [
+        "long edge 3000px+"
+      ]
+    },
+    {
+      "id": "brief.u3.british-treasury",
+      "kind": "scene",
+      "want": "18th-century London financial imagery: Treasury, Exchequer, ledgers, coins, Parliament interior",
+      "usedIn": [
+        "u3e1:t01",
+        "u3e1:t05",
+        "u3e1:t09"
+      ],
+      "priority": 2,
+      "count": 3
+    },
+    {
+      "id": "brief.u3.frontier-settlers",
+      "kind": "scene",
+      "want": "Backcountry settlers crossing or clearing land west of the Appalachians, 1760s-1770s",
+      "usedIn": [
+        "u3e1:t24",
+        "u3e1:t30",
+        "u3e1:t32"
+      ],
+      "priority": 2,
+      "count": 3
+    }
+  ]
+}

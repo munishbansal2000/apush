@@ -1,0 +1,33 @@
+{
+  "id": "portrait.george-grenville-hoare-1764",
+  "kind": "portrait",
+  "title": "George Grenville, by William Hoare",
+  "description": "Three-quarter-length seated portrait of George Grenville in a powdered wig and dark gold-embroidered robes, holding a folded paper, before a green curtain.",
+  "creator": {"name": "William Hoare", "date": "1764", "medium": "oil on canvas"},
+  "depicts": {"date": "1764", "people": ["person.george-grenville"]},
+  "units": [3],
+  "topics": ["3.2"],
+  "tags": ["politics", "interior"],
+  "provenance": {
+    "institution": "Wikimedia Commons",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:George_Grenville_%281712%E2%80%931770%29_by_William_Hoare_%281707-1792%29.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/32/George_Grenville_%281712%E2%80%931770%29_by_William_Hoare_%281707-1792%29.jpg",
+    "license": "Public domain",
+    "credit": "William Hoare, George Grenville (1764), public domain, via Wikimedia Commons"
+  },
+  "files": {
+    "original": {"path": "historic/u3e1/george-grenville-portrait.jpg", "width": 2322, "height": 2902, "sha256": "791c5882544f884234fb07e1ec88be3aeee4116c22d20b5b084c935085e0cb57"}
+  },
+  "quality": {"textInImage": {"present": true, "language": "en"}, "watermark": false, "color": "color", "condition": "good", "notes": "Small inscription at upper right."},
+  "framing": {
+    "orientation": "portrait",
+    "focus": [
+      {"name": "face", "box": [0.36, 0.07, 0.6, 0.3]},
+      {"name": "paper", "box": [0.18, 0.6, 0.42, 0.85], "note": "the folded paper in his hand: useful for 'the bill' / taxes"}
+    ]
+  },
+  "accuracy": ["Painted during his ministry (1763-1765), so it shows him as the audience should picture him in 1763-65."],
+  "sensitivity": {"level": "none"},
+  "review": {"status": "verified", "notes": "Seed example migrated from data/u3e1. Focus boxes estimated by eye; confirm before approving."},
+  "brief": "brief.u3.grenville-portrait"
+}
