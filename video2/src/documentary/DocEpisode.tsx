@@ -12,7 +12,7 @@ import {FilmGrain} from '../kit/media';
 import {sheetTransform} from './sheet';
 import kitConfig from '../data/kit-render-config.json';
 import {AtmosphereLayers} from './atmosphere';
-import {ClipView, CustomView, ImageMoveView, MapView, PointView, QuestionView, YearStampView, yearStampZone} from './shots';
+import {ClipView, CustomView, ImageMoveView, MapView, PointView, QuestionView, YearStampView, yearStampSpans, yearStampZone} from './shots';
 import {ChromeZones} from './chrome-zones';
 import type {DocEpisodeProps, DocShot} from './types';
 
@@ -71,7 +71,10 @@ const Fade: React.FC<{leadFrames: number; children: React.ReactNode}> = ({leadFr
   return <div {...GUARD_WRAPPER} data-guard-moving={o < 1 ? '' : undefined} style={{position: 'absolute', inset: 0, opacity: o}}>{children}</div>;
 };
 
-export const DocEpisode: React.FC<DocEpisodeProps> = ({episode, shots, years = [], boxes = [], turns, timing}) => {
+export const DocEpisode: React.FC<DocEpisodeProps> = ({episode, shots, years: yearsIn = [], boxes = [], turns, timing}) => {
+  // One year stamp at a time: a stamp gives way (fades out early) when the next year is spoken.
+  const years = [...yearsIn].sort((a, b) => a.sec - b.sec);
+  const spans = yearStampSpans(years);
   const frame = useCurrentFrame();
   const {fps, width, height} = useVideoConfig();
   const t = frame / fps;
@@ -85,7 +88,7 @@ export const DocEpisode: React.FC<DocEpisodeProps> = ({episode, shots, years = [
   const sheetOpacity = boxes.length && sheet.phase === 'docked' ? (onQuestion ? 0 : dockedOpacity(t, boxes)) : 0;
   const [rx0, ry0, rx1, ry1] = cfg.boxTracker.rect;
   const zones = [
-    ...years.filter(y => t >= y.sec && t < y.sec + 5).map(y => yearStampZone(y.text, frame - Math.round(y.sec * fps), fps, width, height)),
+    ...years.map((y, i) => ({y, span: spans[i]})).filter(({y, span}) => t >= y.sec && t < y.sec + span).map(({y, span}) => yearStampZone(y.text, frame - Math.round(y.sec * fps), fps, width, height, span)),
     ...(sheetOpacity > 0 ? [{rect: [rx0 * width, ry0 * height, rx1 * width, ry1 * height] as [number, number, number, number], opacity: Math.min(1, sheetOpacity * 4)}] : []),
   ];
   const speaking = (sec: number) => turns.some((turn, i) => turn.kind === 'speech' && sec >= timing.starts[i] && sec < timing.starts[i] + timing.durations[i]);
@@ -102,9 +105,9 @@ export const DocEpisode: React.FC<DocEpisodeProps> = ({episode, shots, years = [
       </ChromeZones.Provider>
       <Vignette />
       <Track id="bg:grain" role="bg"><FilmGrain opacity={0.08} /></Track>
-      {years.map(y => (
-        <Sequence key={`y-${y.sec}`} from={Math.round(y.sec * fps)} durationInFrames={Math.round(5 * fps)} layout="none">
-          <Track id={`chrome:year-${y.text}`} role="chrome"><YearStampView text={y.text} /></Track>
+      {years.map((y, i) => (
+        <Sequence key={`y-${y.sec}`} from={Math.round(y.sec * fps)} durationInFrames={Math.max(1, Math.round(spans[i] * fps))} layout="none">
+          <Track id={`chrome:year-${y.text}`} role="chrome"><YearStampView text={y.text} holdSec={spans[i]} /></Track>
         </Sequence>
       ))}
       {boxes.length > 0 && sheet.phase !== 'hidden' && (

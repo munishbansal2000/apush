@@ -30,3 +30,13 @@ describe('year stamp zone', () => {
     assert.equal(yearStampZone('1763', 150, 30, 1920, 1080).opacity, 0, 'gone after 5s');
   });
 });
+
+describe('year stamps', () => {
+  it('a stamp gives way to the next year: never two on screen, the last keeps its full time', async () => {
+    const {yearStampSpans, yearStampZone, YEAR_STAMP_SEC} = await import('../src/documentary/shots');
+    const spans = yearStampSpans([{sec: 10}, {sec: 12.5}, {sec: 40}]);
+    assert.deepEqual(spans, [2.5, YEAR_STAMP_SEC, YEAR_STAMP_SEC]);
+    assert.equal(yearStampZone('1760', Math.round(2.5 * 30), 30, 1920, 1080, 2.5).opacity, 0, 'faded out when the next arrives');
+    assert.ok(yearStampZone('1760', Math.round(1.5 * 30), 30, 1920, 1080, 2.5).opacity > 0.5);
+  });
+});
