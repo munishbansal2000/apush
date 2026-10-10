@@ -2,12 +2,13 @@
  * Storyboard (docs/STORYBOARD.md): per turn, the visuals to show, the phrase each lands on, priority and pace. Turns are
  * keyed by identity (speaker + text hash), so script edits invalidate only the turns they touch.
  */
+import {graphicIssues} from '../../src/documentary/graphics-catalog';
 import type {PipelineTurn} from '../pipeline-core';
 import {sha256} from '../pipeline-core';
 import {cleanSpeech} from './speech';
 import {LOOK_RULES} from './shots';
 
-export type VisualKind = 'image' | 'map' | 'point' | 'custom' | 'clip';
+export type VisualKind = 'image' | 'map' | 'point' | 'custom' | 'clip' | 'graphic';
 
 export interface StoryVisual {
   kind: VisualKind;
@@ -28,6 +29,10 @@ export interface StoryVisual {
   bullets?: {text: string; at: {phrase: string} | {offset: number}}[];
   backdrop?: string;
   component?: string;
+  /** A graphic's data (src/documentary/graphics-catalog.ts). */
+  props?: Record<string, unknown>;
+  /** Phrases of the line that reveal a custom explainer's phases or a graphic's items, in order. */
+  beats?: string[];
   prompt?: string;
   seed?: number;
   focus?: [number, number];
@@ -141,6 +146,10 @@ export function checkStoryboard(sb: Storyboard, turns: PipelineTurn[], durations
       }
       if ((v.kind === 'image' || v.kind === 'clip') && !v.image) issues.push(`${where}: ${v.kind} needs an image`);
       if (v.kind === 'custom' && !v.component) issues.push(`${where}: custom needs a component`);
+      if (v.kind === 'graphic') {
+        for (const issue of graphicIssues(v.component, v.props, v.beats ?? [])) issues.push(`${where}: ${issue}`);
+        for (const b of v.beats ?? []) if (!countPhrase(text, b)) issues.push(`${where}: beat "${b}" is not in the line`);
+      }
       for (let k = 0; k <= (v.span ?? 0); k++) covered.add(index + k);
     });
   }

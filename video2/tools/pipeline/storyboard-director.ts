@@ -3,6 +3,7 @@
  * the phrase each lands on, priority, pace) and nothing about timing. Small answers per act; repairs and reviewer notes
  * re-ask only the acts they concern.
  */
+import {GRAPHICS} from '../../src/documentary/graphics-catalog';
 import type {PipelineTurn} from '../pipeline-core';
 import {cleanSpeech} from './speech';
 import {LOOK_RULES} from './shots';
@@ -33,7 +34,8 @@ export function storyboardPrompt(index: number, outline: Outline, turns: Pipelin
     '- A new visual about every 3-6 seconds of narration (about one per 10-15 spoken words). A long line gets several visuals; a quick back-and-forth may hold one visual across lines with "span": N (the number of following lines it continues over).',
     '- Each visual lands on a phrase: 2-6 consecutive words copied VERBATIM from that line, unique within the line, in the order spoken.',
     '- Show what the words are about: the person named, the place, the document, the event, the object. For an abstract idea use a document detail, a map, a point card (1-3 bullets, <= 6 words each) or a listed custom explainer.',
-    '- Kinds: "image" (optional "framing": "wide" | "face" | "detail"; first appearance of a person: add "name" and "role" for a name tag), "map" (a map view), "point", "custom" (only a listed explainer, only for its exact event), "clip" (a hero still with gentle ambient motion: smoke, water, flags; never faces or text; at most one per act).',
+    '- Kinds: "image" (optional "framing": "wide" | "face" | "detail"; first appearance of a person: add "name" and "role" for a name tag), "map" (a map view), "point", "graphic" (a listed GRAPHIC filled with your text/numbers), "custom" (only a listed explainer, only for its exact event), "clip" (a hero still with gentle ambient motion: smoke, water, flags; never faces or text; at most one per act).',
+    '- Graphics carry the explaining: when the narration quotes a source, reads or analyses a document, sets two sides against each other, walks a chain of causes, or gives numbers, show it with the matching GRAPHIC rather than a picture or map. Aim for 1-3 graphics per act, each held for a stretch of narration (5s or more); "beats" are phrases of the line, in order, that reveal its items. Write the text yourself, short and exact (quotes and numbers as the narration gives them).',
     '- Images only from ASSETS, each at most its "uses" in this act (the lesson shares each image between acts). Images marked retrospective (later imaginings) must not be presented as eyewitness records.',
     '- The Episode Sheet appears large and lists the boxes on screen by itself while they are named: never a point card (or any other list) for the boxes; show a picture or map under it.',
     `- Variety: at most ${LOOK_RULES.maxPointsPerAct} point cards in the act (only for a spoken list or the thesis) and never two in a row; at most ${LOOK_RULES.maxMapsPerAct} maps total and ${LOOK_RULES.maxMapRun} maps in a row; the same map view at most ${LOOK_RULES.maxViewPerAct} times in the act. Prefer primary-source documents, objects, portraits, and event images whenever geography is not the actual point.`,
@@ -45,6 +47,7 @@ export function storyboardPrompt(index: number, outline: Outline, turns: Pipelin
     ' {"kind":"image","image":"<asset path>","framing":"face","name":"George Grenville","role":"Prime Minister, 1763-1765","at":{"phrase":"george grenville"},"priority":"essential","pace":"hold"},',
     ' {"kind":"map","map":{"view":"<map view id>","period":1763,"moves":[{"at":{"phrase":"new england"},"to":"<focus or place id>","highlight":true}],"fills":[{"at":{"offset":0.5},"region":{"geo":"<geo id>"},"color":"red"}]},"at":{"phrase":"..."},"priority":"essential"},',
     ' {"kind":"point","backdrop":"<asset path>","bullets":[{"text":"Britain won the war","at":{"offset":0.3}}],"at":{"phrase":"..."},"priority":"essential"},',
+    ' {"kind":"graphic","component":"CompareSlide","props":{"title":"Who decides taxes?","left":{"head":"Parliament","sections":[{"sub":"Claim","points":["Virtual representation"]}]},"right":{"head":"Colonists","sections":[{"sub":"Claim","points":["Only their assemblies"]}]}},"beats":["parliament said","the colonists answered"],"at":{"phrase":"..."},"priority":"essential"},',
     ' {"kind":"custom","component":"<explainer name>","at":{"phrase":"..."},"priority":"essential"},',
     ' {"kind":"clip","image":"<asset path>","prompt":"Gunpowder smoke drifts slowly across the field.","at":{"phrase":"..."},"priority":"essential","span":1}',
     ']}],"years":[{"turn":0,"phrase":"in 1763","text":"1763"}]}',
@@ -57,6 +60,9 @@ export function storyboardPrompt(index: number, outline: Outline, turns: Pipelin
     '',
     ...(customs.length ? ['CUSTOM EXPLAINERS (name | event | what it shows):', ...customs.map(([n, c]) => `${n} | ${c.topic} | ${c.shows}`), ''] : []),
     'A focus target marked * is a region: "highlight": true on the move fills and names it as the camera arrives. Use it whenever the narration names that region (a spoken list of regions: one move per region, each highlighted on its words).',
+    'GRAPHICS (name | use it for | beats reveal | example props):',
+    ...Object.entries(GRAPHICS).map(([n, g]) => `${n} | ${g.use} | ${g.beats || 'no beats'} | ${JSON.stringify(g.example)}`),
+    '',
     'MAP VIEWS (view id | name | focus targets):',
     ...(maps.views?.length ? maps.views.map(v => `${v.id} | ${v.name} | ${v.focus.join(', ')}`) : ['(none)']),
     'MAP DATA (geo id | type | name), places (id | name):',
@@ -104,7 +110,7 @@ export function validateStoryAct(raw: unknown, index: number, outline: Outline, 
     if (!Number.isInteger(t?.turn) || t.turn < from || t.turn > to) { issues.push(`turn ${t?.turn}: outside this act (lines ${from}-${to})`); continue; }
     if (turns[t.turn].kind === 'pause') { issues.push(`turn ${t.turn}: is a PAUSE line; remove its visuals`); continue; }
     for (const v of t.visuals ?? []) {
-      if (!['image', 'map', 'point', 'custom', 'clip'].includes(v?.kind)) { issues.push(`turn ${t.turn}: unknown visual kind ${JSON.stringify(v?.kind)}`); continue; }
+      if (!['image', 'map', 'point', 'custom', 'clip', 'graphic'].includes(v?.kind)) { issues.push(`turn ${t.turn}: unknown visual kind ${JSON.stringify(v?.kind)}`); continue; }
       v.priority ??= 'essential';
       const image = v.kind === 'point' ? v.backdrop : v.image;
       if (image) {

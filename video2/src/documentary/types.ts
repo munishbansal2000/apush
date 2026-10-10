@@ -117,7 +117,17 @@ export interface CustomShot extends ShotBase {
   beatsSec?: number[];
 }
 
-export type DocShot = ImageMoveShot | PortraitShot | MapShot | PointShot | ClipShot | QuestionShot | CustomShot;
+/** A reusable graphic (src/documentary/graphics-catalog.ts): a component filled with the storyboard's data. */
+export interface GraphicShot extends ShotBase {
+  type: 'graphic';
+  /** A name from GRAPHICS. */
+  component: string;
+  props: Record<string, unknown>;
+  /** Absolute times its items appear (the spoken beats); without them it uses its own timing. */
+  beatsSec?: number[];
+}
+
+export type DocShot = ImageMoveShot | PortraitShot | MapShot | PointShot | ClipShot | QuestionShot | CustomShot | GraphicShot;
 
 /** Year that slams in over whatever shot is playing. */
 export interface YearStamp {text: string; sec: number}

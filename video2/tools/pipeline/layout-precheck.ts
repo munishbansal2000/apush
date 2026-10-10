@@ -151,6 +151,11 @@ export function predictLayout(resolved: Pick<ResolvedShotPlan, 'shots' | 'years'
     for (const d of [-Math.round(YEAR_STAMP_LEAD_SEC * fps), 0, 2, 5, 9, Math.round(spans[i] * fps) - 3]) riskFrames.push({frame: at + d, why: `year ${y.text} ${d < 0 ? 'lead-in' : d <= 9 ? 'slam' : 'fade'}`});
   });
   for (const b of boxes) for (const d of [1, 4, 8]) riskFrames.push({frame: Math.round(b.startSec * fps) + d, why: `NOW entrance: ${b.label}`});
+  // Graphics lay out text the simulation cannot measure: their entrance and each reveal go to the contact sheet.
+  for (const s of shots) if (s.type === 'graphic') {
+    const g = s as unknown as {startSec: number; component: string; beatsSec?: number[]};
+    for (const sec of [g.startSec + 0.6, ...(g.beatsSec ?? []).map(b => b + 0.5)]) riskFrames.push({frame: Math.round(sec * fps), why: `graphic ${g.component}`});
+  }
   const seen = new Set<number>();
   return {collisions, riskFrames: riskFrames.filter(r => r.frame >= 0 && r.frame <= last && !seen.has(r.frame) && seen.add(r.frame)).sort((a, b) => a.frame - b.frame)};
 }

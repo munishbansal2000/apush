@@ -16,6 +16,7 @@ import {AtmosphereLayers} from './atmosphere';
 // views its shots use (tools/pipeline/stages/doc.ts), so a view must not render outside its shot type.
 import {ClipView} from './views/clip';
 import {CustomView} from './views/custom';
+import {GraphicView} from './views/graphic';
 import {ImageMoveView} from './views/image';
 import {MapView} from './views/map';
 import {PointView} from './views/point';
@@ -62,6 +63,7 @@ const ShotBody: React.FC<{shot: DocShot; lead: number}> = ({shot, lead}) => {
     case 'point': return <PointView shot={shot} lead={lead} />;
     case 'question': return <QuestionView shot={shot} lead={lead} />;
     case 'custom': return <CustomView shot={shot} lead={lead} />;
+    case 'graphic': return <GraphicView shot={shot} lead={lead} />;
   }
 };
 
@@ -69,7 +71,7 @@ const ShotBody: React.FC<{shot: DocShot; lead: number}> = ({shot, lead}) => {
 const ShotView: React.FC<{shot: DocShot; lead: number}> = ({shot, lead}) => (
   <>
     <ShotBody shot={shot} lead={lead} />
-    {shot.type !== 'point' && shot.type !== 'portrait' && shot.type !== 'question' && shot.type !== 'custom' && <AtmosphereLayers kinds={shot.atmosphere} seed={shot.id} />}
+    {shot.type !== 'point' && shot.type !== 'portrait' && shot.type !== 'question' && shot.type !== 'custom' && shot.type !== 'graphic' && <AtmosphereLayers kinds={shot.atmosphere} seed={shot.id} />}
   </>
 );
 

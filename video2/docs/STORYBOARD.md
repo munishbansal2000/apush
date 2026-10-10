@@ -33,7 +33,7 @@ plus an editor pass.
                          "priority": "essential", "pace": "hold"}]}]}
 ```
 
-- **kind**: `image` (any still; `framing` names a treatment framing), `map` (a map shot spec, usually `{"view": ...}`),
+- **kind**: `image` (any still; `framing` names a treatment framing), `graphic` (a reusable component from `src/documentary/graphics-catalog.ts` with `component`, `props` and optional `beats`: quote, document spotlight, close reading, comparison, causal chain, bar chart), `map` (a map shot spec, usually `{"view": ...}`),
   `point` (bullets), `custom` (explainer), `clip` (hero still with LTX motion). Question cards are automatic (every 5s+
   pause) and never appear in the storyboard.
 - **at.phrase**: 2-6 words verbatim from that turn, unique within it (or `occurrence` for repeats).

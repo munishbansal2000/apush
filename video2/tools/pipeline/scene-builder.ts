@@ -168,6 +168,10 @@ export function buildPlan(input: BuildInputs): BuildResult {
         }
         shot = {type: 'point', ...common, backdrop, bullets: timed(v.bullets) ?? []} as unknown as Shot;
       }
+      else if (v.kind === 'graphic') {
+        const beats = (v.beats ?? []).map(p => cue(index, p)).filter((c): c is Cue => !!c);
+        shot = {type: 'graphic', ...common, component: v.component, props: v.props ?? {}, ...(beats.length ? {beats} : {})} as unknown as Shot;
+      }
       else if (v.kind === 'custom') {
         const beats = ((v as {beats?: string[]}).beats ?? []).map(p => cue(index, p)).filter((c): c is Cue => !!c);
         shot = {type: 'custom', ...common, component: v.component, ...(beats.length ? {beats} : {})} as unknown as Shot;
@@ -218,7 +222,7 @@ export function buildPlan(input: BuildInputs): BuildResult {
   };
   const maxFor = (d: Draft) => (d.shot.type === 'question'
     ? timing.durations[(d.shot.at as {turn: number}).turn] + LOOK_RULES.questionOverrunSec
-    : d.shot.type === 'map' || d.shot.type === 'custom' ? LOOK_RULES.maxMapSec : LOOK_RULES.maxShotSec) + LOOK_RULES.lengthToleranceSec;
+    : d.shot.type === 'map' || d.shot.type === 'custom' || d.shot.type === 'graphic' ? LOOK_RULES.maxMapSec : LOOK_RULES.maxShotSec) + LOOK_RULES.lengthToleranceSec;
   for (let pass = 0; pass < 400; pass++) {
     const starts = drafts.map(timeOf);
     const ends = starts.map((_, i) => (i + 1 < starts.length ? starts[i + 1] : timing.totalSec));
@@ -238,7 +242,7 @@ export function buildPlan(input: BuildInputs): BuildResult {
     if (changed) continue;
     // A custom explainer needs time to play its beat: the visual after a too-short one gives way (never a question card).
     for (let i = 0; i + 1 < drafts.length; i++) {
-      if (drafts[i].shot.type !== 'custom' || !(ends[i] - starts[i] < LOOK_RULES.minCustomSec - 0.05)) continue;
+      if ((drafts[i].shot.type !== 'custom' && drafts[i].shot.type !== 'graphic') || !(ends[i] - starts[i] < LOOK_RULES.minCustomSec - 0.05)) continue;
       const next = drafts[i + 1];
       if (next.shot.type === 'question') { storyboardIssues.push(`turn ${(drafts[i].shot.at as Cue).turn}: custom explainer "${String(drafts[i].shot.component)}" has under ${LOOK_RULES.minCustomSec}s before the question card`); continue; }
       fixes.push(`dropped "${String((next.shot.at as Cue).phrase)}" (turn ${(next.shot.at as Cue).turn}): the explainer before it needs ${LOOK_RULES.minCustomSec}s`);

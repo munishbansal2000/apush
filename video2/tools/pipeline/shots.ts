@@ -13,6 +13,7 @@ import {resolvePhrase, type AnchorTiming, type PhraseAnchor} from './anchors';
 import {clipFingerprint, clipPromptIssues} from './clip-fingerprint';
 import {ATMOSPHERES, type Atmosphere} from '../../src/documentary/atmosphere';
 import {CUSTOM_NAMES} from '../../src/components/custom/catalog';
+import {graphicIssues} from '../../src/documentary/graphics-catalog';
 import {expandMapViews, type MapViewDef, type ViewMapShot} from './map-views';
 
 /** A cue: a spoken phrase, or seconds after the shot starts. */
@@ -35,6 +36,7 @@ export type PlanShot = (
   | {type: 'point'; at: PhraseAnchor; backdrop: string; bullets: {at: Cue; text: string}[]; transition?: 'cut' | 'crossfade'}
   | {type: 'question'; at: PauseAnchor; question: string; practice?: boolean; backdrop?: string; transition?: 'cut' | 'crossfade'}
   | {type: 'custom'; at: PhraseAnchor; component: string; beats?: PhraseAnchor[]; transition?: 'cut' | 'crossfade'}
+  | {type: 'graphic'; at: PhraseAnchor; component: string; props: Record<string, unknown>; beats?: PhraseAnchor[]; transition?: 'cut' | 'crossfade'}
 ) & {atmosphere?: string[]};
 
 /** A pause has no words to quote: question shots are anchored to the pause turn itself ({"turn": 57}). */
@@ -163,13 +165,13 @@ export function resolveShotPlan(input: ShotPlan, turns: PipelineTurn[], timing: 
     if (Number.isFinite(len)) {
       if (len < rules.minShotSec - 0.05) issues.push(`${id}: ${len.toFixed(2)}s is shorter than ${rules.minShotSec}s (cuts must not stutter)`);
       const pauseLen = shot.type === 'question' && turns[shot.at.turn]?.kind === 'pause' ? timing.durations[shot.at.turn] : 0;
-      if (shot.type === 'custom' && len < rules.minCustomSec) issues.push(`${id}: ${len.toFixed(1)}s is too short for a custom explainer (min ${rules.minCustomSec}s); give it a longer stretch of narration`);
-      const max = shot.type === 'map' || shot.type === 'custom' ? rules.maxMapSec : shot.type === 'question' ? pauseLen + rules.questionOverrunSec : rules.maxShotSec;
+      if ((shot.type === 'custom' || shot.type === 'graphic') && len < rules.minCustomSec) issues.push(`${id}: ${len.toFixed(1)}s is too short for a ${shot.type === 'custom' ? 'custom explainer' : 'graphic'} (min ${rules.minCustomSec}s); give it a longer stretch of narration`);
+      const max = shot.type === 'map' || shot.type === 'custom' || shot.type === 'graphic' ? rules.maxMapSec : shot.type === 'question' ? pauseLen + rules.questionOverrunSec : rules.maxShotSec;
       if (len > max + rules.lengthToleranceSec) issues.push(`${id}: ${len.toFixed(1)}s holds longer than ${max}s on one ${shot.type} shot; cut on another spoken cue`);
     }
     const cue = (where: string, c: Cue) => ('offset' in c ? anchors[i] + c.offset : phrase(`${id} ${where}`, c));
     for (const kind of shot.atmosphere ?? []) if (!(ATMOSPHERES as readonly string[]).includes(kind)) issues.push(`${id}: unknown atmosphere "${kind}" (${ATMOSPHERES.join(', ')})`);
-    if (shot.atmosphere?.length && (shot.type === 'map' || shot.type === 'custom')) issues.push(`${id}: ${shot.type} shots take no atmosphere layers`);
+    if (shot.atmosphere?.length && (shot.type === 'map' || shot.type === 'custom' || shot.type === 'graphic')) issues.push(`${id}: ${shot.type} shots take no atmosphere layers`);
     const base = {id, startSec, endSec: end, transition: shot.transition, atmosphere: shot.atmosphere as Atmosphere[] | undefined};
     switch (shot.type) {
       case 'image_move':
@@ -270,6 +272,11 @@ export function resolveShotPlan(input: ShotPlan, turns: PipelineTurn[], timing: 
         // Beats: the explainer's phases start on these spoken phrases (docs/STORYBOARD.md, decision 8).
         const beatsSec = (shot.beats ?? []).map((b, n) => phrase(`${id} beat ${n + 1}`, b));
         return {...base, type: 'custom', component: shot.component, ...(beatsSec.length ? {beatsSec} : {})};
+      }
+      case 'graphic': {
+        for (const issue of graphicIssues(shot.component, shot.props, shot.beats ?? [])) issues.push(`${id}: ${issue}`);
+        const beatsSec = (shot.beats ?? []).map((b, n) => phrase(`${id} beat ${n + 1}`, b));
+        return {...base, type: 'graphic', component: shot.component, props: shot.props, ...(beatsSec.length ? {beatsSec} : {})};
       }
       case 'point': {
         if (!shot.bullets.length || shot.bullets.length > rules.maxBullets) issues.push(`${id}: a point card has 1-${rules.maxBullets} bullets, got ${shot.bullets.length}`);
