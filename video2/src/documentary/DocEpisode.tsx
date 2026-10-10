@@ -12,7 +12,15 @@ import {FilmGrain} from '../kit/media';
 import {sheetTransform} from './sheet';
 import kitConfig from '../data/kit-render-config.json';
 import {AtmosphereLayers} from './atmosphere';
-import {ClipView, CustomView, ImageMoveView, MapView, PointView, QuestionView, YearStampView, YEAR_STAMP_LEAD_SEC, yearStampSpans, yearStampZone} from './shots';
+// Shot views are reached only through ShotBody's switch on shot type: each segment's render cache is keyed by the
+// views its shots use (tools/pipeline/stages/doc.ts), so a view must not render outside its shot type.
+import {ClipView} from './views/clip';
+import {CustomView} from './views/custom';
+import {ImageMoveView} from './views/image';
+import {MapView} from './views/map';
+import {PointView} from './views/point';
+import {QuestionView} from './views/question';
+import {YearStampView, YEAR_STAMP_LEAD_SEC, yearStampSpans, yearStampZone} from './views/year-stamp';
 import {ChromeZones} from './chrome-zones';
 import type {DocEpisodeProps, DocShot} from './types';
 
