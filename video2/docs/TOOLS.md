@@ -228,6 +228,15 @@ Remotion Studio. The debug overlay (turn, speaker, tone, time) and red guard out
 
 ## Render & export
 
+Speed settings for the contact sheet and render (`tools/pipeline/stages/doc.ts`): one Chrome per stage, frames and stills in parallel tabs, and the GPU where it helps. On Windows, Chrome draws with the GPU (ANGLE) and H.264 is encoded on an NVIDIA GPU (NVENC) by default.
+
+| Variable | Default | Effect |
+|---|---|---|
+| `RENDER_CONCURRENCY` | half the CPU cores | frames / stills rendered at once |
+| `REMOTION_GL` | `angle` on Windows | Chrome's GL backend; `off` for Remotion's default |
+| `RENDER_HW` | on | `0` = software H.264 (libx264) instead of NVENC / VideoToolbox |
+
+
 ### `npm run render [-- --frames A-B | --id <composition>]` — logged
 Validate, then render with the runtime layout guard on **every** frame.
 
