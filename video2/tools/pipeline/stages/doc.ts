@@ -14,7 +14,7 @@ import type {DocShot} from '../../../src/documentary/types';
 import {DOC_CROSSFADE_FRAMES, soundCues} from '../../../src/documentary/DocEpisode';
 import {assembleEpisode} from '../assemble';
 import {CLIP_SIZE, DESKTOP_SETTINGS, PAINTING_NEGATIVE, aspectCrop, ltxBackend} from '../clip-fingerprint';
-import {treeHash} from '../context';
+import {rendererHash} from '../context';
 import {DESKTOP_CLIENT, GENERATOR, clipsDirFor, loadDocInputs, resolveDocPlan, type ClipManifest, type DocInputs} from '../doc-inputs';
 import {blockingLayoutIssues, formatLayoutIssues, guardHeartbeat, layoutIssuesFromLog, type LayoutIssue} from '../guard-logs';
 import type {ResolvedShotPlan} from '../shots';
@@ -210,7 +210,7 @@ export async function docRenderStage(ctx: DocRenderContext, inputs: DocInputs, r
     const totalSec = Math.min(inputs.timing.totalSec, limitSec);
     const preview = Number.isFinite(limitSec);
     // The encoder and GL backend are part of a segment's identity: segments are joined without re-encoding.
-    const env = {sourceHash: treeHash(join(ROOT, 'src')), fps, width: composition.width, height: composition.height, encoder: tuning.hardwareAcceleration, gl: tuning.chromiumOptions.gl ?? null};
+    const env = {sourceHash: rendererHash(), fps, width: composition.width, height: composition.height, encoder: tuning.hardwareAcceleration, gl: tuning.chromiumOptions.gl ?? null};
     const segDir = join(ctx.work, 'doc-segments');
     mkdirSync(segDir, {recursive: true});
     const cachePath = join(ctx.work, 'doc-render-cache.json');

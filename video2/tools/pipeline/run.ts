@@ -4,7 +4,7 @@ import {dirname, join} from 'node:path';
 import {loadLessonReview} from './review';
 import {ROOT} from '../lib';
 import {atomicJson, checkFacts, sha256, type PipelineStage} from '../pipeline-core';
-import {treeHash, type PipelineContext} from './context';
+import {rendererHash, type PipelineContext} from './context';
 import {loadPronunciations} from './speech';
 import {turnsStage} from './stages/turns';
 import {pronounceStage} from './stages/pronounce';
@@ -66,7 +66,7 @@ export async function runPipeline(ctx: PipelineContext): Promise<void> {
   atomicJson(join(ctx.work, 'sync_report.json'), {episode, issues});
   if (issues.length) throw new Error(`audio/timing sync gate failed:\n${issues.map(i => `  - ${i}`).join('\n')}`);
   // Everything that changes pixels or sound: the plan as resolved (times, clips, depth), words, audio, and the renderer source.
-  const visualHash = sha256(JSON.stringify({resolved, src: treeHash(join(ROOT, 'src'))}));
+  const visualHash = sha256(JSON.stringify({resolved, src: rendererHash()}));
   const renderCtx = {episode, work: ctx.work, outDir: ctx.outDir, publicDir: ctx.publicDir, force: ctx.force};
   if (stages.includes('contact')) {
     if (ctx.current('contact', visualHash) && existsSync(join(ctx.outDir, `${episode}-contact.png`))) console.log('[contact] checkpoint current');

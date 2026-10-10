@@ -1,7 +1,7 @@
 /** Shared run context: CLI options, config, paths, stage checkpoints, and process/LLM helpers. */
 import {spawnSync} from 'node:child_process';
-import {existsSync, mkdirSync, readFileSync, writeFileSync, unlinkSync, readdirSync, statSync} from 'node:fs';
-import {basename, join, relative} from 'node:path';
+import {existsSync, mkdirSync, readFileSync, writeFileSync, unlinkSync, statSync} from 'node:fs';
+import {basename, dirname, join, relative} from 'node:path';
 import {ROOT, arg, flag} from '../lib';
 import {PRONUNCIATIONS_PATH} from './speech';
 import {PendingAnswers, agentIO, pendingPromptFile} from './director-io';
@@ -212,16 +212,29 @@ export function createContext(): PipelineContext {
   };
 }
 
-/** Hash of every source file under dir that can change rendered output. */
-export function treeHash(dir: string): string {
-  const rows: [string, string][] = [];
-  const walk = (current: string) => {
-    for (const name of readdirSync(current).sort()) {
-      const path = join(current, name);
-      if (statSync(path).isDirectory()) walk(path);
-      else if (/\.(?:ts|tsx|json|css)$/i.test(name)) rows.push([path.slice(dir.length), sha256(readFileSync(path))]);
+/**
+ * Hash of the renderer: every source file the documentary composition imports (followed from its entry, so edits to
+ * other episodes, legacy scenes or demos keep rendered segments), plus the Remotion versions.
+ */
+export function rendererHash(entry = join(ROOT, 'src', 'documentary-index.tsx')): string {
+  const seen = new Map<string, string>();
+  const resolve = (from: string, spec: string): string | null => {
+    const base = join(dirname(from), spec);
+    for (const p of [base, `${base}.ts`, `${base}.tsx`, `${base}.json`, join(base, 'index.ts'), join(base, 'index.tsx')]) if (existsSync(p) && statSync(p).isFile()) return p;
+    return null;
+  };
+  const visit = (file: string) => {
+    if (seen.has(file)) return;
+    const text = readFileSync(file, 'utf8');
+    seen.set(file, sha256(text));
+    if (!/\.(?:ts|tsx)$/.test(file)) return;
+    for (const m of text.matchAll(/(?:import|export)\s[^'"]*?from\s*['"](\.[^'"]+)['"]|import\s*['"](\.[^'"]+)['"]|import\(\s*['"](\.[^'"]+)['"]\s*\)/g)) {
+      const target = resolve(file, m[1] ?? m[2] ?? m[3]);
+      if (target) visit(target);
     }
   };
-  walk(dir);
-  return sha256(JSON.stringify(rows));
+  visit(entry);
+  const pkg = JSON.parse(readFileSync(join(ROOT, 'package.json'), 'utf8')) as {dependencies?: Record<string, string>};
+  const remotion = Object.entries(pkg.dependencies ?? {}).filter(([name]) => name === 'remotion' || name.startsWith('@remotion/'));
+  return sha256(JSON.stringify({files: [...seen].map(([f, h]) => [f.slice(ROOT.length).replace(/\\/g, '/'), h]).sort(), remotion}));
 }
