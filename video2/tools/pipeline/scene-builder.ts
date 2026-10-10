@@ -15,6 +15,7 @@ import {tokens} from '../../src/kit/text';
 import type {PipelineTurn, WordTiming} from '../pipeline-core';
 import {resolvePhrase, type AnchorTiming} from './anchors';
 import type {CatalogEntry} from './doc-director';
+import type {MapViewDef} from './map-views';
 import {fixActQuestions} from './plan-fixups';
 import {LOOK_RULES, type PlanShot, type ShotPlan} from './shots';
 import {cleanSpeech} from './speech';
@@ -30,6 +31,8 @@ export interface BuildInputs {
   treatments: Record<string, Treatment>;
   depthMaps?: Record<string, string>;
   allowEstimated?: boolean;
+  /** Library map views: a highlight on a target without a region is dropped (the move stays) instead of failing. */
+  mapViews?: Record<string, MapViewDef>;
 }
 
 export interface BuildResult {plan: ShotPlan & {acts: Storyboard['acts']}; warnings: string[]; fixes: string[]; storyboardIssues: string[]}
@@ -132,7 +135,15 @@ export function buildPlan(input: BuildInputs): BuildResult {
         }
       } else if (v.kind === 'map') {
         const m = (v.map ?? {}) as Record<string, {at?: unknown}[] | unknown>;
-        const lists = Object.fromEntries((['moves', 'fills', 'lines', 'points', 'labels'] as const).filter(k => Array.isArray(m[k])).map(k => [k, timed(m[k] as {at?: unknown}[])]));
+        const lists: Record<string, unknown[] | undefined> = Object.fromEntries((['moves', 'fills', 'lines', 'points', 'labels'] as const).filter(k => Array.isArray(m[k])).map(k => [k, timed(m[k] as {at?: unknown}[])]));
+        // "highlight" asks to fill the target's region; a target without one is still a camera move.
+        const view = typeof m.view === 'string' ? input.mapViews?.[m.view] : undefined;
+        if (view && Array.isArray(lists.moves)) lists.moves = (lists.moves as {to?: string; highlight?: unknown}[]).map(mv => {
+          if (!mv.highlight || view.focus?.[mv.to ?? '']?.region) return mv;
+          warnings.push(`turn ${index}: "${mv.to}" has no region in ${view.id}; moved there without a highlight`);
+          const {highlight: _drop, ...rest} = mv;
+          return rest;
+        });
         shot = {type: 'map', ...m, ...lists, ...common} as unknown as Shot;
       }
       else if (v.kind === 'point') {
@@ -154,6 +165,13 @@ export function buildPlan(input: BuildInputs): BuildResult {
     }
   }
 
+  // 1b. Clips beyond the lesson budget play as ordinary moves on the same still (acts each may add one).
+  drafts.filter(d => d.shot.type === 'clip').slice(LOOK_RULES.maxClips).forEach(d => {
+    const c = d.shot as unknown as {at: Cue; image: string; from: unknown; to: unknown; atmosphere?: unknown; transition?: unknown};
+    d.shot = {type: 'image_move', at: c.at, image: c.image, from: c.from, to: c.to, ...(c.atmosphere ? {atmosphere: c.atmosphere} : {}), ...(c.transition ? {transition: c.transition} : {})} as unknown as Shot;
+    fixes.push(`turn ${c.at.turn}: clip over the lesson's ${LOOK_RULES.maxClips}; plays as a move on the same still`);
+  });
+
   // 2. Question cards (automatic, verbatim) over the whole lesson.
   const withQuestions = fixActQuestions({shots: drafts.map(d => d.shot) as never}, {from: 0, to: turns.length - 1}, turns, timing.durations);
   const visualOf = new Map(drafts.map(d => [d.shot, d.visual]));
@@ -173,8 +191,9 @@ export function buildPlan(input: BuildInputs): BuildResult {
     const starts = drafts.map(timeOf);
     const ends = starts.map((_, i) => (i + 1 < starts.length ? starts[i + 1] : timing.totalSec));
     let changed = false;
-    // Too close: drop the optional one of the pair (else the later), never a question card or the first shot.
-    for (let i = 1; i < drafts.length; i++) {
+    // Too close: drop the optional one of the pair (else the earlier), never a question card. A too-short first shot
+    // gives way too: the next visual then opens the lesson from 0s.
+    for (let i = 0; i < drafts.length; i++) {
       const len = ends[i] - starts[i];
       if (!(len < LOOK_RULES.minShotSec - 0.05) || drafts[i].shot.type === 'question') continue;
       const next = drafts[i + 1];

@@ -111,7 +111,7 @@ function noteBuildProblems(review: LessonReview, sb: Storyboard, plan: ShotPlan,
     const list = (review.storyboard.notes[String(act)] ??= []);
     const text = `build check, line ${turn}: ${line.replace(/^shot ?\d+:?\s*/, '')}`;
     // The same problem after a re-board meant to fix it: do not loop; leave it for a person.
-    if (list.some(x => x.done && x.text === text)) { rest.push(`  - act ${act}, line ${turn} (came back after a re-board; needs a person): ${line}`); continue; }
+    if (list.some(x => x.done && !x.stale && x.text === text)) { rest.push(`  - act ${act}, line ${turn} (came back after a re-board; needs a person): ${line}`); continue; }
     if (!list.some(x => !x.done && x.text === text)) list.push({text, at: now()});
     if (review.storyboard.acts) delete review.storyboard.acts[String(act)];
     acts.add(act);
@@ -133,7 +133,9 @@ export function storyboardStage(ctx: PipelineContext): void {
   const outlinePath = join(ctx.work, 'doc-outline.accepted.json');
   const log: DirectorLog[] = [];
   const sb: Storyboard | null = existsSync(sbPath) ? readJson<Storyboard>(sbPath) : null;
-  if (movePlanNotes(review) + (sb ? noteChangedLines(review, sb, inputs) : 0)) saveLessonReview(ctx.episode, review, dataRoot);
+  const stale = sb ? closeStaleBuildNotes(review, inputs, sb, catalog) : 0;
+  if (stale) console.log(`[storyboard] ${stale} build note(s) no longer reported by the build: closed`);
+  if (movePlanNotes(review) + (sb ? noteChangedLines(review, sb, inputs) : 0) + stale) saveLessonReview(ctx.episode, review, dataRoot);
   const notes = openNotes(review, 'storyboard');
   const base = {episode: ctx.episode, turns: inputs.turns, timing: inputs.timing, words: inputs.words, options: inputs.options, catalog, maps};
 
@@ -170,6 +172,43 @@ export function storyboardStage(ctx: PipelineContext): void {
   console.log(planApproved(review, sb.acts.length, 'storyboard') ? '[storyboard] approved in review (frozen)' : '[storyboard] current (add review notes to change acts)');
 }
 
+/** The storyboard built into a plan and checked (with the short-shot fallback); `problem` is the resolver's report. */
+function checkedBuild(inputs: DocInputs, sb: Storyboard, catalog: ReturnType<typeof directorCatalog>, treatments: ReturnType<typeof loadTreatments>, log: DirectorLog[] = []) {
+  const built = buildPlan({storyboard: sb, turns: inputs.turns, timing: inputs.timing, words: inputs.words, catalog, treatments, depthMaps: inputs.options.depthMaps, allowEstimated: inputs.options.allowEstimated, mapViews: inputs.options.mapViews});
+  if (built.fixes.length) log.push({stage: 'build', source: 'storyboard', issues: built.fixes});
+  if (built.warnings.length) log.push({stage: 'build warnings', source: 'storyboard', issues: built.warnings});
+  if (built.storyboardIssues.length) log.push({stage: 'storyboard needs', source: 'storyboard', issues: built.storyboardIssues});
+  const validate = (p: ShotPlan): string | null => {
+    try { resolveShotPlan(p, inputs.turns, inputs.timing, inputs.words, inputs.options); return null; } catch (e) { return e instanceof Error ? e.message : String(e); }
+  };
+  let plan: ShotPlan = built.plan;
+  let problem = validate(plan);
+  if (problem) {
+    const dropped = dropShortShots([{shots: plan.shots as never}], problem);
+    const retry = {...plan, shots: dropped.acts[0].shots as unknown as ShotPlan['shots']};
+    if (dropped.fixes.length && !validate(retry)) { plan = retry; problem = null; log.push({stage: 'build fixes', source: 'checks', issues: dropped.fixes}); }
+  }
+  return {built, plan, problem, validate};
+}
+
+/**
+ * Open "build check" notes the current builder no longer reports (a pipeline update fixed them, or the timing changed)
+ * are closed before anything is re-boarded, so stale notes never cost an act. Deterministic; no LLM.
+ */
+function closeStaleBuildNotes(review: LessonReview, inputs: DocInputs, sb: Storyboard, catalog: ReturnType<typeof directorCatalog>): number {
+  const open = Object.values(review.storyboard?.notes ?? {}).flat().filter(n => !n.done && n.text.startsWith('build check'));
+  if (!open.length) return 0;
+  const {plan, problem} = checkedBuild(inputs, sb, catalog, loadTreatments());
+  // What the build raises now: run the note routing on a copy without any build notes and read back what it adds.
+  const scratch = structuredClone(review);
+  for (const [act, list] of Object.entries(scratch.storyboard?.notes ?? {})) scratch.storyboard!.notes![act] = list.filter(n => !n.text.startsWith('build check'));
+  if (problem) noteBuildProblems(scratch, sb, plan, problem);
+  const still = new Set(Object.values(scratch.storyboard?.notes ?? {}).flat().filter(n => n.text.startsWith('build check')).map(n => n.text));
+  let closed = 0;
+  for (const n of open) if (!still.has(n.text)) { n.done = now(); n.stale = true; closed++; }
+  return closed;
+}
+
 export function buildStage(ctx: PipelineContext): void {
   if (ctx.dryRun) { console.log('[build] dry-run'); return; }
   const {inputs, catalog, io, agentDir, dataRoot} = prepare(ctx);
@@ -196,20 +235,8 @@ export function buildStage(ctx: PipelineContext): void {
   const untouched = existsSync(out) && existsSync(builtShaPath) && readFileSync(builtShaPath, 'utf8').trim() === sha(out);
   if (ctx.current('build', hash) && untouched) { console.log('[build] checkpoint current'); return; }
 
-  const built = buildPlan({storyboard: sb, turns: inputs.turns, timing: inputs.timing, words: inputs.words, catalog, treatments, depthMaps: inputs.options.depthMaps, allowEstimated: inputs.options.allowEstimated});
-  if (built.fixes.length) log.push({stage: 'build', source: 'storyboard', issues: built.fixes});
-  if (built.warnings.length) log.push({stage: 'build warnings', source: 'storyboard', issues: built.warnings});
-  if (built.storyboardIssues.length) log.push({stage: 'storyboard needs', source: 'storyboard', issues: built.storyboardIssues});
-  const validate = (p: ShotPlan): string | null => {
-    try { resolveShotPlan(p, inputs.turns, inputs.timing, inputs.words, inputs.options); return null; } catch (e) { return e instanceof Error ? e.message : String(e); }
-  };
-  let plan: ShotPlan = built.plan;
-  let problem = validate(plan);
-  if (problem) {
-    const dropped = dropShortShots([{shots: plan.shots as never}], problem);
-    const retry = {...plan, shots: dropped.acts[0].shots as unknown as ShotPlan['shots']};
-    if (dropped.fixes.length && !validate(retry)) { plan = retry; problem = null; log.push({stage: 'build fixes', source: 'checks', issues: dropped.fixes}); }
-  }
+  const {built, plan: checkedPlan, problem, validate} = checkedBuild(inputs, sb, catalog, treatments, log);
+  let plan: ShotPlan = checkedPlan;
   if (problem) {
     report(ctx, 'build.log.json', log, undefined, agentDir);
     // Closed loop: each problem goes back to the storyboard act that owns its line, as a note; the next run re-boards

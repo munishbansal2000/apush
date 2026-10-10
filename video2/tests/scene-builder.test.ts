@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import {cleanSpeech} from '../tools/pipeline/speech';
 import {mkdtempSync, readdirSync, readFileSync, writeFileSync} from 'node:fs';
 import {tmpdir} from 'node:os';
 import {join} from 'node:path';
@@ -140,5 +141,26 @@ describe('editor pass', () => {
     const {plan: edited, applied} = applyEdits(plan, [0, 1, 2], [{index: 1, framing: 'detail'}, {index: 0, drop: true}, {index: 2, drop: true}, {index: 1, framing: 'nonsense'}], {'historic/u3e1/scene-london-1760s.jpg': t});
     assert.deepEqual(applied, ['shot 1 -> detail (push)']);
     assert.equal(edited.shots.length, 3);
+  });
+});
+
+describe('scene builder: the opening and the lesson budgets', () => {
+  it('a too-short first shot gives way to the next visual; clips over the lesson budget play as moves', async () => {
+    const {buildPlan} = await import('../tools/pipeline/scene-builder');
+    const sb = fixture();
+    const first = sb.turns[0];
+    const img = first.visuals.find(v => v.kind === 'image')!;
+    // A visual a breath after the opening one: the opening one would flash for a fraction of a second.
+    const words = cleanSpeech(turns[0].text ?? '').split(/\s+/);
+    first.visuals = [{...img, at: {phrase: words.slice(0, 2).join(' ')}}, {...img, at: {phrase: words.slice(2, 4).join(' ')}}, ...first.visuals.slice(1)];
+    const clip = (phrase: string) => ({...img, kind: 'clip' as const, prompt: 'smoke drifts', at: {phrase}});
+    const r0 = buildPlan({storyboard: sb, turns, timing, words: {}, catalog, treatments: {}, allowEstimated: true});
+    assert.ok(r0.fixes.some(f => /cut too close/.test(f)), r0.fixes.join('\n'));
+    const withClips = fixture();
+    // Every visual of the long first line becomes a clip: far more than the lesson's two.
+    withClips.turns[0].visuals = withClips.turns[0].visuals.map(v => clip(String(v.at.phrase)));
+    const r = buildPlan({storyboard: withClips, turns, timing, words: {}, catalog, treatments: {}, allowEstimated: true});
+    assert.equal(r.plan.shots.filter(s => s.type === 'clip').length, 2);
+    assert.ok(r.fixes.some(f => /clip over the lesson's 2; plays as a move/.test(f)));
   });
 });

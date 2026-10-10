@@ -15,7 +15,8 @@ import {ROOT} from '../lib';
 export type Status = 'approved' | 'rejected' | 'needs-work';
 
 /** A reviewer note on an act; `shot` is the act-local reference the director sees ("shot index 4"), `ref` the contact-sheet id. */
-export interface Note {text: string; shot?: string; ref?: string; at: string; done?: string}
+/** `stale`: closed because the build stopped reporting it (not fixed by a re-board). */
+export interface Note {text: string; shot?: string; ref?: string; at: string; done?: string; stale?: boolean}
 
 /** Per-act approvals and notes (act numbers are 1-based strings). */
 export interface ActReview {acts?: Record<string, {status: Status; at: string}>; notes?: Record<string, Note[]>}

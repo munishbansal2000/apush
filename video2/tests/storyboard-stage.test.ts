@@ -128,3 +128,25 @@ describe('build stage: approval is a person\'s call', () => {
     assert.deepEqual(loadLessonReview('u9e6', join(h.root, 'data')).storyboard?.notes ?? {}, {}, 'no storyboard notes');
   });
 });
+
+describe('storyboard stage: stale build notes', () => {
+  it('closes build notes the current build no longer reports, without re-boarding', () => {
+    const h = fakeContext({episode: 'u9e5', meta: name => { throw new Error(`unexpected Meta UI call: ${name}`); }});
+    h.ctx.estimateWords = true;
+    const turns = parseTranscript(script);
+    const durations = [6, 7, 2, 10, 4];
+    const starts = durations.reduce<number[]>((acc, _, i) => [...acc, i === 0 ? 0.25 : acc[i - 1] + durations[i - 1] + 0.18], []);
+    atomicJson(join(h.ctx.dataDir, 'turns.json'), {turns});
+    atomicJson(join(h.ctx.dataDir, 'timing_map.json'), {starts, durations, totalSec: starts[4] + durations[4] + 0.6});
+    const keys = turnKeys(turns);
+    atomicJson(join(h.ctx.dataDir, 'storyboard.json'), {episode: 'u9e5', acts: outline.acts, turns: keys.map((key, index) => ({key, index,
+      visuals: index === 0 ? [map('map.atlantic-world', 'last time')] : index === 1 ? [map('map.north-america', 'the empire stretched')] : index === 4 ? [map('map.eastern-north-america', 'drawn along the mountains')] : []}))});
+    const review = loadLessonReview('u9e5', join(h.root, 'data'));
+    review.storyboard = {notes: {'1': [{text: 'build check, line 0: move 1: "london" has no region to highlight in map.atlantic-world (none)', at: 'then'}], '2': [{text: 'turn 4: a person asked for this', at: 'then'}]}};
+    saveLessonReview('u9e5', review, join(h.root, 'data'));
+    assert.throws(() => storyboardStage(h.ctx), /unexpected Meta UI call: sb-act-02-revise/, 'only the act with a real note is re-boarded');
+    const after = loadLessonReview('u9e5', join(h.root, 'data')).storyboard!.notes!;
+    assert.ok(after['1'][0].done && after['1'][0].stale, 'stale build note closed');
+    assert.ok(!after['2'][0].done, 'a person\'s note stays open');
+  });
+});
