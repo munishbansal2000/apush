@@ -1,16 +1,17 @@
- Tab 7, src/kit/guard.tsx:292  [kit-layout-ok] {"frame":639,"tracks":{"shots":[0,0,1,1],"bg:grain":[0,0,1,1]}}
- Tab 1, src/kit/guard.tsx:292  [kit-layout-ok] {"frame":641,"tracks":{"shots":[0,0,1,1],"bg:grain":[0,0,1,1]}}
-C:\Users\munis\projects\apush2\apush\video2\tools\pipeline\stages\doc.ts:199
-      throw new Error(blocking.length ? `segment ${n + 1}: layout guard failed:\n${formatLayoutIssues(blocking)}` : `segment ${n + 1}: layout guard measured ${measured.size} of ${to - from + 1} frames`);
-            ^
+ Tab 0, src/kit/guard.tsx:292  [kit-layout-ok] {"frame":23550,"tracks":{"shots":[0,0,1,1],"bg:grain":[0,0,1,1],"chrome:box-tracker":[0.73,0.05,0.95,0.255]}}
+ Tab 0, src/kit/guard.tsx:292  [kit-layout-ok] {"frame":23645,"tracks":{"shots":[0,0,1,1],"bg:grain":[0,0,1,1],"chrome:box-tracker":[0.73,0.05,0.95,0.255]}}
+[contact] 388 stills -> out\u3e1-contact.png; 16 layout issue(s)
+C:\Users\munis\projects\apush2\apush\video2\tools\pipeline\stages\doc.ts:171
+  if (blocking.length) throw new Error(`contact sheet layout guard failed:\n${formatLayoutIssues(blocking)}`);
+                             ^
 
-Error: segment 1: layout guard failed:
-  - frame 410: overlap shots x shots#map label: Great Britain×chrome:year-1763 - "map label: Great Britain" is under/over chrome:year-1763
-  - frame 410: overlap shots x shots#map label: Great Britain×chrome:year-1763#year - "map label: Great Britain" overlaps "year"
-  - frame 411: overlap shots x shots#map label: Great Britain×chrome:year-1763 - "map label: Great Britain" is under/over chrome:year-1763
-  - frame 411: overlap shots x shots#map label: Great Britain×chrome:year-1763#year - "map label: Great Britain" overlaps "year"
-    at docRenderStage (C:\Users\munis\projects\apush2\apush\video2\tools\pipeline\stages\doc.ts:199:13)
-    at async runPipeline (C:\Users\munis\projects\apush2\apush\video2\tools\pipeline\run.ts:80:12)
+Error: contact sheet layout guard failed:
+  - frames 14576-14579 (4): overlap chrome:year-1760 x chrome:year-1761 - overlaps chrome:year-1761 (27.6% × 30.8%)
+  - frames 14576-14579 (4): overlap chrome:year-1760 x chrome:year-1760#year×chrome:year-1761 - "year" is under/over chrome:year-1761
+  - frames 14576-14579 (4): overlap chrome:year-1761 x chrome:year-1761#year×chrome:year-1760 - "year" is under/over chrome:year-1760
+  - frames 14576-14579 (4): overlap chrome:year-1760 x chrome:year-1760#year×chrome:year-1761#year - "year" overlaps "year"
+    at docContactStage (C:\Users\munis\projects\apush2\apush\video2\tools\pipeline\stages\doc.ts:171:30)
+    at async runPipeline (C:\Users\munis\projects\apush2\apush\video2\tools\pipeline\run.ts:73:12)
     at async <anonymous> (C:\Users\munis\projects\apush2\apush\video2\tools\video-pipeline.ts:18:3)
 
 Node.js v24.18.0
