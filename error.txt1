@@ -1,21 +1,73 @@
- Tab 0, src/kit/guard.tsx:292  [kit-layout-ok] {"frame":14475,"tracks":{"shots":[0,0,1,1],"bg:grain":[0,0,1,1],"chrome:box-tracker":[0.73,0.05,0.95,0.255]}}
- Tab 0, src/kit/guard.tsx:292  [kit-layout-ok] {"frame":14410,"tracks":{"shots":[0,0,1,1],"bg:grain":[0,0,1,1],"chrome:box-tracker":[0.73,0.05,0.95,0.255]}}
- http://localhost:3008/public/fonts/libre-baskerville-400-normal.woff2  Failed to load resource: net::ERR_CONNECTION_RESET
- http://localhost:3008/public/fonts/libre-baskerville-700-normal.woff2  Failed to load resource: net::ERR_CONNECTION_RESET
- http://localhost:3008/public/fonts/libre-baskerville-400-italic.woff2  Failed to load resource: net::ERR_CONNECTION_RESET
- http://localhost:3008/public/fonts/plus-jakarta-sans-400-normal.woff2  Failed to load resource: net::ERR_CONNECTION_RESET
- http://localhost:3008/public/fonts/cinzel-700-normal.woff2  Failed to load resource: net::ERR_CONNECTION_RESET
- Tab 0, src/kit/guard.tsx:292  [kit-layout-ok] {"frame":14571,"tracks":{"shots":[0,0,1,1],"bg:grain":[0,0,1,1],"chrome:box-tracker":[0.73,0.05,0.95,0.255]}}
- Tab 0, src/kit/guard.tsx:292  [kit-layout-ok] {"frame":14573,"tracks":{"shots":[0,0,1,1],"bg:grain":[0,0,1,1],"chrome:year-1760–1761":[0.347,0.421,0.68,0.579],"chrome:box-tracker":[0.73,0.05,0.95,0.255]}}
-node:internal/modules/run_main:107
-    triggerUncaughtException(
-    ^
+  [META DOWNLOAD] no text from download/Share yet (downloadedFiles=0), falling back to copy
+  [META COPY SUCCESS] Copied via message action copy button (button[aria-label="Copy response"]): 1965 chars
+[storyboard] act 8/8 repair 2 generated + LLM-audited; 0 generation(s) remaining
+[storyboard] act 6/8 repair 2 validating locally; 2 validation(s) remaining
+[storyboard] act 6/8 valid; 1 validation(s) remaining
+[storyboard] act 8/8 repair 2 validating locally; 1 validation(s) remaining
+[storyboard] act 8/8 valid; 0 validation(s) remaining
+[storyboard] 8/8 acts locally valid; checking lesson-wide coherence and budgets
+[storyboard] lesson-wide validation passed; storyboard complete
+  [storyboard act 6] 1 item(s):
+    - turn 47: more than 3 maps in a row; break the run with a picture
+  [storyboard act 7] 1 item(s):
+    - turn 52 visual 2: "the Stamp Act." appears 2 times in the line; give "occurrence" or a longer phrase
+  [storyboard act 8] 3 item(s):
+    - "historic/u3e2/object-stamp-act-congress-medal.jpg" is used 4 times in this act; at most 2 here (the lesson shares it with other acts)
+    - turn 65: more than 3 maps in a row; break the run with a picture
+    - turn 66: more than 3 maps in a row; break the run with a picture
+  [storyboard act 6 repair 1] 1 item(s):
+    - turn 49: more than 3 maps in a row; break the run with a picture
+  [storyboard act 8 repair 1] 2 item(s):
+    - "historic/u3e2/object-stamp-act-congress-medal.jpg" is used 4 times in this act; at most 2 here (the lesson shares it with other acts)
+    - turn 65 visual 2: lands before the previous visual in the same line
+  [storyboard] 8 item(s):
+    - turn 27 (18s): 1 visual(s); a line this long needs about 2 (the build can split one image into framings)
+    - turn 37 (27s): 2 visual(s); a line this long needs about 3 (the build can split one image into framings)
+    - turn 38 (11s): no visual of its own and none spanning into it
+    - turn 62 (26s): 2 visual(s); a line this long needs about 3 (the build can split one image into framings)
+    - turn 65 (18s): 1 visual(s); a line this long needs about 2 (the build can split one image into framings)
+    - map view "map.thirteen-colonies" appears 15 times in the lesson (turns 0, 1, 5, 7, 15, 18, 24, 24, 31, 32, 42, 44, 52, 60, 62); consider varying it
+    - map view "map.atlantic-world" appears 15 times in the lesson (turns 0, 4, 7, 11, 19, 20, 21, 27, 29, 37, 43, 56, 58, 60, 69); consider varying it
+    - map view "map.eastern-north-america" appears 7 times in the lesson (turns 23, 32, 33, 43, 47, 60, 65); consider varying it
+[storyboard] 115 visuals -> data\u3e2\storyboard.json
+[build] 24 treatment(s) proposed -> data/library/treatments.json (check: npm run storyboard -- u3e2 framings)
+  [build] 40 item(s):
+    - turn 28: added the missing question card for the 10s pause
+    - turn 48: added the missing question card for the 10s pause
+    - turn 61: added the missing question card for the 10s pause
+    - turn 64: added the missing question card for the 10s pause
+    - turn 67: added the missing question card for the 10s pause
+    - dropped "desk drawer" (turn 1): cut too close to the next
+    - dropped "london was taxing" (turn 7): cut too close to the next
+    - dropped "nine colonies" (turn 19): cut too close to the next
+  [build warnings] 18 item(s):
+    - turn 0: "place.london" has no region in map.atlantic-world; moved there without a highlight
+    - turn 4: "place.london" has no region in map.atlantic-world; moved there without a highlight
+    - turn 7: "london" has no region in map.atlantic-world; moved there without a highlight
+    - turn 11: "boston" has no region in map.new-england; moved there without a highlight
+    - turn 19: "new-york" has no region in map.hudson-corridor; moved there without a highlight
+    - turn 27: "colonies" has no region in map.atlantic-world; moved there without a highlight
+    - turn 27: "london" has no region in map.atlantic-world; moved there without a highlight
+    - turn 29: "place.london" has no region in map.atlantic-world; moved there without a highlight
+  [storyboard needs] 21 item(s):
+    - turn 8: a 11.0s hold needs another visual (no phrase to split on)
+    - turn 8: a 11.0s hold needs another visual (no phrase to split on)
+    - turn 8: a 11.0s hold needs another visual (no phrase to split on)
+    - turn 8: a 11.0s hold needs another visual (no phrase to split on)
+    - turn 8: a 11.0s hold needs another visual (no phrase to split on)
+    - turn 8: a 11.0s hold needs another visual (no phrase to split on)
+    - turn 8: a 11.0s hold needs another visual (no phrase to split on)
+    - turn 8: a 11.0s hold needs another visual (no phrase to split on)
+C:\Users\munis\projects\apush2\apush\video2\tools\pipeline\stages\storyboard.ts:248
+      throw new Error(`build: ${noted.count} problem(s) sent back to storyboard act(s) ${noted.acts.join(', ')} as review notes; run again to re-board them${noted.rest.length ? `\nfor a person:\n${noted.rest.join('\n')}` : ''}`);
+            ^
 
-NetworkError: A network error occurred.
-    at cancelRenderInternal (http://localhost:3008/bundle.js:33166:21)
-    at cancelRender (http://localhost:3008/bundle.js:33179:10)
-    at http://localhost:3008/bundle.js:10841:83
+Error: build: 4 problem(s) sent back to storyboard act(s) 2, 5, 7 as review notes; run again to re-board them
+    at buildStage (C:\Users\munis\projects\apush2\apush\video2\tools\pipeline\stages\storyboard.ts:248:13)
+    at runPipeline (C:\Users\munis\projects\apush2\apush\video2\tools\pipeline\run.ts:50:33)
+    at <anonymous> (C:\Users\munis\projects\apush2\apush\video2\tools\video-pipeline.ts:18:9)
+    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)
+    at async node:internal/modules/esm/loader:643:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)
 
 Node.js v24.18.0
-
-C:\Users\munis\projects\apush2\apush\video2>
