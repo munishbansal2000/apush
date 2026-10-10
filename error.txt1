@@ -1,66 +1,21 @@
-Tab 8, src/kit/guard.tsx:292  [kit-layout-ok] {"frame":3684,"tracks":{"shots":[0,0,1,1],"bg:grain":[0,0,1,1],"chrome:box-tracker":[0.73,0.05,0.95,0.255]}}
- Tab 11, src/kit/guard.tsx:292  [kit-layout-ok] {"frame":3685,"tracks":{"shots":[0,0,1,1],"bg:grain":[0,0,1,1],"chrome:box-tracker":[0.73,0.05,0.95,0.255]}}
- Tab 2, src/kit/guard.tsx:292  [kit-layout-ok] {"frame":3686,"tracks":{"shots":[0,0,1,1],"bg:grain":[0,0,1,1],"chrome:box-tracker":[0.73,0.05,0.95,0.255]}}
-Could not extract frame from compositor Error: Compositor error: No frame found at position 20890 for source C:\Users\munis\AppData\Local\Temp\remotion-v4.0.534-assetsy5tfzupip9\remotion-assets-dir\6860512567218393.mp4 (original source = http://localhost:3002/public/clips/u3e1/7e36affae364eeb3a1a220ba.boomerang.mp4). See https://remotion.dev/docs/troubleshooting/no-frame-found-at-position for troubleshooting help.
-   0: std::backtrace::Backtrace::force_capture
-   1: <remotion::errors::ErrorWithBacktrace as core::convert::From<std::io::error::Error>>::from
-   2: remotion::opened_video_manager::OpenedVideoManager::get_frame_id
-   3: remotion::thread::WorkerThread::run_on_thread
-   4: std::sys::backtrace::__rust_begin_short_backtrace
-   5: core::ops::function::FnOnce::call_once{{vtable.shim}}
-   6: std::sys::thread::windows::Thread::new::thread_start
-   7: <unknown>
-   8: <unknown>
-
- http://localhost:3002/proxy?src=http%3A%2F%2Flocalhost%3A3002%2Fpublic%2Fclips%2Fu3e1%2F7e36affae364eeb3a1a220ba.boomerang.mp4&time=1.7&transparent=false&toneMapped=true  Failed to load resource: the server responded with a status of 500 (Internal Server Error)
-Could not extract frame from compositor Error: Request closed
-Could not extract frame from compositor Error: Request closed
-Could not extract frame from compositor Error: Request closed
-Could not extract frame from compositor Error: Request closed
-Could not extract frame from compositor Error: Request closed
+ Tab 0, src/kit/guard.tsx:292  [kit-layout-ok] {"frame":14475,"tracks":{"shots":[0,0,1,1],"bg:grain":[0,0,1,1],"chrome:box-tracker":[0.73,0.05,0.95,0.255]}}
+ Tab 0, src/kit/guard.tsx:292  [kit-layout-ok] {"frame":14410,"tracks":{"shots":[0,0,1,1],"bg:grain":[0,0,1,1],"chrome:box-tracker":[0.73,0.05,0.95,0.255]}}
+ http://localhost:3008/public/fonts/libre-baskerville-400-normal.woff2  Failed to load resource: net::ERR_CONNECTION_RESET
+ http://localhost:3008/public/fonts/libre-baskerville-700-normal.woff2  Failed to load resource: net::ERR_CONNECTION_RESET
+ http://localhost:3008/public/fonts/libre-baskerville-400-italic.woff2  Failed to load resource: net::ERR_CONNECTION_RESET
+ http://localhost:3008/public/fonts/plus-jakarta-sans-400-normal.woff2  Failed to load resource: net::ERR_CONNECTION_RESET
+ http://localhost:3008/public/fonts/cinzel-700-normal.woff2  Failed to load resource: net::ERR_CONNECTION_RESET
+ Tab 0, src/kit/guard.tsx:292  [kit-layout-ok] {"frame":14571,"tracks":{"shots":[0,0,1,1],"bg:grain":[0,0,1,1],"chrome:box-tracker":[0.73,0.05,0.95,0.255]}}
+ Tab 0, src/kit/guard.tsx:292  [kit-layout-ok] {"frame":14573,"tracks":{"shots":[0,0,1,1],"bg:grain":[0,0,1,1],"chrome:year-1760–1761":[0.347,0.421,0.68,0.579],"chrome:box-tracker":[0.73,0.05,0.95,0.255]}}
 node:internal/modules/run_main:107
     triggerUncaughtException(
     ^
 
-SymbolicateableError: Compositor error: No frame found at position 20890 for source C:\Users\munis\AppData\Local\Temp\remotion-v4.0.534-assetsy5tfzupip9\remotion-assets-dir\6860512567218393.mp4 (original source = http://localhost:3002/public/clips/u3e1/7e36affae364eeb3a1a220ba.boomerang.mp4). See https://remotion.dev/docs/troubleshooting/no-frame-found-at-position for troubleshooting help.
-   0: std::backtrace::Backtrace::force_capture
-   1: <remotion::errors::ErrorWithBacktrace as core::convert::From<std::io::error::Error>>::from
-   2: remotion::opened_video_manager::OpenedVideoManager::get_frame_id
-   3: remotion::thread::WorkerThread::run_on_thread
-   4: std::sys::backtrace::__rust_begin_short_backtrace
-   5: core::ops::function::FnOnce::call_once{{vtable.shim}}
-   6: std::sys::thread::windows::Thread::new::thread_start
-   7: <unknown>
-   8: <unknown>
+NetworkError: A network error occurred.
+    at cancelRenderInternal (http://localhost:3008/bundle.js:33166:21)
+    at cancelRender (http://localhost:3008/bundle.js:33179:10)
+    at http://localhost:3008/bundle.js:10841:83
 
-    at onMessage (file:///C:/Users/munis/projects/apush2/apush/video2/node_modules/@remotion/renderer/dist/esm/index.mjs:16853:37)
-    at processInput (file:///C:/Users/munis/projects/apush2/apush/video2/node_modules/@remotion/streaming/dist/esm/index.mjs:137:5)
-    at onDataInner (file:///C:/Users/munis/projects/apush2/apush/video2/node_modules/@remotion/streaming/dist/esm/index.mjs:183:12)
-    at Socket.onData (file:///C:/Users/munis/projects/apush2/apush/video2/node_modules/@remotion/streaming/dist/esm/index.mjs:188:14)
-    at Socket.emit (node:events:509:28)
-    at addChunk (node:internal/streams/readable:563:12)
-    at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
-    at Readable.push (node:internal/streams/readable:394:5)
-    at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
-    at onMessage (file:///C:/Users/munis/projects/apush2/apush/video2/node_modules/@remotion/renderer/dist/esm/index.mjs:16853:37)
-    at processInput (file:///C:/Users/munis/projects/apush2/apush/video2/node_modules/@remotion/streaming/dist/esm/index.mjs:137:5)
-    at onDataInner (file:///C:/Users/munis/projects/apush2/apush/video2/node_modules/@remotion/streaming/dist/esm/index.mjs:183:12)
-    at Socket.onData (file:///C:/Users/munis/projects/apush2/apush/video2/node_modules/@remotion/streaming/dist/esm/index.mjs:188:14)
-    at Socket.emit (node:events:509:28)
-    at addChunk (node:internal/streams/readable:563:12)
-    at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
-    at Readable.push (node:internal/streams/readable:394:5)
-    at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
-    at execute (http://localhost:3002/bundle.js:46335:21) {
-  stackFrame: [
-    {
-      columnNumber: 20,
-      fileName: 'http://localhost:3002/bundle.js',
-      functionName: 'execute',
-      lineNumber: 46334
-    }
-  ],
-  delayRenderCall: null,
-  frame: 3675,
-  chunk: null
-}
+Node.js v24.18.0
+
+C:\Users\munis\projects\apush2\apush\video2>
