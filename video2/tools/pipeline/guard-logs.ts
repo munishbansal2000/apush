@@ -17,6 +17,16 @@ export const guardHeartbeat = (text: string): number | null => {
   return Number.isFinite(frame) ? frame : null;
 };
 export const blockingLayoutIssues = (issues: LayoutIssue[]) => issues.filter(issue => issue.kind !== 'unsafe');
-export const formatLayoutIssues = (issues: LayoutIssue[]) => issues.slice(0, 12).map(issue =>
-  `  - frame ${issue.frame}: ${issue.kind} ${issue.id}${issue.other ? ` x ${issue.other}` : ''}${issue.detail ? ` - ${issue.detail}` : ''}`,
-).join('\n');
+/** One line per distinct problem (kind, element, other element) with the frames it covers; at most `max` lines. */
+export const formatLayoutIssues = (issues: LayoutIssue[], max = 20) => {
+  const groups = new Map<string, {issue: LayoutIssue; frames: number[]}>();
+  for (const issue of issues) {
+    const key = `${issue.kind}|${issue.id}|${issue.other ?? ''}`;
+    const g = groups.get(key) ?? {issue, frames: []};
+    g.frames.push(issue.frame);
+    groups.set(key, g);
+  }
+  const span = (f: number[]) => { const s = [...f].sort((a, b) => a - b); return s.length === 1 ? `frame ${s[0]}` : `frames ${s[0]}-${s[s.length - 1]} (${s.length})`; };
+  const lines = [...groups.values()].map(({issue, frames}) => `  - ${span(frames)}: ${issue.kind} ${issue.id}${issue.other ? ` x ${issue.other}` : ''}${issue.detail ? ` - ${issue.detail}` : ''}`);
+  return [...lines.slice(0, max), ...(lines.length > max ? [`  ... and ${lines.length - max} more (see the layout report)`] : [])].join('\n');
+};

@@ -24,6 +24,7 @@ import {directStoryboard, storySelfCheckFor} from '../storyboard-director';
 import {loadTreatments, proposeTreatment, saveTreatments} from '../treatments';
 import {readCheckedWords} from './words';
 import {mapImages} from '../image-map';
+import {predictLayout} from '../layout-precheck';
 
 const sha = (path: string) => sha256(readFileSync(path));
 const turnsHash = (turns: {id: string; kind: string; text?: string}[]) => sha256(JSON.stringify(turns.map(t => [t.id, t.kind, t.text ?? ''])));
@@ -253,6 +254,13 @@ export function buildStage(ctx: PipelineContext): void {
     report(ctx, 'build.log.json', log, edited.pending.length ? edited.pending : undefined, agentDir);
     plan = edited.plan;
   } else report(ctx, 'build.log.json', log, undefined, agentDir);
+  // Layout pre-check (no browser): predicted collisions are logged; the contact sheet renders those frames to confirm.
+  try {
+    const predicted = predictLayout(resolveShotPlan(plan, inputs.turns, inputs.timing, inputs.words, inputs.options));
+    atomicJson(join(ctx.work, 'layout-precheck.json'), {episode: ctx.episode, at: now(), ...predicted});
+    console.log(`[build] layout pre-check: ${predicted.collisions.length} predicted collision(s); ${predicted.riskFrames.length} frame(s) for the contact sheet to check`);
+    for (const c of predicted.collisions.slice(0, 10)) console.log(`    ~ frames ${c.frames[0]}-${c.frames[1]}: ${c.a} x ${c.b}`);
+  } catch (e) { console.log(`[build] layout pre-check skipped: ${e instanceof Error ? e.message : String(e)}`); }
   atomicJson(out, {_doc: `Built from data/${ctx.episode}/storyboard.json ${now()}`, ...plan, acts: sb.acts});
   writeFileSync(builtShaPath, `${sha(out)}\n`);
   ctx.mark('build', hash);

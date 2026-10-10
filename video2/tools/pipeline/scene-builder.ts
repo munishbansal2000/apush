@@ -270,11 +270,17 @@ export function buildPlan(input: BuildInputs): BuildResult {
     fixes.push(`turn ${(d.shot.at as Cue).turn}: "${String(String(d.shot.image)).split('/').pop()}" switched to ${alt.name} (${alt.framing.move}) for variety`);
   }
 
+  // A year stamp marks a new year: each year is stamped once, where it is first said (repeats are noise).
+  const stamped = new Set<string>();
   const years = (sb.years ?? []).flatMap(y => {
     const index = indexOf.get(y.key);
     const at = index === undefined ? null : cue(index, y.phrase);
     if (!at) { storyboardIssues.push(`year ${y.text}: its line changed or "${y.phrase}" is not in it`); return []; }
-    return [{at, text: y.text}];
+    return [{at, text: y.text, index: index!}];
+  }).sort((a, b) => a.index - b.index).flatMap(({at, text}) => {
+    if (stamped.has(text)) { fixes.push(`turn ${at.turn}: year ${text} already stamped; not again`); return []; }
+    stamped.add(text);
+    return [{at, text}];
   });
   const shots = drafts.map(d => {
     const {framing: _f, ...rest} = d.shot as Record<string, unknown>;

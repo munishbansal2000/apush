@@ -3,6 +3,7 @@
  * guard), render (segmented, cached video + one full audio mix, assembled). Used by video-pipeline.ts and the
  * standalone doc-direct / doc-clips / doc-render tools, so there is one implementation.
  */
+import {predictLayout} from '../layout-precheck';
 import {execFileSync, spawnSync} from 'node:child_process';
 import {existsSync, mkdirSync, readdirSync, readFileSync, renameSync, rmSync, unlinkSync, writeFileSync} from 'node:fs';
 import {join, relative} from 'node:path';
@@ -144,10 +145,15 @@ export async function docContactStage(ctx: DocRenderContext, inputs: DocInputs, 
   const lastFrame = Math.min(composition.durationInFrames - 1, Math.round(Math.min(resolved.endSec, limitSec) * fps) - 1);
   const stills = join(ctx.work, 'doc-stills');
   rmSync(stills, {recursive: true, force: true}); mkdirSync(stills, {recursive: true});
-  const samples = resolved.shots.flatMap(s => [
+  const perShot = resolved.shots.flatMap(s => [
     {label: `${s.id} ${s.type} start`, frame: Math.round((s.startSec + 0.7) * fps)},
     {label: `${s.id} ${s.type} end`, frame: Math.round((s.endSec - 0.4) * fps)},
-  ]).filter(s => s.frame >= 0 && s.frame <= lastFrame);
+  ]);
+  // Plus the frames the layout pre-check flags: predicted collisions and every moment something moves on screen
+  // (year stamp slams, NOW entrances, sheet transitions), which two stills per shot would miss.
+  const risky = predictLayout(resolved, fps).riskFrames.map(r => ({label: `risk: ${r.why}`, frame: r.frame}));
+  const taken = new Set<number>();
+  const samples = [...perShot, ...risky].filter(s => s.frame >= 0 && s.frame <= lastFrame && !taken.has(s.frame) && taken.add(s.frame)).sort((a, b) => a.frame - b.frame);
   const issues: LayoutIssue[] = [];
   for (const [i, sample] of samples.entries()) {
     let measured = false;
@@ -182,6 +188,9 @@ export async function docRenderStage(ctx: DocRenderContext, inputs: DocInputs, r
   const segments = planSegments(resolved.shots, inputs.timing.totalSec).filter(s => s.startSec < totalSec);
   const files: string[] = [];
   let rendered = 0;
+  // Every segment is rendered and checked; problems are collected so one run reports all of them. Failed segments are
+  // not cached, so after a fix only they render again.
+  const failed: {segment: number; frames: [number, number]; issues: LayoutIssue[]; unmeasured?: number}[] = [];
   for (const [n, seg] of segments.entries()) {
     const from = Math.round(seg.startSec * fps);
     const to = Math.min(composition.durationInFrames, Math.round(Math.min(seg.endSec, totalSec) * fps)) - 1;
@@ -196,12 +205,20 @@ export async function docRenderStage(ctx: DocRenderContext, inputs: DocInputs, r
     const blocking = blockingLayoutIssues(issues);
     if (blocking.length || measured.size < to - from + 1) {
       unlinkSync(file);
-      throw new Error(blocking.length ? `segment ${n + 1}: layout guard failed:\n${formatLayoutIssues(blocking)}` : `segment ${n + 1}: layout guard measured ${measured.size} of ${to - from + 1} frames`);
+      failed.push({segment: n + 1, frames: [from, to], issues: blocking, ...(blocking.length ? {} : {unmeasured: to - from + 1 - measured.size})});
+      console.log(`[render] segment ${n + 1}/${segments.length}: frames ${from}-${to} FAILED (${blocking.length ? `${blocking.length} layout issue(s)` : `${to - from + 1 - measured.size} frame(s) not measured`}); continuing`);
+      continue;
     }
     cache[file] = key;
     atomicJson(cachePath, cache);
     rendered++;
     console.log(`[render] segment ${n + 1}/${segments.length}: frames ${from}-${to}`);
+  }
+  if (failed.length) {
+    const report = join(ctx.outDir, `${ctx.episode}-render-layout.json`);
+    atomicJson(report, {episode: ctx.episode, checkedAt: new Date().toISOString(), failed});
+    throw new Error(`render: ${failed.length} of ${segments.length} segment(s) failed the layout guard (all listed in ${relative(ROOT, report)}); the others are saved:\n${failed.map(f =>
+      f.issues.length ? `segment ${f.segment} (frames ${f.frames[0]}-${f.frames[1]}):\n${formatLayoutIssues(f.issues)}` : `segment ${f.segment}: ${f.unmeasured} frame(s) not measured by the guard`).join('\n')}`);
   }
   for (const name of readdirSync(segDir)) if (!files.includes(join(segDir, name))) unlinkSync(join(segDir, name));
   // One audio pass for the whole episode: narration, ducked music and sound cues, exactly as the composition mixes them.
