@@ -1,35 +1,25 @@
-[storyboard] lesson-wide validation passed; storyboard complete
-  [storyboard act 3] 1 item(s):
-    - turn 18 visual 1: "The line." appears 2 times in the line; give "occurrence" or a longer phrase
-  [storyboard] 7 item(s):
-    - map view "map.thirteen-colonies" appears 5 times in the lesson (turns 0, 5, 9, 11, 19); consider varying it
-    - map view "map.atlantic-world" appears 8 times in the lesson (turns 0, 5, 9, 20, 29, 44, 50, 61); consider varying it
-    - map view "map.north-america" appears 6 times in the lesson (turns 1, 26, 32, 33, 59, 66); consider varying it
-    - map view "map.eastern-north-america" appears 8 times in the lesson (turns 15, 25, 28, 29, 38, 42, 52, 64); consider varying it
-    - map view "map.ohio-valley" appears 6 times in the lesson (turns 18, 19, 27, 33, 40, 56); consider varying it
-    - map view "map.great-lakes" appears 5 times in the lesson (turns 42, 47, 54, 62, 64); consider varying it
-    - turn 50: 2 points in a row across acts
-[storyboard] 163 visuals -> data\u3e1\storyboard.json
-[build] 62 treatment(s) proposed -> data/library/treatments.json (check: npm run storyboard -- u3e1 framings)
-  [build] 21 item(s):
-    - turn 17: added the missing question card for the 10s pause
-    - turn 31: added the missing question card for the 10s pause
-    - turn 57: added the missing question card for the 10s pause
-    - turn 60: added the missing question card for the 10s pause
-    - turn 63: added the missing question card for the 10s pause
-    - dropped "london drew it" (turn 18): cut too close to the next
-    - dropped "cheap answer to" (turn 58): cut too close to the next
-    - dropped "around the great lakes" (turn 42): the explainer before it needs 5s
-C:\Users\munis\projects\apush2\apush\video2\tools\pipeline\stages\storyboard.ts:220
-      throw new Error(`build: ${noted.count} problem(s) sent back to storyboard act(s) ${noted.acts.join(', ')} as review notes; run again to re-board them${noted.rest.length ? `\nfor a person:\n${noted.rest.join('\n')}` : ''}`);
-            ^
+[contact] 346 stills -> out\u3e1-contact.png; 12 layout issue(s)
+C:\Users\munis\projects\apush2\apush\video2\tools\pipeline\stages\doc.ts:165
+  if (blocking.length) throw new Error(`contact sheet layout guard failed:\n${formatLayoutIssues(blocking)}`);
+                             ^
 
-Error: build: 33 problem(s) sent back to storyboard act(s) 1, 2, 3, 4, 5, 6, 7, 8 as review notes; run again to re-board them
-    at buildStage (C:\Users\munis\projects\apush2\apush\video2\tools\pipeline\stages\storyboard.ts:220:13)
-    at runPipeline (C:\Users\munis\projects\apush2\apush\video2\tools\pipeline\run.ts:50:33)
-    at <anonymous> (C:\Users\munis\projects\apush2\apush\video2\tools\video-pipeline.ts:18:9)
-    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)
-    at async node:internal/modules/esm/loader:643:26
-    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)
+Error: contact sheet layout guard failed:
+  - frame 14592: overlap chrome:year-1760 x chrome:year-1761 - overlaps chrome:year-1761 (27.4% × 32.4%)
+  - frame 14592: overlap chrome:year-1760 x chrome:year-1760#year×chrome:year-1761 - "year" is under/over chrome:year-1761
+  - frame 14592: overlap chrome:year-1761 x chrome:year-1761#year×chrome:year-1760 - "year" is under/over chrome:year-1760
+  - frame 14592: overlap chrome:year-1760 x chrome:year-1760#year×chrome:year-1761#year - "year" overlaps "year"
+  - frame 14646: overlap chrome:year-1760 x chrome:year-1761 - overlaps chrome:year-1761 (8.5% × 8.9%)
+  - frame 14646: overlap chrome:year-1760 x chrome:year-1760#year×chrome:year-1761 - "year" is under/over chrome:year-1761
+  - frame 14646: overlap chrome:year-1761 x chrome:year-1761#year×chrome:year-1760 - "year" is under/over chrome:year-1760
+  - frame 14646: overlap chrome:year-1760 x chrome:year-1760#year×chrome:year-1761#year - "year" overlaps "year"
+  - frame 14679: overlap chrome:year-1760 x chrome:year-1761 - overlaps chrome:year-1761 (8.5% × 8.9%)
+  - frame 14679: overlap chrome:year-1760 x chrome:year-1760#year×chrome:year-1761 - "year" is under/over chrome:year-1761
+  - frame 14679: overlap chrome:year-1761 x chrome:year-1761#year×chrome:year-1760 - "year" is under/over chrome:year-1760
+  - frame 14679: overlap chrome:year-1760 x chrome:year-1760#year×chrome:year-1761#year - "year" overlaps "year"
+    at docContactStage (C:\Users\munis\projects\apush2\apush\video2\tools\pipeline\stages\doc.ts:165:30)
+    at async runPipeline (C:\Users\munis\projects\apush2\apush\video2\tools\pipeline\run.ts:73:12)
+    at async <anonymous> (C:\Users\munis\projects\apush2\apush\video2\tools\video-pipeline.ts:18:3)
 
 Node.js v24.18.0
+
+C:\Users\munis\projects\apush2\apush\video2>npx tsx tools\video-pipeline.ts --episode u3e1 --from words --full --draft --skip images
