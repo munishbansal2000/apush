@@ -1,776 +1,592 @@
 {
- "lesson": "u3e11",
- "image_count": 85,
- "images": [
-  {
-   "id": "portrait.thomas-jefferson-peale-1791",
-   "title": "Thomas Jefferson, 1791, by Charles Willson Peale",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/4/46/T_Jefferson_by_Charles_Willson_Peale_1791_2.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Official_Presidential_portrait_of_Thomas_Jefferson_%28by_Rembrandt_Peale%2C_1800%29.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "portrait.thomas-jefferson-stuart-medallion",
-   "title": "Thomas Jefferson, 'Medallion' portrait, by Gilbert Stuart",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Gilbert_Stuart_-_Thomas_Jefferson_%281743-1826%29_%28The_Medallion_Portrait%29_-_1960.156_-_Fogg_Museum.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Thomas_Jefferson_by_Peale_%28cropped%29.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "portrait.john-adams-stuart",
-   "title": "John Adams, c. 1800-1815, by Gilbert Stuart (National Gallery of Art)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Gilbert_Stuart%2C_John_Adams%2C_c._1800-1815%2C_NGA_42933.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/3/30/John_Singleton_Copley_-_John_Adams_-_23.180_-_Museum_of_Fine_Arts.jpg",
-   "source": "nga",
-   "verified": true
-  },
-  {
-   "id": "portrait.aaron-burr-vanderlyn",
-   "title": "Aaron Burr, by John Vanderlyn (official vice-presidential portrait)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/8/85/John_Vanderlyn_-_Official_Portrait_of_Vice_President_Aaron_Burr.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Aaron_Burr_Portrait_%28cropped%29.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "portrait.aaron-burr-miniature-met",
-   "title": "Aaron Burr, miniature (Metropolitan Museum of Art)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Aaron_Burr_MET_APS6780.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/8/85/John_Vanderlyn_-_Official_Portrait_of_Vice_President_Aaron_Burr.jpg",
-   "source": "met",
-   "verified": true
-  },
-  {
-   "id": "portrait.aaron-burr-appletons",
-   "title": "Aaron Burr, engraved portrait (Appletons')",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Appletons%27_Burr_Aaron_-_Theodosia.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Aaron_Burr_Portrait_%28cropped%29.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "portrait.alexander-hamilton-trumbull",
-   "title": "Alexander Hamilton, 1792, by John Trumbull",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Google_Arts_Project_-_Alexander_Hamilton_%281792_portrait%29_by_John_Trumbull.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Alexander_Hamilton_MET_57709.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "portrait.alexander-hamilton-sharples",
-   "title": "Alexander Hamilton, pastel by James Sharples (Metropolitan Museum of Art)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Alexander_Hamilton_MET_57709.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Alexander_Hamilton_MET_ap24.109.98.jpg",
-   "source": "met",
-   "verified": true
-  },
-  {
-   "id": "portrait.james-bayard",
-   "title": "James A. Bayard of Delaware (Library of Congress)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/5/59/James_Asheton_Bayard%2C_head-and-shoulders_portrait%2C_right_profile_LCCN2007676941.jpg",
-   "alt_url": "https://cdn.loc.gov/service/pnp/pga/13200/13255v.jpg",
-   "source": "loc",
-   "verified": true
-  },
-  {
-   "id": "portrait.john-marshall",
-   "title": "Chief Justice John Marshall, by John Wesley Jarvis",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/John_Marshall%2C_by_John_Wesley_Jarvis.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/John_Marshall_by_Henry_Inman%2C_1832.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "portrait.james-madison-stuart-1804",
-   "title": "James Madison, 1804, by Gilbert Stuart",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/5/50/James_Madison_by_Gilbert_Stuart_1804_%28Cropped%29.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Gilbert_Stuart%2C_James_Madison%2C_c._1821%2C_NGA_56914.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "portrait.james-madison-nga-1821",
-   "title": "James Madison, c. 1821, by Gilbert Stuart (National Gallery of Art)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Gilbert_Stuart%2C_James_Madison%2C_c._1821%2C_NGA_56914.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/6/67/MADISON%2C_James-President_%28BEP_engraved_portrait%29.jpg",
-   "source": "nga",
-   "verified": true
-  },
-  {
-   "id": "portrait.albert-gallatin",
-   "title": "Albert Gallatin, Secretary of the Treasury (BEP engraved portrait)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/GALLATIN%2C_Albert-Treasury_%28BEP_engraved_portrait%29.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Albert_Gallatin_by_Matthew_Wilson%2C_1879.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "portrait.napoleon-first-consul-gerard",
-   "title": "Napoleon Bonaparte as First Consul, by Francois Gerard",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Bonaparte_premier_Consul_G%C3%A9rard_Chantilly.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "portrait.napoleon-ingres",
-   "title": "Napoleon Bonaparte as First Consul, by Ingres",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/%28Montauban%29_Napol%C3%A9on_Bonaparte_en_1e_consul_-_Jean-Auguste-Dominique_Ingres.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Bonaparte_premier_Consul_G%C3%A9rard_Chantilly.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "portrait.noah-webster-npg",
-   "title": "Noah Webster, by James Herring (National Portrait Gallery, Smithsonian)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/James_Herring_-_Noah_Webster_-_NPG.67.31_-_National_Portrait_Gallery.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Noah_Webster_MET_DT203408.jpg",
-   "source": "smithsonian",
-   "verified": true
-  },
-  {
-   "id": "portrait.charles-willson-peale",
-   "title": "Charles Willson Peale, self-portrait",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Charles_Willson_Peale_-_Charles_Willson_Peale_Self-Portrait_-_Google_Art_Project.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/C_W_Peale_-_The_Artist_in_His_Museum.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "portrait.john-trumbull",
-   "title": "John Trumbull, self-portrait, c. 1802",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Self_Portrait_by_John_Trumbull_circa_1802FXD.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Self_Portrait_John_Trumbull_1777.jpeg",
-   "source": "yale",
-   "verified": true
-  },
-  {
-   "id": "portrait.crevecoeur",
-   "title": "J. Hector St. John de Crevecoeur",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/J._Hector_St._John_de_Cr%C3%A8vec%C5%93ur.png",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Hectorstjohncrevecoeur.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "portrait.robert-r-livingston",
-   "title": "Robert R. Livingston, negotiator of the Louisiana Purchase",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/8/87/PORTRAIT_OF_ROBERT_R._LIVINGSTON%2C_FIRST_SECRETARY_OF_FOREIGN_AFFAIRS_UNDER_THE_CONTINENTAL_CONGRESS.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Robert_R_Livingston%2C_attributed_to_Gilbert_Stuart_%281755-1828%29.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "portrait.james-monroe-whitehouse-1819",
-   "title": "James Monroe (White House portrait, 1819)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/James_Monroe_White_House_portrait_1819.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Samuel_F._B._Morse_-_James_Monroe_-_Google_Art_Project.jpg",
-   "source": "whitehouse",
-   "verified": true
-  },
-  {
-   "id": "portrait.james-monroe-stuart-npg",
-   "title": "James Monroe, c. 1817, by Gilbert Stuart (National Portrait Gallery)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/James_Monroe_-_by_Gilbert_Stuart_-_c_1817_-_Natl_Portrait_Gallery_Washington_DC.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/James_Monroe_by_John_Vanderlyn_-_B%26W.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "portrait.toussaint-louverture-1806",
-   "title": "Toussaint Louverture, engraving, 1806",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Toussaint_Louverture._Kupfer%2C_1806.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Toussaint_Louverture_-_Girardin.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "portrait.toussaint-equestrian",
-   "title": "Toussaint Louverture on horseback, c. 1800",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Portrait_%C3%A9questre_de_Toussaint_Louverture_sur_son_cheval_Bel-Argent%2C_vers_1800.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/3/32/G%C3%A9n%C3%A9ral_Toussaint_Louverture.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "portrait.charles-cotesworth-pinckney",
-   "title": "Charles Cotesworth Pinckney, by Henry Benbridge",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Charles_Cotesworth_Pinckney_by_Henry_Benbridge.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Charles_Cotesworth_Pinckney_by_John_Trumbull.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "portrait.spencer-roane",
-   "title": "Justice Spencer Roane of Virginia, 1809",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Justice_Spencer_Roane%2C_1809.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Spencer_Roane.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "doc.louisiana-purchase-treaty",
-   "title": "Louisiana Purchase Treaty, April 30, 1803, p. 1 (NARA)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Louisiana_Purchase_Treaty%2C_Page_1_%285553723360%29.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Louisiana_Purchase_Treaty%2C_Page_2_%285553138369%29.jpg",
-   "source": "nara",
-   "verified": true
-  },
-  {
-   "id": "doc.marbury-motion-rule",
-   "title": "Draft motion rule, Marbury v. Madison (NARA)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Draft_of_Motion_Rule_for_Marbury_v._Madison.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Draft_of_Motion_Rule_for_Marbury_v._Madison%2C_Page_2.jpg",
-   "source": "nara",
-   "verified": true
-  },
-  {
-   "id": "doc.marbury-opinion-p1",
-   "title": "Marbury v. Madison, opinion first page (NARA)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Marbury_vs_Madison_page1.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Draft_of_Motion_Rule_for_Marbury_v._Madison.jpg",
-   "source": "nara",
-   "verified": true
-  },
-  {
-   "id": "doc.judiciary-act-1789",
-   "title": "Judiciary Act of 1789 (NARA)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Judiciary_Act_of_1789.jpg",
-   "alt_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Judiciary_Act_of_1789.jpg?width=800",
-   "source": "nara",
-   "verified": true
-  },
-  {
-   "id": "doc.twelfth-amendment",
-   "title": "Twelfth Amendment (1804) (NARA)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/7/77/12th_Amendment_Pg1of1_AC.jpg",
-   "alt_url": "https://commons.wikimedia.org/wiki/Special:FilePath/12th_Amendment_Pg1of1_AC.jpg?width=800",
-   "source": "nara",
-   "verified": true
-  },
-  {
-   "id": "doc.sedition-act-1798",
-   "title": "Sedition Act of 1798 (NARA)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Sedition_Act_%281798%29.png",
-   "alt_url": "https://archive.org/download/alienseditionlaw00virg/page/n9.jpg",
-   "source": "nara",
-   "verified": true
-  },
-  {
-   "id": "doc.virginia-resolutions-1798",
-   "title": "Virginia Resolutions of 1798, title page (Internet Archive)",
-   "primary_url": "https://archive.org/download/resolutionsofleg00virg/page/n7.jpg",
-   "alt_url": "https://archive.org/download/resolutionsofleg00virg/page/n8.jpg",
-   "source": "internet-archive",
-   "verified": true
-  },
-  {
-   "id": "doc.jefferson-first-inaugural",
-   "title": "Jefferson's First Inaugural Address, reading copy in his hand, March 4, 1801 (LOC)",
-   "primary_url": "https://tile.loc.gov/storage-services/service/mss/msspin/pin0405/0405001v.jpg",
-   "alt_url": "https://tile.loc.gov/storage-services/service/mss/msspin/pin0404/0404001v.jpg",
-   "source": "loc",
-   "verified": true
-  },
-  {
-   "id": "doc.hamilton-letter-1800",
-   "title": "Alexander Hamilton Papers, correspondence Oct.-Dec. 1800 (LOC)",
-   "primary_url": "https://tile.loc.gov/image-services/iiif/service:mss:mss24612:mss24612-020:00159/full/pct:100/0/default.jpg",
-   "alt_url": "https://tile.loc.gov/image-services/iiif/service:mss:mss24612:mss24612-020:00159/full/pct:100/0/default.jpg",
-   "source": "loc",
-   "verified": true
-  },
-  {
-   "id": "doc.jefferson-to-roane-1819",
-   "title": "Jefferson to Spencer Roane, Sept. 6, 1819 - 'the revolution of 1800' (LOC)",
-   "primary_url": "https://tile.loc.gov/storage-services/master/mss/mtj/mtj1/051/0800/0836.jpg",
-   "alt_url": "https://tile.loc.gov/storage-services/service/mss/mtj/mtj1/051/0800/0836.gif",
-   "source": "loc",
-   "verified": true
-  },
-  {
-   "id": "doc.webster-speller",
-   "title": "Webster's 'A Grammatical Institute' (blue-backed speller), title pages, 1792 and 1809 (IA)",
-   "primary_url": "https://archive.org/download/bim_eighteenth-century_a-grammatical-institute-_webster-noah_1792/page/n1.jpg",
-   "alt_url": "https://archive.org/download/americanspelling00webs/page/n5.jpg",
-   "source": "internet-archive",
-   "verified": true
-  },
-  {
-   "id": "doc.webster-dissertations-1789",
-   "title": "Webster's 'Dissertations on the English Language,' 1789, title page (IA)",
-   "primary_url": "https://archive.org/download/dissertationsone00webs/page/n7.jpg",
-   "alt_url": "https://archive.org/download/dissertationsone00inwebs/page/n5.jpg",
-   "source": "internet-archive",
-   "verified": true
-  },
-  {
-   "id": "doc.crevecoeur-letters",
-   "title": "'Letters from an American Farmer,' 1783, title page (IA)",
-   "primary_url": "https://archive.org/download/lettersfromameri00instjo/page/n7.jpg",
-   "alt_url": "https://archive.org/download/lettersfromameri00instjo/page/n8.jpg",
-   "source": "internet-archive",
-   "verified": true
-  },
-  {
-   "id": "doc.webster-dictionary-1828",
-   "title": "'An American Dictionary of the English Language,' 1828, title page",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Webster%27s_American_Dictionary_of_the_English_Language_Title_Page.jpg",
-   "alt_url": "https://archive.org/download/americandictiona02websrich/page/n7.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "doc.madison-to-jefferson-1820",
-   "title": "James Madison to Thomas Jefferson, Dec. 20, 1820 (letter)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/James_Madison_to_Thomas_Jefferson%2C_20_December_1820.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/James_Madison_to_Thomas_Jefferson%2C_10_November_1821.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "doc.electoral-votes-1800",
-   "title": "Tally of electoral votes, presidential election of 1800 (73-73 tie)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/2/28/1800_Presidential_Election_Electoral_Votes_%2854090660678%29.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Tally_of_Electoral_Votes_for_the_1800_Presidential_Election_-_DPLA_-_72b4e6043da74f7985d01a4b93d94707_%28page_1%29.tiff",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "art.providential-detection",
-   "title": "'The Providential Detection,' anti-Jefferson cartoon, c. 1800 (AAS via Digital Commonwealth)",
-   "primary_url": "https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:5425sn72g/full/!1000,1000/0/default.jpg",
-   "alt_url": "https://ark.digitalcommonwealth.org/ark:/50959/5425sn72g/large_image",
-   "source": "digitalcommonwealth",
-   "verified": true
-  },
-  {
-   "id": "art.trumbull-declaration",
-   "title": "John Trumbull, 'Declaration of Independence,' 1819",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Declaration_of_Independence_%281819%29%2C_by_John_Trumbull.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/BEP-GIRSCH-Declaration_of_Independence_%28Trumbull%29.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "art.peale-artist-in-his-museum",
-   "title": "Charles Willson Peale, 'The Artist in His Museum,' 1822",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/C_W_Peale_-_The_Artist_in_His_Museum.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Charles_Willson_Peale_-_Charles_Willson_Peale_Self-Portrait_-_Google_Art_Project.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "art.peale-mastodon",
-   "title": "Charles Willson Peale, 'The Exhumation of the Mastodon,' 1806-08",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/6/68/C_W_Peale_-_The_Exhumation_of_the_Mastadon.jpeg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/C_W_Peale_-_The_Artist_in_His_Museum.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "art.bank-of-the-united-states",
-   "title": "Bank of the United States, Philadelphia (NYPL scan)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Bank_of_the_United_States_in_Third_Street%2C_Philadelphia_%28NYPL_b12349150-424011%29.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/5/55/Bank_of_the_United_States%2C_in_Third_Street%2C_Philadelphia_LCCN2002718879.jpg",
-   "source": "nypl",
-   "verified": true
-  },
-  {
-   "id": "art.philadelphia-birch-1800",
-   "title": "Philadelphia in 1800, engraving by William Birch (National Portrait Gallery, Smithsonian)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/The_City_and_Port_of_Philadelphia%2C_on_the_River_Delaware_from_Kensington%2C_by_William_Russell_Birch%2C_1800%2C_hand-colored_engraving%2C_from_the_National_Portrait_Gallery_-_NPG-AD_NPG_2013_5_5PortofPhiladelphiadet-000002.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Arch_Street_Ferry%2C_Philadelphia%2C_by_William_Russell_Birch%2C_1800%2C_hand-colored_engraving%2C_from_the_National_Portrait_Gallery_-_NPG-AD_NPG_2013_5_3ArchStFerry-000002.jpg",
-   "source": "smithsonian",
-   "verified": true
-  },
-  {
-   "id": "art.capitol-in-1800",
-   "title": "The Capitol in 1800",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/0/07/The_Capitol_in_1800_taken_from_advanced_proof_of_plate_38_History_of_the_United_States_Capitol_by_Glenn_Brown_LCCN2014649261.tif",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/1/19/U.S._Capitol%2C_Washington%2C_D.C._East_elevation%2C_low_dome_LCCN92519533.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "art.new-orleans-cession-1803",
-   "title": "The last flag-raising: cession of New Orleans, 1803",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/The_Last_Flag_Raising_Ceremony_-_Cession_of_New_Orleans_%281803%29.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/1/12/New_Orleans_Municipal_Council_30_Nov_1803.png",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "art.louisiana-transfer-thulstrup",
-   "title": "Transfer of Louisiana at New Orleans, by Thure de Thulstrup",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Louisiana_Purchase_New_Orleans_Thure_de_Thulstrup.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/The_Last_Flag_Raising_Ceremony_-_Cession_of_New_Orleans_%281803%29.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "art.haiti-vertieres",
-   "title": "Battle of Vertieres, Haiti, 1803",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Vertieres.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Bataille_de_Verti%C3%A8res.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "art.haiti-revolt-1791",
-   "title": "Slave revolt of Saint-Domingue, 1791",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Slave_Revolt_of_Saint_Domingue_1791.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Fire_in_Saint-Domingo_1791%2C_German_copper_engraving.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "art.jefferson-inaugural-medal-1801",
-   "title": "Thomas Jefferson inaugural medal, 1801 (Smithsonian American Art Museum)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/5/53/Thomas_Jefferson_Presidential_Inaugural_Medal_SAAM-2014.29.1_1.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/1801_Thomas_Jefferson_Inaugural_Medal%2C_Silver%2C_MS62_NGC.jpg",
-   "source": "smithsonian",
-   "verified": true
-  },
-  {
-   "id": "art.capitol-cornerstone-1793",
-   "title": "Cornerstone of the Capitol laid, Sept. 18, 1793 (De Land painting, LOC)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Cornerstone_laid_by_George_Washington%2C_Sept._18%2C_1793_-_painting_by_Clyde_De_Land._LCCN2014648349.tif",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Flickr_-_USCapitol_-_Capitol_Cornerstone_Ceremony_-_1793.jpg",
-   "source": "loc",
-   "verified": true
-  },
-  {
-   "id": "art.old-supreme-court-chamber",
-   "title": "Old Supreme Court Chamber, U.S. Capitol",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/OldSupremeCourt.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/5/50/United_States_Capitol%2C_Washington%2C_D.C._Supreme_Court_chamber%2C_section_%26_plan_of_bench_LCCN2001697317.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "art.monticello-east-portico",
-   "title": "Monticello, the east portico (Library of Congress)",
-   "primary_url": "https://tile.loc.gov/storage-services/service/pnp/cph/3c00000/3c04000/3c04700/3c04751v.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Monticello_Home_of_Thomas_Jefferson_2.jpg",
-   "source": "loc",
-   "verified": true
-  },
-  {
-   "id": "art.two-dollar-bill-reverse",
-   "title": "U.S. $2 bill reverse: Trumbull's Declaration engraved",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/US-%242-LT-1928-Fr.1501.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/BEP-GIRSCH-Declaration_of_Independence_%28Trumbull%29.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "art.whiskey-rebellion",
-   "title": "The Whiskey Rebellion, 1794",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/9/96/WhiskeyRebellion.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Famous_Whiskey_Insurrection_in_Pennsylvania.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "art.congress-hall-philadelphia",
-   "title": "Congress Hall, Philadelphia, where the House broke the 1800 tie",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Congress_Hall_exterior.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Congress_Hall_-_Philadelphia_%282642813566%29.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "art.chestnut-street-theatre",
-   "title": "Congress Hall and the New Theatre, Chestnut Street, Philadelphia (LOC)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Congress_Hall_and_New_Theatre%2C_in_Chestnut_Street%2C_Philadelphia_LCCN2002718883.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Congress_Hall_exterior.jpg",
-   "source": "loc",
-   "verified": true
-  },
-  {
-   "id": "map.louisiana-purchase-1803",
-   "title": "Map of the Louisiana Purchase, 1803",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Geography_028_-_Map_of_the_Louisiana_Purchase_-_1803.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/9/90/United_States_1804-03-1804-10.png",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "map.saint-domingue",
-   "title": "Isle de Saint Domingue (Library of Congress map)",
-   "primary_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd4:g4930:g4930:ar185400/full/pct:100/0/default.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Isle_de_Saint_Domingue._LOC_73695947.jpg",
-   "source": "loc",
-   "verified": true
-  },
-  {
-   "id": "map.new-orleans-1803",
-   "title": "Plan of New Orleans, 1803 (Boquet de Woiseri)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Plan_New_Orleans_1803_Boquet_de_Woiseri_Detail.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/PlanNewOrleansBoquetadeWoiseri.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "map.lenfant-washington",
-   "title": "L'Enfant's plan of Washington, D.C. (Library of Congress)",
-   "primary_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd385:g3850:g3850:ct004364/full/pct:100/0/default.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/L%27enfant_plan_of_Washington%2C_D.C..jpg",
-   "source": "loc",
-   "verified": true
-  },
-  {
-   "id": "map.clark-west-1810",
-   "title": "Clark's map of the American West, 1810 (Library of Congress)",
-   "primary_url": "https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:03:05:7:wdl_03057:1053073/full/pct:100/0/default.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Clark%27s_Map_of_1810_WDL3057.png",
-   "source": "loc",
-   "verified": true
-  },
-  {
-   "id": "map.missouri-territory",
-   "title": "Missouri Territory, formerly Louisiana (Bower)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Missouri_Territory_formerly_Louisiana._Bower%2C_Sc._%28IA_dr_missouri-territory-formerly-louisiana-bower-sc-00054075%29.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Clark%27s_Map_of_1810_WDL3057.png",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "obj.jefferson-writing-desk",
-   "title": "Thomas Jefferson's portable writing desk, Philadelphia, 1776 (Library of Congress exhibit)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Jefferson%27s%2Bdeskdetail.jpg",
-   "alt_url": "https://www.loc.gov/exhibits/jefferson/images/vc30.jpg",
-   "source": "loc",
-   "verified": true
-  },
-  {
-   "id": "place.cabildo-new-orleans",
-   "title": "The Cabildo, New Orleans, where the Louisiana Purchase was signed",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Cabildo_%28where_the_Louisiana_Purchase_was_signed%29_and_New_Orleans_cathedral_%282254719401%29.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Louisiana_Purchase_New_Orleans_Thure_de_Thulstrup.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "art.gallatin-statue-treasury",
-   "title": "Albert Gallatin statue at the U.S. Treasury",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Albert_Gallatin_statue.JPG",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Albert_Gallatin_by_Matthew_Wilson%2C_1879.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "historic.u3e11.aaron-burr-vanderlyn",
-   "title": "Aaron Burr, Jefferson's running mate who tied him 73-73 under the old two-vote electoral rules, by John Vanderlyn.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/8/85/John_Vanderlyn_-_Official_Portrait_of_Vice_President_Aaron_Burr.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/John_Vanderlyn_-_Official_Portrait_of_Vice_President_Aaron_Burr.jpg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "Public domain",
-   "description": "Aaron Burr, Jefferson's running mate who tied him 73-73 under the old two-vote electoral rules, by John Vanderlyn.",
-   "content_type": "image/jpeg",
-   "width": 2206,
-   "height": 3000,
-   "byte_size": "830185"
-  },
-  {
-   "id": "historic.u3e11.albert-gallatin",
-   "title": "Albert Gallatin, Jefferson's Treasury secretary, who cut taxes including the whiskey excise Washington once marched an army to collect.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Albert_Gallatin_MET_DT253708.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Albert_Gallatin_MET_DT253708.jpg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "CC0",
-   "description": "Albert Gallatin, Jefferson's Treasury secretary, who cut taxes including the whiskey excise Washington once marched an army to collect.",
-   "content_type": "image/jpeg",
-   "width": 2935,
-   "height": 3595,
-   "byte_size": "1579952"
-  },
-  {
-   "id": "historic.u3e11.burr-hamilton-duel",
-   "title": "The Burr-Hamilton duel: the 73-73 tie's aftermath, four years later.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Duel_between_Aaron_Burr_and_Alexander_Hamilton.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Duel_between_Aaron_Burr_and_Alexander_Hamilton.jpg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "Public domain",
-   "description": "The Burr-Hamilton duel: the 73-73 tie's aftermath, four years later.",
-   "content_type": "image/jpeg",
-   "width": 2292,
-   "height": 1698,
-   "byte_size": "1555388"
-  },
-  {
-   "id": "historic.u3e11.capitol-1800",
-   "title": "The U.S. Capitol in 1800: the new republic's seat, still unfinished.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/USCapitol1800.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/USCapitol1800.jpg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "Public domain",
-   "description": "The U.S. Capitol in 1800: the new republic's seat, still unfinished.",
-   "content_type": "image/jpeg",
-   "width": 3160,
-   "height": 2425,
-   "byte_size": "9555179"
-  },
-  {
-   "id": "historic.u3e11.hamilton-trumbull-gap2",
-   "title": "Alexander Hamilton by John Trumbull: the letters for Jefferson that broke the 1800 tie.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/John_Trumbull_-_Alexander_Hamilton_-_Google_Art_Project.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/John_Trumbull_-_Alexander_Hamilton_-_Google_Art_Project.jpg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "Public domain",
-   "description": "Alexander Hamilton by John Trumbull: the letters for Jefferson that broke the 1800 tie.",
-   "content_type": "image/jpeg",
-   "width": 5890,
-   "height": 7326,
-   "byte_size": "11157586"
-  },
-  {
-   "id": "historic.u3e11.jefferson-peale-1800",
-   "title": "Thomas Jefferson by Rembrandt Peale, 1800: the winner of the 36th House ballot.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Official_Presidential_portrait_of_Thomas_Jefferson_%28by_Rembrandt_Peale%2C_1800%29.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Official_Presidential_portrait_of_Thomas_Jefferson_%28by_Rembrandt_Peale%2C_1800%29.jpg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "Public domain",
-   "description": "Thomas Jefferson by Rembrandt Peale, 1800: the winner of the 36th House ballot.",
-   "content_type": "image/jpeg",
-   "width": 2512,
-   "height": 2996,
-   "byte_size": "3959900"
-  },
-  {
-   "id": "historic.u3e11.john-adams-a18236",
-   "title": "John Adams, who left the capital before dawn rather than attend Jefferson's inauguration.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/0/07/John_Adams_A18236.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/John_Adams_A18236.jpg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "Public domain",
-   "description": "John Adams, who left the capital before dawn rather than attend Jefferson's inauguration.",
-   "content_type": "image/jpeg",
-   "width": 6811,
-   "height": 8259,
-   "byte_size": "30204260"
-  },
-  {
-   "id": "historic.u3e11.john-marshall-met",
-   "title": "Chief Justice John Marshall, who built judicial review by ruling against his own Federalist in Marbury v. Madison.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/1/16/Chief_Justice_John_Marshall_MET_DP819230.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Chief_Justice_John_Marshall_MET_DP819230.jpg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "CC0",
-   "description": "Chief Justice John Marshall, who built judicial review by ruling against his own Federalist in Marbury v. Madison.",
-   "content_type": "image/jpeg",
-   "width": 2678,
-   "height": 3772,
-   "byte_size": "2605723"
-  },
-  {
-   "id": "historic.u3e11.louisiana-purchase",
-   "title": "Map of the Louisiana Purchase of 1803: fifteen million dollars at about three cents an acre, doubling the country overnight.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/LouisianaPurchase.png",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/LouisianaPurchase.png",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "CC BY-SA 3.0",
-   "description": "Map of the Louisiana Purchase of 1803: fifteen million dollars at about three cents an acre, doubling the country overnight.",
-   "content_type": "image/png",
-   "width": 1456,
-   "height": 898,
-   "byte_size": "302392"
-  },
-  {
-   "id": "historic.u3e11.louisiana-purchase2",
-   "title": "Map of the Louisiana Purchase: the fifteen-million-dollar doubling of the country.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Louisiana_Purchase.png",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Louisiana_Purchase.png",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "CC BY-SA 4.0",
-   "description": "Map of the Louisiana Purchase: the fifteen-million-dollar doubling of the country.",
-   "content_type": "image/png",
-   "width": 3433,
-   "height": 2414,
-   "byte_size": "439006"
-  },
-  {
-   "id": "historic.u3e11.marbury-page1",
-   "title": "Page one of the Marbury v. Madison decision, 1803: the Judiciary Act provision void, judicial review claimed.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Marbury_vs_Madison_page1.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Marbury_vs_Madison_page1.jpg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "Public domain",
-   "description": "Page one of the Marbury v. Madison decision, 1803: the Judiciary Act provision void, judicial review claimed.",
-   "content_type": "image/jpeg",
-   "width": 2296,
-   "height": 3000,
-   "byte_size": "5044207"
-  },
-  {
-   "id": "historic.u3e11.napoleon-gerard",
-   "title": "Napoleon as First Consul, who sold Louisiana for fifteen million dollars after his Haitian project collapsed, by Fran\u00e7ois G\u00e9rard.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Bonaparte_premier_Consul_G%C3%A9rard_Chantilly.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Bonaparte_premier_Consul_G%C3%A9rard_Chantilly.jpg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "Public domain",
-   "description": "Napoleon as First Consul, who sold Louisiana for fifteen million dollars after his Haitian project collapsed, by Fran\u00e7ois G\u00e9rard.",
-   "content_type": "image/jpeg",
-   "width": 2245,
-   "height": 2710,
-   "byte_size": "3829222"
-  },
-  {
-   "id": "historic.u3e11.toussaint-louverture",
-   "title": "Toussaint Louverture, the Haitian general whose victory over Napoleon's army made Louisiana indefensible for France.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Toussaint_Louverture%2C_G%C3%A9n%C3%A9ral_en_Chef_%C3%A0_St._Domingue.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Toussaint_Louverture%2C_G%C3%A9n%C3%A9ral_en_Chef_%C3%A0_St._Domingue.jpg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "Public domain",
-   "description": "Toussaint Louverture, the Haitian general whose victory over Napoleon's army made Louisiana indefensible for France.",
-   "content_type": "image/jpeg",
-   "width": 1388,
-   "height": 2636,
-   "byte_size": "880798"
-  },
-  {
-   "id": "historic.u3e11.trumbull-bep",
-   "title": "The Bureau of Engraving's version of Trumbull's Declaration \u2014 the painting on the back of the two-dollar bill.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/BEP-GIRSCH-Declaration_of_Independence_%28Trumbull%29.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/BEP-GIRSCH-Declaration_of_Independence_%28Trumbull%29.jpg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "Public domain",
-   "description": "The Bureau of Engraving's version of Trumbull's Declaration \u2014 the painting on the back of the two-dollar bill.",
-   "content_type": "image/jpeg",
-   "width": 14064,
-   "height": 7536,
-   "byte_size": "66130936"
-  },
-  {
-   "id": "historic.u3e11.twelfth-amendment",
-   "title": "The Twelfth Amendment of 1804: separate ballots for president and vice president, so the 1800 tie could never happen again.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/7/77/12th_Amendment_Pg1of1_AC.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/12th_Amendment_Pg1of1_AC.jpg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "Public domain",
-   "description": "The Twelfth Amendment of 1804: separate ballots for president and vice president, so the 1800 tie could never happen again.",
-   "content_type": "image/jpeg",
-   "width": 3313,
-   "height": 4426,
-   "byte_size": "805264"
-  }
- ]
+  "lesson": "u3e11",
+  "image_count": 70,
+  "images": [
+    {
+      "id": "portrait.thomas-jefferson-peale-1791",
+      "title": "Thomas Jefferson, 1791, by Charles Willson Peale",
+      "primary_url": "https://api.nga.gov/iiif/3a14fb6b-82a0-4e1b-beb3-7e6ac89ef686/full/!2000,2000/0/default.jpg",
+      "alt_url": "https://api.nga.gov/iiif/cae563d5-863f-4f53-9327-c062f0ef851d/full/!2000,2000/0/default.jpg",
+      "source": "National Gallery of Art",
+      "verified": true,
+      "alt_source": "National Gallery of Art"
+    },
+    {
+      "id": "portrait.thomas-jefferson-stuart-medallion",
+      "title": "Thomas Jefferson, 'Medallion' portrait, by Gilbert Stuart",
+      "primary_url": "https://api.nga.gov/iiif/8ec882e0-01e9-410b-a737-8fc6b3666f5e/full/full/0/default.jpg",
+      "alt_url": "https://images.metmuseum.org/CRDImages/ad/original/DT2069.jpg",
+      "source": "National Gallery of Art",
+      "verified": true,
+      "alt_source": "Metropolitan Museum of Art"
+    },
+    {
+      "id": "portrait.john-adams-stuart",
+      "title": "John Adams, c. 1800-1815, by Gilbert Stuart (National Gallery of Art)",
+      "primary_url": "https://api.nga.gov/iiif/6689f0bd-101a-4310-86cd-022ef4b9da1e/full/!2000,2000/0/default.jpg",
+      "alt_url": "https://api.nga.gov/iiif/46052f6d-93b8-455c-987f-3817781b6c49/full/!2000,2000/0/default.jpg",
+      "source": "National Gallery of Art",
+      "verified": true,
+      "alt_source": "National Gallery of Art"
+    },
+    {
+      "id": "portrait.aaron-burr-vanderlyn",
+      "title": "Aaron Burr, by John Vanderlyn (official vice-presidential portrait)",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/8/85/John_Vanderlyn_-_Official_Portrait_of_Vice_President_Aaron_Burr.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Aaron_Burr_Portrait_%28cropped%29.jpg",
+      "source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "portrait.aaron-burr-miniature-met",
+      "title": "Aaron Burr, miniature (Metropolitan Museum of Art)",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Aaron_Burr_MET_APS6780.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/8/85/John_Vanderlyn_-_Official_Portrait_of_Vice_President_Aaron_Burr.jpg",
+      "source": "met",
+      "verified": true
+    },
+    {
+      "id": "portrait.aaron-burr-appletons",
+      "title": "Aaron Burr, engraved portrait (Appletons')",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Appletons%27_Burr_Aaron_-_Theodosia.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Aaron_Burr_Portrait_%28cropped%29.jpg",
+      "source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "portrait.alexander-hamilton-trumbull",
+      "title": "Alexander Hamilton, 1792, by John Trumbull",
+      "primary_url": "https://images.metmuseum.org/CRDImages/ad/original/DT222199.jpg",
+      "alt_url": "https://api.nga.gov/iiif/71ca4cb0-3149-4152-abca-6485ee178cb2/full/!2000,2000/0/default.jpg",
+      "source": "Metropolitan Museum of Art",
+      "verified": true,
+      "alt_source": "National Gallery of Art"
+    },
+    {
+      "id": "portrait.alexander-hamilton-sharples",
+      "title": "Alexander Hamilton, pastel by James Sharples (Metropolitan Museum of Art)",
+      "primary_url": "https://images.metmuseum.org/CRDImages/ad/original/57709.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Alexander_Hamilton_MET_ap24.109.98.jpg",
+      "source": "Metropolitan Museum of Art",
+      "verified": true
+    },
+    {
+      "id": "portrait.james-bayard",
+      "title": "James A. Bayard of Delaware (Library of Congress)",
+      "primary_url": "https://api.nga.gov/iiif/10c05997-8be6-4528-9b7e-b1839da9e43c/full/full/0/default.jpg",
+      "alt_url": "https://cdn.loc.gov/service/pnp/pga/13200/13255v.jpg",
+      "source": "National Gallery of Art",
+      "verified": true
+    },
+    {
+      "id": "portrait.john-marshall",
+      "title": "Chief Justice John Marshall, by John Wesley Jarvis",
+      "primary_url": "https://api.nga.gov/iiif/64365535-84b9-45d4-8664-50876344c8c4/full/full/0/default.jpg",
+      "alt_url": "https://api.nga.gov/iiif/1f585903-0cdf-45fa-b739-f4e27ca7e385/full/full/0/default.jpg",
+      "source": "National Gallery of Art",
+      "verified": true,
+      "alt_source": "National Gallery of Art"
+    },
+    {
+      "id": "portrait.james-madison-stuart-1804",
+      "title": "James Madison, 1804, by Gilbert Stuart",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/5/50/James_Madison_by_Gilbert_Stuart_1804_%28Cropped%29.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Gilbert_Stuart%2C_James_Madison%2C_c._1821%2C_NGA_56914.jpg",
+      "source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "portrait.james-madison-nga-1821",
+      "title": "James Madison, c. 1821, by Gilbert Stuart (National Gallery of Art)",
+      "primary_url": "https://api.nga.gov/iiif/ab7f71b8-00f6-408f-847a-1ae2986be106/full/full/0/default.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/6/67/MADISON%2C_James-President_%28BEP_engraved_portrait%29.jpg",
+      "source": "National Gallery of Art",
+      "verified": true
+    },
+    {
+      "id": "portrait.albert-gallatin",
+      "title": "Albert Gallatin, Secretary of the Treasury (BEP engraved portrait)",
+      "primary_url": "https://images.metmuseum.org/CRDImages/ad/original/DT11608.jpg",
+      "alt_url": "https://images.metmuseum.org/CRDImages/ad/original/ap08.90.jpg",
+      "source": "Metropolitan Museum of Art",
+      "verified": true,
+      "alt_source": "Metropolitan Museum of Art"
+    },
+    {
+      "id": "portrait.napoleon-first-consul-gerard",
+      "title": "Napoleon Bonaparte as First Consul, by Francois Gerard",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Bonaparte_premier_Consul_G%C3%A9rard_Chantilly.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg",
+      "source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "portrait.napoleon-ingres",
+      "title": "Napoleon Bonaparte as First Consul, by Ingres",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/%28Montauban%29_Napol%C3%A9on_Bonaparte_en_1e_consul_-_Jean-Auguste-Dominique_Ingres.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Bonaparte_premier_Consul_G%C3%A9rard_Chantilly.jpg",
+      "source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "portrait.noah-webster-npg",
+      "title": "Noah Webster, by James Herring (National Portrait Gallery, Smithsonian)",
+      "primary_url": "https://images.metmuseum.org/CRDImages/ad/original/DT203408.jpg",
+      "alt_url": "https://images.metmuseum.org/CRDImages/dp/original/DPB882945.jpg",
+      "source": "Metropolitan Museum of Art",
+      "verified": true,
+      "alt_source": "Metropolitan Museum of Art"
+    },
+    {
+      "id": "portrait.charles-willson-peale",
+      "title": "Charles Willson Peale, self-portrait",
+      "primary_url": "https://api.nga.gov/iiif/2071a4c8-5c3d-4688-bc46-d8359e142db8/full/full/0/default.jpg",
+      "alt_url": "https://cdn.loc.gov/master/pnp/pga/13200/13206u.tif",
+      "source": "National Gallery of Art",
+      "verified": true,
+      "alt_source": "Library of Congress"
+    },
+    {
+      "id": "portrait.john-trumbull",
+      "title": "John Trumbull, self-portrait, c. 1802",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Self_Portrait_by_John_Trumbull_circa_1802FXD.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/7/72/Self_Portrait_John_Trumbull_1777.jpeg",
+      "source": "yale",
+      "verified": true
+    },
+    {
+      "id": "portrait.crevecoeur",
+      "title": "J. Hector St. John de Crevecoeur",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/J._Hector_St._John_de_Cr%C3%A8vec%C5%93ur.png",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Hectorstjohncrevecoeur.jpg",
+      "source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "portrait.robert-r-livingston",
+      "title": "Robert R. Livingston, negotiator of the Louisiana Purchase",
+      "primary_url": "https://api.nga.gov/iiif/d3a2b062-eb1d-41fd-aed1-0a22fc6f3a15/full/full/0/default.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Robert_R_Livingston%2C_attributed_to_Gilbert_Stuart_%281755-1828%29.jpg",
+      "source": "National Gallery of Art",
+      "verified": true
+    },
+    {
+      "id": "portrait.james-monroe-whitehouse-1819",
+      "title": "James Monroe (White House portrait, 1819)",
+      "primary_url": "https://d1y822qhq55g6.cloudfront.net/default/_superImage/James-Monroe.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Samuel_F._B._Morse_-_James_Monroe_-_Google_Art_Project.jpg",
+      "source": "White House Historical Association",
+      "verified": true,
+      "note": " [1024px fallback: 1024px fallback; James Monroe by Samuel F.B. Morse, c.1819 (White House Collection); verified HTTP 200 image/jpeg 67002 bytes; entry's other URL is wikimedia]"
+    },
+    {
+      "id": "portrait.james-monroe-stuart-npg",
+      "title": "James Monroe, c. 1817, by Gilbert Stuart (National Portrait Gallery)",
+      "primary_url": "https://images.metmuseum.org/CRDImages/ad/original/DT2039.jpg",
+      "alt_url": "https://api.nga.gov/iiif/40183c87-295e-4b62-9e46-b34e7603d6fb/full/!2000,2000/0/default.jpg",
+      "source": "Metropolitan Museum of Art",
+      "verified": true,
+      "alt_source": "National Gallery of Art",
+      "note": " [1024px fallback: 1024px fallback; James Monroe c.1817 by Gilbert Stuart (NGA object 56915); verified HTTP 200 image/jpeg 742434 bytes; different institution from entry's Met primary_url]"
+    },
+    {
+      "id": "portrait.toussaint-louverture-1806",
+      "title": "Toussaint Louverture, engraving, 1806",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Toussaint_Louverture._Kupfer%2C_1806.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Toussaint_Louverture_-_Girardin.jpg",
+      "source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "portrait.toussaint-equestrian",
+      "title": "Toussaint Louverture on horseback, c. 1800",
+      "primary_url": "https://images.metmuseum.org/CRDImages/dp/original/DP-26796-001.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/3/32/G%C3%A9n%C3%A9ral_Toussaint_Louverture.jpg",
+      "source": "Metropolitan Museum of Art",
+      "verified": true,
+      "note": " [1024px fallback: 1024px fallback; 'Toussaint Louverture on Horseback' by Claude Louis Desrais, ca.1802 (Met object 892401); verified HTTP 200 image/jpeg; entry's other URL is wikimedia]"
+    },
+    {
+      "id": "portrait.charles-cotesworth-pinckney",
+      "title": "Charles Cotesworth Pinckney, by Henry Benbridge",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Charles_Cotesworth_Pinckney_by_Henry_Benbridge.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Charles_Cotesworth_Pinckney_by_John_Trumbull.jpg",
+      "source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "portrait.spencer-roane",
+      "title": "Justice Spencer Roane of Virginia, 1809",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Justice_Spencer_Roane%2C_1809.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Spencer_Roane.jpg",
+      "source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "doc.louisiana-purchase-treaty",
+      "title": "Louisiana Purchase Treaty, April 30, 1803, p. 1 (NARA)",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Louisiana_Purchase_Treaty%2C_Page_1_%285553723360%29.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Louisiana_Purchase_Treaty%2C_Page_2_%285553138369%29.jpg",
+      "source": "nara",
+      "verified": true
+    },
+    {
+      "id": "doc.marbury-motion-rule",
+      "title": "Draft motion rule, Marbury v. Madison (NARA)",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Draft_of_Motion_Rule_for_Marbury_v._Madison.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/7/73/Draft_of_Motion_Rule_for_Marbury_v._Madison%2C_Page_2.jpg",
+      "source": "nara",
+      "verified": true
+    },
+    {
+      "id": "doc.marbury-opinion-p1",
+      "title": "Marbury v. Madison, opinion first page (NARA)",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Marbury_vs_Madison_page1.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Draft_of_Motion_Rule_for_Marbury_v._Madison.jpg",
+      "source": "nara",
+      "verified": true
+    },
+    {
+      "id": "doc.judiciary-act-1789",
+      "title": "Judiciary Act of 1789 (NARA)",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Judiciary_Act_of_1789.jpg",
+      "alt_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Judiciary_Act_of_1789.jpg?width=800",
+      "source": "nara",
+      "verified": true
+    },
+    {
+      "id": "doc.twelfth-amendment",
+      "title": "Twelfth Amendment (1804) (NARA)",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/7/77/12th_Amendment_Pg1of1_AC.jpg",
+      "alt_url": "https://commons.wikimedia.org/wiki/Special:FilePath/12th_Amendment_Pg1of1_AC.jpg?width=800",
+      "source": "nara",
+      "verified": true
+    },
+    {
+      "id": "doc.sedition-act-1798",
+      "title": "Sedition Act of 1798 (NARA)",
+      "primary_url": "https://archive.org/download/virginiareportof00virgrich/page/n6.jpg",
+      "alt_url": null,
+      "source": "Internet Archive",
+      "verified": true,
+      "note": " [dupe-fix: replaced shared URL]"
+    },
+    {
+      "id": "doc.virginia-resolutions-1798",
+      "title": "Virginia Resolutions of 1798, title page (Internet Archive)",
+      "primary_url": "https://archive.org/download/resolutionsofleg00virg/page/n7.jpg",
+      "alt_url": "https://archive.org/download/resolutionsofleg00virg/page/n8.jpg",
+      "source": "internet-archive",
+      "verified": true
+    },
+    {
+      "id": "doc.jefferson-first-inaugural",
+      "title": "Jefferson's First Inaugural Address, reading copy in his hand, March 4, 1801 (LOC)",
+      "primary_url": "https://tile.loc.gov/storage-services/service/mss/msspin/pin0405/0405001v.jpg",
+      "alt_url": "https://tile.loc.gov/storage-services/service/mss/msspin/pin0404/0404001v.jpg",
+      "source": "loc",
+      "verified": true
+    },
+    {
+      "id": "doc.hamilton-letter-1800",
+      "title": "Alexander Hamilton Papers, correspondence Oct.-Dec. 1800 (LOC)",
+      "primary_url": "https://tile.loc.gov/image-services/iiif/service:mss:mss24612:mss24612-020:00159/full/pct:100/0/default.jpg",
+      "alt_url": "https://tile.loc.gov/image-services/iiif/service:mss:mss24612:mss24612-020:00159/full/pct:100/0/default.jpg",
+      "source": "loc",
+      "verified": true
+    },
+    {
+      "id": "doc.jefferson-to-roane-1819",
+      "title": "Jefferson to Spencer Roane, Sept. 6, 1819 - 'the revolution of 1800' (LOC)",
+      "primary_url": "https://tile.loc.gov/storage-services/master/mss/mtj/mtj1/051/0800/0836.jpg",
+      "alt_url": "https://tile.loc.gov/storage-services/service/mss/mtj/mtj1/051/0800/0836.gif",
+      "source": "loc",
+      "verified": true
+    },
+    {
+      "id": "doc.webster-speller",
+      "title": "Webster's 'A Grammatical Institute' (blue-backed speller), title pages, 1792 and 1809 (IA)",
+      "primary_url": "https://archive.org/download/bim_eighteenth-century_a-grammatical-institute-_webster-noah_1792/page/n1.jpg",
+      "alt_url": "https://archive.org/download/americanspelling00webs/page/n5.jpg",
+      "source": "internet-archive",
+      "verified": true
+    },
+    {
+      "id": "doc.webster-dissertations-1789",
+      "title": "Webster's 'Dissertations on the English Language,' 1789, title page (IA)",
+      "primary_url": "https://archive.org/download/dissertationsone00webs/page/n7.jpg",
+      "alt_url": "https://archive.org/download/dissertationsone00inwebs/page/n5.jpg",
+      "source": "internet-archive",
+      "verified": true
+    },
+    {
+      "id": "doc.crevecoeur-letters",
+      "title": "'Letters from an American Farmer,' 1783, title page (IA)",
+      "primary_url": "https://archive.org/download/lettersfromameri00instjo/page/n7.jpg",
+      "alt_url": "https://archive.org/download/lettersfromameri00instjo/page/n8.jpg",
+      "source": "internet-archive",
+      "verified": true
+    },
+    {
+      "id": "doc.webster-dictionary-1828",
+      "title": "'An American Dictionary of the English Language,' 1828, title page",
+      "primary_url": "https://archive.org/download/americandictiona01websrich/page/n11.jpg",
+      "alt_url": "https://archive.org/download/americandictiona02websrich/page/n7.jpg",
+      "source": "Internet Archive",
+      "verified": true
+    },
+    {
+      "id": "doc.madison-to-jefferson-1820",
+      "title": "James Madison to Thomas Jefferson, Dec. 20, 1820 (letter)",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/James_Madison_to_Thomas_Jefferson%2C_20_December_1820.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/James_Madison_to_Thomas_Jefferson%2C_10_November_1821.jpg",
+      "source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "doc.electoral-votes-1800",
+      "title": "Tally of electoral votes, presidential election of 1800 (73-73 tie)",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/2/28/1800_Presidential_Election_Electoral_Votes_%2854090660678%29.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Tally_of_Electoral_Votes_for_the_1800_Presidential_Election_-_DPLA_-_72b4e6043da74f7985d01a4b93d94707_%28page_1%29.tiff",
+      "source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "art.providential-detection",
+      "title": "'The Providential Detection,' anti-Jefferson cartoon, c. 1800 (AAS via Digital Commonwealth)",
+      "primary_url": "https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:5425sn72g/full/!1000,1000/0/default.jpg",
+      "alt_url": "https://ark.digitalcommonwealth.org/ark:/50959/5425sn72g/large_image",
+      "source": "digitalcommonwealth",
+      "verified": true
+    },
+    {
+      "id": "art.trumbull-declaration",
+      "title": "John Trumbull, 'Declaration of Independence,' 1819",
+      "primary_url": "https://www.aoc.gov/sites/default/files/styles/social_standard/public/2026-01/070222-2000w-us-capitol-rotunda-painting-trumbull-declaration-independence.jpg.webp?h=4997dc06&itok=29Q65DoY",
+      "alt_url": "https://images.metmuseum.org/CRDImages/dp/original/DP-42868-001.jpg",
+      "source": "Architect of the Capitol",
+      "verified": true,
+      "alt_source": "Metropolitan Museum of Art"
+    },
+    {
+      "id": "art.peale-artist-in-his-museum",
+      "title": "Charles Willson Peale, 'The Artist in His Museum,' 1822",
+      "primary_url": "https://www.pafa.org/sites/default/files/inline-images/PEALE-1878_1_2.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Charles_Willson_Peale_-_Charles_Willson_Peale_Self-Portrait_-_Google_Art_Project.jpg",
+      "source": "Pennsylvania Academy of the Fine Arts",
+      "verified": true
+    },
+    {
+      "id": "art.peale-mastodon",
+      "title": "Charles Willson Peale, 'The Exhumation of the Mastodon,' 1806-08",
+      "primary_url": "https://d3ec1vt3scx7rr.cloudfront.net/files/styles/ui_large/s3/images/2020-01/PealeC_ExhumationOfMastodon.jpg?itok=l_2vppWe",
+      "alt_url": "https://d3ec1vt3scx7rr.cloudfront.net/files/images/2020-01/PealeC_ExhumationOfMastodon.jpg",
+      "source": "Smithsonian American Art Museum",
+      "verified": true,
+      "alt_source": "Smithsonian American Art Museum"
+    },
+    {
+      "id": "art.bank-of-the-united-states",
+      "title": "Bank of the United States, Philadelphia (NYPL scan)",
+      "primary_url": "https://images.metmuseum.org/CRDImages/ad/original/DP238084.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/5/55/Bank_of_the_United_States%2C_in_Third_Street%2C_Philadelphia_LCCN2002718879.jpg",
+      "source": "Metropolitan Museum of Art",
+      "verified": true,
+      "note": " [1024px fallback: 1024px fallback; 'Bank of the United States, Philadelphia' print by Joseph Stubbs (Met object 6204); verified HTTP 200 image/jpeg 1719280 bytes; entry's other URL is wikimedia]"
+    },
+    {
+      "id": "art.philadelphia-birch-1800",
+      "title": "Philadelphia in 1800, engraving by William Birch (National Portrait Gallery, Smithsonian)",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/The_City_and_Port_of_Philadelphia%2C_on_the_River_Delaware_from_Kensington%2C_by_William_Russell_Birch%2C_1800%2C_hand-colored_engraving%2C_from_the_National_Portrait_Gallery_-_NPG-AD_NPG_2013_5_5PortofPhiladelphiadet-000002.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Arch_Street_Ferry%2C_Philadelphia%2C_by_William_Russell_Birch%2C_1800%2C_hand-colored_engraving%2C_from_the_National_Portrait_Gallery_-_NPG-AD_NPG_2013_5_3ArchStFerry-000002.jpg",
+      "source": "smithsonian",
+      "verified": true
+    },
+    {
+      "id": "art.capitol-in-1800",
+      "title": "The Capitol in 1800",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/0/07/The_Capitol_in_1800_taken_from_advanced_proof_of_plate_38_History_of_the_United_States_Capitol_by_Glenn_Brown_LCCN2014649261.tif",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/1/19/U.S._Capitol%2C_Washington%2C_D.C._East_elevation%2C_low_dome_LCCN92519533.jpg",
+      "source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "art.new-orleans-cession-1803",
+      "title": "The last flag-raising: cession of New Orleans, 1803",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/The_Last_Flag_Raising_Ceremony_-_Cession_of_New_Orleans_%281803%29.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/1/12/New_Orleans_Municipal_Council_30_Nov_1803.png",
+      "source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "art.louisiana-transfer-thulstrup",
+      "title": "Transfer of Louisiana at New Orleans, by Thure de Thulstrup",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Louisiana_Purchase_New_Orleans_Thure_de_Thulstrup.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/The_Last_Flag_Raising_Ceremony_-_Cession_of_New_Orleans_%281803%29.jpg",
+      "source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "art.haiti-vertieres",
+      "title": "Battle of Vertieres, Haiti, 1803",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Vertieres.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Bataille_de_Verti%C3%A8res.jpg",
+      "source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "art.haiti-revolt-1791",
+      "title": "Slave revolt of Saint-Domingue, 1791",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Slave_Revolt_of_Saint_Domingue_1791.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Fire_in_Saint-Domingo_1791%2C_German_copper_engraving.jpg",
+      "source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "art.jefferson-inaugural-medal-1801",
+      "title": "Thomas Jefferson inaugural medal, 1801 (Smithsonian American Art Museum)",
+      "primary_url": "https://images.metmuseum.org/CRDImages/ad/original/LC-07_251_101-001.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/1801_Thomas_Jefferson_Inaugural_Medal%2C_Silver%2C_MS62_NGC.jpg",
+      "source": "Metropolitan Museum of Art",
+      "verified": true,
+      "note": " [1024px fallback: 1024px fallback; Inauguration Medal of Thomas Jefferson 1801 by Johann Mathias Reich, obverse (Met 07.251.101); verified HTTP 200 image/jpeg 1456057 bytes; entry's other URL is wikimedia]"
+    },
+    {
+      "id": "art.capitol-cornerstone-1793",
+      "title": "Cornerstone of the Capitol laid, Sept. 18, 1793 (De Land painting, LOC)",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Cornerstone_laid_by_George_Washington%2C_Sept._18%2C_1793_-_painting_by_Clyde_De_Land._LCCN2014648349.tif",
+      "alt_url": "https://www.aoc.gov/sites/default/files/styles/alternative_x_large_3_2/public/2022-02/070643-2000w-Capitol-Cox-Corridors-Cornerstone-Ceremony.jpg.webp?itok=7cQ_VD62",
+      "source": "loc",
+      "verified": true,
+      "alt_source": "Architect of the Capitol",
+      "note": " [1024px fallback: 1024px fallback; Allyn Cox's 1974 'Capitol Cornerstone Ceremony, 1793' mural (Cox Corridors) depicting the Sept 18 1793 ceremony -- same event as the De Land painting; verified HTTP 200 image/webp 181386 bytes; entry's other URL is wikimedia]"
+    },
+    {
+      "id": "art.old-supreme-court-chamber",
+      "title": "Old Supreme Court Chamber, U.S. Capitol",
+      "primary_url": "https://www.aoc.gov/sites/default/files/2022-02/072246-2000w-US-Capitol-Old-Supreme-Court-Chamber.jpg",
+      "alt_url": "https://www.aoc.gov/sites/default/files/styles/social_standard/public/2022-02/072246-2000w-US-Capitol-Old-Supreme-Court-Chamber.jpg.webp?h=6328b48a&itok=p9tRdwBA",
+      "source": "Architect of the Capitol",
+      "verified": true,
+      "alt_source": "Architect of the Capitol"
+    },
+    {
+      "id": "art.monticello-east-portico",
+      "title": "Monticello, the east portico (Library of Congress)",
+      "primary_url": "https://tile.loc.gov/storage-services/service/pnp/cph/3c00000/3c04000/3c04700/3c04751v.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Monticello_Home_of_Thomas_Jefferson_2.jpg",
+      "source": "loc",
+      "verified": true
+    },
+    {
+      "id": "art.two-dollar-bill-reverse",
+      "title": "U.S. $2 bill reverse: Trumbull's Declaration engraved",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/US-%242-LT-1928-Fr.1501.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/BEP-GIRSCH-Declaration_of_Independence_%28Trumbull%29.jpg",
+      "source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "art.whiskey-rebellion",
+      "title": "The Whiskey Rebellion, 1794",
+      "primary_url": "https://images.metmuseum.org/CRDImages/ad/original/DT2045.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Famous_Whiskey_Insurrection_in_Pennsylvania.jpg",
+      "source": "Metropolitan Museum of Art",
+      "verified": true,
+      "note": " [1024px fallback: 1024px fallback; 'Washington Reviewing the Western Army at Fort Cumberland' by Frederick Kemmelmeyer, c.1794 (Met object 11302) -- depicts Washington reviewing federal troops raised to suppress the Whiskey Rebellion; verified HTTP 200 image/jpeg 2913548 bytes; entry's other URL is wikimedia]"
+    },
+    {
+      "id": "art.congress-hall-philadelphia",
+      "title": "Congress Hall, Philadelphia, where the House broke the 1800 tie",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Congress_Hall_exterior.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Congress_Hall_-_Philadelphia_%282642813566%29.jpg",
+      "source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "art.chestnut-street-theatre",
+      "title": "Congress Hall and the New Theatre, Chestnut Street, Philadelphia (LOC)",
+      "primary_url": "https://tile.loc.gov/storage-services/master/pnp/cph/3b50000/3b52000/3b52000/3b52053u.tif",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Congress_Hall_exterior.jpg",
+      "source": "Library of Congress",
+      "verified": true
+    },
+    {
+      "id": "map.louisiana-purchase-1803",
+      "title": "Map of the Louisiana Purchase, 1803",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Geography_028_-_Map_of_the_Louisiana_Purchase_-_1803.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/9/90/United_States_1804-03-1804-10.png",
+      "source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "map.saint-domingue",
+      "title": "Isle de Saint Domingue (Library of Congress map)",
+      "primary_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd4:g4930:g4930:ar185400/full/pct:100/0/default.jpg",
+      "alt_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd4:g4930:g4930:ar185400/full/!1600,1600/0/default.jpg",
+      "source": "loc",
+      "verified": true,
+      "alt_source": "Library of Congress"
+    },
+    {
+      "id": "map.new-orleans-1803",
+      "title": "Plan of New Orleans, 1803 (Boquet de Woiseri)",
+      "primary_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd401:g4014:g4014n:ar167700/full/pct:25/0/default.jpg",
+      "alt_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd401:g4014:g4014n:ar167701/full/pct:25/0/default.jpg",
+      "source": "Library of Congress",
+      "verified": true,
+      "alt_source": "Library of Congress"
+    },
+    {
+      "id": "map.lenfant-washington",
+      "title": "L'Enfant's plan of Washington, D.C. (Library of Congress)",
+      "primary_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd385:g3850:g3850:ct004364/full/pct:100/0/default.jpg",
+      "alt_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd385:g3850:g3850:ct004364/full/!1600,1600/0/default.jpg",
+      "source": "loc",
+      "verified": true,
+      "alt_source": "Library of Congress"
+    },
+    {
+      "id": "map.clark-west-1810",
+      "title": "Clark's map of the American West, 1810 (Library of Congress)",
+      "primary_url": "https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:03:05:7:wdl_03057:1053073/full/pct:100/0/default.jpg",
+      "alt_url": "https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:03:05:7:wdl_03057:1053073/full/!1600,1600/0/default.jpg",
+      "source": "loc",
+      "verified": true,
+      "alt_source": "Library of Congress"
+    },
+    {
+      "id": "map.missouri-territory",
+      "title": "Missouri Territory, formerly Louisiana (Bower)",
+      "primary_url": "https://archive.org/download/dr_missouri-territory-formerly-louisiana-bower-sc-00054075/00054075.jpg",
+      "alt_url": "https://archive.org/download/dr_missouri-territory-formerly-louisiana-bower-sc-2721032/2721032.jpg",
+      "source": "Internet Archive",
+      "verified": true,
+      "alt_source": "Internet Archive"
+    },
+    {
+      "id": "obj.jefferson-writing-desk",
+      "title": "Thomas Jefferson's portable writing desk, Philadelphia, 1776 (Library of Congress exhibit)",
+      "primary_url": "https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/cd/02/cd02140d-dc0e-4c31-ad75-7a969cf95b9e/jeffersondesk_.jpg",
+      "alt_url": "https://www.loc.gov/exhibits/jefferson/images/vc30.jpg",
+      "source": "Smithsonian Magazine / National Museum of American History",
+      "verified": true
+    },
+    {
+      "id": "place.cabildo-new-orleans",
+      "title": "The Cabildo, New Orleans, where the Louisiana Purchase was signed",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Cabildo_%28where_the_Louisiana_Purchase_was_signed%29_and_New_Orleans_cathedral_%282254719401%29.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Louisiana_Purchase_New_Orleans_Thure_de_Thulstrup.jpg",
+      "source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "art.gallatin-statue-treasury",
+      "title": "Albert Gallatin statue at the U.S. Treasury",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Albert_Gallatin_statue.JPG",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Albert_Gallatin_by_Matthew_Wilson%2C_1879.jpg",
+      "source": "wikimedia",
+      "verified": true
+    }
+  ]
 }
