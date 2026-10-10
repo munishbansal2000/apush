@@ -149,10 +149,12 @@ export function buildPlan(input: BuildInputs): BuildResult {
       }
       else if (v.kind === 'point') {
         // A backdrop that cannot be used full frame is replaced by the nearest usable storyboard image (and reported).
+        // The card's backdrop drifts to 1.15x (PointView): it must take that zoom without upscaling.
+        const fits = (p: string | undefined) => !!p && (byPath.get(p)?.maxZoom ?? 0) >= 1.15;
         let backdrop = v.backdrop;
-        if (!backdrop || !byPath.has(backdrop)) {
-          const near = sb.turns.flatMap(x => x.visuals).map(x => (x.kind === 'point' ? x.backdrop : x.image)).find(p => p && byPath.has(p));
-          storyboardIssues.push(`turn ${index}: point card backdrop "${backdrop}" is not available${near ? `; using "${near}"` : ''}`);
+        if (!fits(backdrop)) {
+          const near = sb.turns.flatMap(x => x.visuals).map(x => (x.kind === 'point' ? x.backdrop : x.image)).find(fits);
+          storyboardIssues.push(`turn ${index}: point card backdrop "${backdrop}" is ${backdrop && byPath.has(backdrop) ? 'too small for the card' : 'not available'}${near ? `; using "${near}"` : ''}`);
           backdrop = near;
           if (!backdrop) continue;
         }
@@ -288,7 +290,7 @@ export function buildPlan(input: BuildInputs): BuildResult {
     const t = treatmentFor(String(d.shot.image));
     const alt = t && alternateFraming(t, b);
     if (!alt) { warnings.push(`turn ${(d.shot.at as Cue).turn}: three ${b} moves in a row (no alternative framing)`); continue; }
-    Object.assign(d.shot, {from: alt.framing.from, to: alt.framing.to, framing: alt.name});
+    Object.assign(d.shot, {...clampMove(byPath.get(String(d.shot.image))?.maxZoom ?? 1, {from: alt.framing.from, to: alt.framing.to}, t), framing: alt.name});
     fixes.push(`turn ${(d.shot.at as Cue).turn}: "${String(String(d.shot.image)).split('/').pop()}" switched to ${alt.name} (${alt.framing.move}) for variety`);
   }
 
@@ -312,6 +314,13 @@ export function buildPlan(input: BuildInputs): BuildResult {
     if (!(timeOfCue(b.at) - timeOfCue(a.at) < YEAR_MERGE_SEC)) continue;
     fixes.push(`turn ${b.at.turn}: years ${a.text} and ${b.text} said together; one stamp "${a.text}–${b.text}"`);
     years.splice(i - 1, 2, {at: a.at, text: `${a.text}–${b.text}`});
+  }
+  // Every camera move within its image's zoom limit, whichever pass set it (a too-small scan must never be upscaled).
+  for (const d of drafts) {
+    const entry = typeof d.shot.image === 'string' ? byPath.get(d.shot.image) : undefined;
+    if (!entry || !d.shot.from || !d.shot.to || !['image_move', 'portrait', 'clip'].includes(d.shot.type)) continue;
+    const capped = clampMove(entry.maxZoom, {from: fromOf(d.shot), to: toOf(d.shot)}, treatmentFor(entry.path));
+    if (capped.from.zoom !== fromOf(d.shot).zoom || capped.to.zoom !== toOf(d.shot).zoom) Object.assign(d.shot, capped);
   }
   const shots = drafts.map(d => {
     const {framing: _f, ...rest} = d.shot as Record<string, unknown>;

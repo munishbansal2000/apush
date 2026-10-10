@@ -190,3 +190,20 @@ describe('scene builder: the Episode Sheet intro', () => {
     assert.ok(r.fixes.some(f => /under the Episode Sheet/.test(f)));
   });
 });
+
+describe('scene builder: zoom limits', () => {
+  it('no camera move exceeds its image\'s zoom limit, whichever pass sets it', async () => {
+    const {buildPlan} = await import('../tools/pipeline/scene-builder');
+    const {buildCatalog} = await import('../tools/pipeline/doc-director');
+    const sb = fixture();
+    // Every image a tall, narrow scan: a cover fit already enlarges it 1.5x, so its limit is about 1.06x.
+    const paths = [...new Set(sb.turns.flatMap(t => t.visuals.map(v => v.image ?? v.backdrop)).filter(Boolean))] as string[];
+    const small = buildCatalog(Object.fromEntries(paths.map(p => [p, {width: 1280, height: 2095}])), {});
+    const r = buildPlan({storyboard: sb, turns, timing, words: {}, catalog: small, treatments: {}, allowEstimated: true});
+    const limit = new Map(small.map(c => [c.path, c.maxZoom]));
+    for (const s of r.plan.shots as unknown as {type: string; image?: string; from?: {zoom: number}; to?: {zoom: number}}[]) {
+      if (!s.image || !s.from || !s.to) continue;
+      assert.ok(s.from.zoom <= limit.get(s.image)! + 1e-9 && s.to.zoom <= limit.get(s.image)! + 1e-9, `${s.type} ${s.image}: ${s.from.zoom}->${s.to.zoom} > ${limit.get(s.image)}`);
+    }
+  });
+});
