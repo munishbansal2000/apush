@@ -272,6 +272,7 @@ export function buildPlan(input: BuildInputs): BuildResult {
 
   // A year stamp marks a new year: each year is stamped once, where it is first said (repeats are noise).
   const stamped = new Set<string>();
+  const YEAR_MERGE_SEC = 1.5;
   const years = (sb.years ?? []).flatMap(y => {
     const index = indexOf.get(y.key);
     const at = index === undefined ? null : cue(index, y.phrase);
@@ -282,6 +283,14 @@ export function buildPlan(input: BuildInputs): BuildResult {
     stamped.add(text);
     return [{at, text}];
   });
+  // Years said almost together ("1760 and 1761") are one stamp, "1760–1761", at the first.
+  const timeOfCue = (c: Cue) => { try { return resolvePhrase(c, turns, timing, words, 'start', input.allowEstimated).sec; } catch { return NaN; } };
+  for (let i = years.length - 1; i > 0; i--) {
+    const [a, b] = [years[i - 1], years[i]];
+    if (!(timeOfCue(b.at) - timeOfCue(a.at) < YEAR_MERGE_SEC)) continue;
+    fixes.push(`turn ${b.at.turn}: years ${a.text} and ${b.text} said together; one stamp "${a.text}–${b.text}"`);
+    years.splice(i - 1, 2, {at: a.at, text: `${a.text}–${b.text}`});
+  }
   const shots = drafts.map(d => {
     const {framing: _f, ...rest} = d.shot as Record<string, unknown>;
     return rest as unknown as PlanShot;

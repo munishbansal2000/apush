@@ -164,3 +164,15 @@ describe('scene builder: the opening and the lesson budgets', () => {
     assert.ok(r.fixes.some(f => /clip over the lesson's 2; plays as a move/.test(f)));
   });
 });
+
+describe('scene builder: year stamps', () => {
+  it('each year once; years said almost together become one stamp', async () => {
+    const {buildPlan} = await import('../tools/pipeline/scene-builder');
+    const sb = fixture();
+    const key = sb.turns[0].key;
+    sb.years = [{key, phrase: 'last time', text: '1760'}, {key, phrase: 'two centuries', text: '1761'}, {key, phrase: 'start arguing', text: '1760'}] as never;
+    const r = buildPlan({storyboard: sb, turns, timing, words: {}, catalog, treatments: {}, allowEstimated: true});
+    assert.deepEqual((r.plan.years ?? []).map(y => y.text), ['1760–1761']);
+    assert.ok(r.fixes.some(f => /said together/.test(f)) && r.fixes.some(f => /already stamped/.test(f)), r.fixes.join('\n'));
+  });
+});

@@ -35,8 +35,11 @@ describe('year stamps', () => {
   it('a stamp gives way to the next year: never two on screen, the last keeps its full time', async () => {
     const {yearStampSpans, yearStampZone, YEAR_STAMP_SEC} = await import('../src/documentary/shots');
     const spans = yearStampSpans([{sec: 10}, {sec: 12.5}, {sec: 40}]);
-    assert.deepEqual(spans, [2.5, YEAR_STAMP_SEC, YEAR_STAMP_SEC]);
-    assert.equal(yearStampZone('1760', Math.round(2.5 * 30), 30, 1920, 1080, 2.5).opacity, 0, 'faded out when the next arrives');
+    assert.ok(Math.abs(spans[0] - (2.5 - 1 / 30)) < 1e-9 && spans[1] === YEAR_STAMP_SEC && spans[2] === YEAR_STAMP_SEC, JSON.stringify(spans));
+    const close = [{sec: 10}, {sec: 10.17}];
+    const s2 = yearStampSpans(close);
+    assert.ok(close[0].sec + s2[0] <= close[1].sec, 'two years said 0.17s apart never share the screen');
+    assert.equal(yearStampZone('1760', Math.round(2.5 * 30) - 1, 30, 1920, 1080, 2.5 - 1 / 30).opacity, 0, 'faded out when the next arrives');
     assert.ok(yearStampZone('1760', Math.round(1.5 * 30), 30, 1920, 1080, 2.5).opacity > 0.5);
   });
 });
@@ -52,5 +55,16 @@ describe('year stamp and map labels', () => {
         assert.ok(!(label >= 0.05 && stamp >= 0.05), `hold ${hold}s frame ${f}: label ${label.toFixed(2)} and stamp ${stamp.toFixed(2)} both visible`);
       }
     }
+  });
+});
+
+describe('year stamp size', () => {
+  it('a range like "1760–1761" scales down to a year\'s width', async () => {
+    const {yearStampZone} = await import('../src/documentary/shots');
+    const one = yearStampZone('1763', 10, 30, 1920, 1080);
+    const range = yearStampZone('1760–1761', 10, 30, 1920, 1080);
+    const w = (z: {rect: number[]}) => z.rect[2] - z.rect[0];
+    assert.ok(Math.abs(w(range) - w(one)) / w(one) < 0.25, `${w(one)} vs ${w(range)}`);
+    assert.ok(range.rect[0] >= 0 && range.rect[2] <= 1920, 'stays on screen');
   });
 });
