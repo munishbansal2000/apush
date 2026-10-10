@@ -3,6 +3,7 @@
  *
  *   npm run studio:doc -- u3e1                the lesson's current plan (data/<lesson>/shots.json), unapproved geography allowed
  *   npm run studio:doc -- u3e1 --guard        with the layout guard on (red outlines on problems; playback is slower)
+ *   npm run studio:doc -- u3e1 --clean        without the review label (line · act · shot, bottom left)
  *   npm run studio:doc -- u3e1 --props-only   just write the props file (out/studio/<lesson>.props.json)
  *
  * For smooth playback the narration and music are pre-mixed into one track (public/studio/<lesson>.m4a; sound cues are
@@ -46,7 +47,7 @@ const dir = join(ROOT, 'out', 'studio');
 mkdirSync(dir, {recursive: true});
 const audioTrack = studioTrack();
 const props = {episode: lesson, shots: resolved.shots, years: resolved.years, boxes: resolved.boxes, turns: inputs.turns, timing: inputs.timing,
-  ...(audioTrack ? {audioTrack} : {}), guard: flag('guard')};
+  ...(audioTrack ? {audioTrack} : {}), guard: flag('guard'), reviewLabel: !flag('clean'), acts: (inputs.plan as {acts?: {turns: {from: number; to: number}}[]} | null)?.acts ?? []};
 const file = join(dir, `${lesson}.props.json`);
 writeFileSync(file, JSON.stringify(props));
 console.log(`[studio] ${lesson}: ${resolved.shots.length} shots, ${(inputs.timing.totalSec / 60).toFixed(1)} min${audioTrack ? ', one audio track' : ''}${flag('guard') ? ', layout guard on' : ''} -> ${relative(ROOT, file)}`);

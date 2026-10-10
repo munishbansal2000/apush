@@ -133,4 +133,8 @@ export interface DocEpisodeProps extends Record<string, unknown> {
   audioTrack?: string;
   /** Studio preview only: false turns the per-frame layout guard off for smooth playback (renders always guard). */
   guard?: boolean;
+  /** Studio preview only: a small corner label with the current line, shot and act, for writing review notes. */
+  reviewLabel?: boolean;
+  /** Act boundaries (turn ranges), for the review label. */
+  acts?: {turns: {from: number; to: number}}[];
 }
