@@ -1,31 +1,33 @@
-  [META COPY SUCCESS] Copied via message action copy button (button[aria-label="Copy response"]): 3781 chars
+[storyboard] lesson-wide validation passed; storyboard complete
   [storyboard act 3] 1 item(s):
     - turn 18 visual 1: "The line." appears 2 times in the line; give "occurrence" or a longer phrase
-  [storyboard assembled (attempt 2)] 17 item(s):
-    - turn 33: custom explainer "ProclamationLineMap" is already used at turn 18; once per lesson, use a standard visual here
-    - turn 44: custom explainer "PontiacFortsMap" is already used at turn 42; once per lesson, use a standard visual here
-    - turn 52: custom explainer "ProclamationLineMap" is already used at turn 18; once per lesson, use a standard visual here
-    - turn 54: custom explainer "PontiacFortsMap" is already used at turn 42; once per lesson, use a standard visual here
-    - turn 64: custom explainer "PontiacFortsMap" is already used at turn 42; once per lesson, use a standard visual here
-    - turn 65: custom explainer "StampActTax" is over the lesson budget (2 explainers, already ProclamationLineMap, PontiacFortsMap); use a standard visual here
-    - "historic/u3e1/scene-london-1760s.jpg" is used 7 times; max 4 per lesson
-    - "historic/u3e1/george-grenville-portrait.jpg" is used 8 times; max 4 per lesson
-  [storyboard assembled (attempt 3)] 7 item(s):
-    - "historic/u3e1/map-seven-years-war-world.jpg" is used 5 times; max 4 per lesson
-    - "historic/u3e1/doc-london-gazette-1763.jpg" is used 6 times; max 4 per lesson
-    - "historic/u3e1/doc-pennsylvania-gazette-1763.jpg" is used 6 times; max 4 per lesson
-    - "historic/u3e1/doc-colonial-newspaper-1764.jpg" is used 8 times; max 4 per lesson
-    - "historic/u3e1/art-siege-detroit-1763.jpg" is used 5 times; max 4 per lesson
-    - "historic/u3e1/map-proclamation-line-1763.jpg" is used 6 times; max 4 per lesson
-    - "historic/u3e1/portrait-pontiac-engraving.jpg" is used 5 times; max 4 per lesson
-C:\Users\munis\projects\apush2\apush\video2\tools\pipeline\stages\storyboard.ts:139
-    if (!r.storyboard) throw new Error(`storyboard: no valid storyboard after repairs; see ${relative(ROOT, join(ctx.work, 'storyboard.log.json'))}`);
-                             ^
+  [storyboard] 7 item(s):
+    - map view "map.thirteen-colonies" appears 5 times in the lesson (turns 0, 5, 9, 11, 19); consider varying it
+    - map view "map.atlantic-world" appears 8 times in the lesson (turns 0, 5, 9, 20, 29, 44, 50, 61); consider varying it
+    - map view "map.north-america" appears 6 times in the lesson (turns 1, 26, 32, 33, 59, 66); consider varying it
+    - map view "map.eastern-north-america" appears 8 times in the lesson (turns 15, 25, 28, 29, 38, 42, 52, 64); consider varying it
+    - map view "map.ohio-valley" appears 6 times in the lesson (turns 18, 19, 27, 33, 40, 56); consider varying it
+    - map view "map.great-lakes" appears 5 times in the lesson (turns 42, 47, 54, 62, 64); consider varying it
+    - turn 50: 2 points in a row across acts
+[storyboard] 163 visuals -> data\u3e1\storyboard.json
+[build] 62 treatment(s) proposed -> data/library/treatments.json (check: npm run storyboard -- u3e1 framings)
+  [build] 21 item(s):
+    - turn 17: added the missing question card for the 10s pause
+    - turn 31: added the missing question card for the 10s pause
+    - turn 57: added the missing question card for the 10s pause
+    - turn 60: added the missing question card for the 10s pause
+    - turn 63: added the missing question card for the 10s pause
+    - dropped "london drew it" (turn 18): cut too close to the next
+    - dropped "cheap answer to" (turn 58): cut too close to the next
+    - dropped "around the great lakes" (turn 42): the explainer before it needs 5s
+C:\Users\munis\projects\apush2\apush\video2\tools\pipeline\stages\storyboard.ts:220
+      throw new Error(`build: ${noted.count} problem(s) sent back to storyboard act(s) ${noted.acts.join(', ')} as review notes; run again to re-board them${noted.rest.length ? `\nfor a person:\n${noted.rest.join('\n')}` : ''}`);
+            ^
 
-Error: storyboard: no valid storyboard after repairs; see out\pipeline\u3e1\storyboard.log.json
-    at storyboardStage (C:\Users\munis\projects\apush2\apush\video2\tools\pipeline\stages\storyboard.ts:139:30)
-    at runPipeline (C:\Users\munis\projects\apush2\apush\video2\tools\pipeline\run.ts:49:38)
-    at <anonymous> (C:\Users\munis\projects\apush2\apush\video2\tools\video-pipeline.ts:17:9)
+Error: build: 33 problem(s) sent back to storyboard act(s) 1, 2, 3, 4, 5, 6, 7, 8 as review notes; run again to re-board them
+    at buildStage (C:\Users\munis\projects\apush2\apush\video2\tools\pipeline\stages\storyboard.ts:220:13)
+    at runPipeline (C:\Users\munis\projects\apush2\apush\video2\tools\pipeline\run.ts:50:33)
+    at <anonymous> (C:\Users\munis\projects\apush2\apush\video2\tools\video-pipeline.ts:18:9)
     at ModuleJob.run (node:internal/modules/esm/module_job:439:25)
     at async node:internal/modules/esm/loader:643:26
     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)

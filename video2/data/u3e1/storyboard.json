@@ -1,0 +1,2759 @@
+{
+  "episode": "u3e1",
+  "acts": [
+    {
+      "title": "The 1763 Turning Point",
+      "purpose": "Understand Britain's victory creates enormous debt and two conflicting ledgers for the empire.",
+      "turns": {
+        "from": 0,
+        "to": 8
+      }
+    },
+    {
+      "title": "The End of Salutary Neglect",
+      "purpose": "Understand Grenville ends beneficial neglect to enforce trade laws and collect revenue.",
+      "turns": {
+        "from": 9,
+        "to": 15
+      }
+    },
+    {
+      "title": "Drawing the Line",
+      "purpose": "Understand the Proclamation Line was triage to avoid another expensive frontier war, not punishment.",
+      "turns": {
+        "from": 16,
+        "to": 26
+      }
+    },
+    {
+      "title": "A Fence That Failed",
+      "purpose": "Understand the line failed as a fence, stung as an insult, and set a pattern for Indian country.",
+      "turns": {
+        "from": 27,
+        "to": 33
+      }
+    },
+    {
+      "title": "Why Pontiac Fought",
+      "purpose": "Understand French gift diplomacy versus Amherst's cuts and Neolin's prophetic vision behind the revolt.",
+      "turns": {
+        "from": 34,
+        "to": 42
+      }
+    },
+    {
+      "title": "The Frontier Burns Both Ways",
+      "purpose": "Understand fort seizures, smallpox blankets, Paxton Boys, and who the 1763 rebels actually were.",
+      "turns": {
+        "from": 43,
+        "to": 49
+      }
+    },
+    {
+      "title": "Landing the Three Boxes",
+      "purpose": "Recap all three boxes and apply the Proclamation to an AP stimulus about cheap triage.",
+      "turns": {
+        "from": 50,
+        "to": 59
+      }
+    },
+    {
+      "title": "Broken Trust and Next Taxes",
+      "purpose": "Understand broken trust as the war's deepest effect and preview the coming tax fights.",
+      "turns": {
+        "from": 60,
+        "to": 67
+      }
+    }
+  ],
+  "boxes": [
+    {
+      "label": "the end of salutary neglect",
+      "intro": {
+        "turn": 0,
+        "phrase": "the end of salutary neglect"
+      },
+      "check": {
+        "turn": 15,
+        "phrase": "Box one, done"
+      },
+      "turns": {
+        "from": 1,
+        "to": 15
+      }
+    },
+    {
+      "label": "the Proclamation Line of 1763",
+      "intro": {
+        "turn": 0,
+        "phrase": "the Proclamation Line of 1763"
+      },
+      "check": {
+        "turn": 53,
+        "phrase": "On the sheet"
+      },
+      "turns": {
+        "from": 16,
+        "to": 33
+      }
+    },
+    {
+      "label": "Pontiac's Rebellion",
+      "intro": {
+        "turn": 0,
+        "phrase": "Pontiac's Rebellion"
+      },
+      "check": {
+        "turn": 55,
+        "phrase": "All three"
+      },
+      "turns": {
+        "from": 34,
+        "to": 49
+      }
+    }
+  ],
+  "years": [
+    {
+      "key": "maya:3299d91dd8",
+      "phrase": "1763.",
+      "text": "1763"
+    },
+    {
+      "key": "marcus:849f3327c8",
+      "phrase": "from 1763.",
+      "text": "1763"
+    },
+    {
+      "key": "marcus:707298e526",
+      "phrase": "in 1775",
+      "text": "1775"
+    },
+    {
+      "key": "marcus:56e9bfed83",
+      "phrase": "in 1763",
+      "text": "1763"
+    },
+    {
+      "key": "marcus:f916919eef",
+      "phrase": "Proclamation of 1763:",
+      "text": "1763"
+    },
+    {
+      "key": "maya:f5b783cfdb",
+      "phrase": "Line of 1763",
+      "text": "1763"
+    },
+    {
+      "key": "marcus:c4ada979b2",
+      "phrase": "In 1760",
+      "text": "1760"
+    },
+    {
+      "key": "marcus:c4ada979b2",
+      "phrase": "and 1761,",
+      "text": "1761"
+    },
+    {
+      "key": "marcus:c4ada979b2",
+      "phrase": "in 1763,",
+      "text": "1763"
+    },
+    {
+      "key": "maya:cd95d2c9e9",
+      "phrase": "In 1763",
+      "text": "1763"
+    },
+    {
+      "key": "marcus:bfc561861a",
+      "phrase": "into 1764,",
+      "text": "1764"
+    },
+    {
+      "key": "marcus:ff439fccbf",
+      "phrase": "In 1763",
+      "text": "1763"
+    },
+    {
+      "key": "maya:652385f3ea",
+      "phrase": "rebels in 1763",
+      "text": "1763"
+    },
+    {
+      "key": "maya:51cf886ceb",
+      "phrase": "Line of 1763.",
+      "text": "1763"
+    },
+    {
+      "key": "maya:b95bd7c06e",
+      "phrase": "chief, 1763.",
+      "text": "1763"
+    },
+    {
+      "key": "maya:ca75a020d6",
+      "phrase": "after 1763",
+      "text": "1763"
+    }
+  ],
+  "turns": [
+    {
+      "key": "maya:3299d91dd8",
+      "index": 0,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e1/map-mitchell-1755.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "Last time:"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.thirteen-colonies",
+            "period": 1763,
+            "moves": [
+              {
+                "at": {
+                  "phrase": "New England,"
+                },
+                "to": "new-england",
+                "highlight": true
+              },
+              {
+                "at": {
+                  "phrase": "the middle colonies,"
+                },
+                "to": "middle-colonies",
+                "highlight": true
+              },
+              {
+                "at": {
+                  "phrase": "the South."
+                },
+                "to": "southern-colonies",
+                "highlight": true
+              }
+            ]
+          },
+          "at": {
+            "phrase": "two centuries of English colonies"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.atlantic-world",
+            "period": 1763,
+            "moves": [
+              {
+                "at": {
+                  "phrase": "arguing with London."
+                },
+                "to": "london",
+                "highlight": true
+              }
+            ]
+          },
+          "at": {
+            "phrase": "stop arguing with"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/map-seven-years-war-world.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "Britain's won the biggest"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/scene-westminster-1760s.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "prime minister opens"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/scene-london-1760s.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "turns pale."
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "point",
+          "backdrop": "historic/u3e1/map-north-america-1763.jpg",
+          "bullets": [
+            {
+              "text": "End of salutary neglect",
+              "at": {
+                "phrase": "the end of"
+              }
+            },
+            {
+              "text": "Proclamation Line, 1763",
+              "at": {
+                "phrase": "the Proclamation Line of"
+              }
+            },
+            {
+              "text": "Pontiac's Rebellion",
+              "at": {
+                "phrase": "Pontiac's Rebellion."
+              }
+            }
+          ],
+          "at": {
+            "phrase": "Three boxes on"
+          },
+          "priority": "essential",
+          "pace": "quick"
+        }
+      ]
+    },
+    {
+      "key": "marcus:f2b62fe805",
+      "index": 1,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e1/object-colonial-currency.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "start with the bill."
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/scene-london-1760s.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "The war left"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.north-america",
+            "period": 1763,
+            "moves": [
+              {
+                "at": {
+                  "phrase": "Canada to garrison,"
+                },
+                "to": "quebec",
+                "highlight": true
+              },
+              {
+                "at": {
+                  "phrase": "Florida to administer,"
+                },
+                "to": "florida",
+                "highlight": true
+              },
+              {
+                "at": {
+                  "phrase": "frontier past every"
+                },
+                "to": "frontier",
+                "highlight": true
+              }
+            ]
+          },
+          "at": {
+            "phrase": "And the empire cost"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "point",
+          "backdrop": "historic/u3e1/map-british-empire-1763.jpg",
+          "bullets": [
+            {
+              "text": "Britain won the war",
+              "at": {
+                "phrase": "Britain won the war,"
+              }
+            },
+            {
+              "text": "wrecked old arrangement",
+              "at": {
+                "phrase": "wrecked the arrangement"
+              }
+            }
+          ],
+          "at": {
+            "phrase": "The thesis for"
+          },
+          "priority": "essential",
+          "pace": "hold"
+        }
+      ]
+    },
+    {
+      "key": "maya:34246c3f34",
+      "index": 2,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e1/map-british-empire-1763.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "someone else to bill."
+          },
+          "priority": "essential",
+          "span": 1
+        }
+      ]
+    },
+    {
+      "key": "marcus:2877b2fe96",
+      "index": 3,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e1/object-colonial-currency.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "emptied the treasury."
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "maya:18ddb4ef26",
+      "index": 4,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e1/george-grenville-portrait.jpg",
+          "framing": "face",
+          "name": "George Grenville",
+          "role": "Prime Minister, 1763-1765",
+          "at": {
+            "phrase": "Some poor soul"
+          },
+          "priority": "essential",
+          "span": 1
+        }
+      ]
+    },
+    {
+      "key": "marcus:849f3327c8",
+      "index": 5,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e1/scene-westminster-1760s.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "Prime minister from"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.thirteen-colonies",
+            "period": 1763
+          },
+          "at": {
+            "phrase": "The colonies had gained"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/doc-colonial-newspaper-1764.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "Their tax burden sat"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.atlantic-world",
+            "period": 1763
+          },
+          "at": {
+            "phrase": "why should London drown"
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "maya:ac22a5c612",
+      "index": 6,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e1/french-indian-war.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "The colonists sent"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/doc-treaty-paris-1763.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "they'd fulfilled their obligation."
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/doc-london-gazette-1763.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "mails them a bill"
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "marcus:eadd928f02",
+      "index": 7,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e1/french-indian-war.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "We bled, so the"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/portrait-george-iii-1762.jpg",
+          "framing": "face",
+          "name": "George III",
+          "role": "King of Great Britain",
+          "at": {
+            "phrase": "your taxes were a"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/doc-treaty-paris-1763.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "different ledgers."
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "maya:7216469d9a",
+      "index": 8,
+      "visuals": [
+        {
+          "kind": "clip",
+          "image": "historic/u3e1/object-powder-horn.jpg",
+          "prompt": "Dust motes drift slowly over engraved powder horn in soft light.",
+          "at": {
+            "phrase": "Different ledgers."
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "marcus:707298e526",
+      "index": 9,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e1/object-sugar-trade.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "those ledgers are"
+          },
+          "priority": "optional"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.atlantic-world",
+            "period": 1763,
+            "moves": [
+              {
+                "at": {
+                  "phrase": "London counted the money"
+                },
+                "to": "london",
+                "highlight": true
+              }
+            ]
+          },
+          "at": {
+            "phrase": "London counted the money"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.thirteen-colonies",
+            "period": 1763,
+            "moves": [
+              {
+                "at": {
+                  "phrase": "The colonies counted what"
+                },
+                "to": "colonies",
+                "highlight": true
+              }
+            ]
+          },
+          "at": {
+            "phrase": "The colonies counted what"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/george-grenville-portrait.jpg",
+          "framing": "face",
+          "name": "George Grenville",
+          "role": "Prime Minister, 1763-1765",
+          "at": {
+            "phrase": "He ends the era"
+          },
+          "priority": "essential",
+          "pace": "hold"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/scene-customs-wharf.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "absentee customs officers,"
+          },
+          "priority": "essential",
+          "pace": "quick"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/map-triangular-trade.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "smuggled molasses, everybody"
+          },
+          "priority": "essential",
+          "pace": "quick"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/edmund-burke-1769.jpg",
+          "framing": "face",
+          "name": "Edmund Burke",
+          "role": "Whig MP, coined 'salutary neglect' 1775",
+          "at": {
+            "phrase": "politician named Edmund Burke"
+          },
+          "priority": "essential",
+          "span": 1
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/doc-burke-conciliation-1775.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "looking back in 1775:"
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "maya:e5dc57078c",
+      "index": 10,
+      "visuals": []
+    },
+    {
+      "key": "marcus:56e9bfed83",
+      "index": 11,
+      "visuals": [
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.thirteen-colonies",
+            "period": 1763
+          },
+          "at": {
+            "phrase": "in 1763, it ended."
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/scene-customs-wharf.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "Old laws got real"
+          },
+          "priority": "optional"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/doc-sugar-act-1764.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "the Sugar Act,"
+          },
+          "priority": "essential",
+          "pace": "reveal"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/scene-merchant-ship.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "smuggling everyone had gotten"
+          },
+          "priority": "optional"
+        }
+      ]
+    },
+    {
+      "key": "maya:056209a103",
+      "index": 12,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e1/scene-westminster-1760s.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "One for the exam,"
+          },
+          "priority": "optional"
+        },
+        {
+          "kind": "point",
+          "backdrop": "historic/u3e1/object-sugar-trade.jpg",
+          "bullets": [
+            {
+              "text": "War debt drives taxes",
+              "at": {
+                "phrase": "war debt."
+              }
+            },
+            {
+              "text": "Smuggling = colorful detail",
+              "at": {
+                "phrase": "Smuggling makes a colorful"
+              }
+            },
+            {
+              "text": "Debt is the engine",
+              "at": {
+                "phrase": "Debt is the engine"
+              }
+            }
+          ],
+          "at": {
+            "phrase": "why London turned to taxes,"
+          },
+          "priority": "essential",
+          "pace": "quick"
+        }
+      ]
+    },
+    {
+      "key": "maya:7e6b2f360b",
+      "index": 13,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e1/doc-sugar-act-1764.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "Putting that on the sheet."
+          },
+          "priority": "optional"
+        }
+      ]
+    },
+    {
+      "key": "marcus:f7fa0c1e7f",
+      "index": 14,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e1/scene-westminster-1760s.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "don't pin a number"
+          },
+          "priority": "optional"
+        }
+      ]
+    },
+    {
+      "key": "maya:f19f7b43ca",
+      "index": 15,
+      "visuals": [
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.eastern-north-america",
+            "period": 1763,
+            "moves": [
+              {
+                "at": {
+                  "phrase": "frontier's already on fire."
+                },
+                "to": "frontier",
+                "highlight": true
+              }
+            ]
+          },
+          "at": {
+            "phrase": "frontier's already on fire."
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "maya:eb9cd5ea8e",
+      "index": 16,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e1/art-frontier-cabin.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "burned frontier"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/object-colonial-currency.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "empty treasury"
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "pause:10",
+      "index": 17,
+      "visuals": []
+    },
+    {
+      "key": "marcus:f916919eef",
+      "index": 18,
+      "visuals": [
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.ohio-valley",
+            "period": 1763,
+            "moves": [
+              {
+                "at": {
+                  "phrase": "crest of the Appalachians,"
+                },
+                "to": "appalachians",
+                "highlight": true
+              }
+            ]
+          },
+          "at": {
+            "phrase": "The line. Always"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/portrait-george-iii-1762.jpg",
+          "framing": "face",
+          "name": "George III",
+          "role": "King of Great Britain",
+          "at": {
+            "phrase": "London drew it."
+          },
+          "priority": "optional"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/doc-royal-proclamation-1763.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "Proclamation of 1763:"
+          },
+          "priority": "essential",
+          "pace": "reveal"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/scene-blue-ridge.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "a line along"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/scene-fur-trade.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "fur trade profits"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/object-colonial-currency.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "empty treasury could bear."
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "point",
+          "backdrop": "historic/u3e1/map-north-america-1763.jpg",
+          "bullets": [
+            {
+              "text": "Avoid second frontier war",
+              "at": {
+                "offset": 0.3
+              }
+            },
+            {
+              "text": "Save empty treasury",
+              "at": {
+                "offset": 1.1
+              }
+            },
+            {
+              "text": "Keep fur trade flowing",
+              "at": {
+                "offset": 1.9
+              }
+            }
+          ],
+          "at": {
+            "phrase": "Triage, not revenge."
+          },
+          "priority": "essential",
+          "pace": "hold"
+        }
+      ]
+    },
+    {
+      "key": "maya:41208487ab",
+      "index": 19,
+      "visuals": [
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.thirteen-colonies",
+            "period": 1763,
+            "moves": [
+              {
+                "at": {
+                  "phrase": "punishing the colonies?"
+                },
+                "to": "colonies",
+                "highlight": true
+              }
+            ]
+          },
+          "at": {
+            "phrase": "punishing the colonies?"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.ohio-valley",
+            "period": 1763,
+            "moves": [
+              {
+                "at": {
+                  "phrase": "no Ohio for"
+                },
+                "to": "ohio-river",
+                "highlight": true
+              }
+            ]
+          },
+          "at": {
+            "phrase": "no Ohio for"
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "marcus:30b7593711",
+      "index": 20,
+      "visuals": [
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.atlantic-world",
+            "period": 1763,
+            "moves": [
+              {
+                "at": {
+                  "phrase": "Nobody in London"
+                },
+                "to": "london",
+                "highlight": true
+              }
+            ]
+          },
+          "at": {
+            "phrase": "Nobody in London"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/art-fort-necessity.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "second war."
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/object-kentucky-rifle.png",
+          "framing": "wide",
+          "at": {
+            "phrase": "bleeding frontier."
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "maya:3f8ad60c9e",
+      "index": 21,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e1/doc-washington-ohio-survey.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "somebody must have been"
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "marcus:26e3dd4d18",
+      "index": 22,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e1/object-surveyor-compass.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "land speculators."
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/doc-washington-ohio-survey.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "western claims,"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/portrait-george-washington-1772.jpg",
+          "framing": "face",
+          "name": "George Washington",
+          "role": "Virginia planter and land speculator",
+          "at": {
+            "phrase": "young George Washington,"
+          },
+          "priority": "essential",
+          "span": 1
+        }
+      ]
+    },
+    {
+      "key": "maya:2eeaa50dab",
+      "index": 23,
+      "visuals": []
+    },
+    {
+      "key": "marcus:425964119e",
+      "index": 24,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e1/object-kentucky-rifle.png",
+          "framing": "wide",
+          "at": {
+            "phrase": "settlers were furious"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/map-proclamation-line-1763.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "line didn't hold."
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.pennsylvania-frontier",
+            "period": 1763,
+            "moves": [
+              {
+                "at": {
+                  "phrase": "already west of"
+                },
+                "to": "frontier",
+                "highlight": true
+              }
+            ]
+          },
+          "at": {
+            "phrase": "already west of"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/doc-london-gazette-1763.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "proclamation came too late."
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "maya:bfe0956207",
+      "index": 25,
+      "visuals": [
+        {
+          "kind": "clip",
+          "image": "historic/u3e1/scene-blue-ridge.jpg",
+          "prompt": "Morning mist drifts slowly over the Blue Ridge, layers of mountains fading in soft light.",
+          "at": {
+            "phrase": "Blue Ridge Parkway"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.eastern-north-america",
+            "period": 1763,
+            "moves": [
+              {
+                "at": {
+                  "phrase": "line along the crest,"
+                },
+                "to": "ohio-valley",
+                "highlight": true
+              }
+            ]
+          },
+          "at": {
+            "phrase": "mountains just never ended."
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/proclamation-line-map.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "line along the crest,"
+          },
+          "priority": "essential",
+          "pace": "reveal"
+        }
+      ]
+    },
+    {
+      "key": "marcus:25328cbef4",
+      "index": 26,
+      "visuals": [
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.north-america",
+            "period": 1763
+          },
+          "at": {
+            "phrase": "line on a map"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/portrait-william-johnson.jpg",
+          "framing": "face",
+          "name": "Sir William Johnson",
+          "role": "Superintendent of Indian Affairs",
+          "at": {
+            "phrase": "Indian country."
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "maya:6291562338",
+      "index": 27,
+      "visuals": [
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.ohio-valley",
+            "period": 1763,
+            "moves": [
+              {
+                "at": {
+                  "phrase": "was the fence"
+                },
+                "to": "mississippi",
+                "highlight": true
+              },
+              {
+                "at": {
+                  "phrase": "Appalachians were the prize"
+                },
+                "to": "appalachians",
+                "highlight": true
+              }
+            ]
+          },
+          "at": {
+            "phrase": "So the Mississippi"
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "marcus:1fa58e68db",
+      "index": 28,
+      "visuals": [
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.eastern-north-america",
+            "period": 1763,
+            "moves": [
+              {
+                "at": {
+                  "phrase": "Mississippi was the prize"
+                },
+                "to": "ohio-valley",
+                "highlight": true
+              }
+            ]
+          },
+          "at": {
+            "phrase": "land between the mountains"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/proclamation-line-map.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "Appalachians were the fence"
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "maya:7696580500",
+      "index": 29,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e1/doc-royal-proclamation-1763.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "Proclamation's promise to leave"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.eastern-north-america",
+            "period": "1763-10-07",
+            "moves": [
+              {
+                "at": {
+                  "offset": 0.4
+                },
+                "to": "frontier",
+                "highlight": true
+              }
+            ]
+          },
+          "at": {
+            "phrase": "Native lands undisturbed"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.atlantic-world",
+            "period": 1763,
+            "moves": [
+              {
+                "at": {
+                  "offset": 0.3
+                },
+                "to": "london",
+                "highlight": true
+              }
+            ]
+          },
+          "at": {
+            "phrase": "London dodging another expensive"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "point",
+          "backdrop": "historic/u3e1/map-ohio-country.jpg",
+          "bullets": [
+            {
+              "text": "Purpose before grievance",
+              "at": {
+                "offset": 0.2
+              }
+            },
+            {
+              "text": "Who benefits? London",
+              "at": {
+                "offset": 0.9
+              }
+            },
+            {
+              "text": "Avoid expensive war",
+              "at": {
+                "offset": 1.5
+              }
+            }
+          ],
+          "at": {
+            "phrase": "Purpose before the grievance"
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "maya:f709c3867d",
+      "index": 30,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e1/art-redcoat-1760s.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "ten thousand soldiers"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/portrait-earl-of-bute.jpg",
+          "framing": "face",
+          "name": "John Stuart",
+          "role": "3rd Earl of Bute",
+          "at": {
+            "phrase": "minister in London"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.pennsylvania-frontier",
+            "period": 1763,
+            "moves": [
+              {
+                "at": {
+                  "offset": 0.3
+                },
+                "to": "frontier",
+                "highlight": true
+              }
+            ]
+          },
+          "at": {
+            "phrase": "settler in Pennsylvania"
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "pause:10#2",
+      "index": 31,
+      "visuals": []
+    },
+    {
+      "key": "marcus:83ac0c8c0b",
+      "index": 32,
+      "visuals": [
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.north-america",
+            "period": 1763,
+            "moves": [
+              {
+                "at": {
+                  "phrase": "frontier's covered, cheaply"
+                },
+                "to": "frontier",
+                "highlight": true
+              }
+            ]
+          },
+          "at": {
+            "phrase": "minister sleeps best"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/object-silver-gorget.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "officer's fine too"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/art-frontier-cabin.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "settler? He hears"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/map-proclamation-line-1763.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "enforce the line"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/doc-colonial-newspaper-1764.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "colonist in Boston"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/object-brown-bess.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "police the colonists"
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "maya:f5b783cfdb",
+      "index": 33,
+      "visuals": [
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.north-america",
+            "period": "1763-10-07"
+          },
+          "at": {
+            "phrase": "Proclamation Line of 1763"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.ohio-valley",
+            "period": 1763,
+            "moves": [
+              {
+                "at": {
+                  "offset": 0.3
+                },
+                "to": "appalachians",
+                "highlight": true
+              }
+            ]
+          },
+          "at": {
+            "phrase": "draws a fence"
+          },
+          "priority": "essential",
+          "pace": "reveal"
+        },
+        {
+          "kind": "point",
+          "backdrop": "historic/u3e1/map-ohio-country.jpg",
+          "bullets": [
+            {
+              "text": "Fence it can't patrol",
+              "at": {
+                "offset": 0.3
+              }
+            },
+            {
+              "text": "War it can't afford",
+              "at": {
+                "offset": 1
+              }
+            }
+          ],
+          "at": {
+            "phrase": "can't afford"
+          },
+          "priority": "essential",
+          "pace": "hold"
+        }
+      ]
+    },
+    {
+      "key": "marcus:c9dbad2681",
+      "index": 34,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e1/art-siege-detroit-1763.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "Pontiac's Rebellion."
+          },
+          "priority": "essential",
+          "pace": "reveal"
+        }
+      ]
+    },
+    {
+      "key": "maya:af21abd4c4",
+      "index": 35,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e1/chief-pontiac-portrait.jpg",
+          "framing": "face",
+          "name": "Pontiac",
+          "role": "Ottawa war chief, organizer of 1763 alliance",
+          "at": {
+            "phrase": "like the car?"
+          },
+          "priority": "essential",
+          "span": 2
+        }
+      ]
+    },
+    {
+      "key": "marcus:9a646e35ee",
+      "index": 36,
+      "visuals": []
+    },
+    {
+      "key": "maya:fe93644a82",
+      "index": 37,
+      "visuals": []
+    },
+    {
+      "key": "marcus:b00065a11a",
+      "index": 38,
+      "visuals": [
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.eastern-north-america",
+            "period": 1763
+          },
+          "at": {
+            "phrase": "chief of the Ottawa,"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/scene-fur-trade.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "French did differently."
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/art-bouquet-council.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "French negotiated."
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/object-peace-medal.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "They gave gifts,"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "point",
+          "backdrop": "historic/u3e1/object-peace-medal.jpg",
+          "bullets": [
+            {
+              "text": "Gifts = dominance, protection",
+              "at": {
+                "phrase": "and protection."
+              }
+            },
+            {
+              "text": "Diplomacy, not trade",
+              "at": {
+                "phrase": "It was diplomacy."
+              }
+            }
+          ],
+          "at": {
+            "phrase": "gift-giving meant dominance"
+          },
+          "priority": "essential",
+          "pace": "hold"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/scene-fort-niagara.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "British took the French forts,"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/portrait-jeffery-amherst.jpg",
+          "framing": "face",
+          "name": "Jeffery Amherst",
+          "role": "British general, ended gift diplomacy",
+          "at": {
+            "phrase": "general named Amherst"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/object-brown-bess.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "Just soldiers and settlers."
+          },
+          "priority": "optional"
+        }
+      ]
+    },
+    {
+      "key": "maya:06a0bb0d1a",
+      "index": 39,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e1/scene-fort-pitt-1763.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "forts cost them"
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "marcus:c4ada979b2",
+      "index": 40,
+      "visuals": [
+        {
+          "kind": "clip",
+          "image": "historic/u3e1/art-bushy-run.jpg",
+          "prompt": "Thin smoke drifts slowly over a dark forest clearing, embers faint.",
+          "at": {
+            "phrase": "message that caught fire"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.ohio-valley",
+            "period": 1761
+          },
+          "at": {
+            "phrase": "In 1760 and 1761,"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/object-pipe-tomahawk.jpg",
+          "framing": "detail",
+          "name": "Neolin",
+          "role": "Delaware holy man, 1760 vision",
+          "at": {
+            "phrase": "Delaware holy man named Neolin"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "point",
+          "backdrop": "historic/u3e1/object-powder-horn.jpg",
+          "bullets": [
+            {
+              "text": "Curb fur trader contact",
+              "at": {
+                "phrase": "fur traders."
+              }
+            },
+            {
+              "text": "Put down guns and alcohol",
+              "at": {
+                "phrase": "guns and the alcohol."
+              }
+            },
+            {
+              "text": "Stop infighting or disappear",
+              "at": {
+                "phrase": "or disappear."
+              }
+            }
+          ],
+          "at": {
+            "phrase": "Curb contact with"
+          },
+          "priority": "essential",
+          "pace": "quick"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/art-siege-detroit-1763.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "organized the resistance in 1763,"
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "maya:44cfab0ca5",
+      "index": 41,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e1/map-pontiac-rebellion.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "It was organized."
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "marcus:59a76238a0",
+      "index": 42,
+      "visuals": [
+        {
+          "kind": "custom",
+          "component": "PontiacFortsMap",
+          "at": {
+            "phrase": "alliance struck fort after fort"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.great-lakes",
+            "period": 1763,
+            "moves": [
+              {
+                "at": {
+                  "phrase": "Detroit first,"
+                },
+                "to": "detroit",
+                "highlight": true
+              }
+            ]
+          },
+          "at": {
+            "phrase": "around the Great Lakes,"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.eastern-north-america",
+            "period": 1763
+          },
+          "at": {
+            "phrase": "Appalachian frontier."
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/art-michilimackinac-1763.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "Several forts fell."
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/art-bushy-run.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "four hundred British soldiers"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/doc-pennsylvania-gazette-1763.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "two thousand colonists"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/scene-fort-pitt-1763.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "blankets deliberately infected with smallpox."
+          },
+          "priority": "essential",
+          "pace": "hold"
+        }
+      ]
+    },
+    {
+      "key": "maya:cd95d2c9e9",
+      "index": 43,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e1/portrait-jeffery-amherst.jpg",
+          "framing": "face",
+          "name": "Jeffery Amherst",
+          "role": "British Commander in North America",
+          "at": {
+            "phrase": "Biological warfare."
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "marcus:bfc561861a",
+      "index": 44,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e1/doc-pennsylvania-gazette-1763.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "germ warfare, flatly."
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.atlantic-world",
+            "period": "1763-08-01",
+            "moves": [
+              {
+                "at": {
+                  "phrase": "London replaced Amherst"
+                },
+                "to": "london",
+                "highlight": true
+              }
+            ]
+          },
+          "at": {
+            "phrase": "London replaced Amherst"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/portrait-thomas-gage.jpg",
+          "framing": "face",
+          "name": "Thomas Gage",
+          "role": "Commander-in-Chief 1763-1775",
+          "at": {
+            "phrase": "sent Thomas Gage."
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/art-bushy-run.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "wore the rebellion down."
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/art-bouquet-council.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "dragged into 1764,"
+          },
+          "priority": "optional"
+        }
+      ]
+    },
+    {
+      "key": "maya:0c2ade09d4",
+      "index": 45,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e1/object-kentucky-rifle.png",
+          "framing": "detail",
+          "at": {
+            "phrase": "own ugly answer,"
+          },
+          "priority": "optional"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/art-paxton-boys.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "The Paxton Boys."
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "marcus:ff439fccbf",
+      "index": 46,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e1/art-frontier-cabin.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "Scots-Irish frontiersmen"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.pennsylvania-frontier",
+            "period": 1763,
+            "moves": [
+              {
+                "at": {
+                  "phrase": "in Pennsylvania"
+                },
+                "to": "lancaster",
+                "highlight": true
+              }
+            ]
+          },
+          "at": {
+            "phrase": "in Pennsylvania"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/art-paxton-boys.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "peaceful Conestoga Indians,"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/object-conestoga-wagon.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "Twenty dead."
+          },
+          "priority": "optional"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/art-philadelphia-1760s.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "marched on Philadelphia,"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/object-kentucky-rifle.png",
+          "framing": "detail",
+          "at": {
+            "phrase": "frontier was a tinderbox,"
+          },
+          "priority": "optional"
+        }
+      ]
+    },
+    {
+      "key": "maya:652385f3ea",
+      "index": 47,
+      "visuals": [
+        {
+          "kind": "point",
+          "backdrop": "historic/u3e1/doc-pennsylvania-gazette-1763.jpg",
+          "bullets": [
+            {
+              "text": "1763 rebels = Ottawa-led Natives",
+              "at": {
+                "phrase": "Ottawa-led Native nations."
+              }
+            },
+            {
+              "text": "Not colonist rebellion",
+              "at": {
+                "phrase": "colonists rebelled, you've written"
+              }
+            }
+          ],
+          "at": {
+            "phrase": "Sorting rule, test-ready:"
+          },
+          "priority": "essential",
+          "pace": "hold"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.great-lakes",
+            "period": 1763,
+            "moves": [
+              {
+                "at": {
+                  "phrase": "Ottawa-led Native nations."
+                },
+                "to": "detroit",
+                "highlight": true
+              }
+            ]
+          },
+          "at": {
+            "phrase": "Ottawa-led Native nations."
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "maya:0b268227d4",
+      "index": 48,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e1/chief-pontiac-portrait.jpg",
+          "framing": "face",
+          "name": "Pontiac",
+          "role": "Ottawa War Chief, organized 1763 alliance",
+          "at": {
+            "phrase": "Pontiac was the prophet."
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "marcus:36d0ee8fe1",
+      "index": 49,
+      "visuals": [
+        {
+          "kind": "point",
+          "backdrop": "historic/u3e1/art-bouquet-council.jpg",
+          "bullets": [
+            {
+              "text": "Neolin = prophet",
+              "at": {
+                "phrase": "Neolin was the prophet,"
+              }
+            },
+            {
+              "text": "Pontiac = war chief",
+              "at": {
+                "phrase": "Pontiac was the war"
+              }
+            }
+          ],
+          "at": {
+            "phrase": "Common mix-up."
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "maya:faef7c007d",
+      "index": 50,
+      "visuals": [
+        {
+          "kind": "point",
+          "backdrop": "historic/u3e1/map-french-indian-war.png",
+          "bullets": [
+            {
+              "text": "End of salutary neglect",
+              "at": {
+                "offset": 0.4
+              }
+            },
+            {
+              "text": "Proclamation Line 1763",
+              "at": {
+                "offset": 1.2
+              }
+            },
+            {
+              "text": "Pontiac's Rebellion 1763",
+              "at": {
+                "offset": 2
+              }
+            }
+          ],
+          "at": {
+            "phrase": "Three boxes,"
+          },
+          "priority": "essential",
+          "pace": "quick"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.atlantic-world",
+            "period": 1763,
+            "moves": [
+              {
+                "at": {
+                  "phrase": "London with an"
+                },
+                "to": "place.london",
+                "highlight": true
+              }
+            ]
+          },
+          "at": {
+            "phrase": "end of salutary neglect."
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/george-grenville-portrait.jpg",
+          "framing": "face",
+          "name": "George Grenville",
+          "role": "Prime Minister, 1763-1765",
+          "at": {
+            "phrase": "Grenville did the math,"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/doc-london-gazette-1763.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "London started enforcing"
+          },
+          "priority": "essential",
+          "span": 1
+        }
+      ]
+    },
+    {
+      "key": "marcus:2cafebb869",
+      "index": 51,
+      "visuals": []
+    },
+    {
+      "key": "maya:51cf886ceb",
+      "index": 52,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e1/map-proclamation-line-1763.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "Proclamation Line of 1763."
+          },
+          "priority": "essential",
+          "pace": "reveal"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.eastern-north-america",
+            "period": 1763,
+            "moves": [
+              {
+                "at": {
+                  "phrase": "Appalachians,"
+                },
+                "to": "frontier",
+                "highlight": true
+              }
+            ]
+          },
+          "at": {
+            "phrase": "line along the"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/proclamation-line-map.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "failed as a fence."
+          },
+          "priority": "essential",
+          "span": 1
+        }
+      ]
+    },
+    {
+      "key": "marcus:93afc5b134",
+      "index": 53,
+      "visuals": []
+    },
+    {
+      "key": "maya:b95bd7c06e",
+      "index": 54,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e1/chief-pontiac-portrait.jpg",
+          "framing": "face",
+          "name": "Pontiac",
+          "role": "Ottawa war chief, Great Lakes alliance 1763",
+          "at": {
+            "phrase": "Pontiac's Rebellion."
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/art-braddocks-defeat.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "Delaware prophet"
+          },
+          "priority": "optional"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.great-lakes",
+            "period": 1763,
+            "moves": [
+              {
+                "at": {
+                  "offset": 0.3
+                },
+                "to": "detroit",
+                "highlight": true
+              },
+              {
+                "at": {
+                  "offset": 0.9
+                },
+                "to": "fort-pitt",
+                "highlight": true
+              }
+            ]
+          },
+          "at": {
+            "phrase": "Forts fell,"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/portrait-henry-bouquet.jpg",
+          "framing": "face",
+          "name": "Henry Bouquet",
+          "role": "Colonel, relief of Fort Pitt",
+          "at": {
+            "phrase": "whole new imperial"
+          },
+          "priority": "essential",
+          "span": 1
+        }
+      ]
+    },
+    {
+      "key": "marcus:d7cae5259a",
+      "index": 55,
+      "visuals": []
+    },
+    {
+      "key": "maya:29dbd06407",
+      "index": 56,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e1/doc-royal-proclamation-1763.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "stimulus prints the"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.ohio-valley",
+            "period": "1763-10-07"
+          },
+          "at": {
+            "phrase": "reserved lands, and"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/map-french-indian-war.png",
+          "framing": "wide",
+          "at": {
+            "phrase": "what situation produced"
+          },
+          "priority": "optional"
+        }
+      ]
+    },
+    {
+      "key": "pause:10#3",
+      "index": 57,
+      "visuals": []
+    },
+    {
+      "key": "maya:265f6906b5",
+      "index": 58,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e1/doc-colonial-newspaper-1764.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "cheap answer to"
+          },
+          "priority": "optional"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/portrait-pontiac-engraving.jpg",
+          "framing": "face",
+          "at": {
+            "phrase": "Pontiac's Rebellion: it"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "custom",
+          "component": "ProclamationLineMap",
+          "at": {
+            "phrase": "drawing a settlement line"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "point",
+          "backdrop": "historic/u3e1/map-seven-years-war-world.jpg",
+          "bullets": [
+            {
+              "text": "Treasury empty",
+              "at": {
+                "offset": 0.3
+              }
+            },
+            {
+              "text": "Line cheaper than war",
+              "at": {
+                "offset": 0.9
+              }
+            },
+            {
+              "text": "Cheap triage",
+              "at": {
+                "offset": 1.5
+              }
+            }
+          ],
+          "at": {
+            "phrase": "Triage won because"
+          },
+          "priority": "essential",
+          "pace": "hold"
+        }
+      ]
+    },
+    {
+      "key": "maya:a39fe8d1ec",
+      "index": 59,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e1/map-seven-years-war-world.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "Seven Years' War"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.north-america",
+            "period": 1763
+          },
+          "at": {
+            "phrase": "broken trust?"
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "pause:10#4",
+      "index": 60,
+      "visuals": []
+    },
+    {
+      "key": "maya:4dd407ebde",
+      "index": 61,
+      "visuals": [
+        {
+          "kind": "point",
+          "backdrop": "historic/u3e1/art-join-or-die.jpg",
+          "bullets": [
+            {
+              "text": "Debt and land strained empire",
+              "at": {
+                "offset": 1.5
+              }
+            },
+            {
+              "text": "Colonies became problem",
+              "at": {
+                "offset": 5
+              }
+            },
+            {
+              "text": "Trust crack widens later",
+              "at": {
+                "offset": 9
+              }
+            }
+          ],
+          "at": {
+            "phrase": "The broken trust"
+          },
+          "priority": "essential",
+          "pace": "hold"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.atlantic-world",
+            "period": 1763,
+            "moves": [
+              {
+                "at": {
+                  "phrase": "colonies like a problem"
+                },
+                "to": "colonies",
+                "highlight": true
+              },
+              {
+                "at": {
+                  "phrase": "Britain as a threat"
+                },
+                "to": "london",
+                "highlight": true
+              }
+            ]
+          },
+          "at": {
+            "phrase": "Britain started treating"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/portrait-benjamin-franklin.jpg",
+          "framing": "face",
+          "name": "Benjamin Franklin",
+          "role": "Colonial agent in London",
+          "at": {
+            "phrase": "colonies started seeing"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/paxton-boys.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "crack every later crisis"
+          },
+          "priority": "optional"
+        }
+      ]
+    },
+    {
+      "key": "maya:ca75a020d6",
+      "index": 62,
+      "visuals": [
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.great-lakes",
+            "period": 1763
+          },
+          "at": {
+            "phrase": "what changed after 1763"
+          },
+          "priority": "essential",
+          "pace": "reveal"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/portrait-henry-bouquet.jpg",
+          "framing": "face",
+          "name": "Henry Bouquet",
+          "role": "British colonel, Pontiac's War",
+          "at": {
+            "phrase": "Pontiac's alliance to war"
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "pause:10#5",
+      "index": 63,
+      "visuals": []
+    },
+    {
+      "key": "maya:e4a0da9dca",
+      "index": 64,
+      "visuals": [
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.eastern-north-america",
+            "period": 1763
+          },
+          "at": {
+            "phrase": "replaced French diplomacy"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/portrait-jeffery-amherst.jpg",
+          "framing": "face",
+          "name": "Jeffery Amherst",
+          "role": "Commander-in-Chief, North America",
+          "at": {
+            "phrase": "Amherst ended the gift"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.great-lakes",
+            "period": 1763,
+            "moves": [
+              {
+                "at": {
+                  "phrase": "French forts"
+                },
+                "to": "fort-pitt",
+                "highlight": true
+              },
+              {
+                "at": {
+                  "offset": 1.2
+                },
+                "to": "detroit",
+                "highlight": true
+              }
+            ]
+          },
+          "at": {
+            "phrase": "British troops occupied"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e1/art-braddocks-defeat.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "first targets"
+          },
+          "priority": "optional"
+        }
+      ]
+    },
+    {
+      "key": "maya:ba5230a69d",
+      "index": 65,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e1/doc-sugar-act-1764.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "taxes arrive"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "point",
+          "backdrop": "historic/u3e1/map-west-indies-1763.jpg",
+          "bullets": [
+            {
+              "text": "First sugar",
+              "at": {
+                "offset": 0.3
+              }
+            },
+            {
+              "text": "Then stamps",
+              "at": {
+                "phrase": "then stamps"
+              }
+            },
+            {
+              "text": "Who taxes whom?",
+              "at": {
+                "phrase": "who gets to tax"
+              }
+            }
+          ],
+          "at": {
+            "phrase": "First sugar"
+          },
+          "priority": "essential",
+          "pace": "quick"
+        }
+      ]
+    },
+    {
+      "key": "marcus:0fb332ab7e",
+      "index": 66,
+      "visuals": [
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.north-america",
+            "period": 1763
+          },
+          "at": {
+            "phrase": "Britain won the war"
+          },
+          "priority": "essential",
+          "pace": "hold",
+          "span": 1
+        }
+      ]
+    },
+    {
+      "key": "maya:9ccc9fddc6",
+      "index": 67,
+      "visuals": []
+    }
+  ]
+}
