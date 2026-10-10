@@ -9,7 +9,7 @@ import {BoxTracker, Vignette} from '../kit/components';
 import {GUARD_WRAPPER, LayoutGuard, Track} from '../kit/guard';
 import type {RenderConfig} from '../kit/layout';
 import {FilmGrain} from '../kit/media';
-import {sheetTransform} from './sheet';
+import {graphicKeepsSheet, sheetTransform} from './sheet';
 import kitConfig from '../data/kit-render-config.json';
 import {AtmosphereLayers} from './atmosphere';
 // Shot views are reached only through ShotBody's switch on shot type: each segment's render cache is keyed by the
@@ -54,7 +54,7 @@ export function soundCues(props: Pick<DocEpisodeProps, 'shots' | 'years' | 'boxe
   return cues.filter(c => c.sec >= 0).sort((a, b) => a.sec - b.sec);
 }
 
-const ShotBody: React.FC<{shot: DocShot; lead: number}> = ({shot, lead}) => {
+const ShotBody: React.FC<{shot: DocShot; lead: number; boxes: {startSec: number; checkSec: number}[]}> = ({shot, lead, boxes}) => {
   switch (shot.type) {
     case 'image_move':
     case 'portrait': return <ImageMoveView shot={shot} lead={lead} />;
@@ -63,14 +63,14 @@ const ShotBody: React.FC<{shot: DocShot; lead: number}> = ({shot, lead}) => {
     case 'point': return <PointView shot={shot} lead={lead} />;
     case 'question': return <QuestionView shot={shot} lead={lead} />;
     case 'custom': return <CustomView shot={shot} lead={lead} />;
-    case 'graphic': return <GraphicView shot={shot} lead={lead} />;
+    case 'graphic': return <GraphicView shot={shot} lead={lead} inset={graphicKeepsSheet(shot, boxes)} />;
   }
 };
 
 /** A shot plus its atmosphere. Portraits and point cards place it themselves, under their text. */
-const ShotView: React.FC<{shot: DocShot; lead: number}> = ({shot, lead}) => (
+const ShotView: React.FC<{shot: DocShot; lead: number; boxes: {startSec: number; checkSec: number}[]}> = ({shot, lead, boxes}) => (
   <>
-    <ShotBody shot={shot} lead={lead} />
+    <ShotBody shot={shot} lead={lead} boxes={boxes} />
     {shot.type !== 'point' && shot.type !== 'portrait' && shot.type !== 'question' && shot.type !== 'custom' && shot.type !== 'graphic' && <AtmosphereLayers kinds={shot.atmosphere} seed={shot.id} />}
   </>
 );
@@ -94,8 +94,11 @@ export const DocEpisode: React.FC<DocEpisodeProps> = ({episode, shots, years: ye
   const currentBox = boxes.findIndex(b => t >= b.startSec && t < b.endSec);
   // The Episode Sheet steps aside while a question card is up.
   const onQuestion = shots.some(s => s.type === 'question' && t >= s.startSec && t < s.endSec);
+  // A full-screen graphic: the sheet steps aside, unless a box moment falls during it (then the graphic is inset).
+  const onGraphic = shots.find(s => s.type === 'graphic' && t >= s.startSec && t < s.endSec);
+  const hideForGraphic = !!onGraphic && !graphicKeepsSheet(onGraphic, boxes);
   // Map labels step aside from the chrome on screen: a year stamp while it is up, the docked sheet while it shows.
-  const sheetOpacity = boxes.length && sheet.phase === 'docked' ? (onQuestion ? 0 : dockedOpacity(t, boxes)) : 0;
+  const sheetOpacity = boxes.length && sheet.phase === 'docked' ? (onQuestion || hideForGraphic ? 0 : dockedOpacity(t, boxes)) : 0;
   const [rx0, ry0, rx1, ry1] = cfg.boxTracker.rect;
   const zones = [
     ...years.map((y, i) => ({y, span: spans[i]})).filter(({y, span}) => t >= y.sec - YEAR_STAMP_LEAD_SEC && t < y.sec + span).map(({y, span}) => yearStampZone(y.text, frame - Math.round(y.sec * fps), fps, width, height, span)),
@@ -108,7 +111,7 @@ export const DocEpisode: React.FC<DocEpisodeProps> = ({episode, shots, years: ye
       <Track id="shots" role="cover">
         {shots.map((shot, i) => (
           <Sequence key={shot.id} name={`${shot.id} ${shot.type}`} from={windows[i].from} durationInFrames={windows[i].durationInFrames} layout="none">
-            <Fade leadFrames={windows[i].leadFrames}><ShotView shot={shot} lead={windows[i].leadFrames / fps} /></Fade>
+            <Fade leadFrames={windows[i].leadFrames}><ShotView shot={shot} lead={windows[i].leadFrames / fps} boxes={boxes} /></Fade>
           </Sequence>
         ))}
       </Track>

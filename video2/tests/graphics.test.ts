@@ -60,3 +60,13 @@ describe('graphics', () => {
     assert.match(prompt, /Graphics carry the explaining/);
   });
 });
+
+describe('graphics and the Episode Sheet', () => {
+  it('the sheet steps aside for a graphic unless a box moment happens during it', async () => {
+    const {graphicKeepsSheet} = await import('../src/documentary/sheet');
+    const boxes = [{startSec: 100, checkSec: 300}];
+    assert.equal(graphicKeepsSheet({startSec: 150, endSec: 158}, boxes), false, 'nothing happening on the sheet');
+    assert.equal(graphicKeepsSheet({startSec: 296, endSec: 304}, boxes), true, 'a box is checked during it');
+    assert.equal(graphicKeepsSheet({startSec: 98, endSec: 104}, boxes), true, 'a box starts during it');
+  });
+});

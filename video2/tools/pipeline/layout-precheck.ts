@@ -9,7 +9,7 @@
 import {cameraAt, worldProjection} from '../../src/motion/world';
 import {labelBox, labelVisibility, type ChromeZone} from '../../src/documentary/chrome-zones';
 import {dockedOpacity} from '../../src/documentary/DocEpisode';
-import {sheetTransform} from '../../src/documentary/sheet';
+import {graphicKeepsSheet, sheetTransform} from '../../src/documentary/sheet';
 import {YEAR_STAMP_LEAD_SEC, yearStampSpans, yearStampVisible, yearStampZone} from '../../src/documentary/views/year-stamp';
 import kitConfig from '../../src/data/kit-render-config.json';
 import type {DocShot, MapShot, PointShot, PortraitShot} from '../../src/documentary/types';
@@ -125,7 +125,8 @@ export function predictLayout(resolved: Pick<ResolvedShotPlan, 'shots' | 'years'
     const sheet = boxes.length ? sheetTransform(boxes.map(b => b.introSec), t, {width: W, height: H}, SHEET_RECT, SHEET_STAGE) : null;
     if (sheet && sheet.phase !== phase) { if (phase) riskFrames.push({frame, why: `episode sheet: ${phase} -> ${sheet.phase}`}); phase = sheet.phase; }
     const onQuestion = shot?.type === 'question';
-    const sheetOpacity = sheet?.phase === 'docked' ? (onQuestion ? 0 : dockedOpacity(t, boxes)) : 0;
+    const hideForGraphic = shot?.type === 'graphic' && !graphicKeepsSheet(shot, boxes);
+    const sheetOpacity = sheet?.phase === 'docked' ? (onQuestion || hideForGraphic ? 0 : dockedOpacity(t, boxes)) : 0;
     if (sheetOpacity > 0) {
       const rect: Box = [SHEET_RECT[0] * W, SHEET_RECT[1] * H, SHEET_RECT[2] * W, SHEET_RECT[3] * H];
       chrome.push({id: 'chrome:box-tracker', box: rect, opacity: sheetOpacity});

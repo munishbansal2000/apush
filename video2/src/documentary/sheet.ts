@@ -36,3 +36,12 @@ export function sheetTransform(introSec: number[], t: number, size: {width: numb
   const scale = big + (1 - big) * e;
   return {phase: 'flying', scale, tx: (sx - big * cx) * (1 - e), ty: (sy - big * cy) * (1 - e), dim: STAGE_DIM * (1 - e)};
 }
+
+/**
+ * Full-screen graphics and the docked sheet: the sheet steps aside for a graphic, unless one of its box moments (a box
+ * starting, a box being checked) happens while the graphic is up; then the sheet stays and the graphic is inset, clear
+ * of the sheet's corner. Shared by the renderer and the layout pre-check.
+ */
+export function graphicKeepsSheet(shot: {startSec: number; endSec: number}, boxes: {startSec: number; checkSec: number}[]): boolean {
+  return boxes.some(b => (b.startSec + 2.5 > shot.startSec && b.startSec - 2.5 < shot.endSec) || (b.checkSec + 2.5 > shot.startSec && b.checkSec - 0.5 < shot.endSec));
+}
