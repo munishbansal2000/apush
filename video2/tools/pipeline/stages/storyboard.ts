@@ -20,7 +20,7 @@ import {loadLessonReview, now, openNotes, planApproved, saveLessonReview, type L
 import {buildPlan} from '../scene-builder';
 import {resolveShotPlan, type ShotPlan} from '../shots';
 import {checkStoryboard, type Storyboard} from '../storyboard';
-import {directStoryboard, storySelfCheckFor} from '../storyboard-director';
+import {directStoryboard, lessonVarietyIssues, storySelfCheckFor} from '../storyboard-director';
 import {loadTreatments, proposeTreatment, saveTreatments} from '../treatments';
 import {readCheckedWords} from './words';
 import {mapImages} from '../image-map';
@@ -139,6 +139,27 @@ export function storyboardStage(ctx: PipelineContext): void {
   const stale = sb ? closeStaleBuildNotes(review, inputs, sb, catalog) : 0;
   if (stale) console.log(`[storyboard] ${stale} build note(s) no longer reported by the build: closed`);
   if (movePlanNotes(review) + (sb ? noteChangedLines(review, sb, inputs) : 0) + stale) saveLessonReview(ctx.episode, review, dataRoot);
+  // Re-audit saved boards against hard lesson-wide diversity rules. Route each excess map to its owning act now,
+  // so a pipeline update does not need one failing build run merely to create the same repair notes.
+  if (sb) {
+    let added = 0;
+    for (const issue of lessonVarietyIssues(sb)) {
+      const turn = Number(/^turn (\d+)/.exec(issue)?.[1]);
+      const act = sb.acts.findIndex(a => turn >= a.turns.from && turn <= a.turns.to) + 1;
+      if (!act) continue;
+      review.storyboard ??= {};
+      review.storyboard.notes ??= {};
+      const list = (review.storyboard.notes[String(act)] ??= []);
+      if (list.some(n => !n.done && n.text === issue)) continue;
+      list.push({text: issue, at: now()});
+      if (review.storyboard.acts) delete review.storyboard.acts[String(act)];
+      added++;
+    }
+    if (added) {
+      saveLessonReview(ctx.episode, review, dataRoot);
+      console.log(`[storyboard] diversity audit routed ${added} repeated-map occurrence(s) to affected acts`);
+    }
+  }
   const notes = openNotes(review, 'storyboard');
   const base = {episode: ctx.episode, turns: inputs.turns, timing: inputs.timing, words: inputs.words, options: inputs.options, catalog, maps};
 

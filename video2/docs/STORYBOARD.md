@@ -53,7 +53,9 @@ plus an editor pass.
    another visual. A turn still short of visuals is reported back to step 3, never filled with a substitute.
 5. **Recap / practice / tease** sections get their own reuse allowance (a recap should revisit images).
 6. **Priority** decides what is dropped or merged when two visuals land < 1.2s apart.
-7. **Storyboard intent beats variety rules**; the rules warn, they do not override a deliberate choice.
+7. **Storyboard intent beats automatic move alternation**, but hard diversity budgets still apply: no more than four
+   map visuals per act or three uses of one named map view per lesson. Documents, objects and archival map images use
+   physical-evidence plates; scenes and portraits retain full-frame camera moves.
 8. **Explainer phases are timed from cue phrases**, so the animation lands on the words.
 9. **Focus points are never trusted unseen**: chosen from thumbnails (attached to the prompt) or marked on stills.
 10. **Framings respect overlay safe areas** (docked Episode Sheet top-right, year stamps, name tags).

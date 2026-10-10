@@ -30,6 +30,8 @@ export interface ImageMoveShot extends ShotBase {
   size: {width: number; height: number};
   from: Framing;
   to: Framing;
+  /** Treatment class controls composition: scenes move full-bleed; documents/objects/maps use archival plates. */
+  presentation?: 'portrait' | 'map' | 'document' | 'scene' | 'object';
 }
 
 export interface PortraitShot extends ShotBase {
@@ -40,6 +42,7 @@ export interface PortraitShot extends ShotBase {
   size: {width: number; height: number};
   from: Framing;
   to: Framing;
+  presentation?: 'portrait' | 'map' | 'document' | 'scene' | 'object';
   name: string;
   role?: string;
 }

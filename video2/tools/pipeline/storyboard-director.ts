@@ -15,8 +15,8 @@ const fmtZoom = (z: number) => z.toFixed(2);
 const turnLine = (t: PipelineTurn, i: number, durations: number[]) =>
   `${i} | ${t.kind === 'pause' ? 'PAUSE' : t.speaker} | ${durations[i].toFixed(1)}s | ${t.kind === 'pause' ? `[pause ${t.pauseSec}s: question card, no visuals]` : cleanSpeech(t.text ?? '')}`;
 
-export const STORY_REVIEW = 'Switch roles: you are a demanding documentary editor. Re-check the storyboard you just wrote: every phrase verbatim and unique in its line and in spoken order, a new visual every 3-6 seconds of narration (spans for quick exchanges), the picture matches what the words name, no image more than twice in the act, at most one clip, explainers only for their exact event, nothing on PAUSE lines. Fix every problem and return ONLY the corrected JSON object {"turns": [...], "years": [...]}.';
-const STORY_SELF_CHECK = 're-check your storyboard (phrases verbatim, unique and in order; a visual every 3-6 seconds; pictures match the words; each image within its "uses"; at most one clip; nothing on PAUSE lines) and answer with the COMPLETE JSON object {"turns": [...], "years": [...]}.';
+export const STORY_REVIEW = `Switch roles: you are a demanding documentary editor. Re-check the storyboard you just wrote: every phrase verbatim and unique in its line and in spoken order, a new visual every 3-6 seconds of narration (spans for quick exchanges), the picture matches what the words name, no image more than twice in the act, no more than ${LOOK_RULES.maxMapsPerAct} maps in the act, at most one clip, explainers only for their exact event, nothing on PAUSE lines. Fix every problem and return ONLY the corrected JSON object {"turns": [...], "years": [...]}.`;
+const STORY_SELF_CHECK = `re-check your storyboard (phrases verbatim, unique and in order; a visual every 3-6 seconds; pictures match the words; each image within its "uses"; no more than ${LOOK_RULES.maxMapsPerAct} maps; at most one clip; nothing on PAUSE lines) and answer with the COMPLETE JSON object {"turns": [...], "years": [...]}.`;
 export const storySelfCheckFor = (followup: string) => (followup === STORY_REVIEW ? STORY_SELF_CHECK : followup);
 
 export function storyboardPrompt(index: number, outline: Outline, turns: PipelineTurn[], durations: number[], catalog: CatalogEntry[], maps: MapData, blockedCustoms?: Set<string>): string {
@@ -36,7 +36,7 @@ export function storyboardPrompt(index: number, outline: Outline, turns: Pipelin
     '- Kinds: "image" (optional "framing": "wide" | "face" | "detail"; first appearance of a person: add "name" and "role" for a name tag), "map" (a map view), "point", "custom" (only a listed explainer, only for its exact event), "clip" (a hero still with gentle ambient motion: smoke, water, flags; never faces or text; at most one per act).',
     '- Images only from ASSETS, each at most its "uses" in this act (the lesson shares each image between acts). Images marked retrospective (later imaginings) must not be presented as eyewitness records.',
     '- The Episode Sheet appears large and lists the boxes on screen by itself while they are named: never a point card (or any other list) for the boxes; show a picture or map under it.',
-    `- Variety: at most ${LOOK_RULES.maxPointsPerAct} point cards in the act (only for a spoken list or the thesis) and never two in a row; at most ${LOOK_RULES.maxMapRun} maps in a row; the same map view at most ${LOOK_RULES.maxViewPerAct} times in the act.`,
+    `- Variety: at most ${LOOK_RULES.maxPointsPerAct} point cards in the act (only for a spoken list or the thesis) and never two in a row; at most ${LOOK_RULES.maxMapsPerAct} maps total and ${LOOK_RULES.maxMapRun} maps in a row; the same map view at most ${LOOK_RULES.maxViewPerAct} times in the act. Prefer primary-source documents, objects, portraits, and event images whenever geography is not the actual point.`,
     '- "priority": "essential" for what the words name, "optional" for texture. "pace": "hold" on the act\'s key line, "quick" for a spoken list, "reveal" for a pull-back reveal.',
     `- Never put visuals on PAUSE lines (question cards are automatic). Recap, practice and next-time lines may revisit images shown earlier, within the lesson limit of ${LOOK_RULES.maxImageUses} uses per image; each custom explainer at most once per lesson, ${LOOK_RULES.maxCustoms} in all.`,
     '',
@@ -126,6 +126,8 @@ export function validateStoryAct(raw: unknown, index: number, outline: Outline, 
   const ordered = a.turns.filter(t => Number.isInteger(t?.turn)).sort((x, y) => x.turn - y.turn).flatMap(t => (t.visuals ?? []).map(v => ({turn: t.turn, v})));
   const points = ordered.filter(x => x.v.kind === 'point');
   if (points.length > LOOK_RULES.maxPointsPerAct) issues.push(`${points.length} point cards in this act (turns ${points.map(x => x.turn).join(', ')}); at most ${LOOK_RULES.maxPointsPerAct}: keep the ones that land a list or the thesis, show the rest as pictures or maps`);
+  const mapsInAct = ordered.filter(x => x.v.kind === 'map');
+  if (mapsInAct.length > LOOK_RULES.maxMapsPerAct) issues.push(`${mapsInAct.length} maps in this act (turns ${mapsInAct.map(x => x.turn).join(', ')}); at most ${LOOK_RULES.maxMapsPerAct}: keep maps only where geography changes or location matters and replace the rest with relevant pictures, documents, objects, point cards, or a listed explainer`);
   let mapRun = 0;
   ordered.forEach((x, n) => {
     if (x.v.kind === 'point' && ordered[n - 1]?.v.kind === 'point') issues.push(`turn ${x.turn}: two point cards in a row; put a picture or map between them`);
@@ -145,10 +147,7 @@ export function validateStoryAct(raw: unknown, index: number, outline: Outline, 
   return issues.length ? {issues} : {act: a, issues};
 }
 
-/**
- * Lesson-wide variety, as warnings only (never repair prompts: fixing one act could break another and loop): one map
- * view used more than LOOK_RULES.maxViewPerLesson times, and runs of maps or point cards that cross act boundaries.
- */
+/** Informational cross-act warnings; hard map-count/view budgets are enforced by lessonVarietyIssues below. */
 export function varietyWarnings(sb: Storyboard): string[] {
   const out: string[] = [];
   const views = new Map<string, number[]>();
@@ -164,6 +163,26 @@ export function varietyWarnings(sb: Storyboard): string[] {
     if ((seq[i].kind === 'map' && run === LOOK_RULES.maxMapRun + 1) || (seq[i].kind === 'point' && run === 2)) out.push(`turn ${seq[i].turn}: ${run} ${seq[i].kind}s in a row across acts`);
   }
   return out;
+}
+
+/** Lesson-wide failures are emitted per excess occurrence so each owning act gets one deterministic repair. */
+export function lessonVarietyIssues(sb: Storyboard): string[] {
+  const views = new Map<string, number[]>();
+  const maps: {turn: number; view?: string}[] = [];
+  for (const t of sb.turns) for (const v of t.visuals) {
+    if (v.kind !== 'map') continue;
+    const view = typeof v.map?.view === 'string' ? v.map.view as string : undefined;
+    maps.push({turn: t.index, view});
+    if (view) views.set(view, [...(views.get(view) ?? []), t.index]);
+  }
+  const issues = sb.acts.flatMap(act => {
+    const inAct = maps.filter(m => m.turn >= act.turns.from && m.turn <= act.turns.to);
+    return inAct.slice(LOOK_RULES.maxMapsPerAct).map((m, i) => `turn ${m.turn}: act "${act.title}" exceeds its map limit (${inAct.length} maps; max ${LOOK_RULES.maxMapsPerAct}); replace excess occurrence ${LOOK_RULES.maxMapsPerAct + i + 1} with a relevant non-map visual`);
+  });
+  issues.push(...[...views].flatMap(([view, turns]) => turns.slice(LOOK_RULES.maxViewPerLesson).map((turn, i) =>
+    `turn ${turn}: map view "${view}" exceeds the lesson limit (${turns.length} uses; max ${LOOK_RULES.maxViewPerLesson}); replace excess occurrence ${LOOK_RULES.maxViewPerLesson + i + 1} with a relevant non-map visual`,
+  )));
+  return issues;
 }
 
 export interface StoryboardResult {storyboard?: Storyboard; outline?: Outline; log: DirectorLog[]; pending?: string[]}
@@ -247,14 +266,15 @@ export function directStoryboard(io: DirectorIO, input: StoryboardInputs, maxRep
       const sb = assembleStoryboard(input.episode, outline, input.turns, acts as ActBoard[]);
       // Lesson-wide: image uses past the budget and explainer repeats go back to the acts that hold the extra uses.
       const c = checkStoryboard(sb, input.turns, input.timing.durations, {rejectedImages: input.options.rejectedImages, maxImageUses: LOOK_RULES.maxImageUses});
-      if (!c.issues.length) {
+      const lessonIssues = [...c.issues, ...lessonVarietyIssues(sb)];
+      if (!lessonIssues.length) {
         console.log('[storyboard] lesson-wide validation passed; storyboard complete');
         log.push({stage: 'storyboard', source: 'assembled', issues: [...c.warnings, ...varietyWarnings(sb)]});
         return {storyboard: sb, outline, log};
       }
-      console.log(`[storyboard] lesson-wide validation found ${c.issues.length} issue(s); assigning affected acts for repair`);
-      log.push({stage: `storyboard assembled (attempt ${attempt + 1})`, source: 'assembled', issues: c.issues});
-      for (const issue of c.issues) {
+      console.log(`[storyboard] lesson-wide validation found ${lessonIssues.length} issue(s); assigning affected acts for repair`);
+      log.push({stage: `storyboard assembled (attempt ${attempt + 1})`, source: 'assembled', issues: lessonIssues});
+      for (const issue of lessonIssues) {
         const image = /^"([^"]+)" is used (\d+) times/.exec(issue)?.[1];
         const turn = Number(/^turn (\d+)/.exec(issue)?.[1]);
         const owners = image

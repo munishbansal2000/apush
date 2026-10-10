@@ -134,9 +134,9 @@ export function buildPlan(input: BuildInputs): BuildResult {
           const focus = v.focus ?? [move.to.x, move.to.y] as [number, number];
           shot = {type: 'clip', ...common, image: v.image, prompt: v.prompt ?? '', seed: v.seed ?? 42, focus, from: move.from, to: move.to} as Shot;
         } else if (v.name || v.framing === 'portrait') {
-          shot = {type: 'portrait', ...common, image: v.image, from: move.from, to: move.to, name: v.name ?? '', ...(v.role ? {role: v.role} : {})} as Shot;
+          shot = {type: 'portrait', ...common, image: v.image, from: move.from, to: move.to, presentation: t.kind, name: v.name ?? '', ...(v.role ? {role: v.role} : {})} as Shot;
         } else {
-          shot = {type: 'image_move', ...common, image: v.image, from: move.from, to: move.to, framing: picked.name} as unknown as Shot;
+          shot = {type: 'image_move', ...common, image: v.image, from: move.from, to: move.to, presentation: t.kind, framing: picked.name} as unknown as Shot;
         }
       } else if (v.kind === 'map') {
         const m = (v.map ?? {}) as Record<string, {at?: unknown}[] | unknown>;
@@ -179,7 +179,7 @@ export function buildPlan(input: BuildInputs): BuildResult {
   // 1b. Clips beyond the lesson budget play as ordinary moves on the same still (acts each may add one).
   drafts.filter(d => d.shot.type === 'clip').slice(LOOK_RULES.maxClips).forEach(d => {
     const c = d.shot as unknown as {at: Cue; image: string; from: unknown; to: unknown; atmosphere?: unknown; transition?: unknown};
-    d.shot = {type: 'image_move', at: c.at, image: c.image, from: c.from, to: c.to, ...(c.atmosphere ? {atmosphere: c.atmosphere} : {}), ...(c.transition ? {transition: c.transition} : {})} as unknown as Shot;
+    d.shot = {type: 'image_move', at: c.at, image: c.image, from: c.from, to: c.to, presentation: treatmentFor(c.image)?.kind, ...(c.atmosphere ? {atmosphere: c.atmosphere} : {}), ...(c.transition ? {transition: c.transition} : {})} as unknown as Shot;
     fixes.push(`turn ${c.at.turn}: clip over the lesson's ${LOOK_RULES.maxClips}; plays as a move on the same still`);
   });
 
@@ -279,7 +279,7 @@ export function buildPlan(input: BuildInputs): BuildResult {
       const clamped = clampMove(byPath.get(image)!.maxZoom, alt ? {from: alt.framing.from, to: alt.framing.to} : {from: toOf(d.shot), to: fromOf(d.shot)}, t);
       const from = clamped.from;
       const to = clamped.to;
-      const cont = {type: 'image_move', at: {turn: turnIdx, phrase}, image, from, to, continues: true, ...(alt ? {framing: alt.name} : {})} as unknown as Shot;
+      const cont = {type: 'image_move', at: {turn: turnIdx, phrase}, image, from, to, presentation: t?.kind, continues: true, ...(alt ? {framing: alt.name} : {})} as unknown as Shot;
       drafts.splice(i + 1, 0, {shot: cont, visual: d.visual ? {...d.visual, priority: 'optional'} : undefined, split: true});
       fixes.push(`turn ${turnIdx}: "${image.split('/').pop()}" continues in another framing on "${phrase}" (${len.toFixed(1)}s hold split)`);
       changed = true;

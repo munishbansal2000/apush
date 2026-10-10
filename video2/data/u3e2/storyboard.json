@@ -1,0 +1,2133 @@
+{
+  "episode": "u3e2",
+  "acts": [
+    {
+      "title": "The Bill Comes Due",
+      "purpose": "Viewer understands why a tax on paper mattered more than dock duties and sets up the three boxes.",
+      "turns": {
+        "from": 0,
+        "to": 4
+      }
+    },
+    {
+      "title": "A Tax on Every Desk",
+      "purpose": "Viewer grasps how the Stamp Act worked as a direct, reach-everywhere tax that broke self-taxation.",
+      "turns": {
+        "from": 5,
+        "to": 13
+      }
+    },
+    {
+      "title": "From Mob to Law",
+      "purpose": "Viewer sees how intimidation killed enforcement and assemblies made it constitutional.",
+      "turns": {
+        "from": 14,
+        "to": 20
+      }
+    },
+    {
+      "title": "What Actually Worked",
+      "purpose": "Viewer learns why the nonimportation boycott and Daughters of Liberty forced merchants to lobby for repeal.",
+      "turns": {
+        "from": 21,
+        "to": 28
+      }
+    },
+    {
+      "title": "Virtual vs Actual",
+      "purpose": "Viewer distinguishes Parliament's virtual representation from colonial actual representation and consent.",
+      "turns": {
+        "from": 29,
+        "to": 41
+      }
+    },
+    {
+      "title": "Repeal With Fine Print",
+      "purpose": "Viewer understands repeal in early 1766 came linked to the Declaratory Act claiming power in all cases.",
+      "turns": {
+        "from": 42,
+        "to": 51
+      }
+    },
+    {
+      "title": "Three Boxes Landed",
+      "purpose": "Viewer locks in definitions of all three boxes and avoids exam traps about sides and claims.",
+      "turns": {
+        "from": 52,
+        "to": 59
+      }
+    },
+    {
+      "title": "AP Check and Aftermath",
+      "purpose": "Viewer applies actual representation, authority versus price, and hollow victory to AP prompts.",
+      "turns": {
+        "from": 60,
+        "to": 71
+      }
+    }
+  ],
+  "boxes": [
+    {
+      "label": "the Stamp Act",
+      "intro": {
+        "turn": 0,
+        "phrase": "the Stamp Act"
+      },
+      "check": {
+        "turn": 54,
+        "phrase": "Box one, checked"
+      },
+      "turns": {
+        "from": 1,
+        "to": 27
+      }
+    },
+    {
+      "label": "virtual representation",
+      "intro": {
+        "turn": 0,
+        "phrase": "virtual representation"
+      },
+      "check": {
+        "turn": 56,
+        "phrase": "Two's on paper"
+      },
+      "turns": {
+        "from": 29,
+        "to": 41
+      }
+    },
+    {
+      "label": "the Declaratory Act",
+      "intro": {
+        "turn": 0,
+        "phrase": "the Declaratory Act"
+      },
+      "check": {
+        "turn": 58,
+        "phrase": "Three for three"
+      },
+      "turns": {
+        "from": 43,
+        "to": 51
+      }
+    }
+  ],
+  "years": [
+    {
+      "key": "marcus:7bd2da83b3",
+      "phrase": "Seventeen sixty-five",
+      "text": "1765"
+    },
+    {
+      "key": "maya:07053361fe",
+      "phrase": "in 1765",
+      "text": "1765"
+    },
+    {
+      "key": "marcus:a152fe38fa",
+      "phrase": "Virginia, sixty-five",
+      "text": "1765"
+    },
+    {
+      "key": "marcus:a8db68a744",
+      "phrase": "October, seventeen sixty-five",
+      "text": "1765-10"
+    },
+    {
+      "key": "marcus:ca07eff093",
+      "phrase": "In 1765,",
+      "text": "1765"
+    },
+    {
+      "key": "marcus:dae212ca03",
+      "phrase": "In early sixty-six,",
+      "text": "early 1766"
+    },
+    {
+      "key": "maya:855afccd39",
+      "phrase": "Seventeen sixty-five,",
+      "text": "1765"
+    },
+    {
+      "key": "maya:855afccd39",
+      "phrase": "early sixty-six.",
+      "text": "1766"
+    },
+    {
+      "key": "maya:f7c1967e86",
+      "phrase": "the repeal, sixty-six.",
+      "text": "1766"
+    },
+    {
+      "key": "maya:b53cac615c",
+      "phrase": "in October sixty-five,",
+      "text": "1765"
+    },
+    {
+      "key": "maya:a0b9c1f545",
+      "phrase": "seventeen sixty-six:",
+      "text": "1766"
+    }
+  ],
+  "turns": [
+    {
+      "key": "maya:8400482b9f",
+      "index": 0,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e2/map-mitchell-1755.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "bill came due."
+          },
+          "priority": "optional",
+          "pace": "reveal"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.thirteen-colonies",
+            "period": 1764
+          },
+          "at": {
+            "phrase": "Sugar Act landed"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.atlantic-world",
+            "period": 1764,
+            "moves": [
+              {
+                "at": {
+                  "phrase": "London's message"
+                },
+                "to": "place.london",
+                "highlight": true
+              }
+            ]
+          },
+          "at": {
+            "phrase": "Thirteen colonies got"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "custom",
+          "component": "StampActTax",
+          "at": {
+            "phrase": "tax that touched"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e2/object-colonial-dice.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "even your dice"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e2/doc-stamp-act-statute.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "Three boxes on"
+          },
+          "priority": "essential",
+          "pace": "quick"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e2/cartoon-deplorable-state-america.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "virtual representation,"
+          },
+          "priority": "optional",
+          "pace": "quick"
+        }
+      ]
+    },
+    {
+      "key": "marcus:7bd2da83b3",
+      "index": 1,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e2/doc-stamp-act-1765-another-printing.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "Seventeen sixty-five."
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.thirteen-colonies",
+            "period": 1765
+          },
+          "at": {
+            "phrase": "customs duties,"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "point",
+          "backdrop": "historic/u3e2/doc-stamp-act-full-text.jpg",
+          "bullets": [
+            {
+              "text": "Customs at docks",
+              "at": {
+                "phrase": "past the port,"
+              }
+            },
+            {
+              "text": "Stamp in drawer",
+              "at": {
+                "phrase": "past the merchant,"
+              }
+            }
+          ],
+          "at": {
+            "phrase": "direct tax:"
+          },
+          "priority": "essential",
+          "pace": "hold"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e2/object-stamp-seal-press.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "desk drawer."
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "maya:46e8f349df",
+      "index": 2,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e2/event-place-to-affix-stamp.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "Wait — stamps?"
+          },
+          "priority": "essential",
+          "span": 1
+        }
+      ]
+    },
+    {
+      "key": "marcus:d13d2b657d",
+      "index": 3,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e2/doc-stamp-act-full-text.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "Not postage."
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e2/doc-stamp-duties-table.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "mark pressed into"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "clip",
+          "image": "historic/u3e2/object-stamp-seal-press.jpg",
+          "prompt": "Embossing press crunches slowly into paper, fibers compressing under pressure.",
+          "at": {
+            "phrase": "little crunch"
+          },
+          "priority": "essential",
+          "span": 1,
+          "pace": "reveal"
+        }
+      ]
+    },
+    {
+      "key": "maya:07053361fe",
+      "index": 4,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e2/doc-stamp-act-1765-another-printing.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "every document she"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e2/doc-stamp-duties-table.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "every diploma and"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.atlantic-world",
+            "period": 1765,
+            "moves": [
+              {
+                "at": {
+                  "phrase": "went to London"
+                },
+                "to": "place.london",
+                "highlight": true
+              }
+            ]
+          },
+          "at": {
+            "phrase": "and the money"
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "marcus:cf52fefc65",
+      "index": 5,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e2/doc-stamp-duties-table.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "Wills, deeds, licenses,"
+          },
+          "priority": "essential",
+          "pace": "quick"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e2/object-colonial-dice.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "playing cards, dice."
+          },
+          "priority": "essential",
+          "pace": "quick"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.thirteen-colonies",
+            "period": 1765
+          },
+          "at": {
+            "phrase": "It touched almost"
+          },
+          "priority": "essential",
+          "pace": "reveal"
+        },
+        {
+          "kind": "point",
+          "backdrop": "historic/u3e2/event-place-to-affix-stamp.jpg",
+          "bullets": [
+            {
+              "text": "lawyers",
+              "at": {
+                "phrase": "lawyers,"
+              }
+            },
+            {
+              "text": "printers",
+              "at": {
+                "phrase": "printers,"
+              }
+            },
+            {
+              "text": "merchants",
+              "at": {
+                "phrase": "merchants."
+              }
+            }
+          ],
+          "at": {
+            "phrase": "people who could complain"
+          },
+          "priority": "essential",
+          "pace": "quick"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e2/event-place-to-affix-stamp.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "single purpose. Raise revenue."
+          },
+          "priority": "essential",
+          "pace": "hold"
+        }
+      ]
+    },
+    {
+      "key": "maya:132f71d9c6",
+      "index": 6,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e2/doc-stamp-duties-table.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "price of the stamp"
+          },
+          "priority": "essential",
+          "pace": "hold"
+        }
+      ]
+    },
+    {
+      "key": "marcus:85ba0e9151",
+      "index": 7,
+      "visuals": [
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.thirteen-colonies",
+            "period": 1763
+          },
+          "at": {
+            "phrase": "colonies had taxed themselves."
+          },
+          "priority": "essential",
+          "pace": "hold"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.atlantic-world",
+            "period": 1765,
+            "moves": [
+              {
+                "at": {
+                  "phrase": "London was taxing"
+                },
+                "to": "london",
+                "highlight": true
+              }
+            ]
+          },
+          "at": {
+            "phrase": "London was taxing"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e2/object-quill-inkstand.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "paper on their desks,"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.eastern-north-america",
+            "period": 1765
+          },
+          "at": {
+            "phrase": "old arrangement."
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "maya:a37acab1b5",
+      "index": 8,
+      "visuals": []
+    },
+    {
+      "key": "marcus:1f148776d4",
+      "index": 9,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e2/cartoon-deplorable-state-america.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "already dead on arrival."
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e2/event-stamp-act-riots-boston-2.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "stamp distributors was still"
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "maya:2874f3db81",
+      "index": 10,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e2/cartoon-sons-of-liberty-emblem.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "Sons of Liberty."
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "marcus:e75a159a11",
+      "index": 11,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e2/doc-sons-of-liberty-broadside.jpg",
+          "framing": "detail",
+          "name": "Samuel Adams",
+          "role": "Boston organizer, Sons of Liberty",
+          "at": {
+            "phrase": "That summer, Samuel Adams"
+          },
+          "priority": "essential",
+          "pace": "hold"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.new-england",
+            "period": 1765,
+            "moves": [
+              {
+                "at": {
+                  "phrase": "Sons of Liberty in Boston."
+                },
+                "to": "boston",
+                "highlight": true
+              }
+            ]
+          },
+          "at": {
+            "phrase": "Sons of Liberty in Boston."
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e2/doc-sons-of-liberty-broadside.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "printed pamphlets."
+          },
+          "priority": "essential",
+          "pace": "quick"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.atlantic-world",
+            "period": 1765
+          },
+          "at": {
+            "phrase": "one colony after another."
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e2/event-hutchinson-flight-rioters.jpg",
+          "framing": "wide",
+          "name": "Thomas Hutchinson",
+          "role": "Lieutenant Governor of Massachusetts",
+          "at": {
+            "phrase": "mob ransacked the home"
+          },
+          "priority": "essential",
+          "pace": "hold"
+        }
+      ]
+    },
+    {
+      "key": "maya:dc2e03e754",
+      "index": 12,
+      "visuals": []
+    },
+    {
+      "key": "marcus:5bacbf58bd",
+      "index": 13,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e2/event-stamp-act-riots-boston-2.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "tar was often boiling"
+          },
+          "priority": "essential",
+          "pace": "hold"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e2/cartoon-deplorable-state-america.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "left deep burns."
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "maya:a9fafb2ad5",
+      "index": 14,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e2/doc-house-of-burgesses.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "constitutional argument"
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "marcus:a152fe38fa",
+      "index": 15,
+      "visuals": [
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.chesapeake",
+            "period": 1765
+          },
+          "at": {
+            "phrase": "Virginia, sixty-five"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e2/doc-house-of-burgesses.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "young burgess"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e2/event-henry-treason-speech.jpg",
+          "framing": "face",
+          "name": "Patrick Henry",
+          "role": "Burgess, Virginia, 1765",
+          "at": {
+            "phrase": "Patrick Henry"
+          },
+          "priority": "essential",
+          "pace": "hold"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e2/object-quill-inkstand.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "Virginia Resolves"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "point",
+          "backdrop": "historic/u3e2/map-mitchell-1755.jpg",
+          "bullets": [
+            {
+              "text": "Only Virginia can tax Virginians",
+              "at": {
+                "phrase": "can tax Virginians"
+              }
+            }
+          ],
+          "at": {
+            "phrase": "only Virginia's own assembly"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.thirteen-colonies",
+            "period": 1765
+          },
+          "at": {
+            "phrase": "down the coast"
+          },
+          "priority": "essential",
+          "span": 1
+        }
+      ]
+    },
+    {
+      "key": "maya:78193b7a1c",
+      "index": 16,
+      "visuals": []
+    },
+    {
+      "key": "marcus:33a777ca66",
+      "index": 17,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e2/map-mitchell-1755.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "other colonies reprinted"
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "maya:76f400fc9e",
+      "index": 18,
+      "visuals": [
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.thirteen-colonies",
+            "period": 1765
+          },
+          "at": {
+            "phrase": "other colonies just copy"
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "marcus:a8db68a744",
+      "index": 19,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e2/object-stamp-act-congress-medal.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "held a convention"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.hudson-corridor",
+            "period": "1765-10-01",
+            "moves": [
+              {
+                "at": {
+                  "phrase": "New York"
+                },
+                "to": "new-york",
+                "highlight": true
+              }
+            ]
+          },
+          "at": {
+            "phrase": "October, seventeen sixty-five"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.atlantic-world",
+            "period": 1765
+          },
+          "at": {
+            "phrase": "nine colonies"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e2/object-stamp-act-congress-medal.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "Stamp Act Congress"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "point",
+          "backdrop": "historic/u3e2/event-henry-treason-speech.jpg",
+          "bullets": [
+            {
+              "text": "Only elected reps can tax",
+              "at": {
+                "phrase": "can tax us"
+              }
+            }
+          ],
+          "at": {
+            "phrase": "only our own elected"
+          },
+          "priority": "essential",
+          "pace": "hold"
+        }
+      ]
+    },
+    {
+      "key": "maya:fa929a3c8a",
+      "index": 20,
+      "visuals": [
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.atlantic-world",
+            "period": 1765
+          },
+          "at": {
+            "phrase": "Box one's taking shape"
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "marcus:a65fc133e5",
+      "index": 21,
+      "visuals": [
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.atlantic-world",
+            "period": 1765
+          },
+          "at": {
+            "phrase": "The boycott"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "point",
+          "backdrop": "historic/u3e2/cartoon-sons-of-liberty-emblem.jpg",
+          "bullets": [
+            {
+              "text": "No British goods in",
+              "at": {
+                "offset": 0.4
+              }
+            },
+            {
+              "text": "No colonial money out",
+              "at": {
+                "offset": 1.4
+              }
+            }
+          ],
+          "at": {
+            "phrase": "No British goods in"
+          },
+          "priority": "essential",
+          "pace": "quick"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e2/object-spinning-wheel.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "spinning bees"
+          },
+          "priority": "essential",
+          "span": 1
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e2/object-homespun-cloth.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "homespun cloth"
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "maya:592010102d",
+      "index": 22,
+      "visuals": []
+    },
+    {
+      "key": "marcus:8e0309b036",
+      "index": 23,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e2/object-spinning-wheel.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "the spinning wheel"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.eastern-north-america",
+            "period": 1765
+          },
+          "at": {
+            "phrase": "merchants across the ocean"
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "maya:0ba13cc498",
+      "index": 24,
+      "visuals": [
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.thirteen-colonies",
+            "period": 1765
+          },
+          "at": {
+            "phrase": "this box"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "point",
+          "backdrop": "historic/u3e2/object-homespun-cloth.jpg",
+          "bullets": [
+            {
+              "text": "Lawyers",
+              "at": {
+                "offset": 0.3
+              }
+            },
+            {
+              "text": "Printers",
+              "at": {
+                "offset": 0.9
+              }
+            },
+            {
+              "text": "Merchants",
+              "at": {
+                "offset": 1.5
+              }
+            }
+          ],
+          "at": {
+            "phrase": "Lawyers, printers, merchants."
+          },
+          "priority": "essential",
+          "pace": "quick"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.thirteen-colonies",
+            "period": 1765
+          },
+          "at": {
+            "phrase": "Every colony,"
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "maya:cc723f21db",
+      "index": 25,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e2/cartoon-sons-of-liberty-emblem.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "Sons of Liberty"
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "marcus:0e909f1ae8",
+      "index": 26,
+      "visuals": [
+        {
+          "kind": "custom",
+          "component": "BoycottPressure",
+          "at": {
+            "phrase": "British merchants"
+          },
+          "priority": "essential",
+          "pace": "hold"
+        }
+      ]
+    },
+    {
+      "key": "maya:0a585cbb0d",
+      "index": 27,
+      "visuals": [
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.atlantic-world",
+            "period": 1765,
+            "moves": [
+              {
+                "at": {
+                  "phrase": "colonists three thousand"
+                },
+                "to": "colonies",
+                "highlight": true
+              },
+              {
+                "at": {
+                  "phrase": "London merchants"
+                },
+                "to": "london",
+                "highlight": true
+              }
+            ]
+          },
+          "at": {
+            "phrase": "two groups:"
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "pause:10",
+      "index": 28,
+      "visuals": []
+    },
+    {
+      "key": "marcus:930cb0c901",
+      "index": 29,
+      "visuals": [
+        {
+          "kind": "map",
+          "map": {
+            "period": 1765,
+            "view": "map.atlantic-world",
+            "moves": [
+              {
+                "at": {
+                  "phrase": "London's own businessmen"
+                },
+                "highlight": true,
+                "to": "place.london"
+              }
+            ]
+          },
+          "at": {
+            "phrase": "Follow the money"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e2/object-quill-inkstand.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "box two is"
+          },
+          "priority": "essential",
+          "pace": "reveal"
+        },
+        {
+          "kind": "point",
+          "at": {
+            "phrase": "virtual representation"
+          },
+          "backdrop": "historic/u3e2/doc-pamphlet-dulany.jpg",
+          "framing": "wide",
+          "bullets": [
+            {
+              "at": {
+                "offset": 0.5
+              },
+              "text": "MPs for whole empire"
+            },
+            {
+              "at": {
+                "offset": 1.2
+              },
+              "text": "No vote needed"
+            }
+          ],
+          "priority": "essential",
+          "span": 2
+        }
+      ]
+    },
+    {
+      "key": "maya:f791929ba4",
+      "index": 30,
+      "visuals": []
+    },
+    {
+      "key": "marcus:2ef0f28ebc",
+      "index": 31,
+      "visuals": [
+        {
+          "kind": "map",
+          "map": {
+            "period": 1765,
+            "view": "map.thirteen-colonies",
+            "moves": [
+              {
+                "at": {
+                  "phrase": "farmed in Virginia"
+                },
+                "highlight": true,
+                "to": "southern-colonies"
+              }
+            ]
+          },
+          "at": {
+            "phrase": "farmed in Virginia"
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "maya:7f1559fa61",
+      "index": 32,
+      "visuals": [
+        {
+          "kind": "map",
+          "map": {
+            "period": 1765,
+            "view": "map.thirteen-colonies",
+            "moves": [
+              {
+                "at": {
+                  "phrase": "my town on a map"
+                },
+                "highlight": true,
+                "to": "colonies"
+              }
+            ]
+          },
+          "at": {
+            "phrase": "my town on a map"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "period": 1765,
+            "view": "map.eastern-north-america"
+          },
+          "at": {
+            "phrase": "can't vote them out"
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "marcus:8337a77fa6",
+      "index": 33,
+      "visuals": [
+        {
+          "kind": "point",
+          "at": {
+            "phrase": "actual representation"
+          },
+          "backdrop": "historic/u3e2/doc-otiss-rights-colonies.jpg",
+          "framing": "wide",
+          "bullets": [
+            {
+              "at": {
+                "offset": 0.4
+              },
+              "text": "Tax needs consent"
+            },
+            {
+              "at": {
+                "offset": 1
+              },
+              "text": "Consent = elected body"
+            },
+            {
+              "at": {
+                "offset": 1.6
+              },
+              "text": "Assembly = that body"
+            }
+          ],
+          "priority": "essential",
+          "pace": "hold",
+          "span": 1
+        },
+        {
+          "kind": "map",
+          "map": {
+            "period": 1765,
+            "view": "map.eastern-north-america"
+          },
+          "at": {
+            "phrase": "Their assemblies had taxed"
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "maya:5cfdff75a3",
+      "index": 34,
+      "visuals": []
+    },
+    {
+      "key": "marcus:85bb87daea",
+      "index": 35,
+      "visuals": [
+        {
+          "kind": "map",
+          "map": {
+            "period": 1765,
+            "view": "map.north-america"
+          },
+          "at": {
+            "phrase": "no Englishman could be compelled"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "period": 1765,
+            "view": "map.new-england"
+          },
+          "at": {
+            "phrase": "their assembly"
+          },
+          "priority": "essential",
+          "span": 1
+        }
+      ]
+    },
+    {
+      "key": "maya:edaaa6216e",
+      "index": 36,
+      "visuals": []
+    },
+    {
+      "key": "marcus:ca07eff093",
+      "index": 37,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e2/doc-otiss-rights-colonies.jpg",
+          "framing": "wide",
+          "name": "James Otis",
+          "role": "Pamphleteer, Massachusetts",
+          "at": {
+            "phrase": "Rights of the British Colonies"
+          },
+          "priority": "essential",
+          "pace": "hold"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "period": 1765,
+            "view": "map.atlantic-world",
+            "moves": [
+              {
+                "at": {
+                  "phrase": "seats in Parliament,"
+                },
+                "highlight": true,
+                "to": "place.london"
+              }
+            ]
+          },
+          "at": {
+            "phrase": "seats in Parliament,"
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "maya:c692033da3",
+      "index": 38,
+      "visuals": []
+    },
+    {
+      "key": "marcus:a70416b481",
+      "index": 39,
+      "visuals": []
+    },
+    {
+      "key": "maya:67b827a5fe",
+      "index": 40,
+      "visuals": []
+    },
+    {
+      "key": "maya:579bb2cd57",
+      "index": 41,
+      "visuals": [
+        {
+          "kind": "map",
+          "map": {
+            "period": 1765,
+            "view": "map.chesapeake"
+          },
+          "at": {
+            "phrase": "Virtual representation is Parliament's line,"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "period": 1765,
+            "view": "map.new-england"
+          },
+          "at": {
+            "phrase": "never the colonists'."
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e2/doc-pamphlet-dulany.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "power to tax them,"
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "marcus:dae212ca03",
+      "index": 42,
+      "visuals": [
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.thirteen-colonies",
+            "period": 1766
+          },
+          "at": {
+            "phrase": "The boycott worked."
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e2/doc-repeal-london-gazette.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "Parliament repeals the Stamp"
+          },
+          "priority": "essential",
+          "pace": "reveal"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e2/portrait-george-iii.jpg",
+          "framing": "face",
+          "name": "George III",
+          "role": "King of Great Britain",
+          "at": {
+            "phrase": "The king had replaced"
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "maya:1e61d5cfde",
+      "index": 43,
+      "visuals": [
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.eastern-north-america",
+            "period": 1766
+          },
+          "at": {
+            "phrase": "Box three:"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.atlantic-world",
+            "period": "1766-03-18",
+            "moves": [
+              {
+                "at": {
+                  "phrase": "the Declaratory Act:"
+                },
+                "to": "london"
+              }
+            ]
+          },
+          "at": {
+            "phrase": "Parliament linked it to"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "point",
+          "backdrop": "historic/u3e2/portrait-george-iii.jpg",
+          "bullets": [
+            {
+              "text": "full power to make laws",
+              "at": {
+                "offset": 0.3
+              }
+            },
+            {
+              "text": "binding the colonies",
+              "at": {
+                "phrase": "binding the colonies,"
+              }
+            },
+            {
+              "text": "in all cases whatsoever",
+              "at": {
+                "phrase": "in all cases whatsoever."
+              }
+            }
+          ],
+          "at": {
+            "phrase": "full power to make"
+          },
+          "priority": "essential",
+          "pace": "hold"
+        }
+      ]
+    },
+    {
+      "key": "marcus:9a9334b39d",
+      "index": 44,
+      "visuals": [
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.thirteen-colonies",
+            "period": 1766
+          },
+          "at": {
+            "phrase": "Fine print that swallowed"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.north-america",
+            "period": 1766
+          },
+          "at": {
+            "phrase": "They hadn't gained an"
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "maya:ffb0db4796",
+      "index": 45,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e2/event-repeal-illumination.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "celebrate the repeal first?"
+          },
+          "priority": "essential",
+          "span": 1
+        }
+      ]
+    },
+    {
+      "key": "marcus:a61b6f4859",
+      "index": 46,
+      "visuals": []
+    },
+    {
+      "key": "maya:8f56c5a253",
+      "index": 47,
+      "visuals": [
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.eastern-north-america",
+            "period": 1766
+          },
+          "at": {
+            "phrase": "Parliament repeal your tax,"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.north-america",
+            "period": 1766
+          },
+          "at": {
+            "phrase": "in all cases whatsoever."
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.ohio-valley",
+            "period": 1766
+          },
+          "at": {
+            "phrase": "worry about the fine"
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "pause:10#2",
+      "index": 48,
+      "visuals": []
+    },
+    {
+      "key": "marcus:d70bede05e",
+      "index": 49,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e2/doc-repeal-london-gazette.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "Celebrate the repeal, then"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e2/event-repeal-illumination.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "\"In all cases whatsoever\""
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.pennsylvania-frontier",
+            "period": 1766
+          },
+          "at": {
+            "phrase": "promise and a threat"
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "maya:1ce142043e",
+      "index": 50,
+      "visuals": [
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.hudson-corridor",
+            "period": 1766
+          },
+          "at": {
+            "phrase": "principle fight was over."
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "marcus:324f7ebffb",
+      "index": 51,
+      "visuals": [
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.chesapeake",
+            "period": 1766
+          },
+          "at": {
+            "phrase": "Not exactly."
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "maya:855afccd39",
+      "index": 52,
+      "visuals": [
+        {
+          "kind": "image",
+          "image": "historic/u3e2/doc-stamp-act-statute.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "Three boxes,"
+          },
+          "priority": "essential",
+          "pace": "reveal"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e2/doc-stamp-act-1765-another-printing.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "One: the Stamp Act."
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e2/object-colonial-dice.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "newspapers, dice, the"
+          },
+          "priority": "essential",
+          "pace": "quick"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.thirteen-colonies",
+            "period": 1765,
+            "moves": [
+              {
+                "at": {
+                  "phrase": "the boycott and"
+                },
+                "to": "colonies",
+                "highlight": true
+              },
+              {
+                "at": {
+                  "phrase": "Stamp Act Congress"
+                },
+                "to": "middle-colonies",
+                "highlight": true
+              }
+            ]
+          },
+          "at": {
+            "phrase": "Killed by"
+          },
+          "priority": "essential",
+          "span": 3
+        }
+      ]
+    },
+    {
+      "key": "marcus:3b021e8ff1",
+      "index": 53,
+      "visuals": []
+    },
+    {
+      "key": "maya:a8f46087c2",
+      "index": 54,
+      "visuals": []
+    },
+    {
+      "key": "marcus:0842385bd9",
+      "index": 55,
+      "visuals": []
+    },
+    {
+      "key": "maya:7cf7b9b038",
+      "index": 56,
+      "visuals": [
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.atlantic-world",
+            "period": 1765,
+            "moves": [
+              {
+                "at": {
+                  "phrase": "whole empire,"
+                },
+                "to": "london",
+                "highlight": true
+              },
+              {
+                "at": {
+                  "phrase": "colonists are virtually"
+                },
+                "to": "colonies",
+                "highlight": true
+              }
+            ]
+          },
+          "at": {
+            "phrase": "virtual representation versus"
+          },
+          "priority": "essential",
+          "pace": "hold"
+        },
+        {
+          "kind": "point",
+          "backdrop": "historic/u3e2/doc-otiss-rights-colonies.jpg",
+          "bullets": [
+            {
+              "text": "Virtual: Parliament for whole empire",
+              "at": {
+                "phrase": "virtually represented."
+              }
+            },
+            {
+              "text": "Actual: only elected body taxes",
+              "at": {
+                "phrase": "we elected can"
+              }
+            }
+          ],
+          "at": {
+            "phrase": "actual representation. Parliament's"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e2/doc-otiss-rights-colonies.jpg",
+          "framing": "wide",
+          "at": {
+            "phrase": "Otis's pamphlet and"
+          },
+          "priority": "essential",
+          "pace": "reveal"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e2/doc-stamp-act-full-text.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "no-tax-without-consent rule"
+          },
+          "priority": "essential",
+          "span": 1
+        }
+      ]
+    },
+    {
+      "key": "marcus:1bcf156070",
+      "index": 57,
+      "visuals": []
+    },
+    {
+      "key": "maya:f7c1967e86",
+      "index": 58,
+      "visuals": [
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.atlantic-world",
+            "period": 1766
+          },
+          "at": {
+            "phrase": "the Declaratory Act."
+          },
+          "priority": "essential",
+          "pace": "reveal"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e2/doc-stamp-act-full-text.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "the repeal, sixty-six."
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "point",
+          "backdrop": "historic/u3e2/doc-stamp-act-statute.jpg",
+          "bullets": [
+            {
+              "text": "Parliament: power in all cases",
+              "at": {
+                "phrase": "all cases whatsoever."
+              }
+            }
+          ],
+          "at": {
+            "phrase": "Parliament claims power"
+          },
+          "priority": "essential",
+          "pace": "hold",
+          "span": 1
+        }
+      ]
+    },
+    {
+      "key": "marcus:d7cae5259a",
+      "index": 59,
+      "visuals": []
+    },
+    {
+      "key": "maya:2160ee9db3",
+      "index": 60,
+      "visuals": [
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.eastern-north-america",
+            "period": 1765
+          },
+          "at": {
+            "phrase": "Three questions, AP-shaped."
+          },
+          "priority": "essential",
+          "pace": "quick"
+        },
+        {
+          "kind": "image",
+          "image": "historic/u3e2/object-stamp-act-congress-medal.jpg",
+          "framing": "detail",
+          "at": {
+            "phrase": "Stamp Act Congress's Declaration"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.thirteen-colonies",
+            "period": 1765,
+            "moves": [
+              {
+                "at": {
+                  "phrase": "colonists can tax them."
+                },
+                "to": "colonies",
+                "highlight": true
+              }
+            ]
+          },
+          "at": {
+            "phrase": "Only representatives chosen"
+          },
+          "priority": "essential"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.atlantic-world",
+            "period": 1765,
+            "moves": [
+              {
+                "at": {
+                  "phrase": "had Parliament used"
+                },
+                "to": "london",
+                "highlight": true
+              }
+            ]
+          },
+          "at": {
+            "phrase": "what line had Parliament"
+          },
+          "priority": "essential"
+        }
+      ]
+    },
+    {
+      "key": "pause:10#3",
+      "index": 61,
+      "visuals": []
+    },
+    {
+      "key": "maya:b53cac615c",
+      "index": 62,
+      "visuals": [
+        {
+          "kind": "point",
+          "backdrop": "historic/u3e2/object-stamp-act-congress-medal.jpg",
+          "bullets": [
+            {
+              "text": "Taxation needs consent",
+              "at": {
+                "offset": 0.3
+              }
+            },
+            {
+              "text": "Through body you elected",
+              "at": {
+                "offset": 1
+              }
+            },
+            {
+              "text": "Virtual representation fails",
+              "at": {
+                "offset": 1.7
+              }
+            }
+          ],
+          "at": {
+            "phrase": "Actual representation."
+          },
+          "priority": "essential",
+          "pace": "hold"
+        },
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.thirteen-colonies",
+            "period": 1765,
+            "moves": [
+              {
+                "at": {
+                  "phrase": "Boston printer."
+                },
+                "to": "new-england",
+                "highlight": true
+              }
+            ]
+          },
+          "at": {
+            "phrase": "nine colonies drew"
+          },
+          "priority": "essential",
+          "span": 1
+        }
+      ]
+    },
+    {
+      "key": "maya:6a40f1d164",
+      "index": 63,
+      "visuals": []
+    },
+    {
+      "key": "pause:10#4",
+      "index": 64,
+      "visuals": []
+    },
+    {
+      "key": "maya:08a1f06a31",
+      "index": 65,
+      "visuals": [
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.eastern-north-america",
+            "period": 1764
+          },
+          "at": {
+            "phrase": "Sugar Act had"
+          },
+          "priority": "essential",
+          "span": 3
+        }
+      ]
+    },
+    {
+      "key": "maya:a0b9c1f545",
+      "index": 66,
+      "visuals": []
+    },
+    {
+      "key": "pause:10#5",
+      "index": 67,
+      "visuals": []
+    },
+    {
+      "key": "maya:624e24b5f5",
+      "index": 68,
+      "visuals": []
+    },
+    {
+      "key": "maya:470f0ce338",
+      "index": 69,
+      "visuals": [
+        {
+          "kind": "map",
+          "map": {
+            "view": "map.atlantic-world",
+            "period": 1767,
+            "moves": [
+              {
+                "at": {
+                  "phrase": "London tries a new"
+                },
+                "to": "london",
+                "highlight": true
+              },
+              {
+                "at": {
+                  "phrase": "Boston fills up"
+                },
+                "to": "colonies",
+                "highlight": true
+              }
+            ]
+          },
+          "at": {
+            "phrase": "Next time:"
+          },
+          "priority": "essential",
+          "span": 2
+        }
+      ]
+    },
+    {
+      "key": "marcus:73aa09f931",
+      "index": 70,
+      "visuals": []
+    },
+    {
+      "key": "maya:4cb75e8ef3",
+      "index": 71,
+      "visuals": []
+    }
+  ]
+}

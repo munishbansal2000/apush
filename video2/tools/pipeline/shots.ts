@@ -19,7 +19,7 @@ import {expandMapViews, type MapViewDef, type ViewMapShot} from './map-views';
 export type Cue = PhraseAnchor | {offset: number};
 
 export type PlanShot = (
-  | {type: 'image_move' | 'portrait'; at: PhraseAnchor; image: string; from: Framing; to: Framing; name?: string; role?: string; transition?: 'cut' | 'crossfade';
+  | {type: 'image_move' | 'portrait'; at: PhraseAnchor; image: string; from: Framing; to: Framing; presentation?: 'portrait' | 'map' | 'document' | 'scene' | 'object'; name?: string; role?: string; transition?: 'cut' | 'crossfade';
       /** The same image continuing in another framing (a split long hold): not a new use of the image. */
       continues?: boolean}
   | {type: 'clip'; at: PhraseAnchor; image: string; prompt: string; seed?: number; focus?: [number, number]; from?: Framing; to?: Framing; transition?: 'cut' | 'crossfade'}
@@ -46,13 +46,15 @@ export interface ShotPlan {
   shots: (PlanShot | ViewMapShot)[];
   years?: {at: PhraseAnchor; text: string}[];
   boxes?: {label: string; intro: PhraseAnchor; check: PhraseAnchor; turns: {from: number; to: number}}[];
+  /** Storyboard act boundaries, retained so lesson-wide variety failures can be routed to the owning act. */
+  acts?: {title: string; turns: {from: number; to: number}}[];
   /** Where the last shot ends: a spoken phrase (samples) or the end of the episode audio (default). */
   end?: PhraseAnchor;
 }
 
 export interface ResolvedShotPlan {shots: DocShot[]; years: YearStamp[]; boxes: DocBox[]; endSec: number}
 
-export interface ShotRules {minShotSec: number; maxShotSec: number; maxMapSec: number; maxBullets: number; maxBulletWords: number; maxUpscale: number; maxImageUses: number; maxClips: number; questionPauseSec: number; questionOverrunSec: number; minCustomSec: number; maxCustoms: number; lengthToleranceSec: number; maxPointsPerAct: number; maxMapRun: number; maxViewPerAct: number; maxViewPerLesson: number}
+export interface ShotRules {minShotSec: number; maxShotSec: number; maxMapSec: number; maxBullets: number; maxBulletWords: number; maxUpscale: number; maxImageUses: number; maxClips: number; questionPauseSec: number; questionOverrunSec: number; minCustomSec: number; maxCustoms: number; lengthToleranceSec: number; maxPointsPerAct: number; maxMapsPerAct: number; maxMapRun: number; maxViewPerAct: number; maxViewPerLesson: number}
 /** maxImageUses is 4 while the asset library is thin (the hand sample uses Grenville 4x); LOOK.md's target is 3. */
 export const LOOK_RULES: ShotRules = {minShotSec: 1.2, maxShotSec: 8, maxMapSec: 14, maxBullets: 3, maxBulletWords: 6, maxUpscale: 1.6, maxImageUses: 4, maxClips: 2,
   /** Pauses this long or longer must be covered by a question card; a card may outlast its pause by questionOverrunSec. */
@@ -63,7 +65,7 @@ export const LOOK_RULES: ShotRules = {minShotSec: 1.2, maxShotSec: 8, maxMapSec:
   lengthToleranceSec: 1,
   /** Storyboard variety. Per act (an act can always fix these itself): point cards, maps in a row, uses of one map view.
    *  Per lesson (warnings only, so acts never ping-pong): uses of one map view. */
-  maxPointsPerAct: 2, maxMapRun: 3, maxViewPerAct: 2, maxViewPerLesson: 3};
+  maxPointsPerAct: 2, maxMapsPerAct: 4, maxMapRun: 3, maxViewPerAct: 2, maxViewPerLesson: 3};
 
 export interface ResolveOptions {
   /** Pixel sizes of public/ images (data/images.lock.json); a shot on a missing or unsized image is an error. */
@@ -115,6 +117,18 @@ export function resolveShotPlan(input: ShotPlan, turns: PipelineTurn[], timing: 
   const expanded = expandMapViews(input, opts.mapViews ?? {}, opts.places ?? {}, (opts.geo ?? {}) as never, opts.allowUnapproved);
   const plan = expanded.plan as Omit<ShotPlan, 'shots'> & {shots: PlanShot[]};
   const issues: string[] = [...expanded.issues];
+  // Check named views before expansion removes their ids. Without a hard lesson gate, independently directed acts
+  // each choose the same broad views and can all pass their local checks while making a repetitive final lesson.
+  const sourceMaps = input.shots.map((shot, index) => ({shot, index})).filter(x => x.shot.type === 'map');
+  for (const act of input.acts ?? []) {
+    const inAct = sourceMaps.filter(({shot}) => shot.at.turn >= act.turns.from && shot.at.turn <= act.turns.to);
+    for (const {index} of inAct.slice(rules.maxMapsPerAct)) issues.push(`shot${String(index + 1).padStart(2, '0')}: act "${act.title}" has ${inAct.length} maps; max ${rules.maxMapsPerAct}. Replace this map with a relevant picture, document, object, point card, or custom explainer`);
+  }
+  const viewUses = new Map<string, number[]>();
+  for (const {shot, index} of sourceMaps) if ('view' in shot && typeof shot.view === 'string') viewUses.set(shot.view, [...(viewUses.get(shot.view) ?? []), index]);
+  for (const [view, indexes] of viewUses) for (const index of indexes.slice(rules.maxViewPerLesson)) {
+    issues.push(`shot${String(index + 1).padStart(2, '0')}: map view "${view}" occurs ${indexes.length} times in this lesson; max ${rules.maxViewPerLesson}. Replace this occurrence with a relevant non-map visual`);
+  }
   const phrase = (where: string, a: PhraseAnchor, edge: 'start' | 'end' = 'start'): number => {
     try { return resolvePhrase(a, turns, timing, words, edge, opts.allowEstimated).sec; } catch (error) {
       issues.push(`${where}: ${error instanceof Error ? error.message : String(error)}`);
@@ -166,8 +180,8 @@ export function resolveShotPlan(input: ShotPlan, turns: PipelineTurn[], timing: 
         const size = sized(id, shot.image, [shot.from, shot.to]);
         const depth = opts.depthMaps?.[shot.image];
         return shot.type === 'portrait'
-          ? {...base, type: 'portrait', image: shot.image, size, from: shot.from, to: shot.to, name: shot.name ?? '', role: shot.role, depth}
-          : {...base, type: 'image_move', image: shot.image, size, from: shot.from, to: shot.to, depth};
+          ? {...base, type: 'portrait', image: shot.image, size, from: shot.from, to: shot.to, presentation: shot.presentation, name: shot.name ?? '', role: shot.role, depth}
+          : {...base, type: 'image_move', image: shot.image, size, from: shot.from, to: shot.to, presentation: shot.presentation, depth};
       }
       case 'clip': {
         for (const issue of clipPromptIssues(shot.prompt ?? '')) issues.push(`${id}: ${issue}`);

@@ -1,4 +1,4 @@
-import {copyFileSync, existsSync, mkdirSync, readdirSync, renameSync, unlinkSync, writeFileSync} from 'node:fs';
+import {copyFileSync, existsSync, mkdirSync, readFileSync, readdirSync, renameSync, unlinkSync, writeFileSync} from 'node:fs';
 import {join} from 'node:path';
 import {ROOT} from '../../lib';
 import {atomicJson, readJson, sha256, type PipelineTurn} from '../../pipeline-core';
@@ -24,13 +24,21 @@ export const audioInputHash = (ctx: PipelineContext, turns: PipelineTurn[], pron
 export function audioStage(ctx: PipelineContext, turns: PipelineTurn[], pronunciations: Pronunciation[]): void {
   const {cfg, force, audioDir, ttsDir} = ctx;
   const audioHash = audioInputHash(ctx, turns, pronunciations);
-  if (!ctx.stages.includes('audio')) return;
+  const speech = turns.filter(t => t.kind === 'speech');
+  const checkpointCurrent = ctx.current('audio', audioHash);
+  // public/audio is a disposable publish target. If an older interrupted run replaced only
+  // some files, restore the completed checkpoint from its content-addressed cache. When this
+  // run starts after audio (for example, --from clips), index.json is the authoritative audio
+  // snapshot: the CLI's default engine must not prevent an incremental run from restoring it.
+  const audioSelected = ctx.stages.includes('audio');
+  if (!ctx.dryRun && (checkpointCurrent || !audioSelected)) restorePublishedAudio(ttsDir, audioDir, speech);
+  if (!audioSelected) return;
   // Approved audio is frozen: reused as is, even if the voices, model or pronunciations changed since.
-  if (loadLessonReview(ctx.episode, dirname(ctx.dataDir)).audio?.approved && turns.filter(t => t.kind === 'speech').every(t => existsSync(join(audioDir, `${t.id}.mp3`)))) {
+  if (loadLessonReview(ctx.episode, dirname(ctx.dataDir)).audio?.approved && speech.every(t => existsSync(join(audioDir, `${t.id}.mp3`)))) {
     console.log('[audio] approved in review (frozen)');
     return;
   }
-  if (ctx.current('audio', audioHash) && turns.filter(t => t.kind === 'speech').every(t => existsSync(join(audioDir, `${t.id}.mp3`)))) console.log('[audio] checkpoint current');
+  if (checkpointCurrent && speech.every(t => existsSync(join(audioDir, `${t.id}.mp3`)))) console.log('[audio] checkpoint current');
   else if (ctx.dryRun) console.log(`[audio] dry-run: ${ctx.tts}`);
   else {
     mkdirSync(audioDir, {recursive: true}); mkdirSync(ttsDir, {recursive: true});
@@ -41,7 +49,6 @@ export function audioStage(ctx: PipelineContext, turns: PipelineTurn[], pronunci
     const indexPath = join(ttsDir, 'index.json');
     const priorIndex = existsSync(indexPath) ? readJson<Record<string, IndexEntry>>(indexPath) : {};
     seedCacheFromIdIndex(priorIndex, audioDir, cacheDir);
-    const speech = turns.filter(t => t.kind === 'speech');
     // Text sent to TTS before pronunciation substitution (Fish adds performance tags in prod).
     let directed = Object.fromEntries(speech.map(t => [t.id, cleanSpeech(t.text ?? '')]));
     if (ctx.tts === 'fish') {
@@ -58,6 +65,7 @@ export function audioStage(ctx: PipelineContext, turns: PipelineTurn[], pronunci
     let fishPython: string | undefined;
     let fishKey: {env: NodeJS.ProcessEnv; tag?: string} | undefined;
     const index: Record<string, IndexEntry> = {};
+    const publish: {id: string; cached: string; output: string}[] = [];
     let rendered = 0;
     let reused = 0;
     for (const turn of speech) {
@@ -97,9 +105,13 @@ export function audioStage(ctx: PipelineContext, turns: PipelineTurn[], pronunci
         renameSync(temp, cached);
         rendered++;
       }
-      copyFileSync(cached, output);
-      index[turn.id] = {speaker: turn.speaker ?? 'narrator', text, directed: directed[turn.id], hash: sha256(cleanSpeech(turn.text ?? '')), engine: ctx.tts, artifactHash};
+      publish.push({id: turn.id, cached, output});
+      index[turn.id] = {speaker: turn.speaker ?? 'narrator', text, directed: directed[turn.id], hash: sha256(cleanSpeech(turn.text ?? '')), engine: ctx.tts, artifactHash, fileHash: sha256(readFileSync(cached))};
     }
+    // Do not publish turn-by-turn while synthesis is still fallible. Stage every completed
+    // artifact beside its destination first, then replace the public set. An interrupted TTS
+    // pass therefore leaves the previous engine's complete audio set intact.
+    publishAudioSet(publish);
     // Turn ids are positional; drop audio for ids that no longer exist so later stages never see it.
     const live = new Set(speech.map(t => `${t.id}.mp3`));
     for (const name of readdirSync(audioDir)) if (name.endsWith('.mp3') && !live.has(name)) unlinkSync(join(audioDir, name));
@@ -109,7 +121,43 @@ export function audioStage(ctx: PipelineContext, turns: PipelineTurn[], pronunci
   }
 }
 
-interface IndexEntry {speaker: string; text: string; directed?: string; hash: string; engine: string; artifactHash: string}
+interface IndexEntry {speaker: string; text: string; directed?: string; hash: string; engine: string; artifactHash: string; fileHash?: string}
+
+function restorePublishedAudio(ttsDir: string, audioDir: string, speech: PipelineTurn[]): void {
+  const indexPath = join(ttsDir, 'index.json');
+  if (!existsSync(indexPath)) throw new Error('the completed audio snapshot has no tts index.json; rerun from the audio stage with --force');
+  const index = readJson<Record<string, IndexEntry>>(indexPath);
+  const cacheDir = join(ttsDir, 'cache');
+  const restore: {id: string; cached: string; output: string}[] = [];
+  for (const turn of speech) {
+    const entry = index[turn.id];
+    if (!entry?.artifactHash) throw new Error(`the completed audio snapshot has no cache entry for ${turn.id}; rerun from the audio stage with --force`);
+    const cached = join(cacheDir, `${entry.artifactHash}.mp3`);
+    if (!existsSync(cached)) throw new Error(`the completed audio snapshot cache is missing ${turn.id} (${entry.artifactHash}); rerun from the audio stage with --force`);
+    const cachedHash = sha256(readFileSync(cached));
+    if (entry.fileHash && entry.fileHash !== cachedHash) throw new Error(`audio cache is corrupt for ${turn.id}; rerun the audio stage with --force`);
+    const output = join(audioDir, `${turn.id}.mp3`);
+    if (!existsSync(output) || sha256(readFileSync(output)) !== cachedHash) restore.push({id: turn.id, cached, output});
+  }
+  if (restore.length) {
+    mkdirSync(audioDir, {recursive: true});
+    publishAudioSet(restore);
+    console.log(`[audio] restored ${restore.length} published file(s) from the completed checkpoint cache`);
+  }
+}
+
+/** Stage the whole publish set before replacing any destination file. */
+function publishAudioSet(files: {id: string; cached: string; output: string}[]): void {
+  const token = `${process.pid}.${Date.now()}`;
+  const staged = files.map(file => ({...file, temp: join(dirname(file.output), `.${file.id}.${token}.publish.mp3`)}));
+  try {
+    for (const file of staged) copyFileSync(file.cached, file.temp);
+    for (const file of staged) renameSync(file.temp, file.output);
+  } catch (error) {
+    for (const file of staged) if (existsSync(file.temp)) unlinkSync(file.temp);
+    throw error;
+  }
+}
 
 /** One-time migration from the old id-keyed layout: index.json + public/audio/<id>.mp3 → cache/<hash>.mp3. */
 function seedCacheFromIdIndex(priorIndex: Record<string, Partial<IndexEntry>>, audioDir: string, cacheDir: string): void {

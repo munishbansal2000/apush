@@ -223,7 +223,12 @@
     ],
     "source": "loc",
     "catalog_id": "portrait.george-grenville-hoare",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t42",
+      "u3e2:t01",
+      "u3e2:t52"
+    ]
   },
   "historic/u3e2/portrait-rockingham-reynolds.jpg": {
     "description": "Charles Watson-Wentworth, 2nd Marquess of Rockingham",
@@ -234,7 +239,12 @@
     ],
     "source": "nypl",
     "catalog_id": "portrait.rockingham-reynolds",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t42",
+      "u3e2:t52",
+      "u3e2:t53"
+    ]
   },
   "historic/u3e2/portrait-samuel-adams-copley.jpg": {
     "description": "Samuel Adams (after John Singleton Copley, 1772)",
@@ -245,7 +255,10 @@
     ],
     "source": "nypl",
     "catalog_id": "portrait.samuel-adams-copley",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t11"
+    ]
   },
   "historic/u3e2/portrait-thomas-hutchinson.jpg": {
     "description": "Thomas Hutchinson, lieutenant governor of Massachusetts",
@@ -256,7 +269,10 @@
     ],
     "source": "loc",
     "catalog_id": "portrait.thomas-hutchinson",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t11"
+    ]
   },
   "historic/u3e2/portrait-patrick-henry.jpg": {
     "description": "Patrick Henry, Virginia burgess",
@@ -267,7 +283,10 @@
     ],
     "source": "loc",
     "catalog_id": "portrait.patrick-henry",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t15"
+    ]
   },
   "historic/u3e2/portrait-james-otis-jr.jpg": {
     "description": "James Otis Jr., author of The Rights of the British Colonies",
@@ -278,7 +297,12 @@
     ],
     "source": "nypl",
     "catalog_id": "portrait.james-otis-jr",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t36",
+      "u3e2:t37",
+      "u3e2:t56"
+    ]
   },
   "historic/u3e2/portrait-john-adams-1760s.jpg": {
     "description": "John Adams in the 1760s",
@@ -289,7 +313,10 @@
     ],
     "source": "wikimedia",
     "catalog_id": "portrait.john-adams-1760s",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t37"
+    ]
   },
   "historic/u3e2/portrait-george-iii.jpg": {
     "description": "King George III (after Allan Ramsay, coronation portrait)",
@@ -300,7 +327,10 @@
     ],
     "source": "wikimedia",
     "catalog_id": "portrait.george-iii",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t42"
+    ]
   },
   "historic/u3e2/event-henry-treason-speech.jpg": {
     "description": "Patrick Henry's 'treason' speech against the Stamp Act, May 1765 (Peter Rothermel)",
@@ -311,7 +341,10 @@
     ],
     "source": "wikimedia",
     "catalog_id": "event.henry-treason-speech",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t15"
+    ]
   },
   "historic/u3e2/event-boston-stamp-paper-burning.jpg": {
     "description": "Bostonians burning stamped paper sent from England, August 1765",
@@ -322,7 +355,11 @@
     ],
     "source": "loc",
     "catalog_id": "event.boston-stamp-paper-burning",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t09",
+      "u3e2:t11"
+    ]
   },
   "historic/u3e2/event-obelisk-liberty-tree-1766.jpg": {
     "description": "Obelisk under the Liberty Tree, Boston repeal rejoicings, 1766",
@@ -333,7 +370,12 @@
     ],
     "source": "loc",
     "catalog_id": "event.obelisk-liberty-tree-1766",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t45",
+      "u3e2:t42",
+      "u3e2:t46"
+    ]
   },
   "historic/u3e2/event-funeral-procession-americ-stamp.jpg": {
     "description": "The repeal, or the funeral procession of Miss Americ-Stamp, 1766",
@@ -344,7 +386,12 @@
     ],
     "source": "loc",
     "catalog_id": "event.funeral-procession-americ-stamp",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t42",
+      "u3e2:t45",
+      "u3e2:t70"
+    ]
   },
   "historic/u3e2/event-stamp-act-denounced.jpg": {
     "description": "The Stamp Act denounced (satirical print)",
@@ -355,7 +402,12 @@
     ],
     "source": "loc",
     "catalog_id": "event.stamp-act-denounced",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t01",
+      "u3e2:t14",
+      "u3e2:t19"
+    ]
   },
   "historic/u3e2/event-tomb-stone-stamp-act.jpg": {
     "description": "The tomb-stone (satirical print on the Stamp Act)",
@@ -366,7 +418,12 @@
     ],
     "source": "loc",
     "catalog_id": "event.tomb-stone-stamp-act",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t42",
+      "u3e2:t70",
+      "u3e2:t43"
+    ]
   },
   "historic/u3e2/event-place-to-affix-stamp.jpg": {
     "description": "This is the place to affix the stamp (satirical print)",
@@ -377,7 +434,12 @@
     ],
     "source": "loc",
     "catalog_id": "event.place-to-affix-stamp",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t03",
+      "u3e2:t11",
+      "u3e2:t09"
+    ]
   },
   "historic/u3e2/event-colonies-reduced.jpg": {
     "description": "The colonies reduced (satirical print)",
@@ -388,7 +450,12 @@
     ],
     "source": "loc",
     "catalog_id": "event.colonies-reduced",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t31",
+      "u3e2:t29",
+      "u3e2:t32"
+    ]
   },
   "historic/u3e2/event-statue-adoration-west.jpg": {
     "description": "The statue, or the adoration of the wise-men of the west (satirical print)",
@@ -399,7 +466,11 @@
     ],
     "source": "loc",
     "catalog_id": "event.statue-adoration-west",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t42",
+      "u3e2:t45"
+    ]
   },
   "historic/u3e2/event-bostonians-paying-exciseman.jpg": {
     "description": "The Bostonians Paying the Excise-man, or Tarring & Feathering, 1774",
@@ -410,7 +481,11 @@
     ],
     "source": "nga",
     "catalog_id": "event.bostonians-paying-exciseman",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t11",
+      "u3e2:t13"
+    ]
   },
   "historic/u3e2/event-stamp-act-riot.jpg": {
     "description": "Stamp Act riot, Boston 1765 (William Croome wood engraving, 1850)",
@@ -421,7 +496,11 @@
     ],
     "source": "nypl",
     "catalog_id": "event.stamp-act-riot",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t11",
+      "u3e2:t09"
+    ]
   },
   "historic/u3e2/event-hutchinson-flight-rioters.jpg": {
     "description": "Flight of Hutchinson before the rioters, Boston, August 1765",
@@ -432,7 +511,10 @@
     ],
     "source": "wikimedia",
     "catalog_id": "event.hutchinson-flight-rioters",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t11"
+    ]
   },
   "historic/u3e2/event-stamp-act-riots-boston-2.jpg": {
     "description": "The Stamp Act riots at Boston, 1765",
@@ -443,7 +525,11 @@
     ],
     "source": "wikimedia",
     "catalog_id": "event.stamp-act-riots-boston-2",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t11",
+      "u3e2:t09"
+    ]
   },
   "historic/u3e2/event-nonimportation-coffee-house.jpg": {
     "description": "Burns' Coffee House, NYC, where the first nonimportation agreement was signed, Oct. 31, 1765",
@@ -454,7 +540,10 @@
     ],
     "source": "nypl",
     "catalog_id": "event.nonimportation-coffee-house",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t21"
+    ]
   },
   "historic/u3e2/event-liberty-tree-revere.jpg": {
     "description": "The Obelisk under the Liberty Tree, Boston, 1766 (Paul Revere engraving)",
@@ -465,7 +554,12 @@
     ],
     "source": "loc",
     "catalog_id": "event.liberty-tree-revere",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t42",
+      "u3e2:t45",
+      "u3e2:t46"
+    ]
   },
   "historic/u3e2/map-mitchell-1755.jpg": {
     "description": "Mitchell Map of the British Colonies in North America, 1755",
@@ -476,7 +570,11 @@
     ],
     "source": "loc",
     "catalog_id": "map.mitchell-1755",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t00",
+      "u3e2:t19"
+    ]
   },
   "historic/u3e2/map-boston-bonner.jpg": {
     "description": "William Bonner's plan of Boston, 1769 (facsimile of 1722 map)",
@@ -487,7 +585,11 @@
     ],
     "source": "nypl",
     "catalog_id": "map.boston-bonner",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t11",
+      "u3e2:t10"
+    ]
   },
   "historic/u3e2/map-new-york-ratzer-1766.jpg": {
     "description": "Bernard Ratzer's plan of New York City, surveyed 1766-1767",
@@ -498,7 +600,11 @@
     ],
     "source": "nypl",
     "catalog_id": "map.new-york-ratzer-1766",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t19",
+      "u3e2:t21"
+    ]
   },
   "historic/u3e2/map-new-england-1760s.jpg": {
     "description": "A new map of New England, 1765",
@@ -509,7 +615,11 @@
     ],
     "source": "loc",
     "catalog_id": "map.new-england-1760s",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t00",
+      "u3e2:t11"
+    ]
   },
   "historic/u3e2/map-philadelphia-1777.png": {
     "description": "A plan of the city and environs of Philadelphia, 1777",
@@ -520,7 +630,8 @@
     ],
     "source": "wikimedia",
     "catalog_id": "map.philadelphia-1777",
-    "verified": true
+    "verified": true,
+    "used_in": []
   },
   "historic/u3e2/doc-stamp-act-statute.jpg": {
     "description": "The Stamp Act, 1765: first page as printed in the New-Hampshire Gazette",
@@ -530,7 +641,11 @@
     ],
     "source": "loc",
     "catalog_id": "doc.stamp-act-statute",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t01",
+      "u3e2:t52"
+    ]
   },
   "historic/u3e2/doc-sons-of-liberty-broadside.jpg": {
     "description": "Sons of Liberty broadside, 1765",
@@ -541,7 +656,11 @@
     ],
     "source": "wikimedia",
     "catalog_id": "doc.sons-of-liberty-broadside",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t10",
+      "u3e2:t11"
+    ]
   },
   "historic/u3e2/doc-otiss-rights-colonies.jpg": {
     "description": "James Otis, The Rights of the British Colonies Asserted and Proved, 1764 (title page)",
@@ -552,7 +671,12 @@
     ],
     "source": "wikimedia",
     "catalog_id": "doc.otiss-rights-colonies",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t37",
+      "u3e2:t36",
+      "u3e2:t56"
+    ]
   },
   "historic/u3e2/doc-declaratory-act.jpg": {
     "description": "Debates on the Declaratory Act, 1766 (title page)",
@@ -562,7 +686,12 @@
     ],
     "source": "wikimedia",
     "catalog_id": "doc.declaratory-act",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t43",
+      "u3e2:t44",
+      "u3e2:t58"
+    ]
   },
   "historic/u3e2/doc-repeal-act-1766.jpg": {
     "description": "Broadside: Act of Parliament repealing the Stamp Act, 1766",
@@ -573,7 +702,12 @@
     ],
     "source": "loc",
     "catalog_id": "doc.repeal-act-1766",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t42",
+      "u3e2:t43",
+      "u3e2:t51"
+    ]
   },
   "historic/u3e2/doc-colonial-paper-currency.jpg": {
     "description": "Pennsylvania paper currency, 1773 (Met Museum)",
@@ -584,7 +718,8 @@
     ],
     "source": "met",
     "catalog_id": "doc.colonial-paper-currency",
-    "verified": true
+    "verified": true,
+    "used_in": []
   },
   "historic/u3e2/doc-pamphlet-dulany.jpg": {
     "description": "Daniel Dulany, Considerations on the Propriety of Imposing Taxes, 1765 (title page)",
@@ -595,7 +730,12 @@
     ],
     "source": "wikimedia",
     "catalog_id": "doc.pamphlet-dulany",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t33",
+      "u3e2:t34",
+      "u3e2:t35"
+    ]
   },
   "historic/u3e2/doc-protest-repeal-bill.jpg": {
     "description": "Protest against the bill to repeal the American Stamp Act, 1766",
@@ -606,7 +746,11 @@
     ],
     "source": "wikimedia",
     "catalog_id": "doc.protest-repeal-bill",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t42",
+      "u3e2:t43"
+    ]
   },
   "historic/u3e2/doc-playing-cards-duty-stamp.jpg": {
     "description": "French playing cards (Jeu d'Or) of the type taxed by the Stamp Act (Met Museum)",
@@ -617,7 +761,12 @@
     ],
     "source": "met",
     "catalog_id": "doc.playing-cards-duty-stamp",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t05",
+      "u3e2:t00",
+      "u3e2:t52"
+    ]
   },
   "historic/u3e2/doc-boston-gazette-1765.png": {
     "description": "Boston Gazette, November 1765 (masthead)",
@@ -628,7 +777,12 @@
     ],
     "source": "wikimedia",
     "catalog_id": "doc.boston-gazette-1765",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t04",
+      "u3e2:t05",
+      "u3e2:t11"
+    ]
   },
   "historic/u3e2/doc-house-of-burgesses.jpg": {
     "description": "Interior of the Virginia House of Burgesses, where Henry introduced the Virginia Resolves",
@@ -639,7 +793,10 @@
     ],
     "source": "loc",
     "catalog_id": "doc.house-of-burgesses",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t15"
+    ]
   },
   "historic/u3e2/doc-stamp-duties-table.jpg": {
     "description": "Table of Stamp Act duties (from the statute)",
@@ -649,7 +806,12 @@
     ],
     "source": "loc",
     "catalog_id": "doc.stamp-duties-table",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t05",
+      "u3e2:t01",
+      "u3e2:t00"
+    ]
   },
   "historic/u3e2/doc-nonimportation-text.jpg": {
     "description": "New York nonimportation agreement text, October 1765",
@@ -660,7 +822,12 @@
     ],
     "source": "nypl",
     "catalog_id": "doc.nonimportation-text",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t21",
+      "u3e2:t26",
+      "u3e2:t29"
+    ]
   },
   "historic/u3e2/doc-stamp-distributor-resignation.jpg": {
     "description": "Resignation of a stamp distributor (satirical print: colonies reduced)",
@@ -671,7 +838,11 @@
     ],
     "source": "loc",
     "catalog_id": "doc.stamp-distributor-resignation",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t09",
+      "u3e2:t11"
+    ]
   },
   "historic/u3e2/doc-petition-to-king.jpg": {
     "description": "Colonial petition to the King against the Stamp Act (satirical: the tomb-stone)",
@@ -682,7 +853,11 @@
     ],
     "source": "loc",
     "catalog_id": "doc.petition-to-king",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t19",
+      "u3e2:t60"
+    ]
   },
   "historic/u3e2/doc-newspaper-tax-stamp.png": {
     "description": "Newspaper with the Stamp Act masthead device (Pennsylvania Journal skull)",
@@ -693,7 +868,12 @@
     ],
     "source": "loc",
     "catalog_id": "doc.newspaper-tax-stamp",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t04",
+      "u3e2:t05",
+      "u3e2:t00"
+    ]
   },
   "historic/u3e2/doc-deed-stamp-example.jpg": {
     "description": "A stamped legal document: the Stamp Act taxed deeds, wills and diplomas",
@@ -703,7 +883,12 @@
     ],
     "source": "loc",
     "catalog_id": "doc.deed-stamp-example",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t03",
+      "u3e2:t05",
+      "u3e2:t04"
+    ]
   },
   "historic/u3e2/doc-stamp-act-full-text.jpg": {
     "description": "The Stamp Act 1765: full statute text (New-Hampshire Gazette printing)",
@@ -714,7 +899,11 @@
     ],
     "source": "wikimedia",
     "catalog_id": "doc.stamp-act-full-text",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t01",
+      "u3e2:t52"
+    ]
   },
   "historic/u3e2/doc-repeal-london-gazette.jpg": {
     "description": "The repeal of the Stamp Act announced in the London Gazette, 1766",
@@ -725,7 +914,11 @@
     ],
     "source": "wikimedia",
     "catalog_id": "doc.repeal-london-gazette",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t42",
+      "u3e2:t46"
+    ]
   },
   "historic/u3e2/object-spinning-wheel.jpg": {
     "description": "Flax spinning wheel, c. 1760-1790 (Met Museum) - Daughters of Liberty spun homespun",
@@ -736,7 +929,11 @@
     ],
     "source": "met",
     "catalog_id": "object.spinning-wheel",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t21",
+      "u3e2:t23"
+    ]
   },
   "historic/u3e2/object-liberty-pole.jpg": {
     "description": "Raising the Liberty Pole, New York 1766",
@@ -747,7 +944,12 @@
     ],
     "source": "loc",
     "catalog_id": "object.liberty-pole",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t42",
+      "u3e2:t45",
+      "u3e2:t19"
+    ]
   },
   "historic/u3e2/object-colonial-dice.jpg": {
     "description": "Ivory dice, 18th century - dice were taxed under the Stamp Act",
@@ -758,7 +960,12 @@
     ],
     "source": "wikimedia",
     "catalog_id": "object.colonial-dice",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t00",
+      "u3e2:t05",
+      "u3e2:t52"
+    ]
   },
   "historic/u3e2/object-homespun-cloth.jpg": {
     "description": "Homespun cloth (Index of American Design rendering, NGA)",
@@ -769,7 +976,11 @@
     ],
     "source": "wikimedia",
     "catalog_id": "object.homespun-cloth",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t21",
+      "u3e2:t23"
+    ]
   },
   "historic/u3e2/object-liberty-cap.jpg": {
     "description": "Liberty cap on a pole (detail from repeal imagery)",
@@ -780,7 +991,11 @@
     ],
     "source": "loc",
     "catalog_id": "object.liberty-cap",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t42",
+      "u3e2:t45"
+    ]
   },
   "historic/u3e2/object-stamp-seal-press.jpg": {
     "description": "Embossing seal press of the type used for stamped paper",
@@ -791,7 +1006,11 @@
     ],
     "source": "wikimedia",
     "catalog_id": "object.stamp-seal-press",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t03",
+      "u3e2:t04"
+    ]
   },
   "historic/u3e2/object-british-halfpenny.jpg": {
     "description": "British halfpenny, 1760s - everyday coin of the colonial economy",
@@ -802,7 +1021,11 @@
     ],
     "source": "wikimedia",
     "catalog_id": "object.british-halfpenny",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t05",
+      "u3e2:t01"
+    ]
   },
   "historic/u3e2/object-quill-inkstand.jpg": {
     "description": "Quill and inkstand, 18th century (tools of the pamphleteers)",
@@ -813,7 +1036,12 @@
     ],
     "source": "wikimedia",
     "catalog_id": "object.quill-inkstand",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t11",
+      "u3e2:t37",
+      "u3e2:t15"
+    ]
   },
   "historic/u3e2/object-coffin-stamp-act.jpg": {
     "description": "Coffin of the Stamp Act (from funeral procession imagery)",
@@ -824,7 +1052,12 @@
     ],
     "source": "loc",
     "catalog_id": "object.coffin-stamp-act",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t42",
+      "u3e2:t45",
+      "u3e2:t70"
+    ]
   },
   "historic/u3e2/object-stamp-act-congress-medal.jpg": {
     "description": "Stamp Act Congress commemorative medal, 1765",
@@ -835,7 +1068,11 @@
     ],
     "source": "wikimedia",
     "catalog_id": "object.stamp-act-congress-medal",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t19",
+      "u3e2:t62"
+    ]
   },
   "historic/u3e2/cartoon-join-or-die.jpg": {
     "description": "'Join, or Die' snake cartoon, Pennsylvania Gazette, 1754 (revived in the Stamp Act crisis)",
@@ -846,7 +1083,12 @@
     ],
     "source": "loc",
     "catalog_id": "cartoon.join-or-die",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t19",
+      "u3e2:t24",
+      "u3e2:t00"
+    ]
   },
   "historic/u3e2/cartoon-deplorable-state-america.jpg": {
     "description": "The deplorable state of America (satirical print, 1765)",
@@ -857,7 +1099,12 @@
     ],
     "source": "wikimedia",
     "catalog_id": "cartoon.deplorable-state-america",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t01",
+      "u3e2:t05",
+      "u3e2:t06"
+    ]
   },
   "historic/u3e2/cartoon-stamp-act-coffin.jpg": {
     "description": "The funeral of Miss Ame=Stamp (satirical print)",
@@ -868,7 +1115,12 @@
     ],
     "source": "wikimedia",
     "catalog_id": "cartoon.stamp-act-coffin",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t42",
+      "u3e2:t45",
+      "u3e2:t70"
+    ]
   },
   "historic/u3e2/cartoon-virtual-representation.jpg": {
     "description": "'Virtual representation' satirized (The colonies reduced)",
@@ -879,7 +1131,13 @@
     ],
     "source": "loc",
     "catalog_id": "cartoon.virtual-representation",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t29",
+      "u3e2:t31",
+      "u3e2:t30",
+      "u3e2:t41"
+    ]
   },
   "historic/u3e2/cartoon-parliament-debate.jpg": {
     "description": "Parliament debates the Stamp Act (The Stamp Act denounced)",
@@ -890,7 +1148,12 @@
     ],
     "source": "loc",
     "catalog_id": "cartoon.parliament-debate",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t01",
+      "u3e2:t29",
+      "u3e2:t31"
+    ]
   },
   "historic/u3e2/cartoon-grenville-caricature.jpg": {
     "description": "George Grenville caricatured (The tomb-stone)",
@@ -901,7 +1164,12 @@
     ],
     "source": "loc",
     "catalog_id": "cartoon.grenville-caricature",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t42",
+      "u3e2:t52",
+      "u3e2:t01"
+    ]
   },
   "historic/u3e2/cartoon-sons-of-liberty-emblem.jpg": {
     "description": "Sons of Liberty emblem (from the 1765 broadside)",
@@ -912,7 +1180,12 @@
     ],
     "source": "wikimedia",
     "catalog_id": "cartoon.sons-of-liberty-emblem",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t10",
+      "u3e2:t11",
+      "u3e2:t25"
+    ]
   },
   "historic/u3e2/cartoon-repeal-rejoicing.jpg": {
     "description": "Rejoicing at the repeal (obelisk under the Liberty Tree)",
@@ -923,7 +1196,13 @@
     ],
     "source": "loc",
     "catalog_id": "cartoon.repeal-rejoicing",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t42",
+      "u3e2:t45",
+      "u3e2:t46",
+      "u3e2:t49"
+    ]
   },
   "historic/u3e2/place-faneuil-hall.jpg": {
     "description": "Faneuil Hall, Boston, meeting place of the Sons of Liberty",
@@ -934,7 +1213,11 @@
     ],
     "source": "nypl",
     "catalog_id": "place.faneuil-hall",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t10",
+      "u3e2:t11"
+    ]
   },
   "historic/u3e2/place-old-state-house.jpg": {
     "description": "Old State House, Boston, seat of the colonial government",
@@ -945,7 +1228,10 @@
     ],
     "source": "wikimedia",
     "catalog_id": "place.old-state-house",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t11"
+    ]
   },
   "historic/u3e2/person-john-hancock.jpg": {
     "description": "John Hancock, Boston merchant and Sons of Liberty supporter",
@@ -956,7 +1242,12 @@
     ],
     "source": "wikimedia",
     "catalog_id": "person.john-hancock",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t11",
+      "u3e2:t21",
+      "u3e2:t10"
+    ]
   },
   "historic/u3e2/doc-stamp-act-congress.jpg": {
     "description": "Stamp Act Congress, New York, October 1765",
@@ -967,7 +1258,12 @@
     ],
     "source": "wikimedia",
     "catalog_id": "doc.stamp-act-congress",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t19",
+      "u3e2:t62",
+      "u3e2:t60"
+    ]
   },
   "historic/u3e2/event-repeal-illumination.jpg": {
     "description": "Illuminations for the repeal of the Stamp Act, 1766 (obelisk print)",
@@ -978,7 +1274,12 @@
     ],
     "source": "wikimedia",
     "catalog_id": "event.repeal-illumination",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t42",
+      "u3e2:t45",
+      "u3e2:t46"
+    ]
   },
   "historic/u3e2/doc-stamp-act-1765-another-printing.jpg": {
     "description": "The Stamp Act, 1765: another contemporary printing",
@@ -988,7 +1289,11 @@
     ],
     "source": "wikimedia",
     "catalog_id": "doc.stamp-act-1765-another-printing",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t01",
+      "u3e2:t52"
+    ]
   },
   "historic/u3e2/event-obelisk-liberty-tree-variant.jpg": {
     "description": "View of the obelisk erected under the Liberty Tree, Boston, 1766 (variant)",
@@ -999,7 +1304,12 @@
     ],
     "source": "wikimedia",
     "catalog_id": "event.obelisk-liberty-tree-variant",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t45",
+      "u3e2:t46",
+      "u3e2:t42"
+    ]
   },
   "historic/u3e2/event-stamp-act-riots-variant.jpg": {
     "description": "The Stamp Act riots in Boston (variant print)",
@@ -1010,6 +1320,10 @@
     ],
     "source": "wikimedia",
     "catalog_id": "event.stamp-act-riots-variant",
-    "verified": true
+    "verified": true,
+    "used_in": [
+      "u3e2:t11",
+      "u3e2:t09"
+    ]
   }
 }

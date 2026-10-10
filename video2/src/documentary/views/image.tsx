@@ -23,6 +23,24 @@ export const ImageMove: React.FC<{image: string; size: {width: number; height: n
   );
 };
 
+/** Documents, artifacts and archival maps read as physical evidence, not as another full-screen Ken Burns shot. */
+const ArchivalPlate: React.FC<{shot: ImageMoveShot; durationSec: number}> = ({shot, durationSec}) => {
+  const t = Math.min(1, Math.max(0, useLocalSec() / durationSec));
+  const p = easeInOut(t);
+  const object = shot.presentation === 'object';
+  const map = shot.presentation === 'map';
+  const scale = (object ? 0.94 : 0.97) + p * (object ? 0.045 : 0.025);
+  return (
+    <div style={{position: 'absolute', inset: 0, overflow: 'hidden', background: '#110e0a'}}>
+      <Img src={staticFile(shot.image)} style={{position: 'absolute', inset: -50, width: 'calc(100% + 100px)', height: 'calc(100% + 100px)', objectFit: 'cover', filter: 'blur(34px) saturate(0.65)', opacity: 0.24, transform: 'scale(1.08)'}} />
+      <div style={{position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at 50% 42%, rgba(121,92,51,0.22), rgba(8,7,5,0.9) 72%)'}} />
+      <div style={{position: 'absolute', inset: object ? '11% 16%' : map ? '8% 9%' : '6% 18%', display: 'flex', alignItems: 'center', justifyContent: 'center', transform: `scale(${scale}) rotate(${object ? 0 : -0.25 + p * 0.25}deg)`}}>
+        <Img src={staticFile(shot.image)} style={{display: 'block', width: '100%', height: '100%', objectFit: 'contain', background: object ? 'rgba(20,16,11,0.5)' : '#d8c49a', padding: object ? 20 : 10, boxSizing: 'border-box', border: '1px solid rgba(232,205,151,0.55)', boxShadow: '0 24px 80px rgba(0,0,0,0.75), 0 0 0 8px rgba(35,26,16,0.42)'}} />
+      </div>
+    </div>
+  );
+};
+
 /* ------------------------------- 2.5D parallax move ------------------------------- */
 
 /** Longest edge the warp samples from; keeps per-tab memory bounded while staying sharp at 1080p. */
@@ -99,12 +117,16 @@ export const NameTag: React.FC<{name: string; role?: string}> = ({name, role}) =
   );
 };
 
-export const ImageMoveView: React.FC<{shot: ImageMoveShot | PortraitShot; lead: number}> = ({shot, lead}) => (
-  <>
-    {shot.depth
-      ? <ParallaxMove image={shot.image} depth={shot.depth} from={shot.from} to={shot.to} durationSec={shot.endSec - shot.startSec + lead} />
-      : <ImageMove image={shot.image} size={shot.size} from={shot.from} to={shot.to} durationSec={shot.endSec - shot.startSec + lead} />}
+export const ImageMoveView: React.FC<{shot: ImageMoveShot | PortraitShot; lead: number}> = ({shot, lead}) => {
+  const duration = shot.endSec - shot.startSec + lead;
+  const archival = shot.type === 'image_move' && ['document', 'object', 'map'].includes(shot.presentation ?? '');
+  return <>
+    {archival
+      ? <ArchivalPlate shot={shot as ImageMoveShot} durationSec={duration} />
+      : shot.depth
+        ? <ParallaxMove image={shot.image} depth={shot.depth} from={shot.from} to={shot.to} durationSec={duration} />
+        : <ImageMove image={shot.image} size={shot.size} from={shot.from} to={shot.to} durationSec={duration} />}
     {shot.type === 'portrait' && <AtmosphereLayers kinds={shot.atmosphere} seed={shot.id} />}
     {shot.type === 'portrait' && <NameTag name={shot.name} role={shot.role} />}
   </>
-);
+};
