@@ -176,3 +176,16 @@ describe('scene builder: year stamps', () => {
     assert.ok(r.fixes.some(f => /said together/.test(f)) && r.fixes.some(f => /already stamped/.test(f)), r.fixes.join('\n'));
   });
 });
+
+describe('scene builder: the Episode Sheet intro', () => {
+  it('a point card under the sheet\'s box intro plays as a move on its backdrop (the sheet lists the boxes)', async () => {
+    const {buildPlan} = await import('../tools/pipeline/scene-builder');
+    const sb = fixture();
+    const img = sb.turns[0].visuals.find(v => v.kind === 'image')!;
+    sb.boxes = [{label: 'The end of salutary neglect', intro: {turn: 0, phrase: 'start arguing with london'}, check: {turn: 4, phrase: 'let me guess'}, turns: {from: 1, to: 4}}] as never;
+    sb.turns[0].visuals = sb.turns[0].visuals.map(v => (v.at.phrase === 'start arguing with london' ? {kind: 'point', backdrop: img.image, bullets: [{text: 'Salutary neglect', at: {offset: 0.3}}], at: v.at, priority: 'essential'} : v)) as never;
+    const r = buildPlan({storyboard: sb, turns, timing, words: {}, catalog, treatments: {}, allowEstimated: true});
+    assert.ok(!r.plan.shots.some(s => s.type === 'point'), 'no point card under the sheet');
+    assert.ok(r.fixes.some(f => /under the Episode Sheet/.test(f)));
+  });
+});

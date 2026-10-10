@@ -16,6 +16,7 @@ import type {PipelineTurn, WordTiming} from '../pipeline-core';
 import {resolvePhrase, type AnchorTiming} from './anchors';
 import type {CatalogEntry} from './doc-director';
 import type {MapViewDef} from './map-views';
+import {INTRO_FLY_SEC, INTRO_HOLD_SEC} from '../../src/documentary/sheet';
 import {fixActQuestions} from './plan-fixups';
 import {LOOK_RULES, type PlanShot, type ShotPlan} from './shots';
 import {cleanSpeech} from './speech';
@@ -176,6 +177,27 @@ export function buildPlan(input: BuildInputs): BuildResult {
   const withQuestions = fixActQuestions({shots: drafts.map(d => d.shot) as never}, {from: 0, to: turns.length - 1}, turns, timing.durations);
   const visualOf = new Map(drafts.map(d => [d.shot, d.visual]));
   drafts = (withQuestions.act.shots as unknown as Shot[]).map(shot => ({shot, visual: visualOf.get(shot)}));
+
+  // 2b. The Episode Sheet lists the boxes, big, while they are named: a point card under it would show the same list
+  // twice. Such a card plays as a move on its backdrop instead.
+  const cueSec = (c: Cue) => { try { return resolvePhrase(c, turns, timing, words, 'start', input.allowEstimated).sec; } catch { return NaN; } };
+  const intros = (sb.boxes ?? []).map(b => cueSec(b.intro as Cue)).filter(Number.isFinite);
+  if (intros.length) {
+    const [from, to] = [Math.min(...intros) - 0.25, Math.max(...intros) + INTRO_HOLD_SEC + INTRO_FLY_SEC];
+    drafts.forEach((d, i) => {
+      if (d.shot.type !== 'point') return;
+      const start = i === 0 ? 0 : cueSec(d.shot.at as Cue);
+      const end = i + 1 < drafts.length ? (drafts[i + 1].shot.type === 'question' ? timing.starts[(drafts[i + 1].shot.at as Cue).turn] : cueSec(drafts[i + 1].shot.at as Cue)) : timing.totalSec;
+      if (!(start < to && end > from)) return;
+      const backdrop = String((d.shot as unknown as {backdrop: string}).backdrop);
+      const t = treatmentFor(backdrop);
+      const entry = byPath.get(backdrop);
+      if (!t || !entry) return;
+      const picked = pickFraming(t);
+      d.shot = {type: 'image_move', at: d.shot.at, image: backdrop, ...clampMove(entry.maxZoom, {from: picked.framing.from, to: picked.framing.to}, t), framing: picked.name} as unknown as Shot;
+      fixes.push(`turn ${(d.shot.at as Cue).turn}: point card under the Episode Sheet's box intro; plays as a move on its backdrop (the sheet lists the boxes)`);
+    });
+  }
 
   // 3. Timing passes: too-close cuts, too-long holds.
   const timeOf = (d: Draft, i: number): number => {
