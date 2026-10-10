@@ -207,3 +207,25 @@ describe('scene builder: zoom limits', () => {
     }
   });
 });
+
+describe('scene builder: backdrop replacements', () => {
+  it('a too-small point backdrop is replaced by the fitting image used least, never past the lesson limit', async () => {
+    const {buildPlan} = await import('../tools/pipeline/scene-builder');
+    const {buildCatalog} = await import('../tools/pipeline/doc-director');
+    const {turnKeys} = await import('../tools/pipeline/storyboard');
+    const keys = turnKeys(turns);
+    const img = (image: string, phrase: string) => ({kind: 'image', image, at: {phrase}, priority: 'essential'});
+    const card = (phrase: string) => ({kind: 'point', backdrop: 'small.jpg', bullets: [{text: 'x', at: {offset: 0.3}}], at: {phrase}, priority: 'essential'});
+    const sb = {episode: 'x', acts: [], turns: [{key: keys[0], index: 0, visuals: [
+      img('a.jpg', 'last time'), img('a.jpg', 'new england'), img('a.jpg', 'the south'), img('b.jpg', 'stop arguing'),
+      card('two centuries'), card('middle colonies'), card('start arguing with london'),
+    ]}]} as never;
+    const cat = buildCatalog({'a.jpg': {width: 4000, height: 2600}, 'b.jpg': {width: 4000, height: 2600}, 'small.jpg': {width: 1280, height: 2095}}, {});
+    const r = buildPlan({storyboard: sb, turns, timing, words: {}, catalog: cat, treatments: {}, allowEstimated: true});
+    const swaps = r.storyboardIssues.filter(i => /too small for the card/.test(i));
+    assert.match(swaps[0] ?? '', /using "b\.jpg"/, 'the first replacement is the less-used image');
+    assert.ok(!(r.plan.shots as unknown as {backdrop?: string}[]).some(s => s.backdrop === 'small.jpg'), 'no card keeps the too-small backdrop');
+    const used = (p: string) => (r.plan.shots as unknown as {image?: string; backdrop?: string}[]).filter(s => s.image === p || s.backdrop === p).length;
+    assert.ok(used('a.jpg') <= 4 && used('b.jpg') <= 4, `a ${used('a.jpg')}, b ${used('b.jpg')}`);
+  });
+});

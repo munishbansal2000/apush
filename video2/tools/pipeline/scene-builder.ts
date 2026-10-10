@@ -107,6 +107,10 @@ export function buildPlan(input: BuildInputs): BuildResult {
     return p ? {turn: index, phrase: p} : null;
   };
 
+  // Uses of each image across the storyboard (images and point backdrops), for choosing replacements within the limit.
+  const uses = new Map<string, number>();
+  for (const v of sb.turns.flatMap(x => x.visuals)) { const p = v.kind === 'point' ? v.backdrop : v.image; if (p) uses.set(p, (uses.get(p) ?? 0) + 1); }
+
   // 1. One shot per storyboard visual, framings copied from treatments.
   let drafts: Draft[] = [];
   for (const st of sb.turns) {
@@ -153,7 +157,11 @@ export function buildPlan(input: BuildInputs): BuildResult {
         const fits = (p: string | undefined) => !!p && (byPath.get(p)?.maxZoom ?? 0) >= 1.15;
         let backdrop = v.backdrop;
         if (!fits(backdrop)) {
-          const near = sb.turns.flatMap(x => x.visuals).map(x => (x.kind === 'point' ? x.backdrop : x.image)).find(fits);
+          // The replacement: a storyboard image that fits, used least so far (never past the lesson limit), nearest this line.
+          const near = sb.turns.flatMap(x => x.visuals.map(y => ({p: y.kind === 'point' ? y.backdrop : y.image, d: Math.abs(x.index - index)})))
+            .filter((c): c is {p: string; d: number} => fits(c.p) && (uses.get(c.p!) ?? 0) < LOOK_RULES.maxImageUses)
+            .sort((a, b) => (uses.get(a.p) ?? 0) - (uses.get(b.p) ?? 0) || a.d - b.d)[0]?.p;
+          if (near) { uses.set(near, (uses.get(near) ?? 0) + 1); if (backdrop) uses.set(backdrop, Math.max(0, (uses.get(backdrop) ?? 1) - 1)); }
           storyboardIssues.push(`turn ${index}: point card backdrop "${backdrop}" is ${backdrop && byPath.has(backdrop) ? 'too small for the card' : 'not available'}${near ? `; using "${near}"` : ''}`);
           backdrop = near;
           if (!backdrop) continue;
