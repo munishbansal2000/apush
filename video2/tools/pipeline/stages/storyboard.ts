@@ -95,9 +95,10 @@ function noteChangedLines(review: LessonReview, sb: Storyboard, inputs: DocInput
 }
 
 /** Resolver problems ("shot12: …") as storyboard notes on the act that holds the shot's line. */
-function noteBuildProblems(review: LessonReview, sb: Storyboard, plan: ShotPlan, problem: string): {count: number; acts: number[]; rest: string[]} {
+function noteBuildProblems(review: LessonReview, sb: Storyboard, plan: ShotPlan, problem: string): {count: number; acts: number[]; rest: string[]; sent: string[]} {
   const acts = new Set<number>();
   const rest: string[] = [];
+  const sent: string[] = [];
   let count = 0;
   for (const line of problem.split('\n').slice(1).map(l => l.replace(/^\s*-\s*/, '')).filter(Boolean)) {
     const n = Number(/^shot ?0*(\d+)/.exec(line)?.[1]);
@@ -114,11 +115,12 @@ function noteBuildProblems(review: LessonReview, sb: Storyboard, plan: ShotPlan,
     // The same problem after a re-board meant to fix it: do not loop; leave it for a person.
     if (list.some(x => x.done && !x.stale && x.text === text)) { rest.push(`  - act ${act}, line ${turn} (came back after a re-board; needs a person): ${line}`); continue; }
     if (!list.some(x => !x.done && x.text === text)) list.push({text, at: now()});
+    sent.push(`  - act ${act}: ${text.replace(/^build check, /, '')}`);
     if (review.storyboard.acts) delete review.storyboard.acts[String(act)];
     acts.add(act);
     count++;
   }
-  return {count, acts: [...acts].sort((a, b) => a - b), rest: [...new Set(rest)]};
+  return {count, acts: [...acts].sort((a, b) => a - b), rest: [...new Set(rest)], sent};
 }
 
 export function storyboardStage(ctx: PipelineContext): void {
@@ -245,7 +247,7 @@ export function buildStage(ctx: PipelineContext): void {
     const noted = noteBuildProblems(review, sb, plan, problem);
     if (noted.acts.length) {
       saveLessonReview(ctx.episode, review, dataRoot);
-      throw new Error(`build: ${noted.count} problem(s) sent back to storyboard act(s) ${noted.acts.join(', ')} as review notes; run again to re-board them${noted.rest.length ? `\nfor a person:\n${noted.rest.join('\n')}` : ''}`);
+      throw new Error(`build: ${noted.count} problem(s) sent back to storyboard act(s) ${noted.acts.join(', ')} as review notes; run the same command again to re-board only those acts:\n${noted.sent.join('\n')}${noted.rest.length ? `\nfor a person:\n${noted.rest.join('\n')}` : ''}`);
     }
     throw new Error(`build: the plan from the storyboard does not pass the checks:\n${noted.rest.length ? noted.rest.join('\n') : problem}`);
   }

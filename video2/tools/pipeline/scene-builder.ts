@@ -317,5 +317,7 @@ export function buildPlan(input: BuildInputs): BuildResult {
     const {framing: _f, ...rest} = d.shot as Record<string, unknown>;
     return rest as unknown as PlanShot;
   });
-  return {plan: {episode: sb.episode, ...(sb.boxes ? {boxes: sb.boxes} : {}), shots, years, acts: sb.acts}, warnings, fixes: [...withQuestions.fixes, ...fixes], storyboardIssues};
+  // The timing passes can meet the same problem on several passes: report each once.
+  const once = (list: string[]) => [...new Set(list)];
+  return {plan: {episode: sb.episode, ...(sb.boxes ? {boxes: sb.boxes} : {}), shots, years, acts: sb.acts}, warnings: once(warnings), fixes: once([...withQuestions.fixes, ...fixes]), storyboardIssues: once(storyboardIssues)};
 }
