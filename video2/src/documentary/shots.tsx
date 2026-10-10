@@ -144,7 +144,9 @@ export const ClipView: React.FC<{shot: ClipShot; lead: number}> = ({shot, lead})
       : <ImageMove image={shot.image} size={shot.size} from={shot.from} to={shot.to} durationSec={duration} />;
   }
   const push = interpolate(frame, [0, durationInFrames], [1, 1.05], clamp);
-  const clipFrames = Math.max(1, Math.round(shot.clip.durationSec * fps));
+  // Loop two frames short of the clip's end: a container's duration can run past its last frame, and asking for a
+  // moment after it fails the render ("no frame found"). Invisible in a forward-and-back boomerang.
+  const clipFrames = Math.max(1, Math.floor(shot.clip.durationSec * fps) - 2);
   return (
     <div style={{position: 'absolute', inset: 0, overflow: 'hidden', background: COLOR.night}}>
       <div style={{position: 'absolute', inset: 0, transform: `scale(${push})`}}>

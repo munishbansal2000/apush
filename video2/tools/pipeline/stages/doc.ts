@@ -67,12 +67,23 @@ export function generateClips(episode: string, resolved: ResolvedShotPlan, opts:
       '-map', '[out]', '-an', '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-crf', '16', '-movflags', '+faststart', temp]);
     if (existsSync(boomerang)) unlinkSync(boomerang);
     renameSync(temp, boomerang);
-    const durationSec = ffprobeDuration(boomerang);
+    const durationSec = lastFrameSec(boomerang);
     manifest[shot.fingerprint] = {path: `clips/${episode}/${shot.fingerprint}.boomerang.mp4`, durationSec, prompt: shot.prompt, image: shot.image, seed: shot.seed, createdAt: new Date().toISOString()};
     atomicJson(manifestPath, manifest);
     console.log(`[clips] ${shot.id}: ${durationSec.toFixed(2)}s boomerang`);
   }
   return todo.length;
+}
+
+/** When the last frame of a video starts (frame count and rate, not the container's duration, which can run longer). */
+export function lastFrameSec(file: string): number {
+  const out = execFileSync('ffprobe', ['-v', 'error', '-select_streams', 'v:0', '-count_frames', '-show_entries', 'stream=nb_read_frames,r_frame_rate', '-of', 'json', file], {encoding: 'utf8'});
+  const s = (JSON.parse(out) as {streams?: {nb_read_frames?: string; r_frame_rate?: string}[]}).streams?.[0];
+  const [n, d] = String(s?.r_frame_rate ?? '').split('/').map(Number);
+  const frames = Number(s?.nb_read_frames);
+  const rate = n && d ? n / d : NaN;
+  if (!Number.isFinite(frames) || !Number.isFinite(rate) || frames < 2) return ffprobeDuration(file);
+  return (frames - 1) / rate;
 }
 
 /* ------------------------------------ sync gate ------------------------------------ */
@@ -221,7 +232,7 @@ export async function docRenderStage(ctx: DocRenderContext, inputs: DocInputs, r
     let rendered = 0;
     // Every segment is rendered and checked; problems are collected so one run reports all of them. Failed segments are
     // not cached, so after a fix only they render again.
-    const failed: {segment: number; frames: [number, number]; issues: LayoutIssue[]; unmeasured?: number}[] = [];
+    const failed: {segment: number; frames: [number, number]; issues: LayoutIssue[]; unmeasured?: number; error?: string}[] = [];
     for (const [n, seg] of segments.entries()) {
       const from = Math.round(seg.startSec * fps);
       const to = Math.min(composition.durationInFrames, Math.round(Math.min(seg.endSec, totalSec) * fps)) - 1;
@@ -231,9 +242,18 @@ export async function docRenderStage(ctx: DocRenderContext, inputs: DocInputs, r
       if (!ctx.force && existsSync(file) && cache[file] === key) { console.log(`[render] segment ${n + 1}/${segments.length}: current`); continue; }
       const measured = new Set<number>();
       const issues: LayoutIssue[] = [];
-      await renderMedia({composition, serveUrl, codec: 'h264', outputLocation: file, inputProps, browserExecutable, puppeteerInstance: browser, concurrency: tuning.concurrency,
-        hardwareAcceleration: tuning.hardwareAcceleration, logLevel: 'error', frameRange: [from, to], muted: true,
-        onBrowserLog: log => { const beat = guardHeartbeat(log.text); if (beat !== null) measured.add(beat); else issues.push(...layoutIssuesFromLog(log.text)); }});
+      try {
+        await renderMedia({composition, serveUrl, codec: 'h264', outputLocation: file, inputProps, browserExecutable, puppeteerInstance: browser, concurrency: tuning.concurrency,
+          hardwareAcceleration: tuning.hardwareAcceleration, logLevel: 'error', frameRange: [from, to], muted: true,
+          onBrowserLog: log => { const beat = guardHeartbeat(log.text); if (beat !== null) measured.add(beat); else issues.push(...layoutIssuesFromLog(log.text)); }});
+      } catch (e) {
+        // A crash (a clip that fails to decode, the browser) is reported with the rest; the other segments still render.
+        if (existsSync(file)) unlinkSync(file);
+        const message = e instanceof Error ? e.message.split('\n')[0] : String(e);
+        failed.push({segment: n + 1, frames: [from, to], issues: [], error: message});
+        console.log(`[render] segment ${n + 1}/${segments.length}: frames ${from}-${to} FAILED (${message}); continuing`);
+        continue;
+      }
       const blocking = blockingLayoutIssues(issues);
       if (blocking.length || measured.size < to - from + 1) {
         unlinkSync(file);
@@ -250,7 +270,7 @@ export async function docRenderStage(ctx: DocRenderContext, inputs: DocInputs, r
       const report = join(ctx.outDir, `${ctx.episode}-render-layout.json`);
       atomicJson(report, {episode: ctx.episode, checkedAt: new Date().toISOString(), failed});
       throw new Error(`render: ${failed.length} of ${segments.length} segment(s) failed the layout guard (all listed in ${relative(ROOT, report)}); the others are saved:\n${failed.map(f =>
-        f.issues.length ? `segment ${f.segment} (frames ${f.frames[0]}-${f.frames[1]}):\n${formatLayoutIssues(f.issues)}` : `segment ${f.segment}: ${f.unmeasured} frame(s) not measured by the guard`).join('\n')}`);
+        f.error ? `segment ${f.segment} (frames ${f.frames[0]}-${f.frames[1]}): render error: ${f.error}` : f.issues.length ? `segment ${f.segment} (frames ${f.frames[0]}-${f.frames[1]}):\n${formatLayoutIssues(f.issues)}` : `segment ${f.segment}: ${f.unmeasured} frame(s) not measured by the guard`).join('\n')}`);
     }
     for (const name of readdirSync(segDir)) if (!files.includes(join(segDir, name))) unlinkSync(join(segDir, name));
     // One audio pass for the whole episode: narration, ducked music and sound cues, exactly as the composition mixes them.
