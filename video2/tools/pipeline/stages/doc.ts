@@ -3,6 +3,7 @@
  * guard), render (segmented, cached video + one full audio mix, assembled). Used by video-pipeline.ts and the
  * standalone doc-direct / doc-clips / doc-render tools, so there is one implementation.
  */
+import {graphicImages} from '../../../src/documentary/graphics-catalog';
 import {predictLayout} from '../layout-precheck';
 import {execFileSync, spawnSync} from 'node:child_process';
 import {cpus} from 'node:os';
@@ -151,7 +152,8 @@ export function planSegments(shots: DocShot[], totalSec: number, minSec = 20): {
 export function segmentKey(resolved: ResolvedShotPlan, segment: {startSec: number; endSec: number; shots: number[]}, env: Record<string, unknown>, assetSha: (path: string) => string): string {
   const next = resolved.shots[segment.shots[segment.shots.length - 1] + 1];
   const shots = [...segment.shots.map(i => resolved.shots[i]), ...(next ? [next] : [])];
-  const assets = shots.flatMap(s => [('image' in s ? s.image : s.type === 'point' ? s.backdrop : null), ('depth' in s ? s.depth : null), (s.type === 'clip' ? s.clip?.path : null)])
+  const assets = shots.flatMap(s => [('image' in s ? s.image : s.type === 'point' ? s.backdrop : null), ('depth' in s ? s.depth : null), (s.type === 'clip' ? s.clip?.path : null),
+    ...(s.type === 'graphic' ? graphicImages(s.component, s.props) : [])])
     .filter((p): p is string => !!p).map(p => [p, assetSha(p)]);
   const years = resolved.years.filter(y => y.sec < segment.endSec && y.sec + 5 > segment.startSec);
   return sha256(JSON.stringify({v: 1, segment: [segment.startSec, segment.endSec], shots, assets, years, boxes: resolved.boxes, env}));

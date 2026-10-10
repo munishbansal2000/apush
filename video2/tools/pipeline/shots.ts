@@ -13,7 +13,7 @@ import {resolvePhrase, type AnchorTiming, type PhraseAnchor} from './anchors';
 import {clipFingerprint, clipPromptIssues} from './clip-fingerprint';
 import {ATMOSPHERES, type Atmosphere} from '../../src/documentary/atmosphere';
 import {CUSTOM_NAMES} from '../../src/components/custom/catalog';
-import {graphicIssues} from '../../src/documentary/graphics-catalog';
+import {graphicImages, graphicIssues} from '../../src/documentary/graphics-catalog';
 import {expandMapViews, type MapViewDef, type ViewMapShot} from './map-views';
 
 /** A cue: a spoken phrase, or seconds after the shot starts. */
@@ -275,6 +275,7 @@ export function resolveShotPlan(input: ShotPlan, turns: PipelineTurn[], timing: 
       }
       case 'graphic': {
         for (const issue of graphicIssues(shot.component, shot.props, shot.beats ?? [])) issues.push(`${id}: ${issue}`);
+        for (const image of graphicImages(shot.component, shot.props)) if (!opts.imageSizes[image]) issues.push(`${id}: graphic image "${image}" is not on disk (or has no size)`);
         const beatsSec = (shot.beats ?? []).map((b, n) => phrase(`${id} beat ${n + 1}`, b));
         return {...base, type: 'graphic', component: shot.component, props: shot.props, ...(beatsSec.length ? {beatsSec} : {})};
       }

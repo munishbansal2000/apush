@@ -70,3 +70,17 @@ describe('graphics and the Episode Sheet', () => {
     assert.equal(graphicKeepsSheet({startSec: 98, endSec: 104}, boxes), true, 'a box starts during it');
   });
 });
+
+describe('pictures inside graphics', () => {
+  it('come from the act\'s assets and count toward each image\'s uses', async () => {
+    const {validateStoryAct} = await import('../tools/pipeline/storyboard-director');
+    const t = parseTranscript('Maya: One two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen.');
+    const outline = {title: 't', thesis: 't', boxes: [], acts: [{title: 'a', purpose: 'p', turns: {from: 0, to: 0}}]};
+    const catalog = ['a.jpg', 'b.jpg'].map(path => ({path, description: '', width: 3000, height: 2000, maxZoom: 1.6}));
+    const stagger = (images: string[], phrase: string) => ({kind: 'graphic', component: 'StaggerSlide', props: {panels: images.map(image => ({image, label: 'x'}))}, at: {phrase}, priority: 'essential'});
+    const issues = (visuals: unknown[]) => validateStoryAct({turns: [{turn: 0, visuals}]}, 0, outline, t, [16], catalog).issues.join('\n');
+    assert.equal(issues([stagger(['a.jpg', 'b.jpg'], 'one two')]), '');
+    assert.match(issues([stagger(['a.jpg', 'nope.jpg'], 'one two')]), /"nope.jpg" is not a listed asset/);
+    assert.match(issues([stagger(['a.jpg', 'b.jpg'], 'one two'), stagger(['a.jpg', 'b.jpg'], 'five six'), {kind: 'image', image: 'a.jpg', at: {phrase: 'nine ten'}, priority: 'essential'}]), /"a.jpg" is used 3 times in this act/);
+  });
+});

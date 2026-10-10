@@ -3,7 +3,7 @@
  * the phrase each lands on, priority, pace) and nothing about timing. Small answers per act; repairs and reviewer notes
  * re-ask only the acts they concern.
  */
-import {GRAPHICS} from '../../src/documentary/graphics-catalog';
+import {GRAPHICS, graphicImages} from '../../src/documentary/graphics-catalog';
 import type {PipelineTurn} from '../pipeline-core';
 import {cleanSpeech} from './speech';
 import {LOOK_RULES} from './shots';
@@ -35,7 +35,7 @@ export function storyboardPrompt(index: number, outline: Outline, turns: Pipelin
     '- Each visual lands on a phrase: 2-6 consecutive words copied VERBATIM from that line, unique within the line, in the order spoken.',
     '- Show what the words are about: the person named, the place, the document, the event, the object. For an abstract idea use a document detail, a map, a point card (1-3 bullets, <= 6 words each) or a listed custom explainer.',
     '- Kinds: "image" (optional "framing": "wide" | "face" | "detail"; first appearance of a person: add "name" and "role" for a name tag), "map" (a map view), "point", "graphic" (a listed GRAPHIC filled with your text/numbers), "custom" (only a listed explainer, only for its exact event), "clip" (a hero still with gentle ambient motion: smoke, water, flags; never faces or text; at most one per act).',
-    '- Graphics carry the explaining: when the narration quotes a source, reads or analyses a document, sets two sides against each other, walks a chain of causes, or gives numbers, show it with the matching GRAPHIC rather than a picture or map. Aim for 1-3 graphics per act, each held for a stretch of narration (5s or more); "beats" are phrases of the line, in order, that reveal its items. Write the text yourself, short and exact (quotes and numbers as the narration gives them).',
+    '- Graphics carry the explaining: when the narration quotes a source, reads or analyses a document, sets two sides against each other, walks a chain of causes, or gives numbers, show it with the matching GRAPHIC rather than a picture or map. Aim for 1-3 graphics per act, each held for a stretch of narration (5s or more); "beats" are phrases of the line, in order, that reveal its items. Write the text yourself, short and exact (quotes and numbers as the narration gives them). Pictures inside a graphic come from ASSETS and count toward their "uses".',
     '- Images only from ASSETS, each at most its "uses" in this act (the lesson shares each image between acts). Images marked retrospective (later imaginings) must not be presented as eyewitness records.',
     '- The Episode Sheet appears large and lists the boxes on screen by itself while they are named: never a point card (or any other list) for the boxes; show a picture or map under it.',
     `- Variety: at most ${LOOK_RULES.maxPointsPerAct} point cards in the act (only for a spoken list or the thesis) and never two in a row; at most ${LOOK_RULES.maxMapsPerAct} maps total and ${LOOK_RULES.maxMapRun} maps in a row; the same map view at most ${LOOK_RULES.maxViewPerAct} times in the act. Prefer primary-source documents, objects, portraits, and event images whenever geography is not the actual point.`,
@@ -112,8 +112,9 @@ export function validateStoryAct(raw: unknown, index: number, outline: Outline, 
     for (const v of t.visuals ?? []) {
       if (!['image', 'map', 'point', 'custom', 'clip', 'graphic'].includes(v?.kind)) { issues.push(`turn ${t.turn}: unknown visual kind ${JSON.stringify(v?.kind)}`); continue; }
       v.priority ??= 'essential';
-      const image = v.kind === 'point' ? v.backdrop : v.image;
-      if (image) {
+      // Pictures it shows: its own image or backdrop, or those inside a graphic (they share the act's allowance).
+      const shown = v.kind === 'graphic' ? graphicImages(v.component, v.props) : [v.kind === 'point' ? v.backdrop : v.image].filter((x): x is string => !!x);
+      for (const image of shown) {
         if (!paths.has(image)) issues.push(`turn ${t.turn}: "${image}" is not a listed asset`);
         else if (!share.uses.has(image)) issues.push(`turn ${t.turn}: "${image}" is not offered to this act (other acts use it); pick one from ASSETS`);
         perImage.set(image, (perImage.get(image) ?? 0) + 1);

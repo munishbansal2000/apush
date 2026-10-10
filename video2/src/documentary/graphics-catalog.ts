@@ -14,6 +14,8 @@ export interface GraphicEntry {
   example: Record<string, unknown>;
   /** Problems with a storyboard's props (empty when fine). */
   check: (props: Record<string, unknown>) => string[];
+  /** Lesson images it shows (they come from the act's ASSETS and count toward each image's uses). */
+  images?: (props: Record<string, unknown>) => string[];
 }
 
 type P = Record<string, unknown>;
@@ -109,9 +111,76 @@ export const GRAPHICS: Record<string, GraphicEntry> = {
       return out;
     },
   },
+  KeyTerm: {
+    use: 'A key term the narration defines (salutary neglect, virtual representation, mercantilism): the term lands, then its one-line definition.',
+    beats: '1: the definition appears',
+    example: {term: 'Salutary neglect', definition: 'London looked the other way, and the colonies prospered.'},
+    check: (p: P) => [...str(p.term, 'term', 32), ...str(p.definition, 'definition', 90)],
+  },
+  SpectrumSlide: {
+    use: 'Where people or groups stood on a scale (Loyalist to Patriot, moderate to radical): 2-5 markers dropped on an axis.',
+    beats: 'one per marker, in order',
+    example: {title: 'Where colonists stood, 1765', axis: ['Loyal to the Crown', 'Ready to resist'], markers: [{at: 0.15, label: 'Royal governors'}, {at: 0.55, label: 'Merchants'}, {at: 0.9, label: 'Sons of Liberty'}]},
+    check: (p: P) => {
+      const out = str(p.title, 'title', 50, false);
+      if (!Array.isArray(p.axis) || p.axis.length !== 2) out.push('axis is [left label, right label]');
+      else p.axis.forEach((a, i) => out.push(...str(a, `axis[${i}]`, 28)));
+      const ms = list(p.markers, 'markers', 2, 5);
+      if (typeof ms === 'string') return [...out, ms];
+      (ms as {at?: unknown; label?: unknown}[]).forEach((m, i) => {
+        out.push(...str(m?.label, `markers[${i}].label`, 24));
+        if (typeof m?.at !== 'number' || m.at < 0 || m.at > 1) out.push(`markers[${i}].at is a position from 0 to 1`);
+      });
+      return out;
+    },
+  },
+  StaggerSlide: {
+    use: '2-4 pictures the narration names one after another (the people at a congress, the objects taxed): each panel slides in, labelled.',
+    beats: 'one per panel, in order',
+    example: {title: 'Taxed by the stamp', panels: [{image: '<asset path>', label: 'Newspapers'}, {image: '<asset path>', label: 'Playing cards'}]},
+    check: (p: P) => {
+      const out = str(p.title, 'title', 50, false);
+      const ps = list(p.panels, 'panels', 2, 4);
+      if (typeof ps === 'string') return [...out, ps];
+      (ps as {image?: unknown; label?: unknown}[]).forEach((x, i) => out.push(...str(x?.image, `panels[${i}].image`, 200), ...str(x?.label, `panels[${i}].label`, 24, false)));
+      return out;
+    },
+    images: (p: P) => (Array.isArray(p.panels) ? (p.panels as {image?: unknown}[]).map(x => x?.image).filter((x): x is string => typeof x === 'string') : []),
+  },
+  CollageSlide: {
+    use: 'Many examples of one thing at once (protests across the colonies, the goods boycotted): a labelled grid of 3-6 pictures.',
+    beats: '',
+    example: {title: 'Protest spreads', columns: 3, items: [{image: '<asset path>', label: 'Boston'}, {image: '<asset path>', label: 'New York'}, {image: '<asset path>', label: 'Charleston'}]},
+    check: (p: P) => {
+      const out = str(p.title, 'title', 50, false);
+      if (p.columns !== undefined && ![2, 3].includes(p.columns as number)) out.push('columns is 2 or 3');
+      const items = list(p.items, 'items', 3, 6);
+      if (typeof items === 'string') return [...out, items];
+      (items as {image?: unknown; label?: unknown}[]).forEach((x, i) => out.push(...str(x?.image, `items[${i}].image`, 200), ...str(x?.label, `items[${i}].label`, 24, false)));
+      return out;
+    },
+    images: (p: P) => (Array.isArray(p.items) ? (p.items as {image?: unknown}[]).map(x => x?.image).filter((x): x is string => typeof x === 'string') : []),
+  },
+  PersonCard: {
+    use: 'Introducing a person who matters to the lesson: their portrait behind a card with name, dates, role and one note. Say when the likeness is not from life.',
+    beats: '',
+    example: {name: 'George Grenville', dates: '1712-1770', role: 'Prime Minister, 1763-1765', note: 'Ended the era of looking the other way', image: '<asset path>', likeness: 'from life'},
+    check: (p: P) => {
+      const out = [...str(p.name, 'name', 32), ...str(p.dates, 'dates', 20), ...str(p.role, 'role', 48), ...str(p.note, 'note', 60, false), ...str(p.image, 'image', 200, false)];
+      if (p.likeness !== undefined && !['from life', 'later likeness', 'none'].includes(String(p.likeness))) out.push('likeness is "from life" | "later likeness" | "none"');
+      return out;
+    },
+    images: (p: P) => (typeof p.image === 'string' ? [p.image] : []),
+  },
 };
 
 export const GRAPHIC_NAMES = Object.keys(GRAPHICS);
+
+/** The lesson images a graphic shows. */
+export function graphicImages(component: unknown, props: unknown): string[] {
+  if (typeof component !== 'string' || !props || typeof props !== 'object') return [];
+  return GRAPHICS[component]?.images?.(props as P) ?? [];
+}
 
 /** Problems with a graphic visual: an unknown component, bad props, or more beats than it reveals. */
 export function graphicIssues(component: unknown, props: unknown, beats: unknown[] = []): string[] {

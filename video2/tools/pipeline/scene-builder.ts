@@ -10,6 +10,7 @@
  *    "hold"; storyboard intent always wins, the rule only warns then
  *  - custom explainers get beats timed from their cue phrases
  */
+import {graphicImages} from '../../src/documentary/graphics-catalog';
 import {findPhrase} from '../../src/kit/anchors';
 import {tokens} from '../../src/kit/text';
 import type {PipelineTurn, WordTiming} from '../pipeline-core';
@@ -109,7 +110,7 @@ export function buildPlan(input: BuildInputs): BuildResult {
 
   // Uses of each image across the storyboard (images and point backdrops), for choosing replacements within the limit.
   const uses = new Map<string, number>();
-  for (const v of sb.turns.flatMap(x => x.visuals)) { const p = v.kind === 'point' ? v.backdrop : v.image; if (p) uses.set(p, (uses.get(p) ?? 0) + 1); }
+  for (const v of sb.turns.flatMap(x => x.visuals)) for (const p of v.kind === 'graphic' ? graphicImages(v.component, v.props) : [v.kind === 'point' ? v.backdrop : v.image]) if (p) uses.set(p, (uses.get(p) ?? 0) + 1);
 
   // 1. One shot per storyboard visual, framings copied from treatments.
   let drafts: Draft[] = [];
@@ -169,6 +170,8 @@ export function buildPlan(input: BuildInputs): BuildResult {
         shot = {type: 'point', ...common, backdrop, bullets: timed(v.bullets) ?? []} as unknown as Shot;
       }
       else if (v.kind === 'graphic') {
+        const missing = graphicImages(v.component, v.props).filter(p => !byPath.has(p));
+        if (missing.length) { storyboardIssues.push(`turn ${index}: graphic ${v.component} shows ${missing.map(p => `"${p}"`).join(', ')}: not available (not downloaded, turned down, or too small)`); continue; }
         const beats = (v.beats ?? []).map(p => cue(index, p)).filter((c): c is Cue => !!c);
         shot = {type: 'graphic', ...common, component: v.component, props: v.props ?? {}, ...(beats.length ? {beats} : {})} as unknown as Shot;
       }

@@ -2,7 +2,7 @@
  * Storyboard (docs/STORYBOARD.md): per turn, the visuals to show, the phrase each lands on, priority and pace. Turns are
  * keyed by identity (speaker + text hash), so script edits invalidate only the turns they touch.
  */
-import {graphicIssues} from '../../src/documentary/graphics-catalog';
+import {graphicImages, graphicIssues} from '../../src/documentary/graphics-catalog';
 import type {PipelineTurn} from '../pipeline-core';
 import {sha256} from '../pipeline-core';
 import {cleanSpeech} from './speech';
@@ -139,8 +139,7 @@ export function checkStoryboard(sb: Storyboard, turns: PipelineTurn[], durations
         else if (k > 1 && !c.occurrence) issues.push(`${where} ${part}: "${c.phrase}" appears ${k} times in the line; give "occurrence" or a longer phrase`);
         else if (pos >= 0 && phrasePos(text, c.phrase, c.occurrence ?? 1) < pos) issues.push(`${where} ${part}: "${c.phrase}" is spoken before the visual starts`);
       }
-      const image = v.kind === 'point' ? v.backdrop : v.image;
-      if (image) {
+      for (const image of v.kind === 'graphic' ? graphicImages(v.component, v.props) : [v.kind === 'point' ? v.backdrop : v.image].filter((x): x is string => !!x)) {
         uses.set(image, (uses.get(image) ?? 0) + 1);
         if (opts.rejectedImages?.has(image)) issues.push(`${where}: "${image}" was turned down in review`);
       }
