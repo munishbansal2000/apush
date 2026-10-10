@@ -23,15 +23,23 @@ export function loadThemeFonts(): void {
   if (started || typeof document === 'undefined' || typeof FontFace === 'undefined') return;
   started = true;
   const handle = delayRender('theme fonts');
-  Promise.all(
-    FACES.map(f =>
-      new FontFace(f.family, `url(${staticFile(`fonts/${f.file}`)}) format('woff2')`, { weight: f.weight, style: f.style ?? 'normal' })
-        .load()
-        .then(face => document.fonts.add(face)),
-    ),
-  )
+  // Parallel render tabs all fetch the fonts at once; the local file server can drop a connection under that load
+  // (net::ERR_CONNECTION_RESET on Windows). Retry with a short backoff before calling a font missing.
+  const load = async (f: (typeof FACES)[number]) => {
+    for (let attempt = 1; ; attempt++) {
+      try {
+        const face = await new FontFace(f.family, `url(${staticFile(`fonts/${f.file}`)}) format('woff2')`, { weight: f.weight, style: f.style ?? 'normal' }).load();
+        document.fonts.add(face);
+        return;
+      } catch (err) {
+        if (attempt >= 5) throw err;
+        await new Promise(resolve => setTimeout(resolve, 250 * attempt));
+      }
+    }
+  };
+  Promise.all(FACES.map(load))
     .then(() => continueRender(handle))
-    // a missing font must fail the render loudly, not silently fall back
+    // a font still missing after the retries must fail the render loudly, not silently fall back
     .catch(err => cancelRender(err));
 }
 

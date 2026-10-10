@@ -141,12 +141,13 @@ interface DocRenderContext {episode: string; work: string; outDir: string; publi
 /**
  * Speed: one Chrome for the whole stage (not one per still or segment), frames rendered in parallel tabs, and the GPU
  * where it helps. Windows defaults: Chrome draws with the GPU (ANGLE) and H.264 is encoded on an NVIDIA GPU (NVENC).
- *   RENDER_CONCURRENCY=8      parallel frames / stills (default: half the CPU cores)
+ *   RENDER_CONCURRENCY=8      parallel frames / stills (default: half the CPU cores, at most 8)
  *   REMOTION_GL=off|angle|... Chrome's GL backend (default angle on Windows, Remotion's default elsewhere)
  *   RENDER_HW=0               software H.264 encoding instead of NVENC / VideoToolbox
  */
 function renderTuning() {
-  const concurrency = Math.max(1, Number(process.env.RENDER_CONCURRENCY) || Math.floor(cpus().length / 2));
+  // Capped at 8 by default: more tabs at once made the local file server drop connections (fonts failed to load).
+  const concurrency = Math.max(1, Number(process.env.RENDER_CONCURRENCY) || Math.min(8, Math.floor(cpus().length / 2)));
   const glEnv = process.env.REMOTION_GL;
   const gl = glEnv === 'off' ? undefined : (glEnv || (process.platform === 'win32' ? 'angle' : undefined)) as 'angle' | 'egl' | 'swiftshader' | 'swangle' | 'vulkan' | 'angle-egl' | undefined;
   return {concurrency, chromiumOptions: gl ? {gl} : {}, hardwareAcceleration: (process.env.RENDER_HW === '0' ? 'disable' : 'if-possible') as 'disable' | 'if-possible'};

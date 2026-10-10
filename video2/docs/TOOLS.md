@@ -234,7 +234,7 @@ Speed settings for the contact sheet and render (`tools/pipeline/stages/doc.ts`)
 
 | Variable | Default | Effect |
 |---|---|---|
-| `RENDER_CONCURRENCY` | half the CPU cores | frames / stills rendered at once |
+| `RENDER_CONCURRENCY` | half the CPU cores, at most 8 | frames / stills rendered at once (more can make the local file server drop connections) |
 | `REMOTION_GL` | `angle` on Windows | Chrome's GL backend; `off` for Remotion's default |
 | `RENDER_HW` | on | `0` = software H.264 (libx264) instead of NVENC / VideoToolbox |
 
