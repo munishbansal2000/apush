@@ -439,14 +439,29 @@ function yearStampState(frame: number, fps: number, width: number, height: numbe
   return {slam, settle, fade, size, x, y};
 }
 
-/** Where the year stamp is on screen at local frame `frame` (an estimate from its type size; generous). */
+/** How visible the stamp itself is at local frame `frame`. */
+export function yearStampVisible(frame: number, fps: number, holdSec = YEAR_STAMP_SEC): number {
+  const {slam, fade} = yearStampState(Math.max(0, frame), fps, 1920, 1080, holdSec);
+  return frame < 0 ? 0 : Math.min(slam, fade);
+}
+
+/** Map labels start stepping aside this long before a year stamp slams in. */
+export const YEAR_STAMP_LEAD_SEC = 0.3;
+
+/**
+ * Where the year stamp is on screen at local frame `frame` (an estimate from its type size; generous), and how much
+ * labels under it must give way: fully from YEAR_STAMP_LEAD_SEC before it appears until it has all but faded, so a
+ * label and the stamp are never both visible (negative frames = the lead-in).
+ */
 export function yearStampZone(text: string, frame: number, fps: number, width: number, height: number, holdSec = YEAR_STAMP_SEC): ChromeZone {
-  const {slam, settle, fade, size, x, y} = yearStampState(frame, fps, width, height, holdSec);
+  const lead = Math.round(YEAR_STAMP_LEAD_SEC * fps);
+  const {slam, settle, fade, size, x, y} = yearStampState(Math.max(0, frame), fps, width, height, holdSec);
   const scale = 1.6 - 0.6 * slam;
   const w0 = text.length * size * 0.62 + 6 * text.length;
   const left = x - 0.5 * (1 - settle) * w0;
   const h = size * 1.2 * scale;
-  return {rect: [left, y - h / 2, left + w0 * scale, y + h / 2], opacity: Math.min(slam, fade)};
+  const away = frame < 0 ? Math.max(0, 1 + frame / lead) : fade < 1 ? Math.min(1, fade / 0.04) : 1;
+  return {rect: [left, y - h / 2, left + w0 * scale, y + h / 2], opacity: away};
 }
 
 export const YearStampView: React.FC<{text: string; holdSec?: number}> = ({text, holdSec = YEAR_STAMP_SEC}) => {

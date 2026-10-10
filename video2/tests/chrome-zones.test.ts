@@ -40,3 +40,17 @@ describe('year stamps', () => {
     assert.ok(yearStampZone('1760', Math.round(1.5 * 30), 30, 1920, 1080, 2.5).opacity > 0.5);
   });
 });
+
+describe('year stamp and map labels', () => {
+  it('a label under the stamp and the stamp are never both visible, frame by frame', async () => {
+    const {yearStampVisible, yearStampZone, YEAR_STAMP_LEAD_SEC} = await import('../src/documentary/shots');
+    const fps = 30;
+    for (const hold of [5, 2.5, 0.8]) {
+      for (let f = -Math.round(YEAR_STAMP_LEAD_SEC * fps) - 2; f <= Math.round(hold * fps) + 2; f++) {
+        const label = f > Math.round(hold * fps) ? 1 : 1 - yearStampZone('1763', f, fps, 1920, 1080, hold).opacity;
+        const stamp = f >= Math.round(hold * fps) ? 0 : yearStampVisible(f, fps, hold);
+        assert.ok(!(label >= 0.05 && stamp >= 0.05), `hold ${hold}s frame ${f}: label ${label.toFixed(2)} and stamp ${stamp.toFixed(2)} both visible`);
+      }
+    }
+  });
+});

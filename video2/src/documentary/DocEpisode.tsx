@@ -12,7 +12,7 @@ import {FilmGrain} from '../kit/media';
 import {sheetTransform} from './sheet';
 import kitConfig from '../data/kit-render-config.json';
 import {AtmosphereLayers} from './atmosphere';
-import {ClipView, CustomView, ImageMoveView, MapView, PointView, QuestionView, YearStampView, yearStampSpans, yearStampZone} from './shots';
+import {ClipView, CustomView, ImageMoveView, MapView, PointView, QuestionView, YearStampView, YEAR_STAMP_LEAD_SEC, yearStampSpans, yearStampZone} from './shots';
 import {ChromeZones} from './chrome-zones';
 import type {DocEpisodeProps, DocShot} from './types';
 
@@ -88,8 +88,8 @@ export const DocEpisode: React.FC<DocEpisodeProps> = ({episode, shots, years: ye
   const sheetOpacity = boxes.length && sheet.phase === 'docked' ? (onQuestion ? 0 : dockedOpacity(t, boxes)) : 0;
   const [rx0, ry0, rx1, ry1] = cfg.boxTracker.rect;
   const zones = [
-    ...years.map((y, i) => ({y, span: spans[i]})).filter(({y, span}) => t >= y.sec && t < y.sec + span).map(({y, span}) => yearStampZone(y.text, frame - Math.round(y.sec * fps), fps, width, height, span)),
-    ...(sheetOpacity > 0 ? [{rect: [rx0 * width, ry0 * height, rx1 * width, ry1 * height] as [number, number, number, number], opacity: Math.min(1, sheetOpacity * 4)}] : []),
+    ...years.map((y, i) => ({y, span: spans[i]})).filter(({y, span}) => t >= y.sec - YEAR_STAMP_LEAD_SEC && t < y.sec + span).map(({y, span}) => yearStampZone(y.text, frame - Math.round(y.sec * fps), fps, width, height, span)),
+    ...(sheetOpacity > 0 ? [{rect: [rx0 * width, ry0 * height, rx1 * width, ry1 * height] as [number, number, number, number], opacity: Math.min(1, sheetOpacity / 0.04)}] : []), // gone before the sheet is visible (the guard judges from 0.05)
   ];
   const speaking = (sec: number) => turns.some((turn, i) => turn.kind === 'speech' && sec >= timing.starts[i] && sec < timing.starts[i] + timing.durations[i]);
   return (
