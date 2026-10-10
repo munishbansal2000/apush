@@ -1,886 +1,638 @@
 {
- "lesson": "u3e10",
- "image_count": 95,
- "images": [
-  {
-   "id": "portrait.adams-john",
-   "title": "John Adams (James Sharples, pastel, c. 1798)",
-   "primary_url": "https://images.metmuseum.org/CRDImages/ad/original/DP-43515-001.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Gilbert_Stuart%2C_John_Adams%2C_c._1800-1815%2C_NGA_42933.jpg",
-   "source": "met",
-   "verified": true
-  },
-  {
-   "id": "portrait.jefferson-thomas",
-   "title": "Thomas Jefferson (John Trumbull)",
-   "primary_url": "https://images.metmuseum.org/CRDImages/ad/original/DT2069.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Official_Presidential_portrait_of_Thomas_Jefferson_%28by_Rembrandt_Peale%2C_1800%29.jpg",
-   "source": "met",
-   "verified": true
-  },
-  {
-   "id": "portrait.madison-james",
-   "title": "James Madison (Reich engraving after Stuart)",
-   "primary_url": "https://images.metmuseum.org/CRDImages/ad/original/LC-83_2_427-001.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/James_Madison_%28NPG%29.jpg",
-   "source": "met",
-   "verified": true
-  },
-  {
-   "id": "portrait.marshall-john",
-   "title": "Chief Justice John Marshall (Asher B. Durand)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/1/16/Chief_Justice_John_Marshall_MET_DP819230.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/John_Marshall_by_Henry_Inman%2C_1832.jpg",
-   "source": "met",
-   "verified": true
-  },
-  {
-   "id": "portrait.pinckney-cc",
-   "title": "Charles Cotesworth Pinckney (Henry Benbridge)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Charles_Cotesworth_Pinckney_by_Henry_Benbridge.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/John_Trumbull_-_Charles_Cotesworth_Pinckney_-_NPG.2007.212_-_National_Portrait_Gallery.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "portrait.gerry-elbridge",
-   "title": "Elbridge Gerry (Longacre engraving)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Elbridge_Gerry_-_engraved_by_J.B._Longacre._LCCN94509765.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Elbridge_Gerry_by_James_Barton_Longacre%2C_c._1820%2C_drawing%2C_from_the_National_Portrait_Gallery_-_NPG-NPG_77_297Gerry-000001.jpg",
-   "source": "loc",
-   "verified": true
-  },
-  {
-   "id": "portrait.talleyrand",
-   "title": "Talleyrand-P\u00e9rigord (Desnoyers engraving)",
-   "primary_url": "https://images.metmuseum.org/CRDImages/dp/original/DP823558.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Charles_Maurice_de_Talleyrand-P%C3%A9rigord_by_Fran%C3%A7ois_G%C3%A9rard%2C_1808.jpg",
-   "source": "met",
-   "verified": true
-  },
-  {
-   "id": "portrait.lyon-matthew",
-   "title": "Congressman Matthew Lyon of Vermont",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Matthew_Lyon_%28Vermont_Congressman%29_2.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Lyon-Matthew-610x812.webp",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "portrait.hamilton-alexander",
-   "title": "Alexander Hamilton (John Trumbull, 1806)",
-   "primary_url": "https://images.metmuseum.org/CRDImages/ad/original/DT222199.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Alexander_Hamilton_portrait_by_John_Trumbull_1806.jpg",
-   "source": "met",
-   "verified": true
-  },
-  {
-   "id": "portrait.burr-aaron",
-   "title": "Aaron Burr (James Van Dyck)",
-   "primary_url": "https://images.metmuseum.org/CRDImages/ad/original/APS6780.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/8/85/John_Vanderlyn_-_Official_Portrait_of_Vice_President_Aaron_Burr.jpg",
-   "source": "met",
-   "verified": true
-  },
-  {
-   "id": "portrait.washington-george",
-   "title": "George Washington (Gilbert Stuart)",
-   "primary_url": "https://images.metmuseum.org/CRDImages/ad/original/DT62.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Gilbert_Stuart_-_George_Washington_%28Lansdowne_Portrait%29_-_Google_Art_Project.jpg",
-   "source": "met",
-   "verified": true
-  },
-  {
-   "id": "portrait.jay-john",
-   "title": "John Jay (Asher B. Durand)",
-   "primary_url": "https://images.metmuseum.org/CRDImages/dp/original/DP837785.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/7/72/John_Jay_%28Gilbert_Stuart_portrait%29.jpg",
-   "source": "met",
-   "verified": true
-  },
-  {
-   "id": "portrait.franklin-benjamin",
-   "title": "Benjamin Franklin (Duplessis)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Joseph_Siffrein_Duplessis_-_Benjamin_Franklin_-_Google_Art_Project.jpg",
-   "alt_url": "https://images.metmuseum.org/CRDImages/ad/original/DP-1078-001.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "portrait.adams-abigail",
-   "title": "Abigail Adams (Gilbert Stuart)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Abigail_Adams_by_Gilbert_Stuart.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Gilbert_Stuart%2C_Abigail_Smith_Adams_%28Mrs._John_Adams%29%2C_1800-1815%2C_NGA_42934.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "portrait.genet-edmond",
-   "title": "Edmond-Charles Gen\u00eat, French minister to the U.S.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Edmond-Charles_Gen%C3%AAt.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Edmond_Charles_Genet_%281763-1834%29.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "portrait.pickering-timothy",
-   "title": "Timothy Pickering, Secretary of State (Rembrandt Peale)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Timothy_Pickering%2C_Peale.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Timothy_Pickering_Gilbert_Stuart.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "portrait.monroe-james",
-   "title": "James Monroe (Gilbert Stuart)",
-   "primary_url": "https://images.metmuseum.org/CRDImages/ad/original/DT2039.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Gilbert_Stuart%2C_James_Monroe%2C_c._1817%2C_NGA_56915.jpg",
-   "source": "met",
-   "verified": true
-  },
-  {
-   "id": "event.constellation-vs-insurgente",
-   "title": "USS Constellation captures the French frigate L'Insurgente, Feb 9, 1799 (NARA)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Battle_between_U.S._frigate_Constellation_and_French_frigate_L%27Insurgente%2C_in_the_Naval_War_with_France%2C_February_1799._-_NARA_-_512908.tif",
-   "alt_url": "https://tile.loc.gov/storage-services/service/pnp/ppmsca/39700/39730r.jpg",
-   "source": "nara",
-   "verified": true
-  },
-  {
-   "id": "event.lyon-griswold-brawl",
-   "title": "The Lyon\u2013Griswold brawl on the House floor, 1798 (contemporary cartoon)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/3/37/Lyon-griswold-brawl.jpg",
-   "alt_url": "https://tile.loc.gov/storage-services/service/pnp/ppmsca/31800/31832r.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "event.property-protected",
-   "title": "\u201cProperty Protected \u00e0 la Fran\u00e7oise\u201d \u2014 1798 anti-French cartoon",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Property_protected-%C3%A0_la_Fran%C3%A7oise_LCCN93509853.jpg",
-   "alt_url": "https://tile.loc.gov/storage-services/service/pnp/ppmsca/31100/31156r.jpg",
-   "source": "loc",
-   "verified": true
-  },
-  {
-   "id": "event.bennington-1798",
-   "title": "View of Bennington, Vermont (Ralph Earl, 1798) \u2014 Haswell\u2019s town",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/View_of_Bennington_by_Ralph_Earl%2C_1798%2C_oil_on_canvas_-_Bennington_Museum_-_Bennington%2C_VT_-_DSC08519.JPG",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/8/87/View_of_Bennington%2C_by_Ralph_Earl_%281798%29.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "event.congress-hall",
-   "title": "Congress Hall, Philadelphia \u2014 U.S. Capitol 1790\u20131800",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Congress_Hall_exterior.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Congress_Hall_-_Philadelphia_%282642813566%29.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "event.peace-medal-1801",
-   "title": "Jefferson Indian Peace Medal, 1801 (Smithsonian)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Silver_peace_medal%2C_1801%2C_issued_under_President_Thomas_Jefferson_and_given_to_an_Osage_chieftain_-_National_Museum_of_American_History_-_DSC06195.JPG",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Thomas_Jefferson_Peace_Medal.jpg",
-   "source": "smithsonian",
-   "verified": true
-  },
-  {
-   "id": "event.birch-war-preparation",
-   "title": "\u201cPreparation for War to Defend Commerce\u201d (William Birch, 1799)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/6/66/Preparation_for_War_to_defend_Commerce_Birch%27s_Views_Plate_29.jpg",
-   "alt_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Preparation_for_War_to_defend_Commerce_Birch%27s_Views_Plate_29.jpg/1920px-Preparation_for_War_to_defend_Commerce_Birch%27s_Views_Plate_29.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "event.marines-french-prisoners",
-   "title": "U.S. Marines escorting French prisoners (Quasi-War)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/United_States_Marine_escorting_French_prisoners.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/United_States_Marine_escorting_French_prisoners.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "event.constellation-painting",
-   "title": "USS Constellation vs. L\u2019Insurgente (painting)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/USSConstellationVsInsurgente.jpg",
-   "alt_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/USSConstellationVsInsurgente.jpg/1920px-USSConstellationVsInsurgente.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "event.mount-vernon-ship",
-   "title": "American merchant ship Mount Vernon of Salem, 1799 (M. F. Corn\u00e8)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/9/94/1799_ship_MountVernon_of_Salem_byMFCorne.png",
-   "alt_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/1799_ship_MountVernon_of_Salem_byMFCorne.png/1920px-1799_ship_MountVernon_of_Salem_byMFCorne.png",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "document.sedition-act-1798",
-   "title": "The Sedition Act, July 14, 1798 (broadside)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/An_Act_in_Addition_to_the_Act%2C_Entitled_%22An_Act_for_the_Punishment_of_Certain_Crimes_Against_the_United_States%22_-_DPLA_-_71062ffc0a2718116795c74ca43a0875.jpg",
-   "alt_url": "https://tile.loc.gov/image-services/iiif/public:gdcmassbookdig:alienseditionlaw00virg:alienseditionlaw00virg_0009/full/pct:100/0/default.jpg",
-   "source": "dpla",
-   "verified": true
-  },
-  {
-   "id": "document.alien-enemies-act-1798",
-   "title": "\u201cAn Act Respecting Alien Enemies,\u201d July 6, 1798",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/An_Act_Respecting_Alien_Enemies_-_DPLA_-_0efb1118e9b51733e6f6ebfa9af91275.jpg",
-   "alt_url": "https://tile.loc.gov/image-services/iiif/public:gdcmassbookdig:alienseditionlaw00virg:alienseditionlaw00virg_0009/full/pct:100/0/default.jpg",
-   "source": "dpla",
-   "verified": true
-  },
-  {
-   "id": "document.alien-friends-act-1798",
-   "title": "\u201cAn Act Concerning Aliens\u201d (Alien Friends Act), June 25, 1798",
-   "primary_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/An_Act_Concerning_Aliens_-_DPLA_-_707e57c770ba41b9656ef0dbc507e426.pdf/page1-960px-An_Act_Concerning_Aliens_-_DPLA_-_707e57c770ba41b9656ef0dbc507e426.pdf.jpg",
-   "alt_url": "https://tile.loc.gov/image-services/iiif/public:gdcmassbookdig:alienseditionlaw00virg:alienseditionlaw00virg_0009/full/pct:100/0/default.jpg",
-   "source": "dpla",
-   "verified": true
-  },
-  {
-   "id": "document.naturalization-act-1798",
-   "title": "The Naturalization Act, June 18, 1798 (14-year rule)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/5/51/An_Act_Supplementary_to_and_to_Amend_the_Act%2C_Entitled_%22An_Act_to_Establish_an_Uniform_Rule_of_Naturalization%2C_and_to_Repeal_the_Act_Heretofore_Passed_on_That_Subject%22_-_DPLA_-_1767f19907197922e5af113ad3c627d0_%28page_1%29.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/An_Act_Supplementary_to_and_to_Amend_the_Act%2C_Entitled_%22An_Act_to_Establish_an_Uniform_Rule_of_Naturalization%2C_and_to_Repeal_the_Act_Heretofore_Passed_on_That_Subject%22_-_DPLA_-_1767f19907197922e5af113ad3c627d0_%28page_2%29.jpg",
-   "source": "dpla",
-   "verified": true
-  },
-  {
-   "id": "document.kentucky-resolutions-1798",
-   "title": "Kentucky Resolutions, Nov 10, 1798 (broadside)",
-   "primary_url": "https://tile.loc.gov/storage-services/service/rbc/rbpe/rbpe02/rbpe021/02101700/001dq.gif",
-   "alt_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Kentucky_Resolutions_of_1798.djvu/page1-1920px-Kentucky_Resolutions_of_1798.djvu.jpg",
-   "source": "loc",
-   "verified": true
-  },
-  {
-   "id": "document.virginia-resolutions-1798",
-   "title": "Virginia Resolutions, Dec 21, 1798 (broadside)",
-   "primary_url": "https://tile.loc.gov/storage-services/service/rbc/rbpe/rbpe18/rbpe180/18001600/001dq.gif",
-   "alt_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Contemporary_Opinion_of_the_Virginia_and_Kentucky_Resolutions%2C_p2.djvu/page1-1280px-Contemporary_Opinion_of_the_Virginia_and_Kentucky_Resolutions%2C_p2.djvu.jpg",
-   "source": "loc",
-   "verified": true
-  },
-  {
-   "id": "document.bill-of-rights-1791",
-   "title": "The Bill of Rights (engrossed, National Archives)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/The_U.S._Bill_of_Rights_%283679495252%29.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Bill_of_Rights_-_DPLA_-_a65f6d0b6210c18d17c596908ebcf270_%28page_1%29.jpg",
-   "source": "nara",
-   "verified": true
-  },
-  {
-   "id": "document.constitution-1787",
-   "title": "The U.S. Constitution \u2014 Preamble (National Archives)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Constitution_of_the_United_States%2C_page_1_%28cropped%2C_Preamble%29.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Constitution_of_the_United_States%2C_page_1.tif",
-   "source": "nara",
-   "verified": true
-  },
-  {
-   "id": "document.jays-treaty-1794",
-   "title": "Senate resolution on Jay\u2019s Treaty, Nov 19, 1794",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Resolution_for_Senate%2C_November_19%2C_1794.jpg",
-   "alt_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/The_treaty_of_amity%2C_commerce%2C_and_navigation_between_Great_Britain_and_the_United_States%2C_1794_%28IA_treatyofamitycom00rank%29.pdf/page1-1280px-The_treaty_of_amity%2C_commerce%2C_and_navigation_between_Great_Britain_and_the_United_States%2C_1794_%28IA_treatyofamitycom00rank%29.pdf.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "document.treaty-alliance-1778",
-   "title": "Franco-American Treaty of Alliance, Feb 6, 1778",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Franco_American_treaty_of_alliance_6_feb_1778.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/6/61/Treaty-of-Alliance-document-300x150.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "document.farewell-address-1796",
-   "title": "Washington\u2019s Farewell Address, Sept 17, 1796",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/The_Library_of_Congress_-_Washington%27s_farewell_adress%2C_17-09-1796.png",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Washington%27s_Farewell_Address.jpg",
-   "source": "loc",
-   "verified": true
-  },
-  {
-   "id": "document.virginia-debates-1798",
-   "title": "Debates in the Virginia House of Delegates on the Alien and Sedition Laws, Dec 1798",
-   "primary_url": "https://archive.org/download/alienseditionlaw00virg/page/n9.jpg",
-   "alt_url": "https://tile.loc.gov/image-services/iiif/public:gdcmassbookdig:alienseditionlaw00virg:alienseditionlaw00virg_0009/full/pct:100/0/default.jpg",
-   "source": "archive.org",
-   "verified": true
-  },
-  {
-   "id": "document.articles-of-confederation",
-   "title": "The Articles of Confederation (engrossed)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Articles_of_Confederation_and_Perpetual_Union_between_the_states_of_New_Hampshire_..._LCCN2005696018.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Articles_of_Confederation_and_Perpetual_Union_between_the_states_of_New_Hampshire_..._LCCN2005696018.tif",
-   "source": "loc",
-   "verified": true
-  },
-  {
-   "id": "map.us-1795",
-   "title": "Map of the United States, 1795 (Samuel Lewis)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/A_Map_of_the_United_States-_compiled_chiefly_from_The_State_Maps%2C_and_other_Authentic_Information%2C_by_Saml._Lewis_1795._%28IA_dr_a-map-of-the-united-states-compiled-chiefly-from-the-state-maps-and-other-00864074%29.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/A_Map_of_the_United_States-_compiled_chiefly_from_The_State_Maps%2C_and_other_Authentic_Information%2C_by_Saml._Lewis_1795._%28IA_dr_a-map-of-the-united-states-compiled-chiefly-from-the-state-maps-and-other-00864074%29.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "map.philadelphia-1790s",
-   "title": "Plan of Philadelphia and environs, 1790s",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/e/e5/This_plan_of_the_city_of_Philadelphia_and_its_environs_%28showing_the_improved_parts%29_LOC_2007625050.jpg",
-   "alt_url": "https://tile.loc.gov/storage-services/service/gmd/gmd382/g3824/g3824p/ct001369.gif",
-   "source": "loc",
-   "verified": true
-  },
-  {
-   "id": "map.west-indies-1796",
-   "title": "Map of the West Indies, 1796 \u2014 Quasi-War theater",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/1796_map_of_the_West_Indies.png",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/1799_Clement_Cruttwell_Map_of_West_Indies_-_Geographicus_-_WestIndies-cruttwell-1799.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "map.paris-1798",
-   "title": "Paris divided into 12 municipalities, 1798",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Plan_de_la_ville_et_faubourg_de_Paris_divis%C3%A9_en_12_municipalit%C3%A9s%2C_1798_-_Gallica.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Atlas_des_anciens_plans_de_Paris_-_Paris_de_1789_%C3%A0_1798_-_BHVP.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "map.kentucky",
-   "title": "Map of Kentucky with adjoining territories, c. 1790s",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Map_of_the_state_of_Kentucky_-_with_the_adjoining_territories_LOC_2007630404.jpg",
-   "alt_url": "https://tile.loc.gov/storage-services/service/gmd/gmd395/g3950/g3950/ct002137.gif",
-   "source": "loc",
-   "verified": true
-  },
-  {
-   "id": "map.atlantic",
-   "title": "Chart of the Atlantic or Western Ocean (N. Hemisphere)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/A_new_chart_of_the_Atlantic_or_Western_Ocean_%28NYPL_b15451814-464971%29.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/A_new_chart_of_the_Atlantic_or_Western_Ocean_%288345826935%29.jpg",
-   "source": "nypl",
-   "verified": true
-  },
-  {
-   "id": "map.europe-1798",
-   "title": "Strategic situation of Europe, 1798 (French Revolutionary Wars)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Strategic_Situation_of_Europe_1798.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Strategic_Situation_of_Europe_1798.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "map.vermont",
-   "title": "Map of the state of Vermont, c. 1790s",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/A_map_of_the_state_of_Vermont_LOC_2017586669.jpg",
-   "alt_url": "https://tile.loc.gov/storage-services/service/gmd/gmd375/g3750/g3750/ct008130.gif",
-   "source": "loc",
-   "verified": true
-  },
-  {
-   "id": "map.world-1794",
-   "title": "Dunn\u2019s wall map of the world in hemispheres, 1794",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/1794_Samuel_Dunn_Wall_Map_of_the_World_in_Hemispheres_-_Geographicus_-_World2-dunn-1794.jpg",
-   "alt_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/1794_Samuel_Dunn_Wall_Map_of_the_World_in_Hemispheres_-_Geographicus_-_World2-dunn-1794.jpg/1920px-1794_Samuel_Dunn_Wall_Map_of_the_World_in_Hemispheres_-_Geographicus_-_World2-dunn-1794.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "map.kentucke-1784",
-   "title": "Filson\u2019s map of Kentucke, 1784",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/This_map_of_Kentucke%2C_LOC_73691819.jpg",
-   "alt_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/This_map_of_Kentucke%2C_LOC_73691819.jpg/1920px-This_map_of_Kentucke%2C_LOC_73691819.jpg",
-   "source": "loc",
-   "verified": true
-  },
-  {
-   "id": "object.printing-press",
-   "title": "Common press (Benjamin Franklin Museum) \u2014 the Republican press at work",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Printing_Press_in_Benjamin_Franklin_Museum.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/James_Franklin%27s_Ramage_Press.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "object.flag-15star",
-   "title": "U.S. flag, 15 stars (1795\u20131818)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/15_star_American_flag_%281795%29.png",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Flag_of_the_United_States_%281795-1818%29.svg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "object.coin-1798-dollar",
-   "title": "Draped Bust dollar, 1798",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/3/30/1798_Draped_Bust_Dollar.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/NNC-US-1798-%241-Draped_bust_%28heraldic_eagle%29.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "object.naval-cannon",
-   "title": "18th-century naval cannon and tools",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/18th_century_2_pound_cannon_and_tools.jpg",
-   "alt_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/18th_century_2_pound_cannon_and_tools.jpg/1920px-18th_century_2_pound_cannon_and_tools.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "object.musket-1795",
-   "title": "Springfield Model 1795 musket (Smithsonian)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/6/62/Springfield_Model_1795-NMAH-AHB2015q026641.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Model_1795_Musket_Display.jpg",
-   "source": "smithsonian",
-   "verified": true
-  },
-  {
-   "id": "object.newspaper-aurora",
-   "title": "Aurora General Advertiser (Bache\u2019s Republican paper), Jan 9, 1805",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/%22Fredericksburgh%22_Aurora_General_Advertiser%2C_Philadelphia%2C_January_9%2C_1805.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/%22Fredericksburgh%22_Aurora_General_Advertiser%2C_Philadelphia%2C_January_9%2C_1805.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "object.newspaper-gazette-us",
-   "title": "Gazette of the United States (Federalist paper), Aug 29, 1798",
-   "primary_url": "https://tile.loc.gov/image-services/iiif/service:ndnp:dlc:batch_dlc_napolean_ver01:data:sn83025881:print:1798082901:0001/full/pct:100/0/default.jpg",
-   "alt_url": "https://tile.loc.gov/image-services/iiif/service:ndnp:dlc:batch_dlc_napolean_ver01:data:sn83025881:print:1798061601:0001/full/pct:100/0/default.jpg",
-   "source": "loc",
-   "verified": true
-  },
-  {
-   "id": "object.newspaper-nh-gazette",
-   "title": "New-Hampshire Gazette, July 10, 1798",
-   "primary_url": "https://tile.loc.gov/image-services/iiif/service:ndnp:nhd:batch_nhd_avalon_ver02:data:sn83025588:00517010765:1798071001:0531/full/pct:100/0/default.jpg",
-   "alt_url": "https://tile.loc.gov/image-services/iiif/service:ndnp:nhd:batch_nhd_avalon_ver02:data:sn83025588:00517010765:1798110701:0599/full/pct:100/0/default.jpg",
-   "source": "loc",
-   "verified": true
-  },
-  {
-   "id": "object.cockade-tricolor",
-   "title": "French tricolor cockade (revolutionary symbol)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Tricolour_Cockade.svg",
-   "alt_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Tricolour_Cockade.svg/1920px-Tricolour_Cockade.svg.png",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "object.french-coin-2sols",
-   "title": "French 2-sols coin, 1792 (revolutionary currency)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/France_-_French_Revolution%2C_Clemanson_Fabrique_in_Lyon%2C_1792%2C_2_Sols.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/France_-_French_Revolution%2C_Clemanson_Fabrique_in_Lyon%2C_1792%2C_2_Sols.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "object.inaugural-medal-1801",
-   "title": "Jefferson inaugural medal, 1801",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/1801_Thomas_Jefferson_Inaugural_Medal%2C_Silver%2C_MS62_NGC.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/1801_Thomas_Jefferson_Inaugural_Medal%2C_Silver%2C_MS62_NGC.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "object.battle-diagram-1799",
-   "title": "Diagram of the Constellation\u2013Insurgente action, Feb 9, 1799",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/DiagramofAction9Feb1799.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/DiagramofAction9Feb1799.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "event.mortefontaine-signing",
-   "title": "Signing of the Treaty of Mortefontaine, Sept 30, 1800 (V.-J. Adam)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/0/04/The_Signing_of_the_Treaty_of_Mortefontaine%2C_30th_September_1800_by_Victor-Jean_Adam.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/0/04/The_Signing_of_the_Treaty_of_Mortefontaine%2C_30th_September_1800_by_Victor-Jean_Adam.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "event.french-naval-combat",
-   "title": "French view of a Quasi-War naval combat",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Combat_naval_pendant_la_quasi_guerre.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Combat_naval_pendant_la_quasi_guerre.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "portrait.washington-williamstown",
-   "title": "George Washington (Gilbert Stuart, Williamstown portrait)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg",
-   "alt_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg/1920px-Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "portrait.paterson-william",
-   "title": "Justice William Paterson (presided at Haswell\u2019s trial)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/5/54/William_Paterson_copy.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Williampaterson.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "portrait.adams-1821",
-   "title": "John Adams in 1821 (Gilbert Stuart, National Portrait Gallery)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/3/39/John_Adams_-_by_Gilbert_Stuart_-_c_1821_-_Natl_Portrait_Gallery_Washington_DC.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/3/39/John_Adams_-_by_Gilbert_Stuart_-_c_1821_-_Natl_Portrait_Gallery_Washington_DC.jpg",
-   "source": "smithsonian",
-   "verified": true
-  },
-  {
-   "id": "portrait.jefferson-peale-alt",
-   "title": "Thomas Jefferson (Rembrandt Peale, 1800 \u2014 alternate)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Thomas_Jefferson_by_Rembrandt_Peale%2C_1800.jpg",
-   "alt_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Thomas_Jefferson_by_Rembrandt_Peale%2C_1800.jpg/1920px-Thomas_Jefferson_by_Rembrandt_Peale%2C_1800.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "portrait.hamilton-1792",
-   "title": "Alexander Hamilton (John Trumbull, 1792)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/John_Trumbull_-_Alexander_Hamilton_-_Google_Art_Project.jpg",
-   "alt_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/John_Trumbull_-_Alexander_Hamilton_-_Google_Art_Project.jpg/1920px-John_Trumbull_-_Alexander_Hamilton_-_Google_Art_Project.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "portrait.madison-stuart-alt",
-   "title": "James Madison (Gilbert Stuart \u2014 alternate)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/a/af/James_Madison_by_Gilbert_Stuart_%28cropped%29.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/a/af/James_Madison_by_Gilbert_Stuart_%28cropped%29.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "portrait.gerry-mezzotint",
-   "title": "Elbridge Gerry (John Raphael Smith mezzotint, 1811, NPG)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Elbridge_Gerry_by_John_Raphael_Smith%2C_1811%2C_mezzotint_on_paper%2C_from_the_National_Portrait_Gallery_-_NPG-NPG_2011_140Gerry-000002.jpg",
-   "alt_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Elbridge_Gerry_by_John_Raphael_Smith%2C_1811%2C_mezzotint_on_paper%2C_from_the_National_Portrait_Gallery_-_NPG-NPG_2011_140Gerry-000002.jpg/1920px-Elbridge_Gerry_by_John_Raphael_Smith%2C_1811%2C_mezzotint_on_paper%2C_from_the_National_Portrait_Gallery_-_NPG-NPG_2011_140Gerry-000002.jpg",
-   "source": "smithsonian",
-   "verified": true
-  },
-  {
-   "id": "portrait.abigail-schussele",
-   "title": "Abigail Adams (Christian Schussele, after Stuart)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Abigail_Adams_by_Christian_Schussele_detail.jpg",
-   "alt_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Abigail_Adams_by_Christian_Schussele_detail.jpg/1920px-Abigail_Adams_by_Christian_Schussele_detail.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "portrait.pinckney-trumbull-full",
-   "title": "Charles Cotesworth Pinckney, full-length (John Trumbull)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Charles_Cotesworth_Pinckney%2C_1746-1825%2C_full-length_portrait%2C_standing%2C_facing_right_LCCN2005685171.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Charles_Cotesworth_Pinckney%2C_1746-1825%2C_full-length_portrait%2C_standing%2C_facing_right_LCCN2005685171.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "portrait.jay-stuart-alt",
-   "title": "John Jay (Gilbert Stuart \u2014 alternate)",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Gilbert_Stuart_-_John_Jay_-_Google_Art_Project.jpg",
-   "alt_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Gilbert_Stuart_-_John_Jay_-_Google_Art_Project.jpg/1920px-Gilbert_Stuart_-_John_Jay_-_Google_Art_Project.jpg",
-   "source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "document.sedition-statutes-page",
-   "title": "Sedition Act as printed in the Statutes at Large",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/9/90/An_Act_for_the_Punishment_of_Certain_Crimes_against_the_United_States_-_DPLA_-_63e1d74cb6053197db1873a8baef2c7a_%28page_22%29.jpg",
-   "alt_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/An_Act_for_the_Punishment_of_Certain_Crimes_against_the_United_States_-_DPLA_-_63e1d74cb6053197db1873a8baef2c7a_%28page_22%29.jpg/1920px-An_Act_for_the_Punishment_of_Certain_Crimes_against_the_United_States_-_DPLA_-_63e1d74cb6053197db1873a8baef2c7a_%28page_22%29.jpg",
-   "source": "dpla",
-   "verified": true
-  },
-  {
-   "id": "historic.u3e10.adams-trumbull",
-   "title": "John Adams by John Trumbull, circa 1792: the president who published the XYZ dispatches.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Official_Presidential_portrait_of_John_Adams_%28by_John_Trumbull%2C_circa_1792%29.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Official_Presidential_portrait_of_John_Adams_%28by_John_Trumbull%2C_circa_1792%29.jpg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "Public domain",
-   "description": "John Adams by John Trumbull, circa 1792: the president who published the XYZ dispatches.",
-   "content_type": "image/jpeg",
-   "width": 2398,
-   "height": 3000,
-   "byte_size": "5924639"
-  },
-  {
-   "id": "historic.u3e10.alien-enemies-dpla",
-   "title": "The Alien Enemies Act as printed, from the Digital Public Library of America.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/An_Act_Respecting_Alien_Enemies_-_DPLA_-_0efb1118e9b51733e6f6ebfa9af91275.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/An_Act_Respecting_Alien_Enemies_-_DPLA_-_0efb1118e9b51733e6f6ebfa9af91275.jpg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "Public domain",
-   "description": "The Alien Enemies Act as printed, from the Digital Public Library of America.",
-   "content_type": "image/jpeg",
-   "width": 10343,
-   "height": 12876,
-   "byte_size": "14833754"
-  },
-  {
-   "id": "historic.u3e10.alien-sedition-acts",
-   "title": "The Alien and Sedition Acts, 1798: the Federalist crackdown on dissent.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Alien_and_Sedition_Acts_%281798%29.png",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Alien_and_Sedition_Acts_%281798%29.png",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "Public domain",
-   "description": "The Alien and Sedition Acts, 1798: the Federalist crackdown on dissent.",
-   "content_type": "image/png",
-   "width": 2306,
-   "height": 3040,
-   "byte_size": "10209596"
-  },
-  {
-   "id": "historic.u3e10.constellation-insurgente",
-   "title": "The USS Constellation capturing the French frigate L'Insurgente, February 1799, in the undeclared Quasi-War of 1798-1800.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Battle_between_US_frigate_Constellation_and_French_frigate_L%27Insurgente_in_the_Naval_War_with_France_February_1799.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Battle_between_US_frigate_Constellation_and_French_frigate_L%27Insurgente_in_the_Naval_War_with_France_February_1799.jpg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "Public domain",
-   "description": "The USS Constellation capturing the French frigate L'Insurgente, February 1799, in the undeclared Quasi-War of 1798-1800.",
-   "content_type": "image/jpeg",
-   "width": 3000,
-   "height": 1754,
-   "byte_size": "1061915"
-  },
-  {
-   "id": "historic.u3e10.gerry-house",
-   "title": "Plaque at Elbridge Gerry's house: the third envoy to Paris in the XYZ Affair.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Elbridge_Gerry_House_Plaque.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Elbridge_Gerry_House_Plaque.jpg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "CC0",
-   "description": "Plaque at Elbridge Gerry's house: the third envoy to Paris in the XYZ Affair.",
-   "content_type": "image/jpeg",
-   "width": 3024,
-   "height": 4032,
-   "byte_size": "859057"
-  },
-  {
-   "id": "historic.u3e10.hamilton-png",
-   "title": "Alexander Hamilton, the Federalist leader whose party passed the four Acts in the summer of 1798.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Portrait_of_Alexander_Hamilton.png",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Portrait_of_Alexander_Hamilton.png",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "CC BY-SA 4.0",
-   "description": "Alexander Hamilton, the Federalist leader whose party passed the four Acts in the summer of 1798.",
-   "content_type": "image/png",
-   "width": 2000,
-   "height": 2500,
-   "byte_size": "8301372"
-  },
-  {
-   "id": "historic.u3e10.jefferson-state-room",
-   "title": "Thomas Jefferson, who secretly wrote Kentucky's nullification resolutions in 1798.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/ThomasJeffersonStateRoomPortrait.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/ThomasJeffersonStateRoomPortrait.jpg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "Public domain",
-   "description": "Thomas Jefferson, who secretly wrote Kentucky's nullification resolutions in 1798.",
-   "content_type": "image/jpeg",
-   "width": 3752,
-   "height": 4571,
-   "byte_size": "3363786"
-  },
-  {
-   "id": "historic.u3e10.lyon-brawl",
-   "title": "The Lyon-Griswold brawl on the House floor: the partisan fury behind the Sedition Act.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/3/37/Lyon-griswold-brawl.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Lyon-griswold-brawl.jpg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "Public domain",
-   "description": "The Lyon-Griswold brawl on the House floor: the partisan fury behind the Sedition Act.",
-   "content_type": "image/jpeg",
-   "width": 1536,
-   "height": 1073,
-   "byte_size": "323133"
-  },
-  {
-   "id": "historic.u3e10.madison-cropped",
-   "title": "James Madison, author of Virginia's cooler interposition resolutions of 1798.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/a/af/James_Madison_by_Gilbert_Stuart_%28cropped%29.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/James_Madison_by_Gilbert_Stuart_%28cropped%29.jpg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "Public domain",
-   "description": "James Madison, author of Virginia's cooler interposition resolutions of 1798.",
-   "content_type": "image/jpeg",
-   "width": 1782,
-   "height": 1782,
-   "byte_size": "656787"
-  },
-  {
-   "id": "historic.u3e10.marshall-jpeg",
-   "title": "John Marshall, the third envoy in the XYZ mission to Paris in 1798.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Chief_Justice_John_Marshall.jpeg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Chief_Justice_John_Marshall.jpeg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "Public domain",
-   "description": "John Marshall, the third envoy in the XYZ mission to Paris in 1798.",
-   "content_type": "image/jpeg",
-   "width": 3432,
-   "height": 5076,
-   "byte_size": "13945980"
-  },
-  {
-   "id": "historic.u3e10.naturalization-dpla",
-   "title": "The 1798 Naturalization Act: citizenship stretched from five years to fourteen, from the Digital Public Library of America.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/5/51/An_Act_Supplementary_to_and_to_Amend_the_Act%2C_Entitled_%22An_Act_to_Establish_an_Uniform_Rule_of_Naturalization%2C_and_to_Repeal_the_Act_Heretofore_Passed_on_That_Subject%22_-_DPLA_-_1767f19907197922e5af113ad3c627d0_%28page_1%29.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/An_Act_Supplementary_to_and_to_Amend_the_Act%2C_Entitled_%22An_Act_to_Establish_an_Uniform_Rule_of_Naturalization%2C_and_to_Repeal_the_Act_Heretofore_Passed_on_That_Subject%22_-_DPLA_-_1767f19907197922e5af113ad3c627d0_%28page_1%29.jpg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "Public domain",
-   "description": "The 1798 Naturalization Act: citizenship stretched from five years to fourteen, from the Digital Public Library of America.",
-   "content_type": "image/jpeg",
-   "width": 10541,
-   "height": 13234,
-   "byte_size": "15372178"
-  },
-  {
-   "id": "historic.u3e10.pinckney-benbridge",
-   "title": "Charles Cotesworth Pinckney, one of the three American envoys to Paris in the XYZ Affair, by Henry Benbridge.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Charles_Cotesworth_Pinckney_by_Henry_Benbridge.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Charles_Cotesworth_Pinckney_by_Henry_Benbridge.jpg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "CC BY 4.0",
-   "description": "Charles Cotesworth Pinckney, one of the three American envoys to Paris in the XYZ Affair, by Henry Benbridge.",
-   "content_type": "image/jpeg",
-   "width": 2718,
-   "height": 3341,
-   "byte_size": "3373721"
-  },
-  {
-   "id": "historic.u3e10.property-francoise",
-   "title": "Property protected \u00e0 la Fran\u00e7oise: a cartoon of the XYZ Affair.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Property_protected_%C3%A0_la_fran%C3%A7oise.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Property_protected_%C3%A0_la_fran%C3%A7oise.jpg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "Public domain",
-   "description": "Property protected \u00e0 la Fran\u00e7oise: a cartoon of the XYZ Affair.",
-   "content_type": "image/jpeg",
-   "width": 1280,
-   "height": 816,
-   "byte_size": "880823"
-  },
-  {
-   "id": "historic.u3e10.quasi-war-naval",
-   "title": "French depiction of a naval combat of the Quasi-War, the undeclared 1798-1800 war at sea.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Combat_naval_pendant_la_quasi_guerre.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Combat_naval_pendant_la_quasi_guerre.jpg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "Public domain",
-   "description": "French depiction of a naval combat of the Quasi-War, the undeclared 1798-1800 war at sea.",
-   "content_type": "image/jpeg",
-   "width": 1641,
-   "height": 1060,
-   "byte_size": "1187451"
-  },
-  {
-   "id": "historic.u3e10.sedition-act-1798",
-   "title": "The Sedition Act of 1798: a crime to publish 'any false, scandalous, and malicious writing' against the government.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Sedition_Act_%281798%29.png",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Sedition_Act_%281798%29.png",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "Public domain",
-   "description": "The Sedition Act of 1798: a crime to publish 'any false, scandalous, and malicious writing' against the government.",
-   "content_type": "image/png",
-   "width": 2404,
-   "height": 2952,
-   "byte_size": "10420033"
-  },
-  {
-   "id": "historic.u3e10.sedition-site",
-   "title": "The Sedition Act at Philadelphia's President's House site: the 1798 law that jailed Republican editors.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Sedition_Act_-_President%27s_House_Site_2022-06_%2843%29.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Sedition_Act_-_President%27s_House_Site_2022-06_%2843%29.jpg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "CC0",
-   "description": "The Sedition Act at Philadelphia's President's House site: the 1798 law that jailed Republican editors.",
-   "content_type": "image/jpeg",
-   "width": 2838,
-   "height": 3778,
-   "byte_size": "3709216"
-  },
-  {
-   "id": "historic.u3e10.talleyrand-gerard",
-   "title": "Talleyrand, the French foreign minister whose agents demanded a quarter-million-dollar bribe plus a ten-million-dollar loan, by Fran\u00e7ois G\u00e9rard.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Charles_Maurice_de_Talleyrand-P%C3%A9rigord_by_Fran%C3%A7ois_G%C3%A9rard%2C_1808.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Charles_Maurice_de_Talleyrand-P%C3%A9rigord_by_Fran%C3%A7ois_G%C3%A9rard%2C_1808.jpg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "Public domain",
-   "description": "Talleyrand, the French foreign minister whose agents demanded a quarter-million-dollar bribe plus a ten-million-dollar loan, by Fran\u00e7ois G\u00e9rard.",
-   "content_type": "image/jpeg",
-   "width": 2644,
-   "height": 3862,
-   "byte_size": "1372564"
-  },
-  {
-   "id": "historic.u3e10.talleyrand-met",
-   "title": "Talleyrand, whose agents X, Y, and Z demanded the bribe that set off the XYZ Affair.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Portrait_of_Charles_Maurice_de_Talleyrand-P%C3%A9rigord_MET_DP823558.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Portrait_of_Charles_Maurice_de_Talleyrand-P%C3%A9rigord_MET_DP823558.jpg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "CC0",
-   "description": "Talleyrand, whose agents X, Y, and Z demanded the bribe that set off the XYZ Affair.",
-   "content_type": "image/jpeg",
-   "width": 2394,
-   "height": 3414,
-   "byte_size": "3019965"
-  },
-  {
-   "id": "historic.u3e10.talleyrand-met2",
-   "title": "Talleyrand, Prince de B\u00e9n\u00e9vent, from the Metropolitan Museum.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Charles_Maurice_de_Talleyrand_P%C3%A9rigord_%281754%E2%80%931838%29%2C_Prince_de_Talleyrand_MET_DP148275.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Charles_Maurice_de_Talleyrand_P%C3%A9rigord_%281754%E2%80%931838%29%2C_Prince_de_Talleyrand_MET_DP148275.jpg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "CC0",
-   "description": "Talleyrand, Prince de B\u00e9n\u00e9vent, from the Metropolitan Museum.",
-   "content_type": "image/jpeg",
-   "width": 2447,
-   "height": 3722,
-   "byte_size": "2202832"
-  },
-  {
-   "id": "historic.u3e10.whiskey-scribners2",
-   "title": "The Whiskey Rebellion in Scribner's: the Federalist show of force that preceded the Alien and Sedition Acts.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Whiskey_Rebellion_illustrations_from_Scribner%27s_Popular_History_of_the_United_States_02.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Whiskey_Rebellion_illustrations_from_Scribner%27s_Popular_History_of_the_United_States_02.jpg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "Public domain",
-   "description": "The Whiskey Rebellion in Scribner's: the Federalist show of force that preceded the Alien and Sedition Acts.",
-   "content_type": "image/jpeg",
-   "width": 2215,
-   "height": 896,
-   "byte_size": "825814"
-  }
- ]
+  "lesson": "u3e10",
+  "image_count": 75,
+  "images": [
+    {
+      "id": "portrait.adams-john",
+      "title": "John Adams (James Sharples, pastel, c. 1798)",
+      "primary_url": "https://images.metmuseum.org/CRDImages/ad/original/DP-43515-001.jpg",
+      "alt_url": "https://images.metmuseum.org/CRDImages/ad/original/DP-43515-001.jpg",
+      "source": "met",
+      "verified": true,
+      "alt_source": "Metropolitan Museum of Art (DP-43515)"
+    },
+    {
+      "id": "portrait.jefferson-thomas",
+      "title": "Thomas Jefferson (John Trumbull)",
+      "primary_url": null,
+      "alt_url": "https://api.nga.gov/iiif/3a14fb6b-82a0-4e1b-beb3-7e6ac89ef686/full/!2000,2000/0/default.jpg",
+      "source": "met",
+      "verified": true,
+      "note": " [dupe-fix: replaced shared URL]",
+      "alt_source": "National Gallery of Art (Gibbs-Coolidge Collection)"
+    },
+    {
+      "id": "portrait.madison-james",
+      "title": "James Madison (Reich engraving after Stuart)",
+      "primary_url": "https://images.metmuseum.org/CRDImages/ad/original/LC-83_2_427-001.jpg",
+      "alt_url": "https://images.metmuseum.org/CRDImages/ad/original/LC-83_2_427-001.jpg",
+      "source": "met",
+      "verified": true,
+      "alt_source": "Metropolitan Museum of Art (LC-83_2_427)"
+    },
+    {
+      "id": "portrait.marshall-john",
+      "title": "Chief Justice John Marshall (Asher B. Durand)",
+      "primary_url": "https://images.metmuseum.org/CRDImages/dp/original/DP819230.jpg",
+      "alt_url": "https://images.metmuseum.org/CRDImages/dp/original/DP837760.jpg",
+      "source": "Metropolitan Museum of Art (Drawings and Prints, acc. 24.90.416)",
+      "verified": true,
+      "alt_source": "Metropolitan Museum of Art (Drawings and Prints)"
+    },
+    {
+      "id": "portrait.pinckney-cc",
+      "title": "Charles Cotesworth Pinckney (Henry Benbridge)",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Charles_Cotesworth_Pinckney_by_Henry_Benbridge.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/John_Trumbull_-_Charles_Cotesworth_Pinckney_-_NPG.2007.212_-_National_Portrait_Gallery.jpg",
+      "source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "portrait.gerry-elbridge",
+      "title": "Elbridge Gerry (Longacre engraving)",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Elbridge_Gerry_-_engraved_by_J.B._Longacre._LCCN94509765.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Elbridge_Gerry_by_James_Barton_Longacre%2C_c._1820%2C_drawing%2C_from_the_National_Portrait_Gallery_-_NPG-NPG_77_297Gerry-000001.jpg",
+      "source": "loc",
+      "verified": true
+    },
+    {
+      "id": "portrait.talleyrand",
+      "title": "Talleyrand-P\u00e9rigord (Desnoyers engraving)",
+      "primary_url": "https://images.metmuseum.org/CRDImages/dp/original/DP823558.jpg",
+      "alt_url": "https://images.metmuseum.org/CRDImages/ep/original/DP277234.jpg",
+      "source": "met",
+      "verified": true,
+      "alt_source": "Metropolitan Museum of Art (European Paintings)"
+    },
+    {
+      "id": "portrait.lyon-matthew",
+      "title": "Congressman Matthew Lyon of Vermont",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Matthew_Lyon_%28Vermont_Congressman%29_2.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Lyon-Matthew-610x812.webp",
+      "source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "portrait.hamilton-alexander",
+      "title": "Alexander Hamilton (John Trumbull, 1806)",
+      "primary_url": null,
+      "alt_url": "https://images.metmuseum.org/CRDImages/ad/original/DT222199.jpg",
+      "source": "met",
+      "verified": true,
+      "note": " [dupe-fix: replaced shared URL]",
+      "alt_source": "Metropolitan Museum of Art (DT222199)"
+    },
+    {
+      "id": "portrait.burr-aaron",
+      "title": "Aaron Burr (James Van Dyck)",
+      "primary_url": "https://images.metmuseum.org/CRDImages/ad/original/APS6780.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/8/85/John_Vanderlyn_-_Official_Portrait_of_Vice_President_Aaron_Burr.jpg",
+      "source": "met",
+      "verified": true
+    },
+    {
+      "id": "portrait.washington-george",
+      "title": "George Washington (Gilbert Stuart)",
+      "primary_url": null,
+      "alt_url": "https://images.metmuseum.org/CRDImages/ad/original/ap88.18.jpg",
+      "source": "met",
+      "verified": true,
+      "note": " [dupe-fix: replaced shared URL]",
+      "alt_source": "Metropolitan Museum of Art (American Wing)"
+    },
+    {
+      "id": "portrait.jay-john",
+      "title": "John Jay (Asher B. Durand)",
+      "primary_url": "https://images.metmuseum.org/CRDImages/dp/original/DP837785.jpg",
+      "alt_url": "https://openaccess-cdn.clevelandart.org/1917.707/1917.707_print.jpg",
+      "source": "met",
+      "verified": true,
+      "alt_source": "Cleveland Museum of Art (Albert Rosenthal, 1887 etching of John Jay)",
+      "note": " [1024px fallback: 1024px fallback; non-Met portrait of John Jay]"
+    },
+    {
+      "id": "portrait.franklin-benjamin",
+      "title": "Benjamin Franklin (Duplessis)",
+      "primary_url": "https://images.metmuseum.org/CRDImages/ep/original/DP-1255-001.jpg",
+      "alt_url": "https://images.metmuseum.org/CRDImages/ad/original/DP-1078-001.jpg",
+      "source": "Metropolitan Museum of Art (European Paintings, acc. 49.7.38?)",
+      "verified": true
+    },
+    {
+      "id": "portrait.adams-abigail",
+      "title": "Abigail Adams (Gilbert Stuart)",
+      "primary_url": "https://images.metmuseum.org/CRDImages/ad/original/DP-43516-001.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Gilbert_Stuart%2C_Abigail_Smith_Adams_%28Mrs._John_Adams%29%2C_1800-1815%2C_NGA_42934.jpg",
+      "source": "Metropolitan Museum of Art (DP-43516)",
+      "verified": true
+    },
+    {
+      "id": "portrait.genet-edmond",
+      "title": "Edmond-Charles Gen\u00eat, French minister to the U.S.",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Edmond-Charles_Gen%C3%AAt.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Edmond_Charles_Genet_%281763-1834%29.jpg",
+      "source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "portrait.pickering-timothy",
+      "title": "Timothy Pickering, Secretary of State (Rembrandt Peale)",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Timothy_Pickering%2C_Peale.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Timothy_Pickering_Gilbert_Stuart.jpg",
+      "source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "portrait.monroe-james",
+      "title": "James Monroe (Gilbert Stuart)",
+      "primary_url": null,
+      "alt_url": "https://api.nga.gov/iiif/40183c87-295e-4b62-9e46-b34e7603d6fb/full/!2000,2000/0/default.jpg",
+      "source": "met",
+      "verified": true,
+      "note": " [dupe-fix: replaced shared URL]",
+      "alt_source": "National Gallery of Art (Gibbs-Coolidge Collection)"
+    },
+    {
+      "id": "event.constellation-vs-insurgente",
+      "title": "USS Constellation captures the French frigate L'Insurgente, Feb 9, 1799 (NARA)",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Battle_between_U.S._frigate_Constellation_and_French_frigate_L%27Insurgente%2C_in_the_Naval_War_with_France%2C_February_1799._-_NARA_-_512908.tif",
+      "alt_url": "https://tile.loc.gov/storage-services/service/pnp/ppmsca/39700/39730r.jpg",
+      "source": "nara",
+      "verified": true
+    },
+    {
+      "id": "event.lyon-griswold-brawl",
+      "title": "The Lyon\u2013Griswold brawl on the House floor, 1798 (contemporary cartoon)",
+      "primary_url": "https://images.metmuseum.org/CRDImages/dp/original/DP876932.jpg",
+      "alt_url": "https://tile.loc.gov/storage-services/service/pnp/ppmsca/31800/31832r.jpg",
+      "source": "Metropolitan Museum of Art (DP876932)",
+      "verified": true
+    },
+    {
+      "id": "event.property-protected",
+      "title": "\u201cProperty Protected \u00e0 la Fran\u00e7oise\u201d \u2014 1798 anti-French cartoon",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Property_protected-%C3%A0_la_Fran%C3%A7oise_LCCN93509853.jpg",
+      "alt_url": "https://tile.loc.gov/storage-services/service/pnp/ppmsca/31100/31156r.jpg",
+      "source": "loc",
+      "verified": true
+    },
+    {
+      "id": "event.bennington-1798",
+      "title": "View of Bennington, Vermont (Ralph Earl, 1798) \u2014 Haswell\u2019s town",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/View_of_Bennington_by_Ralph_Earl%2C_1798%2C_oil_on_canvas_-_Bennington_Museum_-_Bennington%2C_VT_-_DSC08519.JPG",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/8/87/View_of_Bennington%2C_by_Ralph_Earl_%281798%29.jpg",
+      "source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "event.congress-hall",
+      "title": "Congress Hall, Philadelphia \u2014 U.S. Capitol 1790\u20131800",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Congress_Hall_exterior.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/9/97/Congress_Hall_-_Philadelphia_%282642813566%29.jpg",
+      "source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "event.peace-medal-1801",
+      "title": "Jefferson Indian Peace Medal, 1801 (Smithsonian)",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Silver_peace_medal%2C_1801%2C_issued_under_President_Thomas_Jefferson_and_given_to_an_Osage_chieftain_-_National_Museum_of_American_History_-_DSC06195.JPG",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Thomas_Jefferson_Peace_Medal.jpg",
+      "source": "smithsonian",
+      "verified": true
+    },
+    {
+      "id": "event.birch-war-preparation",
+      "title": "\u201cPreparation for War to Defend Commerce\u201d (William Birch, 1799)",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/6/66/Preparation_for_War_to_defend_Commerce_Birch%27s_Views_Plate_29.jpg",
+      "alt_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Preparation_for_War_to_defend_Commerce_Birch%27s_Views_Plate_29.jpg/1920px-Preparation_for_War_to_defend_Commerce_Birch%27s_Views_Plate_29.jpg",
+      "source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "event.marines-french-prisoners",
+      "title": "U.S. Marines escorting French prisoners (Quasi-War)",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/United_States_Marine_escorting_French_prisoners.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/United_States_Marine_escorting_French_prisoners.jpg",
+      "source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "event.constellation-painting",
+      "title": "USS Constellation vs. L\u2019Insurgente (painting)",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/USSConstellationVsInsurgente.jpg",
+      "alt_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/USSConstellationVsInsurgente.jpg/1920px-USSConstellationVsInsurgente.jpg",
+      "source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "event.mount-vernon-ship",
+      "title": "American merchant ship Mount Vernon of Salem, 1799 (M. F. Corn\u00e8)",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/9/94/1799_ship_MountVernon_of_Salem_byMFCorne.png",
+      "alt_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/1799_ship_MountVernon_of_Salem_byMFCorne.png/1920px-1799_ship_MountVernon_of_Salem_byMFCorne.png",
+      "source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "document.sedition-act-1798",
+      "title": "The Sedition Act, July 14, 1798 (broadside)",
+      "primary_url": "https://archive.org/download/sim_united-states-united-states-statutes-at-large_1789-1799_1/page/n717.jpg",
+      "alt_url": "https://tile.loc.gov/image-services/iiif/public:gdcmassbookdig:alienseditionlaw00virg:alienseditionlaw00virg_0009/full/pct:100/0/default.jpg",
+      "source": "Internet Archive (U.S. Statutes at Large, Vol. 1, 1789-1799, microfilm scan)",
+      "verified": true
+    },
+    {
+      "id": "document.alien-enemies-act-1798",
+      "title": "\u201cAn Act Respecting Alien Enemies,\u201d July 6, 1798",
+      "primary_url": "https://archive.org/download/sim_united-states-united-states-statutes-at-large_1789-1799_1/page/n698.jpg",
+      "alt_url": "https://tile.loc.gov/image-services/iiif/public:gdcmassbookdig:alienseditionlaw00virg:alienseditionlaw00virg_0009/full/pct:100/0/default.jpg",
+      "source": "Internet Archive (U.S. Statutes at Large, Vol. 1, 1789-1799, microfilm scan)",
+      "verified": true
+    },
+    {
+      "id": "document.alien-friends-act-1798",
+      "title": "\u201cAn Act Concerning Aliens\u201d (Alien Friends Act), June 25, 1798",
+      "primary_url": "https://archive.org/download/sim_united-states-united-states-statutes-at-large_1789-1799_1/page/n691.jpg",
+      "alt_url": "https://tile.loc.gov/image-services/iiif/public:gdcmassbookdig:alienseditionlaw00virg:alienseditionlaw00virg_0009/full/pct:100/0/default.jpg",
+      "source": "Internet Archive (U.S. Statutes at Large, Vol. 1, 1789-1799, microfilm scan)",
+      "verified": true
+    },
+    {
+      "id": "document.naturalization-act-1798",
+      "title": "The Naturalization Act, June 18, 1798 (14-year rule)",
+      "primary_url": "https://archive.org/download/sim_united-states-united-states-statutes-at-large_1789-1799_1/page/n687.jpg",
+      "alt_url": "https://archive.org/download/sim_united-states-united-states-statutes-at-large_1789-1799_1/page/n688.jpg",
+      "source": "Internet Archive (U.S. Statutes at Large, Vol. 1, 1789-1799, microfilm scan)",
+      "verified": true,
+      "alt_source": "Internet Archive (U.S. Statutes at Large, Vol. 1, 1789-1799, microfilm scan)"
+    },
+    {
+      "id": "document.kentucky-resolutions-1798",
+      "title": "Kentucky Resolutions, Nov 10, 1798 (broadside)",
+      "primary_url": "https://tile.loc.gov/storage-services/service/rbc/rbpe/rbpe02/rbpe021/02101700/001dq.gif",
+      "alt_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Kentucky_Resolutions_of_1798.djvu/page1-1920px-Kentucky_Resolutions_of_1798.djvu.jpg",
+      "source": "loc",
+      "verified": true
+    },
+    {
+      "id": "document.virginia-resolutions-1798",
+      "title": "Virginia Resolutions, Dec 21, 1798 (broadside)",
+      "primary_url": "https://tile.loc.gov/storage-services/service/rbc/rbpe/rbpe18/rbpe180/18001600/001dq.gif",
+      "alt_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Contemporary_Opinion_of_the_Virginia_and_Kentucky_Resolutions%2C_p2.djvu/page1-1280px-Contemporary_Opinion_of_the_Virginia_and_Kentucky_Resolutions%2C_p2.djvu.jpg",
+      "source": "loc",
+      "verified": true
+    },
+    {
+      "id": "document.bill-of-rights-1791",
+      "title": "The Bill of Rights (engrossed, National Archives)",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/The_U.S._Bill_of_Rights_%283679495252%29.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Bill_of_Rights_-_DPLA_-_a65f6d0b6210c18d17c596908ebcf270_%28page_1%29.jpg",
+      "source": "nara",
+      "verified": true
+    },
+    {
+      "id": "document.constitution-1787",
+      "title": "The U.S. Constitution \u2014 Preamble (National Archives)",
+      "primary_url": "https://archive.org/download/bim_eighteenth-century_constitution-the-cons_united-states_1787/page/n2.jpg",
+      "alt_url": "https://archive.org/download/bim_eighteenth-century_constitution-the-cons_united-states_1787/page/n4.jpg",
+      "source": "Internet Archive (1787 printing of the U.S. Constitution)",
+      "verified": true,
+      "alt_source": "Internet Archive (1787 printing of the U.S. Constitution)"
+    },
+    {
+      "id": "document.jays-treaty-1794",
+      "title": "Senate resolution on Jay\u2019s Treaty, Nov 19, 1794",
+      "primary_url": "https://archive.org/download/us_stat_8/page/n130.jpg",
+      "alt_url": "https://archive.org/download/us_stat_8/page/n131.jpg",
+      "source": "Internet Archive (U.S. Statutes at Large, Vol. 8: Treaties)",
+      "verified": true,
+      "alt_source": "Internet Archive (U.S. Statutes at Large, Vol. 8: Treaties)"
+    },
+    {
+      "id": "document.treaty-alliance-1778",
+      "title": "Franco-American Treaty of Alliance, Feb 6, 1778",
+      "primary_url": "https://archive.org/download/us_stat_8/page/n20.jpg",
+      "alt_url": "https://archive.org/download/us_stat_8/page/n21.jpg",
+      "source": "Internet Archive (U.S. Statutes at Large, Vol. 8: Treaties)",
+      "verified": true,
+      "alt_source": "Internet Archive (U.S. Statutes at Large, Vol. 8: Treaties)"
+    },
+    {
+      "id": "document.farewell-address-1796",
+      "title": "Washington\u2019s Farewell Address, Sept 17, 1796",
+      "primary_url": "https://archive.org/download/washingtonsfarew02wash/page/n32.jpg",
+      "alt_url": "https://archive.org/download/washingtonsfarew02wash/page/n33.jpg",
+      "source": "Internet Archive (Washington's Farewell Address, 1900 Ford edition)",
+      "verified": true,
+      "alt_source": "Internet Archive (Washington's Farewell Address, 1900 Ford edition)"
+    },
+    {
+      "id": "document.virginia-debates-1798",
+      "title": "Debates in the Virginia House of Delegates on the Alien and Sedition Laws, Dec 1798",
+      "primary_url": "https://archive.org/download/alienseditionlaw00virg/page/n9.jpg",
+      "alt_url": "https://tile.loc.gov/image-services/iiif/public:gdcmassbookdig:alienseditionlaw00virg:alienseditionlaw00virg_0009/full/pct:100/0/default.jpg",
+      "source": "archive.org",
+      "verified": true
+    },
+    {
+      "id": "document.articles-of-confederation",
+      "title": "The Articles of Confederation (engrossed)",
+      "primary_url": "https://archive.org/download/sim_united-states-united-states-statutes-at-large_1789-1799_1/page/n126.jpg",
+      "alt_url": "https://archive.org/download/sim_united-states-united-states-statutes-at-large_1789-1799_1/page/n127.jpg",
+      "source": "Internet Archive (U.S. Statutes at Large, Vol. 1, 1789-1799)",
+      "verified": true,
+      "alt_source": "Internet Archive (U.S. Statutes at Large, Vol. 1, 1789-1799)"
+    },
+    {
+      "id": "map.us-1795",
+      "title": "Map of the United States, 1795 (Samuel Lewis)",
+      "primary_url": "https://archive.org/download/dr_a-map-of-the-united-states-0887001/0887001.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/A_Map_of_the_United_States-_compiled_chiefly_from_The_State_Maps%2C_and_other_Authentic_Information%2C_by_Saml._Lewis_1795._%28IA_dr_a-map-of-the-united-states-compiled-chiefly-from-the-state-maps-and-other-00864074%29.jpg",
+      "source": "David Rumsey Map Collection via Internet Archive",
+      "verified": true
+    },
+    {
+      "id": "map.philadelphia-1790s",
+      "title": "Plan of Philadelphia and environs, 1790s",
+      "primary_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd382:g3824:g3824p:ct001369/full/!2000,2000/0/default.jpg",
+      "alt_url": "https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:z603vt16z/full/!2000,2000/0/default.jpg",
+      "source": "Library of Congress (GMD)",
+      "verified": true,
+      "alt_source": "Norman B. Leventhal Map & Education Center / Digital Commonwealth"
+    },
+    {
+      "id": "map.west-indies-1796",
+      "title": "Map of the West Indies, 1796 \u2014 Quasi-War theater",
+      "primary_url": "https://archive.org/download/dr_an-accurate-map-of-the-west-indies-with-the-adjacent-coast-of-america-1796-00024024/00024024.jpg",
+      "alt_url": "https://archive.org/download/dr_a-chart-of-the-west-indies-from-the-latest-marine-journals-and-surveys-w-00014025/00014025.jpg",
+      "source": "David Rumsey Map Collection via Internet Archive",
+      "verified": true,
+      "alt_source": "David Rumsey Map Collection via Internet Archive"
+    },
+    {
+      "id": "map.paris-1798",
+      "title": "Paris divided into 12 municipalities, 1798",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Plan_de_la_ville_et_faubourg_de_Paris_divis%C3%A9_en_12_municipalit%C3%A9s%2C_1798_-_Gallica.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Atlas_des_anciens_plans_de_Paris_-_Paris_de_1789_%C3%A0_1798_-_BHVP.jpg",
+      "source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "map.kentucky",
+      "title": "Map of Kentucky with adjoining territories, c. 1790s",
+      "primary_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd395:g3950:g3950:ct002137/full/!2000,2000/0/default.jpg",
+      "alt_url": "https://cdn1.historyit.com/iiif/2/5f34291499c4a6.60628694/66aba27ae653b7.56339732.jpg/full/!2000,2000/0/default.jpg",
+      "source": "Library of Congress (GMD)",
+      "verified": true,
+      "alt_source": "Osher Map Library and Smith Center for Cartographic Education"
+    },
+    {
+      "id": "map.atlantic",
+      "title": "Chart of the Atlantic or Western Ocean (N. Hemisphere)",
+      "primary_url": "https://archive.org/download/dr_a-new-and-accurate-chart-of-the-vast-atlantic-or-western-ocean-12434011/12434011.jpg",
+      "alt_url": "https://archive.org/download/dr_chart-of-the-north-atlantic-ocean-from-the-equator-to-65-north-latitude-4611000/4611000.jpg",
+      "source": "David Rumsey Map Collection via Internet Archive",
+      "verified": true,
+      "alt_source": "David Rumsey Map Collection via Internet Archive"
+    },
+    {
+      "id": "map.europe-1798",
+      "title": "Strategic situation of Europe, 1798 (French Revolutionary Wars)",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Strategic_Situation_of_Europe_1798.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Strategic_Situation_of_Europe_1798.jpg",
+      "source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "map.vermont",
+      "title": "Map of the state of Vermont, c. 1790s",
+      "primary_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd375:g3750:g3750:ct008130/full/!2000,2000/0/default.jpg",
+      "alt_url": "https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:6108vt78j/full/!2000,2000/0/default.jpg",
+      "source": "Library of Congress (GMD)",
+      "verified": true,
+      "alt_source": "Digital Commonwealth / American Antiquarian Society"
+    },
+    {
+      "id": "map.world-1794",
+      "title": "Dunn\u2019s wall map of the world in hemispheres, 1794",
+      "primary_url": "https://archive.org/download/dr_a-general-map-of-the-world-or-terraqueous-globe-with-all-the-new-discoveri-2310003/2310003.jpg",
+      "alt_url": "https://archive.org/download/dr_a-general-map-of-the-world-or-terraqueous-globe-with-all-the-new-discoveri-00424001/00424001.jpg",
+      "source": "David Rumsey Map Collection via Internet Archive",
+      "verified": true,
+      "alt_source": "David Rumsey Map Collection via Internet Archive"
+    },
+    {
+      "id": "map.kentucke-1784",
+      "title": "Filson\u2019s map of Kentucke, 1784",
+      "primary_url": "https://explorekyhistory.ky.gov/files/original/fba0478974a705e9c40e5b000cabc113.jpg",
+      "alt_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/This_map_of_Kentucke%2C_LOC_73691819.jpg/1920px-This_map_of_Kentucke%2C_LOC_73691819.jpg",
+      "source": "Kentucky Historical Society via ExploreKYHistory (Omeka)",
+      "verified": true,
+      "note": " [1024px fallback: 1024px fallback; Filson 1784 Kentucke map, KHS copy (differs from LOC copy)]"
+    },
+    {
+      "id": "object.printing-press",
+      "title": "Common press (Benjamin Franklin Museum) \u2014 the Republican press at work",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Printing_Press_in_Benjamin_Franklin_Museum.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/James_Franklin%27s_Ramage_Press.jpg",
+      "source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "object.flag-15star",
+      "title": "U.S. flag, 15 stars (1795\u20131818)",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/15_star_American_flag_%281795%29.png",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Flag_of_the_United_States_%281795-1818%29.svg",
+      "source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "object.coin-1798-dollar",
+      "title": "Draped Bust dollar, 1798",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/3/30/1798_Draped_Bust_Dollar.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/NNC-US-1798-%241-Draped_bust_%28heraldic_eagle%29.jpg",
+      "source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "object.naval-cannon",
+      "title": "18th-century naval cannon and tools",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/18th_century_2_pound_cannon_and_tools.jpg",
+      "alt_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/18th_century_2_pound_cannon_and_tools.jpg/1920px-18th_century_2_pound_cannon_and_tools.jpg",
+      "source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "object.musket-1795",
+      "title": "Springfield Model 1795 musket (Smithsonian)",
+      "primary_url": "https://d1ldvf68ux039x.cloudfront.net/thumbs/photos/2507/9150157/2000w_q95.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Model_1795_Musket_Display.jpg",
+      "source": "U.S. Marine Corps / DVIDS (National Museum of the Marine Corps)",
+      "verified": true,
+      "note": " [1024px fallback: 1024px fallback; public-domain USMC photo of Springfield Model 1795 flintlock musket]"
+    },
+    {
+      "id": "object.newspaper-aurora",
+      "title": "Aurora General Advertiser (Bache\u2019s Republican paper), Jan 9, 1805",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/%22Fredericksburgh%22_Aurora_General_Advertiser%2C_Philadelphia%2C_January_9%2C_1805.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/%22Fredericksburgh%22_Aurora_General_Advertiser%2C_Philadelphia%2C_January_9%2C_1805.jpg",
+      "source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "object.newspaper-gazette-us",
+      "title": "Gazette of the United States (Federalist paper), Aug 29, 1798",
+      "primary_url": "https://tile.loc.gov/image-services/iiif/service:ndnp:dlc:batch_dlc_napolean_ver01:data:sn83025881:print:1798082901:0001/full/pct:100/0/default.jpg",
+      "alt_url": "https://tile.loc.gov/image-services/iiif/service:ndnp:dlc:batch_dlc_napolean_ver01:data:sn83025881:print:1798061601:0001/full/pct:100/0/default.jpg",
+      "source": "loc",
+      "verified": true
+    },
+    {
+      "id": "object.newspaper-nh-gazette",
+      "title": "New-Hampshire Gazette, July 10, 1798",
+      "primary_url": "https://tile.loc.gov/image-services/iiif/service:ndnp:nhd:batch_nhd_avalon_ver02:data:sn83025588:00517010765:1798071001:0531/full/pct:100/0/default.jpg",
+      "alt_url": "https://tile.loc.gov/image-services/iiif/service:ndnp:nhd:batch_nhd_avalon_ver02:data:sn83025588:00517010765:1798110701:0599/full/pct:100/0/default.jpg",
+      "source": "loc",
+      "verified": true
+    },
+    {
+      "id": "object.cockade-tricolor",
+      "title": "French tricolor cockade (revolutionary symbol)",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Tricolour_Cockade.svg",
+      "alt_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Tricolour_Cockade.svg/1920px-Tricolour_Cockade.svg.png",
+      "source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "object.french-coin-2sols",
+      "title": "French 2-sols coin, 1792 (revolutionary currency)",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/France_-_French_Revolution%2C_Clemanson_Fabrique_in_Lyon%2C_1792%2C_2_Sols.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/France_-_French_Revolution%2C_Clemanson_Fabrique_in_Lyon%2C_1792%2C_2_Sols.jpg",
+      "source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "object.inaugural-medal-1801",
+      "title": "Jefferson inaugural medal, 1801",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/1801_Thomas_Jefferson_Inaugural_Medal%2C_Silver%2C_MS62_NGC.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/1801_Thomas_Jefferson_Inaugural_Medal%2C_Silver%2C_MS62_NGC.jpg",
+      "source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "object.battle-diagram-1799",
+      "title": "Diagram of the Constellation\u2013Insurgente action, Feb 9, 1799",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/DiagramofAction9Feb1799.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/DiagramofAction9Feb1799.jpg",
+      "source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "event.mortefontaine-signing",
+      "title": "Signing of the Treaty of Mortefontaine, Sept 30, 1800 (V.-J. Adam)",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/0/04/The_Signing_of_the_Treaty_of_Mortefontaine%2C_30th_September_1800_by_Victor-Jean_Adam.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/0/04/The_Signing_of_the_Treaty_of_Mortefontaine%2C_30th_September_1800_by_Victor-Jean_Adam.jpg",
+      "source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "event.french-naval-combat",
+      "title": "French view of a Quasi-War naval combat",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Combat_naval_pendant_la_quasi_guerre.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Combat_naval_pendant_la_quasi_guerre.jpg",
+      "source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "portrait.washington-williamstown",
+      "title": "George Washington (Gilbert Stuart, Williamstown portrait)",
+      "primary_url": "https://api.nga.gov/iiif/c7e02ea7-3537-4663-8d2b-27c31f0ba3a1/full/!2000,2000/0/default.jpg",
+      "alt_url": "https://api.nga.gov/iiif/07060ee8-5641-4876-a633-5fd0ac616a35/full/!2000,2000/0/default.jpg",
+      "source": "National Gallery of Art (NGA 56916, Gibbs-Coolidge)",
+      "verified": true,
+      "alt_source": "National Gallery of Art (NGA 42938)"
+    },
+    {
+      "id": "portrait.paterson-william",
+      "title": "Justice William Paterson (presided at Haswell\u2019s trial)",
+      "primary_url": "https://iiif.nypl.org/iiif/2/421157/full/!2000,2000/0/default.jpg",
+      "alt_url": "https://iiif.nypl.org/iiif/2/421163/full/!2000,2000/0/default.jpg",
+      "source": "New York Public Library",
+      "verified": true,
+      "alt_source": "New York Public Library"
+    },
+    {
+      "id": "portrait.adams-1821",
+      "title": "John Adams in 1821 (Gilbert Stuart, National Portrait Gallery)",
+      "primary_url": "https://api.nga.gov/iiif/46052f6d-93b8-455c-987f-3817781b6c49/full/!2000,2000/0/default.jpg",
+      "alt_url": "https://api.nga.gov/iiif/6689f0bd-101a-4310-86cd-022ef4b9da1e/full/!2000,2000/0/default.jpg",
+      "source": "National Gallery of Art",
+      "verified": true,
+      "alt_source": "National Gallery of Art (Gibbs-Coolidge Collection)"
+    },
+    {
+      "id": "portrait.jefferson-peale-alt",
+      "title": "Thomas Jefferson (Rembrandt Peale, 1800 \u2014 alternate)",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Thomas_Jefferson_by_Rembrandt_Peale%2C_1800.jpg",
+      "alt_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Thomas_Jefferson_by_Rembrandt_Peale%2C_1800.jpg/1920px-Thomas_Jefferson_by_Rembrandt_Peale%2C_1800.jpg",
+      "source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "portrait.hamilton-1792",
+      "title": "Alexander Hamilton (John Trumbull, 1792)",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/John_Trumbull_-_Alexander_Hamilton_-_Google_Art_Project.jpg",
+      "alt_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/John_Trumbull_-_Alexander_Hamilton_-_Google_Art_Project.jpg/1920px-John_Trumbull_-_Alexander_Hamilton_-_Google_Art_Project.jpg",
+      "source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "portrait.madison-stuart-alt",
+      "title": "James Madison (Gilbert Stuart \u2014 alternate)",
+      "primary_url": "https://api.nga.gov/iiif/ab7f71b8-00f6-408f-847a-1ae2986be106/full/!2000,2000/0/default.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/a/af/James_Madison_by_Gilbert_Stuart_%28cropped%29.jpg",
+      "source": "National Gallery of Art (Gibbs-Coolidge Collection)",
+      "verified": true
+    },
+    {
+      "id": "portrait.gerry-mezzotint",
+      "title": "Elbridge Gerry (John Raphael Smith mezzotint, 1811, NPG)",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/6/60/Elbridge_Gerry_by_John_Raphael_Smith%2C_1811%2C_mezzotint_on_paper%2C_from_the_National_Portrait_Gallery_-_NPG-NPG_2011_140Gerry-000002.jpg",
+      "alt_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Elbridge_Gerry_by_John_Raphael_Smith%2C_1811%2C_mezzotint_on_paper%2C_from_the_National_Portrait_Gallery_-_NPG-NPG_2011_140Gerry-000002.jpg/1920px-Elbridge_Gerry_by_John_Raphael_Smith%2C_1811%2C_mezzotint_on_paper%2C_from_the_National_Portrait_Gallery_-_NPG-NPG_2011_140Gerry-000002.jpg",
+      "source": "smithsonian",
+      "verified": true
+    },
+    {
+      "id": "portrait.abigail-schussele",
+      "title": "Abigail Adams (Christian Schussele, after Stuart)",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Abigail_Adams_by_Christian_Schussele_detail.jpg",
+      "alt_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Abigail_Adams_by_Christian_Schussele_detail.jpg/1920px-Abigail_Adams_by_Christian_Schussele_detail.jpg",
+      "source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "portrait.pinckney-trumbull-full",
+      "title": "Charles Cotesworth Pinckney, full-length (John Trumbull)",
+      "primary_url": "https://ids.si.edu/ids/deliveryService?id=NPG-NPG_2007_212&max=2000",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Charles_Cotesworth_Pinckney%2C_1746-1825%2C_full-length_portrait%2C_standing%2C_facing_right_LCCN2005685171.jpg",
+      "source": "Smithsonian National Portrait Gallery (NPG 2007.212)",
+      "verified": true
+    },
+    {
+      "id": "portrait.jay-stuart-alt",
+      "title": "John Jay (Gilbert Stuart \u2014 alternate)",
+      "primary_url": "https://api.nga.gov/iiif/accd5dc0-1c13-4f97-af43-ea9f6bdfbb16/full/!2000,2000/0/default.jpg",
+      "alt_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Gilbert_Stuart_-_John_Jay_-_Google_Art_Project.jpg/1920px-Gilbert_Stuart_-_John_Jay_-_Google_Art_Project.jpg",
+      "source": "National Gallery of Art (NGA 75023)",
+      "verified": true
+    },
+    {
+      "id": "document.sedition-statutes-page",
+      "title": "Sedition Act as printed in the Statutes at Large",
+      "primary_url": "https://archive.org/download/sim_united-states-united-states-statutes-at-large_1789-1799_1/page/n718.jpg",
+      "alt_url": "https://archive.org/download/sim_united-states-united-states-statutes-at-large_1789-1799_1/page/n717.jpg",
+      "source": "Internet Archive (U.S. Statutes at Large, Vol. 1, 1789-1799, microfilm scan)",
+      "verified": true,
+      "alt_source": "Internet Archive (U.S. Statutes at Large, Vol. 1, 1789-1799, microfilm scan)"
+    }
+  ]
 }

@@ -1,975 +1,693 @@
 {
- "lesson": "u3e5",
- "image_count": 96,
- "images": [
-  {
-   "id": "portrait.washington-stuart",
-   "title": "George Washington, Gilbert Stuart, 1797",
-   "primary_url": "https://images.metmuseum.org/CRDImages/ad/original/DT62.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Gilbert_Stuart_-_George_Washington_-_Google_Art_Project.jpg",
-   "source": "met",
-   "alt_source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "portrait.thomas-gage",
-   "title": "General Thomas Gage",
-   "primary_url": "https://tile.loc.gov/storage-services/service/pnp/cph/3a40000/3a45000/3a45400/3a45432r.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/John_Singleton_Copley_-_General_Thomas_Gage_-_Google_Art_Project.jpg",
-   "source": "loc",
-   "alt_source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "portrait.horatio-gates",
-   "title": "Horatio Gates, Gilbert Stuart",
-   "primary_url": "https://images.metmuseum.org/CRDImages/ad/original/DT2041.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Horatio_Gates_MET_DT2041.jpg",
-   "source": "met",
-   "alt_source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "portrait.benedict-arnold",
-   "title": "Benedict Arnold",
-   "primary_url": "https://tile.loc.gov/storage-services/service/pnp/cph/3a40000/3a45000/3a45400/3a45419r.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Benedict_Arnold_1.jpg",
-   "source": "loc",
-   "alt_source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "portrait.john-burgoyne",
-   "title": "General John Burgoyne, Joshua Reynolds",
-   "primary_url": "https://tile.loc.gov/storage-services/service/pnp/cph/3a40000/3a45000/3a45500/3a45552r.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/General_John_Burgoyne_-_Reynolds_c._1766.jpg",
-   "source": "loc",
-   "alt_source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "portrait.thomas-paine",
-   "title": "Thomas Paine",
-   "primary_url": "https://tile.loc.gov/storage-services/service/pnp/cph/3a40000/3a49000/3a49400/3a49476r.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Laurent_Dabos_%E2%80%93_Thomas_Paine_%E2%80%93_Google_Art_Project.jpg",
-   "source": "loc",
-   "alt_source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "portrait.von-steuben",
-   "title": "Baron von Steuben",
-   "primary_url": "https://tile.loc.gov/storage-services/service/pnp/cph/3a40000/3a45000/3a45600/3a45678r.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/d/da/Major_General_Friedrich_Wilhelm_Augustus_Baron_von_Steuben_by_Ralph_Earl.jpeg",
-   "source": "loc",
-   "alt_source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "portrait.franklin-duplessis",
-   "title": "Benjamin Franklin, Joseph Duplessis",
-   "primary_url": "https://tile.loc.gov/storage-services/service/pnp/cph/3a40000/3a42000/3a42200/3a42212r.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Joseph_Siffrein_Duplessis_-_Benjamin_Franklin_-_Google_Art_Project.jpg",
-   "source": "loc",
-   "alt_source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "portrait.rochambeau",
-   "title": "Comte de Rochambeau",
-   "primary_url": "https://tile.loc.gov/storage-services/service/pnp/cph/3c20000/3c21000/3c21900/3c21988v.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Jean-Baptiste_Donatien_de_Vimeur_de_Rochambeau.JPG",
-   "source": "loc",
-   "alt_source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "portrait.lafayette-peale",
-   "title": "Marquis de Lafayette, Rembrandt Peale",
-   "primary_url": "https://images.metmuseum.org/CRDImages/ad/original/DT2057.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Marquis_de_Lafayette_2.jpg",
-   "source": "met",
-   "alt_source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "portrait.de-grasse",
-   "title": "Admiral Fran\u00e7ois de Grasse",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Comte_de_Grasse_de_profil.jpeg",
-   "alt_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd388:g3884:g3884y:ar146100/full/pct:100/0/default.jpg",
-   "source": "wikimedia",
-   "alt_source": "loc",
-   "verified": true
-  },
-  {
-   "id": "portrait.cornwallis",
-   "title": "Charles Cornwallis, Joshua Reynolds",
-   "primary_url": "https://tile.loc.gov/storage-services/service/pnp/cph/3a40000/3a45000/3a45500/3a45538r.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Joshua_Reynolds_%281723-1792%29_-_Charles_Cornwallis_%281738%E2%80%931805%29%2C_Lord_Brome%2C_1st_Marquis_Cornwallis_-_A17_-_Port_Eliot.jpg",
-   "source": "loc",
-   "alt_source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "portrait.nathanael-greene",
-   "title": "Nathanael Greene, Charles Willson Peale",
-   "primary_url": "https://images.metmuseum.org/CRDImages/ad/original/ap24.109.92.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Nathanael_Greene_by_Charles_Willson_Peale.jpg",
-   "source": "met",
-   "alt_source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "portrait.emerson",
-   "title": "Ralph Waldo Emerson, c. 1857",
-   "primary_url": "https://tile.loc.gov/storage-services/service/pnp/pga/01400/01425v.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Ralph_Waldo_Emerson_ca1857_retouched.jpg",
-   "source": "loc",
-   "alt_source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "portrait.george-iii",
-   "title": "King George III",
-   "primary_url": "https://tile.loc.gov/storage-services/service/pnp/pga/03300/03325v.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Thomas_Gainsborough_%281727-88%29_-_George_III_%281738-1820%29_-_RCIN_401406_-_Royal_Collection.jpg",
-   "source": "loc",
-   "alt_source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "portrait.louis-xvi",
-   "title": "Louis XVI, Joseph Duplessis",
-   "primary_url": "https://tile.loc.gov/storage-services/service/pnp/cph/3b40000/3b42000/3b42800/3b42852r.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Mus%C3%A9e_Ingres-Bourdelle_-_Portrait_de_Louis_XVI_-_Joseph-Siffred_Duplessis_-_Joconde06070000102.jpg",
-   "source": "loc",
-   "alt_source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "scene.lexington-doolittle",
-   "title": "The Battle of Lexington, Amos Doolittle, 1775",
-   "primary_url": "https://tile.loc.gov/storage-services/service/pnp/ppmsca/39700/39753v.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/8/82/Plate_I%2C_The_Battle_of_Lexington%2C_Amos_Doolittle_engravings_of_the_Battle_of_Lexington_and_Concord%2C_December_1775%2C_reprint_by_Charles_E._Goodspeed%2C_Boston%2C_1903_-_Concord_Museum_-_Concord%2C_MA_-_DSC05585.JPG",
-   "source": "loc",
-   "alt_source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "scene.concord-doolittle",
-   "title": "A View of the Town of Concord, Amos Doolittle, 1775",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Plate_II%2C_A_View_of_the_Town_of_Concord%2C_Amos_Doolittle_engravings_of_the_Battle_of_Lexington_and_Concord%2C_December_1775%2C_reprint_by_Charles_E._Goodspeed%2C_Boston%2C_1903_-_Concord_Museum_-_Concord%2C_MA_-_DSC05584.JPG",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Plate_II%2C_A_View_of_the_Town_of_Concord%2C_Amos_Doolittle_engravings_of_the_Battle_of_Lexington_and_Concord%2C_December_1775%2C_reprint_by_Charles_E._Goodspeed%2C_Boston%2C_1903_-_Concord_Museum_-_Concord%2C_MA_-_DSC05584.JPG",
-   "source": "wikimedia",
-   "alt_source": "loc",
-   "verified": true
-  },
-  {
-   "id": "scene.north-bridge",
-   "title": "The Old North Bridge, Concord",
-   "primary_url": "https://tile.loc.gov/storage-services/service/pnp/pcrd/1a00000/1a06000/1a06000/1a06070v.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Old_North_Bridge%2C_Concord_Massachusetts.jpg",
-   "source": "loc",
-   "alt_source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "scene.minuteman-statue",
-   "title": "Minuteman statue, Concord, by Daniel Chester French",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/French%27s_Concord_Minuteman_statue_%28cropped%29.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/French%27s_Concord_Minuteman_statue_%28cropped%29.jpg",
-   "source": "wikimedia",
-   "alt_source": "loc",
-   "verified": true
-  },
-  {
-   "id": "scene.lexington-green",
-   "title": "Lexington Green and the Captain Parker statue",
-   "primary_url": "https://tile.loc.gov/storage-services/service/pnp/det/4a00000/4a07000/4a07400/4a07467v.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Lexington_Battle_Green%2C_Lexington_MA.jpg",
-   "source": "loc",
-   "alt_source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "scene.bunker-hill-trumbull",
-   "title": "The Death of General Warren at Bunker's Hill, John Trumbull",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/The_Death_of_General_Warren_at_the_Battle_of_Bunker%27s_Hill.jpg",
-   "alt_url": "https://tile.loc.gov/storage-services/service/pnp/det/4a30000/4a31000/4a31300/4a31348v.jpg",
-   "source": "wikimedia",
-   "alt_source": "loc",
-   "verified": true
-  },
-  {
-   "id": "scene.bunker-hill-plan",
-   "title": "A Plan of the Battle of Bunker Hill, June 17, 1775",
-   "primary_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd376:g3764:g3764b:ar305900r/full/pct:100/0/default.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Map_of_the_Battle_of_Bunker_Hill_%28June_17%2C_1775%29.jpg",
-   "source": "loc",
-   "alt_source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "scene.bunker-hill-monument",
-   "title": "Bunker Hill Monument",
-   "primary_url": "https://tile.loc.gov/storage-services/service/pnp/ds/02400/02426v.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Monumento_de_Bunker_Hill%2C_Boston%2C_EE.UU.%2C_2007-08-01_DD_280.jpg",
-   "source": "loc",
-   "alt_source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "scene.bunker-hill-romans",
-   "title": "The Battle at Charlestown, Bernard Romans, 1775",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/5/58/1775_Battle_Charlestown_byBernardRomans.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/1775_Battle_Charlestown_byBernardRomans.jpg",
-   "source": "wikimedia",
-   "alt_source": "loc",
-   "verified": true
-  },
-  {
-   "id": "scene.independence-hall",
-   "title": "Pennsylvania State House (Independence Hall), Philadelphia",
-   "primary_url": "https://tile.loc.gov/storage-services/service/pnp/pcrd/2d00000/2d06000/2d06200/2d06262v.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Exterior_of_the_Independence_Hall%2C_Aug_2019.jpg",
-   "source": "loc",
-   "alt_source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "scene.washington-command-cambridge",
-   "title": "Washington Taking Command at Cambridge, Currier & Ives",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Washington_Taking_Command_of_the_American_Army_%E2%80%93_At_Cambridge%2C_Massachusetts%2C_July_3rd%2C_1775_MET_DP853566.jpg",
-   "alt_url": "https://images.metmuseum.org/CRDImages/dp/original/DP853566.jpg",
-   "source": "wikimedia",
-   "alt_source": "met",
-   "verified": true
-  },
-  {
-   "id": "scene.washington-commission",
-   "title": "Continental Congress to George Washington, June 19, 1775: Commission as Commander in Chief",
-   "primary_url": "https://tile.loc.gov/storage-services/master/mss/mgw/mgw8b/124/0100/0166.jpg",
-   "alt_url": "https://tile.loc.gov/storage-services/service/pnp/cph/3b00000/3b03000/3b03100/3b03168r.jpg",
-   "source": "loc",
-   "alt_source": "loc",
-   "verified": true
-  },
-  {
-   "id": "scene.continental-currency",
-   "title": "Continental currency, 1775",
-   "primary_url": "https://images.metmuseum.org/CRDImages/dp/original/DP-44768-001.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Continental_Currency_%248_banknote_obverse_%28November_29%2C_1775%29.jpg",
-   "source": "met",
-   "alt_source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "scene.declaration-trumbull",
-   "title": "Declaration of Independence, John Trumbull",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/BEP-GIRSCH-Declaration_of_Independence_%28Trumbull%29.jpg",
-   "alt_url": "https://tile.loc.gov/storage-services/service/pnp/pga/07100/07154v.jpg",
-   "source": "wikimedia",
-   "alt_source": "loc",
-   "verified": true
-  },
-  {
-   "id": "scene.washington-crossing-leutze",
-   "title": "Washington Crossing the Delaware, Emanuel Leutze, 1851",
-   "primary_url": "https://images.metmuseum.org/CRDImages/ad/original/DP215410.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Washington_Crossing_the_Delaware_by_Emanuel_Leutze%2C_MMA-NYC%2C_1851.jpg",
-   "source": "met",
-   "alt_source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "scene.trenton-trumbull",
-   "title": "Capture of the Hessians at Trenton, John Trumbull",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/3/31/The_Capture_of_the_Hessians_at_Trenton_December_26_1776.jpeg",
-   "alt_url": "https://tile.loc.gov/storage-services/service/pnp/det/4a30000/4a31000/4a31100/4a31163v.jpg",
-   "source": "wikimedia",
-   "alt_source": "loc",
-   "verified": true
-  },
-  {
-   "id": "scene.princeton-nassau",
-   "title": "Nassau Hall, Princeton",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Cannon_Green_and_Nassau_Hall%2C_Princeton_University.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Cannon_Green_and_Nassau_Hall%2C_Princeton_University.jpg",
-   "source": "wikimedia",
-   "alt_source": "loc",
-   "verified": true
-  },
-  {
-   "id": "scene.trenton-map",
-   "title": "Sketch of the engagement at Trenton, December 26, 1776",
-   "primary_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd381:g3814:g3814t:ar126700/full/pct:100/0/default.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Battle_of_Trenton_Phase3.svg",
-   "source": "loc",
-   "alt_source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "scene.hessian-soldier",
-   "title": "Hessian j\u00e4ger",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Hessian_jager.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Hessian_jager.jpg",
-   "source": "wikimedia",
-   "alt_source": "loc",
-   "verified": true
-  },
-  {
-   "id": "scene.hessian-flag",
-   "title": "Hessian flag, 1776",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Hessian_Mercenary_Flag_%281776%29.png",
-   "alt_url": "https://tile.loc.gov/storage-services/service/pnp/cph/3g00000/3g06000/3g06400/3g06411v.jpg",
-   "source": "wikimedia",
-   "alt_source": "loc",
-   "verified": true
-  },
-  {
-   "id": "scene.saratoga-surrender",
-   "title": "Surrender of General Burgoyne, John Trumbull",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/BEP-GIRSCH-Surrender_of_General_Burgoyne_%28Trumbull%29.jpg",
-   "alt_url": "https://tile.loc.gov/storage-services/service/pnp/ds/17800/17858v.jpg",
-   "source": "wikimedia",
-   "alt_source": "loc",
-   "verified": true
-  },
-  {
-   "id": "scene.saratoga-map",
-   "title": "Map of the Saratoga campaign, 1777",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Saratoga_1777.png",
-   "alt_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd382:g3824:g3824p:ar134300/full/pct:100/0/default.jpg",
-   "source": "wikimedia",
-   "alt_source": "loc",
-   "verified": true
-  },
-  {
-   "id": "scene.saratoga-surrender-print",
-   "title": "Surrender of Burgoyne at Saratoga, contemporary print",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Surrender_of_general_burgoyne_at_saratoga.jpg",
-   "alt_url": "https://images.metmuseum.org/CRDImages/dp/original/DP-44833-001.jpg",
-   "source": "wikimedia",
-   "alt_source": "met",
-   "verified": true
-  },
-  {
-   "id": "scene.saratoga-monument",
-   "title": "Arnold's boot monument, Saratoga battlefield",
-   "primary_url": "https://tile.loc.gov/storage-services/service/pnp/pcrd/2d00000/2d05000/2d05000/2d05050v.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Saratoga_Battlefield_2.jpg",
-   "source": "loc",
-   "alt_source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "scene.freemans-farm",
-   "title": "Battle of Freeman's Farm, troop positions",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/First_Battle_of_Saratoga_1300_Hours.USMA.edu.history.gif",
-   "alt_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd380:g3803:g3803s:ar118200d/full/pct:100/0/default.jpg",
-   "source": "wikimedia",
-   "alt_source": "loc",
-   "verified": true
-  },
-  {
-   "id": "scene.valley-forge-winter",
-   "title": "Valley Forge in winter",
-   "primary_url": "https://tile.loc.gov/storage-services/service/pnp/ds/14000/14029v.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Valley_Forge_cabin.jpg",
-   "source": "loc",
-   "alt_source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "scene.washington-prayer",
-   "title": "Washington at prayer, Valley Forge",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Washington_at_Prayer_Valley_Forge.jpg",
-   "alt_url": "https://tile.loc.gov/storage-services/service/pnp/pga/03900/03965v.jpg",
-   "source": "wikimedia",
-   "alt_source": "loc",
-   "verified": true
-  },
-  {
-   "id": "scene.steuben-drilling",
-   "title": "Baron von Steuben drilling troops at Valley Forge, E.A. Abbey",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Baron_Steuben_drilling_troops_at_Valley_Forge_by_E_A_Abbey.png",
-   "alt_url": "https://tile.loc.gov/storage-services/service/pnp/ds/02000/02099v.jpg",
-   "source": "wikimedia",
-   "alt_source": "loc",
-   "verified": true
-  },
-  {
-   "id": "scene.valley-forge-huts",
-   "title": "Soldiers' hut, Valley Forge",
-   "primary_url": "https://tile.loc.gov/storage-services/service/pnp/gsc/5a09000/5a09400/5a09419r.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Huts%2C_Valley_Forge.jpg",
-   "source": "loc",
-   "alt_source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "scene.franklin-court",
-   "title": "Franklin's reception at the court of France, 1778",
-   "primary_url": "https://tile.loc.gov/storage-services/service/pnp/cph/3a00000/3a04000/3a04400/3a04444r.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Benjamin_Franklin_L.L.D._-_envoy_from_the_American_Congress_to_the_French_Court_LCCN2003675417.jpg",
-   "source": "loc",
-   "alt_source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "scene.treaty-alliance-doc",
-   "title": "Treaty of Alliance with France, 1778",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Franco_American_treaty_of_alliance_6_feb_1778.jpg",
-   "alt_url": "https://tile.loc.gov/storage-services/master/mss/mtj/mtj1/001/0900/0941.jpg",
-   "source": "wikimedia",
-   "alt_source": "loc",
-   "verified": true
-  },
-  {
-   "id": "scene.french-fleet",
-   "title": "French warships in action, American Revolutionary War",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Combat_de_la_Junon_et_la_Gentille_contre_l%27Ardent.jpg",
-   "alt_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd388:g3884:g3884y:ar146100/full/pct:100/0/default.jpg",
-   "source": "wikimedia",
-   "alt_source": "loc",
-   "verified": true
-  },
-  {
-   "id": "scene.yorktown-couder",
-   "title": "Battle of Yorktown, Auguste Couder",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Bataille_de_Yorktown_by_Auguste_Couder.jpg",
-   "alt_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd388:g3884:g3884y:ct009378/full/pct:100/0/default.jpg",
-   "source": "wikimedia",
-   "alt_source": "loc",
-   "verified": true
-  },
-  {
-   "id": "scene.vergennes",
-   "title": "Comte de Vergennes, Charles-Cl\u00e9ment Bervic",
-   "primary_url": "https://images.metmuseum.org/CRDImages/dp/original/DP874377.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Antoine_de_Favray_-_Portrait_of_Charles_Gravier_Count_of_Vergennes_and_French_Ambassador%2C_in_Turkish_Attire_-_Google_Art_Project.jpg",
-   "source": "met",
-   "alt_source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "scene.french-troops-newport",
-   "title": "French troops landing at Newport, July 1780",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Landung_einer_Franz%C3%B6sischen_H%C3%BClfs-Armee_in_America%2C_zu_Rhode_Island%2C_am_11ten_Julius_1780_LCCN2004670207.jpg",
-   "alt_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd377:g3774:g3774n:ar101700/full/pct:100/0/default.jpg",
-   "source": "wikimedia",
-   "alt_source": "loc",
-   "verified": true
-  },
-  {
-   "id": "scene.charleston-siege-map",
-   "title": "Plan of the siege of Charleston, 1780",
-   "primary_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd391:g3914:g3914c:ar155600/full/pct:100/0/default.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Siege_of_Charleston_%281780%29.jpg",
-   "source": "loc",
-   "alt_source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "scene.charleston-view",
-   "title": "Siege of Charleston, Alonzo Chappel",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Alonzo_Chappel_Siege_of_Charleston.jpg",
-   "alt_url": "https://tile.loc.gov/storage-services/service/pnp/pcrd/1a10000/1a13000/1a13400/1a13458v.jpg",
-   "source": "wikimedia",
-   "alt_source": "loc",
-   "verified": true
-  },
-  {
-   "id": "scene.cowpens",
-   "title": "Battle of Cowpens, Frederick Kemmelmeyer",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Frederick_Kemmelmeyer_-_Battle_of_Cowpen_-_1944.106_-_Yale_University_Art_Gallery.jpg",
-   "alt_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd391:g3912:g3912c:ct009836/full/pct:100/0/default.jpg",
-   "source": "wikimedia",
-   "alt_source": "loc",
-   "verified": true
-  },
-  {
-   "id": "scene.guilford-courthouse",
-   "title": "Battle of Guilford Courthouse, 1781",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Battle_of_Guilford_Courthouse_15_March_1781.jpg",
-   "alt_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd390:g3902:g3902g:ct009688/full/pct:100/0/default.jpg",
-   "source": "wikimedia",
-   "alt_source": "loc",
-   "verified": true
-  },
-  {
-   "id": "scene.southern-theater-map",
-   "title": "Map of Cornwallis's southern campaigns",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/1/18/The_Hessians_-_map_for_Cornwallis_southern_campaigns.jpg",
-   "alt_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd381:g3814:g3814p:ar125000/full/pct:100/0/default.jpg",
-   "source": "wikimedia",
-   "alt_source": "loc",
-   "verified": true
-  },
-  {
-   "id": "scene.camden-battle",
-   "title": "Sketch of the Battle of Camden, August 16, 1780",
-   "primary_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd391:g3914:g3914c:ar156500/full/pct:100/0/default.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Battle_of_Camden.jpg",
-   "source": "loc",
-   "alt_source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "scene.yorktown-map",
-   "title": "Map of the siege of Yorktown, 1781",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/US_Army_52415_Siege_of_Yorktown_Map.gif",
-   "alt_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd388:g3884:g3884y:ct009378/full/pct:100/0/default.jpg",
-   "source": "wikimedia",
-   "alt_source": "loc",
-   "verified": true
-  },
-  {
-   "id": "scene.surrender-cornwallis",
-   "title": "Surrender of Lord Cornwallis, John Trumbull",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Surrender_of_Lord_Cornwallis.jpg",
-   "alt_url": "https://tile.loc.gov/storage-services/service/pnp/cph/3a30000/3a39000/3a39900/3a39934r.jpg",
-   "source": "wikimedia",
-   "alt_source": "loc",
-   "verified": true
-  },
-  {
-   "id": "scene.yorktown-siege-french",
-   "title": "Siege of Yorktown, French engraving",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Siege_of_Yortown.jpg",
-   "alt_url": "https://images.metmuseum.org/CRDImages/dp/original/DP877001.jpg",
-   "source": "wikimedia",
-   "alt_source": "met",
-   "verified": true
-  },
-  {
-   "id": "scene.chesapeake-battle",
-   "title": "The sea fight off the Chesapeake, September 5, 1781",
-   "primary_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd388:g3884:g3884y:ar146100/full/pct:100/0/default.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/BattleOfVirginiaCapes.jpg",
-   "source": "loc",
-   "alt_source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "scene.washington-tent",
-   "title": "Washington's headquarters marquee",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Washington%27s_Marquee_Burk_1920_p.172.jpg",
-   "alt_url": "https://tile.loc.gov/storage-services/service/pnp/ppmsca/21500/21580v.jpg",
-   "source": "wikimedia",
-   "alt_source": "loc",
-   "verified": true
-  },
-  {
-   "id": "scene.yorktown-earthworks",
-   "title": "Redoubt on the Yorktown battlefield",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/VIEW_OF_REDOUBT_ON_YORKTOWN_BATTLEFIELD._-_Yorktown_Battlefield_Tour_Roads%2C_Yorktown%2C_York_County%2C_VA_HAER_VA%2C100-YORK.V%2C2-5.tif",
-   "alt_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd388:g3884:g3884y:ct009377/full/pct:100/0/default.jpg",
-   "source": "wikimedia",
-   "alt_source": "loc",
-   "verified": true
-  },
-  {
-   "id": "scene.yorktown-cannon",
-   "title": "Artillery at Yorktown",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Yorktown_VA_NPS_18-pdr_cannon.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Swedish_4-pdr_gun_dolphins_Yorktown.jpg",
-   "source": "wikimedia",
-   "alt_source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "scene.treaty-paris-doc",
-   "title": "Treaty of Paris, 1783",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Treaty_of_Paris_1783_-_last_page_%28hi-res%29.jpg",
-   "alt_url": "https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:02:71:3:wdl_02713:19-2744m/full/pct:100/0/default.jpg",
-   "source": "wikimedia",
-   "alt_source": "loc",
-   "verified": true
-  },
-  {
-   "id": "scene.west-treaty-paris",
-   "title": "The Treaty of Paris, Benjamin West (unfinished), 1783",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Treaty_of_Paris_by_Benjamin_West_1783.jpg",
-   "alt_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd370:g3700:g3700:ar074800/full/pct:100/0/default.jpg",
-   "source": "wikimedia",
-   "alt_source": "loc",
-   "verified": true
-  },
-  {
-   "id": "scene.us-boundaries-1783",
-   "title": "Map of the United States agreeable to the Peace of 1783",
-   "primary_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd370:g3700:g3700:ar074800/full/pct:100/0/default.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/C._1783_United_States.jpg",
-   "source": "loc",
-   "alt_source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "scene.john-adams",
-   "title": "John Adams",
-   "primary_url": "https://tile.loc.gov/storage-services/service/pnp/cph/3c30000/3c32000/3c32300/3c32304v.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/ADAMS%2CJohn-President_%28BEP_engraved_portrait%29.jpg",
-   "source": "loc",
-   "alt_source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "scene.american-crisis",
-   "title": "The American Crisis, No. 1, by Thomas Paine",
-   "primary_url": "https://tile.loc.gov/storage-services/service/pnp/cph/3b00000/3b06000/3b06800/3b06889r.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/The_American_Crisis._by_the_author_of_Common_Sense_%28Thomas_Paine%29_%22These_are_the_times_that_try_men%27s_souls-_the_summer_soldier_and_the_sunshine_patriot_will%2C_in_this_crisis%2C_shrink_from_the_LCCN2005694599.jpg",
-   "source": "loc",
-   "alt_source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "scene.blue-book",
-   "title": "Regulations for the Order and Discipline of the Troops (Blue Book), 1779",
-   "primary_url": "https://tile.loc.gov/image-services/iiif/public:rbc:2006batch30726:0176/full/pct:100/0/default.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Regulations_for_the_order_and_discipline_of_the_troops_of_the_United_States_Fleuron_W029007-5.png",
-   "source": "loc",
-   "alt_source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "scene.brown-bess",
-   "title": "Brown Bess flintlock musket",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Barnett_English_Tower_Brown_Bess_Musket-NMAH-AHB2015q035674.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/7/72/TA_Brown_Bess_Flintlock_Musket-NMAH-AHB2015q035629.jpg",
-   "source": "wikimedia",
-   "alt_source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "scene.powder-horn",
-   "title": "Powder horn",
-   "primary_url": "https://images.metmuseum.org/CRDImages/aa/original/37.131.38_001Sept2014-2.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Powder_Horn_with_Wampum_Shoulder_Belt_MET_AA5.jpg",
-   "source": "met",
-   "alt_source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "scene.colonies-map-1776",
-   "title": "Map of the seat of war between Great Britain and her colonies, 1776",
-   "primary_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd3:g3300:g3300:ar013501/full/pct:100/0/default.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/C._1763-1776_British_Colonies_in_North_America.jpg",
-   "source": "loc",
-   "alt_source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "scene.boston-siege-map",
-   "title": "Map of the environs of Boston, 1775",
-   "primary_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd376:g3764:g3764b:ar089600/full/pct:100/0/default.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Lexington_Concord_Siege_of_Boston_crop.jpg",
-   "source": "loc",
-   "alt_source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "scene.newfoundland-fishery",
-   "title": "Newfoundland cod fishery",
-   "primary_url": "https://tile.loc.gov/storage-services/service/pnp/cph/3c10000/3c17000/3c17900/3c17909v.jpg",
-   "alt_url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Newfoundland_cod-fishery_LCCN97512342.jpg",
-   "source": "loc",
-   "alt_source": "wikimedia",
-   "verified": true
-  },
-  {
-   "id": "historic.u3e5.arnold-hall",
-   "title": "Benedict Arnold after Trumbull: the Saratoga hero before the treason.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Benedict_Arnold._Copy_of_engraving_by_H._B._Hall_after_John_Trumbull%2C_published_1879.png",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Benedict_Arnold._Copy_of_engraving_by_H._B._Hall_after_John_Trumbull%2C_published_1879.png",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "Public domain",
-   "description": "Benedict Arnold after Trumbull: the Saratoga hero before the treason.",
-   "content_type": "image/png",
-   "width": 2444,
-   "height": 3000,
-   "byte_size": "4664090"
-  },
-  {
-   "id": "historic.u3e5.battle-of-lexington",
-   "title": "Amos Doolittle's engraving of the Battle of Lexington, April 19, 1775: minutemen on the green at dawn, eight Americans dead within minutes.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/The_Battle_of_Lexington.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/The_Battle_of_Lexington.jpg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "Public domain",
-   "description": "Amos Doolittle's engraving of the Battle of Lexington, April 19, 1775: minutemen on the green at dawn, eight Americans dead within minutes.",
-   "content_type": "image/jpeg",
-   "width": 4964,
-   "height": 3350,
-   "byte_size": "3791377"
-  },
-  {
-   "id": "historic.u3e5.burgoyne-reynolds",
-   "title": "General John Burgoyne, whose march from Canada collapsed at Saratoga, by Joshua Reynolds.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/General_John_Burgoyne_-_Reynolds_c._1766.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/General_John_Burgoyne_-_Reynolds_c._1766.jpg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "Public domain",
-   "description": "General John Burgoyne, whose march from Canada collapsed at Saratoga, by Joshua Reynolds.",
-   "content_type": "image/jpeg",
-   "width": 6037,
-   "height": 7545,
-   "byte_size": "10406310"
-  },
-  {
-   "id": "historic.u3e5.crisis-museum",
-   "title": "Paine's works at the Museum of the American Revolution: Common Sense and The American Crisis, read to the troops in December 1776.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/6/64/%22Common_Sense%22_by_Thomas_Paine_-_Museum_of_the_American_Revolution_by_Joy_of_Museums.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/%22Common_Sense%22_by_Thomas_Paine_-_Museum_of_the_American_Revolution_by_Joy_of_Museums.jpg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "CC BY-SA 4.0",
-   "description": "Paine's works at the Museum of the American Revolution: Common Sense and The American Crisis, read to the troops in December 1776.",
-   "content_type": "image/jpeg",
-   "width": 1723,
-   "height": 1691,
-   "byte_size": "809540"
-  },
-  {
-   "id": "historic.u3e5.crossing-delaware-leutze",
-   "title": "Emanuel Leutze's Washington Crossing the Delaware: Christmas night 1776, the ice-choked crossing before the dawn attack on Trenton.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Washington_Crossing_the_Delaware_by_Emanuel_Leutze%2C_MMA-NYC%2C_1851.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Washington_Crossing_the_Delaware_by_Emanuel_Leutze%2C_MMA-NYC%2C_1851.jpg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "Public domain",
-   "description": "Emanuel Leutze's Washington Crossing the Delaware: Christmas night 1776, the ice-choked crossing before the dawn attack on Trenton.",
-   "content_type": "image/jpeg",
-   "width": 6004,
-   "height": 3847,
-   "byte_size": "8818370"
-  },
-  {
-   "id": "historic.u3e5.de-grasse-statue",
-   "title": "Statue of the Comte de Grasse: his fleet sealed the Chesapeake.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Le_Bar-sur-Loup_-_Statue_du_comte_de_Grasse_-295.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Le_Bar-sur-Loup_-_Statue_du_comte_de_Grasse_-295.jpg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "CC BY 3.0",
-   "description": "Statue of the Comte de Grasse: his fleet sealed the Chesapeake.",
-   "content_type": "image/jpeg",
-   "width": 2736,
-   "height": 3648,
-   "byte_size": "2847361"
-  },
-  {
-   "id": "historic.u3e5.death-of-warren",
-   "title": "John Trumbull's Death of General Warren at the Battle of Bunker's Hill, June 17, 1775 \u2014 fought on Breed's Hill, not Bunker Hill.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/The_Death_of_General_Warren_at_the_Battle_of_Bunker%27s_Hill.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/The_Death_of_General_Warren_at_the_Battle_of_Bunker%27s_Hill.jpg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "Public domain",
-   "description": "John Trumbull's Death of General Warren at the Battle of Bunker's Hill, June 17, 1775 \u2014 fought on Breed's Hill, not Bunker Hill.",
-   "content_type": "image/jpeg",
-   "width": 1600,
-   "height": 1070,
-   "byte_size": "365054"
-  },
-  {
-   "id": "historic.u3e5.franklin-1767",
-   "title": "Benjamin Franklin, who worked the French court from late 1776 to win the alliance of 1778.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Benjamin_Franklin_1767.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Benjamin_Franklin_1767.jpg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "Public domain",
-   "description": "Benjamin Franklin, who worked the French court from late 1776 to win the alliance of 1778.",
-   "content_type": "image/jpeg",
-   "width": 2386,
-   "height": 3000,
-   "byte_size": "2669175"
-  },
-  {
-   "id": "historic.u3e5.horatio-gates-stuart",
-   "title": "Horatio Gates, the American commander at Saratoga, by Gilbert Stuart.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/HoratioGatesByStuart.jpeg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/HoratioGatesByStuart.jpeg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "Public domain",
-   "description": "Horatio Gates, the American commander at Saratoga, by Gilbert Stuart.",
-   "content_type": "image/jpeg",
-   "width": 3048,
-   "height": 3716,
-   "byte_size": "2509146"
-  },
-  {
-   "id": "historic.u3e5.lafayette-yorktown",
-   "title": "Lafayette at Yorktown, commanding American troops at twenty-four.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Lafayette_at_Yorktown.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Lafayette_at_Yorktown.jpg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "Public domain",
-   "description": "Lafayette at Yorktown, commanding American troops at twenty-four.",
-   "content_type": "image/jpeg",
-   "width": 1981,
-   "height": 2560,
-   "byte_size": "1637843"
-  },
-  {
-   "id": "historic.u3e5.nathanael-greene-trumbull",
-   "title": "Nathanael Greene, who bled Cornwallis's army at Cowpens and Guilford Courthouse and slipped away before it could be destroyed, by John Trumbull.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Nathanael_Greene_by_John_Trumbull_1792.jpeg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Nathanael_Greene_by_John_Trumbull_1792.jpeg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "Public domain",
-   "description": "Nathanael Greene, who bled Cornwallis's army at Cowpens and Guilford Courthouse and slipped away before it could be destroyed, by John Trumbull.",
-   "content_type": "image/jpeg",
-   "width": 1661,
-   "height": 1920,
-   "byte_size": "1167414"
-  },
-  {
-   "id": "historic.u3e5.steuben-valley-forge",
-   "title": "Baron von Steuben at Valley Forge, 1777, from the National Archives: drilling the barefoot army into professionals.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Baron_von_Steuben_at_Valley_Forge%2C_1777_-_NARA_-_530884.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Baron_von_Steuben_at_Valley_Forge%2C_1777_-_NARA_-_530884.jpg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "Public domain",
-   "description": "Baron von Steuben at Valley Forge, 1777, from the National Archives: drilling the barefoot army into professionals.",
-   "content_type": "image/jpeg",
-   "width": 3000,
-   "height": 1652,
-   "byte_size": "1614618"
-  },
-  {
-   "id": "historic.u3e5.surrender-burgoyne",
-   "title": "John Trumbull's Surrender of General Burgoyne at Saratoga, October 1777: an entire British army surrenders, convincing France the Americans could win.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Surrender_of_General_Burgoyne.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Surrender_of_General_Burgoyne.jpg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "Public domain",
-   "description": "John Trumbull's Surrender of General Burgoyne at Saratoga, October 1777: an entire British army surrenders, convincing France the Americans could win.",
-   "content_type": "image/jpeg",
-   "width": 3000,
-   "height": 1987,
-   "byte_size": "5788576"
-  },
-  {
-   "id": "historic.u3e5.surrender-cornwallis",
-   "title": "The surrender of Lord Cornwallis at Yorktown, October 19, 1781, after three weeks of siege trenches.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Surrender_of_Lord_Cornwallis_at_Yorktown%2C_Oct._19th%2C_1781_LCCN2002706104.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Surrender_of_Lord_Cornwallis_at_Yorktown%2C_Oct._19th%2C_1781_LCCN2002706104.jpg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "Public domain",
-   "description": "The surrender of Lord Cornwallis at Yorktown, October 19, 1781, after three weeks of siege trenches.",
-   "content_type": "image/jpeg",
-   "width": 1536,
-   "height": 1124,
-   "byte_size": "233691"
-  },
-  {
-   "id": "historic.u3e5.treaty-of-alliance-signatures",
-   "title": "Signatures on the 1778 Treaty of Alliance: French money, guns, troops, and eventually the navy entered the war.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Treaty_of_Alliance_%281778%29_Signatures.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Treaty_of_Alliance_%281778%29_Signatures.jpg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "Public domain",
-   "description": "Signatures on the 1778 Treaty of Alliance: French money, guns, troops, and eventually the navy entered the war.",
-   "content_type": "image/jpeg",
-   "width": 1358,
-   "height": 2007,
-   "byte_size": "359498"
-  },
-  {
-   "id": "historic.u3e5.treaty-paris-map",
-   "title": "The United States according to the 1783 Treaty of Paris, from the Library of Congress: independence, the Mississippi border.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/The_United_States_according_to_the_definitive_treaty_of_peace_signed_at_Paris_Sept._3d._1783._LOC_gm71005423.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/The_United_States_according_to_the_definitive_treaty_of_peace_signed_at_Paris_Sept._3d._1783._LOC_gm71005423.jpg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "Public domain",
-   "description": "The United States according to the 1783 Treaty of Paris, from the Library of Congress: independence, the Mississippi border.",
-   "content_type": "image/jpeg",
-   "width": 12054,
-   "height": 8506,
-   "byte_size": "12663014"
-  },
-  {
-   "id": "historic.u3e5.trenton-operations",
-   "title": "Plan of Washington's operations against the King's troops in New Jersey, December 26, 1776 to January 3, 1777: Trenton and Princeton.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Plan_of_the_Operations_of_General_Washington%2C_against_the_Kings_Troops_in_New_Jersey%2C_from_the_26th._of_December%2C_1776%2C_to_the_3d._January%2C_1777.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Plan_of_the_Operations_of_General_Washington%2C_against_the_Kings_Troops_in_New_Jersey%2C_from_the_26th._of_December%2C_1776%2C_to_the_3d._January%2C_1777.jpg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "Public domain",
-   "description": "Plan of Washington's operations against the King's troops in New Jersey, December 26, 1776 to January 3, 1777: Trenton and Princeton.",
-   "content_type": "image/jpeg",
-   "width": 4122,
-   "height": 3085,
-   "byte_size": "7467445"
-  },
-  {
-   "id": "historic.u3e5.washington-crossing-bingham",
-   "title": "Washington Crossing the Delaware, by George Caleb Bingham: the Trenton surprise.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Washington_Crossing_the_Delaware_1856-71_George_Caleb_BinghamFXD.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Washington_Crossing_the_Delaware_1856-71_George_Caleb_BinghamFXD.jpg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "Public domain",
-   "description": "Washington Crossing the Delaware, by George Caleb Bingham: the Trenton surprise.",
-   "content_type": "image/jpeg",
-   "width": 1793,
-   "height": 1125,
-   "byte_size": "341821"
-  },
-  {
-   "id": "historic.u3e5.washington-peale",
-   "title": "George Washington, chosen by the Second Continental Congress in June 1775 to command the Continental Army, by Rembrandt Peale.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Rembrandt_Peale_-_George_Washington_-_Google_Art_Project_%28721252%29.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/Rembrandt_Peale_-_George_Washington_-_Google_Art_Project_%28721252%29.jpg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "Public domain",
-   "description": "George Washington, chosen by the Second Continental Congress in June 1775 to command the Continental Army, by Rembrandt Peale.",
-   "content_type": "image/jpeg",
-   "width": 3577,
-   "height": 4345,
-   "byte_size": "2213273"
-  },
-  {
-   "id": "historic.u3e5.yorktown-redoubt10",
-   "title": "Storming redoubt 10 at Yorktown, 1840: the siege that ended the war.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/2/22/EL_Lami_-_Storming_of_redoubt_10_during_the_Siege_of_Yorktown_%281840%29.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/EL_Lami_-_Storming_of_redoubt_10_during_the_Siege_of_Yorktown_%281840%29.jpg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "Public domain",
-   "description": "Storming redoubt 10 at Yorktown, 1840: the siege that ended the war.",
-   "content_type": "image/jpeg",
-   "width": 2048,
-   "height": 1409,
-   "byte_size": "810910"
-  },
-  {
-   "id": "historic.u3e5.yorktown-surrender-met",
-   "title": "The surrender of Cornwallis to Washington and Rochambeau at Yorktown, from the Metropolitan Museum.",
-   "primary_url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/The_Surrender_of_Earl_Cornwallis_%28Lieutenant_General_of_the_British_Army_in_North_America%29_to_General_Washington_%26_Count_De_Rochambeau%2C_on_the_19th_of_Octr._1781_MET_DP876919.jpg",
-   "alt_url": "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/The_Surrender_of_Earl_Cornwallis_%28Lieutenant_General_of_the_British_Army_in_North_America%29_to_General_Washington_%26_Count_De_Rochambeau%2C_on_the_19th_of_Octr._1781_MET_DP876919.jpg",
-   "source": "wikimedia",
-   "verified": true,
-   "license": "CC0",
-   "description": "The surrender of Cornwallis to Washington and Rochambeau at Yorktown, from the Metropolitan Museum.",
-   "content_type": "image/jpeg",
-   "width": 1450,
-   "height": 2214,
-   "byte_size": "1703253"
-  }
- ]
+  "lesson": "u3e5",
+  "image_count": 75,
+  "images": [
+    {
+      "id": "portrait.washington-stuart",
+      "title": "George Washington, Gilbert Stuart, 1797",
+      "primary_url": "https://images.metmuseum.org/CRDImages/ad/original/DT62.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Gilbert_Stuart_-_George_Washington_-_Google_Art_Project.jpg",
+      "source": "met",
+      "alt_source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "portrait.thomas-gage",
+      "title": "General Thomas Gage",
+      "primary_url": null,
+      "alt_url": "https://iiif.nypl.org/iiif/2/465406/full/!1600,1600/0/default.jpg",
+      "source": "loc",
+      "alt_source": "New York Public Library",
+      "verified": true,
+      "note": " [dupe-fix: replaced shared URL] [1024px fallback: NYPL Emmet Collection engraving of Thomas Gage by H.B. Hall (Image ID 465406); verified 200, image/jpeg, 1070px wide]"
+    },
+    {
+      "id": "portrait.horatio-gates",
+      "title": "Horatio Gates, Gilbert Stuart",
+      "primary_url": "https://images.metmuseum.org/CRDImages/ad/original/DT2041.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Horatio_Gates_MET_DT2041.jpg",
+      "source": "met",
+      "alt_source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "portrait.benedict-arnold",
+      "title": "Benedict Arnold",
+      "primary_url": "https://tile.loc.gov/storage-services/service/pnp/cph/3a40000/3a45000/3a45400/3a45419r.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Benedict_Arnold_1.jpg",
+      "source": "loc",
+      "alt_source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "portrait.john-burgoyne",
+      "title": "General John Burgoyne, Joshua Reynolds",
+      "primary_url": "https://tile.loc.gov/storage-services/service/pnp/cph/3a40000/3a45000/3a45500/3a45552r.jpg",
+      "alt_url": "https://images.metmuseum.org/CRDImages/dp/original/DP877000.jpg",
+      "source": "loc",
+      "alt_source": "Metropolitan Museum of Art",
+      "verified": true
+    },
+    {
+      "id": "portrait.thomas-paine",
+      "title": "Thomas Paine",
+      "primary_url": "https://tile.loc.gov/storage-services/service/pnp/cph/3a40000/3a49000/3a49400/3a49476r.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Laurent_Dabos_%E2%80%93_Thomas_Paine_%E2%80%93_Google_Art_Project.jpg",
+      "source": "loc",
+      "alt_source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "portrait.von-steuben",
+      "title": "Baron von Steuben",
+      "primary_url": "https://tile.loc.gov/storage-services/service/pnp/cph/3a40000/3a45000/3a45600/3a45678r.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/d/da/Major_General_Friedrich_Wilhelm_Augustus_Baron_von_Steuben_by_Ralph_Earl.jpeg",
+      "source": "loc",
+      "alt_source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "portrait.franklin-duplessis",
+      "title": "Benjamin Franklin, Joseph Duplessis",
+      "primary_url": "https://images.metmuseum.org/CRDImages/ep/original/DP-1255-001.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Joseph_Siffrein_Duplessis_-_Benjamin_Franklin_-_Google_Art_Project.jpg",
+      "source": "Metropolitan Museum of Art",
+      "alt_source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "portrait.rochambeau",
+      "title": "Comte de Rochambeau",
+      "primary_url": "https://tile.loc.gov/storage-services/service/pnp/cph/3c20000/3c21000/3c21900/3c21988v.jpg",
+      "alt_url": "https://images.metmuseum.org/CRDImages/dp/original/DP808693.jpg",
+      "source": "loc",
+      "alt_source": "Metropolitan Museum of Art",
+      "verified": true
+    },
+    {
+      "id": "portrait.lafayette-peale",
+      "title": "Marquis de Lafayette, Rembrandt Peale",
+      "primary_url": "https://images.metmuseum.org/CRDImages/ad/original/DT2057.jpg",
+      "alt_url": "https://images.metmuseum.org/CRDImages/ad/original/25684.jpg",
+      "source": "met",
+      "alt_source": "Metropolitan Museum of Art",
+      "verified": true
+    },
+    {
+      "id": "portrait.de-grasse",
+      "title": "Admiral Fran\u00e7ois de Grasse",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/7/74/Comte_de_Grasse_de_profil.jpeg",
+      "alt_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd388:g3884:g3884y:ar146100/full/pct:100/0/default.jpg",
+      "source": "wikimedia",
+      "alt_source": "loc",
+      "verified": true
+    },
+    {
+      "id": "portrait.cornwallis",
+      "title": "Charles Cornwallis, Joshua Reynolds",
+      "primary_url": "https://tile.loc.gov/storage-services/service/pnp/cph/3a40000/3a45000/3a45500/3a45538r.jpg",
+      "alt_url": "https://images.metmuseum.org/CRDImages/dp/original/DP834765.jpg",
+      "source": "loc",
+      "alt_source": "Metropolitan Museum of Art",
+      "verified": true
+    },
+    {
+      "id": "portrait.nathanael-greene",
+      "title": "Nathanael Greene, Charles Willson Peale",
+      "primary_url": "https://images.metmuseum.org/CRDImages/ad/original/ap24.109.92.jpg",
+      "alt_url": "https://images.metmuseum.org/CRDImages/dp/original/DP852699.jpg",
+      "source": "met",
+      "alt_source": "Metropolitan Museum of Art",
+      "verified": true
+    },
+    {
+      "id": "portrait.emerson",
+      "title": "Ralph Waldo Emerson, c. 1857",
+      "primary_url": "https://tile.loc.gov/storage-services/service/pnp/pga/01400/01425v.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Ralph_Waldo_Emerson_ca1857_retouched.jpg",
+      "source": "loc",
+      "alt_source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "portrait.george-iii",
+      "title": "King George III",
+      "primary_url": "https://tile.loc.gov/storage-services/service/pnp/pga/03300/03325v.jpg",
+      "alt_url": "https://images.metmuseum.org/CRDImages/es/original/DP155295.jpg",
+      "source": "loc",
+      "alt_source": "Metropolitan Museum of Art",
+      "verified": true,
+      "note": " [1024px fallback: Met object 1070646 (George III, Reynolds); verified 200, image/jpeg, 3000px wide]"
+    },
+    {
+      "id": "portrait.louis-xvi",
+      "title": "Louis XVI, Joseph Duplessis",
+      "primary_url": "https://framemark.vam.ac.uk/collections/2017KB7680/full/full/0/default.jpg",
+      "alt_url": "https://images.metmuseum.org/CRDImages/dp/original/DP819231.jpg",
+      "source": "Victoria and Albert Museum",
+      "alt_source": "Metropolitan Museum of Art",
+      "verified": true
+    },
+    {
+      "id": "scene.lexington-doolittle",
+      "title": "The Battle of Lexington, Amos Doolittle, 1775",
+      "primary_url": "https://tile.loc.gov/storage-services/service/pnp/ppmsca/39700/39753v.jpg",
+      "alt_url": "https://www.albanyinstitute.org/tl_files/collection/prints/1920.2.1_doolittle-og.jpg",
+      "source": "loc",
+      "alt_source": "Albany Institute of History & Art",
+      "verified": true
+    },
+    {
+      "id": "scene.concord-doolittle",
+      "title": "A View of the Town of Concord, Amos Doolittle, 1775",
+      "primary_url": "https://www.albanyinstitute.org/tl_files/collection/prints/1920.2.2_doolittle-og.jpg",
+      "alt_url": "https://tile.loc.gov/image-services/iiif/public:gdcmassbookdig:historyoforigina00brig:historyoforigina00brig_0001/full/pct:100/0/default.jpg",
+      "source": "Albany Institute of History & Art",
+      "alt_source": "loc",
+      "verified": true
+    },
+    {
+      "id": "scene.north-bridge",
+      "title": "The Old North Bridge, Concord",
+      "primary_url": "https://tile.loc.gov/storage-services/service/pnp/pcrd/1a00000/1a06000/1a06000/1a06070v.jpg",
+      "alt_url": "https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:fj2374651/full/!1600,1600/0/default.jpg",
+      "source": "loc",
+      "alt_source": "Digital Commonwealth / Boston Public Library",
+      "verified": true,
+      "note": " [1024px fallback: BPL Abdalian 1930 photo of North Bridge; verified 200, image/jpeg, 1600px wide]"
+    },
+    {
+      "id": "scene.minuteman-statue",
+      "title": "Minuteman statue, Concord, by Daniel Chester French",
+      "primary_url": "https://www.nps.gov/mima/images/Minute-Man-Statue.jpg?maxwidth=2000&autorotate=false",
+      "alt_url": "https://tile.loc.gov/image-services/iiif/public:gdcmassbookdig:concord00walt:concord00walt_0001/full/pct:100/0/default.jpg",
+      "source": "National Park Service",
+      "alt_source": "loc",
+      "verified": true
+    },
+    {
+      "id": "scene.lexington-green",
+      "title": "Lexington Green and the Captain Parker statue",
+      "primary_url": "https://tile.loc.gov/storage-services/service/pnp/det/4a00000/4a07000/4a07400/4a07467v.jpg",
+      "alt_url": "https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:4t64hp248/full/!1600,1600/0/default.jpg",
+      "source": "loc",
+      "alt_source": "Digital Commonwealth / Longmeadow Historical Society",
+      "verified": true,
+      "note": " [1024px fallback: 1904 Emerson glass negative of Captain Parker statue on Lexington Green (exact subject: 'Lexington Green and the Captain Parker statue'); verified 200, image/jpeg, 1600px wide]"
+    },
+    {
+      "id": "scene.bunker-hill-trumbull",
+      "title": "The Death of General Warren at Bunker's Hill, John Trumbull",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/The_Death_of_General_Warren_at_the_Battle_of_Bunker%27s_Hill.jpg",
+      "alt_url": "https://tile.loc.gov/storage-services/service/pnp/det/4a30000/4a31000/4a31300/4a31348v.jpg",
+      "source": "wikimedia",
+      "alt_source": "loc",
+      "verified": true
+    },
+    {
+      "id": "scene.bunker-hill-plan",
+      "title": "A Plan of the Battle of Bunker Hill, June 17, 1775",
+      "primary_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd376:g3764:g3764b:ar305900r/full/pct:100/0/default.jpg",
+      "alt_url": "https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:z603vt61s/full/!1600,1600/0/default.jpg",
+      "source": "loc",
+      "alt_source": "Digital Commonwealth (Leventhal)",
+      "verified": true
+    },
+    {
+      "id": "scene.bunker-hill-monument",
+      "title": "Bunker Hill Monument",
+      "primary_url": "https://tile.loc.gov/storage-services/service/pnp/ds/02400/02426v.jpg",
+      "alt_url": "https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:2b88sp03m/full/!1600,1600/0/default.jpg",
+      "source": "loc",
+      "alt_source": "Digital Commonwealth / Peabody Essex Museum",
+      "verified": true,
+      "note": " [1024px fallback: Frank Cousins glass negative of Bunker Hill Monument, ca.1865-1914, no known copyright restrictions; verified 200, image/jpeg, 1286px wide]"
+    },
+    {
+      "id": "scene.bunker-hill-romans",
+      "title": "The Battle at Charlestown, Bernard Romans, 1775",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/5/58/1775_Battle_Charlestown_byBernardRomans.jpg",
+      "alt_url": "https://tile.loc.gov/image-services/iiif/public:gdcmassbookdig:oldcharlestownhi00sawye:oldcharlestownhi00sawye_0001/full/pct:100/0/default.jpg",
+      "source": "wikimedia",
+      "alt_source": "loc",
+      "verified": true
+    },
+    {
+      "id": "scene.independence-hall",
+      "title": "Pennsylvania State House (Independence Hall), Philadelphia",
+      "primary_url": "https://tile.loc.gov/storage-services/service/pnp/pcrd/2d00000/2d06000/2d06200/2d06262v.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Exterior_of_the_Independence_Hall%2C_Aug_2019.jpg",
+      "source": "loc",
+      "alt_source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "scene.washington-command-cambridge",
+      "title": "Washington Taking Command at Cambridge, Currier & Ives",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Washington_Taking_Command_of_the_American_Army_%E2%80%93_At_Cambridge%2C_Massachusetts%2C_July_3rd%2C_1775_MET_DP853566.jpg",
+      "alt_url": "https://images.metmuseum.org/CRDImages/dp/original/DP853566.jpg",
+      "source": "wikimedia",
+      "alt_source": "met",
+      "verified": true
+    },
+    {
+      "id": "scene.washington-commission",
+      "title": "Continental Congress to George Washington, June 19, 1775: Commission as Commander in Chief",
+      "primary_url": "https://tile.loc.gov/storage-services/master/mss/mgw/mgw8b/124/0100/0166.jpg",
+      "alt_url": "https://tile.loc.gov/storage-services/service/pnp/cph/3b00000/3b03000/3b03100/3b03168r.jpg",
+      "source": "loc",
+      "alt_source": "loc",
+      "verified": true
+    },
+    {
+      "id": "scene.continental-currency",
+      "title": "Continental currency, 1775",
+      "primary_url": "https://images.metmuseum.org/CRDImages/dp/original/DP-44768-001.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Continental_Currency_%248_banknote_obverse_%28November_29%2C_1775%29.jpg",
+      "source": "met",
+      "alt_source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "scene.declaration-trumbull",
+      "title": "Declaration of Independence, John Trumbull",
+      "primary_url": "https://images.metmuseum.org/CRDImages/dp/original/DP-42868-001.jpg",
+      "alt_url": "https://tile.loc.gov/storage-services/service/pnp/pga/07100/07154v.jpg",
+      "source": "Metropolitan Museum of Art",
+      "alt_source": "loc",
+      "verified": true
+    },
+    {
+      "id": "scene.washington-crossing-leutze",
+      "title": "Washington Crossing the Delaware, Emanuel Leutze, 1851",
+      "primary_url": "https://images.metmuseum.org/CRDImages/ad/original/DP215410.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Washington_Crossing_the_Delaware_by_Emanuel_Leutze%2C_MMA-NYC%2C_1851.jpg",
+      "source": "met",
+      "alt_source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "scene.trenton-trumbull",
+      "title": "Capture of the Hessians at Trenton, John Trumbull",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/3/31/The_Capture_of_the_Hessians_at_Trenton_December_26_1776.jpeg",
+      "alt_url": "https://tile.loc.gov/storage-services/service/pnp/det/4a30000/4a31000/4a31100/4a31163v.jpg",
+      "source": "wikimedia",
+      "alt_source": "loc",
+      "verified": true
+    },
+    {
+      "id": "scene.princeton-nassau",
+      "title": "Nassau Hall, Princeton",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Cannon_Green_and_Nassau_Hall%2C_Princeton_University.jpg",
+      "alt_url": "https://tile.loc.gov/image-services/iiif/public:gdcmassbookdig:princetonsketche01wall:princetonsketche01wall_0001/full/pct:100/0/default.jpg",
+      "source": "wikimedia",
+      "alt_source": "loc",
+      "verified": true
+    },
+    {
+      "id": "scene.trenton-map",
+      "title": "Sketch of the engagement at Trenton, December 26, 1776",
+      "primary_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd381:g3814:g3814t:ar126700/full/pct:100/0/default.jpg",
+      "alt_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd381:g3811:g3811s:ar126900/full/pct:100/0/default.jpg",
+      "source": "loc",
+      "alt_source": "Library of Congress",
+      "verified": true
+    },
+    {
+      "id": "scene.hessian-soldier",
+      "title": "Hessian j\u00e4ger",
+      "primary_url": "https://archive.org/download/uniformsofameric0000alex/page/n270.jpg",
+      "alt_url": "https://tile.loc.gov/image-services/iiif/public:gdcmassbookdig:voyageoffirsthes00pfis:voyageoffirsthes00pfis_0001/full/pct:100/0/default.jpg",
+      "source": "Internet Archive (Lefferts/NYHS Uniforms of the American Army)",
+      "alt_source": "loc",
+      "verified": true,
+      "note": " [1024px fallback: Existing archive.org URL now passes at 1024px bar; verified 200, image/jpeg, 2768px wide]"
+    },
+    {
+      "id": "scene.hessian-flag",
+      "title": "Hessian flag, 1776",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Hessian_Mercenary_Flag_%281776%29.png",
+      "alt_url": "https://tile.loc.gov/storage-services/service/pnp/cph/3g00000/3g06000/3g06400/3g06411v.jpg",
+      "source": "wikimedia",
+      "alt_source": "loc",
+      "verified": true
+    },
+    {
+      "id": "scene.saratoga-surrender",
+      "title": "Surrender of General Burgoyne, John Trumbull",
+      "primary_url": "https://images.metmuseum.org/CRDImages/dp/original/DP876921.jpg",
+      "alt_url": "https://tile.loc.gov/storage-services/service/pnp/ds/17800/17858v.jpg",
+      "source": "Metropolitan Museum of Art",
+      "alt_source": "loc",
+      "verified": true,
+      "note": " [1024px fallback: Met object 388688: Godefroy 1777 French print 'Sarratoga (Surrender of Burgoyne to Gates)'; contemporary depiction of the event, not Trumbull; verified 200, image/jpeg, 2679px wide]"
+    },
+    {
+      "id": "scene.saratoga-map",
+      "title": "Map of the Saratoga campaign, 1777",
+      "primary_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd380:g3803:g3803s:ar117800/full/pct:100/0/default.jpg",
+      "alt_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd382:g3824:g3824p:ar134300/full/pct:100/0/default.jpg",
+      "source": "Library of Congress",
+      "alt_source": "loc",
+      "verified": true
+    },
+    {
+      "id": "scene.saratoga-surrender-print",
+      "title": "Surrender of Burgoyne at Saratoga, contemporary print",
+      "primary_url": "https://www.aoc.gov/sites/default/files/2026-01/Surrender_of_General_Burgoyne-2000w.jpg",
+      "alt_url": "https://images.metmuseum.org/CRDImages/dp/original/DP-44833-001.jpg",
+      "source": "Architect of the Capitol",
+      "alt_source": "met",
+      "verified": true
+    },
+    {
+      "id": "scene.saratoga-monument",
+      "title": "Arnold's boot monument, Saratoga battlefield",
+      "primary_url": "https://tile.loc.gov/storage-services/service/pnp/pcrd/2d00000/2d05000/2d05000/2d05050v.jpg",
+      "alt_url": "https://www.nps.gov/common/uploads/cropped_image/primary/2A2ABEEA-C9CC-178D-CDE3B0858703046F.jpg?width=1600&quality=90&mode=crop",
+      "source": "loc",
+      "alt_source": "National Park Service",
+      "verified": true
+    },
+    {
+      "id": "scene.freemans-farm",
+      "title": "Battle of Freeman's Farm, troop positions",
+      "primary_url": "https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:q524nb625/full/!1600,1600/0/default.jpg",
+      "alt_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd380:g3803:g3803s:ar118200d/full/pct:100/0/default.jpg",
+      "source": "Digital Commonwealth (Leventhal)",
+      "alt_source": "loc",
+      "verified": true
+    },
+    {
+      "id": "scene.valley-forge-winter",
+      "title": "Valley Forge in winter",
+      "primary_url": "https://tile.loc.gov/storage-services/service/pnp/ds/14000/14029v.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Valley_Forge_cabin.jpg",
+      "source": "loc",
+      "alt_source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "scene.washington-prayer",
+      "title": "Washington at prayer, Valley Forge",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Washington_at_Prayer_Valley_Forge.jpg",
+      "alt_url": "https://tile.loc.gov/storage-services/service/pnp/pga/03900/03965v.jpg",
+      "source": "wikimedia",
+      "alt_source": "loc",
+      "verified": true
+    },
+    {
+      "id": "scene.steuben-drilling",
+      "title": "Baron von Steuben drilling troops at Valley Forge, E.A. Abbey",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Baron_Steuben_drilling_troops_at_Valley_Forge_by_E_A_Abbey.png",
+      "alt_url": "https://tile.loc.gov/storage-services/service/pnp/ds/02000/02099v.jpg",
+      "source": "wikimedia",
+      "alt_source": "loc",
+      "verified": true
+    },
+    {
+      "id": "scene.valley-forge-huts",
+      "title": "Soldiers' hut, Valley Forge",
+      "primary_url": "https://home.nps.gov/vafo/learn/historyculture/images/Enlisted-Hut-Interior.png?maxwidth=2000&autorotate=false",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Huts%2C_Valley_Forge.jpg",
+      "source": "National Park Service (Valley Forge NHP)",
+      "alt_source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "scene.franklin-court",
+      "title": "Franklin's reception at the court of France, 1778",
+      "primary_url": "https://tile.loc.gov/storage-services/service/pnp/cph/3a00000/3a04000/3a04400/3a04444r.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Benjamin_Franklin_L.L.D._-_envoy_from_the_American_Congress_to_the_French_Court_LCCN2003675417.jpg",
+      "source": "loc",
+      "alt_source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "scene.treaty-alliance-doc",
+      "title": "Treaty of Alliance with France, 1778",
+      "primary_url": "https://tile.loc.gov/image-services/iiif/service:ll:llsalvol:llsal_008:00200006/full/pct:100/0/default.jpg",
+      "alt_url": "https://tile.loc.gov/storage-services/master/mss/mtj/mtj1/001/0900/0941.jpg",
+      "source": "Library of Congress",
+      "alt_source": "loc",
+      "verified": true
+    },
+    {
+      "id": "scene.french-fleet",
+      "title": "French warships in action, American Revolutionary War",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Combat_de_la_Junon_et_la_Gentille_contre_l%27Ardent.jpg",
+      "alt_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd388:g3884:g3884y:ar146100/full/pct:100/0/default.jpg",
+      "source": "wikimedia",
+      "alt_source": "loc",
+      "verified": true
+    },
+    {
+      "id": "scene.yorktown-couder",
+      "title": "Battle of Yorktown, Auguste Couder",
+      "primary_url": "https://www.battlefields.org/sites/default/files/Bataille_de_Yorktown_by_Auguste_Couder.jpg",
+      "alt_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd388:g3884:g3884y:ct009378/full/pct:100/0/default.jpg",
+      "source": "American Battlefield Trust",
+      "alt_source": "loc",
+      "verified": true
+    },
+    {
+      "id": "scene.vergennes",
+      "title": "Comte de Vergennes, Charles-Cl\u00e9ment Bervic",
+      "primary_url": null,
+      "alt_url": "https://images.metmuseum.org/CRDImages/dp/original/DP874377.jpg",
+      "source": "met",
+      "alt_source": "Metropolitan Museum of Art",
+      "verified": true,
+      "note": " [dupe-fix: replaced shared URL] [1024px fallback: Met Bervic engraving of Comte de Vergennes (exact catalog title match); verified 200, image/jpeg, 2787px wide]"
+    },
+    {
+      "id": "scene.french-troops-newport",
+      "title": "French troops landing at Newport, July 1780",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Landung_einer_Franz%C3%B6sischen_H%C3%BClfs-Armee_in_America%2C_zu_Rhode_Island%2C_am_11ten_Julius_1780_LCCN2004670207.jpg",
+      "alt_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd377:g3774:g3774n:ar101700/full/pct:100/0/default.jpg",
+      "source": "wikimedia",
+      "alt_source": "loc",
+      "verified": true
+    },
+    {
+      "id": "scene.charleston-siege-map",
+      "title": "Plan of the siege of Charleston, 1780",
+      "primary_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd391:g3914:g3914c:ar155600/full/pct:100/0/default.jpg",
+      "alt_url": "https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:z603vs413/full/!1600,1600/0/default.jpg",
+      "source": "loc",
+      "alt_source": "Digital Commonwealth (Leventhal)",
+      "verified": true
+    },
+    {
+      "id": "scene.charleston-view",
+      "title": "Siege of Charleston, Alonzo Chappel",
+      "primary_url": "https://www.battlefields.org/sites/default/files/charleston.jpg",
+      "alt_url": "https://tile.loc.gov/storage-services/service/pnp/pcrd/1a10000/1a13000/1a13400/1a13458v.jpg",
+      "source": "American Battlefield Trust",
+      "alt_source": "loc",
+      "verified": true,
+      "note": " [1024px fallback: Existing battlefields.org URL now passes at 1024px bar; verified 200, image/jpeg, 1920px wide]"
+    },
+    {
+      "id": "scene.cowpens",
+      "title": "Battle of Cowpens, Frederick Kemmelmeyer",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Frederick_Kemmelmeyer_-_Battle_of_Cowpen_-_1944.106_-_Yale_University_Art_Gallery.jpg",
+      "alt_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd391:g3912:g3912c:ct009836/full/pct:100/0/default.jpg",
+      "source": "wikimedia",
+      "alt_source": "loc",
+      "verified": true
+    },
+    {
+      "id": "scene.guilford-courthouse",
+      "title": "Battle of Guilford Courthouse, 1781",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Battle_of_Guilford_Courthouse_15_March_1781.jpg",
+      "alt_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd390:g3902:g3902g:ct009688/full/pct:100/0/default.jpg",
+      "source": "wikimedia",
+      "alt_source": "loc",
+      "verified": true
+    },
+    {
+      "id": "scene.southern-theater-map",
+      "title": "Map of Cornwallis's southern campaigns",
+      "primary_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd386:g3861:g3861s:ar140900/full/pct:100/0/default.jpg",
+      "alt_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd381:g3814:g3814p:ar125000/full/pct:100/0/default.jpg",
+      "source": "Library of Congress",
+      "alt_source": "loc",
+      "verified": true
+    },
+    {
+      "id": "scene.camden-battle",
+      "title": "Sketch of the Battle of Camden, August 16, 1780",
+      "primary_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd391:g3914:g3914c:ar156500/full/pct:100/0/default.jpg",
+      "alt_url": "https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:q524nc567/full/!1600,1600/0/default.jpg",
+      "source": "loc",
+      "alt_source": "Digital Commonwealth (Leventhal)",
+      "verified": true
+    },
+    {
+      "id": "scene.yorktown-map",
+      "title": "Map of the siege of Yorktown, 1781",
+      "primary_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd388:g3884:g3884y:ar146700/full/pct:100/0/default.jpg",
+      "alt_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd388:g3884:g3884y:ct009378/full/pct:100/0/default.jpg",
+      "source": "Library of Congress",
+      "alt_source": "loc",
+      "verified": true
+    },
+    {
+      "id": "scene.surrender-cornwallis",
+      "title": "Surrender of Lord Cornwallis, John Trumbull",
+      "primary_url": "https://www.aoc.gov/sites/default/files/2026-01/Surrender_of_Lord_Cornwallis-2000w.jpg",
+      "alt_url": "https://tile.loc.gov/storage-services/service/pnp/cph/3a30000/3a39000/3a39900/3a39934r.jpg",
+      "source": "Architect of the Capitol",
+      "alt_source": "loc",
+      "verified": true
+    },
+    {
+      "id": "scene.yorktown-siege-french",
+      "title": "Siege of Yorktown, French engraving",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Siege_of_Yortown.jpg",
+      "alt_url": "https://images.metmuseum.org/CRDImages/dp/original/DP877001.jpg",
+      "source": "wikimedia",
+      "alt_source": "met",
+      "verified": true
+    },
+    {
+      "id": "scene.chesapeake-battle",
+      "title": "The sea fight off the Chesapeake, September 5, 1781",
+      "primary_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd388:g3884:g3884y:ar146100/full/pct:100/0/default.jpg",
+      "alt_url": "http://www.ibiblio.org/hyperwar/OnlineLibrary/photos/hi-res/NH%2073000/NH%2073927-KN.jpg",
+      "source": "loc",
+      "alt_source": "U.S. Naval History and Heritage Command (via ibiblio)",
+      "verified": true
+    },
+    {
+      "id": "scene.washington-tent",
+      "title": "Washington's headquarters marquee",
+      "primary_url": "https://moar-prod.imgix.net/e71485bb-d4ea-4853-823b-c91084a887cc/image-082720_george_washington_tent_collection.jpg?auto=compress%2Cformat&fit=min&fm=jpg&rect=0%2C0%2C4792%2C3195&w=2000",
+      "alt_url": "https://tile.loc.gov/storage-services/service/pnp/ppmsca/21500/21580v.jpg",
+      "source": "Museum of the American Revolution",
+      "alt_source": "loc",
+      "verified": true
+    },
+    {
+      "id": "scene.yorktown-earthworks",
+      "title": "Redoubt on the Yorktown battlefield",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/VIEW_OF_REDOUBT_ON_YORKTOWN_BATTLEFIELD._-_Yorktown_Battlefield_Tour_Roads%2C_Yorktown%2C_York_County%2C_VA_HAER_VA%2C100-YORK.V%2C2-5.tif",
+      "alt_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd388:g3884:g3884y:ct009377/full/pct:100/0/default.jpg",
+      "source": "wikimedia",
+      "alt_source": "loc",
+      "verified": true
+    },
+    {
+      "id": "scene.yorktown-cannon",
+      "title": "Artillery at Yorktown",
+      "primary_url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Yorktown_VA_NPS_18-pdr_cannon.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Swedish_4-pdr_gun_dolphins_Yorktown.jpg",
+      "source": "wikimedia",
+      "alt_source": "wikimedia",
+      "verified": true
+    },
+    {
+      "id": "scene.treaty-paris-doc",
+      "title": "Treaty of Paris, 1783",
+      "primary_url": "https://www.worldhistory.org/img/c/p/2400x1254/19420.jpg",
+      "alt_url": "https://tile.loc.gov/image-services/iiif/service:gdc:gdcwdl:wd:l_:02:71:3:wdl_02713:19-2744m/full/pct:100/0/default.jpg",
+      "source": "World History Encyclopedia (NARA scan)",
+      "alt_source": "loc",
+      "verified": true
+    },
+    {
+      "id": "scene.west-treaty-paris",
+      "title": "The Treaty of Paris, Benjamin West (unfinished), 1783",
+      "primary_url": "https://lh3.googleusercontent.com/ci/AL18g_TH48aXoYgUstECPx9P5itR5YA2N8T-Xy7EfAxaJZt1ud3r9NN-VS-sktW6Y4C_kB76uKJdF9cC=s1600",
+      "alt_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd370:g3700:g3700:ar074800/full/pct:100/0/default.jpg",
+      "source": "Google Arts & Culture (Winterthur)",
+      "alt_source": "loc",
+      "verified": true
+    },
+    {
+      "id": "scene.us-boundaries-1783",
+      "title": "Map of the United States agreeable to the Peace of 1783",
+      "primary_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd370:g3700:g3700:ar074800/full/pct:100/0/default.jpg",
+      "alt_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd370:g3700:g3700:ar075800/full/pct:100/0/default.jpg",
+      "source": "loc",
+      "alt_source": "Library of Congress",
+      "verified": true
+    },
+    {
+      "id": "scene.john-adams",
+      "title": "John Adams",
+      "primary_url": "https://tile.loc.gov/storage-services/service/pnp/cph/3c30000/3c32000/3c32300/3c32304v.jpg",
+      "alt_url": "https://images.metmuseum.org/CRDImages/ad/original/DP-43515-001.jpg",
+      "source": "loc",
+      "alt_source": "Metropolitan Museum of Art",
+      "verified": true,
+      "note": " [1024px fallback: Met John Adams by Sharples ca.1796; verified 200, image/jpeg, 3175px wide]"
+    },
+    {
+      "id": "scene.american-crisis",
+      "title": "The American Crisis, No. 1, by Thomas Paine",
+      "primary_url": "https://tile.loc.gov/storage-services/service/pnp/cph/3b00000/3b06000/3b06800/3b06889r.jpg",
+      "alt_url": "https://archive.org/download/bim_eighteenth-century_the-american-crisis_paine-thomas-political_1777/page/n0.jpg",
+      "source": "loc",
+      "alt_source": "Internet Archive (1777 Styner & Cist edition)",
+      "verified": true,
+      "note": " [1024px fallback: Title page 'Number II'; page image visually inspected 2026-10-09; verified 200, image/jpeg, 6133px wide]"
+    },
+    {
+      "id": "scene.blue-book",
+      "title": "Regulations for the Order and Discipline of the Troops (Blue Book), 1779",
+      "primary_url": "https://tile.loc.gov/image-services/iiif/public:rbc:2006batch30726:0176/full/pct:100/0/default.jpg",
+      "alt_url": "https://archive.org/download/2575061R.nlm.nih.gov/page/n2.jpg",
+      "source": "loc",
+      "alt_source": "Internet Archive / National Library of Medicine",
+      "verified": true,
+      "note": " [1024px fallback: Existing archive.org URL now passes at 1024px bar; verified 200, image/jpeg, 1499px wide]"
+    },
+    {
+      "id": "scene.brown-bess",
+      "title": "Brown Bess flintlock musket",
+      "primary_url": "https://www.nramuseum.org/media/5111/13305_l.jpg",
+      "alt_url": "https://www.nramuseum.org/media/5090/13305_a.jpg",
+      "source": "NRA National Firearms Museum",
+      "alt_source": "NRA National Firearms Museum",
+      "verified": true
+    },
+    {
+      "id": "scene.powder-horn",
+      "title": "Powder horn",
+      "primary_url": "https://images.metmuseum.org/CRDImages/aa/original/37.131.38_001Sept2014-2.jpg",
+      "alt_url": "https://images.metmuseum.org/CRDImages/aa/original/39.87a_002Sept2014.jpg",
+      "source": "met",
+      "alt_source": "Metropolitan Museum of Art",
+      "verified": true
+    },
+    {
+      "id": "scene.colonies-map-1776",
+      "title": "Map of the seat of war between Great Britain and her colonies, 1776",
+      "primary_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd3:g3300:g3300:ar013501/full/pct:100/0/default.jpg",
+      "alt_url": "https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:6108vt08v/full/!1600,1600/0/default.jpg",
+      "source": "loc",
+      "alt_source": "Digital Commonwealth",
+      "verified": true
+    },
+    {
+      "id": "scene.boston-siege-map",
+      "title": "Map of the environs of Boston, 1775",
+      "primary_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd376:g3764:g3764b:ar089600/full/pct:100/0/default.jpg",
+      "alt_url": "https://iiif.digitalcommonwealth.org/iiif/2/commonwealth:z603vj62d/full/!1600,1600/0/default.jpg",
+      "source": "loc",
+      "alt_source": "Digital Commonwealth (Leventhal)",
+      "verified": true
+    },
+    {
+      "id": "scene.newfoundland-fishery",
+      "title": "Newfoundland cod fishery",
+      "primary_url": "https://tile.loc.gov/storage-services/service/pnp/cph/3c10000/3c17000/3c17900/3c17909v.jpg",
+      "alt_url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Newfoundland_cod-fishery_LCCN97512342.jpg",
+      "source": "loc",
+      "alt_source": "wikimedia",
+      "verified": true
+    }
+  ]
 }
