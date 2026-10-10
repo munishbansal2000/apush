@@ -10,7 +10,7 @@ import {cameraAt, worldProjection} from '../../src/motion/world';
 import {labelBox, labelVisibility, type ChromeZone} from '../../src/documentary/chrome-zones';
 import {dockedOpacity} from '../../src/documentary/DocEpisode';
 import {sheetTransform} from '../../src/documentary/sheet';
-import {YEAR_STAMP_LEAD_SEC, yearStampSpans, yearStampVisible, yearStampZone} from '../../src/documentary/shots';
+import {YEAR_STAMP_LEAD_SEC, yearStampSpans, yearStampVisible, yearStampZone} from '../../src/documentary/views/year-stamp';
 import kitConfig from '../../src/data/kit-render-config.json';
 import type {DocShot, MapShot, PointShot, PortraitShot} from '../../src/documentary/types';
 import type {ResolvedShotPlan} from './shots';

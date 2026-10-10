@@ -24,6 +24,6 @@ for (const s of resolved.shots) {
 if (flag('check')) process.exit(0);
 const limitSec = arg('seconds') ? Number(arg('seconds')) : Math.min(resolved.endSec, inputs.timing.totalSec);
 if (!(limitSec > 0)) throw new Error(`--seconds must be a positive number, got "${arg('seconds')}"`);
-const ctx = {episode, work: join(ROOT, 'out', 'pipeline', episode), outDir: join(ROOT, 'out'), publicDir: join(ROOT, 'public'), force: flag('force')};
+const ctx = {episode, work: join(ROOT, 'out', 'pipeline', episode), outDir: join(ROOT, 'out'), publicDir: join(ROOT, 'public'), force: flag('force'), preview: flag('preview')};
 await docContactStage(ctx, inputs, resolved, limitSec);
 await docRenderStage(ctx, inputs, resolved, arg('seconds') || resolved.endSec < inputs.timing.totalSec ? limitSec : Infinity);

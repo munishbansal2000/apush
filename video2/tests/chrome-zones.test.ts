@@ -22,7 +22,7 @@ describe('map label visibility', () => {
 
 describe('year stamp zone', () => {
   it('covers the frame centre while it slams in and the top-left chip once settled', async () => {
-    const {yearStampZone} = await import('../src/documentary/shots');
+    const {yearStampZone} = await import('../src/documentary/views/year-stamp');
     const big = yearStampZone('1763', 10, 30, 1920, 1080);
     assert.ok(big.rect[0] < 960 && big.rect[2] > 960 && big.rect[1] < 540 && big.rect[3] > 540 && big.opacity > 0.9, JSON.stringify(big));
     const chip = yearStampZone('1763', 100, 30, 1920, 1080);
@@ -33,7 +33,7 @@ describe('year stamp zone', () => {
 
 describe('year stamps', () => {
   it('a stamp gives way to the next year: never two on screen, the last keeps its full time', async () => {
-    const {yearStampSpans, yearStampZone, YEAR_STAMP_SEC} = await import('../src/documentary/shots');
+    const {yearStampSpans, yearStampZone, YEAR_STAMP_SEC} = await import('../src/documentary/views/year-stamp');
     const spans = yearStampSpans([{sec: 10}, {sec: 12.5}, {sec: 40}]);
     assert.ok(Math.abs(spans[0] - (2.5 - 1 / 30)) < 1e-9 && spans[1] === YEAR_STAMP_SEC && spans[2] === YEAR_STAMP_SEC, JSON.stringify(spans));
     const close = [{sec: 10}, {sec: 10.17}];
@@ -46,7 +46,7 @@ describe('year stamps', () => {
 
 describe('year stamp and map labels', () => {
   it('a label under the stamp and the stamp are never both visible, frame by frame', async () => {
-    const {yearStampVisible, yearStampZone, YEAR_STAMP_LEAD_SEC} = await import('../src/documentary/shots');
+    const {yearStampVisible, yearStampZone, YEAR_STAMP_LEAD_SEC} = await import('../src/documentary/views/year-stamp');
     const fps = 30;
     for (const hold of [5, 2.5, 0.8]) {
       for (let f = -Math.round(YEAR_STAMP_LEAD_SEC * fps) - 2; f <= Math.round(hold * fps) + 2; f++) {
@@ -60,7 +60,7 @@ describe('year stamp and map labels', () => {
 
 describe('year stamp size', () => {
   it('a range like "1760–1761" scales down to a year\'s width', async () => {
-    const {yearStampZone} = await import('../src/documentary/shots');
+    const {yearStampZone} = await import('../src/documentary/views/year-stamp');
     const one = yearStampZone('1763', 10, 30, 1920, 1080);
     const range = yearStampZone('1760–1761', 10, 30, 1920, 1080);
     const w = (z: {rect: number[]}) => z.rect[2] - z.rect[0];

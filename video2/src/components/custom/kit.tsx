@@ -1,6 +1,6 @@
 /**
  * Shared contract for the custom explainer components (src/components/custom): phases, scale, and the parchment
- * look they share with the documentary maps (src/documentary/shots.tsx MapView).
+ * look they share with the documentary maps (src/documentary/views/map.tsx MapView).
  *
  * Phases: every component declares DEFAULT_PHASES and works with no `phases` prop. A phase that is missing (or has
  * end <= start) reads as progress 0 for its whole beat — never a snapped end state.

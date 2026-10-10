@@ -12,7 +12,15 @@ import {FilmGrain} from '../kit/media';
 import {sheetTransform} from './sheet';
 import kitConfig from '../data/kit-render-config.json';
 import {AtmosphereLayers} from './atmosphere';
-import {ClipView, CustomView, ImageMoveView, MapView, PointView, QuestionView, YearStampView, YEAR_STAMP_LEAD_SEC, yearStampSpans, yearStampZone} from './shots';
+// Shot views are reached only through ShotBody's switch on shot type: each segment's render cache is keyed by the
+// views its shots use (tools/pipeline/stages/doc.ts), so a view must not render outside its shot type.
+import {ClipView} from './views/clip';
+import {CustomView} from './views/custom';
+import {ImageMoveView} from './views/image';
+import {MapView} from './views/map';
+import {PointView} from './views/point';
+import {QuestionView} from './views/question';
+import {YearStampView, YEAR_STAMP_LEAD_SEC, yearStampSpans, yearStampZone} from './views/year-stamp';
 import {ChromeZones} from './chrome-zones';
 import type {DocEpisodeProps, DocShot} from './types';
 
@@ -71,10 +79,10 @@ const Fade: React.FC<{leadFrames: number; children: React.ReactNode}> = ({leadFr
   return <div {...GUARD_WRAPPER} data-guard-moving={o < 1 ? '' : undefined} style={{position: 'absolute', inset: 0, opacity: o}}>{children}</div>;
 };
 
-export const DocEpisode: React.FC<DocEpisodeProps> = ({episode, shots, years: yearsIn = [], boxes = [], turns, timing, audioTrack, guard = true}) => {
+export const DocEpisode: React.FC<DocEpisodeProps> = ({episode, shots, years: yearsIn = [], boxes = [], turns, timing, audioTrack, guard = true, reviewLabel = false, acts = []}) => {
   // One year stamp at a time: a stamp gives way (fades out early) when the next year is spoken.
   const years = [...yearsIn].sort((a, b) => a.sec - b.sec);
-  const spans = yearStampSpans(years);
+  const spans = yearStampSpans(years, useVideoConfig().fps);
   const frame = useCurrentFrame();
   const {fps, width, height} = useVideoConfig();
   const t = frame / fps;
@@ -139,6 +147,18 @@ export const DocEpisode: React.FC<DocEpisodeProps> = ({episode, shots, years: ye
           <Audio src={staticFile(SFX[c.name])} volume={SFX_VOLUME[c.name]} />
         </Sequence>
       ))}
+      {reviewLabel && (() => {
+        // Which line, shot and act is on screen: what a review note refers to (npm run review -- <lesson> note ...).
+        const line = timing.starts.reduce((found, s, i) => (t >= s ? i : found), 0);
+        const shot = shots.find(s => t >= s.startSec && t < s.endSec);
+        const act = acts.findIndex(a => line >= a.turns.from && line <= a.turns.to) + 1;
+        return (
+          <div style={{position: 'absolute', left: 16, bottom: 12, padding: '4px 10px', borderRadius: 6, background: 'rgba(0,0,0,0.6)', color: '#fff',
+            fontFamily: 'monospace', fontSize: 22, zIndex: 300}}>
+            {`line ${line}${act ? ` · act ${act}` : ''}${shot ? ` · ${shot.id} ${shot.type}` : ''}`}
+          </div>
+        );
+      })()}
       {guard && <LayoutGuard cfg={cfg} rootRef={rootRef} />}
     </AbsoluteFill>
   );
