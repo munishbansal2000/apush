@@ -71,7 +71,7 @@ const Fade: React.FC<{leadFrames: number; children: React.ReactNode}> = ({leadFr
   return <div {...GUARD_WRAPPER} data-guard-moving={o < 1 ? '' : undefined} style={{position: 'absolute', inset: 0, opacity: o}}>{children}</div>;
 };
 
-export const DocEpisode: React.FC<DocEpisodeProps> = ({episode, shots, years: yearsIn = [], boxes = [], turns, timing}) => {
+export const DocEpisode: React.FC<DocEpisodeProps> = ({episode, shots, years: yearsIn = [], boxes = [], turns, timing, audioTrack, guard = true}) => {
   // One year stamp at a time: a stamp gives way (fades out early) when the next year is spoken.
   const years = [...yearsIn].sort((a, b) => a.sec - b.sec);
   const spans = yearStampSpans(years);
@@ -128,18 +128,18 @@ export const DocEpisode: React.FC<DocEpisodeProps> = ({episode, shots, years: ye
           </Track>
         </>
       )}
-      {turns.map((turn, index) => turn.kind === 'speech' ? (
+      {audioTrack ? <Audio src={staticFile(audioTrack)} /> : turns.map((turn, index) => turn.kind === 'speech' ? (
         <Sequence key={turn.id} from={Math.round(timing.starts[index] * fps)} durationInFrames={Math.max(1, Math.ceil(timing.durations[index] * fps))} layout="none">
           <Audio src={staticFile(`audio/${episode}/${turn.id}.mp3`)} />
         </Sequence>
       ) : null)}
-      <Audio src={staticFile('music/bed.mp3')} loop volume={f => (speaking(f / fps) ? 0.05 : 0.14) * Math.min(1, f / fps / 1.5)} />
-      {soundCues({shots, years, boxes}).map((c, i) => (
+      {!audioTrack && <Audio src={staticFile('music/bed.mp3')} loop volume={f => (speaking(f / fps) ? 0.05 : 0.14) * Math.min(1, f / fps / 1.5)} />}
+      {!audioTrack && soundCues({shots, years, boxes}).map((c, i) => (
         <Sequence key={`sfx-${i}`} from={Math.round(c.sec * fps)} durationInFrames={Math.round(1.5 * fps)} layout="none">
           <Audio src={staticFile(SFX[c.name])} volume={SFX_VOLUME[c.name]} />
         </Sequence>
       ))}
-      <LayoutGuard cfg={cfg} rootRef={rootRef} />
+      {guard && <LayoutGuard cfg={cfg} rootRef={rootRef} />}
     </AbsoluteFill>
   );
 };

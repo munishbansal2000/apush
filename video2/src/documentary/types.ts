@@ -128,4 +128,9 @@ export interface DocEpisodeProps extends Record<string, unknown> {
   boxes?: DocBox[];
   turns: {id: string; kind: 'speech' | 'pause'; speaker?: string}[];
   timing: {starts: number[]; durations: number[]; totalSec: number};
+  /** Studio preview only: one pre-mixed audio file (under public/) instead of a clip per line, music and cues, so
+   *  live playback has a single track to keep in sync. Renders never set it. */
+  audioTrack?: string;
+  /** Studio preview only: false turns the per-frame layout guard off for smooth playback (renders always guard). */
+  guard?: boolean;
 }
