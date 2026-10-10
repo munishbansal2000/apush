@@ -67,13 +67,16 @@ export async function runPipeline(ctx: PipelineContext): Promise<void> {
   if (issues.length) throw new Error(`audio/timing sync gate failed:\n${issues.map(i => `  - ${i}`).join('\n')}`);
   // Everything that changes pixels or sound: the plan as resolved (times, clips, depth), words, audio, and the renderer source.
   const visualHash = sha256(JSON.stringify({resolved, src: rendererHash()}));
-  const renderCtx = {episode, work: ctx.work, outDir: ctx.outDir, publicDir: ctx.publicDir, force: ctx.force};
+  const preview = process.argv.includes('--preview');
+  const renderCtx = {episode, work: ctx.work, outDir: ctx.outDir, publicDir: ctx.publicDir, force: ctx.force, preview};
   if (stages.includes('contact')) {
     if (ctx.current('contact', visualHash) && existsSync(join(ctx.outDir, `${episode}-contact.png`))) console.log('[contact] checkpoint current');
     else { await docContactStage(renderCtx, inputs, resolved); ctx.mark('contact', visualHash); }
   }
   if (stages.includes('render') && loadLessonReview(episode, dirname(ctx.dataDir)).render?.approved && existsSync(join(ctx.outDir, `${episode}.mp4`))) {
     console.log('[render] approved in review (frozen)');
+  } else if (stages.includes('render') && preview) {
+    await docRenderStage(renderCtx, inputs, resolved); // a preview is never the checkpointed final
   } else if (stages.includes('render')) {
     const renderHash = sha256(`${visualHash}:${audioHash}`);
     if (ctx.current('render', renderHash) && existsSync(join(ctx.outDir, `${episode}.mp4`))) console.log('[render] checkpoint current');

@@ -136,7 +136,8 @@ export function segmentKey(resolved: ResolvedShotPlan, segment: {startSec: numbe
   return sha256(JSON.stringify({v: 1, segment: [segment.startSec, segment.endSec], shots, assets, years, boxes: resolved.boxes, env}));
 }
 
-interface DocRenderContext {episode: string; work: string; outDir: string; publicDir: string; force: boolean}
+/** `preview`: 15 fps at half resolution (about 8x less work) to check content; the final render is 30 fps, full size. */
+interface DocRenderContext {episode: string; work: string; outDir: string; publicDir: string; force: boolean; preview?: boolean}
 
 /**
  * Speed: one Chrome for the whole stage (not one per still or segment), frames rendered in parallel tabs, and the GPU
@@ -153,10 +154,10 @@ function renderTuning() {
   return {concurrency, chromiumOptions: gl ? {gl} : {}, hardwareAcceleration: (process.env.RENDER_HW === '0' ? 'disable' : 'if-possible') as 'disable' | 'if-possible'};
 }
 
-async function bundleDoc(inputs: DocInputs, resolved: ResolvedShotPlan) {
+async function bundleDoc(inputs: DocInputs, resolved: ResolvedShotPlan, preview = false) {
   const {bundle} = await import('@remotion/bundler');
   const {openBrowser, selectComposition} = await import('@remotion/renderer');
-  const inputProps = {episode: inputs.episode, shots: resolved.shots, years: resolved.years, boxes: resolved.boxes, turns: inputs.turns, timing: inputs.timing};
+  const inputProps = {episode: inputs.episode, shots: resolved.shots, years: resolved.years, boxes: resolved.boxes, turns: inputs.turns, timing: inputs.timing, ...(preview ? {fps: 15} : {})};
   const browserExecutable = process.env.REMOTION_BROWSER ?? null;
   const tuning = renderTuning();
   console.log(`[render] bundling… (${tuning.concurrency} at a time${tuning.chromiumOptions.gl ? `, Chrome GL ${tuning.chromiumOptions.gl}` : ''}, encoder ${tuning.hardwareAcceleration === 'disable' ? 'software' : 'hardware if available'})`);
@@ -216,13 +217,14 @@ export async function docContactStage(ctx: DocRenderContext, inputs: DocInputs, 
 /** Segmented, cached video render + one full audio mix (narration, music, sfx), assembled and verified. */
 export async function docRenderStage(ctx: DocRenderContext, inputs: DocInputs, resolved: ResolvedShotPlan, limitSec = Infinity): Promise<string> {
   const {renderMedia} = await import('@remotion/renderer');
-  const {serveUrl, composition, inputProps, browserExecutable, browser, tuning} = await bundleDoc(inputs, resolved);
+  const {serveUrl, composition, inputProps, browserExecutable, browser, tuning} = await bundleDoc(inputs, resolved, ctx.preview);
   try {
     const fps = composition.fps;
     const totalSec = Math.min(inputs.timing.totalSec, limitSec);
-    const preview = Number.isFinite(limitSec);
+    const preview = ctx.preview || Number.isFinite(limitSec);
+    const scale = ctx.preview ? 0.5 : 1;
     // The encoder and GL backend are part of a segment's identity: segments are joined without re-encoding.
-    const env = {sourceHash: rendererHash(), fps, width: composition.width, height: composition.height, encoder: tuning.hardwareAcceleration, gl: tuning.chromiumOptions.gl ?? null};
+    const env = {sourceHash: rendererHash(), fps, width: composition.width, height: composition.height, encoder: tuning.hardwareAcceleration, gl: tuning.chromiumOptions.gl ?? null, ...(ctx.preview ? {scale} : {})};
     const segDir = join(ctx.work, 'doc-segments');
     mkdirSync(segDir, {recursive: true});
     const cachePath = join(ctx.work, 'doc-render-cache.json');
@@ -245,7 +247,7 @@ export async function docRenderStage(ctx: DocRenderContext, inputs: DocInputs, r
       const issues: LayoutIssue[] = [];
       try {
         await renderMedia({composition, serveUrl, codec: 'h264', outputLocation: file, inputProps, browserExecutable, puppeteerInstance: browser, concurrency: tuning.concurrency,
-          hardwareAcceleration: tuning.hardwareAcceleration, logLevel: 'error', frameRange: [from, to], muted: true,
+          hardwareAcceleration: tuning.hardwareAcceleration, scale, logLevel: 'error', frameRange: [from, to], muted: true,
           onBrowserLog: log => { const beat = guardHeartbeat(log.text); if (beat !== null) measured.add(beat); else issues.push(...layoutIssuesFromLog(log.text)); }});
       } catch (e) {
         // A crash (a clip that fails to decode, the browser) is reported with the rest; the other segments still render.

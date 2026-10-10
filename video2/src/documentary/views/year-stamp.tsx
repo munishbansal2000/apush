@@ -11,7 +11,7 @@ import {clamp} from './common';
 /** How long a year stamp stays up; one gives way early (fading out) when the next year is spoken sooner. */
 export const YEAR_STAMP_SEC = 5;
 // Never past the next stamp's start (a floor here once kept two on screen when two years were said 0.17s apart).
-export const yearStampSpans = (years: {sec: number}[]) => years.map((y, i) => Math.max(1 / 30, Math.min(YEAR_STAMP_SEC, (years[i + 1]?.sec ?? Infinity) - y.sec - 1 / 30)));
+export const yearStampSpans = (years: {sec: number}[], fps = 30) => years.map((y, i) => Math.max(1 / fps, Math.min(YEAR_STAMP_SEC, (years[i + 1]?.sec ?? Infinity) - y.sec - 1 / fps)));
 
 function yearStampState(frame: number, fps: number, width: number, height: number, holdSec = YEAR_STAMP_SEC, text = '1763') {
   const slam = spring({frame, fps, config: {damping: 12, stiffness: 160}, durationInFrames: 12});

@@ -13,7 +13,8 @@ const Root: React.FC = () => (
     width={1920}
     height={1080}
     defaultProps={{episode: 'episode', shots: [], turns: [], timing: {starts: [], durations: [], totalSec: 1}}}
-    calculateMetadata={({props}) => ({durationInFrames: Math.max(30, Math.ceil(props.timing.totalSec * 30))})}
+    // A preview render passes a lower frame rate (everything is timed in seconds, so it plays the same).
+    calculateMetadata={({props}) => { const fps = props.fps ?? 30; return {fps, durationInFrames: Math.max(fps, Math.ceil(props.timing.totalSec * fps))}; }}
   />
 );
 

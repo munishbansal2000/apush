@@ -82,7 +82,7 @@ const Fade: React.FC<{leadFrames: number; children: React.ReactNode}> = ({leadFr
 export const DocEpisode: React.FC<DocEpisodeProps> = ({episode, shots, years: yearsIn = [], boxes = [], turns, timing, audioTrack, guard = true, reviewLabel = false, acts = []}) => {
   // One year stamp at a time: a stamp gives way (fades out early) when the next year is spoken.
   const years = [...yearsIn].sort((a, b) => a.sec - b.sec);
-  const spans = yearStampSpans(years);
+  const spans = yearStampSpans(years, useVideoConfig().fps);
   const frame = useCurrentFrame();
   const {fps, width, height} = useVideoConfig();
   const t = frame / fps;
