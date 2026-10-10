@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://apush.local/schemas/lesson-images.schema.json",
+  "title": "APUSH lesson images.json",
+  "description": "Final agent-authored image research manifest for one lesson. The top-level keys are paths relative to video2/public/.",
+  "type": "object",
+  "minProperties": 1,
+  "propertyNames": {
+    "pattern": "^historic/[a-z0-9-]+/[a-z0-9][a-z0-9-]*\\.(?:jpg|jpeg|png|webp)$"
+  },
+  "additionalProperties": {
+    "$ref": "#/$defs/image"
+  },
+  "$defs": {
+    "httpsUrl": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://"
+    },
+    "turnId": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+:t[0-9]{2,}$"
+    },
+    "image": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "description",
+        "license",
+        "source_url",
+        "download_urls",
+        "used_in"
+      ],
+      "properties": {
+        "description": {
+          "type": "string",
+          "minLength": 20,
+          "description": "Specific identification, creator/date when known, and why the pictured work is historically relevant."
+        },
+        "license": {
+          "type": "string",
+          "minLength": 2,
+          "not": {
+            "pattern": "^(?:unknown|unsure|n/?a)$"
+          },
+          "description": "Verified rights statement such as Public domain, CC0, CC BY 4.0, or CC BY-SA 4.0."
+        },
+        "source_url": {
+          "$ref": "#/$defs/httpsUrl",
+          "description": "Authoritative collection or file-description page establishing identity and provenance."
+        },
+        "download_urls": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 4,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/httpsUrl"
+          },
+          "description": "Direct full-resolution or large-rendition URLs for the exact same work, best first. Prefer alternatives on independent hosts."
+        },
+        "used_in": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/turnId"
+          },
+          "description": "Speech turns where the image directly supports what is being said; never pause turns."
+        },
+        "used_for": {
+          "type": "string",
+          "minLength": 3
+        },
+        "credit": {
+          "type": "string",
+          "minLength": 2
+        },
+        "author": {
+          "type": "string",
+          "minLength": 2
+        },
+        "retrospective": {
+          "type": "boolean",
+          "description": "True when the image is a later depiction rather than an eyewitness/contemporary record."
+        },
+        "original_size": {
+          "type": "string",
+          "pattern": "^[1-9][0-9]*x[1-9][0-9]*$"
+        },
+        "fallback_note": {
+          "type": "string",
+          "minLength": 3
+        }
+      }
+    }
+  }
+}
+
