@@ -185,7 +185,8 @@ describe('scene builder: the Episode Sheet intro', () => {
     sb.boxes = [{label: 'The end of salutary neglect', intro: {turn: 0, phrase: 'start arguing with london'}, check: {turn: 4, phrase: 'let me guess'}, turns: {from: 1, to: 4}}] as never;
     sb.turns[0].visuals = sb.turns[0].visuals.map(v => (v.at.phrase === 'start arguing with london' ? {kind: 'point', backdrop: img.image, bullets: [{text: 'Salutary neglect', at: {offset: 0.3}}], at: v.at, priority: 'essential'} : v)) as never;
     const r = buildPlan({storyboard: sb, turns, timing, words: {}, catalog, treatments: {}, allowEstimated: true});
-    assert.ok(!r.plan.shots.some(s => s.type === 'point'), 'no point card under the sheet');
+    const under = r.plan.shots.find(s => (s.at as {phrase?: string}).phrase === 'start arguing with london');
+    assert.equal(under?.type, 'image_move', 'the card under the sheet plays as a move');
     assert.ok(r.fixes.some(f => /under the Episode Sheet/.test(f)));
   });
 });
