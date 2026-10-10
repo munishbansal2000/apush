@@ -61,8 +61,8 @@ export function generateClips(episode: string, resolved: ResolvedShotPlan, opts:
     console.log(`[clips] ${shot.id}: generating with LTX ${backend} (${shot.image})`);
     let result: ReturnType<typeof spawnSync> | undefined;
     if (backend === 'desktop') {
-      // LTX Desktop 1.3 can run out of VRAM late in a 1080p job even on a 32 GiB card. Preserve the 1080p first
-      // attempt (and its existing content-keyed cache), then retry only this missing clip at smaller native tiers.
+      // LTX Desktop 1.3 can run out of VRAM late in a high-resolution job even on a 32 GiB card. Retry only this
+      // missing clip at smaller native tiers; the requested tier remains part of the content-keyed cache.
       // Successful clips from this or earlier runs remain cached; the rest of the lesson is never regenerated.
       const requested = args[args.indexOf('--resolution') + 1];
       const tiers = [requested, ...(requested === '1080p' ? ['720p', '540p'] : requested === '720p' ? ['540p'] : [])];

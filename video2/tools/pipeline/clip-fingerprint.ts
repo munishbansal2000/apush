@@ -8,7 +8,9 @@ export type LtxBackend = 'desktop' | 'diffusers';
 export const ltxBackend = (): LtxBackend => (process.env.LTX_BACKEND === 'diffusers' ? 'diffusers' : 'desktop');
 
 /** Settings sent to LTX Desktop; part of every desktop clip's fingerprint. */
-export const DESKTOP_SETTINGS = {model: 'fast', resolution: '1080p', duration: 5, fps: 24, cameraMotion: 'none'} as const;
+const desktopResolution = process.env.LTX_DESKTOP_RESOLUTION ?? '720p';
+if (!['540p', '720p', '1080p'].includes(desktopResolution)) throw new Error('LTX_DESKTOP_RESOLUTION must be 540p, 720p or 1080p');
+export const DESKTOP_SETTINGS = {model: 'fast', resolution: desktopResolution, duration: 5, fps: 24, cameraMotion: 'none'} as const;
 
 /**
  * Avoid-prompt for animating historical paintings: protect the figures that are already there (the Desktop script's
