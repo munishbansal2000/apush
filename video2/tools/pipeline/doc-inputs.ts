@@ -19,7 +19,7 @@ function generatorKey(): string {
   return sha256(JSON.stringify(backend === 'desktop' ? {backend, source, settings: DESKTOP_SETTINGS, negative: PAINTING_NEGATIVE} : {backend, source}));
 }
 export const clipsDirFor = (episode: string) => join(ROOT, 'public', 'clips', episode);
-export interface ClipManifest {[fingerprint: string]: {path: string; durationSec: number; prompt: string; image: string; seed: number; createdAt: string}}
+export interface ClipManifest {[fingerprint: string]: {path: string; durationSec: number; prompt: string; image: string; seed: number; createdAt: string; resolution?: string}}
 
 export interface DocInputs {
   episode: string;

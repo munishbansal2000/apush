@@ -44,6 +44,7 @@ export function generateClips(episode: string, resolved: ResolvedShotPlan, opts:
   for (const shot of todo) {
     const raw = join(outDir, `${shot.fingerprint}.mp4`);
     let args: string[];
+    let usedResolution: string | undefined;
     if (backend === 'desktop') {
       // Crop to 16:9 around the focus first, so the app can never stretch the painting.
       const input = join(outDir, `${shot.fingerprint}.input.jpg`);
@@ -58,8 +59,28 @@ export function generateClips(episode: string, resolved: ResolvedShotPlan, opts:
     }
     if (opts.dryRun) { console.log(`[clips] ${shot.id}: would run (${backend}) ${python} ${args.map(a => (a.includes(' ') ? JSON.stringify(a) : a)).join(' ')}`); continue; }
     console.log(`[clips] ${shot.id}: generating with LTX ${backend} (${shot.image})`);
-    const result = spawnSync(python, args, {cwd: ROOT, stdio: 'inherit'});
-    if (result.status !== 0) throw new Error(`${shot.id}: LTX generation failed with exit ${result.status}`);
+    let result: ReturnType<typeof spawnSync> | undefined;
+    if (backend === 'desktop') {
+      // LTX Desktop 1.3 can run out of VRAM late in a 1080p job even on a 32 GiB card. Preserve the 1080p first
+      // attempt (and its existing content-keyed cache), then retry only this missing clip at smaller native tiers.
+      // Successful clips from this or earlier runs remain cached; the rest of the lesson is never regenerated.
+      const requested = args[args.indexOf('--resolution') + 1];
+      const tiers = [requested, ...(requested === '1080p' ? ['720p', '540p'] : requested === '720p' ? ['540p'] : [])];
+      for (const [attempt, resolution] of tiers.entries()) {
+        const attemptArgs = [...args];
+        attemptArgs[attemptArgs.indexOf('--resolution') + 1] = resolution;
+        usedResolution = resolution;
+        if (attempt) console.warn(`[clips] ${shot.id}: Desktop failed at ${tiers[attempt - 1]}; retrying at ${resolution} to reduce VRAM`);
+        result = spawnSync(python, attemptArgs, {cwd: ROOT, stdio: 'inherit'});
+        if (result.status === 0) break;
+      }
+    } else {
+      result = spawnSync(python, args, {cwd: ROOT, stdio: 'inherit'});
+    }
+    if (!result || result.status !== 0) {
+      const recovery = backend === 'desktop' ? ' after lower-memory retries; restart LTX Desktop to release VRAM, or rerun with --video-gen none to use the still' : '';
+      throw new Error(`${shot.id}: LTX ${backend} generation failed${recovery} (last exit ${result?.status ?? 'unknown'})`);
+    }
     // Forward then reversed: loops without a jump, and doubles usable length for longer shots.
     const boomerang = join(outDir, `${shot.fingerprint}.boomerang.mp4`);
     const temp = `${boomerang}.tmp.mp4`;
@@ -68,9 +89,9 @@ export function generateClips(episode: string, resolved: ResolvedShotPlan, opts:
     if (existsSync(boomerang)) unlinkSync(boomerang);
     renameSync(temp, boomerang);
     const durationSec = lastFrameSec(boomerang);
-    manifest[shot.fingerprint] = {path: `clips/${episode}/${shot.fingerprint}.boomerang.mp4`, durationSec, prompt: shot.prompt, image: shot.image, seed: shot.seed, createdAt: new Date().toISOString()};
+    manifest[shot.fingerprint] = {path: `clips/${episode}/${shot.fingerprint}.boomerang.mp4`, durationSec, prompt: shot.prompt, image: shot.image, seed: shot.seed, createdAt: new Date().toISOString(), ...(usedResolution ? {resolution: usedResolution} : {})};
     atomicJson(manifestPath, manifest);
-    console.log(`[clips] ${shot.id}: ${durationSec.toFixed(2)}s boomerang`);
+    console.log(`[clips] ${shot.id}: ${durationSec.toFixed(2)}s boomerang${usedResolution ? ` (${usedResolution})` : ''}`);
   }
   return todo.length;
 }

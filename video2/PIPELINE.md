@@ -38,7 +38,8 @@ What each back-half stage does:
   re-asked. Writes `data/<episode>/shots.json`. Requires Vosk words. Each act's prompt holds only that act's turns, so
   a one-line edit re-directs one act (Meta prompt cache / agent answer files keep the rest).
 - **clips**: LTX hero clips for `clip` shots via LTX Desktop (default) or `LTX_BACKEND=diffusers`; 16:9 crop around
-  the focus (never stretched), forward/reverse boomerang, keyed by content under `public/clips/<episode>/`.
+  the focus (never stretched), forward/reverse boomerang, keyed by content under `public/clips/<episode>/`. Desktop
+  starts at 1080p and retries only a failed missing clip at 720p, then 540p, if the higher tier exhausts VRAM.
 - **contact**: stills at every shot start and end with the runtime layout guard; fails on layout problems or any
   unmeasured frame. Writes `out/<episode>-contact.png` and `out/<episode>-layout.json`.
 - **render**: ~20s segments at shot boundaries, each cached by content (shots, next shot, assets, sheet, years,
