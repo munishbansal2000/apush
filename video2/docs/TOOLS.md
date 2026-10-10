@@ -228,6 +228,8 @@ Remotion Studio. The debug overlay (turn, speaker, tone, time) and red guard out
 
 ## Render & export
 
+**Watch without rendering:** `npm run studio:doc -- u3e1` opens the lesson's current plan in Remotion Studio (live in the browser: play, scrub, inspect frames; layout problems show as red outlines). Run it again after a new build to load the new plan.
+
 Speed settings for the contact sheet and render (`tools/pipeline/stages/doc.ts`): one Chrome per stage, frames and stills in parallel tabs, and the GPU where it helps. On Windows, Chrome draws with the GPU (ANGLE) and H.264 is encoded on an NVIDIA GPU (NVENC) by default.
 
 | Variable | Default | Effect |
