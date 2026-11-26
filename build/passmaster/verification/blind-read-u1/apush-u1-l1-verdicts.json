@@ -1,0 +1,228 @@
+{
+ "id": "apush-u1-l1",
+ "lesson": "apush-u1-l1",
+ "method": "Read the lesson end to end as a student first, then blind-solved all 47 items from the blind files only (blind-u1/apush-u1-l1, verified on disk to carry no misconception fields and no answerKey). Solves recorded in apush-u1-l1-solves.json BEFORE opening any question file. Then adjudicated each item against its key/model answers/rubric and checked every lesson fact against Barron's Ch.3, 5 Steps Ch.6, Princeton Ch.6.",
+ "summary": {
+  "total": 47,
+  "pass": 41,
+  "fail": 6,
+  "mcq": {
+   "total": 36,
+   "pass": 36,
+   "fail": 0,
+   "blind_match": "36/36"
+  },
+  "saq": {
+   "total": 8,
+   "pass": 5,
+   "fail": 3,
+   "parts_matched": "24/24"
+  },
+  "leq": {
+   "total": 3,
+   "pass": 0,
+   "fail": 3,
+   "outlines_scored": "3/3 at 6/6"
+  },
+  "lesson": "PASS with notes"
+ },
+ "disclosures": [
+  "SAQ 0001, 0004, 0008 are the lesson's worked items verbatim, so my solves for those three reproduce the lesson rather than an independent blind solve. The other five SAQs were solved from the stimulus only and match their model answers.",
+  "Blind files verified clean: no misconception fields, no answerKey. The 1.7 blind-file leak does not affect this read.",
+  "Key distribution across the 36 MCQs: A8/B12/C8/D8. No key is longest by more than 1 word in any item (checked programmatically)."
+ ],
+ "verdicts": {
+  "apush-mcq-0001": {
+   "verdict": "PASS",
+   "reason": "Blind pick matched locked key; key, options, rationales and misconceptions all stay inside the stimulus; lesson teaches the tested content."
+  },
+  "apush-mcq-0002": {
+   "verdict": "PASS",
+   "reason": "Blind pick matched locked key; key, options, rationales and misconceptions all stay inside the stimulus; lesson teaches the tested content."
+  },
+  "apush-mcq-0003": {
+   "verdict": "PASS",
+   "reason": "Blind pick matched locked key; key, options, rationales and misconceptions all stay inside the stimulus; lesson teaches the tested content."
+  },
+  "apush-mcq-0004": {
+   "verdict": "PASS",
+   "reason": "Blind pick matched locked key; key, options, rationales and misconceptions all stay inside the stimulus; lesson teaches the tested content. NOTE: the stimulus photograph (Powell's Mound aerial, original-ctx-u1-07.jpg) is a book-page scan with cream margins and a page number on the right edge; genuine and matches its description, but a clean crop would present better. Standing quibble, already flagged to the user."
+  },
+  "apush-mcq-0005": {
+   "verdict": "PASS",
+   "reason": "Blind pick matched locked key; key, options, rationales and misconceptions all stay inside the stimulus; lesson teaches the tested content."
+  },
+  "apush-mcq-0006": {
+   "verdict": "PASS",
+   "reason": "Blind pick matched locked key; key, options, rationales and misconceptions all stay inside the stimulus; lesson teaches the tested content."
+  },
+  "apush-mcq-0007": {
+   "verdict": "PASS",
+   "reason": "Blind pick matched locked key; key, options, rationales and misconceptions all stay inside the stimulus; lesson teaches the tested content."
+  },
+  "apush-mcq-0008": {
+   "verdict": "PASS",
+   "reason": "Blind pick matched locked key; key, options, rationales and misconceptions all stay inside the stimulus; lesson teaches the tested content."
+  },
+  "apush-mcq-0009": {
+   "verdict": "PASS",
+   "reason": "Blind pick matched locked key; key, options, rationales and misconceptions all stay inside the stimulus; lesson teaches the tested content."
+  },
+  "apush-mcq-0010": {
+   "verdict": "PASS",
+   "reason": "Blind pick matched locked key; key, options, rationales and misconceptions all stay inside the stimulus; lesson teaches the tested content."
+  },
+  "apush-mcq-0011": {
+   "verdict": "PASS",
+   "reason": "Blind pick matched locked key; key, options, rationales and misconceptions all stay inside the stimulus; lesson teaches the tested content."
+  },
+  "apush-mcq-0012": {
+   "verdict": "PASS",
+   "reason": "Blind pick matched locked key; key, options, rationales and misconceptions all stay inside the stimulus; lesson teaches the tested content. Checked against the viewed Hart map: the Line of Demarcation (1493) is labeled on the map as the rationale states."
+  },
+  "apush-mcq-0013": {
+   "verdict": "PASS",
+   "reason": "Blind pick matched locked key; key, options, rationales and misconceptions all stay inside the stimulus; lesson teaches the tested content. NOTE (not a fail): rationale D says the 1591 engraving 'shows planting from before Spanish missions reached this region' - the farming depicted predates the Timucua missions, but the engraving was published in 1591, after St. Augustine (1565); the wording is imprecise. Core claim (missions did not introduce the farming) is sound."
+  },
+  "apush-mcq-0014": {
+   "verdict": "PASS",
+   "reason": "Blind pick matched locked key; key, options, rationales and misconceptions all stay inside the stimulus; lesson teaches the tested content."
+  },
+  "apush-mcq-0015": {
+   "verdict": "PASS",
+   "reason": "Blind pick matched locked key; key, options, rationales and misconceptions all stay inside the stimulus; lesson teaches the tested content."
+  },
+  "apush-mcq-0016": {
+   "verdict": "PASS",
+   "reason": "Blind pick matched locked key; key, options, rationales and misconceptions all stay inside the stimulus; lesson teaches the tested content."
+  },
+  "apush-mcq-0017": {
+   "verdict": "PASS",
+   "reason": "Blind pick matched locked key; key, options, rationales and misconceptions all stay inside the stimulus; lesson teaches the tested content."
+  },
+  "apush-mcq-0018": {
+   "verdict": "PASS",
+   "reason": "Blind pick matched locked key; key, options, rationales and misconceptions all stay inside the stimulus; lesson teaches the tested content."
+  },
+  "apush-mcq-0019": {
+   "verdict": "PASS",
+   "reason": "Blind pick matched locked key; key, options, rationales and misconceptions all stay inside the stimulus; lesson teaches the tested content."
+  },
+  "apush-mcq-0020": {
+   "verdict": "PASS",
+   "reason": "Blind pick matched locked key; key, options, rationales and misconceptions all stay inside the stimulus; lesson teaches the tested content."
+  },
+  "apush-mcq-0021": {
+   "verdict": "PASS",
+   "reason": "Blind pick matched locked key; key, options, rationales and misconceptions all stay inside the stimulus; lesson teaches the tested content."
+  },
+  "apush-mcq-0022": {
+   "verdict": "PASS",
+   "reason": "Blind pick matched locked key; key, options, rationales and misconceptions all stay inside the stimulus; lesson teaches the tested content."
+  },
+  "apush-mcq-0023": {
+   "verdict": "PASS",
+   "reason": "Blind pick matched locked key; key, options, rationales and misconceptions all stay inside the stimulus; lesson teaches the tested content."
+  },
+  "apush-mcq-0024": {
+   "verdict": "PASS",
+   "reason": "Blind pick matched locked key; key, options, rationales and misconceptions all stay inside the stimulus; lesson teaches the tested content."
+  },
+  "apush-mcq-0025": {
+   "verdict": "PASS",
+   "reason": "Blind pick matched locked key; key, options, rationales and misconceptions all stay inside the stimulus; lesson teaches the tested content. Checked against the viewed Hutchins 1771 map: villages are marked all along the Mississippi, as rationale A states."
+  },
+  "apush-mcq-0026": {
+   "verdict": "PASS",
+   "reason": "Blind pick matched locked key; key, options, rationales and misconceptions all stay inside the stimulus; lesson teaches the tested content."
+  },
+  "apush-mcq-0027": {
+   "verdict": "PASS",
+   "reason": "Blind pick matched locked key; key, options, rationales and misconceptions all stay inside the stimulus; lesson teaches the tested content."
+  },
+  "apush-mcq-0028": {
+   "verdict": "PASS",
+   "reason": "Blind pick matched locked key; key, options, rationales and misconceptions all stay inside the stimulus; lesson teaches the tested content."
+  },
+  "apush-mcq-0029": {
+   "verdict": "PASS",
+   "reason": "Blind pick matched locked key; key, options, rationales and misconceptions all stay inside the stimulus; lesson teaches the tested content. NOTE (not a fail): skill tag 6.A ('make a claim') fits weakly - the item asks the student to evaluate/qualify a claim, which is 6.D ('corroborate, qualify, or modify an argument'). Consider re-tagging to 6.D."
+  },
+  "apush-mcq-0030": {
+   "verdict": "PASS",
+   "reason": "Blind pick matched locked key; key, options, rationales and misconceptions all stay inside the stimulus; lesson teaches the tested content."
+  },
+  "apush-mcq-0031": {
+   "verdict": "PASS",
+   "reason": "Blind pick matched locked key; key, options, rationales and misconceptions all stay inside the stimulus; lesson teaches the tested content."
+  },
+  "apush-mcq-0032": {
+   "verdict": "PASS",
+   "reason": "Blind pick matched locked key; key, options, rationales and misconceptions all stay inside the stimulus; lesson teaches the tested content."
+  },
+  "apush-mcq-0033": {
+   "verdict": "PASS",
+   "reason": "Blind pick matched locked key; key, options, rationales and misconceptions all stay inside the stimulus; lesson teaches the tested content."
+  },
+  "apush-mcq-0034": {
+   "verdict": "PASS",
+   "reason": "Blind pick matched locked key; key, options, rationales and misconceptions all stay inside the stimulus; lesson teaches the tested content."
+  },
+  "apush-mcq-0035": {
+   "verdict": "PASS",
+   "reason": "Blind pick matched locked key; key, options, rationales and misconceptions all stay inside the stimulus; lesson teaches the tested content."
+  },
+  "apush-mcq-0036": {
+   "verdict": "PASS",
+   "reason": "Blind pick matched locked key; key, options, rationales and misconceptions all stay inside the stimulus; lesson teaches the tested content."
+  },
+  "apush-saq-0001": {
+   "verdict": "FAIL",
+   "reason": "FAIL - all 3 parts have 1-sentence model answers (33/46/34 words); SPEC requires SAQ model answers of 2-4 sentences per part. Content is correct and matches my blind solve, but the length bound is violated on every part. Fix: expand each part to 2 sentences, as was done for the Topic 1.2 SAQs; then re-sync the lesson's worked item 1, which reproduces these answers verbatim."
+  },
+  "apush-saq-0002": {
+   "verdict": "FAIL",
+   "reason": "FAIL - all 3 parts have 1-sentence model answers (25/39/40 words); SPEC requires 2-4 sentences per part. Content correct, matches blind solve. Fix: expand each part to 2 sentences."
+  },
+  "apush-saq-0003": {
+   "verdict": "FAIL",
+   "reason": "FAIL - all 3 parts have 1-sentence model answers (28/44/43 words); SPEC requires 2-4 sentences per part. Content correct, matches blind solve. Fix: expand each part to 2 sentences."
+  },
+  "apush-saq-0004": {
+   "verdict": "PASS",
+   "reason": "All 3 parts matched my blind solve; model answers are 2 sentences per part, stimulus supports the key, lesson teaches the tested content. NOTE (not a fail): part (b) model answer repeats itself - the second sentence restates the first (surplus feeds chiefs/priests and mound labor, said twice). Correct, but padded."
+  },
+  "apush-saq-0005": {
+   "verdict": "PASS",
+   "reason": "All 3 parts matched my blind solve; model answers are 2 sentences per part, stimulus supports the key, lesson teaches the tested content. NOTE: the lesson never teaches Harriot or Roanoke; the item is fair only via the stimulus (which gives the 1585-86 dates and the promotional framing) plus the sourcing skill the lesson teaches through Las Casas and de Bry. No fix owed, but the lesson teaches no English-colonization content."
+  },
+  "apush-saq-0006": {
+   "verdict": "PASS",
+   "reason": "All 3 parts matched my blind solve; model answers are 2 sentences per part, stimulus supports the key, lesson teaches the tested content."
+  },
+  "apush-saq-0007": {
+   "verdict": "PASS",
+   "reason": "All 3 parts matched my blind solve; model answers are 2 sentences per part, stimulus supports the key, lesson teaches the tested content."
+  },
+  "apush-saq-0008": {
+   "verdict": "PASS",
+   "reason": "All 3 parts matched my blind solve; model answers are 2 sentences per part, stimulus supports the key, lesson teaches the tested content."
+  },
+  "apush-leq-0001": {
+   "verdict": "FAIL",
+   "reason": "Rubric rows carry no skill codes on any of the 6 rows, unlike every other LEQ in the unit (0004-0011 carry thesis 6.A, contextualization 4.B, evidence 6.B). The rubric is substantively correct - 6 points on the CB structure, sums to 6, and my blind outline scores 6/6 against it - but the skill metadata is missing. Fix: add per-row skill codes (thesis 6.A, contextualization 4.B, evidence rows 6.B, analysis row 6.C, complexity row 6.D). NOTE: continuity evidence is thin in the lesson - no explicit example of Indigenous resistance or adaptation after contact; the lesson teaches farming continuity and persistence only implicitly. The LEQ is still answerable from the lesson plus reasonable inference; consider adding one explicit continuity example to the lesson."
+  },
+  "apush-leq-0002": {
+   "verdict": "FAIL",
+   "reason": "Rubric rows carry no skill codes on any of the 6 rows, unlike every other LEQ in the unit (0004-0011 carry thesis 6.A, contextualization 4.B, evidence 6.B). The rubric is substantively correct - 6 points on the CB structure, sums to 6, and my blind outline scores 6/6 against it - but the skill metadata is missing. Fix: add per-row skill codes (thesis 6.A, contextualization 4.B, evidence rows 6.B, analysis row 6.C, complexity row 6.D)."
+  },
+  "apush-leq-0003": {
+   "verdict": "FAIL",
+   "reason": "Rubric rows carry no skill codes on any of the 6 rows, unlike every other LEQ in the unit (0004-0011 carry thesis 6.A, contextualization 4.B, evidence 6.B). The rubric is substantively correct - 6 points on the CB structure, sums to 6, and my blind outline scores 6/6 against it - but the skill metadata is missing. Fix: add per-row skill codes (thesis 6.A, contextualization 4.B, evidence rows 6.B, analysis row 6.C, complexity row 6.D)."
+  },
+  "apush-u1-l1": {
+   "verdict": "PASS",
+   "reason": "Lesson read end to end as a student. All flagged facts checked against the books: migration 'as far as 40,000 years' confirmed in Princeton ('from as early as 40,000 years ago to as recently as 15,000'); population '1 to 5 million... another 20 million populated Mexico' confirmed verbatim in Princeton; Tenochtitlan 'more populous than any city in Europe' in 1500 confirmed in Princeton; Iroquois League 'formed in the 1400s' confirmed in Barron's ('dates back to perhaps the fifteenth century'); Chaco 'hundreds of rooms' and 'severe drought in the thirteenth and fourteenth centuries' dispersing Pueblo from the Four Corners confirmed in Barron's; Chinook longhouses 'contained up to fifty people' confirmed in Barron's; Las Casas 3 million to 200 correctly attributed to Las Casas himself with 'figures contested' (Barron's gives a different figure, over a million to 500, so the lesson's hedging is right). Sections 174/288/165/279/161/296 words, all in 150-300; narrative 1,410 words; no paragraph over 90 words; no trap language; worked items 9/9 prompts and 9/9 model answers verbatim against the bank. NOTES (not fails): (1) the Cahokia-London size comparison appears in none of the three books - standard hedged claim, not contradicted; (2) Waldseemuller, Cantino, and Cronon are not named in the books' chapters - standard facts, primary sources cited; (3) the Inca appear only in worked item 1/the SAQ 0001 stimulus, never in the narrative; (4) the lesson teaches no English-colonization content (see SAQ 0005 note); (5) Powell's Mound photo is a book-page scan (standing quibble); (6) worked item 1 must be re-synced when SAQ 0001 is fixed to 2-sentence model answers."
+  }
+ }
+}

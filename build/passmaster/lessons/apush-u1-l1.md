@@ -157,15 +157,15 @@ The stimulus is a short secondary passage: before 1492 the Americas held many di
 
 a. Identify one characteristic of Indigenous societies in the Americas before 1492.
 
-Model answer: One characteristic is variety: the Americas held large cities such as Cahokia, empires such as the Aztec and the Inca, and many smaller farming and hunting societies, each adapted to its own region.
+Model answer: One characteristic is variety: the Americas held large cities such as Cahokia, empires such as the Aztec and the Inca, and many smaller farming and hunting societies, each adapted to its own region. No single way of life covered the continents; societies differed by region, food source, and political scale.
 
 b. Explain how one European development before 1492 helped make transatlantic contact possible.
 
-Model answer: Portuguese sailing down the African coast taught Europeans to use Atlantic winds and currents, and the search for a sea route to Asian spices gave them a reason to sail west, so by 1492 Europeans had both the skill and the motive to cross the ocean.
+Model answer: Portuguese sailing down the African coast taught Europeans to use Atlantic winds and currents, and the search for a sea route to Asian spices gave them a reason to sail west, so by 1492 Europeans had both the skill and the motive to cross the ocean. The caravel and the compass made the crossing possible, and the spice trade made it worth the risk.
 
 c. Explain one way the arrival of Europeans changed Indigenous societies in Period 1.
 
-Model answer: European arrival brought conquest and forced labor, and it also brought diseases such as smallpox to peoples with no immunity, so Indigenous populations fell sharply and many societies lost people, land, and political independence.
+Model answer: European arrival brought conquest and forced labor, and it also brought diseases such as smallpox to peoples with no immunity, so Indigenous populations fell sharply and many societies lost people, land, and political independence. The losses were not only demographic; conquest also broke political structures that had organized whole regions.
 
 How to think about it: part a asks for one fact from the passage, so name the variety and give examples. Part b asks for a cause, so link a European skill to a European motive. Part c asks for a change, so name conquest, forced labor, and disease together.
 
@@ -179,7 +179,7 @@ Model answer: In the arid Southwest, Pueblo peoples farmed dry land and built ad
 
 b. Explain how maize farming helped Mississippian chiefdoms like Cahokia grow large.
 
-Model answer: Maize farming in the fertile river valleys produced surpluses that fed dense populations, and those surpluses supported chiefs, priests, and the labor that raised the mounds. Surplus food freed some people from farming, so a community could feed chiefs and priests and organize the labor that raised the mounds.
+Model answer: Maize farming in the fertile river valleys produced surpluses that fed dense populations, and those surpluses supported chiefs, priests, and the labor that raised the mounds. That surplus is what let a farming town grow into a city with mounds, plazas, and thousands of residents.
 
 c. Explain one similarity between the Pueblo peoples and the Iroquois villagers described in the passage.
 

@@ -92,7 +92,7 @@ Figure 1: A fleet of galleys and lateen-sailed ships. Engraving by Frans Huys af
 
 The money behind the voyages came from a prince who never sailed. Henry the Navigator of Portugal spent decades funding voyages down the African coast and hiring cartographers to map what they found. You may have heard that he ran a navigation school at Sagres. That is mostly legend: there was no formal academy, only a patron paying for ships. The money was real. The school is the story.
 
-The investment paid off slowly, then all at once. In 1488, Bartolomeu Dias rounded the southern tip of Africa. Ten years later, Vasco da Gama sailed on to India, the first European to reach Asia by sea. Portugal owned the African route, and Spain had none of its own. That is the gap Columbus stepped into.
+The investment paid off slowly, then all at once. In 1488, Bartolomeu Dias rounded the southern tip of Africa. Ten years later, Vasco da Gama sailed on to India, the first European to reach India by sea. Portugal owned the African route, and Spain had none of its own. That is the gap Columbus stepped into.
 
 ## Columbus and the wrong map
 
@@ -111,7 +111,7 @@ His first report home set the pattern. In a letter to Luis de Santángel in 1493
 
 Columbus called the lands Asia, but others soon argued they were something else. Amerigo Vespucci, an Italian navigator sailing for Portugal and Spain, wrote letters claiming the western lands were a new world, not part of Asia. In 1507, Martin Waldseemüller published a map that called the western lands America, after Vespucci. It was the first map to use the name.
 
-Johannes Stradanus drew the engraving below around 1600, in a series celebrating new inventions. Amerigo Vespucci stands at the left, holding a flag and an astrolabe, while a Native woman reclines in a hammock and his ships wait at anchor. The image tells you how Europe saw the meeting: the explorer as hero, the land as a woman to be claimed. It is a European imagining, not a record.
+Johannes Stradanus designed the engraving below around 1600, in a series celebrating new inventions. Amerigo Vespucci stands at the left, holding a flag and an astrolabe, while a Native woman reclines in a hammock and his ships wait at anchor. The image tells you how Europe saw the meeting: the explorer as hero, the land as a woman to be claimed. It is a European imagining, not a record.
 
 ![Amerigo Vespucci meets America](u1/5s24-ch06-mcq-01.jpg)
 Figure 3: Amerigo Vespucci meets America. Engraving after Johannes Stradanus, about 1600. Metropolitan Museum of Art, public domain.

@@ -46,32 +46,38 @@
   {
    "points": 1,
    "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, comparing how at least two societies in different environments adapted, with a clear line of reasoning.",
-   "notEarned": "Restating the prompt with no comparison, or naming one society only, does not earn the point."
+   "notEarned": "Restating the prompt with no comparison, or naming one society only, does not earn the point.",
+   "skill": "6.A"
   },
   {
    "points": 1,
    "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as the diversity of Native societies before 1492 or the spread of maize from Mexico across North America.",
-   "notEarned": "A sentence of background with no link to the argument, or background from after European contact, does not earn the point."
+   "notEarned": "A sentence of background with no link to the argument, or background from after European contact, does not earn the point.",
+   "skill": "4.B"
   },
   {
    "points": 1,
    "criterion": "Evidence (first point): earns the point for describing specific and relevant examples of adaptation in one environment, such as Pueblo dry farming and adobe villages in the Southwest.",
-   "notEarned": "General statements about adaptation with no specific example do not earn the point."
+   "notEarned": "General statements about adaptation with no specific example do not earn the point.",
+   "skill": "6.B"
   },
   {
    "points": 1,
    "criterion": "Evidence (second point): earns the point for describing specific and relevant examples of adaptation in a different environment, such as Iroquois three sisters farming in the Northeast or Chinook fishing villages on the Pacific coast.",
-   "notEarned": "Repeating the first environment's example, or naming a second environment with no specific detail, does not earn the point."
+   "notEarned": "Repeating the first environment's example, or naming a second environment with no specific detail, does not earn the point.",
+   "skill": "6.B"
   },
   {
    "points": 1,
    "criterion": "Analysis and reasoning (comparison): earns the point for explaining how the evidence shows similarities and differences between the societies, linking the comparison to the thesis rather than listing examples.",
-   "notEarned": "Listing examples from two regions with no explanation of how they compare does not earn the point."
+   "notEarned": "Listing examples from two regions with no explanation of how they compare does not earn the point.",
+   "skill": "6.B"
   },
   {
    "points": 1,
    "criterion": "Analysis and reasoning (complexity): earns the point for a complex argument, such as qualifying the thesis by showing that similar environments still produced different societies, or that adaptation also transformed the land.",
-   "notEarned": "A second example with no qualification or weighing does not earn the point."
+   "notEarned": "A second example with no qualification or weighing does not earn the point.",
+   "skill": "6.B"
   }
  ],
  "modelOutline": "Thesis: before European contact, Native American societies in North America adapted to their environments in sharply different ways, yet in each case the land set the terms: farming where the land allowed it, fishing where the waters were rich, and movement where food moved.\nContext: diverse Native societies before 1492, from Cahokia to the Pueblo towns, and maize spreading north from Mexico over thousands of years.\nEvidence, Southwest: Pueblo peoples farmed dry land with irrigation and built adobe villages.\nEvidence, Northeast and Pacific coast: Iroquois villagers farmed the three sisters in permanent woodland villages, while Chinook peoples fished, hunted, and foraged in settled villages with marked social ranks.\nComparison: farming tied peoples to fields, while fishing and hunting allowed settled life on the coast but movement on the Plains.\nComplexity: environment set the range of what was possible, not a single outcome, since the Chinook built ranked villages without farming and Pueblo towns dispersed under drought."

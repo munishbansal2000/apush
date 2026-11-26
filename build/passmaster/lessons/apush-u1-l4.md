@@ -90,7 +90,7 @@ Figure 1: Las Casas on Spanish cruelty, A Short Account of the Destruction of th
 
 ## Reform bent, it did not break
 
-Reform did not end forced labor. The New Laws were resisted by colonists who depended on Native workers, and the crown backed away from enforcing them. The system bent and survived. Spain also used a second system, the **repartimiento**, a temporary draft of Native workers for wages, distinct from the encomienda. The compulsory draft began in the last quarter of the 16th century, taking about one in seven men for farm work and about four percent for the mines.
+Reform did not end forced labor. The New Laws were resisted by colonists who depended on Native workers, and the crown backed away from enforcing them. The system bent and survived. Spain also used a second system, the **repartimiento**, a temporary draft of Native workers for wages, distinct from the encomienda. The compulsory draft began in the last quarter of the 16th century: the Andean mita took one in seven men for the Potosí mines, and New Spain's towns supplied four percent of their tributaries each week.
 
 The crown's retreat shows the limit of reform from above. The men who profited from the encomienda sat on the councils that were supposed to enforce the New Laws, and the king in Madrid was an ocean away. Grants were limited on paper, and labor continued in practice, because the crown needed the workers as much as the colonists did: the silver mines and the sugar fields paid for the empire. Reform from Madrid could not beat interest on the ground.
 
@@ -109,7 +109,7 @@ Figure 2: Las Casas, engraved in 1791, about 225 years after his death. Caption 
 
 The encomienda depended on Native workers, and disease destroyed that workforce. Epidemic disease killed enormous numbers of Native people who had no immunity to European illnesses. The mines and plantations still needed workers, and the Native towns kept emptying. The demand for coerced labor never went away. What changed was who was forced to work.
 
-Spain turned to enslaved Africans, brought in under the **asiento**, the crown's monopoly contract for supplying enslaved people to Spanish America. The first asiento was granted in August 1518 to Laurent de Gouvenot, for eight years and a maximum of 4,000 people, at a price of 25,000 ducats. The contract system meant the crown controlled the trade and took a cut of it. The people it moved had no say in any of it.
+Spain turned to enslaved Africans, brought in under the **asiento**, the crown's monopoly contract for supplying enslaved people to Spanish America. The first asiento was granted in August 1518 to Laurent de Gouvenot, for eight years and a maximum of 4,000 people. Gouvenot sold the license on to Genoese merchants for 25,000 ducats. The contract system meant the crown controlled the trade and took a cut of it. The people it moved had no say in any of it.
 
 The shift changed slavery itself. In the older world, slavery had many forms, and it was often not for life. In Spanish America, slavery became lifelong and hereditary: children born to enslaved mothers were born slaves. That break from older slavery is the point to remember. The shift also brought large African populations whose descendants shaped colonial culture, from the food and music to the **Maroon** communities that follow in the next section.
 

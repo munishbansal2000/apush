@@ -93,7 +93,7 @@ In 1972, the historian Alfred Crosby gave a name to the great transfer that foll
 
 Westbound, Europe sent wheat and sugarcane, and the animals the Americas had never seen: horses, cattle, and pigs. For about ten thousand years, no horses had lived on this continent; the native herds had died out in the Ice Age. Every mustang goes back to Spanish imports. Eastbound, the Americas sent maize, potatoes, tomatoes, tobacco, and cacao. One farm animal broke the rule: the turkey sailed east, alongside the maize and potatoes.
 
-The exchange changed what people ate on both sides. Maize did not stop in Europe: it sailed on to Africa, where it became a staple, and to Asia, feeding growth on both continents. The potato fed a population boom across Europe. Centuries later, Ireland depended on one potato variety so completely that a blight became a famine. The rule is simple: the Americas had almost no domesticated farm animals, so the livestock went west, and the crops went both ways.
+The exchange changed what people ate on both sides. Maize did not stop in Europe: it sailed on to Africa, where it became a staple, and to Asia, feeding growth on both continents. The potato fed a population boom across Europe. In the 1840s, Ireland depended on one potato variety so completely that a blight became a famine. The rule is simple: the Americas had almost no domesticated farm animals, so the livestock went west, and the crops went both ways.
 
 The table below sums up the exchange. Read it as a map of the new world economy: food and animals in both directions, and disease in one.
 
@@ -109,7 +109,7 @@ Table 1: The Columbian Exchange in both directions. Disease traveled west only.
 
 The deadliest cargo was the one nobody loaded on purpose. **Smallpox**, measles, and influenza sailed west with the colonists, striking Native peoples who had been separated from the rest of humanity's germs for thousands of years. They had no immunity, no childhood exposure, and no resistance. In the hardest-hit towns, eight or nine out of ten people died.
 
-The numbers are hard to hold in mind, so hold two. On Hispaniola, the island Columbus first settled, the Native population fell from over one million in 1492 to about five hundred by the 1540s. Across the Americas, the Princeton Review estimates that between 50 and 90 percent of Native peoples died between 1500 and 1650. War and slavery helped the dying along, and broken food systems made it worse, but disease led.
+The numbers are hard to hold in mind, so hold two. On Hispaniola, the island Columbus first settled, the Native population fell from over one million in 1492 to about five hundred by the 1540s. Across the Americas, Barron's estimates that between 50 and 90 percent of Native peoples died between 1500 and 1650. War and slavery helped the dying along, and broken food systems made it worse, but disease led.
 
 The dying had a witness. The **Florentine Codex**, compiled by the Franciscan friar Bernardino de Sahagún with **Nahua** scholars in the 1500s, preserves a Nahua account of smallpox in Tenochtitlan. The sick lay in their houses and sleeping places, no longer able to move or stir, while the healthy could not bury the dead fast enough. Whole neighborhoods fell ill at once. The account reaches us through Spanish mediation, so check its details against other records, but the scale of the dying it describes is confirmed by the numbers.
 
@@ -148,9 +148,9 @@ Silver was not the only wealth, and it was not the first to demand forced labor.
 ![Making sugar: cutting cane, crushing it, boiling the juice, molding loaves](u1/gap-g-v01-1-columbian-sugar-engraving.jpg)
 Figure 3: Making sugar: cutting cane, crushing it, boiling the juice, molding loaves. Engraving after Johannes Stradanus, about 1600. Public domain.
 
-Europe already had the machine before the Americas did. On the Atlantic islands of Madeira and São Tomé, Portuguese planters were growing sugar with enslaved African labor in the 1500s. Spain's first answer in the Americas was different: it forced Native workers into the **encomienda**, on plantations and in the mines. As disease emptied the Native towns, the encomienda collapsed, and the island machine moved across the ocean.
+Europe already had the machine before the Americas did. On the Atlantic islands of Madeira and São Tomé, Portuguese planters were growing sugar with enslaved African labor in the 1500s. Spain's first answer in the Americas was different: it forced Native workers into the **encomienda**, on plantations and in the mines. As disease emptied the Native towns, the encomienda faded, and the island machine moved across the ocean.
 
-The scale that followed is hard to overstate. Thousands of enslaved Africans crossed at first, then millions, in the holds of ships sailing west. The same routes that carried sugar west carried people in chains. Those captives were not only taken by Europeans: African kingdoms and merchants had been raiding and selling captives for centuries, and European buyers bought into a trade that already existed. The exchange does not end with crops. It ends with the Middle Passage.
+The scale that followed is hard to overstate. Thousands of enslaved Africans crossed at first, then millions, in the holds of ships sailing west. The same routes that carried sugar west carried people in chains. Those captives were not only taken by Europeans: African kingdoms and merchants had been raiding and selling captives for centuries, and European buyers bought into a trade that already existed. The exchange does not end with crops. It ends with the Middle Passage, the forced Atlantic crossing.
 
 Keep the order straight. The chains came first, on the Atlantic islands, before the silver boom. Silver scaled the machine up; it did not start it. And the Spanish were shipping enslaved Africans across the Atlantic in the 1500s, a century before 1619. The story of slavery in the Americas does not start at Jamestown.
 

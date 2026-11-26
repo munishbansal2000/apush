@@ -67,32 +67,38 @@
   {
    "points": 1,
    "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent of change and naming at least one continuity, with a clear line of reasoning.",
-   "notEarned": "Restating the prompt with no claim about the extent of change, or a claim that ignores continuity, does not earn the point."
+   "notEarned": "Restating the prompt with no claim about the extent of change, or a claim that ignores continuity, does not earn the point.",
+   "skill": "6.A"
   },
   {
    "points": 1,
    "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as diverse Indigenous societies before 1492 or European motives for overseas expansion.",
-   "notEarned": "A sentence of background with no link to the argument, or background from a later century, does not earn the point."
+   "notEarned": "A sentence of background with no link to the argument, or background from a later century, does not earn the point.",
+   "skill": "4.B"
   },
   {
    "points": 1,
    "criterion": "Evidence (first point): earns the point for describing specific and relevant examples of change, such as disease and population loss, conquest, forced labor systems, or the Columbian Exchange.",
-   "notEarned": "General statements about change with no specific example do not earn the point."
+   "notEarned": "General statements about change with no specific example do not earn the point.",
+   "skill": "6.B"
   },
   {
    "points": 1,
    "criterion": "Evidence (second point): earns the point for describing specific and relevant examples of continuity, such as Indigenous resistance and adaptation, surviving cultures and languages, or continuing trade and farming practices.",
-   "notEarned": "Repeating the same change example, or naming a continuity with no specific detail, does not earn the point."
+   "notEarned": "Repeating the same change example, or naming a continuity with no specific detail, does not earn the point.",
+   "skill": "6.B"
   },
   {
    "points": 1,
    "criterion": "Analysis and reasoning (continuity and change): earns the point for explaining how the evidence shows both change and continuity over time, linking examples to the thesis rather than listing them.",
-   "notEarned": "Listing examples with no explanation of how they show change or continuity does not earn the point."
+   "notEarned": "Listing examples with no explanation of how they show change or continuity does not earn the point.",
+   "skill": "6.B"
   },
   {
    "points": 1,
    "criterion": "Analysis and reasoning (complexity): earns the point for a complex argument, such as qualifying the thesis by region or by group, explaining why change was uneven, or weighing change against continuity.",
-   "notEarned": "A second example with no qualification or weighing does not earn the point."
+   "notEarned": "A second example with no qualification or weighing does not earn the point.",
+   "skill": "6.B"
   }
  ],
  "modelOutline": "Thesis: contact from 1491 to 1607 brought deep change to the Americas, above all through disease, conquest, and forced labor, yet Indigenous peoples and practices continued and adapted, so the period was transformation with continuity, not a clean break.\nContext: diverse Indigenous societies before 1492, from Cahokia to the Aztec and Inca empires, and European motives of trade, wealth, and spreading Christianity.\nEvidence of change: smallpox and other diseases cut Indigenous populations; Spanish conquest and the encomienda forced labor on survivors; new crops, animals, and goods crossed the Atlantic in both directions.\nEvidence of continuity: Indigenous peoples resisted, adapted, kept languages and farming practices, and trade networks continued in new forms.\nComplexity: change fell unevenly, sharpest in the Caribbean and central Mexico and slower on the northern frontiers, so the extent of change varied by region and by group."

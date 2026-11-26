@@ -1,0 +1,55 @@
+{
+  "lesson": "apush-u1-l4",
+  "method": "Student read of the lesson first (doubts recorded in apush-u1-l4-solves.json), then blind solve of all 31 items from verification/blind-u1/apush-u1-l4/ only, recorded before any question file was opened. Adjudication against keys/model answers/rubrics and against Barron's Premium 2027 Ch. 3, 5 Steps to a 5 2024 Ch. 6, Princeton Review Ch. 6, plus web checks where the books are silent.",
+  "summary": {"total": 31, "pass": 28, "fail": 3, "mcq": {"total": 24, "pass": 23, "fail": 1, "blind_match": "24/24"}, "saq": {"total": 5, "pass": 5, "fail": 0, "parts_matched": "15/15"}, "leq": {"total": 2, "pass": 1, "fail": 1}},
+  "lesson_verdict": {
+    "id": "apush-u1-l4",
+    "verdict": "FAIL",
+    "length_tone": "PASS: 6 narrative sections 160-293 words, narrative 1,471 words, no paragraph over 90 words (block quotes exempt), no trap language.",
+    "defects": [
+      "Section 'Reform bent, it did not break': 'The compulsory draft began in the last quarter of the 16th century, taking about one in seven men for farm work and about four percent for the mines.' Both figures are misassigned. The one-seventh figure is the Andean mita for the Potosi/Huancavelica MINES (Toledo, 1570s), not farm work; the 4% figure is the New Spain repartimiento weekly levy (1588 Taxco rule, all enterprises), while Britannica gives about 5% for mines and about 10% more for seasonal agricultural work. The sentence reverses the association. Fix in the lesson, e.g. attribute the one-in-seven figure to the mita for the Potosi mines and the 4-5% figure to the New Spain repartimiento levy.",
+      "Section 'Why the labor force changed': 'The first asiento was granted in August 1518 to Laurent de Gouvenot, for eight years and a maximum of 4,000 people, at a price of 25,000 ducats.' The details (August 1518, Gouvenot, eight years, 4,000) are correct, but 'at a price of 25,000 ducats' misattributes the payment: Gouvenot received the grant and SOLD the license to Genoese merchants for 25,000 ducats; he did not pay that price to the Crown. Fix in the lesson: 'Gouvenot promptly sold the license to Genoese merchants for 25,000 ducats.'"
+    ],
+    "notes": [
+      "Voodoo suspicion withdrawn: Princeton Ch. 6 supplement says verbatim 'Religions such as voodoo are a blend of Christianity and tribal animism. Enslaved people sang African songs in the fields as they worked' — the lesson follows its grounding book.",
+      "Palmares in Brazil is Barron's own content (Ch. 3: early 1600s, more than 30,000, conquered by the Portuguese in 1694); the lesson correctly names Brazil and Portuguese forces.",
+      "The two-republics system is not in the three book chapters but is standard and correct (republica de espanoles / republica de indios, separate towns, officials, and obligations).",
+      "The New Laws' content is not mentioned in the three chapters; the lesson cites the New Laws (1542) as a primary source and the content (free subjects, no new grants, grants end at the holder's death, no enslavement) is standard.",
+      "Interpretive gloss with no direct book support: 'The men who profited from the encomienda sat on the councils that were supposed to enforce the New Laws.' Plausible, but the lesson's own analysis, not a book fact.",
+      "Valladolid debate 1550-1551 and 'Sepulveda never visited the Americas' are not in the three book chapters but are confirmed by standard sources; the lesson's phrasing 'Las Casas argued against Sepulveda' is the standard shorthand for sequential presentations to the royal committee, which reached no verdict."
+    ]
+  },
+  "verdicts": {
+    "apush-mcq-0087": {"verdict": "PASS", "reason": "Blind pick C matches key C. Rationale stays inside the Las Casas excerpt."},
+    "apush-mcq-0088": {"verdict": "PASS", "reason": "Blind pick D matches key D. Note (not a fail): general step 3 says 'He says the Indians offered no injury' — a fair paraphrase of the excerpt's 'humility and patience,' but the excerpt does not literally say 'no injury'; consider softening to 'the passage describes humble, patient inhabitants.'"},
+    "apush-mcq-0089": {"verdict": "PASS", "reason": "Blind pick A matches key A. Sourcing judgment sound; rationale B correctly notes Las Casas lived in the Americas for decades."},
+    "apush-mcq-0090": {"verdict": "PASS", "reason": "Blind pick B matches key B. Key is 36 words vs distractor D 37 words; no length tell."},
+    "apush-mcq-0091": {"verdict": "PASS", "reason": "Blind pick A matches key A. Stimulus and lesson agree on protection and Christian instruction as the stated terms."},
+    "apush-mcq-0092": {"verdict": "PASS", "reason": "Blind pick D matches key D. New Laws content matches the lesson and the standard account."},
+    "apush-mcq-0093": {"verdict": "PASS", "reason": "Blind pick A matches key A. Inference from the stimulus is sound."},
+    "apush-mcq-0094": {"verdict": "PASS", "reason": "Blind pick C matches key C. Note (not a fail): option C calls the encomienda 'a permanent grant' while the lesson teaches the New Laws ordered grants to end at the holder's death; the contrast (lasting grant vs temporary draft) is standard, but 'lasting grant' would match the item's own rationale and the lesson better."},
+    "apush-mcq-0095": {"verdict": "PASS", "reason": "Blind pick B matches key B. Directly supported by the stimulus."},
+    "apush-mcq-0096": {"verdict": "PASS", "reason": "Blind pick D matches key D. Directly supported by the stimulus."},
+    "apush-mcq-0097": {"verdict": "PASS", "reason": "Blind pick C matches key C. Inference sound."},
+    "apush-mcq-0098": {"verdict": "PASS", "reason": "Blind pick B matches key B. Claim evaluation sound."},
+    "apush-mcq-0099": {"verdict": "PASS", "reason": "Blind pick C matches key C. Label reading correct."},
+    "apush-mcq-0100": {"verdict": "PASS", "reason": "Blind pick B matches key B. Key is longest by exactly 1 word (13 vs 12), within tolerance."},
+    "apush-mcq-0101": {"verdict": "PASS", "reason": "Blind pick A matches key A. Distinct angle from the other casta items (why labels multiplied)."},
+    "apush-mcq-0102": {"verdict": "PASS", "reason": "Blind pick B matches key B. 'Torna atras' reading is correct and supported by the stimulus translation."},
+    "apush-mcq-0103": {"verdict": "PASS", "reason": "Blind pick A matches key A. The 16-panel image was viewed: 16 panels confirmed, first panel 'Espanol con India, Mestizo', last 'Noteentiendo con India, Tornaatras', matching the stimulus. Keeper of the pair; 0104 is the duplicate."},
+    "apush-mcq-0104": {"verdict": "FAIL", "reason": "Near-duplicate of 0103: same stimulus image (the 16-panel casta canvas, original-u1-encomienda-20.jpg), same concept, same keyed proposition (ancestry classification was systematic/formal). Blind solve needed no new knowledge beyond 0103. Fix: re-author on a different angle — the lesson teaches the casta paintings are 18th-century evidence, not 1500-1607 evidence, and no MCQ tests that dating limitation — or drop it. Keep 0103 (test pool). Minor note: the stem repeats the stimulus description verbatim."},
+    "apush-mcq-0105": {"verdict": "PASS", "reason": "Blind pick A matches key A. Significance judgment sound and consistent with the lesson."},
+    "apush-mcq-0106": {"verdict": "PASS", "reason": "Blind pick C matches key C. Purpose/sourcing judgment sound; 'never visited' is confirmed by standard sources."},
+    "apush-mcq-0107": {"verdict": "PASS", "reason": "Blind pick B matches key B. Definition matches the lesson and the standard account."},
+    "apush-mcq-0108": {"verdict": "PASS", "reason": "Blind pick C matches key C. Hereditary, race-based reading is supported by the stimulus and the lesson."},
+    "apush-mcq-0109": {"verdict": "PASS", "reason": "Blind pick B matches key B. Palmares facts match Barron's verbatim (early 1600s, more than 30,000, conquered 1694)."},
+    "apush-mcq-0110": {"verdict": "PASS", "reason": "Blind pick B matches key B. Evidence-use judgment sound."},
+    "apush-saq-0020": {"verdict": "PASS", "reason": "Blind solve 3/3 parts match the model answers. Part (c) is answerable from the stimulus in general terms and richly from the lesson (hereditary slavery, Maroon communities, casta system), which the lesson teaches."},
+    "apush-saq-0021": {"verdict": "PASS", "reason": "Blind solve 3/3 parts match. Part (c) requires the lesson ('Sepulveda never visited the Americas'), which the lesson teaches — fair under the known beyond-stimulus pattern."},
+    "apush-saq-0022": {"verdict": "PASS", "reason": "Blind solve 3/3 parts match. Parts (b) and (c) require lesson knowledge (New Laws campaign; 1791, 225 years), which the lesson teaches; worked item is verbatim against the bank (checked programmatically)."},
+    "apush-saq-0023": {"verdict": "PASS", "reason": "Blind solve 3/3 parts match. Model answer's 'Spaniards greatly outnumbered, Spanish men greatly outnumbered Spanish women' is verbatim Barron's Ch. 3."},
+    "apush-saq-0024": {"verdict": "PASS", "reason": "Blind solve 3/3 parts match. Parts (b) and (c) require lesson knowledge (Las Casas campaign; colonist resistance and weak enforcement), which the lesson teaches — fair."},
+    "apush-leq-0007": {"verdict": "PASS", "reason": "Blind thesis and outline match the model outline (disease most important; New Laws and asiento secondary; causes worked together). Note (not a fail): the model outline's '50 and 90 percent of Native peoples by 1650' is Barron's-verbatim but extends past the prompt's 1607 end; consider the Hispaniola collapse example instead."},
+    "apush-leq-0008": {"verdict": "FAIL", "reason": "Model outline thesis and rubric analysis criterion require a point the lesson never teaches: 'wealth could soften a rank without erasing it' / 'mixing and wealth could shift a person's lived position.' The lesson teaches mixing producing new categories, but nothing about wealth softening rank, and the formal mechanism for it (gracias al sacar) is late 18th century, outside the 1500-1607 window. A student working only from the lesson cannot earn the analysis points as written. Fix in the question: drop 'and wealth' from the rubric analysis criterion and the wealth clause from the model thesis; the mixing point the lesson teaches carries the complexity."}
+  }
+}
