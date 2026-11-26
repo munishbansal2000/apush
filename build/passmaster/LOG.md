@@ -1492,3 +1492,213 @@ Re-authored apush-mcq-0104 in place: it duplicated 0103 (same 16-panel casta sti
 ## 2026-11-26 — Blind read fix re-verification (independent verifier)
 
 22/22 PASS, 0 FAIL. All 11 MCQ blind picks matched keys; all 15 SAQ parts matched model answers on substance; all 6 LEQ outlines scored 6/6 against their rubrics and matched the model outlines. Every fix from the blind-read round confirmed resolved on disk: siege timing in 0141/0140/LEQ 0011 (late 1520, before the siege); invented "two or three percent" gone from 0142 and the arms race no longer attributed to the passage; 0150 key D derivable from the stimulus; 0050 "landed"; 0044 Magellan 1520; 0060 silver financed Spain; 0094 "lasting"; 0013 Le Moyne 1560s; 0029 skill 6.D; SAQ 0001-0003 all parts exactly 2 sentences; 0004(b) no longer repeats itself; 0016 stimulus states Las Casas's purpose; LEQ 0001-0003 rubric codes 6.A/4.B/6.B/6.B/6.B/6.B; LEQ 0004 rows 2/3 at 4.B/6.B; LEQ 0008 zero "wealth" in the file; 0104 re-authored on the dating limitation (key D, 82-word key explanation, options 11/16/14/15, no length tell, no duplication of 0103) — ready to flip to final. Lesson spots all pass: L2 India by sea / Stradanus designed; L3 Barron's attribution, 1840s famine, "encomienda faded", Middle Passage defined, Section 5 at 297 words; L4 repartimiento and asiento sentences; L1 worked items 1 and 2 verbatim, 2 sentences per part. Defect-class census clean across bank and lessons: "during the siege" 0, "during the 1520 siege" 0, "two or three percent" 0, "sailed in October" 0, "permanent grant/claim" 0. Validator: 194 questions, 5 lessons, 0 errors, 62 warnings (2 above the pre-fix 60 are the expected draft counts for 0104). Note, not a defect: 0050 option A's misconception still says "sailed the same year", which is true — Columbus did sail in 1492; only "sailed in October" was wrong.
+
+## 2026-11-26 — Creative director voice pilot (his order: "You are the creative director")
+
+Direction: story-first explanations — one vivid device per item, facts and keys untouched, steps + Remember structure kept. Pilot installed on three items' general notes only (keys, options, stimuli, per-option rationales untouched; validator 0 errors after): 0141 "the army nobody could see" (smallpox as the unfair fighter), 0104 "the yearbook test" (18th-century canvas for a 1500 question), 0060 "the lottery winner" (Spain hit the jackpot and ended up poorer). His eye judges the pilot; if it lands, the voice scales across the bank.
+
+## 2026-11-26 — Voice pass Topic 1.1 (creative-director voice; writer per parent order "Go")
+
+Rewrote the general explanation notes of all 12 Topic 1.1 MCQs in the pilot voice (story-first, one vivid device per item, facts identical, numbered steps + Remember kept, no trap language). Only `rationales.general` changed in each file; keys, options, stems, stimuli, per-option rationales, and all metadata untouched. Validator after: 0 errors, 61 warnings (pre-existing).
+- 0001 "the angry pen" — Las Casas writing to Prince Philip, his pen angry — 98w
+- 0002 "the lawyer's damages" — a writer making a case stresses the largest losses — 103w
+- 0003 "the date stamp" — 1542, fifty years after first contact, conquest already under way — 94w
+- 0004 "the hill no river built" — moving a mound one basket at a time — 96w
+- 0005 "a skyline before Columbus" — cities, farming, wide trade centuries before contact — 87w
+- 0006 "the same league" — Cahokia beside other complex societies, on its own terms — 95w
+- 0007 "the name that broke the map" — a new name because the old label no longer fit — 92w
+- 0008 "the thank-you on the map" — Waldseemuller naming the lands from Vespucci — 87w
+- 0009 "the old professor and the young explorer" — Ptolemy and Vespucci sharing a page — 95w
+- 0010 "the ledger" — read the table row by row, stop at the first mainland entry — 83w
+- 0011 "one trip is a visit" — four crossings make a lasting link, not a single event — 76w
+- 0012 "a fence on water" — the Line of Demarcation as a boundary drawn on the ocean — 118w
+
+## 2026-11-26 — Voice pass Topic 1.1 verification
+
+12/12 rewritten general notes checked against each item's key, stem, stimulus, figures, and per-option rationales (Hart 1906 map viewed in full and in zoomed crops for 0010/0012); word counts 76-118, no trap language, validator 0 errors. **11 PASS, 1 FAIL.**
+- FAIL apush-mcq-0012: general step 3 attributes "100 leagues west of the Azores and Cape Verde" to the map label. The map labels the line only "LINE OF DEMARCATION (1493)". The measurement is true history (1493 papal bull) but is not on the map; fix is to state it as background knowledge, not as a label reading.
+
+## 2026-11-26 — Voice pass Topic 1.2 (creative-director voice)
+
+Rewrote the `rationales.general` of 22 of the 24 Topic 1.2 MCQs (0013-0036), story-first, one vivid device each, numbered steps + Remember kept, facts identical to each item's key/stimulus/books. Only the general string changed in each file (surgical replacement, reload-diff verified); keys, options, stems, stimuli, figures, per-option rationales, skills, difficulty, pool, topics, grounding, status untouched. Background facts are framed as background, never as readings of the stimulus (0022: "Start with background, not the map"; 0018/0036: "Background from the books"). Left unchanged as already vivid and story-first: 0016 (salesmanship) and 0017 (dressed scenes / style as evidence). Validator: 0 errors, 61 warnings (the 1 non-quota warning is the pre-existing pilot artifact on 0104, general 117w vs question 112w, out of this topic's scope).
+- 0013 planted field as a signature, 103w
+- 0014 two jobs, one household, 88w
+- 0015 telephone across an ocean, 107w
+- 0018 two cities, one root, 83w
+- 0019 the lab test, 84w
+- 0020 the surplus as a bridge, 80w
+- 0021 three witnesses agreeing, 83w
+- 0022 the river as a free fertilizer delivery, 80w
+- 0023 London's twin, 95w
+- 0024 the mute witness, 93w
+- 0025 passport stamps, 82w
+- 0026 three sisters sharing one house, 79w
+- 0027 the pantry that never moves, 82w
+- 0028 a three-story house, 83w
+- 0029 one ingredient doesn't make the meal, 77w
+- 0030 the desert's own brick, 81w
+- 0031 the fingerprint, 83w
+- 0032 the land wrote the menu, 92w
+- 0033 the surplus pays the salaries, 82w
+- 0034 wrong shoes on the wrong feet, 97w
+- 0035 sorting into two piles, 86w
+- 0036 a second road to the same town, 83w
+
+## 2026-11-26 — Voice pass Topic 1.2 verification
+
+24/24 PASS, 0 FAIL. Every general in apush-mcq-0013 through apush-mcq-0036 (74-107 words, all inside 60-120) checked against its item's key, stem, stimulus, figures, and per-option rationales; 0016/0017 checked as they stand (writer left them unchanged) and both match their keys. No fact contradicted by the item or the books; no misattribution to the stimulus (0018's maize dependence and 0036's Columbia River detail are honestly flagged as book background; 0025's copper/shells are stated in the stimulus itself); no trap language. Vivid devices judged accurate throughout: 0015 "game of telephone", 0021 "three witnesses", 0028 "three-story house", 0032 "the land wrote the menu", 0036 "a second road to the same town".
+
+## 2026-11-26 — Voice pass Topic 1.3 (creative-director voice)
+
+All 22 Topic 1.3 MCQ general notes rewritten story-first, one vivid device each, facts identical to the item's prior general + key + stimulus + books, numbered steps + Remember kept, background facts tagged "Background from the books:" where they do not come from the visible stimulus. Only `rationales.general` changed in each file (asserted per file before writing). Validator after: 0 errors, 60 warnings (no new warnings, none on 1.3).
+- 0037 "the referee" (two crowns arguing over a prize) — 108w
+- 0038 "the bargain" (judge the trade by what Portugal valued) — 104w
+- 0039 "accepting the judge" (authority both sides recognize) — 100w
+- 0040 "the detour" (the ship built to go around by sea) — 96w
+- 0041 "the sail that brings you home" (beating back against the wind) — 97w
+- 0042 "the locked door" (Portugal owns the only road) — 101w
+- 0043 "the moment the old map broke" (America, not Asia) — 87w
+- 0044 "a name is a claim" (the map stops calling it Asia) — 99w
+- 0045 "who acts, who is acted upon" (measuring man vs reclining scene) — 89w
+- 0046 "the borrowed weapon" (Las Casas's words in rival hands) — 103w
+- 0047 "one text, two audiences" (same words, new mouth) — 86w
+- 0048 "the nickname 400 years late" (Black Legend, 1914) — 86w
+- 0049 "the habit packing its bags" (crusade culture crosses the Atlantic) — 89w
+- 0050 "one year, two jobs" (Granada in January, the Caribbean in October) — 86w
+- 0051 "hands full" (England busy at home and at war) — 91w
+- 0052 "the scouts who never stayed" (explored early, settled a century later) — 81w
+- 0053 "why a fort, not a town" (Fort Caroline and the rival on the coast) — 93w
+- 0054 "the watchtower that never retired" (a fort guarding the silver road) — 94w
+- 0055 "freeze the frame" (gifts, guns, and a cross in one scene) — 90w
+- 0056 "the artist who never went" (de Bry painting a shore he never saw) — 87w
+- 0057 "the crowdfunded colony" (many investors share one bill) — 89w
+- 0058 "two deeds, two owners" (private investors vs two crowns) — 88w
+
+## 2026-11-26 — Voice pass Topic 1.3 verification
+
+22/22 PASS, 0 FAIL. Each general checked against its item's key, stem, stimulus, figures, and per-option rationales, plus programmatic checks (all 81-108 words, inside 60-120; zero trap-language hits; book-sourced facts explicitly labeled "Background from the books"). Spot book checks: 0053's "Potosi silver sailed from Havana" matches its own rationale A and no book passage contradicts "no fur trade"; 0050's "nine months later" is the corrected Jan-to-Oct count; 0058's "pope mediated rather than decreed" matches rationale D. Vivid devices judged accurate throughout (two men arguing over a prize, the locked door, the weapon changing hands, the watchtower that never retired, the crowd-funded colony).
+
+## 2026-11-26 — Voice pass Topic 1.4 (creative director order)
+
+Rewrote the general explanation notes of 26 of the 28 Topic 1.4 MCQs in the story-first voice (pilot devices: 0141 "the army nobody could see", 0104 "the yearbook test", 0060 "the lottery winner"). Only `rationales.general` changed in each file; keys, options, stems, stimuli, per-option rationales, skills, difficulty, pool, topics, grounding, and status untouched. 0060 not touched (pilot). 0070 left as-is: its general already reads vivid and story-first ("Count the soldiers. Cortes landed with about 500 men...").
+- 0059 the mountain paying the bills — 90w
+- 0061 the artist who never went — 91w
+- 0062 customs officer at the Atlantic — 76w
+- 0063 a one-way street — 79w
+- 0064 the trade on a scale — 84w
+- 0065 one seed around the world — 80w
+- 0066 the killer that came first — 98w
+- 0067 a city that cannot bury its dead — 91w
+- 0068 the math of a hemisphere — 89w
+- 0069 the other side of the story — 89w
+- 0070 already vivid, left unchanged
+- 0071 changing the gods on the wall — 84w
+- 0072 a letter to the boss — 92w
+- 0073 two ledgers — 80w
+- 0074 a mystery with two suspects — 86w
+- 0075 two lists that don't match — 80w
+- 0076 a bucket with three holes — 83w
+- 0077 a fortune eaten, not planted — 87w
+- 0078 a mine in the Andes paying for a war in Europe — 82w
+- 0079 an assembly line with no machines — 77w
+- 0080 a recipe that already existed — 83w
+- 0081 two roads to the same port — 87w
+- 0082 a city drawn before it was built — 88w
+- 0083 a house already split — 86w
+- 0084 new owners, same machine — 85w
+- 0085 three rows, one story — 84w
+- 0086 a lifetime's collapse — 90w
+Validator after the pass: 194 questions, 5 lessons, 0 errors, 60 warnings (warning count unchanged; every new general is shorter than its question).
+
+## 2026-11-26 — Voice pass Topic 1.4 verification (independent verifier)
+
+Checked all 28 rewritten general notes (MCQ 0059-0086) against each item's answerKey, stem, stimulus, figures, and per-option rationales, with book checks where a fact was in doubt (Barron's Ch. 3 confirms the 50-90% mortality figure and smallpox as the central killer). Result: 28/28 PASS, 0 FAIL. All generals in the 60-120 word band (76-120; 0060 at exactly 120), no trap language. Spot notes: 0060's "ended up poorer" is book-grounded (Barron's silver-paradox passage, the same passage as 0076-0078's stimulus) and presented as history, not as the item's stimulus content; 0066's "within weeks" is consistent with the Codex account of whole neighborhoods falling ill at once and with 0067's rationale that disease ran ahead of the soldiers; 0086's "died or was left unable to work" matches the stimulus (the sick unable to move) and the item's own rationale D. No lesson or question file was edited.
+
+## 2026-11-26 — Voice pass Topic 1.5 (23 MCQs, 0087-0110 except 0104)
+
+Story-first general notes, one vivid device per item, facts identical to the item's key + stimulus + books, numbered steps + Remember kept. Only `rationales.general` changed in each file; 0104 untouched (pilot "yearbook test" general already in place). Validator after the pass: 194 questions, 5 lessons, 0 errors, 60 warnings (all pre-existing unit-quota warnings for unwritten units; none on the 23 touched items). One draft overshot on first write: 0103's general counted 94w against a 94w question and had to be trimmed to 88w to stay strictly shorter than its question.
+- 0087 "the advocate's brief" — 109w
+- 0088 "let the author name the crime" — 102w
+- 0089 "the witness in two hats" — 97w
+- 0090 "the portrait painted to win a case" — 104w
+- 0091 "the bargain with fine print" — 98w
+- 0092 "the speed limit, not the road closure" — 92w
+- 0093 "the advertisement vs the record" — 102w
+- 0094 "two different leases" — 111w
+- 0095 "the same machine with new fuel" — 89w
+- 0096 "the mines with no workers left" — 86w
+- 0097 "the dam that redirects the river" — 90w
+- 0098 "the victory lap taken too early" — 97w
+- 0099 "the filing tag" — 83w
+- 0100 "widen the frame" — 90w
+- 0101 "the field guide of labels" — 97w
+- 0102 "read the fear, not just the category" — 88w
+- 0103 "the shop-window catalog" — 88w
+- 0105 "the courtroom where the verdict is not the story" — 94w
+- 0106 "the lawyer, not the traveler" — 105w
+- 0107 "the franchise for sale" — 94w
+- 0108 "the door that locks behind your children too" — 94w
+- 0109 "the city in the hills no king ordered built" — 89w
+- 0110 "seeds carried across an ocean in a pocket" — 100w
+
+## 2026-11-26 — Voice pass Topic 1.5 verification (independent verifier)
+
+Read all 24 rewritten generals (MCQ 0087-0110) against each item's key, stem, stimulus, figures, and per-option rationales, plus Barron's Ch. 3 where a fact was in doubt. Result: 23/24 PASS, 1 FAIL. All generals 60-120 words; no trap language anywhere.
+- FAIL apush-mcq-0088: general step 3 says "He says the Indians offered no injury, so self-defense fails too." The visible Las Casas stimulus never says that — "injury" appears nowhere in the item except in the general itself. The verified rationale C says only that nothing in the excerpt describes self-defense. Same misattribution class the Topic 1.5 fix round already corrected in this item's rationale C. Fix: reword step 3 to stay inside the excerpt.
+- 0092's "opened the way to the repartimiento" checked against Barron's Ch. 3 ("repartimiento reforms begin to replace the encomienda system") — supported, PASS.
+
+## 2026-11-26 — Voice pass Topic 1.6 (creative-director voice)
+
+All 28 Topic 1.6 MCQ general notes rewritten story-first, one vivid device per item, facts identical to the item's current general + key + stimulus + books, numbered steps + Remember kept, background facts marked "Background:" where they come from the books rather than the visible stimulus (0115 Sepúlveda never visiting the Americas; 0121 Spaniards few and far from help; 0125 English settlement bringing whole families). Only `rationales.general` changed in each file; keys, options, stems, stimuli, figures, per-option rationales, skills, difficulty, pool, topics, grounding, and status untouched. No Topic 1.6 general already read vivid and story-first, so all 28 were rewritten. Validator after: 194 questions, 5 lessons, 0 errors, 60 warnings (pre-existing unit quotas, unchanged).
+- 0111 "a field report landing on a king's desk" — 104w
+- 0112 "a letter as a mirror of its author" — 92w
+- 0113 "hear the objection" — 85w
+- 0114 "a courtroom where the judges argue from old books" — 91w
+- 0115 "the debater who argued from a library" — 85w
+- 0116 "two lawyers, one rulebook" — 82w
+- 0117 "a lid pressed down harder and harder" — 88w
+- 0118 "hold the claim up to the light" — 76w
+- 0119 "two different uniforms doing the same job" — 92w
+- 0120 "find the spark" — 89w
+- 0121 "read the punishment as a message" — 92w
+- 0122 "two different roads to the same fire" — 90w
+- 0123 "do the arithmetic" — 84w
+- 0124 "people the old labels could not file" — 92w
+- 0125 "look at who got off the boats" — 93w
+- 0126 "follow the furs to their source" — 79w
+- 0127 "a business whose workers you cannot replace" — 84w
+- 0128 "each empire's shopping list" — 72w
+- 0129 "old songs in a new place" — 92w
+- 0130 "go looking for the thing it says is gone" — 87w
+- 0131 "a faith wearing a borrowed coat" — 80w
+- 0132 "a road with traffic in both directions" — 80w
+- 0133 "follow one seed across an ocean" — 86w
+- 0134 "the flinch before the ride" — 88w
+- 0135 "look at center stage" — 83w
+- 0136 "the artist's fingerprint" — 90w
+- 0137 "whose camera is holding the scene" — 90w
+- 0138 "weigh what each side of the story gives you" — 96w
+
+## 2026-11-26 — Voice pass Topic 1.6 verification
+
+28/28 PASS, 0 FAIL. Every rewritten general in apush-mcq-0111 through 0138 was checked against its item's answerKey, stem, stimulus, figures, and per-option rationales; no fact contradicted the item or the books, no key or rationale was contradicted, no claim was misattributed to a stimulus (background claims are flagged as Background in the text and match the rationales), no trap language (the only "trap" substrings are "trappers" in 0126 and "trapping" in 0127 — fur-trade content words), and all generals fall in 60-120 words (72-104w). Verdicts in verification/voice-1.6-verdicts.json.
+
+## 2026-11-26 — Voice pass Topic 1.7 (last topic; creative director's direction)
+
+All 11 remaining Topic 1.7 MCQ generals re-voiced story-first, one device each, facts identical to the item's current general + key + stimulus + books, numbered steps + Remember kept (Remember lines retained verbatim — all were already strong). Only `rationales.general` changed in each file; keys, options, stems, stimuli, per-option rationales, skills, difficulty, pool, topics, grounding, status untouched. 0141 ("the army nobody could see") not touched. Validator after: 194 questions, 5 lessons, 0 errors, 60 warnings.
+- 0139 "the house with no one left standing" (sickroom where the nurse is also the patient) — 109w
+- 0140 "the math that doesn't add up" (hundreds with steel vs millions) — 110w; isolation fact marked "Background from the books:"
+- 0142 "the guest who never unpacks" (silver arrives in Seville and leaves again) — 103w
+- 0143 "the fever spreading" (one country's money gives the neighborhood a fever) — 91w
+- 0144 "the silver on a scale" (mountains in, poverty out) — 98w
+- 0145 "rivals loading a weapon" (Las Casas's book as ammunition in someone else's war) — 85w
+- 0146 "the stool with three legs" (account, press, audience) — 97w
+- 0147 "the merchant pointing at his rival's rotten stock" (Spain's bad reputation as England's advertisement) — 88w
+- 0148 "whose purse paid for the timber" (the purse that launched the ships) — 108w; "crowns paid" marked "Background from the books:"
+- 0149 "the toll booth that tripled its price" (Constantinople 1453) — 93w
+- 0150 "two gamblers at one table" (Portugal holding a winning hand, Spain with empty pockets) — 91w
+Topic 1.7 now fully voiced: 12/12 MCQs (0141 pilot + 11 here). Unit 1 voice pass complete across all 150 MCQs.
+
+## 2026-11-26 — Voice pass Topic 1.7 verification
+
+12/12 PASS, 0 FAIL. Every general in apush-mcq-0139 through apush-mcq-0150 checked against its key, stem, stimulus, figures, and per-option rationales. Word counts 85-120 (0141 at exactly 120, inside the band); no trap language anywhere. Closest calls, all passed: 0139's "nobody stands to nurse" matches the item's own blind-verified key rationale despite the leaning figure in the image; 0143's "wars grew" matches rationale B ("silver paid for more war, not less"); 0148's crowns-paying claim is honestly tagged "Background from the books" rather than attributed to the stimulus. No question or lesson file edited.

@@ -1,0 +1,77 @@
+{
+ "method": "Each general checked against its item's answerKey, stem, stimulus, figures, and per-option rationales; the Hart 1906 map was viewed in full and in zoomed crops for 0010/0012. Word counts and trap-language check run programmatically; validator 0 errors.",
+ "verdicts": [
+  {
+   "id": "apush-mcq-0001",
+   "verdict": "PASS",
+   "words": 98,
+   "note": "Las Casas writing to Prince Philip, purpose to stop cruelty, matches stimulus and rationale B; no trap language."
+  },
+  {
+   "id": "apush-mcq-0002",
+   "verdict": "PASS",
+   "words": 103,
+   "note": "Persuasion purpose and contested three-million-to-two-hundred figures match stimulus and rationale C; lawyer analogy is accurate reasoning."
+  },
+  {
+   "id": "apush-mcq-0003",
+   "verdict": "PASS",
+   "words": 94,
+   "note": "1542 is fifty years after 1492; conquest-and-forced-labor context matches rationale A."
+  },
+  {
+   "id": "apush-mcq-0004",
+   "verdict": "PASS",
+   "words": 96,
+   "note": "Mound description matches the photograph; organized-labor inference matches rationale D; Cahokia height 1100-1200 matches stimulus."
+  },
+  {
+   "id": "apush-mcq-0005",
+   "verdict": "PASS",
+   "words": 87,
+   "note": "City, maize, and valley-wide trade match stimulus; 'skyline before Columbus' is an accurate vivid device."
+  },
+  {
+   "id": "apush-mcq-0006",
+   "verdict": "PASS",
+   "words": 95,
+   "note": "Permanent center 1100-1200 and complex-society comparison match stimulus and rationale C."
+  },
+  {
+   "id": "apush-mcq-0007",
+   "verdict": "PASS",
+   "words": 92,
+   "note": "First map to name the lands America; earlier treatment as Asia's edge is standard history; matches rationale A."
+  },
+  {
+   "id": "apush-mcq-0008",
+   "verdict": "PASS",
+   "words": 87,
+   "note": "Vespucci's new-world letters and Waldseemuller's naming match stimulus and rationale D; 'thank-you written on the map' is an accurate device."
+  },
+  {
+   "id": "apush-mcq-0009",
+   "verdict": "PASS",
+   "words": 95,
+   "note": "Ptolemy-as-classical-authority / Vespucci-as-new-voyages pairing and change-on-continuity match rationale B."
+  },
+  {
+   "id": "apush-mcq-0010",
+   "verdict": "PASS",
+   "words": 83,
+   "note": "Table rows read correctly; route 3 to Trinidad and the Orinoco coast confirmed by viewing the Hart map (dashed route 3 reaches Trinidad, Rio Dulce/Rio Verde)."
+  },
+  {
+   "id": "apush-mcq-0011",
+   "verdict": "PASS",
+   "words": 76,
+   "note": "Four voyages 1492-1504, settlers on the second, and sustained-colonization pattern match rationale A and the table; settlers fact is in the item's own rationale A and is historically accurate."
+  },
+  {
+   "id": "apush-mcq-0012",
+   "verdict": "FAIL",
+   "words": 118,
+   "note": "Step 3 misattributes a claim to the stimulus: 'Read the label on the map. It calls the line the Line of Demarcation of 1493, the papal line, 100 leagues west of the Azores and Cape Verde.' Viewed the Hart map (full image and a zoomed crop of the demarcation line): the label reads only 'LINE OF DEMARCATION (1493)'. The 100-leagues measurement is true history (1493 papal bull Inter Caetera) but is not on the map, and the general presents it as part of what the label says. Same defect class as the earlier 0088/0143/0144 stimulus-attribution fixes. Fix: keep the label reading, state the 100-leagues fact as background knowledge rather than as a label reading."
+  }
+ ]
+}
