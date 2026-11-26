@@ -112,6 +112,26 @@ toward the bank questions for its topics. Lessons live under
 - Data stimuli (charts, tables) cite their numbers' source in the caption
   or the question's `source` field. Numbers must be real and checkable.
 
+### Generated illustrations in lessons (locked 2026-11-26, his "Ok, go")
+
+- Generated images are allowed IN LESSONS ONLY, never as question stimuli.
+  A question's stimulus must be a real artifact or a code-rendered chart
+  from real numbers; a generated picture presented as historical evidence
+  is fake evidence, and the student would learn invented details as history.
+- In a lesson, a generated image may only be a CONCEPT illustration: a
+  diagram, schematic, or flow (e.g. triangular trade routes, how the
+  encomienda system moved labor). Never a fake historical artifact,
+  document, portrait, or period scene.
+- Every generated illustration is labeled in its caption as a modern
+  illustration ("Modern illustration: ..."), so no student mistakes it for
+  a source from the period.
+- Generate text-free; add labels programmatically in code, never baked
+  into the generation. The parent views the finished illustration and
+  verifies every label against the lesson before it ships.
+- A generated illustration lives in the shared pool like any other image,
+  with `generated: true` in its record, and is never referenced by a
+  question file.
+
 ## 7. Explanations are stimulus-heavy where logical
 
 - Each MCQ explanation reuses and annotates its question's stimulus: the

@@ -1714,3 +1714,16 @@ Verdict: PASS, 0 defects. Both rationale B and the general explicitly state one 
 - Fix (key B unchanged): general step 2 now reads "One person still leans over a patient, but four more lie still, unwatched — the sickness hit whole households at once, so care could not keep up."; step 3 trimmed to keep the general at 114w. Rationale B now reads "One person still leans over a patient, but the sickness hit whole households at the same time, so care could not keep up." 0140/0141 checked clean, same claim absent. Validator 0 errors.
 - Blind re-verification: PASS (verification/0139-fix-reverify.json) — blind pick B, key match, image checked by eye, no "nobody left" claim, 114w, no trap language.
 - Push note: the voice-pass push in flight carries the pre-fix 0139; this fix rides a follow-up push after it lands.
+
+## Generated illustrations in lessons (2026-11-26, his "Ok, go")
+- Decision: generated images stay OUT of question stimuli (fake evidence) and are allowed IN LESSONS ONLY as concept illustrations (diagrams, schematics, flows), labeled "Modern illustration" in the caption, generated text-free with labels added in code, parent-viewed and label-verified before shipping. Rule locked in LESSON-SPEC.md section 6.
+- Specimen (not installed in any lesson): triangular-trade schematic for L3 — generated text-free, labels composited in code with PIL, parent-viewed: all 6 labels spelled right and inside the frame, arrow directions verified (Europe→Africa manufactured goods; Africa→Americas enslaved people; Americas→Europe sugar, tobacco, silver). Files: specimens/media-generation-triangular-trade-schematic-0-*.webp (raw), specimens/triangular-trade-labeled.png (labeled). Awaits his verdict before any lesson install.
+
+## Fun illustration style (2026-11-26, his note on the specimen)
+- He liked the triangular-trade schematic ("looks good") with one direction: make it more fun. Style for lesson illustrations going forward: bold, colorful, playful storybook-flat — ships on the routes, lively colors — still clearly a modern diagram, still text-free generation with labels in code.
+- Fun variant made: specimens/triangular-trade-fun-labeled.png (ships on all three arrows, labels verified, arrows correct). Both versions are specimens; neither is installed in a lesson yet.
+
+## Blind input files removed from the remote (2026-11-26, his order)
+- He asked why verification/blind-u1 was being pushed. Answer: no reason — the push took the whole passmaster tree and the blind inputs were swept in. They are regenerable working files (question content with keys stripped), not shipped content and not evidence.
+- Removed 445 blind input files from the remote: blind-u1 (194), blind-1.3–1.7 (149), blind-shuffle (78), blind-read-u1-fix (22), blind-saq0022 input (1), saq-0004-blind (1). Kept on the remote: the 35 verdict/solves/resolve files, which are the actual evidence, plus LOG.md.
+- Rule locked in SPEC.md section 10: blind input files are never pushed; the pushed record of a verification is its verdicts/solves files plus the LOG.md entry. The push script's FILES list no longer contains them, so a future whole-tree push cannot re-add them. Local copies deleted in the same change (regenerable from questions/ at any time).

@@ -250,6 +250,11 @@ is: steps are reasoning steps about evidence, not computation steps.
   done, say so explicitly; never present them as a review.
 - `status: "final"` only after the verifier's blind solve is logged in
   LOG.md with the question id.
+- Blind input files (`*-blind.json` under `verification/`) are working
+  files, never pushed to the remote: they are regenerable from the
+  question files by stripping keys and rationales. The pushed record of
+  a verification is its verdicts/solves files plus the LOG.md entry.
+  Locked 2026-11-26 after 445 blind inputs were removed from the remote.
 
 ## 11. Bank and exam files
 
