@@ -1,0 +1,99 @@
+{
+ "id": "apush-saq-0003",
+ "lesson": "apush-u1-l1",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 1,
+ "topics": [
+  "1.1",
+  "1.3"
+ ],
+ "skills": [
+  "3.A",
+  "4.A"
+ ],
+ "themes": [
+  "GEO",
+  "WOR"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 3,
+ "stimulus_set": null,
+ "stimulus": {
+  "kind": "map",
+  "text": "The Cantino planisphere, a Portuguese world map drawn in 1502. It shows the Atlantic Ocean with Africa in the center, Europe at the top, and the coast of South America and the Caribbean on the left. A north-south line runs through the Atlantic, and small flags mark the coasts claimed by Portugal and Spain.",
+  "source_note": "Cantino planisphere, 1502, public domain; Biblioteca Estense, Modena."
+ },
+ "source": "original; stimulus image from the shared pool, Cantino planisphere 1502, public domain",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 3",
+    "section": "Spanish and Portuguese Ambitions"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 6",
+    "section": "Columbus"
+   }
+  ],
+  "primary_sources": [
+   "Cantino planisphere (1502)"
+  ]
+ },
+ "status": "final",
+ "saq_slot": 3,
+ "totalPoints": 3,
+ "figures": [
+  {
+   "id": "fig-apush-saq-0003",
+   "file": "u1/saq-set-06-q3.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Cantino_planisphere_%281502%29.jpg",
+   "license": "Public domain",
+   "caption": "The Cantino planisphere, a Portuguese world map of 1502",
+   "alt": "A hand-drawn 1502 world map on parchment showing Africa in the center, Europe at the top, South America on the left, and a north-south line through the Atlantic"
+  }
+ ],
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one feature shown on the map.",
+   "modelAnswer": "One feature is the coast of South America on the left side of the map, drawn as a long green coastline facing the Atlantic, beside the Caribbean islands.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for naming one feature visible on the map, such as the South American coast, Africa, the Atlantic line, or the flags marking claims.",
+     "notEarned": "Naming a feature that does not appear on the map, such as the Pacific coast of North America, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain what the map shows about European knowledge of the world in 1502.",
+   "modelAnswer": "The map shows that by 1502 Europeans knew the shape of Africa, the Atlantic, and the eastern coast of South America, but they had mapped only the Atlantic side of the Americas, so their knowledge was still shaped by the voyages made so far.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining what the map shows about European knowledge in 1502, such as known coasts mapped and unknown regions left blank or rough.",
+     "notEarned": "Stating only that the map is old, with no claim about knowledge, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one way the map reflects rivalry between Spain and Portugal.",
+   "modelAnswer": "The north-south line through the Atlantic marks the division of new lands between Spain and Portugal under the Treaty of Tordesillas, and the small flags along the coasts mark which crown claimed each shore, so the map records competition as well as geography.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining how the map reflects Spanish-Portuguese rivalry, such as the Tordesillas line or the flags marking claims.",
+     "notEarned": "Stating only that two countries wanted land, with no feature of the map named, does not earn the point."
+    }
+   ]
+  }
+ ]
+}

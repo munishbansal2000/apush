@@ -1,0 +1,86 @@
+{
+ "id": "apush-saq-0007",
+ "lesson": "apush-u1-l1",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 1,
+ "topics": [
+  "1.2"
+ ],
+ "skills": [
+  "1.B",
+  "5.B"
+ ],
+ "themes": [
+  "GEO",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": null,
+ "stimulus": {
+  "kind": "text",
+  "text": "Secondary passage written for this question. Maize was first grown in Mesoamerica, in what is now Mexico, thousands of years before Europeans arrived. Over time, maize farming spread north into the American Southwest and then into the river valleys of the Southeast and Midwest, and east into the Northeast woodlands. As maize spread, new towns and chiefdoms grew where farming could feed them. Trade networks carried maize seed, copper, shells, and stone across long distances, linking peoples who lived far apart.",
+  "source_note": "Original secondary passage written for this question, summarizing the grounding books and the Unit 1 lesson script."
+ },
+ "source": "original; secondary passage written for this question from the grounding books",
+ "status": "final",
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 3",
+    "section": "Topic 1.2 Native American Societies Before European Contact"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 6",
+    "section": "Native America"
+   }
+  ],
+  "primary_sources": []
+ },
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one way the spread of maize changed Native societies in North America.",
+   "modelAnswer": "As maize farming spread north and east, new towns and chiefdoms grew in places where farming could feed dense populations. Farming gave a steady surplus, and a surplus could feed more people in one place, so towns grew where the crop grew well.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for naming one change from the passage, such as new towns or chiefdoms growing where maize farming spread.",
+     "notEarned": "Naming a change the passage does not describe, such as the spread of writing, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain how trade networks connected Native societies before European contact.",
+   "modelAnswer": "Trade carried maize seed, copper, shells, and stone across long distances, so peoples who lived far apart exchanged goods and ideas. Goods from far away only reach a town through exchange, so the copper and shells in Cahokia prove its traders linked distant peoples.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining that trade moved goods across long distances and linked distant peoples.",
+     "notEarned": "Stating only that trade existed, with no goods or distances named, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one similarity between the Mississippian chiefdoms and the societies of Mesoamerica.",
+   "modelAnswer": "Both built on maize farming: Mesoamerican peoples first grew maize and built cities like Tenochtitlan, and Mississippian chiefdoms used the same crop to feed towns like Cahokia. The same crop fed both, so both could support dense towns and the leaders and builders who ran them.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for naming a similarity with specifics for both groups, such as maize farming feeding large towns or cities.",
+     "notEarned": "Naming a similarity for one group only, with no detail on the other, does not earn the point."
+    }
+   ]
+  }
+ ]
+}

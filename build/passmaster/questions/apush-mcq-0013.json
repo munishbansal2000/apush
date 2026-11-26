@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-0013",
+ "lesson": "apush-u1-l1",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 1,
+ "topics": [
+  "1.2"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "NAT",
+  "GEO"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 3,
+ "stimulus_set": "de-bry-florida",
+ "stimulus": {
+  "kind": "mixed",
+  "text": "Two engravings from Theodor de Bry's America series (1591), after drawings by Jacques Le Moyne de Morgues. The first shows Florida Indians planting seeds of beans and maize in cleared fields. The second shows the same people hunting deer disguised under deerskins. De Bry never visited North America; he engraved the scenes in Europe from watercolors painted by Jacques Le Moyne, a French artist with the Laudonnière expedition.",
+  "source_note": "Engravings from the shared image pool; Theodor de Bry (1591), after Jacques Le Moyne de Morgues, public domain (Library of Congress)."
+ },
+ "source": "original; converted from original-u1-native-01; stimulus engraving by Theodor de Bry (1591), after Jacques Le Moyne, public domain",
+ "status": "final",
+ "stem": "The first engraving shows men and women planting seeds of beans and maize in cleared fields. Which conclusion about Native American societies before sustained European contact is best supported by this image?",
+ "options": [
+  {
+   "key": "A",
+   "text": "All Native peoples in every region lived only by hunting and gathering.",
+   "misconception": "Assumes every Native society lived the same way, by hunting alone."
+  },
+  {
+   "key": "B",
+   "text": "Farming was an established, organized part of Native life in this region."
+  },
+  {
+   "key": "C",
+   "text": "Europeans introduced maize and bean farming to North America in the 1500s.",
+   "misconception": "Reverses the exchange: maize and beans were American crops Europeans found here."
+  },
+  {
+   "key": "D",
+   "text": "Native peoples in this region planted crops only after Spanish missions arrived.",
+   "misconception": "Puts Spanish missions before farming that already existed in the region."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "The image shows people planting crops in prepared fields, so a claim that everyone lived only by hunting fails against the picture.",
+  "B": "The engraving shows organized planting of maize and beans, which is direct evidence that farming was already established in this region before sustained contact.",
+  "C": "Maize and beans were Native American crops grown long before Europeans arrived, so Europeans could not have introduced them.",
+  "D": "The 1591 engraving shows planting from before Spanish missions reached this region, so missions cannot explain the farming.",
+  "general": "1. Look at what the people are doing. Men and women plant seeds in cleared fields, working the soil with tools.\n2. Ask what planting means. Sowing seed in prepared ground is farming, not gathering wild food.\n3. Ask what farming means here. Organized planting supports settled life in this region.\n4. Check the date. The engraving dates to 1591 and shows practices from before sustained contact.\nRemember: when an image shows people working the land, ask what food system the work belongs to."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 6",
+    "section": "Native America"
+   }
+  ],
+  "primary_sources": [
+   "Theodor de Bry, engravings after Jacques Le Moyne de Morgues, America series (1591)"
+  ]
+ },
+ "figures": [
+  {
+   "file": "u1/original-u1-native-01.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Florida_Indians_planting_seeds_of_beans_or_maize_LCCN2001695741.jpg",
+   "license": "Public domain",
+   "caption": "Engraving by Theodor de Bry (1591), after Jacques Le Moyne de Morgues, showing Florida Indians planting seeds of beans and maize",
+   "alt": "Engraving of men and women planting seeds in rows in a cleared field, some carrying baskets of seed",
+   "id": "fig-apush-mcq-0013"
+  },
+  {
+   "file": "u1/original-u1-native-10.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Florida_Indians,_disguised_under_deerskins,_hunting_deer_LCCN2001695742.jpg",
+   "license": "Public domain",
+   "caption": "Engraving from a German edition of Theodor de Bry's America series, after Jacques Le Moyne, showing Florida Indians hunting deer disguised under deerskins",
+   "alt": "Engraving of hunters wearing deerskins with antlers drawing bows at deer beside a stream, with German text below the image",
+   "id": "fig-apush-mcq-0013-x"
+  }
+ ]
+}

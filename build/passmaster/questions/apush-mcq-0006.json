@@ -1,0 +1,89 @@
+{
+ "id": "apush-mcq-0006",
+ "lesson": "apush-u1-l1",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 1,
+ "topics": [
+  "1.1",
+  "1.2"
+ ],
+ "skills": [
+  "3.A",
+  "5.A"
+ ],
+ "themes": [
+  "GEO",
+  "SOC"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 4,
+ "stimulus_set": "cahokia-mounds",
+ "stimulus": {
+  "kind": "image",
+  "text": "The photograph shows Powell's Mound at Cahokia, near present-day St. Louis, Missouri. Cahokia was the largest city of the Mississippian culture, reaching its height around 1100 to 1200, centuries before European contact. Its people built large earthen mounds, farmed maize, and traded across the Mississippi River valley.",
+  "source_note": "Photograph from the shared image pool; U.S. Army Air Service photograph, public domain."
+ },
+ "source": "original; stimulus image from the shared pool, U.S. Army Air Service photograph, public domain",
+ "grounding": {
+  "books": [
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 6",
+    "section": "Native America"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "NATIVE AMERICANS IN PRE-COLUMBIAN NORTH AMERICA"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 3",
+    "section": "Topic 1.2 Native American Societies Before European Contact"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "Which comparison does the evidence about Cahokia best support?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Cahokia copied the design of European forts built after 1607.",
+   "misconception": "Treats a mound built around 1100 as a copy of forts built five centuries later."
+  },
+  {
+   "key": "B",
+   "text": "Mound building at Cahokia ended because Cahokia was cut off from all trade.",
+   "misconception": "Blames decline on isolation, but Cahokia traded widely and its decline had many causes."
+  },
+  {
+   "key": "C",
+   "text": "Indigenous peoples built large permanent centers, as complex societies did elsewhere."
+  },
+  {
+   "key": "D",
+   "text": "The mounds prove that Cahokia was governed as a Spanish colony.",
+   "misconception": "Reads Spanish rule into a city that reached its height centuries before Spain arrived."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "general": "1. Start with the mound. It is a large permanent center built around 1100 to 1200. 2. Ask what it shares with other complex societies. Large centers, organized labor, farming, and trade appear in complex societies in many regions. 3. Make the comparison. Cahokia belongs in that same category, on its own terms. 4. Reject claims that need a later date. Spanish rule and European forts both come centuries after Cahokia. Remember: compare societies by what they built and how they organized labor, not by who arrived later.",
+  "A": "Cahokia reached its height around 1100 to 1200, so it could not have copied European forts built after 1607.",
+  "B": "Cahokia traded across the Mississippi valley, so isolation from trade does not explain the end of mound building.",
+  "C": "Large permanent centers built by organized labor place Cahokia beside other complex societies of the world before 1492.",
+  "D": "Cahokia reached its height centuries before Spain reached North America, so it was never a Spanish colony."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0006",
+   "file": "u1/original-ctx-u1-07.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/The_origin_of_the_Cahokia_mounds_%28Page_18%29_BHL17575302",
+   "license": "Public domain",
+   "caption": "Powell's Mound at Cahokia, photographed from the air",
+   "alt": "Aerial photograph of a large flat-topped earthen mound rising from flat farmland, with fields and a road around it"
+  }
+ ]
+}

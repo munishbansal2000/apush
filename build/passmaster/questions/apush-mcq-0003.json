@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-0003",
+ "lesson": "apush-u1-l1",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 1,
+ "topics": [
+  "1.1"
+ ],
+ "skills": [
+  "4.A",
+  "4.B"
+ ],
+ "themes": [
+  "GEO"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 2,
+ "stimulus_set": "las-casas-1542",
+ "stimulus": {
+  "kind": "text",
+  "text": "Paraphrase of Bartolome de las Casas, A Short Account of the Destruction of the Indies (written 1542, published 1552). Las Casas wrote that the peoples of Hispaniola were gentle, obedient, and owned little, and that the Spanish fell upon them like wolves, killing them and forcing them into hard labor. He claimed that the Indigenous population of Hispaniola had fallen from about three million to only two hundred. He sent the account to Prince Philip of Spain to persuade the crown to stop the cruelty.",
+  "source_note": "Paraphrase of a public-domain text; Las Casas, Brevisima relacion (1542, published 1552)."
+ },
+ "source": "original; stimulus paraphrased from Las Casas, Brevisima relacion (1542), public domain",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 3",
+    "section": "Topic 1.4 Columbian Exchange, Spanish Exploration, and Conquest"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 3",
+    "section": "Topic 1.5 Labor, Slavery, and Caste in the Spanish Colonial System"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "The Early Colonial Era: Spain Colonizes the New World"
+   }
+  ],
+  "primary_sources": [
+   "Las Casas, A Short Account of the Destruction of the Indies (1542)"
+  ]
+ },
+ "status": "final",
+ "stem": "Which broader historical context best explains the events Las Casas describes?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Spanish conquest and forced labor were already transforming Indigenous societies after 1492."
+  },
+  {
+   "key": "B",
+   "text": "English colonies in North America had already replaced Spanish rule by 1542.",
+   "misconception": "Moves English colonization a century too early; Jamestown dates to 1607."
+  },
+  {
+   "key": "C",
+   "text": "Indigenous societies in the Americas remained unchanged by contact until the 1700s.",
+   "misconception": "Ignores the conquest, disease, and forced labor of the 1500s that Las Casas describes."
+  },
+  {
+   "key": "D",
+   "text": "The transatlantic slave trade had already ended before Las Casas wrote.",
+   "misconception": "Ends the slave trade centuries too early; it grew through the 1500s and beyond."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "general": "1. Place the date. Las Casas wrote in 1542, fifty years after first contact. 2. Name what had happened by then. Spain had conquered Caribbean islands and built colonies worked by forced Indigenous labor. 3. Connect the passage to that setting. His report of killing and forced labor fits a conquest already under way. 4. Test the other options against the date. English rule and an unchanged Americas both clash with 1542. Remember: put a source in its decade first, then ask what was already happening in that decade.",
+  "A": "By 1542 Spain had spent fifty years conquering Caribbean societies and forcing Indigenous people into labor, which is the setting Las Casas protests.",
+  "B": "English colonization in North America began with Jamestown in 1607, so no English colonies could have replaced Spanish rule by 1542.",
+  "C": "Las Casas himself describes killing and forced labor in the 1500s, so Indigenous societies were already being changed long before the 1700s.",
+  "D": "The transatlantic slave trade was still growing in the 1500s, so it had not ended before Las Casas wrote."
+ }
+}

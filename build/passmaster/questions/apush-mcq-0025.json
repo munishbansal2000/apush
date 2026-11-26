@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-0025",
+ "lesson": "apush-u1-l1",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 1,
+ "topics": [
+  "1.2"
+ ],
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "GEO",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "stimulus_set": "mississippian-river",
+ "stimulus": {
+  "kind": "mixed",
+  "text": "The 1771 map by Thomas Hutchins marks the village of Cahokia on the Mississippi River, near present-day St. Louis. The pre-contact city of Cahokia stood in this same river valley centuries earlier. Archaeologists who have mapped Cahokia describe a city of mounds, plazas, and a wooden palisade. Trade goods from far away reached the city: copper from the Great Lakes and shells from the Gulf Coast.",
+  "source_note": "Map from the shared image pool; Thomas Hutchins (1771), public domain. Archaeological description paraphrased from standard accounts of Cahokia."
+ },
+ "source": "original; fresh authoring; stimulus map by Thomas Hutchins (1771), public domain; trade-goods evidence from the Unit 1 lesson script E1",
+ "status": "final",
+ "stem": "A historian argues that Cahokia was a trading hub, not an isolated town. Which evidence from the sources in this set best supports that argument?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The map shows Cahokia standing alone with no villages marked near it.",
+   "misconception": "Misreads the map, which marks villages all along the river."
+  },
+  {
+   "key": "B",
+   "text": "The mounds show Cahokia's builders never traded with anyone else at all.",
+   "misconception": "Turns mounds into proof against trade, which they are not."
+  },
+  {
+   "key": "C",
+   "text": "Faraway goods, like Gulf shells and Great Lakes copper, reached Cahokia."
+  },
+  {
+   "key": "D",
+   "text": "The palisade proves Cahokia refused all contact with outside peoples.",
+   "misconception": "Reads a defensive wall as a refusal of all contact."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "The map marks villages all along the Mississippi, so Cahokia does not stand alone on it.",
+  "B": "Mounds show building, not isolation, and they say nothing about whether Cahokia traded.",
+  "C": "Copper from the Great Lakes and shells from the Gulf Coast reached Cahokia, which is the mark of a trading hub.",
+  "D": "A defensive palisade shows the city guarded itself, not that it refused all contact with outsiders.",
+  "general": "1. Name the argument. Cahokia was a trading hub, not an isolated town.\n2. Ask what a hub leaves behind. Goods from far away show up in the city.\n3. Find them here. Copper from the Great Lakes and shells from the Gulf Coast reached Cahokia.\n4. Reject the other options. A palisade, a map of villages, and mounds alone do not prove trade.\nRemember: to support a claim about trade, find goods that traveled."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 6",
+    "section": "Native America"
+   }
+  ],
+  "primary_sources": [
+   "Thomas Hutchins, A Plan of the several Villages in the Illinois Country (1771)"
+  ]
+ },
+ "figures": [
+  {
+   "file": "u1/original-u1-native-04.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Illinois,_historical_and_statistical_-_comprising_the_essential_facts_of_its_planting_and_growth_as_a_province,_county,_territory,_and_state_(1889)_(14592501177).jpg",
+   "license": "Public domain",
+   "caption": "Facsimile of Thomas Hutchins's 1771 plan of the Illinois Country, showing Cahokia on the Mississippi River",
+   "alt": "1771 map of the Illinois Country showing the Mississippi River and the village of Cahokia near St. Louis",
+   "id": "fig-apush-mcq-0025"
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "verifier": "independent blind verifier (Topic 1.7)",
+ "date": "2026-11-26",
+ "topic": "1.7",
+ "summary": {
+  "total": 16,
+  "pass": 16,
+  "fail": 0,
+  "mcq": {
+   "total": 12,
+   "pass": 12,
+   "fail": 0,
+   "blind_match": "12/12"
+  },
+  "saq": {
+   "total": 3,
+   "pass": 3,
+   "fail": 0,
+   "parts_matched": "9/9"
+  },
+  "leq": {
+   "total": 1,
+   "pass": 1,
+   "fail": 0,
+   "model_outline_score": "6/6"
+  },
+  "key_distribution": {
+   "A": 3,
+   "B": 3,
+   "C": 3,
+   "D": 3
+  },
+  "required_fixes": [
+   "apush-mcq-0143",
+   "apush-mcq-0144"
+  ]
+ },
+ "process_note": "Blind-integrity caveat: the blind files carry each distractor's 'misconception' field, so the key is identifiable as the only option without one. I solved from stimulus and stem content only and recorded my picks before opening any question file, but future blind files should strip the misconception fields so the blind solve is airtight.",
+ "verdicts": {
+  "apush-mcq-0139": {
+   "verdict": "PASS",
+   "my_pick": "B",
+   "key": "B",
+   "reason": "Pick matched the key. Image shows whole households struck at once, lying helpless; rationale B is accurate. No length tell (13/13/10/12, key tied with A). Difficulty 4 honest (requires rejecting the deliberate-weapon misconception). Grounding present (4 books + Florentine Codex)."
+  },
+  "apush-mcq-0140": {
+   "verdict": "PASS",
+   "my_pick": "D",
+   "key": "D",
+   "reason": "Pick matched the key. No immunity after thousands of years apart is the correct ranking reason; A/B/C refuted accurately. Key longest by exactly 1 word (17 vs A 16), within threshold. Difficulty 4 honest."
+  },
+  "apush-mcq-0141": {
+   "verdict": "PASS",
+   "my_pick": "A",
+   "key": "A",
+   "reason": "Pick matched the key. Smallpox killed Cuitlahuac during the 1520 siege; city fell August 1521; dates and direction all correct. Key not longest (15 vs B 16). Difficulty 3 honest."
+  },
+  "apush-mcq-0142": {
+   "verdict": "PASS",
+   "my_pick": "C",
+   "key": "C",
+   "reason": "Pick matched the key. Passage traces silver from arrival to exit (taxes, borrowing, soldiers, interest, rising prices). Key tied with A (14). Difficulty 4 honest (dense-passage synthesis)."
+  },
+  "apush-mcq-0143": {
+   "verdict": "PASS",
+   "my_pick": "A",
+   "key": "A",
+   "reason": "Pick matched the key; the key and all four options are sound and the stimulus supports the key. REQUIRED FIX (explanation only, same defect class as 0088 in Topic 1.5): rationale A, rationale C, and general step 3 attribute content to the passage that the stimulus does not contain. The passage never mentions debasement of coinage and never calls inflation 'the most lasting effect'. Rationale C says 'The passage names deficit spending on armies and navies, plus debasement of coinage' \u2014 debasement is not in the stimulus. Rationale A and general step 3 say 'the passage calls inflation the most lasting effect' \u2014 the passage only says prices rose as silver money circulated. The claims are true of MacDougall's argument as summarized in Barron's but not of the visible stimulus. Reword all three spots to stay inside the stimulus before the topic flips to final."
+  },
+  "apush-mcq-0144": {
+   "verdict": "PASS",
+   "my_pick": "B",
+   "key": "B",
+   "reason": "Pick matched the key; the key, options, and stimulus are sound. REQUIRED FIX (explanation only): option C's misconception and rationale C both attribute to the passage a debasement mention and a 'most lasting cause' ranking that the stimulus does not contain. The stimulus lists more silver money, heavy borrowing, and war spending as causes of rising prices and never mentions debased coinage. Reword both spots to stay inside the stimulus before the topic flips to final."
+  },
+  "apush-mcq-0145": {
+   "verdict": "PASS",
+   "my_pick": "D",
+   "key": "D",
+   "reason": "Pick matched the key. Protestant rivals translated and printed Las Casas to use against Catholic Spain; all distractors refuted accurately. Key longest by exactly 1 word (12 vs 11), within threshold. Difficulty 3 honest."
+  },
+  "apush-mcq-0146": {
+   "verdict": "PASS",
+   "my_pick": "C",
+   "key": "C",
+   "reason": "Pick matched the key. Three-cause synthesis (vivid account + press + eager rivals) is correct and complete. Key tied with D (13). Difficulty 4 honest."
+  },
+  "apush-mcq-0147": {
+   "verdict": "PASS",
+   "my_pick": "A",
+   "key": "A",
+   "reason": "Pick matched the key; directly supported by the passage (English presented their colonies as godly and humane). Key tied shortest (10). Difficulty 2 honest."
+  },
+  "apush-mcq-0148": {
+   "verdict": "PASS",
+   "my_pick": "B",
+   "key": "B",
+   "reason": "Pick matched the key. Wealth (Asian trade, gold, silver) is the standard most-significant cause and the passage frames it first; D (Constantinople alone) is correctly partial. Key not longest (9 vs C 11). Difficulty 4 honest. Note: this is the topic's most judgment-dependent item, but the ranking is the books' framing and the distractors are cleanly refuted."
+  },
+  "apush-mcq-0149": {
+   "verdict": "PASS",
+   "my_pick": "C",
+   "key": "C",
+   "reason": "Pick matched the key. Passage says the old land routes grew costlier and less certain after 1453. Key longest by exactly 1 word (12 vs A 11), within threshold. Difficulty 3 honest."
+  },
+  "apush-mcq-0150": {
+   "verdict": "PASS",
+   "my_pick": "D",
+   "key": "D",
+   "reason": "Pick matched the key. Portugal already had an African sea route; Spain had none. Key tied with B (12). Difficulty 2 honest."
+  },
+  "apush-saq-0031": {
+   "verdict": "PASS",
+   "my_answers": "3/3 parts match model answers",
+   "reason": "All three parts match the model answers in substance (prices/taxes/debt; spending not investing; inflation beyond Spain). Scoring criteria accurate with correct notEarned. Skill tags 1.A/1.B fit the parts. Slot 1 secondary text."
+  },
+  "apush-saq-0032": {
+   "verdict": "PASS",
+   "my_answers": "3/3 parts match model answers",
+   "reason": "All three parts match (attitude: gentle, unarmed, fine servants; aims: rule and put to work; limitation: Las Casas copy + self-justification to the crown). Scoring criteria accurate. Skill tags 2.A/3.A fit. Slot 2 primary text (Columbus journal, 12 Oct 1492)."
+  },
+  "apush-saq-0033": {
+   "verdict": "PASS",
+   "my_answers": "3/3 parts match model answers",
+   "reason": "All three parts match (scale: over 1,000,000 to about 500; cause: disease and no immunity; effect: shift to enslaved African labor). Scoring criteria accurate. Skill tags 1.A/3.B fit. Note: parts (b) and (c) legitimately require knowledge beyond the stimulus (the table shows decline, not its cause or labor effect) \u2014 same pattern as SAQ 0013(c). Slot 3 non-text table."
+  },
+  "apush-leq-0011": {
+   "verdict": "PASS",
+   "my_thesis": "Disease the leading cause but not the only one; steel, horses, Native allies mattered too",
+   "reason": "Model outline matches my blind outline in substance and scores 6/6: thesis 1 (clear extent, 'great yet not total'), contextualization 1 (conquest, Columbian Exchange, Native societies), evidence 2 (smallpox 1520/Cuitlahuac, 50-90% decline, no immunity), analysis and reasoning 2 (disease led but worked with other causes). Rubric skill labels correct: thesis 6.A, contextualization 4.B, evidence 6.B, analysis 6.B."
+  }
+ },
+ "notes": [
+  "Key distribution A3/B3/C3/D3 confirmed on disk; pattern-guesser scores 3/12 (25%).",
+  "No trap language in any of the 16 files; no paragraph over 90 words; all MCQ general rationales 82-109 words (within 60-120).",
+  "Grounding present on all 16 (2-4 books with chapter and section); primary sources cited where the stimulus is a source.",
+  "Figure file u1/5s24-exam1-mcq-36.jpg exists in the shared pool and is referenced by 0139-0141.",
+  "Difficulty labels honest across the topic: easy 2 (0147, 0150), medium 4 (0141, 0143, 0145, 0149), hard 6 (0139, 0140, 0142, 0144, 0146, 0148).",
+  "Blind-integrity caveat (process, not a question defect): blind files carry distractor 'misconception' fields, so the key is identifiable as the only option without one. My picks were made from content; future blind files should strip misconception fields."
+ ]
+}

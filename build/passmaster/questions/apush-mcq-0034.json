@@ -1,0 +1,67 @@
+{
+ "id": "apush-mcq-0034",
+ "lesson": "apush-u1-l1",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 1,
+ "topics": [
+  "1.2"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "GEO",
+  "NAT"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 2,
+ "stimulus_set": "adaptation-table",
+ "stimulus": {
+  "kind": "table",
+  "text": "| Society | Environment | Main way of getting food | Settlement |\n| Pueblo peoples | Arid Southwest | Dry farming of maize, beans, and squash | Permanent adobe villages |\n| Iroquois villagers | Northeast woodlands | Three sisters farming, with hunting and fishing | Permanent villages |\n| Chinook peoples | Rainy Pacific coast | Fishing, hunting, and foraging | Permanent villages with marked social ranks |\n| Great Plains peoples | Grasslands | Bison hunting on foot, with some farming in river valleys | Mobile camps for much of the year |\n| Great Basin peoples | Arid basin between mountain ranges | Hunting and gathering, moving with the seasons | Mobile camps |",
+  "source_note": "Table compiled from the grounding books; see grounding."
+ },
+ "source": "original; converted from original-u1-native-13",
+ "status": "final",
+ "stem": "Which pairing correctly matches a Native American group with its environmental adaptation before European contact?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Pacific Northwest peoples farmed maize in inland river valleys far from the sea.",
+   "misconception": "Gives fishing peoples an inland maize pattern they did not follow."
+  },
+  {
+   "key": "B",
+   "text": "Mississippian peoples fished the deep sea along the far Pacific coast.",
+   "misconception": "Moves river-valley farmers to the Pacific coast."
+  },
+  {
+   "key": "C",
+   "text": "Pueblo peoples farmed in ways adapted to the dry, arid Southwest."
+  },
+  {
+   "key": "D",
+   "text": "Iroquois villagers hunted bison herds on the Great Plains far west.",
+   "misconception": "Moves woodland villagers onto the Plains as bison hunters."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "Pacific Northwest peoples built their lives around fishing, not inland maize farming.",
+  "B": "Mississippians farmed river valleys in the Southeast and Midwest, not the Pacific coast.",
+  "C": "Pueblo farmers adapted agriculture to the arid Southwest, which is the pairing the table supports.",
+  "D": "The Iroquois were woodland villagers in the Northeast, not Plains bison hunters.",
+  "general": "1. Name each adaptation. Pueblo farmers worked dry land, Mississippians farmed river valleys, Iroquois villagers farmed woodlands, and Northwest peoples fished the coast.\n2. Test the first pair. Northwest peoples fished, so inland maize farming fits them badly.\n3. Test the second pair. Mississippians farmed river valleys, so deep-sea fishing fits them badly.\n4. Test the third pair. Pueblo farmers match the arid Southwest, and Iroquois villagers match the Plains badly.\nRemember: to match a people to a land, test every pair, not just the one you like."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 3",
+    "section": "Topic 1.2 Native American Societies Before European Contact"
+   }
+  ],
+  "primary_sources": []
+ }
+}

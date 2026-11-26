@@ -1,0 +1,326 @@
+{
+ "date": "2026-11-26",
+ "topic": "1.6",
+ "verifier": "independent blind verifier",
+ "summary": {
+  "total": 36,
+  "pass": 10,
+  "fail": 26,
+  "mcq": {
+   "total": 28,
+   "pass": 2,
+   "fail": 26,
+   "blind_match": "28/28"
+  },
+  "saq": {
+   "total": 6,
+   "pass": 6,
+   "fail": 0,
+   "parts_matched": "18/18"
+  },
+  "leq": {
+   "total": 2,
+   "pass": 2,
+   "fail": 0,
+   "model_outline_scores": {
+    "apush-leq-0009": "6/6",
+    "apush-leq-0010": "6/6"
+   }
+  },
+  "key_distribution": {
+   "A": 26,
+   "B": 1,
+   "C": 0,
+   "D": 1
+  },
+  "pattern_guesser_A": "26/28"
+ },
+ "notes": [
+  "Key position tell (topic-level defect): 26 of 28 MCQ keys sit in position A (A 26, B 1, C 0, D 1). A no-content pattern-guesser picking A scores 26/28 (93%). All 26 A-keyed items FAIL on this ground; the 2 non-A items (0114 D, 0126 B) PASS. Fix: shuffle option order across the topic so keys distribute across positions, then re-verify the shuffled items blind. Content of every item is sound; the defect is ordering only.",
+  "Key is sole longest by exactly 1 word in 5 MCQs (0111, 0120, 0131, 0132, 0133). All pass the stated threshold (fail only if longest by more than 1 word). Recorded for the record, same as the Topic 1.1/1.3 residuals.",
+  "Acoma dates verified: the Acoma attack on Zaldivar's party was December 1598; Onate's retaliation was January 1599. Stems 0120-0122 date only the 1598 attack; the stimulus does not date the retaliation. No date error in the three items.",
+  "SAQ 0027 part (c) and SAQ 0029 part (c) legitimately require knowledge beyond the stimulus (Las Casas's writings and their effect; Las Casas's answer to Sepulveda). Model answers confirm the expected answers. Same legitimate pattern as SAQ 0013 part (c) in Topic 1.4.",
+  "0125 note: 'English colonies brought whole families' is a simplification (early Jamestown was also mostly men); it matches the books' contrast framing, so note only, not a fail.",
+  "0133 note: table-lookup item, low demand; its difficulty label 4 looks inflated. Key is unambiguous and correct, so note only, not a fail.",
+  "All six SAQs carry only skill 1.A. Metadata uniformity note, not a fail.",
+  "Trap-language scan: the only 'trap' hits are the words 'trappers'/'trapping' in the French fur-trade items (0126-0128) \u2014 false positives, not trap language. Zero real hits across all 36 files.",
+  "No explanation paragraph exceeds 90 words in any item; all SAQ model answers are 2 sentences; all figure files exist on disk (Lienzo 5s24-ch06-mcq-06.jpg, Las Casas portrait, de Bry Florida planting).",
+  "All 36 items carry book grounding (Barron's Ch. 3 + 5 Steps Ch. 6 + Princeton Ch. 6, chapter and section); primary sources cited where the stimulus is a source."
+ ],
+ "fails": [
+  "apush-mcq-0111",
+  "apush-mcq-0112",
+  "apush-mcq-0113",
+  "apush-mcq-0115",
+  "apush-mcq-0116",
+  "apush-mcq-0117",
+  "apush-mcq-0118",
+  "apush-mcq-0119",
+  "apush-mcq-0120",
+  "apush-mcq-0121",
+  "apush-mcq-0122",
+  "apush-mcq-0123",
+  "apush-mcq-0124",
+  "apush-mcq-0125",
+  "apush-mcq-0127",
+  "apush-mcq-0128",
+  "apush-mcq-0129",
+  "apush-mcq-0130",
+  "apush-mcq-0131",
+  "apush-mcq-0132",
+  "apush-mcq-0133",
+  "apush-mcq-0134",
+  "apush-mcq-0135",
+  "apush-mcq-0136",
+  "apush-mcq-0137",
+  "apush-mcq-0138"
+ ],
+ "verdicts": {
+  "apush-mcq-0111": {
+   "id": "apush-mcq-0111",
+   "my_pick": "A",
+   "key": "A",
+   "verdict": "FAIL",
+   "reason": "Blind pick A matched the locked key A; key re-derived from stimulus and correct; no length tell; grounding present. FAIL on key position tell: this item's key sits in position A, and 26 of the topic's 28 MCQ keys sit in A (A 26, B 1, C 0, D 1). A no-content pattern-guesser picking A on every item scores 26/28 (93%). The item's content is sound (blind pick matched the key, key re-derived from the stimulus, no length tell, grounding present), but the topic cannot flip to final until option order is shuffled so keys distribute across positions, then re-verified blind on the shuffled items."
+  },
+  "apush-mcq-0112": {
+   "id": "apush-mcq-0112",
+   "my_pick": "A",
+   "key": "A",
+   "verdict": "FAIL",
+   "reason": "Blind pick A matched the locked key A; key re-derived from stimulus and correct; no length tell; grounding present. FAIL on key position tell: this item's key sits in position A, and 26 of the topic's 28 MCQ keys sit in A (A 26, B 1, C 0, D 1). A no-content pattern-guesser picking A on every item scores 26/28 (93%). The item's content is sound (blind pick matched the key, key re-derived from the stimulus, no length tell, grounding present), but the topic cannot flip to final until option order is shuffled so keys distribute across positions, then re-verified blind on the shuffled items."
+  },
+  "apush-mcq-0113": {
+   "id": "apush-mcq-0113",
+   "my_pick": "A",
+   "key": "A",
+   "verdict": "FAIL",
+   "reason": "Blind pick A matched the locked key A; key re-derived from stimulus and correct; no length tell; grounding present. FAIL on key position tell: this item's key sits in position A, and 26 of the topic's 28 MCQ keys sit in A (A 26, B 1, C 0, D 1). A no-content pattern-guesser picking A on every item scores 26/28 (93%). The item's content is sound (blind pick matched the key, key re-derived from the stimulus, no length tell, grounding present), but the topic cannot flip to final until option order is shuffled so keys distribute across positions, then re-verified blind on the shuffled items."
+  },
+  "apush-mcq-0114": {
+   "id": "apush-mcq-0114",
+   "my_pick": "D",
+   "key": "D",
+   "verdict": "PASS",
+   "reason": "Blind pick D matched the locked key D; key re-derived from stimulus and correct; no length tell (key not longest); no trap language; no rationale paragraph over 90 words; grounding present (book + chapter)."
+  },
+  "apush-mcq-0115": {
+   "id": "apush-mcq-0115",
+   "my_pick": "A",
+   "key": "A",
+   "verdict": "FAIL",
+   "reason": "Blind pick A matched the locked key A; key re-derived from stimulus and correct; no length tell; grounding present. FAIL on key position tell: this item's key sits in position A, and 26 of the topic's 28 MCQ keys sit in A (A 26, B 1, C 0, D 1). A no-content pattern-guesser picking A on every item scores 26/28 (93%). The item's content is sound (blind pick matched the key, key re-derived from the stimulus, no length tell, grounding present), but the topic cannot flip to final until option order is shuffled so keys distribute across positions, then re-verified blind on the shuffled items."
+  },
+  "apush-mcq-0116": {
+   "id": "apush-mcq-0116",
+   "my_pick": "A",
+   "key": "A",
+   "verdict": "FAIL",
+   "reason": "Blind pick A matched the locked key A; key re-derived from stimulus and correct; no length tell; grounding present. FAIL on key position tell: this item's key sits in position A, and 26 of the topic's 28 MCQ keys sit in A (A 26, B 1, C 0, D 1). A no-content pattern-guesser picking A on every item scores 26/28 (93%). The item's content is sound (blind pick matched the key, key re-derived from the stimulus, no length tell, grounding present), but the topic cannot flip to final until option order is shuffled so keys distribute across positions, then re-verified blind on the shuffled items."
+  },
+  "apush-mcq-0117": {
+   "id": "apush-mcq-0117",
+   "my_pick": "A",
+   "key": "A",
+   "verdict": "FAIL",
+   "reason": "Blind pick A matched the locked key A; key re-derived from stimulus and correct; no length tell; grounding present. FAIL on key position tell: this item's key sits in position A, and 26 of the topic's 28 MCQ keys sit in A (A 26, B 1, C 0, D 1). A no-content pattern-guesser picking A on every item scores 26/28 (93%). The item's content is sound (blind pick matched the key, key re-derived from the stimulus, no length tell, grounding present), but the topic cannot flip to final until option order is shuffled so keys distribute across positions, then re-verified blind on the shuffled items."
+  },
+  "apush-mcq-0118": {
+   "id": "apush-mcq-0118",
+   "my_pick": "A",
+   "key": "A",
+   "verdict": "FAIL",
+   "reason": "Blind pick A matched the locked key A; key re-derived from stimulus and correct; no length tell; grounding present. FAIL on key position tell: this item's key sits in position A, and 26 of the topic's 28 MCQ keys sit in A (A 26, B 1, C 0, D 1). A no-content pattern-guesser picking A on every item scores 26/28 (93%). The item's content is sound (blind pick matched the key, key re-derived from the stimulus, no length tell, grounding present), but the topic cannot flip to final until option order is shuffled so keys distribute across positions, then re-verified blind on the shuffled items."
+  },
+  "apush-mcq-0119": {
+   "id": "apush-mcq-0119",
+   "my_pick": "A",
+   "key": "A",
+   "verdict": "FAIL",
+   "reason": "Blind pick A matched the locked key A; key re-derived from stimulus and correct; no length tell; grounding present. FAIL on key position tell: this item's key sits in position A, and 26 of the topic's 28 MCQ keys sit in A (A 26, B 1, C 0, D 1). A no-content pattern-guesser picking A on every item scores 26/28 (93%). The item's content is sound (blind pick matched the key, key re-derived from the stimulus, no length tell, grounding present), but the topic cannot flip to final until option order is shuffled so keys distribute across positions, then re-verified blind on the shuffled items."
+  },
+  "apush-mcq-0120": {
+   "id": "apush-mcq-0120",
+   "my_pick": "A",
+   "key": "A",
+   "verdict": "FAIL",
+   "reason": "Blind pick A matched the locked key A; key re-derived from stimulus and correct; no length tell; grounding present. FAIL on key position tell: this item's key sits in position A, and 26 of the topic's 28 MCQ keys sit in A (A 26, B 1, C 0, D 1). A no-content pattern-guesser picking A on every item scores 26/28 (93%). The item's content is sound (blind pick matched the key, key re-derived from the stimulus, no length tell, grounding present), but the topic cannot flip to final until option order is shuffled so keys distribute across positions, then re-verified blind on the shuffled items."
+  },
+  "apush-mcq-0121": {
+   "id": "apush-mcq-0121",
+   "my_pick": "A",
+   "key": "A",
+   "verdict": "FAIL",
+   "reason": "Blind pick A matched the locked key A; key re-derived from stimulus and correct; no length tell; grounding present. FAIL on key position tell: this item's key sits in position A, and 26 of the topic's 28 MCQ keys sit in A (A 26, B 1, C 0, D 1). A no-content pattern-guesser picking A on every item scores 26/28 (93%). The item's content is sound (blind pick matched the key, key re-derived from the stimulus, no length tell, grounding present), but the topic cannot flip to final until option order is shuffled so keys distribute across positions, then re-verified blind on the shuffled items."
+  },
+  "apush-mcq-0122": {
+   "id": "apush-mcq-0122",
+   "my_pick": "A",
+   "key": "A",
+   "verdict": "FAIL",
+   "reason": "Blind pick A matched the locked key A; key re-derived from stimulus and correct; no length tell; grounding present. FAIL on key position tell: this item's key sits in position A, and 26 of the topic's 28 MCQ keys sit in A (A 26, B 1, C 0, D 1). A no-content pattern-guesser picking A on every item scores 26/28 (93%). The item's content is sound (blind pick matched the key, key re-derived from the stimulus, no length tell, grounding present), but the topic cannot flip to final until option order is shuffled so keys distribute across positions, then re-verified blind on the shuffled items."
+  },
+  "apush-mcq-0123": {
+   "id": "apush-mcq-0123",
+   "my_pick": "A",
+   "key": "A",
+   "verdict": "FAIL",
+   "reason": "Blind pick A matched the locked key A; key re-derived from stimulus and correct; no length tell; grounding present. FAIL on key position tell: this item's key sits in position A, and 26 of the topic's 28 MCQ keys sit in A (A 26, B 1, C 0, D 1). A no-content pattern-guesser picking A on every item scores 26/28 (93%). The item's content is sound (blind pick matched the key, key re-derived from the stimulus, no length tell, grounding present), but the topic cannot flip to final until option order is shuffled so keys distribute across positions, then re-verified blind on the shuffled items."
+  },
+  "apush-mcq-0124": {
+   "id": "apush-mcq-0124",
+   "my_pick": "A",
+   "key": "A",
+   "verdict": "FAIL",
+   "reason": "Blind pick A matched the locked key A; key re-derived from stimulus and correct; no length tell; grounding present. FAIL on key position tell: this item's key sits in position A, and 26 of the topic's 28 MCQ keys sit in A (A 26, B 1, C 0, D 1). A no-content pattern-guesser picking A on every item scores 26/28 (93%). The item's content is sound (blind pick matched the key, key re-derived from the stimulus, no length tell, grounding present), but the topic cannot flip to final until option order is shuffled so keys distribute across positions, then re-verified blind on the shuffled items."
+  },
+  "apush-mcq-0125": {
+   "id": "apush-mcq-0125",
+   "my_pick": "A",
+   "key": "A",
+   "verdict": "FAIL",
+   "reason": "Blind pick A matched the locked key A; key re-derived from stimulus and correct; no length tell; grounding present. FAIL on key position tell: this item's key sits in position A, and 26 of the topic's 28 MCQ keys sit in A (A 26, B 1, C 0, D 1). A no-content pattern-guesser picking A on every item scores 26/28 (93%). The item's content is sound (blind pick matched the key, key re-derived from the stimulus, no length tell, grounding present), but the topic cannot flip to final until option order is shuffled so keys distribute across positions, then re-verified blind on the shuffled items."
+  },
+  "apush-mcq-0126": {
+   "id": "apush-mcq-0126",
+   "my_pick": "B",
+   "key": "B",
+   "verdict": "PASS",
+   "reason": "Blind pick B matched the locked key B; key re-derived from stimulus and correct; no length tell (key not longest); no trap language; no rationale paragraph over 90 words; grounding present (book + chapter)."
+  },
+  "apush-mcq-0127": {
+   "id": "apush-mcq-0127",
+   "my_pick": "A",
+   "key": "A",
+   "verdict": "FAIL",
+   "reason": "Blind pick A matched the locked key A; key re-derived from stimulus and correct; no length tell; grounding present. FAIL on key position tell: this item's key sits in position A, and 26 of the topic's 28 MCQ keys sit in A (A 26, B 1, C 0, D 1). A no-content pattern-guesser picking A on every item scores 26/28 (93%). The item's content is sound (blind pick matched the key, key re-derived from the stimulus, no length tell, grounding present), but the topic cannot flip to final until option order is shuffled so keys distribute across positions, then re-verified blind on the shuffled items."
+  },
+  "apush-mcq-0128": {
+   "id": "apush-mcq-0128",
+   "my_pick": "A",
+   "key": "A",
+   "verdict": "FAIL",
+   "reason": "Blind pick A matched the locked key A; key re-derived from stimulus and correct; no length tell; grounding present. FAIL on key position tell: this item's key sits in position A, and 26 of the topic's 28 MCQ keys sit in A (A 26, B 1, C 0, D 1). A no-content pattern-guesser picking A on every item scores 26/28 (93%). The item's content is sound (blind pick matched the key, key re-derived from the stimulus, no length tell, grounding present), but the topic cannot flip to final until option order is shuffled so keys distribute across positions, then re-verified blind on the shuffled items."
+  },
+  "apush-mcq-0129": {
+   "id": "apush-mcq-0129",
+   "my_pick": "A",
+   "key": "A",
+   "verdict": "FAIL",
+   "reason": "Blind pick A matched the locked key A; key re-derived from stimulus and correct; no length tell; grounding present. FAIL on key position tell: this item's key sits in position A, and 26 of the topic's 28 MCQ keys sit in A (A 26, B 1, C 0, D 1). A no-content pattern-guesser picking A on every item scores 26/28 (93%). The item's content is sound (blind pick matched the key, key re-derived from the stimulus, no length tell, grounding present), but the topic cannot flip to final until option order is shuffled so keys distribute across positions, then re-verified blind on the shuffled items."
+  },
+  "apush-mcq-0130": {
+   "id": "apush-mcq-0130",
+   "my_pick": "A",
+   "key": "A",
+   "verdict": "FAIL",
+   "reason": "Blind pick A matched the locked key A; key re-derived from stimulus and correct; no length tell; grounding present. FAIL on key position tell: this item's key sits in position A, and 26 of the topic's 28 MCQ keys sit in A (A 26, B 1, C 0, D 1). A no-content pattern-guesser picking A on every item scores 26/28 (93%). The item's content is sound (blind pick matched the key, key re-derived from the stimulus, no length tell, grounding present), but the topic cannot flip to final until option order is shuffled so keys distribute across positions, then re-verified blind on the shuffled items."
+  },
+  "apush-mcq-0131": {
+   "id": "apush-mcq-0131",
+   "my_pick": "A",
+   "key": "A",
+   "verdict": "FAIL",
+   "reason": "Blind pick A matched the locked key A; key re-derived from stimulus and correct; no length tell; grounding present. FAIL on key position tell: this item's key sits in position A, and 26 of the topic's 28 MCQ keys sit in A (A 26, B 1, C 0, D 1). A no-content pattern-guesser picking A on every item scores 26/28 (93%). The item's content is sound (blind pick matched the key, key re-derived from the stimulus, no length tell, grounding present), but the topic cannot flip to final until option order is shuffled so keys distribute across positions, then re-verified blind on the shuffled items."
+  },
+  "apush-mcq-0132": {
+   "id": "apush-mcq-0132",
+   "my_pick": "A",
+   "key": "A",
+   "verdict": "FAIL",
+   "reason": "Blind pick A matched the locked key A; key re-derived from stimulus and correct; no length tell; grounding present. FAIL on key position tell: this item's key sits in position A, and 26 of the topic's 28 MCQ keys sit in A (A 26, B 1, C 0, D 1). A no-content pattern-guesser picking A on every item scores 26/28 (93%). The item's content is sound (blind pick matched the key, key re-derived from the stimulus, no length tell, grounding present), but the topic cannot flip to final until option order is shuffled so keys distribute across positions, then re-verified blind on the shuffled items."
+  },
+  "apush-mcq-0133": {
+   "id": "apush-mcq-0133",
+   "my_pick": "A",
+   "key": "A",
+   "verdict": "FAIL",
+   "reason": "Blind pick A matched the locked key A; key re-derived from stimulus and correct; no length tell; grounding present. FAIL on key position tell: this item's key sits in position A, and 26 of the topic's 28 MCQ keys sit in A (A 26, B 1, C 0, D 1). A no-content pattern-guesser picking A on every item scores 26/28 (93%). The item's content is sound (blind pick matched the key, key re-derived from the stimulus, no length tell, grounding present), but the topic cannot flip to final until option order is shuffled so keys distribute across positions, then re-verified blind on the shuffled items."
+  },
+  "apush-mcq-0134": {
+   "id": "apush-mcq-0134",
+   "my_pick": "A",
+   "key": "A",
+   "verdict": "FAIL",
+   "reason": "Blind pick A matched the locked key A; key re-derived from stimulus and correct; no length tell; grounding present. FAIL on key position tell: this item's key sits in position A, and 26 of the topic's 28 MCQ keys sit in A (A 26, B 1, C 0, D 1). A no-content pattern-guesser picking A on every item scores 26/28 (93%). The item's content is sound (blind pick matched the key, key re-derived from the stimulus, no length tell, grounding present), but the topic cannot flip to final until option order is shuffled so keys distribute across positions, then re-verified blind on the shuffled items."
+  },
+  "apush-mcq-0135": {
+   "id": "apush-mcq-0135",
+   "my_pick": "A",
+   "key": "A",
+   "verdict": "FAIL",
+   "reason": "Blind pick A matched the locked key A; key re-derived from stimulus and correct; no length tell; grounding present. FAIL on key position tell: this item's key sits in position A, and 26 of the topic's 28 MCQ keys sit in A (A 26, B 1, C 0, D 1). A no-content pattern-guesser picking A on every item scores 26/28 (93%). The item's content is sound (blind pick matched the key, key re-derived from the stimulus, no length tell, grounding present), but the topic cannot flip to final until option order is shuffled so keys distribute across positions, then re-verified blind on the shuffled items."
+  },
+  "apush-mcq-0136": {
+   "id": "apush-mcq-0136",
+   "my_pick": "A",
+   "key": "A",
+   "verdict": "FAIL",
+   "reason": "Blind pick A matched the locked key A; key re-derived from stimulus and correct; no length tell; grounding present. FAIL on key position tell: this item's key sits in position A, and 26 of the topic's 28 MCQ keys sit in A (A 26, B 1, C 0, D 1). A no-content pattern-guesser picking A on every item scores 26/28 (93%). The item's content is sound (blind pick matched the key, key re-derived from the stimulus, no length tell, grounding present), but the topic cannot flip to final until option order is shuffled so keys distribute across positions, then re-verified blind on the shuffled items."
+  },
+  "apush-mcq-0137": {
+   "id": "apush-mcq-0137",
+   "my_pick": "A",
+   "key": "A",
+   "verdict": "FAIL",
+   "reason": "Blind pick A matched the locked key A; key re-derived from stimulus and correct; no length tell; grounding present. FAIL on key position tell: this item's key sits in position A, and 26 of the topic's 28 MCQ keys sit in A (A 26, B 1, C 0, D 1). A no-content pattern-guesser picking A on every item scores 26/28 (93%). The item's content is sound (blind pick matched the key, key re-derived from the stimulus, no length tell, grounding present), but the topic cannot flip to final until option order is shuffled so keys distribute across positions, then re-verified blind on the shuffled items."
+  },
+  "apush-mcq-0138": {
+   "id": "apush-mcq-0138",
+   "my_pick": "A",
+   "key": "A",
+   "verdict": "FAIL",
+   "reason": "Blind pick A matched the locked key A; key re-derived from stimulus and correct; no length tell; grounding present. FAIL on key position tell: this item's key sits in position A, and 26 of the topic's 28 MCQ keys sit in A (A 26, B 1, C 0, D 1). A no-content pattern-guesser picking A on every item scores 26/28 (93%). The item's content is sound (blind pick matched the key, key re-derived from the stimulus, no length tell, grounding present), but the topic cannot flip to final until option order is shuffled so keys distribute across positions, then re-verified blind on the shuffled items."
+  },
+  "apush-saq-0025": {
+   "id": "apush-saq-0025",
+   "my_answer": "a) Spain built missions to bring Native peoples into the mission system and teach Christianity and Spanish ways. b) The mission system pressed the Guale to live under Spanish priests and follow Christian teaching. c) The Guale answered with Juanillo's Revolt in 1597, killing several missionaries.",
+   "verdict": "PASS",
+   "reason": "Blind answers match the model answers on all 3 parts; scoring criteria accurate with correct notEarned; all model answers 2 sentences; grounding present (book + chapter)."
+  },
+  "apush-saq-0026": {
+   "id": "apush-saq-0026",
+   "my_answer": "a) Cortes cast the idols down and set up images of Our Lady and the Saints in their place. b) They believed the idols bestowed all temporal good and would grow angry and withhold their gifts if mistreated; they warned the people would rise. c) Conversion stood beside conquest as a Spanish aim, framing conquest as a holy task.",
+   "verdict": "PASS",
+   "reason": "Blind answers match the model answers on all 3 parts; scoring criteria accurate with correct notEarned; all model answers 2 sentences; grounding present (book + chapter)."
+  },
+  "apush-saq-0027": {
+   "id": "apush-saq-0027",
+   "my_answer": "a) Bartolome de las Casas, Dominican friar, seated at a writing desk writing, caption names him Bishop of Chiapas and apostle of the Indies. b) Engraved in 1791, more than two centuries after he died in 1566, so it is an imagined likeness, not drawn from life. c) His writings argued Native peoples had natural rights and must not be enslaved, fueling the Valladolid debate and European discussion of the justice of conquest.",
+   "verdict": "PASS",
+   "reason": "Blind answers match the model answers on all 3 parts; scoring criteria accurate with correct notEarned; all model answers 2 sentences; grounding present (book + chapter)."
+  },
+  "apush-saq-0028": {
+   "id": "apush-saq-0028",
+   "my_answer": "a) African songs sung in the fields; voodoo faiths mixing Christianity with African beliefs. b) Enslaved people blended the language and religion of their masters with ancestral traditions into new forms such as voodoo. c) Maroon communities formed by escaped enslaved people kept African traditions alive apart from the plantation.",
+   "verdict": "PASS",
+   "reason": "Blind answers match the model answers on all 3 parts; scoring criteria accurate with correct notEarned; all model answers 2 sentences; grounding present (book + chapter)."
+  },
+  "apush-saq-0029": {
+   "id": "apush-saq-0029",
+   "my_answer": "a) Some peoples were by nature slaves, fit to be ruled, so war against them was just. b) Aristotle, who claimed some peoples were natural slaves. c) Las Casas answered from natural law that Native peoples were rational human beings with rights and that only peaceful preaching could justify Spanish rule.",
+   "verdict": "PASS",
+   "reason": "Blind answers match the model answers on all 3 parts; scoring criteria accurate with correct notEarned; all model answers 2 sentences; grounding present (book + chapter)."
+  },
+  "apush-saq-0030": {
+   "id": "apush-saq-0030",
+   "my_answer": "a) Florida Indians planting seeds of beans and maize in rows, women carrying baskets, men digging with hoes. b) Organized agriculture: maize and beans planted in prepared fields with hoes, men and women sharing the work. c) De Bry never visited Florida; he worked from Le Moyne's drawings and gave the figures European features, so the image is a European-filtered depiction.",
+   "verdict": "PASS",
+   "reason": "Blind answers match the model answers on all 3 parts; scoring criteria accurate with correct notEarned; all model answers 2 sentences; grounding present (book + chapter)."
+  },
+  "apush-leq-0009": {
+   "id": "apush-leq-0009",
+   "my_thesis": "European cultural practices transformed Native societies deeply but not completely: missions and intermarriage reshaped religion, family, and daily life, while Native peoples kept much of their own culture and resisted where they could.",
+   "my_outline": "Context: diverse Native societies before contact, Spanish conquest of Mexico and Peru, Columbian Exchange. Evidence: Cortes replacing idols in Tenochtitlan, Florida missions and Juanillo's Revolt, intermarriage and mestizo populations, Acoma resistance. Complexity: change was uneven, conversion reached many while languages and customs persisted.",
+   "verdict": "PASS",
+   "reason": "Model outline scores 6/6 against its rubric (thesis 1, contextualization 1, evidence 2, analysis and reasoning 2); my blind thesis/outline match in substance; rubric skill labels correct (thesis 6.A, contextualization 4.B, evidence 6.B); grounding present."
+  },
+  "apush-leq-0010": {
+   "id": "apush-leq-0010",
+   "my_thesis": "Spanish and French interactions differed greatly in form \u2014 Spain built an empire of mines, missions, and settler colonies that coerced Native labor, while France built a fur-trade network depending on Native partnership \u2014 though both sought wealth and both could use force.",
+   "my_outline": "Context: Spanish conquest of Mexico and Peru, French exploration of the St. Lawrence, silver economy vs fur trade. Evidence: encomienda and missions, French fur-trade alliances, intermarriage patterns, Native resistance. Complexity: the difference came from what each empire was there to do, but it was a difference of degree and purpose, not of kind.",
+   "verdict": "PASS",
+   "reason": "Model outline scores 6/6 against its rubric (thesis 1, contextualization 1, evidence 2, analysis and reasoning 2); my blind thesis/outline match in substance; rubric skill labels correct (thesis 6.A, contextualization 4.B, evidence 6.B); all evidence in-window (1500s French trade, no Quebec 1608); grounding present."
+  }
+ }
+}

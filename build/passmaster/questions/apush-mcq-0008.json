@@ -1,0 +1,85 @@
+{
+ "id": "apush-mcq-0008",
+ "lesson": "apush-u1-l1",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 1,
+ "topics": [
+  "1.1"
+ ],
+ "skills": [
+  "4.A",
+  "2.B"
+ ],
+ "themes": [
+  "GEO",
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 3,
+ "stimulus_set": "waldseemuller-1507",
+ "stimulus": {
+  "kind": "map",
+  "text": "Martin Waldseemuller's world map, published in 1507, was the first map to use the name America for the lands across the Atlantic Ocean. It shows the western lands as a separate landmass. The portrait of Amerigo Vespucci stands beside one globe at the top of the map, and the portrait of the ancient geographer Ptolemy stands beside the other globe.",
+  "source_note": "Waldseemuller map, 1507, public domain; Library of Congress."
+ },
+ "source": "original; stimulus image from the shared pool, Waldseemuller map 1507, public domain",
+ "grounding": {
+  "books": [
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 6",
+    "section": "Columbus"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 3",
+    "section": "Portugal and Spain Lead the Way"
+   }
+  ],
+  "primary_sources": [
+   "Waldseemuller world map (1507)"
+  ]
+ },
+ "status": "final",
+ "stem": "Why did Waldseemuller name the western lands America, after Amerigo Vespucci?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Vespucci paid for the printing of the map in Saint-Die.",
+   "misconception": "Assumes Vespucci funded the map, but no evidence ties him to its printing."
+  },
+  {
+   "key": "B",
+   "text": "The Spanish crown ordered the name to honor a royal favorite.",
+   "misconception": "Credits a royal order that never existed; the name came from mapmakers, not the crown."
+  },
+  {
+   "key": "C",
+   "text": "Columbus asked that the lands be named for Vespucci.",
+   "misconception": "Puts words in the mouth of Columbus, who believed he had reached Asia."
+  },
+  {
+   "key": "D",
+   "text": "Vespucci argued the lands were a new world, and mapmakers agreed."
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "general": "1. Look at the map. Vespucci stands beside the globe at the top, honored as a source. 2. Ask what Vespucci claimed. His letters argued that the lands across the Atlantic were a new world, not Asia. 3. Ask what mapmakers did with that claim. Waldseemuller accepted it and gave the lands a new name from Vespucci. 4. Conclude. The name records whose idea the mapmakers trusted. Remember: when a map honors a person, ask what idea that person supplied.",
+  "A": "Vespucci did not pay for the map; Waldseemuller and his partners printed it in Saint-Die, and the name came from Vespucci's writings.",
+  "B": "The Spanish crown did not order the name, and the map was printed in the Duchy of Lorraine, outside Spanish control.",
+  "C": "Columbus believed until his death that he had reached Asia, so he would not have asked for a name that marked a new continent.",
+  "D": "Vespucci's letters argued the lands were a new world, and Waldseemuller followed that claim by naming them America."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0008",
+   "file": "u1/original-ctx-u1-03.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Waldseemuller_map_2.jpg",
+   "license": "Public domain",
+   "caption": "Martin Waldseemuller's world map of 1507, the first map to name the western lands America",
+   "alt": "A 1507 world map in twelve sheets showing Europe, Africa, Asia, and a long western landmass labeled America on the left side"
+  }
+ ]
+}

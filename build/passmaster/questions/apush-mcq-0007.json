@@ -1,0 +1,85 @@
+{
+ "id": "apush-mcq-0007",
+ "lesson": "apush-u1-l1",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 1,
+ "topics": [
+  "1.1",
+  "1.3"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "GEO",
+  "WXT"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 2,
+ "stimulus_set": "waldseemuller-1507",
+ "stimulus": {
+  "kind": "map",
+  "text": "Martin Waldseemuller's world map, published in 1507, was the first map to use the name America for the lands across the Atlantic Ocean. It shows the western lands as a separate landmass. The portrait of Amerigo Vespucci stands beside one globe at the top of the map, and the portrait of the ancient geographer Ptolemy stands beside the other globe.",
+  "source_note": "Waldseemuller map, 1507, public domain; Library of Congress."
+ },
+ "source": "original; stimulus image from the shared pool, Waldseemuller map 1507, public domain",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 3",
+    "section": "Portugal and Spain Lead the Way"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 6",
+    "section": "Columbus"
+   }
+  ],
+  "primary_sources": [
+   "Waldseemuller world map (1507)"
+  ]
+ },
+ "status": "final",
+ "stem": "What change in European knowledge does the 1507 map best show?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Europeans recognized the western lands as a separate continent, not part of Asia."
+  },
+  {
+   "key": "B",
+   "text": "Europeans had fully charted the Pacific coast of the Americas by 1507.",
+   "misconception": "Reads a complete Pacific coast into a map that shows only a rough western shoreline."
+  },
+  {
+   "key": "C",
+   "text": "The map proves that Columbus had reached Asia on his voyages.",
+   "misconception": "Treats the new name America as proof of Asia, which is the opposite of what the name means."
+  },
+  {
+   "key": "D",
+   "text": "The map leaves Africa off the world entirely, showing no African coast.",
+   "misconception": "Claims Africa is missing, but Africa appears in full on the lower sheets of the map."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "general": "1. Find the new name. The map is the first to call the western lands America. 2. Ask why a new name was needed. A new name means mapmakers saw lands that fit no known continent. 3. Ask what that replaced. Earlier maps had treated the lands as the edge of Asia. 4. Conclude the change. By 1507 Europeans saw a separate continent across the Atlantic. Remember: a new name on a map often marks a new idea, so ask what the old name used to claim.",
+  "A": "Naming the western lands America shows mapmakers saw them as a separate continent, not as the coast of Asia.",
+  "B": "The map shows only a rough western shoreline, so the Pacific coast was far from fully charted in 1507.",
+  "C": "Calling the lands America marks them as new, so the map argues against the claim that Columbus reached Asia.",
+  "D": "Africa appears in full on the lower sheets of the map, so it was not left off."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0007",
+   "file": "u1/original-ctx-u1-03.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Waldseemuller_map_2.jpg",
+   "license": "Public domain",
+   "caption": "Martin Waldseemuller's world map of 1507, the first map to name the western lands America",
+   "alt": "A 1507 world map in twelve sheets showing Europe, Africa, Asia, and a long western landmass labeled America on the left side"
+  }
+ ]
+}

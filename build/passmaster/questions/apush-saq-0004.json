@@ -1,0 +1,86 @@
+{
+ "id": "apush-saq-0004",
+ "lesson": "apush-u1-l1",
+ "type": "saq",
+ "pool": "test",
+ "unit": 1,
+ "topics": [
+  "1.2"
+ ],
+ "skills": [
+  "1.B",
+  "5.A"
+ ],
+ "themes": [
+  "GEO",
+  "NAT"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 3,
+ "stimulus_set": null,
+ "stimulus": {
+  "kind": "text",
+  "text": "Secondary passage written for this question. Before Europeans arrived, Native peoples across North America had built many different ways of life. In the Southeast and Midwest, Mississippian chiefdoms farmed maize in river valleys and raised great earthen mounds at Cahokia. In the arid Southwest, Pueblo peoples farmed dry land and built adobe villages. In the Northeast woodlands, Iroquois villagers farmed maize, beans, and squash together. On the rainy Pacific coast, peoples fished for salmon and built settled villages without farming maize.",
+  "source_note": "Original secondary passage written for this question, summarizing the grounding books."
+ },
+ "source": "original; secondary passage written for this question from the grounding books",
+ "status": "final",
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 3",
+    "section": "Topic 1.2 Native American Societies Before European Contact"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 6",
+    "section": "Native America"
+   }
+  ],
+  "primary_sources": []
+ },
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one way in which environment shaped how a Native society in the passage lived.",
+   "modelAnswer": "In the arid Southwest, Pueblo peoples farmed dry land and built adobe villages, a way of life fitted to a dry climate. With little rain, they had to farm dry land and build with sun-dried earth, so the climate itself set the shape of their homes and fields.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for naming one environment-society link from the passage, such as Pueblo dry farming, Iroquois three sisters farming, or Pacific coast fishing villages.",
+     "notEarned": "Naming a society with no link to its environment does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain how maize farming helped Mississippian chiefdoms like Cahokia grow large.",
+   "modelAnswer": "Maize farming in the fertile river valleys produced surpluses that fed dense populations, and those surpluses supported chiefs, priests, and the labor that raised the mounds. Surplus food freed some people from farming, so a community could feed chiefs and priests and organize the labor that raised the mounds.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining that maize surpluses fed dense populations and supported hierarchy or large-scale building.",
+     "notEarned": "Stating only that Cahokia was large, with no link to maize surpluses, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one similarity between the Pueblo peoples and the Iroquois villagers described in the passage.",
+   "modelAnswer": "Both were settled farming peoples: Pueblo peoples farmed dry land in the Southwest and Iroquois villagers farmed the three sisters in the Northeast, and both lived in permanent villages. In both places, farming gave a steady food supply, so families could stay in one place year after year instead of moving to find food.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for naming a similarity with specifics for both groups, such as settled farming or permanent villages.",
+     "notEarned": "Naming a similarity for one group only, with no detail on the other, does not earn the point."
+    }
+   ]
+  }
+ ]
+}

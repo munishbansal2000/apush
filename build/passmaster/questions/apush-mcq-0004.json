@@ -1,0 +1,83 @@
+{
+ "id": "apush-mcq-0004",
+ "lesson": "apush-u1-l1",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 1,
+ "topics": [
+  "1.1",
+  "1.2"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "GEO",
+  "NAT"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 2,
+ "stimulus_set": "cahokia-mounds",
+ "stimulus": {
+  "kind": "image",
+  "text": "The photograph shows Powell's Mound at Cahokia, near present-day St. Louis, Missouri. Cahokia was the largest city of the Mississippian culture, reaching its height around 1100 to 1200, centuries before European contact. Its people built large earthen mounds, farmed maize, and traded across the Mississippi River valley.",
+  "source_note": "Photograph from the shared image pool; U.S. Army Air Service photograph, public domain."
+ },
+ "source": "original; stimulus image from the shared pool, U.S. Army Air Service photograph, public domain",
+ "grounding": {
+  "books": [
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 6",
+    "section": "Native America"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 3",
+    "section": "Topic 1.2 Native American Societies Before European Contact"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "What does the mound in the photograph show about societies in North America before 1492?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Only small nomadic bands lived in North America before European contact.",
+   "misconception": "Assumes all pre-contact peoples were nomadic and left no large works."
+  },
+  {
+   "key": "B",
+   "text": "Indigenous peoples built no permanent structures in North America before Europeans arrived.",
+   "misconception": "Denies the mound itself, which is a permanent structure in the photograph."
+  },
+  {
+   "key": "C",
+   "text": "The mound was built by European settlers after they arrived in 1607.",
+   "misconception": "Attributes a pre-contact Mississippian mound to Europeans who arrived centuries later."
+  },
+  {
+   "key": "D",
+   "text": "Large, organized societies with the labor to build monumental earthworks existed before 1492."
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "general": "1. Look at the image. A large flat-topped mound rises from flat farmland. 2. Ask what a mound takes. Moving that much earth takes many workers over a long time. 3. Ask what that means. Many workers over a long time means an organized society, not a passing camp. 4. Place it in time. Cahokia reached its height around 1100 to 1200, centuries before 1492. Remember: a big built work is evidence of organization, so ask who could have supplied the labor.",
+  "A": "Cahokia was a large city with mounds, farms, and trade, so the idea that only small nomadic bands lived here fails against the mound.",
+  "B": "The mound is itself a permanent structure built before European contact, so the claim that none existed contradicts the photograph.",
+  "C": "Cahokia reached its height around 1100 to 1200, centuries before Europeans settled North America, so Europeans did not build the mound.",
+  "D": "A mound this size needed organized labor over a long time, which shows a large organized society at Cahokia long before 1492."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0004",
+   "file": "u1/original-ctx-u1-07.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/The_origin_of_the_Cahokia_mounds_%28Page_18%29_BHL17575302",
+   "license": "Public domain",
+   "caption": "Powell's Mound at Cahokia, photographed from the air",
+   "alt": "Aerial photograph of a large flat-topped earthen mound rising from flat farmland, with fields and a road around it"
+  }
+ ]
+}

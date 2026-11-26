@@ -1,0 +1,89 @@
+{
+ "id": "apush-saq-0002",
+ "lesson": "apush-u1-l1",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 1,
+ "topics": [
+  "1.1",
+  "1.3"
+ ],
+ "skills": [
+  "2.A",
+  "3.A"
+ ],
+ "themes": [
+  "GEO",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": null,
+ "stimulus": {
+  "kind": "text",
+  "text": "Paraphrase of Christopher Columbus, letter to Luis de Santangel, 1493. Columbus wrote that he had found many islands full of people, that the people were gentle and quick to learn, that the islands held gold and spices, and that he had taken possession of the lands for the king and queen of Spain.",
+  "source_note": "Paraphrase of a public-domain text; Columbus, letter to Luis de Santangel, 1493."
+ },
+ "source": "original; stimulus paraphrased from Columbus, letter to Luis de Santangel (1493), public domain",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 3",
+    "section": "Portugal and Spain Lead the Way"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 6",
+    "section": "Columbus"
+   }
+  ],
+  "primary_sources": [
+   "Columbus, letter to Luis de Santangel (1493)"
+  ]
+ },
+ "status": "final",
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one claim Columbus makes about the lands or peoples he found.",
+   "modelAnswer": "Columbus claims that the islands are full of gentle people who are quick to learn, and that the islands hold gold and spices worth seeking.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for naming one claim from the letter, such as many people, gentle people, gold, spices, or taking possession for Spain.",
+     "notEarned": "Naming a claim Columbus did not make in this letter, such as reaching Asia by name, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain the purpose of Columbus in writing this letter.",
+   "modelAnswer": "Columbus wrote to report his voyage to the Spanish court and to win support for more voyages, so he stressed the people, the gold, and the spices to show that the voyage had paid off and deserved further backing.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining that Columbus wrote to report success and win support or funding for further voyages.",
+     "notEarned": "Stating only that he wrote to describe the voyage, with no purpose such as winning support, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one limitation of this letter as evidence about Indigenous peoples.",
+   "modelAnswer": "The letter shows what Columbus wanted the court to hear, not how Indigenous peoples saw themselves, because Columbus describes them briefly as gentle and quick to learn in order to praise the voyage, and he spent only weeks among them.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one limitation, such as the letter reflects Columbus's purpose and brief contact, or it gives no Indigenous voice.",
+     "notEarned": "Stating only that the letter is old, with no limitation explained, does not earn the point."
+    }
+   ]
+  }
+ ]
+}

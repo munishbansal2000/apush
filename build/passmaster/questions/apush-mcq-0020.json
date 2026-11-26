@@ -1,0 +1,72 @@
+{
+ "id": "apush-mcq-0020",
+ "lesson": "apush-u1-l1",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 1,
+ "topics": [
+  "1.2"
+ ],
+ "skills": [
+  "5.B"
+ ],
+ "themes": [
+  "GEO",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "stimulus_set": "city-populations",
+ "stimulus": {
+  "kind": "chart",
+  "text": "| City | Region | Approximate population at its height |\n| Tenochtitlan (Mexica) | Central Mexico | About 200,000 |\n| Cahokia (Mississippian) | Mississippi River valley, near present-day St. Louis | About 20,000 |",
+  "source_note": "Approximate figures; Cahokia about 20,000 at its peak in the 1200s and Tenochtitlan about 200,000, consistent with standard estimates (see grounding)."
+ },
+ "source": "original; fresh authoring; population figures approximate, see grounding",
+ "status": "final",
+ "stem": "How does maize farming relate to the growth of both Tenochtitlan and Cahokia?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Maize farming kept both cities small by limiting their stored food.",
+   "misconception": "Reverses the link: surpluses fed growth, not smallness."
+  },
+  {
+   "key": "B",
+   "text": "Maize farming mattered in Mexico but played no part in Cahokia.",
+   "misconception": "Denies Cahokia's farming, though the city depended on maize surpluses."
+  },
+  {
+   "key": "C",
+   "text": "Both cities grew large mainly because European traders supplied them with food.",
+   "misconception": "Credits Europeans who arrived centuries after both cities grew."
+  },
+  {
+   "key": "D",
+   "text": "Maize surpluses fed large populations in both cities, in different regions."
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "A": "Maize surpluses fed growth in both cities, so farming did not keep them small.",
+  "B": "Cahokia depended on maize surpluses from the river valleys just as Tenochtitlan did in Mexico.",
+  "C": "Both cities grew centuries before Europeans arrived, so European traders cannot explain their size.",
+  "D": "Maize surpluses fed about 200,000 people in Tenochtitlan and about 20,000 in Cahokia, in two different regions.",
+  "general": "1. Name the link. Maize farming produced more food than a family needed.\n2. Follow the surplus in Mexico. It fed Tenochtitlan, a city of about 200,000 people.\n3. Follow the surplus north. It fed Cahokia, a city of about 20,000 in the Mississippi valley.\n4. Connect the two. The same crop fed large cities in two different regions.\nRemember: a surplus is the bridge between farming and cities, so trace the food first."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 3",
+    "section": "Topic 1.2 Native American Societies Before European Contact"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 6",
+    "section": "Native America"
+   }
+  ],
+  "primary_sources": []
+ }
+}

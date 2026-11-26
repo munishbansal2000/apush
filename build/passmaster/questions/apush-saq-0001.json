@@ -1,0 +1,102 @@
+{
+ "id": "apush-saq-0001",
+ "lesson": "apush-u1-l1",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 1,
+ "topics": [
+  "1.1",
+  "1.2"
+ ],
+ "skills": [
+  "4.A",
+  "1.B"
+ ],
+ "themes": [
+  "GEO",
+  "MIG"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 3,
+ "stimulus_set": null,
+ "stimulus": {
+  "kind": "text",
+  "text": "Original secondary passage written for this question. Before 1492, the Americas held many different societies. In the Mississippi valley, Cahokia stood as a large city of farmers and traders. In Mexico and Peru, the Aztec and Inca empires ruled millions of people. Smaller farming villages and hunting peoples lived across North America. At the same time, Europeans sought a sea route to the spices and silks of Asia, and Portuguese sailors had already sailed down the west coast of Africa, learning to use the winds and currents of the Atlantic.",
+  "source_note": "Original secondary passage written for this question, summarizing standard Period 1 background."
+ },
+ "source": "original; stimulus is an original secondary passage written for this question",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 3",
+    "section": "Topic 1.1 Contextualizing Period 1"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 3",
+    "section": "Topic 1.2 Native American Societies Before European Contact"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 6",
+    "section": "Native America"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 6",
+    "section": "The Europeans Arrive"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "NATIVE AMERICANS IN PRE-COLUMBIAN NORTH AMERICA"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one characteristic of Indigenous societies in the Americas before 1492.",
+   "modelAnswer": "One characteristic is variety: the Americas held large cities such as Cahokia, empires such as the Aztec and the Inca, and many smaller farming and hunting societies, each adapted to its own region.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for naming one accurate characteristic of a pre-1492 Indigenous society, such as a large city, an empire, farming, trade, or regional variety.",
+     "notEarned": "Naming only that people lived in the Americas, with no characteristic, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain how one European development before 1492 helped make transatlantic contact possible.",
+   "modelAnswer": "Portuguese sailing down the African coast taught Europeans to use Atlantic winds and currents, and the search for a sea route to Asian spices gave them a reason to sail west, so by 1492 Europeans had both the skill and the motive to cross the ocean.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining how one pre-1492 European development, such as improved sailing, knowledge of winds, or the search for Asian trade, made a crossing possible.",
+     "notEarned": "Stating only that Europeans wanted gold, with no development that made the voyage possible, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one way the arrival of Europeans changed Indigenous societies in Period 1.",
+   "modelAnswer": "European arrival brought conquest and forced labor, and it also brought diseases such as smallpox to peoples with no immunity, so Indigenous populations fell sharply and many societies lost people, land, and political independence.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one accurate change to Indigenous societies, such as disease and population loss, conquest, forced labor, or loss of land.",
+     "notEarned": "Stating only that Europeans arrived, with no change explained, does not earn the point."
+    }
+   ]
+  }
+ ]
+}

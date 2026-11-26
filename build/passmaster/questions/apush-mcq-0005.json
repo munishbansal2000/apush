@@ -1,0 +1,88 @@
+{
+ "id": "apush-mcq-0005",
+ "lesson": "apush-u1-l1",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 1,
+ "topics": [
+  "1.1",
+  "1.2"
+ ],
+ "skills": [
+  "4.A"
+ ],
+ "themes": [
+  "GEO",
+  "WXT"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 2,
+ "stimulus_set": "cahokia-mounds",
+ "stimulus": {
+  "kind": "image",
+  "text": "The photograph shows Powell's Mound at Cahokia, near present-day St. Louis, Missouri. Cahokia was the largest city of the Mississippian culture, reaching its height around 1100 to 1200, centuries before European contact. Its people built large earthen mounds, farmed maize, and traded across the Mississippi River valley.",
+  "source_note": "Photograph from the shared image pool; U.S. Army Air Service photograph, public domain."
+ },
+ "source": "original; stimulus image from the shared pool, U.S. Army Air Service photograph, public domain",
+ "grounding": {
+  "books": [
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 6",
+    "section": "Native America"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Maize"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 3",
+    "section": "Topic 1.2 Native American Societies Before European Contact"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "The mound at Cahokia best supports which statement about the Americas before European contact?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The Americas were empty of people until Columbus arrived in 1492.",
+   "misconception": "Treats 1492 as the start of American history and ignores the peoples already living there."
+  },
+  {
+   "key": "B",
+   "text": "Complex societies with cities, farming, and trade existed before Columbus arrived."
+  },
+  {
+   "key": "C",
+   "text": "Maize farming began in North America only after Europeans brought it.",
+   "misconception": "Reverses the direction of the Columbian Exchange; maize was an American crop."
+  },
+  {
+   "key": "D",
+   "text": "Mississippian peoples traded only within a single village, never beyond it.",
+   "misconception": "Shrinks a river-valley trade network down to one village."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "general": "1. Read the context with the image. Cahokia was the largest Mississippian city, at its height around 1100 to 1200. 2. List what the city had. Large mounds, maize farms, and trade across the Mississippi valley. 3. Ask what that list proves. Cities, farming, and wide trade are marks of a complex society. 4. Check the date. All of it came centuries before Columbus. Remember: when a question asks what came before contact, check the date on the evidence first.",
+  "A": "Cahokia alone held thousands of people before 1492, so the Americas were not empty when Columbus arrived.",
+  "B": "Cahokia combined a large city, maize farming, and river-valley trade centuries before Columbus, which is the mark of a complex society.",
+  "C": "Maize was grown in the Americas for centuries before contact, and Europeans carried it to other continents, not the other way around.",
+  "D": "Cahokia traded across the Mississippi River valley, so its trade reached far beyond a single village."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0005",
+   "file": "u1/original-ctx-u1-07.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/The_origin_of_the_Cahokia_mounds_%28Page_18%29_BHL17575302",
+   "license": "Public domain",
+   "caption": "Powell's Mound at Cahokia, photographed from the air",
+   "alt": "Aerial photograph of a large flat-topped earthen mound rising from flat farmland, with fields and a road around it"
+  }
+ ]
+}

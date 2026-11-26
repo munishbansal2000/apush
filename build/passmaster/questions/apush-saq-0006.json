@@ -1,0 +1,93 @@
+{
+ "id": "apush-saq-0006",
+ "lesson": "apush-u1-l1",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 1,
+ "topics": [
+  "1.2"
+ ],
+ "skills": [
+  "2.C",
+  "3.A"
+ ],
+ "themes": [
+  "GEO",
+  "ARC"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 3,
+ "stimulus_set": null,
+ "stimulus": {
+  "kind": "image",
+  "text": "The image is a hand-colored lithograph by George Catlin, made in the 1830s and 1840s from his travels on the Great Plains. It shows Native hunters on horseback chasing bison across grassland.",
+  "source_note": "Image from the shared image pool; George Catlin, Buffalo Hunt, public domain."
+ },
+ "source": "original; stimulus image by George Catlin (1830s-1840s), public domain",
+ "status": "final",
+ "saq_slot": 3,
+ "totalPoints": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 3",
+    "section": "Societies of the Great Basin and Great Plains"
+   }
+  ],
+  "primary_sources": [
+   "George Catlin, Buffalo Hunt (hand-colored lithograph, 1830s-1840s)"
+  ]
+ },
+ "figures": [
+  {
+   "id": "fig-apush-saq-0006",
+   "file": "u1/u1-catlin-buffalo-hunt.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:George_Catlin_-_Buffalo_hunt.jpg",
+   "license": "Public domain",
+   "caption": "George Catlin, Buffalo Hunt, hand-colored lithograph from his travels on the Great Plains",
+   "alt": "Native hunters on horseback chase a herd of bison across open grassland beneath a large hill"
+  }
+ ],
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one feature of Plains life shown in the image.",
+   "modelAnswer": "The image shows hunters on horseback chasing bison, the animal that supplied meat, hides, and other goods for Plains peoples. Bison mattered so much because one animal gave food, clothing, and tools, so the hunt sat at the center of Plains life.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for naming one feature shown in the image, such as horseback hunting, bison, or grassland.",
+     "notEarned": "Naming a feature the image does not show, such as farming or a town, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain how one element of the image reflects change after European contact.",
+   "modelAnswer": "The hunters ride horses, and horses reached the Americas only with Europeans, so horseback hunting shows a Plains way of life reshaped by contact. Before horses, hunters chased bison on foot, so the horse changed how fast they could travel and how they hunted.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining that horses came with Europeans, so horseback hunting reflects change after contact.",
+     "notEarned": "Stating only that the hunters use horses, with no link to European contact, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one limitation of this image as evidence about Plains life before European contact.",
+   "modelAnswer": "Catlin painted in the 1800s, centuries after contact, and he shows horseback hunting, so the image cannot show how Plains peoples hunted before horses arrived. A source made after a change cannot show life before that change, so historians need earlier evidence for the time before horses.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one limitation, such as the late date or the horses, that keeps the image from showing pre-contact life.",
+     "notEarned": "Stating only that the image is a painting, with no limitation explained, does not earn the point."
+    }
+   ]
+  }
+ ]
+}

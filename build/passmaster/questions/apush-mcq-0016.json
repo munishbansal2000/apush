@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-0016",
+ "lesson": "apush-u1-l1",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 1,
+ "topics": [
+  "1.2"
+ ],
+ "skills": [
+  "2.B"
+ ],
+ "themes": [
+  "ARC",
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "de-bry-florida",
+ "stimulus": {
+  "kind": "mixed",
+  "text": "Two engravings from Theodor de Bry's America series (1591), after drawings by Jacques Le Moyne de Morgues. The first shows Florida Indians planting seeds of beans and maize in cleared fields. The second shows the same people hunting deer disguised under deerskins. De Bry never visited North America; he engraved the scenes in Europe from watercolors painted by Jacques Le Moyne, a French artist with the Laudonnière expedition.",
+  "source_note": "Engravings from the shared image pool; Theodor de Bry (1591), after Jacques Le Moyne de Morgues, public domain (Library of Congress)."
+ },
+ "source": "original; fresh authoring; stimulus engraving by Theodor de Bry (1591), after Jacques Le Moyne, public domain",
+ "status": "final",
+ "stem": "De Bry published these engravings in books sold to readers across Europe. How does that purpose and audience shape what the engravings show?",
+ "options": [
+  {
+   "key": "A",
+   "text": "De Bry drew only what he had measured himself in Florida villages.",
+   "misconception": "Forgets that de Bry never visited North America and worked from others' drawings."
+  },
+  {
+   "key": "B",
+   "text": "De Bry shaped the scenes to interest European readers buying his books."
+  },
+  {
+   "key": "C",
+   "text": "De Bry printed the engravings to teach Native peoples European farming methods.",
+   "misconception": "Reverses the audience: the books were sold to Europeans, not to Native peoples."
+  },
+  {
+   "key": "D",
+   "text": "De Bry made the images as legal records for a Spanish colonial court.",
+   "misconception": "Treats a commercial book illustration as a court record."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "De Bry never visited North America, so he could not have measured anything himself in Florida villages.",
+  "B": "De Bry published for European buyers, so he shaped the scenes to interest readers who had never seen the Americas.",
+  "C": "The books were sold to European readers, not sent to Native peoples as farming lessons.",
+  "D": "The engravings were commercial book illustrations, not legal records made for a colonial court.",
+  "general": "1. Name the product. De Bry sold books of engravings to readers across Europe.\n2. Name the buyers. His readers were Europeans curious about a new world, not people in Florida.\n3. Ask what sellers do. A seller shapes scenes to catch the eye of the buyers.\n4. Apply that here. Dramatic poses and classical bodies made the scenes sell, so read them as salesmanship as well as evidence.\nRemember: a source made to sell tells you about its buyers as well as its subject."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 3",
+    "section": "Topic 1.7 Subject to Debate"
+   }
+  ],
+  "primary_sources": [
+   "Theodor de Bry, engravings after Jacques Le Moyne de Morgues, America series (1591)"
+  ]
+ },
+ "figures": [
+  {
+   "file": "u1/original-u1-native-01.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Florida_Indians_planting_seeds_of_beans_or_maize_LCCN2001695741.jpg",
+   "license": "Public domain",
+   "caption": "Engraving by Theodor de Bry (1591), after Jacques Le Moyne de Morgues, showing Florida Indians planting seeds of beans and maize",
+   "alt": "Engraving of men and women planting seeds in rows in a cleared field, some carrying baskets of seed",
+   "id": "fig-apush-mcq-0016"
+  },
+  {
+   "file": "u1/original-u1-native-10.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Florida_Indians,_disguised_under_deerskins,_hunting_deer_LCCN2001695742.jpg",
+   "license": "Public domain",
+   "caption": "Engraving from a German edition of Theodor de Bry's America series, after Jacques Le Moyne, showing Florida Indians hunting deer disguised under deerskins",
+   "alt": "Engraving of hunters wearing deerskins with antlers drawing bows at deer beside a stream, with German text below the image",
+   "id": "fig-apush-mcq-0016-x"
+  }
+ ]
+}

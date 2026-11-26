@@ -1,0 +1,67 @@
+{
+ "id": "apush-mcq-0019",
+ "lesson": "apush-u1-l1",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 1,
+ "topics": [
+  "1.2"
+ ],
+ "skills": [
+  "6.D"
+ ],
+ "themes": [
+  "NAT",
+  "SOC"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 4,
+ "stimulus_set": "city-populations",
+ "stimulus": {
+  "kind": "chart",
+  "text": "| City | Region | Approximate population at its height |\n| Tenochtitlan (Mexica) | Central Mexico | About 200,000 |\n| Cahokia (Mississippian) | Mississippi River valley, near present-day St. Louis | About 20,000 |",
+  "source_note": "Approximate figures; Cahokia about 20,000 at its peak in the 1200s and Tenochtitlan about 200,000, consistent with standard estimates (see grounding)."
+ },
+ "source": "original; converted from original-u1-native-14",
+ "status": "final",
+ "stem": "A historian argues that food production, more than any other factor, determined how complex a Native American society became. Which comparison would provide the strongest test of this argument?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Comparing a maize-farming chiefdom with a non-farming foraging society in the same environment."
+  },
+  {
+   "key": "B",
+   "text": "Comparing two maize-farming societies that lived in very different regions of the Americas.",
+   "misconception": "Tests region, not farming, since both societies in the pair farm."
+  },
+  {
+   "key": "C",
+   "text": "Comparing the religious ceremonies and rituals of Mexica and Inca peoples.",
+   "misconception": "Tests religion, which is not the factor the argument names."
+  },
+  {
+   "key": "D",
+   "text": "Comparing European metal tools with the stone tools used by Native peoples.",
+   "misconception": "Tests tools, which is not the factor the argument names."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Same environment, different food production: the comparison holds other things steady and isolates the factor in question.",
+  "B": "Both societies in this pair farm, so the comparison cannot test whether farming itself is decisive.",
+  "C": "Religious ceremonies test religion, not food production, so they cannot test this argument.",
+  "D": "Tools test technology, not food production, so they cannot test this argument.",
+  "general": "1. Name the claim. Food production decided how complex a society became.\n2. Ask what would test it. Change food production and hold the rest steady.\n3. Build the pair. A maize-farming chiefdom and a non-farming foraging society in the same environment differ in food alone.\n4. Check the other pairs. Two farming societies, two religions, or two tool kits all test something else.\nRemember: to test one cause, compare cases that differ in that cause alone."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 3",
+    "section": "Topic 1.2 Native American Societies Before European Contact"
+   }
+  ],
+  "primary_sources": []
+ }
+}

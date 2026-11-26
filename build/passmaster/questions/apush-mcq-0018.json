@@ -1,0 +1,72 @@
+{
+ "id": "apush-mcq-0018",
+ "lesson": "apush-u1-l1",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 1,
+ "topics": [
+  "1.2"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "GEO",
+  "NAT"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 4,
+ "stimulus_set": "city-populations",
+ "stimulus": {
+  "kind": "chart",
+  "text": "| City | Region | Approximate population at its height |\n| Tenochtitlan (Mexica) | Central Mexico | About 200,000 |\n| Cahokia (Mississippian) | Mississippi River valley, near present-day St. Louis | About 20,000 |",
+  "source_note": "Approximate figures; Cahokia about 20,000 at its peak in the 1200s and Tenochtitlan about 200,000, consistent with standard estimates (see grounding)."
+ },
+ "source": "original; converted from original-u1-native-03; population figures approximate, see grounding",
+ "status": "final",
+ "stem": "The table compares the approximate populations of two cities built before Europeans arrived in the Americas. Which claim is best supported by this comparison?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Only the societies of Mesoamerica could build large, complex cities in the Americas.",
+   "misconception": "Ignores Cahokia, a large city built north of Mexico."
+  },
+  {
+   "key": "B",
+   "text": "Cahokia and Tenochtitlan shared the same form of government and social structure.",
+   "misconception": "Reads the same size as the same government, but the table says nothing about government."
+  },
+  {
+   "key": "C",
+   "text": "Maize-based farming could support very large cities in different regions of the Americas."
+  },
+  {
+   "key": "D",
+   "text": "European cities were always smaller than Native American cities in this period.",
+   "misconception": "Compares the table with European cities it never mentions."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "Cahokia held about 20,000 people north of Mexico, so large cities were not limited to Mesoamerica.",
+  "B": "Similar size does not mean the same government, and the table gives no information about political systems.",
+  "C": "Both cities were large and both were fed by intensive maize farming, one in central Mexico and one in the Mississippi valley.",
+  "D": "The table compares two American cities with each other and says nothing about European cities.",
+  "general": "1. Read the table. Tenochtitlan held about 200,000 people, and Cahokia about 20,000.\n2. Place both cities. One stood in central Mexico, the other in the Mississippi valley.\n3. Ask what fed them. Both cities depended on intensive maize farming for their food.\n4. Draw the comparison. Maize farming supported very large cities in two far-apart regions.\nRemember: when two far-apart places show the same pattern, look for the shared cause behind it."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 6",
+    "section": "Native America"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Native Americans in Pre-Columbian North America"
+   }
+  ],
+  "primary_sources": []
+ }
+}

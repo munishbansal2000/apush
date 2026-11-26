@@ -1,0 +1,67 @@
+{
+ "id": "apush-mcq-0021",
+ "lesson": "apush-u1-l1",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 1,
+ "topics": [
+  "1.2"
+ ],
+ "skills": [
+  "6.A"
+ ],
+ "themes": [
+  "GEO",
+  "ARC"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 2,
+ "stimulus_set": "city-populations",
+ "stimulus": {
+  "kind": "chart",
+  "text": "| City | Region | Approximate population at its height |\n| Tenochtitlan (Mexica) | Central Mexico | About 200,000 |\n| Cahokia (Mississippian) | Mississippi River valley, near present-day St. Louis | About 20,000 |",
+  "source_note": "Approximate figures; Cahokia about 20,000 at its peak in the 1200s and Tenochtitlan about 200,000, consistent with standard estimates (see grounding)."
+ },
+ "source": "original; fresh authoring; population figures approximate, see grounding",
+ "status": "final",
+ "stem": "The table gives city sizes. Other evidence shows Cahokia's mounds, plazas, and palisade, and Tenochtitlan's temples and tribute system. Taken together, what do these pieces of evidence show?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Both cities were small farming villages with almost no public organization.",
+   "misconception": "Ignores the table's large populations and the mounds and temples."
+  },
+  {
+   "key": "B",
+   "text": "Large populations and monumental building went together in both of these cities."
+  },
+  {
+   "key": "C",
+   "text": "City size alone proves both cities shared the same single government.",
+   "misconception": "Reads shared size as shared government, which no evidence here shows."
+  },
+  {
+   "key": "D",
+   "text": "The evidence shows both cities depended on European trade alone.",
+   "misconception": "Adds Europeans to cities that grew centuries before contact."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "The table gives populations of about 200,000 and 20,000, and the building evidence shows mounds and temples, not small villages.",
+  "B": "Large populations, monumental building, and organized rule appear together in both cities, so the pieces point the same way.",
+  "C": "Size alone proves nothing about government, and no evidence here describes one shared government.",
+  "D": "Both cities grew centuries before Europeans arrived, so European trade cannot be what the evidence shows.",
+  "general": "1. Start with size. The table gives two large cities, one of about 200,000 and one of about 20,000.\n2. Add the building. Cahokia raised mounds, plazas, and a palisade, and Tenochtitlan raised temples.\n3. Add the order. Tenochtitlan ran a tribute system, and Cahokia ran a chiefdom.\n4. Combine the pieces. Big populations, monumental building, and organized rule appear together in both.\nRemember: one piece of evidence proves little, so stack size, building, and rule together."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 6",
+    "section": "Native America"
+   }
+  ],
+  "primary_sources": []
+ }
+}

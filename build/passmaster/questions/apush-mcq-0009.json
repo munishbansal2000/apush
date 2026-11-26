@@ -1,0 +1,86 @@
+{
+ "id": "apush-mcq-0009",
+ "lesson": "apush-u1-l1",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 1,
+ "topics": [
+  "1.1",
+  "1.3"
+ ],
+ "skills": [
+  "5.B",
+  "3.D"
+ ],
+ "themes": [
+  "GEO",
+  "WOR"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 4,
+ "stimulus_set": "waldseemuller-1507",
+ "stimulus": {
+  "kind": "map",
+  "text": "Martin Waldseemuller's world map, published in 1507, was the first map to use the name America for the lands across the Atlantic Ocean. It shows the western lands as a separate landmass. The portrait of Amerigo Vespucci stands beside one globe at the top of the map, and the portrait of the ancient geographer Ptolemy stands beside the other globe.",
+  "source_note": "Waldseemuller map, 1507, public domain; Library of Congress."
+ },
+ "source": "original; stimulus image from the shared pool, Waldseemuller map 1507, public domain",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 3",
+    "section": "The Impact of the Renaissance"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 6",
+    "section": "The Europeans Arrive"
+   }
+  ],
+  "primary_sources": [
+   "Waldseemuller world map (1507)"
+  ]
+ },
+ "status": "final",
+ "stem": "The map places the portrait of Ptolemy beside the portrait of Vespucci at the top. What does that pairing best suggest about European geography in 1507?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Ptolemy himself drew the 1507 map and named the western lands.",
+   "misconception": "Treats an ancient geographer as the maker of a map printed more than a thousand years after his death."
+  },
+  {
+   "key": "B",
+   "text": "Mapmakers framed new knowledge against classical geography, showing both continuity and change."
+  },
+  {
+   "key": "C",
+   "text": "Vespucci copied the geography of Ptolemy exactly, adding nothing new.",
+   "misconception": "Claims nothing changed, but the new continent on the map contradicts Ptolemy."
+  },
+  {
+   "key": "D",
+   "text": "Classical geography had been thrown out entirely by 1507.",
+   "misconception": "Claims a clean break, but Ptolemy's portrait still stands on the map."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "general": "1. Name the two figures. Ptolemy stands for ancient classical geography, and Vespucci stands for the new voyages. 2. Ask why both appear. The mapmaker honors the old authority and the new source side by side. 3. Ask what that mix means. New lands were added, while the old framework still shaped the map. 4. Conclude. The pairing shows change built on continuity, not a clean break. Remember: when old and new authorities share a page, the work is revising the old, not erasing it.",
+  "A": "Ptolemy lived in the second century, so he could not have drawn a map printed in 1507.",
+  "B": "Honoring Ptolemy beside Vespucci shows mapmakers fitting new lands into the classical framework they still used.",
+  "C": "Vespucci argued the lands were a new world, which went beyond Ptolemy, so he did not simply copy the ancient geography.",
+  "D": "Ptolemy's portrait still stands at the top of the map, so classical geography had not been thrown out entirely."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0009",
+   "file": "u1/original-ctx-u1-03.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Waldseemuller_map_2.jpg",
+   "license": "Public domain",
+   "caption": "Martin Waldseemuller's world map of 1507, the first map to name the western lands America",
+   "alt": "A 1507 world map in twelve sheets showing Europe, Africa, Asia, and a long western landmass labeled America on the left side"
+  }
+ ]
+}

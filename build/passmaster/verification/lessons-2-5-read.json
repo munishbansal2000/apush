@@ -1,0 +1,87 @@
+{
+ "verifier": "independent student reader",
+ "date": "2026-11-26",
+ "method": "Read all four lessons end to end as a student first, recording doubts, then checked every factual claim against Barron's Ch. 3 / 5 Steps Ch. 6 / Princeton Ch. 6, checked worked items programmatically against bank JSON (36/36 prompts and model answers verbatim), checked frontmatter tie-outs (exact), section/paragraph/caption lengths, key-term bank use, and trap language (zero hits).",
+ "verdicts": {
+  "apush-u1-l2": {
+   "verdict": "FAIL",
+   "defects": [
+    {
+     "location": "Section 'Gold, God, and glory', paragraph 3",
+     "defect": "Wrong date/verb: 'Columbus sailed that October, nine months later.' Columbus sailed from Palos on 3 August 1492 and LANDED on 12 October 1492. He did not sail in October; the nine-month interval from Granada (January 1492) matches the landing, not the sailing.",
+     "fix": "Change to 'Columbus landed in the Bahamas that October, nine months later.'"
+    }
+   ],
+   "notes": [
+    "All other dates/names checked against the books: Constantinople 1453, Dias 1488, da Gama 1498, four voyages, de Bry 1594, Tordesillas 370 leagues, Cabral 1500, Verrazzano 1524, Cartier 1530s, Quebec 1608, Armada 1588, Roanoke 1587, St. Augustine 1565 (not Barron's 1585), First Charter of Virginia 1606, Waldseemuller 1507, Black Legend named 1914 \u2014 all correct.",
+    "Sections 247-296 words, all in bound; no narrative paragraph over 90 words; 8 key terms all used by bank questions; captions 18-26 words; worked items 0009/0010/0011 verbatim; tie-out 28/28 exact."
+   ]
+  },
+  "apush-u1-l3": {
+   "verdict": "PASS",
+   "defects": [],
+   "notes": [
+    "All facts checked: Crosby 1972, horses extinct ~10,000 years, turkey the only farm animal eastbound, Hispaniola over 1,000,000 to about 500 by the 1540s, 50-90% decline 1500-1650, Florentine Codex/Sahagun/Nahua, syphilis origin debated, Cortes 1519 ~500 men, Tenochtitlan 1521, smallpox 1520, Cusco/de Bry after Gastaldi, Pizarro 1532, Huayna Capac death probably smallpox, Cortes Second Letter 30 October 1520, Potosi 1545, Cieza woodcut 1553, taxes more than fivefold, mita organized by Toledo in the 1570s, Madeira/Sao Tome sugar with enslaved African labor in the 1500s, first asiento 1518 \u2014 all correct against the books.",
+    "Sections 246-284 words, all in bound; no narrative paragraph over 90 words; 10 key terms all used by bank questions (Potosi confirmed in-bank under the bank's unaccented spelling); captions 21-24 words, table caption 12 words; worked items 0014/0015/0019 verbatim; tie-out 36/36 exact.",
+    "'Middle Passage' appears in narrative but is not a key term, per the writer's bank-use rule \u2014 fine."
+   ]
+  },
+  "apush-u1-l4": {
+   "verdict": "FAIL",
+   "defects": [
+    {
+     "location": "Section 'Las Casas and the debate over Native peoples' (narrative) and Figure 2 caption, vs Worked item 3 (apush-saq-0022) part c model answer",
+     "defect": "Internal inconsistency on one number. The narrative says the 1791 portrait was engraved 'about 225 years after Las Casas died' and the Figure 2 caption repeats 'about 225 years after his death'. Worked item 3's model answer (bank verbatim) says 'about 200 years after Las Casas died'. Las Casas died 1566; 1791-1566 = 225 years, so the narrative is the accurate figure and the model answer's 'about 200' understates it by 25 years. A student reading the lesson then doing the worked item meets two different numbers for the same gap.",
+     "fix": "Align them. Either change the narrative and caption to 'about 200 years' to match the bank, or correct the bank's SAQ 0022 model answer to 'about 225 years' (more accurate, but the bank item is final and would need re-verification)."
+    }
+   ],
+   "notes": [
+    "The 92-word Las Casas block quote (1689 translation, archaic spelling) is judged ACCEPTABLE as a verbatim primary-source quotation: it is framed by the lesson, it is the lesson's only long quote, and cutting it would alter the source. No trim needed.",
+    "All other facts checked: New Laws 1542, repartimiento distinct from encomienda with compulsory draft in the last quarter of the 16th century (about 1 in 7 men farm work, about 4% mines), Las Casas's early proposal of African labor and later recantation, Valladolid 1550-1551, Sepulveda never visited the Americas, first asiento August 1518 Gouvenot 8 years 4,000 people 25,000 ducats, slavery lifelong and hereditary, peninsulares/criollos 1-2%, mestizos 4-5%, two republics, casta paintings flagged as 1700s evidence not 1500-1607, Palmares early 1600s over 30,000 conquered 1694 \u2014 all correct.",
+    "Sections 153-276 words, all in bound; no narrative paragraph over 90 words; 12 key terms all used by bank questions; captions 19-28 words; worked items 0020/0021/0022 verbatim; tie-out 31/31 exact."
+   ]
+  },
+  "apush-u1-l5": {
+   "verdict": "FAIL",
+   "defects": [
+    {
+     "location": "Section 'Two ways to meet a continent', paragraph 2",
+     "defect": "Period error (placement). 'The French Jesuit priests tried to convert Native peoples to Catholicism, but they were more likely to spread smallpox than to win many converts.' The sentence paraphrases Princeton Ch. 6 supplement, which places it AFTER Quebec 1608. The lesson places it in a paragraph about the 1500s French model, before the sentence 'France did not found a permanent settlement until Quebec in 1608.' French Jesuit missions in North America began in 1611, after Period 1 ends (1607). As written, the lesson implies Jesuits were part of the 1500s French presence.",
+     "fix": "Move the Jesuit sentence to after the Quebec-1608 sentence and date it, e.g. 'After 1608, French Jesuit priests tried to convert Native peoples to Catholicism, but they were more likely to spread smallpox than to win many converts.'"
+    },
+    {
+     "location": "Section 'Disease decided the conquest', paragraph 1",
+     "defect": "Wrong clause: 'Smallpox reached Tenochtitlan in 1520, during the siege, and killed defenders who had no resistance, including the emperor Cuitlahuac.' Smallpox reached the city in late 1520 (Cuitlahuac died of it in December 1520); the siege of Tenochtitlan was May-August 1521. The arrival was before the siege, not during it.",
+     "fix": "Change to 'Smallpox reached Tenochtitlan in 1520, before the siege, and killed defenders who had no resistance, including the emperor Cuitlahuac.'"
+    },
+    {
+     "location": "Section 'Two ways to meet a continent'",
+     "defect": "Section length breach: 304 narrative words against the 150-300 word bound (4 words over).",
+     "fix": "Cut at least 4 words from the section."
+    },
+    {
+     "location": "Section 'Disease decided the conquest', Figure 3 description",
+     "defect": "Image description miscount: 'Four panels show the sick: one lies covered in spots while another speaks over him, and three more lie still, wrapped in blankets.' The image (u1/5s24-exam1-mcq-36.jpg, viewed) has five panels and five sick figures lying down (one spotted with a speaker over him, plus four more lying still, wrapped in blankets). Both counts are off by one.",
+     "fix": "Correct to 'Five panels show the sick: one lies covered in spots while another speaks over him, and four more lie still, wrapped in blankets.' Or drop the count: 'The panels show the sick: one lies covered in spots while another speaks over him, and the others lie still, wrapped in blankets.'"
+    }
+   ],
+   "notes": [
+    "The 110-word Cortes block quote (Second Letter, 30 October 1520) is judged ACCEPTABLE as a verbatim primary-source quotation: one coherent passage, framed by the lesson, carrying the teaching point (Cortes's words plus Montezuma's remonstrance). No trim needed.",
+    "The silver-paradox 'arms race' and 'most lasting effect' claims are NOT defects: both are in Barron's Ch. 3 in the MacDougall (1992) passage ('setting off an arms race that forced rivals to multiply their armed forces'; 'The most lasting and far-reaching effect of the increase of money in circulation was to set off...'), and the lesson attributes them to historians ('Historians argue about how far to push the argument'; 'That claim belongs to the historian who made it') rather than presenting them as stimulus fact. The earlier 0143/0144 issue was only that those claims are not in the visible stimulus \u2014 not that they are false. Naming MacDougall would make the attribution checkable; suggested, not required.",
+    "'English intermarriage was rare, so no new mixed peoples emerged' is a simplification matching the books' framing of English family settlement; noted, not a defect.",
+    "All other facts checked: four Florida missions, Juanillo's Revolt 1597, Acoma attack December 1598 (15 Spaniards killed) and retaliation January 1599 (800+ killed, as many as 80 men foot amputated, about 500 enslaved), Pueblo Revolt 1680 flagged as outside Period 1 (twelve years, 1680-1692), mestizos 4-5%, Lienzo de Tlaxcala 1550s pictorial with 1773 copy honestly labeled, Cortes letter 30 October 1520, Hispaniola over 1,000,000 to about 500 by the 1540s, 50-90% decline 1500-1650, Black Legend named 1914 by a Spanish historian, smallpox 1520 and Cuitlahuac \u2014 all correct.",
+    "Sections other than section 1 are 152-290 words, all in bound; no narrative paragraph over 90 words; 9 key terms all used by bank questions; captions 16-28 words, table caption 11 words; worked items 0025/0031/0032 verbatim; tie-out 52/52 exact."
+   ]
+  }
+ },
+ "summary": {
+  "total": 4,
+  "pass": 1,
+  "fail": 3,
+  "fails": [
+   "apush-u1-l2",
+   "apush-u1-l4",
+   "apush-u1-l5"
+  ]
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-0017",
+ "lesson": "apush-u1-l1",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 1,
+ "topics": [
+  "1.2"
+ ],
+ "skills": [
+  "2.A"
+ ],
+ "themes": [
+  "ARC",
+  "WOR"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 4,
+ "stimulus_set": "de-bry-florida",
+ "stimulus": {
+  "kind": "mixed",
+  "text": "Two engravings from Theodor de Bry's America series (1591), after drawings by Jacques Le Moyne de Morgues. The first shows Florida Indians planting seeds of beans and maize in cleared fields. The second shows the same people hunting deer disguised under deerskins. De Bry never visited North America; he engraved the scenes in Europe from watercolors painted by Jacques Le Moyne, a French artist with the Laudonnière expedition.",
+  "source_note": "Engravings from the shared image pool; Theodor de Bry (1591), after Jacques Le Moyne de Morgues, public domain (Library of Congress)."
+ },
+ "source": "original; fresh authoring; stimulus engraving by Theodor de Bry (1591), after Jacques Le Moyne, public domain",
+ "status": "final",
+ "stem": "The figures in the engravings have the poses and bodies of classical European art, though the scenes show Native farming and hunting. What does this detail identify about the source?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The artist's European point of view shaped how Native people were drawn."
+  },
+  {
+   "key": "B",
+   "text": "The drawings are exact records made by an eyewitness in Florida.",
+   "misconception": "Treats de Bry as an eyewitness, but he never visited North America."
+  },
+  {
+   "key": "C",
+   "text": "Native artists in Florida drew the scenes in a European classical style.",
+   "misconception": "Assigns the European style to Native artists instead of to de Bry."
+  },
+  {
+   "key": "D",
+   "text": "The engravings prove Native peoples studied classical European art before 1591.",
+   "misconception": "Reads the artist's style as evidence about what Native peoples studied."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "The classical poses come from de Bry himself, a European artist, so his point of view shaped how Native people appear.",
+  "B": "De Bry worked in Europe from another man's watercolors, so the drawings are not exact eyewitness records.",
+  "C": "The classical style belongs to de Bry the engraver, not to Native artists in Florida.",
+  "D": "The style tells us about the European artist, not about what Native peoples studied.",
+  "general": "1. Look at the bodies. The figures pose like statues from classical European art.\n2. Ask who drew them. De Bry, a European engraver who never crossed the Atlantic.\n3. Ask what his hand adds. He dressed Florida scenes in the visual language his European readers knew.\n4. Name the point of view. The engravings show Native life filtered through European eyes.\nRemember: style is evidence too, so ask whose taste shaped the picture."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 3",
+    "section": "Topic 1.7 Subject to Debate"
+   }
+  ],
+  "primary_sources": [
+   "Theodor de Bry, engravings after Jacques Le Moyne de Morgues, America series (1591)"
+  ]
+ },
+ "figures": [
+  {
+   "file": "u1/original-u1-native-01.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Florida_Indians_planting_seeds_of_beans_or_maize_LCCN2001695741.jpg",
+   "license": "Public domain",
+   "caption": "Engraving by Theodor de Bry (1591), after Jacques Le Moyne de Morgues, showing Florida Indians planting seeds of beans and maize",
+   "alt": "Engraving of men and women planting seeds in rows in a cleared field, some carrying baskets of seed",
+   "id": "fig-apush-mcq-0017"
+  },
+  {
+   "file": "u1/original-u1-native-10.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Florida_Indians,_disguised_under_deerskins,_hunting_deer_LCCN2001695742.jpg",
+   "license": "Public domain",
+   "caption": "Engraving from a German edition of Theodor de Bry's America series, after Jacques Le Moyne, showing Florida Indians hunting deer disguised under deerskins",
+   "alt": "Engraving of hunters wearing deerskins with antlers drawing bows at deer beside a stream, with German text below the image",
+   "id": "fig-apush-mcq-0017-x"
+  }
+ ]
+}

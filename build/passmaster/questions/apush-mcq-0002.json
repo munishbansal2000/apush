@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-0002",
+ "lesson": "apush-u1-l1",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 1,
+ "topics": [
+  "1.1",
+  "1.5"
+ ],
+ "skills": [
+  "2.A"
+ ],
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "las-casas-1542",
+ "stimulus": {
+  "kind": "text",
+  "text": "Paraphrase of Bartolome de las Casas, A Short Account of the Destruction of the Indies (written 1542, published 1552). Las Casas wrote that the peoples of Hispaniola were gentle, obedient, and owned little, and that the Spanish fell upon them like wolves, killing them and forcing them into hard labor. He claimed that the Indigenous population of Hispaniola had fallen from about three million to only two hundred. He sent the account to Prince Philip of Spain to persuade the crown to stop the cruelty.",
+  "source_note": "Paraphrase of a public-domain text; Las Casas, Brevisima relacion (1542, published 1552)."
+ },
+ "source": "original; stimulus paraphrased from Las Casas, Brevisima relacion (1542), public domain",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 3",
+    "section": "Debates over Spain's Actions in the New World"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 3",
+    "section": "Disease and Death"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Competition for Global Dominance"
+   }
+  ],
+  "primary_sources": [
+   "Las Casas, A Short Account of the Destruction of the Indies (1542)"
+  ]
+ },
+ "status": "final",
+ "stem": "A student wants to use this passage as evidence for the exact size of the Indigenous population of Hispaniola in 1542. What most limits the passage for that use?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Las Casas wrote the account in Latin, so Spanish officials could not read it.",
+   "misconception": "Assumes a language barrier that did not exist; the account was written in Spanish."
+  },
+  {
+   "key": "B",
+   "text": "Las Casas wrote after 1607, so he describes a later century.",
+   "misconception": "Misplaces the account in time; it was written in 1542."
+  },
+  {
+   "key": "C",
+   "text": "Las Casas wrote to persuade the crown, and his population figures are contested."
+  },
+  {
+   "key": "D",
+   "text": "Las Casas was a Portuguese sailor who never visited the Americas.",
+   "misconception": "Confuses Las Casas with another figure; he was a Spanish friar who lived in the Indies."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "general": "1. Ask what the writer wanted. Las Casas wrote to persuade Prince Philip to act against cruelty.\n2. Ask how that purpose shapes the numbers. A writer making a case can stress the largest losses.\n3. Check the figures against other evidence. Historians contest his claim of three million falling to two hundred.\n4. Draw the limit. The passage is strong evidence of his argument and of reported cruelty, and weak evidence for an exact count.\nRemember: a source written to persuade is useful evidence, but its numbers need a second source.",
+  "A": "The account was written in Spanish for the Spanish crown, so no language barrier kept officials from reading it.",
+  "B": "Las Casas wrote the account in 1542, more than sixty years before 1607, so the date does not limit its use for the 1500s.",
+  "C": "Because Las Casas wrote to persuade the crown, and because historians contest his population figures, his numbers cannot stand alone as an exact count.",
+  "D": "Las Casas was a Spanish Dominican friar who lived and worked in the Indies, so he was no distant Portuguese sailor."
+ }
+}

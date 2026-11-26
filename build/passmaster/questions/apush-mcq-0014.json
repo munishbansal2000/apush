@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-0014",
+ "lesson": "apush-u1-l1",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 1,
+ "topics": [
+  "1.2"
+ ],
+ "skills": [
+  "3.C"
+ ],
+ "themes": [
+  "NAT",
+  "GEO"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 3,
+ "stimulus_set": "de-bry-florida",
+ "stimulus": {
+  "kind": "mixed",
+  "text": "Two engravings from Theodor de Bry's America series (1591), after drawings by Jacques Le Moyne de Morgues. The first shows Florida Indians planting seeds of beans and maize in cleared fields. The second shows the same people hunting deer disguised under deerskins. De Bry never visited North America; he engraved the scenes in Europe from watercolors painted by Jacques Le Moyne, a French artist with the Laudonnière expedition.",
+  "source_note": "Engravings from the shared image pool; Theodor de Bry (1591), after Jacques Le Moyne de Morgues, public domain (Library of Congress)."
+ },
+ "source": "original; converted from original-u1-native-10; stimulus engraving by Theodor de Bry (1591), after Jacques Le Moyne, public domain",
+ "status": "final",
+ "stem": "The first engraving shows the same people planting beans and maize. The second shows them hunting deer disguised under deerskins. What do the two engravings together best demonstrate?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Hunting mattered far more than farming to every Native society in the Americas.",
+   "misconception": "Reads one region's hunting as proof about every society in the Americas."
+  },
+  {
+   "key": "B",
+   "text": "Native peoples combined farming with hunting instead of relying on one food source."
+  },
+  {
+   "key": "C",
+   "text": "Native peoples gave up farming entirely once they learned to hunt deer.",
+   "misconception": "Turns two practices side by side into one replacing the other."
+  },
+  {
+   "key": "D",
+   "text": "Only societies with no farming at all ever hunted animals for food.",
+   "misconception": "Claims farming peoples never hunted, but this example shows they did."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "The engravings show one region's people doing both jobs, which cannot prove anything about every society in the Americas.",
+  "B": "The same community is shown both planting crops and hunting deer, so its economy mixed farming with hunting.",
+  "C": "The two engravings show both practices existing side by side, not one replacing the other.",
+  "D": "This very example shows a farming people hunting too, so farming and hunting were not separate worlds.",
+  "general": "1. Name what the first engraving shows. People plant beans and maize in cleared fields.\n2. Name what the second shows. The same people hunt deer, disguised under deerskins.\n3. Put the two together. One community does both jobs, so its food comes from two sources.\n4. Reject claims about one source only. Neither farming alone nor hunting alone describes this economy.\nRemember: when two images show the same people doing different work, read them as one mixed economy."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 6",
+    "section": "Native America"
+   }
+  ],
+  "primary_sources": [
+   "Theodor de Bry, engravings after Jacques Le Moyne de Morgues, America series (1591)"
+  ]
+ },
+ "figures": [
+  {
+   "file": "u1/original-u1-native-01.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Florida_Indians_planting_seeds_of_beans_or_maize_LCCN2001695741.jpg",
+   "license": "Public domain",
+   "caption": "Engraving by Theodor de Bry (1591), after Jacques Le Moyne de Morgues, showing Florida Indians planting seeds of beans and maize",
+   "alt": "Engraving of men and women planting seeds in rows in a cleared field, some carrying baskets of seed",
+   "id": "fig-apush-mcq-0014"
+  },
+  {
+   "file": "u1/original-u1-native-10.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Florida_Indians,_disguised_under_deerskins,_hunting_deer_LCCN2001695742.jpg",
+   "license": "Public domain",
+   "caption": "Engraving from a German edition of Theodor de Bry's America series, after Jacques Le Moyne, showing Florida Indians hunting deer disguised under deerskins",
+   "alt": "Engraving of hunters wearing deerskins with antlers drawing bows at deer beside a stream, with German text below the image",
+   "id": "fig-apush-mcq-0014-x"
+  }
+ ]
+}

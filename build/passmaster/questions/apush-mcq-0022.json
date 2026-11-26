@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-0022",
+ "lesson": "apush-u1-l1",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 1,
+ "topics": [
+  "1.2"
+ ],
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "stimulus_set": "mississippian-river",
+ "stimulus": {
+  "kind": "mixed",
+  "text": "The 1771 map by Thomas Hutchins marks the village of Cahokia on the Mississippi River, near present-day St. Louis. The pre-contact city of Cahokia stood in this same river valley centuries earlier. Archaeologists who have mapped Cahokia describe a city of mounds, plazas, and a wooden palisade. Trade goods from far away reached the city: copper from the Great Lakes and shells from the Gulf Coast.",
+  "source_note": "Map from the shared image pool; Thomas Hutchins (1771), public domain. Archaeological description paraphrased from standard accounts of Cahokia."
+ },
+ "source": "original; converted from original-u1-native-04; stimulus map by Thomas Hutchins (1771), public domain",
+ "status": "final",
+ "stem": "This 1771 map marks Cahokia on the Mississippi River, near present-day St. Louis. Mississippian chiefdoms like Cahokia built their towns in the river valleys of the Southeast and Midwest. Which factor best explains this location pattern?",
+ "options": [
+  {
+   "key": "A",
+   "text": "River valleys provided fertile floodplain soils for the maize surpluses chiefdoms depended on."
+  },
+  {
+   "key": "B",
+   "text": "The Mexica Empire in central Mexico had already claimed all the uplands.",
+   "misconception": "Puts the Mexica in the Mississippi Valley, far from central Mexico."
+  },
+  {
+   "key": "C",
+   "text": "Spanish officials ordered Native towns to be built along rivers for easier control.",
+   "misconception": "Credits Spanish officials with towns that predate Spanish rule in the region."
+  },
+  {
+   "key": "D",
+   "text": "Rivers were the only source of drinking water anywhere in North America.",
+   "misconception": "Confuses fertile farmland with drinking water, which existed in many places."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Mississippian chiefdoms were maize-farming societies, and river floodplains gave them the rich soils that made large maize harvests possible.",
+  "B": "The Mexica Empire was centered in central Mexico, far from the Mississippi Valley, so it claimed no uplands there.",
+  "C": "These towns and their locations predate Spanish colonization of the region, so Spanish officials ordered nothing of the kind.",
+  "D": "Fresh water existed in many places; the key advantage of river valleys was fertile farmland, not drinking water.",
+  "general": "1. Read the map. Cahokia sits on the Mississippi River, near present-day St. Louis.\n2. Recall the economy. Mississippian chiefdoms farmed maize in the river valleys.\n3. Ask what rivers give farmers. Floodplains renew rich soil with each flood, so harvests stay large.\n4. Connect place and food. Rich river soil grew the surpluses that fed chiefdom towns.\nRemember: to explain where people settled, ask what the land gave them to eat."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 6",
+    "section": "Native America"
+   }
+  ],
+  "primary_sources": [
+   "Thomas Hutchins, A Plan of the several Villages in the Illinois Country (1771)"
+  ]
+ },
+ "figures": [
+  {
+   "file": "u1/original-u1-native-04.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Illinois,_historical_and_statistical_-_comprising_the_essential_facts_of_its_planting_and_growth_as_a_province,_county,_territory,_and_state_(1889)_(14592501177).jpg",
+   "license": "Public domain",
+   "caption": "Facsimile of Thomas Hutchins's 1771 plan of the Illinois Country, showing Cahokia on the Mississippi River",
+   "alt": "1771 map of the Illinois Country showing the Mississippi River and the village of Cahokia near St. Louis",
+   "id": "fig-apush-mcq-0022"
+  }
+ ]
+}

@@ -1,0 +1,75 @@
+{
+ "id": "apush-mcq-0001",
+ "lesson": "apush-u1-l1",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 1,
+ "topics": [
+  "1.1",
+  "1.4"
+ ],
+ "skills": [
+  "2.A"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "stimulus_set": "las-casas-1542",
+ "stimulus": {
+  "kind": "text",
+  "text": "Paraphrase of Bartolome de las Casas, A Short Account of the Destruction of the Indies (written 1542, published 1552). Las Casas wrote that the peoples of Hispaniola were gentle, obedient, and owned little, and that the Spanish fell upon them like wolves, killing them and forcing them into hard labor. He claimed that the Indigenous population of Hispaniola had fallen from about three million to only two hundred. He sent the account to Prince Philip of Spain to persuade the crown to stop the cruelty.",
+  "source_note": "Paraphrase of a public-domain text; Las Casas, Brevisima relacion (1542, published 1552)."
+ },
+ "source": "original; stimulus paraphrased from Las Casas, Brevisima relacion (1542), public domain",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 3",
+    "section": "Debates over Spain's Actions in the New World"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Competition for Global Dominance"
+   }
+  ],
+  "primary_sources": [
+   "Las Casas, A Short Account of the Destruction of the Indies (1542)"
+  ]
+ },
+ "status": "final",
+ "stem": "Based on the passage, what was Las Casas trying to do when he wrote this account?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Describe the geography of the Caribbean islands for Spanish sailors.",
+   "misconception": "Treats a plea for reform as a geography guide."
+  },
+  {
+   "key": "B",
+   "text": "Persuade the Spanish crown to stop the cruel treatment of Indigenous peoples."
+  },
+  {
+   "key": "C",
+   "text": "Praise the Spanish settlers for building profitable colonies in the Indies.",
+   "misconception": "Reads an attack on settler cruelty as praise for settlers."
+  },
+  {
+   "key": "D",
+   "text": "Record the prices of gold and other goods traded in the Indies.",
+   "misconception": "Treats a moral protest as a trade record."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "general": "1. Name the author and the audience. Las Casas was a Spanish friar writing to Prince Philip of Spain.\n2. Name what he describes. Spanish settlers killed Indigenous people and forced them into hard labor.\n3. Ask why he wrote it. He wanted the crown to stop the cruelty, so he stressed suffering and huge losses.\n4. Match that purpose to an option. A plea to the crown fits reform, not a survey or a celebration.\nRemember: always ask who wrote a source and what that writer wanted before you trust its claims.",
+  "A": "Las Casas describes killing and forced labor, not coastlines or sailing routes, so a geography guide misses his point.",
+  "B": "Las Casas wrote to Prince Philip to persuade the crown to end the cruelty he described, which is why he stressed the suffering and the falling population.",
+  "C": "Las Casas attacks the settlers as wolves falling on gentle people, so praise for the settlers runs against his whole account.",
+  "D": "The passage says nothing about prices or goods, so a trade record confuses the subject of the account with the goods of the colonies."
+ }
+}

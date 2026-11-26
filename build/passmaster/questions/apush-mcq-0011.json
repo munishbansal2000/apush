@@ -1,0 +1,85 @@
+{
+ "id": "apush-mcq-0011",
+ "lesson": "apush-u1-l1",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 1,
+ "topics": [
+  "1.1",
+  "1.4"
+ ],
+ "skills": [
+  "5.A"
+ ],
+ "themes": [
+  "GEO",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "columbus-voyages",
+ "stimulus": {
+  "kind": "mixed",
+  "text": "The map shows the four voyages of Christopher Columbus, 1492 to 1504. | Voyage | Years | Main landfalls | | First | 1492 to 1493 | Bahamas, Cuba, Hispaniola | | Second | 1493 to 1496 | Lesser Antilles, Puerto Rico, Jamaica, Hispaniola | | Third | 1498 to 1500 | Trinidad and the South American mainland near Venezuela | | Fourth | 1502 to 1504 | Coast of Central America, from Honduras to Panama |",
+  "source_note": "Map by Albert Bushnell Hart, 1906, public domain; voyage dates verified against standard accounts."
+ },
+ "source": "original; stimulus map from the shared pool, Hart 1906, public domain; voyage dates verified against standard accounts",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 3",
+    "section": "Spanish and Portuguese Ambitions"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 6",
+    "section": "Columbus"
+   }
+  ],
+  "primary_sources": [
+   "Hart, map of the four voyages of Columbus (1906)"
+  ]
+ },
+ "status": "final",
+ "stem": "What pattern across the four voyages does the map best show?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Repeated voyages turned a single crossing into sustained Spanish colonization."
+  },
+  {
+   "key": "B",
+   "text": "Each voyage crossed a different ocean to reach the Americas.",
+   "misconception": "Treats four Atlantic crossings as four different oceans; all four crossed the Atlantic."
+  },
+  {
+   "key": "C",
+   "text": "The voyages ended Spanish interest in the Americas after 1504.",
+   "misconception": "Reads the end of the story backward; Spain kept sending ships and settlers after 1504."
+  },
+  {
+   "key": "D",
+   "text": "The routes show that Columbus finally reached Asia in 1504.",
+   "misconception": "Treats the Caribbean and American coasts as Asia, the claim Columbus made but the map refutes."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "general": "1. Count the voyages. Four crossings ran from 1492 to 1504, not one. 2. Note what grew. The second voyage carried settlers, and later voyages explored new coasts. 3. Ask what repetition means. Returning again and again means a lasting link, not a single visit. 4. Conclude. The voyages built sustained Spanish contact and colonization. Remember: one crossing is an event, but repeated crossings are a pattern, so count the repeats.",
+  "A": "Four voyages in twelve years, with settlers on the second, show one crossing growing into sustained Spanish colonization.",
+  "B": "All four voyages crossed the Atlantic Ocean, so no voyage crossed a different ocean.",
+  "C": "Spain sent more ships and settlers after 1504, so the voyages began Spanish interest rather than ending it.",
+  "D": "The routes run to Caribbean islands and American coasts, not to Asia, so the map does not show Columbus reaching Asia."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0011",
+   "file": "u1/original-u1-columbus-voyages-01.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:The_Four_Voyages_of_Columbus%2C_1492%E2%80%931503",
+   "license": "Public domain",
+   "caption": "Map of the four voyages of Christopher Columbus; the map's printed title gives 1492 to 1503, but the fourth voyage returned in 1504",
+   "alt": "A map of the Atlantic Ocean with numbered red lines tracing four voyages between Spain and the Caribbean, with a title and legend box in the lower right"
+  }
+ ]
+}

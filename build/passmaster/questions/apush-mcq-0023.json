@@ -1,0 +1,84 @@
+{
+ "id": "apush-mcq-0023",
+ "lesson": "apush-u1-l1",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 1,
+ "topics": [
+  "1.2"
+ ],
+ "skills": [
+  "4.B"
+ ],
+ "themes": [
+  "WOR"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 3,
+ "stimulus_set": "mississippian-river",
+ "stimulus": {
+  "kind": "mixed",
+  "text": "The 1771 map by Thomas Hutchins marks the village of Cahokia on the Mississippi River, near present-day St. Louis. The pre-contact city of Cahokia stood in this same river valley centuries earlier. Archaeologists who have mapped Cahokia describe a city of mounds, plazas, and a wooden palisade. Trade goods from far away reached the city: copper from the Great Lakes and shells from the Gulf Coast.",
+  "source_note": "Map from the shared image pool; Thomas Hutchins (1771), public domain. Archaeological description paraphrased from standard accounts of Cahokia."
+ },
+ "source": "original; rewritten from original-u1-native-15 against the grounding books (Cahokia-London size comparison); stimulus map by Thomas Hutchins (1771), public domain",
+ "status": "final",
+ "stem": "Cahokia held something like 10,000 to 20,000 people around 1200, roughly the size of London at the same time. Why do historians emphasize this comparison?",
+ "options": [
+  {
+   "key": "A",
+   "text": "To prove that London copied its city plan directly from Cahokia.",
+   "misconception": "Claims a borrowing between two cities with no contact at all."
+  },
+  {
+   "key": "B",
+   "text": "To show that Cahokia was actually a European colony in disguise.",
+   "misconception": "Turns a Native city centuries old into a European colony."
+  },
+  {
+   "key": "C",
+   "text": "To argue that all Native societies built cities the size of London.",
+   "misconception": "Stretches one city's size into a claim about all societies."
+  },
+  {
+   "key": "D",
+   "text": "To show a large city grew in North America without Old World contact."
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "A": "London and Cahokia had no contact, so neither city could have copied the other.",
+  "B": "Cahokia was a Native city that reached its height centuries before Europeans arrived in North America.",
+  "C": "One city's size proves nothing about all societies, most of which were far smaller.",
+  "D": "The comparison highlights independent achievement: a North American city the size of London grew without any contact with Europe.",
+  "general": "1. Start with the size. Cahokia held something like 10,000 to 20,000 people around 1200.\n2. Compare it. That was roughly the size of London at the same time.\n3. Check the date. Cahokia reached this size centuries before any European arrived.\n4. Draw the point. A large city grew in North America on its own, without Old World contact.\nRemember: a size comparison is an argument, so ask what the comparison is meant to prove."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Native Americans in Pre-Columbian North America"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 6",
+    "section": "Native America"
+   }
+  ],
+  "primary_sources": [
+   "National Park Service, \"Midwest Region's Only World Heritage Site... and a Promise of More to Come\" (nps.gov) — Cahokia's estimated population of 10,000 to 20,000 was \"roughly the number living in London toward the end of that same period\"",
+   "Unit 1 lesson script apush-u1-l1 — \"At its peak in the 1200s, it held about 10,000 to 20,000 people, roughly the size of London at the same time\""
+  ]
+ },
+ "figures": [
+  {
+   "file": "u1/original-u1-native-04.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Illinois,_historical_and_statistical_-_comprising_the_essential_facts_of_its_planting_and_growth_as_a_province,_county,_territory,_and_state_(1889)_(14592501177).jpg",
+   "license": "Public domain",
+   "caption": "Facsimile of Thomas Hutchins's 1771 plan of the Illinois Country, showing Cahokia on the Mississippi River",
+   "alt": "1771 map of the Illinois Country showing the Mississippi River and the village of Cahokia near St. Louis",
+   "id": "fig-apush-mcq-0023"
+  }
+ ]
+}

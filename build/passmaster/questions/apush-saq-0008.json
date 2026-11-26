@@ -1,0 +1,93 @@
+{
+ "id": "apush-saq-0008",
+ "lesson": "apush-u1-l1",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 1,
+ "topics": [
+  "1.2"
+ ],
+ "skills": [
+  "1.A",
+  "3.A"
+ ],
+ "themes": [
+  "GEO",
+  "ARC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": null,
+ "stimulus": {
+  "kind": "image",
+  "text": "The photograph, taken on October 16, 1907, shows the Great Cahokia Mound, also called Monks Mound, rising above a cultivated field near present-day St. Louis, Missouri. The mound was built by the Mississippian people around 1100, long before European contact.",
+  "source_note": "Photograph from the shared image pool; Library of Congress photograph, October 16, 1907, public domain."
+ },
+ "source": "original; stimulus photograph, Library of Congress, October 16, 1907, public domain",
+ "status": "final",
+ "saq_slot": 3,
+ "totalPoints": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 6",
+    "section": "Native America"
+   }
+  ],
+  "primary_sources": [
+   "Library of Congress photograph of the Great Cahokia Mound, October 16, 1907"
+  ]
+ },
+ "figures": [
+  {
+   "id": "fig-apush-saq-0008",
+   "file": "u1/anim-cahokia-mound-1907.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Illinois,_Cahokia_Mound,_October_16,_1907_LCCN97505973.jpg",
+   "license": "Public domain",
+   "caption": "Great Cahokia Mound (Monks Mound), photographed October 16, 1907, rising above a cultivated field",
+   "alt": "A large grassy mound with terraces and trees rises above rows of crops in a flat field"
+  }
+ ],
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify what the mound in the photograph shows about Cahokia.",
+   "modelAnswer": "The mound shows that Cahokia's people could organize the labor to raise a huge earthen structure, the mark of a large and organized society. Raising tons of earth basketful by basketful took many workers over many years, and only a society that could feed and direct them could finish such a mound.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for naming what the mound shows, such as organized labor, a large society, or monumental building.",
+     "notEarned": "Naming a claim the mound does not show, such as the city's name, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain how maize farming made building on this scale possible.",
+   "modelAnswer": "Maize farming in the river valleys produced food surpluses, and those surpluses fed the workers and supported the chiefs who directed the building. Without a surplus, everyone would have to farm for their own meals, so no workers or chiefs could be spared for building.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining that maize surpluses fed workers and supported the leadership that directed the building.",
+     "notEarned": "Stating only that Cahokia farmed maize, with no link to surpluses or labor, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one limitation of using this 1907 photograph as evidence about life at Cahokia around 1100.",
+   "modelAnswer": "The photograph was taken eight centuries after Cahokia's height, so it shows the mound as it survived into modern times, not the city, the people, or the building work itself. The camera can only record what was still standing in 1907, so the photograph proves the mound endured, not how Cahokia looked or worked around 1100.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one limitation, such as the late date or that the photograph shows only the surviving mound.",
+     "notEarned": "Stating only that the photograph is old, with no limitation explained, does not earn the point."
+    }
+   ]
+  }
+ ]
+}

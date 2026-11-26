@@ -1,0 +1,83 @@
+{
+ "id": "apush-saq-0005",
+ "lesson": "apush-u1-l1",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 1,
+ "topics": [
+  "1.2"
+ ],
+ "skills": [
+  "2.A",
+  "2.C"
+ ],
+ "themes": [
+  "GEO",
+  "ARC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": null,
+ "stimulus": {
+  "kind": "text",
+  "text": "Paraphrase of Thomas Harriot, A Briefe and True Report of the New Found Land of Virginia (1588). Harriot, who lived with the Roanoke colony in 1585 and 1586, wrote that the people of Virginia planted maize, beans, and pumpkins in fields near their towns, and that their harvests fed them through the year. He also wrote that the land held good soil, timber, and other goods that English settlers could use.",
+  "source_note": "Paraphrase of a public-domain text; Thomas Harriot, A Briefe and True Report (1588)."
+ },
+ "source": "original; stimulus paraphrased from Thomas Harriot, A Briefe and True Report (1588), public domain",
+ "status": "final",
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 6",
+    "section": "Native America"
+   }
+  ],
+  "primary_sources": [
+   "Thomas Harriot, A Briefe and True Report of the New Found Land of Virginia (1588)"
+  ]
+ },
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one claim Harriot makes about Native farming in Virginia.",
+   "modelAnswer": "Harriot claims the people planted maize, beans, and pumpkins in fields near their towns and that the harvests fed them through the year. Planting three crops in fields near town shows a settled farming life, since the people relied on harvests they had grown themselves.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for naming one claim from the report, such as planting maize, beans, or pumpkins, or harvests feeding the towns.",
+     "notEarned": "Naming a claim Harriot did not make in this report, such as growing tobacco as a cash crop, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain the purpose of Harriot in writing this report.",
+   "modelAnswer": "Harriot wrote to report what the Roanoke venture had found and to encourage English readers to support further settlement, so he stressed fertile soil, good harvests, and useful goods. A report meant to win backers would play up the colony's promise, so Harriot chose details that made Virginia look worth settling.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining that Harriot wrote to report success and win support or funding for further voyages and settlement.",
+     "notEarned": "Stating only that he wrote to describe the voyage, with no purpose such as winning support, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one limitation of this report as evidence about Native peoples before European contact.",
+   "modelAnswer": "Harriot wrote as an English colonist hoping to promote settlement, and he describes Native life briefly from outside, so the report shows an English view of Native farming rather than how Native peoples understood their own lives. Because he never lived as a member of those towns, he could record what he saw but not the reasons behind Native choices, so the report is useful for what he observed and limited for what Native peoples thought.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one limitation, such as the report reflects Harriot's purpose and brief contact, or it gives no Indigenous voice.",
+     "notEarned": "Stating only that the report is old, with no limitation explained, does not earn the point."
+    }
+   ]
+  }
+ ]
+}

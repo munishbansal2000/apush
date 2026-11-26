@@ -1,0 +1,85 @@
+{
+ "id": "apush-mcq-0010",
+ "lesson": "apush-u1-l1",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 1,
+ "topics": [
+  "1.1",
+  "1.3"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "GEO",
+  "MIG"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "stimulus_set": "columbus-voyages",
+ "stimulus": {
+  "kind": "mixed",
+  "text": "The map shows the four voyages of Christopher Columbus, 1492 to 1504. | Voyage | Years | Main landfalls | | First | 1492 to 1493 | Bahamas, Cuba, Hispaniola | | Second | 1493 to 1496 | Lesser Antilles, Puerto Rico, Jamaica, Hispaniola | | Third | 1498 to 1500 | Trinidad and the South American mainland near Venezuela | | Fourth | 1502 to 1504 | Coast of Central America, from Honduras to Panama |",
+  "source_note": "Map by Albert Bushnell Hart, 1906, public domain; voyage dates verified against standard accounts."
+ },
+ "source": "original; stimulus map from the shared pool, Hart 1906, public domain; voyage dates verified against standard accounts",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 3",
+    "section": "Portugal and Spain Lead the Way"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 6",
+    "section": "Columbus"
+   }
+  ],
+  "primary_sources": [
+   "Hart, map of the four voyages of Columbus (1906)"
+  ]
+ },
+ "status": "final",
+ "stem": "According to the map and the table, which voyage first reached the mainland of South America?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The first voyage, 1492 to 1493",
+   "misconception": "Confuses the first Caribbean landfall with a mainland landfall; the first voyage reached islands."
+  },
+  {
+   "key": "B",
+   "text": "The second voyage, 1493 to 1496",
+   "misconception": "Confuses island-hopping in the Lesser Antilles with reaching the mainland."
+  },
+  {
+   "key": "C",
+   "text": "The third voyage, 1498 to 1500"
+  },
+  {
+   "key": "D",
+   "text": "The fourth voyage, 1502 to 1504",
+   "misconception": "Names the voyage that sailed the Central American coast, four years after the mainland was first reached."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "general": "1. Read the table row by row. The first and second voyages list islands only. 2. Find the first mainland entry. The third voyage lists Trinidad and the South American mainland near Venezuela. 3. Check the map. The line marked 3 runs to Trinidad and the coast near the Orinoco. 4. Conclude. The third voyage of 1498 to 1500 first reached the mainland. Remember: read a table row by row and stop at the first row that fits the question.",
+  "A": "The first voyage reached the Bahamas, Cuba, and Hispaniola, all islands, so it did not reach the mainland.",
+  "B": "The second voyage visited the Lesser Antilles, Puerto Rico, and Jamaica, all islands, so it did not reach the mainland.",
+  "C": "The third voyage reached Trinidad and the South American mainland near Venezuela in 1498, the first mainland landfall in the table.",
+  "D": "The fourth voyage sailed the Central American coast, but the third voyage had already reached the South American mainland in 1498."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0010",
+   "file": "u1/original-u1-columbus-voyages-01.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:The_Four_Voyages_of_Columbus%2C_1492%E2%80%931503",
+   "license": "Public domain",
+   "caption": "Map of the four voyages of Christopher Columbus; the map's printed title gives 1492 to 1503, but the fourth voyage returned in 1504",
+   "alt": "A map of the Atlantic Ocean with numbered red lines tracing four voyages between Spain and the Caribbean, with a title and legend box in the lower right"
+  }
+ ]
+}

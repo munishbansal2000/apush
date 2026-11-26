@@ -1,0 +1,626 @@
+{
+ "date": "2026-11-26",
+ "topic": "key-position shuffle (1.3, 1.4, 1.6)",
+ "verifier": "independent blind re-verifier",
+ "summary": {
+  "total": 84,
+  "pass": 84,
+  "fail": 0,
+  "mcq": {
+   "total": 78,
+   "pass": 78,
+   "fail": 0,
+   "blind_match": "78/78"
+  },
+  "saq_skill_tags": {
+   "total": 6,
+   "pass": 6,
+   "fail": 0
+  },
+  "key_distribution": {
+   "1.3": {
+    "A": 6,
+    "B": 6,
+    "C": 5,
+    "D": 5
+   },
+   "1.4": {
+    "A": 7,
+    "B": 7,
+    "C": 7,
+    "D": 7
+   },
+   "1.6": {
+    "A": 7,
+    "B": 7,
+    "C": 7,
+    "D": 7
+   }
+  },
+  "pattern_guesser_best": "7/28 (25%) per topic",
+  "fails": []
+ },
+ "notes": [
+  "All 78 blind picks matched the locked keys; every rationale argues for/against the option it is attached to (key rationale affirms, distractor rationales refute) \u2014 no remap error from the shuffle.",
+  "0060 key B phrasing ('competing European crowns') is slightly loose, as the Topic 1.4 verifier noted; the rationale matches its option and the pick is unambiguous. Not a fail.",
+  "0133 difficulty 3 fits the table-lookup item."
+ ],
+ "verdicts": {
+  "apush-mcq-0037": {
+   "id": "apush-mcq-0037",
+   "my_pick": "A",
+   "key": "A",
+   "verdict": "PASS",
+   "reason": "Blind pick A matches locked key A; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0038": {
+   "id": "apush-mcq-0038",
+   "my_pick": "D",
+   "key": "D",
+   "verdict": "PASS",
+   "reason": "Blind pick D matches locked key D; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0039": {
+   "id": "apush-mcq-0039",
+   "my_pick": "B",
+   "key": "B",
+   "verdict": "PASS",
+   "reason": "Blind pick B matches locked key B; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0040": {
+   "id": "apush-mcq-0040",
+   "my_pick": "B",
+   "key": "B",
+   "verdict": "PASS",
+   "reason": "Blind pick B matches locked key B; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0041": {
+   "id": "apush-mcq-0041",
+   "my_pick": "C",
+   "key": "C",
+   "verdict": "PASS",
+   "reason": "Blind pick C matches locked key C; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0042": {
+   "id": "apush-mcq-0042",
+   "my_pick": "D",
+   "key": "D",
+   "verdict": "PASS",
+   "reason": "Blind pick D matches locked key D; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0043": {
+   "id": "apush-mcq-0043",
+   "my_pick": "C",
+   "key": "C",
+   "verdict": "PASS",
+   "reason": "Blind pick C matches locked key C; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0044": {
+   "id": "apush-mcq-0044",
+   "my_pick": "D",
+   "key": "D",
+   "verdict": "PASS",
+   "reason": "Blind pick D matches locked key D; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0045": {
+   "id": "apush-mcq-0045",
+   "my_pick": "A",
+   "key": "A",
+   "verdict": "PASS",
+   "reason": "Blind pick A matches locked key A; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0046": {
+   "id": "apush-mcq-0046",
+   "my_pick": "A",
+   "key": "A",
+   "verdict": "PASS",
+   "reason": "Blind pick A matches locked key A; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0047": {
+   "id": "apush-mcq-0047",
+   "my_pick": "B",
+   "key": "B",
+   "verdict": "PASS",
+   "reason": "Blind pick B matches locked key B; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0048": {
+   "id": "apush-mcq-0048",
+   "my_pick": "D",
+   "key": "D",
+   "verdict": "PASS",
+   "reason": "Blind pick D matches locked key D; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0049": {
+   "id": "apush-mcq-0049",
+   "my_pick": "A",
+   "key": "A",
+   "verdict": "PASS",
+   "reason": "Blind pick A matches locked key A; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0050": {
+   "id": "apush-mcq-0050",
+   "my_pick": "D",
+   "key": "D",
+   "verdict": "PASS",
+   "reason": "Blind pick D matches locked key D; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0051": {
+   "id": "apush-mcq-0051",
+   "my_pick": "C",
+   "key": "C",
+   "verdict": "PASS",
+   "reason": "Blind pick C matches locked key C; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0052": {
+   "id": "apush-mcq-0052",
+   "my_pick": "B",
+   "key": "B",
+   "verdict": "PASS",
+   "reason": "Blind pick B matches locked key B; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0053": {
+   "id": "apush-mcq-0053",
+   "my_pick": "B",
+   "key": "B",
+   "verdict": "PASS",
+   "reason": "Blind pick B matches locked key B; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0054": {
+   "id": "apush-mcq-0054",
+   "my_pick": "B",
+   "key": "B",
+   "verdict": "PASS",
+   "reason": "Blind pick B matches locked key B; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0055": {
+   "id": "apush-mcq-0055",
+   "my_pick": "A",
+   "key": "A",
+   "verdict": "PASS",
+   "reason": "Blind pick A matches locked key A; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0056": {
+   "id": "apush-mcq-0056",
+   "my_pick": "A",
+   "key": "A",
+   "verdict": "PASS",
+   "reason": "Blind pick A matches locked key A; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0057": {
+   "id": "apush-mcq-0057",
+   "my_pick": "C",
+   "key": "C",
+   "verdict": "PASS",
+   "reason": "Blind pick C matches locked key C; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0058": {
+   "id": "apush-mcq-0058",
+   "my_pick": "C",
+   "key": "C",
+   "verdict": "PASS",
+   "reason": "Blind pick C matches locked key C; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0059": {
+   "id": "apush-mcq-0059",
+   "my_pick": "A",
+   "key": "A",
+   "verdict": "PASS",
+   "reason": "Blind pick A matches locked key A; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0060": {
+   "id": "apush-mcq-0060",
+   "my_pick": "B",
+   "key": "B",
+   "verdict": "PASS",
+   "reason": "Blind pick B matches locked key B; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0061": {
+   "id": "apush-mcq-0061",
+   "my_pick": "C",
+   "key": "C",
+   "verdict": "PASS",
+   "reason": "Blind pick C matches locked key C; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0062": {
+   "id": "apush-mcq-0062",
+   "my_pick": "B",
+   "key": "B",
+   "verdict": "PASS",
+   "reason": "Blind pick B matches locked key B; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0063": {
+   "id": "apush-mcq-0063",
+   "my_pick": "A",
+   "key": "A",
+   "verdict": "PASS",
+   "reason": "Blind pick A matches locked key A; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0064": {
+   "id": "apush-mcq-0064",
+   "my_pick": "B",
+   "key": "B",
+   "verdict": "PASS",
+   "reason": "Blind pick B matches locked key B; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0065": {
+   "id": "apush-mcq-0065",
+   "my_pick": "A",
+   "key": "A",
+   "verdict": "PASS",
+   "reason": "Blind pick A matches locked key A; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0066": {
+   "id": "apush-mcq-0066",
+   "my_pick": "C",
+   "key": "C",
+   "verdict": "PASS",
+   "reason": "Blind pick C matches locked key C; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0067": {
+   "id": "apush-mcq-0067",
+   "my_pick": "D",
+   "key": "D",
+   "verdict": "PASS",
+   "reason": "Blind pick D matches locked key D; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0068": {
+   "id": "apush-mcq-0068",
+   "my_pick": "C",
+   "key": "C",
+   "verdict": "PASS",
+   "reason": "Blind pick C matches locked key C; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0069": {
+   "id": "apush-mcq-0069",
+   "my_pick": "C",
+   "key": "C",
+   "verdict": "PASS",
+   "reason": "Blind pick C matches locked key C; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0070": {
+   "id": "apush-mcq-0070",
+   "my_pick": "A",
+   "key": "A",
+   "verdict": "PASS",
+   "reason": "Blind pick A matches locked key A; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0071": {
+   "id": "apush-mcq-0071",
+   "my_pick": "A",
+   "key": "A",
+   "verdict": "PASS",
+   "reason": "Blind pick A matches locked key A; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0072": {
+   "id": "apush-mcq-0072",
+   "my_pick": "C",
+   "key": "C",
+   "verdict": "PASS",
+   "reason": "Blind pick C matches locked key C; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0073": {
+   "id": "apush-mcq-0073",
+   "my_pick": "A",
+   "key": "A",
+   "verdict": "PASS",
+   "reason": "Blind pick A matches locked key A; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0074": {
+   "id": "apush-mcq-0074",
+   "my_pick": "B",
+   "key": "B",
+   "verdict": "PASS",
+   "reason": "Blind pick B matches locked key B; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0075": {
+   "id": "apush-mcq-0075",
+   "my_pick": "D",
+   "key": "D",
+   "verdict": "PASS",
+   "reason": "Blind pick D matches locked key D; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0076": {
+   "id": "apush-mcq-0076",
+   "my_pick": "B",
+   "key": "B",
+   "verdict": "PASS",
+   "reason": "Blind pick B matches locked key B; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0077": {
+   "id": "apush-mcq-0077",
+   "my_pick": "B",
+   "key": "B",
+   "verdict": "PASS",
+   "reason": "Blind pick B matches locked key B; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0078": {
+   "id": "apush-mcq-0078",
+   "my_pick": "D",
+   "key": "D",
+   "verdict": "PASS",
+   "reason": "Blind pick D matches locked key D; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0079": {
+   "id": "apush-mcq-0079",
+   "my_pick": "B",
+   "key": "B",
+   "verdict": "PASS",
+   "reason": "Blind pick B matches locked key B; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0080": {
+   "id": "apush-mcq-0080",
+   "my_pick": "D",
+   "key": "D",
+   "verdict": "PASS",
+   "reason": "Blind pick D matches locked key D; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0081": {
+   "id": "apush-mcq-0081",
+   "my_pick": "D",
+   "key": "D",
+   "verdict": "PASS",
+   "reason": "Blind pick D matches locked key D; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0082": {
+   "id": "apush-mcq-0082",
+   "my_pick": "A",
+   "key": "A",
+   "verdict": "PASS",
+   "reason": "Blind pick A matches locked key A; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0083": {
+   "id": "apush-mcq-0083",
+   "my_pick": "C",
+   "key": "C",
+   "verdict": "PASS",
+   "reason": "Blind pick C matches locked key C; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0084": {
+   "id": "apush-mcq-0084",
+   "my_pick": "D",
+   "key": "D",
+   "verdict": "PASS",
+   "reason": "Blind pick D matches locked key D; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0085": {
+   "id": "apush-mcq-0085",
+   "my_pick": "C",
+   "key": "C",
+   "verdict": "PASS",
+   "reason": "Blind pick C matches locked key C; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0086": {
+   "id": "apush-mcq-0086",
+   "my_pick": "D",
+   "key": "D",
+   "verdict": "PASS",
+   "reason": "Blind pick D matches locked key D; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0111": {
+   "id": "apush-mcq-0111",
+   "my_pick": "C",
+   "key": "C",
+   "verdict": "PASS",
+   "reason": "Blind pick C matches locked key C; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0112": {
+   "id": "apush-mcq-0112",
+   "my_pick": "C",
+   "key": "C",
+   "verdict": "PASS",
+   "reason": "Blind pick C matches locked key C; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0113": {
+   "id": "apush-mcq-0113",
+   "my_pick": "C",
+   "key": "C",
+   "verdict": "PASS",
+   "reason": "Blind pick C matches locked key C; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0114": {
+   "id": "apush-mcq-0114",
+   "my_pick": "A",
+   "key": "A",
+   "verdict": "PASS",
+   "reason": "Blind pick A matches locked key A; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0115": {
+   "id": "apush-mcq-0115",
+   "my_pick": "A",
+   "key": "A",
+   "verdict": "PASS",
+   "reason": "Blind pick A matches locked key A; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0116": {
+   "id": "apush-mcq-0116",
+   "my_pick": "D",
+   "key": "D",
+   "verdict": "PASS",
+   "reason": "Blind pick D matches locked key D; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0117": {
+   "id": "apush-mcq-0117",
+   "my_pick": "D",
+   "key": "D",
+   "verdict": "PASS",
+   "reason": "Blind pick D matches locked key D; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0118": {
+   "id": "apush-mcq-0118",
+   "my_pick": "A",
+   "key": "A",
+   "verdict": "PASS",
+   "reason": "Blind pick A matches locked key A; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0119": {
+   "id": "apush-mcq-0119",
+   "my_pick": "C",
+   "key": "C",
+   "verdict": "PASS",
+   "reason": "Blind pick C matches locked key C; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0120": {
+   "id": "apush-mcq-0120",
+   "my_pick": "D",
+   "key": "D",
+   "verdict": "PASS",
+   "reason": "Blind pick D matches locked key D; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0121": {
+   "id": "apush-mcq-0121",
+   "my_pick": "B",
+   "key": "B",
+   "verdict": "PASS",
+   "reason": "Blind pick B matches locked key B; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0122": {
+   "id": "apush-mcq-0122",
+   "my_pick": "B",
+   "key": "B",
+   "verdict": "PASS",
+   "reason": "Blind pick B matches locked key B; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0123": {
+   "id": "apush-mcq-0123",
+   "my_pick": "A",
+   "key": "A",
+   "verdict": "PASS",
+   "reason": "Blind pick A matches locked key A; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0124": {
+   "id": "apush-mcq-0124",
+   "my_pick": "B",
+   "key": "B",
+   "verdict": "PASS",
+   "reason": "Blind pick B matches locked key B; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0125": {
+   "id": "apush-mcq-0125",
+   "my_pick": "C",
+   "key": "C",
+   "verdict": "PASS",
+   "reason": "Blind pick C matches locked key C; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0126": {
+   "id": "apush-mcq-0126",
+   "my_pick": "B",
+   "key": "B",
+   "verdict": "PASS",
+   "reason": "Blind pick B matches locked key B; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0127": {
+   "id": "apush-mcq-0127",
+   "my_pick": "D",
+   "key": "D",
+   "verdict": "PASS",
+   "reason": "Blind pick D matches locked key D; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0128": {
+   "id": "apush-mcq-0128",
+   "my_pick": "A",
+   "key": "A",
+   "verdict": "PASS",
+   "reason": "Blind pick A matches locked key A; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0129": {
+   "id": "apush-mcq-0129",
+   "my_pick": "C",
+   "key": "C",
+   "verdict": "PASS",
+   "reason": "Blind pick C matches locked key C; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0130": {
+   "id": "apush-mcq-0130",
+   "my_pick": "B",
+   "key": "B",
+   "verdict": "PASS",
+   "reason": "Blind pick B matches locked key B; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0131": {
+   "id": "apush-mcq-0131",
+   "my_pick": "D",
+   "key": "D",
+   "verdict": "PASS",
+   "reason": "Blind pick D matches locked key D; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0132": {
+   "id": "apush-mcq-0132",
+   "my_pick": "B",
+   "key": "B",
+   "verdict": "PASS",
+   "reason": "Blind pick B matches locked key B; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0133": {
+   "id": "apush-mcq-0133",
+   "my_pick": "A",
+   "key": "A",
+   "verdict": "PASS",
+   "reason": "Blind pick A matches locked key A; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error. Difficulty now 3: fits a table-lookup item; 4 was inflated."
+  },
+  "apush-mcq-0134": {
+   "id": "apush-mcq-0134",
+   "my_pick": "B",
+   "key": "B",
+   "verdict": "PASS",
+   "reason": "Blind pick B matches locked key B; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0135": {
+   "id": "apush-mcq-0135",
+   "my_pick": "D",
+   "key": "D",
+   "verdict": "PASS",
+   "reason": "Blind pick D matches locked key D; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0136": {
+   "id": "apush-mcq-0136",
+   "my_pick": "A",
+   "key": "A",
+   "verdict": "PASS",
+   "reason": "Blind pick A matches locked key A; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0137": {
+   "id": "apush-mcq-0137",
+   "my_pick": "D",
+   "key": "D",
+   "verdict": "PASS",
+   "reason": "Blind pick D matches locked key D; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-mcq-0138": {
+   "id": "apush-mcq-0138",
+   "my_pick": "C",
+   "key": "C",
+   "verdict": "PASS",
+   "reason": "Blind pick C matches locked key C; rationale for each option argues for/against that option as attached (key rationale affirms, distractor rationales refute); no remap error."
+  },
+  "apush-saq-0025": {
+   "id": "apush-saq-0025",
+   "verdict": "PASS",
+   "reason": "Skills 1.A/4.A PASS: (a) identifies a reason (1.A); (b)-(c) explain change and response within the mission-system context (4.A)."
+  },
+  "apush-saq-0026": {
+   "id": "apush-saq-0026",
+   "verdict": "PASS",
+   "reason": "Skills 2.A/3.A PASS: (b) requires reading Montezuma's point of view in the passage (2.A); (c) asks what the passage shows about Spanish aims, a claim in a source (3.A)."
+  },
+  "apush-saq-0027": {
+   "id": "apush-saq-0027",
+   "verdict": "PASS",
+   "reason": "Skills 1.A/2.C PASS: (a) identifies the man (1.A); (b) explains a limitation of the portrait as evidence (2.C, exact fit)."
+  },
+  "apush-saq-0028": {
+   "id": "apush-saq-0028",
+   "verdict": "PASS",
+   "reason": "Skills 1.A/5.A PASS: (a) identifies a preserved tradition (1.A); (b)-(c) trace blending and preservation across developments (5.A)."
+  },
+  "apush-saq-0029": {
+   "id": "apush-saq-0029",
+   "verdict": "PASS",
+   "reason": "Skills 3.A/3.B PASS: (a) identifies Sepulveda's main claim (3.A); (b) identifies the authority/evidence behind it (3.B)."
+  },
+  "apush-saq-0030": {
+   "id": "apush-saq-0030",
+   "verdict": "PASS",
+   "reason": "Skills 2.C/3.B PASS: (b) identifies evidence in the image about Native agriculture (3.B); (c) explains a limitation of the image as evidence (2.C)."
+  }
+ }
+}

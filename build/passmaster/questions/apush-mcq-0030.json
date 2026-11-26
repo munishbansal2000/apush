@@ -1,0 +1,84 @@
+{
+ "id": "apush-mcq-0030",
+ "lesson": "apush-u1-l1",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 1,
+ "topics": [
+  "1.2"
+ ],
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "GEO",
+  "NAT"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 3,
+ "stimulus_set": "pueblo-taos",
+ "stimulus": {
+  "kind": "image",
+  "text": "The photograph shows Taos Pueblo in New Mexico in 1880: multi-story adobe dwellings clustered together in an arid landscape, with mountains behind. Taos Pueblo was inhabited for centuries before European contact, and its adobe building tradition predates the photograph by far.",
+  "source_note": "Photograph from the shared image pool; 1880 albumen photograph, public domain (Library of Congress)."
+ },
+ "source": "original; converted from original-u1-native-09; stimulus photograph of Taos Pueblo (1880), public domain",
+ "status": "final",
+ "stem": "This 1880 photograph shows Taos Pueblo in New Mexico: multi-story adobe dwellings clustered together in an arid landscape. What does this image best illustrate about Pueblo adaptation to the Southwest?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Pueblo peoples depended on river floodplains exactly like the Mississippians did.",
+   "misconception": "Copies the Mississippian river-valley pattern onto an arid land."
+  },
+  {
+   "key": "B",
+   "text": "Pueblo peoples built a settled farming society suited to a dry environment."
+  },
+  {
+   "key": "C",
+   "text": "The Spanish introduced adobe architecture to the Southwest during the 1800s.",
+   "misconception": "Credits the Spanish with an adobe tradition far older than the 1800s."
+  },
+  {
+   "key": "D",
+   "text": "Pueblo communities were temporary camps that moved with each new season.",
+   "misconception": "Reads substantial multi-story buildings as temporary camps."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "The arid Southwest lacked the great floodplains of the Southeast and Midwest, so the Pueblo adaptation was different.",
+  "B": "Adobe construction and compact villages fit an arid farming environment, which is the Pueblo answer to dry country.",
+  "C": "Pueblo adobe architecture is a Native tradition far older than the 1800s, not a Spanish introduction.",
+  "D": "Multi-story adobe dwellings show permanent settlement, not camps that moved with each season.",
+  "general": "1. Look at the buildings. Multi-story adobe dwellings crowd together in a dry landscape.\n2. Name the material. Adobe is sun-dried earth, made from the land itself.\n3. Ask what the buildings prove. Substantial houses in one place mean a settled people, not a passing camp.\n4. Match the settlement to the land. Farming a dry country produced a settled adobe town.\nRemember: houses show how people lived, so read the building before you read the label."
+ },
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 3",
+    "section": "Societies of the Southwest"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 6",
+    "section": "Native Americans in Pre-Columbian North America"
+   }
+  ],
+  "primary_sources": [
+   "Photograph of Taos Pueblo, New Mexico (1880), Library of Congress"
+  ]
+ },
+ "figures": [
+  {
+   "file": "u1/original-u1-native-09.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Taos_Pueblo,_New_Mexico_LCCN2015651512.jpg",
+   "license": "Public domain",
+   "caption": "Photograph of Taos Pueblo, New Mexico, 1880: multi-story adobe dwellings in an arid landscape",
+   "alt": "Photograph of multi-story adobe dwellings clustered together with ladders, people, and mountains behind them",
+   "id": "fig-apush-mcq-0030"
+  }
+ ]
+}
