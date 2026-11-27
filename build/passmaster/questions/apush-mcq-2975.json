@@ -1,0 +1,78 @@
+{
+ "answerKey": "C",
+ "difficulty": 3,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "The Deepening of Partisanship in the Twenty-first Century"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 30",
+    "section": "Threat of Terrorism, Increase of Presidential Power, and Economic Crisis (2001-2016)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Recent Trends"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2975",
+ "lesson": "apush-u9-l5",
+ "options": [
+  {
+   "key": "A",
+   "text": "Florida had the largest population of any state",
+   "misconception": "Florida was not the largest state, and population was not the issue."
+  },
+  {
+   "key": "B",
+   "text": "Both candidates had already won 270 electoral votes",
+   "misconception": "Neither candidate had 270 votes without Florida."
+  },
+  {
+   "key": "C",
+   "text": "Neither candidate had 270 electoral votes without Florida"
+  },
+  {
+   "key": "D",
+   "text": "Florida's governor chose the winner by himself",
+   "misconception": "The dispute was settled by the Supreme Court, not by the governor."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The issue was the electoral votes, not the population.",
+  "B": "Background: neither candidate had enough electoral votes without Florida. That is why the recount mattered.",
+  "C": "The Florida vote was nearly even. Background: neither candidate had 270 electoral votes without Florida.",
+  "D": "The governor did not choose the winner. The Supreme Court stopped the recount, which settled the dispute.",
+  "general": "1. Ask why one state's recount could decide a national election. Background: neither candidate had 270 electoral votes without Florida.\n2. The Florida vote itself was nearly even, so a recount could change the winner.\n3. That combination made the recount decisive: the presidency turned on how Florida counted its votes.\n4. Population size and the governor play no part in the account.\nRemember: when an election turns on one state, a court ruling on that state's count can decide the presidency."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "1.A"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, The Deepening of Partisanship in the Twenty-first Century; 5 Steps 2024 Ch. 30-31; Princeton Review Ch. 13.",
+ "status": "final",
+ "stem": "What made the Florida recount the decisive issue in the presidential election of 2000?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Secondary account paraphrased from the grounding books (Barron's Premium 2027 Ch. 11; 5 Steps 2024 Ch. 30-31; Princeton Review Ch. 13).",
+  "text": "Paraphrase of a secondary account: The presidential election of 2000 was one of the closest in American history. The vote in Florida was nearly even, and after weeks of legal fights, the Supreme Court stopped a hand recount in Bush v. Gore, a five-to-four decision that gave the presidency to George W. Bush. Partisan division deepened after that.\n\nAfter Barack Obama won the presidency in 2008, a vocal opposition movement called the Tea Party arose, protesting big government and the new administration's policies. In 2016, Donald Trump won the presidency by carrying the Electoral College while losing the national popular vote to Hillary Clinton, the second time that had happened since 2000. Trump campaigned on border security, including building a wall, and on trade deals he said hurt American workers. The House impeached Trump twice, in 2019 and 2021, and the Senate acquitted him both times."
+ },
+ "stimulus_set": "polarization-2000-2016",
+ "themes": [
+  "PCE"
+ ],
+ "topics": [
+  "9.6"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

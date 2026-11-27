@@ -1,0 +1,91 @@
+{
+ "id": "apush-saq-0271",
+ "type": "saq",
+ "pool": "test",
+ "unit": 9,
+ "topics": [
+  "9.2"
+ ],
+ "skills": [
+  "1.B",
+  "5.A"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "status": "final",
+ "lesson": "apush-u9-l1",
+ "source": "original; stimulus paraphrased from the grounding books or drawn from the shared image pool",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "A. The Ascendancy of the New Right"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 28",
+    "section": "Decline and Rebirth (1968-1988)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "The Conservative Resurgence"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of historian Lisa McGirr's argument about the rise of the New Right. Post-1929 material is paraphrased, not quoted.",
+  "text": "Historian Lisa McGirr argues that the late twentieth century saw a new conservatism triumph, as suburban activists, evangelical Christians, and free-market economists reshaped American politics from the grassroots up."
+ },
+ "stimulus_set": null,
+ "saq_slot": 1,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Briefly explain ONE example of the conservative direction of the nation in the 1970s and 1980s.",
+   "modelAnswer": "Ronald Reagan's election in 1980 carried the conservative direction into the White House. His administration cut taxes, deregulated business, and attacked the idea that the federal government should manage the economy.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one example of the conservative direction, such as Reagan's election, tax cuts, deregulation, or the Moral Majority's mobilization.",
+     "notEarned": "Naming a conservative development with no explanation, or describing a liberal development, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain a SECOND example of that conservative direction.",
+   "modelAnswer": "The Moral Majority, founded by Jerry Falwell in 1979, mobilized evangelical Christians into politics. Its voters helped elect Reagan in 1980 and pushed the Republican Party toward traditional positions on family, abortion, and school prayer.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining a second, distinct example, such as the Moral Majority, the religious right, or the growth of conservative think tanks and media.",
+     "notEarned": "Repeating the part (a) example, or naming a development with no explanation, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE Cold War approach taken by a 1970s or 1980s president.",
+   "modelAnswer": "President Nixon pursued detente with the Soviet Union, easing tensions through negotiation and arms-control agreements. President Reagan took the opposite approach, calling the Soviet Union an evil empire and launching a military buildup to pressure it.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one Cold War approach, such as Nixon's detente, Carter's human-rights policy, or Reagan's military buildup and confrontation.",
+     "notEarned": "Naming a president with no approach explained, or describing a domestic policy, does not earn the point."
+    }
+   ]
+  }
+ ],
+ "totalPoints": 3
+}

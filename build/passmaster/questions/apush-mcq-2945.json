@@ -1,0 +1,79 @@
+{
+ "answerKey": "A",
+ "difficulty": 2,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.5 Migration and Immigration, 1980 to the Present"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 30",
+    "section": "Threat of Terrorism, Increase of Presidential Power, and Economic Crisis (2001\u20132016)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Changing Demographics"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2945",
+ "lesson": "apush-u9-l4",
+ "options": [
+  {
+   "key": "A",
+   "text": "The Hispanic share of the population nearly tripled between 1980 and 2020"
+  },
+  {
+   "key": "B",
+   "misconception": "The share rose at every census shown, from 12.5 percent in 2000 to 18.7 percent in 2020.",
+   "text": "The Hispanic share of the population fell after 2000 and kept falling"
+  },
+  {
+   "key": "C",
+   "misconception": "At 18.7 percent, Hispanics were less than a fifth of the population, not a majority.",
+   "text": "Hispanics were a majority of the population by 2020"
+  },
+  {
+   "key": "D",
+   "misconception": "The share rose from 16.3 percent in 2010 to 18.7 percent in 2020.",
+   "text": "The Hispanic population stopped growing after 2010"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The share rises from 6.4 percent to 18.7 percent, which is just under three times the 1980 figure. The table shows steady growth at every census.",
+  "B": "The column rises at every step; nothing in it falls after 2000.",
+  "C": "A share of 18.7 percent is well short of a majority.",
+  "D": "The 2010 to 2020 step is still upward, from 16.3 to 18.7 percent.",
+  "general": "1. Read the column: 6.4, 9.0, 12.5, 16.3, then 18.7 percent.\n2. Compare the ends. 18.7 is just under three times 6.4, so the share nearly tripled.\n3. Check the wrong readings. Nothing falls, no figure passes 50 percent, and growth never stops.\n4. The steady rise at every census is the pattern the table shows.\nRemember: compare the first and last numbers before you judge how big a change is."
+ },
+ "reasoning": "continuity-change",
+ "skills": [
+  "3.A"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, Topic 9.5; 5 Steps 2024 Ch. 29/30; Princeton Review Ch. 13. U.S. Census Bureau, decennial censuses (public data).",
+ "status": "final",
+ "stem": "The table best supports which of the following conclusions?",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "U.S. Census Bureau, decennial censuses (public data).",
+  "text": "| Year | Hispanic share of the U.S. population |\n| 1980 | 6.4% |\n| 1990 | 9.0% |\n| 2000 | 12.5% |\n| 2010 | 16.3% |\n| 2020 | 18.7% |\n\nSource: U.S. Census Bureau, decennial censuses. Simplified for this test."
+ },
+ "stimulus_set": "hispanic-share",
+ "themes": [
+  "MIG",
+  "SOC"
+ ],
+ "topics": [
+  "9.5"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

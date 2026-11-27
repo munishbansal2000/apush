@@ -1,0 +1,79 @@
+{
+ "answerKey": "B",
+ "difficulty": 2,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.5 Migration and Immigration, 1980 to the Present"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 30",
+    "section": "Threat of Terrorism, Increase of Presidential Power, and Economic Crisis (2001\u20132016)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Changing Demographics"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2951",
+ "lesson": "apush-u9-l4",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "They fell for most of the period before rising again in 2019.",
+   "text": "Apprehensions rose steadily from 2000 to 2019"
+  },
+  {
+   "key": "B",
+   "text": "Apprehensions fell sharply from 2000 to 2017, then rose again by 2019"
+  },
+  {
+   "key": "C",
+   "misconception": "Only 2000 was near 1.6 million; the later years were far lower.",
+   "text": "Apprehensions stayed near 1.6 million in every year shown in the table"
+  },
+  {
+   "key": "D",
+   "misconception": "The year 2000 was the highest year shown, not the lowest.",
+   "text": "Apprehensions reached their lowest point in 2000"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The column falls from 1.6 million to about 304,000 before it rises.",
+  "B": "The count drops from over 1.6 million to about 304,000, then climbs back above 850,000. The pattern is a long fall followed by a rebound.",
+  "C": "Only the first row is near 1.6 million; 2010 and 2017 are far below it.",
+  "D": "The lowest figure in the table is 303,916 in 2017.",
+  "general": "1. Read the column: 1.6 million, 1.2 million, 448,000, 304,000, then 852,000.\n2. The direction is down for seventeen years, then up in the last step.\n3. Steady rise, flat line, and lowest in 2000 all contradict the column.\n4. Name the shape: a long fall followed by a rebound.\nRemember: read the whole column before naming a trend, including the last row."
+ },
+ "reasoning": "continuity-change",
+ "skills": [
+  "3.A"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, Topic 9.5; 5 Steps 2024 Ch. 29/30; Princeton Review Ch. 13. U.S. Customs and Border Protection, U.S. Border Patrol southwest border apprehensions (public data).",
+ "status": "final",
+ "stem": "Which trend does the table best support?",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "U.S. Customs and Border Protection, U.S. Border Patrol southwest border apprehensions (public data).",
+  "text": "| Fiscal year | U.S. Border Patrol apprehensions, southwest border |\n| 2000 | 1,643,679 |\n| 2005 | 1,171,396 |\n| 2010 | 447,731 |\n| 2017 | 303,916 |\n| 2019 | 851,508 |\n\nSource: U.S. Customs and Border Protection, U.S. Border Patrol southwest border apprehensions. Simplified for this test."
+ },
+ "stimulus_set": "border-apprehensions",
+ "themes": [
+  "MIG",
+  "PCE"
+ ],
+ "topics": [
+  "9.5"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

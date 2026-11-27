@@ -1,0 +1,85 @@
+{
+  "answerKey": "D",
+  "difficulty": 2,
+  "figures": [
+    {
+      "alt": "Line chart showing the foreign-born share of the U.S. population rising from 4.7 percent in 1970 to 13.6 percent in 2020",
+      "caption": "Share of the U.S. population that was foreign-born, 1970-2020. Source: U.S. Census Bureau, decennial censuses.",
+      "file": "pt01/fig6-foreign-born-1970-2020.jpg",
+      "id": "fig-apush-mcq-2998",
+      "license": "Chart data: public U.S. government data"
+    }
+  ],
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 11",
+        "section": "Topic 9.5 Migration and Immigration in the 1990s and 2000s"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 29",
+        "section": "Prosperity and a New World Order (1988–2000)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 13"
+      }
+    ],
+    "primary_sources": []
+  },
+  "id": "apush-mcq-2998",
+  "lesson": "apush-u9-l4",
+  "options": [
+    {
+      "key": "A",
+      "misconception": "The chart shows a steady decline in immigration after 1970.",
+      "text": "A steady decline in immigration to the United States after 1970"
+    },
+    {
+      "key": "B",
+      "misconception": "The chart shows the end of all European immigration by 1970.",
+      "text": "The end of all immigration from Europe by 1970"
+    },
+    {
+      "key": "C",
+      "misconception": "The chart shows a decline in the total U.S. population.",
+      "text": "A decline in the total U.S. population after 1970"
+    },
+    {
+      "key": "D",
+      "text": "An increase in immigration after 1965, especially from Latin America and Asia"
+    }
+  ],
+  "pool": "test",
+  "rationales": {
+    "A": "The share rose; immigration did not decline steadily.",
+    "B": "European immigration did not end by 1970.",
+    "C": "The total population grew; the chart shows a rising share, not a falling total.",
+    "D": "The foreign-born share more than doubled from 1970 to 2020, reflecting rising immigration, especially from Latin America and Asia. The rise was steady at every census, not a single spike, and it followed the 1965 opening of immigration.",
+    "general": "1. Read the trend. The foreign-born share rises at every step, from 4.7 percent to 13.6 percent.\n2. Ask what a rising share means. More of the population was born abroad, reflecting rising immigration.\n3. Test the misreadings. The trend is up, not down; European immigration did not end; and a share is not a total.\n4. Match the reflection. Rising immigration after 1965, especially from Latin America and Asia.\nRemember: read a share as a share. A rising line means a growing part of the whole."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "3.A"
+  ],
+  "source": "original; stimulus is a chart plotted from U.S. Census Bureau decennial figures (public data)",
+  "status": "final",
+  "stem": "The trend shown in the chart most directly reflects which of the following?",
+  "stimulus": {
+    "kind": "chart",
+    "source_note": "U.S. Census Bureau, decennial censuses. Chart plotted from the same figures.",
+    "text": "| Year | Foreign-Born Share |\n| 1970 | 4.7% |\n| 1980 | 6.2% |\n| 1990 | 7.9% |\n| 2000 | 11.1% |\n| 2010 | 12.9% |\n| 2020 | 13.6% |\n\nSource: U.S. Census Bureau, decennial censuses. Simplified for this test."
+  },
+  "stimulus_set": "foreign-born-chart-1970-2020",
+  "themes": [
+    "MIG",
+    "WXT"
+  ],
+  "topics": [
+    "9.5"
+  ],
+  "type": "mcq",
+  "unit": 9
+}

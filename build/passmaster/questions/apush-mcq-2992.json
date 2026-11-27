@@ -1,0 +1,79 @@
+{
+ "answerKey": "A",
+ "difficulty": 3,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "The Housing Crisis and the Great Recession"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 30",
+    "section": "Threat of Terrorism, Increase of Presidential Power, and Economic Crisis (2001-2016)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Recent Trends"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2992",
+ "lesson": "apush-u9-l5",
+ "options": [
+  {
+   "key": "A",
+   "text": "Unemployment stayed high for years after the crisis, even as banks recovered"
+  },
+  {
+   "key": "B",
+   "misconception": "Background: the stock market recovered its 2008 losses within a few years; it did not stay down.",
+   "text": "The stock market never recovered from its 2008 losses"
+  },
+  {
+   "key": "C",
+   "misconception": "The government passed a stimulus of almost 800 billion dollars in 2009.",
+   "text": "The federal government refused to spend any money on a stimulus"
+  },
+  {
+   "key": "D",
+   "misconception": "Banks cut back on lending during the crisis, but they did not stop lending entirely after 2010.",
+   "text": "Banks stopped lending entirely after 2010"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Background: unemployment reached 10 percent in October 2009 and was still 4.7 percent at the end of 2016, so jobs came back slowly.",
+  "B": "Background: the stock market recovered its 2008 losses within a few years. It did not stay down.",
+  "C": "The government passed a stimulus of almost 800 billion dollars in 2009.",
+  "D": "Banks cut back on lending during the crisis, but they did not stop lending entirely after 2010.",
+  "general": "1. Ask whose recovery the question is about: ordinary Americans, not banks.\n2. The account says unemployment reached 10 percent in October 2009.\n3. Background: the rate fell only slowly, reaching 4.7 percent by 2017, so years passed before jobs were plentiful again.\n4. A recovery that restores banks first and jobs years later feels slow to the people still waiting for work.\nRemember: judge a recovery by when ordinary people feel it, not by when markets recover."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "3.B"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, The Housing Crisis and the Great Recession; 5 Steps 2024 Ch. 30; Princeton Review Ch. 13.",
+ "status": "final",
+ "stem": "Which of the following most directly explains why the recovery from the Great Recession felt slow to many Americans?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Secondary account paraphrased from the grounding books (Barron's Premium 2027 Ch. 11; 5 Steps 2024 Ch. 30).",
+  "text": "Paraphrase of a secondary account: The housing bubble burst in 2007, and the financial crisis that followed was the worst since the Great Depression. Banks that had bundled risky mortgages into securities cut back on lending, businesses laid off workers, and unemployment reached 10 percent in October 2009. The federal government rescued large banks and auto companies with the Troubled Asset Relief Program in 2008 and passed a stimulus of almost 800 billion dollars in 2009.\n\nMany Americans saw the rescues as proof that Washington protected large institutions while ordinary families lost homes and jobs. In 2009, the Tea Party movement rose on the right, demanding smaller government and lower spending. In 2011, Occupy Wall Street protesters camped in a New York park, charging that the richest 1 percent held too much wealth and power. Both movements distrusted the political establishment, though they proposed opposite cures."
+ },
+ "stimulus_set": "bailouts-populism",
+ "themes": [
+  "WXT",
+  "SOC"
+ ],
+ "topics": [
+  "9.7"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

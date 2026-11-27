@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-2933",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 9,
+ "topics": [
+  "9.4"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 2,
+ "status": "final",
+ "lesson": "apush-u9-l3",
+ "source": "original; stimulus from the shared image pool or paraphrased from the grounding books",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "The Rise of the Service Sector"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "Prosperity and a New World Order (1988\u20132000)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Digital Revolution"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stem": "What does the photograph most directly show?",
+ "options": [
+  {
+   "key": "A",
+   "text": "A steel mill running at full capacity",
+   "misconception": "No workers or machinery are in sight."
+  },
+  {
+   "key": "B",
+   "text": "A steel mill abandoned after its work moved away"
+  },
+  {
+   "key": "C",
+   "text": "A steel mill under construction",
+   "misconception": "A mill under construction would have workers and new materials, not weeds and an empty yard."
+  },
+  {
+   "key": "D",
+   "text": "A steel mill converted into a shopping mall",
+   "misconception": "Nothing in the photograph shows shops or shoppers; it shows an empty mill."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "No workers or machinery are in sight.",
+  "B": "The photograph shows an empty mill with weeds in the yard and no workers \u2014 a mill whose work has gone.",
+  "C": "A mill under construction would have workers and new materials, not weeds and an empty yard.",
+  "D": "Nothing in the photograph shows shops or shoppers; it shows an empty mill.",
+  "general": "1. Look at what is actually there: an empty mill, weeds in the yard, and nobody at work.\n2. A working mill would show workers and machinery.\n3. A building site would show builders and new materials.\n4. What is left is an empty shell \u2014 the work has moved away.\nRemember: describe what you see before you explain it."
+ },
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Photograph by Jet Lowe, 1989, Historic American Engineering Record, Library of Congress. Public domain (U.S. federal government work).",
+  "text": "Photograph of an abandoned section of the Bethlehem Steel rail mill in Bethlehem, Pennsylvania, 1989. The mill's roof has been removed, weeds grow in the empty yard, and no workers or machinery are in sight."
+ },
+ "stimulus_set": "bethlehem-steel-1989",
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2933",
+   "file": "u9/bethlehem-steel-abandoned-mill-1989.jpg",
+   "caption": "Abandoned section of the Bethlehem Steel rail mill, Bethlehem, Pennsylvania, 1989",
+   "alt": "Black-and-white photograph of an abandoned Bethlehem Steel rail mill in 1989, weeds growing in the empty yard",
+   "license": "Public domain (U.S. federal government work; Library of Congress, Historic American Engineering Record)",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Abandoned_section_of_rail_mill_where_the_roof_has_been_removed;_looking_southwest_-_Bethlehem_Steel_Corporation,_South_Bethlehem_Works,_Iron_Foundry,_Along_Lehigh_River,_North_HAER_PA,48-BETH,19A-10.tif"
+  }
+ ]
+}

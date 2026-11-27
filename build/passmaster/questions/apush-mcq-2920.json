@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-2920",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 9,
+ "topics": [
+  "9.4"
+ ],
+ "skills": [
+  "5.B"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "status": "final",
+ "lesson": "apush-u9-l3",
+ "source": "original; stimulus from the shared image pool or paraphrased from the grounding books",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "The Rise of the Service Sector"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 28",
+    "section": "Decline and Rebirth (1968-1988)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Wage Stagnation"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stem": "The trend in the chart most directly contributed to which of the following?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Slower wage growth for workers without a college degree"
+  },
+  {
+   "key": "B",
+   "text": "A sharp rise in the federal minimum wage",
+   "misconception": "The minimum wage rose only in occasional small steps; a shrinking union movement did not push it up."
+  },
+  {
+   "key": "C",
+   "text": "The return of child labor in American factories",
+   "misconception": "Child labor laws stayed in place; no such return happened."
+  },
+  {
+   "key": "D",
+   "text": "A national ban on strikes by public-sector workers",
+   "misconception": "No national ban on public-sector strikes exists; the 1981 PATCO firing hit federal air-traffic controllers only."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Background: economists link weaker unions to weaker bargaining power, and Princeton notes wage stagnation followed the union decline.",
+  "B": "The minimum wage is set by Congress, and it rose only in occasional small steps during these decades.",
+  "C": "Child labor stayed illegal. Background: the chart is about adult union membership, not child labor.",
+  "D": "Background: the PATCO firing of 1981 hit one federal union; it did not ban strikes nationwide.",
+  "general": "1. Ask what unions do for a worker: bargain together for pay, instead of each worker asking alone.\n2. Background: as membership halved, that shared bargaining power thinned out with it.\n3. Princeton ties the union decline to wage stagnation in the same decades.\n4. The workers hit hardest were those with the least schooling, who had the fewest other options.\nRemember: a union is a megaphone \u2014 halve the members, and the voice gets quieter."
+ },
+ "stimulus": {
+  "kind": "chart",
+  "source_note": "Chart plotted from U.S. Bureau of Labor Statistics, Current Population Survey. The 1979 figure comes from the pre-1983 historical series; 1983 onward is the comparable series.",
+  "text": "| Year | Union members as a share of U.S. workers |\n| 1979 | 24.1% |\n| 1983 | 20.1% |\n| 1990 | 16.0% |\n| 2000 | 13.4% |\n| 2010 | 11.9% |\n\nSource: U.S. Bureau of Labor Statistics, Current Population Survey. The 1979 figure comes from the pre-1983 historical series; 1983 onward is the comparable series."
+ },
+ "stimulus_set": "union-rate-1979-2010",
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2920",
+   "file": "u9/fig-union-rate-1979-2010.jpg",
+   "caption": "Union members as a share of U.S. wage and salary workers, 1979\u20132010. Source: U.S. Bureau of Labor Statistics.",
+   "alt": "Line chart showing union membership falling from 24.1 percent of U.S. workers in 1979 to 11.9 percent in 2010",
+   "license": "Chart data: public U.S. government data",
+   "source_url": "https://www.bls.gov/spotlight/2016/union-membership-in-the-united-states/home.htm"
+  }
+ ]
+}

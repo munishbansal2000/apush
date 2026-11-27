@@ -1,0 +1,93 @@
+{
+ "difficulty": 3,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.5 Migration and Immigration, 1980 to the Present"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "Prosperity and a New World Order (1988\u20132000)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Changing Demographics"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-saq-0287",
+ "lesson": "apush-u9-l4",
+ "parts": [
+  {
+   "modelAnswer": "The 1965 act ended the national-origins quota system that had favored immigrants from northern and western Europe since the 1920s. In its place, it set annual limits and gave priority to family reunification and skilled workers.",
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one change the 1965 act made to immigration law.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for identifying one change the 1965 act made, such as ending the national-origins quotas or setting family-based priorities.",
+     "notEarned": "Naming a change from a different law, or a vague answer with nothing identified, does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "modelAnswer": "The act opened immigration from Asia and Latin America, which the old quotas had kept small. Family reunification then multiplied the flow, as each new citizen could sponsor relatives.",
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain ONE cause of the growth in the foreign-born population after 1965.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one cause, such as the end of the quotas, the opening to Asia and Latin America, or family reunification.",
+     "notEarned": "Naming a cause with no explanation, or describing an effect instead, does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "modelAnswer": "As Hispanic and Asian populations grew, both parties began competing for their votes in national elections. The growth also shifted House seats and Electoral College votes toward the South and West, where many newcomers settled.",
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE effect of post-1965 immigration on American politics.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one political effect, such as parties courting Hispanic and Asian voters or the shift of House seats to the South and West.",
+     "notEarned": "Naming an effect with no explanation, or describing a cause instead, does not earn the point.",
+     "points": 1
+    }
+   ]
+  }
+ ],
+ "pool": "practice",
+ "reasoning": "causation",
+ "saq_slot": 1,
+ "skills": [
+  "1.A",
+  "2.A"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, Topic 9.5; 5 Steps 2024 Ch. 29/30; Princeton Review Ch. 13. Secondary account paraphrased from the grounding books (Princeton Review Ch. 13; Barron's Premium 2027 Ch. 11).",
+ "status": "final",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Secondary account paraphrased from the grounding books (Princeton Review Ch. 13; Barron's Premium 2027 Ch. 11).",
+  "text": "Paraphrase of a historian's account: The Immigration and Nationality Act of 1965 ended the national-origins quotas that had favored Europe since the 1920s. Its authors expected the flow to stay mostly European, but the end of the quotas and family reunification opened the door wider than expected. By 2000, the foreign-born population had risen from about 10 million to 31 million, and just over half of the foreign-born had been born in Latin America. Immigration, once a small share of population growth, now accounted for about a third of it."
+ },
+ "stimulus_set": null,
+ "themes": [
+  "MIG",
+  "WXT"
+ ],
+ "topics": [
+  "9.5"
+ ],
+ "totalPoints": 3,
+ "type": "saq",
+ "unit": 9
+}

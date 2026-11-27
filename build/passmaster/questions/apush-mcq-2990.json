@@ -1,0 +1,77 @@
+{
+ "answerKey": "C",
+ "difficulty": 3,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "Prosperity and a New World Order (1988-2000)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "The Clinton Presidency (1993-2001)"
+   }
+  ],
+  "primary_sources": [
+   "OMB Historical Tables, Table 1.1 (federal surplus/deficit by fiscal year)"
+  ]
+ },
+ "id": "apush-mcq-2990",
+ "lesson": "apush-u9-l5",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Too much revenue would enlarge a surplus, not end it. Background: revenue fell after the boom ended.",
+   "text": "The technology boom produced far too much federal revenue for the government to spend"
+  },
+  {
+   "key": "B",
+   "misconception": "Background: Congress cut taxes in 2001 and 2003, and military spending rose with the wars in Afghanistan and Iraq.",
+   "text": "Congress raised taxes sharply while cutting military spending"
+  },
+  {
+   "key": "C",
+   "text": "Tax cuts reduced revenue while wars in Afghanistan and Iraq raised spending"
+  },
+  {
+   "key": "D",
+   "misconception": "The national debt was never repaid. Background: it stood at about 6 trillion dollars in 2002.",
+   "text": "The federal government repaid the entire national debt by 2002"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Too much revenue would enlarge a surplus, not end it. Background: revenue fell after the boom ended.",
+  "B": "Background: Congress cut taxes in 2001 and 2003, and military spending rose with the wars in Afghanistan and Iraq.",
+  "C": "The table shows a 236 billion dollar surplus in 2000 turning into a 158 billion dollar deficit by 2002, as revenue fell and war spending rose.",
+  "D": "Background: the national debt stood at about 6 trillion dollars in 2002. It was never repaid.",
+  "general": "1. Compare the two ends of the table: a 236 billion dollar surplus in 2000, a 158 billion dollar deficit in 2002.\n2. A swing that large needs changes on both sides of the ledger.\n3. Background: Congress cut taxes in 2001 and 2003, which reduced revenue, while the wars in Afghanistan and Iraq raised military spending.\n4. Background: the technology boom also ended, so the fast revenue growth of the late 1990s stopped.\nRemember: when a balance flips fast, look for a cause on each side of the balance."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "3.D",
+  "5.B"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "5 Steps 2024 Ch. 29; Princeton Review Ch. 13, The Clinton Presidency (1993-2001). Budget data: OMB Historical Tables, Table 1.1.",
+ "status": "final",
+ "stem": "Which of the following most directly explains why the surpluses disappeared after 2001?",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Data: Office of Management and Budget, Historical Tables, Table 1.1.",
+  "text": "Data table: Federal budget surplus or deficit, selected fiscal years, from the Office of Management and Budget Historical Tables.\n\n| Fiscal year | Surplus (+) or deficit (-) |\n| 1992 | -$290 billion |\n| 1997 | -$22 billion |\n| 1998 | +$69 billion |\n| 2000 | +$236 billion |\n| 2002 | -$158 billion |"
+ },
+ "stimulus_set": "surplus-1990s",
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "topics": [
+  "9.7"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

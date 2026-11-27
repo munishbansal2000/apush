@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-2887",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 9,
+ "topics": [
+  "9.2"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "status": "final",
+ "lesson": "apush-u9-l1",
+ "source": "original; stimulus from the shared image pool or paraphrased from the grounding books",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "B. The Deepening of Partisanship in the Twenty-first Century"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 31",
+    "section": "Tumultuous Years: The Trump and Biden Presidencies (2017-2022)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Recent Trends"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stem": "Which of the following best describes the central themes of Donald Trump's 2016 campaign?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Immigration, border security, and trade deals"
+  },
+  {
+   "key": "B",
+   "text": "Expanding the Great Society and raising taxes on corporations",
+   "misconception": "Trump campaigned against big government and for tax cuts, not for expanding Great Society programs."
+  },
+  {
+   "key": "C",
+   "text": "Abolishing the Electoral College and the Senate",
+   "misconception": "Trump never proposed abolishing the Electoral College or the Senate; he won through the Electoral College."
+  },
+  {
+   "key": "D",
+   "text": "Withdrawing the United States from the United Nations at once",
+   "misconception": "Trump criticized international institutions but never made immediate withdrawal from the United Nations a campaign theme."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Background: Trump focused his campaign on immigration, border security, and trade deals, and his rallies rang with calls to build a wall.",
+  "B": "Background: Trump campaigned against big government and for tax cuts, not for expanding Great Society programs.",
+  "C": "Background: Trump never proposed abolishing the Electoral College or the Senate; he won through the Electoral College.",
+  "D": "Background: Trump criticized international institutions but never made immediate withdrawal from the United Nations a campaign theme.",
+  "general": "1. Listen to the rallies in the passage: the chants are about a wall, the speeches about trade.\n2. Background: Trump focused his campaign on immigration, border security, and trade deals.\n3. Background: his blunt style appealed to voters who felt left behind by the loss of manufacturing jobs.\n4. Expanding the Great Society, abolishing the Senate, and leaving the United Nations were never his themes.\nRemember: wall, border, and trade \u2014 that was the 2016 message."
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of Barron's Premium 2027, Chapter 11, 'The Election of Donald Trump (2016).' Post-1929 material is paraphrased, not quoted.",
+  "text": "Paraphrase of an account of the 2016 election: Donald Trump focused his campaign on immigration, border security, and trade deals, and his rallies often rang with calls to build a wall along the Mexican border. His blunt style appealed to voters who felt left behind by the loss of manufacturing jobs and who disliked what they called political correctness. He won the Electoral College while losing the national popular vote."
+ },
+ "stimulus_set": "trump-2016"
+}

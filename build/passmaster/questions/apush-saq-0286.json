@@ -1,0 +1,101 @@
+{
+ "id": "apush-saq-0286",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 9,
+ "topics": [
+  "9.4"
+ ],
+ "skills": [
+  "3.A",
+  "5.B"
+ ],
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "status": "final",
+ "lesson": "apush-u9-l3",
+ "source": "original; stimulus from the shared image pool or paraphrased from the grounding books",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "The Rise of the Service Sector"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "Prosperity and a New World Order (1988\u20132000)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Digital Revolution"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Photograph by Jet Lowe, 1989, Historic American Engineering Record, Library of Congress. Public domain (U.S. federal government work).",
+  "text": "Photograph of an abandoned section of the Bethlehem Steel rail mill in Bethlehem, Pennsylvania, 1989. The mill's roof has been removed, weeds grow in the empty yard, and no workers or machinery are in sight."
+ },
+ "stimulus_set": null,
+ "saq_slot": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one thing the photograph shows about the Bethlehem Steel mill.",
+   "modelAnswer": "The photograph shows the mill abandoned, with weeds growing in the empty yard. No workers or machinery are in sight.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one thing the photograph shows, such as the weeds, or the absence of workers.",
+     "notEarned": "Naming something the photograph does not show, or a vague answer with nothing identified, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain ONE cause of what the photograph shows.",
+   "modelAnswer": "Factories closed as firms moved production abroad to lower-wage countries and as machines replaced workers on the line. Foreign competition undercut American steel, and Bethlehem Steel's main operations ceased in the 1980s and 1990s.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one cause, such as offshoring, automation, or foreign competition.",
+     "notEarned": "Naming a cause with no explanation, or describing an effect instead, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE effect of the change shown in the photograph.",
+   "modelAnswer": "As factory jobs left the Northeast and Midwest, people and political power shifted to the Sun Belt. The loss also fed resentment that powered later populist revolts against globalization.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one effect, such as the shift of people and power to the Sun Belt or the political backlash against globalization.",
+     "notEarned": "Naming an effect with no explanation, or describing a cause instead, does not earn the point."
+    }
+   ]
+  }
+ ],
+ "totalPoints": 3,
+ "figures": [
+  {
+   "id": "fig-apush-saq-0286",
+   "file": "u9/bethlehem-steel-abandoned-mill-1989.jpg",
+   "caption": "Abandoned section of the Bethlehem Steel rail mill, Bethlehem, Pennsylvania, 1989",
+   "alt": "Black-and-white photograph of an abandoned Bethlehem Steel rail mill in 1989, weeds growing in the empty yard",
+   "license": "Public domain (U.S. federal government work; Library of Congress, Historic American Engineering Record)",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Abandoned_section_of_rail_mill_where_the_roof_has_been_removed;_looking_southwest_-_Bethlehem_Steel_Corporation,_South_Bethlehem_Works,_Iron_Foundry,_Along_Lehigh_River,_North_HAER_PA,48-BETH,19A-10.tif"
+  }
+ ]
+}

@@ -1,0 +1,85 @@
+{
+  "answerKey": "C",
+  "difficulty": 2,
+  "figures": [
+    {
+      "alt": "Line chart showing the foreign-born share of the U.S. population rising from 4.7 percent in 1970 to 13.6 percent in 2020",
+      "caption": "Share of the U.S. population that was foreign-born, 1970-2020. Source: U.S. Census Bureau, decennial censuses.",
+      "file": "pt01/fig6-foreign-born-1970-2020.jpg",
+      "id": "fig-apush-mcq-2999",
+      "license": "Chart data: public U.S. government data"
+    }
+  ],
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 11",
+        "section": "Topic 9.5 Migration and Immigration in the 1990s and 2000s"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 29",
+        "section": "Prosperity and a New World Order (1988–2000)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 13"
+      }
+    ],
+    "primary_sources": []
+  },
+  "id": "apush-mcq-2999",
+  "lesson": "apush-u9-l4",
+  "options": [
+    {
+      "key": "A",
+      "misconception": "The Chinese Exclusion Act explains the rising foreign-born share.",
+      "text": "The Chinese Exclusion Act of 1882"
+    },
+    {
+      "key": "B",
+      "misconception": "The Emergency Quota Act explains the rising foreign-born share.",
+      "text": "The Emergency Quota Act of 1921"
+    },
+    {
+      "key": "C",
+      "text": "The Immigration and Nationality Act of 1965"
+    },
+    {
+      "key": "D",
+      "misconception": "The Homestead Act explains the rising foreign-born share.",
+      "text": "The passage of the Homestead Act"
+    }
+  ],
+  "pool": "test",
+  "rationales": {
+    "A": "The Chinese Exclusion Act of 1882 restricted immigration; it did not cause the rise.",
+    "B": "The Emergency Quota Act of 1921 restricted immigration; it did not cause the rise.",
+    "C": "Background: the Immigration and Nationality Act of 1965 ended national-origins quotas and opened immigration from Asia, Latin America, and elsewhere.",
+    "D": "The Homestead Act is land policy, not immigration law.",
+    "general": "1. Ask what changed the rules. A law that ended the old quotas.\n2. Name it. Background: the Immigration and Nationality Act of 1965 ended national-origins quotas.\n3. Test the other laws. The 1882 and 1921 acts restricted immigration, and the Homestead Act is land policy.\n4. Match the cause. The 1965 Act opened immigration from Asia, Latin America, and elsewhere, and the share rose.\nRemember: to explain a trend, find the law that changed the rules behind it."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "2.B"
+  ],
+  "source": "original; stimulus is a chart plotted from U.S. Census Bureau decennial figures (public data)",
+  "status": "final",
+  "stem": "Which of the following most directly helps explain the trend shown in the chart?",
+  "stimulus": {
+    "kind": "chart",
+    "source_note": "U.S. Census Bureau, decennial censuses. Chart plotted from the same figures.",
+    "text": "| Year | Foreign-Born Share |\n| 1970 | 4.7% |\n| 1980 | 6.2% |\n| 1990 | 7.9% |\n| 2000 | 11.1% |\n| 2010 | 12.9% |\n| 2020 | 13.6% |\n\nSource: U.S. Census Bureau, decennial censuses. Simplified for this test."
+  },
+  "stimulus_set": "foreign-born-chart-1970-2020",
+  "themes": [
+    "MIG",
+    "PCE"
+  ],
+  "topics": [
+    "9.5"
+  ],
+  "type": "mcq",
+  "unit": 9
+}

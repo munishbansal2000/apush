@@ -1,0 +1,79 @@
+{
+ "answerKey": "C",
+ "difficulty": 3,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.5 Migration and Immigration, 1980 to the Present"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 30",
+    "section": "Threat of Terrorism, Increase of Presidential Power, and Economic Crisis (2001\u20132016)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Changing Demographics"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2948",
+ "lesson": "apush-u9-l4",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Those states lost seats: Pennsylvania, Illinois, Michigan, Ohio, and New York each lost one.",
+   "text": "The Northeast and Midwest gained House seats after the 2020 census"
+  },
+  {
+   "key": "B",
+   "misconception": "The shift ran the other way, toward the South and West.",
+   "text": "House seats shifted from the South to the Northeast"
+  },
+  {
+   "key": "C",
+   "text": "Political power shifted toward the South and West after the 2020 census"
+  },
+  {
+   "key": "D",
+   "misconception": "California lost a House seat for the first time, despite still growing.",
+   "text": "California gained seats because its population grew fastest"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The losing column is full of Northeast and Midwest states.",
+  "B": "The gaining states are Texas, Florida, and other Southern and Western states.",
+  "C": "Every gaining state sits in the South or West, while every losing state except California sits in the Northeast or Midwest. The seat count followed the population.",
+  "D": "Background: California grew more slowly than the country as a whole, so it lost a seat for the first time.",
+  "general": "1. Sort the table by region. Gainers: Texas, Florida, North Carolina, Montana, Oregon, Colorado.\n2. Losers: Pennsylvania, Illinois, Michigan, Ohio, New York, West Virginia, plus California.\n3. The gainers cluster in the South and West, the losers in the Northeast and Midwest.\n4. House seats follow population, so the map of seats follows the map of people.\nRemember: reapportionment moves seats the same way people move."
+ },
+ "reasoning": "continuity-change",
+ "skills": [
+  "3.A"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, Topic 9.5; 5 Steps 2024 Ch. 29/30; Princeton Review Ch. 13. U.S. Census Bureau, 2020 apportionment results, as summarized in Barron's Premium 2027, Chapter 11.",
+ "status": "final",
+ "stem": "Which pattern in the table best describes the change after the 2020 census?",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "U.S. Census Bureau, 2020 apportionment results, as summarized in Barron's Premium 2027, Chapter 11.",
+  "text": "| 2020 census reapportionment | Change in House seats |\n| Texas | +2 |\n| North Carolina, Florida, Montana, Oregon, Colorado | +1 each |\n| Pennsylvania, Illinois, Michigan, Ohio, New York, West Virginia | \u22121 each |\n| California | \u22121 (first loss ever) |\n\nSource: U.S. Census Bureau, 2020 apportionment results, as summarized in Barron's AP U.S. History Premium, 2027, Chapter 11. Simplified for this test."
+ },
+ "stimulus_set": "sunbelt-apportionment",
+ "themes": [
+  "MIG",
+  "GEO"
+ ],
+ "topics": [
+  "9.5"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

@@ -1,0 +1,87 @@
+{
+ "answerKey": "D",
+ "difficulty": 3,
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2960",
+   "file": "u9/pr25e-ch13-q11.jpg",
+   "caption": "The Pentagon after the September 11, 2001 attacks, Arlington, Virginia",
+   "alt": "Aerial view of the Pentagon with one wing burned out, cranes and fire trucks at the wreckage, and a large American flag hanging from the standing wall",
+   "license": "Public domain (U.S. federal government work; U.S. Air Force photograph)",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/16/Pentagon_9-11.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.6 Defining America's Role in the World in the 21st Century"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 30",
+    "section": "Threat of Terrorism, Increase of Presidential Power, and Economic Crisis (2001-2016)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "America and the War on Terror"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2960",
+ "lesson": "apush-u9-l5",
+ "options": [
+  {
+   "key": "A",
+   "text": "The United States signed a new trade agreement with Canada and Mexico",
+   "misconception": "The trade deal with Canada and Mexico was renegotiated in 2020, years later and for trade reasons."
+  },
+  {
+   "key": "B",
+   "text": "Congress passed a law limiting the president to two terms",
+   "misconception": "The two-term limit comes from the Twenty-second Amendment, ratified in 1951."
+  },
+  {
+   "key": "C",
+   "text": "The United States withdrew from the United Nations",
+   "misconception": "The United States never withdrew from the United Nations."
+  },
+  {
+   "key": "D",
+   "text": "The United States began a long war in Afghanistan against al-Qaeda"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Background: the trade deal with Canada and Mexico was renegotiated in 2020 for trade reasons, years after the attacks.",
+  "B": "Background: the two-term limit is the Twenty-second Amendment, ratified in 1951, long before 2001.",
+  "C": "Background: the United States stayed in the United Nations after 2001. It did not withdraw.",
+  "D": "Background: within a month of the attacks, the United States invaded Afghanistan to overthrow the Taliban and hunt al-Qaeda, starting a war that lasted twenty years.",
+  "general": "1. Look for a change in where American power went after the attacks.\n2. Background: after the attacks, the United States sent forces to Afghanistan within weeks.\n3. Background: that campaign lasted twenty years, through four presidencies, which shows a lasting shift, not a single strike.\n4. Trade deals, term limits, and the United Nations do not show that shift.\nRemember: a lasting change in focus shows up as a lasting commitment, not a single event."
+ },
+ "reasoning": "continuity-change",
+ "skills": [
+  "3.B"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, Topic 9.6; 5 Steps 2024 Ch. 30; Princeton Review Ch. 13. Photograph: U.S. Air Force, September 11, 2001, public domain.",
+ "status": "final",
+ "stem": "Which development best shows that the September 11 attacks changed the focus of United States foreign policy?",
+ "stimulus": {
+  "kind": "mixed",
+  "source_note": "Photograph by the U.S. Air Force, September 11, 2001, Arlington, Virginia. Public domain (U.S. federal government work). Account paraphrased from the grounding books (Barron's Premium 2027 Ch. 11, Topic 9.6; 5 Steps 2024 Ch. 30).",
+  "text": "Photograph of the Pentagon in Arlington, Virginia, after the September 11, 2001 attacks: one wing is a burned-out ruin, cranes and fire trucks work around the wreckage, and a large American flag hangs from the part of the building still standing.\n\nParaphrase of a secondary account: On the morning of September 11, 2001, nineteen hijackers linked to the al-Qaeda network seized four passenger planes. Two planes struck the twin towers of the World Trade Center in New York City, one struck the Pentagon, and a fourth crashed in a field near Shanksville, Pennsylvania, after passengers fought the hijackers. Nearly 3,000 people were killed."
+ },
+ "stimulus_set": "pentagon-911",
+ "themes": [
+  "WOR"
+ ],
+ "topics": [
+  "9.6"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

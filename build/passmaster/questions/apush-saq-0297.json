@@ -1,0 +1,92 @@
+{
+ "difficulty": 3,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "The Housing Crisis and the Great Recession"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 30",
+    "section": "Threat of Terrorism, Increase of Presidential Power, and Economic Crisis (2001-2016)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Recent Trends"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-saq-0297",
+ "lesson": "apush-u9-l5",
+ "parts": [
+  {
+   "modelAnswer": "Unemployment was highest in 2010, when the annual average rate reached 9.6 percent. The rate had risen every year from 4.6 percent in 2007.",
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify the year in which unemployment was highest in the table.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for identifying 2010 as the year with the highest unemployment rate in the table.",
+     "points": 1,
+     "notEarned": "Naming any other year, or a year with no rate given, does not earn the point."
+    }
+   ]
+  },
+  {
+   "modelAnswer": "The housing bubble burst in 2007, and borrowers with risky subprime mortgages defaulted as foreclosures spread. Banks holding the bundled loans cut back on lending, businesses laid off workers, and unemployment rose.",
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain ONE cause of the rise in unemployment shown in the table.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one cause of the rise, such as the housing collapse, subprime mortgage defaults, or banks cutting back on lending.",
+     "points": 1,
+     "notEarned": "Naming a cause with no explanation, or describing a government response instead, does not earn the point."
+    }
+   ]
+  },
+  {
+   "modelAnswer": "President Obama signed the American Recovery and Reinvestment Act in 2009, a stimulus of almost 800 billion dollars for infrastructure, schools, and hospitals. The spending aimed to take up the slack left by falling private spending and create jobs.",
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE government response to the rising unemployment.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one government response, such as the 2009 stimulus, the Troubled Asset Relief Program, or the Dodd-Frank Act.",
+     "points": 1,
+     "notEarned": "Naming a response with no explanation, or describing a cause instead, does not earn the point."
+    }
+   ]
+  }
+ ],
+ "pool": "practice",
+ "reasoning": "causation",
+ "saq_slot": 3,
+ "skills": [
+  "2.B",
+  "3.B"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, The Housing Crisis and the Great Recession; 5 Steps 2024 Ch. 30; Princeton Review Ch. 13. Unemployment data: BLS Current Population Survey annual averages, series LNU04000000.",
+ "status": "final",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Data: Bureau of Labor Statistics, Current Population Survey, annual averages, series LNU04000000.",
+  "text": "Data table: United States unemployment rate, annual average, from the Bureau of Labor Statistics Current Population Survey.\n\n| Year | Unemployment rate |\n| 2007 | 4.6% |\n| 2008 | 5.8% |\n| 2009 | 9.3% |\n| 2010 | 9.6% |"
+ },
+ "stimulus_set": null,
+ "themes": [
+  "WXT"
+ ],
+ "topics": [
+  "9.6"
+ ],
+ "totalPoints": 3,
+ "type": "saq",
+ "unit": 9
+}

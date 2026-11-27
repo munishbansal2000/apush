@@ -1,0 +1,78 @@
+{
+ "answerKey": "D",
+ "difficulty": 2,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.6 Defining America's Role in the World in the 21st Century"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 30",
+    "section": "Threat of Terrorism, Increase of Presidential Power, and Economic Crisis (2001-2016)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "America and the War on Terror"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2964",
+ "lesson": "apush-u9-l5",
+ "options": [
+  {
+   "key": "A",
+   "text": "Iraq had attacked the United States on September 11, 2001",
+   "misconception": "The attacks were carried out by al-Qaeda hijackers, not by Iraq."
+  },
+  {
+   "key": "B",
+   "text": "Iraq had refused to sell oil to the United States",
+   "misconception": "The account gives no oil reason. The stated reason was weapons of mass destruction."
+  },
+  {
+   "key": "C",
+   "text": "Iraq had invaded Kuwait for a second time",
+   "misconception": "Iraq invaded Kuwait in 1990, not in 2003."
+  },
+  {
+   "key": "D",
+   "text": "Iraq was building weapons of mass destruction"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The account says the administration suggested a link between Hussein and the attacks, but the attackers were al-Qaeda hijackers, not Iraq.",
+  "B": "The account gives no oil reason. The stated reason was weapons of mass destruction.",
+  "C": "Background: Iraq invaded Kuwait in 1990, and a coalition drove it out in 1991. No second invasion happened in 2003.",
+  "D": "The account says Bush claimed Hussein was building weapons of mass destruction that could threaten the United States and its allies.",
+  "general": "1. Ask what Bush said, not what later proved true. The account names one stated reason: weapons of mass destruction.\n2. The administration also suggested a link to the September 11 attacks, but that was a suggestion, not the main stated reason.\n3. Oil sales and a second invasion of Kuwait appear nowhere in the account.\n4. The answer is the reason Bush gave at the time, even though no such weapons were later found.\nRemember: a stated reason for a war is what leaders claimed at the time, not what later evidence showed."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "1.A"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, Topic 9.6; 5 Steps 2024 Ch. 30; Princeton Review Ch. 13.",
+ "status": "final",
+ "stem": "According to the account, what reason did President Bush give for invading Iraq in 2003?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Secondary account paraphrased from the grounding books (Barron's Premium 2027 Ch. 11, Topic 9.6; 5 Steps 2024 Ch. 30; Princeton Review Ch. 13).",
+  "text": "Paraphrase of a secondary account: In March 2003, the United States invaded Iraq in Operation Iraqi Freedom to remove President Saddam Hussein from power. President George W. Bush said Hussein was building weapons of mass destruction that could threaten the United States and its allies, and his administration also suggested a link between Hussein and the September 11 attacks. American forces quickly defeated the Iraqi army and overthrew Hussein.\n\nNo weapons of mass destruction were found, and no link between Hussein and the September 11 attacks was uncovered. Building a stable government proved far harder than winning the war: insurgents attacked American forces, and fighting broke out between Iraq's Sunni and Shia groups. The war grew unpopular at home and strained relations with some European allies. In January 2002, Bush had named Iraq, Iran, and North Korea an axis of evil, and that fall he set out a new doctrine of preemptive strikes against nations seen as threats."
+ },
+ "stimulus_set": "iraq-war",
+ "themes": [
+  "WOR"
+ ],
+ "topics": [
+  "9.6"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-2936",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 9,
+ "topics": [
+  "9.4"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 2,
+ "status": "final",
+ "lesson": "apush-u9-l3",
+ "source": "original; stimulus from the shared image pool or paraphrased from the grounding books",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "The Great Recession"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "Prosperity and a New World Order (1988\u20132000)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Digital Revolution"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stem": "In which year shown was unemployment highest?",
+ "options": [
+  {
+   "key": "A",
+   "text": "2000",
+   "misconception": "Unemployment in 2000 was 4.0 percent, the lowest figure in the table."
+  },
+  {
+   "key": "B",
+   "text": "1990",
+   "misconception": "Unemployment in 1990 was 5.6 percent, well below the highest figure."
+  },
+  {
+   "key": "C",
+   "text": "2008",
+   "misconception": "Unemployment in 2008 was 5.8 percent, well below the highest figure."
+  },
+  {
+   "key": "D",
+   "text": "1982"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "A": "Unemployment in 2000 was 4.0 percent, the lowest figure in the table.",
+  "B": "Unemployment in 1990 was 5.6 percent, well below the highest figure.",
+  "C": "Unemployment in 2008 was 5.8 percent, well below the highest figure.",
+  "D": "The table shows 9.7 percent in 1982, higher than 9.6 percent in 2010 and every other year shown.",
+  "general": "1. Scan the column for the biggest number: 9.7 percent.\n2. Check its year: 1982.\n3. Watch the near miss: 2010 reached 9.6 percent, just one tenth of a point lower, so read both numbers.\n4. The lowest year, 2000, sits at the other end at 4.0 percent.\nRemember: in a table, the biggest number wins \u2014 but check the close second."
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "U.S. Bureau of Labor Statistics, Current Population Survey, annual averages (series LNU04000000).",
+  "text": "| Year | Unemployment rate |\n| 1980 | 7.2% |\n| 1982 | 9.7% |\n| 1990 | 5.6% |\n| 2000 | 4.0% |\n| 2008 | 5.8% |\n| 2009 | 9.3% |\n| 2010 | 9.6% |\n\nSource: U.S. Bureau of Labor Statistics, Current Population Survey (annual averages). Simplified for this test."
+ },
+ "stimulus_set": "unemployment-table-1980-2010",
+ "figures": null
+}

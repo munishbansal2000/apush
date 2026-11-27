@@ -1,0 +1,91 @@
+{
+ "difficulty": 4,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.5 Migration and Immigration, 1980 to the Present"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "Prosperity and a New World Order (1988\u20132000)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Changing Demographics"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-leq-0096",
+ "lesson": "apush-u9-l4",
+ "modelOutline": "Thesis: Immigration was the main engine of the South and West's rise, since newcomers from Latin America and Asia settled heavily there, but internal migration shared the credit, so immigration caused most, not all, of the shift.\nContext: After 1965, immigration rose sharply and its sources shifted from Europe to Latin America and Asia, while the Sun Belt's defense industries, cheap land, and air conditioning had already been drawing Americans south and west since World War II.\nEvidence of immigration: Legal immigration rose from 4.4 million in the 1970s to more than 10 million in each decade after 2000, with most newcomers from Latin America and Asia settling in California, Texas, Florida, and Arizona; the Hispanic share of the population rose from 6.4 percent in 1980 to 18.7 percent in 2020.\nEvidence of the shift: After the 2020 census, Texas gained two House seats and Florida, North Carolina, Montana, Oregon, and Colorado each gained one, while the Northeast and Midwest lost seats, shifting Electoral College weight south and west.\nEvidence of the other engine: Retirees moved to Florida, workers followed defense and service jobs to the Sun Belt, and California even lost a House seat in 2020 as its growth slowed, showing that internal migration mattered too.\nComplexity: Immigration and internal migration reinforced each other, since newcomers filled Sun Belt jobs and their children added to the region's growth, but the shift began before the immigration wave peaked, so immigration sped up a move already under way.",
+ "pool": "practice",
+ "prompt": "Evaluate the extent to which immigration caused the shift of political power toward the South and West between 1980 and 2020.",
+ "reasoning": "causation",
+ "rubric": [
+  {
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim does not earn the point.",
+   "points": 1,
+   "skill": "6.A"
+  },
+  {
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt.",
+   "notEarned": "A sentence of background with no link to the argument does not earn the point.",
+   "points": 1,
+   "skill": "4.B"
+  },
+  {
+   "criterion": "Evidence (first point): earns the point for describing specific and relevant examples supporting one side of the argument.",
+   "notEarned": "General statements with no specific example do not earn the point.",
+   "points": 1,
+   "skill": "6.B"
+  },
+  {
+   "criterion": "Evidence (second point): earns the point for describing specific and relevant examples supporting the other side of the argument or the limits of the first.",
+   "notEarned": "Repeating the same example, or naming a limit with no specific detail, does not earn the point.",
+   "points": 1,
+   "skill": "6.B"
+  },
+  {
+   "criterion": "Analysis and reasoning: earns the point for using historical reasoning to explain relationships among pieces of evidence, linking examples to the thesis rather than listing them.",
+   "notEarned": "Listing examples with no explanation of how they support the argument does not earn the point.",
+   "points": 1,
+   "skill": "6.C"
+  },
+  {
+   "criterion": "Analysis and reasoning (complexity): earns the point for a complex argument, such as corroborating, qualifying, or modifying the thesis with diverse evidence.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point.",
+   "points": 1,
+   "skill": "6.D"
+  }
+ ],
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "source": "original; prompt written for this question",
+ "source_notes": "Barron's Premium 2027 Ch. 11, Topic 9.5; 5 Steps 2024 Ch. 29/30; Princeton Review Ch. 13.",
+ "status": "final",
+ "stimulus": {
+  "kind": "none",
+  "source_note": "No stimulus; LEQ prompt only."
+ },
+ "stimulus_set": null,
+ "themes": [
+  "MIG",
+  "GEO",
+  "PCE"
+ ],
+ "topics": [
+  "9.5"
+ ],
+ "totalPoints": 6,
+ "type": "leq",
+ "unit": 9
+}

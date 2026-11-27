@@ -1,0 +1,87 @@
+{
+ "answerKey": "C",
+ "difficulty": 2,
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2958",
+   "file": "u9/pr25e-ch13-q11.jpg",
+   "caption": "The Pentagon after the September 11, 2001 attacks, Arlington, Virginia",
+   "alt": "Aerial view of the Pentagon with one wing burned out, cranes and fire trucks at the wreckage, and a large American flag hanging from the standing wall",
+   "license": "Public domain (U.S. federal government work; U.S. Air Force photograph)",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/16/Pentagon_9-11.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.6 Defining America's Role in the World in the 21st Century"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 30",
+    "section": "Threat of Terrorism, Increase of Presidential Power, and Economic Crisis (2001-2016)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "America and the War on Terror"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2958",
+ "lesson": "apush-u9-l5",
+ "options": [
+  {
+   "key": "A",
+   "text": "A military base destroyed by an earthquake in Virginia",
+   "misconception": "The damage came from a hijacked plane, not an earthquake."
+  },
+  {
+   "key": "B",
+   "text": "A factory fire that led to new workplace safety laws",
+   "misconception": "The building is the Pentagon, hit in a terrorist attack, not a factory fire."
+  },
+  {
+   "key": "C",
+   "text": "The Pentagon after a plane struck it on September 11, 2001"
+  },
+  {
+   "key": "D",
+   "text": "A building demolished to make room for a new highway",
+   "misconception": "The building was damaged in an attack, not torn down for a road."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "No earthquake is involved here. The damage came from a hijacked plane that struck the Pentagon.",
+  "B": "The building is the Pentagon, not a factory. No safety law followed from this damage.",
+  "C": "The photograph shows the Pentagon with one wing burned out and rescue crews at work. The account ties that damage to the plane that struck the Pentagon on September 11, 2001.",
+  "D": "Nothing in the photograph shows a demolition crew clearing land for a road. The wreckage came from an attack.",
+  "general": "1. Start with the building. The photograph shows a large government building with one wing in ruins and a flag hanging from the part still standing.\n2. The account names the building as the Pentagon and the cause as a hijacked plane on September 11, 2001.\n3. The cranes and fire trucks are rescue and cleanup crews, not builders or demolition crews.\n4. An earthquake, a factory fire, and a highway project all miss the cause the account gives.\nRemember: match the damage in a photograph to the event the account describes."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "1.A"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, Topic 9.6; 5 Steps 2024 Ch. 30; Princeton Review Ch. 13. Photograph: U.S. Air Force, September 11, 2001, public domain.",
+ "status": "final",
+ "stem": "Which of the following best describes what the photograph shows?",
+ "stimulus": {
+  "kind": "mixed",
+  "source_note": "Photograph by the U.S. Air Force, September 11, 2001, Arlington, Virginia. Public domain (U.S. federal government work). Account paraphrased from the grounding books (Barron's Premium 2027 Ch. 11, Topic 9.6; 5 Steps 2024 Ch. 30).",
+  "text": "Photograph of the Pentagon in Arlington, Virginia, after the September 11, 2001 attacks: one wing is a burned-out ruin, cranes and fire trucks work around the wreckage, and a large American flag hangs from the part of the building still standing.\n\nParaphrase of a secondary account: On the morning of September 11, 2001, nineteen hijackers linked to the al-Qaeda network seized four passenger planes. Two planes struck the twin towers of the World Trade Center in New York City, one struck the Pentagon, and a fourth crashed in a field near Shanksville, Pennsylvania, after passengers fought the hijackers. Nearly 3,000 people were killed."
+ },
+ "stimulus_set": "pentagon-911",
+ "themes": [
+  "WOR"
+ ],
+ "topics": [
+  "9.6"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

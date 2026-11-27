@@ -1,0 +1,91 @@
+{
+ "id": "apush-saq-0278",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 9,
+ "topics": [
+  "9.3"
+ ],
+ "skills": [
+  "2.A",
+  "2.B"
+ ],
+ "themes": [
+  "WXT",
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "status": "final",
+ "lesson": "apush-u9-l2",
+ "source": "original; stimulus from the shared image pool or paraphrased from the grounding books",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "A. Soviet-American Relations from D\u00e9tente to Confrontation"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 28",
+    "section": "Decline and Rebirth (1968-1988)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Foreign Policy Under Reagan"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of President Ronald Reagan's Brandenburg Gate address, June 12, 1987. Post-1929 material is paraphrased, not quoted.",
+  "text": "Paraphrase of President Ronald Reagan's address at the Brandenburg Gate, Berlin, June 12, 1987: Speaking beside the Berlin Wall, Reagan challenged Soviet leader Mikhail Gorbachev to prove his commitment to openness by removing the Wall. Reagan described the Wall as a scar across the city and a test of whether Moscow truly sought freedom for Eastern Europe."
+ },
+ "stimulus_set": null,
+ "saq_slot": 2,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Briefly describe the historical situation in which Reagan gave this address.",
+   "modelAnswer": "Reagan spoke in 1987, two years into Gorbachev's reforms, when Soviet-American relations were thawing after the harsh confrontation of his first term. The Berlin Wall still divided the city, and Gorbachev's talk of openness had raised hopes that the division of Europe might finally end.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for describing the situation, such as Gorbachev's reforms, the thaw after early-1980s confrontation, and the Wall still dividing Berlin in 1987.",
+     "notEarned": "Naming the year or the place with no description of the situation does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain ONE reason Reagan chose to challenge Gorbachev publicly at the Wall.",
+   "modelAnswer": "Reagan wanted to test whether Gorbachev's reforms were real or only words, and a public challenge made the test visible to the whole world. He also wanted to rally Western support by framing the Wall as a moral symbol, not just a border.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one reason, such as testing Gorbachev's sincerity, rallying Western opinion, or using the Wall as a moral symbol of the Cold War.",
+     "notEarned": "Naming a reason with no explanation, or describing the speech's effects rather than its purpose, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE way the address reflected a change in Reagan's approach to the Soviet Union.",
+   "modelAnswer": "In his first term Reagan had denounced the Soviet Union as an evil empire and refused serious negotiation. By 1987 he was speaking directly to Gorbachev as a partner, treating the Soviet leader as someone who could be persuaded rather than only confronted.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one change, such as the move from denunciation to direct engagement, or from refusing negotiation to treating Gorbachev as a partner.",
+     "notEarned": "Describing Reagan's first-term approach with no change identified does not earn the point."
+    }
+   ]
+  }
+ ],
+ "totalPoints": 3
+}

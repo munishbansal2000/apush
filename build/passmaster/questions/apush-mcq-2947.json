@@ -1,0 +1,79 @@
+{
+ "answerKey": "B",
+ "difficulty": 3,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.5 Migration and Immigration, 1980 to the Present"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 30",
+    "section": "Threat of Terrorism, Increase of Presidential Power, and Economic Crisis (2001\u20132016)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Changing Demographics"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2947",
+ "lesson": "apush-u9-l4",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Democrats and Republicans still dominate national elections today.",
+   "text": "The end of the two-party system in national elections"
+  },
+  {
+   "key": "B",
+   "text": "Both parties competing harder for Hispanic voters in national elections"
+  },
+  {
+   "key": "C",
+   "misconception": "No such amendment exists; each citizen gets one vote.",
+   "text": "A constitutional amendment giving new citizens extra votes"
+  },
+  {
+   "key": "D",
+   "misconception": "Immigration became more central to campaigns, not less.",
+   "text": "The removal of immigration from presidential campaigns"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Background: the two-party system survived the demographic change intact.",
+  "B": "Background: as Hispanics grew to nearly a fifth of the population, their votes mattered more in close elections. Both parties began courting Hispanic voters openly.",
+  "C": "Background: the Constitution gives every citizen one vote, and no amendment changed that.",
+  "D": "Background: immigration stayed at the center of presidential campaigns, from 2016 onward.",
+  "general": "1. Turn the numbers into votes. Nearly a fifth of the population is a large voting bloc.\n2. In close elections, a bloc that size can decide states, so parties chase it.\n3. Background: the books note both parties openly courting Hispanic voters as the population grew.\n4. The other choices describe changes that never happened: no third party takeover, no extra votes, no fading issue.\nRemember: when a group grows, ask who wants its votes and why."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "5.A"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, Topic 9.5; 5 Steps 2024 Ch. 29/30; Princeton Review Ch. 13. U.S. Census Bureau, decennial censuses (public data).",
+ "status": "final",
+ "stem": "The growth shown in the table most directly contributed to which political change?",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "U.S. Census Bureau, decennial censuses (public data).",
+  "text": "| Year | Hispanic share of the U.S. population |\n| 1980 | 6.4% |\n| 1990 | 9.0% |\n| 2000 | 12.5% |\n| 2010 | 16.3% |\n| 2020 | 18.7% |\n\nSource: U.S. Census Bureau, decennial censuses. Simplified for this test."
+ },
+ "stimulus_set": "hispanic-share",
+ "themes": [
+  "MIG",
+  "PCE"
+ ],
+ "topics": [
+  "9.5"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

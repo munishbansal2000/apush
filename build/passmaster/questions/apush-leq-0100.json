@@ -1,0 +1,100 @@
+{
+ "difficulty": 4,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "The New Right and the Election of Ronald Reagan"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "The Housing Crisis and the Great Recession"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 28",
+    "section": "Decline and Rebirth (1968-1988)"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 30",
+    "section": "Threat of Terrorism, Increase of Presidential Power, and Economic Crisis (2001-2016)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Recent Trends"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-leq-0100",
+ "lesson": "apush-u9-l5",
+ "modelOutline": "Thesis: Economic change was the most important cause of political change between 1980 and 2020, since each major political turn of the period followed an economic shock or shift, though cultural and foreign-policy causes shaped how that change played out.\nContext: The postwar decades had paired a strong industrial economy with a broad liberal consensus, and the stagflation of the 1970s broke both the economy and the faith in government that sustained that consensus.\nEvidence of economic causes: Stagflation and the loss of manufacturing jobs fed the conservative turn of 1980, as voters blamed government for inflation, unemployment, and factory closures.\nEvidence of economic causes: The technology boom and budget surpluses of the 1990s let Clinton govern from the center, while the Great Recession of 2007-2009 fed the Tea Party on the right and Occupy on the left, and later the populist revolt of 2016.\nEvidence of other causes: Cultural change and foreign policy also drove politics, from the evangelical mobilization behind Reagan to the September 11 attacks, which reordered foreign policy and expanded federal power.\nComplexity: Economic change set the terms of each political turn, but it worked through cultural and political channels, so the same economic shock produced opposite movements on the left and the right.",
+ "pool": "practice",
+ "prompt": "Evaluate the extent to which economic change was the most important cause of political change in the United States between 1980 and 2020.",
+ "reasoning": "causation",
+ "rubric": [
+  {
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim does not earn the point.",
+   "points": 1,
+   "skill": "6.A"
+  },
+  {
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt.",
+   "notEarned": "A sentence of background with no link to the argument does not earn the point.",
+   "points": 1,
+   "skill": "4.B"
+  },
+  {
+   "criterion": "Evidence (first point): earns the point for describing specific and relevant examples supporting one side of the argument.",
+   "notEarned": "General statements with no specific example do not earn the point.",
+   "points": 1,
+   "skill": "6.B"
+  },
+  {
+   "criterion": "Evidence (second point): earns the point for describing specific and relevant examples supporting the other side of the argument or the limits of the first.",
+   "notEarned": "Repeating the same example, or naming a limit with no specific detail, does not earn the point.",
+   "points": 1,
+   "skill": "6.B"
+  },
+  {
+   "criterion": "Analysis and reasoning: earns the point for using historical reasoning to explain relationships among pieces of evidence, linking examples to the thesis rather than listing them.",
+   "notEarned": "Listing examples with no explanation of how they support the argument does not earn the point.",
+   "points": 1,
+   "skill": "6.C"
+  },
+  {
+   "criterion": "Analysis and reasoning (complexity): earns the point for a complex argument, such as corroborating, qualifying, or modifying the thesis with diverse evidence.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point.",
+   "points": 1,
+   "skill": "6.D"
+  }
+ ],
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "source": "original; prompt written for this question",
+ "source_notes": "Barron's Premium 2027 Ch. 11; 5 Steps 2024 Ch. 28, 30; Princeton Review Ch. 13.",
+ "status": "final",
+ "stimulus": {
+  "kind": "none",
+  "source_note": "No stimulus; LEQ prompt only."
+ },
+ "stimulus_set": null,
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "topics": [
+  "9.7"
+ ],
+ "totalPoints": 6,
+ "type": "leq",
+ "unit": 9
+}

@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-2899",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 9,
+ "topics": [
+  "9.3"
+ ],
+ "skills": [
+  "5.A"
+ ],
+ "themes": [
+  "WOR",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "status": "final",
+ "lesson": "apush-u9-l2",
+ "source": "original; stimulus from the shared image pool or paraphrased from the grounding books",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "B. The Fall of the Berlin Wall and the End of the Cold War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 28",
+    "section": "Decline and Rebirth (1968-1988)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Foreign Policy Under Reagan"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stem": "According to the passage, how did the Chernobyl disaster affect Gorbachev's drive toward openness?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The disaster exposed the costs of secrecy and pushed Gorbachev toward greater openness"
+  },
+  {
+   "key": "B",
+   "text": "The disaster destroyed the Soviet economy in a single day",
+   "misconception": "The economy was already stagnating for years; one accident did not destroy it in a day."
+  },
+  {
+   "key": "C",
+   "text": "The disaster convinced Gorbachev to abandon all reforms",
+   "misconception": "Gorbachev did not abandon his reforms after Chernobyl; the disaster pushed him further toward openness."
+  },
+  {
+   "key": "D",
+   "text": "The disaster was caused by American spies working inside the Soviet Union",
+   "misconception": "Chernobyl was a reactor accident, not sabotage; no American spies caused it."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "The disaster's cover-up showed the public how little it could trust official information, and the costs of secrecy became the case for openness. Background: the reforms were already underway before Chernobyl (perestroika from 1985); the April 1986 disaster accelerated glasnost rather than originating it.",
+  "B": "Soviet economic troubles were decades in the making. Background: stagnation, not one accident, strained the economy.",
+  "C": "The disaster did the opposite of ending the reforms: it showed Gorbachev that secrecy itself was dangerous. Background: he had launched perestroika in 1985 and glasnost in early 1986, before Chernobyl \u2014 the accident accelerated the opening, it did not start it.",
+  "D": "Chernobyl was a Soviet reactor failure. Background: the explosion came from flaws in the reactor's design and operation.",
+  "general": "1. Place the two events on a timeline: Gorbachev's reforms beginning in 1985, then the Chernobyl explosion in April 1986.\n2. Ask what a nuclear disaster teaches a government about secrecy.\n3. Background: Moscow hid the scale of the accident for days, and the cover-up showed the public how little it could trust official information.\n4. Background: the disaster's cover-up accelerated the move toward openness already underway.\nRemember: a disaster hidden by secrecy became the case for ending secrecy."
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original summary based on Barron's Premium 2027, Chapter 11, and Princeton Review, Chapter 13.",
+  "text": "Original summary of Soviet leader Mikhail Gorbachev's reforms, based on the grounding books: In the mid-1980s Gorbachev launched glasnost, or openness, which loosened censorship and allowed public debate, and perestroika, or restructuring, which introduced limited market practices into the state-run economy. He hoped the reforms would save Soviet communism by making it work better. Instead, openness let long-suppressed complaints pour out, and the reforms shook the Communist Party's control. The April 1986 Chernobyl disaster, which Moscow first hid from its own public, showed how secrecy itself had become dangerous \u2014 and pushed Gorbachev further toward openness."
+ },
+ "stimulus_set": "gorbachev-reforms",
+ "figures": null
+}

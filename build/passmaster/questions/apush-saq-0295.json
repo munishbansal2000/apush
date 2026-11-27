@@ -1,0 +1,92 @@
+{
+ "difficulty": 3,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "The Housing Crisis and the Great Recession"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 30",
+    "section": "Threat of Terrorism, Increase of Presidential Power, and Economic Crisis (2001-2016)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Recent Trends"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-saq-0295",
+ "lesson": "apush-u9-l5",
+ "parts": [
+  {
+   "modelAnswer": "Banks made risky subprime mortgages to borrowers with low credit ratings and bundled them into securities sold across the financial system. When the housing bubble burst, those loans went bad and the losses spread.",
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one cause of the Great Recession.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for identifying one cause, such as subprime mortgages, the bundling of risky loans into securities, or the bursting of the housing bubble.",
+     "points": 1,
+     "notEarned": "Naming something that did not cause the recession, or a vague answer with nothing identified, does not earn the point."
+    }
+   ]
+  },
+  {
+   "modelAnswer": "Banks had bundled risky mortgages into securities sold across the financial system, so the losses traveled far beyond housing. Banks holding those loans cut back on lending, businesses laid off workers, and unemployment more than doubled.",
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain ONE way the housing crisis spread to the wider economy.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one way the crisis spread, such as bundled securities carrying the risk to banks and funds or the lending cutback leading to layoffs.",
+     "points": 1,
+     "notEarned": "Naming a spread with no explanation, or describing a government response instead, does not earn the point."
+    }
+   ]
+  },
+  {
+   "modelAnswer": "Congress passed the Troubled Asset Relief Program in 2008, giving the government up to 700 billion dollars to buy troubled mortgage assets from financial firms. The program aimed to strengthen the banks and restore confidence in the financial system.",
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE government response to the crisis.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one government response, such as the Troubled Asset Relief Program, the 2009 stimulus, or the Dodd-Frank Act.",
+     "points": 1,
+     "notEarned": "Naming a response with no explanation, or describing a cause instead, does not earn the point."
+    }
+   ]
+  }
+ ],
+ "pool": "practice",
+ "reasoning": "causation",
+ "saq_slot": 1,
+ "skills": [
+  "2.A",
+  "3.B"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, The Housing Crisis and the Great Recession; 5 Steps 2024 Ch. 30; Princeton Review Ch. 13. Unemployment data: BLS Current Population Survey annual averages.",
+ "status": "final",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Secondary account paraphrased from the grounding books (Barron's Premium 2027 Ch. 11; 5 Steps 2024 Ch. 30). Data: Bureau of Labor Statistics, Current Population Survey annual averages.",
+  "text": "Paraphrase of a secondary account: In the 2000s, banks made risky subprime mortgages to borrowers with low credit ratings, then bundled those mortgages into securities sold across the financial system. When the housing bubble burst in 2007, borrowers defaulted and foreclosures spread. Banks holding the bundled loans cut back on lending, businesses laid off workers, and unemployment rose from 4.6 percent in 2007 to 9.6 percent in 2010.\n\nIn 2008, Congress passed the Troubled Asset Relief Program, giving the government up to 700 billion dollars to buy troubled mortgage assets from financial firms."
+ },
+ "stimulus_set": null,
+ "themes": [
+  "WXT"
+ ],
+ "topics": [
+  "9.6"
+ ],
+ "totalPoints": 3,
+ "type": "saq",
+ "unit": 9
+}

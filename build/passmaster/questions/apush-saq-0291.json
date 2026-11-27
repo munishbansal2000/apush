@@ -1,0 +1,95 @@
+{
+ "difficulty": 3,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.5 Migration and Immigration, 1980 to the Present"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 30",
+    "section": "Threat of Terrorism, Increase of Presidential Power, and Economic Crisis (2001\u20132016)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Changing Demographics"
+   }
+  ],
+  "primary_sources": [
+   "California Proposition 187 (1994), paraphrased"
+  ]
+ },
+ "id": "apush-saq-0291",
+ "lesson": "apush-u9-l4",
+ "parts": [
+  {
+   "modelAnswer": "Proposition 187 barred people without legal status from public schools and publicly funded health care in California. It also required public employees to check immigration status and report suspected violations.",
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one thing Proposition 187 did.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for identifying one thing Proposition 187 did, such as barring public schooling or health care or requiring status checks by public employees.",
+     "notEarned": "Naming something the measure did not do, or a vague answer with nothing identified, does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "modelAnswer": "Supporters argued that unauthorized immigration strained California's schools and public services. They said denying services would discourage new arrivals and cut public costs.",
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain ONE reason supporters backed Proposition 187.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one reason supporters backed the measure, such as strain on public services or discouraging new unauthorized immigration.",
+     "notEarned": "Naming a reason with no explanation, or describing an effect instead, does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "modelAnswer": "A federal judge ruled most of the measure unconstitutional in 1997, so it was never fully put into effect. The fight over the measure also mobilized Latino voters in California, pushing many toward the Democratic Party.",
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE effect of Proposition 187.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one effect, such as the 1997 court ruling blocking the measure or the mobilization of Latino voters in California.",
+     "notEarned": "Naming an effect with no explanation, or describing a provision instead, does not earn the point.",
+     "points": 1
+    }
+   ]
+  }
+ ],
+ "pool": "practice",
+ "reasoning": "causation",
+ "saq_slot": 2,
+ "skills": [
+  "2.A",
+  "3.B"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, Topic 9.5; 5 Steps 2024 Ch. 29/30; Princeton Review Ch. 13. Paraphrase of a primary source: California Proposition 187, approved by voters November 8, 1994 (59 percent to 41 percent).",
+ "status": "final",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of a primary source: California Proposition 187, approved by voters November 8, 1994 (59 percent to 41 percent).",
+  "text": "Paraphrase of California Proposition 187, a ballot measure approved by California voters in November 1994: The measure barred people without legal immigration status from public schools, publicly funded health care, and other public services in California. It required teachers, health workers, and other public employees to check the immigration status of the people they served and report suspected violations. Supporters said the measure would discourage unauthorized immigration and cut public costs."
+ },
+ "stimulus_set": null,
+ "themes": [
+  "MIG",
+  "PCE"
+ ],
+ "topics": [
+  "9.5"
+ ],
+ "totalPoints": 3,
+ "type": "saq",
+ "unit": 9
+}

@@ -141,6 +141,64 @@ All 17 skill codes must be exercised across the unit's 210 MCQ, with the
 CED's suggested skills honored per topic and the other skills spread so no
 skill code goes untested in the unit.
 
+### Unit 3 per-topic quotas (this tranche, set 2026-11-26)
+
+Unit 3: Period 3, 1754-1800, exam weight 12-15% (the heaviest period
+with Period 5). Same method as section 4: content topics weighted over
+the framing topics (3.1 contextualizing, 3.13 continuity/change
+capstone). DBQ begins in this unit: 17 DBQs, 7 documents each, range
+1754-1980, each DBQ homed in a content topic.
+
+| Topic | Title | MCQ | SAQ | DBQ | LEQ |
+|---|---|---:|---:|---:|---:|
+| 3.1 | Contextualizing Period 3 | 16 | 2 | 0 | 0 |
+| 3.2 | The Seven Years' War (The French and Indian War) | 34 | 3 | 2 | 1 |
+| 3.3 | Taxation Without Representation | 36 | 3 | 2 | 1 |
+| 3.4 | Philosophical Foundations of the American Revolution | 34 | 2 | 1 | 1 |
+| 3.5 | The American Revolution | 38 | 4 | 3 | 2 |
+| 3.6 | The Influence of Revolutionary Ideals | 32 | 3 | 1 | 1 |
+| 3.7 | The Articles of Confederation | 32 | 2 | 1 | 1 |
+| 3.8 | The Constitutional Convention and Debates over Ratification | 36 | 3 | 2 | 1 |
+| 3.9 | The Constitution | 34 | 3 | 1 | 1 |
+| 3.10 | Shaping a New Republic | 34 | 3 | 2 | 1 |
+| 3.11 | Developing an American Identity | 32 | 2 | 1 | 1 |
+| 3.12 | Movement in the Early Republic | 32 | 2 | 1 | 0 |
+| 3.13 | Continuity and Change in Period 3 | 25 | 2 | 0 | 0 |
+| **Total** | | **415** | **34** | **17** | **11** |
+
+Unit 3 total: 477 questions (415 MCQ + 34 SAQ + 17 DBQ + 11 LEQ).
+Question IDs: MCQ 0361-0775, SAQ 0067-0100, DBQ 0001-0017, LEQ 0023-0033.
+Provisional lesson grouping: L1 3.1+3.2, L2 3.3+3.4, L3 3.5+3.6,
+L4 3.7+3.8+3.9, L5 3.10+3.11+3.12+3.13.
+
+### Unit 3 difficulty split (MCQ, 415)
+
+Easy (2) 83 / Medium (3) 145 / Hard (4) 187. Apply the 20/35/45 split
+approximately per topic; topics 3.1 and 3.13 (framing topics) skew
+easier, content topics skew harder. Levels 1 and 5 only for true
+extremes. Honest labels govern — never relabel to hit a quota.
+
+### Unit 3 test-pool assignment (76 MCQ + 4 SAQ + 2 DBQ + 1 LEQ = 83)
+
+- MCQ test by topic: 3.1: 3, 3.2: 6, 3.3: 7, 3.4: 6, 3.5: 7, 3.6: 6,
+  3.7: 6, 3.8: 7, 3.9: 6, 3.10: 6, 3.11: 6, 3.12: 6, 3.13: 4.
+- SAQ test: 4, one per 2027 slot plus one extra — 3.3 slot 1, 3.5 slot 2,
+  3.8 slot 3, 3.10 slot 1.
+- DBQ test: 2, topics 3.5 and 3.8. LEQ test: 1, topic 3.5.
+- The remaining 339 MCQ + 30 SAQ + 15 DBQ + 10 LEQ are practice pool.
+- Correction 2026-11-26: the first Unit 3 draft said 33 SAQ / 3 test SAQ /
+  1 test DBQ. The validator's QUOTAS/TEST_QUOTAS tables are authoritative
+  (their totals sum exactly to the book totals: 300 SAQ, 100 DBQ, 30 test
+  SAQ, 10 test DBQ) and require Unit 3 at 34 SAQ / 4 test SAQ / 2 test
+  DBQ. The extra SAQ went to 3.5 (the largest topic), the extra test SAQ
+  to 3.10 slot 1, the second test DBQ to 3.8.
+
+### Unit 3 skill coverage
+
+All 17 skill codes must be exercised across the unit's 415 MCQ, with the
+CED's suggested skills honored per topic and the other skills spread so no
+skill code goes untested in the unit.
+
 ## 5. Per-unit topic counts (all units, from cb-codes.json)
 
 U1: 7 topics. U2: 8. U3: 13. U4: 14. U5: 12. U6: 14. U7: 15. U8: 15.
@@ -169,3 +227,51 @@ at the unit weights (U1 ~3, U2 ~4, U3-U8 ~8 each, U9 ~3 of the 55 MCQ);
 carry 3 SAQs from three different periods and one per slot type; carry 1
 DBQ (range 1754-1980) and 1 LEQ; total 3h15m. Exam assembly is a later
 tranche, not part of any single unit's work.
+
+### Unit 9 per-topic quotas (this tranche, set 2026-11-26; closed 2026-11-26)
+
+Unit 9: Period 9, 1980-present, exam weight 4-6%. No DBQs — the DBQ
+document range is 1754-1980, which ends before Period 9. Same method as
+Units 1-3: content topics weighted over the framing topics (9.1
+contextualizing, 9.7 causation capstone). Honest difficulty labels
+govern — never relabel to hit a quota.
+
+| Topic | Title | MCQ | SAQ | LEQ |
+|---|---|---:|---:|---:|
+| 9.1 | Contextualizing Period 9 | 14 | 3 | 1 |
+| 9.2 | Reagan and Conservatism | 26 | 6 | 2 |
+| 9.3 | The End of the Cold War | 24 | 5 | 2 |
+| 9.4 | A Changing Economy | 24 | 5 | 2 |
+| 9.5 | Migration and Immigration in the 1990s and 2000s | 22 | 5 | 2 |
+| 9.6 | Challenges of the 21st Century | 26 | 6 | 2 |
+| 9.7 | Causation in Period 9 | 14 | 3 | 1 |
+| **Total** | | **150** | **33** | **12** |
+
+Unit 9 total: 195 questions (150 MCQ + 33 SAQ + 0 DBQ + 12 LEQ).
+Question IDs: MCQ 2851-3000, SAQ 0268-0300, LEQ 0089-0100.
+Lesson grouping: L1 9.1+9.2 (52), L2 9.3 (31), L3 9.4 (31), L4 9.5 (29),
+L5 9.6+9.7 (52).
+
+### Unit 9 difficulty split (MCQ, 150) — LANDED
+
+Fresh MCQ: easy 67 / medium 74 / hard 6 vs target 30/53/67. With the
+3 Exam-01 converted MCQ (2998-3000): easy 69 / medium 75 / hard 6.
+Hard short 61 — honest labels govern; the re-authoring decision is his,
+to settle at unit close like Unit 1's (hard short 14) and Unit 2's.
+
+### Unit 9 test-pool assignment (27 MCQ + 3 SAQ + 0 DBQ + 2 LEQ = 32)
+
+- MCQ test by topic: 9.1: 3, 9.2: 5, 9.3: 4, 9.4: 4, 9.5: 4, 9.6: 5, 9.7: 2.
+- SAQ test: 3 — 0271 (9.2, slot 1), 0282 (9.4, slot 2), 0292 (9.6, slot 3).
+- LEQ test: 2 — 0090 (9.2), 0098 (9.6).
+- The remaining 123 MCQ + 30 SAQ + 10 LEQ are practice pool.
+- Correction at merge 2026-11-26: the Practice Test 01 mapping assigned
+  its three 9.5 questions (MCQ 2998-3000) to lesson apush-u9-l3, but this
+  file groups 9.5 under L4. The three files' lesson field was corrected
+  to apush-u9-l4; L4's lesson file already listed them.
+
+### Unit 9 skill coverage
+
+All 17 skill codes must be exercised across the unit's 150 MCQ, with the
+CED's suggested skills honored per topic and the other skills spread so no
+skill code goes untested in the unit.

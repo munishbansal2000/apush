@@ -1,0 +1,77 @@
+{
+ "answerKey": "B",
+ "difficulty": 2,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.1 Contextualizing Period 9"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 28",
+    "section": "Decline and Rebirth (1968\u20131988)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "The Conservative Resurgence"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2861",
+ "lesson": "apush-u9-l1",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The passage says the groups began pulling in the same direction, not that they failed.",
+   "text": "The conservative movement failed because its groups could never agree on a common program."
+  },
+  {
+   "key": "B",
+   "text": "A coalition of suburban, religious, and free-market conservatives reshaped American politics after 1980."
+  },
+  {
+   "key": "C",
+   "misconception": "Reagan carried the movement's message; he did not invent it.",
+   "text": "Ronald Reagan invented the conservative movement during his 1980 campaign."
+  },
+  {
+   "key": "D",
+   "misconception": "The passage says conservatives argued government was too large, not that it shrank.",
+   "text": "The federal government grew smaller in every year after 1980."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The passage says the groups began pulling in the same direction, not that they failed. Background: their alliance held through the 1980s and beyond, electing Reagan twice.",
+  "B": "The passage names three groups \u2014 suburban activists, evangelical Christians, and free-market economists \u2014 and says they began pulling together and reshaped debate for decades. Background: the movement's roots reached back to Barry Goldwater's 1964 campaign, but it was Reagan's 1980 victory that carried it to power.\nA coalition, a victory, and a lasting change in the debate \u2014 that is the passage's whole argument in one sentence.",
+  "C": "Reagan carried the movement's message; he did not invent it. Background: the passage places the movement's gathering force in the late 1970s, before his 1980 victory.",
+  "D": "The passage says conservatives argued government was too large, not that it shrank. Background: federal spending and deficits actually grew in the 1980s, even as taxes were cut.",
+  "general": "1. Find the passage's spine. Three groups, one direction, one election, decades of change.\n2. Ask what each group adds. Suburbs, churches, and markets \u2014 different worries, one coalition.\n3. Ask what the passage claims happened. Background: Reagan's 1980 victory carried the movement to power, and the debate never went back.\n4. Rule out the rest. No failure, no invention, no shrinking government \u2014 the passage claims a coalition that changed the argument.\nRemember: the New Right was a team before it was a triumph \u2014 three groups learning to pull together."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "3.A"
+ ],
+ "source": "original; stimulus is an original secondary passage written for this question",
+ "status": "final",
+ "stem": "Which of the following best states the main idea of the passage?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage written for this question; facts from the grounding books.",
+  "text": "By the late 1970s, a new conservative movement had gathered force in American politics. Suburban activists, evangelical Christians, and free-market economists \u2014 groups that had often worked separately \u2014 began to pull in the same direction. They argued that the federal government had grown too large, that taxes were too high, and that American culture had drifted too far from traditional values. In 1980, Ronald Reagan carried their message to the White House, and the movement he led went on to reshape the terms of political debate for decades."
+ },
+ "stimulus_set": "new-right-turn",
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "topics": [
+  "9.1"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

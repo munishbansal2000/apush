@@ -1,0 +1,78 @@
+{
+ "answerKey": "C",
+ "difficulty": 2,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.6 Defining America's Role in the World in the 21st Century"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 31",
+    "section": "Tumultuous Years: The Trump and Biden Presidencies (2017-2022)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Recent Trends"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2979",
+ "lesson": "apush-u9-l5",
+ "options": [
+  {
+   "key": "A",
+   "text": "The United States never took part in the climate talks",
+   "misconception": "The United States took part in the talks and signed the protocol."
+  },
+  {
+   "key": "B",
+   "text": "The United Nations rejected the protocol",
+   "misconception": "The protocol came out of United Nations climate talks. The United Nations did not reject it."
+  },
+  {
+   "key": "C",
+   "text": "The United States signed it but the Senate never ratified it"
+  },
+  {
+   "key": "D",
+   "text": "The protocol applied only to countries in Asia",
+   "misconception": "The protocol set limits for industrialized countries generally."
+  }
+ ],
+ "pool": "test",
+ "rationales": {
+  "A": "The United States took part in the talks and signed the protocol. It did not stay out.",
+  "B": "The protocol came out of United Nations climate talks. The United Nations did not reject it.",
+  "C": "The account says the United States signed the protocol but never ratified it, so the limits never bound the United States.",
+  "D": "The protocol set limits for industrialized countries, not only for Asian countries.",
+  "general": "1. Ask what makes an international agreement bind the United States. Signing alone does not do it.\n2. The account says the United States signed Kyoto but never ratified it.\n3. Background: a treaty needs the Senate's consent to bind the United States, and that consent never came.\n4. The protocol still bound the countries that did ratify it.\nRemember: for the United States, signing a treaty is a promise to consider it, and ratification is what makes it binding."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "1.A"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, The Deepening of Partisanship in the Twenty-first Century; 5 Steps 2024 Ch. 30-31; Princeton Review Ch. 13.",
+ "status": "final",
+ "stem": "A student says the United States rejected the Kyoto Protocol outright. Which fact best corrects that claim?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Secondary account paraphrased from the grounding books (Barron's Premium 2027 Ch. 11, Topic 9.6; 5 Steps 2024 Ch. 31).",
+  "text": "Paraphrase of a secondary account: In 1997, the Kyoto Protocol set binding limits on greenhouse gas emissions for industrialized countries. The United States signed the protocol but never ratified it, so the limits never bound the United States.\n\nIn 2015, the United States helped negotiate the Paris Agreement, which called for broad cuts in carbon dioxide, and 195 parties signed it. In 2017, President Trump announced that the United States would leave the Paris Agreement, with the withdrawal taking effect in 2020. President Biden rejoined the agreement on his first day in office in 2021. In 2025, President Trump again began the process of withdrawing the United States from the agreement."
+ },
+ "stimulus_set": "climate-paris",
+ "themes": [
+  "WOR"
+ ],
+ "topics": [
+  "9.6"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

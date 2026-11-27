@@ -1,0 +1,91 @@
+{
+ "id": "apush-saq-0277",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 9,
+ "topics": [
+  "9.3"
+ ],
+ "skills": [
+  "1.B",
+  "5.A"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "status": "final",
+ "lesson": "apush-u9-l2",
+ "source": "original; stimulus from the shared image pool or paraphrased from the grounding books",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "C. The United States in the Post-Cold War World"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "The Presidency of George H. W. Bush"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "George H. W. Bush"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of historian James Patterson's argument. Post-1929 material is paraphrased, not quoted. (Staged survivor 5s24-ch29-saq-01, rewritten against the books.)",
+  "text": "Paraphrase of historian James Patterson's argument about the Cold War's end: Patterson writes that the Cold War's end left America without a defining enemy, forcing a search for new purposes in foreign policy and new debates at home about what government should do."
+ },
+ "stimulus_set": null,
+ "saq_slot": 1,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Briefly explain ONE effect of the Cold War's end on American foreign policy.",
+   "modelAnswer": "With the Soviet threat gone, the United States cut defense spending and claimed a peace dividend. Washington also turned to regional conflicts and humanitarian missions, sending troops to places like Somalia and the Balkans where the old superpower rivalry no longer applied.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one effect on foreign policy, such as the peace dividend, the turn to regional and humanitarian interventions, or the search for a new American role.",
+     "notEarned": "Naming an effect with no explanation, or describing a domestic policy, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain a SECOND effect of the Cold War's end on American foreign or domestic policy.",
+   "modelAnswer": "The end of bipolar rivalry let Washington refocus on globalization, as the NAFTA agreement of 1994 tied American prosperity to trade with Canada and Mexico. At home, voters turned to domestic concerns, and the economy rather than foreign crises decided the 1992 election.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining a second, distinct effect, such as globalization and NAFTA, the shift of voter attention to the economy, or the 1992 election turning on domestic issues.",
+     "notEarned": "Repeating the part (a) effect, or naming an effect with no explanation, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE continuity in American foreign policy after the Cold War ended.",
+   "modelAnswer": "Even without the Soviet Union, the United States kept using military force abroad, as the Persian Gulf War showed. The country remained the world's dominant military power, and its leaders still acted as the policeman of international order.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one continuity, such as continued military intervention, the persistence of American military dominance, or the continued defense of access to Middle Eastern oil.",
+     "notEarned": "Describing a change rather than a continuity, or naming a development with no explanation, does not earn the point."
+    }
+   ]
+  }
+ ],
+ "totalPoints": 3
+}

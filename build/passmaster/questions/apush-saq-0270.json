@@ -1,0 +1,101 @@
+{
+ "difficulty": 3,
+ "figures": [
+  {
+   "alt": "The Statue of Liberty in the foreground with smoke rising over the Manhattan skyline after the September 11, 2001 attacks",
+   "caption": "The Statue of Liberty and smoke over Manhattan, September 2001",
+   "file": "u9/saq-set-17-q3.jpg",
+   "id": "fig-apush-saq-0270",
+   "license": "Public domain (U.S. Navy photograph)",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/70/US_Navy_010917-N-7479T-512_World_Trade_Center_collapse.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.1 Contextualizing Period 9"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 30",
+    "section": "Threat of Terrorism, Increase of Presidential Power, and Economic Crisis (2001\u20132016)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "America and the War on Terror"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-saq-0270",
+ "lesson": "apush-u9-l1",
+ "parts": [
+  {
+   "modelAnswer": "The photograph shows smoke still rising over lower Manhattan days after the attacks, with the Statue of Liberty standing in the foreground. The smoke marks the place where the World Trade Center towers had stood.",
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one thing the photograph shows about the September 11 attacks.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for identifying one thing the photograph shows, such as smoke rising over lower Manhattan after the attacks or the Statue of Liberty standing before the damaged skyline.",
+     "notEarned": "Naming something the photograph does not show, or a vague answer with nothing identified, does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "modelAnswer": "The attacks launched the War on Terror, beginning with the invasion of Afghanistan in 2001 to remove the Taliban and pursue al-Qaeda. The United States then invaded Iraq in 2003 and built a lasting global counterterrorism effort.",
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain one way the September 11 attacks changed American foreign policy.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one foreign-policy change, such as the invasion of Afghanistan, the invasion of Iraq, or the lasting counterterrorism effort.",
+     "notEarned": "Naming a domestic change instead of a foreign-policy change, or a change with no explanation, does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "modelAnswer": "Congress passed the Patriot Act in 2001, expanding federal surveillance powers, and the government created the Department of Homeland Security in 2003. The attacks made security a central job of the federal government in daily American life.",
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one way the September 11 attacks changed the federal government at home.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one domestic change, such as the Patriot Act, the Department of Homeland Security, or expanded federal surveillance.",
+     "notEarned": "Naming a foreign-policy change instead of a domestic change, or a change with no explanation, does not earn the point.",
+     "points": 1
+    }
+   ]
+  }
+ ],
+ "pool": "practice",
+ "reasoning": "causation",
+ "saq_slot": 3,
+ "skills": [
+  "3.A",
+  "1.B"
+ ],
+ "source": "original; stimulus image from the shared pool, U.S. Navy photograph of the Statue of Liberty and smoke over Manhattan, September 2001, public domain",
+ "status": "final",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "U.S. Navy photograph, September 2001; U.S. federal government photograph, public domain.",
+  "text": "The Statue of Liberty stands in the foreground, with the Manhattan skyline across the harbor behind it. Smoke rises over lower Manhattan in the days after the September 11, 2001, attacks on the World Trade Center."
+ },
+ "stimulus_set": null,
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "topics": [
+  "9.1"
+ ],
+ "totalPoints": 3,
+ "type": "saq",
+ "unit": 9
+}

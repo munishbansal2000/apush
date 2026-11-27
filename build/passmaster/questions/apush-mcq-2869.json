@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-2869",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 9,
+ "topics": [
+  "9.2"
+ ],
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "status": "final",
+ "lesson": "apush-u9-l1",
+ "source": "original; stimulus from the shared image pool or paraphrased from the grounding books",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "A. The Ascendancy of the New Right"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 28",
+    "section": "Decline and Rebirth (1968-1988)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Reagan, H. W., Clinton, and W. (1980-2001)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stem": "Reagan's critics argued that his economic policies mainly helped the wealthy. Which evidence from the period best supports that criticism?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Federal spending on food stamps and housing aid rose faster than defense spending did",
+   "misconception": "Domestic programs like food stamps and housing aid were cut, while defense spending rose."
+  },
+  {
+   "key": "B",
+   "text": "The 1986 reform cut the top tax rate from 50 percent to 28 percent"
+  },
+  {
+   "key": "C",
+   "text": "Union membership grew sharply as wages rose for factory workers",
+   "misconception": "Union membership fell through the 1980s, and wages for many workers stagnated."
+  },
+  {
+   "key": "D",
+   "text": "The 1981 tax cut gave its largest benefits to the poorest Americans",
+   "misconception": "The largest benefits of the tax cuts went to corporations and higher earners, not the poorest."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "Background: domestic programs like food stamps and housing aid were cut, while defense spending rose.",
+  "B": "Background: the 1986 tax reform cut the top rate for the wealthiest Americans from 50 percent to 28 percent, while critics noted the poor gained little.",
+  "C": "Background: union membership fell through the 1980s, and wages for many workers stagnated.",
+  "D": "Background: the largest benefits of the tax cuts went to corporations and higher earners, not the poorest.",
+  "general": "1. Ask what the critics were actually claiming: the gains flowed upward, not downward.\n2. Background: the 1986 tax reform slashed the top rate for the wealthiest Americans from 50 percent to 28 percent.\n3. Background: meanwhile, aid to the poor was cut and union membership \u2014 workers' bargaining power \u2014 fell.\n4. The other choices describe a 1980s that never happened: domestic aid did not surge, and unions did not grow.\nRemember: follow the tax rates to see who the policy favored."
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Figures from Barron's Premium 2027, Chapter 11, 'Growth of the Federal Deficit.'",
+  "text": "Federal debt and interest payments (figures from Barron's Premium 2027, Chapter 11):\n\n| Measure | Value |\n| Federal debt, 1980 | about $900 billion |\n| Federal debt, 1986 | over $2 trillion |\n| Interest on the debt, 1988 | 14% of all federal spending |"
+ },
+ "stimulus_set": "debt-table-1980s"
+}

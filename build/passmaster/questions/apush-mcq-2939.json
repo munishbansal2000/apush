@@ -1,0 +1,88 @@
+{
+ "answerKey": "B",
+ "difficulty": 2,
+ "figures": [
+  {
+   "alt": "President Ronald Reagan seated at a desk signing a bill while Vice President George H. W. Bush and the bill's sponsors stand behind him",
+   "caption": "President Ronald Reagan signing the Immigration Reform and Control Act, November 6, 1986",
+   "file": "u9/reagan-signs-irca-1986.jpg",
+   "id": "fig-apush-mcq-2939",
+   "license": "Public domain (U.S. federal government work; White House Photographic Office, National Archives)",
+   "source_url": "https://commons.wikimedia.org/wiki/File:President_Ronald_Reagan_in_The_Roosevelt_Room_Signing_S._1200_Immigration_Reform_and_Control_Act_of_1986_with_Dan_Lungren_Strom_Thurmond_George_Bush_Romano_Mazzoli_and_Alan_Simpson_-_DPLA_-_89f06ca8c3dde2b7ec4ab6b7f6d1f2f7.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.5 Migration and Immigration, 1980 to the Present"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "Prosperity and a New World Order (1988\u20132000)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Changing Demographics"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2939",
+ "lesson": "apush-u9-l4",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Reagan holds a pen over the bill at a signing desk, and the bill became law, so this is a signing, not a veto.",
+   "text": "A president vetoing an immigration bill passed by Congress"
+  },
+  {
+   "key": "B",
+   "text": "A president signing a major immigration law in 1986"
+  },
+  {
+   "key": "C",
+   "misconception": "No wall was announced in 1986; the wall promise came in the 2016 presidential campaign, thirty years later.",
+   "text": "A president announcing a new border wall along the southern border"
+  },
+  {
+   "key": "D",
+   "misconception": "The law reformed immigration and gave legal status to some residents; it did not end legal immigration.",
+   "text": "A president ending all legal immigration to the United States"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Reagan is signing the bill, not vetoing it, and the law took effect on November 6, 1986.",
+  "B": "Reagan is shown signing the bill into law, with the sponsors standing behind him. Background: the Immigration Reform and Control Act became law on November 6, 1986.",
+  "C": "Background: the border wall was a promise of the 2016 campaign, not part of the 1986 signing.",
+  "D": "Background: the law legalized about 2.7 million longtime residents, so legal immigration continued.",
+  "general": "1. Look at what Reagan is doing. He holds a pen over a document at a desk, with lawmakers standing behind him.\n2. Read the caption. The date is November 6, 1986, and the bill is the Immigration Reform and Control Act.\n3. A signing makes a bill law, the opposite of a veto.\n4. Nothing in the scene mentions a wall or an end to legal immigration.\nRemember: a signing photo shows a law being made, so match the image to the law named in the caption."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "1.A"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, Topic 9.5; 5 Steps 2024 Ch. 29/30; Princeton Review Ch. 13. Photograph: White House Photographic Office, November 6, 1986, National Archives. Public domain (U.S. federal government work).",
+ "status": "final",
+ "stem": "The photograph most directly shows which of the following?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Photograph: White House Photographic Office, November 6, 1986, National Archives. Public domain (U.S. federal government work).",
+  "text": "Photograph of President Ronald Reagan signing the Immigration Reform and Control Act of 1986 in the Roosevelt Room of the White House on November 6, 1986. Reagan sits at a desk signing the bill while Vice President George H. W. Bush and the bill's sponsors, Senator Alan Simpson and Representative Romano Mazzoli, stand behind him. In remarks at the signing, Reagan described the law as the most far-reaching reform of immigration law since 1952, and said it would pair legal status for some longtime residents with penalties for employers who hired workers without legal papers. (Remarks paraphrased, not quoted.)"
+ },
+ "stimulus_set": "irca-signing-1986",
+ "themes": [
+  "MIG",
+  "PCE"
+ ],
+ "topics": [
+  "9.5"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

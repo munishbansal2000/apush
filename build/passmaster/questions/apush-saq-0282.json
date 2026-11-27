@@ -1,0 +1,92 @@
+{
+ "id": "apush-saq-0282",
+ "type": "saq",
+ "pool": "test",
+ "unit": 9,
+ "topics": [
+  "9.4"
+ ],
+ "skills": [
+  "2.B",
+  "3.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "status": "final",
+ "lesson": "apush-u9-l3",
+ "source": "original; stimulus from the shared image pool or paraphrased from the grounding books",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "A. The Ascendancy of the New Right"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 28",
+    "section": "Decline and Rebirth (1968-1988)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Military Spending and Budget Deficits"
+   }
+  ],
+  "primary_sources": [
+   "President Ronald Reagan, address to a joint session of Congress on the Program for Economic Recovery, February 18, 1981 (paraphrased)"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of President Ronald Reagan's address to a joint session of Congress, February 18, 1981. Post-1929 material is paraphrased, not quoted.",
+  "text": "Paraphrase of President Ronald Reagan's address to a joint session of Congress, February 18, 1981: Reagan told Congress that taxes and regulations had grown so heavy that they were strangling American enterprise. He proposed deep cuts in taxes and federal spending, arguing that freeing businesses from the tax burden would unleash investment, create jobs, and restore growth."
+ },
+ "stimulus_set": null,
+ "saq_slot": 2,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Briefly describe Reagan's view of the problem facing the American economy, as shown in the passage.",
+   "modelAnswer": "Reagan believed that high taxes and heavy regulation were strangling American enterprise. He argued that the tax burden was so large that businesses could not invest, hire, or grow.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for describing Reagan's view that taxes and regulation were strangling enterprise and blocking investment and growth.",
+     "notEarned": "Naming taxes or regulation with no description of Reagan's view does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain ONE reason Reagan proposed tax cuts in 1981.",
+   "modelAnswer": "The 1970s had brought stagflation, with inflation and unemployment rising together, and many Americans had lost faith in government management of the economy. Reagan offered tax cuts as a new answer after the old Keynesian playbook failed.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one reason, such as stagflation, the failure of 1970s economic policy, or the conservative turn against big government.",
+     "notEarned": "Naming a reason with no explanation, or describing a later effect of the cuts, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE effect of Reagan's economic program.",
+   "modelAnswer": "The tax cuts plus the military buildup left the government spending far more than it collected, and the national debt more than doubled between 1980 and 1986. Growth returned, but so did huge deficits and wider inequality.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one effect, such as the growing debt and deficits, the return of growth, or widening inequality.",
+     "notEarned": "Naming an effect with no explanation, or describing a policy from another presidency, does not earn the point."
+    }
+   ]
+  }
+ ],
+ "totalPoints": 3
+}

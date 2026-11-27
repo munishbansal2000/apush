@@ -1,0 +1,79 @@
+{
+ "answerKey": "B",
+ "difficulty": 2,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "The New Right and the Election of Ronald Reagan"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 28",
+    "section": "Decline and Rebirth (1968-1988)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Reagan, H. W., Clinton, and W. (1980-2001)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2984",
+ "lesson": "apush-u9-l5",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Background: Carter did run for a second term in 1980 and lost to Reagan.",
+   "text": "Carter refused to run for a second term in 1980"
+  },
+  {
+   "key": "B",
+   "text": "Prices rose fast while jobs disappeared, and Carter seemed unable to fix them"
+  },
+  {
+   "key": "C",
+   "misconception": "Background: Carter was never impeached; the House never brought charges against him.",
+   "text": "Congress impeached Carter over the hostage crisis in Iran in 1980"
+  },
+  {
+   "key": "D",
+   "misconception": "Background: the Soviet Union did not dissolve until December 1991, eleven years after the election.",
+   "text": "The Soviet Union dissolved, ending the Cold War before the election took place"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Background: Carter did run for a second term in 1980. He lost the election to Reagan.",
+  "B": "The account says prices rose above 13 percent while unemployment stood above 7 percent, and Carter himself spoke of a crisis of confidence.",
+  "C": "Background: Carter was never impeached. The hostage crisis hurt him politically, but no impeachment followed.",
+  "D": "Background: the Soviet Union dissolved in December 1991. It was still standing in 1980.",
+  "general": "1. Ask what voters were living through in 1980, not what happened later.\n2. The account says prices rose above 13 percent while unemployment stood above 7 percent.\n3. It also says Carter spoke of a crisis of confidence while hostages were held in Iran.\n4. Voters blamed the president for an economy that hurt them and a government that seemed stuck.\nRemember: to explain an election result, start with what voters were experiencing at the time."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "1.B"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, The New Right and the Election of Ronald Reagan; 5 Steps 2024 Ch. 28; Princeton Review Ch. 13.",
+ "status": "final",
+ "stem": "Which of the following most directly explains why voters turned against President Carter in 1980?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Secondary account paraphrased from the grounding books (Barron's Premium 2027 Ch. 11; 5 Steps 2024 Ch. 28).",
+  "text": "Paraphrase of a secondary account: In the late 1970s, the American economy suffered from stagflation: prices rose fast while jobs disappeared. Inflation ran above 13 percent in 1980, and unemployment stood above 7 percent. President Jimmy Carter told Americans in 1979 of a crisis of confidence, and the seizure of American hostages in Iran deepened the sense that events were out of control. Ronald Reagan, the Republican challenger, promised optimism and a smaller federal government, with tax cuts to revive growth. He won the 1980 election by a wide margin.\n\nThe old Keynesian idea that government spending could manage the economy had guided policy since the New Deal, but it offered no answer when inflation and unemployment rose together."
+ },
+ "stimulus_set": "stagflation-1980",
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "topics": [
+  "9.7"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

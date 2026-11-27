@@ -1,0 +1,76 @@
+{
+ "id": "apush-mcq-2870",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 9,
+ "topics": [
+  "9.2"
+ ],
+ "skills": [
+  "5.A"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 3,
+ "status": "final",
+ "lesson": "apush-u9-l1",
+ "source": "original; stimulus from the shared image pool or paraphrased from the grounding books",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "C. Reducing Big Government: Rhetoric and Reality"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 28",
+    "section": "Decline and Rebirth (1968-1988)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Reagan, H. W., Clinton, and W. (1980-2001)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stem": "Reagan promised to shrink the federal government, yet the table shows the debt more than doubling. What does this best illustrate about the conservative movement's limits?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Conservative presidents never attempted to cut any federal program",
+   "misconception": "Reagan did cut domestic programs \u2014 housing, education, and the arts lost funding."
+  },
+  {
+   "key": "B",
+   "text": "Voters in the 1980s demanded the abolition of the military",
+   "misconception": "Voters supported the military buildup; no such demand existed."
+  },
+  {
+   "key": "C",
+   "text": "Popular programs like Social Security and Medicare could not be cut"
+  },
+  {
+   "key": "D",
+   "text": "Congress refused to pass any of Reagan's tax cuts",
+   "misconception": "Congress passed the 1981 tax cuts, the centerpiece of Reagan's program."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "Background: Reagan did cut domestic programs \u2014 housing, education, and the arts lost funding.",
+  "B": "Background: voters supported the military buildup; no demand to abolish the military existed.",
+  "C": "Background: Social Security and Medicare were too popular to touch, so the cuts fell on smaller programs while defense spending \u2014 and the debt \u2014 grew.",
+  "D": "Background: Congress passed the 1981 tax cuts, the centerpiece of Reagan's program.",
+  "general": "1. Hold the promise next to the numbers. The debt did not shrink \u2014 it more than doubled.\n2. Background: Reagan did cut domestic programs, but the big ones \u2014 Social Security and Medicare \u2014 were too popular for any president to touch.\n3. Background: at the same time, the military buildup pushed spending up, so the government borrowed the difference.\n4. The lesson is not that nothing was cut, but that the popular core of government survived every attack.\nRemember: the small-government promise ran into programs voters loved."
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Figures from Barron's Premium 2027, Chapter 11, 'Growth of the Federal Deficit.'",
+  "text": "Federal debt and interest payments (figures from Barron's Premium 2027, Chapter 11):\n\n| Measure | Value |\n| Federal debt, 1980 | about $900 billion |\n| Federal debt, 1986 | over $2 trillion |\n| Interest on the debt, 1988 | 14% of all federal spending |"
+ },
+ "stimulus_set": "debt-table-1980s"
+}

@@ -1,0 +1,88 @@
+{
+ "id": "apush-leq-0092",
+ "type": "leq",
+ "pool": "practice",
+ "unit": 9,
+ "topics": [
+  "9.3"
+ ],
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "WXT",
+  "WOR"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 4,
+ "status": "final",
+ "lesson": "apush-u9-l2",
+ "source": "original; prompt written for this question",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "C. The United States in the Post-Cold War World"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "The Presidency of George H. W. Bush"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "George H. W. Bush"
+   }
+  ],
+  "primary_sources": []
+ },
+ "prompt": "Evaluate the extent to which the end of the Cold War changed the role of the United States in the world between 1989 and 2001.",
+ "modelOutline": "Thesis: The Cold War's end changed America's role profoundly, from containing one rival to policing a world without a rival, but the change was partial, since Washington kept using military force abroad and kept its global alliances.\nContext: For forty years containment had defined American foreign policy, from the Truman Doctrine and the Marshall Plan through Vietnam and d\u00e9tente, with every decision measured against the Soviet threat.\nEvidence of change: With no Soviet rival, the United States claimed a peace dividend and cut defense spending, then fought the Gulf War through a broad coalition under United Nations approval, and turned to humanitarian and peacekeeping missions in Somalia, Haiti, and the Balkans.\nEvidence of continuity: The United States kept its alliances, kept troops in Europe and Asia, and kept using force abroad, from Desert Storm to the NATO bombing of Serbia in 1999, still acting as the world's dominant military power.\nComplexity: The role changed in purpose but not in power: Washington stopped containing communism and started policing disorder, yet the habit of leading with military force survived the enemy it was built for, so the new role was a repurposing of the old one.",
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt.",
+   "notEarned": "A sentence of background with no link to the argument does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (first point): earns the point for describing specific and relevant examples supporting one side of the argument.",
+   "notEarned": "General statements with no specific example do not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (second point): earns the point for describing specific and relevant examples supporting the other side of the argument or the limits of the first.",
+   "notEarned": "Repeating the same example, or naming a limit with no specific detail, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Analysis and reasoning: earns the point for explaining how the evidence shows the extent of the change or continuity, linking examples to the thesis rather than listing them.",
+   "notEarned": "Listing examples with no explanation of how they support the argument does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Analysis and reasoning (complexity): earns the point for a complex argument, such as qualifying the thesis by area or period, or weighing change against its limits.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ],
+ "stimulus": {
+  "kind": "none",
+  "source_note": "No stimulus; LEQ prompt only."
+ },
+ "stimulus_set": null,
+ "totalPoints": 6
+}

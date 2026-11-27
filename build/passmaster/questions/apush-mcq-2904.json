@@ -1,0 +1,83 @@
+{
+ "id": "apush-mcq-2904",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 9,
+ "topics": [
+  "9.3"
+ ],
+ "skills": [
+  "2.C"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "status": "final",
+ "lesson": "apush-u9-l2",
+ "source": "original; stimulus from the shared image pool or paraphrased from the grounding books",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "A. The Reagan Doctrine"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "A. Central America and the Iran-Contra Scandal"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 28",
+    "section": "Decline and Rebirth (1968-1988)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Foreign Policy Under Reagan"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stem": "The Iran-Contra affair raised which of the following constitutional concerns?",
+ "options": [
+  {
+   "key": "A",
+   "text": "That the president had appointed too many Supreme Court justices",
+   "misconception": "Supreme Court appointments were not at issue in the affair."
+  },
+  {
+   "key": "B",
+   "text": "That the states had lost their power to run elections",
+   "misconception": "State election power had nothing to do with the affair."
+  },
+  {
+   "key": "C",
+   "text": "That the executive branch had evaded Congress's control over spending"
+  },
+  {
+   "key": "D",
+   "text": "That the military had refused to follow the president's orders",
+   "misconception": "The military did not refuse orders; the scheme was run by administration officials."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "Appointments were not part of the scandal. Background: the affair was about secret arms sales and diverted money.",
+  "B": "Elections were not part of the scandal. Background: the affair was about foreign policy and funding, not voting.",
+  "C": "Background: Congress used the Boland Amendment to cut off Contra aid, exercising its power of the purse. The secret Iran arms sales funded the Contras anyway, so critics argued the plan denied Congress the spending power at the heart of checks and balances.",
+  "D": "No refusal happened. Background: the scheme was carried out by members of the Reagan administration, including Oliver North of the National Security Council.",
+  "general": "1. Ask what Congress had actually done: it passed the Boland Amendment to halt aid to the Contras.\n2. Ask what the administration did next: it sold weapons to Iran and sent the profits to the Contras anyway.\n3. Background: spending is Congress's power, called the power of the purse, and it sits at the heart of checks and balances.\n4. Secretly funding what Congress had defunded was the constitutional problem, not appointments or elections.\nRemember: the scandal was not just secret arms, it was spending Congress had forbidden."
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original summary based on Barron's Premium 2027, Chapter 11, and Princeton Review, Chapter 13.",
+  "text": "Original summary based on the grounding books: Under the Reagan Doctrine, the United States backed anti-communist governments and rebel movements around the world, even undemocratic ones. In Nicaragua, Washington armed and trained the Contras, rebels fighting the left-wing Sandinista government that had taken power in 1979. Congress passed the Boland Amendment in 1982 to halt American aid to the Contras. Members of the Reagan administration then secretly sold weapons to Iran and sent the profits to the Contras anyway. The scheme became public in 1986 as the Iran-Contra affair."
+ },
+ "stimulus_set": "reagan-doctrine-iran-contra",
+ "figures": null
+}

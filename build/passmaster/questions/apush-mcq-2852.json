@@ -1,0 +1,88 @@
+{
+ "answerKey": "B",
+ "difficulty": 3,
+ "figures": [
+  {
+   "alt": "President Ronald Reagan speaking at a podium in the White House Rose Garden in August 1981",
+   "caption": "President Reagan in the Rose Garden, August 1981",
+   "file": "u9/original-ctx-u9-01.jpg",
+   "id": "fig-apush-mcq-2852",
+   "license": "Public domain (U.S. federal government work)",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/16/President_Making_a_Statement_to_The_Press_Regarding_The_Air_Traffic_Controllers_Strike_Patco_in_Rose_Garden_-_DPLA_-_e088ac348a2b5dabd923ef04686f2169.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.1 Contextualizing Period 9"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 28",
+    "section": "Decline and Rebirth (1968\u20131988)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Decline of Unions"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2852",
+ "lesson": "apush-u9-l1",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Sun Belt growth is a real trend, but it concerns where jobs moved, not what the federal government did about unions.",
+   "text": "The postwar growth of the Sun Belt, which moved jobs and people toward the South and West."
+  },
+  {
+   "key": "B",
+   "text": "The New Deal's expansion of federal support for collective bargaining and the right to organize."
+  },
+  {
+   "key": "C",
+   "misconception": "The military buildup concerns defense spending abroad, not the government's stance toward unions at home.",
+   "text": "The Cold War buildup of the American military, which began under President Truman in the late 1940s."
+  },
+  {
+   "key": "D",
+   "misconception": "Medicare and Medicaid expanded health coverage, not labor rights, and they say nothing about strikes or bargaining.",
+   "text": "The Great Society's creation of Medicare and Medicaid, which extended health care to older and poor Americans."
+  }
+ ],
+ "pool": "test",
+ "rationales": {
+  "A": "Sun Belt growth is real, but it concerns where jobs moved, not what the federal government did about unions. Background: the Sun Belt shift was driven by defense plants, air conditioning, and lower taxes, not labor law.",
+  "B": "The photograph shows a president using federal power against a strike, not for the strikers. Background: the Wagner Act of 1935 had put Washington behind workers' right to organize and bargain.\nFiring the controllers flipped that stance: the same federal power now broke a strike, which is why historians read PATCO as the New Deal labor settlement ending.",
+  "C": "The military buildup concerns defense spending abroad, not the government's stance toward unions at home. Background: Truman built up the military after Korea, a separate story from labor policy.",
+  "D": "Medicare and Medicaid expanded health coverage, not labor rights. Background: the Great Society's health programs came in 1965 and say nothing about strikes or bargaining.",
+  "general": "1. Look past the podium. The question is not what Reagan said but which older order his action undid.\n2. Name that order. Background: since the 1930s, federal law had protected workers' right to organize and bargain.\n3. Match the action to the order. Firing 11,000 strikers used federal power against a union \u2014 the opposite of the New Deal stance.\n4. Rule out the others. The Sun Belt, the military, and Medicare are real developments, but none of them is about labor law.\nRemember: PATCO matters because it reversed the New Deal's deal with labor, not because it moved jobs or built weapons."
+ },
+ "reasoning": "continuity-change",
+ "skills": [
+  "4.B",
+  "5.B"
+ ],
+ "source": "original; stimulus image from the shared pool, President Reagan in the Rose Garden, August 1981, public domain",
+ "status": "final",
+ "stem": "Which earlier development does Reagan's firing of the air-traffic controllers most directly reverse?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Photograph of President Ronald Reagan addressing the press in the Rose Garden about the 1981 air-traffic controllers' strike; U.S. federal government photograph, public domain.",
+  "text": "President Ronald Reagan speaks to reporters in the White House Rose Garden in August 1981, days after air-traffic controllers walked off the job. He stands at a podium bearing the presidential seal, with the presidential flag behind him."
+ },
+ "stimulus_set": "reagan-patco",
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "topics": [
+  "9.1"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

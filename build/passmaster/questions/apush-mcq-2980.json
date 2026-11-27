@@ -1,0 +1,87 @@
+{
+ "answerKey": "B",
+ "difficulty": 2,
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2980",
+   "file": "u9/5s24-ch31-mcq-08.jpg",
+   "caption": "The Abraham Accords signing ceremony, White House, September 2020",
+   "alt": "President Trump, Prime Minister Netanyahu, and the foreign ministers of the United Arab Emirates and Bahrain seated at a table outdoors signing documents",
+   "license": "Public domain (U.S. federal government work; official White House photograph)",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/42/President_Trump_and_The_First_Lady_Participate_in_an_Abraham_Accords_Signing_Ceremony.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.6 Defining America's Role in the World in the 21st Century"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 31",
+    "section": "Tumultuous Years: The Trump and Biden Presidencies (2017-2022)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "America and the War on Terror"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2980",
+ "lesson": "apush-u9-l5",
+ "options": [
+  {
+   "key": "A",
+   "text": "Withdrawing the United States from the Iran nuclear deal",
+   "misconception": "Withdrawing from the deal was a confrontation with Iran, not a new partnership."
+  },
+  {
+   "key": "B",
+   "text": "Mediating the Abraham Accords between Israel and two Arab states"
+  },
+  {
+   "key": "C",
+   "text": "Moving the American embassy in Israel to Jerusalem",
+   "misconception": "The embassy move was a unilateral step that angered Palestinian leaders; it built no new partnership."
+  },
+  {
+   "key": "D",
+   "text": "Imposing sanctions on Russia after its invasion of Ukraine",
+   "misconception": "The sanctions on Russia concerned Europe, not the Middle East."
+  }
+ ],
+ "pool": "test",
+ "rationales": {
+  "A": "Withdrawing from the Iran deal was a confrontation with Iran. It built no new partnership.",
+  "B": "The account says the accords were agreements in which the United Arab Emirates and Bahrain normalized relations with Israel.",
+  "C": "Background: Trump recognized Jerusalem as Israel's capital and moved the American embassy there in 2018, a separate step from the accords.",
+  "D": "The sanctions on Russia came after the 2022 invasion of Ukraine. They were not a Middle East policy.",
+  "general": "1. Ask which step built a partnership. The photograph shows Trump, Netanyahu, and the foreign ministers of the UAE and Bahrain signing documents together.\n2. The account says those documents normalized relations between Israel and the two Arab states.\n3. That is a new partnership, while withdrawing from the Iran deal and moving the embassy were confrontations or unilateral steps.\n4. The sanctions on Russia belong to a different region and a later year.\nRemember: normalizing relations means former enemies agreeing to deal with each other openly."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "3.A"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, Topic 9.6; 5 Steps 2024 Ch. 31; Princeton Review Ch. 13. Photograph: official White House photograph, September 2020, public domain.",
+ "status": "final",
+ "stem": "Which development best shows that the Trump administration's Middle East policy included building new partnerships, not only confronting Iran?",
+ "stimulus": {
+  "kind": "mixed",
+  "source_note": "Photograph: official White House photograph, September 2020. Public domain (U.S. federal government work). Account paraphrased from the grounding books (Barron's Premium 2027 Ch. 11, Topic 9.6; 5 Steps 2024 Ch. 31).",
+  "text": "Photograph of the Abraham Accords signing ceremony at the White House in September 2020: President Donald Trump, Prime Minister Benjamin Netanyahu of Israel, and the foreign ministers of the United Arab Emirates and Bahrain sit at a table outdoors, signing documents.\n\nParaphrase of a secondary account: In 2020, the Trump administration mediated the Abraham Accords, agreements in which the United Arab Emirates and Bahrain normalized relations with Israel. Trump had earlier moved the American embassy in Israel to Jerusalem in 2018 and withdrawn the United States from the Iran nuclear deal, the Joint Comprehensive Plan of Action, in the same year. In 2022, Russia invaded Ukraine, and the United States under President Biden condemned the invasion, imposed sanctions, and had given Ukraine over 64 billion dollars in military aid by 2025."
+ },
+ "stimulus_set": "trump-foreign-policy",
+ "themes": [
+  "WOR"
+ ],
+ "topics": [
+  "9.6"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

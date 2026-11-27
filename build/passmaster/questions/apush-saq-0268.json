@@ -1,0 +1,96 @@
+{
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.1 Contextualizing Period 9"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 28",
+    "section": "Decline and Rebirth (1968\u20131988)"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "Prosperity and a New World Order (1988\u20132000)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Chapter 13 Summary"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-saq-0268",
+ "lesson": "apush-u9-l1",
+ "parts": [
+  {
+   "modelAnswer": "The passage describes a conservative turn after 1980, as Ronald Reagan's election brought tax cuts and deregulation and a smaller federal role in the economy. The movement behind him kept shaping American politics for decades.",
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one change described in the passage that reshaped American politics after 1980.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for identifying one change from the passage, such as the conservative turn, tax cuts, deregulation, or a smaller federal role in the economy.",
+     "notEarned": "Naming a development that is not in the passage, or a vague answer with no change identified, does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "modelAnswer": "With the Soviet Union gone, the United States stood alone as the world's only superpower. It used that position to lead coalitions abroad, as in the Gulf War of 1991, when it expelled Iraq from Kuwait.",
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain one way the end of the Cold War changed the United States' role in the world.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one change, such as the United States becoming the sole superpower or leading coalitions like the Gulf War.",
+     "notEarned": "Restating that the Cold War ended, with no change to the American role explained, does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "modelAnswer": "The United States stayed deeply engaged in the world throughout the period, from the Cold War through the Gulf War and the wars after September 11. Its debates over the size and purpose of the federal government also never ended, running from Reagan's presidency through the present.",
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one continuity in American life across the period 1980 to the present.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one continuity, such as continued American engagement abroad or the unending debate over the federal government's size and purpose.",
+     "notEarned": "Naming a change instead of a continuity, or giving a continuity with no explanation, does not earn the point.",
+     "points": 1
+    }
+   ]
+  }
+ ],
+ "pool": "practice",
+ "reasoning": "continuity-change",
+ "saq_slot": 1,
+ "skills": [
+  "1.B",
+  "5.A"
+ ],
+ "source": "original; stimulus is an original secondary passage written for this question",
+ "status": "final",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage written for this question; facts from the grounding books.",
+  "text": "Between 1980 and the present, the United States passed through three great changes. First came a conservative turn: Ronald Reagan's election in 1980 brought tax cuts, deregulation, and a smaller role for the federal government in the economy, and the movement behind him kept shaping politics for decades.\n\nSecond came the end of the Cold War: the Berlin Wall fell in 1989, and the Soviet Union dissolved in 1991, leaving the United States the world's only superpower. Third came globalization: trade agreements like NAFTA tied the American economy to the world, while new technology and the attacks of September 11, 2001, remade American life at home and abroad."
+ },
+ "stimulus_set": null,
+ "themes": [
+  "PCE",
+  "WOR"
+ ],
+ "topics": [
+  "9.1"
+ ],
+ "totalPoints": 3,
+ "type": "saq",
+ "unit": 9
+}

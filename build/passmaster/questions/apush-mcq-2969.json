@@ -1,0 +1,78 @@
+{
+ "answerKey": "D",
+ "difficulty": 2,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "The Housing Crisis and the Great Recession"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 30",
+    "section": "Threat of Terrorism, Increase of Presidential Power, and Economic Crisis (2001-2016)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Recent Trends"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2969",
+ "lesson": "apush-u9-l5",
+ "options": [
+  {
+   "key": "A",
+   "text": "Banks refused to make any mortgages at all after 2007",
+   "misconception": "Banks cut back on lending, but they did not stop making mortgages entirely."
+  },
+  {
+   "key": "B",
+   "text": "The government banned all home buying in 2008",
+   "misconception": "The government never banned home buying."
+  },
+  {
+   "key": "C",
+   "text": "Home prices rose sharply across the country",
+   "misconception": "Home prices fell when the housing bubble burst."
+  },
+  {
+   "key": "D",
+   "text": "Banks bundled the mortgages into securities sold across the financial system"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Banks cut back on lending when the loans went bad. Cutting back is not the same as stopping all mortgages.",
+  "B": "The government never banned home buying. Its response was to buy troubled assets and pass a stimulus.",
+  "C": "The housing bubble burst in 2007, which meant prices fell, not rose.",
+  "D": "The account says banks bundled subprime mortgages into securities sold across the financial system, which spread the risk far beyond housing.",
+  "general": "1. Ask how a housing problem became a financial problem. The account says banks bundled risky mortgages into securities.\n2. Those securities were sold across the financial system, so the risk traveled with them.\n3. When borrowers defaulted, the losses hit banks, funds, and lenders far from the original houses.\n4. The table shows the human result: unemployment more than doubled from 2007 to 2010.\nRemember: bundling a risky loan spreads its risk to everyone holding the bundle."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "2.B"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, The Housing Crisis and the Great Recession; 5 Steps 2024 Ch. 30; Princeton Review Ch. 13. Unemployment data: BLS Current Population Survey annual averages.",
+ "status": "final",
+ "stem": "According to the account, how did risky mortgages spread damage beyond the housing market?",
+ "stimulus": {
+  "kind": "mixed",
+  "source_note": "Data: Bureau of Labor Statistics, Current Population Survey, annual averages, series LNU04000000. Account paraphrased from the grounding books (Barron's Premium 2027 Ch. 11; 5 Steps 2024 Ch. 30).",
+  "text": "Data table: United States unemployment rate, annual average, from the Bureau of Labor Statistics Current Population Survey.\n\n| Year | Unemployment rate |\n| 2007 | 4.6% |\n| 2008 | 5.8% |\n| 2009 | 9.3% |\n| 2010 | 9.6% |\n\nParaphrase of a secondary account: In the 2000s, banks made risky subprime mortgages to borrowers with low credit ratings, then bundled those mortgages into securities sold across the financial system. When the housing bubble burst in 2007, borrowers defaulted, foreclosures spread, and banks holding the bundled loans cut back on lending.\n\nIn 2008, Congress passed the Troubled Asset Relief Program, giving the government up to 700 billion dollars to buy troubled mortgage assets from financial firms. In 2009, President Obama signed the American Recovery and Reinvestment Act, a stimulus of almost 800 billion dollars for infrastructure, schools, and hospitals."
+ },
+ "stimulus_set": "recession-2008-2010",
+ "themes": [
+  "WXT"
+ ],
+ "topics": [
+  "9.6"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

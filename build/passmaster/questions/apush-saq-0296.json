@@ -1,0 +1,94 @@
+{
+ "difficulty": 4,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.6 Defining America's Role in the World in the 21st Century"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 30",
+    "section": "Threat of Terrorism, Increase of Presidential Power, and Economic Crisis (2001-2016)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "America and the War on Terror"
+   }
+  ],
+  "primary_sources": [
+   "President George W. Bush, State of the Union address, January 29, 2002, paraphrased"
+  ]
+ },
+ "id": "apush-saq-0296",
+ "lesson": "apush-u9-l5",
+ "parts": [
+  {
+   "modelAnswer": "Bush named Iraq as one of three hostile states, along with Iran and North Korea. He said Iraq had defied the world over its weapons programs.",
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one country Bush named in the address.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for identifying one country Bush named, such as Iraq, Iran, or North Korea.",
+     "points": 1,
+     "notEarned": "Naming a country Bush did not name, or a vague answer with nothing identified, does not earn the point."
+    }
+   ]
+  },
+  {
+   "modelAnswer": "Bush said the three states threatened the United States and its allies, and he warned that they might arm terrorists with weapons of mass destruction. Iraq in particular had defied the world over its weapons programs for years.",
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain ONE reason Bush gave for naming these countries.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one reason Bush gave, such as the threat of weapons of mass destruction or the danger of arming terrorists.",
+     "points": 1,
+     "notEarned": "Naming a reason with no explanation, or describing a later event instead, does not earn the point."
+    }
+   ]
+  },
+  {
+   "modelAnswer": "The address laid out the case for striking first against nations seen as threats, a policy known as the Bush Doctrine. In October 2002, Congress authorized the use of force against Iraq, and the United States invaded in March 2003.",
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE effect of the ideas in the address.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one effect, such as the Bush Doctrine of preemptive strikes, the 2002 authorization of force, or the invasion of Iraq in 2003.",
+     "points": 1,
+     "notEarned": "Naming an effect with no explanation, or describing the address itself instead, does not earn the point."
+    }
+   ]
+  }
+ ],
+ "pool": "practice",
+ "reasoning": "causation",
+ "saq_slot": 2,
+ "skills": [
+  "2.A",
+  "3.A"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, Topic 9.6; 5 Steps 2024 Ch. 30; Princeton Review Ch. 13. Paraphrase of a primary source: President George W. Bush, State of the Union address, January 29, 2002.",
+ "status": "final",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of a primary source: President George W. Bush, State of the Union address, January 29, 2002.",
+  "text": "Paraphrase of President George W. Bush's State of the Union address, January 2002: Bush said Iraq, Iran, and North Korea formed a grouping of hostile states that threatened the United States and its allies. He said Iraq had defied the world for years over its weapons programs. He warned that the United States would not wait for such states to arm terrorists with weapons of mass destruction."
+ },
+ "stimulus_set": null,
+ "themes": [
+  "WOR"
+ ],
+ "topics": [
+  "9.6"
+ ],
+ "totalPoints": 3,
+ "type": "saq",
+ "unit": 9
+}

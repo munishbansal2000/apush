@@ -1,0 +1,90 @@
+{
+ "id": "apush-saq-0274",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 9,
+ "topics": [
+  "9.2"
+ ],
+ "skills": [
+  "1.B",
+  "5.A"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 3,
+ "status": "final",
+ "lesson": "apush-u9-l1",
+ "source": "original; stimulus paraphrased from the grounding books or drawn from the shared image pool",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "C. Reducing Big Government: Rhetoric and Reality"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "Prosperity and a New World Order (1988-2000)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Reagan, H. W., Clinton, and W. (1980-2001)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage written for this question; facts from the grounding books.",
+  "text": "Republican leaders from Reagan onward often promised to bring the era of big government to an end. Yet the federal government kept growing. Popular programs like Social Security and Medicare proved politically untouchable, military spending rose sharply under Reagan, and later Republican presidents added new federal responsibilities in security and education."
+ },
+ "stimulus_set": null,
+ "saq_slot": 1,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one limit on conservative efforts to shrink the government described in the passage.",
+   "modelAnswer": "The passage describes popular programs like Social Security and Medicare as politically untouchable. No president could cut them without paying a heavy electoral price, so the core of the welfare state survived every conservative attack.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying a limit, such as the popularity of Social Security and Medicare, rising military spending, or new federal responsibilities.",
+     "notEarned": "Restating the passage with no limit identified does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain how one specific development supports the passage's claim that government kept growing.",
+   "modelAnswer": "Under President George W. Bush, the federal government created the Department of Homeland Security and passed the No Child Left Behind Act. Both expanded Washington's reach into security and education, even though Bush campaigned as a conservative.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining a development showing government growth, such as the Department of Homeland Security, No Child Left Behind, the Medicare prescription-drug benefit, or rising military spending.",
+     "notEarned": "Naming a development with no link to the passage's claim does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one way the conservative movement nonetheless changed American politics.",
+   "modelAnswer": "The conservative movement changed the terms of political debate, making tax cuts, deregulation, and suspicion of Washington the default language of both parties. Even Democratic presidents like Clinton declared the era of big government over and signed welfare reform.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining a lasting conservative change, such as reshaping the debate over government's role, cutting taxes and regulation, or pulling Democrats toward the center.",
+     "notEarned": "Naming a change with no explanation does not earn the point."
+    }
+   ]
+  }
+ ],
+ "totalPoints": 3
+}

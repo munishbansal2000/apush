@@ -1,0 +1,79 @@
+{
+ "answerKey": "A",
+ "difficulty": 2,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.2 Reagan, Conservatism, and Partisan Divisions"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 31",
+    "section": "Tumultuous Years: The Trump and Biden Presidencies (2017-2022)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Recent Trends"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2995",
+ "lesson": "apush-u9-l5",
+ "options": [
+  {
+   "key": "A",
+   "text": "Frequent legislative deadlock, as the parties agreed on less"
+  },
+  {
+   "key": "B",
+   "misconception": "Polarization pushes the parties apart, so compromise would fall, not rise.",
+   "text": "A sharp rise in bipartisan compromise on major laws"
+  },
+  {
+   "key": "C",
+   "misconception": "Background: terms of Congress are fixed by the Constitution and did not change.",
+   "text": "Longer terms for members of Congress"
+  },
+  {
+   "key": "D",
+   "misconception": "Background: turnout in the 2020 election was the highest in decades, so turnout did not fall steadily.",
+   "text": "A steady fall in voter turnout in presidential elections"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The account says the two parties agreed on less and less, and control of Congress swung back and forth in close elections.",
+  "B": "Polarization pushes the parties apart, so compromise would fall, not rise.",
+  "C": "Background: terms of Congress are fixed by the Constitution and did not change.",
+  "D": "Background: turnout in the 2020 election was the highest in decades, so turnout did not fall steadily.",
+  "general": "1. Ask what happens when two sides agree on less and less.\n2. The account says the parties agreed on less and control of Congress swung back and forth.\n3. A Congress split this evenly, with little common ground, struggles to pass major laws.\n4. That struggle is deadlock: each side can block the other, and little gets done.\nRemember: when agreement shrinks, the first thing to fail is the ability to pass laws."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "1.B",
+  "5.B"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, Topic 9.2 Reagan, Conservatism, and Partisan Divisions; 5 Steps 2024 Ch. 31; Princeton Review Ch. 13.",
+ "status": "final",
+ "stem": "Deepening polarization most directly caused which change in how the federal government worked?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Secondary account paraphrased from the grounding books (Barron's Premium 2027 Ch. 11; 5 Steps 2024 Ch. 31).",
+  "text": "Paraphrase of a secondary account: American politics grew more divided from the 1990s onward. In 1994, Republicans won control of Congress on the Contract with America, and the two parties soon fought over impeachment, first against President Clinton in 1998 and later against President Trump. The presidential election of 2000 was decided by the Supreme Court after a disputed recount in Florida.\n\nAt the same time, the parties were sorting themselves out: liberals moved toward the Democrats and conservatives toward the Republicans, so each party's voters grew more uniform in their views. Cable television and then social media let Americans choose news that matched their views and rarely hear the other side. By the 2020s, the two parties agreed on less and less, and control of Congress swung back and forth in close elections."
+ },
+ "stimulus_set": "polarization-causes",
+ "themes": [
+  "PCE"
+ ],
+ "topics": [
+  "9.7"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

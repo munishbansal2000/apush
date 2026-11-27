@@ -1,0 +1,79 @@
+{
+ "answerKey": "A",
+ "difficulty": 3,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.5 Migration and Immigration, 1980 to the Present"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 30",
+    "section": "Threat of Terrorism, Increase of Presidential Power, and Economic Crisis (2001\u20132016)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Changing Demographics"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2953",
+ "lesson": "apush-u9-l4",
+ "options": [
+  {
+   "key": "A",
+   "text": "Families from Central America seeking asylum made up more than half of apprehensions"
+  },
+  {
+   "key": "B",
+   "misconception": "Visa overstays happen at airports, not at the southwest border.",
+   "text": "A surge of European tourists overstaying visas at airports"
+  },
+  {
+   "key": "C",
+   "misconception": "The table covers the southwest border with Mexico, not the northern border.",
+   "text": "A wave of Canadian workers crossing the northern border"
+  },
+  {
+   "key": "D",
+   "misconception": "By 2019 the flow had shifted toward Central American families, not single Mexican adults.",
+   "text": "A rise in crossings by single adults from Mexico, as in 2000"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Background: in 2019, families were 473,682 of the 851,508 apprehensions, more than half, and migrants from El Salvador, Guatemala, and Honduras made up 81 percent of all apprehensions. In 2000, single adults from Mexico dominated.",
+  "B": "Background: tourists who overstay visas are counted at airports, not in Border Patrol apprehensions.",
+  "C": "Background: the table covers the border with Mexico, where the 2019 arrivals came from Central America.",
+  "D": "Background: single adults were only 301,806 of the 851,508 apprehensions in 2019.",
+  "general": "1. Compare the two years. Background: in 2000, single adults from Mexico dominated the flow.\n2. Background: in 2019, families were 473,682 of 851,508 apprehensions, more than half.\n3. Background: most of those families came from El Salvador, Guatemala, and Honduras, not Mexico.\n4. The rebound was a change in who arrived, not just in how many arrived.\nRemember: when a total jumps, ask whether the people behind it changed too."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "2.B"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, Topic 9.5; 5 Steps 2024 Ch. 29/30; Princeton Review Ch. 13. U.S. Customs and Border Protection, U.S. Border Patrol southwest border apprehensions (public data).",
+ "status": "final",
+ "stem": "The 2019 rebound in the table most directly reflects which change in who was arriving?",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "U.S. Customs and Border Protection, U.S. Border Patrol southwest border apprehensions (public data).",
+  "text": "| Fiscal year | U.S. Border Patrol apprehensions, southwest border |\n| 2000 | 1,643,679 |\n| 2005 | 1,171,396 |\n| 2010 | 447,731 |\n| 2017 | 303,916 |\n| 2019 | 851,508 |\n\nSource: U.S. Customs and Border Protection, U.S. Border Patrol southwest border apprehensions. Simplified for this test."
+ },
+ "stimulus_set": "border-apprehensions",
+ "themes": [
+  "MIG",
+  "GEO"
+ ],
+ "topics": [
+  "9.5"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

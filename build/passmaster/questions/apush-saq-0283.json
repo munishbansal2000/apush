@@ -1,0 +1,91 @@
+{
+ "id": "apush-saq-0283",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 9,
+ "topics": [
+  "9.4"
+ ],
+ "skills": [
+  "3.A",
+  "5.A"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "status": "final",
+ "lesson": "apush-u9-l3",
+ "source": "original; stimulus from the shared image pool or paraphrased from the grounding books",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "The Rise of the Service Sector"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 28",
+    "section": "Decline and Rebirth (1968-1988)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Wage Stagnation"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "U.S. Bureau of Labor Statistics, Current Population Survey.",
+  "text": "| Sector | 1983 | 2010 |\n| Private-sector workers in unions | 16.8% | 6.9% |\n| Public-sector workers in unions | 36.7% | 36.2% |\n\nSource: U.S. Bureau of Labor Statistics, Current Population Survey. Simplified for this test."
+ },
+ "stimulus_set": null,
+ "saq_slot": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one thing the table shows about union membership between 1983 and 2010.",
+   "modelAnswer": "The table shows private-sector union membership collapsing, from 16.8 percent of private-sector workers in 1983 to 6.9 percent in 2010. Public-sector membership, by contrast, held almost steady near 36 percent.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one thing the table shows, such as the sharp fall in private-sector membership or the stability of public-sector membership.",
+     "notEarned": "Naming a figure with no comparison, or stating something the table does not show, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain ONE reason private-sector union membership fell as the table shows.",
+   "modelAnswer": "Factory jobs were the most unionized private-sector jobs, and they shrank for decades as firms automated and moved production abroad. Service work grew to replace them, and service jobs were far less unionized.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one reason, such as the shrinkage of manufacturing, offshoring, automation, or the growth of less-unionized service work.",
+     "notEarned": "Naming a reason with no explanation, or explaining the public-sector figures instead, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE consequence of the decline in private-sector union membership.",
+   "modelAnswer": "With fewer workers bargaining together, workers had less power to press for higher pay, and economists link the union decline to wage stagnation for workers without a college degree. Inequality widened as bargaining power thinned.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one consequence, such as weaker bargaining power, wage stagnation, or widening inequality.",
+     "notEarned": "Naming a consequence with no explanation, or describing a consequence for the public sector, does not earn the point."
+    }
+   ]
+  }
+ ],
+ "totalPoints": 3
+}

@@ -1,0 +1,80 @@
+{
+ "answerKey": "C",
+ "difficulty": 2,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "The Housing Crisis and the Great Recession"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 30",
+    "section": "Threat of Terrorism, Increase of Presidential Power, and Economic Crisis (2001-2016)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Recent Trends"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2993",
+ "lesson": "apush-u9-l5",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Lower interest rates were a policy response to the crisis, not evidence that trust stayed low afterward.",
+   "text": "The Federal Reserve lowered interest rates during the crisis"
+  },
+  {
+   "key": "B",
+   "misconception": "Falling unemployment shows the economy healing, which weakens a claim about lasting distrust.",
+   "text": "Unemployment fell from 10 percent in 2009 to under 5 percent by 2017"
+  },
+  {
+   "key": "C",
+   "text": "Populist movements rose on both the left and the right"
+  },
+  {
+   "key": "D",
+   "misconception": "New regulations were a policy response to the crisis, not evidence that trust stayed low afterward.",
+   "text": "Congress passed new financial regulations in 2010"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Lower interest rates were a policy response to the crisis, not evidence that trust stayed low afterward.",
+  "B": "Falling unemployment shows the economy healing, which weakens a claim about lasting distrust.",
+  "C": "The account says the Tea Party and Occupy Wall Street both distrusted the establishment. Background: later elections rewarded anti-establishment candidates.",
+  "D": "New regulations were a policy response to the crisis, not evidence that trust stayed low afterward.",
+  "general": "1. A claim about lasting distrust needs evidence from after the crisis, not during it.\n2. Policy responses like interest-rate cuts and new regulations show what the government did, not what people believed.\n3. The account says both the Tea Party and Occupy Wall Street distrusted the establishment, from opposite sides.\n4. Background: that distrust carried into later elections, where anti-establishment candidates gained ground.\nRemember: to support a claim about a lasting effect, use evidence from well after the cause."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "3.D",
+  "5.B"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, The Housing Crisis and the Great Recession; 5 Steps 2024 Ch. 30; Princeton Review Ch. 13.",
+ "status": "final",
+ "stem": "A historian claims the Great Recession caused a lasting loss of trust in American institutions. Which evidence best supports that claim?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Secondary account paraphrased from the grounding books (Barron's Premium 2027 Ch. 11; 5 Steps 2024 Ch. 30).",
+  "text": "Paraphrase of a secondary account: The housing bubble burst in 2007, and the financial crisis that followed was the worst since the Great Depression. Banks that had bundled risky mortgages into securities cut back on lending, businesses laid off workers, and unemployment reached 10 percent in October 2009. The federal government rescued large banks and auto companies with the Troubled Asset Relief Program in 2008 and passed a stimulus of almost 800 billion dollars in 2009.\n\nMany Americans saw the rescues as proof that Washington protected large institutions while ordinary families lost homes and jobs. In 2009, the Tea Party movement rose on the right, demanding smaller government and lower spending. In 2011, Occupy Wall Street protesters camped in a New York park, charging that the richest 1 percent held too much wealth and power. Both movements distrusted the political establishment, though they proposed opposite cures."
+ },
+ "stimulus_set": "bailouts-populism",
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "topics": [
+  "9.7"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

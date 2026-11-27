@@ -1,0 +1,78 @@
+{
+ "answerKey": "D",
+ "difficulty": 4,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.1 Contextualizing Period 9"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 30",
+    "section": "Threat of Terrorism, Increase of Presidential Power, and Economic Crisis (2001\u20132016)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "The 2000 Election"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2858",
+ "lesson": "apush-u9-l1",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The table shows the opposite: incumbents lost in 1980 and 1992.",
+   "text": "Voters consistently rewarded the party in power with larger majorities in every election."
+  },
+  {
+   "key": "B",
+   "misconception": "No third-party candidate won an electoral vote in these years.",
+   "text": "Third-party candidates regularly won electoral votes and decided the outcome of elections."
+  },
+  {
+   "key": "C",
+   "misconception": "Democrats won in 1992 and 1996, so Republicans did not win every contest in the period.",
+   "text": "Republican candidates won every presidential election between 1980 and 2000."
+  },
+  {
+   "key": "D",
+   "text": "Landslide victories gave way to narrow, closely divided elections as the period went on."
+  }
+ ],
+ "pool": "test",
+ "rationales": {
+  "A": "The table shows the opposite: incumbents lost in 1980 and 1992. Background: Carter lost in 1980 and the elder Bush lost in 1992, so voters did not consistently reward the party in power.",
+  "B": "No third-party candidate won an electoral vote in these years. Background: Perot won nearly a fifth of the popular vote in 1992 but no electoral votes at all.",
+  "C": "Democrats won in 1992 and 1996. Background: Clinton carried both elections, so Republicans did not win every contest in the period.",
+  "D": "The table shows the pattern: 525 electoral votes in 1984, then 426, 370, 379, and finally 271 in 2000, when the winner lost the popular vote. Background: the 2000 election was decided by the Supreme Court in Bush v. Gore after a disputed Florida recount.\nWide margins at the start of the period, knife-edge margins at the end \u2014 that is a country growing more evenly and bitterly divided.",
+  "general": "1. Read the columns, not the names. Electoral votes fall from 525 to 271 across the table.\n2. Watch the popular vote too. Reagan won by 18 points in 1984; in 2000 the winner trailed his opponent.\n3. Ask what the pattern means. Background: the 2000 election ended in the Supreme Court, a sign of how evenly the country had split.\n4. Rule out the easy stories. Incumbents lost, third parties won no electors, and both parties won elections.\nRemember: the table tells the story of the period in one line \u2014 big wins first, a dead heat last."
+ },
+ "reasoning": "continuity-change",
+ "skills": [
+  "3.D",
+  "5.A"
+ ],
+ "source": "original; stimulus table drawn from the American Presidency Project election data, via the Gilder Lehrman Institute",
+ "status": "final",
+ "stem": "Which conclusion about American politics in this period is best supported by the table?",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Data from the American Presidency Project, via the Gilder Lehrman Institute of American History.",
+  "text": "Presidential election results, 1980\u20132000:\n\n| Year | Winner | Winner's popular vote | Runner-up's popular vote | Winner's electoral votes |\n| 1980 | Ronald Reagan (R) | 50.7% | Carter 41.0% | 489 |\n| 1984 | Ronald Reagan (R) | 58.8% | Mondale 40.6% | 525 |\n| 1988 | George H. W. Bush (R) | 53.4% | Dukakis 45.6% | 426 |\n| 1992 | Bill Clinton (D) | 43.0% | Bush 37.4% | 370 |\n| 1996 | Bill Clinton (D) | 49.2% | Dole 40.7% | 379 |\n| 2000 | George W. Bush (R) | 47.9% | Gore 48.4% | 271 |\n\nRoss Perot, running as an independent, won 18.9% of the popular vote in 1992 and 8.4% in 1996, winning no electoral votes in either year."
+ },
+ "stimulus_set": "elections-1980-2000",
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "topics": [
+  "9.1"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

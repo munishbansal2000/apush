@@ -1,0 +1,86 @@
+{
+ "id": "apush-mcq-2915",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 9,
+ "topics": [
+  "9.4"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "WXT"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 2,
+ "status": "final",
+ "lesson": "apush-u9-l3",
+ "source": "original; stimulus from the shared image pool or paraphrased from the grounding books",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "The Rise of the Service Sector"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "Prosperity and a New World Order (1988\u20132000)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Digital Revolution"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stem": "Which of the following best describes the change shown in the chart?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Manufacturing jobs grew steadily as a share of all American jobs",
+   "misconception": "The line falls at every step, from 25 percent to 9 percent; it never grows."
+  },
+  {
+   "key": "B",
+   "text": "Manufacturing output collapsed even as factory jobs held steady",
+   "misconception": "The chart measures jobs, not output. Background: American factory output kept growing as machines did more of the work."
+  },
+  {
+   "key": "C",
+   "text": "Manufacturing jobs shrank steadily as a share of all American jobs"
+  },
+  {
+   "key": "D",
+   "text": "Service jobs disappeared while factory jobs stayed flat",
+   "misconception": "Background: service jobs grew while factory jobs shrank; the falling line is the factory side of that shift."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "The line falls at every step, from 25 percent to 9 percent, so the share shrank rather than grew.",
+  "B": "Background: the chart measures jobs, not output, and American factory output kept growing as machines did more of the work.",
+  "C": "The chart shows manufacturing's share falling at every step, from 25 percent in 1970 to 9 percent in 2010.",
+  "D": "Background: service jobs grew while factory jobs shrank; the falling line is the factory side of that shift.",
+  "general": "1. Read the line like a story: it starts at 25 percent in 1970 and ends at 9 percent in 2010.\n2. Ask what a falling share means: factories held a smaller slice of the jobs pie at every step.\n3. Keep jobs and output apart. Background: the chart counts jobs, and factory output kept growing.\n4. The shift ran one way for forty years, with no step back up.\nRemember: a shrinking slice is not a vanished pie \u2014 factories made more with fewer workers."
+ },
+ "stimulus": {
+  "kind": "chart",
+  "source_note": "Chart plotted from U.S. Bureau of Labor Statistics, Current Employment Statistics, Table B-1 (annual averages); shares computed from published employment levels.",
+  "text": "| Year | Manufacturing share of all U.S. jobs |\n| 1970 | 25% |\n| 1980 | 21% |\n| 1990 | 16% |\n| 2000 | 13% |\n| 2010 | 9% |\n\nSource: U.S. Bureau of Labor Statistics, Current Employment Statistics, Table B-1 (annual averages); shares computed from published employment levels."
+ },
+ "stimulus_set": "manufacturing-share-1970-2010",
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2915",
+   "file": "u9/fig-manufacturing-share-1970-2010.jpg",
+   "caption": "Manufacturing jobs as a share of all U.S. nonfarm jobs, 1970\u20132010. Source: U.S. Bureau of Labor Statistics.",
+   "alt": "Line chart showing manufacturing jobs falling from 25 percent of all U.S. jobs in 1970 to 9 percent in 2010",
+   "license": "Chart data: public U.S. government data",
+   "source_url": "https://www.bls.gov/opub/btn/volume-9/forty-years-of-falling-manufacturing-employment.htm"
+  }
+ ]
+}

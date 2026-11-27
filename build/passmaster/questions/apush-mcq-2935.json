@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-2935",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 9,
+ "topics": [
+  "9.4"
+ ],
+ "skills": [
+  "5.B"
+ ],
+ "themes": [
+  "GEO",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "status": "final",
+ "lesson": "apush-u9-l3",
+ "source": "original; stimulus from the shared image pool or paraphrased from the grounding books",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "The Rise of the Service Sector"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "Prosperity and a New World Order (1988\u20132000)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Digital Revolution"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stem": "The change shown in the photograph most directly contributed to which political development?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The Sun Belt's rise as the political center of gravity"
+  },
+  {
+   "key": "B",
+   "text": "The end of the two-party system",
+   "misconception": "The two-party system survived deindustrialization; the parties did not disappear."
+  },
+  {
+   "key": "C",
+   "text": "A sharp fall in voter turnout in the South",
+   "misconception": "The South gained people and power in these decades; turnout did not collapse there."
+  },
+  {
+   "key": "D",
+   "text": "The repeal of the Nineteenth Amendment",
+   "misconception": "The Nineteenth Amendment, giving women the vote, was never repealed."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Background: as factory jobs left the Northeast and Midwest, people and power shifted to the South and West.",
+  "B": "The two-party system survived deindustrialization. Background: the parties changed; they did not disappear.",
+  "C": "The South gained people and power in these decades. Background: the Sun Belt grew as the Rust Belt shrank.",
+  "D": "The Nineteenth Amendment, giving women the vote, was never repealed.",
+  "general": "1. Start with the empty mill: factory jobs left the Northeast and Midwest.\n2. Background: people followed the jobs south and west, to the Sun Belt's defense plants and cheaper suburbs.\n3. People carry political power with them \u2014 House seats followed the same road.\n4. The parties did not vanish, the South did not empty, and no amendment was repealed.\nRemember: jobs move first, people second, and power third."
+ },
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Photograph by Jet Lowe, 1989, Historic American Engineering Record, Library of Congress. Public domain (U.S. federal government work).",
+  "text": "Photograph of an abandoned section of the Bethlehem Steel rail mill in Bethlehem, Pennsylvania, 1989. The mill's roof has been removed, weeds grow in the empty yard, and no workers or machinery are in sight."
+ },
+ "stimulus_set": "bethlehem-steel-1989",
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2935",
+   "file": "u9/bethlehem-steel-abandoned-mill-1989.jpg",
+   "caption": "Abandoned section of the Bethlehem Steel rail mill, Bethlehem, Pennsylvania, 1989",
+   "alt": "Black-and-white photograph of an abandoned Bethlehem Steel rail mill in 1989, its roof removed and weeds growing in the empty yard",
+   "license": "Public domain (U.S. federal government work; Library of Congress, Historic American Engineering Record)",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Abandoned_section_of_rail_mill_where_the_roof_has_been_removed;_looking_southwest_-_Bethlehem_Steel_Corporation,_South_Bethlehem_Works,_Iron_Foundry,_Along_Lehigh_River,_North_HAER_PA,48-BETH,19A-10.tif"
+  }
+ ]
+}

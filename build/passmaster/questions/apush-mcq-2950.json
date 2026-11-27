@@ -1,0 +1,79 @@
+{
+ "answerKey": "D",
+ "difficulty": 3,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.5 Migration and Immigration, 1980 to the Present"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 30",
+    "section": "Threat of Terrorism, Increase of Presidential Power, and Economic Crisis (2001\u20132016)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Changing Demographics"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2950",
+ "lesson": "apush-u9-l4",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The Court's size is set by law, not by the census.",
+   "text": "The number of justices on the Supreme Court"
+  },
+  {
+   "key": "B",
+   "misconception": "Presidential terms are fixed at four years by the Constitution.",
+   "text": "The length of presidential terms"
+  },
+  {
+   "key": "C",
+   "misconception": "The voting age is set by the Twenty-sixth Amendment, not by apportionment.",
+   "text": "The voting age in federal elections"
+  },
+  {
+   "key": "D",
+   "text": "Each state's votes in the Electoral College"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Background: Congress sets the number of justices, and the census does not touch it.",
+  "B": "Background: the Constitution fixes presidential terms at four years.",
+  "C": "Background: the Twenty-sixth Amendment sets the voting age at eighteen.",
+  "D": "Background: a state's electoral votes equal its House seats plus its two senators. Gaining or losing a House seat changes its Electoral College weight by the same amount.",
+  "general": "1. Ask what a House seat carries with it. Background: each seat adds one vote in the Electoral College.\n2. Texas gained two seats, so it gained two electoral votes; the losing states each lost one.\n3. The Court, term lengths, and voting age are fixed by law or amendment, not by the census.\n4. Only the Electoral College moves when House seats move.\nRemember: House seats, electoral votes, and population move together after each census."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "3.B"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, Topic 9.5; 5 Steps 2024 Ch. 29/30; Princeton Review Ch. 13. U.S. Census Bureau, 2020 apportionment results, as summarized in Barron's Premium 2027, Chapter 11.",
+ "status": "final",
+ "stem": "The shift shown in the table most directly affected which of the following?",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "U.S. Census Bureau, 2020 apportionment results, as summarized in Barron's Premium 2027, Chapter 11.",
+  "text": "| 2020 census reapportionment | Change in House seats |\n| Texas | +2 |\n| North Carolina, Florida, Montana, Oregon, Colorado | +1 each |\n| Pennsylvania, Illinois, Michigan, Ohio, New York, West Virginia | \u22121 each |\n| California | \u22121 (first loss ever) |\n\nSource: U.S. Census Bureau, 2020 apportionment results, as summarized in Barron's AP U.S. History Premium, 2027, Chapter 11. Simplified for this test."
+ },
+ "stimulus_set": "sunbelt-apportionment",
+ "themes": [
+  "MIG",
+  "PCE"
+ ],
+ "topics": [
+  "9.5"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

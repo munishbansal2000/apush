@@ -1,0 +1,87 @@
+{
+ "answerKey": "B",
+ "difficulty": 2,
+ "figures": [
+  {
+   "alt": "Two East German border guards looking out from a watchtower on the Berlin Wall near Checkpoint Charlie",
+   "caption": "East German guards at the Berlin Wall, Checkpoint Charlie",
+   "file": "u9/original-ctx-u9-03.jpg",
+   "id": "fig-apush-mcq-2857",
+   "license": "Public domain (U.S. federal government work)",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/East_German_guards_feed_the_birds_from_their_post_at_the_Berlin_Wall_near_Checkpoint_Charlie._DF-ST-91-01465.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.3 The End of the Cold War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "Prosperity and a New World Order (1988\u20132000)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Chapter 13 Summary"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2857",
+ "lesson": "apush-u9-l1",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "NAFTA concerns trade in North America, not the division of Berlin.",
+   "text": "The signing of the North American Free Trade Agreement, which linked the United States, Canada, and Mexico in 1993."
+  },
+  {
+   "key": "B",
+   "text": "The fall of the Berlin Wall in November 1989 and the collapse of Communist rule in Eastern Europe."
+  },
+  {
+   "key": "C",
+   "misconception": "Reagan's election came nine years before the Wall fell.",
+   "text": "The election of Ronald Reagan in 1980, which brought a new conservative president to the White House."
+  },
+  {
+   "key": "D",
+   "misconception": "The Patriot Act concerns security after the 2001 attacks; it has nothing to do with Berlin.",
+   "text": "The passage of the Patriot Act in 2001, which expanded federal surveillance powers after the September 11 attacks."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "NAFTA concerns trade in North America, not the division of Berlin. Background: the agreement linked the United States, Canada, and Mexico and took effect in 1994.",
+  "B": "The photograph shows guards manning a barrier that no longer exists. Background: the Wall fell in November 1989, and just over two years later the Soviet Union itself had dissolved.\nWith Communist rule gone, there was no border left to guard \u2014 the tower became a museum piece.",
+  "C": "Reagan's election came nine years before the Wall fell. Background: his presidency pressured the Soviet Union, but the Wall itself stood until 1989.",
+  "D": "The Patriot Act concerns security after the 2001 attacks. Background: it expanded surveillance and created new federal powers, but it has nothing to do with Berlin.",
+  "general": "1. Ask what the photograph needs to exist. A guarded wall, a divided city, a Communist state to defend it.\n2. Ask what took those away. Background: in November 1989 crowds passed through the Wall's checkpoints, and Communist governments fell across Eastern Europe.\n3. Check the other dates. NAFTA, Reagan's election, and the Patriot Act all belong to different stories.\n4. Name the change. The scene ended when the division it guarded ended.\nRemember: the guards left their tower because the country behind them stopped existing, not because of a trade deal or a new law."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "1.B"
+ ],
+ "source": "original; stimulus image from the shared pool, East German guards at the Berlin Wall near Checkpoint Charlie, public domain",
+ "status": "final",
+ "stem": "Which development most directly made the scene in this photograph a thing of the past?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "U.S. Department of Defense photograph of East German guards at their post on the Berlin Wall near Checkpoint Charlie, Berlin; U.S. federal government photograph, public domain.",
+  "text": "Two East German border guards look out from a watchtower on the Berlin Wall near Checkpoint Charlie. The Wall's rounded top runs across the foreground, and an apartment building stands behind it."
+ },
+ "stimulus_set": "berlin-wall-guards",
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "topics": [
+  "9.1"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

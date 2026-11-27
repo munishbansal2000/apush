@@ -1,0 +1,86 @@
+{
+ "id": "apush-mcq-2892",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 9,
+ "topics": [
+  "9.3"
+ ],
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "status": "final",
+ "lesson": "apush-u9-l2",
+ "source": "original; stimulus from the shared image pool or paraphrased from the grounding books",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "B. The Fall of the Berlin Wall and the End of the Cold War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "The Presidency of George H. W. Bush"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "George H. W. Bush"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stem": "Which of the following best explains why the Berlin Wall fell in 1989 rather than in an earlier decade?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The United States had withdrawn all of its troops from West Berlin",
+   "misconception": "American troops remained in West Berlin until after reunification; no withdrawal caused the fall."
+  },
+  {
+   "key": "B",
+   "text": "The Soviet Union had signed a treaty promising to tear the Wall down",
+   "misconception": "No such treaty existed; the Wall fell because of protests and Soviet non-intervention, not a treaty."
+  },
+  {
+   "key": "C",
+   "text": "Gorbachev's reforms and his refusal to use Soviet force let protests succeed"
+  },
+  {
+   "key": "D",
+   "text": "East Germany had voted to join NATO in a national referendum",
+   "misconception": "No such referendum happened; East Germany joined the West through reunification in 1990."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "American troops stayed in West Berlin through 1989. Background: the Wall fell because of events in the East, not an American withdrawal.",
+  "B": "The photograph shows no treaty about the Wall. Background: Moscow never agreed to tear the Wall down; East Germany opened it under pressure from protests.",
+  "C": "Background: Gorbachev loosened Soviet control of Eastern Europe and made clear he would not send tanks to save Communist governments, as earlier Soviet leaders had. With that threat gone, mass protests in Poland and East Germany toppled the regimes, and the Wall came down.",
+  "D": "East Germany never held a referendum on joining NATO. Background: reunification in 1990 brought the eastern states into the Federal Republic, which was already in NATO.",
+  "general": "1. Ask what was different about 1989. The Wall had stood for twenty-eight years, through many protests.\n2. Background: earlier Soviet leaders had sent tanks to crush reform movements, in Hungary in 1956 and Czechoslovakia in 1968.\n3. Background: Gorbachev broke that pattern. His reforms loosened control, and he refused to use force to save the Communist regimes.\n4. Once the threat of Soviet tanks was gone, protests that would once have been crushed were able to topple the governments.\nRemember: the Wall fell when Moscow stopped holding it up."
+ },
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Photograph by Staff Sergeant F. Lee Corkran, U.S. Department of Defense, November 14, 1989, Potsdamer Platz, Berlin. Public domain (U.S. federal government work).",
+  "text": "Photograph of a man on a ladder using a hammer and chisel to chip a piece from the Berlin Wall at Potsdamer Platz, Berlin, November 1989. The Wall's western face is covered in colorful graffiti, and a crowd watches from below."
+ },
+ "stimulus_set": "berlin-wall-fall-1989",
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2892",
+   "file": "u9/saq-set-15-q3.jpg",
+   "caption": "A Berliner chips a souvenir from the Berlin Wall, Potsdamer Platz, November 1989",
+   "alt": "A man on a ladder chips at the graffiti-covered Berlin Wall with a hammer and chisel while a crowd watches below",
+   "license": "Public domain (U.S. federal government work)",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/17/A_West_German_man_uses_a_hammer_and_chisel_to_chip_off_a_piece_of_the_Berlin_Wall_as_a_souvenir._A_portion_of_the_Wall_has_already_been_demolished_at_Potsdamer_Platz_-_DPLA_-_87aa792db1b00409c70c1d5fdbcfe340.jpeg"
+  }
+ ]
+}

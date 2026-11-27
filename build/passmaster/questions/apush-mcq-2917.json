@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-2917",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 9,
+ "topics": [
+  "9.4"
+ ],
+ "skills": [
+  "5.B"
+ ],
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "status": "final",
+ "lesson": "apush-u9-l3",
+ "source": "original; stimulus from the shared image pool or paraphrased from the grounding books",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "The Rise of the Service Sector"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "Prosperity and a New World Order (1988\u20132000)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Digital Revolution"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stem": "Which of the following most likely contributed to the trend shown in the chart?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The spread of air conditioning across the Sun Belt",
+   "misconception": "Air conditioning moved people and plants south, but that shifts jobs within the country, not out of factory work."
+  },
+  {
+   "key": "B",
+   "text": "The building of the Interstate Highway System in the 1950s",
+   "misconception": "The highways were built in the 1950s, before this chart's slide, and they helped factories more than they hurt them."
+  },
+  {
+   "key": "C",
+   "text": "Rising farm productivity after World War II",
+   "misconception": "Farm productivity shrank farm jobs in an earlier era; it does not explain factory jobs after 1970."
+  },
+  {
+   "key": "D",
+   "text": "Automation and firms moving production to lower-wage countries"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "A": "Sun Belt growth moved jobs within the United States. Background: the national factory share fell anyway, so the cause lay elsewhere.",
+  "B": "The highway system dates to the 1950s, two decades before the slide. Background: it spread factories out; it did not shrink them.",
+  "C": "Farm productivity explains the earlier fall in farm jobs. Background: this chart tracks factory jobs after 1970.",
+  "D": "Background: machines replaced workers on the line, and firms moved production abroad to lower-wage countries; the books name both forces.",
+  "general": "1. Ask what can shrink factory jobs across the whole country at once: something that changes how goods are made, or where.\n2. Background: automation let factories produce more with fewer hands, and offshoring moved the work abroad.\n3. Test the local answers: air conditioning and highways moved jobs around the map, not out of the sector.\n4. The forty-year slide fits forces that never let up, not one dated event.\nRemember: when the work itself moves or machines take it, the jobs share falls everywhere at once."
+ },
+ "stimulus": {
+  "kind": "chart",
+  "source_note": "Chart plotted from U.S. Bureau of Labor Statistics, Current Employment Statistics, Table B-1 (annual averages); shares computed from published employment levels.",
+  "text": "| Year | Manufacturing share of all U.S. jobs |\n| 1970 | 25% |\n| 1980 | 21% |\n| 1990 | 16% |\n| 2000 | 13% |\n| 2010 | 9% |\n\nSource: U.S. Bureau of Labor Statistics, Current Employment Statistics, Table B-1 (annual averages); shares computed from published employment levels."
+ },
+ "stimulus_set": "manufacturing-share-1970-2010",
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2917",
+   "file": "u9/fig-manufacturing-share-1970-2010.jpg",
+   "caption": "Manufacturing jobs as a share of all U.S. nonfarm jobs, 1970\u20132010. Source: U.S. Bureau of Labor Statistics.",
+   "alt": "Line chart showing manufacturing jobs falling from 25 percent of all U.S. jobs in 1970 to 9 percent in 2010",
+   "license": "Chart data: public U.S. government data",
+   "source_url": "https://www.bls.gov/opub/btn/volume-9/forty-years-of-falling-manufacturing-employment.htm"
+  }
+ ]
+}

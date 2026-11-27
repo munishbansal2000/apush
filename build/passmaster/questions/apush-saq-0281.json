@@ -1,0 +1,91 @@
+{
+ "id": "apush-saq-0281",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 9,
+ "topics": [
+  "9.3"
+ ],
+ "skills": [
+  "2.B",
+  "3.B"
+ ],
+ "themes": [
+  "WXT",
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "status": "final",
+ "lesson": "apush-u9-l2",
+ "source": "original; stimulus from the shared image pool or paraphrased from the grounding books",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "A. Soviet-American Relations from D\u00e9tente to Confrontation"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 28",
+    "section": "Decline and Rebirth (1968-1988)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Foreign Policy Under Reagan"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of President Ronald Reagan's address to the British Parliament, June 8, 1982. Post-1929 material is paraphrased, not quoted.",
+  "text": "Paraphrase of President Ronald Reagan's address to the British Parliament, June 8, 1982: Reagan predicted that the advance of freedom and democracy would leave Marxism-Leninism behind, as a system that could not survive the longing of ordinary people for liberty. He called on the democracies to stand firm and to have faith that free societies would outlast the Soviet system."
+ },
+ "stimulus_set": null,
+ "saq_slot": 2,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Briefly describe Reagan's view of communism's future, as shown in the passage.",
+   "modelAnswer": "Reagan believed communism was doomed because it denied people the freedom they naturally wanted. He expected free societies to outlast the Soviet system as democracy advanced around the world.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for describing Reagan's view that communism would fail because it denied freedom, and that free societies would outlast it.",
+     "notEarned": "Quoting the passage with no description, or describing a different view, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain ONE reason Reagan spoke this way in 1982.",
+   "modelAnswer": "In 1982 Reagan was in the confrontational phase of his presidency, rebuilding American military strength after the Soviet invasion of Afghanistan. He used moral language to rally the West behind a hard line against Moscow.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one reason, such as the post-Afghanistan confrontation, the military buildup, or the need to rally Western opinion behind a hard line.",
+     "notEarned": "Naming a reason with no explanation, or describing the speech's later effects, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE way later events bore out Reagan's prediction.",
+   "modelAnswer": "In 1989 Communist governments fell across Eastern Europe as ordinary people took to the streets, and the Soviet Union dissolved in 1991. The system Reagan had predicted would fail did collapse within a decade of his speech.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one later event that matched the prediction, such as the 1989 revolutions, the fall of the Berlin Wall, or the Soviet dissolution in 1991.",
+     "notEarned": "Naming an event with no link to the prediction does not earn the point."
+    }
+   ]
+  }
+ ],
+ "totalPoints": 3
+}

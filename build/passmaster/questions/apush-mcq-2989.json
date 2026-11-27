@@ -1,0 +1,77 @@
+{
+ "answerKey": "D",
+ "difficulty": 3,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "Prosperity and a New World Order (1988-2000)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "The Clinton Presidency (1993-2001)"
+   }
+  ],
+  "primary_sources": [
+   "OMB Historical Tables, Table 1.1 (federal surplus/deficit by fiscal year)"
+  ]
+ },
+ "id": "apush-mcq-2989",
+ "lesson": "apush-u9-l5",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Background: defense spending fell after the Cold War ended; it did not rise sharply.",
+   "text": "A sharp rise in defense spending after the Cold War ended"
+  },
+  {
+   "key": "B",
+   "misconception": "Tax cuts reduce revenue, which pushes the budget toward deficit, not surplus.",
+   "text": "Large tax cuts that reduced federal revenue"
+  },
+  {
+   "key": "C",
+   "misconception": "Background: the late 1990s were a boom, not a recession, and a recession would cut revenue, not create a surplus.",
+   "text": "A deep recession that cut government spending"
+  },
+  {
+   "key": "D",
+   "text": "Strong revenue growth during the technology boom, with spending held in check"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Background: defense spending fell after the Cold War ended. It did not rise sharply.",
+  "B": "Tax cuts reduce revenue, which pushes the budget toward deficit, not surplus.",
+  "C": "Background: the late 1990s were a boom, not a recession, and a recession would cut revenue rather than create a surplus.",
+  "D": "The table shows the budget moving from a 22 billion dollar deficit in 1997 to a 236 billion dollar surplus in 2000, during the technology boom.",
+  "general": "1. Read the table first: the budget moved from deficit to surplus between 1997 and 2000.\n2. A surplus means the government took in more than it spent.\n3. Background: the late 1990s brought a technology boom, and tax revenue grew fast as businesses and stock markets expanded.\n4. Background: Congress and the president also held spending in check, so the extra revenue showed up as surplus rather than new programs.\nRemember: a surplus comes from revenue growing faster than spending, so check both sides of the ledger."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "3.B",
+  "1.B"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "5 Steps 2024 Ch. 29; Princeton Review Ch. 13, The Clinton Presidency (1993-2001). Budget data: OMB Historical Tables, Table 1.1.",
+ "status": "final",
+ "stem": "Which of the following most directly explains the budget surpluses of 1998 to 2001?",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Data: Office of Management and Budget, Historical Tables, Table 1.1.",
+  "text": "Data table: Federal budget surplus or deficit, selected fiscal years, from the Office of Management and Budget Historical Tables.\n\n| Fiscal year | Surplus (+) or deficit (-) |\n| 1992 | -$290 billion |\n| 1997 | -$22 billion |\n| 1998 | +$69 billion |\n| 2000 | +$236 billion |\n| 2002 | -$158 billion |"
+ },
+ "stimulus_set": "surplus-1990s",
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "topics": [
+  "9.7"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

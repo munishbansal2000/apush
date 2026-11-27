@@ -1,0 +1,87 @@
+{
+ "answerKey": "D",
+ "difficulty": 2,
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2981",
+   "file": "u9/5s24-ch31-mcq-08.jpg",
+   "caption": "The Abraham Accords signing ceremony, White House, September 2020",
+   "alt": "President Trump, Prime Minister Netanyahu, and the foreign ministers of the United Arab Emirates and Bahrain seated at a table outdoors signing documents",
+   "license": "Public domain (U.S. federal government work; official White House photograph)",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/42/President_Trump_and_The_First_Lady_Participate_in_an_Abraham_Accords_Signing_Ceremony.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.6 Defining America's Role in the World in the 21st Century"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 31",
+    "section": "Tumultuous Years: The Trump and Biden Presidencies (2017-2022)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "America and the War on Terror"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2981",
+ "lesson": "apush-u9-l5",
+ "options": [
+  {
+   "key": "A",
+   "text": "In Ukraine, the United States invaded with ground troops, as it had in Iraq",
+   "misconception": "The United States did not send ground troops to fight in Ukraine."
+  },
+  {
+   "key": "B",
+   "text": "In Ukraine, the United States took no action at all",
+   "misconception": "The United States condemned the invasion, imposed sanctions, and sent military aid."
+  },
+  {
+   "key": "C",
+   "text": "In Iraq, the United States imposed sanctions but sent no troops",
+   "misconception": "The United States invaded Iraq with ground troops in 2003."
+  },
+  {
+   "key": "D",
+   "text": "In Ukraine, the United States backed the invaded country with aid and sanctions"
+  }
+ ],
+ "pool": "test",
+ "rationales": {
+  "A": "The United States sent military aid to Ukraine, not ground troops to fight there.",
+  "B": "Sanctions and military aid are real actions. The United States did not stand aside.",
+  "C": "Background: the United States invaded Iraq with ground troops in March 2003. Sanctions alone do not describe that war.",
+  "D": "The account says the United States condemned the invasion, imposed sanctions, and gave Ukraine over 64 billion dollars in military aid by 2025.",
+  "general": "1. Compare the two responses on one measure: American troops. Background: in Iraq in 2003, the United States invaded with its own forces.\n2. In Ukraine in 2022, the United States sent aid to the country that was invaded and imposed sanctions on Russia.\n3. Backing an invaded country with aid is the opposite of invading a country yourself.\n4. The difference is the role: invader in one case, supporter in the other.\nRemember: aid and sanctions support an ally, while an invasion puts your own troops on the ground."
+ },
+ "reasoning": "comparison",
+ "skills": [
+  "2.A"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, Topic 9.6; 5 Steps 2024 Ch. 31; Princeton Review Ch. 13. Photograph: official White House photograph, September 2020, public domain.",
+ "status": "final",
+ "stem": "How did the American response to Russia's invasion of Ukraine in 2022 differ from the American invasion of Iraq in 2003?",
+ "stimulus": {
+  "kind": "mixed",
+  "source_note": "Photograph: official White House photograph, September 2020. Public domain (U.S. federal government work). Account paraphrased from the grounding books (Barron's Premium 2027 Ch. 11, Topic 9.6; 5 Steps 2024 Ch. 31).",
+  "text": "Photograph of the Abraham Accords signing ceremony at the White House in September 2020: President Donald Trump, Prime Minister Benjamin Netanyahu of Israel, and the foreign ministers of the United Arab Emirates and Bahrain sit at a table outdoors, signing documents.\n\nParaphrase of a secondary account: In 2020, the Trump administration mediated the Abraham Accords, agreements in which the United Arab Emirates and Bahrain normalized relations with Israel. Trump had earlier moved the American embassy in Israel to Jerusalem in 2018 and withdrawn the United States from the Iran nuclear deal, the Joint Comprehensive Plan of Action, in the same year. In 2022, Russia invaded Ukraine, and the United States under President Biden condemned the invasion, imposed sanctions, and had given Ukraine over 64 billion dollars in military aid by 2025."
+ },
+ "stimulus_set": "trump-foreign-policy",
+ "themes": [
+  "WOR"
+ ],
+ "topics": [
+  "9.6"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

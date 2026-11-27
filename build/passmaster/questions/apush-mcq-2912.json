@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-2912",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 9,
+ "topics": [
+  "9.3"
+ ],
+ "skills": [
+  "3.C"
+ ],
+ "themes": [
+  "WXT",
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "status": "final",
+ "lesson": "apush-u9-l2",
+ "source": "original; stimulus from the shared image pool or paraphrased from the grounding books",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "B. The Fall of the Soviet Union and the Collapse of Communism"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "The Presidency of George H. W. Bush"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Foreign Policy Under Reagan"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stem": "A historian argues that Gorbachev's reforms, rather than American pressure, were the decisive cause of the Cold War's end. Which of the following pieces of evidence best supports that argument?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Reagan's military buildup increased American defense spending in the early 1980s",
+   "misconception": "The buildup supports the American-pressure argument, not the reforms argument."
+  },
+  {
+   "key": "B",
+   "text": "Eastern European governments fell only after Gorbachev refused to send Soviet troops"
+  },
+  {
+   "key": "C",
+   "text": "The INF Treaty eliminated an entire class of American and Soviet missiles",
+   "misconception": "The treaty shows negotiation between the two sides; it does not show reforms were decisive."
+  },
+  {
+   "key": "D",
+   "text": "The United States boycotted the 1980 Moscow Olympics",
+   "misconception": "The boycott was Carter-era pressure from 1980, not evidence about Gorbachev's reforms."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "The buildup is the other side's evidence. Background: it supports the argument that American pressure ended the Cold War.",
+  "B": "Background: earlier Soviet leaders had sent tanks to crush reform movements in Hungary in 1956 and Czechoslovakia in 1968. In 1989 Gorbachev broke that pattern, and without the threat of Soviet force, the Eastern European regimes fell within months.",
+  "C": "The treaty shows both sides negotiating. Background: it does not separate Gorbachev's reforms from American pressure as a cause.",
+  "D": "The boycott predates Gorbachev. Background: Carter's 1980 boycott protested the Soviet invasion of Afghanistan.",
+  "general": "1. Match the evidence to the claim. The claim is about Gorbachev's reforms, so the evidence must show the reforms doing the work.\n2. The buildup and the boycott point to American pressure, which is the rival explanation.\n3. Background: earlier Soviet leaders sent tanks to crush reform movements in Hungary in 1956 and Czechoslovakia in 1968.\n4. Background: in 1989 Gorbachev broke that pattern, and without Soviet tanks, the regimes fell within months.\nRemember: the decisive evidence is the dog that did not bark, the tanks that never came."
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original summary based on Barron's Premium 2027, Chapter 11, and Princeton Review, Chapter 13.",
+  "text": "Original summary based on the grounding books: Historians explain the end of the Cold War in two ways. Some stress American pressure: Reagan's military buildup and the Strategic Defense Initiative forced Moscow into an arms race its weak economy could not afford. Others stress the Soviet side: leader Mikhail Gorbachev's reforms of glasnost and perestroika loosened the Communist Party's grip, and his refusal to use force let protests topple Communist governments across Eastern Europe in 1989. Most historians combine the two: a system already strained from within met pressure from without."
+ },
+ "stimulus_set": "end-of-cold-war-causes",
+ "figures": null
+}

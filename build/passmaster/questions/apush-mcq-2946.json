@@ -1,0 +1,79 @@
+{
+ "answerKey": "D",
+ "difficulty": 3,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.5 Migration and Immigration, 1980 to the Present"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "Prosperity and a New World Order (1988\u20132000)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Changing Demographics"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2946",
+ "lesson": "apush-u9-l4",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Post-1965 immigration came mainly from Latin America and Asia, not Europe.",
+   "text": "The return of large-scale immigration from Europe after 1965"
+  },
+  {
+   "key": "B",
+   "misconception": "No such ban existed; the 1965 act set limits, but immigration from Latin America grew anyway.",
+   "text": "A federal law that barred immigration from Latin America"
+  },
+  {
+   "key": "C",
+   "misconception": "The border was never closed, and crossings continued through the 1990s.",
+   "text": "The closing of the border with Mexico in the 1990s to all crossings"
+  },
+  {
+   "key": "D",
+   "text": "Immigration from Latin America and children born in the United States to immigrant parents"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Background: after 1965, the main sources of immigration were Latin America and Asia.",
+  "B": "Background: the 1965 act capped Western Hemisphere immigration for the first time, but the flow still grew.",
+  "C": "Background: the southwest border stayed open to legal travel and trade through the 1990s.",
+  "D": "Background: most post-1965 immigrants came from Latin America, and their U.S.-born children added to the Hispanic population. Both flows pushed the share upward.",
+  "general": "1. Ask who was arriving. Background: after 1965, most immigrants came from Latin America and Asia.\n2. Ask what happened next. Background: their children, born in the United States, counted as Hispanic too.\n3. Two flows together, new arrivals plus their children, explain steady growth over forty years.\n4. Europe, a ban, and a closed border all contradict what the books say happened.\nRemember: population growth comes from arrivals and from births, so check both."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "2.A"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, Topic 9.5; 5 Steps 2024 Ch. 29/30; Princeton Review Ch. 13. U.S. Census Bureau, decennial censuses (public data).",
+ "status": "final",
+ "stem": "Which of the following most directly helps explain the growth shown in the table?",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "U.S. Census Bureau, decennial censuses (public data).",
+  "text": "| Year | Hispanic share of the U.S. population |\n| 1980 | 6.4% |\n| 1990 | 9.0% |\n| 2000 | 12.5% |\n| 2010 | 16.3% |\n| 2020 | 18.7% |\n\nSource: U.S. Census Bureau, decennial censuses. Simplified for this test."
+ },
+ "stimulus_set": "hispanic-share",
+ "themes": [
+  "MIG",
+  "SOC"
+ ],
+ "topics": [
+  "9.5"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

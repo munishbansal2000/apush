@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-2906",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 9,
+ "topics": [
+  "9.3"
+ ],
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "WXT",
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "status": "final",
+ "lesson": "apush-u9-l2",
+ "source": "original; stimulus from the shared image pool or paraphrased from the grounding books",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "C. President George Bush and the Persian Gulf War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "The Presidency of George H. W. Bush"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "George H. W. Bush"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stem": "Which of the following best explains why the United States went to war in the Persian Gulf in 1990-1991?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Iraq had attacked the United States mainland",
+   "misconception": "Iraq never attacked the United States mainland."
+  },
+  {
+   "key": "B",
+   "text": "The Soviet Union had invaded Saudi Arabia",
+   "misconception": "The Soviet Union invaded no one in 1990; it was collapsing."
+  },
+  {
+   "key": "C",
+   "text": "Kuwait had asked the United States to overthrow its own ruler",
+   "misconception": "Kuwait asked for help against Iraq, not for the overthrow of its own ruler."
+  },
+  {
+   "key": "D",
+   "text": "Iraq had invaded Kuwait and threatened the region's oil supplies"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "A": "No attack on the American mainland happened. Background: the war was fought in the Persian Gulf, not at home.",
+  "B": "The Soviet Union was dissolving in 1990. Background: the invader of Kuwait was Iraq, under Saddam Hussein.",
+  "C": "Kuwait's ruler asked for rescue, not overthrow. Background: Kuwait wanted its country back from Iraqi occupation.",
+  "D": "Background: Saddam Hussein's Iraq invaded Kuwait in August 1990, seizing its oil fields and massing troops on Saudi Arabia's border. President Bush organized a coalition to drive Iraq out and protect the world's access to Middle Eastern oil.",
+  "general": "1. Start with the photograph: American soldiers marching through desert sand.\n2. Ask what sent them there. Background: in August 1990 Iraq invaded Kuwait, a small oil-rich neighbor.\n3. Background: Iraqi tanks then massed on Saudi Arabia's border, threatening the world's oil supply.\n4. President Bush organized a coalition to drive Iraq out and protect that oil supply.\nRemember: the Gulf War began with an invasion of Kuwait, not an attack on America."
+ },
+ "stimulus": {
+  "kind": "image",
+  "source_note": "U.S. troops in the Persian Gulf War, 1990-1991. U.S. federal government photograph; public domain.",
+  "text": "Photograph of American soldiers in desert camouflage uniforms marching across sand during the Persian Gulf War, 1990-1991, rifles slung over their shoulders."
+ },
+ "stimulus_set": "gulf-war-1991",
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2906",
+   "file": "u9/pr25e-ch13-q07.jpg",
+   "caption": "American troops march across the desert during the Persian Gulf War, 1990-1991",
+   "alt": "American soldiers in desert camouflage uniforms marching across sand with rifles slung over their shoulders",
+   "license": "Public domain (U.S. federal government work)",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/de/U.S._troops_in_the_Persian_Gulf_War.jpg"
+  }
+ ]
+}

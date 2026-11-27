@@ -1,0 +1,79 @@
+{
+ "answerKey": "A",
+ "difficulty": 3,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.5 Migration and Immigration, 1980 to the Present"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "Prosperity and a New World Order (1988\u20132000)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Changing Demographics"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2949",
+ "lesson": "apush-u9-l4",
+ "options": [
+  {
+   "key": "A",
+   "text": "Immigration from Latin America and Asia, plus Americans moving south and west for jobs and retirement"
+  },
+  {
+   "key": "B",
+   "misconception": "The capital stayed in Washington, D.C.; no law moved it.",
+   "text": "A federal law that moved the nation's capital from Washington south to the Sun Belt"
+  },
+  {
+   "key": "C",
+   "misconception": "The South and West grew, and farm collapse would push people out, not draw them in.",
+   "text": "The collapse of farming in the South and West"
+  },
+  {
+   "key": "D",
+   "misconception": "Immigration rose sharply after 1965; it did not fall.",
+   "text": "A sharp fall in immigration after 1965"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Background: immigrants from Latin America and Asia settled heavily in California, Texas, Florida, and Arizona, while retirees and workers moved south and west for jobs and warmer weather. Both flows fed the Sun Belt's growth.",
+  "B": "Background: Washington, D.C., remains the capital, and the seat count follows people, not the capital.",
+  "C": "Background: the Sun Belt grew through defense work, services, and retirees, not through farm collapse.",
+  "D": "Background: legal immigration more than doubled between the 1970s and the 2010s.",
+  "general": "1. Ask who moved to the gaining states. Background: immigrants from Latin America and Asia settled heavily there.\n2. Ask who else moved. Background: retirees headed for Florida, and workers followed jobs south and west.\n3. Two flows together, immigration from abroad and migration within the country, built the Sun Belt.\n4. A moved capital, a farm collapse, and falling immigration all point the wrong way.\nRemember: a regional shift usually has two engines, one from abroad and one from home."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "2.A"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, Topic 9.5; 5 Steps 2024 Ch. 29/30; Princeton Review Ch. 13. U.S. Census Bureau, 2020 apportionment results, as summarized in Barron's Premium 2027, Chapter 11.",
+ "status": "final",
+ "stem": "Which of the following most directly helps explain the population shift behind the table?",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "U.S. Census Bureau, 2020 apportionment results, as summarized in Barron's Premium 2027, Chapter 11.",
+  "text": "| 2020 census reapportionment | Change in House seats |\n| Texas | +2 |\n| North Carolina, Florida, Montana, Oregon, Colorado | +1 each |\n| Pennsylvania, Illinois, Michigan, Ohio, New York, West Virginia | \u22121 each |\n| California | \u22121 (first loss ever) |\n\nSource: U.S. Census Bureau, 2020 apportionment results, as summarized in Barron's AP U.S. History Premium, 2027, Chapter 11. Simplified for this test."
+ },
+ "stimulus_set": "sunbelt-apportionment",
+ "themes": [
+  "MIG",
+  "GEO"
+ ],
+ "topics": [
+  "9.5"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

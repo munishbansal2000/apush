@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-2927",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 9,
+ "topics": [
+  "9.4"
+ ],
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "status": "final",
+ "lesson": "apush-u9-l3",
+ "source": "original; stimulus from the shared image pool or paraphrased from the grounding books",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "A. The Ascendancy of the New Right"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 28",
+    "section": "Decline and Rebirth (1968-1988)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Military Spending and Budget Deficits"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stem": "According to the passage, supply-side theory held that cutting taxes would work by",
+ "options": [
+  {
+   "key": "A",
+   "text": "Encouraging businesses to invest, which would then grow the whole economy"
+  },
+  {
+   "key": "B",
+   "text": "Putting more money directly into workers' paychecks to boost spending",
+   "misconception": "Putting money in workers' pockets to boost spending is demand-side economics, the opposite approach."
+  },
+  {
+   "key": "C",
+   "text": "Letting the government collect more revenue from higher tax rates",
+   "misconception": "Supply-side policy cut tax rates; the passage says the government then collected less than it spent."
+  },
+  {
+   "key": "D",
+   "text": "Freezing wages and prices until inflation fell",
+   "misconception": "The wage-price freeze was President Nixon's policy in 1971, not Reagan's."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "The passage says tax cuts would spur investment, and the growth that followed would benefit everyone.",
+  "B": "Boosting spending through workers' pockets is demand-side economics. Background: supply-side policy aimed at businesses, not consumers.",
+  "C": "The passage says tax cuts plus the buildup left the government spending more than it collected.",
+  "D": "Background: the wage-price freeze was President Nixon's policy in 1971, not part of Reaganomics.",
+  "general": "1. Follow the chain the passage lays out: tax cuts first, then business investment.\n2. Then comes growth, and only then do the benefits reach everyone.\n3. That order is the whole idea: help the supply side, and the rest follows.\n4. The other choices start at the wrong end \u2014 with shoppers, higher rates, or a freeze.\nRemember: supply-side starts with the factory, not the shopping cart."
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original summary based on Barron's Premium 2027, Chapter 11, and Princeton Review, Chapter 13.",
+  "text": "Original summary based on the grounding books: President Ronald Reagan's economic program, called Reaganomics, rested on supply-side theory: cutting taxes on businesses and wealthy individuals, the argument ran, would spur investment, and the growth that followed would benefit everyone. At the same time, Reagan raised military spending sharply. Tax cuts plus the buildup meant the government spent far more than it collected, and the national debt more than doubled between 1980 and 1986."
+ },
+ "stimulus_set": "supply-side-deficits",
+ "figures": null
+}

@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-2900",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 9,
+ "topics": [
+  "9.3"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "WXT",
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "status": "final",
+ "lesson": "apush-u9-l2",
+ "source": "original; stimulus from the shared image pool or paraphrased from the grounding books",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "A. Increased Military Spending"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 28",
+    "section": "Decline and Rebirth (1968-1988)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Foreign Policy Under Reagan"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stem": "Which of the following best describes what the INF Treaty did?",
+ "options": [
+  {
+   "key": "A",
+   "text": "It ended the Soviet war in Afghanistan and withdrew Soviet troops",
+   "misconception": "The Soviet withdrawal from Afghanistan came in 1989 and was separate from the treaty."
+  },
+  {
+   "key": "B",
+   "text": "It created the Strategic Defense Initiative",
+   "misconception": "SDI was an American research program announced in 1983, not created by the treaty."
+  },
+  {
+   "key": "C",
+   "text": "It eliminated an entire class of intermediate-range missiles"
+  },
+  {
+   "key": "D",
+   "text": "It admitted the Soviet Union into NATO",
+   "misconception": "The Soviet Union never joined NATO; the treaty was about missiles, not membership."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "Afghanistan is not mentioned in the treaty. Background: Soviet troops left Afghanistan in 1989, two years after the treaty.",
+  "B": "SDI predates the treaty by four years. Background: the Strategic Defense Initiative was Reagan's 1983 missile-defense research program.",
+  "C": "The treaty required both sides to destroy their ground-launched missiles in the 500-to-5,500-kilometer range. Background: it was the first agreement to eliminate a whole class of nuclear weapons rather than merely limit them.",
+  "D": "NATO membership was never part of the treaty. Background: the Soviet Union remained outside NATO until it dissolved in 1991.",
+  "general": "1. Read the treaty for its verbs: destroy, eliminate, verify.\n2. The missiles it covers are ground-launched, with ranges between 500 and 5,500 kilometers.\n3. Background: it was the first agreement to eliminate a whole class of nuclear weapons rather than merely limit them.\n4. The other choices name real events, but none of them is what this treaty did.\nRemember: the INF Treaty did not limit missiles, it removed a whole kind of them."
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of the INF Treaty, December 8, 1987. Post-1929 material is paraphrased, not quoted.",
+  "text": "Paraphrase of the Intermediate-Range Nuclear Forces (INF) Treaty, signed in Washington on December 8, 1987: The United States and the Soviet Union agreed to destroy all of their ground-launched missiles with ranges between 500 and 5,500 kilometers. Inspectors from each side would visit the other's territory to verify that the missiles were destroyed."
+ },
+ "stimulus_set": "inf-treaty-1987",
+ "figures": null
+}

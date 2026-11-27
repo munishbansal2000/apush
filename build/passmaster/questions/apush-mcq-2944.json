@@ -1,0 +1,79 @@
+{
+ "answerKey": "C",
+ "difficulty": 3,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.5 Migration and Immigration, 1980 to the Present"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "Prosperity and a New World Order (1988\u20132000)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Changing Demographics"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2944",
+ "lesson": "apush-u9-l4",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "After 1965, most legal immigrants came from Latin America and Asia, not Europe.",
+   "text": "It came almost entirely from Europe, as it had before the 1965 act"
+  },
+  {
+   "key": "B",
+   "misconception": "The 2010s total of 10.3 million was more than double the 1970s total of 4.4 million.",
+   "text": "It was smaller in total, because the border had been closed"
+  },
+  {
+   "key": "C",
+   "text": "It was far larger, and most newcomers came from Latin America and Asia"
+  },
+  {
+   "key": "D",
+   "misconception": "Family reunification remained the largest path to a green card in the 2010s.",
+   "text": "It consisted only of refugees, with no family-based admissions"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Background: the 1965 act ended the quotas that had favored Europe, and Europe's share kept falling.",
+  "B": "The table shows growth, from 4.4 million to 10.3 million, not a smaller total.",
+  "C": "The decade total more than doubled, from 4.4 million to 10.3 million. Background: the 1965 act had shifted the main sources from Europe to Latin America and Asia, and that pattern held through the 2010s.",
+  "D": "Background: family reunification, not refugee admissions, was the largest route to legal status.",
+  "general": "1. Compare the two decades in the table: 4.4 million in the 1970s, 10.3 million in the 2010s.\n2. The size difference is the clearest change, so any choice saying it shrank is out.\n3. Add the source shift. Background: after 1965, most newcomers came from Latin America and Asia, not Europe.\n4. Refugees alone cannot explain the totals. Background: family admissions were larger.\nRemember: compare both size and source when a question asks how two eras differ."
+ },
+ "reasoning": "comparison",
+ "skills": [
+  "2.C"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, Topic 9.5; 5 Steps 2024 Ch. 29/30; Princeton Review Ch. 13. U.S. Department of Homeland Security, Yearbook of Immigration Statistics, Table 1 (public data).",
+ "status": "final",
+ "stem": "Compared with the 1970s, legal immigration in the 2010s differed most clearly in which way?",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "U.S. Department of Homeland Security, Yearbook of Immigration Statistics, Table 1 (public data).",
+  "text": "| Decade | People gaining lawful permanent resident status |\n| 1971\u20131980 | 4.4 million |\n| 1981\u20131990 | 7.3 million |\n| 1991\u20132000 | 9.1 million |\n| 2001\u20132010 | 10.5 million |\n| 2011\u20132020 | 10.3 million |\n\nSource: U.S. Department of Homeland Security, Yearbook of Immigration Statistics, Table 1. Simplified for this test."
+ },
+ "stimulus_set": "lpr-by-decade",
+ "themes": [
+  "MIG",
+  "GEO"
+ ],
+ "topics": [
+  "9.5"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

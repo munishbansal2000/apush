@@ -1,0 +1,93 @@
+{
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.2 Reagan, Conservatism, and Partisan Divisions"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 28",
+    "section": "Decline and Rebirth (1968\u20131988)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "The Conservative Resurgence"
+   }
+  ],
+  "primary_sources": [
+   "Ronald Reagan, First Inaugural Address, January 20, 1981 (paraphrased)"
+  ]
+ },
+ "id": "apush-saq-0269",
+ "lesson": "apush-u9-l1",
+ "parts": [
+  {
+   "modelAnswer": "Reagan argues that the federal government has grown too large and too intrusive in daily life. In his view, Washington is part of the nation's trouble rather than the cure for it.",
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one idea in the passage about the role of the federal government.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for identifying one idea from the passage, such as the government being too large, too costly, too intrusive, or part of the problem.",
+     "notEarned": "Naming an idea that is not in the passage, or a vague answer with no idea identified, does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "modelAnswer": "Reagan cut taxes in 1981 and pushed deregulation across banking, industry, and energy, shrinking Washington's hand in the economy. He also tried to shift welfare programs to the states, matching his promise to return power downward.",
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain one way Reagan's policies as president reflected the ideas in the passage.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one policy that reflects the passage, such as the 1981 tax cuts, deregulation, or shifting programs to the states.",
+     "notEarned": "Naming a Reagan policy with no link to the passage's ideas, or a policy from another president, does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "modelAnswer": "Reagan did not shrink the federal government as a whole: military spending rose sharply, and the federal deficit grew to record size. Popular programs like Social Security and Medicare also survived, because voters would not give them up.",
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one limit of the conservative turn described in the passage.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one limit, such as rising military spending and deficits, or the survival of popular programs like Social Security and Medicare.",
+     "notEarned": "Naming a success of the conservative turn instead of a limit, or a limit with no explanation, does not earn the point.",
+     "points": 1
+    }
+   ]
+  }
+ ],
+ "pool": "practice",
+ "reasoning": "causation",
+ "saq_slot": 2,
+ "skills": [
+  "2.B",
+  "1.B"
+ ],
+ "source": "original; stimulus is a paraphrase of Reagan's First Inaugural Address, January 20, 1981",
+ "status": "final",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of President Ronald Reagan's First Inaugural Address, January 20, 1981. Wording is the author's paraphrase, not a quotation.",
+  "text": "Paraphrase of President Ronald Reagan's First Inaugural Address, January 20, 1981: Reagan argued that the nation's troubles came from a federal government that had grown too large, too costly, and too intrusive in daily life. He promised to restrain that government, cut its taxes and regulations, and return power to the states and to the people."
+ },
+ "stimulus_set": null,
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "topics": [
+  "9.1"
+ ],
+ "totalPoints": 3,
+ "type": "saq",
+ "unit": 9
+}

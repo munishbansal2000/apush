@@ -1,0 +1,79 @@
+{
+ "answerKey": "D",
+ "difficulty": 2,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.5 Migration and Immigration, 1980 to the Present"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "Prosperity and a New World Order (1988\u20132000)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Changing Demographics"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2942",
+ "lesson": "apush-u9-l4",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The numbers rose in each decade until 2011-2020, which stayed near the peak.",
+   "text": "Legal immigration fell in every decade after 1980"
+  },
+  {
+   "key": "B",
+   "misconception": "It more than doubled, from 4.4 million in the 1970s to 10.3 million in the 2010s.",
+   "text": "Legal immigration stayed about the same from 1970 to 2020, with little change"
+  },
+  {
+   "key": "C",
+   "misconception": "The 1980s total was lower than the 1990s and the 2000s, not a peak.",
+   "text": "Legal immigration peaked in the 1980s and then fell sharply"
+  },
+  {
+   "key": "D",
+   "text": "Legal immigration rose sharply after the 1970s and stayed near its peak through 2020"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The totals climb through the 1990s and 2000s; only the 2010s level off, and at a high level.",
+  "B": "The table runs from 4.4 million to 10.3 million, which is growth, not stability.",
+  "C": "The peak decades are the 2000s and 2010s, each above 10 million.",
+  "D": "The totals climb from 4.4 million in the 1970s to more than 10 million in each decade after 2000. Background: the rise followed the 1965 act, which opened immigration from Asia and Latin America.",
+  "general": "1. Read the column from top to bottom: 4.4, then 7.3, then 9.1, then 10.5, then 10.3 million.\n2. The direction is up for three decades in a row, and the last two decades sit near the top.\n3. Any choice that says the numbers fell or stayed flat contradicts the column.\n4. Background: the rise lines up with the 1965 act opening immigration beyond Europe.\nRemember: read a table column as a trend first, and only then ask what caused it."
+ },
+ "reasoning": "continuity-change",
+ "skills": [
+  "3.A"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, Topic 9.5; 5 Steps 2024 Ch. 29/30; Princeton Review Ch. 13. U.S. Department of Homeland Security, Yearbook of Immigration Statistics, Table 1 (public data).",
+ "status": "final",
+ "stem": "Which pattern does the table best support?",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "U.S. Department of Homeland Security, Yearbook of Immigration Statistics, Table 1 (public data).",
+  "text": "| Decade | People gaining lawful permanent resident status |\n| 1971\u20131980 | 4.4 million |\n| 1981\u20131990 | 7.3 million |\n| 1991\u20132000 | 9.1 million |\n| 2001\u20132010 | 10.5 million |\n| 2011\u20132020 | 10.3 million |\n\nSource: U.S. Department of Homeland Security, Yearbook of Immigration Statistics, Table 1. Simplified for this test."
+ },
+ "stimulus_set": "lpr-by-decade",
+ "themes": [
+  "MIG",
+  "WXT"
+ ],
+ "topics": [
+  "9.5"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

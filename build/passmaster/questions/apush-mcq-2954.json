@@ -1,0 +1,79 @@
+{
+ "answerKey": "D",
+ "difficulty": 2,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.5 Migration and Immigration, 1980 to the Present"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 30",
+    "section": "Threat of Terrorism, Increase of Presidential Power, and Economic Crisis (2001\u20132016)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Diversity: Asset or Liability?"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2954",
+ "lesson": "apush-u9-l4",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The passage debates immigration's effects, not whether citizenship should exist.",
+   "text": "Whether immigrants should be allowed to become citizens at all in America"
+  },
+  {
+   "key": "B",
+   "misconception": "Trade is not the passage's subject; immigration is.",
+   "text": "Whether the United States should trade with Latin America"
+  },
+  {
+   "key": "C",
+   "misconception": "The passage notes congressional failure, but the debate it describes is about immigration's effects.",
+   "text": "Whether Congress or the courts should write immigration law"
+  },
+  {
+   "key": "D",
+   "text": "Whether immigration strengthens the country or strains its schools, services, and culture"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The passage never questions whether immigrants may become citizens.",
+  "B": "The passage says nothing about trade with Latin America.",
+  "C": "Congress and the courts appear only in the last lines, about who acts, not about what the debate is.",
+  "D": "The passage sets two views against each other: newcomers as a source of workers and culture, and newcomers as a strain on schools, services, and culture. That clash is the heart of the debate.",
+  "general": "1. Find the two sides. One side points to new businesses, workers, and cultures.\n2. Find the other side. It worries about schools, public services, and culture.\n3. The disagreement is about effects: strength or strain.\n4. Citizenship, trade, and who writes the law are not what the two sides argue about.\nRemember: a debate passage answers to the two views it sets against each other."
+ },
+ "reasoning": "comparison",
+ "skills": [
+  "1.B"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, Topic 9.5; 5 Steps 2024 Ch. 29/30; Princeton Review Ch. 13. Secondary account paraphrased from the grounding books (Princeton Review Ch. 13; Barron's Premium 2027 Ch. 11).",
+ "status": "final",
+ "stem": "According to the passage, the central disagreement about immigration concerns which of the following?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Secondary account paraphrased from the grounding books (Princeton Review Ch. 13; Barron's Premium 2027 Ch. 11).",
+  "text": "Paraphrase of a secondary account: Since the 1960s, immigration has remade the United States. Newcomers from Latin America and Asia, and their children, have made the country more diverse, and both parties now compete for their votes. Americans disagree about what this change means. Some point to new businesses, new workers, and new cultures as strengths. Others worry that large numbers of newcomers, including many who cross without papers, strain schools and public services and change the country's culture. Congress has repeatedly failed to pass a broad reform, so presidents have acted on their own: in 2012, President Obama shielded some young people brought here as children from deportation, and later presidents reversed course by executive action of their own."
+ },
+ "stimulus_set": "immigration-debate",
+ "themes": [
+  "MIG",
+  "SOC"
+ ],
+ "topics": [
+  "9.5"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

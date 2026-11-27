@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-2893",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 9,
+ "topics": [
+  "9.3"
+ ],
+ "skills": [
+  "5.B"
+ ],
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 2,
+ "status": "final",
+ "lesson": "apush-u9-l2",
+ "source": "original; stimulus from the shared image pool or paraphrased from the grounding books",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "B. The Fall of the Berlin Wall and the End of the Cold War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "The Presidency of George H. W. Bush"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "George H. W. Bush"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stem": "The fall of the Berlin Wall most directly led to which of the following?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The reunification of Germany and the dissolution of the Soviet Union"
+  },
+  {
+   "key": "B",
+   "text": "The formation of the Warsaw Pact to defend Eastern Europe",
+   "misconception": "The Warsaw Pact was formed in 1955 and dissolved in 1991; it was an effect of the Cold War, not of the Wall's fall."
+  },
+  {
+   "key": "C",
+   "text": "The return of American troops to Vietnam",
+   "misconception": "American troops left Vietnam in 1973 and never returned; this has no connection to the Wall."
+  },
+  {
+   "key": "D",
+   "text": "The creation of the European Union in 1957",
+   "misconception": "The European Economic Community began with the Treaty of Rome in 1957, decades before the Wall fell."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Background: Germany reunified in October 1990, and the Soviet Union dissolved in December 1991. The Wall's fall was the visible turning point of both.",
+  "B": "The Warsaw Pact predates the Wall's fall by decades. Background: the Pact dissolved in 1991 as the Soviet bloc collapsed.",
+  "C": "The Vietnam War ended in 1975. Background: no American troops returned to Vietnam after the Wall fell.",
+  "D": "European integration began in the 1950s. Background: the European Union itself took shape with the Maastricht Treaty of 1993, after the Cold War ended.",
+  "general": "1. Treat the photograph as a turning point, then ask what came right after it.\n2. Background: the Wall's fall in November 1989 was followed by the collapse of every Communist government in Eastern Europe by year's end.\n3. Background: Germany reunified in October 1990, and the Soviet Union itself dissolved in December 1991.\n4. The other choices run the clock the wrong way: the Warsaw Pact and the Treaty of Rome both came decades earlier.\nRemember: the Wall was the symbol; German unity and Soviet collapse were the consequences."
+ },
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Photograph by Staff Sergeant F. Lee Corkran, U.S. Department of Defense, November 14, 1989, Potsdamer Platz, Berlin. Public domain (U.S. federal government work).",
+  "text": "Photograph of a man on a ladder using a hammer and chisel to chip a piece from the Berlin Wall at Potsdamer Platz, Berlin, November 1989. The Wall's western face is covered in colorful graffiti, and a crowd watches from below."
+ },
+ "stimulus_set": "berlin-wall-fall-1989",
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2893",
+   "file": "u9/saq-set-15-q3.jpg",
+   "caption": "A Berliner chips a souvenir from the Berlin Wall, Potsdamer Platz, November 1989",
+   "alt": "A man on a ladder chips at the graffiti-covered Berlin Wall with a hammer and chisel while a crowd watches below",
+   "license": "Public domain (U.S. federal government work)",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/17/A_West_German_man_uses_a_hammer_and_chisel_to_chip_off_a_piece_of_the_Berlin_Wall_as_a_souvenir._A_portion_of_the_Wall_has_already_been_demolished_at_Potsdamer_Platz_-_DPLA_-_87aa792db1b00409c70c1d5fdbcfe340.jpeg"
+  }
+ ]
+}

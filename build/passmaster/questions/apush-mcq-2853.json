@@ -1,0 +1,87 @@
+{
+ "answerKey": "A",
+ "difficulty": 3,
+ "figures": [
+  {
+   "alt": "President Ronald Reagan speaking at a podium before the Brandenburg Gate in West Berlin in June 1987, with a crowd below",
+   "caption": "President Reagan at the Brandenburg Gate, June 1987",
+   "file": "u9/pr25e-ch13-q06.jpg",
+   "id": "fig-apush-mcq-2853",
+   "license": "Public domain (U.S. federal government work)",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/President_Ronald_Reagan_Making_His_Berlin_Wall_Speech_at_Brandenburg_Gate_West_Berlin_-_DPLA_-_dce9b53e6ef9b7e01d184ce61f78871b.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.3 The End of the Cold War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 28",
+    "section": "Decline and Rebirth (1968\u20131988)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Reagan, H. W., Clinton, and W. (1980\u20132001)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2853",
+ "lesson": "apush-u9-l1",
+ "options": [
+  {
+   "key": "A",
+   "text": "Pressuring the Soviet Union publicly while keeping the door open to negotiation with its leader."
+  },
+  {
+   "key": "B",
+   "misconception": "Reagan did the opposite of accepting division: he demanded the Wall come down.",
+   "text": "Accepting the division of Europe as permanent and seeking only to manage that division peacefully."
+  },
+  {
+   "key": "C",
+   "misconception": "No American troops were withdrawn from Europe; the military buildup continued.",
+   "text": "Withdrawing American troops from Europe to force the Soviet Union to come to the negotiating table."
+  },
+  {
+   "key": "D",
+   "misconception": "Reagan never cut off contact; he met Gorbachev repeatedly.",
+   "text": "Ending all contact with the Soviet Union until it agreed to dismantle its entire nuclear arsenal."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The speech is a public challenge delivered at the Wall itself, aimed at Gorbachev by name. Background: Reagan paired such pressure with serious arms talks, and the two leaders signed the INF Treaty later in 1987.\nPressure plus negotiation is the combination the speech performs: a demand made in public, to a leader he was also meeting at the table.",
+  "B": "Reagan did the opposite of accepting division: he demanded the Wall come down. Background: accepting the division had been the stance of d\u00e9tente in the 1970s, which Reagan criticized.",
+  "C": "No American troops were withdrawn from Europe; the buildup continued. Background: Reagan increased military spending and deployed missiles in Europe rather than pulling forces out.",
+  "D": "Reagan never cut off contact; he met Gorbachev repeatedly. Background: the two leaders held summits in Geneva, Reykjavik, Washington, and Moscow between 1985 and 1988.",
+  "general": "1. Read the setting. A president stands at the Wall, in front of a crowd, speaking to the Soviet leader by name.\n2. Ask what the speech does. It demands the Wall come down \u2014 public pressure, not quiet diplomacy.\n3. Ask what it does not do. Background: Reagan kept meeting Gorbachev, and months later they signed a treaty removing an entire class of missiles.\n4. Put the halves together. The speech is pressure and negotiation at once \u2014 a challenge issued in public to a leader he was also bargaining with.\nRemember: Reagan's Cold War endgame was a squeeze and a handshake, not one or the other."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "3.A"
+ ],
+ "source": "original; stimulus image from the shared pool, President Reagan at the Brandenburg Gate, June 1987, public domain",
+ "status": "final",
+ "stem": "In this speech, Reagan called on the Soviet leader to tear down the Berlin Wall. Which of the following best describes the approach to the Cold War that the speech represents?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Photograph of President Ronald Reagan delivering his Berlin Wall address at the Brandenburg Gate, West Berlin, June 12, 1987; U.S. federal government photograph, public domain.",
+  "text": "President Ronald Reagan speaks at a podium in front of the Brandenburg Gate in West Berlin in June 1987. Behind him stands the gate, and a sign on the Berlin Wall reads, in German, that visitors are now leaving West Berlin. American and German flags line the stage, and a crowd listens below."
+ },
+ "stimulus_set": "berlin-speech-1987",
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "topics": [
+  "9.1"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

@@ -1,0 +1,93 @@
+{
+ "difficulty": 3,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.5 Migration and Immigration, 1980 to the Present"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 30",
+    "section": "Threat of Terrorism, Increase of Presidential Power, and Economic Crisis (2001\u20132016)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Changing Demographics"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-saq-0290",
+ "lesson": "apush-u9-l4",
+ "parts": [
+  {
+   "modelAnswer": "DACA let young people brought to the United States without papers as children apply for protection from deportation. It also made them eligible for work permits.",
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one thing the DACA policy did.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for identifying one thing DACA did, such as protection from deportation or eligibility for work permits.",
+     "notEarned": "Naming something DACA did not do, or a vague answer with nothing identified, does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "modelAnswer": "Congress had failed to pass the DREAM Act, which would have given the same group a path to citizenship. With legislation blocked, Obama used his executive authority to protect the group in the meantime.",
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain ONE reason Obama created DACA through executive action.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one reason, such as Congress failing to pass the DREAM Act or Obama using executive authority while legislation was blocked.",
+     "notEarned": "Naming a reason with no explanation, or describing an effect instead, does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "modelAnswer": "DACA gave no path to citizenship, so recipients remained in a temporary status. It could also be undone by a later president, which left its recipients uncertain about their future.",
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE limit of DACA as a solution to the status of its recipients.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one limit, such as the lack of a path to citizenship or the policy's vulnerability to reversal by a later president.",
+     "notEarned": "Naming a limit with no explanation, or describing what DACA did instead, does not earn the point.",
+     "points": 1
+    }
+   ]
+  }
+ ],
+ "pool": "practice",
+ "reasoning": "causation",
+ "saq_slot": 1,
+ "skills": [
+  "1.A",
+  "5.A"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, Topic 9.5; 5 Steps 2024 Ch. 29/30; Princeton Review Ch. 13. Secondary account paraphrased from the grounding books (Barron's Premium 2027 Ch. 11; 5 Steps 2024 Ch. 30).",
+ "status": "final",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Secondary account paraphrased from the grounding books (Barron's Premium 2027 Ch. 11; 5 Steps 2024 Ch. 30).",
+  "text": "Paraphrase of a secondary account: In 2012, President Barack Obama announced the Deferred Action for Childhood Arrivals policy, known as DACA. It let young people who had been brought to the United States without papers as children apply for protection from deportation and for work permits. Obama acted after Congress failed to pass the DREAM Act, a bill that would have given the same group a path to citizenship. DACA protected its recipients from deportation, but it gave them no path to citizenship, and later presidents moved to end or restore it."
+ },
+ "stimulus_set": null,
+ "themes": [
+  "MIG",
+  "PCE"
+ ],
+ "topics": [
+  "9.5"
+ ],
+ "totalPoints": 3,
+ "type": "saq",
+ "unit": 9
+}

@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-2880",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 9,
+ "topics": [
+  "9.2"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "status": "final",
+ "lesson": "apush-u9-l1",
+ "source": "original; stimulus from the shared image pool or paraphrased from the grounding books",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "D. Debates over the Scope of Government and International Trade"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "Prosperity and a New World Order (1988-2000)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Reagan, H. W., Clinton, and W. (1980-2001)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stem": "Which of the following best describes the welfare reform law President Clinton signed in 1996?",
+ "options": [
+  {
+   "key": "A",
+   "text": "It created a new federal jobs guarantee for every unemployed American",
+   "misconception": "The law ended the federal welfare guarantee; it created no jobs guarantee."
+  },
+  {
+   "key": "B",
+   "text": "It doubled federal welfare payments and removed all time limits",
+   "misconception": "The law did the opposite \u2014 it ended open-ended aid and imposed time limits."
+  },
+  {
+   "key": "C",
+   "text": "It transferred welfare entirely to private charities",
+   "misconception": "Welfare stayed a government program; the law shifted its administration to the states."
+  },
+  {
+   "key": "D",
+   "text": "It ended the federal guarantee of welfare aid and added work requirements"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "A": "Background: the law ended the federal welfare guarantee; it created no jobs guarantee.",
+  "B": "Background: the law did the opposite \u2014 it ended open-ended aid and imposed time limits.",
+  "C": "Background: welfare stayed a government program; the law shifted its administration to the states.",
+  "D": "Background: the 1996 reform ended welfare as a federal entitlement, let states set their own rules, and required recipients to begin work after two years.",
+  "general": "1. Start with what 'welfare reform' meant in 1996: an end, not an expansion.\n2. Background: the law ended the federal welfare guarantee and shifted administration to the states.\n3. Background: it required recipients to begin work after two years \u2014 the 'workfare' rule.\n4. Nothing was doubled, privatized, or guaranteed; the guarantee itself was what ended.\nRemember: 1996 ended welfare as an entitlement and added work rules."
+ },
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Official White House portrait of President Bill Clinton; U.S. federal government photograph, public domain.",
+  "text": "Official portrait of President Bill Clinton. He smiles at the camera in a dark suit, with the American flag and a bookshelf behind him."
+ },
+ "stimulus_set": "clinton-portrait",
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2880",
+   "file": "u9/pr25e-ch13-q09.jpg",
+   "caption": "President Bill Clinton, official portrait",
+   "alt": "Official portrait of President Bill Clinton, smiling in a dark suit with the American flag and a bookshelf behind him",
+   "license": "Public domain (U.S. federal government work)",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Official_Portrait_of_President_William_Jefferson_Clinton_-_DPLA_-_4697184146b3b6e2d6791b8f3c297476.jpg"
+  }
+ ]
+}

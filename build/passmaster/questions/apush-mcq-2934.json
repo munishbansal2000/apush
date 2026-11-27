@@ -1,0 +1,86 @@
+{
+ "id": "apush-mcq-2934",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 9,
+ "topics": [
+  "9.4"
+ ],
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "status": "final",
+ "lesson": "apush-u9-l3",
+ "source": "original; stimulus from the shared image pool or paraphrased from the grounding books",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "The Rise of the Service Sector"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "Prosperity and a New World Order (1988\u20132000)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Digital Revolution"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stem": "The scene in the photograph best illustrates which of the following?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The growth of American steel exports in the 1980s",
+   "misconception": "A booming export trade would fill mills with workers, not leave them empty and weedy."
+  },
+  {
+   "key": "B",
+   "text": "A boom in factory construction across the Northeast",
+   "misconception": "A construction boom would show new buildings going up, not an old mill falling apart."
+  },
+  {
+   "key": "C",
+   "text": "Deindustrialization: factories closing as production moved elsewhere"
+  },
+  {
+   "key": "D",
+   "text": "The rise of computer manufacturing in Pennsylvania",
+   "misconception": "Computer plants were new, clean buildings; this is an old steel mill left empty."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "A booming export trade would fill mills with workers. Background: this mill closed as foreign competition undercut American steel.",
+  "B": "A construction boom would show new buildings going up, not an old mill falling apart.",
+  "C": "Background: factories closed across the Northeast and Midwest as firms moved production abroad or to lower-wage regions.",
+  "D": "Computer plants were new, clean buildings. Background: this is an old steel mill left empty by deindustrialization.",
+  "general": "1. Name the scene: a mill that once made steel, now empty and still.\n2. Background: factories closed across the Northeast and Midwest as production moved abroad or south.\n3. That is deindustrialization \u2014 the factory leaves, and the building stays behind like a shell.\n4. Booms and new industries would show full buildings, not empty ones.\nRemember: an empty factory is the footprint of an industry that walked away."
+ },
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Photograph by Jet Lowe, 1989, Historic American Engineering Record, Library of Congress. Public domain (U.S. federal government work).",
+  "text": "Photograph of an abandoned section of the Bethlehem Steel rail mill in Bethlehem, Pennsylvania, 1989. The mill's roof has been removed, weeds grow in the empty yard, and no workers or machinery are in sight."
+ },
+ "stimulus_set": "bethlehem-steel-1989",
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2934",
+   "file": "u9/bethlehem-steel-abandoned-mill-1989.jpg",
+   "caption": "Abandoned section of the Bethlehem Steel rail mill, Bethlehem, Pennsylvania, 1989",
+   "alt": "Black-and-white photograph of an abandoned Bethlehem Steel rail mill in 1989, weeds growing in the empty yard",
+   "license": "Public domain (U.S. federal government work; Library of Congress, Historic American Engineering Record)",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Abandoned_section_of_rail_mill_where_the_roof_has_been_removed;_looking_southwest_-_Bethlehem_Steel_Corporation,_South_Bethlehem_Works,_Iron_Foundry,_Along_Lehigh_River,_North_HAER_PA,48-BETH,19A-10.tif"
+  }
+ ]
+}

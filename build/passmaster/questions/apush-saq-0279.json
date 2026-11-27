@@ -1,0 +1,90 @@
+{
+ "id": "apush-saq-0279",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 9,
+ "topics": [
+  "9.3"
+ ],
+ "skills": [
+  "1.B",
+  "4.A"
+ ],
+ "themes": [
+  "WOR"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 3,
+ "status": "final",
+ "lesson": "apush-u9-l2",
+ "source": "original; stimulus from the shared image pool or paraphrased from the grounding books",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "B. The Fall of the Berlin Wall and the End of the Cold War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "The Presidency of George H. W. Bush"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "George H. W. Bush"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Table compiled from Barron's Premium 2027, Chapter 11, 'The Fall of the Berlin Wall and the End of the Cold War.'",
+  "text": "Communist governments in Eastern Europe, 1989 (from Barron's Premium 2027, Chapter 11):\n\n| Country | 1989 |\n| Poland | Solidarity movement forced the Communists from power |\n| Hungary | Communist government gave way to a non-Communist regime |\n| East Germany | The Berlin Wall fell in November; the government collapsed |\n| Czechoslovakia | The Velvet Revolution replaced the Communist government |\n| Romania | The Ceausescu regime was overthrown in December |\n| Bulgaria | The Communist government was replaced |"
+ },
+ "stimulus_set": null,
+ "saq_slot": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify ONE pattern in the table.",
+   "modelAnswer": "Every Communist government in Eastern Europe fell or transformed within a single year, 1989. The change swept the whole region at once rather than striking one country at a time.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying the pattern that Communist governments fell across Eastern Europe in 1989, in rapid succession.",
+     "notEarned": "Naming one country's change with no pattern identified does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain ONE cause of the pattern you identified.",
+   "modelAnswer": "Gorbachev refused to send Soviet troops to save the Communist regimes, breaking with the interventions of 1956 and 1968. Once the threat of Soviet force was gone, protests that would once have been crushed were able to topple the governments.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one cause, such as Gorbachev's refusal to intervene, Soviet economic weakness, or the spread of protest from one country to the next.",
+     "notEarned": "Naming a cause with no explanation, or restating the pattern rather than explaining it, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE consequence of the pattern for Europe.",
+   "modelAnswer": "Germany reunified in October 1990, ending the division that had defined Europe since 1945. The Soviet Union itself dissolved in December 1991, ending Communist rule in Europe altogether.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one consequence, such as German reunification, the dissolution of the Soviet Union, or the end of the Cold War division of Europe.",
+     "notEarned": "Naming a consequence with no explanation, or describing a cause rather than a consequence, does not earn the point."
+    }
+   ]
+  }
+ ],
+ "totalPoints": 3
+}

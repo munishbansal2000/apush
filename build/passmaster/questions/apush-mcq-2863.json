@@ -1,0 +1,87 @@
+{
+ "answerKey": "A",
+ "difficulty": 3,
+ "figures": [
+  {
+   "alt": "President Bill Clinton signing the North American Free Trade Agreement on December 8, 1993, with three former presidents standing behind him",
+   "caption": "President Clinton signs NAFTA, December 8, 1993",
+   "file": "u9/original-ctx-u9-04.jpg",
+   "id": "fig-apush-mcq-2863",
+   "license": "Public domain (U.S. federal government work)",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/70/President_Bill_Clinton_signs_NAFTA.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.4 A Changing Economy"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "Prosperity and a New World Order (1988\u20132000)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Reagan, H. W., Clinton, and W. (1980\u20132001)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2863",
+ "lesson": "apush-u9-l1",
+ "options": [
+  {
+   "key": "A",
+   "text": "Free trade had support across party lines, from a Democratic president to Republican predecessors."
+  },
+  {
+   "key": "B",
+   "misconception": "The photograph proves the opposite: former presidents of both parties attended to support it.",
+   "text": "Free trade was opposed by every single president who had held office before 1993."
+  },
+  {
+   "key": "C",
+   "misconception": "NAFTA was fiercely debated; it cleared the House and Senate only after a hard fight in November 1993.",
+   "text": "The agreement was signed without any debate in Congress or anywhere else in the country."
+  },
+  {
+   "key": "D",
+   "misconception": "NAFTA did the opposite of government control: it tore down trade barriers.",
+   "text": "Democrats and Republicans agreed that the federal government should control all trade directly."
+  }
+ ],
+ "pool": "test",
+ "rationales": {
+  "A": "The photograph shows a Democrat signing the agreement while two Republican former presidents and a Democratic one look on. Background: the idea began under Reagan, was negotiated under the elder Bush, and was signed into law by Clinton.\nThree presidencies, two parties, one agreement \u2014 the picture is the bipartisan case for free trade.",
+  "B": "The photograph proves the opposite: former presidents of both parties attended to support it. Background: the elder Bush had negotiated the agreement, and Ford and Carter both backed it publicly.",
+  "C": "NAFTA was fiercely debated. Background: it cleared the House and Senate only after a hard fight in November 1993, with labor unions and many Democrats opposed.",
+  "D": "NAFTA did the opposite of government control: it tore down trade barriers. Background: the agreement removed most tariffs between the United States, Canada, and Mexico.",
+  "general": "1. Count the parties in the picture. A Democratic president signs; two Republican former presidents and one Democratic one stand behind him.\n2. Ask what brought them together. Background: the agreement began under Reagan, was negotiated under the elder Bush, and became law under Clinton.\n3. Ask what that means. Free trade in the 1990s was not one party's project \u2014 it was the shared faith of the era's leaders.\n4. Rule out the rest. The photograph shows support, debate's aftermath, and open trade \u2014 not opposition, silence, or control.\nRemember: globalization's champions wore both parties' colors, which is why its backlash later came from both sides too."
+ },
+ "reasoning": "continuity-change",
+ "skills": [
+  "3.B"
+ ],
+ "source": "original; stimulus image from the shared pool, President Clinton signs NAFTA, December 8, 1993, public domain",
+ "status": "final",
+ "stem": "What does this photograph best show about the politics of globalization in the 1990s?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Photograph of President Bill Clinton signing the North American Free Trade Agreement Implementation Act, December 8, 1993; U.S. federal government photograph, public domain.",
+  "text": "President Bill Clinton signs the North American Free Trade Agreement into law on December 8, 1993. Standing behind him are three former presidents \u2014 Gerald Ford, Jimmy Carter, and George H. W. Bush \u2014 and Vice President Al Gore applauds at the right."
+ },
+ "stimulus_set": "nafta-signing",
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "topics": [
+  "9.1"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

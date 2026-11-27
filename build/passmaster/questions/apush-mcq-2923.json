@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-2923",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 9,
+ "topics": [
+  "9.4"
+ ],
+ "skills": [
+  "5.B"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 3,
+ "status": "final",
+ "lesson": "apush-u9-l3",
+ "source": "original; stimulus from the shared image pool or paraphrased from the grounding books",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "The Digital Revolution"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "Prosperity and a New World Order (1988\u20132000)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Digital Revolution"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stem": "Comparing the dot-com crash with the financial crisis of 2008, which of the following is most accurate?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Inflated stock prices caused the dot-com crash; risky mortgages caused 2008"
+  },
+  {
+   "key": "B",
+   "text": "Both crises began with the collapse of the housing market",
+   "misconception": "The dot-com crash came from internet stocks, years before the housing bubble burst in 2007."
+  },
+  {
+   "key": "C",
+   "text": "Both crises were caused by the Federal Reserve cutting interest rates to zero",
+   "misconception": "Interest rates were not cut to zero in either run-up; that step came only during the 2008 crisis itself."
+  },
+  {
+   "key": "D",
+   "text": "The dot-com crash, unlike 2008, forced the government to bail out major banks",
+   "misconception": "This reverses the history. Background: the 2008 crisis brought bank bailouts; the dot-com crash brought almost none."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Background: the dot-com mania bid internet stocks far past their earnings, while the 2008 crisis grew from subprime mortgages bundled into investments.",
+  "B": "The housing market collapsed in 2007. Background: the dot-com crash of 2000\u20132001 came from internet stocks, not houses.",
+  "C": "Interest rates were not at zero in either run-up. Background: near-zero rates came only as a response to the 2008 crisis.",
+  "D": "This reverses the history. Background: the 2008 crisis forced bank bailouts, while the dot-com crash brought almost none.",
+  "general": "1. Name each crisis by its fuel: internet stocks in 2000, risky mortgages in 2008.\n2. Background: the NASDAQ fell about 78 percent after the dot-com peak, while 2008 froze lending as mortgage investments failed.\n3. Test each choice against both dates; a cause must fit the crisis it claims.\n4. The bailouts belong to 2008, not to the dot-com crash.\nRemember: two crashes can look alike in the fall and differ completely in what pushed them off the cliff."
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of Federal Reserve Chairman Alan Greenspan's remarks, December 1996. Post-1929 material is paraphrased, not quoted; 'irrational exuberance' is Greenspan's own term for the mood he described.",
+  "text": "Paraphrase of Federal Reserve Chairman Alan Greenspan's remarks, December 1996: Greenspan asked how to judge when stock prices had risen too far, noting that low inflation usually steadies markets. But he warned that markets might be gripped by what he called irrational exuberance, with investors bidding prices up beyond what companies were truly worth."
+ },
+ "stimulus_set": "greenspan-irrational-exuberance",
+ "figures": null
+}

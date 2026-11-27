@@ -1,0 +1,86 @@
+{
+ "id": "apush-mcq-2916",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 9,
+ "topics": [
+  "9.4"
+ ],
+ "skills": [
+  "5.A"
+ ],
+ "themes": [
+  "WXT"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 3,
+ "status": "final",
+ "lesson": "apush-u9-l3",
+ "source": "original; stimulus from the shared image pool or paraphrased from the grounding books",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "The Rise of the Service Sector"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "Prosperity and a New World Order (1988\u20132000)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Digital Revolution"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stem": "The chart best supports which conclusion about the American economy after 1970?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The economy shifted from making goods to providing services"
+  },
+  {
+   "key": "B",
+   "text": "The United States stopped producing manufactured goods",
+   "misconception": "Background: factory output kept growing; only the share of jobs in factories fell."
+  },
+  {
+   "key": "C",
+   "text": "Factory wages rose because factory jobs became scarce",
+   "misconception": "The chart says nothing about wages. Background: many displaced factory workers moved into lower-paid service work."
+  },
+  {
+   "key": "D",
+   "text": "Government regulation ended American manufacturing",
+   "misconception": "The chart shows a steady forty-year slide, not a sudden stop after one new rule."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Background: as factory jobs shrank, service jobs in retail, health care, and finance grew to take their place.",
+  "B": "Background: the United States kept producing more manufactured goods; what fell was the share of workers making them.",
+  "C": "The chart tracks jobs, not pay. Background: many former factory workers moved into lower-paid service jobs.",
+  "D": "A forty-year slide needs a long cause. Background: automation, trade, and offshoring all pushed the same way.",
+  "general": "1. Picture the whole workforce as a pie: the factory slice shrank from a quarter to less than a tenth.\n2. Ask where the workers went. Background: service jobs in retail, health care, and finance grew as factory jobs shrank.\n3. Do not overread the chart: it shows jobs, not output, and output kept growing.\n4. The steady slide points to deep forces, not one event.\nRemember: the economy did not stop making things \u2014 it stopped employing so many people to make them."
+ },
+ "stimulus": {
+  "kind": "chart",
+  "source_note": "Chart plotted from U.S. Bureau of Labor Statistics, Current Employment Statistics, Table B-1 (annual averages); shares computed from published employment levels.",
+  "text": "| Year | Manufacturing share of all U.S. jobs |\n| 1970 | 25% |\n| 1980 | 21% |\n| 1990 | 16% |\n| 2000 | 13% |\n| 2010 | 9% |\n\nSource: U.S. Bureau of Labor Statistics, Current Employment Statistics, Table B-1 (annual averages); shares computed from published employment levels."
+ },
+ "stimulus_set": "manufacturing-share-1970-2010",
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2916",
+   "file": "u9/fig-manufacturing-share-1970-2010.jpg",
+   "caption": "Manufacturing jobs as a share of all U.S. nonfarm jobs, 1970\u20132010. Source: U.S. Bureau of Labor Statistics.",
+   "alt": "Line chart showing manufacturing jobs falling from 25 percent of all U.S. jobs in 1970 to 9 percent in 2010",
+   "license": "Chart data: public U.S. government data",
+   "source_url": "https://www.bls.gov/opub/btn/volume-9/forty-years-of-falling-manufacturing-employment.htm"
+  }
+ ]
+}

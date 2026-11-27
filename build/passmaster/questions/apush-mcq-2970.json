@@ -1,0 +1,79 @@
+{
+ "answerKey": "A",
+ "difficulty": 2,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "The Housing Crisis and the Great Recession"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 30",
+    "section": "Threat of Terrorism, Increase of Presidential Power, and Economic Crisis (2001-2016)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Recent Trends"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2970",
+ "lesson": "apush-u9-l5",
+ "options": [
+  {
+   "key": "A",
+   "text": "The relief program bought troubled assets, while the stimulus funded infrastructure, schools, and hospitals"
+  },
+  {
+   "key": "B",
+   "text": "The relief program was passed by Obama, while the stimulus was passed by Bush",
+   "misconception": "The relief program passed under Bush in 2008; the stimulus passed under Obama in 2009."
+  },
+  {
+   "key": "C",
+   "text": "The relief program cut taxes, while the stimulus raised them",
+   "misconception": "The relief program bought troubled assets, not tax cuts; the stimulus included tax cuts of its own."
+  },
+  {
+   "key": "D",
+   "text": "The relief program closed the banks, while the stimulus opened new ones",
+   "misconception": "Neither program closed banks or opened new ones."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The account says the relief program bought troubled mortgage assets from firms, while the stimulus funded infrastructure, schools, and hospitals.",
+  "B": "Background: the relief program passed in 2008 under President Bush, and the stimulus passed in 2009 under President Obama.",
+  "C": "The relief program bought troubled assets; it did not cut taxes. Background: the stimulus included tax cuts of its own, so it did not raise taxes.",
+  "D": "The relief program propped banks up by buying their troubled assets. It did not close them.",
+  "general": "1. Compare what each program did with its money. The relief program bought troubled assets from financial firms.\n2. The stimulus spent money on infrastructure, schools, and hospitals.\n3. One aimed at the banks, the other at jobs and public works, so they differ in target, not just in size.\n4. Background: the relief program came under Bush in 2008, while the stimulus came under Obama in 2009.\nRemember: two spending programs differ by where the money goes, not only by who signed them."
+ },
+ "reasoning": "comparison",
+ "skills": [
+  "3.B"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, The Housing Crisis and the Great Recession; 5 Steps 2024 Ch. 30; Princeton Review Ch. 13. Unemployment data: BLS Current Population Survey annual averages.",
+ "status": "final",
+ "stem": "How did the Troubled Asset Relief Program differ from the American Recovery and Reinvestment Act?",
+ "stimulus": {
+  "kind": "mixed",
+  "source_note": "Data: Bureau of Labor Statistics, Current Population Survey, annual averages, series LNU04000000. Account paraphrased from the grounding books (Barron's Premium 2027 Ch. 11; 5 Steps 2024 Ch. 30).",
+  "text": "Data table: United States unemployment rate, annual average, from the Bureau of Labor Statistics Current Population Survey.\n\n| Year | Unemployment rate |\n| 2007 | 4.6% |\n| 2008 | 5.8% |\n| 2009 | 9.3% |\n| 2010 | 9.6% |\n\nParaphrase of a secondary account: In the 2000s, banks made risky subprime mortgages to borrowers with low credit ratings, then bundled those mortgages into securities sold across the financial system. When the housing bubble burst in 2007, borrowers defaulted, foreclosures spread, and banks holding the bundled loans cut back on lending.\n\nIn 2008, Congress passed the Troubled Asset Relief Program, giving the government up to 700 billion dollars to buy troubled mortgage assets from financial firms. In 2009, President Obama signed the American Recovery and Reinvestment Act, a stimulus of almost 800 billion dollars for infrastructure, schools, and hospitals."
+ },
+ "stimulus_set": "recession-2008-2010",
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "topics": [
+  "9.6"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

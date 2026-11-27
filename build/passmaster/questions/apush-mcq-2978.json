@@ -1,0 +1,79 @@
+{
+ "answerKey": "A",
+ "difficulty": 3,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.6 Defining America's Role in the World in the 21st Century"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 31",
+    "section": "Tumultuous Years: The Trump and Biden Presidencies (2017-2022)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Recent Trends"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2978",
+ "lesson": "apush-u9-l5",
+ "options": [
+  {
+   "key": "A",
+   "text": "American participation swung with each president, while the agreement continued"
+  },
+  {
+   "key": "B",
+   "text": "The United States has led every climate agreement since 1997 without interruption",
+   "misconception": "The United States never ratified Kyoto and left Paris twice."
+  },
+  {
+   "key": "C",
+   "text": "The Paris Agreement ended all greenhouse gas emissions by its signers",
+   "misconception": "The agreement called for cuts, not an end to all emissions."
+  },
+  {
+   "key": "D",
+   "text": "Congress has always set American climate policy by treaty",
+   "misconception": "The swings came from presidential decisions, not from Congress ratifying treaties."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The account shows Trump leaving in 2017, Biden rejoining in 2021, and Trump leaving again in 2025, while the agreement itself went on.",
+  "B": "The United States signed Kyoto but never ratified it, and it left the Paris Agreement twice. Its participation was not unbroken.",
+  "C": "The agreement called for broad cuts in carbon dioxide. It did not end all emissions.",
+  "D": "Background: the United States never ratified Kyoto, and the Paris moves were presidential decisions, not treaties ratified by Congress.",
+  "general": "1. Track the same agreement across presidencies. The United States joined Paris in 2015, left under Trump, rejoined under Biden, and moved to leave again under Trump.\n2. The agreement itself kept going through all of that, with 195 parties signed on.\n3. The pattern is a swing in American participation with each change of president, not steady leadership.\n4. Kyoto shows the same limit: the United States signed but never ratified it.\nRemember: when participation swings with each president, the commitment is presidential, not settled."
+ },
+ "reasoning": "continuity-change",
+ "skills": [
+  "3.B"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, The Deepening of Partisanship in the Twenty-first Century; 5 Steps 2024 Ch. 30-31; Princeton Review Ch. 13.",
+ "status": "final",
+ "stem": "What does the history of the Paris Agreement best show about the United States and international climate agreements?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Secondary account paraphrased from the grounding books (Barron's Premium 2027 Ch. 11, Topic 9.6; 5 Steps 2024 Ch. 31).",
+  "text": "Paraphrase of a secondary account: In 1997, the Kyoto Protocol set binding limits on greenhouse gas emissions for industrialized countries. The United States signed the protocol but never ratified it, so the limits never bound the United States.\n\nIn 2015, the United States helped negotiate the Paris Agreement, which called for broad cuts in carbon dioxide, and 195 parties signed it. In 2017, President Trump announced that the United States would leave the Paris Agreement, with the withdrawal taking effect in 2020. President Biden rejoined the agreement on his first day in office in 2021. In 2025, President Trump again began the process of withdrawing the United States from the agreement."
+ },
+ "stimulus_set": "climate-paris",
+ "themes": [
+  "WOR",
+  "GEO"
+ ],
+ "topics": [
+  "9.6"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

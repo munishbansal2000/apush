@@ -1,0 +1,77 @@
+{
+ "answerKey": "A",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.1 Contextualizing Period 9"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 30",
+    "section": "Threat of Terrorism, Increase of Presidential Power, and Economic Crisis (2001\u20132016)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "The 2000 Election"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2860",
+ "lesson": "apush-u9-l1",
+ "options": [
+  {
+   "key": "A",
+   "text": "The electorate moved from a sweeping mandate for one candidate to an almost even split between the parties."
+  },
+  {
+   "key": "B",
+   "misconception": "Third-party support fell, but it never decided these elections; Perot's 18.9 percent in 1992 won no electors.",
+   "text": "The electorate moved from supporting third-party candidates in large numbers to supporting only the two major parties."
+  },
+  {
+   "key": "C",
+   "misconception": "The parties traded wins: Republicans won 1980 through 1988, Democrats won 1992 and 1996, and a Republican won 2000.",
+   "text": "The electorate moved from favoring Democratic candidates to favoring Republican candidates in every single election."
+  },
+  {
+   "key": "D",
+   "misconception": "The table says nothing about what issues moved voters; vote shares alone cannot show which issue mattered most.",
+   "text": "The electorate moved from voting mainly on foreign policy issues to voting mainly on economic issues."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "In 1984 Reagan won 525 electoral votes and nearly 59 percent of the vote; in 2000 the winner took 271 electors while losing the popular vote. Background: the 2000 result was so close that the Supreme Court's decision in Bush v. Gore settled the presidency.\nA 49-state landslide and a 537-vote Florida margin are two different countries, politically speaking \u2014 one sure of itself, one split down the middle.",
+  "B": "Third-party support fell, but it never decided these elections. Background: Perot's 18.9 percent in 1992 won no electors, and by 2000 the third-party share was small.",
+  "C": "The parties traded wins: Republicans won 1980 through 1988, Democrats won 1992 and 1996, and a Republican won 2000. Background: the table shows alternation, not a steady move toward either party.",
+  "D": "The table says nothing about what issues moved voters. Background: issues mattered in every election here, but vote shares alone cannot show which issue mattered most.",
+  "general": "1. Put the two rows side by side. 1984: 525 electors, 58.8 percent. 2000: 271 electors, 47.9 percent \u2014 and the loser won more votes.\n2. Ask what changed between them. Not the parties \u2014 both won elections in between.\n3. Ask what the closeness means. Background: the 2000 election came down to a few hundred votes in Florida and a Supreme Court decision.\n4. Name the shift. From landslide to dead heat, the country went from speaking with one voice to speaking with two.\nRemember: 1984 was a verdict; 2000 was a tie that the courts had to break."
+ },
+ "reasoning": "comparison",
+ "skills": [
+  "5.A"
+ ],
+ "source": "original; stimulus table drawn from the American Presidency Project election data, via the Gilder Lehrman Institute",
+ "status": "final",
+ "stem": "Comparing the elections of 1984 and 2000 in the table, which of the following best describes the change in American politics?",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Data from the American Presidency Project, via the Gilder Lehrman Institute of American History.",
+  "text": "Presidential election results, 1980\u20132000:\n\n| Year | Winner | Winner's popular vote | Runner-up's popular vote | Winner's electoral votes |\n| 1980 | Ronald Reagan (R) | 50.7% | Carter 41.0% | 489 |\n| 1984 | Ronald Reagan (R) | 58.8% | Mondale 40.6% | 525 |\n| 1988 | George H. W. Bush (R) | 53.4% | Dukakis 45.6% | 426 |\n| 1992 | Bill Clinton (D) | 43.0% | Bush 37.4% | 370 |\n| 1996 | Bill Clinton (D) | 49.2% | Dole 40.7% | 379 |\n| 2000 | George W. Bush (R) | 47.9% | Gore 48.4% | 271 |\n\nRoss Perot, running as an independent, won 18.9% of the popular vote in 1992 and 8.4% in 1996, winning no electoral votes in either year."
+ },
+ "stimulus_set": "elections-1980-2000",
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "topics": [
+  "9.1"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

@@ -1,0 +1,88 @@
+{
+ "answerKey": "A",
+ "difficulty": 3,
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2959",
+   "file": "u9/pr25e-ch13-q11.jpg",
+   "caption": "The Pentagon after the September 11, 2001 attacks, Arlington, Virginia",
+   "alt": "Aerial view of the Pentagon with one wing burned out, cranes and fire trucks at the wreckage, and a large American flag hanging from the standing wall",
+   "license": "Public domain (U.S. federal government work; U.S. Air Force photograph)",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/16/Pentagon_9-11.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.6 Defining America's Role in the World in the 21st Century"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 30",
+    "section": "Threat of Terrorism, Increase of Presidential Power, and Economic Crisis (2001-2016)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "America and the War on Terror"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2959",
+ "lesson": "apush-u9-l5",
+ "options": [
+  {
+   "key": "A",
+   "text": "The Taliban government in Afghanistan sheltered al-Qaeda, the network behind the attacks"
+  },
+  {
+   "key": "B",
+   "text": "Afghanistan had invaded the United States in the summer of 2001",
+   "misconception": "Afghanistan never invaded the United States."
+  },
+  {
+   "key": "C",
+   "text": "Iraq had already surrendered to the United States in 2000",
+   "misconception": "Iraq had not surrendered; the United States invaded Iraq in 2003."
+  },
+  {
+   "key": "D",
+   "text": "The United Nations ordered the United States to attack Afghanistan first",
+   "misconception": "The United States chose Afghanistan; no United Nations order set the order."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Background: al-Qaeda operated under the protection of the Taliban government in Afghanistan, so the first campaign aimed to remove that shelter.",
+  "B": "No Afghan force attacked the United States. The attacks were carried out by hijackers linked to al-Qaeda.",
+  "C": "Background: Iraq had not surrendered, and the United States invaded Iraq in March 2003, after the Afghanistan campaign began.",
+  "D": "Background: the United States acted with allies in Afghanistan, but the choice of Afghanistan came from where al-Qaeda was based, not from a United Nations order.",
+  "general": "1. Ask where the attackers were based. The account links the hijackers to al-Qaeda.\n2. Background: al-Qaeda operated under the protection of the Taliban government in Afghanistan.\n3. That made Afghanistan the first target: removing the shelter came before any wider campaign.\n4. Background: Iraq entered the picture later, in 2003, on a different claim about weapons.\nRemember: a first response aims at where the attackers were sheltered."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "2.A"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, Topic 9.6; 5 Steps 2024 Ch. 30; Princeton Review Ch. 13. Photograph: U.S. Air Force, September 11, 2001, public domain.",
+ "status": "final",
+ "stem": "Why did the United States launch its first military response to the September 11 attacks in Afghanistan rather than in Iraq?",
+ "stimulus": {
+  "kind": "mixed",
+  "source_note": "Photograph by the U.S. Air Force, September 11, 2001, Arlington, Virginia. Public domain (U.S. federal government work). Account paraphrased from the grounding books (Barron's Premium 2027 Ch. 11, Topic 9.6; 5 Steps 2024 Ch. 30).",
+  "text": "Photograph of the Pentagon in Arlington, Virginia, after the September 11, 2001 attacks: one wing is a burned-out ruin, cranes and fire trucks work around the wreckage, and a large American flag hangs from the part of the building still standing.\n\nParaphrase of a secondary account: On the morning of September 11, 2001, nineteen hijackers linked to the al-Qaeda network seized four passenger planes. Two planes struck the twin towers of the World Trade Center in New York City, one struck the Pentagon, and a fourth crashed in a field near Shanksville, Pennsylvania, after passengers fought the hijackers. Nearly 3,000 people were killed."
+ },
+ "stimulus_set": "pentagon-911",
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "topics": [
+  "9.6"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

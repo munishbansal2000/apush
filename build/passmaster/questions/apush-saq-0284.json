@@ -1,0 +1,89 @@
+{
+ "id": "apush-saq-0284",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 9,
+ "topics": [
+  "9.4"
+ ],
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "status": "final",
+ "lesson": "apush-u9-l3",
+ "source": "original; stimulus from the shared image pool or paraphrased from the grounding books",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "The Great Recession"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 30",
+    "section": "Threat of Terrorism, Increase of Presidential Power, and Economic Crisis (2001\u20132016)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Reagan, H. W., Clinton, and W. (1980-2001)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original summary based on Barron's Premium 2027, Chapter 11, and 5 Steps to a 5 2024, Chapter 30.",
+  "text": "Historians describe the Great Recession as a crisis built in layers: banks made risky subprime mortgages, Wall Street bundled them into investments sold worldwide, and the 1999 repeal of most of the Glass-Steagall Act had removed the wall between everyday banking and risky investing. When house prices fell in 2007, the layers collapsed together, freezing lending and throwing millions out of work."
+ },
+ "stimulus_set": null,
+ "saq_slot": 1,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Briefly describe ONE layer of the crisis described in the passage.",
+   "modelAnswer": "One layer was subprime mortgages: banks lent to buyers with weak credit. Wall Street then bundled those loans into investments sold around the world.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for describing one layer, such as subprime mortgages, the bundling of loans into investments, or the Glass-Steagall repeal.",
+     "notEarned": "Naming a layer with no description does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain ONE reason the crisis spread beyond the housing market.",
+   "modelAnswer": "Because the risky mortgages had been bundled into investments sold worldwide, the risk was spread through the whole financial system. When the loans failed, banks stopped lending to anyone, and the freeze spread to the wider economy.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one reason the crisis spread, such as the worldwide sale of bundled mortgages or the freezing of lending.",
+     "notEarned": "Naming a reason with no explanation, or describing a cause of the housing bubble itself, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE way the Great Recession is compared to the Great Depression.",
+   "modelAnswer": "The Great Recession was the worst downturn since the Depression, with unemployment near 10 percent and foreclosures throwing families out of their homes. Like the 1930s, it shook faith in the financial system and forced the government to intervene on a large scale.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one comparison, such as the scale of unemployment, the housing and foreclosure crisis, or the turn to large-scale federal intervention.",
+     "notEarned": "Naming a similarity with no explanation does not earn the point."
+    }
+   ]
+  }
+ ],
+ "totalPoints": 3
+}

@@ -1,0 +1,87 @@
+{
+ "answerKey": "C",
+ "difficulty": 3,
+ "figures": [
+  {
+   "alt": "President Ronald Reagan speaking at a podium in the White House Rose Garden in August 1981",
+   "caption": "President Reagan in the Rose Garden, August 1981",
+   "file": "u9/original-ctx-u9-01.jpg",
+   "id": "fig-apush-mcq-2851",
+   "license": "Public domain (U.S. federal government work)",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/16/President_Making_a_Statement_to_The_Press_Regarding_The_Air_Traffic_Controllers_Strike_Patco_in_Rose_Garden_-_DPLA_-_e088ac348a2b5dabd923ef04686f2169.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.2 Reagan, Conservatism, and Partisan Divisions"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 28",
+    "section": "Decline and Rebirth (1968\u20131988)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "The Conservative Resurgence"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2851",
+ "lesson": "apush-u9-l1",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Airline deregulation came in 1978, under President Carter, and the strike was about federal workers' pay and hours.",
+   "text": "It ended the federal government's role in regulating the airline industry, closing a chapter that began with earlier airline rules."
+  },
+  {
+   "key": "B",
+   "misconception": "Reagan did the opposite of bargaining: he gave the strikers a deadline and then fired those who stayed out.",
+   "text": "It showed that the federal government would bargain with any union that threatened to strike against a federal agency."
+  },
+  {
+   "key": "C",
+   "text": "It signaled a sharp break from the New Deal era, when the federal government had expanded protections for organized labor."
+  },
+  {
+   "key": "D",
+   "misconception": "Federal workers never had a legal right to strike; a 1955 law banned strikes by federal employees.",
+   "text": "It restored the right of federal workers to strike, a right that earlier presidents had taken away from them."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Background: airline deregulation came in 1978, under President Carter, and the strike was about federal workers' pay and hours, not airline regulation.",
+  "B": "Reagan did the opposite of bargaining: he gave the strikers 48 hours to return, then fired those who stayed out.",
+  "C": "The photograph catches Reagan at the moment he set the terms in public. Background: he gave the strikers 48 hours to return, then fired more than 11,000 controllers who stayed out \u2014 a public show that this administration would confront, not accommodate, organized labor.\nThat is why historians treat the firing as a turning point: the same federal power that had backed unions since the New Deal was now breaking a strike on television.",
+  "D": "Background: federal workers never had a legal right to strike; a 1955 law banned strikes by federal employees, so there was no right to restore.",
+  "general": "1. Start with the scene. A president stands in the Rose Garden, in public, to answer a strike by his own government's workers.\n2. Ask what he did next. Background: he set a 48-hour deadline, then fired more than 11,000 controllers who stayed out.\n3. Ask what changed. For decades the federal government had backed unions; now it was firing strikers on television.\n4. Put it together. The firing was a message \u2014 to unions, to employers, and to voters \u2014 that the rules of American labor politics had changed.\nRemember: PATCO was the moment the conservative turn became something workers could feel."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "1.B"
+ ],
+ "source": "original; stimulus image from the shared pool, President Reagan in the Rose Garden, August 1981, public domain",
+ "status": "final",
+ "stem": "The photograph shows President Reagan days after the 1981 air-traffic controllers' strike began. Which of the following best explains the historical significance of Reagan's response to the strike?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Photograph of President Ronald Reagan addressing the press in the Rose Garden about the 1981 air-traffic controllers' strike; U.S. federal government photograph, public domain.",
+  "text": "President Ronald Reagan speaks to reporters in the White House Rose Garden in August 1981, days after air-traffic controllers walked off the job. He stands at a podium bearing the presidential seal, with the presidential flag behind him."
+ },
+ "stimulus_set": "reagan-patco",
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "topics": [
+  "9.1"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

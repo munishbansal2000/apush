@@ -1,0 +1,90 @@
+{
+ "id": "apush-saq-0275",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 9,
+ "topics": [
+  "9.2"
+ ],
+ "skills": [
+  "1.B",
+  "5.A"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "status": "final",
+ "lesson": "apush-u9-l1",
+ "source": "original; stimulus paraphrased from the grounding books or drawn from the shared image pool",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "A. The Ascendancy of the New Right"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "Prosperity and a New World Order (1988-2000)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Reagan, H. W., Clinton, and W. (1980-2001)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of George H. W. Bush, Republican National Convention acceptance speech, August 1988. Post-1929 material is paraphrased, not quoted.",
+  "text": "Paraphrase of George H. W. Bush's acceptance speech at the Republican National Convention, August 1988: Bush promised the convention and the country that, as president, he would not raise taxes. He presented the pledge as proof that he would hold the line on government spending and protect taxpayers."
+ },
+ "stimulus_set": null,
+ "saq_slot": 2,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify the pledge Bush made in the passage.",
+   "modelAnswer": "Bush pledged that, as president, he would not raise taxes. He offered the promise as proof that he would hold the line on government spending and protect taxpayers from a bigger federal government.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying the pledge not to raise taxes.",
+     "notEarned": "Describing Bush's campaign in general terms without naming the pledge does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain one reason Bush broke the pledge in 1990.",
+   "modelAnswer": "The federal deficit was ballooning, and a bipartisan budget agreement paired spending cuts with new revenue to bring it down. Bush signed the deal, choosing deficit reduction over keeping his campaign promise.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining a reason, such as the growing federal deficit or the bipartisan 1990 budget agreement.",
+     "notEarned": "Naming a reason with no explanation does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one political consequence of breaking the pledge.",
+   "modelAnswer": "Breaking the pledge convinced many conservatives that Bush could not be trusted to hold the line on taxes and spending. It split his own coalition and became a central charge against him in his 1992 defeat.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining a consequence, such as losing conservative trust, splitting the Republican coalition, or contributing to his 1992 defeat.",
+     "notEarned": "Naming a consequence with no explanation does not earn the point."
+    }
+   ]
+  }
+ ],
+ "totalPoints": 3
+}

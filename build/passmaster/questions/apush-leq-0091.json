@@ -1,0 +1,98 @@
+{
+ "id": "apush-leq-0091",
+ "type": "leq",
+ "pool": "practice",
+ "unit": 9,
+ "topics": [
+  "9.2"
+ ],
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 4,
+ "status": "final",
+ "lesson": "apush-u9-l1",
+ "source": "original; prompt written for this question",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "A. The Ascendancy of the New Right"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "B. The Deepening of Partisanship in the Twenty-first Century"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "Prosperity and a New World Order (1988-2000)"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 30",
+    "section": "Threat of Terrorism, Increase of Presidential Power, and Economic Crisis (2001-2016)"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 31",
+    "section": "Tumultuous Years: The Trump and Biden Presidencies (2017-2022)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "prompt": "Evaluate the extent to which partisan divisions deepened in the United States between 1994 and 2021.",
+ "modelOutline": "Thesis: Partisan divisions deepened sharply between 1994 and 2021 \u2014 from a policy disagreement between parties into a struggle over the legitimacy of elections themselves \u2014 though the deepening was uneven, with moments of bipartisan action in between.\nContext: Before 1994 the parties still overlapped: conservative Southern Democrats and liberal Northeastern Republicans crossed party lines, and divided government usually produced compromise.\nEvidence of deepening: the Contract with America and the 1994 Republican takeover; the Clinton impeachment in 1998; Bush v. Gore in 2000; the Tea Party revolt against Obama; the first Trump impeachment in 2019 and the second in 2021 after the Capitol attack.\nEvidence of limits and counter-currents: Clinton signed welfare reform with a Republican Congress; George W. Bush passed No Child Left Behind with Democratic votes; the 1990s ended with bipartisan budget surpluses.\nComplexity: The divisions deepened in kind, not just degree \u2014 from arguing over policy to arguing over facts and election results \u2014 so that by 2021 the parties disagreed not only about what government should do but about who had legitimately won the presidency.",
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt.",
+   "notEarned": "A sentence of background with no link to the argument does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (first point): earns the point for describing specific and relevant examples supporting one side of the argument.",
+   "notEarned": "General statements with no specific example do not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (second point): earns the point for describing specific and relevant examples supporting the other side of the argument or the limits of the first.",
+   "notEarned": "Repeating the same example, or naming a limit with no specific detail, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Analysis and reasoning: earns the point for explaining how the evidence shows the extent of the change or continuity, linking examples to the thesis rather than listing them.",
+   "notEarned": "Listing examples with no explanation of how they support the argument does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Analysis and reasoning (complexity): earns the point for a complex argument, such as qualifying the thesis by area or period, or weighing change against its limits.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ],
+ "stimulus": {
+  "kind": "none",
+  "source_note": "No stimulus; LEQ prompt only."
+ },
+ "stimulus_set": null,
+ "totalPoints": 6
+}

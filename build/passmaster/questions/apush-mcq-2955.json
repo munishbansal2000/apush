@@ -1,0 +1,79 @@
+{
+ "answerKey": "B",
+ "difficulty": 3,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.5 Migration and Immigration, 1980 to the Present"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 30",
+    "section": "Threat of Terrorism, Increase of Presidential Power, and Economic Crisis (2001\u20132016)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Diversity: Asset or Liability?"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2955",
+ "lesson": "apush-u9-l4",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Statehood is a different question from immigration's effects.",
+   "text": "The debate over whether to admit new states to the Union as equals"
+  },
+  {
+   "key": "B",
+   "text": "Earlier arguments over whether each new wave of immigrants would fit into American life"
+  },
+  {
+   "key": "C",
+   "misconception": "Railroads are not about immigration and culture.",
+   "text": "The debate over whether the federal government should build railroads"
+  },
+  {
+   "key": "D",
+   "misconception": "Money policy is unrelated to immigration.",
+   "text": "The debate over whether to keep the gold standard"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Background: admitting states was a question of territory and slavery, not of newcomers fitting in.",
+  "B": "Background: each wave of newcomers, from the Irish in the 1840s to southern and eastern Europeans in the 1900s, faced the same worry that it would not fit in. The passage shows that argument continuing with Latin American and Asian immigrants.",
+  "C": "Background: railroad building was a question of federal spending and western settlement.",
+  "D": "Background: the gold standard was a debate about money, not about immigrants.",
+  "general": "1. Name the worry in the passage: newcomers changing the country's culture.\n2. Ask when Americans worried that way before. Background: the Irish in the 1840s faced it, and so did southern and eastern Europeans in the 1900s.\n3. The group changes, but the worry repeats with each new wave.\n4. Statehood, railroads, and money policy never carried that worry.\nRemember: when a debate sounds familiar, ask which earlier group faced the same charge."
+ },
+ "reasoning": "continuity-change",
+ "skills": [
+  "5.B"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, Topic 9.5; 5 Steps 2024 Ch. 29/30; Princeton Review Ch. 13. Secondary account paraphrased from the grounding books (Princeton Review Ch. 13; Barron's Premium 2027 Ch. 11).",
+ "status": "final",
+ "stem": "The debate described in the passage most closely continues which earlier pattern in American history?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Secondary account paraphrased from the grounding books (Princeton Review Ch. 13; Barron's Premium 2027 Ch. 11).",
+  "text": "Paraphrase of a secondary account: Since the 1960s, immigration has remade the United States. Newcomers from Latin America and Asia, and their children, have made the country more diverse, and both parties now compete for their votes. Americans disagree about what this change means. Some point to new businesses, new workers, and new cultures as strengths. Others worry that large numbers of newcomers, including many who cross without papers, strain schools and public services and change the country's culture. Congress has repeatedly failed to pass a broad reform, so presidents have acted on their own: in 2012, President Obama shielded some young people brought here as children from deportation, and later presidents reversed course by executive action of their own."
+ },
+ "stimulus_set": "immigration-debate",
+ "themes": [
+  "MIG",
+  "SOC"
+ ],
+ "topics": [
+  "9.5"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

@@ -1,0 +1,87 @@
+{
+ "answerKey": "D",
+ "difficulty": 3,
+ "figures": [
+  {
+   "alt": "President Ronald Reagan speaking at a podium before the Brandenburg Gate in West Berlin in June 1987, with a crowd below",
+   "caption": "President Reagan at the Brandenburg Gate, June 1987",
+   "file": "u9/pr25e-ch13-q06.jpg",
+   "id": "fig-apush-mcq-2854",
+   "license": "Public domain (U.S. federal government work)",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/President_Ronald_Reagan_Making_His_Berlin_Wall_Speech_at_Brandenburg_Gate_West_Berlin_-_DPLA_-_dce9b53e6ef9b7e01d184ce61f78871b.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.3 The End of the Cold War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "Prosperity and a New World Order (1988\u20132000)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Reagan, H. W., Clinton, and W. (1980\u20132001)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2854",
+ "lesson": "apush-u9-l1",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "No such agreement existed; the INF Treaty of 1987 said nothing about the Wall.",
+   "text": "The Soviet Union had already agreed in 1987 to dismantle the Wall on a fixed and public timetable."
+  },
+  {
+   "key": "B",
+   "misconception": "East Germans did not elect a new government before the Wall fell.",
+   "text": "Reagan's speech persuaded East German citizens to elect a new government that would tear the Wall down."
+  },
+  {
+   "key": "C",
+   "misconception": "No invasion of East Germany took place.",
+   "text": "The United States and its allies had invaded East Germany and forced the Wall open by military action."
+  },
+  {
+   "key": "D",
+   "text": "Reforms inside the Soviet Union had weakened Communist rule, so pressure from outside could finally break it."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "No such agreement existed. Background: the INF Treaty of 1987 removed intermediate-range missiles; it said nothing about the Wall, which Moscow still defended.",
+  "B": "East Germans did not elect a new government before the Wall fell. Background: the Wall opened after weeks of street protests and a bungled announcement by East German officials, not an election.",
+  "C": "No invasion of East Germany took place. Background: the Wall fell when East German guards, unsure of their orders, let crowds through the checkpoints.",
+  "D": "The speech landed while the Soviet system was already cracking from within. Background: Gorbachev's reforms loosened Moscow's grip, and East Germany's government lost the will and the backing to hold the border.\nOutside pressure mattered because the inside was giving way \u2014 the challenge worked as a push on a door whose hinges were already loose.",
+  "general": "1. Start with the timing. A speech in 1987, a Wall down in 1989 \u2014 the gap is the clue.\n2. Ask what changed in between. Background: Gorbachev's reforms loosened Moscow's control, and protests spread across Eastern Europe through 1989.\n3. Ask what American pressure could and could not do. A speech cannot open a border; a government that has lost its nerve can.\n4. Put it together. Reagan's challenge hit a system already weakening from within, and the two forces met in November 1989.\nRemember: the Wall fell because inside decay and outside pressure arrived together \u2014 neither alone explains the speed."
+ },
+ "reasoning": "continuity-change",
+ "skills": [
+  "4.B"
+ ],
+ "source": "original; stimulus image from the shared pool, President Reagan at the Brandenburg Gate, June 1987, public domain",
+ "status": "final",
+ "stem": "The Berlin Wall fell in November 1989, about two and a half years after this speech. Which of the following best explains why the Wall's fall followed so soon after Reagan's challenge?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Photograph of President Ronald Reagan delivering his Berlin Wall address at the Brandenburg Gate, West Berlin, June 12, 1987; U.S. federal government photograph, public domain.",
+  "text": "President Ronald Reagan speaks at a podium in front of the Brandenburg Gate in West Berlin in June 1987. Behind him stands the gate, and a sign on the Berlin Wall reads, in German, that visitors are now leaving West Berlin. American and German flags line the stage, and a crowd listens below."
+ },
+ "stimulus_set": "berlin-speech-1987",
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "topics": [
+  "9.1"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

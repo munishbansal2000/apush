@@ -1,0 +1,88 @@
+{
+ "answerKey": "A",
+ "difficulty": 2,
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2974",
+   "file": "u9/5s24-ch30-mcq-03.jpg",
+   "caption": "President Obama signs the Affordable Care Act, March 23, 2010",
+   "alt": "President Obama seated at a desk signing a document while Vice President Biden, Speaker Pelosi, and other leaders stand behind him",
+   "license": "Public domain (U.S. federal government work; official White House photograph)",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Obama_signs_health_care-20100323.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "President Obama and Health Care Reform"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 30",
+    "section": "Threat of Terrorism, Increase of Presidential Power, and Economic Crisis (2001-2016)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Recent Trends"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2974",
+ "lesson": "apush-u9-l5",
+ "options": [
+  {
+   "key": "A",
+   "text": "Republican opposition continued, and premiums rose for some unsubsidized people"
+  },
+  {
+   "key": "B",
+   "text": "The law was never actually signed by the president",
+   "misconception": "Obama signed it in March 2010, as the photograph shows."
+  },
+  {
+   "key": "C",
+   "text": "The Supreme Court struck the whole law down in 2012",
+   "misconception": "The Court upheld the law's major parts."
+  },
+  {
+   "key": "D",
+   "text": "No American gained insurance through the law",
+   "misconception": "Over 31 million Americans gained insurance through it."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The account says Republicans opposed the act and tried to repeal it, and premiums rose for some people who did not receive subsidies.",
+  "B": "The photograph shows Obama signing the act in March 2010. It became law.",
+  "C": "The Court upheld the law's major parts. It did not strike the whole law down.",
+  "D": "Background: over 31 million Americans gained insurance through the act, according to the Department of Health and Human Services.",
+  "general": "1. A court ruling settles the law, not the politics. The account says the Supreme Court upheld the act's major parts.\n2. Even so, Republicans kept opposing it and trying to repeal it.\n3. The law also had a real cost problem: premiums rose for some people who did not receive subsidies.\n4. Opposition plus a visible cost kept the fight alive after the Court had spoken.\nRemember: a law can survive in court and still stay contested in politics."
+ },
+ "reasoning": "continuity-change",
+ "skills": [
+  "3.B"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, President Obama and Health Care Reform; 5 Steps 2024 Ch. 30; Princeton Review Ch. 13. Photograph: official White House photograph, March 23, 2010, public domain.",
+ "status": "final",
+ "stem": "Which statement best explains why the Affordable Care Act remained controversial after the Supreme Court upheld it?",
+ "stimulus": {
+  "kind": "mixed",
+  "source_note": "Photograph: official White House photograph, March 23, 2010. Public domain (U.S. federal government work). Account paraphrased from the grounding books (Barron's Premium 2027 Ch. 11; 5 Steps 2024 Ch. 30).",
+  "text": "Photograph of President Barack Obama signing the Affordable Care Act on March 23, 2010, seated at a desk in the East Room of the White House, with Vice President Joe Biden and Speaker Nancy Pelosi among those standing behind him.\n\nParaphrase of a secondary account: The Affordable Care Act, passed in March 2010, set up health insurance exchanges and expanded Medicaid to cover more low-income Americans. The Supreme Court upheld its major parts. According to the Department of Health and Human Services, over 31 million Americans gained health insurance through the act, and the uninsured rate for non-elderly Americans fell from 18 percent in 2010 to 10 percent in 2016.\n\nThe act stayed controversial: Republicans opposed it and tried to repeal it, and premiums rose for some people who did not receive subsidies. In the same years, Congress passed the Dodd-Frank Act of 2010 to regulate financial markets and protect consumers after the Great Recession."
+ },
+ "stimulus_set": "obama-aca",
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "topics": [
+  "9.6"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

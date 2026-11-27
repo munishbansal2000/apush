@@ -1,0 +1,85 @@
+{
+ "answerKey": "B",
+ "difficulty": 2,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Same-Sex Marriage"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Redefining Family Structures"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 31",
+    "section": "Tumultuous Years: The Trump and Biden Presidencies (2017-2022)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Gender Roles"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2996",
+ "lesson": "apush-u9-l5",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "No such law passed in 2015; the change came from the Court's decision, not from Congress.",
+   "text": "Congress passed a law in 2015 requiring every state to allow same-sex marriage"
+  },
+  {
+   "key": "B",
+   "text": "State courts had legalized same-sex marriage and public opinion had shifted"
+  },
+  {
+   "key": "C",
+   "misconception": "Background: the Equal Rights Amendment was never ratified, so it added nothing to the Constitution.",
+   "text": "The Equal Rights Amendment was ratified, adding a ban on sex discrimination to the Constitution"
+  },
+  {
+   "key": "D",
+   "misconception": "No president issued such an order; state bans ended through court decisions.",
+   "text": "The president issued an executive order ending all state bans on same-sex marriage"
+  }
+ ],
+ "pool": "test",
+ "rationales": {
+  "A": "No such law passed in 2015. The change came from the Court's decision, not from Congress.",
+  "B": "The account traces the shift from the Hawaii ruling in 1993 through Massachusetts in 2003 to majority support by 2015. Background: the Court had struck down the federal definition of marriage in the Defense of Marriage Act in 2013.",
+  "C": "Background: the Equal Rights Amendment was never ratified, so it added nothing to the Constitution.",
+  "D": "No president issued such an order. State bans ended through court decisions.",
+  "general": "1. Ask what had changed between 1996, when Congress passed the Defense of Marriage Act, and 2015.\n2. The account says state courts legalized same-sex marriage, starting with Massachusetts in 2003.\n3. It also says public opinion moved from 68 percent opposed in 1996 to nearly 60 percent in favor by 2015.\n4. Background: the Court had already struck down the federal definition of marriage in 2013, so the remaining bans rested on a shrinking base.\nRemember: a court ruling that follows years of change in law and opinion usually completes the change, not starts it."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "3.D",
+  "5.B"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, Same-Sex Marriage and Redefining Family Structures; 5 Steps 2024 Ch. 31; Princeton Review Ch. 13.",
+ "status": "final",
+ "stem": "Which of the following most directly explains the Supreme Court's decision in Obergefell v. Hodges (2015)?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Secondary account paraphrased from the grounding books (Barron's Premium 2027 Ch. 11; 5 Steps 2024 Ch. 31).",
+  "text": "Paraphrase of a secondary account: The American family changed sharply after 1970. In 1970, households headed by unmarried adults stood at 30 percent of all households; by 2000, that figure had risen to 48 percent. More women entered the workforce, married later, and sought careers outside the home.\n\nThe gay rights movement also pressed for legal equality. In 1993, the Hawaii Supreme Court ruled that the state's ban on same-sex marriage was discriminatory, and Congress answered with the Defense of Marriage Act in 1996. The tide turned in 2003, when the Massachusetts high court ruled that the state could not forbid same-sex couples from marrying.\n\nPublic opinion moved with the courts: in 1996, 68 percent of Americans opposed legal recognition for same-sex couples, but by 2015 nearly 60 percent favored it. That year, in Obergefell v. Hodges, the Supreme Court ruled that marriage is a fundamental right that must be guaranteed to same-sex couples."
+ },
+ "stimulus_set": "rights-social-change",
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "topics": [
+  "9.7"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

@@ -1,0 +1,78 @@
+{
+ "answerKey": "C",
+ "difficulty": 3,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.6 Defining America's Role in the World in the 21st Century"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 30",
+    "section": "Threat of Terrorism, Increase of Presidential Power, and Economic Crisis (2001-2016)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "America and the War on Terror"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2963",
+ "lesson": "apush-u9-l5",
+ "options": [
+  {
+   "key": "A",
+   "text": "Obama closed the prison at Guantanamo Bay in his first year",
+   "misconception": "Obama promised to close it but left office with 41 prisoners still held there."
+  },
+  {
+   "key": "B",
+   "text": "Obama ended all drone strikes against suspected terrorists",
+   "misconception": "Obama greatly expanded drone strikes, rather than ending them."
+  },
+  {
+   "key": "C",
+   "text": "Obama kept in place several Patriot Act measures and the Guantanamo prison"
+  },
+  {
+   "key": "D",
+   "text": "Obama withdrew the United States from the Department of Homeland Security",
+   "misconception": "The department continued operating under Obama."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Background: Obama promised to close Guantanamo Bay by 2009 but left office in 2017 with 41 prisoners still held there.",
+  "B": "Background: drone strikes grew sharply under Obama, even as the United Nations called them extrajudicial killings.",
+  "C": "Background: Obama extended three Patriot Act measures in 2011 and left office with 41 prisoners still at Guantanamo Bay, keeping Bush-era tools in place.",
+  "D": "Background: the Department of Homeland Security kept operating under Obama. No president withdrew the United States from it.",
+  "general": "1. Continuity means the same policy carried across a change of president.\n2. Background: Obama extended three Patriot Act measures in 2011, kept Guantanamo Bay open, and expanded drone strikes.\n3. Those are Bush-era tools still in use, which shows continuity more than any single promise.\n4. Background: the promises to close Guantanamo Bay and the hopes for a break with Bush policies did not become the record.\nRemember: judge continuity by the policies that stayed, not by the promises made."
+ },
+ "reasoning": "continuity-change",
+ "skills": [
+  "3.B"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, Topic 9.6; 5 Steps 2024 Ch. 30; Princeton Review Ch. 13.",
+ "status": "final",
+ "stem": "Which development best shows continuity in the war on terrorism between the Bush and Obama administrations?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Secondary account paraphrased from the grounding books (Barron's Premium 2027 Ch. 11, Topic 9.6; 5 Steps 2024 Ch. 30).",
+  "text": "Paraphrase of a secondary account: Six weeks after the September 11 attacks, Congress passed the USA Patriot Act, which greatly expanded the government's power to investigate suspected terrorists, including letting the FBI use National Security Letters to obtain telephone, email, and financial records without a court order.\n\nIn 2003, Congress created the Department of Homeland Security, a cabinet department that took in the Immigration and Naturalization Service and took charge of protecting the country from terrorist attacks and natural disasters. Critics warned that both steps risked civil liberties. In 2004, photographs showed American soldiers abusing prisoners at Abu Ghraib prison in Iraq. The government held some suspects indefinitely as enemy combatants, but in Hamdan v. Rumsfeld (2006), the Supreme Court ruled that detainees could not be held without due process and the protection of the Geneva Conventions."
+ },
+ "stimulus_set": "liberty-security",
+ "themes": [
+  "PCE"
+ ],
+ "topics": [
+  "9.6"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

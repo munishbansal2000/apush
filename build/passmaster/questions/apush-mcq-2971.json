@@ -1,0 +1,78 @@
+{
+ "answerKey": "C",
+ "difficulty": 2,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "The Housing Crisis and the Great Recession"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 30",
+    "section": "Threat of Terrorism, Increase of Presidential Power, and Economic Crisis (2001-2016)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Recent Trends"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2971",
+ "lesson": "apush-u9-l5",
+ "options": [
+  {
+   "key": "A",
+   "text": "Unemployment fell steadily from 2007 to 2010",
+   "misconception": "The table shows unemployment rising each year."
+  },
+  {
+   "key": "B",
+   "text": "Unemployment stayed the same in every year shown",
+   "misconception": "The rate rose from 4.6 percent to 9.6 percent."
+  },
+  {
+   "key": "C",
+   "text": "The worst unemployment came after the housing bubble burst"
+  },
+  {
+   "key": "D",
+   "text": "Unemployment peaked in 2008 and recovered by 2009",
+   "misconception": "The rate kept rising through 2009 and 2010."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The table shows the rate rising each year, from 4.6 percent to 9.6 percent, not falling.",
+  "B": "The rate more than doubled across the four years shown.",
+  "C": "The table shows the rate rising from 4.6 percent in 2007 to 9.6 percent in 2010, after the housing bubble burst in 2007.",
+  "D": "The rate was still rising in 2009 and reached its highest point in the table in 2010.",
+  "general": "1. Read the table year by year. The rate rises from 4.6 percent in 2007 to 5.8 in 2008, 9.3 in 2009, and 9.6 in 2010.\n2. Background: the housing bubble burst in 2007, so the job losses followed the housing collapse rather than coming before it.\n3. The peak in the table is 2010, the last year shown, which means the worst came late, not early.\n4. Any option that says the rate fell or peaked in 2008 misreads the table.\nRemember: in a table, the peak is the largest number, and here it comes last."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "2.B"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, The Housing Crisis and the Great Recession; 5 Steps 2024 Ch. 30; Princeton Review Ch. 13. Unemployment data: BLS Current Population Survey annual averages.",
+ "status": "final",
+ "stem": "What does the table best show about the timing of the Great Recession?",
+ "stimulus": {
+  "kind": "mixed",
+  "source_note": "Data: Bureau of Labor Statistics, Current Population Survey, annual averages, series LNU04000000. Account paraphrased from the grounding books (Barron's Premium 2027 Ch. 11; 5 Steps 2024 Ch. 30).",
+  "text": "Data table: United States unemployment rate, annual average, from the Bureau of Labor Statistics Current Population Survey.\n\n| Year | Unemployment rate |\n| 2007 | 4.6% |\n| 2008 | 5.8% |\n| 2009 | 9.3% |\n| 2010 | 9.6% |\n\nParaphrase of a secondary account: In the 2000s, banks made risky subprime mortgages to borrowers with low credit ratings, then bundled those mortgages into securities sold across the financial system. When the housing bubble burst in 2007, borrowers defaulted, foreclosures spread, and banks holding the bundled loans cut back on lending.\n\nIn 2008, Congress passed the Troubled Asset Relief Program, giving the government up to 700 billion dollars to buy troubled mortgage assets from financial firms. In 2009, President Obama signed the American Recovery and Reinvestment Act, a stimulus of almost 800 billion dollars for infrastructure, schools, and hospitals."
+ },
+ "stimulus_set": "recession-2008-2010",
+ "themes": [
+  "WXT"
+ ],
+ "topics": [
+  "9.6"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

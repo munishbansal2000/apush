@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-2868",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 9,
+ "topics": [
+  "9.2"
+ ],
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "status": "final",
+ "lesson": "apush-u9-l1",
+ "source": "original; stimulus from the shared image pool or paraphrased from the grounding books",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "C. Reducing Big Government: Rhetoric and Reality"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 28",
+    "section": "Decline and Rebirth (1968-1988)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Reagan, H. W., Clinton, and W. (1980-2001)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stem": "Which of the following best explains the change shown in the table?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Reagan raised taxes sharply while cutting military spending",
+   "misconception": "Reagan cut taxes and raised military spending \u2014 the opposite of this choice."
+  },
+  {
+   "key": "B",
+   "text": "Congress balanced the budget by eliminating Social Security and Medicare",
+   "misconception": "Social Security and Medicare survived every attempt to cut them; they were never eliminated."
+  },
+  {
+   "key": "C",
+   "text": "The economy collapsed, wiping out federal tax revenue entirely",
+   "misconception": "The early-1980s recession was real, but tax revenue did not vanish \u2014 the debt grew because spending rose while revenue fell."
+  },
+  {
+   "key": "D",
+   "text": "Tax cuts reduced federal revenue while military spending rose sharply"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "A": "Background: Reagan cut taxes and raised military spending \u2014 the opposite of this choice.",
+  "B": "Background: Social Security and Medicare survived every attempt to cut them; they were never eliminated.",
+  "C": "Background: the early-1980s recession was real, but tax revenue did not vanish \u2014 the debt grew because spending rose while revenue fell.",
+  "D": "Background: the 1981 tax cuts shrank federal revenue while the military buildup pushed spending up, so the government borrowed the difference.",
+  "general": "1. Read the table like a before-and-after picture. In six years the debt more than doubled.\n2. Background: the 1981 tax cuts shrank what the government took in, while the military buildup pushed what it spent up.\n3. Background: when spending rises and revenue falls at the same time, the gap has to be borrowed \u2014 and the debt grows.\n4. The other choices get the history backwards: taxes were cut, not raised.\nRemember: the debt doubled because money went out faster than it came in."
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Figures from Barron's Premium 2027, Chapter 11, 'Growth of the Federal Deficit.'",
+  "text": "Federal debt and interest payments (figures from Barron's Premium 2027, Chapter 11):\n\n| Measure | Value |\n| Federal debt, 1980 | about $900 billion |\n| Federal debt, 1986 | over $2 trillion |\n| Interest on the debt, 1988 | 14% of all federal spending |"
+ },
+ "stimulus_set": "debt-table-1980s"
+}

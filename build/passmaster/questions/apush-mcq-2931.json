@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-2931",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 9,
+ "topics": [
+  "9.4"
+ ],
+ "skills": [
+  "3.D"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "status": "final",
+ "lesson": "apush-u9-l3",
+ "source": "original; stimulus from the shared image pool or paraphrased from the grounding books",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "The Great Recession"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 30",
+    "section": "Threat of Terrorism, Increase of Presidential Power, and Economic Crisis (2001\u20132016)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Reagan, H. W., Clinton, and W. (1980-2001)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stem": "Which claim about the Glass-Steagall repeal is best supported by the passage?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The repeal let banks combine everyday banking with riskier investing"
+  },
+  {
+   "key": "B",
+   "text": "The repeal directly ordered banks to make subprime loans",
+   "misconception": "The repeal removed rules; it did not order banks to make any particular loan."
+  },
+  {
+   "key": "C",
+   "text": "The repeal ended all federal regulation of banks",
+   "misconception": "The passage says most of the act's provisions were repealed, not all banking regulation."
+  },
+  {
+   "key": "D",
+   "text": "The repeal caused the housing bubble by itself",
+   "misconception": "The passage gives several causes; naming one as the sole cause overreads it."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "The passage says the repeal removed rules that had separated everyday banking from risky investing.",
+  "B": "Removing a rule is not giving an order. Background: banks chose to make subprime loans; the repeal only cleared the way.",
+  "C": "The passage says most of the act's provisions were repealed. Background: other banking rules stayed in place.",
+  "D": "The passage gives several causes \u2014 subprime loans, bundling, the repeal. Background: no single cause explains the crisis alone.",
+  "general": "1. Read exactly what the passage says the repeal did: it removed the wall between two kinds of banking.\n2. A removed wall lets banks mix the two \u2014 it does not order them to, and it does not end all rules.\n3. Keep the repeal in its place: one link in a chain, alongside risky loans and bundling.\n4. The strongest claim stays inside the passage's words.\nRemember: a claim is only as strong as the sentence that supports it."
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original summary based on Barron's Premium 2027, Chapter 11, and Princeton Review, Chapter 13.",
+  "text": "Original summary based on the grounding books: In the 2000s, banks offered mortgages to buyers with weak credit, loans known as subprime mortgages, and then bundled those loans into investments sold around the world. Congress had repealed most of the Glass-Steagall Act in 1999, removing rules that had separated everyday banking from risky investing. When the housing bubble burst in 2007, the risky loans failed in large numbers, banks stopped lending, and the economy fell into the Great Recession, the worst downturn since the Great Depression."
+ },
+ "stimulus_set": "great-recession",
+ "figures": null
+}

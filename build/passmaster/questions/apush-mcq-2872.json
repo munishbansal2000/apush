@@ -1,0 +1,76 @@
+{
+ "id": "apush-mcq-2872",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 9,
+ "topics": [
+  "9.2"
+ ],
+ "skills": [
+  "5.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 3,
+ "status": "final",
+ "lesson": "apush-u9-l1",
+ "source": "original; stimulus from the shared image pool or paraphrased from the grounding books",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "A. The Ascendancy of the New Right"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 28",
+    "section": "Decline and Rebirth (1968-1988)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "The Conservative Resurgence"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stem": "Reagan's argument in the passage most directly continues which earlier American debate?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The debate over whether the president may issue executive orders",
+   "misconception": "Reagan's argument is about the size of the federal government, not about the president's own powers."
+  },
+  {
+   "key": "B",
+   "text": "The debate over who should be allowed to vote",
+   "misconception": "Reagan is arguing about the scope of government, not about the franchise or access to voting."
+  },
+  {
+   "key": "C",
+   "text": "The debate over whether the United States should join international alliances",
+   "misconception": "Alliances are a foreign-policy question; Reagan's address applies its argument to domestic economic policy."
+  },
+  {
+   "key": "D",
+   "text": "The debate over how much power the federal government should hold"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "A": "Background: debates over presidential powers \u2014 executive orders, war powers \u2014 are a different continuity from Reagan's argument about the size of government.",
+  "B": "Background: debates over voting concern turnout and the franchise, not the scope of government.",
+  "C": "Background: debates over alliances concern foreign policy, while Reagan's address applies its argument to domestic economic policy.",
+  "D": "Background: from Hamilton versus Jefferson through the New Deal to Reagan, Americans have argued over how much power the federal government may exercise over the economy.",
+  "general": "1. Strip the speech to its claim: the federal government has grown too big and should do less.\n2. Background: that claim belongs to the oldest economic argument in American politics \u2014 how much power Washington may exercise over the economy.\n3. Background: it runs from Hamilton versus Jefferson through the New Deal's critics to Reagan himself.\n4. Presidential powers, voting, and alliances are real debates, but none of them is the one Reagan is having here.\nRemember: the small-government claim is the federal-power debate, two centuries old."
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of Ronald Reagan, First Inaugural Address, January 20, 1981. No verbatim quotation: post-1929 material is paraphrased.",
+  "text": "Paraphrase of President Ronald Reagan's first inaugural address, January 20, 1981: Reagan argued that the federal government had grown too large and stood in the way of the nation's recovery. He said government was not the cure for the country's economic troubles but their cause, and that power should flow back to the states and to the people. He also argued that the federal government had not created the states \u2014 the states had created the federal government."
+ },
+ "stimulus_set": "reagan-inaugural-1981"
+}

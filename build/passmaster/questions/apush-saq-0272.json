@@ -1,0 +1,90 @@
+{
+ "id": "apush-saq-0272",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 9,
+ "topics": [
+  "9.2"
+ ],
+ "skills": [
+  "1.B",
+  "4.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 3,
+ "status": "final",
+ "lesson": "apush-u9-l1",
+ "source": "original; stimulus paraphrased from the grounding books or drawn from the shared image pool",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "D. Debates over the Scope of Government and International Trade"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "Prosperity and a New World Order (1988-2000)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Reagan, H. W., Clinton, and W. (1980-2001)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of President Bill Clinton, State of the Union address, January 1996. Post-1929 material is paraphrased, not quoted.",
+  "text": "Paraphrase of President Bill Clinton's State of the Union address, January 1996: Clinton declared that the era of big government was over. He said the federal government should be smaller and smarter, working with states and citizens rather than directing their lives, and he called on Congress to finish the work of reforming welfare."
+ },
+ "stimulus_set": null,
+ "saq_slot": 2,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one change in the Democratic Party's approach that Clinton's words reflect.",
+   "modelAnswer": "Clinton's words reflect the Democratic Party's move away from the liberalism of Lyndon Johnson's Great Society. Where Johnson created and expanded federal welfare programs, Clinton accepted that the federal government should do less and leave more to the states.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying the Democratic shift toward the center, such as accepting limits on federal power, welfare reform, or triangulation.",
+     "notEarned": "Restating Clinton's words with no change in the party's approach identified does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain one development that led Clinton to make this declaration.",
+   "modelAnswer": "The Republican victory in the 1994 midterm elections gave the GOP control of both houses of Congress and put Clinton on the defensive. To survive politically, he adopted parts of the Republican agenda and presented himself as a centrist rather than a liberal.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining a cause, such as the 1994 Republican victory, the Contract with America, or the failure of Clinton's health-care plan.",
+     "notEarned": "Naming a development with no link to Clinton's declaration does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one way Clinton acted on this outlook during his presidency.",
+   "modelAnswer": "Clinton signed the 1996 welfare reform law, which ended the federal guarantee of welfare aid and let states set their own rules. He also embraced the North American Free Trade Agreement, breaking with organized labor in the name of free trade and smaller government.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining an action, such as signing welfare reform, embracing NAFTA, or declaring the era of big government over in policy.",
+     "notEarned": "Naming an action with no explanation of how it reflects the outlook does not earn the point."
+    }
+   ]
+  }
+ ],
+ "totalPoints": 3
+}

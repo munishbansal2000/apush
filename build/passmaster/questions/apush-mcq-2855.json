@@ -1,0 +1,88 @@
+{
+ "answerKey": "C",
+ "difficulty": 2,
+ "figures": [
+  {
+   "alt": "President Ronald Reagan speaking at a podium before the Brandenburg Gate in West Berlin in June 1987, with a crowd below",
+   "caption": "President Reagan at the Brandenburg Gate, June 1987",
+   "file": "u9/pr25e-ch13-q06.jpg",
+   "id": "fig-apush-mcq-2855",
+   "license": "Public domain (U.S. federal government work)",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/President_Ronald_Reagan_Making_His_Berlin_Wall_Speech_at_Brandenburg_Gate_West_Berlin_-_DPLA_-_dce9b53e6ef9b7e01d184ce61f78871b.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.3 The End of the Cold War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 28",
+    "section": "Decline and Rebirth (1968\u20131988)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Reagan, H. W., Clinton, and W. (1980\u20132001)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2855",
+ "lesson": "apush-u9-l1",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Reagan cared about trade, but the speech is about the Wall and freedom, not commerce.",
+   "text": "Containment sought to spread democracy abroad, while Reagan sought only to protect American trade interests."
+  },
+  {
+   "key": "B",
+   "misconception": "Reagan acted with allies, not without them.",
+   "text": "Containment relied only on the United Nations, while Reagan acted entirely without any allies at all."
+  },
+  {
+   "key": "C",
+   "text": "Containment aimed to hold the line against Communist expansion, while Reagan aimed to roll it back."
+  },
+  {
+   "key": "D",
+   "misconception": "Containment was entirely about the Soviet Union; the Truman Doctrine and NATO were built to answer Soviet expansion.",
+   "text": "Containment ignored the Soviet Union altogether, while Reagan made it the center of American foreign policy."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Reagan cared about trade, but the speech is about the Wall and freedom, not commerce. Background: containment also had little to do with spreading democracy by force; it was about blocking expansion.",
+  "B": "Reagan acted with allies, not without them. Background: American troops and missiles stood in Europe alongside NATO allies throughout the 1980s.",
+  "C": "The speech does not ask Moscow to behave better within its borders; it demands the Wall itself come down. Background: containment, as practiced from Truman on, accepted the division of Europe and worked to stop it spreading further.\nReagan's demand goes past holding the line \u2014 it calls for the line itself to disappear.",
+  "D": "Containment was entirely about the Soviet Union. Background: the Truman Doctrine and NATO were built to answer Soviet expansion, so the Soviets were always the center of the policy.",
+  "general": "1. Name the old policy. Background: containment, from Truman on, drew a line around Communism and held it.\n2. Name the new demand. Reagan stands at the Wall and calls for it to come down \u2014 not a better line, no line at all.\n3. Compare the goals. Holding a line accepts the division; demanding its end aims to undo it.\n4. Check the alternatives. Trade, the United Nations, and ignoring Moscow all miss what the speech actually does.\nRemember: containment fenced Communism in; Reagan's speech asked for the fence to come down."
+ },
+ "reasoning": "comparison",
+ "skills": [
+  "5.B",
+  "4.A"
+ ],
+ "source": "original; stimulus image from the shared pool, President Reagan at the Brandenburg Gate, June 1987, public domain",
+ "status": "final",
+ "stem": "How does Reagan's approach in this speech most differ from the containment policy of the early Cold War?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Photograph of President Ronald Reagan delivering his Berlin Wall address at the Brandenburg Gate, West Berlin, June 12, 1987; U.S. federal government photograph, public domain.",
+  "text": "President Ronald Reagan speaks at a podium in front of the Brandenburg Gate in West Berlin in June 1987. Behind him stands the gate, and a sign on the Berlin Wall reads, in German, that visitors are now leaving West Berlin. American and German flags line the stage, and a crowd listens below."
+ },
+ "stimulus_set": "berlin-speech-1987",
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "topics": [
+  "9.1"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

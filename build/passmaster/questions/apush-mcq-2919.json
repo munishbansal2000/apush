@@ -1,0 +1,86 @@
+{
+ "id": "apush-mcq-2919",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 9,
+ "topics": [
+  "9.4"
+ ],
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "status": "final",
+ "lesson": "apush-u9-l3",
+ "source": "original; stimulus from the shared image pool or paraphrased from the grounding books",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "The Rise of the Service Sector"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 28",
+    "section": "Decline and Rebirth (1968-1988)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Wage Stagnation"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stem": "Which of the following most directly explains why the trend in the chart continued through the 1990s and 2000s?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The passage of the Wagner Act in 1935",
+   "misconception": "The Wagner Act protected unions in the 1930s; it built membership up, it did not shrink it sixty years later."
+  },
+  {
+   "key": "B",
+   "text": "The growth of the federal workforce",
+   "misconception": "Background: public-sector union rates stayed near 36 percent; the decline was in the private sector."
+  },
+  {
+   "key": "C",
+   "text": "The end of the Cold War in 1991",
+   "misconception": "The Cold War's end changed foreign policy, not how factories and shops were organized."
+  },
+  {
+   "key": "D",
+   "text": "Manufacturing jobs shrank while service jobs grew"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "A": "Background: the Wagner Act of 1935 protected workers' right to organize; it built unions up, not down.",
+  "B": "Background: public-sector union rates held near 36 percent; the fall came from private-sector jobs.",
+  "C": "The Cold War's end is the wrong story. Background: the union slide ran through the 1990s and 2000s whatever happened abroad.",
+  "D": "Background: factory jobs were the most unionized jobs, and service work was far less unionized, so the shift shrank membership.",
+  "general": "1. Ask which jobs unions held: factory jobs, above all.\n2. Background: factory jobs shrank for forty years while service jobs grew to take their place.\n3. Service work in shops, restaurants, and offices was far less unionized than the factory floor.\n4. So the economy's shift itself thinned the unions, decade after decade.\nRemember: when the union-heavy jobs go, the unions go with them."
+ },
+ "stimulus": {
+  "kind": "chart",
+  "source_note": "Chart plotted from U.S. Bureau of Labor Statistics, Current Population Survey. The 1979 figure comes from the pre-1983 historical series; 1983 onward is the comparable series.",
+  "text": "| Year | Union members as a share of U.S. workers |\n| 1979 | 24.1% |\n| 1983 | 20.1% |\n| 1990 | 16.0% |\n| 2000 | 13.4% |\n| 2010 | 11.9% |\n\nSource: U.S. Bureau of Labor Statistics, Current Population Survey. The 1979 figure comes from the pre-1983 historical series; 1983 onward is the comparable series."
+ },
+ "stimulus_set": "union-rate-1979-2010",
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2919",
+   "file": "u9/fig-union-rate-1979-2010.jpg",
+   "caption": "Union members as a share of U.S. wage and salary workers, 1979\u20132010. Source: U.S. Bureau of Labor Statistics.",
+   "alt": "Line chart showing union membership falling from 24.1 percent of U.S. workers in 1979 to 11.9 percent in 2010",
+   "license": "Chart data: public U.S. government data",
+   "source_url": "https://www.bls.gov/spotlight/2016/union-membership-in-the-united-states/home.htm"
+  }
+ ]
+}

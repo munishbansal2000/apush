@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-2918",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 9,
+ "topics": [
+  "9.4"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "status": "final",
+ "lesson": "apush-u9-l3",
+ "source": "original; stimulus from the shared image pool or paraphrased from the grounding books",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "The Rise of the Service Sector"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 28",
+    "section": "Decline and Rebirth (1968-1988)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Wage Stagnation"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stem": "Which of the following best describes the trend shown in the chart?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Union membership rose steadily from 1979 to 2010",
+   "misconception": "The line falls at every step, from 24.1 percent to 11.9 percent."
+  },
+  {
+   "key": "B",
+   "text": "Union membership fell steadily from 1979 to 2010"
+  },
+  {
+   "key": "C",
+   "text": "Union membership stayed about the same from 1979 to 2010",
+   "misconception": "The share was cut in half, from about a quarter of workers to about an eighth."
+  },
+  {
+   "key": "D",
+   "text": "Union membership fell, then rose back above its 1979 level",
+   "misconception": "The line never turns back up; 2010 is the lowest point shown."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "The line falls at every step, from 24.1 percent in 1979 to 11.9 percent in 2010.",
+  "B": "The chart shows union membership falling at every step, from 24.1 percent in 1979 to 11.9 percent in 2010.",
+  "C": "A fall from 24.1 percent to 11.9 percent is a halving, not staying the same.",
+  "D": "The line never turns back up; the 2010 value is the lowest on the chart.",
+  "general": "1. Read the line from left to right: 24.1 percent, then 20.1, then 16.0, then 13.4, then 11.9.\n2. Every step goes down, and none goes back up.\n3. By 2010 about one worker in eight belonged to a union, down from about one in four in 1979.\nRemember: a line that only falls tells one story \u2014 steady decline."
+ },
+ "stimulus": {
+  "kind": "chart",
+  "source_note": "Chart plotted from U.S. Bureau of Labor Statistics, Current Population Survey. The 1979 figure comes from the pre-1983 historical series; 1983 onward is the comparable series.",
+  "text": "| Year | Union members as a share of U.S. workers |\n| 1979 | 24.1% |\n| 1983 | 20.1% |\n| 1990 | 16.0% |\n| 2000 | 13.4% |\n| 2010 | 11.9% |\n\nSource: U.S. Bureau of Labor Statistics, Current Population Survey. The 1979 figure comes from the pre-1983 historical series; 1983 onward is the comparable series."
+ },
+ "stimulus_set": "union-rate-1979-2010",
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2918",
+   "file": "u9/fig-union-rate-1979-2010.jpg",
+   "caption": "Union members as a share of U.S. wage and salary workers, 1979\u20132010. Source: U.S. Bureau of Labor Statistics.",
+   "alt": "Line chart showing union membership falling from 24.1 percent of U.S. workers in 1979 to 11.9 percent in 2010",
+   "license": "Chart data: public U.S. government data",
+   "source_url": "https://www.bls.gov/spotlight/2016/union-membership-in-the-united-states/home.htm"
+  }
+ ]
+}

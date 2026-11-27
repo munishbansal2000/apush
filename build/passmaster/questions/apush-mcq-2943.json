@@ -1,0 +1,79 @@
+{
+ "answerKey": "B",
+ "difficulty": 3,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.5 Migration and Immigration, 1980 to the Present"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "Prosperity and a New World Order (1988\u20132000)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Changing Demographics"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2943",
+ "lesson": "apush-u9-l4",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "NAFTA, signed in 1993, cut tariffs on goods; it did not open the border to workers.",
+   "text": "The North American Free Trade Agreement, which opened the border to workers in 1994"
+  },
+  {
+   "key": "B",
+   "text": "The 1986 legalization, which recorded about 2.7 million longtime residents as new permanent residents"
+  },
+  {
+   "key": "C",
+   "misconception": "Soviet refugees were a small share of the total; most of the legalization came from Latin America.",
+   "text": "The end of the Cold War, which brought millions of Soviet refugees"
+  },
+  {
+   "key": "D",
+   "misconception": "No such doubling happened, and Europe's share of immigration kept falling after 1965.",
+   "text": "A new law that doubled the annual quota for European immigrants"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Background: NAFTA was a trade agreement, and it took effect in 1994, after the rise began.",
+  "B": "Background: the 1986 law let about 2.7 million longtime residents gain legal status, and those approvals were counted as new permanent residents in 1989 through 1991. That is why the yearly totals spiked above 1.5 million.",
+  "C": "Background: refugees from the former Soviet Union were real but small next to the legalization numbers.",
+  "D": "Background: after 1965, most legal immigrants came from Latin America and Asia, not Europe.",
+  "general": "1. Find the spike. Background: yearly totals jumped past 1.5 million in 1990 and 1991.\n2. Ask what was counted then. Background: the 1986 legalization was being processed, and each approval counted as a new permanent resident.\n3. Check the timing. Background: NAFTA came later, the Cold War's end brought few refugees, and no European quota doubled.\n4. A one-time legalization explains a short spike better than a slow trend does.\nRemember: a sharp spike in a table usually marks a one-time event, not a slow change."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "2.B"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, Topic 9.5; 5 Steps 2024 Ch. 29/30; Princeton Review Ch. 13. U.S. Department of Homeland Security, Yearbook of Immigration Statistics, Table 1 (public data).",
+ "status": "final",
+ "stem": "The sharp rise in the late 1980s and early 1990s most directly reflects which of the following?",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "U.S. Department of Homeland Security, Yearbook of Immigration Statistics, Table 1 (public data).",
+  "text": "| Decade | People gaining lawful permanent resident status |\n| 1971\u20131980 | 4.4 million |\n| 1981\u20131990 | 7.3 million |\n| 1991\u20132000 | 9.1 million |\n| 2001\u20132010 | 10.5 million |\n| 2011\u20132020 | 10.3 million |\n\nSource: U.S. Department of Homeland Security, Yearbook of Immigration Statistics, Table 1. Simplified for this test."
+ },
+ "stimulus_set": "lpr-by-decade",
+ "themes": [
+  "MIG",
+  "PCE"
+ ],
+ "topics": [
+  "9.5"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

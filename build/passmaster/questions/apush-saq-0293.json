@@ -1,0 +1,92 @@
+{
+ "difficulty": 3,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.6 Defining America's Role in the World in the 21st Century"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 30",
+    "section": "Threat of Terrorism, Increase of Presidential Power, and Economic Crisis (2001-2016)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "America and the War on Terror"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-saq-0293",
+ "lesson": "apush-u9-l5",
+ "parts": [
+  {
+   "modelAnswer": "The Patriot Act let the FBI use National Security Letters to obtain telephone, email, and financial records without a court order. It greatly expanded the government's power to investigate suspected terrorists.",
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one power the USA Patriot Act gave the government.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for identifying one power the act gave the government, such as obtaining records through National Security Letters without a court order or expanded investigation powers.",
+     "points": 1,
+     "notEarned": "Naming a power the act did not give, or a vague answer with nothing identified, does not earn the point."
+    }
+   ]
+  },
+  {
+   "modelAnswer": "Supporters argued that the government needed stronger tools to find terrorists before they could strike again. The September 11 attacks had shown that the existing rules had kept agencies from sharing what they knew.",
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain ONE reason supporters backed the Patriot Act.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one reason supporters backed the act, such as preventing another attack or fixing the failure to share information before September 11.",
+     "points": 1,
+     "notEarned": "Naming a reason with no explanation, or describing a criticism instead, does not earn the point."
+    }
+   ]
+  },
+  {
+   "modelAnswer": "Critics warned that the new investigation powers risked civil liberties, since the government could obtain private records without a court order. The Supreme Court agreed in part in 2006, ruling that detainees could not be held without due process.",
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE concern critics raised about the war on terrorism.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one concern critics raised, such as the risk to civil liberties from warrantless record searches or the indefinite detention of suspects.",
+     "points": 1,
+     "notEarned": "Naming a concern with no explanation, or describing a supporter's argument instead, does not earn the point."
+    }
+   ]
+  }
+ ],
+ "pool": "practice",
+ "reasoning": "causation",
+ "saq_slot": 1,
+ "skills": [
+  "2.A",
+  "3.B"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, Topic 9.6; 5 Steps 2024 Ch. 30; Princeton Review Ch. 13.",
+ "status": "final",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Secondary account paraphrased from the grounding books (Barron's Premium 2027 Ch. 11, Topic 9.6; 5 Steps 2024 Ch. 30).",
+  "text": "Paraphrase of a secondary account: Six weeks after the September 11 attacks, Congress passed the USA Patriot Act, which greatly expanded the government's power to investigate suspected terrorists. The act let the FBI use National Security Letters to obtain telephone, email, and financial records without a court order.\n\nIn 2003, Congress created the Department of Homeland Security, a cabinet department that took in the Immigration and Naturalization Service. Critics warned that the new powers risked civil liberties, and the Supreme Court ruled in Hamdan v. Rumsfeld (2006) that detainees could not be held without due process."
+ },
+ "stimulus_set": null,
+ "themes": [
+  "PCE"
+ ],
+ "topics": [
+  "9.6"
+ ],
+ "totalPoints": 3,
+ "type": "saq",
+ "unit": 9
+}

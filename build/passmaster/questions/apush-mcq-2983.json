@@ -1,0 +1,79 @@
+{
+ "answerKey": "C",
+ "difficulty": 2,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Public Health Debates in the Age of the COVID-19 Pandemic"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 31",
+    "section": "Tumultuous Years: The Trump and Biden Presidencies (2017-2022)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Recent Trends"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2983",
+ "lesson": "apush-u9-l5",
+ "options": [
+  {
+   "key": "A",
+   "text": "The 2020 contraction began when the housing bubble burst for a second time",
+   "misconception": "The housing bubble burst in 2007, during the Great Recession. It did not burst again in 2020."
+  },
+  {
+   "key": "B",
+   "text": "Unemployment rose in both 2009 and 2020",
+   "misconception": "Rising unemployment in both years shows a shared effect, not a shared cause."
+  },
+  {
+   "key": "C",
+   "text": "The contractions began differently, with closures in 2020 and a housing collapse in 2007"
+  },
+  {
+   "key": "D",
+   "text": "Banks cut back on lending in both years",
+   "misconception": "Bank lending cuts were a feature of the housing collapse, not evidence the two contractions shared a cause."
+  }
+ ],
+ "pool": "test",
+ "rationales": {
+  "A": "The housing bubble burst in 2007, during the Great Recession. It did not burst a second time in 2020.",
+  "B": "Rising unemployment in both years shows the two contractions had a similar effect. A shared effect does not prove a shared cause.",
+  "C": "The account says the 2020 contraction followed lockdowns and closures, and the Great Recession began when the housing bubble burst in 2007.",
+  "D": "Background: banks cut back on lending during the Great Recession, when bundled mortgages went bad. A lending cut does not show the two contractions shared a cause.",
+  "general": "1. A claim about a shared cause needs a shared cause, not a shared effect.\n2. The account says the 2020 contraction followed lockdowns and closures of businesses and schools.\n3. It also says the Great Recession began when the housing bubble burst in 2007.\n4. Different starting points mean different causes, even when unemployment rose and the government spent money in both cases.\nRemember: to test a claim about causes, compare what started each event, not what followed it."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "2.A"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, Public Health Debates in the Age of the COVID-19 Pandemic; 5 Steps 2024 Ch. 31; Princeton Review Ch. 13.",
+ "status": "final",
+ "stem": "A student claims the 2020 contraction and the Great Recession had the same cause. Which evidence best refutes that claim?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Secondary account paraphrased from the grounding books (Barron's Premium 2027 Ch. 11; 5 Steps 2024 Ch. 31).",
+  "text": "Paraphrase of a secondary account: The COVID-19 pandemic began in late 2019, when officials in China reported clusters of pneumonia in the city of Wuhan. Within months, the disease spread around the world. The United States recorded the highest numbers of cases and deaths, with over 110 million recorded cases and over 1.2 million deaths as of 2025.\n\nIn 2020, state and city officials across the United States closed non-essential businesses and schools, limited public gatherings, and required face masks in many places. The closures contributed to a sharp contraction of economic activity. Vaccines, developed in late 2020, lessened serious illness but did not stop the spread of the disease.\n\nDebates over masks, closures, and vaccine mandates divided Americans, and in May 2023, the federal government declared that COVID-19 was no longer a public health emergency. That contraction differed from the Great Recession, which began when the housing bubble burst in 2007."
+ },
+ "stimulus_set": "covid-pandemic",
+ "themes": [
+  "WXT",
+  "SOC"
+ ],
+ "topics": [
+  "9.6"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-2930",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 9,
+ "topics": [
+  "9.4"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "status": "final",
+ "lesson": "apush-u9-l3",
+ "source": "original; stimulus from the shared image pool or paraphrased from the grounding books",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "The Great Recession"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 30",
+    "section": "Threat of Terrorism, Increase of Presidential Power, and Economic Crisis (2001\u20132016)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Reagan, H. W., Clinton, and W. (1980-2001)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stem": "According to the passage, which of the following most directly caused the Great Recession?",
+ "options": [
+  {
+   "key": "A",
+   "text": "A sudden collapse in American farm exports",
+   "misconception": "The passage never mentions farm exports; its story starts with mortgages."
+  },
+  {
+   "key": "B",
+   "text": "A spike in oil prices after the invasion of Iraq",
+   "misconception": "The passage never mentions oil prices; its story starts with mortgages."
+  },
+  {
+   "key": "C",
+   "text": "The failure of risky subprime mortgages bundled into investments"
+  },
+  {
+   "key": "D",
+   "text": "A decision by the Federal Reserve to ban home lending",
+   "misconception": "The Fed never banned home lending; the passage says banks stopped lending on their own as loans failed."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "The passage never mentions farm exports. Background: its chain of causes starts with subprime mortgages.",
+  "B": "The passage never mentions oil prices. Background: its chain of causes starts with subprime mortgages.",
+  "C": "The passage says subprime mortgages were bundled into investments sold worldwide, then failed in large numbers when the bubble burst.",
+  "D": "The Fed never banned home lending. Background: banks stopped lending because the mortgage investments were failing.",
+  "general": "1. Follow the passage's chain: risky mortgages, bundled into investments, sold around the world.\n2. When the housing bubble burst in 2007, those loans failed in large numbers.\n3. Banks stopped lending, and the economy fell into the worst downturn since the Depression.\n4. Farm exports, oil prices, and a lending ban play no part in that chain.\nRemember: follow the chain link by link \u2014 the first link is the risky mortgage."
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original summary based on Barron's Premium 2027, Chapter 11, and Princeton Review, Chapter 13.",
+  "text": "Original summary based on the grounding books: In the 2000s, banks offered mortgages to buyers with weak credit, loans known as subprime mortgages, and then bundled those loans into investments sold around the world. Congress had repealed most of the Glass-Steagall Act in 1999, removing rules that had separated everyday banking from risky investing. When the housing bubble burst in 2007, the risky loans failed in large numbers, banks stopped lending, and the economy fell into the Great Recession, the worst downturn since the Great Depression."
+ },
+ "stimulus_set": "great-recession",
+ "figures": null
+}

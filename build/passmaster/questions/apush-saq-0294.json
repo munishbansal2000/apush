@@ -1,0 +1,94 @@
+{
+ "difficulty": 3,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.6 Defining America's Role in the World in the 21st Century"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 30",
+    "section": "Threat of Terrorism, Increase of Presidential Power, and Economic Crisis (2001-2016)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "America and the War on Terror"
+   }
+  ],
+  "primary_sources": [
+   "President George W. Bush, address to a joint session of Congress, September 20, 2001, paraphrased"
+  ]
+ },
+ "id": "apush-saq-0294",
+ "lesson": "apush-u9-l5",
+ "parts": [
+  {
+   "modelAnswer": "Bush demanded that the Taliban hand over the leaders of al-Qaeda and close the terrorist training camps in Afghanistan. He said the Taliban had sheltered the network behind the attacks.",
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one demand Bush made of the Taliban in the address.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for identifying one demand Bush made, such as handing over al-Qaeda's leaders or closing its training camps.",
+     "points": 1,
+     "notEarned": "Naming something Bush did not demand, or a vague answer with nothing identified, does not earn the point."
+    }
+   ]
+  },
+  {
+   "modelAnswer": "Bush said al-Qaeda had carried out the September 11 attacks as acts of war, and the Taliban government had sheltered the network. Afghanistan was therefore the place where the attackers were based and protected.",
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain ONE reason Bush gave for acting against Afghanistan.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one reason Bush gave for acting against Afghanistan, such as al-Qaeda's responsibility for the attacks or the Taliban's shelter for the network.",
+     "points": 1,
+     "notEarned": "Naming a reason with no explanation, or describing a later war instead, does not earn the point."
+    }
+   ]
+  },
+  {
+   "modelAnswer": "The address set out the war on terrorism, and less than a month later the United States invaded Afghanistan in October 2001 and overthrew the Taliban. The line Bush drew also pressed other nations to join the campaign against al-Qaeda.",
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE effect of the address.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one effect, such as the invasion of Afghanistan in October 2001 or other nations joining the campaign against terrorism.",
+     "points": 1,
+     "notEarned": "Naming an effect with no explanation, or describing the address itself instead, does not earn the point."
+    }
+   ]
+  }
+ ],
+ "pool": "practice",
+ "reasoning": "causation",
+ "saq_slot": 2,
+ "skills": [
+  "2.A",
+  "3.A"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, Topic 9.6; 5 Steps 2024 Ch. 30; Princeton Review Ch. 13. Paraphrase of a primary source: President George W. Bush, address to a joint session of Congress, September 20, 2001.",
+ "status": "final",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of a primary source: President George W. Bush, address to a joint session of Congress, September 20, 2001.",
+  "text": "Paraphrase of President George W. Bush's address to Congress, September 20, 2001: Bush said the attacks had been acts of war carried out by al-Qaeda, a network sheltered by the Taliban government in Afghanistan. He demanded that the Taliban hand over al-Qaeda's leaders and close their training camps. He drew a line for the rest of the world, saying every nation must choose between standing with the United States against terror and standing with the terrorists."
+ },
+ "stimulus_set": null,
+ "themes": [
+  "WOR"
+ ],
+ "topics": [
+  "9.6"
+ ],
+ "totalPoints": 3,
+ "type": "saq",
+ "unit": 9
+}

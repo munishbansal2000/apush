@@ -1,0 +1,79 @@
+{
+ "answerKey": "C",
+ "difficulty": 2,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.5 Migration and Immigration, 1980 to the Present"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 30",
+    "section": "Threat of Terrorism, Increase of Presidential Power, and Economic Crisis (2001\u20132016)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Changing Demographics"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2956",
+ "lesson": "apush-u9-l4",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The passage describes presidents, not courts.",
+   "text": "The Supreme Court writing immigration law"
+  },
+  {
+   "key": "B",
+   "misconception": "The passage says Congress repeatedly failed to pass one.",
+   "text": "Congress passing a broad immigration reform law at last"
+  },
+  {
+   "key": "C",
+   "text": "Executive action filling the gap left by congressional deadlock"
+  },
+  {
+   "key": "D",
+   "misconception": "The passage describes presidential action, not state action.",
+   "text": "State governments taking over border enforcement"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Background: courts appear in the story, but the passage's actors are presidents.",
+  "B": "Background: no broad reform passed; the 2013 Senate bill died in the House.",
+  "C": "Background: with Congress deadlocked, Obama created DACA by executive action in 2012, and later presidents used the same tool to reverse course. The presidency moved while Congress stood still.",
+  "D": "Background: states like California acted on their own in the 1990s, but the passage describes presidents.",
+  "general": "1. Find the failure. Congress repeatedly failed to pass a broad reform.\n2. Find the response. Presidents acted on their own, starting with Obama in 2012.\n3. The pattern is deadlock in one branch and action in another.\n4. Courts writing law, Congress passing reform, and states taking over all contradict the passage.\nRemember: when Congress stalls, look for which branch moves instead."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "5.A"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, Topic 9.5; 5 Steps 2024 Ch. 29/30; Princeton Review Ch. 13. Secondary account paraphrased from the grounding books (Princeton Review Ch. 13; Barron's Premium 2027 Ch. 11).",
+ "status": "final",
+ "stem": "The passage's account of presidents acting on their own best illustrates which of the following?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Secondary account paraphrased from the grounding books (Princeton Review Ch. 13; Barron's Premium 2027 Ch. 11).",
+  "text": "Paraphrase of a secondary account: Since the 1960s, immigration has remade the United States. Newcomers from Latin America and Asia, and their children, have made the country more diverse, and both parties now compete for their votes. Americans disagree about what this change means. Some point to new businesses, new workers, and new cultures as strengths. Others worry that large numbers of newcomers, including many who cross without papers, strain schools and public services and change the country's culture. Congress has repeatedly failed to pass a broad reform, so presidents have acted on their own: in 2012, President Obama shielded some young people brought here as children from deportation, and later presidents reversed course by executive action of their own."
+ },
+ "stimulus_set": "immigration-debate",
+ "themes": [
+  "MIG",
+  "PCE"
+ ],
+ "topics": [
+  "9.5"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

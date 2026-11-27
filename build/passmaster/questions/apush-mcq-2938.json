@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-2938",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 9,
+ "topics": [
+  "9.4"
+ ],
+ "skills": [
+  "5.A"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 3,
+ "status": "final",
+ "lesson": "apush-u9-l3",
+ "source": "original; stimulus from the shared image pool or paraphrased from the grounding books",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "The Great Recession"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "Prosperity and a New World Order (1988\u20132000)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Digital Revolution"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stem": "Comparing 1982 and 2009, which pattern does the table best support?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Unemployment spikes only during Democratic presidencies",
+   "misconception": "1982 fell under a Republican president and 2009 under a Democrat, so party does not explain the spikes."
+  },
+  {
+   "key": "B",
+   "text": "Unemployment fell steadily from 1980 to 2010",
+   "misconception": "The table rises and falls: 9.7 percent in 1982, 4.0 percent in 2000, then 9.6 percent in 2010."
+  },
+  {
+   "key": "C",
+   "text": "Severe recessions can push unemployment above 9 percent in very different eras"
+  },
+  {
+   "key": "D",
+   "text": "Unemployment in 2009 was caused by the same stock bubble as in 2000",
+   "misconception": "The 2009 spike came from the housing and banking crisis, not the internet-stock bubble of 2000."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "1982 fell under a Republican president and 2009 under a Democrat. Background: party does not explain the spikes.",
+  "B": "The table rises and falls: 9.7 percent in 1982, 4.0 percent in 2000, then 9.6 percent in 2010.",
+  "C": "The table shows unemployment above 9 percent in 1982 and again in 2009\u20132010, in two very different recessions.",
+  "D": "Background: the 2009 spike came from the housing and banking crisis, not the internet-stock bubble of 2000.",
+  "general": "1. Put the two spikes side by side: 9.7 percent in 1982, 9.3 percent in 2009.\n2. Note how different the eras are \u2014 one under Reagan, one under Obama, with different causes.\n3. What they share is severity: a deep recession can push joblessness past 9 percent in any decade.\n4. Party labels and single causes fail, because the two spikes disagree with them.\nRemember: the same number in two eras means the pattern is the recession, not the decade."
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "U.S. Bureau of Labor Statistics, Current Population Survey, annual averages (series LNU04000000).",
+  "text": "| Year | Unemployment rate |\n| 1980 | 7.2% |\n| 1982 | 9.7% |\n| 1990 | 5.6% |\n| 2000 | 4.0% |\n| 2008 | 5.8% |\n| 2009 | 9.3% |\n| 2010 | 9.6% |\n\nSource: U.S. Bureau of Labor Statistics, Current Population Survey (annual averages). Simplified for this test."
+ },
+ "stimulus_set": "unemployment-table-1980-2010",
+ "figures": null
+}

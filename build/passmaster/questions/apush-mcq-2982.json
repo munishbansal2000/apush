@@ -1,0 +1,79 @@
+{
+ "answerKey": "A",
+ "difficulty": 3,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Public Health Debates in the Age of the COVID-19 Pandemic"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 31",
+    "section": "Tumultuous Years: The Trump and Biden Presidencies (2017-2022)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Recent Trends"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2982",
+ "lesson": "apush-u9-l5",
+ "options": [
+  {
+   "key": "A",
+   "text": "Safety drove one side, while liberty drove the other"
+  },
+  {
+   "key": "B",
+   "text": "No state or city ever imposed any COVID-19 measures",
+   "misconception": "States and cities closed businesses and schools and required masks."
+  },
+  {
+   "key": "C",
+   "text": "Vaccines were never developed for COVID-19",
+   "misconception": "Vaccines were developed in late 2020."
+  },
+  {
+   "key": "D",
+   "text": "The federal government declared the emergency over in 2019",
+   "misconception": "The emergency ended in May 2023."
+  }
+ ],
+ "pool": "test",
+ "rationales": {
+  "A": "The account says the debates divided Americans. Background: one side backed the measures for safety and collective responsibility, while the other saw infringements on liberty.",
+  "B": "States and cities closed businesses and schools and required masks in many places.",
+  "C": "Vaccines were developed in late 2020 and lessened serious illness.",
+  "D": "Background: the federal government declared the emergency over in May 2023, not in 2019.",
+  "general": "1. Ask what the two sides disagreed about. The account says debates over masks, closures, and vaccine mandates divided Americans.\n2. Background: one side backed the measures for safety and collective responsibility.\n3. Background: the other side saw the same measures as infringements on individual liberty, or as excessive.\n4. Both sides were reacting to the same measures, so the division was about values, not about whether the measures existed.\nRemember: a public health debate divides people when safety and liberty point in different directions."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "3.B"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, Public Health Debates in the Age of the COVID-19 Pandemic; 5 Steps 2024 Ch. 31; Princeton Review Ch. 13.",
+ "status": "final",
+ "stem": "What best explains why debates over COVID-19 measures divided Americans?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Secondary account paraphrased from the grounding books (Barron's Premium 2027 Ch. 11; 5 Steps 2024 Ch. 31).",
+  "text": "Paraphrase of a secondary account: The COVID-19 pandemic began in late 2019, when officials in China reported clusters of pneumonia in the city of Wuhan. Within months, the disease spread around the world. The United States recorded the highest numbers of cases and deaths, with over 110 million recorded cases and over 1.2 million deaths as of 2025.\n\nIn 2020, state and city officials across the United States closed non-essential businesses and schools, limited public gatherings, and required face masks in many places. The closures contributed to a sharp contraction of economic activity. Vaccines, developed in late 2020, lessened serious illness but did not stop the spread of the disease.\n\nDebates over masks, closures, and vaccine mandates divided Americans, and in May 2023, the federal government declared that COVID-19 was no longer a public health emergency. That contraction differed from the Great Recession, which began when the housing bubble burst in 2007."
+ },
+ "stimulus_set": "covid-pandemic",
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "topics": [
+  "9.6"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

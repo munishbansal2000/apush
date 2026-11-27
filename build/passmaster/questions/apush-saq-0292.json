@@ -1,0 +1,102 @@
+{
+ "difficulty": 3,
+ "figures": [
+  {
+   "id": "fig-apush-saq-0292",
+   "file": "u9/original-ctx-u9-05.jpg",
+   "caption": "President Bush speaks at Ground Zero, New York City, September 14, 2001",
+   "alt": "President Bush holds a bullhorn and speaks beside a firefighter in a helmet marked 164, with rescue workers and heavy equipment behind them at the ruined World Trade Center site",
+   "license": "Public domain (U.S. federal government work; FEMA photograph by SFC Thomas R. Roberts)",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/46/FEMA_-_3905_-_Photograph_by_SFC_Thomas_R._Roberts_taken_on_09-14-2001_in_New_York.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.6 Defining America's Role in the World in the 21st Century"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 30",
+    "section": "Threat of Terrorism, Increase of Presidential Power, and Economic Crisis (2001-2016)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "America and the War on Terror"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-saq-0292",
+ "lesson": "apush-u9-l5",
+ "parts": [
+  {
+   "modelAnswer": "President George W. Bush speaks through a bullhorn at Ground Zero on September 14, 2001, three days after the attacks. He stands beside rescue workers and a firefighter at the ruined World Trade Center site.",
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one thing the photograph shows.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for identifying one thing the photograph shows, such as Bush speaking at Ground Zero three days after the attacks or the rescue workers and equipment at the site.",
+     "points": 1,
+     "notEarned": "Naming something not visible in the photograph does not earn the point."
+    }
+   ]
+  },
+  {
+   "modelAnswer": "The attacks led the United States to invade Afghanistan in October 2001 to overthrow the Taliban, which had sheltered al-Qaeda. That invasion began a twenty-year war and a wider campaign against terrorist networks abroad.",
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain ONE way the September 11 attacks changed United States foreign policy.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one way the attacks changed foreign policy, such as the invasion of Afghanistan, the war on terrorism, or the later invasion of Iraq.",
+     "points": 1,
+     "notEarned": "Naming a change with no explanation, or describing a domestic change instead, does not earn the point."
+    }
+   ]
+  },
+  {
+   "modelAnswer": "Congress passed the USA Patriot Act, which greatly expanded the government's power to investigate suspected terrorists. Congress also created the Department of Homeland Security in 2003 to protect the country from terrorist attacks.",
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE domestic change that followed the September 11 attacks.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one domestic change, such as the Patriot Act, the creation of the Department of Homeland Security, or new security measures at airports and borders.",
+     "points": 1,
+     "notEarned": "Naming a change with no explanation, or describing a foreign policy change instead, does not earn the point."
+    }
+   ]
+  }
+ ],
+ "pool": "test",
+ "reasoning": "causation",
+ "saq_slot": 3,
+ "skills": [
+  "2.A",
+  "3.B"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, Topic 9.6; 5 Steps 2024 Ch. 30; Princeton Review Ch. 13. Photograph: FEMA, September 14, 2001, public domain.",
+ "status": "final",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Photograph by Sergeant First Class Thomas R. Roberts, FEMA, September 14, 2001, New York City. Public domain (U.S. federal government work).",
+  "text": "Photograph of President George W. Bush speaking through a bullhorn at Ground Zero in New York City on September 14, 2001, three days after the attacks, standing beside a firefighter in a helmet marked 164, with rescue workers and heavy equipment behind them."
+ },
+ "stimulus_set": null,
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "topics": [
+  "9.6"
+ ],
+ "totalPoints": 3,
+ "type": "saq",
+ "unit": 9
+}

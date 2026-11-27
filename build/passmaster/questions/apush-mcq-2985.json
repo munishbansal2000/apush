@@ -1,0 +1,79 @@
+{
+ "answerKey": "A",
+ "difficulty": 3,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "The New Right and the Election of Ronald Reagan"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 28",
+    "section": "Decline and Rebirth (1968-1988)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Reagan, H. W., Clinton, and W. (1980-2001)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2985",
+ "lesson": "apush-u9-l5",
+ "options": [
+  {
+   "key": "A",
+   "text": "Keynesian theory expected inflation and unemployment to move in opposite directions"
+  },
+  {
+   "key": "B",
+   "misconception": "Background: Keynesian policy in a downturn calls for more government spending, not higher taxes.",
+   "text": "Keynesian theory called for higher taxes during recessions, which voters rejected"
+  },
+  {
+   "key": "C",
+   "misconception": "Keynesian theory has no gold-standard requirement; the gold standard is a separate monetary system.",
+   "text": "Keynesian theory required a return to the gold standard, which the United States had abandoned"
+  },
+  {
+   "key": "D",
+   "misconception": "Background: Keynesian theory favors government spending in downturns, so it does not leave the government with no tools.",
+   "text": "Keynesian theory opposed all government spending, which left the government with no tools"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The account says Keynesian ideas guided policy since the New Deal, yet they offered no answer when inflation and unemployment rose together.",
+  "B": "Background: Keynesian policy in a downturn calls for more government spending, not higher taxes. The option reverses the theory.",
+  "C": "Background: the gold standard is a separate monetary system. Keynesian theory never required a return to it.",
+  "D": "Background: Keynesian theory favors government spending in downturns. It does not oppose all spending.",
+  "general": "1. First, name what the old theory predicted about inflation and unemployment.\n2. Background: Keynesian thinking expected the two to move in opposite directions, with one falling while the other rises.\n3. The account says stagflation brought both rising at once, which the theory did not predict.\n4. A theory that cannot explain the facts in front of it loses the trust of policymakers.\nRemember: a theory falls when the evidence breaks the pattern it predicts."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "1.B",
+  "5.B"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, The New Right and the Election of Ronald Reagan; 5 Steps 2024 Ch. 28; Princeton Review Ch. 13.",
+ "status": "final",
+ "stem": "Why did stagflation weaken support for Keynesian demand management?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Secondary account paraphrased from the grounding books (Barron's Premium 2027 Ch. 11; 5 Steps 2024 Ch. 28).",
+  "text": "Paraphrase of a secondary account: In the late 1970s, the American economy suffered from stagflation: prices rose fast while jobs disappeared. Inflation ran above 13 percent in 1980, and unemployment stood above 7 percent. President Jimmy Carter told Americans in 1979 of a crisis of confidence, and the seizure of American hostages in Iran deepened the sense that events were out of control. Ronald Reagan, the Republican challenger, promised optimism and a smaller federal government, with tax cuts to revive growth. He won the 1980 election by a wide margin.\n\nThe old Keynesian idea that government spending could manage the economy had guided policy since the New Deal, but it offered no answer when inflation and unemployment rose together."
+ },
+ "stimulus_set": "stagflation-1980",
+ "themes": [
+  "WXT"
+ ],
+ "topics": [
+  "9.7"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

@@ -1,0 +1,88 @@
+{
+ "id": "apush-leq-0094",
+ "type": "leq",
+ "pool": "practice",
+ "unit": 9,
+ "topics": [
+  "9.4"
+ ],
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 4,
+ "status": "final",
+ "lesson": "apush-u9-l3",
+ "source": "original; prompt written for this question",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "The Rise of the Service Sector"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "Prosperity and a New World Order (1988\u20132000)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Digital Revolution"
+   }
+  ],
+  "primary_sources": []
+ },
+ "prompt": "Evaluate the extent to which deindustrialization and globalization changed the American economy from 1980 to 2000.",
+ "modelOutline": "Thesis: Deindustrialization and globalization changed the American economy fundamentally by 2000, shifting work from factories to services and tying prosperity to world markets, though the change was a transformation of jobs rather than a collapse of production.\nContext: The 1970s had brought stagflation and foreign competition that undercut American producers in steel, autos, and electronics, while the postwar industrial bargain that had sustained unions and factory towns broke down.\nEvidence of change: Manufacturing's share of jobs fell from a quarter in 1970 to about an eighth by 2000, union membership fell from 24.1 percent in 1979 to 13.4 percent in 2000, and NAFTA in 1993 plus the World Trade Organization in 1995 bound the economy to world markets.\nEvidence of continuity: American factory output kept growing as machines did more of the work, and the United States stayed the world's largest economy, so the change was in who did the work and where, not in whether goods were made.\nComplexity: The change cut both ways \u2014 cheaper goods and new service jobs against lost factory towns and stagnant wages \u2014 and its political backlash, from the Seattle protests of 1999 to later populist revolts, shows a transformation that was profound but uneven.",
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt.",
+   "notEarned": "A sentence of background with no link to the argument does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (first point): earns the point for describing specific and relevant examples supporting one side of the argument.",
+   "notEarned": "General statements with no specific example do not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (second point): earns the point for describing specific and relevant examples supporting the other side of the argument or the limits of the first.",
+   "notEarned": "Repeating the same example, or naming a limit with no specific detail, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.C",
+   "criterion": "Analysis and reasoning: earns the point for using historical reasoning to explain relationships among pieces of evidence, linking examples to the thesis rather than listing them.",
+   "notEarned": "Listing examples with no explanation of how they support the argument does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.D",
+   "criterion": "Analysis and reasoning (complexity): earns the point for a complex argument, such as corroborating, qualifying, or modifying the thesis with diverse evidence.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ],
+ "stimulus": {
+  "kind": "none",
+  "source_note": "No stimulus; LEQ prompt only."
+ },
+ "stimulus_set": null,
+ "totalPoints": 6
+}

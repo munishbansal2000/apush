@@ -1,0 +1,88 @@
+{
+ "answerKey": "A",
+ "difficulty": 3,
+ "figures": [
+  {
+   "alt": "President Ronald Reagan seated at a desk signing a bill while Vice President George H. W. Bush and the bill's sponsors stand behind him",
+   "caption": "President Ronald Reagan signing the Immigration Reform and Control Act, November 6, 1986",
+   "file": "u9/reagan-signs-irca-1986.jpg",
+   "id": "fig-apush-mcq-2939",
+   "license": "Public domain (U.S. federal government work; White House Photographic Office, National Archives)",
+   "source_url": "https://commons.wikimedia.org/wiki/File:President_Ronald_Reagan_in_The_Roosevelt_Room_Signing_S._1200_Immigration_Reform_and_Control_Act_of_1986_with_Dan_Lungren_Strom_Thurmond_George_Bush_Romano_Mazzoli_and_Alan_Simpson_-_DPLA_-_89f06ca8c3dde2b7ec4ab6b7f6d1f2f7.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.5 Migration and Immigration, 1980 to the Present"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "Prosperity and a New World Order (1988\u20132000)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Changing Demographics"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2941",
+ "lesson": "apush-u9-l4",
+ "options": [
+  {
+   "key": "A",
+   "text": "Employer penalties were rarely enforced, so jobs for unauthorized workers remained available"
+  },
+  {
+   "key": "B",
+   "misconception": "Family-based visas continued after 1986; the 1965 act's family preference stayed in place.",
+   "text": "The law ended the family-based visa system, pushing migrants to cross without papers"
+  },
+  {
+   "key": "C",
+   "misconception": "Only about 2.7 million people gained status, and millions more arrived in later years.",
+   "text": "The law legalized every unauthorized immigrant, so no one needed papers afterward"
+  },
+  {
+   "key": "D",
+   "misconception": "The border stayed open to legal travel and trade; the law targeted hiring, not the border itself.",
+   "text": "The law closed the border with Mexico to all crossings"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Background: employers faced few penalties, so the demand for low-wage labor kept drawing workers across the border. The law changed the rules on paper without changing the job market.",
+  "B": "Background: family reunification remained the largest path to legal status after 1986.",
+  "C": "Background: about 2.7 million people were legalized, but the unauthorized population kept growing afterward.",
+  "D": "Background: the law aimed at employers inside the United States, not at closing the border.",
+  "general": "1. Ask what the law actually changed. It punished employers who hired workers without papers.\n2. Ask whether that punishment bit. Background: in practice, employers faced few penalties and checks were easy to evade.\n3. Follow the jobs. With work still available, people kept coming without papers.\n4. The other choices fail on the facts: family visas continued, legalization was limited, and the border stayed open.\nRemember: a law that is not enforced leaves the incentive it was meant to remove."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "2.A"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, Topic 9.5; 5 Steps 2024 Ch. 29/30; Princeton Review Ch. 13. Photograph: White House Photographic Office, November 6, 1986, National Archives. Public domain (U.S. federal government work).",
+ "status": "final",
+ "stem": "Which of the following best explains why unauthorized immigration continued after the 1986 law took effect?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Photograph: White House Photographic Office, November 6, 1986, National Archives. Public domain (U.S. federal government work).",
+  "text": "Photograph of President Ronald Reagan signing the Immigration Reform and Control Act of 1986 in the Roosevelt Room of the White House on November 6, 1986. Reagan sits at a desk signing the bill while Vice President George H. W. Bush and the bill's sponsors, Senator Alan Simpson and Representative Romano Mazzoli, stand behind him. In remarks at the signing, Reagan described the law as the most far-reaching reform of immigration law since 1952, and said it would pair legal status for some longtime residents with penalties for employers who hired workers without legal papers. (Remarks paraphrased, not quoted.)"
+ },
+ "stimulus_set": "irca-signing-1986",
+ "themes": [
+  "MIG",
+  "PCE"
+ ],
+ "topics": [
+  "9.5"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

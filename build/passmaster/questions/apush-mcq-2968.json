@@ -1,0 +1,78 @@
+{
+ "answerKey": "B",
+ "difficulty": 3,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.6 Defining America's Role in the World in the 21st Century"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 30",
+    "section": "Threat of Terrorism, Increase of Presidential Power, and Economic Crisis (2001-2016)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "America and the War on Terror"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2968",
+ "lesson": "apush-u9-l5",
+ "options": [
+  {
+   "key": "A",
+   "text": "Bin Laden's death ended al-Qaeda, but the Taliban refused to surrender",
+   "misconception": "Bin Laden's death did not end al-Qaeda, and the war's length had deeper causes."
+  },
+  {
+   "key": "B",
+   "text": "Killing one leader did not end the insurgency or build a stable government"
+  },
+  {
+   "key": "C",
+   "text": "The United States never tried to leave Afghanistan at all before 2021",
+   "misconception": "Presidents from both parties tried to end the war; Obama, Trump, and Biden all moved toward withdrawal."
+  },
+  {
+   "key": "D",
+   "text": "The war lasted because Congress refused to fund it",
+   "misconception": "Congress funded the war for twenty years."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Background: al-Qaeda survived bin Laden's death, and the Taliban kept fighting, so one killing could not end the war.",
+  "B": "Background: the Taliban kept fighting across rural Afghanistan after 2011, and no stable government took hold, so the war outlasted bin Laden by a decade.",
+  "C": "Background: Obama, Trump, and Biden each moved toward ending the war, including the 2020 agreement with the Taliban.",
+  "D": "Background: Congress funded the war for twenty years. A lack of money is not what kept it going.",
+  "general": "1. Ask what bin Laden's death changed. The account says he was killed in 2011, yet the war went on for ten more years.\n2. Background: the Taliban kept fighting and no stable Afghan government took hold, so removing one leader did not remove the war.\n3. Background: presidents of both parties tried to end the war before 2021, which shows the problem was the war itself, not a lack of trying.\n4. Background: Congress funded the war for twenty years, so a lack of money is not the explanation.\nRemember: killing a leader ends a person, not a war, when the other side keeps fighting."
+ },
+ "reasoning": "continuity-change",
+ "skills": [
+  "3.B"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, Topic 9.6; 5 Steps 2024 Ch. 30; Princeton Review Ch. 13. Photograph: U.S. Air Force, September 11, 2001, public domain.",
+ "status": "final",
+ "stem": "Which statement best explains why the war in Afghanistan lasted twenty years despite the killing of Osama bin Laden in 2011?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Secondary account paraphrased from the grounding books (Barron's Premium 2027 Ch. 11, Topic 9.6; 5 Steps 2024 Ch. 30; Princeton Review Ch. 13).",
+  "text": "Paraphrase of a secondary account: Less than a month after the September 11 attacks, the United States invaded Afghanistan in October 2001 and overthrew the Taliban, the government that had sheltered al-Qaeda. American forces hoped to capture Osama bin Laden, the leader of al-Qaeda, but he remained at large for years.\n\nIn 2011, a Navy SEAL team killed bin Laden in Pakistan under President Obama, yet the war went on. In 2020, the United States signed a conditional peace agreement with the Taliban, and in April 2021, President Biden announced that all American troops would leave by September. As the last troops left in August 2021, Taliban fighters took Kabul, ending a war that had lasted twenty years."
+ },
+ "stimulus_set": "afghanistan-war",
+ "themes": [
+  "WOR"
+ ],
+ "topics": [
+  "9.6"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

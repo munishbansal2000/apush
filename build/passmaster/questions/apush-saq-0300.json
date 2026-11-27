@@ -1,0 +1,95 @@
+{
+ "difficulty": 3,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.3 The End of the Cold War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "Prosperity and a New World Order (1988-2000)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Reagan, H. W., Clinton, and W. (1980-2001)"
+   }
+  ],
+  "primary_sources": [
+   "OMB Historical Tables, Table 3.1 (national defense outlays as percentages of GDP)"
+  ]
+ },
+ "id": "apush-saq-0300",
+ "lesson": "apush-u9-l5",
+ "parts": [
+  {
+   "modelAnswer": "Defense spending fell steadily as a share of the economy, from 6.2 percent of gross domestic product in 1986 to 3.0 percent in 2000. The share was cut nearly in half over fourteen years.",
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify the trend in defense spending shown in the table.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for identifying the trend, that defense spending fell as a share of gross domestic product between 1986 and 2000.",
+     "notEarned": "Naming a single year with no trend, or describing a rise, does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "modelAnswer": "The Cold War ended when the Soviet Union dissolved in 1991, so the threat that had justified high defense spending was gone. The United States cut its military budget in the 1990s because it no longer faced a rival superpower.",
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain one cause of the trend shown in the table.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one cause of the trend, such as the end of the Cold War or the dissolution of the Soviet Union.",
+     "notEarned": "Naming a cause with no explanation, or describing an effect of the trend instead, does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "modelAnswer": "Lower defense spending freed money that helped shrink the federal deficit in the 1990s. Together with rising tax revenue from the technology boom, it helped produce budget surpluses from 1998 to 2001.",
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain one effect of the trend on the federal budget.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one effect on the federal budget, such as helping shrink the deficit or helping produce the surpluses of 1998 to 2001.",
+     "notEarned": "Naming an effect with no explanation, or describing a cause of the trend instead, does not earn the point.",
+     "points": 1
+    }
+   ]
+  }
+ ],
+ "pool": "practice",
+ "reasoning": "causation",
+ "saq_slot": 3,
+ "skills": [
+  "1.B",
+  "5.B"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, Topic 9.3 The End of the Cold War; 5 Steps 2024 Ch. 29; Princeton Review Ch. 13. Defense data: OMB Historical Tables, Table 3.1.",
+ "status": "final",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Data: Office of Management and Budget, Historical Tables, Table 3.1.",
+  "text": "Data table: National defense outlays as a share of gross domestic product, selected fiscal years, from the Office of Management and Budget Historical Tables.\n\n| Fiscal year | Defense outlays as a share of GDP |\n| 1986 | 6.2% |\n| 1990 | 5.2% |\n| 1995 | 3.7% |\n| 2000 | 3.0% |"
+ },
+ "stimulus_set": null,
+ "themes": [
+  "WXT",
+  "WOR"
+ ],
+ "topics": [
+  "9.7"
+ ],
+ "totalPoints": 3,
+ "type": "saq",
+ "unit": 9
+}

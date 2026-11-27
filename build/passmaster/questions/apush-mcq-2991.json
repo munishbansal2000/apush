@@ -1,0 +1,80 @@
+{
+ "answerKey": "D",
+ "difficulty": 2,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "The Housing Crisis and the Great Recession"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 30",
+    "section": "Threat of Terrorism, Increase of Presidential Power, and Economic Crisis (2001-2016)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Recent Trends"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2991",
+ "lesson": "apush-u9-l5",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Background: the Cold War ended in 1991, nearly two decades before either movement rose.",
+   "text": "The end of the Cold War in 1991"
+  },
+  {
+   "key": "B",
+   "misconception": "Background: the 1986 immigration law is about border policy, not the bank rescues that angered both movements.",
+   "text": "The passage of the Immigration Reform and Control Act in 1986"
+  },
+  {
+   "key": "C",
+   "misconception": "Background: Bush v. Gore decided an election; it did not cause the anger over bank rescues that both movements shared.",
+   "text": "The Supreme Court's decision in Bush v. Gore in 2000"
+  },
+  {
+   "key": "D",
+   "text": "The bank rescues, which many Americans saw as favoring large institutions"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Background: the Cold War ended in 1991, nearly two decades before either movement rose.",
+  "B": "Background: the 1986 immigration law is about border policy, not the bank rescues that angered both movements.",
+  "C": "Background: Bush v. Gore decided an election. It did not cause the anger over bank rescues that both movements shared.",
+  "D": "The account says many Americans saw the rescues as proof that Washington protected large institutions while ordinary families lost homes and jobs.",
+  "general": "1. Ask what the two movements had in common, since they disagreed about nearly everything else.\n2. The account says the Tea Party rose on the right in 2009 and Occupy Wall Street on the left in 2011.\n3. It also says both distrusted the political establishment, though they proposed opposite cures.\n4. The shared cause sits just before both of them: the bank rescues, which looked to many like Washington protecting large institutions.\nRemember: when opposites share an origin, the cause is usually the event both of them reacted against."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "1.B",
+  "5.A"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, The Housing Crisis and the Great Recession; 5 Steps 2024 Ch. 30; Princeton Review Ch. 13.",
+ "status": "final",
+ "stem": "Which development most directly contributed to the rise of both the Tea Party and Occupy Wall Street?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Secondary account paraphrased from the grounding books (Barron's Premium 2027 Ch. 11; 5 Steps 2024 Ch. 30).",
+  "text": "Paraphrase of a secondary account: The housing bubble burst in 2007, and the financial crisis that followed was the worst since the Great Depression. Banks that had bundled risky mortgages into securities cut back on lending, businesses laid off workers, and unemployment reached 10 percent in October 2009. The federal government rescued large banks and auto companies with the Troubled Asset Relief Program in 2008 and passed a stimulus of almost 800 billion dollars in 2009.\n\nMany Americans saw the rescues as proof that Washington protected large institutions while ordinary families lost homes and jobs. In 2009, the Tea Party movement rose on the right, demanding smaller government and lower spending. In 2011, Occupy Wall Street protesters camped in a New York park, charging that the richest 1 percent held too much wealth and power. Both movements distrusted the political establishment, though they proposed opposite cures."
+ },
+ "stimulus_set": "bailouts-populism",
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "topics": [
+  "9.7"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

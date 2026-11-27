@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-2932",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 9,
+ "topics": [
+  "9.4"
+ ],
+ "skills": [
+  "4.A"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 3,
+ "status": "final",
+ "lesson": "apush-u9-l3",
+ "source": "original; stimulus from the shared image pool or paraphrased from the grounding books",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "The Great Recession"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 30",
+    "section": "Threat of Terrorism, Increase of Presidential Power, and Economic Crisis (2001\u20132016)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Reagan, H. W., Clinton, and W. (1980-2001)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stem": "Compared with the Great Depression, the federal response to the Great Recession was most similar in which way?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The government let the largest banks fail without help",
+   "misconception": "This reverses the history: the government propped banks up in 2008, while banks failed in large numbers in the early 1930s."
+  },
+  {
+   "key": "B",
+   "text": "The government raised tariffs to protect American factories",
+   "misconception": "High tariffs belong to 1930, not 2008; the Great Recession response was financial, not tariff-based."
+  },
+  {
+   "key": "C",
+   "text": "The government refused to spend any money to revive the economy",
+   "misconception": "Background: the government spent heavily in both crises \u2014 the New Deal in the 1930s, and a stimulus package in 2009."
+  },
+  {
+   "key": "D",
+   "text": "The government spent heavily to save the financial system"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "A": "This reverses the history. Background: the government propped banks up in 2008, while banks failed in large numbers in the early 1930s.",
+  "B": "High tariffs belong to 1930. Background: the 2008 response was financial \u2014 bailouts and stimulus, not tariffs.",
+  "C": "Background: the government spent heavily in both crises \u2014 the New Deal in the 1930s, and a stimulus package in 2009.",
+  "D": "Background: the government intervened to prop up banks in 2008 and passed a stimulus package, as the New Deal had used federal spending in the 1930s.",
+  "general": "1. Ask what the government did in 2008: it propped up banks and passed a stimulus package.\n2. Ask what it did in the 1930s: the New Deal likewise turned to large federal spending.\n3. The tools differed \u2014 bailouts versus public works \u2014 but the turn to intervention is the shared move.\n4. Letting banks fail, raising tariffs, or refusing to spend all describe the opposite response.\nRemember: compare the move, not the tool \u2014 both crises ended the hands-off era."
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original summary based on Barron's Premium 2027, Chapter 11, and Princeton Review, Chapter 13.",
+  "text": "Original summary based on the grounding books: In the 2000s, banks offered mortgages to buyers with weak credit, loans known as subprime mortgages, and then bundled those loans into investments sold around the world. Congress had repealed most of the Glass-Steagall Act in 1999, removing rules that had separated everyday banking from risky investing. When the housing bubble burst in 2007, the risky loans failed in large numbers, banks stopped lending, and the economy fell into the Great Recession, the worst downturn since the Great Depression."
+ },
+ "stimulus_set": "great-recession",
+ "figures": null
+}

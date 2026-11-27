@@ -1,0 +1,87 @@
+{
+ "answerKey": "C",
+ "difficulty": 3,
+ "figures": [
+  {
+   "alt": "President Bill Clinton signing the North American Free Trade Agreement on December 8, 1993, with three former presidents standing behind him",
+   "caption": "President Clinton signs NAFTA, December 8, 1993",
+   "file": "u9/original-ctx-u9-04.jpg",
+   "id": "fig-apush-mcq-2864",
+   "license": "Public domain (U.S. federal government work)",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/70/President_Bill_Clinton_signs_NAFTA.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.4 A Changing Economy"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "Prosperity and a New World Order (1988\u20132000)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Chapter 13 Summary"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2864",
+ "lesson": "apush-u9-l1",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The 1930s policy raised tariffs, not lowered them; Smoot-Hawley pushed American tariffs to historic highs.",
+   "text": "The 1930s policy lowered tariffs to encourage trade, while NAFTA raised them to protect jobs."
+  },
+  {
+   "key": "B",
+   "misconception": "NAFTA was negotiated by the three governments, not written by the United Nations.",
+   "text": "The 1930s policy was written by Congress, while NAFTA was written by the United Nations."
+  },
+  {
+   "key": "C",
+   "text": "The 1930s policy raised tariffs to shut out foreign goods, while NAFTA removed barriers to trade."
+  },
+  {
+   "key": "D",
+   "misconception": "Both policies covered broad trade, not one sector.",
+   "text": "The 1930s policy covered only farm goods, while NAFTA covered only manufactured goods from factories."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The 1930s policy raised tariffs, not lowered them. Background: Smoot-Hawley pushed American tariffs to historic highs, and world trade collapsed in response.",
+  "B": "NAFTA was negotiated by the three governments, not written by the United Nations. Background: the agreement was a treaty among the United States, Canada, and Mexico, ratified by each country's legislature.",
+  "C": "The photograph shows a president signing an agreement to remove trade barriers between three nations. Background: the Smoot-Hawley Tariff of 1930 did the reverse, raising American tariffs to record levels and deepening the Depression as other nations retaliated.\nProtection then, openness now \u2014 the two policies point in opposite directions, which is why NAFTA marks a turn in the story.",
+  "D": "Both policies covered broad trade, not one sector. Background: Smoot-Hawley raised duties on thousands of goods, and NAFTA removed barriers across farming, manufacturing, and services alike.",
+  "general": "1. Name what the photograph shows. A president signing an agreement that tears down trade barriers.\n2. Name the opposite. Background: the Smoot-Hawley Tariff of 1930 raised American tariffs to record levels, and other nations answered with tariffs of their own.\n3. Compare the directions. One policy opens markets; the other closed them.\n4. Ask what the contrast means. In sixty years the United States went from protecting its markets to opening them \u2014 the heart of globalization.\nRemember: NAFTA is the mirror image of Smoot-Hawley \u2014 openness where the 1930s chose walls."
+ },
+ "reasoning": "comparison",
+ "skills": [
+  "5.B"
+ ],
+ "source": "original; stimulus image from the shared pool, President Clinton signs NAFTA, December 8, 1993, public domain",
+ "status": "final",
+ "stem": "How does the agreement in this photograph most differ from American trade policy in the early 1930s?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Photograph of President Bill Clinton signing the North American Free Trade Agreement Implementation Act, December 8, 1993; U.S. federal government photograph, public domain.",
+  "text": "President Bill Clinton signs the North American Free Trade Agreement into law on December 8, 1993. Standing behind him are three former presidents \u2014 Gerald Ford, Jimmy Carter, and George H. W. Bush \u2014 and Vice President Al Gore applauds at the right."
+ },
+ "stimulus_set": "nafta-signing",
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "topics": [
+  "9.1"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

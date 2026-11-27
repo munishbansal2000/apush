@@ -1,0 +1,87 @@
+{
+ "answerKey": "A",
+ "difficulty": 2,
+ "figures": [
+  {
+   "alt": "Two East German border guards looking out from a watchtower on the Berlin Wall near Checkpoint Charlie",
+   "caption": "East German guards at the Berlin Wall, Checkpoint Charlie",
+   "file": "u9/original-ctx-u9-03.jpg",
+   "id": "fig-apush-mcq-2856",
+   "license": "Public domain (U.S. federal government work)",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/East_German_guards_feed_the_birds_from_their_post_at_the_Berlin_Wall_near_Checkpoint_Charlie._DF-ST-91-01465.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.3 The End of the Cold War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "Prosperity and a New World Order (1988\u20132000)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Chapter 13 Summary"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2856",
+ "lesson": "apush-u9-l1",
+ "options": [
+  {
+   "key": "A",
+   "text": "Germany's capital was divided by a fortified barrier between Communist East and democratic West."
+  },
+  {
+   "key": "B",
+   "misconception": "Reunification came in 1990, after the Wall fell; while the Wall stood, the two German states were separate.",
+   "text": "East and West Germany had reunified into a single democratic state with open borders."
+  },
+  {
+   "key": "C",
+   "misconception": "Soviet troops stayed in Eastern Europe until the Cold War ended.",
+   "text": "The Soviet Union had withdrawn its troops from Eastern Europe and ended its alliances there."
+  },
+  {
+   "key": "D",
+   "misconception": "Berlin became the capital of a united Germany only after reunification in 1990.",
+   "text": "Berlin had become the capital of a united Germany after the two German states merged."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "The photograph shows the Wall itself: a watchtower, guards, and a barrier running through a city. Background: the Wall divided Berlin from 1961 to 1989, with Communist East Berlin on one side and democratic West Berlin on the other.\nEverything visible \u2014 tower, guards, concrete \u2014 is the machinery of that division.",
+  "B": "Reunification came in 1990, after the Wall fell. Background: while the Wall stood, the two German states were separate, and this photograph shows the barrier that kept them apart.",
+  "C": "Soviet troops stayed in Eastern Europe until the Cold War ended. Background: the guards in the tower are East Germans, but the system they served depended on Soviet power behind it.",
+  "D": "Berlin became the capital of a united Germany only after reunification in 1990. Background: while the Wall stood, Bonn was West Germany's capital and East Berlin was East Germany's.",
+  "general": "1. Look at what is actually there. A watchtower, two guards, and a concrete barrier cutting through a city.\n2. Ask what the barrier divides. Background: the Wall split Berlin from 1961 to 1989, Communist East from democratic West.\n3. Ask what it is not. No open border, no single state, no withdrawal \u2014 the photograph shows a division being guarded, not ended.\n4. Name it plainly. This is the Cold War made concrete: two systems, one city, a wall between them.\nRemember: the Wall was not a border on a map \u2014 it was a guarded barrier through a capital."
+ },
+ "reasoning": "continuity-change",
+ "skills": [
+  "3.A"
+ ],
+ "source": "original; stimulus image from the shared pool, East German guards at the Berlin Wall near Checkpoint Charlie, public domain",
+ "status": "final",
+ "stem": "What does this photograph most directly show about Europe during the Cold War?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "U.S. Department of Defense photograph of East German guards at their post on the Berlin Wall near Checkpoint Charlie, Berlin; U.S. federal government photograph, public domain.",
+  "text": "Two East German border guards look out from a watchtower on the Berlin Wall near Checkpoint Charlie. The Wall's rounded top runs across the foreground, and an apartment building stands behind it."
+ },
+ "stimulus_set": "berlin-wall-guards",
+ "themes": [
+  "WOR",
+  "GEO"
+ ],
+ "topics": [
+  "9.1"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

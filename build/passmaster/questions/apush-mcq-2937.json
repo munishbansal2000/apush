@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-2937",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 9,
+ "topics": [
+  "9.4"
+ ],
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "status": "final",
+ "lesson": "apush-u9-l3",
+ "source": "original; stimulus from the shared image pool or paraphrased from the grounding books",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "The Great Recession"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "Prosperity and a New World Order (1988\u20132000)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Digital Revolution"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stem": "The low unemployment rate in 2000 is best explained by which of the following?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The collapse of the housing market",
+   "misconception": "The housing market collapsed in 2007\u20132008, years after 2000."
+  },
+  {
+   "key": "B",
+   "text": "The long 1990s expansion and technology boom"
+  },
+  {
+   "key": "C",
+   "text": "The repeal of the Glass-Steagall Act",
+   "misconception": "The 1999 repeal changed banking rules; it did not by itself create the jobs of 2000."
+  },
+  {
+   "key": "D",
+   "text": "A sharp rise in union membership",
+   "misconception": "Union membership fell through the 1990s; it did not rise."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "The housing market collapsed in 2007\u20132008. Background: in 2000 the economy was still expanding.",
+  "B": "Background: productivity growth rose from 1995 as information technology spread, and the 1990s expansion was the longest on record to that point.",
+  "C": "Background: the 1999 repeal changed banking rules; the jobs of 2000 came from the long expansion, not from one banking law.",
+  "D": "Union membership fell through the 1990s. Background: the low unemployment of 2000 came from the expansion, not from unions.",
+  "general": "1. Ask what 2000 was: the end of the long 1990s expansion, with unemployment at 4.0 percent.\n2. Background: productivity growth rose from 1995 as information technology spread through workplaces.\n3. Computers, the internet, and the businesses built on them created jobs for most of the decade.\n4. The housing collapse, the banking repeal, and unions all point to the wrong decade or the wrong cause.\nRemember: a decade-long boom has a decade-long cause \u2014 the technology wave."
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "U.S. Bureau of Labor Statistics, Current Population Survey, annual averages (series LNU04000000).",
+  "text": "| Year | Unemployment rate |\n| 1980 | 7.2% |\n| 1982 | 9.7% |\n| 1990 | 5.6% |\n| 2000 | 4.0% |\n| 2008 | 5.8% |\n| 2009 | 9.3% |\n| 2010 | 9.6% |\n\nSource: U.S. Bureau of Labor Statistics, Current Population Survey (annual averages). Simplified for this test."
+ },
+ "stimulus_set": "unemployment-table-1980-2010",
+ "figures": null
+}

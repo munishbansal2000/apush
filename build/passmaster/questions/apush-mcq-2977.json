@@ -1,0 +1,78 @@
+{
+ "answerKey": "D",
+ "difficulty": 2,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "The Deepening of Partisanship in the Twenty-first Century"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 30",
+    "section": "Threat of Terrorism, Increase of Presidential Power, and Economic Crisis (2001-2016)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Recent Trends"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2977",
+ "lesson": "apush-u9-l5",
+ "options": [
+  {
+   "key": "A",
+   "text": "In both, the winner also won the national popular vote",
+   "misconception": "In both elections the winner lost the national popular vote."
+  },
+  {
+   "key": "B",
+   "text": "In both, the Supreme Court decided the outcome",
+   "misconception": "The Court decided 2000; in 2016 the Electoral College result stood on its own."
+  },
+  {
+   "key": "C",
+   "text": "In both, the loser refused to concede the election",
+   "misconception": "Gore conceded after the Court's decision, and Clinton conceded in 2016."
+  },
+  {
+   "key": "D",
+   "text": "In both, the Electoral College winner lost the popular vote"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Background: in both elections, the winner lost the national popular vote. That is what makes the two alike.",
+  "B": "The Court decided 2000, but no court decided 2016. The Electoral College result stood on its own.",
+  "C": "Background: Gore conceded after the Supreme Court's decision, and Clinton conceded on election night in 2016.",
+  "D": "Background: Bush won the Electoral College in 2000 and Trump did the same in 2016, while Gore and Clinton each won more votes nationwide.",
+  "general": "1. Compare the two elections on the same measure: the popular vote against the Electoral College.\n2. Background: Bush won the Electoral College in 2000 while Gore won more votes nationwide, and Trump did the same against Clinton in 2016.\n3. That split outcome is the resemblance: the winner of the Electoral College lost the popular vote in both.\n4. The Court decided only the 2000 election, so a court decision is not the shared feature.\nRemember: the Electoral College and the popular vote can point to different winners."
+ },
+ "reasoning": "comparison",
+ "skills": [
+  "2.A"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, The Deepening of Partisanship in the Twenty-first Century; 5 Steps 2024 Ch. 30-31; Princeton Review Ch. 13.",
+ "status": "final",
+ "stem": "How did the presidential elections of 2000 and 2016 resemble each other?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Secondary account paraphrased from the grounding books (Barron's Premium 2027 Ch. 11; 5 Steps 2024 Ch. 30-31; Princeton Review Ch. 13).",
+  "text": "Paraphrase of a secondary account: The presidential election of 2000 was one of the closest in American history. The vote in Florida was nearly even, and after weeks of legal fights, the Supreme Court stopped a hand recount in Bush v. Gore, a five-to-four decision that gave the presidency to George W. Bush. Partisan division deepened after that.\n\nAfter Barack Obama won the presidency in 2008, a vocal opposition movement called the Tea Party arose, protesting big government and the new administration's policies. In 2016, Donald Trump won the presidency by carrying the Electoral College while losing the national popular vote to Hillary Clinton, the second time that had happened since 2000. Trump campaigned on border security, including building a wall, and on trade deals he said hurt American workers. The House impeached Trump twice, in 2019 and 2021, and the Senate acquitted him both times."
+ },
+ "stimulus_set": "polarization-2000-2016",
+ "themes": [
+  "PCE"
+ ],
+ "topics": [
+  "9.6"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

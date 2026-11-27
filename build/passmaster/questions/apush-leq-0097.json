@@ -1,0 +1,90 @@
+{
+ "difficulty": 4,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.5 Migration and Immigration, 1980 to the Present"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 30",
+    "section": "Threat of Terrorism, Increase of Presidential Power, and Economic Crisis (2001\u20132016)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Changing Demographics"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-leq-0097",
+ "lesson": "apush-u9-l4",
+ "modelOutline": "Thesis: Immigration policy changed deeply in who could enter, yet stayed the same in its core tension, since every reform after 1965 opened some doors while tightening enforcement at the border.\nContext: The 1920s national-origins quotas had favored northern and western Europe for forty years, and the 1965 act ended them, setting family reunification and skilled workers as the new priorities.\nEvidence of change: The 1965 act shifted the main sources from Europe to Latin America and Asia; the 1986 Immigration Reform and Control Act legalized about 2.7 million longtime residents and added employer penalties; in 2012, Obama created DACA by executive action for young people brought here as children.\nEvidence of continuity: Enforcement never went away, since the 1986 law added employer sanctions, the 1990s brought border fencing and the Prevention Through Deterrence strategy, and the 2016 campaign promised a border wall.\nEvidence of limits: Congress repeatedly failed to pass a broad reform, including the 2007 bill and the 2013 Senate bill, so policy moved by executive action instead, and DACA gave no path to citizenship.\nComplexity: The change was real but uneven, since the door opened wider for legal immigrants while closing harder for unauthorized ones, and the same Congress that legalized millions in 1986 could not agree on the next reform for thirty years.",
+ "pool": "practice",
+ "prompt": "Evaluate the extent to which United States immigration policy changed between 1965 and 2016.",
+ "reasoning": "continuity-change",
+ "rubric": [
+  {
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim does not earn the point.",
+   "points": 1,
+   "skill": "6.A"
+  },
+  {
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt.",
+   "notEarned": "A sentence of background with no link to the argument does not earn the point.",
+   "points": 1,
+   "skill": "4.B"
+  },
+  {
+   "criterion": "Evidence (first point): earns the point for describing specific and relevant examples supporting one side of the argument.",
+   "notEarned": "General statements with no specific example do not earn the point.",
+   "points": 1,
+   "skill": "6.B"
+  },
+  {
+   "criterion": "Evidence (second point): earns the point for describing specific and relevant examples supporting the other side of the argument or the limits of the first.",
+   "notEarned": "Repeating the same example, or naming a limit with no specific detail, does not earn the point.",
+   "points": 1,
+   "skill": "6.B"
+  },
+  {
+   "criterion": "Analysis and reasoning: earns the point for using historical reasoning to explain relationships among pieces of evidence, linking examples to the thesis rather than listing them.",
+   "notEarned": "Listing examples with no explanation of how they support the argument does not earn the point.",
+   "points": 1,
+   "skill": "6.C"
+  },
+  {
+   "criterion": "Analysis and reasoning (complexity): earns the point for a complex argument, such as corroborating, qualifying, or modifying the thesis with diverse evidence.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point.",
+   "points": 1,
+   "skill": "6.D"
+  }
+ ],
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "source": "original; prompt written for this question",
+ "source_notes": "Barron's Premium 2027 Ch. 11, Topic 9.5; 5 Steps 2024 Ch. 29/30; Princeton Review Ch. 13.",
+ "status": "final",
+ "stimulus": {
+  "kind": "none",
+  "source_note": "No stimulus; LEQ prompt only."
+ },
+ "stimulus_set": null,
+ "themes": [
+  "MIG",
+  "PCE"
+ ],
+ "topics": [
+  "9.5"
+ ],
+ "totalPoints": 6,
+ "type": "leq",
+ "unit": 9
+}

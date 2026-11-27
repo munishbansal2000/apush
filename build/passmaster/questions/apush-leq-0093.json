@@ -1,0 +1,88 @@
+{
+ "id": "apush-leq-0093",
+ "type": "leq",
+ "pool": "practice",
+ "unit": 9,
+ "topics": [
+  "9.3"
+ ],
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "WOR",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 4,
+ "status": "final",
+ "lesson": "apush-u9-l2",
+ "source": "original; prompt written for this question",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "C. The United States in the Post-Cold War World"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "The Presidency of George H. W. Bush"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "George H. W. Bush"
+   }
+  ],
+  "primary_sources": []
+ },
+ "prompt": "Evaluate the extent to which internal developments within the Soviet Union, rather than American actions, caused the end of the Cold War.",
+ "modelOutline": "Thesis: Internal Soviet developments were the decisive cause of the Cold War's end, since a stagnating economy and Gorbachev's reforms broke the system from within, while American pressure mattered mainly by raising the price of a competition Moscow was already losing.\nContext: By the 1980s the Soviet economy had stagnated for years, living standards lagged far behind the West, and the war in Afghanistan drained money and morale, while the United States under Reagan rebuilt its military and denounced the Soviet system.\nEvidence of internal causes: Gorbachev acknowledged that military spending and the satellite states were suffocating the economy, and his reforms of glasnost and perestroika loosened censorship and Party control, letting protests topple the Eastern European regimes in 1989 once he refused to send tanks.\nEvidence of American actions: Reagan's military buildup and the Strategic Defense Initiative forced Moscow into an arms race it could not afford, and the INF Treaty showed pressure could bring negotiation, so American policy set the terms and the timing of the end.\nComplexity: Neither cause alone explains the timing: Soviet decay made collapse possible, American pressure made it urgent, and Gorbachev's refusal to use force was the hinge, so the end was internal in substance and external in pressure, with the internal developments decisive.",
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt.",
+   "notEarned": "A sentence of background with no link to the argument does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (first point): earns the point for describing specific and relevant examples supporting one side of the argument.",
+   "notEarned": "General statements with no specific example do not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (second point): earns the point for describing specific and relevant examples supporting the other side of the argument or the limits of the first.",
+   "notEarned": "Repeating the same example, or naming a limit with no specific detail, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Analysis and reasoning: earns the point for explaining how the evidence shows the extent of the change or continuity, linking examples to the thesis rather than listing them.",
+   "notEarned": "Listing examples with no explanation of how they support the argument does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Analysis and reasoning (complexity): earns the point for a complex argument, such as qualifying the thesis by area or period, or weighing change against its limits.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ],
+ "stimulus": {
+  "kind": "none",
+  "source_note": "No stimulus; LEQ prompt only."
+ },
+ "stimulus_set": null,
+ "totalPoints": 6
+}

@@ -1,0 +1,79 @@
+{
+ "answerKey": "A",
+ "difficulty": 3,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.6 Defining America's Role in the World in the 21st Century"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 30",
+    "section": "Threat of Terrorism, Increase of Presidential Power, and Economic Crisis (2001-2016)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "America and the War on Terror"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2966",
+ "lesson": "apush-u9-l5",
+ "options": [
+  {
+   "key": "A",
+   "text": "It called for striking first against nations seen as threats, not deterring them"
+  },
+  {
+   "key": "B",
+   "text": "It called for the United States to leave all alliances in Europe",
+   "misconception": "Bush kept the alliances; he acted with a coalition in Iraq."
+  },
+  {
+   "key": "C",
+   "text": "It called for the United States to avoid all use of military force abroad",
+   "misconception": "The doctrine was more willing to use force, not less."
+  },
+  {
+   "key": "D",
+   "text": "It called for Congress, not the president, to command the armed forces",
+   "misconception": "The doctrine changed when force would be used, not who commands it."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Background: containment aimed to deter and hold back an enemy, while the Bush Doctrine called for striking first against nations seen as threats.",
+  "B": "Background: the United States invaded Iraq with a coalition of allies. The doctrine did not call for leaving alliances.",
+  "C": "The doctrine moved toward using force sooner, through preemptive strikes, not toward avoiding force.",
+  "D": "The Constitution already makes the president commander in chief. The doctrine did not change that.",
+  "general": "1. Start with what containment meant. Background: during the Cold War, the United States aimed to deter and hold back its enemies rather than strike first.\n2. The account says Bush set out a doctrine of preemptive strikes against nations seen as threats.\n3. Striking first is the opposite of waiting to deter, so the change is about timing, not about alliances or who commands the forces.\n4. The doctrine made war more likely sooner, not less likely.\nRemember: a doctrine changes when force is used, and preemption moves that moment earlier."
+ },
+ "reasoning": "comparison",
+ "skills": [
+  "4.B"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, Topic 9.6; 5 Steps 2024 Ch. 30; Princeton Review Ch. 13.",
+ "status": "final",
+ "stem": "How did the Bush Doctrine differ from the containment policy the United States had followed during the Cold War?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Secondary account paraphrased from the grounding books (Barron's Premium 2027 Ch. 11, Topic 9.6; 5 Steps 2024 Ch. 30; Princeton Review Ch. 13).",
+  "text": "Paraphrase of a secondary account: In March 2003, the United States invaded Iraq in Operation Iraqi Freedom to remove President Saddam Hussein from power. President George W. Bush said Hussein was building weapons of mass destruction that could threaten the United States and its allies, and his administration also suggested a link between Hussein and the September 11 attacks. American forces quickly defeated the Iraqi army and overthrew Hussein.\n\nNo weapons of mass destruction were found, and no link between Hussein and the September 11 attacks was uncovered. Building a stable government proved far harder than winning the war: insurgents attacked American forces, and fighting broke out between Iraq's Sunni and Shia groups. The war grew unpopular at home and strained relations with some European allies. In January 2002, Bush had named Iraq, Iran, and North Korea an axis of evil, and that fall he set out a new doctrine of preemptive strikes against nations seen as threats."
+ },
+ "stimulus_set": "iraq-war",
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "topics": [
+  "9.6"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

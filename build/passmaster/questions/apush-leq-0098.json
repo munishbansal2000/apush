@@ -1,0 +1,90 @@
+{
+ "difficulty": 4,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.6 Defining America's Role in the World in the 21st Century"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 30",
+    "section": "Threat of Terrorism, Increase of Presidential Power, and Economic Crisis (2001-2016)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "America and the War on Terror"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-leq-0098",
+ "lesson": "apush-u9-l5",
+ "modelOutline": "Thesis: The September 11 attacks changed American foreign policy deeply, turning it toward a long war against terrorist networks, yet the change was incomplete, since older habits of alliance and restraint survived alongside the new militancy.\nContext: The Cold War had ended in 1991, leaving the United States the world's leading power, and the 1990s had seen limited interventions in places like Kosovo rather than a standing war against terrorism.\nEvidence of change: The United States invaded Afghanistan in October 2001 to overthrow the Taliban, invaded Iraq in 2003 on claims about weapons of mass destruction, and adopted the Bush Doctrine of preemptive strikes.\nEvidence of change at home and abroad: The Patriot Act expanded investigation powers, the Department of Homeland Security was created in 2003, and drone strikes grew sharply under Obama even as bin Laden was killed in 2011.\nEvidence of limits: The Iraq war grew unpopular, no weapons of mass destruction were found, and the United States withdrew from Afghanistan in 2021 with the Taliban returning to power, which showed the limits of remaking the region by force.\nComplexity: The change was real but bounded, since the war on terrorism lasted twenty years and reshaped American power, yet it ended in withdrawal rather than in a settled new order.",
+ "pool": "test",
+ "prompt": "Evaluate the extent to which the terrorist attacks of September 11, 2001, changed United States foreign policy between 2001 and 2021.",
+ "reasoning": "causation",
+ "rubric": [
+  {
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim does not earn the point.",
+   "points": 1,
+   "skill": "6.A"
+  },
+  {
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt.",
+   "notEarned": "A sentence of background with no link to the argument does not earn the point.",
+   "points": 1,
+   "skill": "4.B"
+  },
+  {
+   "criterion": "Evidence (first point): earns the point for describing specific and relevant examples supporting one side of the argument.",
+   "notEarned": "General statements with no specific example do not earn the point.",
+   "points": 1,
+   "skill": "6.B"
+  },
+  {
+   "criterion": "Evidence (second point): earns the point for describing specific and relevant examples supporting the other side of the argument or the limits of the first.",
+   "notEarned": "Repeating the same example, or naming a limit with no specific detail, does not earn the point.",
+   "points": 1,
+   "skill": "6.B"
+  },
+  {
+   "criterion": "Analysis and reasoning: earns the point for using historical reasoning to explain relationships among pieces of evidence, linking examples to the thesis rather than listing them.",
+   "notEarned": "Listing examples with no explanation of how they support the argument does not earn the point.",
+   "points": 1,
+   "skill": "6.C"
+  },
+  {
+   "criterion": "Analysis and reasoning (complexity): earns the point for a complex argument, such as corroborating, qualifying, or modifying the thesis with diverse evidence.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point.",
+   "points": 1,
+   "skill": "6.D"
+  }
+ ],
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "source": "original; prompt written for this question",
+ "source_notes": "Barron's Premium 2027 Ch. 11, Topic 9.6; 5 Steps 2024 Ch. 30; Princeton Review Ch. 13.",
+ "status": "final",
+ "stimulus": {
+  "kind": "none",
+  "source_note": "No stimulus; LEQ prompt only."
+ },
+ "stimulus_set": null,
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "topics": [
+  "9.6"
+ ],
+ "totalPoints": 6,
+ "type": "leq",
+ "unit": 9
+}

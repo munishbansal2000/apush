@@ -1,0 +1,93 @@
+{
+ "id": "apush-leq-0090",
+ "type": "leq",
+ "pool": "test",
+ "unit": 9,
+ "topics": [
+  "9.2"
+ ],
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 4,
+ "status": "final",
+ "lesson": "apush-u9-l1",
+ "source": "original; prompt written for this question",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "A. The Ascendancy of the New Right"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "C. Reducing Big Government: Rhetoric and Reality"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 28",
+    "section": "Decline and Rebirth (1968-1988)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "The Conservative Resurgence"
+   }
+  ],
+  "primary_sources": []
+ },
+ "prompt": "Evaluate the extent to which the election of Ronald Reagan in 1980 marked a turning point in American politics.",
+ "modelOutline": "Thesis: Reagan's election in 1980 was a real turning point in the direction of American politics \u2014 it broke the New Deal coalition and made conservatism the country's dominant language \u2014 but it was a partial turn, since the welfare state survived and the government kept growing.\nContext: Before 1980 the New Deal coalition had dominated national politics for nearly fifty years, from Roosevelt through Johnson's Great Society, with the federal government steadily expanding its role in jobs, welfare, and regulation.\nEvidence of a turn: Reagan cut taxes in 1981, deregulated banking, industry, and energy, fired the PATCO strikers, and preached that government was the problem; the New Right \u2014 evangelicals, business conservatives, and Cold War hawks \u2014 became the Republican base.\nEvidence of limits: Social Security and Medicare survived every attempt to cut them; military spending soared and the national debt more than doubled; Reagan's own successors, including Clinton, governed inside the conservative frame rather than reversing it.\nComplexity: The turn was real in politics and rhetoric but partial in government: Washington pulled back from managing the economy while growing in the military and security \u2014 so the government did not shrink, it changed shape, and the conservative language outlasted the conservative shrinking.",
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt.",
+   "notEarned": "A sentence of background with no link to the argument does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (first point): earns the point for describing specific and relevant examples supporting one side of the argument.",
+   "notEarned": "General statements with no specific example do not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (second point): earns the point for describing specific and relevant examples supporting the other side of the argument or the limits of the first.",
+   "notEarned": "Repeating the same example, or naming a limit with no specific detail, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Analysis and reasoning: earns the point for explaining how the evidence shows the extent of the change or continuity, linking examples to the thesis rather than listing them.",
+   "notEarned": "Listing examples with no explanation of how they support the argument does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Analysis and reasoning (complexity): earns the point for a complex argument, such as qualifying the thesis by area or period, or weighing change against its limits.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ],
+ "stimulus": {
+  "kind": "none",
+  "source_note": "No stimulus; LEQ prompt only."
+ },
+ "stimulus_set": null,
+ "totalPoints": 6
+}

@@ -1,0 +1,95 @@
+{
+ "difficulty": 3,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.5 Migration and Immigration, 1980 to the Present"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "Prosperity and a New World Order (1988\u20132000)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Changing Demographics"
+   }
+  ],
+  "primary_sources": [
+   "Ronald Reagan, statement on signing the Immigration Reform and Control Act of 1986 (November 6, 1986), paraphrased"
+  ]
+ },
+ "id": "apush-saq-0288",
+ "lesson": "apush-u9-l4",
+ "parts": [
+  {
+   "modelAnswer": "The law granted legal status to longtime residents who had lived in the United States for years. It also barred employers from hiring workers without legal papers.",
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one provision of the 1986 law described in the statement.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for identifying one provision, such as legalization for longtime residents or penalties for employers who hired workers without papers.",
+     "notEarned": "Naming a provision from a different law, or a vague answer with nothing identified, does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "modelAnswer": "Reagan wanted a law that both settled the status of longtime residents and discouraged future unauthorized immigration. Pairing legalization with employer penalties let him present the law as both fair and firm.",
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain ONE reason Reagan supported the law.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one reason Reagan supported the law, such as settling longtime residents' status while discouraging future unauthorized immigration.",
+     "notEarned": "Naming a reason with no explanation, or describing an effect instead, does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "modelAnswer": "Unauthorized immigration continued after 1986, because employer penalties were rarely enforced and jobs remained available. The unauthorized population grew from about 3 million in 1986 to more than 12 million by 2007.",
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE way the law fell short of its goals.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one shortfall, such as weak enforcement of employer penalties or the continued growth of the unauthorized population.",
+     "notEarned": "Naming a shortfall with no explanation, or describing a provision instead, does not earn the point.",
+     "points": 1
+    }
+   ]
+  }
+ ],
+ "pool": "practice",
+ "reasoning": "causation",
+ "saq_slot": 2,
+ "skills": [
+  "2.A",
+  "3.A"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, Topic 9.5; 5 Steps 2024 Ch. 29/30; Princeton Review Ch. 13. Paraphrase of a public-domain primary source: President Ronald Reagan, statement on signing the Immigration Reform and Control Act of 1986, November 6, 1986.",
+ "status": "final",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of a public-domain primary source: President Ronald Reagan, statement on signing the Immigration Reform and Control Act of 1986, November 6, 1986.",
+  "text": "Paraphrase of President Ronald Reagan's statement on signing the Immigration Reform and Control Act, November 6, 1986: Reagan called the law the most far-reaching reform of immigration law since 1952. He said it would grant legal status to people who had lived in the United States for years while barring employers from hiring workers without legal papers. He also warned that the law would work only if its enforcement provisions were carried out."
+ },
+ "stimulus_set": null,
+ "themes": [
+  "MIG",
+  "PCE"
+ ],
+ "topics": [
+  "9.5"
+ ],
+ "totalPoints": 3,
+ "type": "saq",
+ "unit": 9
+}

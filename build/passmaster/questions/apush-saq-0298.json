@@ -1,0 +1,94 @@
+{
+ "difficulty": 3,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "NAFTA and the Push Toward Free Trade"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "Prosperity and a New World Order (1988-2000)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Digital Revolution"
+   }
+  ],
+  "primary_sources": [
+   "OMB Historical Tables, Table 1.1 (federal surplus/deficit by fiscal year)"
+  ]
+ },
+ "id": "apush-saq-0298",
+ "lesson": "apush-u9-l5",
+ "parts": [
+  {
+   "modelAnswer": "The spread of personal computers and the internet created new industries and business opportunities, which helped drive the expansion. Trade agreements such as the North American Free Trade Agreement also linked American firms to suppliers and customers abroad.",
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one cause of the economic expansion of the 1990s described in the passage.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for identifying one cause of the expansion, such as the spread of computers and the internet or new trade agreements.",
+     "notEarned": "Naming a cause with no link to the passage, or describing an effect instead, does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "modelAnswer": "Tax revenue grew as businesses and stock markets expanded, so the federal budget moved from deficit into surplus from 1998 to 2001. The surplus reached 236 billion dollars in 2000, the largest in American history to that point.",
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain one effect of the expansion on the federal budget.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one effect on the federal budget, such as the move from deficit to surplus or the growth of tax revenue.",
+     "notEarned": "Naming the surplus with no explanation of how the expansion caused it does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "modelAnswer": "Manufacturing jobs kept shrinking as a share of employment, so many factory workers did not share in the boom. The gap between rich and poor also kept widening, which showed that growth alone did not spread its gains evenly.",
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain one limit of the 1990s expansion described in the passage.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one limit of the expansion, such as the continued loss of manufacturing jobs or the widening gap between rich and poor.",
+     "notEarned": "Naming a limit with no explanation, or describing a cause of the expansion instead, does not earn the point.",
+     "points": 1
+    }
+   ]
+  }
+ ],
+ "pool": "practice",
+ "reasoning": "causation",
+ "saq_slot": 1,
+ "skills": [
+  "3.B",
+  "5.B"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, NAFTA and the Push Toward Free Trade; 5 Steps 2024 Ch. 29; Princeton Review Ch. 13, Digital Revolution. Budget data: OMB Historical Tables, Table 1.1.",
+ "status": "final",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Secondary account paraphrased from the grounding books (Barron's Premium 2027 Ch. 11; 5 Steps 2024 Ch. 29).",
+  "text": "Paraphrase of a secondary account: The 1990s brought the longest economic expansion the United States had seen to that point. Personal computers and then the internet created whole new industries, and trade agreements such as the North American Free Trade Agreement linked American firms to suppliers and customers abroad. The federal budget, which had run deficits for decades, moved into surplus from 1998 to 2001 as tax revenue grew.\n\nYet the boom did not lift everyone: manufacturing jobs kept shrinking as a share of employment, and the gap between rich and poor kept widening. When the dot-com bubble burst in 2001, the expansion ended."
+ },
+ "stimulus_set": null,
+ "themes": [
+  "WXT"
+ ],
+ "topics": [
+  "9.7"
+ ],
+ "totalPoints": 3,
+ "type": "saq",
+ "unit": 9
+}

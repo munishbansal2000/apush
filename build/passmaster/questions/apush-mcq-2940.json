@@ -1,0 +1,88 @@
+{
+ "answerKey": "C",
+ "difficulty": 2,
+ "figures": [
+  {
+   "alt": "President Ronald Reagan seated at a desk signing a bill while Vice President George H. W. Bush and the bill's sponsors stand behind him",
+   "caption": "President Ronald Reagan signing the Immigration Reform and Control Act, November 6, 1986",
+   "file": "u9/reagan-signs-irca-1986.jpg",
+   "id": "fig-apush-mcq-2939",
+   "license": "Public domain (U.S. federal government work; White House Photographic Office, National Archives)",
+   "source_url": "https://commons.wikimedia.org/wiki/File:President_Ronald_Reagan_in_The_Roosevelt_Room_Signing_S._1200_Immigration_Reform_and_Control_Act_of_1986_with_Dan_Lungren_Strom_Thurmond_George_Bush_Romano_Mazzoli_and_Alan_Simpson_-_DPLA_-_89f06ca8c3dde2b7ec4ab6b7f6d1f2f7.jpg"
+  }
+ ],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.5 Migration and Immigration, 1980 to the Present"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "Prosperity and a New World Order (1988\u20132000)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Changing Demographics"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2940",
+ "lesson": "apush-u9-l4",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The law kept enforcement and added employer penalties; it did not open the border or end deportations.",
+   "text": "Open borders and an end to all deportations"
+  },
+  {
+   "key": "B",
+   "misconception": "The law did not raise quotas or ban family visas; family reunification stayed central to immigration law.",
+   "text": "Higher legal quotas and a ban on family-based visas"
+  },
+  {
+   "key": "C",
+   "text": "Legal status for some longtime residents and penalties for employers who hired workers without papers"
+  },
+  {
+   "key": "D",
+   "misconception": "Guest workers were a small part of the law; the big change was legalization plus employer sanctions.",
+   "text": "A guest-worker program only, with no change at all in any worker's legal status"
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Background: the law added enforcement, including employer penalties, so the border did not open.",
+  "B": "Background: family reunification remained the main path to a green card after 1986.",
+  "C": "The law paired legalization for people who had lived here since before 1982 with new penalties for employers who knowingly hired workers without papers. Background: about 2.7 million people eventually gained legal status under it.",
+  "D": "Background: the law's center was legalization plus sanctions, not a guest-worker program alone.",
+  "general": "1. Start with the signing remarks. The law offered legal status to longtime residents.\n2. Note the other half. It also barred employers from hiring workers without legal papers.\n3. That pairing is the point: one side legalized, the other side punished hiring.\n4. The other choices give only one half, or invent a change the law never made.\nRemember: when a law pairs two moves, the answer must name both of them."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "1.A"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, Topic 9.5; 5 Steps 2024 Ch. 29/30; Princeton Review Ch. 13. Photograph: White House Photographic Office, November 6, 1986, National Archives. Public domain (U.S. federal government work).",
+ "status": "final",
+ "stem": "The law Reagan is signing combined which two approaches to immigration?",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Photograph: White House Photographic Office, November 6, 1986, National Archives. Public domain (U.S. federal government work).",
+  "text": "Photograph of President Ronald Reagan signing the Immigration Reform and Control Act of 1986 in the Roosevelt Room of the White House on November 6, 1986. Reagan sits at a desk signing the bill while Vice President George H. W. Bush and the bill's sponsors, Senator Alan Simpson and Representative Romano Mazzoli, stand behind him. In remarks at the signing, Reagan described the law as the most far-reaching reform of immigration law since 1952, and said it would pair legal status for some longtime residents with penalties for employers who hired workers without legal papers. (Remarks paraphrased, not quoted.)"
+ },
+ "stimulus_set": "irca-signing-1986",
+ "themes": [
+  "MIG",
+  "PCE"
+ ],
+ "topics": [
+  "9.5"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

@@ -1,0 +1,79 @@
+{
+ "answerKey": "A",
+ "difficulty": 3,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.5 Migration and Immigration, 1980 to the Present"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 30",
+    "section": "Threat of Terrorism, Increase of Presidential Power, and Economic Crisis (2001\u20132016)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Changing Demographics"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2957",
+ "lesson": "apush-u9-l4",
+ "options": [
+  {
+   "key": "A",
+   "text": "The 2016 presidential campaign, in which building a wall along the southern border was a central promise"
+  },
+  {
+   "key": "B",
+   "misconception": "The 2013 Senate bill died in the House; no broad reform passed.",
+   "text": "The passage of a broad immigration reform law by Congress in 2013 after years of debate"
+  },
+  {
+   "key": "C",
+   "misconception": "Deportations continued under Obama and later presidents.",
+   "text": "The end of all deportations after 2012"
+  },
+  {
+   "key": "D",
+   "misconception": "The department continued operating after 2017.",
+   "text": "The closing of the Department of Homeland Security in 2017"
+  }
+ ],
+ "pool": "test",
+ "rationales": {
+  "A": "Background: in 2016, Donald Trump made the border wall a central campaign promise, and immigration stayed at the center of national politics through the elections that followed. The debate did not fade after 2012.",
+  "B": "Background: the Senate passed a reform bill in 2013, but the House never voted on it.",
+  "C": "Background: Obama deported more people than any earlier president, and deportations continued afterward.",
+  "D": "Background: the Department of Homeland Security, created in 2003, still operates today.",
+  "general": "1. Ask what happened after 2012. The debate did not fade; it grew louder.\n2. Background: in 2016, the border wall became a central promise of the winning presidential campaign.\n3. Immigration stayed at the center of national politics through the elections that followed.\n4. No reform passed, deportations never ended, and Homeland Security never closed.\nRemember: a debate stays central when campaigns keep running on it."
+ },
+ "reasoning": "continuity-change",
+ "skills": [
+  "1.A"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, Topic 9.5; 5 Steps 2024 Ch. 29/30; Princeton Review Ch. 13. Secondary account paraphrased from the grounding books (Princeton Review Ch. 13; Barron's Premium 2027 Ch. 11).",
+ "status": "final",
+ "stem": "Which development best shows that the immigration debate described in the passage stayed central to national politics after 2012?",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Secondary account paraphrased from the grounding books (Princeton Review Ch. 13; Barron's Premium 2027 Ch. 11).",
+  "text": "Paraphrase of a secondary account: Since the 1960s, immigration has remade the United States. Newcomers from Latin America and Asia, and their children, have made the country more diverse, and both parties now compete for their votes. Americans disagree about what this change means. Some point to new businesses, new workers, and new cultures as strengths. Others worry that large numbers of newcomers, including many who cross without papers, strain schools and public services and change the country's culture. Congress has repeatedly failed to pass a broad reform, so presidents have acted on their own: in 2012, President Obama shielded some young people brought here as children from deportation, and later presidents reversed course by executive action of their own."
+ },
+ "stimulus_set": "immigration-debate",
+ "themes": [
+  "MIG",
+  "PCE"
+ ],
+ "topics": [
+  "9.5"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

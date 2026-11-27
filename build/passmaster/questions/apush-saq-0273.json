@@ -1,0 +1,91 @@
+{
+ "id": "apush-saq-0273",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 9,
+ "topics": [
+  "9.2"
+ ],
+ "skills": [
+  "1.B",
+  "5.A"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "status": "final",
+ "lesson": "apush-u9-l1",
+ "source": "original; stimulus paraphrased from the grounding books or drawn from the shared image pool",
+ "grounding": {
+  "books": [
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Decline of Unions"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 28",
+    "section": "Decline and Rebirth (1968-1988)"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "A. The Ascendancy of the New Right"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Figures from the Bureau of Labor Statistics, Union Members 2010 (USDL-11-0063): 11.9 percent in 2010; and the Current Population Survey via the Economic Policy Institute: 24.1 percent in 1979. The 1950s figure (roughly a third) is the Unit 9 lesson script's. Princeton Review Ch. 13 states 34 percent in 1979 and 10 percent in 2010; both are wrong against BLS/CPS data and are not used here.",
+  "text": "Share of American workers belonging to labor unions:\n\n| Year | Share of workers in unions |\n| 1950s | about one in three |\n| 1979 | 24 percent |\n| 2010 | 12 percent |"
+ },
+ "stimulus_set": null,
+ "saq_slot": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Describe the trend shown in the table.",
+   "modelAnswer": "Union membership declined across the whole period. It stood at about a third of American workers in the 1950s, fell to about one in four by 1979, and dropped to about one in eight by 2010.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for describing the trend: a decline from about a third of workers in the 1950s to about one in four by 1979 and about one in eight by 2010.",
+     "notEarned": "Quoting a single number with no trend described does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain one cause of the decline in union membership shown in the table.",
+   "modelAnswer": "President Reagan's firing of the striking air-traffic controllers in 1981 signaled that the new administration would not protect organized labor. Employers took the message, and union-busting spread while factories closed across the Rust Belt.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining a cause, such as the PATCO firing, deindustrialization, the Taft-Hartley Act's limits on strikes, or aggressive anti-union campaigns by employers.",
+     "notEarned": "Naming a cause with no explanation of how it reduced membership does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one effect of the decline in union membership on American workers or politics.",
+   "modelAnswer": "As unions shrank, workers lost bargaining power, and wages stagnated while wealth concentrated at the top. Politically, the decline hollowed out the Democratic Party's union base and helped shift the country's center of gravity toward the Sun Belt.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining an effect, such as wage stagnation, rising inequality, or the weakening of the Democrats' union base.",
+     "notEarned": "Naming an effect with no explanation does not earn the point."
+    }
+   ]
+  }
+ ],
+ "totalPoints": 3
+}

@@ -1,0 +1,93 @@
+{
+ "id": "apush-saq-0285",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 9,
+ "topics": [
+  "9.4"
+ ],
+ "skills": [
+  "2.B",
+  "5.B"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 3,
+ "status": "final",
+ "lesson": "apush-u9-l3",
+ "source": "original; stimulus from the shared image pool or paraphrased from the grounding books",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "D. Debates over the Scope of Government and International Trade"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "Prosperity and a New World Order (1988\u20132000)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Reagan, H. W., Clinton, and W. (1980-2001)"
+   }
+  ],
+  "primary_sources": [
+   "Declaration for Global Democracy, Seattle, November 1999 (paraphrased)"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of the Declaration for Global Democracy, Seattle, November 1999. Post-1929 material is paraphrased, not quoted.",
+  "text": "Paraphrase of the Declaration for Global Democracy, issued by protesters at the World Trade Organization meeting in Seattle, November 1999: The declaration argued that free-trade rules let corporations move factories to countries with the lowest wages and the weakest environmental laws. It demanded that trade agreements protect workers' rights and the environment, and that ordinary people, not corporations, should set the rules of the world economy."
+ },
+ "stimulus_set": null,
+ "saq_slot": 2,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Briefly describe the protesters' view of free trade, as shown in the passage.",
+   "modelAnswer": "The protesters believed free-trade rules served corporations, letting them move factories to countries with the lowest wages and weakest environmental laws. They saw the rules as written for business, not for workers or the environment.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for describing the protesters' view that free trade served corporations at the expense of workers and the environment.",
+     "notEarned": "Quoting the passage with no description, or describing a supporter's view, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain ONE reason the protests happened in 1999.",
+   "modelAnswer": "The 1990s had brought a wave of free-trade deals, from NAFTA in 1993 to the new World Trade Organization in 1995. By 1999 labor and environmental groups had come to see the Seattle meeting as the moment to fight back.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one reason, such as the spread of free-trade agreements in the 1990s or the WTO meeting itself.",
+     "notEarned": "Naming a reason with no explanation, or describing a later protest, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE way the Seattle protests resembled earlier American protest movements.",
+   "modelAnswer": "Like the movements of the 1960s, the Seattle protesters used street demonstrations to connect foreign policy with corporate power, and they demanded a greater democratic voice in decisions. Both linked economic power to questions of who governs.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one resemblance, such as street demonstrations, linking corporate power to democracy, or demanding wider participation.",
+     "notEarned": "Naming a movement with no resemblance explained does not earn the point."
+    }
+   ]
+  }
+ ],
+ "totalPoints": 3
+}

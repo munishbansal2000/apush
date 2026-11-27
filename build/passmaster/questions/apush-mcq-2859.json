@@ -1,0 +1,77 @@
+{
+ "answerKey": "C",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Topic 9.1 Contextualizing Period 9"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "Prosperity and a New World Order (1988\u20132000)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Reagan, H. W., Clinton, and W. (1980\u20132001)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "id": "apush-mcq-2859",
+ "lesson": "apush-u9-l1",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Perot carried no state in 1992, so there were no state victories to lose in the Electoral College.",
+   "text": "Perot won the popular vote in several states but lost those states in the Electoral College."
+  },
+  {
+   "key": "B",
+   "misconception": "Perot appeared on the ballot in all fifty states in 1992.",
+   "text": "Perot was barred from appearing on the ballot in most states across the country."
+  },
+  {
+   "key": "C",
+   "text": "Each state's electoral votes go to its winner, so finishing second or third everywhere wins none."
+  },
+  {
+   "key": "D",
+   "misconception": "The Constitution says nothing of the kind; third-party candidates can win electoral votes by carrying states.",
+   "text": "The Constitution gives third-party candidates no electoral votes in their first national campaign for president."
+  }
+ ],
+ "pool": "practice",
+ "rationales": {
+  "A": "Perot carried no state in 1992. Background: he finished second in a few states, notably Maine, but first nowhere, so there were no state victories to lose in the Electoral College.",
+  "B": "Perot appeared on the ballot in all fifty states in 1992. Background: his campaign gathered the signatures to qualify everywhere, which is part of why his vote total was so large.",
+  "C": "Perot's votes were real \u2014 nearly one in five \u2014 but they were spread across states he never won. Background: the Electoral College awards each state's votes to the candidate who carries that state, so second place earns nothing.\nA national fifth of the vote with no state carried means a popular-vote total with an electoral-vote total of zero.",
+  "D": "The Constitution says nothing of the kind. Background: third-party candidates can win electoral votes \u2014 George Wallace won 46 in 1968 \u2014 by carrying states.",
+  "general": "1. Start with the puzzle. Nearly a fifth of the vote, zero electors \u2014 how can both be true?\n2. Ask how electors are won. Background: each state's electoral votes go to the candidate who carries that state.\n3. Ask where Perot finished. Second or third in state after state, first nowhere.\n4. Put it together. A vote spread thin across the whole country buys no state, and no state means no electors.\nRemember: the Electoral College rewards winning states, not winning a share of the national vote."
+ },
+ "reasoning": "causation",
+ "skills": [
+  "1.B"
+ ],
+ "source": "original; stimulus table drawn from the American Presidency Project election data, via the Gilder Lehrman Institute",
+ "status": "final",
+ "stem": "Ross Perot won 18.9% of the popular vote in 1992 but no electoral votes. Which of the following best explains that result?",
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Data from the American Presidency Project, via the Gilder Lehrman Institute of American History.",
+  "text": "Presidential election results, 1980\u20132000:\n\n| Year | Winner | Winner's popular vote | Runner-up's popular vote | Winner's electoral votes |\n| 1980 | Ronald Reagan (R) | 50.7% | Carter 41.0% | 489 |\n| 1984 | Ronald Reagan (R) | 58.8% | Mondale 40.6% | 525 |\n| 1988 | George H. W. Bush (R) | 53.4% | Dukakis 45.6% | 426 |\n| 1992 | Bill Clinton (D) | 43.0% | Bush 37.4% | 370 |\n| 1996 | Bill Clinton (D) | 49.2% | Dole 40.7% | 379 |\n| 2000 | George W. Bush (R) | 47.9% | Gore 48.4% | 271 |\n\nRoss Perot, running as an independent, won 18.9% of the popular vote in 1992 and 8.4% in 1996, winning no electoral votes in either year."
+ },
+ "stimulus_set": "elections-1980-2000",
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "topics": [
+  "9.1"
+ ],
+ "type": "mcq",
+ "unit": 9
+}

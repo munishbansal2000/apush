@@ -1,0 +1,100 @@
+{
+ "id": "apush-saq-0276",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 9,
+ "topics": [
+  "9.2"
+ ],
+ "skills": [
+  "1.B",
+  "4.A"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 3,
+ "status": "final",
+ "lesson": "apush-u9-l1",
+ "source": "original; stimulus paraphrased from the grounding books or drawn from the shared image pool",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "A. The Ascendancy of the New Right"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "C. Reducing Big Government: Rhetoric and Reality"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 28",
+    "section": "Decline and Rebirth (1968-1988)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Official White House portrait of President Ronald Reagan, 1981; U.S. federal government photograph, public domain.",
+  "text": "Official portrait of President Ronald Reagan, 1981. He smiles at the camera in a dark suit, with the American flag behind him."
+ },
+ "stimulus_set": null,
+ "saq_slot": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one policy associated with the Reagan administration.",
+   "modelAnswer": "The Reagan administration cut taxes through the Economic Recovery Tax Act of 1981. It also deregulated banking, industry, and energy, and sharply increased military spending.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one Reagan policy, such as the 1981 tax cuts, deregulation, the military buildup, or the PATCO firing.",
+     "notEarned": "Naming a policy from another presidency does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain one reason Reagan's election in 1980 marked a turn toward conservatism.",
+   "modelAnswer": "Reagan's victory broke the New Deal coalition that had dominated national politics for nearly fifty years. He won traditionally Democratic blue-collar voters who had grown alienated from their party's liberal positions on abortion, taxes, and the role of government.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining a reason, such as the repudiation of 1960s liberalism, the appeal of supply-side economics, or the rise of the New Right.",
+     "notEarned": "Naming a reason with no explanation does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one limit of the conservative turn during Reagan's presidency.",
+   "modelAnswer": "Reagan could not shrink the popular core of the federal government, since Social Security and Medicare were too popular to cut. His tax cuts and military buildup also doubled the national debt, leaving the government larger and more indebted than he promised.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining a limit, such as the survival of Social Security and Medicare, the growth of the debt, or the failure to end abortion rights by amendment.",
+     "notEarned": "Naming a limit with no explanation does not earn the point."
+    }
+   ]
+  }
+ ],
+ "totalPoints": 3,
+ "figures": [
+  {
+   "id": "fig-apush-saq-0276",
+   "file": "u9/pr25e-ch13-q01.jpg",
+   "caption": "President Ronald Reagan, official portrait, 1981",
+   "alt": "Official portrait of President Ronald Reagan in 1981, smiling in a dark suit with the American flag behind him",
+   "license": "Public domain (U.S. federal government work)",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/16/Official_Portrait_of_President_Reagan_1981.jpg"
+  }
+ ]
+}

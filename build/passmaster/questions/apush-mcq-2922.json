@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-2922",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 9,
+ "topics": [
+  "9.4"
+ ],
+ "skills": [
+  "2.A",
+  "2.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "status": "final",
+ "lesson": "apush-u9-l3",
+ "source": "original; stimulus from the shared image pool or paraphrased from the grounding books",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "The Digital Revolution"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "Prosperity and a New World Order (1988\u20132000)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "Digital Revolution"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stem": "Why would the chairman of the Federal Reserve publicly warn about stock prices in 1996?",
+ "options": [
+  {
+   "key": "A",
+   "text": "To order investors to sell their stocks immediately",
+   "misconception": "The Fed chairman cannot order investors to sell; he has no power over private portfolios."
+  },
+  {
+   "key": "B",
+   "text": "To cool an overheated market before a crash forced his hand"
+  },
+  {
+   "key": "C",
+   "text": "To announce that the Fed would ban trading in internet stocks",
+   "misconception": "The Fed sets interest rates and oversees banks; it cannot ban trading in particular stocks."
+  },
+  {
+   "key": "D",
+   "text": "To celebrate the stock market's record highs",
+   "misconception": "A warning about exuberance is the opposite of a celebration."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "The Fed chairman's tool is influence, not orders. Background: his words move markets, but he cannot command investors.",
+  "B": "Background: the Fed chairman's words move markets, so a public warning can slow speculation without raising interest rates.",
+  "C": "Background: the Fed sets interest rates and oversees banks; it has no power to ban trading in internet stocks.",
+  "D": "Greenspan warned that prices had run beyond what companies were worth; that is caution, not celebration.",
+  "general": "1. Ask who is speaking: the chairman of the Federal Reserve, whose words alone move markets.\n2. Ask what he wants: speculation to slow down on its own, before a crash does the job violently.\n3. Background: a warning is a soft tool \u2014 it cools the market without the hard tool of raising interest rates.\n4. The other choices give him powers he does not have, or a mood opposite to the warning.\nRemember: when the Fed chair speaks, the speech itself is the policy."
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of Federal Reserve Chairman Alan Greenspan's remarks, December 1996. Post-1929 material is paraphrased, not quoted; 'irrational exuberance' is Greenspan's own term for the mood he described.",
+  "text": "Paraphrase of Federal Reserve Chairman Alan Greenspan's remarks, December 1996: Greenspan asked how to judge when stock prices had risen too far, noting that low inflation usually steadies markets. But he warned that markets might be gripped by what he called irrational exuberance, with investors bidding prices up beyond what companies were truly worth."
+ },
+ "stimulus_set": "greenspan-irrational-exuberance",
+ "figures": null
+}

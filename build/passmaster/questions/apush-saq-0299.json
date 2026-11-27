@@ -1,0 +1,99 @@
+{
+ "difficulty": 3,
+ "figures": [],
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "Changes in the Welfare System"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 11",
+    "section": "The Democratic Party From Johnson to Clinton"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 29",
+    "section": "Prosperity and a New World Order (1988-2000)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 13",
+    "section": "The Clinton Presidency (1993-2001)"
+   }
+  ],
+  "primary_sources": [
+   "Clinton, statement on signing the Personal Responsibility and Work Opportunity Reconciliation Act, August 22, 1996 (paraphrased)"
+  ]
+ },
+ "id": "apush-saq-0299",
+ "lesson": "apush-u9-l5",
+ "parts": [
+  {
+   "modelAnswer": "The law replaced open-ended federal aid with time-limited help tied to work requirements. It also gave states block grants to run their own welfare programs.",
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one change the 1996 law made to welfare.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for identifying one change the law made, such as time-limited aid tied to work or block grants to the states.",
+     "notEarned": "Naming a change with no link to the statement, or describing the old system only, does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "modelAnswer": "The Republican victory in the 1994 elections put welfare reform at the center of national politics through the Contract with America. Clinton, seeking reelection, adopted the issue and moved his party toward the center.",
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain one cause of the welfare reform law of 1996.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one cause of the law, such as the 1994 Republican victory, the Contract with America, or Clinton's move toward the center.",
+     "notEarned": "Naming a cause with no explanation, or describing an effect of the law instead, does not earn the point.",
+     "points": 1
+    }
+   ]
+  },
+  {
+   "modelAnswer": "The law showed that a Democratic president could adopt a conservative priority, which confirmed the rightward shift of the party. It also left the parties still divided, since critics said the law cut help for the poor while supporters said it moved people into work.",
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain one effect of the 1996 law on American politics.",
+   "scoring": [
+    {
+     "criterion": "Earns the point for explaining one political effect of the law, such as confirming the Democratic Party's rightward shift or deepening the debate over welfare.",
+     "notEarned": "Naming an effect with no explanation, or describing a cause of the law instead, does not earn the point.",
+     "points": 1
+    }
+   ]
+  }
+ ],
+ "pool": "practice",
+ "reasoning": "causation",
+ "saq_slot": 2,
+ "skills": [
+  "2.B",
+  "3.B"
+ ],
+ "source": "original; stimulus from the shared image pool, paraphrased from the grounding books, or drawn from cited public data",
+ "source_notes": "Barron's Premium 2027 Ch. 11, Changes in the Welfare System and The Democratic Party From Johnson to Clinton; 5 Steps 2024 Ch. 29; Princeton Review Ch. 13.",
+ "status": "final",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Primary source paraphrased: President Bill Clinton's statement on signing the Personal Responsibility and Work Opportunity Reconciliation Act, August 22, 1996.",
+  "text": "Paraphrase of President Bill Clinton's statement on signing the welfare reform law, August 1996: The president said the law would end welfare as it had been known. It replaced open-ended federal aid with time-limited help tied to work, and it gave the states block grants to run their own programs. He argued that the old system had trapped families in dependence, and that work requirements would move people from welfare to jobs."
+ },
+ "stimulus_set": null,
+ "themes": [
+  "PCE"
+ ],
+ "topics": [
+  "9.7"
+ ],
+ "totalPoints": 3,
+ "type": "saq",
+ "unit": 9
+}

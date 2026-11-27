@@ -1,0 +1,85 @@
+{
+  "answerKey": "B",
+  "difficulty": 3,
+  "figures": [
+    {
+      "alt": "Line chart showing the foreign-born share of the U.S. population rising from 4.7 percent in 1970 to 13.6 percent in 2020",
+      "caption": "Share of the U.S. population that was foreign-born, 1970-2020. Source: U.S. Census Bureau, decennial censuses.",
+      "file": "pt01/fig6-foreign-born-1970-2020.jpg",
+      "id": "fig-apush-mcq-3000",
+      "license": "Chart data: public U.S. government data"
+    }
+  ],
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 11",
+        "section": "Topic 9.5 Migration and Immigration in the 1990s and 2000s"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 29",
+        "section": "Prosperity and a New World Order (1988–2000)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 13"
+      }
+    ],
+    "primary_sources": []
+  },
+  "id": "apush-mcq-3000",
+  "lesson": "apush-u9-l4",
+  "options": [
+    {
+      "key": "A",
+      "misconception": "The trend led to debates over abolishing the Census Bureau.",
+      "text": "Debates over whether the United States should abolish the Census Bureau"
+    },
+    {
+      "key": "B",
+      "text": "Debates over immigration policy, border enforcement, and immigration's cultural and economic effects"
+    },
+    {
+      "key": "C",
+      "misconception": "The trend led to debates over ending all trade with Asia.",
+      "text": "Debates over whether the United States should end all trade with Asia"
+    },
+    {
+      "key": "D",
+      "misconception": "The trend led to debates over banning English.",
+      "text": "Debates over whether English should be banned as the language of government"
+    }
+  ],
+  "pool": "test",
+  "rationales": {
+    "A": "No debate over abolishing the Census Bureau followed the trend.",
+    "B": "Rising immigration fueled recurring debates over border enforcement, legal status, and the economic and cultural effects of immigration. Those debates returned in every decade, from the 1986 reform to the border politics of the 2000s.",
+    "C": "No debate over ending all trade with Asia followed the trend.",
+    "D": "No debate over banning English as the language of government followed the trend.",
+    "general": "1. Ask what rising immigration produces in public life. Argument about who comes, how many, and on what terms.\n2. Name the debates. Border enforcement, legal status, and the economic and cultural effects of immigration.\n3. Test the inventions. Abolishing the Census, ending Asian trade, and banning English are not the debates.\n4. Match the contribution. The trend fed the immigration debate that runs through the late twentieth and early twenty-first centuries.\nRemember: a demographic trend contributes to the debate about the trend itself."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "2.B"
+  ],
+  "source": "original; stimulus is a chart plotted from U.S. Census Bureau decennial figures (public data)",
+  "status": "final",
+  "stem": "The trend in the chart most directly contributed to which of the following debates in the late twentieth and early twenty-first centuries?",
+  "stimulus": {
+    "kind": "chart",
+    "source_note": "U.S. Census Bureau, decennial censuses. Chart plotted from the same figures.",
+    "text": "| Year | Foreign-Born Share |\n| 1970 | 4.7% |\n| 1980 | 6.2% |\n| 1990 | 7.9% |\n| 2000 | 11.1% |\n| 2010 | 12.9% |\n| 2020 | 13.6% |\n\nSource: U.S. Census Bureau, decennial censuses. Simplified for this test."
+  },
+  "stimulus_set": "foreign-born-chart-1970-2020",
+  "themes": [
+    "MIG",
+    "PCE"
+  ],
+  "topics": [
+    "9.5"
+  ],
+  "type": "mcq",
+  "unit": 9
+}
