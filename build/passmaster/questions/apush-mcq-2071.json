@@ -1,0 +1,86 @@
+{
+ "id": "apush-mcq-2071",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.3"
+ ],
+ "lesson": "apush-u7-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "A",
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "WXT",
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "The Sinking of the Maine"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 19",
+    "section": "The Spanish-American War"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Unit 7: The Early 20th Century (1890-1945)"
+   }
+  ]
+ },
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Detroit Photographic Co. photochrom, copyright 1900, Library of Congress cph.3g03933; public domain.",
+  "text": "The photograph is a photochrom print, copyrighted 1900 by the Detroit Photographic Co., titled \"Restos del U.S.S. Maine, Habana.\" It shows the wrecked battleship USS Maine sitting low in the water of Havana harbor, its hull twisted and broken with one tall mast still standing. Small boats float nearby, and the Havana waterfront stands across the harbor behind it."
+ },
+ "stimulus_set": "maine-wreck-1900",
+ "source": "original; stimulus is a public-domain 1900 photochrom of the wreck of the USS Maine",
+ "stem": "A historian who wants to use this photograph to argue that the press blamed Spain unfairly would need to pair it with evidence that",
+ "options": [
+  {
+   "key": "A",
+   "text": "The cause of the explosion was never conclusively established"
+  },
+  {
+   "key": "B",
+   "text": "The wreck was photographed in color",
+   "misconception": "The photochrom coloring is a printing technique; it says nothing about who caused the explosion."
+  },
+  {
+   "key": "C",
+   "text": "The Maine was the navy's newest and most modern battleship",
+   "misconception": "The Maine's age is beside the point; the question is what caused it to blow up."
+  },
+  {
+   "key": "D",
+   "text": "Spain apologized for the explosion",
+   "misconception": "Spain never apologized, and an apology would support the blame, not undermine it."
+  }
+ ],
+ "rationales": {
+  "A": "Background from the books: the navy investigation failed to explain the explosion conclusively, so blame rested on accusation, not proof.",
+  "B": "Color is a printing choice. It tells you how the picture was sold, not what sank the ship.",
+  "C": "Whether the Maine was new or old does not show who, if anyone, blew it up.",
+  "D": "Spain never apologized. An apology would have backed the press, not shown the blame was unfair.",
+  "general": "1. See what the photo shows. A wrecked ship in a harbor. It shows the damage, not the cause.\n2. Ask what blame needs. Blaming Spain needs proof that Spain did it.\n3. Check the record. The books say the cause was never settled, so the blame ran ahead of the proof.\nRemember: a photograph proves what it shows and nothing more, so pair it with evidence for anything it cannot show."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2071",
+   "file": "u7/maine-wreck-1900.jpg",
+   "caption": "The wreck of the USS Maine in Havana harbor, Detroit Photographic Co. photochrom, copyright 1900.",
+   "alt": "A color photochrom shows the wrecked battleship USS Maine sitting low in the water of Havana harbor, its hull twisted and broken with one tall mast still standing, the Havana waterfront behind it.",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Detroit_Photographic_Company_(0992).jpg",
+   "license": "Public domain (published 1900, pre-1930)"
+  }
+ ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "apush-mcq-2352",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.12"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 2,
+  "skills": [
+    "1.A"
+  ],
+  "themes": [
+    "WXT",
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.12 World War II: Mobilization"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "New Deal and WWII (1934-1945)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus": {
+    "kind": "table",
+    "text": "Unemployment rate in the United States, 1940-1945 (percent of the civilian labor force). The table shows the share of the civilian labor force without work in each year.\n\n| 1940 | 14.6% |\n| 1941 | 9.9% |\n| 1942 | 4.7% |\n| 1943 | 1.9% |\n| 1944 | 1.2% |\n| 1945 | 1.9% |",
+    "source_note": "Annual averages from Historical Statistics of the United States, Colonial Times to 1970 (U.S. Census Bureau)."
+  },
+  "stimulus_set": "war-economy-1940-1945",
+  "source": "original; stimulus table from Historical Statistics of the United States",
+  "stem": "In which year shown was unemployment lowest?",
+  "options": [
+    {
+      "key": "A",
+      "text": "1940",
+      "misconception": "Unemployment in 1940 was 14.6 percent, the highest year shown."
+    },
+    {
+      "key": "B",
+      "text": "1942",
+      "misconception": "Unemployment in 1942 was 4.7 percent, above the lowest year."
+    },
+    {
+      "key": "C",
+      "text": "1944"
+    },
+    {
+      "key": "D",
+      "text": "1945",
+      "misconception": "Unemployment in 1945 was 1.9 percent, above the 1944 low."
+    }
+  ],
+  "answerKey": "C",
+  "rationales": {
+    "A": "The table gives 14.6 percent for 1940, the highest figure in the table.",
+    "B": "The table gives 4.7 percent for 1942, well above the lowest year.",
+    "C": "The table gives 1.2 percent for 1944, the smallest figure in the table.",
+    "D": "The table gives 1.9 percent for 1945, above the 1944 figure of 1.2 percent.",
+    "general": "1. Read down the table and compare the six figures.\n2. The figures fall each year from 1940 through 1944.\n3. The smallest figure is 1.2 percent, in the 1944 row.\n4. The rate rose slightly in 1945, to 1.9 percent, so 1944 stays the lowest year in the table.\nRemember: to find a low point, compare every value, including the last one."
+  }
+}

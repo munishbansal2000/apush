@@ -1,0 +1,75 @@
+{
+ "id": "apush-mcq-2115",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.4"
+ ],
+ "lesson": "apush-u7-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "D",
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.4 The Progressives — Taft, Roosevelt, and the Election of 1912"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 20",
+    "section": "The Election of 1912"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "The Progressive Era and World War I (1900-1920)"
+   }
+  ]
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Table of 1912 election results; figures from 5 Steps to a 5 2024, Chapter 20, and Barron's Premium 2027, Chapter 9 (rounded).",
+  "text": "| Candidate | Party | Popular vote | Electoral votes |\n| Woodrow Wilson | Democratic | 42% | 435 |\n| Theodore Roosevelt | Progressive ('Bull Moose') | 27% | 88 |\n| William Howard Taft | Republican | 23% | 8 |\n| Eugene V. Debs | Socialist | 6% | 0 |\n\nPercentages rounded. Source: 5 Steps to a 5 2024, Chapter 20, and Barron's Premium 2027, Chapter 9."
+ },
+ "stimulus_set": "election-1912",
+ "source": "original; stimulus paraphrased from 5 Steps to a 5 2024, Chapter 20, and Barron's Premium 2027, Chapter 9",
+ "stem": "According to the table, Wilson won the presidency even though",
+ "options": [
+  {
+   "key": "A",
+   "text": "he lost the electoral vote to Roosevelt",
+   "misconception": "Wilson won 435 electoral votes, far more than any other candidate."
+  },
+  {
+   "key": "B",
+   "text": "he finished second in the popular vote behind Roosevelt",
+   "misconception": "Wilson led the popular vote with 42 percent; Roosevelt was second with 27 percent."
+  },
+  {
+   "key": "C",
+   "text": "Taft won the most electoral votes",
+   "misconception": "Taft won only 8 electoral votes, the fewest of the three major candidates."
+  },
+  {
+   "key": "D",
+   "text": "he received less than half of the popular vote"
+  }
+ ],
+ "rationales": {
+  "A": "Wilson's 435 electoral votes were a landslide. He did not lose the electoral vote.",
+  "B": "Wilson led the popular vote at 42 percent. Roosevelt was second at 27 percent.",
+  "C": "Taft won 8 electoral votes, the fewest of the three major candidates. He was last, not first.",
+  "D": "Wilson's 42 percent was the largest share, but it was less than half. He won because the Republican vote split between Roosevelt and Taft, giving him an electoral landslide on a plurality.",
+  "general": "1. Read Wilson's row. Forty-two percent of the popular vote and 435 electoral votes.\n2. Compare the two numbers. A plurality of the popular vote became an electoral landslide.\n3. Name the gap. Less than half the people voted for him, yet he won the presidency.\nRemember: plurality and majority are different things, so read the percent before deciding how big a win was."
+ }
+}

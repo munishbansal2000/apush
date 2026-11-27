@@ -1,0 +1,88 @@
+{
+  "id": "apush-mcq-2420",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.15"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "1.B",
+    "3.B"
+  ],
+  "themes": [
+    "WOR",
+    "GEO"
+  ],
+  "reasoning": "comparison",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.2 Imperialism: Debates"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 19",
+        "section": "Rise of American Imperialism (1890-1913)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "Progressive Era and WWI (1900-1920)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus_set": "imperialism-good-neighbor",
+  "stimulus": {
+    "kind": "image",
+    "text": "The cartoon \"School Begins,\" by Louis Dalrymple, appeared in Puck magazine on January 25, 1899. It shows Uncle Sam as a schoolteacher with a pointer, standing before four unhappy children labeled Philippines, Hawaii, Porto Rico, and Cuba. White children read books labeled with state names at desks on the right, while a Black child washes windows at the back and an American Indian child reads alone in the background. The blackboard reads, in the cartoonist's own words: \"The U.S. must govern its new territories with or without their consent until they can govern themselves.\"\n\nContext: In 1904 President Theodore Roosevelt added a corollary to the Monroe Doctrine, claiming a United States right to intervene in Latin American nations. In 1933 President Franklin Roosevelt announced the Good Neighbor Policy, pledging the United States would be a good neighbor rather than a policeman, and at the Montevideo conference that year the United States signed a convention renouncing armed intervention.",
+    "source_note": "Description of Louis Dalrymple, \"School Begins,\" Puck magazine, January 25, 1899 (public domain; Library of Congress cph.3b48925), viewed before writing; the blackboard line is the cartoonist's own wording, not a quotation from a speech. Context drawn from Barron's Premium 2027, Chapter 9, Topics 7.2 and 7.11."
+  },
+  "source": "original; stimulus drawn from book-grounded paraphrases, tables, and photographs (see source_note)",
+  "stem": "What point does the cartoon make about the United States after 1898?",
+  "options": [
+    {
+      "key": "A",
+      "text": "The United States had closed its schools to new students",
+      "misconception": "The cartoon shows new students arriving, not schools closing."
+    },
+    {
+      "key": "B",
+      "text": "The United States had given up all of its overseas lands",
+      "misconception": "The cartoon shows the United States taking up new territories, not giving them up."
+    },
+    {
+      "key": "C",
+      "text": "The United States had ended immigration from Asia entirely",
+      "misconception": "The cartoon is about governing new territories, not about immigration from Asia."
+    },
+    {
+      "key": "D",
+      "text": "The United States had taken up ruling new peoples overseas"
+    }
+  ],
+  "answerKey": "D",
+  "rationales": {
+    "A": "The cartoon shows a classroom filling with new pupils, so schools are opening, not closing.",
+    "B": "The children labeled Philippines, Hawaii, Porto Rico, and Cuba are new American possessions.",
+    "C": "Background from the books: the cartoon concerns the lands won in 1898, not Asian immigration.",
+    "D": "Uncle Sam the teacher and the blackboard line show the United States governing its new territories until they can govern themselves.",
+    "general": "1. Name what you see: Uncle Sam as a teacher before children labeled Philippines, Hawaii, Porto Rico, and Cuba.\n2. Read the blackboard: the United States must govern its new territories until they can govern themselves.\n3. The children look unhappy, and a Black child washes windows while an Indian child reads alone.\n4. The cartoon shows a republic taking up the job of ruling other peoples.\nRemember: in a cartoon, labels and the blackboard carry the argument."
+  },
+  "figures": [
+    {
+      "id": "fig-apush-mcq-2420",
+      "file": "u7/school-begins-1899.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:School_Begins_1-25-1899.JPG",
+      "license": "Public domain in the US (published 1899, pre-1930); LOC cph.3b48925",
+      "caption": "Louis Dalrymple, \"School Begins,\" Puck magazine, January 25, 1899.",
+      "alt": "Uncle Sam as a schoolteacher with a pointer before four children labeled Philippines, Hawaii, Porto Rico, and Cuba, with a Black child washing windows and an American Indian child reading alone in the background."
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+ "id": "apush-dbq-0075",
+ "type": "dbq",
+ "unit": 7,
+ "topics": [
+  "7.8"
+ ],
+ "lesson": "apush-u7-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "SOC",
+  "NAT"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.8 1920s: Cultural and Political Controversies"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 22",
+    "section": "Beginning of Modern America: The 1920s"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Jazz Age and Great Depression (1920-1933)"
+   }
+  ],
+  "primary_sources": [
+   "Rollin Kirby, 'Classroom in Proposed Bryan University of Tennessee,' 1925",
+   "Eighteenth Amendment, Section 1 (1919)",
+   "Robert H. Clancy, Congressional Record, 68th Congress, 1st Session, 1924",
+   "Langston Hughes, 'I, Too,' Survey Graphic, March 1925",
+   "National Photo Company photograph, 'Formation of K.K.K. parade,' August 8, 1925",
+   "Herbert Hoover, address accepting the Republican presidential nomination, August 11, 1928"
+  ]
+ },
+ "source": "original; documents drawn from public-domain sources and book-grounded data",
+ "stimulus_set": null,
+ "prompt": "Evaluate the extent to which cultural and political controversies in the United States in the 1920s reflected a conflict between traditional values and modern values.",
+ "documents": [
+  {
+   "n": 1,
+   "kind": "image",
+   "date": "1925",
+   "title": "The classroom in Bryan's university",
+   "source": "Rollin Kirby, 'Classroom in Proposed Bryan University of Tennessee,' 1925. Public domain (published 1925, pre-1930); via Wikimedia Commons.",
+   "figure": "u7/5s24-ch22-mcq-01.jpg",
+   "text": "The cartoon shows a classroom. A teacher, tied with ropes and gagged, points with a stick at a wall chart titled “MAP OF THE EARTH.” The chart shows a flat strip of land marked “AMERICA,” “BRITISH ISLES,” “EUROPE,” and “ASIA,” with the space below it labeled “VOID.” A framed portrait labeled “PREXY” hangs on the wall, and a second chart labeled “HELL” shows flames. Two students watch from desks below. The caption reads: “CLASSROOM IN PROPOSED BRYAN UNIVERSITY OF TENNESSEE.” — Rollin Kirby, 1925.",
+   "sourcing": "A newspaper cartoonist mocking William Jennings Bryan after the Scopes trial. A critic's view of fundamentalism, not a record of a real classroom."
+  },
+  {
+   "n": 2,
+   "kind": "text",
+   "date": "1920",
+   "title": "The Eighteenth Amendment takes effect",
+   "source": "Eighteenth Amendment, Section 1, ratified 1919; in effect January 17, 1920. Verbatim excerpt, public domain (U.S. Constitution).",
+   "text": "“After one year from the ratification of this article the manufacture, sale, or transportation of intoxicating liquors within, the importation thereof into, or the exportation thereof from the United States and all territory subject to the jurisdiction thereof for beverage purposes is hereby prohibited.” — Eighteenth Amendment, Section 1, ratified 1919; in effect January 17, 1920.",
+   "sourcing": "The Constitution itself, stating the ban in its own words. A law's text shows what it banned, not whether people obeyed it."
+  },
+  {
+   "n": 3,
+   "kind": "text",
+   "date": "1924",
+   "title": "Clancy against the quota bill",
+   "source": "Paraphrase of Robert H. Clancy, Congressional Record, 68th Congress, 1st Session, 1924 (public domain, U.S. government).",
+   "text": "Paraphrase of Representative Robert H. Clancy, speaking in the House of Representatives in 1924 against the immigration bill: Clancy said that newcomers had always faced bitter complaints, from the Irish and Germans of the 1840s to the Italians, Poles, Jews, Greeks, and Russians of his own day. He called the bill's use of the 1890 census “racial discrimination at its worst,” a deliberate attempt to aim a blow at the peoples of eastern and southern Europe.",
+   "sourcing": "A congressman from Detroit speaking against the bill in the House. An opponent's speech, so it stresses the bill's unfairness rather than its supporters' reasons."
+  },
+  {
+   "n": 4,
+   "kind": "text",
+   "date": "1925",
+   "title": "Hughes claims America",
+   "source": "Langston Hughes, 'I, Too,' Survey Graphic, March 1925. Verbatim excerpt, abridged; public domain (published 1925).",
+   "text": "“I, too, sing America. / I am the darker brother. / They send me to eat in the kitchen / When company comes, / But I laugh, / And eat well, / And grow strong. / [. . .] / I, too, am America.” — Langston Hughes, “I, Too,” first published in Survey Graphic, March 1925. Abridged; the omitted lines describe the speaker's hope of being at the table tomorrow.",
+   "sourcing": "A Black poet of the Harlem Renaissance, writing for a national magazine. A claim to belonging, made in art rather than in a speech or a law."
+  },
+  {
+   "n": 5,
+   "kind": "table",
+   "date": "1924",
+   "title": "The quota laws",
+   "source": "Table built from Barron's Premium 2027, Chapter 9, Topic 7.8, and 5 Steps to a 5 2024, Chapter 22.",
+   "text": "| Law | Year | Quota rule |\n| Emergency Quota Act | 1921 | 3 percent of each nationality living in the United States in 1910 |\n| National Origins Act | 1924 | 2 percent of each nationality living in the United States in 1890; total cap of 150,000; immigration from Asia barred |\nNeither act limited immigration from countries in the Americas.",
+   "sourcing": "A table built from two textbooks, counting quotas rather than arguing a case. Numbers that show how the law sorted newcomers by national origin."
+  },
+  {
+   "n": 6,
+   "kind": "image",
+   "date": "1925",
+   "title": "The Klan marches on Washington",
+   "source": "National Photo Company photograph, 'Formation of K.K.K. parade,' August 8, 1925, Washington, D.C. Public domain; Library of Congress LCCN2016840302.",
+   "figure": "u7/kkk-parade-washington-1925.jpg",
+   "text": "The photograph shows a large crowd of men in white robes and pointed hoods marching in formation down a tree-lined street, with the dome of the United States Capitol visible in the distance and a banner reading 'BUCKS COUNTY PENNSYLVANIA.' Two sailors in white caps stand in the foreground.",
+   "sourcing": "A news photograph of the Klan's August 1925 march on Washington. A picture of the movement's size and openness, taken by a commercial photo agency, not by the Klan itself."
+  },
+  {
+   "n": 7,
+   "kind": "text",
+   "date": "1928",
+   "title": "Hoover promises an end to poverty",
+   "source": "Herbert Hoover, address accepting the Republican presidential nomination, Stanford, California, August 11, 1928. Verbatim excerpt, abridged; public domain.",
+   "text": "“We in America today are nearer to the final triumph over poverty than ever before in the history of any land. The poorhouse is vanishing from among us. We have not yet reached the goal, but, given a chance to go forward with the policies of the last 8 years, we shall soon with the help of God be in sight of the day when poverty will be banished from this Nation.” — Herbert Hoover, speech accepting the Republican presidential nomination, August 11, 1928. Abridged.",
+   "sourcing": "A presidential candidate accepting his party's nomination in a boom year. A campaign promise, so it shows the confidence of 1928 rather than a measured report."
+  }
+ ],
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent to which the controversies of the 1920s reflected a conflict between traditional and modern values, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim about the extent of the conflict does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as the wartime growth of federal power and the Red Scare, the Great Migration and urbanization, or the Progressive era's reform impulse giving way to a celebration of business.",
+   "notEarned": "A sentence of background with no link to the argument, or background from a later century, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence from documents (first point): earns the point for describing specific and relevant evidence from at least three documents to support an argument about traditional and modern values in the 1920s.",
+   "notEarned": "Naming documents without describing their content does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence from documents (second point): earns the point for using the content of at least six documents to support an argument about traditional and modern values in the 1920s.",
+   "notEarned": "Using fewer than six documents, or describing them without tying them to the argument, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence beyond the documents: earns the point for describing a specific and relevant example beyond the documents, such as the Scopes trial verdict and Bryan's death, the Sacco and Vanzetti executions of 1927, the flapper and the Nineteenth Amendment, or the 1928 election's urban-rural split.",
+   "notEarned": "A vague reference to the 1920s with no specific example does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "3.B",
+   "criterion": "Sourcing: earns the point for explaining the relevance of a document's author, purpose, audience, or historical situation, such as Kirby mocking Bryan as a critic, Clancy speaking as an opponent of the bill, or Hoover promising prosperity as a candidate.",
+   "notEarned": "Naming an author without explaining why the authorship matters does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Complexity: earns the point for demonstrating a complex understanding, such as qualifying the conflict by group or place, showing that some controversies mixed traditional and modern impulses, or weighing how far the traditional side actually won.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ],
+ "modelOutline": "Thesis: The controversies of the 1920s were, to a large extent, a fight between traditional and modern values, but the line between the two sides was never clean: the traditional side used modern means, and the modern side kept older American hopes alive.\nContext: The United States left World War I with a Red Scare, a Great Migration to northern cities, and a Progressive reform impulse giving way to a celebration of business, so the decade's new mass culture arrived amid fear of change.\nEvidence: Documents 1-2 and 6 show the traditional defense: the Kirby cartoon mocks a school where evolution is gagged, the Eighteenth Amendment bans the liquor trade, and the Klan marches openly on Washington in 1925.\nEvidence: Documents 3-5 show the modern challenge and its limits: Clancy denounces the quota bill as discrimination, Hughes claims 'I, too, am America,' and the quota table shows the law sorting newcomers by national origin.\nBeyond the documents: The Scopes trial ended with a guilty verdict and Bryan's death days later, Sacco and Vanzetti were executed in 1927, flappers claimed new freedoms after winning the vote in 1920, and Smith carried the twelve largest cities in 1928 while Hoover swept the countryside.\nSourcing: Kirby mocks Bryan as a critic, Clancy speaks as the bill's opponent, and Hoover promises prosperity as a candidate, so each document's slant is part of its evidence.\nComplexity: The conflict was real but mixed: Prohibition was a Progressive reform as well as a traditional crusade, the Klan used modern marketing to spread an old hatred, and Hughes used a traditional American claim, belonging, to make a modern demand.",
+ "totalPoints": 7,
+ "figures": [
+  {
+   "id": "fig-apush-dbq-0075-a",
+   "file": "u7/5s24-ch22-mcq-01.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Rollin_Kirby_Scopes_Trial_Cartoon.jpg",
+   "license": "Public domain (Rollin Kirby cartoon, 1925; published pre-1930)",
+   "caption": "Rollin Kirby's 1925 cartoon imagines a classroom in William Jennings Bryan's proposed university in Tennessee.",
+   "alt": "A bound and gagged teacher points at a flat-earth wall chart while a portrait labeled PREXY and a chart labeled HELL hang behind him."
+  },
+  {
+   "id": "fig-apush-dbq-0075-b",
+   "file": "u7/kkk-parade-washington-1925.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Formation_of_K.K.K._parade,_8-8-25_LCCN2016840302.jpg",
+   "license": "Public domain (National Photo Company photograph, August 8, 1925; Library of Congress LCCN2016840302)",
+   "caption": "Robed Ku Klux Klan members march in Washington, D.C., on August 8, 1925, with the Capitol dome behind them.",
+   "alt": "A large crowd of men in white robes and pointed hoods marching in formation down a tree-lined street, with the dome of the United States Capitol visible in the distance."
+  }
+ ]
+}

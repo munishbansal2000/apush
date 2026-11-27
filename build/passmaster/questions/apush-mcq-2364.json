@@ -1,0 +1,76 @@
+{
+  "id": "apush-mcq-2364",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.13"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "1.B"
+  ],
+  "themes": [
+    "WOR"
+  ],
+  "reasoning": "comparison",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.13 World War II: Military"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "New Deal and WWII (1934-1945)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus": {
+    "kind": "table",
+    "text": "Aircraft carriers lost at two Pacific naval battles in 1942.\n\n| Battle | Date | Japanese carriers lost | American carriers lost |\n| Coral Sea | May 1942 | 1 | 1 |\n| Midway | June 1942 | 4 | 1 |",
+    "source_note": "Figures from 5 Steps Chapter 24 (Midway: Japan lost four aircraft carriers and over 200 planes; the United States lost one carrier) and Barron's Chapter 9 (Coral Sea: the U.S. Navy stopped a Japanese fleet headed to New Guinea)."
+  },
+  "stimulus_set": "midway-carriers-1942",
+  "source": "original; stimulus drawn from book-grounded figures and paraphrases (see source_note)",
+  "stem": "The Battle of the Coral Sea, fought in May 1942, was unusual for a naval battle. What made it different?",
+  "options": [
+    {
+      "key": "A",
+      "text": "It was fought entirely by submarines",
+      "misconception": "The battle was fought by carrier aircraft, not by submarines."
+    },
+    {
+      "key": "B",
+      "text": "No American ships took part in the fighting",
+      "misconception": "American carriers took part; the Lexington was lost in the battle."
+    },
+    {
+      "key": "C",
+      "text": "It was the first battle in which Japan ever lost a warship at sea",
+      "misconception": "Japan had lost ships before Coral Sea, including in earlier Pacific fighting."
+    },
+    {
+      "key": "D",
+      "text": "The opposing ships never saw each other; the fighting was done by carrier aircraft"
+    }
+  ],
+  "answerKey": "D",
+  "rationales": {
+    "A": "Carrier aircraft did the fighting, not submarines.",
+    "B": "American carriers fought there, and the Lexington was lost.",
+    "C": "Japan had lost ships in earlier fighting; Coral Sea was new for another reason.",
+    "D": "The ships never saw each other; carrier aircraft did all the fighting.",
+    "general": "1. Background from the books: Coral Sea was the first major naval battle in which the ships never saw each other.\n2. All the fighting was carried out by aircraft flying from carriers.\n3. The battle stopped a Japanese fleet headed for New Guinea.\n4. It set the pattern for Midway a month later, where carriers again decided the battle.\nRemember: a first in warfare often names a new technology, so look for what the ships did not do."
+  }
+}

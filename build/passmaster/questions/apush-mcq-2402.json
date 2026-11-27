@@ -1,0 +1,77 @@
+{
+  "id": "apush-mcq-2402",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.14"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "2.B"
+  ],
+  "themes": [
+    "WOR",
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.14 Postwar Diplomacy"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "New Deal and WWII (1934-1945)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus": {
+    "kind": "table",
+    "text": "The Security Council as designed in the United Nations Charter, signed June 26, 1945.\n\n| Members | Who they were | Power |\n| 5 permanent members | United States, Soviet Union, Britain, France, China | Any one could veto a Council decision |\n| 6 rotating members | Elected by the General Assembly for two-year terms | Voted, but held no veto |",
+    "source_note": "Table drawn from the design of the United Nations Charter (San Francisco, June 1945): five permanent members with the veto and six elected members in the original Council. The elected membership grew to ten in 1965."
+  },
+  "stimulus_set": "un-security-council-1945",
+  "source": "original; stimulus drawn from book-grounded paraphrases, tables, and photographs (see source_note)",
+  "stem": "What did the veto power mean for the Security Council?",
+  "options": [
+    {
+      "key": "A",
+      "text": "The General Assembly could overrule any Council decision",
+      "misconception": "The General Assembly could discuss and recommend, but it could not overrule the Council."
+    },
+    {
+      "key": "B",
+      "text": "The Council could act only when all nations agreed",
+      "misconception": "Only the five permanent members held the veto; the rotating members did not."
+    },
+    {
+      "key": "C",
+      "text": "Any one permanent member could block a Council decision"
+    },
+    {
+      "key": "D",
+      "text": "The Council could veto the decisions of member nations",
+      "misconception": "The veto blocked the Council itself, not the decisions of individual nations."
+    }
+  ],
+  "answerKey": "C",
+  "rationales": {
+    "A": "Background from the books: the General Assembly could discuss and recommend, but it could not overrule the Council.",
+    "B": "Background from the books: only the five permanent members held the veto; the rotating members did not.",
+    "C": "The table says any one permanent member could veto a Council decision, so a single great power could stop the Council from acting.",
+    "D": "Background from the books: the veto blocked the Council itself, not the decisions of individual nations.",
+    "general": "1. The table gives the five permanent members the power to veto a Council decision.\n2. A veto means one member alone can block action, even if all the others agree.\n3. Background: the veto was meant to keep the great powers inside the United Nations, since none would join a body that could act against it.\n4. The cost was clear: the Council could be frozen whenever the great powers disagreed.\nRemember: a veto trades action for membership, since no great power joins a club that can rule against it."
+  }
+}

@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-2092",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.3"
+ ],
+ "lesson": "apush-u7-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "C",
+ "skills": [
+  "6.C"
+ ],
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "United States Victory in the Spanish-American War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 19",
+    "section": "The Spanish-American War"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Unit 7: The Early 20th Century (1890-1945)"
+   }
+  ],
+  "primary_sources": [
+   "John Hay, letter to Theodore Roosevelt, July 27, 1898"
+  ]
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Figures: battle deaths (385) and total deaths (2,446) per Barron's Premium 2027, Chapter 9, and 5 Steps to a 5 2024, Chapter 19; disease deaths (2,061) are the total minus the battle deaths.",
+  "text": "| Cause of death | American deaths in the Spanish-American War, 1898 |\n| Killed in battle | 385 |\n| Died of disease | 2,061 |\n| Total | 2,446 |\nSource: battle deaths (385) and total deaths (2,446) per Barron's Premium 2027, Chapter 9, and 5 Steps to a 5 2024, Chapter 19; disease deaths (2,061) are the total minus the battle deaths."
+ },
+ "stimulus_set": "two-wars-table",
+ "source": "original; stimulus is a data table drawn from the course books",
+ "stem": "Secretary of State John Hay called the Spanish-American War a \"splendid little war.\" The table best supports which response to that label?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The label is wrong because the war lasted three years, not four months",
+   "misconception": "The Spanish-American War lasted about four months; the three-year war was the Philippine-American War."
+  },
+  {
+   "key": "B",
+   "text": "The label is right because no Americans died",
+   "misconception": "The table shows 2,446 American deaths; the war was not bloodless."
+  },
+  {
+   "key": "C",
+   "text": "The label fits the fighting, which killed few, but hides the disease deaths"
+  },
+  {
+   "key": "D",
+   "text": "The label fits because the Philippines cost few lives",
+   "misconception": "The table covers the Spanish-American War only, and the Philippines war cost far more lives."
+  }
+ ],
+ "rationales": {
+  "A": "The war lasted about four months, not three years. The three-year war came after, in the Philippines.",
+  "B": "The table totals 2,446 American deaths. Calling the war bloodless ignores every one of them.",
+  "C": "Only 385 died in battle, so the fighting looked splendid, but disease killed 2,061 more, which the label hides.",
+  "D": "The table is the 1898 war only. The Philippines war that followed cost more than 4,000 American lives.",
+  "general": "1. Read Hay's label. Splendid and little: short, cheap, and glorious.\n2. Read the battle row. Only 385 Americans died in battle, so the fighting fits the label.\n3. Read the disease row. Disease killed 2,061 more, so the war as a whole does not fit it.\nRemember: a catchy label is a claim about the whole war, so test it against every row, not just the flattering one."
+ }
+}

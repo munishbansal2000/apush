@@ -1,0 +1,88 @@
+{
+ "id": "apush-mcq-2183",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.7"
+ ],
+ "lesson": "apush-u7-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "A",
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.7 1920s: Innovations in Communication and Technology"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 22",
+    "section": "Beginning of Modern America: The 1920s"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Jazz Age and Great Depression (1920-1933)"
+   }
+  ],
+  "primary_sources": [
+   "Photograph, Assembly line at the Ford Motor Company's Highland Park plant, 1913"
+  ]
+ },
+ "stimulus": {
+  "kind": "image",
+  "text": "The photograph shows a row of Model T chassis — frames with wheels, engines, and steering wheels, but no bodies — moving along a conveyor line inside a large factory hall at Ford's Highland Park plant in 1913. Overhead belts and wheels drive the line. No workers are visible in this view.",
+  "source_note": "Photograph, Assembly line at the Ford Motor Company's Highland Park plant, 1913, Library of Congress LCCN2011661021, public domain."
+ },
+ "stimulus_set": "ford-assembly-line",
+ "source": "original; stimulus image from the shared pool, Library of Congress photograph, 1913, public domain",
+ "stem": "The photograph best shows which new method of making goods?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Car chassis moving along a conveyor line"
+  },
+  {
+   "key": "B",
+   "text": "Craftsmen building each car by hand",
+   "misconception": "A factory line can look like handcraft, but the belt and identical chassis show machine-paced work."
+  },
+  {
+   "key": "C",
+   "text": "Cars assembled outdoors by their buyers",
+   "misconception": "The setting is a factory hall, not a buyer's yard."
+  },
+  {
+   "key": "D",
+   "text": "Workers forging car parts from raw iron",
+   "misconception": "Assembly and forging are different steps; the photo shows assembly."
+  }
+ ],
+ "rationales": {
+  "A": "The chassis sit in a row on a moving conveyor, each at the same stage of building. That is the moving assembly line: the car moves to the worker.",
+  "B": "The photo shows no craftsmen building whole cars by hand. The chassis move on a belt, and each worker would do one small task.",
+  "C": "Nothing in the photo shows buyers assembling cars outdoors. The chassis are inside a factory hall, on a line.",
+  "D": "The photo shows finished chassis on a line, not workers forging iron. Forging is a different step, done before assembly.",
+  "general": "1. Look at what the photo actually shows: a row of car chassis on a moving belt, all at the same stage.\n2. Ask what moves: the car moves past the workers, not the workers around the car.\n3. Name the method: that is the moving assembly line, new at Highland Park in 1913.\nRemember: when a photo shows identical products in a row, ask what moves and what stays still."
+ },
+ "figures": [
+  {
+   "file": "u7/ford-assembly-line-1913.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Assembly_line_at_the_Ford_Motor_Company%27s_Highland_Park_plant_LCCN2011661021.jpg",
+   "license": "Public domain (1913 photograph; Library of Congress LCCN2011661021)",
+   "caption": "Model T chassis move along the conveyor line at Ford's Highland Park plant, 1913.",
+   "alt": "A row of Model T car chassis with wheels and engines moving along a conveyor line inside a large factory hall.",
+   "id": "fig-apush-mcq-2183"
+  }
+ ]
+}

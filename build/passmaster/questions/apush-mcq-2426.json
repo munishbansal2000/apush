@@ -1,0 +1,88 @@
+{
+  "id": "apush-mcq-2426",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.15"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "1.B",
+    "3.B"
+  ],
+  "themes": [
+    "SOC",
+    "MIG"
+  ],
+  "reasoning": "comparison",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.12 World War II: Mobilization"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "New Deal and WWII (1934-1945)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus_set": "service-protest-women",
+  "stimulus": {
+    "kind": "text",
+    "text": "Passage 1 - \"True Sons of Freedom,\" a United States Army recruiting poster by Charles Gustrine, 1918. The poster shows Black American soldiers charging under the United States flag while German soldiers surrender, with a portrait of Abraham Lincoln above the words \"Liberty And Freedom Shall Not Perish.\" Black soldiers served in segregated units, most of them in labor and support roles.\n\nPassage 2 - protest and jobs in World War II, paraphrased: In 1941, after the labor leader A. Philip Randolph threatened a march on Washington, President Roosevelt issued Executive Order 8802, banning discrimination in defense industries and creating the Fair Employment Practices Committee. In 1942 the Black newspaper the Pittsburgh Courier called for a Double V, victory over fascism abroad and victory over racism at home. Black Americans moved north and west in large numbers during the Second Great Migration.\n\nPassage 3 - women at work: About 12 million women were in the labor force in 1940. By 1945 more than 19 million women held jobs, about 36 percent of the civilian workforce, after some 6 million women entered paid work during the war.",
+    "source_note": "Description of Charles Gustrine, \"True Sons of Freedom\" poster, 1918 (public domain; Library of Congress LCCN93503146), viewed before writing. Passages 2 and 3 are original secondary text drawn from Barron's Premium 2027, Chapter 9, Topics 7.6 and 7.12, and 5 Steps to a 5, 2024, Chapters 21 and 24; women's workforce figures follow the National Women's History Museum account of women in World War II."
+  },
+  "source": "original; stimulus drawn from book-grounded paraphrases, tables, and photographs (see source_note)",
+  "stem": "What does the 1918 poster show about Black service in World War I?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Black soldiers were asked to fight for liberty they did not fully share"
+    },
+    {
+      "key": "B",
+      "text": "Black soldiers were welcomed into fully integrated combat units alongside white troops",
+      "misconception": "Black soldiers served in segregated units, mostly in labor and support roles."
+    },
+    {
+      "key": "C",
+      "text": "Black soldiers were barred from serving in the United States Army entirely",
+      "misconception": "Black soldiers did serve, in segregated units, and the poster recruits them."
+    },
+    {
+      "key": "D",
+      "text": "Black soldiers were promised full voting rights as soon as the war ended",
+      "misconception": "The poster promises liberty in general, not voting rights after the war."
+    }
+  ],
+  "answerKey": "A",
+  "rationales": {
+    "A": "The poster holds up Lincoln and liberty while the passage says Black soldiers served in segregated units.",
+    "B": "Background from the books: Black soldiers served in segregated units, most of them in labor and support roles.",
+    "C": "Background from the books: Black soldiers served in World War I, and the poster itself recruits them.",
+    "D": "Background from the books: the poster promises liberty, not a voting-rights deadline.",
+    "general": "1. Read the poster: Black soldiers charge under the flag, with Lincoln above them.\n2. Read the words: \"Liberty And Freedom Shall Not Perish.\"\n3. Then read the passage: Black soldiers served in segregated units, mostly in labor and support roles.\n4. The poster asks men to fight for a liberty they did not yet fully share at home.\nRemember: a recruiting poster can promise more than the army delivers."
+  },
+  "figures": [
+    {
+      "id": "fig-apush-mcq-2426",
+      "file": "u7/true-sons-of-freedom-1918.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:True_sons_of_freedom_LCCN93503146.jpg",
+      "license": "Public domain (published 1918, pre-1930); Library of Congress LCCN93503146",
+      "caption": "Charles Gustrine, \"True Sons of Freedom\" poster, 1918.",
+      "alt": "Black American soldiers charging under the United States flag while German soldiers surrender, with a portrait of Abraham Lincoln above the words Liberty And Freedom Shall Not Perish."
+    }
+  ]
+}

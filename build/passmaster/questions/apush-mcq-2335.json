@@ -1,0 +1,89 @@
+{
+  "id": "apush-mcq-2335",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.12"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "2.B"
+  ],
+  "themes": [
+    "SOC",
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.12 World War II: Mobilization"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "New Deal and WWII (1934-1945)"
+      }
+    ],
+    "primary_sources": [
+      "Executive Order 9066, February 19, 1942"
+    ]
+  },
+  "stimulus": {
+    "kind": "image",
+    "text": "This photograph, taken in Hayward, California, on May 8, 1942, shows a Japanese American family waiting on a sidewalk with their baggage piled beside them. A woman in a hat holds a bundle, a small child sits on a suitcase with a paper tag tied to the child's coat, and a boy in a hat stands nearby. They are waiting for a bus to take them from their home to a relocation center.",
+    "source_note": "Dorothea Lange, War Relocation Authority photograph, Hayward, California, May 8, 1942 (National Archives 537523). Public domain, U.S. federal work. The family was awaiting evacuation under Executive Order 9066. Viewed before use."
+  },
+  "stimulus_set": "internment-9066-1942",
+  "source": "original; stimulus from the shared image pool (Dorothea Lange photograph, 1942)",
+  "stem": "The photograph most directly illustrates which of the following wartime policies?",
+  "options": [
+    {
+      "key": "A",
+      "text": "The forced removal of Japanese Americans from the West Coast"
+    },
+    {
+      "key": "B",
+      "text": "The recruitment of Japanese Americans for factory work",
+      "misconception": "The family is leaving home with baggage, not arriving at a factory."
+    },
+    {
+      "key": "C",
+      "text": "The voluntary migration of Japanese Americans to the East",
+      "misconception": "The removal was ordered by the government, not chosen by the family."
+    },
+    {
+      "key": "D",
+      "text": "The return of Japanese Americans from camps after the war",
+      "misconception": "The photograph is dated May 1942, at the start of the removal."
+    }
+  ],
+  "answerKey": "A",
+  "rationales": {
+    "A": "The family waits with its baggage for a bus to a relocation center, the first step of forced removal.",
+    "B": "The scene is a departure from home, not a hiring line at a plant.",
+    "C": "The family was ordered to leave under Executive Order 9066; the move was not voluntary.",
+    "D": "May 1942 is the start of the removal, years before anyone returned from the camps.",
+    "general": "1. The family stands on a sidewalk with all its baggage piled beside it.\n2. The child wears a paper tag, and the family waits for a bus.\n3. Background from the books: Executive Order 9066, signed in February 1942, authorized removing Japanese Americans from the West Coast.\n4. The photograph catches that order in action, at the moment a family leaves home.\nRemember: a photograph of a departure with tagged baggage is evidence of removal, so ask who ordered it."
+  },
+  "figures": [
+    {
+      "id": "fig-apush-mcq-2335",
+      "file": "u7/5s24-ch24-mcq-01.jpg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Hayward%2C_California._With_baggage_piled_on_sidewalk%2C_evacuees_of_Japanese_ancestry_await_evacuation_._._._-_NARA_-_537523.jpg",
+      "license": "Public domain",
+      "caption": "Japanese American family awaiting evacuation, Hayward, California, May 1942",
+      "alt": "A Japanese American mother holding a bundle stands beside a small child sitting on a suitcase and a boy in a hat, with piles of baggage on a sidewalk"
+    }
+  ]
+}

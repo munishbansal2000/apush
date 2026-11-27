@@ -1,0 +1,93 @@
+{
+ "id": "apush-saq-0222",
+ "type": "saq",
+ "unit": 7,
+ "topics": [
+  "7.10"
+ ],
+ "lesson": "apush-u7-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "1.B",
+  "2.B"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.10 The New Deal"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 23",
+    "section": "Great Depression and the New Deal (1929-1939)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "New Deal and WWII (1934-1945)"
+   }
+  ],
+  "primary_sources": [
+   "Huey P. Long, Share Our Wealth radio address, February 1934 (paraphrased)"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "Paraphrase of Senator Huey Long, Share Our Wealth radio address, February 1934: Long charged that a tiny elite hoarded the nation's wealth while millions suffered in the Depression. He proposed capping personal fortunes, guaranteeing every family a homestead and a minimum yearly income, shortening the workweek, and providing free college and old-age pensions, all paid for by steep taxes on the rich.",
+  "source_note": "Paraphrase of Senator Huey Long, Share Our Wealth radio address, February 1934. Post-1929 source, paraphrased, not quoted."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus paraphrased from Senator Huey Long, Share Our Wealth radio address, February 1934",
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify ONE proposal in Long's Share Our Wealth plan.",
+   "modelAnswer": "Long proposed capping personal fortunes so that no one could hoard vast wealth. The money taken from large fortunes would fund guarantees for ordinary families.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names a specific proposal, such as capping fortunes, guaranteeing a homestead and minimum income, shortening the workweek, or free college and old-age pensions.",
+     "notEarned": "A vague statement that Long wanted to help the poor, with no specific proposal named."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain why Long's movement threatened Roosevelt's position.",
+   "modelAnswer": "Long built a national following of millions through Share Our Wealth clubs, and he talked of running against Roosevelt in 1936. His following sat to Roosevelt's left, so it could pull Democratic voters away from the president.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains the threat, such as a mass following, Share Our Wealth clubs, or a possible 1936 challenge from the left.",
+     "notEarned": "A vague statement that Long disagreed with Roosevelt, with no reason the disagreement threatened him."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain ONE effect of pressure from Long and other critics on the left on the New Deal.",
+   "modelAnswer": "Pressure from the left pushed Roosevelt toward the Second New Deal of 1935. The Social Security Act answered the demand for old-age pensions by putting government pensions into law.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains a specific effect, such as the Second New Deal, the Social Security Act, or the Wagner Act's support for labor.",
+     "notEarned": "A vague statement that Roosevelt changed his policies, with no specific effect named."
+    }
+   ]
+  }
+ ]
+}

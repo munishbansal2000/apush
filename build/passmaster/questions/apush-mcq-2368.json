@@ -1,0 +1,76 @@
+{
+  "id": "apush-mcq-2368",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.13"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "2.A"
+  ],
+  "themes": [
+    "WOR"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.13 World War II: Military"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "New Deal and WWII (1934-1945)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus": {
+    "kind": "text",
+    "text": "Paraphrase: On June 6, 1944, Allied forces under General Dwight D. Eisenhower carried out the D-Day landings on the beaches of Normandy, France, the largest amphibious landing of its time. Casualties were heavy, but the landing succeeded, and by the end of July more than two million Allied troops were crowded into the beachhead. After a breakout in late July, Allied forces swept across France, and Paris was liberated in August 1944. At the same time, Soviet armies drove German forces back toward Germany from the east.",
+    "source_note": "Original secondary summary drawn from 5 Steps Chapter 24 (D-Day; Paris liberated in August; over 2 million troops by end of July) and Barron's Chapter 9 ('D-Day and the Allied Assault on Europe')."
+  },
+  "stimulus_set": "d-day-normandy-1944",
+  "source": "original; stimulus drawn from book-grounded figures and paraphrases (see source_note)",
+  "stem": "What did the D-Day landings open that Stalin had long demanded?",
+  "options": [
+    {
+      "key": "A",
+      "text": "A supply route to Japan through the Arctic",
+      "misconception": "Supplies to the Soviet Union came by other routes; D-Day opened a front in France."
+    },
+    {
+      "key": "B",
+      "text": "A new front in North Africa",
+      "misconception": "The North African front had opened in 1942, two years earlier."
+    },
+    {
+      "key": "C",
+      "text": "An invasion of Italy from the sea",
+      "misconception": "The Allies had already landed in Italy in 1943."
+    },
+    {
+      "key": "D",
+      "text": "A second front against Germany in Western Europe"
+    }
+  ],
+  "answerKey": "D",
+  "rationales": {
+    "A": "D-Day opened a front in France, not a supply route to Japan.",
+    "B": "The North African front opened in 1942, two years before D-Day.",
+    "C": "The Allies landed in Italy in 1943, a year before D-Day.",
+    "D": "The landings opened the second front in Western Europe that Stalin had demanded.",
+    "general": "1. The passage describes the D-Day landings in Normandy in June 1944.\n2. Background from the books: Stalin had pressed the Allies for years to open a second front in Western Europe.\n3. Soviet troops had carried most of the fighting against Germany until then.\n4. The landings forced Germany to fight in the west while Soviet armies pressed from the east.\nRemember: a second front splits the enemy, so ask who was already carrying the war."
+  }
+}

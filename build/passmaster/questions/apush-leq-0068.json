@@ -1,0 +1,87 @@
+{
+ "id": "apush-leq-0068",
+ "type": "leq",
+ "unit": 7,
+ "topics": [
+  "7.3"
+ ],
+ "lesson": "apush-u7-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.3 The Spanish-American War and Its Aftermath"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 19",
+    "section": "The Spanish-American War"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Unit 7: The Early 20th Century (1890-1945)"
+   }
+  ]
+ },
+ "source": "original; prompt written for this question",
+ "stimulus_set": null,
+ "stimulus": {
+  "kind": "none",
+  "source_note": "No stimulus; LEQ prompt only."
+ },
+ "prompt": "Evaluate the extent to which economic interests, rather than humanitarian concern for the Cuban people, caused the United States to go to war with Spain in 1898.",
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent to which economic interests, rather than humanitarian concern, caused the war in 1898, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim about the extent of the economic cause does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as the search for markets after the Panic of 1893, the closing of the frontier, or the growth of the yellow press and mass newspapers.",
+   "notEarned": "A sentence of background with no link to the argument, or background from a later century, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (first point): earns the point for describing specific and relevant examples of economic interests pushing toward war, such as American sugar investments in Cuba, the interruption of the sugar harvest, or the search for markets and coaling stations.",
+   "notEarned": "General statements about economics with no specific example do not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (second point): earns the point for describing specific and relevant examples of humanitarian concern pushing toward war, such as reconcentration, the suffering reported in the press, or McKinley's first reason in his war message.",
+   "notEarned": "Repeating an economic example, or naming a humanitarian concern with no specific detail, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Analysis and reasoning (causation): earns the point for explaining how the evidence shows which cause mattered more and how the causes worked together, linking examples to the thesis rather than listing them.",
+   "notEarned": "Listing examples with no explanation of how they show the relative weight of the causes does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Analysis and reasoning (complexity): earns the point for a complex argument, such as qualifying the thesis by group or by moment, explaining why different Americans wanted war for different reasons, or weighing the Maine and the de L\u00f4me letter against the deeper causes.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ],
+ "modelOutline": "Thesis: Economic interests were a real cause of the war, but they were not the deciding one: humanitarian outrage and the politics of the Maine did more to move the country, while business interests mostly wanted the fighting in Cuba to stop, whichever way it ended.\nContext: After the Panic of 1893, American factories produced more than Americans could buy, and by 1894 some 90 percent of Cuba's exports went to the United States, so the Cuban war hit American wallets directly.\nEvidence for economics: American businessmen owned sugar plantations in Cuba and were angered when the fighting interrupted the sugar harvest; naval thinkers wanted coaling stations and bases to protect trade; McKinley himself cited injury to American commerce as his third reason for war.\nEvidence for humanitarian concern: Spain's reconcentration camps killed hundreds of thousands of Cuban civilians; the yellow press spread lurid accounts of that suffering; McKinley put humanity first in his war message, ahead of trade.\nComplexity: The causes split by group \u2014 humanitarians wanted to end suffering, businessmen wanted the disruption to end, and expansionists wanted the empire that followed \u2014 and the Maine explosion turned all three into a single political demand for war.",
+ "totalPoints": 6
+}

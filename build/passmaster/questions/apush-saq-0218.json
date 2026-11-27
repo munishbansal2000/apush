@@ -1,0 +1,91 @@
+{
+ "id": "apush-saq-0218",
+ "type": "saq",
+ "unit": 7,
+ "topics": [
+  "7.9"
+ ],
+ "lesson": "apush-u7-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "1.A",
+  "3.A"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.9 The Great Depression"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 23",
+    "section": "Great Depression and the New Deal (1929-1939)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Jazz Age and Great Depression (1920-1933)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; stimulus paraphrased from 5 Steps to a 5 2024, Chapter 23, and Barron's Premium 2027, Chapter 9, Topic 7.9",
+ "stimulus": {
+  "kind": "text",
+  "text": "Paraphrase of 5 Steps to a 5 2024, Chapter 23, and Barron’s Premium 2027, Chapter 9, Topic 7.9: The Depression had many roots in the 1920s. Farmers overproduced while prices fell, factories turned out more goods than buyers could afford, wealth piled up at the top while most families earned little, and investors bought stocks with borrowed money. When the market crashed in 1929, bank failures, factory closings, and unemployment followed.",
+  "source_note": "Paraphrase of 5 Steps to a 5 2024, Chapter 23, and Barron’s Premium 2027, Chapter 9, Topic 7.9."
+ },
+ "stimulus_set": null,
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Briefly explain ONE cause of the Great Depression rooted in the economy of the 1920s.",
+   "modelAnswer": "Farmers expanded production during World War I and never cut back, so overproduction drove crop prices down through the 1920s. Falling prices left farmers in debt, and thousands of rural banks failed when farmers could not repay their loans.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names a specific 1920s cause, such as farm overproduction and falling prices, installment buying, maldistribution of wealth, or buying stocks on margin.",
+     "notEarned": "A vague statement that the economy was weak, with no specific cause named."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain a SECOND cause of the Great Depression rooted in the economy of the 1920s.",
+   "modelAnswer": "Most families earned too little to keep buying what factories produced, while wealth piled up at the top. By 1929 most Americans could no longer sustain the consumer boom, inventories grew, and factories began laying workers off.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names a second, different 1920s cause, such as underconsumption, the gap in wealth, overproduction by factories, or speculation on margin.",
+     "notEarned": "Repeating the part (a) cause, or naming a cause with no explanation of how it worked."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE way the stock market crash of 1929 turned into a wider economic depression.",
+   "modelAnswer": "The crash froze credit, and lenders called in loans to protect themselves. Rumors set off runs on banks, banks failed, and depositors lost their savings, which cut spending further and forced factories to close.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains a specific mechanism, such as bank runs and failures, the credit crunch, or the circle of falling spending and factory closings.",
+     "notEarned": "A vague statement that the crash made things worse, with no mechanism explained."
+    }
+   ]
+  }
+ ]
+}

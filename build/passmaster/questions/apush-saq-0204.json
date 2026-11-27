@@ -1,0 +1,93 @@
+{
+ "id": "apush-saq-0204",
+ "type": "saq",
+ "unit": 7,
+ "topics": [
+  "7.2"
+ ],
+ "lesson": "apush-u7-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "3.A",
+  "2.B"
+ ],
+ "themes": [
+  "WXT",
+  "NAT"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "The American Anti-Imperialist League"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 19",
+    "section": "Rise of American Imperialism (1890-1913)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Unit 7: The Early 20th Century (1890-1945)"
+   }
+  ],
+  "primary_sources": [
+   "Mark Twain, quoted in the New York World, October 15, 1900"
+  ]
+ },
+ "source": "original; stimulus is a verbatim excerpt from Mark Twain, quoted in the New York World, October 15, 1900, public domain.",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Mark Twain, quoted in the New York World, October 15, 1900, public domain.",
+  "text": "\"I left these shores a red-hot imperialist. I wanted the American eagle to go screaming into the Pacific. \u2026 But I have thought some more, since then, and I have seen that we do not intend to free, but to subjugate the people of the Philippines. \u2026 It should, it seems to me, be our pleasure and duty to make these people free, and let them deal with their own domestic questions in their own way. And so I am an anti-imperialist. I am opposed to having the eagle put its talons on any other land.\" \u2014 Mark Twain, quoted in the New York World, October 15, 1900"
+ },
+ "stimulus_set": null,
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify Twain's position on American rule in the Philippines.",
+   "modelAnswer": "Twain opposes American rule in the Philippines and calls himself an anti-imperialist. He says Filipinos should be made free and left to deal with their own domestic questions in their own way, rather than ruled by the United States.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "States Twain's position: he opposes American rule in the Philippines and supports Filipino self-government.",
+     "notEarned": "States only that Twain changed his mind without naming his position on American rule."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain one reason Twain gives for his position.",
+   "modelAnswer": "Twain says he changed his mind because he decided the United States did not intend to free Filipinos but to subjugate them. He had first supported expansion, thinking it would spread liberty, but he concluded that American rule meant conquest dressed up as liberation.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains Twain's reason: he came to believe American rule meant subjugation, not liberation, of the Filipino people.",
+     "notEarned": "Repeats Twain's position without explaining the reason he gives for holding it."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain how Twain's position reflects a broader debate in the United States in 1900.",
+   "modelAnswer": "Twain's position reflects the Anti-Imperialist League's argument that holding colonies betrayed the republic's ideals, since the United States would rule peoples without their consent. The debate was so sharp that it shaped the election of 1900, when William Jennings Bryan campaigned against imperialism and lost to McKinley. Twain was a vice president of the League, so his voice was part of an organized opposition, not a lone protest.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Connects Twain's position to a broader development, such as the Anti-Imperialist League, the annexation debate, or the election of 1900.",
+     "notEarned": "Names a development without explaining how Twain's position reflects the broader debate."
+    }
+   ]
+  }
+ ]
+}

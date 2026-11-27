@@ -1,0 +1,91 @@
+{
+  "id": "apush-saq-0233",
+  "type": "saq",
+  "unit": 7,
+  "topics": [
+    "7.15"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "2.A",
+    "3.B"
+  ],
+  "themes": [
+    "PCE",
+    "WXT"
+  ],
+  "reasoning": "comparison",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.4 The Progressives"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 23",
+        "section": "Great Depression and the New Deal (1929-1939)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "Progressive Era and WWI (1900-1920)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus": {
+    "kind": "text",
+    "text": "A historian writes: \"Progressive reformers and New Dealers both turned to Washington, but they asked Washington to do different jobs. The Progressives of Theodore Roosevelt and Woodrow Wilson wanted the federal government to referee a market economy: break up trusts, regulate railroads and food, and give voters a direct voice. The New Dealers of Franklin Roosevelt wanted the federal government to rescue people the market had failed: feed the hungry, employ the jobless, insure bank deposits, and pay pensions to the old. Both movements left the federal government far larger than they found it, and both left the racial order of the South largely untouched.\"",
+    "source_note": "Original secondary text written for this question from Barron's Premium 2027, Chapter 9, Topics 7.4 and 7.10, and 5 Steps to a 5, 2024, Chapters 20 and 23."
+  },
+  "stimulus_set": null,
+  "source": "original; stimulus is original secondary text comparing Progressive and New Deal reform",
+  "saq_slot": 1,
+  "totalPoints": 3,
+  "parts": [
+    {
+      "part": "a",
+      "points": 1,
+      "prompt": "Identify ONE way Progressive Era reform differed from New Deal reform.",
+      "modelAnswer": "Progressive reform mainly used federal power to regulate business and open up politics, while the New Deal mainly used federal power to provide relief, jobs, and income security to people hurt by the Depression. The difference was referee versus provider.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Names a difference between the two movements, such as regulating business versus providing relief and security.",
+          "notEarned": "Naming a reform from one era with no comparison to the other."
+        }
+      ]
+    },
+    {
+      "part": "b",
+      "points": 1,
+      "prompt": "Explain ONE continuity between Progressive Era reform and New Deal reform.",
+      "modelAnswer": "Both movements expanded the federal government's role in American life, using Washington to solve problems states and markets had left unsolved. The Progressive creation of the Federal Reserve and the income tax gave Washington tools the New Deal then used on a much larger scale.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Explains a continuity, such as both expanding federal power or the New Deal building on Progressive tools.",
+          "notEarned": "Naming a reform from one era with no link to the other era."
+        }
+      ]
+    },
+    {
+      "part": "c",
+      "points": 1,
+      "prompt": "Explain ONE limitation shared by both reform movements.",
+      "modelAnswer": "Neither movement ended racial exclusion: Progressive reformers largely left Jim Crow in the South alone, and New Deal programs often excluded farm and domestic workers, who were disproportionately Black, from protections such as Social Security. Both movements improved life for many Americans while leaving the racial order mostly intact.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Explains a shared limitation, such as leaving racial exclusion intact in both eras.",
+          "notEarned": "Naming a limitation of one movement with no link to the other movement."
+        }
+      ]
+    }
+  ]
+}

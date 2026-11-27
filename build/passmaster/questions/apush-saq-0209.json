@@ -1,0 +1,100 @@
+{
+ "id": "apush-saq-0209",
+ "type": "saq",
+ "unit": 7,
+ "topics": [
+  "7.4"
+ ],
+ "lesson": "apush-u7-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "3.A",
+  "4.A"
+ ],
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.4 The Progressives — Women's Suffrage"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 20",
+    "section": "Progressivism and Women"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "The Progressive Era and World War I (1900-1920)"
+   }
+  ]
+ },
+ "source": "original; stimulus paraphrased from 5 Steps to a 5 2024, Chapter 20, and Barron's Premium 2027, Chapter 9",
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Photograph of the Woman Suffrage Procession, March 3, 1913, public domain (pre-1930). Sign text transcribed from the image.",
+  "text": "Photograph of the Woman Suffrage Procession, Washington, D.C., March 3, 1913. Women in white march in formation behind a wagon carrying a sign that reads 'WE DEMAND AN AMENDMENT TO THE CONSTITUTION OF THE UNITED STATES ENFRANCHISING THE WOMEN OF THIS COUNTRY,' while a tall banner above bears the words 'WOMEN' and 'VOTE.' The dome of the United States Capitol stands at the right."
+ },
+ "stimulus_set": null,
+ "saq_slot": 3,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one detail in the image that shows organized public campaigning for women's suffrage.",
+   "modelAnswer": "One detail is the wagon's sign demanding a constitutional amendment enfranchising the women of the country, carried in a public march. Another is the column of women marching in matching white dresses in formation through the streets of Washington. A third is the banner reading 'WOMEN' and 'VOTE' carried above the marchers.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names a specific visible detail of organized campaigning, such as the amendment sign, the marching formation, or the 'WOMEN VOTE' banner.",
+     "notEarned": "A vague statement that women marched, without naming a specific visible detail."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain how the 1913 procession reflected the Progressive-era campaign for women's suffrage.",
+   "modelAnswer": "The procession showed suffragists using public demonstration to pressure the federal government, marching in Washington the day before Wilson's inauguration. It reflected decades of organizing by groups like the National American Woman Suffrage Association, founded in 1890, and the newer, more confrontational National Woman's Party. The march turned a long campaign into a visible national event that newspapers across the country covered.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains how the procession fit the suffrage campaign, such as public demonstration pressuring the federal government after decades of organizing.",
+     "notEarned": "Describes the image without explaining how it fits the longer suffrage campaign."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one reason the Nineteenth Amendment was not ratified until 1920.",
+   "modelAnswer": "One reason was entrenched opposition: many politicians and voters believed politics was men's work and resisted giving women the vote. Another was that suffrage had to win state by state and then pass Congress by two-thirds before going to the states for ratification. The war changed the politics, as women's wartime work led Wilson to support suffrage in 1918, and the amendment finally passed Congress in 1919 and was ratified in 1920.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains a specific reason for the delay, such as entrenched opposition, the amendment process, or the need for wartime change.",
+     "notEarned": "Says only that it took a long time, without naming a specific reason for the delay."
+    }
+   ]
+  }
+ ],
+ "figures": [
+  {
+   "id": "fig-apush-saq-0209",
+   "file": "u7/5s24-ch22-mcq-06.jpg",
+   "caption": "Woman Suffrage Procession, Washington, D.C., March 3, 1913. Women in white march behind a wagon demanding a suffrage amendment, with the Capitol dome at right.",
+   "alt": "Women in white dresses march in formation behind a wagon with a sign demanding a constitutional amendment enfranchising women, with the Capitol dome visible at right.",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Woman_Suffrage_Procession_1913_opening.jpg",
+   "license": "Public domain (1913 photograph, pre-1930)"
+  }
+ ]
+}

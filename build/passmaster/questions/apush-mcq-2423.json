@@ -1,0 +1,78 @@
+{
+  "id": "apush-mcq-2423",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.15"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "test",
+  "difficulty": 4,
+  "skills": [
+    "2.B",
+    "3.C"
+  ],
+  "themes": [
+    "WXT",
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.9 The Great Depression"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 22",
+        "section": "Beginning of Modern America: The 1920s"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "Jazz Age and Great Depression (1920-1933)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus_set": "boom-depression-unemployment",
+  "stimulus": {
+    "kind": "table",
+    "text": "Unemployment in the United States, as a share of the labor force (Bureau of Labor Statistics historical estimates):\n\n| Year | 1929 | 1930 | 1931 | 1932 | 1933 | 1937 | 1938 | 1941 | 1942 |\n| Unemployment | 3.2% | 8.7% | 15.9% | 23.6% | 24.9% | 14.3% | 19.0% | 9.9% | 4.7% |\n\nContext: The 1920s were years of prosperity built on assembly-line production, radios, cars, and buying on credit, including buying stocks on margin. The stock market crashed in October 1929.",
+    "source_note": "Unemployment figures are Bureau of Labor Statistics historical estimates, as published in the Economic Report of the President (Table B-22). Context drawn from Barron's Premium 2027, Chapter 9, Topics 7.7 and 7.9."
+  },
+  "source": "original; stimulus drawn from book-grounded paraphrases, tables, and photographs (see source_note)",
+  "stem": "What does the table show about the New Deal's effect on unemployment?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Unemployment stayed high through the 1930s and fell with wartime mobilization"
+    },
+    {
+      "key": "B",
+      "text": "Unemployment fell below five percent within a year of 1933",
+      "misconception": "Unemployment was still 14.3 percent in 1937 and 19.0 percent in 1938."
+    },
+    {
+      "key": "C",
+      "text": "Unemployment rose every year from 1933 until 1942",
+      "misconception": "Unemployment fell from 24.9 percent in 1933 to 14.3 percent in 1937."
+    },
+    {
+      "key": "D",
+      "text": "Unemployment never rose above ten percent in the 1930s",
+      "misconception": "Unemployment reached 24.9 percent in 1933, far above ten percent."
+    }
+  ],
+  "answerKey": "A",
+  "rationales": {
+    "A": "The table shows 14.3 percent in 1937 and 19.0 percent in 1938, then 9.9 percent in 1941 and 4.7 percent in 1942.",
+    "B": "The table shows unemployment at 14.3 percent in 1937, so it never fell below five percent in the 1930s.",
+    "C": "The table shows unemployment falling from 24.9 percent in 1933 to 14.3 percent in 1937.",
+    "D": "The table shows unemployment at 24.9 percent in 1933, the highest figure in the table.",
+    "general": "1. Read the 1930s column: 24.9 percent in 1933, 14.3 percent in 1937, 19.0 percent in 1938.\n2. Unemployment fell under the New Deal, but it stayed high all through the 1930s.\n3. The table drops below five percent only in 1942, after wartime mobilization began.\n4. Background: the lesson is that wartime spending, not the New Deal, ended the Depression.\nRemember: a fall that leaves a number high is a partial recovery, not a cure."
+  }
+}

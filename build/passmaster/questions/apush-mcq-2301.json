@@ -1,0 +1,72 @@
+{
+  "id": "apush-mcq-2301",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.11"
+  ],
+  "lesson": "apush-u7-l4",
+  "status": "final",
+  "pool": "test",
+  "difficulty": 4,
+  "skills": [
+    "4.B"
+  ],
+  "themes": [
+    "WOR",
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.11 Interwar Foreign Policy"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "Jazz Age and Great Depression (1920-1933)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus": {
+    "kind": "image",
+    "text": "Photograph of the signing of the Kellogg-Briand Pact at the Quai d'Orsay in Paris, August 27, 1928. A man holds up the open pact for the camera; its pages are covered with signatures, and round seals hang from ribbons down the center. Other men in formal dress stand beside him.",
+    "source_note": "Signing of the Kellogg-Briand Pact, Quai d'Orsay, Paris, August 27, 1928. French press photograph (Biblioth\u00e8que nationale de France); public domain."
+  },
+  "stimulus_set": "kellogg-briand-1928",
+  "source": "original; stimulus photograph, signing of the Kellogg-Briand Pact, Paris, 1928, public domain",
+  "stem": "Within three years of the signing shown in the photograph, Japan invaded Manchuria. What does that invasion show about the Kellogg-Briand Pact?",
+  "options": [
+    {
+      "key": "A",
+      "text": "The pact stopped Japan from taking more Chinese land",
+      "misconception": "Japan kept Manchuria and then invaded China itself in 1937."
+    },
+    {
+      "key": "B",
+      "text": "The pact could not stop a signer from breaking it"
+    },
+    {
+      "key": "C",
+      "text": "The pact required the United States to defend China",
+      "misconception": "The pact promised nothing about defending anyone; it only renounced war."
+    },
+    {
+      "key": "D",
+      "text": "The pact had never been signed by Japan",
+      "misconception": "Japan had signed the pact, which made the violation plain."
+    }
+  ],
+  "answerKey": "B",
+  "rationales": {
+    "A": "Background from the books: Japan kept Manchuria, and the League of Nations took no effective action.",
+    "B": "Japan signed the pact and broke it anyway, and nothing in the pact could stop a signer that chose to break it.",
+    "C": "Background from the books: the pact carried no promise to defend any country.",
+    "D": "Background from the books: Japan was a signer of the pact.",
+    "general": "1. Japan signed the Kellogg-Briand Pact in 1928, renouncing war as national policy.\n2. In 1931 Japan seized Manchuria from China, in open violation of that promise.\n3. The League of Nations protested, and the United States did little beyond protest.\n4. The invasion showed the pact's weakness: it had no enforcement, no definition of aggression, and a self-defense loophole.\nRemember: judge a treaty by what happens when someone breaks it."
+  }
+}

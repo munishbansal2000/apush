@@ -1,0 +1,78 @@
+{
+  "id": "apush-mcq-2411",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.15"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "2.A",
+    "3.B"
+  ],
+  "themes": [
+    "PCE",
+    "WXT"
+  ],
+  "reasoning": "comparison",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.4 The Progressives"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 23",
+        "section": "Great Depression and the New Deal (1929-1939)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "Progressive Era and WWI (1900-1920)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus_set": "progressive-new-deal-reform",
+  "stimulus": {
+    "kind": "table",
+    "text": "The table compares two reform movements.\n\n| Area | Progressive Era, about 1906-1914 | New Deal, 1933-1935 |\n| Main target | Concentrated corporate power, corrupt city machines, and unsafe food and drugs | Mass unemployment, failed banks, and farm distress after the 1929 crash |\n| Main tools | Laws regulating business and opening up politics: the Hepburn Act (1906), the Pure Food and Drug Act (1906), the Sixteenth and Seventeenth Amendments and the Federal Reserve (1913), the Clayton Act (1914) | Direct relief, jobs programs, and a safety net: the Civilian Conservation Corps and the Works Progress Administration, the Social Security Act (1935), and the Wagner Act (1935) |\n| Federal role | Government as referee, setting rules for business and voters | Government as provider, giving jobs, relief, and income security |",
+    "source_note": "Original table written for this question from Barron's Premium 2027, Chapter 9, Topics 7.4 and 7.10, and 5 Steps to a 5, 2024, Chapters 20 and 23."
+  },
+  "source": "original; stimulus drawn from book-grounded paraphrases, tables, and photographs (see source_note)",
+  "stem": "Based on the table, which best describes the main difference between Progressive Era reform and New Deal reform?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Progressives provided relief while the New Deal regulated business",
+      "misconception": "The table reverses the two movements; Progressives regulated business, while the New Deal provided relief."
+    },
+    {
+      "key": "B",
+      "text": "Both movements aimed mainly at ending racial segregation in America",
+      "misconception": "Neither movement aimed mainly at ending segregation; the table names different targets for each."
+    },
+    {
+      "key": "C",
+      "text": "Progressives regulated business; the New Deal provided relief and security"
+    },
+    {
+      "key": "D",
+      "text": "Both movements left the federal government smaller than before",
+      "misconception": "Both movements grew the federal government; neither one shrank it."
+    }
+  ],
+  "answerKey": "C",
+  "rationales": {
+    "A": "Background from the books: the table gives relief and jobs to the New Deal, not to the Progressives, so this reverses the two movements.",
+    "B": "Background from the books: ending segregation was not the main target of either movement; the table names business regulation and economic distress instead.",
+    "C": "The table shows Progressives writing laws to regulate business and open up politics, while the New Deal created jobs programs, relief, and Social Security.",
+    "D": "Background from the books: both movements used federal power on a large scale, so neither one left the government smaller.",
+    "general": "1. Read the table row by row: the two movements aimed at different problems.\n2. Background: Progressives faced trusts, corrupt machines, and unsafe food, so they wrote laws to regulate business and open up politics.\n3. Background: the New Deal faced mass unemployment and failed banks, so it created jobs programs, relief, and Social Security.\n4. The same federal government acted in both eras, but as a referee in one and a provider in the other.\nRemember: compare reform movements by their targets and tools, not just their dates."
+  }
+}

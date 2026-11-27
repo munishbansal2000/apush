@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-2254",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.9"
+ ],
+ "lesson": "apush-u7-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "A",
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.9 The Great Depression"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 23",
+    "section": "Great Depression and the New Deal (1929-1939)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Jazz Age and Great Depression (1920-1933)"
+   }
+  ],
+  "primary_sources": [
+   "Bureau of the Census export figures, as cited in Senate Resolution 281 (2025)"
+  ]
+ },
+ "stimulus": {
+  "kind": "table",
+  "text": "| Year | U.S. exports |\n| 1929 | $5.24 billion |\n| 1933 | $1.67 billion |\n\nU.S. exports fell by about two-thirds between 1929 and 1933. In June 1930 President Hoover signed the Hawley-Smoot Tariff, which raised tariffs on imported goods to near record levels, and other countries answered with tariffs of their own.",
+  "source_note": "Export figures from the Bureau of the Census, as cited in Senate Resolution 281 (2025). Tariff account per 5 Steps to a 5 2024, Chapter 23."
+ },
+ "source": "original; stimulus table built from Bureau of the Census export figures",
+ "stem": "The export figures in the table best support which of the following conclusions about the tariff?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Retaliation abroad shrank the market for American goods"
+  },
+  {
+   "key": "B",
+   "text": "The tariff raised American exports to record levels",
+   "misconception": "Exports fell from $5.24 billion to $1.67 billion. They did not rise to record levels."
+  },
+  {
+   "key": "C",
+   "text": "Foreign countries lowered their tariffs in response",
+   "misconception": "Other countries raised their tariffs on American goods, they did not lower them."
+  },
+  {
+   "key": "D",
+   "text": "American factories stopped producing goods for export",
+   "misconception": "Factories kept producing, but buyers abroad bought less. The problem was lost markets, not stopped production."
+  }
+ ],
+ "rationales": {
+  "A": "Background from the books: other nations raised their tariffs on American goods in response, and exports fell by about two-thirds, from $5.24 billion in 1929 to $1.67 billion in 1933.",
+  "B": "The table shows exports falling by about two-thirds, not rising.",
+  "C": "Background from the books: the tariff invited retaliation, and foreign countries answered with tariffs of their own.",
+  "D": "Background from the books: overproduction was the problem in the 1920s, and factories kept turning out goods buyers could not afford.",
+  "general": "1. Read the table: exports fell from $5.24 billion to $1.67 billion.\n2. Ask what the tariff did abroad. Background from the books: other countries raised their own tariffs in response.\n3. Put the two together: retaliation shrank the market for American goods.\n4. Retaliation abroad best explains the export collapse.\nRemember: a tariff invites an answer, so ask what the other countries did back."
+ },
+ "stimulus_set": "smoot-hawley-exports"
+}

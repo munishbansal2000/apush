@@ -1,0 +1,103 @@
+{
+ "id": "apush-saq-0220",
+ "type": "saq",
+ "unit": 7,
+ "topics": [
+  "7.9"
+ ],
+ "lesson": "apush-u7-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "1.A",
+  "3.A"
+ ],
+ "themes": [
+  "MIG",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.9 The Great Depression"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 23",
+    "section": "Great Depression and the New Deal (1929-1939)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Jazz Age and Great Depression (1920-1933)"
+   }
+  ],
+  "primary_sources": [
+   "Dorothea Lange, “Migrant Mother,” March 1936"
+  ]
+ },
+ "source": "original; stimulus photograph by Dorothea Lange, March 1936, public domain (U.S. federal government)",
+ "stimulus": {
+  "kind": "image",
+  "text": "Dorothea Lange, “Migrant Mother,” Nipomo, California, March 1936. The photograph shows Florence Owens Thompson, a 32-year-old mother of seven and a pea picker, seated with her hand to her chin while two of her children lean against her shoulders, their faces turned away.",
+  "source_note": "Dorothea Lange, “Migrant Mother,” March 1936, Nipomo, California. Public domain (U.S. federal government photograph, Farm Security Administration); via Wikimedia Commons."
+ },
+ "stimulus_set": null,
+ "saq_slot": 3,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify the group of Americans shown in the photograph.",
+   "modelAnswer": "The photograph shows a Dust Bowl migrant family in California. Florence Owens Thompson was a pea picker who had left the Plains with her children after drought and dust storms ruined the farms.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names the group: Dust Bowl migrants, or a migrant farm family in California, such as Florence Owens Thompson and her children.",
+     "notEarned": "A vague statement that the photograph shows a poor family, without naming Dust Bowl migrants."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain ONE cause of the migration shown in the photograph.",
+   "modelAnswer": "An extended drought struck the Great Plains, where years of over-farming had stripped the soil. Dust storms ruined the farms, and by the end of the decade nearly 60 percent of farms in the region had been ruined or abandoned.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains a specific cause, such as drought, over-farming and poor soil conservation, or falling farm prices and debt.",
+     "notEarned": "A vague statement that life was hard, with no specific cause named."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain ONE effect of this migration on the migrants or on California.",
+   "modelAnswer": "Many migrants became farm laborers in California, working long days in the fields for low wages. Californians often looked down on these newcomers, called “Okies,” and the migrants lived in camps with little help.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains a specific effect, such as migrant farm labor for low wages, hostility toward “Okies,” or crowded migrant camps.",
+     "notEarned": "A vague statement that the migrants had a hard time, with no specific effect named."
+    }
+   ]
+  }
+ ],
+ "figures": [
+  {
+   "id": "fig-apush-saq-0220",
+   "file": "u8/saq-set-04-q3.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Lange-MigrantMother02.jpg",
+   "license": "Public domain (U.S. federal government photograph, Farm Security Administration, 1936)",
+   "caption": "Dorothea Lange's “Migrant Mother,” Nipomo, California, March 1936.",
+   "alt": "A worried woman rests her chin on her hand while two children lean against her shoulders with their faces turned away."
+  }
+ ]
+}

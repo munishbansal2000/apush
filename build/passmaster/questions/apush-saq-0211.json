@@ -1,0 +1,92 @@
+{
+ "id": "apush-saq-0211",
+ "type": "saq",
+ "unit": 7,
+ "topics": [
+  "7.5"
+ ],
+ "lesson": "apush-u7-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "1.B",
+  "2.A"
+ ],
+ "themes": [
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.5 World War I: Military and Diplomacy"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 21",
+    "section": "United States and World War I (1914-1921)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "The Progressive Era and World War I (1900-1920)"
+   }
+  ],
+  "primary_sources": [
+   "Woodrow Wilson, War Message to Congress, April 2, 1917"
+  ]
+ },
+ "source": "original; stimulus quoted verbatim from Woodrow Wilson, War Message to Congress, April 2, 1917",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Verbatim excerpts from Woodrow Wilson, War Message to Congress, April 2, 1917 (public domain).",
+  "text": "President Woodrow Wilson, War Message to Congress, April 2, 1917 (verbatim excerpts):\n\n\"The present German submarine warfare against commerce is a warfare against mankind. It is a war against all nations.\"\n\n. . .\n\n\"With a profound sense of the solemn and even tragical character of the step I am taking and of the grave responsibilities which it involves, but in unhesitating obedience to what I deem my constitutional duty, I advise that the Congress declare the recent course of the Imperial German Government to be in fact nothing less than war against the Government and people of the United States...\""
+ },
+ "stimulus_set": null,
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one reason Wilson gives for asking Congress to declare war on Germany.",
+   "modelAnswer": "Wilson says German submarine warfare is a warfare against mankind and a war against all nations. He presents the submarine campaign as an attack not only on the United States but on the rights of all neutral nations. That claim turns a German campaign at sea into a cause for war.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names a reason Wilson gives in the passage, such as submarine warfare against mankind and all nations, or Germany's course amounting to war against the United States.",
+     "notEarned": "A reason Wilson does not give in the passage, such as a wish for colonies or revenge for a single sinking."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain how German submarine warfare changed the relationship between the United States and Germany.",
+   "modelAnswer": "Submarine warfare ended the pledges of restraint Germany had made after the Lusitania, Arabic, and Sussex sinkings. When Germany resumed unrestricted submarine warfare in January 1917, Wilson broke off diplomatic relations and then asked Congress for war. The campaign moved the two countries from tense neutrality to open war in a few months.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains how submarine warfare changed the relationship, such as ending the pledges of restraint, breaking off diplomatic relations, or moving the countries from neutrality to war.",
+     "notEarned": "Names a sinking without explaining how it changed the relationship between the two countries."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one additional factor, besides submarine warfare, that pushed the United States toward war in 1917.",
+   "modelAnswer": "One additional factor was the Zimmermann telegram, in which Germany offered Mexico help to reconquer Texas, New Mexico, and Arizona if Mexico attacked the United States. British intelligence intercepted the telegram and gave it to Washington, and American newspapers printed it in early 1917. The offer made many Americans see Germany as a direct threat to American territory.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains a distinct additional factor, such as the Zimmermann telegram, economic ties to the Allies, or the fall of the Russian czar making the Allies look like the democratic side.",
+     "notEarned": "Repeats submarine warfare, or names a factor without explaining how it pushed the United States toward war."
+    }
+   ]
+  }
+ ]
+}

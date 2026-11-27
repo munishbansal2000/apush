@@ -1,0 +1,77 @@
+{
+  "id": "apush-mcq-2403",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.14"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 4,
+  "skills": [
+    "3.B"
+  ],
+  "themes": [
+    "WOR",
+    "PCE"
+  ],
+  "reasoning": "comparison",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.14 Postwar Diplomacy"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "New Deal and WWII (1934-1945)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus": {
+    "kind": "table",
+    "text": "The Security Council as designed in the United Nations Charter, signed June 26, 1945.\n\n| Members | Who they were | Power |\n| 5 permanent members | United States, Soviet Union, Britain, France, China | Any one could veto a Council decision |\n| 6 rotating members | Elected by the General Assembly for two-year terms | Voted, but held no veto |",
+    "source_note": "Table drawn from the design of the United Nations Charter (San Francisco, June 1945): five permanent members with the veto and six elected members in the original Council. The elected membership grew to ten in 1965."
+  },
+  "stimulus_set": "un-security-council-1945",
+  "source": "original; stimulus drawn from book-grounded paraphrases, tables, and photographs (see source_note)",
+  "stem": "Why did the founders give the great powers a veto in the Security Council?",
+  "options": [
+    {
+      "key": "A",
+      "text": "To keep the great powers inside the United Nations, unlike the League"
+    },
+    {
+      "key": "B",
+      "text": "To let the great powers run the General Assembly as well",
+      "misconception": "The General Assembly gave every member one vote, and the veto applied only in the Security Council."
+    },
+    {
+      "key": "C",
+      "text": "To give small nations a stronger voice than large ones",
+      "misconception": "The veto strengthened the great powers, not the small nations."
+    },
+    {
+      "key": "D",
+      "text": "To let the Council declare war without any debate",
+      "misconception": "The veto limited the Council's power; it did not let the Council rush into war."
+    }
+  ],
+  "answerKey": "A",
+  "rationales": {
+    "A": "The League of Nations had failed partly because great powers stayed out or walked away, so the veto promised them that the United Nations could never act against their will.",
+    "B": "Background from the books: the General Assembly gave every member one vote, and the veto applied only in the Security Council.",
+    "C": "Background from the books: the veto strengthened the great powers, not the small nations.",
+    "D": "Background from the books: the veto limited the Council's power; it did not let the Council rush into war.",
+    "general": "1. The table shows five permanent members, each able to veto a Council decision.\n2. Background: the League of Nations had failed when the United States never joined and other great powers left.\n3. The founders believed the new organization would fail the same way if a great power could be outvoted on war and peace.\n4. The veto was the price of keeping the great powers in the room, even though it could freeze the Council.\nRemember: institutions built to keep the powerful inside often give them a way to say no."
+  }
+}

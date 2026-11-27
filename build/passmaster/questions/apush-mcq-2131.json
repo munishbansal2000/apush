@@ -1,0 +1,88 @@
+{
+ "id": "apush-mcq-2131",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.5"
+ ],
+ "lesson": "apush-u7-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "A",
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.5 World War I: Military and Diplomacy"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 21",
+    "section": "United States and World War I (1914-1921)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "The Progressive Era and World War I (1900-1920)"
+   }
+  ],
+  "primary_sources": [
+   "Zimmermann telegram, January 16, 1917"
+  ]
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "source_note": "Decoded text of the Zimmermann telegram, January 16, 1917 (public domain; U.S. National Archives). Photograph: the telegram as received by the German ambassador to Mexico, NARA 302025.",
+  "text": "The decoded telegram, sent by German Foreign Secretary Arthur Zimmermann from Berlin on January 16, 1917, to the German minister in Mexico (verbatim excerpts):\n\n\"We intend to begin on the first of February unrestricted submarine warfare. We shall endeavor in spite of this to keep the United States of America neutral. In the event of this not succeeding, we make Mexico a proposal of alliance on the following basis: make war together, make peace together, generous financial support and an understanding on our part that Mexico is to reconquer the lost territory in Texas, New Mexico, and Arizona.\"\n\nThe photograph shows the telegram as received: a Western Union form headed \"GERMAN LEGATION, MEXICO CITY,\" filled with rows of code numbers and stamped \"JAN 19 1917.\""
+ },
+ "stimulus_set": "zimmermann-telegram",
+ "source": "original; stimulus quoted verbatim from the decoded Zimmermann telegram, January 16, 1917",
+ "stem": "According to the telegram, Germany offered Mexico",
+ "options": [
+  {
+   "key": "A",
+   "text": "German help to reconquer Texas, New Mexico, and Arizona if Mexico made war on the United States"
+  },
+  {
+   "key": "B",
+   "text": "a promise never to use submarines against Mexican ships or any ship flying the Mexican flag",
+   "misconception": "The telegram announces unrestricted submarine warfare, not a promise to spare Mexican ships. Submarines are the reason Mexico is being courted at all."
+  },
+  {
+   "key": "C",
+   "text": "money to stay neutral and keep its army at home if the United States entered the war",
+   "misconception": "Germany wanted Mexico to fight, not to stay neutral. The offer is an alliance for making war together and making peace together."
+  },
+  {
+   "key": "D",
+   "text": "support for Mexico's claim to the Panama Canal and full control of the canal zone",
+   "misconception": "The Panama Canal is not mentioned in the telegram. The territory named is Texas, New Mexico, and Arizona."
+  }
+ ],
+ "rationales": {
+  "A": "The telegram promises generous financial support and an understanding that Mexico is to reconquer the lost territory in Texas, New Mexico, and Arizona, in exchange for making war together.",
+  "B": "The telegram announces unrestricted submarine warfare, not a promise to spare Mexican ships. Submarines are the reason Mexico is being courted at all.",
+  "C": "Germany wanted Mexico to fight, not to stay neutral. The offer is an alliance for making war together and making peace together.",
+  "D": "The Panama Canal is not mentioned in the telegram. The territory named is Texas, New Mexico, and Arizona.",
+  "general": "1. Find the offer in the telegram. Germany promises money and help to reconquer Texas, New Mexico, and Arizona.\n2. Find the price. Mexico must make war together with Germany and make peace together.\n3. Rule out the rest. The telegram says nothing about sparing ships, staying neutral, or the Panama Canal.\nRemember: an offer in a diplomatic message has two sides, so match both the promise and the price."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2131",
+   "file": "u7/original-misc-sourcing-05.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Zimmermann_Telegram_as_Received_by_the_German_Ambassador_to_Mexico_-_NARA_-_302025.tif",
+   "license": "Public domain (U.S. National Archives record, 1917)",
+   "caption": "The Zimmermann telegram as received in Mexico City, January 1917.",
+   "alt": "A Western Union telegram form headed German Legation, Mexico City, filled with rows of code numbers and stamped January 19, 1917."
+  }
+ ]
+}

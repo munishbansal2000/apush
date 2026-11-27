@@ -1,0 +1,76 @@
+{
+  "id": "apush-mcq-2353",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.13"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 2,
+  "skills": [
+    "2.B"
+  ],
+  "themes": [
+    "WOR"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.13 World War II: Military"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "New Deal and WWII (1934-1945)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus": {
+    "kind": "table",
+    "text": "American losses in the Japanese attack on Pearl Harbor, December 7, 1941.\n\n| Americans killed | 2,403 |\n| Americans wounded | 1,178 |\n| Battleships sunk or damaged | 8 |\n| Aircraft destroyed | 188 |\n| Japanese aircraft lost | 29 |",
+    "source_note": "Figures from the Department of Defense 50th Anniversary of World War II Commemorative Committee summary of the attack, corroborated by the 5 Steps day-item record (2,403 killed, 1,178 wounded). All eight battleships present were damaged, four sunk; six returned to service during the war."
+  },
+  "stimulus_set": "pearl-harbor-losses-1941",
+  "source": "original; stimulus drawn from book-grounded figures and paraphrases (see source_note)",
+  "stem": "The losses in the table came from the Japanese attack on Pearl Harbor on December 7, 1941. What did the attack lead most directly to?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Japan surrendered to the United States",
+      "misconception": "Japan did not surrender until 1945, after two atomic bombs and years of war."
+    },
+    {
+      "key": "B",
+      "text": "The United States joined the League of Nations",
+      "misconception": "The United States never joined the League of Nations; the Senate rejected membership in 1919."
+    },
+    {
+      "key": "C",
+      "text": "The United States declared war on Japan"
+    },
+    {
+      "key": "D",
+      "text": "Germany declared war on the Soviet Union",
+      "misconception": "Germany had already invaded the Soviet Union in June 1941; it declared war on the United States, not the Soviet Union."
+    }
+  ],
+  "answerKey": "C",
+  "rationales": {
+    "A": "Japan fought on for nearly four more years; surrender came in 1945, not 1941.",
+    "B": "The United States never joined the League; the Senate rejected the Treaty of Versailles in 1919.",
+    "C": "Congress declared war on Japan on December 8, 1941, the day after the attack.",
+    "D": "Germany invaded the Soviet Union in June 1941, months before Pearl Harbor.",
+    "general": "1. The table shows a surprise attack that killed more than 2,400 Americans and crippled the Pacific Fleet.\n2. Before the attack, most Americans wanted to stay out of the war.\n3. Background from the books: the attack ended that debate overnight, and Congress declared war on Japan the next day.\n4. The other choices place later events in 1941 or describe things that never happened.\nRemember: a surprise attack on American forces usually ends debate about entering a war."
+  }
+}

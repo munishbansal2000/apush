@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-2205",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.7"
+ ],
+ "lesson": "apush-u7-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "A",
+ "skills": [
+  "4.B"
+ ],
+ "themes": [
+  "GEO",
+  "WXT"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.7 1920s: Innovations in Communication and Technology"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 22",
+    "section": "Beginning of Modern America: The 1920s"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Jazz Age and Great Depression (1920-1933)"
+   }
+  ],
+  "primary_sources": [
+   "U.S. Census Bureau, Statistical Abstract, Table HS-41"
+  ]
+ },
+ "stimulus": {
+  "kind": "table",
+  "text": "Motor vehicles registered in the United States:\n\n| Year | Motor vehicles registered |\n| 1910 | 469,000 |\n| 1920 | 9,239,000 |\n| 1925 | 20,069,000 |\n| 1930 | 26,750,000 |\n\nSource: U.S. Census Bureau, Statistical Abstract of the United States, Table HS-41, “Transportation Indicators for Motor Vehicles and Airlines, 1900 to 2001.”",
+  "source_note": "Table from the U.S. Census Bureau, Statistical Abstract, Table HS-41."
+ },
+ "stimulus_set": "cars-registrations",
+ "source": "original; stimulus table from the U.S. Census Bureau, Statistical Abstract, Table HS-41",
+ "stem": "The rise shown in the table most directly changed American life by",
+ "options": [
+  {
+   "key": "A",
+   "text": "letting families live farther from city centers"
+  },
+  {
+   "key": "B",
+   "text": "ending the need for any new roads",
+   "misconception": "Cars created a demand for new roads, not an end to them. Road building and traffic policing grew with the car."
+  },
+  {
+   "key": "C",
+   "text": "making trains the main form of travel",
+   "misconception": "Trains lost ground to cars in the 1920s. The car, not the train, became the main form of travel for many families."
+  },
+  {
+   "key": "D",
+   "text": "keeping most Americans on isolated farms forever",
+   "misconception": "The car reduced rural isolation. It let farm families reach towns, not keep them isolated."
+  }
+ ],
+ "rationales": {
+  "A": "Background from the books: the car let city workers live farther from their jobs, and suburbs grew around the cities. The car made the suburb possible.",
+  "B": "Cars created a demand for new roads, not an end to them. Road building and traffic policing grew with the car.",
+  "C": "Trains lost ground to cars in the 1920s. The car, not the train, became the main form of travel for many families.",
+  "D": "The car reduced rural isolation. It let farm families reach towns, not keep them isolated.",
+  "general": "1. Start with the numbers: tens of millions of cars by 1930.\n2. Ask what a car lets a family do: live farther from work and still get there.\n3. Name the result: suburbs grew around the cities, and the city spread outward.\n4. Check the other effects: roads, traffic policing, and new suburbs all grew with the car.\nRemember: when a technology gives people range, ask where they move to."
+ }
+}

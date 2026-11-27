@@ -1,0 +1,80 @@
+{
+  "id": "apush-mcq-2399",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.14"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "test",
+  "difficulty": 3,
+  "skills": [
+    "3.A"
+  ],
+  "themes": [
+    "WOR",
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.14 Postwar Diplomacy"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "New Deal and WWII (1934-1945)"
+      }
+    ],
+    "primary_sources": [
+      "Photograph of Attlee, Truman, and Stalin at Potsdam, summer 1945"
+    ]
+  },
+  "stimulus": {
+    "kind": "text",
+    "text": "At Potsdam, in July and August 1945, the Allies agreed that Germany would be demilitarized and denazified and run zone by zone by the four occupying powers. On July 26, the United States, Britain, and China issued the Potsdam Declaration, demanding that Japan surrender unconditionally \u2014 and saying nothing about whether the emperor could stay.",
+    "source_note": "Original secondary text, written for this question from Barron's Premium 2027, Chapter 9, Topic 7.14, and 5 Steps to a 5, 2024, Chapter 24."
+  },
+  "stimulus_set": "potsdam-decisions-1945",
+  "source": "original; stimulus drawn from book-grounded paraphrases, tables, and photographs (see source_note)",
+  "stem": "What did the Potsdam Conference decide about the future of Germany?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Germany would be demilitarized, denazified, and run zone by zone"
+    },
+    {
+      "key": "B",
+      "text": "Germany would be divided into two permanent separate states",
+      "misconception": "Potsdam did not create two German states; the split into East and West Germany came in 1949."
+    },
+    {
+      "key": "C",
+      "text": "Germany would keep its army under Allied supervision",
+      "misconception": "Potsdam ordered Germany demilitarized, so it would keep no army at all."
+    },
+    {
+      "key": "D",
+      "text": "Germany would pay no reparations to any Allied nation",
+      "misconception": "Potsdam set reparations rules, with the Soviet Union taking heavily from its own zone."
+    }
+  ],
+  "answerKey": "A",
+  "rationales": {
+    "A": "Potsdam set out denazification, demilitarization, and joint administration of the zones, with each power taking reparations mainly from its own zone.",
+    "B": "Background from the books: Potsdam did not create two German states; the split into East and West Germany came in 1949.",
+    "C": "Background from the books: Potsdam ordered Germany demilitarized, so it would keep no army at all.",
+    "D": "Background from the books: Potsdam set reparations rules, with the Soviet Union taking heavily from its own zone.",
+    "general": "1. The passage describes the decisions made at Potsdam in the summer of 1945.\n2. Background: they agreed to strip Germany of its military, remove Nazis from public life, and run the zones together.\n3. Reparations would come mainly from each power's own zone, which let the Soviet Union take heavily from the east.\n4. The plan assumed the four powers would keep working together, and that assumption soon failed.\nRemember: a plan that needs four rivals to cooperate will strain as soon as the common enemy is gone."
+  },
+  "figures": null
+}

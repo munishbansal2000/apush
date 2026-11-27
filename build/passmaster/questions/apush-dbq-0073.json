@@ -1,0 +1,163 @@
+{
+ "id": "apush-dbq-0073",
+ "type": "dbq",
+ "unit": 7,
+ "topics": [
+  "7.6"
+ ],
+ "lesson": "apush-u7-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.6 World War I: Home Front"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 21",
+    "section": "United States and World War I (1914-1921)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "The Progressive Era and World War I (1900-1920)"
+   }
+  ],
+  "primary_sources": [
+   "Selective Service Act, May 18, 1917",
+   "Harry R. Hopps, \"Destroy This Mad Brute\" poster, 1917",
+   "John E. Sheridan, \"Food is Ammunition—Don't waste it\" poster, 1917",
+   "Eugene V. Debs, speech at Canton, Ohio, June 16, 1918",
+   "Schenck v. United States, 249 U.S. 47 (1919)",
+   "U.S. Census Bureau, Black population of selected cities, 1910 and 1920",
+   "Charles Gustrine, \"True Sons of Freedom\" poster, 1918"
+  ]
+ },
+ "source": "original; documents drawn from public-domain sources and book-grounded data",
+ "stimulus_set": null,
+ "prompt": "Evaluate the extent to which World War I changed American life at home from 1917 to 1920.",
+ "documents": [
+  {
+   "n": 1,
+   "kind": "text",
+   "date": "1917",
+   "title": "The draft",
+   "source": "Selective Service Act, approved May 18, 1917, Section 5. Verbatim excerpt, public domain.",
+   "text": "\"That all male persons between the ages of twenty-one and thirty, both inclusive, shall be subject to registration in accordance with regulations to be prescribed by the President . . . it shall be the duty of all persons of the designated ages . . . to present themselves for and submit to registration under the provisions of this Act; and any person who shall wilfully fail or refuse to present himself for registration or to submit thereto as herein provided, shall be guilty of a misdemeanor . . .\"",
+   "sourcing": "The act itself, ordering every man aged 21 to 30 to register. A law, not an opinion, that reached into every household with a young man in it."
+  },
+  {
+   "n": 2,
+   "kind": "image",
+   "date": "1917",
+   "title": "Destroy This Mad Brute",
+   "source": "Harry R. Hopps, recruiting poster, 1917. Public domain; Library of Congress.",
+   "figure": "u7/destroy-mad-brute-1917.jpg",
+   "sourcing": "Hopps, an artist working for the Army's recruiting drive, picturing Germany as a gorilla in a spiked helmet. A poster meant to frighten viewers into enlisting."
+  },
+  {
+   "n": 3,
+   "kind": "image",
+   "date": "1917",
+   "title": "Food is Ammunition",
+   "source": "John E. Sheridan, poster for the U.S. Food Administration, 1917. Public domain.",
+   "figure": "u7/food-is-ammunition-1917.jpg",
+   "sourcing": "Sheridan, an artist working for the Food Administration, picturing a basket of food below soldiers on horseback. A poster meant to make saving food feel like fighting."
+  },
+  {
+   "n": 4,
+   "kind": "text",
+   "date": "1918",
+   "title": "Debs at Canton",
+   "source": "Eugene V. Debs, speech at Canton, Ohio, June 16, 1918. Verbatim excerpt, public domain.",
+   "text": "\"The master class has always declared the war and the subject class has always fought the battles — that the subject class has had nothing to gain and all to lose, including their lives; that the working class, who furnish the corpses, have never yet had a voice in declaring war and never yet had a voice in declaring peace.\"",
+   "sourcing": "Debs, the Socialist leader, speaking to a crowd in Ohio. A speech that led to his arrest and a ten-year prison sentence under the Espionage Act."
+  },
+  {
+   "n": 5,
+   "kind": "text",
+   "date": "1919",
+   "title": "Schenck and free speech",
+   "source": "Justice Oliver Wendell Holmes, Schenck v. United States, March 3, 1919. Verbatim excerpt, public domain.",
+   "text": "\"The most stringent protection of free speech would not protect a man in falsely shouting fire in a theatre and causing a panic. . . . The question in every case is whether the words used are used in such circumstances and are of such a nature as to create a clear and present danger that they will bring about the substantive evils that Congress has a right to prevent.\"",
+   "sourcing": "Holmes, writing for a unanimous Supreme Court, upholding a conviction under the Espionage Act. A court ruling that set the limit on wartime speech."
+  },
+  {
+   "n": 6,
+   "kind": "table",
+   "date": "1920",
+   "title": "Black population of northern cities",
+   "source": "U.S. Census Bureau, Black population of selected cities, 1910 and 1920, as reported by the National Park Service.",
+   "text": "| City | Black population, 1910 | Black population, 1920 |\n| New York | 91,709 | 152,467 |\n| Philadelphia | 84,459 | 134,229 |\n| Chicago | 44,103 | 109,458 |\n| Detroit | 5,741 | 40,838 |\n| Cleveland | 8,448 | 34,451 |",
+   "sourcing": "The census, counting people rather than arguing a case. Numbers that show a migration too large to be a matter of opinion."
+  },
+  {
+   "n": 7,
+   "kind": "image",
+   "date": "1918",
+   "title": "True Sons of Freedom",
+   "source": "Charles Gustrine, recruiting poster, 1918. Public domain; Library of Congress LCCN93503146.",
+   "figure": "u7/true-sons-of-freedom-1918.jpg",
+   "sourcing": "Gustrine, an artist whose poster was commissioned by the Committee on Public Information, picturing Black soldiers charging under the flag with Lincoln looking on. A poster aimed at Black men, promising that service would earn citizenship. The line 'Liberty And Freedom Shall Not Perish — A. Lincoln' is the poster's own wording, a paraphrase of the Gettysburg Address, not a documented Lincoln quotation."
+  }
+ ],
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent to which World War I changed American life at home from 1917 to 1920, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim about the extent of change does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as the Progressive era's faith in government action, three years of neutrality before 1917, or the long tradition of a small federal government.",
+   "notEarned": "A sentence of background with no link to the argument, or background from a later century, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence from documents (first point): earns the point for describing specific and relevant evidence from at least three documents to support an argument about change at home.",
+   "notEarned": "Naming documents without describing their content does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence from documents (second point): earns the point for using the content of at least six documents to support an argument about change at home.",
+   "notEarned": "Using fewer than six documents, or describing them without tying them to the argument, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence beyond the documents: earns the point for describing a specific and relevant example beyond the documents, such as the Committee on Public Information and its Four-Minute Men, the Liberty Bond drives, the Chicago race riot of 1919, or the Palmer Raids of 1920.",
+   "notEarned": "A vague reference to the war with no specific example does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "3.B",
+   "criterion": "Sourcing: earns the point for explaining the relevance of a document's author, purpose, audience, or historical situation, such as the draft law ordering registration, the posters persuading civilians, or the census counting people rather than arguing.",
+   "notEarned": "Naming an author without explaining why the authorship matters does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Complexity: earns the point for demonstrating a complex understanding, such as qualifying the extent of change by area, explaining that the war expanded the government while narrowing liberties, or weighing lasting migration against agencies that were disbanded after the war.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ],
+ "modelOutline": "Thesis: World War I changed American life at home deeply but unevenly: the federal government grew far larger and more active, and hundreds of thousands of people moved, while the liberties the war narrowed stayed narrowed after it and the new agencies were mostly disbanded.\nContext: The United States entered the war in April 1917 after three years of neutrality, in the Progressive era, when reformers already believed government could direct the economy and shape public life.\nEvidence: Documents 1-3 show the government reaching into daily life: the draft registering every man aged 21 to 30, the Hopps poster frightening viewers into enlisting, and the Food Administration asking families to save food. Documents 4-5 show the cost to dissent: Debs jailed for a speech and the Court upholding wartime limits on speech in Schenck. Documents 6-7 show who moved and who served: the census table records the Great Migration to northern cities, and the Gustrine poster recruits Black men with a promise of citizenship.\nBeyond the documents: The Committee on Public Information sent Four-Minute Men to speak in movie theaters, Liberty Bond drives raised about two-thirds of the war's cost, the Chicago riot of 1919 killed 38 people, and the Palmer Raids of 1920 carried the wartime repression into peacetime.\nSourcing: The draft law orders registration, the posters persuade civilians rather than report facts, Debs speaks as a defendant-to-be, Holmes writes as a judge upholding a conviction, and the census counts people rather than arguing.\nComplexity: The change split by area. Government power and migration lasted, while the wartime agencies were disbanded and the narrowed liberties were not restored at once; the war opened doors for Black migrants and women workers even as it closed the door on dissent.",
+ "totalPoints": 7
+}

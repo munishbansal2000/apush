@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-2090",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.3"
+ ],
+ "lesson": "apush-u7-l1",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 3,
+ "answerKey": "D",
+ "skills": [
+  "3.B",
+  "5.A"
+ ],
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "United States Victory in the Spanish-American War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 19",
+    "section": "The Spanish-American War"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Unit 7: The Early 20th Century (1890-1945)"
+   }
+  ]
+ },
+ "stimulus": {
+  "kind": "image",
+  "source_note": "William Dinwiddie, photograph, 1898; Library of Congress LCCN96521936; public domain.",
+  "text": "The photograph shows a large group of soldiers in slouch hats posed on a hilltop in Cuba. Theodore Roosevelt stands at the center in a dark shirt, light trousers, and a slouch hat, his hands on his hips, with an American flag on a pole behind him. A typewritten caption strip at the bottom of the mounted print names the Battle of San Juan and the photographer, William Dinwiddie, 1898."
+ },
+ "stimulus_set": "rough-riders-san-juan-1898",
+ "source": "original; stimulus is a public-domain 1898 photograph by William Dinwiddie",
+ "stem": "The photograph was taken after the fighting on San Juan Hill, not during it. For a historian, that timing matters because the photograph shows",
+ "options": [
+  {
+   "key": "A",
+   "text": "The exact moment the Rough Riders charged up the hill",
+   "misconception": "A posed group portrait taken after the battle cannot show the charge itself."
+  },
+  {
+   "key": "B",
+   "text": "Spanish troops surrendering",
+   "misconception": "No Spanish troops appear in the photograph; it shows only Roosevelt's men posing."
+  },
+  {
+   "key": "C",
+   "text": "The first American flag raised in Cuba",
+   "misconception": "The photograph shows a flag behind the men, but it does not claim to be the first flag raised in Cuba."
+  },
+  {
+   "key": "D",
+   "text": "A posed victory portrait for the public, not the battle itself"
+  }
+ ],
+ "rationales": {
+  "A": "The men are posed and still, standing and sitting for the camera. A charge looks nothing like this.",
+  "B": "Every soldier in the frame is American. No Spanish troops surrender here.",
+  "C": "The flag is part of the pose. The photograph never says it was the first flag raised in Cuba.",
+  "D": "The group is arranged around Roosevelt with the flag behind him: a victory portrait for the folks back home.",
+  "general": "1. Check the moment. The men are posed, still, and looking at the camera after the fighting.\n2. Check the arrangement. Roosevelt stands at the center with the flag behind him, framed like a hero.\n3. Name the kind. This is a victory portrait made for the public, not a record of the battle.\nRemember: a posed photograph argues as much as a written account does, so ask who arranged it and for whom."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2090",
+   "file": "u7/roosevelt-rough-riders-san-juan-1898.jpg",
+   "caption": "Colonel Roosevelt and his Rough Riders atop the hill they captured, Battle of San Juan, photographed by William Dinwiddie, 1898.",
+   "alt": "A large group of soldiers in slouch hats poses on a hilltop; Theodore Roosevelt stands at the center in a dark shirt and light trousers with his hands on his hips, an American flag on a pole behind him; a typewritten caption strip at the bottom names the Battle of San Juan and William Dinwiddie, 1898.",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Colonel_Roosevelt_and_his_Rough_Riders_at_the_top_of_the_hill_which_they_captured,_Battle_of_San_Juan)_-_by_William_Dinwiddie_LCCN96521936.jpg",
+   "license": "Public domain (1898 photograph, Library of Congress LCCN96521936)"
+  }
+ ]
+}

@@ -1,0 +1,88 @@
+{
+ "id": "apush-leq-0073",
+ "type": "leq",
+ "unit": 7,
+ "topics": [
+  "7.9"
+ ],
+ "lesson": "apush-u7-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.9 The Great Depression"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 23",
+    "section": "Great Depression and the New Deal (1929-1939)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Jazz Age and Great Depression (1920-1933)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; prompt written for this question",
+ "stimulus_set": null,
+ "stimulus": {
+  "kind": "none",
+  "source_note": "No stimulus; LEQ prompt only."
+ },
+ "prompt": "Evaluate the extent to which the Great Depression caused a lasting change in the relationship between Americans and their federal government from 1929 to 1939.",
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent to which the Depression caused a lasting change in the relationship between Americans and their federal government from 1929 to 1939, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim about the extent of the change does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as the limited government and business confidence of the 1920s, the Progressive era's earlier reforms, or the Panics of 1893 and 1907.",
+   "notEarned": "A sentence of background with no link to the argument, or background from a later century, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (first point): earns the point for describing specific and relevant examples of how the Depression changed what Americans expected from government, such as bank failures and the demand for deposit insurance, the Bonus Army, or the election of 1932.",
+   "notEarned": "General statements about the Depression with no specific example do not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (second point): earns the point for describing specific and relevant examples of the lasting change, such as the New Deal's relief and reform programs, Social Security, the Wagner Act, or the New Deal coalition.",
+   "notEarned": "Repeating a first-point example, or naming a New Deal program with no specific detail, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Analysis and reasoning (causation): earns the point for explaining how the Depression caused the change, linking the crisis to the new expectations and programs rather than listing them.",
+   "notEarned": "Listing examples with no explanation of how the Depression caused the change does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Analysis and reasoning (complexity): earns the point for a complex argument, such as qualifying the change by group or place, showing limits like the exclusion of farm and domestic workers, or weighing how far the change lasted.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ],
+ "modelOutline": "Thesis: The Depression caused a lasting change in what Americans expected from their government: by 1939 the federal government owed its citizens a floor against hard times, a duty no president before 1929 had accepted.\nContext: The 1920s ran on limited government, with Coolidge cutting taxes and Hoover promising the end of poverty, while earlier panics in 1893 and 1907 had already shown the economy could collapse.\nEvidence for the change in expectations: bank failures wiped out savings and created the demand for deposit insurance; the Bonus Army showed veterans begging for federal help; voters swept Hoover out in 1932 by 472 electoral votes to 59.\nEvidence for the lasting change: the New Deal built relief and reform into federal law, with the FDIC, the CCC, the WPA, Social Security in 1935, and the Wagner Act's protection of unions, and the New Deal coalition kept Democrats in power for decades.\nComplexity: The change was real but uneven. Farm and domestic workers, disproportionately Black and Latino, were left out of key protections, and critics from both the left and the right attacked the New Deal, yet the expectation of a federal floor survived every attack.",
+ "totalPoints": 6
+}

@@ -1,0 +1,72 @@
+{
+  "id": "apush-mcq-2307",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.11"
+  ],
+  "lesson": "apush-u7-l4",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 4,
+  "skills": [
+    "2.B"
+  ],
+  "themes": [
+    "WOR",
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.11 Interwar Foreign Policy"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "Jazz Age and Great Depression (1920-1933)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus": {
+    "kind": "table",
+    "text": "United States military occupations in Latin America came to an end in the 1930s.\n\n| Country | Year the last United States Marines left |\n| Nicaragua | 1933 |\n| Haiti | 1934 |\n\nParaphrase: At the Inter-American Conference in Montevideo, Uruguay, in December 1933, Secretary of State Cordell Hull signed a declaration that no nation has the right to interfere in the internal or external affairs of another nation.",
+    "source_note": "Occupation end years from Barron's Premium 2027, Chapter 9, Topic 7.11, and Princeton Review, Chapter 11. Montevideo declaration paraphrased from Barron's Premium 2027, Chapter 9, Topic 7.11."
+  },
+  "stimulus_set": "good-neighbor-1933",
+  "source": "original; table from Barron's Premium 2027, Chapter 9, Topic 7.11, and Princeton Review, Chapter 11; Montevideo declaration paraphrased from Barron's",
+  "stem": "At Montevideo in 1933, Secretary of State Cordell Hull signed a declaration that no nation has the right to interfere in the affairs of another. That declaration mattered most because it did which of the following?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Rejected the legal claim behind decades of intervention"
+    },
+    {
+      "key": "B",
+      "text": "Gave the United States new bases in Latin America",
+      "misconception": "The policy cut the military presence; bases were not the point."
+    },
+    {
+      "key": "C",
+      "text": "Ended all American trade with Latin America",
+      "misconception": "Trade grew instead, through the Reciprocal Trade Agreements Act of 1934."
+    },
+    {
+      "key": "D",
+      "text": "Brought Latin American nations into the League of Nations",
+      "misconception": "Latin American nations were already in the League; the declaration was about non-intervention."
+    }
+  ],
+  "answerKey": "A",
+  "rationales": {
+    "A": "The declaration took away the claim, used since the Roosevelt Corollary, that the United States could police the hemisphere.",
+    "B": "Background from the books: the Good Neighbor Policy wound down occupations instead of adding bases.",
+    "C": "Background from the books: the Reciprocal Trade Agreements Act of 1934 expanded trade with Latin America.",
+    "D": "Background from the books: the declaration concerned intervention, not League membership.",
+    "general": "1. Since the Roosevelt Corollary of 1904, the United States had claimed a right to intervene in Latin America.\n2. Marines had occupied Nicaragua, Haiti, and the Dominican Republic under that claim.\n3. At Montevideo the United States signed a rule that no nation may interfere in another's affairs.\n4. That signature gave up the legal claim itself, and the Platt Amendment's repeal in 1934 followed the same logic.\nRemember: a declaration matters when it takes away your own claimed right."
+  }
+}

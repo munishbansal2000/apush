@@ -1,0 +1,77 @@
+{
+  "id": "apush-mcq-2350",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.12"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 4,
+  "skills": [
+    "3.B"
+  ],
+  "themes": [
+    "WXT",
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.12 World War II: Mobilization"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "New Deal and WWII (1934-1945)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus": {
+    "kind": "table",
+    "text": "Unemployment rate in the United States, 1940-1945 (percent of the civilian labor force). The table shows the share of the civilian labor force without work in each year.\n\n| 1940 | 14.6% |\n| 1941 | 9.9% |\n| 1942 | 4.7% |\n| 1943 | 1.9% |\n| 1944 | 1.2% |\n| 1945 | 1.9% |",
+    "source_note": "Annual averages from Historical Statistics of the United States, Colonial Times to 1970 (U.S. Census Bureau)."
+  },
+  "stimulus_set": "war-economy-1940-1945",
+  "source": "original; stimulus table from Historical Statistics of the United States",
+  "stem": "The table best supports which of the following claims about the Great Depression?",
+  "options": [
+    {
+      "key": "A",
+      "text": "The Depression ended the moment the war began in Europe",
+      "misconception": "Unemployment was still 14.6 percent in 1940, a year into the European war."
+    },
+    {
+      "key": "B",
+      "text": "Unemployment stayed high until after the war ended",
+      "misconception": "Unemployment fell to 1.2 percent by 1944, before the war ended."
+    },
+    {
+      "key": "C",
+      "text": "The Depression was caused by the war itself",
+      "misconception": "The Depression began in 1929, a decade before the war."
+    },
+    {
+      "key": "D",
+      "text": "War spending and war jobs brought Depression-era joblessness to an end"
+    }
+  ],
+  "answerKey": "D",
+  "rationales": {
+    "A": "Unemployment stayed near 15 percent through 1940, so the European war alone did not end it.",
+    "B": "The table shows unemployment at 1.2 percent in 1944, while the war was still being fought.",
+    "C": "The Depression began with the 1929 crash, long before the war started.",
+    "D": "As war production and military service absorbed workers, the jobless rate fell from 14.6 to 1.2 percent.",
+    "general": "1. In 1940 unemployment was 14.6 percent, a Depression-level figure.\n2. By 1944 it had fallen to 1.2 percent, a level that means nearly everyone who wanted work had it.\n3. The fall tracks the war years, when factories and the military absorbed millions.\n4. So war spending and war jobs, not time alone, ended the joblessness.\nRemember: a table that falls across the war years points to the war as the cause, so check the dates."
+  }
+}

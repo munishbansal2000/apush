@@ -1,0 +1,77 @@
+{
+  "id": "apush-mcq-2381",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.13"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "test",
+  "difficulty": 4,
+  "skills": [
+    "3.B"
+  ],
+  "themes": [
+    "WOR",
+    "GEO"
+  ],
+  "reasoning": "comparison",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.13 World War II: Military"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "New Deal and WWII (1934-1945)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus": {
+    "kind": "text",
+    "text": "Paraphrase: For much of the war, German submarines, called U-boats, hunted Allied supply ships in the Atlantic Ocean, trying to starve Britain of food and war goods. New technology, including sonar, helped the Allies find and sink the submarines, and by 1943 the Allies were winning the Battle of the Atlantic. In the Pacific, American submarines did the same work in reverse: by late 1944 they were sinking large numbers of Japanese merchant ships and tankers, cutting Japan off from the oil and resources its war effort needed.",
+    "source_note": "Original secondary summary drawn from 5 Steps Chapter 24 (Battle of the Atlantic; sonar; American submarines cutting Japan off from resources by late 1944)."
+  },
+  "stimulus_set": "atlantic-submarines-1943",
+  "source": "original; stimulus drawn from book-grounded figures and paraphrases (see source_note)",
+  "stem": "The passage describes submarine warfare in both oceans. What did control of the sea lanes decide in each case?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Whether Britain and Japan received the food, oil, and goods they needed"
+    },
+    {
+      "key": "B",
+      "text": "Whether Germany could invade the United States directly by sea",
+      "misconception": "Germany never planned to invade the United States; its U-boats hunted supply ships."
+    },
+    {
+      "key": "C",
+      "text": "Whether the Soviet Union would join the war against Japan in Asia",
+      "misconception": "The Soviet Union joined the war against Japan in August 1945, for its own reasons."
+    },
+    {
+      "key": "D",
+      "text": "Whether aircraft carriers would ever be built again after the war",
+      "misconception": "Carriers were built throughout the war and after it."
+    }
+  ],
+  "answerKey": "A",
+  "rationales": {
+    "A": "Britain needed supplies across the Atlantic, and Japan needed oil across the Pacific.",
+    "B": "Germany's U-boats hunted supply ships; no invasion of the United States was planned.",
+    "C": "The Soviet Union entered the war against Japan in August 1945.",
+    "D": "Carriers were built throughout the war and after it.",
+    "general": "1. The passage shows U-boats trying to starve Britain of food and war goods.\n2. It then shows American submarines cutting Japan off from oil and resources.\n3. Background from the books: both Britain and Japan depended on ships for what their war efforts needed.\n4. So in each ocean, the side that lost the sea lanes lost its supplies.\nRemember: island nations live or die by shipping, so follow the supply lines."
+  }
+}

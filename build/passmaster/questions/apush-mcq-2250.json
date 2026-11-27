@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-2250",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.9"
+ ],
+ "lesson": "apush-u7-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "D",
+ "skills": [
+  "2.A"
+ ],
+ "themes": [
+  "WXT",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.9 The Great Depression"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 23",
+    "section": "Great Depression and the New Deal (1929-1939)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Jazz Age and Great Depression (1920-1933)"
+   }
+  ],
+  "primary_sources": [
+   "U.S. Bureau of Labor Statistics historical series (Economic Report of the President, Table B-22)"
+  ]
+ },
+ "stimulus": {
+  "kind": "table",
+  "text": "| Year | Unemployment rate |\n| 1929 | 3.2% |\n| 1930 | 8.7% |\n| 1931 | 15.9% |\n| 1932 | 23.6% |\n| 1933 | 24.9% |\n\nUnemployment as a share of the civilian labor force, 1929–1933.",
+  "source_note": "Figures from the U.S. Bureau of Labor Statistics historical series, as published in the Economic Report of the President, Table B-22."
+ },
+ "source": "original; stimulus table built from U.S. Bureau of Labor Statistics historical series",
+ "stem": "Between 1929 and 1933, the unemployment rate",
+ "options": [
+  {
+   "key": "A",
+   "text": "fell by about half",
+   "misconception": "The table shows the rate rising every year, from 3.2 percent to 24.9 percent. It did not fall."
+  },
+  {
+   "key": "B",
+   "text": "stayed about the same",
+   "misconception": "The rate rose from 3.2 percent to 24.9 percent. It did not stay the same."
+  },
+  {
+   "key": "C",
+   "text": "rose to about 10 percent",
+   "misconception": "The rate passed 10 percent in 1931 and kept rising, reaching 24.9 percent in 1933."
+  },
+  {
+   "key": "D",
+   "text": "rose to about one in four"
+  }
+ ],
+ "rationales": {
+  "A": "The table shows 3.2 percent in 1929 and 24.9 percent in 1933, a rise, not a fall.",
+  "B": "The table shows the rate climbing every year from 1929 to 1933.",
+  "C": "The table shows 15.9 percent in 1931, already past 10 percent, and 24.9 percent by 1933.",
+  "D": "Background from the books: the rate reached 24.9 percent in 1933, about one worker in four, the highest in American history.",
+  "general": "1. Read the first row: 3.2 percent in 1929.\n2. Read the last row: 24.9 percent in 1933, the worst year of the Depression.\n3. Ask what 24.9 percent means: about one worker in four.\n4. The rate rose to about one in four.\nRemember: a percent is a share, so turn it into people before judging how bad it was."
+ },
+ "stimulus_set": "unemployment-1929-1933"
+}

@@ -1,0 +1,75 @@
+{
+ "id": "apush-mcq-2151",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.5"
+ ],
+ "lesson": "apush-u7-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "A",
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.5 World War I: Military and Diplomacy"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 21",
+    "section": "United States and World War I (1914-1921)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "The Progressive Era and World War I (1900-1920)"
+   }
+  ]
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Figures from 5 Steps to a 5 2024, Chapter 21.",
+  "text": "| Date | American forces in France |\n| June 1917 | The first American troops land in France: about 14,500 men under General John J. Pershing. |\n| Spring 1918 | Germany launches offensives that bring its armies within about 50 miles of Paris. American troops help stop the drive at Chateau-Thierry. |\n| September 1918 | American troops erase a German salient at St. Mihiel, then open the Meuse-Argonne Offensive with about one million American soldiers. |\n| November 11, 1918 | Germany signs the armistice. About two million American soldiers have reached France, and about 115,000 Americans have died in the war, roughly half in battle. |"
+ },
+ "stimulus_set": "aef-france",
+ "source": "original; table drawn from 5 Steps to a 5 2024, Chapter 21",
+ "stem": "According to the table, the American Expeditionary Force's first troops reached France in June 1917 numbering about",
+ "options": [
+  {
+   "key": "A",
+   "text": "14,500 men"
+  },
+  {
+   "key": "B",
+   "text": "one million men",
+   "misconception": "About one million American soldiers took part in the Meuse-Argonne Offensive in the autumn of 1918, not in the first landing of June 1917."
+  },
+  {
+   "key": "C",
+   "text": "two million men",
+   "misconception": "About two million American soldiers had reached France by the armistice in November 1918. The first contingent was far smaller."
+  },
+  {
+   "key": "D",
+   "text": "four million men",
+   "misconception": "Four million was the size of the whole American army by the end of the war. Only a small part of it was in France in June 1917."
+  }
+ ],
+ "rationales": {
+  "A": "The table gives the first landing as about 14,500 men under General Pershing in June 1917, a small force that promised many more to come.",
+  "B": "About one million American soldiers took part in the Meuse-Argonne Offensive in the autumn of 1918, not in the first landing of June 1917.",
+  "C": "About two million American soldiers had reached France by the armistice in November 1918. The first contingent was far smaller.",
+  "D": "Four million was the size of the whole American army by the end of the war. Only a small part of it was in France in June 1917.",
+  "general": "1. Find the June 1917 row. It names the first landing under General Pershing.\n2. Read the number in that row. About 14,500 men.\n3. Keep the other numbers in their own rows. One million belongs to the Meuse-Argonne, two million to the armistice, four million to the whole army.\nRemember: a table gives each number its own row, so match the number to the row the question asks about."
+ }
+}

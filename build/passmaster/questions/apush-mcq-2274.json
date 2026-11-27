@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-2274",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.10"
+ ],
+ "lesson": "apush-u7-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "2.B"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.10 The New Deal"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 23",
+    "section": "Great Depression and the New Deal (1929-1939)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "New Deal and WWII (1934-1945)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "text": "Unemployment in the United States, 1929-1941 (percent of the labor force). Source: U.S. Bureau of Labor Statistics historical series (Economic Report of the President, Table B-22).\n\n| Year | Unemployment rate |\n| 1929 | 3.2 percent |\n| 1930 | 8.7 percent |\n| 1931 | 15.9 percent |\n| 1932 | 23.6 percent |\n| 1933 | 24.9 percent |\n| 1934 | 21.7 percent |\n| 1935 | 20.1 percent |\n| 1936 | 16.9 percent |\n| 1937 | 14.3 percent |\n| 1938 | 19.0 percent |\n| 1939 | 17.2 percent |\n| 1940 | 14.6 percent |\n| 1941 | 9.9 percent |",
+  "source_note": "U.S. Bureau of Labor Statistics historical unemployment series (Economic Report of the President, Table B-22). The books give the same landmarks: about 25 percent in 1933 and 20 percent in 1935."
+ },
+ "stimulus_set": "unemployment-1929-1941",
+ "source": "original; table from U.S. Bureau of Labor Statistics historical unemployment series",
+ "stem": "The rise in unemployment from 14.3 percent in 1937 to 19.0 percent in 1938 best supports which claim?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The New Deal had already ended the Depression by 1937",
+   "misconception": "Unemployment rose sharply in 1938, so the Depression had not ended by 1937."
+  },
+  {
+   "key": "B",
+   "text": "Unemployment fell in every year after 1933 without exception",
+   "misconception": "The table breaks that pattern in 1938, when unemployment jumped from 14.3 to 19.0 percent."
+  },
+  {
+   "key": "C",
+   "text": "Federal spending cuts in 1937 helped bring a new downturn"
+  },
+  {
+   "key": "D",
+   "text": "Wartime production had already ended unemployment by 1938",
+   "misconception": "The United States had not yet entered the war in 1938, and unemployment that year rose to 19.0 percent."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "Background from the books: with unemployment back near 19 percent in 1938, no one could claim the Depression had ended the year before.",
+  "B": "Background from the books: the 1938 rise breaks the steady fall after 1933, so unemployment did not fall every year.",
+  "C": "Background from the books: the books call the 1937-1938 downturn the Roosevelt Recession: Roosevelt cut spending to balance the budget, and the economy turned down again.",
+  "D": "Background from the books: wartime production came later; in 1938 unemployment rose, and the sharp fall waited until 1941.",
+  "general": "1. The table falls from 24.9 percent in 1933 to 14.3 percent in 1937.\n2. Then it jumps to 19.0 percent in 1938, a break in the recovery.\n3. The books tie that break to Roosevelt cutting federal spending in 1937 to balance the budget.\n4. So the 1938 rise is evidence that cutting spending can restart a downturn.\nRemember: a break in a trend line is the clue; ask what changed just before the break."
+ }
+}

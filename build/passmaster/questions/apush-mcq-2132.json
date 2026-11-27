@@ -1,0 +1,88 @@
+{
+ "id": "apush-mcq-2132",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.5"
+ ],
+ "lesson": "apush-u7-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "C",
+ "skills": [
+  "2.B"
+ ],
+ "themes": [
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.5 World War I: Military and Diplomacy"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 21",
+    "section": "United States and World War I (1914-1921)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "The Progressive Era and World War I (1900-1920)"
+   }
+  ],
+  "primary_sources": [
+   "Zimmermann telegram, January 16, 1917"
+  ]
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "source_note": "Decoded text of the Zimmermann telegram, January 16, 1917 (public domain; U.S. National Archives). Photograph: the telegram as received by the German ambassador to Mexico, NARA 302025.",
+  "text": "The decoded telegram, sent by German Foreign Secretary Arthur Zimmermann from Berlin on January 16, 1917, to the German minister in Mexico (verbatim excerpts):\n\n\"We intend to begin on the first of February unrestricted submarine warfare. We shall endeavor in spite of this to keep the United States of America neutral. In the event of this not succeeding, we make Mexico a proposal of alliance on the following basis: make war together, make peace together, generous financial support and an understanding on our part that Mexico is to reconquer the lost territory in Texas, New Mexico, and Arizona.\"\n\nThe photograph shows the telegram as received: a Western Union form headed \"GERMAN LEGATION, MEXICO CITY,\" filled with rows of code numbers and stamped \"JAN 19 1917.\""
+ },
+ "stimulus_set": "zimmermann-telegram",
+ "source": "original; stimulus quoted verbatim from the decoded Zimmermann telegram, January 16, 1917",
+ "stem": "The telegram most directly helps explain why American public opinion turned against Germany in 1917, because it showed Germany",
+ "options": [
+  {
+   "key": "A",
+   "text": "had already invaded Mexico with a large army",
+   "misconception": "Germany had not invaded Mexico. The telegram proposed an alliance in the event of war; no invasion had happened."
+  },
+  {
+   "key": "B",
+   "text": "was willing to surrender its colonies to the United States",
+   "misconception": "Germany offered Mexico territory, not its colonies to the United States. Nothing in the telegram surrenders German colonies."
+  },
+  {
+   "key": "C",
+   "text": "planning an attack on American territory through a foreign alliance"
+  },
+  {
+   "key": "D",
+   "text": "refusing to trade with the United States any longer",
+   "misconception": "The telegram is about war and alliances, not about trade. Germany's trade with the United States had already been cut off by the British blockade."
+  }
+ ],
+ "rationales": {
+  "A": "Germany had not invaded Mexico. The telegram proposed an alliance in the event of war; no invasion had happened.",
+  "B": "Germany offered Mexico territory, not its colonies to the United States. Nothing in the telegram surrenders German colonies.",
+  "C": "The telegram offered Mexico German help to reconquer Texas, New Mexico, and Arizona. Americans read it as Germany plotting to take American land through an alliance with Mexico.",
+  "D": "The telegram is about war and alliances, not about trade. Germany's trade with the United States had already been cut off by the British blockade.",
+  "general": "1. Ask what Americans learned from the telegram. Germany was offering Mexico help to take back American land.\n2. Ask why that mattered more than the submarine campaign. Submarines threatened ships at sea; this threatened American soil.\n3. Background from the books: the telegram was published in American newspapers in early 1917, just as Germany resumed unrestricted submarine warfare.\nRemember: a threat to a country's own territory moves opinion faster than a threat to its ships or its trade."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2132",
+   "file": "u7/original-misc-sourcing-05.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Zimmermann_Telegram_as_Received_by_the_German_Ambassador_to_Mexico_-_NARA_-_302025.tif",
+   "license": "Public domain (U.S. National Archives record, 1917)",
+   "caption": "The Zimmermann telegram as received in Mexico City, January 1917.",
+   "alt": "A Western Union telegram form headed German Legation, Mexico City, filled with rows of code numbers and stamped January 19, 1917."
+  }
+ ]
+}

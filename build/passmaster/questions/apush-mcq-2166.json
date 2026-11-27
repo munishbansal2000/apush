@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-2166",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.6"
+ ],
+ "lesson": "apush-u7-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "C",
+ "skills": [
+  "4.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.6 World War I: Home Front"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 21",
+    "section": "United States and World War I (1914-1921)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "The Progressive Era and World War I (1900-1920)"
+   }
+  ],
+  "primary_sources": [
+   "Schenck v. United States, 249 U.S. 47 (1919)"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "Justice Oliver Wendell Holmes, writing for a unanimous Supreme Court in Schenck v. United States, March 3, 1919 (verbatim excerpts):\n\n\"We admit that, in many places and in ordinary times, the defendants, in saying all that was said in the circular, would have been within their constitutional rights. But the character of every act depends upon the circumstances in which it is done. The most stringent protection of free speech would not protect a man in falsely shouting fire in a theatre and causing a panic. . . . The question in every case is whether the words used are used in such circumstances and are of such a nature as to create a clear and present danger that they will bring about the substantive evils that Congress has a right to prevent. It is a question of proximity and degree.\"",
+  "source_note": "Verbatim excerpts from Schenck v. United States, 249 U.S. 47 (1919) (public domain)."
+ },
+ "stimulus_set": "schenck",
+ "source": "original; stimulus quoted verbatim from Schenck v. United States, 249 U.S. 47 (1919)",
+ "stem": "Holmes's \"clear and present danger\" test is most similar in purpose to which earlier government action?",
+ "options": [
+  {
+   "key": "A",
+   "text": "the passage of the Homestead Act to settle the West",
+   "misconception": "The Homestead Act gave away land; it did not limit speech."
+  },
+  {
+   "key": "B",
+   "text": "the creation of the Federal Reserve to manage the money supply",
+   "misconception": "The Federal Reserve managed banks; it did not limit speech."
+  },
+  {
+   "key": "C",
+   "text": "the Alien and Sedition Acts, which limited criticism of the government"
+  },
+  {
+   "key": "D",
+   "text": "the passage of the Sherman Antitrust Act to break up monopolies",
+   "misconception": "The Sherman Act broke up monopolies; it did not limit speech."
+  }
+ ],
+ "rationales": {
+  "A": "The Homestead Act gave away land. It did not limit speech.",
+  "B": "The Federal Reserve managed banks. It did not limit speech.",
+  "C": "In 1798, as in 1919, the government claimed that criticism in a time of crisis with France, then with Germany, could be punished to protect the nation.",
+  "D": "The Sherman Act broke up monopolies. It did not limit speech.",
+  "general": "1. Name what Holmes's test does: it lets the government punish speech it calls dangerous.\n2. Ask which earlier act did the same thing. The Alien and Sedition Acts punished criticism of the government.\n3. Check the other options. Each one does something else entirely.\nRemember: to find a continuity, match what the government did, not the century it did it in."
+ }
+}

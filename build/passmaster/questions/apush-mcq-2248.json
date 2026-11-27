@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-2248",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.9"
+ ],
+ "lesson": "apush-u7-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "D",
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.9 The Great Depression"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 23",
+    "section": "Great Depression and the New Deal (1929-1939)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Jazz Age and Great Depression (1920-1933)"
+   }
+  ],
+  "primary_sources": [
+   "Federal Reserve Bulletin, September 1937, Table 1 (bank suspensions, 1921-1936)"
+  ]
+ },
+ "stimulus": {
+  "kind": "table",
+  "text": "| Year | Banks that closed |\n| 1929 | 659 |\n| 1930 | 1,350 |\n| 1931 | 2,293 |\n| 1932 | 1,453 |\n| 1933 | 4,000 |\n\nBank suspensions in the United States, 1929–1933. The 1933 figure counts banks closed in the banking crisis and not licensed to reopen after the March 1933 bank holiday.",
+  "source_note": "Figures from the Federal Reserve Bulletin, September 1937, Table 1 (bank suspensions, 1921–1936)."
+ },
+ "source": "original; stimulus table built from Federal Reserve Bulletin, September 1937, Table 1",
+ "stem": "The pattern in the table is best explained by which of the following?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The government closed healthy banks to punish speculators",
+   "misconception": "The government did not close healthy banks. Banks closed because they could not meet withdrawals or repay loans."
+  },
+  {
+   "key": "B",
+   "text": "Farmers repaid their loans early as crop prices rose",
+   "misconception": "Crop prices fell in the 1920s, they did not rise. Farmers fell behind on loans, and rural banks failed."
+  },
+  {
+   "key": "C",
+   "text": "New banks opened faster than old banks closed",
+   "misconception": "If new banks had outpaced closures, the banking system would have grown. Instead thousands closed and credit dried up."
+  },
+  {
+   "key": "D",
+   "text": "Rumors of failure caused runs that closed even sound banks"
+  }
+ ],
+ "rationales": {
+  "A": "Background from the books: banks failed when they could not weather panic withdrawals, not because the government punished them.",
+  "B": "Background from the books: farm prices collapsed after World War I, and 6,200 rural banks failed in the 1920s as farmers could not repay.",
+  "C": "Background from the books: the table counts closures, and the Depression saw the banking system shrink, not grow.",
+  "D": "Background from the books: runs on banks began with rumors that a bank was failing, and customers rushed to withdraw savings, so even banks that might have survived were drained and failed.",
+  "general": "1. Read the pattern: closures climb steeply after 1929.\n2. Ask what closes banks so fast. Background from the books: rumors set off runs, and runs drain a bank's cash.\n3. Ask whether only weak banks fell: runs could close even sound ones.\n4. Rumors and runs best explain the pattern.\nRemember: a bank run is a panic about a bank, so ask what fear does to a bank's cash."
+ },
+ "stimulus_set": "bank-suspensions-1929-1933"
+}

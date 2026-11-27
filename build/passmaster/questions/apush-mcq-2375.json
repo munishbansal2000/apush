@@ -1,0 +1,87 @@
+{
+  "id": "apush-mcq-2375",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.13"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "test",
+  "difficulty": 4,
+  "skills": [
+    "4.A"
+  ],
+  "themes": [
+    "WOR",
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.13 World War II: Military"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "New Deal and WWII (1934-1945)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus": {
+    "kind": "image",
+    "text": "This photograph, taken from the air on August 9, 1945, shows the mushroom-shaped cloud rising over Nagasaki, Japan, after the second atomic bomb used in war was dropped that morning. A wide white cloud cap spreads at the top, a dark column of smoke rises beneath it, and smaller clouds drift below.",
+    "source_note": "Photograph of the Nagasaki atomic bombing, August 9, 1945, taken by Lieutenant Charles Levy from a B-29 (U.S. government photograph, public domain). Viewed before use; listed in the shared image pool as saq-set-26-q3. The catalog license note reads 'PD: pre-1930 / CC0,' which is wrong for a 1945 photograph; the correct basis is that it is a U.S. government work."
+  },
+  "stimulus_set": "atomic-bomb-nagasaki-1945",
+  "source": "original; stimulus drawn from book-grounded figures and paraphrases (see source_note)",
+  "stem": "Which of the following best describes the debate over President Truman's decision to use the atomic bombs?",
+  "options": [
+    {
+      "key": "A",
+      "text": "The decision was never questioned by anyone at all",
+      "misconception": "Critics have questioned the decision since the war, and supporters still defend it."
+    },
+    {
+      "key": "B",
+      "text": "Supporters cite lives an invasion would cost; critics cite civilian deaths"
+    },
+    {
+      "key": "C",
+      "text": "Truman dropped the bombs to force Germany to surrender",
+      "misconception": "Germany had surrendered in May 1945, three months before the bombs."
+    },
+    {
+      "key": "D",
+      "text": "The bombs were dropped only after Japan had already surrendered",
+      "misconception": "Japan surrendered after the bombs, not before them."
+    }
+  ],
+  "answerKey": "B",
+  "rationales": {
+    "A": "The decision has been debated ever since the war.",
+    "B": "Supporters cite the lives an invasion would have cost; critics cite the civilian deaths.",
+    "C": "Germany surrendered in May 1945, before the bombs were dropped.",
+    "D": "Japan surrendered after the bombs, in September 1945.",
+    "general": "1. The photograph shows the cloud over Nagasaki, the second bomb, dropped August 9, 1945.\n2. Background from the books: Truman and his planners feared an invasion of Japan would cost hundreds of thousands of American lives.\n3. Critics answer that Japan was already beaten and that the bombs killed civilians.\n4. Both sides agree the bombs ended the war quickly; they disagree about whether the cost was justified.\nRemember: a debate with two live sides needs both arguments stated fairly before you judge."
+  },
+  "figures": [
+    {
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Nagasakibomb.jpg",
+      "license": "Public domain (U.S. government photograph)",
+      "file": "u8/saq-set-26-q3.jpg",
+      "caption": "The mushroom cloud over Nagasaki, August 9, 1945",
+      "alt": "Aerial photograph of a huge white mushroom-shaped cloud rising above smaller clouds, with a dark column of smoke beneath it",
+      "id": "fig-apush-mcq-2375"
+    }
+  ]
+}

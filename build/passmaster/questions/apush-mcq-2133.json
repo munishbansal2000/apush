@@ -1,0 +1,88 @@
+{
+ "id": "apush-mcq-2133",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.5"
+ ],
+ "lesson": "apush-u7-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "B",
+ "skills": [
+  "2.C"
+ ],
+ "themes": [
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.5 World War I: Military and Diplomacy"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 21",
+    "section": "United States and World War I (1914-1921)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "The Progressive Era and World War I (1900-1920)"
+   }
+  ],
+  "primary_sources": [
+   "Zimmermann telegram, January 16, 1917"
+  ]
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "source_note": "Decoded text of the Zimmermann telegram, January 16, 1917 (public domain; U.S. National Archives). Photograph: the telegram as received by the German ambassador to Mexico, NARA 302025.",
+  "text": "The decoded telegram, sent by German Foreign Secretary Arthur Zimmermann from Berlin on January 16, 1917, to the German minister in Mexico (verbatim excerpts):\n\n\"We intend to begin on the first of February unrestricted submarine warfare. We shall endeavor in spite of this to keep the United States of America neutral. In the event of this not succeeding, we make Mexico a proposal of alliance on the following basis: make war together, make peace together, generous financial support and an understanding on our part that Mexico is to reconquer the lost territory in Texas, New Mexico, and Arizona.\"\n\nThe photograph shows the telegram as received: a Western Union form headed \"GERMAN LEGATION, MEXICO CITY,\" filled with rows of code numbers and stamped \"JAN 19 1917.\""
+ },
+ "stimulus_set": "zimmermann-telegram",
+ "source": "original; stimulus quoted verbatim from the decoded Zimmermann telegram, January 16, 1917",
+ "stem": "Zimmermann sent the telegram in January 1917 most directly because Germany",
+ "options": [
+  {
+   "key": "A",
+   "text": "had decided to abandon submarine warfare and seek a negotiated peace with Britain",
+   "misconception": "The telegram announces the opposite: unrestricted submarine warfare begins on February 1. Germany was escalating, not seeking peace."
+  },
+  {
+   "key": "B",
+   "text": "expected to resume unrestricted submarine warfare and foresaw war with the United States"
+  },
+  {
+   "key": "C",
+   "text": "wanted Mexico to declare war on Britain and France",
+   "misconception": "The offer is aimed at the United States, not at Britain and France. Mexico was to attack the United States if the United States entered the war."
+  },
+  {
+   "key": "D",
+   "text": "had learned that the United States planned to invade Mexico",
+   "misconception": "Nothing in the telegram suggests the United States planned to invade Mexico. Germany feared the United States would enter the European war, not invade Mexico."
+  }
+ ],
+ "rationales": {
+  "A": "The telegram announces the opposite: unrestricted submarine warfare begins on February 1. Germany was escalating, not seeking peace.",
+  "B": "The telegram opens by announcing unrestricted submarine warfare on February 1, then plans for the war with the United States that Germany expected to follow. The Mexico offer was preparation for that war.",
+  "C": "The offer is aimed at the United States, not at Britain and France. Mexico was to attack the United States if the United States entered the war.",
+  "D": "Nothing in the telegram suggests the United States planned to invade Mexico. Germany feared the United States would enter the European war, not invade Mexico.",
+  "general": "1. Read the telegram's first sentence. Unrestricted submarine warfare begins on February 1.\n2. Read the next sentence. Germany will try to keep the United States neutral, but plans for the case that it fails.\n3. Connect the two parts. The Mexico offer is a backup plan for the war Germany expects its submarine campaign to cause.\nRemember: when a message pairs an action with a backup plan, the backup plan tells you what the sender expects the action to cause."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2133",
+   "file": "u7/original-misc-sourcing-05.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Zimmermann_Telegram_as_Received_by_the_German_Ambassador_to_Mexico_-_NARA_-_302025.tif",
+   "license": "Public domain (U.S. National Archives record, 1917)",
+   "caption": "The Zimmermann telegram as received in Mexico City, January 1917.",
+   "alt": "A Western Union telegram form headed German Legation, Mexico City, filled with rows of code numbers and stamped January 19, 1917."
+  }
+ ]
+}

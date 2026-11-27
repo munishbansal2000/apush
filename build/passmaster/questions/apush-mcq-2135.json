@@ -1,0 +1,76 @@
+{
+ "id": "apush-mcq-2135",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.5"
+ ],
+ "lesson": "apush-u7-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "A",
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "WXT",
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.5 World War I: Military and Diplomacy"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 21",
+    "section": "United States and World War I (1914-1921)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "The Progressive Era and World War I (1900-1920)"
+   }
+  ]
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Dates and figures from Barron's Premium 2027, Chapter 9, and 5 Steps to a 5 2024, Chapter 21.",
+  "text": "| Date | Event |\n| May 7, 1915 | A German submarine sinks the British liner Lusitania; nearly 1,200 people die, including 128 Americans. |\n| August 19, 1915 | A German submarine sinks the British liner Arabic; two Americans die. Germany pledges not to sink passenger ships without warning. |\n| March 24, 1916 | A German submarine torpedoes the French ferry Sussex; several Americans are injured. Germany issues the Sussex Pledge, promising not to sink merchant ships without warning. |\n| January 31, 1917 | Germany announces unrestricted submarine warfare, sinking ships of any nation carrying supplies to the Allies. |\n| April 6, 1917 | Congress declares war on Germany. |"
+ },
+ "stimulus_set": "submarine-road-to-war",
+ "source": "original; table drawn from Barron's Premium 2027, Chapter 9, and 5 Steps to a 5 2024, Chapter 21",
+ "stem": "The events in the table best help explain why, by 1916, American trade had shifted almost entirely toward the Allies, because",
+ "options": [
+  {
+   "key": "A",
+   "text": "the British blockade cut off trade with Germany while German submarines attacked ships bound for Britain"
+  },
+  {
+   "key": "B",
+   "text": "Germany had agreed to sell its merchant fleet and its overseas colonies to the United States",
+   "misconception": "Germany sold no merchant fleet to the United States. The table is about sinkings and pledges, not about selling ships."
+  },
+  {
+   "key": "C",
+   "text": "the United States had joined the Triple Entente as a full member in 1915 alongside Britain and France",
+   "misconception": "The United States never joined the Triple Entente. It stayed neutral until April 1917 and then entered as an Associated Power, not as an Entente member."
+  },
+  {
+   "key": "D",
+   "text": "Britain had stopped buying American goods and food after the Sussex sinking in March 1916",
+   "misconception": "Britain kept buying American goods through the war; American trade with the Allies rose sharply. The Sussex sinking injured Americans, but it did not stop British buying."
+  }
+ ],
+ "rationales": {
+  "A": "Background from the books: Britain's navy controlled the Atlantic and blocked goods bound for Germany, while Germany answered with submarines against ships bound for Britain. Trade followed the open sea lane, which led to the Allies.",
+  "B": "Germany sold no merchant fleet to the United States. The table is about sinkings and pledges, not about selling ships.",
+  "C": "The United States never joined the Triple Entente. It stayed neutral until April 1917 and then entered as an Associated Power, not as an Entente member.",
+  "D": "Britain kept buying American goods through the war; American trade with the Allies rose sharply. The Sussex sinking injured Americans, but it did not stop British buying.",
+  "general": "1. Ask who controlled the sea lanes. Britain's navy blocked trade with Germany, so American goods could reach the Allies but not Germany.\n2. Ask what Germany did in reply. Its submarines attacked ships carrying supplies to Britain, which is the subject of every row in the table.\n3. Connect trade to the table. The sinkings show the German answer to a trade pattern that already favored the Allies.\nRemember: when trade shifts during a war, look first at who controls the routes the goods travel."
+ }
+}

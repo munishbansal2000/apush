@@ -1,0 +1,88 @@
+{
+ "id": "apush-leq-0074",
+ "type": "leq",
+ "unit": 7,
+ "topics": [
+  "7.10"
+ ],
+ "lesson": "apush-u7-l4",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.10 The New Deal"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 23",
+    "section": "Great Depression and the New Deal (1929-1939)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "New Deal and WWII (1934-1945)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus_set": null,
+ "stimulus": {
+  "kind": "none",
+  "source_note": "No stimulus; LEQ prompt only."
+ },
+ "source": "original; prompt written for this question",
+ "prompt": "Evaluate the extent to which the New Deal changed the role of the federal government in the United States from 1933 to 1945.",
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent to which the New Deal changed the role of the federal government in the United States from 1933 to 1945, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim about the extent of the change does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as the limited government and business confidence of the 1920s, the Progressive era's earlier reforms, or the Panics of 1893 and 1907.",
+   "notEarned": "A sentence of background with no link to the argument, or background from a later century, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (first point): earns the point for describing specific and relevant examples of the federal government's new role, such as the FDIC, the CCC, the AAA, the TVA, or the SEC.",
+   "notEarned": "General statements about the New Deal with no specific example do not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (second point): earns the point for describing specific and relevant examples of the lasting change, such as Social Security, the Wagner Act, the New Deal coalition, or wartime spending that carried the new role into the 1940s.",
+   "notEarned": "Repeating a first-point example, or naming a New Deal program with no specific detail, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Analysis and reasoning (continuity and change): earns the point for explaining how the federal role changed and what stayed the same, linking the programs to the change rather than listing them.",
+   "notEarned": "Listing examples with no explanation of what changed and what continued does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Analysis and reasoning (complexity): earns the point for a complex argument, such as qualifying the change by group or place, showing limits like the exclusion of farm and domestic workers or the Court's rulings, or weighing how far the change lasted.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ],
+ "modelOutline": "Thesis: The New Deal changed the federal government's role to a great extent: by 1945 Washington managed banks, insured savings, supported unions, and owed citizens a floor against hard times, duties it had refused before 1933.\nContext: The 1920s ran on limited government, with Coolidge cutting taxes and Hoover refusing direct federal relief, while earlier panics in 1893 and 1907 had already shown the economy could collapse.\nEvidence for the new role: the bank holiday and the FDIC put Washington behind ordinary savings; the CCC and the WPA gave the unemployed federal jobs; the AAA managed farm output; the TVA built dams and sold electricity across a whole region.\nEvidence for the lasting change: the Social Security Act of 1935 built pensions and unemployment insurance, the Wagner Act protected unions and helped membership rise from 3 million to 10.5 million, the New Deal coalition kept Democrats in power for decades, and wartime spending in the 1940s carried deficit spending into the mainstream.\nContinuity: some limits stayed. The Supreme Court struck down the NIRA and the AAA, the court-packing plan failed, and the Conservative Manifesto of 1937 showed a lasting opposition to big government.\nComplexity: The change was real but uneven. Farm and domestic workers, disproportionately Black and Latino, were left out of Social Security at first, and the Depression itself ended only with wartime production, yet the expectation of a federal floor survived every attack.",
+ "totalPoints": 6
+}

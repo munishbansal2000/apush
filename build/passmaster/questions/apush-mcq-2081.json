@@ -1,0 +1,89 @@
+{
+ "id": "apush-mcq-2081",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.3"
+ ],
+ "lesson": "apush-u7-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "A",
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "The Treaty of Paris"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 19",
+    "section": "The Spanish-American War"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Unit 7: The Early 20th Century (1890-1945)"
+   }
+  ],
+  "primary_sources": [
+   "Treaty of Paris, December 10, 1898"
+  ]
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "source_note": "Treaty of Paris, signed December 10, 1898, public domain (abridged); photograph: raising the American flag at the Government House, Honolulu, August 12, 1898, public domain.",
+  "text": "\"Article I. Spain relinquishes all claim of sovereignty over and title to Cuba. Article II. Spain cedes to the United States the island of Porto Rico and other islands now under Spanish sovereignty in the West Indies, and the island of Guam in the Marianas or Ladrones. Article III. Spain cedes to the United States the archipelago known as the Philippine Islands. . . .\" \u2014 Treaty of Paris, signed December 10, 1898 (abridged). Background from the books: the United States agreed to pay Spain $20 million for the Philippine Islands."
+ },
+ "stimulus_set": "treaty-hawaii-1898",
+ "source": "original; stimulus is a verbatim abridged excerpt from the Treaty of Paris, December 10, 1898, public domain, with a public-domain 1898 photograph",
+ "stem": "Under the Treaty of Paris, Spain gave up Cuba and ceded which islands to the United States?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Puerto Rico, Guam, and the Philippines"
+  },
+  {
+   "key": "B",
+   "text": "Cuba, Hawaii, and Guam",
+   "misconception": "Cuba was not ceded; Spain gave up its claim to Cuba, and Hawaii was annexed separately, not by Spain."
+  },
+  {
+   "key": "C",
+   "text": "Puerto Rico, Cuba, and Hawaii",
+   "misconception": "Cuba was freed from Spain, not ceded, and Hawaii was annexed by the United States, not given by Spain."
+  },
+  {
+   "key": "D",
+   "text": "Guam, Hawaii, and the Philippines",
+   "misconception": "Hawaii was annexed by the United States in 1898; Spain never owned it, so the treaty could not cede it."
+  }
+ ],
+ "rationales": {
+  "A": "Article II cedes Porto Rico and Guam; Article III cedes the Philippine Islands. Article I only frees Cuba.",
+  "B": "Cuba was relinquished, not ceded, and Hawaii was an American annexation, not a Spanish gift.",
+  "C": "Cuba was freed, not ceded, and Hawaii came by American annexation, not by the treaty with Spain.",
+  "D": "Hawaii was never Spanish. The treaty cedes Porto Rico, Guam, and the Philippines, and frees Cuba.",
+  "general": "1. Read Article I. Spain gives up its claim to Cuba; Cuba is freed, not handed over.\n2. Read Article II. Spain cedes Porto Rico and Guam to the United States.\n3. Read Article III. Spain cedes the Philippine Islands as well.\nRemember: freeing a place and ceding a place are different acts, so sort the treaty's articles by what each one does."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2081",
+   "file": "u6/5s24-ch19-mcq-04.jpg",
+   "caption": "Raising the American flag at the Government House, Honolulu, August 12, 1898.",
+   "alt": "A large crowd watches in front of a stone government building in Honolulu as the American flag is raised on a pole; the printed caption below the photograph reads \"Raising the American flag at the Government House, Honolulu.\"",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Raising_American_Flag_(1898).jpg",
+   "license": "Public domain (1898 photograph, pre-1930)"
+  }
+ ]
+}

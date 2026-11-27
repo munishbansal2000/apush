@@ -1,0 +1,77 @@
+{
+  "id": "apush-mcq-2424",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.15"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "3.A",
+    "3.B"
+  ],
+  "themes": [
+    "WXT"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.9 The Great Depression"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 22",
+        "section": "Beginning of Modern America: The 1920s"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "Jazz Age and Great Depression (1920-1933)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus_set": "boom-depression-unemployment",
+  "stimulus": {
+    "kind": "table",
+    "text": "Unemployment in the United States, as a share of the labor force (Bureau of Labor Statistics historical estimates):\n\n| Year | 1929 | 1930 | 1931 | 1932 | 1933 | 1937 | 1938 | 1941 | 1942 |\n| Unemployment | 3.2% | 8.7% | 15.9% | 23.6% | 24.9% | 14.3% | 19.0% | 9.9% | 4.7% |\n\nContext: The 1920s were years of prosperity built on assembly-line production, radios, cars, and buying on credit, including buying stocks on margin. The stock market crashed in October 1929.",
+    "source_note": "Unemployment figures are Bureau of Labor Statistics historical estimates, as published in the Economic Report of the President (Table B-22). Context drawn from Barron's Premium 2027, Chapter 9, Topics 7.7 and 7.9."
+  },
+  "source": "original; stimulus drawn from book-grounded paraphrases, tables, and photographs (see source_note)",
+  "stem": "Which explanation of the Depression best fits the table and its context?",
+  "options": [
+    {
+      "key": "A",
+      "text": "One cause alone explains the crash: the Smoot-Hawley Tariff",
+      "misconception": "The tariff came in 1930, after the 1929 crash, so it cannot be the only cause."
+    },
+    {
+      "key": "B",
+      "text": "The crash was caused only by falling farm prices in 1929",
+      "misconception": "Farm distress was one cause among several, not the only cause."
+    },
+    {
+      "key": "C",
+      "text": "The Depression was caused only by the New Deal's programs",
+      "misconception": "The New Deal began in 1933, years after the crash and the rise in unemployment."
+    },
+    {
+      "key": "D",
+      "text": "Several causes combined: speculation, weak banks, and falling demand"
+    }
+  ],
+  "answerKey": "D",
+  "rationales": {
+    "A": "Background from the books: the Smoot-Hawley Tariff of 1930 deepened the slump but followed the crash.",
+    "B": "Background from the books: farm distress mattered, but so did speculation, weak banks, and falling demand.",
+    "C": "Background from the books: the New Deal answered the Depression; it began four years after the crash.",
+    "D": "The context names buying stocks on margin, and the table's long climb shows a system-wide collapse, not a single shock.",
+    "general": "1. Check each single-cause answer against the dates in the stimulus.\n2. The tariff came in 1930 and the New Deal in 1933, both after the 1929 crash.\n3. Background: the books list several causes, including speculation, fragile banks, and falling demand.\n4. A collapse that climbs from 3.2 to 24.9 percent over four years fits many causes at once.\nRemember: a four-year collapse usually has more than one cause."
+  }
+}

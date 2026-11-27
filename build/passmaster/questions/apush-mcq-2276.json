@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-2276",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.10"
+ ],
+ "lesson": "apush-u7-l4",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 3,
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.10 The New Deal"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 23",
+    "section": "Great Depression and the New Deal (1929-1939)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "New Deal and WWII (1934-1945)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "image",
+  "text": "Senator Huey Long of Louisiana, photographed in 1935 seated at a desk in front of shelves of law books, gesturing with both hands as he speaks. Long built a national following with his Share Our Wealth program, which proposed capping large fortunes and guaranteeing every family a homestead and a minimum income.",
+  "source_note": "Huey Long at desk, 1935 press photograph. Public domain; via Wikimedia Commons."
+ },
+ "stimulus_set": "huey-long-1935",
+ "source": "original; stimulus photograph by an unknown press photographer, 1935, public domain",
+ "stem": "Long's Share Our Wealth program, described in the passage, called for which of the following?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Ending all federal relief programs at once",
+   "misconception": "Long demanded more government action, not less; ending relief was the conservatives' position, not his."
+  },
+  {
+   "key": "B",
+   "text": "Capping large fortunes and guaranteeing a minimum income"
+  },
+  {
+   "key": "C",
+   "text": "Cutting taxes on incomes over 50,000 dollars",
+   "misconception": "Cutting taxes on high incomes was what business critics of the New Deal wanted; Long wanted steep taxes on the rich."
+  },
+  {
+   "key": "D",
+   "text": "Banning labor unions from American industry outright",
+   "misconception": "Long built his following by promising help to ordinary people, not by banning unions."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "Background from the books: Long attacked Roosevelt for doing too little, so ending relief is the opposite of his program.",
+  "B": "Background from the books: Share Our Wealth proposed capping personal fortunes and guaranteeing every family a homestead and a minimum income, paid for by taxes on the rich.",
+  "C": "Background from the books: Long wanted steep taxes on large fortunes, not tax cuts for high incomes.",
+  "D": "Background from the books: nothing in Long's program banned unions; his appeal was to poor and working people, not against them.",
+  "general": "1. The passage says Long proposed capping large fortunes.\n2. It also says he guaranteed every family a homestead and a minimum income.\n3. Both parts move wealth from the rich toward ordinary families.\n4. That is redistribution, not an end to relief or a tax cut for the wealthy.\nRemember: name the direction of a proposal first, toward more sharing or toward less government."
+ }
+}

@@ -1,0 +1,93 @@
+{
+ "id": "apush-saq-0208",
+ "type": "saq",
+ "unit": 7,
+ "topics": [
+  "7.4"
+ ],
+ "lesson": "apush-u7-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "2.A",
+  "1.B"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.4 The Progressives — Muckrakers and the Birth of Investigative Journalism"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 20",
+    "section": "Roots of Progressivism"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "The Progressive Era and World War I (1900-1920)"
+   }
+  ],
+  "primary_sources": [
+   "Theodore Roosevelt, 'The Man with the Muck-Rake' (1906)"
+  ]
+ },
+ "source": "original; stimulus paraphrased from 5 Steps to a 5 2024, Chapter 20, and Barron's Premium 2027, Chapter 9",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Verbatim excerpt (abridged) from Theodore Roosevelt, 'The Man with the Muck-Rake,' April 14, 1906, public domain.",
+  "text": "The men with the muck-rakes are often indispensable to the well-being of society; but only if they know when to stop raking the muck, and to look upward... — Theodore Roosevelt, 'The Man with the Muck-Rake,' April 14, 1906 (abridged)"
+ },
+ "stimulus_set": null,
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify the group Roosevelt calls 'the men with the muck-rakes.'",
+   "modelAnswer": "The 'men with the muck-rakes' were the muckrakers, the investigative journalists who exposed corruption and unsafe business practices in popular magazines. Roosevelt gave them the name in this 1906 speech, borrowing the image from Bunyan's Pilgrim's Progress. Writers like Upton Sinclair, Ida Tarbell, and Lincoln Steffens were the best-known examples.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Identifies the muckrakers as investigative journalists who exposed corruption or unsafe business practices.",
+     "notEarned": "Names a reform group without connecting it to investigative journalism or exposure."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain Roosevelt's attitude toward the muckrakers.",
+   "modelAnswer": "Roosevelt thought muckrakers were often indispensable because their exposés forced the country to face corruption and unsafe products. But he warned them to know when to stop raking the muck and look upward, meaning criticism should serve reform rather than become endless attack. He valued their work while warning that constant scandal-mongering could do more harm than good.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains that Roosevelt valued muckrakers' exposés but warned them against endless, indiscriminate attack.",
+     "notEarned": "Says only that Roosevelt liked or disliked muckrakers, without explaining the qualified attitude in the passage."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one way muckraking influenced Progressive reform.",
+   "modelAnswer": "Muckraking built public pressure that moved lawmakers to act. Upton Sinclair's The Jungle disgusted readers with its account of Chicago's packing plants, and the outcry helped Congress pass the Meat Inspection Act and the Pure Food and Drug Act in 1906. Without the exposés, the public would have had little reason to demand the laws.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains how a specific exposé built public pressure that led to a specific reform, such as the meat and food acts.",
+     "notEarned": "Names a muckraker or a law without explaining how the exposé led to the reform."
+    }
+   ]
+  }
+ ]
+}

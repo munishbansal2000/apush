@@ -1,0 +1,96 @@
+{
+ "id": "apush-saq-0201",
+ "type": "saq",
+ "unit": 7,
+ "topics": [
+  "7.1"
+ ],
+ "lesson": "apush-u7-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "3.A",
+  "4.A"
+ ],
+ "themes": [
+  "PCE",
+  "WOR"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.1 Contextualizing Period 7"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.10 The New Deal"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 24",
+    "section": "World War II (1933\u20131945)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "The New Deal and World War II (1934\u20131945)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of Barron\u2019s Premium 2027, Chapter 9, Topic 7.1 Contextualizing Period 7.",
+  "text": "Paraphrase of Barron\u2019s Premium 2027, Chapter 9, \u201cTopic 7.1 Contextualizing Period 7\u201d: Between 1890 and 1945, Americans debated two questions above all: what role the government should play in the country\u2019s economic and social life, and what role the United States should play in the world. The period opened with overseas expansion and closed with the United States as the world\u2019s richest and most powerful nation. After World War II, unlike after World War I, the United States did not retreat into isolation."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus paraphrased from Barron\u2019s Premium 2027, Chapter 9, Topic 7.1",
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one way the federal government\u2019s role in the economic life of the country changed between 1890 and 1945.",
+   "modelAnswer": "In 1890 the federal government played a small role in the economy, mainly collecting tariffs and regulating railroads in limited ways. By 1945 it managed the economy directly: the New Deal had created Social Security, regulated banking, and set labor standards, and wartime mobilization had put Washington in charge of production. The change was from a government that mostly watched the economy to one that managed it.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names a specific change in the federal government\u2019s economic role, such as New Deal programs, banking regulation, or wartime economic controls.",
+     "notEarned": "A vague statement that the government \u201cgot bigger\u201d without a specific program or power."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain how one development between 1890 and 1945 shows a change in the United States\u2019 role in the world.",
+   "modelAnswer": "The Spanish-American War of 1898 changed America\u2019s world role by making it an overseas empire holding the Philippines, Guam, and Puerto Rico. Before 1898 the United States had expanded mainly across its own continent, but after the war it ruled peoples overseas and built the Panama Canal to project naval power. The country had become a global power rather than a continental one.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains a specific development and how it changed the United States\u2019 role in the world.",
+     "notEarned": "Names a development without explaining how it changed the American role abroad."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain how one development between 1890 and 1945 shows a continuity in the United States\u2019 role in the world.",
+   "modelAnswer": "Reluctance to join binding international commitments continued across the period. The Senate rejected the League of Nations in 1919, and through the 1930s the Neutrality Acts kept the United States out of foreign wars. Even as American power grew, the wish to avoid entangling alliances persisted until World War II.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains a specific development and how it shows continuity in the United States\u2019 role in the world.",
+     "notEarned": "Names a development that shows change rather than continuity."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,76 @@
+{
+  "id": "apush-mcq-2382",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.13"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "2.A"
+  ],
+  "themes": [
+    "WOR"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.13 World War II: Military"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "New Deal and WWII (1934-1945)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus": {
+    "kind": "text",
+    "text": "Paraphrase: For much of the war, German submarines, called U-boats, hunted Allied supply ships in the Atlantic Ocean, trying to starve Britain of food and war goods. New technology, including sonar, helped the Allies find and sink the submarines, and by 1943 the Allies were winning the Battle of the Atlantic. In the Pacific, American submarines did the same work in reverse: by late 1944 they were sinking large numbers of Japanese merchant ships and tankers, cutting Japan off from the oil and resources its war effort needed.",
+    "source_note": "Original secondary summary drawn from 5 Steps Chapter 24 (Battle of the Atlantic; sonar; American submarines cutting Japan off from resources by late 1944)."
+  },
+  "stimulus_set": "atlantic-submarines-1943",
+  "source": "original; stimulus drawn from book-grounded figures and paraphrases (see source_note)",
+  "stem": "According to the passage, how did the Allies turn the Battle of the Atlantic in their favor?",
+  "options": [
+    {
+      "key": "A",
+      "text": "By building more battleships than Germany could build",
+      "misconception": "Battleships did not hunt submarines; sonar and escorts did the work."
+    },
+    {
+      "key": "B",
+      "text": "By surrendering the Atlantic Ocean to German submarines",
+      "misconception": "Surrendering the Atlantic would have starved Britain, not saved it."
+    },
+    {
+      "key": "C",
+      "text": "By using sonar to find and sink the U-boats"
+    },
+    {
+      "key": "D",
+      "text": "By refusing to send any ships across the Atlantic Ocean",
+      "misconception": "Refusing to sail would have cut Britain off from food and war goods."
+    }
+  ],
+  "answerKey": "C",
+  "rationales": {
+    "A": "Battleships did not hunt submarines; sonar and escorts did.",
+    "B": "Surrendering the Atlantic would have starved Britain.",
+    "C": "The passage says sonar helped the Allies find and sink the submarines.",
+    "D": "Refusing to sail would have cut Britain off from supplies.",
+    "general": "1. The passage says U-boats hunted Allied supply ships in the Atlantic.\n2. It then says new technology, including sonar, helped the Allies find and sink them.\n3. Background from the books: by 1943, the Allies were winning the Battle of the Atlantic.\n4. Technology changed the hunt: the hunters became the hunted.\nRemember: a new detection tool can flip a battle, so name the tool and what it found."
+  }
+}

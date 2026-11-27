@@ -1,0 +1,86 @@
+{
+  "id": "apush-mcq-2376",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.13"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "1.A"
+  ],
+  "themes": [
+    "WOR"
+  ],
+  "reasoning": "continuity-change",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.13 World War II: Military"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "New Deal and WWII (1934-1945)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus": {
+    "kind": "image",
+    "text": "This photograph, taken from the air on August 9, 1945, shows the mushroom-shaped cloud rising over Nagasaki, Japan, after the second atomic bomb used in war was dropped that morning. A wide white cloud cap spreads at the top, a dark column of smoke rises beneath it, and smaller clouds drift below.",
+    "source_note": "Photograph of the Nagasaki atomic bombing, August 9, 1945, taken by Lieutenant Charles Levy from a B-29 (U.S. government photograph, public domain). Viewed before use; listed in the shared image pool as saq-set-26-q3. The catalog license note reads 'PD: pre-1930 / CC0,' which is wrong for a 1945 photograph; the correct basis is that it is a U.S. government work."
+  },
+  "stimulus_set": "atomic-bomb-nagasaki-1945",
+  "source": "original; stimulus drawn from book-grounded figures and paraphrases (see source_note)",
+  "stem": "The photograph was taken on August 9, 1945. What happened less than a month later?",
+  "options": [
+    {
+      "key": "A",
+      "text": "The United States entered the war",
+      "misconception": "The United States entered the war in December 1941, nearly four years earlier."
+    },
+    {
+      "key": "B",
+      "text": "Germany surrendered in Europe",
+      "misconception": "Germany surrendered in May 1945, three months earlier."
+    },
+    {
+      "key": "C",
+      "text": "Japan attacked Pearl Harbor",
+      "misconception": "Japan attacked Pearl Harbor in December 1941."
+    },
+    {
+      "key": "D",
+      "text": "Japan formally surrendered, ending World War II"
+    }
+  ],
+  "answerKey": "D",
+  "rationales": {
+    "A": "The United States entered the war in December 1941.",
+    "B": "Germany surrendered in May 1945, three months earlier.",
+    "C": "Japan attacked Pearl Harbor in December 1941.",
+    "D": "Japan signed the formal surrender on September 2, 1945.",
+    "general": "1. The photograph dates from August 9, 1945, the day of the Nagasaki bombing.\n2. Background from the books: Japan then agreed to surrender, and the formal surrender came on September 2.\n3. That is less than a month after the photograph was taken.\n4. The other choices all happened years or months earlier.\nRemember: a date in the stimulus sets a clock, so measure the other choices against it."
+  },
+  "figures": [
+    {
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Nagasakibomb.jpg",
+      "license": "Public domain (U.S. government photograph)",
+      "file": "u8/saq-set-26-q3.jpg",
+      "caption": "The mushroom cloud over Nagasaki, August 9, 1945",
+      "alt": "Aerial photograph of a huge white mushroom-shaped cloud rising above smaller clouds, with a dark column of smoke beneath it",
+      "id": "fig-apush-mcq-2376"
+    }
+  ]
+}

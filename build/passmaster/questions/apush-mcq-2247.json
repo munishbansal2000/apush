@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-2247",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.9"
+ ],
+ "lesson": "apush-u7-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "A",
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.9 The Great Depression"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 23",
+    "section": "Great Depression and the New Deal (1929-1939)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Jazz Age and Great Depression (1920-1933)"
+   }
+  ],
+  "primary_sources": [
+   "Federal Reserve Bulletin, September 1937, Table 1 (bank suspensions, 1921-1936)"
+  ]
+ },
+ "stimulus": {
+  "kind": "table",
+  "text": "| Year | Banks that closed |\n| 1929 | 659 |\n| 1930 | 1,350 |\n| 1931 | 2,293 |\n| 1932 | 1,453 |\n| 1933 | 4,000 |\n\nBank suspensions in the United States, 1929–1933. The 1933 figure counts banks closed in the banking crisis and not licensed to reopen after the March 1933 bank holiday.",
+  "source_note": "Figures from the Federal Reserve Bulletin, September 1937, Table 1 (bank suspensions, 1921–1936)."
+ },
+ "source": "original; stimulus table built from Federal Reserve Bulletin, September 1937, Table 1",
+ "stem": "Depositors in the banks that closed in the early 1930s most often",
+ "options": [
+  {
+   "key": "A",
+   "text": "lost their savings, since no federal deposit insurance existed"
+  },
+  {
+   "key": "B",
+   "text": "recovered their money from the Federal Reserve",
+   "misconception": "The Federal Reserve did not insure deposits. It lent to banks, but it did not repay depositors of failed banks."
+  },
+  {
+   "key": "C",
+   "text": "moved their accounts to the Reconstruction Finance Corporation",
+   "misconception": "The Reconstruction Finance Corporation lent to banks and businesses. It was not a bank where people kept accounts."
+  },
+  {
+   "key": "D",
+   "text": "received payments from the Social Security Administration",
+   "misconception": "Social Security began in 1935 and paid pensions, not bank deposits. It could not repay 1930s depositors."
+  }
+ ],
+ "rationales": {
+  "A": "Background from the books: when banks failed, their depositors lost the money in their accounts, and by 1932 some 5,000 banks had closed, costing over 5 million Americans their life savings.",
+  "B": "Background from the books: the Federal Reserve was the central bank, not a deposit insurer; federal deposit insurance came with the Banking Act of 1933.",
+  "C": "Background from the books: the Reconstruction Finance Corporation, created in 1932, lent federal money to banks and railroads, not to depositors.",
+  "D": "Background from the books: the Social Security Act of 1935 provided pensions for retired workers, not repayment for lost bank deposits.",
+  "general": "1. Ask what a bank closing meant for its customers in 1930.\n2. Ask what protected them. Background from the books: nothing did, since no federal deposit insurance existed.\n3. Ask what came later: the FDIC, created in 1933.\n4. Depositors most often lost their savings.\nRemember: a bank failure hurts its depositors first, so ask what insured them at the time."
+ },
+ "stimulus_set": "bank-suspensions-1929-1933"
+}

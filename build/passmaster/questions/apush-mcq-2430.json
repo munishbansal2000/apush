@@ -1,0 +1,78 @@
+{
+  "id": "apush-mcq-2430",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.15"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "2.A",
+    "5.A"
+  ],
+  "themes": [
+    "WXT",
+    "PCE"
+  ],
+  "reasoning": "comparison",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.7 1920s: Innovations in Communication and Technology"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "Jazz Age and Great Depression (1920-1933)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus_set": "industrial-arsenal",
+  "stimulus": {
+    "kind": "table",
+    "text": "United States military aircraft production (Army Air Forces official history):\n\n| Year | 1940 | 1941 | 1942 | 1943 | 1944 |\n| Military aircraft built | 6,086 | 26,277 | 47,836 | 85,898 | 96,318 |\n\nContext: In 1913 Henry Ford's moving assembly line at Highland Park cut the time to assemble a Model T chassis from more than twelve hours to under two hours, and the Model T's price fell as production rose. In World War II, the federal War Production Board directed factories to war work, and American industry built about 300,000 military aircraft in all between July 1940 and August 1945.",
+    "source_note": "Aircraft figures are from the Army Air Forces official history (Craven and Cate, The Army Air Forces in World War II, vol. VI). Context drawn from Barron's Premium 2027, Chapter 9, Topics 7.7 and 7.12."
+  },
+  "source": "original; stimulus drawn from book-grounded paraphrases, tables, and photographs (see source_note)",
+  "stem": "What changed in American industry between the Model T era and World War II?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Factories stopped producing goods for ordinary consumers entirely",
+      "misconception": "Consumer goods were curtailed in wartime, not stopped entirely."
+    },
+    {
+      "key": "B",
+      "text": "The government ended all regulation of American industry",
+      "misconception": "The War Production Board directed factories, which is more government direction, not less."
+    },
+    {
+      "key": "C",
+      "text": "The federal government directed factories toward war production"
+    },
+    {
+      "key": "D",
+      "text": "American industry produced fewer goods than in 1913",
+      "misconception": "The table shows wartime output rising to 96,318 aircraft in 1944 alone."
+    }
+  ],
+  "answerKey": "C",
+  "rationales": {
+    "A": "Background from the books: wartime factories still made some consumer goods, though war work came first.",
+    "B": "Background from the books: the War Production Board directed factories to war work.",
+    "C": "The context says the federal War Production Board directed factories to war work in World War II.",
+    "D": "The table shows aircraft output rising every year, reaching 96,318 in 1944.",
+    "general": "1. Find the Model T era in the context: Ford's line served buyers, and the car's price fell as production rose.\n2. Find the wartime change: the federal War Production Board directed factories to war work.\n3. The same factories now answered to Washington's war needs instead of the consumer market.\n4. The market did not disappear, but government direction now set the priorities.\nRemember: compare eras by who sets the factory's priorities."
+  }
+}

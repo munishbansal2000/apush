@@ -1,0 +1,98 @@
+{
+ "id": "apush-saq-0202",
+ "type": "saq",
+ "unit": 7,
+ "topics": [
+  "7.1"
+ ],
+ "lesson": "apush-u7-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "2.A",
+  "4.B"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.1 Contextualizing Period 7"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.10 The New Deal"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 23",
+    "section": "Great Depression and the New Deal (1929\u20131939)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "The New Deal and World War II (1934\u20131945)"
+   }
+  ],
+  "primary_sources": [
+   "Franklin D. Roosevelt, First Inaugural Address, March 4, 1933"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Franklin D. Roosevelt, First Inaugural Address, March 4, 1933, public domain.",
+  "text": "From President Franklin D. Roosevelt\u2019s First Inaugural Address, March 4, 1933: \u201cThis great Nation will endure as it has endured, will revive and will prosper. So, first of all, let me assert my firm belief that the only thing we have to fear is fear itself \u2014 nameless, unreasoning, unjustified terror which paralyzes needed efforts to convert retreat into advance.\u201d"
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus verbatim from Franklin D. Roosevelt, First Inaugural Address, March 4, 1933, public domain",
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify the historical situation Roosevelt is addressing in the passage.",
+   "modelAnswer": "Roosevelt is addressing the Great Depression, which by 1933 had left about a quarter of American workers unemployed and thousands of banks failed. The country was in the worst economic crisis in its history, and Roosevelt took office promising action. His words aim to calm a frightened public.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names the Great Depression and one of its features, such as mass unemployment or bank failures.",
+     "notEarned": "A vague reference to \u201chard times\u201d without naming the Depression or a specific feature."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain how Roosevelt\u2019s response to this situation shows a change in the federal government\u2019s role.",
+   "modelAnswer": "Roosevelt answered the Depression with the New Deal, in which the federal government created jobs, regulated banks, and supported farmers directly. The Hundred Days of 1933 alone produced programs such as the CCC and the AAA that put Washington into employment, farming, and banking. The government took on responsibility for economic recovery, a role it had not claimed before.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains a specific New Deal action and how it expanded the federal government\u2019s economic role.",
+     "notEarned": "Names a New Deal program without explaining how it changed the government\u2019s role."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain how one development during World War II shows a continuity or change in the federal government\u2019s economic role.",
+   "modelAnswer": "World War II continued the expansion of the federal government\u2019s economic role, but on a much larger scale. Washington directed wartime production, set prices and rationed goods, and spent at levels that finally ended the Depression\u2019s unemployment. The war showed that the expanded federal role of the New Deal had become permanent.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains a specific wartime development and whether it shows continuity or change in the federal government\u2019s economic role.",
+     "notEarned": "Names a wartime event without connecting it to the federal government\u2019s economic role."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,91 @@
+{
+ "id": "apush-saq-0216",
+ "type": "saq",
+ "unit": 7,
+ "topics": [
+  "7.8"
+ ],
+ "lesson": "apush-u7-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "1.A",
+  "3.A"
+ ],
+ "themes": [
+  "SOC",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.8 1920s: Cultural and Political Controversies"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 22",
+    "section": "Beginning of Modern America: The 1920s"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Jazz Age and Great Depression (1920-1933)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; stimulus paraphrased from Barron's Premium 2027, Chapter 9, Topic 7.8, and 5 Steps to a 5 2024, Chapter 22",
+ "stimulus": {
+  "kind": "text",
+  "text": "Paraphrase of Barron's Premium 2027, Chapter 9, Topic 7.8, and 5 Steps to a 5 2024, Chapter 22: In the 1920s, new consumer goods, new freedoms for women, and new mass media unsettled older small-town certainties, and many Americans who held to traditional values pushed back.",
+  "source_note": "Paraphrase of Barron's Premium 2027, Chapter 9, Topic 7.8, and 5 Steps to a 5 2024, Chapter 22."
+ },
+ "stimulus_set": null,
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Briefly explain ONE example of social or cultural change in the 1920s.",
+   "modelAnswer": "Young women known as flappers claimed new personal freedoms, wearing bobbed hair and short dresses, smoking and drinking in public, and dating without chaperones. Their style announced a break with Victorian rules about how women should look and behave.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names a specific social or cultural change of the 1920s, such as the flapper, jazz, the Harlem Renaissance, or new freedoms for women.",
+     "notEarned": "A vague statement that life changed without naming a specific change."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Briefly explain a SECOND example of social or cultural change in the 1920s.",
+   "modelAnswer": "The Harlem Renaissance gave Black writers, musicians, and artists a new public voice, with Langston Hughes and Zora Neale Hurston writing about Black life and Louis Armstrong and Duke Ellington carrying jazz to a mainstream audience. Black culture reshaped American art even while segregation held firm.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names a second, different social or cultural change of the 1920s, such as the Harlem Renaissance, jazz, the Lost Generation, or mass media heroes.",
+     "notEarned": "Repeating the part (a) example, or naming a change with no explanation."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Briefly explain ONE example of resistance to social or cultural change in the 1920s.",
+   "modelAnswer": "The reborn Ku Klux Klan grew into a mass movement that claimed to defend '100 percent Americanism' against Black Americans, immigrants, and Catholics. By 1925 it counted millions of members and held open political power in states such as Indiana.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names a specific form of resistance to change in the 1920s, such as the Ku Klux Klan, Prohibition, the Scopes trial, or the immigration quotas.",
+     "notEarned": "Naming a change itself rather than resistance to change, with no explanation."
+    }
+   ]
+  }
+ ]
+}

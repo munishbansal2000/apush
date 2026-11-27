@@ -245,6 +245,50 @@ Keys A109/B105/C102/D99. Test pool 76 MCQ / 4 SAQ (0072, 0100, 0088,
 L1 3.1+3.2 (58), L2 3.3+3.4 (84), L3 3.5+3.6 (85), L4 3.7+3.8+3.9 (121),
 L5 3.10+3.11+3.12+3.13 (129).
 
+### Unit 7 per-topic quotas (set 2026-11-26; closed 2026-11-27)
+
+Period 7, 1890-1945. 476 questions: 415 MCQ + 34 SAQ + 16 DBQ + 11 LEQ.
+Test pool 76 MCQ + 4 SAQ + 1 DBQ + 1 LEQ = 82.
+
+| Topic | Title | MCQ | SAQ | DBQ | LEQ | Total |
+|---|---|---:|---:|---:|---:|---:|
+| 7.1 | Contextualizing Period 7 | 16 | 2 | 0 | 0 | 18 |
+| 7.2 | Imperialism: Debates | 28 | 2 | 1 | 1 | 32 |
+| 7.3 | The Spanish-American War | 28 | 2 | 1 | 1 | 32 |
+| 7.4 | The Progressives | 32 | 3 | 1 | 1 | 37 |
+| 7.5 | World War I: Military and Diplomacy | 30 | 2 | 1 | 1 | 34 |
+| 7.6 | World War I: Home Front | 28 | 2 | 1 | 1 | 32 |
+| 7.7 | 1920s: Innovations in Communication and Technology | 26 | 2 | 1 | 0 | 29 |
+| 7.8 | 1920s: Cultural and Political Controversies | 28 | 2 | 1 | 1 | 32 |
+| 7.9 | The Great Depression | 32 | 3 | 2 | 1 | 38 |
+| 7.10 | The New Deal | 32 | 3 | 2 | 1 | 38 |
+| 7.11 | Interwar Foreign Policy | 26 | 2 | 1 | 0 | 29 |
+| 7.12 | World War II: Mobilization | 30 | 3 | 1 | 1 | 35 |
+| 7.13 | World War II: Military | 30 | 2 | 1 | 1 | 34 |
+| 7.14 | Postwar Diplomacy | 28 | 2 | 1 | 0 | 31 |
+| 7.15 | Comparison in Period 7 | 21 | 2 | 1 | 1 | 25 |
+| **Total** | | **415** | **34** | **16** | **11** | **476** |
+
+### Unit 7 — LANDED (closed 2026-11-27; push 9)
+
+Question counts landed exactly on quota in every topic. MCQ difficulty
+lands easy 82 / medium 215 / hard 118 vs target 83/145/187 (hard short
+69). Four topics land ZERO hard MCQs: 7.7 (5/21/0), 7.8 (6/22/0), 7.9
+(5/27/0), 7.10 (6/26/0) — the 1920s, Depression and New Deal topics
+were labeled entirely medium after blind review. Per-topic lands:
+7.1: 4/6/6, 7.2: 6/9/13, 7.3: 6/14/8, 7.4: 5/12/15, 7.5: 4/14/12,
+7.6: 6/11/11, 7.7: 5/21/0, 7.8: 6/22/0, 7.9: 5/27/0, 7.10: 6/26/0,
+7.11: 6/9/11, 7.12: 6/11/13, 7.13: 6/11/13, 7.14: 6/14/8,
+7.15: 5/8/8. Keys A107/B106/C102/D100.
+Test pool: 76 MCQ / 4 SAQ (0207, 0219, 0221, 0228) / 1 DBQ (0078) /
+1 LEQ (0074). Exam 01 holds 4 of 7.10's test MCQs (2432-2435).
+Lessons as proposed: L1 7.1+7.2+7.3 (82), L2 7.4+7.5+7.6 (103),
+L3 7.7+7.8+7.9 (99), L4 7.10+7.11 (67), L5 7.12+7.13+7.14+7.15 (125).
+Blind-read record: L1 FAIL 6 -> PASS, L2 FAIL 2 -> FAIL 1 (coordinator's
+own CPI sentence) -> PASS, L3 PASS + 4 closest-call fixes -> PASS,
+L4 FAIL 1 -> PASS, L5 FAIL 5 -> PASS. One bank fix in the read: SAQ
+0229 model answer "within two months" -> "in August 1944".
+
 ### Unit 9 per-topic quotas (this tranche, set 2026-11-26; closed 2026-11-26)
 
 Unit 9: Period 9, 1980-present, exam weight 4-6%. No DBQs — the DBQ

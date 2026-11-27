@@ -1,0 +1,86 @@
+{
+  "id": "apush-saq-0224",
+  "type": "saq",
+  "unit": 7,
+  "topics": [
+    "7.11"
+  ],
+  "lesson": "apush-u7-l4",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "1.B",
+    "2.A"
+  ],
+  "themes": [
+    "WOR",
+    "PCE"
+  ],
+  "reasoning": "continuity-change",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.11 Interwar Foreign Policy"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "Jazz Age and Great Depression (1920-1933)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus": {
+    "kind": "text",
+    "text": "In the 1920s the United States practiced what historians call internationalism without entanglement. It hosted the Washington Naval Conference, signed the Kellogg-Briand Pact with more than sixty other nations, and took part in disarmament talks, all without joining the League of Nations or accepting any binding promise to defend another country.",
+    "source_note": "Original secondary text, written for this question from Barron's Premium 2027, Chapter 9, Topic 7.11, and Princeton Review, Chapter 11."
+  },
+  "stimulus_set": null,
+  "source": "original; stimulus is original secondary text grounded in Barron's Premium 2027, Chapter 9, Topic 7.11, and Princeton Review, Chapter 11",
+  "saq_slot": 1,
+  "totalPoints": 3,
+  "parts": [
+    {
+      "part": "a",
+      "points": 1,
+      "prompt": "Identify ONE example of American internationalism without entanglement in the 1920s.",
+      "modelAnswer": "The Washington Naval Conference of 1921-1922 is one example. The United States hosted the conference and signed the Five-Power Treaty, which limited battleship tonnage. It did all this without joining the League of Nations.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Names a specific 1920s example, such as the Washington Naval Conference, the Kellogg-Briand Pact, or the Four-Power or Nine-Power treaties.",
+          "notEarned": "A vague statement that America wanted peace, with no specific example named."
+        }
+      ]
+    },
+    {
+      "part": "b",
+      "points": 1,
+      "prompt": "Explain ONE reason the United States pursued disarmament and peace pacts in the 1920s without joining the League of Nations.",
+      "modelAnswer": "Americans were weary of war and feared that League membership would drag the country into foreign wars. The Senate had already refused to ratify the Treaty of Versailles, so disarmament talks offered a way to limit war without the binding commitments the League required.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Explains a specific reason, such as fear of entanglement, the Senate's rejection of the League, or the wish to cut military spending.",
+          "notEarned": "Restating that the United States stayed out of the League, with no reason given."
+        }
+      ]
+    },
+    {
+      "part": "c",
+      "points": 1,
+      "prompt": "Explain ONE limit of the disarmament and peace efforts of the 1920s.",
+      "modelAnswer": "The treaties had no enforcement mechanism, so a nation could break them without consequence. Japan resented its lower battleship ratio and renounced the naval limits in the mid-1930s, and its invasion of Manchuria in 1931 showed the Kellogg-Briand Pact could not stop aggression.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Explains a specific limit, such as no enforcement, unregulated ship types, or a later violation like Manchuria.",
+          "notEarned": "A vague statement that the efforts failed, with no specific limit named."
+        }
+      ]
+    }
+  ]
+}

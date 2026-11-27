@@ -1,0 +1,72 @@
+{
+  "id": "apush-mcq-2308",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.11"
+  ],
+  "lesson": "apush-u7-l4",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 2,
+  "skills": [
+    "3.A"
+  ],
+  "themes": [
+    "WOR",
+    "GEO"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.11 Interwar Foreign Policy"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "Jazz Age and Great Depression (1920-1933)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus": {
+    "kind": "table",
+    "text": "United States military occupations in Latin America came to an end in the 1930s.\n\n| Country | Year the last United States Marines left |\n| Nicaragua | 1933 |\n| Haiti | 1934 |\n\nParaphrase: At the Inter-American Conference in Montevideo, Uruguay, in December 1933, Secretary of State Cordell Hull signed a declaration that no nation has the right to interfere in the internal or external affairs of another nation.",
+    "source_note": "Occupation end years from Barron's Premium 2027, Chapter 9, Topic 7.11, and Princeton Review, Chapter 11. Montevideo declaration paraphrased from Barron's Premium 2027, Chapter 9, Topic 7.11."
+  },
+  "stimulus_set": "good-neighbor-1933",
+  "source": "original; table from Barron's Premium 2027, Chapter 9, Topic 7.11, and Princeton Review, Chapter 11; Montevideo declaration paraphrased from Barron's",
+  "stem": "According to the table, which of the following happened in the 1930s?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Marines landed in Nicaragua for the first time",
+      "misconception": "Marines had been in Nicaragua since 1912; the table shows them leaving."
+    },
+    {
+      "key": "B",
+      "text": "The United States occupied Haiti for the first time",
+      "misconception": "Marines had occupied Haiti since 1915; the table shows them leaving in 1934."
+    },
+    {
+      "key": "C",
+      "text": "The last Marines left Nicaragua and Haiti"
+    },
+    {
+      "key": "D",
+      "text": "Cuba was annexed by the United States",
+      "misconception": "Cuba was never annexed; the Platt Amendment was repealed in 1934."
+    }
+  ],
+  "answerKey": "C",
+  "rationales": {
+    "A": "Background from the books: the occupation of Nicaragua began in 1912, long before the 1930s.",
+    "B": "Background from the books: the occupation of Haiti began in 1915.",
+    "C": "The table gives the years the last Marines left: Nicaragua in 1933 and Haiti in 1934.",
+    "D": "Background from the books: the Platt Amendment was repealed, not used to annex Cuba.",
+    "general": "1. The table lists the year the last United States Marines left each country.\n2. Nicaragua's year is 1933 and Haiti's year is 1934.\n3. Both occupations had begun in the 1910s, so the table shows endings, not beginnings.\n4. Those withdrawals are part of the Good Neighbor Policy of the 1930s.\nRemember: a table of departure years shows an ending, not a beginning."
+  }
+}

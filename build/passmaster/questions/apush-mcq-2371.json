@@ -1,0 +1,76 @@
+{
+  "id": "apush-mcq-2371",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.13"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 4,
+  "skills": [
+    "2.C"
+  ],
+  "themes": [
+    "WOR"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.13 World War II: Military"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "New Deal and WWII (1934-1945)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus": {
+    "kind": "text",
+    "text": "Paraphrase: On June 6, 1944, Allied forces under General Dwight D. Eisenhower carried out the D-Day landings on the beaches of Normandy, France, the largest amphibious landing of its time. Casualties were heavy, but the landing succeeded, and by the end of July more than two million Allied troops were crowded into the beachhead. After a breakout in late July, Allied forces swept across France, and Paris was liberated in August 1944. At the same time, Soviet armies drove German forces back toward Germany from the east.",
+    "source_note": "Original secondary summary drawn from 5 Steps Chapter 24 (D-Day; Paris liberated in August; over 2 million troops by end of July) and Barron's Chapter 9 ('D-Day and the Allied Assault on Europe')."
+  },
+  "stimulus_set": "d-day-normandy-1944",
+  "source": "original; stimulus drawn from book-grounded figures and paraphrases (see source_note)",
+  "stem": "The D-Day landings came in June 1944, more than two years after the United States entered the war. Which of the following best explains the delay?",
+  "options": [
+    {
+      "key": "A",
+      "text": "The Allies waited until Germany had withdrawn all of its troops from France",
+      "misconception": "German troops held France until D-Day; the Allies landed against them."
+    },
+    {
+      "key": "B",
+      "text": "The Allies needed time to build up, and Britain feared a rushed invasion would fail"
+    },
+    {
+      "key": "C",
+      "text": "The Soviet Union refused to allow the Western Allies to invade France at all",
+      "misconception": "Stalin begged for an invasion of France; he never refused one."
+    },
+    {
+      "key": "D",
+      "text": "Eisenhower was not appointed to command the invasion until after Paris was liberated",
+      "misconception": "Eisenhower commanded the landings in June 1944, two months before Paris fell."
+    }
+  ],
+  "answerKey": "B",
+  "rationales": {
+    "A": "German troops held France until D-Day; the Allies landed against them.",
+    "B": "The Allies built up troops and supplies, and Britain feared a rushed invasion.",
+    "C": "Stalin begged for an invasion of France for years.",
+    "D": "Eisenhower commanded the landings in June 1944, before Paris fell.",
+    "general": "1. Background from the books: Churchill opposed invading France at once, fearing a repeat of the trench warfare of World War I.\n2. The Allies first fought in North Africa and Italy while building up troops and supplies in Britain.\n3. Only in June 1944, with a huge force ready, did they attempt the Normandy landings.\n4. The delay was preparation, not hesitation: a failed landing would have been a disaster.\nRemember: a delayed invasion usually means a build-up, so look for what was being gathered."
+  }
+}

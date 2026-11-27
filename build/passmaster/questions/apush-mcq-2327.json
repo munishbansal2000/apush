@@ -1,0 +1,77 @@
+{
+  "id": "apush-mcq-2327",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.12"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "test",
+  "difficulty": 4,
+  "skills": [
+    "1.B"
+  ],
+  "themes": [
+    "WXT",
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.12 World War II: Mobilization"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "New Deal and WWII (1934-1945)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus": {
+    "kind": "table",
+    "text": "United States aircraft production, 1940-1944 (number of aircraft built each year).\n\n| 1940 | 6,086 |\n| 1941 | 19,433 |\n| 1942 | 47,836 |\n| 1943 | 85,898 |\n| 1944 | 96,318 |",
+    "source_note": "Figures from The Army Air Forces in World War II, vol. VI, chapter 10 (official U.S. government history). Total wartime production was nearly 300,000 military aircraft."
+  },
+  "stimulus_set": "war-production-board-1942",
+  "source": "original; stimulus table from The Army Air Forces in World War II, vol. VI, ch. 10",
+  "stem": "The growth shown in the table depended most directly on which of the following?",
+  "options": [
+    {
+      "key": "A",
+      "text": "The federal government directing factories to convert to war production"
+    },
+    {
+      "key": "B",
+      "text": "Private companies refusing all government contracts",
+      "misconception": "Companies took war contracts; conversion was driven by government orders."
+    },
+    {
+      "key": "C",
+      "text": "A sharp fall in the number of workers in factories",
+      "misconception": "Factory workforces grew sharply, with millions of new workers hired."
+    },
+    {
+      "key": "D",
+      "text": "A decision to stop building ships and tanks",
+      "misconception": "Ship and tank production also grew hugely during the war."
+    }
+  ],
+  "answerKey": "A",
+  "rationales": {
+    "A": "Background from the books: the War Production Board, created in 1942, oversaw the conversion of civilian industry to war production.",
+    "B": "Firms did not refuse contracts; cost-plus contracts and guaranteed profits drew them into war work.",
+    "C": "The workforce grew, not shrank: the aircraft industry alone employed over two million workers by late 1943.",
+    "D": "The United States built ships and tanks in huge numbers too; aircraft growth did not come at their expense.",
+    "general": "1. A sixteenfold rise in four years did not happen by itself; it took direction and orders.\n2. Background from the books: the War Production Board, created in 1942, oversaw the shift from civilian goods to war goods.\n3. Car plants became plane and tank plants, and the government set what they would build.\n4. Without that direction, private firms would have kept making cars and refrigerators.\nRemember: when output jumps that fast, look for the hand guiding it."
+  }
+}

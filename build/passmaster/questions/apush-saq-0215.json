@@ -1,0 +1,93 @@
+{
+ "id": "apush-saq-0215",
+ "type": "saq",
+ "unit": 7,
+ "topics": [
+  "7.7"
+ ],
+ "lesson": "apush-u7-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "1.B",
+  "3.B"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.7 1920s: Innovations in Communication and Technology"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 22",
+    "section": "Beginning of Modern America: The 1920s"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Jazz Age and Great Depression (1920-1933)"
+   }
+  ],
+  "primary_sources": [
+   "Calvin Coolidge, Address to the American Society of Newspaper Editors, January 17, 1925"
+  ]
+ },
+ "source": "original; stimulus quoted verbatim from Calvin Coolidge, Address to the American Society of Newspaper Editors, January 17, 1925",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Verbatim excerpt from Calvin Coolidge, Address to the American Society of Newspaper Editors, January 17, 1925, public domain (American Presidency Project).",
+  "text": "President Calvin Coolidge, Address to the American Society of Newspaper Editors, January 17, 1925 (verbatim excerpt):\n\n“Wealth is the product of industry, ambition, character and untiring effort. In all experience, the accumulation of wealth means the multiplication of schools, the increase of knowledge, the dissemination of intelligence, the encouragement of science, the broadening of outlook, the expansion of liberties, the widening of culture. Of course, the accumulation of wealth can not be justified as the chief end of existence.”"
+ },
+ "stimulus_set": null,
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one benefit Coolidge says the accumulation of wealth brings.",
+   "modelAnswer": "Coolidge says wealth brings the multiplication of schools. He also names the increase of knowledge, the encouragement of science, and the expansion of liberties.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names a specific benefit from the passage, such as more schools, more knowledge, the encouragement of science, or the expansion of liberties.",
+     "notEarned": "A vague statement that wealth is good without naming a benefit from the passage."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain how Coolidge's view reflects the business culture of the 1920s.",
+   "modelAnswer": "Coolidge's praise of wealth as the product of industry and ambition matches a decade that celebrated business. In the 1920s, businessmen were treated as heroes, advertising urged Americans to buy, and the government trusted private enterprise over regulation.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains a specific link between Coolidge's praise of wealth and 1920s business culture, such as the celebration of business, advertising, or limited government.",
+     "notEarned": "A vague statement that Coolidge liked business without linking his view to the decade."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one limit to Coolidge's picture of 1920s prosperity.",
+   "modelAnswer": "Coolidge's picture leaves out the Americans who did not share the prosperity. Farmers suffered low crop prices through the decade, and factory workers saw little wage growth, so the wealth he praises reached the top far more than the bottom.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains a specific limit, such as farm distress, stagnant wages, or unequal gains, with a concrete group or fact.",
+     "notEarned": "A vague statement that not everyone was rich without naming a group or a fact."
+    }
+   ]
+  }
+ ]
+}

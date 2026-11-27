@@ -1,0 +1,86 @@
+{
+ "id": "apush-mcq-2079",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.3"
+ ],
+ "lesson": "apush-u7-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "A",
+ "skills": [
+  "2.A"
+ ],
+ "themes": [
+  "WXT",
+  "NAT"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "The United States as an Imperialist Power"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 19",
+    "section": "The Spanish-American War"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Unit 7: The Early 20th Century (1890-1945)"
+   }
+  ]
+ },
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Louis Dalrymple, \"School Begins,\" Puck magazine, January 25, 1899; Library of Congress cph.3b48925; public domain.",
+  "text": "Louis Dalrymple, \"School Begins,\" Puck magazine, January 25, 1899. Uncle Sam, a white-haired teacher with glasses and a goatee, leans over a desk holding a long pointer. Four small children sit on a bench in front of him, wearing sashes labeled Philippines, Hawaii, Porto Rico, and Cuba. Behind them, older children sit at desks reading books labeled California, Texas, Arizona, and New Mexico. A blackboard reads: \"The U.S. must govern its new territories with or without their consent until they can govern themselves.\" The cartoon was printed with this caption: \"Uncle Sam (to his new class in Civilization)\u2014Now, children, you've got to learn these lessons whether you want to or not! But just take a look at the class ahead of you, and remember that, in a little while, you will feel as glad to be here as they are!\""
+ },
+ "stimulus_set": "school-begins-1899",
+ "source": "original; stimulus is a public-domain 1899 political cartoon by Louis Dalrymple, Puck magazine",
+ "stem": "Uncle Sam tells the new class to \"look at the class ahead of you\" \u2014 the older children reading books labeled California, Texas, Arizona, and New Mexico. The comparison implies that",
+ "options": [
+  {
+   "key": "A",
+   "text": "The new territories will in time become American like the older ones"
+  },
+  {
+   "key": "B",
+   "text": "California and Texas were still territories in 1899",
+   "misconception": "California had been a state since 1850 and Texas since 1845; the cartoon treats them as the finished class."
+  },
+  {
+   "key": "C",
+   "text": "The older children at the desks were also forced to attend school",
+   "misconception": "The caption says the older class is glad to be there; the force falls on the new class, not the old."
+  },
+  {
+   "key": "D",
+   "text": "The new territories already spoke English",
+   "misconception": "Nothing in the cartoon says the new class speaks English; they are shown as pupils who must still learn."
+  }
+ ],
+ "rationales": {
+  "A": "The older class once sat where the new class sits, and now reads happily. The new class is promised the same future.",
+  "B": "California joined the Union in 1850 and Texas in 1845. The cartoon shows them as the finished, contented class.",
+  "C": "The caption says the class ahead will feel glad to be here. The compulsion is aimed at the new class.",
+  "D": "The cartoon shows the new class as children who must be taught. It says nothing about what language they speak.",
+  "general": "1. Find the two classes. The new class sits on the front bench; the older class reads at desks behind them.\n2. Hear the promise. Uncle Sam says the new class will soon feel as glad to be here as the class ahead.\n3. Read the comparison. The older territories were once new too, and they became American in time.\nRemember: a before-and-after comparison is an argument about the future, so ask what future it promises."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2079",
+   "file": "u7/school-begins-1899.jpg",
+   "caption": "Louis Dalrymple, \"School Begins,\" Puck magazine, January 25, 1899.",
+   "alt": "Uncle Sam, a white-haired teacher with a pointer, stands over a desk facing four small children on a bench wearing sashes labeled Philippines, Hawaii, Porto Rico, and Cuba; older children read books labeled California, Texas, Arizona, and New Mexico at desks behind them; a blackboard says the U.S. must govern its new territories with or without their consent.",
+   "source_url": "https://commons.wikimedia.org/wiki/File:School_Begins_1-25-1899.JPG",
+   "license": "Public domain (published 1899, pre-1930)"
+  }
+ ]
+}

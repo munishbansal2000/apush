@@ -1,0 +1,90 @@
+{
+ "id": "apush-saq-0229",
+ "type": "saq",
+ "unit": 7,
+ "topics": [
+  "7.13"
+ ],
+ "lesson": "apush-u7-l5",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "2.B",
+  "3.B"
+ ],
+ "themes": [
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.13 World War II: Military"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 24",
+    "section": "World War II (1933-1945)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "New Deal and WWII (1934-1945)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "Secondary text: Historians describe the Battle of Midway in June 1942 as the turning point of the Pacific war. Japan lost four aircraft carriers and more than 200 planes, while the United States lost one carrier. From Midway on, Japan fought on the defensive, unable to replace its heavy losses, while American factories built new ships faster than Japan could sink them.",
+  "source_note": "Original secondary text summarizing 5 Steps Chapter 24 and Barron's Chapter 9 on the Battle of Midway."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus is original secondary text grounded in Barron's Chapter 9 and 5 Steps Chapter 24",
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify ONE way the Battle of Midway changed the course of the Pacific war.",
+   "modelAnswer": "After Midway, Japan fought on the defensive for the rest of the war. The loss of four carriers and more than 200 planes took away the offensive power Japan had used since Pearl Harbor.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names a change Midway caused, such as Japan shifting to the defensive or losing the initiative.",
+     "notEarned": "Naming a fact about the battle, such as its date, with no change it caused."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain ONE reason the United States was able to replace its losses after Midway while Japan could not.",
+   "modelAnswer": "American industry was far larger than Japan's, and the United States was already building ships at a pace Japan could not match. The books call the United States the 'arsenal of democracy,' and its factories turned out new carriers and planes through the rest of the war.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains a reason for the American advantage in replacing losses, such as industrial size or shipbuilding output.",
+     "notEarned": "Stating that the United States built ships, with no reason it could do so while Japan could not."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain ONE other turning point in World War II besides Midway.",
+   "modelAnswer": "The D-Day landings of June 6, 1944, opened the second front in Western Europe that Stalin had long demanded. The landings forced Germany to fight in the west while Soviet armies pressed from the east, and Paris was liberated in August 1944.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains a turning point other than Midway, such as D-Day, the Battle of the Bulge, or the atomic bombings, with a consequence.",
+     "notEarned": "Naming another battle with no explanation of why it was a turning point."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-2165",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.6"
+ ],
+ "lesson": "apush-u7-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "A",
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.6 World War I: Home Front"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 21",
+    "section": "United States and World War I (1914-1921)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "The Progressive Era and World War I (1900-1920)"
+   }
+  ],
+  "primary_sources": [
+   "Schenck v. United States, 249 U.S. 47 (1919)"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "Justice Oliver Wendell Holmes, writing for a unanimous Supreme Court in Schenck v. United States, March 3, 1919 (verbatim excerpts):\n\n\"We admit that, in many places and in ordinary times, the defendants, in saying all that was said in the circular, would have been within their constitutional rights. But the character of every act depends upon the circumstances in which it is done. The most stringent protection of free speech would not protect a man in falsely shouting fire in a theatre and causing a panic. . . . The question in every case is whether the words used are used in such circumstances and are of such a nature as to create a clear and present danger that they will bring about the substantive evils that Congress has a right to prevent. It is a question of proximity and degree.\"",
+  "source_note": "Verbatim excerpts from Schenck v. United States, 249 U.S. 47 (1919) (public domain)."
+ },
+ "stimulus_set": "schenck",
+ "source": "original; stimulus quoted verbatim from Schenck v. United States, 249 U.S. 47 (1919)",
+ "stem": "According to Holmes, speech that would be protected in ordinary times can be punished when",
+ "options": [
+  {
+   "key": "A",
+   "text": "it creates a clear and present danger in wartime"
+  },
+  {
+   "key": "B",
+   "text": "it criticizes a member of Congress",
+   "misconception": "Holmes says nothing about criticizing Congress; his test is about danger, not about who is criticized."
+  },
+  {
+   "key": "C",
+   "text": "it is printed in a foreign language",
+   "misconception": "Holmes says nothing about the language of the speech; his test is about danger."
+  },
+  {
+   "key": "D",
+   "text": "it is spoken by a person born abroad",
+   "misconception": "Holmes says nothing about where the speaker was born; his test is about danger."
+  }
+ ],
+ "rationales": {
+  "A": "Holmes says the question is whether the words create a clear and present danger, and that wartime changes what can be endured.",
+  "B": "Holmes says nothing about criticizing Congress. His test is about danger, not about who is criticized.",
+  "C": "Holmes says nothing about the language of the speech. His test is about danger.",
+  "D": "Holmes says nothing about where the speaker was born. His test is about danger.",
+  "general": "1. Find Holmes's own test. He names it: clear and present danger.\n2. Find what changes the answer. Circumstances do; the same words are protected in peace and punishable in war.\n3. Note the example Holmes gives. Even falsely shouting fire in a theatre can be punished, because the panic it causes is the danger.\n4. Test each option against that test. Only danger fits it.\nRemember: when a judge names a test, use the test's own words to answer."
+ }
+}

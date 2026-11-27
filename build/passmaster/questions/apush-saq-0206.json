@@ -1,0 +1,93 @@
+{
+ "id": "apush-saq-0206",
+ "type": "saq",
+ "unit": 7,
+ "topics": [
+  "7.3"
+ ],
+ "lesson": "apush-u7-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "3.B",
+  "4.A"
+ ],
+ "themes": [
+  "PCE",
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "The Sinking of the Maine"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 19",
+    "section": "The Spanish-American War"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Unit 7: The Early 20th Century (1890-1945)"
+   }
+  ],
+  "primary_sources": [
+   "Enrique Dupuy de L\u00f4me, letter to Jos\u00e9 Canalejas, February 1898"
+  ]
+ },
+ "source": "original; stimulus is a translated excerpt from the de L\u00f4me letter, February 1898, public domain",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Enrique Dupuy de L\u00f4me, Spanish minister to the United States, private letter to Jos\u00e9 Canalejas, February 1898, translated from the Spanish; stolen by Cuban revolutionaries and published in the New York Journal, February 9, 1898.",
+  "text": "\"Besides the natural and inevitable coarseness with which he repeats all that the press and public opinion of Spain has said of Weyler, it shows once more what McKinley is: weak and catering to the rabble, and, besides, a low politician, who desires to leave a door open to me and to stand well with the jingoes of his party.\" \u2014 Enrique Dupuy de L\u00f4me, letter to Jos\u00e9 Canalejas, February 1898 (translated excerpt)"
+ },
+ "stimulus_set": null,
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify what de L\u00f4me says about President McKinley.",
+   "modelAnswer": "De L\u00f4me says McKinley is weak, a man who caters to the rabble and acts as a low politician. He says McKinley wants to leave a door open for himself and stay on good terms with the jingoes, the Americans who wanted war and expansion. In short, he calls the president insincere and easily pushed around.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names what de L\u00f4me says about McKinley, such as calling him weak, a caterer to the rabble, or a low politician who courts the jingoes.",
+     "notEarned": "A vague statement that de L\u00f4me insulted McKinley without saying what the insult was."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain how the publication of the letter affected American public opinion toward Spain.",
+   "modelAnswer": "The publication of the letter outraged the American public because it showed a Spanish diplomat privately mocking the president. Hearst's New York Journal printed it under a headline calling it the worst insult in the country's history. The insult made Spain look arrogant and hostile, and it added to the anger already stirred by reports of Spanish cruelty in Cuba.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains how the letter's publication hardened opinion against Spain, such as by publicizing a private insult to the president that made Spain look hostile and arrogant.",
+     "notEarned": "States that Americans were angry without explaining how the letter caused that anger."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain how one other event in February 1898 also pushed the United States toward war with Spain.",
+   "modelAnswer": "The other event was the explosion of the battleship Maine in Havana harbor on February 15, 1898, which killed 266 sailors. The yellow press blamed Spain for the explosion even though the cause was never proven. The sinking gave the public a second shock in the same month and made war feel unavoidable.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains how the Maine explosion pushed the country toward war, such as by killing 266 sailors and letting the press blame Spain, which made war politically unavoidable.",
+     "notEarned": "Names the Maine without explaining how it pushed the United States toward war."
+    }
+   ]
+  }
+ ]
+}

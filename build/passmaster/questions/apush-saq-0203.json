@@ -1,0 +1,100 @@
+{
+ "id": "apush-saq-0203",
+ "type": "saq",
+ "unit": 7,
+ "topics": [
+  "7.2"
+ ],
+ "lesson": "apush-u7-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "3.A",
+  "4.A"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.2 Imperialism: Debates"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "The Motives of American Imperialism"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "The American Anti-Imperialist League"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 19",
+    "section": "Rise of American Imperialism (1890-1913)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Unit 7: The Early 20th Century (1890-1945)"
+   }
+  ]
+ },
+ "source": "original; stimulus paraphrased from Barron's Premium 2027, Chapter 9, Topic 7.2 Imperialism: Debates",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of Barron's Premium 2027, Chapter 9, Topic 7.2 Imperialism: Debates.",
+  "text": "Paraphrase of Barron's Premium 2027, Chapter 9, \"Topic 7.2 Imperialism: Debates\": Between 1890 and 1914, Americans debated whether the United States should become an overseas empire. Supporters pointed to new markets for American goods, naval bases, and a duty to uplift other peoples. Critics said colonies betrayed the republic's ideals, because the United States would rule peoples who had no voice in its government. The debate ended in expansion: the United States took the Philippines, Puerto Rico, and Guam in 1898 and fought a three-year war to hold the Philippines."
+ },
+ "stimulus_set": null,
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one motive for American imperialism in the period 1890-1914.",
+   "modelAnswer": "One motive was economic: American factories were producing more goods than Americans could buy, especially after the Panic of 1893, so supporters of empire wanted new markets overseas for those goods. Another was strategic: naval thinkers like Mahan argued that a strong navy needed coaling stations and bases abroad to protect trade.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names a specific motive for imperialism, such as new markets, raw materials, naval bases, or a duty to uplift other peoples.",
+     "notEarned": "A vague statement that America \"wanted more power\" without naming a specific motive."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain how one argument against imperialism challenged the idea that the United States was spreading liberty.",
+   "modelAnswer": "Anti-imperialists argued that ruling the Philippines without the consent of Filipinos contradicted the liberty the United States claimed to spread. The republic was founded on the idea that government needs the consent of the governed, yet empire meant ruling a foreign people who had no vote in American government. Spreading liberty by denying it to Filipinos, they said, was hypocrisy.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains a specific anti-imperialist argument and how it undercuts the claim that empire spread liberty, such as rule without consent.",
+     "notEarned": "Names an anti-imperialist argument without explaining how it challenges the liberty claim."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain how the outcome of the debate changed the United States' role in the world.",
+   "modelAnswer": "The expansionists won: the United States took the Philippines, Puerto Rico, and Guam in 1898 and became an overseas empire. Before 1898 it had expanded mainly across its own continent, but after the debate it ruled peoples overseas and held bases in the Pacific and Caribbean. The country had become a global power rather than a continental one.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains a specific outcome of the debate and how it changed the American role abroad, such as acquiring overseas territories.",
+     "notEarned": "Names an outcome without explaining how it changed the United States' role in the world."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "apush-mcq-2365",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.13"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "2.A"
+  ],
+  "themes": [
+    "WOR",
+    "GEO"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.13 World War II: Military"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "New Deal and WWII (1934-1945)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus": {
+    "kind": "text",
+    "text": "Paraphrase: By the end of 1943, American forces in the Pacific were using a strategy called 'island hopping.' Instead of attacking every Japanese-held island, they seized only the islands that mattered most, such as airfields and positions that could block enemy ships. Islands they skipped were cut off by blockade, so the Japanese forces left on them, in the words of the time, 'withered on the vine.' Marines landed on Guadalcanal in August 1942, the first American offensive in the Pacific, and months of jungle fighting followed before the Japanese withdrew in February 1943.",
+    "source_note": "Original secondary summary drawn from Barron's Chapter 9 ('Island Hopping'; Guadalcanal) and 5 Steps Chapter 24."
+  },
+  "stimulus_set": "island-hopping-pacific-1943",
+  "source": "original; stimulus drawn from book-grounded figures and paraphrases (see source_note)",
+  "stem": "According to the passage, what was the main idea of island hopping?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Seize only the most useful islands and blockade the rest"
+    },
+    {
+      "key": "B",
+      "text": "Attack every Japanese-held island in order, starting with the closest",
+      "misconception": "Island hopping skipped islands on purpose; it did not attack them in order."
+    },
+    {
+      "key": "C",
+      "text": "Avoid the Pacific islands and invade Japan directly by sea",
+      "misconception": "The strategy worked through the islands, not by sailing past them all."
+    },
+    {
+      "key": "D",
+      "text": "Let Japan keep its islands while American ships sailed around them",
+      "misconception": "Skipped islands were blockaded, not simply left alone."
+    }
+  ],
+  "answerKey": "A",
+  "rationales": {
+    "A": "The passage says to seize the islands that mattered most and blockade the rest.",
+    "B": "Island hopping skipped fortified islands on purpose.",
+    "C": "The strategy advanced through key islands toward Japan.",
+    "D": "Skipped islands were cut off by blockade, not ignored.",
+    "general": "1. The passage defines island hopping: seize the islands that matter most and skip the rest.\n2. Skipped islands were cut off by blockade, so their garrisons 'withered on the vine.'\n3. Background from the books: the useful islands served as airfields or positions to block enemy ships.\n4. The strategy saved lives and time by avoiding the most heavily fortified islands.\nRemember: a strategy that skips targets is choosing where not to fight, so name what it skips."
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "id": "apush-mcq-2363",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.13"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "test",
+  "difficulty": 4,
+  "skills": [
+    "2.B"
+  ],
+  "themes": [
+    "WOR",
+    "WXT"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.13 World War II: Military"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "New Deal and WWII (1934-1945)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus": {
+    "kind": "table",
+    "text": "Aircraft carriers lost at two Pacific naval battles in 1942.\n\n| Battle | Date | Japanese carriers lost | American carriers lost |\n| Coral Sea | May 1942 | 1 | 1 |\n| Midway | June 1942 | 4 | 1 |",
+    "source_note": "Figures from 5 Steps Chapter 24 (Midway: Japan lost four aircraft carriers and over 200 planes; the United States lost one carrier) and Barron's Chapter 9 (Coral Sea: the U.S. Navy stopped a Japanese fleet headed to New Guinea)."
+  },
+  "stimulus_set": "midway-carriers-1942",
+  "source": "original; stimulus drawn from book-grounded figures and paraphrases (see source_note)",
+  "stem": "The table shows Japan lost four carriers at Midway while the United States lost one. Why did that loss matter more to Japan than the American loss mattered to the United States?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Japan had no other warships left anywhere in the Pacific after Midway",
+      "misconception": "Japan still had a large navy after Midway; it lost the initiative, not every ship."
+    },
+    {
+      "key": "B",
+      "text": "Japan could not replace its carriers and pilots, while American factories built new ships"
+    },
+    {
+      "key": "C",
+      "text": "The United States had already decided to surrender the Philippine Islands",
+      "misconception": "The Philippines had already fallen in May 1942; the issue was replacing ships."
+    },
+    {
+      "key": "D",
+      "text": "Japan's carriers were its only weapons, and the United States fought only with submarines",
+      "misconception": "Both sides used many kinds of ships, and Japan kept fighting for three more years."
+    }
+  ],
+  "answerKey": "B",
+  "rationales": {
+    "A": "Japan kept a large navy after Midway; it lost the initiative, not every ship.",
+    "B": "Japan could not replace its carriers and pilots, while American factories built new ships.",
+    "C": "The Philippines had fallen in May 1942; the question is about replacing losses.",
+    "D": "Both sides fought with many kinds of ships for three more years.",
+    "general": "1. The table shows a four-to-one carrier loss against Japan.\n2. Background from the books: Japan could not replace its heavy losses, including trained pilots.\n3. American industry, the 'arsenal of democracy,' built new ships faster than Japan could sink them.\n4. So the same battle cost Japan its initiative and cost the United States a ship it could replace.\nRemember: in a long war, the side that can replace its losses wins the war of attrition."
+  }
+}

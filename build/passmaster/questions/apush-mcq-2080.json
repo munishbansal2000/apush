@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-2080",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.3"
+ ],
+ "lesson": "apush-u7-l1",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "answerKey": "C",
+ "skills": [
+  "4.A",
+  "3.B"
+ ],
+ "themes": [
+  "WOR",
+  "NAT"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "War in the Philippines"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 19",
+    "section": "The Spanish-American War"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Unit 7: The Early 20th Century (1890-1945)"
+   }
+  ]
+ },
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Louis Dalrymple, \"School Begins,\" Puck magazine, January 25, 1899; Library of Congress cph.3b48925; public domain.",
+  "text": "Louis Dalrymple, \"School Begins,\" Puck magazine, January 25, 1899. Uncle Sam, a white-haired teacher with glasses and a goatee, leans over a desk holding a long pointer. Four small children sit on a bench in front of him, wearing sashes labeled Philippines, Hawaii, Porto Rico, and Cuba. Behind them, older children sit at desks reading books labeled California, Texas, Arizona, and New Mexico. A blackboard reads: \"The U.S. must govern its new territories with or without their consent until they can govern themselves.\" The cartoon was printed with this caption: \"Uncle Sam (to his new class in Civilization)\u2014Now, children, you've got to learn these lessons whether you want to or not! But just take a look at the class ahead of you, and remember that, in a little while, you will feel as glad to be here as they are!\""
+ },
+ "stimulus_set": "school-begins-1899",
+ "source": "original; stimulus is a public-domain 1899 political cartoon by Louis Dalrymple, Puck magazine",
+ "stem": "The cartoon's message about consent is most directly challenged by which later event?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The annexation of Hawaii in 1898, without a war of resistance",
+   "misconception": "Hawaii was annexed in 1898 without a war of resistance; it does not challenge the cartoon's claim about consent."
+  },
+  {
+   "key": "B",
+   "text": "The building of the Panama Canal",
+   "misconception": "The canal was built years later in Panama, and it says nothing about whether the new territories consented."
+  },
+  {
+   "key": "C",
+   "text": "The Philippine-American War, in which Filipinos fought American rule"
+  },
+  {
+   "key": "D",
+   "text": "The election of 1900",
+   "misconception": "The election was fought over imperialism, but an election is a debate, not a refusal of American rule."
+  }
+ ],
+ "rationales": {
+  "A": "Hawaii was annexed in 1898 and raised the flag without a fight. It fits the cartoon better than it challenges it.",
+  "B": "The Panama Canal came later and elsewhere. It does not test what Filipinos thought of American rule.",
+  "C": "Background from the books: Filipinos had fought Spain since 1896 and then fought the United States for three years, refusing the rule the cartoon assumes they would accept.",
+  "D": "The 1900 election debated imperialism, but a campaign is not the same as a people taking up arms against American rule.",
+  "general": "1. Name the cartoon's claim. The new territories will learn their lessons and be glad, consent or not.\n2. Ask what would break it. A people who refuse the lessons and fight the teacher instead.\n3. Find the refusal. The Filipinos fought American rule for three years, from 1899 to 1902.\nRemember: a claim about the future is tested by what happened next, so carry the story past the cartoon's date."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2080",
+   "file": "u7/school-begins-1899.jpg",
+   "caption": "Louis Dalrymple, \"School Begins,\" Puck magazine, January 25, 1899.",
+   "alt": "Uncle Sam, a white-haired teacher with a pointer, stands over a desk facing four small children on a bench wearing sashes labeled Philippines, Hawaii, Porto Rico, and Cuba; older children read books labeled California, Texas, Arizona, and New Mexico at desks behind them; a blackboard says the U.S. must govern its new territories with or without their consent.",
+   "source_url": "https://commons.wikimedia.org/wiki/File:School_Begins_1-25-1899.JPG",
+   "license": "Public domain (published 1899, pre-1930)"
+  }
+ ]
+}

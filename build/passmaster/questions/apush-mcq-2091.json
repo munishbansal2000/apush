@@ -1,0 +1,76 @@
+{
+ "id": "apush-mcq-2091",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.3"
+ ],
+ "lesson": "apush-u7-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "B",
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "WOR",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "United States Victory in the Spanish-American War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 19",
+    "section": "The Spanish-American War"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Unit 7: The Early 20th Century (1890-1945)"
+   }
+  ]
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Figures: battle deaths (385) and total deaths (2,446) per Barron's Premium 2027, Chapter 9, and 5 Steps to a 5 2024, Chapter 19; disease deaths (2,061) are the total minus the battle deaths.",
+  "text": "| Cause of death | American deaths in the Spanish-American War, 1898 |\n| Killed in battle | 385 |\n| Died of disease | 2,061 |\n| Total | 2,446 |\nSource: battle deaths (385) and total deaths (2,446) per Barron's Premium 2027, Chapter 9, and 5 Steps to a 5 2024, Chapter 19; disease deaths (2,061) are the total minus the battle deaths."
+ },
+ "stimulus_set": "two-wars-table",
+ "source": "original; stimulus is a data table drawn from the course books",
+ "stem": "According to the table, most American deaths in the Spanish-American War came from",
+ "options": [
+  {
+   "key": "A",
+   "text": "Battle, not disease",
+   "misconception": "The table lists 385 battle deaths against 2,061 disease deaths; battle is the smaller number."
+  },
+  {
+   "key": "B",
+   "text": "Disease, not battle"
+  },
+  {
+   "key": "C",
+   "text": "The sinking of the Maine",
+   "misconception": "The Maine's 266 dead are part of the total, but the table divides deaths by battle and disease, not by ship."
+  },
+  {
+   "key": "D",
+   "text": "Combat in the Philippines",
+   "misconception": "The table covers the Spanish-American War of 1898, not the Philippine-American War that followed."
+  }
+ ],
+ "rationales": {
+  "A": "The numbers run the other way: 385 died in battle and 2,061 died of disease.",
+  "B": "Disease killed 2,061 Americans, more than five times the 385 killed in battle.",
+  "C": "The Maine's dead are inside the total, but the table's split is battle against disease, not ship against ship.",
+  "D": "The table is the Spanish-American War, 1898. The Philippines war is a different war with its own dead.",
+  "general": "1. Read the rows. Battle killed 385 Americans; disease killed 2,061.\n2. Compare the numbers. Disease killed more than five times as many as battle: 2,061 against 385.\n3. Answer the question. Most deaths came from disease, not from fighting.\nRemember: a table answers by comparison, so always set the two numbers side by side and ask which one is bigger before choosing."
+ }
+}

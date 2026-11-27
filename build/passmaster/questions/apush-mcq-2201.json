@@ -1,0 +1,88 @@
+{
+ "id": "apush-mcq-2201",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.7"
+ ],
+ "lesson": "apush-u7-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "A",
+ "skills": [
+  "5.B"
+ ],
+ "themes": [
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.7 1920s: Innovations in Communication and Technology"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 22",
+    "section": "Beginning of Modern America: The 1920s"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Jazz Age and Great Depression (1920-1933)"
+   }
+  ],
+  "primary_sources": [
+   "Photograph, Frank Conrad's radio station 8XK, July 1920"
+  ]
+ },
+ "stimulus": {
+  "kind": "image",
+  "text": "The photograph shows Frank Conrad's radio station 8XK in the garage of his home in Wilkinsburg, Pennsylvania, in July 1920. A wooden table holds coils of wire, glass vacuum tubes, dials, and loose cables.\n\nBackground: Conrad's broadcasts led the Westinghouse company to create KDKA in Pittsburgh. KDKA was licensed on October 27, 1920, and on November 2, 1920, it broadcast the returns of the Harding-Cox presidential election.",
+  "source_note": "Photograph, Frank Conrad's radio station 8XK, July 1920, Brown Bros. Photos, public domain (Wikimedia Commons). KDKA facts from the Federal Communications Commission and the Federal Judicial Center."
+ },
+ "stimulus_set": "conrad-8xk",
+ "source": "original; stimulus image from the shared pool, Frank Conrad's radio station 8XK, July 1920, public domain",
+ "stem": "Conrad's garage station best shows that early radio grew from",
+ "options": [
+  {
+   "key": "A",
+   "text": "amateur experimenters trying out new equipment"
+  },
+  {
+   "key": "B",
+   "text": "a government plan to build a network",
+   "misconception": "No government plan built early radio. The government licensed stations, but amateurs and companies built them."
+  },
+  {
+   "key": "C",
+   "text": "newspapers printing radio schedules every day",
+   "misconception": "The photo shows equipment, not newspapers. Newspapers came later, as station owners and program sources."
+  },
+  {
+   "key": "D",
+   "text": "movie studios seeking out new audiences",
+   "misconception": "Movie studios did not build early radio. The station grew from a Westinghouse engineer's hobby."
+  }
+ ],
+ "rationales": {
+  "A": "The table holds coils, tubes, and loose wires in a home garage. That is an amateur's workshop, and early radio grew from amateurs like Conrad.",
+  "B": "No government plan built early radio. The government licensed stations, but amateurs and companies built them.",
+  "C": "The photo shows equipment, not newspapers. Newspapers came later, as station owners and program sources.",
+  "D": "Movie studios did not build early radio. The station grew from a Westinghouse engineer's hobby.",
+  "general": "1. Look at the photo: coils, tubes, and loose wires on a table in a garage.\n2. Ask who builds that way: an amateur trying out equipment, not a company or a government.\n3. Connect it to KDKA: Conrad's hobby broadcasts led Westinghouse to build a real station.\nRemember: a homemade setup in a photo is evidence of who started a technology."
+ },
+ "figures": [
+  {
+   "file": "u7/frank-conrad-8xk-1920.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Frank_Conrad_radio_station_8XK_1920.jpg",
+   "license": "Public domain (July 1920 photograph; Brown Bros. Photos)",
+   "caption": "Frank Conrad's home radio station 8XK, a table of coils, tubes, and wires, July 1920.",
+   "alt": "A wooden table covered with coils of wire, glass vacuum tubes, dials, and loose cables in a home garage radio station.",
+   "id": "fig-apush-mcq-2201"
+  }
+ ]
+}

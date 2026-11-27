@@ -1,0 +1,93 @@
+{
+  "id": "apush-saq-0230",
+  "type": "saq",
+  "unit": 7,
+  "topics": [
+    "7.13"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "2.B",
+    "3.B"
+  ],
+  "themes": [
+    "WOR",
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.13 World War II: Military"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "New Deal and WWII (1934-1945)"
+      }
+    ],
+    "primary_sources": [
+      "President Harry S. Truman's announcement of the atomic bombing of Hiroshima, August 6, 1945"
+    ]
+  },
+  "stimulus": {
+    "kind": "text",
+    "text": "Paraphrase: On August 6, 1945, President Harry Truman announced that an American plane had dropped a single atomic bomb on Hiroshima, a weapon with explosive force equal to more than 20,000 tons of TNT. He said the bomb would shorten the agony of war.",
+    "source_note": "Paraphrase of President Harry S. Truman's announcement of the atomic bombing of Hiroshima, August 6, 1945. Rewritten from staged survivor 5s24-ch24-saq-01."
+  },
+  "stimulus_set": null,
+  "source": "original; stimulus paraphrased from President Truman's August 6, 1945 announcement; rewritten from staged survivor 5s24-ch24-saq-01",
+  "saq_slot": 2,
+  "totalPoints": 3,
+  "parts": [
+    {
+      "part": "a",
+      "points": 1,
+      "prompt": "Identify the event Truman announced.",
+      "modelAnswer": "Truman announced that the United States had dropped an atomic bomb on the Japanese city of Hiroshima. It was the first atomic bomb ever used in war, dropped by an American plane on August 6, 1945.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Names the atomic bombing of Hiroshima on August 6, 1945.",
+          "notEarned": "Naming a different event, such as the attack on Pearl Harbor or the surrender of Germany."
+        }
+      ]
+    },
+    {
+      "part": "b",
+      "points": 1,
+      "prompt": "Explain ONE reason American planners gave for using the atomic bomb.",
+      "modelAnswer": "Planners said the bomb would end the war quickly and save the lives an invasion of Japan would have cost. Estimates of American casualties in an invasion ran into the hundreds of thousands, and the bloody fights for Iwo Jima and Okinawa showed how fiercely Japan would defend its home islands.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Explains a reason planners gave, such as ending the war quickly or avoiding the casualties of an invasion.",
+          "notEarned": "Stating that the bomb was used, with no reason planners gave for using it."
+        }
+      ]
+    },
+    {
+      "part": "c",
+      "points": 1,
+      "prompt": "Explain ONE argument critics later made against the decision to drop the atomic bombs.",
+      "modelAnswer": "Critics argue that Japan was already beaten and close to surrender, so the bombs were unnecessary. They also argue that it was wrong to target cities full of civilians, and that the decision opened the atomic age.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Explains a critic's argument, such as Japan being close to surrender or the targeting of civilians.",
+          "notEarned": "Restating the planners' case for the bombs, with no critic's argument."
+        }
+      ]
+    }
+  ]
+}

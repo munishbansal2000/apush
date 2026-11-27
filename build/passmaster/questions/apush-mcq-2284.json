@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-2284",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.10"
+ ],
+ "lesson": "apush-u7-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.10 The New Deal"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 23",
+    "section": "Great Depression and the New Deal (1929-1939)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "New Deal and WWII (1934-1945)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "Paraphrase of Barron's Premium 2027, Chapter 9, Topic 7.10, and 5 Steps to a 5 2024, Chapter 23: In 1935 the Supreme Court struck down the National Industrial Recovery Act in Schechter Poultry Corp. v. United States, holding that Congress could not hand its lawmaking power to the executive branch. In 1936 the Court struck down the Agricultural Adjustment Act in United States v. Butler. In 1937 President Roosevelt proposed a bill to let him appoint an additional justice for every sitting justice over 70 who would not retire, up to six new justices. Congress rejected the plan, but the Court grew friendlier to the New Deal, and Roosevelt later appointed eight new justices as older ones retired.",
+  "source_note": "Paraphrase of Barron's Premium 2027, Chapter 9, Topic 7.10, and 5 Steps to a 5 2024, Chapter 23."
+ },
+ "stimulus_set": "court-new-deal-1935-1937",
+ "source": "original; stimulus paraphrased from Barron's Premium 2027, Chapter 9, Topic 7.10, and 5 Steps to a 5 2024, Chapter 23",
+ "stem": "In Schechter Poultry Corp. v. United States, the Supreme Court struck down the National Industrial Recovery Act mainly because",
+ "options": [
+  {
+   "key": "A",
+   "text": "The NIRA had failed to raise farm prices at all",
+   "misconception": "Farm prices were the AAA's concern, not the NIRA's, and the Court ruled on constitutional grounds, not on farm results."
+  },
+  {
+   "key": "B",
+   "text": "Congress had handed lawmaking power to the executive branch"
+  },
+  {
+   "key": "C",
+   "text": "The NIRA had banned all labor unions outright",
+   "misconception": "The NIRA protected unions and collective bargaining; it did not ban them."
+  },
+  {
+   "key": "D",
+   "text": "The NIRA had raised taxes far too high",
+   "misconception": "Taxes were not the issue in Schechter; the issue was whether an agency could write laws."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "Background from the books: farm prices belonged to the AAA, which the Court struck down separately in Butler; Schechter was about the NIRA's codes.",
+  "B": "Background from the books: the Court held the NIRA unconstitutional because its codes delegated legislative power to the executive branch.",
+  "C": "Background from the books: the NIRA protected unions, so a ban on unions cannot be the reason it was struck down.",
+  "D": "Background from the books: Schechter turned on the separation of powers, not on the level of taxes.",
+  "general": "1. The passage says the Court struck down the NIRA in Schechter in 1935.\n2. Its reason was constitutional: Congress could not hand lawmaking to the executive branch.\n3. The NIRA's codes set wages and prices, which is lawmaking in practice.\n4. So the Court voided the act for how it was made, not for what it tried to do.\nRemember: courts strike down laws for constitutional reasons, so look for the power question first."
+ }
+}

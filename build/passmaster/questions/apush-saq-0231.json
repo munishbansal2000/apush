@@ -1,0 +1,91 @@
+{
+  "id": "apush-saq-0231",
+  "type": "saq",
+  "unit": 7,
+  "topics": [
+    "7.14"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "2.B",
+    "3.B"
+  ],
+  "themes": [
+    "WOR",
+    "PCE"
+  ],
+  "reasoning": "continuity-change",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.14 Postwar Diplomacy"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "New Deal and WWII (1934-1945)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus": {
+    "kind": "text",
+    "text": "Secondary text: Historians describe the Yalta Conference of February 1945 as the high point of wartime cooperation and the seed of the Cold War. At Yalta the three leaders agreed to divide Germany into occupation zones, promised free elections in the nations freed from German rule, and agreed to create the United Nations. Within months, Soviet-backed governments held power in Eastern Europe, and the free elections never came. The United States, which had refused to join the League of Nations after World War I, became a founding member of the United Nations in 1945.",
+    "source_note": "Original secondary text summarizing Barron's Chapter 9 (Yalta Conference) and Princeton Chapter 11 (Yalta and the United Nations)."
+  },
+  "stimulus_set": null,
+  "source": "original; stimulus is original secondary text grounded in Barron's Chapter 9 and Princeton Chapter 11",
+  "saq_slot": 1,
+  "totalPoints": 3,
+  "parts": [
+    {
+      "part": "a",
+      "points": 1,
+      "prompt": "Identify ONE decision made at the Yalta Conference.",
+      "modelAnswer": "At Yalta the leaders agreed to divide Germany into four occupation zones, one run by each of the four Allied powers. The division was meant to keep Germany from threatening Europe again.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Names a decision made at Yalta, such as the four occupation zones, the promise of free elections, or the creation of the United Nations.",
+          "notEarned": "Naming a fact about the war with no decision made at Yalta."
+        }
+      ]
+    },
+    {
+      "part": "b",
+      "points": 1,
+      "prompt": "Explain ONE reason the United States supported creating the United Nations in 1945.",
+      "modelAnswer": "The United States had learned from the 1930s that staying out of world affairs did not keep it safe, since isolation had not prevented Pearl Harbor or the war. The United Nations offered a way to settle disputes without war while the American veto protected the United States from being forced into action it opposed.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Explains a reason for American support, such as the lesson of the 1930s, the veto protecting American freedom of action, or the wish to settle disputes without war.",
+          "notEarned": "Stating that the United States joined the United Nations, with no reason it did so."
+        }
+      ]
+    },
+    {
+      "part": "c",
+      "points": 1,
+      "prompt": "Explain ONE way the American approach to the postwar world in 1945 differed from its approach after World War I.",
+      "modelAnswer": "After World War I the Senate rejected the League of Nations and the United States stayed out of the new world organization. In 1945 the Senate approved the United Nations Charter by a wide margin, and the United States became a founding member with a permanent seat on the Security Council.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Explains a difference between 1919 and 1945, such as rejecting the League versus joining the United Nations, with a specific contrast.",
+          "notEarned": "Naming one year alone, or describing the United Nations with no contrast to 1919."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "id": "apush-leq-0076",
+  "type": "leq",
+  "unit": 7,
+  "topics": [
+    "7.13"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 4,
+  "skills": [
+    "6.A",
+    "6.B"
+  ],
+  "themes": [
+    "WOR",
+    "WXT"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.13 World War II: Military"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "New Deal and WWII (1934-1945)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus_set": null,
+  "stimulus": {
+    "kind": "none",
+    "source_note": "No stimulus; LEQ prompt only."
+  },
+  "source": "original; prompt written for this question",
+  "prompt": "Evaluate the extent to which American military strategy, rather than American industrial production, contributed to the Allied victory in World War II from 1941 to 1945.",
+  "rubric": [
+    {
+      "points": 1,
+      "skill": "6.A",
+      "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent to which American military strategy, rather than industrial production, contributed to the Allied victory from 1941 to 1945, with a clear line of reasoning.",
+      "notEarned": "Restating the prompt with no claim about the extent does not earn the point."
+    },
+    {
+      "points": 1,
+      "skill": "4.B",
+      "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as the attack on Pearl Harbor, the Europe-first decision, or the Soviet Union carrying most of the fighting against Germany before 1944.",
+      "notEarned": "A sentence of background with no link to the argument, or background from a later century, does not earn the point."
+    },
+    {
+      "points": 1,
+      "skill": "6.B",
+      "criterion": "Evidence (first point): earns the point for describing specific and relevant examples of American military strategy, such as Europe-first, island hopping, the D-Day landings, or the decision to use the atomic bomb.",
+      "notEarned": "General statements about strategy, with no specific example, do not earn the point."
+    },
+    {
+      "points": 1,
+      "skill": "6.B",
+      "criterion": "Evidence (second point): earns the point for describing specific and relevant examples of industrial production, such as the 'arsenal of democracy' replacing ships lost at Midway, the Manhattan Project, or American submarines cutting Japan off from oil and resources.",
+      "notEarned": "Repeating a first-point example, or naming production with no specific detail, does not earn the point."
+    },
+    {
+      "points": 1,
+      "skill": "6.B",
+      "criterion": "Analysis and reasoning (causation): earns the point for explaining how strategy and production each caused victory, linking the examples to the outcome rather than listing them.",
+      "notEarned": "Listing examples with no explanation of how each caused victory does not earn the point."
+    },
+    {
+      "points": 1,
+      "skill": "6.B",
+      "criterion": "Analysis and reasoning (complexity): earns the point for a complex argument, such as qualifying the claim by theater, showing that strategy and production reinforced each other, or weighing both against Soviet sacrifice.",
+      "notEarned": "A second example with no qualification or weighing does not earn the point."
+    }
+  ],
+  "modelOutline": "Thesis: American military strategy contributed to the Allied victory to a great extent, but not alone: strategy chose where and when to fight, while industrial production supplied the ships, planes, and bombs that made the strategy possible, so neither cause wins the argument without the other.\nContext: Japan attacked Pearl Harbor on December 7, 1941, bringing the United States into a two-front war, while the Soviet Union had already been carrying most of the fighting against Germany since June 1941.\nEvidence for strategy: Europe-first ranked Germany the greater danger; island hopping seized only the islands that mattered and blockaded the rest; D-Day opened the second front Stalin had demanded; the atomic bombings ended the Pacific war without an invasion.\nEvidence for production: American factories replaced the carrier lost at Midway and built new ships faster than Japan could sink them; the Manhattan Project built the atomic bomb; American submarines cut Japan off from oil and resources by late 1944.\nCausation: strategy without production would have been a plan with no ships, and production without strategy would have been ships with no plan; Midway shows both, since code-breaking set the ambush and new carriers replaced the losses.\nComplexity: The balance differed by theater: in the Pacific, production mattered most, because Japan could not replace its carriers and pilots, while in Europe, strategy mattered most, because D-Day split German armies already bled by Soviet troops.",
+  "totalPoints": 6
+}

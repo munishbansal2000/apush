@@ -1,0 +1,93 @@
+{
+ "id": "apush-saq-0217",
+ "type": "saq",
+ "unit": 7,
+ "topics": [
+  "7.8"
+ ],
+ "lesson": "apush-u7-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "1.A",
+  "3.A"
+ ],
+ "themes": [
+  "SOC",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.8 1920s: Cultural and Political Controversies"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 22",
+    "section": "Beginning of Modern America: The 1920s"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Jazz Age and Great Depression (1920-1933)"
+   }
+  ],
+  "primary_sources": [
+   "Tennessee Butler Act (1925), Section 1"
+  ]
+ },
+ "source": "original; stimulus verbatim from the Tennessee Butler Act (1925), Section 1, public domain",
+ "stimulus": {
+  "kind": "text",
+  "text": "“That it shall be unlawful for any teacher in any of the Universities, Normals and all other public schools of the State which are supported in whole or in part by the public school funds of the State, to teach any theory that denies the story of the Divine Creation of man as taught in the Bible, and to teach instead that man has descended from a lower order of animals.” — Tennessee Butler Act, Section 1, passed March 13, 1925; signed March 21, 1925.",
+  "source_note": "Tennessee Butler Act (Public Acts, 1925, Chapter 27), Section 1. Verbatim excerpt, public domain."
+ },
+ "stimulus_set": null,
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify the teaching that the Butler Act forbade in Tennessee's public schools.",
+   "modelAnswer": "The act forbade teaching that humans descended from a lower order of animals, or any theory denying the Bible's story of the divine creation of man. A teacher who taught evolution in a public school broke the law.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names the forbidden teaching: evolution, or human descent from lower animals, as against the Bible's account of creation.",
+     "notEarned": "A vague statement that the law banned science without naming evolution or human descent."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain one reason many Americans in the 1920s supported a law like the Butler Act.",
+   "modelAnswer": "Many fundamentalist Christians believed evolution contradicted the Bible and threatened traditional faith. They saw the public schools as places where their children should learn the Bible's account, not a science that denied it.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains a specific reason for supporting the law, such as defending the Bible's authority, protecting children from evolution, or resisting modern science.",
+     "notEarned": "A vague statement that people liked tradition without linking it to the Bible or to evolution."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one way the Butler Act was challenged in the 1920s.",
+   "modelAnswer": "The American Civil Liberties Union offered to defend any teacher who broke the law, and John Scopes, a teacher in Dayton, Tennessee, accepted. His 1925 trial drew national attention and put the law itself on trial before the country.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains a specific challenge, such as the ACLU's offer, Scopes's decision to break the law, or the national publicity of the 1925 trial.",
+     "notEarned": "A vague statement that people disagreed with the law without naming a challenge."
+    }
+   ]
+  }
+ ]
+}

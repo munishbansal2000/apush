@@ -1,0 +1,72 @@
+{
+  "id": "apush-mcq-2311",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.11"
+  ],
+  "lesson": "apush-u7-l4",
+  "status": "final",
+  "pool": "test",
+  "difficulty": 4,
+  "skills": [
+    "4.B"
+  ],
+  "themes": [
+    "WOR",
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.11 Interwar Foreign Policy"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus": {
+    "kind": "text",
+    "text": "Paraphrase: From 1934 to 1937, Senator Gerald Nye of North Dakota chaired a Senate committee that investigated whether arms makers and bankers had pushed the United States into World War I. The committee found no proof that these so-called merchants of death had maneuvered the country into war, but its hearings fed the belief that profits had driven the 1917 decision. Congress then passed three Neutrality Acts: the 1935 act banned arms sales to warring nations; the 1936 act banned loans to them; the 1937 act let warring nations buy non-military goods only if they paid cash and carried the goods away in their own ships, a rule called cash-and-carry.",
+    "source_note": "Paraphrased from Barron's Premium 2027, Chapter 9, Topic 7.11, and 5 Steps to a 5 2024, Chapter 24."
+  },
+  "stimulus_set": "neutrality-nye-1935",
+  "source": "original; Nye Committee and Neutrality Acts paraphrased from Barron's Premium 2027, Chapter 9, Topic 7.11, and 5 Steps to a 5 2024, Chapter 24",
+  "stem": "The 1937 Neutrality Act let warring nations buy American goods only if they paid cash and carried the goods in their own ships. In practice, that rule most helped which of the following?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Britain and France, which controlled the sea lanes"
+    },
+    {
+      "key": "B",
+      "text": "Germany, which had the largest merchant fleet",
+      "misconception": "Germany's surface fleet was small and its ships were hunted; it could not carry goods safely."
+    },
+    {
+      "key": "C",
+      "text": "Japan, which bought most American oil",
+      "misconception": "Japan bought oil, but the rule helped the side that could sail goods home, which was Britain and France."
+    },
+    {
+      "key": "D",
+      "text": "Italy, which had no navy of its own",
+      "misconception": "Italy had a navy, and it was on the side the rule did not favor."
+    }
+  ],
+  "answerKey": "A",
+  "rationales": {
+    "A": "Only Britain and France controlled the sea lanes, so only they could pay cash and carry the goods home.",
+    "B": "Background from the books: Germany could not use the sea lanes freely once Britain controlled them.",
+    "C": "Background from the books: Japan's oil purchases came later, and the cash-and-carry rule favored the Allies.",
+    "D": "Background from the books: Italy had a navy and fought on the Axis side.",
+    "general": "1. Cash-and-carry sounds even-handed: any belligerent may buy, if it pays cash and ships the goods itself.\n2. In practice only Britain and France controlled the sea lanes and could sail goods home safely.\n3. Germany's ships could not run the British blockade, so the rule helped one side only.\n4. Impartiality on paper favored the strong, which is why the Neutrality Acts failed to keep America neutral.\nRemember: a rule that looks neutral can favor one side."
+  }
+}

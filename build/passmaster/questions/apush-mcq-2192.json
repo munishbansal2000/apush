@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-2192",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.7"
+ ],
+ "lesson": "apush-u7-l3",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 3,
+ "answerKey": "A",
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "WXT",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.7 1920s: Innovations in Communication and Technology"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 22",
+    "section": "Beginning of Modern America: The 1920s"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Jazz Age and Great Depression (1920-1933)"
+   }
+  ],
+  "primary_sources": [
+   "Henry Ford, with Samuel Crowther, My Life and Work (1922), Chapter X"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "Henry Ford, with Samuel Crowther, My Life and Work (1922), Chapter X, “How Cheaply Can Things Be Made?” (verbatim excerpt):\n\n\"The payment of high wages fortunately contributes to the low costs because the men become steadily more efficient on account of being relieved of outside worries. The payment of five dollars a day for an eight-hour day was one of the finest cost-cutting moves we ever made, and the six-dollar day wage is cheaper than the five.\"",
+  "source_note": "Verbatim excerpt from Henry Ford, My Life and Work (Garden City, New York: Doubleday, Page, 1922), Project Gutenberg eBook #7213, public domain."
+ },
+ "stimulus_set": "ford-five-dollar-day",
+ "source": "original; stimulus quoted verbatim from Henry Ford, My Life and Work (1922), Project Gutenberg eBook #7213",
+ "stem": "Ford's argument in the passage rests on which claim about workers?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Better-paid workers work more efficiently each day"
+  },
+  {
+   "key": "B",
+   "text": "Workers prefer longer hours to higher pay",
+   "misconception": "Ford says nothing about workers preferring long hours. The passage praises the eight-hour day, not longer days."
+  },
+  {
+   "key": "C",
+   "text": "Machines matter more than workers' wages do",
+   "misconception": "The passage is about wages, not machines. Ford credits high pay, not machinery, with cutting costs here."
+  },
+  {
+   "key": "D",
+   "text": "High wages always raise the price of cars",
+   "misconception": "Ford says the opposite: high wages cut costs. The five-dollar day made each car cheaper to build, not dearer."
+  }
+ ],
+ "rationales": {
+  "A": "Ford says high pay makes men “steadily more efficient” because it relieves “outside worries.” Better pay raises efficiency, which cuts costs.",
+  "B": "Ford says nothing about workers preferring long hours. The passage praises the eight-hour day, not longer days.",
+  "C": "The passage is about wages, not machines. Ford credits high pay, not machinery, with cutting costs here.",
+  "D": "Ford says the opposite: high wages cut costs. The five-dollar day made each car cheaper to build, not dearer.",
+  "general": "1. Find Ford's reason: high wages relieve outside worries.\n2. Follow the chain: fewer worries make men steadily more efficient.\n3. Reach the payoff: more efficient work means lower costs, so the raise pays for itself.\n4. Note the surprise: Ford calls a raise a cost-cutting move, which only makes sense through efficiency.\nRemember: when an author calls a cost a saving, trace the chain from the spending to the payoff."
+ }
+}

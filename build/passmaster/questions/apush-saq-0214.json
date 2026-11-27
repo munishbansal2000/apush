@@ -1,0 +1,91 @@
+{
+ "id": "apush-saq-0214",
+ "type": "saq",
+ "unit": 7,
+ "topics": [
+  "7.7"
+ ],
+ "lesson": "apush-u7-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "1.A",
+  "3.A"
+ ],
+ "themes": [
+  "WXT",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.7 1920s: Innovations in Communication and Technology"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 22",
+    "section": "Beginning of Modern America: The 1920s"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Jazz Age and Great Depression (1920-1933)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; stimulus paraphrased from Barron's Premium 2027, Chapter 9, Topic 7.7, and 5 Steps to a 5 2024, Chapter 22",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of Barron's Premium 2027, Chapter 9, Topic 7.7, and 5 Steps to a 5 2024, Chapter 22.",
+  "text": "Paraphrase of Barron's Premium 2027, Chapter 9, Topic 7.7, and 5 Steps to a 5 2024, Chapter 22: In the 1920s, Henry Ford's moving assembly line cut the time and cost of building cars, and the price of a Model T touring car fell from $850 in 1908 to $290 by 1925. Radios, refrigerators, and other electric appliances also reached ordinary homes. Most cars were bought on the installment plan, and advertising urged Americans to buy the newest goods."
+ },
+ "stimulus_set": null,
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one consumer good that became widely available in the 1920s.",
+   "modelAnswer": "The automobile became widely available in the 1920s. By the end of the decade, about 23 million cars were on American roads, and most middle-class families could afford one.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names a specific consumer good that spread in the 1920s, such as the automobile, the radio, or the refrigerator.",
+     "notEarned": "A vague statement that people bought more things without naming a good."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain how mass production changed the price of consumer goods in the 1920s.",
+   "modelAnswer": "Mass production cut the time and cost of building each good, so prices fell. The moving assembly line cut the time to assemble a Model T chassis from about twelve and a half hours to about one and a half hours, and the price of a touring car fell from $850 in 1908 to $290 by 1925.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains that mass production lowered costs and prices, with a specific example such as the assembly line or the falling Model T price.",
+     "notEarned": "A vague statement that goods got cheaper without linking the change to mass production."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain how installment buying or advertising helped spread consumer goods in the 1920s.",
+   "modelAnswer": "Installment buying let families take goods home and pay over many months, so goods once out of reach became affordable. Advertising taught Americans to want the newest car, radio, or appliance, and by 1928 about 65 percent of cars were bought on the installment plan.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains a specific way installment buying or advertising spread goods, such as monthly payments or ads creating demand.",
+     "notEarned": "A vague statement that people wanted more goods without explaining how credit or advertising spread them."
+    }
+   ]
+  }
+ ]
+}

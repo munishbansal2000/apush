@@ -1,0 +1,83 @@
+{
+  "id": "apush-mcq-2300",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.11"
+  ],
+  "lesson": "apush-u7-l4",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "2.B"
+  ],
+  "themes": [
+    "WOR"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.11 Interwar Foreign Policy"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "Jazz Age and Great Depression (1920-1933)"
+      }
+    ],
+    "primary_sources": [
+      "Kellogg-Briand Pact signing photograph, 1928"
+    ]
+  },
+  "stimulus": {
+    "kind": "image",
+    "text": "Photograph of the signing of the Kellogg-Briand Pact at the Quai d'Orsay in Paris, August 27, 1928. A man holds up the open pact for the camera; its pages are covered with signatures, and round seals hang from ribbons down the center. Other men in formal dress stand beside him.",
+    "source_note": "Signing of the Kellogg-Briand Pact, Quai d'Orsay, Paris, August 27, 1928. French press photograph (Biblioth\u00e8que nationale de France); public domain."
+  },
+  "stimulus_set": "kellogg-briand-1928",
+  "source": "original; stimulus photograph, signing of the Kellogg-Briand Pact, Paris, 1928, public domain",
+  "stem": "The photograph shows the signing of the Kellogg-Briand Pact in Paris in August 1928. What did the nations that signed the pact agree to do?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Send troops to enforce peace in Europe",
+      "misconception": "The pact had no troops and no enforcement mechanism behind it."
+    },
+    {
+      "key": "B",
+      "text": "Join the League of Nations",
+      "misconception": "The pact was negotiated outside the League, and the United States never joined the League."
+    },
+    {
+      "key": "C",
+      "text": "Renounce war as an instrument of national policy"
+    },
+    {
+      "key": "D",
+      "text": "Limit their battleship fleets to fixed ratios",
+      "misconception": "Battleship ratios were the Washington Naval Conference of 1921-1922, not this pact."
+    }
+  ],
+  "answerKey": "C",
+  "rationales": {
+    "A": "Background from the books: the pact promised nothing about troops, and it named no penalty for breaking it.",
+    "B": "Background from the books: the pact was signed outside the League of Nations.",
+    "C": "The signers condemned recourse to war and renounced it as an instrument of national policy.",
+    "D": "Background from the books: fixed battleship ratios came from the Five-Power Treaty of 1922.",
+    "general": "1. The photograph shows the pact being signed in Paris in August 1928.\n2. In the pact the signers renounced war as an instrument of national policy.\n3. More than sixty nations eventually signed, showing how widely the hope for peace was shared.\n4. The pact named no penalty for breaking it and set up no force to enforce it.\nRemember: a promise without enforcement is a hope, not a guarantee."
+  },
+  "figures": [
+    {
+      "id": "fig-apush-mcq-2300",
+      "file": "u7/original-misc-interwar-14.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Le_pacte_%28Briand-Kellogg_sign%C3%A9_au_quay_d%27Orsay%2C_le_27_ao%C3%BBt_1928%29_-_btv1b532038376.jpg",
+      "license": "Public domain (French press photograph, 1928, pre-1930)",
+      "caption": "The signing of the Kellogg-Briand Pact in Paris, August 27, 1928.",
+      "alt": "A man holds up a large open book covered with signatures and hanging seals, while other men in formal dress stand beside him."
+    }
+  ]
+}

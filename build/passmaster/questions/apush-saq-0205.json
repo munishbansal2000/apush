@@ -1,0 +1,90 @@
+{
+ "id": "apush-saq-0205",
+ "type": "saq",
+ "unit": 7,
+ "topics": [
+  "7.3"
+ ],
+ "lesson": "apush-u7-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "1.B",
+  "4.A"
+ ],
+ "themes": [
+  "WXT",
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.3 The Spanish-American War and Its Aftermath"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 19",
+    "section": "The Spanish-American War"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Unit 7: The Early 20th Century (1890-1945)"
+   }
+  ]
+ },
+ "source": "original; stimulus paraphrased from 5 Steps to a 5 2024, Chapter 19, and Barron's Premium 2027, Chapter 9",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of 5 Steps to a 5 2024, Chapter 19, and Barron's Premium 2027, Chapter 9.",
+  "text": "Paraphrase of 5 Steps to a 5 2024, Chapter 19, and Barron's Premium 2027, Chapter 9: In the 1890s the United States grew concerned about Spanish rule in Cuba, where rebels had fought for independence since 1895. Spain's governor crowded Cuban civilians into reconcentration camps, where disease and starvation killed hundreds of thousands. American newspapers printed sensational accounts of Spanish cruelty, and the explosion of the battleship Maine in Havana harbor in February 1898 pushed the public toward war. The United States declared war in April 1898 and won in four months, taking Puerto Rico, Guam, and the Philippines from Spain."
+ },
+ "stimulus_set": null,
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one cause of the Spanish-American War.",
+   "modelAnswer": "One cause was Spain's reconcentration policy in Cuba, which crowded civilians into camps where disease and starvation killed hundreds of thousands. Another was the yellow press, whose sensational accounts of Spanish cruelty outraged the American public. A third was the explosion of the Maine in February 1898, which the press blamed on Spain.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names a specific cause of the war, such as reconcentration, yellow journalism, the Maine explosion, or American economic interests in Cuba.",
+     "notEarned": "A vague statement that America \"wanted war\" without naming a specific cause."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain how yellow journalism helped bring about the war.",
+   "modelAnswer": "Yellow journalism helped bring about the war by printing sensational, often exaggerated accounts of Spanish cruelty in Cuba. These stories reached ordinary Americans through mass-circulation newspapers and turned public opinion against Spain. By the time the Maine exploded, the public was already primed to blame Spain and demand war.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains how sensational newspaper coverage shaped public opinion against Spain, such as by spreading exaggerated accounts of cruelty that built support for war.",
+     "notEarned": "Names yellow journalism without explaining how it changed opinion or moved the country toward war."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one consequence of the war for the United States' role in the world.",
+   "modelAnswer": "One consequence was that the United States became an overseas empire. The war gave it Puerto Rico, Guam, and the Philippines, so America now ruled peoples across the Pacific and the Caribbean. The country had gone from expanding across its own continent to holding colonies overseas.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains a specific consequence for the American role abroad, such as acquiring overseas territories, becoming an imperial power, or gaining a Pacific presence.",
+     "notEarned": "Names a consequence without explaining how it changed the United States' role in the world."
+    }
+   ]
+  }
+ ]
+}

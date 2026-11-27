@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-2252",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.9"
+ ],
+ "lesson": "apush-u7-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "C",
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.9 The Great Depression"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 23",
+    "section": "Great Depression and the New Deal (1929-1939)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Jazz Age and Great Depression (1920-1933)"
+   }
+  ],
+  "primary_sources": [
+   "U.S. Bureau of Labor Statistics historical series (Economic Report of the President, Table B-22)"
+  ]
+ },
+ "stimulus": {
+  "kind": "table",
+  "text": "| Year | Unemployment rate |\n| 1929 | 3.2% |\n| 1930 | 8.7% |\n| 1931 | 15.9% |\n| 1932 | 23.6% |\n| 1933 | 24.9% |\n\nUnemployment as a share of the civilian labor force, 1929–1933.",
+  "source_note": "Figures from the U.S. Bureau of Labor Statistics historical series, as published in the Economic Report of the President, Table B-22."
+ },
+ "source": "original; stimulus table built from U.S. Bureau of Labor Statistics historical series",
+ "stem": "Which of the following best explains why unemployment kept rising for years after the 1929 crash?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Workers refused jobs offered by new factories",
+   "misconception": "Factories were closing, not hiring. Workers lost jobs because employers cut back, not because they refused work."
+  },
+  {
+   "key": "B",
+   "text": "The government hired nearly all unemployed workers by 1930",
+   "misconception": "The government did not hire the unemployed on that scale until the New Deal, and even then unemployment stayed high."
+  },
+  {
+   "key": "C",
+   "text": "Falling spending cut jobs, which cut spending further"
+  },
+  {
+   "key": "D",
+   "text": "Banks lent more freely as their deposits grew",
+   "misconception": "Banks did the opposite after the crash. They called in loans to protect themselves, and credit dried up."
+  }
+ ],
+ "rationales": {
+  "A": "Background from the books: businesses shut factories and cut workers as sales fell, so the problem was too few jobs, not workers refusing them.",
+  "B": "Background from the books: large-scale federal hiring of the unemployed began with New Deal programs in 1933, not in 1930.",
+  "C": "Background from the books: the credit crunch hurt industry, businesses cut workers, workers spent less, and the cutback fed on itself in a vicious circle.",
+  "D": "Background from the books: lenders called in loans after the crash, and the credit crunch spread, so banks lent less, not more.",
+  "general": "1. Ask why one crash kept costing jobs for years.\n2. Trace the circle. Background from the books: less spending meant fewer jobs, and fewer jobs meant less spending.\n3. Ask what broke the circle: nothing did until the 1930s wore on.\n4. Falling spending cut jobs, which cut spending further.\nRemember: a depression is a circle, so look for the step that feeds back into itself."
+ },
+ "stimulus_set": "unemployment-1929-1933"
+}

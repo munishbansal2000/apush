@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-2070",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.3"
+ ],
+ "lesson": "apush-u7-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "D",
+ "skills": [
+  "1.B",
+  "4.A"
+ ],
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "The Sinking of the Maine"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 19",
+    "section": "The Spanish-American War"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Unit 7: The Early 20th Century (1890-1945)"
+   }
+  ]
+ },
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Detroit Photographic Co. photochrom, copyright 1900, Library of Congress cph.3g03933; public domain.",
+  "text": "The photograph is a photochrom print, copyrighted 1900 by the Detroit Photographic Co., titled \"Restos del U.S.S. Maine, Habana.\" It shows the wrecked battleship USS Maine sitting low in the water of Havana harbor, its hull twisted and broken with one tall mast still standing. Small boats float nearby, and the Havana waterfront stands across the harbor behind it."
+ },
+ "stimulus_set": "maine-wreck-1900",
+ "source": "original; stimulus is a public-domain 1900 photochrom of the wreck of the USS Maine",
+ "stem": "The Maine exploded on February 15, 1898, killing 266 sailors. The most important effect of the explosion on American politics was that it",
+ "options": [
+  {
+   "key": "A",
+   "text": "Proved Spain had mined the harbor",
+   "misconception": "The cause was never proven; the books say the explosion was probably a boiler failure."
+  },
+  {
+   "key": "B",
+   "text": "Ended the Cuban rebellion",
+   "misconception": "The rebellion was still going; the explosion pushed the United States into the war, not the rebels out."
+  },
+  {
+   "key": "C",
+   "text": "Forced Spain to free Cuba at once",
+   "misconception": "Spain freed no one at once; the United States had to fight a war and negotiate a treaty first."
+  },
+  {
+   "key": "D",
+   "text": "Made war with Spain politically unavoidable for McKinley"
+  }
+ ],
+ "rationales": {
+  "A": "The cause was never proven. The books say the Maine probably blew up because of a boiler failure.",
+  "B": "The rebellion kept going until the war ended it. The explosion changed American politics, not Cuba's war.",
+  "C": "Spain held Cuba until the war and the Treaty of Paris. The explosion started a process, it did not finish one.",
+  "D": "Background from the books: after the Maine, war became a political necessity for McKinley, and he asked Congress to act.",
+  "general": "1. Fix the date. The Maine exploded on February 15, 1898, killing 266 sailors.\n2. Follow the politics. The yellow press blamed Spain, and the public demanded war.\n3. Watch McKinley. He had held back, but after the Maine, war became a political necessity.\nRemember: a single event changes politics when it makes the old policy impossible to keep, not when it proves a fact."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2070",
+   "file": "u7/maine-wreck-1900.jpg",
+   "caption": "The wreck of the USS Maine in Havana harbor, Detroit Photographic Co. photochrom, copyright 1900.",
+   "alt": "A color photochrom shows the wrecked battleship USS Maine sitting low in the water of Havana harbor, its hull twisted and broken with one tall mast still standing, the Havana waterfront behind it.",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Detroit_Photographic_Company_(0992).jpg",
+   "license": "Public domain (published 1900, pre-1930)"
+  }
+ ]
+}

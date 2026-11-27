@@ -1,0 +1,77 @@
+{
+  "id": "apush-mcq-2355",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.13"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "2.B"
+  ],
+  "themes": [
+    "WOR",
+    "WXT"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.13 World War II: Military"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "New Deal and WWII (1934-1945)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus": {
+    "kind": "table",
+    "text": "American losses in the Japanese attack on Pearl Harbor, December 7, 1941.\n\n| Americans killed | 2,403 |\n| Americans wounded | 1,178 |\n| Battleships sunk or damaged | 8 |\n| Aircraft destroyed | 188 |\n| Japanese aircraft lost | 29 |",
+    "source_note": "Figures from the Department of Defense 50th Anniversary of World War II Commemorative Committee summary of the attack, corroborated by the 5 Steps day-item record (2,403 killed, 1,178 wounded). All eight battleships present were damaged, four sunk; six returned to service during the war."
+  },
+  "stimulus_set": "pearl-harbor-losses-1941",
+  "source": "original; stimulus drawn from book-grounded figures and paraphrases (see source_note)",
+  "stem": "Before December 1941, the United States had cut off oil shipments to Japan. What did Japan hope to gain by attacking Pearl Harbor?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Control of the Panama Canal and the Atlantic sea lanes",
+      "misconception": "Japan's target was the Pacific Fleet and Southeast Asia, not the Atlantic or the canal."
+    },
+    {
+      "key": "B",
+      "text": "A peace settlement that left China under Japanese rule",
+      "misconception": "Japan sought to cripple the fleet so it could expand, not to negotiate over China."
+    },
+    {
+      "key": "C",
+      "text": "A new alliance with Germany against the Soviet Union",
+      "misconception": "Japan and Germany were already allies; the attack aimed at the Pacific, not the Soviet Union."
+    },
+    {
+      "key": "D",
+      "text": "Freedom to seize Southeast Asian oil without American naval interference"
+    }
+  ],
+  "answerKey": "D",
+  "rationales": {
+    "A": "The attack struck the Pacific Fleet in Hawaii, far from the canal and the Atlantic.",
+    "B": "Japan wanted room to expand into Southeast Asia, not a settlement over China.",
+    "C": "Japan and Germany were already allied under the Tripartite Pact of 1940.",
+    "D": "With the Pacific Fleet crippled, Japan could seize the oil and resources of Southeast Asia.",
+    "general": "1. Background from the books: Japan depended on imported oil, and the American embargo threatened its war in China.\n2. Japan needed the oil and rubber of Southeast Asia to keep fighting.\n3. A crippled Pacific Fleet could not stop Japan from taking those resources.\n4. So the attack was a gamble to win freedom of action in Southeast Asia.\nRemember: states go to war for resources they need, so follow the oil to find the motive."
+  }
+}

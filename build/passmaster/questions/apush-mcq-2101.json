@@ -1,0 +1,89 @@
+{
+ "id": "apush-mcq-2101",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.4"
+ ],
+ "lesson": "apush-u7-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "A",
+ "skills": [
+  "2.C"
+ ],
+ "themes": [
+  "SOC",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.4 The Progressives — Challenging Child Labor"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 20",
+    "section": "Workplace Reform"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "The Progressive Era and World War I (1900-1920)"
+   }
+  ],
+  "primary_sources": [
+   "Lewis Hine, photographs of child workers, c. 1908-1911"
+  ]
+ },
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Photograph by Lewis Hine, c. 1911, public domain (pre-1930). Caption per the source record.",
+  "text": "Photograph by Lewis Hine, 1911. A young girl in a plain dress stands outdoors and looks directly at the camera. Hine's caption records her as a girl working in a cannery."
+ },
+ "stimulus_set": "hine-child-labor",
+ "source": "original; stimulus paraphrased from 5 Steps to a 5 2024, Chapter 20, and Barron's Premium 2027, Chapter 9",
+ "stem": "The photograph best supports which conclusion about Progressive reform?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Reformers used vivid evidence to make distant problems feel personal to readers"
+  },
+  {
+   "key": "B",
+   "text": "Child labor ended everywhere as soon as the photograph was published",
+   "misconception": "Child labor continued for decades; the Keating-Owen Act of 1916 was struck down, and federal standards came only in the 1930s."
+  },
+  {
+   "key": "C",
+   "text": "Photographers replaced lawmakers as the leaders of reform",
+   "misconception": "Photographs built pressure, but laws still had to pass Congress and survive the courts."
+  },
+  {
+   "key": "D",
+   "text": "Most Americans already knew exactly how bad child labor was",
+   "misconception": "If most Americans had known, Hine's photographs would not have shocked them; his work was news to middle-class readers."
+  }
+ ],
+ "rationales": {
+  "A": "Hine's portrait puts one young face in front of the reader instead of a statistic. Progressives used photographs exactly this way: to make a distant problem personal enough that middle-class readers demanded action.",
+  "B": "One photograph did not end child labor. The Keating-Owen Act came five years later and was struck down in 1918.",
+  "C": "Photographers supplied evidence, not laws. Congress and the courts still decided what became law.",
+  "D": "Hine's photographs were news precisely because most middle-class Americans had never seen a cannery floor or a mill.",
+  "general": "1. Look at what the photograph does. One young girl, facing the camera, becomes a person instead of a number.\n2. Ask why reformers published such pictures. Vivid evidence moved middle-class readers who had never seen a cannery floor.\n3. Check the overclaims. One photograph did not end child labor or replace lawmakers.\nRemember: evidence persuades by making the abstract concrete, so ask what a picture lets a reader feel that a statistic cannot."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2101",
+   "file": "u7/barrons-2027-ch09-05.jpg",
+   "caption": "Lewis Hine, girl working in a cannery, 1911. A young girl in a plain dress stands outdoors and faces the camera.",
+   "alt": "A sepia portrait of a young girl in a plain dress with an embroidered collar, standing outdoors and looking at the camera.",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Lewis_Hine%2C_Girl_working_in_a_cannery%2C_1911.jpg",
+   "license": "Public domain (photograph c. 1911, pre-1930)"
+  }
+ ]
+}

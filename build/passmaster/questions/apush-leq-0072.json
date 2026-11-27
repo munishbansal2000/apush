@@ -1,0 +1,88 @@
+{
+ "id": "apush-leq-0072",
+ "type": "leq",
+ "unit": 7,
+ "topics": [
+  "7.8"
+ ],
+ "lesson": "apush-u7-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "SOC",
+  "NAT"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.8 1920s: Cultural and Political Controversies"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 22",
+    "section": "Beginning of Modern America: The 1920s"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Jazz Age and Great Depression (1920-1933)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; prompt written for this question",
+ "stimulus_set": null,
+ "stimulus": {
+  "kind": "none",
+  "source_note": "No stimulus; LEQ prompt only."
+ },
+ "prompt": "Evaluate the extent to which the cultural and political controversies of the 1920s reflected a conflict between traditional values and modern values in the United States from 1920 to 1929.",
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent to which the controversies of the 1920s reflected a conflict between traditional and modern values from 1920 to 1929, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim about the extent of the conflict does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as the wartime growth of federal power and the Red Scare, the Great Migration and urbanization, or the Progressive era's reform impulse giving way to a celebration of business.",
+   "notEarned": "A sentence of background with no link to the argument, or background from a later century, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (first point): earns the point for describing specific and relevant examples of traditional values resisting change, such as the Scopes trial, Prohibition, the Ku Klux Klan, or the immigration quotas.",
+   "notEarned": "General statements about the 1920s with no specific example do not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (second point): earns the point for describing specific and relevant examples of modern values advancing, such as the Harlem Renaissance, the flapper, the Lost Generation, or the spread of mass media and consumer culture.",
+   "notEarned": "Repeating a traditional-side example, or naming a modern change with no specific detail, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Analysis and reasoning (continuity and change): earns the point for explaining how the evidence shows what changed and what stayed the same in American values, linking examples to the thesis rather than listing them.",
+   "notEarned": "Listing examples with no explanation of what changed and what continued does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Analysis and reasoning (complexity): earns the point for a complex argument, such as qualifying the thesis by group or place, showing traditional and modern impulses mixed in one controversy, or weighing how far either side actually won.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ],
+ "modelOutline": "Thesis: The controversies of the 1920s reflected a real conflict between traditional and modern values, but neither side won cleanly: the traditional side held the laws while the modern side won the culture.\nContext: The United States left World War I with a Red Scare, a Great Migration to northern cities, and a Progressive reform impulse giving way to a celebration of business, so new mass culture arrived amid fear of change.\nEvidence for the traditional defense: Tennessee's Butler Act banned teaching evolution and the Scopes trial convicted John Scopes in 1925; the Eighteenth Amendment banned the liquor trade in 1920; the reborn Ku Klux Klan claimed millions of members by 1925; the quota acts of 1921 and 1924 shut out southern and eastern Europeans and barred Asians.\nEvidence for the modern advance: the Harlem Renaissance gave Black writers and musicians a national voice; flappers claimed new freedoms for women after the Nineteenth Amendment; Lost Generation writers attacked business and small-town values from Paris and New York; radio, film, and advertising built one national mass culture.\nComplexity: The line between the sides was never clean. Prohibition was a Progressive reform as well as a traditional crusade, the Klan spread an old hatred with modern marketing, and the modern city kept older American hopes, such as Hughes's claim that 'I, too, am America.'",
+ "totalPoints": 6
+}

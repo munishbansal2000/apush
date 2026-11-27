@@ -1,0 +1,76 @@
+{
+  "answerKey": "C",
+  "difficulty": 2,
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.10 The New Deal"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 23",
+        "section": "Great Depression and the New Deal (1929–1939)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11"
+      }
+    ],
+    "primary_sources": []
+  },
+  "id": "apush-mcq-2433",
+  "lesson": "apush-u7-l4",
+  "options": [
+    {
+      "key": "A",
+      "misconception": "Roosevelt promised the federal government would withdraw from economics.",
+      "text": "Complete withdrawal of the federal government from economic affairs"
+    },
+    {
+      "key": "B",
+      "misconception": "Roosevelt promised a return to the gold standard and balanced budgets.",
+      "text": "Immediate return to the gold standard and balanced budgets at all costs"
+    },
+    {
+      "key": "C",
+      "text": "Active federal government action to restore confidence and provide relief, recovery, and reform"
+    },
+    {
+      "key": "D",
+      "misconception": "Roosevelt promised isolation from international trade.",
+      "text": "Isolation from all international trade and diplomacy"
+    }
+  ],
+  "pool": "test",
+  "rationales": {
+    "A": "Withdrawal from economic affairs is the opposite of what Roosevelt promised.",
+    "B": "A return to the gold standard and balanced budgets at all costs is the orthodoxy Roosevelt rejected.",
+    "C": "Roosevelt promised active federal action, relief, recovery, and reform, to restore confidence. His promise was action itself: the government would try, and try boldly, to put people back to work.",
+    "D": "Isolation from trade and diplomacy is not his economic program.",
+    "general": "1. Read the promise. Needed efforts to convert retreat into advance, against paralyzing fear.\n2. Ask what action that implies. Active federal government action to restore confidence and provide relief, recovery, and reform.\n3. Test the opposites. Withdrawal, gold-standard orthodoxy, and isolation all reverse Roosevelt.\n4. Match the approach. The inaugural promises a government that acts, not one that steps back.\nRemember: a promise to act is the opposite of a promise to withdraw."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "3.A"
+  ],
+  "source": "original; stimulus is a verbatim public-domain excerpt from Franklin D. Roosevelt, First Inaugural Address (1933)",
+  "status": "final",
+  "stem": "Which of the following best describes the approach Roosevelt promised in his inaugural address?",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Franklin D. Roosevelt, First Inaugural Address, March 4, 1933, public domain.",
+    "text": "I am convinced that the only thing we have to fear is fear itself — nameless, unreasoning, unjustified terror which paralyzes needed efforts to convert retreat into advance."
+  },
+  "stimulus_set": "fdr-inaugural-1933",
+  "themes": [
+    "PCE",
+    "WXT"
+  ],
+  "topics": [
+    "7.10"
+  ],
+  "type": "mcq",
+  "unit": 7
+}

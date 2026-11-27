@@ -1,0 +1,79 @@
+{
+  "id": "apush-mcq-2337",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.12"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 2,
+  "skills": [
+    "1.A"
+  ],
+  "themes": [
+    "SOC",
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.12 World War II: Mobilization"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "New Deal and WWII (1934-1945)"
+      }
+    ],
+    "primary_sources": [
+      "Executive Order 9066, February 19, 1942"
+    ]
+  },
+  "stimulus": {
+    "kind": "image",
+    "text": "This photograph, taken in Hayward, California, on May 8, 1942, shows a Japanese American family waiting on a sidewalk with their baggage piled beside them. A woman in a hat holds a bundle, a small child sits on a suitcase with a paper tag tied to the child's coat, and a boy in a hat stands nearby. They are waiting for a bus to take them from their home to a relocation center.",
+    "source_note": "Dorothea Lange, War Relocation Authority photograph, Hayward, California, May 8, 1942 (National Archives 537523). Public domain, U.S. federal work. The family was awaiting evacuation under Executive Order 9066. Viewed before use."
+  },
+  "stimulus_set": "internment-9066-1942",
+  "source": "original; stimulus from the shared image pool (Dorothea Lange photograph, 1942)",
+  "stem": "About how many Japanese Americans were removed from the West Coast under this policy?",
+  "options": [
+    {
+      "key": "A",
+      "text": "About 1,000",
+      "misconception": "The removal covered whole communities, far more than a thousand people."
+    },
+    {
+      "key": "B",
+      "text": "About 120,000"
+    },
+    {
+      "key": "C",
+      "text": "About 1 million",
+      "misconception": "The number removed was about 120,000, not a million."
+    },
+    {
+      "key": "D",
+      "text": "About 10 million",
+      "misconception": "The number removed was about 120,000, not ten million."
+    }
+  ],
+  "answerKey": "B",
+  "rationales": {
+    "A": "The removal swept up entire West Coast communities, far more than a thousand people.",
+    "B": "Background from the books: about 120,000 people of Japanese descent were removed, roughly two-thirds of them citizens.",
+    "C": "The count was about 120,000, well short of a million.",
+    "D": "The count was about 120,000, far short of ten million.",
+    "general": "1. The photograph shows one family, but the policy reached the whole West Coast.\n2. Background from the books: more than 100,000 Japanese Americans were removed to distant camps.\n3. The books put the number at about 120,000 people.\n4. That scale, not a few hundred or a few million, is the size of the removal.\nRemember: one photograph shows one family; the books give the scale of the policy behind it."
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "id": "apush-mcq-2389",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.14"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "1.A"
+  ],
+  "themes": [
+    "WXT"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.14 Postwar Diplomacy"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "New Deal and WWII (1934-1945)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus": {
+    "kind": "table",
+    "text": "Agreed at Bretton Woods, New Hampshire, in July 1944, at a meeting of 44 nations.\n\n| Institution | Purpose |\n| International Monetary Fund (IMF) | Lend to nations short of foreign currency and help keep exchange rates steady |\n| International Bank for Reconstruction and Development (World Bank) | Lend money to rebuild economies damaged by the war |",
+    "source_note": "Table compiled from Barron's Chapter 9 (Bretton Woods Conference, July 1944: 44 nations; International Monetary Fund established). The World Bank's formal name is the International Bank for Reconstruction and Development."
+  },
+  "stimulus_set": "bretton-woods-1944",
+  "source": "original; stimulus drawn from book-grounded paraphrases, tables, and photographs (see source_note)",
+  "stem": "Which new institution lent money to rebuild economies damaged by the war?",
+  "options": [
+    {
+      "key": "A",
+      "text": "The International Monetary Fund, which steadied currencies",
+      "misconception": "The IMF lent to nations short of foreign currency; rebuilding loans were the Bank's job."
+    },
+    {
+      "key": "B",
+      "text": "The International Bank for Reconstruction and Development"
+    },
+    {
+      "key": "C",
+      "text": "The League of Nations, which kept the peace",
+      "misconception": "The League of Nations ended with World War II and made no rebuilding loans."
+    },
+    {
+      "key": "D",
+      "text": "The United Nations Security Council, which kept order",
+      "misconception": "The Security Council dealt with peace and security, not with loans."
+    }
+  ],
+  "answerKey": "B",
+  "rationales": {
+    "A": "Background from the books: the IMF lent to nations short of foreign currency; rebuilding loans were the Bank's job.",
+    "B": "The table gives the Bank the job of lending to rebuild war-damaged economies, while the IMF handled short-term currency needs.",
+    "C": "Background from the books: the League of Nations ended with World War II and made no rebuilding loans.",
+    "D": "Background from the books: the Security Council dealt with peace and security, not with loans.",
+    "general": "1. The table lists two institutions created at Bretton Woods.\n2. It gives the IMF the job of steadying exchange rates.\n3. It gives the Bank the job of lending to rebuild economies damaged by the war.\n4. The two jobs differ: one steadies money day to day, the other funds rebuilding over years.\nRemember: match each institution to its job, not to its name."
+  }
+}

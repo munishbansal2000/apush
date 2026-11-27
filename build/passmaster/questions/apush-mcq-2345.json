@@ -1,0 +1,77 @@
+{
+  "id": "apush-mcq-2345",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.12"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "test",
+  "difficulty": 3,
+  "skills": [
+    "1.B"
+  ],
+  "themes": [
+    "WXT",
+    "WOR"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.12 World War II: Mobilization"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "New Deal and WWII (1934-1945)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus": {
+    "kind": "text",
+    "text": "The war also mobilized American science. In August 1942 the government began a secret program, the Manhattan Project, to build an atomic bomb, centered at Los Alamos, New Mexico, under J. Robert Oppenheimer. About 130,000 people worked on the project at sites across the country, and the first bomb was tested at Alamogordo, New Mexico, on July 16, 1945. Government-sponsored research also improved radar and produced penicillin in large quantities for wounded soldiers.",
+    "source_note": "Original secondary text written for this question, based on 5 Steps to a 5 2024, Chapter 24, and the Princeton Review, Chapter 11 supplement."
+  },
+  "stimulus_set": "manhattan-science-1942",
+  "source": "original; stimulus written for this question from the books listed in grounding",
+  "stem": "Why did the government begin the Manhattan Project in 1942?",
+  "options": [
+    {
+      "key": "A",
+      "text": "To build a new kind of airplane",
+      "misconception": "The project built an atomic bomb, not an airplane."
+    },
+    {
+      "key": "B",
+      "text": "To build an atomic bomb before Germany could"
+    },
+    {
+      "key": "C",
+      "text": "To find a cure for diseases in the tropics",
+      "misconception": "Penicillin work treated wounds; the bomb project was about a weapon."
+    },
+    {
+      "key": "D",
+      "text": "To design a faster battleship",
+      "misconception": "The project built a bomb, not a ship."
+    }
+  ],
+  "answerKey": "B",
+  "rationales": {
+    "A": "The Manhattan Project was a bomb program; aircraft production was a separate effort.",
+    "B": "Background from the books: the project was driven largely by fear that Germany might be working on an atomic weapon.",
+    "C": "Medical research was separate; the Manhattan Project aimed at a weapon.",
+    "D": "No ship came out of Los Alamos; the product was the atomic bomb.",
+    "general": "1. The passage dates the secret program to August 1942 and names its goal: an atomic bomb.\n2. The work centered at Los Alamos under Oppenheimer, with about 130,000 people involved.\n3. Background from the books: the fear driving it was that Germany might build such a weapon first.\n4. The project was a race, and the prize was the bomb.\nRemember: a secret weapons program is a race, so ask who the other runner was."
+  }
+}

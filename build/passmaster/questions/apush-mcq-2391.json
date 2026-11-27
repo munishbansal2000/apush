@@ -1,0 +1,88 @@
+{
+  "id": "apush-mcq-2391",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.14"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 2,
+  "skills": [
+    "2.A"
+  ],
+  "themes": [
+    "WOR"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.14 Postwar Diplomacy"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "New Deal and WWII (1934-1945)"
+      }
+    ],
+    "primary_sources": [
+      "Photograph of Churchill, Roosevelt, and Stalin at Yalta, February 1945"
+    ]
+  },
+  "stimulus": {
+    "kind": "image",
+    "text": "Photograph of the three Allied leaders seated together on the patio of the Livadia Palace at Yalta, Crimea, in February 1945. From left to right: British Prime Minister Winston Churchill, in a heavy overcoat and holding a cigar; President Franklin Roosevelt, in the center, smiling; and Soviet leader Joseph Stalin, in a light-colored military tunic. Military advisers stand behind them, and ornate rugs lie under their chairs.",
+    "source_note": "Photograph by a U.S. Army Signal Corps photographer, February 9, 1945, Livadia Palace, Yalta (NARA 111-SC-260486). Public domain as a work of the U.S. federal government. Viewed before use."
+  },
+  "stimulus_set": "yalta-photo-1945",
+  "source": "original; stimulus drawn from book-grounded paraphrases, tables, and photographs (see source_note)",
+  "stem": "Who are the three men seated in the photograph?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Churchill, Roosevelt, and Stalin"
+    },
+    {
+      "key": "B",
+      "text": "Truman, Churchill, and Stalin",
+      "misconception": "Truman became president in April 1945, two months after this photograph was taken."
+    },
+    {
+      "key": "C",
+      "text": "Roosevelt, Attlee, and Churchill",
+      "misconception": "Attlee became prime minister in July 1945, after Churchill lost the British election."
+    },
+    {
+      "key": "D",
+      "text": "Stalin, Truman, and Eisenhower",
+      "misconception": "Eisenhower commanded the invasion of France, but he did not sit with the three leaders at Yalta."
+    }
+  ],
+  "answerKey": "A",
+  "rationales": {
+    "A": "The photograph was taken at Yalta in February 1945, when Churchill, Roosevelt, and Stalin met; Truman became president only after Roosevelt died in April.",
+    "B": "Background from the books: Truman became president in April 1945, two months after this photograph was taken.",
+    "C": "Background from the books: Attlee became prime minister in July 1945, after Churchill lost the British election.",
+    "D": "Background from the books: Eisenhower commanded the invasion of France, but he did not sit with the three leaders at Yalta.",
+    "general": "1. The photograph shows three leaders seated together at Yalta in February 1945.\n2. From left to right they are Churchill, Roosevelt, and Stalin.\n3. Background: Roosevelt died in April 1945, so Truman took his place at the next meeting, Potsdam.\n4. The photograph captures the only wartime meeting of these three men.\nRemember: match the faces to the date, since the leaders changed within months."
+  },
+  "figures": [
+    {
+      "file": "u7/yalta-big-three-1945.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Yalta_Conference_(Churchill,_Roosevelt,_Stalin)_(B%26W).jpg",
+      "license": "Public domain (U.S. Army Signal Corps photograph, February 1945; NARA 111-SC-260486)",
+      "caption": "Churchill, Roosevelt, and Stalin at Yalta, February 1945.",
+      "alt": "Three men seated side by side on a palace patio: Churchill in a heavy coat on the left, Roosevelt smiling in the center, Stalin in a light tunic on the right, with uniformed advisers standing behind them.",
+      "id": "fig-apush-mcq-2391"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+ "id": "apush-mcq-2023",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.1"
+ ],
+ "lesson": "apush-u7-l1",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "answerKey": "A",
+ "skills": [
+  "5.B"
+ ],
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.1 Contextualizing Period 7"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.2 Imperialism: Debates"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 19",
+    "section": "Rise of American Imperialism (1890\u20131913)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Unit 7: The Early 20th Century (1890\u20131945)"
+   }
+  ],
+  "primary_sources": [
+   "Victor Gillam, \u201cA Lesson for Anti-Expansionists,\u201d Judge, 1899"
+  ]
+ },
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Victor Gillam, \u201cA Lesson for Anti-Expansionists,\u201d Judge magazine, 1899, public domain.",
+  "text": "An 1899 cartoon by Victor Gillam in Judge magazine, titled \u201cA Lesson for Anti-Expansionists,\u201d shows Uncle Sam growing larger across six panels: 1783, a small boy beside 13 states; 1803, the Louisiana Purchase; 1819, Florida; 1861, 34 states; 1898, 45 states with Hawaii annexed; and 1899, a large Uncle Sam holding a ship, the panel's caption box naming the valuable new colonies Cuba, the Philippines, and Porto Rico, while hands labeled with foreign nations reach toward him. The caption reads: \u201cAnd now all the nations are anxious to be on friendly terms with Uncle Sam.\u201d The subtitle reads: \u201cShowing how Uncle Sam has been an expansionist, first, last, and all the time.\u201d"
+ },
+ "stimulus_set": "gillam-expansion-1899",
+ "source": "original; stimulus image from the shared pool, Victor Gillam, \u201cA Lesson for Anti-Expansionists,\u201d Judge magazine, 1899, public domain.",
+ "stem": "A historian using this cartoon to compare American expansion in 1899 with expansion in the 1840s would most reasonably conclude that the two expansions differed mainly in that the 1899 expansion...",
+ "options": [
+  {
+   "key": "A",
+   "text": "brought under American rule peoples already living under organized governments overseas, raising new questions about citizenship and self-government."
+  },
+  {
+   "key": "B",
+   "text": "was driven mainly by a desire for farmland for American settlers, as the 1840s expansion had been.",
+   "misconception": "The 1899 colonies were about markets, naval stations, and strategic position, not farmland for settlers."
+  },
+  {
+   "key": "C",
+   "text": "added territory only through purchase and treaty, as the 1840s expansion had done.",
+   "misconception": "The 1899 colonies came through war with Spain, not through purchase and treaty alone."
+  },
+  {
+   "key": "D",
+   "text": "was opposed by nearly all Americans, while the 1840s expansion had broad public support.",
+   "misconception": "The 1840s expansion was bitterly contested too; critics called the Mexican War an unjust land grab."
+  }
+ ],
+ "figures": [
+  {
+   "file": "u7/barrons-2027-pt1-07.jpg",
+   "license": "Public domain",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/18/Lesson_for_anti_expansionists.jpg",
+   "caption": "Victor Gillam, \u201cA Lesson for Anti-Expansionists,\u201d Judge, 1899",
+   "alt": "Victor Gillam's 1899 cartoon shows Uncle Sam growing larger across six panels, from 13 states in 1783 to overseas colonies in 1899",
+   "id": "fig-apush-mcq-2023"
+  }
+ ],
+ "rationales": {
+  "A": "The 1840s added contiguous land that became states settled by Americans. Background: the 1899 colonies held Filipinos and Puerto Ricans under American rule without a path to statehood, so the citizenship question the Insular Cases faced in 1901 was genuinely new.",
+  "B": "The 1899 colonies were about markets, naval stations, and strategic position. Farmland for settlers drove the 1840s, not 1899.",
+  "C": "The 1899 colonies came through war with Spain. Purchase and treaty alone do not describe how they were won.",
+  "D": "The 1840s expansion was bitterly contested too. Critics called the Mexican War an unjust land grab, so opposition was not new in 1899.",
+  "general": "1. Start with the 1840s. Texas, Oregon, and the Mexican Cession added land beside the United States that became states.\n2. Look at 1899. The cartoon\u2019s new additions are islands overseas, already home to peoples with their own governments.\n3. Ask what changes when the people are already there. Settlers could become citizens of new states; colonial subjects could not, at least not at once.\n4. Check the cartoon\u2019s silence. Gillam shows the land, not the people living on it, which is the question his critics were asking.\nRemember: compare expansions by asking who lives on the new land and what rights they get, not only by how the land was won."
+ }
+}

@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-2164",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.6"
+ ],
+ "lesson": "apush-u7-l2",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "answerKey": "D",
+ "skills": [
+  "3.C"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.6 World War I: Home Front"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 21",
+    "section": "United States and World War I (1914-1921)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "The Progressive Era and World War I (1900-1920)"
+   }
+  ],
+  "primary_sources": [
+   "Schenck v. United States, 249 U.S. 47 (1919)"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "Justice Oliver Wendell Holmes, writing for a unanimous Supreme Court in Schenck v. United States, March 3, 1919 (verbatim excerpts):\n\n\"We admit that, in many places and in ordinary times, the defendants, in saying all that was said in the circular, would have been within their constitutional rights. But the character of every act depends upon the circumstances in which it is done. The most stringent protection of free speech would not protect a man in falsely shouting fire in a theatre and causing a panic. . . . The question in every case is whether the words used are used in such circumstances and are of such a nature as to create a clear and present danger that they will bring about the substantive evils that Congress has a right to prevent. It is a question of proximity and degree.\"",
+  "source_note": "Verbatim excerpts from Schenck v. United States, 249 U.S. 47 (1919) (public domain)."
+ },
+ "stimulus_set": "schenck",
+ "source": "original; stimulus quoted verbatim from Schenck v. United States, 249 U.S. 47 (1919)",
+ "stem": "Holmes's opinion most directly upheld which of the following?",
+ "options": [
+  {
+   "key": "A",
+   "text": "the right of Socialists to print antiwar leaflets during wartime",
+   "misconception": "Holmes upheld the convictions, so the leaflets were not protected speech in wartime."
+  },
+  {
+   "key": "B",
+   "text": "the power of states to ban all criticism of the president",
+   "misconception": "The case was about a federal law in wartime, not about states banning all criticism."
+  },
+  {
+   "key": "C",
+   "text": "the right of newspapers to publish military secrets in wartime",
+   "misconception": "The case was about leaflets urging resistance to the draft, not about publishing secrets."
+  },
+  {
+   "key": "D",
+   "text": "the conviction of antiwar speakers under the Espionage Act"
+  }
+ ],
+ "rationales": {
+  "A": "Holmes upheld the convictions, so the leaflets were not protected speech in wartime.",
+  "B": "The case was about a federal law in wartime, not about states banning all criticism.",
+  "C": "The case was about leaflets urging resistance to the draft, not about publishing secrets.",
+  "D": "The Court affirmed the judgments against Schenck and the others, so their convictions under the Espionage Act stood.",
+  "general": "1. Find the case's outcome. The judgments were affirmed, which means the convictions stood.\n2. Find what the men were convicted of. They had circulated leaflets against the draft under the Espionage Act.\n3. Note the word affirmed. It means the lower court's judgments stood, so the men stayed convicted.\n4. Put the two together. The opinion upheld those convictions.\nRemember: in a court case, the outcome tells you what the opinion upheld."
+ }
+}

@@ -1,0 +1,76 @@
+{
+  "id": "apush-mcq-2416",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.15"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 2,
+  "skills": [
+    "3.B"
+  ],
+  "themes": [
+    "PCE"
+  ],
+  "reasoning": "comparison",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.6 World War I: Home Front"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 21",
+        "section": "United States and World War I (1914-1921)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "New Deal and WWII (1934-1945)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus_set": "world-wars-home-front",
+  "stimulus": {
+    "kind": "text",
+    "text": "Passage 1 - the Espionage Act of 1917, paraphrased: During World War I, Congress made it a crime to interfere with military recruiting or to speak against the war effort, and the government jailed critics, including the Socialist leader Eugene V. Debs. In Schenck v. United States (1919), the Supreme Court upheld the convictions, saying speech that created a \"clear and present danger\" could be punished.\n\nPassage 2 - Executive Order 9066, February 1942, paraphrased: During World War II, President Roosevelt ordered the removal of about 120,000 Japanese Americans, most of them citizens, from the West Coast to camps in the interior. In Korematsu v. United States (1944), the Supreme Court upheld the order, saying wartime necessity justified it.",
+    "source_note": "Paraphrases of the Espionage Act (1917) and Executive Order 9066 (1942), drawn from Barron's Premium 2027, Chapter 9, Topics 7.6 and 7.12, and 5 Steps to a 5, 2024, Chapters 21 and 24. The 1917 and 1942 measures are paraphrased, not quoted verbatim, except for the short phrase from Schenck."
+  },
+  "source": "original; stimulus drawn from book-grounded paraphrases, tables, and photographs (see source_note)",
+  "stem": "How did the Supreme Court respond to each wartime action in the passages?",
+  "options": [
+    {
+      "key": "A",
+      "text": "The Court struck down both actions at once",
+      "misconception": "The passages say the Court upheld both actions, not that it struck them down."
+    },
+    {
+      "key": "B",
+      "text": "The Court upheld both actions during wartime"
+    },
+    {
+      "key": "C",
+      "text": "The Court refused to hear either wartime case",
+      "misconception": "The passages name a Supreme Court decision in each war: Schenck and Korematsu."
+    },
+    {
+      "key": "D",
+      "text": "The Court upheld one but struck down the other",
+      "misconception": "The passages say the Court upheld the convictions in 1919 and the order in 1944."
+    }
+  ],
+  "answerKey": "B",
+  "rationales": {
+    "A": "The passages say the Court upheld the convictions in Schenck and the order in Korematsu.",
+    "B": "Schenck in 1919 upheld the Espionage Act convictions, and Korematsu in 1944 upheld the removal order.",
+    "C": "The passages name a Supreme Court decision for each war, so the Court heard both cases.",
+    "D": "The passages say the Court upheld the action in each war, so there was no split.",
+    "general": "1. Find the Court in each passage: Schenck in 1919, Korematsu in 1944.\n2. In Schenck, the Court upheld convictions under the Espionage Act.\n3. In Korematsu, the Court upheld the order removing Japanese Americans.\n4. The Court backed the government in both wars, using wartime necessity as its reason.\nRemember: in both world wars, the Court deferred to wartime claims."
+  }
+}

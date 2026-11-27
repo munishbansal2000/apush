@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-2173",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.6"
+ ],
+ "lesson": "apush-u7-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "D",
+ "skills": [
+  "5.B"
+ ],
+ "themes": [
+  "MIG",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.6 World War I: Home Front"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 21",
+    "section": "United States and World War I (1914-1921)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "The Progressive Era and World War I (1900-1920)"
+   }
+  ],
+  "primary_sources": [
+   "U.S. Census Bureau, Black population of selected cities, 1910 and 1920"
+  ]
+ },
+ "stimulus": {
+  "kind": "table",
+  "text": "Black population of selected northern cities, 1910 and 1920:\n\n| City | Black population, 1910 | Black population, 1920 |\n| New York | 91,709 | 152,467 |\n| Philadelphia | 84,459 | 134,229 |\n| Chicago | 44,103 | 109,458 |\n| Detroit | 5,741 | 40,838 |\n| Cleveland | 8,448 | 34,451 |\n\nSource: U.S. Census Bureau, as reported by the National Park Service.",
+  "source_note": "Data: U.S. Census Bureau, Black population of selected cities, 1910 and 1920, as reported by the National Park Service."
+ },
+ "stimulus_set": "great-migration",
+ "source": "original; stimulus data from the U.S. Census Bureau, as reported by the National Park Service",
+ "stem": "Which city in the table grew fastest in percentage terms between 1910 and 1920?",
+ "options": [
+  {
+   "key": "A",
+   "text": "New York",
+   "misconception": "New York grew from 91,709 to 152,467, an increase of about two-thirds, not the fastest rate."
+  },
+  {
+   "key": "B",
+   "text": "Chicago",
+   "misconception": "Chicago grew from 44,103 to 109,458, more than doubling, but Detroit grew far faster."
+  },
+  {
+   "key": "C",
+   "text": "Philadelphia",
+   "misconception": "Philadelphia grew from 84,459 to 134,229, an increase of about three-fifths."
+  },
+  {
+   "key": "D",
+   "text": "Detroit"
+  }
+ ],
+ "rationales": {
+  "A": "New York grew from 91,709 to 152,467, an increase of about two-thirds, not the fastest rate.",
+  "B": "Chicago grew from 44,103 to 109,458, more than doubling, but Detroit grew far faster.",
+  "C": "Philadelphia grew from 84,459 to 134,229, an increase of about three-fifths.",
+  "D": "Detroit grew from 5,741 to 40,838, more than seven times its 1910 size, the fastest rate in the table.",
+  "general": "1. Compare each city's growth as a multiple of its 1910 size, not just in people added.\n2. Detroit went from 5,741 to 40,838, more than seven times larger. No other city came close.\n3. Note the lesson: the fastest rate belongs to the city that started smallest.\nRemember: fastest growth in percentage terms is a ratio, so divide the new number by the old one."
+ }
+}

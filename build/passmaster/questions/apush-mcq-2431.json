@@ -1,0 +1,76 @@
+{
+  "id": "apush-mcq-2431",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.15"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "2.B"
+  ],
+  "themes": [
+    "WXT"
+  ],
+  "reasoning": "comparison",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.7 1920s: Innovations in Communication and Technology"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "Jazz Age and Great Depression (1920-1933)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus_set": "industrial-arsenal",
+  "stimulus": {
+    "kind": "table",
+    "text": "United States military aircraft production (Army Air Forces official history):\n\n| Year | 1940 | 1941 | 1942 | 1943 | 1944 |\n| Military aircraft built | 6,086 | 26,277 | 47,836 | 85,898 | 96,318 |\n\nContext: In 1913 Henry Ford's moving assembly line at Highland Park cut the time to assemble a Model T chassis from more than twelve hours to under two hours, and the Model T's price fell as production rose. In World War II, the federal War Production Board directed factories to war work, and American industry built about 300,000 military aircraft in all between July 1940 and August 1945.",
+    "source_note": "Aircraft figures are from the Army Air Forces official history (Craven and Cate, The Army Air Forces in World War II, vol. VI). Context drawn from Barron's Premium 2027, Chapter 9, Topics 7.7 and 7.12."
+  },
+  "source": "original; stimulus drawn from book-grounded paraphrases, tables, and photographs (see source_note)",
+  "stem": "What does the table show about the scale of wartime aircraft production?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Output in 1944 was about sixteen times output in 1940"
+    },
+    {
+      "key": "B",
+      "text": "Output fell every year from 1940 through 1944",
+      "misconception": "The table shows output rising every year, from 6,086 to 96,318."
+    },
+    {
+      "key": "C",
+      "text": "Output in 1944 was lower than output in 1940",
+      "misconception": "The table shows 96,318 aircraft in 1944 and 6,086 in 1940."
+    },
+    {
+      "key": "D",
+      "text": "Output stayed nearly the same from 1940 through 1944",
+      "misconception": "The table shows output rising from 6,086 in 1940 to 96,318 in 1944."
+    }
+  ],
+  "answerKey": "A",
+  "rationales": {
+    "A": "The table gives 6,086 aircraft in 1940 and 96,318 in 1944, a rise of about sixteen times.",
+    "B": "The table shows output rising every year from 1940 through 1944.",
+    "C": "The table shows 96,318 aircraft in 1944, far more than the 6,086 of 1940.",
+    "D": "The table shows output rising from 6,086 in 1940 to 96,318 in 1944.",
+    "general": "1. Find the two endpoints in the table: 6,086 in 1940 and 96,318 in 1944.\n2. Divide: 96,318 is about sixteen times 6,086.\n3. Check the middle years: output rose every year, so the rise was steady.\n4. Background: about 300,000 military aircraft were built in all between July 1940 and August 1945.\nRemember: compare endpoints first, then check the years between."
+  }
+}

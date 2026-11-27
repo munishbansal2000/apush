@@ -1,0 +1,189 @@
+{
+ "id": "apush-dbq-0074",
+ "type": "dbq",
+ "unit": 7,
+ "topics": [
+  "7.7"
+ ],
+ "lesson": "apush-u7-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "WXT",
+  "SOC"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.7 1920s: Innovations in Communication and Technology"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 22",
+    "section": "Beginning of Modern America: The 1920s"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Jazz Age and Great Depression (1920-1933)"
+   }
+  ],
+  "primary_sources": [
+   "Henry Ford, with Samuel Crowther, My Life and Work (1922), Chapter X",
+   "Calvin Coolidge, Address to the American Society of Newspaper Editors, January 17, 1925",
+   "Photograph, Assembly line at the Ford Motor Company's Highland Park plant, 1913",
+   "Photograph, “The Spirit of St. Louis, Col. Lindbergh's famous plane,” June 12, 1927",
+   "Ford Model T advertisement, LIFE magazine, October 1908",
+   "U.S. Census Bureau, Statistical Abstract, Table HS-41",
+   "Proceedings of the IEEE, 2012"
+  ]
+ },
+ "source": "original; documents drawn from public-domain sources and book-grounded data",
+ "stimulus_set": null,
+ "prompt": "Evaluate the extent to which innovations in communication and technology changed American life in the 1920s.",
+ "documents": [
+  {
+   "n": 1,
+   "kind": "text",
+   "date": "1922",
+   "title": "Ford on high wages",
+   "source": "Henry Ford, with Samuel Crowther, My Life and Work (1922), Chapter X. Verbatim excerpt, public domain.",
+   "text": "“The payment of high wages fortunately contributes to the low costs because the men become steadily more efficient on account of being relieved of outside worries. The payment of five dollars a day for an eight-hour day was one of the finest cost-cutting moves we ever made, and the six-dollar day wage is cheaper than the five.”",
+   "sourcing": "Ford, the automaker, writing in his own book about his wage policy. A businessman defending high pay as a way to cut costs, not as charity."
+  },
+  {
+   "n": 2,
+   "kind": "image",
+   "date": "1913",
+   "title": "The assembly line",
+   "source": "Photograph, Assembly line at the Ford Motor Company's Highland Park plant, 1913. Public domain; Library of Congress LCCN2011661021.",
+   "figure": "u7/ford-assembly-line-1913.jpg",
+   "sourcing": "A Library of Congress photograph of Model T chassis on a moving conveyor line. A picture of the method itself, with no workers visible in this view."
+  },
+  {
+   "n": 3,
+   "kind": "table",
+   "date": "1930",
+   "title": "Radio spreads",
+   "source": "Barron's Premium 2027, Chapter 9, Topic 7.7; Proceedings of the IEEE, 2012; 'Radio in the United States,' Wikipedia.",
+   "text": "| Year | Licensed radio stations | Homes with a radio |\n| 1922 | about 30 | fewer than 1 in 100 |\n| 1923 | about 570 | 1 in 100 |\n| 1930 | 618 | 40 in 100 |",
+   "sourcing": "A table built from a textbook, an engineering journal, and an encyclopedia entry, counting stations and homes. Numbers that show a medium growing from almost nothing to a mass habit."
+  },
+  {
+   "n": 4,
+   "kind": "text",
+   "date": "1925",
+   "title": "Coolidge on business",
+   "source": "President Calvin Coolidge, Address to the American Society of Newspaper Editors, January 17, 1925. Verbatim excerpt, public domain.",
+   "text": "“After all, the chief business of the American people is business. They are profoundly concerned with producing, buying, selling, investing and prospering in the world. I am strongly of opinion that the great majority of people will always find these are moving impulses of our life.”",
+   "sourcing": "Coolidge, the president, speaking to newspaper editors in 1925. A president praising business in the boom years, not a critic of it."
+  },
+  {
+   "n": 5,
+   "kind": "image",
+   "date": "1927",
+   "title": "The Spirit of St. Louis",
+   "source": "Photograph, “The Spirit of St. Louis, Col. Lindbergh's famous plane,” June 12, 1927. Public domain; Library of Congress LCCN92520351.",
+   "figure": "u7/spirit-of-st-louis-1927.jpg",
+   "sourcing": "A National Photo Company photograph of Lindbergh's plane in a hangar, with workmen beside it and a crowd behind. A picture of the machine, not of Lindbergh himself."
+  },
+  {
+   "n": 6,
+   "kind": "image",
+   "date": "1908",
+   "title": "Selling the Model T",
+   "source": "Ford Model T advertisement, LIFE magazine, October 1908. CC BY-SA 2.0; via The Henry Ford.",
+   "figure": "u7/ford-model-t-ad-1908.jpg",
+   "sourcing": "A magazine advertisement from 1908, before the assembly line cut prices. An ad selling quality at a low price, which became the decade's normal pitch."
+  },
+  {
+   "n": 7,
+   "kind": "table",
+   "date": "1930",
+   "title": "Cars multiply",
+   "source": "U.S. Census Bureau, Statistical Abstract of the United States, Table HS-41.",
+   "text": "| Year | Motor vehicles registered |\n| 1910 | 469,000 |\n| 1920 | 9,239,000 |\n| 1925 | 20,069,000 |\n| 1930 | 26,750,000 |",
+   "sourcing": "The Census Bureau, counting registered vehicles rather than arguing a case. Numbers that show car ownership growing more than fiftyfold in twenty years."
+  }
+ ],
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent to which innovations in communication and technology changed American life in the 1920s, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim about the extent of change does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as the Progressive era's faith in regulation giving way to the 1920s celebration of business, or the wartime growth of radio and aviation before the decade.",
+   "notEarned": "A sentence of background with no link to the argument, or background from a later century, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence from documents (first point): earns the point for describing specific and relevant evidence from at least three documents to support an argument about change in the 1920s.",
+   "notEarned": "Naming documents without describing their content does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence from documents (second point): earns the point for using the content of at least six documents to support an argument about change in the 1920s.",
+   "notEarned": "Using fewer than six documents, or describing them without tying them to the argument, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence beyond the documents: earns the point for describing a specific and relevant example beyond the documents, such as the Jazz Singer as the first talking picture in 1927, the Bristol sessions spreading country music, the spread of suburbs, or the growth of advertising and installment credit.",
+   "notEarned": "A vague reference to the 1920s with no specific example does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "3.B",
+   "criterion": "Sourcing: earns the point for explaining the relevance of a document's author, purpose, audience, or historical situation, such as Ford defending his own wage policy, Coolidge praising business to editors, or the census counting vehicles rather than arguing.",
+   "notEarned": "Naming an author without explaining why the authorship matters does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Complexity: earns the point for demonstrating a complex understanding, such as qualifying the extent of change by group, explaining that the new media built one national culture while also carrying local music outward, or weighing the gains of consumers against the workers and farmers left out.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ],
+ "modelOutline": "Thesis: Innovations in communication and technology changed American life deeply but unevenly in the 1920s: they built a national consumer culture and a shared mass media, while the workers and farmers who made the goods shared little of the gain.\nContext: The United States left World War I with new technologies tested in wartime, and the 1920s turned from Progressive regulation toward a celebration of business, with Coolidge praising enterprise and the government trusting private companies.\nEvidence: Documents 1-2 and 6-7 show the car remaking work and life: Ford's high wages cut costs, the assembly line moved chassis past workers, the 1908 ad sold quality at a low price, and registrations rose from under half a million to nearly 27 million.\nEvidence: Documents 3-5 show the new media: radio grew from about 30 stations to 618, Coolidge called business the chief business of Americans, and Lindbergh's plane made aviation seem practical.\nBeyond the documents: The Jazz Singer brought talking pictures in 1927, the Bristol sessions carried country music across the country, suburbs grew around the car, and most cars were bought on the installment plan.\nSourcing: Ford defends his own wage policy, Coolidge praises business to editors, and the census tables count rather than argue, so the numbers check the claims.\nComplexity: The change was real and limited at once: the same media that built one national culture also carried local music outward, and the same boom that filled homes with cars and radios left farmers and many workers behind.",
+ "totalPoints": 7,
+ "figures": [
+  {
+   "id": "fig-apush-dbq-0074-a",
+   "file": "u7/ford-assembly-line-1913.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Assembly_line_at_the_Ford_Motor_Company%27s_Highland_Park_plant_LCCN2011661021.jpg",
+   "license": "Public domain (1913 photograph; Library of Congress LCCN2011661021)",
+   "caption": "Model T chassis move along the conveyor line at Ford's Highland Park plant, 1913.",
+   "alt": "A row of Model T car chassis with wheels and engines moving along a conveyor line inside a large factory hall."
+  },
+  {
+   "id": "fig-apush-dbq-0074-b",
+   "file": "u7/spirit-of-st-louis-1927.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:The_%22Spirit_of_St._Louis%22,_Col._Lindbergh%27s_famous_plane_LCCN92520351.jpg",
+   "license": "Public domain (1927 photograph; National Photo Company Collection, LOC LCCN92520351)",
+   "caption": "The Spirit of St. Louis in a hangar with workmen beside it, June 12, 1927.",
+   "alt": "The airplane Spirit of St. Louis in a hangar with its name painted on the nose and four men in work clothes standing beside it."
+  },
+  {
+   "id": "fig-apush-dbq-0074-c",
+   "file": "u7/ford-model-t-ad-1908.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Ford_model_T_advertisement.jpg",
+   "license": "CC BY-SA 2.0 (Ford Model T advertisement, LIFE magazine, October 1908; via The Henry Ford)",
+   "caption": "A 1908 magazine advertisement offers the five-passenger Model T touring car for $850.",
+   "alt": "A 1908 magazine advertisement showing an open five-passenger touring car above a headline giving the price as 850 dollars."
+  }
+ ]
+}

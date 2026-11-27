@@ -1,0 +1,95 @@
+{
+ "id": "apush-saq-0213",
+ "type": "saq",
+ "unit": 7,
+ "topics": [
+  "7.6"
+ ],
+ "lesson": "apush-u7-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "1.B",
+  "3.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.6 World War I: Home Front"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 21",
+    "section": "United States and World War I (1914-1921)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "The Progressive Era and World War I (1900-1920)"
+   }
+  ],
+  "primary_sources": [
+   "Espionage Act, June 15, 1917",
+   "Schenck v. United States, 249 U.S. 47 (1919)",
+   "Debs v. United States, 249 U.S. 211 (1919)"
+  ]
+ },
+ "source": "original; stimulus quoted verbatim from the Espionage Act, June 15, 1917",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Verbatim excerpt from the Espionage Act, June 15, 1917, Section 3 (public domain).",
+  "text": "Espionage Act, June 15, 1917, Section 3 (verbatim excerpt):\n\n\"Whoever, when the United States is at war, shall willfully cause or attempt to cause insubordination, disloyalty, mutiny, or refusal of duty, in the military or naval forces of the United States, or shall willfully obstruct the recruiting or enlistment service of the United States, to the injury of the service of the United States, shall be punished by a fine of not more than $10,000 or imprisonment for not more than twenty years, or both.\""
+ },
+ "stimulus_set": null,
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one action the Espionage Act made a crime.",
+   "modelAnswer": "One crime was willfully obstructing the recruiting or enlistment service of the United States. The act also made it a crime to cause insubordination, disloyalty, mutiny, or refusal of duty among soldiers and sailors.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names a specific crime from the act, such as obstructing recruiting, or causing insubordination, disloyalty, mutiny, or refusal of duty.",
+     "notEarned": "A vague statement that the act 'limited speech' without naming a specific crime."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain how the government used the Espionage Act against critics of the war.",
+   "modelAnswer": "The government charged thousands of Americans under the act, and more than 1,000 were convicted. The Socialist leader Eugene Debs was sentenced to ten years in prison for his Canton speech, and the government used the law to break up radical groups such as the Industrial Workers of the World.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains a specific use of the act against critics, such as the Debs prosecution, the convictions of antiwar speakers, or the breaking up of radical organizations.",
+     "notEarned": "Names a critic without explaining how the act was used against that person or group."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one way the Supreme Court responded to a challenge to the Espionage Act.",
+   "modelAnswer": "In Schenck v. United States in 1919, the Court upheld the Espionage Act and affirmed Schenck's conviction. Justice Holmes wrote that speech creating a clear and present danger could be punished, so wartime limits on antiwar speech stood.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains a specific Supreme Court response, such as upholding the act in Schenck, affirming a conviction, or stating the clear and present danger test.",
+     "notEarned": "A vague statement that the Court 'ruled on the act' without naming the decision or its result."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,72 @@
+{
+  "id": "apush-mcq-2303",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.11"
+  ],
+  "lesson": "apush-u7-l4",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "5.B"
+  ],
+  "themes": [
+    "WOR",
+    "PCE"
+  ],
+  "reasoning": "continuity-change",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.11 Interwar Foreign Policy"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "Progressive Era and World War I (1900-1920)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus": {
+    "kind": "text",
+    "text": "In 1919 President Wilson asked the Senate to ratify the Treaty of Versailles, which included American membership in the League of Nations. Senator Henry Cabot Lodge, who led the opposition, insisted on reservations that would keep Congress in control of any American military commitment abroad. The Senate rejected the treaty, with and without Lodge's reservations, and the United States never joined the League.",
+    "source_note": "Original secondary text, written for this question from Barron's Premium 2027, Chapter 9, Topic 7.11, and Princeton Review, Chapter 11."
+  },
+  "stimulus_set": "senate-rejects-league-1919",
+  "source": "original; stimulus is original secondary text grounded in Barron's Premium 2027, Chapter 9, Topic 7.11, and Princeton Review, Chapter 11",
+  "stem": "The Senate's rejection of the League of Nations best illustrates which of the following?",
+  "options": [
+    {
+      "key": "A",
+      "text": "A reluctance to accept binding commitments abroad"
+    },
+    {
+      "key": "B",
+      "text": "A wish to police the world alone",
+      "misconception": "The Senate wanted to stay out of foreign wars, not to police the world."
+    },
+    {
+      "key": "C",
+      "text": "A decision to abandon all diplomacy",
+      "misconception": "The United States kept talking disarmament and signed treaties; it did not abandon diplomacy."
+    },
+    {
+      "key": "D",
+      "text": "A belief that the League was too weak",
+      "misconception": "The Senate feared the League was too strong a commitment, not too weak."
+    }
+  ],
+  "answerKey": "A",
+  "rationales": {
+    "A": "Lodge's reservations aimed to keep Congress in control, and the Senate rejected membership rather than accept Article X.",
+    "B": "Background from the books: the Senate's aim was to avoid foreign wars, not to police the world.",
+    "C": "Background from the books: the United States hosted the Washington Naval Conference two years later.",
+    "D": "Background from the books: opponents feared the League could drag America into war, not that it was powerless.",
+    "general": "1. The passage says the Senate rejected the Treaty of Versailles and League membership.\n2. Lodge's reservations would have kept Congress in control of any military commitment.\n3. The Senate would not accept even that guarded version, because Article X seemed to promise American troops for foreign wars.\n4. The rejection shows a country unwilling to bind itself to defend others.\nRemember: refusing a promise is a policy choice, not an accident."
+  }
+}

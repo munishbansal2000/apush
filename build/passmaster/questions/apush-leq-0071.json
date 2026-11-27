@@ -1,0 +1,87 @@
+{
+ "id": "apush-leq-0071",
+ "type": "leq",
+ "unit": 7,
+ "topics": [
+  "7.6"
+ ],
+ "lesson": "apush-u7-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "PCE",
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.6 World War I: Home Front"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 21",
+    "section": "United States and World War I (1914-1921)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "The Progressive Era and World War I (1900-1920)"
+   }
+  ],
+  "primary_sources": [
+   "Selective Service Act, May 18, 1917",
+   "Schenck v. United States, 249 U.S. 47 (1919)"
+  ]
+ },
+ "source": "original; prompt and outline drawn from Barron's Premium 2027, Chapter 9, and 5 Steps to a 5 2024, Chapter 21",
+ "stimulus_set": null,
+ "prompt": "Evaluate the extent to which World War I changed the role of the federal government in the United States from 1917 to 1920.",
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent to which World War I changed the role of the federal government from 1917 to 1920, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim about the extent of change does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as the Progressive era's growth of federal power or the tradition of a small federal government before 1917.",
+   "notEarned": "A sentence of background with no link to the argument, or background from a later century, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (first point): earns the point for describing specific and relevant examples of the federal government's role in World War I, such as the draft, the War Industries Board, or the Food Administration.",
+   "notEarned": "Naming a war measure without describing what the government did does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (second point): earns the point for describing specific and relevant examples from two different areas of the war effort, such as wartime economic agencies and the Espionage Act limits on speech.",
+   "notEarned": "Using examples from only one area, or describing them without tying them to the argument, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Analysis and reasoning (first point): earns the point for using historical reasoning, such as causation or continuity and change, to explain how the war changed the federal role, for example by showing how wartime powers were kept, dropped, or rebuilt.",
+   "notEarned": "Listing examples with no reasoning about how they changed the federal role does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Analysis and reasoning (second point): earns the point for demonstrating a complex understanding, such as qualifying the extent of change by area, explaining that the war expanded economic management while narrowing civil liberties, or weighing the temporary agencies against the lasting growth of federal power.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ],
+ "modelOutline": "Thesis: World War I changed the federal government's role more than any single event since the Civil War, but most of the change was temporary: the government grew enormous to fight the war, then shrank back, keeping only the precedent and a few lasting powers.\nEvidence: The Selective Service Act drafted millions of men; the War Industries Board directed factory production under Bernard Baruch; the Food Administration managed the food supply under Herbert Hoover; Liberty Bonds paid about two-thirds of the war's cost; the Espionage and Sedition Acts narrowed free speech, and the Supreme Court upheld the limits in Schenck v. United States (1919); the Committee on Public Information mobilized public opinion for the war.\nComplexity: The change split by area. Economic management expanded and then receded — the War Industries Board and Food Administration were disbanded after the war — but the draft precedent, the income tax, and a larger federal capacity endured, and the war showed that wider federal power could come with narrower civil liberties.",
+ "totalPoints": 6
+}

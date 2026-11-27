@@ -1,0 +1,89 @@
+{
+ "id": "apush-mcq-2237",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.9"
+ ],
+ "lesson": "apush-u7-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "C",
+ "skills": [
+  "2.B"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.9 The Great Depression"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 23",
+    "section": "Great Depression and the New Deal (1929-1939)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Jazz Age and Great Depression (1920-1933)"
+   }
+  ],
+  "primary_sources": [
+   "Photograph of the crowd outside the New York Stock Exchange, October 29, 1929"
+  ]
+ },
+ "stimulus": {
+  "kind": "image",
+  "text": "A photograph taken on October 29, 1929, shows a large crowd gathered on Wall Street outside the New York Stock Exchange on the day of the stock market crash. Men in suits and hats fill the street between tall buildings, with automobiles stopped among them.",
+  "source_note": "Photograph taken October 29, 1929. Public domain (pre-1930); via Wikimedia Commons."
+ },
+ "source": "original; stimulus photograph October 29, 1929, public domain",
+ "stem": "The crash shown in the photograph was made worse by which of the following practices of the 1920s?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The federal government's regulation of stock prices",
+   "misconception": "The federal government did not regulate stock prices in the 1920s. That only came later, with the Securities and Exchange Commission in 1934."
+  },
+  {
+   "key": "B",
+   "text": "Farmers cutting back on wheat production",
+   "misconception": "Farmers did the opposite in the 1920s. They kept producing more, and falling prices left them in debt."
+  },
+  {
+   "key": "C",
+   "text": "Buying stocks on margin with borrowed money"
+  },
+  {
+   "key": "D",
+   "text": "Workers saving a large share of their wages",
+   "misconception": "Most families had little to save in the 1920s. The decade ran on installment credit, not on savings."
+  }
+ ],
+ "rationales": {
+  "A": "Background from the books: the stock market of the 1920s ran with far fewer controls than today, and no federal agency watched it until the Securities and Exchange Commission was created in 1934.",
+  "B": "Background from the books: farmers expanded production during World War I and never cut back, so overproduction and falling prices, not cutbacks, hurt them.",
+  "C": "Background from the books: buyers could purchase stock by putting down as little as 10 percent, borrowing the rest. When prices fell, brokers demanded full payment, and many investors could not pay.",
+  "D": "Background from the books: by 1929 most families earned too little to save much, and the consumer boom ran on installment buying, so saving did not drive the crash.",
+  "general": "1. Look at the crowd: investors gathered because prices were collapsing.\n2. Ask what made the fall so steep. Background from the books: many buyers had bought on margin, borrowing most of the price.\n3. When prices fell, brokers called the loans, forcing more sales and deeper losses.\n4. Margin buying turned a drop into a collapse.\nRemember: borrowed money makes a market fall faster, so ask who owed what when prices drop."
+ },
+ "stimulus_set": "black-tuesday-crowd-1929",
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2237",
+   "file": "u7/5s24-ch23-mcq-01.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Crowd_outside_nyse.jpg",
+   "license": "Public domain (photograph taken October 29, 1929; pre-1930)",
+   "caption": "A crowd gathers outside the New York Stock Exchange on October 29, 1929.",
+   "alt": "A large crowd of men in suits and hats fills a street between tall buildings, with automobiles stopped among them."
+  }
+ ]
+}

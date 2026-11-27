@@ -1,0 +1,103 @@
+{
+ "id": "apush-saq-0223",
+ "type": "saq",
+ "unit": 7,
+ "topics": [
+  "7.10"
+ ],
+ "lesson": "apush-u7-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "1.A",
+  "3.A"
+ ],
+ "themes": [
+  "PCE",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.10 The New Deal"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 23",
+    "section": "Great Depression and the New Deal (1929-1939)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "New Deal and WWII (1934-1945)"
+   }
+  ],
+  "primary_sources": [
+   "Tennessee Valley Authority photograph, Norris Dam, 1936"
+  ]
+ },
+ "stimulus": {
+  "kind": "image",
+  "text": "Photograph of Norris Dam under construction on the Clinch River in Tennessee, 1936. The photograph shows the sloped concrete face of the dam, water rushing past on the left, and workers on narrow walkways with lumber stacked at the right.",
+  "source_note": "Norris Dam under construction, Tennessee, 1936. Tennessee Valley Authority photograph; via Wikimedia Commons."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus photograph, Norris Dam under construction, Tennessee, 1936, Tennessee Valley Authority, public domain",
+ "saq_slot": 3,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify the New Deal agency that built the dam in the photograph.",
+   "modelAnswer": "The Tennessee Valley Authority built Norris Dam. Congress created the TVA in 1933 to develop the Tennessee River Valley through dams and electricity.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names the Tennessee Valley Authority, or TVA, as the agency that built the dam.",
+     "notEarned": "Naming a different agency, such as the CCC or the WPA, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain ONE purpose of the dam beyond providing jobs.",
+   "modelAnswer": "The dam generated electricity for a poor region that had little power. It also provided flood control for the Tennessee River Valley and helped modernize farming there.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains a specific purpose, such as generating electricity, flood control, fertilizer production, or technical help for farmers.",
+     "notEarned": "A vague statement that the dam helped the region, with no specific purpose named."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain ONE way the agency behind the dam showed a new role for the federal government.",
+   "modelAnswer": "The TVA was the federal government's first experiment in regional planning. Washington did not just regulate business; it built and ran dams, sold electricity, and planned development for a whole river valley.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains a specific new role, such as the federal government as regional planner, dam builder, or seller of electricity.",
+     "notEarned": "A vague statement that the government grew bigger, with no specific new role named."
+    }
+   ]
+  }
+ ],
+ "figures": [
+  {
+   "id": "fig-apush-saq-0223",
+   "file": "u7/norris-dam-1936.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Norris_Dam_(1936)_-_Construction_worker_facing_dam_(9134563415).jpg",
+   "license": "Public domain (Tennessee Valley Authority photograph, 1936)",
+   "caption": "Norris Dam under construction on the Clinch River, Tennessee, 1936.",
+   "alt": "A steep sloped concrete dam face with rushing water at the left and workers on narrow walkways beside stacked lumber at the right."
+  }
+ ]
+}

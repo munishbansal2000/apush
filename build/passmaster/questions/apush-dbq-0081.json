@@ -1,0 +1,159 @@
+{
+  "id": "apush-dbq-0081",
+  "type": "dbq",
+  "unit": 7,
+  "topics": [
+    "7.12"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 4,
+  "skills": [
+    "6.A",
+    "6.B"
+  ],
+  "themes": [
+    "WOR",
+    "PCE"
+  ],
+  "reasoning": "continuity-change",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.12 World War II: Mobilization"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "New Deal and WWII (1934-1945)"
+      }
+    ],
+    "primary_sources": [
+      "Executive Order 8802, June 25, 1941",
+      "Executive Order 9066, February 19, 1942",
+      "Korematsu v. United States (1944)"
+    ]
+  },
+  "stimulus_set": null,
+  "source": "original; documents drawn from paraphrases of public-domain federal documents, book-grounded data, and a description of a wartime poster",
+  "prompt": "Evaluate the extent to which mobilization for World War II changed American society between 1941 and 1945.",
+  "documents": [
+    {
+      "n": 1,
+      "kind": "text",
+      "date": "1941",
+      "title": "Executive Order 8802",
+      "source": "Paraphrase of Executive Order 8802, signed June 25, 1941.",
+      "text": "Paraphrase: There shall be no discrimination in defense industries or in government training programs because of race, creed, color, or national origin. A Fair Employment Practices Committee shall receive and investigate complaints of discrimination.",
+      "sourcing": "A presidential order issued before the United States entered the war. It states a rule for employers, and it creates a committee to hear complaints."
+    },
+    {
+      "n": 2,
+      "kind": "text",
+      "date": "1942",
+      "title": "Executive Order 9066",
+      "source": "Paraphrase of Executive Order 9066, signed February 19, 1942.",
+      "text": "Paraphrase: Military commanders may exclude any or all persons from designated military areas. The order names no group, but it gives commanders the power to remove people from the West Coast.",
+      "sourcing": "A presidential order signed weeks after Pearl Harbor. It gives commanders broad power and names no group, so the reader must see who it was used against."
+    },
+    {
+      "n": 3,
+      "kind": "table",
+      "date": "1943",
+      "title": "Aircraft production, 1940-1942",
+      "source": "Table compiled in 1943 from The Army Air Forces in World War II, vol. VI, chapter 10.",
+      "text": "| Year | Aircraft built |\n| 1940 | 6,086 |\n| 1941 | 19,433 |\n| 1942 | 47,836 |",
+      "sourcing": "A table of production figures compiled after the years it reports. The numbers measure what factories built, not what anyone promised."
+    },
+    {
+      "n": 4,
+      "kind": "text",
+      "date": "1942",
+      "title": "The Bracero agreement",
+      "source": "Paraphrase of the United States-Mexico farm labor agreement, August 1942.",
+      "text": "Paraphrase: The United States and Mexico agree that Mexican workers may enter the United States on temporary contracts to work on farms. The workers shall not be drafted into the military, and the agreement covers the wartime emergency.",
+      "sourcing": "An agreement between two governments, signed in wartime. It arranges temporary labor, not permanent settlement."
+    },
+    {
+      "n": 5,
+      "kind": "text",
+      "date": "1943",
+      "title": "A wartime poster",
+      "source": "Description of J. Howard Miller, \"We Can Do It!\", Westinghouse poster, February 1943.",
+      "text": "Description: The poster shows a woman factory worker in a blue shirt and a red polka-dot bandana, rolling up her sleeve and flexing her arm. Large letters across the top read \"We Can Do It!\" A Westinghouse mark appears at the bottom.",
+      "sourcing": "A poster displayed in Westinghouse plants to its own workers. It was made to recruit and encourage, not to report facts."
+    },
+    {
+      "n": 6,
+      "kind": "text",
+      "date": "1944",
+      "title": "The Korematsu decision",
+      "source": "Paraphrase of Justice Hugo Black's majority opinion, Korematsu v. United States, decided December 1944.",
+      "text": "Paraphrase: The exclusion order rested not on racial hostility but on wartime military judgments about invasion fears and security, which Congress had empowered the military to act upon. Courts must defer to military judgments in wartime.",
+      "sourcing": "A Supreme Court majority opinion, written by a justice defending the government's action. It states the Court's reasoning, not a neutral history."
+    },
+    {
+      "n": 7,
+      "kind": "table",
+      "date": "1945",
+      "title": "Unemployment, 1940 and 1944",
+      "source": "Table compiled in 1945 from Historical Statistics of the United States (U.S. Census Bureau).",
+      "text": "| Year | Unemployment rate |\n| 1940 | 14.6% |\n| 1944 | 1.2% |",
+      "sourcing": "A table of annual averages compiled after the years it reports. The two figures frame the change the war years brought."
+    }
+  ],
+  "rubric": [
+    {
+      "points": 1,
+      "skill": "6.A",
+      "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent to which mobilization for World War II changed American society between 1941 and 1945, with a clear line of reasoning.",
+      "notEarned": "Restating the prompt with no claim about the extent does not earn the point."
+    },
+    {
+      "points": 1,
+      "skill": "4.B",
+      "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as the Great Depression and its unemployment, the New Deal's expansion of federal power, or the attack on Pearl Harbor.",
+      "notEarned": "A sentence of background with no link to the argument, or background from a later century, does not earn the point."
+    },
+    {
+      "points": 1,
+      "skill": "6.B",
+      "criterion": "Evidence from documents (first point): earns the point for describing specific and relevant evidence from at least three documents to support an argument.",
+      "notEarned": "Naming documents without describing their content does not earn the point."
+    },
+    {
+      "points": 1,
+      "skill": "6.B",
+      "criterion": "Evidence from documents (second point): earns the point for using the content of at least six documents to support an argument.",
+      "notEarned": "Using fewer than six documents, or describing them without tying them to the argument, does not earn the point."
+    },
+    {
+      "points": 1,
+      "skill": "6.B",
+      "criterion": "Evidence beyond the documents: earns the point for describing a specific and relevant example beyond the documents, such as the Second Great Migration, the zoot-suit riots of 1943, the Double V campaign, the Manhattan Project, or the postwar push of women out of factory jobs.",
+      "notEarned": "A vague reference to mobilization with no specific example does not earn the point."
+    },
+    {
+      "points": 1,
+      "skill": "3.B",
+      "criterion": "Sourcing: earns the point for explaining the relevance of a document's author, purpose, audience, or historical situation, such as a presidential order that states a rule without enforcement, a poster made to recruit workers, or a Court opinion defending the government's own action.",
+      "notEarned": "Naming an author without explaining why the authorship matters does not earn the point."
+    },
+    {
+      "points": 1,
+      "skill": "6.B",
+      "criterion": "Complexity: earns the point for demonstrating a complex understanding, such as qualifying the change by group, showing that mobilization opened doors for some while closing them for others, or weighing how far the changes lasted after 1945.",
+      "notEarned": "A second example with no qualification or weighing does not earn the point."
+    }
+  ],
+  "modelOutline": "Thesis: Mobilization for World War II changed American society to a great extent, pulling millions of new workers into factories, moving people across the country, and enlarging the federal government, but the change was uneven: it opened doors for women and Black workers while stripping Japanese Americans of their rights.\nContext: The Depression had left about 15 percent of workers jobless in 1940, the New Deal had already widened Washington's reach, and Pearl Harbor in December 1941 turned a partial mobilization into a total one.\nEvidence: Documents 1 and 4 show new openings: the 1941 order banning discrimination in defense work and the 1942 agreement bringing Mexican farm workers north on contracts.\nEvidence: Documents 3, 5, and 7 show the scale of the change: aircraft production rose from about 6,000 to about 48,000 planes, the poster recruited women into plants, and unemployment fell from 14.6 percent to 1.2 percent.\nEvidence: Documents 2 and 6 show the limit: the 1942 removal order and the 1944 Court decision upholding it stripped Japanese Americans of their homes and liberties.\nBeyond the documents: the Second Great Migration moved more than a million Black Southerners north and west, the Double V campaign pressed for victory over racism at home, and women were pushed out of factory jobs when veterans returned.\nSourcing: the orders state rules the government set, while the poster was made to persuade workers and the Court opinion defends the government's own action, so each document proves a different kind of claim.\nComplexity: The change was real but double-sided: the same mobilization that hired women and Black workers also interned Japanese Americans, and many wartime gains faded after 1945 while migration and expectations endured.",
+  "totalPoints": 7
+}

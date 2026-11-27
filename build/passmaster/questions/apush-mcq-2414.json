@@ -1,0 +1,78 @@
+{
+  "id": "apush-mcq-2414",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.15"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "2.A",
+    "3.B"
+  ],
+  "themes": [
+    "PCE",
+    "SOC"
+  ],
+  "reasoning": "comparison",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.6 World War I: Home Front"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 21",
+        "section": "United States and World War I (1914-1921)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "New Deal and WWII (1934-1945)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus_set": "world-wars-home-front",
+  "stimulus": {
+    "kind": "text",
+    "text": "Passage 1 - the Espionage Act of 1917, paraphrased: During World War I, Congress made it a crime to interfere with military recruiting or to speak against the war effort, and the government jailed critics, including the Socialist leader Eugene V. Debs. In Schenck v. United States (1919), the Supreme Court upheld the convictions, saying speech that created a \"clear and present danger\" could be punished.\n\nPassage 2 - Executive Order 9066, February 1942, paraphrased: During World War II, President Roosevelt ordered the removal of about 120,000 Japanese Americans, most of them citizens, from the West Coast to camps in the interior. In Korematsu v. United States (1944), the Supreme Court upheld the order, saying wartime necessity justified it.",
+    "source_note": "Paraphrases of the Espionage Act (1917) and Executive Order 9066 (1942), drawn from Barron's Premium 2027, Chapter 9, Topics 7.6 and 7.12, and 5 Steps to a 5, 2024, Chapters 21 and 24. The 1917 and 1942 measures are paraphrased, not quoted verbatim, except for the short phrase from Schenck."
+  },
+  "source": "original; stimulus drawn from book-grounded paraphrases, tables, and photographs (see source_note)",
+  "stem": "What did the two wartime actions in the passages have in common?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Both expanded federal power while limiting civil liberties"
+    },
+    {
+      "key": "B",
+      "text": "Both were struck down by the Supreme Court",
+      "misconception": "The Court upheld both actions; neither passage says an action was struck down."
+    },
+    {
+      "key": "C",
+      "text": "Both applied only to citizens born outside the country",
+      "misconception": "The Espionage Act applied to critics of any birth, and most internees were American citizens."
+    },
+    {
+      "key": "D",
+      "text": "Both ended all dissent against the war effort",
+      "misconception": "Dissent continued in both wars; the passages describe punishment, not the end of all dissent."
+    }
+  ],
+  "answerKey": "A",
+  "rationales": {
+    "A": "Each passage shows Washington gaining power and a liberty shrinking: speech in 1917, freedom of movement in 1942.",
+    "B": "Background from the books: Schenck in 1919 and Korematsu in 1944 both upheld the government's action.",
+    "C": "Background from the books: Debs was born in the United States, and most Japanese internees were citizens.",
+    "D": "Background from the books: critics kept speaking in both wars, even though the government punished some of them.",
+    "general": "1. Name what each passage does: the 1917 law punishes speech, the 1942 order removes people from their homes.\n2. In both cases the federal government gains a new power it did not use in peacetime.\n3. In both cases a liberty shrinks: free speech in one war, freedom of movement in the other.\n4. Background: the Supreme Court upheld both actions, so the pattern held in both wars.\nRemember: wartime growth of federal power often comes with a cost to liberty."
+  }
+}

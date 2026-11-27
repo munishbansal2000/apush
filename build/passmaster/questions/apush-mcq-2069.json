@@ -1,0 +1,86 @@
+{
+ "id": "apush-mcq-2069",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.3"
+ ],
+ "lesson": "apush-u7-l1",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 2,
+ "answerKey": "B",
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "WOR",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "The Sinking of the Maine"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 19",
+    "section": "The Spanish-American War"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Unit 7: The Early 20th Century (1890-1945)"
+   }
+  ]
+ },
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Detroit Photographic Co. photochrom, copyright 1900, Library of Congress cph.3g03933; public domain.",
+  "text": "The photograph is a photochrom print, copyrighted 1900 by the Detroit Photographic Co., titled \"Restos del U.S.S. Maine, Habana.\" It shows the wrecked battleship USS Maine sitting low in the water of Havana harbor, its hull twisted and broken with one tall mast still standing. Small boats float nearby, and the Havana waterfront stands across the harbor behind it."
+ },
+ "stimulus_set": "maine-wreck-1900",
+ "source": "original; stimulus is a public-domain 1900 photochrom of the wreck of the USS Maine",
+ "stem": "The photograph shows the wreck of the USS Maine still sitting in Havana harbor in 1900. The image is best used as evidence that",
+ "options": [
+  {
+   "key": "A",
+   "text": "Spain admitted it had sunk the Maine",
+   "misconception": "Spain never admitted sinking the Maine, and the photograph shows only the wreck, not a confession."
+  },
+  {
+   "key": "B",
+   "text": "The explosion became a lasting public symbol of the war's cause"
+  },
+  {
+   "key": "C",
+   "text": "The Maine was repaired and returned to service",
+   "misconception": "The photograph shows a broken, sunken hull. The Maine never sailed again."
+  },
+  {
+   "key": "D",
+   "text": "The navy proved the explosion was an accident in its boilers",
+   "misconception": "No navy investigation proved the cause; the photograph shows the wreck, not a finding."
+  }
+ ],
+ "rationales": {
+  "A": "Spain never admitted blame. The wreck alone cannot show a confession that never happened.",
+  "B": "Background: the wreck sat in the harbor for years, and firms like Detroit Photographic sold views of it, keeping the incident before the public.",
+  "C": "The hull is twisted and broken, sitting low in the water. This ship was never repaired or returned to service.",
+  "D": "The navy never settled the cause. The photo shows what the explosion left behind, not why it happened.",
+  "general": "1. Look at the wreck. The Maine sits broken in the harbor, its mast still standing, two years after the blast.\n2. Look at the date. A photochrom firm copyrighted this view in 1900, so people were still buying pictures of it.\n3. Put it together. A wreck that stays visible and keeps being photographed becomes a symbol, not just debris.\nRemember: an image that outlives its event is evidence about memory, not just about the event itself."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2069",
+   "file": "u7/maine-wreck-1900.jpg",
+   "caption": "The wreck of the USS Maine in Havana harbor, Detroit Photographic Co. photochrom, copyright 1900.",
+   "alt": "A color photochrom shows the wrecked battleship USS Maine sitting low in the water of Havana harbor, its hull twisted and broken with one tall mast still standing, the Havana waterfront behind it.",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Detroit_Photographic_Company_(0992).jpg",
+   "license": "Public domain (published 1900, pre-1930)"
+  }
+ ]
+}

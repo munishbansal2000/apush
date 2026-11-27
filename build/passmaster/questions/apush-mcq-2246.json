@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-2246",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.9"
+ ],
+ "lesson": "apush-u7-l3",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 3,
+ "answerKey": "C",
+ "skills": [
+  "2.C"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.9 The Great Depression"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 23",
+    "section": "Great Depression and the New Deal (1929-1939)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Jazz Age and Great Depression (1920-1933)"
+   }
+  ],
+  "primary_sources": [
+   "Federal Reserve Bulletin, September 1937, Table 1 (bank suspensions, 1921-1936)"
+  ]
+ },
+ "stimulus": {
+  "kind": "table",
+  "text": "| Year | Banks that closed |\n| 1929 | 659 |\n| 1930 | 1,350 |\n| 1931 | 2,293 |\n| 1932 | 1,453 |\n| 1933 | 4,000 |\n\nBank suspensions in the United States, 1929–1933. The 1933 figure counts banks closed in the banking crisis and not licensed to reopen after the March 1933 bank holiday.",
+  "source_note": "Figures from the Federal Reserve Bulletin, September 1937, Table 1 (bank suspensions, 1921–1936)."
+ },
+ "source": "original; stimulus table built from Federal Reserve Bulletin, September 1937, Table 1",
+ "stem": "The bank-failure table best supports which of the following conclusions?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Bank failures were rare until the New Deal began",
+   "misconception": "The table shows hundreds of banks closing every year from 1929 on, years before the New Deal began in 1933."
+  },
+  {
+   "key": "B",
+   "text": "The crash ended bank failures after 1931",
+   "misconception": "Failures kept coming after 1931: 1,453 in 1932 and 4,000 in 1933."
+  },
+  {
+   "key": "C",
+   "text": "Bank failures were common before the crash, then surged"
+  },
+  {
+   "key": "D",
+   "text": "Most banks that closed in 1933 soon reopened",
+   "misconception": "The table counts banks that closed. The 1933 figure includes banks never licensed to reopen after the bank holiday."
+  }
+ ],
+ "rationales": {
+  "A": "Background from the books: rural banks had already been closing at a high rate during the 1920s, and 659 closed in 1929 itself.",
+  "B": "The table itself refutes this: 1,453 banks closed in 1932 and 4,000 in 1933, after 1931.",
+  "C": "Background from the books: 659 banks closed in 1929 and rural banks had failed through the 1920s; then the count more than doubled in 1930 and peaked at 4,000 in 1933.",
+  "D": "Background from the books: the 1933 figure counts banks closed in the crisis and not licensed to reopen after the March 1933 bank holiday.",
+  "general": "1. Read the first row: 659 banks closed in 1929, the crash year.\n2. Read the trend: the count more than doubles in 1930 and peaks in 1933.\n3. Ask what that pattern means. Background from the books: failures were already common in the 1920s, then surged.\n4. The table shows failures common before the crash, then surging.\nRemember: read a table row by row before judging it, since the first row sets the baseline."
+ },
+ "stimulus_set": "bank-suspensions-1929-1933"
+}

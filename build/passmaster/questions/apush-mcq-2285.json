@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-2285",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.10"
+ ],
+ "lesson": "apush-u7-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.10 The New Deal"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 23",
+    "section": "Great Depression and the New Deal (1929-1939)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "New Deal and WWII (1934-1945)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "Paraphrase of Barron's Premium 2027, Chapter 9, Topic 7.10, and 5 Steps to a 5 2024, Chapter 23: In 1935 the Supreme Court struck down the National Industrial Recovery Act in Schechter Poultry Corp. v. United States, holding that Congress could not hand its lawmaking power to the executive branch. In 1936 the Court struck down the Agricultural Adjustment Act in United States v. Butler. In 1937 President Roosevelt proposed a bill to let him appoint an additional justice for every sitting justice over 70 who would not retire, up to six new justices. Congress rejected the plan, but the Court grew friendlier to the New Deal, and Roosevelt later appointed eight new justices as older ones retired.",
+  "source_note": "Paraphrase of Barron's Premium 2027, Chapter 9, Topic 7.10, and 5 Steps to a 5 2024, Chapter 23."
+ },
+ "stimulus_set": "court-new-deal-1935-1937",
+ "source": "original; stimulus paraphrased from Barron's Premium 2027, Chapter 9, Topic 7.10, and 5 Steps to a 5 2024, Chapter 23",
+ "stem": "The Court's decision in United States v. Butler best shows which limit on the First New Deal?",
+ "options": [
+  {
+   "key": "A",
+   "text": "because farm production was a power reserved to the states"
+  },
+  {
+   "key": "B",
+   "text": "The president could not appoint new justices at all",
+   "misconception": "Appointing justices was not the issue in Butler; the issue was whether the AAA's taxes were really regulation."
+  },
+  {
+   "key": "C",
+   "text": "Congress could not create any new agencies at all",
+   "misconception": "Congress created many agencies that survived, such as the TVA and the SEC; Butler struck down one act, not agency-making itself."
+  },
+  {
+   "key": "D",
+   "text": "The states could no longer receive federal relief money",
+   "misconception": "Federal relief through the FERA continued after Butler; the decision struck down the AAA, not relief to the states."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Background from the books: the Court held the AAA's taxes amounted to regulation of farming, which fell under state powers, not federal powers.",
+  "B": "Background from the books: appointing justices became the issue only with the court-packing plan of 1937, not with Butler in 1936.",
+  "C": "Background from the books: agencies like the TVA and the SEC survived the Court's review, so Congress could still create agencies.",
+  "D": "Background from the books: the FERA kept sending relief money to the states; Butler ended the AAA's farm program, not federal relief.",
+  "general": "1. The passage says the Court struck down the AAA in Butler in 1936.\n2. Its reason was that the AAA's taxes were really regulation of farming.\n3. Farming regulation, the Court said, belonged to the states, not to Washington.\n4. So even a popular farm program could fall on a federalism limit.\nRemember: a New Deal program could fail in court even when it worked in the fields."
+ }
+}

@@ -1,0 +1,90 @@
+{
+ "id": "apush-saq-0210",
+ "type": "saq",
+ "unit": 7,
+ "topics": [
+  "7.5"
+ ],
+ "lesson": "apush-u7-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "1.B",
+  "4.A"
+ ],
+ "themes": [
+  "PCE",
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.5 World War I: Military and Diplomacy"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 21",
+    "section": "United States and World War I (1914-1921)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "The Progressive Era and World War I (1900-1920)"
+   }
+  ]
+ },
+ "source": "original; stimulus paraphrased from 5 Steps to a 5 2024, Chapter 21, and Barron's Premium 2027, Chapter 9",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of 5 Steps to a 5 2024, Chapter 21, and Barron's Premium 2027, Chapter 9.",
+  "text": "Paraphrase of 5 Steps to a 5 2024, Chapter 21, and Barron's Premium 2027, Chapter 9: After the Paris Peace Conference, President Wilson brought the Treaty of Versailles home to the Senate, where it needed a two-thirds vote. Twelve senators called irreconcilables refused the treaty and the League in any form. Most Republicans followed Senator Henry Cabot Lodge, who wanted reservations attached to ratification, above all a reservation that only Congress could commit American forces to League action. Wilson refused to compromise and told loyal Democrats to vote against the treaty with reservations. The treaty failed in the Senate in 1919 and again in 1920, and the United States never joined the League of Nations."
+ },
+ "stimulus_set": null,
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one reason senators opposed American membership in the League of Nations.",
+   "modelAnswer": "One reason was the fear that the League would take away Congress's power to declare war. Article X of the League Covenant asked members to preserve each other's territory against attack, and senators worried that the League could commit American troops to foreign wars. Lodge's reservations were written to keep that decision with Congress alone.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names a specific reason for Senate opposition, such as the loss of Congress's war power under Article X, the threat to sovereignty, or the protection of the Monroe Doctrine.",
+     "notEarned": "A vague statement that senators 'did not like the League' without naming a specific reason."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain a second reason senators opposed American membership in the League of Nations.",
+   "modelAnswer": "A second reason was the wish to protect American sovereignty and the Monroe Doctrine. Senators such as Lodge argued that the United States should think of itself first and should not let other nations decide its policies. They also resented that Wilson had left Republicans out of the Paris peace delegation.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains a second, distinct reason for Senate opposition, such as sovereignty, the Monroe Doctrine, or Wilson's exclusion of Republicans from Paris, and says how it shaped opposition.",
+     "notEarned": "Repeats the part (a) reason, or names a reason without explaining how it shaped opposition."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one consequence of the Senate's rejection of the Treaty of Versailles.",
+   "modelAnswer": "One consequence was that the League of Nations began without the United States, its strongest advocate, and proved too weak to keep the peace. The rejection also shaped American foreign policy for the next decade, as the country avoided binding commitments while still taking part in disarmament talks and trade. Wilson left office in 1921 a broken man, and the United States made a separate peace with Germany.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains a specific consequence, such as a weakened League, a decade of avoiding binding commitments, or the separate American peace with Germany.",
+     "notEarned": "A vague statement that the rejection 'mattered' without naming a specific consequence."
+    }
+   ]
+  }
+ ]
+}

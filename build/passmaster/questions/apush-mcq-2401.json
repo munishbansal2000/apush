@@ -1,0 +1,76 @@
+{
+  "id": "apush-mcq-2401",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.14"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 2,
+  "skills": [
+    "1.A"
+  ],
+  "themes": [
+    "WOR"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.14 Postwar Diplomacy"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "New Deal and WWII (1934-1945)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus": {
+    "kind": "table",
+    "text": "The Security Council as designed in the United Nations Charter, signed June 26, 1945.\n\n| Members | Who they were | Power |\n| 5 permanent members | United States, Soviet Union, Britain, France, China | Any one could veto a Council decision |\n| 6 rotating members | Elected by the General Assembly for two-year terms | Voted, but held no veto |",
+    "source_note": "Table drawn from the design of the United Nations Charter (San Francisco, June 1945): five permanent members with the veto and six elected members in the original Council. The elected membership grew to ten in 1965."
+  },
+  "stimulus_set": "un-security-council-1945",
+  "source": "original; stimulus drawn from book-grounded paraphrases, tables, and photographs (see source_note)",
+  "stem": "Which nations held permanent seats on the Security Council as designed in 1945?",
+  "options": [
+    {
+      "key": "A",
+      "text": "The United States, Germany, Japan, Italy, and Great Britain",
+      "misconception": "Germany, Japan, and Italy were the defeated Axis powers, not permanent members."
+    },
+    {
+      "key": "B",
+      "text": "The United States, the Soviet Union, Britain, France, and China"
+    },
+    {
+      "key": "C",
+      "text": "The United States, Canada, Brazil, India, and Australia",
+      "misconception": "Canada, Brazil, India, and Australia could serve as rotating members, but they held no permanent seats."
+    },
+    {
+      "key": "D",
+      "text": "The Soviet Union, Poland, Romania, Bulgaria, and Yugoslavia",
+      "misconception": "Poland, Romania, Bulgaria, and Yugoslavia were not permanent members; the Soviet Union was the only one of these five that was."
+    }
+  ],
+  "answerKey": "B",
+  "rationales": {
+    "A": "Background from the books: Germany, Japan, and Italy were the defeated Axis powers, not permanent members.",
+    "B": "The table names the five permanent members: the United States, the Soviet Union, Britain, France, and China.",
+    "C": "Background from the books: Canada, Brazil, India, and Australia could serve as rotating members, but they held no permanent seats.",
+    "D": "Background from the books: Poland, Romania, Bulgaria, and Yugoslavia were not permanent members; the Soviet Union was the only one of these five that was.",
+    "general": "1. The table names five permanent members of the Security Council.\n2. They are the United States, the Soviet Union, Britain, France, and China.\n3. Background: these were the leading Allied powers, and China held a seat even though its government was weak.\n4. Each permanent member could veto a Council decision, so no action could pass against a great power's will.\nRemember: the permanent seats went to the victors, not to every nation."
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "id": "apush-saq-0234",
+  "type": "saq",
+  "unit": 7,
+  "topics": [
+    "7.15"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "1.B",
+    "2.A"
+  ],
+  "themes": [
+    "PCE"
+  ],
+  "reasoning": "comparison",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.4 The Progressives"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 20",
+        "section": "Progressive Era (1895-1914)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "Progressive Era and WWI (1900-1920)"
+      }
+    ],
+    "primary_sources": [
+      "President Theodore Roosevelt, \"The New Nationalism,\" Osawatomie, Kansas, August 31, 1910"
+    ]
+  },
+  "stimulus": {
+    "kind": "text",
+    "text": "President Theodore Roosevelt, \"The New Nationalism,\" Osawatomie, Kansas, August 31, 1910: \"The New Nationalism regards the executive power as the steward of the public welfare. It demands of the judiciary that it shall be interested primarily in human welfare rather than in property, just as it demands that the representative body shall represent all the people rather than any one class or section of the people.\"",
+    "source_note": "Verbatim quotation from President Theodore Roosevelt, \"The New Nationalism,\" Osawatomie, Kansas, August 31, 1910 (public domain, pre-1930)."
+  },
+  "stimulus_set": null,
+  "source": "original; stimulus is a verbatim public-domain quotation from Theodore Roosevelt, 1910",
+  "saq_slot": 2,
+  "totalPoints": 3,
+  "parts": [
+    {
+      "part": "a",
+      "points": 1,
+      "prompt": "Identify the claim Roosevelt makes about the executive power.",
+      "modelAnswer": "Roosevelt claims the president should act as the steward of the public welfare, using executive power for the good of all the people. The president's job is to serve human welfare, not any one class or section.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Names the claim: the executive power is the steward of the public welfare.",
+          "notEarned": "Naming a fact about Roosevelt with no claim about the executive power."
+        }
+      ]
+    },
+    {
+      "part": "b",
+      "points": 1,
+      "prompt": "Explain ONE way the New Deal went further than Roosevelt's New Nationalism.",
+      "modelAnswer": "The New Deal went further by having the federal government provide direct relief, jobs, and income security, such as the Works Progress Administration and Social Security, rather than mainly regulating business. Roosevelt's New Nationalism asked government to referee the economy, while Franklin Roosevelt's New Deal asked it to rescue and support people directly.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Explains a way the New Deal went further, such as direct relief, jobs programs, or Social Security.",
+          "notEarned": "Naming a New Deal program with no comparison to Roosevelt's New Nationalism."
+        }
+      ]
+    },
+    {
+      "part": "c",
+      "points": 1,
+      "prompt": "Explain ONE continuity between Roosevelt's New Nationalism and the New Deal.",
+      "modelAnswer": "Both trusted an active federal government to solve national problems that states and markets could not solve alone. Both used presidential leadership and federal power to protect ordinary people against concentrated economic power.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Explains a continuity, such as trusting an active federal government or using presidential leadership to protect ordinary people.",
+          "notEarned": "Naming a feature of one movement with no link to the other movement."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+ "id": "apush-saq-0219",
+ "type": "saq",
+ "unit": 7,
+ "topics": [
+  "7.9"
+ ],
+ "lesson": "apush-u7-l3",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 3,
+ "skills": [
+  "1.A",
+  "3.A"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.9 The Great Depression"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 23",
+    "section": "Great Depression and the New Deal (1929-1939)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Jazz Age and Great Depression (1920-1933)"
+   }
+  ],
+  "primary_sources": [
+   "Herbert Hoover, statement of October 25, 1929"
+  ]
+ },
+ "source": "original; stimulus verbatim from Herbert Hoover, statement of October 25, 1929, public domain",
+ "stimulus": {
+  "kind": "text",
+  "text": "“The fundamental business of the country, that is, the production and distribution of commodities, is on a sound and prosperous basis.” — President Herbert Hoover, statement of October 25, 1929. Verbatim excerpt; public domain.",
+  "source_note": "Herbert Hoover, statement of October 25, 1929. Verbatim excerpt; public domain (pre-1930)."
+ },
+ "stimulus_set": null,
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify Hoover's claim about the American economy in October 1929.",
+   "modelAnswer": "Hoover claimed the real economy, the production and distribution of goods, was sound and prosperous. He treated the stock market crash as a separate matter that did not touch the heart of the economy.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names Hoover's claim: the fundamental business of the country, production and distribution, was sound and prosperous.",
+     "notEarned": "A vague statement that Hoover was optimistic, without naming what he called sound."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain ONE development between 1929 and 1933 that showed Hoover's claim was wrong.",
+   "modelAnswer": "Bank failures surged after the crash, from 659 in 1929 to 4,000 in 1933, and depositors lost their savings. The credit collapse spread from Wall Street to banks, factories, and jobs, which Hoover's claim had ruled out.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains a specific development, such as the surge in bank failures, unemployment reaching about 25 percent, or factory closings and falling spending.",
+     "notEarned": "A vague statement that the Depression got worse, with no specific development named."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain ONE action Hoover took in response to the Depression after October 1929.",
+   "modelAnswer": "In 1932 Hoover supported the Reconstruction Finance Corporation, which lent federal money to banks, railroads, and other businesses. He acted to steady business and banking, while still refusing direct federal relief to individuals.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains a specific Hoover action, such as the Reconstruction Finance Corporation, the Agricultural Marketing Act and Farm Board, or public works including the Colorado River dam.",
+     "notEarned": "A vague statement that Hoover did something, with no specific action named."
+    }
+   ]
+  }
+ ]
+}

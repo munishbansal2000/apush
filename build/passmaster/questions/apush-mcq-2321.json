@@ -1,0 +1,77 @@
+{
+  "id": "apush-mcq-2321",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.11"
+  ],
+  "lesson": "apush-u7-l4",
+  "status": "final",
+  "pool": "test",
+  "difficulty": 4,
+  "skills": [
+    "4.B"
+  ],
+  "themes": [
+    "WOR",
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.11 Interwar Foreign Policy"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "Jazz Age and Great Depression (1920-1933)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus": {
+    "kind": "table",
+    "text": "Aggression by Japan, Italy, and Germany, 1931-1939.\n\n| 1931 | Japan seizes Manchuria from China |\n| 1935-1936 | Italy conquers Ethiopia |\n| 1936 | Germany sends troops into the demilitarized Rhineland |\n| 1938 | Germany annexes Austria; Britain and France accept Germany's claim to the Sudetenland at Munich |\n| 1939 | Germany occupies the rest of Czechoslovakia, then invades Poland in September |",
+    "source_note": "Dates from Barron's Premium 2027, Chapter 9, Topic 7.11, and 5 Steps to a 5 2024, Chapter 24. Barron's dates the annexation of Austria to 1937; the table uses 1938, the year of the Anschluss in March 1938."
+  },
+  "stimulus_set": "aggression-unopposed-1931-1939",
+  "source": "original; table from Barron's Premium 2027, Chapter 9, Topic 7.11, and 5 Steps to a 5 2024, Chapter 24",
+  "stem": "At Munich in 1938, Britain and France accepted Germany's claim to the Sudetenland, a German-speaking part of Czechoslovakia. That decision is best described as which of the following?",
+  "options": [
+    {
+      "key": "A",
+      "text": "A declaration of war on Germany",
+      "misconception": "Munich gave Germany land; it was the opposite of declaring war."
+    },
+    {
+      "key": "B",
+      "text": "A military alliance with Czechoslovakia",
+      "misconception": "Britain and France abandoned Czechoslovakia, not allied with it."
+    },
+    {
+      "key": "C",
+      "text": "An economic embargo on German goods",
+      "misconception": "No embargo was imposed; Germany got what it claimed."
+    },
+    {
+      "key": "D",
+      "text": "Appeasement, giving in to avoid a war"
+    }
+  ],
+  "answerKey": "D",
+  "rationales": {
+    "A": "Background from the books: Munich conceded the Sudetenland to Germany to avoid war.",
+    "B": "Background from the books: Czechoslovakia was not even invited to the Munich talks.",
+    "C": "Background from the books: no trade punishment followed Munich.",
+    "D": "Britain and France gave in to Hitler's demand, hoping the concession would satisfy him and keep the peace.",
+    "general": "1. The table shows Germany claiming the Sudetenland in 1938.\n2. Britain and France accepted the claim at Munich, without Czechoslovakia at the table.\n3. They hoped that giving in once would satisfy Hitler and avoid a war.\n4. Germany took the rest of Czechoslovakia in 1939, showing the concession had failed.\nRemember: giving in to avoid war only works if the other side stops."
+  }
+}

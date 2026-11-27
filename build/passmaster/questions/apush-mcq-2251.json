@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-2251",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.9"
+ ],
+ "lesson": "apush-u7-l3",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 3,
+ "answerKey": "A",
+ "skills": [
+  "2.B"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.9 The Great Depression"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 23",
+    "section": "Great Depression and the New Deal (1929-1939)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Jazz Age and Great Depression (1920-1933)"
+   }
+  ],
+  "primary_sources": [
+   "U.S. Bureau of Labor Statistics historical series (Economic Report of the President, Table B-22)"
+  ]
+ },
+ "stimulus": {
+  "kind": "table",
+  "text": "| Year | Unemployment rate |\n| 1929 | 3.2% |\n| 1930 | 8.7% |\n| 1931 | 15.9% |\n| 1932 | 23.6% |\n| 1933 | 24.9% |\n\nUnemployment as a share of the civilian labor force, 1929–1933.",
+  "source_note": "Figures from the U.S. Bureau of Labor Statistics historical series, as published in the Economic Report of the President, Table B-22."
+ },
+ "source": "original; stimulus table built from U.S. Bureau of Labor Statistics historical series",
+ "stem": "The table best supports which of the following claims about the Depression by 1933?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Joblessness had grown far worse since 1929"
+  },
+  {
+   "key": "B",
+   "text": "Unemployment had returned to its 1929 level",
+   "misconception": "Unemployment in 1933 was 24.9 percent, against 3.2 percent in 1929. It had not returned to its old level."
+  },
+  {
+   "key": "C",
+   "text": "Most workers had found jobs in new industries",
+   "misconception": "The table shows the opposite: by 1933 nearly a quarter of workers had no job at all."
+  },
+  {
+   "key": "D",
+   "text": "The Depression had ended by 1933",
+   "misconception": "The Depression was at its worst in 1933, with unemployment at its peak. It had not ended."
+  }
+ ],
+ "rationales": {
+  "A": "Background from the books: the rate climbed every year after the crash, from 3.2 percent in 1929 to 24.9 percent in 1933, with no recovery yet.",
+  "B": "The table shows 24.9 percent in 1933, far above the 3.2 percent of 1929.",
+  "C": "Background from the books: factories were closing and laying workers off, not hiring them into new industries.",
+  "D": "Background from the books: 1933 was the trough of the Depression, the year unemployment peaked, not the year it ended.",
+  "general": "1. Compare the first and last rows: 3.2 percent in 1929, 24.9 percent in 1933.\n2. Ask whether the rise ever turned around: it did not, it climbed every year.\n3. Ask what that means for 1933: the worst year, not a recovery.\n4. Joblessness had grown far worse since 1929.\nRemember: a table's last row is the end of the story so far, so compare it with the first."
+ },
+ "stimulus_set": "unemployment-1929-1933"
+}

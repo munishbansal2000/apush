@@ -1,0 +1,155 @@
+{
+ "id": "apush-dbq-0078",
+ "type": "dbq",
+ "unit": 7,
+ "topics": [
+  "7.10"
+ ],
+ "lesson": "apush-u7-l4",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.10 The New Deal"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 23",
+    "section": "Great Depression and the New Deal (1929-1939)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "New Deal and WWII (1934-1945)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus_set": null,
+ "source": "original; documents drawn from public-domain sources, paraphrases, and book-grounded data",
+ "prompt": "Evaluate the extent to which the New Deal changed the relationship between the federal government and American citizens from 1933 to 1939.",
+ "documents": [
+  {
+   "n": 1,
+   "kind": "text",
+   "date": "1933",
+   "title": "Relief as a duty",
+   "source": "Paraphrase of Franklin Roosevelt's view of relief, as described in 5 Steps to a 5 2024, Chapter 23.",
+   "text": "Paraphrase: President Roosevelt argued that relief for the unemployed must be extended by the government, not as a matter of charity, but as a matter of social duty. The government, he said, owed help to citizens who could not help themselves.",
+   "sourcing": "A textbook account of Roosevelt's view, written long after the events. A summary of his position, not his own words."
+  },
+  {
+   "n": 2,
+   "kind": "text",
+   "date": "1933",
+   "title": "Saving the banks",
+   "source": "Paraphrase of 5 Steps to a 5 2024, Chapter 23, and Barron's Premium 2027, Chapter 9, Topic 7.10.",
+   "text": "Paraphrase: When Roosevelt took office in March 1933, banks were failing as frightened depositors withdrew their money. He closed all banks for four days so the government could inspect them, and the Banking Act of 1933 then created the Federal Deposit Insurance Corporation, which insured individual deposits.",
+   "sourcing": "A textbook account of the bank holiday, written long after the events. A summary of the policy, not a voice from 1933."
+  },
+  {
+   "n": 3,
+   "kind": "table",
+   "date": "1935",
+   "title": "The Social Security Act",
+   "source": "Table built from 5 Steps to a 5 2024, Chapter 23, and Barron's Premium 2027, Chapter 9, Topic 7.10.",
+   "text": "| Part of the act | What it provided |\n| Retirement pension | A pension for workers over 65, funded by workers and employers; first payments January 1942 |\n| Unemployment insurance | Insurance for workers who lost jobs, funded by a payroll tax on employers and run by the states |\n| Aid | Aid for dependent children, the blind, and people with disabilities |\n| Left out at first | Farm workers and domestic workers |",
+   "sourcing": "A table built from textbooks, listing what the act covered and who it left out. Numbers and categories, not an argument."
+  },
+  {
+   "n": 4,
+   "kind": "text",
+   "date": "1935",
+   "title": "The Liberty League answers",
+   "source": "Paraphrase of 5 Steps to a 5 2024, Chapter 23, and Barron's Premium 2027, Chapter 9, Topic 7.10.",
+   "text": "Paraphrase: The American Liberty League, founded in 1934 and led by Du Pont businessmen and former Democratic presidential candidate Al Smith, denounced the New Deal as an American form of bolshevism. The League was outraged by the Revenue Act of 1935, which sharply raised taxes on incomes over 50,000 dollars.",
+   "sourcing": "A textbook account of the League's position, written long after the events. A summary of its charges, not the League's own words."
+  },
+  {
+   "n": 5,
+   "kind": "text",
+   "date": "1936",
+   "title": "The Court strikes back",
+   "source": "Paraphrase of Barron's Premium 2027, Chapter 9, Topic 7.10.",
+   "text": "Paraphrase: In 1935 the Supreme Court struck down the National Industrial Recovery Act in Schechter Poultry Corp. v. United States, holding that Congress could not hand its lawmaking power to the executive branch. In 1936 the Court struck down the Agricultural Adjustment Act in United States v. Butler.",
+   "sourcing": "A textbook account of the decisions, written long after the events. A summary of the rulings, not the opinions themselves."
+  },
+  {
+   "n": 6,
+   "kind": "text",
+   "date": "1935",
+   "title": "Pressure from the left",
+   "source": "Paraphrase of 5 Steps to a 5 2024, Chapter 23, and Barron's Premium 2027, Chapter 9, Topic 7.10.",
+   "text": "Paraphrase: Critics on the left said the New Deal did not go far enough. Dr. Francis Townsend proposed a 200-dollar monthly pension for Americans over 60, and Senator Huey Long built thousands of Share Our Wealth clubs around a plan to cap large fortunes and guarantee every family a minimum income.",
+   "sourcing": "A textbook account of the left's pressure, written long after the events. A summary of the plans, not the critics' own words."
+  },
+  {
+   "n": 7,
+   "kind": "table",
+   "date": "1929-1939",
+   "title": "Unemployment, 1929-1939",
+   "source": "Table from the U.S. Bureau of Labor Statistics historical unemployment series.",
+   "text": "| Year | Unemployment rate |\n| 1929 | 3.2 percent |\n| 1933 | 24.9 percent |\n| 1935 | 20.1 percent |\n| 1937 | 14.3 percent |\n| 1938 | 19.0 percent |\n| 1939 | 17.2 percent |",
+   "sourcing": "A table of official figures, counting unemployment rather than arguing a case. Numbers that show the New Deal easing, but not ending, the Depression."
+  }
+ ],
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent to which the New Deal changed the relationship between the federal government and American citizens from 1933 to 1939, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim about the extent does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as the limited government of the 1920s, the Progressive era's earlier reforms, or the Panics of 1893 and 1907.",
+   "notEarned": "A sentence of background with no link to the argument, or background from a later century, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence from documents (first point): earns the point for describing specific and relevant evidence from at least three documents to support an argument.",
+   "notEarned": "Naming documents without describing their content does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence from documents (second point): earns the point for using the content of at least six documents to support an argument.",
+   "notEarned": "Using fewer than six documents, or describing them without tying them to the argument, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence beyond the documents: earns the point for describing a specific and relevant example beyond the documents, such as the court-packing plan, the Wagner Act, the election of 1936, or the Indian Reorganization Act.",
+   "notEarned": "A vague reference to the New Deal with no specific example does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "3.B",
+   "criterion": "Sourcing: earns the point for explaining the relevance of a document's author, purpose, audience, or historical situation, such as a textbook account written long after the events, or a government poster meant to build support for a program.",
+   "notEarned": "Naming an author without explaining why the authorship matters does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Complexity: earns the point for demonstrating a complex understanding, such as qualifying the change by showing its limits, or weighing how far the change lasted.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ],
+ "modelOutline": "Thesis: The New Deal changed the relationship between the government and its citizens to a great extent: by 1939 Americans expected the federal government to protect them against hard times, a duty no president before 1933 had accepted.\nContext: The 1920s ran on limited government, with Coolidge cutting taxes and Hoover refusing direct federal relief, while earlier panics in 1893 and 1907 had already shown the economy could collapse.\nEvidence: Documents 1-3 show the new duty taking shape: Roosevelt called relief a social duty, the FDIC insured bank deposits, and the Social Security Act built pensions and unemployment insurance.\nEvidence: Documents 4-5 show the limits and the pushback: the Liberty League denounced the New Deal as bolshevism, and the Supreme Court struck down the NIRA and the AAA.\nEvidence: Documents 6-7 show pressure and results: critics on the left demanded more, while unemployment fell from 24.9 percent in 1933 to 17.2 percent in 1939 but never below 14 percent.\nBeyond the documents: the court-packing plan of 1937 showed Roosevelt fighting the Court, and the election of 1936, won 523 to 8, showed voters endorsing the new relationship.\nSourcing: the textbook accounts summarize events long after, while the table counts official figures, so each document's purpose shapes what it shows.\nComplexity: The change was real but uneven: farm and domestic workers were left out of Social Security at first, and the Depression itself did not end until wartime production, yet the expectation of a federal floor survived.",
+ "totalPoints": 7
+}

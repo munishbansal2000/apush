@@ -1,0 +1,76 @@
+{
+  "id": "apush-mcq-2369",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.13"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "test",
+  "difficulty": 4,
+  "skills": [
+    "2.B"
+  ],
+  "themes": [
+    "WOR"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.13 World War II: Military"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "New Deal and WWII (1934-1945)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus": {
+    "kind": "text",
+    "text": "Paraphrase: On June 6, 1944, Allied forces under General Dwight D. Eisenhower carried out the D-Day landings on the beaches of Normandy, France, the largest amphibious landing of its time. Casualties were heavy, but the landing succeeded, and by the end of July more than two million Allied troops were crowded into the beachhead. After a breakout in late July, Allied forces swept across France, and Paris was liberated in August 1944. At the same time, Soviet armies drove German forces back toward Germany from the east.",
+    "source_note": "Original secondary summary drawn from 5 Steps Chapter 24 (D-Day; Paris liberated in August; over 2 million troops by end of July) and Barron's Chapter 9 ('D-Day and the Allied Assault on Europe')."
+  },
+  "stimulus_set": "d-day-normandy-1944",
+  "source": "original; stimulus drawn from book-grounded figures and paraphrases (see source_note)",
+  "stem": "The passage says more than two million Allied troops were in the beachhead by the end of July 1944. Which of the following best explains why Germany could not push them back into the sea?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Germany fought two fronts at once, with Soviet armies pressing from the east"
+    },
+    {
+      "key": "B",
+      "text": "Germany had already surrendered before the landings had even begun",
+      "misconception": "Germany fought on until May 1945, nearly a year after D-Day."
+    },
+    {
+      "key": "C",
+      "text": "German troops had all been sent away to fight in the Pacific Ocean",
+      "misconception": "German troops fought in Europe, not in the Pacific."
+    },
+    {
+      "key": "D",
+      "text": "The Allies had destroyed every single German ship before D-Day",
+      "misconception": "German ships still fought; the landings succeeded on land, not by destroying every ship."
+    }
+  ],
+  "answerKey": "A",
+  "rationales": {
+    "A": "Germany had to split its armies between France and the Soviet front.",
+    "B": "Germany fought on until May 1945, nearly a year after D-Day.",
+    "C": "German troops fought in Europe, not in the Pacific.",
+    "D": "The landings won on land; German ships were not all destroyed.",
+    "general": "1. The passage says more than two million Allied troops were ashore by the end of July.\n2. Background from the books: at the same time, Soviet offensives drove German armies back toward Germany.\n3. Germany could not mass enough troops in France while fighting in the east.\n4. So the beachhead held, and the breakout in late July swept across France.\nRemember: a two-front war divides the defender, so count the fronts before judging one battle."
+  }
+}

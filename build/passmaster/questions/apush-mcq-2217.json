@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-2217",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.8"
+ ],
+ "lesson": "apush-u7-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "C",
+ "skills": [
+  "2.C"
+ ],
+ "themes": [
+  "MIG",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.8 1920s: Cultural and Political Controversies"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 22",
+    "section": "Beginning of Modern America: The 1920s"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Jazz Age and Great Depression (1920-1933)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "text": "| Law | Year | Quota rule |\n| Emergency Quota Act | 1921 | 3 percent of each nationality living in the United States in 1910 |\n| National Origins Act | 1924 | 2 percent of each nationality living in the United States in 1890; total cap of 150,000; immigration from Asia barred |\nNeither act limited immigration from countries in the Americas.",
+  "source_note": "Table built from Barron's Premium 2027, Chapter 9, Topic 7.8, and 5 Steps to a 5 2024, Chapter 22."
+ },
+ "stimulus_set": "quota-laws",
+ "source": "original; stimulus table built from Barron's Premium 2027, Chapter 9, Topic 7.8, and 5 Steps to a 5 2024, Chapter 22",
+ "stem": "The change from the 1910 census in 1921 to the 1890 census in 1924 shows that lawmakers wanted to",
+ "options": [
+  {
+   "key": "A",
+   "text": "count immigrants more accurately every single year",
+   "misconception": "The 1890 census was older and less accurate for 1924. Lawmakers chose it for who it counted, not for accuracy."
+  },
+  {
+   "key": "B",
+   "text": "raise the total number of immigrants allowed in",
+   "misconception": "The 1924 act also cut the rate from 3 percent to 2 percent and capped the total at 150,000. It lowered the numbers, not raised them."
+  },
+  {
+   "key": "C",
+   "text": "favor groups that had arrived before newer waves"
+  },
+  {
+   "key": "D",
+   "text": "treat every nationality exactly the same way",
+   "misconception": "The quotas differed by nationality by design. Equal treatment would need one rule for all, not a census count per group."
+  }
+ ],
+ "rationales": {
+  "A": "The 1890 census was older and less accurate for 1924. Lawmakers chose it for who it counted, not for accuracy.",
+  "B": "The 1924 act also cut the rate from 3 percent to 2 percent and capped the total at 150,000. It lowered the numbers, not raised them.",
+  "C": "Background from the books: the 'new immigration' from southern and eastern Europe arrived mostly after 1890. Moving the census back to 1890 shrank those groups' quotas and favored the earlier arrivals from northern and western Europe.",
+  "D": "The quotas differed by nationality by design. Equal treatment would need one rule for all, not a census count per group.",
+  "general": "1. Compare the two rules: 3 percent of 1910, then 2 percent of 1890.\n2. Ask what changed besides the rate: the census year moved back 20 years.\n3. Ask who arrived between 1890 and 1910. Background: the newer waves from southern and eastern Europe arrived mostly after 1890.\n4. Name the intent: the earlier year counts fewer of them, so it favors earlier arrivals.\nRemember: when a law picks an old baseline, ask whose numbers that baseline shrinks."
+ }
+}

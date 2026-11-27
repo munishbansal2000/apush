@@ -1,0 +1,76 @@
+{
+  "id": "apush-mcq-2384",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.14"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "3.A"
+  ],
+  "themes": [
+    "WOR"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.14 Postwar Diplomacy"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "New Deal and WWII (1934-1945)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus": {
+    "kind": "text",
+    "text": "Paraphrase: In November and December 1943, President Franklin Roosevelt, Prime Minister Winston Churchill, and Soviet leader Joseph Stalin met for the first time together at Tehran, Iran. Stalin had long demanded that the United States and Britain open a second front in Western Europe to ease the pressure on Soviet armies, which were carrying most of the fighting against Germany. At Tehran the three leaders agreed that the Allied invasion of France would go forward in 1944, timed with a major Soviet offensive in the east. Stalin also promised that the Soviet Union would join the war against Japan once Germany was defeated. The three leaders agreed in principle to form a new international organization to keep the peace after the war.",
+    "source_note": "Original secondary summary drawn from Barron's Chapter 9 (Tehran Conference, November 1943) and Princeton Chapter 11 (first meeting of the 'big three' at Tehran)."
+  },
+  "stimulus_set": "tehran-1943",
+  "source": "original; stimulus drawn from book-grounded paraphrases, tables, and photographs (see source_note)",
+  "stem": "Why did Stalin press the United States and Britain to open a second front?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Soviet armies were carrying most of the fighting against Germany"
+    },
+    {
+      "key": "B",
+      "text": "Stalin wanted to keep the war out of Eastern Europe",
+      "misconception": "The war was already in Eastern Europe, and Soviet cities had been under attack since 1941."
+    },
+    {
+      "key": "C",
+      "text": "The Soviet Union had no navy to invade France itself",
+      "misconception": "Stalin wanted the Allies to invade France; a Soviet navy was not the issue."
+    },
+    {
+      "key": "D",
+      "text": "Stalin hoped to delay the invasion of Germany for years",
+      "misconception": "Stalin wanted the second front opened soon, not delayed."
+    }
+  ],
+  "answerKey": "A",
+  "rationales": {
+    "A": "By 1943 Soviet troops had done most of the fighting against Germany, and a second front in the west would force Germany to split its armies.",
+    "B": "Background from the books: the war was already in Eastern Europe, and Soviet cities had been under attack since 1941.",
+    "C": "Background from the books: Stalin wanted the Allies to invade France; a Soviet navy was not the issue.",
+    "D": "Background from the books: Stalin wanted the second front opened soon, not delayed.",
+    "general": "1. The stimulus says Soviet armies were carrying most of the fighting against Germany.\n2. Germany could aim nearly all its strength east while no second front existed.\n3. Background: the books note that nearly 90 percent of German casualties came at Soviet hands.\n4. A landing in France would pull German troops west and ease the pressure on the Soviet Union.\nRemember: when one ally does most of the fighting, it will push hard for the others to open another front."
+  }
+}

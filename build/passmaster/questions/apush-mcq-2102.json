@@ -1,0 +1,86 @@
+{
+ "id": "apush-mcq-2102",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.4"
+ ],
+ "lesson": "apush-u7-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "D",
+ "skills": [
+  "4.A"
+ ],
+ "themes": [
+  "PCE",
+  "WOR"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.4 The Progressives — Challenging Child Labor"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 20",
+    "section": "Workplace Reform"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "The Progressive Era and World War I (1900-1920)"
+   }
+  ]
+ },
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Photograph by Lewis Hine, c. 1911, public domain (pre-1930). Caption per the source record.",
+  "text": "Photograph by Lewis Hine, 1911. A young girl in a plain dress stands outdoors and looks directly at the camera. Hine's caption records her as a girl working in a cannery."
+ },
+ "stimulus_set": "hine-child-labor",
+ "source": "original; stimulus paraphrased from 5 Steps to a 5 2024, Chapter 20, and Barron's Premium 2027, Chapter 9",
+ "stem": "The movement to end child labor faced its greatest obstacle when",
+ "options": [
+  {
+   "key": "A",
+   "text": "Congress refused to pass any child labor law at all",
+   "misconception": "Congress did pass the Keating-Owen Act in 1916; the obstacle came afterward, in the courts."
+  },
+  {
+   "key": "B",
+   "text": "the states banned all child labor by 1900 on their own",
+   "misconception": "The states had not banned child labor; children as young as ten still worked in factories in the 1900s."
+  },
+  {
+   "key": "C",
+   "text": "Hine stopped taking photographs of child workers",
+   "misconception": "Hine kept photographing; the obstacle was legal, not a lack of pictures."
+  },
+  {
+   "key": "D",
+   "text": "the Supreme Court struck down the Keating-Owen Act in 1918"
+  }
+ ],
+ "rationales": {
+  "A": "Congress acted in 1916 with the Keating-Owen Act. The obstacle was not congressional refusal but what the Court did next.",
+  "B": "The states had not solved child labor. Children as young as ten still worked in factories, which is why reformers turned to Congress.",
+  "C": "Hine kept working through the era. The movement's obstacle was the Court's ruling, not a shortage of photographs.",
+  "D": "Congress tried to reach child labor through interstate commerce in the Keating-Owen Act of 1916, but the Court ruled in 1918 that manufacturing was a state matter, so the federal ban fell.",
+  "general": "1. Follow the reform. Congress passed the Keating-Owen Act in 1916 to bar goods made by children under fourteen from crossing state lines.\n2. Find where it stopped. The Supreme Court struck the act down in Hammer v. Dagenhart in 1918.\n3. Rule out the wrong turns. Congress acted, and Hine kept working.\nRemember: a reform can clear Congress and still fail, so always ask what the courts did next."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2102",
+   "file": "u7/barrons-2027-ch09-05.jpg",
+   "caption": "Lewis Hine, girl working in a cannery, 1911. A young girl in a plain dress stands outdoors and faces the camera.",
+   "alt": "A sepia portrait of a young girl in a plain dress with an embroidered collar, standing outdoors and looking at the camera.",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Lewis_Hine%2C_Girl_working_in_a_cannery%2C_1911.jpg",
+   "license": "Public domain (photograph c. 1911, pre-1930)"
+  }
+ ]
+}

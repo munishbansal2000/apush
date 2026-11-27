@@ -1,0 +1,87 @@
+{
+  "id": "apush-saq-0225",
+  "type": "saq",
+  "unit": 7,
+  "topics": [
+    "7.11"
+  ],
+  "lesson": "apush-u7-l4",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "2.B",
+    "3.A"
+  ],
+  "themes": [
+    "WOR"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.11 Interwar Foreign Policy"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "Jazz Age and Great Depression (1920-1933)"
+      }
+    ],
+    "primary_sources": [
+      "Kellogg-Briand Pact, Article I, Paris, August 27, 1928"
+    ]
+  },
+  "stimulus": {
+    "kind": "text",
+    "text": "The High Contracting Parties solemnly declare in the names of their respective peoples that they condemn recourse to war for the solution of international controversies, and renounce it as an instrument of national policy in their relations with one another.",
+    "source_note": "Kellogg-Briand Pact, Article I, signed Paris, August 27, 1928. Public domain."
+  },
+  "stimulus_set": null,
+  "source": "original; stimulus verbatim from the Kellogg-Briand Pact, Article I, 1928, public domain",
+  "saq_slot": 2,
+  "totalPoints": 3,
+  "parts": [
+    {
+      "part": "a",
+      "points": 1,
+      "prompt": "Identify what the signers of the pact renounced.",
+      "modelAnswer": "The signers renounced war as an instrument of national policy. They condemned recourse to war for settling disputes between nations. The pact promised that nations would solve controversies without war.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Names the renunciation of war as an instrument of national policy, or condemning recourse to war to settle disputes.",
+          "notEarned": "A vague statement that the signers promised peace, without naming what was renounced."
+        }
+      ]
+    },
+    {
+      "part": "b",
+      "points": 1,
+      "prompt": "Explain ONE reason more than sixty nations signed the pact.",
+      "modelAnswer": "The First World War had killed millions and left the public desperate to prevent another war. A pact renouncing war cost each signer nothing and let governments show their people they were working for peace.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Explains a specific reason, such as horror at the First World War, public demand for peace, or the pact's low cost to signers.",
+          "notEarned": "Restating that many nations signed, with no reason given."
+        }
+      ]
+    },
+    {
+      "part": "c",
+      "points": 1,
+      "prompt": "Explain ONE reason the pact failed to prevent war in the 1930s.",
+      "modelAnswer": "The pact had no enforcement mechanism, so nothing happened to a signer that broke it. When Japan invaded Manchuria in 1931, the League of Nations protested but took no effective action, and Japan kept the territory.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Explains a specific reason, such as no enforcement, no definition of aggression, or the Manchuria example.",
+          "notEarned": "A vague statement that the pact was weak, with no specific reason named."
+        }
+      ]
+    }
+  ]
+}

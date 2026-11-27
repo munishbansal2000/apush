@@ -1,0 +1,89 @@
+{
+ "id": "apush-mcq-2152",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.5"
+ ],
+ "lesson": "apush-u7-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "C",
+ "skills": [
+  "3.D"
+ ],
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.5 World War I: Military and Diplomacy"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 21",
+    "section": "United States and World War I (1914-1921)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "The Progressive Era and World War I (1900-1920)"
+   }
+  ],
+  "primary_sources": [
+   "Punch (London), \"The Child Who Wanted to Play by Himself,\" December 1, 1919"
+  ]
+ },
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Punch (London) cartoon, December 1, 1919 (public domain). Caption quoted from the cartoon itself.",
+  "text": "Cartoon from Punch (London), December 1, 1919, titled \"The Child Who Wanted to Play by Himself.\" A tall man, President Wilson, leads a small child wearing a hat marked \"U.S.A.\" toward a building with columns labeled \"TEMPLE OF PEACE,\" where other children play. Wilson says, \"Now come along and enjoy yourself with the other children. I promised that you'd be the life and soul of the party.\" The child pulls back against Wilson's hand."
+ },
+ "stimulus_set": "punch-league-cartoon",
+ "source": "original; stimulus describes the Punch (London) cartoon, December 1, 1919",
+ "stem": "The cartoon's main message is that the United States",
+ "options": [
+  {
+   "key": "A",
+   "text": "had already joined the League of Nations and was leading it",
+   "misconception": "The child pulls back from the temple instead of joining the other children. The United States never joined the League."
+  },
+  {
+   "key": "B",
+   "text": "was too small and weak to matter in world affairs",
+   "misconception": "The child is small because it is drawn as a child, not because the United States was weak. Wilson calls the child the life and soul of the party, meaning it mattered a great deal."
+  },
+  {
+   "key": "C",
+   "text": "refused to join the League of Nations despite Wilson's urging"
+  },
+  {
+   "key": "D",
+   "text": "had been kept out of the League by Britain and France",
+   "misconception": "Britain and France wanted the United States in the League; Wilson wrote the League into the treaty. The refusal came from the Senate, not from the Allies."
+  }
+ ],
+ "rationales": {
+  "A": "The child pulls back from the temple instead of joining the other children. The United States never joined the League.",
+  "B": "The child is small because it is drawn as a child, not because the United States was weak. Wilson calls the child the life and soul of the party, meaning it mattered a great deal.",
+  "C": "Wilson leads the child toward the Temple of Peace and promises it will be the life and soul of the party, but the child pulls back against his hand. The drawing shows American refusal, not American entry.",
+  "D": "Britain and France wanted the United States in the League; Wilson wrote the League into the treaty. The refusal came from the Senate, not from the Allies.",
+  "general": "1. Identify the figures. Wilson leads a child marked U.S.A. toward a temple labeled Temple of Peace.\n2. Read the action. The child pulls back against Wilson's hand instead of walking in.\n3. Read Wilson's words. He coaxes the child to join the other children, which only makes sense if the child has refused.\nRemember: in a cartoon, the action between the figures is the argument, so name what each figure is doing."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2152",
+   "file": "u7/5s24-ch21-mcq-05.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:USA_resists_League_of_Nations_1919.jpg",
+   "license": "Public domain (Punch, London, December 1, 1919, pre-1930)",
+   "caption": "Punch cartoon, \"The Child Who Wanted to Play by Himself,\" 1919.",
+   "alt": "President Wilson leads a small child wearing a hat marked U.S.A. toward a temple of peace where other children play, while the child pulls back."
+  }
+ ]
+}

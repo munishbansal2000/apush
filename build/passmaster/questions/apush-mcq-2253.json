@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-2253",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.9"
+ ],
+ "lesson": "apush-u7-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "B",
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.9 The Great Depression"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 23",
+    "section": "Great Depression and the New Deal (1929-1939)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Jazz Age and Great Depression (1920-1933)"
+   }
+  ],
+  "primary_sources": [
+   "Bureau of the Census export figures, as cited in Senate Resolution 281 (2025)"
+  ]
+ },
+ "stimulus": {
+  "kind": "table",
+  "text": "| Year | U.S. exports |\n| 1929 | $5.24 billion |\n| 1933 | $1.67 billion |\n\nU.S. exports fell by about two-thirds between 1929 and 1933. In June 1930 President Hoover signed the Hawley-Smoot Tariff, which raised tariffs on imported goods to near record levels, and other countries answered with tariffs of their own.",
+  "source_note": "Export figures from the Bureau of the Census, as cited in Senate Resolution 281 (2025). Tariff account per 5 Steps to a 5 2024, Chapter 23."
+ },
+ "source": "original; stimulus table built from Bureau of the Census export figures",
+ "stem": "The Hawley-Smoot Tariff was intended to",
+ "options": [
+  {
+   "key": "A",
+   "text": "lower prices for American consumers",
+   "misconception": "A tariff taxes imported goods, which raises their prices. It was meant to protect producers, not to lower prices."
+  },
+  {
+   "key": "B",
+   "text": "protect American jobs by taxing imported goods"
+  },
+  {
+   "key": "C",
+   "text": "raise money to pay unemployment relief",
+   "misconception": "The tariff was written to protect farmers and manufacturers from foreign competition, not to fund relief."
+  },
+  {
+   "key": "D",
+   "text": "open foreign markets to American farmers",
+   "misconception": "The tariff closed markets, it did not open them. Other countries answered with tariffs of their own."
+  }
+ ],
+ "rationales": {
+  "A": "Background from the books: the tariff made foreign-made products more expensive, which raises prices for buyers rather than lowering them.",
+  "B": "Background from the books: the tariff raised duties to near record levels to protect American jobs by making foreign goods more expensive.",
+  "C": "Background from the books: Hoover refused direct federal relief, and the tariff was a trade measure, not a relief fund.",
+  "D": "Background from the books: other nations raised their tariffs on American goods in response, shrinking the market for American farmers.",
+  "general": "1. Ask what a tariff does: it taxes goods coming in.\n2. Ask why Congress would do that in 1930: to shield American producers from foreign competition.\n3. Ask who that helps: American workers and farmers, at least in theory.\n4. The tariff was meant to protect American jobs by taxing imports.\nRemember: a tariff is a tax on imports, so ask whose goods it makes dearer."
+ },
+ "stimulus_set": "smoot-hawley-exports"
+}

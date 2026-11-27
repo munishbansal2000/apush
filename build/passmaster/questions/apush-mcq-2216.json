@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-2216",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.8"
+ ],
+ "lesson": "apush-u7-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "A",
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "MIG",
+  "NAT"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.8 1920s: Cultural and Political Controversies"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 22",
+    "section": "Beginning of Modern America: The 1920s"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Jazz Age and Great Depression (1920-1933)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "text": "| Law | Year | Quota rule |\n| Emergency Quota Act | 1921 | 3 percent of each nationality living in the United States in 1910 |\n| National Origins Act | 1924 | 2 percent of each nationality living in the United States in 1890; total cap of 150,000; immigration from Asia barred |\nNeither act limited immigration from countries in the Americas.",
+  "source_note": "Table built from Barron's Premium 2027, Chapter 9, Topic 7.8, and 5 Steps to a 5 2024, Chapter 22."
+ },
+ "stimulus_set": "quota-laws",
+ "source": "original; stimulus table built from Barron's Premium 2027, Chapter 9, Topic 7.8, and 5 Steps to a 5 2024, Chapter 22",
+ "stem": "Under the 1924 act, which group faced the tightest limits on immigration?",
+ "options": [
+  {
+   "key": "A",
+   "text": "immigrants from southern and eastern Europe"
+  },
+  {
+   "key": "B",
+   "text": "immigrants from northern and western Europe",
+   "misconception": "The 1890 census counted many northern and western Europeans. Their quotas were the largest, not the tightest."
+  },
+  {
+   "key": "C",
+   "text": "immigrants from Canada and from Mexico",
+   "misconception": "The acts set no limits on immigration from countries in the Americas. Canadians and Mexicans faced no quota at all."
+  },
+  {
+   "key": "D",
+   "text": "immigrants with family in the United States",
+   "misconception": "Family ties did not set the quota. The law sorted people by national origin, not by family."
+  }
+ ],
+ "rationales": {
+  "A": "Background from the books: the 1924 act set each quota at 2 percent of that nationality in 1890, before the newer waves arrived. Southern and eastern Europeans counted least, so their quotas were smallest.",
+  "B": "The 1890 census counted many northern and western Europeans. Their quotas were the largest, not the tightest.",
+  "C": "The acts set no limits on immigration from countries in the Americas. Canadians and Mexicans faced no quota at all.",
+  "D": "Family ties did not set the quota. The law sorted people by national origin, not by family.",
+  "general": "1. Read the 1924 rule: 2 percent of each nationality counted in 1890.\n2. Ask who was scarce in 1890. Background: southern and eastern Europeans arrived mostly after 1890, so few were counted.\n3. Ask what a small 1890 count means: a small quota in 1924.\n4. Name the group: southern and eastern Europeans faced the tightest limits.\nRemember: a quota built on an old census favors whoever arrived early."
+ }
+}

@@ -1,0 +1,77 @@
+{
+  "id": "apush-mcq-2320",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.11"
+  ],
+  "lesson": "apush-u7-l4",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "3.A"
+  ],
+  "themes": [
+    "WOR",
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.11 Interwar Foreign Policy"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "Jazz Age and Great Depression (1920-1933)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus": {
+    "kind": "table",
+    "text": "Aggression by Japan, Italy, and Germany, 1931-1939.\n\n| 1931 | Japan seizes Manchuria from China |\n| 1935-1936 | Italy conquers Ethiopia |\n| 1936 | Germany sends troops into the demilitarized Rhineland |\n| 1938 | Germany annexes Austria; Britain and France accept Germany's claim to the Sudetenland at Munich |\n| 1939 | Germany occupies the rest of Czechoslovakia, then invades Poland in September |",
+    "source_note": "Dates from Barron's Premium 2027, Chapter 9, Topic 7.11, and 5 Steps to a 5 2024, Chapter 24. Barron's dates the annexation of Austria to 1937; the table uses 1938, the year of the Anschluss in March 1938."
+  },
+  "stimulus_set": "aggression-unopposed-1931-1939",
+  "source": "original; table from Barron's Premium 2027, Chapter 9, Topic 7.11, and 5 Steps to a 5 2024, Chapter 24",
+  "stem": "The table lists aggressions from 1931 to 1939. What was the League of Nations' response to them?",
+  "options": [
+    {
+      "key": "A",
+      "text": "It sent armies that drove the aggressors back",
+      "misconception": "No League army ever fought an aggressor in the 1930s."
+    },
+    {
+      "key": "B",
+      "text": "It protested but took no effective action"
+    },
+    {
+      "key": "C",
+      "text": "It expelled every aggressor at once",
+      "misconception": "Japan left the League itself; no aggressor was expelled and stopped."
+    },
+    {
+      "key": "D",
+      "text": "It asked the United States to lead its armies",
+      "misconception": "The United States was not a League member, so it could not lead League armies."
+    }
+  ],
+  "answerKey": "B",
+  "rationales": {
+    "A": "Background from the books: the League had no army and took no military action in the 1930s.",
+    "B": "The League protested each aggression, and none of the protests stopped the aggressor.",
+    "C": "Background from the books: Japan withdrew from the League in 1933 after the Manchuria dispute.",
+    "D": "Background from the books: the United States never joined the League of Nations.",
+    "general": "1. The table lists five aggressions: Manchuria, Ethiopia, the Rhineland, Austria, and Czechoslovakia.\n2. The League of Nations protested each one.\n3. It had no army, no enforcement power, and no American member to back it up.\n4. Every aggressor kept what it took, which showed collective security without power was only words.\nRemember: protest without power is only words."
+  }
+}

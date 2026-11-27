@@ -1,0 +1,89 @@
+{
+ "id": "apush-mcq-2084",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.3"
+ ],
+ "lesson": "apush-u7-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "D",
+ "skills": [
+  "2.A"
+ ],
+ "themes": [
+  "WXT",
+  "NAT"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "The Treaty of Paris"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 19",
+    "section": "The Spanish-American War"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Unit 7: The Early 20th Century (1890-1945)"
+   }
+  ],
+  "primary_sources": [
+   "Treaty of Paris, December 10, 1898"
+  ]
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "source_note": "Treaty of Paris, signed December 10, 1898, public domain (abridged); photograph: raising the American flag at the Government House, Honolulu, August 12, 1898, public domain.",
+  "text": "\"Article I. Spain relinquishes all claim of sovereignty over and title to Cuba. Article II. Spain cedes to the United States the island of Porto Rico and other islands now under Spanish sovereignty in the West Indies, and the island of Guam in the Marianas or Ladrones. Article III. Spain cedes to the United States the archipelago known as the Philippine Islands. . . .\" \u2014 Treaty of Paris, signed December 10, 1898 (abridged). Background from the books: the United States agreed to pay Spain $20 million for the Philippine Islands."
+ },
+ "stimulus_set": "treaty-hawaii-1898",
+ "source": "original; stimulus is a verbatim abridged excerpt from the Treaty of Paris, December 10, 1898, public domain, with a public-domain 1898 photograph",
+ "stem": "Which statement best captures the difference between what the treaty did to Cuba and what it did to the Philippines?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Cuba was annexed while the Philippines were freed",
+   "misconception": "The treaty does the opposite: it frees Cuba from Spain and hands the Philippines to the United States."
+  },
+  {
+   "key": "B",
+   "text": "Both Cuba and the Philippines were annexed by the United States",
+   "misconception": "Only the Philippines were ceded; Cuba was relinquished by Spain and left to be occupied, then freed."
+  },
+  {
+   "key": "C",
+   "text": "Both were left under Spanish rule",
+   "misconception": "Spain gave up Cuba entirely and ceded the Philippines; it kept neither."
+  },
+  {
+   "key": "D",
+   "text": "Cuba was freed from Spain while the Philippines were handed over"
+  }
+ ],
+ "rationales": {
+  "A": "The articles run the other way: Article I frees Cuba, and Article III cedes the Philippines.",
+  "B": "Cuba was not annexed. Spain relinquished it, and the United States occupied it until 1902.",
+  "C": "Spain kept neither island. It gave up Cuba and ceded the Philippines to the United States.",
+  "D": "Article I relinquishes Cuba; Article III cedes the Philippines. One island was freed, the other was handed over.",
+  "general": "1. Read Article I. Spain relinquishes all claim of sovereignty over Cuba.\n2. Read Article III. Spain cedes the Philippine Islands to the United States.\n3. Compare the verbs. Relinquish means let go; cede means hand over to a new owner, for $20 million.\nRemember: in a treaty, the verb is the act, so compare the verbs before you compare the places."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2084",
+   "file": "u6/5s24-ch19-mcq-04.jpg",
+   "caption": "Raising the American flag at the Government House, Honolulu, August 12, 1898.",
+   "alt": "A large crowd watches in front of a stone government building in Honolulu as the American flag is raised on a pole; the printed caption below the photograph reads \"Raising the American flag at the Government House, Honolulu.\"",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Raising_American_Flag_(1898).jpg",
+   "license": "Public domain (1898 photograph, pre-1930)"
+  }
+ ]
+}

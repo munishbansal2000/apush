@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-2171",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.6"
+ ],
+ "lesson": "apush-u7-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "B",
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "MIG",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.6 World War I: Home Front"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 21",
+    "section": "United States and World War I (1914-1921)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "The Progressive Era and World War I (1900-1920)"
+   }
+  ],
+  "primary_sources": [
+   "U.S. Census Bureau, Black population of selected cities, 1910 and 1920"
+  ]
+ },
+ "stimulus": {
+  "kind": "table",
+  "text": "Black population of selected northern cities, 1910 and 1920:\n\n| City | Black population, 1910 | Black population, 1920 |\n| New York | 91,709 | 152,467 |\n| Philadelphia | 84,459 | 134,229 |\n| Chicago | 44,103 | 109,458 |\n| Detroit | 5,741 | 40,838 |\n| Cleveland | 8,448 | 34,451 |\n\nSource: U.S. Census Bureau, as reported by the National Park Service.",
+  "source_note": "Data: U.S. Census Bureau, Black population of selected cities, 1910 and 1920, as reported by the National Park Service."
+ },
+ "stimulus_set": "great-migration",
+ "source": "original; stimulus data from the U.S. Census Bureau, as reported by the National Park Service",
+ "stem": "According to the table, which city had the largest Black population in both 1910 and 1920?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Chicago",
+   "misconception": "Chicago grew fast, but its 1910 population of 44,103 was smaller than New York's 91,709."
+  },
+  {
+   "key": "B",
+   "text": "New York"
+  },
+  {
+   "key": "C",
+   "text": "Detroit",
+   "misconception": "Detroit had the smallest 1910 population in the table, 5,741."
+  },
+  {
+   "key": "D",
+   "text": "Cleveland",
+   "misconception": "Cleveland's 1910 population was 8,448, far below New York's 91,709."
+  }
+ ],
+ "rationales": {
+  "A": "Chicago grew fast, but its 1910 population of 44,103 was smaller than New York's 91,709.",
+  "B": "New York had 91,709 Black residents in 1910 and 152,467 in 1920, the largest figure in the table in both years.",
+  "C": "Detroit had the smallest 1910 population in the table, 5,741.",
+  "D": "Cleveland's 1910 population was 8,448, far below New York's 91,709.",
+  "general": "1. Read the 1910 column and find the largest number. It is New York, 91,709.\n2. Read the 1920 column the same way. New York is largest again, at 152,467.\n3. Note the difference the table tests. Fast growth is not the same as the largest size, so check the numbers, not the story.\n4. Answer with the city that leads in both years.\nRemember: for a table question, read the column the question names before you look at the options."
+ }
+}

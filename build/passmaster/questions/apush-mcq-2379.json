@@ -1,0 +1,76 @@
+{
+  "id": "apush-mcq-2379",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.13"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "2.B"
+  ],
+  "themes": [
+    "WOR"
+  ],
+  "reasoning": "continuity-change",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.13 World War II: Military"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "New Deal and WWII (1934-1945)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus": {
+    "kind": "text",
+    "text": "Paraphrase: In December 1944, German forces made one last desperate attack in the Ardennes region of Belgium, pushing a bulge into the Allied lines in what became known as the Battle of the Bulge. American counterattacks under General George S. Patton halted the advance, at a cost of more than 85,000 American troops killed, wounded, or captured. In the spring of 1945, Allied troops crossed the Rhine in March, and Soviet troops stormed Berlin in April. Hitler killed himself on April 30, and Germany surrendered on May 8, 1945, a day celebrated as V-E Day, Victory in Europe Day.",
+    "source_note": "Original secondary summary drawn from 5 Steps Chapter 24 (Battle of the Bulge; 85,000 American casualties; Rhine March 1945; Hitler's suicide April 30; surrender May 8, V-E Day) and Barron's Chapter 9."
+  },
+  "stimulus_set": "bulge-surrender-1945",
+  "source": "original; stimulus drawn from book-grounded figures and paraphrases (see source_note)",
+  "stem": "Why did the Battle of the Bulge fail to change the outcome of the war in Europe?",
+  "options": [
+    {
+      "key": "A",
+      "text": "German troops never actually attacked the Allied lines",
+      "misconception": "German troops did attack, in December 1944, and pushed a bulge into the lines."
+    },
+    {
+      "key": "B",
+      "text": "American counterattacks stopped the advance, and the Allies kept advancing"
+    },
+    {
+      "key": "C",
+      "text": "The Soviet Union surrendered to Germany during that winter",
+      "misconception": "The Soviet Union was advancing on Berlin, not surrendering."
+    },
+    {
+      "key": "D",
+      "text": "The Allies withdrew from Europe entirely after the battle",
+      "misconception": "The Allies crossed the Rhine in March 1945, months after the battle."
+    }
+  ],
+  "answerKey": "B",
+  "rationales": {
+    "A": "German troops did attack in December 1944.",
+    "B": "American counterattacks stopped the advance, and the Allies kept advancing.",
+    "C": "The Soviet Union was advancing on Berlin, not surrendering.",
+    "D": "The Allies crossed the Rhine in March 1945.",
+    "general": "1. The passage calls the attack Germany's last desperate attempt to stop the Allied advance.\n2. American counterattacks under Patton halted the Germans, at heavy cost.\n3. Background from the books: by spring, Allied troops had crossed the Rhine and Soviet troops were in Berlin.\n4. A last attack that fails does not reverse a war already being lost.\nRemember: a last gamble that fails confirms the outcome, so ask what happened next."
+  }
+}

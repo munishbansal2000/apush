@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-2086",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.3"
+ ],
+ "lesson": "apush-u7-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "answerKey": "D",
+ "skills": [
+  "6.B"
+ ],
+ "themes": [
+  "NAT",
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Cuba and the Platt Amendment"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 19",
+    "section": "The Spanish-American War"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Unit 7: The Early 20th Century (1890-1945)"
+   }
+  ],
+  "primary_sources": [
+   "Platt Amendment, March 2, 1901"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Platt Amendment, Army Appropriations Act, approved March 2, 1901, public domain (abridged).",
+  "text": "\"Article III. The Government of Cuba consents that the United States may exercise the right to intervene for the preservation of Cuban independence, the maintenance of a government adequate for the protection of life, property, and individual liberty, and for discharging the obligations with respect to Cuba imposed by the Treaty of Paris on the United States. . . . Article VII. To enable the United States to maintain the independence of Cuba, and to protect the people thereof, as well as for its own defense, the Government of Cuba will sell or lease to the United States lands necessary for coaling or naval stations, at certain specified points, to be agreed upon with the President of the United States.\" \u2014 Platt Amendment, March 2, 1901 (abridged)"
+ },
+ "stimulus_set": "platt-amendment-1901",
+ "source": "original; stimulus is a verbatim abridged excerpt from the Platt Amendment, March 2, 1901, public domain",
+ "stem": "The Platt Amendment is best understood as a limit on Cuban independence because it",
+ "options": [
+  {
+   "key": "A",
+   "text": "Gave Cuba a seat in the U.S. Senate",
+   "misconception": "Cuba never had a seat in the Senate; it was not a state and had no representation in Congress."
+  },
+  {
+   "key": "B",
+   "text": "Ended the American military government in Cuba at once in 1901",
+   "misconception": "The amendment was a condition for ending the occupation, but the occupation ended in 1902, after Cuba accepted it."
+  },
+  {
+   "key": "C",
+   "text": "Made Cuba a state",
+   "misconception": "Cuba never became a state; it became independent in name, with American limits on that independence."
+  },
+  {
+   "key": "D",
+   "text": "Let Washington judge interventions and bar Cuba from treaties limiting its independence"
+  }
+ ],
+ "rationales": {
+  "A": "Cuba had no Senate seat and no vote in Congress. It was a separate country, not a state.",
+  "B": "Background from the books: the United States kept a military government in Cuba until 1902, after Cuba wrote the amendment into its constitution in 1901.",
+  "C": "Cuba never became a state. The amendment made its independence conditional, not American.",
+  "D": "Article III lets Washington judge when to intervene. Background from the books: Article I also bars Cuba from treaties that impair its independence.",
+  "general": "1. Read Article III. The United States may intervene when it judges Cuban independence or order is at risk.\n2. Add Article I from the books. Background: Cuba may not sign treaties that impair its independence or let a foreign power lodge on the island.\n3. Add them up. Washington judges the need, and Havana cannot make its own foreign policy freely.\nRemember: independence with someone else holding the veto is limited independence, so find who holds the veto."
+ }
+}

@@ -1,0 +1,88 @@
+{
+  "id": "apush-mcq-2392",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.14"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "3.A"
+  ],
+  "themes": [
+    "WOR"
+  ],
+  "reasoning": "continuity-change",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.14 Postwar Diplomacy"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "New Deal and WWII (1934-1945)"
+      }
+    ],
+    "primary_sources": [
+      "Photograph of Churchill, Roosevelt, and Stalin at Yalta, February 1945"
+    ]
+  },
+  "stimulus": {
+    "kind": "image",
+    "text": "Photograph of the three Allied leaders seated together on the patio of the Livadia Palace at Yalta, Crimea, in February 1945. From left to right: British Prime Minister Winston Churchill, in a heavy overcoat and holding a cigar; President Franklin Roosevelt, in the center, smiling; and Soviet leader Joseph Stalin, in a light-colored military tunic. Military advisers stand behind them, and ornate rugs lie under their chairs.",
+    "source_note": "Photograph by a U.S. Army Signal Corps photographer, February 9, 1945, Livadia Palace, Yalta (NARA 111-SC-260486). Public domain as a work of the U.S. federal government. Viewed before use."
+  },
+  "stimulus_set": "yalta-photo-1945",
+  "source": "original; stimulus drawn from book-grounded paraphrases, tables, and photographs (see source_note)",
+  "stem": "What does the date of the photograph tell a historian about the meeting?",
+  "options": [
+    {
+      "key": "A",
+      "text": "The leaders met after Germany had already surrendered",
+      "misconception": "Germany surrendered in May 1945, three months after Yalta."
+    },
+    {
+      "key": "B",
+      "text": "The leaders met before the United States entered the war",
+      "misconception": "The United States had been at war since December 1941."
+    },
+    {
+      "key": "C",
+      "text": "The leaders met to celebrate the founding of the United Nations",
+      "misconception": "The United Nations Charter was signed at San Francisco in June 1945, after Yalta."
+    },
+    {
+      "key": "D",
+      "text": "The leaders met while the war still raged to plan the peace"
+    }
+  ],
+  "answerKey": "D",
+  "rationales": {
+    "A": "Background from the books: Germany surrendered in May 1945, three months after Yalta.",
+    "B": "Background from the books: the United States had been at war since December 1941.",
+    "C": "Background from the books: the United Nations Charter was signed at San Francisco in June 1945, after Yalta.",
+    "D": "Yalta met in February 1945, months before Germany surrendered in May, so the leaders were planning the peace while still fighting the war.",
+    "general": "1. The photograph was taken in February 1945 at Yalta.\n2. Background: Germany did not surrender until May 1945, and Japan fought on until September.\n3. The leaders were therefore deciding the shape of the peace before the war was won.\n4. That timing matters: promises made at Yalta had to survive the fighting that followed.\nRemember: the date of a meeting tells you what its leaders could and could not yet know."
+  },
+  "figures": [
+    {
+      "file": "u7/yalta-big-three-1945.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Yalta_Conference_(Churchill,_Roosevelt,_Stalin)_(B%26W).jpg",
+      "license": "Public domain (U.S. Army Signal Corps photograph, February 1945; NARA 111-SC-260486)",
+      "caption": "Churchill, Roosevelt, and Stalin at Yalta, February 1945.",
+      "alt": "Three men seated side by side on a palace patio: Churchill in a heavy coat on the left, Roosevelt smiling in the center, Stalin in a light tunic on the right, with uniformed advisers standing behind them.",
+      "id": "fig-apush-mcq-2392"
+    }
+  ]
+}

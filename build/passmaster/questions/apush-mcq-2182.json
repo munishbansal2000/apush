@@ -1,0 +1,89 @@
+{
+ "id": "apush-mcq-2182",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.6"
+ ],
+ "lesson": "apush-u7-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "C",
+ "skills": [
+  "4.B"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.6 World War I: Home Front"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 21",
+    "section": "United States and World War I (1914-1921)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "The Progressive Era and World War I (1900-1920)"
+   }
+  ],
+  "primary_sources": [
+   "Charles Gustrine, \"True Sons of Freedom\" poster, 1918"
+  ]
+ },
+ "stimulus": {
+  "kind": "image",
+  "text": "The poster shows Black American soldiers in uniform charging forward with rifles and bayonets under an American flag, as German soldiers surrender on the right. A portrait of Abraham Lincoln looks on from the upper right, beside the words \"Liberty And Freedom Shall Not Perish\" — A. Lincoln. Text on the left reads: \"COLORED MEN / The First Americans / Who Planted / Our Flag / on the Firing Line.\" At the bottom: \"TRUE SONS OF FREEDOM.\" The poster was drawn by Charles Gustrine in 1918.",
+  "source_note": "Poster by Charles Gustrine, 1918, public domain (Library of Congress LCCN93503146). The 'Liberty And Freedom Shall Not Perish — A. Lincoln' line is the poster's own wording, a paraphrase of the Gettysburg Address, not a documented Lincoln quotation."
+ },
+ "stimulus_set": "true-sons-of-freedom",
+ "source": "original; stimulus image from the shared pool, Charles Gustrine poster, 1918, public domain",
+ "stem": "The poster appeals to Lincoln and to the first Black soldiers to suggest that Black military service would",
+ "options": [
+  {
+   "key": "A",
+   "text": "end segregation in the armed forces at once",
+   "misconception": "Background from the books: Black soldiers served in segregated units with mostly white officers; service did not end segregation."
+  },
+  {
+   "key": "B",
+   "text": "give Black men voting rights in every state",
+   "misconception": "Military service did not by itself give Black men the vote in every state."
+  },
+  {
+   "key": "C",
+   "text": "earn Black Americans fuller recognition as citizens"
+  },
+  {
+   "key": "D",
+   "text": "bring back the draft after the war",
+   "misconception": "The poster is about serving in this war, not about keeping the draft after it."
+  }
+ ],
+ "rationales": {
+  "A": "Background from the books: Black soldiers served in segregated units with mostly white officers; service did not end segregation.",
+  "B": "Military service did not by itself give Black men the vote in every state.",
+  "C": "Lincoln and the first Black soldiers stand for freedom earned by service, and the poster promises that this service will prove Black men worthy of full citizenship.",
+  "D": "The poster is about serving in this war, not about keeping the draft after it.",
+  "general": "1. Find the two appeals. Lincoln freed the slaves, and Black soldiers fought in the Civil War.\n2. Ask what the poster links them to. It links past service to present service, and service to freedom.\n3. Name the promise. Service now will earn fuller recognition as citizens.\nRemember: when a poster reaches back to history, ask what it promises for the present."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2182",
+   "file": "u7/true-sons-of-freedom-1918.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:True_sons_of_freedom_LCCN93503146.jpg",
+   "license": "Public domain (published 1918, pre-1930)",
+   "caption": "Black soldiers charge under the flag as Lincoln looks on, with the words “True Sons of Freedom.”",
+   "alt": "A poster of Black American soldiers charging with rifles under an American flag, German soldiers surrendering, and a portrait of Abraham Lincoln."
+  }
+ ]
+}

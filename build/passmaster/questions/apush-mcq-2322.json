@@ -1,0 +1,77 @@
+{
+  "id": "apush-mcq-2322",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.11"
+  ],
+  "lesson": "apush-u7-l4",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 4,
+  "skills": [
+    "5.B"
+  ],
+  "themes": [
+    "WOR",
+    "PCE"
+  ],
+  "reasoning": "continuity-change",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.11 Interwar Foreign Policy"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "Jazz Age and Great Depression (1920-1933)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus": {
+    "kind": "table",
+    "text": "Aggression by Japan, Italy, and Germany, 1931-1939.\n\n| 1931 | Japan seizes Manchuria from China |\n| 1935-1936 | Italy conquers Ethiopia |\n| 1936 | Germany sends troops into the demilitarized Rhineland |\n| 1938 | Germany annexes Austria; Britain and France accept Germany's claim to the Sudetenland at Munich |\n| 1939 | Germany occupies the rest of Czechoslovakia, then invades Poland in September |",
+    "source_note": "Dates from Barron's Premium 2027, Chapter 9, Topic 7.11, and 5 Steps to a 5 2024, Chapter 24. Barron's dates the annexation of Austria to 1937; the table uses 1938, the year of the Anschluss in March 1938."
+  },
+  "stimulus_set": "aggression-unopposed-1931-1939",
+  "source": "original; table from Barron's Premium 2027, Chapter 9, Topic 7.11, and 5 Steps to a 5 2024, Chapter 24",
+  "stem": "Germany invaded Poland in September 1939, and Britain and France declared war. Why did the aggressions in the table lead to war in 1939, when earlier ones had not?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Poland was the first country Germany had attacked",
+      "misconception": "Japan, Italy, and Germany had all seized land before Poland."
+    },
+    {
+      "key": "B",
+      "text": "The League of Nations had finally built an army",
+      "misconception": "The League never built an army."
+    },
+    {
+      "key": "C",
+      "text": "Britain and France finally drew a line at Poland"
+    },
+    {
+      "key": "D",
+      "text": "The United States had joined the war by then",
+      "misconception": "The United States entered the war only after Pearl Harbor in 1941."
+    }
+  ],
+  "answerKey": "C",
+  "rationales": {
+    "A": "Background from the books: Manchuria, Ethiopia, Austria, and Czechoslovakia all came before Poland.",
+    "B": "Background from the books: the League of Nations never had an army.",
+    "C": "After Munich failed, Britain and France guaranteed Poland, and the invasion crossed the line they had drawn.",
+    "D": "Background from the books: the United States stayed neutral until December 1941.",
+    "general": "1. The table shows eight years of aggression met with protests and concessions.\n2. Munich in 1938 was the last concession, and Germany broke it by taking Czechoslovakia in 1939.\n3. Britain and France then guaranteed Poland, drawing a clear line.\n4. When Germany invaded Poland in September 1939, the guarantee turned the line into war.\nRemember: deterrence works only when the line is clear before it is crossed."
+  }
+}

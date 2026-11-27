@@ -1,0 +1,77 @@
+{
+  "id": "apush-mcq-2354",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.13"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "3.A"
+  ],
+  "themes": [
+    "WOR",
+    "GEO"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.13 World War II: Military"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "New Deal and WWII (1934-1945)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus": {
+    "kind": "table",
+    "text": "American losses in the Japanese attack on Pearl Harbor, December 7, 1941.\n\n| Americans killed | 2,403 |\n| Americans wounded | 1,178 |\n| Battleships sunk or damaged | 8 |\n| Aircraft destroyed | 188 |\n| Japanese aircraft lost | 29 |",
+    "source_note": "Figures from the Department of Defense 50th Anniversary of World War II Commemorative Committee summary of the attack, corroborated by the 5 Steps day-item record (2,403 killed, 1,178 wounded). All eight battleships present were damaged, four sunk; six returned to service during the war."
+  },
+  "stimulus_set": "pearl-harbor-losses-1941",
+  "source": "original; stimulus drawn from book-grounded figures and paraphrases (see source_note)",
+  "stem": "The table shows heavy losses to battleships and aircraft, yet the attack failed to cripple the American war effort in the Pacific. Which of the following best explains why?",
+  "options": [
+    {
+      "key": "A",
+      "text": "The aircraft carriers were at sea, and the fuel stores and repair yards survived"
+    },
+    {
+      "key": "B",
+      "text": "Japan sank only old battleships, while the newest American ships were in the Atlantic",
+      "misconception": "The carriers, not the battleships, became the decisive ships of the Pacific war."
+    },
+    {
+      "key": "C",
+      "text": "The attack destroyed the submarine base, but submarines played no role in the Pacific war",
+      "misconception": "The submarine base was not destroyed, and American submarines later strangled Japan's supply lines."
+    },
+    {
+      "key": "D",
+      "text": "Japan captured the Hawaiian Islands, but the islands had no military value",
+      "misconception": "Japan never captured Hawaii; the attack was a raid, and the islands stayed in American hands."
+    }
+  ],
+  "answerKey": "A",
+  "rationales": {
+    "A": "The carriers were at sea, and the untouched fuel and repair yards let the fleet recover.",
+    "B": "The age of the battleships mattered less than the survival of the carriers.",
+    "C": "The submarine base survived, and submarines later cut Japan off from oil and supplies.",
+    "D": "Japan never captured Hawaii; its planes struck and left, and the base stayed American.",
+    "general": "1. The table counts battleships and planes, but it does not list aircraft carriers.\n2. Background from the books: the carriers were at sea on December 7, and the attack left the fuel stores and repair yards standing.\n3. Carriers became the decisive ships of the Pacific war, and the surviving yards repaired the damaged fleet.\n4. So the attack hurt the fleet badly without destroying its ability to fight back.\nRemember: when judging an attack, ask what it missed, not only what it hit."
+  }
+}

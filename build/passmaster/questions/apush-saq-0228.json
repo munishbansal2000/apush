@@ -1,0 +1,91 @@
+{
+  "id": "apush-saq-0228",
+  "type": "saq",
+  "unit": 7,
+  "topics": [
+    "7.12"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "test",
+  "difficulty": 3,
+  "skills": [
+    "3.A",
+    "5.A"
+  ],
+  "themes": [
+    "WXT",
+    "SOC"
+  ],
+  "reasoning": "continuity-change",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.12 World War II: Mobilization"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "New Deal and WWII (1934-1945)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus": {
+    "kind": "table",
+    "text": "Women in the paid workforce, 1940 and 1945.\n\n| 1940 | About 12 million women employed |\n| 1945 | More than 19 million women employed |",
+    "source_note": "Figures from standard histories of wartime mobilization: about 12 million women in the labor force in 1940 and over 19 million employed by 1945, with about six million new women workers during the war."
+  },
+  "stimulus_set": null,
+  "source": "original; stimulus table drawn from standard histories of wartime mobilization",
+  "saq_slot": 3,
+  "totalPoints": 3,
+  "parts": [
+    {
+      "part": "a",
+      "points": 1,
+      "prompt": "Identify the change shown in the table.",
+      "modelAnswer": "The number of women in the paid workforce rose sharply during the war. It grew from about 12 million in 1940 to more than 19 million in 1945, a rise of about seven million.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Names the rise in women's paid employment from about 12 million to more than 19 million.",
+          "notEarned": "A vague statement that women worked, with no change from the table named."
+        }
+      ]
+    },
+    {
+      "part": "b",
+      "points": 1,
+      "prompt": "Explain ONE cause of the change shown in the table.",
+      "modelAnswer": "Millions of men left their jobs for the military, so war plants faced a labor shortage. The government recruited women for industrial work, and about six million women entered the workforce or returned to it.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Explains a specific cause, such as the wartime labor shortage or government recruitment of women.",
+          "notEarned": "Restating that more women worked, with no cause given."
+        }
+      ]
+    },
+    {
+      "part": "c",
+      "points": 1,
+      "prompt": "Explain ONE limit on how much wartime work changed women's long-term position.",
+      "modelAnswer": "Most women were urged to give up their factory jobs to returning veterans once the war ended. Women in war plants were also often paid less than men for the same work, so the wartime opening did not bring equality.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Explains a specific limit, such as women being pushed out of jobs after the war or lower pay than men.",
+          "notEarned": "A vague statement that change was limited, with no specific limit named."
+        }
+      ]
+    }
+  ]
+}

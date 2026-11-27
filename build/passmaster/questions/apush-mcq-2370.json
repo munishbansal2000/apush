@@ -1,0 +1,76 @@
+{
+  "id": "apush-mcq-2370",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.13"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "3.B"
+  ],
+  "themes": [
+    "WOR"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.13 World War II: Military"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "New Deal and WWII (1934-1945)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus": {
+    "kind": "text",
+    "text": "Paraphrase: On June 6, 1944, Allied forces under General Dwight D. Eisenhower carried out the D-Day landings on the beaches of Normandy, France, the largest amphibious landing of its time. Casualties were heavy, but the landing succeeded, and by the end of July more than two million Allied troops were crowded into the beachhead. After a breakout in late July, Allied forces swept across France, and Paris was liberated in August 1944. At the same time, Soviet armies drove German forces back toward Germany from the east.",
+    "source_note": "Original secondary summary drawn from 5 Steps Chapter 24 (D-Day; Paris liberated in August; over 2 million troops by end of July) and Barron's Chapter 9 ('D-Day and the Allied Assault on Europe')."
+  },
+  "stimulus_set": "d-day-normandy-1944",
+  "source": "original; stimulus drawn from book-grounded figures and paraphrases (see source_note)",
+  "stem": "Why was the liberation of Paris in August 1944 important beyond the city itself?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Paris was the capital city of Germany itself",
+      "misconception": "Paris was the capital of France; Berlin was the capital of Germany."
+    },
+    {
+      "key": "B",
+      "text": "Paris held the only port that the Allies could use",
+      "misconception": "The Allies used ports in Normandy and elsewhere; Paris is not a port."
+    },
+    {
+      "key": "C",
+      "text": "It showed German control of France collapsing after the Normandy breakout"
+    },
+    {
+      "key": "D",
+      "text": "It ended the war in Europe during that same month",
+      "misconception": "The war in Europe lasted until May 1945, nine months later."
+    }
+  ],
+  "answerKey": "C",
+  "rationales": {
+    "A": "Paris was the capital of France; Berlin was Germany's capital.",
+    "B": "The Allies used Normandy ports; Paris is inland, not a port.",
+    "C": "Paris fell weeks after the breakout, showing German control of France collapsing.",
+    "D": "The war in Europe lasted until May 1945.",
+    "general": "1. The passage says Paris was liberated in August 1944, weeks after the breakout.\n2. A capital falls when the army defending it can no longer hold the country.\n3. Background from the books: Allied forces then swept across France toward Germany.\n4. So Paris marked the collapse of German rule in France, not just the loss of one city.\nRemember: a capital's fall signals the collapse of control, so read it as a turning point."
+  }
+}

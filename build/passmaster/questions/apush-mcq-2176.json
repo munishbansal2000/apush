@@ -1,0 +1,89 @@
+{
+ "id": "apush-mcq-2176",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.6"
+ ],
+ "lesson": "apush-u7-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "B",
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.6 World War I: Home Front"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 21",
+    "section": "United States and World War I (1914-1921)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "The Progressive Era and World War I (1900-1920)"
+   }
+  ],
+  "primary_sources": [
+   "John E. Sheridan, \"Food is Ammunition—Don't waste it\" poster, 1917"
+  ]
+ },
+ "stimulus": {
+  "kind": "image",
+  "text": "The poster shows a large basket of vegetables and fruit in the foreground. Behind it, the silhouettes of soldiers on horseback appear under an American flag. Large lettering reads: \"Food is Ammunition — Don't waste it.\" Small print at the bottom reads: \"UNITED STATES FOOD ADMINISTRATION.\" The poster was drawn by John E. Sheridan in 1917.",
+  "source_note": "Poster by John E. Sheridan, 1917, U.S. Food Administration, public domain."
+ },
+ "stimulus_set": "food-ammunition",
+ "source": "original; stimulus image from the shared pool, John E. Sheridan poster, 1917, public domain",
+ "stem": "The poster reflects the Food Administration's policy of",
+ "options": [
+  {
+   "key": "A",
+   "text": "rationing every family's food with government cards",
+   "misconception": "Background from the books: food conservation in World War I was voluntary, not rationed with cards; ration cards came in World War II."
+  },
+  {
+   "key": "B",
+   "text": "asking Americans to conserve food voluntarily"
+  },
+  {
+   "key": "C",
+   "text": "banning civilian sales of wheat and meat",
+   "misconception": "The Food Administration urged Wheatless Mondays and Meatless Tuesdays; it did not ban selling wheat and meat."
+  },
+  {
+   "key": "D",
+   "text": "taking over all American farms",
+   "misconception": "The Food Administration regulated production and asked for conservation; it did not take over the farms."
+  }
+ ],
+ "rationales": {
+  "A": "Background from the books: food conservation in World War I was voluntary, not rationed with cards; ration cards came in World War II.",
+  "B": "Under Herbert Hoover, the Food Administration asked families to save food on their own, with Wheatless Mondays and Meatless Tuesdays.",
+  "C": "The Food Administration urged Wheatless Mondays and Meatless Tuesdays. It did not ban selling wheat and meat.",
+  "D": "The Food Administration regulated production and asked for conservation. It did not take over the farms.",
+  "general": "1. Ask what the poster does: it asks, in the words \"Don't waste it.\"\n2. Ask what it does not do: it sets no rule, no card, and no penalty.\n3. Name that approach. It is voluntary conservation, the Food Administration's method under Hoover.\nRemember: an appeal is not a law, so ask whether the government is asking or ordering."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2176",
+   "file": "u7/food-is-ammunition-1917.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:John_E_Sheridan_WWI_US_Food_is_Ammunition_Dont_Waste_it.jpg",
+   "license": "Public domain (U.S. federal government poster, 1917)",
+   "caption": "A basket of vegetables and fruit below silhouetted soldiers, with the words “Food is Ammunition—Don’t waste it.”",
+   "alt": "A poster showing a basket full of vegetables and fruit, soldiers on horseback under an American flag, and the words Food is Ammunition, Don't waste it."
+  }
+ ]
+}

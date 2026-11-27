@@ -1,0 +1,88 @@
+{
+ "id": "apush-mcq-2129",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.5"
+ ],
+ "lesson": "apush-u7-l2",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "answerKey": "B",
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.5 World War I: Military and Diplomacy"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 21",
+    "section": "United States and World War I (1914-1921)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "The Progressive Era and World War I (1900-1920)"
+   }
+  ],
+  "primary_sources": [
+   "British Parliamentary Recruiting Committee, \"Remember the Lusitania\" poster, 1915"
+  ]
+ },
+ "stimulus": {
+  "kind": "image",
+  "source_note": "British Parliamentary Recruiting Committee poster, 1915 (public domain; Library of Congress cph.3g10930). Text quoted from the poster itself.",
+  "text": "British recruiting poster, 1915. Large red letters at the top read \"REMEMBER THE 'LUSITANIA'\". Below, smaller print quotes a jury's verdict: the dead \"died from their prolonged immersion and exhaustion in the sea eight miles south-south-west of the Old Head of Kinsale on Friday, May 7th, 1915, owing to the sinking of the R.M.S. 'Lusitania' by a torpedo fired without warning from a German submarine.\" The verdict calls the sinking a crime \"contrary to international law\" and charges \"the officers of the said submarine and the Emperor and Government of Germany\" with \"wilful and wholesale murder.\" Large red letters at the bottom read \"IT IS YOUR DUTY TO TAKE UP THE SWORD OF JUSTICE TO AVENGE THIS DEVIL'S WORK\" and \"ENLIST TO-DAY\". Small print at the bottom names the Parliamentary Recruiting Committee, London."
+ },
+ "stimulus_set": "lusitania-poster",
+ "source": "original; stimulus quoted from the British Parliamentary Recruiting Committee poster, 1915",
+ "stem": "The jury's verdict quoted on the poster most directly supports the claim that the sinking of the Lusitania",
+ "options": [
+  {
+   "key": "A",
+   "text": "was an accident caused by bad weather in the Irish Sea",
+   "misconception": "The verdict says the ship was sunk by a torpedo fired without warning. Weather is not mentioned anywhere on the poster."
+  },
+  {
+   "key": "B",
+   "text": "broke the accepted rules of war at sea"
+  },
+  {
+   "key": "C",
+   "text": "killed more British soldiers than any battle of 1915",
+   "misconception": "Background from the books: the Lusitania carried civilians, not soldiers, and the poster gives no battle comparison. The verdict is about how the ship sank, not about battle deaths."
+  },
+  {
+   "key": "D",
+   "text": "was ordered by the British government to draw America into the war",
+   "misconception": "The poster blames Germany, not Britain. Nothing on it suggests the British government ordered its own ship sunk."
+  }
+ ],
+ "rationales": {
+  "A": "The verdict says the ship was sunk by a torpedo fired without warning. Weather is not mentioned anywhere on the poster.",
+  "B": "The verdict calls the sinking a crime contrary to international law and the conventions of all civilized nations. That is a claim that Germany broke the accepted rules of war at sea.",
+  "C": "Background from the books: the Lusitania carried civilians, not soldiers, and the poster gives no battle comparison. The verdict is about how the ship sank, not about battle deaths.",
+  "D": "The poster blames Germany, not Britain. Nothing on it suggests the British government ordered its own ship sunk.",
+  "general": "1. Read the verdict as a legal charge. It says the sinking was contrary to international law.\n2. Note the detail that makes it a crime. The torpedo was fired without warning, so passengers had no chance to escape.\n3. Check what the verdict does not say. It says nothing about weather, soldiers, or a British order.\nRemember: when a source quotes a verdict, the crime it names is the claim the source is asking you to accept."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2129",
+   "file": "u7/5s24-ch21-mcq-04.jpg",
+   "source_url": "https://commons.wikimedia.org/wiki/File:British_Lusitania_poster_1915_LOC_cph.3g10930.jpg",
+   "license": "Public domain (published 1915, pre-1930); Library of Congress cph.3g10930",
+   "caption": "British recruiting poster, \"Remember the Lusitania,\" 1915.",
+   "alt": "A British poster with large red letters reading Remember the Lusitania, a quoted jury verdict about the sinking, and a call to enlist today."
+  }
+ ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "apush-mcq-2326",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.12"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 4,
+  "skills": [
+    "3.B"
+  ],
+  "themes": [
+    "WXT",
+    "WOR"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.12 World War II: Mobilization"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "New Deal and WWII (1934-1945)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus": {
+    "kind": "table",
+    "text": "United States aircraft production, 1940-1944 (number of aircraft built each year).\n\n| 1940 | 6,086 |\n| 1941 | 19,433 |\n| 1942 | 47,836 |\n| 1943 | 85,898 |\n| 1944 | 96,318 |",
+    "source_note": "Figures from The Army Air Forces in World War II, vol. VI, chapter 10 (official U.S. government history). Total wartime production was nearly 300,000 military aircraft."
+  },
+  "stimulus_set": "war-production-board-1942",
+  "source": "original; stimulus table from The Army Air Forces in World War II, vol. VI, ch. 10",
+  "stem": "The table best supports which of the following conclusions about the American economy during the war?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Aircraft production grew by the same amount every year",
+      "misconception": "The yearly jumps differ: about 13,000, then 28,000, then 38,000, then 10,000."
+    },
+    {
+      "key": "B",
+      "text": "The United States built most of its aircraft before Pearl Harbor",
+      "misconception": "Only about 25,000 of the 1940-1944 total were built before December 1941."
+    },
+    {
+      "key": "C",
+      "text": "Aircraft production peaked in 1942 and then declined",
+      "misconception": "Production kept rising after 1942 and peaked in 1944."
+    },
+    {
+      "key": "D",
+      "text": "American industry expanded output many times over within four years"
+    }
+  ],
+  "answerKey": "D",
+  "rationales": {
+    "A": "The table shows uneven jumps, not equal ones: the rise from 1943 to 1944 is far smaller than the rise from 1941 to 1942.",
+    "B": "Production in 1940 and 1941 together was about 25,000 planes, a small share of the five-year total.",
+    "C": "The numbers rise every year in the table, from 47,836 in 1942 to 96,318 in 1944.",
+    "D": "Output rose from about 6,000 planes in 1940 to about 96,000 in 1944, roughly sixteen times as many.",
+    "general": "1. Read the first and last rows: about 6,000 planes in 1940 and about 96,000 in 1944.\n2. Divide the two: 1944 output was roughly sixteen times the 1940 output.\n3. The middle years climb every year, so the rise was steady growth, not one lucky year.\n4. A sixteenfold rise in four years means industry expanded on a scale peacetime never saw.\nRemember: to judge growth, compare the first and last values, then check the years between them."
+  }
+}

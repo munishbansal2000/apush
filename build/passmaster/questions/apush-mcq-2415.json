@@ -1,0 +1,78 @@
+{
+  "id": "apush-mcq-2415",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.15"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "test",
+  "difficulty": 4,
+  "skills": [
+    "2.A",
+    "3.C"
+  ],
+  "themes": [
+    "PCE",
+    "SOC"
+  ],
+  "reasoning": "comparison",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.6 World War I: Home Front"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 21",
+        "section": "United States and World War I (1914-1921)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "New Deal and WWII (1934-1945)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus_set": "world-wars-home-front",
+  "stimulus": {
+    "kind": "text",
+    "text": "Passage 1 - the Espionage Act of 1917, paraphrased: During World War I, Congress made it a crime to interfere with military recruiting or to speak against the war effort, and the government jailed critics, including the Socialist leader Eugene V. Debs. In Schenck v. United States (1919), the Supreme Court upheld the convictions, saying speech that created a \"clear and present danger\" could be punished.\n\nPassage 2 - Executive Order 9066, February 1942, paraphrased: During World War II, President Roosevelt ordered the removal of about 120,000 Japanese Americans, most of them citizens, from the West Coast to camps in the interior. In Korematsu v. United States (1944), the Supreme Court upheld the order, saying wartime necessity justified it.",
+    "source_note": "Paraphrases of the Espionage Act (1917) and Executive Order 9066 (1942), drawn from Barron's Premium 2027, Chapter 9, Topics 7.6 and 7.12, and 5 Steps to a 5, 2024, Chapters 21 and 24. The 1917 and 1942 measures are paraphrased, not quoted verbatim, except for the short phrase from Schenck."
+  },
+  "source": "original; stimulus drawn from book-grounded paraphrases, tables, and photographs (see source_note)",
+  "stem": "What was the main difference between the two wartime actions in the passages?",
+  "options": [
+    {
+      "key": "A",
+      "text": "The 1917 law applied in wartime, while the 1942 order applied only in peacetime",
+      "misconception": "The 1942 order was a wartime order, issued months after Pearl Harbor."
+    },
+    {
+      "key": "B",
+      "text": "The 1917 law freed all prisoners, while the 1942 order created new federal courts",
+      "misconception": "Neither passage says prisoners were freed or new courts created."
+    },
+    {
+      "key": "C",
+      "text": "The 1917 law protected dissent, while the 1942 order banned all newspapers",
+      "misconception": "The 1917 law punished dissent, and the 1942 order said nothing about newspapers."
+    },
+    {
+      "key": "D",
+      "text": "The 1917 law punished speech and actions, while the 1942 order targeted people by ancestry"
+    }
+  ],
+  "answerKey": "D",
+  "rationales": {
+    "A": "Background from the books: Executive Order 9066 was issued in February 1942, two months after Pearl Harbor.",
+    "B": "Background from the books: the Espionage Act jailed critics, and the 1942 order removed people to camps.",
+    "C": "Background from the books: the 1917 law punished speaking against the war, and the order removed Japanese Americans.",
+    "D": "The 1917 law punished what people said and did, while the 1942 order removed people because of their Japanese ancestry.",
+    "general": "1. Ask what each action punished or targeted, not just when it happened.\n2. The 1917 law made it a crime to interfere with recruiting or speak against the war.\n3. The 1942 order removed about 120,000 Japanese Americans, most of them citizens, because of their ancestry.\n4. One action judged what people did, while the other judged who they were.\nRemember: compare wartime measures by whom they target and why."
+  }
+}

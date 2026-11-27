@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-2072",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.3"
+ ],
+ "lesson": "apush-u7-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "C",
+ "skills": [
+  "3.B",
+  "4.A"
+ ],
+ "themes": [
+  "WOR",
+  "NAT"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "The Sinking of the Maine"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 19",
+    "section": "The Spanish-American War"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Unit 7: The Early 20th Century (1890-1945)"
+   }
+  ]
+ },
+ "stimulus": {
+  "kind": "image",
+  "source_note": "Detroit Photographic Co. photochrom, copyright 1900, Library of Congress cph.3g03933; public domain.",
+  "text": "The photograph is a photochrom print, copyrighted 1900 by the Detroit Photographic Co., titled \"Restos del U.S.S. Maine, Habana.\" It shows the wrecked battleship USS Maine sitting low in the water of Havana harbor, its hull twisted and broken with one tall mast still standing. Small boats float nearby, and the Havana waterfront stands across the harbor behind it."
+ },
+ "stimulus_set": "maine-wreck-1900",
+ "source": "original; stimulus is a public-domain 1900 photochrom of the wreck of the USS Maine",
+ "stem": "The photograph's date, 1900, matters most for a historian because it shows",
+ "options": [
+  {
+   "key": "A",
+   "text": "The explosion happened in 1900",
+   "misconception": "The Maine exploded on February 15, 1898. The photograph was made two years later."
+  },
+  {
+   "key": "B",
+   "text": "The navy had already solved the mystery of the explosion",
+   "misconception": "The cause was never settled; a later photograph cannot show a finding that never came."
+  },
+  {
+   "key": "C",
+   "text": "The wreck stayed in the harbor as a visible reminder"
+  },
+  {
+   "key": "D",
+   "text": "Spain rebuilt the Maine",
+   "misconception": "The photograph shows a broken wreck, not a rebuilt ship, and Spain never rebuilt it."
+  }
+ ],
+ "rationales": {
+  "A": "The explosion was February 15, 1898. The 1900 date is the photograph's, not the blast's.",
+  "B": "No investigation settled the cause. The date of a photograph cannot supply an answer the navy never found.",
+  "C": "The 1900 print shows the wreck still sitting in Havana harbor, two years after the blast.",
+  "D": "The hull is twisted and half sunk. Nothing in the image shows rebuilding, and Spain rebuilt nothing.",
+  "general": "1. Read the date. The print is copyrighted 1900, two years after the explosion.\n2. Read the image. The wreck is still there, low in the water, with the Havana waterfront behind it.\n3. Combine them. A wreck that stays put for years keeps reminding everyone who sees the harbor.\nRemember: a source's date is part of its evidence, so always ask what was still true on that date."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-2072",
+   "file": "u7/maine-wreck-1900.jpg",
+   "caption": "The wreck of the USS Maine in Havana harbor, Detroit Photographic Co. photochrom, copyright 1900.",
+   "alt": "A color photochrom shows the wrecked battleship USS Maine sitting low in the water of Havana harbor, its hull twisted and broken with one tall mast still standing, the Havana waterfront behind it.",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Detroit_Photographic_Company_(0992).jpg",
+   "license": "Public domain (published 1900, pre-1930)"
+  }
+ ]
+}

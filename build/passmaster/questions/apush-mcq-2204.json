@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-2204",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.7"
+ ],
+ "lesson": "apush-u7-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "answerKey": "D",
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.7 1920s: Innovations in Communication and Technology"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 22",
+    "section": "Beginning of Modern America: The 1920s"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Jazz Age and Great Depression (1920-1933)"
+   }
+  ],
+  "primary_sources": [
+   "U.S. Census Bureau, Statistical Abstract, Table HS-41"
+  ]
+ },
+ "stimulus": {
+  "kind": "table",
+  "text": "Motor vehicles registered in the United States:\n\n| Year | Motor vehicles registered |\n| 1910 | 469,000 |\n| 1920 | 9,239,000 |\n| 1925 | 20,069,000 |\n| 1930 | 26,750,000 |\n\nSource: U.S. Census Bureau, Statistical Abstract of the United States, Table HS-41, “Transportation Indicators for Motor Vehicles and Airlines, 1900 to 2001.”",
+  "source_note": "Table from the U.S. Census Bureau, Statistical Abstract, Table HS-41."
+ },
+ "stimulus_set": "cars-registrations",
+ "source": "original; stimulus table from the U.S. Census Bureau, Statistical Abstract, Table HS-41",
+ "stem": "The table shows that motor vehicle registrations between 1910 and 1930",
+ "options": [
+  {
+   "key": "A",
+   "text": "fell by about half over the twenty years",
+   "misconception": "Registrations rose every year in the table. Nothing fell by half."
+  },
+  {
+   "key": "B",
+   "text": "stayed about the same over twenty years",
+   "misconception": "Registrations rose from under half a million to nearly 27 million. They did not stay the same."
+  },
+  {
+   "key": "C",
+   "text": "rose slightly and then it fell sharply",
+   "misconception": "The table shows steady growth, with no fall. The sharp rise came between 1920 and 1925."
+  },
+  {
+   "key": "D",
+   "text": "rose from under half a million to millions"
+  }
+ ],
+ "rationales": {
+  "A": "Registrations rose every year in the table. Nothing fell by half.",
+  "B": "Registrations rose from under half a million to nearly 27 million. They did not stay the same.",
+  "C": "The table shows steady growth, with no fall. The sharp rise came between 1920 and 1925.",
+  "D": "In 1910 there were 469,000 vehicles, and by 1930 there were 26,750,000. That is a rise from under half a million to tens of millions.",
+  "general": "1. Read the first row: 469,000 vehicles in 1910.\n2. Read the last row: 26,750,000 vehicles in 1930.\n3. Compare them: the number grew about fiftyfold in twenty years.\n4. Note the pace: the sharpest jump came between 1920 and 1925, when registrations more than doubled.\nRemember: in a table, compare the first and last rows first to set the size of the change."
+ }
+}

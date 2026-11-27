@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-2295",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.10"
+ ],
+ "lesson": "apush-u7-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.10 The New Deal"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 23",
+    "section": "Great Depression and the New Deal (1929-1939)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "New Deal and WWII (1934-1945)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "Paraphrase of Barron's Premium 2027, Chapter 9, Topic 7.10: The Securities and Exchange Commission, created in 1934, was set up to oversee the stock market after the 1929 crash shook public confidence. It monitored stock transactions, licensed brokers, limited buying on margin, and prohibited insider trading.",
+  "source_note": "Paraphrase of Barron's Premium 2027, Chapter 9, Topic 7.10."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus paraphrased from Barron's Premium 2027, Chapter 9, Topic 7.10",
+ "stem": "The Securities and Exchange Commission described in the passage was created mainly to",
+ "options": [
+  {
+   "key": "A",
+   "text": "Insure deposits in banks that had already failed",
+   "misconception": "Insuring bank deposits was the FDIC's job under the Banking Act of 1933."
+  },
+  {
+   "key": "B",
+   "text": "Guarantee retirement pensions for older American workers",
+   "misconception": "Pensions for retired workers came from the Social Security Act of 1935."
+  },
+  {
+   "key": "C",
+   "text": "Lend money to farmers who faced foreclosure",
+   "misconception": "Loans to farmers came from the Farm Credit Act, not from the SEC."
+  },
+  {
+   "key": "D",
+   "text": "Restore confidence in the stock market by regulating it"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "A": "Background from the books: the FDIC insured bank deposits; the SEC oversaw the stock market, a different part of the financial system.",
+  "B": "Background from the books: retirement pensions were the Social Security Act's work, not the SEC's.",
+  "C": "Background from the books: farm credit came from the Farm Credit Act; the SEC licensed brokers and limited margin buying.",
+  "D": "Background from the books: the SEC monitored transactions, licensed brokers, limited buying on margin, and barred insider trading to rebuild trust after the crash.",
+  "general": "1. The passage says the 1929 crash shook public confidence in the stock market.\n2. The SEC was created in 1934 to oversee that market.\n3. Its tools were licensing brokers, limiting margin buying, and barring insider trading.\n4. Each tool aimed at the same goal: making investors trust the market again.\nRemember: a regulator's tools tell you which abuse it was built to stop."
+ }
+}

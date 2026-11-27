@@ -1,0 +1,91 @@
+{
+  "id": "apush-saq-0226",
+  "type": "saq",
+  "unit": 7,
+  "topics": [
+    "7.12"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "2.B",
+    "3.A"
+  ],
+  "themes": [
+    "WXT",
+    "SOC"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.12 World War II: Mobilization"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "New Deal and WWII (1934-1945)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus": {
+    "kind": "text",
+    "text": "Historians note that mobilization for World War II changed the American economy more in four years than the New Deal had in eight. Factories that had made cars and refrigerators turned to tanks and planes, and the federal government decided what they would build, in what order, and at what price. Unemployment, still near 15 percent in 1940, nearly vanished. At the same time, the war opened factory doors to women and Black workers who had been shut out before, even as the government forced Japanese Americans from their homes.",
+    "source_note": "Original secondary passage written for this question, summarizing the account in Barron's Premium 2027, Chapter 9, Topic 7.12, and 5 Steps to a 5 2024, Chapter 24."
+  },
+  "stimulus_set": null,
+  "source": "original; stimulus written for this question from the books listed in grounding",
+  "saq_slot": 1,
+  "totalPoints": 3,
+  "parts": [
+    {
+      "part": "a",
+      "points": 1,
+      "prompt": "Identify ONE way mobilization changed the American economy.",
+      "modelAnswer": "Mobilization turned civilian factories to war production, so plants that had made cars and refrigerators began building tanks and planes. The federal government decided what the factories built and in what order, taking a direct hand in production.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Names a specific economic change, such as conversion of factories to war goods or federal direction of production.",
+          "notEarned": "A vague statement that the economy grew, with no specific change named."
+        }
+      ]
+    },
+    {
+      "part": "b",
+      "points": 1,
+      "prompt": "Explain ONE way mobilization created a new opportunity for a group of Americans.",
+      "modelAnswer": "The war opened factory jobs to women and Black workers who had been shut out of industrial work before. About six million women entered the workforce, and Black workers moved north and west to war plants that finally hired them.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Explains a specific new opportunity, such as women entering factory work or Black workers gaining war-plant jobs.",
+          "notEarned": "Naming a group with no opportunity explained, or restating the passage."
+        }
+      ]
+    },
+    {
+      "part": "c",
+      "points": 1,
+      "prompt": "Explain ONE way mobilization limited the rights of a group of Americans.",
+      "modelAnswer": "The government forced about 120,000 Japanese Americans from their West Coast homes into relocation centers. Most lost their homes and property, and the Supreme Court upheld the removal in Korematsu v. United States in 1944.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Explains a specific limit on rights, such as the forced removal of Japanese Americans or the loss of their property.",
+          "notEarned": "Naming internment with no effect on rights explained."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "id": "apush-saq-0232",
+  "type": "saq",
+  "unit": 7,
+  "topics": [
+    "7.14"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "2.B",
+    "3.B"
+  ],
+  "themes": [
+    "WOR"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.14 Postwar Diplomacy"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "New Deal and WWII (1934-1945)"
+      }
+    ],
+    "primary_sources": [
+      "Paraphrase of the Potsdam Declaration, July 26, 1945"
+    ]
+  },
+  "stimulus": {
+    "kind": "text",
+    "text": "Paraphrase of the Potsdam Declaration, issued July 26, 1945, by the United States, Britain, and China: The declaration called on Japan to surrender without conditions. It warned that refusal would bring swift and total ruin upon Japan. It promised that the Japanese people would not be enslaved or wiped out as a nation, but it said the military leaders who had led Japan into war would have to give up power for good. The Soviet Union had not signed the declaration. At the same conference, the United States and the Soviet Union disagreed over Germany: the Soviets took heavy reparations from their zone, while the Western Allies wanted Germany rebuilt enough to feed itself. Truman, who distrusted Stalin more than Roosevelt had, now spoke for the United States.",
+    "source_note": "Paraphrase of the Potsdam Declaration, July 26, 1945 (United States, Britain, and China). The 1945 declaration is paraphrased, not quoted verbatim. The closing sentences are original secondary text on the Potsdam Conference, drawn from Barron's Premium 2027, Chapter 9, Topic 7.14."
+  },
+  "stimulus_set": null,
+  "source": "original; stimulus is a paraphrase of the Potsdam Declaration, July 26, 1945",
+  "saq_slot": 2,
+  "totalPoints": 3,
+  "parts": [
+    {
+      "part": "a",
+      "points": 1,
+      "prompt": "Identify the demand the Potsdam Declaration made of Japan.",
+      "modelAnswer": "The declaration demanded that Japan surrender unconditionally to the Allies. It offered no negotiated terms and warned that refusal would bring swift and total ruin.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Names the demand: unconditional surrender.",
+          "notEarned": "Naming a fact about the Potsdam Conference with no demand made of Japan."
+        }
+      ]
+    },
+    {
+      "part": "b",
+      "points": 1,
+      "prompt": "Explain ONE reason the Allies issued the declaration before invading Japan.",
+      "modelAnswer": "The Allies hoped a clear demand for surrender might end the war without an invasion, which American planners feared would cost hundreds of thousands of lives. A public declaration also let Japan's leaders see the terms before the atomic bombs were used in August.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Explains a reason for issuing the declaration, such as avoiding a costly invasion or giving Japan a chance to surrender first.",
+          "notEarned": "Stating that the declaration demanded surrender, with no reason it was issued first."
+        }
+      ]
+    },
+    {
+      "part": "c",
+      "points": 1,
+      "prompt": "Explain ONE way the Potsdam Conference showed growing tension between the United States and the Soviet Union.",
+      "modelAnswer": "At Potsdam the leaders disagreed over Germany's future, with the Soviets taking heavy reparations from their zone while the Western Allies wanted Germany rebuilt enough to feed itself. The change of leaders also mattered: Truman, who distrusted Stalin more than Roosevelt had, now spoke for the United States.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Explains a sign of tension at Potsdam, such as disagreement over Germany or reparations, or the change from Roosevelt to Truman.",
+          "notEarned": "Naming a Potsdam decision with no link to American-Soviet tension."
+        }
+      ]
+    }
+  ]
+}

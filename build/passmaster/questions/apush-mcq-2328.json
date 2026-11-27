@@ -1,0 +1,77 @@
+{
+  "id": "apush-mcq-2328",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.12"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "2.A"
+  ],
+  "themes": [
+    "WXT",
+    "WOR"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.12 World War II: Mobilization"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "New Deal and WWII (1934-1945)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus": {
+    "kind": "table",
+    "text": "United States aircraft production, 1940-1944 (number of aircraft built each year).\n\n| 1940 | 6,086 |\n| 1941 | 19,433 |\n| 1942 | 47,836 |\n| 1943 | 85,898 |\n| 1944 | 96,318 |",
+    "source_note": "Figures from The Army Air Forces in World War II, vol. VI, chapter 10 (official U.S. government history). Total wartime production was nearly 300,000 military aircraft."
+  },
+  "stimulus_set": "war-production-board-1942",
+  "source": "original; stimulus table from The Army Air Forces in World War II, vol. VI, ch. 10",
+  "stem": "President Roosevelt called the United States the arsenal of democracy in 1940. The table best illustrates that phrase by showing what?",
+  "options": [
+    {
+      "key": "A",
+      "text": "That American planes were flown only by American pilots",
+      "misconception": "Many American-built planes went to Britain and the Soviet Union."
+    },
+    {
+      "key": "B",
+      "text": "That the United States fought the war without allies",
+      "misconception": "The United States fought beside Britain and the Soviet Union."
+    },
+    {
+      "key": "C",
+      "text": "That American factories supplied weapons on a vast scale"
+    },
+    {
+      "key": "D",
+      "text": "That the United States stored weapons instead of using them",
+      "misconception": "The planes were flown in combat and sent to allies, not stored."
+    }
+  ],
+  "answerKey": "C",
+  "rationales": {
+    "A": "Background from the books: tens of thousands of American-built planes went to Britain, the Soviet Union, and other allies.",
+    "B": "The arsenal supplied allies; it did not replace them.",
+    "C": "Rising from about 6,000 planes in 1940 to about 96,000 in 1944 is supply on a vast scale.",
+    "D": "The planes were used: American and Allied pilots flew them in both theaters of the war.",
+    "general": "1. An arsenal is a store of weapons, and Roosevelt promised American factories would supply the democracies.\n2. The table counts what the factories actually built, year by year.\n3. The count climbs from about 6,000 to about 96,000 in four years.\n4. That climb is the promise kept in numbers: supply on a vast scale.\nRemember: a nickname like arsenal of democracy is a claim about output, so test it with output numbers."
+  }
+}

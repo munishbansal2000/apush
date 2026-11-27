@@ -1,0 +1,76 @@
+{
+  "answerKey": "D",
+  "difficulty": 2,
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.10 The New Deal"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 23",
+        "section": "Great Depression and the New Deal (1929–1939)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11"
+      }
+    ],
+    "primary_sources": []
+  },
+  "id": "apush-mcq-2432",
+  "lesson": "apush-u7-l4",
+  "options": [
+    {
+      "key": "A",
+      "misconception": "Roosevelt was responding to the outbreak of World War II.",
+      "text": "The outbreak of World War II in Europe"
+    },
+    {
+      "key": "B",
+      "misconception": "Roosevelt was responding to the attack on Pearl Harbor.",
+      "text": "The attack on Pearl Harbor"
+    },
+    {
+      "key": "C",
+      "misconception": "Roosevelt was responding to the passage of the Civil Rights Act.",
+      "text": "The passage of the Civil Rights Act"
+    },
+    {
+      "key": "D",
+      "text": "The economic collapse and bank failures of the Depression"
+    }
+  ],
+  "pool": "test",
+  "rationales": {
+    "A": "World War II in Europe began years later.",
+    "B": "Pearl Harbor came in 1941, not 1933.",
+    "C": "The Civil Rights Act came in 1964, not 1933.",
+    "D": "The 1933 inaugural addressed bank failures, unemployment, and collapsing confidence in the Great Depression. Roosevelt spoke to a country where banks had failed and a quarter of workers had no jobs.",
+    "general": "1. Date the speech. March 4, 1933, Roosevelt's first term.\n2. Ask what the country faced. Banks failing, unemployment high, confidence collapsing.\n3. Test the later events. World War II, Pearl Harbor, and the Civil Rights Act came years later.\n4. Match the response. Fear itself is the language of a depression, not a war.\nRemember: date the speech first, then name the crisis of that date."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "4.B"
+  ],
+  "source": "original; stimulus is a verbatim public-domain excerpt from Franklin D. Roosevelt, First Inaugural Address (1933)",
+  "status": "final",
+  "stem": "Roosevelt’s address most directly responded to which of the following conditions?",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Franklin D. Roosevelt, First Inaugural Address, March 4, 1933, public domain.",
+    "text": "I am convinced that the only thing we have to fear is fear itself — nameless, unreasoning, unjustified terror which paralyzes needed efforts to convert retreat into advance."
+  },
+  "stimulus_set": "fdr-inaugural-1933",
+  "themes": [
+    "PCE",
+    "WXT"
+  ],
+  "topics": [
+    "7.10"
+  ],
+  "type": "mcq",
+  "unit": 7
+}

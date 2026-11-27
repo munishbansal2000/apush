@@ -1,0 +1,158 @@
+{
+  "id": "apush-dbq-0080",
+  "type": "dbq",
+  "unit": 7,
+  "topics": [
+    "7.11"
+  ],
+  "lesson": "apush-u7-l4",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 4,
+  "skills": [
+    "6.A",
+    "6.B"
+  ],
+  "themes": [
+    "WOR",
+    "PCE"
+  ],
+  "reasoning": "continuity-change",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.11 Interwar Foreign Policy"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "New Deal and WWII (1934-1945)"
+      }
+    ],
+    "primary_sources": [
+      "Kellogg-Briand Pact, Article I, Paris, August 27, 1928",
+      "Five-Power Treaty, Washington Naval Conference, February 1922"
+    ]
+  },
+  "stimulus_set": null,
+  "source": "original; documents drawn from public-domain sources, paraphrases, and book-grounded data",
+  "prompt": "Evaluate the extent to which United States foreign policy changed between 1920 and 1941, from isolationism toward intervention in world affairs.",
+  "documents": [
+    {
+      "n": 1,
+      "kind": "table",
+      "date": "1922",
+      "title": "The Five-Power Treaty ratios",
+      "source": "Five-Power Treaty, Washington Naval Conference, signed February 1922.",
+      "text": "| Nation | Capital-ship tonnage ratio |\n| United States | 5 |\n| Great Britain | 5 |\n| Japan | 3 |\n| France | 1.75 |\n| Italy | 1.75 |",
+      "sourcing": "A treaty table agreed by five naval powers. The numbers show the bargain each navy accepted."
+    },
+    {
+      "n": 2,
+      "kind": "text",
+      "date": "1928",
+      "title": "The Kellogg-Briand Pact",
+      "source": "Kellogg-Briand Pact, Article I, Paris, August 27, 1928.",
+      "text": "The High Contracting Parties solemnly declare in the names of their respective peoples that they condemn recourse to war for the solution of international controversies, and renounce it as an instrument of national policy in their relations with one another.",
+      "sourcing": "A treaty text signed by the United States and more than sixty other nations. Its words promise peace; it names no penalty for breaking the promise."
+    },
+    {
+      "n": 3,
+      "kind": "text",
+      "date": "1932",
+      "title": "The Stimson Doctrine",
+      "source": "Paraphrase of Secretary of State Henry Stimson's notes to China and Japan, January 1932.",
+      "text": "Paraphrase: The United States will not recognize any territorial change brought about by force. Japan's seizure of Manchuria will not be treated as lawful, even though the United States takes no military action against Japan.",
+      "sourcing": "A diplomatic note from the Secretary of State. It states a position without committing troops or sanctions."
+    },
+    {
+      "n": 4,
+      "kind": "text",
+      "date": "1933",
+      "title": "The Montevideo declaration",
+      "source": "Paraphrase of the Convention on Rights and Duties of States, signed at Montevideo, Uruguay, December 1933.",
+      "text": "Paraphrase: No state has the right to intervene in the internal or external affairs of another state. Secretary of State Cordell Hull signed the declaration for the United States, reversing the claim that the United States could police Latin America.",
+      "sourcing": "An agreement signed by the United States at an international conference. It binds the signer to the same rule it asks of others."
+    },
+    {
+      "n": 5,
+      "kind": "text",
+      "date": "1935",
+      "title": "The Neutrality Act",
+      "source": "Paraphrase of the Neutrality Act of 1935.",
+      "text": "Paraphrase: When war breaks out between foreign nations, the United States will sell no arms or munitions to any of the warring nations. The ban applies to every side alike, so that trade in weapons cannot draw the United States into war.",
+      "sourcing": "A law passed by Congress. It states what the government must do, not what one president wanted."
+    },
+    {
+      "n": 6,
+      "kind": "text",
+      "date": "1937",
+      "title": "The Quarantine Speech",
+      "source": "Paraphrase of President Franklin D. Roosevelt's speech in Chicago, October 1937.",
+      "text": "Paraphrase: Aggressive nations threaten the peace of the whole world, and the community of nations should quarantine them, as a sick patient is kept apart so the disease cannot spread. The president names no country and promises no American action.",
+      "sourcing": "A presidential speech to the public. It tests an idea with voters before any policy follows."
+    },
+    {
+      "n": 7,
+      "kind": "text",
+      "date": "1941",
+      "title": "The Lend-Lease Act",
+      "source": "Paraphrase of the Lend-Lease Act, March 1941.",
+      "text": "Paraphrase: The president may lend or lease arms, ships, and other defense articles to any country whose defense he judges vital to the defense of the United States. The aid goes first to Britain, which no longer has money to buy American arms.",
+      "sourcing": "A law passed by Congress. It gives the president power to aid a warring nation while the United States is still officially at peace."
+    }
+  ],
+  "rubric": [
+    {
+      "points": 1,
+      "skill": "6.A",
+      "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent to which United States foreign policy changed between 1920 and 1941 from isolationism toward intervention, with a clear line of reasoning.",
+      "notEarned": "Restating the prompt with no claim about the extent does not earn the point."
+    },
+    {
+      "points": 1,
+      "skill": "4.B",
+      "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as the Senate's rejection of the League of Nations, the cost of the First World War, or the Great Depression.",
+      "notEarned": "A sentence of background with no link to the argument, or background from a later century, does not earn the point."
+    },
+    {
+      "points": 1,
+      "skill": "6.B",
+      "criterion": "Evidence from documents (first point): earns the point for describing specific and relevant evidence from at least three documents to support an argument.",
+      "notEarned": "Naming documents without describing their content does not earn the point."
+    },
+    {
+      "points": 1,
+      "skill": "6.B",
+      "criterion": "Evidence from documents (second point): earns the point for using the content of at least six documents to support an argument.",
+      "notEarned": "Using fewer than six documents, or describing them without tying them to the argument, does not earn the point."
+    },
+    {
+      "points": 1,
+      "skill": "6.B",
+      "criterion": "Evidence beyond the documents: earns the point for describing a specific and relevant example beyond the documents, such as the Atlantic Charter, the Destroyers for Bases Agreement, the repeal of the Platt Amendment, or the attack on Pearl Harbor.",
+      "notEarned": "A vague reference to foreign policy with no specific example does not earn the point."
+    },
+    {
+      "points": 1,
+      "skill": "3.B",
+      "criterion": "Sourcing: earns the point for explaining the relevance of a document's author, purpose, audience, or historical situation, such as a treaty text that promises peace without a penalty, or a law that binds the government rather than one president.",
+      "notEarned": "Naming an author without explaining why the authorship matters does not earn the point."
+    },
+    {
+      "points": 1,
+      "skill": "6.B",
+      "criterion": "Complexity: earns the point for demonstrating a complex understanding, such as qualifying the change by showing its limits, or weighing how far the change lasted.",
+      "notEarned": "A second example with no qualification or weighing does not earn the point."
+    }
+  ],
+  "modelOutline": "Thesis: American foreign policy changed a great deal between 1920 and 1941, from staying out of entanglements to openly aiding Britain, but the change was gradual and uneven, and the country entered the war only when attacked.\nContext: The First World War left Americans weary of foreign wars, the Senate rejected the League of Nations, and the Depression turned attention homeward.\nEvidence: Documents 1-2 show the 1920s pattern of internationalism without entanglement: naval limits and a pact renouncing war, both without any promise to enforce them.\nEvidence: Documents 3-5 show the 1930s pullback: non-recognition of Manchuria, the Montevideo declaration against intervention, and the Neutrality Act's arms embargo.\nEvidence: Documents 6-7 show the turn: Roosevelt's Quarantine Speech tested intervention with the public, and Lend-Lease let the president arm Britain while America stayed officially at peace.\nBeyond the documents: the Destroyers for Bases Agreement of 1940, the Atlantic Charter of 1941, and the oil embargo on Japan show the same step-by-step shift, ending with Pearl Harbor on December 7, 1941.\nSourcing: the treaty texts promise peace without penalties, while the laws show what Congress would actually enforce, so each document's form shapes what it can prove.\nComplexity: The change was real but not a straight line: the United States led disarmament talks in the 1920s, pulled back in the 1930s, and aided Britain in 1940-1941, yet stayed out of the war until Japan attacked.",
+  "totalPoints": 7
+}

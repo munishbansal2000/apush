@@ -1,0 +1,91 @@
+{
+ "id": "apush-saq-0212",
+ "type": "saq",
+ "unit": 7,
+ "topics": [
+  "7.6"
+ ],
+ "lesson": "apush-u7-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "1.B",
+  "4.A"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.6 World War I: Home Front"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 21",
+    "section": "United States and World War I (1914-1921)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "The Progressive Era and World War I (1900-1920)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; stimulus paraphrased from 5 Steps to a 5 2024, Chapter 21, and Barron's Premium 2027, Chapter 9",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of 5 Steps to a 5 2024, Chapter 21, and Barron's Premium 2027, Chapter 9.",
+  "text": "Paraphrase of 5 Steps to a 5 2024, Chapter 21, and Barron's Premium 2027, Chapter 9: World War I required the first great mobilization of American society. The federal government reached into factories, farms, and kitchens to sustain the war effort, selling bonds, directing production, and asking families to conserve food. The war also moved people: hundreds of thousands of African Americans left the rural South for jobs in northern cities, and women stepped into jobs that had been closed to them before the war."
+ },
+ "stimulus_set": null,
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one step the American government took to mobilize the people for World War I.",
+   "modelAnswer": "One step was selling Liberty Bonds to ordinary Americans. The government raised about two-thirds of the war's cost from war bonds, and posters and celebrity rallies urged families to lend their savings to the war effort.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names a specific mobilization step, such as selling Liberty Bonds, the draft under the Selective Service Act, or the Food Administration's conservation campaign.",
+     "notEarned": "A vague statement that the government 'prepared for war' without naming a specific step."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain a second step the American government took to mobilize the people for World War I.",
+   "modelAnswer": "A second step was directing the wartime economy through new agencies. The War Industries Board, led by Bernard Baruch, allocated raw materials and set production goals, while Herbert Hoover's Food Administration raised food output and asked families to save food with Wheatless Mondays and Meatless Tuesdays.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains a second, distinct mobilization step, such as the War Industries Board, the Food Administration, the draft, or the Committee on Public Information, and says what it did.",
+     "notEarned": "Repeats the part (a) step, or names an agency without saying what it did."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one way the wartime mobilization changed life for African Americans or for women.",
+   "modelAnswer": "One change was the Great Migration, as wartime factory jobs drew hundreds of thousands of African Americans from the rural South to northern cities. Northern cities gained large Black communities, but the newcomers faced crowded housing and white hostility, which boiled over in the Chicago riot of 1919.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains a specific change for African Americans or women, such as the Great Migration, new factory jobs for women, or the boost the war gave the case for women's suffrage, and says how life changed.",
+     "notEarned": "A vague statement that life 'changed' without naming a specific change and how it worked."
+    }
+   ]
+  }
+ ]
+}

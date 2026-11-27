@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-2218",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.8"
+ ],
+ "lesson": "apush-u7-l3",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 3,
+ "answerKey": "B",
+ "skills": [
+  "3.D"
+ ],
+ "themes": [
+  "MIG",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.8 1920s: Cultural and Political Controversies"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 22",
+    "section": "Beginning of Modern America: The 1920s"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Jazz Age and Great Depression (1920-1933)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "text": "| Law | Year | Quota rule |\n| Emergency Quota Act | 1921 | 3 percent of each nationality living in the United States in 1910 |\n| National Origins Act | 1924 | 2 percent of each nationality living in the United States in 1890; total cap of 150,000; immigration from Asia barred |\nNeither act limited immigration from countries in the Americas.",
+  "source_note": "Table built from Barron's Premium 2027, Chapter 9, Topic 7.8, and 5 Steps to a 5 2024, Chapter 22."
+ },
+ "stimulus_set": "quota-laws",
+ "source": "original; stimulus table built from Barron's Premium 2027, Chapter 9, Topic 7.8, and 5 Steps to a 5 2024, Chapter 22",
+ "stem": "The table best supports which claim about immigration policy in the 1920s?",
+ "options": [
+  {
+   "key": "A",
+   "text": "it welcomed all newcomers without limit",
+   "misconception": "Both acts set quotas and caps. A policy without limits would have no table of rules at all."
+  },
+  {
+   "key": "B",
+   "text": "it ranked newcomers by national origin"
+  },
+  {
+   "key": "C",
+   "text": "it ended immigration from the Americas",
+   "misconception": "The note under the table says neither act limited immigration from the Americas. That flow went on."
+  },
+  {
+   "key": "D",
+   "text": "it was written mainly by immigrant groups",
+   "misconception": "Immigrant groups opposed the quotas. The laws were written by nativist lawmakers, not by the newcomers they limited."
+  }
+ ],
+ "rationales": {
+  "A": "Both acts set quotas and caps. A policy without limits would have no table of rules at all.",
+  "B": "Background from the books: each nationality got its own quota from its own census count, and Asia was barred outright. The law sorted newcomers by where they came from.",
+  "C": "The note under the table says neither act limited immigration from the Americas. That flow went on.",
+  "D": "Immigrant groups opposed the quotas. The laws were written by nativist lawmakers, not by the newcomers they limited.",
+  "general": "1. Read what the table sorts by: nationality, with a different quota for each.\n2. Note the extra rule: immigration from Asia was barred outright.\n3. Note the exception: the Americas faced no limits.\n4. Name the pattern: the law ranked newcomers by national origin.\nRemember: a table that sorts people into groups is evidence of a policy that sorts people into groups."
+ }
+}

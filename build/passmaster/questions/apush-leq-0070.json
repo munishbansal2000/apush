@@ -1,0 +1,87 @@
+{
+ "id": "apush-leq-0070",
+ "type": "leq",
+ "unit": 7,
+ "topics": [
+  "7.5"
+ ],
+ "lesson": "apush-u7-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.5 World War I: Military and Diplomacy"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 21",
+    "section": "United States and World War I (1914-1921)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "The Progressive Era and World War I (1900-1920)"
+   }
+  ]
+ },
+ "source": "original; prompt written for this question",
+ "stimulus_set": null,
+ "stimulus": {
+  "kind": "none",
+  "source_note": "No stimulus; LEQ prompt only."
+ },
+ "prompt": "Evaluate the extent to which the United States' participation in World War I changed American foreign policy between 1914 and 1920.",
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent to which participation in World War I changed American foreign policy between 1914 and 1920, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim about the extent of change does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as the tradition of avoiding European entanglements since Washington's Farewell Address, American neutrality in 1914, or the Progressive era's faith in government action.",
+   "notEarned": "A sentence of background with no link to the argument, or background from a later century, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (first point): earns the point for describing specific and relevant examples of change in foreign policy, such as the declaration of war in 1917, the Fourteen Points, or Wilson's personal diplomacy at Paris.",
+   "notEarned": "General statements about the war with no specific example do not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (second point): earns the point for describing specific and relevant examples of continuity in foreign policy, such as the Senate's rejection of the League, the separate peace with Germany, or the refusal of binding commitments.",
+   "notEarned": "Repeating a change example, or naming a limit with no specific detail, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Analysis and reasoning (continuity and change): earns the point for explaining how the evidence shows what changed and what stayed the same in American foreign policy, linking examples to the thesis rather than listing them.",
+   "notEarned": "Listing examples with no explanation of what changed and what continued does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Analysis and reasoning (complexity): earns the point for a complex argument, such as qualifying the thesis by area, weighing the new global role against the refusal of commitments, or showing change and continuity operating at the same time.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ],
+ "modelOutline": "Thesis: World War I changed American foreign policy from guarded neutrality to active world leadership in war and peacemaking, yet the change stopped at the Senate's door: the United States would act as a great power but would not bind itself to the League it had designed.\nContext: Since Washington's Farewell Address the United States had avoided European entanglements, and in 1914 Wilson proclaimed neutrality while American trade flowed to the Allies and German submarines attacked American shipping.\nEvidence for change: Unrestricted submarine warfare and the Zimmermann telegram pushed Wilson to ask for war in April 1917; the United States raised an army of four million, sent two million men to France, and tipped the balance in 1918; Wilson then went to Paris in person and wrote the League of Nations into the Treaty of Versailles.\nEvidence for continuity: The Senate rejected the treaty in 1919 and 1920, the United States never joined the League, and Harding signed a separate peace with Germany in 1921; the country kept avoiding binding commitments through the 1920s.\nComplexity: The change split by function. America acted as a world power in war, finance, and peacemaking, while its constitutional habit of guarding sovereignty survived intact, so the new role was powerful but uncommitted.",
+ "totalPoints": 6
+}

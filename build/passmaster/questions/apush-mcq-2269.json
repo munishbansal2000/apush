@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-2269",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.10"
+ ],
+ "lesson": "apush-u7-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 2,
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.10 The New Deal"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 23",
+    "section": "Great Depression and the New Deal (1929-1939)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "New Deal and WWII (1934-1945)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "Paraphrase of 5 Steps to a 5 2024, Chapter 23, and Barron's Premium 2027, Chapter 9, Topic 7.10: When Roosevelt took office in March 1933, banks were failing as frightened depositors withdrew their money. He closed all banks for four days so the government could inspect them, and most reopened by March 15. The Banking Act of 1933 then created the Federal Deposit Insurance Corporation, which insured individual deposits. In the same first Hundred Days, Congress created the Civilian Conservation Corps, which gave young men work on forest and conservation projects; the Agricultural Adjustment Administration, which paid farmers to grow less so prices would rise; and the National Industrial Recovery Act, which set industry codes for wages, hours, and prices and displayed a Blue Eagle poster in shops that complied.",
+  "source_note": "Paraphrase of 5 Steps to a 5 2024, Chapter 23, and Barron's Premium 2027, Chapter 9, Topic 7.10."
+ },
+ "stimulus_set": "hundred-days-1933",
+ "source": "original; stimulus paraphrased from 5 Steps to a 5 2024, Chapter 23, and Barron's Premium 2027, Chapter 9, Topic 7.10",
+ "stem": "According to the passage, what was the purpose of the Federal Deposit Insurance Corporation?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Guarantee retirement pensions for older workers",
+   "misconception": "Pensions for retired workers came with the Social Security Act of 1935, not with the FDIC, which dealt with banks."
+  },
+  {
+   "key": "B",
+   "text": "Lend federal money to farmers facing foreclosure",
+   "misconception": "Loans to farmers facing foreclosure came from the Farm Credit Act, not from the FDIC, which insured bank deposits."
+  },
+  {
+   "key": "C",
+   "text": "Insure individual bank deposits against failure"
+  },
+  {
+   "key": "D",
+   "text": "Set industry codes for wages and prices",
+   "misconception": "Codes for wages and prices were set under the National Industrial Recovery Act, not by the FDIC."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "Background from the books: retirement pensions were the heart of the Social Security Act of 1935, two years after the FDIC, which insured bank deposits.",
+  "B": "Background from the books: farm loans came from the Farm Credit Act of 1933; the FDIC insured the savings ordinary people kept in banks.",
+  "C": "Background from the books: the Banking Act of 1933 created the FDIC to insure individual deposits, so a bank failure would not wipe out a family's savings.",
+  "D": "Background from the books: industry codes for wages and prices were the work of the National Industrial Recovery Act, while the FDIC dealt only with bank deposits.",
+  "general": "1. The passage says banks were failing because frightened depositors withdrew their money.\n2. The Banking Act of 1933 answered that fear by creating the FDIC.\n3. The FDIC insured individual deposits, so savings survived even if a bank failed.\n4. That is a banking reform, not a pension, farm loan, or industry code.\nRemember: match each New Deal agency to the one problem it was built to fix."
+ }
+}

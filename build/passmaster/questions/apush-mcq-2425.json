@@ -1,0 +1,76 @@
+{
+  "id": "apush-mcq-2425",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.15"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 2,
+  "skills": [
+    "2.B"
+  ],
+  "themes": [
+    "WXT"
+  ],
+  "reasoning": "comparison",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.9 The Great Depression"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 22",
+        "section": "Beginning of Modern America: The 1920s"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "Jazz Age and Great Depression (1920-1933)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus_set": "boom-depression-unemployment",
+  "stimulus": {
+    "kind": "table",
+    "text": "Unemployment in the United States, as a share of the labor force (Bureau of Labor Statistics historical estimates):\n\n| Year | 1929 | 1930 | 1931 | 1932 | 1933 | 1937 | 1938 | 1941 | 1942 |\n| Unemployment | 3.2% | 8.7% | 15.9% | 23.6% | 24.9% | 14.3% | 19.0% | 9.9% | 4.7% |\n\nContext: The 1920s were years of prosperity built on assembly-line production, radios, cars, and buying on credit, including buying stocks on margin. The stock market crashed in October 1929.",
+    "source_note": "Unemployment figures are Bureau of Labor Statistics historical estimates, as published in the Economic Report of the President (Table B-22). Context drawn from Barron's Premium 2027, Chapter 9, Topics 7.7 and 7.9."
+  },
+  "source": "original; stimulus drawn from book-grounded paraphrases, tables, and photographs (see source_note)",
+  "stem": "How does the table contrast the 1920s boom with the Depression?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Jobs were scarce in 1929 and plentiful by 1933",
+      "misconception": "The table shows 3.2 percent unemployment in 1929 and 24.9 percent in 1933, the reverse."
+    },
+    {
+      "key": "B",
+      "text": "Jobs were plentiful in 1929 and scarce by 1933"
+    },
+    {
+      "key": "C",
+      "text": "Jobs were scarce in both 1929 and 1933 alike",
+      "misconception": "Jobs were plentiful in 1929, with unemployment at only 3.2 percent."
+    },
+    {
+      "key": "D",
+      "text": "Jobs were plentiful in both 1929 and 1933 alike",
+      "misconception": "Jobs were scarce by 1933, with unemployment at 24.9 percent."
+    }
+  ],
+  "answerKey": "B",
+  "rationales": {
+    "A": "The table shows unemployment at 3.2 percent in 1929 and 24.9 percent in 1933, so this reverses the two years.",
+    "B": "Unemployment was only 3.2 percent in 1929, the boom year, and reached 24.9 percent in 1933, the worst year.",
+    "C": "The table shows unemployment at only 3.2 percent in 1929, so jobs were not scarce then.",
+    "D": "The table shows unemployment at 24.9 percent in 1933, so jobs were not plentiful then.",
+    "general": "1. Find the two years in the table: 1929 and 1933.\n2. In 1929 unemployment stood at 3.2 percent, near the bottom of the table.\n3. By 1933 it had climbed to 24.9 percent, about one worker in four.\n4. The same economy went from plentiful jobs to scarce jobs in four years.\nRemember: read a table by comparing the endpoints first."
+  }
+}

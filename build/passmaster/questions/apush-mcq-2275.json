@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-2275",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.10"
+ ],
+ "lesson": "apush-u7-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "skills": [
+  "5.B"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.10 The New Deal"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 23",
+    "section": "Great Depression and the New Deal (1929-1939)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "New Deal and WWII (1934-1945)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "text": "Unemployment in the United States, 1929-1941 (percent of the labor force). Source: U.S. Bureau of Labor Statistics historical series (Economic Report of the President, Table B-22).\n\n| Year | Unemployment rate |\n| 1929 | 3.2 percent |\n| 1930 | 8.7 percent |\n| 1931 | 15.9 percent |\n| 1932 | 23.6 percent |\n| 1933 | 24.9 percent |\n| 1934 | 21.7 percent |\n| 1935 | 20.1 percent |\n| 1936 | 16.9 percent |\n| 1937 | 14.3 percent |\n| 1938 | 19.0 percent |\n| 1939 | 17.2 percent |\n| 1940 | 14.6 percent |\n| 1941 | 9.9 percent |",
+  "source_note": "U.S. Bureau of Labor Statistics historical unemployment series (Economic Report of the President, Table B-22). The books give the same landmarks: about 25 percent in 1933 and 20 percent in 1935."
+ },
+ "stimulus_set": "unemployment-1929-1941",
+ "source": "original; table from U.S. Bureau of Labor Statistics historical unemployment series",
+ "stem": "Which conclusion about the New Deal is best supported by the whole table?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The New Deal had ended the Depression by 1936",
+   "misconception": "Unemployment still stood at 16.9 percent in 1936 and 17.2 percent in 1939, so the Depression had not ended."
+  },
+  {
+   "key": "B",
+   "text": "Unemployment never fell at all while the New Deal ran",
+   "misconception": "Unemployment fell from 24.9 percent in 1933 to 14.3 percent in 1937, so it did fall under the New Deal."
+  },
+  {
+   "key": "C",
+   "text": "The Depression ended when the Court struck down the AAA",
+   "misconception": "The AAA was struck down in 1936, yet unemployment stayed above 14 percent for years after that."
+  },
+  {
+   "key": "D",
+   "text": "The New Deal eased unemployment but did not end the Depression"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "A": "Background from the books: with unemployment near 17 percent as late as 1939, the New Deal had not ended the Depression by 1936.",
+  "B": "Background from the books: the table falls from 24.9 percent in 1933 to 14.3 percent in 1937, so unemployment did fall during the New Deal.",
+  "C": "Background from the books: the AAA decision of 1936 changed farm policy, but unemployment stayed high for years, so it did not end the Depression.",
+  "D": "Background from the books: the books agree the New Deal never ended the Depression; the table shows the sharp fall only in 1941, as war production began.",
+  "general": "1. Unemployment fell from 24.9 percent in 1933 to about 14 percent by 1937.\n2. But it never fell below 14 percent in the rest of the 1930s.\n3. The sharp fall, to 9.9 percent, comes only in 1941.\n4. So the New Deal eased the crisis without ending it, and wartime production finished the job.\nRemember: a program can improve a problem without solving it; check the whole series before claiming a cure."
+ }
+}

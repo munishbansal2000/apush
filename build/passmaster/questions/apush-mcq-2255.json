@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-2255",
+ "type": "mcq",
+ "unit": 7,
+ "topics": [
+  "7.9"
+ ],
+ "lesson": "apush-u7-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "answerKey": "D",
+ "skills": [
+  "4.A"
+ ],
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.9 The Great Depression"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 23",
+    "section": "Great Depression and the New Deal (1929-1939)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Jazz Age and Great Depression (1920-1933)"
+   }
+  ],
+  "primary_sources": [
+   "Bureau of the Census export figures, as cited in Senate Resolution 281 (2025)"
+  ]
+ },
+ "stimulus": {
+  "kind": "table",
+  "text": "| Year | U.S. exports |\n| 1929 | $5.24 billion |\n| 1933 | $1.67 billion |\n\nU.S. exports fell by about two-thirds between 1929 and 1933. In June 1930 President Hoover signed the Hawley-Smoot Tariff, which raised tariffs on imported goods to near record levels, and other countries answered with tariffs of their own.",
+  "source_note": "Export figures from the Bureau of the Census, as cited in Senate Resolution 281 (2025). Tariff account per 5 Steps to a 5 2024, Chapter 23."
+ },
+ "source": "original; stimulus table built from Bureau of the Census export figures",
+ "stem": "American farmers were hurt most by the collapse of exports because",
+ "options": [
+  {
+   "key": "A",
+   "text": "farmers grew crops mainly for local markets",
+   "misconception": "Farmers grew surpluses for export, especially wheat and cotton. Local markets could not absorb them."
+  },
+  {
+   "key": "B",
+   "text": "the tariff paid farmers to grow fewer crops",
+   "misconception": "Paying farmers to grow less was the Agricultural Adjustment Act of 1933, a New Deal program, not the 1930 tariff."
+  },
+  {
+   "key": "C",
+   "text": "foreign buyers paid higher prices for American wheat",
+   "misconception": "Foreign buyers bought less, and farm prices fell. They did not pay higher prices."
+  },
+  {
+   "key": "D",
+   "text": "they depended on selling surpluses abroad"
+  }
+ ],
+ "rationales": {
+  "A": "Background from the books: American farmers had expanded production during World War I and depended on selling abroad, since home demand could not take the surplus.",
+  "B": "Background from the books: the Agricultural Adjustment Act of 1933 paid farmers to grow fewer crops, three years after the tariff.",
+  "C": "Background from the books: farm prices collapsed in the 1920s and fell further in the Depression, so buyers paid less, not more.",
+  "D": "Background from the books: farm commodities such as wheat, cotton, and tobacco were hit hardest by the export collapse, since farmers depended on foreign buyers.",
+  "general": "1. Ask what farmers sold abroad: surpluses of wheat, cotton, and tobacco.\n2. Ask what happened to those sales: exports fell by two-thirds.\n3. Ask what that meant at home: surpluses with no buyers, and prices falling further.\n4. Farmers were hurt because they depended on selling surpluses abroad.\nRemember: a farmer's market is often overseas, so ask where the surplus went before the crash."
+ },
+ "stimulus_set": "smoot-hawley-exports"
+}

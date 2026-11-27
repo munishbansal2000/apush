@@ -1,0 +1,77 @@
+{
+  "id": "apush-mcq-2339",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.12"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "test",
+  "difficulty": 3,
+  "skills": [
+    "1.A"
+  ],
+  "themes": [
+    "MIG",
+    "WXT"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.12 World War II: Mobilization"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "New Deal and WWII (1934-1945)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus": {
+    "kind": "text",
+    "text": "Wartime factories and farms needed workers, and millions of Americans moved to take the jobs. African Americans left the South for northern and western industrial cities in a Second Great Migration, and more than a million left the South during the 1940s. In 1942 the United States and Mexico signed an agreement, the Bracero Program, bringing Mexican workers north on temporary contracts to work on farms. Mexican American youths in Los Angeles faced attacks in the zoot-suit riots of June 1943.",
+    "source_note": "Original secondary text written for this question, based on Barron's Premium 2027, Chapter 9, Topic 7.12, and 5 Steps to a 5 2024, Chapter 24. The Bracero agreement was signed in August 1942; the zoot-suit riots took place in Los Angeles in June 1943."
+  },
+  "stimulus_set": "bracero-migration-1942",
+  "source": "original; stimulus written for this question from the books listed in grounding",
+  "stem": "The Bracero Program brought Mexican workers to the United States on temporary contracts. What was its main purpose?",
+  "options": [
+    {
+      "key": "A",
+      "text": "To fill farm labor shortages during the war"
+    },
+    {
+      "key": "B",
+      "text": "To build new factories in Mexico",
+      "misconception": "The workers came to American farms, not to build in Mexico."
+    },
+    {
+      "key": "C",
+      "text": "To end immigration from Mexico for good",
+      "misconception": "The program arranged temporary entry, not an end to immigration."
+    },
+    {
+      "key": "D",
+      "text": "To recruit soldiers for the armed forces",
+      "misconception": "Bracero workers were farm laborers, and Mexico asked that they not be drafted."
+    }
+  ],
+  "answerKey": "A",
+  "rationales": {
+    "A": "With American farm workers gone to war plants and the military, farms needed hands, and Mexico supplied them.",
+    "B": "The workers labored on American farms; the program built nothing in Mexico.",
+    "C": "Temporary contracts are the opposite of ending immigration; the program managed entry for the war.",
+    "D": "Background from the books: Mexico insisted the temporary workers not be drafted into the military.",
+    "general": "1. The passage says the workers came on temporary contracts to work on farms.\n2. Farm labor was short because workers had left for war jobs and the military.\n3. The 1942 agreement with Mexico filled that gap with contract workers.\n4. The program was a wartime labor fix, not a military draft or a border closing.\nRemember: a guest-worker program answers a labor shortage, so ask which jobs were short of hands."
+  }
+}

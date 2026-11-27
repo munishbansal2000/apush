@@ -1,0 +1,93 @@
+{
+ "id": "apush-saq-0221",
+ "type": "saq",
+ "unit": 7,
+ "topics": [
+  "7.10"
+ ],
+ "lesson": "apush-u7-l4",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 3,
+ "skills": [
+  "1.A",
+  "3.A"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.10 The New Deal"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 23",
+    "section": "Great Depression and the New Deal (1929-1939)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "New Deal and WWII (1934-1945)"
+   }
+  ],
+  "primary_sources": [
+   "Barron's Premium 2027, Chapter 9, Topic 7.10; 5 Steps to a 5 2024, Chapter 23"
+  ]
+ },
+ "stimulus": {
+  "kind": "text",
+  "text": "Paraphrase of Barron's Premium 2027, Chapter 9, Topic 7.10, and 5 Steps to a 5 2024, Chapter 23: The First New Deal of 1933 tried to revive separate parts of the economy: the FDIC steadied banks, the AAA paid farmers to grow less, and the NIRA set industry codes. By early 1936 the Supreme Court had struck down the NIRA (1935) and the AAA (1936), unemployment still stood near 20 percent, and critics on the left were demanding more. The Second New Deal of 1935 shifted toward direct help for working people: the WPA gave jobs to the unemployed, the Wagner Act protected unions, and the Social Security Act created pensions and unemployment insurance.",
+  "source_note": "Paraphrase of Barron's Premium 2027, Chapter 9, Topic 7.10, and 5 Steps to a 5 2024, Chapter 23."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus paraphrased from Barron's Premium 2027, Chapter 9, Topic 7.10, and 5 Steps to a 5 2024, Chapter 23",
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify ONE program of the First New Deal described in the passage.",
+   "modelAnswer": "The Federal Deposit Insurance Corporation was a First New Deal program. Created by the Banking Act of 1933, it insured individual bank deposits so that a bank failure would not wipe out a family's savings.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names a First New Deal program from the passage, such as the FDIC, the AAA, or the NIRA, with what it did.",
+     "notEarned": "Naming a Second New Deal program, such as the WPA or the Social Security Act, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain ONE reason Roosevelt launched a Second New Deal in 1935.",
+   "modelAnswer": "The Supreme Court had struck down the NIRA and the AAA, and unemployment still stood near 20 percent. Roosevelt needed new measures that could survive the Court and reach working people directly.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains a specific reason, such as the Court striking down the NIRA and the AAA, unemployment near 20 percent, or pressure from critics on the left.",
+     "notEarned": "A vague statement that Roosevelt wanted to do more, with no specific reason named."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain ONE way the Second New Deal differed from the First New Deal.",
+   "modelAnswer": "The Second New Deal shifted from reviving separate sectors of the economy toward direct help for working people. The Wagner Act protected unions and the Social Security Act built a safety net, rather than setting industry codes or farm prices.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains a specific difference, such as the shift from sector revival to direct help for workers, from codes and price supports to unions and social insurance.",
+     "notEarned": "A vague statement that the Second New Deal was bigger, with no specific difference named."
+    }
+   ]
+  }
+ ]
+}

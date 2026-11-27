@@ -1,0 +1,93 @@
+{
+  "id": "apush-saq-0227",
+  "type": "saq",
+  "unit": 7,
+  "topics": [
+    "7.12"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 3,
+  "skills": [
+    "2.B",
+    "3.B"
+  ],
+  "themes": [
+    "SOC",
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.12 World War II: Mobilization"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "New Deal and WWII (1934-1945)"
+      }
+    ],
+    "primary_sources": [
+      "Executive Order 9066, February 19, 1942"
+    ]
+  },
+  "stimulus": {
+    "kind": "text",
+    "text": "Paraphrase: On February 19, 1942, President Franklin D. Roosevelt signed Executive Order 9066. The order gave military commanders power to exclude any or all persons from designated military areas on the West Coast. Within months, more than 100,000 people of Japanese descent, most of them American citizens, were removed from their homes and held in relocation centers in the interior West.",
+    "source_note": "Paraphrase of Executive Order 9066, February 19, 1942. The order itself named no group; it gave commanders power to exclude persons from military areas."
+  },
+  "stimulus_set": null,
+  "source": "original; stimulus paraphrased from Executive Order 9066 (February 19, 1942)",
+  "saq_slot": 2,
+  "totalPoints": 3,
+  "parts": [
+    {
+      "part": "a",
+      "points": 1,
+      "prompt": "Identify the group affected by the order.",
+      "modelAnswer": "The order was used against people of Japanese descent on the West Coast. More than 100,000 were removed, and most of them were American citizens by birth.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Names Japanese Americans, or people of Japanese descent on the West Coast, as the group removed.",
+          "notEarned": "Naming another group, such as German Americans, who were not removed under the order."
+        }
+      ]
+    },
+    {
+      "part": "b",
+      "points": 1,
+      "prompt": "Explain ONE reason the government gave for the removal.",
+      "modelAnswer": "The government claimed military necessity after the attack on Pearl Harbor. Officials said they feared Japanese Americans might act as spies or saboteurs for Japan, and the Supreme Court accepted that claim in Korematsu in 1944.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Explains a reason the government gave, such as military necessity or fear of espionage and sabotage.",
+          "notEarned": "Stating that the removal happened, with no reason the government gave."
+        }
+      ]
+    },
+    {
+      "part": "c",
+      "points": 1,
+      "prompt": "Explain ONE effect of the removal on the people affected.",
+      "modelAnswer": "Families lost their homes, businesses, and property, much of it sold in haste or taken while they were gone. They lived behind fences and armed guards in relocation centers, and the loss and the stigma lasted long after the war.",
+      "scoring": [
+        {
+          "points": 1,
+          "criterion": "Explains a specific effect, such as loss of homes and property or life in the camps.",
+          "notEarned": "A vague statement that the removal was unfair, with no specific effect named."
+        }
+      ]
+    }
+  ]
+}

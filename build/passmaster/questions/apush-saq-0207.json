@@ -1,0 +1,90 @@
+{
+ "id": "apush-saq-0207",
+ "type": "saq",
+ "unit": 7,
+ "topics": [
+  "7.4"
+ ],
+ "lesson": "apush-u7-l2",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 3,
+ "skills": [
+  "1.B",
+  "4.A"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.4 The Progressives — The Progressive Movement"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 20",
+    "section": "Roots of Progressivism"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "The Progressive Era and World War I (1900-1920)"
+   }
+  ]
+ },
+ "source": "original; stimulus paraphrased from 5 Steps to a 5 2024, Chapter 20, and Barron's Premium 2027, Chapter 9",
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Paraphrase of 5 Steps to a 5 2024, Chapter 20, and Barron's Premium 2027, Chapter 9.",
+  "text": "Paraphrase of 5 Steps to a 5 2024, Chapter 20, and Barron's Premium 2027, Chapter 9: Progressive reformers worked at every level of government. Reform mayors like Tom Johnson of Cleveland took over city utilities to serve citizens better, and governors like Robert La Follette of Wisconsin regulated railroads and pushed direct primaries. At the national level, Theodore Roosevelt broke up trusts and strengthened railroad regulation, while Congress passed the Pure Food and Drug Act and the Meat Inspection Act in 1906. Progressives also pushed the initiative, referendum, recall, and direct election of senators, and the women's suffrage movement finally won the Nineteenth Amendment in 1920."
+ },
+ "stimulus_set": null,
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one example of Progressive action to reform the American economy.",
+   "modelAnswer": "One example was Theodore Roosevelt's use of the Sherman Antitrust Act against the Northern Securities Company, a railroad holding company that had eliminated competition in the Northwest. The Supreme Court upheld the breakup in 1904, showing that the federal government could restrain monopolies. A second example was the Hepburn Act of 1906, which gave the Interstate Commerce Commission greater power to set railroad rates.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names a specific Progressive economic reform, such as the Northern Securities suit, the Hepburn or Elkins Act, the Pure Food and Drug Act, or the Meat Inspection Act.",
+     "notEarned": "A vague statement that Progressives 'reformed the economy' without naming a specific action."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain a second example of Progressive action to reform the American economy.",
+   "modelAnswer": "A second example was the Pure Food and Drug Act and the Meat Inspection Act of 1906, which gave the federal government power to inspect meat and regulate food and drugs. These laws followed the public outcry over Upton Sinclair's The Jungle, which described filthy conditions in Chicago's packing plants. They showed the government protecting consumers from unsafe products rather than leaving the market alone.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains a second, distinct economic reform, such as food and drug regulation, railroad regulation, or the Federal Reserve, and says what the reform did.",
+     "notEarned": "Repeats the part (a) example, or names a reform without explaining what it did."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one example of Progressive action to reform American politics.",
+   "modelAnswer": "One example was the Seventeenth Amendment, ratified in 1913, which took the election of senators from state legislatures and gave it directly to voters. Progressives had argued that legislatures were controlled by party bosses and corporations. Direct election was meant to make the Senate answer to the people instead.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains a specific political reform, such as the Seventeenth Amendment, the initiative, referendum, recall, or direct primary, and says how it changed politics.",
+     "notEarned": "Names a political reform without explaining how it changed politics."
+    }
+   ]
+  }
+ ]
+}

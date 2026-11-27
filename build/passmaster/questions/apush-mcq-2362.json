@@ -1,0 +1,76 @@
+{
+  "id": "apush-mcq-2362",
+  "type": "mcq",
+  "unit": 7,
+  "topics": [
+    "7.13"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 2,
+  "skills": [
+    "1.A"
+  ],
+  "themes": [
+    "WOR"
+  ],
+  "reasoning": "continuity-change",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.13 World War II: Military"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "New Deal and WWII (1934-1945)"
+      }
+    ],
+    "primary_sources": []
+  },
+  "stimulus": {
+    "kind": "table",
+    "text": "Aircraft carriers lost at two Pacific naval battles in 1942.\n\n| Battle | Date | Japanese carriers lost | American carriers lost |\n| Coral Sea | May 1942 | 1 | 1 |\n| Midway | June 1942 | 4 | 1 |",
+    "source_note": "Figures from 5 Steps Chapter 24 (Midway: Japan lost four aircraft carriers and over 200 planes; the United States lost one carrier) and Barron's Chapter 9 (Coral Sea: the U.S. Navy stopped a Japanese fleet headed to New Guinea)."
+  },
+  "stimulus_set": "midway-carriers-1942",
+  "source": "original; stimulus drawn from book-grounded figures and paraphrases (see source_note)",
+  "stem": "The table shows a sharp change between the two battles. What did the Battle of Midway mark for the war in the Pacific?",
+  "options": [
+    {
+      "key": "A",
+      "text": "The last battle fought by aircraft carriers",
+      "misconception": "Carriers fought many more battles after Midway, including Leyte Gulf."
+    },
+    {
+      "key": "B",
+      "text": "The Japanese capture of the Hawaiian Islands",
+      "misconception": "Japan never captured Hawaii; Midway itself is a small island northwest of Hawaii."
+    },
+    {
+      "key": "C",
+      "text": "The turning point, after which Japan fought on the defensive"
+    },
+    {
+      "key": "D",
+      "text": "The first time American and Japanese ships fired on each other",
+      "misconception": "The Coral Sea battle, fought a month earlier, came first."
+    }
+  ],
+  "answerKey": "C",
+  "rationales": {
+    "A": "Carriers kept fighting after Midway, notably at Leyte Gulf in 1944.",
+    "B": "Japan never captured Hawaii; Midway is a small atoll northwest of it.",
+    "C": "After losing four carriers, Japan fought on the defensive for the rest of the war.",
+    "D": "The Coral Sea battle came a month before Midway.",
+    "general": "1. The table shows Japan losing one carrier at Coral Sea and four at Midway.\n2. Background from the books: the United States lost one carrier at Midway, and Japan could not replace its losses.\n3. From Midway on, Japan fought on the defensive while American shipbuilding surged.\n4. That shift is why historians call Midway the turning point of the Pacific war.\nRemember: a turning point shows in the numbers, so compare the losses on each side."
+  }
+}

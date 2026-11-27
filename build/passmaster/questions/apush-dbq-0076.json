@@ -1,0 +1,169 @@
+{
+ "id": "apush-dbq-0076",
+ "type": "dbq",
+ "unit": 7,
+ "topics": [
+  "7.9"
+ ],
+ "lesson": "apush-u7-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 9",
+    "section": "Topic 7.9 The Great Depression"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 23",
+    "section": "Great Depression and the New Deal (1929-1939)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 11",
+    "section": "Jazz Age and Great Depression (1920-1933)"
+   }
+  ],
+  "primary_sources": [
+   "Calvin Coolidge, address “Economy in the Interest of All,” June 30, 1924",
+   "Herbert Hoover, address accepting the Republican presidential nomination, August 11, 1928"
+  ]
+ },
+ "source": "original; documents drawn from public-domain sources, paraphrases, and book-grounded data",
+ "stimulus_set": null,
+ "prompt": "Evaluate the extent to which the Great Depression changed the role of the federal government in American life from 1929 to 1933.",
+ "documents": [
+  {
+   "n": 1,
+   "kind": "text",
+   "date": "1924",
+   "title": "Coolidge on taxes and freedom",
+   "source": "Calvin Coolidge, address “Economy in the Interest of All,” June 30, 1924. Verbatim excerpt, abridged; public domain.",
+   "text": "“One of the rights which the freeman has always guarded with most jealous care is that of enjoying the rewards of his own industry. . . . A government which lays taxes on the people not required by urgent public necessity and sound public policy is not a protector of liberty, but an instrument of tyranny.” — President Calvin Coolidge, June 30, 1924.",
+   "sourcing": "A president defending limited government in a boom year. A statement of principle, not a report on the economy."
+  },
+  {
+   "n": 2,
+   "kind": "text",
+   "date": "1928",
+   "title": "Hoover promises an end to poverty",
+   "source": "Herbert Hoover, address accepting the Republican presidential nomination, August 11, 1928. Verbatim excerpt, abridged; public domain.",
+   "text": "“We in America today are nearer to the final triumph over poverty than ever before in the history of any land. The poorhouse is vanishing from among us. We have not yet reached the goal, but, given a chance to go forward with the policies of the last 8 years, we shall soon with the help of God be in sight of the day when poverty will be banished from this Nation.” — Herbert Hoover, August 11, 1928.",
+   "sourcing": "A presidential candidate accepting his party's nomination in a boom year. A campaign promise, so it shows the confidence of 1928 rather than a measured report."
+  },
+  {
+   "n": 3,
+   "kind": "table",
+   "date": "1933",
+   "title": "Unemployment, 1929-1933",
+   "source": "Table built from the U.S. Bureau of Labor Statistics historical series (Economic Report of the President, Table B-22).",
+   "text": "| Year | Unemployment rate |\n| 1929 | 3.2% |\n| 1930 | 8.7% |\n| 1931 | 15.9% |\n| 1932 | 23.6% |\n| 1933 | 24.9% |",
+   "sourcing": "A table built from government statistics, counting joblessness rather than arguing a case. Numbers that show how far the Depression spread."
+  },
+  {
+   "n": 4,
+   "kind": "table",
+   "date": "1933",
+   "title": "Bank suspensions, 1929-1933",
+   "source": "Table built from the Federal Reserve Bulletin, September 1937, Table 1.",
+   "text": "| Year | Banks that closed |\n| 1929 | 659 |\n| 1930 | 1,350 |\n| 1931 | 2,293 |\n| 1932 | 1,453 |\n| 1933 | 4,000 |\nThe 1933 figure counts banks closed in the banking crisis and not licensed to reopen after the March 1933 bank holiday.",
+   "sourcing": "A table built from Federal Reserve figures, counting closures rather than arguing a case. Numbers that show the banking system collapsing."
+  },
+  {
+   "n": 5,
+   "kind": "image",
+   "date": "1929",
+   "title": "The crowd outside the Stock Exchange",
+   "source": "Photograph taken October 29, 1929, outside the New York Stock Exchange. Public domain (pre-1930); via Wikimedia Commons.",
+   "figure": "u7/5s24-ch23-mcq-01.jpg",
+   "text": "The photograph shows a large crowd of men in suits and hats filling the street outside the New York Stock Exchange on October 29, 1929, with automobiles stopped among them and tall buildings on both sides.",
+   "sourcing": "A news photograph taken on the day of the crash. A picture of panic, not a count of losses."
+  },
+  {
+   "n": 6,
+   "kind": "text",
+   "date": "1932",
+   "title": "The Bonus Army is driven out",
+   "source": "Paraphrase of 5 Steps to a 5 2024, Chapter 23, and Barron's Premium 2027, Chapter 9, Topic 7.9.",
+   "text": "Paraphrase: In the summer of 1932 thousands of unemployed World War I veterans marched on Washington to demand early payment of bonuses legally due them in 1945. After clashes with police left two veterans dead, President Hoover ordered federal troops to clear the veterans from downtown Washington. General Douglas MacArthur went further than his orders, storming the veterans' camp with fixed bayonets and tear gas, and the shelters were burned.",
+   "sourcing": "A textbook account of the episode, written long after the event. A summary of what happened, not a voice from 1932."
+  },
+  {
+   "n": 7,
+   "kind": "text",
+   "date": "1932",
+   "title": "Roosevelt promises a New Deal",
+   "source": "Paraphrase of Franklin Roosevelt's words as governor of New York and as a candidate in 1932, per 5 Steps to a 5 2024, Chapter 23.",
+   "text": "Paraphrase: As governor of New York, Roosevelt set up an extensive relief program and said government relief was a matter of social duty, not charity. In the 1932 campaign he promised the American people a “New Deal,” offering a president who seemed to care about their troubles and an alternative to the care-worn incumbent.",
+   "sourcing": "A paraphrase of Roosevelt's own words as governor and candidate. A promise of change, made before he held federal power."
+  }
+ ],
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent to which the Depression changed the federal government's role from 1929 to 1933, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim about the extent of the change does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as the prosperity and limited government of the 1920s, the Progressive era's earlier expansion of federal power, or the Panics of 1893 and 1907.",
+   "notEarned": "A sentence of background with no link to the argument, or background from a later century, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence from documents (first point): earns the point for describing specific and relevant evidence from at least three documents to support an argument about the federal government's role from 1929 to 1933.",
+   "notEarned": "Naming documents without describing their content does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence from documents (second point): earns the point for using the content of at least six documents to support an argument about the federal government's role from 1929 to 1933.",
+   "notEarned": "Using fewer than six documents, or describing them without tying them to the argument, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence beyond the documents: earns the point for describing a specific and relevant example beyond the documents, such as the Agricultural Marketing Act and Farm Board of 1929, the Hawley-Smoot Tariff of 1930, Hoovervilles, or the election of 1932.",
+   "notEarned": "A vague reference to the Depression with no specific example does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "3.B",
+   "criterion": "Sourcing: earns the point for explaining the relevance of a document's author, purpose, audience, or historical situation, such as Coolidge defending limited government in 1924, Hoover promising prosperity as a candidate in 1928, or Roosevelt redefining relief as social duty.",
+   "notEarned": "Naming an author without explaining why the authorship matters does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Complexity: earns the point for demonstrating a complex understanding, such as qualifying the change by showing Hoover already expanded federal action before Roosevelt, or weighing how far the federal role actually changed by 1933.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ],
+ "modelOutline": "Thesis: The Depression changed the federal government's role a great deal by 1933, but the change came in two steps: Hoover already stretched the old limits, and Roosevelt then broke through them.\nContext: The 1920s ran on limited government and confidence in business, with Coolidge cutting taxes and Hoover promising the end of poverty, while earlier panics in 1893 and 1907 had already shown the economy could collapse.\nEvidence: Documents 1-2 show the old view: Coolidge calls heavy taxation tyranny and Hoover promises poverty will soon be banished.\nEvidence: Documents 3-5 show the old view failing: unemployment rises to 24.9 percent, 4,000 banks close in 1933, and a panicked crowd fills Wall Street.\nEvidence: Documents 6-7 show the turn: troops drive out the Bonus Army, confirming Hoover as a symbol of hard times, while Roosevelt calls relief a social duty and promises a New Deal.\nBeyond the documents: Hoover signed the Agricultural Marketing Act and backed the Reconstruction Finance Corporation in 1932, and the Hawley-Smoot Tariff of 1930 deepened the crisis, while voters gave Roosevelt 472 electoral votes in 1932.\nSourcing: Coolidge defends principle in a boom year, Hoover promises as a candidate, and Roosevelt promises change before holding federal power, so each voice must be weighed by its moment.\nComplexity: The change was real but uneven: Hoover expanded federal lending while refusing direct relief, so the federal role grew before Roosevelt, and even in 1933 direct relief remained new and contested.",
+ "totalPoints": 7,
+ "figures": [
+  {
+   "id": "fig-apush-dbq-0076",
+   "file": "u7/5s24-ch23-mcq-01.jpg",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Crowd_outside_nyse.jpg",
+   "license": "Public domain (photograph taken October 29, 1929; pre-1930)",
+   "caption": "A crowd gathers outside the New York Stock Exchange on October 29, 1929.",
+   "alt": "A large crowd of men in suits and hats fills a street between tall buildings, with automobiles stopped among them."
+  }
+ ]
+}

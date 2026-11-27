@@ -1,0 +1,159 @@
+{
+  "id": "apush-dbq-0082",
+  "type": "dbq",
+  "unit": 7,
+  "topics": [
+    "7.13"
+  ],
+  "lesson": "apush-u7-l5",
+  "status": "final",
+  "pool": "practice",
+  "difficulty": 4,
+  "skills": [
+    "6.A",
+    "6.B"
+  ],
+  "themes": [
+    "WOR",
+    "PCE"
+  ],
+  "reasoning": "causation",
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 9",
+        "section": "Topic 7.13 World War II: Military"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 24",
+        "section": "World War II (1933-1945)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 11",
+        "section": "New Deal and WWII (1934-1945)"
+      }
+    ],
+    "primary_sources": [
+      "Agreement reached by President Roosevelt and Prime Minister Churchill at the Washington conference, December 1941-January 1942",
+      "General Dwight D. Eisenhower's Order of the Day, June 6, 1944",
+      "President Harry S. Truman's announcement of the atomic bombing of Hiroshima, August 6, 1945"
+    ]
+  },
+  "stimulus_set": null,
+  "source": "original; documents drawn from paraphrases of public-domain federal documents and commanders' orders, book-grounded battle figures, and a description of a wartime photograph",
+  "prompt": "Evaluate the extent to which American military strategy contributed to the Allied victory in World War II between 1941 and 1945.",
+  "documents": [
+    {
+      "n": 1,
+      "kind": "text",
+      "date": "1941",
+      "title": "The Europe-first decision",
+      "source": "Paraphrase of the agreement reached by President Roosevelt and Prime Minister Churchill at the Washington conference, December 1941-January 1942.",
+      "text": "Paraphrase: The United States and Britain agreed that Germany would be defeated first, even though Japan had attacked the United States directly. Germany, with its armies and industry in Europe, was judged the greater danger to Britain and the Soviet Union.",
+      "sourcing": "An agreement between two allied leaders, made before American troops had fought a major battle. It states a priority, not a report of what happened."
+    },
+    {
+      "n": 2,
+      "kind": "table",
+      "date": "1942",
+      "title": "Aircraft carriers lost at Coral Sea and Midway",
+      "source": "Table compiled in 1942 from U.S. Navy battle reports.",
+      "text": "| Battle | Date | Japanese carriers lost | American carriers lost |\n| Coral Sea | May 1942 | 1 | 1 |\n| Midway | June 1942 | 4 | 1 |",
+      "sourcing": "A table of battle losses compiled from navy reports. The numbers show a turning point, not anyone's opinion."
+    },
+    {
+      "n": 3,
+      "kind": "text",
+      "date": "1942",
+      "title": "The fight for Guadalcanal",
+      "source": "Paraphrase of U.S. Marine Corps accounts of the Guadalcanal campaign, August 1942-February 1943.",
+      "text": "Paraphrase: Marines landed on Guadalcanal in August 1942, the first American offensive in the Pacific. Months of jungle fighting followed, and the Japanese fought fiercely for the island before withdrawing in February 1943.",
+      "sourcing": "An account written from the Marines' side of the fighting. It describes what the campaign cost, not what it proved."
+    },
+    {
+      "n": 4,
+      "kind": "text",
+      "date": "1943",
+      "title": "The landings in Sicily",
+      "source": "Paraphrase of Allied reports on the invasion of Sicily, July 1943.",
+      "text": "Paraphrase: Allied troops landed in Sicily in July 1943 and took the island within weeks. The landing led the Italian king to dismiss Mussolini, and a new Italian government left the Axis, but German troops kept fighting up the Italian peninsula.",
+      "sourcing": "An Allied report on a successful landing. It records both the gain and the limit: Italy left the Axis, but German resistance continued."
+    },
+    {
+      "n": 5,
+      "kind": "text",
+      "date": "1944",
+      "title": "Eisenhower's order for D-Day",
+      "source": "Paraphrase of General Dwight D. Eisenhower's Order of the Day to the troops, June 6, 1944.",
+      "text": "Paraphrase: On June 6, 1944, General Eisenhower told the troops landing in Normandy that they were beginning a great crusade to destroy German tyranny and free the peoples of Europe. He said the eyes of the world were upon them, and the hopes of liberty-loving people everywhere marched with them.",
+      "sourcing": "A commander's message to his troops on the morning of the invasion. It was written to inspire, not to report facts."
+    },
+    {
+      "n": 6,
+      "kind": "text",
+      "date": "1945",
+      "title": "The cloud over Nagasaki",
+      "source": "Description of the photograph of the mushroom cloud over Nagasaki, taken from the air on August 9, 1945.",
+      "text": "Description: The photograph shows a huge white mushroom-shaped cloud rising above smaller clouds, with a dark column of smoke beneath it, over the city of Nagasaki, Japan, on August 9, 1945.",
+      "sourcing": "A photograph taken by an American airman hours after the second atomic bomb was dropped. It shows the weapon's scale, not its human cost."
+    },
+    {
+      "n": 7,
+      "kind": "text",
+      "date": "1945",
+      "title": "The Japanese surrender",
+      "source": "Paraphrase of the surrender ceremony aboard the battleship USS Missouri in Tokyo Bay, September 2, 1945.",
+      "text": "Paraphrase: On September 2, 1945, Japanese representatives signed the surrender aboard the battleship USS Missouri in Tokyo Bay, in the presence of General Douglas MacArthur and Allied officers. The signing ended World War II.",
+      "sourcing": "A formal ceremony staged for the world to see. It marks the end of the war, not the fighting that led to it."
+    }
+  ],
+  "rubric": [
+    {
+      "points": 1,
+      "skill": "6.A",
+      "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent to which American military strategy contributed to the Allied victory between 1941 and 1945, with a clear line of reasoning.",
+      "notEarned": "Restating the prompt with no claim about the extent does not earn the point."
+    },
+    {
+      "points": 1,
+      "skill": "4.B",
+      "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as the attack on Pearl Harbor, the Europe-first decision, or the Soviet Union carrying most of the fighting against Germany before 1944.",
+      "notEarned": "A sentence of background with no link to the argument, or background from a later century, does not earn the point."
+    },
+    {
+      "points": 1,
+      "skill": "6.B",
+      "criterion": "Evidence from documents (first point): earns the point for describing specific and relevant evidence from at least three documents to support an argument.",
+      "notEarned": "Naming documents without describing their content does not earn the point."
+    },
+    {
+      "points": 1,
+      "skill": "6.B",
+      "criterion": "Evidence from documents (second point): earns the point for using the content of at least six documents to support an argument.",
+      "notEarned": "Using fewer than six documents, or describing them without tying them to the argument, does not earn the point."
+    },
+    {
+      "points": 1,
+      "skill": "6.B",
+      "criterion": "Evidence beyond the documents: earns the point for describing a specific and relevant example beyond the documents, such as the Battle of the Bulge, the island-hopping campaign, the Battle of the Atlantic, or the Manhattan Project.",
+      "notEarned": "A vague reference to military strategy with no specific example does not earn the point."
+    },
+    {
+      "points": 1,
+      "skill": "3.B",
+      "criterion": "Sourcing: earns the point for explaining the relevance of a document's author, purpose, audience, or historical situation, such as a commander's order written to inspire troops, a photograph that shows scale but not human cost, or an agreement that states a priority rather than a result.",
+      "notEarned": "Naming an author without explaining why the authorship matters does not earn the point."
+    },
+    {
+      "points": 1,
+      "skill": "6.B",
+      "criterion": "Complexity: earns the point for demonstrating a complex understanding, such as qualifying the claim by theater, showing that strategy mattered more in one theater than the other, or weighing strategy against industrial production and Soviet sacrifice.",
+      "notEarned": "A second example with no qualification or weighing does not earn the point."
+    }
+  ],
+  "modelOutline": "Thesis: American military strategy contributed to the Allied victory to a great extent, because Europe-first set the priorities, Midway and island hopping broke Japanese naval power, and D-Day opened the second front, but strategy alone did not win the war: it worked only with American industrial production and Soviet sacrifice.\nContext: Japan attacked Pearl Harbor on December 7, 1941, bringing the United States into a two-front war, while the Soviet Union had already been carrying most of the fighting against Germany since June 1941.\nEvidence: Documents 1 and 5 show the European strategy: the 1941 Europe-first agreement ranked Germany the greater danger, and Eisenhower's D-Day order opened the second front Stalin had demanded.\nEvidence: Documents 2, 3, and 4 show the Pacific and Mediterranean strategy: the carrier table marks Midway as the turning point, Guadalcanal opened the island campaign, and the Sicily landings broke Italy from the Axis.\nEvidence: Documents 6 and 7 show the end: the Nagasaki photograph marks the atomic bombings that forced Japan's surrender, signed aboard the Missouri in September 1945.\nBeyond the documents: the Battle of the Bulge showed German strategy failing in its last gamble, the Battle of the Atlantic kept Britain supplied, and the Manhattan Project built the weapon that ended the Pacific war.\nSourcing: the Europe-first agreement states a plan, not a result; Eisenhower's order was written to inspire troops; the photograph shows the bomb's scale, not its human cost.\nComplexity: Strategy mattered most where it matched resources: in the Pacific, island hopping worked because American shipbuilding replaced losses Japan could not, while in Europe the second front mattered because Soviet armies had already bled Germany for three years.",
+  "totalPoints": 7
+}
