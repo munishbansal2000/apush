@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-0726",
+ "lesson": "apush-u3-l5",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.12"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "NAT",
+  "GEO"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 2,
+ "status": "final",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.12 Movement in the Early Republic"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "Establishment of New Political Systems (1787-1800)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Unit 3: Conflict and American Independence (1754-1800)"
+   }
+  ],
+  "primary_sources": [
+   "United States Census, 1790"
+  ]
+ },
+ "stimulus_set": "new-states-1791-1796",
+ "stimulus": {
+  "kind": "table",
+  "text": "| State | Admitted | Order | Formed from |\n|---|---|---|---|\n| Vermont | March 4, 1791 | 14th | Independent republic |\n| Kentucky | June 1, 1792 | 15th | Virginia |\n| Tennessee | June 1, 1796 | 16th | Southwest Territory |\n\nBackground from the books: The Northwest Ordinance set 60,000 free inhabitants as the mark for statehood. In the 1790 census the Southwest Territory (present-day Tennessee) counted 35,691 people. A territorial census in 1795 counted 77,262.",
+  "source_note": "Admission dates from the Congressional Research Service, Admission of States to the Union; population counts from the United States Census, 1790, and the 1795 territorial census of the Southwest Territory."
+ },
+ "source": "original; table drawn from the Congressional Research Service admission list and the United States Census.",
+ "stem": "According to the table, which state was admitted to the Union first?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Tennessee",
+   "misconception": "Tennessee came third of the three, in 1796."
+  },
+  {
+   "key": "B",
+   "text": "Kentucky",
+   "misconception": "Kentucky was second, in 1792."
+  },
+  {
+   "key": "C",
+   "text": "Ohio",
+   "misconception": "Background: Ohio was not admitted until 1803, after this table's period."
+  },
+  {
+   "key": "D",
+   "text": "Vermont"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "A": "Tennessee was admitted June 1, 1796, last of the three.",
+  "B": "Kentucky was admitted June 1, 1792, after Vermont.",
+  "C": "Ohio is not in the table; it joined the Union in 1803.",
+  "D": "The table lists Vermont first, admitted March 4, 1791, before Kentucky in 1792 and Tennessee in 1796.",
+  "general": "1. The table gives three states and three admission dates.\n2. Read the admission dates in the table.\n3. Vermont's date is March 4, 1791.\n4. Kentucky follows in 1792 and Tennessee in 1796.\n5. So Vermont, the 14th state, was first of the three.\nRemember: in a table, the date column answers \"first\" — read the dates in order and take the earliest, don't guess from the map."
+ }
+}

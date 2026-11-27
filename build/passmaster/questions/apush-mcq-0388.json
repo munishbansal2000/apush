@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-0388",
+ "lesson": "apush-u3-l1",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.2"
+ ],
+ "skills": [
+  "3.D"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 4,
+ "stimulus_set": "war-debt-table",
+ "stimulus": {
+  "kind": "table",
+  "text": "The table shows the cost of the Seven Years' War to Britain and the size of the forces that fought it in North America.\n\n| Item | Figure |\n| British national debt, 1754 | about \u00a375 million |\n| British national debt, 1763 | about \u00a3133 million |\n| Annual interest on the debt, 1763 | more than \u00a34.4 million |\n| British regular soldiers sent to North America during the war | 25,000 |\n| Colonial provincial soldiers who served alongside them | about 24,000 |",
+  "source_note": "Debt figures: UK Parliament historical national debt figures (about \u00a375 million in 1754, about \u00a3133 million in 1763; annual interest over \u00a34.4 million). Troop figures: 5 Steps to a 5, 2024, Chapter 9."
+ },
+ "source": "original; stimulus viewed before writing \u2014 Debt figures: UK Parliament historical national debt figures (about \u00a375 million in 1754, about \u00a3133 million in 1763; annual interest over \u00a34.4 million). Troop figures: 5 Steps to a 5, 2024, Chapter 9.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "B. Debt and Taxation Following the French and Indian War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 9",
+    "section": "The British Need Money"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Seven Years' War (1754\u20131763)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "A 1763 memorandum from a British treasury official argues that because the war left Britain deeply in debt, the colonies \u2014 which had grown rich from wartime contracts and trade \u2014 should now help pay the empire's costs through new parliamentary taxes. Which of the following best evaluates the reasoning of the memorandum's argument?",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "This accepts the memorandum's premise without examining it. Sound evaluation requires checking whether the evidence \u2014 here, the claim that the colonies as a whole grew rich \u2014 actually supports the conclusion.",
+   "text": "It is sound: Britain's war debt made new taxes necessary, and the colonies' wartime profits show they could afford to pay their fair share of the empire's costs."
+  },
+  {
+   "key": "B",
+   "misconception": "This confuses sequence with explanation: the fact that taxes followed the war does not by itself prove why they were imposed. It also misstates colonial objections, which were about Parliament's right to tax, not the amounts.",
+   "text": "It is sound because taxation always follows a major war, so the colonists' objections must really have been about the size of the tax bills rather than about Parliament's authority to impose them at all."
+  },
+  {
+   "key": "C",
+   "misconception": "The North American war was a large part of Britain's costs \u2014 25,000 regulars and 24,000 provincials fought there \u2014 and the debt it produced was real, whatever its causes.",
+   "text": "It is flawed: Britain's debt was caused by the war in Europe, not by the fighting in North America, so the colonies owed nothing for it."
+  },
+  {
+   "key": "D",
+   "text": "It is flawed: wartime profits went mostly to coastal merchants and contractors, while frontier regions endured raids and occupation \u2014 the premise of uniform colonial enrichment does not hold."
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "A": "The memorandum treats \"the colonies\" as one economy, but the war was fought across a whole continent, not a single market.",
+  "B": "Taxes often follow wars, but that proves nothing about why these were imposed \u2014 and the colonists objected to Parliament's authority, not the bill's size.",
+  "C": "The debt was the war's debt, much of it run up in North America; the memorandum's flaw is its picture of who got rich.",
+  "D": "The memorandum treats \"the colonies\" as a single economy, but the war's costs and profits fell very unevenly. Port-city merchants and army contractors grew rich, while Pennsylvania's frontier absorbed devastating raids. The deeper flaw is not that taxes followed the war \u2014 they did \u2014 but that the argument builds its case on a false picture of shared colonial prosperity, while colonial objections centered on Parliament's authority to tax at all, not on the size of the bill.",
+  "general": "1. Find the premise. The memorandum claims the colonies, as a whole, grew rich from the war.\n2. Test it against the war. Merchants and contractors in port cities profited, but frontier settlements were raided, burned, and occupied.\n3. Ask what follows. A premise that is false for large parts of the colonies cannot carry a conclusion about all of them.\nRemember: when an argument says \"everyone,\" check who it leaves out \u2014 the exception is often the argument's undoing."
+ }
+}

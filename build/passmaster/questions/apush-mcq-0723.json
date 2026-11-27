@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-0723",
+ "lesson": "apush-u3-l5",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 3,
+ "topics": [
+  "3.12"
+ ],
+ "skills": [
+  "2.A"
+ ],
+ "themes": [
+  "GEO",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "status": "final",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.7 The Articles of Confederation"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "Establishment of New Political Systems (1787-1800)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Unit 3: Conflict and American Independence (1754-1800)"
+   }
+  ],
+  "primary_sources": [
+   "Land Ordinance of 1785"
+  ]
+ },
+ "stimulus_set": "land-ordinance-1785",
+ "stimulus": {
+  "kind": "text",
+  "text": "Land Ordinance of 1785 (May 20, 1785). Paraphrase: After the states ceded their western land claims to the national government, Congress ordered the land north of the Ohio River surveyed before it was sold or settled. Surveyors divided the land into townships six miles square. Each township held thirty-six sections of 640 acres. The ordinance reserved lot number 16 of every township “for the maintenance of public schools, within the said township.” It also reserved lots 8, 11, 26, and 29 for the United States. Land was sold at public auction at a minimum price of $1 an acre, and no buyer could buy less than one whole section (640 acres).",
+  "source_note": "Land Ordinance of May 20, 1785; the section 16 clause is quoted verbatim (public domain). Details from Barron’s Premium 2027, Chapter 5, Topic 3.7, and the Indiana Historical Bureau."
+ },
+ "source": "original; stimulus paraphrased from the Land Ordinance of May 20, 1785 (public domain).",
+ "stem": "What was lot number 16 of every township reserved for?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The maintenance of public schools in the township."
+  },
+  {
+   "key": "B",
+   "text": "The governor's house and offices.",
+   "misconception": "The governor's land is not in the ordinance; lot 16 is the school lot."
+  },
+  {
+   "key": "C",
+   "text": "Sale to the highest bidder at auction.",
+   "misconception": "Lot 16 was held back from sale; its money supported schools."
+  },
+  {
+   "key": "D",
+   "text": "The United States' future land sales.",
+   "misconception": "Lots 8, 11, 26, and 29 were reserved for the United States, not lot 16."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "The ordinance reserves lot 16 of every township for the maintenance of public schools.",
+  "B": "The ordinance names no governor's lot; lot 16 is the school lot.",
+  "C": "Lot 16 was reserved, not sold; the school was paid from it.",
+  "D": "Lots 8, 11, 26, and 29 were the United States' lots; lot 16 was the school lot.",
+  "general": "1. The ordinance divides each township into 36 numbered sections.\n2. It holds lot 16 out of the sale in every township.\n3. The words of the ordinance tie that lot to the maintenance of public schools.\n4. So every surveyed township carried one school section by law.\nRemember: when a law reserves one numbered lot, the number is the fact to hold on to."
+ }
+}

@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-0409",
+ "lesson": "apush-u3-l1",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.2"
+ ],
+ "skills": [
+  "2.A"
+ ],
+ "themes": [
+  "GEO",
+  "SOC"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 3,
+ "stimulus_set": "native-diplomacy",
+ "stimulus": {
+  "kind": "text",
+  "text": "Before 1754, the Native nations of the Ohio Valley and Great Lakes played the British and French empires against each other, trading with both and refusing to be ruled by either. Most sided with France during the war: the French, few in number and dependent on the fur trade, treated Native peoples as allies and partners, while the British came as settlers who wanted the land itself.\n\nWhen France lost in 1763, the Native nations lost the counterweight that had protected their independence, and British settlers pressed into the Ohio Valley.",
+  "source_note": "Original secondary passage written for this question; facts from Barron's Premium 2027, Chapter 5, \"British Victory in the French and Indian War\" and \"C. American Indian Resistance and Colonial Settlement Following the French and Indian War.\""
+ },
+ "source": "original; stimulus viewed before writing \u2014 Original secondary passage written for this question; facts from Barron's Premium 2027, Chapter 5, \"British Victory in the French and Indian War\" and \"C. American Indian Resistance and Colonial Settlement Following the French and Indian War.\"",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Origins of the French and Indian War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 9",
+    "section": "War in the West"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Seven Years' War (1754\u20131763)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "Which of the following best compares the British and French approaches to Native peoples in North America before 1763?",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The two empires differed sharply: France traded and allied, Britain settled and displaced.",
+   "text": "Both empires treated Native peoples identically, as subjects with no rights of their own."
+  },
+  {
+   "key": "B",
+   "misconception": "This reverses the two empires: it was France that traded and Britain that settled.",
+   "text": "Britain built alliances through the fur trade, while France sent farming families to take Native land."
+  },
+  {
+   "key": "C",
+   "text": "France relied on trade and alliance with Native peoples, while Britain's settlers pressed onto Native lands."
+  },
+  {
+   "key": "D",
+   "misconception": "France traded extensively with Native peoples; Britain did not welcome them as equal partners in government.",
+   "text": "France refused to trade with Native peoples, while Britain welcomed them as equal partners in government."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "The passage draws a sharp contrast: France's few settlers lived by trade and alliance, while Britain's farming families wanted the land itself.",
+  "B": "The roles are reversed: France was the trading empire and Britain the settling one, as the passage's contrast between French traders and British farmers shows.",
+  "C": "France sent few people and lived by the fur trade, so it needed Native hunters and guides and treated them as partners and allies. Britain sent farming families in growing numbers, and each new farm was land taken from Native peoples. That difference in what each empire wanted \u2014 furs or farms \u2014 decided how each treated the peoples already there.",
+  "D": "France was the great trading partner of Native peoples, and Britain never offered them a share in government; the option reverses both facts.",
+  "general": "1. Ask what France sent. Few settlers, mostly traders \u2014 people who needed Native hunters, not Native land.\n2. Ask what Britain sent. Farming families, in ever-growing numbers \u2014 people who needed the land itself.\n3. Follow the consequence. A trader is a partner; a farmer is a rival for the same ground.\nRemember: an empire's attitude to the people already on the land is decided by what it came for."
+ }
+}

@@ -1,0 +1,88 @@
+{
+ "id": "apush-mcq-0626",
+ "lesson": "apush-u3-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.9"
+ ],
+ "skills": [
+  "2.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "constitution-page-3",
+ "stimulus": {
+  "kind": "image",
+  "text": "The third page of the engrossed Constitution, signed at Philadelphia on September 17, 1787, carries the end of Article II and the start of Article III. It says the person with the most electoral votes shall be President \u201cif such Number be a Majority of the whole Number of Electors appointed,\u201d and that if no person has a majority, \u201cthe House of Representatives shall in like Manner chuse the President\u201d from the five highest on the list. Section 2 names the president \u201cCommander in Chief of the Army and Navy of the United States\u201d and gives power, \u201cby and with the Advice and Consent of the Senate, to make Treaties\u201d and to appoint ambassadors and \u201cJudges of the supreme Court.\u201d Article III, Section 1 vests judicial power in \u201cone supreme Court,\u201d and says judges \u201cshall hold their Offices during good Behaviour\u201d and that their pay \u201cshall not be diminished during their Continuance in Office.\u201d",
+  "source_note": "Constitution of the United States, third page, engrossed by Jacob Shallus, signed September 17, 1787. Public domain."
+ },
+ "source": "original; stimulus viewed before writing \u2014 Constitution of the United States, third page, engrossed by Jacob Shallus, signed September 17, 1787, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.9 The Constitution, A. The Structure of Government Under the Constitution"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "The Constitutional Convention"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "A New Constitution"
+   }
+  ],
+  "primary_sources": [
+   "Constitution of the United States, Article II and Article III (September 17, 1787)"
+  ]
+ },
+ "status": "final",
+ "stem": "According to the page, what happens if no candidate for president wins a majority of the electoral votes?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The Senate chooses the president from the two highest vote-getters.",
+   "misconception": "The page gives the choice to the House, not the Senate, and from five names, not two."
+  },
+  {
+   "key": "B",
+   "text": "The candidate with the most votes becomes president without a majority.",
+   "misconception": "The page requires a majority; without one, the House chooses."
+  },
+  {
+   "key": "C",
+   "text": "A new election is held with the same electors voting again.",
+   "misconception": "The page says the House chooses, not that the electors vote again."
+  },
+  {
+   "key": "D",
+   "text": "The House chooses the president from the five highest on the list."
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "D": "The page says that if no person has a majority, the House shall choose the president \u201cfrom the five highest on the List.\u201d",
+  "A": "The page gives this choice to the House of Representatives, not the Senate.",
+  "B": "The page requires a majority of electors; the most votes alone are not enough.",
+  "C": "The page sends the choice to the House, not back to the electors.",
+  "general": "1. The page sets the rule for choosing a president: the most votes, if that number is a majority of electors.\n2. It then covers the case where no person has a majority.\n3. In that case the House of Representatives chooses, from the five highest on the list.\n4. The Senate gets no role in this choice, and no new election is held.\nRemember: when the electors fail to pick a winner, the Constitution sends the choice to the House."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0626",
+   "file": "u3/constitution-page-3-1787.jpg",
+   "caption": "Third page of the engrossed Constitution, 1787",
+   "alt": "Handwritten third page of the Constitution showing Article II on the presidency and Article III on the judiciary, with the words Commander in Chief and good Behaviour visible",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Constitution_of_the_United_States,_page_3.jpg"
+  }
+ ]
+}

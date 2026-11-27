@@ -1,0 +1,86 @@
+{
+ "id": "apush-mcq-0509",
+ "lesson": "apush-u3-l3",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.5"
+ ],
+ "skills": [
+  "2.C"
+ ],
+ "themes": [
+  "WOR",
+  "ARC"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 4,
+ "stimulus_set": "yorktown-trumbull",
+ "stimulus": {
+  "kind": "image",
+  "text": "The painting shows the surrender at Yorktown on October 19, 1781. In the center, a British officer in a red coat stands before an American officer on a white horse and presents his sword. American officers on horseback and on foot stand to the right, under the American flag, while British officers wait to the left under a white flag. The painting is John Trumbull's Surrender of Lord Cornwallis, painted in 1820. Cornwallis himself did not attend the surrender; he sent his second-in-command, General Charles O'Hara, who is the British officer shown presenting the sword.",
+  "source_note": "John Trumbull, Surrender of Lord Cornwallis, 1820. Public domain."
+ },
+ "source": "original; stimulus viewed before writing \u2014 John Trumbull, Surrender of Lord Cornwallis, 1820, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.5 The American Revolution, A. The War for Independence"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 10"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Fighting the Revolution"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "The painting's staging of the surrender \u2014 orderly officers, flags, and a sword offered in ceremony \u2014 best shows that Trumbull intended it as",
+ "options": [
+  {
+   "key": "A",
+   "text": "A French account of the siege",
+   "misconception": "The painting centers American and British officers; it is an American commemoration, not a French account."
+  },
+  {
+   "key": "B",
+   "text": "Evidence that Cornwallis surrendered in person",
+   "misconception": "Cornwallis did not attend the surrender, so the painting cannot be evidence that he surrendered in person."
+  },
+  {
+   "key": "C",
+   "text": "A battlefield report drawn on the spot at Yorktown",
+   "misconception": "Trumbull painted the scene in 1820, nearly forty years after Yorktown, so it cannot be a report drawn on the spot."
+  },
+  {
+   "key": "D",
+   "text": "A national memory of an honorable victory"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "D": "The calm ceremony, the flags, and the offered sword turn a siege's end into a dignified national moment, the way Americans wanted to remember their victory.",
+  "C": "Trumbull painted in 1820, decades after the event; the painting is memory, not a sketch made at Yorktown.",
+  "A": "The French are not the focus; the painting is an American image of an American victory, made for an American audience.",
+  "B": "Cornwallis stayed away and sent O'Hara, so the painting shows a deputy surrendering, not Cornwallis himself.",
+  "general": "1. Look at the tone. No smoke, no dead, no confusion \u2014 officers in order, flags flying, a sword offered politely.\n2. Check the date. Trumbull painted in 1820, when the Revolution was becoming national memory, not news.\n3. Ask what the calm staging does. It makes the victory look honorable and complete, the way a young nation wants to remember it.\nRemember: a commemoration paints the meaning, not the moment \u2014 ask what the artist polished away. Background: Trumbull painted the surrender in 1820, thirty-nine years after Yorktown."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0509",
+   "file": "u3/surrender-cornwallis-yorktown.jpg",
+   "caption": "John Trumbull, Surrender of Lord Cornwallis, 1820",
+   "alt": "Trumbull painting of the British surrender at Yorktown, with a British officer presenting his sword to the Americans under their flag",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Surrender_of_Lord_Cornwallis.jpg"
+  }
+ ]
+}

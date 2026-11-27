@@ -1,0 +1,75 @@
+{
+ "id": "apush-mcq-0505",
+ "lesson": "apush-u3-l3",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.5"
+ ],
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "southern-strategy",
+ "stimulus": {
+  "kind": "table",
+  "text": "| Battle | Date | Result |\n|---|---|---|\n| Siege of Charleston | May 1780 | British victory; some 5,000 Americans surrendered |\n| Camden | August 1780 | British victory over the American army in the South |\n| Kings Mountain | October 1780 | American militia victory over a Loyalist force |\n| Cowpens | January 1781 | American victory; British light troops destroyed |\n| Guilford Courthouse | March 1781 | British victory, but with heavy losses |\n| Yorktown | October 1781 | American and French victory; Cornwallis surrendered |",
+  "source_note": "Battle results from Barron's Premium 2027, Chapter 5, and 5 Steps to a 5 2024, Chapter 10."
+ },
+ "source": "original; table drawn from Barron's Premium 2027, Chapter 5, and 5 Steps to a 5 2024, Chapter 10.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.5 The American Revolution, A. The War for Independence"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 10"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Fighting the Revolution"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "The British shifted their campaign to the South in 1778 mainly because they believed",
+ "options": [
+  {
+   "key": "A",
+   "text": "The southern colonies had already declared for the king",
+   "misconception": "No southern colony declared for the king; the British hoped Loyalist sympathy would rally, not that it already ruled."
+  },
+  {
+   "key": "B",
+   "text": "The French navy could not reach southern ports",
+   "misconception": "The French navy did reach southern waters, and at Yorktown it sealed Cornwallis in; southern ports were not beyond its reach."
+  },
+  {
+   "key": "C",
+   "text": "Loyalist support was strongest in the South"
+  },
+  {
+   "key": "D",
+   "text": "The Continental Army had no troops in the South",
+   "misconception": "The Continental Army did have troops in the South, and under Greene it fought on after Charleston and Camden."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "C": "After the northern stalemate, Britain bet that the South held the most Loyalists, who would rally, supply, and garrison the countryside.",
+  "B": "The French navy did operate in southern waters; at Yorktown it blocked Cornwallis's escape by sea.",
+  "D": "American troops fought in the South throughout the campaign, and Greene rebuilt the southern army after Camden.",
+  "A": "No colony declared for the king; Loyalist sympathy was a hope, not a government already in place.",
+  "general": "1. Ask why the South. After Saratoga and the French alliance, the North was a stalemate and Britain needed a new plan.\n2. Ask what the South offered. The British believed Loyalist feeling ran strongest there, so local support would do what their army could not.\n3. Check the outcome. The table shows the bet failed: Loyalist forces lost at Kings Mountain and the British ended cut off at Yorktown.\nRemember: a strategy is a bet on a belief \u2014 name the belief before judging whether the bet paid off."
+ }
+}

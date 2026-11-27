@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-0496",
+ "lesson": "apush-u3-l3",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.5"
+ ],
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "valley-forge",
+ "stimulus": {
+  "kind": "mixed",
+  "text": "Painting: William B. T. Trego's The March to Valley Forge, December 19, 1777 (painted 1883) shows George Washington on a white horse leading a column of Continental soldiers through snow. The men march in ragged clothes, some barefoot, carrying muskets and a drum, while officers on horseback ride beside them.\n\nLetter: \u201cI am now convinced beyond a doubt, that unless some great and capital change suddenly takes place in that line this Army must inevitably be reduced to one or other of these three things. Starve\u2014dissolve\u2014or disperse, in order to obtain subsistence in the best manner they can.\u201d\n\u2014George Washington to Henry Laurens, president of Congress, Valley Forge, December 23, 1777",
+  "source_note": "William B. T. Trego, The March to Valley Forge, December 19, 1777 (1883); George Washington to Henry Laurens, December 23, 1777. Public domain."
+ },
+ "source": "original; stimuli viewed before writing \u2014 Washington to Henry Laurens, December 23, 1777; Trego, The March to Valley Forge, 1883, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.5 The American Revolution, A. The War for Independence"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.5 The American Revolution, B. Funding the War Effort"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 10"
+   }
+  ],
+  "primary_sources": [
+   "George Washington to Henry Laurens (1777)"
+  ]
+ },
+ "status": "final",
+ "stem": "Washington's letter shows that the Continental Army's gravest danger at Valley Forge was",
+ "options": [
+  {
+   "key": "A",
+   "text": "A British attack on the winter camp",
+   "misconception": "No British attack on Valley Forge is mentioned; the danger Washington names is the army falling apart for lack of supplies."
+  },
+  {
+   "key": "B",
+   "text": "The collapse of its supply system"
+  },
+  {
+   "key": "C",
+   "text": "A mutiny led by foreign officers",
+   "misconception": "No mutiny by foreign officers appears in the letter; Washington's warning is about the army starving or dispersing for lack of supplies."
+  },
+  {
+   "key": "D",
+   "text": "Desertion to the French army",
+   "misconception": "The French were allies, not a destination for deserters; Washington's fear is that his men will starve or scatter to find food."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "B": "Background: Washington writes of the Commissary's department failing, and warns the army must starve, dissolve, or disperse to find food.",
+  "A": "The British did not attack Valley Forge; Washington's warning is about supply, not about an enemy assault.",
+  "C": "No mutiny by foreign officers is named in the letter; Washington's warning is about the army starving or dispersing, not about a revolt.",
+  "D": "France was an ally; Washington's fear is that his men will scatter to find food, not that they will join the French.",
+  "general": "1. Read the warning. Starve, dissolve, or disperse \u2014 three ways an army ends without a battle being fought.\n2. Find the cause. Background: Washington blames the Commissary's department, which bought and moved food, forage, and clothing.\n3. Rule out battle. No enemy attack is named; the threat is that supply fails and the army comes apart on its own.\nRemember: an army can be beaten by its own supply line \u2014 ask what feeds it before asking who shoots at it."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0496",
+   "file": "u3/march-to-valley-forge-trego.jpg",
+   "caption": "William B. T. Trego, The March to Valley Forge, December 19, 1777 (1883)",
+   "alt": "Trego painting of Washington on a white horse leading ragged Continental soldiers through snow toward Valley Forge",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:The_March_to_Valley_Forge,_December_19,_1777,_by_William_B._T._Trego.jpg"
+  }
+ ]
+}

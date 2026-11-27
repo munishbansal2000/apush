@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-0592",
+ "lesson": "apush-u3-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.8"
+ ],
+ "skills": [
+  "1.B",
+  "4.A"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "virginia-new-jersey-plans",
+ "stimulus": {
+  "kind": "text",
+  "text": "|  | Virginia Plan | New Jersey Plan |\n|---|---|---|\n| Proposed by | James Madison, for Virginia | William Paterson, for New Jersey |\n| Houses of the legislature | Two | One |\n| Representation | By each state's population | One vote for each state |\n| National government | A new government with three branches and broad powers | Congress kept as it was, with added power to tax and regulate trade |",
+  "source_note": "Table drawn from the plans debated at the Constitutional Convention, Philadelphia, summer 1787. Public domain."
+ },
+ "source": "original; table drawn from the Virginia Plan and the New Jersey Plan debated at the Constitutional Convention, Philadelphia, 1787, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.8 The Constitutional Convention and Debates over Ratification, A. Compromise and the Framing of the Constitution"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "The Constitutional Convention"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "A New Constitution"
+   }
+  ],
+  "primary_sources": [
+   "Virginia Plan (1787)",
+   "New Jersey Plan (1787)"
+  ]
+ },
+ "status": "final",
+ "stem": "Why did the delegates from the small states support the New Jersey Plan?",
+ "options": [
+  {
+   "key": "A",
+   "text": "They wanted the national government to have no power to tax",
+   "misconception": "The table says the New Jersey Plan added the power to tax; its supporters did not oppose taxation."
+  },
+  {
+   "key": "B",
+   "text": "They believed only large states should pay for the government",
+   "misconception": "Nothing in the table ties the plan to who pays; the fight was over seats, not taxes."
+  },
+  {
+   "key": "C",
+   "text": "They wanted representation to follow wealth rather than population",
+   "misconception": "Neither plan in the table bases representation on wealth."
+  },
+  {
+   "key": "D",
+   "text": "They feared the larger states would outvote them"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "D": "Under the Virginia Plan's population rule, small states would hold few seats and could be outvoted, so they backed the New Jersey Plan's one vote per state. Background: the small states had held an equal vote under the Articles and did not want to lose it.",
+  "A": "The New Jersey Plan added the power to tax; its backers were not against taxation.",
+  "B": "The table's fight is over seats in the legislature, not over who pays for the government.",
+  "C": "Neither plan sets representation by wealth; the choice is population against one vote per state.",
+  "general": "1. The Virginia Plan gives seats by population, so large states would hold the most.\n2. Small states would then be a minority on every vote that divided large against small.\n3. Background: under the Articles each state had held one equal vote, which the small states wanted to keep.\n4. The New Jersey Plan kept that equal vote, so the small states rallied behind it.\nRemember: ask who loses under each rule, and you find who backs the other one."
+ }
+}

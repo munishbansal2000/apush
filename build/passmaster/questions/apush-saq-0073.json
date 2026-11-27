@@ -1,0 +1,90 @@
+{
+ "id": "apush-saq-0073",
+ "type": "saq",
+ "unit": 3,
+ "lesson": "apush-u3-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "topics": [
+  "3.3"
+ ],
+ "skills": [
+  "2.A",
+  "3.A"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "stimulus_set": null,
+ "source": "original; stimulus is a verbatim public-domain quotation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "A. Colonial Resistance to British Policies in the Aftermath of the French and Indian War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 9",
+    "section": "Stamp Act Crisis"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Sugar Act, the Currency Act, and the Stamp Act"
+   }
+  ],
+  "primary_sources": []
+ },
+ "saq_slot": 2,
+ "stimulus": {
+  "type": "text",
+  "text": "John Dickinson, Letters from a Farmer in Pennsylvania (1767): \"If they have a right to levy a tax of one penny upon us, they have a right to levy a million upon us.\"",
+  "source": "John Dickinson, Letters from a Farmer in Pennsylvania to the Inhabitants of the British Colonies, Letter II, 1767. Public domain.",
+  "rights": "Public domain.",
+  "source_note": "Dickinson, Letters from a Farmer, published in Pennsylvania newspapers in 1767-1768. Public domain."
+ },
+ "parts": [
+  {
+   "part": "a",
+   "prompt": "Identify ONE claim Dickinson makes about Parliament's power to tax the colonies.",
+   "modelAnswer": "Dickinson claims that the power to tax is a matter of principle, not of amount: if Parliament may levy a tax of one penny, it may levy a million. The size of the tax does not change its character \u2014 any tax Parliament imposes without colonial consent asserts the same power. A small tax is therefore as dangerous as a large one.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names Dickinson's claim that the right to tax any amount implies the right to tax any amount \u2014 the principle, not the size of the tax, is what matters."
+    }
+   ],
+   "points": 1
+  },
+  {
+   "part": "b",
+   "prompt": "Explain ONE distinction Dickinson draws between British measures the colonies should accept and measures they should resist.",
+   "modelAnswer": "Dickinson distinguishes duties laid to regulate trade, which he accepts as part of Parliament's authority over the empire's commerce, from taxes laid to raise revenue, which he rejects. A duty that guides trade is an old and accepted power; a tax that fills the treasury claims a right over colonial property. The Townshend duties failed his test because they were plainly meant to raise money, not to regulate trade.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains the regulation-versus-revenue distinction: duties to regulate trade are acceptable, taxes to raise revenue are not."
+    }
+   ],
+   "points": 1
+  },
+  {
+   "part": "c",
+   "prompt": "Explain ONE colonial action that was consistent with Dickinson's argument.",
+   "modelAnswer": "Colonists answered the Townshend duties with nonimportation agreements, refusing to buy the taxed goods rather than paying the revenue tax. Merchants signed the agreements, and ordinary colonists made their own cloth and tea substitutes at home, so the boycott hit British exporters. The boycott worked on Dickinson's logic: it refused the revenue while leaving regulated trade itself in place.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains a colonial action consistent with Dickinson's argument, such as the nonimportation boycotts, the Massachusetts Circular Letter, or homespun production."
+    }
+   ],
+   "points": 1
+  }
+ ],
+ "totalPoints": 3
+}

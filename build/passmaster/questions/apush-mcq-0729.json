@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-0729",
+ "lesson": "apush-u3-l5",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.12"
+ ],
+ "skills": [
+  "5.A"
+ ],
+ "themes": [
+  "GEO",
+  "MIG"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 4,
+ "status": "final",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.12 Movement in the Early Republic"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "Establishment of New Political Systems (1787-1800)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Unit 3: Conflict and American Independence (1754-1800)"
+   }
+  ],
+  "primary_sources": [
+   "United States Census, 1790"
+  ]
+ },
+ "stimulus_set": "new-states-1791-1796",
+ "stimulus": {
+  "kind": "table",
+  "text": "| State | Admitted | Order | Formed from |\n|---|---|---|---|\n| Vermont | March 4, 1791 | 14th | Independent republic |\n| Kentucky | June 1, 1792 | 15th | Virginia |\n| Tennessee | June 1, 1796 | 16th | Southwest Territory |\n\nBackground from the books: The Northwest Ordinance set 60,000 free inhabitants as the mark for statehood. In the 1790 census the Southwest Territory (present-day Tennessee) counted 35,691 people. A territorial census in 1795 counted 77,262.",
+  "source_note": "Admission dates from the Congressional Research Service, Admission of States to the Union; population counts from the United States Census, 1790, and the 1795 territorial census of the Southwest Territory."
+ },
+ "source": "original; table drawn from the Congressional Research Service admission list and the United States Census.",
+ "stem": "Taken together, what do the three admissions in the table show about the direction of the Union's growth?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The Union grew mainly by taking in seaboard colonies.",
+   "misconception": "Background: none of the three was a seaboard colony; Vermont, Kentucky, and Tennessee all lay inland."
+  },
+  {
+   "key": "B",
+   "text": "The Union grew only after the Louisiana Purchase added western land.",
+   "misconception": "Background: the Louisiana Purchase came in 1803, after all three admissions."
+  },
+  {
+   "key": "C",
+   "text": "The Union grew westward, beyond the Appalachian Mountains and into the interior."
+  },
+  {
+   "key": "D",
+   "text": "The Union grew by admitting the Northwest Territory as a single state.",
+   "misconception": "Background: the Northwest Territory became several states, starting with Ohio in 1803, not one state."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "Background: all three states lay inland, not on the seaboard.",
+  "B": "Background: all three joined before 1803, so the Louisiana Purchase cannot explain them.",
+  "C": "Background: Vermont, Kentucky, and Tennessee all lay inland from the seaboard, and Kentucky and Tennessee lay beyond the Appalachians. The Union's new states therefore marked a westward push.",
+  "D": "Background: the Northwest Territory was divided into several states, not admitted as one.",
+  "general": "1. Background: Vermont lies inland in the north, and Kentucky and Tennessee lie west of the Appalachians.\n2. All three joined after the original thirteen.\n3. Each one pushed the Union's border farther from the coast.\n4. So the table's pattern is westward growth into the interior.\nRemember: three points make a direction; place each one on the map before naming the trend."
+ }
+}

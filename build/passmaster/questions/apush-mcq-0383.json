@@ -1,0 +1,86 @@
+{
+ "id": "apush-mcq-0383",
+ "lesson": "apush-u3-l1",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.2"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "wolfe-quebec",
+ "stimulus": {
+  "kind": "image",
+  "text": "Benjamin West's painting \"The Death of General Wolfe\" (1770) shows the British general James Wolfe dying on the Plains of Abraham outside Quebec in 1759. Wolfe, in a red coat, reclines in the center, supported by officers, while a runner arrives from the left with news of the French retreat and a Native man kneels in thought at the lower left.\n\nBritish soldiers and a flag fill the right side of the scene, and smoke from the battle rises in the background. West painted the scene eleven years after the battle, in London.",
+  "source_note": "Benjamin West, \"The Death of General Wolfe,\" 1770, public domain."
+ },
+ "source": "original; stimulus viewed before writing \u2014 Benjamin West, \"The Death of General Wolfe,\" 1770, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "British Victory in the French and Indian War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 9",
+    "section": "Defeat of New France"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Seven Years' War (1754\u20131763)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "Why was the capture of Quebec in 1759 a turning point in the Seven Years' War?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Quebec was the fortress capital of New France; its fall opened the St. Lawrence and made Canada's conquest possible."
+  },
+  {
+   "key": "B",
+   "misconception": "Quebec was not the largest city in North America, and French trade continued in the Caribbean after 1759.",
+   "text": "Quebec was the largest city in North America, and its fall ended all French trade in the world."
+  },
+  {
+   "key": "C",
+   "misconception": "France's armies in Europe were untouched by Quebec; the battle decided Canada, not the European war.",
+   "text": "Quebec was where the French kept their entire army, so its fall destroyed France's military in Europe as well."
+  },
+  {
+   "key": "D",
+   "misconception": "France held Montreal, Detroit, and Louisiana as well; Quebec's fall was decisive but not instantly total.",
+   "text": "Quebec was the only French settlement in North America, so its fall removed France from the continent at once."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Quebec sat on the cliffs above the St. Lawrence, guarding the river road into Canada, and once Wolfe's army took the city the French could not hold the colony: Montreal fell in 1760, and the Treaty of Paris made Canada British. The painting marks the moment the war in North America was effectively decided, when a fortress city changed hands and a continent's future changed with it.",
+  "B": "Quebec was a fortress town, not the continent's largest city, and France's sugar trade went on.",
+  "C": "Quebec decided the North American war, but France's armies in Europe fought on until 1763; the battle did not touch them.",
+  "D": "Montreal, Detroit, and Louisiana were still French in 1759; Quebec's fall opened the door to their conquest rather than completing it in a day.",
+  "general": "1. Find Quebec on a map. It sits on the cliffs above the St. Lawrence, the river road into the heart of Canada.\n2. Ask what its fall unlocked. With the fortress gone, British forces could move upriver to Montreal.\n3. Follow the next two years. Montreal fell in 1760, and the peace of 1763 confirmed Canada as British.\nRemember: a fortress on a river can hold a whole colony \u2014 and losing it can lose one."
+ },
+ "figures": [
+  {
+   "file": "u3/death-of-general-wolfe-1770.jpg",
+   "caption": "Benjamin West, \"The Death of General Wolfe,\" 1770",
+   "alt": "Benjamin West's painting of General Wolfe dying at Quebec in 1759, surrounded by officers, with a Native man kneeling at lower left",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Benjamin_West_-_The_Death_of_General_Wolfe_-_WGA25558.jpg",
+   "id": "fig-apush-mcq-0383"
+  }
+ ]
+}

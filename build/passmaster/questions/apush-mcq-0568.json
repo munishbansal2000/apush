@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-0568",
+ "lesson": "apush-u3-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.7"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 2,
+ "stimulus_set": "powers-table",
+ "stimulus": {
+  "kind": "table",
+  "text": "| Power | Under the Articles of Confederation | Under the Constitution |\n|---|---|---|\n| Levy taxes on citizens | No \u2014 Congress could only ask the states for money | Yes |\n| Regulate trade between the states | No | Yes |\n| Raise an army | No \u2014 Congress could only ask the states for troops | Yes |\n| Make treaties with other nations | Yes | Yes |\n| Coin money | Yes | Yes |\n| Change the frame of government | Only with the agreement of all thirteen states | With the agreement of three-fourths of the states |",
+  "source_note": "Table compiled from the Articles of Confederation (1777-1781) and the Constitution of the United States (1787). Public domain documents."
+ },
+ "source": "original; table compiled from the Articles of Confederation (1777-1781) and the Constitution of the United States (1787), public domain documents.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.7 The Articles of Confederation, B. The Articles of Confederation and the Critical Period"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Articles of Confederation"
+   }
+  ],
+  "primary_sources": [
+   "Articles of Confederation (1777-1781)",
+   "Constitution of the United States (1787)"
+  ]
+ },
+ "status": "final",
+ "stem": "According to the table, which power did Congress hold under the Articles of Confederation AND under the Constitution?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Levy taxes on citizens",
+   "misconception": "The table says Congress could not levy taxes under the Articles."
+  },
+  {
+   "key": "B",
+   "text": "Regulate trade between the states",
+   "misconception": "The table says Congress could not regulate trade under the Articles."
+  },
+  {
+   "key": "C",
+   "text": "Make treaties with other nations"
+  },
+  {
+   "key": "D",
+   "text": "Raise an army",
+   "misconception": "The table says Congress could only ask the states for troops under the Articles."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "C": "The table gives Congress the treaty power under both the Articles and the Constitution.",
+  "A": "The table says Congress could not levy taxes under the Articles; it could only ask the states.",
+  "B": "The table says Congress could not regulate trade between the states under the Articles.",
+  "D": "The table says Congress could only ask the states for troops under the Articles.",
+  "general": "1. Check each row in both columns. Taxes, trade, and the army all change.\n2. Treaties stay Yes in both columns, and so does coining money.\n3. The question asks for one power, and treaties is the one named in the options.\n4. Background: Congress could negotiate with other nations even while it could not tax its own citizens.\nRemember: the Articles left Congress a diplomat with an empty purse."
+ }
+}

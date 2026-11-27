@@ -1,0 +1,88 @@
+{
+ "id": "apush-mcq-0644",
+ "lesson": "apush-u3-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.9"
+ ],
+ "skills": [
+  "2.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "bill-of-rights-engrossed",
+ "stimulus": {
+  "kind": "image",
+  "text": "The page, dated September 25, 1789, opens \u201cCongress of the United States, begun and held at the City of New York, on Wednesday the fourth of March, one thousand seven hundred and eighty nine.\u201d It records that Congress resolved, with \u201ctwo thirds of both Houses concurring,\u201d to propose \u201cArticles in addition to, and Amendment of the Constitution of the United States of America, . . . pursuant to the fifth Article of the Original Constitution.\u201d Twelve articles follow, headed \u201cArticle the first\u201d through \u201cArticle the twelfth.\u201d At the foot appear the names of Frederick Augustus Muhlenberg, Speaker of the House of Representatives, and John Adams, Vice President of the United States and President of the Senate.",
+  "source_note": "The engrossed Bill of Rights, proposed September 25, 1789, National Archives and Records Administration. Public domain."
+ },
+ "source": "original; stimulus viewed before writing \u2014 the engrossed Bill of Rights, proposed September 25, 1789, National Archives and Records Administration, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.9 The Constitution"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "The Bill of Rights"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "A New Constitution"
+   }
+  ],
+  "primary_sources": [
+   "Bill of Rights, proposed September 25, 1789; ratified December 15, 1791"
+  ]
+ },
+ "status": "final",
+ "stem": "The page says the articles were proposed \u201cpursuant to the fifth Article of the Original Constitution.\u201d What does that phrase tell the student about the amendments?",
+ "options": [
+  {
+   "key": "A",
+   "text": "They were written by the president.",
+   "misconception": "The page shows Congress proposing them, not the president writing them."
+  },
+  {
+   "key": "B",
+   "text": "They followed the amendment process set out in Article V."
+  },
+  {
+   "key": "C",
+   "text": "They replaced the first five articles of the Constitution.",
+   "misconception": "The phrase points to Article V, the amendment article, not to replacing Articles I through V."
+  },
+  {
+   "key": "D",
+   "text": "They were ratified by the Constitutional Convention.",
+   "misconception": "The Convention wrote the Constitution in 1787; these amendments were proposed by Congress in 1789."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "B": "Article V is the Constitution\u2019s amendment article, and the page says the proposal followed it.",
+  "A": "The page is signed by the Speaker and the Vice President as officers of Congress, not by the president as author.",
+  "C": "\u201cThe fifth Article\u201d means Article V, not the first five articles of the Constitution.",
+  "D": "The Convention had finished its work in 1787; Congress proposed these amendments in 1789.",
+  "general": "1. The page says the articles were proposed \u201cpursuant to the fifth Article of the Original Constitution.\u201d\n2. Article V is the article that sets out how the Constitution is amended.\n3. The phrase therefore shows Congress following its own amendment rules, with two-thirds of both houses agreeing.\n4. It says nothing about the president writing them or the Convention ratifying them.\nRemember: \u201cpursuant to\u201d means \u201cfollowing the rule in\u201d; here the rule is Article V."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0644",
+   "file": "u3/bill-of-rights-engrossed-1789.jpg",
+   "caption": "The engrossed Bill of Rights, proposed September 25, 1789",
+   "alt": "Handwritten first page of the proposed amendments headed Congress of the United States, listing twelve articles and signed by Frederick Augustus Muhlenberg and John Adams",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Bill_of_Rights_Pg1of1_AC.jpg"
+  }
+ ]
+}

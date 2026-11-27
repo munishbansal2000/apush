@@ -228,6 +228,23 @@ carry 3 SAQs from three different periods and one per slot type; carry 1
 DBQ (range 1754-1980) and 1 LEQ; total 3h15m. Exam assembly is a later
 tranche, not part of any single unit's work.
 
+### Unit 3 — LANDED (closed 2026-11-27; push 8)
+
+477/477 final (415 MCQ + 34 SAQ + 17 DBQ + 11 LEQ), 5/5 lessons final,
+validator 0 errors. MCQ difficulty lands easy 78 / medium 206 / hard 131
+(fresh 77/199/131; the 8 Exam-01 MCQs add 1 easy / 7 medium / 0 hard).
+Per-topic MCQ lands: 3.1: 3/7/6, 3.2: 6/20/8, 3.3: 3/22/11, 3.4: 8/27/3,
+3.5: 8/20/10, 3.6: 6/12/14, 3.7: 6/12/14, 3.8: 7/22/11, 3.9: 7/16/11,
+3.10: 8/14/12, 3.11: 6/13/13, 3.12: 6/12/14, 3.13: 4/9/4.
+Coverage note: Topic 3.13 lands 17 MCQ against its 25 quota — 8 short —
+while 3.4 (38 vs 34) and 3.8 (40 vs 36) run 4 over each, because the 8
+Exam-01 MCQs mapped into 3.4/3.8. Unit total is exact (415); the 3.13
+shortfall is a framing-topic thinning, recorded here, not a gate failure.
+Keys A109/B105/C102/D99. Test pool 76 MCQ / 4 SAQ (0072, 0100, 0088,
+0092) / 2 DBQ (0006, 0011) / 1 LEQ (0026). Lesson grouping as planned:
+L1 3.1+3.2 (58), L2 3.3+3.4 (84), L3 3.5+3.6 (85), L4 3.7+3.8+3.9 (121),
+L5 3.10+3.11+3.12+3.13 (129).
+
 ### Unit 9 per-topic quotas (this tranche, set 2026-11-26; closed 2026-11-26)
 
 Unit 9: Period 9, 1980-present, exam weight 4-6%. No DBQs — the DBQ

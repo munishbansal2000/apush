@@ -1,0 +1,90 @@
+{
+ "id": "apush-saq-0070",
+ "type": "saq",
+ "unit": 3,
+ "lesson": "apush-u3-l1",
+ "status": "final",
+ "pool": "practice",
+ "saq_slot": 2,
+ "difficulty": 3,
+ "skills": [
+  "1.A",
+  "4.B"
+ ],
+ "themes": [
+  "PCE",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "stimulus_set": null,
+ "source": "original; stimulus is a verbatim excerpt from the Royal Proclamation of 1763 (public domain)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "The Proclamation Act (1763)"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 9",
+    "section": "Defeat of New France"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Seven Years' War (1754\u20131763)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "type": "text",
+  "text": "And We do further declare it to be Our Royal Will and Pleasure, for the present as aforesaid, to reserve under our Sovereignty, Protection, and Dominion, for the use of the said Indians, all the Lands and Territories not included within the Limits of Our said Three new Governments, or within the Limits of the Territory granted to the Hudson's Bay Company,\n\nas also all the Lands and Territories lying to the Westward of the Sources of the Rivers which fall into the Sea from the West and North West as aforesaid. And We do hereby strictly forbid, on Pain of Our Displeasure, all our loving Subjects from making any Purchases or Settlements whatever, or taking Possession of any of the Lands above reserved, without Our especial Leave and Licence for that Purpose first obtained.",
+  "source": "Royal Proclamation of 1763, October 7, 1763 (Library and Archives Canada / Avalon Project, Yale Law School).",
+  "rights": "Public domain (British Crown document, 1763).",
+  "source_note": "Royal Proclamation of October 7, 1763 (Library and Archives Canada / Avalon Project, Yale Law School). Public domain; verbatim excerpt, trimmed with a paragraph break."
+ },
+ "parts": [
+  {
+   "part": "a",
+   "modelAnswer": "Britain issued the Proclamation to prevent another costly war with Native peoples after Pontiac's Rebellion showed how expensive frontier conflict could be. By reserving the western lands and forbidding settlement beyond the Appalachians, London hoped to keep settlers and Native nations apart and avoid the expense of another frontier war.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names a specific British motive, such as avoiding another Native war after Pontiac's Rebellion, controlling settlement, or preserving the fur trade."
+    }
+   ],
+   "prompt": "Identify ONE reason why the British government issued the Proclamation of 1763.",
+   "points": 1
+  },
+  {
+   "part": "b",
+   "modelAnswer": "The Proclamation angered colonists who had fought the war and expected to settle the western lands they had helped win. By drawing a line and forbidding settlement without royal leave, London asserted a new authority over colonial expansion \u2014 and colonists who ignored the line learned that British policy could stand directly against their interests.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains a specific effect on the British-colonial relationship, such as colonial resentment, disregard of the line, or a new assertion of imperial authority."
+    }
+   ],
+   "prompt": "Explain ONE way in which the Proclamation of 1763 affected the relationship between Britain and its American colonies.",
+   "points": 1
+  },
+  {
+   "part": "c",
+   "modelAnswer": "In the short term the Proclamation recognized Native peoples' claim to the western lands by reserving them for Native use and forbidding colonial settlement. In practice, however, the line was weakly enforced and settlers kept pushing west, so the protection it promised proved temporary and Native nations soon faced the same pressure from an expanding settler population.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains a specific effect on Native peoples, such as the formal reservation of western lands, the promise of protection, or the line's weak enforcement and continued settler pressure."
+    }
+   ],
+   "prompt": "Explain ONE way in which the Proclamation of 1763 affected Native peoples in North America.",
+   "points": 1
+  }
+ ],
+ "totalPoints": 3,
+ "topics": [
+  "3.2"
+ ]
+}

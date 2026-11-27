@@ -1,0 +1,86 @@
+{
+ "id": "apush-mcq-0487",
+ "lesson": "apush-u3-l3",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.5"
+ ],
+ "skills": [
+  "2.C"
+ ],
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "lexington-doolittle",
+ "stimulus": {
+  "kind": "image",
+  "text": "The engraving shows the Battle of Lexington on the morning of April 19, 1775. A long line of British regulars in red coats stands in formation across the town green, muskets level, firing a volley through a cloud of smoke. In the foreground, militiamen scatter and fall, and a few bodies lie on the ground. Behind the soldiers stand the houses of Lexington, including the meetinghouse. The engraving was made after Amos Doolittle's 1775 print of the battle.",
+  "source_note": "After Amos Doolittle, The Battle of Lexington, 1775. U.S. National Archives. Public domain."
+ },
+ "source": "original; stimulus viewed before writing \u2014 Battle of Lexington engraving after Amos Doolittle, 1775, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.5 The American Revolution, A. The War for Independence"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 10"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Fighting the Revolution"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "What most limits the use of this engraving as evidence for what happened at Lexington?",
+ "options": [
+  {
+   "key": "A",
+   "text": "It names the town where the fighting took place",
+   "misconception": "Naming Lexington is a fact the engraving gets right; it does not limit its use as evidence."
+  },
+  {
+   "key": "B",
+   "text": "It was printed in the same year as the battle",
+   "misconception": "A print made in 1775 is close in time to the event, which strengthens it rather than limiting it."
+  },
+  {
+   "key": "C",
+   "text": "It was made after the battle, from American accounts"
+  },
+  {
+   "key": "D",
+   "text": "It shows British soldiers wearing red coats",
+   "misconception": "British regulars did wear red coats, so that detail is accurate, not a limitation."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "C": "Doolittle worked after the battle from American accounts, so the image shows the Patriot version of the morning, not a neutral record.",
+  "D": "Red coats are accurate \u2014 British regulars wore them \u2014 so the detail is not a limitation.",
+  "A": "The place is right; the engraving correctly shows the fighting at Lexington.",
+  "B": "A print made in the same year is near in time, which helps the engraving rather than hurting it.",
+  "general": "1. Ask who made it and when. Doolittle engraved the battle after it happened, working from what Americans told him.\n2. Ask whose side the account serves. The image comes from the Patriot side, so it shows their version of the morning.\n3. Separate true details from a true picture. Accurate coats and houses do not make the whole scene neutral.\nRemember: a source made after the event from one side's accounts is evidence of that side's story, not of the event itself."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0487",
+   "file": "u3/5s24-ch03-mcq-48.jpg",
+   "caption": "The Battle of Lexington, April 19, 1775, after Amos Doolittle",
+   "alt": "Doolittle engraving of British regulars firing a volley on Lexington Green while militiamen scatter and fall, with Lexington houses behind them",
+   "license": "Public domain",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/16/Battle_of_Lexington_-_NARA_-_530967.jpg"
+  }
+ ]
+}

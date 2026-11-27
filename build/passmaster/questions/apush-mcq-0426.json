@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-0426",
+ "lesson": "apush-u3-l2",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.3"
+ ],
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 4,
+ "stimulus_set": "townshend-dickinson",
+ "stimulus": {
+  "kind": "mixed",
+  "text": "In 1767, Parliament's Townshend Acts placed new duties on goods the colonists bought from British merchants: lead, paper, glass, and tea. John Dickinson, a Pennsylvania lawyer, answered in his Letters from a Farmer in Pennsylvania: 'If they have a right to levy a tax of one penny upon us, they have a right to levy a million upon us; for where does their right stop?'",
+  "source_note": "Dickinson's sentence is from Letters from a Farmer in Pennsylvania (1767). Public domain. The list of duties follows Barron's Premium 2027, Chapter 5."
+ },
+ "source": "original; stimulus viewed before writing \u2014 Dickinson, Letters from a Farmer in Pennsylvania (1767), public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "A. Colonial Resistance to British Policies in the Aftermath of the French and Indian War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 9",
+    "section": "Townshend Acts"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Townshend Acts"
+   }
+  ],
+  "primary_sources": [
+   "John Dickinson, Letters from a Farmer in Pennsylvania (1767)"
+  ]
+ },
+ "status": "final",
+ "stem": "Townshend assumed the colonists would accept the new duties because they were taxes on imported goods rather than on things produced inside the colonies. The colonists' response most directly showed that...",
+ "options": [
+  {
+   "key": "A",
+   "text": "They welcomed any tax that fell on British merchants rather than on themselves",
+   "misconception": "The duties fell on colonial buyers, not only on British merchants \u2014 and the colonists boycotted the taxed goods rather than welcoming them."
+  },
+  {
+   "key": "B",
+   "text": "They had never objected to any British tax before 1767",
+   "misconception": "The Stamp Act crisis of 1765 had already shown the colonists objecting fiercely \u2014 Townshend was trying to avoid a repeat, not facing a first protest."
+  },
+  {
+   "key": "C",
+   "text": "They believed Parliament had no right to regulate colonial trade at all",
+   "misconception": "The colonists accepted Parliament's regulation of imperial trade \u2014 Dickinson himself drew that line. Their fight was over revenue, not regulation."
+  },
+  {
+   "key": "D",
+   "text": "They rejected the distinction between internal and external taxes"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "D": "Background: Townshend bet that 'external' duties on imports would pass where the 'internal' Stamp Act had failed. The colonists answered that Parliament could regulate trade but could not raise revenue from them \u2014 the internal-external line did not save the tax.",
+  "A": "Nobody welcomed these duties. Colonial buyers paid them, and the response was boycotts, not gratitude.",
+  "B": "1765 had already happened. The Stamp Act crisis was the reason Townshend tried a different kind of tax.",
+  "C": "Trade regulation was accepted \u2014 Dickinson's own argument concedes it. The fight was over raising revenue, not over regulating commerce.",
+  "general": "1. Name Townshend's bet. The Stamp Act failed because it taxed things inside the colonies \u2014 so he taxed imports instead, calling them 'external.'\n2. Ask what the colonists answered. That Parliament could regulate trade but could not raise revenue from them \u2014 the purpose of the tax mattered, not where it was collected.\n3. See the result. Boycotts spread, and within two years Parliament repealed the duties \u2014 all but the one on tea.\nRemember: a clever distinction only works if the other side accepts it \u2014 test the line your opponent draws, not just your own."
+ }
+}

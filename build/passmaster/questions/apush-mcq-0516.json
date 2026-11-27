@@ -1,0 +1,86 @@
+{
+ "id": "apush-mcq-0516",
+ "lesson": "apush-u3-l3",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.5"
+ ],
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "WOR",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "shepherd-map-35",
+ "stimulus": {
+  "kind": "map",
+  "text": "The map, from Shepherd's Historical Atlas, shows British North America, 1763\u20131775. The Thirteen Colonies are colored pink in a narrow strip along the Atlantic coast, from New Hampshire to Georgia. Canada lies to the north, Florida to the south, and the lands west of the Appalachians are marked as Crown lands reserved for Indians by the Proclamation of 1763. The inset shows the northern colonies in detail, with Saratoga, Ticonderoga, and the Hudson River valley marked.",
+  "source_note": "Shepherd's Historical Atlas, British North America, 1763-1775. Public domain."
+ },
+ "source": "original; stimulus viewed before writing \u2014 Shepherd's Historical Atlas map, c.1911, public domain. Rewritten against the books from staged survivor 5s24-ch10-mcq-02.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.5 The American Revolution, A. The War for Independence"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 10"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Fighting the Revolution"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "British commanders expected a quick victory in 1775. Which of the following best explains their confidence?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The Royal Navy controlled the seas and could land troops anywhere"
+  },
+  {
+   "key": "B",
+   "text": "British generals had already defeated Washington in the field",
+   "misconception": "No battle had been fought yet in 1775; Washington had not faced British generals in the field when the war began."
+  },
+  {
+   "key": "C",
+   "text": "The Continental Congress had voted to disband the army",
+   "misconception": "Congress created the Continental Army in 1775; it did not vote to disband it."
+  },
+  {
+   "key": "D",
+   "text": "France had promised to stay out of the war entirely",
+   "misconception": "France was already sending covert aid to the Americans before 1778; it never promised to stay out."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Britain's navy was unmatched, and the map shows why that mattered: the colonies were a coastal strip the navy could reach anywhere.",
+  "B": "No battles had been fought in 1775 before Lexington, so no general had yet beaten Washington.",
+  "C": "Congress raised the Continental Army in 1775; it did not vote to disband it.",
+  "D": "France sent secret supplies to the Americans before 1778; it never promised to stay out of the war.",
+  "general": "1. Look at the map. The colonies are a thin coastal strip, open to the sea along their whole length.\n2. Ask what that gives Britain. A navy that can land troops, blockade ports, and move men faster than any army can march.\n3. Check the other claims. No battle had been fought, Congress was raising an army, and France was already helping in secret.\nRemember: geography is a weapon \u2014 ask what the map lets the stronger navy do. Background: Britain also counted on Loyalist support and the Continental Army's lack of training."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0516",
+   "file": "u3/barrons-2027-ch05-02.png",
+   "caption": "British North America, 1763\u20131775, Shepherd's Historical Atlas",
+   "alt": "Shepherd's map of British North America showing the Thirteen Colonies in pink along the coast, Canada to the north, and the Proclamation Line of 1763",
+   "license": "Public domain",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/British_colonies_1763-76_shepherd1923.PNG"
+  }
+ ]
+}

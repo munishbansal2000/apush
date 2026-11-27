@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-0424",
+ "lesson": "apush-u3-l2",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 3,
+ "topics": [
+  "3.3"
+ ],
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 4,
+ "stimulus_set": "colonies-reduced",
+ "stimulus": {
+  "kind": "image",
+  "text": "The engraving, 'The Colonies Reduced \u2014 Its Companion,' was designed after Benjamin Franklin and published in London in 1768. In the top panel, a woman representing Britain sits slumped against a globe, her arms and legs cut off and lying on the ground around her. Each severed limb is labeled with a colony's name: Virginia, New York, Pennsylvania, and New England. Her severed hand still holds an olive branch. In the bottom panel, France and Spain quarrel over a barrel while a Native American figure watches, and a snake coils on the ground.",
+  "source_note": "After Benjamin Franklin, published by John Almon, London, 1768. Public domain (pre-1930)."
+ },
+ "source": "original; stimulus viewed before writing \u2014 after Benjamin Franklin, published by John Almon, London, 1768, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "A. Colonial Resistance to British Policies in the Aftermath of the French and Indian War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 9",
+    "section": "Stamp Act Crisis"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Sugar Act, the Currency Act, and the Stamp Act"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "The bottom panel, 'Its Companion,' most directly suggests which of the following?",
+ "options": [
+  {
+   "key": "A",
+   "text": "France and Spain had formed a lasting alliance to defend the colonies",
+   "misconception": "The two figures are quarreling over a barrel, not allied \u2014 the panel shows rivals competing for the spoils, not partners defending anyone."
+  },
+  {
+   "key": "B",
+   "text": "Native peoples had joined the British side against France",
+   "misconception": "The Native figure watches the quarrel; he is not shown joining Britain \u2014 the panel is about European rivals eyeing a weakened empire."
+  },
+  {
+   "key": "C",
+   "text": "Britain's rivals would profit from the empire's self-inflicted weakness"
+  },
+  {
+   "key": "D",
+   "text": "The colonies had already declared independence and chosen France as an ally",
+   "misconception": "Independence was still eight years away in 1768, and no French alliance existed \u2014 the panel warns of what could happen, not what had."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "C": "The bottom panel shows France and Spain fighting over a barrel while Britain lies amputated above. The warning is plain: weaken the empire yourself, and your rivals will pick up the pieces.",
+  "A": "There is no alliance in the panel. France and Spain are shown quarreling with each other over the spoils.",
+  "B": "The Native figure is a watcher, not a British ally. The panel's subject is European rivals, not Native alliances.",
+  "D": "The dates rule this out. The cartoon is from 1768; independence and the French alliance were still years away.",
+  "general": "1. Read the bottom panel as the consequence of the top one. Above, Britain cuts off its own limbs; below, its rivals quarrel over what falls.\n2. Ask what the quarrel is about. A barrel of spoils \u2014 the trade and territory a weakened Britain can no longer hold.\n3. Put the two panels together. The cartoon is a warning to London, not a report from America: stop taxing the colonies, or your enemies will gain from it.\nRemember: a two-panel cartoon is a before-and-after \u2014 the second panel is the price of the first."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0424",
+   "file": "u3/barrons-2027-ch05-04.jpg",
+   "caption": "The Colonies Reduced \u2014 Its Companion, after Benjamin Franklin, published by John Almon, London, 1768",
+   "alt": "Franklin cartoon: Britannia sits slumped with her limbs cut off, each labeled Virginia, New York, Pennsylvania, New England; below, France and Spain quarrel over a barrel",
+   "license": "Public domain",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/The_Colonies_Reduced_-_Its_Companion_%28BM_1855%2C0609.1925%29.jpg"
+  }
+ ]
+}

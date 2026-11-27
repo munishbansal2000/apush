@@ -1,0 +1,90 @@
+{
+ "id": "apush-saq-0072",
+ "type": "saq",
+ "unit": 3,
+ "lesson": "apush-u3-l2",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 3,
+ "topics": [
+  "3.3"
+ ],
+ "skills": [
+  "1.B",
+  "2.A"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "stimulus_set": null,
+ "source": "original; rewrite of staged survivor 5s24-ch09-saq-01 against the books, with an original secondary stimulus (not a quotation)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "A. Colonial Resistance to British Policies in the Aftermath of the French and Indian War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 9",
+    "section": "Stamp Act Crisis"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Sugar Act, the Currency Act, and the Stamp Act"
+   }
+  ],
+  "primary_sources": []
+ },
+ "saq_slot": 1,
+ "stimulus": {
+  "type": "text",
+  "text": "The Stamp Act of 1765 was the first tax Parliament imposed directly on the colonies, and it touched nearly everyone who handled paper \u2014 lawyers, printers, merchants, and ordinary readers. That October, nine colonies sent delegates to New York, the first time colonial assemblies had met together to answer a British policy. The delegates agreed that only their own assemblies could tax them, and across the colonies crowds, boycotts, and committees carried the argument from the meeting hall into the streets.",
+  "source": "Original secondary passage written for this question; no copyrighted text reproduced.",
+  "rights": "Original passage; no copyrighted text reproduced.",
+  "source_note": "Original secondary passage written for this question. The facts \u2014 first direct tax, nine colonies at New York in October 1765, Declaration of Rights and Grievances \u2014 follow the three course books."
+ },
+ "parts": [
+  {
+   "part": "a",
+   "prompt": "Identify ONE action the Stamp Act Congress took in response to the Stamp Act.",
+   "modelAnswer": "The Stamp Act Congress adopted a Declaration of Rights and Grievances, asserting that only the colonial assemblies could tax the colonists. It also sent petitions to the king and to Parliament asking for the Stamp Act to be repealed. By acting together, the nine delegations turned nine separate complaints into one colonial position.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names a specific action of the Stamp Act Congress, such as adopting the Declaration of Rights and Grievances or petitioning the king and Parliament for repeal."
+    }
+   ],
+   "points": 1
+  },
+  {
+   "part": "b",
+   "prompt": "Explain ONE reason colonists objected to the Stamp Act.",
+   "modelAnswer": "Colonists objected because the Stamp Act was the first tax Parliament levied directly on them, rather than a duty on trade they could avoid by not buying. It also fell hardest on the very people who wrote and argued about public affairs \u2014 lawyers, printers, and merchants \u2014 so the protest was organized by men who knew how to make a case. Above all, colonists held that a tax laid by a Parliament in which they had no elected representatives violated their rights as Englishmen.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains a colonial objection, such as the Stamp Act being the first direct tax, its burden on lawyers and printers, or the principle of no taxation without representation."
+    }
+   ],
+   "points": 1
+  },
+  {
+   "part": "c",
+   "prompt": "Explain ONE way the Stamp Act crisis changed colonial politics.",
+   "modelAnswer": "The crisis taught the colonies to act together: the Stamp Act Congress was the first meeting of colonial assemblies called to answer a British policy, and it set a pattern for the Continental Congresses that followed. It also widened politics beyond the assemblies, as the Sons of Liberty, boycotts, and Committees of Correspondence drew artisans, women, and ordinary townspeople into the resistance. After 1765, opposing British policy was no longer a matter for governors and assemblies alone.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains a change in colonial politics, such as intercolonial cooperation, the rise of the Sons of Liberty and Committees of Correspondence, or the widening of political participation beyond the assemblies."
+    }
+   ],
+   "points": 1
+  }
+ ],
+ "totalPoints": 3
+}

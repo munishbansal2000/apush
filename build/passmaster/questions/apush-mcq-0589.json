@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-0589",
+ "lesson": "apush-u3-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.8"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 3,
+ "stimulus_set": "virginia-new-jersey-plans",
+ "stimulus": {
+  "kind": "text",
+  "text": "|  | Virginia Plan | New Jersey Plan |\n|---|---|---|\n| Proposed by | James Madison, for Virginia | William Paterson, for New Jersey |\n| Houses of the legislature | Two | One |\n| Representation | By each state's population | One vote for each state |\n| National government | A new government with three branches and broad powers | Congress kept as it was, with added power to tax and regulate trade |",
+  "source_note": "Table drawn from the plans debated at the Constitutional Convention, Philadelphia, summer 1787. Public domain."
+ },
+ "source": "original; table drawn from the Virginia Plan and the New Jersey Plan debated at the Constitutional Convention, Philadelphia, 1787, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.8 The Constitutional Convention and Debates over Ratification, A. Compromise and the Framing of the Constitution"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "The Constitutional Convention"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "A New Constitution"
+   }
+  ],
+  "primary_sources": [
+   "Virginia Plan (1787)",
+   "New Jersey Plan (1787)"
+  ]
+ },
+ "status": "final",
+ "stem": "According to the table, which plan would give the larger states more seats in the legislature?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The Virginia Plan, because its seats were set by population"
+  },
+  {
+   "key": "B",
+   "text": "The New Jersey Plan, because its seats were set by population",
+   "misconception": "The table gives the New Jersey Plan one vote per state, not seats by population."
+  },
+  {
+   "key": "C",
+   "text": "The Virginia Plan, because it gave each state one vote",
+   "misconception": "One vote per state is the New Jersey Plan in the table, not the Virginia Plan."
+  },
+  {
+   "key": "D",
+   "text": "The New Jersey Plan, because it created three branches",
+   "misconception": "Three branches belong to the Virginia Plan in the table, and branches do not set seat counts."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "The table says the Virginia Plan set representation by each state's population, so larger states would hold more seats.",
+  "B": "The New Jersey Plan gave one vote per state, whatever its population.",
+  "C": "One vote per state is the New Jersey Plan's rule, not the Virginia Plan's.",
+  "D": "Three branches are the Virginia Plan's structure, but they do not decide how many seats a state gets.",
+  "general": "1. Find the representation row of the table.\n2. The Virginia Plan sets seats by each state's population.\n3. The New Jersey Plan gives one vote to each state, large or small.\n4. So the Virginia Plan is the one that favors larger states, and the small states backed the other plan.\nRemember: read the row that answers the question, not the row beside it."
+ }
+}

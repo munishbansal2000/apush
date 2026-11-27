@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-0408",
+ "lesson": "apush-u3-l1",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.2"
+ ],
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "WOR",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "native-diplomacy",
+ "stimulus": {
+  "kind": "text",
+  "text": "Before 1754, the Native nations of the Ohio Valley and Great Lakes played the British and French empires against each other, trading with both and refusing to be ruled by either. Most sided with France during the war: the French, few in number and dependent on the fur trade, treated Native peoples as allies and partners, while the British came as settlers who wanted the land itself.\n\nWhen France lost in 1763, the Native nations lost the counterweight that had protected their independence, and British settlers pressed into the Ohio Valley.",
+  "source_note": "Original secondary passage written for this question; facts from Barron's Premium 2027, Chapter 5, \"British Victory in the French and Indian War\" and \"C. American Indian Resistance and Colonial Settlement Following the French and Indian War.\""
+ },
+ "source": "original; stimulus viewed before writing \u2014 Original secondary passage written for this question; facts from Barron's Premium 2027, Chapter 5, \"British Victory in the French and Indian War\" and \"C. American Indian Resistance and Colonial Settlement Following the French and Indian War.\"",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Origins of the French and Indian War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 9",
+    "section": "War in the West"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Seven Years' War (1754\u20131763)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "A historian argues that the Seven Years' War was a disaster for the Native peoples of the Ohio Valley even though they fought on both sides. Which of the following best supports that argument?",
+ "options": [
+  {
+   "key": "A",
+   "text": "France's defeat removed the counterweight protecting Native independence, leaving the Ohio Valley nations facing one expanding empire."
+  },
+  {
+   "key": "B",
+   "misconception": "Trade continued after the war; Britain wanted the fur trade and kept trading with Native peoples.",
+   "text": "The war ended all trade between Native peoples and Europeans, destroying the Native economy overnight."
+  },
+  {
+   "key": "C",
+   "misconception": "The treaty gave the Ohio Valley to Britain, not to the Native nations; no independent Native state was created.",
+   "text": "The Treaty of Paris gave the Ohio Valley to the Native nations as an independent state."
+  },
+  {
+   "key": "D",
+   "misconception": "No Native person ever sat in Parliament; wartime allies received no such reward.",
+   "text": "Native peoples who fought for Britain were rewarded with seats in the British Parliament."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "The passage's central point is the counterweight: while France and Britain competed, Native nations could play one against the other and keep their independence. France's defeat ended that competition. The Ohio Valley nations now faced a single empire whose settlers wanted their land \u2014 and Pontiac's Rebellion, the year after the treaty, was their answer to that new reality, fought in the very forts the treaty had handed over.",
+  "B": "Trade did not end; Britain continued the fur trade and wanted its profits, so the Native economy was not destroyed overnight.",
+  "C": "The Treaty of Paris gave the Ohio Valley to Britain; the passage says Native nations lost their leverage, not that they gained a state.",
+  "D": "No Native ally received a parliamentary seat; the war's rewards went to Britain, not to its Native fighters.",
+  "general": "1. Ask what protected Native independence before the war. Not armies, but the rivalry between two empires.\n2. Ask what the war removed. France \u2014 the rival that made the rivalry work.\n3. Ask what remained. One empire, whose settlers wanted the land the Native nations lived on.\nRemember: sometimes the greatest loss in a war is suffered by those who were never its target."
+ }
+}

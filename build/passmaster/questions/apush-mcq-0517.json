@@ -1,0 +1,86 @@
+{
+ "id": "apush-mcq-0517",
+ "lesson": "apush-u3-l3",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.5"
+ ],
+ "skills": [
+  "4.A"
+ ],
+ "themes": [
+  "WOR",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "shepherd-map-35",
+ "stimulus": {
+  "kind": "map",
+  "text": "The map, from Shepherd's Historical Atlas, shows British North America, 1763\u20131775. The Thirteen Colonies are colored pink in a narrow strip along the Atlantic coast, from New Hampshire to Georgia. Canada lies to the north, Florida to the south, and the lands west of the Appalachians are marked as Crown lands reserved for Indians by the Proclamation of 1763. The inset shows the northern colonies in detail, with Saratoga, Ticonderoga, and the Hudson River valley marked.",
+  "source_note": "Shepherd's Historical Atlas, British North America, 1763-1775. Public domain."
+ },
+ "source": "original; stimulus viewed before writing \u2014 Shepherd's Historical Atlas map, c.1911, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.5 The American Revolution, A. The War for Independence"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 10"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Fighting the Revolution"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "The inset marks Saratoga and the Hudson River valley in the North. Control of the Hudson mattered to the British because it would",
+ "options": [
+  {
+   "key": "A",
+   "text": "Let Britain blockade the French fleet in the Atlantic",
+   "misconception": "A river valley inland cannot blockade a fleet at sea; the French fleet was blocked at the Virginia Capes, not on the Hudson."
+  },
+  {
+   "key": "B",
+   "text": "Give Britain a direct route to attack Philadelphia",
+   "misconception": "Philadelphia lies south, on the Delaware; the Hudson runs north to south through New York, not toward Philadelphia."
+  },
+  {
+   "key": "C",
+   "text": "Cut New England off from the other colonies"
+  },
+  {
+   "key": "D",
+   "text": "Open a road for British troops to march to the Mississippi",
+   "misconception": "The Hudson does not lead to the Mississippi; the route west ran through the Ohio country, not up the Hudson."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "C": "The Hudson valley runs between New England and the middle colonies, so holding it would split the rebellion in two.",
+  "B": "Philadelphia sits on the Delaware, south of New York; the Hudson does not lead to it.",
+  "D": "The Mississippi lies far to the west; the Hudson valley is a north-south corridor, not a road west.",
+  "A": "A river cannot blockade a fleet; the French navy was met at sea, off the Virginia Capes in 1781.",
+  "general": "1. Trace the river. The Hudson runs from the north down to New York City, between New England and the rest.\n2. Ask what holding it does. It splits the colonies in two, so New England cannot send men or supplies south.\n3. Rule out the other routes. Philadelphia, the Mississippi, and the Atlantic fleet all lie in other directions.\nRemember: a river is a wall as well as a road \u2014 ask what it divides, not just where it flows."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0517",
+   "file": "u3/barrons-2027-ch05-02.png",
+   "caption": "British North America, 1763\u20131775, Shepherd's Historical Atlas",
+   "alt": "Shepherd's map of British North America showing the Thirteen Colonies in pink along the coast, Canada to the north, and the Proclamation Line of 1763",
+   "license": "Public domain",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/British_colonies_1763-76_shepherd1923.PNG"
+  }
+ ]
+}

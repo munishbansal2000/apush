@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-0385",
+ "lesson": "apush-u3-l1",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.2"
+ ],
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "GEO",
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "louisbourg-1758",
+ "stimulus": {
+  "kind": "image",
+  "text": "\"A View of Louisburg in North America, taken near the Light House when that City was besieged in 1758,\" drawn on the spot by Captain Ince of the 35th Regiment and engraved by P. Canot, published in London by Thomas Jefferys in 1762. It shows the harbor of Louisbourg on Cape Breton Island crowded with British warships, the town and its church spires across the water, and British soldiers hauling supplies in the foreground.\n\nThe key labels the city, Gabarus Bay, the English camp, the French fleet, the island battery, and the lighthouse.",
+  "source_note": "Captain Ince (drawn on the spot), engraved by P. Canot, published by Thomas Jefferys, 1762, public domain."
+ },
+ "source": "original; stimulus viewed before writing \u2014 Captain Ince (drawn on the spot), engraved by P. Canot, published by Thomas Jefferys, 1762, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "British Victory in the French and Indian War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 9",
+    "section": "Defeat of New France"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Seven Years' War (1754\u20131763)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "Why did the capture of Louisbourg in 1758 matter to Britain's war effort?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Louisbourg guarded the St. Lawrence entrance, so its fall opened the way to Quebec the next year."
+  },
+  {
+   "key": "B",
+   "misconception": "Quebec was the capital of New France, not Louisbourg.",
+   "text": "Louisbourg was the capital of New France, so its fall ended French government in North America."
+  },
+  {
+   "key": "C",
+   "misconception": "France's treasury was in Paris; Louisbourg was a fortress and naval base, not a bank.",
+   "text": "Louisbourg held France's entire treasury, so its fall bankrupted the French war effort."
+  },
+  {
+   "key": "D",
+   "misconception": "France held many Atlantic ports, including in the Caribbean; Louisbourg guarded one vital entrance, not all shipping.",
+   "text": "Louisbourg was the only port on the Atlantic coast, so its fall cut off all French shipping."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Louisbourg sat at the mouth of the St. Lawrence on Cape Breton Island, guarding the river approach to Quebec, and once it fell in 1758 British ships could sail upriver to reach Quebec in 1759. The engraving shows the fleet that made that advance possible, crowding the harbor it had come to take, with the town and its church spires across the water.",
+  "B": "Quebec was the capital and seat of French government in Canada; Louisbourg was its outer guard, not the capital.",
+  "C": "Louisbourg was a fortress and harbor, not a treasury; its value was strategic \u2014 it guarded the St. Lawrence.",
+  "D": "France kept ports in the Caribbean and Europe; Louisbourg mattered because it guarded the one river road to Quebec.",
+  "general": "1. Find Louisbourg on a map. It sits on Cape Breton Island, at the mouth of the St. Lawrence.\n2. Ask what the river guarded. The St. Lawrence was the road to Quebec and the heart of Canada.\n3. Follow the next year. With Louisbourg gone, Wolfe sailed upriver and took Quebec in 1759.\nRemember: a fortress at a river's mouth is a key \u2014 take it, and the whole river opens."
+ },
+ "figures": [
+  {
+   "file": "u3/louisbourg-siege-1758.jpg",
+   "caption": "\"A View of Louisburg in North America,\" 1758, drawn by Captain Ince, engraved by P. Canot",
+   "alt": "Engraving of the siege of Louisbourg in 1758 showing the harbor crowded with British warships and soldiers hauling supplies in the foreground",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:A_View_of_Louisburg_in_North_America,_taken_near_the_Light_House_when_that_City_was_besieged_in_1758_(JCB).jpg",
+   "id": "fig-apush-mcq-0385"
+  }
+ ]
+}

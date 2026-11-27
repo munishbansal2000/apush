@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-0639",
+ "lesson": "apush-u3-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.9"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "first-amendment",
+ "stimulus": {
+  "kind": "text",
+  "text": "\u201cCongress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances.\u201d\n\n\u2014First Amendment to the Constitution, proposed September 25, 1789, ratified December 15, 1791",
+  "source_note": "First Amendment to the Constitution, proposed September 25, 1789, ratified December 15, 1791. Public domain."
+ },
+ "source": "original; stimulus viewed before writing \u2014 First Amendment to the Constitution, proposed September 25, 1789, ratified December 15, 1791, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.9 The Constitution"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "The Bill of Rights"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "A New Constitution"
+   }
+  ],
+  "primary_sources": [
+   "First Amendment to the Constitution (proposed September 25, 1789; ratified December 15, 1791)"
+  ]
+ },
+ "status": "final",
+ "stem": "According to the passage, which of the following laws would violate the First Amendment?",
+ "options": [
+  {
+   "key": "A",
+   "text": "A law letting each state set its own rules for public schools",
+   "misconception": "The passage limits what Congress may do, and school rules are not among the freedoms it lists."
+  },
+  {
+   "key": "B",
+   "text": "A law requiring every citizen to serve on a jury when called",
+   "misconception": "Jury service is not one of the freedoms the passage protects."
+  },
+  {
+   "key": "C",
+   "text": "A law closing a public park at night to all visitors",
+   "misconception": "Closing a park at night limits no listed freedom on its own terms."
+  },
+  {
+   "key": "D",
+   "text": "A law making one church the official church of the United States"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "D": "The passage forbids Congress to make a law \u201crespecting an establishment of religion,\u201d and an official church is exactly that.",
+  "A": "The passage restricts Congress and lists five freedoms; state school rules touch none of them.",
+  "B": "Jury service is a duty the passage never mentions, so requiring it breaks no listed freedom.",
+  "C": "A night closing of a park, applied to everyone, touches no freedom the passage names.",
+  "general": "1. The passage lists five freedoms Congress may not take away: religion, speech, press, assembly, and petition.\n2. An official church would be a law \u201crespecting an establishment of religion,\u201d the first freedom named.\n3. School rules, jury service, and a park closing touch none of the five freedoms.\n4. So only the official church breaks the passage as written.\nRemember: test a law against the five freedoms the amendment actually names."
+ }
+}

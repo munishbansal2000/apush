@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-0631",
+ "lesson": "apush-u3-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.9"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "federalism-powers-table",
+ "stimulus": {
+  "kind": "table",
+  "text": "| Power | National government | State governments | Both |\n|---|---|---|---|\n| Levy taxes |  |  | X |\n| Coin money | X |  |  |\n| Regulate trade between the states | X |  |  |\n| Establish public schools |  | X |  |\n| Declare war | X |  |  |\n| Establish courts |  |  | X |\n| Make treaties with other nations | X |  |  |",
+  "source_note": "Table drawn from the Constitution: Article I, Section 8 (national powers), Article I, Section 10 (powers forbidden to the states), and the Tenth Amendment (powers reserved to the states)."
+ },
+ "source": "original; table drawn from the Constitution \u2014 Article I, Sections 8 and 10, and the Tenth Amendment.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.9 The Constitution, Federalism\u2014the National Government and the States"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "The Constitutional Convention"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "A New Constitution"
+   }
+  ],
+  "primary_sources": [
+   "Constitution of the United States, Article I, Sections 8 and 10, and the Tenth Amendment (1787-1791)"
+  ]
+ },
+ "status": "final",
+ "stem": "A state passes a law to print its own paper money. A merchant challenges the law. Which row of the table most directly supports the merchant\u2019s side?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Levy taxes",
+   "misconception": "Taxing is a shared power and says nothing about printing money."
+  },
+  {
+   "key": "B",
+   "text": "Establish public schools",
+   "misconception": "Public schools are a state power and say nothing about printing money."
+  },
+  {
+   "key": "C",
+   "text": "Establish courts",
+   "misconception": "Courts are a shared power and say nothing about printing money."
+  },
+  {
+   "key": "D",
+   "text": "Coin money"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "D": "Background: the table gives coining money to the national government alone, and Article I, Section 10 forbids the states to coin money.",
+  "A": "Levying taxes is shared by both levels and does not cover printing money.",
+  "B": "Establishing schools is a state power and does not cover printing money.",
+  "C": "Establishing courts is shared by both levels and does not cover printing money.",
+  "general": "1. The merchant must show that printing money belongs to the national government alone.\n2. The table\u2019s \u201cCoin money\u201d row sits in the national column only.\n3. Background: Article I, Section 10 also forbids the states to coin money.\n4. So that row, not a shared or state row, supports the merchant.\nRemember: when a state claims a power, check whether the table gives it to the nation alone."
+ }
+}

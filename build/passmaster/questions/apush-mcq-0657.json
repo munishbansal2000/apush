@@ -1,0 +1,81 @@
+{
+ "id": "apush-mcq-0657",
+ "lesson": "apush-u3-l5",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.10"
+ ],
+ "skills": [
+  "2.A",
+  "3.A"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 3,
+ "stimulus_set": "bank-debate-1791",
+ "stimulus": {
+  "kind": "text",
+  "text": "Thomas Jefferson, Opinion on the Constitutionality of a National Bank, February 1791: \u201cTo take a single step beyond the boundaries thus specially drawn around the powers of Congress, is to take possession of a boundless field of power, no longer susceptible of any definition.\u201d Paraphrase: Hamilton answered that the Constitution\u2019s necessary and proper clause allowed Congress to charter a bank. President Washington signed the bank bill into law in February 1791.",
+  "source_note": "Thomas Jefferson, Opinion on the Constitutionality of a National Bank, February 1791; Alexander Hamilton, Opinion on the Constitutionality of a National Bank, February 1791. Public domain."
+ },
+ "source": "original; stimulus quotes Jefferson, Opinion on the Constitutionality of a National Bank, February 1791, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.10 Shaping the New Republic"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "Establishment of New Political Systems (1787-1800)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Unit 3: Conflict and American Independence (1754-1800)"
+   }
+  ],
+  "primary_sources": [
+   "Thomas Jefferson, Opinion on the Constitutionality of a National Bank (February 1791)",
+   "Alexander Hamilton, Opinion on the Constitutionality of a National Bank (February 1791)"
+  ]
+ },
+ "status": "final",
+ "stem": "What was Jefferson\u2019s main constitutional objection to the national bank?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Congress held only listed powers, and a bank was not one."
+  },
+  {
+   "key": "B",
+   "text": "The Constitution gave the bank power to the president alone.",
+   "misconception": "The bank debate was about Congress\u2019s powers, not the president\u2019s alone."
+  },
+  {
+   "key": "C",
+   "text": "The Constitution forbade the government from borrowing money.",
+   "misconception": "Jefferson\u2019s objection was about the bank, not about borrowing."
+  },
+  {
+   "key": "D",
+   "text": "The Constitution required every bank to be chartered by a state.",
+   "misconception": "The Constitution says nothing about state-chartered banks in this debate."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Background: Jefferson read the Constitution as a strict list of powers, and a bank was not on the list.",
+  "B": "Jefferson\u2019s objection was about Congress\u2019s powers, not the president\u2019s.",
+  "C": "Background: the Constitution lets Congress borrow money, so this was not Jefferson\u2019s claim.",
+  "D": "Jefferson argued the bank was not among Congress\u2019s listed powers, not that states must charter banks.",
+  "general": "1. Jefferson warns that stepping beyond the powers \u201cspecially drawn\u201d for Congress opens a \u201cboundless field of power.\u201d\n2. Background: Jefferson read the Constitution as a strict list, so a power not listed was a power not given.\n3. Chartering a bank was not on that list, so in his view Congress could not do it.\n4. His objection was therefore about the limits of Congress\u2019s powers, not about borrowing or the president.\nRemember: a strict reading asks what the list leaves out; a broad reading asks what the list allows."
+ }
+}

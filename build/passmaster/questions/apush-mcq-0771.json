@@ -1,0 +1,76 @@
+{
+  "answerKey": "A",
+  "difficulty": 3,
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 5",
+        "section": "Topic 3.4 Philosophical Foundations of the American Revolution"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 9",
+        "section": "Resistance, Rebellion, and Revolution (1750–1775)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 7"
+      }
+    ],
+    "primary_sources": []
+  },
+  "id": "apush-mcq-0771",
+  "lesson": "apush-u3-l2",
+  "options": [
+    {
+      "key": "A",
+      "text": "The use of popular pamphlets and newspapers to mobilize support during the French Revolution"
+    },
+    {
+      "key": "B",
+      "misconception": "Paine's ideas led to a hereditary monarchy.",
+      "text": "The adoption of a hereditary monarchy in the United States under the Constitution"
+    },
+    {
+      "key": "C",
+      "misconception": "Paine's ideas led to permanent neutrality.",
+      "text": "The decision by the United States to remain neutral in all European wars after 1783"
+    },
+    {
+      "key": "D",
+      "misconception": "Paine's ideas led states to reject written constitutions.",
+      "text": "The rejection of written constitutions by all new American states after independence"
+    }
+  ],
+  "pool": "test",
+  "rationales": {
+    "A": "Background: Paine's model of pamphlets and newspapers mobilizing ordinary readers was reused in the French Revolution and later democratic movements.",
+    "B": "A hereditary monarchy in the United States is the opposite of Paine's republicanism.",
+    "C": "The United States did not stay neutral in all European wars after 1783.",
+    "D": "The new states wrote constitutions; they did not reject them.",
+    "general": "1. Name Paine's method. Pamphlets and newspapers mobilizing ordinary readers.\n2. Ask where that method reappears. Background: the French Revolution and later democratic movements reused it.\n3. Test the other options. Monarchy, permanent neutrality, and rejecting constitutions all contradict Paine.\n4. Keep the influence specific. The method traveled, not just the slogan.\nRemember: influence shows in what later movements do, not only in what they say."
+  },
+  "reasoning": "continuity-change",
+  "skills": [
+    "5.B"
+  ],
+  "source": "original; stimulus is a verbatim public-domain excerpt from Thomas Paine, Common Sense (1776)",
+  "status": "final",
+  "stem": "Which of the following later developments best demonstrates the continuing influence of the ideas in *Common Sense*?",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Thomas Paine, Common Sense, 1776, public domain.",
+    "text": "“O ye who love mankind! Ye who dare oppose, not only the tyranny, but the tyrant, stand forth! Every spot of the old world is overrun with oppression. Freedom hath been hunted round the globe. Asia, and Africa, have long expelled her. Europe regards her like a stranger, and England hath given her warning to depart. O! receive the fugitive, and prepare in time an asylum for mankind.”"
+  },
+  "stimulus_set": "paine-common-sense-1776",
+  "themes": [
+    "PCE",
+    "WOR"
+  ],
+  "topics": [
+    "3.4"
+  ],
+  "type": "mcq",
+  "unit": 3
+}

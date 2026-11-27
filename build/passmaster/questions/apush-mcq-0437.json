@@ -1,0 +1,86 @@
+{
+ "id": "apush-mcq-0437",
+ "lesson": "apush-u3-l2",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.3"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "stimulus_set": "tea-party-currier",
+ "stimulus": {
+  "kind": "image",
+  "text": "The print, 'The Destruction of Tea at Boston Harbor,' was published by Nathaniel Currier in 1846, after W. D. Cooper. It shows men dressed as Mohawk Indians heaving tea chests from the deck of a ship into Boston Harbor, while a large crowd on the wharf cheers and waves its hats. Tea chests float in the water around the ship.",
+  "source_note": "Nathaniel Currier, after W. D. Cooper, 1846. Public domain (pre-1930). The print is a 19th-century imagining, made 73 years after the event, not a contemporary record."
+ },
+ "source": "original; stimulus viewed before writing \u2014 Nathaniel Currier, after W. D. Cooper, 1846, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "A. Colonial Resistance to British Policies in the Aftermath of the French and Indian War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 9",
+    "section": "Stamp Act Crisis"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Sugar Act, the Currency Act, and the Stamp Act"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "The men on the ship are shown dressed as Mohawk Indians because...",
+ "options": [
+  {
+   "key": "A",
+   "text": "The disguise hid their identities from British authorities"
+  },
+  {
+   "key": "B",
+   "text": "Mohawk leaders had ordered the destruction of the tea",
+   "misconception": "No Mohawk leader ordered the Tea Party \u2014 the men were Boston radicals in disguise, and the Mohawk nation had nothing to do with it."
+  },
+  {
+   "key": "C",
+   "text": "British law required tea to be destroyed only by Native peoples",
+   "misconception": "No such law existed \u2014 the disguise was the men's own choice, to hide who they were."
+  },
+  {
+   "key": "D",
+   "text": "The East India Company had hired Mohawk workers to unload the ships",
+   "misconception": "The Company hired no Mohawk workers \u2014 the men on the deck were disguised Bostonians destroying the cargo, not unloading it."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "The men were Boston radicals in disguise. Dressing as Mohawk Indians hid who they were from the authorities \u2014 and made the protest look like the work of outsiders, not of Boston's own merchants.",
+  "B": "No Mohawk leader was involved. The disguise was the Bostonians' own choice.",
+  "C": "No law required this. The costume was chosen by the men themselves, for concealment.",
+  "D": "Nobody was hired to unload. The men were destroying the cargo, not working for the Company.",
+  "general": "1. Ask who is on the deck. Boston radicals, not Mohawk Indians \u2014 the dress is a costume.\n2. Ask what a costume does. It hides the wearer: no names, no faces the authorities could punish.\n3. Ask what else it does. It makes the act look like the work of outsiders, distancing Boston's respectable merchants from the destruction.\nRemember: a disguise is a claim \u2014 ask what the wearer wants you to think, and who they are hiding from."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0437",
+   "file": "u3/boston-tea-party-currier.jpg",
+   "caption": "The Destruction of Tea at Boston Harbor, Nathaniel Currier after W. D. Cooper, 1846",
+   "alt": "Currier print of men dressed as Mohawk Indians heaving tea chests from a ship into Boston Harbor while a crowd on the wharf cheers",
+   "license": "Public domain",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Boston_Tea_Party_Currier_colored.jpg"
+  }
+ ]
+}

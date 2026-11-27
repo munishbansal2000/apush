@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-0721",
+ "lesson": "apush-u3-l5",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.12"
+ ],
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "NAT",
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 4,
+ "status": "final",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.7 The Articles of Confederation"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "Establishment of New Political Systems (1787-1800)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Unit 3: Conflict and American Independence (1754-1800)"
+   }
+  ],
+  "primary_sources": [
+   "Northwest Ordinance, July 13, 1787"
+  ]
+ },
+ "stimulus_set": "northwest-ordinance-1787",
+ "stimulus": {
+  "kind": "text",
+  "text": "An Ordinance for the government of the territory of the United States North West of the river Ohio. July 13, 1787.\n\nArticle III: “Religion, morality, and knowledge, being necessary to good government and the happiness of mankind, schools and the means of education shall forever be encouraged.”\n\nArticle V: “There shall be formed in the said territory, not less than three nor more than five states; and, whenever any of the said states shall have sixty thousand free inhabitants therein, such state shall be admitted, by its delegates, into the Congress of the United States, on an equal footing with the original states in all respects whatever. ...”\n\nArticle VI: “There shall be neither slavery nor involuntary servitude in the said territory, otherwise than in the punishment of crimes whereof the party shall have been duly convicted: Provided, always, that any person escaping into the same, from whom labor or service is lawfully claimed in any one of the original states, such fugitive may be lawfully reclaimed and conveyed to the person claiming his or her labor or service as aforesaid.”",
+  "source_note": "Northwest Ordinance, July 13, 1787, Articles III, V, and VI, quoted verbatim; Article V abridged with an ellipsis. Public domain."
+ },
+ "source": "original; stimulus is the Northwest Ordinance, July 13, 1787, quoted verbatim, Article V abridged with an ellipsis (public domain).",
+ "stem": "The fugitive proviso in Article VI best shows that the ban on slavery in the territory was...",
+ "options": [
+  {
+   "key": "A",
+   "text": "real, but limited: escapees from slave states could still be reclaimed."
+  },
+  {
+   "key": "B",
+   "text": "only a suggestion that the territory's settlers were free to ignore.",
+   "misconception": "The article states the ban as law, not as advice."
+  },
+  {
+   "key": "C",
+   "text": "meant to free every enslaved person who reached the territory.",
+   "misconception": "The proviso says the opposite: escapees could be lawfully reclaimed."
+  },
+  {
+   "key": "D",
+   "text": "written to protect the rights of enslaved people above all else.",
+   "misconception": "The proviso protects the owner's claim, not the escapee."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "The proviso lets an owner reclaim a person who escaped from a state where labor was lawfully claimed, so the ban stopped slavery inside the territory without freeing escapees.",
+  "B": "The ban is written as a command, and the proviso is part of that command, not a free choice.",
+  "C": "The proviso lets owners reclaim escapees, so reaching the territory did not free them.",
+  "D": "The proviso serves the person claiming the labor, not the person escaping.",
+  "general": "1. The first half of Article VI bans slavery in the territory.\n2. The proviso then carves out one case: a person escaping from a state where labor was lawfully claimed.\n3. That person could be lawfully reclaimed and carried back.\n4. So the ban was real inside the territory but did not reach across its border to free escapees.\nRemember: a proviso is part of the rule; read it before judging how far a ban reaches."
+ }
+}

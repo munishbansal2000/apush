@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-0380",
+ "lesson": "apush-u3-l1",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.2"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "WOR",
+  "GEO"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 3,
+ "stimulus_set": "shepherd-map",
+ "stimulus": {
+  "kind": "map",
+  "text": "The map, \"The British Colonies in North America, 1763\u20131775,\" comes from Shepherd's Historical Atlas (1911). It shows the Thirteen Colonies in dark pink along the Atlantic coast, with the Province of Quebec to the north and East and West Florida to the south.\n\nA red line marked \"Proclamation Line of 1763\" runs along the Appalachian Mountains, and the lands beyond it are labeled \"Crown lands reserved for Indians by proclamation of 1763.\" West of the Mississippi River, the land is labeled \"Louisiana\" and colored orange for Spanish possessions. Off Newfoundland, two tiny islands are colored green and labeled \"French\" \u2014 Miquelon and St. Pierre.",
+  "source_note": "Shepherd's Historical Atlas (1911), \"The British Colonies in North America, 1763\u20131775,\" public domain."
+ },
+ "source": "original; stimulus viewed before writing \u2014 Shepherd's Historical Atlas (1911), \"The British Colonies in North America, 1763\u20131775,\" public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "The Treaty of Paris (1763)"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 9",
+    "section": "Defeat of New France"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Seven Years' War (1754\u20131763)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "According to the map, what did Spain gain from the peace settlement of 1763?",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Canada went to Britain, not Spain \u2014 the map colors it British pink.",
+   "text": "Spain gained Canada and the Ohio Valley in exchange for its Caribbean colonies."
+  },
+  {
+   "key": "B",
+   "text": "Spain gained Louisiana west of the Mississippi River, while giving up Florida to Britain."
+  },
+  {
+   "key": "C",
+   "misconception": "The Thirteen Colonies stayed British; the map shows them in dark pink along the coast.",
+   "text": "Spain gained the Thirteen Colonies, which Britain traded away for the sugar islands."
+  },
+  {
+   "key": "D",
+   "misconception": "Spain's position changed a great deal: it lost Florida but gained the vast Louisiana territory.",
+   "text": "Spain gained nothing; it left the war with the same territory it held before 1754."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "Canada and the Ohio Valley are colored British pink on the map; Spain's gain lies west of the Mississippi.",
+  "B": "The map colors Louisiana orange for Spanish possessions, stretching west from the Mississippi to the Rockies, while Florida is British pink. Spain traded Florida to Britain and took Louisiana from France in a separate arrangement. The exchange was part of the wider settlement: France, defeated, gave Louisiana to Spain to compensate it for entering a losing war, while Spain handed Florida to Britain as the price of peace.",
+  "C": "The Thirteen Colonies are dark pink \u2014 British \u2014 and Spain's orange is Louisiana, not the Atlantic coast.",
+  "D": "Spain gave up Florida but received Louisiana, a territory larger than all of Britain's Atlantic colonies combined.",
+  "general": "1. Find Spain on the map. The legend colors Spanish possessions orange, and the orange is Louisiana, west of the Mississippi.\n2. Check Florida. It is British pink, not Spanish \u2014 Spain gave it up in the settlement.\n3. Ask why Spain accepted the trade. France gave Spain Louisiana to compensate it for entering a losing war on France's side.\nRemember: the 1763 settlement moved whole empires on paper \u2014 Florida for Louisiana, Canada for sugar islands."
+ },
+ "figures": [
+  {
+   "file": "u3/barrons-2027-ch05-02.png",
+   "caption": "Shepherd's Historical Atlas, \"The British Colonies in North America, 1763\u20131775\"",
+   "alt": "Map of British North America in 1763-1775 showing the Thirteen Colonies, the Proclamation Line of 1763, and French, Spanish, and British possessions",
+   "license": "Public domain",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/British_colonies_1763-76_shepherd1923.PNG",
+   "id": "fig-apush-mcq-0380"
+  }
+ ]
+}

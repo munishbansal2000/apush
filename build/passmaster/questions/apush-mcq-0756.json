@@ -1,0 +1,83 @@
+{
+ "id": "apush-mcq-0756",
+ "lesson": "apush-u3-l5",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.13"
+ ],
+ "skills": [
+  "2.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 3,
+ "status": "final",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.13 Continuity and Change in Period 3"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.9 The Constitution"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "Establishment of New Political Systems (1787-1800)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Unit 3: Conflict and American Independence (1754-1800)"
+   }
+  ],
+  "primary_sources": [
+   "New Jersey Constitution, 1776"
+  ]
+ },
+ "stimulus_set": "republic-1763-1800",
+ "stimulus": {
+  "kind": "table",
+  "text": "| | 1763 | 1800 |\n|---|---|---|\n| Ruler | A king in London, with royal governors in the colonies | An elected president and Congress under a written Constitution |\n| National legislature | None elected by Americans; Parliament made the laws | Congress, with a House elected by voters and a Senate chosen by state legislatures |\n| Voting | Limited to men with property in most colonies | Still limited to men with property in most states |\n\nNew Jersey's constitution of 1776 let “all inhabitants” worth £50 vote, so some women voted there. Laws in 1790 and 1797 made that plain. In 1807 the legislature limited the vote to white men.",
+  "source_note": "Table compiled from Barron's Premium 2027 Chapter 5 and 5 Steps to a 5 2024 Chapter 11. New Jersey voting: Smithsonian Magazine and Tufts University, “A New Nation Votes.”"
+ },
+ "source": "original; table compiled from Barron's Premium 2027 Chapter 5 and 5 Steps to a 5 2024 Chapter 11; New Jersey voting from Smithsonian Magazine and Tufts University, “A New Nation Votes.”",
+ "stem": "Which row of the table shows a continuity rather than a change?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The voting row: it was limited to men with property in both years."
+  },
+  {
+   "key": "B",
+   "text": "The ruler row: a king in 1763, an elected president in 1800.",
+   "misconception": "The ruler row changed completely, from a king to an elected president."
+  },
+  {
+   "key": "C",
+   "text": "The legislature row: no elected body in 1763, Congress in 1800.",
+   "misconception": "The legislature row changed completely, from none elected to Congress."
+  },
+  {
+   "key": "D",
+   "text": "All three rows show a change, with nothing staying the same.",
+   "misconception": "The voting row stayed the same, so not all three rows changed."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Voting was limited to men with property in 1763 and still limited in 1800, so this row stayed the same.",
+  "B": "The ruler row changed completely, from a king to an elected president.",
+  "C": "The legislature row changed completely, from none elected to Congress.",
+  "D": "The voting row stayed the same, so not all three rows changed.",
+  "general": "1. Check the ruler row: king in 1763, elected president in 1800. That changed.\n2. Check the legislature row: none elected by Americans in 1763, Congress in 1800. That changed too.\n3. Check the voting row: limited to men with property in both years. That stayed the same.\n4. So the voting row is the continuity.\nRemember: a continuity is a row where the two columns match."
+ }
+}

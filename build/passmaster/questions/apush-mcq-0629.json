@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-0629",
+ "lesson": "apush-u3-l4",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 3,
+ "topics": [
+  "3.9"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 3,
+ "stimulus_set": "federalism-powers-table",
+ "stimulus": {
+  "kind": "table",
+  "text": "| Power | National government | State governments | Both |\n|---|---|---|---|\n| Levy taxes |  |  | X |\n| Coin money | X |  |  |\n| Regulate trade between the states | X |  |  |\n| Establish public schools |  | X |  |\n| Declare war | X |  |  |\n| Establish courts |  |  | X |\n| Make treaties with other nations | X |  |  |",
+  "source_note": "Table drawn from the Constitution: Article I, Section 8 (national powers), Article I, Section 10 (powers forbidden to the states), and the Tenth Amendment (powers reserved to the states)."
+ },
+ "source": "original; table drawn from the Constitution \u2014 Article I, Sections 8 and 10, and the Tenth Amendment.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.9 The Constitution, Federalism\u2014the National Government and the States"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "The Constitutional Convention"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "A New Constitution"
+   }
+  ],
+  "primary_sources": [
+   "Constitution of the United States, Article I, Sections 8 and 10, and the Tenth Amendment (1787-1791)"
+  ]
+ },
+ "status": "final",
+ "stem": "According to the table, which power shows that the states kept a real sphere of their own under the Constitution rather than becoming mere agents of the national government?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Coin money",
+   "misconception": "Coining money belongs to the national government alone, so it shows national power, not state power."
+  },
+  {
+   "key": "B",
+   "text": "Declare war",
+   "misconception": "Declaring war belongs to the national government alone, so it shows national power, not state power."
+  },
+  {
+   "key": "C",
+   "text": "Establish public schools"
+  },
+  {
+   "key": "D",
+   "text": "Make treaties with other nations",
+   "misconception": "Making treaties belongs to the national government alone, so it shows national power, not state power."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "C": "The table gives public schools to the states alone, so the states kept their own work to do.",
+  "A": "Coining money sits in the national column, so it cannot show state power.",
+  "B": "Declaring war sits in the national column, so it cannot show state power.",
+  "D": "Making treaties sits in the national column, so it cannot show state power.",
+  "general": "1. The table divides powers between the national government, the states, and both.\n2. A state-only row is the proof that the states kept work of their own.\n3. Coining money, declaring war, and making treaties are all national-only rows.\n4. Establishing public schools is the only state-only row, so it carries the point.\nRemember: in a powers table, a row owned by one level alone shows that level kept its own sphere."
+ }
+}

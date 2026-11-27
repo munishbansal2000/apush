@@ -1,0 +1,85 @@
+{
+ "id": "apush-mcq-0508",
+ "lesson": "apush-u3-l3",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 3,
+ "topics": [
+  "3.5"
+ ],
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "yorktown-trumbull",
+ "stimulus": {
+  "kind": "image",
+  "text": "The painting shows the surrender at Yorktown on October 19, 1781. In the center, a British officer in a red coat stands before an American officer on a white horse and presents his sword. American officers on horseback and on foot stand to the right, under the American flag, while British officers wait to the left under a white flag. The painting is John Trumbull's Surrender of Lord Cornwallis, painted in 1820. Cornwallis himself did not attend the surrender; he sent his second-in-command, General Charles O'Hara, who is the British officer shown presenting the sword.",
+  "source_note": "John Trumbull, Surrender of Lord Cornwallis, 1820. Public domain."
+ },
+ "source": "original; stimulus viewed before writing \u2014 John Trumbull, Surrender of Lord Cornwallis, 1820, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.5 The American Revolution, A. The War for Independence"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 10"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Fighting the Revolution"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "Yorktown ended major fighting in the war mainly because",
+ "options": [
+  {
+   "key": "A",
+   "text": "A French fleet blocked Cornwallis's escape by sea while Washington besieged him"
+  },
+  {
+   "key": "B",
+   "text": "Cornwallis's army had already joined the French",
+   "misconception": "Cornwallis's army was British, and it surrendered to the Americans and French; it did not join them."
+  },
+  {
+   "key": "C",
+   "text": "Parliament had voted to grant American independence in 1780",
+   "misconception": "Parliament did not vote independence in 1780; Britain recognized it in the Treaty of Paris in 1783."
+  },
+  {
+   "key": "D",
+   "text": "The British army in America had been destroyed to the last man",
+   "misconception": "British troops remained in America after Yorktown, holding New York City until 1783; the army was not destroyed."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "De Grasse's French fleet held off the British at the Virginia Capes, so Cornwallis could not escape by sea, while Washington and Rochambeau closed the siege by land.",
+  "D": "British troops held New York until 1783; Yorktown captured one army, not the whole British force.",
+  "B": "Cornwallis's army was the enemy, not an ally; it surrendered after the siege, it did not change sides.",
+  "C": "Independence was recognized in 1783, not voted in 1780; Yorktown persuaded Britain the war was lost.",
+  "general": "1. Picture the closing net. Cornwallis sat at Yorktown, on a peninsula, with Washington and Rochambeau pressing in by land.\n2. Ask about the sea. Escape by water was his only way out, and the French fleet under de Grasse blocked it.\n3. Name the result. With no escape and no relief, surrender was the only choice, and Britain saw the war was lost.\nRemember: a siege works when it closes every door \u2014 ask about the sea as well as the land. Background: the French fleet won the Battle of the Virginia Capes on September 5, 1781."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0508",
+   "file": "u3/surrender-cornwallis-yorktown.jpg",
+   "caption": "John Trumbull, Surrender of Lord Cornwallis, 1820",
+   "alt": "Trumbull painting of the British surrender at Yorktown, with a British officer presenting his sword to the Americans under their flag",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Surrender_of_Lord_Cornwallis.jpg"
+  }
+ ]
+}

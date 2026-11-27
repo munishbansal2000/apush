@@ -1,0 +1,86 @@
+{
+ "id": "apush-mcq-0501",
+ "lesson": "apush-u3-l3",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.5"
+ ],
+ "skills": [
+  "5.B"
+ ],
+ "themes": [
+  "WOR",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "difficulty": 4,
+ "stimulus_set": "saratoga-burgoyne",
+ "stimulus": {
+  "kind": "image",
+  "text": "The painting shows the surrender at Saratoga on October 17, 1777. In the center, the British general John Burgoyne, in a red coat, hands his sword to the American general Horatio Gates, who stands with his arm outstretched. American officers and soldiers stand around them, with a cannon at the right and the American flag flying above a tent. The painting is John Trumbull's Surrender of General Burgoyne, painted in December 1821, more than forty years after the surrender.",
+  "source_note": "John Trumbull, Surrender of General Burgoyne, December 1821. Public domain."
+ },
+ "source": "original; stimulus viewed before writing \u2014 John Trumbull, Surrender of General Burgoyne, 1821, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.5 The American Revolution, A. The War for Independence"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 10"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Fighting the Revolution"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "Burgoyne's army was surrounded and forced to surrender at Saratoga mainly because",
+ "options": [
+  {
+   "key": "A",
+   "text": "The Continental Army outnumbered the British three to one from the start",
+   "misconception": "Burgoyne's army was not outnumbered three to one at the start; American numbers grew as militia gathered around him during the campaign."
+  },
+  {
+   "key": "B",
+   "text": "Burgoyne's troops mutinied and refused to fight",
+   "misconception": "Burgoyne's men fought and were defeated in battle; they did not mutiny."
+  },
+  {
+   "key": "C",
+   "text": "Howe marched to Philadelphia instead of up the Hudson"
+  },
+  {
+   "key": "D",
+   "text": "The French navy blockaded the Hudson River",
+   "misconception": "The French navy did not operate on the Hudson in 1777; France had not yet entered the war when Burgoyne surrendered."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "C": "The plan needed Howe to march up the Hudson to Albany, but Howe sailed to Philadelphia instead, leaving Burgoyne alone in the New York wilderness.",
+  "D": "France entered the war in 1778, after Saratoga; no French fleet was on the Hudson in 1777.",
+  "A": "American strength grew during the campaign as militia gathered; Burgoyne was not outnumbered three to one from the start.",
+  "B": "Burgoyne's troops fought at Freeman's Farm and Bemis Heights and were beaten; they did not refuse to fight.",
+  "general": "1. Recall the plan. Three British forces were to meet at Albany and cut New England off from the other colonies.\n2. Find the break. Howe, in New York City, chose Philadelphia instead, so no force came up the Hudson to meet Burgoyne.\n3. Follow the result. Alone, short of supplies, and ringed by gathering Americans, Burgoyne's army was surrounded.\nRemember: a plan that needs three armies fails when one of them goes elsewhere \u2014 trace the missing piece. Background: Howe captured Philadelphia in 1777 while Burgoyne marched south from Canada."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0501",
+   "file": "u3/surrender-burgoyne-saratoga-trumbull.jpg",
+   "caption": "John Trumbull, Surrender of General Burgoyne, December 1821",
+   "alt": "Trumbull painting of Burgoyne handing his sword to Gates at Saratoga, with American officers, a cannon, and the flag",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Surrender_of_General_Burgoyne.jpg"
+  }
+ ]
+}

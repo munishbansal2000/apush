@@ -1,0 +1,72 @@
+{
+ "id": "apush-mcq-0447",
+ "lesson": "apush-u3-l2",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 3,
+ "topics": [
+  "3.4"
+ ],
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "locke-second-treatise",
+ "stimulus": {
+  "kind": "text",
+  "text": "Men being, as has been said, by nature, all free, equal, and independent, no one can be put out of this estate, and subjected to the political power of another, without his own consent. The great and chief end, therefore, of men's uniting into commonwealths, and putting themselves under government, is the preservation of their property. Whenever the legislators endeavour to take away and destroy the property of the people, or to reduce them to slavery under arbitrary power, they put themselves into a state of war with the people, who are thereupon absolved from any farther obedience.",
+  "source_note": "John Locke, Second Treatise of Government (1689), abridged. Public domain."
+ },
+ "source": "original; stimulus viewed before writing \u2014 John Locke, Second Treatise of Government (1689), abridged, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "A. Protestant Evangelicalism and Enlightenment Philosophy"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 10"
+   }
+  ],
+  "primary_sources": [
+   "John Locke, Second Treatise of Government (1689)"
+  ]
+ },
+ "status": "final",
+ "stem": "According to Locke, what makes a person's subjection to political power legitimate?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The ruler's descent from a line of kings anointed by God",
+   "misconception": "Locke argues the opposite \u2014 legitimacy comes from the people, not from divine right or birth."
+  },
+  {
+   "key": "B",
+   "text": "The government's power to keep order by force alone",
+   "misconception": "Force alone never makes power legitimate for Locke \u2014 consent does, and force without consent is war."
+  },
+  {
+   "key": "C",
+   "text": "The person's own consent to be governed"
+  },
+  {
+   "key": "D",
+   "text": "The length of time the government has ruled unchallenged",
+   "misconception": "Long habit does not make rule legitimate for Locke \u2014 only consent does."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "C": "Locke says no one can be subjected to political power \u201cwithout his own consent.\u201d Consent is the source of legitimacy, and a government that rules without it rules by force, not by right.",
+  "A": "Divine right is Filmer's doctrine, which Locke wrote against \u2014 consent, not anointing, legitimates rule.",
+  "B": "Locke calls rule by force without consent a state of war, not legitimate government.",
+  "D": "Time in power is not consent. A government that rules for decades without consent is still illegitimate for Locke.",
+  "general": "1. Find Locke's test. No one can be subjected to political power \u201cwithout his own consent.\u201d\n2. Apply it to the options. Only consent fits \u2014 kingship by birth, force, and long habit all fail the test.\n3. Name the principle. Legitimate government rests on the consent of the governed, not on who holds the sword.\nRemember: when a writer asks what makes power legitimate, look for the source of the right to rule, not the size of the army."
+ }
+}

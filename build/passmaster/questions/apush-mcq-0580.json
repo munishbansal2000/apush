@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-0580",
+ "lesson": "apush-u3-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.7"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 3,
+ "stimulus_set": "jefferson-washington-shays",
+ "stimulus": {
+  "kind": "text",
+  "text": "Passage A \u2014 Thomas Jefferson to James Madison, Paris, January 30, 1787: \u201cI hold it that a little rebellion now and then is a good thing, & as necessary in the political world as storms in the physical. . . . It is a medecine necessary for the sound health of government.\u201d (spelling as in the original)\nPassage B \u2014 George Washington to Henry Lee, Jr., October 31, 1786: \u201cInfluence is no government. Let us have one by which our lives, liberties, and properties will be secured, or let us know the worst at once.\u201d",
+  "source_note": "Thomas Jefferson to James Madison, January 30, 1787; George Washington to Henry Lee, Jr., October 31, 1786. Public domain."
+ },
+ "source": "original; stimuli viewed before writing \u2014 Thomas Jefferson to James Madison, January 30, 1787, and George Washington to Henry Lee, Jr., October 31, 1786, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.7 The Articles of Confederation, B. The Articles of Confederation and the Critical Period"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "The Constitutional Convention"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Shays's Rebellion"
+   }
+  ],
+  "primary_sources": [
+   "Thomas Jefferson to James Madison (January 30, 1787)",
+   "George Washington to Henry Lee, Jr. (October 31, 1786)"
+  ]
+ },
+ "status": "final",
+ "stem": "In Passage A, Jefferson argues that a little rebellion is",
+ "options": [
+  {
+   "key": "A",
+   "text": "a crime that must be punished harshly by the government",
+   "misconception": "Background: in the full letter Jefferson says rebellions should be punished mildly, so as not to discourage them."
+  },
+  {
+   "key": "B",
+   "text": "a sign that the republic has failed",
+   "misconception": "Jefferson calls rebellion a medicine for the health of government, not a sign of failure."
+  },
+  {
+   "key": "C",
+   "text": "a good thing, like storms in nature"
+  },
+  {
+   "key": "D",
+   "text": "a reason to write a stronger constitution",
+   "misconception": "Jefferson is untroubled by the rebellion; he does not use it to argue for a stronger government."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "C": "Jefferson says a little rebellion now and then is a good thing, as necessary in the political world as storms in the physical, and a medicine necessary for the sound health of government.",
+  "A": "Background: in the full letter Jefferson says governors should be mild in punishing rebellions, so as not to discourage them.",
+  "B": "Jefferson calls rebellion a medicine for government, not a sign that the republic has failed.",
+  "D": "Jefferson does not call for a stronger constitution; he is untroubled by the rebellion.",
+  "general": "1. Read Jefferson's comparison. Rebellion is like storms in nature.\n2. He calls it a good thing and a medicine for the health of government.\n3. A man who calls rebellion medicine is not afraid of it.\n4. Background: Jefferson wrote from Paris, far from the tumults, and read the news calmly.\nRemember: Jefferson treats rebellion as weather, not as treason."
+ }
+}

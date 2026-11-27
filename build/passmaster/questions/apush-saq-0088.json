@@ -1,0 +1,105 @@
+{
+ "id": "apush-saq-0088",
+ "lesson": "apush-u3-l4",
+ "type": "saq",
+ "pool": "test",
+ "unit": 3,
+ "topics": [
+  "3.8"
+ ],
+ "skills": [
+  "2.B",
+  "3.A"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 3,
+ "stimulus_set": null,
+ "source": "original; stimulus viewed before writing \u2014 Amos Doolittle, Federal Hall, New York, at Washington's inauguration, April 30, 1789, engraving, 1790, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.8 The Constitutional Convention and Debates over Ratification, C. Federalists, Anti-Federalists, and the Adoption of the Bill of Rights"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "The Ratification Battle"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "A New Constitution"
+   }
+  ],
+  "primary_sources": [
+   "Amos Doolittle, Federal Hall, New York, at Washington's inauguration, April 30, 1789 (engraving, 1790)"
+  ]
+ },
+ "status": "final",
+ "saq_slot": 3,
+ "stimulus": {
+  "type": "image",
+  "text": "The engraving shows Federal Hall in New York City, with a crowd standing on its balcony under red, white, and blue bunting. The building's pediment carries an eagle holding a shield, and thirteen stars run along the frieze below the roof. The scene is George Washington's inauguration as the first president under the Constitution, April 30, 1789.",
+  "source": "Amos Doolittle, Federal Hall, New York, at Washington's inauguration, April 30, 1789. Engraving, 1790. Public domain.",
+  "rights": "Public domain.",
+  "source_note": "Amos Doolittle engraving, 1790, Library of Congress. Public domain."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-saq-0088",
+   "file": "u3/federal-hall-inauguration-1789.jpg",
+   "caption": "Amos Doolittle, Federal Hall at Washington's inauguration, April 30, 1789",
+   "alt": "Engraving of Federal Hall in New York with a crowd on its balcony under red, white, and blue bunting, an eagle with a shield in the pediment, and thirteen stars along the frieze",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Federal_Hall,_N.Y._1789_ppmsca.15703.jpg"
+  }
+ ],
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify ONE detail in the engraving that shows the new national government at work.",
+   "modelAnswer": "One detail is the crowd on the balcony of Federal Hall for Washington's inauguration as the first president. The ceremony shows the new government taking office under the Constitution, with a president, a capital, and a public oath.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names one detail showing the new national government at work, such as the inauguration crowd on the balcony, the eagle and shield in the pediment, or the thirteen stars along the frieze.",
+     "notEarned": "Describing the building without connecting a detail to the new national government does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain ONE way the image reflects the outcome of the debates over ratification.",
+   "modelAnswer": "The image shows the debates settled in the Federalists' favor: the Constitution was ratified, a president was chosen, and the new government began in New York. The thirteen stars on the building stand for all thirteen states.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains one way the image reflects the outcome of ratification, such as the Constitution taking effect, Washington taking office, or the states joining under the new government.",
+     "notEarned": "Saying only that Washington became president, without linking the image to the ratification outcome, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain ONE limit of the engraving as evidence about how ordinary Americans viewed the new government.",
+   "modelAnswer": "The engraving shows a formal ceremony in New York, not ordinary life, and it was made to celebrate the inauguration. It cannot show what farmers, laborers, or enslaved people thought of the new government, or whether they welcomed it at all.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains one limit of the engraving as evidence, such as its ceremonial setting, its celebratory purpose, or its silence about ordinary Americans, including farmers, laborers, and enslaved people.",
+     "notEarned": "Saying only that one image cannot show everything, with no specific limit, does not earn the point."
+    }
+   ]
+  }
+ ],
+ "totalPoints": 3
+}

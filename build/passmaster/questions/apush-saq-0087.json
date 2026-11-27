@@ -1,0 +1,95 @@
+{
+ "id": "apush-saq-0087",
+ "lesson": "apush-u3-l4",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.8"
+ ],
+ "skills": [
+  "3.A",
+  "2.B"
+ ],
+ "themes": [
+  "NAT",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": null,
+ "source": "original; stimulus viewed before writing \u2014 Patrick Henry, speech at the Virginia Ratifying Convention, June 4, 1788, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.8 The Constitutional Convention and Debates over Ratification, C. Federalists, Anti-Federalists, and the Adoption of the Bill of Rights"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "The Ratification Battle"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "A New Constitution"
+   }
+  ],
+  "primary_sources": [
+   "Patrick Henry, speech at the Virginia Ratifying Convention, June 4, 1788"
+  ]
+ },
+ "status": "final",
+ "saq_slot": 2,
+ "stimulus": {
+  "type": "text",
+  "text": "\u201cWho authorized them to speak the language of We, the people, instead of We, the States? States are the characteristics and the soul of a confederation. If the states be not the agents of this compact, it must be one great, consolidated, national government, of the people of all the states.\u201d\n\n\u2014Patrick Henry, speech at the Virginia Ratifying Convention, June 4, 1788",
+  "source": "Patrick Henry, speech at the Virginia Ratifying Convention, June 4, 1788. Public domain.",
+  "rights": "Public domain.",
+  "source_note": "Patrick Henry, speech at the Virginia Ratifying Convention, June 4, 1788. Public domain."
+ },
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify ONE claim Henry makes about the Constitution in this passage.",
+   "modelAnswer": "Henry claims the Constitution creates one great, consolidated national government rather than a confederation of states. He says the opening words, We the People, show that the states are no longer the agents of the compact.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names one claim Henry makes, such as the Constitution creating a consolidated national government, the states losing their place as agents of the compact, or the phrase We the People replacing We the States.",
+     "notEarned": "Restating Henry's words without naming a claim, or naming a claim Henry does not make, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain ONE way Henry's argument reflects Anti-Federalist concerns about the Constitution.",
+   "modelAnswer": "Henry's argument reflects the Anti-Federalist fear that a distant national government would swallow the states, which they saw as the best defenders of the people's rights. His attack on We the People shows the fear that power was moving away from the governments closest to the people.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains one way Henry's argument reflects Anti-Federalist concerns, such as fear of consolidation, fear of distant authority, or the view that the states best defend the people's rights.",
+     "notEarned": "Saying only that Henry opposed the Constitution, without connecting his argument to an Anti-Federalist concern, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain ONE way Federalists answered arguments like Henry's.",
+   "modelAnswer": "Federalists answered that the Constitution divided power so no one part could dominate, with checks and balances among the branches and powers reserved to the states. Madison argued in Federalist No. 10 that a large republic with many interests would keep any one faction from taking control.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains one Federalist answer, such as checks and balances, the separation of powers, reserved powers, or Madison's extended-republic argument in Federalist No. 10.",
+     "notEarned": "Saying only that Federalists disagreed, without naming an argument they made, does not earn the point."
+    }
+   ]
+  }
+ ],
+ "totalPoints": 3
+}

@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-0618",
+ "lesson": "apush-u3-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.8"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "stimulus_set": "mason-objections",
+ "stimulus": {
+  "kind": "text",
+  "text": "\u201cThere is no Declaration of Rights; and the Laws of the general Government being paramount to the Laws & Constitution of the several States, the Declarations of Rights in the separate States are no Security. . . . In the House of Representatives there is not the Substance, but the Shadow only of Representation; which can never produce proper Information in the Legislature, or inspire Confidence in the people. . . . The Judiciary of the United States is so constructed & extended, as to absorb & destroy the Judiciarys of the several States. . . . There is no Declaration of any kind for preserving the Liberty of the Press, the Tryal by jury in civil Causes; nor against the Danger of standing Armies in time of Peace.\u201d\n\n\u2014George Mason, Objections to the Constitution of Government formed by the Convention, September 1787",
+  "source_note": "George Mason, Objections to the Constitution of Government formed by the Convention, September 1787. Public domain."
+ },
+ "source": "original; stimulus viewed before writing \u2014 George Mason, Objections to the Constitution of Government formed by the Convention, September 1787, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.8 The Constitutional Convention and Debates over Ratification, C. Federalists, Anti-Federalists, and the Adoption of the Bill of Rights"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "The Ratification Battle"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "A New Constitution"
+   }
+  ],
+  "primary_sources": [
+   "George Mason, Objections to the Constitution of Government formed by the Convention (September 1787)"
+  ]
+ },
+ "status": "final",
+ "stem": "According to Mason, what is missing first and foremost from the Constitution?",
+ "options": [
+  {
+   "key": "A",
+   "text": "A president with power to enforce the laws",
+   "misconception": "The passage never says the presidency is missing; Mason's first objection is a declaration of rights."
+  },
+  {
+   "key": "B",
+   "text": "A Senate with equal representation for each state",
+   "misconception": "The Senate's equal representation was in the Constitution; Mason objects to the House, not the Senate's design."
+  },
+  {
+   "key": "C",
+   "text": "A declaration of rights"
+  },
+  {
+   "key": "D",
+   "text": "A ban on standing armies in time of peace",
+   "misconception": "Mason lists standing armies last among his objections, not first; the declaration of rights opens the list."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "C": "Mason's objections open with the words themselves: There is no Declaration of Rights.",
+  "A": "The presidency is not in the passage; the first objection is the missing declaration of rights.",
+  "B": "Background: equal representation in the Senate was part of the Constitution, and Mason's complaint is about the House.",
+  "D": "Standing armies appear near the end of the list, not at its head.",
+  "general": "1. Read the first words of the objections: There is no Declaration of Rights.\n2. Mason puts that objection first, before the House, the judiciary, and the press.\n3. Background: the missing bill of rights became the Anti-Federalists' central demand in ratification.\n4. So the answer is the first item on Mason's own list.\nRemember: when a writer lists objections, the first one is the one he leads with."
+ }
+}

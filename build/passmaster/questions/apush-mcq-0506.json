@@ -1,0 +1,75 @@
+{
+ "id": "apush-mcq-0506",
+ "lesson": "apush-u3-l3",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.5"
+ ],
+ "skills": [
+  "3.D"
+ ],
+ "themes": [
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "difficulty": 4,
+ "stimulus_set": "southern-strategy",
+ "stimulus": {
+  "kind": "table",
+  "text": "| Battle | Date | Result |\n|---|---|---|\n| Siege of Charleston | May 1780 | British victory; some 5,000 Americans surrendered |\n| Camden | August 1780 | British victory over the American army in the South |\n| Kings Mountain | October 1780 | American militia victory over a Loyalist force |\n| Cowpens | January 1781 | American victory; British light troops destroyed |\n| Guilford Courthouse | March 1781 | British victory, but with heavy losses |\n| Yorktown | October 1781 | American and French victory; Cornwallis surrendered |",
+  "source_note": "Battle results from Barron's Premium 2027, Chapter 5, and 5 Steps to a 5 2024, Chapter 10."
+ },
+ "source": "original; table drawn from Barron's Premium 2027, Chapter 5, and 5 Steps to a 5 2024, Chapter 10.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.5 The American Revolution, A. The War for Independence"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 10"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Fighting the Revolution"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "Which battle in the table best shows why the British southern strategy failed?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Charleston, because it was the largest British victory of the war",
+   "misconception": "Charleston was a British success, so it shows the strategy working, not failing."
+  },
+  {
+   "key": "B",
+   "text": "Kings Mountain, because it showed Loyalist forces could not hold the backcountry"
+  },
+  {
+   "key": "C",
+   "text": "Cowpens, because it was fought in the North",
+   "misconception": "Cowpens was fought in South Carolina, in the South, not in the North."
+  },
+  {
+   "key": "D",
+   "text": "Yorktown, because it was the first battle of the war",
+   "misconception": "Yorktown was the last major battle of the war, in 1781, not the first; the first fighting was at Lexington in 1775."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "B": "At Kings Mountain, American frontier militia destroyed a Loyalist force, showing the backcountry would not rally to the king and the British could not hold it.",
+  "A": "Charleston was a British victory, so it shows the strategy succeeding, not failing.",
+  "C": "Cowpens was fought in South Carolina, in the South; it was an American victory, but the Loyalist failure is clearest at Kings Mountain.",
+  "D": "Yorktown was the last major battle, not the first; the war began at Lexington and Concord in 1775.",
+  "general": "1. Ask what the strategy needed. It needed southern Loyalists to rally, hold ground, and supply the British army.\n2. Find the row that tests that need. At Kings Mountain, a Loyalist force was destroyed by American militia in the backcountry.\n3. Compare the other rows. Charleston was a British win, Cowpens was a regulars' defeat, and Yorktown was the end, not the test.\nRemember: a strategy fails where its key assumption breaks \u2014 find the row that breaks it."
+ }
+}

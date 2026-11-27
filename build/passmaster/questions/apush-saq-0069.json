@@ -1,0 +1,90 @@
+{
+ "id": "apush-saq-0069",
+ "type": "saq",
+ "unit": 3,
+ "lesson": "apush-u3-l1",
+ "status": "final",
+ "pool": "practice",
+ "saq_slot": 1,
+ "difficulty": 3,
+ "skills": [
+  "1.B",
+  "2.A"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "stimulus_set": null,
+ "source": "original; paraphrase of Edmund S. Morgan's argument on the postwar fiscal crisis (see stimulus source_note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "B. Debt and Taxation Following the French and Indian War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 9",
+    "section": "The British Need Money"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Seven Years' War (1754\u20131763)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "type": "text",
+  "text": "The Seven Years' War left Britain with a debt so large that the interest alone consumed more than half of the government's annual revenue. Ministers concluded that the American colonies, which had benefited most from the victory, should contribute to the cost of their own defense. The colonists, who had fought alongside British regulars and borne the war's frontier hardships, answered that they had already paid \u2014 in blood, in supplies, and in the taxes their own assemblies had levied.",
+  "source": "Paraphrase of Edmund S. Morgan's argument on the postwar fiscal crisis, as summarized in the lesson script. Original wording is the author's own; the figures (debt about \u00a3133 million, interest over \u00a34.4 million a year) follow the UK Parliament historical record.",
+  "rights": "Original paraphrase; no copyrighted text reproduced.",
+  "source_note": "Paraphrase of Edmund S. Morgan's argument on the postwar fiscal crisis. Original wording is the author's own; the figures (debt about \u00a3133 million, interest over \u00a34.4 million a year) follow the UK Parliament historical record."
+ },
+ "parts": [
+  {
+   "part": "a",
+   "modelAnswer": "The war left Britain deeply in debt, and ministers began to treat the colonies as a source of revenue rather than as self-governing communities that taxed themselves. Where earlier policy had left colonial taxation to the assemblies, after 1763 Parliament imposed its own revenue measures \u2014 the Sugar Act, the Stamp Act, and the Townshend duties \u2014 and the colonies answered by questioning Parliament's right to tax them at all.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names a specific postwar change in the British-colonial relationship tied to the war's costs or to new revenue measures."
+    }
+   ],
+   "prompt": "Identify ONE way in which the Seven Years' War changed the relationship between Britain and its American colonies.",
+   "points": 1
+  },
+  {
+   "part": "b",
+   "modelAnswer": "Ministers argued that the colonies had benefited most from the victory: the French threat was gone, and British troops would remain in North America to protect them. Since the colonies gained the security the war had bought, London reasoned it was only fair for them to share the expense of their own defense.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains a ministerial reason for colonial contributions, such as the benefit of British protection or the removal of the French threat."
+    }
+   ],
+   "prompt": "Explain ONE reason why British ministers believed the colonies should help pay the costs of the war.",
+   "points": 1
+  },
+  {
+   "part": "c",
+   "modelAnswer": "Colonists argued they had already paid for the war in blood and in supplies \u2014 about 24,000 provincials had served alongside British regulars \u2014 and that their own assemblies had taxed them throughout the conflict. More fundamentally, they held that only their elected assemblies could tax them, so a tax imposed by a Parliament in which they had no representation violated their rights as Englishmen.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains a colonial objection, such as prior wartime sacrifice, taxation by their own assemblies, or the principle of no taxation without representation."
+    }
+   ],
+   "prompt": "Explain ONE reason why colonists objected to paying new taxes imposed by Parliament after the war.",
+   "points": 1
+  }
+ ],
+ "totalPoints": 3,
+ "topics": [
+  "3.2"
+ ]
+}

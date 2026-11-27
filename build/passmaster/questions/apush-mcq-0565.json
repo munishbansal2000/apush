@@ -1,0 +1,88 @@
+{
+ "id": "apush-mcq-0565",
+ "lesson": "apush-u3-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.7"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "GEO",
+  "MIG"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "old-northwest-map",
+ "stimulus": {
+  "kind": "map",
+  "text": "The map, published by the Northern Trust Company of Chicago in 1936 and titled \u201cThe Old Northwest Territory preceding and following the Ordinance of 1787,\u201d shows the land north of the Ohio River and east of the Mississippi. The territory is divided into five colored sections labeled Wisconsin, Michigan, Illinois, Indiana, and Ohio. Across the map are the names of Native peoples, including the Chippewas, Menominees, Sauks and Foxes, Winnebagos, Kickapoos, Potavatomis, Ottawas, Miamis, Delawares, and Shawnees. Small portraits of leaders such as George Rogers Clark and William Henry Harrison frame the map, and a note tells how the Ohio Company organized at Boston in March 1786.",
+  "source_note": "The Old Northwest Territory preceding and following the Ordinance of 1787, Northern Trust Company, Chicago, 1936. Public domain (published without copyright notice)."
+ },
+ "source": "original; stimulus viewed before writing \u2014 The Old Northwest Territory preceding and following the Ordinance of 1787, Northern Trust Company, Chicago, 1936, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.7 The Articles of Confederation, C. Organizing the Northwest Territory"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Northwest Ordinance of 1787"
+   }
+  ],
+  "primary_sources": [
+   "The Old Northwest Territory preceding and following the Ordinance of 1787 (Northern Trust Company, 1936)"
+  ]
+ },
+ "status": "final",
+ "stem": "The map best illustrates which result of the Northwest Ordinance?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The territory was kept as a permanent colony ruled by the original states",
+   "misconception": "Background: the ordinance promised new states on an equal footing, not permanent colonial status."
+  },
+  {
+   "key": "B",
+   "text": "The territory was divided into new states entering the Union on equal footing"
+  },
+  {
+   "key": "C",
+   "text": "The territory was sold to France to pay the national debt",
+   "misconception": "Background: the territory was never sold to France; it became American states."
+  },
+  {
+   "key": "D",
+   "text": "The territory was closed to settlement until 1800",
+   "misconception": "Background: settlers moved into the southern part of the territory in the 1790s."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "B": "Background from the books: the ordinance set up a process by which territories became states, and the map shows the result: Wisconsin, Michigan, Illinois, Indiana, and Ohio, each on an equal footing with the original states.",
+  "A": "Background: the ordinance promised equal footing, not permanent colonial status, for new states.",
+  "C": "Background: the territory was never sold to France; it became five American states.",
+  "D": "Background: migrants settled along the Ohio in the 1790s, so the territory was not closed until 1800.",
+  "general": "1. Read the map. One territory is divided into five sections: Wisconsin, Michigan, Illinois, Indiana, Ohio.\n2. Background: the ordinance laid out a path from territory to statehood.\n3. Background: new states entered on an equal footing with the original thirteen.\n4. Five states from one territory is the ordinance's statehood process made visible.\nRemember: the map shows one territory becoming five equal states."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0565",
+   "file": "u3/barrons-2027-pt1-04.jpg",
+   "caption": "The Old Northwest Territory, 1936 commemorative map",
+   "alt": "1936 map of the Old Northwest Territory divided into Wisconsin, Michigan, Illinois, Indiana, and Ohio, with Native peoples named across it",
+   "license": "Public domain (published 1936 without copyright notice)",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/72/The_Old_Northwest_Territory_preceding_and_following_the_Ordinance_of_1787.jpg"
+  }
+ ]
+}

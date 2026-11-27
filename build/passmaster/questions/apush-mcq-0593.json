@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-0593",
+ "lesson": "apush-u3-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.8"
+ ],
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "three-fifths-1790-census",
+ "stimulus": {
+  "kind": "text",
+  "text": "| State | Total population, 1790 census | Enslaved people | Counted for representation (free people + three-fifths of enslaved people) |\n|---|---:|---:|---:|\n| Virginia | 747,610 | 292,627 | 630,559 |\n| North Carolina | 393,751 | 100,572 | 353,522 |\n| South Carolina | 249,073 | 107,094 | 206,235 |\n| Massachusetts | 378,787 | 0 | 378,787 |\n| Pennsylvania | 434,373 | 3,737 | 432,878 |",
+  "source_note": "Table drawn from the first United States census, 1790, as published. The counted column applies the Constitution's three-fifths rule: free people plus three-fifths of enslaved people."
+ },
+ "source": "original; table drawn from the first United States census, 1790, as published, with the counted column computed under the Constitution's three-fifths rule.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.8 The Constitutional Convention and Debates over Ratification, B. The Constitution and Slavery\u2014Compromise and Postponement"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "The Constitutional Convention"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "A New Constitution"
+   }
+  ],
+  "primary_sources": [
+   "First United States Census (1790)",
+   "Constitution of the United States, Article I, Section 2 (1787)"
+  ]
+ },
+ "status": "final",
+ "stem": "According to the table, how many people in Virginia counted for representation under the three-fifths rule?",
+ "options": [
+  {
+   "key": "A",
+   "text": "630,559"
+  },
+  {
+   "key": "B",
+   "text": "747,610",
+   "misconception": "747,610 is Virginia's total population, before the three-fifths rule cut the count."
+  },
+  {
+   "key": "C",
+   "text": "454,983",
+   "misconception": "454,983 is Virginia's free population alone, without the three-fifths of enslaved people added."
+  },
+  {
+   "key": "D",
+   "text": "292,627",
+   "misconception": "292,627 is the number of enslaved people in Virginia, not the number counted for representation."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "The table's counted column gives Virginia 630,559: its free people plus three-fifths of its 292,627 enslaved people.",
+  "B": "747,610 is the total population; the rule counted only part of the enslaved population.",
+  "C": "454,983 counts only the free people and leaves out the three-fifths share.",
+  "D": "292,627 is the enslaved population itself, not the number the rule counted.",
+  "general": "1. Find Virginia's row and read across to the counted column.\n2. The counted number is the free people plus three-fifths of the enslaved people.\n3. For Virginia that comes to 630,559, less than the total population of 747,610.\n4. The other numbers in the row are the total, the enslaved count, and the free count alone.\nRemember: the counted column is the answer, not the total column beside it."
+ }
+}

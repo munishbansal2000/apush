@@ -1,0 +1,89 @@
+{
+ "id": "apush-mcq-0715",
+ "lesson": "apush-u3-l5",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.11"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "ARC",
+  "GEO"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 2,
+ "stimulus_set": "capitol-1800-drawing",
+ "stimulus": {
+  "kind": "image",
+  "text": "The Capitol in 1800. The drawing, titled “THE CAPITOL IN 1800,” shows the north wing of the Capitol in Washington, with tall classical columns, arched windows, and a flat roofline, standing nearly alone on open ground, with a few low unfinished buildings in the distance. The federal government moved to the new capital at Washington in 1800.",
+  "source_note": "The Capitol in 1800, from Glenn Brown, History of the United States Capitol, plate 38, Library of Congress. Public domain."
+ },
+ "source": "original; stimulus viewed before writing — The Capitol in 1800, from Glenn Brown, History of the United States Capitol. Public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.11 Developing an American Identity"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "Establishment of New Political Systems (1787-1800)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Unit 3: Conflict and American Independence (1754-1800)"
+   }
+  ],
+  "primary_sources": [
+   "Glenn Brown, History of the United States Capitol, plate 38"
+  ]
+ },
+ "status": "final",
+ "stem": "The drawing shows the Capitol in 1800 as...",
+ "options": [
+  {
+   "key": "A",
+   "text": "a large classical building standing mostly alone on open ground."
+  },
+  {
+   "key": "B",
+   "text": "a small wooden house hidden among trees.",
+   "misconception": "The building is large and made of stone, standing in the open."
+  },
+  {
+   "key": "C",
+   "text": "a crowded city block full of shops and houses.",
+   "misconception": "Only a few low buildings appear in the distance; the ground around the Capitol is open."
+  },
+  {
+   "key": "D",
+   "text": "a domed building finished in every detail.",
+   "misconception": "The drawing shows a flat roofline and unfinished buildings nearby, with no dome."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "The drawing shows the large north wing with columns, standing nearly alone on open ground.",
+  "B": "The building is large and stone, not a small wooden house.",
+  "C": "The ground around it is open, with only a few low buildings far off.",
+  "D": "The roofline is flat, with no dome, and buildings nearby are unfinished.",
+  "general": "1. The drawing is titled “THE CAPITOL IN 1800.”\n2. It shows a large building with tall columns and arched windows.\n3. The ground around it is open, with only a few low buildings in the distance.\n4. So the Capitol appears as a large classical building standing mostly alone.\nRemember: describe the building and its setting as the drawing shows them."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0715",
+   "file": "u3/capitol-in-1800-glenn-brown.jpg",
+   "caption": "The Capitol in 1800, from Glenn Brown’s History of the United States Capitol",
+   "alt": "Line drawing of the Capitol’s north wing in 1800, a large classical building with tall columns standing nearly alone on open ground with low unfinished buildings in the distance",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:The_Capitol_in_1800_taken_from_advanced_proof_of_plate_38_History_of_the_United_States_Capitol_by_Glenn_Brown_LCCN2014649261.jpg"
+  }
+ ]
+}

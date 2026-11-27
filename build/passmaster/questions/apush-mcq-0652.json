@@ -1,0 +1,90 @@
+{
+ "id": "apush-mcq-0652",
+ "lesson": "apush-u3-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.9"
+ ],
+ "skills": [
+  "2.A",
+  "3.A"
+ ],
+ "themes": [
+  "PCE",
+  "GEO"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 4,
+ "stimulus_set": "capitol-1800",
+ "stimulus": {
+  "kind": "image",
+  "text": "The drawing, titled \u201cThe Capitol in 1800,\u201d shows the north wing of the United States Capitol in Washington, taken from an advanced proof of plate 38 in Glenn Brown\u2019s History of the United States Capitol. The building stands nearly alone on open ground, with a small cluster of low buildings at the left and two tiny figures for scale.",
+  "source_note": "The Capitol in 1800, from an advanced proof of plate 38, History of the United States Capitol by Glenn Brown. Library of Congress. Public domain."
+ },
+ "source": "original; stimulus viewed before writing \u2014 The Capitol in 1800, from Glenn Brown, History of the United States Capitol, plate 38, Library of Congress, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.9 The Constitution, A. The Structure of Government Under the Constitution"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "The Constitutional Convention"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "A New Constitution"
+   }
+  ],
+  "primary_sources": [
+   "Glenn Brown, History of the United States Capitol, plate 38 (Library of Congress)"
+  ]
+ },
+ "status": "final",
+ "stem": "The drawing shows the Capitol in 1800 standing nearly alone on open ground. What does that setting most directly show about the new capital?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The capital had been moved to escape a British attack.",
+   "misconception": "The capital moved to Washington under the Residence Act, not to escape an attack."
+  },
+  {
+   "key": "B",
+   "text": "Congress met outdoors because the building had no roof.",
+   "misconception": "The drawing shows a finished wing with a roof; Congress met inside."
+  },
+  {
+   "key": "C",
+   "text": "The Capitol was built far from the city to keep Congress apart from the people.",
+   "misconception": "The building stood alone because the city was new, not to separate Congress from the people."
+  },
+  {
+   "key": "D",
+   "text": "Washington was a new city, still mostly unbuilt around the Capitol."
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "D": "Background: Washington was laid out as a new capital in the 1790s, and in 1800 the government moved into a city that was still mostly open ground.",
+  "A": "The move to Washington came from the Residence Act of 1790, not from a British attack.",
+  "B": "The drawing shows a roofed wing; Congress met inside the building.",
+  "C": "The open ground around the Capitol was a new city not yet built, not a plan to keep Congress apart.",
+  "general": "1. The drawing shows the Capitol\u2019s north wing standing nearly alone, with open ground around it.\n2. Background: Washington was a new city laid out in the 1790s, and the government moved there in 1800.\n3. A new city has few buildings yet, so the Capitol stands by itself on the ground.\n4. The setting therefore shows a capital still being built, not a city under attack or a roofless hall.\nRemember: an empty landscape around a new public building usually means a new city, not a ruined one."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0652",
+   "file": "u3/capitol-in-1800-glenn-brown.jpg",
+   "caption": "The Capitol in 1800, from Glenn Brown\u2019s History of the United States Capitol",
+   "alt": "Drawing of the north wing of the United States Capitol in 1800, a plain stone building standing nearly alone on open ground with a few low buildings at the left",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:The_Capitol_in_1800_taken_from_advanced_proof_of_plate_38_History_of_the_United_States_Capitol_by_Glenn_Brown_LCCN2014649261.jpg"
+  }
+ ]
+}

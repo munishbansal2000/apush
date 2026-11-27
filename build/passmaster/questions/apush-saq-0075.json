@@ -1,0 +1,89 @@
+{
+ "id": "apush-saq-0075",
+ "type": "saq",
+ "unit": 3,
+ "lesson": "apush-u3-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "topics": [
+  "3.4"
+ ],
+ "skills": [
+  "1.B",
+  "2.A"
+ ],
+ "themes": [
+  "PCE",
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "stimulus_set": null,
+ "source": "original; original secondary passage written for this question",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "A. Protestant Evangelicalism and Enlightenment Philosophy"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "B. Common Sense, the Declaration of Independence, and Republican Self-Government"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 10"
+   }
+  ],
+  "primary_sources": []
+ },
+ "saq_slot": 1,
+ "stimulus": {
+  "type": "text",
+  "text": "The American Revolution broke out in the middle of a fertile period in the history of ideas. Enlightenment thinkers argued that government gains its legitimacy from the consent of the governed and exists to protect natural rights. When Thomas Jefferson drafted the Declaration of Independence in 1776, he drew on John Locke's theory, writing that all men are created equal and endowed with unalienable rights, and that governments derive their just powers from the consent of the governed. Yet the rights Jefferson proclaimed did not reach everyone: slavery continued, women could not vote, and Native peoples faced a new nation hungry for their land.",
+  "source": "Original secondary passage written for this question; no copyrighted text reproduced.",
+  "rights": "Original passage; no copyrighted text reproduced.",
+  "source_note": "Original secondary passage written for this question. The facts \u2014 Locke's theory, Jefferson's draft, the limits on the rights' reach \u2014 follow the three course books."
+ },
+ "parts": [
+  {
+   "part": "a",
+   "prompt": "Identify ONE Enlightenment idea in the passage.",
+   "modelAnswer": "One Enlightenment idea in the passage is that government gains its legitimacy from the consent of the governed. Locke argued that people are naturally free and equal, and that no one can be subjected to political power without his own consent.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names an Enlightenment idea from the passage, such as consent of the governed, natural rights, or government existing to protect rights."
+    }
+   ],
+   "points": 1
+  },
+  {
+   "part": "b",
+   "prompt": "Explain how that idea appears in the Declaration of Independence.",
+   "modelAnswer": "The idea appears in the Declaration's preamble, which says governments derive their just powers from the consent of the governed. Jefferson also echoes Locke's natural rights, writing that all men are created equal and endowed with unalienable rights, including life, liberty, and the pursuit of happiness.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains how the idea appears in the Declaration, such as the consent of the governed or the unalienable rights in the preamble."
+    }
+   ],
+   "points": 1
+  },
+  {
+   "part": "c",
+   "prompt": "Explain ONE way the reach of the Declaration's ideals was limited.",
+   "modelAnswer": "The ideals were limited because slavery continued after 1776, even though the Declaration claimed all men are created equal. Jefferson's first draft blamed slavery on Britain, but Congress removed that passage, and enslaved people won freedom only piecemeal, such as by serving in the army in the North.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains a limit on the ideals' reach, such as slavery continuing, women lacking the vote, or Native peoples facing American expansion."
+    }
+   ],
+   "points": 1
+  }
+ ],
+ "totalPoints": 3
+}

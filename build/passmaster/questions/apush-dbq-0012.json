@@ -1,0 +1,188 @@
+{
+ "id": "apush-dbq-0012",
+ "lesson": "apush-u3-l4",
+ "type": "dbq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.8"
+ ],
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 4,
+ "stimulus_set": null,
+ "source": "original; documents viewed before writing \u2014 all pre-1930 public-domain sources or tables drawn from public record.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.8 The Constitutional Convention and Debates over Ratification, A. Compromise and the Framing of the Constitution"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.8 The Constitutional Convention and Debates over Ratification, B. The Constitution and Slavery\u2014Compromise and Postponement"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.8 The Constitutional Convention and Debates over Ratification, C. Federalists, Anti-Federalists, and the Adoption of the Bill of Rights"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "The Constitutional Convention"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "A New Constitution"
+   }
+  ],
+  "primary_sources": [
+   "Virginia Plan (1787)",
+   "New Jersey Plan (1787)",
+   "Constitution of the United States, Article I, Section 2 and Preamble (1787)",
+   "George Washington to David Humphreys, October 22, 1786",
+   "Publius (James Madison), Federalist No. 10 (November 22, 1787)",
+   "Brutus, No. 1 (October 18, 1787)",
+   "George Heap, An East Prospect of the City of Philadelphia, engraved by Gerard Vandergucht (1755)"
+  ]
+ },
+ "status": "final",
+ "totalPoints": 7,
+ "stimulus": {
+  "kind": "mixed",
+  "source_note": "Seven documents, 1755-1787. See documents."
+ },
+ "prompt": "Evaluate the extent to which the compromises of the Constitutional Convention shaped the government created by the Constitution in the period 1787\u20131789.",
+ "documents": [
+  {
+   "n": 1,
+   "kind": "table",
+   "date": "1787",
+   "title": "The Virginia Plan and the New Jersey Plan",
+   "source": "Table drawn from the plans debated at the Constitutional Convention, Philadelphia, summer 1787. Public domain.",
+   "sourcing": "A table of the two rival plans for the legislature, showing what the Convention had to reconcile.",
+   "text": "|  | Virginia Plan | New Jersey Plan |\n|---|---|---|\n| Proposed by | James Madison, for Virginia | William Paterson, for New Jersey |\n| Houses of the legislature | Two | One |\n| Representation | By each state's population | One vote for each state |\n| National government | A new government with three branches and broad powers | Congress kept as it was, with added power to tax and regulate trade |"
+  },
+  {
+   "n": 2,
+   "kind": "text",
+   "date": "September 17, 1787",
+   "title": "Constitution of the United States, Article I, Section 2",
+   "source": "Constitution of the United States, Article I, Section 2, signed September 17, 1787. Public domain.",
+   "sourcing": "The Constitution's own words on representation, showing what the compromises produced.",
+   "text": "\u201cRepresentatives and direct Taxes shall be apportioned among the several States which may be included within this Union, according to their respective Numbers, which shall be determined by adding to the whole Number of free Persons, including those bound to Service for a Term of Years, and excluding Indians not taxed, three fifths of all other Persons. . . . The Number of Representatives shall not exceed one for every thirty Thousand, but each State shall have at Least one Representative; and until such enumeration shall be made, the State of New Hampshire shall be entitled to chuse three, Massachusetts eight, Rhode Island and Providence Plantations one, Connecticut five, New York six, New Jersey four, Pennsylvania eight, Delaware one, Maryland six, Virginia ten, North Carolina five, South Carolina five, and Georgia three.\u201d"
+  },
+  {
+   "n": 3,
+   "kind": "text",
+   "date": "October 22, 1786",
+   "title": "George Washington to David Humphreys",
+   "source": "George Washington to David Humphreys, Mount Vernon, October 22, 1786. Public domain.",
+   "sourcing": "A private letter from Washington, written as disorders in Massachusetts alarmed national leaders.",
+   "text": "\u201cBut for God's sake tell me what is the cause of all these commotions: do they proceed from licentiousness, British influence disseminated by the tories, or real grievances which admit of redress? . . . Commotions of this sort, like snow-balls, gather strength as they roll, if there is no opposition in the way to divide and crumble them. . . . I am mortified beyond expression that in the moment of our acknowledged independence we should by our conduct verify the predictions of our transatlantic foe, and render ourselves ridiculous and contemptible in the eyes of all Europe.\u201d"
+  },
+  {
+   "n": 4,
+   "kind": "text",
+   "date": "November 22, 1787",
+   "title": "Publius (James Madison), Federalist No. 10",
+   "source": "Publius (James Madison), Federalist No. 10, New York Daily Advertiser, November 22, 1787. Public domain.",
+   "sourcing": "A Federalist essay defending the new frame of government to New York readers during ratification.",
+   "text": "\u201cAmong the numerous advantages promised by a well constructed Union, none deserves to be more accurately developed than its tendency to break and control the violence of faction. . . . Extend the sphere, and you take in a greater variety of parties and interests; you make it less probable that a majority of the whole will have a common motive to invade the rights of other citizens.\u201d"
+  },
+  {
+   "n": 5,
+   "kind": "text",
+   "date": "October 18, 1787",
+   "title": "Brutus, No. 1",
+   "source": "Brutus, No. 1, New-York Journal, October 18, 1787. Public domain.",
+   "sourcing": "An Anti-Federalist essay warning that a free republic cannot stretch across so large a country.",
+   "text": "\u201cIf respect is to be paid to the opinion of the greatest and wisest men who have ever thought or wrote on the science of government, we shall be constrained to conclude, that a free republic cannot succeed over a country of such immense extent, containing such a number of inhabitants, and these increasing in such rapid progression as that of the whole United States. . . . These are some of the reasons by which it appears that a free republic cannot long subsist over a country of the great extent of these states. If then this new constitution is calculated to consolidate the thirteen states into one, as it evidently is, it ought not to be adopted.\u201d"
+  },
+  {
+   "n": 6,
+   "kind": "image",
+   "date": "1755",
+   "title": "An East Prospect of the City of Philadelphia",
+   "source": "George Heap, An East Prospect of the City of Philadelphia, engraved by Gerard Vandergucht, 1755. Public domain.",
+   "sourcing": "A view of Philadelphia from the Jersey shore, with the State House at lower right, where the Convention met in 1787.",
+   "figure": "u3/philadelphia-east-prospect-1755.jpg",
+   "text": "The engraving shows Philadelphia from across the Delaware River, with ships on the water and the city behind them. Below the view sits a plan of the city, and at lower right a drawing of the State House, the building where the Constitutional Convention met in the summer of 1787."
+  },
+  {
+   "n": 7,
+   "kind": "text",
+   "date": "September 17, 1787",
+   "title": "Preamble to the Constitution",
+   "source": "Constitution of the United States, Preamble, signed September 17, 1787. Public domain.",
+   "sourcing": "The opening words of the finished Constitution, stating whose authority it rests on.",
+   "text": "\u201cWe the People of the United States, in Order to form a more perfect Union, establish Justice, insure domestic Tranquility, provide for the common defence, promote the general Welfare, and secure the Blessings of Liberty to ourselves and our Posterity, do ordain and establish this Constitution for the United States of America.\u201d"
+  }
+ ],
+ "figures": [
+  {
+   "id": "fig-apush-dbq-0012",
+   "file": "u3/philadelphia-east-prospect-1755.jpg",
+   "caption": "George Heap, An East Prospect of the City of Philadelphia, engraved by Gerard Vandergucht, 1755",
+   "alt": "Panoramic view of Philadelphia from across the Delaware River, with a plan of the city below and the State House drawn at lower right",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:An_East_Prospect_of_the_City_of_Philadelphia.jpg"
+  }
+ ],
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent to which the Convention's compromises shaped the government created by the Constitution, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim about the extent does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as the weaknesses of the Articles of Confederation, Shays's Rebellion, or the fear of distant authority after British rule.",
+   "notEarned": "A sentence of background with no link to the argument does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence from documents (first point): earns the point for describing the content of at least three documents relevant to the argument about how the compromises shaped the government.",
+   "notEarned": "Quoting documents without describing what they show does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence from documents (second point): earns the point for using the content of at least six documents to support the argument, including documents showing both what the compromises built and what they left unresolved.",
+   "notEarned": "Using fewer than six documents, or using six without tying them to the argument, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence beyond the documents: earns the point for describing a specific relevant example not in the documents, such as the twenty-year protection of the slave trade, the Great Compromise's Senate, or the promise of a bill of rights during ratification.",
+   "notEarned": "A vague reference to outside knowledge with no specific example does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "3.B",
+   "criterion": "Sourcing: earns the point for explaining how the audience, purpose, historical situation, or point of view of at least two documents shapes the argument, such as Washington's private alarm, the Federalist essay written to win New York, or the 1755 engraving as a view of the Convention's city.",
+   "notEarned": "Naming a document's author without explaining how it shapes the argument does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.D",
+   "criterion": "Complexity: earns the point for a complex argument, such as qualifying the thesis by showing that the compromises built a workable government while postponing the hardest question, slavery, or that the same compromises drew Anti-Federalist fire.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ],
+ "modelOutline": "Thesis: The Convention's compromises shaped the new government to a great extent, because they fixed its structure, its representation, and its treatment of slavery, though they also left the hardest questions open and drew the opposition that forced the Bill of Rights.\nContext: The Articles had left Congress unable to tax, raise troops, or stop disorders, and Washington's letters show national leaders alarmed that the Union was verging on anarchy. Document 6 shows Philadelphia from across the Delaware, with the State House at lower right where the Convention met in 1787.\nStructure: Document 1 shows the two rival plans for the legislature. The Great Compromise settled them with a House by population and a Senate of two per state, and Document 2 shows that settlement written into Article I, Section 2, with Virginia at ten seats and Delaware at one.\nSlavery: Document 2 shows the three-fifths rule counting enslaved people for representation, a bargain that gave the South seats for people who could not vote.\nThe argument for the result: Document 4 shows Madison defending the extended republic as a cure for faction. Document 7 shows the new frame resting its authority on We the People rather than on the states.\nThe argument against: Document 5 shows Brutus warning that a free republic cannot stretch across so large a country and that consolidation would follow.\nBeyond the documents: The twenty-year protection of the slave trade and the promise of a bill of rights during ratification were further bargains that shaped the government.\nComplexity: The compromises made a government strong enough to work, but they bought southern support with slavery's protection and bought ratification with a promised bill of rights, so the settlement was both a creation and a postponement."
+}

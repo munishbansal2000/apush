@@ -1,0 +1,90 @@
+{
+ "id": "apush-mcq-0599",
+ "lesson": "apush-u3-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.8"
+ ],
+ "skills": [
+  "2.A",
+  "6.C"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "constitution-page-1",
+ "stimulus": {
+  "kind": "image",
+  "text": "The first page of the Constitution, signed at Philadelphia on September 17, 1787, begins \u201cWe the People of the United States, in Order to form a more perfect Union, establish Justice, insure domestic Tranquility, provide for the common defence, promote the general Welfare, and secure the Blessings of Liberty to ourselves and our Posterity, do ordain and establish this Constitution for the United States of America.\u201d Article 1, Section 2, on the same page, says Representatives \u201cshall be apportioned among the several States . . . according to their respective Numbers, which shall be determined by adding to the whole Number of free Persons, including those bound to Service for a Term of Years, and excluding Indians not taxed, three fifths of all other Persons.\u201d The section then sets the first House: New Hampshire three, Massachusetts eight, Rhode Island one, Connecticut five, New York six, New Jersey four, Pennsylvania eight, Delaware one, Maryland six, Virginia ten, North Carolina five, South Carolina five, and Georgia three.",
+  "source_note": "Constitution of the United States, first page, engrossed by Jacob Shallus, signed September 17, 1787. Public domain."
+ },
+ "source": "original; stimulus viewed before writing \u2014 Constitution of the United States, first page, engrossed by Jacob Shallus, signed September 17, 1787, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.8 The Constitutional Convention and Debates over Ratification, B. The Constitution and Slavery\u2014Compromise and Postponement"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "The Constitutional Convention"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "A New Constitution"
+   }
+  ],
+  "primary_sources": [
+   "Constitution of the United States (1787)"
+  ]
+ },
+ "status": "final",
+ "stem": "The first House set out on this page gives Virginia ten seats and Delaware one. What does that show about the House of Representatives?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Each state received the same number of seats",
+   "misconception": "Virginia has ten seats and Delaware one, so the states did not receive the same number."
+  },
+  {
+   "key": "B",
+   "text": "Seats were set by each state's wealth",
+   "misconception": "The section apportions seats according to numbers of people, not wealth."
+  },
+  {
+   "key": "C",
+   "text": "Seats were set by each state's population"
+  },
+  {
+   "key": "D",
+   "text": "Seats were chosen by the state legislatures",
+   "misconception": "State legislatures chose senators; the House was chosen by the people of each state."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "Ten seats for Virginia against one for Delaware is not an equal number per state.",
+  "B": "The section counts people, not wealth, to set the seats.",
+  "C": "The section says Representatives are apportioned according to their respective numbers, and the list follows it: the most populous state, Virginia, gets ten seats and the smallest, Delaware, gets one. Background: Virginia was the largest state in 1787.",
+  "D": "Background: state legislatures chose senators, while House members were chosen by the people.",
+  "general": "1. Read the apportionment sentence first: seats follow the states' respective numbers.\n2. Check the list: Virginia ten, Delaware one.\n3. Background: Virginia was the most populous state and Delaware among the smallest.\n4. The list matches population, not equality and not wealth, and the section counts people, not property.\nRemember: a list of numbers tests the rule beside it, so check both together."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0599",
+   "file": "u3/constitution-first-page-1787.jpg",
+   "caption": "First page of the engrossed Constitution, 1787",
+   "alt": "Handwritten first page of the Constitution beginning We the People, with Article 1, Section 2 naming three fifths of all other Persons and the first apportionment of House seats",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Constitution_of_the_United_States,_page_1.jpg"
+  }
+ ]
+}

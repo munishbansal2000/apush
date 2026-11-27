@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-0594",
+ "lesson": "apush-u3-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.8"
+ ],
+ "skills": [
+  "6.C"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 4,
+ "stimulus_set": "three-fifths-1790-census",
+ "stimulus": {
+  "kind": "text",
+  "text": "| State | Total population, 1790 census | Enslaved people | Counted for representation (free people + three-fifths of enslaved people) |\n|---|---:|---:|---:|\n| Virginia | 747,610 | 292,627 | 630,559 |\n| North Carolina | 393,751 | 100,572 | 353,522 |\n| South Carolina | 249,073 | 107,094 | 206,235 |\n| Massachusetts | 378,787 | 0 | 378,787 |\n| Pennsylvania | 434,373 | 3,737 | 432,878 |",
+  "source_note": "Table drawn from the first United States census, 1790, as published. The counted column applies the Constitution's three-fifths rule: free people plus three-fifths of enslaved people."
+ },
+ "source": "original; table drawn from the first United States census, 1790, as published, with the counted column computed under the Constitution's three-fifths rule.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.8 The Constitutional Convention and Debates over Ratification, B. The Constitution and Slavery\u2014Compromise and Postponement"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "The Constitutional Convention"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "A New Constitution"
+   }
+  ],
+  "primary_sources": [
+   "First United States Census (1790)",
+   "Constitution of the United States, Article I, Section 2 (1787)"
+  ]
+ },
+ "status": "final",
+ "stem": "What does the table show about the effect of the Three-Fifths Compromise on representation?",
+ "options": [
+  {
+   "key": "A",
+   "text": "It counted every person in every state exactly the same",
+   "misconception": "The counted column is below the total wherever enslaved people lived; the rule did not count everyone the same."
+  },
+  {
+   "key": "B",
+   "text": "It freed enslaved people in the states with the largest enslaved populations",
+   "misconception": "The compromise counted enslaved people for seats; it freed no one and left slavery in place."
+  },
+  {
+   "key": "C",
+   "text": "It gave northern states more seats than southern states",
+   "misconception": "Virginia alone counted 630,559, more than Massachusetts or Pennsylvania; the gain went south."
+  },
+  {
+   "key": "D",
+   "text": "It gave southern states extra seats for enslaved people who could not vote"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "A": "Where enslaved people lived, the counted number falls short of the total, so people were not counted the same.",
+  "B": "Background: counting enslaved people for seats did not free them; slavery continued in those states.",
+  "C": "The table's southern states gained the most: Virginia's counted number tops every northern state shown.",
+  "D": "Virginia's counted number is 175,576 above its free population, and South Carolina's is 64,256 above its free population, so the rule added House seats for people who could not vote. Background: the compromise was the price of southern support for the Constitution.",
+  "general": "1. Compare the counted column with the free population in each row.\n2. Virginia gains 175,576 and South Carolina gains 64,256 over their free populations.\n3. Those gains are three-fifths of the enslaved people in each state. Background: enslaved people could not vote, so the seats spoke for their owners, not for them.\n4. Background: the gain meant more House seats for the slaveholding states.\nRemember: a rule that adds seats for people who cannot vote shifts power toward their owners."
+ }
+}

@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-0534",
+ "lesson": "apush-u3-l3",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 3,
+ "topics": [
+  "3.6"
+ ],
+ "skills": [
+  "5.B"
+ ],
+ "themes": [
+  "SOC",
+  "GEO"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 4,
+ "stimulus_set": "gradual-emancipation-table",
+ "stimulus": {
+  "kind": "table",
+  "text": "| Place | Action | What it did |\n|---|---|---|\n| Vermont | 1777 constitution | Slavery banned outright |\n| Pennsylvania | 1780 law | Children born after March 1, 1780, free at age 28 |\n| Massachusetts | 1783 court decisions | Slavery ended under the 1780 state constitution |\n| Connecticut | 1784 law | Children born after March 1, 1784, free at age 25 |\n| Rhode Island | 1784 law | Children born after March 1, 1784, free at 18 (girls) or 21 (boys) |\n| New York | 1799 law | Children born after July 4, 1799, free at 28 (boys) or 25 (girls) |\n| Northwest Territory | 1787 ordinance | Slavery banned in the territory |",
+  "source_note": "Compiled from state constitutions, statutes, and court decisions, 1777-1799. Public record."
+ },
+ "source": "original; stimulus table compiled from state constitutions, statutes, and court decisions, 1777-1799.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.6 The Influence of Revolutionary Ideals, A. The Call for Egalitarianism"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 10"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7"
+   }
+  ],
+  "primary_sources": [
+   "State emancipation actions, 1777-1799"
+  ]
+ },
+ "status": "final",
+ "stem": "Which of the following best explains why the table's northern pattern did not spread to the South?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The Constitution of 1787 banned slavery in every state",
+   "misconception": "The Constitution did no such thing; it protected slavery and barred Congress from ending the slave trade before 1808."
+  },
+  {
+   "key": "B",
+   "text": "Southern slavery grew profitable after the cotton gin; northern slavery stayed small"
+  },
+  {
+   "key": "C",
+   "text": "The Northwest Ordinance required southern states to keep slavery",
+   "misconception": "The Ordinance banned slavery only in the Northwest Territory; it required nothing of the southern states."
+  },
+  {
+   "key": "D",
+   "text": "The French Revolution ended slavery throughout the Americas in the year 1789",
+   "misconception": "The French Revolution did not end slavery in the Americas; Saint-Domingue's enslaved people won their own freedom by rebellion, not by French decree."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "B": "Northern slavery was small and mostly household labor, so gradual laws cost owners little. Background: Eli Whitney's cotton gin of 1793 made slave-grown cotton pay, so southern planters held on tighter.",
+  "A": "The Constitution protected slavery; it never banned it in any state.",
+  "C": "The Ordinance touched only the Northwest Territory; southern states kept slavery by their own choice.",
+  "D": "No French decree ended American slavery; the Haitian Revolution was won by the enslaved themselves, not granted from Paris.",
+  "general": "1. Compare the economies. Background: northern slavery was small and household-based, so ending it cost owners little.\n2. Ask what changed in the South. Background: the cotton gin of 1793 made short-staple cotton profitable, and slavery with it.\n3. Judge the split. The same ideals produced gradual laws where slavery was marginal and resistance where it paid.\nRemember: ideals bend toward interest \u2014 ask who profits from the old order before asking why it survives."
+ }
+}

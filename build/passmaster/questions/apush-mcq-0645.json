@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-0645",
+ "lesson": "apush-u3-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.9"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "stimulus_set": "amendments-four-eight",
+ "stimulus": {
+  "kind": "text",
+  "text": "\u201cThe right of the people to be secure in their persons, houses, papers, and effects, against unreasonable searches and seizures, shall not be violated, and no Warrants shall issue, but upon probable cause, supported by Oath or affirmation, and particularly describing the place to be searched, and the persons or things to be seized.\u201d \u2014Fourth Amendment\n\n\u201cNo person shall be held to answer for a capital, or otherwise infamous crime, unless on a presentment or indictment of a Grand Jury, . . . nor shall any person be subject for the same offence to be twice put in jeopardy of life or limb; nor shall be compelled in any criminal case to be a witness against himself, nor be deprived of life, liberty, or property, without due process of law; nor shall private property be taken for public use, without just compensation.\u201d \u2014Fifth Amendment\n\n\u201cIn all criminal prosecutions, the accused shall enjoy the right to a speedy and public trial, by an impartial jury of the State and district wherein the crime shall have been committed, . . . to be informed of the nature and cause of the accusation; to be confronted with the witnesses against him; to have compulsory process for obtaining witnesses in his favor, and to have the Assistance of Counsel for his defence.\u201d \u2014Sixth Amendment\n\n\u201cExcessive bail shall not be required, nor excessive fines imposed, nor cruel and unusual punishments inflicted.\u201d \u2014Eighth Amendment\n\n\u2014Amendments IV, V, VI, and VIII to the Constitution, proposed September 25, 1789, ratified December 15, 1791",
+  "source_note": "Amendments IV, V, VI, and VIII to the Constitution, proposed September 25, 1789, ratified December 15, 1791. Public domain."
+ },
+ "source": "original; stimulus viewed before writing \u2014 Amendments IV, V, VI, and VIII to the Constitution, proposed September 25, 1789, ratified December 15, 1791, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.9 The Constitution"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "The Bill of Rights"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "A New Constitution"
+   }
+  ],
+  "primary_sources": [
+   "Fourth, Fifth, Sixth, and Eighth Amendments (proposed September 25, 1789; ratified December 15, 1791)"
+  ]
+ },
+ "status": "final",
+ "stem": "According to the Fourth Amendment in the passage, when may officers search a person\u2019s house?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Only with a warrant on probable cause naming the place"
+  },
+  {
+   "key": "B",
+   "text": "Whenever they suspect a crime may have happened",
+   "misconception": "Suspicion alone is not enough; the passage requires a warrant on probable cause."
+  },
+  {
+   "key": "C",
+   "text": "Whenever the president orders the search",
+   "misconception": "The passage says nothing about presidential orders; it requires a warrant."
+  },
+  {
+   "key": "D",
+   "text": "Only after the person has been convicted of a crime",
+   "misconception": "A search comes before a trial, not after a conviction."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "The passage says no warrants shall issue \u201cbut upon probable cause,\u201d describing the place to be searched.",
+  "B": "The passage demands probable cause and a warrant, not mere suspicion.",
+  "C": "The passage sets the warrant rule; it gives the president no power to order a search.",
+  "D": "Searches happen while a crime is investigated, before any conviction.",
+  "general": "1. The Fourth Amendment protects people against unreasonable searches and seizures.\n2. It says warrants issue only on probable cause, supported by oath, and describing the place to be searched.\n3. Suspicion alone, a presidential order, or a conviction do not meet that rule.\n4. So a search of a house needs a warrant built on probable cause.\nRemember: a lawful search starts with a warrant, probable cause, and a named place."
+ }
+}

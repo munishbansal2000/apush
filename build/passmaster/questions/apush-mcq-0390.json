@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-0390",
+ "lesson": "apush-u3-l1",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.2"
+ ],
+ "skills": [
+  "3.C",
+  "4.A"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "war-debt-table",
+ "stimulus": {
+  "kind": "table",
+  "text": "The table shows the cost of the Seven Years' War to Britain and the size of the forces that fought it in North America.\n\n| Item | Figure |\n| British national debt, 1754 | about \u00a375 million |\n| British national debt, 1763 | about \u00a3133 million |\n| Annual interest on the debt, 1763 | more than \u00a34.4 million |\n| British regular soldiers sent to North America during the war | 25,000 |\n| Colonial provincial soldiers who served alongside them | about 24,000 |",
+  "source_note": "Debt figures: UK Parliament historical national debt figures (about \u00a375 million in 1754, about \u00a3133 million in 1763; annual interest over \u00a34.4 million). Troop figures: 5 Steps to a 5, 2024, Chapter 9."
+ },
+ "source": "original; stimulus viewed before writing \u2014 Debt figures: UK Parliament historical national debt figures (about \u00a375 million in 1754, about \u00a3133 million in 1763; annual interest over \u00a34.4 million). Troop figures: 5 Steps to a 5, 2024, Chapter 9.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "B. Debt and Taxation Following the French and Indian War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 9",
+    "section": "The British Need Money"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Seven Years' War (1754\u20131763)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "A student claims the table proves the Seven Years' War was fought mainly to make money for Britain. Which of the following best evaluates that claim?",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "\u00a3133 million was the debt, not a profit \u2014 the table shows what the war cost, not what it earned.",
+   "text": "The claim is supported: the table shows Britain gained \u00a3133 million from the war."
+  },
+  {
+   "key": "B",
+   "text": "The claim is not supported: the table shows costs and debts, not profits."
+  },
+  {
+   "key": "C",
+   "misconception": "The number of soldiers shows the war's scale, not its purpose; troops do not prove a commercial motive.",
+   "text": "The claim is supported: the 24,000 colonial soldiers prove the war was a commercial venture."
+  },
+  {
+   "key": "D",
+   "misconception": "France lost Canada to Britain; the claim fails for a different reason \u2014 the table shows costs, not motives.",
+   "text": "The claim is not supported: Britain actually lost money because France kept Canada."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "The \u00a3133 million figure is the national debt in 1763, not a profit \u2014 it is what Britain owed, not what it gained.",
+  "B": "The table lists debts, interest, and troop numbers \u2014 the price of the war, not its prize. The war began over the Ohio Valley and the balance of power between Britain and France, and its outcome was territory and security, not revenue. A table of costs cannot prove a profit motive; it proves the opposite, that the war was enormously expensive.",
+  "C": "Troop numbers measure effort, not motive; 24,000 provincials show how many fought, not why they fought.",
+  "D": "France did lose Canada \u2014 that is the error's mirror image, since the claim's real flaw is that a table of costs cannot establish a motive.",
+  "general": "1. Read what the table actually lists. Debts, interest, soldiers \u2014 every row is a cost.\n2. Ask what a cost table can prove. It can show the war was expensive; it cannot show why it was fought.\n3. Check the war's origins. The fighting began over the Ohio Valley and the balance of power, not over revenue.\nRemember: a table of costs is evidence about price, not about purpose \u2014 do not let numbers answer a question they were never asked."
+ }
+}

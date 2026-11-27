@@ -1,0 +1,98 @@
+{
+ "id": "apush-saq-0074",
+ "type": "saq",
+ "unit": 3,
+ "lesson": "apush-u3-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "topics": [
+  "3.3"
+ ],
+ "skills": [
+  "3.A",
+  "2.A"
+ ],
+ "themes": [
+  "PCE",
+  "ARC"
+ ],
+ "reasoning": "causation",
+ "stimulus_set": null,
+ "source": "original; stimulus is a public-domain image from the shared pool, viewed before writing",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "A. Colonial Resistance to British Policies in the Aftermath of the French and Indian War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 9",
+    "section": "Stamp Act Crisis"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Sugar Act, the Currency Act, and the Stamp Act"
+   }
+  ],
+  "primary_sources": []
+ },
+ "saq_slot": 3,
+ "stimulus": {
+  "type": "image",
+  "text": "Paul Revere's engraving The Bloody Massacre, printed in Boston in March 1770. It shows a line of British soldiers firing a volley into a crowd in King Street, with five men fallen in the foreground and a small dog nearby. The caption names the five dead men and calls the event a massacre.",
+  "source_note": "Paul Revere, The Bloody Massacre perpetrated in King-Street Boston on March 5th 1770. Public domain; image from the shared image pool, viewed before writing."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-saq-0074",
+   "file": "u3/pr25e-ch07-q03.jpg",
+   "caption": "The Bloody Massacre perpetrated in King-Street Boston on March 5th 1770, engraved, printed, and sold by Paul Revere",
+   "alt": "Revere engraving of British soldiers firing a volley into a crowd of Bostonians in King Street, with five men fallen in the foreground",
+   "license": "Public domain",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/5/51/The_bloody_massacre_perpetrated_in_King_Street_Boston_on_March_5th_1770_by_a_party_of_the_29th_Regt._-_engrav%27d%2C_printed_%26_sold_by_Paul_Revere%2C_Boston._LCCN2008680173.jpg"
+  }
+ ],
+ "parts": [
+  {
+   "part": "a",
+   "prompt": "Identify ONE feature of the engraving that presents the Boston Massacre as a deliberate killing.",
+   "modelAnswer": "Revere arranges the soldiers in a neat line, firing together through a single cloud of smoke, as if on an officer's order. The officer behind them raises a sword, which reads as the signal to fire, and the victims fall in a row before them. Nothing in the scene suggests confusion or a scuffle \u2014 the image shows a planned volley, not a street fight.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names a feature presenting the event as deliberate, such as the soldiers in a firing line, the officer raising his sword, or the orderly volley."
+    }
+   ],
+   "points": 1
+  },
+  {
+   "part": "b",
+   "prompt": "Explain ONE reason Patriots circulated images like this one.",
+   "modelAnswer": "Patriots circulated the engraving to turn a confusing street confrontation into a clear story of British cruelty, one that could travel faster than any report. Copies reached other colonies and London within weeks, where readers who had not been in Boston could see the \"massacre\" for themselves. The image recruited sympathy and support for the colonial cause far beyond the town where the shooting happened.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains a reason for circulating the image, such as shaping opinion, spreading the Patriot account quickly, or winning sympathy in other colonies and in Britain."
+    }
+   ],
+   "points": 1
+  },
+  {
+   "part": "c",
+   "prompt": "Explain ONE limitation of the engraving as evidence of what happened on March 5, 1770.",
+   "modelAnswer": "The engraving is propaganda, not a record: the soldiers fired in confusion after being pelted with snow and ice, and Captain Preston denied giving any order to fire. Revere, who was a Son of Liberty, drew the scene to make the soldiers look like murderers, and he printed it within weeks to shape opinion. A historian can use it to show how Patriots framed the event, but not to reconstruct what the soldiers actually did.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains a limitation of the engraving, such as its ordered volley versus the confused confrontation, Revere's Patriot purpose, or its value as evidence of framing rather than of the event itself."
+    }
+   ],
+   "points": 1
+  }
+ ],
+ "totalPoints": 3
+}

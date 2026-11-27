@@ -1,0 +1,76 @@
+{
+ "id": "apush-mcq-0420",
+ "lesson": "apush-u3-l2",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 3,
+ "topics": [
+  "3.3"
+ ],
+ "skills": [
+  "5.A"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 4,
+ "stimulus_set": "franklin-distinction",
+ "stimulus": {
+  "kind": "text",
+  "text": "In February 1766, Benjamin Franklin was questioned by the House of Commons about the Stamp Act. He told Parliament that the colonists had long accepted duties on goods traded with other nations, which regulated commerce, but that a tax laid directly on things produced and used inside the colonies \u2014 like the stamps on paper and legal documents \u2014 was different: it reached into the colonists' daily lives and taxed them without their consent. He warned British readers that the new system of taxing the colonies 'tends to dissolve those bands of union and to sever us forever.'",
+  "source_note": "Original secondary passage; facts from Barron's Premium 2027, Chapter 5, and 5 Steps to a 5 2024, Chapter 9. The quoted sentence is Franklin's, as reported in 5 Steps to a 5 2024, Chapter 9."
+ },
+ "source": "original; stimulus viewed before writing \u2014 original secondary passage; facts from Barron's Premium 2027, Chapter 5, and 5 Steps to a 5 2024, Chapter 9.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "A. Colonial Resistance to British Policies in the Aftermath of the French and Indian War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 9",
+    "section": "Stamp Act Crisis"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Sugar Act, the Currency Act, and the Stamp Act"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "Which colonial action best embodied Franklin's reasoning in the passage?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Anti-Federalist demands for adding a Bill of Rights to the Constitution during ratification",
+   "misconception": "The Bill of Rights debate was about limiting the new federal government \u2014 not about Franklin's distinction between duties on trade and direct taxes."
+  },
+  {
+   "key": "B",
+   "text": "The Stamp Act Congress's 1765 petition protesting parliamentary taxation"
+  },
+  {
+   "key": "C",
+   "text": "South Carolina's nullification of the tariff in 1832",
+   "misconception": "Nullification came sixty-six years later and claimed a state could void federal law \u2014 Franklin's argument was about Parliament's right to tax, not about nullifying a tariff."
+  },
+  {
+   "key": "D",
+   "text": "The probusiness policies of Coolidge and Hoover in the 1920s",
+   "misconception": "Coolidge and Hoover favored low taxes on business in the 1920s \u2014 a policy preference, not an application of Franklin's argument about representation and consent."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "B": "The Stamp Act Congress petitioned against parliamentary taxation using Franklin's own distinction: duties regulating trade were tolerable, but a direct tax without representation was not. The petition was his argument, made by nine colonies at once.",
+  "A": "The Bill of Rights was about the new federal government, not about Parliament's taxes. It does not use Franklin's distinction.",
+  "C": "Nullification was a claim that a state could void a federal law \u2014 a different argument, sixty-six years later.",
+  "D": "1920s tax policy was about low rates for business. It has nothing to do with Franklin's consent argument.",
+  "general": "1. Name Franklin's distinction. Duties on trade regulate commerce; a direct tax reaches inside the colonies and taxes without consent.\n2. Ask which action used that distinction. The Stamp Act Congress petitioned against the tax on exactly those grounds.\n3. Check the others. The Bill of Rights, nullification, and 1920s tax policy are all later arguments about different questions.\nRemember: an idea becomes a movement when someone acts on it \u2014 match the action to the argument, not just to the era."
+ }
+}

@@ -1,0 +1,92 @@
+{
+ "id": "apush-saq-0082",
+ "type": "saq",
+ "unit": 3,
+ "lesson": "apush-u3-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "topics": [
+  "3.6"
+ ],
+ "skills": [
+  "2.B",
+  "3.A"
+ ],
+ "themes": [
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "stimulus_set": null,
+ "source": "original; stimulus viewed before writing \u2014 John Adams to Abigail Adams, April 14, 1776, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.6 The Influence of Revolutionary Ideals, B. Evolving Ideas on Gender"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 10"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7"
+   }
+  ],
+  "primary_sources": [
+   "John Adams to Abigail Adams (April 14, 1776)"
+  ]
+ },
+ "saq_slot": 2,
+ "stimulus": {
+  "type": "text",
+  "text": "\u201cAs to your extraordinary Code of Laws, I cannot but laugh. We have been told that our Struggle has loosened the bands of Government every where. That Children and Apprentices were disobedient \u2014 that schools and Colledges were grown turbulent \u2014 that Indians slighted their Guardians and Negroes grew insolent to their Masters. But your Letter was the first Intimation that another Tribe more numerous and powerfull than all the rest were grown discontented. . . . Depend upon it, We know better than to repeal our Masculine systems.\u201d\n\u2014 John Adams to Abigail Adams, Philadelphia, April 14, 1776 (abridged; spelling as in the original)",
+  "source": "John Adams to Abigail Adams, April 14, 1776. Public domain.",
+  "rights": "Public domain.",
+  "source_note": "John Adams to Abigail Adams, April 14, 1776. Public domain."
+ },
+ "parts": [
+  {
+   "part": "a",
+   "prompt": "Identify ONE group John Adams names as loosened from government by the Revolution.",
+   "modelAnswer": "One group is enslaved Black people: Adams writes that Negroes grew insolent to their Masters as the struggle loosened the bands of government. He lists them alongside disobedient children and apprentices, showing how widely he felt authority was slipping.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names one group from the letter, such as enslaved Black people, Native peoples, or children and apprentices.",
+     "notEarned": "Naming a group that does not appear in the letter does not earn the point."
+    }
+   ],
+   "points": 1
+  },
+  {
+   "part": "b",
+   "prompt": "Explain ONE reason John Adams gives for refusing Abigail's request.",
+   "modelAnswer": "John Adams refuses because he and other men intend to keep their authority over wives, and he treats the request as a joke rather than a serious proposal. He says they know better than to repeal their masculine systems, meaning the men in Congress will not give up the power the law gives husbands.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains one reason for the refusal, such as keeping men's legal authority over wives, treating the request as laughable, or fearing that giving way would invite further demands.",
+     "notEarned": "Saying only that he refused, with no reason from the letter, does not earn the point."
+    }
+   ],
+   "points": 1
+  },
+  {
+   "part": "c",
+   "prompt": "Explain ONE way Abigail Adams's letter shows the Revolution's ideals reaching beyond its leaders' intentions.",
+   "modelAnswer": "Abigail Adams takes the Patriots' language of liberty and representation and aims it at husbands, claiming rights for women that the Revolution's leaders had not meant to grant. Her letter shows the ideals escaping their authors, since women, enslaved people, and others picked up the same words to demand inclusion.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains one way the letter shows the ideals spreading beyond their authors, such as a woman claiming liberty and representation for wives, or marginalized groups reusing Patriot language.",
+     "notEarned": "Describing the letter without linking it to the spread of revolutionary ideals does not earn the point."
+    }
+   ],
+   "points": 1
+  }
+ ],
+ "totalPoints": 3
+}

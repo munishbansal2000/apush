@@ -1,0 +1,75 @@
+{
+  "answerKey": "B",
+  "difficulty": 3,
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 5",
+        "section": "Topic 3.8 The Constitutional Convention and Debates over Ratification"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 11",
+        "section": "Establishment of New Political Systems (1787–1800)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 7"
+      }
+    ],
+    "primary_sources": []
+  },
+  "id": "apush-mcq-0772",
+  "lesson": "apush-u3-l4",
+  "options": [
+    {
+      "key": "A",
+      "misconception": "Madison was worried the president would be too weak.",
+      "text": "That the president would have too little power to enforce federal laws"
+    },
+    {
+      "key": "B",
+      "text": "That a large republic would be unable to control factions and protect liberty"
+    },
+    {
+      "key": "C",
+      "misconception": "Madison was worried the states would lose commerce power.",
+      "text": "That the states would lose all power to regulate commerce"
+    },
+    {
+      "key": "D",
+      "misconception": "Madison was worried the judiciary would be too weak.",
+      "text": "That the federal judiciary would be too weak to resolve disputes"
+    }
+  ],
+  "pool": "test",
+  "rationales": {
+    "A": "The concern here is factions, not a president too weak to enforce laws.",
+    "B": "Madison wrote to answer Anti-Federalist fears that a large republic could not control factions or protect liberty. His answer was that an extended republic would set faction against faction, so no one group could dominate.",
+    "C": "The concern here is factions, not the states losing power over commerce.",
+    "D": "The concern here is factions, not a judiciary too weak to resolve disputes.",
+    "general": "1. Name the problem in the passage. Factions divide people and make them vex and oppress each other.\n2. Ask who feared what. Anti-Federalists feared a large republic could not control factions or protect liberty.\n3. Test the other concerns. Presidential power, commerce, and the judiciary are not the problem Madison names here.\n4. Match the concern. The excerpt answers the fear about factions in a large republic.\nRemember: match the answer to the fear the writer actually names."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "3.A"
+  ],
+  "source": "original; stimulus is a verbatim public-domain excerpt from James Madison, Federalist No. 10 (1787)",
+  "status": "final",
+  "stem": "Madison’s argument in the excerpt was most directly intended to address which of the following concerns about the proposed Constitution?",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "James Madison, Federalist No. 10, 1787, public domain.",
+    "text": "“The latent causes of faction are thus sown in the nature of man; and we see them everywhere brought into different degrees of activity, according to the different circumstances of civil society. A zeal for different opinions concerning religion, concerning government, and many other points . . . have . . . divided mankind into parties, inflamed them with mutual animosity, and rendered them much more disposed to vex and oppress each other than to co-operate for their common good.”"
+  },
+  "stimulus_set": "federalist-10-1787",
+  "themes": [
+    "PCE"
+  ],
+  "topics": [
+    "3.8"
+  ],
+  "type": "mcq",
+  "unit": 3
+}

@@ -1,0 +1,85 @@
+{
+ "id": "apush-mcq-0500",
+ "lesson": "apush-u3-l3",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 3,
+ "topics": [
+  "3.5"
+ ],
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "saratoga-burgoyne",
+ "stimulus": {
+  "kind": "image",
+  "text": "The painting shows the surrender at Saratoga on October 17, 1777. In the center, the British general John Burgoyne, in a red coat, hands his sword to the American general Horatio Gates, who stands with his arm outstretched. American officers and soldiers stand around them, with a cannon at the right and the American flag flying above a tent. The painting is John Trumbull's Surrender of General Burgoyne, painted in December 1821, more than forty years after the surrender.",
+  "source_note": "John Trumbull, Surrender of General Burgoyne, December 1821. Public domain."
+ },
+ "source": "original; stimulus viewed before writing \u2014 John Trumbull, Surrender of General Burgoyne, 1821, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.5 The American Revolution, A. The War for Independence"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 10"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Fighting the Revolution"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "The surrender shown in the painting mattered most because it",
+ "options": [
+  {
+   "key": "A",
+   "text": "Convinced France to ally openly with the United States"
+  },
+  {
+   "key": "B",
+   "text": "Forced Britain to recognize American independence at once",
+   "misconception": "Britain did not recognize independence until the Treaty of Paris in 1783, six years after Saratoga."
+  },
+  {
+   "key": "C",
+   "text": "Gave the United States control of Canada",
+   "misconception": "Canada stayed British; the treaty of 1783 left Canada in British hands."
+  },
+  {
+   "key": "D",
+   "text": "Ended all British military operations in North America",
+   "misconception": "British operations went on for six more years, until 1783; Saratoga ended one army, not the war."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Saratoga proved the Americans could win, so France signed a formal alliance in February 1778 and sent money, troops, and a navy.",
+  "D": "The war went on until 1783; Saratoga destroyed one British army, not Britain's will to fight.",
+  "B": "Britain recognized independence only in the Treaty of Paris of 1783, not after Saratoga.",
+  "C": "Canada remained British after the war; Saratoga won no Canadian territory.",
+  "general": "1. Ask what changed after the surrender. Before Saratoga, France sent secret aid; after it, France signed an open alliance.\n2. Ask why France waited. France needed proof the Americans could win before risking war with Britain.\n3. Check the other claims. The war, independence, and Canada were all settled later, not at Saratoga.\nRemember: a battle matters most when it changes someone else's decision \u2014 ask who was watching, not just who won."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0500",
+   "file": "u3/surrender-burgoyne-saratoga-trumbull.jpg",
+   "caption": "John Trumbull, Surrender of General Burgoyne, December 1821",
+   "alt": "Trumbull painting of Burgoyne handing his sword to Gates at Saratoga, with American officers, a cannon, and the flag",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Surrender_of_General_Burgoyne.jpg"
+  }
+ ]
+}

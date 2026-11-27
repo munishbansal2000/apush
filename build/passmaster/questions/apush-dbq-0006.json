@@ -1,0 +1,165 @@
+{
+ "id": "apush-dbq-0006",
+ "type": "dbq",
+ "unit": 3,
+ "lesson": "apush-u3-l3",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "topics": [
+  "3.5"
+ ],
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "stimulus_set": null,
+ "source": "original; documents are public-domain primary sources (see each document's sourcing note).",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.5 The American Revolution, A. The War for Independence"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.5 The American Revolution, B. Funding the War Effort"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 10"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Fighting the Revolution"
+   }
+  ],
+  "primary_sources": [
+   "Patrick Henry (1775)",
+   "Declaration of Independence (1776)",
+   "Treaty of Alliance between the United States and France (1778)",
+   "George Washington to Henry Laurens (1777)",
+   "Treaty of Paris (1783)"
+  ]
+ },
+ "prompt": "Evaluate the extent to which foreign assistance was decisive in the American victory in the Revolutionary War, 1775\u20131783.",
+ "documents": [
+  {
+   "n": 1,
+   "kind": "text",
+   "date": "March 1775",
+   "title": "Patrick Henry calls for arms",
+   "source": "Patrick Henry, speech to the Second Virginia Convention, March 23, 1775, abridged. Public domain.",
+   "sourcing": "Henry speaking to Virginia's convention months before independence, urging military preparation on the strength of American numbers and resolve.",
+   "text": "\u201cThey tell us, sir, that we are weak \u2014 unable to cope with so formidable an adversary. But when shall we be stronger? \u2026 Three millions of people, armed in the holy cause of liberty, and in such a country as that which we possess, are invincible by any force which our enemy can send against us. \u2026 Is life so dear, or peace so sweet, as to be purchased at the price of chains and slavery? Forbid it, Almighty God! I know not what course others may take; but as for me, give me liberty or give me death!\u201d"
+  },
+  {
+   "n": 2,
+   "kind": "text",
+   "date": "July 1776",
+   "title": "The Declaration lists the king's abuses",
+   "source": "Declaration of Independence, July 4, 1776, abridged. Public domain.",
+   "sourcing": "The Second Continental Congress announcing independence and listing the king's crimes, in a document printed for the world to read.",
+   "text": "\u201cHe has kept among us, in times of peace, Standing Armies without the Consent of our legislatures. \u2026 He has cut off our Trade with all parts of the world. \u2026 He has plundered our seas, ravaged our Coasts, burnt our towns, and destroyed the lives of our people.\u201d"
+  },
+  {
+   "n": 3,
+   "kind": "image",
+   "date": "1821",
+   "title": "Trumbull's surrender at Saratoga",
+   "source": "John Trumbull, Surrender of General Burgoyne, December 1821. Public domain; image from the shared image pool.",
+   "sourcing": "Trumbull painting the surrender of Burgoyne's army forty-four years after the event, showing the victory that persuaded France to ally.",
+   "figure": "u3/surrender-burgoyne-saratoga-trumbull.jpg"
+  },
+  {
+   "n": 4,
+   "kind": "text",
+   "date": "February 1778",
+   "title": "The Treaty of Alliance with France",
+   "source": "Treaty of Alliance between the United States and France, Article 2, February 6, 1778. Public domain.",
+   "sourcing": "The formal alliance France signed after Saratoga, promising to defend American independence.",
+   "text": "\u201cThe essential and direct End of the present defensive alliance is to maintain effectually the liberty, Sovereignty, and independance absolute and unlimited of the said united States, as well in Matters of Gouvernement as of commerce.\u201d"
+  },
+  {
+   "n": 5,
+   "kind": "text",
+   "date": "December 1777",
+   "title": "Washington warns the army may starve",
+   "source": "George Washington to Henry Laurens, president of Congress, Valley Forge, December 23, 1777. Public domain.",
+   "sourcing": "Washington writing to Congress from winter camp, warning that the army may starve or dissolve for lack of supplies \u2014 before any French aid had arrived.",
+   "text": "\u201cI am now convinced beyond a doubt, that unless some great and capital change suddenly takes place in that line this Army must inevitably be reduced to one or other of these three things. Starve\u2014dissolve\u2014or disperse, in order to obtain subsistence in the best manner they can.\u201d"
+  },
+  {
+   "n": 6,
+   "kind": "image",
+   "date": "1820",
+   "title": "Trumbull's surrender at Yorktown",
+   "source": "John Trumbull, Surrender of Lord Cornwallis, 1820. Public domain; image from the shared image pool.",
+   "sourcing": "Trumbull painting the surrender at Yorktown thirty-nine years after the event, showing Cornwallis's deputy presenting his sword.",
+   "figure": "u3/surrender-cornwallis-yorktown.jpg"
+  },
+  {
+   "n": 7,
+   "kind": "text",
+   "date": "September 1783",
+   "title": "The Treaty of Paris recognizes independence",
+   "source": "Treaty of Paris, Article 1, September 3, 1783, abridged. Public domain.",
+   "sourcing": "The peace treaty in which Britain recognized the United States as free, sovereign, and independent states.",
+   "text": "\u201cHis Britannic Majesty acknowledges the said United States, viz., New Hampshire, Massachusetts Bay, Rhode Island and Providence Plantations, Connecticut, New York, New Jersey, Pennsylvania, Delaware, Maryland, Virginia, North Carolina, South Carolina and Georgia, to be free sovereign and independent states, that he treats with them as such, and for himself, his heirs, and successors, relinquishes all claims to the government, propriety, and territorial rights of the same and every part thereof.\u201d"
+  }
+ ],
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent to which foreign assistance was decisive in the American victory, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim about the extent does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as the imperial crisis after 1763, the colonies' resistance and the outbreak of war in 1775, or the long war against a stronger empire.",
+   "notEarned": "A sentence of background with no link to the argument does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence from documents (first point): earns the point for describing the content of at least three documents relevant to the argument, such as Henry on American resolve, the Treaty of Alliance promising to maintain independence, or Washington on the army's supply crisis.",
+   "notEarned": "Quoting documents without describing what they show does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence from documents (second point): earns the point for using the content of at least six documents to support the argument, including documents that show American endurance without foreign help, such as Henry's speech and Washington's letter, against documents that show French aid, such as the alliance and the Yorktown surrender.",
+   "notEarned": "Using fewer than six documents, or using six without tying them to the argument, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence beyond the documents: earns the point for describing a specific relevant example not in the documents, such as the French fleet at the Battle of the Virginia Capes, Spanish and Dutch pressure on Britain, or Steuben's training at Valley Forge.",
+   "notEarned": "A vague reference to outside knowledge with no specific example does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Sourcing: earns the point for explaining how the audience, purpose, historical situation, or point of view of at least two documents shapes the argument, such as Washington writing a desperate appeal to Congress before French aid arrived, or Trumbull painting commemorations decades after the events.",
+   "notEarned": "Naming a document's author without explaining how it shapes the argument does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Complexity: earns the point for a complex argument, such as qualifying the thesis by showing where foreign aid was decisive, as at Yorktown, and where American endurance carried the war, as in the long years before 1778, or weighing foreign aid against American persistence as causes of victory.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ],
+ "modelOutline": "Thesis: Foreign assistance was decisive, but not by itself \u2014 it decided the war's end, while American endurance decided that there would still be a war for France to join. Without French money, troops, and navy the Americans could not have forced Cornwallis to surrender at Yorktown; without the Americans' refusal to quit in the years before 1778, France would never have allied.\nContext: Before 1775 the colonies had resisted British taxes and controls for a decade, and after Lexington they were at war with the strongest empire on earth. Britain had the navy, the money, and a professional army; the Americans had militia, a new Continental Army, and a Congress that struggled to pay for it. France watched for proof the Americans could win before risking war with Britain.\nEvidence: Documents 1-2 show the American case before any foreign help \u2014 Henry calling Virginians to arms on their own numbers, the Declaration listing the king's crimes for the world. Document 5 shows the cost of fighting alone: Washington warning from Valley Forge that his army might starve or dissolve.\nDocuments 3-4 show the turn: Saratoga proved the Americans could win, and France signed an alliance promising to maintain American independence. Document 6 shows the payoff: at Yorktown the French fleet blocked escape by sea while Washington besieged Cornwallis by land. Document 7 shows the result: Britain recognized independence in 1783.\nEvidence of limits: The war went on for nearly three years before the alliance, carried by American endurance alone, and the southern campaign under Greene wore the British down without a French army present. Foreign aid did not win the early battles; it finished a war the Americans had refused to lose.\nBeyond the documents: The French fleet under de Grasse won the Battle of the Virginia Capes on September 5, 1781, the single naval action that sealed Cornwallis in; Spain and the Dutch also pressured Britain, stretching its navy across the world; and Steuben's drill at Valley Forge made the Continental Army a force that could stand against British regulars.\nSourcing: Washington wrote to Congress to demand supplies, so his warning is a plea as well as a report; Trumbull painted both surrenders decades later, so his images are national memory, not records of the days themselves.\nComplexity: Foreign assistance was decisive at the end and unnecessary at the start \u2014 the alliance decided Yorktown, while American endurance decided that the war would last long enough for the alliance to matter; the victory belongs to both, in sequence.",
+ "totalPoints": 7
+}

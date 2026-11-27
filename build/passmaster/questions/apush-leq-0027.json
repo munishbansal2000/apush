@@ -1,0 +1,87 @@
+{
+ "id": "apush-leq-0027",
+ "type": "leq",
+ "unit": 3,
+ "lesson": "apush-u3-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "topics": [
+  "3.5"
+ ],
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "comparison",
+ "stimulus_set": null,
+ "source": "original; prompt written for this topic",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.5 The American Revolution, A. The War for Independence"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 10"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Fighting the Revolution"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "none",
+  "source_note": "No stimulus; LEQ prompt only."
+ },
+ "prompt": "Evaluate the extent to which Patriots and Loyalists held different visions of America's future in the period 1775\u20131783.",
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent to which Patriots and Loyalists held different visions of America's future, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim about the extent does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as the imperial crisis after 1763, the colonies' resistance to British taxes and controls, or the outbreak of war in 1775.",
+   "notEarned": "A sentence of background with no link to the argument, or background from a later century, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (first point): earns the point for describing specific and relevant examples of Patriot and Loyalist visions differing, such as republican self-government against loyalty to the Crown, or independence against continued membership in the empire.",
+   "notEarned": "General statements with no specific example do not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (second point): earns the point for describing specific and relevant examples of Patriot and Loyalist visions overlapping, such as both sides valuing English liberty, property, and order, or both sides fearing tyranny.",
+   "notEarned": "Repeating the same example, or naming a limit with no specific detail, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Analysis and reasoning: earns the point for explaining how the evidence shows both difference and overlap, showing where the visions split and where they shared ground, linking examples to the thesis rather than listing them.",
+   "notEarned": "Listing examples with no explanation of what changed and what stayed the same does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Analysis and reasoning (complexity): earns the point for a complex argument, such as qualifying the thesis by group or region, showing where the split was sharpest and where the two sides agreed, or weighing ideology against interest and fear as causes of the split.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ],
+ "modelOutline": "Thesis: Patriots and Loyalists held sharply different visions of America's future, but the difference was about where liberty lived, not whether it mattered \u2014 the Patriots saw liberty in republican self-government, the Loyalists saw it in the British constitution, and the war was fought over which of those visions would rule.\nContext: Before 1775 the colonies had governed themselves day to day under salutary neglect, while London's new taxes and controls after 1763 forced colonists to decide what their relationship to Britain should be. The imperial crisis split neighbors, families, and towns into Patriots and Loyalists.\nEvidence of difference: Patriots argued that government must rest on consent, that Parliament had no right to tax them, and that independence was the only way to secure their rights \u2014 the case made in the Declaration and in Paine's Common Sense.\nLoyalists argued that the British constitution already protected liberty, that rebellion would bring anarchy, and that America's future lay inside the empire \u2014 the case made in pamphlets and in the loyalist governments that fled with the British. The split became a civil war: Loyalists fought in British regiments, Patriots seized their property, and tens of thousands left the country.\nEvidence of overlap: Both sides claimed to defend English liberty, property, and order, and both feared tyranny \u2014 the Patriots feared the tyranny of king and Parliament, the Loyalists feared the tyranny of mobs and committees. Both sides drew on the same political language, and many Americans wavered between them until the war forced a choice.\nComplexity: The visions differed on the question that mattered most \u2014 whether America should be a republic or remain in the empire \u2014 but they shared the values that made the argument possible, and the Revolution's winners wrote a Constitution that borrowed from both: republican government with the protections of English law.",
+ "totalPoints": 6
+}

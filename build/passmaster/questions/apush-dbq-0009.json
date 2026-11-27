@@ -1,0 +1,176 @@
+{
+ "id": "apush-dbq-0009",
+ "type": "dbq",
+ "unit": 3,
+ "lesson": "apush-u3-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "topics": [
+  "3.6"
+ ],
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "stimulus_set": null,
+ "source": "original; documents viewed before writing \u2014 all pre-1930 public-domain sources or paraphrases of public record.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.6 The Influence of Revolutionary Ideals, A. The Call for Egalitarianism"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 10"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7"
+   }
+  ],
+  "primary_sources": [
+   "Virginia Declaration of Rights (1776)",
+   "Abigail Adams to John Adams (1776)",
+   "Petition of Paul Cuffe and others (1780)",
+   "Phillis Wheatley (1773)",
+   "Pennsylvania Gradual Abolition Act (1780)",
+   "Virginia Convention declaration (1775)",
+   "The Old Plantation, attributed to John Rose (c. 1780s)"
+  ]
+ },
+ "stimulus": {
+  "kind": "mixed",
+  "source_note": "Seven documents, 1773-1780s. See documents."
+ },
+ "prompt": "Evaluate the extent to which the ideals of the American Revolution changed American society in the period 1775-1800.",
+ "documents": [
+  {
+   "n": 1,
+   "kind": "text",
+   "date": "June 1776",
+   "title": "Virginia Declaration of Rights, Section 1",
+   "source": "Virginia Declaration of Rights, Section 1, adopted June 12, 1776. Public domain.",
+   "sourcing": "George Mason's Virginia Declaration, adopted weeks before the Declaration of Independence, stating the natural-rights philosophy the new states claimed.",
+   "text": "\u201cThat all men are by nature equally free and independent, and have certain inherent rights, of which, when they enter into a state of society, they cannot, by any compact, deprive or divest their posterity; namely, the enjoyment of life and liberty, with the means of acquiring and possessing property, and pursuing and obtaining happiness and safety.\u201d"
+  },
+  {
+   "n": 2,
+   "kind": "text",
+   "date": "March 1776",
+   "title": "Abigail Adams on the ladies",
+   "source": "Abigail Adams to John Adams, March 31, 1776 (abridged). Public domain.",
+   "sourcing": "A private letter from Abigail Adams to her husband John, then in Congress, asking that the new laws treat wives fairly.",
+   "text": "\u201cI have sometimes been ready to think that the passion for Liberty cannot be Eaquelly Strong in the Breasts of those who have been accustomed to deprive their fellow Creatures of theirs. . . . If perticuliar care and attention is not paid to the Laidies we are determined to foment a Rebelion, and will not hold ourselves bound by any Laws in which we have no voice, or Representation.\u201d"
+  },
+  {
+   "n": 3,
+   "kind": "text",
+   "date": "February 1780",
+   "title": "Paul Cuffe and others petition Massachusetts",
+   "source": "Petition of Paul Cuffe, John Cuffe, and others to the Massachusetts General Court, February 10, 1780 (abridged). Public domain.",
+   "sourcing": "Free Black men of Dartmouth, Massachusetts, petitioning the legislature after refusing to pay taxes they had no vote in levying.",
+   "text": "\u201cThat we being chiefly of the African extract, and by reason of long bondage and hard slavery, we have been deprived of enjoying the profits of our labor. . . . Your petitioners further show, that we apprehend ourselves to be aggrieved, in that, while we are not allowed the privilege of freemen of the State, having no vote or influence in the election of those that tax us, yet many of our colour (as is well known) have cheerfully entered the field of battle in the defence of the common cause.\u201d"
+  },
+  {
+   "n": 4,
+   "kind": "text",
+   "date": "1773",
+   "title": "Phillis Wheatley on Black spiritual equality",
+   "source": "Phillis Wheatley, \u201cOn Being Brought from Africa to America,\u201d in Poems on Various Subjects, Religious and Moral (London, 1773). Public domain.",
+   "sourcing": "An enslaved Boston poet, published in London, addressing white Christian readers in the language of their own faith.",
+   "text": "\u201cSome view our sable race with scornful eye, / \u2018Their colour is a diabolic die.\u2019 / Remember, Christians, Negroes, black as Cain, / May be refin'd, and join th' angelic train.\u201d"
+  },
+  {
+   "n": 5,
+   "kind": "text",
+   "date": "March 1780",
+   "title": "Pennsylvania's Gradual Abolition Act",
+   "source": "An Act for the Gradual Abolition of Slavery, Pennsylvania, March 1, 1780 (paraphrased). Public record.",
+   "sourcing": "The Pennsylvania legislature's gradual abolition law, the first of its kind, written to end slavery slowly while protecting owners' property.",
+   "text": "Every child born in Pennsylvania after March 1, 1780, shall be free upon reaching twenty-eight years of age. Any enslaved person not registered by their owner before November 1, 1780, shall be free at once. No enslaved person living in Pennsylvania in 1780 is freed outright by this act."
+  },
+  {
+   "n": 6,
+   "kind": "text",
+   "date": "December 1775",
+   "title": "Virginia answers Dunmore's Proclamation",
+   "source": "Virginia Convention declaration, December 14, 1775 (abridged). Public domain.",
+   "sourcing": "Virginia's Patriot government answering Dunmore's offer of freedom with threats of punishment and an offer of pardon for return.",
+   "text": "\u201cWe think it proper to declare, that all slaves who have been, or shall be seduced, by his lordship's proclamation, or other arts, to desert their masters' service, and take up arms against the inhabitants of this colony, shall be liable to such punishment as shall hereafter be directed by the General Convention. . . . we hereby promise pardon to them, they surrendering themselves to Col. William Woodford, or any other commander of our troops, and not appearing in arms after the publication hereof.\u201d"
+  },
+  {
+   "n": 7,
+   "kind": "image",
+   "date": "c. 1780s",
+   "title": "Enslaved people dancing in South Carolina (The Old Plantation)",
+   "source": "The Old Plantation, attributed to John Rose, South Carolina, c. 1780s. Public domain.",
+   "sourcing": "A watercolor of enslaved people's community life in South Carolina, painted in the 1780s, when slavery was growing stronger in the South.",
+   "figure": "u3/old-plantation-banjo-1780s.jpg",
+   "text": "The watercolor shows enslaved people in South Carolina dancing to banjo music outside their houses, dressed in bright clothes, with a row of cabins behind them."
+  }
+ ],
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent to which the ideals of the American Revolution changed American society in 1775-1800, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim about the extent does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as the war for independence, the writing of new state constitutions, or the Enlightenment ideas the Patriots drew on.",
+   "notEarned": "A sentence of background with no link to the argument does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence from documents (first point): earns the point for describing the content of at least three documents relevant to the argument about how revolutionary ideals changed or failed to change American society.",
+   "notEarned": "Quoting documents without describing what they show does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence from documents (second point): earns the point for using the content of at least six documents to support the argument, including documents showing both change and limits.",
+   "notEarned": "Using fewer than six documents, or using six without tying them to the argument, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence beyond the documents: earns the point for describing a specific relevant example not in the documents, such as Vermont's 1777 constitution, Rhode Island's 1778 enlistment act, the Northwest Ordinance of 1787, or the cotton gin of 1793.",
+   "notEarned": "A vague reference to outside knowledge with no specific example does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Sourcing: earns the point for explaining how the audience, purpose, historical situation, or point of view of at least two documents shapes the argument, such as Adams's private letter or Virginia's threatening declaration.",
+   "notEarned": "Naming a document's author without explaining how it shapes the argument does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Complexity: earns the point for a complex argument, such as qualifying the thesis by group or region, showing where the ideals changed society and where they left it standing.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ],
+ "modelOutline": "Thesis: The Revolution's ideals changed American society unevenly \u2014 they gave women, free Black people, and enslaved people a language to claim rights with, and they moved northern states toward emancipation, but they left slavery standing in the South and women's legal standing nearly untouched.\nContext: The war was fought for independence from Britain, and the new states wrote constitutions promising natural rights. Those promises were published to the world, so anyone who read them could ask whether they applied to them.\nEvidence of change: Document 1 states the promise in Virginia's own words. Document 3 shows free Black men claiming it, and Document 4 shows an enslaved poet claiming it. Document 5 shows the promise becoming law, in gradual form, in Pennsylvania.\nEvidence of limits: Document 2 shows a woman claiming the promise in a private letter to her husband. Document 6 shows Virginia's Patriots threatening punishment for enslaved people who sought freedom, and offering pardon only for return. Document 7 shows enslaved community life continuing in the South.\nBeyond the documents: Vermont banned slavery in its 1777 constitution, and Rhode Island let enslaved men win freedom by enlisting in 1778. The Northwest Ordinance of 1787 banned slavery in the territory, while the cotton gin of 1793 made southern slavery more profitable.\nSourcing: Adams wrote a private letter to her husband, so her plea shows what women asked for, not what Congress granted. Virginia's Convention wrote to frighten enslaved people back, so its threats show what the Patriots feared, not what they believed.\nComplexity: The ideals changed society most where they were claimed by the people they left out, and least where they threatened property and power \u2014 the same words that ended slavery in the North left it standing in the South.",
+ "totalPoints": 7,
+ "figures": [
+  {
+   "id": "fig-apush-dbq-0009",
+   "file": "u3/old-plantation-banjo-1780s.jpg",
+   "caption": "The Old Plantation, attributed to John Rose, South Carolina, c. 1780s",
+   "alt": "Watercolor of enslaved people in South Carolina dancing to banjo music outside their houses, with a row of cabins behind them",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Slave_dance_to_banjo,_1780s.jpg"
+  }
+ ]
+}

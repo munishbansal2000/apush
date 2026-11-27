@@ -1,0 +1,91 @@
+{
+ "id": "apush-saq-0078",
+ "type": "saq",
+ "unit": 3,
+ "lesson": "apush-u3-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "topics": [
+  "3.5"
+ ],
+ "skills": [
+  "2.A",
+  "3.A"
+ ],
+ "themes": [
+  "WOR",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "stimulus_set": null,
+ "source": "original; stimulus is a verbatim public-domain quotation.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.5 The American Revolution, A. The War for Independence"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 10"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Fighting the Revolution"
+   }
+  ],
+  "primary_sources": [
+   "Lord Dunmore's Proclamation (1775)"
+  ]
+ },
+ "saq_slot": 2,
+ "stimulus": {
+  "type": "text",
+  "text": "\u201cAnd I do hereby further declare all indented Servants, Negroes, or others, (appertaining to Rebels,) free that are able and willing to bear Arms, they joining His MAJESTY'S Troops as soon as may be, for the more speedily reducing this Colony to a proper Sense of their Duty, to His MAJESTY'S Crown and Dignity.\u201d\n\u2014Lord Dunmore, royal governor of Virginia, Proclamation, November 7, 1775 (abridged)",
+  "source": "Lord Dunmore's Proclamation, November 7, 1775. Public domain.",
+  "rights": "Public domain.",
+  "source_note": "Lord Dunmore's Proclamation, November 7, 1775 (abridged). Public domain."
+ },
+ "parts": [
+  {
+   "part": "a",
+   "prompt": "Identify ONE group of people to whom Dunmore's offer of freedom applied.",
+   "modelAnswer": "Dunmore's offer applied to enslaved people and indentured servants belonging to rebels, that is, to Patriots, who were able and willing to bear arms for the king. The offer did not cover enslaved people owned by Loyalists, nor did it cover anyone unwilling to fight. It was a narrow, conditional offer: freedom in exchange for military service against the rebellion.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names one group the offer applied to, such as enslaved people belonging to rebels, indentured servants of rebels, or enslaved people able and willing to bear arms for Britain."
+    }
+   ],
+   "points": 1
+  },
+  {
+   "part": "b",
+   "prompt": "Explain ONE reason Dunmore issued the proclamation.",
+   "modelAnswer": "Dunmore issued the proclamation as a weapon of war: he was short of soldiers, and by offering freedom to the rebels' enslaved workers he could gain men for the king's army while striking at the Patriot economy. Enslaved laborers grew the food and did the work the Patriot armies depended on, so drawing them away weakened the rebellion twice over. The offer was a military tactic, not an act of principle against slavery.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains one reason Dunmore issued the proclamation, such as gaining soldiers for Britain, weakening the Patriot economy by drawing away enslaved laborers, or turning the rebels' labor force against them."
+    }
+   ],
+   "points": 1
+  },
+  {
+   "part": "c",
+   "prompt": "Explain ONE effect of the proclamation on the Patriot cause.",
+   "modelAnswer": "The proclamation forced the question of slavery into the open in the middle of a war fought for liberty: the king was offering freedom to the enslaved, so Patriots had to explain why their liberty did not extend to the people they held. It also alarmed slaveholders, who feared their enslaved workers would flee to British lines, and it pushed some Virginians toward the Patriot cause out of fear of losing their property. The war for liberty now carried a contradiction its own leaders could not ignore.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains one effect on the Patriot cause, such as forcing Patriots to confront the contradiction between liberty and slavery, driving enslaved people toward British lines, or alarming slaveholders into supporting the rebellion."
+    }
+   ],
+   "points": 1
+  }
+ ],
+ "totalPoints": 3
+}

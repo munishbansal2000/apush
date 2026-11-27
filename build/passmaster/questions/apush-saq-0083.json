@@ -1,0 +1,103 @@
+{
+ "id": "apush-saq-0083",
+ "type": "saq",
+ "unit": 3,
+ "lesson": "apush-u3-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "topics": [
+  "3.6"
+ ],
+ "skills": [
+  "2.A",
+  "3.A"
+ ],
+ "themes": [
+  "SOC",
+  "ARC"
+ ],
+ "reasoning": "causation",
+ "stimulus_set": null,
+ "source": "original; stimulus viewed before writing \u2014 Scipio Moorhead (attributed), frontispiece to Phillis Wheatley's Poems on Various Subjects (1773), public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.6 The Influence of Revolutionary Ideals, A. The Call for Egalitarianism"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 10"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7"
+   }
+  ],
+  "primary_sources": [
+   "Phillis Wheatley, Poems on Various Subjects, Religious and Moral (1773), frontispiece"
+  ]
+ },
+ "saq_slot": 3,
+ "stimulus": {
+  "type": "image",
+  "text": "The engraving is the frontispiece to Phillis Wheatley's Poems on Various Subjects, Religious and Moral, published in London in 1773. It shows Wheatley in profile, seated at a desk with a quill in her hand, an inkwell, and a book. Around the oval portrait runs the caption: \u201cPhillis Wheatley, Negro Servant to Mr. John Wheatley, of Boston.\u201d The engraving is attributed to Scipio Moorhead, an enslaved artist in Boston.",
+  "source": "Scipio Moorhead (attributed), frontispiece to Phillis Wheatley's Poems on Various Subjects, Religious and Moral (London, 1773). Public domain.",
+  "rights": "Public domain.",
+  "source_note": "Scipio Moorhead (attributed), frontispiece, 1773. Public domain."
+ },
+ "parts": [
+  {
+   "part": "a",
+   "prompt": "Identify ONE detail in the portrait that presents Wheatley as a writer.",
+   "modelAnswer": "One detail is the quill in her hand, poised over paper at a desk with an inkwell beside her. The book on the desk and her seated pose at work present her as an author at her writing, not as a servant at labor.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names one detail showing Wheatley as a writer, such as the quill, the inkwell, the book, or her pose writing at a desk.",
+     "notEarned": "Naming a detail that does not show writing, such as her dress alone, does not earn the point."
+    }
+   ],
+   "points": 1
+  },
+  {
+   "part": "b",
+   "prompt": "Explain ONE way the portrait's caption shows Wheatley's standing in 1773.",
+   "modelAnswer": "The caption names her as the Negro servant of John Wheatley of Boston, giving her owner's name and her status as a servant. Even as her book is published, she is introduced as someone else's property, which shows readers were asked to see her as both a celebrated author and an enslaved woman.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains one way the caption shows her standing, such as naming her as a servant of John Wheatley, tying her identity to her owner, or presenting an enslaved author to white readers.",
+     "notEarned": "Describing the portrait without explaining what the caption shows about her standing does not earn the point."
+    }
+   ],
+   "points": 1
+  },
+  {
+   "part": "c",
+   "prompt": "Explain ONE limit of the portrait as evidence about the lives of enslaved people in the 1770s.",
+   "modelAnswer": "Wheatley was exceptional: literate, published, and celebrated, while most enslaved people were kept from reading and writing entirely. The portrait was made to sell her book to white readers, so it presents her as proof of Black capacity rather than showing the labor and violence of enslavement itself.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains one limit of the portrait as evidence, such as Wheatley's exceptional status, its purpose of selling her book, or its silence about the labor and violence of enslavement.",
+     "notEarned": "Saying only that one portrait cannot show everything, with no specific limit, does not earn the point."
+    }
+   ],
+   "points": 1
+  }
+ ],
+ "totalPoints": 3,
+ "figures": [
+  {
+   "id": "fig-apush-saq-0083",
+   "file": "u3/wheatley-frontispiece-1773.jpg",
+   "caption": "Scipio Moorhead (attributed), Phillis Wheatley, frontispiece, 1773",
+   "alt": "Engraved oval portrait of Phillis Wheatley in profile, seated at a desk writing with a quill, inkwell and book before her",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Phillis_Wheatley_frontispiece.jpg"
+  }
+ ]
+}

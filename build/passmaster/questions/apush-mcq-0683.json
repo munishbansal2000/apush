@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-0683",
+ "lesson": "apush-u3-l5",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.10"
+ ],
+ "skills": [
+  "4.A",
+  "6.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 4,
+ "stimulus_set": "election-1800",
+ "stimulus": {
+  "kind": "table",
+  "text": "Electoral votes for president, election of 1800 (138 electors; 70 votes needed to win). Each elector cast two votes, one for each of two men, without naming which man was his choice for president and which for vice president.\n\n| Candidate | Party | Electoral votes |\n| Thomas Jefferson | Democratic-Republican | 73 |\n| Aaron Burr | Democratic-Republican | 73 |\n| John Adams | Federalist | 65 |\n| Charles Cotesworth Pinckney | Federalist | 64 |\n| John Jay | Federalist | 1 |\n\nThe tie sent the election to the House of Representatives, which chose Jefferson on the 36th ballot in February 1801.",
+  "source_note": "Electoral vote totals from the National Archives, 1800 Electoral College Results. Public record."
+ },
+ "source": "original; stimulus table drawn from the National Archives, 1800 Electoral College Results.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.10 Shaping the New Republic"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "Establishment of New Political Systems (1787-1800)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Unit 3: Conflict and American Independence (1754-1800)"
+   }
+  ],
+  "primary_sources": [
+   "National Archives, 1800 Electoral College Results"
+  ]
+ },
+ "status": "final",
+ "stem": "The election of 1800 is most often remembered as a turning point because it showed what?",
+ "options": [
+  {
+   "key": "A",
+   "text": "A sitting president could never lose re-election in the United States.",
+   "misconception": "Adams lost, so the election showed the opposite: a sitting president could lose."
+  },
+  {
+   "key": "B",
+   "text": "Power could pass from one rival party to another by election, without violence."
+  },
+  {
+   "key": "C",
+   "text": "The Electoral College would always choose the winner of the popular vote.",
+   "misconception": "The president was chosen by electors and then the House, not by the popular vote."
+  },
+  {
+   "key": "D",
+   "text": "The Federalists would control the presidency for the next generation.",
+   "misconception": "Background: the Federalists never won the presidency again after 1800."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "B": "Background: the Federalists gave up the presidency to their rivals peacefully, and Jefferson called it a revolution in the principles of government.",
+  "A": "Adams lost, so the election showed the opposite: a sitting president could lose.",
+  "C": "The president was chosen by electors and then the House, not by the popular vote.",
+  "D": "The Federalists lost power in this election.",
+  "general": "1. The table shows the Federalist Adams losing to the Democratic-Republicans Jefferson and Burr.\n2. Background: the Federalists gave up the presidency to their rivals peacefully, and Jefferson called it a revolution in the principles of government.\n3. A bitter campaign ended with the losers handing over power rather than fighting to keep it.\n4. So the election is remembered as the first transfer of power between rival parties by vote.\nRemember: a peaceful handover between rivals is the test of whether an election system works."
+ }
+}

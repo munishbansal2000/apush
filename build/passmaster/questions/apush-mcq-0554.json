@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-0554",
+ "lesson": "apush-u3-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.7"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "stimulus_set": "articles-viii",
+ "stimulus": {
+  "kind": "text",
+  "text": "\u201cArticle VIII. All charges of war, and all other expenses that shall be incurred for the common defense or general welfare, and allowed by the United States in Congress assembled, shall be defrayed out of a common treasury, which shall be supplied by the several States in proportion to the value of all land within each State. . . . The taxes for paying that proportion shall be laid and levied by the authority and direction of the legislatures of the several States within the time agreed upon by the United States in Congress assembled.\u201d\n\u2014 Articles of Confederation, Article VIII (abridged)",
+  "source_note": "Articles of Confederation, Article VIII, 1777. Public domain."
+ },
+ "source": "original; stimulus viewed before writing \u2014 Articles of Confederation, Article VIII (1777), public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.7 The Articles of Confederation, B. The Articles of Confederation and the Critical Period"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Articles of Confederation"
+   }
+  ],
+  "primary_sources": [
+   "Articles of Confederation, Article VIII (1777)"
+  ]
+ },
+ "status": "final",
+ "stem": "Under Article VIII, the taxes that paid a state's share of the national expenses were laid and levied by",
+ "options": [
+  {
+   "key": "A",
+   "text": "Congress",
+   "misconception": "Congress set each state's share but could not lay or levy the tax itself."
+  },
+  {
+   "key": "B",
+   "text": "the president",
+   "misconception": "Background: the Articles created no president."
+  },
+  {
+   "key": "C",
+   "text": "the national courts",
+   "misconception": "Background: the Articles created no national courts."
+  },
+  {
+   "key": "D",
+   "text": "the state legislatures"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "D": "Article VIII says the taxes for paying each state's proportion shall be laid and levied by the authority and direction of the legislatures of the several States.",
+  "A": "Congress only set the shares; the article leaves the laying and levying to the states.",
+  "B": "Background: the Articles created no president and no executive branch.",
+  "C": "Background: the Articles created no national court system.",
+  "general": "1. Find who acts. Article VIII says the taxes shall be laid and levied by the state legislatures.\n2. Congress only set each state's share, in proportion to the value of its land.\n3. Background: Congress could ask for money, but only the states could collect it.\nRemember: under the Articles, the tax collector worked for the state, not for Congress."
+ }
+}

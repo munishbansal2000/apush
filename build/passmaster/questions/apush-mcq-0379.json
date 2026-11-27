@@ -1,0 +1,88 @@
+{
+ "id": "apush-mcq-0379",
+ "lesson": "apush-u3-l1",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.2"
+ ],
+ "skills": [
+  "5.B",
+  "4.B"
+ ],
+ "themes": [
+  "PCE",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "difficulty": 4,
+ "stimulus_set": "shepherd-map",
+ "stimulus": {
+  "kind": "map",
+  "text": "The map, \"The British Colonies in North America, 1763\u20131775,\" comes from Shepherd's Historical Atlas (1911). It shows the Thirteen Colonies in dark pink along the Atlantic coast, with the Province of Quebec to the north and East and West Florida to the south.\n\nA red line marked \"Proclamation Line of 1763\" runs along the Appalachian Mountains, and the lands beyond it are labeled \"Crown lands reserved for Indians by proclamation of 1763.\" West of the Mississippi River, the land is labeled \"Louisiana\" and colored orange for Spanish possessions. Off Newfoundland, two tiny islands are colored green and labeled \"French\" \u2014 Miquelon and St. Pierre.",
+  "source_note": "Shepherd's Historical Atlas (1911), \"The British Colonies in North America, 1763\u20131775,\" public domain."
+ },
+ "source": "original; stimulus viewed before writing \u2014 Shepherd's Historical Atlas (1911), \"The British Colonies in North America, 1763\u20131775,\" public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "The Treaty of Paris (1763)"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 9",
+    "section": "Defeat of New France"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Seven Years' War (1754\u20131763)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "Taken together, what does the map suggest about the new problem Britain faced after 1763?",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The map shows Britain's territory doubled, not shrunk \u2014 the problem was too much land, not too little.",
+   "text": "Britain had too little territory to defend, so it abandoned its western forts to the French and withdrew from North America."
+  },
+  {
+   "key": "B",
+   "misconception": "The empire grew enormously; governing it from London got harder, not easier, and the assemblies did not disappear.",
+   "text": "Britain's empire was now small enough to govern from London without any colonial assemblies."
+  },
+  {
+   "key": "C",
+   "misconception": "Britain kept the Thirteen Colonies and gained Canada; it lost nothing in the Atlantic \u2014 France did.",
+   "text": "Britain had lost its Atlantic colonies and had to rebuild its empire from the Caribbean."
+  },
+  {
+   "key": "D",
+   "text": "Britain now ruled a vast continent, with a huge debt, Native peoples to manage, and settlers eager for lands London had closed."
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "A": "The map shows British pink stretching from Hudson Bay to Florida and west to the Mississippi \u2014 an empire that doubled overnight, not one that shrank.",
+  "B": "A bigger empire meant more to govern, not less; London still needed the colonial assemblies, and soon tried to tax through Parliament instead.",
+  "C": "The Thirteen Colonies are still British on the map, and Canada is newly British \u2014 the loss belonged to France, not Britain.",
+  "D": "The map shows the whole story at once: an empire that doubled in size, with the Proclamation Line holding back settlers who wanted the new lands, Native peoples whose lands were now inside it, and a war debt behind it all. Size was the problem \u2014 more land to defend, more peoples to govern, more money owed. No earlier British map of North America had ever shown so much pink.",
+  "general": "1. Measure the empire. British pink now runs from Hudson Bay to Florida and west to the Mississippi \u2014 twice the land it held before.\n2. Read the fine print. The Proclamation Line holds settlers back from lands they fought for, and the legend reserves those lands for Native peoples.\n3. Add what the map cannot show. The war that won this land nearly doubled Britain's debt, and the troops to hold it had to be paid for.\nRemember: victory gave Britain a continent it could not afford to govern the old way."
+ },
+ "figures": [
+  {
+   "file": "u3/barrons-2027-ch05-02.png",
+   "caption": "Shepherd's Historical Atlas, \"The British Colonies in North America, 1763\u20131775\"",
+   "alt": "Map of British North America in 1763-1775 showing the Thirteen Colonies, the Proclamation Line of 1763, and French, Spanish, and British possessions",
+   "license": "Public domain",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/British_colonies_1763-76_shepherd1923.PNG",
+   "id": "fig-apush-mcq-0379"
+  }
+ ]
+}

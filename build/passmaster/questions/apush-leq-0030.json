@@ -1,0 +1,92 @@
+{
+ "id": "apush-leq-0030",
+ "lesson": "apush-u3-l4",
+ "type": "leq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.8"
+ ],
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 4,
+ "stimulus_set": null,
+ "source": "original; prompt written for this topic",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.8 The Constitutional Convention and Debates over Ratification, C. Federalists, Anti-Federalists, and the Adoption of the Bill of Rights"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "The Ratification Battle"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "A New Constitution"
+   }
+  ],
+  "primary_sources": [
+   "Brutus, No. 1 (October 18, 1787)",
+   "Publius (James Madison), Federalist No. 10 (November 22, 1787)",
+   "George Mason, Objections to the Constitution of Government formed by the Convention (September 1787)"
+  ]
+ },
+ "status": "final",
+ "totalPoints": 6,
+ "stimulus": {
+  "kind": "none",
+  "source_note": "No stimulus; LEQ prompt only."
+ },
+ "prompt": "Evaluate the extent to which the Anti-Federalist opposition to the Constitution reflected the same fears that had shaped the Articles of Confederation.",
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent to which Anti-Federalist opposition reflected the same fears that had shaped the Articles, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim about the extent does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as the war for independence, the fear of distant authority after British rule, or the writing of new state constitutions.",
+   "notEarned": "A sentence of background with no link to the argument, or background from a later century, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (first point): earns the point for describing specific and relevant examples of the fears that shaped the Articles, such as the lack of a taxing power, the one-vote-per-state rule, or the need for unanimous consent to amend.",
+   "notEarned": "General statements with no specific example do not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (second point): earns the point for describing specific and relevant examples of Anti-Federalist opposition, such as Brutus on consolidation, Mason's objections, or Patrick Henry's attack on We the People.",
+   "notEarned": "Repeating the same example, or naming the Anti-Federalists with no specific detail, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Analysis and reasoning: earns the point for explaining how the evidence shows the same fears at work in both cases, linking the Articles' design to the Anti-Federalist arguments rather than listing them.",
+   "notEarned": "Listing fears on both sides with no explanation of how they connect does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.D",
+   "criterion": "Analysis and reasoning (complexity): earns the point for a complex argument, such as qualifying the thesis by showing where the fears changed, as in Shays's Rebellion turning fear of disorder against fear of power, or the Bill of Rights answering the old fear in a new form.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ],
+ "modelOutline": "Thesis: Anti-Federalist opposition reflected the same fears that had shaped the Articles to a great extent, because both were driven by the fear of distant, unchecked power, though the Anti-Federalists also faced a new fear, that the Articles' weakness itself had become dangerous.\nContext: The Articles were written during the war for independence by Americans who had lived under British rule, so they built a league of sovereign states with no power to tax and no executive, keeping power close to home.\nEvidence of the old fears in the Articles: Congress could not tax, so it depended on requisitions the states often ignored. Each state held one vote, and amendments needed all thirteen states. The design kept the national government too weak to threaten liberty.\nEvidence of the same fears in opposition: Brutus warned the Constitution would reduce thirteen confederated republics to one great republic. Mason's first objection was the missing declaration of rights. Patrick Henry asked who had authorized We the People instead of We the States.\nAnalysis: The same fear runs through both, that power far from the people escapes their control, and the Anti-Federalists read the Constitution through the same lens that had written the Articles.\nComplexity: The fears had also shifted, because Shays's Rebellion had shown the cost of weakness, so the Federalists could answer that the old fear of power now had a rival fear of disorder, and the Bill of Rights was the bargain that let both fears stand."
+}

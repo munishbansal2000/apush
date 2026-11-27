@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-0720",
+ "lesson": "apush-u3-l5",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.12"
+ ],
+ "skills": [
+  "2.A"
+ ],
+ "themes": [
+  "NAT",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "status": "final",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.7 The Articles of Confederation"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "Establishment of New Political Systems (1787-1800)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Unit 3: Conflict and American Independence (1754-1800)"
+   }
+  ],
+  "primary_sources": [
+   "Northwest Ordinance, July 13, 1787"
+  ]
+ },
+ "stimulus_set": "northwest-ordinance-1787",
+ "stimulus": {
+  "kind": "text",
+  "text": "An Ordinance for the government of the territory of the United States North West of the river Ohio. July 13, 1787.\n\nArticle III: “Religion, morality, and knowledge, being necessary to good government and the happiness of mankind, schools and the means of education shall forever be encouraged.”\n\nArticle V: “There shall be formed in the said territory, not less than three nor more than five states; and, whenever any of the said states shall have sixty thousand free inhabitants therein, such state shall be admitted, by its delegates, into the Congress of the United States, on an equal footing with the original states in all respects whatever. ...”\n\nArticle VI: “There shall be neither slavery nor involuntary servitude in the said territory, otherwise than in the punishment of crimes whereof the party shall have been duly convicted: Provided, always, that any person escaping into the same, from whom labor or service is lawfully claimed in any one of the original states, such fugitive may be lawfully reclaimed and conveyed to the person claiming his or her labor or service as aforesaid.”",
+  "source_note": "Northwest Ordinance, July 13, 1787, Articles III, V, and VI, quoted verbatim; Article V abridged with an ellipsis. Public domain."
+ },
+ "source": "original; stimulus is the Northwest Ordinance, July 13, 1787, quoted verbatim, Article V abridged with an ellipsis (public domain).",
+ "stem": "Under Article V, when could a new state from the territory join the Union?",
+ "options": [
+  {
+   "key": "A",
+   "text": "As soon as Congress appointed a governor for the territory.",
+   "misconception": "Background: a governor came first, but statehood waited for the population mark."
+  },
+  {
+   "key": "B",
+   "text": "When its settlers wrote a constitution, no matter how few they were.",
+   "misconception": "Background: a republican constitution was required, but so was the population mark."
+  },
+  {
+   "key": "C",
+   "text": "When it held sixty thousand free inhabitants, on an equal footing."
+  },
+  {
+   "key": "D",
+   "text": "Only after all five states planned for the territory had formed.",
+   "misconception": "The article plans three to five states, and each could join on its own."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "Background: a governor ruled the territory in its first stage; statehood needed sixty thousand free inhabitants.",
+  "B": "Background: a republican constitution was required for statehood. Article V also sets the mark at sixty thousand free inhabitants.",
+  "C": "Article V sets the mark at sixty thousand free inhabitants and promises admission on an equal footing with the original states.",
+  "D": "Three to five states were planned, but each joined when it met the mark, not all at once.",
+  "general": "1. Article V plans three to five states in the territory.\n2. It names the test for admission: sixty thousand free inhabitants.\n3. A state that met the test joined on an equal footing, not as a lesser member.\n4. So population, not time or a governor's appointment, opened the door to statehood.\nRemember: a number in a law is a test; find the number and what it unlocks."
+ }
+}

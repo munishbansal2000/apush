@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-0632",
+ "lesson": "apush-u3-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.9"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 3,
+ "stimulus_set": "federalism-powers-table",
+ "stimulus": {
+  "kind": "table",
+  "text": "| Power | National government | State governments | Both |\n|---|---|---|---|\n| Levy taxes |  |  | X |\n| Coin money | X |  |  |\n| Regulate trade between the states | X |  |  |\n| Establish public schools |  | X |  |\n| Declare war | X |  |  |\n| Establish courts |  |  | X |\n| Make treaties with other nations | X |  |  |",
+  "source_note": "Table drawn from the Constitution: Article I, Section 8 (national powers), Article I, Section 10 (powers forbidden to the states), and the Tenth Amendment (powers reserved to the states)."
+ },
+ "source": "original; table drawn from the Constitution \u2014 Article I, Sections 8 and 10, and the Tenth Amendment.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.9 The Constitution, Federalism\u2014the National Government and the States"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "The Constitutional Convention"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "A New Constitution"
+   }
+  ],
+  "primary_sources": [
+   "Constitution of the United States, Article I, Sections 8 and 10, and the Tenth Amendment (1787-1791)"
+  ]
+ },
+ "status": "final",
+ "stem": "Congress passes a law regulating trade between New York and New Jersey. A New Jersey merchant challenges the law, saying trade is a state matter. Which row of the table most directly supports Congress\u2019s side?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Regulate trade between the states"
+  },
+  {
+   "key": "B",
+   "text": "Levy taxes",
+   "misconception": "Taxing is a shared power, but this law regulates trade, not taxes."
+  },
+  {
+   "key": "C",
+   "text": "Establish public schools",
+   "misconception": "Public schools are a state power and have nothing to do with this law."
+  },
+  {
+   "key": "D",
+   "text": "Make treaties with other nations",
+   "misconception": "Treaties concern other nations, not trade between two states."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "The table gives regulating trade between the states to the national government, and the law does exactly that.",
+  "B": "The law regulates trade, not taxes, so the tax row does not cover it.",
+  "C": "Public schools are a state power and have nothing to do with interstate trade.",
+  "D": "Treaties are with other nations, not trade between New York and New Jersey.",
+  "general": "1. The merchant\u2019s claim is that trade between states belongs to the states.\n2. The table gives that very power, regulating trade between the states, to the national government.\n3. The other rows cover taxes, schools, and treaties, none of which is this law.\n4. So the interstate trade row is the one that answers the merchant.\nRemember: match the challenged law to the row that names the same power."
+ }
+}

@@ -1,0 +1,89 @@
+{
+ "id": "apush-mcq-0628",
+ "lesson": "apush-u3-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.9"
+ ],
+ "skills": [
+  "2.B",
+  "3.A"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "constitution-page-3",
+ "stimulus": {
+  "kind": "image",
+  "text": "The third page of the engrossed Constitution, signed at Philadelphia on September 17, 1787, carries the end of Article II and the start of Article III. It says the person with the most electoral votes shall be President \u201cif such Number be a Majority of the whole Number of Electors appointed,\u201d and that if no person has a majority, \u201cthe House of Representatives shall in like Manner chuse the President\u201d from the five highest on the list. Section 2 names the president \u201cCommander in Chief of the Army and Navy of the United States\u201d and gives power, \u201cby and with the Advice and Consent of the Senate, to make Treaties\u201d and to appoint ambassadors and \u201cJudges of the supreme Court.\u201d Article III, Section 1 vests judicial power in \u201cone supreme Court,\u201d and says judges \u201cshall hold their Offices during good Behaviour\u201d and that their pay \u201cshall not be diminished during their Continuance in Office.\u201d",
+  "source_note": "Constitution of the United States, third page, engrossed by Jacob Shallus, signed September 17, 1787. Public domain."
+ },
+ "source": "original; stimulus viewed before writing \u2014 Constitution of the United States, third page, engrossed by Jacob Shallus, signed September 17, 1787, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.9 The Constitution, A. The Structure of Government Under the Constitution"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "The Constitutional Convention"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "A New Constitution"
+   }
+  ],
+  "primary_sources": [
+   "Constitution of the United States, Article II and Article III (September 17, 1787)"
+  ]
+ },
+ "status": "final",
+ "stem": "According to the page, which of the following can the president do only with the Senate\u2019s agreement?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Make treaties with other nations"
+  },
+  {
+   "key": "B",
+   "text": "Command the armed forces",
+   "misconception": "The page names the president commander in chief with no Senate role attached."
+  },
+  {
+   "key": "C",
+   "text": "Grant pardons for offences against the United States",
+   "misconception": "The page gives the pardon power with no Senate role attached, except in cases of impeachment."
+  },
+  {
+   "key": "D",
+   "text": "Receive ambassadors and other public ministers",
+   "misconception": "The page lists receiving ambassadors among the president\u2019s own duties in Section 3."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "The page says the president may make treaties \u201cby and with the Advice and Consent of the Senate,\u201d with two-thirds of senators present concurring.",
+  "B": "Commander in chief is listed as the president\u2019s own power, with no Senate agreement needed.",
+  "C": "The pardon power is listed without a Senate role, except that it does not reach cases of impeachment.",
+  "D": "Receiving ambassadors is listed in Section 3 as the president\u2019s own duty.",
+  "general": "1. Section 2 on the page lists the president\u2019s powers one by one.\n2. Treaties carry the words \u201cby and with the Advice and Consent of the Senate.\u201d\n3. Commanding the armed forces, granting pardons, and receiving ambassadors carry no such words.\n4. So treaties are the power on the list that needs the Senate\u2019s agreement.\nRemember: \u201cadvice and consent\u201d in the text is the mark of a shared power."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0628",
+   "file": "u3/constitution-page-3-1787.jpg",
+   "caption": "Third page of the engrossed Constitution, 1787",
+   "alt": "Handwritten third page of the Constitution showing Article II on the presidency and Article III on the judiciary, with the words Commander in Chief and good Behaviour visible",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Constitution_of_the_United_States,_page_3.jpg"
+  }
+ ]
+}

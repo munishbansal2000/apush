@@ -1,0 +1,91 @@
+{
+ "id": "apush-saq-0068",
+ "type": "saq",
+ "unit": 3,
+ "topics": [
+  "3.1"
+ ],
+ "lesson": "apush-u3-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "skills": [
+  "2.A",
+  "3.A"
+ ],
+ "themes": [
+  "PCE",
+  "ARC"
+ ],
+ "reasoning": "causation",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.1 Contextualizing Period 3"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Causes of the Revolution"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 9",
+    "section": "Resistance, Rebellion, and Revolution (1750\u20131775)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "John Dickinson, Letters from a Farmer in Pennsylvania, Letter II, December 10, 1767, public domain.",
+  "text": "\u201cThe parliament unquestionably possesses a legal authority to regulate the trade of Great Britain, and all her colonies. Such an authority is essential to the relation between a mother country and her colonies. . . . I have looked over every statute relating to these colonies, from their first settlement to this time; and I find every one of them founded on this principle, till the Stamp Act administration. All before, are calculated to regulate trade, and preserve or promote a mutually beneficial intercourse between the several constituent parts of the empire. . . . The raising of a revenue thereby was never intended. . . . Never did the British parliament, till the period above mentioned, think of imposing duties in America for the purpose of raising a revenue.\u201d"
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus is a verbatim public-domain excerpt from John Dickinson, Letters from a Farmer in Pennsylvania (1767)",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify the distinction Dickinson draws between Parliament's past laws and the Stamp Act.",
+   "modelAnswer": "Dickinson says every earlier law was meant to regulate trade, while the Stamp Act was the first law meant to raise revenue in America. That difference \u2014 regulation versus revenue \u2014 is the heart of his argument.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying the distinction, such as earlier laws regulating trade versus the Stamp Act raising revenue.",
+     "notEarned": "Restating that Dickinson opposed the Stamp Act, without naming the distinction, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain how Dickinson's argument shaped colonial resistance to British taxation.",
+   "modelAnswer": "Dickinson gave the colonists a constitutional argument: Parliament could regulate trade, but it could not tax them for revenue without their consent. That argument turned a quarrel over money into a quarrel over rights, and it was repeated in pamphlets, resolutions, and the Continental Congress.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining how the argument shaped resistance, such as giving colonists a constitutional claim or turning taxation into a question of rights.",
+     "notEarned": "Restating Dickinson's distinction with no link to colonial resistance does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one way the question Dickinson raised \u2014 who may tax Americans \u2014 was answered by the Constitution.",
+   "modelAnswer": "The Constitution gave the new federal government the power to tax, which was the very power the colonists had denied to Parliament. The difference was representation: Americans now taxed themselves through their own elected Congress, rather than being taxed by a Parliament in which they had no seats.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one answer, such as Congress gaining the taxing power with representation, or Americans taxing themselves through elected representatives.",
+     "notEarned": "Naming a constitutional provision with no link to the taxation question does not earn the point."
+    }
+   ]
+  }
+ ]
+}

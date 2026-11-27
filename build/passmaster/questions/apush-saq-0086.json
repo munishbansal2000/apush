@@ -1,0 +1,102 @@
+{
+ "id": "apush-saq-0086",
+ "lesson": "apush-u3-l4",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.8"
+ ],
+ "skills": [
+  "1.B",
+  "3.A"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": null,
+ "source": "original; original secondary passage written for this question, facts from the grounding books.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.8 The Constitutional Convention and Debates over Ratification, A. Compromise and the Framing of the Constitution"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.8 The Constitutional Convention and Debates over Ratification, B. The Constitution and Slavery\u2014Compromise and Postponement"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.8 The Constitutional Convention and Debates over Ratification, C. Federalists, Anti-Federalists, and the Adoption of the Bill of Rights"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "The Constitutional Convention"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "A New Constitution"
+   }
+  ]
+ },
+ "status": "final",
+ "saq_slot": 1,
+ "stimulus": {
+  "type": "text",
+  "text": "The delegates who met in Philadelphia in the summer of 1787 had been sent to fix the Articles of Confederation. Within weeks they agreed to scrap the Articles and write a new frame of government. The hardest fights were over representation: large states wanted seats by population, small states wanted one vote each. The delegates also fought over slavery, and the final document counted enslaved people as three-fifths of a person for representation while leaving the slave trade open for twenty years.\n\nThe finished Constitution then went to the states, where ratification was far from certain. Its supporters called themselves Federalists and argued that a large republic with checks and balances would protect liberty. Its opponents, the Anti-Federalists, warned that the new government was too distant and too strong, and that it contained no bill of rights. Massachusetts ratified only after Federalists promised to recommend amendments, and the promise of a bill of rights carried the day.",
+  "source": "Original secondary passage written for this question, facts from Barron's 2027 Chapter 5, 5 Steps 2024 Chapter 11, and Princeton Review Chapter 7.",
+  "rights": "Original.",
+  "source_note": "Original secondary passage written for this question; facts from the grounding books."
+ },
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify ONE compromise reached at the Constitutional Convention.",
+   "modelAnswer": "One compromise was the Great Compromise, which gave the House of Representatives seats by population and the Senate two seats per state. It settled the fight between the Virginia Plan and the New Jersey Plan over representation.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names one compromise from the Convention, such as the Great Compromise, the Three-Fifths Compromise, or the twenty-year protection of the slave trade.",
+     "notEarned": "Naming a compromise from another event, such as the Missouri Compromise, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain ONE way the debate over ratification showed a disagreement about the power of the national government.",
+   "modelAnswer": "The debate showed a split over whether a strong national government would protect liberty or endanger it. Federalists said checks and balances in a large republic would keep power safe, while Anti-Federalists said a distant government would grow too strong for ordinary people to control.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains one way the ratification debate showed disagreement over national power, such as the Federalist trust in checks and balances against the Anti-Federalist fear of a distant, strong government.",
+     "notEarned": "Restating that the two sides disagreed, without explaining what they disagreed about, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain ONE way the promise of a bill of rights affected ratification.",
+   "modelAnswer": "The promise won over wavering states such as Massachusetts, which ratified only after Federalists agreed to recommend amendments. By promising to add protections for individual rights, Federalists turned opponents into supporters and carried the close conventions.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains one way the promise of a bill of rights affected ratification, such as winning Massachusetts, easing Anti-Federalist fears, or turning close votes into ratification.",
+     "notEarned": "Saying only that a bill of rights was added later, without explaining how the promise affected ratification, does not earn the point."
+    }
+   ]
+  }
+ ],
+ "totalPoints": 3
+}

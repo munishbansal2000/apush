@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-0590",
+ "lesson": "apush-u3-l4",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 3,
+ "topics": [
+  "3.8"
+ ],
+ "skills": [
+  "3.C"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 3,
+ "stimulus_set": "virginia-new-jersey-plans",
+ "stimulus": {
+  "kind": "text",
+  "text": "|  | Virginia Plan | New Jersey Plan |\n|---|---|---|\n| Proposed by | James Madison, for Virginia | William Paterson, for New Jersey |\n| Houses of the legislature | Two | One |\n| Representation | By each state's population | One vote for each state |\n| National government | A new government with three branches and broad powers | Congress kept as it was, with added power to tax and regulate trade |",
+  "source_note": "Table drawn from the plans debated at the Constitutional Convention, Philadelphia, summer 1787. Public domain."
+ },
+ "source": "original; table drawn from the Virginia Plan and the New Jersey Plan debated at the Constitutional Convention, Philadelphia, 1787, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.8 The Constitutional Convention and Debates over Ratification, A. Compromise and the Framing of the Constitution"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "The Constitutional Convention"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "A New Constitution"
+   }
+  ],
+  "primary_sources": [
+   "Virginia Plan (1787)",
+   "New Jersey Plan (1787)"
+  ]
+ },
+ "status": "final",
+ "stem": "The two plans in the table disagreed most directly over which of the following?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Whether the national government should have a president at all",
+   "misconception": "Both plans proposed an executive; the table's disagreement is over the legislature, not the presidency."
+  },
+  {
+   "key": "B",
+   "text": "How the states would be represented in the national legislature"
+  },
+  {
+   "key": "C",
+   "text": "Whether slavery should be allowed in the new nation",
+   "misconception": "Slavery was debated at the Convention, but neither plan in the table is about slavery."
+  },
+  {
+   "key": "D",
+   "text": "Whether the Constitution should include a bill of rights",
+   "misconception": "A bill of rights was not in either plan; it became the issue in the ratification debates that followed."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "B": "The table's sharpest split is the representation row: seats by population against one vote per state. Background: that split was the large states against the small states.",
+  "A": "Background: both plans proposed an executive, so the presidency was not what divided them.",
+  "C": "Neither plan in the table deals with slavery; their fight was over representation.",
+  "D": "A bill of rights appears in neither plan. Background: it was demanded later, during ratification.",
+  "general": "1. Compare the two columns row by row.\n2. The houses differ, but the representation row is the direct clash: population against one vote per state.\n3. That clash is the large states against the small states over who would hold power.\n4. Background: the fight lasted weeks before the Great Compromise settled it.\nRemember: the deepest disagreement is the one both sides built their plans around."
+ }
+}

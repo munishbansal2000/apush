@@ -1,0 +1,92 @@
+{
+ "id": "apush-saq-0095",
+ "lesson": "apush-u3-l5",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.11"
+ ],
+ "skills": [
+  "1.B",
+  "3.B"
+ ],
+ "themes": [
+  "SOC",
+  "NAT"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 3,
+ "source": "original; stimulus is an original secondary summary of republican motherhood.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.6 The Influence of Revolutionary Ideals"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.11 Developing an American Identity"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 10",
+    "section": "The American Revolution and Its Aftermath"
+   }
+  ]
+ },
+ "status": "final",
+ "saq_slot": 1,
+ "stimulus_set": null,
+ "stimulus": {
+  "type": "text",
+  "text": "Secondary source (original summary): Historians describe “republican motherhood” as the idea that took shape after the Revolution. Women had no vote and held no office, yet they had a civic duty to raise sons who would be virtuous citizens of the republic and to shape the morals of the men around them. Because mothers needed knowledge to teach their sons, the idea also opened new arguments for educating girls, and female academies grew in the 1790s.",
+  "source": "Original secondary summary of republican motherhood, drawn from Barron’s Premium 2027, Chapter 5, Topic 3.6.",
+  "rights": "Original prose.",
+  "source_note": "Original secondary summary, drawn from Barron’s Premium 2027, Chapter 5, Topic 3.6."
+ },
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify ONE civic duty that republican motherhood assigned to women.",
+   "modelAnswer": "Republican motherhood gave women the civic duty of raising sons to be virtuous citizens of the republic. Mothers were also expected to shape the morals and manners of the men around them.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names one civic duty republican motherhood assigned to women, such as raising virtuous sons for the republic or shaping men’s morals and manners.",
+     "notEarned": "Naming only that women stayed home, with no civic duty, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain ONE way republican motherhood expanded opportunities for women.",
+   "modelAnswer": "Because mothers needed knowledge to teach their sons, supporters of republican motherhood argued that girls should be educated. Female academies grew in the 1790s, giving more girls formal schooling than their mothers had received.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains one way republican motherhood expanded opportunities, such as new arguments for educating girls or the growth of female academies.",
+     "notEarned": "Saying only that women were important, with no opportunity named, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain ONE limit of republican motherhood as a step toward equality for women.",
+   "modelAnswer": "Republican motherhood gave women no vote and no office, so it left formal political power in men’s hands. It also kept women in a largely domestic role, valuing them as mothers and moral guides rather than as citizens in their own right.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains one limit of republican motherhood, such as giving women no vote or office, or keeping them in a domestic role.",
+     "notEarned": "Saying only that women were treated unfairly, with no specific limit, does not earn the point."
+    }
+   ]
+  }
+ ],
+ "totalPoints": 3
+}

@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-0428",
+ "lesson": "apush-u3-l2",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.3"
+ ],
+ "skills": [
+  "2.A"
+ ],
+ "themes": [
+  "PCE",
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "boston-troops-1768",
+ "stimulus": {
+  "kind": "image",
+  "text": "The engraving, 'The town of Boston in New England and British ships of war landing their troops! 1768,' shows Boston harbor crowded with British warships. Small boats ferry red-coated soldiers ashore, and columns of troops march in formation along the wharf while the town's church steeples rise behind them.",
+  "source_note": "Engraved by Paul Revere, published 1770 (the landing shown is 1768). Library of Congress. Public domain (pre-1930)."
+ },
+ "source": "original; stimulus viewed before writing \u2014 by Paul Revere, published 1770, Library of Congress, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "A. Colonial Resistance to British Policies in the Aftermath of the French and Indian War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 9",
+    "section": "Stamp Act Crisis"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Sugar Act, the Currency Act, and the Stamp Act"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "The engraving most directly illustrates which British response to colonial resistance?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The repeal of the Townshend duties",
+   "misconception": "Repeal came in 1770, two years after this landing \u2014 and repeal removed taxes, it did not land troops."
+  },
+  {
+   "key": "B",
+   "text": "The passage of the Declaratory Act",
+   "misconception": "The Declaratory Act of 1766 asserted Parliament's rights on paper \u2014 this image shows soldiers, not legislation."
+  },
+  {
+   "key": "C",
+   "text": "Stationing regular troops in Boston to enforce customs laws"
+  },
+  {
+   "key": "D",
+   "text": "The closing of Boston harbor to all trade",
+   "misconception": "The harbor was closed in 1774, by the Boston Port Act \u2014 in 1768 the harbor was open, and the ships in the image are bringing troops in, not shutting trade out."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "C": "The image shows the answer: warships in the harbor and red-coated soldiers marching ashore. After Bostonians attacked customs officers, London sent two regiments to enforce its laws in the town.",
+  "A": "Repeal was two years away and went the other way \u2014 it took taxes off, not troops in.",
+  "B": "The Declaratory Act was words on paper in 1766. This is soldiers on a wharf in 1768.",
+  "D": "The harbor stayed open until 1774. In 1768 the ships were landing troops, not blockading trade.",
+  "general": "1. Count what the image shows. Warships in the harbor, boats ferrying soldiers, troops ashore \u2014 an army arriving.\n2. Ask why London sent it. Bostonians had attacked customs officers after Hancock's ship was seized, and the town would not enforce the laws itself.\n3. Ask what the troops were for. Not war with France \u2014 the war was over \u2014 but enforcing customs and taxes on the colonists.\nRemember: when a government sends soldiers to its own towns, the enemy it fears is at home."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0428",
+   "file": "u3/boston-troops-landing-1768.jpg",
+   "caption": "The town of Boston in New England and British ships of war landing their troops! 1768 \u2014 engraved by Paul Revere, published 1770",
+   "alt": "Boston harbor in 1768 crowded with British warships, small boats ferrying red-coated soldiers ashore as columns of troops march along the wharf",
+   "license": "Public domain",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/63/The_town_of_Boston_in_New_England_and_British_ships_of_war_landing_their_troops%21_1768_LCCN2004669969.jpg"
+  }
+ ]
+}

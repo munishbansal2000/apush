@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-0616",
+ "lesson": "apush-u3-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.8"
+ ],
+ "skills": [
+  "3.D",
+  "6.C"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "mason-objections",
+ "stimulus": {
+  "kind": "text",
+  "text": "\u201cThere is no Declaration of Rights; and the Laws of the general Government being paramount to the Laws & Constitution of the several States, the Declarations of Rights in the separate States are no Security. . . . In the House of Representatives there is not the Substance, but the Shadow only of Representation; which can never produce proper Information in the Legislature, or inspire Confidence in the people. . . . The Judiciary of the United States is so constructed & extended, as to absorb & destroy the Judiciarys of the several States. . . . There is no Declaration of any kind for preserving the Liberty of the Press, the Tryal by jury in civil Causes; nor against the Danger of standing Armies in time of Peace.\u201d\n\n\u2014George Mason, Objections to the Constitution of Government formed by the Convention, September 1787",
+  "source_note": "George Mason, Objections to the Constitution of Government formed by the Convention, September 1787. Public domain."
+ },
+ "source": "original; stimulus viewed before writing \u2014 George Mason, Objections to the Constitution of Government formed by the Convention, September 1787, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.8 The Constitutional Convention and Debates over Ratification, C. Federalists, Anti-Federalists, and the Adoption of the Bill of Rights"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "The Ratification Battle"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "A New Constitution"
+   }
+  ],
+  "primary_sources": [
+   "George Mason, Objections to the Constitution of Government formed by the Convention (September 1787)"
+  ]
+ },
+ "status": "final",
+ "stem": "Why does Mason say the declarations of rights in the separate states are no security?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Because federal law is paramount to state laws and constitutions"
+  },
+  {
+   "key": "B",
+   "text": "Because the states had never written declarations of rights",
+   "misconception": "The passage assumes the states have declarations of rights; its point is that they cannot protect people against federal law."
+  },
+  {
+   "key": "C",
+   "text": "Because the Constitution forbade the states to keep their own courts",
+   "misconception": "The passage says the federal judiciary would absorb the state judiciaries, not that the states were forbidden to keep courts."
+  },
+  {
+   "key": "D",
+   "text": "Because the states refused to ratify the Constitution",
+   "misconception": "The states did ratify, and the passage is about the Constitution's defects, not about refusal."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Mason's chain is in the first sentence: there is no declaration of rights in the Constitution, and federal law is paramount to state law, so the state declarations cannot protect people against the general government.",
+  "B": "The passage takes the state declarations as given; its point is that federal supremacy overrides them.",
+  "C": "Mason says the federal judiciary would absorb the state judiciaries, not that the states were forbidden to keep courts.",
+  "D": "The passage lists defects in the Constitution. Background: the states did ratify it.",
+  "general": "1. Mason's first objection is that the Constitution has no declaration of rights.\n2. He adds the reason state declarations do not fix that: federal law is paramount to state law.\n3. So a right written in a state constitution gives no protection against the general government.\n4. Background: that supremacy is why Anti-Federalists demanded a federal bill of rights.\nRemember: a chain of reasons answers a why question, so follow it link by link."
+ }
+}

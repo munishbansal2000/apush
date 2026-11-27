@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-0727",
+ "lesson": "apush-u3-l5",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.12"
+ ],
+ "skills": [
+  "3.C"
+ ],
+ "themes": [
+  "NAT",
+  "PCE"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 3,
+ "status": "final",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.12 Movement in the Early Republic"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "Establishment of New Political Systems (1787-1800)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Unit 3: Conflict and American Independence (1754-1800)"
+   }
+  ],
+  "primary_sources": [
+   "United States Census, 1790"
+  ]
+ },
+ "stimulus_set": "new-states-1791-1796",
+ "stimulus": {
+  "kind": "table",
+  "text": "| State | Admitted | Order | Formed from |\n|---|---|---|---|\n| Vermont | March 4, 1791 | 14th | Independent republic |\n| Kentucky | June 1, 1792 | 15th | Virginia |\n| Tennessee | June 1, 1796 | 16th | Southwest Territory |\n\nBackground from the books: The Northwest Ordinance set 60,000 free inhabitants as the mark for statehood. In the 1790 census the Southwest Territory (present-day Tennessee) counted 35,691 people. A territorial census in 1795 counted 77,262.",
+  "source_note": "Admission dates from the Congressional Research Service, Admission of States to the Union; population counts from the United States Census, 1790, and the 1795 territorial census of the Southwest Territory."
+ },
+ "source": "original; table drawn from the Congressional Research Service admission list and the United States Census.",
+ "stem": "Kentucky was formed from Virginia. What does that show about how new states could be made?",
+ "options": [
+  {
+   "key": "A",
+   "text": "A new state could be carved out of an existing state."
+  },
+  {
+   "key": "B",
+   "text": "A new state had to be formed from a foreign colony.",
+   "misconception": "Kentucky came from Virginia, an American state, not a foreign colony."
+  },
+  {
+   "key": "C",
+   "text": "A new state could only be formed from a federal territory.",
+   "misconception": "Tennessee came from a territory, but Kentucky came from Virginia, so territory was not the only path."
+  },
+  {
+   "key": "D",
+   "text": "A new state had to win independence in a war first.",
+   "misconception": "Background: Vermont had been an independent republic, but Kentucky separated from Virginia by agreement, not by war."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Kentucky's \"formed from\" column names Virginia, so a state could be split off from an existing state.",
+  "B": "Virginia was an American state, not a foreign colony.",
+  "C": "Tennessee came from a territory, but Kentucky shows another path existed.",
+  "D": "Kentucky left Virginia by agreement; no war made it a state.",
+  "general": "1. The table's last column gives each state's origin.\n2. Kentucky's origin is Virginia, an existing state.\n3. Tennessee's origin is a federal territory, and Vermont's is an independent republic.\n4. So the early Union grew by more than one path, including carving a state out of a state.\nRemember: a table's \"formed from\" column shows the path, not just the date."
+ }
+}

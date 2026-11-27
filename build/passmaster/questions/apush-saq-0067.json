@@ -1,0 +1,96 @@
+{
+ "id": "apush-saq-0067",
+ "type": "saq",
+ "unit": 3,
+ "topics": [
+  "3.1"
+ ],
+ "lesson": "apush-u3-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "skills": [
+  "1.B",
+  "5.A"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "continuity-change",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.1 Contextualizing Period 3"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Causes of the Revolution"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 9",
+    "section": "Resistance, Rebellion, and Revolution (1750\u20131775)"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "Establishment of New Political Systems (1787\u20131800)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "text",
+  "source_note": "Original secondary passage written for this question; facts from the grounding books.",
+  "text": "Between 1754 and 1800, the British colonies in North America passed through three great changes. First came an imperial crisis: after the Seven Years' War, Britain tried to rule its colonies more tightly, taxing them for revenue and restricting their movement west. The colonies resisted, and resistance became revolution.\n\nSecond came independence and the building of a republic: the new United States wrote a Constitution that created a stronger national government than the Articles of Confederation had allowed. Third came the shaping of that republic: political parties formed, and the election of 1800 passed power peacefully from one party to another. Through all three changes, some things held steady. Enslaved people remained in bondage, and settlers kept pushing west onto Native peoples' lands."
+ },
+ "stimulus_set": null,
+ "source": "original; stimulus is an original secondary passage written for this question",
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify one way Britain tried to tighten its control over the colonies after the Seven Years' War.",
+   "modelAnswer": "After the war, Britain taxed the colonies for revenue with measures such as the Stamp Act. It also restricted western settlement with the Proclamation of 1763.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for identifying one tightening measure from the passage, such as taxing for revenue or restricting western settlement.",
+     "notEarned": "Naming a British policy that is not in the passage, or a vague answer with no measure identified, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain one way the new republic's government under the Constitution differed from the government under the Articles of Confederation.",
+   "modelAnswer": "Under the Articles, the national government could not tax or enforce its laws, and the states kept most power. The Constitution created a stronger federal government with the power to tax, raise an army, and regulate trade.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one difference, such as the power to tax, to enforce laws, or to regulate trade under the Constitution.",
+     "notEarned": "Restating that the Constitution was stronger, with no specific difference explained, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain one continuity in American life across the period 1754\u20131800.",
+   "modelAnswer": "Slavery continued through the Revolution and the founding of the republic, even though the Declaration proclaimed that all men are created equal. Settlers also kept pushing west onto Native peoples' lands throughout the period, before and after independence.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Earns the point for explaining one continuity, such as slavery continuing or westward expansion onto Native lands.",
+     "notEarned": "Naming a change instead of a continuity, or giving a continuity with no explanation, does not earn the point."
+    }
+   ]
+  }
+ ]
+}

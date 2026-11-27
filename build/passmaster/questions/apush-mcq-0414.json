@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-0414",
+ "lesson": "apush-u3-l2",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.3"
+ ],
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 3,
+ "stimulus_set": "sugar-act-table",
+ "stimulus": {
+  "kind": "table",
+  "text": "| Measure | Duty on foreign molasses | How it was enforced |\n| Molasses Act, 1733 | 6 pence per gallon | Rarely collected; smuggling was widespread |\n| Sugar Act, 1764 | 3 pence per gallon | Strictly enforced; violators tried in admiralty courts without juries |",
+  "source_note": "Figures from Barron's Premium 2027, Chapter 5, and Princeton Review, Chapter 7. The duty was halved, but collection was enforced for the first time."
+ },
+ "source": "original; stimulus viewed before writing \u2014 figures from Barron's Premium 2027, Chapter 5, and Princeton Review, Chapter 7.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "B. Debt and Taxation Following the French and Indian War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 9",
+    "section": "The British Need Money"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Sugar Act, the Currency Act, and the Stamp Act"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "According to the table, the Sugar Act's most important change from the Molasses Act was which of the following?",
+ "options": [
+  {
+   "key": "A",
+   "text": "It raised the duty on foreign molasses",
+   "misconception": "The table shows the duty fell, from 6 pence to 3 pence per gallon \u2014 the change was in enforcement, not in the rate."
+  },
+  {
+   "key": "B",
+   "text": "It banned the import of molasses from the French West Indies",
+   "misconception": "Nothing in the table bans molasses \u2014 the Sugar Act still allowed the trade, but now it collected the duty on it."
+  },
+  {
+   "key": "C",
+   "text": "It gave colonial assemblies control over customs collection",
+   "misconception": "The assemblies gained nothing \u2014 enforcement moved to British admiralty courts, away from local juries."
+  },
+  {
+   "key": "D",
+   "text": "It lowered the duty but enforced collection for the first time"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "D": "The table's story is in the second column: the duty fell from 6 pence to 3 pence, but the enforcement changed from 'rarely collected' to 'strictly enforced.' The lower rate was real; so was the new collection.",
+  "A": "The rate went down, not up \u2014 6 pence became 3 pence. The change that mattered was enforcement.",
+  "B": "The trade was not banned. Molasses still flowed from the French West Indies; now the duty on it was actually collected.",
+  "C": "The assemblies lost ground, not gained it \u2014 smuggling cases moved from local juries to British admiralty courts.",
+  "general": "1. Compare the two rows, rate first. The duty fell by half, from 6 pence to 3 pence per gallon.\n2. Compare the enforcement column next. The old duty was rarely collected; the new one was strictly enforced, with violators tried without juries.\n3. Put the two together. A tax that is actually collected costs more than a higher tax that nobody pays \u2014 and a trial without a jury cost the colonists a right they prized.\nRemember: a tax is not its rate on paper \u2014 it is what the government actually takes, and how."
+ }
+}

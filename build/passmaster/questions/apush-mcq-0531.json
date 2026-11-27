@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-0531",
+ "lesson": "apush-u3-l3",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.6"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "stimulus_set": "gradual-emancipation-table",
+ "stimulus": {
+  "kind": "table",
+  "text": "| Place | Action | What it did |\n|---|---|---|\n| Vermont | 1777 constitution | Slavery banned outright |\n| Pennsylvania | 1780 law | Children born after March 1, 1780, free at age 28 |\n| Massachusetts | 1783 court decisions | Slavery ended under the 1780 state constitution |\n| Connecticut | 1784 law | Children born after March 1, 1784, free at age 25 |\n| Rhode Island | 1784 law | Children born after March 1, 1784, free at 18 (girls) or 21 (boys) |\n| New York | 1799 law | Children born after July 4, 1799, free at 28 (boys) or 25 (girls) |\n| Northwest Territory | 1787 ordinance | Slavery banned in the territory |",
+  "source_note": "Compiled from state constitutions, statutes, and court decisions, 1777-1799. Public record."
+ },
+ "source": "original; stimulus table compiled from state constitutions, statutes, and court decisions, 1777-1799.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.6 The Influence of Revolutionary Ideals, A. The Call for Egalitarianism"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 10"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7"
+   }
+  ],
+  "primary_sources": [
+   "State emancipation actions, 1777-1799"
+  ]
+ },
+ "status": "final",
+ "stem": "According to the table, the two states where slavery ended outright rather than gradually were",
+ "options": [
+  {
+   "key": "A",
+   "text": "Vermont and Massachusetts"
+  },
+  {
+   "key": "B",
+   "text": "Pennsylvania and New York",
+   "misconception": "Both freed children only when they reached adulthood, so their laws were gradual, not outright."
+  },
+  {
+   "key": "C",
+   "text": "Connecticut and Rhode Island",
+   "misconception": "Both freed children only at set ages, so their laws were gradual, not outright."
+  },
+  {
+   "key": "D",
+   "text": "New York and the Northwest Territory",
+   "misconception": "New York's law was gradual, and the Northwest Territory is not a state \u2014 the stem asks for states."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Vermont's constitution banned slavery outright, and Massachusetts courts ended it under the state constitution \u2014 the two states where it ended outright.",
+  "B": "Pennsylvania and New York freed children at 28, which kept slavery going for a generation; that is gradual.",
+  "C": "Connecticut and Rhode Island freed children at set ages, which kept slavery going for years; that is gradual.",
+  "D": "New York freed children only at 28 or 25, so it belongs with the gradual laws, not the outright bans.",
+  "general": "1. Find the outright rows. Vermont's constitution bans slavery, the Territory ordinance bans it too, and Massachusetts courts ended it under the state constitution \u2014 three outright endings in the table.\n2. Ask for states. The Territory is not a state, so the two states are Vermont and Massachusetts.\n3. Sort the rest. Every other row frees children only at 18, 21, 25, or 28 \u2014 that is gradual.\nRemember: \u201coutright\u201d and \u201cgradual\u201d are different answers \u2014 read the What-it-did column, not the dates."
+ }
+}

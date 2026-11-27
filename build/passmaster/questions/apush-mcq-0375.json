@@ -1,0 +1,83 @@
+{
+ "id": "apush-mcq-0375",
+ "type": "mcq",
+ "unit": 3,
+ "topics": [
+  "3.1"
+ ],
+ "lesson": "apush-u3-l1",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "answerKey": "C",
+ "skills": [
+  "2.C"
+ ],
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "reasoning": "comparison",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.1 Contextualizing Period 3"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Fighting the Revolution"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 10",
+    "section": "American Revolution and the New Nation (1775\u20131787)"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "Establishment of New Political Systems (1787\u20131800)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "table",
+  "source_note": "Table compiled from the grounding books; see grounding.",
+  "text": "| Revolution | When | Political change | Social change |\n| American Revolution | 1775\u20131783 | Independence from Britain; a republic replaces monarchy | Slavery continues; property-based political power largely intact |\n| French Revolution | 1789\u20131799 | Monarchy overthrown; a republic proclaimed | Feudal privileges abolished; the Declaration of the Rights of Man proclaims equality |\n| Haitian Revolution | 1791\u20131804 | Independence from France; a republic founded by formerly enslaved people | Slavery itself destroyed; the plantation system overthrown |"
+ },
+ "figures": [],
+ "stimulus_set": "atlantic-revolutions",
+ "source": "original; stimulus is an original data table compiled from the grounding books; stem and options rewritten from fresh-written survivor original-u3-gapfill-atlantic-03",
+ "stem": "A historian comparing the American Revolution to the French and Haitian revolutions of the same era argues that the American Revolution was the most conservative of the three. Which of the following best situates the American Revolution in this broader Atlantic context and supports the historian's comparison?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The American Revolution abolished slavery immediately at independence, while the French and Haitian revolutions preserved slavery for many more decades.",
+   "misconception": "The American Revolution did not abolish slavery; it was the Haitian Revolution that destroyed slavery."
+  },
+  {
+   "key": "B",
+   "text": "The American Revolution was fought entirely without foreign assistance or alliances, unlike the French and Haitian revolutions of the era.",
+   "misconception": "The American victory depended heavily on French military and financial aid."
+  },
+  {
+   "key": "C",
+   "text": "The American Revolution left slavery and property-based political power largely intact, while the Haitian Revolution destroyed slavery itself."
+  },
+  {
+   "key": "D",
+   "text": "The American Revolution established a hereditary monarchy on the British model, while the French Revolution created a republican government instead.",
+   "misconception": "The American Revolution created a republic, not a monarchy."
+  }
+ ],
+ "rationales": {
+  "A": "The American Revolution did not abolish slavery; it was the Haitian Revolution that destroyed slavery.",
+  "B": "The American victory depended heavily on French military and financial aid.",
+  "C": "The comparison holds because the American Revolution was mainly a political break from Britain that preserved existing social hierarchies, while the Haitian Revolution was a genuine social revolution in which enslaved people overthrew slavery and the plantation system entirely. Background: the table shows the difference plainly \u2014 in America the social order survived independence, in France feudal privilege fell, and in Haiti slavery itself was destroyed. A revolution can be radical in politics and conservative in society at the same time.",
+  "D": "The American Revolution created a republic, not a monarchy.",
+  "general": "1. Read the table across, not down. Each revolution has a political row and a social row \u2014 the argument lives in the difference.\n2. Compare the social rows. America: slavery continues. France: feudal privilege abolished. Haiti: slavery destroyed.\n3. Ask what \u201cconservative\u201d means here. Not timid \u2014 the American break from Britain was bold \u2014 but conservative in what it left standing.\n4. Put it together. The historian's claim is about the social order, and on that row America changed least.\nRemember: a revolution has two questions \u2014 who rules, and who is free \u2014 and the answers can differ."
+ }
+}

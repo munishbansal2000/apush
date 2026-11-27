@@ -1,0 +1,85 @@
+{
+ "id": "apush-mcq-0507",
+ "lesson": "apush-u3-l3",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.5"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "yorktown-trumbull",
+ "stimulus": {
+  "kind": "image",
+  "text": "The painting shows the surrender at Yorktown on October 19, 1781. In the center, a British officer in a red coat stands before an American officer on a white horse and presents his sword. American officers on horseback and on foot stand to the right, under the American flag, while British officers wait to the left under a white flag. The painting is John Trumbull's Surrender of Lord Cornwallis, painted in 1820. Cornwallis himself did not attend the surrender; he sent his second-in-command, General Charles O'Hara, who is the British officer shown presenting the sword.",
+  "source_note": "John Trumbull, Surrender of Lord Cornwallis, 1820. Public domain."
+ },
+ "source": "original; stimulus viewed before writing \u2014 John Trumbull, Surrender of Lord Cornwallis, 1820, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.5 The American Revolution, A. The War for Independence"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 10"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Fighting the Revolution"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "What does the painting show about the surrender at Yorktown?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The French fleet fires on the British from the York River",
+   "misconception": "No fleet or firing is shown; the painting shows the formal surrender on land, under flags of truce."
+  },
+  {
+   "key": "B",
+   "text": "American troops storm the British earthworks at Yorktown",
+   "misconception": "The painting shows a formal surrender ceremony, not an assault on earthworks; the siege had already ended."
+  },
+  {
+   "key": "C",
+   "text": "A British officer presents his sword while Cornwallis stays away"
+  },
+  {
+   "key": "D",
+   "text": "Cornwallis himself hands his sword to Washington",
+   "misconception": "Cornwallis did not attend the surrender; he sent General O'Hara, who presented the sword in his place."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "C": "O'Hara, Cornwallis's second-in-command, presents the sword to the Americans, while Cornwallis himself stayed in his quarters.",
+  "D": "Cornwallis did not attend; he claimed illness and sent O'Hara, so the painting shows his deputy, not Cornwallis.",
+  "A": "The French fleet's role was to block escape by sea; the painting shows the land surrender, with no ships firing.",
+  "B": "The assault on the earthworks came before the surrender; the painting shows the ceremony that followed it.",
+  "general": "1. Look at the center. A British officer in red offers his sword to an American officer on a white horse.\n2. Ask who is missing. Cornwallis is not in the painting; he sent O'Hara, his second-in-command, to surrender in his place.\n3. Name the scene. A formal, orderly surrender, with officers under flags, not a battle or a bombardment.\nRemember: in a surrender painting, ask who is present and who is absent \u2014 the absence is part of the story."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0507",
+   "file": "u3/surrender-cornwallis-yorktown.jpg",
+   "caption": "John Trumbull, Surrender of Lord Cornwallis, 1820",
+   "alt": "Trumbull painting of the British surrender at Yorktown, with a British officer presenting his sword to the Americans under their flag",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Surrender_of_Lord_Cornwallis.jpg"
+  }
+ ]
+}

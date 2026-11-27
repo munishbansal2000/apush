@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-0630",
+ "lesson": "apush-u3-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.9"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 3,
+ "stimulus_set": "federalism-powers-table",
+ "stimulus": {
+  "kind": "table",
+  "text": "| Power | National government | State governments | Both |\n|---|---|---|---|\n| Levy taxes |  |  | X |\n| Coin money | X |  |  |\n| Regulate trade between the states | X |  |  |\n| Establish public schools |  | X |  |\n| Declare war | X |  |  |\n| Establish courts |  |  | X |\n| Make treaties with other nations | X |  |  |",
+  "source_note": "Table drawn from the Constitution: Article I, Section 8 (national powers), Article I, Section 10 (powers forbidden to the states), and the Tenth Amendment (powers reserved to the states)."
+ },
+ "source": "original; table drawn from the Constitution \u2014 Article I, Sections 8 and 10, and the Tenth Amendment.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.9 The Constitution, Federalism\u2014the National Government and the States"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "The Constitutional Convention"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "A New Constitution"
+   }
+  ],
+  "primary_sources": [
+   "Constitution of the United States, Article I, Sections 8 and 10, and the Tenth Amendment (1787-1791)"
+  ]
+ },
+ "status": "final",
+ "stem": "According to the table, which two powers are concurrent powers, held by both the national government and the states?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Coin money and declare war",
+   "misconception": "Both of those sit in the national column alone."
+  },
+  {
+   "key": "B",
+   "text": "Levy taxes and establish courts"
+  },
+  {
+   "key": "C",
+   "text": "Regulate trade between states and make treaties",
+   "misconception": "Both of those sit in the national column alone."
+  },
+  {
+   "key": "D",
+   "text": "Establish public schools and coin money",
+   "misconception": "Public schools sit in the state column and coining money in the national column."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "B": "The table marks both rows with an X in the \u201cBoth\u201d column.",
+  "A": "Coining money and declaring war are both marked national only.",
+  "C": "Regulating interstate trade and making treaties are both marked national only.",
+  "D": "Public schools are marked state only, and coining money national only.",
+  "general": "1. A concurrent power is one both levels of government hold.\n2. In the table, concurrent powers carry an X in the \u201cBoth\u201d column.\n3. Levying taxes and establishing courts are the two rows marked that way.\n4. Every other pair mixes a national-only row with something else.\nRemember: \u201cconcurrent\u201d means shared, so look for the rows marked for both levels."
+ }
+}

@@ -1,0 +1,89 @@
+{
+ "id": "apush-mcq-0686",
+ "lesson": "apush-u3-l5",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 3,
+ "topics": [
+  "3.10"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "ARC",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "stimulus_set": "bank-building-1799",
+ "stimulus": {
+  "kind": "image",
+  "text": "The engraving, drawn and published by W. Birch & Son in 1799, shows the Bank of the United States in Third Street, Philadelphia: a grand white building with tall columns and a pediment reading \u201cFOUNDED A.D. MDCCXCV.\u201d Carts, horses, and passersby fill the street in front of it.",
+  "source_note": "Bank of the United States in Third Street, Philadelphia, W. Birch & Son, 1799, New York Public Library. Public domain."
+ },
+ "source": "original; stimulus viewed before writing \u2014 Bank of the United States in Third Street, Philadelphia, W. Birch & Son, 1799, New York Public Library. Public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.10 Shaping the New Republic"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "Establishment of New Political Systems (1787-1800)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Unit 3: Conflict and American Independence (1754-1800)"
+   }
+  ],
+  "primary_sources": [
+   "W. Birch & Son, Bank of the United States in Third Street, Philadelphia (1799)"
+  ]
+ },
+ "status": "final",
+ "stem": "The Roman numerals on the building\u2019s pediment read MDCCXCV. What year does that name?",
+ "options": [
+  {
+   "key": "A",
+   "text": "1695, the year the first American bank opened.",
+   "misconception": "MDCCXCV means 1795, not 1695; no American bank opened in 1695."
+  },
+  {
+   "key": "B",
+   "text": "1795, the year named on the bank building."
+  },
+  {
+   "key": "C",
+   "text": "1789, the year the Constitution took effect.",
+   "misconception": "1789 would read MDCCLXXXIX, not MDCCXCV."
+  },
+  {
+   "key": "D",
+   "text": "1800, the year the government moved to Washington.",
+   "misconception": "1800 would read MDCCC, not MDCCXCV."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "B": "The pediment in the engraving reads FOUNDED A.D. MDCCXCV, and MDCCXCV is 1795.",
+  "A": "MDCCXCV means 1795, not 1695.",
+  "C": "1789 would read MDCCLXXXIX, not MDCCXCV.",
+  "D": "1800 would read MDCCC, not MDCCXCV.",
+  "general": "1. The stimulus quotes the pediment: FOUNDED A.D. MDCCXCV.\n2. Roman numerals read by place: M is 1000, DCC is 700, XC is 90, and V is 5.\n3. Added together, 1000 plus 700 plus 90 plus 5 is 1795.\n4. So the building names the year 1795, not 1695, 1789, or 1800.\nRemember: read Roman numerals in groups; XC is 90, not 110."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0686",
+   "file": "u3/bank-of-the-united-states-birch-1799.jpg",
+   "caption": "Bank of the United States in Third Street, Philadelphia, drawn and engraved by W. Birch & Son, 1799",
+   "alt": "Engraving of a grand white bank building with tall columns and a pediment reading FOUNDED A.D. MDCCXCV, on a busy Philadelphia street with carts, horses, and passersby",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Bank_of_the_United_States_in_Third_Street,_Philadelphia_(NYPL_b12349150-424011).jpg"
+  }
+ ]
+}

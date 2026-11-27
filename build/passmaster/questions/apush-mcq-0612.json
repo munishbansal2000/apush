@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-0612",
+ "lesson": "apush-u3-l4",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 3,
+ "topics": [
+  "3.8"
+ ],
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "ratification-votes",
+ "stimulus": {
+  "kind": "text",
+  "text": "| State | Date ratified | Votes for | Votes against |\n|---|---|---:|---:|\n| Delaware | December 7, 1787 | 30 | 0 |\n| Pennsylvania | December 12, 1787 | 46 | 23 |\n| New Jersey | December 18, 1787 | 38 | 0 |\n| Georgia | January 2, 1788 | 26 | 0 |\n| Connecticut | January 9, 1788 | 128 | 40 |\n| Massachusetts | February 6, 1788 | 187 | 168 |\n| Maryland | April 28, 1788 | 63 | 11 |\n| South Carolina | May 23, 1788 | 149 | 73 |\n| New Hampshire | June 21, 1788 | 57 | 47 |\n| Virginia | June 25, 1788 | 89 | 79 |\n| New York | July 26, 1788 | 30 | 27 |\n| North Carolina | November 21, 1789 | 194 | 77 |\n| Rhode Island | May 29, 1790 | 34 | 32 |",
+  "source_note": "Table drawn from the ratification votes of the thirteen state conventions, 1787-1790. National Archives, Ratification of the Constitution."
+ },
+ "source": "original; table drawn from the ratification votes of the thirteen state conventions, 1787-1790, National Archives.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.8 The Constitutional Convention and Debates over Ratification, C. Federalists, Anti-Federalists, and the Adoption of the Bill of Rights"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "The Ratification Battle"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "A New Constitution"
+   }
+  ],
+  "primary_sources": [
+   "Ratification votes of the state conventions, 1787-1790"
+  ]
+ },
+ "status": "final",
+ "stem": "According to the table, which state was the ninth to ratify, making the Constitution take effect?",
+ "options": [
+  {
+   "key": "A",
+   "text": "New Hampshire, on June 21, 1788"
+  },
+  {
+   "key": "B",
+   "text": "Virginia, on June 25, 1788",
+   "misconception": "Virginia was the tenth state to ratify, four days after New Hampshire, the ninth."
+  },
+  {
+   "key": "C",
+   "text": "Massachusetts, on February 6, 1788",
+   "misconception": "Massachusetts was the sixth state to ratify, not the ninth."
+  },
+  {
+   "key": "D",
+   "text": "New York, on July 26, 1788",
+   "misconception": "New York was the eleventh state to ratify, a month after the ninth."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "New Hampshire is the ninth row of the table, June 21, 1788. Background: nine states were the number Article VII required for the Constitution to take effect.",
+  "B": "Virginia was tenth, on June 25, 1788, four days after the ninth state.",
+  "C": "Massachusetts was sixth, on February 6, 1788, three states short of nine.",
+  "D": "New York was eleventh, on July 26, 1788, after the Constitution had already taken effect.",
+  "general": "1. Count down the table in order: Delaware, Pennsylvania, New Jersey, Georgia, Connecticut, Massachusetts, Maryland, South Carolina.\n2. The ninth row is New Hampshire, June 21, 1788.\n3. Background: Article VII set nine states as the number needed for the Constitution to take effect.\n4. Virginia and New York came after, so they were tenth and eleventh.\nRemember: count the rows in order, and check the rule that makes one row the turning point."
+ }
+}

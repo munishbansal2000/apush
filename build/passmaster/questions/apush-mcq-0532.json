@@ -1,0 +1,76 @@
+{
+ "id": "apush-mcq-0532",
+ "lesson": "apush-u3-l3",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.6"
+ ],
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "gradual-emancipation-table",
+ "stimulus": {
+  "kind": "table",
+  "text": "| Place | Action | What it did |\n|---|---|---|\n| Vermont | 1777 constitution | Slavery banned outright |\n| Pennsylvania | 1780 law | Children born after March 1, 1780, free at age 28 |\n| Massachusetts | 1783 court decisions | Slavery ended under the 1780 state constitution |\n| Connecticut | 1784 law | Children born after March 1, 1784, free at age 25 |\n| Rhode Island | 1784 law | Children born after March 1, 1784, free at 18 (girls) or 21 (boys) |\n| New York | 1799 law | Children born after July 4, 1799, free at 28 (boys) or 25 (girls) |\n| Northwest Territory | 1787 ordinance | Slavery banned in the territory |",
+  "source_note": "Compiled from state constitutions, statutes, and court decisions, 1777-1799. Public record."
+ },
+ "source": "original; stimulus table compiled from state constitutions, statutes, and court decisions, 1777-1799.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.6 The Influence of Revolutionary Ideals, A. The Call for Egalitarianism"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 10"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7"
+   }
+  ],
+  "primary_sources": [
+   "State emancipation actions, 1777-1799"
+  ]
+ },
+ "status": "final",
+ "stem": "Pennsylvania's rule freeing children at age 28 best shows that gradual emancipation was designed to",
+ "options": [
+  {
+   "key": "A",
+   "text": "Free every enslaved person in the state on the day the law passed",
+   "misconception": "The law freed no living enslaved person at once; it freed only children born after 1780, and only at 28."
+  },
+  {
+   "key": "B",
+   "text": "End slavery at once by paying owners for their enslaved workers",
+   "misconception": "Pennsylvania paid owners nothing; the age-28 wait was the payment, in years of labor, not in money."
+  },
+  {
+   "key": "C",
+   "text": "Protect owners' property by keeping children in service until adulthood"
+  },
+  {
+   "key": "D",
+   "text": "Send freed children to settle in the Northwest Territory",
+   "misconception": "The law says nothing about the Territory; the children stayed in Pennsylvania, working for their mothers' owners."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "C": "A child born in 1780 worked until 1808, so the owner kept nearly a lifetime of labor. Background: the 28-year wait compensated owners for the cost of raising the child.",
+  "A": "No one alive in 1780 was freed by the law; only children born after it, and only at 28, ever went free.",
+  "B": "No payment was made; the compensation was the child's labor until adulthood, not money from the state.",
+  "D": "The Territory appears in a different row; Pennsylvania's law keeps the children where they were born.",
+  "general": "1. Read the rule. Children born after March 1, 1780, go free at 28.\n2. Count the years. A child born in 1780 labors until 1808 \u2014 nearly a working life.\n3. Ask who gains. The owner keeps the labor; freedom waits a generation.\nRemember: a waiting age is a price \u2014 ask who pays it and who collects it."
+ }
+}

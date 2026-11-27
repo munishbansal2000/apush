@@ -1,0 +1,86 @@
+{
+ "id": "apush-mcq-0518",
+ "lesson": "apush-u3-l3",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.5"
+ ],
+ "skills": [
+  "5.B"
+ ],
+ "themes": [
+  "WOR",
+  "GEO"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 4,
+ "stimulus_set": "shepherd-map-35",
+ "stimulus": {
+  "kind": "map",
+  "text": "The map, from Shepherd's Historical Atlas, shows British North America, 1763\u20131775. The Thirteen Colonies are colored pink in a narrow strip along the Atlantic coast, from New Hampshire to Georgia. Canada lies to the north, Florida to the south, and the lands west of the Appalachians are marked as Crown lands reserved for Indians by the Proclamation of 1763. The inset shows the northern colonies in detail, with Saratoga, Ticonderoga, and the Hudson River valley marked.",
+  "source_note": "Shepherd's Historical Atlas, British North America, 1763-1775. Public domain."
+ },
+ "source": "original; stimulus viewed before writing \u2014 Shepherd's Historical Atlas map, c.1911, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.5 The American Revolution, A. The War for Independence"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 10"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Fighting the Revolution"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "The map best supports which conclusion about why Britain could not win the war by occupying territory?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Canada and Florida gave Britain bases on every border",
+   "misconception": "Canada and Florida were British, but bases on the edges did not let Britain control the land between them."
+  },
+  {
+   "key": "B",
+   "text": "The Proclamation Line of 1763 had already given the west to the United States",
+   "misconception": "The Proclamation Line reserved the west for Native peoples under the Crown; it did not give the land to the United States."
+  },
+  {
+   "key": "C",
+   "text": "The colonies were a narrow coastal strip with no interior to defend",
+   "misconception": "The map shows the opposite: a vast interior stretches west beyond the coastal strip, and the British could not hold it all."
+  },
+  {
+   "key": "D",
+   "text": "Britain could hold coastal cities but not the vast interior behind them"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "D": "The map shows a thin settled strip backed by an enormous interior; British armies could take New York or Charleston, but they could not occupy the countryside between them.",
+  "C": "The interior was vast, not absent; the map shows lands stretching west to the Mississippi and beyond.",
+  "A": "Bases on the edges did not mean control of the middle; the British held cities, not the country.",
+  "B": "The Proclamation Line kept the west for Native peoples under British rule; it gave nothing to the United States.",
+  "general": "1. Measure the map. A pink coastal strip, and behind it a continent of Crown lands, Native country, and wilderness.\n2. Ask what an army can hold. It can hold a city like New York or Charleston, but not the whole interior with the men Britain had.\n3. Follow the war. The British took cities and marched through countryside, but the rebellion lived on between them.\nRemember: holding ground and winning a war are different things \u2014 ask how much ground there is to hold."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0518",
+   "file": "u3/barrons-2027-ch05-02.png",
+   "caption": "British North America, 1763\u20131775, Shepherd's Historical Atlas",
+   "alt": "Shepherd's map of British North America showing the Thirteen Colonies in pink along the coast, Canada to the north, and the Proclamation Line of 1763",
+   "license": "Public domain",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/British_colonies_1763-76_shepherd1923.PNG"
+  }
+ ]
+}

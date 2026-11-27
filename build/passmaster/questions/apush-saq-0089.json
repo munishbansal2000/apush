@@ -1,0 +1,95 @@
+{
+ "id": "apush-saq-0089",
+ "lesson": "apush-u3-l4",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.9"
+ ],
+ "skills": [
+  "1.A",
+  "3.A"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": null,
+ "source": "original; secondary passage written for this question, facts from Barron's 2027 Chapter 5, 5 Steps 2024 Chapter 11, and Princeton Review Chapter 7.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.9 The Constitution, A. The Structure of Government Under the Constitution"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "The Constitutional Convention"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "A New Constitution"
+   }
+  ],
+  "primary_sources": [
+   "Constitution of the United States, Articles I, II, III, and V (September 17, 1787)"
+  ]
+ },
+ "status": "final",
+ "saq_slot": 1,
+ "stimulus": {
+  "type": "text",
+  "text": "The Constitution built a national government of three branches. Congress makes the laws, the president carries them out, and the courts interpret them, and each branch can check the others: the president can veto a bill, Congress can override the veto, and the courts interpret the laws, settling disputes over what they mean. Power was also divided between two levels of government. The national government received listed powers, such as taxing, regulating trade between the states, and declaring war, while the states kept the powers not given away, such as running schools. The Constitution could be changed, but only by the hard road in Article V: two-thirds of Congress or a convention of the states to propose, and three-fourths of the states to ratify.",
+  "source": "Original secondary passage written for this question, facts from Barron's 2027 Chapter 5, 5 Steps 2024 Chapter 11, and Princeton Review Chapter 7.",
+  "rights": "Original.",
+  "source_note": "Original secondary passage written for this question, facts from Barron's 2027 Chapter 5, 5 Steps 2024 Chapter 11, and Princeton Review Chapter 7."
+ },
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify ONE feature of the Constitution's structure described in the passage.",
+   "modelAnswer": "One feature is the division of the national government into three branches: Congress, the president, and the courts. Each branch has its own job, and each can check the others, so no one branch holds all power.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names one feature of the Constitution's structure from the passage, such as three branches, checks and balances, federalism, or the Article V amendment process.",
+     "notEarned": "Naming a feature from another period, such as the Articles of Confederation, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain ONE way a feature described in the passage limited the power of the national government.",
+   "modelAnswer": "The veto and the override limit power because a bill needs both Congress and the president to become law, and a two-thirds vote of Congress can still defeat a veto. Neither side can act alone, so each must win the other's agreement or a supermajority.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains one way a feature in the passage limited national power, such as the veto, the override, enumerated powers, or the two-thirds and three-fourths bars in Article V.",
+     "notEarned": "Restating that the branches check each other without explaining how a limit works does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain ONE way the Bill of Rights added a further limit on the national government.",
+   "modelAnswer": "The Bill of Rights added limits on what the government may do to people, not just how its branches share power. The First Amendment bars Congress from establishing a church or abridging speech, so even a law passed by both houses and signed by the president cannot do those things.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains one way the Bill of Rights further limited the national government, such as the First Amendment's ban on an established church or its protections for speech, or the Fourth Amendment's warrant rule.",
+     "notEarned": "Saying only that the Bill of Rights protects rights, with no specific limit, does not earn the point."
+    }
+   ]
+  }
+ ],
+ "totalPoints": 3
+}

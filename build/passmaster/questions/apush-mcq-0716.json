@@ -1,0 +1,90 @@
+{
+ "id": "apush-mcq-0716",
+ "lesson": "apush-u3-l5",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 3,
+ "topics": [
+  "3.11"
+ ],
+ "skills": [
+  "6.B",
+  "3.B"
+ ],
+ "themes": [
+  "NAT",
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 4,
+ "stimulus_set": "capitol-1800-drawing",
+ "stimulus": {
+  "kind": "image",
+  "text": "The Capitol in 1800. The drawing, titled “THE CAPITOL IN 1800,” shows the north wing of the Capitol in Washington, with tall classical columns, arched windows, and a flat roofline, standing nearly alone on open ground, with a few low unfinished buildings in the distance. The federal government moved to the new capital at Washington in 1800.",
+  "source_note": "The Capitol in 1800, from Glenn Brown, History of the United States Capitol, plate 38, Library of Congress. Public domain."
+ },
+ "source": "original; stimulus viewed before writing — The Capitol in 1800, from Glenn Brown, History of the United States Capitol. Public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.11 Developing an American Identity"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "Establishment of New Political Systems (1787-1800)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Unit 3: Conflict and American Independence (1754-1800)"
+   }
+  ],
+  "primary_sources": [
+   "Glenn Brown, History of the United States Capitol, plate 38"
+  ]
+ },
+ "status": "final",
+ "stem": "The nearly empty landscape around the Capitol best suggests which point about the United States in 1800?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The government had decided to abandon Washington as its capital.",
+   "misconception": "The government had just moved to Washington in 1800, not abandoned it."
+  },
+  {
+   "key": "B",
+   "text": "The new capital, like the nation itself, was still unfinished."
+  },
+  {
+   "key": "C",
+   "text": "Most Americans lived in Washington and worked in the Capitol.",
+   "misconception": "Background: Washington in 1800 was a small town, and most Americans lived on farms and in older seaports."
+  },
+  {
+   "key": "D",
+   "text": "Congress had voted to return the capital to Philadelphia.",
+   "misconception": "Background: Congress did not vote to return to Philadelphia; Washington stayed the capital."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "B": "A grand Capitol standing nearly alone on open ground, with unfinished buildings nearby, shows a capital still being built.",
+  "A": "The government had just moved to Washington, which is the opposite of abandoning it.",
+  "C": "The empty landscape shows few people lived there, not most Americans.",
+  "D": "Washington stayed the capital; no vote returned it to Philadelphia.",
+  "general": "1. The drawing shows the Capitol standing nearly alone on open ground.\n2. A few low unfinished buildings appear in the distance.\n3. Background: the government had only just moved to Washington in 1800, and the city was new.\n4. So the empty landscape shows a capital, like the nation, still unfinished and being built.\nRemember: the setting of a building can say as much as the building itself."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0716",
+   "file": "u3/capitol-in-1800-glenn-brown.jpg",
+   "caption": "The Capitol in 1800, from Glenn Brown’s History of the United States Capitol",
+   "alt": "Line drawing of the Capitol’s north wing in 1800, a large classical building with tall columns standing nearly alone on open ground with low unfinished buildings in the distance",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:The_Capitol_in_1800_taken_from_advanced_proof_of_plate_38_History_of_the_United_States_Capitol_by_Glenn_Brown_LCCN2014649261.jpg"
+  }
+ ]
+}

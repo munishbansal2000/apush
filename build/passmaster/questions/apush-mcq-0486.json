@@ -1,0 +1,86 @@
+{
+ "id": "apush-mcq-0486",
+ "lesson": "apush-u3-l3",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.5"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "stimulus_set": "lexington-doolittle",
+ "stimulus": {
+  "kind": "image",
+  "text": "The engraving shows the Battle of Lexington on the morning of April 19, 1775. A long line of British regulars in red coats stands in formation across the town green, muskets level, firing a volley through a cloud of smoke. In the foreground, militiamen scatter and fall, and a few bodies lie on the ground. Behind the soldiers stand the houses of Lexington, including the meetinghouse. The engraving was made after Amos Doolittle's 1775 print of the battle.",
+  "source_note": "After Amos Doolittle, The Battle of Lexington, 1775. U.S. National Archives. Public domain."
+ },
+ "source": "original; stimulus viewed before writing \u2014 Battle of Lexington engraving after Amos Doolittle, 1775, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.5 The American Revolution, A. The War for Independence"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 10"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Fighting the Revolution"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "What does the engraving show about the fighting at Lexington?",
+ "options": [
+  {
+   "key": "A",
+   "text": "British troops surrendering their arms to the militia",
+   "misconception": "No surrender is shown \u2014 the British stand in formation and fire, while the militia falls back."
+  },
+  {
+   "key": "B",
+   "text": "British regulars firing in formation as the militia scattered"
+  },
+  {
+   "key": "C",
+   "text": "Militiamen defeating the British in a pitched battle",
+   "misconception": "The image shows the militia scattering and falling, not defeating the British; the British marched on to Concord."
+  },
+  {
+   "key": "D",
+   "text": "A siege of Lexington that lasted for several days",
+   "misconception": "The fighting at Lexington lasted minutes, not days; the image shows a single brief clash on the green."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "B": "The regulars stand in a firing line and the militiamen scatter and fall, which is what happened on Lexington Green that morning.",
+  "C": "The militia did not win at Lexington; eight colonists were killed and the British continued to Concord.",
+  "D": "Lexington was a clash of minutes, not a siege of days \u2014 the British were on their way to Concord.",
+  "A": "The British are firing, not surrendering; their surrender at Yorktown came six years later.",
+  "general": "1. Look at the soldiers. They stand in a neat line, muskets level, firing together.\n2. Look at the militia. They scatter and fall in the foreground, with bodies on the ground.\n3. Name the moment. A brief, one-sided clash on the green, not a battle won or a siege endured.\nRemember: read an engraving the way you read a paragraph \u2014 the arrangement of the figures is the argument."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0486",
+   "file": "u3/5s24-ch03-mcq-48.jpg",
+   "caption": "The Battle of Lexington, April 19, 1775, after Amos Doolittle",
+   "alt": "Doolittle engraving of British regulars firing a volley on Lexington Green while militiamen scatter and fall, with Lexington houses behind them",
+   "license": "Public domain",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/16/Battle_of_Lexington_-_NARA_-_530967.jpg"
+  }
+ ]
+}

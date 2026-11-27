@@ -1,0 +1,86 @@
+{
+ "id": "apush-mcq-0430",
+ "lesson": "apush-u3-l2",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 3,
+ "topics": [
+  "3.3"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "boston-troops-1768",
+ "stimulus": {
+  "kind": "image",
+  "text": "The engraving, 'The town of Boston in New England and British ships of war landing their troops! 1768,' shows Boston harbor crowded with British warships. Small boats ferry red-coated soldiers ashore, and columns of troops march in formation along the wharf while the town's church steeples rise behind them.",
+  "source_note": "Engraved by Paul Revere, published 1770 (the landing shown is 1768). Library of Congress. Public domain (pre-1930)."
+ },
+ "source": "original; stimulus viewed before writing \u2014 by Paul Revere, published 1770, Library of Congress, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "A. Colonial Resistance to British Policies in the Aftermath of the French and Indian War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 9",
+    "section": "Stamp Act Crisis"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Sugar Act, the Currency Act, and the Stamp Act"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "The landing of troops in Boston in 1768 is best understood in the context of which broader development?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Britain's turn from salutary neglect to tighter imperial control after 1763"
+  },
+  {
+   "key": "B",
+   "text": "The colonies' decision to declare independence from Britain",
+   "misconception": "Independence was still eight years away in 1768 \u2014 the troops were part of the tightening that led toward it, not a response to a declaration."
+  },
+  {
+   "key": "C",
+   "text": "France's attempt to retake Canada after the Seven Years' War",
+   "misconception": "France never tried to retake Canada \u2014 the troops were landed to control Bostonians, not to fight France."
+  },
+  {
+   "key": "D",
+   "text": "The colonies\u2019 adoption of the Articles of Confederation",
+   "misconception": "The Articles came in 1777, after independence \u2014 they cannot explain a troop landing in 1768."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Background: after 1763 London ended the long era of salutary neglect \u2014 new taxes, stricter customs enforcement, admiralty courts, and now soldiers in Boston. The troops were the armed edge of a tighter empire.",
+  "B": "Independence was eight years in the future. The troops were a cause of the break, not a response to it.",
+  "C": "France made no move on Canada after 1763. The soldiers faced inward, toward Bostonians.",
+  "D": "The Articles belong to 1777. They cannot explain anything about 1768.",
+  "general": "1. Place 1768 on the timeline. Five years after the war, London was tightening its grip: taxes, customs boards, admiralty courts.\n2. Ask what the troops add. Enforcement with bayonets \u2014 the moment tighter control stopped being paper and became soldiers on the wharf.\n3. Name the pattern. Salutary neglect was over; every new measure after 1763 moved the same way, toward direct British rule.\nRemember: one event is a fact \u2014 a row of events moving the same way is a trend, and trends are what exam questions test."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0430",
+   "file": "u3/boston-troops-landing-1768.jpg",
+   "caption": "The town of Boston in New England and British ships of war landing their troops! 1768 \u2014 engraved by Paul Revere, published 1770",
+   "alt": "Boston harbor in 1768 crowded with British warships, small boats ferrying red-coated soldiers ashore as columns of troops march along the wharf",
+   "license": "Public domain",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/63/The_town_of_Boston_in_New_England_and_British_ships_of_war_landing_their_troops%21_1768_LCCN2004669969.jpg"
+  }
+ ]
+}

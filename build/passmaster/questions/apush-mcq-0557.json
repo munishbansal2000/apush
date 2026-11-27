@@ -1,0 +1,89 @@
+{
+ "id": "apush-mcq-0557",
+ "lesson": "apush-u3-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.7"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "shays-kendrick",
+ "stimulus": {
+  "kind": "image",
+  "text": "The engraving shows armed farmers fleeing through a village street in Springfield, Massachusetts, as uniformed troops with a cannon advance behind them. The farmers, many carrying muskets, run past bare winter trees and a white house. The artist's signature, \u201cC. Kendrick,\u201d appears at the lower right.\n\u2014 C. Kendrick, Shays's forces fleeing troops at Springfield, c. 1902 (from a 1902 publication)",
+  "source_note": "C. Kendrick, Shays's forces fleeing troops at Springfield, c. 1902. Public domain (pre-1930 publication)."
+ },
+ "source": "original; stimulus viewed before writing \u2014 C. Kendrick, Shays's forces fleeing troops at Springfield, c. 1902, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.7 The Articles of Confederation, B. The Articles of Confederation and the Critical Period"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "The Constitutional Convention"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Shays's Rebellion"
+   }
+  ],
+  "primary_sources": [
+   "C. Kendrick, Shays's forces fleeing troops at Springfield (c. 1902)"
+  ]
+ },
+ "status": "final",
+ "stem": "The engraving best illustrates which feature of Shays's Rebellion?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The rebels won control of the Springfield armory",
+   "misconception": "The rebels failed to take the armory; the troops in the engraving are driving them off."
+  },
+  {
+   "key": "B",
+   "text": "The rebellion was put down by force raised outside the national government"
+  },
+  {
+   "key": "C",
+   "text": "The rebels were mostly merchants from Boston",
+   "misconception": "Background: the rebels were farmers from western Massachusetts, not Boston merchants."
+  },
+  {
+   "key": "D",
+   "text": "The rebellion ended when Congress sent the Continental Army into Massachusetts",
+   "misconception": "Background: Congress had no army to send; the force came from Massachusetts itself."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "B": "Background from the books: the rebellion was put down by a Massachusetts militia of nearly 4,000 men, raised by the governor and paid for by Boston merchants, because Congress had no troops to send.",
+  "A": "The engraving shows the rebels fleeing, not holding the armory they tried to seize.",
+  "C": "Background: the rebels were western Massachusetts farmers facing taxes and foreclosures, not Boston merchants.",
+  "D": "Background: Congress under the Articles could not raise an army, so no federal force was sent.",
+  "general": "1. Read the image. Armed farmers flee while uniformed troops with a cannon advance.\n2. Background: the troops were a Massachusetts militia, raised by the governor.\n3. Background: Congress had no army of its own to send to Springfield.\n4. The force that ended the rebellion came from the state, not from the nation.\nRemember: the picture shows a state solving by force what the nation could not touch."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0557",
+   "file": "u3/barrons-2027-ch05-07.jpg",
+   "caption": "Shays's forces fleeing troops at Springfield, C. Kendrick, c. 1902",
+   "alt": "Engraving of armed farmers fleeing through a Springfield street as uniformed troops with a cannon advance behind them",
+   "license": "Public domain",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Shays_forces_flee_Continental_troops%2C_Springfield.jpg"
+  }
+ ]
+}

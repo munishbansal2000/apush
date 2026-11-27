@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-0570",
+ "lesson": "apush-u3-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.7"
+ ],
+ "skills": [
+  "5.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 4,
+ "stimulus_set": "powers-table",
+ "stimulus": {
+  "kind": "table",
+  "text": "| Power | Under the Articles of Confederation | Under the Constitution |\n|---|---|---|\n| Levy taxes on citizens | No \u2014 Congress could only ask the states for money | Yes |\n| Regulate trade between the states | No | Yes |\n| Raise an army | No \u2014 Congress could only ask the states for troops | Yes |\n| Make treaties with other nations | Yes | Yes |\n| Coin money | Yes | Yes |\n| Change the frame of government | Only with the agreement of all thirteen states | With the agreement of three-fourths of the states |",
+  "source_note": "Table compiled from the Articles of Confederation (1777-1781) and the Constitution of the United States (1787). Public domain documents."
+ },
+ "source": "original; table compiled from the Articles of Confederation (1777-1781) and the Constitution of the United States (1787), public domain documents.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.7 The Articles of Confederation, B. The Articles of Confederation and the Critical Period"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Articles of Confederation"
+   }
+  ],
+  "primary_sources": [
+   "Articles of Confederation (1777-1781)",
+   "Constitution of the United States (1787)"
+  ]
+ },
+ "status": "final",
+ "stem": "Robert Morris's 5 percent impost was approved by twelve states, yet it failed in the 1780s. Which row of the table best explains why it failed?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Levy taxes on citizens",
+   "misconception": "The impost was a tax, but the tax row does not explain why it failed; the failure was in how the Articles were changed."
+  },
+  {
+   "key": "B",
+   "text": "Regulate trade between the states",
+   "misconception": "Background: the impost was an import tax, not a rule about trade between the states."
+  },
+  {
+   "key": "C",
+   "text": "Raise an army",
+   "misconception": "The army row has nothing to do with Morris's tax plan."
+  },
+  {
+   "key": "D",
+   "text": "Change the frame of government"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "D": "Background from the books: the impost needed an amendment to the Articles, amendments needed all thirteen states, and Rhode Island killed the 1781 impost while New York killed the 1783 revision, so one state's refusal killed the plan.",
+  "A": "The tax row shows Congress wanted the power, but it does not show why the plan failed.",
+  "B": "Background: the impost taxed imports from abroad, not trade between the states.",
+  "C": "The army row has nothing to do with a tax on imports.",
+  "general": "1. Name the plan. Morris proposed a 5 percent tax on imports to pay the debts.\n2. Background: adding that tax meant amending the Articles, which needed all thirteen states.\n3. Background: Rhode Island killed the 1781 impost and New York killed the 1783 revision, so the plan died on the amendment row.\n4. The tax row shows what Congress wanted; the amendment row shows why it could not have it.\nRemember: under the Articles, one state could veto the whole Union."
+ }
+}

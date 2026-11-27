@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-0730",
+ "lesson": "apush-u3-l5",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.12"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "MIG",
+  "GEO"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 2,
+ "status": "final",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.12 Movement in the Early Republic"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "Establishment of New Political Systems (1787-1800)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Unit 3: Conflict and American Independence (1754-1800)"
+   }
+  ],
+  "primary_sources": [
+   "United States Census, 1790"
+  ]
+ },
+ "stimulus_set": "census-1790-cities",
+ "stimulus": {
+  "kind": "table",
+  "text": "| Largest cities, 1790 census | Population |\n|---|---:|\n| New York | 33,131 |\n| Philadelphia | 28,522 |\n| Boston | 18,320 |\n| Charleston | 16,359 |\n| Baltimore | 13,503 |\n\nThe 1790 census counted 3,929,214 people in the United States, including 697,681 enslaved people. The 1800 census counted 5,308,483 people, including 893,602 enslaved people.",
+  "source_note": "United States Census, 1790 and 1800 (United States Census Bureau, Decennial Census Historical Facts)."
+ },
+ "source": "original; table drawn from the United States Census, 1790 and 1800.",
+ "stem": "According to the table, which was the largest city in the United States in 1790?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Boston",
+   "misconception": "Boston was third, with 18,320 people."
+  },
+  {
+   "key": "B",
+   "text": "Charleston",
+   "misconception": "Charleston was fourth, with 16,359 people."
+  },
+  {
+   "key": "C",
+   "text": "Philadelphia",
+   "misconception": "Philadelphia was second, with 28,522 people."
+  },
+  {
+   "key": "D",
+   "text": "New York"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "A": "Boston counts 18,320, below New York's 33,131.",
+  "B": "Charleston counts 16,359, below New York's 33,131.",
+  "C": "Philadelphia counts 28,522, below New York's 33,131.",
+  "D": "The table lists New York first, with 33,131 people, ahead of Philadelphia's 28,522.",
+  "general": "1. The table ranks the five largest cities by population.\n2. Read the population column from the top down.\n3. New York's count is 33,131.\n4. The next city, Philadelphia, counts 28,522, about five thousand fewer.\n5. So New York was the largest city in 1790.\nRemember: \"largest\" means the biggest number in the column — read the numbers, not the names."
+ }
+}

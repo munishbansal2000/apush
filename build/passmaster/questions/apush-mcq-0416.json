@@ -1,0 +1,76 @@
+{
+ "id": "apush-mcq-0416",
+ "lesson": "apush-u3-l2",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.3"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "stimulus_set": "sugar-act-table",
+ "stimulus": {
+  "kind": "table",
+  "text": "| Measure | Duty on foreign molasses | How it was enforced |\n| Molasses Act, 1733 | 6 pence per gallon | Rarely collected; smuggling was widespread |\n| Sugar Act, 1764 | 3 pence per gallon | Strictly enforced; violators tried in admiralty courts without juries |",
+  "source_note": "Figures from Barron's Premium 2027, Chapter 5, and Princeton Review, Chapter 7. The duty was halved, but collection was enforced for the first time."
+ },
+ "source": "original; stimulus viewed before writing \u2014 figures from Barron's Premium 2027, Chapter 5, and Princeton Review, Chapter 7.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "B. Debt and Taxation Following the French and Indian War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 9",
+    "section": "The British Need Money"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Sugar Act, the Currency Act, and the Stamp Act"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "Before 1764, the Molasses Act raised little revenue for Britain because...",
+ "options": [
+  {
+   "key": "A",
+   "text": "Parliament had repealed the act soon after passing it",
+   "misconception": "The Molasses Act stayed on the books from 1733 \u2014 it raised little because it was not enforced, not because it was repealed."
+  },
+  {
+   "key": "B",
+   "text": "The duty was set too low for anyone to bother collecting it",
+   "misconception": "At 6 pence per gallon the duty was higher than the Sugar Act's 3 pence \u2014 the problem was collection, not the rate."
+  },
+  {
+   "key": "C",
+   "text": "Smuggling was widespread and the duty was rarely collected"
+  },
+  {
+   "key": "D",
+   "text": "The colonies produced all the molasses they needed themselves",
+   "misconception": "The colonies imported molasses from the French West Indies for rum \u2014 they did not produce it themselves, which is why the trade mattered."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "C": "The table says it plainly: under the Molasses Act the duty was 'rarely collected' while 'smuggling was widespread.' A tax nobody collects raises nothing.",
+  "A": "The act was never repealed. It sat on the books for thirty years, largely ignored.",
+  "B": "Six pence was the higher rate. The duty failed because it went uncollected, not because it was too small.",
+  "D": "Molasses came from the French West Indies. The colonies bought it to make rum; they did not grow it.",
+  "general": "1. Read the 1733 row. The duty was 6 pence per gallon \u2014 higher than the Sugar Act's rate.\n2. Read the enforcement column. It was 'rarely collected' because smuggling was widespread.\n3. Draw the line. A law on the books is not a law in practice: Britain's problem was not the rate, it was that nobody paid.\nRemember: to judge a tax, ask what was actually collected \u2014 the statute book and the treasury book are two different things."
+ }
+}

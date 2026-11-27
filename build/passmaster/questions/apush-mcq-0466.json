@@ -1,0 +1,89 @@
+{
+ "id": "apush-mcq-0466",
+ "lesson": "apush-u3-l2",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.4"
+ ],
+ "skills": [
+  "2.B",
+  "2.C"
+ ],
+ "themes": [
+  "ARC",
+  "PCE"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 3,
+ "stimulus_set": "trumbull-declaration",
+ "stimulus": {
+  "kind": "image",
+  "text": "The painting shows a grand room in Philadelphia, crowded with delegates of the Second Continental Congress. At the center, five men stand before a table covered with papers. The tallest, in a red waistcoat, hands a document to the man seated at the right in a high-backed chair. Rows of seated and standing delegates watch from both sides.",
+  "source_note": "John Trumbull, Declaration of Independence (1818). Public domain; image from the shared image pool."
+ },
+ "source": "original; stimulus viewed before writing \u2014 John Trumbull, Declaration of Independence (1818), public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "B. Common Sense, the Declaration of Independence, and Republican Self-Government"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 10"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Declaration of Independence"
+   }
+  ],
+  "primary_sources": [
+   "John Trumbull, Declaration of Independence (1818)"
+  ]
+ },
+ "status": "final",
+ "stem": "A student wants to use this painting as evidence of what the presentation of the Declaration looked like on June 28, 1776. What is the strongest limitation of the painting as evidence?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The painting is too small to show the faces of the delegates",
+   "misconception": "Size is not the problem \u2014 the painting is large and the faces are clear. The problem is when and how it was made."
+  },
+  {
+   "key": "B",
+   "text": "It was painted in 1818, over forty years later, as a staged commemoration"
+  },
+  {
+   "key": "C",
+   "text": "The painting shows too few delegates to be a useful source",
+   "misconception": "The room is crowded with delegates. The count is not the limitation \u2014 the date and the staging are."
+  },
+  {
+   "key": "D",
+   "text": "The painting was made by a British artist who opposed independence",
+   "misconception": "Background: Trumbull was an American who served in the Continental Army \u2014 he was not a British opponent of independence."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "B": "Trumbull painted the scene in 1818, forty-two years after the event, arranging the figures for a formal commemoration rather than recording what he saw. Memory, not witness, is what the canvas holds.",
+  "A": "The painting is large and detailed. Its weakness is not its size but its distance from the event.",
+  "C": "Dozens of delegates fill the room. The limitation is the painting's late date and staged arrangement, not its numbers.",
+  "D": "Trumbull was an American patriot and a veteran of the Continental Army, not a British opponent of independence.",
+  "general": "1. Ask when the painting was made. Trumbull painted it in 1818, forty-two years after June 1776.\n2. Ask what that means. The group scene was never posed \u2014 Trumbull painted the delegates from life, one by one, and arranged them here.\n3. Name the limit. A commemoration made decades later shows how Americans remembered the moment, not how it looked.\nRemember: a source's date is part of its meaning \u2014 a painting made long after an event remembers it, it does not record it."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0466",
+   "file": "u3/pr25e-test2-q14.jpg",
+   "caption": "Declaration of Independence (1818), by John Trumbull \u2014 the Committee of Five presenting the draft to Congress",
+   "alt": "A large formal painting of a crowded Philadelphia room where five standing men present a document to a seated man at a table while rows of delegates watch",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Declaration_of_Independence_(1819),_by_John_Trumbull.jpg"
+  }
+ ]
+}

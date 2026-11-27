@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-0682",
+ "lesson": "apush-u3-l5",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.10"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "stimulus_set": "election-1800",
+ "stimulus": {
+  "kind": "table",
+  "text": "Electoral votes for president, election of 1800 (138 electors; 70 votes needed to win). Each elector cast two votes, one for each of two men, without naming which man was his choice for president and which for vice president.\n\n| Candidate | Party | Electoral votes |\n| Thomas Jefferson | Democratic-Republican | 73 |\n| Aaron Burr | Democratic-Republican | 73 |\n| John Adams | Federalist | 65 |\n| Charles Cotesworth Pinckney | Federalist | 64 |\n| John Jay | Federalist | 1 |\n\nThe tie sent the election to the House of Representatives, which chose Jefferson on the 36th ballot in February 1801.",
+  "source_note": "Electoral vote totals from the National Archives, 1800 Electoral College Results. Public record."
+ },
+ "source": "original; stimulus table drawn from the National Archives, 1800 Electoral College Results.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.10 Shaping the New Republic"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "Establishment of New Political Systems (1787-1800)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Unit 3: Conflict and American Independence (1754-1800)"
+   }
+  ],
+  "primary_sources": [
+   "National Archives, 1800 Electoral College Results"
+  ]
+ },
+ "status": "final",
+ "stem": "Who did the House of Representatives choose as president in February 1801?",
+ "options": [
+  {
+   "key": "A",
+   "text": "John Adams, the sitting president.",
+   "misconception": "Adams won 65 electoral votes and lost the election; the House did not choose him."
+  },
+  {
+   "key": "B",
+   "text": "Aaron Burr, Jefferson\u2019s running mate.",
+   "misconception": "Burr tied Jefferson at 73 votes, but the House chose Jefferson, not Burr."
+  },
+  {
+   "key": "C",
+   "text": "Charles Cotesworth Pinckney, the Federalist candidate.",
+   "misconception": "Pinckney won 64 electoral votes, and the House did not choose him."
+  },
+  {
+   "key": "D",
+   "text": "Thomas Jefferson, on the 36th ballot."
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "D": "The stimulus says the House chose Jefferson on the 36th ballot in February 1801.",
+  "A": "Adams won 65 electoral votes and lost the election; the House did not choose him.",
+  "B": "Burr tied Jefferson at 73 votes, but the House chose Jefferson, not Burr.",
+  "C": "Pinckney won 64 electoral votes, and the House did not choose him.",
+  "general": "1. The table shows Jefferson and Burr tied at 73 votes each at the top.\n2. The stimulus says the tie sent the election to the House of Representatives.\n3. The House voted again and again until Jefferson won on the 36th ballot in February 1801.\n4. So the House chose Jefferson, not Burr, Adams, or Pinckney.\nRemember: after a tie, the winner is the one the deciding body finally picks, not the one who led the first count."
+ }
+}

@@ -1,0 +1,92 @@
+{
+ "id": "apush-leq-0025",
+ "type": "leq",
+ "unit": 3,
+ "lesson": "apush-u3-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "topics": [
+  "3.4"
+ ],
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "PCE",
+  "WOR"
+ ],
+ "reasoning": "continuity-change",
+ "stimulus_set": null,
+ "source": "original; prompt written for this topic",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "A. Protestant Evangelicalism and Enlightenment Philosophy"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "B. Common Sense, the Declaration of Independence, and Republican Self-Government"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 10"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Declaration of Independence"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "none",
+  "source_note": "No stimulus; LEQ prompt only."
+ },
+ "prompt": "Evaluate the extent to which Enlightenment ideas changed American political thought in the period 1750\u20131800.",
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent to which Enlightenment ideas changed American political thought, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim about the extent of change does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as colonial self-government under salutary neglect, the Great Awakening's language of liberty, or the imperial crisis after 1763.",
+   "notEarned": "A sentence of background with no link to the argument, or background from a later century, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (first point): earns the point for describing specific and relevant examples of Enlightenment ideas changing political thought, such as Locke's natural rights in the Declaration, Montesquieu's separation of powers in the Constitution, or Paine's republicanism in Common Sense.",
+   "notEarned": "General statements about Enlightenment ideas with no specific example do not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (second point): earns the point for describing specific and relevant examples of continuity or limits, such as the persistence of slavery, the exclusion of women from politics, deference to elites in the early republic, or the Articles' weak government.",
+   "notEarned": "Repeating the same change example, or naming a limit with no specific detail, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Analysis and reasoning (continuity and change): earns the point for explaining how the evidence shows both change and continuity in political thought, linking examples to the thesis rather than listing them.",
+   "notEarned": "Listing examples with no explanation of what changed and what stayed the same does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Analysis and reasoning (complexity): earns the point for a complex argument, such as qualifying the thesis by group or region, explaining why the ideas changed thought for some Americans and not others, or weighing Enlightenment ideas against experience and interest as causes of change.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ],
+ "modelOutline": "Thesis: Enlightenment ideas changed American political thought profoundly between 1750 and 1800 \u2014 they replaced monarchy with republicanism as the ideal and consent as the test of legitimacy \u2014 but the change was uneven: the new language of rights was proclaimed universally and applied narrowly.\nContext: In 1750 the colonies lived under a king and Parliament they mostly accepted, governing themselves day to day under salutary neglect, while the Great Awakening taught ordinary people to judge authority for themselves. After 1763 London's new taxes and controls forced colonists to justify resistance, and Enlightenment theory gave them the words.\nEvidence of change: Locke's natural rights and consent appear in the Declaration's preamble, with property recast as the pursuit of happiness; Montesquieu's separation of powers appears in the state constitutions and then the federal Constitution of 1787; Paine's Common Sense carried republicanism to ordinary readers in plain language, selling more than 100,000 copies in three months.\nEvidence of continuity and limits: Slavery continued and grew, and Jefferson's draft blaming Britain for it was cut; women gained the role of republican motherhood but not the vote; Native peoples faced a new nation hungry for their land; and the early republic kept deference to elites, with the Articles of Confederation giving the national government almost no power.\nComplexity: The ideas changed the language and the institutions of politics \u2014 republics, written constitutions, bills of rights \u2014 but experience and interest set their pace: the same generation that proclaimed universal rights kept slavery, and the Constitution that divided power also protected it; change was real, and it was incomplete.",
+ "totalPoints": 6
+}

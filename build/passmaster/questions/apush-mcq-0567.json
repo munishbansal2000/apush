@@ -1,0 +1,88 @@
+{
+ "id": "apush-mcq-0567",
+ "lesson": "apush-u3-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.7"
+ ],
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "MIG",
+  "SOC"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 3,
+ "stimulus_set": "old-northwest-map",
+ "stimulus": {
+  "kind": "map",
+  "text": "The map, published by the Northern Trust Company of Chicago in 1936 and titled \u201cThe Old Northwest Territory preceding and following the Ordinance of 1787,\u201d shows the land north of the Ohio River and east of the Mississippi. The territory is divided into five colored sections labeled Wisconsin, Michigan, Illinois, Indiana, and Ohio. Across the map are the names of Native peoples, including the Chippewas, Menominees, Sauks and Foxes, Winnebagos, Kickapoos, Potavatomis, Ottawas, Miamis, Delawares, and Shawnees. Small portraits of leaders such as George Rogers Clark and William Henry Harrison frame the map, and a note tells how the Ohio Company organized at Boston in March 1786.",
+  "source_note": "The Old Northwest Territory preceding and following the Ordinance of 1787, Northern Trust Company, Chicago, 1936. Public domain (published without copyright notice)."
+ },
+ "source": "original; stimulus viewed before writing \u2014 The Old Northwest Territory preceding and following the Ordinance of 1787, Northern Trust Company, Chicago, 1936, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.7 The Articles of Confederation, C. Organizing the Northwest Territory"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Northwest Ordinance of 1787"
+   }
+  ],
+  "primary_sources": [
+   "The Old Northwest Territory preceding and following the Ordinance of 1787 (Northern Trust Company, 1936)"
+  ]
+ },
+ "status": "final",
+ "stem": "The names of Native peoples printed across the map show that",
+ "options": [
+  {
+   "key": "A",
+   "text": "the territory was already home to many Native peoples"
+  },
+  {
+   "key": "B",
+   "text": "the ordinance gave Native peoples seats in the Congress of the United States",
+   "misconception": "Background: the ordinance gave no seats in Congress to Native peoples."
+  },
+  {
+   "key": "C",
+   "text": "Native peoples wrote the Northwest Ordinance",
+   "misconception": "Background: Congress wrote the ordinance; Native peoples were not its authors."
+  },
+  {
+   "key": "D",
+   "text": "the territory was empty land waiting for settlers",
+   "misconception": "The names printed across the whole map show the land was inhabited."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "The map names the Chippewas, Menominees, Sauks and Foxes, Winnebagos, Kickapoos, Potavatomis, Ottawas, Miamis, Delawares, and Shawnees across the territory, so the land was already home to many Native peoples.",
+  "B": "Background: the ordinance set up territorial government and statehood for settlers, not seats for Native peoples.",
+  "C": "Background: the Confederation Congress wrote the ordinance; Native peoples did not.",
+  "D": "A map covered with the names of Native peoples cannot show empty land.",
+  "general": "1. Count what the map names. Chippewas, Menominees, Sauks and Foxes, Winnebagos, Kickapoos, and more.\n2. Those names cover the whole territory, from the lakes to the Ohio River.\n3. Background: the ordinance claimed land that Native peoples already lived on.\n4. Background: the map's own note about the Ohio Company shows settlers moving in on that same land.\nRemember: a map full of peoples' names is not a map of empty land."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0567",
+   "file": "u3/barrons-2027-pt1-04.jpg",
+   "caption": "The Old Northwest Territory, 1936 commemorative map",
+   "alt": "1936 map of the Old Northwest Territory divided into Wisconsin, Michigan, Illinois, Indiana, and Ohio, with Native peoples named across it",
+   "license": "Public domain (published 1936 without copyright notice)",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/72/The_Old_Northwest_Territory_preceding_and_following_the_Ordinance_of_1787.jpg"
+  }
+ ]
+}

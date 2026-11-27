@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-0378",
+ "lesson": "apush-u3-l1",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.2"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "GEO",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "stimulus_set": "shepherd-map",
+ "stimulus": {
+  "kind": "map",
+  "text": "The map, \"The British Colonies in North America, 1763\u20131775,\" comes from Shepherd's Historical Atlas (1911). It shows the Thirteen Colonies in dark pink along the Atlantic coast, with the Province of Quebec to the north and East and West Florida to the south.\n\nA red line marked \"Proclamation Line of 1763\" runs along the Appalachian Mountains, and the lands beyond it are labeled \"Crown lands reserved for Indians by proclamation of 1763.\" West of the Mississippi River, the land is labeled \"Louisiana\" and colored orange for Spanish possessions. Off Newfoundland, two tiny islands are colored green and labeled \"French\" \u2014 Miquelon and St. Pierre.",
+  "source_note": "Shepherd's Historical Atlas (1911), \"The British Colonies in North America, 1763\u20131775,\" public domain."
+ },
+ "source": "original; stimulus viewed before writing \u2014 Shepherd's Historical Atlas (1911), \"The British Colonies in North America, 1763\u20131775,\" public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "The Proclamation Act (1763)"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 9",
+    "section": "Defeat of New France"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Seven Years' War (1754\u20131763)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "What does the red line marked \"Proclamation Line of 1763\" on the map represent?",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The Spanish boundary was the Mississippi River, not a line along the Appalachians.",
+   "text": "The boundary between British and Spanish territory after the Treaty of Paris."
+  },
+  {
+   "key": "B",
+   "misconception": "No army marched along the Appalachians to Quebec; the line is a settlement boundary, not a road.",
+   "text": "The route of the British army's march from Boston to Quebec in the campaign of 1759."
+  },
+  {
+   "key": "C",
+   "text": "The line beyond which British colonists were forbidden to settle, reserving the western lands for Native peoples."
+  },
+  {
+   "key": "D",
+   "misconception": "Quebec's border ran far north of this line; the red line separates the coastal colonies from the western reserve.",
+   "text": "The border between the Thirteen Colonies and the Province of Quebec."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "The legend calls the lands beyond the line \"Crown lands reserved for Indians\" \u2014 a settlement boundary, not an imperial border.",
+  "B": "The line follows the Appalachian ridge from north to south; it marks where settlement had to stop, not where an army marched.",
+  "C": "The Proclamation of 1763 drew this line along the Appalachians and forbade colonists to settle west of it, reserving those lands for Native peoples. The map shows the line and labels the reserved lands in the legend, so the answer is written on the map itself. The line is not a border between empires but a boundary London drew inside its own territory, and the legend's wording makes that plain.",
+  "D": "The Province of Quebec lies north of the St. Lawrence, well beyond this line; the line runs through the Appalachians behind the coastal colonies.",
+  "general": "1. Read the legend. It calls the lands beyond the red line \"Crown lands reserved for Indians by proclamation of 1763.\"\n2. Follow the line. It runs along the Appalachian Mountains, behind the Thirteen Colonies, from north to south.\n3. Ask what a line like that does. It tells settlers where they may not go \u2014 a fence on the map, drawn by London.\nRemember: the Proclamation Line was Britain's answer to a frontier it could not afford to defend."
+ },
+ "figures": [
+  {
+   "file": "u3/barrons-2027-ch05-02.png",
+   "caption": "Shepherd's Historical Atlas, \"The British Colonies in North America, 1763\u20131775\"",
+   "alt": "Map of British North America in 1763-1775 showing the Thirteen Colonies, the Proclamation Line of 1763, and French, Spanish, and British possessions",
+   "license": "Public domain",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/British_colonies_1763-76_shepherd1923.PNG",
+   "id": "fig-apush-mcq-0378"
+  }
+ ]
+}

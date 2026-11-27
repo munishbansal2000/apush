@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-0724",
+ "lesson": "apush-u3-l5",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.12"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "WXT",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "difficulty": 4,
+ "status": "final",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.7 The Articles of Confederation"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "Establishment of New Political Systems (1787-1800)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Unit 3: Conflict and American Independence (1754-1800)"
+   }
+  ],
+  "primary_sources": [
+   "Land Ordinance of 1785"
+  ]
+ },
+ "stimulus_set": "land-ordinance-1785",
+ "stimulus": {
+  "kind": "text",
+  "text": "Land Ordinance of 1785 (May 20, 1785). Paraphrase: After the states ceded their western land claims to the national government, Congress ordered the land north of the Ohio River surveyed before it was sold or settled. Surveyors divided the land into townships six miles square. Each township held thirty-six sections of 640 acres. The ordinance reserved lot number 16 of every township “for the maintenance of public schools, within the said township.” It also reserved lots 8, 11, 26, and 29 for the United States. Land was sold at public auction at a minimum price of $1 an acre, and no buyer could buy less than one whole section (640 acres).",
+  "source_note": "Land Ordinance of May 20, 1785; the section 16 clause is quoted verbatim (public domain). Details from Barron’s Premium 2027, Chapter 5, Topic 3.7, and the Indiana Historical Bureau."
+ },
+ "source": "original; stimulus paraphrased from the Land Ordinance of May 20, 1785 (public domain).",
+ "stem": "Why did the ordinance's rule that no buyer could buy less than a whole section put western land out of reach for most poor farmers?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Because the land was reserved for soldiers and could not be bought at all.",
+   "misconception": "Background: soldiers did receive land warrants, but the ordinance sold surveyed land at auction to buyers."
+  },
+  {
+   "key": "B",
+   "text": "Because the survey had not yet mapped the townships, so no sale could take place.",
+   "misconception": "The survey came first by design; sales followed once townships were mapped."
+  },
+  {
+   "key": "C",
+   "text": "Because one section cost at least $640, far more cash than most farming families held."
+  },
+  {
+   "key": "D",
+   "text": "Because the price of $1 an acre rose every year until the land was sold.",
+   "misconception": "$1 an acre was the minimum price, not a price that rose yearly."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "The ordinance sold land at auction; soldiers' warrants were a separate matter.",
+  "B": "Surveying came before selling on purpose, so mapped townships were the ones sold.",
+  "C": "A whole section was 640 acres at $1 an acre, so the smallest legal purchase cost $640, which most poor farmers could not pay.",
+  "D": "The $1-an-acre figure was a minimum, fixed by the ordinance, not a rising price.",
+  "general": "1. The smallest purchase was one whole section, 640 acres.\n2. At the $1-an-acre minimum, that sale cost $640.\n3. Background: few farming families in the 1780s held $640 in cash.\n4. So the rule favored buyers with money, such as land speculators, over poor settlers.\nRemember: multiply the smallest unit by the price to find who can actually buy."
+ }
+}

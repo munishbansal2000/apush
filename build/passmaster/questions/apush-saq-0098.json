@@ -1,0 +1,95 @@
+{
+ "id": "apush-saq-0098",
+ "lesson": "apush-u3-l5",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.12"
+ ],
+ "skills": [
+  "2.B",
+  "3.B"
+ ],
+ "themes": [
+  "NAT",
+  "SOC"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 3,
+ "status": "final",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.7 The Articles of Confederation"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.12 Movement in the Early Republic"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "Establishment of New Political Systems (1787-1800)"
+   }
+  ],
+  "primary_sources": [
+   "Northwest Ordinance, July 13, 1787"
+  ]
+ },
+ "source": "original; stimulus is the Northwest Ordinance, July 13, 1787, Article VI, quoted verbatim (public domain).",
+ "stimulus_set": null,
+ "stimulus": {
+  "type": "text",
+  "text": "Northwest Ordinance, July 13, 1787, Article VI:\n\n“There shall be neither slavery nor involuntary servitude in the said territory, otherwise than in the punishment of crimes whereof the party shall have been duly convicted: Provided, always, That any person escaping into the same, from whom labor or service is lawfully claimed in any one of the original states, such fugitive may be lawfully reclaimed and conveyed to the person claiming his or her labor or service as aforesaid.”",
+  "source": "Northwest Ordinance, July 13, 1787, Article VI. Public domain.",
+  "rights": "Public domain.",
+  "source_note": "Northwest Ordinance, July 13, 1787, Article VI, quoted verbatim. Public domain."
+ },
+ "saq_slot": 2,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify ONE thing Article VI banned in the Northwest Territory.",
+   "modelAnswer": "Article VI banned slavery and involuntary servitude in the Northwest Territory. The only exception it named was punishment for a crime after a person had been duly convicted.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names one thing Article VI banned, such as slavery or involuntary servitude in the territory.",
+     "notEarned": "Naming only that the Ordinance dealt with slavery, with nothing banned, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain ONE way the proviso in Article VI limited the ban on slavery.",
+   "modelAnswer": "The proviso let an owner reclaim a person who escaped from a state where labor was lawfully claimed. That meant the ban stopped slavery inside the territory but did not free people who fled into it.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains one way the proviso limited the ban, such as letting owners reclaim escapees from slave states.",
+     "notEarned": "Saying only that the ban had limits, with no proviso named, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain ONE effect of the ban on slavery in the Northwest Territory.",
+   "modelAnswer": "The ban made the Ohio River a line between free territory to the north and slave states to the south. Background: as settlers carried slavery into Kentucky and Tennessee, that line shaped where slavery grew in the West.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains one effect of the ban, such as making the Ohio River a free-slave line, or shaping where slavery grew in the West.",
+     "notEarned": "Saying only that the ban ended slavery everywhere, with no effect named, does not earn the point."
+    }
+   ]
+  }
+ ],
+ "totalPoints": 3
+}

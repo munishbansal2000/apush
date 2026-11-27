@@ -1,0 +1,90 @@
+{
+ "id": "apush-mcq-0662",
+ "lesson": "apush-u3-l5",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 3,
+ "topics": [
+  "3.10"
+ ],
+ "skills": [
+  "3.C",
+  "4.A"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 4,
+ "stimulus_set": "whiskey-rebellion-1794",
+ "stimulus": {
+  "kind": "image",
+  "text": "The painting, attributed to Frederick Kemmelmeyer and made after 1795, shows George Washington on a white horse reviewing the Western Army at Fort Cumberland, Maryland. Washington points toward long ranks of soldiers in blue coats, with a cannon at the left and mountains behind them.",
+  "source_note": "Washington Reviewing the Western Army at Fort Cumberland, Maryland, attributed to Frederick Kemmelmeyer, after 1795, Metropolitan Museum of Art 63.201.2. Public domain."
+ },
+ "source": "original; stimulus viewed before writing \u2014 Washington Reviewing the Western Army at Fort Cumberland, Maryland, attributed to Frederick Kemmelmeyer, after 1795, Metropolitan Museum of Art. Public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.10 Shaping the New Republic"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "Establishment of New Political Systems (1787-1800)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Unit 3: Conflict and American Independence (1754-1800)"
+   }
+  ],
+  "primary_sources": [
+   "Frederick Kemmelmeyer (attributed), Washington Reviewing the Western Army at Fort Cumberland, Maryland (after 1795)"
+  ]
+ },
+ "status": "final",
+ "stem": "Washington\u2019s response to the Whiskey Rebellion most directly showed what change from the years under the Articles of Confederation?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The president could now raise taxes without asking Congress.",
+   "misconception": "The change was in enforcing the laws, not in who set the taxes."
+  },
+  {
+   "key": "B",
+   "text": "The states could now refuse to send militia to the president.",
+   "misconception": "Background: four states sent militia, so the states did not refuse the call."
+  },
+  {
+   "key": "C",
+   "text": "The federal courts could now pardon rebels without a trial.",
+   "misconception": "Background: the rebels were tried, and pardons came later; that was not the change shown."
+  },
+  {
+   "key": "D",
+   "text": "The national government could now enforce its laws with military force."
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "D": "Background: under the Articles, Shays\u2019s Rebellion had to be put down by a privately paid militia, while Washington led nearly 13,000 militiamen in 1794.",
+  "A": "Background: Congress still set the taxes; the change was in enforcing the laws.",
+  "B": "The states sent the militia Washington called for.",
+  "C": "Trials and pardons were not the change the painting shows.",
+  "general": "1. The painting shows Washington himself on horseback at the head of a large army.\n2. Background: under the Articles, Shays\u2019s Rebellion had to be put down by a privately paid militia because the national government had no force of its own.\n3. Background: in 1794 Washington called up nearly 13,000 militiamen from four states and led them west himself.\n4. So the response showed a national government that could now make its laws stick by force.\nRemember: compare the response to the last rebellion; the difference is the new government\u2019s power."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0662",
+   "file": "u3/washington-reviews-western-army-1794.jpg",
+   "caption": "Washington reviewing the Western Army at Fort Cumberland, Maryland, attributed to Frederick Kemmelmeyer, after 1795",
+   "alt": "Painting of George Washington on a white horse, pointing toward long ranks of soldiers in blue coats with a cannon at the left, mountains behind them",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Washington_Reviewing_the_Western_Army_at_Fort_Cumberland%2C_Maryland_-_MET_63.201.2.jpg"
+  }
+ ]
+}

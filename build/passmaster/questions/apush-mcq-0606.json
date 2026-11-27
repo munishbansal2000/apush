@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-0606",
+ "lesson": "apush-u3-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.8"
+ ],
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "stimulus_set": "federalist-51",
+ "stimulus": {
+  "kind": "text",
+  "text": "\u201cAmbition must be made to counteract ambition. The interest of the man must be connected with the constitutional rights of the place. It may be a reflection on human nature, that such devices should be necessary to controul the abuses of government. But what is government itself but the greatest of all reflections on human nature? If men were angels, no government would be necessary. If angels were to govern men, neither external nor internal controuls on government would be necessary. In framing a government which is to be administered by men over men, the great difficulty lies in this: you must first enable the government to controul the governed; and in the next place, oblige it to controul itself.\u201d\n\n\u2014Publius, Federalist No. 51, February 1788",
+  "source_note": "Publius, Federalist No. 51, February 1788. Public domain."
+ },
+ "source": "original; stimulus viewed before writing \u2014 Publius, Federalist No. 51, February 1788, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.8 The Constitutional Convention and Debates over Ratification, C. Federalists, Anti-Federalists, and the Adoption of the Bill of Rights"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "The Ratification Battle"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "A New Constitution"
+   }
+  ],
+  "primary_sources": [
+   "Publius, Federalist No. 51 (February 1788)"
+  ]
+ },
+ "status": "final",
+ "stem": "What does Madison mean when he writes, \u201cIf men were angels, no government would be necessary\u201d?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Men are perfect, so government is a needless burden",
+   "misconception": "The line assumes the opposite: men are not angels, which is why government is needed."
+  },
+  {
+   "key": "B",
+   "text": "Men are not angels, so government must restrain imperfect people"
+  },
+  {
+   "key": "C",
+   "text": "Only religious men should serve in government",
+   "misconception": "The passage is about human nature in general, not about religion or who should serve."
+  },
+  {
+   "key": "D",
+   "text": "Government exists to make men into angels",
+   "misconception": "The passage never claims government perfects people; it claims government must control them."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "B": "The line is a counterfactual: angels would need no government, but men are not angels, so government is necessary and must be controlled.",
+  "A": "The line assumes men are not angels; perfection would make government needless, not a burden.",
+  "C": "The passage is about human nature, not about religion or who may serve.",
+  "D": "Government is built to control imperfect people, not to make them angels.",
+  "general": "1. The sentence imagines angels, who need no government.\n2. Men are not angels, so the imagined case does not apply.\n3. That is why government is necessary, and why it must also be controlled.\n4. The line is the hinge of the whole passage: imperfect people need a government, and a checked one.\nRemember: a what-if sentence tells you what is true by imagining what is not."
+ }
+}

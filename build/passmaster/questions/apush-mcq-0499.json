@@ -1,0 +1,85 @@
+{
+ "id": "apush-mcq-0499",
+ "lesson": "apush-u3-l3",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.5"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "stimulus_set": "saratoga-burgoyne",
+ "stimulus": {
+  "kind": "image",
+  "text": "The painting shows the surrender at Saratoga on October 17, 1777. In the center, the British general John Burgoyne, in a red coat, hands his sword to the American general Horatio Gates, who stands with his arm outstretched. American officers and soldiers stand around them, with a cannon at the right and the American flag flying above a tent. The painting is John Trumbull's Surrender of General Burgoyne, painted in December 1821, more than forty years after the surrender.",
+  "source_note": "John Trumbull, Surrender of General Burgoyne, December 1821. Public domain."
+ },
+ "source": "original; stimulus viewed before writing \u2014 John Trumbull, Surrender of General Burgoyne, 1821, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.5 The American Revolution, A. The War for Independence"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 10"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Fighting the Revolution"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "What event does the painting show?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The surrender of General Cornwallis at Yorktown",
+   "misconception": "Cornwallis surrendered at Yorktown in 1781, four years later; this painting shows Burgoyne at Saratoga in 1777."
+  },
+  {
+   "key": "B",
+   "text": "The signing of the Treaty of Paris",
+   "misconception": "The Treaty of Paris was signed in 1783 and involved diplomats, not a general handing over his sword on a battlefield."
+  },
+  {
+   "key": "C",
+   "text": "The British evacuation of Boston",
+   "misconception": "The British left Boston in March 1776, and no surrender of a British army took place there."
+  },
+  {
+   "key": "D",
+   "text": "The surrender of General Burgoyne's army at Saratoga"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "D": "Burgoyne hands his sword to Gates, which is the surrender of his whole army at Saratoga on October 17, 1777.",
+  "A": "Yorktown came in 1781, with Cornwallis, not Burgoyne, surrendering; this is the earlier surrender at Saratoga.",
+  "B": "The treaty was signed by diplomats in Paris in 1783; no sword is handed over in a treaty signing.",
+  "C": "Boston was evacuated in March 1776 without a surrender; the painting shows an army giving up, not a city being left.",
+  "general": "1. Look at the center. A British general in red hands his sword to an American general.\n2. Read the title and the date. Trumbull's Surrender of General Burgoyne shows Saratoga, October 17, 1777.\n3. Rule out the later events. Yorktown and the treaty came years after, and Boston involved no surrender.\nRemember: a sword changing hands is the painter's shorthand for surrender \u2014 ask whose sword, and when."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0499",
+   "file": "u3/surrender-burgoyne-saratoga-trumbull.jpg",
+   "caption": "John Trumbull, Surrender of General Burgoyne, December 1821",
+   "alt": "Trumbull painting of Burgoyne handing his sword to Gates at Saratoga, with American officers, a cannon, and the flag",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Surrender_of_General_Burgoyne.jpg"
+  }
+ ]
+}

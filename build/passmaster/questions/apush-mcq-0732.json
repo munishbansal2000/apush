@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-0732",
+ "lesson": "apush-u3-l5",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.12"
+ ],
+ "skills": [
+  "4.A"
+ ],
+ "themes": [
+  "NAT",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 4,
+ "status": "final",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.12 Movement in the Early Republic"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "Establishment of New Political Systems (1787-1800)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Unit 3: Conflict and American Independence (1754-1800)"
+   }
+  ],
+  "primary_sources": [
+   "United States Census, 1790"
+  ]
+ },
+ "stimulus_set": "census-1790-cities",
+ "stimulus": {
+  "kind": "table",
+  "text": "| Largest cities, 1790 census | Population |\n|---|---:|\n| New York | 33,131 |\n| Philadelphia | 28,522 |\n| Boston | 18,320 |\n| Charleston | 16,359 |\n| Baltimore | 13,503 |\n\nThe 1790 census counted 3,929,214 people in the United States, including 697,681 enslaved people. The 1800 census counted 5,308,483 people, including 893,602 enslaved people.",
+  "source_note": "United States Census, 1790 and 1800 (United States Census Bureau, Decennial Census Historical Facts)."
+ },
+ "source": "original; table drawn from the United States Census, 1790 and 1800.",
+ "stem": "Why did the new federal government need the census the Constitution ordered?",
+ "options": [
+  {
+   "key": "A",
+   "text": "To decide which states could send settlers into the western territories.",
+   "misconception": "The census did not control western settlement; land laws did that."
+  },
+  {
+   "key": "B",
+   "text": "To set each state's House seats by its population."
+  },
+  {
+   "key": "C",
+   "text": "To count enslaved people so they could be freed by the census.",
+   "misconception": "The census counted enslaved people, but counting them freed no one."
+  },
+  {
+   "key": "D",
+   "text": "To fix the price of western land at $1 an acre.",
+   "misconception": "Background: the Land Ordinance of 1785 set the land price, not the census."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "Western settlement was governed by land laws, not by the census count.",
+  "B": "Background: the Constitution gives House seats by population. The government therefore needed a count to apportion them fairly among the states.",
+  "C": "Counting enslaved people recorded them; it did not free them.",
+  "D": "The $1-an-acre price came from the Land Ordinance of 1785.",
+  "general": "1. Background: the Constitution ties House seats to population.\n2. Without a count, no one could say how many seats each state deserved.\n3. The 1790 census supplied that count, state by state.\n4. So the census was a tool of representation, not just a list of names.\nRemember: when a count and a constitution meet, ask what the count decides."
+ }
+}

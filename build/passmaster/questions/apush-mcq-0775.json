@@ -1,0 +1,75 @@
+{
+  "answerKey": "C",
+  "difficulty": 3,
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 5",
+        "section": "Topic 3.8 The Constitutional Convention and Debates over Ratification"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 11",
+        "section": "Establishment of New Political Systems (1787–1800)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 7"
+      }
+    ],
+    "primary_sources": []
+  },
+  "id": "apush-mcq-0775",
+  "lesson": "apush-u3-l4",
+  "options": [
+    {
+      "key": "A",
+      "misconception": "Washington's unanimous election shows factions disappearing.",
+      "text": "The unanimous election of George Washington as president"
+    },
+    {
+      "key": "B",
+      "misconception": "Political disagreement disappeared after 1800.",
+      "text": "The rapid disappearance of political disagreement after 1800"
+    },
+    {
+      "key": "C",
+      "text": "The emergence of organized political parties in the 1790s over economic and foreign policy"
+    },
+    {
+      "key": "D",
+      "misconception": "The Bill of Rights excluded all discussion of factions.",
+      "text": "The decision to exclude all discussion of factions from the Bill of Rights"
+    }
+  ],
+  "pool": "test",
+  "rationales": {
+    "A": "Washington's unanimous election was a moment of consensus, not faction.",
+    "B": "Political disagreement intensified after 1800; it did not disappear.",
+    "C": "Background: the emergence of Federalists and Democratic-Republicans in the 1790s shows factions persisting exactly as Madison predicted. The parties organized around real divisions over finance, foreign policy, and the Constitution itself.",
+    "D": "Faction was central to the debate; it was not excluded from the Bill of Rights discussion.",
+    "general": "1. Ask what Madison predicted. Factions would persist because their causes lie in human nature.\n2. Look for the persistence. Background: organized parties formed in the 1790s over economic and foreign policy.\n3. Test the other options. A unanimous election, disappearing disagreement, and silence in the Bill of Rights do not show persistence.\n4. Match the prediction to the event. Parties are factions, organized and enduring.\nRemember: a prediction is confirmed by what happens next, not by a single quiet moment."
+  },
+  "reasoning": "continuity-change",
+  "skills": [
+    "5.B"
+  ],
+  "source": "original; stimulus is a verbatim public-domain excerpt from James Madison, Federalist No. 10 (1787)",
+  "status": "final",
+  "stem": "Which of the following later developments best illustrates the persistence of the concern Madison describes?",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "James Madison, Federalist No. 10, 1787, public domain.",
+    "text": "“The latent causes of faction are thus sown in the nature of man; and we see them everywhere brought into different degrees of activity, according to the different circumstances of civil society. A zeal for different opinions concerning religion, concerning government, and many other points . . . have . . . divided mankind into parties, inflamed them with mutual animosity, and rendered them much more disposed to vex and oppress each other than to co-operate for their common good.”"
+  },
+  "stimulus_set": "federalist-10-1787",
+  "themes": [
+    "PCE"
+  ],
+  "topics": [
+    "3.8"
+  ],
+  "type": "mcq",
+  "unit": 3
+}

@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-0613",
+ "lesson": "apush-u3-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.8"
+ ],
+ "skills": [
+  "5.A",
+  "6.C"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 4,
+ "stimulus_set": "ratification-votes",
+ "stimulus": {
+  "kind": "text",
+  "text": "| State | Date ratified | Votes for | Votes against |\n|---|---|---:|---:|\n| Delaware | December 7, 1787 | 30 | 0 |\n| Pennsylvania | December 12, 1787 | 46 | 23 |\n| New Jersey | December 18, 1787 | 38 | 0 |\n| Georgia | January 2, 1788 | 26 | 0 |\n| Connecticut | January 9, 1788 | 128 | 40 |\n| Massachusetts | February 6, 1788 | 187 | 168 |\n| Maryland | April 28, 1788 | 63 | 11 |\n| South Carolina | May 23, 1788 | 149 | 73 |\n| New Hampshire | June 21, 1788 | 57 | 47 |\n| Virginia | June 25, 1788 | 89 | 79 |\n| New York | July 26, 1788 | 30 | 27 |\n| North Carolina | November 21, 1789 | 194 | 77 |\n| Rhode Island | May 29, 1790 | 34 | 32 |",
+  "source_note": "Table drawn from the ratification votes of the thirteen state conventions, 1787-1790. National Archives, Ratification of the Constitution."
+ },
+ "source": "original; table drawn from the ratification votes of the thirteen state conventions, 1787-1790, National Archives.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.8 The Constitutional Convention and Debates over Ratification, C. Federalists, Anti-Federalists, and the Adoption of the Bill of Rights"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "The Ratification Battle"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "A New Constitution"
+   }
+  ],
+  "primary_sources": [
+   "Ratification votes of the state conventions, 1787-1790"
+  ]
+ },
+ "status": "final",
+ "stem": "What pattern does the table show about how ratification unfolded?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Every state ratified unanimously in the first month",
+   "misconception": "Only three states were unanimous, and the fight lasted into 1790; most votes were divided."
+  },
+  {
+   "key": "B",
+   "text": "The largest states ratified first and the smallest last",
+   "misconception": "Delaware, the smallest state, ratified first, and Virginia and New York, the largest, were tenth and eleventh."
+  },
+  {
+   "key": "C",
+   "text": "Small states ratified quickly and widely; large states were slow and closely divided"
+  },
+  {
+   "key": "D",
+   "text": "Southern states refused to ratify until the Bill of Rights was added",
+   "misconception": "Georgia and South Carolina ratified early, in January and May 1788, years before the Bill of Rights."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "C": "Delaware, New Jersey, and Georgia ratified unanimously in the first month, while Massachusetts, Virginia, and New York were slow and close: 187-168, 89-79, and 30-27.",
+  "A": "Only Delaware, New Jersey, and Georgia were unanimous, and ratification ran into 1790.",
+  "B": "The order runs the other way: the smallest state came first and the largest came near last.",
+  "D": "Georgia ratified in January 1788 and South Carolina in May 1788. Background: the Bill of Rights was not ratified until 1791.",
+  "general": "1. Read the first rows: Delaware 30-0, New Jersey 38-0, Georgia 26-0, all within a month.\n2. Read the large-state rows: Massachusetts 187-168, Virginia 89-79, New York 30-27.\n3. The small states were quick and lopsided; the large states were slow and nearly tied.\n4. Background: the large states held the most to lose from a strong national government, so their debates ran longest.\nRemember: a pattern is a split in the table, so compare the top rows with the bottom rows."
+ }
+}

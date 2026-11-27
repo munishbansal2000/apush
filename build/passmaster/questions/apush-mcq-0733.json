@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-0733",
+ "lesson": "apush-u3-l5",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 3,
+ "topics": [
+  "3.12"
+ ],
+ "skills": [
+  "3.D"
+ ],
+ "themes": [
+  "MIG",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 4,
+ "status": "final",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.12 Movement in the Early Republic"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "Establishment of New Political Systems (1787-1800)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Unit 3: Conflict and American Independence (1754-1800)"
+   }
+  ],
+  "primary_sources": [
+   "United States Census, 1790",
+   "United States Census, 1800"
+  ]
+ },
+ "stimulus_set": "census-1790-cities",
+ "stimulus": {
+  "kind": "table",
+  "text": "| Largest cities, 1790 census | Population |\n|---|---:|\n| New York | 33,131 |\n| Philadelphia | 28,522 |\n| Boston | 18,320 |\n| Charleston | 16,359 |\n| Baltimore | 13,503 |\n\nThe 1790 census counted 3,929,214 people in the United States, including 697,681 enslaved people. The 1800 census counted 5,308,483 people, including 893,602 enslaved people.",
+  "source_note": "United States Census, 1790 and 1800 (United States Census Bureau, Decennial Census Historical Facts)."
+ },
+ "source": "original; table drawn from the United States Census, 1790 and 1800.",
+ "stem": "The population rose from 3,929,214 in 1790 to 5,308,483 in 1800, a gain of about 35 percent in ten years. What best explains such fast growth?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Cities alone grew, while the farming population stayed exactly the same.",
+   "misconception": "The whole population grew by about 1.4 million; cities held only a small share of it."
+  },
+  {
+   "key": "B",
+   "text": "Immigration from Europe was the only source of growth in the decade.",
+   "misconception": "Background: immigration added people, but most growth came from large families and high birth rates at home."
+  },
+  {
+   "key": "C",
+   "text": "High birth rates, plus newcomers from abroad and settlers moving west."
+  },
+  {
+   "key": "D",
+   "text": "The census of 1800 counted enslaved people for the first time ever.",
+   "misconception": "The 1790 census already counted enslaved people: 697,681 of them."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "A gain of 1.4 million people cannot fit inside cities that held about 110,000.",
+  "B": "Immigration helped, but it was not the only source; births at home mattered more.",
+  "C": "A 35 percent gain in a decade needs more than one cause: American families were large, immigrants kept arriving, and settlers filled Kentucky, Tennessee, and the Northwest Territory.",
+  "D": "Enslaved people were counted in 1790 as well, 697,681 of them.",
+  "general": "1. The gain is about 1.4 million people in ten years.\n2. Cities were too small to hold that gain.\n3. Background: American families averaged many children, immigrants arrived from Europe and the Caribbean, and western settlement spread.\n4. So fast growth came from births plus newcomers plus westward movement together.\nRemember: a big change usually has more than one cause — stack them before choosing."
+ }
+}

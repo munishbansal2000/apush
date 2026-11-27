@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-0571",
+ "lesson": "apush-u3-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.7"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "federalist-15",
+ "stimulus": {
+  "kind": "text",
+  "text": "\u201cThe great and radical vice in the construction of the existing Confederation is in the principle of LEGISLATION for STATES or GOVERNMENTS, in their CORPORATE or COLLECTIVE CAPACITIES, and as contradistinguished from the INDIVIDUALS of which they consist. . . . Except as to the rule of apportionment, the United States have an indefinite discretion to make requisitions for men and money; but they have no authority to raise either by regulations extending to the individual citizens of America. The consequence of this is, that though in theory their resolutions concerning those objects are laws, constitutionally binding on the members of the Union, yet in practice they are mere recommendations, which the States observe or disregard at their option.\u201d\n\u2014 Alexander Hamilton, Federalist No. 15, December 1, 1787",
+  "source_note": "Alexander Hamilton, Federalist No. 15, December 1, 1787. Public domain."
+ },
+ "source": "original; stimulus viewed before writing \u2014 Alexander Hamilton, Federalist No. 15 (December 1, 1787), public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.7 The Articles of Confederation, B. The Articles of Confederation and the Critical Period"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "The Constitutional Convention"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Articles of Confederation"
+   }
+  ],
+  "primary_sources": [
+   "Alexander Hamilton, Federalist No. 15 (December 1, 1787)"
+  ]
+ },
+ "status": "final",
+ "stem": "According to Hamilton, the \u201cgreat and radical vice\u201d of the Confederation was that it",
+ "options": [
+  {
+   "key": "A",
+   "text": "made laws for states, not for individual citizens"
+  },
+  {
+   "key": "B",
+   "text": "gave the states too little power under the Confederation",
+   "misconception": "Hamilton's complaint is that the states kept too much power, not too little."
+  },
+  {
+   "key": "C",
+   "text": "created a president with too much power",
+   "misconception": "Background: the Confederation created no president at all."
+  },
+  {
+   "key": "D",
+   "text": "let Congress tax citizens directly",
+   "misconception": "Hamilton's point is that Congress could not reach citizens at all."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Hamilton says the vice is legislation for states in their corporate capacities, as opposed to the individuals of whom they consist.",
+  "B": "Hamilton's complaint is the opposite: the states kept the power and Congress could not act.",
+  "C": "Background: the Confederation had no president; Hamilton is arguing for a government that can act.",
+  "D": "Hamilton says Congress had no authority to raise men or money by regulations reaching citizens.",
+  "general": "1. Find the vice. Hamilton names legislation for states, not for individuals.\n2. Congress could ask states for men and money, but not reach the citizens themselves.\n3. A government that can only address states cannot enforce its own laws.\n4. The vice runs through the powers the Union needs most, men and money.\nRemember: Hamilton's fix was a government that acts on people, not on states."
+ }
+}

@@ -1,0 +1,91 @@
+{
+ "id": "apush-saq-0099",
+ "lesson": "apush-u3-l5",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.13"
+ ],
+ "skills": [
+  "2.B",
+  "3.B"
+ ],
+ "themes": [
+  "NAT",
+  "SOC"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 3,
+ "status": "final",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.13 Continuity and Change in Period 3"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "Establishment of New Political Systems (1787-1800)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Unit 3: Conflict and American Independence (1754-1800)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "source": "original; stimulus is an original secondary passage written for this question, summarizing Barron's Premium 2027 Chapter 5, Topics 3.1 and 3.13; 5 Steps to a 5 2024 Chapter 11; Princeton Review Chapter 7 Summary.",
+ "stimulus_set": null,
+ "stimulus": {
+  "kind": "text",
+  "text": "Original secondary passage written for this question. Between 1754 and 1800, Americans went from British subjects to citizens of an independent republic. They wrote constitutions, limited their rulers, and built a federal government with a Bill of Rights. Yet much of daily life stayed the same. Most Americans still farmed. Slavery grew in the South even as northern states moved toward gradual emancipation. Women gained a new civic role as mothers of citizens, but not the vote. Native peoples lost land to treaties after military defeat. The Revolution changed the government more than it changed who held power in American life.",
+  "source_note": "Original secondary passage written for this question, summarizing Barron's Premium 2027 Chapter 5, Topics 3.1 and 3.13; 5 Steps to a 5 2024 Chapter 11; Princeton Review Chapter 7 Summary."
+ },
+ "saq_slot": 1,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify ONE change in American government between 1754 and 1800.",
+   "modelAnswer": "Americans replaced rule by a king and Parliament with an elected republic under a written Constitution. The new government divided power among three branches and added a Bill of Rights.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names one change in American government between 1754 and 1800, such as an elected republic, a written constitution, or the Bill of Rights.",
+     "notEarned": "Naming only that independence happened, with no change in government, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain ONE way life stayed the same for enslaved people, women, or Native peoples across Period 3.",
+   "modelAnswer": "For enslaved people in the South, slavery did not end with independence: the enslaved population grew from about 500,000 in 1776 to 893,602 in 1800. The Constitution even protected the slave trade until 1808, so bondage stayed legal and central to southern life.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains one continuity for enslaved people, women, or Native peoples, such as slavery growing in the South, women remaining without the vote, or Native peoples losing land.",
+     "notEarned": "Naming a group with no continuity explained does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain ONE way a revolutionary ideal led to a change after 1776.",
+   "modelAnswer": "The Declaration's claim that all men are created equal pushed northern states toward gradual emancipation. Pennsylvania freed children born to enslaved mothers at age 28, and Massachusetts courts ended slavery there. The ideal did not end slavery, but it gave reformers language to use against it.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains one way a revolutionary ideal led to a change, such as the equality claim driving gradual emancipation or republican motherhood.",
+     "notEarned": "Restating an ideal with no change that followed does not earn the point."
+    }
+   ]
+  }
+ ],
+ "totalPoints": 3
+}

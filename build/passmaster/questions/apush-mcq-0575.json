@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-0575",
+ "lesson": "apush-u3-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.7"
+ ],
+ "skills": [
+  "5.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 4,
+ "stimulus_set": "census-1790",
+ "stimulus": {
+  "kind": "table",
+  "text": "| State | Population, 1790 census |\n|---|---:|\n| Virginia | 747,610 |\n| Pennsylvania | 434,373 |\n| North Carolina | 393,751 |\n| Massachusetts | 378,787 |\n| New York | 340,120 |\n| Maryland | 319,728 |\n| South Carolina | 249,073 |\n| Connecticut | 237,946 |\n| New Jersey | 184,139 |\n| New Hampshire | 141,885 |\n| Georgia | 82,548 |\n| Rhode Island | 68,825 |\n| Delaware | 59,094 |",
+  "source_note": "First Census of the United States, 1790, as reported by Secretary of State Thomas Jefferson, October 24, 1791. Public domain."
+ },
+ "source": "original; table drawn from the First Census of the United States, 1790, as reported by Thomas Jefferson, October 24, 1791, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.7 The Articles of Confederation, B. The Articles of Confederation and the Critical Period"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Articles of Confederation"
+   }
+  ],
+  "primary_sources": [
+   "First Census of the United States (1790), reported by Thomas Jefferson, October 24, 1791"
+  ]
+ },
+ "status": "final",
+ "stem": "The table best explains why, at the Constitutional Convention, small states wanted to keep one vote per state while large states wanted votes by population.",
+ "options": [
+  {
+   "key": "A",
+   "text": "Equal votes gave small states far more voice per person"
+  },
+  {
+   "key": "B",
+   "text": "The southern states had the smallest populations of all the states",
+   "misconception": "The table puts Virginia and North Carolina at the top, not the bottom."
+  },
+  {
+   "key": "C",
+   "text": "All thirteen states had nearly the same population",
+   "misconception": "The table runs from 747,610 in Virginia down to 59,094 in Delaware."
+  },
+  {
+   "key": "D",
+   "text": "The census showed that no one lived west of the Appalachians",
+   "misconception": "The table counts people by state; it says nothing about where they lived within a state."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Background from the books: Virginia had more than twelve times Delaware's people, so one vote each gave Delaware far more voice per person, and small states wanted to keep that advantage while large states wanted votes by population.",
+  "B": "Virginia and North Carolina, both southern, hold the first and third places in the table.",
+  "C": "The table runs from 747,610 in Virginia down to 59,094 in Delaware, which is not nearly the same.",
+  "D": "The table counts people by state and says nothing about settlement west of the Appalachians.",
+  "general": "1. Compare the ends of the table. Virginia has 747,610 people; Delaware has 59,094.\n2. One vote each gives Delaware far more voice per person than Virginia.\n3. Background: small states defended that advantage, and large states attacked it.\n4. Background: that fight carried straight into the Convention's fight over representation.\nRemember: representation fights are about whose voice counts, and the numbers show why."
+ }
+}

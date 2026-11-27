@@ -1,0 +1,88 @@
+{
+ "id": "apush-leq-0023",
+ "type": "leq",
+ "unit": 3,
+ "lesson": "apush-u3-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "topics": [
+  "3.2"
+ ],
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "stimulus_set": null,
+ "stimulus": {
+  "kind": "none",
+  "source_note": "No stimulus; LEQ prompt only."
+ },
+ "source": "original; prompt written for this question",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.2 The Seven Years' War (The French and Indian War)"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 9",
+    "section": "War in the West"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Seven Years' War (1754\u20131763)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "prompt": "Evaluate the extent to which the Seven Years' War changed the balance of power in North America.",
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent to which the war changed the balance of power in North America, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim about the extent of change does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as the three empires sharing the continent before 1754, the rivalry between Britain and France, or the role of Native nations in balancing the two empires.",
+   "notEarned": "A sentence of background with no link to the argument, or background from a later century, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (first point): earns the point for describing specific and relevant examples of change, such as the Treaty of Paris terms, the removal of France from the continent, or Britain's territorial gains.",
+   "notEarned": "General statements about change with no specific example do not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (second point): earns the point for describing specific and relevant examples of the limits of that change, such as Pontiac's Rebellion, the Proclamation Line, Native peoples' continued control of the interior, or Britain's doubled war debt.",
+   "notEarned": "Repeating the same change example, or naming a limit with no specific detail, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Analysis and reasoning (causation): earns the point for explaining how the evidence shows the war changing the balance of power, linking examples to the thesis rather than listing them.",
+   "notEarned": "Listing examples with no explanation of how they show a change in the balance of power does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Analysis and reasoning (complexity): earns the point for a complex argument, such as qualifying the thesis by region or by group, explaining why change was uneven, or weighing the paper transfer of territory against the realities on the ground.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ],
+ "modelOutline": "Thesis: The Seven Years' War changed the balance of power in North America decisively: it removed France as a continental power, made Britain dominant, and redrew the map \u2014 but the change was incomplete, because Britain's new dominance brought debts, frontiers, and peoples it could not easily govern.\nContext: Before 1754 three empires shared the continent \u2014 Britain on the Atlantic coast, France in the interior from Canada to Louisiana, Spain in Florida and the Southwest \u2014 and Native nations balanced between Britain and France, trading with both.\nEvidence of change: France's defeat and the Treaty of Paris gave Britain Canada and all French land east of the Mississippi, gave Louisiana to Spain, and gave Florida to Britain; Britain's territory doubled and France was reduced to two small islands off Newfoundland.\nEvidence of limits: Pontiac's Rebellion showed the frontier could still bleed Britain; the Proclamation Line admitted London could not govern the new lands as it wished; Native nations still controlled much of the interior; and the war nearly doubled Britain's debt to about \u00a3133 million.\nComplexity: Power shifted on paper more completely than on the ground \u2014 the map changed in a day, but governing the new empire took a generation, and the cost of it pushed Britain toward the taxes that would break the empire it had just won.",
+ "totalPoints": 6
+}

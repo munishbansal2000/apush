@@ -1,0 +1,85 @@
+{
+ "id": "apush-mcq-0491",
+ "lesson": "apush-u3-l3",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.5"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "bunker-hill-warren",
+ "stimulus": {
+  "kind": "image",
+  "text": "The painting shows the Battle of Bunker Hill on June 17, 1775. In the center, the American general Joseph Warren lies dying on the ground, held by a fellow officer. Around him, American militiamen in plain clothes fight hand to hand with British regulars in red coats, who advance from the right under a British flag. At the far right edge stands a Black soldier in the American ranks, musket in hand. The painting is John Trumbull's The Death of General Warren at the Battle of Bunker's Hill, June 17, 1775, painted in 1834, nearly sixty years after the battle.",
+  "source_note": "John Trumbull, The Death of General Warren at the Battle of Bunker's Hill, June 17, 1775 (1834 version). Public domain."
+ },
+ "source": "original; stimulus viewed before writing \u2014 John Trumbull, The Death of General Warren, 1834, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.5 The American Revolution, A. The War for Independence"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 10"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Fighting the Revolution"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "The battle shown in the painting is best remembered because...",
+ "options": [
+  {
+   "key": "A",
+   "text": "The French army fought alongside the Americans",
+   "misconception": "France did not enter the war until 1778, three years after Bunker Hill; no French troops were there."
+  },
+  {
+   "key": "B",
+   "text": "The British won the hill but paid a heavy price in casualties"
+  },
+  {
+   "key": "C",
+   "text": "The Americans held the hill and drove the British back to Boston",
+   "misconception": "The Americans were forced off the hill; the British took it, though at great cost in men."
+  },
+  {
+   "key": "D",
+   "text": "The battle was fought at sea, off the Massachusetts coast",
+   "misconception": "Bunker Hill was fought on land outside Boston, on Breed's Hill; no ships or sea fighting are shown."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "B": "The British took the hill, but the Americans' fire cost them nearly 1,000 men, a loss that shocked London.",
+  "C": "The Americans ran out of ammunition and were driven from the hill; the British held the ground.",
+  "D": "The battle was fought on land, on the hills above Charlestown, not at sea.",
+  "A": "France entered the war in 1778, after Saratoga; no French soldiers fought at Bunker Hill in 1775.",
+  "general": "1. Look at the center. Warren lies dying and the fighting is hand to hand, so the battle was close and costly.\n2. Ask who held the ground. The painting shows the British advancing and the Americans falling back. Background: the British took the hill that day.\n3. Weigh the cost. The British won the hill and lost nearly 1,000 men doing it, which told London this war would be expensive.\nRemember: a victory can still be bad news \u2014 ask what it cost, not just who held the ground. Background: British losses at Bunker Hill were nearly 1,000 men."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0491",
+   "file": "u3/death-general-warren-bunker-hill-trumbull.jpg",
+   "caption": "John Trumbull, The Death of General Warren at the Battle of Bunker's Hill, June 17, 1775 (1834)",
+   "alt": "Trumbull painting of General Warren dying at Bunker Hill while American militiamen fight British regulars advancing from the right",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:The_Death_of_General_Warren_at_the_Battle_of_Bunker%27s_Hill,_June_17,_1775.jpg"
+  }
+ ]
+}

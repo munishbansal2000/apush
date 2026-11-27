@@ -1,0 +1,76 @@
+{
+  "answerKey": "A",
+  "difficulty": 3,
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 5",
+        "section": "Topic 3.4 Philosophical Foundations of the American Revolution"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 9",
+        "section": "Resistance, Rebellion, and Revolution (1750–1775)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 7"
+      }
+    ],
+    "primary_sources": []
+  },
+  "id": "apush-mcq-0770",
+  "lesson": "apush-u3-l2",
+  "options": [
+    {
+      "key": "A",
+      "text": "The growing influence of Enlightenment ideas about natural rights and consent"
+    },
+    {
+      "key": "B",
+      "misconception": "Paine was praising Britain for spreading representative government.",
+      "text": "The success of the British Empire in spreading representative government worldwide"
+    },
+    {
+      "key": "C",
+      "misconception": "Slavery was declining in the British Atlantic by 1776.",
+      "text": "The decline of slavery in the British Atlantic world by 1776"
+    },
+    {
+      "key": "D",
+      "misconception": "Paine was responding to a British-Spanish alliance.",
+      "text": "The alliance between Britain and Spain to suppress colonial revolts"
+    }
+  ],
+  "pool": "test",
+  "rationales": {
+    "A": "Background: “Hunted round the globe” invokes Enlightenment ideas of natural rights and government by consent, not hereditary tyranny. Paine's language of being hunted appeals to rights every person holds, not to loyalty to a king.",
+    "B": "Britain was not spreading representative government worldwide.",
+    "C": "Slavery expanded in the British Atlantic world; it did not decline by 1776.",
+    "D": "No British-Spanish alliance to suppress revolts explains Paine.",
+    "general": "1. Read the phrase. Freedom has been hunted everywhere, expelled from Asia, Africa, and Europe.\n2. Ask what idea that language carries. Background: Enlightenment natural rights, and government by consent rather than hereditary tyranny.\n3. Test the other contexts. Britain spreading representation, slavery declining, and a British-Spanish alliance do not fit the passage.\n4. Match the context. Paine's image comes from the Enlightenment argument for rights.\nRemember: a writer's images usually point to the ideas behind them."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "4.B"
+  ],
+  "source": "original; stimulus is a verbatim public-domain excerpt from Thomas Paine, Common Sense (1776)",
+  "status": "final",
+  "stem": "Paine’s claim that freedom had been “hunted round the globe” most directly reflects which of the following contexts?",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Thomas Paine, Common Sense, 1776, public domain.",
+    "text": "“O ye who love mankind! Ye who dare oppose, not only the tyranny, but the tyrant, stand forth! Every spot of the old world is overrun with oppression. Freedom hath been hunted round the globe. Asia, and Africa, have long expelled her. Europe regards her like a stranger, and England hath given her warning to depart. O! receive the fugitive, and prepare in time an asylum for mankind.”"
+  },
+  "stimulus_set": "paine-common-sense-1776",
+  "themes": [
+    "PCE",
+    "WOR"
+  ],
+  "topics": [
+    "3.4"
+  ],
+  "type": "mcq",
+  "unit": 3
+}

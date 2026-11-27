@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-0574",
+ "lesson": "apush-u3-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.7"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 3,
+ "stimulus_set": "census-1790",
+ "stimulus": {
+  "kind": "table",
+  "text": "| State | Population, 1790 census |\n|---|---:|\n| Virginia | 747,610 |\n| Pennsylvania | 434,373 |\n| North Carolina | 393,751 |\n| Massachusetts | 378,787 |\n| New York | 340,120 |\n| Maryland | 319,728 |\n| South Carolina | 249,073 |\n| Connecticut | 237,946 |\n| New Jersey | 184,139 |\n| New Hampshire | 141,885 |\n| Georgia | 82,548 |\n| Rhode Island | 68,825 |\n| Delaware | 59,094 |",
+  "source_note": "First Census of the United States, 1790, as reported by Secretary of State Thomas Jefferson, October 24, 1791. Public domain."
+ },
+ "source": "original; table drawn from the First Census of the United States, 1790, as reported by Thomas Jefferson, October 24, 1791, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.7 The Articles of Confederation, B. The Articles of Confederation and the Critical Period"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Articles of Confederation"
+   }
+  ],
+  "primary_sources": [
+   "First Census of the United States (1790), reported by Thomas Jefferson, October 24, 1791"
+  ]
+ },
+ "status": "final",
+ "stem": "Under the Articles of Confederation, each state had one vote in Congress. The table shows that this rule meant",
+ "options": [
+  {
+   "key": "A",
+   "text": "Pennsylvania had the most votes in Congress",
+   "misconception": "Every state had one vote, so no state had the most votes."
+  },
+  {
+   "key": "B",
+   "text": "the largest states paid the most taxes to the national government",
+   "misconception": "The table shows population, not taxes. Background: requisitions were set by land value."
+  },
+  {
+   "key": "C",
+   "text": "Rhode Island had no vote in Congress",
+   "misconception": "Every state, including Rhode Island, had one vote."
+  },
+  {
+   "key": "D",
+   "text": "Virginia and Delaware cast equal votes, though Virginia was far larger"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "D": "The table gives Virginia 747,610 people and Delaware 59,094, which is more than twelve times as many, yet each state cast one vote in Congress.",
+  "A": "Each state had one vote, so Pennsylvania had one vote like every other state.",
+  "B": "The table shows population, not taxes. Background: requisitions were set by the value of land.",
+  "C": "Rhode Island had one vote in Congress, like every other state.",
+  "general": "1. Read the two numbers. Virginia has 747,610 people; Delaware has 59,094.\n2. Divide: 747,610 is more than twelve times 59,094.\n3. Background: under the Articles each state cast one vote, whatever its size.\n4. The biggest state and the smallest state counted exactly the same in Congress.\nRemember: one vote each means the smallest state counted as much as the largest."
+ }
+}

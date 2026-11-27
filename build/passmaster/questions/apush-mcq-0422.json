@@ -1,0 +1,86 @@
+{
+ "id": "apush-mcq-0422",
+ "lesson": "apush-u3-l2",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.3"
+ ],
+ "skills": [
+  "2.A"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "colonies-reduced",
+ "stimulus": {
+  "kind": "image",
+  "text": "The engraving, 'The Colonies Reduced \u2014 Its Companion,' was designed after Benjamin Franklin and published in London in 1768. In the top panel, a woman representing Britain sits slumped against a globe, her arms and legs cut off and lying on the ground around her. Each severed limb is labeled with a colony's name: Virginia, New York, Pennsylvania, and New England. Her severed hand still holds an olive branch. In the bottom panel, France and Spain quarrel over a barrel while a Native American figure watches, and a snake coils on the ground.",
+  "source_note": "After Benjamin Franklin, published by John Almon, London, 1768. Public domain (pre-1930)."
+ },
+ "source": "original; stimulus viewed before writing \u2014 after Benjamin Franklin, published by John Almon, London, 1768, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "A. Colonial Resistance to British Policies in the Aftermath of the French and Indian War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 9",
+    "section": "Stamp Act Crisis"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Sugar Act, the Currency Act, and the Stamp Act"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "In the top panel, the severed limbs labeled Virginia, New York, Pennsylvania, and New England most directly represent...",
+ "options": [
+  {
+   "key": "A",
+   "text": "The colonies Britain lost to France in the Seven Years\u2019 War",
+   "misconception": "Britain did not lose these colonies to France \u2014 it kept them after 1763. The limbs are the colonies Parliament's taxes were cutting away from the empire."
+  },
+  {
+   "key": "B",
+   "text": "The territories Spain claimed after the Treaty of Paris",
+   "misconception": "Spain gained Florida and Louisiana, not Virginia or Pennsylvania \u2014 the labels are British colonies, not Spanish claims."
+  },
+  {
+   "key": "C",
+   "text": "The states that refused to send delegates to the First Continental Congress",
+   "misconception": "Only Georgia stayed away from the Congress, and that was in 1774 \u2014 the labels name four colonies, not one, and the cartoon is from 1768."
+  },
+  {
+   "key": "D",
+   "text": "The British colonies that Parliament's taxes were cutting away from the empire"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "D": "The labels give it away: each limb is a colony \u2014 Virginia, New York, Pennsylvania, New England. The cartoon shows taxation amputating the empire's own limbs.",
+  "A": "France took no American colonies in 1763 \u2014 Britain kept them. The cutting was done by Britain's own taxes, not by France.",
+  "B": "Spain's gains were Florida and Louisiana. The labeled limbs are British colonies on the Atlantic coast.",
+  "C": "Only one colony skipped the Congress, and the cartoon predates it by six years. The labels name four colonies, not Georgia.",
+  "general": "1. Read the labels. Each severed limb is named for a colony \u2014 Virginia, New York, Pennsylvania, New England.\n2. Ask what cut them off. Not a foreign enemy, but Britain's own policies: the taxes that drove the colonies to resist.\n3. Read the title. 'The Colonies Reduced' means the colonies cut down \u2014 the empire shrinking itself.\nRemember: a cartoon argues with pictures \u2014 find the labels first, and the argument usually follows."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0422",
+   "file": "u3/barrons-2027-ch05-04.jpg",
+   "caption": "The Colonies Reduced \u2014 Its Companion, after Benjamin Franklin, published by John Almon, London, 1768",
+   "alt": "Franklin cartoon: Britannia sits slumped with her limbs cut off, each labeled Virginia, New York, Pennsylvania, New England; below, France and Spain quarrel over a barrel",
+   "license": "Public domain",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/The_Colonies_Reduced_-_Its_Companion_%28BM_1855%2C0609.1925%29.jpg"
+  }
+ ]
+}

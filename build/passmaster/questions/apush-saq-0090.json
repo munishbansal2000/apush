@@ -1,0 +1,95 @@
+{
+ "id": "apush-saq-0090",
+ "lesson": "apush-u3-l4",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.9"
+ ],
+ "skills": [
+  "2.B",
+  "3.A"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": null,
+ "source": "original; stimulus paraphrased from James Madison, speech in the House of Representatives, June 8, 1789, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.9 The Constitution"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "The Bill of Rights"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "A New Constitution"
+   }
+  ],
+  "primary_sources": [
+   "James Madison, speech in the House of Representatives, June 8, 1789"
+  ]
+ },
+ "status": "final",
+ "saq_slot": 2,
+ "stimulus": {
+  "type": "text",
+  "text": "Paraphrased from James Madison's speech in the House of Representatives, June 8, 1789: Madison said that many who opposed the Constitution disliked it because it contained no guard for particular rights. He urged Congress to add amendments protecting freedom of conscience, freedom of speech, freedom of the press, and trial by jury, and he argued that adding such amendments would give the government the confidence of the people and quiet the fears of those who doubted it.",
+  "source": "Paraphrased from James Madison, speech in the House of Representatives, June 8, 1789. Public domain.",
+  "rights": "Public domain.",
+  "source_note": "Paraphrased from James Madison, speech in the House of Representatives, June 8, 1789. Public domain."
+ },
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify ONE protection Madison proposed in the speech.",
+   "modelAnswer": "One protection Madison proposed was trial by jury, which the Bill of Rights later guaranteed in criminal cases. He also named freedom of conscience, freedom of speech, and freedom of the press as rights the amendments should guard.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names one protection Madison proposed, such as freedom of conscience, speech, the press, or trial by jury.",
+     "notEarned": "Naming a protection with no link to the speech, such as a power of Congress, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain ONE reason Madison gave for adding amendments to the Constitution.",
+   "modelAnswer": "Madison said the amendments would give the government the confidence of the people. Many Americans doubted the new government because it contained no guard for their rights, and he argued that adding the amendments would quiet those fears.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains one reason Madison gave, such as winning the people's confidence, quieting the fears of opponents, or guarding particular rights the Constitution had left unprotected.",
+     "notEarned": "Saying only that Madison wanted amendments, without giving his reason, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain ONE limit of the speech as evidence about how the amendments were received.",
+   "modelAnswer": "The speech shows what Madison wanted, not what the states decided, and the amendments still needed ratification by three-fourths of the states. Madison was also speaking to the House, trying to win its support, so his words show his case for amendments rather than the outcome.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains one limit of the speech as evidence, such as that it shows Madison's view rather than the states' votes, that it predates ratification, or that it was written to persuade the House.",
+     "notEarned": "Saying only that one speech cannot show everything, with no specific limit, does not earn the point."
+    }
+   ]
+  }
+ ],
+ "totalPoints": 3
+}

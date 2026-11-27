@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-0681",
+ "lesson": "apush-u3-l5",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.10"
+ ],
+ "skills": [
+  "3.A",
+  "6.C"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "election-1800",
+ "stimulus": {
+  "kind": "table",
+  "text": "Electoral votes for president, election of 1800 (138 electors; 70 votes needed to win). Each elector cast two votes, one for each of two men, without naming which man was his choice for president and which for vice president.\n\n| Candidate | Party | Electoral votes |\n| Thomas Jefferson | Democratic-Republican | 73 |\n| Aaron Burr | Democratic-Republican | 73 |\n| John Adams | Federalist | 65 |\n| Charles Cotesworth Pinckney | Federalist | 64 |\n| John Jay | Federalist | 1 |\n\nThe tie sent the election to the House of Representatives, which chose Jefferson on the 36th ballot in February 1801.",
+  "source_note": "Electoral vote totals from the National Archives, 1800 Electoral College Results. Public record."
+ },
+ "source": "original; stimulus table drawn from the National Archives, 1800 Electoral College Results.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.10 Shaping the New Republic"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "Establishment of New Political Systems (1787-1800)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Unit 3: Conflict and American Independence (1754-1800)"
+   }
+  ],
+  "primary_sources": [
+   "National Archives, 1800 Electoral College Results"
+  ]
+ },
+ "status": "final",
+ "stem": "Why was a tie between Jefferson and Burr possible in 1800?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Each state cast only one vote in the Electoral College.",
+   "misconception": "Background: each state had as many electors as it had members of Congress, not one vote."
+  },
+  {
+   "key": "B",
+   "text": "The House of Representatives chose the electors for each state.",
+   "misconception": "Background: the states chose their own electors; the House did not choose them."
+  },
+  {
+   "key": "C",
+   "text": "Each elector cast two unnamed votes, one for each of two men."
+  },
+  {
+   "key": "D",
+   "text": "The candidates had to win a majority of the popular vote first.",
+   "misconception": "Background: the president was chosen by electors, not by a popular-vote majority."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "C": "The stimulus says each elector cast two votes, one for each of two men, without naming which was for president and which for vice president.",
+  "A": "The states did not cast one vote each.",
+  "B": "The House did not choose the electors.",
+  "D": "A popular-vote majority was not the rule.",
+  "general": "1. The stimulus explains the old rule: each elector cast two votes, one for each of two men.\n2. Neither vote was labeled president or vice president.\n3. Background: Democratic-Republican electors all voted for both Jefferson and Burr, so both men finished with 73 votes.\n4. So the tie was built into the rules: the system could not tell the two running mates apart.\nRemember: when a tie looks strange, read the voting rule; the rule usually explains it."
+ }
+}

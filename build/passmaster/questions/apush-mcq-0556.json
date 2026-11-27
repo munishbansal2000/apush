@@ -1,0 +1,88 @@
+{
+ "id": "apush-mcq-0556",
+ "lesson": "apush-u3-l4",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 3,
+ "topics": [
+  "3.7"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "shays-kendrick",
+ "stimulus": {
+  "kind": "image",
+  "text": "The engraving shows armed farmers fleeing through a village street in Springfield, Massachusetts, as uniformed troops with a cannon advance behind them. The farmers, many carrying muskets, run past bare winter trees and a white house. The artist's signature, \u201cC. Kendrick,\u201d appears at the lower right.\n\u2014 C. Kendrick, Shays's forces fleeing troops at Springfield, c. 1902 (from a 1902 publication)",
+  "source_note": "C. Kendrick, Shays's forces fleeing troops at Springfield, c. 1902. Public domain (pre-1930 publication)."
+ },
+ "source": "original; stimulus viewed before writing \u2014 C. Kendrick, Shays's forces fleeing troops at Springfield, c. 1902, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.7 The Articles of Confederation, B. The Articles of Confederation and the Critical Period"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "The Constitutional Convention"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Shays's Rebellion"
+   }
+  ],
+  "primary_sources": [
+   "C. Kendrick, Shays's forces fleeing troops at Springfield (c. 1902)"
+  ]
+ },
+ "status": "final",
+ "stem": "Historians often cite Shays's Rebellion (1786\u20131787) as a significant event in United States history because it",
+ "options": [
+  {
+   "key": "A",
+   "text": "proved that the new national government could enforce its laws with federal troops",
+   "misconception": "Background: that was the Whiskey Rebellion of 1794, under the Constitution, not Shays's Rebellion."
+  },
+  {
+   "key": "B",
+   "text": "made many Americans decide that slavery could not last",
+   "misconception": "Background: Shays's Rebellion was about taxes and debts in Massachusetts, not about slavery."
+  },
+  {
+   "key": "C",
+   "text": "showed the government under the Articles could not stop an armed uprising"
+  },
+  {
+   "key": "D",
+   "text": "proved that farmers supported a stronger national government",
+   "misconception": "Background: the farmers fought the government; it was their opponents who wanted a stronger national government."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "C": "Background from the books: Congress had no power to raise an army, so Massachusetts had to put the rebellion down with its own militia, which exposed the national government's weakness.",
+  "A": "Background: enforcing laws with federal troops came later, when Washington crushed the Whiskey Rebellion in 1794.",
+  "B": "Background: the rebellion was about taxes, debts, and foreclosures in western Massachusetts, not slavery.",
+  "D": "Background: the farmers fought the government; the call for a stronger government came from men like Washington and Hamilton.",
+  "general": "1. Name the event. Western Massachusetts farmers took up arms against taxes and foreclosures.\n2. Background: Congress under the Articles could not raise an army to help.\n3. Background: Massachusetts raised its own militia, so the rebellion exposed a national weakness.\n4. Background: national leaders read the failure as proof the Articles had to be replaced.\nRemember: Shays matters because the national government could only watch."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0556",
+   "file": "u3/barrons-2027-ch05-07.jpg",
+   "caption": "Shays's forces fleeing troops at Springfield, C. Kendrick, c. 1902",
+   "alt": "Engraving of armed farmers fleeing through a Springfield street as uniformed troops with a cannon advance behind them",
+   "license": "Public domain",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Shays_forces_flee_Continental_troops%2C_Springfield.jpg"
+  }
+ ]
+}

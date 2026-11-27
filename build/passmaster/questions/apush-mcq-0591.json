@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-0591",
+ "lesson": "apush-u3-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.8"
+ ],
+ "skills": [
+  "6.C"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 4,
+ "stimulus_set": "virginia-new-jersey-plans",
+ "stimulus": {
+  "kind": "text",
+  "text": "|  | Virginia Plan | New Jersey Plan |\n|---|---|---|\n| Proposed by | James Madison, for Virginia | William Paterson, for New Jersey |\n| Houses of the legislature | Two | One |\n| Representation | By each state's population | One vote for each state |\n| National government | A new government with three branches and broad powers | Congress kept as it was, with added power to tax and regulate trade |",
+  "source_note": "Table drawn from the plans debated at the Constitutional Convention, Philadelphia, summer 1787. Public domain."
+ },
+ "source": "original; table drawn from the Virginia Plan and the New Jersey Plan debated at the Constitutional Convention, Philadelphia, 1787, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.8 The Constitutional Convention and Debates over Ratification, A. Compromise and the Framing of the Constitution"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "The Constitutional Convention"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "A New Constitution"
+   }
+  ],
+  "primary_sources": [
+   "Virginia Plan (1787)",
+   "New Jersey Plan (1787)"
+  ]
+ },
+ "status": "final",
+ "stem": "Which compromise at the Constitutional Convention settled the disagreement shown in the table?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The Three-Fifths Compromise, which counted enslaved people for representation",
+   "misconception": "The Three-Fifths Compromise settled how enslaved people counted, not how states were represented."
+  },
+  {
+   "key": "B",
+   "text": "The agreement to protect the slave trade for twenty years",
+   "misconception": "The twenty-year protection of the slave trade was a bargain over slavery, not over representation."
+  },
+  {
+   "key": "C",
+   "text": "The Great Compromise: House by population, Senate two seats per state"
+  },
+  {
+   "key": "D",
+   "text": "The agreement to require nine states to ratify the Constitution",
+   "misconception": "Nine-state ratification was the rule for adopting the Constitution, not a settlement of the plans' fight."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "C": "Background: the Great Compromise split the difference, with the House following the Virginia Plan's population rule and the Senate the New Jersey Plan's equal-state rule.",
+  "A": "Background: the Three-Fifths Compromise was about counting enslaved people, not about the plans' disagreement.",
+  "B": "Background: protecting the slave trade for twenty years was a bargain over slavery, not representation.",
+  "D": "Background: nine-state ratification was how the Constitution took effect, not how the plans were reconciled.",
+  "general": "1. The table's fight is population against one vote per state.\n2. A settlement had to give each side part of what it wanted.\n3. Background: the Great Compromise built two houses, one on each rule: the House took population and the Senate took two seats per state.\nRemember: a compromise that settles a fight gives each side one of the houses."
+ }
+}

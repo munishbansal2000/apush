@@ -1,0 +1,88 @@
+{
+ "id": "apush-mcq-0627",
+ "lesson": "apush-u3-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.9"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 4,
+ "stimulus_set": "constitution-page-3",
+ "stimulus": {
+  "kind": "image",
+  "text": "The third page of the engrossed Constitution, signed at Philadelphia on September 17, 1787, carries the end of Article II and the start of Article III. It says the person with the most electoral votes shall be President \u201cif such Number be a Majority of the whole Number of Electors appointed,\u201d and that if no person has a majority, \u201cthe House of Representatives shall in like Manner chuse the President\u201d from the five highest on the list. Section 2 names the president \u201cCommander in Chief of the Army and Navy of the United States\u201d and gives power, \u201cby and with the Advice and Consent of the Senate, to make Treaties\u201d and to appoint ambassadors and \u201cJudges of the supreme Court.\u201d Article III, Section 1 vests judicial power in \u201cone supreme Court,\u201d and says judges \u201cshall hold their Offices during good Behaviour\u201d and that their pay \u201cshall not be diminished during their Continuance in Office.\u201d",
+  "source_note": "Constitution of the United States, third page, engrossed by Jacob Shallus, signed September 17, 1787. Public domain."
+ },
+ "source": "original; stimulus viewed before writing \u2014 Constitution of the United States, third page, engrossed by Jacob Shallus, signed September 17, 1787, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.9 The Constitution, A. The Structure of Government Under the Constitution"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "The Constitutional Convention"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "A New Constitution"
+   }
+  ],
+  "primary_sources": [
+   "Constitution of the United States, Article II and Article III (September 17, 1787)"
+  ]
+ },
+ "status": "final",
+ "stem": "The page says judges \u201cshall hold their Offices during good Behaviour\u201d and that their pay \u201cshall not be diminished during their Continuance in Office.\u201d What was the purpose of those two rules?",
+ "options": [
+  {
+   "key": "A",
+   "text": "To let judges serve only while the president approves of their rulings",
+   "misconception": "Life tenure during good behaviour frees judges from the president, not the reverse."
+  },
+  {
+   "key": "B",
+   "text": "To protect judges from pressure by the president or Congress"
+  },
+  {
+   "key": "C",
+   "text": "To give judges the power to veto laws passed by Congress",
+   "misconception": "Judges do not veto laws; the veto belongs to the president."
+  },
+  {
+   "key": "D",
+   "text": "To require judges to retire at a fixed age",
+   "misconception": "Good behaviour sets no age limit; judges serve as long as they behave well."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "B": "Background: a judge who cannot be fired or docked in pay for an unpopular ruling can decide cases on the law alone.",
+  "A": "Good behaviour tenure means judges do not serve at the president\u2019s pleasure.",
+  "C": "The veto is the president\u2019s check on Congress, not a judicial power.",
+  "D": "The page sets no retirement age; it ties tenure to behaviour.",
+  "general": "1. The page gives federal judges tenure during good behaviour, not a fixed term.\n2. It also forbids cutting their pay while they serve.\n3. A judge who cannot be removed or punished in pay for a ruling is free to rule against the powerful.\n4. So both rules shield the judiciary from the other two branches.\nRemember: life tenure and protected pay are independence, written as rules."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0627",
+   "file": "u3/constitution-page-3-1787.jpg",
+   "caption": "Third page of the engrossed Constitution, 1787",
+   "alt": "Handwritten third page of the Constitution showing Article II on the presidency and Article III on the judiciary, with the words Commander in Chief and good Behaviour visible",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Constitution_of_the_United_States,_page_3.jpg"
+  }
+ ]
+}

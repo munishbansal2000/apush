@@ -1,0 +1,86 @@
+{
+ "id": "apush-mcq-0436",
+ "lesson": "apush-u3-l2",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 3,
+ "topics": [
+  "3.3"
+ ],
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "tea-party-currier",
+ "stimulus": {
+  "kind": "image",
+  "text": "The print, 'The Destruction of Tea at Boston Harbor,' was published by Nathaniel Currier in 1846, after W. D. Cooper. It shows men dressed as Mohawk Indians heaving tea chests from the deck of a ship into Boston Harbor, while a large crowd on the wharf cheers and waves its hats. Tea chests float in the water around the ship.",
+  "source_note": "Nathaniel Currier, after W. D. Cooper, 1846. Public domain (pre-1930). The print is a 19th-century imagining, made 73 years after the event, not a contemporary record."
+ },
+ "source": "original; stimulus viewed before writing \u2014 Nathaniel Currier, after W. D. Cooper, 1846, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "A. Colonial Resistance to British Policies in the Aftermath of the French and Indian War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 9",
+    "section": "Stamp Act Crisis"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Sugar Act, the Currency Act, and the Stamp Act"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "A historian using this print as evidence should treat it with caution because...",
+ "options": [
+  {
+   "key": "A",
+   "text": "It was made by a British artist working for Parliament",
+   "misconception": "Currier was an American printmaker working in New York, not a British artist for Parliament \u2014 the caution is about the date, not the maker."
+  },
+  {
+   "key": "B",
+   "text": "It shows the Tea Party happening at night, when no one could see it",
+   "misconception": "The Tea Party did happen in the evening, and the print shows daylight \u2014 but the time of day is not the reason for caution; the seventy-three-year gap is."
+  },
+  {
+   "key": "C",
+   "text": "It was printed in Boston by the Sons of Liberty themselves",
+   "misconception": "Currier published the print in New York in 1846 \u2014 the Sons of Liberty were long gone, and they never printed this image."
+  },
+  {
+   "key": "D",
+   "text": "It was made in 1846, seventy-three years after the event it depicts"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "D": "Background: this print is a 19th-century imagining, made in 1846 \u2014 seventy-three years after December 1773. It shows how later Americans remembered the Tea Party, not what the men on the ships actually looked like.",
+  "A": "Currier was American, not British, and worked in New York. The problem is the date, not the maker's employer.",
+  "B": "Daylight in the print is a detail, not the caution. The seventy-three-year gap is the reason to be careful.",
+  "C": "The Sons of Liberty never printed this. Currier published it in New York, in 1846.",
+  "general": "1. Check the date first. The print is from 1846; the Tea Party was 1773 \u2014 seventy-three years apart.\n2. Ask what that gap means. No one who made this print saw the event; it shows the Tea Party as later Americans imagined it \u2014 heroic, orderly, cheered by crowds.\n3. Ask what it can still prove. How the event was remembered and celebrated, which is real evidence about 1846 even when it is not evidence about 1773.\nRemember: every source has two dates \u2014 when it was made and what it shows \u2014 and the gap between them is the first thing to check."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0436",
+   "file": "u3/boston-tea-party-currier.jpg",
+   "caption": "The Destruction of Tea at Boston Harbor, Nathaniel Currier after W. D. Cooper, 1846",
+   "alt": "Currier print of men dressed as Mohawk Indians heaving tea chests from a ship into Boston Harbor while a crowd on the wharf cheers",
+   "license": "Public domain",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Boston_Tea_Party_Currier_colored.jpg"
+  }
+ ]
+}

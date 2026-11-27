@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-0633",
+ "lesson": "apush-u3-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.9"
+ ],
+ "skills": [
+  "2.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "supremacy-article-six",
+ "stimulus": {
+  "kind": "text",
+  "text": "\u201cThis Constitution, and the Laws of the United States which shall be made in Pursuance thereof; and all Treaties made, or which shall be made, under the Authority of the United States, shall be the supreme Law of the Land; and the Judges in every State shall be bound thereby, any Thing in the Constitution or Laws of any State to the Contrary notwithstanding. . . . no religious Test shall ever be required as a Qualification to any Office or public Trust under the United States.\u201d\n\n\u2014Constitution of the United States, Article VI, September 17, 1787",
+  "source_note": "Constitution of the United States, Article VI, September 17, 1787. Public domain."
+ },
+ "source": "original; stimulus viewed before writing \u2014 Constitution of the United States, Article VI, September 17, 1787, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.9 The Constitution, Federalism\u2014the National Government and the States"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "The Ratification Battle"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "A New Constitution"
+   }
+  ],
+  "primary_sources": [
+   "Constitution of the United States, Article VI (September 17, 1787)"
+  ]
+ },
+ "status": "final",
+ "stem": "According to the passage, what happens when a state law conflicts with a federal law made under the Constitution?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The federal law prevails, and state judges must follow it."
+  },
+  {
+   "key": "B",
+   "text": "The state law prevails, because the states ratified the Constitution.",
+   "misconception": "The passage calls federal law the supreme Law of the Land, not state law."
+  },
+  {
+   "key": "C",
+   "text": "Both laws stand, and each citizen may choose which to obey.",
+   "misconception": "The passage says state judges are bound by federal law, not that citizens may pick."
+  },
+  {
+   "key": "D",
+   "text": "The conflict is settled by a vote of the state legislatures.",
+   "misconception": "The passage gives no vote to the state legislatures; it binds their judges."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "The passage calls the Constitution and federal law \u201cthe supreme Law of the Land\u201d and binds state judges to follow them.",
+  "B": "The passage puts federal law above state law, not the other way around.",
+  "C": "The passage leaves no choice: state judges are bound by the supreme law.",
+  "D": "The passage settles the conflict by binding judges, not by a vote of legislatures.",
+  "general": "1. The passage names the Constitution, federal laws, and treaties as \u201cthe supreme Law of the Land.\u201d\n2. It then binds the judges in every state to follow that supreme law.\n3. \u201cAny thing in the Constitution or laws of any state to the contrary notwithstanding\u201d means a conflicting state law gives way.\n4. So a federal law made under the Constitution beats a state law that clashes with it.\nRemember: \u201csupreme Law of the Land\u201d means federal law wins a direct clash."
+ }
+}

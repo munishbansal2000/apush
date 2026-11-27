@@ -1,0 +1,90 @@
+{
+ "id": "apush-mcq-0661",
+ "lesson": "apush-u3-l5",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.10"
+ ],
+ "skills": [
+  "2.A",
+  "3.A"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "whiskey-rebellion-1794",
+ "stimulus": {
+  "kind": "image",
+  "text": "The painting, attributed to Frederick Kemmelmeyer and made after 1795, shows George Washington on a white horse reviewing the Western Army at Fort Cumberland, Maryland. Washington points toward long ranks of soldiers in blue coats, with a cannon at the left and mountains behind them.",
+  "source_note": "Washington Reviewing the Western Army at Fort Cumberland, Maryland, attributed to Frederick Kemmelmeyer, after 1795, Metropolitan Museum of Art 63.201.2. Public domain."
+ },
+ "source": "original; stimulus viewed before writing \u2014 Washington Reviewing the Western Army at Fort Cumberland, Maryland, attributed to Frederick Kemmelmeyer, after 1795, Metropolitan Museum of Art. Public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.10 Shaping the New Republic"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "Establishment of New Political Systems (1787-1800)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Unit 3: Conflict and American Independence (1754-1800)"
+   }
+  ],
+  "primary_sources": [
+   "Frederick Kemmelmeyer (attributed), Washington Reviewing the Western Army at Fort Cumberland, Maryland (after 1795)"
+  ]
+ },
+ "status": "final",
+ "stem": "What tax did the farmers of western Pennsylvania refuse to pay in the Whiskey Rebellion?",
+ "options": [
+  {
+   "key": "A",
+   "text": "An excise tax on whiskey, proposed to raise money for the government."
+  },
+  {
+   "key": "B",
+   "text": "A tariff on imported cloth from Great Britain.",
+   "misconception": "The rebellion was about a tax on whiskey, not a tariff on cloth."
+  },
+  {
+   "key": "C",
+   "text": "A tax on the sale of western land to new settlers.",
+   "misconception": "The rebellion was about whiskey, not about land sales."
+  },
+  {
+   "key": "D",
+   "text": "A tax on newspapers and printed pamphlets.",
+   "misconception": "Background: a tax on printed paper was the Stamp Act of 1765, not the Whiskey Rebellion."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Background: Hamilton\u2019s excise on whiskey raised money to pay the debts, and western farmers distilled their grain into whiskey.",
+  "B": "The rebellion was about a tax on whiskey, not a tariff on cloth.",
+  "C": "The rebellion was about whiskey, not about land sales.",
+  "D": "A tax on printed paper belongs to an earlier protest, not to this rebellion.",
+  "general": "1. The painting shows Washington reviewing the Western Army at Fort Cumberland, Maryland.\n2. Background: the march answered farmers who refused to pay Hamilton\u2019s excise tax on whiskey, a tax meant to raise money for the government.\n3. The tax fell hard on western farmers, who turned grain into whiskey because it was easier to carry and sell.\n4. So the rebellion was a tax protest over whiskey, not over cloth, land, or paper.\nRemember: name the tax first; the name of the rebellion usually holds it."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0661",
+   "file": "u3/washington-reviews-western-army-1794.jpg",
+   "caption": "Washington reviewing the Western Army at Fort Cumberland, Maryland, attributed to Frederick Kemmelmeyer, after 1795",
+   "alt": "Painting of George Washington on a white horse, pointing toward long ranks of soldiers in blue coats with a cannon at the left, mountains behind them",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Washington_Reviewing_the_Western_Army_at_Fort_Cumberland%2C_Maryland_-_MET_63.201.2.jpg"
+  }
+ ]
+}

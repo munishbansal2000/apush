@@ -1,0 +1,91 @@
+{
+ "id": "apush-leq-0026",
+ "type": "leq",
+ "unit": 3,
+ "lesson": "apush-u3-l3",
+ "status": "final",
+ "pool": "test",
+ "difficulty": 4,
+ "topics": [
+  "3.5"
+ ],
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "stimulus_set": null,
+ "source": "original; prompt written for this topic",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.5 The American Revolution, A. The War for Independence"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.5 The American Revolution, B. Funding the War Effort"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 10"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Fighting the Revolution"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "none",
+  "source_note": "No stimulus; LEQ prompt only."
+ },
+ "prompt": "Evaluate the extent to which the American victory in the Revolutionary War depended on endurance rather than battlefield success in the period 1775\u20131783.",
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent to which the American victory depended on endurance rather than battlefield success, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim about the extent does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as the outbreak of war in 1775, the colonies' lack of a standing army, or the long war against the strongest empire on earth.",
+   "notEarned": "A sentence of background with no link to the argument, or background from a later century, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (first point): earns the point for describing specific and relevant examples of endurance deciding the war, such as the army surviving Valley Forge, Greene's southern campaign, or the war lasting until Britain tired of it.",
+   "notEarned": "General statements with no specific example do not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (second point): earns the point for describing specific and relevant examples of battlefield success deciding the war, such as Saratoga winning the French alliance or Yorktown ending major fighting.",
+   "notEarned": "Repeating the same example, or naming a limit with no specific detail, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Analysis and reasoning: earns the point for explaining how the evidence shows both endurance and battlefield success, showing how each depended on the other, linking examples to the thesis rather than listing them.",
+   "notEarned": "Listing examples with no explanation of what changed and what stayed the same does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Analysis and reasoning (complexity): earns the point for a complex argument, such as qualifying the thesis by period, showing endurance carrying the early war and battlefield success deciding the end, or weighing endurance against French aid as causes of victory.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ],
+ "modelOutline": "Thesis: The American victory depended on endurance more than on battlefield success, but endurance alone could not have ended the war \u2014 endurance kept the rebellion alive long enough for battlefield success to matter, and it was the combination, not either alone, that won.\nContext: When the war began in 1775, the Americans had militia, a new Continental Army, and a Congress that struggled to pay for both, facing Britain's professional army, its unmatched navy, and its treasury. The British expected a short war; the Americans had to survive a long one.\nEvidence of endurance: The Continental Army survived defeats around New York, the winter at Valley Forge, and the loss of Charleston, because Washington kept an army in the field and Congress kept the cause alive. Greene's southern campaign wore the British down without winning a pitched battle, leaving them confined to a few coastal posts. The war lasted eight years, and each year cost Britain more money and men for less ground held.\nEvidence of battlefield success: Saratoga destroyed a British army and won the French alliance, which brought the money, troops, and navy the Americans needed. Yorktown forced Cornwallis to surrender and ended major fighting, because the French fleet blocked escape by sea while Washington besieged him by land. Without those victories, endurance would have meant only a longer war, not a won one.\nComplexity: Endurance and battlefield success depended on each other \u2014 Saratoga came because the Americans had endured long enough to fight it, and Yorktown came because Greene's endurance had driven Cornwallis north; the victory belongs to the sequence, with endurance carrying the war and battles finishing it.",
+ "totalPoints": 6
+}

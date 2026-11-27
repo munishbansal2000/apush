@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-0540",
+ "lesson": "apush-u3-l3",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 3,
+ "topics": [
+  "3.6"
+ ],
+ "skills": [
+  "5.B"
+ ],
+ "themes": [
+  "PCE",
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "difficulty": 4,
+ "stimulus_set": "loyalists-print-1783",
+ "stimulus": {
+  "kind": "image",
+  "text": "The British print shows four Loyalists hanged from a tree branch, with the words \u201cRecommended to Congress by Lord S\u2014\u201d written above them. Below, three Native figures attack Loyalists: one holds a rope and says \u201cI have them all in a String,\u201d one holds a knife and says \u201cI'll scalp him,\u201d and one raises a tomahawk and says \u201cI'll tomahawk the Dog.\u201d A kneeling Loyalist cries, \u201cO Cruel Fate! is this the Return for Our Loyalty.\u201d The title reads \u201cThe Savages let loose, OR The Cruel FATE of the LOYALISTS,\u201d with the captions \u201cIs this a Peace, when Loyalists must bleed?\u201d and \u201cIt is a Bloody Piece of work indeed.\u201d\n\u2014 The Savages Let Loose, London, 1783 (sold by W. Humphrey, 227 Strand)",
+  "source_note": "The Savages Let Loose, or The Cruel Fate of the Loyalists, London, 1783. Library of Congress British Cartoon Prints Collection. Public domain."
+ },
+ "source": "original; stimulus viewed before writing \u2014 The Savages Let Loose, London, 1783, Library of Congress British Cartoon Prints Collection, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.6 The Influence of Revolutionary Ideals, A. The Call for Egalitarianism"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 10"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7"
+   }
+  ],
+  "primary_sources": [
+   "The Savages Let Loose, or The Cruel Fate of the Loyalists (London, 1783)"
+  ]
+ },
+ "status": "final",
+ "stem": "The print's complaint \u2014 \u201cIs this a Peace, when Loyalists must bleed?\u201d \u2014 refers most directly to the fact that the Treaty of Paris",
+ "options": [
+  {
+   "key": "A",
+   "text": "Gave Canada to the United States as punishment for loyalty",
+   "misconception": "Canada stayed British; the treaty gave the United States land to the Mississippi, not Canada."
+  },
+  {
+   "key": "B",
+   "text": "Left Loyalists to states that seized their property and drove them away"
+  },
+  {
+   "key": "C",
+   "text": "Freed every enslaved person who had joined the British",
+   "misconception": "The treaty freed no one; it said nothing about enslaved people, and many who had fled with the British were left to fend for themselves."
+  },
+  {
+   "key": "D",
+   "text": "Forced Britain to pay the Loyalists for everything they had lost",
+   "misconception": "Britain paid no such compensation; the treaty only asked Congress to recommend that states restore confiscated property."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "B": "The treaty recognized independence and set borders but left Loyalists to the states. Background: Congress could only recommend restitution, and many Loyalists had already fled to Canada, Britain, or the Caribbean.",
+  "A": "Canada never changed hands; the treaty's border ran to the Mississippi, and Canada stayed British.",
+  "C": "The treaty says nothing about enslaved people; freedom for those who joined Britain was never written into the peace.",
+  "D": "No payment was required; the treaty asked Congress to recommend restoration, and the states largely refused.",
+  "general": "1. Ask what the peace settled. Background: independence and borders \u2014 not the Loyalists.\n2. Ask who decided their fate. Background: the states, which had seized Loyalist land and driven many away.\n3. Ask what Congress could do. Background: it could only recommend restitution, which the states were free to refuse.\nRemember: a treaty that is silent on a group has still decided its fate \u2014 ask who is left out of the terms."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0540",
+   "file": "u3/pr25e-test3-q04.jpg",
+   "caption": "The Savages Let Loose, or The Cruel Fate of the Loyalists, London, 1783",
+   "alt": "British print of 1783 showing four Loyalists hanged from a tree while Native figures attack Loyalists below, with captions asking if this is a peace when Loyalists must bleed",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:The_savages_let_loose,_or_The_cruel_fate_of_the_Loyalists_LCCN97515386.jpg"
+  }
+ ]
+}

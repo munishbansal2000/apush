@@ -1,0 +1,88 @@
+{
+ "id": "apush-saq-0071",
+ "type": "saq",
+ "unit": 3,
+ "lesson": "apush-u3-l1",
+ "status": "final",
+ "pool": "practice",
+ "saq_slot": 3,
+ "difficulty": 3,
+ "skills": [
+  "1.A",
+  "2.B"
+ ],
+ "themes": [
+  "GEO",
+  "WOR"
+ ],
+ "reasoning": "comparison",
+ "stimulus_set": null,
+ "source": "original; stimulus describes Shepherd's Historical Atlas map (public domain)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "The Treaty of Paris (1763)"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 9",
+    "section": "Defeat of New France"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Seven Years' War (1754\u20131763)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "map",
+  "text": "Shepherd's Historical Atlas map of North America in 1763-1775 shows British territory in pink along the Atlantic coast, Canada, and Florida; French territory reduced to the green islands of Miquelon and St. Pierre; Spanish Louisiana in orange west of the Mississippi; and the Proclamation Line of 1763 drawn in red along the Appalachians.",
+  "source_note": "William R. Shepherd, Historical Atlas (1911), \"The British Colonies in North America, 1763-1775.\" Public domain."
+ },
+ "parts": [
+  {
+   "part": "a",
+   "modelAnswer": "The map shows Canada and all the lands east of the Mississippi colored as British territory, where before the war they had belonged to France. France is reduced on the map to the two small green islands of Miquelon and St. Pierre off Newfoundland, with its former mainland empire gone.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names a specific territorial change visible on the map, such as Britain gaining Canada, the lands east of the Mississippi, or Florida, or France's reduction to Miquelon and St. Pierre."
+    }
+   ],
+   "prompt": "Identify ONE territorial change shown on the map that resulted from the Treaty of Paris of 1763.",
+   "points": 1
+  },
+  {
+   "part": "b",
+   "modelAnswer": "With France removed from the continent, the colonies no longer faced a rival empire on their frontier, which encouraged settlers to look west toward the lands Britain had gained. At the same time, the map's red Proclamation Line shows London trying to hold those settlers back, creating a new source of friction between the colonies and the imperial government.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains a specific effect on the colonies, such as the removal of the French threat, encouragement of westward settlement, or friction over the Proclamation Line."
+    }
+   ],
+   "prompt": "Explain ONE way in which the territorial changes shown on the map affected the British colonies.",
+   "points": 1
+  },
+  {
+   "part": "c",
+   "modelAnswer": "The map was drawn in 1911, nearly 150 years after the events it depicts, so it reflects a historian's summary rather than a contemporary view. It also shows territory as solid blocks of color, which hides the reality on the ground: Native nations still controlled much of the interior, and British authority in the newly gained lands was thin and contested.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Identifies a specific limitation, such as the map's 1911 date, its simplification of territorial control, or its omission of Native nations' actual control of the interior."
+    }
+   ],
+   "prompt": "Explain ONE limitation of the map as a source for understanding the situation in North America in 1763.",
+   "points": 1
+  }
+ ],
+ "totalPoints": 3,
+ "topics": [
+  "3.2"
+ ]
+}

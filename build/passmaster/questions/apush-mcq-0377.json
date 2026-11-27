@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-0377",
+ "lesson": "apush-u3-l1",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 3,
+ "topics": [
+  "3.2"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "GEO",
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "stimulus_set": "shepherd-map",
+ "stimulus": {
+  "kind": "map",
+  "text": "The map, \"The British Colonies in North America, 1763\u20131775,\" comes from Shepherd's Historical Atlas (1911). It shows the Thirteen Colonies in dark pink along the Atlantic coast, with the Province of Quebec to the north and East and West Florida to the south.\n\nA red line marked \"Proclamation Line of 1763\" runs along the Appalachian Mountains, and the lands beyond it are labeled \"Crown lands reserved for Indians by proclamation of 1763.\" West of the Mississippi River, the land is labeled \"Louisiana\" and colored orange for Spanish possessions. Off Newfoundland, two tiny islands are colored green and labeled \"French\" \u2014 Miquelon and St. Pierre.",
+  "source_note": "Shepherd's Historical Atlas (1911), \"The British Colonies in North America, 1763\u20131775,\" public domain."
+ },
+ "source": "original; stimulus viewed before writing \u2014 Shepherd's Historical Atlas (1911), \"The British Colonies in North America, 1763\u20131775,\" public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "The Treaty of Paris (1763)"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 9",
+    "section": "Defeat of New France"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Seven Years' War (1754\u20131763)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "According to the map, what was France's position in North America after the Treaty of Paris of 1763?",
+ "options": [
+  {
+   "key": "A",
+   "text": "France kept only the tiny islands of Miquelon and St. Pierre off Newfoundland, with fishing rights there."
+  },
+  {
+   "key": "B",
+   "misconception": "This reverses the treaty: France gave up Canada and kept the sugar islands, not the other way around.",
+   "text": "France kept Canada and the Ohio Valley, giving up only its Caribbean sugar islands to Britain."
+  },
+  {
+   "key": "C",
+   "misconception": "Louisiana went to Spain, not France, and Florida went to Britain \u2014 the map colors both accordingly.",
+   "text": "France kept Louisiana and Florida, while Britain took Canada and the lands east of the Mississippi."
+  },
+  {
+   "key": "D",
+   "misconception": "The map shows France reduced to two tiny islands; Britain kept Canada and the lands east of the Mississippi.",
+   "text": "France kept all of its North American territory, since Britain returned its conquests at the peace."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "The map's legend colors France green, and the only green land in North America is the pair of tiny islands labeled \"French\" off Newfoundland \u2014 Miquelon and St. Pierre. Everything else France once held is gone: Canada and the lands east of the Mississippi are British, and Louisiana west of the river is Spanish. France chose to keep its rich Caribbean sugar islands instead, and kept only these two fishing islands in the north.",
+  "B": "The treaty took Canada from France; the sugar islands were what France kept, not what it gave up.",
+  "C": "The map colors Louisiana orange for Spain and Florida pink for Britain \u2014 neither stayed French.",
+  "D": "Britain returned Guadeloupe and Martinique to France, but it kept Canada \u2014 the map shows the continent in British pink.",
+  "general": "1. Find France on the map. The legend colors French land green, and the only green in North America is two specks off Newfoundland.\n2. Read what changed. Canada, the Ohio Valley, and the lands east of the Mississippi are all British pink now, and Louisiana is Spanish orange.\n3. Ask what France valued more. Paris kept its sugar islands in the Caribbean and gave up a continent it called a few acres of snow.\nRemember: after 1763, France was a Caribbean power with a fishing station, not a North American empire."
+ },
+ "figures": [
+  {
+   "file": "u3/barrons-2027-ch05-02.png",
+   "caption": "Shepherd's Historical Atlas, \"The British Colonies in North America, 1763\u20131775\"",
+   "alt": "Map of British North America in 1763-1775 showing the Thirteen Colonies, the Proclamation Line of 1763, and French, Spanish, and British possessions",
+   "license": "Public domain",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/British_colonies_1763-76_shepherd1923.PNG",
+   "id": "fig-apush-mcq-0377"
+  }
+ ]
+}

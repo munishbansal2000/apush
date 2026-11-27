@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-0658",
+ "lesson": "apush-u3-l5",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.10"
+ ],
+ "skills": [
+  "1.A",
+  "3.A"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 3,
+ "stimulus_set": "bank-debate-1791",
+ "stimulus": {
+  "kind": "text",
+  "text": "Thomas Jefferson, Opinion on the Constitutionality of a National Bank, February 1791: \u201cTo take a single step beyond the boundaries thus specially drawn around the powers of Congress, is to take possession of a boundless field of power, no longer susceptible of any definition.\u201d Paraphrase: Hamilton answered that the Constitution\u2019s necessary and proper clause allowed Congress to charter a bank. President Washington signed the bank bill into law in February 1791.",
+  "source_note": "Thomas Jefferson, Opinion on the Constitutionality of a National Bank, February 1791; Alexander Hamilton, Opinion on the Constitutionality of a National Bank, February 1791. Public domain."
+ },
+ "source": "original; stimulus quotes Jefferson, Opinion on the Constitutionality of a National Bank, February 1791, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.10 Shaping the New Republic"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "Establishment of New Political Systems (1787-1800)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Unit 3: Conflict and American Independence (1754-1800)"
+   }
+  ],
+  "primary_sources": [
+   "Thomas Jefferson, Opinion on the Constitutionality of a National Bank (February 1791)",
+   "Alexander Hamilton, Opinion on the Constitutionality of a National Bank (February 1791)"
+  ]
+ },
+ "status": "final",
+ "stem": "Hamilton\u2019s defense of the national bank rested on which part of the Constitution?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The power to declare war on foreign nations.",
+   "misconception": "The war power had nothing to do with chartering a bank."
+  },
+  {
+   "key": "B",
+   "text": "The guarantee of a republican form of government to the states.",
+   "misconception": "That guarantee concerns the states\u2019 governments, not a bank."
+  },
+  {
+   "key": "C",
+   "text": "The amendment process for changing the Constitution.",
+   "misconception": "Hamilton did not propose amending the Constitution to allow the bank."
+  },
+  {
+   "key": "D",
+   "text": "The necessary and proper clause, which lets Congress carry out its powers."
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "D": "Background: Hamilton argued the clause let Congress choose the means, like a bank, to carry out powers such as borrowing and taxing.",
+  "A": "The power to declare war did not support chartering a bank.",
+  "B": "Background: the republican-form guarantee concerns state governments, not a bank.",
+  "C": "Background: Hamilton defended the bank under the Constitution as written, not by amendment.",
+  "general": "1. Jefferson says a bank is not among Congress\u2019s listed powers.\n2. Background: Hamilton answered with the necessary and proper clause, which lets Congress do what is needed to carry out its listed powers.\n3. Borrowing, taxing, and paying debts are listed powers, and a bank is a means of carrying them out.\n4. So Hamilton\u2019s case rested on that clause, not on the war power, the states, or amendment.\nRemember: a broad reading finds the power in the means clause; a strict reading finds it nowhere."
+ }
+}

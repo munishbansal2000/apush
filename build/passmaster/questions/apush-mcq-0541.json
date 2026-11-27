@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-0541",
+ "lesson": "apush-u3-l3",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.6"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "WOR",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "stimulus_set": "haiti-table",
+ "stimulus": {
+  "kind": "table",
+  "text": "Saint-Domingue (the French colony on the western part of Hispaniola), about 1791:\n\n| Group | Number |\n|---|---|\n| Enslaved Africans | about 500,000 |\n| Free whites | about 30,000 |\n| Free people of mixed race (gens de couleur) | about 30,000 |\n\nFree people of mixed race owned about a third of the enslaved people on the island but were barred from political participation.",
+  "source_note": "Figures as given in Barron's AP U.S. History Premium, 2027, Chapter 5, Topic 3.6."
+ },
+ "source": "original; stimulus table from figures in Barron's AP U.S. History Premium, 2027, Chapter 5, Topic 3.6.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.6 The Influence of Revolutionary Ideals, C. The Impact of the American Revolution Abroad"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Global Struggle for Independence"
+   }
+  ],
+  "primary_sources": [
+   "Saint-Domingue population, about 1791"
+  ]
+ },
+ "status": "final",
+ "stem": "According to the table, enslaved people in Saint-Domingue outnumbered free people by about",
+ "options": [
+  {
+   "key": "A",
+   "text": "Two to one",
+   "misconception": "The table's numbers are far more lopsided than two to one; 500,000 enslaved people face only 60,000 free people."
+  },
+  {
+   "key": "B",
+   "text": "Four to one",
+   "misconception": "Four to one would mean 240,000 free people; the table counts only about 60,000 free people in all."
+  },
+  {
+   "key": "C",
+   "text": "Six to one",
+   "misconception": "Six to one would mean about 83,000 free people; the table counts about 60,000, so the gap is wider still."
+  },
+  {
+   "key": "D",
+   "text": "Eight to one"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "D": "About 500,000 enslaved people faced about 60,000 free people \u2014 whites and free people of mixed race together \u2014 a ratio of roughly eight to one.",
+  "A": "Two to one is far too small; the enslaved outnumbered the free by hundreds of thousands.",
+  "B": "Four to one understates the gap; 500,000 against 60,000 is more than eight to one.",
+  "C": "Six to one still understates it; the table's numbers give roughly eight enslaved people for every free person.",
+  "general": "1. Add the free. About 30,000 whites plus about 30,000 free people of mixed race: 60,000 in all.\n2. Compare. About 500,000 enslaved people against 60,000 free people.\n3. Divide. 500,000 divided by 60,000 is a little over eight \u2014 about eight to one.\nRemember: a ratio needs both sides added up first \u2014 total the free before you divide."
+ }
+}

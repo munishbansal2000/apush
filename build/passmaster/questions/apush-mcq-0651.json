@@ -1,0 +1,89 @@
+{
+ "id": "apush-mcq-0651",
+ "lesson": "apush-u3-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.9"
+ ],
+ "skills": [
+  "2.A"
+ ],
+ "themes": [
+  "PCE",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "stimulus_set": "capitol-1800",
+ "stimulus": {
+  "kind": "image",
+  "text": "The drawing, titled \u201cThe Capitol in 1800,\u201d shows the north wing of the United States Capitol in Washington, taken from an advanced proof of plate 38 in Glenn Brown\u2019s History of the United States Capitol. The building stands nearly alone on open ground, with a small cluster of low buildings at the left and two tiny figures for scale.",
+  "source_note": "The Capitol in 1800, from an advanced proof of plate 38, History of the United States Capitol by Glenn Brown. Library of Congress. Public domain."
+ },
+ "source": "original; stimulus viewed before writing \u2014 The Capitol in 1800, from Glenn Brown, History of the United States Capitol, plate 38, Library of Congress, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.9 The Constitution, A. The Structure of Government Under the Constitution"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "The Constitutional Convention"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "A New Constitution"
+   }
+  ],
+  "primary_sources": [
+   "Glenn Brown, History of the United States Capitol, plate 38 (Library of Congress)"
+  ]
+ },
+ "status": "final",
+ "stem": "What does the building in the drawing house?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The headquarters of the army in Washington",
+   "misconception": "The army had no headquarters in the Capitol; the building is Congress\u2019s."
+  },
+  {
+   "key": "B",
+   "text": "Congress, the Senate and the House of Representatives"
+  },
+  {
+   "key": "C",
+   "text": "The president and his cabinet at work",
+   "misconception": "The president worked from the President\u2019s House, not the Capitol."
+  },
+  {
+   "key": "D",
+   "text": "The national bank and its offices",
+   "misconception": "The bank stood in Philadelphia; the Capitol is the home of Congress."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "B": "Background: the Capitol is the building where Congress meets, with the Senate in one wing and the House in the other.",
+  "A": "The army had no headquarters in the Capitol; the building belongs to Congress.",
+  "C": "The president worked from the President\u2019s House, not the Capitol.",
+  "D": "The bank stood in Philadelphia; the Capitol in Washington is the home of Congress.",
+  "general": "1. The drawing is titled \u201cThe Capitol in 1800.\u201d\n2. Background: the Capitol is the building Congress was given to meet in, with a wing for the Senate and a wing for the House.\n3. The president, the army, and the bank each had their own places, not this building.\n4. So the building in the drawing houses Congress.\nRemember: the Capitol is Congress\u2019s building; the name itself is the clue."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0651",
+   "file": "u3/capitol-in-1800-glenn-brown.jpg",
+   "caption": "The Capitol in 1800, from Glenn Brown\u2019s History of the United States Capitol",
+   "alt": "Drawing of the north wing of the United States Capitol in 1800, a plain stone building standing nearly alone on open ground with a few low buildings at the left",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:The_Capitol_in_1800_taken_from_advanced_proof_of_plate_38_History_of_the_United_States_Capitol_by_Glenn_Brown_LCCN2014649261.jpg"
+  }
+ ]
+}

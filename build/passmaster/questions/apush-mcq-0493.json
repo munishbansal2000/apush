@@ -1,0 +1,85 @@
+{
+ "id": "apush-mcq-0493",
+ "lesson": "apush-u3-l3",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.5"
+ ],
+ "skills": [
+  "2.C"
+ ],
+ "themes": [
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "stimulus_set": "bunker-hill-warren",
+ "stimulus": {
+  "kind": "image",
+  "text": "The painting shows the Battle of Bunker Hill on June 17, 1775. In the center, the American general Joseph Warren lies dying on the ground, held by a fellow officer. Around him, American militiamen in plain clothes fight hand to hand with British regulars in red coats, who advance from the right under a British flag. At the far right edge stands a Black soldier in the American ranks, musket in hand. The painting is John Trumbull's The Death of General Warren at the Battle of Bunker's Hill, June 17, 1775, painted in 1834, nearly sixty years after the battle.",
+  "source_note": "John Trumbull, The Death of General Warren at the Battle of Bunker's Hill, June 17, 1775 (1834 version). Public domain."
+ },
+ "source": "original; stimulus viewed before writing \u2014 John Trumbull, The Death of General Warren, 1834, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.5 The American Revolution, A. The War for Independence"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 10"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Fighting the Revolution"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "What most limits the use of this painting as evidence for the Battle of Bunker Hill?",
+ "options": [
+  {
+   "key": "A",
+   "text": "It was painted in 1834, long after the battle"
+  },
+  {
+   "key": "B",
+   "text": "It shows British soldiers wearing red coats",
+   "misconception": "British regulars did wear red coats, so that detail is accurate, not a limitation."
+  },
+  {
+   "key": "C",
+   "text": "It shows General Warren dying in the battle",
+   "misconception": "Warren was killed at Bunker Hill, so the painting's central event is true, not a limitation."
+  },
+  {
+   "key": "D",
+   "text": "It shows American militiamen fighting the British",
+   "misconception": "Militiamen did fight the British at Bunker Hill, so that detail is accurate, not a limitation."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Trumbull painted the scene in 1834, so it is a later commemoration shaped by how Americans remembered the battle, not an eyewitness record.",
+  "B": "Red coats are accurate \u2014 British regulars wore them \u2014 so the detail is not a limitation.",
+  "C": "Warren did die at Bunker Hill, so the painting's center is true; the limit is when it was painted, not what it shows.",
+  "D": "Militiamen did fight at Bunker Hill, so that detail is accurate, not a limitation.",
+  "general": "1. Check the date. The battle was in 1775 and the painting in 1834, nearly sixty years later.\n2. Ask what a later painting can show. It shows how the battle was remembered, not what a witness saw that day.\n3. Keep true details in their place. Accurate coats and a real death do not turn a commemoration into a record.\nRemember: the date of a source is the first question \u2014 a painting made decades later is memory, not report."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0493",
+   "file": "u3/death-general-warren-bunker-hill-trumbull.jpg",
+   "caption": "John Trumbull, The Death of General Warren at the Battle of Bunker's Hill, June 17, 1775 (1834)",
+   "alt": "Trumbull painting of General Warren dying at Bunker Hill while American militiamen fight British regulars advancing from the right",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:The_Death_of_General_Warren_at_the_Battle_of_Bunker%27s_Hill,_June_17,_1775.jpg"
+  }
+ ]
+}

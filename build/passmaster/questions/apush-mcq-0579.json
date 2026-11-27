@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-0579",
+ "lesson": "apush-u3-l4",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 3,
+ "topics": [
+  "3.7"
+ ],
+ "skills": [
+  "5.B"
+ ],
+ "themes": [
+  "WXT",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 4,
+ "stimulus_set": "land-ordinance-1785",
+ "stimulus": {
+  "kind": "table",
+  "text": "| Part of one township | Lots | Acres | What happened to it |\n|---|---|---:|---|\n| Whole township | 36 | 23,040 | Six miles square, divided into 36 lots of 640 acres each |\n| Reserved for the United States | 4 (lots 8, 11, 26, 29) | 2,560 | Held for future sale |\n| Reserved for public schools | 1 (lot 16) | 640 | Income from the lot paid for schools |\n| Offered for sale at auction | 31 | 19,840 | Sold for at least $1 an acre; smallest purchase one lot ($640) |",
+  "source_note": "Table drawn from the Land Ordinance of 1785 (Journals of the Continental Congress, May 20, 1785). Public domain."
+ },
+ "source": "original; table drawn from the Land Ordinance of 1785 (Journals of the Continental Congress, May 20, 1785), public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.7 The Articles of Confederation, C. Organizing the Northwest Territory"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Northwest Ordinance of 1787"
+   }
+  ],
+  "primary_sources": [
+   "Land Ordinance of 1785 (Journals of the Continental Congress, May 20, 1785)"
+  ]
+ },
+ "status": "final",
+ "stem": "The table shows the smallest purchase was one lot \u2014 640 acres for $640. What does that price tell a historian about who could buy land at first?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Most ordinary settlers could not afford it, so speculators bought first"
+  },
+  {
+   "key": "B",
+   "text": "Ordinary farm families could easily afford a lot of their own",
+   "misconception": "Background: $640 in cash was far beyond what most ordinary farm families held."
+  },
+  {
+   "key": "C",
+   "text": "The government gave the land away free",
+   "misconception": "The table says land sold for at least $1 an acre, not free."
+  },
+  {
+   "key": "D",
+   "text": "Land sales quickly paid off the national debt",
+   "misconception": "Background: early land sales brought only a small revenue, not a quick payoff of the debt."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Background from the books: few settlers had the capital for a $640 purchase, so early sales favored speculators and land companies, and the debt-ridden government received only a small revenue from its lands at first.",
+  "B": "Background: $640 in cash was far beyond most ordinary farm families in the 1780s.",
+  "C": "The table says land sold for at least $1 an acre; it was not given away.",
+  "D": "Background: early land sales brought only a small revenue, not a quick payoff of the war debts.",
+  "general": "1. Read the price. The smallest purchase was one lot: 640 acres for $640.\n2. Background: few ordinary settlers held $640 in cash in the 1780s.\n3. Background: early buyers were mainly speculators and land companies with capital.\n4. The price was set high to raise revenue, and the cost fell hardest on ordinary families.\nRemember: a high minimum price decides who gets the land, not just how much it costs."
+ }
+}

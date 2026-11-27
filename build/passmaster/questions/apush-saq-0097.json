@@ -1,0 +1,95 @@
+{
+ "id": "apush-saq-0097",
+ "lesson": "apush-u3-l5",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.12"
+ ],
+ "skills": [
+  "1.B",
+  "4.B"
+ ],
+ "themes": [
+  "NAT",
+  "GEO"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 3,
+ "status": "final",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.7 The Articles of Confederation"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "Establishment of New Political Systems (1787-1800)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Unit 3: Conflict and American Independence (1754-1800)"
+   }
+  ],
+  "primary_sources": [
+   "Northwest Ordinance, July 13, 1787"
+  ]
+ },
+ "source": "original; stimulus is an original secondary summary of the Northwest Ordinance's plan for new states.",
+ "stimulus_set": null,
+ "stimulus": {
+  "type": "text",
+  "text": "Secondary source (original summary): The Northwest Ordinance of 1787 gave the United States a plan for turning western land into states. In the first stage, Congress named a governor and three judges to rule the territory. When 5,000 free adult men lived there, voters could elect an assembly. When a part of the territory held 60,000 free inhabitants, it could write a republican constitution and join the Union on an equal footing with the original states. The Ordinance also banned slavery in the territory, protected religious freedom, and promised that schools would be encouraged.",
+  "source": "Original secondary summary of the Northwest Ordinance, drawn from Barron’s Premium 2027, Chapter 5, Topic 3.7.",
+  "rights": "Original prose.",
+  "source_note": "Original secondary summary, drawn from Barron’s Premium 2027, Chapter 5, Topic 3.7."
+ },
+ "saq_slot": 1,
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify ONE stage in the Northwest Ordinance's path from territory to statehood.",
+   "modelAnswer": "In the first stage, Congress named a governor and three judges to rule the territory, with no elected assembly. A later stage let voters elect an assembly once 5,000 free adult men lived there.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names one stage in the Ordinance's path, such as the governor-and-judges first stage, the elected assembly at 5,000 free adult men, or statehood at 60,000 free inhabitants.",
+     "notEarned": "Naming only that the Ordinance organized the territory, with no stage, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain ONE way the Ordinance's plan shaped how the United States grew.",
+   "modelAnswer": "The Ordinance set a clear path for new states to join on an equal footing, so the West grew by adding states rather than by staying a colony. Background: that pattern later guided settlement all the way to the Pacific.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains one way the Ordinance's plan shaped growth, such as new states joining as equals, or the plan serving as a model for later territories.",
+     "notEarned": "Saying only that the Ordinance organized the West, with no effect on growth, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain ONE limit of the Ordinance's plan.",
+   "modelAnswer": "Its first stage gave settlers no elected government, since a governor and judges ruled alone. The plan also let only free adult men vote for the assembly, leaving women and enslaved people without a voice.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains one limit of the Ordinance's plan, such as ruling the first stage without an elected assembly, or letting only free adult men vote for the assembly.",
+     "notEarned": "Saying only that the plan was imperfect, with no specific limit, does not earn the point."
+    }
+   ]
+  }
+ ],
+ "totalPoints": 3
+}

@@ -1,0 +1,86 @@
+{
+ "id": "apush-mcq-0492",
+ "lesson": "apush-u3-l3",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 3,
+ "topics": [
+  "3.5"
+ ],
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "WOR",
+  "SOC"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 3,
+ "stimulus_set": "bunker-hill-warren",
+ "stimulus": {
+  "kind": "image",
+  "text": "The painting shows the Battle of Bunker Hill on June 17, 1775. In the center, the American general Joseph Warren lies dying on the ground, held by a fellow officer. Around him, American militiamen in plain clothes fight hand to hand with British regulars in red coats, who advance from the right under a British flag. At the far right edge stands a Black soldier in the American ranks, musket in hand. The painting is John Trumbull's The Death of General Warren at the Battle of Bunker's Hill, June 17, 1775, painted in 1834, nearly sixty years after the battle.",
+  "source_note": "John Trumbull, The Death of General Warren at the Battle of Bunker's Hill, June 17, 1775 (1834 version). Public domain."
+ },
+ "source": "original; stimulus viewed before writing \u2014 John Trumbull, The Death of General Warren, 1834, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.5 The American Revolution, A. The War for Independence"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 10"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Fighting the Revolution"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "The Black soldier shown at the far right of the painting is most significant as evidence that",
+ "options": [
+  {
+   "key": "A",
+   "text": "Black men fought in the Patriot ranks from the start"
+  },
+  {
+   "key": "B",
+   "text": "The British promised freedom to every enslaved person in America",
+   "misconception": "Dunmore's offer went only to enslaved people belonging to rebels who would bear arms for Britain, not to every enslaved person."
+  },
+  {
+   "key": "C",
+   "text": "Slavery ended in Massachusetts as soon as the war began",
+   "misconception": "Slavery in Massachusetts ended gradually through court cases in the 1780s, not at the start of the war."
+  },
+  {
+   "key": "D",
+   "text": "The Continental Army barred Black men from serving",
+   "misconception": "Black men did serve in the Continental Army and the militias; the army did not bar them."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Black soldiers stood in the American ranks at Bunker Hill in June 1775, months into the war, fighting the same battle as their white neighbors.",
+  "B": "Dunmore's 1775 offer was narrow \u2014 freedom only for enslaved people of rebels who bore arms for Britain \u2014 not a promise to everyone.",
+  "C": "Slavery in Massachusetts ended through court decisions in the 1780s, not when the first shots were fired.",
+  "D": "Black men served in the Continental Army and the militias throughout the war, some winning freedom for their service.",
+  "general": "1. Look at the figure. A Black soldier stands in the American ranks at the far right, musket in hand.\n2. Ask what his presence proves. Black men fought for the Patriot cause from the war's first battles, not only after some later decision.\n3. Rule out the wider claims. No general emancipation followed Bunker Hill, and neither side freed every enslaved person.\nRemember: one figure in a painting can prove a fact about who was there, even when the painting says nothing about what happened to them after."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0492",
+   "file": "u3/death-general-warren-bunker-hill-trumbull.jpg",
+   "caption": "John Trumbull, The Death of General Warren at the Battle of Bunker's Hill, June 17, 1775 (1834)",
+   "alt": "Trumbull painting of General Warren dying at Bunker Hill while American militiamen fight British regulars advancing from the right",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:The_Death_of_General_Warren_at_the_Battle_of_Bunker%27s_Hill,_June_17,_1775.jpg"
+  }
+ ]
+}

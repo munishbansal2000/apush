@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-0604",
+ "lesson": "apush-u3-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.8"
+ ],
+ "skills": [
+  "3.A",
+  "5.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "federalist-51",
+ "stimulus": {
+  "kind": "text",
+  "text": "\u201cAmbition must be made to counteract ambition. The interest of the man must be connected with the constitutional rights of the place. It may be a reflection on human nature, that such devices should be necessary to controul the abuses of government. But what is government itself but the greatest of all reflections on human nature? If men were angels, no government would be necessary. If angels were to govern men, neither external nor internal controuls on government would be necessary. In framing a government which is to be administered by men over men, the great difficulty lies in this: you must first enable the government to controul the governed; and in the next place, oblige it to controul itself.\u201d\n\n\u2014Publius, Federalist No. 51, February 1788",
+  "source_note": "Publius, Federalist No. 51, February 1788. Public domain."
+ },
+ "source": "original; stimulus viewed before writing \u2014 Publius, Federalist No. 51, February 1788, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.8 The Constitutional Convention and Debates over Ratification, C. Federalists, Anti-Federalists, and the Adoption of the Bill of Rights"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "The Ratification Battle"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "A New Constitution"
+   }
+  ],
+  "primary_sources": [
+   "Publius, Federalist No. 51 (February 1788)"
+  ]
+ },
+ "status": "final",
+ "stem": "What is the main point of this passage from Federalist No. 51?",
+ "options": [
+  {
+   "key": "A",
+   "text": "A government must be strong enough to govern, and forced to restrain itself"
+  },
+  {
+   "key": "B",
+   "text": "A government should be weak, so that it can never threaten liberty",
+   "misconception": "The passage says government must first be enabled to control the governed; weakness is not its answer."
+  },
+  {
+   "key": "C",
+   "text": "Only angels can be trusted to govern men fairly",
+   "misconception": "The passage says if angels governed men no controls would be needed, but men govern men, so controls are needed."
+  },
+  {
+   "key": "D",
+   "text": "The states should keep all power, and the national government should have none",
+   "misconception": "The passage is about structuring the national government, not about giving all power to the states."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Madison's two-sided difficulty is in the last sentence: enable the government to control the governed, and in the next place oblige it to control itself.",
+  "B": "The passage demands a government enabled to control the governed, not a weak one.",
+  "C": "Angels are a counterfactual: men govern men, so controls are necessary.",
+  "D": "The passage is about the national government's own structure, not about the states keeping all power.",
+  "general": "1. Madison states the great difficulty in two parts.\n2. First, enable the government to control the governed: it must be strong enough to act.\n3. Next, oblige it to control itself: it must be checked against abuse.\n4. Background: the checks and balances of the Constitution are built to do both at once.\nRemember: a good government needs power and a leash, and the passage demands both."
+ }
+}

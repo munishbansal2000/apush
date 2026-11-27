@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-0433",
+ "lesson": "apush-u3-l2",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.3"
+ ],
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "revere-massacre",
+ "stimulus": {
+  "kind": "image",
+  "text": "The engraving, 'The Bloody Massacre perpetrated in King-Street Boston on March 5th 1770,' was engraved, printed, and sold by Paul Revere. It shows a neat line of British soldiers firing a single volley into a crowd of Bostonians, with five men fallen in the foreground. Below the image, the names of the dead are listed: Samuel Gray, Samuel Maverick, James Caldwell, Crispus Attucks, and Patrick Carr \u2014 'Killed. Six wounded.'",
+  "source_note": "Paul Revere, 1770. Library of Congress. Public domain (pre-1930)."
+ },
+ "source": "original; stimulus viewed before writing \u2014 Paul Revere, 1770, Library of Congress, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "A. Colonial Resistance to British Policies in the Aftermath of the French and Indian War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 9",
+    "section": "Stamp Act Crisis"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Sugar Act, the Currency Act, and the Stamp Act"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "According to the engraving's own caption, how many Bostonians were killed, and who was among them?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Five were killed, including Crispus Attucks"
+  },
+  {
+   "key": "B",
+   "text": "Eight were killed, including Samuel Adams",
+   "misconception": "Eight was the number of soldiers tried, not killed \u2014 and Samuel Adams was not among the dead; he was the one who spread the news of the event."
+  },
+  {
+   "key": "C",
+   "text": "Two were killed, including John Hancock",
+   "misconception": "Two was the number of soldiers convicted, not killed \u2014 and Hancock was a merchant whose ship had been seized, not a victim of the shooting."
+  },
+  {
+   "key": "D",
+   "text": "Six were killed, including Paul Revere",
+   "misconception": "Six was the number wounded, not killed \u2014 and Revere engraved the scene; he was not shot in it."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "The caption lists the dead by name: Samuel Gray, Samuel Maverick, James Caldwell, Crispus Attucks, and Patrick Carr \u2014 five killed, six wounded. Attucks, an African American, is named among them.",
+  "B": "Eight were tried, not killed. Samuel Adams lived to spread the story; he was not a victim of it.",
+  "C": "Two soldiers were convicted. Hancock was alive \u2014 his seized ship, not his death, is part of this story.",
+  "D": "Six were wounded, not killed. Revere made the engraving; he was not shot in the street.",
+  "general": "1. Read the caption, not just the picture. It names the dead: Gray, Maverick, Caldwell, Attucks, and Carr \u2014 five names.\n2. Note who is among them. Crispus Attucks, an African American, is listed with the rest, and the caption says six more were wounded.\n3. Keep the numbers straight. Five killed, six wounded, eight soldiers tried \u2014 three different numbers for three different facts.\nRemember: captions are evidence too \u2014 the words under a picture often carry the facts the picture cannot."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0433",
+   "file": "u3/pr25e-ch07-q03.jpg",
+   "caption": "The Bloody Massacre perpetrated in King-Street Boston on March 5th 1770, engraved, printed, and sold by Paul Revere",
+   "alt": "Revere engraving of British soldiers firing a volley into a crowd of Bostonians in King Street, with five men fallen in the foreground",
+   "license": "Public domain",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/5/51/The_bloody_massacre_perpetrated_in_King_Street_Boston_on_March_5th_1770_by_a_party_of_the_29th_Regt._-_engrav%27d%2C_printed_%26_sold_by_Paul_Revere%2C_Boston._LCCN2008680173.jpg"
+  }
+ ]
+}

@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-0637",
+ "lesson": "apush-u3-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.9"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "stimulus_set": "amendment-article-five",
+ "stimulus": {
+  "kind": "text",
+  "text": "\u201cThe Congress, whenever two thirds of both Houses shall deem it necessary, shall propose Amendments to this Constitution, or, on the Application of the Legislatures of two thirds of the several States, shall call a Convention for proposing Amendments, which, in either Case, shall be valid to all Intents and Purposes, as Part of this Constitution, when ratified by the Legislatures of three fourths of the several States, or by Conventions in three fourths thereof, as the one or the other Mode of Ratification may be proposed by the Congress. . . . no State, without its Consent, shall be deprived of its equal Suffrage in the Senate.\u201d\n\n\u2014Constitution of the United States, Article V, September 17, 1787",
+  "source_note": "Constitution of the United States, Article V, September 17, 1787. Public domain."
+ },
+ "source": "original; stimulus viewed before writing \u2014 Constitution of the United States, Article V, September 17, 1787, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.9 The Constitution"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "The Bill of Rights"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "A New Constitution"
+   }
+  ],
+  "primary_sources": [
+   "Constitution of the United States, Article V (September 17, 1787)"
+  ]
+ },
+ "status": "final",
+ "stem": "According to the passage, what share of the states must ratify an amendment before it becomes part of the Constitution?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Three-fourths of the states"
+  },
+  {
+   "key": "B",
+   "text": "Two-thirds of the states",
+   "misconception": "Two-thirds is the share needed to propose, not to ratify."
+  },
+  {
+   "key": "C",
+   "text": "A majority of the states",
+   "misconception": "A bare majority is not enough; the passage requires three-fourths."
+  },
+  {
+   "key": "D",
+   "text": "All of the states",
+   "misconception": "The passage requires three-fourths, not every state."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "The passage says an amendment is valid \u201cwhen ratified by the Legislatures of three fourths of the several States, or by Conventions in three fourths thereof.\u201d",
+  "B": "Two-thirds is the share for proposing an amendment, not for ratifying one.",
+  "C": "The passage sets the bar at three-fourths, well above a bare majority.",
+  "D": "The passage requires three-fourths of the states, not all of them.",
+  "general": "1. Article V separates proposing an amendment from ratifying one.\n2. Proposing takes two-thirds, either of Congress or of the state legislatures.\n3. Ratifying takes a higher share: three-fourths of the states.\n4. So the answer is the ratification share, not the proposal share, and the three-fourths bar is what makes amendments hard to pass.\nRemember: proposing takes two-thirds, ratifying takes three-fourths."
+ }
+}

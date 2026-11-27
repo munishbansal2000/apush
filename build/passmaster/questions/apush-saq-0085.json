@@ -1,0 +1,94 @@
+{
+ "id": "apush-saq-0085",
+ "type": "saq",
+ "unit": 3,
+ "lesson": "apush-u3-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "topics": [
+  "3.7"
+ ],
+ "skills": [
+  "3.A",
+  "2.C"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "continuity-change",
+ "stimulus_set": null,
+ "source": "original; stimulus viewed before writing \u2014 Northwest Ordinance, Articles V and VI (July 13, 1787), public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.7 The Articles of Confederation, C. Organizing the Northwest Territory"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Northwest Ordinance of 1787"
+   }
+  ],
+  "primary_sources": [
+   "Northwest Ordinance, Articles V and VI (July 13, 1787)"
+  ]
+ },
+ "saq_slot": 2,
+ "totalPoints": 3,
+ "stimulus": {
+  "type": "text",
+  "text": "\u201cArticle V. And whenever any of the said States shall have sixty thousand free inhabitants therein, such State shall be admitted by its delegates, into the Congress of the United States, on an equal footing with the original States, in all respects whatever. . . .\nArticle VI. There shall be neither slavery nor involuntary servitude in the said territory, otherwise than in the punishment of crimes, whereof the party shall have been duly convicted: Provided, always, That any person escaping into the same, from whom labor or service is lawfully claimed in any one of the original States, such fugitive may be lawfully reclaimed, and conveyed to the person claiming his or her labor or service as aforesaid.\u201d\n\u2014 Northwest Ordinance, July 13, 1787 (abridged)",
+  "source": "Northwest Ordinance, Articles V and VI, July 13, 1787. Public domain.",
+  "rights": "Public domain.",
+  "source_note": "Northwest Ordinance, Articles V and VI, July 13, 1787. Public domain."
+ },
+ "parts": [
+  {
+   "part": "a",
+   "prompt": "Identify ONE way the Northwest Ordinance treated the new states as equals of the original states.",
+   "modelAnswer": "One way is that Article V admits a new state into Congress on an equal footing with the original states, in all respects whatever. A territory that reached sixty thousand free inhabitants could join the Union as a full equal, not as a colony.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names one equal treatment, such as admission on an equal footing at sixty thousand free inhabitants or the promise of a republican state government.",
+     "notEarned": "Describing the territorial government without naming an equal treatment does not earn the point."
+    }
+   ],
+   "points": 1
+  },
+  {
+   "part": "b",
+   "prompt": "Explain ONE way Article VI limited slavery in the Northwest Territory.",
+   "modelAnswer": "Article VI banned slavery and involuntary servitude in the territory, except as punishment for a crime of which a person had been duly convicted. That drew a legal line against slavery north of the Ohio River.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains one limit Article VI set, such as banning slavery and involuntary servitude in the territory except as punishment for crime.",
+     "notEarned": "Saying only that the ordinance dealt with slavery, without explaining the ban, does not earn the point."
+    }
+   ],
+   "points": 1
+  },
+  {
+   "part": "c",
+   "prompt": "Explain ONE limit of the ordinance as evidence about the spread of slavery in the United States.",
+   "modelAnswer": "One limit is that the ban applied only north of the Ohio River, while slavery continued and grew south of it. The fugitive proviso also let enslavers reclaim people who escaped into the territory, so the ordinance drew a boundary around slavery rather than ending it.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains one limit, such as the ban covering only the Northwest Territory, slavery continuing in the South, or the fugitive proviso.",
+     "notEarned": "Restating the ban without explaining what it leaves out does not earn the point."
+    }
+   ],
+   "points": 1
+  }
+ ]
+}

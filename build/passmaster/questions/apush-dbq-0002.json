@@ -1,0 +1,155 @@
+{
+ "id": "apush-dbq-0002",
+ "type": "dbq",
+ "unit": 3,
+ "lesson": "apush-u3-l1",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "topics": [
+  "3.2"
+ ],
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "WOR",
+  "GEO"
+ ],
+ "reasoning": "continuity-change",
+ "stimulus_set": null,
+ "source": "original; documents are public-domain primary sources or paraphrases of them (see each document's sourcing note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.2 The Seven Years' War (The French and Indian War)"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 9",
+    "section": "War in the West"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Seven Years' War (1754\u20131763)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "prompt": "Evaluate the extent to which the outcome of the Seven Years' War changed the position of Native peoples in North America.",
+ "documents": [
+  {
+   "n": 1,
+   "kind": "text",
+   "date": "December 1753",
+   "title": "The French commander replies to Washington",
+   "source": "French reply to George Washington at Fort Le Boeuf, December 1753, as reported by Washington. Paraphrased.",
+   "sourcing": "The French commander at Fort Le Boeuf, answering Washington's demand that France leave the Ohio Valley. Paraphrased from Washington's report.",
+   "text": "The French commander told Washington that the Ohio Valley belonged to the King of France, that French forces had orders to hold it, and that English settlers must withdraw beyond the mountains."
+  },
+  {
+   "n": 2,
+   "kind": "text",
+   "date": "Spring 1763",
+   "title": "Pontiac addresses an Ottawa council",
+   "source": "Pontiac, address to an Ottawa council, spring 1763, as recorded by Francis Parkman, The Conspiracy of Pontiac (1851). Public domain.",
+   "sourcing": "Pontiac's words as recorded nearly a century later by the historian Francis Parkman, who gathered them from French and British accounts; the wording is Parkman's rendering, not a transcript.",
+   "text": "It is important for us, my brothers, that we exterminate from our lands this nation which seeks only to destroy us. You see as well as I that we can no longer supply our needs, as we have done, from our brothers, the French."
+  },
+  {
+   "n": 3,
+   "kind": "text",
+   "date": "February 10, 1763",
+   "title": "Treaty of Paris, Article VII",
+   "source": "Treaty of Paris, signed February 10, 1763. Public domain.",
+   "sourcing": "The peace treaty ending the Seven Years' War, stating what France surrendered in North America; Native peoples were not parties to the treaty.",
+   "text": "His Most Christian Majesty cedes and guaranties to his Britannick Majesty, in full right, Canada, with all its dependencies, as well as the island of Cape Breton, and all the other islands and coasts in the gulph and river of St. Lawrence."
+  },
+  {
+   "n": 4,
+   "kind": "text",
+   "date": "October 7, 1763",
+   "title": "Royal Proclamation of 1763",
+   "source": "Royal Proclamation of October 7, 1763. Public domain.",
+   "sourcing": "A royal order issued by George III, ordering settlers off lands reserved for Native peoples.",
+   "text": "And We do further strictly enjoin and require all Persons whatever who have either wilfully or inadvertently seated themselves upon any Lands within the Countries above described, or upon any other Lands which, not having been ceded to or purchased by Us, are still reserved to the said Indians as aforesaid, forthwith to remove themselves from such Settlements."
+  },
+  {
+   "n": 5,
+   "kind": "text",
+   "date": "1764",
+   "title": "Gage reports on the rebellion",
+   "source": "General Thomas Gage, report to London, 1764. Paraphrased.",
+   "sourcing": "Gage, the British commander who replaced Amherst and broke the uprising, reporting to London on what the rebellion had cost. Paraphrased.",
+   "text": "General Thomas Gage reported that the uprising had cost Britain hundreds of soldiers and thousands of settlers, and that holding the frontier would now require permanent garrisons at the western forts."
+  },
+  {
+   "n": 6,
+   "kind": "text",
+   "date": "1768",
+   "title": "The Treaty of Fort Stanwix",
+   "source": "Treaty of Fort Stanwix, 1768. Paraphrased.",
+   "sourcing": "A treaty between Britain and the Iroquois Confederacy, five years after the war, showing how the new order worked in practice.",
+   "text": "At the Treaty of Fort Stanwix in 1768, Iroquois leaders ceded to Britain a vast tract of land south of the Ohio River. The Shawnee and Delaware peoples, who actually lived on that land, had not agreed to the cession and refused to recognize it."
+  },
+  {
+   "n": 7,
+   "kind": "table",
+   "date": "1763-1764",
+   "title": "Pontiac's Rebellion: the toll",
+   "source": "Figures from Barron's Premium 2027, Chapter 5, \"Pontiac's Rebellion.\"",
+   "sourcing": "A table of the rebellion's scale, drawn from the course book's account of the uprising.",
+   "text": "| Item | Figure |\n| British forts attacked | 7 |\n| Forts captured by Native warriors | several west of Detroit |\n| British soldiers killed or captured | more than 400 |\n| Colonists killed or captured | more than 2,000 |\n| British commander replaced | Amherst, August 1763 |\n| Uprising broken | 1764, by Gage's campaigns |"
+  }
+ ],
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent to which the war's outcome changed the position of Native peoples, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim about the extent of change does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as the rivalry between Britain and France in North America, the fur trade, or the way Native nations balanced the two empires before 1763.",
+   "notEarned": "A sentence of background with no link to the argument does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence from documents (first point): earns the point for describing specific and relevant evidence from at least three documents to support an argument about change or continuity in the Native peoples' position.",
+   "notEarned": "Using fewer than three documents, or quoting documents without describing what they show, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence from documents (second point): earns the point for using the content of at least six documents to support an argument, with the evidence accurately described and tied to the claim.",
+   "notEarned": "Using fewer than six documents, or listing documents without connecting them to the argument, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence beyond the documents: earns the point for describing a specific and relevant example beyond the documents, such as the Proclamation Line's weak enforcement, the continued fur trade, or the later Treaty of Fort Stanwix in 1784.",
+   "notEarned": "A general statement with no specific example beyond the documents does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "3.B",
+   "criterion": "Sourcing: earns the point for explaining the relevance of a document's author, purpose, audience, or historical situation to the argument, for at least two documents.",
+   "notEarned": "Identifying an author without explaining why it matters, or sourcing only one document, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Complexity: earns the point for demonstrating a complex understanding, such as qualifying the extent of change, showing that Native peoples resisted and adapted rather than simply disappearing, or weighing change against continuity.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ],
+ "modelOutline": "Thesis: The war's outcome changed the Native peoples' position profoundly and for the worse: it removed the French counterweight that had protected their independence and left them facing a single expanding empire, though they resisted and adapted rather than simply disappearing.\nContext: Before 1763 the Ohio Valley nations balanced France against Britain, trading with both and allying with whichever offered better terms; that competition was their protection.\nEvidence: Documents 1-2 show the old order and its defense \u2014 French claims to the Ohio Valley and Pontiac's call to resist. Documents 3-5 show the new order \u2014 Canada ceded to Britain, a line drawn by the Proclamation, rebellion broken at great cost. Documents 6-7 show the consequences \u2014 land ceded by others at Fort Stanwix, and the toll of resistance.\nBeyond the documents: The Proclamation Line was weakly enforced, settlers pushed west regardless, and later treaties repeated the pattern of cessions made by peoples who did not live on the land.\nSourcing: Pontiac's words reach us through Parkman, a 19th-century historian, so they carry his framing; the treaty articles and the Proclamation are official British texts stating London's view, not Native consent.\nComplexity: Change was profound but not total \u2014 Native nations kept fighting, negotiating, and adapting for decades; the war ended their leverage, not their presence.",
+ "totalPoints": 7
+}

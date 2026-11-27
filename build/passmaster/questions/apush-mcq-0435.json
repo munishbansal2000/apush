@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-0435",
+ "lesson": "apush-u3-l2",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.3"
+ ],
+ "skills": [
+  "2.A"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 4,
+ "stimulus_set": "tea-party-currier",
+ "stimulus": {
+  "kind": "image",
+  "text": "The print, 'The Destruction of Tea at Boston Harbor,' was published by Nathaniel Currier in 1846, after W. D. Cooper. It shows men dressed as Mohawk Indians heaving tea chests from the deck of a ship into Boston Harbor, while a large crowd on the wharf cheers and waves its hats. Tea chests float in the water around the ship.",
+  "source_note": "Nathaniel Currier, after W. D. Cooper, 1846. Public domain (pre-1930). The print is a 19th-century imagining, made 73 years after the event, not a contemporary record."
+ },
+ "source": "original; stimulus viewed before writing \u2014 Nathaniel Currier, after W. D. Cooper, 1846, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "A. Colonial Resistance to British Policies in the Aftermath of the French and Indian War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 9",
+    "section": "Stamp Act Crisis"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Sugar Act, the Currency Act, and the Stamp Act"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "The Tea Act angered colonists even though it made tea cheaper because...",
+ "options": [
+  {
+   "key": "A",
+   "text": "It raised the tax on tea to pay for the Boston Massacre trial",
+   "misconception": "The Tea Act did not raise the tea tax \u2014 the tax stayed the same while the price fell. The trial was paid for separately, years earlier."
+  },
+  {
+   "key": "B",
+   "text": "It gave the East India Company a monopoly that bypassed colonial merchants"
+  },
+  {
+   "key": "C",
+   "text": "It forbade colonists from drinking tea of any kind",
+   "misconception": "No tea was forbidden \u2014 colonists could still buy smuggled Dutch tea, and many did. The fight was over the Company's privilege, not over drinking tea."
+  },
+  {
+   "key": "D",
+   "text": "It closed Boston harbor until the tea was paid for",
+   "misconception": "The harbor was closed later, by the Boston Port Act of 1774, as punishment for the Tea Party \u2014 the Tea Act itself did not close the port."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "B": "The Tea Act let the East India Company sell directly to colonial merchants on consignment, bypassing local middlemen and undercutting smugglers. Cheaper tea came with a monopoly \u2014 and with Parliament's taxing power reaffirmed.",
+  "A": "The tax did not rise. The Tea Act left the tea duty as it was and lowered the price \u2014 the anger was about the monopoly.",
+  "C": "Tea was never forbidden. Smuggled Dutch tea stayed available, and the protest was about the Company's privilege.",
+  "D": "The port closed in 1774, after the Tea Party. The Tea Act of 1773 did not close any harbor.",
+  "general": "1. Start with the surprise. The Tea Act made tea cheaper \u2014 so the price cannot be the grievance.\n2. Ask what the act gave away. A monopoly: the East India Company could sell directly, bypassing colonial merchants and undercutting smugglers.\n3. Ask what the monopoly proved. That Parliament could still tax the colonies and favor a great company \u2014 the principle, not the price, was the insult.\nRemember: when a good deal angers people, look for what the deal proves \u2014 the principle is usually the price."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0435",
+   "file": "u3/boston-tea-party-currier.jpg",
+   "caption": "The Destruction of Tea at Boston Harbor, Nathaniel Currier after W. D. Cooper, 1846",
+   "alt": "Currier print of men dressed as Mohawk Indians heaving tea chests from a ship into Boston Harbor while a crowd on the wharf cheers",
+   "license": "Public domain",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Boston_Tea_Party_Currier_colored.jpg"
+  }
+ ]
+}

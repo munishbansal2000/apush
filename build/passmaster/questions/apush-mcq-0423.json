@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-0423",
+ "lesson": "apush-u3-l2",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.3"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "PCE",
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "difficulty": 4,
+ "stimulus_set": "colonies-reduced",
+ "stimulus": {
+  "kind": "image",
+  "text": "The engraving, 'The Colonies Reduced \u2014 Its Companion,' was designed after Benjamin Franklin and published in London in 1768. In the top panel, a woman representing Britain sits slumped against a globe, her arms and legs cut off and lying on the ground around her. Each severed limb is labeled with a colony's name: Virginia, New York, Pennsylvania, and New England. Her severed hand still holds an olive branch. In the bottom panel, France and Spain quarrel over a barrel while a Native American figure watches, and a snake coils on the ground.",
+  "source_note": "After Benjamin Franklin, published by John Almon, London, 1768. Public domain (pre-1930)."
+ },
+ "source": "original; stimulus viewed before writing \u2014 after Benjamin Franklin, published by John Almon, London, 1768, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "A. Colonial Resistance to British Policies in the Aftermath of the French and Indian War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 9",
+    "section": "Stamp Act Crisis"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Sugar Act, the Currency Act, and the Stamp Act"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "The cartoon's central argument is best described as which of the following?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Taxing the colonies without their consent would weaken Britain itself"
+  },
+  {
+   "key": "B",
+   "text": "The colonies were too weak to resist British taxation",
+   "misconception": "The cartoon shows the colonies as Britain's own limbs \u2014 their loss cripples Britain, which is the opposite of calling them weak."
+  },
+  {
+   "key": "C",
+   "text": "France and Spain were too divided to threaten Britain",
+   "misconception": "The bottom panel shows France and Spain quarreling, but the cartoon's warning is that they will profit from Britain's weakness \u2014 division now does not mean safety later."
+  },
+  {
+   "key": "D",
+   "text": "The colonies should declare independence at once",
+   "misconception": "Franklin's cartoon warns Britain to change course, not the colonies to declare independence \u2014 in 1768 Franklin still sought reconciliation, not separation."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Background: Franklin's point was self-harm, not colonial weakness. Taxation without consent cut the empire's own limbs away \u2014 and the bottom panel shows France and Spain waiting to profit from the wound.",
+  "B": "Weakness is not the argument. The colonies are shown as Britain's limbs \u2014 losing them cripples Britain, which is the cartoon's warning.",
+  "C": "Their quarrel is not reassurance. The bottom panel shows rivals competing for what a weakened Britain can no longer hold.",
+  "D": "Independence is not the cartoon's demand. In 1768 Franklin wanted Britain to change course, not the colonies to break away.",
+  "general": "1. Look at the top panel first. Britannia sits amputated, her own colonies lying severed around her.\n2. Ask who did the cutting. No foreign army \u2014 Britain's own taxes did it, which is why the olive branch in her severed hand matters.\n3. Look at the bottom panel. France and Spain quarrel over the spoils, showing who gains when Britain weakens itself.\nRemember: the strongest cartoons make their argument with one image \u2014 here, a body cutting off its own limbs."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0423",
+   "file": "u3/barrons-2027-ch05-04.jpg",
+   "caption": "The Colonies Reduced \u2014 Its Companion, after Benjamin Franklin, published by John Almon, London, 1768",
+   "alt": "Franklin cartoon: Britannia sits slumped with her limbs cut off, each labeled Virginia, New York, Pennsylvania, New England; below, France and Spain quarrel over a barrel",
+   "license": "Public domain",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/The_Colonies_Reduced_-_Its_Companion_%28BM_1855%2C0609.1925%29.jpg"
+  }
+ ]
+}

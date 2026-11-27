@@ -1,0 +1,105 @@
+{
+ "id": "apush-saq-0094",
+ "lesson": "apush-u3-l5",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.10"
+ ],
+ "skills": [
+  "2.A",
+  "3.B"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.10 Shaping the New Republic, F. Policy Debates in the New Nation"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "Establishment of New Political Systems (1787-1800)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Unit 3: Conflict and American Independence (1754-1800)"
+   }
+  ],
+  "primary_sources": [
+   "Famous Whiskey Insurrection in Pennsylvania (19th-century engraving, Devens)"
+  ]
+ },
+ "status": "final",
+ "saq_slot": 3,
+ "stimulus_set": null,
+ "source": "original; stimulus viewed before writing \u2014 Famous Whiskey Insurrection in Pennsylvania, 19th-century engraving (Devens). Public domain.",
+ "stimulus": {
+  "type": "image",
+  "text": "The engraving, titled \u201cFamous Whiskey Insurrection in Pennsylvania,\u201d shows a large crowd in a street carrying a tarred-and-feathered effigy on poles. Banners in the crowd read \u201cNO TAX\u201d and \u201cDOWN WITH TAX,\u201d and a sign at the left reads \u201cLIQUOR STORE.\u201d The image is a 19th-century engraving, a later depiction of the events of 1794.",
+  "source": "Famous Whiskey Insurrection in Pennsylvania, 19th-century engraving (Devens). Public domain.",
+  "rights": "Public domain.",
+  "source_note": "Famous Whiskey Insurrection in Pennsylvania, 19th-century engraving (Devens). Public domain."
+ },
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify ONE detail in the image that shows protest against a tax.",
+   "modelAnswer": "One detail is the banner reading \u201cNO TAX\u201d carried in the crowd. Another is the banner reading \u201cDOWN WITH TAX,\u201d and the crowd also carries a tarred-and-feathered effigy on poles.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names one detail showing protest against a tax, such as the \u201cNO TAX\u201d or \u201cDOWN WITH TAX\u201d banner or the effigy carried through the street.",
+     "notEarned": "Describing the crowd without naming a detail tied to the tax does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain ONE way the image reflects the grievances of western Pennsylvania farmers.",
+   "modelAnswer": "The image shows a crowd carrying an effigy and banners against the tax, which reflects how fiercely the farmers opposed Hamilton\u2019s excise on whiskey. Whiskey was how they turned grain into cash, so the tax struck at their livelihood and they answered with public protest and threats against tax collectors.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains one way the image reflects the farmers\u2019 grievances, such as the anger at the whiskey excise, the use of public protest and effigies, or the threat to their livelihood.",
+     "notEarned": "Saying only that the farmers were angry, without linking the image to their grievance, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain ONE limit of the image as evidence about the Whiskey Rebellion.",
+   "modelAnswer": "The image is a 19th-century engraving made long after 1794, not a view drawn during the rebellion. It shows the protest as a dramatic street scene, but it cannot show what the farmers actually did or what Washington\u2019s government actually faced, so it tells us more about how later Americans pictured the rebellion than about the events themselves.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains one limit of the image as evidence, such as that it is a later depiction rather than a view made in 1794, or that it shows a dramatic scene rather than what actually happened.",
+     "notEarned": "Saying only that one image cannot show everything, with no specific limit, does not earn the point."
+    }
+   ]
+  }
+ ],
+ "totalPoints": 3,
+ "figures": [
+  {
+   "id": "fig-apush-saq-0094",
+   "file": "u3/whiskey-insurrection-devens.jpg",
+   "caption": "Famous Whiskey Insurrection in Pennsylvania, 19th-century engraving (Devens)",
+   "alt": "Engraving of a large crowd carrying a tarred-and-feathered effigy on poles, with banners reading NO TAX and DOWN WITH TAX and a liquor store sign at the left",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Famous_Whiskey_Insurrection_in_Pennsylvania.jpg"
+  }
+ ]
+}

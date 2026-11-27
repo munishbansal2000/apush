@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-0728",
+ "lesson": "apush-u3-l5",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 3,
+ "topics": [
+  "3.12"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "NAT",
+  "GEO"
+ ],
+ "reasoning": "causation",
+ "difficulty": 4,
+ "status": "final",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.12 Movement in the Early Republic"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "Establishment of New Political Systems (1787-1800)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Unit 3: Conflict and American Independence (1754-1800)"
+   }
+  ],
+  "primary_sources": [
+   "United States Census, 1790"
+  ]
+ },
+ "stimulus_set": "new-states-1791-1796",
+ "stimulus": {
+  "kind": "table",
+  "text": "| State | Admitted | Order | Formed from |\n|---|---|---|---|\n| Vermont | March 4, 1791 | 14th | Independent republic |\n| Kentucky | June 1, 1792 | 15th | Virginia |\n| Tennessee | June 1, 1796 | 16th | Southwest Territory |\n\nBackground from the books: The Northwest Ordinance set 60,000 free inhabitants as the mark for statehood. In the 1790 census the Southwest Territory (present-day Tennessee) counted 35,691 people. A territorial census in 1795 counted 77,262.",
+  "source_note": "Admission dates from the Congressional Research Service, Admission of States to the Union; population counts from the United States Census, 1790, and the 1795 territorial census of the Southwest Territory."
+ },
+ "source": "original; table drawn from the Congressional Research Service admission list and the United States Census.",
+ "stem": "Tennessee counted 35,691 people in 1790 but was not admitted until 1796, after a 1795 count of 77,262. What best explains the delay?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Congress refused to admit any state formed from a territory.",
+   "misconception": "Tennessee was the first state formed from federal territory, so that path was open."
+  },
+  {
+   "key": "B",
+   "text": "The territory had to reach the 60,000 mark for statehood first."
+  },
+  {
+   "key": "C",
+   "text": "Tennessee's settlers voted against statehood until 1796.",
+   "misconception": "Background: in the 1795 poll, 6,504 voters favored statehood and 2,562 opposed it."
+  },
+  {
+   "key": "D",
+   "text": "North Carolina blocked Tennessee's admission until it was paid for the land.",
+   "misconception": "Background: North Carolina had already ceded its western lands, creating the Southwest Territory in 1790."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "Tennessee was admitted from a territory, so Congress did not bar that path.",
+  "B": "In 1790 Tennessee held only 35,691 people, below the 60,000 mark, and the 1795 count of 77,262 passed it, so admission followed in 1796.",
+  "C": "The 1795 poll favored statehood by 6,504 to 2,562, so voters were not the block.",
+  "D": "North Carolina's cession had already made the Southwest Territory in 1790.",
+  "general": "1. The Northwest Ordinance set the statehood mark at 60,000 free inhabitants.\n2. The 1790 count of 35,691 fell well short of that mark.\n3. The 1795 count of 77,262 passed it by a wide margin.\n4. Congress admitted Tennessee in 1796, the year after the count passed the mark.\n5. So the delay was a matter of population, and growth, not refusal, opened the door.\nRemember: compare each count to the mark, not to each other."
+ }
+}

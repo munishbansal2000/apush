@@ -1,0 +1,89 @@
+{
+ "id": "apush-leq-0028",
+ "type": "leq",
+ "unit": 3,
+ "lesson": "apush-u3-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "topics": [
+  "3.6"
+ ],
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "stimulus_set": null,
+ "source": "original; prompt written for this topic",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.6 The Influence of Revolutionary Ideals, C. The Impact of the American Revolution Abroad"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Global Struggle for Independence"
+   }
+  ],
+  "primary_sources": [
+   "Declaration of the Rights of Man and of the Citizen (1789)"
+  ]
+ },
+ "stimulus": {
+  "kind": "none",
+  "source_note": "No stimulus; LEQ prompt only."
+ },
+ "prompt": "Evaluate the extent to which revolutionary ideals inspired movements for change outside the United States in the period 1776-1804.",
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent to which revolutionary ideals inspired movements for change outside the United States in 1776-1804, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim about the extent does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as American independence and its Enlightenment justification, or the French alliance during the war.",
+   "notEarned": "A sentence of background with no link to the argument, or background from a later century, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (first point): earns the point for describing specific and relevant examples of revolutionary ideals inspiring change abroad, such as the French Declaration of the Rights of Man or the Haitian Revolution.",
+   "notEarned": "General statements with no specific example do not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (second point): earns the point for describing specific and relevant examples of the limits of that inspiration, such as the French Revolution turning violent, Haiti going beyond the American example, or the Andean rebellions being crushed while Spanish rule stood.",
+   "notEarned": "Repeating the same example, or naming a limit with no specific detail, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Analysis and reasoning: earns the point for explaining how the evidence shows both inspiration and limits, linking examples to the thesis rather than listing them.",
+   "notEarned": "Listing examples with no explanation of what was borrowed and what differed does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Analysis and reasoning (complexity): earns the point for a complex argument, such as qualifying the thesis by movement or region, showing where the ideals were borrowed, bent, or resisted.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ],
+ "modelOutline": "Thesis: Revolutionary ideals inspired movements for change abroad to a real but uneven extent \u2014 they supplied the language and the example for France, Haiti, and Latin America, yet each movement bent those ideals to its own conditions, and none simply repeated the American Revolution.\nContext: American independence in 1776-1783 was won with French help and justified by Enlightenment ideas about natural rights. The American example showed the world that a people could break with a king and build a republic.\nEvidence for France: In 1789 the French National Assembly adopted the Declaration of the Rights of Man, declaring men born and remain free and equal in rights. The revolution then turned radical, abolishing the monarchy and executing the king, which split Americans between Jefferson's sympathy and Hamilton's fear.\nEvidence for Haiti and Latin America: In Saint-Domingue the enslaved rose in 1791 and won independence as Haiti in 1804, the first Black republic. In the Andes, T\u00fapac Amaru II led a great rebellion against Spanish rule in 1780-1781, and the Comuneros rose in New Granada in 1781 \u2014 early signs that the language of unjust rule was reaching Spanish America, though both risings were crushed and Spanish rule stood.\nComplexity: The ideals traveled, but their outcomes differed: France's revolution turned violent, Haiti's enslaved people went further than the American example by ending slavery, and the Andean rebellions were crushed while Spanish rule stood. The same ideals that inspired change abroad left slavery standing at home.",
+ "totalPoints": 6
+}

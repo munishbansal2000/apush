@@ -1,0 +1,90 @@
+{
+ "id": "apush-saq-0081",
+ "type": "saq",
+ "unit": 3,
+ "lesson": "apush-u3-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "topics": [
+  "3.6"
+ ],
+ "skills": [
+  "1.B",
+  "3.A"
+ ],
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "stimulus_set": null,
+ "source": "original; stimulus is an original secondary passage written for this question; facts from the grounding books.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.6 The Influence of Revolutionary Ideals, A. The Call for Egalitarianism"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 10"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7"
+   }
+  ]
+ },
+ "saq_slot": 1,
+ "stimulus": {
+  "type": "text",
+  "text": "After independence, the northern states began to end slavery, but they did so slowly and on their own terms. Vermont's constitution of 1777 banned slavery outright, and Massachusetts courts ended it in 1783 by reading the state constitution's promise that all men are born free and equal. Most northern states chose gradual laws instead: Pennsylvania's law of 1780 freed children born after that date only when they reached twenty-eight, and Connecticut and Rhode Island passed similar laws in 1784. No southern state followed. Slavery stayed legal in the South, and after the cotton gin of 1793 it grew more profitable than ever.",
+  "source": "Original secondary passage written for this question; facts from the grounding books.",
+  "rights": "Original text.",
+  "source_note": "Original secondary passage written for this question; facts from the grounding books."
+ },
+ "parts": [
+  {
+   "part": "a",
+   "prompt": "Identify ONE way northern states ended slavery after independence.",
+   "modelAnswer": "One way was gradual emancipation: Pennsylvania's law of 1780 freed children born after March 1, 1780, when they reached twenty-eight, so slavery faded over a generation rather than ending at once. Vermont took the other path, banning slavery outright in its constitution of 1777.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names one way northern states ended slavery, such as a gradual emancipation law, an outright constitutional ban, or court decisions ending slavery.",
+     "notEarned": "Naming a southern state, or describing emancipation with no northern example, does not earn the point."
+    }
+   ],
+   "points": 1
+  },
+  {
+   "part": "b",
+   "prompt": "Explain ONE reason northern emancipation was gradual rather than immediate.",
+   "modelAnswer": "Lawmakers wanted to protect slave owners' property rights, so they let owners keep the labor of children until adulthood. A sudden end to slavery would also have divided the new nation by antagonizing the South, where slavery was deeply embedded.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains one reason for gradual rather than immediate emancipation, such as protecting owners' property, compensating owners with years of labor, or avoiding a break with the South.",
+     "notEarned": "Restating that the laws were gradual, with no reason for the delay, does not earn the point."
+    }
+   ],
+   "points": 1
+  },
+  {
+   "part": "c",
+   "prompt": "Explain ONE limit of northern emancipation.",
+   "modelAnswer": "Gradual laws freed almost no one alive when they passed, since only children born after the law went free, and only decades later. Slavery also continued in the South, where it grew stronger after the cotton gin made slave-grown cotton profitable.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains one limit of northern emancipation, such as freeing almost no living enslaved person, the decades-long wait for children, or slavery continuing and growing in the South.",
+     "notEarned": "Saying emancipation was incomplete without naming a specific limit does not earn the point."
+    }
+   ],
+   "points": 1
+  }
+ ],
+ "totalPoints": 3
+}

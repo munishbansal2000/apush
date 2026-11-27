@@ -1,0 +1,90 @@
+{
+ "id": "apush-mcq-0697",
+ "lesson": "apush-u3-l5",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.11"
+ ],
+ "skills": [
+  "2.A",
+  "3.B"
+ ],
+ "themes": [
+  "NAT",
+  "ARC"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 3,
+ "stimulus_set": "trumbull-declaration-1818",
+ "stimulus": {
+  "kind": "image",
+  "text": "John Trumbull, Declaration of Independence. The painting shows five men, including Thomas Jefferson, presenting a document to John Hancock, seated at a table at the right, while a large group of men in formal dress looks on in a grand chamber. The painting was commissioned by Congress in 1817 and completed in 1818. It shows the presentation of the draft Declaration to Congress on June 28, 1776, not the signing of the Declaration.",
+  "source_note": "John Trumbull, Declaration of Independence, commissioned 1817, completed 1818, U.S. Capitol. Public domain."
+ },
+ "source": "original; stimulus viewed before writing — John Trumbull, Declaration of Independence, commissioned 1817, completed 1818. Public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.11 Developing an American Identity"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "Establishment of New Political Systems (1787-1800)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Unit 3: Conflict and American Independence (1754-1800)"
+   }
+  ],
+  "primary_sources": [
+   "John Trumbull, Declaration of Independence (commissioned 1817, completed 1818)"
+  ]
+ },
+ "status": "final",
+ "stem": "What event does Trumbull’s painting show?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The signing of the Declaration of Independence on July 4, 1776.",
+   "misconception": "The painting shows the draft being presented on June 28, not the signing."
+  },
+  {
+   "key": "B",
+   "text": "The first meeting of Congress under the Constitution in 1789.",
+   "misconception": "Background: the painting shows the Declaration being presented in 1776, and the Constitution was not written until 1787."
+  },
+  {
+   "key": "C",
+   "text": "The surrender of British forces at Yorktown in 1781.",
+   "misconception": "No surrender appears in the painting; the men present a document in a chamber."
+  },
+  {
+   "key": "D",
+   "text": "The committee presenting the draft Declaration to Congress on June 28, 1776."
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "D": "The painting shows five men, including Jefferson, presenting a document to Hancock, which is the June 28 presentation.",
+  "A": "The painting shows a presentation, not a signing, and the text says so.",
+  "B": "The event is in 1776, before the Constitution existed.",
+  "C": "The scene is indoors in a chamber, with a document, not a battlefield surrender.",
+  "general": "1. The painting shows five men presenting a document to Hancock at a table.\n2. The text says this is the presentation of the draft Declaration on June 28, 1776.\n3. It adds that the painting does not show the signing of the Declaration.\n4. So the event is the committee presenting the draft to Congress.\nRemember: read what a painting shows before naming the event it depicts."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0697",
+   "file": "u3/pr25e-test2-q14.jpg",
+   "caption": "John Trumbull, Declaration of Independence, commissioned 1817, completed 1818",
+   "alt": "Large painting of five men presenting a document to John Hancock seated at a table, with a crowd of formally dressed men looking on in a grand chamber",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Declaration_of_Independence_(1819),_by_John_Trumbull.jpg"
+  }
+ ]
+}

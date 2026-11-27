@@ -1,0 +1,90 @@
+{
+ "id": "apush-saq-0084",
+ "type": "saq",
+ "unit": 3,
+ "lesson": "apush-u3-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "topics": [
+  "3.7"
+ ],
+ "skills": [
+  "2.A",
+  "3.A"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "stimulus_set": null,
+ "source": "original; original secondary passage written for this question, facts from the grounding books.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.7 The Articles of Confederation, B. The Articles of Confederation and the Critical Period"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Articles of Confederation"
+   }
+  ]
+ },
+ "saq_slot": 1,
+ "totalPoints": 3,
+ "stimulus": {
+  "type": "text",
+  "text": "The Articles of Confederation gave Congress the job of running a war and paying for it, but almost none of the tools. Congress could ask the states for money and men, but it could not tax citizens, regulate trade, or raise an army of its own. When the states paid late or not at all, Congress could not pay its debts, and its paper money lost value.\n\nThe 1780s showed the cost of that design. Shays's Rebellion in Massachusetts alarmed national leaders because Congress could do nothing to stop it. Yet the Articles also produced the Northwest Ordinance of 1787, which organized the western lands and banned slavery north of the Ohio River. Historians still argue over the balance: some, following Charles Beard's 1913 study, stress that wealthy leaders wanted a stronger government to protect their property; others stress that ordinary farmers feared any distant power.",
+  "source": "Original secondary passage written for this question; facts from the grounding books.",
+  "rights": "Original text.",
+  "source_note": "Original secondary passage written for this question; facts from the grounding books."
+ },
+ "parts": [
+  {
+   "part": "a",
+   "prompt": "Identify ONE power that Congress lacked under the Articles of Confederation.",
+   "modelAnswer": "One power Congress lacked was the power to tax citizens directly. Under the Articles, Congress could only ask the states for money, and the states laid and levied the taxes themselves.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names one power Congress lacked, such as taxing citizens, regulating trade between the states, or raising an army of its own.",
+     "notEarned": "Naming a power Congress held, such as making treaties or coining money, does not earn the point."
+    }
+   ],
+   "points": 1
+  },
+  {
+   "part": "b",
+   "prompt": "Explain ONE way the events of the 1780s showed the weakness of the government under the Articles of Confederation.",
+   "modelAnswer": "Shays's Rebellion showed the weakness because Congress could do nothing to stop it. The rebellion was put down by a Massachusetts militia, which proved the national government had no army of its own and could not keep order.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains one 1780s event showing the weakness, such as Shays's Rebellion, unpaid war debts, or states ignoring requisitions.",
+     "notEarned": "Naming an event without explaining how it showed weakness does not earn the point."
+    }
+   ],
+   "points": 1
+  },
+  {
+   "part": "c",
+   "prompt": "Explain ONE limit of using Beard's argument alone to explain why the Constitution replaced the Articles of Confederation.",
+   "modelAnswer": "One limit is that Beard stresses only the property interests of wealthy leaders. That leaves out other motives, such as the fear of disorder after Shays's Rebellion, the need for a common trade policy, and the wish to keep the republic from falling apart.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains one limit of Beard's argument, such as its focus on property interests alone or its neglect of other motives like disorder, trade, or foreign weakness.",
+     "notEarned": "Restating Beard's argument without explaining a limit does not earn the point."
+    }
+   ],
+   "points": 1
+  }
+ ]
+}

@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-0680",
+ "lesson": "apush-u3-l5",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 3,
+ "topics": [
+  "3.10"
+ ],
+ "skills": [
+  "1.A",
+  "3.A"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "election-1800",
+ "stimulus": {
+  "kind": "table",
+  "text": "Electoral votes for president, election of 1800 (138 electors; 70 votes needed to win). Each elector cast two votes, one for each of two men, without naming which man was his choice for president and which for vice president.\n\n| Candidate | Party | Electoral votes |\n| Thomas Jefferson | Democratic-Republican | 73 |\n| Aaron Burr | Democratic-Republican | 73 |\n| John Adams | Federalist | 65 |\n| Charles Cotesworth Pinckney | Federalist | 64 |\n| John Jay | Federalist | 1 |\n\nThe tie sent the election to the House of Representatives, which chose Jefferson on the 36th ballot in February 1801.",
+  "source_note": "Electoral vote totals from the National Archives, 1800 Electoral College Results. Public record."
+ },
+ "source": "original; stimulus table drawn from the National Archives, 1800 Electoral College Results.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.10 Shaping the New Republic"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "Establishment of New Political Systems (1787-1800)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Unit 3: Conflict and American Independence (1754-1800)"
+   }
+  ],
+  "primary_sources": [
+   "National Archives, 1800 Electoral College Results"
+  ]
+ },
+ "status": "final",
+ "stem": "Why did the election of 1800 go to the House of Representatives?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Jefferson and Burr tied at 73 votes each."
+  },
+  {
+   "key": "B",
+   "text": "Adams won the most electoral votes but refused to take office.",
+   "misconception": "Adams won 65 votes, fewer than Jefferson and Burr, and he did not refuse office."
+  },
+  {
+   "key": "C",
+   "text": "The Electoral College could not meet because Congress was out of session.",
+   "misconception": "The electors met and voted; the tie, not a missed meeting, sent the choice to the House."
+  },
+  {
+   "key": "D",
+   "text": "The Supreme Court ordered a new election after finding fraud in New York.",
+   "misconception": "No court ordered a new election; the tie sent the choice to the House."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "The table shows Jefferson and Burr tied at 73 votes each, and the stimulus says the tie sent the election to the House.",
+  "B": "Adams won fewer votes than Jefferson and Burr.",
+  "C": "The tie, not a missed meeting, sent the choice to the House.",
+  "D": "No court ordered a new election; the tie sent the choice to the House.",
+  "general": "1. The table shows Jefferson with 73 votes and Burr with 73 votes, while Adams has 65 and Pinckney 64.\n2. Both leaders held a majority, since 73 beats the 70 needed to win, but they were tied, so there was no single winner.\n3. The stimulus says the tie sent the election to the House of Representatives.\n4. So the House decided the election because the two leading candidates were tied.\nRemember: a tie at the top means the next body in line decides; check the numbers first."
+ }
+}

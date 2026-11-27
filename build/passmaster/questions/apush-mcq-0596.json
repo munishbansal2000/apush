@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-0596",
+ "lesson": "apush-u3-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.8"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 3,
+ "stimulus_set": "three-fifths-1790-census",
+ "stimulus": {
+  "kind": "text",
+  "text": "| State | Total population, 1790 census | Enslaved people | Counted for representation (free people + three-fifths of enslaved people) |\n|---|---:|---:|---:|\n| Virginia | 747,610 | 292,627 | 630,559 |\n| North Carolina | 393,751 | 100,572 | 353,522 |\n| South Carolina | 249,073 | 107,094 | 206,235 |\n| Massachusetts | 378,787 | 0 | 378,787 |\n| Pennsylvania | 434,373 | 3,737 | 432,878 |",
+  "source_note": "Table drawn from the first United States census, 1790, as published. The counted column applies the Constitution's three-fifths rule: free people plus three-fifths of enslaved people."
+ },
+ "source": "original; table drawn from the first United States census, 1790, as published, with the counted column computed under the Constitution's three-fifths rule.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.8 The Constitutional Convention and Debates over Ratification, B. The Constitution and Slavery\u2014Compromise and Postponement"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "The Constitutional Convention"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "A New Constitution"
+   }
+  ],
+  "primary_sources": [
+   "First United States Census (1790)",
+   "Constitution of the United States, Article I, Section 2 (1787)"
+  ]
+ },
+ "status": "final",
+ "stem": "According to the table, which state had the largest enslaved population in 1790?",
+ "options": [
+  {
+   "key": "A",
+   "text": "South Carolina",
+   "misconception": "South Carolina had 107,094 enslaved people, fewer than Virginia's 292,627."
+  },
+  {
+   "key": "B",
+   "text": "North Carolina",
+   "misconception": "North Carolina had 100,572 enslaved people, fewer than Virginia's 292,627."
+  },
+  {
+   "key": "C",
+   "text": "Virginia"
+  },
+  {
+   "key": "D",
+   "text": "Pennsylvania",
+   "misconception": "Pennsylvania had only 3,737 enslaved people, the fewest in the table except Massachusetts."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "C": "The table gives Virginia 292,627 enslaved people, more than any other state shown.",
+  "A": "South Carolina's 107,094 enslaved people are fewer than Virginia's 292,627.",
+  "B": "North Carolina's 100,572 enslaved people are fewer than Virginia's 292,627.",
+  "D": "Pennsylvania had only 3,737 enslaved people, far below Virginia.",
+  "general": "1. Read down the enslaved people column.\n2. Virginia shows 292,627, the largest number in the column.\n3. South Carolina and North Carolina are next, near 100,000 each, about a third of Virginia's number.\n4. Pennsylvania shows only 3,737, and Massachusetts shows none at all. Background: slavery had ended in Massachusetts.\nRemember: compare one column all the way down before you pick the largest number."
+ }
+}

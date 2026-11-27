@@ -1,0 +1,162 @@
+{
+ "id": "apush-dbq-0007",
+ "type": "dbq",
+ "unit": 3,
+ "lesson": "apush-u3-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "topics": [
+  "3.5"
+ ],
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "WOR",
+  "SOC"
+ ],
+ "reasoning": "continuity-change",
+ "stimulus_set": null,
+ "source": "original; documents are public-domain primary sources or paraphrases of them (see each document's sourcing note).",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.5 The American Revolution, A. The War for Independence"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.5 The American Revolution, B. Funding the War Effort"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 10"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Fighting the Revolution"
+   }
+  ],
+  "primary_sources": [
+   "George Washington to John Hancock (1776)",
+   "Treaty of Paris (1783)"
+  ]
+ },
+ "prompt": "Evaluate the extent to which the Continental Army, rather than the militia, was responsible for the American victory in the Revolutionary War, 1775\u20131783.",
+ "documents": [
+  {
+   "n": 1,
+   "kind": "image",
+   "date": "1775",
+   "title": "The Battle of Lexington",
+   "source": "After Amos Doolittle, The Battle of Lexington, 1775. U.S. National Archives. Public domain; image from the shared image pool.",
+   "sourcing": "An engraving of the first clash of the war, made after the battle from American accounts, showing militia facing British regulars.",
+   "figure": "u3/5s24-ch03-mcq-48.jpg"
+  },
+  {
+   "n": 2,
+   "kind": "image",
+   "date": "1834",
+   "title": "Trumbull's death of General Warren at Bunker Hill",
+   "source": "John Trumbull, The Death of General Warren at the Battle of Bunker's Hill, June 17, 1775 (1834 version). Public domain; image from the shared image pool.",
+   "sourcing": "Trumbull painting the battle of Bunker Hill nearly sixty years later, showing militiamen fighting British regulars hand to hand.",
+   "figure": "u3/death-general-warren-bunker-hill-trumbull.jpg"
+  },
+  {
+   "n": 3,
+   "kind": "text",
+   "date": "September 1776",
+   "title": "Washington on the militia",
+   "source": "George Washington to John Hancock, September 24, 1776. Public domain.",
+   "sourcing": "Washington writing to Congress after the defeats around New York, arguing that the army cannot depend on militia.",
+   "text": "\u201cTo place any dependence upon militia is assuredly resting upon a broken staff. Men just dragged from the tender scenes of domestic life, unaccustomed to the din of arms, totally unacquainted with every kind of military skill, which being followed by a want of confidence in themselves when opposed to troops regularly trained, disciplined, and appointed, superior in knowledge and superior in arms, makes them timid and ready to fly from their own shadows.\u201d"
+  },
+  {
+   "n": 4,
+   "kind": "text",
+   "date": "Winter 1777\u20131778",
+   "title": "Steuben drills the army at Valley Forge",
+   "source": "Paraphrase of the winter at Valley Forge, drawn from Barron's Premium 2027, Chapter 5, and 5 Steps to a 5 2024, Chapter 10.",
+   "sourcing": "A secondary account of the winter camp, describing how the Prussian officer Baron von Steuben trained the Continentals in drill and discipline.",
+   "text": "At Valley Forge the Prussian officer Baron von Steuben drilled the Continental soldiers through the winter, teaching them to march, load, and fight in formation. The ragged army that marched in became a disciplined force that stood against British regulars at Monmouth the following June."
+  },
+  {
+   "n": 5,
+   "kind": "text",
+   "date": "January 1781",
+   "title": "Cowpens in the southern campaign",
+   "source": "Paraphrase of the Battle of Cowpens, drawn from Barron's Premium 2027, Chapter 5, and 5 Steps to a 5 2024, Chapter 10.",
+   "sourcing": "A secondary account of Daniel Morgan's victory in South Carolina, where militia and Continentals fought together under a single plan.",
+   "text": "At Cowpens in January 1781, Daniel Morgan placed his militia in front with orders to fire twice and then fall back, drawing the British into the Continentals' waiting lines. The militia's retreat was planned, not a rout, and the British light troops were destroyed."
+  },
+  {
+   "n": 6,
+   "kind": "image",
+   "date": "1820",
+   "title": "Trumbull's surrender at Yorktown",
+   "source": "John Trumbull, Surrender of Lord Cornwallis, 1820. Public domain; image from the shared image pool.",
+   "sourcing": "Trumbull painting the surrender at Yorktown thirty-nine years after the event, showing Cornwallis's deputy presenting his sword.",
+   "figure": "u3/surrender-cornwallis-yorktown.jpg"
+  },
+  {
+   "n": 7,
+   "kind": "text",
+   "date": "September 1783",
+   "title": "The Treaty of Paris recognizes independence",
+   "source": "Treaty of Paris, Article 1, September 3, 1783, abridged. Public domain.",
+   "sourcing": "The peace treaty in which Britain recognized the United States as free, sovereign, and independent states.",
+   "text": "\u201cHis Britannic Majesty acknowledges the said United States, viz., New Hampshire, Massachusetts Bay, Rhode Island and Providence Plantations, Connecticut, New York, New Jersey, Pennsylvania, Delaware, Maryland, Virginia, North Carolina, South Carolina and Georgia, to be free sovereign and independent states, that he treats with them as such, and for himself, his heirs, and successors, relinquishes all claims to the government, propriety, and territorial rights of the same and every part thereof.\u201d"
+  }
+ ],
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent to which the Continental Army, rather than the militia, was responsible for the American victory, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim about the extent does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as the outbreak of war in 1775, the colonial militia tradition, or the long war against a professional British army.",
+   "notEarned": "A sentence of background with no link to the argument does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence from documents (first point): earns the point for describing the content of at least three documents relevant to the argument, such as Washington on the militia as a broken staff, Steuben's drill at Valley Forge, or the militia's role at Cowpens.",
+   "notEarned": "Quoting documents without describing what they show does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence from documents (second point): earns the point for using the content of at least six documents to support the argument, including documents that show the militia's early role, such as Lexington and Bunker Hill, against documents that show the Continental Army's later role, such as Valley Forge and Yorktown.",
+   "notEarned": "Using fewer than six documents, or using six without tying them to the argument, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence beyond the documents: earns the point for describing a specific relevant example not in the documents, such as the militia victory at Kings Mountain, Greene's southern campaign, or the French alliance.",
+   "notEarned": "A vague reference to outside knowledge with no specific example does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Sourcing: earns the point for explaining how the audience, purpose, historical situation, or point of view of at least two documents shapes the argument, such as Washington writing to Congress to argue for a standing army, or Trumbull painting commemorations decades after the events.",
+   "notEarned": "Naming a document's author without explaining how it shapes the argument does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Complexity: earns the point for a complex argument, such as qualifying the thesis by showing where the militia carried the war and where only the Continentals could, or weighing the two forces as partners rather than rivals.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ],
+ "modelOutline": "Thesis: The Continental Army was responsible for the victory's final form, but the militia was responsible for the war's survival \u2014 the Continentals won the sieges and stood in the line, while the militia kept the rebellion alive between them. Neither force alone could have won; the victory was their partnership, with the Continentals doing what only a professional army could do.\nContext: When the war began, the colonies had no standing army, only militia companies of ordinary men who drilled on weekends. Congress created the Continental Army in 1775 and put Washington in command, but it struggled to enlist and pay long-service soldiers, and Washington fought the whole war with an army that shrank every winter.\nEvidence: Documents 1-2 show the militia's war: at Lexington the militia scattered before regulars, yet at Bunker Hill militiamen fought hand to hand and cost the British nearly 1,000 men. Document 3 shows Washington's frustration: he called dependence on militia resting on a broken staff, because militiamen left when their enlistments ended. Document 4 shows the remedy: Steuben's drill at Valley Forge turned the Continentals into soldiers who could stand in line.\nDocument 5 shows the partnership working: at Cowpens the militia fired twice, fell back by plan, and drew the British into the Continentals' waiting lines. Document 6 shows the end: a Continental-led siege at Yorktown, with French help, forced Cornwallis to surrender. Document 7 shows the result: independence recognized in 1783.\nEvidence of limits: The militia won Kings Mountain without Continentals, and Greene's southern campaign depended on militia harassing the British between battles. The Continentals alone, without the militia's numbers and local knowledge, could not have held the countryside.\nBeyond the documents: At Kings Mountain in October 1780, American frontier militia destroyed a Loyalist force, showing the backcountry would not rally to the king; and in the southern campaign Greene's army was rebuilt again and again by militia recruits.\nSourcing: Washington wrote to Congress to win support for a long-service army, so his attack on the militia is an argument, not a neutral report; Trumbull painted his battle scenes decades later, so they show how Americans remembered the war, not what witnesses saw.\nComplexity: The Continental Army and the militia were not rivals but partners in sequence \u2014 the militia began the war and sustained it, the Continentals professionalized it and finished it, and the victory needed both.",
+ "totalPoints": 7
+}

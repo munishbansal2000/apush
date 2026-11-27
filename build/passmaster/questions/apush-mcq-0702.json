@@ -1,0 +1,81 @@
+{
+ "id": "apush-mcq-0702",
+ "lesson": "apush-u3-l5",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.11"
+ ],
+ "skills": [
+  "1.B",
+  "3.A"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 3,
+ "stimulus_set": "emancipation-table",
+ "stimulus": {
+  "kind": "table",
+  "text": "Steps against slavery in the northern states:\n\n| State | Action | Year |\n| Vermont | Constitution banned slavery | 1777 |\n| Pennsylvania | Gradual emancipation law | 1780 |\n| Massachusetts | Court decisions ended slavery | 1783 |\n| Connecticut | Gradual emancipation law | 1784 |\n| Rhode Island | Gradual emancipation law | 1784 |\n| New York | Gradual emancipation law | 1799 |\n\nAcross the United States, the enslaved population grew from about 500,000 in 1776 to about 700,000 in 1790.",
+  "source_note": "State actions and population figures from Barron’s Premium 2027, Chapter 5, Topics 3.6 and 3.12; dates corroborated against BlackPast, First Emancipation, and Digital History."
+ },
+ "source": "original; stimulus table drawn from Barron’s Premium 2027, Chapter 5, Topics 3.6 and 3.12.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.6 The Influence of Revolutionary Ideals"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.11 Developing an American Identity"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 10",
+    "section": "The American Revolution and Its Aftermath"
+   }
+  ],
+  "primary_sources": [
+   "Pennsylvania Gradual Abolition Act (1780)",
+   "Massachusetts Constitution (1780) and court decisions (1783)"
+  ]
+ },
+ "status": "final",
+ "stem": "What did most of the northern laws in the table have in common?",
+ "options": [
+  {
+   "key": "A",
+   "text": "They freed every enslaved person in the state on the day they passed.",
+   "misconception": "Background: gradual laws freed only children born after a date, after years of service, not everyone at once."
+  },
+  {
+   "key": "B",
+   "text": "They freed enslaved people gradually, over years, rather than all at once."
+  },
+  {
+   "key": "C",
+   "text": "They were all ordered by courts rather than passed by legislatures.",
+   "misconception": "Only Massachusetts acted through court decisions; the others passed laws."
+  },
+  {
+   "key": "D",
+   "text": "They all banned slavery in the western territories as well.",
+   "misconception": "Background: the Northwest Ordinance of 1787, not these state laws, barred slavery in the Northwest Territory."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "B": "Four of the six entries are gradual emancipation laws. Background: such laws freed people over years, not at once.",
+  "A": "Background: a gradual law frees no one at once; freedom comes years later for children born after a date.",
+  "C": "Only Massachusetts used court decisions; Vermont, Pennsylvania, and the rest used laws or constitutions.",
+  "D": "The table lists state actions only; the western ban came from the Northwest Ordinance.",
+  "general": "1. The table lists gradual emancipation laws for Pennsylvania, Connecticut, Rhode Island, and New York.\n2. Background: such laws freed only children born after a set date, after years of service.\n3. Vermont banned slavery outright and Massachusetts used court decisions, but the pattern is gradual.\n4. So most northern laws freed people gradually, over years, rather than all at once.\nRemember: read the Action column, not only the Year column, when a table asks what laws share."
+ }
+}

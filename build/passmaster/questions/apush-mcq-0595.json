@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-0595",
+ "lesson": "apush-u3-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.8"
+ ],
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 4,
+ "stimulus_set": "three-fifths-1790-census",
+ "stimulus": {
+  "kind": "text",
+  "text": "| State | Total population, 1790 census | Enslaved people | Counted for representation (free people + three-fifths of enslaved people) |\n|---|---:|---:|---:|\n| Virginia | 747,610 | 292,627 | 630,559 |\n| North Carolina | 393,751 | 100,572 | 353,522 |\n| South Carolina | 249,073 | 107,094 | 206,235 |\n| Massachusetts | 378,787 | 0 | 378,787 |\n| Pennsylvania | 434,373 | 3,737 | 432,878 |",
+  "source_note": "Table drawn from the first United States census, 1790, as published. The counted column applies the Constitution's three-fifths rule: free people plus three-fifths of enslaved people."
+ },
+ "source": "original; table drawn from the first United States census, 1790, as published, with the counted column computed under the Constitution's three-fifths rule.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.8 The Constitutional Convention and Debates over Ratification, B. The Constitution and Slavery\u2014Compromise and Postponement"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "The Constitutional Convention"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "A New Constitution"
+   }
+  ],
+  "primary_sources": [
+   "First United States Census (1790)",
+   "Constitution of the United States, Article I, Section 2 (1787)"
+  ]
+ },
+ "status": "final",
+ "stem": "Why did delegates from the northern states object to counting enslaved people for representation?",
+ "options": [
+  {
+   "key": "A",
+   "text": "They wanted enslaved people counted as whole persons so the South would pay more taxes",
+   "misconception": "Northern delegates resisted counting enslaved people at all for representation; full counting was the South's demand."
+  },
+  {
+   "key": "B",
+   "text": "Enslaved people could not vote and were treated as property, so they should add no seats"
+  },
+  {
+   "key": "C",
+   "text": "They wanted the census to leave enslaved people out of the population entirely",
+   "misconception": "The objection was about representation, not about the census itself, which counted everyone."
+  },
+  {
+   "key": "D",
+   "text": "They feared counting enslaved people would end slavery in the South",
+   "misconception": "Counting enslaved people strengthened the South's representation; it did not threaten slavery."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "B": "Background: northern delegates argued that people held as property, who could not vote, should not add to a state's seats in the House; the South wanted enslaved people counted in full, the North wanted them not counted, and three-fifths was the bargain.",
+  "A": "Background: full counting was the southern demand, and the North resisted counting enslaved people for seats at all.",
+  "C": "Background: the census counted everyone; the fight was over how many counted for representation.",
+  "D": "Background: counting enslaved people gave the South more seats, which protected slavery rather than ending it.",
+  "general": "1. The table shows the stakes: counting enslaved people added tens of thousands to southern totals.\n2. Background: enslaved people could not vote and were treated as property under the law.\n3. Background: northern delegates said seats should follow voters, not property.\n4. Background: the three-fifths fraction was the bargain between counting them fully and not counting them.\nRemember: ask who gains seats, and the objection explains itself."
+ }
+}

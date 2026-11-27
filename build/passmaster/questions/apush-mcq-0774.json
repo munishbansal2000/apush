@@ -1,0 +1,75 @@
+{
+  "answerKey": "C",
+  "difficulty": 3,
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 5",
+        "section": "Topic 3.8 The Constitutional Convention and Debates over Ratification"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 11",
+        "section": "Establishment of New Political Systems (1787–1800)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 7"
+      }
+    ],
+    "primary_sources": []
+  },
+  "id": "apush-mcq-0774",
+  "lesson": "apush-u3-l4",
+  "options": [
+    {
+      "key": "A",
+      "misconception": "Ratification was a debate about adopting monarchy.",
+      "text": "Whether the United States should adopt the British system of monarchy"
+    },
+    {
+      "key": "B",
+      "misconception": "Ratification was a debate about slavery in the territories.",
+      "text": "Whether the United States should expand slavery into western territories"
+    },
+    {
+      "key": "C",
+      "text": "Whether a stronger central government would protect or threaten liberty"
+    },
+    {
+      "key": "D",
+      "misconception": "Ratification was a debate about the national bank.",
+      "text": "Whether the United States should establish a national bank"
+    }
+  ],
+  "pool": "test",
+  "rationales": {
+    "A": "The debate was not about adopting the British system of monarchy.",
+    "B": "Slavery in the western territories was not the ratification debate in Federalist No. 10.",
+    "C": "Ratification turned on whether a stronger central government would protect or threaten liberty. Federalists argued it would protect liberty, while Anti-Federalists feared it would concentrate power and crush dissent.",
+    "D": "The national bank was a 1790s debate, not the 1787-1788 ratification debate.",
+    "general": "1. Name the disagreement. Would a stronger central government protect liberty or threaten it?\n2. Place the passage in it. Madison defends the large republic against the fear that it cannot control factions.\n3. Test the other disagreements. Monarchy, slavery expansion, and the bank belong to other debates.\n4. Keep the disagreement tied to the text. The passage is about factions and the size of the republic.\nRemember: a ratification debate is about the Constitution in front of the reader."
+  },
+  "reasoning": "comparison",
+  "skills": [
+    "4.B"
+  ],
+  "source": "original; stimulus is a verbatim public-domain excerpt from James Madison, Federalist No. 10 (1787)",
+  "status": "final",
+  "stem": "The debate over ratification reflected in *Federalist No. 10* most directly involved which of the following disagreements?",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "James Madison, Federalist No. 10, 1787, public domain.",
+    "text": "“The latent causes of faction are thus sown in the nature of man; and we see them everywhere brought into different degrees of activity, according to the different circumstances of civil society. A zeal for different opinions concerning religion, concerning government, and many other points . . . have . . . divided mankind into parties, inflamed them with mutual animosity, and rendered them much more disposed to vex and oppress each other than to co-operate for their common good.”"
+  },
+  "stimulus_set": "federalist-10-1787",
+  "themes": [
+    "PCE"
+  ],
+  "topics": [
+    "3.8"
+  ],
+  "type": "mcq",
+  "unit": 3
+}

@@ -1,0 +1,76 @@
+{
+  "answerKey": "C",
+  "difficulty": 2,
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 5",
+        "section": "Topic 3.4 Philosophical Foundations of the American Revolution"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 9",
+        "section": "Resistance, Rebellion, and Revolution (1750–1775)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 7"
+      }
+    ],
+    "primary_sources": []
+  },
+  "id": "apush-mcq-0769",
+  "lesson": "apush-u3-l2",
+  "options": [
+    {
+      "key": "A",
+      "misconception": "Common Sense reached readers because it was in Latin.",
+      "text": "It was written in Latin for an educated, university-trained readership"
+    },
+    {
+      "key": "B",
+      "misconception": "Common Sense spread because Parliament endorsed it.",
+      "text": "It was endorsed by the British Parliament and distributed by royal officials"
+    },
+    {
+      "key": "C",
+      "text": "It was written in plain, accessible language and widely reprinted in colonial newspapers and pamphlets"
+    },
+    {
+      "key": "D",
+      "misconception": "Common Sense was kept from the public.",
+      "text": "It was read aloud only in the Continental Congress and kept from the public"
+    }
+  ],
+  "pool": "test",
+  "rationales": {
+    "A": "It was written in plain English, not Latin for the educated.",
+    "B": "Parliament opposed the pamphlet; it did not endorse or distribute it.",
+    "C": "Plain language and cheap reprinting let Common Sense circulate far beyond elites. Its simple style and low price put it in the hands of ordinary readers, which is why it reached so many.",
+    "D": "It was meant for public circulation, not read only in Congress.",
+    "general": "1. Ask what a pamphlet needs to reach many readers. Plain words and cheap copies.\n2. Check Paine's choices. He wrote plainly, and colonial newspapers and pamphlets reprinted him widely.\n3. Test the reversals. Latin, a Parliament endorsement, and a Congress-only reading would all have narrowed the audience.\n4. Connect the means to the reach. Plain language plus reprinting equals a wide audience.\nRemember: how a text is written and spread is part of why it matters."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "2.B"
+  ],
+  "source": "original; stimulus is a verbatim public-domain excerpt from Thomas Paine, Common Sense (1776)",
+  "status": "final",
+  "stem": "Which of the following most directly helps explain why Paine’s pamphlet reached a wide audience in 1776?",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Thomas Paine, Common Sense, 1776, public domain.",
+    "text": "“O ye who love mankind! Ye who dare oppose, not only the tyranny, but the tyrant, stand forth! Every spot of the old world is overrun with oppression. Freedom hath been hunted round the globe. Asia, and Africa, have long expelled her. Europe regards her like a stranger, and England hath given her warning to depart. O! receive the fugitive, and prepare in time an asylum for mankind.”"
+  },
+  "stimulus_set": "paine-common-sense-1776",
+  "themes": [
+    "WXT",
+    "PCE"
+  ],
+  "topics": [
+    "3.4"
+  ],
+  "type": "mcq",
+  "unit": 3
+}

@@ -1,0 +1,90 @@
+{
+ "id": "apush-saq-0077",
+ "type": "saq",
+ "unit": 3,
+ "lesson": "apush-u3-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "topics": [
+  "3.5"
+ ],
+ "skills": [
+  "1.B",
+  "3.A"
+ ],
+ "themes": [
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "stimulus_set": null,
+ "source": "original; stimulus is a paraphrase of a secondary source, written for this question. Rewritten against the books from staged survivor 5s24-ch10-saq-01.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.5 The American Revolution, A. The War for Independence"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 10"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Fighting the Revolution"
+   }
+  ],
+  "primary_sources": [
+   "Gordon Wood, The Radicalism of the American Revolution (1992), paraphrased"
+  ]
+ },
+ "saq_slot": 1,
+ "stimulus": {
+  "type": "text",
+  "text": "Historian Gordon Wood has argued that the Americans won the Revolutionary War less because their army was better than the British army than because the British never found a way to hold the country they marched through. The British could win battles and take cities, Wood writes, but they could not make the American people stop resisting, and the longer the war went on, the more it cost a government an ocean away. In the end, the Americans did not have to destroy the British army; they only had to outlast it, until Britain decided the war was no longer worth fighting.",
+  "source": "Gordon Wood, The Radicalism of the American Revolution (1992), paraphrased.",
+  "rights": "Paraphrase of a secondary source (post-1929); no verbatim quotation used.",
+  "source_note": "Paraphrase of the argument in Gordon Wood's writing on the American Revolution (see The Radicalism of the American Revolution, 1992). Paraphrase written for this question; not a quotation."
+ },
+ "parts": [
+  {
+   "part": "a",
+   "prompt": "Identify ONE reason Wood gives for the American victory in the Revolutionary War.",
+   "modelAnswer": "Wood argues that the Americans won because the British could not hold the country they marched through: they could win battles and take cities, but they could not make the American people stop resisting. The British army was strong in the field, yet it could not occupy the vast countryside behind the coastal cities it held. Victory therefore went to the side that could keep the war going, not to the side that won the most battles.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names one reason Wood gives for the American victory, such as Britain's inability to hold the countryside, the persistence of American resistance, or the cost of a long war fought across an ocean."
+    }
+   ],
+   "points": 1
+  },
+  {
+   "part": "b",
+   "prompt": "Explain ONE way the British strategy failed to deal with the problem Wood describes.",
+   "modelAnswer": "The British strategy depended on taking cities and winning set-piece battles, which assumed the rebellion would collapse once its army was beaten and its ports were held. That assumption failed because the rebellion lived in the countryside, where militia and local committees kept resisting after every British victory. The British could therefore hold New York or Charleston while the war went on around them, and each year of occupation cost London more money and men.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains one way British strategy failed against the problem Wood describes, such as relying on occupying cities and winning battles while resistance continued in the countryside, or underestimating the cost of a long war far from home."
+    }
+   ],
+   "points": 1
+  },
+  {
+   "part": "c",
+   "prompt": "Explain ONE other reason, not mentioned in the passage, why the Americans won the war.",
+   "modelAnswer": "A second reason is the French alliance: after Saratoga, France sent money, troops, and a navy, and at Yorktown the French fleet blocked Cornwallis's escape by sea while Washington besieged him by land. Without French help the Americans could not have forced a British army to surrender, and without the threat of a wider war Britain might have kept fighting. The alliance turned a colonial rebellion into a war on two fronts that Britain could not afford.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains another reason for the American victory not in the passage, such as the French alliance, Washington's leadership and the survival of the Continental Army, or Britain's overextended supply lines."
+    }
+   ],
+   "points": 1
+  }
+ ],
+ "totalPoints": 3
+}

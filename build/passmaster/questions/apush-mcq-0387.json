@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-0387",
+ "lesson": "apush-u3-l1",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 3,
+ "topics": [
+  "3.2"
+ ],
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "WXT",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "war-debt-table",
+ "stimulus": {
+  "kind": "table",
+  "text": "The table shows the cost of the Seven Years' War to Britain and the size of the forces that fought it in North America.\n\n| Item | Figure |\n| British national debt, 1754 | about \u00a375 million |\n| British national debt, 1763 | about \u00a3133 million |\n| Annual interest on the debt, 1763 | more than \u00a34.4 million |\n| British regular soldiers sent to North America during the war | 25,000 |\n| Colonial provincial soldiers who served alongside them | about 24,000 |",
+  "source_note": "Debt figures: UK Parliament historical national debt figures (about \u00a375 million in 1754, about \u00a3133 million in 1763; annual interest over \u00a34.4 million). Troop figures: 5 Steps to a 5, 2024, Chapter 9."
+ },
+ "source": "original; stimulus viewed before writing \u2014 Debt figures: UK Parliament historical national debt figures (about \u00a375 million in 1754, about \u00a3133 million in 1763; annual interest over \u00a34.4 million). Troop figures: 5 Steps to a 5, 2024, Chapter 9.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "B. Debt and Taxation Following the French and Indian War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 9",
+    "section": "The British Need Money"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Seven Years' War (1754\u20131763)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "Britain's national debt nearly doubled during the Seven Years' War. Which of the following best explains how that debt reshaped British policy toward the American colonies after 1763?",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Parliament never offered colonial representation; the absence of it was precisely the colonists' complaint.",
+   "text": "Parliament offered the colonies seats in the House of Commons in exchange for accepting higher taxes."
+  },
+  {
+   "key": "B",
+   "misconception": "Britain kept a standing army in North America after 1763 \u2014 and then asked colonists to help pay for it.",
+   "text": "British ministers concluded North America was too expensive to defend and withdrew most troops."
+  },
+  {
+   "key": "C",
+   "text": "Ministers concluded the colonies should help pay for imperial defense, producing a series of new revenue measures."
+  },
+  {
+   "key": "D",
+   "misconception": "The Crown added taxes rather than abolishing them, and the Proclamation of 1763 restricted western settlement rather than encouraging it.",
+   "text": "The Crown abolished existing colonial taxes to encourage settlement of the newly acquired western lands."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "No seats in Parliament were ever offered to the colonies; the whole crisis turned on taxation without representation.",
+  "B": "Britain did not withdraw: it stationed troops in North America, and their cost was one reason London wanted colonial revenue.",
+  "C": "Victory left Britain with a debt of about \u00a3133 million and interest of more than \u00a34.4 million a year, plus the ongoing cost of garrisoning North America. Ministers like George Grenville reasoned that colonists, as beneficiaries of British protection, should contribute revenue \u2014 hence the Sugar Act of 1764, the Stamp Act of 1765, and the Townshend duties of 1767.",
+  "D": "London moved in the opposite direction: it added new revenue measures and restricted western settlement with the Proclamation of 1763.",
+  "general": "1. Read the table. The debt nearly doubled, from about \u00a375 million to about \u00a3133 million, and the interest alone topped \u00a34.4 million a year.\n2. Ask who London thought should pay. Ministers argued the colonies had benefited most from the victory and should help carry its cost.\n3. Follow the money. The Sugar Act, the Stamp Act, and the Townshend duties were all attempts to make the colonies contribute.\nRemember: a war debt does not stay in London \u2014 it travels, as taxes, to the people the war was fought for."
+ }
+}

@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-0407",
+ "lesson": "apush-u3-l1",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.2"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "WOR",
+  "GEO"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 2,
+ "stimulus_set": "native-diplomacy",
+ "stimulus": {
+  "kind": "text",
+  "text": "Before 1754, the Native nations of the Ohio Valley and Great Lakes played the British and French empires against each other, trading with both and refusing to be ruled by either. Most sided with France during the war: the French, few in number and dependent on the fur trade, treated Native peoples as allies and partners, while the British came as settlers who wanted the land itself.\n\nWhen France lost in 1763, the Native nations lost the counterweight that had protected their independence, and British settlers pressed into the Ohio Valley.",
+  "source_note": "Original secondary passage written for this question; facts from Barron's Premium 2027, Chapter 5, \"British Victory in the French and Indian War\" and \"C. American Indian Resistance and Colonial Settlement Following the French and Indian War.\""
+ },
+ "source": "original; stimulus viewed before writing \u2014 Original secondary passage written for this question; facts from Barron's Premium 2027, Chapter 5, \"British Victory in the French and Indian War\" and \"C. American Indian Resistance and Colonial Settlement Following the French and Indian War.\"",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Origins of the French and Indian War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 9",
+    "section": "War in the West"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Seven Years' War (1754\u20131763)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "Before 1763, Native nations in the Ohio Valley were able to maintain a degree of independence by doing which of the following?",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "Native nations traded extensively with Europeans \u2014 trade was central to their strategy, not something they refused.",
+   "text": "Refusing to trade with any European power and remaining completely isolated from the colonial world."
+  },
+  {
+   "key": "B",
+   "text": "Playing Britain and France against each other, trading with both sides."
+  },
+  {
+   "key": "C",
+   "misconception": "Native nations never formed a single unified empire; they acted as separate nations with their own interests.",
+   "text": "Forming a single unified Native empire that defeated both Britain and France in battle."
+  },
+  {
+   "key": "D",
+   "misconception": "Native nations did not accept British rule or seek seats in Parliament; they sought independence, not inclusion.",
+   "text": "Accepting British rule in exchange for guaranteed land rights and representation in Parliament."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "The passage says the Ohio Valley nations traded with both empires and shifted alliances \u2014 trade was their leverage, not something they rejected.",
+  "B": "As long as two European empires competed for the Ohio Valley, its Native nations could trade with both, accept gifts from both, and threaten to side with one against the other. That competition was their protection: neither empire could afford to drive them away, because the other would welcome them with open arms and better terms. France's defeat in 1763 ended the game.",
+  "C": "No single Native empire existed; the passage describes separate nations acting on their own interests, not a unified state.",
+  "D": "Native nations sought to keep their independence, not to join the British system \u2014 and Parliament never offered them seats.",
+  "general": "1. Ask what two empires give a third party. A choice \u2014 and a choice is leverage.\n2. Ask how the Ohio Valley nations used it. They traded with both sides and allied with whichever offered better terms.\n3. Ask what happened in 1763. France left, the choice vanished, and with it the leverage.\nRemember: independence often rests not on strength alone but on having somewhere else to turn."
+ }
+}

@@ -1,0 +1,91 @@
+{
+ "id": "apush-saq-0076",
+ "type": "saq",
+ "unit": 3,
+ "lesson": "apush-u3-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "topics": [
+  "3.4"
+ ],
+ "skills": [
+  "1.B",
+  "2.B"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "causation",
+ "stimulus_set": null,
+ "source": "original; stimulus is Thomas Paine, Common Sense (1776), public domain",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "B. Common Sense, the Declaration of Independence, and Republican Self-Government"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 10"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Declaration of Independence"
+   }
+  ],
+  "primary_sources": [
+   "Thomas Paine, Common Sense (1776)"
+  ]
+ },
+ "saq_slot": 2,
+ "stimulus": {
+  "type": "text",
+  "text": "Society in every state is a blessing, but government even in its best state is but a necessary evil; in its worst state an intolerable one. \u2026 Wherefore, security being the true design and end of government, it unanswerably follows that whatever form thereof appears most likely to ensure it to us, with the least expense and greatest benefit, is preferable to all others.",
+  "source": "Thomas Paine, Common Sense (1776). Public domain.",
+  "rights": "Public domain.",
+  "source_note": "Thomas Paine, Common Sense (1776), abridged. Public domain."
+ },
+ "parts": [
+  {
+   "part": "a",
+   "prompt": "Identify Paine's view of government in this passage.",
+   "modelAnswer": "Paine views government as a necessary evil: even in its best state it is only a necessary evil, and in its worst state it is intolerable. Government is needed for security, but it is a burden, not a blessing.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names Paine's view, such as government being a necessary evil, needed for security but a burden at best."
+    }
+   ],
+   "points": 1
+  },
+  {
+   "part": "b",
+   "prompt": "Explain ONE reason Paine's pamphlet persuaded colonists whom Enlightenment treatises had not reached.",
+   "modelAnswer": "Paine wrote in plainspoken language that ordinary colonists could follow, while Enlightenment treatises spoke in lofty terms few readers used. Common Sense sold more than 100,000 copies in its first three months, carrying the argument for independence far beyond the learned few.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains why Paine persuaded ordinary readers, such as his plainspoken language or the pamphlet's enormous sales."
+    }
+   ],
+   "points": 1
+  },
+  {
+   "part": "c",
+   "prompt": "Explain ONE other factor, besides Paine's pamphlet, that moved colonists toward independence in 1775-1776.",
+   "modelAnswer": "The fighting itself moved colonists: after Lexington and Concord in April 1775 and Bunker Hill that June, reconciliation looked impossible, and the king's rejection of the Olive Branch Petition showed that the Crown would not settle. The war made independence seem necessary rather than merely desirable.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains another factor moving colonists toward independence, such as the outbreak of fighting, the rejection of the Olive Branch Petition, or the Coercive Acts."
+    }
+   ],
+   "points": 1
+  }
+ ],
+ "totalPoints": 3
+}

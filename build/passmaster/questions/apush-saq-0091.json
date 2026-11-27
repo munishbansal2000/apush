@@ -1,0 +1,105 @@
+{
+ "id": "apush-saq-0091",
+ "lesson": "apush-u3-l4",
+ "type": "saq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.9"
+ ],
+ "skills": [
+  "2.A",
+  "3.A"
+ ],
+ "themes": [
+  "PCE",
+  "GEO"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 3,
+ "stimulus_set": null,
+ "source": "original; stimulus viewed before writing \u2014 The Capitol in 1800, from Glenn Brown, History of the United States Capitol, plate 38, Library of Congress, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.9 The Constitution, A. The Structure of Government Under the Constitution"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "The Constitutional Convention"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "A New Constitution"
+   }
+  ],
+  "primary_sources": [
+   "Glenn Brown, History of the United States Capitol, plate 38 (Library of Congress)"
+  ]
+ },
+ "status": "final",
+ "saq_slot": 3,
+ "stimulus": {
+  "type": "image",
+  "text": "The drawing, titled \u201cThe Capitol in 1800,\u201d shows the north wing of the United States Capitol in Washington, taken from an advanced proof of plate 38 in Glenn Brown\u2019s History of the United States Capitol. The building stands nearly alone on open ground, with a small cluster of low buildings at the left and two tiny figures for scale.",
+  "source": "The Capitol in 1800, from an advanced proof of plate 38, History of the United States Capitol by Glenn Brown. Library of Congress. Public domain.",
+  "rights": "Public domain.",
+  "source_note": "The Capitol in 1800, from Glenn Brown, History of the United States Capitol, plate 38, Library of Congress. Public domain."
+ },
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify ONE detail in the drawing that shows the building is the home of Congress.",
+   "modelAnswer": "One detail is the title itself, \u201cThe Capitol in 1800,\u201d since the Capitol is the building where Congress meets. The large stone building standing nearly alone on open ground is the Capitol, the seat of Congress.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names one detail showing the building is the home of Congress, such as the title \u201cThe Capitol\u201d or the size and form of the building.",
+     "notEarned": "Describing the building without connecting a detail to Congress does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain ONE way the drawing reflects the Constitution's design for Congress.",
+   "modelAnswer": "The drawing shows one building for Congress, matching the Constitution's design of a single Congress holding all legislative power. Article I vests that power in one Congress of two houses, the Senate and the House.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains one way the drawing reflects the Constitution's design for Congress, such as the single building for one Congress or the Capitol as the seat of the legislative branch.",
+     "notEarned": "Saying only that Congress meets in the Capitol, without linking the drawing to the Constitution's design, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain ONE limit of the drawing as evidence about Congress in 1800.",
+   "modelAnswer": "The drawing shows only the outside of one wing, not Congress at work, so it cannot show what the Senate or the House debated or decided. It is also a later rendering from Glenn Brown's history, not a view made in 1800, so it shows the building as the historian reconstructed it.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains one limit of the drawing as evidence, such as that it shows only the building's outside, that it shows no session of Congress, or that it is a later rendering rather than a view made in 1800.",
+     "notEarned": "Saying only that one drawing cannot show everything, with no specific limit, does not earn the point."
+    }
+   ]
+  }
+ ],
+ "totalPoints": 3,
+ "figures": [
+  {
+   "id": "fig-apush-saq-0091",
+   "file": "u3/capitol-in-1800-glenn-brown.jpg",
+   "caption": "The Capitol in 1800, from Glenn Brown\u2019s History of the United States Capitol",
+   "alt": "Drawing of the north wing of the United States Capitol in 1800, a plain stone building standing nearly alone on open ground with a few low buildings at the left",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:The_Capitol_in_1800_taken_from_advanced_proof_of_plate_38_History_of_the_United_States_Capitol_by_Glenn_Brown_LCCN2014649261.jpg"
+  }
+ ]
+}

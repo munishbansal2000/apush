@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-0719",
+ "lesson": "apush-u3-l5",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.12"
+ ],
+ "skills": [
+  "2.B"
+ ],
+ "themes": [
+  "NAT",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "status": "final",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.7 The Articles of Confederation"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "Establishment of New Political Systems (1787-1800)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Unit 3: Conflict and American Independence (1754-1800)"
+   }
+  ],
+  "primary_sources": [
+   "Northwest Ordinance, July 13, 1787"
+  ]
+ },
+ "stimulus_set": "northwest-ordinance-1787",
+ "stimulus": {
+  "kind": "text",
+  "text": "An Ordinance for the government of the territory of the United States North West of the river Ohio. July 13, 1787.\n\nArticle III: “Religion, morality, and knowledge, being necessary to good government and the happiness of mankind, schools and the means of education shall forever be encouraged.”\n\nArticle V: “There shall be formed in the said territory, not less than three nor more than five states; and, whenever any of the said states shall have sixty thousand free inhabitants therein, such state shall be admitted, by its delegates, into the Congress of the United States, on an equal footing with the original states in all respects whatever. ...”\n\nArticle VI: “There shall be neither slavery nor involuntary servitude in the said territory, otherwise than in the punishment of crimes whereof the party shall have been duly convicted: Provided, always, that any person escaping into the same, from whom labor or service is lawfully claimed in any one of the original states, such fugitive may be lawfully reclaimed and conveyed to the person claiming his or her labor or service as aforesaid.”",
+  "source_note": "Northwest Ordinance, July 13, 1787, Articles III, V, and VI, quoted verbatim; Article V abridged with an ellipsis. Public domain."
+ },
+ "source": "original; stimulus is the Northwest Ordinance, July 13, 1787, quoted verbatim, Article V abridged with an ellipsis (public domain).",
+ "stem": "According to Article VI, what did the Northwest Ordinance do about slavery in the territory?",
+ "options": [
+  {
+   "key": "A",
+   "text": "It allowed slavery until each new state voted to end it.",
+   "misconception": "The article bans slavery outright; no vote on the question is mentioned."
+  },
+  {
+   "key": "B",
+   "text": "It banned slavery and involuntary servitude in the territory."
+  },
+  {
+   "key": "C",
+   "text": "It freed enslaved people already living in the original states.",
+   "misconception": "The ban covered only the territory, not the original states."
+  },
+  {
+   "key": "D",
+   "text": "It ordered the territory's settlers to free all enslaved workers at once.",
+   "misconception": "Background: the ban stopped slavery from entering the territory; it did not free people held elsewhere."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "Article VI says there shall be neither slavery nor involuntary servitude, so it bans slavery rather than leaving it to a vote.",
+  "B": "Article VI says plainly that there shall be neither slavery nor involuntary servitude in the territory.",
+  "C": "The article governs the territory only; it says nothing about freeing people in the original states.",
+  "D": "The ban keeps slavery out of the territory; it does not order settlers to free workers held elsewhere.",
+  "general": "1. Article VI opens with a ban, not a limit or a delay.\n2. The only exception named is punishment for a crime after conviction.\n3. The fugitive proviso lets owners reclaim escapees; it does not allow slavery inside the territory.\n4. So the Ordinance banned slavery in the territory.\nRemember: read the ban and its exceptions separately: an exception for escapees does not undo the ban."
+ }
+}

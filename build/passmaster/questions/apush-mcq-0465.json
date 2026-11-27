@@ -1,0 +1,89 @@
+{
+ "id": "apush-mcq-0465",
+ "lesson": "apush-u3-l2",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.4"
+ ],
+ "skills": [
+  "1.B",
+  "2.C"
+ ],
+ "themes": [
+  "PCE",
+  "ARC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "trumbull-declaration",
+ "stimulus": {
+  "kind": "image",
+  "text": "The painting shows a grand room in Philadelphia, crowded with delegates of the Second Continental Congress. At the center, five men stand before a table covered with papers. The tallest, in a red waistcoat, hands a document to the man seated at the right in a high-backed chair. Rows of seated and standing delegates watch from both sides.",
+  "source_note": "John Trumbull, Declaration of Independence (1818). Public domain; image from the shared image pool."
+ },
+ "source": "original; stimulus viewed before writing \u2014 John Trumbull, Declaration of Independence (1818), public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "B. Common Sense, the Declaration of Independence, and Republican Self-Government"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 10"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Declaration of Independence"
+   }
+  ],
+  "primary_sources": [
+   "John Trumbull, Declaration of Independence (1818)"
+  ]
+ },
+ "status": "final",
+ "stem": "What moment does Trumbull's painting show?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The signing of the Declaration of Independence on July 4, 1776",
+   "misconception": "No one is signing in the painting \u2014 the central action is a document being handed over, not signed."
+  },
+  {
+   "key": "B",
+   "text": "The first reading of the Declaration to the crowd in Philadelphia",
+   "misconception": "The scene is indoors, before Congress, not a public reading to a crowd outside."
+  },
+  {
+   "key": "C",
+   "text": "The Committee of Five presenting its draft of the Declaration to Congress"
+  },
+  {
+   "key": "D",
+   "text": "The surrender of the British army at Yorktown in 1781",
+   "misconception": "Yorktown is a different Trumbull painting. This room holds Congress, not a surrender."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "C": "The five standing men are the Committee of Five, and the tall figure hands the draft to John Hancock, seated at the right. The action is a presentation, and the painter centers it.",
+  "A": "The painting shows a presentation, not a signing. The signing came later, and most delegates signed in August.",
+  "B": "The room is Congress in session, not a crowd outdoors. The moment is the presentation of the draft.",
+  "D": "Yorktown is a battlefield surrender, painted by Trumbull separately. This painting shows Congress receiving a draft.",
+  "general": "1. Watch the central action. A document is being handed from a standing man to a seated one \u2014 a presentation, not a signing.\n2. Count the standing men. Five of them, the Committee of Five, with Jefferson tallest in the red waistcoat.\n3. Name the moment. The committee presents its draft of the Declaration to Congress \u2014 Background: on June 28, 1776.\nRemember: a painting shows what its figures are doing \u2014 handing over a paper is presenting, not signing."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0465",
+   "file": "u3/pr25e-test2-q14.jpg",
+   "caption": "Declaration of Independence (1818), by John Trumbull \u2014 the Committee of Five presenting the draft to Congress",
+   "alt": "A large formal painting of a crowded Philadelphia room where five standing men present a document to a seated man at a table while rows of delegates watch",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Declaration_of_Independence_(1819),_by_John_Trumbull.jpg"
+  }
+ ]
+}

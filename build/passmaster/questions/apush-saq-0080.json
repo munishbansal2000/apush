@@ -1,0 +1,88 @@
+{
+ "id": "apush-saq-0080",
+ "type": "saq",
+ "unit": 3,
+ "lesson": "apush-u3-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "topics": [
+  "3.5"
+ ],
+ "skills": [
+  "1.B",
+  "2.C"
+ ],
+ "themes": [
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "stimulus_set": null,
+ "source": "original; stimulus is original secondary prose written for this question.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.5 The American Revolution, A. The War for Independence"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 10"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Fighting the Revolution"
+   }
+  ],
+  "primary_sources": []
+ },
+ "saq_slot": 1,
+ "stimulus": {
+  "type": "text",
+  "text": "When Nathanael Greene took command of the southern army in December 1780, the American cause in the South looked lost: Charleston had fallen, the army had been routed at Camden, and the British held the major towns. Greene did not try to win a single great battle. Instead he divided his small army, kept it moving, and forced the British under Cornwallis to chase him across the Carolinas, fighting sharp engagements at Cowpens and Guilford Courthouse and then slipping away. Greene never won a pitched battle, but by the spring of 1781 the British held only a few coastal posts, their army worn down by marching, hunger, and constant small losses.",
+  "source": "Original secondary passage written for this question.",
+  "rights": "Original secondary text; no verbatim quotation used.",
+  "source_note": "Original secondary passage written for this question, drawn from Barron's Premium 2027, Chapter 5, and 5 Steps to a 5 2024, Chapter 10."
+ },
+ "parts": [
+  {
+   "part": "a",
+   "prompt": "Identify ONE strategy Greene used in the southern campaign.",
+   "modelAnswer": "Greene divided his small army and kept it moving, forcing the British to chase him across the Carolinas instead of meeting them in one great battle. He fought sharp, limited engagements such as Cowpens and Guilford Courthouse and then slipped away before the British could destroy his force. The strategy traded ground for time, wearing the British down while keeping his own army alive.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names one strategy Greene used, such as dividing his army, keeping it moving, avoiding a decisive battle, or fighting limited engagements and retreating."
+    }
+   ],
+   "points": 1
+  },
+  {
+   "part": "b",
+   "prompt": "Explain ONE reason Greene's strategy worked even though he never won a pitched battle.",
+   "modelAnswer": "The strategy worked because it made the British pay for every mile: Cornwallis had to march long distances through hostile country, losing men to hunger, desertion, and small fights, while Greene's army stayed intact and kept recruiting. A British victory like Guilford Courthouse cost so many men that it weakened the winners more than the losers. In the end the British held the battlefield and lost the countryside, which was the only ground that mattered.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains one reason the strategy worked without a pitched victory, such as wearing the British down through marching and attrition, making British victories too costly, or keeping the American army alive while the British lost control of the countryside."
+    }
+   ],
+   "points": 1
+  },
+  {
+   "part": "c",
+   "prompt": "Explain ONE way the southern campaign contributed to the American victory in the war.",
+   "modelAnswer": "The southern campaign drove Cornwallis north into Virginia, where he fortified Yorktown and was cut off by Washington and the French fleet in the autumn of 1781. Greene's wearing-down of the British in the Carolinas left Cornwallis with too few men and too little support to hold the South. The campaign therefore set up the final surrender: the British lost the South first, and then lost their last southern army at Yorktown.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains one way the southern campaign contributed to victory, such as driving Cornwallis to Yorktown, wearing down the British army so it could not hold the South, or leaving the British confined to coastal posts."
+    }
+   ],
+   "points": 1
+  }
+ ],
+ "totalPoints": 3
+}

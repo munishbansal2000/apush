@@ -1,0 +1,75 @@
+{
+  "answerKey": "A",
+  "difficulty": 3,
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 5",
+        "section": "Topic 3.8 The Constitutional Convention and Debates over Ratification"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 11",
+        "section": "Establishment of New Political Systems (1787–1800)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 7"
+      }
+    ],
+    "primary_sources": []
+  },
+  "id": "apush-mcq-0773",
+  "lesson": "apush-u3-l4",
+  "options": [
+    {
+      "key": "A",
+      "text": "Extending the republic over a large territory so no single faction could dominate"
+    },
+    {
+      "key": "B",
+      "misconception": "Madison wanted to eliminate the causes of faction.",
+      "text": "Eliminating the causes of faction by imposing a single religion and opinion"
+    },
+    {
+      "key": "C",
+      "misconception": "Madison wanted the president to ban parties.",
+      "text": "Giving the president authority to ban political parties"
+    },
+    {
+      "key": "D",
+      "misconception": "Madison wanted power returned to small local governments.",
+      "text": "Returning most political power to small, local governments"
+    }
+  ],
+  "pool": "test",
+  "rationales": {
+    "A": "Madison's solution was to extend the sphere: in a large republic, many competing factions would check one another. With many interests in play, no single faction could form a majority and oppress the rest.",
+    "B": "Madison says the causes of faction cannot be eliminated without destroying liberty.",
+    "C": "Madison proposes no presidential ban on political parties.",
+    "D": "Madison favors a large republic over small local governments, not the reverse.",
+    "general": "1. Ask what Madison rules out. Removing the causes of faction would mean removing liberty itself.\n2. Ask what remains. Controlling the effects of faction, by extending the republic.\n3. Name the mechanism. In a large republic, many competing factions check one another, so none can dominate.\n4. Test the reversals. A single religion, a party ban, and small governments all run against Madison.\nRemember: when a cause cannot be removed, the solution is to control its effects."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "3.A"
+  ],
+  "source": "original; stimulus is a verbatim public-domain excerpt from James Madison, Federalist No. 10 (1787)",
+  "status": "final",
+  "stem": "Which of the following best describes Madison’s proposed solution to the problem of faction, as argued in *Federalist No. 10*?",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "James Madison, Federalist No. 10, 1787, public domain.",
+    "text": "“The latent causes of faction are thus sown in the nature of man; and we see them everywhere brought into different degrees of activity, according to the different circumstances of civil society. A zeal for different opinions concerning religion, concerning government, and many other points . . . have . . . divided mankind into parties, inflamed them with mutual animosity, and rendered them much more disposed to vex and oppress each other than to co-operate for their common good.”"
+  },
+  "stimulus_set": "federalist-10-1787",
+  "themes": [
+    "PCE"
+  ],
+  "topics": [
+    "3.8"
+  ],
+  "type": "mcq",
+  "unit": 3
+}

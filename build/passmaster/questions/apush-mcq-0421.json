@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-0421",
+ "lesson": "apush-u3-l2",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.3"
+ ],
+ "skills": [
+  "2.A"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "franklin-distinction",
+ "stimulus": {
+  "kind": "text",
+  "text": "In February 1766, Benjamin Franklin was questioned by the House of Commons about the Stamp Act. He told Parliament that the colonists had long accepted duties on goods traded with other nations, which regulated commerce, but that a tax laid directly on things produced and used inside the colonies \u2014 like the stamps on paper and legal documents \u2014 was different: it reached into the colonists' daily lives and taxed them without their consent. He warned British readers that the new system of taxing the colonies 'tends to dissolve those bands of union and to sever us forever.'",
+  "source_note": "Original secondary passage; facts from Barron's Premium 2027, Chapter 5, and 5 Steps to a 5 2024, Chapter 9. The quoted sentence is Franklin's, as reported in 5 Steps to a 5 2024, Chapter 9."
+ },
+ "source": "original; stimulus viewed before writing \u2014 original secondary passage; facts from Barron's Premium 2027, Chapter 5, and 5 Steps to a 5 2024, Chapter 9.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "A. Colonial Resistance to British Policies in the Aftermath of the French and Indian War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 9",
+    "section": "Stamp Act Crisis"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Sugar Act, the Currency Act, and the Stamp Act"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "According to Franklin's distinction, the colonists had accepted duties on trade because...",
+ "options": [
+  {
+   "key": "A",
+   "text": "The duties were too small for anyone to notice",
+   "misconception": "The duties were not small \u2014 the Molasses Act set 6 pence per gallon \u2014 and colonists noticed them; they accepted them because they regulated trade, not because they were cheap."
+  },
+  {
+   "key": "B",
+   "text": "The duties were collected by colonial assemblies",
+   "misconception": "British customs officers collected the duties, not the assemblies \u2014 the colonists accepted them because of what they were for, not because of who collected them."
+  },
+  {
+   "key": "C",
+   "text": "They regulated commerce rather than raising revenue inside the colonies"
+  },
+  {
+   "key": "D",
+   "text": "They applied only to foreign merchants, never to colonists",
+   "misconception": "The duties fell on colonial shippers and buyers too \u2014 the distinction was about purpose, not about who paid."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "C": "Franklin's line was purpose, not price: duties on traded goods regulated commerce, which colonists accepted. A direct tax on paper and documents raised revenue inside the colonies \u2014 and that was the line Parliament had crossed.",
+  "A": "Smallness was never the argument. The Molasses Act's 6 pence was noticed and resented \u2014 the acceptance was about purpose.",
+  "B": "Collection was British, not colonial. The assemblies never collected these duties; the point was what the duties were for.",
+  "D": "Colonists paid these duties themselves, as shippers and buyers. The distinction was purpose, not payer.",
+  "general": "1. Ask what the duties did. They regulated commerce \u2014 trade with other nations, the flow of goods.\n2. Ask what the Stamp Act did differently. It raised revenue directly, on things produced and used inside the colonies.\n3. Name the distinction. Same money, different purpose: regulating trade was accepted, taxing daily life without consent was not.\nRemember: when two taxes look alike, ask what each one is for \u2014 purpose, not price, is usually where the line is drawn."
+ }
+}

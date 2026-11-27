@@ -1,0 +1,160 @@
+{
+ "id": "apush-dbq-0008",
+ "type": "dbq",
+ "unit": 3,
+ "lesson": "apush-u3-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "topics": [
+  "3.5"
+ ],
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "continuity-change",
+ "stimulus_set": null,
+ "source": "original; documents are public-domain primary sources or paraphrases of them (see each document's sourcing note).",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.5 The American Revolution, A. The War for Independence"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 10"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Fighting the Revolution"
+   }
+  ],
+  "primary_sources": [
+   "Declaration of Independence (1776)",
+   "Thomas Paine, Common Sense (1776)",
+   "Lord Dunmore's Proclamation (1775)",
+   "Abigail Adams to John Adams (1776)",
+   "Treaty of Paris (1783)"
+  ]
+ },
+ "prompt": "Evaluate the extent to which the Declaration of Independence shaped the conduct of the Revolutionary War, 1776\u20131783.",
+ "documents": [
+  {
+   "n": 1,
+   "kind": "text",
+   "date": "July 1776",
+   "title": "The Declaration's preamble",
+   "source": "Declaration of Independence, July 4, 1776, preamble, abridged. Public domain.",
+   "sourcing": "The Second Continental Congress stating the colonies' philosophy of government in the document that announced independence.",
+   "text": "\u201cWe hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness. \u2014 That to secure these rights, Governments are instituted among Men, deriving their just powers from the consent of the governed.\u201d"
+  },
+  {
+   "n": 2,
+   "kind": "text",
+   "date": "January 1776",
+   "title": "Paine's Common Sense",
+   "source": "Thomas Paine, Common Sense (1776), abridged. Public domain.",
+   "sourcing": "Paine's best-selling pamphlet, stating the case for independence in plain language and selling more than 100,000 copies in three months.",
+   "text": "\u201cSociety in every state is a blessing, but government even in its best state is but a necessary evil; in its worst state an intolerable one. Wherefore, security being the true design and end of government, it unanswerably follows that whatever form thereof appears most likely to ensure it to us, with the least expense and greatest benefit, is preferable to all others.\u201d"
+  },
+  {
+   "n": 3,
+   "kind": "text",
+   "date": "November 1775",
+   "title": "Dunmore's Proclamation",
+   "source": "Lord Dunmore, Proclamation, November 7, 1775, abridged. Public domain.",
+   "sourcing": "The royal governor of Virginia offering freedom to enslaved people of rebels who would bear arms for Britain.",
+   "text": "\u201cAnd I do hereby further declare all indented Servants, Negroes, or others, (appertaining to Rebels,) free that are able and willing to bear Arms, they joining His MAJESTY'S Troops as soon as may be, for the more speedily reducing this Colony to a proper Sense of their Duty, to His MAJESTY'S Crown and Dignity.\u201d"
+  },
+  {
+   "n": 4,
+   "kind": "text",
+   "date": "March 1776",
+   "title": "Abigail Adams on the ladies",
+   "source": "Abigail Adams to John Adams, March 31, 1776. Public domain.",
+   "sourcing": "Abigail Adams writing to her husband in Congress, asking that the new laws remember women as well as men.",
+   "text": "\u201cI desire you would Remember the Ladies, and be more generous and favourable to them than your ancestors. Do not put such unlimited power into the hands of the Husbands. Remember all Men would be tyrants if they could.\u201d"
+  },
+  {
+   "n": 5,
+   "kind": "text",
+   "date": "January 1777",
+   "title": "Prince Hall petitions Massachusetts",
+   "source": "Paraphrase of the petition of Prince Hall and seven other free Black men of Boston to the Massachusetts legislature, January 1777.",
+   "sourcing": "A paraphrase of a petition by free Black Bostonians, arguing that the Revolution's ideals applied to enslaved people as well as to white colonists.",
+   "text": "In January 1777, Prince Hall and seven other free Black men of Boston petitioned the Massachusetts legislature for the freedom of enslaved people. They argued that the same natural rights the colonies claimed against Britain belonged to Black people too, and that holding them in slavery contradicted the cause the Patriots were fighting for."
+  },
+  {
+   "n": 6,
+   "kind": "image",
+   "date": "1820",
+   "title": "Trumbull's surrender at Yorktown",
+   "source": "John Trumbull, Surrender of Lord Cornwallis, 1820. Public domain; image from the shared image pool.",
+   "sourcing": "Trumbull painting the surrender at Yorktown thirty-nine years after the event, showing Cornwallis's deputy presenting his sword.",
+   "figure": "u3/surrender-cornwallis-yorktown.jpg"
+  },
+  {
+   "n": 7,
+   "kind": "text",
+   "date": "September 1783",
+   "title": "The Treaty of Paris recognizes independence",
+   "source": "Treaty of Paris, Article 1, September 3, 1783, abridged. Public domain.",
+   "sourcing": "The peace treaty in which Britain recognized the United States as free, sovereign, and independent states.",
+   "text": "\u201cHis Britannic Majesty acknowledges the said United States, viz., New Hampshire, Massachusetts Bay, Rhode Island and Providence Plantations, Connecticut, New York, New Jersey, Pennsylvania, Delaware, Maryland, Virginia, North Carolina, South Carolina and Georgia, to be free sovereign and independent states, that he treats with them as such, and for himself, his heirs, and successors, relinquishes all claims to the government, propriety, and territorial rights of the same and every part thereof.\u201d"
+  }
+ ],
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent to which the Declaration of Independence shaped the conduct of the Revolutionary War, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim about the extent does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as the imperial crisis after 1763, the outbreak of war in 1775, or the Enlightenment ideas the Patriots drew on.",
+   "notEarned": "A sentence of background with no link to the argument does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence from documents (first point): earns the point for describing the content of at least three documents relevant to the argument, such as the Declaration's preamble on natural rights, Dunmore's offer of freedom, or Prince Hall's petition.",
+   "notEarned": "Quoting documents without describing what they show does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence from documents (second point): earns the point for using the content of at least six documents to support the argument, including documents that show the Declaration's ideals spreading, such as Dunmore and Prince Hall, against documents that show its limits, such as the Treaty of Paris settling only independence.",
+   "notEarned": "Using fewer than six documents, or using six without tying them to the argument, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence beyond the documents: earns the point for describing a specific relevant example not in the documents, such as the enlistment of Black soldiers in the Continental Army, the gradual emancipation laws of the northern states, or the Loyalist exodus.",
+   "notEarned": "A vague reference to outside knowledge with no specific example does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Sourcing: earns the point for explaining how the audience, purpose, historical situation, or point of view of at least two documents shapes the argument, such as Abigail Adams writing a private letter to her husband, or Dunmore issuing a wartime proclamation as a military tactic.",
+   "notEarned": "Naming a document's author without explaining how it shapes the argument does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Complexity: earns the point for a complex argument, such as qualifying the thesis by showing where the Declaration's ideals changed the war and where they were ignored, or weighing the Declaration's ideas against military necessity as forces shaping the war.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ],
+ "modelOutline": "Thesis: The Declaration shaped the war's conduct profoundly, but as a challenge rather than a plan \u2014 it gave the war a meaning that forced every group it touched to ask whether its promises applied to them, and the answers changed how the war was fought, even while the promises themselves went unfulfilled.\nContext: When the Declaration was adopted in July 1776, the war was already a year old, and Congress had spent that year seeking reconciliation. The preamble's claim that all men are created equal was written to justify independence to the world, but once published it belonged to everyone who read it, including the people the Patriots themselves held in slavery.\nEvidence: Document 1 states the promise: natural rights and government by consent. Document 2 shows the promise reaching ordinary readers: Paine's pamphlet sold more than 100,000 copies in three months. Document 3 shows the promise turned against the Patriots: Dunmore offered freedom to the rebels' enslaved people, forcing the Patriots to answer what their liberty meant. Document 4 shows the promise claimed by women: Abigail Adams asked Congress to remember the ladies when it made new laws.\nDocument 5 shows the promise claimed by Black Bostonians: Prince Hall petitioned for freedom on the Revolution's own principles. Document 6 shows the war's end: a surrender that won independence. Document 7 shows what the peace settled: independence, and nothing about slavery or women's rights.\nEvidence of limits: The war was still fought for independence first, and the ideals did not stop the Patriots from holding enslaved people or excluding women from politics. The Declaration shaped the questions the war raised, not the answers the new nation gave.\nBeyond the documents: Black soldiers fought in the Continental Army from the war's first battles, some winning freedom for their service; the northern states began gradual emancipation during and after the war; and tens of thousands of Loyalists left the country, showing the Revolution's promises had losers as well as winners.\nSourcing: Abigail Adams wrote a private letter to her husband, so her plea shows what women asked for, not what Congress granted; Dunmore's proclamation was a military tactic, not a statement of principle, so its challenge to the Patriots was real even though its author did not believe in it.\nComplexity: The Declaration shaped the war by making its meaning contested \u2014 it gave enslaved people, women, and Loyalists a language to claim or resist, and the war's conduct changed around those claims even as the new nation left most of them unanswered.",
+ "totalPoints": 7
+}

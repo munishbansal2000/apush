@@ -1,0 +1,86 @@
+{
+ "id": "apush-mcq-0432",
+ "lesson": "apush-u3-l2",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.3"
+ ],
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 4,
+ "stimulus_set": "revere-massacre",
+ "stimulus": {
+  "kind": "image",
+  "text": "The engraving, 'The Bloody Massacre perpetrated in King-Street Boston on March 5th 1770,' was engraved, printed, and sold by Paul Revere. It shows a neat line of British soldiers firing a single volley into a crowd of Bostonians, with five men fallen in the foreground. Below the image, the names of the dead are listed: Samuel Gray, Samuel Maverick, James Caldwell, Crispus Attucks, and Patrick Carr \u2014 'Killed. Six wounded.'",
+  "source_note": "Paul Revere, 1770. Library of Congress. Public domain (pre-1930)."
+ },
+ "source": "original; stimulus viewed before writing \u2014 Paul Revere, 1770, Library of Congress, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "A. Colonial Resistance to British Policies in the Aftermath of the French and Indian War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 9",
+    "section": "Stamp Act Crisis"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Sugar Act, the Currency Act, and the Stamp Act"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "Revere's engraving is best used by a historian as evidence of which of the following?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The exact sequence of events on King Street on March 5, 1770",
+   "misconception": "The engraving is propaganda, not a record \u2014 it shows an ordered volley, while witnesses described a confused confrontation in the snow. It proves what Patriots wanted people to believe, not what happened step by step."
+  },
+  {
+   "key": "B",
+   "text": "How Patriot leaders shaped colonial opinion about British troops"
+  },
+  {
+   "key": "C",
+   "text": "The number of soldiers stationed in Boston in 1770",
+   "misconception": "The engraving shows eight soldiers in a line, but the garrison numbered about 4,000 men in a city of 16,000 \u2014 the image cannot tell you the size of the force."
+  },
+  {
+   "key": "D",
+   "text": "The legal arguments used at the soldiers' trial",
+   "misconception": "The engraving makes no legal argument \u2014 it is a picture, and the trial turned on testimony about who fired first, which a picture cannot settle."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "B": "Background: Revere's print was made to be sold and spread \u2014 a piece of Patriot propaganda that turned a confused street clash into a deliberate massacre. It is evidence of how opinion was shaped, not of what happened minute by minute.",
+  "A": "The engraving is not a record of the sequence. Witnesses described confusion and snowballs; the print shows an ordered volley.",
+  "C": "Eight men in a line are not the garrison. About 4,000 soldiers were stationed in a city of 16,000.",
+  "D": "No legal argument appears in the image. The trial turned on testimony, not on this print.",
+  "general": "1. Ask what the engraving was for. It was printed and sold across the colonies to turn opinion against the troops \u2014 propaganda, not a court record.\n2. Ask what it can prove. How Patriots framed the event: an ordered volley, innocent victims, named dead.\n3. Ask what it cannot prove. The exact sequence \u2014 witnesses described snowballs, shouts, and confusion, not the neat line the engraving shows.\nRemember: a source's purpose limits its use \u2014 propaganda proves what people were told to believe, not what happened."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0432",
+   "file": "u3/pr25e-ch07-q03.jpg",
+   "caption": "The Bloody Massacre perpetrated in King-Street Boston on March 5th 1770, engraved, printed, and sold by Paul Revere",
+   "alt": "Revere engraving of British soldiers firing a volley into a crowd of Bostonians in King Street, with five men fallen in the foreground",
+   "license": "Public domain",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/5/51/The_bloody_massacre_perpetrated_in_King_Street_Boston_on_March_5th_1770_by_a_party_of_the_29th_Regt._-_engrav%27d%2C_printed_%26_sold_by_Paul_Revere%2C_Boston._LCCN2008680173.jpg"
+  }
+ ]
+}

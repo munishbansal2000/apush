@@ -1,0 +1,93 @@
+{
+ "id": "apush-saq-0092",
+ "lesson": "apush-u3-l5",
+ "type": "saq",
+ "pool": "test",
+ "unit": 3,
+ "topics": [
+  "3.10"
+ ],
+ "skills": [
+  "2.A",
+  "3.A"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.10 Shaping the New Republic, F. Policy Debates in the New Nation"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "Establishment of New Political Systems (1787-1800)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Unit 3: Conflict and American Independence (1754-1800)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "saq_slot": 1,
+ "stimulus_set": null,
+ "source": "original; stimulus is an original secondary passage written for this question.",
+ "stimulus": {
+  "type": "text",
+  "text": "Hamilton\u2019s financial program did more than pay the nation\u2019s debts. By funding the old debt at full value, assuming the states\u2019 debts, and chartering a national bank, Hamilton tied the wealthiest Americans to the new federal government and gave that government a permanent role in the economy. The program also divided the country. Farmers and Southern planters, who saw little benefit in banks and bonds, gathered behind Jefferson and Madison in opposition, and that opposition hardened into the first political parties.",
+  "source": "Original secondary passage written for this question.",
+  "rights": "Original.",
+  "source_note": "Original secondary passage written for this question."
+ },
+ "parts": [
+  {
+   "part": "a",
+   "points": 1,
+   "prompt": "Identify ONE goal of Hamilton\u2019s financial program described in the passage.",
+   "modelAnswer": "One goal was to tie the wealthiest Americans to the new federal government. By funding the debt at full value and chartering a national bank, Hamilton gave creditors and merchants a stake in the government\u2019s survival.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names one goal of Hamilton\u2019s program from the passage, such as paying the debts, tying wealthy Americans to the government, or giving the government a role in the economy.",
+     "notEarned": "Naming a program without stating its goal does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "b",
+   "points": 1,
+   "prompt": "Explain ONE way Hamilton\u2019s program contributed to the formation of political parties.",
+   "modelAnswer": "The program gave opponents a shared cause to organize around. Farmers and Southern planters who saw little benefit in banks and bonds gathered behind Jefferson and Madison, and that opposition hardened into the Democratic-Republican Party against Hamilton\u2019s Federalists.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains one way the program fed party formation, such as giving opponents a shared cause, splitting the country over banks and bonds, or driving Jefferson and Madison to organize an opposition.",
+     "notEarned": "Saying only that parties formed, without linking the program to their formation, does not earn the point."
+    }
+   ]
+  },
+  {
+   "part": "c",
+   "points": 1,
+   "prompt": "Explain ONE limit of the passage as evidence about the 1790s.",
+   "modelAnswer": "The passage states the author\u2019s judgment that the program divided the country, but it gives no voices from the 1790s themselves. A reader cannot tell from this passage alone how ordinary farmers or merchants felt, or whether the parties formed because of the program or for other reasons.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains one limit of the passage as evidence, such as that it gives a later judgment with no voices from the 1790s, or that it asserts a cause without showing it.",
+     "notEarned": "Saying only that one passage cannot show everything, with no specific limit, does not earn the point."
+    }
+   ]
+  }
+ ],
+ "totalPoints": 3
+}

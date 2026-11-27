@@ -1,0 +1,92 @@
+{
+  "difficulty": 3,
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 5",
+        "section": "Topic 3.6 The Influence of Revolutionary Ideals"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 10",
+        "section": "American Revolution and the New Nation (1775–1787)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 7"
+      }
+    ],
+    "primary_sources": [
+      "Abigail Adams, letter to John Adams, March 31, 1776"
+    ]
+  },
+  "id": "apush-saq-0100",
+  "lesson": "apush-u3-l3",
+  "parts": [
+    {
+      "modelAnswer": "Adams argues that women should not be subject to unlimited power by husbands, since men would be tyrants if they could. She claims a political voice, warning that women will rebel and refuse to be bound by laws in which they have no voice or representation. Her point of view frames women’s claims in the Revolution’s own language of rights and consent.",
+      "part": "a",
+      "points": 1,
+      "prompt": "Briefly describe the point of view expressed in the excerpt.",
+      "scoring": [
+        {
+          "criterion": "Earns the point for describing Adams’s point of view: a claim to political voice and limits on male authority, framed in the language of the Revolution, including the threat to rebel.",
+          "notEarned": "Summarizing that “women were unhappy” without naming the claim to voice and representation and the threat to rebel does not earn the point.",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "modelAnswer": "The Revolution’s rhetoric of natural rights and consent of the governed led to Adams’s claim. That language gave her a way to demand inclusion, since it said government rests on the consent of the governed. Women’s participation in boycotts and non-importation had already made their political activity visible.",
+      "part": "b",
+      "points": 1,
+      "prompt": "Briefly explain how ONE specific historical event or development between 1754 and 1800 led to developments such as those described in the excerpt.",
+      "scoring": [
+        {
+          "criterion": "Earns the point for naming one specific event or development dated 1754–1800 and explaining how it led to Adams’s claim, such as Revolutionary rights rhetoric, women’s boycott participation, or Enlightenment ideas about rights.",
+          "notEarned": "Naming an event with no explanation of causation, or an event outside 1754–1800, does not earn the point.",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "modelAnswer": "The Seneca Falls Convention of 1848 resulted from the ideas in Adams’s letter. Its Declaration of Sentiments reused the language of equality and consent, declaring that all men and women are created equal. The convention carried Adams’s claim to voice and representation into an organized movement for women’s rights.",
+      "part": "c",
+      "points": 1,
+      "prompt": "Briefly explain how ONE specific historical event or development between 1800 and 1848 resulted from developments such as those described in the excerpt.",
+      "scoring": [
+        {
+          "criterion": "Earns the point for naming one specific event or development dated 1800–1848 and explaining how it resulted from the ideas in the excerpt, such as Seneca Falls, the expansion of women’s education, or married women’s property-rights campaigns.",
+          "notEarned": "Naming a later women’s event with no explanation of the result, or an event outside 1800–1848, does not earn the point.",
+          "points": 1
+        }
+      ]
+    }
+  ],
+  "pool": "test",
+  "reasoning": "causation",
+  "saq_slot": 2,
+  "skills": [
+    "1.B",
+    "2.B"
+  ],
+  "source": "original; stimulus is a verbatim public-domain letter; model answers written for this question",
+  "status": "final",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Abigail Adams, letter to John Adams, March 31, 1776, public domain. Original spellings kept.",
+    "text": "“I desire you would Remember the Ladies, and be more generous and favourable to them than your ancestors. Do not put such unlimited power into the hands of the Husbands. Remember all Men would be tyrants if they could. If perticuliar care and attention is not paid to the Laidies we are determined to foment a Rebelion, and will not hold ourselves bound by any Laws in which we have no voice, or Representation.”"
+  },
+  "stimulus_set": null,
+  "themes": [
+    "PCE",
+    "SOC"
+  ],
+  "topics": [
+    "3.6"
+  ],
+  "totalPoints": 3,
+  "type": "saq",
+  "unit": 3
+}

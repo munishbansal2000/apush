@@ -1,0 +1,159 @@
+{
+ "id": "apush-dbq-0005",
+ "type": "dbq",
+ "unit": 3,
+ "lesson": "apush-u3-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "topics": [
+  "3.4"
+ ],
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "PCE",
+  "WOR"
+ ],
+ "reasoning": "continuity-change",
+ "stimulus_set": null,
+ "source": "original; documents are public-domain primary sources or paraphrases of them (see each document's sourcing note)",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "A. Protestant Evangelicalism and Enlightenment Philosophy"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "B. Common Sense, the Declaration of Independence, and Republican Self-Government"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 10"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Declaration of Independence"
+   }
+  ],
+  "primary_sources": []
+ },
+ "prompt": "Evaluate the extent to which Enlightenment ideas shaped the American Revolution, 1763\u20131776.",
+ "documents": [
+  {
+   "n": 1,
+   "kind": "text",
+   "date": "1689",
+   "title": "Locke on natural rights and consent",
+   "source": "John Locke, Second Treatise of Government (1689), abridged. Public domain.",
+   "sourcing": "Locke writing to defend England's Glorious Revolution, stating the theory of legitimate government the Patriots later used.",
+   "text": "Men being, as has been said, by nature, all free, equal, and independent, no one can be put out of this estate, and subjected to the political power of another, without his own consent. The great and chief end of men's uniting into commonwealths is the preservation of their property."
+  },
+  {
+   "n": 2,
+   "kind": "text",
+   "date": "1748",
+   "title": "Montesquieu on the separation of powers",
+   "source": "Montesquieu, The Spirit of the Laws (1748), abridged. Public domain.",
+   "sourcing": "A French Enlightenment philosopher arguing that liberty depends on dividing government power, an idea American writers read widely.",
+   "text": "When the legislative and executive powers are united in the same person, or in the same body of magistrates, there can be no liberty. Again, there is no liberty, if the judiciary power be not separated from the legislative and executive."
+  },
+  {
+   "n": 3,
+   "kind": "text",
+   "date": "1772",
+   "title": "John Allen preaches liberty",
+   "source": "John Allen, Oration Upon the Beauties of Liberty (1772), paraphrased. Public domain.",
+   "sourcing": "A Boston Baptist minister preaching against British rule after the Gaspee affair; his sermon was reprinted seven times in four cities, so the paraphrase captures a widely heard argument.",
+   "text": "The minister told his Boston congregation that liberty is a beauty given by God, and that British rule threatened it. He called on his hearers to resist corruption and tyranny, casting the struggle against Britain as a struggle against godless power."
+  },
+  {
+   "n": 4,
+   "kind": "text",
+   "date": "January 1776",
+   "title": "Paine's Common Sense",
+   "source": "Thomas Paine, Common Sense (1776), abridged. Public domain.",
+   "sourcing": "Paine's best-selling pamphlet, stating the case for independence in plain language and selling more than 100,000 copies in three months.",
+   "text": "Society in every state is a blessing, but government even in its best state is but a necessary evil; in its worst state an intolerable one. Wherefore, security being the true design and end of government, it unanswerably follows that whatever form thereof appears most likely to ensure it to us, with the least expense and greatest benefit, is preferable to all others."
+  },
+  {
+   "n": 5,
+   "kind": "text",
+   "date": "July 1776",
+   "title": "The Declaration of Independence",
+   "source": "Declaration of Independence (1776), preamble, abridged. Public domain.",
+   "sourcing": "The Second Continental Congress stating the colonies' philosophy of government in the document that announced independence.",
+   "text": "We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness. \u2014 That to secure these rights, Governments are instituted among Men, deriving their just powers from the consent of the governed."
+  },
+  {
+   "n": 6,
+   "kind": "text",
+   "date": "July 1775",
+   "title": "The Olive Branch Petition",
+   "source": "Olive Branch Petition (1775), paraphrased. Public domain.",
+   "sourcing": "Congress petitioning the king a year before independence, showing that most delegates still sought reconciliation inside the empire.",
+   "text": "The petition affirmed the colonies' loyalty to King George III, blamed the troubles on Parliament, and proposed that the colonies govern themselves more freely within the British Empire. The king rejected the petition without reading it."
+  },
+  {
+   "n": 7,
+   "kind": "image",
+   "date": "1818",
+   "title": "Trumbull's Declaration of Independence",
+   "source": "John Trumbull, Declaration of Independence (1818). Public domain; image from the shared image pool.",
+   "sourcing": "Trumbull painting the presentation of the draft forty-two years after the event, showing how Americans later remembered the moment \u2014 a room of white, propertied men.",
+   "figure": "u3/pr25e-test2-q14.jpg"
+  }
+ ],
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent to which Enlightenment ideas shaped the American Revolution, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim about the extent of shaping does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as the imperial crisis after 1763, salutary neglect before it, or the age of revolutions in which Enlightenment ideas spread.",
+   "notEarned": "A sentence of background with no link to the argument does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence from documents (first point): earns the point for describing the content of at least three documents relevant to the argument, such as Locke on consent, Montesquieu on separated powers, or Paine on republican government.",
+   "notEarned": "Quoting documents without describing what they show does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence from documents (second point): earns the point for using the content of at least six documents to support the argument, including documents that show the limits of Enlightenment influence.",
+   "notEarned": "Using fewer than six documents, or using six without tying them to the argument, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence beyond the documents: earns the point for describing a specific relevant example not in the documents, such as the state constitutions of 1776, the Pennsylvania constitution's democratic features, or the Great Awakening's language of liberty.",
+   "notEarned": "A vague reference to outside knowledge with no specific example does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Sourcing: earns the point for explaining how the audience, purpose, historical situation, or point of view of at least two documents shapes the argument, such as Paine writing for ordinary readers or Trumbull painting a commemoration decades later.",
+   "notEarned": "Naming a document's author without explaining how it shapes the argument does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Complexity: earns the point for a complex argument, such as qualifying the thesis by showing where Enlightenment ideas shaped the Revolution and where experience, interest, or exclusion limited them, or weighing ideas against the imperial crisis as a cause.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ],
+ "modelOutline": "Thesis: Enlightenment ideas shaped the American Revolution decisively \u2014 they gave the Patriots their language of rights, consent, and resistance \u2014 but they shaped it as a vocabulary for a crisis already under way, not as its sole cause, and their reach stopped at slavery, women, and Native peoples.\nContext: Before 1763 Britain governed lightly under salutary neglect, and the colonies taxed and ruled themselves. The Seven Years' War left Britain in debt, London imposed new taxes and controls, and the colonies answered with resistance that needed a justification \u2014 which Enlightenment theory supplied.\nEvidence: Documents 1-2 give the theory \u2014 Locke on consent and natural rights, Montesquieu on separated powers. Documents 3-4 show the theory in American voices \u2014 Allen preaching liberty as a divine gift, Paine translating the case against monarchy into plain language that sold 100,000 copies. Document 5 shows the theory enacted \u2014 the Declaration's preamble, Locke's consent and alter-or-abolish in Jefferson's words.\nEvidence of limits: Document 6 shows the theory's late arrival \u2014 a year before independence, Congress still petitioned the king for reconciliation. Document 7 shows its narrow reach \u2014 Trumbull's 1818 commemoration fills the room with white, propertied men, the only ones the Revolution's rights fully covered.\nBeyond the documents: The state constitutions of 1776, especially Pennsylvania's radically democratic one, carried republican ideas into government, while the Great Awakening's language of liberty shows the ideas traveled through the pulpit as well as the press.\nSourcing: Paine wrote for ordinary readers, which is why his language is plain and his sales enormous; Trumbull painted forty-two years after the event, so his image is memory, not record.\nComplexity: Ideas shaped the Revolution's language and its justification, but the crisis of taxation and war supplied the occasion, and the ideas' promise outran their practice \u2014 the Revolution proclaimed universal rights and kept slavery, exclusion, and expansion.",
+ "totalPoints": 7
+}

@@ -1,0 +1,76 @@
+{
+  "answerKey": "C",
+  "difficulty": 3,
+  "grounding": {
+    "books": [
+      {
+        "book": "barrons-2027",
+        "chapter": "Chapter 5",
+        "section": "Topic 3.4 Philosophical Foundations of the American Revolution"
+      },
+      {
+        "book": "5steps-2024",
+        "chapter": "Chapter 9",
+        "section": "Resistance, Rebellion, and Revolution (1750–1775)"
+      },
+      {
+        "book": "princeton-25e",
+        "chapter": "Chapter 7"
+      }
+    ],
+    "primary_sources": []
+  },
+  "id": "apush-mcq-0768",
+  "lesson": "apush-u3-l2",
+  "options": [
+    {
+      "key": "A",
+      "misconception": "Paine thought monarchy was the most stable government.",
+      "text": "That monarchy was the most stable form of government"
+    },
+    {
+      "key": "B",
+      "misconception": "Paine wanted the colonies to stay loyal.",
+      "text": "That the colonies should remain loyal to Britain to preserve trade"
+    },
+    {
+      "key": "C",
+      "text": "That independence was a cause with significance beyond North America"
+    },
+    {
+      "key": "D",
+      "misconception": "Paine wanted French protection without independence.",
+      "text": "That the colonies should seek protection from France without declaring independence"
+    }
+  ],
+  "pool": "test",
+  "rationales": {
+    "A": "Paine attacks monarchy; he does not defend it as stable.",
+    "B": "Paine calls for independence, not for loyalty to preserve trade.",
+    "C": "Paine frames independence as a refuge for freedom worldwide, not a narrow colonial dispute. He calls America an asylum for liberty, a claim that speaks to all people, not only to the colonies.",
+    "D": "Paine demands independence, not protection without it.",
+    "general": "1. Read the image. Freedom has been hunted around the globe and needs an asylum.\n2. Ask what that image claims. Independence matters beyond North America, as a refuge for mankind.\n3. Test the other options. Monarchy, loyalty, and protection without independence all reverse Paine.\n4. Match the appeal. Paine asks readers to stand for a cause with meaning for the whole world.\nRemember: when a writer calls the world to witness, the argument is bigger than one colony."
+  },
+  "reasoning": "causation",
+  "skills": [
+    "3.A"
+  ],
+  "source": "original; stimulus is a verbatim public-domain excerpt from Thomas Paine, Common Sense (1776)",
+  "status": "final",
+  "stem": "Paine’s argument in the excerpt most directly appealed to which of the following ideas?",
+  "stimulus": {
+    "kind": "text",
+    "source_note": "Thomas Paine, Common Sense, 1776, public domain.",
+    "text": "“O ye who love mankind! Ye who dare oppose, not only the tyranny, but the tyrant, stand forth! Every spot of the old world is overrun with oppression. Freedom hath been hunted round the globe. Asia, and Africa, have long expelled her. Europe regards her like a stranger, and England hath given her warning to depart. O! receive the fugitive, and prepare in time an asylum for mankind.”"
+  },
+  "stimulus_set": "paine-common-sense-1776",
+  "themes": [
+    "PCE",
+    "WOR"
+  ],
+  "topics": [
+    "3.4"
+  ],
+  "type": "mcq",
+  "unit": 3
+}

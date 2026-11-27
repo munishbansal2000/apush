@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-0381",
+ "lesson": "apush-u3-l1",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 3,
+ "topics": [
+  "3.2"
+ ],
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "WOR",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "wolfe-quebec",
+ "stimulus": {
+  "kind": "image",
+  "text": "Benjamin West's painting \"The Death of General Wolfe\" (1770) shows the British general James Wolfe dying on the Plains of Abraham outside Quebec in 1759. Wolfe, in a red coat, reclines in the center, supported by officers, while a runner arrives from the left with news of the French retreat and a Native man kneels in thought at the lower left.\n\nBritish soldiers and a flag fill the right side of the scene, and smoke from the battle rises in the background. West painted the scene eleven years after the battle, in London.",
+  "source_note": "Benjamin West, \"The Death of General Wolfe,\" 1770, public domain."
+ },
+ "source": "original; stimulus viewed before writing \u2014 Benjamin West, \"The Death of General Wolfe,\" 1770, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "British Victory in the French and Indian War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 9",
+    "section": "Defeat of New France"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Seven Years' War (1754\u20131763)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "What did the British victory at Quebec in 1759, shown in the painting, make possible?",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The war in Europe continued until 1763; Quebec was a turning point, not the end of the war.",
+   "text": "The immediate surrender of France in Europe and the end of the Seven Years' War that same year."
+  },
+  {
+   "key": "B",
+   "text": "The capture of Montreal in 1760 and Britain's conquest of Canada, completed by the Treaty of Paris in 1763."
+  },
+  {
+   "key": "C",
+   "misconception": "The Proclamation of 1763 drew a settlement line in the west; it did not return Quebec to France.",
+   "text": "The signing of the Proclamation of 1763, which gave Quebec back to France."
+  },
+  {
+   "key": "D",
+   "misconception": "Britain kept troops in North America after the war \u2014 and kept Canada, not returned it.",
+   "text": "The withdrawal of all British troops from North America and the return of Canada to French rule."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "Quebec fell in September 1759, but the war ran until 1763; Montreal still had to fall, and the peace still had to be signed.",
+  "B": "Quebec was the key to Canada: with the city and its fortress gone, Montreal fell the next year, and the Treaty of Paris confirmed Britain's conquest of Canada in 1763. The painting shows the moment the balance tipped \u2014 Wolfe dying as the French retreated. Wolfe himself died in the moment the painting shows, and his death made the victory a legend in Britain.",
+  "C": "The Proclamation came four years after Quebec and dealt with western settlement; Quebec stayed British.",
+  "D": "Britain kept Canada and stationed troops there after the war; the victory expanded the empire rather than ending it.",
+  "general": "1. Look at the painting. Wolfe is dying as a runner brings news of the French retreat \u2014 the battle is won, but the general is lost.\n2. Ask what Quebec guarded. The fortress city controlled the St. Lawrence, the road into the heart of Canada.\n3. Follow the next year. With Quebec gone, Montreal fell in 1760, and the peace of 1763 made Canada British.\nRemember: one battle on a cliff above the St. Lawrence decided the fate of a continent."
+ },
+ "figures": [
+  {
+   "file": "u3/death-of-general-wolfe-1770.jpg",
+   "caption": "Benjamin West, \"The Death of General Wolfe,\" 1770",
+   "alt": "Benjamin West's painting of General Wolfe dying at Quebec in 1759, surrounded by officers, with a Native man kneeling at lower left",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Benjamin_West_-_The_Death_of_General_Wolfe_-_WGA25558.jpg",
+   "id": "fig-apush-mcq-0381"
+  }
+ ]
+}

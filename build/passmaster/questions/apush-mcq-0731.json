@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-0731",
+ "lesson": "apush-u3-l5",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.12"
+ ],
+ "skills": [
+  "2.C"
+ ],
+ "themes": [
+  "SOC",
+  "MIG"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 3,
+ "status": "final",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.12 Movement in the Early Republic"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "Establishment of New Political Systems (1787-1800)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Unit 3: Conflict and American Independence (1754-1800)"
+   }
+  ],
+  "primary_sources": [
+   "United States Census, 1790"
+  ]
+ },
+ "stimulus_set": "census-1790-cities",
+ "stimulus": {
+  "kind": "table",
+  "text": "| Largest cities, 1790 census | Population |\n|---|---:|\n| New York | 33,131 |\n| Philadelphia | 28,522 |\n| Boston | 18,320 |\n| Charleston | 16,359 |\n| Baltimore | 13,503 |\n\nThe 1790 census counted 3,929,214 people in the United States, including 697,681 enslaved people. The 1800 census counted 5,308,483 people, including 893,602 enslaved people.",
+  "source_note": "United States Census, 1790 and 1800 (United States Census Bureau, Decennial Census Historical Facts)."
+ },
+ "source": "original; table drawn from the United States Census, 1790 and 1800.",
+ "stem": "The five largest cities together held about 110,000 people out of a total population of nearly 4 million. What does that show about the United States in 1790?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Most Americans lived in the countryside, not in cities."
+  },
+  {
+   "key": "B",
+   "text": "Most Americans lived in one of the five largest cities.",
+   "misconception": "About 110,000 out of nearly 4 million is a small share, not most."
+  },
+  {
+   "key": "C",
+   "text": "The census counted only city people and left out farmers.",
+   "misconception": "The census counted the whole population, city and country alike."
+  },
+  {
+   "key": "D",
+   "text": "Cities had stopped growing while the countryside shrank.",
+   "misconception": "Background: cities were growing, but from a small base; the country as a whole was growing fast."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Five cities holding about 110,000 of nearly 4 million people means fewer than 3 in 100 Americans lived in a large city.",
+  "B": "110,000 out of nearly 4 million is under 3 percent, not most Americans.",
+  "C": "The census counted everyone, and its total of 3,929,214 includes farmers.",
+  "D": "The total population rose from 1790 to 1800, so the countryside did not shrink.",
+  "general": "1. Add the five city populations: about 110,000.\n2. Compare that with the total of 3,929,214.\n3. The cities hold under 3 percent of the whole.\n4. So the United States in 1790 was a nation of farms and small towns, not of cities, and most Americans never saw a large city.\nRemember: a share is a part over a whole — divide before you judge \"most.\""
+ }
+}

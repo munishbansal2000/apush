@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-0615",
+ "lesson": "apush-u3-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.8"
+ ],
+ "skills": [
+  "1.A",
+  "4.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 3,
+ "stimulus_set": "ratification-votes",
+ "stimulus": {
+  "kind": "text",
+  "text": "| State | Date ratified | Votes for | Votes against |\n|---|---|---:|---:|\n| Delaware | December 7, 1787 | 30 | 0 |\n| Pennsylvania | December 12, 1787 | 46 | 23 |\n| New Jersey | December 18, 1787 | 38 | 0 |\n| Georgia | January 2, 1788 | 26 | 0 |\n| Connecticut | January 9, 1788 | 128 | 40 |\n| Massachusetts | February 6, 1788 | 187 | 168 |\n| Maryland | April 28, 1788 | 63 | 11 |\n| South Carolina | May 23, 1788 | 149 | 73 |\n| New Hampshire | June 21, 1788 | 57 | 47 |\n| Virginia | June 25, 1788 | 89 | 79 |\n| New York | July 26, 1788 | 30 | 27 |\n| North Carolina | November 21, 1789 | 194 | 77 |\n| Rhode Island | May 29, 1790 | 34 | 32 |",
+  "source_note": "Table drawn from the ratification votes of the thirteen state conventions, 1787-1790. National Archives, Ratification of the Constitution."
+ },
+ "source": "original; table drawn from the ratification votes of the thirteen state conventions, 1787-1790, National Archives.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.8 The Constitutional Convention and Debates over Ratification, C. Federalists, Anti-Federalists, and the Adoption of the Bill of Rights"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "The Ratification Battle"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "A New Constitution"
+   }
+  ],
+  "primary_sources": [
+   "Ratification votes of the state conventions, 1787-1790"
+  ]
+ },
+ "status": "final",
+ "stem": "According to the table, which states were the last to ratify, and when?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Virginia and New York, in the summer of 1788",
+   "misconception": "Virginia and New York were tenth and eleventh, in June and July 1788, not last."
+  },
+  {
+   "key": "B",
+   "text": "Delaware and Pennsylvania, in December 1787",
+   "misconception": "Delaware and Pennsylvania were first and second, not last."
+  },
+  {
+   "key": "C",
+   "text": "Massachusetts and Maryland, in early 1788",
+   "misconception": "Massachusetts and Maryland were sixth and seventh, in February and April 1788."
+  },
+  {
+   "key": "D",
+   "text": "North Carolina in 1789 and Rhode Island in 1790"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "D": "The last two rows are North Carolina, November 21, 1789, and Rhode Island, May 29, 1790, the twelfth and thirteenth states.",
+  "A": "Virginia and New York were tenth and eleventh, in June and July 1788.",
+  "B": "Delaware and Pennsylvania were first and second, in December 1787.",
+  "C": "Massachusetts and Maryland were sixth and seventh, in February and April 1788.",
+  "general": "1. Read the last two rows of the table.\n2. North Carolina ratified on November 21, 1789, as the twelfth state.\n3. Rhode Island ratified on May 29, 1790, by 34 to 32.\n4. Background: the new government had already begun before either state joined it, with Washington inaugurated in April 1789.\nRemember: a last question is answered from the last rows, so read to the bottom."
+ }
+}

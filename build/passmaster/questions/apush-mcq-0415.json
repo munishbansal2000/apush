@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-0415",
+ "lesson": "apush-u3-l2",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 3,
+ "topics": [
+  "3.3"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "sugar-act-table",
+ "stimulus": {
+  "kind": "table",
+  "text": "| Measure | Duty on foreign molasses | How it was enforced |\n| Molasses Act, 1733 | 6 pence per gallon | Rarely collected; smuggling was widespread |\n| Sugar Act, 1764 | 3 pence per gallon | Strictly enforced; violators tried in admiralty courts without juries |",
+  "source_note": "Figures from Barron's Premium 2027, Chapter 5, and Princeton Review, Chapter 7. The duty was halved, but collection was enforced for the first time."
+ },
+ "source": "original; stimulus viewed before writing \u2014 figures from Barron's Premium 2027, Chapter 5, and Princeton Review, Chapter 7.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "B. Debt and Taxation Following the French and Indian War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 9",
+    "section": "The British Need Money"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Sugar Act, the Currency Act, and the Stamp Act"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "Why did a law that lowered a tax still anger colonists?",
+ "options": [
+  {
+   "key": "A",
+   "text": "It moved smuggling trials from local juries to admiralty courts without juries"
+  },
+  {
+   "key": "B",
+   "text": "It doubled the price of sugar and rum in colonial markets",
+   "misconception": "The duty was cut in half, so prices did not double \u2014 the anger was about enforcement and courts, not about the price of sugar."
+  },
+  {
+   "key": "C",
+   "text": "It forbade all colonial trade with the French West Indies",
+   "misconception": "Trade with the French West Indies continued \u2014 the act taxed it and enforced the tax, it did not forbid it."
+  },
+  {
+   "key": "D",
+   "text": "It required colonists to pay the duty in gold rather than in paper money",
+   "misconception": "The Sugar Act said nothing about gold \u2014 the Currency Act of 1764, a separate law, restricted colonial paper money."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Background: the anger was about the courts, not the rate. Admiralty courts tried smugglers before a single judge with no jury \u2014 and to colonists, trial by jury was a right of Englishmen that Parliament was taking away.",
+  "B": "The rate fell, so the price did not double. The anger came from enforcement, not from the cost of sugar.",
+  "C": "The French West Indies trade was taxed, not forbidden. The molasses still arrived; now the Crown collected on it.",
+  "D": "Gold was never part of the Sugar Act. The paper-money restriction came from the separate Currency Act of 1764.",
+  "general": "1. Start with the surprise. A lower tax angered people \u2014 so the rate cannot be the reason.\n2. Look at the enforcement column. Violators were tried in admiralty courts \u2014 Background: before a single judge, with no jury.\n3. Ask what the colonists lost. Not money, but a right: trial by a jury of their peers, which they counted among the rights of Englishmen.\nRemember: people rarely revolt over a price \u2014 they revolt when a procedure tells them their rights no longer count."
+ }
+}

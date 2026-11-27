@@ -1,0 +1,86 @@
+{
+ "id": "apush-mcq-0753",
+ "lesson": "apush-u3-l5",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.13"
+ ],
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "PCE",
+  "SOC"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 3,
+ "status": "final",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.13 Continuity and Change in Period 3"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.6 The Influence of Revolutionary Ideals"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "Establishment of New Political Systems (1787-1800)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Unit 3: Conflict and American Independence (1754-1800)"
+   }
+  ],
+  "primary_sources": [
+   "Declaration of Independence, July 4, 1776",
+   "United States Constitution, Article I, Section 9",
+   "United States Census, 1790 and 1800"
+  ]
+ },
+ "stimulus_set": "declaration-equality-1800",
+ "stimulus": {
+  "kind": "mixed",
+  "text": "From the Declaration of Independence, July 4, 1776:\n\n“We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness.”\n\nEnslaved people in the United States:\n\n| Year | Enslaved people |\n|---|---:|\n| 1776 | about 500,000 |\n| 1790 | 697,681 |\n| 1800 | 893,602 |\n\nFrom the Constitution of 1787, Article I, Section 9:\n\n“The Migration or Importation of such Persons as any of the States now existing shall think proper to admit, shall not be prohibited by the Congress prior to the Year one thousand eight hundred and eight.”",
+  "source_note": "Declaration of Independence, July 4, 1776; United States Constitution, Article I, Section 9; United States Census, 1790 and 1800. Public domain. The 1776 figure is an estimate."
+ },
+ "source": "original; stimulus quoted from the Declaration of Independence (1776) and the Constitution, Article I, Section 9, public domain; table drawn from the United States Census, 1790 and 1800.",
+ "stem": "The Constitution said Congress could not ban the importation of enslaved people before 1808. What does that clause best show about the new government?",
+ "options": [
+  {
+   "key": "A",
+   "text": "It protected slavery by compromise and left the slave trade open."
+  },
+  {
+   "key": "B",
+   "text": "It banned the importation of enslaved people at once, in 1787.",
+   "misconception": "The clause did the opposite: it barred Congress from banning importation before 1808."
+  },
+  {
+   "key": "C",
+   "text": "It freed every enslaved person living in the United States in 1808.",
+   "misconception": "The clause dealt only with importation, and it set no freedom date."
+  },
+  {
+   "key": "D",
+   "text": "It gave Congress no power at all over trade with other nations.",
+   "misconception": "Congress kept broad power over trade; only this ban was postponed."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "The clause wrote protection for the slave trade into the Constitution and kept it open until 1808.",
+  "B": "The clause did the opposite: it barred Congress from banning importation before 1808.",
+  "C": "The clause dealt only with importation, and it set no freedom date.",
+  "D": "Congress kept broad power over trade; only this ban was postponed.",
+  "general": "1. Read the clause: Congress could not ban importation before 1808.\n2. That is a protection written into the Constitution itself, not an oversight.\n3. Background from the books: the ban was postponed twenty years to win southern support for the Constitution.\n4. So the new government compromised with slavery instead of ending the trade.\nRemember: a date limit in a law often marks a compromise, not an accident."
+ }
+}

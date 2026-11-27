@@ -1,0 +1,79 @@
+{
+ "id": "apush-mcq-0635",
+ "lesson": "apush-u3-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.9"
+ ],
+ "skills": [
+  "3.A",
+  "6.C"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 4,
+ "stimulus_set": "supremacy-article-six",
+ "stimulus": {
+  "kind": "text",
+  "text": "\u201cThis Constitution, and the Laws of the United States which shall be made in Pursuance thereof; and all Treaties made, or which shall be made, under the Authority of the United States, shall be the supreme Law of the Land; and the Judges in every State shall be bound thereby, any Thing in the Constitution or Laws of any State to the Contrary notwithstanding. . . . no religious Test shall ever be required as a Qualification to any Office or public Trust under the United States.\u201d\n\n\u2014Constitution of the United States, Article VI, September 17, 1787",
+  "source_note": "Constitution of the United States, Article VI, September 17, 1787. Public domain."
+ },
+ "source": "original; stimulus viewed before writing \u2014 Constitution of the United States, Article VI, September 17, 1787, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.9 The Constitution, Federalism\u2014the National Government and the States"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "The Ratification Battle"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "A New Constitution"
+   }
+  ],
+  "primary_sources": [
+   "Constitution of the United States, Article VI (September 17, 1787)"
+  ]
+ },
+ "status": "final",
+ "stem": "Why does the passage bind \u201cthe Judges in every State\u201d to the Constitution and federal law, rather than leaving the matter to the state legislatures?",
+ "options": [
+  {
+   "key": "A",
+   "text": "State legislatures had asked to be bound by federal law.",
+   "misconception": "The passage does not say the legislatures asked for this; it commands their judges."
+  },
+  {
+   "key": "B",
+   "text": "State judges were the only officials who could read.",
+   "misconception": "Nothing in the passage turns on who could read; it turns on which law a judge follows in a case."
+  },
+  {
+   "key": "C",
+   "text": "The framers wanted state courts to write federal law.",
+   "misconception": "State courts apply the law in cases before them; they do not write federal law."
+  },
+  {
+   "key": "D",
+   "text": "State courts decide clashing cases, so they follow the higher law."
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "D": "Background: when a state law and a federal law clash in a lawsuit, the judge in that case must pick one, and the passage tells state judges to pick the federal law.",
+  "A": "The passage binds judges by command, not because legislatures asked for it.",
+  "B": "The passage says nothing about reading; it is about which law a judge follows in a case.",
+  "C": "Judges apply law in the cases before them; writing federal law belongs to Congress.",
+  "general": "1. A clash between a state law and a federal law is settled in court, in a case before a judge.\n2. Background: many such cases come before state judges, not federal judges.\n3. If state judges could follow their own state\u2019s law, the supreme law would fail in those courts.\n4. So the passage binds state judges directly to the higher law.\nRemember: a supremacy rule has to reach the judges who actually decide the clashing cases."
+ }
+}

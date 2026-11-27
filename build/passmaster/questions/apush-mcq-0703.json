@@ -1,0 +1,80 @@
+{
+ "id": "apush-mcq-0703",
+ "lesson": "apush-u3-l5",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.11"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "emancipation-table",
+ "stimulus": {
+  "kind": "table",
+  "text": "Steps against slavery in the northern states:\n\n| State | Action | Year |\n| Vermont | Constitution banned slavery | 1777 |\n| Pennsylvania | Gradual emancipation law | 1780 |\n| Massachusetts | Court decisions ended slavery | 1783 |\n| Connecticut | Gradual emancipation law | 1784 |\n| Rhode Island | Gradual emancipation law | 1784 |\n| New York | Gradual emancipation law | 1799 |\n\nAcross the United States, the enslaved population grew from about 500,000 in 1776 to about 700,000 in 1790.",
+  "source_note": "State actions and population figures from Barron’s Premium 2027, Chapter 5, Topics 3.6 and 3.12; dates corroborated against BlackPast, First Emancipation, and Digital History."
+ },
+ "source": "original; stimulus table drawn from Barron’s Premium 2027, Chapter 5, Topics 3.6 and 3.12.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.6 The Influence of Revolutionary Ideals"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.11 Developing an American Identity"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 10",
+    "section": "The American Revolution and Its Aftermath"
+   }
+  ],
+  "primary_sources": [
+   "Pennsylvania Gradual Abolition Act (1780)",
+   "Massachusetts Constitution (1780) and court decisions (1783)"
+  ]
+ },
+ "status": "final",
+ "stem": "Under Pennsylvania’s 1780 law, a child born to an enslaved mother in 1781 would...",
+ "options": [
+  {
+   "key": "A",
+   "text": "be free at birth.",
+   "misconception": "Background: the law freed children only after they reached age 28, not at birth."
+  },
+  {
+   "key": "B",
+   "text": "be sent to live in Vermont.",
+   "misconception": "The law says nothing about sending children to Vermont."
+  },
+  {
+   "key": "C",
+   "text": "remain enslaved for the rest of his or her life.",
+   "misconception": "Background: the law freed children born after March 1, 1780, once they reached age 28."
+  },
+  {
+   "key": "D",
+   "text": "remain enslaved until age 28, then go free."
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "D": "Pennsylvania’s gradual law freed children born after March 1, 1780, only when they reached age 28.",
+  "A": "The law delayed freedom until age 28; it did not free children at birth.",
+  "B": "Nothing in the table sends Pennsylvania children to Vermont.",
+  "C": "The law did free such children, but only at age 28.",
+  "general": "1. The table says Pennsylvania passed a gradual emancipation law in 1780.\n2. Background: the law freed infants born on or after March 1, 1780, only after they reached age 28.\n3. A child born in 1781 falls under that rule.\n4. So the child would remain enslaved until age 28, then go free.\nRemember: gradual emancipation delayed freedom; it did not grant it at birth."
+ }
+}

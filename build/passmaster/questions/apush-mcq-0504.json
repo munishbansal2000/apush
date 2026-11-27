@@ -1,0 +1,75 @@
+{
+ "id": "apush-mcq-0504",
+ "lesson": "apush-u3-l3",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.5"
+ ],
+ "skills": [
+  "5.A"
+ ],
+ "themes": [
+  "WOR"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 4,
+ "stimulus_set": "southern-strategy",
+ "stimulus": {
+  "kind": "table",
+  "text": "| Battle | Date | Result |\n|---|---|---|\n| Siege of Charleston | May 1780 | British victory; some 5,000 Americans surrendered |\n| Camden | August 1780 | British victory over the American army in the South |\n| Kings Mountain | October 1780 | American militia victory over a Loyalist force |\n| Cowpens | January 1781 | American victory; British light troops destroyed |\n| Guilford Courthouse | March 1781 | British victory, but with heavy losses |\n| Yorktown | October 1781 | American and French victory; Cornwallis surrendered |",
+  "source_note": "Battle results from Barron's Premium 2027, Chapter 5, and 5 Steps to a 5 2024, Chapter 10."
+ },
+ "source": "original; table drawn from Barron's Premium 2027, Chapter 5, and 5 Steps to a 5 2024, Chapter 10.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.5 The American Revolution, A. The War for Independence"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 10"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Fighting the Revolution"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "Taken as a whole, the table best supports which conclusion about the British southern strategy?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The American army in the South was destroyed at Charleston and never rebuilt",
+   "misconception": "The table shows American victories after Charleston, at Kings Mountain, Cowpens, and Yorktown, so the southern army was rebuilt."
+  },
+  {
+   "key": "B",
+   "text": "Loyalist support in the South decided the campaign for Britain",
+   "misconception": "The table shows a Loyalist force beaten at Kings Mountain and no Loyalist victory deciding the campaign; the strategy failed."
+  },
+  {
+   "key": "C",
+   "text": "British victories in the South steadily reduced American resistance",
+   "misconception": "The table shows British wins followed by American wins at Kings Mountain and Cowpens, and a costly win at Guilford Courthouse, so resistance did not steadily fall."
+  },
+  {
+   "key": "D",
+   "text": "The British won battles but could not hold the countryside they marched through"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "D": "Charleston and Camden were British wins, but Kings Mountain, Cowpens, and Guilford Courthouse show the Americans kept fighting and bleeding the British, who ended confined to a few posts.",
+  "C": "Resistance did not fall steadily \u2014 American wins at Kings Mountain and Cowpens came after the British wins.",
+  "A": "The southern army was rebuilt under Greene, who fought on after Charleston and Camden.",
+  "B": "Loyalist support did not decide the campaign; a Loyalist force was beaten at Kings Mountain and the strategy failed.",
+  "general": "1. Read down the result column. British wins, then American wins, then a British win that cost heavily, then surrender.\n2. Ask what the pattern means. Winning battles did not give Britain control of the countryside between them.\n3. Test the sweeping claims. The army was rebuilt, resistance grew, and Loyalist help never delivered the South.\nRemember: a table argues through its pattern \u2014 read the whole column, not one row. Background: Nathanael Greene rebuilt the southern army and wore the British down without winning a pitched battle."
+ }
+}

@@ -1,0 +1,69 @@
+{
+ "id": "apush-mcq-0451",
+ "lesson": "apush-u3-l2",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.4"
+ ],
+ "skills": [
+  "1.B"
+ ],
+ "themes": [
+  "PCE",
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "stimulus_set": "montesquieu-spirit-laws",
+ "stimulus": {
+  "kind": "text",
+  "text": "When the legislative and executive powers are united in the same person, or in the same body of magistrates, there can be no liberty; because apprehensions may arise, lest the same monarch or senate should enact tyrannical laws, to execute them in a tyrannical manner. Again, there is no liberty, if the judiciary power be not separated from the legislative and executive. There would be an end of everything, were the same man or the same body, whether of the nobles or of the people, to exercise those three powers.",
+  "source_note": "Montesquieu, The Spirit of the Laws (1748), abridged. Public domain."
+ },
+ "source": "original; stimulus viewed before writing \u2014 Montesquieu, The Spirit of the Laws (1748), abridged, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "A. Protestant Evangelicalism and Enlightenment Philosophy"
+   }
+  ],
+  "primary_sources": [
+   "Montesquieu, The Spirit of the Laws (1748)"
+  ]
+ },
+ "status": "final",
+ "stem": "What is Montesquieu's central claim in this passage?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Liberty depends on separating the powers of government"
+  },
+  {
+   "key": "B",
+   "text": "Liberty depends on giving all power to an elected assembly",
+   "misconception": "An assembly holding all powers is exactly what Montesquieu warns against \u2014 united power kills liberty."
+  },
+  {
+   "key": "C",
+   "text": "Liberty depends on the people voting directly on every law",
+   "misconception": "Montesquieu says nothing about direct voting \u2014 his claim is about dividing power, not about how laws are made."
+  },
+  {
+   "key": "D",
+   "text": "Liberty depends on judges writing the laws they enforce",
+   "misconception": "Judges writing the laws would unite judicial and legislative power \u2014 the opposite of Montesquieu's point."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Montesquieu says liberty vanishes when powers are united and survives only when they are separated. Division is the safeguard, not the character of the rulers.",
+  "B": "One body holding all power is Montesquieu's nightmare, whether that body is a king or an elected assembly.",
+  "C": "Direct democracy is not Montesquieu's subject. His claim is about the division of powers.",
+  "D": "Judges making the laws they enforce would unite two powers in one body \u2014 exactly what Montesquieu forbids.",
+  "general": "1. Read the first sentence. United legislative and executive power means no liberty.\n2. Read the second. Liberty also fails if the judiciary is not separated from the other two.\n3. Put it together. Liberty rests on keeping the three powers apart, not on who holds them.\nRemember: for Montesquieu, liberty is a matter of structure \u2014 divided power \u2014 not of good intentions."
+ }
+}

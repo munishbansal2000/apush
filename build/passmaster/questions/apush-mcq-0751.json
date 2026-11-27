@@ -1,0 +1,85 @@
+{
+ "id": "apush-mcq-0751",
+ "lesson": "apush-u3-l5",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.13"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "SOC"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 2,
+ "status": "final",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.13 Continuity and Change in Period 3"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.6 The Influence of Revolutionary Ideals"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "Establishment of New Political Systems (1787-1800)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Unit 3: Conflict and American Independence (1754-1800)"
+   }
+  ],
+  "primary_sources": [
+   "Declaration of Independence, July 4, 1776",
+   "United States Constitution, Article I, Section 9",
+   "United States Census, 1790 and 1800"
+  ]
+ },
+ "stimulus_set": "declaration-equality-1800",
+ "stimulus": {
+  "kind": "mixed",
+  "text": "From the Declaration of Independence, July 4, 1776:\n\n“We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness.”\n\nEnslaved people in the United States:\n\n| Year | Enslaved people |\n|---|---:|\n| 1776 | about 500,000 |\n| 1790 | 697,681 |\n| 1800 | 893,602 |\n\nFrom the Constitution of 1787, Article I, Section 9:\n\n“The Migration or Importation of such Persons as any of the States now existing shall think proper to admit, shall not be prohibited by the Congress prior to the Year one thousand eight hundred and eight.”",
+  "source_note": "Declaration of Independence, July 4, 1776; United States Constitution, Article I, Section 9; United States Census, 1790 and 1800. Public domain. The 1776 figure is an estimate."
+ },
+ "source": "original; stimulus quoted from the Declaration of Independence (1776) and the Constitution, Article I, Section 9, public domain; table drawn from the United States Census, 1790 and 1800.",
+ "stem": "According to the table, how did the number of enslaved people in the United States change between 1790 and 1800?",
+ "options": [
+  {
+   "key": "A",
+   "text": "It fell from 893,602 to 697,681.",
+   "misconception": "The table runs the other way: 697,681 in 1790, then 893,602 in 1800."
+  },
+  {
+   "key": "B",
+   "text": "It grew from 697,681 to 893,602."
+  },
+  {
+   "key": "C",
+   "text": "It stayed at about 500,000.",
+   "misconception": "About 500,000 is the 1776 estimate, not the 1790 or 1800 count."
+  },
+  {
+   "key": "D",
+   "text": "It fell to zero, because slavery had ended.",
+   "misconception": "Slavery had not ended: the 1800 census counted 893,602 enslaved people."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "A": "The table runs the other way: 697,681 in 1790, then 893,602 in 1800.",
+  "B": "The table lists 697,681 enslaved people in 1790 and 893,602 in 1800, a rise of about 196,000.",
+  "C": "About 500,000 is the 1776 estimate, not the 1790 or 1800 count.",
+  "D": "Slavery had not ended: the 1800 census counted 893,602 enslaved people.",
+  "general": "1. Find the rows for 1790 and 1800 in the table.\n2. Read the numbers: 697,681 enslaved people in 1790 and 893,602 in 1800.\n3. The 1800 number is larger, so the count grew.\n4. The rise is about 196,000 people in ten years.\n5. So the enslaved population grew between 1790 and 1800, even after independence.\nRemember: read a table row by row and compare the numbers before judging a trend."
+ }
+}

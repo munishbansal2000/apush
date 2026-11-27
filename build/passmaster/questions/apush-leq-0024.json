@@ -1,0 +1,93 @@
+{
+ "id": "apush-leq-0024",
+ "type": "leq",
+ "unit": 3,
+ "lesson": "apush-u3-l2",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "topics": [
+  "3.3"
+ ],
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "stimulus_set": null,
+ "source": "original; rewrite of staged survivor 5s24-ch03-leq-01 against the books",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "A. Colonial Resistance to British Policies in the Aftermath of the French and Indian War"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "B. The Resistance Movement from Above and from Below"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 9",
+    "section": "Stamp Act Crisis"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Causes of the Revolution"
+   }
+  ],
+  "primary_sources": []
+ },
+ "stimulus": {
+  "kind": "none",
+  "source_note": "No stimulus; LEQ prompt only."
+ },
+ "prompt": "Evaluate the extent to which British imperial policy stimulated a desire for independence in America during the eighteenth century.",
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent to which British imperial policy stimulated a desire for independence, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim about the extent of stimulation does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as salutary neglect before 1763, the colonies' long experience of self-government, or the removal of France from North America.",
+   "notEarned": "A sentence of background with no link to the argument, or background from a later century, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (first point): earns the point for describing specific and relevant examples of British policy stimulating a desire for independence, such as the Stamp Act, the Townshend duties, the Coercive Acts, or the Proclamation of 1763.",
+   "notEarned": "General statements about British policy with no specific example do not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (second point): earns the point for describing specific and relevant examples of the limits of that desire, such as the repeal of the Stamp Act, the Declaratory Act, loyalist opposition, the Olive Branch Petition, or the colonies' continued professions of loyalty into 1775.",
+   "notEarned": "Repeating the same stimulation example, or naming a limit with no specific detail, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Analysis and reasoning (causation): earns the point for explaining how the evidence shows British policy producing a desire for independence, linking examples to the thesis rather than listing them.",
+   "notEarned": "Listing examples with no explanation of how they produced a desire for independence does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Analysis and reasoning (complexity): earns the point for a complex argument, such as qualifying the thesis by region or by group, explaining why the desire for independence grew unevenly or late, or weighing the policies that pushed colonists away against the ties that held them.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ],
+ "modelOutline": "Thesis: British imperial policy after 1763 did stimulate a desire for independence, and it did so decisively \u2014 but the desire grew slowly, unevenly, and late: most colonists sought reform, not separation, until the fighting at Lexington and Concord and the failure of reconciliation in 1775-1776 left independence as the only answer.\nContext: Before 1763 Britain governed its American colonies lightly \u2014 salutary neglect left taxation and daily rule to the colonial assemblies, and a century of self-government taught colonists to expect that arrangement to continue. The Seven Years' War removed France from North America and left Britain about \u00a3133 million in debt, so London set out to govern and tax the empire it had just won.\nEvidence of stimulation: The Stamp Act of 1765, the first direct tax, produced the Stamp Act Congress and the Sons of Liberty; the Townshend duties produced boycotts and the Massachusetts Circular Letter; the Tea Act produced the Boston Tea Party, and the Coercive Acts that answered it produced the First Continental Congress. Each policy taught colonists the same lesson \u2014 that Parliament claimed a right they did not accept \u2014 and the Proclamation of 1763 had already fenced settlers off from the western lands they meant to claim.\nEvidence of limits: The Stamp Act was repealed in 1766 and most Townshend duties in 1770, and each repeal was welcomed as proof that the empire could still be mended. Loyalists defended Parliament's authority throughout the crisis, the First Continental Congress petitioned the king in 1774, and the Second Congress sent the Olive Branch Petition in 1775 \u2014 independence was not the aim when the crisis began.\nComplexity: Policy created the conditions for independence but did not by itself produce the desire \u2014 the desire came from the collision between London's new claims and the colonists' old experience of governing themselves, and it grew fastest where the policies bit hardest, in Boston and the port towns, while the backcountry and the loyalist minority held back; independence was a last resort, reached only when reconciliation failed.",
+ "totalPoints": 6
+}

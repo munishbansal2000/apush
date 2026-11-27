@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-0425",
+ "lesson": "apush-u3-l2",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.3"
+ ],
+ "skills": [
+  "2.A"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "townshend-dickinson",
+ "stimulus": {
+  "kind": "mixed",
+  "text": "In 1767, Parliament's Townshend Acts placed new duties on goods the colonists bought from British merchants: lead, paper, glass, and tea. John Dickinson, a Pennsylvania lawyer, answered in his Letters from a Farmer in Pennsylvania: 'If they have a right to levy a tax of one penny upon us, they have a right to levy a million upon us; for where does their right stop?'",
+  "source_note": "Dickinson's sentence is from Letters from a Farmer in Pennsylvania (1767). Public domain. The list of duties follows Barron's Premium 2027, Chapter 5."
+ },
+ "source": "original; stimulus viewed before writing \u2014 Dickinson, Letters from a Farmer in Pennsylvania (1767), public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "A. Colonial Resistance to British Policies in the Aftermath of the French and Indian War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 9",
+    "section": "Townshend Acts"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Townshend Acts"
+   }
+  ],
+  "primary_sources": [
+   "John Dickinson, Letters from a Farmer in Pennsylvania (1767)"
+  ]
+ },
+ "status": "final",
+ "stem": "Dickinson's argument rests on which of the following claims?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The Townshend duties were too large for colonists to pay",
+   "misconception": "Dickinson never argues the duties were too large \u2014 his point is about the right to tax at all, and he says so even for 'one penny.'"
+  },
+  {
+   "key": "B",
+   "text": "If Parliament may tax the colonies at all, no limit remains"
+  },
+  {
+   "key": "C",
+   "text": "Only the king, not Parliament, may levy taxes on the colonies",
+   "misconception": "Dickinson never gives the taxing power to the king \u2014 his argument is that Parliament lacks the authority to raise revenue from the colonies."
+  },
+  {
+   "key": "D",
+   "text": "The colonies should stop trading with Britain entirely",
+   "misconception": "Dickinson argued for resistance to the taxes, not for ending all trade \u2014 the colonists still wanted British goods, and boycotts were a tactic, not a permanent break."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "B": "Dickinson's logic is about the right, not the amount: 'a tax of one penny' and 'a million' stand or fall together. If Parliament has the right at all, 'where does their right stop?'",
+  "A": "Size is not Dickinson's point. He chooses one penny precisely because it is small \u2014 the right is what matters.",
+  "C": "The king is not Dickinson's answer. He denies Parliament's authority to raise revenue; he does not hand it to the king.",
+  "D": "Ending trade was never Dickinson's demand. Boycotts were a weapon against the taxes, not a permanent end to British goods.",
+  "general": "1. Read Dickinson's sentence as an argument, not a complaint. He does not say the tax is too big \u2014 he says it is one penny.\n2. Follow his logic. If Parliament has the right to levy one penny, it has the right to levy a million \u2014 the right is the same either way.\n3. Name what he is denying. Not the size of this tax, but Parliament's authority to raise revenue from the colonies at all.\nRemember: the strongest arguments about power are about the principle, not the price \u2014 a penny and a million are the same question."
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-0382",
+ "lesson": "apush-u3-l1",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.2"
+ ],
+ "skills": [
+  "3.B"
+ ],
+ "themes": [
+  "ARC",
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "difficulty": 4,
+ "stimulus_set": "wolfe-quebec",
+ "stimulus": {
+  "kind": "image",
+  "text": "Benjamin West's painting \"The Death of General Wolfe\" (1770) shows the British general James Wolfe dying on the Plains of Abraham outside Quebec in 1759. Wolfe, in a red coat, reclines in the center, supported by officers, while a runner arrives from the left with news of the French retreat and a Native man kneels in thought at the lower left.\n\nBritish soldiers and a flag fill the right side of the scene, and smoke from the battle rises in the background. West painted the scene eleven years after the battle, in London.",
+  "source_note": "Benjamin West, \"The Death of General Wolfe,\" 1770, public domain."
+ },
+ "source": "original; stimulus viewed before writing \u2014 Benjamin West, \"The Death of General Wolfe,\" 1770, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "British Victory in the French and Indian War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 9",
+    "section": "Defeat of New France"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Seven Years' War (1754\u20131763)"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "A historian using this painting as evidence about the Battle of Quebec should be most careful about which of the following?",
+ "options": [
+  {
+   "key": "A",
+   "misconception": "The battle was fought in daylight on the Plains of Abraham; the painting's color is not the problem.",
+   "text": "The painting is in color, while the battle was fought at night."
+  },
+  {
+   "key": "B",
+   "misconception": "British officers did wear red coats; the coat is accurate, and the painting's problems lie elsewhere.",
+   "text": "The painting shows Wolfe in a red coat, but British officers wore blue in 1759 and never wore red coats at all."
+  },
+  {
+   "key": "C",
+   "misconception": "Benjamin West was an American-born artist working in London, not a French artist.",
+   "text": "The painting was made by a French artist who had never visited North America."
+  },
+  {
+   "key": "D",
+   "text": "The painting was made eleven years after the battle and idealizes the scene, including a Native figure who was not a documented witness."
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "A": "The battle was fought on the morning of September 13, 1759, in daylight \u2014 the painting's light is not its flaw.",
+  "B": "Red coats were the British uniform; West got the coat right, and the painting's idealization lies in its staging, not its uniforms.",
+  "C": "Benjamin West was born in Pennsylvania and painted in London; his nationality is not the issue \u2014 the eleven-year gap and the staged composition are.",
+  "D": "West painted the scene in 1770, eleven years after the battle, and composed it like a religious lamentation: Wolfe reclines like a fallen hero, officers gather in poses no battlefield would allow, and the Native man kneeling at lower left was West's addition, not a documented witness. The painting is evidence of how Britons remembered the victory, not of what the battle looked like.",
+  "general": "1. Check the date. West painted in 1770, eleven years after Quebec \u2014 he never saw the battle.\n2. Look at the staging. Wolfe reclines like a figure in a religious painting, and the officers pose around him as if for a portrait.\n3. Find the invented figure. The Native man kneeling at lower left was West's addition, not a witness recorded at Wolfe's death.\nRemember: a painting made years later tells you how a victory was remembered, not how it happened."
+ },
+ "figures": [
+  {
+   "file": "u3/death-of-general-wolfe-1770.jpg",
+   "caption": "Benjamin West, \"The Death of General Wolfe,\" 1770",
+   "alt": "Benjamin West's painting of General Wolfe dying at Quebec in 1759, surrounded by officers, with a Native man kneeling at lower left",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Benjamin_West_-_The_Death_of_General_Wolfe_-_WGA25558.jpg",
+   "id": "fig-apush-mcq-0382"
+  }
+ ]
+}

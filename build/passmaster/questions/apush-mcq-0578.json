@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-0578",
+ "lesson": "apush-u3-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.7"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "GEO",
+  "MIG"
+ ],
+ "reasoning": "causation",
+ "difficulty": 3,
+ "stimulus_set": "land-ordinance-1785",
+ "stimulus": {
+  "kind": "table",
+  "text": "| Part of one township | Lots | Acres | What happened to it |\n|---|---|---:|---|\n| Whole township | 36 | 23,040 | Six miles square, divided into 36 lots of 640 acres each |\n| Reserved for the United States | 4 (lots 8, 11, 26, 29) | 2,560 | Held for future sale |\n| Reserved for public schools | 1 (lot 16) | 640 | Income from the lot paid for schools |\n| Offered for sale at auction | 31 | 19,840 | Sold for at least $1 an acre; smallest purchase one lot ($640) |",
+  "source_note": "Table drawn from the Land Ordinance of 1785 (Journals of the Continental Congress, May 20, 1785). Public domain."
+ },
+ "source": "original; table drawn from the Land Ordinance of 1785 (Journals of the Continental Congress, May 20, 1785), public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.7 The Articles of Confederation, C. Organizing the Northwest Territory"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Northwest Ordinance of 1787"
+   }
+  ],
+  "primary_sources": [
+   "Land Ordinance of 1785 (Journals of the Continental Congress, May 20, 1785)"
+  ]
+ },
+ "status": "final",
+ "stem": "According to the table, how did the Land Ordinance of 1785 provide for public schools?",
+ "options": [
+  {
+   "key": "A",
+   "text": "It taxed every settler to build a school",
+   "misconception": "The table shows no tax on settlers; it shows a reserved lot."
+  },
+  {
+   "key": "B",
+   "text": "It let each township vote on whether or not to have schools",
+   "misconception": "The table shows the lot reserved by the ordinance, not by a township vote."
+  },
+  {
+   "key": "C",
+   "text": "It sold lot 16 at auction and kept the money",
+   "misconception": "The table says lot 16 was reserved for schools, not sold."
+  },
+  {
+   "key": "D",
+   "text": "It reserved lot 16 of every township for public schools"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "D": "The table reserves one lot, lot 16, of every township for public schools, and says its income paid for schools.",
+  "A": "The table shows a reserved lot, not a tax on settlers.",
+  "B": "The ordinance reserved the lot itself; no township vote was needed.",
+  "C": "Lot 16 was reserved for schools; the lots sold at auction were the other thirty-one.",
+  "general": "1. Find the schools row. One lot, lot 16, is reserved for public schools.\n2. The table says the lot's income paid for schools.\n3. The other rows show what was held back and what was sold.\n4. Background: the school lot came first, before any acre was offered at auction.\nRemember: the survey set aside the school lot before a single acre was sold."
+ }
+}

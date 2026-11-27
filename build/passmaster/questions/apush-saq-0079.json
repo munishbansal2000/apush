@@ -1,0 +1,98 @@
+{
+ "id": "apush-saq-0079",
+ "type": "saq",
+ "unit": 3,
+ "lesson": "apush-u3-l3",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 3,
+ "topics": [
+  "3.5"
+ ],
+ "skills": [
+  "3.A",
+  "1.B"
+ ],
+ "themes": [
+  "WOR"
+ ],
+ "reasoning": "causation",
+ "stimulus_set": null,
+ "source": "original; stimulus viewed before writing \u2014 John Trumbull, Surrender of Lord Cornwallis, 1820, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.5 The American Revolution, A. The War for Independence"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 10"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Fighting the Revolution"
+   }
+  ],
+  "primary_sources": []
+ },
+ "saq_slot": 3,
+ "stimulus": {
+  "type": "image",
+  "text": "The painting shows the surrender at Yorktown on October 19, 1781. In the center, a British officer in a red coat stands before an American officer on a white horse and presents his sword. American officers on horseback and on foot stand to the right, under the American flag, while British officers wait to the left under a white flag. The painting is John Trumbull's Surrender of Lord Cornwallis, painted in 1820. Cornwallis himself did not attend the surrender; he sent his second-in-command, General Charles O'Hara, who is the British officer shown presenting the sword.",
+  "source": "John Trumbull, Surrender of Lord Cornwallis, 1820. Public domain.",
+  "rights": "Public domain.",
+  "source_note": "John Trumbull, Surrender of Lord Cornwallis, 1820. Public domain."
+ },
+ "parts": [
+  {
+   "part": "a",
+   "prompt": "Identify ONE detail in the painting that shows the surrender at Yorktown was a formal ceremony, not a battle.",
+   "modelAnswer": "One detail is the British officer presenting his sword to the American officer, a formal gesture of surrender performed in front of the assembled officers of both armies. The men stand in order under their flags \u2014 the Americans under their flag, the British under a white flag \u2014 with no fighting, no smoke, and no fallen soldiers visible. The scene is arranged as a ceremony, with officers on horseback and on foot watching the exchange.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Names one detail showing a formal ceremony, such as the sword being presented, the officers standing in order under flags, the white flag of truce, or the absence of fighting."
+    }
+   ],
+   "points": 1
+  },
+  {
+   "part": "b",
+   "prompt": "Explain ONE reason Cornwallis's army surrendered at Yorktown.",
+   "modelAnswer": "Cornwallis surrendered because he was cut off: Washington and Rochambeau had besieged him by land, and the French fleet under de Grasse had won the Battle of the Virginia Capes, blocking his escape by sea. With no way out and no relief coming, his army faced starvation and destruction if it kept fighting. Surrender was the only choice left once the siege closed every door.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains one reason for the surrender, such as the French fleet blocking escape by sea, the American and French siege by land, or the lack of relief from the British navy."
+    }
+   ],
+   "points": 1
+  },
+  {
+   "part": "c",
+   "prompt": "Explain ONE way the surrender at Yorktown changed the course of the war.",
+   "modelAnswer": "Yorktown ended major fighting because it convinced Britain the war was unwinnable: Parliament voted to end offensive operations, and the two sides moved toward the peace negotiations that produced the Treaty of Paris in 1783. The surrender turned a colonial rebellion into a settled question, with Britain recognizing American independence. Without Yorktown, the war might have dragged on for years more, but after it, neither side expected another great battle.",
+   "scoring": [
+    {
+     "points": 1,
+     "criterion": "Explains one way Yorktown changed the war, such as ending major fighting, persuading Parliament to stop offensive operations, or leading to the Treaty of Paris and British recognition of independence."
+    }
+   ],
+   "points": 1
+  }
+ ],
+ "totalPoints": 3,
+ "figures": [
+  {
+   "id": "fig-apush-saq-0079",
+   "file": "u3/surrender-cornwallis-yorktown.jpg",
+   "caption": "John Trumbull, Surrender of Lord Cornwallis, 1820",
+   "alt": "Trumbull painting of the British surrender at Yorktown, with a British officer presenting his sword to the Americans under their flag",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Surrender_of_Lord_Cornwallis.jpg"
+  }
+ ]
+}

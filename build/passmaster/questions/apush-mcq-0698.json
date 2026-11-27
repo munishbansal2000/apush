@@ -1,0 +1,90 @@
+{
+ "id": "apush-mcq-0698",
+ "lesson": "apush-u3-l5",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.11"
+ ],
+ "skills": [
+  "3.B",
+  "6.B"
+ ],
+ "themes": [
+  "NAT",
+  "ARC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 4,
+ "stimulus_set": "trumbull-declaration-1818",
+ "stimulus": {
+  "kind": "image",
+  "text": "John Trumbull, Declaration of Independence. The painting shows five men, including Thomas Jefferson, presenting a document to John Hancock, seated at a table at the right, while a large group of men in formal dress looks on in a grand chamber. The painting was commissioned by Congress in 1817 and completed in 1818. It shows the presentation of the draft Declaration to Congress on June 28, 1776, not the signing of the Declaration.",
+  "source_note": "John Trumbull, Declaration of Independence, commissioned 1817, completed 1818, U.S. Capitol. Public domain."
+ },
+ "source": "original; stimulus viewed before writing — John Trumbull, Declaration of Independence, commissioned 1817, completed 1818. Public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.11 Developing an American Identity"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "Establishment of New Political Systems (1787-1800)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Unit 3: Conflict and American Independence (1754-1800)"
+   }
+  ],
+  "primary_sources": [
+   "John Trumbull, Declaration of Independence (commissioned 1817, completed 1818)"
+  ]
+ },
+ "status": "final",
+ "stem": "Congress commissioned this large painting more than forty years after the event it shows. What does that best suggest about American identity?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Americans were building a shared heroic story about their founding."
+  },
+  {
+   "key": "B",
+   "text": "Congress needed an exact legal record of who signed the Declaration.",
+   "misconception": "The painting shows the presentation of the draft, not the signing, and it was made as art, not as a legal record."
+  },
+  {
+   "key": "C",
+   "text": "Trumbull was the only painter working in the United States in 1817.",
+   "misconception": "Background: many painters worked in the United States by 1817; Congress chose Trumbull for his earlier small version of the scene."
+  },
+  {
+   "key": "D",
+   "text": "Americans in 1817 had forgotten the events of the Revolution.",
+   "misconception": "Commissioning the painting shows the Revolution was still remembered and honored, not forgotten."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "A large painting of the founding, ordered decades later, turns the event into a shared national story.",
+  "B": "The painting depicts a presentation, not a signing, and art is not a legal record.",
+  "C": "Trumbull was chosen for his earlier version of the scene, not because no other painter existed.",
+  "D": "Ordering the painting proves the Revolution was remembered, not forgotten.",
+  "general": "1. The painting shows the founders in a grand chamber, presenting the Declaration with dignity.\n2. Background: Congress ordered it in 1817, more than forty years after 1776.\n3. A nation that commissions such a painting is giving itself a heroic founding story.\n4. So the commission shows Americans building a shared story to unite the new nation.\nRemember: when a nation retells its founding decades later, ask what the retelling is for."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0698",
+   "file": "u3/pr25e-test2-q14.jpg",
+   "caption": "John Trumbull, Declaration of Independence, commissioned 1817, completed 1818",
+   "alt": "Large painting of five men presenting a document to John Hancock seated at a table, with a crowd of formally dressed men looking on in a grand chamber",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Declaration_of_Independence_(1819),_by_John_Trumbull.jpg"
+  }
+ ]
+}

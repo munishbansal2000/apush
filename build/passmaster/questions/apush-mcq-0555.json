@@ -1,0 +1,78 @@
+{
+ "id": "apush-mcq-0555",
+ "lesson": "apush-u3-l4",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.7"
+ ],
+ "skills": [
+  "5.B"
+ ],
+ "themes": [
+  "PCE",
+  "WXT"
+ ],
+ "reasoning": "causation",
+ "difficulty": 4,
+ "stimulus_set": "articles-viii",
+ "stimulus": {
+  "kind": "text",
+  "text": "\u201cArticle VIII. All charges of war, and all other expenses that shall be incurred for the common defense or general welfare, and allowed by the United States in Congress assembled, shall be defrayed out of a common treasury, which shall be supplied by the several States in proportion to the value of all land within each State. . . . The taxes for paying that proportion shall be laid and levied by the authority and direction of the legislatures of the several States within the time agreed upon by the United States in Congress assembled.\u201d\n\u2014 Articles of Confederation, Article VIII (abridged)",
+  "source_note": "Articles of Confederation, Article VIII, 1777. Public domain."
+ },
+ "source": "original; stimulus viewed before writing \u2014 Articles of Confederation, Article VIII (1777), public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.7 The Articles of Confederation, B. The Articles of Confederation and the Critical Period"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Articles of Confederation"
+   }
+  ],
+  "primary_sources": [
+   "Articles of Confederation, Article VIII (1777)"
+  ]
+ },
+ "status": "final",
+ "stem": "Which problem of the 1780s does Article VIII best explain?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The national government could not pay its war debts, since it depended on the states for revenue"
+  },
+  {
+   "key": "B",
+   "text": "The national government could not raise an army of its own to stop Shays's Rebellion in Massachusetts",
+   "misconception": "Raising troops was a separate weakness; Article VIII is about money, not soldiers."
+  },
+  {
+   "key": "C",
+   "text": "The national government could not force Britain to leave its western forts",
+   "misconception": "The forts were a foreign-policy weakness; Article VIII is about how Congress raised money."
+  },
+  {
+   "key": "D",
+   "text": "The national government could not organize the Northwest Territory",
+   "misconception": "Background: Congress did organize the Northwest Territory, through the ordinances of 1785 and 1787."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Background from the books: Article VIII left taxing to the states, and the states often paid late or not at all, so Congress could not pay the debts from the war.",
+  "B": "Background: the army problem came from Congress having no power to raise troops, which is not what Article VIII covers.",
+  "C": "Background: Britain kept its forts because Congress had no army or leverage, not because of the tax article.",
+  "D": "Background: Congress did organize the Northwest Territory; the ordinances of 1785 and 1787 prove it could.",
+  "general": "1. Read the mechanism. Article VIII fills the treasury from the states, in proportion to land value.\n2. Background: the taxes themselves were laid and levied by the state legislatures.\n3. Background: states often paid late or not at all, so war debts went unpaid.\n4. A government that must beg for its income cannot pay its creditors on time.\nRemember: a government that cannot collect its own money cannot pay its own debts."
+ }
+}

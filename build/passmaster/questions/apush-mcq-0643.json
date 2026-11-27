@@ -1,0 +1,90 @@
+{
+ "id": "apush-mcq-0643",
+ "lesson": "apush-u3-l4",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 3,
+ "topics": [
+  "3.9"
+ ],
+ "skills": [
+  "3.A",
+  "4.B"
+ ],
+ "themes": [
+  "PCE",
+  "NAT"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 4,
+ "stimulus_set": "bill-of-rights-engrossed",
+ "stimulus": {
+  "kind": "image",
+  "text": "The page, dated September 25, 1789, opens \u201cCongress of the United States, begun and held at the City of New York, on Wednesday the fourth of March, one thousand seven hundred and eighty nine.\u201d It records that Congress resolved, with \u201ctwo thirds of both Houses concurring,\u201d to propose \u201cArticles in addition to, and Amendment of the Constitution of the United States of America, . . . pursuant to the fifth Article of the Original Constitution.\u201d Twelve articles follow, headed \u201cArticle the first\u201d through \u201cArticle the twelfth.\u201d At the foot appear the names of Frederick Augustus Muhlenberg, Speaker of the House of Representatives, and John Adams, Vice President of the United States and President of the Senate.",
+  "source_note": "The engrossed Bill of Rights, proposed September 25, 1789, National Archives and Records Administration. Public domain."
+ },
+ "source": "original; stimulus viewed before writing \u2014 the engrossed Bill of Rights, proposed September 25, 1789, National Archives and Records Administration, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.9 The Constitution"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "The Bill of Rights"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "A New Constitution"
+   }
+  ],
+  "primary_sources": [
+   "Bill of Rights, proposed September 25, 1789; ratified December 15, 1791"
+  ]
+ },
+ "status": "final",
+ "stem": "The page lists twelve articles, yet the Bill of Rights has ten amendments. What happened to the other two?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Congress withdrew them before sending the page to the states.",
+   "misconception": "Congress sent all twelve to the states; the page itself is the copy sent out."
+  },
+  {
+   "key": "B",
+   "text": "The Supreme Court struck them down in 1790.",
+   "misconception": "The Court did not strike them down; they simply went unratified."
+  },
+  {
+   "key": "C",
+   "text": "The states ratified them, but the president vetoed them.",
+   "misconception": "The president has no veto over amendments, and the states did not ratify these two in 1791."
+  },
+  {
+   "key": "D",
+   "text": "They went unratified in 1791; one later became the Twenty-seventh Amendment."
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "D": "Background: ten of the twelve were ratified by December 15, 1791; the other two fell short, and the one on congressional pay was ratified in 1992 as the Twenty-seventh Amendment.",
+  "A": "The page itself is the copy Congress sent to the states, with all twelve articles on it.",
+  "B": "No court struck them down; they failed to win ratification by three-fourths of the states.",
+  "C": "Amendments need no presidential approval, and these two simply lacked enough state ratifications in 1791.",
+  "general": "1. The page shows twelve articles proposed by Congress in 1789.\n2. An amendment takes effect only when three-fourths of the states ratify it.\n3. Background: by December 15, 1791, ten of the twelve had won ratification, and two had not.\n4. Background: the unratified article on congressional pay was later ratified in 1992 as the Twenty-seventh Amendment.\nRemember: proposed is not ratified; an amendment counts only when three-fourths of the states approve it."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0643",
+   "file": "u3/bill-of-rights-engrossed-1789.jpg",
+   "caption": "The engrossed Bill of Rights, proposed September 25, 1789",
+   "alt": "Handwritten first page of the proposed amendments headed Congress of the United States, listing twelve articles and signed by Frederick Augustus Muhlenberg and John Adams",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Bill_of_Rights_Pg1of1_AC.jpg"
+  }
+ ]
+}

@@ -1,0 +1,88 @@
+{
+ "id": "apush-mcq-0467",
+ "lesson": "apush-u3-l2",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.4"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "PCE",
+  "ARC"
+ ],
+ "reasoning": "causation",
+ "difficulty": 2,
+ "stimulus_set": "trumbull-declaration",
+ "stimulus": {
+  "kind": "image",
+  "text": "The painting shows a grand room in Philadelphia, crowded with delegates of the Second Continental Congress. At the center, five men stand before a table covered with papers. The tallest, in a red waistcoat, hands a document to the man seated at the right in a high-backed chair. Rows of seated and standing delegates watch from both sides.",
+  "source_note": "John Trumbull, Declaration of Independence (1818). Public domain; image from the shared image pool."
+ },
+ "source": "original; stimulus viewed before writing \u2014 John Trumbull, Declaration of Independence (1818), public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "B. Common Sense, the Declaration of Independence, and Republican Self-Government"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 10"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Declaration of Independence"
+   }
+  ],
+  "primary_sources": [
+   "John Trumbull, Declaration of Independence (1818)"
+  ]
+ },
+ "status": "final",
+ "stem": "Who is the tall central figure in the red waistcoat, handing the document to the seated man?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Thomas Jefferson, who drafted the Declaration"
+  },
+  {
+   "key": "B",
+   "text": "George Washington, commander of the Continental Army",
+   "misconception": "Washington was with the army in New York in June 1776, not presenting a draft to Congress in Philadelphia."
+  },
+  {
+   "key": "C",
+   "text": "King George III, receiving the colonies' petition",
+   "misconception": "The king never sat in Congress. The seated man is John Hancock, president of Congress, receiving the draft."
+  },
+  {
+   "key": "D",
+   "text": "Benjamin Franklin, who printed the first copies",
+   "misconception": "Franklin stands beside Jefferson in the group of five \u2014 he is not the tall figure handing over the document."
+  }
+ ],
+ "answerKey": "A",
+ "rationales": {
+  "A": "Background: Jefferson drafted the Declaration, and Trumbull puts him at the center, handing the draft to John Hancock. The author stands where the work of the painting happens.",
+  "B": "Washington was commanding the army in New York. He is not in the room.",
+  "C": "George III never came to Philadelphia. The seated man receiving the draft is John Hancock.",
+  "D": "Franklin is one of the five, standing beside Jefferson. The tall central figure is Jefferson himself.",
+  "general": "1. Find the center of the painting. A tall man in a red waistcoat hands a document across the table.\n2. Ask whose draft it is. Background: Jefferson wrote the first draft of the Declaration for the Committee of Five.\n3. Match the man to the work. Trumbull puts the author at the center, handing his draft to Hancock.\nRemember: in a history painting, the center figure usually does the work the painting is about \u2014 here, delivering the draft."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0467",
+   "file": "u3/pr25e-test2-q14.jpg",
+   "caption": "Declaration of Independence (1818), by John Trumbull \u2014 the Committee of Five presenting the draft to Congress",
+   "alt": "A large formal painting of a crowded Philadelphia room where five standing men present a document to a seated man at a table while rows of delegates watch",
+   "license": "Public domain",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Declaration_of_Independence_(1819),_by_John_Trumbull.jpg"
+  }
+ ]
+}

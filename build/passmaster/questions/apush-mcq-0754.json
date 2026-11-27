@@ -1,0 +1,86 @@
+{
+ "id": "apush-mcq-0754",
+ "lesson": "apush-u3-l5",
+ "type": "mcq",
+ "pool": "test",
+ "unit": 3,
+ "topics": [
+  "3.13"
+ ],
+ "skills": [
+  "5.A"
+ ],
+ "themes": [
+  "NAT",
+  "SOC"
+ ],
+ "reasoning": "continuity-change",
+ "difficulty": 4,
+ "status": "final",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.13 Continuity and Change in Period 3"
+   },
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.6 The Influence of Revolutionary Ideals"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "Establishment of New Political Systems (1787-1800)"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Unit 3: Conflict and American Independence (1754-1800)"
+   }
+  ],
+  "primary_sources": [
+   "Declaration of Independence, July 4, 1776",
+   "United States Constitution, Article I, Section 9",
+   "United States Census, 1790 and 1800"
+  ]
+ },
+ "stimulus_set": "declaration-equality-1800",
+ "stimulus": {
+  "kind": "mixed",
+  "text": "From the Declaration of Independence, July 4, 1776:\n\n“We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness.”\n\nEnslaved people in the United States:\n\n| Year | Enslaved people |\n|---|---:|\n| 1776 | about 500,000 |\n| 1790 | 697,681 |\n| 1800 | 893,602 |\n\nFrom the Constitution of 1787, Article I, Section 9:\n\n“The Migration or Importation of such Persons as any of the States now existing shall think proper to admit, shall not be prohibited by the Congress prior to the Year one thousand eight hundred and eight.”",
+  "source_note": "Declaration of Independence, July 4, 1776; United States Constitution, Article I, Section 9; United States Census, 1790 and 1800. Public domain. The 1776 figure is an estimate."
+ },
+ "source": "original; stimulus quoted from the Declaration of Independence (1776) and the Constitution, Article I, Section 9, public domain; table drawn from the United States Census, 1790 and 1800.",
+ "stem": "Taken together, the Declaration, the table, and the 1808 clause best support which statement about change and continuity for enslaved people across Period 3?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Slavery ended everywhere in the United States by the year 1800.",
+   "misconception": "The 1800 census counted 893,602 enslaved people, so slavery had not ended."
+  },
+  {
+   "key": "B",
+   "text": "Nothing changed at all for enslaved people anywhere in the new nation.",
+   "misconception": "Background: northern states moved toward emancipation, so something did change there."
+  },
+  {
+   "key": "C",
+   "text": "Northern emancipation moved forward while Southern slavery grew and stayed legal."
+  },
+  {
+   "key": "D",
+   "text": "The Constitution ended slavery in the South and freed the North instead.",
+   "misconception": "The Constitution protected slavery; it ended it nowhere."
+  }
+ ],
+ "answerKey": "C",
+ "rationales": {
+  "A": "The 1800 census counted 893,602 enslaved people, so slavery had not ended.",
+  "B": "Background: northern states moved toward emancipation, so something did change there.",
+  "C": "The Declaration proclaimed equality, and the table shows slavery growing with the 1808 clause keeping it protected in the South. Background: the North moved toward emancipation.",
+  "D": "The Constitution protected slavery; it ended it nowhere.",
+  "general": "1. Start with the Declaration: it proclaimed equality for all men.\n2. Look north. Background from the books: northern states passed gradual emancipation laws, and Vermont and Massachusetts ended slavery outright.\n3. Look south: the table shows the enslaved population growing to 893,602 by 1800, and the 1808 clause kept the trade open.\n4. So the same Revolution that spread ideals of equality left slavery growing and protected in the South.\nRemember: change and continuity can live side by side, so ask what changed, where, and for whom."
+ }
+}

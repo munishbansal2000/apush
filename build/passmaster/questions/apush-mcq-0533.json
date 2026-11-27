@@ -1,0 +1,77 @@
+{
+ "id": "apush-mcq-0533",
+ "lesson": "apush-u3-l3",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.6"
+ ],
+ "skills": [
+  "3.A"
+ ],
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "reasoning": "comparison",
+ "difficulty": 3,
+ "stimulus_set": "gradual-emancipation-table",
+ "stimulus": {
+  "kind": "table",
+  "text": "| Place | Action | What it did |\n|---|---|---|\n| Vermont | 1777 constitution | Slavery banned outright |\n| Pennsylvania | 1780 law | Children born after March 1, 1780, free at age 28 |\n| Massachusetts | 1783 court decisions | Slavery ended under the 1780 state constitution |\n| Connecticut | 1784 law | Children born after March 1, 1784, free at age 25 |\n| Rhode Island | 1784 law | Children born after March 1, 1784, free at 18 (girls) or 21 (boys) |\n| New York | 1799 law | Children born after July 4, 1799, free at 28 (boys) or 25 (girls) |\n| Northwest Territory | 1787 ordinance | Slavery banned in the territory |",
+  "source_note": "Compiled from state constitutions, statutes, and court decisions, 1777-1799. Public record."
+ },
+ "source": "original; stimulus table compiled from state constitutions, statutes, and court decisions, 1777-1799.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.6 The Influence of Revolutionary Ideals, A. The Call for Egalitarianism"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 10"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7"
+   }
+  ],
+  "primary_sources": [
+   "State emancipation actions, 1777-1799"
+  ]
+ },
+ "status": "final",
+ "stem": "The table's pattern \u2014 action in northern states and the Northwest Territory, and none in the South \u2014 best supports which conclusion?",
+ "options": [
+  {
+   "key": "A",
+   "text": "Congress passed a national law ending slavery in 1787",
+   "misconception": "Congress passed no national emancipation law; the table shows state laws and one territorial ordinance, not a national act."
+  },
+  {
+   "key": "B",
+   "text": "Southern states passed the same gradual emancipation laws just a few years later",
+   "misconception": "No southern row appears in the table; the South passed no gradual emancipation laws in this period."
+  },
+  {
+   "key": "C",
+   "text": "Slavery ended everywhere in the United States by 1799",
+   "misconception": "Slavery continued in the South long after 1799; the table covers only northern action, not a national end."
+  },
+  {
+   "key": "D",
+   "text": "Emancipation spread state by state in the North, while slavery continued in the South"
+  }
+ ],
+ "answerKey": "D",
+ "rationales": {
+  "D": "Every row is northern or territorial, and no southern state acted. Background: slavery stayed legal and central in the South, where no gradual law was passed.",
+  "A": "The 1787 ordinance covered only the Northwest Territory; Congress never passed national emancipation in this period.",
+  "B": "The table has no southern rows at all; the South did not follow the North's gradual laws.",
+  "C": "1799 is only New York's law; slavery went on in the South for decades after that date.",
+  "general": "1. Map the rows. Vermont, Pennsylvania, Massachusetts, Connecticut, Rhode Island, New York \u2014 all northern.\n2. Note the silence. No southern state appears anywhere in the table.\n3. Name the pattern. Change came state by state in the North, and not at all in the South.\nRemember: a table's empty spaces are evidence too \u2014 ask which places never appear in it."
+ }
+}

@@ -1,0 +1,90 @@
+{
+ "id": "apush-leq-0029",
+ "type": "leq",
+ "unit": 3,
+ "lesson": "apush-u3-l4",
+ "status": "final",
+ "pool": "practice",
+ "difficulty": 4,
+ "topics": [
+  "3.7"
+ ],
+ "skills": [
+  "6.A",
+  "6.B"
+ ],
+ "themes": [
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "stimulus_set": null,
+ "source": "original; prompt written for this topic",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "Topic 3.7 The Articles of Confederation, B. The Articles of Confederation and the Critical Period"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 11",
+    "section": "The Constitutional Convention"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "Shays's Rebellion"
+   }
+  ],
+  "primary_sources": [
+   "George Washington to Henry Lee, Jr. (October 31, 1786)",
+   "Alexander Hamilton, Federalist No. 15 (December 1, 1787)"
+  ]
+ },
+ "totalPoints": 6,
+ "stimulus": {
+  "kind": "none",
+  "source_note": "No stimulus; LEQ prompt only."
+ },
+ "prompt": "Evaluate the extent to which the weaknesses of the Articles of Confederation caused the calling of the Constitutional Convention in 1787.",
+ "rubric": [
+  {
+   "points": 1,
+   "skill": "6.A",
+   "criterion": "Thesis: earns the point for a historically defensible claim that answers the prompt, stating the extent to which the weaknesses of the Articles caused the calling of the Constitutional Convention in 1787, with a clear line of reasoning.",
+   "notEarned": "Restating the prompt with no claim about the extent does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "4.B",
+   "criterion": "Contextualization: earns the point for describing a broader historical context relevant to the prompt, such as the war for independence and its debts, the fear of distant authority, or the writing of new state constitutions.",
+   "notEarned": "A sentence of background with no link to the argument, or background from a later century, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (first point): earns the point for describing specific and relevant examples of the Articles' weaknesses, such as the lack of a taxing power, the failure of the impost, or the inability to raise an army during Shays's Rebellion.",
+   "notEarned": "General statements with no specific example do not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Evidence (second point): earns the point for describing specific and relevant examples of the road to the convention, such as the Annapolis Convention of 1786, the commissioners' call for a Philadelphia meeting, or the alarm among leaders like Washington, Hamilton, and Madison.",
+   "notEarned": "Repeating the same example, or naming the convention with no specific detail, does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.B",
+   "criterion": "Analysis and reasoning: earns the point for explaining how the evidence shows the weaknesses causing the convention, linking the failures to the decision to meet rather than listing them.",
+   "notEarned": "Listing weaknesses with no explanation of how they led to the convention does not earn the point."
+  },
+  {
+   "points": 1,
+   "skill": "6.D",
+   "criterion": "Analysis and reasoning (complexity): earns the point for a complex argument, such as qualifying the thesis by showing that the convention was also shaped by the Articles' one success, the western ordinances, or by the clash between fear of disorder and fear of strong government.",
+   "notEarned": "A second example with no qualification or weighing does not earn the point."
+  }
+ ],
+ "modelOutline": "Thesis: The weaknesses of the Articles caused the calling of the Constitutional Convention to a great extent, because the failures of money, order, and trade piled up until national leaders saw no fix inside the Articles, though the call also rested on the alarm of elites rather than on a popular demand.\nContext: The Articles were written during the war for independence by Americans who feared distant authority, so they built a league of sovereign states with no power to tax and no executive.\nEvidence of weakness: Congress could not levy taxes, so it depended on requisitions the states often ignored, and Robert Morris's 5 percent impost failed when Rhode Island refused the 1781 plan and New York refused the 1783 revision. Congress could not raise an army, so Shays's Rebellion had to be put down by a Massachusetts militia. Congress could not regulate trade, so Britain kept punitive policies and Spain closed the Mississippi.\nEvidence of the road to the convention: The Annapolis Convention of 1786 drew only five states and could not act on trade, so its commissioners called for a broader convention at Philadelphia in May 1787. Washington wrote that influence is no government, and Hamilton argued in Federalist No. 15 that laws the states could disregard were mere recommendations.\nComplexity: The convention was called by alarmed nationalists, not by the farmers who had rebelled, and the Articles' one success, the western ordinances, showed the same Congress could act when the states agreed to give something up."
+}

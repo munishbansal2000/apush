@@ -1,0 +1,87 @@
+{
+ "id": "apush-mcq-0429",
+ "lesson": "apush-u3-l2",
+ "type": "mcq",
+ "pool": "practice",
+ "unit": 3,
+ "topics": [
+  "3.3"
+ ],
+ "skills": [
+  "1.A"
+ ],
+ "themes": [
+  "SOC",
+  "PCE"
+ ],
+ "reasoning": "causation",
+ "difficulty": 4,
+ "stimulus_set": "boston-troops-1768",
+ "stimulus": {
+  "kind": "image",
+  "text": "The engraving, 'The town of Boston in New England and British ships of war landing their troops! 1768,' shows Boston harbor crowded with British warships. Small boats ferry red-coated soldiers ashore, and columns of troops march in formation along the wharf while the town's church steeples rise behind them.",
+  "source_note": "Engraved by Paul Revere, published 1770 (the landing shown is 1768). Library of Congress. Public domain (pre-1930)."
+ },
+ "source": "original; stimulus viewed before writing \u2014 by Paul Revere, published 1770, Library of Congress, public domain.",
+ "grounding": {
+  "books": [
+   {
+    "book": "barrons-2027",
+    "chapter": "Chapter 5",
+    "section": "A. Colonial Resistance to British Policies in the Aftermath of the French and Indian War"
+   },
+   {
+    "book": "5steps-2024",
+    "chapter": "Chapter 9",
+    "section": "Stamp Act Crisis"
+   },
+   {
+    "book": "princeton-25e",
+    "chapter": "Chapter 7",
+    "section": "The Sugar Act, the Currency Act, and the Stamp Act"
+   }
+  ],
+  "primary_sources": []
+ },
+ "status": "final",
+ "stem": "Which of the following best explains why the presence of these troops increased tensions in Boston?",
+ "options": [
+  {
+   "key": "A",
+   "text": "The soldiers refused to protect the town from French attack",
+   "misconception": "There was no French threat to Boston in 1768 \u2014 the French had been driven from the continent in 1763, and the troops were there to enforce British laws, not to fight France."
+  },
+  {
+   "key": "B",
+   "text": "The soldiers took Bostonians' jobs and symbolized British repression"
+  },
+  {
+   "key": "C",
+   "text": "The soldiers demanded that Bostonians house them in their own bedrooms",
+   "misconception": "The Quartering Act housed soldiers in barracks and, when those filled, in inns and public houses \u2014 not in colonists' bedrooms, and the job competition mattered more than the housing."
+  },
+  {
+   "key": "D",
+   "text": "The soldiers closed the town's churches and banned public worship",
+   "misconception": "No church was closed and worship was never banned \u2014 the troops enforced customs laws, and the anger came from jobs and from the sight of an army in peacetime."
+  }
+ ],
+ "answerKey": "B",
+ "rationales": {
+  "B": "Background: the troops took part-time waterfront work that Bostonians needed, and their very presence \u2014 a standing army in a peacetime town \u2014 struck colonists as a threat to liberty. Jobs and symbolism together made the soldiers hated.",
+  "A": "France was gone from the continent by 1763. There was no French attack to protect Boston from.",
+  "C": "Bedrooms were never demanded. Barracks and public houses held the troops; the real friction was jobs.",
+  "D": "Worship was never touched. The troops enforced customs laws \u2014 the anger was about work and about an army in peacetime.",
+  "general": "1. Ask what the soldiers did off duty. They took part-time work on the waterfront \u2014 work Bostonians needed for themselves.\n2. Ask what the soldiers meant on duty. A standing army in a peacetime town, which colonists had long seen as a threat to liberty.\n3. Put the two together. The troops cost Bostonians both wages and the feeling of freedom \u2014 an economic grievance wearing a political uniform.\nRemember: resentment grows fastest when one grievance is really two \u2014 look for the second one hiding behind the first."
+ },
+ "figures": [
+  {
+   "id": "fig-apush-mcq-0429",
+   "file": "u3/boston-troops-landing-1768.jpg",
+   "caption": "The town of Boston in New England and British ships of war landing their troops! 1768 \u2014 engraved by Paul Revere, published 1770",
+   "alt": "Boston harbor in 1768 crowded with British warships, small boats ferrying red-coated soldiers ashore as columns of troops march along the wharf",
+   "license": "Public domain",
+   "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/63/The_town_of_Boston_in_New_England_and_British_ships_of_war_landing_their_troops%21_1768_LCCN2004669969.jpg"
+  }
+ ]
+}
